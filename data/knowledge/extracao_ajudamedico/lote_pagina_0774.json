@@ -1,0 +1,518 @@
+[
+  {
+    "id": "AJUDA_d7f18b1e-04ac-4a32-8229-85f45b20c1bd",
+    "originalId": "d7f18b1e-04ac-4a32-8229-85f45b20c1bd",
+    "statement": "De acordo com a classificação de Johnson para úlceras gástricas, qual tipo é mais frequentemente associado ao uso de anti-inflamatórios não esteroidais (AINES)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "V",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A classificação de Johnson é utilizada para categorizar as úlceras gástricas de acordo com sua localização e a fisiopatologia da secreção ácida. Entender cada tipo é essencial para a prática clínica e para provas de residência.\n\nTipo I: Localiza-se na pequena curvatura gástrica, especificamente na região da incisura angularis. É o tipo mais comum de úlcera gástrica e está associado a uma secreção ácida normal ou baixa. Não é o tipo primariamente relacionado ao uso de anti-inflamatórios nesta classificação.\n\nTipo II: Caracteriza-se pela presença de duas úlceras: uma no corpo gástrico e outra no duodeno. Está associada à hipersecreção de ácido clorídrico.\n\nTipo III: Localiza-se na região pré-pilórica (até 3 cm de distância do piloro). Assim como o tipo II, está relacionada a uma produção elevada de ácido e tem comportamento clínico semelhante ao da úlcera duodenal.\n\nTipo IV: É uma úlcera situada na porção alta da pequena curvatura, próxima à transição esofagogástrica (cárdia). Também está associada a uma secreção ácida normal ou reduzida.\n\nTipo V: Este tipo foi adicionado à classificação original para identificar especificamente as úlceras induzidas por medicamentos, principalmente os anti-inflamatórios não esteroidais (AINEs) e a aspirina. Diferentemente dos outros tipos, a úlcera tipo V pode ocorrer em qualquer localização do estômago.\n\nPortanto, a alternativa correta é a letra (e), pois o Tipo V é a categoria definida pela associação direta com o uso de AINEs.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:54.447Z"
+  },
+  {
+    "id": "AJUDA_d7fac51c-f7af-4673-afbb-bc0a7e173c23",
+    "originalId": "d7fac51c-f7af-4673-afbb-bc0a7e173c23",
+    "statement": "Homem de 50 anos de idade procura atendimento médico com queixa de melena há 3 horas. Refere que teve episódio semelhante há 1 ano, quando foi diagnosticado sangramento de varizes de esôfago e cirrose hepática por vírus B. Desde então usa propranolol e faz sessões de escleroterapia. Recentemente utilizou anti-inflamatórios devido a lombalgia. Na sala de emergência apresenta-se orientado, frequência cardíaca de 90 batimentos por minuto, pressão arterial de 80 x 50 mmHg e tempo de enchimento capilar maior que 3 segundos. Submetido a endoscopia com achado de varizes de fundo gástrico com sangramento ativo.\nQual a melhor conduta indicada neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obliteração com cianoacrilato.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Passagem de balão de Sengstaken-Blakemore.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ligadura elástica das varizes e octreotide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cirurgia de emergência (desconexão ázigos-portal).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve um paciente cirrótico com hemorragia digestiva alta ativa proveniente de varizes de fundo gástrico. É fundamental diferenciar o tratamento das varizes esofágicas do das varizes gástricas de fundo, pois a abordagem endoscópica padrão difere entre elas.\n\nAlternativa (a) Correta: A obliteração endoscópica com cianoacrilato (uma espécie de \"cola\" biológica) é o tratamento de escolha para o sangramento por varizes de fundo gástrico (tipos GOV2 e IGV1). Essas varizes costumam ser maiores, mais profundas e ter um fluxo sanguíneo mais intenso do que o das esofágicas, o que torna a ligadura elástica menos eficaz e com maior risco de ressangramento precoce. O cianoacrilato promove a polimerização imediata ao entrar em contato com o sangue, selando o vaso.\n\nAlternativa (b) Incorreta: O balão de Sengstaken-Blakemore é uma medida de exceção, utilizada apenas como \"ponte\" para um tratamento definitivo em casos de sangramento maciço e refratário, nos quais a endoscopia não consegue controlar a hemorragia ou não está disponível. Não é a conduta de escolha diagnóstica ou terapêutica inicial quando se tem o diagnóstico endoscópico e o recurso adequado.\n\nAlternativa (c) Incorreta: Embora o octreotide (um análogo da somatostatina) seja indicado para reduzir a pressão portal em todo sangramento variceal, a ligadura elástica não é a técnica preferencial para varizes de fundo gástrico. A ligadura é o padrão-ouro para varizes esofágicas, mas no fundo gástrico ela apresenta altas taxas de falha técnica e de complicações, como ulcerações graves.\n\nAlternativa (d) Incorreta: A cirurgia de desconexão ázigo-portal ou a realização de shunts portossistêmicos cirúrgicos são terapias de resgate extremamente invasivas e com alta mortalidade em pacientes cirróticos agudizados. Atualmente, antes de pensar em cirurgia, o procedimento de resgate indicado seria o TIPS (Shunt Portossistêmico Intra-hepático Transjugular) ou a BRTO (Obliteração Transvenosa Retrógrada Ocluída por Balão).\n\nResumo: Diante de varizes de fundo gástrico com sangramento ativo, a injeção de cianoacrilato é a intervenção endoscópica com maior evidência de sucesso e controle da hemostasia.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:54.447Z"
+  },
+  {
+    "id": "AJUDA_d7fc9398-6b05-49bd-9283-34769a2e8b0c",
+    "originalId": "d7fc9398-6b05-49bd-9283-34769a2e8b0c",
+    "statement": "Sobre as afecções cirúrgicas do tórax, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O derrame pleural, via de regra, deve ser drenado cirurgicamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O hemotórax maciço é definido pela drenagem de 1.000 mL de sangue em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O pneumotórax hipertensivo deve ser confirmado por radiografia antes da drenagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O empiema pleural em fase fibrinopurulenta pode necessitar de decorticação cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O tratamento do quilotórax é exclusivamente cirúrgico desde o início.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Esta alternativa está incorreta porque a maioria dos derrames pleurais é tratada clinicamente por meio do manejo da doença de base, como insuficiência cardíaca, cirrose ou doença renal. A drenagem de tórax é um procedimento invasivo reservado para situações específicas, como empiemas, hemotórax, derrames parapneumônicos complicados ou grandes derrames sintomáticos que não respondem ao tratamento clínico. A conduta inicial padrão para investigação costuma ser a toracentese diagnóstica, e não a drenagem cirúrgica imediata.\n\nAlternativa b: Esta alternativa está incorreta. De acordo com os protocolos de atendimento ao trauma (como o ATLS), o hemotórax maciço é definido pela drenagem imediata de 1.500 mL ou mais de sangue após a inserção do dreno de tórax. Outro critério utilizado é a drenagem persistente de 200 mL por hora em um período de 2 a 4 horas. O valor de 1.000 mL em 24 horas indica um sangramento significativo, mas não preenche os critérios técnicos para a classificação de maciço.\n\nAlternativa c: Esta alternativa está incorreta. O pneumotórax hipertensivo é uma emergência médica de diagnóstico estritamente clínico. O médico deve reconhecer sinais de desconforto respiratório grave, hipotensão, desvio da traqueia e ausência de murmúrio vesicular no lado afetado. A realização de radiografia para confirmação é contraindicada, pois o tempo perdido no exame pode levar o paciente à parada cardiorrespiratória por choque obstrutivo. O tratamento deve ser a descompressão imediata.\n\nAlternativa d: Esta alternativa está correta. O empiema pleural evolui classicamente em três estágios: exsudativo (fluido fino), fibrinopurulento (presença de fibrina, pus e formação de septações/loculações) e crônico ou de organização (formação de uma carapaça fibrosa sobre o pulmão). Na fase fibrinopurulenta, o líquido torna-se espesso e as aderências impedem que o dreno de tórax comum esvazie o espaço adequadamente. Nesses casos, a decorticação cirúrgica (limpeza da cavidade e remoção da fibrina), geralmente via videotoracoscopia, é necessária para resolver a infecção e permitir a reexpansão pulmonar.\n\nAlternativa e: Esta alternativa está incorreta. O tratamento inicial do quilotórax (presença de linfa no espaço pleural) é preferencialmente conservador. O objetivo é reduzir a produção de linfa por meio de modificações dietéticas, como o uso de triglicerídeos de cadeia média ou jejum total associado à nutrição parenteral. A intervenção cirúrgica, como a ligadura do ducto torácico, é indicada apenas se houver falha do tratamento clínico após uma a duas semanas ou se as perdas diárias forem excessivamente altas (geralmente acima de 1.000 mL/dia em adultos).",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:54.447Z"
+  },
+  {
+    "id": "AJUDA_d7fcded8-359b-4582-8f55-c51860b24e7b",
+    "originalId": "d7fcded8-359b-4582-8f55-c51860b24e7b",
+    "statement": "Endocardite infecciosa em usuários de drogas tem como agente etiológico e valva acometida mais frequentes, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Streptococcus, valva mitral;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Streptococcus, valva aórtica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Staphilococcus aureus, valva mitral;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Staphilococcus aureus, valva tricúspide.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Texto Original:\nA endocardite infecciosa em usuários de drogas intravenosas apresenta um perfil epidemiológico e fisiopatológico distinto daquele observado na população geral. A introdução direta de microrganismos na circulação venosa, através de agulhas e substâncias contaminadas, direciona os patógenos primeiramente para as câmaras direitas do coração.\n\nAlternativa a) Incorreta. O gênero Streptococcus, especialmente o grupo viridans, é a causa mais comum de endocardite subaguda em pacientes que já possuem lesões valvares prévias (como sequela de febre reumática ou prolapso da mitral). A valva mitral é a mais acometida na população geral, mas não é a principal valva nos usuários de drogas.\n\nAlternativa b) Incorreta. O Streptococcus não é o agente predominante em usuários de drogas. Além disso, a valva aórtica é tipicamente acometida em quadros de endocardite de câmaras esquerdas, o que não é o padrão clássico inicial em usuários de drogas injetáveis.\n\nAlternativa c) Incorreta. Embora a alternativa identifique corretamente o Staphylococcus aureus como o principal agente etiológico (devido à sua presença na microbiota da pele e alta virulência), ela erra ao apontar a valva mitral como a mais frequente. O acometimento mitral em usuários de drogas pode ocorrer, mas é menos frequente que o acometimento da tricúspide.\n\nAlternativa d) Correta. Esta alternativa descreve o cenário clássico da endocardite em usuários de drogas intravenosas. O Staphylococcus aureus é o agente isolado em 60% a 70% dos casos. A valva tricúspide é a estrutura mais frequentemente atingida (cerca de 50% ou mais dos casos), pois recebe diretamente o fluxo venoso contaminado proveniente das injeções periféricas. Uma característica clínica comum desse quadro é a presença de múltiplos infartos pulmonares sépticos, resultantes da embolização de vegetações da valva tricúspide para a circulação pulmonar.\n\nResumo da associação para provas:\nUsuário de drogas intravenosas + Staphylococcus aureus + Valva Tricúspide.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Endocardite Bacteriana"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:54.447Z"
+  },
+  {
+    "id": "AJUDA_d80719fb-87b9-4f7f-b2e6-a5ec7e421422",
+    "originalId": "d80719fb-87b9-4f7f-b2e6-a5ec7e421422",
+    "statement": "Um paciente de 48 anos será submetido à colangiopancreatografia endoscópica retrógrada (CPRE) devido a quadro de colangite aguda. A ultrassonografia abdominal revelou dilatação moderada das vias biliares extra-hepáticas e colelitíase com presença de barro biliar. Foi observado cálculo impactado no colédoco distal. Qual dos fatores são associados a maior risco de falha da CPRE nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colelitíase associada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vias biliares dilatadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Presença de barro biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colangite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cálculo impactado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A alternativa correta é a (e): cálculo impactado no colédoco distal é o fator associado a maior risco de falha da CPRE neste caso.\n\nContexto: a CPRE é o tratamento de escolha para coledocolitíase com colangite aguda, pois permite drenar a via biliar (esfincterotomia, extração do cálculo ou colocação de stent/dreno nasobiliar). O sucesso da extração depende das características do cálculo e da anatomia da via biliar. Os principais fatores de dificuldade ou falha são:\n- Cálculos grandes (>15 mm) ou múltiplos.\n- Cálculo impactado, especialmente no colédoco distal ou na papila.\n- Formato do cálculo (quadrado ou em barril).\n- Estenose biliar distal ou colédoco em \"sigmoide\" (angulação acentuada).\n- Divertículo periampular.\n- Anatomia alterada (Billroth II, Y de Roux).\n\nAnálise das alternativas:\n\na) Incorreta. A colelitíase (cálculos na vesícula) não interfere tecnicamente na canulação nem na extração dos cálculos do colédoco. Ela influencia a conduta posterior, ou seja, a colecistectomia após resolução da colangite, mas não a taxa de sucesso da CPRE.\n\nb) Incorreta. A dilatação das vias biliares facilita a canulação e a extração de cálculos pequenos e médios. Ela só se associa a maior dificuldade quando há cálculos muito grandes, o que não é o caso aqui. A dilatação moderada, portanto, não aumenta o risco de falha.\n\nc) Incorreta. O barro biliar (sludge) costuma ser removido com facilidade por balão ou cesta e por lavagem da via biliar. Não é fator relevante de falha.\n\nd) Incorreta. A colangite aguda é a indicação da CPRE, não uma causa de falha. Em geral, o objetivo é a drenagem. Se a extração completa for difícil, podem-se colocar stent biliar para descomprimir a via e programar a retirada definitiva depois.\n\ne) Correta. O cálculo impactado, sobretudo no colédoco distal, dificulta a passagem do fio-guia, da cesta ou do balão e a esfincterotomia segura. Isso reduz a taxa de sucesso na primeira tentativa. Nesses casos, podem ser necessários pré-corte (esfincterotomia com needle-knife), litotripsia mecânica, a laser ou eletro-hidráulica por colangioscopia, ou, em falha, drenagem com stent, abordagem percutânea ou cirurgia (exploração de colédoco).\n\nPonto-chave: na CPRE por coledocolitíase, o que prediz falha é o cálculo difícil (grande, impactado, em local desfavorável) ou a anatomia desfavorável, e não a presença de colelitíase, barro biliar, dilatação biliar ou a própria colangite.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:54.447Z"
+  },
+  {
+    "id": "AJUDA_d81281c4-8e2b-44fb-8432-6792e081f768",
+    "originalId": "d81281c4-8e2b-44fb-8432-6792e081f768",
+    "statement": "Sobre a assistência às parturientes durante as fases clínicas do trabalho do parto, classifique V para as sentenças verdadeiras e F para as falsas:\n\n( ) Na fase ativa do primeiro período do parto, diante da falha na progressão, considerar a realização de amniotomia se as membranas estiverem íntegras, após o consentimento da paciente.\n( ) A tração controlada do cordão deve ser realizada na assistência ao terceiro período do parto, apenas nas parturientes de alto risco.\n( ) O uso de uterotônicos (geralmente ocitocina) para a prevenção de Hemorragia Pós-parto (HPP) durante o terceiro estágio do parto é recomendado para todos os partos.\n( ) A eliminação de mecônio durante o trabalho de parto, de forma isolada, é indicação cesariana, pois a cesárea protege o feto da ocorrência da síndrome de aspiração de mecônio no recém-nascido.\n( ) A cardiotocografia de rotina não é recomendada para a avaliação do bem-estar fetal na admissão do parto de início espontâneo, em gestantes saudáveis de risco habitual.\n\nAssinale a alternativa que apresenta a sequência CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "F - V - V - V - F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V - F - V - F - V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "F - V - F - V - V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V - F - V - F - F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "V - V - F - V - V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise detalhada de cada sentença da questão:\n\nPrimeira sentença: (V) Verdadeira. De acordo com as diretrizes do Ministério da Saúde e da Organização Mundial da Saúde (OMS), a amniotomia não deve ser realizada de forma rotineira em partos de progressão normal. Entretanto, se houver um atraso na progressão do trabalho de parto (fase ativa), a ruptura artificial das membranas é uma intervenção recomendada para tentar corrigir a dinâmica uterina, sempre com o consentimento informado da paciente.\n\nSegunda sentença: (F) Falsa. A tração controlada do cordão umbilical é um dos pilares do manejo ativo do terceiro período (secundamento). Ela é recomendada para todas as parturientes, independentemente do risco, pois auxilia na redução da perda sanguínea e diminui o tempo de saída da placenta, prevenindo a hemorragia pós-parto.\n\nTerceira sentença: (V) Verdadeira. O uso profilático de uterotônicos é a medida mais eficaz para prevenir a hemorragia pós-parto (HPP). A ocitocina (10 UI via intramuscular ou endovenosa lenta) é a droga de escolha e deve ser administrada em todos os partos logo após o nascimento do bebê, conforme recomendação universal dos protocolos de obstetrícia.\n\nQuarta sentença: (F) Falsa. A presença de mecônio isolada não é indicação de cesariana. O mecônio indica a necessidade de uma vigilância fetal mais rigorosa (como a monitorização contínua), mas a maioria dos fetos com mecônio nasce bem por via vaginal. Além disso, a cesariana não previne totalmente a Síndrome de Aspiração de Mecônio, que pode ocorrer ainda no ambiente intrauterino.\n\nQuinta sentença: (V) Verdadeira. Em gestantes saudáveis e de risco habitual que iniciam o trabalho de parto espontaneamente, a cardiotocografia de rotina na admissão não é recomendada. O método preferencial para avaliação do bem-estar fetal nesses casos é a ausculta intermitente. Estudos demonstram que a cardiotocografia sistemática em pacientes de baixo risco aumenta as taxas de cesariana sem melhorar os resultados neonatais.\n\nConclusão da sequência: V - F - V - F - V.\nAlternativa correta: Letra (b).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:54.447Z"
+  },
+  {
+    "id": "AJUDA_d826cc9f-42cf-45c2-8a22-2337ea255774",
+    "originalId": "d826cc9f-42cf-45c2-8a22-2337ea255774",
+    "statement": "Durante o exame físico de uma paciente de 38 anos de idade com histórico de febre reumática na infância, o médico assistente fez o diagnóstico de estenose mitral ao realizar a ausculta cardíaca. A melhor descrição das características do sopro cardíaco decorrente deste tipo de lesão valvar nesse caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "sopro sistólico no foco mitral, seguido de um ruflar pré-diastólico, melhor audível com a campânula do estetoscópio, com o paciente em decúbito lateral esquerdo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sopro protodiastólico irradiado para o pescoço, melhor audível com o diafragma do estetoscópio no foco mitral, com o paciente em posição de Pachón.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sopro diastólico com reforço pré-sistólico, melhor audível com o paciente em decúbito lateral esquerdo, com a campânula do estetoscópio no foco mitral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "sopro protomesodiastólico no foco mitral, melhor audível com o diafragma do estetoscópio, irradiado para o pescoço, que engloba a segunda bulha, que está hipofonética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sopro telediastólico com irradiação para a fúrcula, melhor audível no foco mitral com a campânula do estetoscópio e o paciente em posição sentada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A estenose mitral é uma valvulopatia frequentemente associada à sequela de febre reumática, como no caso da paciente de 38 anos. A compreensão da fisiopatologia e da semiologia cardíaca é fundamental para identificar as características clássicas desse sopro.\n\nAnálise das alternativas:\n\na) Incorreta. O sopro da estenose mitral é obrigatoriamente diastólico, pois é nesse momento que o sangue flui do átrio esquerdo para o ventrículo esquerdo através da valva mitral estenosada. Um sopro sistólico no foco mitral indicaria insuficiência mitral.\n\nb) Incorreta. A irradiação para o pescoço é típica de patologias da valva aórtica (como a estenose aórtica). Além disso, o sopro da estenose mitral é um som de baixa frequência, sendo mais bem captado pela campânula do estetoscópio, e não pelo diafragma.\n\nc) Correta. Esta alternativa descreve perfeitamente o \"ruflar diastólico\". O sopro ocorre na diástole e apresenta um reforço pré-sistólico (causado pela sístole atrial, que aumenta o fluxo no final da diástole, desde que o paciente esteja em ritmo sinusal). O foco mitral (ápice) é o local de maior intensidade, e a posição de Pachón (decúbito lateral esquerdo) aproxima a ponta do coração da parede torácica, facilitando a ausculta com a campânula.\n\nd) Incorreta. O sopro da estenose mitral não irradia para o pescoço. Além disso, na estenose mitral, a primeira bulha (B1) costuma ser hiperfonética (devido ao fechamento abrupto das cúspides espessadas) e não se espera hipofonese da segunda bulha como característica definidora do sopro mitral.\n\ne) Incorreta. A irradiação para a fúrcula não é característica da estenose mitral, sendo mais comum em sopros aórticos. A posição sentada com inclinação para frente também é uma manobra utilizada para evidenciar sopros da base do coração (aórticos e pulmonares), e não do foco mitral.\n\nResumo dos achados na Estenose Mitral:\n1. B1 hiperfonética.\n2. Estalido de abertura da valva mitral (logo após B2).\n3. Ruflar diastólico (baixa frequência — campânula).\n4. Reforço pré-sistólico (em ritmo sinusal).\n5. Mais audível no foco mitral em decúbito lateral esquerdo (posição de Pachón).",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Semiologia Cardíaca",
+      "Febre Reumática",
+      "Valvopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:54.447Z"
+  },
+  {
+    "id": "AJUDA_d8274134-1951-4e13-9777-7b875989362e",
+    "originalId": "d8274134-1951-4e13-9777-7b875989362e",
+    "statement": "Gestante diabética pré-gestacional insulinodependente realiza ecocardiografia fetal com 24 semanas, que mostra hipertrofia septal moderada, função sistólica preservada e fluxo normal pelo ducto arterioso. Não há outras malformações. Qual conduta é mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Repetir o eco fetal apenas após o parto, pois hipertrofia septal não se modifica intraútero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orientar que a hipertrofia septal fetal é irreversível e requer interrupção precoce da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ajustar controle glicêmico materno e programar reavaliação ecocardiográfica fetal no 3º trimestre.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar investigação genética urgente, pois o achado é típico de cardiopatia estrutural cromossômica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar uso de corticosteroide materno para reduzir a espessura septal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A hipertrofia do septo interventricular fetal é uma complicação clássica do diabetes melito gestacional ou pré-gestacional mal controlado. O mecanismo fisiopatológico baseia-se no fato de que a hiperglicemia materna leva à hiperglicemia fetal, o que estimula o pâncreas do feto a secretar níveis elevados de insulina. Como a insulina é um hormônio anabólico e o miocárdio fetal (especialmente o septo) é rico em receptores de insulina, ocorre um aumento da síntese de proteínas e deposição de glicogênio, resultando na hipertrofia miocárdica.\n\nAlternativa a) Incorreta. A hipertrofia septal é uma condição dinâmica. Ela pode se modificar intraútero, dependendo do controle metabólico da gestante e, na grande maioria dos casos, regride espontaneamente nos primeiros meses após o nascimento. A reavaliação é necessária para monitorar se haverá progressão para uma forma obstrutiva.\n\nAlternativa b) Incorreta. A condição é reversível e o prognóstico é geralmente bom, desde que a função cardíaca esteja preservada e não haja obstrução grave do fluxo de saída do ventrículo esquerdo. Não existe indicação de interrupção da gestação por esse achado isolado.\n\nAlternativa c) Correta. O pilar do tratamento é o ajuste rigoroso do controle glicêmico materno para reduzir o estímulo do hiperinsulinismo fetal. A reavaliação no terceiro trimestre é fundamental para acompanhar a evolução da espessura do septo e garantir que a função cardíaca permaneça preservada, descartando sinais de insuficiência cardíaca ou obstrução de via de saída.\n\nAlternativa d) Incorreta. Embora algumas síndromes genéticas possam cursar com cardiomiopatia, o achado de hipertrofia septal em uma gestante diabética insulinodependente é uma manifestação típica da fetopatia diabética. A investigação genética não é a conduta inicial prioritária diante desse contexto clínico evidente.\n\nAlternativa e) Incorreta. O uso de corticosteroides em obstetrícia é indicado para a maturação pulmonar fetal em casos de risco de parto prematuro. Não há indicação ou evidência de que o corticoide reduza a espessura septal miocárdica; pelo contrário, o uso sistêmico de corticoides em recém-nascidos pode, em alguns casos, estar associado ao desenvolvimento de hipertrofia miocárdica transitória.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:54.447Z"
+  },
+  {
+    "id": "AJUDA_d830a6d3-bad5-4f4c-9f40-6d4310117a4e",
+    "originalId": "d830a6d3-bad5-4f4c-9f40-6d4310117a4e",
+    "statement": "Uma adolescente de 15 anos comparece em consulta ginecológica com a finalidade de iniciar contracepção. Na história patológica pregressa, refere episódios de enxaqueca com aura. Nos antecedentes familiares, relata que a avó materna teve diagnóstico de câncer de mama, sua mãe é hipertensa e sua irmã tem diabetes.\nO uso do contraceptivo combinado está contraindicado para essa paciente devido ao risco de",
+    "options": [
+      {
+        "id": "A",
+        "text": "câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "diabetes mellitus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "acidente vascular cerebral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "hipertensão arterial sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO ponto central desta questão é o reconhecimento dos Critérios Médicos de Elegibilidade da Organização Mundial da Saúde (OMS) para o uso de métodos contraceptivos. A paciente em questão apresenta uma contraindicação absoluta (Categoria 4 da OMS) ao uso de contraceptivos combinados (que contêm estrogênio e progesterona): a enxaqueca com aura.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. Ter uma avó materna com câncer de mama representa um antecedente familiar de segundo grau. De acordo com os critérios da OMS, o histórico familiar de câncer de mama, mesmo em parentes de primeiro grau, não contraindica o uso de métodos hormonais combinados (é classificado como Categoria 1). O uso seria contraindicado apenas se a própria paciente tivesse o diagnóstico atual ou pregresso da doença.\n\nAlternativa b) Incorreta. O fato de a irmã da paciente ter diabetes não impede o uso do contraceptivo. Para a paciente, o histórico familiar de diabetes é Categoria 1. Mesmo que a paciente fosse diabética, o uso de combinados só seria contraindicado (Categoria 3 ou 4) se ela apresentasse nefropatia, retinopatia, neuropatia ou doença vascular estabelecida.\n\nAlternativa c) CORRETA. A presença de enxaqueca com aura em qualquer idade é uma contraindicação absoluta (Categoria 4) ao uso de estrogênios. Isso ocorre porque o estrogênio, presente nos contraceptivos combinados, aumenta significativamente o risco de Acidente Vascular Cerebral (AVC) isquêmico nessas pacientes. A aura já sinaliza um distúrbio na microcirculação cerebral que, somado aos efeitos pró-trombóticos e vasoconstritores do etinilestradiol, eleva o risco vascular a níveis inaceitáveis.\n\nAlternativa d) Incorreta. Ter uma mãe hipertensa não é contraindicação para o uso do método (Categoria 1). A hipertensão arterial só seria um impedimento se a própria paciente fosse hipertensa com níveis pressóricos elevados (sistólica maior ou igual a 140 mmHg ou diastólica maior ou igual a 90 mmHg), o que configuraria Categoria 3 ou 4, dependendo da gravidade.\n\nResumo didático: Sempre que uma questão de prova citar \"enxaqueca com aura\" e \"contraceptivo combinado\", o risco associado que impede o uso é o de AVC isquêmico. Para essa paciente, as opções seguras seriam métodos de progesterona isolada (pílula, injetável trimestral, implante ou DIU de levonorgestrel) ou métodos não hormonais (DIU de cobre).",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": 35.75630827212737,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:54.447Z"
+  },
+  {
+    "id": "AJUDA_d863aa62-15b3-4bd1-8947-6584990e2268",
+    "originalId": "d863aa62-15b3-4bd1-8947-6584990e2268",
+    "statement": "No que se refere aos sinais e sintomas do TDAH (Transtorno de Déficit de Atenção/Hiperatividade) estabelecidas no DSM-5 assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na idade pré-escolar a desatenção é o sintoma mais frequente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Para o diagnóstico em adultos são necessários pelo menos sete sintomas de desatenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tempo de persistência dos sintomas deve ser de pelo menos 12 meses para ser considerado no diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A ocorrência de sintomas de desatenção ou hiperatividade em apenas um ambiente confirma o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A atitude de usar coisas de outras pessoas sem pedir ou receber permissão é um dos sintomas da hiperatividade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise detalhada da questão sobre os critérios diagnósticos do TDAH segundo o DSM-5:\n\nAlternativa A (Incorreta): No período pré-escolar, a hiperatividade e a impulsividade são as manifestações mais proeminentes e frequentes. A desatenção costuma tornar-se mais evidente apenas a partir da idade escolar, quando a criança é exposta a demandas cognitivas estruturadas que exigem esforço mental sustentado e organização.\n\nAlternativa B (Incorreta): De acordo com o DSM-5, para crianças e adolescentes até 16 anos, são necessários pelo menos 6 sintomas de desatenção ou de hiperatividade/impulsividade. Para adolescentes a partir de 17 anos e adultos, o ponto de corte é reduzido para pelo menos 5 sintomas em qualquer uma das dimensões.\n\nAlternativa C (Incorreta): O critério de temporalidade definido pelo DSM-5 estabelece que os sintomas devem persistir por pelo menos 6 meses, e não 12 meses. Esses sintomas também devem ser inconsistentes com o nível de desenvolvimento esperado para a idade.\n\nAlternativa D (Incorreta): Um dos critérios fundamentais para o diagnóstico de TDAH é a onipresença dos sintomas. Eles devem estar presentes em dois ou mais ambientes (por exemplo, em casa e na escola; no trabalho e nos círculos sociais). Sintomas restritos a apenas um ambiente sugerem outras etiologias ou problemas contextuais específicos.\n\nAlternativa E (Correta): Esta alternativa refere-se a um dos itens do critério de Impulsividade (contido no domínio de Hiperatividade/Impulsividade). O DSM-5 especifica que o indivíduo frequentemente interrompe ou se intromete em atividades alheias, o que pode se manifestar como o uso de pertences de terceiros sem permissão, devido à falha no controle inibitório.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:54.447Z"
+  }
+]

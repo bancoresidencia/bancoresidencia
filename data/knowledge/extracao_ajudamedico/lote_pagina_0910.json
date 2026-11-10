@@ -1,0 +1,523 @@
+[
+  {
+    "id": "AJUDA_fc8d2127-bfd1-47d3-9ce8-f0f233091690",
+    "originalId": "fc8d2127-bfd1-47d3-9ce8-f0f233091690",
+    "statement": "Mulher, 69 anos, hipertensa e diabética vai em consulta de retorno em uma UBS com estratégia de saúde da família. Exames laboratoriais revelaram insuficiência renal crônica no estágio 3b. Por este motivo, é encaminhada ao serviço de nefrologia de referência para avaliação. De acordo com a Organização da Atenção à Saúde no Brasil representada pela Rede de Atenção à Saúde (RAS), entre as opções abaixo, a que o melhor descreve o acompanhamento desta paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "seguimento no serviço de referência sem necessidade de retorno à APS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ações de promoção e prevenção na UBS e seguimento clínico no especialista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "coordenado pelo serviço secundário e se necessário este realizará novos encaminhamentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "seguimento no serviço de referência até receber alta deste ou ser encaminhado de volta a UBS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "coordenado pela APS na UBS com apoio da especialidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda o funcionamento das Redes de Atenção à Saúde (RAS) no Brasil, com foco no papel da Atenção Primária à Saúde (APS) como coordenadora do cuidado e ordenadora da rede.\n\nAlternativa a: Incorreta. O encaminhamento para um serviço de especialidade não interrompe o vínculo da paciente com a Unidade Básica de Saúde (UBS). Na lógica da RAS, a APS deve manter o acompanhamento longitudinal da paciente, independentemente de ela estar sendo assistida simultaneamente por um especialista focal.\n\nAlternativa b: Incorreta. A atuação da UBS não se limita a ações de promoção e prevenção. A APS é responsável pelo manejo clínico de condições crônicas, como a hipertensão arterial e o diabetes mellitus, e deve realizar o acompanhamento clínico compartilhado da insuficiência renal crônica em conjunto com o nefrologista.\n\nAlternativa c: Incorreta. A coordenação do cuidado é uma atribuição fundamental da Atenção Primária. O serviço secundário (especialidade) atua como um ponto de atenção de maior densidade tecnológica para apoiar o caso, mas a responsabilidade de organizar o percurso da paciente na rede e integrar as informações permanece com a equipe de Saúde da Família.\n\nAlternativa d: Incorreta. Esta alternativa descreve um modelo fragmentado de idas e vindas. Nas Redes de Atenção à Saúde, busca-se o cuidado compartilhado e a continuidade da assistência. A paciente não deve simplesmente aguardar uma alta para retornar à UBS; o fluxo de informações entre os níveis de atenção deve ser contínuo.\n\nAlternativa e: Correta. Segundo as diretrizes do Sistema Único de Saúde (SUS) e os fundamentos da RAS, a APS é o centro de comunicação da rede. Ela deve coordenar o cuidado, garantindo a continuidade da atenção, enquanto o serviço de nefrologia (atenção secundária) oferece o suporte especializado. Esse arranjo é conhecido como cuidado compartilhado, em que a equipe da UBS e o especialista colaboram no plano terapêutico da paciente.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:48.337Z"
+  },
+  {
+    "id": "AJUDA_fc918e3c-88ea-4e95-88ad-d34fa11905c8",
+    "originalId": "fc918e3c-88ea-4e95-88ad-d34fa11905c8",
+    "statement": "Homem de 65 anos, natural de Limoeiro (PE), portador de cirrose hepática alcoólica há oito anos, chega ao hospital de referência em Recife com dispneia progressiva há 10 dias e dor torácica leve à direita, sem febre, tosse ou perda de peso. Relata aumento do volume abdominal e edema em membros inferiores. Encontra-se em bom estado geral, com mucosas descoradas e icterícia discreta. Ao exame, apresenta ascite moderada, edema bilateral de pernas (2+/4+) e redução do murmúrio vesicular na base direita, com macicez até o terço médio do hemitórax. A pressão arterial é 104×68 mmHg, frequência cardíaca 88 bpm e saturação de 93% em ar ambiente. A radiografia de tórax evidencia derrame pleural volumoso à direita, sem sinais de consolidação. A toracocentese mostra proteína pleural de 1,8 g/dL, DHL 120 U/L, relação proteína pleural/sérica de 0,3, relação DHL pleural/sérica de 0,4, glicose de 95 mg/dL, pH 7,45, citologia com poucas células mesoteliais sem predomínio celular e cultura negativa.\nCom base no quadro clínico e laboratorial, qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Derrame exsudativo por infecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Derrame transudativo secundário à hipertensão portal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Derrame neoplásico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quilotórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Empiema pleural.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico\n\nO paciente apresenta um quadro clássico de cirrose hepática com ascite e edema de membros inferiores, evoluindo com um derrame pleural volumoso à direita. Este cenário é característico do hidrotórax hepático, uma complicação da hipertensão portal em que o fluido ascítico atravessa pequenos defeitos (fenestrações) no diafragma, geralmente localizados no lado direito, devido à pressão intra-abdominal elevada.\n\nPara diferenciar a natureza do líquido pleural, aplicamos os Critérios de Light, que definem um exsudato se pelo menos um dos seguintes critérios for preenchido:\n1. Relação proteína pleural/proteína sérica maior que 0,5.\n2. Relação DHL pleural/DHL sérico maior que 0,6.\n3. DHL pleural maior que 2/3 do limite superior da normalidade para o DHL sérico.\n\nNo caso apresentado:\n- Relação proteína pleural/sérica: 0,3 (menor que 0,5).\n- Relação DHL pleural/sérico: 0,4 (menor que 0,6).\n- DHL absoluto: 120 U/L (baixo).\n- pH (7,45) e glicose (95 mg/dL): normais.\n\nPortanto, trata-se de um transudato.\n\nAnálise das Alternativas:\n\na) Incorreta. Derrames exsudativos por infecção (como o derrame parapneumônico) apresentam Critérios de Light positivos para exsudato, além de geralmente cursarem com febre, tosse e leucocitose, sintomas ausentes no paciente.\n\nb) Correta. O diagnóstico é hidrotórax hepático. Trata-se de um derrame transudativo que ocorre em cerca de 5 a 10% dos pacientes com cirrose e hipertensão portal. A bioquímica do líquido pleural é muito semelhante à do líquido ascítico, e a localização preferencial é o hemitórax direito (85% dos casos).\n\nc) Incorreta. Derrames neoplásicos são, por definição, exsudatos (proteína e DHL elevados). O paciente não apresenta perda de peso e a citologia pleural mostrou poucas células, sem atipias.\n\nd) Incorreta. O quilotórax é causado pelo acúmulo de linfa no espaço pleural por obstrução ou lesão do ducto torácico. Embora possa ser transudativo em raros casos de cirrose, ele se caracteriza por um aspecto leitoso e níveis de triglicerídeos acima de 110 mg/dL, o que não condiz com a descrição bioquímica de um transudato simples.\n\ne) Incorreta. O empiema pleural é um exsudato purulento. Laboratorialmente, apresenta pH baixo (geralmente menor que 7,20), glicose muito baixa e DHL significativamente elevado (frequentemente acima de 1000 U/L), além de cultura positiva ou presença de pus macroscópico, o que foi descartado pelos exames.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Derrame Pleural",
+      "Cirrose Hepática"
+    ],
+    "difficulty": 19.44858584014352,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:48.337Z"
+  },
+  {
+    "id": "AJUDA_fc9217f6-56e6-470f-adbd-793dddaa8008",
+    "originalId": "fc9217f6-56e6-470f-adbd-793dddaa8008",
+    "statement": "Recém-nascido a termo internado na unidade neonatal para tratamento de neurossífilis apresentou hipoglicemia assintomática nas primeiras 24 horas de vida, necessitando de reposição endovenosa de glicose por 72 horas. Com 11 dias de vida, apresenta perda ponderal de 12% em relação ao peso de nascimento, recebendo seio materno e, na ausência da mãe, fórmula láctea com oferta adequada, além da antibioticoterapia parenteral. Foram coletados exames laboratoriais que revelaram Na+ de 126 mEq/L e K+ de 6,8 mEq/L. Qual é a deficiência que se espera encontrar no Teste do Pezinho?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deficiência de TREC e KREC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deficiência de 21-hidroxilase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deficiência de carnitina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deficiência na síntese da proteína CFTR.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO caso descreve um recém-nascido a termo de 11 dias com hipoglicemia neonatal prévia, perda de peso excessiva (12% no 11º dia de vida, quando já deveria ter recuperado o peso de nascimento) e distúrbios hidroeletrolíticos marcados por hiponatremia (Na+ 126 mEq/L) e hipercalemia (K+ 6,8 mEq/L). \n\nA associação de perda ponderal importante, hipoglicemia, hiponatremia e hipercalemia é a apresentação clássica da crise perdedora de sal decorrente de insuficiência adrenal primária, especificamente a Hiperplasia Adrenal Congênita (HAC). A falta de cortisol prejudica a gliconeogênese (causando hipoglicemia), enquanto a falta de aldosterona impede a reabsorção renal de sódio e a excreção de potássio (gerando desidratação, hiponatremia e hipercalemia).\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a: Incorreta. A dosagem de TREC e KREC no Teste do Pezinho é utilizada para triagem de Imunodeficiências Primárias graves (como Imunodeficiência Combinada Grave - SCID e Agamaglobulinemia). O quadro clínico dessas condições se manifesta principalmente por infecções graves, oportunistas ou de repetição, sem causar a crise perdedora de sal observada no paciente.\n\nAlternativa b: Correta. A deficiência da enzima 21-hidroxilase é responsável por mais de 90% dos casos de Hiperplasia Adrenal Congênita. Na forma perdedora de sal, o bloqueio enzimático impede a síntese adequada de cortisol e aldosterona, desencadeando a crise metabólica descrita. A triagem neonatal é realizada no Teste do Pezinho por meio da quantificação da 17-hidroxiprogesterona (17-OHP), precursora acumulada na via esteroidogênica.\n\nAlternativa c: Incorreta. Os defeitos da oxidação de ácidos graxos, como a deficiência primária ou secundária de carnitina, cursam caracteristicamente com hipoglicemia hipocetótica, miopatia, cardiomiopatia e disfunção hepática, mas não produzem o padrão clássico de hipercalemia e perda renal de sódio.\n\nAlternativa d: Incorreta. A alteração na proteína CFTR é a causa da Fibrose Cística. Embora possa levar a baixo ganho de peso por insuficiência pancreática exócrina e desidratação por perda de eletrólitos no suor, o distúrbio eletrolítico característico é a alcalose metabólica hipoclorêmica e hipocalêmica (com potássio baixo, e não elevado).",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios do Sódio",
+      "Distúrbios do Potássio",
+      "Hiperplasia Adrenal Congênita",
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:48.337Z"
+  },
+  {
+    "id": "AJUDA_fc995c69-3ab7-4262-8451-6962563a9961",
+    "originalId": "fc995c69-3ab7-4262-8451-6962563a9961",
+    "statement": "Qual é a principal vantagem de um ensaio clínico randomizado em comparação com estudos observacionais para avaliar a eficácia de uma intervenção?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A randomização ajuda a distribuir os fatores de confusão de forma equilibrada entre os grupos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "São eticamente mais simples, pois não envolvem a intervenção direta do pesquisador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Possuem maior validade externa e generalização para a população geral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "São mais baratos e rápidos de conduzir.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O ensaio clínico randomizado (ECR) é considerado o padrão-ouro na hierarquia da evidência científica para avaliar a eficácia de tratamentos e intervenções. A principal razão para essa classificação reside no controle metodológico sobre as variáveis que podem distorcer os resultados.\n\nAlternativa a: Está correta. A randomização é o processo de alocar os participantes nos grupos de estudo de forma puramente aleatória (por sorteio). Isso garante que fatores de confusão, sejam eles conhecidos (como idade, sexo e gravidade da doença) ou desconhecidos (como predisposição genética ou hábitos de vida não registrados), sejam distribuídos de maneira equilibrada entre o grupo intervenção e o grupo controle. Ao tornar os grupos comparáveis entre si, qualquer diferença observada no desfecho final pode ser atribuída com maior segurança à intervenção testada, permitindo estabelecer uma relação de causalidade.\n\nAlternativa b: Está incorreta. Pelo contrário, os ensaios clínicos são eticamente mais desafiadores. Como envolvem a aplicação de uma intervenção deliberada pelo pesquisador, exigem aprovação rigorosa de comitês de ética, consentimento informado detalhado e monitoramento constante de eventos adversos. Estudos observacionais são eticamente mais simples justamente por não interferirem na conduta clínica ou na exposição do paciente.\n\nAlternativa c: Está incorreta. Ensaios clínicos geralmente possuem alta validade interna (os resultados são confiáveis para aquela amostra estudada devido ao rigor do controle), mas frequentemente apresentam menor validade externa (generalização). Isso ocorre porque os critérios de inclusão e exclusão são muito rigorosos, criando uma população \"idealizada\" que nem sempre reflete a diversidade de pacientes encontrados na prática médica real. Estudos observacionais costumam ter maior validade externa por estudarem a população sem tantas restrições.\n\nAlternativa d: Está incorreta. Ensaios clínicos randomizados estão entre os desenhos de estudo mais caros e demorados da medicina. Eles exigem infraestrutura de pesquisa robusta, equipes multidisciplinares, financiamento para medicamentos ou dispositivos, além de custos elevados com monitoramento e auditoria de dados. Estudos observacionais, como os de coorte ou caso-controle, costumam ser mais baratos e rápidos, especialmente quando utilizam bancos de dados já existentes.\n\nAlternativa e: Está incorreta, uma vez que a alternativa A define corretamente a vantagem técnica fundamental da randomização nos ensaios clínicos.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:48.337Z"
+  },
+  {
+    "id": "AJUDA_fc9c8413-81aa-420a-9cd8-3503d4da1381",
+    "originalId": "fc9c8413-81aa-420a-9cd8-3503d4da1381",
+    "statement": "Homem de 42 anos, IMC 42 kg/m², portador de hipertensão arterial sistêmica e apneia obstrutiva do sono, comparece em consulta ambulatorial para avaliação de cirurgia bariátrica. Refere múltiplas tentativas de perda de peso sem sucesso. Após avaliação multiprofissional, foi indicado tratamento cirúrgico.\n\nA principal indicação formal para a cirurgia bariátrica neste paciente é que ele tenha",
+    "options": [
+      {
+        "id": "A",
+        "text": "apneia do sono moderada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "falhado em dietas e exercícios prévios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IMC maior que 40 kg/m², independentemente de comorbidades.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "hipertensão arterial sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "mais de 40 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O paciente apresenta um Índice de Massa Corporal (IMC) de 42 kg/m². Segundo as normas do Conselho Federal de Medicina (CFM) e as diretrizes internacionais, a indicação do procedimento baseia-se em critérios específicos de IMC e na presença de comorbidades.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A apneia do sono é classificada como uma comorbidade que justificaria a indicação cirúrgica em pacientes com IMC entre 35 e 39,9 kg/m². Como o paciente possui IMC de 42 kg/m², a indicação já está estabelecida pelo excesso de peso isoladamente, tornando a gravidade da apneia um fator secundário para a indicação formal.\n\nAlternativa b: Incorreta. A falha no tratamento clínico (dieta, atividade física e acompanhamento médico) por um período mínimo, geralmente de dois anos, é uma condição obrigatória ou pré-requisito para a realização da cirurgia. No entanto, o que define a indicação formal técnica são os parâmetros de IMC e saúde clínica.\n\nAlternativa c: Correta. Esta é a indicação principal para o paciente. De acordo com os protocolos vigentes, um IMC maior ou igual a 40 kg/m² configura obesidade grau III (mórbida) e é, por si só, uma indicação formal e direta para a cirurgia bariátrica, independentemente de o paciente possuir ou não outras doenças associadas. Como o paciente tem IMC de 42 kg/m², ele se enquadra exatamente neste critério.\n\nAlternativa d: Incorreta. A hipertensão arterial é uma comorbidade que autoriza a indicação cirúrgica para pacientes com IMC entre 35 e 39,9 kg/m². Para este paciente, que já ultrapassou o IMC de 40 kg/m², a hipertensão é uma justificativa adicional, mas não é o critério definidor principal da indicação formal.\n\nAlternativa e: Incorreta. A idade de 42 anos apenas confirma que o paciente está dentro da faixa etária na qual o procedimento é amplamente recomendado (geralmente entre 16 e 65 anos). Todavia, a idade cronológica não é um critério de indicação para o tratamento cirúrgico da obesidade.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Cirurgia Bariátrica e Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:48.337Z"
+  },
+  {
+    "id": "AJUDA_fca79c3f-1510-446b-81b2-ddebf1a6964d",
+    "originalId": "fca79c3f-1510-446b-81b2-ddebf1a6964d",
+    "statement": "Menina de 10 anos de idade, chegou ao Pronto Atendimento com queixa de dor no peito há 2 dias e cansaço quando faz atividade física nesse período. Nega febre. Sua mãe refere que a filha já precisou ficar internada algumas vezes quando era lactente, devido a crises de dispneia e tosse, apresentando melhora com inalação com salbutamol e xarope de prednisolona. Desde então, eventualmente tem crises de tosse que melhoram com as mesmas medicações. Está com a vacinação atualizada. Seu pai tem rinite alérgica e seu irmão de 5 anos tem dermatite atópica. Ao exame físico, apresenta bom estado geral, corada, hidratada, anictérica, acianótica e afebril. Otoscopia e oroscopia normais. Rinoscopia com hipertrofia e edema de cornetos e secreção hialina discreta. Murmúrio vesicular presente com sibilos bilaterais e expiração prolongada. Bulhas rítmicas normofonéticas, em dois tempos e sem sopros. Abdome flácido, sem visceromegalias. Membros inferiores sem edema. PA: 100 x 60 mmHg.\n\nQual o diagnóstico mais provável desse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insuficiência cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bronquiolite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Crise asmática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pneumonia atípica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Edema agudo de pulmão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico de crise de asma (crise asmática). Os principais elementos que sustentam esse diagnóstico são: histórico pessoal de episódios recorrentes de dispneia e tosse desde a lactância com melhora mediante uso de broncodilatador (salbutamol) e corticoide sistêmico (prednisolona); forte histórico familiar de atopia (pai com rinite alérgica e irmão com dermatite atópica); estigmas de rinite alérgica ao exame físico; e ausculta pulmonar com sibilos bilaterais associados a tempo expiratório prolongado, caracterizando obstrução difusa e reversível de vias aéreas inferiores. A queixa de dor no peito associada ao esforço em crianças com crise asmática decorre frequentemente do esforço ventilatório e fadiga da musculatura respiratória.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A insuficiência cardíaca na infância costuma cursar com taquicardia, ritmo de galope, sopros cardíacos, hepatomegalia congestiva e edema periférico, achados que estão ausentes na paciente, cujo exame cardiovascular e abdominal é estritamente normal.\n\nAlternativa b: Incorreta. A bronquiolite viral aguda é uma doença restrita ao primeiro ou segundo ano de vida (lactentes menores de 2 anos), caracterizada tipicamente pelo primeiro episódio de sibilância precedido por infecção de vias aéreas superiores. A paciente em questão tem 10 anos e histórico de múltiplos episódios prévios.\n\nAlternativa c: Correta. A combinação de sibilância atual, história de hiper-reatividade brônquica recorrente responsiva a broncodilatadores, idade escolar e forte contexto de atopia pessoal e familiar preenche os critérios para crise asmática.\n\nAlternativa d: Incorreta. Pneumonias atípicas (como as causadas por Mycoplasma pneumoniae) costumam apresentar sintomas infecciosos sistêmicos, como febre, tosse persistente e piora do estado geral, além de achados radiológicos e ausculta pulmonar com estertores, não sendo caracterizadas por história recorrente responsiva a broncodilatadores.\n\nAlternativa e: Incorreta. O edema agudo de pulmão manifesta-se com desconforto respiratório grave, hipoxemia expressiva, estertores crepitantes difusos à ausculta pulmonar e frequentemente está associado a cardiopatia grave de base ou hipertensão arterial severa, o que destoa totalmente do caso.\n\nGabarito: Alternativa c.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria",
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:48.337Z"
+  },
+  {
+    "id": "AJUDA_fca82ad0-42f1-4f1c-bf7b-dd1f933ebc29",
+    "originalId": "fca82ad0-42f1-4f1c-bf7b-dd1f933ebc29",
+    "statement": "Homem, 35 anos de idade, relata dor e edema em punhos, tornozelos e segundas e terceiras interfalangeanas proximais e distais há 2 meses, acompanhada de febre, fadiga e manchas avermelhadas no tronco, nas palmas das mãos e plantas dos pés. Relata que há 4 meses apresentou pápula hiperemiada seguido de ulceração em base peniana. Os resultados dos exames são mostrados a seguir.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Artrite reumatoide; anti-CCP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Artrite sifilítica; anti-treponema.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Artrite reativa; anti-clamídia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Artrite psoriásica; anti-RNP.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO caso clínico apresenta um homem de 35 anos com um quadro de poliartrite simétrica e distal (acometendo inclusive as interfalangeanas distais), sintomas sistêmicos (febre e fadiga) e manifestações cutâneas características. O ponto-chave para o diagnóstico reside na história epidemiológica e na progressão das lesões: uma pápula ulcerada em base peniana há 4 meses (compatível com cancro duro ou sífilis primária) seguida, meses depois, por manchas avermelhadas no tronco, palmas das mãos e plantas dos pés (roséola sifilítica e sifílides palmo-plantares, típicas da sífilis secundária).\n\nA artrite é uma manifestação possível, embora menos comum, do estágio secundário da infecção pelo *Treponema pallidum*.\n\nAnálise das Alternativas:\n\na) Incorreta. A Artrite Reumatoide (AR) tipicamente poupa as articulações interfalangeanas distais (IFDs), focando em metacarpofalangeanas e interfalangeanas proximais. Além disso, a AR não justifica o exantema palmo-plantar nem o histórico de úlcera genital prévia. O anti-CCP é um marcador altamente específico para AR, mas não condiz com o quadro clínico infeccioso apresentado.\n\nb) Correta. O paciente apresenta uma evolução clássica de sífilis. A úlcera peniana indolor que desaparece espontaneamente marca a fase primária. A erupção cutânea que atinge palmas e plantas, associada a sintomas constitucionais e poliartrite, caracteriza a sífilis secundária. O diagnóstico é corroborado por testes treponêmicos (anti-treponema/FTA-Abs) e não treponêmicos (VDRL).\n\nc) Incorreta. A Artrite Reativa costuma se manifestar como uma oligoartrite assimétrica, geralmente em membros inferiores, após uma infecção uretral (como por clamídia) ou gastrointestinal. Embora a clamídia possa causar úlceras ou corrimentos, a descrição das manchas palmo-plantares e a cronologia pós-cancro apontam especificamente para sífilis. O diagnóstico de artrite reativa é clínico, e a pesquisa de \"anti-clamídia\" não é o padrão para confirmação da artrite.\n\nd) Incorreta. A Artrite Psoriásica pode, de fato, acometer as interfalangeanas distais, mas as lesões cutâneas da psoríase são tipicamente placas eritemato-descamativas em superfícies extensoras, e não um exantema súbito no tronco e palmas após uma úlcera genital. Além disso, o anticorpo anti-RNP é marcador da Doença Mista do Tecido Conjuntivo, não tendo relação diagnóstica com a artrite psoriásica.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Artropatias Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:48.337Z"
+  },
+  {
+    "id": "AJUDA_fcad2ab4-c05e-4f7c-ad84-160d3181dc0c",
+    "originalId": "fcad2ab4-c05e-4f7c-ad84-160d3181dc0c",
+    "statement": "Seu Pedro, 34 anos, apresentando tosse, febre, estertores creptantes e abolição de murmúrio vesicular na base do pulmão direito, compareceu para consulta na unidade de saúde próxima à sua residência, onde o médico da equipe de saúde da família orientou",
+    "options": [
+      {
+        "id": "A",
+        "text": "encaminhamento para tratamento em regime de internação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tratamento empírico com antibiótico amoxicilina clavulanato para uso em residência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "encaminhamento para atenção de nível secundário em ambulatório de pneumologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "encaminhamento para Unidade de Pronto Atendimento (UPA).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "permanência na unidade por 8 horas em tratamento e observação de sinais de alarme.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO quadro clínico de Seu Pedro (tosse, febre, estertores crepitantes e abolição de murmúrio vesicular na base direita) é altamente sugestivo de Pneumonia Adquirida na Comunidade (PAC). A abolição do murmúrio vesicular pode indicar consolidação ou um pequeno derrame pleural parapneumônico associado. Para definir a conduta, o médico deve avaliar a gravidade do quadro, geralmente utilizando escores como o CURB-65 ou o CRB-65 (que avalia Confusão mental, Ureia, Frequência Respiratória, Pressão arterial e Idade).\n\nComo o paciente tem 34 anos (abaixo de 65 anos) e não apresenta sinais descritos de instabilidade hemodinâmica, alteração do nível de consciência ou desconforto respiratório grave, ele se enquadra em um grupo de baixo risco.\n\nAlternativa a) Incorreta. A internação hospitalar não é necessária para pacientes jovens, sem comorbidades relatadas e sem sinais de gravidade nos critérios de CURB-65 ou CRB-65. O tratamento ambulatorial é seguro e preferível nesses casos para evitar infecções hospitalares.\n\nAlternativa b) Correta. O tratamento de escolha para um paciente com pneumonia de baixo risco é a antibioticoterapia ambulatorial (em residência). A combinação de amoxicilina com clavulanato é uma opção terapêutica robusta que cobre os principais agentes etiológicos da PAC, como o Streptococcus pneumoniae (pneumococo), inclusive cepas produtoras de beta-lactamase, sendo adequada para o manejo na Atenção Primária.\n\nAlternativa c) Incorreta. A pneumonia é uma condição aguda que deve ser manejada prontamente pelo médico generalista ou de família. O encaminhamento para o nível secundário (especialista em pneumologia) é reservado para casos de pneumonia de repetição, falta de resposta ao tratamento convencional ou necessidade de investigação de doenças pulmonares crônicas subjacentes.\n\nAlternativa d) Incorreta. As Unidades de Pronto Atendimento (UPA) devem ser utilizadas para casos de urgência e emergência onde o paciente necessite de estabilização, oxigenioterapia ou exames de imagem imediatos por suspeita de complicações. O caso descrito pode ser perfeitamente resolvido na Unidade Básica de Saúde com prescrição e orientações.\n\nAlternativa e) Incorreta. A permanência em observação por 8 horas não é o protocolo padrão para pneumonia estável. A conduta correta envolve o início imediato da primeira dose do antibiótico (se disponível na unidade) e a liberação do paciente com orientações claras sobre sinais de piora (como falta de ar e febre persistente) e retorno para reavaliação.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:48.337Z"
+  },
+  {
+    "id": "AJUDA_fcb33b58-c51f-44e7-80b9-3f76ba6fc0f2",
+    "originalId": "fcb33b58-c51f-44e7-80b9-3f76ba6fc0f2",
+    "statement": "As síndromes pós-gastrectomia podem impactar severamente a qualidade de vida do paciente. Sobre a Síndrome de Dumping e suas variantes, registre V, para as afirmativas verdadeiras, e F, para as falsas:\n\n(__)O Dumping precoce ocorre 15-30 minutos após a refeição, causado pela rápida entrada de conteúdo hiperosmolar no jejuno, levando a distensão fluida e liberação de peptídeos vasoativos (bradicinina, VIP).\n(__)O Dumping tardio ocorre 2-3 horas após a refeição e é caracterizado por hipoglicemia reativa, decorrente de um pico insulínico exagerado em resposta à absorção rápida de glicose.\n(__)O tratamento inicial de ambas as formas é eminentemente cirúrgico, com conversão da reconstrução de Billroth II para Y de Roux, uma vez que as medidas dietéticas são ineficazes.\n(__)A Síndrome da Alça Aferente é uma complicação mecânica da reconstrução a Billroth II, causando dor pós-prandial aliviada por vômitos biliosos em jato, sem conteúdo alimentar.\n\nApós análise, assinale a alternativa que apresenta a sequência correta dos itens acima, de cima para baixo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "F, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise detalhada da questão:\n\nItem 1: (Verdadeiro) O Dumping precoce é a forma mais comum da síndrome e ocorre logo após a refeição (15 a 30 minutos). Sua causa principal é a perda da função pilórica, que leva à passagem rápida de conteúdo gástrico hiperosmolar para o intestino delgado (jejuno). Isso provoca um desvio de fluido do compartimento intravascular para o lúmen intestinal, gerando distensão e liberação de peptídeos vasoativos, como bradicinina, serotonina e polipeptídeo intestinal vasoativo (VIP). Clinicamente, o paciente apresenta sintomas motores (taquicardia, palpitação, sudorese) e gastrointestinais (dor abdominal, diarreia).\n\nItem 2: (Verdadeiro) O Dumping tardio é um fenômeno essencialmente metabólico que ocorre de 2 a 3 horas após a alimentação. Ele é causado pela rápida absorção de carboidratos simples no intestino delgado, o que gera uma hiperglicemia súbita. Em resposta, o pâncreas libera uma quantidade excessiva de insulina (pico insulínico exagerado), agravada pela liberação de incretinas. Essa carga de insulina acaba superando a necessidade glicêmica, resultando em hipoglicemia reativa. O paciente sente tontura, sudorese, tremores e até desmaios nesse período.\n\nItem 3: (Falso) Esta afirmação está incorreta porque o tratamento inicial das síndromes de Dumping é clínico e dietético, apresentando sucesso em cerca de 90% a 95% dos pacientes. As medidas incluem o fracionamento das refeições, a redução da ingestão de carboidratos simples (açúcares), o aumento de fibras e proteínas, e a recomendação de não ingerir líquidos durante as refeições. O tratamento cirúrgico, como a conversão para Y de Roux ou interposição de alça jejunal, é reservado apenas para os raros casos refratários às medidas clínicas intensivas e ao uso de medicamentos (como a octreotida).\n\nItem 4: (Verdadeiro) A Síndrome da Alça Aferente é uma complicação mecânica típica da reconstrução de Billroth II. Ela ocorre devido a uma obstrução (parcial ou completa) da alça aferente, que é a parte do intestino que leva as secreções biliar e pancreática até a anastomose. Após comer, essas secreções acumulam-se na alça obstruída, causando distensão e dor abdominal intensa. Quando a pressão vence a obstrução, o conteúdo é expelido bruscamente, resultando em vômitos biliosos em jato que aliviam a dor. Como o alimento passa pela alça eferente, o vômito tipicamente não contém restos alimentares.\n\nConclusão:\nA sequência correta das afirmativas é Verdadeiro, Verdadeiro, Falso e Verdadeiro (V, V, F, V). Portanto, a alternativa correta é a letra (c).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:48.337Z"
+  },
+  {
+    "id": "AJUDA_fcc56883-0d72-4d5d-961c-50101e92f789",
+    "originalId": "fcc56883-0d72-4d5d-961c-50101e92f789",
+    "statement": "Uma mulher de 28 anos, previamente saudável, apresenta atraso menstrual, dor abdominal em fossa ilíaca direita e sangramento vaginal escurecido há 2 dias. O β-hCG sérico é de 2.200 mIU/mL. A ultrassonografia transvaginal não identifica gestação intrauterina, mas evidencia massa anexial direita de 2,5 cm com vascularização periférica (“sinal do anel”) e pequena quantidade de líquido livre no fundo de saco. Conduta mais adequada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expectante, pois massa < 3 cm e β-hCG < 3.000 mIU/mL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administração de metotrexato em dose única.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Laparotomia exploradora imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Laparoscopia com salpingectomia obrigatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Curetagem uterina diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve uma paciente jovem com a tríade clássica de gravidez ectópica: atraso menstrual, dor abdominal e sangramento vaginal. O nível de beta-hCG (2.200 mIU/mL) está acima da zona discriminatória (geralmente entre 1.500 e 2.000 mIU/mL), o que significa que uma gestação intrauterina deveria ser visível à ultrassonografia transvaginal. A presença de uma massa anexial de 2,5 cm com o sinal do anel (vascularização periférica ao Doppler) e líquido livre em pequena quantidade confirma o diagnóstico de gravidez ectópica íntegra em uma paciente hemodinamicamente estável.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) Incorreta: A conduta expectante pode ser considerada em casos muito específicos, geralmente quando o beta-hCG é decrescente e apresenta níveis iniciais baixos (abaixo de 1.000 mIU/mL ou, em protocolos mais liberais, 1.500 mIU/mL). Com um valor de 2.200 mIU/mL e sintomas presentes, o risco de ruptura é maior, exigindo tratamento ativo.\n\nAlternativa (b) Correta: O tratamento medicamentoso com metotrexato (MTX) é a conduta de escolha para pacientes com gravidez ectópica íntegra que preencham critérios de estabilidade. Os critérios clássicos para o uso de MTX incluem: estabilidade hemodinâmica, ausência de atividade cardíaca embrionária, massa anexial com diâmetro menor que 3,5 a 4,0 cm e níveis de beta-hCG preferencialmente abaixo de 5.000 mIU/mL. A paciente em questão atende a todos esses requisitos (estável, massa de 2,5 cm e hCG de 2.200).\n\nAlternativa (c) Incorreta: A laparotomia exploradora (cirurgia aberta) é reservada para casos de instabilidade hemodinâmica grave (choque hipovolêmico por ruptura de gravidez ectópica) ou quando a via laparoscópica não está disponível. Não há sinais de instabilidade ou hemoperitônio volumoso no caso descrito.\n\nAlternativa (d) Incorreta: A laparoscopia é o padrão-ouro para o tratamento cirúrgico da gravidez ectópica, mas o tratamento medicamentoso é preferível nesta paciente por ser menos invasivo. Além disso, a alternativa afirma que a salpingectomia (retirada da trompa) seria obrigatória, o que é incorreto; em pacientes que desejam preservar a fertilidade e possuem a outra trompa comprometida, pode-se realizar a salpingostomia (abertura da trompa e retirada do material ovular).\n\nAlternativa (e) Incorreta: A curetagem uterina diagnóstica é utilizada em casos de dúvida diagnóstica entre abortamento incompleto e gravidez ectópica quando o beta-hCG está acima da zona discriminatória e a ultrassonografia é inconclusiva. No caso relatado, a visualização da massa anexial com o \"sinal do anel\" direciona o diagnóstico para ectópica, tornando a curetagem desnecessária e contraindicada.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:48.337Z"
+  }
+]

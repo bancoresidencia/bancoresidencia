@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_95e3d499-0f96-4ebc-9b5e-e19850b6161f",
+    "originalId": "95e3d499-0f96-4ebc-9b5e-e19850b6161f",
+    "statement": "Homem, 53 anos, assintomático, comparece à Unidade Básica de Saúde buscando orientações sobre os resultados de exames realizados para doação de sangue. Antecedente de cirurgia para correção de fratura de fêmur aos 18 anos de idade devido acidente automobilístico. Exame físico: obesidade grau II. Exames laboratoriais: HBsAg = não reagente; anti HBc IgG = não reagente; anti HBsAg = reagente; anti HCV = reagente; AST = 18 U/L (VR: 15-37); ALT = 57 U/L (VR: 10-49) Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar elastografia hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir os exames em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar biópsia hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar RNA HCV.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta um paciente de 53 anos com sorologia anti-HCV reagente detectada em triagem de doação de sangue. Ele possui fatores de risco epidemiológicos (cirurgia de grande porte na juventude, época em que o screening de sangue para o vírus C não era rotineiro) e apresenta uma leve elevação de ALT (transaminase glutâmico-pirúvica), sugerindo lesão hepatocitária.\n\nO anti-HCV é um teste de rastreio que detecta anticorpos contra o vírus da Hepatite C. Um resultado positivo indica que o indivíduo foi exposto ao vírus em algum momento da vida, mas não confirma se a infecção ainda está ativa. Cerca de 15% a 45% das pessoas que entram em contato com o vírus conseguem eliminá-lo espontaneamente nos primeiros seis meses. Por isso, é indispensável realizar um teste confirmatório para verificar a presença do material genético do vírus no sangue.\n\nAlternativa a: Incorreta. A elastografia hepática é um método não invasivo utilizado para avaliar o grau de fibrose e rigidez do fígado. Este exame é fundamental para o estadiamento da doença, mas só deve ser solicitado após a confirmação de que o paciente possui uma infecção crônica ativa.\n\nAlternativa b: Incorreta. Diante de um marcador de triagem reagente associado a alteração de enzimas hepáticas, a conduta correta é prosseguir com a investigação imediata para diagnóstico definitivo. Postergar a conduta por seis meses atrasaria o início do tratamento e a prevenção de complicações.\n\nAlternativa c: Incorreta. A biópsia hepática é um procedimento invasivo que já foi o padrão-ouro para estadiamento de doenças do fígado, mas hoje é reservada para casos de dúvida diagnóstica ou quando os métodos não invasivos são inconclusivos. Ela não tem papel na confirmação inicial da presença do vírus.\n\nAlternativa d: Correta. A solicitação do RNA-HCV (teste molecular por PCR) é o próximo passo obrigatório no fluxograma diagnóstico. Se o RNA-HCV for detectável, confirma-se a viremia e a infecção ativa, indicando a necessidade de tratamento. Se for não detectável, o paciente teve uma infecção no passado com cura espontânea (cicatriz sorológica).\n\nVale notar também que os exames para Hepatite B (HBsAg e anti-HBc negativos com anti-HBs positivo) mostram que o paciente é imune ao vírus B por meio de vacinação prévia.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Hepatites Virais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:53.227Z"
+  },
+  {
+    "id": "AJUDA_95e8417a-293c-406a-8156-87d022fbec49",
+    "originalId": "95e8417a-293c-406a-8156-87d022fbec49",
+    "statement": "Adolescente de 14 anos, sexo masculino, refere ter dor no terço proximal da coxa direita há cerca de quatro meses, principalmente à noite. Essa dor ocorre quase todos os dias e, geralmente, é aliviada com o uso de anti-inflamatório não esteroidal ministrado pelos pais. O exame físico realizado no ambulatório é normal, exceto pela presença de dor à digitopressão na região. Na história patológica pregressa, pais referem cerca de cinco a seis amigdalites por ano e asma brônquica, que melhorou por volta dos 7 anos. A principal hipótese diagnóstica nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "doença de Osgood Schlatter",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "artrite idiopática juvenil",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "dor de crescimento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "osteoma osteoide",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente é um adolescente de 14 anos com dor crônica no terço proximal da coxa. Os marcos diagnósticos fundamentais nesta questão são: a dor de caráter predominantemente noturno e a resposta dramática ao uso de anti-inflamatórios não esteroidais (AINEs). No exame físico, o achado é de dor localizada à digitopressão, sem sinais de instabilidade articular ou alterações sistêmicas.\n\nAlternativa a) Incorreta. A doença de Osgood-Schlatter é uma apofisite por tração da tuberosidade anterior da tíbia. Clinicamente, manifesta-se como dor na região anterior do joelho, logo abaixo da patela, exacerbada por atividades físicas que envolvem o mecanismo extensor (como saltar ou correr), e não por dor na coxa com caráter noturno.\n\nAlternativa b) Incorreta. A Artrite Idiopática Juvenil (AIJ) exige a presença de artrite (edema ou limitação do movimento com dor/calor) por pelo menos seis semanas. O quadro costuma apresentar rigidez matinal e sinais flogísticos articulares. O exame físico do paciente é descrito como normal, o que desfavorece um processo inflamatório articular crônico.\n\nAlternativa c) Incorreta. A dor de crescimento tipicamente afeta crianças de 3 a 12 anos, é bilateral, ocorre ao final do dia ou à noite e desaparece pela manhã. Um critério importante para o diagnóstico de dor de crescimento é a ausência de dor à palpação ou pontos dolorosos específicos ao exame físico, o que contradiz o achado de dor à digitopressão relatado no caso.\n\nAlternativa d) Correta. O Osteoma Osteoide é um tumor ósseo benigno que acomete principalmente adolescentes e adultos jovens do sexo masculino. Sua localização mais comum são os ossos longos dos membros inferiores, especialmente o fêmur proximal. A apresentação clínica é patognomônica: dor óssea que piora à noite e que apresenta alívio rápido e quase completo com o uso de salicilatos ou outros anti-inflamatórios. Isso ocorre devido à alta concentração de prostaglandinas no interior do nicho (nidus) tumoral. O exame físico costuma ser normal ou apresentar apenas dor localizada à palpação profunda da região acometida.\n\nConclusão: A combinação de idade, localização da dor, caráter noturno e resposta excelente aos AINEs aponta diretamente para o diagnóstico de Osteoma Osteoide.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Miscelânea Ortopédica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:53.227Z"
+  },
+  {
+    "id": "AJUDA_95eeb3ae-11e3-496b-b70c-647e24970a50",
+    "originalId": "95eeb3ae-11e3-496b-b70c-647e24970a50",
+    "statement": "Paciente, 28 anos de idade, procurou uma ginecologista com queixa de corrimento vaginal amarelado e odor desagradável, há 7 dias. Relata que teve relação sexual desprotegida com um novo parceiro. Ao exame físico, apresenta vulva de aspecto normal, ausência de lesões em parede vaginal e colo uterino, presença de corrimento vaginal fino, amarelado, com odor característico de peixe. O pH da vagina é de 5,5. No exame microscópico, obseva-se a presença de clue cells.\nEm relação a esse caso, considere as afirmativas a seguir.\n\nI. A presença de clue cells e o aumento do pH são características de infecção por Trichomonas vaginalis.\nII. A vaginose bacteriana não é considerada uma infecção sexualmente transmissível, mas está associada a múltiplos parceiros sexuais e ao uso de duchas vaginais.\nIII. O diagnóstico mais provável é de vaginose bacteriana.\nIV. Segundo o Ministério da Saúde, o tratamento preconizado da vaginose bacteriana consiste no uso de metronidazol via oral ou via vaginal.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso apresenta uma paciente com queixa clássica de corrimento vaginal. Os pontos-chave para o diagnóstico são:\n1. Corrimento fino, amarelado/acinzentado, com odor de peixe.\n2. pH vaginal elevado (5,5), lembrando que o pH normal da vagina é ácido (menor que 4,5).\n3. Presença de \"clue cells\" (células-alvo ou células-guia) no exame microscópico a fresco.\n\nEsses achados compõem os Critérios de Amsel, utilizados para o diagnóstico de Vaginose Bacteriana (VB). Os critérios são: pH > 4,5; presença de clue cells; teste do KOH positivo (odor de peixe); e corrimento branco-acinzentado, fino e homogêneo. A presença de 3 dos 4 critérios confirma o diagnóstico.\n\nANÁLISE DAS AFIRMATIVAS\n\nI. INCORRETA. Embora o aumento do pH (maior que 4,5) também ocorra na Tricomoníase, a presença de \"clue cells\" é o achado patognomônico da Vaginose Bacteriana. Na Tricomoníase, o exame microscópico revelaria o protozoário móvel (Trichomonas vaginalis) e um grande número de polimorfonucleares (inflamação), o que não é o caso da VB, que é um desequilíbrio da flora sem resposta inflamatória importante.\n\nII. CORRETA. A vaginose bacteriana decorre da substituição dos lactobacilos (flora normal) por bactérias anaeróbias (principalmente Gardnerella vaginalis). Não é classificada como uma IST porque pode ocorrer em mulheres sem atividade sexual. No entanto, sua ocorrência está fortemente associada a fatores de risco como múltiplos parceiros, novos parceiros, tabagismo e uso de duchas vaginais, que desequilibram o ecossistema vaginal.\n\nIII. CORRETA. O quadro clínico descrito (odor de peixe, pH 5,5 e presença de clue cells) é a descrição clássica de Vaginose Bacteriana, preenchendo os critérios diagnósticos de Amsel.\n\nIV. CORRETA. De acordo com o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) do Ministério da Saúde, o tratamento de primeira escolha para VB é o Metronidazol. Pode ser utilizado por via oral (500 mg, 12/12h, por 7 dias) ou por via vaginal (gel a 0,75%, uma aplicação noturna por 5 dias). Vale lembrar que, na VB, não é necessário tratar o parceiro sexual rotineiramente.\n\nCONCLUSÃO\n\nComo as afirmativas II, III e IV estão corretas, a alternativa que atende ao enunciado é a letra (e).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:53.227Z"
+  },
+  {
+    "id": "AJUDA_95f17249-49a7-45d3-8a13-004ccc13acfb",
+    "originalId": "95f17249-49a7-45d3-8a13-004ccc13acfb",
+    "statement": "No choque séptico do adulto, há disfunção cardiovascular determinada por diminuição da pré-carga e diminuição da pós-carga, além da frequente redução da contratilidade ventricular. Com relação à resistência vascular periférica, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Há aumento da resistência vascular periférica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Há diminuição da resistência vascular periférica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Não se modifica a resistência vascular periférica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pode acontecer aumento ou diminuição da resistência vascular periférica dependendo do agente etiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O choque séptico é classificado fisiopatologicamente como um choque distributivo. Sua principal característica hemodinâmica é a intensa vasodilatação arterial e venosa, mediada por citocinas inflamatórias e pela produção excessiva de óxido nítrico. Esse processo resulta em uma queda acentuada da resistência vascular periférica (RVP).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O aumento da resistência vascular periférica é um mecanismo compensatório típico de estados de choque com baixo débito cardíaco, como o choque hipovolêmico, o choque cardiogênico e o choque obstrutivo. Nesses casos, o organismo promove vasoconstrição periférica para tentar manter a pressão de perfusão nos órgãos vitais.\n\nAlternativa b) Correta. No choque séptico, ocorre uma falha na regulação do tônus vascular. A liberação maciça de mediadores inflamatórios (como TNF-alfa, IL-1 e óxido nítrico) provoca relaxamento da musculatura lisa dos vasos sanguíneos. Essa vasodilatação generalizada é a causa direta da diminuição da resistência vascular periférica, que é o achado clássico do perfil hemodinâmico distributivo (frequentemente chamado de choque quente na fase inicial).\n\nAlternativa c) Incorreta. A resistência vascular periférica sofre modificações profundas e obrigatórias no choque séptico. A manutenção de uma RVP normal ou elevada seria incompatível com a fisiopatologia básica da sepse grave e do choque distributivo.\n\nAlternativa d) Incorreta. Independentemente do agente etiológico (seja bactéria gram-positiva, gram-negativa, fungo ou vírus), a resposta do hospedeiro no choque séptico converge para a via comum da inflamação sistêmica e vasodilatação. Portanto, a redução da resistência vascular periférica é uma característica do estado de choque séptico em si, e não uma variável dependente do tipo de microrganismo causador da infecção.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Sepse",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:53.227Z"
+  },
+  {
+    "id": "AJUDA_95f9c110-e484-41ba-9c4b-696bd37c0e86",
+    "originalId": "95f9c110-e484-41ba-9c4b-696bd37c0e86",
+    "statement": "Adolescente de 12 anos, sexo feminino, comparece à consulta de rotina com pediatra. Apresenta desenvolvimento puberal em estágio M3P3 de Tanner e IMC representado no gráfico a seguir. Considerando a avaliação nutricional dessa paciente, a conduta adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar dosagem de LDL para rastreio do diagnóstico de síndrome metabólica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "recomendar a prática de, no mínimo, 30 minutos de atividade física moderada diariamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "recomendar orientação nutricional e manutenção do peso, e não a sua redução, em vista do desenvolvimento puberal ainda incompleto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar ultrassonografia abdominal para rastreio de doença gordurosa não alcoólica do fígado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Gráfico e Diagnóstico Antropométrico:\nAo observar o gráfico de IMC para idade (Meninas de 5 a 19 anos), o ponto vermelho que representa a paciente de 12 anos está localizado acima da linha do escore-z +3. De acordo com os critérios da Organização Mundial da Saúde (OMS) adotados pelo Ministério da Saúde, essa classificação define o diagnóstico de Obesidade Grave (ou Obesidade de Classe II/III, dependendo da referência).\n\nAnálise das Alternativas:\n\na) Incorreta. Embora o rastreio lipídico seja necessário em adolescentes com obesidade, a dosagem de LDL (lipoproteína de baixa densidade) não faz parte dos critérios diagnósticos da Síndrome Metabólica em pediatria. Segundo a International Diabetes Federation (IDF), os componentes lipídicos da síndrome metabólica para essa faixa etária são os triglicerídeos elevados e o HDL-C baixo.\n\nb) Incorreta. A recomendação atual da Organização Mundial da Saúde e da Sociedade Brasileira de Pediatria para crianças e adolescentes (5 a 17 anos) é a prática de, no mínimo, 60 minutos diários de atividade física de intensidade moderada a vigorosa, e não apenas 30 minutos.\n\nc) Incorreta. Em casos de Obesidade Grave (escore-z > +3), a conduta terapêutica não se limita à manutenção do peso. O objetivo é a redução gradual do IMC para diminuir os riscos metabólicos e cardiovasculares imediatos e tardios. O desenvolvimento puberal incompleto (M3) não contraindica a perda de peso assistida com orientação nutricional adequada para garantir o aporte de micronutrientes.\n\nd) Correta. Pacientes com obesidade grave apresentam alto risco para comorbidades. A Doença Gordurosa Não Alcoólica do Fígado (DGNAF) é uma das complicações mais frequentes. O rastreio é habitualmente iniciado com a dosagem de transaminases (ALT) e complementado com a ultrassonografia abdominal para identificar a presença de esteatose hepática, sendo esta uma conduta padrão na avaliação de adolescentes com esse perfil antropométrico.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Obesidade na Infância e na Adolescência",
+      "Puberdade",
+      "Diagnóstico Nutricional",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/6e76819aca0452836c7bb63e1e895ceceb264408054f5387024b788038eede58.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_95f9c110-e484-41ba-9c4b-696bd37c0e86_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:54.008Z"
+  },
+  {
+    "id": "AJUDA_95ff893b-2613-4a97-a0ca-6983860cee0f",
+    "originalId": "95ff893b-2613-4a97-a0ca-6983860cee0f",
+    "statement": "Um homem de 32 anos, vítima de colisão motociclística, chega ao pronto-socorro. Ele está consciente, pálido, sudorético, com PA: 90 × 60 mmHg, FC: 132 bpm, FR: 26 irpm e saturação periférica de O₂: 92% em ar ambiente. Durante a avaliação primária, não há sinais de exsanguinação, pneumotórax hipertensivo, tamponamento cardíaco ou suspeita de lesão da coluna cervical. Os acessos venosos periféricos calibrosos foram obtidos, e 1 L de solução cristaloide aquecida já foi administrado, sem resposta significativa.\n\nQual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar mais 2 L de solução cristaloide aquecida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colocar o paciente em posição de Trendelenburg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar tomografia computadorizada de corpo inteiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar transfusão maciça com concentrado de hemácias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Administrar vasopressor para estabilização hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente em questão é uma vítima de trauma multissistêmico, apresentando sinais clássicos de choque hipovolêmico hemorrágico: hipotensão (PA 90 x 60 mmHg), taquicardia importante (132 bpm), palidez, sudorese e taquipneia. De acordo com a classificação do ATLS (Advanced Trauma Life Support), ele se enquadra em um choque classe III ou IV. A questão informa que o paciente já recebeu 1 litro de cristaloide aquecido e não apresentou resposta hemodinâmica, sendo classificado como um \"não respondedor\".\n\nPOR QUE A ALTERNATIVA (D) É A CORRETA?\n\nEm pacientes com choque hemorrágico grave que não respondem à reposição volêmica inicial com 1 litro de cristaloide, a conduta prioritária é a reposição de perdas sanguíneas com hemoderivados. A persistência da instabilidade hemodinâmica indica hemorragia ativa ou perda volêmica maciça. A transfusão precoce de concentrado de hemácias (e, idealmente, plasma e plaquetas em protocolos de transfusão maciça) é essencial para restaurar a capacidade de transporte de oxigênio e evitar a \"tríade letal\" do trauma (acidose, coagulopatia e hipotermia).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: Administrar mais 2 litros de cristaloide é uma conduta ultrapassada. O ATLS 10ª edição recomenda o bolus inicial de apenas 1 litro. O excesso de cristaloides no trauma está associado à coagulopatia por hemodiluição, ao aumento do sangramento e à piora do prognóstico.\n\nAlternativa B: A posição de Trendelenburg (cabeça para baixo) não é recomendada no manejo do choque no trauma. Além de não melhorar a perfusão de forma sustentada, pode prejudicar a mecânica ventilatória pelo peso das vísceras sobre o diafragma e aumentar a pressão intracraniana.\n\nAlternativa C: A tomografia computadorizada é o padrão-ouro para diagnóstico de lesões internas, porém está formalmente contraindicada para pacientes hemodinamicamente instáveis. O paciente deve ser estabilizado ou levado diretamente para intervenção (cirurgia ou angioembolização) se a fonte do sangramento for identificada por métodos rápidos como FAST ou raio X de tórax/pelve na sala de trauma. Levar um paciente instável para a tomografia é um erro grave conhecido como \"o túnel da morte\".\n\nAlternativa E: Vasopressores (como noradrenalina) não têm papel no manejo inicial do choque hemorrágico. O problema aqui é a falta de volume intravascular (hipovolemia), e não a perda de tônus vascular. O uso de vasopressores em um sistema circulatório \"vazio\" aumenta a vasoconstrição periférica, piora a acidose metabólica e a isquemia de órgãos vitais. O tratamento do choque hemorrágico é volume (sangue), não amina.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:54.008Z"
+  },
+  {
+    "id": "AJUDA_9605f850-f7bf-4f14-ad16-3d50680343bc",
+    "originalId": "9605f850-f7bf-4f14-ad16-3d50680343bc",
+    "statement": "Em pacientes com trauma penetrante de pescoço, na presença de sinais de gravidade de lesão arterial ou instabilidade hemodinâmica, o tratamento inicial adequado consiste em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar apenas angiotomografia computadorizada do pescoço para avaliar necessidade de cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "endoscopia digestiva alta e broncoscopia para avaliação de lesão traqueoesofágica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "observação rigorosa e avaliação seriada com exame físico e exames laboratoriais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "assegurar via aérea, aplicar pressão direta e realizar cirurgia exploradora do pescoço.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "encaminhar para embolização angiográfica e reavaliação em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O manejo do trauma cervical penetrante é baseado na estabilidade clínica do paciente e na presença de sinais que indiquem lesões vasculares ou aerodigestivas graves, conhecidos como sinais duros (hard signs). A questão descreve um paciente com sinais de gravidade de lesão arterial ou instabilidade hemodinâmica, o que dita uma conduta de emergência.\n\nAnálise das alternativas:\n\na) Incorreta. A angiotomografia computadorizada é o exame de escolha para pacientes estáveis hemodinamicamente, permitindo um manejo seletivo. No entanto, para pacientes instáveis ou com sinais de sangramento arterial ativo, o atraso para realizar um exame de imagem pode ser fatal. A prioridade nesses casos é o controle imediato da lesão no centro cirúrgico.\n\nb) Incorreta. A endoscopia digestiva alta e a broncoscopia são exames complementares utilizados para avaliar lesões específicas de esôfago e árvore traqueobrônquica em pacientes que já foram estabilizados ou que possuem suspeitas clínicas específicas. Não são condutas de tratamento inicial para instabilidade hemodinâmica ou choque.\n\nc) Incorreta. A observação rigorosa e o exame físico seriado são reservados para pacientes assintomáticos, sem sinais de lesão vascular ou de via aérea/digestiva e que estejam estáveis. Havendo sinais de gravidade, a intervenção deve ser imediata.\n\nd) Correta. Esta alternativa descreve a sequência prioritária no trauma (ABCDE). Primeiro, assegura-se a via aérea, que pode ser comprometida tanto pela lesão direta quanto por hematomas expansivos que comprimem a traqueia. O controle do sangramento externo no pescoço deve ser feito por pressão direta manual, nunca por clampeamento às cegas, devido ao risco de lesar estruturas nervosas e vasculares adjacentes. Por fim, a instabilidade e os sinais de lesão arterial grave (como hematoma expansivo, sangramento em jato ou choque) são indicações clássicas de cervicotomia exploradora imediata.\n\ne) Incorreta. A embolização angiográfica pode ser uma opção em casos selecionados de lesões vasculares em zonas de difícil acesso cirúrgico (como a zona III, na base do crânio, ou zona I, na transição torácica), mas apenas se o paciente permitir o transporte e o tempo do procedimento. Propor reavaliação apenas em 24 horas para um paciente com sinais de gravidade arterial ou instabilidade é uma conduta inadequada e perigosa.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:54.008Z"
+  },
+  {
+    "id": "AJUDA_9618dbbe-b998-482a-947d-752a45934e52",
+    "originalId": "9618dbbe-b998-482a-947d-752a45934e52",
+    "statement": "Paciente de 28 anos, casada, atendida no serviço de Emergência, refere usar de DIU (Dispositivo Intrauterino) de cobre há dois anos; apresentando alteração do fluxo menstrual nos últimos seis meses. Após a realização do exame físico ginecológico e ultrassom obstétrico, teve confirmada gestação de 16 semanas e, no exame especular, não foi visualizado o fio do DIU. A conduta médica correta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Interromper a gestação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deixar a gestação evoluir",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Retirar o DIU instrumentalmente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retirar o DIU e usar antibiótico profilático por 7 dias",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO cenário clínico apresenta uma gestante de 16 semanas com DIU de cobre in situ e fios não visíveis ao exame especular. O manejo da gestação na vigência de um DIU depende fundamentalmente de dois fatores: a idade gestacional e a visibilidade dos fios do dispositivo.\n\nQuando os fios do DIU estão visíveis, a recomendação atual é a sua retirada imediata, preferencialmente no primeiro trimestre, para reduzir riscos de abortamento séptico, corioamnionite e parto prematuro. No entanto, quando os fios não são visualizados ou a gestação está em estágio mais avançado (geralmente acima de 12 a 14 semanas), a tentativa de remoção é contraindicada.\n\nNo caso em questão, a paciente está com 16 semanas (segundo trimestre) e os fios não são visíveis. Tentar manipular a cavidade uterina com pinças ou outros instrumentos para buscar o DIU traria um risco altíssimo de ruptura de membranas e perda gestacional iatrogênica. Portanto, a conduta deve ser expectante.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A presença de uma gestação com DIU não é uma indicação legal de interrupção da gravidez no Brasil. O aborto só é permitido em casos de estupro, risco de vida materno ou anencefalia fetal.\n\nAlternativa b) Correta. Como a gestação já avançou para 16 semanas e os fios não estão acessíveis no exame especular, a conduta correta é manter o dispositivo e realizar o acompanhamento pré-natal de alto risco. O DIU geralmente fica posicionado entre as membranas ovulares e a parede uterina, podendo ser expelido junto com a placenta no momento do parto.\n\nAlternativa c) Incorreta. A retirada instrumental sem a visualização do fio, especialmente em uma idade gestacional avançada (16 semanas), é formalmente contraindicada pelo elevado risco de trauma mecânico à bolsa amniótica e indução de abortamento.\n\nAlternativa d) Incorreta. Além de a retirada ser contraindicada pelo estágio da gestação e ausência de fios, não há indicação de antibioticoterapia profilática para casos de DIU em gestação sem sinais clínicos de infecção. O uso de antibióticos seria reservado para casos de suspeita de aborto séptico ou corioamnionite.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:54.008Z"
+  },
+  {
+    "id": "AJUDA_962aee2b-073e-42d2-8199-7f8db52b5784",
+    "originalId": "962aee2b-073e-42d2-8199-7f8db52b5784",
+    "statement": "A medida profilática fundamental para reduzir a mortalidade por sepse pneumocócica em crianças com anemia falciforme até os 5 anos de idade é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Penicilina V oral diária (profilaxia antibiótica).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Transfusões sanguíneas mensais programadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso diário de hidroxiureia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Esplenectomia profilática cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO ponto central desta questão é o reconhecimento da asplenia funcional decorrente da anemia falciforme. Devido a microinfartos esplênicos repetidos causados pela falcização das hemácias, o baço deixa de funcionar precocemente (muitas vezes antes do primeiro ano de vida). Como o baço é o principal órgão responsável pela filtragem de bactérias encapsuladas, essas crianças tornam-se extremamente vulneráveis a infecções graves, sendo o Streptococcus pneumoniae (pneumococo) o agente mais comum e letal.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): A antibioticoprofilaxia com Penicilina V oral é a medida de maior impacto na redução da mortalidade por sepse pneumocócica em crianças com anemia falciforme. As diretrizes brasileiras e internacionais recomendam que o uso da penicilina comece preferencialmente até os 2 meses de vida (assim que o diagnóstico é confirmado pela triagem neonatal) e seja mantido, no mínimo, até os 5 anos de idade. Essa medida, associada ao esquema vacinal completo, é o pilar da prevenção infecciosa nessa população.\n\nAlternativa B (INCORRETA): O regime de transfusões sanguíneas mensais (hipertransfusão) é indicado para situações específicas, como a prevenção de Acidente Vascular Cerebral (AVC) em crianças com alterações no Doppler transcraniano ou para o manejo de complicações graves e recorrentes. Não é a medida de escolha para a profilaxia de sepse.\n\nAlternativa C (INCORRETA): A hidroxiureia é um medicamento que aumenta os níveis de hemoglobina fetal, reduzindo a frequência de crises dolorosas e da síndrome torácica aguda. Apesar de melhorar a qualidade de vida e a sobrevida global, ela não substitui a necessidade de proteção contra bactérias encapsuladas oferecida pela penicilina.\n\nAlternativa D (INCORRETA): A esplenectomia cirúrgica é uma medida terapêutica indicada apenas em casos selecionados, como no sequestro esplênico recorrente. Retirar o baço não previne a sepse; pelo contrário, a ausência da função esplênica (seja por cirurgia ou por autoesplenectomia natural da doença) é justamente o que gera a necessidade da profilaxia com antibiótico.\n\nRESUMO DIDÁTICO\n\nO paciente com anemia falciforme é funcionalmente asplênico. Sem o baço, ele não consegue combater o pneumococo. Por isso, até os 5 anos de idade, período de maior imaturidade imunológica, a administração diária de penicilina é obrigatória para evitar a sepse e reduzir a mortalidade.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Anemias",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:54.008Z"
+  },
+  {
+    "id": "AJUDA_962b594b-f3b8-4cb5-a073-b779de57566d",
+    "originalId": "962b594b-f3b8-4cb5-a073-b779de57566d",
+    "statement": "Mulher de 24 anos comparece à unidade de emergência em decorrência de perda visual bilateral de evolução há cerca de quatro dias. Ao exame físico, além do déficit visual, é observada hipoestesia em ambos os membros inferiores. Laboratorialmente, apresenta aumento da velocidade de hemossedimentação. Teste rápido de HIV e VDRL são negativos. Uma tomografia computadorizada do crânio se encontra dentro da normalidade. É aventada a hipótese de doença do espectro da neuromielite óptica, sendo solicitada ressonância magnética do encéfalo e das órbitas e programada realização de punção lombar. \nCom base na suspeita diagnóstica corretamente aventada, infere-se que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "diante de episódios persistentes e intratáveis de náuseas, vômitos e soluços por mais de 48 horas, deve-se suspeitar de síndrome da área postrema.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "na presença de sonolência diurna excessiva e manifestações disautonômicas, deve-se suspeitar de lesão de tronco encefálico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "em vigência de hipernatremia, espera-se encontrar achados compatíveis com síndrome (nefropatia) perdedora de sal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "na ausência de detecção de anticorpos anti-MOG, tal hipótese diagnóstica deve ser prontamente afastada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da Questão:\nO caso clínico descreve uma paciente jovem com perda visual bilateral e sinais de mielite (hipoestesia em membros inferiores), o que direciona o raciocínio para a Doença do Espectro da Neuromielite Óptica (NMOSD). Esta é uma doença autoimune inflamatória que atinge preferencialmente os nervos ópticos e a medula espinal, frequentemente associada ao anticorpo anti-aquaporina 4 (AQP4-IgG).\n\nAlternativa (a) Correta: A síndrome da área postrema é uma das manifestações clínicas fundamentais da NMOSD. A área postrema localiza-se no bulbo (tronco encefálico) e atua como o centro quimiorreceptor do vômito. Lesões inflamatórias nessa região causam soluços, náuseas e vômitos persistentes, que não respondem a tratamentos convencionais e duram pelo menos 48 horas. Sua presença é um critério diagnóstico importante.\n\nAlternativa (b) Incorreta: A sonolência diurna excessiva, com características de narcolepsia, ocorre na NMOSD devido ao acometimento do diencéfalo (hipotálamo e tálamo), e não necessariamente do tronco encefálico. Essas lesões afetam os neurônios produtores de hipocretina, responsáveis pela manutenção do estado de vigília.\n\nAlternativa (c) Incorreta: Condições neurológicas que afetam o controle hidroeletrolítico, como a Síndrome de Secreção Inapropriada de Hormônio Antidiurético (SIADH) ou a Síndrome Perdedora de Sal, cursam com hiponatremia (redução do sódio), e não hipernatremia. A hipernatremia em lesões do sistema nervoso central geralmente está ligada ao Diabetes Insipidus central por deficiência de ADH.\n\nAlternativa (d) Incorreta: O principal marcador da NMOSD é o anticorpo anti-aquaporina 4 (AQP4). O anticorpo anti-MOG (glicoproteína da mielina do oligodendrócito) define uma condição clínica distinta chamada MOGAD (Doença Associada ao Anticorpo MOG). Embora existam sobreposições clínicas, a ausência de anti-MOG não descarta NMOSD; pelo contrário, a maioria dos casos de NMOSD é AQP4-positivo e MOG-negativo. Além disso, existe a NMOSD soronegativa, onde nenhum dos anticorpos é detectado.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Doenças Desmielinizantes e Encefalites Autoimunes"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:54.008Z"
+  }
+]

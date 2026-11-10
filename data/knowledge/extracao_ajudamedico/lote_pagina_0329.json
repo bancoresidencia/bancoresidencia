@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_5aa9e00e-e2fa-4e46-836b-fef11ad948f7",
+    "originalId": "5aa9e00e-e2fa-4e46-836b-fef11ad948f7",
+    "statement": "Lactente, sexo masculino, com 10 meses, é levado ao pronto-socorro por apresentar cansaço e sibilância há uma semana. Não há histórico de febre, mas o bebê apresenta chiado frequente nos últimos meses e recusa alimentar-se. A mãe relata que os episódios pioram durante a noite e são frequentemente desencadeados por infecções respiratórias. O exame físico revela taquipneia moderada, sem utilização de musculatura acessória e expansão pulmonar simétrica. O médico considera a possibilidade de síndrome do lactente chiador e solicita exames complementares.\n\nCom base nesse caso, assinale a alternativa correta no que se refere ao papel da radiografia de tórax na síndrome do lactente chiador.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A radiografia de tórax deve ser realizada rotineiramente durante as crises de sibilância, para monitorar a resposta ao tratamento e identificar possíveis complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A presença de hiperinsuflação pulmonar e infiltrados reticulogranulosos na radiografia de tórax é característica para o diagnóstico da bronquiolite viral aguda, principal causa da síndrome do lactente chiador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A radiografia de tórax é útil para diferenciar a asma de outras causas de sibilância, como a aspiração de corpo estranho e a malformação congênita das vias aéreas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A radiografia de tórax normal exclui o diagnóstico de asma, sendo indicativa de outras causas de sibilância, como refluxo gastroesofágico ou infecções respiratórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A radiografia de tórax é essencial para o diagnóstico da síndrome do lactente chiador, sendo necessária em todos os casos para confirmar o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A síndrome do lactente chiador é uma condição clínica comum na pediatria, definida por episódios recorrentes de sibilância em crianças de até 2 anos. O diagnóstico é essencialmente clínico e baseado na anamnese e no exame físico. A radiografia de tórax desempenha um papel específico e não deve ser utilizada de forma indiscriminada.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa A: Incorreta. A realização rotineira de radiografia de tórax em cada crise de sibilância não é recomendada. O exame deve ser reservado para casos de primeiro episódio de sibilância (para afastar malformações), quando há suspeita de complicações (como pneumonia ou pneumotórax), em quadros graves que não respondem ao tratamento inicial ou quando a apresentação clínica é atípica.\n\nAlternativa B: Incorreta. O padrão reticulogranular (com aspecto de vidro fosco e broncogramas aéreos) é característico da Doença da Membrana Hialina no período neonatal, e não da bronquiolite viral aguda. Na bronquiolite, os achados radiológicos mais comuns, quando presentes, são sinais de hiperinsuflação pulmonar (retificação de costelas, rebaixamento diafragmático) e atelectasias por tampões mucosos, mas o diagnóstico da bronquiolite é soberanamente clínico.\n\nAlternativa C: Correta. Esta é a principal utilidade da radiografia de tórax na avaliação do lactente chiador. O exame auxilia na exclusão de diagnósticos diferenciais importantes que podem simular a asma ou o chiador recorrente, tais como a aspiração de corpo estranho (que pode gerar aprisionamento de ar localizado ou desvio de mediastino), malformações congênitas (cistos broncogênicos, enfisema lobar congênito) ou compressões extrínsecas (anéis vasculares).\n\nAlternativa D: Incorreta. Uma radiografia de tórax normal é um achado muito frequente em crianças com asma ou síndrome do lactente chiador entre as crises. O exame normal jamais exclui esses diagnósticos. Além disso, o refluxo gastroesofágico e as infecções respiratórias também podem cursar com radiografias sem alterações significativas.\n\nAlternativa E: Incorreta. A radiografia de tórax não é essencial para o diagnóstico da síndrome do lactente chiador, que é definida clinicamente (geralmente pela ocorrência de três ou mais episódios de sibilância em um período de seis meses). O exame é um recurso complementar para afastar outras patologias, e não para confirmar a síndrome em si.\n\nEm resumo, o papel da radiografia no lactente com sibilância recorrente é identificar \"mimickers\" (doenças que imitam a sibilância comum) e complicações, garantindo que causas anatômicas ou aspirativas não sejam negligenciadas.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:44.423Z"
+  },
+  {
+    "id": "AJUDA_5aaa445a-e836-47bd-a578-0787ac00d652",
+    "originalId": "5aaa445a-e836-47bd-a578-0787ac00d652",
+    "statement": "Doença exantemática típica da infância que tem evolução benigna nas crianças, mas que, quando atinge gestantes, pode determinar teratogenia:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exantema súbito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rubéola.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mononucleose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Molusco infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o reconhecimento de doenças exantemáticas na infância e sua repercussão clínica em grupos específicos, neste caso, as gestantes.\n\nA alternativa correta é a letra (c) Rubéola.\n\nA rubéola é uma infecção viral causada por um togavírus. Na infância, é classicamente uma doença de evolução benigna, caracterizada por febre baixa, exantema maculopapular rosado de progressão cefalocaudal e linfonodopatia retroauricular, occipital e cervical posterior. No entanto, o grande risco epidemiológico reside na infecção de mulheres grávidas suscetíveis, especialmente no primeiro trimestre de gestação. O vírus possui alta capacidade teratogênica, podendo causar a Síndrome da Rubéola Congênita (SRC), que cursa com malformações graves como catarata, surdez neurossensorial, cardiopatias congênitas (persistência do canal arterial) e atraso no desenvolvimento.\n\nPor que as outras alternativas estão incorretas:\n\na) Sarampo: É uma doença exantemática muito mais grave que a rubéola, apresentando o quadro de \"três Cs\" (tosse, coriza e conjuntivite), além das manchas de Koplik e febre alta. Embora a infecção na gestação possa causar complicações maternas e prematuridade, o sarampo não é classicamente associado a uma síndrome de malformações congênitas (teratogenia) como a rubéola.\n\nb) Exantema súbito (Roséola): Causado pelo herpes-vírus humano tipo 6, acomete principalmente lactentes. Caracteriza-se por febre alta que desaparece subitamente, seguida pelo surgimento do exantema. É uma condição benigna e não apresenta riscos teratogênicos conhecidos para gestantes.\n\nd) Mononucleose: Causada pelo vírus Epstein-Barr (EBV), manifesta-se tipicamente com febre, faringite, linfonodopatia generalizada e esplenomegalia. O exantema costuma aparecer apenas em casos de uso inadvertido de amoxicilina. Não é considerada uma causa clássica de teratogenia em gestantes.\n\ne) Molusco infeccioso: É uma infecção viral cutânea causada por um poxvírus, caracterizada por pápulas pequenas, umbilicadas e brilhantes na pele. Não é uma doença exantemática sistêmica nem possui potencial teratogênico.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Infecções Congênitas",
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:44.423Z"
+  },
+  {
+    "id": "AJUDA_5aae13a9-f224-485e-aee6-9a8779e07d0b",
+    "originalId": "5aae13a9-f224-485e-aee6-9a8779e07d0b",
+    "statement": "Homem de 68 anos, portador de osteoartrite de joelhos, faz uso diário de diclofenaco há cerca de seis meses. Procura atendimento por epigastralgia em queimação há dois meses, que piorou nas últimas semanas. A endoscopia digestiva alta evidencia úlcera gástrica de 1,5 cm, sem sinais de sangramento ativo. A biópsia é negativa para neoplasia, e o teste da urease é positivo para Helicobacter pylori. O paciente encontra-se hemodinamicamente estável.\nSegundo as recomendações atuais, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter o AINE e prescrever apenas um inibidor da bomba de prótons.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender o AINE, iniciar tratamento para erradicação do Helicobacter pylori e prescrever um inibidor da bomba de prótons.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever apenas antibióticos para erradicação do Helicobacter pylori, sem necessidade de inibidor da bomba de prótons.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar tratamento cirúrgico da úlcera por apresentar infecção por Helicobacter pylori.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar corticosteroide para acelerar a cicatrização da úlcera.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo da Doença Ulcerosa Péptica (DUP) em um cenário de múltiplos fatores etiológicos: o uso crônico de Anti-inflamatórios Não Esteroidais (AINEs) e a infecção pelo Helicobacter pylori.\n\nAnálise do Caso Clínico:\nO paciente apresenta uma úlcera gástrica de 1,5 cm e dois fatores de risco importantes. O diclofenaco (AINE) inibe a enzima COX-1, reduzindo a produção de prostaglandinas protetoras da mucosa gástrica. Simultaneamente, a presença do H. pylori causa um processo inflamatório crônico que predispõe à ulceração.\n\nAnálise das Alternativas:\n\nAlternativa (a) Incorreta: Manter o AINE perpetua a agressão à mucosa gástrica e dificulta a cicatrização da úlcera, além de aumentar significativamente o risco de complicações graves, como perfuração ou hemorragia digestiva. Se o uso do AINE for absolutamente indispensável, ele deve ser substituído por opções menos agressivas (como inibidores seletivos da COX-2) após a cicatrização, e sempre com proteção gástrica.\n\nAlternativa (b) Correta: Esta é a conduta padrão. A suspensão do agente agressor (AINE) é o primeiro passo para permitir a recuperação da mucosa. A erradicação do H. pylori é mandatória, pois o teste da urease foi positivo e a bactéria é um fator independente que dificulta a cicatrização e favorece a recidiva. O uso do Inibidor da Bomba de Prótons (IBP) é essencial para reduzir a acidez gástrica, promover o alívio dos sintomas (epigastralgia) e garantir a cicatrização da úlcera.\n\nAlternativa (c) Incorreta: Embora a erradicação do H. pylori seja necessária, o tratamento da úlcera gástrica ativa exige o uso de IBP para supressão ácida eficaz. Além disso, a erradicação isolada sem a suspensão do AINE não resolve o dano direto causado pelo medicamento.\n\nAlternativa (d) Incorreta: O tratamento cirúrgico na doença ulcerosa é reservado para complicações (perfuração, obstrução pilórica, hemorragia refratária) ou intratabilidade clínica após falha terapêutica rigorosa. O paciente está estável, sem sangramento ativo e no início do manejo clínico, portanto, a cirurgia estaria totalmente contraindicada neste momento.\n\nAlternativa (e) Incorreta: Corticosteroides não auxiliam na cicatrização de úlceras pépticas. Pelo contrário, quando associados a AINEs, os corticosteroides potencializam o risco de lesão da mucosa gástrica e podem mascarar sinais de peritonite em caso de perfuração.\n\nConclusão:\nDiante de uma úlcera péptica associada a AINE e H. pylori, a estratégia deve ser \"atacar em todas as frentes\": remover o agente químico irritante (suspender AINE), tratar o agente biológico (erradicar H. pylori) e otimizar o ambiente gástrico para cicatrização (prescrever IBP).",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:44.423Z"
+  },
+  {
+    "id": "AJUDA_5ab3ebaa-3263-4e00-8630-dd749020e5b7",
+    "originalId": "5ab3ebaa-3263-4e00-8630-dd749020e5b7",
+    "statement": "Assinale a alternativa CORRETA sobre as relações anatômicas dos órgãos genitais femininos.",
+    "options": [
+      {
+        "id": "A",
+        "text": "As artérias uterinas são ramos das artérias hipogástricas e acessam o útero na altura do fundo uterino;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O ureter atravessa a base do ligamento Cardinal (paramétrio) na altura do colo uterino e dirige-se para formar o trígono vesical;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A artéria ovariana direita é ramo da artéria renal e a artéria ovariana esquerda é ramo direto da aorta abdominal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As tubas uterinas são condutos de diferentes calibres em sua extensão, e a porção mais estreita é a porção infundibular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ALTERNATIVA A: INCORRETA. Embora as artérias uterinas sejam, de fato, ramos da divisão anterior da artéria ilíaca interna (também conhecida como hipogástrica), elas não acessam o útero na altura do fundo. A artéria uterina percorre o ligamento largo e atinge o útero na altura do istmo (transição entre o corpo e o colo uterino). A partir desse ponto, ela emite ramos descendentes para a vagina e ramos ascendentes que percorrem as faces laterais do corpo uterino em direção ao fundo.\n\nALTERNATIVA B: CORRETA. Esta é uma das relações anatômicas mais importantes da pelve feminina, especialmente para a prática cirúrgica de histerectomia. O ureter atravessa o paramétrio (que compõe a base do ligamento cardinal) passando por baixo da artéria uterina, cerca de 1,5 a 2 cm lateralmente ao colo do útero. Esse cruzamento é conhecido classicamente pela regra mnemônica de que a \"água (ureter) passa por baixo da ponte (artéria)\". Após esse trajeto, o ureter entra na bexiga para compor o trígono vesical.\n\nALTERNATIVA C: INCORRETA. Existe uma confusão comum entre a anatomia arterial e a venosa nesta alternativa. No caso das artérias, tanto a artéria ovariana direita quanto a esquerda são ramos diretos da aorta abdominal, originando-se logo abaixo da saída das artérias renais. A assimetria descrita na alternativa ocorre na drenagem venosa: a veia ovariana direita drena para a veia cava inferior, enquanto a veia ovariana esquerda drena para a veia renal esquerda.\n\nALTERNATIVA D: INCORRETA. A tuba uterina possui quatro segmentos principais: porção intersticial (ou intramural), istmo, ampola e infundíbulo. A porção mais estreita da tuba é a intersticial, que atravessa a musculatura do útero, ou o istmo. O infundíbulo é justamente o oposto: é a extremidade distal em formato de funil, que se abre próximo ao ovário e termina em fímbrias, sendo uma das porções de maior lúmen.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Anatomia e Embriologia do Trato Genital Feminino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:44.423Z"
+  },
+  {
+    "id": "AJUDA_5ab5a7db-67c9-480e-b13a-f073232f8098",
+    "originalId": "5ab5a7db-67c9-480e-b13a-f073232f8098",
+    "statement": "Paciente com cinco gestações, três partos normais e uma cesárea, 35 anos, idade gestacional de 15 semanas por ecografia realizada com 8 semanas, hipertensa crônica em uso de enalapril, antecedente de pré-eclâmpsia. Comparece à consulta de pré natal na Unidade Básica de Saúde (UBS) com pressão arterial de 140 por 90 milímetros de mercúrio.\nQual é a conduta medicamentosa indicada para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Captopril, varfarina e ácido acetilsalicílico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Furosemida, varfarina e carbonato de cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Losartana, enoxaparina e carbonato de cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alfa-metildopa, ácido acetilsalicílico e carbonato de cálcio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o manejo da hipertensão arterial crônica durante a gestação e as medidas profiláticas para a pré-eclâmpsia.\n\nAnálise do quadro clínico:\nA paciente é portadora de Hipertensão Arterial Crônica (HAC), pois já utilizava Enalapril antes ou no início da gestação e apresenta níveis pressóricos alterados antes das 20 semanas de idade gestacional. Ela possui dois fatores de risco importantes para o desenvolvimento de pré-eclâmpsia sobreposta: a própria hipertensão crônica e o antecedente pessoal de pré-eclâmpsia em gestação anterior.\n\nConduta medicamentosa:\n\n1. Substituição do anti-hipertensivo: O Enalapril é um Inibidor da Enzima Conversora de Angiotensina (IECA). Medicamentos desta classe, assim como os Bloqueadores dos Receptores de Angiotensina (como a Losartana), são contraindicados na gestação devido ao risco de malformações fetais, toxicidade renal fetal e oligodramnia. A medicação de escolha para o controle pressórico inicial na gestação é a Alfa-metildopa.\n\n2. Profilaxia de pré-eclâmpsia: Devido ao alto risco (HAC e pré-eclâmpsia anterior), está indicado o uso de Ácido Acetilsalicílico (AAS) em baixas doses (100 a 150 mg/dia), preferencialmente iniciado antes das 16 semanas. Também é indicada a suplementação de Carbonato de Cálcio (1,5 a 2,0 g/dia), que demonstra redução no risco de pré-eclâmpsia, especialmente em populações com baixa ingestão dietética de cálcio.\n\nExplicação das alternativas:\n\nAlternativa a: Incorreta. O Captopril é um IECA e, portanto, contraindicado na gestação. A Varfarina é um anticoagulante oral que atravessa a placenta e possui potencial teratogênico (síndrome varfarínica fetal), além de risco de hemorragia fetal.\n\nAlternativa b: Incorreta. A Furosemida não é droga de primeira linha na gestação, sendo reservada para quadros de insuficiência cardíaca ou edema agudo de pulmão, pois pode reduzir o volume plasmático e comprometer a perfusão placentária. A Varfarina é contraindicada.\n\nAlternativa c: Incorreta. A Losartana é um bloqueador do receptor de angiotensina (BRA) e é contraindicada pelos mesmos motivos dos IECAs. A Enoxaparina (heparina de baixo peso molecular) é utilizada em casos de trombofilias ou histórico de eventos tromboembólicos, o que não foi descrito no enunciado.\n\nAlternativa d: Correta. A Alfa-metildopa é o anti-hipertensivo de escolha para uso crônico na gestação por sua segurança comprovada. O Ácido Acetilsalicílico e o Carbonato de Cálcio compõem o esquema padrão para prevenção de pré-eclâmpsia em gestantes de alto risco, como é o caso da paciente.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 19.245215755993797,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:44.423Z"
+  },
+  {
+    "id": "AJUDA_5ab87f8d-2b11-43dc-9bb0-ec4cc33fa8c3",
+    "originalId": "5ab87f8d-2b11-43dc-9bb0-ec4cc33fa8c3",
+    "statement": "Assinale a assertiva correta sobre o câncer colorretal em pacientes com menos de 50 anos.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Testes genéticos estão indicados uma vez que 50% dos pacientes terão alguma forma de câncer colorretal hereditário diagnosticada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A maioria dos pacientes acometidos tem parentes de primeiro grau com câncer colorretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A incidência vem aumentando nos últimos 20 anos, principalmente às custas dos tumores de cólon esquerdo e reto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Apesar de os tumores apresentarem crescimento mais rápido, os pacientes costumam ter o diagnóstico ainda em estágios mais precoces.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O câncer colorretal de início precoce (em pacientes com menos de 50 anos) é um tema de extrema relevância atual devido à mudança no perfil epidemiológico da doença. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A (Incorreta): Embora as diretrizes atuais recomendem a avaliação genética para pacientes jovens diagnosticados com câncer colorretal, a afirmação de que 50% desses pacientes possuem uma forma hereditária está incorreta. Estima-se que apenas cerca de 15% a 20% dos pacientes com menos de 50 anos apresentem mutações germinativas identificáveis (como na Síndrome de Lynch ou Polipose Adenomatosa Familiar). A grande maioria dos casos nessa faixa etária ainda é considerada esporádica.\n\nAlternativa B (Incorreta): A maioria dos pacientes com câncer colorretal de início precoce não possui parentes de primeiro grau afetados. Cerca de 75% a 80% dos casos são esporádicos, o que reforça o desafio do diagnóstico, já que muitos desses pacientes não são identificados por critérios de rastreamento baseados apenas no histórico familiar.\n\nAlternativa C (Correta): Esta alternativa reflete a realidade epidemiológica mundial das últimas décadas. Enquanto a incidência global de câncer colorretal tem caído em idosos (devido à eficácia do rastreamento por colonoscopia), observa-se um aumento progressivo e preocupante em adultos jovens. Esse aumento é impulsionado majoritariamente por tumores localizados no cólon distal (esquerdo) e, principalmente, no reto. Esse fenômeno tem levado diversas sociedades médicas a reduzirem a idade de início do rastreamento populacional de 50 para 45 anos.\n\nAlternativa D (Incorreta): Diferentemente do que afirma a alternativa, o diagnóstico em pacientes jovens costuma ser feito em estágios mais avançados (III ou IV) em comparação aos pacientes mais velhos. Isso ocorre por dois motivos principais: primeiro, pela falta de rastreamento rotineiro nessa faixa etária; segundo, pelo atraso diagnóstico, uma vez que sintomas como sangramento retal em jovens são frequentemente negligenciados ou atribuídos erroneamente a condições benignas, como hemorroidas. Além disso, os tumores em jovens tendem a apresentar características histológicas mais agressivas, como células em anel de sinete e maior invasão linfovascular.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:44.423Z"
+  },
+  {
+    "id": "AJUDA_5abcd83e-0ead-4ecc-9b89-eb9db943eafb",
+    "originalId": "5abcd83e-0ead-4ecc-9b89-eb9db943eafb",
+    "statement": "Mulher, 34 anos de idade, 1G 1P, refere ciclos menstruais regulares com intervalo de 28 dias, porém com sangramento menstrual volumoso com perda de coágulos e cólica. Deseja engravidar. Ao exame ginecológico especular, sem alterações e toque vaginal com útero pouco aumentado difusamente. Foi realizada a ultrassonografia transvaginal apresentada (corte longitudinal) a seguir: \n\nConsiderando o desejo da paciente e o controle da queixa, qual é o tratamento mais adequado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Progesterona durante a menstruação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Progesterona por 10 dias pré-menstrual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Estrogênio por 10 dias pré-menstrual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estrogênio e progesterona combinados, contínuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico de sangramento menstrual volumoso, cólicas (dismenorreia) e útero aumentado de forma difusa sugere fortemente o diagnóstico de adenomiose. A adenomiose ocorre quando o tecido endometrial está presente de forma ectópica dentro do miométrio. A imagem de ultrassonografia confirma essa suspeita ao mostrar um miométrio com textura heterogênea e pequenas áreas anecoicas (cistos miometrais), que são achados clássicos dessa patologia.\n\nO ponto crucial para a escolha do tratamento nesta questão é o desejo da paciente de engravidar. Isso exclui tratamentos que agem como anticoncepcionais contínuos ou que impedem a ovulação de forma definitiva.\n\nAlternativa a) Incorreta. O uso de progesterona apenas durante o período da menstruação não é eficaz para o controle do sangramento ou da dor. A progesterona precisa atuar na fase lútea do ciclo para preparar e estabilizar o endométrio, reduzindo, assim, a descamação excessiva.\n\nAlternativa b) Correta. A administração de progesterona por 10 dias no período pré-menstrual (segunda fase do ciclo ou fase lútea) é uma estratégia clássica para pacientes que apresentam sangramento uterino anormal e desejam engravidar. Esse esquema ajuda a opor o efeito proliferativo do estrogênio sobre o endométrio e sobre os focos de adenomiose, reduzindo o volume do sangramento e a dor, sem necessariamente impedir a ovulação e a concepção nos ciclos seguintes, sendo a opção terapêutica hormonal mais adequada entre as apresentadas para quem busca gestação a curto prazo.\n\nAlternativa c) Incorreta. O estrogênio é o hormônio responsável pela proliferação do tecido endometrial. Como a adenomiose é uma condição estrogênio-dependente, o uso de estrogênio isolado agravaria os sintomas de sangramento e dor, sendo contraindicado neste contexto.\n\nAlternativa d) Incorreta. O uso de estrogênio e progesterona combinados de forma contínua é um tratamento excelente para o controle dos sintomas da adenomiose, pois promove a atrofia endometrial e o bloqueio do ciclo menstrual. No entanto, este método funciona como um contraceptivo, o que o torna incompatível com o desejo imediato da paciente de engravidar.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Adenomiose"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/7c65268280c08650b1fb497b1cb2e69c96161c85ade62b213713061d2fae685a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5abcd83e-0ead-4ecc-9b89-eb9db943eafb_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:44.933Z"
+  },
+  {
+    "id": "AJUDA_5ac806ee-08f5-44b1-a598-2ddeb0321d7a",
+    "originalId": "5ac806ee-08f5-44b1-a598-2ddeb0321d7a",
+    "statement": "Paciente homem de 32 anos de idade apresentou anemia grave (Hb 7,2 g/dl), reticulocitose, icterícia, esplenomegalia e história familiar de anemia. Laboratorialmente apresentava os seguintes resultados: VCM 90 fL; LDH elevado; bilirrubina indireta aumentada; haptoglobina indetectável; teste de Coombs negativo; esfregaço de sangue periférico abaixo.\nCom base nesse caso clínico hipotético, assinale a opção que apresenta o provável diagnostico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "anemia hemolítica autoimune",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "síndrome mielodisplásica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "talassemia beta maior",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "esferocitose hereditária",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "anemia falciforme",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de síndrome hemolítica, caracterizado pela tríade clínica de anemia, icterícia e esplenomegalia, corroborado pelos exames laboratoriais (reticulocitose, LDH elevado, bilirrubina indireta aumentada e haptoglobina indetectável). A história familiar positiva sugere uma patologia hereditária, e o teste de Coombs negativo é fundamental para excluir causas autoimunes.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Incorreta. Na anemia hemolítica autoimune, o sistema imunológico produz anticorpos contra as próprias hemácias. O principal critério para esse diagnóstico é o teste de Coombs direto positivo, que neste caso é explicitamente negativo.\n\nb) Incorreta. A síndrome mielodisplásica é uma desordem clonal das células-tronco da medula óssea, mais comum em idosos. Ela se manifesta com citopenias por falência medular (produção ineficaz) e não costuma cursar com um quadro hemolítico tão exuberante, reticulocitose e história familiar desde a juventude.\n\nc) Incorreta. A talassemia beta maior é uma anemia microcítica e hipocrômica grave. O VCM (Volume Corpuscular Médio) seria muito baixo (geralmente abaixo de 70 fL), e o quadro clínico se manifesta logo nos primeiros meses de vida com grave dependência de transfusão e alterações ósseas, o que não condiz com o VCM de 90 fL e a idade do paciente.\n\nd) Correta. A esferocitose hereditária é uma anemia hemolítica congênita causada por defeitos nas proteínas da membrana eritrocitária (como anquirina, banda 3 ou espectrina). Isso leva à perda de fragmentos da membrana, fazendo com que a hemácia assuma a forma esférica (esferócito). O quadro de anemia hemolítica crônica, esplenomegalia, história familiar e teste de Coombs negativo é típico desta patologia. O esfregaço de sangue periférico mencionado na questão revelaria os esferócitos: hemácias pequenas, circulares, densamente coradas e sem a palidez central fisiológica.\n\ne) Incorreta. Embora a anemia falciforme seja uma anemia hemolítica hereditária, o esfregaço periférico típico apresentaria drepanócitos (hemácias em foice) e corpúsculos de Howell-Jolly. Além disso, a maioria dos adultos com anemia falciforme (HbSS) apresenta autoesplenectomia devido a sucessivos infartos esplênicos, o que contradiz a esplenomegalia encontrada neste paciente.\n\nASSOCIAÇÃO COM A IMAGEM E CONCLUSÃO\n\nO diagnóstico é ratificado pelo esfregaço de sangue periférico. A visualização de esferócitos em um contexto de hemólise com Coombs negativo é o achado definitivo para a esferocitose hereditária. O VCM normal (90 fL) também é comum, embora o CHCM (Concentração de Hemoglobina Corpuscular Média) costume estar elevado nessas células devido à desidratação celular, sendo uma dica valiosa em provas de residência.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:44.933Z"
+  },
+  {
+    "id": "AJUDA_5acc27d2-5750-44d1-90b9-db4e7f518dfc",
+    "originalId": "5acc27d2-5750-44d1-90b9-db4e7f518dfc",
+    "statement": "Gestante de 32 anos, G3 P2 A0 (2 cesáreas), grupo sanguíneo O negativo, cujo parceiro não compareceu na consulta de pré-natal para tipagem sanguínea, é admitida em trabalho de parto com 37 semanas. Recebeu imunoglobulina anti-D na 28ª semana de gestação. Na admissão, o teste de Coombs indireto da paciente foi positivo com titulação de 1:2. Tipagem do recém-nascido A positivo. No que se refere à profilaxia da aloimunização no pós-parto dessa paciente, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Está indicada a realização da 2ª dose de imunoglobulina anti-D, desde que o resultado do Coombs indireto do recém-nascido seja negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Está indicada a realização da 2ª dose de imunoglobulina anti-D, independente do resultado do Coombs indireto, até 72 horas após o parto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Está indicada a realização de imunoglobulina anti-D, desde que o Coombs direto do recém-nascido seja positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Está contraindicado imunoglobulina anti-D, pois a paciente já a realizou com 28 semanas de gravidez",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A gestante em questão apresenta um quadro de incompatibilidade sanguínea Rh (mãe Rh negativo e recém-nascido Rh positivo). O ponto central para a resolução da questão é interpretar o resultado do teste de Coombs Indireto positivo com titulação de 1:2. Como a paciente recebeu a imunoglobulina anti-D na 28ª semana de gestação, esse resultado de baixa titulação (geralmente até 1:4) é esperado e representa apenas um resíduo da medicação administrada anteriormente (imunização passiva), e não uma sensibilização real da paciente.\n\nAlternativa (a) Incorreta: O teste realizado no recém-nascido para verificar a presença de anticorpos maternos ligados às suas hemácias é o Coombs Direto, e não o Coombs Indireto. O Coombs Indireto é um teste realizado no soro da mãe. Além disso, a indicação da profilaxia baseia-se no tipo sanguíneo do bebê (Rh positivo) em uma mãe que não possui sensibilização ativa.\n\nAlternativa (b) Correta: Como o recém-nascido é Rh positivo e a mãe é Rh negativo, há indicação formal de profilaxia para evitar a aloimunização em futuras gestações. O título de 1:2 no Coombs Indireto da mãe é interpretado como efeito residual da dose da 28ª semana. Portanto, deve-se administrar a imunoglobulina anti-D preferencialmente nas primeiras 72 horas após o parto, independentemente do resultado do Coombs Indireto residual, visando neutralizar as hemácias fetais que possam ter passado para a circulação materna durante o parto.\n\nAlternativa (c) Incorreta: A imunoglobulina anti-D é uma medida preventiva. Se o Coombs Direto do recém-nascido for fortemente positivo devido a uma sensibilização prévia real da mãe (com títulos de anticorpos elevados), a imunoglobulina não terá benefício, pois a cascata imunológica de memória da mãe já terá sido ativada. A profilaxia é indicada justamente para evitar que o processo de sensibilização ocorra quando o bebê é Rh positivo.\n\nAlternativa (d) Incorreta: A administração da imunoglobulina na 28ª semana (profilaxia antenatal) não anula a necessidade da dose pós-parto. A dose antenatal protege contra eventos transplacentários discretos que podem ocorrer no terceiro trimestre, mas o momento do parto é o de maior risco de hemorragia fetomaterna, exigindo uma nova dose de reforço caso o concepto seja comprovadamente Rh positivo.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:44.933Z"
+  },
+  {
+    "id": "AJUDA_5ad13ba0-e3d7-46e2-a8e7-9abdb2349f7d",
+    "originalId": "5ad13ba0-e3d7-46e2-a8e7-9abdb2349f7d",
+    "statement": "A rotina de exames de análises clinicas para o hipertenso, segundo a Diretriz Brasileira de Hipertensão (2020), constitui-se de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hemograma, sódio, potássio, lipidograma, glicemia de jejum, hemoglobina glicada, creatinina (para estimativa da taxa de filtração glomerular), ácido úrico e elementos anormais do sedimento urinário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "potássio, lipidograma, glicemia de jejum, hemoglobina glicada, creatinina (para estimativa da taxa de filtração glomerular), ácido úrico e elementos anormais do sedimento urinário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "sódio, potássio, lipidograma, glicemia de jejum, hemoglobina glicada, ureia, creatinina (para estimativa da taxa de filtração glomerular), ácido úrico e elementos anormais do sedimento urinário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hemograma, potássio, lipidograma, glicemia de jejum, hemoglobina glicada, ureia, creatinina (para estimativa da taxa de filtração glomerular), ácido úrico e elementos anormais do sedimento urinário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda os exames laboratoriais básicos que devem ser solicitados para todo paciente com diagnóstico de Hipertensão Arterial Sistêmica (HAS), conforme a Diretriz Brasileira de Hipertensão Arterial (2020). O objetivo desses exames é identificar lesões em órgãos-alvo, estimar o risco cardiovascular e detectar comorbidades ou causas secundárias de hipertensão.\n\nAnálise das alternativas:\n\na) Incorreta. O hemograma e o sódio não fazem parte da rotina básica de exames para o paciente hipertenso de acordo com a diretriz de 2020. Embora o hemograma seja um exame comum na prática clínica, ele não é obrigatório na avaliação inicial da HAS. O sódio, apesar de importante, não consta na lista de triagem básica obrigatória, ao contrário do potássio.\n\nb) Correta. Esta alternativa lista exatamente os exames de análises clínicas preconizados pela Diretriz de 2020 para a rotina básica: potássio plasmático (fundamental pela relação com o sistema renina-angiotensina-aldosterona e uso de diuréticos), lipidograma (avaliação de risco cardiovascular), glicemia de jejum e hemoglobina glicada (rastreio de diabetes mellitus), creatinina plasmática (para cálculo da taxa de filtração glomerular e avaliação de função renal), ácido úrico (marcador de risco e prognóstico) e urina tipo 1 / EAS (busca por proteinúria ou hematúria, sinais de lesão renal).\n\nc) Incorreta. O erro desta alternativa está na inclusão do sódio e da ureia. A diretriz foca no potássio em detrimento do sódio para a rotina inicial. Quanto à função renal, a creatinina é o marcador de escolha para o cálculo da taxa de filtração glomerular, tornando a ureia desnecessária na triagem inicial básica do hipertenso.\n\nd) Incorreta. Esta alternativa contém o hemograma e a ureia, que, como mencionado anteriormente, não compõem o rol de exames laboratoriais de rotina mínima para o paciente com hipertensão arterial, segundo o documento oficial da Sociedade Brasileira de Cardiologia.\n\nResumo dos exames de rotina (DBH 2020):\n1. Urina (EAS/Sumário de urina).\n2. Potássio plasmático.\n3. Creatinina plasmática (com cálculo da taxa de filtração glomerular).\n4. Glicemia de jejum e hemoglobina glicada (HbA1c).\n5. Lipidograma (colesterol total, HDL e triglicerídeos; LDL calculado).\n6. Ácido úrico plasmático.\n7. Eletrocardiograma de repouso (exame de imagem/gráfico, não laboratorial).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:44.933Z"
+  }
+]

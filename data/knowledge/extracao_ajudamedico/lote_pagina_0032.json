@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_086cab83-7266-43da-97d7-46c7f605115a",
+    "originalId": "086cab83-7266-43da-97d7-46c7f605115a",
+    "statement": "Homem, 53 anos de idade, possui antecedente de hipertensão e diabetes melito tipo 2. Faz uso de hidroclorotiazida, metformina e gliclazida. Comparece ao departamento de emergência com queixa de dor torácica há cerca de uma hora. Ao exame físico, apresenta PA de 90×60 mmHg, FC de 60 bpm, FR de 25 irpm. Regular estado geral, sudoreico. Auscultas cardíaca e pulmonar sem alterações. Abdome e extremidades sem alterações. Foi realizado o eletrocardiograma apresentado a seguir:\n\nCom base no caso clínico apresentado, assinale a alternativa indica a terapia intravenosa imediata pertinente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dobutamina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nitroglicerina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Noradrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cloreto de sódio 0,9%.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Analise do caso clinico e do eletrocardiograma:\n\nO paciente apresenta quadro tipico de sindrome coronariana aguda associado a hipotensao arterial (PA 90x60 mmHg) e ausculta pulmonar limpa. \n\nA analise do eletrocardiograma revela supradesnivelamento do segmento ST nas derivacoes da parede inferior (DII, DIII e aVF) associado a imagem em espelho (infradesnivelamento de ST) em DI e aVL. Destaca-se ainda que o supra em DIII e maior do que em DII e ha supradesnivelamento do segmento ST em V1 com infradesnivelamento em V2, achados fortemente indicativos de acometimento do Ventriculo Direito (infarto de VD associado ao infarto de parede inferior).\n\nNo infarto de VD, o ventriculo perde sua capacidade de bomba adequada e torna-se extremamente dependente da pre-carga para manter o debito cardiaco e a perfusao sistemica. Como o paciente esta hipotenso e com campos pulmonares limpos (sem congestao), a conduta imediata mandataria e a otimizacao da pre-carga atraves de expansao volemica.\n\nAnalise das alternativas:\n\na) Incorreta. A dobutamina e um agente inotropico que pode ser considerado em fases posteriores caso o paciente persista em choque cardiogenico refratario a adequada reposicao volemica. Nao e a conduta intravenosa de primeira linha neste momento.\n\nb) Incorreta. Nitratos (como a nitroglicerina), opioides e diureticos sao estritamente contraindicados no infarto de ventriculo direito, pois promovem venodilatacao, reduzem bruscamente a pre-carga e podem precipitar choque cardiogenico grave e colapso hemodinamico.\n\nc) Incorreta. A noradrenalina e um vasopressor potente, porem o mecanismo primario da hipotensao no infarto de VD e a reducao do debito cardiaco por falha no enchimento ventricular direito. O uso isolado de vasopressores sem reposicao volemica previa nao corrige a fisiopatologia de base.\n\nd) Correta. A administracao intravenosa de solucao salina a 0,9% (cloreto de sodio a 0,9%) e o tratamento inicial de escolha. A infusao de volume eleva a pressao venosa central e a pre-carga do ventriculo direito, permitindo que o sangue atinja o ventriculo esquerdo por fluxo passivo atraves do leito vascular pulmonar, restaurando o debito cardiaco e os niveis pressoricos.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+      "Eletrocardiograma",
+      "Choque"
+    ],
+    "difficulty": 94.85550240637237,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ee49b8acbab33d41b7077cc0320be537ad8d013efeb5cc6100916a55e74276b9.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_086cab83-7266-43da-97d7-46c7f605115a_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:30.702Z"
+  },
+  {
+    "id": "AJUDA_086d764e-ccbc-4173-92eb-c46fa5b14cb9",
+    "originalId": "086d764e-ccbc-4173-92eb-c46fa5b14cb9",
+    "statement": "Em paciente com sintomas psicóticos persistentes há 8 meses, com delírios de perseguição e alucinações auditivas, prejuízo funcional importante e exclusão de causas orgânicas, identifique o diagnóstico mais adequado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esquizofrenia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Transtorno esquizofreniforme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno esquizoafetivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno delirante persistente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico: O paciente apresenta um quadro psicótico caracterizado por delírios de perseguição e alucinações auditivas. Os fatores determinantes para o diagnóstico correto nesta questão são o tempo de evolução (8 meses), o prejuízo funcional importante e a exclusão de causas orgânicas.\n\nAlternativa a: Correta. De acordo com o Manual Diagnóstico e Estatístico de Transtornos Mentais (DSM-5-TR), para o diagnóstico de esquizofrenia, é necessária a presença de dois ou mais sintomas característicos (como delírios, alucinações ou fala desorganizada) por uma parte significativa do tempo durante um período de um mês (fase ativa), e os sinais contínuos do transtorno devem persistir por pelo menos 6 meses. Como o paciente apresenta sintomas há 8 meses e possui prejuízo funcional, ele preenche todos os critérios para esquizofrenia.\n\nAlternativa b: Incorreta. O transtorno esquizofreniforme é caracterizado pelos mesmos sintomas da esquizofrenia, mas a diferença reside exclusivamente na duração do quadro. No transtorno esquizofreniforme, a duração total da doença deve ser de pelo menos 1 mês, porém menos de 6 meses. Uma vez que o paciente atingiu 8 meses de sintomas, o diagnóstico evolui obrigatoriamente para esquizofrenia.\n\nAlternativa c: Incorreta. O transtorno esquizoafetivo exige que o paciente apresente um episódio de humor (maníaco ou depressivo maior) ocorrendo simultaneamente aos sintomas da fase ativa da esquizofrenia, além de um período de pelo menos duas semanas de delírios ou alucinações na ausência de sintomas de humor. O enunciado não menciona qualquer sintomatologia de humor (como depressão ou euforia), focando apenas nos sintomas psicóticos.\n\nAlternativa d: Incorreta. O transtorno delirante persistente caracteriza-se pela presença de um ou mais delírios que duram 1 mês ou mais, mas sem preencher os critérios para esquizofrenia. Nesse transtorno, alucinações auditivas proeminentes não costumam estar presentes e o funcionamento psicossocial não é tão gravemente prejudicado quanto no caso descrito; o comportamento do paciente, fora do foco do delírio, geralmente permanece preservado.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Transtornos Psicóticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:30.702Z"
+  },
+  {
+    "id": "AJUDA_086dcee1-afe7-4fbd-86a7-b578947a2dbb",
+    "originalId": "086dcee1-afe7-4fbd-86a7-b578947a2dbb",
+    "statement": "O principal objetivo do rastreamento populacional organizado para o câncer é",
+    "options": [
+      {
+        "id": "A",
+        "text": "diminuir a morbimortalidade por um tipo específico de câncer em indivíduos assintomáticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "reduzir a incidência de todos os tipos de câncer na população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tratar pacientes sintomáticos precocemente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "garantir que exames médicos de check-up sejam realizados anualmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O rastreamento (screening) é uma estratégia de saúde pública fundamentada na prevenção secundária, aplicada a uma população que não apresenta sinais ou sintomas da doença-alvo.\n\nAlternativa A (Correta): Este é o conceito clássico de rastreamento. O objetivo fundamental é identificar o câncer em sua fase pré-clínica ou detectar lesões precursoras em indivíduos assintomáticos. Ao realizar o diagnóstico em estágios iniciais, as intervenções terapêuticas tendem a ser menos agressivas e mais eficazes, o que leva, consequentemente, à redução da morbidade (sequelas do tratamento e da doença) e da mortalidade específica pelo câncer rastreado.\n\nAlternativa B (Incorreta): O rastreamento não tem a capacidade de reduzir a incidência de \"todos\" os tipos de câncer. Algumas modalidades, como o rastreamento de câncer do colo do útero e de cólon e reto, podem reduzir a incidência por permitirem o tratamento de lesões pré-malignas. No entanto, outras (como a mamografia) focam apenas na detecção precoce do câncer já existente. Além disso, não existe rastreamento populacional efetivo para todos os tipos de neoplasias.\n\nAlternativa C (Incorreta): Quando o paciente apresenta sinais ou sintomas, o processo médico é denominado \"diagnóstico precoce\", e não rastreamento. O rastreamento é, por definição, voltado para pessoas que se sentem e parecem saudáveis para aquela condição específica.\n\nAlternativa D (Incorreta): A realização de check-ups anuais é uma prática de rotina clínica que pode ser vaga. O rastreamento organizado segue protocolos rigorosos, baseados em evidências científicas, com faixas etárias e intervalos específicos (que nem sempre são anuais). Além disso, o exame em si é apenas a ferramenta; o objetivo final é o impacto clínico nos desfechos de saúde (morbimortalidade), e não o cumprimento de um calendário de exames.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:30.702Z"
+  },
+  {
+    "id": "AJUDA_08701163-7c4a-4719-b225-c919fdb8ca73",
+    "originalId": "08701163-7c4a-4719-b225-c919fdb8ca73",
+    "statement": "Lactente com um mês de vida apresenta placas eritematodescamativas arredondadas, com crostas amareladas aderidas a uma base eritematosa em região retroauricular, pescoço, períneo e couro cabeludo. Bom estado geral, sem sinais de desconforto ou presença de febre. Qual o agente etiológico mais provável do caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Malassezia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Autoimunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Staphylococcus aureus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Streptococcus do grupo A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Staphylococcus epidermidis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso: O quadro clínico descrito é clássico da Dermatite Seborreica do Lactente. Esta condição inicia-se geralmente nas primeiras semanas de vida, caracterizando-se por lesões eritematosas com escamas ou crostas amareladas, de aspecto gorduroso ou seboso. As áreas mais afetadas são o couro cabeludo (condição conhecida popularmente como crosta láctea), face, região retroauricular e áreas de dobras, como pescoço e períneo. O fato de o lactente apresentar bom estado geral e ausência de febre é fundamental para o diagnóstico diferencial com processos infecciosos sistêmicos.\n\nAlternativa a: Correta. A *Malassezia* é um fungo comensal (levedura) que faz parte da flora cutânea normal. No lactente, a influência dos hormônios maternos que atravessaram a placenta estimula as glândulas sebáceas, aumentando a produção de sebo. Esse ambiente favorece a proliferação da *Malassezia*, que degrada os lipídios da pele, gerando subprodutos irritantes que desencadeiam a resposta inflamatória característica da dermatite seborreica.\n\nAlternativa b: Incorreta. A dermatite seborreica não possui etiologia autoimune. Sua patogenia envolve uma resposta inflamatória a fungos da pele e fatores constitucionais, mas sem relação com a produção de autoanticorpos ou ataque ao próprio tecido pelo sistema imune.\n\nAlternativa c: Incorreta. O *Staphylococcus aureus* é o principal agente causador do impetigo. Embora o impetigo possa apresentar crostas, estas costumam ser descritas como melicéricas (cor de mel) e geralmente estão associadas a uma base mais inflamada, vesículas prévias ou sinais de infecção secundária, não respeitando a distribuição típica das áreas seborreicas.\n\nAlternativa d: Incorreta. O *Streptococcus* do grupo A (*Streptococcus pyogenes*) também causa infecções cutâneas como o impetigo e a erisipela. No entanto, essas condições costumam apresentar sinais inflamatórios mais agudos e dor local, o que diverge da descrição de placas descamativas indolores e bem toleradas pelo lactente.\n\nAlternativa e: Incorreta. O *Staphylococcus epidermidis* é um componente da microbiota normal da pele. Embora possa estar presente na pele de qualquer indivíduo, ele raramente é o agente etiológico primário de dermatites inflamatórias em lactentes saudáveis.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Dermatoses Papuloescamosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:30.702Z"
+  },
+  {
+    "id": "AJUDA_088a5732-0fe5-4a35-bcab-570712151e71",
+    "originalId": "088a5732-0fe5-4a35-bcab-570712151e71",
+    "statement": "A transição da hemoglobina fetal (HbF) para a hemoglobina adulta (HbA) é um processo regulado no desenvolvimento. Assinale a alternativa correta sobre a cinética dessa troca e suas implicações na anemia fisiológica do lactente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A produção de cadeias beta da globina supera a de cadeias gama logo na 20ª semana de gestação, fazendo com que o recém-nascido a termo tenha predominantemente HbA (> 80%) ao nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A anemia fisiológica do lactente ocorre entre 8 e 12 semanas de vida e é causada exclusivamente pela hemólise acelerada das hemácias fetais, sem relação com a supressão da eritropoiese pela melhora da oxigenação tecidual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A persistência hereditária de hemoglobina fetal (PHHF) é uma condição patológica grave que impede a oxigenação tecidual adequada na vida adulta, exigindo transfusões crônicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A HbF (alfa2-gama2) tem maior afinidade pelo oxigênio do que a HbA (alfa2-beta2) devido à sua menor interação com o 2,3-difosfoglicerato (2,3-DPG), o que favorece a captação de oxigênio na placenta, mas dificulta a liberação nos tecidos após o nascimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a) Incorreta. Durante a vida fetal, a produção de cadeias gama predomina sobre a de cadeias beta. Ao nascimento, um recém-nascido a termo possui cerca de 60% a 80% de hemoglobina fetal (HbF) e apenas 20% a 40% de hemoglobina adulta (HbA). A transição completa, na qual a HbA se torna amplamente predominante, ocorre ao longo dos primeiros meses de vida, e não na 20ª semana de gestação.\n\nAlternativa b) Incorreta. Embora a vida média mais curta das hemácias fetais contribua para a queda dos níveis de hemoglobina, a principal causa da anemia fisiológica do lactente é a supressão da eritropoiese. Após o nascimento, o aumento da oxigenação tecidual resultante da respiração pulmonar leva a uma queda drástica na produção de eritropoietina renal, reduzindo a fabricação de novas hemácias até que os níveis de oxigênio e a demanda tecidual se equilibrem.\n\nAlternativa c) Incorreta. A Persistência Hereditária de Hemoglobina Fetal (PHHF) é, na maioria das vezes, uma condição benigna e assintomática. Ela não prejudica a oxigenação a ponto de exigir tratamento. Pelo contrário, a presença de níveis elevados de HbF é um fator protetor em pacientes com anemia falciforme ou beta-talassemia, pois a HbF impede a polimerização da hemoglobina S e compensa a falta de cadeias beta funcionais.\n\nAlternativa d) Correta. A afinidade da hemoglobina pelo oxigênio é influenciada pela molécula 2,3-difosfoglicerato (2,3-DPG), que se liga às cadeias beta da HbA para facilitar a liberação do oxigênio nos tecidos. Como a HbF é composta por cadeias alfa e gama, ela apresenta baixa afinidade pelo 2,3-DPG. Isso resulta em uma curva de dissociação da hemoglobina desviada para a esquerda, significando que a HbF retém o oxigênio com mais força. Essa característica é essencial na placenta para \"roubar\" o oxigênio do sangue materno, mas, após o nascimento, essa maior afinidade dificulta a entrega do oxigênio aos tecidos quando comparada à HbA.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:30.702Z"
+  },
+  {
+    "id": "AJUDA_088bfde0-a802-41b8-af0e-5b8d0926b86a",
+    "originalId": "088bfde0-a802-41b8-af0e-5b8d0926b86a",
+    "statement": "Homem 57 anos, tabagista, portador de dislipidemia, hipertensão arterial e obesidade. Reside sozinho em área onde a população é atendida pela Estratégia de Saúde da Família (ESF), porém não faz seguimento com a Equipe da ESF. Estava em sua casa quando apresentou intensa dor em região precordial iniciada há 24 horas, com piora progressiva, procurou o vizinho que chamou o SAMU e foi levado para a UPA. Deu entrada no serviço e evoluiu a óbito poucas horas após, sem resposta a manobras de reanimação. Eletrocardiograma da entrada na unidade evidenciou fibrilação ventricular. Em relação ao preenchimento da Declaração de Óbito deste caso a alternativa correta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Parte I: a) fibrilação ventricular b) infarto agudo do miocárdio c) hipertensão arterial Parte II d) dislipidemia, tabagismo, obesidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Parte I: a) infarto agudo do miocárdio b) aterosclerose coronariana c) fibrilação atrial Parte II d) dislipidemia, hipertensão arterial obesidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Parte I: a) fibrilação ventricular b) infarto agudo do miocárdio c) aterosclerose coronariana Parte II d) dislipidemia, hipertensão arterial, obesidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Parte I: a) aterosclerose coronariana b) fibrilação atrial c) infarto agudo do miocárdio Parte II d) dislipidemia, hipertensão arterial obesidade",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Declaração de Óbito (DO) é um documento fundamental para a vigilância epidemiológica e deve ser preenchida seguindo uma lógica fisiopatológica. O campo 40 (Causas da Morte) é dividido em duas partes principais:\n\nParte I: Refere-se à sequência de eventos que conduziu diretamente à morte. A linha (a) deve conter a causa imediata (o evento terminal). As linhas subsequentes (b, c, d) devem registrar as causas antecedentes, descendo até a causa básica na última linha preenchida. A causa básica é a doença ou lesão que iniciou a cadeia de eventos patológicos.\n\nParte II: Destina-se a estados mórbidos significativos que contribuíram para a morte, mas que não entraram na cadeia causal direta registrada na Parte I. Aqui entram, geralmente, os fatores de risco e comorbidades crônicas.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a fibrilação ventricular seja a causa imediata e o infarto a causa antecedente, a hipertensão arterial é melhor classificada como uma condição contribuinte na Parte II, e não como a causa básica diretamente ligada ao evento agudo nesta sequência. Além disso, faltou citar a aterosclerose como base do infarto.\n\nb) Incorreta. A ordem da Parte I está invertida (o infarto não causa a aterosclerose). Além disso, o paciente apresentou fibrilação ventricular (ritmo de parada) e não fibrilação atrial.\n\nc) Correta. Esta alternativa segue perfeitamente a lógica de preenchimento. Na linha (a), temos a causa imediata (fibrilação ventricular, que é o mecanismo terminal documentado no ECG); na linha (b), a causa intermediária (infarto agudo do miocárdio); e na linha (c), a causa básica (aterosclerose coronariana, que originou o infarto). Na Parte II, foram listadas corretamente as comorbidades e os fatores de risco (dislipidemia, hipertensão arterial e obesidade) que contribuíram para o desfecho, mas não fazem parte da sucessão direta de eventos agudos.\n\nd) Incorreta. A sequência na Parte I está tecnicamente invertida e confusa. A aterosclerose não é a causa imediata (linha a), e sim a básica. Também cita erroneamente fibrilação atrial em vez de ventricular.\n\nA imagem anexada ilustra o Bloco V da Declaração de Óbito. Nela, podem-se observar claramente as divisões mencionadas: as linhas (a), (b), (c) e (d) da Parte I, onde se estabelece o nexo causal de baixo para cima (da causa básica para a imediata), e o campo inferior da Parte II para as causas contribuintes. No caso clínico, o preenchimento correto utiliza as linhas (a), (b) e (c) da Parte I e o campo da Parte II, conforme descrito na alternativa C.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/691f9029e2b58e08d451432a9b69ba111064944ae6fbf4df1cf4b69efe7f7614.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_088bfde0-a802-41b8-af0e-5b8d0926b86a_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:31.374Z"
+  },
+  {
+    "id": "AJUDA_088e7162-34d2-4094-8b8f-94e6a9b430e1",
+    "originalId": "088e7162-34d2-4094-8b8f-94e6a9b430e1",
+    "statement": "Trata-se de criança de 2 anos de idade, internada para investigação de atraso no desenvolvimento neuropsicomotor e identificado erro alimentar importante. Ao exame físico, encontra-se em regular estado geral, apática, não sorri, não permanece em pé, tônus muscular reduzido. Realizada revisão laboratorial com hemograma evidenciando pancitopenia. Sobre o caso descrito, assinale a alternativa que MELHOR justifica o quadro:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de provável quadro de deficiência de cianocobalamina, sendo indicada dosagem e suplementação intramuscular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de provável quadro de deficiência de tiamina, sendo indicada dosagem e suplementação endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de provável quadro de deficiência de ferro, sendo indicada dosagem e suplementação via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de provável quadro de deficiência de niacina, sendo indicada dosagem e suplementação endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico apresenta uma criança de 2 anos com atraso no desenvolvimento neuropsicomotor, apatia e hipotonia (tônus reduzido), associados a um erro alimentar importante e pancitopenia no hemograma. Essa combinação de manifestações neurológicas e hematológicas em um contexto nutricional aponta diretamente para a deficiência de vitamina B12.\n\nALTERNATIVA A (CORRETA)\n\nA vitamina B12 (cianocobalamina) é essencial para a síntese de DNA e para a formação e manutenção da bainha de mielina. Na falta dessa vitamina, ocorre um defeito na divisão celular na medula óssea (hematopoese ineficaz), o que resulta em anemia megaloblástica e, em casos graves, na redução de todas as linhagens celulares (pancitopenia). No sistema nervoso, sua carência provoca desmielinização, o que explica o atraso no desenvolvimento, a hipotonia e a apatia. Em pacientes com sintomas neurológicos, a suplementação por via intramuscular é a conduta padrão para garantir a absorção e a rápida reversão dos danos.\n\nALTERNATIVA B (INCORRETA)\n\nA deficiência de tiamina (vitamina B1) é responsável pelo beribéri. Embora possa causar sintomas neurológicos (neuropatia periférica ou encefalopatia de Wernicke) e cardiovasculares, a tiamina não atua na síntese de DNA de modo a causar pancitopenia ou anemia megaloblástica.\n\nALTERNATIVA C (INCORRETA)\n\nA deficiência de ferro é a causa mais comum de anemia em crianças, porém manifesta-se tipicamente como uma anemia microcítica e hipocrômica, e não como pancitopenia. Além disso, embora a carência de ferro prejudique o desenvolvimento cognitivo, ela não costuma causar o quadro de hipotonia severa e apatia profunda descrito no caso de forma isolada.\n\nALTERNATIVA D (INCORRETA)\n\nA deficiência de niacina (vitamina B3) causa a pelagra, que é classicamente descrita pela tríade dos três Ds: dermatite, diarreia e demência. Não é uma causa reconhecida de pancitopenia no hemograma, e o quadro cutâneo (dermatite em áreas de exposição solar) estaria presente em um quadro clínico típico.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias",
+      "Desnutrição na Infância",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 78.49768974421528,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:31.374Z"
+  },
+  {
+    "id": "AJUDA_08940990-3b1c-48f9-88f9-756dbfd53e88",
+    "originalId": "08940990-3b1c-48f9-88f9-756dbfd53e88",
+    "statement": "Um paciente de 32 anos, vítima de assalto há 4 meses, apresenta pesadelos recorrentes com o evento, evita sair de casa, tem hipervigilância e irritabilidade. Qual das opções abaixo é critérios diagnósticos obrigatórios segundo o DSM-5 para o diagnóstico de TEPT?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presença de sintomas dissociativos e psicóticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exposição a evento traumático real ou ameaçador.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sintomas depressivos com anedonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lembranças intrusivas de caráter vago, sem relação com o trauma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Transtorno de Estresse Pós-Traumático (TEPT) é classificado no DSM-5 no grupo de transtornos relacionados a trauma e a estressores. O diagnóstico exige o preenchimento de critérios específicos organizados de A a H, com duração superior a 1 mês e prejuízo funcional significativo.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Sintomas dissociativos (como despersonalização e desrealização) configuram apenas um subtipo/especificador do TEPT, não sendo de presença obrigatória para todos os casos. Sintomas psicóticos não fazem parte dos critérios centrais do diagnóstico.\n\nAlternativa b: Correta. Trata-se do Critério A do DSM-5, considerado a condição indispensável (\"porta de entrada\") para o diagnóstico. O indivíduo precisa ter sido exposto a morte real ou ameaça de morte, lesão grave ou violência sexual, seja por vivência direta, como testemunha, ao saber da ocorrência com pessoa próxima ou por exposição ocupacional repetida a detalhes aversivos.\n\nAlternativa c: Incorreta. Embora alterações negativas na cognição e no humor (Critério D) façam parte dos possíveis sintomas, que incluem incapacidade de sentir emoções positivas ou diminuição do interesse, a presença isolada de sintomas depressivos com anedonia não é o critério obrigatório que define o TEPT, sendo característica primária do Transtorno Depressivo Maior.\n\nAlternativa d: Incorreta. O Critério B exige sintomas intrusivos (como lembranças angustiantes, pesadelos ou flashbacks) que sejam involuntários, recorrentes e explicitamente relacionados ao evento traumático vivenciado, e não de caráter vago ou sem relação com o trauma.\n\nResumo dos critérios diagnósticos do DSM-5 para TEPT:\n- Critério A: Exposição a evento traumático real ou ameaçador (obrigatório).\n- Critério B: Sintomas de intrusão associados ao trauma (ao menos 1).\n- Critério C: Esquiva persistente de estímulos associados ao trauma (ao menos 1).\n- Critério D: Alterações negativas na cognição e no humor (ao menos 2).\n- Critério E: Alterações na excitação e reatividade, como hipervigilância e sobressalto (ao menos 2).\n- Critério F: Duração dos sintomas por mais de 1 mês.\n- Critério G: Sofrimento clinicamente significativo ou prejuízo funcional.\n- Critério H: Não atribuível aos efeitos fisiológicos de substâncias ou outra condição médica.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:31.374Z"
+  },
+  {
+    "id": "AJUDA_08a4da4c-3384-47be-9709-83510d9764d9",
+    "originalId": "08a4da4c-3384-47be-9709-83510d9764d9",
+    "statement": "As complicações mais comuns após infarto agudo do miocárdio que levam a cirurgia de urgência ou emergência para correção são",
+    "options": [
+      {
+        "id": "A",
+        "text": "ruptura cardíaca, insuficiência valvar aórtica e aneurisma de ventrículo esquerdo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "comunicação interventricular, insuficiência mitral aguda e ruptura cardíaca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "estenose valvar aórtica aguda, dissecção de aorta e trombose em átrio direito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ruptura cardíaca, aneurisma dissecante de aorta e trombose em átrio esquerdo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "As complicações mecânicas do infarto agudo do miocárdio (IAM) surgem em decorrência da necrose tecidual que fragiliza as estruturas cardíacas. Elas geralmente ocorrem na primeira semana após o evento isquêmico e exigem intervenção cirúrgica imediata devido ao alto risco de morte.\n\nAlternativa a) Incorreta. A ruptura cardíaca (de parede livre) é uma emergência cirúrgica real. Entretanto, a insuficiência valvar aórtica não é uma complicação típica do IAM. Além disso, o aneurisma do ventrículo esquerdo é, na maioria das vezes, uma complicação crônica (tardia) que resulta do remodelamento ventricular, não exigindo cirurgia de emergência na fase aguda.\n\nAlternativa b) Correta. Esta alternativa lista as três principais complicações mecânicas que demandam cirurgia de urgência ou emergência:\n1. Comunicação interventricular (CIV): Ruptura do septo interventricular que cria um shunt esquerda-direita, causando instabilidade hemodinâmica grave.\n2. Insuficiência mitral aguda: Decorre geralmente da ruptura do músculo papilar (mais comum no infarto inferior), levando a edema agudo de pulmão e choque cardiogênico.\n3. Ruptura cardíaca: Refere-se à ruptura da parede livre do ventrículo, o que provoca tamponamento cardíaco súbito e alta letalidade.\n\nAlternativa c) Incorreta. A estenose valvar aórtica é uma doença degenerativa crônica e não uma complicação aguda do infarto. A dissecção da aorta é uma patologia distinta (embora possa causar infarto se atingir as coronárias, ela não é uma complicação do IAM). A trombose no átrio direito não é uma indicação clássica de cirurgia de emergência pós-infarto.\n\nAlternativa d) Incorreta. A ruptura cardíaca está correta, porém a dissecção da aorta (citada como aneurisma dissecante) não é uma complicação do infarto. A trombose no átrio esquerdo pode ocorrer em contextos de estase sanguínea ou fibrilação atrial, mas seu manejo inicial é clínico (anticoagulação) e não uma cirurgia de emergência típica do período pós-IAM imediato.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:31.374Z"
+  },
+  {
+    "id": "AJUDA_08a59f4e-bd05-4038-a49c-000ae6978f36",
+    "originalId": "08a59f4e-bd05-4038-a49c-000ae6978f36",
+    "statement": "Paciente feminina, 68 anos, com obesidade grau III, diabetes mellitus tipo 2, hipertensão arterial sistêmica, doença renal crônica em diálise e fibrilação atrial, apresenta quadro de febre persistente, dor abdominal difusa e leucocitose há 10 dias. A tomografia computadorizada está apresentada abaixo. Foi iniciado tratamento com antibióticos de largo espectro. Com base no quadro clínico, exames de imagem e antecedentes da paciente, a etiologia mais provável do abscesso esplênico e o tratamento mais indicado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cisto esplênico infectado – drenagem percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Embolia séptica – esplenectomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "divericulite – observação clinica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Isquemia esplênica – suporte clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pancreatite aguda – drenagem cirúrgica do pâncreas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nA paciente apresenta um quadro de febre persistente e dor abdominal associado a fatores de risco significativos: fibrilação atrial (que predispõe a eventos embólicos) e doença renal crônica em hemodiálise (que é um importante fator de risco para bacteremia e endocardite infecciosa). A tomografia computadorizada de abdome evidencia uma grande coleção hipodensa no baço, contendo focos de gás em seu interior (marcada com asterisco), achado característico de um abscesso esplênico.\n\nExplicação das Alternativas:\n\na) Incorreta. Embora cistos esplênicos preexistentes possam sofrer infecção secundária, os antecedentes de fibrilação atrial e diálise direcionam o diagnóstico para uma origem sistêmica/hematogênica. Além disso, a presença de gás e a gravidade do quadro sugerem uma lesão mais complexa que um simples cisto infectado, e a drenagem percutânea tem maiores taxas de falha em abscessos multiloculados ou com gás.\n\nb) Correta. A principal causa de abscessos esplênicos é a disseminação hematogênica a partir de um foco distante, sendo a endocardite infecciosa (frequentemente associada a embolia séptica) uma das etiologias mais comuns, especialmente em pacientes com fibrilação atrial e em diálise. A presença de gás na imagem sugere infecção por germes produtores de gás ou fístula, e a esplenectomia é considerada o tratamento definitivo e padrão-ouro, especialmente em abscessos grandes, complexos ou em pacientes sépticos.\n\nc) Incorreta. A imagem radiológica localiza a patologia claramente no baço, e não no cólon sigmoide (local comum da diverticulite). O quadro clínico de abscesso esplênico com repercussão sistêmica (febre há 10 dias e leucocitose) contraindica a observação clínica isolada.\n\nd) Incorreta. A isquemia esplênica (infarto esplênico) pode ocorrer devido à embolia pela fibrilação atrial; porém, a evolução com febre mantida por 10 dias, leucocitose e a presença de gás na tomografia confirmam que o infarto evoluiu para uma complicação infecciosa (abscesso). O suporte clínico isolado é insuficiente para tratar uma coleção purulenta volumosa.\n\ne) Incorreta. Apesar de o pâncreas estar anatomicamente próximo ao baço e de pancreatites graves poderem causar complicações esplênicas, a história clínica não sugere pancreatite (dor típica, elevação de enzimas) e a imagem mostra o parênquima pancreático sem sinais inflamatórios primários significativos que justifiquem a drenagem do órgão.\n\nAssociação com a Imagem:\nNa tomografia computadorizada (cortes axiais e coronais), a área identificada com o asterisco representa o abscesso esplênico. Nota-se que o baço está aumentado de volume e possui uma área de baixa atenuação (hipodensa) que ocupa grande parte do parênquima, com pequenas bolhas de ar pretas (gás) em seu interior, o que reforça o diagnóstico de um processo infeccioso agudo e grave.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/5e9b8be6907367bd9dec320482de87a9022e80f3b38965f3940360ef51c83bd7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_08a59f4e-bd05-4038-a49c-000ae6978f36_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:31.727Z"
+  }
+]

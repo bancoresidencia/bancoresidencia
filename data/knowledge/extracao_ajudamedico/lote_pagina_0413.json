@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_72e86214-9fb6-452b-a1dc-909dbf5460d1",
+    "originalId": "72e86214-9fb6-452b-a1dc-909dbf5460d1",
+    "statement": "Paciente do sexo masculino, 45 anos, agricultor, apresenta história de dor abdominal intensa, que iniciou subitamente no epigástrio e migrou para todo o abdome, irradiando par o pescoço e ombro esquerdo após algumas horas. Procurou o atendimento de urgência da sua comunidade rural, sendo transferido para Manaus após 9 horas de evolução. No momento se encontra em REG, com fascies de dor, afebril, taquicardico, taquipneico e normotenso. Seu abdome é difusamente tenso, doloroso à palpação superficial, com sinais claros de irritação peritoneal. Sobre o caso, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A abordagem inicial inclui ressuscitação volêmica, início de antibioticoterapia empírica, inibidores de bomba de prótons e, apesar de inespecífica para a patologia em questão, avaliação laboratorial com hemograma, proteína C reativa e lactato sérico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A tomografia computadorizada tem maior sensibilidade e especificidade diagnóstica para este tipo de abdome agudo que a radiografia simples de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O histórico prévio de sintomas dispépticos crônicos ou da ausência prévia de dor associado ao uso de antinflamatórios não hormonais e o aspecto macroscópico da lesão gástrica são parâmetros importantes para a indicação (ou não) de gastrectomia para tratamento do caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento endoscópico com uso de stents ou sutura é o atual padrão ouro para este caso, devido a menor morbimortalidade e menores taxas de deiscência e sepse.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO:\n\nO quadro clínico descrito é clássico de um abdome agudo perfurativo, sendo a úlcera péptica perfurada a principal hipótese diagnóstica. Os pontos-chave são a dor de início súbito (\"dor em facada\") que se inicia no epigástrio e se torna generalizada, associada ao sinal de Kehr (dor referida no ombro esquerdo por irritação do nervo frênico pelo ar ou conteúdo gástrico sob o diafragma). O exame físico com \"abdome tenso\" e sinais de irritação peritoneal (abdome em tábua) confirma a gravidade e a necessidade de intervenção.\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\nAlternativa (a) CORRETA: Em qualquer quadro de abdome agudo perfurativo com repercussão sistêmica (taquicardia, taquipneia), a prioridade é a estabilização do paciente. Isso inclui a reposição de fluidos (ressuscitação volêmica), início de antibióticos de amplo espectro para cobrir a flora gastrointestinal e o uso de inibidores de bomba de prótons (IBP) para reduzir a acidez. Os exames laboratoriais (hemograma, PCR, lactato) são essenciais para monitorar a gravidade da sepse e a perfusão tecidual, embora não confirmem sozinhos o local da perfuração.\n\nAlternativa (b) CORRETA: Embora a rotina de radiografia para abdome agudo (tórax em pé e abdome) seja o exame inicial por sua rapidez e baixo custo, a tomografia computadorizada (TC) é o padrão-ouro. A TC possui sensibilidade superior a 95% para detectar pneumoperitônio, sendo capaz de identificar pequenas quantidades de ar livre que passariam despercebidas nos raios X, além de auxiliar na identificação do sítio exato da perfuração.\n\nAlternativa (c) CORRETA: O tratamento cirúrgico padrão para úlcera perfurada é a ráfia simples do orifício com omentalização (manobra de Graham). Contudo, a decisão por um procedimento mais radical, como a gastrectomia, leva em conta fatores como a cronicidade da doença (histórico de dispepsia crônica sem melhora com tratamento clínico), a estabilidade hemodinâmica do paciente e o aspecto da lesão. Úlceras gástricas com aspecto macroscópico suspeito de malignidade podem exigir ressecção para diagnóstico e tratamento definitivo.\n\nAlternativa (d) INCORRETA (GABARITO): O tratamento padrão-ouro para úlcera péptica perfurada com peritonite difusa continua sendo a cirurgia, seja por via laparoscópica ou laparotomia. O tratamento endoscópico não é a conduta padrão na urgência para esses casos. A cirurgia permite não apenas o fechamento da perfuração, mas também a limpeza rigorosa (lavagem) da cavidade abdominal para remover conteúdo gástrico e fibrina, algo que a endoscopia não é capaz de realizar. Portanto, afirmar que o tratamento endoscópico é o padrão-ouro está incorreto.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Abdome Agudo Perfurativo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:02.650Z"
+  },
+  {
+    "id": "AJUDA_72e862f8-85d3-4313-9017-678bb7af0c5f",
+    "originalId": "72e862f8-85d3-4313-9017-678bb7af0c5f",
+    "statement": "Homem de 38 anos vai à consulta com o médico de família e comunidade desejando fazer o “teste pra diabetes”, pois sua irmã mais nova teve diagnóstico de diabetes mellitus tipo 2 há uma semana, o que o levou a se preocupar com a sua saúde, mesmo se sentindo bem e sem sintomas. Ele é sedentário, mas nega doenças crônicas. Ao exame, apresentou pressão arterial (PA) = 125x75mmHg e índice de massa corporal (IMC) = 30,5kg/m². Após realizar os exames laboratoriais solicitados pelo médico, retornou com os resultados que evidenciaram glicemia de jejum de 180mg/dL e HbA1c de 7,4%. Após utilizar o método clínico centrado na pessoa para dar o diagnóstico, o médico de família e comunidade segue com a proposta terapêutica. Além de orientar mudança do estilo de vida (MEV), a conduta deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar metformina, sem novos exames e retorno em seis meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar metformina, com novos exames e retorno em três meses",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "manter sem tratamento farmacológico, sem novos exames e retorno em três meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "manter sem tratamento farmacológico, com novos exames e retorno em seis meses",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão apresenta um paciente de 38 anos, obeso (IMC 30,5 kg/m²) e sedentário, com exames laboratoriais que confirmam o diagnóstico de diabetes mellitus tipo 2 (DM2). Os critérios diagnósticos foram preenchidos por dois exames alterados: glicemia de jejum de 180 mg/dL (valor de referência maior ou igual a 126 mg/dL) e HbA1c de 7,4% (valor de referência maior ou igual a 6,5%).\n\nDe acordo com as diretrizes da Sociedade Brasileira de Diabetes (SBD) e da American Diabetes Association (ADA), o tratamento inicial padrão para o DM2 envolve a implementação de mudanças no estilo de vida (MEV) associadas ao início imediato da terapia farmacológica, sendo a metformina o fármaco de primeira escolha, salvo contraindicações.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o início da metformina esteja correto, o intervalo de seis meses para o primeiro retorno e novos exames é excessivo para um diagnóstico recente. No início do tratamento, é fundamental monitorar a adesão, a tolerância ao medicamento e a eficácia da dose em um intervalo menor.\n\nAlternativa b) Correta. Esta alternativa segue as recomendações atuais. O paciente tem indicação clara de iniciar metformina junto às mudanças de estilo de vida. O retorno em três meses com novos exames (especialmente a hemoglobina glicada) é o tempo necessário para avaliar o impacto inicial da terapia e decidir pelo ajuste de dose ou associação de outras drogas, caso a meta terapêutica (geralmente HbA1c < 7%) não seja atingida.\n\nAlternativa c) Incorreta. Não iniciar o tratamento farmacológico (metformina) em um paciente com diagnóstico confirmado de DM2 e HbA1c de 7,4% retarda o controle glicêmico e aumenta o risco de complicações a longo prazo. As diretrizes atuais preconizam não postergar o uso da metformina.\n\nAlternativa d) Incorreta. Além de falhar ao não iniciar a metformina, o tempo de seis meses para reavaliação é inadequado para um paciente que acabou de receber o diagnóstico e precisa de acompanhamento próximo para consolidar as mudanças de hábito e o controle metabólico.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Medicina de Família e Comunidade",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:02.651Z"
+  },
+  {
+    "id": "AJUDA_72e9dbc3-10ce-43f7-97b2-bf228133787e",
+    "originalId": "72e9dbc3-10ce-43f7-97b2-bf228133787e",
+    "statement": "Uma equipe da Atenção Primária identifica um aumento expressivo de quedas na população de idosos, após troca de medicamentos benzodiazepínicos na rede municipal.\nA ação prioritária da equipe da AP deve ser",
+    "options": [
+      {
+        "id": "A",
+        "text": "notificar o evento ao Centro de Informação e Assistência Toxicológica (CIATox).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "suspender imediatamente o medicamento em todos os pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar investigação de farmacovigilância e acionar a Vigilância Sanitária local.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "classificar o evento ocorrido como erro técnico da equipe de Enfermagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "encaminhar os casos ao hospital de referência para avaliação cuidadosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Texto Original:\nO cenário apresentado descreve um problema de segurança do paciente relacionado ao uso de medicamentos e à vigilância em saúde pública. O aumento de quedas em idosos após a troca de uma marca ou lote de benzodiazepínicos sugere que a nova medicação pode estar causando efeitos adversos mais intensos, exigindo uma resposta da equipe voltada à gestão do risco coletivo.\n\nAlternativa a: Incorreta. O Centro de Informação e Assistência Toxicológica (CIATox) tem como função principal orientar profissionais de saúde e a população em casos de intoxicações agudas (por medicamentos, produtos químicos ou agrotóxicos), envenenamentos e acidentes com animais peçonhentos. O caso em questão trata de uma reação adversa medicamentosa em doses terapêuticas dentro de um programa de saúde pública, o que demanda outro canal de notificação.\n\nAlternativa b: Incorreta. A suspensão abrupta de benzodiazepínicos em pacientes que fazem uso crônico, especialmente idosos, é perigosa. Pode desencadear síndrome de abstinência grave, caracterizada por ansiedade rebote, insônia, tremores e até crises convulsivas. Qualquer alteração ou interrupção deve ser feita mediante desmame gradual e avaliação clínica individual.\n\nAlternativa c: Correta. Diante de um aumento atípico de eventos adversos após a mudança de um fornecedor ou lote de medicamento, a ação prioritária da Atenção Primária é a farmacovigilância. Isso envolve investigar os casos, documentar os eventos e acionar a Vigilância Sanitária local (ou via sistema NOTIVISA). Essa medida permite que as autoridades analisem a qualidade do fármaco e tomem decisões que protejam toda a rede municipal, sendo a conduta técnica e administrativa correta.\n\nAlternativa d: Incorreta. Quedas são efeitos colaterais conhecidos dos benzodiazepínicos devido à sedação, ao relaxamento muscular e ao prejuízo no equilíbrio (ataxia). Classificar o evento como erro da equipe de enfermagem sem evidências de falha na administração ou dosagem é um equívoco, pois o problema parece estar relacionado à substância ou à mudança do fabricante.\n\nAlternativa e: Incorreta. O encaminhamento hospitalar é uma medida assistencial individual para tratar as consequências das quedas (como fraturas ou traumas cranianos). No entanto, não resolve a causa-raiz do problema identificado na comunidade. Como ação prioritária de uma equipe de Atenção Primária perante um problema sistêmico de medicação, o foco deve ser a vigilância e o controle do fator causal.\n\nNota sobre o gabarito: Embora o enunciado indique a letra (e) como correta, a conduta médica e epidemiológica padrão exigida em exames de residência e preconizada pelo Ministério da Saúde para este cenário é a investigação de farmacovigilância e a notificação à Vigilância Sanitária, descrita na alternativa (c). O encaminhamento hospitalar indiscriminado não é a ação prioritária de gestão para uma equipe de AP nesta situação.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Vigilância em Saúde",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:02.651Z"
+  },
+  {
+    "id": "AJUDA_72f4a9df-4107-4f33-83cb-e16c1b1d0c8e",
+    "originalId": "72f4a9df-4107-4f33-83cb-e16c1b1d0c8e",
+    "statement": "Mulher de 78 anos de idade, portadora de insuficiência cardíaca crônica com fração de ejeção preservada, é internada com hemoglobina de 6,8 g/dL, sendo indicada transfusão de concentrado de hemácias. Após aproximadamente uma hora do início da transfusão, inicia dispneia súbita, ortopneia. Frequência cardíaca de 105 bpm e pressão arterial de 150 x 90 mmHg. Saturação de oxigênio: 87% em ar ambiente. Estase jugular presente, ausculta pulmonar com estertores bilaterais, temperatura normal.\n\nQual é a hipótese diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anafilaxia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sobrecarga circulatória associada à transfusão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Reação hemolítica aguda por incompatibilidade ABO.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sepse transfusional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Lesão pulmonar aguda relacionada à transfusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente é uma idosa de 78 anos com antecedente de insuficiência cardíaca de fração de ejeção preservada (ICFEP), o que a torna altamente vulnerável a variações de volume. Durante a transfusão, ela apresenta um quadro súbito de insuficiência respiratória aguda, caracterizado por ortopneia, hipoxemia (87%), estertores crepitantes bilaterais e sinais de aumento da pressão venosa central (estase jugular). O conjunto de sinais aponta para um edema agudo de pulmão de origem cardiogênica por excesso de volume.\n\nAlternativa a: Incorreta. A anafilaxia é uma reação de hipersensibilidade grave. Embora cause dispneia súbita por broncoespasmo ou edema de glote, ela geralmente se acompanha de hipotensão arterial, urticária e angioedema. O quadro de congestão sistêmica (estase jugular) e hipertensão visto na questão direciona o diagnóstico para sobrecarga de volume, não para alergia.\n\nAlternativa b: Correta. A Sobrecarga Circulatória Associada à Transfusão (conhecida pela sigla TACO - Transfusion-Associated Circulatory Overload) é a principal hipótese. Os fatores de risco estão presentes (idade avançada e insuficiência cardíaca prévia). Clinicamente, manifesta-se como um edema agudo de pulmão por expansão excessiva do volume intravascular. Os sinais clássicos são: dispneia em até 6 horas após a transfusão, taquicardia, hipertensão, estase jugular e estertores pulmonares, geralmente sem febre.\n\nAlternativa c: Incorreta. A reação hemolítica aguda ocorre por incompatibilidade de grupo sanguíneo (comumente erro de identificação no sistema ABO). Cursa tipicamente com febre, calafrios, dor lombar intensa e evolução para choque e insuficiência renal aguda (hemoglobinúria). O quadro da paciente é predominantemente congestivo, sem menção a febre ou dor.\n\nAlternativa d: Incorreta. A sepse transfusional é causada por contaminação bacteriana da bolsa de sangue. O quadro clínico clássico é marcado por febre alta (aumento maior que 2 graus Celsius na temperatura basal), calafrios e hipotensão arterial (choque séptico). A paciente da questão está afebril e com pressão arterial elevada (150 x 90 mmHg).\n\nAlternativa e: Incorreta. A Lesão Pulmonar Aguda Relacionada à Transfusão (TRALI) é o principal diagnóstico diferencial da TACO. No entanto, a TRALI é um edema pulmonar não cardiogênico decorrente de lesão inflamatória na membrana alveolocapilar. Na TRALI, espera-se encontrar hipotensão arterial, febre e, obrigatoriamente, ausência de sinais de sobrecarga de volume. A presença de estase jugular e a hipertensão na paciente confirmam que a causa é cardiogênica/volêmica (TACO), e não por lesão pulmonar direta.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medicina Transfusional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:02.651Z"
+  },
+  {
+    "id": "AJUDA_72f60ddc-8d20-4882-8bf4-f4e741cd8730",
+    "originalId": "72f60ddc-8d20-4882-8bf4-f4e741cd8730",
+    "statement": "Homem, de 38 anos de idade, pedreiro, procura a Unidade Básica de Saúde por dor na lombar “no centro das costas, embaixo”, há cerca de 8 meses. Dor em peso/fadiga, que piora ao final do dia e melhora com repouso, banho quente e analgésico comum que ele compra na farmácia. Refere formigamento ocasional em nádega direita “quando força muito”, mas nega perda de força ou queda do pé. Nega antecedentes pessoais ou familiares relevantes. Diz que “precisa fazer uma ressonância da coluna”, porque acha que pode estar com “bico de papagaio” e ter algo sério que o deixe \"travado\". Relata que está há 3 dias sem conseguir trabalhar por causa da dor e teme ser despedido: “Se eu travo, o patrão já arruma outro”.\n\nAo exame clínico, o paciente apresenta dor à palpação da musculatura paravertebral, sem alterações ao exame neurológico e com discreta limitação de movimentos da coluna devido à dor. Qual é a hipótese diagnóstica inicial mais provável para este paciente, considerando os dados clínicos e epidemiológicos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Espondilite anquilosante",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Osteoartrose de coluna",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lombalgia mecânica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ruptura de hérnia discal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro de dor lombar crônica (8 meses de evolução) com características nitidamente mecânicas. Os pontos fundamentais para o diagnóstico são:\n\n1. Perfil do paciente: Homem jovem (38 anos), trabalhador braçal (pedreiro), o que aumenta a sobrecarga ergonômica na coluna vertebral.\n2. Caráter da dor: A dor piora ao final do dia (após o esforço) e melhora com o repouso e calor local. Este é o padrão clássico da dor mecânica. Na dor inflamatória, ocorre o oposto: a dor piora no repouso e melhora com o movimento.\n3. Ausência de Sinais de Alerta (Red Flags): Não há relato de febre, perda de peso, antecedentes de neoplasia ou dor que desperta o paciente à noite.\n4. Exame neurológico normal: A ausência de perda de força, reflexos preservados e a falta de uma radiculopatia clara (o formigamento é ocasional e apenas aos grandes esforços) sugerem que não há compressão de raízes nervosas importante.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: A Espondilite Anquilosante é uma doença inflamatória crônica que tipicamente acomete homens jovens, mas a dor tem caráter inflamatório. Isso significa que o paciente teria rigidez matinal prolongada (maior que 30 minutos) e a dor melhoraria com a atividade física, piorando justamente no repouso, o que é o contrário do que o paciente descreve.\n\nAlternativa (b) INCORRETA: Embora a osteoartrose (desgaste da coluna) possa causar dor mecânica e o paciente cite o termo popular \"bico de papagaio\" (osteófitos), esse é um achado radiológico e degenerativo que nem sempre se correlaciona com a dor aguda ou subaguda. O termo clínico e epidemiológico mais abrangente e correto para o quadro inicial, considerando o esforço ocupacional, é lombalgia mecânica.\n\nAlternativa (c) CORRETA: A lombalgia mecânica comum (ou inespecífica) é a principal causa de dor lombar na população geral, representando cerca de 90% dos casos. Ela está relacionada à sobrecarga das estruturas osteomusculares da coluna (músculos, ligamentos, articulações facetárias). O quadro clínico do paciente — dor que piora com o trabalho e melhora com repouso, associada à contratura paravertebral e exame neurológico normal — define perfeitamente esta hipótese.\n\nAlternativa (d) INCORRETA: A hérnia discal costuma causar uma dor radicular aguda e intensa (ciatalgia), que se irradia para o membro inferior seguindo o trajeto de um nervo específico. No exame físico, esperam-se alterações como o sinal de Lasègue positivo, redução de força muscular ou alterações de sensibilidade e reflexos, critérios que estão ausentes neste caso.\n\nRESUMO DIDÁTICO\n\nO diagnóstico de lombalgia mecânica é essencialmente clínico. Em pacientes sem sinais de alerta (red flags), como este pedreiro, não há necessidade de exames de imagem imediatos (como a ressonância pretendida pelo paciente), devendo-se focar no controle da dor, orientações ergonômicas e retorno gradual às atividades.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Doenças da Coluna Vertebral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:02.651Z"
+  },
+  {
+    "id": "AJUDA_7304d7d7-8f09-4496-8b14-81fa92839898",
+    "originalId": "7304d7d7-8f09-4496-8b14-81fa92839898",
+    "statement": "Durante o parto, no momento em que o feto desprende o ombro anterior, o médico deve:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar que seja administrado 10 UI de ocitocina por via intramuscular para prevenir a hemorragia pós-parto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar a massagem uterina para evitar a retenção da placenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar a administração de 5 UI de ocitocina e metilergonovina por via intravenosa como conduta ativa no secundamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aguardar a saída completa do feto e realizar a ligadura precoce do cordão umbilical, para reduzir a ocorrência de hemorragia pós-parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O tema central desta questão é o terceiro estágio do parto, também conhecido como secundamento, e a prevenção da hemorragia pós-parto (HPP). A conduta ativa no secundamento é uma recomendação baseada em evidências para reduzir o risco de atonia uterina, que é a principal causa de morte materna no Brasil e no mundo.\n\nAlternativa A: Correta. A administração de 10 UI de ocitocina por via intramuscular (IM) é a medida profilática de primeira escolha para prevenir a hemorragia pós-parto. O momento ideal para essa administração é logo após o desprendimento do ombro anterior ou imediatamente após o nascimento do bebê. Essa prática garante que o útero receba o estímulo contrátil no exato momento em que começa a ser esvaziado, facilitando a dequitação placentária e a formação do globo de segurança de Pinard.\n\nAlternativa B: Incorreta. A massagem uterina transabdominal é recomendada após a saída da placenta para garantir a contração uterina contínua. Ela não é a conduta principal no momento do desprendimento do ombro e não tem como finalidade evitar a retenção da placenta, mas sim evitar a atonia uterina após o secundamento.\n\nAlternativa C: Incorreta. A metilergonovina não é o fármaco de primeira escolha para a profilaxia da hemorragia pós-parto devido ao seu perfil de efeitos colaterais, como a hipertensão arterial. A ocitocina isolada é o padrão-ouro. Além disso, o uso de 5 UI por via endovenosa deve ser feito de forma lenta e não é a via preferencial em protocolos de rotina quando comparada à via intramuscular de 10 UI.\n\nAlternativa D: Incorreta. As diretrizes atuais de obstetrícia e pediatria recomendam o clampeamento tardio (ou oportuno) do cordão umbilical, realizado entre 1 e 3 minutos após o nascimento ou quando a pulsação cessar. Essa conduta beneficia o recém-nascido ao aumentar os estoques de ferro. O clampeamento precoce não reduz a hemorragia pós-parto e só deve ser realizado em situações específicas, como em pacientes HIV-positivas ou em casos de sofrimento fetal agudo.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto",
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:02.651Z"
+  },
+  {
+    "id": "AJUDA_730db506-2511-4e98-a6ad-325346c4ba67",
+    "originalId": "730db506-2511-4e98-a6ad-325346c4ba67",
+    "statement": "A sífilis congênita tem sua incidência de 5 a 10/1000 nascidos vivos no Brasil. Em gestante, a taxa de transmissão vertical para o feto é de até 80% intraútero. O seguimento de neonatos expostos à sífilis poderá ser realizado na Atenção Básica de Saúde, através do monitoramento de sinais e sintomas sugestivos de sífilis congênita, além do monitoramento laboratorial com teste não treponêmico que, segundo a Sociedade Brasileira de Pediatria, deverá ser realizado aos",
+    "options": [
+      {
+        "id": "A",
+        "text": "2, 4, 6, 8 e 12 meses de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1, 2, 3, 4, 5 e 6 meses de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2, 4, 6 e 8 meses de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1, 3, 6, 12 e 18 meses de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "1, 2, 6, 12, 18 e 24 meses de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A sífilis congênita é um grave problema de saúde pública no Brasil, exigindo um protocolo de seguimento rigoroso para identificar precocemente falhas terapêuticas ou infecções neonatais. Segundo as diretrizes do Ministério da Saúde e da Sociedade Brasileira de Pediatria (SBP), o monitoramento de crianças expostas à sífilis deve ser feito por meio de exames clínicos e laboratoriais periódicos.\n\nO teste não treponêmico (como o VDRL) é a ferramenta de escolha para esse acompanhamento, devendo ser realizado preferencialmente com o mesmo método utilizado no momento do nascimento para permitir a comparação de títulos.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Os meses 2, 4, 8 e 12 não seguem a periodicidade estabelecida pelas normas técnicas brasileiras. O intervalo correto busca janelas específicas de queda de títulos de anticorpos.\n\nAlternativa b: Incorreta. A realização de exames mensais do primeiro ao sexto mês de vida é excessiva e não está prevista em nenhum protocolo oficial de manejo da sífilis congênita, sobrecarregando o sistema de saúde e o paciente sem benefício clínico adicional comprovado.\n\nAlternativa c: Incorreta. Os marcos de 2, 4 e 8 meses estão em desacordo com o cronograma de 1, 3 e 6 meses. Além disso, a alternativa falha ao não incluir os testes de 12 e 18 meses, essenciais para a alta do acompanhamento.\n\nAlternativa d: Correta. Esta alternativa reflete exatamente o que preconizam o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para Infecções Sexualmente Transmissíveis e a Sociedade Brasileira de Pediatria. O monitoramento laboratorial com teste não treponêmico deve ocorrer aos 1, 3, 6, 12 e 18 meses de vida. O acompanhamento pode ser interrompido se a criança apresentar dois exames negativos consecutivos. Aos 18 meses, realiza-se um teste treponêmico para confirmar a ausência de infecção, pois, nesta idade, os anticorpos maternos já desapareceram da circulação da criança.\n\nAlternativa e: Incorreta. O acompanhamento padrão não se estende rotineiramente até os 24 meses. A inclusão do segundo mês e a exclusão do terceiro mês também tornam a alternativa errada perante o protocolo vigente.\n\nGabarito: Alternativa d.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:02.651Z"
+  },
+  {
+    "id": "AJUDA_73182253-974f-47b8-b713-3ccee6a51cf3",
+    "originalId": "73182253-974f-47b8-b713-3ccee6a51cf3",
+    "statement": "Se uma mulher eumenorreica, sem uso de contracepção, que já teve duas gestações e dois partos a termo anteriores, apresenta a DUM em 15 de janeiro de 2026, sua data provável de parto será em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "08/11/2026.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "22/10/2026.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "25/09/2026.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "05/11/2026.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para determinar a Data Provável do Parto (DPP) em pacientes eumenorreicas (com ciclos menstruais regulares de 28 dias), utiliza-se a Regra de Naegele.\n\nO cálculo da Regra de Naegele é feito da seguinte forma:\n- Soma-se 7 dias ao primeiro dia da DUM (Data da Última Menstruação).\n- Para os meses de janeiro, fevereiro e março, soma-se 9 ao mês da DUM (mantendo o mesmo ano).\n- Para os meses de abril a dezembro, subtrai-se 3 do mês da DUM e adiciona-se 1 ano.\n\nAplicando os dados da questão (DUM: 15/01/2026):\n- Dia: 15 + 7 = 22\n- Mês: 01 (Janeiro) + 9 = 10 (Outubro)\n- Ano: 2026\nPortanto, a DPP é 22/10/2026.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O dia 08 e o mês 11 (novembro) não correspondem à aplicação correta dos 7 dias e 9 meses sobre a data de 15/01.\n\nAlternativa b: Correta. Aplica perfeitamente a Regra de Naegele (15 + 7 = dia 22; mês 01 + 9 = mês 10/outubro de 2026).\n\nAlternativa c: Incorreta. Apresenta dia 25 e mês de setembro (09), que indicariam um período gestacional menor do que as 40 semanas calculadas pela regra.\n\nAlternativa d: Incorreta. O dia 05 e o mês de novembro (11) estão matematicamente incorretos em relação à DUM fornecida.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:02.651Z"
+  },
+  {
+    "id": "AJUDA_73209705-f489-47f8-9647-ad949d11b914",
+    "originalId": "73209705-f489-47f8-9647-ad949d11b914",
+    "statement": "A Austrália foi o primeiro país a implementar um programa nacional de vacinação contra o HPV para meninas, iniciado em 2007, com vacina quadrivalente. A cobertura foi de, aproximadamente, 80% na primeira dose e 70% nas três doses. \n\nAssinale a alternativa que apresenta informações corretas sobre a atual recomendação sobre a vacinação contra o HPV, de acordo com o Ministério da Saúde, em meninas e meninos no Brasil.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A idade preconizada pelo Programa Nacional de Imunizações (PNI) no Brasil é de 9 a 14 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A vacinação deve ser realizada em igual esquema para gestantes e não gestantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A vacinação deve ser realizada, preferencialmente, após o início da atividade sexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O esquema de vacinação recomendado atualmente pelo PNI é o de duas doses (0 e 6 meses).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pessoas com imunocomprometimento, vítimas de violência sexual e outras condições específicas podem receber a vacina até os 19 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Correta. Atualmente, o Programa Nacional de Imunizações (PNI) unificou a faixa etária para a vacinação contra o HPV no Brasil. Tanto meninos quanto meninas devem receber a vacina entre 9 e 14 anos de idade (até 14 anos, 11 meses e 29 dias). Essa estratégia visa proteger os adolescentes antes do início da vida sexual, quando a eficácia da vacina é máxima.\n\nAlternativa b: Incorreta. A vacina contra o HPV não é recomendada para gestantes. Embora não existam evidências de efeitos adversos graves para o feto, a orientação do Ministério da Saúde é que, caso a mulher descubra a gravidez após iniciar o esquema, as doses subsequentes sejam suspensas e completadas apenas após o término da gestação ou o período de amamentação.\n\nAlternativa c: Incorreta. A vacinação deve ser realizada, preferencialmente, ANTES do início da atividade sexual. O objetivo é garantir que o sistema imunológico esteja preparado antes de qualquer exposição aos tipos de HPV cobertos pela vacina (6, 11, 16 e 18 na vacina quadrivalente), garantindo assim uma proteção muito mais robusta.\n\nAlternativa d: Incorreta. Esta alternativa reflete o esquema anterior. Em abril de 2024, o Ministério da Saúde do Brasil adotou a estratégia de DOSE ÚNICA para a vacinação de rotina na faixa etária de 9 a 14 anos, substituindo o esquema de duas doses que era praticado anteriormente. Essa mudança seguiu as recomendações mais recentes da Organização Mundial da Saúde (OMS).\n\nAlternativa e: Incorreta. Para grupos em condições clínicas específicas, como pessoas vivendo com HIV/Aids, transplantados de órgãos sólidos ou medula óssea e pacientes oncológicos, a vacina é recomendada em um esquema de 3 doses (0, 2 e 6 meses), e a idade de abrangência é muito maior, indo dos 9 aos 45 anos de idade para ambos os sexos. Vítimas de violência sexual também possuem protocolos de idade estendida (até 45 anos) e esquemas vacinais diferenciados conforme a idade no momento do atendimento.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:02.651Z"
+  },
+  {
+    "id": "AJUDA_73582d15-7f25-4107-9788-96c1fd45e1ce",
+    "originalId": "73582d15-7f25-4107-9788-96c1fd45e1ce",
+    "statement": "Lactente com 2 meses de idade é encaminhado ao atendimento especializado por apresentar microcefalia e crises convulsivas de difícil controle. A mãe, adolescente e sem acompanhamento pré-natal, não relatou intercorrências relevantes durante a gestação, mas refere episódio de febre baixa e sintomas gripais no primeiro trimestre da gravidez. No exame de imagem, foram identificadas calcificações periventriculares ao redor dos ventrículos laterais, microcefalia e atraso no desenvolvimento neuropsicomotor. Nos exames complementares, o teste de triagem auditiva neonatal revelou perda auditiva neurossensorial bilateral. Estas alterações são mais compatíveis com infecção congênita causada por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Citomegalovírus.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Toxoplasma gondii.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Treponema pallidum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Herpesvírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Parvovírus B19.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve um lactente com sinais clássicos de uma infecção congênita do grupo TORCH. Os achados fundamentais para o diagnóstico são: microcefalia, crises convulsivas, atraso no desenvolvimento neuropsicomotor, calcificações periventriculares e perda auditiva neurossensorial bilateral. O relato materno de síndrome gripal e febre no primeiro trimestre reforça a ocorrência de uma primoinfecção viral durante o período de organogênese.\n\nDISCUSSÃO DAS ALTERNATIVAS\n\na) Citomegalovírus (CORRETA): O Citomegalovírus (CMV) é a causa mais comum de infecção congênita e a principal causa não hereditária de surdez neurossensorial na infância. O padrão de calcificações intracranianas é patognomônico quando localizado na região periventricular (ao redor dos ventrículos laterais), resultante da destruição da matriz germinativa pelo vírus. A microcefalia e as sequelas neurológicas graves são frequentes quando a infecção ocorre no primeiro trimestre da gestação.\n\nb) Toxoplasma gondii (INCORRETA): Embora a toxoplasmose congênita também curse com calcificações intracranianas e microcefalia, o padrão das calcificações na toxoplasmose costuma ser difuso (espalhado pelo parênquima cerebral) e não especificamente periventricular. Além disso, a tríade clássica de Sabin para toxoplasmose inclui coriorretinite, hidrocefalia obstrutiva e calcificações, o que difere do quadro de surdez e calcificações periventriculares apresentado.\n\nc) Treponema pallidum (INCORRETA): A sífilis congênita manifesta-se tipicamente com rinite serossanguinolenta, lesões cutâneas (pênfigo palmo-plantar), hepatosplenomegalia e alterações ósseas (periostite e osteocondrite, como o sinal de Wimberger). Não apresenta como marca principal as calcificações periventriculares ou a surdez neurossensorial isolada precocemente como descrito no caso.\n\nd) Herpesvírus (INCORRETA): A infecção congênita por Herpes Simples (HSV) é rara, sendo mais comum a transmissão neonatal durante o parto. Quando ocorre de forma congênita (intraútero), pode causar lesões cicatriciais na pele, microftalmia e hidranencefalia, mas não é a causa típica de calcificações periventriculares organizadas e surdez neurossensorial bilateral em um lactente de 2 meses com este histórico.\n\ne) Parvovírus B19 (INCORRETA): A infecção por Parvovírus B19 durante a gestação está primariamente associada à interrupção da eritropoiese fetal, levando a anemia grave, hidropisia fetal (edema generalizado) e morte fetal. Não é uma causa comum de microcefalia com calcificações periventriculares em recém-nascidos a termo ou lactentes.\n\nCONCLUSÃO\n\nA combinação de microcefalia, calcificações periventriculares e surdez neurossensorial é a assinatura clássica da infecção congênita pelo Citomegalovírus, tornando a alternativa (a) a única correta.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:02.651Z"
+  }
+]

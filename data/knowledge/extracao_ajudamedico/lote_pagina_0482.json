@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_87205abe-fb99-4a26-b28c-9601a3f59a81",
+    "originalId": "87205abe-fb99-4a26-b28c-9601a3f59a81",
+    "statement": "Escolar de 5 anos, pesando 20 kg, apresenta queimaduras de 2º e 3º graus que atingem os membros inferiores (ambos integralmente), o tórax e o abdome anteriores.\nAbaixo o diagrama de Lund-Browder para cálculo da superfície corporal queimada:\n\nDiagrama de Lund-Browder na imagem abaixo\n\nTabela de referência para áreas variáveis (A, B e C)\nÁrea | 5 anos\nA | 6,5%\nB | 4,0%\nC | 2,75%\n\nNo caso apresentado, qual a forma correta de administração de Ringer lactato?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2.820 mL, administrado em 16 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "3.760 mL, administrado em 8 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1.500 mL, administrado em 2 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1.000 mL, administrado em 15 a 20 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Gabarito: letra A\n\nO raciocínio tem dois passos: calcular a superfície corporal queimada (SCQ) com o diagrama de Lund-Browder e aplicar a fórmula de reposição volêmica.\n\n1. Cálculo da SCQ pelo diagrama\n\nO diagrama mostra valores fixos (pescoço 1%, tronco anterior 13%, tronco posterior 13%, nádegas 2,5% cada, genitália 1%, braço 2%, antebraço 1,5%, mão 1,5%, pé 1,75%). Também mostra áreas que variam com a idade: A é a cabeça, B a coxa e C a perna. A tabela dá os valores de B e C para 5 anos.\n\nMembros inferiores integralmente, cada um com face anterior e posterior:\n- Coxa (B): 4% anterior + 4% posterior = 8%\n- Perna (C): 2,75% anterior + 2,75% posterior = 5,5%\n- Pé: 1,75% anterior + 1,75% posterior = 3,5%\n- Total por membro: 17%\n- Dois membros: 34%\n\nTórax e abdome anteriores correspondem ao tronco anterior: 13%.\n\nSCQ total: 34% + 13% = 47%.\n\nNádegas e genitália não entram, pois não fazem parte dos membros inferiores no diagrama. Contam-se apenas queimaduras de 2º e 3º graus, que é o caso aqui.\n\n2. Reposição volêmica\n\nO ATLS (10ª edição) recomenda Ringer lactato na dose de 3 mL x peso (kg) x %SCQ para crianças (e adultos em queimadura térmica). A fórmula de Parkland clássica usa 4 mL.\n\n- Pela fórmula de 3 mL: 3 x 20 x 47 = 2.820 mL em 24 horas.\n- Metade do volume (1.410 mL) é dada nas primeiras 8 horas, contadas a partir do momento da queimadura.\n- A outra metade (1.410 mL) é dada nas 16 horas seguintes.\n- Em crianças pequenas (geralmente menos de 30 kg), soma-se o soro de manutenção com glicose, pelo risco de hipoglicemia.\n- O ajuste é guiado pela diurese, com meta de cerca de 1 mL/kg/h em crianças com menos de 30 kg.\n\nAnálise das alternativas\n\na) 2.820 mL, administrado em 16 horas – CORRETA, segundo o gabarito. O volume coincide exatamente com a fórmula pediátrica do ATLS (3 mL/kg/%SCQ). A redação é imprecisa, porque esse volume corresponde às 24 horas: metade nas primeiras 8 horas e metade nas 16 horas seguintes. Ainda assim, é a única alternativa com o volume total correto.\n\nb) 3.760 mL, administrado em 8 horas – INCORRETA. O volume corresponde à fórmula de Parkland clássica (4 x 20 x 47), que não é a usada como referência. Além disso, infundir o total em 8 horas está errado, pois apenas metade deve ser dada nesse período. Haveria risco de hiper-hidratação, com edema, síndrome compartimental e edema pulmonar.\n\nc) 1.500 mL, administrado em 2 horas – INCORRETA. Não corresponde a nenhuma fórmula de reposição em queimados. É um volume arbitrário e excessivo para infusão tão rápida.\n\nd) 1.000 mL, administrado em 15 a 20 minutos – INCORRETA. Lembra uma expansão em bolus, típica do choque hipovolêmico de outras causas. Mesmo assim, o volume seria excessivo para 20 kg, já que o bolus pediátrico é de 20 mL/kg, ou seja, 400 mL. A queimadura exige reposição contínua e titulada, não bolus.\n\nPontos-chave\n- No Lund-Browder em crianças, a cabeça é proporcionalmente maior e os membros inferiores menores que no adulto.\n- Pela fórmula do ATLS, crianças recebem 3 mL x kg x %SCQ de Ringer lactato.\n- A distribuição é metade em 8 horas e metade em 16 horas, contadas desde a hora da queimadura.\n- Em crianças, associa-se manutenção com glicose.\n- A diurese é o melhor parâmetro de adequação da reposição.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/56dcd31a580a54d940191dc1fb1ecc6d4a2d259b326e83dc690183f5aac8ffb9.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_87205abe-fb99-4a26-b28c-9601a3f59a81_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:21.528Z"
+  },
+  {
+    "id": "AJUDA_87208182-9087-4ac0-9470-dfca12e410df",
+    "originalId": "87208182-9087-4ac0-9470-dfca12e410df",
+    "statement": "A Medicina Baseada em Evidências (MBE) é uma abordagem médica que integra a melhor evidência científica disponível com a experiência clínica do profissional e as preferências e valores do paciente para tomar decisões de cuidado. Quanto à hierarquia de evidências, marque a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Opinião de especialistas está no topo da pirâmide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ensaios clínicos randomizados fornecem alto nível de evidência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Estudos caso-controle possuem maior evidência que metanálises.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estudos ecológicos são equivalentes a revisões sistemáticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ensaios clínicos não controlados equivalem a coortes prospectivas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Medicina Baseada em Evidências (MBE) utiliza uma hierarquia, frequentemente representada por uma pirâmide, para classificar a força das evidências científicas de acordo com o potencial de viés de cada desenho de estudo. Abaixo, analisamos cada alternativa:\n\nAlternativa (a) Incorreta: A opinião de especialistas, embora útil na ausência de dados mais robustos, está localizada na base da pirâmide de evidência. Por ser baseada em experiências individuais e observações não controladas, possui alto risco de subjetividade e viés, sendo considerada o nível mais baixo de evidência.\n\nAlternativa (b) Correta: Os Ensaios Clínicos Randomizados (ECRs) são estudos experimentais padrão-ouro para testar intervenções terapêuticas. A randomização (sorteio) permite que os grupos de intervenção e controle sejam comparáveis, minimizando variáveis de confusão. Por isso, eles fornecem um alto nível de evidência, ficando abaixo apenas das revisões sistemáticas com meta-análise de ECRs.\n\nAlternativa (c) Incorreta: A ordem está invertida. As meta-análises ocupam o topo da pirâmide, pois sintetizam os resultados de múltiplos estudos primários (preferencialmente ensaios clínicos). Os estudos de caso-controle são observacionais e retrospectivos, ocupando uma posição intermediária-baixa na hierarquia.\n\nAlternativa (d) Incorreta: Estudos ecológicos analisam dados de populações ou agregados, e não de indivíduos, o que impede a correlação direta de causa e efeito no nível individual (falácia ecológica). Já as revisões sistemáticas são o topo da evidência, pois aplicam uma metodologia rigorosa para reunir e analisar todos os estudos relevantes sobre um tema.\n\nAlternativa (e) Incorreta: Ensaios clínicos não controlados carecem de um grupo de comparação, o que torna difícil afirmar se o resultado foi causado pela intervenção ou pela história natural da doença. As coortes prospectivas, embora observacionais, acompanham grupos expostos e não expostos ao longo do tempo, possuindo maior rigor metodológico e maior força de evidência que ensaios sem controle.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:21.528Z"
+  },
+  {
+    "id": "AJUDA_8725e44b-1cc8-4d9a-b932-6fe27410c7b9",
+    "originalId": "8725e44b-1cc8-4d9a-b932-6fe27410c7b9",
+    "statement": "Paciente de 48 anos, G1C1, com IMC de 29 kg/m2, vivendo com HIV, retornou à consulta na UBS para apresentar o laudo de exame citopatológico (CP) de colo uterino: Satisfatório para avaliação, presença de células escamosas, metaplásicas e endocervicais. Células glandulares atípicas (AGC). Flora mista. Na primeira consulta, o exame ginecológico foi normal, mas a paciente se queixara de fluxo menstrual aumentado. Assinale a alternativa que contempla a hipótese diagnóstica e a conduta mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alterações citológicas devidas ao HIV - Solicitar ultrassonografia transvaginal e encaminhar a paciente para colposcopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quadros inflamatórios e infecciosos no colo uterino - Repetir o CP em 6 meses e encaminhar a paciente para colposcopia se o resultado estiver alterado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neoplasia de endométrio - Repetir o CP em 6 meses e solicitar ultrassonografia transvaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adenocarcinoma in situ - Encaminhar a paciente para colposcopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Explicação:\n\nO ponto central da questão é o manejo de um resultado citopatológico demonstrando Células Glandulares Atípicas (AGC) em uma paciente de 48 anos, vivendo com HIV e apresentando sangramento uterino anormal (fluxo menstrual aumentado).\n\nPor que a alternativa (d) está correta:\nO achado de AGC (Células Glandulares Atípicas) é uma categoria de alto risco na citologia cervical. Ele indica que as células glandulares (do canal cervical ou do endométrio) apresentam alterações que podem representar desde processos inflamatórios reativos até lesões precursoras e câncer invasor. O Adenocarcinoma *in situ* (AIS) é uma das principais hipóteses diagnósticas que devem ser investigadas diante desse resultado. De acordo com as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero (INCA), a conduta mandatória para qualquer resultado de AGC é o encaminhamento imediato para colposcopia, visando à avaliação detalhada do colo e do canal endocervical.\n\nPor que a alternativa (a) está incorreta:\nAs alterações de células glandulares (AGC) não são consideradas alterações citológicas benignas ou esperadas apenas por conta da infecção pelo HIV. Embora a imunossupressão aumente o risco de lesões precursoras de câncer, o achado de AGC sinaliza um risco potencial de neoplasia que exige investigação formal. Além disso, embora a ultrassonografia transvaginal seja útil na investigação do sangramento aumentado nesta faixa etária, a justificativa diagnóstica da alternativa invalida o item.\n\nPor que a alternativa (b) está incorreta:\nNunca se deve repetir o citopatológico (CP) em 6 meses diante de um resultado de AGC. Ao contrário das atipias escamosas de baixo grau (como ASC-US ou LSIL), que permitem repetição em prazos determinados em certos grupos etários, as atipias glandulares são consideradas lesões de alto risco. A conduta correta deve ser a investigação diagnóstica imediata por meio da colposcopia.\n\nPor que a alternativa (c) está incorreta:\nEmbora a neoplasia de endométrio seja, de fato, um diagnóstico diferencial importante para esta paciente — considerando a idade (48 anos), o IMC (29 kg/m²) e o sangramento aumentado —, a conduta proposta de repetir o citopatológico em 6 meses é tecnicamente inadequada. Perante o achado de AGC, a paciente deve ser submetida à colposcopia e, adicionalmente (devido à idade e ao sangramento), à avaliação endometrial (seja por ultrassonografia transvaginal, biópsia de endométrio ou histeroscopia). Retardar a investigação em 6 meses compromete a segurança da paciente.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:21.528Z"
+  },
+  {
+    "id": "AJUDA_87289e9a-63e4-4e83-84ce-50f31dc46e00",
+    "originalId": "87289e9a-63e4-4e83-84ce-50f31dc46e00",
+    "statement": "Durante a investigação de um surto de gastroenterite em um navio de cruzeiro, a equipe de vigilância epidemiológica construiu a curva epidêmica e identificou que todos os casos surgiram em um intervalo de tempo muito curto (dentro de 24 horas), sugerindo uma exposição simultânea a uma fonte comum. Para confirmar a hipótese e identificar o alimento contaminado, a medida de associação epidemiológica adequada a ser calculada entre os passageiros (expostos e não expostos a cada alimento servido) é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O risco relativo ajustado, utilizando regressão logística para eliminar fatores de confusão crônicos, dado que o surto agudo sofre influência de doenças prévias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A taxa de letalidade, que avalia a gravidade do surto dividindo o número de óbitos pelo número total de doentes, fundamental para definir a virulência do agente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A prevalência de exposição, que mede a proporção de passageiros que consumiram cada alimento, independentemente de terem adoecido ou não.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A taxa de ataque, que compara a incidência da doença entre os que comeram determinado alimento e a incidência entre os que não comeram, permitindo identificar o veículo provável de infecção.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. Embora o risco relativo seja uma medida de associação válida, o uso de regressão logística para ajustar fatores de confusão crônicos é desnecessário e inadequado no contexto de um surto agudo de gastroenterite por fonte comum. Em investigações de campo rápidas, busca-se a associação direta entre o consumo e o adoecimento. Fatores crônicos raramente são os principais confundidores em surtos alimentares explosivos de curta duração.\n\nAlternativa b) Incorreta. A taxa de letalidade mede a proporção de óbitos entre as pessoas que contraíram a doença, servindo para avaliar a gravidade do agravo e a virulência do agente. No entanto, ela não possui utilidade para identificar o alimento específico que causou o surto ou estabelecer o veículo de transmissão.\n\nAlternativa c) Incorreta. A prevalência de exposição indica apenas a proporção de passageiros que consumiram cada alimento, sem levar em conta quem adoeceu ou não. Para identificar a fonte de infecção, é obrigatório comparar a ocorrência da doença entre expostos e não expostos, o que não é feito pela simples prevalência de consumo.\n\nAlternativa d) Correta. A taxa de ataque é uma medida de incidência utilizada especificamente em surtos agudos envolvendo populações bem definidas (como os passageiros de um navio). Ao calcular a taxa de ataque entre os que consumiram determinado alimento (expostos) e compará-la com a taxa de ataque dos que não consumiram (não expostos), obtém-se o risco relativo ou a razão de taxas de ataque. O alimento que apresentar a maior diferença entre essas taxas é o provável veículo da contaminação. Essa é a ferramenta padrão em epidemiologia de campo para identificar a fonte em surtos de origem alimentar.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:21.528Z"
+  },
+  {
+    "id": "AJUDA_872d5029-5ccc-4756-a721-2615a44eba51",
+    "originalId": "872d5029-5ccc-4756-a721-2615a44eba51",
+    "statement": "A sífilis na gestação representa um grave problema de saúde pública devido ao risco de transmissão vertical e sífilis congênita. O tratamento adequado da gestante é a única forma eficaz de prevenção. Uma gestante de 24 semanas, com diagnóstico de sífilis latente tardia e histórico comprovado de anafilaxia grave à penicilina (reação IgE mediada), necessita de tratamento. Assinale a alternativa que apresenta a conduta preconizada pelo Ministério da Saúde do Brasil para este caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A paciente deve ser submetida à dessensibilização à penicilina em ambiente hospitalar e, posteriormente, tratada com Penicilina G Benzatina, pois este é o único medicamento capaz de atravessar a barreira placentária e tratar adequadamente o feto, prevenindo a sífilis congênita.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A Ceftriaxona 1 g intravenosa ou intramuscular diariamente por 10 a 14 dias é a alternativa de escolha, pois as cefalosporinas não apresentam reação cruzada com penicilinas e tratam eficazmente a infecção fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento deve ser realizado com Doxiciclina 100 mg via oral a cada 12 horas por 30 dias, pois as tetraciclinas são seguras no segundo trimestre e eficazes contra o Treponema pallidum, evitando o risco de choque anafilático pela penicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso de Eritromicina ou Azitromicina é recomendado como alternativa segura à penicilina em gestantes alérgicas, garantindo o tratamento materno e fetal com eficácia comparável à penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A conduta frente à gestante com sífilis e história de alergia grave à penicilina é um tema recorrente e fundamental em provas de residência. O ponto central para acertar essa questão é entender que, para fins de tratamento da sífilis congênita, a penicilina é o único medicamento eficaz.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): De acordo com os protocolos do Ministério da Saúde e da Organização Mundial da Saúde, a penicilina benzatina é a única opção terapêutica capaz de atravessar a barreira placentária e tratar o feto. Qualquer outro tratamento realizado durante a gestação é considerado inadequado para o bebê. Em casos de alergia comprovada (especialmente reações IgE-mediadas, como a anafilaxia), a recomendação é realizar a dessensibilização em ambiente hospitalar (com suporte de terapia intensiva) para que a paciente possa, em seguida, receber o tratamento padrão com penicilina.\n\nAlternativa B (Incorreta): Embora a ceftriaxona seja uma opção de tratamento para a sífilis em pacientes não gestantes, ela não é considerada um tratamento adequado para a prevenção da sífilis congênita. Além disso, em pacientes com histórico de anafilaxia grave à penicilina, existe um risco de reação cruzada com cefalosporinas que deve ser levado em conta, embora a dessensibilização para penicilina continue sendo a prioridade absoluta na gestação.\n\nAlternativa C (Incorreta): A doxiciclina e outras tetraciclinas são terminantemente contraindicadas durante a gestação. Esses medicamentos podem causar toxicidade fetal, afetando o desenvolvimento ósseo e provocando o escurecimento permanente do esmalte dentário do bebê. Além disso, não são eficazes para o tratamento do feto em casos de sífilis.\n\nAlternativa D (Incorreta): A eritromicina e a azitromicina (macrolídeos) podem até tratar a infecção materna, mas apresentam altas taxas de falha no tratamento fetal porque não atravessam a placenta em concentrações terapêuticas. O uso de macrolídeos na gestante com sífilis resulta, obrigatoriamente, em um recém-nascido que deverá ser investigado e tratado para sífilis congênita ao nascer, pois o tratamento materno é considerado ineficaz para o feto.\n\nResumo do conceito: Para o Ministério da Saúde, o tratamento da gestante só é considerado adequado se: 1) for feito com penicilina benzatina; 2) for iniciado pelo menos 30 dias antes do parto; 3) o esquema terapêutico for adequado ao estágio da sífilis; 4) houver registro de queda dos títulos de VDRL. Portanto, a dessensibilização para o uso da penicilina é o único caminho seguro e eficaz para evitar a sífilis congênita.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:21.528Z"
+  },
+  {
+    "id": "AJUDA_872e83c3-31bb-49ea-94e3-8e882ac453c1",
+    "originalId": "872e83c3-31bb-49ea-94e3-8e882ac453c1",
+    "statement": "A insuficiência adrenal aguda (crise addisoniana) é uma complicação potencialmente fatal no perioperatório de pacientes com supressão do eixo hipotálamo-hipófise-adrenal. Sobre a profilaxia e manejo, registre V, para as afirmativas verdadeiras, e F, para as falsas:\n\n(__)Pacientes em uso crônico de prednisona (>20mg/dia por >3 semanas) ou com fenótipo cushingoide devem receber \"dose de estresse\" de hidrocortisona no perioperatório para suprir a demanda metabólica aumentada e evitar colapso cardiovascular.\n(__)A hipotensão refratária a volume e vasopressores no intraoperatório ou pós-operatório imediato é um sinal clássico de insuficiência adrenal aguda, devendo ser tratada empiricamente com corticoide IV.\n(__)A dexametasona é o corticoide de escolha para a terapia de reposição na crise adrenal aguda, pois possui potente efeito mineralocorticoide, essencial para reter sódio e elevar a pressão.\n(__)Pacientes que suspenderam o uso de corticoides há 6 meses não apresentam mais risco de supressão adrenal, pois o eixo se recupera completamente em 30 dias após a interrupção.\n\nAssinale a alternativa que apresenta a sequência correta, de cima para baixo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, F, F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "V, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, F, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, V, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "(Primeira afirmativa) Verdadeira. O uso de doses suprafisiológicas de corticoides (equivalentes a mais de 20 mg de prednisona por dia) por um período superior a três semanas é o critério clássico para considerar o eixo hipotálamo-hipófise-adrenal suprimido. Pacientes com fenótipo cushingoide também são considerados de alto risco, independentemente da dose atual, pois apresentam sinais de exposição crônica excessiva. Em situações de estresse cirúrgico, o organismo necessita de um aumento na produção de cortisol que esses pacientes não conseguem suprir, exigindo a administração de hidrocortisona para prevenir o colapso cardiovascular.\n\n(Segunda afirmativa) Verdadeira. A crise adrenal aguda manifesta-se tipicamente como um choque refratário. Quando um paciente no perioperatório apresenta queda persistente da pressão arterial que não responde adequadamente à reposição volêmica ou ao suporte com vasopressores (como noradrenalina), a insuficiência adrenal deve ser uma das principais suspeitas diagnósticas. Nesses casos, o tratamento empírico com hidrocortisona intravenosa é indicado antes mesmo dos resultados laboratoriais, devido à gravidade do quadro.\n\n(Terceira afirmativa) Falsa. A hidrocortisona é o corticoide de escolha para o tratamento da crise adrenal aguda porque possui atividade tanto glicocorticoide quanto mineralocorticoide, mimetizando o cortisol natural. A dexametasona, apesar de ser um potente glicocorticoide, não possui atividade mineralocorticoide significativa. O efeito mineralocorticoide é fundamental na crise para promover a retenção de sódio e água, auxiliando na restauração da volemia e da pressão arterial.\n\n(Quarta afirmativa) Falsa. A supressão do eixo adrenal pode ser prolongada. Pacientes que fizeram uso crônico de corticoides podem levar de 6 a 12 meses para recuperar totalmente a funcionalidade do eixo após a interrupção do medicamento. A afirmação de que a recuperação ocorre em 30 dias é clinicamente perigosa, pois pacientes que suspenderam o uso há 6 meses ainda podem falhar em produzir cortisol suficiente sob estresse cirúrgico.\n\nConclusão: A sequência correta de preenchimento dos parênteses é V - V - F - F, o que corresponde à alternativa (a).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório",
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:21.528Z"
+  },
+  {
+    "id": "AJUDA_87349f8f-f10c-419e-9cd9-a231967057e2",
+    "originalId": "87349f8f-f10c-419e-9cd9-a231967057e2",
+    "statement": "A cascata do cuidado contínuo do HIV (continuum of HIV care) é um parâmetro internacional do desempenho da atenção de saúde em HIV. Trata-se de uma representação gráfica, na qual as barras representam a proporção estimada de pessoas nas fases do cuidado, como exemplifica a figura a seguir:\n\nA utilidade da cascata para avaliar o desempenho da atenção em saúde fez com que o modelo passasse a ser utilizado para vários agravos, entre eles a sífilis congênita. Sabendo que o tratamento adequado e oportuno da sífilis na gestante tem alta efetividade, qual deve ser a estimativa da proporção da última barra da cascata da transmissão vertical de sífilis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Número de gestantes curadas /Número de gestantes tratadas X 100.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Número de gestantes curadas/Número de nascidos vivos X 100.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Número de nascidos vivos sem sífilis/Número de nascidos vivos X 100.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Número de nascidos vivos sem sífilis/Número de gestantes infectadas X 100.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A cascata do cuidado é uma ferramenta de gestão e monitoramento que permite visualizar o desempenho de cada etapa da assistência a uma determinada condição de saúde, desde o diagnóstico até o desfecho final desejado. Na imagem da cascata do HIV, a primeira barra representa o total estimado de pessoas infectadas (100%) e a última barra representa o sucesso terapêutico (supressão viral).\n\nPara a transmissão vertical da sífilis, a lógica é a mesma. O objetivo final do sistema de saúde é garantir que a gestante infectada seja identificada e tratada adequadamente para que o desfecho final seja um recém-nascido saudável.\n\nAlternativa A: Incorreta. Essa razão mede apenas a eficácia do tratamento entre as mulheres que já foram tratadas. Uma cascata de cuidado deve refletir o desempenho de todo o sistema, partindo do total de pessoas infectadas, incluindo aquelas que sequer chegaram a ser diagnosticadas ou tratadas.\n\nAlternativa B: Incorreta. O denominador \"Número de nascidos vivos\" inclui todas as gestantes, inclusive as que nunca tiveram sífilis. Para avaliar o desempenho da assistência ao agravo sífilis, o denominador deve ser a população afetada pela doença (gestantes infectadas).\n\nAlternativa C: Incorreta. Assim como na alternativa anterior, o uso do total de nascidos vivos no denominador não permite avaliar a efetividade da cascata de cuidado para as mulheres infectadas. Essa seria uma medida de saúde pública geral, mas não um indicador da cascata de cuidado contínuo da sífilis.\n\nAlternativa D: Correta. Esta alternativa segue exatamente o modelo da cascata do HIV apresentada na imagem. O denominador é a população que entra no sistema (Número de gestantes infectadas, equivalente à primeira barra de 100%) e o numerador é o objetivo final alcançado (Número de nascidos vivos sem sífilis, equivalente à última barra de sucesso). Esse indicador mostra qual proporção do problema inicial foi efetivamente resolvida pelo sistema de saúde.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/8ca331d3bbbf255c6767b437415b6af38733e5e936ff1b5f05ac035676371baf.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_87349f8f-f10c-419e-9cd9-a231967057e2_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:22.028Z"
+  },
+  {
+    "id": "AJUDA_873ac457-626c-47a4-902c-b125cb3bf6c6",
+    "originalId": "873ac457-626c-47a4-902c-b125cb3bf6c6",
+    "statement": "Uma mulher de 62 anos, hipertensa e diabética, procura a unidade básica de saúde (UBS) com queixa de dor óssea. Os exames laboratoriais solicitados apresentam como resultado cálcio = 7,8mg/dL, fósforo = 6,4mg/dL, fosfatase alcalina = 450U/L e paratormônio = 320pg/mL. O inventário ósseo evidencia osteopenia difusa, com reabsorção subperiosteal das falanges das mãos e rarefação trabecular difusa do crânio. A etiologia mais provavelmente associada ao quadro osteometabólico descrito é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "osteomalácia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "doença de Paget",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "osteodistrofia renal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "adenoma de paratireoide",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise dos dados clínicos e laboratoriais:\nA paciente apresenta um perfil laboratorial composto por hipocalcemia (cálcio = 7,8 mg/dL), hiperfosfatemia (fósforo = 6,4 mg/dL) e elevação acentuada do paratormônio (PTH = 320 pg/mL) e da fosfatase alcalina (450 U/L). Este conjunto de alterações, associado ao histórico de hipertensão e diabetes (principais causas de doença renal crônica no Brasil), é característico do distúrbio mineral e ósseo da doença renal crônica.\n\nAlternativa (a) Incorreta: A osteomalácia ocorre por uma mineralização deficiente da matriz óssea, geralmente devido à deficiência de vitamina D. Embora possa apresentar hipocalcemia e PTH elevado, o fósforo costuma estar baixo (pela ação do PTH nos rins saudáveis) ou normal, e não elevado como no caso em questão.\n\nAlternativa (b) Incorreta: A doença de Paget é uma desordem de remodelação óssea localizada. Nela, os níveis séricos de cálcio e fósforo são tipicamente normais. A fosfatase alcalina costuma estar muito elevada, mas não há elevação do PTH nem os achados radiológicos de reabsorção subperiosteal.\n\nAlternativa (c) Correta: A osteodistrofia renal é o termo clínico para as alterações ósseas decorrentes da insuficiência renal. Com a perda da função renal, ocorre retenção de fósforo (hiperfosfatemia) e redução da produção de vitamina D ativa (calcitriol), levando à queda do cálcio. Esse desequilíbrio estimula as paratireoides a produzirem PTH em excesso (hiperparatireoidismo secundário). O PTH alto causa grande reabsorção óssea para tentar normalizar o cálcio plasmático, gerando as lesões radiográficas clássicas descritas: reabsorção subperiosteal nas falanges e o aspecto de \"crânio em sal e pimenta\" (rarefação trabecular).\n\nAlternativa (d) Incorreta: O adenoma de paratireoide é a causa do hiperparatireoidismo primário. O padrão laboratorial esperado seria oposto ao da questão: hipercalcemia (cálcio alto) e hipofosfatemia (fósforo baixo), já que a glândula produz PTH de forma autônoma e os rins (se funcionantes) excretariam o fósforo em excesso.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Metabolismo Ósseo e Mineral",
+      "Doença Renal Crônica (DRC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:22.028Z"
+  },
+  {
+    "id": "AJUDA_875968f4-feb3-4250-a340-178b9f84b2a5",
+    "originalId": "875968f4-feb3-4250-a340-178b9f84b2a5",
+    "statement": "B.V.S., 6 meses de vida, nascido a termo, sem intercorrências, vem sendo acompanhado na Unidade Básica de Saúde e é encaminhado para primeira consulta com pediatra. Na consulta a mãe do paciente traz a queixa que seu filho quase não emite sons e não atende pelo nome. Questiona se o filho pode ter algum problema de audição apesar do teste da orelhinha normal. Ao avaliar o paciente observa-se que o mesmo faz contato visual e interage aos estímulos após algumas tentativas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "avaliar outros marcos do DNPM, fatores de risco para atraso do DNPM, história familiar de surdez, agendar retorno para reavaliação do DNPM e solicitar novo teste de audição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "avaliar outros marcos do DNPM, fatores de risco para atraso do DNPM, orientar estimulação e agendar retorno para reavaliar o DNPM.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "avaliar outros marcos do DNPM, fatores de risco para atraso do DNPM, orientar estimulação, encaminhar para fonoaudiologia e agendar retorno para reavaliar o DNPM.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "avaliar outros marcos do DNPM, fatores de risco para atraso do DNPM, aplicar M-CHAT, se pontuação obtida estiver acima de 8 encaminhar para avaliação diagnóstica e intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico: O paciente tem 6 meses de idade. De acordo com os marcos do Desenvolvimento Neuropsicomotor (DNPM), espera-se que, nessa idade, a criança já emita sons (balbucio polissilábico) e responda a sons, virando a cabeça em direção à fonte sonora. A mãe relata ausência desses marcos, mas o exame físico mostra que a criança mantém contato visual e interage, o que constitui sinais favoráveis ao desenvolvimento social.\n\nAlternativa a: Incorreta. O teste da orelhinha (Emissões Otoacústicas) normal ao nascimento é um forte indicador de integridade coclear. Embora existam perdas auditivas de surgimento tardio ou retrococleares, a primeira conduta em uma Unidade Básica de Saúde, diante de um atraso isolado em um paciente que interage bem, é a vigilância e estimulação, reservando novos exames diagnósticos para casos de persistência do atraso ou presença de fatores de risco claros.\n\nAlternativa b: Correta. Esta alternativa segue as diretrizes de Vigilância do Desenvolvimento Infantil do Ministério da Saúde e da Sociedade Brasileira de Pediatria. Se a criança não apresenta um marco para a sua faixa etária, o médico deve investigar o contexto (outros marcos e fatores de risco), orientar a família a realizar estímulos específicos (falar com a criança, cantar, usar brinquedos sonoros) e marcar um retorno em tempo breve para reavaliação. Como o contato visual e a interação estão presentes, a conduta conservadora inicial é a mais adequada.\n\nAlternativa c: Incorreta. O encaminhamento imediato para fonoaudiologia é considerado precoce para este cenário. Na atenção primária, o pediatra deve assumir o papel de orientador da estimulação e monitorar a evolução do quadro antes de encaminhar o paciente para a especialidade, a menos que o atraso seja acentuado ou acompanhado de outros sinais de alerta.\n\nAlternativa d: Incorreta. O erro desta alternativa é temporal e técnico. O M-CHAT (Modified Checklist for Autism in Toddlers) é uma ferramenta de triagem para o Transtorno do Espectro Autista (TEA), porém ele é validado para ser aplicado em crianças entre 16 e 30 meses de idade. Aplicá-lo em um bebê de 6 meses é incorreto. Além disso, a descrição de que o paciente faz contato visual e interage diminui, inicialmente, a suspeita de autismo.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:22.028Z"
+  },
+  {
+    "id": "AJUDA_875a3588-e521-4d0b-ba81-479350a26fc4",
+    "originalId": "875a3588-e521-4d0b-ba81-479350a26fc4",
+    "statement": "No tratamento da cetoacidose diabética, em crianças e adolescentes com diabetes tipo 1, para evitar complicações, após monitoração e a coleta de exames, deve ser iniciada imediatamente a",
+    "options": [
+      {
+        "id": "A",
+        "text": "aplicação de insulina humana regular na dose habitual ou se o diagnóstico é feito na primodescompensação, 0,15 UI/kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "reposição de fluídos com soro fisiológico ou Ringer-lactato 20 mL/kg em 20 minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "reposição de fluídos com soro fisiológico e soro glicosado 5%, na proporção 3:1, 150 mL/kg em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "punção de 2 acessos venosos para infusão concomitante de soro fisiológico 10 mL/kg em 20 minutos, repetidos 3 vezes, até diurese clara e infusão de insulina regular 0,05 a 0,1 UI/kg/hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "punção de 2 acessos venosos para infusão concomitante de soro fisiológico 10 mL/kg/hora e soro fisiológico e soro glicosado 5%, na proporção de 1:1, com cloreto de potássio 19,1%, 20 mEq/L, o,5 mEq/kg/hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A cetoacidose diabética (CAD) é uma emergência médica caracterizada pela tríade de hiperglicemia, acidose metabólica e cetonemia. Em crianças e adolescentes, o manejo deve ser extremamente cauteloso devido ao risco elevado de edema cerebral, a principal causa de mortalidade nessa faixa etária.\n\nAlternativa (a) incorreta: A insulina nunca deve ser o primeiro passo no tratamento da CAD em pediatria. A administração de insulina antes da hidratação inicial pode causar um deslocamento osmótico rápido de água do compartimento extracelular para o intracelular, aumentando drasticamente o risco de colapso cardiovascular e edema cerebral. Além disso, o uso de dose de ataque (bolus) de insulina é contraindicado em crianças e adolescentes.\n\nAlternativa (b) correta: A prioridade absoluta no tratamento da CAD pediátrica, após a estabilização das vias aéreas e respiração, é a restauração do volume circulante. A conduta imediata é a expansão volêmica com cristaloides isotônicos, como o Soro Fisiológico 0,9% ou Ringer-Lactato, na dose de 10 a 20 mL/kg, infundidos em 20 a 60 minutos. Esse procedimento melhora a perfusão renal e tecidual, reduzindo a resistência à insulina e os níveis de glicose antes mesmo do início da insulinoterapia.\n\nAlternativa (c) incorreta: Esta alternativa descreve uma fase posterior do tratamento. O uso de soro glicosado e a hidratação de manutenção/reposição ao longo de 24 horas ocorrem apenas após a fase de expansão inicial. O soro glicosado só é adicionado quando a glicemia atinge níveis próximos a 200-250 mg/dL para evitar hipoglicemia e permitir a continuidade da insulina para fechar a acidose.\n\nAlternativa (d) incorreta: Embora a infusão contínua de insulina (0,05 a 0,1 UI/kg/hora) seja o padrão-ouro, ela só deve ser iniciada após a primeira hora de hidratação venosa. Não deve ser iniciada de forma concomitante à primeira expansão. Além disso, a recomendação de repetir expansões até a \"diurese clara\" é imprecisa e perigosa em pediatria, podendo levar à sobrecarga hídrica.\n\nAlternativa (e) incorreta: A adição de potássio e a utilização de misturas de soros em proporções específicas fazem parte da etapa de hidratação de manutenção e reparo. O potássio só deve ser iniciado após a confirmação da função renal (presença de diurese) e nunca deve ser administrado na expansão volêmica imediata, que deve ser feita apenas com cristaloide isotônico puro.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Emergências Pediátricas",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:22.028Z"
+  }
+]

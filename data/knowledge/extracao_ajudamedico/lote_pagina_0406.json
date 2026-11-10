@@ -1,0 +1,519 @@
+[
+  {
+    "id": "AJUDA_70bccd7e-5762-496f-9728-290a492164c3",
+    "originalId": "70bccd7e-5762-496f-9728-290a492164c3",
+    "statement": "Homem, 27 anos, vítima de ferimento contuso em hemitórax direito. Apresenta-se consciente, dispneico, com murmúrio vesicular abolido à direita, jugulares planas, sem desvio de traqueia, saturação de O₂: 86% em ar ambiente, hipotensão arterial e taquicardia. Radiografia de tórax evidencia imagem radiopaca em hemitórax direito. Escala de coma de Glasgow = 15.\n\nQual é a conduta mais apropriada para obter melhora da ventilação do paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intubação orotraqueal imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pericardiocentese de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Inserção de dreno torácico em selo d’água.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Toracotomia de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Punção com agulha no 2º espaço intercostal, linha hemiclavicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta um quadro clínico clássico de hemotórax após trauma contuso. Os sinais fundamentais para este diagnóstico são o murmúrio vesicular abolido, a imagem radiopaca (branca) na radiografia, o choque (hipotensão e taquicardia) e, crucialmente, as jugulares planas. As jugulares planas indicam hipovolemia, diferenciando o hemotórax do pneumotórax hipertensivo ou do tamponamento cardíaco, nos quais as jugulares estariam distendidas (turgência jugular).\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA conduta imediata para o hemotórax é a drenagem torácica em selo d'água, geralmente realizada no 5º espaço intercostal, entre as linhas axilar média e anterior. Esse procedimento cumpre dois papéis: permite a reexpansão do pulmão (melhorando a ventilação e a troca gasosa) e permite quantificar a perda sanguínea para decidir se há necessidade de uma cirurgia maior (toracotomia).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): A intubação orotraqueal pode ser necessária se o paciente não melhorar após a drenagem, mas não é a conduta inicial para resolver o problema mecânico. No trauma de tórax, ventilar com pressão positiva um pulmão colabado por sangue ou ar, sem drenagem prévia, pode agravar o estado hemodinâmico ou causar um pneumotórax hipertensivo iatrogênico.\n\nAlternativa (b): A pericardiocentese é o tratamento de emergência para o tamponamento cardíaco. No tamponamento, o paciente apresenta turgência jugular e os pulmões costumam estar limpos (murmúrio vesicular presente), o que contradiz o quadro de murmúrio abolido e jugulares planas deste paciente.\n\nAlternativa (d): A toracotomia de emergência é uma medida de exceção. No hemotórax, ela está indicada apenas se houver saída imediata de mais de 1.500 ml de sangue após a drenagem ou uma perda contínua superior a 200 ml/h nas primeiras 2 a 4 horas. Portanto, primeiro insere-se o dreno (alternativa c) para depois avaliar a necessidade de toracotomia.\n\nAlternativa (e): A punção com agulha (descompressão torácica) é a conduta imediata para o pneumotórax hipertensivo. Embora ambos os quadros causem abolição do murmúrio e choque, no pneumotórax a imagem radiológica seria radiotransparente (preta, indicando ar) e o paciente teria turgência jugular por desvio do mediastino e compressão das cavas, o que não ocorre neste caso de hemotórax.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:50.576Z"
+  },
+  {
+    "id": "AJUDA_70c46775-3733-493e-ae49-4e616b3d2b62",
+    "originalId": "70c46775-3733-493e-ae49-4e616b3d2b62",
+    "statement": "Você atende uma paciente de 30 anos, com queixa de nódulo em mama esquerda. Ao examinar você identifica na mama esquerda a presença de nódulo fixo e retração de pele. A paciente nunca gestou e tem vida sexual ativa e usa DIU de Cobre. Como é filha adotiva, não conhece a história familiar. Dentre as alternativas abaixo, qual é a que melhor descreve a conduta para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar Ultrassonografia de mamas, se os achados forem suspeitos de malignidade, indicar ressonância Magnética de mamas para planejar mastectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar Ultrassonografia de mamas, se os achados forem suspeitos de malignidade, indicar biópsia guiada por ultrassonografia da mama.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar Mamografia e se Bi Rads 0 complementar o exame com Ultrassonografia de mamas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar Mamografia, Ultrassonografia de Mamas e Ressonância Magnética para melhor investigação das mamas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A conduta deverá ser o retorno da paciente após a menstruação para avaliar novamente as mamas por meio do exame físico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE CLÍNICA DO CASO\nA paciente apresenta sinais clínicos de elevada suspeita para malignidade mamária: nódulo fixo e retração de pele. Em pacientes jovens (30 anos), a densidade mamária costuma ser elevada, o que torna a ultrassonografia (USG) o exame de escolha inicial para a avaliação de nódulos palpáveis. O objetivo principal diante de um achado suspeito é obter o diagnóstico histopatológico.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\nEm uma mulher de 30 anos com um nódulo palpável, a conduta inicial padrão é a realização de exame de imagem, sendo a ultrassonografia preferível nessa faixa etária devido à densidade do parênquima. Caso a ultrassonografia confirme características suspeitas (classificação BI-RADS 4 ou 5), o próximo passo obrigatório é a realização de uma biópsia (geralmente biópsia de fragmento ou core-biopsy) para confirmação diagnóstica. Sem a confirmação histopatológica, não se define tratamento cirúrgico ou sistêmico.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: Está incorreta, pois propõe a indicação de uma mastectomia baseando-se apenas em exames de imagem (USG e Ressonância). Na prática médica, nenhuma cirurgia oncológica de grande porte como a mastectomia é planejada ou executada sem antes haver um diagnóstico anatomopatológico de câncer por meio de biópsia.\n\nAlternativa C: Embora a mamografia possa ser solicitada como complemento em pacientes jovens com suspeita clínica forte, ela não é o exame inicial de escolha para essa idade. Além disso, a conduta descrita foca apenas na complementação de um eventual BI-RADS 0, ignorando que o sinal clínico de retração de pele e nódulo fixo exige uma investigação invasiva (biópsia) imediata se a imagem for minimamente suspeita.\n\nAlternativa D: Solicitar mamografia, ultrassonografia e ressonância de forma simultânea caracteriza excesso de propedêutica inicial. A ressonância magnética não é exame de primeira linha para diagnóstico de nódulo palpável e deve ser reservada para situações específicas, como avaliação de multifocalidade em casos já confirmados ou rastreamento de alto risco genético.\n\nAlternativa E: Esta alternativa descreve uma conduta perigosa e incorreta. A orientação de aguardar o ciclo menstrual para reavaliação só é aceitável em casos de nódulos de características nitidamente benignas (móveis, fibroelásticos, sem sinais inflamatórios ou de retração) em pacientes muito jovens. Diante de sinais de alerta como fixação e retração cutânea, a investigação deve ser imediata, pois são sinais clássicos de câncer de mama.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:50.576Z"
+  },
+  {
+    "id": "AJUDA_70d20b48-daae-4768-85fb-e151fcbc7862",
+    "originalId": "70d20b48-daae-4768-85fb-e151fcbc7862",
+    "statement": "Com relação às mulheres com Índice de Massa Corpórea (IMC) superiores a 30 Kg/m² podemos afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Até as 13 semanas gestacionais, é adequado ocorrer pequeno ganho de peso (0,2-1,2 Kg).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A utilização de fatores clínicos de risco para rastreio de gestantes que devem ser submetidas a testes diagnósticos para Diabetes Mellitus Gestacional é o ideal, pois apresenta elevada sensibilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Por conta da obesidade, deverá ser evitada a prescrição de ácido fólico periconcepcional, tampouco usado no primeiro trimestre gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O limite de calorias diário deve ser de 1.800 a 2.100 KCal com fracionamento de 5 a 6 refeições diárias, preferencialmente sob orientação e seguimento por nutricionista.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A: Incorreta. Segundo as diretrizes do Institute of Medicine (IOM) e do Ministério da Saúde, a faixa padrão de ganho de peso esperada no primeiro trimestre gestacional varia de 0,5 a 2,0 kg para todas as faixas de IMC, tornando os valores de 0,2 a 1,2 kg incorretos.\n\nAlternativa B: Incorreta. O rastreamento de Diabetes Mellitus Gestacional (DMG) baseado exclusivamente em fatores de risco clínicos apresenta baixa sensibilidade e não detecta uma parcela significativa dos casos. Atualmente, o consenso é a realização do rastreamento universal por meio de glicemia de jejum no início do pré-natal e TOTG de 75 g entre a 24ª e a 28ª semana.\n\nAlternativa C: Incorreta. A obesidade é um fator de risco independente para defeitos do fechamento do tubo neural. Dessa forma, a suplementação com ácido fólico no período periconcepcional e no primeiro trimestre é indispensável e deve ser mantida.\n\nAlternativa D: Correta. O plano alimentar para gestantes com obesidade deve manter uma ingestão entre 1.800 e 2.100 kcal por dia, permitindo o controle do ganho ponderal sem induzir cetose materna (que surge em dietas com menos de 1.600 kcal/dia). O fracionamento em 5 a 6 refeições melhora o controle glicêmico e a saciedade, sendo ideal o acompanhamento nutricional especializado.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:50.576Z"
+  },
+  {
+    "id": "AJUDA_70ed826e-42e9-4ad4-8e1a-ac4ca537bd63",
+    "originalId": "70ed826e-42e9-4ad4-8e1a-ac4ca537bd63",
+    "statement": "A sarcopenia e o envelhecimento muscular estão associados a alterações estruturais e funcionais das fibras musculares esqueléticas. Considerando os efeitos do envelhecimento sobre os diferentes tipos de fibras. A alternativa que descreve corretamente a mudança predominante observada na musculatura de idosos, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "aumento proporcional de fibras do tipo I (oxidativas) com redução seletiva de fibras do tipo II (rápidas).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "aumento predominante de fibras do tipo II, com redução da densidade de fibras tipo I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "redução isolada do diâmetro das fibras do tipo I com preservação das fibras tipo II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aumento absoluto do número de fibras I e II devido à hiperplasia compensatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "conversão predominante de fibras tipo I em fibras tipo II com perda de resistência muscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O processo de envelhecimento muscular e a sarcopenia envolvem uma perda progressiva de massa muscular, força e qualidade do tecido. Essas alterações não ocorrem de forma uniforme entre os diferentes tipos de fibras musculares. As fibras esqueléticas são divididas principalmente em Tipo I (contração lenta, metabolismo oxidativo, resistentes à fadiga) e Tipo II (contração rápida, metabolismo glicolítico, maior força de explosão).\n\nAlternativa A (Correta): Durante o envelhecimento, ocorre uma atrofia seletiva e uma perda numérica mais acentuada das fibras do tipo II. Embora as fibras do tipo I também possam sofrer redução, elas são significativamente mais preservadas do que as do tipo II. Como resultado dessa perda desproporcional, a musculatura do idoso passa a apresentar um aumento proporcional (ou relativo) de fibras do tipo I. Além disso, ocorre um fenômeno de denervação de unidades motoras rápidas com reinervação por neurônios motores lentos, o que contribui para essa mudança no perfil muscular.\n\nAlternativa B (Incorreta): O erro está em inverter o processo. O envelhecimento causa a redução das fibras tipo II, e não seu aumento. As fibras tipo I são as que mantêm maior densidade relativa no músculo senescente.\n\nAlternativa C (Incorreta): A redução do diâmetro (atrofia) é predominante nas fibras do tipo II. As fibras do tipo I são as que apresentam maior preservação de suas características e diâmetro em comparação às fibras rápidas.\n\nAlternativa D (Incorreta): O envelhecimento é caracterizado por processos de hipotrofia (diminuição do tamanho) e hipoplasia (diminuição do número de fibras). Não há evidência de hiperplasia compensatória (aumento do número de células) na musculatura esquelética humana em resposta ao envelhecimento; o que ocorre é a perda líquida de tecido contrátil.\n\nAlternativa E (Incorreta): A mudança fenotípica caminha no sentido oposto. Existe uma tendência de transição para um perfil muscular mais \"lento\" devido à perda seletiva das unidades motoras rápidas. Portanto, não há conversão predominante de tipo I em tipo II, mas sim uma predominância residual das fibras tipo I devido à perda das fibras tipo II.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:50.576Z"
+  },
+  {
+    "id": "AJUDA_70f4e068-0680-41a6-a8e6-0187cbfdadef",
+    "originalId": "70f4e068-0680-41a6-a8e6-0187cbfdadef",
+    "statement": "C.F.A., 58 anos foi admitida no pronto socorro por hipotensão e sensação de lipotimia. A sintomatologia iniciou-se há aproximadamente 12 horas, de forma insidiosa, mas com rápida progressão. A paciente relatou, inicialmente, uma sensação de calafrios intensos. Paciente nega náuseas, vômitos ou exteriorização de sangramento. A equipe de enfermagem percebeu que a paciente estava confusa, respondendo lentamente às perguntas e parecendo desorientada. A paciente está em vigência de quimioterapia para câncer de ovário metastático sendo seu último ciclo há 10 dias. Ela não faz uso de uso de cateter central. Ao exame físico pressão arterial 85/40 mmHg, frequência cardíaca 125 bpm, frequência respiratória 26 cpm, temperatura 38 °C. O hemograma apresenta contagem de neutrófilos de 200/mm³. Em relação ao diagnóstico acima marque a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Há quatro principais processos que levam à redução no transporte de oxigênio e à hipoxia celular, sendo esses os quatro principais tipos de choque: distributivo, cardiogênico, hipovolêmico e hemorrágico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Após adequada reposição volêmica (30 mL/kg nas primeiras 3 horas) a paciente manteve hipotensão necessitando de suporte de vasopressores. Assim, a hipótese mais provável é de choque hipovolêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A taquicardia observada na paciente é uma resposta secundária a hipotensão na tentativa de manter o transporte do oxigênio. Como esclarece a equação: DO2 (determinates do transporte de oxigênio) = (FC (frequência cardíaca × VS (volume sistólico) × CaO2 (conteúdo arterial de oxigênio).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Com o objetivo de aumentar a resistência vascular periférica, caso se comprove o choque da paciente, deve-se iniciar um vasopressor sendo a dopamina o agente de primeira escolha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Os antibióticos intravenosos devem ser iniciados assim que possível (dentro de 2 horas); especificamente com esquema de amplo espectro como cefepima 2 gramas a cada 8/8 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA paciente apresenta um quadro clássico de Neutropenia Febril, definida pela presença de febre em um paciente com contagem de neutrófilos inferior a 500/mm³ (no caso, 200/mm³), ocorrendo cerca de 10 dias após quimioterapia (período de nadir). A presença de hipotensão (85/40 mmHg), taquicardia (125 bpm) e alteração do nível de consciência caracteriza um quadro de Choque Séptico.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) INCORRETA: A classificação clássica dos estados de choque baseia-se na fisiopatologia e divide-os em quatro grupos: Distributivo, Cardiogênico, Hipovolêmico e Obstrutivo. O choque hemorrágico citado na alternativa é, na verdade, um subtipo do choque hipovolêmico, e não uma categoria principal à parte.\n\nAlternativa (b) INCORRETA: Se a paciente mantém hipotensão e necessidade de vasopressores mesmo após a ressuscitação volêmica adequada (30 mL/kg), o diagnóstico é de Choque Séptico. O choque hipovolêmico puro costuma responder à reposição de fluidos. No choque séptico (um tipo de choque distributivo), a vasodilatação excessiva e a disfunção endotelial impedem que apenas o volume resolva a hipotensão.\n\nAlternativa (c) CORRETA: Esta alternativa descreve a fisiologia do transporte de oxigênio (DO2). A oferta de oxigênio aos tecidos depende do Débito Cardíaco e do Conteúdo Arterial de Oxigênio (CaO2). Como o Débito Cardíaco é o produto da Frequência Cardíaca (FC) pelo Volume Sistólico (VS), a fórmula DO2 = (FC x VS) x CaO2 está correta. No choque, para compensar a queda no volume sistólico ou na pressão arterial, o organismo aumenta a frequência cardíaca (taquicardia compensatória) para tentar manter a oferta de oxigênio aos órgãos vitais.\n\nAlternativa (d) INCORRETA: No manejo do choque séptico, o vasopressor de primeira escolha é a noradrenalina. A dopamina não é mais recomendada como primeira linha por estar associada a um maior risco de arritmias e maior mortalidade em alguns subgrupos de pacientes quando comparada à noradrenalina.\n\nAlternativa (e) INCORRETA: O erro reside no tempo para administração da antibioticoterapia. Em pacientes com choque séptico ou instabilidade hemodinâmica, a recomendação das diretrizes internacionais (como o Surviving Sepsis Campaign) é que o antibiótico de amplo espectro seja iniciado imediatamente, preferencialmente dentro da primeira hora (Golden Hour) da identificação, e não em até 2 horas. O atraso na primeira dose de antibiótico está diretamente relacionado ao aumento da mortalidade.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Sepse",
+      "Neutropenia Febril",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:50.576Z"
+  },
+  {
+    "id": "AJUDA_70f87ed0-6e15-43c8-9e83-8cc0b97d2da6",
+    "originalId": "70f87ed0-6e15-43c8-9e83-8cc0b97d2da6",
+    "statement": "Na avaliação clínica de um paciente com doença renal crônica, a presença de anemia está associada à/ao:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Déficit de ferro decorrente de perda sanguínea oculta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Elevação dos níveis de ureia e creatinina séricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Redução da produção de eritropoietina pelo rim.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Distúrbios eletrolíticos, como hipercalemia e hiponatremia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aumento da pressão arterial sistêmica e risco cardiovascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A anemia na Doença Renal Crônica (DRC) é classificada tipicamente como normocítica e normocrômica. O entendimento da sua fisiopatologia é fundamental para o manejo clínico desses pacientes.\n\nAlternativa (a) Incorreta: Embora o déficit de ferro possa ocorrer em pacientes com DRC (devido ao aumento da hepcidina, que bloqueia a absorção intestinal, ou por perdas proteicas e sanguíneas em processos como a hemodiálise), ele não é a causa primária da anemia da doença renal. O déficit de ferro é considerado um fator complicador ou uma causa secundária.\n\nAlternativa (b) Incorreta: A elevação dos níveis de ureia e creatinina séricos é um marcador de perda de função renal e redução da taxa de filtração glomerular. Apesar de as toxinas urêmicas poderem reduzir levemente a sobrevida das hemácias e inibir a eritropoiese de forma secundária, esses marcadores não são a causa direta do surgimento da anemia.\n\nAlternativa (c) Correta: Esta é a principal causa da anemia na DRC. A eritropoietina (EPO) é um hormônio glicoproteico produzido pelas células intersticiais peritubulares no córtex renal. Com a progressão da doença renal e a substituição do parênquima por fibrose, a produção de EPO torna-se insuficiente para estimular a medula óssea a produzir glóbulos vermelhos de forma adequada.\n\nAlternativa (d) Incorreta: Distúrbios eletrolíticos como hipercalemia (excesso de potássio) e hiponatremia (baixo sódio) são complicações metabólicas graves da falência renal, mas não possuem relação mecanística com a produção de eritrócitos ou com a etiologia da anemia.\n\nAlternativa (e) Incorreta: O aumento da pressão arterial e o risco cardiovascular elevado são características marcantes do paciente renal crônico. A própria anemia pode agravar o risco cardiovascular ao exigir um maior débito cardíaco e favorecer a hipertrofia ventricular esquerda, porém a hipertensão não é a causa da anemia.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Doença Renal Crônica (DRC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:50.576Z"
+  },
+  {
+    "id": "AJUDA_711228cd-f6c6-4c30-8399-cd326585dcde",
+    "originalId": "711228cd-f6c6-4c30-8399-cd326585dcde",
+    "statement": "A Ecologia dos Sistemas de Saúde, um estudo conduzido por White e colaboradores em 1961 e repetido por Green e colaboradores em 2001, é um dos artigos mais citados na área da Atenção Primária à Saúde (APS). Assim, avalie as proposições: \n\nI. Entre 1.000 pessoas ao longo de um mês, aproximadamente 250 procuram ajuda formal na APS. \nII. Menos de uma pessoa, em média, necessita de um hospital-escola. \nIII. A maioria das pessoas que procuram ajuda formal na APS são internadas em hospitais regionais. \n\nEstá CORRETO o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O estudo clássico da Ecologia dos Sistemas de Saúde, proposto por White (1961) e atualizado por Green (2001), utiliza uma base populacional de 1.000 pessoas acompanhadas durante um mês para observar o comportamento de busca por cuidados de saúde. Esse estudo é o pilar que justifica a organização dos sistemas de saúde baseados na Atenção Primária à Saúde (APS).\n\nAnálise das proposições:\n\nProposição I: Correta. O modelo demonstra que, em uma população de 1.000 pessoas, aproximadamente 750 a 800 apresentam algum sintoma ou problema de saúde. Dessas, cerca de 250 a 327 pessoas procuram atendimento médico formal. O valor de 250 citado na questão é o dado clássico do estudo original de White, sendo amplamente aceito em provas para caracterizar o volume de procura por cuidados na APS e em consultórios médicos.\n\nProposição II: Correta. Um dos achados mais impactantes do estudo é a raridade dos eventos que necessitam de alta complexidade tecnológica. Tanto no estudo original quanto na revisão de 2001, o número de pessoas que necessitam de internação em hospitais-escola (centros médicos universitários/terciários) é inferior a uma pessoa por mês (0,7 em 1961 e 0,1 em 2001) a cada 1.000 pessoas na comunidade.\n\nProposição III: Incorreta. A afirmação inverte a lógica do sistema de saúde. A APS é desenhada para ser resolutiva em cerca de 80% a 90% dos casos. Segundo os dados da Ecologia dos Sistemas de Saúde, das 250 a 300 pessoas que procuram ajuda formal, apenas cerca de 8 a 9 são internadas em hospitais comunitários ou regionais. Portanto, a vasta maioria dos pacientes que procuram a APS não é internada, mas sim tratada no próprio nível primário.\n\nAnálise das alternativas:\n\nAlternativa a: Está correta, pois as proposições I e II estão em conformidade com as evidências estatísticas do modelo de White e Green.\n\nAlternativa b: Está incorreta, pois a proposição I também é verdadeira e deve ser incluída.\n\nAlternativa c: Está incorreta, pois a proposição III é falsa. A maioria dos atendimentos na APS não resulta em internação.\n\nAlternativa d: Está incorreta, pois inclui a proposição III, que apresenta um dado equivocado sobre o fluxo de pacientes no sistema de saúde.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:50.576Z"
+  },
+  {
+    "id": "AJUDA_71153320-d65a-496f-9e37-0c8054aed7bb",
+    "originalId": "71153320-d65a-496f-9e37-0c8054aed7bb",
+    "statement": "DBD, 17 anos, sexo masculino, estudante, apresentou quadro de dor periumbilical, acompanhada de inapetência e náusea, ontem. Hoje apresenta dor abdominal localizada no quadrante inferior direito do abdome, com temperatura axilar de 37,8°C, sem defesa abdominal, com relato de dor à palpação profunda, mas sem dor à descompressão abdominal. A hiperextensão da coxa direita provoca dor lombar à direita e em fossa ilíaca direita. Exames laboratoriais mostraram 12.050 leucócitos/mm³ com 6% de bastonetes. Assinale qual das alternativas abaixo está ERRADA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A tomografia de abdome sem contraste é o melhor exame para diagnóstico diferencial neste caso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "É improvável que a radiografia simples de abdome traga elementos diagnósticos decisivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O quadro clínico sugere apendicite aguda, embora não seja a apresentação clássica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os achados de laboratorio sugerem um quadro infeccioso agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente de 17 anos apresenta um quadro clássico de dor abdominal migratória (inicia-se na região periumbilical e se localiza na fossa ilíaca direita), acompanhada de anorexia e náuseas. O exame físico revela febre baixa e o sinal do psoas positivo (dor à hiperextensão da coxa direita), o que sugere que o apêndice está em posição retrocecal. Os exames laboratoriais mostram leucocitose com desvio à esquerda, reforçando a hipótese de processo infeccioso agudo.\n\nAlternativa a (Incorreta/Gabarito): Esta afirmação está errada por dois motivos principais. Primeiro, em pacientes jovens de 17 anos, a ultrassonografia é frequentemente o primeiro exame de imagem solicitado para evitar a radiação ionizante. Segundo, caso a tomografia computadorizada (TC) seja necessária, o protocolo ideal exige o uso de contraste intravenoso para aumentar a sensibilidade e a especificidade do exame, permitindo observar o realce das paredes do apêndice e a inflamação da gordura adjacente. A TC sem contraste não é considerada o melhor exame para o diagnóstico diferencial neste contexto.\n\nAlternativa b (Correta): A radiografia simples de abdome tem baixíssima sensibilidade para o diagnóstico de apendicite aguda. Achados como o apendicólito (cálculo de fezes calcificado) ocorrem em menos de 10% dos casos. Outros sinais, como o apagamento da linha do músculo psoas ou níveis hidroaéreos localizados, são inespecíficos e não confirmam o diagnóstico com precisão.\n\nAlternativa c (Correta): O quadro clínico é muito sugestivo de apendicite devido à cronologia da dor e aos sintomas associados (anorexia e febre). A observação de que não é a apresentação clássica justifica-se pela ausência de sinal de descompressão dolorosa (sinal de Blumberg negativo) e pela dor provocada pela manobra do psoas. Isso indica que o apêndice está localizado atrás do ceco (posição retrocecal), onde o peritônio parietal anterior não é diretamente irritado, alterando os achados típicos da palpação.\n\nAlternativa d (Correta): A contagem de 12.050 leucócitos/mm³ (leucocitose), somada à presença de 6% de bastonetes (desvio à esquerda), é um indicador laboratorial típico de uma resposta inflamatória sistêmica decorrente de uma infecção bacteriana aguda, como a apendicite.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:50.576Z"
+  },
+  {
+    "id": "AJUDA_71156bf6-0c78-4c8c-af18-276cc303c317",
+    "originalId": "71156bf6-0c78-4c8c-af18-276cc303c317",
+    "statement": "Um senhor de 82 anos comparece à consulta queixando-se de uma cefaleia de início recente. HAS controlada com IECA. Exame físico sem particularidades, exceto por espessamento da artéria temporal à palpação.\nNesse contexto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "PCR elevada aumenta a chance de arterite de células gigantes;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "VHS > 100 mm/h aumenta a chance de arterite de células gigantes;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "tomografia craniana é essencial para excluir diagnósticos outros, antes de se pensar em arterite de células gigantes;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "radiografia craniana é essencial para excluir diagnósticos outros, antes de se pensar em arterite de células gigantes;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ressonância magnética craniana é essencial para excluir diagnósticos outros, antes de se pensar em arterite de células gigantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descreve um paciente idoso (82 anos) com cefaleia de início recente e alteração na palpação da artéria temporal (espessamento). Esses achados são altamente sugestivos de Arterite de Células Gigantes (ACG), também conhecida como Arterite Temporal. Esta é uma vasculite que acomete vasos de médio e grande calibre, sendo uma emergência médica devido ao risco de perda visual irreversível.\n\nJUSTIFICATIVA DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): Embora a Proteína C-reativa (PCR) seja um marcador inflamatório sensível e costume estar elevada na Arterite de Células Gigantes, a literatura clássica e as questões de prova priorizam o VHS (Velocidade de Hemossedimentação) como o marcador laboratorial de escolha e o mais característico para esta patologia. A PCR isolada tem menos peso acadêmico nos critérios diagnósticos tradicionais do que o VHS muito elevado.\n\nAlternativa B (Correta): O aumento acentuado do VHS é um dos pilares diagnósticos da Arterite de Células Gigantes. Os critérios do American College of Rheumatology (ACR) estabelecem um ponto de corte de VHS maior ou igual a 50 mm/h, mas é extremamente comum que pacientes com ACG apresentem valores superiores a 100 mm/h. Esse achado laboratorial, somado à idade avançada e à alteração no exame físico da artéria temporal, eleva significativamente a probabilidade diagnóstica.\n\nAlternativa C (Incorreta): A tomografia craniana não é necessária para \"começar a pensar\" em ACG. O diagnóstico de ACG é eminentemente clínico e laboratorial. Postergar o raciocínio clínico ou o tratamento de uma possível vasculite para realizar exames de imagem de exclusão pode colocar em risco a visão do paciente.\n\nAlternativa D (Incorreta): A radiografia de crânio não possui indicação no manejo de cefaleias agudas ou crônicas na prática moderna, muito menos como passo obrigatório antes de considerar o diagnóstico de uma vasculite sistêmica.\n\nAlternativa E (Incorreta): Embora a ressonância magnética (especialmente a angiorressonância de vasos cranianos e o estudo dirigido das artérias temporais) possa auxiliar na visualização do processo inflamatório da parede do vaso (sinal do halo), ela não é essencial para excluir outros diagnósticos antes que se suspeite de ACG. A suspeita deve ser imediata com base na clínica e no VHS.\n\nRESUMO DIDÁTICO\n\nA Arterite de Células Gigantes deve ser suspeitada em qualquer paciente acima de 50 anos com cefaleia nova, claudicação de mandíbula ou alterações na artéria temporal. O laboratório tipicamente revela marcadores de fase aguda muito elevados, com destaque para o VHS, que frequentemente atinge três dígitos (acima de 100 mm/h). O diagnóstico definitivo é feito por biópsia da artéria temporal, mas o tratamento com corticoides deve ser iniciado imediatamente na suspeita clínica para evitar complicações isquêmicas.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Vasculites",
+      "Cefaleias"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:50.576Z"
+  },
+  {
+    "id": "AJUDA_7121664e-a1c9-4207-acb5-90be4c507810",
+    "originalId": "7121664e-a1c9-4207-acb5-90be4c507810",
+    "statement": "Paciente feminina, 25 anos, com diagnóstico de Transtorno Depressivo Maior, inicia tratamento com Fluoxetina 20mg/dia. Qual o principal mecanismo de ação da Fluoxetina na melhora dos sintomas depressivos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inibição da recaptação de serotonina na fenda sináptica, aumentando sua disponibilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Bloqueio dos receptores dopaminérgicos D2, reduzindo a atividade dopaminérgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumento da liberação de noradrenalina na fenda sináptica, promovendo efeito estimulante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inibição da enzima monoaminoxidase (MAO), aumentando a disponibilidade de neurotransmissores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Potencialização da ação do GABA, principal neurotransmissor inibitório do sistema nervoso central.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO:\n\nA fluoxetina é um fármaco amplamente utilizado na psiquiatria, pertencente à classe dos inibidores seletivos da recaptação de serotonina (ISRS). O entendimento de sua farmacodinâmica é essencial para provas de residência e prática clínica.\n\nAlternativa (a): CORRETA. O mecanismo central da fluoxetina é o bloqueio do transportador de serotonina (SERT) na membrana do neurônio pré-sináptico. Em condições normais, esse transportador retira a serotonina da fenda sináptica e a leva de volta para dentro do neurônio. Ao inibir esse processo, a fluoxetina faz com que a serotonina permaneça por mais tempo e em maior concentração na fenda, aumentando a sinalização nos receptores pós-sinápticos, o que desencadeia as cascatas neuroquímicas responsáveis pelo efeito antidepressivo.\n\nAlternativa (b): INCORRETA. O bloqueio dos receptores dopaminérgicos D2 é o mecanismo de ação principal dos medicamentos antipsicóticos (neurolépticos), como o haloperidol ou a risperidona. Embora alguns antidepressivos possam ter efeitos secundários no sistema dopaminérgico, essa não é a via de ação da fluoxetina.\n\nAlternativa (c): INCORRETA. O aumento da noradrenalina é característico de antidepressivos de outras classes, como os inibidores da recaptação de serotonina e noradrenalina (IRSN), a exemplo da venlafaxina e da duloxetina, ou dos inibidores da recaptação de noradrenalina e dopamina (IRND), como a bupropiona. A fluoxetina é altamente seletiva para o sistema serotoninérgico.\n\nAlternativa (d): INCORRETA. A inibição da enzima monoaminoxidase (MAO) define a classe dos antidepressivos conhecidos como IMAOs (ex: tranilcipromina e selegilina). Estes fármacos impedem a degradação das monoaminas dentro do neurônio, enquanto os ISRS, como a fluoxetina, atuam especificamente no transporte de membrana.\n\nAlternativa (e): INCORRETA. A potencialização da ação do GABA (principal neurotransmissor inibitório do sistema nervoso central) é o mecanismo de ação dos benzodiazepínicos (como diazepam e clonazepam) e de diversos fármacos hipnóticos e anticonvulsivantes. O sistema GABAérgico não é o alvo primário da fluoxetina no tratamento da depressão.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:50.576Z"
+  }
+]

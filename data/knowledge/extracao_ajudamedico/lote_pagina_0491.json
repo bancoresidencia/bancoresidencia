@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_896db503-967f-437b-b8c3-806ebab2d7f3",
+    "originalId": "896db503-967f-437b-b8c3-806ebab2d7f3",
+    "statement": "Paciente de 58 anos, submetido a laparotomia por apendicite complicada há 10 anos, apresenta dor abdominal difusa, vômitos biliosos, distensão abdominal e ausência de evacuação há 36h.\nExame físico: abdome distendido, timpanismo difuso, sem sinais peritoneais. RX de abdome mostra níveis hidroaéreos em alças delgadas e ausência de ar no cólon.\nDiante desse caso, a conduta inicial mais adequada será",
+    "options": [
+      {
+        "id": "A",
+        "text": "colonoscopia de urgência para descompressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cirurgia imediata com laparotomia exploradora obrigatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "antibioticoterapia isolada, sem outras medidas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tratamento conservador com hidratação, descompressão nasogástrica e observação clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "alta hospitalar após analgesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve um paciente com quadro clássico de obstrução intestinal mecânica alta (delgado). Os pontos-chave para o diagnóstico são:\n1. Antecedente cirúrgico (laparotomia há 10 anos), o que aponta para bridas ou aderências como a causa mais provável.\n2. Sintomas de dor abdominal, vômitos biliosos, distensão e parada de eliminação de gases e fezes.\n3. Exame físico com distensão e timpanismo, mas fundamentalmente sem sinais de irritação peritoneal (ausência de peritonite), o que sugere que não há, no momento, sofrimento de alça ou isquemia.\n4. Radiografia confirmando a obstrução de delgado (níveis hidroaéreos e ausência de ar no cólon).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A colonoscopia de urgência para descompressão é indicada em casos de obstrução do intestino grosso, como no volvo de sigmoide ou na pseudo-obstrução colônica aguda (Síndrome de Ogilvie). O quadro do paciente é de obstrução de intestino delgado.\n\nAlternativa b) Incorreta. A cirurgia imediata estaria indicada se o paciente apresentasse sinais de complicação, como estrangulamento, isquemia ou perfuração (febre, taquicardia, leucocitose importante e sinais de irritação peritoneal). Na ausência desses sinais, em obstruções por bridas, a conduta inicial é expectante.\n\nAlternativa c) Incorreta. A antibioticoterapia pode ser usada de forma complementar, mas o tratamento isolado não resolve a causa mecânica da obstrução nem trata a desidratação e a distensão do paciente.\n\nAlternativa d) Correta. O tratamento conservador é a conduta inicial de escolha para obstrução intestinal por aderências (bridas) em pacientes sem sinais de gravidade. Consiste em: repouso intestinal (jejum), hidratação venosa para correção de distúrbios hidroeletrolíticos e descompressão gastrointestinal através de sonda nasogástrica. Cerca de 70 a 80 por cento dos casos de obstrução por bridas resolvem-se com essa conduta em 24 a 48 horas.\n\nAlternativa e) Incorreta. O paciente apresenta uma urgência abdominal mecânica e requer internação hospitalar imediata para monitorização e tratamento, devido ao risco de desidratação grave e evolução para isquemia intestinal.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:31.989Z"
+  },
+  {
+    "id": "AJUDA_897102c4-b326-4145-8f58-a1043028c0f9",
+    "originalId": "897102c4-b326-4145-8f58-a1043028c0f9",
+    "statement": "Sobre a doença ulcerosa péptica é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gastrinomas são tumores neuroendócrinos produtores de gastrina que se apresentam com doença ulcerosa péptica severa e podem estar associados a Neoplasia Endócrina Múltipla do tipo 2B (NEM 2B).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na Síndrome de Zollinger Ellison, a hipersecreção ácida gástrica produzida pelo feocromocitoma pode se apresentar clinicamente como doença ulcerosa péptica severa, dor abdominal e diarreia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Podem ser complicações da doença ulcerosa péptica: hemorragia digestiva alta, estenose péptica do piloro e úlcera perfurada não bloqueada e com peritonite. Desde que o paciente se encontre hemodinamicamente estável, estas complicações devem sempre ser tratadas de forma endoscópica associada ao tratamento clínico com inibidores de bomba de prótons (IBPs).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dentre as etiologias possíveis para a doença ulcerosa péptica encontra-se o uso de anti inflamatórios não esteroidais (AINEs) e a infecção por Helicobacter pylori. Todos os pacientes diagnosticados com doença ulcerosa péptica associada à infecção por H. pylori devem receber terapia de erradicação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa (a) Incorreta: Embora os gastrinomas sejam tumores neuroendócrinos que secretam gastrina e causem úlceras severas (Síndrome de Zollinger-Ellison), a associação sindrômica correta é com a Neoplasia Endócrina Múltipla tipo 1 (NEM 1), e não com a NEM 2B. A NEM 1 é caracterizada pelo acometimento das paratireoides, do pâncreas (onde se incluem os gastrinomas) e da hipófise.\n\nAlternativa (b) Incorreta: A Síndrome de Zollinger-Ellison é causada por um gastrinoma, que é um tumor secretor de gastrina localizado geralmente no pâncreas ou no duodeno. O feocromocitoma é um tumor produtor de catecolaminas, cujas manifestações clínicas principais são hipertensão arterial, cefaleia e palpitações, não tendo relação direta com a hipersecreção ácida gástrica da síndrome em questão.\n\nAlternativa (c) Incorreta: O erro da alternativa está na afirmação de que todas as complicações devem ser tratadas de forma endoscópica. Enquanto a hemorragia digestiva alta é preferencialmente tratada por endoscopia, a úlcera perfurada com peritonite franca é uma emergência cirúrgica (laparotomia ou laparoscopia). A estenose pilórica, quando refratária ao tratamento clínico ou à dilatação, também pode exigir intervenção cirúrgica.\n\nAlternativa (d) Correta: O Helicobacter pylori e o uso de anti-inflamatórios não esteroidais (AINEs) são, de fato, os dois principais fatores etiológicos da doença ulcerosa péptica. A erradicação da bactéria é obrigatória em todos os pacientes que apresentam úlcera (seja ela gástrica ou duodenal) e teste positivo para H. pylori, pois o tratamento reduz significativamente a recorrência ulcerosa e o risco de complicações futuras.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:31.989Z"
+  },
+  {
+    "id": "AJUDA_897ad69b-f6f2-4088-9f21-091f7c3506ec",
+    "originalId": "897ad69b-f6f2-4088-9f21-091f7c3506ec",
+    "statement": "Adolescente de 15 anos, com quadro de transtorno do espectro autista, é levado pela mãe a uma Unidade de Pronto Atendimento após ter apresentado, na escola, episódio de agitação progressiva, vocalizações intensas e repetitivas, movimentos amplos dos membros superiores, chegando a cair ao chão. Durante todo o episódio, manteve os olhos abertos e reagia aos estímulos do ambiente. Não houve liberação esfincteriana, confusão mental ou sonolência após o episódio.\nO quadro em questão é compatível com o diagnóstico de crise",
+    "options": [
+      {
+        "id": "A",
+        "text": "epiléptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "de ansiedade aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "conversiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "de desregulação comportamental.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A resposta correta é a letra D. O quadro é uma crise de desregulação comportamental, comum em pessoas com transtorno do espectro autista (TEA).\n\nRaciocínio clínico:\nNo TEA, há dificuldade de regulação emocional e sensorial. Diante de sobrecarga sensorial (barulho, luz, multidão), mudança de rotina, frustração ou dificuldade de comunicação, pode surgir uma crise de desregulação, também chamada de meltdown. Ela se manifesta por agitação progressiva, gritos ou vocalizações repetitivas, movimentos amplos, estereotipias intensificadas, autoagressão ou heteroagressão e até queda ao chão.\n\nO que reforça o diagnóstico:\n- O ambiente escolar, rico em estímulos e demandas sociais, é um gatilho típico.\n- A instalação foi progressiva, e não súbita.\n- A consciência foi preservada: olhos abertos e reação ao ambiente.\n- Não houve sinais sugestivos de crise epiléptica, como liberação esfincteriana ou período pós-ictal com confusão e sonolência.\n\nAnálise das alternativas:\n\na) Epiléptica – Incorreta. A crise tônico-clônica generalizada envolve perda de consciência, olhos geralmente abertos mas sem responsividade, possível liberação esfincteriana e mordedura de língua, e estado pós-ictal com confusão e sonolência. As crises focais com consciência preservada costumam ser estereotipadas, breves e de início súbito. A agitação progressiva com reatividade ao ambiente não é compatível. Vale lembrar que a epilepsia é mais prevalente no TEA, o que torna essa alternativa um distrator plausível. Ainda assim, o quadro descrito não a sustenta.\n\nb) De ansiedade aguda – Incorreta. A crise de ansiedade ou de pânico cursa predominantemente com sintomas autonômicos e cognitivos: taquicardia, dispneia, sudorese, tremor, sensação de morte iminente e parestesias. Vocalizações repetitivas intensas e movimentos amplos com queda não são o padrão. A ansiedade pode ser um gatilho da desregulação, mas o quadro motor-comportamental descrito, em paciente com TEA, é melhor explicado pela desregulação.\n\nc) Conversiva – Incorreta. As crises psicogênicas não epilépticas também podem cursar sem pós-ictal e frequentemente com olhos fechados, movimentos assíncronos e balanço pélvico. Porém, é um diagnóstico que exige a exclusão de explicações mais prováveis e geralmente se associa a estressores psicológicos e mecanismos dissociativos. No adolescente com TEA, o comportamento descrito é característico da desregulação, entidade própria do espectro.\n\nd) De desregulação comportamental – Correta. O quadro reúne todos os elementos típicos: paciente com TEA, gatilho ambiental, agitação progressiva, vocalizações e movimentos repetitivos, consciência preservada e ausência de pós-ictal.\n\nO manejo inclui:\n- reduzir os estímulos ambientais;\n- garantir a segurança do paciente e de quem está ao redor;\n- usar comunicação calma e simples;\n- identificar e afastar o gatilho.\n\nA contenção farmacológica fica reservada a casos de risco.\n\nPonto-chave para a prova: no TEA, episódio de agitação com consciência preservada, sem liberação esfincteriana e sem pós-ictal sugere crise de desregulação comportamental, e não crise epiléptica.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Epilepsias",
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:31.989Z"
+  },
+  {
+    "id": "AJUDA_897eb686-fc37-4748-86c7-ee6c0f5b68fd",
+    "originalId": "897eb686-fc37-4748-86c7-ee6c0f5b68fd",
+    "statement": "Homem, 42 anos, com história de pancreatite aguda biliar, evoluiu com necessidade de internação em UTI por insuficiência respiratória e síndrome da resposta inflamatória sistêmica, apresentando melhora clínica gradativa, totalizando 22 dias de hospitalização. Em torno de 6 semanas após o início do quadro, procurou o pronto atendimento relatando dor abdominal persistente em epigástrio e hipocôndrio esquerdo, de intensidade moderada, associada à saciedade precoce, náuseas ocasionais e perda ponderal de 6 kg no período. Nega febre ou icterícia. Ao exame físico, apresenta-se em bom estado geral, afebril, PA 122/76 mmHg, FC 88 bpm, abdome com desconforto à palpação profunda em região epigástrica. TC de abdome com contraste evidencia área bem delimitada de aproximadamente 8 cm no corpo e cauda pancreáticos, com conteúdo heterogêneo de densidade mista, apresentando componente líquido e sólido, circundada por parede bem definida com realce pelo contraste. Observa-se ainda atrofia do parênquima pancreático adjacente. Exames laboratoriais mostram amilase 130 U/L (VR 25-125 U/L) e lipase 68 U/L (VR 13-60 U/L), hemoglobina 13,4 g/dL, 12.400 leucócitos/mm³ com neutrófilos 68% (8.432/mm³), linfócitos 24% (2.976/mm³), monócitos 6% (744/mm³), eosinófilos 2% (248/mm³), basófilos 0%. Assinale a alternativa que apresenta o diagnóstico correto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Necrose pancreática isolada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pseudocisto pancreático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coleção líquida aguda peripancreática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Abscesso pancreático.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico e tomográfico descreve uma complicação tardia de pancreatite aguda necrotizante, cuja nomenclatura é regida pela Classificação de Atlanta revisada. Para classificar as coleções pancreáticas, avaliam-se dois critérios principais: o tempo de evolução (precoce com menos de 4 semanas ou tardio com mais de 4 semanas) e o conteúdo da lesão (puramente líquido ou misto com necrose sólida).\n\nAlternativa A: Correta. Trata-se de uma necrose pancreática encapsulada ou organizada (termo traduzido da nomenclatura em inglês Walled-Off Necrosis - WON, por vezes referida na literatura em português como necrose pancreática isolada/delimitada). Ela ocorre após 4 semanas do quadro inicial (o paciente está na sexta semana) e é caracterizada por uma coleção heterogênea contendo elementos líquidos e sólidos (débris necróticos), delimitada por uma cápsula fibrosa e espessa com realce ao meio de contraste.\n\nAlternativa B: Incorreta. O pseudocisto pancreático também é uma complicação tardia (surge após 4 semanas com parede bem formada), porém é derivado da pancreatite edematosa intersticial e possui conteúdo exclusivamente líquido e homogêneo, sem qualquer componente sólido ou débris necróticos em seu interior.\n\nAlternativa C: Incorreta. A coleção líquida aguda peripancreática é uma complicação precoce (ocorre nas primeiras 4 semanas de evolução), não possui cápsula ou parede bem definida e apresenta conteúdo puramente líquido, sem necrose associada.\n\nAlternativa D: Incorreta. O termo abscesso pancreático não faz parte da nomenclatura da Classificação de Atlanta revisada, que classifica as coleções em estéreis ou infectadas. Além disso, o paciente está clinicamente estável, afebril e sem sinais sistêmicos de infecção bacteriana ativa.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:31.989Z"
+  },
+  {
+    "id": "AJUDA_89951b36-1821-45a9-82de-5449284db839",
+    "originalId": "89951b36-1821-45a9-82de-5449284db839",
+    "statement": "Uma mulher de 54 anos de idade, diabética, hipertensa e dislipidêmica, em uso irregular de medicações, compareceu ao pronto‑socorro com cefaleia intensa, vômitos, náusea, turvação visual e escotomas. O acompanhante relatou que o quadro evoluiu paulatinamente durante os últimos dias, com piora importante no dia atual. Na admissão, foram notados os seguintes sinais vitais: FC 117 bpm; PA 210 x 145 mmHg; FR 21 irpm; e dextro 120. Ainda com base na situação hipotética apresentada, e na imagem da ressonância magnética de crânio acima, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A principal hipótese diagnóstica é um AVCI com lesão sequelar em região occipital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A principal hipótese diagnóstica é um AVC hemorrágico com hemorragia intraparenquimatosa em região occipital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A principal hipótese diagnóstica é uma hemorragia subaracnóidea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A principal hipótese diagnóstica é uma hemorragia subdural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A principal hipótese diagnóstica é a síndrome da encefalopatia posterior reversível.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A paciente apresenta um quadro clínico clássico de emergência hipertensiva, caracterizado por níveis pressóricos extremamente elevados (PA 210 x 145 mmHg) associados a sintomas neurológicos e visuais (cefaleia, vômitos, turvação visual e escotomas). A imagem da ressonância magnética, especificamente na sequência FLAIR, mostra áreas de hipersinal (branco) corticais e subcorticais, de forma bilateral e relativamente simétrica, localizadas predominantemente nos lobos occipitais. Esse achado radiológico, somado à clínica de hipertensão severa, é a descrição típica da Síndrome da Encefalopatia Posterior Reversível (PRES).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Um AVCI costuma seguir um território vascular específico (como o da artéria cerebral média ou posterior) e geralmente é unilateral. Além disso, o termo lesão sequelar refere-se a um evento antigo, o que não condiz com a evolução aguda/subaguda e o edema visível na imagem atual.\n\nAlternativa b) Incorreta. A hemorragia intraparenquimatosa apresentaria uma imagem de efeito de massa focal e densidade/sinal característicos de sangue, dependendo do tempo de evolução, e raramente se manifestaria de forma bilateral e simétrica nos lobos occipitais como visto no caso.\n\nAlternativa c) Incorreta. A hemorragia subaracnoidea apresenta-se clinicamente com cefaleia súbita e intensa (a pior da vida) e, nos exames de imagem, o sangue é visualizado preenchendo os sulcos, fissuras e cisternas cerebrais, e não como um edema no parênquima dos lobos posteriores.\n\nAlternativa d) Incorreta. O hematoma subdural é uma coleção de sangue extra-axial (fora do cérebro), geralmente em formato de crescente, que causa compressão do parênquima adjacente e desvio de estruturas da linha média, o que é completamente diferente do padrão de lesão interna dos lobos cerebrais visualizado na ressonância.\n\nAlternativa e) Correta. A PRES é causada por uma falha na autorregulação do fluxo sanguíneo cerebral diante de picos hipertensivos, resultando em edema vasogênico. Ocorre preferencialmente nas regiões posteriores do cérebro devido à menor densidade de inervação simpática nos vasos da circulação posterior (território vertebrobasilar), o que torna essa região mais vulnerável ao aumento da pressão hidrostática. Os sintomas visuais e a cefaleia são manifestações comuns, e a reversibilidade é a marca da síndrome após o controle pressórico adequado.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica",
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/7ca24cd65c282acdee1c635af871e0b56dca06d24fdda362b761cca50868fa64.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_89951b36-1821-45a9-82de-5449284db839_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:32.369Z"
+  },
+  {
+    "id": "AJUDA_89981274-dca3-456c-aa4e-42e8aacac696",
+    "originalId": "89981274-dca3-456c-aa4e-42e8aacac696",
+    "statement": "Mulher de 60 anos, menopausada há 5 anos, vem à consulta com quadro de sangramento vaginal infrequente, em pequena quantidade, acíclico. Nega outras queixas. Exame físico sem alterações. Ultrassom transvaginal evidenciou endométrio linear medindo 1.4 mm. Qual a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pólipo endometrial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Atrofia endometrial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Mioma submucoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiperplasia endometrial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve uma paciente de 60 anos com sangramento uterino anormal na pós-menopausa. Diante desse sintoma, a principal preocupação médica é a exclusão de câncer de endométrio. A investigação inicial padrão é a ultrassonografia transvaginal para avaliar a espessura endometrial.\n\nEm mulheres na pós-menopausa que apresentam sangramento, o ponto de corte estabelecido pela literatura para considerar o endométrio como de baixo risco para malignidade é uma espessura menor ou igual a 4 ou 5 mm. No caso em questão, o endométrio apresenta-se linear e mede apenas 1,4 mm. Essa medida é extremamente reduzida, indicando que a mucosa uterina está muito fina devido à falta de estímulo estrogênico natural dessa fase da vida.\n\nA atrofia endometrial é a causa mais frequente de sangramento na pós-menopausa, sendo responsável por aproximadamente 60% a 80% dos casos. O sangramento ocorre porque o endométrio atrófico torna-se friável, e os vasos superficiais podem se romper facilmente, causando perdas sanguíneas em pequena quantidade e acíclicas, exatamente como descrito no enunciado.\n\nAlternativa (a) Incorreta: O pólipo endometrial é uma causa comum de sangramento, mas sua imagem ultrassonográfica típica é a de um espessamento focal, uma massa ecogênica dentro da cavidade ou um aumento da espessura endometrial global. Um endométrio linear de 1,4 mm exclui a presença de pólipos clinicamente significativos.\n\nAlternativa (b) Correta: A medida de 1,4 mm é o achado clássico da atrofia endometrial na ultrassonografia. Por ser a causa mais comum de sangramento nessa faixa etária e ser compatível com o achado do exame de imagem, esta é a hipótese diagnóstica mais provável.\n\nAlternativa (c) Incorreta: O mioma submucoso é um tumor benigno do miométrio que se projeta para a cavidade endometrial. Na ultrassonografia, ele seria visualizado como uma formação nodular hipoecoica que distorce a linha endometrial ou aumenta a espessura da cavidade, o que não condiz com o endométrio linear e fino relatado.\n\nAlternativa (d) Incorreta: A hiperplasia endometrial caracteriza-se pelo crescimento excessivo do endométrio devido ao estímulo estrogênico sem oposição da progesterona. Para sugerir hiperplasia na pós-menopausa com sangramento, esperaríamos encontrar um endométrio espessado, geralmente com medida superior a 5 mm e aspecto heterogêneo ou cístico ao ultrassom.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:32.369Z"
+  },
+  {
+    "id": "AJUDA_89a164aa-316c-4753-9b5c-369780a4caf7",
+    "originalId": "89a164aa-316c-4753-9b5c-369780a4caf7",
+    "statement": "A conduta correta em relação ao aumento de casos de coqueluche no Brasil consiste em",
+    "options": [
+      {
+        "id": "A",
+        "text": "administrar a pentavalente, esquema vacinal composto por três doses (aos 2, 4 e 6 meses de vida), seguidas de reforços com a vacina DTPw aos 15 meses e aos 4 anos de idade, além da vacinação de gestantes, puérperas e de profissionais da área da saúde, com a dTpa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "manter a vigilância sobre os casos suspeitos como a principal medida para prevenir o aumento da doença em todas as faixas etárias, visto que, em 2023, as vacinas apresentaram aumento da cobertura, em comparação com o ano de 2022.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar ações de alerta aos profissionais de saúde da área assistencial, investigar contatos de casos confirmados, ofertar tratamento oportuno em casos suspeitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "manter a administração da pentavalente, esquema vacinal composto por três doses (aos 2, 4 e 6 meses de vida), seguidas de reforços com a vacina DTPw aos 15 meses e aos 4 anos de idade, a fim de prevenir óbitos em lactentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA coqueluche é uma doença infecciosa aguda, causada pela bactéria Bordetella pertussis, que afeta o trato respiratório. No cenário de aumento de casos no Brasil, as medidas de controle baseiam-se fundamentalmente na manutenção de altas coberturas vacinais e na proteção dos grupos mais vulneráveis, especialmente os lactentes menores de seis meses, que apresentam maior risco de complicações e óbito.\n\nAlternativa A (Correta): Esta alternativa descreve com precisão as diretrizes do Programa Nacional de Imunizações (PNI). O esquema primário para crianças é feito com a vacina Pentavalente (DTP + HepB + Hib) aos 2, 4 e 6 meses de idade. Os reforços são realizados com a vacina DTPw aos 15 meses e aos 4 anos. Além disso, a estratégia de vacinação com a dTpa (tríplice bacteriana acelular do tipo adulto) em gestantes (a partir da 20ª semana), puérperas (até 45 dias após o parto, caso não tenham se vacinado na gestação) e profissionais de saúde é fundamental para a transferência de anticorpos transplacentários e para evitar a transmissão da bactéria para os recém-nascidos (estratégia casulo). Recentemente, o Ministério da Saúde também incluiu profissionais que atuam em berçários e creches no grupo da dTpa.\n\nAlternativa B (Incorreta): Embora a vigilância epidemiológica seja crucial para identificar surtos, a principal medida preventiva em saúde pública para o controle da coqueluche é a vacinação. Ainda que tenha havido uma melhora discreta na cobertura vacinal em 2023, os níveis ainda permanecem abaixo da meta de 95%, o que justifica a ênfase na imunização ativa.\n\nAlternativa C (Incorreta): As ações de alerta, investigação de contatos e tratamento oportuno (geralmente com azitromicina ou claritromicina) são medidas de controle secundário e bloqueio de transmissão. No entanto, sozinhas, elas não são suficientes para conter o aumento de casos em nível populacional sem a sustentação da imunidade coletiva via vacinação.\n\nAlternativa D (Incorreta): Apesar de descrever corretamente o calendário infantil de rotina (Pentavalente e reforços com DTPw), a alternativa é considerada incompleta frente à alternativa A. Para prevenir óbitos em lactentes jovens (que ainda não completaram o esquema primário), a vacinação da gestante com dTpa é a intervenção mais eficaz, pois garante a proteção passiva do bebê nos primeiros meses de vida.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações",
+      "Coqueluche"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:32.369Z"
+  },
+  {
+    "id": "AJUDA_89a67330-07d1-4582-84a2-bf94932bcedd",
+    "originalId": "89a67330-07d1-4582-84a2-bf94932bcedd",
+    "statement": "Com relação ao processo de intubação orotraqueal no paciente traumatizado, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A pressão na cricoide durante a intubação endotraqueal aumenta a visão da laringe e pode reduzir o risco de aspiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Se um paciente com trauma cranioencefálico e facial estiver em apneia, está indicada a intubação nasotraqueal, pela maior facilidade técnica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A manipulação laríngea BURP na cartilagem tireoide pode ajudar a visualizar as cordas vocais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Na intubação orotraqueal ou nasotraqueal, o médico pode realizar uma hiperextensão cervical para facilitar a intubação, permitindo oxigenação rápida e efetiva ao paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Na suspeita de fratura de coluna cervical, deve-se obter estudo de imagem (raio X ou tomografia) antes de proceder à intubação orotraqueal do paciente, para evitar sequelas neurológicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a) Incorreta. A pressão na cartilagem cricoide é conhecida como Manobra de Sellick. Embora tenha sido historicamente recomendada para reduzir o risco de aspiração passiva de conteúdo gástrico, estudos atuais mostram que ela não é totalmente eficaz para esse fim e, frequentemente, dificulta a visualização das cordas vocais por distorcer a anatomia da laringe, podendo tornar a intubação mais difícil.\n\nAlternativa b) Incorreta. Existem dois erros principais aqui: primeiro, a intubação nasotraqueal requer que o paciente esteja em respiração espontânea para que o médico possa ouvir a passagem do ar e guiar o tubo; logo, é contraindicada em apneia. Segundo, a presença de trauma facial e suspeita de fratura de base de crânio (comumente associada ao trauma cranioencefálico grave) é uma contraindicação absoluta à via nasotraqueal, devido ao risco de inserção inadvertida do tubo na cavidade craniana.\n\nAlternativa c) Correta. A manobra de BURP consiste na aplicação de pressão na cartilagem tireoide para trás, para cima e para a direita (Backwards, Upwards, Rightwards Pressure). Ela é uma técnica auxiliar durante a laringoscopia que tem como objetivo específico melhorar a visualização da glote, facilitando a passagem do tubo orotraqueal.\n\nAlternativa d) Incorreta. No paciente politraumatizado, a hiperextensão cervical é estritamente proibida até que a lesão da coluna cervical seja descartada. A manobra de \"sniffing position\" (posição de olfação), que envolve extensão da cabeça, deve ser substituída pela estabilização manual em linha (MILS - Manual In-Line Stabilization) feita por um assistente, mantendo o pescoço em posição neutra durante todo o procedimento de intubação.\n\nAlternativa e) Incorreta. De acordo com os protocolos do ATLS (Advanced Trauma Life Support), a manutenção da via aérea com proteção da coluna cervical é a prioridade número um (letra A do ABCDE). Se o paciente necessita de uma via aérea definitiva, o médico deve proceder à intubação imediatamente com estabilização manual. O tratamento de emergência não deve ser retardado para a realização de exames de imagem, pois a hipóxia matará o paciente muito antes de uma possível lesão medular ser diagnosticada.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:32.369Z"
+  },
+  {
+    "id": "AJUDA_89ac7940-0cef-427f-b001-8f1271413bda",
+    "originalId": "89ac7940-0cef-427f-b001-8f1271413bda",
+    "statement": "Segundo a Associação Americana de Anestesiologia (ASA), uma paciente com 40 anos, diabética bem controlada com medicamentos e que tem exame físico e laboratorial normal no pré-operatório, pode ser classificada como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ASA I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ASA II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ASA III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ASA IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A classificação da ASA (American Society of Anesthesiologists) é utilizada mundialmente para estratificar o estado físico do paciente e o risco anestésico antes de um procedimento cirúrgico. Ela foca na gravidade das doenças sistêmicas e não apenas na cirurgia em si.\n\nAlternativa a) Incorreta. A classificação ASA I é destinada a pacientes completamente saudáveis, não fumantes, que não fazem uso de medicamentos contínuos e não possuem doenças sistêmicas. Pelo fato de a paciente ser diabética, ela não pode ser classificada como ASA I, mesmo que a doença esteja bem controlada.\n\nAlternativa b) Correta. O status ASA II é definido para pacientes que apresentam uma doença sistêmica leve a moderada, sem limitações funcionais. Isso inclui pacientes com diabetes mellitus ou hipertensão arterial bem controlados por medicamentos, tabagistas sem doença pulmonar obstrutiva crônica (DPOC), gestantes, indivíduos com obesidade leve (IMC entre 30 e 40) e consumidores sociais de álcool. A paciente descrita no enunciado tem 40 anos, diabetes controlado e exames normais, o que a enquadra perfeitamente nesta categoria.\n\nAlternativa c) Incorreta. O ASA III é atribuído a pacientes que possuem doenças sistêmicas graves, que resultam em limitação funcional real. Exemplos comuns são o diabetes mal controlado com complicações vasculares, hipertensão mal controlada, DPOC, obesidade mórbida (IMC maior ou igual a 40) ou histórico de infarto do miocárdio ocorrido há mais de três meses. A paciente em questão está clinicamente estável e com exames normais; portanto, não possui a gravidade exigida para o ASA III.\n\nAlternativa d) Incorreta. A classificação ASA IV é reservada para pacientes com doenças sistêmicas graves que representam uma ameaça constante à vida. Estão incluídos aqui pacientes com infarto do miocárdio ou acidente vascular cerebral recente (há menos de três meses), insuficiência cardíaca grave, sepse ou falência renal crônica sem a realização de diálise regular. O quadro clínico da paciente é de estabilidade, sem risco iminente de morte por sua condição de base.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:32.369Z"
+  },
+  {
+    "id": "AJUDA_89ad86ae-25cc-46b2-a9db-2cd0dc995945",
+    "originalId": "89ad86ae-25cc-46b2-a9db-2cd0dc995945",
+    "statement": "A estratégia Consultório na Rua, instituída pela Política Nacional de Atenção Básica, visa ampliar o acesso da população em situação de rua aos serviços de saúde, ofertando, de maneira mais oportuna, atenção integral à saúde para esse grupo populacional. \nSobre a organização das equipes dos Consultórios na Rua, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "São organizadas em 4 modalidades (I, II, III e IV).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A Modalidade I é formada minimamente por 6 (seis) profissionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A Modalidade II é formada minimamente por 8 (oito) profissionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A Modalidade III é formada minimamente por 6 (seis) profissionais, acrescida de um profissional médico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A presença do Agente Social é obrigatória em todas as modalidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda as diretrizes da Política Nacional de Atenção Básica (PNAB) no que diz respeito às equipes de Consultório na Rua (eCR). Essas equipes são estratégias itinerantes de Atenção Primária voltadas para pessoas em situação de rua, com composição multiprofissional variável de acordo com a modalidade.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A estratégia Consultório na Rua prevê a existência de apenas 3 modalidades de equipes: Modalidade I, Modalidade II e Modalidade III. Não existe uma Modalidade IV descrita na normativa vigente.\n\nAlternativa b) Incorreta. A Modalidade I deve ser formada por, no mínimo, 4 profissionais. Dentre esses, pelo menos 2 devem possuir nível superior, escolhidos obrigatoriamente entre as categorias de enfermeiro, psicólogo, assistente social ou terapeuta ocupacional.\n\nAlternativa c) Incorreta. A Modalidade II deve ser formada por, no mínimo, 6 profissionais. Dentre esses, pelo menos 3 devem possuir nível superior, também escolhidos entre as categorias de enfermeiro, psicólogo, assistente social ou terapeuta ocupacional.\n\nAlternativa d) Correta. A Modalidade III é definida pela estrutura da Modalidade II (que possui no mínimo 6 profissionais) acrescida obrigatoriamente de 1 profissional médico. Assim, a Modalidade III totaliza, no mínimo, 7 profissionais, sendo a única modalidade onde a presença do médico é exigida na composição mínima.\n\nAlternativa e) Incorreta. O Agente Social é um dos profissionais que podem compor as equipes de Consultório na Rua, assim como técnicos de enfermagem, dentistas e outros. No entanto, sua presença não é obrigatória em todas as modalidades. A regra estabelece que a equipe seja montada a partir de uma lista de profissionais permitidos, respeitando o número mínimo de membros e o número mínimo de profissionais de nível superior, mas há flexibilidade na escolha de quais profissionais específicos (como o agente social) integrarão as modalidades I e II.\n\nGabarito: Letra (d).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:32.369Z"
+  }
+]

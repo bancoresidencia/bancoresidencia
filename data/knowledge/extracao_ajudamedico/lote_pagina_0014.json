@@ -1,0 +1,513 @@
+[
+  {
+    "id": "AJUDA_03915d6f-76c7-458e-b6b0-3db2efc42393",
+    "originalId": "03915d6f-76c7-458e-b6b0-3db2efc42393",
+    "statement": "Paciente do sexo feminino, 60 anos, com pancreatite aguda biliar Balthazar D, com início dos sintomas há 7 dias e com coledocolitíase anictérica. Qual a conduta correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colecistectomia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "CPRE e em seguida colecistectomia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Controle radiológico em 6 a 8 semanas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Colecistectomia com colangiografia intra-operatória",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, é fundamental analisar três pontos-chave: o tempo de evolução (7 dias), a gravidade radiológica (Balthazar D) e a presença de coledocolitíase sem icterícia (anictérica).\n\nA classificação de Balthazar D indica a presença de uma coleção fluida peripancreática única, o que coloca esta pancreatite em um espectro de maior gravidade ou maior resposta inflamatória local do que os graus A, B ou C. Em pancreatites biliares leves, o consenso é realizar a colecistectomia ainda na mesma internação. No entanto, quando há coleções peripancreáticas ou necrose, a conduta deve ser adiada.\n\nAlternativa a) Incorreta. Realizar a colecistectomia precocemente (no 7º dia) em uma paciente com Balthazar D é arriscado. A inflamação intensa e a presença de coleções tornam a dissecção cirúrgica difícil e aumentam as chances de complicações, como a infecção de coleções que estavam estéreis e lesões de vias biliares.\n\nAlternativa b) Incorreta. A CPRE (Colangiopancreatografia Retrógrada Endoscópica) está indicada na pancreatite biliar apenas se houver colangite associada ou obstrução biliar persistente evidenciada por icterícia. Como a paciente é anictérica, não há indicação de CPRE imediata. A colecistectomia subsequente no 7º dia também seria precoce para o quadro de Balthazar D.\n\nAlternativa c) Correta. Esta é a conduta recomendada pelas diretrizes internacionais (como as da International Association of Pancreatology). Em casos de pancreatite com coleções (Balthazar D ou E) ou necrose, deve-se aguardar a resolução do processo inflamatório agudo e a estabilização das coleções peripancreáticas. O período de 6 a 8 semanas é o tempo necessário para que a inflamação retroceda, as coleções sejam reabsorvidas ou se organizem, permitindo uma cirurgia definitiva (colecistectomia) muito mais segura. O controle radiológico é essencial para confirmar essa melhora antes de intervir.\n\nAlternativa d) Incorreta. Embora a colangiografia intraoperatória seja útil para tratar a coledocolitíase durante a colecistectomia, o erro desta alternativa reside no momento da indicação cirúrgica. O \"timing\" para operar uma paciente com Balthazar D não é na fase aguda (7º dia), mas sim após a resolução da inflamação local.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares",
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:13.407Z"
+  },
+  {
+    "id": "AJUDA_039907a6-bba5-44cb-885e-ecd2186b5a23",
+    "originalId": "039907a6-bba5-44cb-885e-ecd2186b5a23",
+    "statement": "Uma paciente com diagnóstico confirmado de lúpus eritematoso sistêmico em acompanhamento ambulatorial refere desenvolvimento insidioso de edema em membros inferiores, hematúria e redução gradual de acuidade visual nos últimos três meses. A avaliação laboratorial revela proteinúria significativa, elevação de creatinina sérica e redução de complemento C3 e C4. Biópsia renal é realizada para confirmação diagnóstica. Qual classificação histológica de glomerulonefrite lúpica é mais frequentemente associada com prognóstico mais grave e maior necessidade de terapia imunossupressora agressiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mesangial mínima com envolvimento predominantemente endotelial e preservação da arquitetura glomerular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Proliferativa segmentar e focal, com ciclos alternados de atividade e remissão com prognóstico intermediário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Proliferativa difusa, caracterizada por aumento celular em mais de 50% dos glomérulos com potencial de progressão rápida para insuficiência renal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Membranosa pura sem sinais de proliferação celular e sem redução apreciável de complemento sérico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Esclerose glomerular avançada com fibrose intersticial associada a redução irreversível da função renal precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a Nefropatia Lúpica, uma das complicações mais graves do Lúpus Eritematoso Sistêmico (LES). O quadro clínico descrito (edema, hematúria, elevação de creatinina e queda de complemento) é clássico de uma síndrome nefrítica-nefrótica, sugerindo uma forma agressiva de acometimento renal.\n\nAlternativa (a) Incorreta: Refere-se às classes I (Mesangial mínima) e II (Mesangial proliferativa) da classificação da International Society of Nephrology/Renal Pathology Society (ISN/RPS). Nestas classes, o acometimento é leve, geralmente apresentando-se com sedimento urinário inocente ou proteinúria mínima. O prognóstico é excelente e raramente exige terapia imunossupressora agressiva.\n\nAlternativa (b) Incorreta: Descreve a Glomerulonefrite Lúpica Classe III (Focal). Por definição, ela envolve menos de 50% dos glomérulos na biópsia renal. Embora seja uma forma proliferativa e necessite de tratamento, seu prognóstico é considerado intermediário e menos grave do que a forma que atinge a maioria dos glomérulos.\n\nAlternativa (c) Correta: Descreve a Glomerulonefrite Lúpica Classe IV (Proliferativa Difusa). Esta é a forma mais comum e mais grave da doença renal no lúpus. Histologicamente, caracteriza-se pelo envolvimento de 50% ou mais dos glomérulos, apresentando hipercelularidade endocapilar, lesões em \"alça de arame\" (wire loops) e depósitos subendoteliais exuberantes. É a classe que mais consome complemento sérico e a que apresenta maior risco de progressão rápida para insuficiência renal terminal, exigindo obrigatoriamente terapia de indução agressiva com corticoides em doses altas associados a ciclofosfamida ou micofenolato de mofetila.\n\nAlternativa (d) Incorreta: Descreve a Classe V (Membranosa). Esta classe manifesta-se tipicamente com síndrome nefrótica (proteinúria maciça), mas o sedimento urinário costuma ser menos ativo e os níveis de complemento (C3 e C4) podem estar normais em muitos casos. Embora tenha morbidade associada, não costuma evoluir com a rapidez e a agressividade da Classe IV no que tange à perda de função renal aguda.\n\nAlternativa (e) Incorreta: Refere-se à Classe VI (Esclerosante Avançada). Nesta fase, mais de 90% dos glomérulos já sofreram esclerose global e há fibrose intersticial extensa. Representa o estágio final da doença renal. Embora o prognóstico funcional seja péssimo (irreversibilidade), não há indicação de terapia imunossupressora agressiva, pois o tecido renal já foi substituído por cicatriz; o tratamento aqui é a terapia renal substitutiva (diálise ou transplante).",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:13.407Z"
+  },
+  {
+    "id": "AJUDA_039d9aa0-b667-4c7d-b5db-4fc3aeabe6f6",
+    "originalId": "039d9aa0-b667-4c7d-b5db-4fc3aeabe6f6",
+    "statement": "Homem de 52 anos, previamente hígido, apresenta episódios recorrentes de diarreia aquosa e rubor facial súbito. Tomografia de abdome com contraste evidencia nódulo sólido no mesentério, próximo à região da artéria mesentérica superior, com captação na fase arterial. Colonoscopia sem alterações significativas. Endoscopia digestiva alta normal.\n\nQuais são, respectivamente, a origem embriológica e a localização mais prováveis do tumor primário responsável pelo quadro descrito?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mesenquimal; mesentério.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Epitelial; intestino delgado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Linfoide; linfonodos mesentéricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Linfoide; peritoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Epitelial; pâncreas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito, caracterizado pela tríade de diarreia aquosa, rubor facial súbito (flushing) e a presença de uma massa mesentérica com realce arterial, é patognomônico da Síndrome Carcinoide. Esta síndrome é causada pela secreção de substâncias vasoativas, principalmente a serotonina, por tumores neuroendócrinos (TNE).\n\nPara que os sintomas sistêmicos ocorram, os metabólitos do tumor devem alcançar a circulação hepática sem serem inativados pelo fígado, o que geralmente acontece quando há metástases hepáticas ou quando o tumor drena diretamente para a circulação sistêmica através de linfonodos mesentéricos volumosos.\n\nAnálise dos componentes da questão:\n\n1. Origem Embriológica: Os tumores neuroendócrinos derivam de células do sistema neuroendócrino difuso. Embora essas células tenham funções endócrinas e neurológicas, elas são classificadas histologicamente como células EPITELIAIS. Portanto, a origem é epitelial.\n\n2. Localização do Tumor Primário: O local mais comum para tumores neuroendócrinos que causam síndrome carcinoide é o intestino delgado (especialmente o íleo distal, derivado do intestino médio ou midgut). O achado tomográfico de um nódulo sólido no mesentério, próximo à artéria mesentérica superior, com captação de contraste e frequentemente associado a uma reação desmoplástica (fibrose), é uma apresentação clássica da disseminação linfonodal desses tumores, enquanto o tumor primário no intestino pode ser pequeno e não detectado na colonoscopia ou endoscopia digestiva alta.\n\nAnálise das alternativas:\n\na) INCORRETA. Tumores de origem mesenquimal (como o GIST – tumor estromal gastrointestinal) não produzem substâncias vasoativas que causem rubor facial e diarreia típicos da síndrome carcinoide.\n\nb) CORRETA. Os tumores neuroendócrinos são de linhagem epitelial e o intestino delgado é o sítio primário mais frequente associado a este quadro clínico e ao achado de massa mesentérica com reação desmoplástica.\n\nc) INCORRETA. A origem linfoide (linfomas) poderia causar massas mesentéricas, mas não explicaria os sintomas de rubor facial e diarreia paroxística (síndrome carcinoide).\n\nd) INCORRETA. Além da origem linfoide estar incorreta, a localização peritoneal primária não é a apresentação típica descrita; o quadro aponta para um tumor primário de víscera oca com acometimento linfonodal/mesentérico.\n\ne) INCORRETA. Embora o pâncreas possa originar tumores neuroendócrinos (como insulinomas ou gastrinomas), a síndrome carcinoide clássica com rubor e diarreia aquosa associada a uma massa no mesentério da artéria mesentérica superior é muito mais típica dos tumores do intestino delgado (íleo). O pâncreas é um órgão retroperitoneal e suas neoplasias neuroendócrinas costumam ter apresentações clínicas distintas.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tumores Neuroendócrinos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:13.407Z"
+  },
+  {
+    "id": "AJUDA_03b7a31d-46ce-42f7-9f58-eadf5467c06b",
+    "originalId": "03b7a31d-46ce-42f7-9f58-eadf5467c06b",
+    "statement": "O pré-natal é um momento importante para o cuidado em saúde materno-fetal e familiar. No contexto da Atenção Primária à Saúde (APS), durante as consultas de pré-natal, tem-se a oportunidade de realizar prevenção e promoção em saúde, com impacto direto na morbimortalidade materno-infantil. Entre as ações de prevenção estão a investigação ativa e seguimento de doenças com possibilidade de transmissão vertical (por exemplo, HIV, Hepatite B). O vírus linfotrópico de células T humanas (HTLV) ataca principalmente as células do sistema imunológico, podendo provocar diversas doenças (neurológica, dermatológica e oftalmológica), além de cânceres como a leucemia/linfoma de células T do adulto (ATL). Uma vez adquirida, a infecção pelo HTLV permanece por toda a vida e, embora a maioria das pessoas com a infecção não manifeste sintomas, elas podem transmitir o vírus. Existem quatro tipos de HTLV, sendo os mais comuns o HTLV 1 e o HTLV 2. Considerando isso, em 2023, a Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde (CONITEC) aprovou a inclusão da investigação de HTLV no SUS, para todas as gestantes, durante o pré-natal e, em abril de 2024, essa decisão se tornou pública, através da Portaria SECTICS/MS nº 13. Sobre este tema, considere as afirmativas a seguir. \n\nI. O rastreio para HTLV deve ser feito uma vez durante o pré-natal, preferencialmente no primeiro trimestre. \nII. A infecção pelo HTLV em gestante, parturiente ou puérpera e da criança exposta ao risco de transmissão vertical do HTLV é de notificação obrigatória desde 2024. \nIII. Além de gestantes, outras situações em que se deve realizar a testagem diagnóstica para HTLV incluem doadores de leite humano, crianças expostas ao HTLV, familiares e parcerias sexuais de pessoas vivendo com HTLV. \nIV. Diante da detecção de anticorpos para HTLV, a via de parto vaginal está contraindicada. \n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda as recentes atualizações nas diretrizes brasileiras sobre o Vírus Linfotrópico de Células T Humanas (HTLV) no âmbito do Sistema Único de Saúde (SUS). Em 2023 e 2024, houve mudanças significativas visando à redução da transmissão vertical e ao controle epidemiológico desta infecção.\n\nAnálise das afirmativas:\n\nAfirmativa I (Correta): De acordo com as novas diretrizes do Ministério da Saúde e a recomendação da CONITEC (2023), o rastreio universal para HTLV-1/2 deve ser realizado em todas as gestantes durante o pré-natal. A orientação é que a testagem ocorra uma vez, preferencialmente no primeiro trimestre, de forma semelhante ao rastreio de outras infecções, como HIV, sífilis e hepatites.\n\nAfirmativa II (Correta): Por meio da Portaria GM/MS nº 3.428, de março de 2024, a infecção pelo HTLV em gestantes, parturientes, puérperas e a exposição de crianças ao risco de transmissão vertical foram incluídas na Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública. Isso visa melhorar o monitoramento e o cuidado com esse grupo específico.\n\nAfirmativa III (Correta): A testagem diagnóstica deve ser ampliada para além do pré-natal. Doadoras de bancos de leite humano devem ser testadas para evitar a transmissão pelo leite. Crianças expostas (filhos de mães soropositivas) precisam de seguimento e testes confirmatórios. Além disso, o rastreamento de parceiros sexuais e familiares de pessoas vivendo com HTLV é fundamental para o aconselhamento e a interrupção da cadeia de transmissão.\n\nAfirmativa IV (Incorreta): A infecção pelo HTLV, por si só, não contraindica o parto vaginal. Ao contrário do que ocorre no HIV, em que a carga viral influencia a via de parto, a principal via de transmissão vertical do HTLV é o aleitamento materno (transmissão pós-natal). Portanto, a principal intervenção para prevenir a transmissão vertical do HTLV é a contraindicação absoluta da amamentação, com a substituição do leite materno por fórmula infantil, e não a realização obrigatória de cesariana.\n\nAnálise do Gabarito:\nComo as afirmativas I, II e III estão corretas e a IV está incorreta, a alternativa correta é a letra (d).",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Infecções Congênitas na Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:13.407Z"
+  },
+  {
+    "id": "AJUDA_03c082f6-782d-4e21-b70f-daf1fbcc4e81",
+    "originalId": "03c082f6-782d-4e21-b70f-daf1fbcc4e81",
+    "statement": "O abdome agudo é uma das condições mais relevantes no atendimento de emergência. Sobre o tema, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A dor visceral é tipicamente bem delimitada, e o paciente, em geral, consegue apontar com exatidão o local de maior intensidade dolorosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O sinal de chandelier corresponde a uma vesícula biliar distendida e palpável, acompanhada de icterícia obstrutiva, achado típico de tumores periampulares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No contexto do abdome agudo, a laparoscopia diagnóstica pode auxiliar tanto no diagnóstico quanto na conduta terapêutica. Todavia, a presença de distensão intestinal significativa constitui contraindicação absoluta à sua realização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A apendicite aguda constitui a causa mais frequente de abdome agudo não obstétrico durante a gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. A dor visceral é transmitida por fibras autonômicas não mielinizadas (fibras C) e se caracteriza por ser difusa, profunda, mal delimitada e geralmente percebida na linha média abdominal (epigástrio, mesogástrio ou hipogástrio). A dor que é aguda, bem localizada e que o paciente consegue apontar com precisão é a dor somática (ou parietal), decorrente da irritação do peritônio parietal inervado por fibras somáticas (fibras A-delta).\n\nAlternativa b: Incorreta. O sinal de Chandelier consiste na dor intensa à mobilização do colo uterino ao toque vaginal, sendo um achado clássico da Doença Inflamatória Pélvica (DIP). A descrição de vesícula biliar palpável e indolor associada a icterícia obstrutiva corresponde ao sinal de Courvoisier-Terrier, sugestivo de neoplasias periampulares (como o adenocarcinoma de cabeça de pâncreas).\n\nAlternativa c: Incorreta. A distensão intestinal acentuada dificulta a visualização cirúrgica e eleva o risco de lesão iatrogênica de alça durante a introdução de trocartes, constituindo uma contraindicação relativa, e não absoluta, à videolaparoscopia. Em muitas situações, a técnica aberta (Hasson) permite o acesso seguro à cavidade por cirurgiões experientes.\n\nAlternativa d: Correta. A apendicite aguda é, comprovadamente, a causa mais comum de abdome agudo cirúrgico não obstétrico no ciclo gravídico-puerperal, com maior incidência no segundo trimestre de gestação. O diagnóstico pode ser desafiador devido ao deslocamento do apêndice cecal superiormente e lateralmente pelo útero gravídico.\n\nGabarito: Letra d.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:13.407Z"
+  },
+  {
+    "id": "AJUDA_03c13912-eb6e-4dda-888a-f4731a16b350",
+    "originalId": "03c13912-eb6e-4dda-888a-f4731a16b350",
+    "statement": "Em relação às modificações que ocorrem no organismo materno devido à gravidez, podemos afirmar, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A hipófise aumenta tanto de volume como de peso, e isso decorre da hipertrofia e hiperplasia da adenoipófise por estímulo dos estrógenos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O hormônio estimulante da tireoide sofre diminuição pela presença da fração beta do hormônio gonadotrófico que apresenta semelhança molecular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Observa-se aumento do volume da tireoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Após o primeiro trimestre, o paratormônio se eleva em resposta à diminuição de cálcio pelo aumento do volume plasmático e da taxa de filtração glomerular, além da transferência de cálcio materno para o feto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ocorre um aumento do hormônio de crescimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda as complexas adaptações endócrinas que ocorrem no corpo da mulher durante a gestação. Para respondê-la corretamente, é necessário identificar qual das afirmações sobre a fisiologia materna está incorreta.\n\nAlternativa a) Correta. Durante a gestação, a hipófise chega a aumentar de 30% a 50% em seu tamanho e peso. Esse fenômeno ocorre principalmente devido à hiperplasia e hipertrofia das células lactotróficas (responsáveis pela prolactina) na adenohipófise, estimuladas pelos elevados níveis de estrogênio placentário.\n\nAlternativa b) Correta. Existe uma semelhança estrutural entre o hCG (gonadotrofina coriônica humana) e o TSH. Ambos compartilham a mesma subunidade alfa e possuem subunidades beta semelhantes. Devido a essa analogia, em períodos de pico de hCG (final do primeiro trimestre), esse hormônio exerce uma leve atividade tireotrófica, estimulando a glândula tireoide a produzir mais hormônios tireoidianos (T4 livre). Por feedback negativo, isso resulta em uma diminuição transitória dos níveis de TSH.\n\nAlternativa c) Correta. É comum observar um aumento moderado no volume da glândula tireoide durante a gravidez. Isso se deve ao aumento da vascularização e à hiperplasia glandular para suprir a maior demanda metabólica e a necessidade de produção hormonal aumentada.\n\nAlternativa d) Correta. A gestação promove uma perda de cálcio materno devido ao aumento do ritmo de filtração glomerular e à transferência ativa de cálcio para o esqueleto fetal, especialmente após o primeiro trimestre. Em resposta a essa tendência de queda do cálcio ionizável e ao aumento do volume plasmático, os níveis de paratormônio (PTH) se elevam progressivamente para manter a homeostase do cálcio no sangue materno.\n\nAlternativa e) Incorreta (Gabarito). Embora a placenta produza o Hormônio do Crescimento Placentário (hGH-V), que possui funções anabólicas e regula a disponibilidade de nutrientes, a secreção do hormônio de crescimento (GH) pela hipófise materna, na verdade, diminui ao longo da gestação. O GH hipofisário é suprimido pelo feedback negativo exercido pelo próprio hormônio de crescimento placentário, que se torna a forma dominante de GH na circulação materna a partir do segundo trimestre. Portanto, não se afirma que o GH (hipofisário) aumenta, mas sim que sua produção é inibida.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Modificações Fisiológicas da Gestação"
+    ],
+    "difficulty": 89.84378859546382,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:13.407Z"
+  },
+  {
+    "id": "AJUDA_03c3a464-88b0-4b25-8485-2edb44a634f1",
+    "originalId": "03c3a464-88b0-4b25-8485-2edb44a634f1",
+    "statement": "Paciente com diagnostico de endocardite infeciosa em tratamento com antibiótico, apresenta febre persistente, dor abdominal, soluços. Qual complicação mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Efeito colateral antibioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gastrite relacionada a antibioticoterapia empírica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Abscesso perivalvar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Embolização sistêmica com abscesso esplênico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Resistência bacteriana evoluindo com sepse.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Essa questão aborda as complicações extracardíacas da Endocardite Infecciosa (EI). O ponto fundamental para a resolução é identificar o significado clínico da combinação de febre persistente, dor abdominal e soluços em um paciente já em tratamento para EI.\n\nA Endocardite Infecciosa é uma doença sistêmica na qual fragmentos das vegetações valvares podem se soltar e viajar pela corrente sanguínea, causando embolia arterial em diversos órgãos. O baço é um dos locais mais comuns de embolização sistêmica. Quando ocorre um infarto esplênico por êmbolo séptico, pode haver a formação de um abscesso esplênico.\n\nA presença de soluços (singulto) é o \"pulo do gato\" da questão. O baço está localizado logo abaixo do diafragma, no hipocôndrio esquerdo. Um processo inflamatório ou um abscesso no polo superior do baço causa irritação do nervo frênico ou do próprio músculo diafragmático, resultando em soluços persistentes. A febre que não cede com o antibiótico reforça a existência de um foco infeccioso que não está sendo debelado apenas com a medicação venosa (um abscesso).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A febre medicamentosa (drug fever) pode ocorrer durante tratamentos prolongados, mas não explicaria a dor abdominal localizada e, muito menos, os soluços.\n\nAlternativa b) Incorreta. Embora antibióticos possam causar irritação gástrica, a gastrite não justifica a manutenção de febre persistente nem o quadro de soluços associado à dor abdominal neste contexto clínico de endocardite.\n\nAlternativa c) Incorreta. O abscesso perivalvar é uma complicação intracardíaca comum, especialmente em valvas aórticas e próteses. Deve-se suspeitar dele quando há febre persistente e surgimento de novos distúrbios de condução no eletrocardiograma (como um bloqueio atrioventricular de primeiro grau), mas não cursa com dor abdominal e soluços.\n\nAlternativa d) Correta. A tríade descrita (febre, dor abdominal e soluços) aponta diretamente para a embolização esplênica com formação de abscesso. O abscesso esplênico mantém a febre e a dor abdominal, enquanto a proximidade anatômica com o diafragma explica o soluço por irritação frênica/diafragmática.\n\nAlternativa e) Incorreta. A resistência bacteriana levaria a uma falha terapêutica global, com piora do estado geral, instabilidade hemodinâmica e novos sopros, mas não explicaria os sintomas localizados no abdome superior e a irritação diafragmática sugerida pelos soluços.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Endocardite Bacteriana"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:13.407Z"
+  },
+  {
+    "id": "AJUDA_03d03182-3a1a-48a6-9c17-192f3bdd14d4",
+    "originalId": "03d03182-3a1a-48a6-9c17-192f3bdd14d4",
+    "statement": "Um paciente de 65 anos, com histórico de hipertensão e tabagismo, chega à sala de emergência com queixa de dispneia súbita e dor torácica pleurítica que começou há 2 horas, após uma viagem aérea de 10h. Ao exame físico, observa-se taquicardia (FC = 110 bpm) e saturação de oxigênio de 90% ao ar ambiente.\n\nDiante da suspeita diagnóstica, qual é o exame de escolha para confirmar o diagnóstico nesse paciente que evolui hemodinamicamente estável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Radiografia de tórax antero-posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Eletrocardiograma de repouso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ecocardiograma transtorácico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ultrassonografia doppler colorido de membros inferiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tomografia computadorizada de tórax com contraste.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descrito aponta diretamente para a suspeita de tromboembolismo pulmonar (TEP). O paciente apresenta fatores de risco significativos, como idade (65 anos), tabagismo e a imobilização prolongada decorrente de uma viagem aérea de 10 horas. Os sintomas de dispneia súbita e dor pleurítica, somados aos sinais de taquicardia e hipoxemia, reforçam essa hipótese diagnóstica. Como o enunciado especifica que o paciente está hemodinamicamente estável, a estratégia diagnóstica segue o padrão para pacientes que suportam o transporte e a realização de exames de imagem complexos.\n\nAnálise das alternativas:\n\na) Incorreta. A radiografia de tórax costuma ser normal no TEP ou apresentar achados inespecíficos. Sua principal função na sala de emergência é auxiliar na exclusão de outros diagnósticos que cursam com dor torácica e dispneia, como pneumonia ou pneumotórax, mas ela não tem poder para confirmar a presença de um trombo na circulação pulmonar.\n\nb) Incorreta. O eletrocardiograma de repouso frequentemente demonstra apenas taquicardia sinusal. Embora possa apresentar sinais de sobrecarga aguda de ventrículo direito (como o clássico padrão S1Q3T3), esses achados são pouco sensíveis e não confirmam o diagnóstico de TEP, servindo mais para excluir síndromes coronarianas agudas.\n\nc) Incorreta. O ecocardiograma transtorácico é extremamente valioso na avaliação de pacientes com instabilidade hemodinâmica (choque ou hipotensão grave), pois permite identificar sinais indiretos de embolia maciça (disfunção do ventrículo direito) à beira do leito. No entanto, para o paciente estável, ele não é o exame de primeira escolha para confirmação diagnóstica.\n\nd) Incorreta. A ultrassonografia Doppler de membros inferiores é utilizada para diagnosticar trombose venosa profunda (TVP). Embora a TVP seja a origem da maioria dos casos de embolia, um Doppler negativo não exclui o TEP (pois o trombo pode ter se desprendido totalmente da veia da perna). Além disso, o exame não confirma a presença do êmbolo no pulmão.\n\ne) Correta. A tomografia computadorizada de tórax com contraste (angiotomografia de artérias pulmonares) é o exame de escolha e o atual padrão-ouro para confirmar o diagnóstico de TEP em pacientes hemodinamicamente estáveis. Ela permite a visualização direta do defeito de enchimento (trombo) dentro dos vasos pulmonares, oferecendo alta sensibilidade e especificidade para o diagnóstico definitivo.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:13.407Z"
+  },
+  {
+    "id": "AJUDA_03d0c1aa-fd85-4903-b58b-d7922a043237",
+    "originalId": "03d0c1aa-fd85-4903-b58b-d7922a043237",
+    "statement": "A respeito do manejo das principais complicações pós operatórias relacionadas ao uso de anestésicos locais, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uma complicação importante relacionada a coadministração intravenosa de ondasetrona e metoclopramida para combate de náuseas e vômitos tem sido a bradiarritmia, incluindo um ritmo de escape juncional lento e bigeminismo ventricular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A obstrução da via aérea é mais comum em decorrência da obstrução da orofaringe pela língua e pelas partes moles, como consequência dos efeitos residuais dos anestésicos gerais, analgésicos ou relaxantes musculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A anestesia geral tem efeitos profundos sobre os mecanismos de termorregulação, e é necessário o aquecimento intraoperatório ativo para manter a normotermia na maioria das condições.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipotensão e hipertensão são frequentemente encontradas nas salas de recuperação; dentre as causas para essas situações, estão a hipoxemia e a hipercapnia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A respeito do manejo das complicações pós-operatórias e da análise das alternativas apresentadas:\n\nAlternativa a: Esta afirmação está correta. A ondansetrona é um antagonista dos receptores 5-HT3 e a metoclopramida é um antagonista dopaminérgico D2. Ambas as medicações, frequentemente utilizadas para o controle de náuseas e vômitos no pós-operatório, podem influenciar a condução cardíaca e prolongar o intervalo QT. A literatura médica descreve que a administração concomitante dessas drogas pode, em casos específicos, desencadear bradiarritmias, ritmos de escape e extrassístoles como o bigeminismo.\n\nAlternativa b: Esta afirmação está correta. A obstrução mecânica da via aérea superior é a intercorrência respiratória mais comum no pós-operatório imediato. Ela ocorre porque o efeito residual de anestésicos, sedativos e bloqueadores neuromusculares reduz o tônus da musculatura da faringe, permitindo que a língua e os tecidos moles colapsem e obstruam a passagem do ar.\n\nAlternativa c: Esta afirmação está correta. A anestesia geral causa uma depressão dose-dependente do centro termorregulador hipotalâmico e inibe as respostas compensatórias fisiológicas, como a vasoconstrição e os tremores. Além disso, a vasodilatação induzida pelos anestésicos promove a redistribuição do calor do núcleo para a periferia. Por isso, o uso de métodos de aquecimento ativo é fundamental para prevenir a hipotermia perioperatória.\n\nAlternativa d: Esta é a alternativa incorreta e o gabarito da questão. Embora a hipoxemia e a hipercapnia possam, de fato, alterar a pressão arterial, elas não são classificadas como as causas mais frequentes de hipotensão e hipertensão na sala de recuperação pós-anestésica. Clinicamente, a causa mais comum de hipertensão no pós-operatório é a dor aguda e a distensão vesical (estímulo simpático), enquanto a causa mais comum de hipotensão é a hipovolemia ou o efeito residual de vasodilatação dos agentes anestésicos. Além disso, a resposta fisiológica inicial à hipoxemia e à hipercapnia costuma ser a taquicardia e a hipertensão (por estresse adrenérgico), ocorrendo hipotensão apenas em estágios críticos ou terminais de insuficiência respiratória.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Perioperatório",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:13.407Z"
+  },
+  {
+    "id": "AJUDA_03d0f044-1d31-430d-ad10-4c748a83840c",
+    "originalId": "03d0f044-1d31-430d-ad10-4c748a83840c",
+    "statement": "Homem, 55 anos de idade, portador de hemorroidas grau IV, com histórico familiar de pólipos adenomatosos colônicos em avô materno, apresenta alteração de hábito intestinal nos últimos 6 meses, com episódios frequentes de diarreia e sangramento por via retal. É portador de bloqueio atrioventricular completo e utiliza marcapasso há 3 anos. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemorroidectomia a Milligan-Morgan",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colonoscopia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ligadura elástica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pesquisa de sangue oculto nas fezes",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um paciente de 55 anos com hemorroidas grau IV, mas que apresenta sinais de alerta (*red flags*) fundamentais: alteração do hábito intestinal recente (há 6 meses), episódios de diarreia e sangramento retal. Em pacientes nessa faixa etária, a prioridade clínica é descartar neoplasias colorretais antes de tratar a patologia orificial, mesmo que esta seja evidente.\n\nAlternativa a: Incorreta. A hemorroidectomia pela técnica de Milligan-Morgan (técnica aberta) é, de fato, o tratamento cirúrgico indicado para hemorroidas de grau IV. No entanto, realizar a cirurgia sem antes investigar a mudança no hábito intestinal é uma conduta incompleta e perigosa, pois o sangramento e a diarreia podem ser sintomas de um tumor de cólon ou reto proximal, e não apenas das hemorroidas.\n\nAlternativa b: Correta. A colonoscopia é o exame de escolha e a conduta mais adequada neste caso. Ela permite a visualização direta de todo o cólon e reto, possibilitando o diagnóstico de pólipos (importante pelo histórico familiar) ou câncer colorretal, que são diagnósticos diferenciais obrigatórios diante de alteração do hábito intestinal e sangramento em pacientes acima de 45-50 anos. A presença de marca-passo exige precauções técnicas (como o uso de bisturi bipolar ou ajuste do aparelho pelo cardiologista se houver necessidade de polipectomia), mas não contraindica o exame.\n\nAlternativa c: Incorreta. A ligadura elástica é um tratamento de consultório indicado prioritariamente para hemorroidas de graus I, II e, ocasionalmente, grau III. Não é o tratamento padrão para o grau IV (prolapso persistente não redutível) e, assim como a cirurgia, não resolve a necessidade de investigação do trato intestinal superior ao canal anal.\n\nAlternativa d: Incorreta. A pesquisa de sangue oculto nas fezes é um teste de rastreamento (*screening*) para pacientes assintomáticos. Como o paciente já apresenta sintomas claros (sangramento retal visível e alteração do hábito), ele deve ser submetido diretamente a um exame diagnóstico e de visualização, como a colonoscopia, sendo a pesquisa de sangue oculto redundante e insuficiente neste cenário.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Proctologia",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:00:13.407Z"
+  }
+]

@@ -1,0 +1,531 @@
+[
+  {
+    "id": "AJUDA_222f3756-8e31-4064-aec6-2a5812ca8d55",
+    "originalId": "222f3756-8e31-4064-aec6-2a5812ca8d55",
+    "statement": "Em relação à terapia nutricional no paciente crítico, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "em pacientes previamente bem nutridos, quando a nutrição enteral não é possível, a nutrição parenteral pode ser adiada por cerca de 5-8 dias; já nos gravemente desnutridos, considerar np mais precoce.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "estudos mostram que a nutrição enteral precoce é superior ao início tardio (> 48 horas) sendo, portanto, recomendada para todos pacientes críticos incapazes de se alimentar por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a estratégia de hipocaloria permissiva não deve ser utilizada na fase aguda da doença crítica em hipótese alguma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "é obrigatório monitorar resíduo gástrico rotineiramente antes mesmo da primeira infusão; volumes > 200 ml impõem suspensão imediata da dieta enteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a suplementação de glutamina intravenosa de rotina é recomendada para todos os pacientes críticos em ne ou np por reduzir mortalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) CORRETA: Esta alternativa reflete as recomendações atuais das principais diretrizes internacionais (como ASPEN e ESPEN). Em pacientes que eram previamente saudáveis e bem nutridos, o corpo possui reservas que permitem aguardar o início da Nutrição Parenteral (NP) por cerca de 7 dias, caso a via enteral seja impossível. O início precoce da NP nesses casos não traz benefícios e aumenta o risco de complicações infecciosas. Por outro lado, em pacientes com desnutrição grave prévia ou alto risco nutricional, a NP deve ser iniciada precocemente se a Nutrição Enteral (NE) for contraindicada ou insuficiente, para evitar o agravamento do estado nutricional.\n\nAlternativa (b) INCORRETA: Embora a nutrição enteral precoce (iniciada em até 24-48 horas) seja o objetivo para a maioria dos pacientes críticos, ela não pode ser aplicada a todos. Existe uma contraindicação absoluta em casos de instabilidade hemodinâmica grave (choque não compensado, doses crescentes de vasopressores ou hipoperfusão tecidual), devido ao risco de isquemia mesentérica. A prioridade inicial é sempre a estabilização hemodinâmica.\n\nAlternativa (c) INCORRETA: A hipocaloria permissiva ou nutrição trófica (oferta de 70% das necessidades calóricas ou cerca de 10-20 kcal/kg) é, na verdade, recomendada na fase aguda inicial (primeiros 3 a 5 dias) da doença crítica. Essa estratégia visa evitar a superalimentação (overfeeding), que está associada a complicações como hiperglicemia, aumento da produção de CO2 e disfunções hepáticas.\n\nAlternativa (d) INCORRETA: O monitoramento rotineiro do Volume Residual Gástrico (VRG) deixou de ser obrigatório e é desencorajado por diversas diretrizes modernas, pois não se mostrou eficaz em reduzir a incidência de pneumonia aspirativa e acaba levando à interrupção desnecessária da dieta. Além disso, o ponto de corte mencionado (200 mL) é muito baixo; protocolos atuais costumam tolerar volumes de até 500 mL em pacientes sem outros sinais de intolerância gastrointestinal.\n\nAlternativa (e) INCORRETA: A suplementação de glutamina intravenosa de rotina não é recomendada para pacientes críticos em geral. Grandes estudos, como o REDOXS, demonstraram que a glutamina pode, inclusive, aumentar a mortalidade em pacientes com falência de múltiplos órgãos, especialmente naqueles com disfunção renal. Seu uso é restrito a populações muito específicas, como grandes queimados ou pacientes com trauma grave, e não de forma rotineira.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:45.579Z"
+  },
+  {
+    "id": "AJUDA_22312a97-760a-4af8-b82a-abea1e0e2933",
+    "originalId": "22312a97-760a-4af8-b82a-abea1e0e2933",
+    "statement": "Realizada a cardiotocografia na entrada da paciente, conforme mostra a imagem a seguir. Assinale a alternativa correta quanto à interpretação do exame.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cardiotocografia indeterminada, pois não apresenta acelerações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cardiotocografia não tranquilizadora, devido à presença de desacelerações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cardiotocografia patológica, indicando sofrimento fetal agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cardiotocografia reativa, tranquilizadora, compatível com bem-estar fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Cardiotocografia suspeita, sendo necessária repetir em decúbito lateral esquerdo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da imagem e dos parâmetros da Cardiotocografia (CTG):\n\nPara interpretar corretamente este exame, devemos analisar os quatro componentes fundamentais do traçado superior (Frequência Cardíaca Fetal - FCF) em conjunto com a atividade uterina no traçado inferior:\n\n1. Linha de base: A FCF basal encontra-se em torno de 140 bpm, o que está dentro da faixa de normalidade (110 a 160 bpm).\n2. Variabilidade: A variabilidade é classificada como moderada (amplitude entre 6 a 25 bpm), o que demonstra um sistema nervoso central fetal adequadamente oxigenado e funcional.\n3. Acelerações: Observamos nitidamente pelo menos duas acelerações transitórias (aumentos da FCF de pelo menos 15 bpm por 15 segundos) por volta dos minutos 5 e 18. A presença de acelerações define o traçado como reativo.\n4. Desacelerações: Não há evidência de desacelerações (quedas da FCF). O traçado inferior mostra contrações uterinas rítmicas e regulares, e a FCF mantém-se estável e segura durante esses eventos.\n\nAnálise das alternativas:\n\na) Incorreta. O traçado apresenta acelerações evidentes (picos na linha azul que ultrapassam a linha de base em pelo menos 15 bpm), portanto não é indeterminado sob esse critério.\n\nb) Incorreta. O exame é considerado tranquilizador. Não existem desacelerações presentes na imagem fornecida; a linha de base mantém sua estabilidade e reatividade.\n\nc) Incorreta. Uma cardiotocografia patológica (Categoria III) apresentaria sinais graves, como variabilidade ausente associada a desacelerações tardias recorrentes, desacelerações variáveis recorrentes ou padrão sinusoidal, o que é o oposto do que a imagem mostra.\n\nd) Correta. Por apresentar linha de base normal, variabilidade moderada, presença de acelerações (reatividade) e ausência de desacelerações, o traçado é classificado como Categoria I pela FIGO/ACOG. Isso indica bem-estar fetal e alta probabilidade de equilíbrio ácido-básico fetal no momento do exame.\n\ne) Incorreta. O exame não é suspeito. Ele preenche todos os critérios de normalidade. A mudança de decúbito seria uma medida clínica para corrigir traçados não tranquilizadores ou compressões funiculares, o que não se aplica a este traçado normal.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Vitalidade Fetal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/776c9d2806b015f9bc51f1286f4f5268b568e11fbbd62255892a1c5992f02186.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_22312a97-760a-4af8-b82a-abea1e0e2933_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:46.075Z"
+  },
+  {
+    "id": "AJUDA_22373707-24e5-468d-b635-e02c73eabe7a",
+    "originalId": "22373707-24e5-468d-b635-e02c73eabe7a",
+    "statement": "APS (Atenção Primária à Saúde) é o nível do sistema de saúde que oferece o cuidado mais próximo e comum, e a ESF (Estratégia Saúde da Família) é o modelo prioritário da APS no Brasil, que atua através de equipes multiprofissionais para promover, prevenir e tratar a saúde da população em um nível territorial. A Estratégia Saúde da Família caracteriza-se por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ênfase em ações curativas especializadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adscrição de território e população.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Atendimento apenas por demanda espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ausência de equipe multiprofissional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Foco em alta complexidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (a) Incorreta: A ESF fundamenta-se na promoção da saúde, prevenção de doenças e tratamento de agravos comuns na Atenção Básica. A ênfase em ações curativas especializadas é característica do modelo biomédico tradicional e dos níveis secundário e terciário de atenção (hospitais e clínicas de especialidades).\n\nAlternativa (b) Correta: A adscrição de território e de clientela é um princípio organizativo fundamental da ESF. Isso significa que a equipe de saúde é responsável por uma área geográfica delimitada e por um número específico de famílias e indivíduos que nela residem. Esse vínculo permite o acompanhamento longitudinal, a responsabilização e o conhecimento profundo das condições de vida e saúde daquela comunidade.\n\nAlternativa (c) Incorreta: A ESF trabalha com uma combinação de demanda espontânea (atendimento de intercorrências agudas) e demanda programada (ações preventivas e de acompanhamento, como consultas de pré-natal, puericultura, Hiperdia e grupos de educação em saúde). Atender \"apenas\" por demanda espontânea descaracterizaria a prevenção e a gestão do cuidado proativo.\n\nAlternativa (d) Incorreta: Uma das definições centrais da ESF é justamente a atuação por meio de equipes multiprofissionais. A equipe mínima deve ser composta por médico (preferencialmente de família e comunidade), enfermeiro, técnico de enfermagem e Agentes Comunitários de Saúde (ACS). Também pode incluir profissionais de saúde bucal e contar com o apoio do NASF (Núcleo Ampliado de Saúde da Família).\n\nAlternativa (e) Incorreta: A ESF atua no nível de Atenção Primária, que é considerado de baixa densidade tecnológica (em relação ao uso de equipamentos pesados e exames complexos), mas de alta complexidade em termos de cuidado e coordenação da rede. A \"Alta Complexidade\" na divisão do SUS refere-se a procedimentos hospitalares especializados e de alto custo, como transplantes e neurocirurgias.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:46.075Z"
+  },
+  {
+    "id": "AJUDA_223c90c8-9089-44d1-a2bc-f29b5fc5ddb5",
+    "originalId": "223c90c8-9089-44d1-a2bc-f29b5fc5ddb5",
+    "statement": "Sobre os princípios que norteiam a prática do Médico de Família e Comunidade (MFC), é correto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tem como escopo de sua atuação o atendimento de pessoas da comunidade independente de idade e questão clínica, exceto casos que devem ser referenciados para atenção secundária e ou terciária, como nos casos de saúde mental e tratamento para HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É através da aderência ao plano terapêutico que é possível se identificar uma boa relação médico-pessoa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tem sua atuação influenciada pela comunidade quando conhece os problemas de saúde mais prevalentes do território e oferece cuidado em momento oportuno a partir da realização de diagnósticos comunitários.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É um clínico qualificado quando acumula experiência ao longo do tempo de atuação profissional em uma mesma equipe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Durante o manejo, leva em consideração o contexto biológico, reconhecendo que o processo de adoecimento está fortemente ligado ao histórico pessoal e familiar de doenças.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) Incorreta: O Médico de Família e Comunidade (MFC) é um generalista que atende pessoas de todas as idades e gêneros, lidando com uma vasta gama de condições clínicas. Diferentemente do que afirma a alternativa, o manejo de condições de saúde mental e o acompanhamento de pacientes com HIV fazem parte do escopo da Atenção Primária à Saúde. O MFC deve ser capaz de manejar transtornos mentais comuns e realizar o cuidado compartilhado de pacientes com HIV, referenciando apenas casos de maior complexidade.\n\nAlternativa (b) Incorreta: A boa relação médico-pessoa na MFC é construída por meio do vínculo, da confiança e da longitudinalidade, e não exclusivamente pela adesão ao plano terapêutico. A decisão clínica é compartilhada, o que significa que o paciente tem autonomia para aceitar ou não determinadas propostas, e isso não invalida a qualidade da relação estabelecida entre ambos.\n\nAlternativa (c) Correta: Esta alternativa descreve o princípio da Orientação Comunitária. O MFC deve compreender que o indivíduo faz parte de uma coletividade e que o contexto social, econômico e cultural do território influencia diretamente a saúde. Ao realizar diagnósticos comunitários e identificar os problemas mais prevalentes na sua área de atuação, o médico consegue oferecer um cuidado mais assertivo e oportuno para aquela população específica.\n\nAlternativa (d) Incorreta: A qualificação do clínico na MFC não está ligada meramente ao tempo de atuação em uma mesma equipe, mas sim à sua capacidade técnica, competência em comunicação e habilidade de aplicar o Método Centrado na Pessoa. Embora a permanência na equipe favoreça a longitudinalidade, o acúmulo de tempo por si só não garante que o profissional seja um clínico qualificado segundo os princípios da especialidade.\n\nAlternativa (e) Incorreta: O MFC não leva em consideração apenas o contexto biológico. A prática é fundamentada no modelo biopsicossocial, o que significa que o médico deve considerar as dimensões psicológicas e sociais do paciente, além da biológica. Entender o processo de adoecimento exige olhar para a pessoa como um todo, incluindo suas crenças, medos, expectativas e o contexto social em que está inserida, indo muito além do histórico familiar de doenças.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:46.075Z"
+  },
+  {
+    "id": "AJUDA_223ea9f5-c9d4-4c70-a33f-7729cb28b727",
+    "originalId": "223ea9f5-c9d4-4c70-a33f-7729cb28b727",
+    "statement": "Um pai leva sua filha de um ano para vacinação de rotina e menciona que ela apresenta fezes amolecidas há três dias. A criança é avaliada, recebe o imunizante, soro de hidratação oral e orientações alimentares. De acordo com os níveis clássicos de prevenção, o conjunto das ações realizadas corresponde a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevenção secundária e terciária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prevenção primária e secundária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas prevenção primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas prevenção terciária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prevenção quaternária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender essa questão, devemos aplicar os conceitos de Leavell e Clark sobre os níveis de prevenção na história natural das doenças. No caso clínico apresentado, duas frentes de ação foram executadas pelo médico: a vacinação e o manejo de um quadro agudo de diarreia.\n\n1. Prevenção Primária: Ocorre no período de pré-patogênese. Inclui a promoção da saúde e a proteção específica. A vacinação (imunização) mencionada no enunciado é o exemplo mais clássico de proteção específica dentro da prevenção primária, pois visa impedir que a doença se instale no organismo.\n\n2. Prevenção Secundária: Ocorre quando a doença já está presente no indivíduo, mas em estágio inicial ou agudo. O objetivo é o diagnóstico precoce e o tratamento imediato para evitar complicações e a progressão da enfermidade. No caso, a criança já apresentava sintomas (fezes amolecidas), e a conduta de avaliá-la, prescrever soro de hidratação oral e orientar a alimentação visa tratar a condição atual e prevenir a desidratação, configurando prevenção secundária.\n\nAnálise das alternativas:\n\na) Incorreta. Existe a prevenção secundária (tratamento da diarreia), mas não há prevenção terciária. A prevenção terciária foca na reabilitação e na redução de prejuízos funcionais de doenças crônicas ou sequelas já estabelecidas.\n\nb) Correta. A vacinação corresponde à prevenção primária (proteção específica) e o manejo da queixa de diarreia (avaliação e tratamento precoce) corresponde à prevenção secundária.\n\nc) Incorreta. A prevenção primária foi realizada por meio da vacina, porém a intervenção sobre a queixa clínica de fezes amolecidas (doença já manifesta) eleva o nível de cuidado também para a prevenção secundária.\n\nd) Incorreta. A prevenção terciária é voltada para a reabilitação física e psicossocial de pacientes com sequelas ou doenças crônicas, o que não se aplica ao manejo de uma diarreia aguda ou à vacinação de rotina.\n\ne) Incorreta. A prevenção quaternária consiste na identificação de pessoas em risco de excesso de intervenções médicas (sobremedicalização) para protegê-las de intervenções desnecessárias e iatrogenias. Embora seja um conceito importante na prática médica, as ações descritas no enunciado (vacina e soro) são condutas clínicas padrão e preventivas diretas.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:46.075Z"
+  },
+  {
+    "id": "AJUDA_2241638e-f02e-4a46-82da-bf6210e6574d",
+    "originalId": "2241638e-f02e-4a46-82da-bf6210e6574d",
+    "statement": "Menino de 9 meses de idade, previamente hígido, é trazido ao PS em crise tônico-clônica generalizada há 25 minutos. Recebeu midazolam intranasal 0,5 mg/kg há 10 minutos pela equipe pré-hospitalar, sem sucesso na interrupção da crise. Exame físico: crise convulsiva generalizada persistente; SatO2 97% em uso de máscara não reinalante a 10 L/min; FC: 190 bpm; PA: 90 × 55 mmHg; glicemia capilar 96 mg/dL; T: 37,9 ºC; fontanela anterior plana. Foi realizado acesso venoso e administrado midazolam IV 0,2 mg/kg, sem cessação da crise. A próxima conduta farmacológica é administrar",
+    "options": [
+      {
+        "id": "A",
+        "text": "midazolam IV 0,2 mg/kg após 10 minutos e observar por mais 20 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fenobarbital 5 mg/kg em bolus IV, seguido de nova avaliação em 10 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "fenitoína IV 20 mg/kg em infusão lenta (20 a 30 minutos), com monitorização cardíaca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "cetamina 1 mg/kg IV, seguida de infusão contínua de 2 mg/kg/hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O paciente apresenta um quadro de Estado de Mal Epiléptico (EME), definido como uma crise convulsiva com duração superior a 5 minutos. O manejo segue uma sequência cronológica e farmacológica bem estabelecida pelos protocolos de pediatria e de neurologia.\n\nNo caso clínico, o paciente já recebeu duas doses de benzodiazepínicos: a primeira via intranasal (0,5 mg/kg) pela equipe pré-hospitalar e a segunda via intravenosa (0,2 mg/kg) no pronto-socorro. Pelos protocolos atuais, após o insucesso de duas doses de benzodiazepínicos adequadamente administradas, deve-se progredir imediatamente para a segunda etapa do tratamento, que consiste no uso de anticonvulsivantes de longa ação.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Insistir em doses repetidas de benzodiazepínicos além do recomendado (geralmente o limite são duas doses) aumenta o risco de efeitos colaterais graves, como depressão respiratória e hipotensão, além de retardar o tratamento eficaz da crise. Aguardar mais 20 minutos em um paciente que já está em crise há 25 minutos é contraindicado, pois quanto maior a duração da crise, maior o risco de lesão neuronal e menor a resposta aos fármacos.\n\nAlternativa B: Incorreta. Embora o fenobarbital seja uma droga de segunda linha (sendo a primeira escolha em neonatos), a dose de ataque para o tratamento do Estado de Mal Epiléptico é de 20 mg/kg. A dose de 5 mg/kg citada na alternativa é insuficiente para o controle de uma crise estabelecida, sendo mais próxima de uma dose de manutenção.\n\nAlternativa C: Correta. A fenitoína é uma das drogas de escolha para a segunda fase do tratamento do EME em lactentes e crianças. A dose recomendada é de 18 a 20 mg/kg, administrada por via intravenosa. A infusão deve ser lenta (não ultrapassando 1 mg/kg/minuto em crianças) e acompanhada de monitorização cardíaca e de pressão arterial, devido ao risco de arritmias e hipotensão associados ao diluente da medicação. Atualmente, o levetiracetam e o valproato de sódio também são opções válidas nesta etapa.\n\nAlternativa D: Incorreta. A cetamina é um antagonista dos receptores NMDA utilizada no tratamento do Estado de Mal Epiléptico refratário ou super-refratário. Ela é reservada para casos em que as drogas de primeira linha (benzodiazepínicos) e segunda linha (fenitoína, fenobarbital, levetiracetam ou valproato) falharam. Seu uso não precede a administração de anticonvulsivantes de longa ação.\n\nGabarito: Alternativa C.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:46.075Z"
+  },
+  {
+    "id": "AJUDA_22455f52-f8ad-4384-9bc4-db9f10fd143b",
+    "originalId": "22455f52-f8ad-4384-9bc4-db9f10fd143b",
+    "statement": "Mulher de 36 anos, solteira, médica, procura clínica de reprodução assistida com o desejo de realizar fertilização in vitro, utilizando sêmen de doador anônimo e útero de substituição (gestação por terceira), pois foi submetida previamente a histerectomia total por miomatose uterina complicada. A paciente pretende que a gestante substituta seja sua irmã de 28 anos, saudável, que aceita voluntariamente a gestação, sem fins lucrativos. O embrião será formado com o óvulo da própria paciente e sêmen de banco autorizado.\n\nÀ luz da Resolução CFM nº 2.320/2022 (ou vigente) e dos princípios bioéticos que regem a reprodução humana assistida no Brasil, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A situação é eticamente vedada, pois a gestação por substituição só é permitida em casais heterossexuais inférteis, sendo proibida para mulheres solteiras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A gestação por substituição é permitida apenas se houver vínculo consanguíneo até o quarto grau, sendo obrigatória autorização judicial prévia para qualquer caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O procedimento é eticamente permitido, desde que haja indicação médica, ausência de caráter comercial, vínculo consanguíneo até o quarto grau, termo de consentimento informado de todas as partes e aprovação do comitê da clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O uso de sêmen de doador anônimo invalida a possibilidade de gestação por substituição, sendo permitido apenas quando ambos os gametas são do casal solicitante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A cessão temporária de útero é permitida apenas quando a gestante substituta já tiver pelo menos um filho vivo e comprovação de estabilidade conjugal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda as normas éticas para a Reprodução Assistida no Brasil, consolidadas pela Resolução do Conselho Federal de Medicina (CFM) nº 2.320/2022. O caso descreve uma mulher solteira com indicação médica absoluta para cessão temporária de útero (útero de substituição), visto que ela não possui o órgão devido a uma histerectomia prévia.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A Resolução do CFM estabelece que todas as pessoas capazes que tenham o desejo de ter filhos podem recorrer às técnicas de reprodução assistida. Isso inclui explicitamente pessoas solteiras e casais homoafetivos, não sendo uma técnica restrita a casais heterossexuais.\n\nAlternativa B: Incorreta. Embora a regra geral exija que a cedente temporária do útero tenha parentesco consanguíneo de até quarto grau com um dos solicitantes (mãe, filha, irmã, avó, tia, sobrinha ou prima), não é necessária autorização judicial para realizar o procedimento dentro dessas condições. Quando não há parentesco até o quarto grau, é necessária a autorização do Conselho Regional de Medicina (CRM), e não necessariamente uma ordem judicial para a realização do ato médico.\n\nAlternativa C: Correta. Esta alternativa resume perfeitamente os requisitos da Resolução 2.320/2022. Para a cessão temporária de útero, exige-se: 1) Indicação médica (impossibilidade de gestar); 2) Caráter altruísta e sem fins lucrativos (ausência de caráter comercial); 3) Parentesco consanguíneo de até quarto grau (a irmã é parente de 2º grau); 4) Termos de Consentimento Livre e Esclarecido (TCLE) assinados por todos os envolvidos; 5) Aprovação e relatório médico documentando a adequação clínica e ética.\n\nAlternativa D: Incorreta. O uso de gametas doados (seja sêmen ou óvulos) é perfeitamente permitido em ciclos de fertilização in vitro que envolvam útero de substituição. Não há obrigatoriedade de que ambos os gametas pertençam aos solicitantes. No caso em tela, o uso de sêmen de doador é a única via possível para uma mulher solteira realizar o desejo de maternidade biológica.\n\nAlternativa E: Incorreta. A Resolução do CFM não exige que a gestante substituta já possua filhos vivos, nem impõe critérios de estado civil ou estabilidade conjugal para a cedente do útero. O requisito principal é o vínculo de parentesco e a capacidade plena de decidir voluntariamente participar do processo.\n\nResumo dos pontos-chave para a prova:\n- A cessão temporária de útero (barriga de aluguel é um termo leigo e juridicamente inadequado no Brasil) deve ser gratuita.\n- A cedente deve pertencer à família de um dos parceiros em parentesco consanguíneo até o quarto grau.\n- Casos fora desse grau de parentesco dependem de autorização do CRM.\n- Pessoas solteiras e casais homoafetivos têm pleno direito ao acesso às técnicas.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Infertilidade Conjugal",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:46.075Z"
+  },
+  {
+    "id": "AJUDA_224cd481-d621-4570-b434-f7b6ab58e0ab",
+    "originalId": "224cd481-d621-4570-b434-f7b6ab58e0ab",
+    "statement": "Paciente de 48 anos apresenta nódulo indolor na mama direita, detectado há 3 meses, após trauma local. Apresenta histórico familiar de câncer de mama em tia materna (aos 41 anos de idade). Mamografia evidencia assimetria focal no quadrante superior externo da mama direita, classificada como BI-RADS 0. \nVisando à melhor investigação do quadro, o próximo passo deve ser a realização de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ultrassonografia de mamas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "punção aspirativa por agulha fina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tomografia computadorizada de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "biópsia excisional de fragmento mamário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A classificação BI-RADS 0 (Breast Imaging-Reporting and Data System) indica uma avaliação incompleta, o que significa que os achados mamográficos não são suficientes para uma conclusão diagnóstica definitiva. No caso de uma paciente de 48 anos com nódulo palpável e uma assimetria focal identificada na mamografia, é mandatório complementar o estudo por imagem antes de qualquer procedimento invasivo.\n\nAlternativa (a): Correta. A ultrassonografia de mamas é o exame complementar de escolha para avaliar assimetrias focais ou nódulos detectados na mamografia, especialmente em casos de BI-RADS 0. Ela permite diferenciar lesões sólidas de císticas e fornece características morfológicas adicionais que ajudam a reclassificar a lesão em uma categoria definitiva (como BI-RADS 2, 3, 4 ou 5), orientando a conduta subsequente. Além disso, em pacientes com nódulos palpáveis, a correlação clínica com o ultrassom é fundamental.\n\nAlternativa (b): Incorreta. A punção aspirativa por agulha fina (PAAF) ou qualquer outro procedimento de biópsia só deve ser indicado após a conclusão da avaliação por imagem. Realizar uma punção em um achado classificado como BI-RADS 0 é precipitado, pois o exame de imagem complementar pode mostrar que a alteração é apenas tecido glandular normal ou um cisto simples, o que dispensaria procedimentos invasivos.\n\nAlternativa (c): Incorreta. A tomografia computadorizada não possui papel no rastreio ou no diagnóstico primário de patologias mamárias. Se fosse necessária uma propedêutica avançada por imagem em casos específicos (como em mamas densas com alta suspeição e exames convencionais inconclusivos), a ressonância magnética seria o exame indicado, mas nunca a tomografia para avaliação direta de nódulo mamário.\n\nAlternativa (d): Incorreta. A biópsia excisional é um procedimento cirúrgico e não deve ser a primeira escolha para investigação de uma assimetria focal. Atualmente, mesmo quando há indicação de estudo histopatológico (em casos BI-RADS 4 ou 5), priorizam-se as biópsias percutâneas (Core Biopsy ou biópsia a vácuo). A biópsia cirúrgica só é reservada para situações específicas onde os métodos percutâneos foram inconclusivos ou discordantes.\n\nEm resumo, diante de um resultado BI-RADS 0 na mamografia, o próximo passo assistencial obrigatório é a realização de exames complementares, como incidências mamográficas adicionais (compressão focal/magnificação) ou a ultrassonografia, para que se possa fechar um diagnóstico ou indicar a necessidade de biópsia.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Doenças Benignas da Mama",
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:46.075Z"
+  },
+  {
+    "id": "AJUDA_22521dea-fc03-4a3c-b217-5fdddf916e43",
+    "originalId": "22521dea-fc03-4a3c-b217-5fdddf916e43",
+    "statement": "Homem de 58 anos, com história de duas laparotomias prévias por trauma abdominal, procura o pronto-socorro com dor abdominal difusa há 24 horas, distensão progressiva e vômitos biliosos. Refere parada de eliminação de gases e fezes há 18 horas. Ao exame físico, apresenta abdome distendido, timpanismo difuso e ruídos hidroaéreos aumentados. Não há sinais de peritonite. A tomografia de abdome com contraste mostra múltiplas alças delgadas dilatadas, nível líquido-gasoso e ponto de transição único compatível com brida, sem sinais de isquemia (sem espessamento parietal, sem pneumatoses, sem líquido livre significativo). Considerando o quadro clínico e as recomendações atuais, qual é a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia exploradora imediata",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Laparoscopia diagnóstica de urgência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Antibioticoterapia de amplo espectro e observação domiciliar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tratamento conservador com hidratação, sonda nasogástrica e observação hospitalar",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Colonoscopia descompressiva",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um quadro clássico de obstrução intestinal alta (delgado). Os pontos-chave para o diagnóstico e conduta são:\n1. Etiologia provável: O histórico de laparotomias prévias aponta para aderências (bridas) como a causa mais comum de obstrução de delgado.\n2. Status clínico: Há sinais de obstrução mecânica (dor, vômitos, parada de eliminação de gases/fezes e RHA aumentados), porém não há sinais de instabilidade hemodinâmica ou peritonite.\n3. Achados tomográficos: A TC confirma a obstrução por brida (ponto de transição), mas descarta complicações imediatas, como isquemia ou perfuração (ausência de pneumatose ou líquido livre).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA: A laparotomia exploradora imediata estaria indicada se houvesse sinais de estrangulamento (isquemia arterial), perfuração intestinal, peritonite ou se o paciente estivesse instável. Em casos de obstrução simples por brida, o tratamento cirúrgico imediato pode aumentar o risco de novas aderências e iatrogenias.\n\nb) INCORRETA: Embora a laparoscopia possa ser usada no tratamento da obstrução intestinal, ela não é a conduta inicial de urgência em um paciente estável sem sinais de complicação. A distensão das alças (indicada na questão) inclusive dificulta o espaço de trabalho para a laparoscopia, aumentando o risco de lesões mecânicas durante a inserção dos portais.\n\nc) INCORRETA: A antibioticoterapia não é o foco principal no manejo da obstrução simples. Além disso, a \"observação domiciliar\" é um erro gravíssimo; pacientes com obstrução intestinal devem ser obrigatoriamente internados para vigilância rigorosa, devido ao risco de evolução para isquemia ou distúrbios hidroeletrolíticos severos.\n\nd) CORRETA: O tratamento conservador (também chamado de \"não operatório\") é a conduta de escolha inicial para obstrução por bridas sem sinais de sofrimento de alça. Baseia-se no tripé: jejum, descompressão gástrica com sonda nasogástrica (para reduzir a pressão intraluminal e o risco de aspiração) e reposição volêmica vigorosa com correção de eletrólitos. Cerca de 70% a 80% desses casos resolvem-se nas primeiras 48 a 72 horas sem necessidade de cirurgia.\n\ne) INCORRETA: A colonoscopia descompressiva é utilizada em casos de obstrução do intestino grosso (cólon), especificamente em situações como Vólvulo de Sigmoide ou Síndrome de Ogilvie (pseudo-obstrução colônica). A questão deixa claro que a obstrução é de alças delgadas (intestino fino), onde a colonoscopia não tem papel terapêutico.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:46.075Z"
+  },
+  {
+    "id": "AJUDA_225299a6-b7eb-4189-9db1-b448f44707d5",
+    "originalId": "225299a6-b7eb-4189-9db1-b448f44707d5",
+    "statement": "Em uma comunidade ribeirinha, a equipe de saúde foi informada de um aumento nos casos de doenças gastrointestinais, principalmente em crianças. Durante uma visita, um agente de saúde observou que as famílias utilizavam água de um rio próximo para consumo doméstico, sem tratamento adequado. Com base nessa situação hipotética, é correto afirmar que a intervenção indicada, visando a um efeito imediato e eficaz para a equipe de saúde, na tentativa de reduzir os casos de doenças gastrointestinais na comunidade, será",
+    "options": [
+      {
+        "id": "A",
+        "text": "orientar os moradores sobre a importância de ferver a água antes do consumo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "solicitar ao governo local a construção de um hospital próximo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar campanhas de conscientização sobre hábitos alimentares saudáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "distribuir suplementos vitamínicos para as crianças da comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "encaminhar as famílias para tratamento com antibióticos no posto de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CENÁRIO CLÍNICO-EPIDEMIOLÓGICO\n\nA questão descreve um surto de doenças gastrointestinais em uma comunidade vulnerável, onde o fator determinante é o consumo de água contaminada diretamente de um rio. Em saúde pública, diante de um surto de veiculação hídrica, a prioridade é interromper a cadeia de transmissão no ponto de origem: a água.\n\nPOR QUE A ALTERNATIVA A ESTÁ CORRETA?\n\nAlternativa a) Orientar os moradores sobre a importância de ferver a água antes do consumo.\nEsta é a medida de intervenção imediata, eficaz e de baixo custo. A fervura da água é um método físico de desinfecção que elimina a grande maioria dos agentes patogênicos causadores de diarreia (vírus, bactérias e parasitas). Como a equipe de saúde identificou o uso da água do rio como a causa provável, agir sobre esse veículo é a forma mais rápida de prevenir novos casos, sendo uma ação de educação em saúde e saneamento básico simplificado.\n\nANÁLISE DAS ALTERNATIVAS INCORRETAS\n\nAlternativa b) Solicitar ao governo local a construção de um hospital próximo.\nA construção de um hospital é uma medida de caráter estrutural e de longo prazo. Além disso, hospitais focam no tratamento secundário e terciário (cura), enquanto o problema em questão exige uma intervenção de atenção primária e vigilância epidemiológica para evitar que as pessoas adoeçam. Não resolve o problema imediato do surto.\n\nAlternativa c) Realizar campanhas de conscientização sobre hábitos alimentares saudáveis.\nEmbora a alimentação saudável seja importante para a saúde geral, o foco da questão não é a qualidade nutricional ou o tipo de alimento consumido, mas sim a contaminação microbiológica da água. Campanhas nutricionais não impediriam a transmissão de patógenos presentes na água do rio.\n\nAlternativa d) Distribuir suplementos vitamínicos para as crianças da comunidade.\nA suplementação vitamínica pode auxiliar na recuperação de crianças desnutridas ou prevenir carências específicas, mas não tem o poder de impedir a infecção por germes presentes na água contaminada. Não ataca a causa raiz do aumento dos casos de diarreia.\n\nAlternativa e) Encaminhar as famílias para tratamento com antibióticos no posto de saúde.\nO uso indiscriminado ou profilático de antibióticos para toda a comunidade é contraindicado. Muitas doenças gastrointestinais são causadas por vírus ou parasitas que não respondem a antibióticos. O tratamento medicamentoso deve ser individualizado para quem já está doente e não substitui as medidas de prevenção coletiva. Além disso, tratar sem limpar a água resultaria em reinfecções sucessivas.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:46.075Z"
+  }
+]

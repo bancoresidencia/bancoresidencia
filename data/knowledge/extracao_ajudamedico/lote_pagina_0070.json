@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_12195b74-4135-40ef-81f5-eebc43a57e62",
+    "originalId": "12195b74-4135-40ef-81f5-eebc43a57e62",
+    "statement": "G.V.B., 34 anos, GIII PII 2C A0, idade gestacional de 37 semanas, deu entrada no pronto-socorro obstétrico com queixa de sangramento vaginal vermelho-vivo, sem outras queixas. Ao exame físico: PA = 110 x 70 mmHg, AU = 35 cm, BCF = 130 bpm, dinâmica uterina ausente, especular: sangramento vermelho-vivo exteriorizando-se pelo orifício externo do colo uterino. Assinale a alternativa que apresenta a conduta correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indução do trabalho de parto com misoprostol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Passagem de sonda de Foley para a dilatação do colo uterino e a interrupção do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indução do trabalho de parto com ocitocina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cesárea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Expectante e controle do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\nTrata-se de uma gestante de 37 semanas (a termo) apresentando sangramento vaginal vermelho-vivo, indolor, sem contrações uterinas e com vitalidade fetal preservada (BCF 130 bpm). Esse quadro clínico é clássico de placenta prévia. Além disso, a paciente possui o antecedente de duas cesáreas prévias, o que aumenta o risco para patologias placentárias. Diante de uma gestação a termo com sangramento ativo e suspeita de placenta prévia, a interrupção da gestação está indicada.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. O uso de misoprostol para indução do parto é contraindicado em pacientes com cicatrizes uterinas prévias (risco de ruptura uterina) e em casos de placenta prévia, onde o parto vaginal geralmente é contraindicado devido ao risco de hemorragia grave.\n\nAlternativa b) Incorreta. A sonda de Foley é um método mecânico de indução do parto (preparo do colo). Não tem indicação no manejo de hemorragias da segunda metade da gestação e não trataria a causa do sangramento nesta paciente.\n\nAlternativa c) Incorreta. A indução com ocitocina é contraindicada na suspeita de placenta prévia com sangramento ativo. O trabalho de parto e as contrações poderiam aumentar o descolamento da placenta e causar hemorragia profusa.\n\nAlternativa d) Correta. A paciente está com 37 semanas (gestação a termo) e apresenta um sangramento compatível com placenta prévia. Em gestações a termo com diagnóstico de placenta prévia e sangramento, a conduta é a interrupção por via alta (cesariana), que permite o controle rápido da hemorragia e o nascimento seguro do conceito.\n\nAlternativa e) Incorreta. A conduta expectante é reservada para casos de prematuridade (idade gestacional inferior a 37 semanas), desde que o sangramento seja escasso e haja estabilidade hemodinâmica materna e fetal. Como a paciente já atingiu 37 semanas, não há benefício em prolongar a gestação, devendo-se optar pela resolução.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:10.881Z"
+  },
+  {
+    "id": "AJUDA_121fdb2a-237b-42a4-a4f5-ecd227965a91",
+    "originalId": "121fdb2a-237b-42a4-a4f5-ecd227965a91",
+    "statement": "O controle glicêmico perioperatório é vital para reduzir infecções e complicações em pacientes diabéticos submetidos a cirurgias de médio e grande porte. Considerando as recomendações atuais para o manejo do diabetes no perioperatório, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O objetivo do controle glicêmico intraoperatório é a normoglicemia estrita (80-110 mg/dL), pois estudos comprovam que esse alvo reduz a mortalidade sem aumentar o risco de hipoglicemia grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A insulina regular (ou análogos de ação rápida) em esquema de infusão contínua intravenosa (bomba de insulina) é o método preferencial para controle glicêmico intra e pós-operatório imediato em cirurgias grandes e pacientes instáveis, visando glicemia entre 140-180 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hipoglicemiantes orais, como a metformina, devem ser mantidos até a manhã da cirurgia, inclusive, para garantir que o paciente não entre em cetoacidose durante o jejum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pacientes com Diabetes Tipo 1 devem ter sua insulina basal (NPH ou análogos lentos) totalmente suspensa no dia da cirurgia para evitar hipoglicemia durante a anestesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A seguir, apresento a análise detalhada de cada alternativa da questão sobre o manejo glicêmico perioperatório:\n\nAlternativa (a) Incorreta: O controle glicêmico estrito, visando manter a glicemia entre 80 e 110 mg/dL, foi testado em grandes estudos, como o NICE-SUGAR. Os resultados demonstraram que esse alvo aumenta significativamente a incidência de hipoglicemias graves e a mortalidade cardiovascular, sem oferecer benefícios superiores em relação a alvos mais moderados. Portanto, a normoglicemia estrita não é recomendada para pacientes cirúrgicos ou críticos.\n\nAlternativa (b) Correta: Esta alternativa reflete as recomendações atuais. Para cirurgias de grande porte, pacientes instáveis ou aqueles que permanecerão em jejum prolongado, a infusão contínua de insulina regular por via endovenosa (bomba de infusão) é o método preferencial. Isso ocorre porque a via endovenosa permite um ajuste rápido e preciso da dose conforme a variação glicêmica causada pelo estresse cirúrgico. O alvo terapêutico de 140 a 180 mg/dL é considerado o padrão-ouro, pois equilibra a prevenção de complicações hiperglicêmicas (como infecção de sítio cirúrgico) com a segurança contra hipoglicemias.\n\nAlternativa (c) Incorreta: A metformina deve ser suspensa, preferencialmente, de 24 a 48 horas antes de cirurgias de médio e grande porte ou procedimentos que utilizem contraste iodado. O risco principal é o desenvolvimento de acidose lática em caso de instabilidade hemodinâmica, hipóxia tecidual ou insuficiência renal aguda perioperatória. Além disso, a metformina não previne a cetoacidose; essa complicação é prevenida pela manutenção de níveis adequados de insulina, especialmente em pacientes com diabetes tipo 1.\n\nAlternativa (d) Incorreta: Pacientes com diabetes tipo 1 nunca devem ter sua insulina basal totalmente suspensa. Como esses pacientes possuem deficiência absoluta de insulina, a interrupção da dose basal, mesmo em jejum, desencadeia rapidamente a lipólise e a cetogênese, levando à cetoacidose diabética. A recomendação correta é a redução da dose da insulina basal (NPH ou análogos de longa ação) para cerca de 60% a 80% da dose habitual na manhã da cirurgia, garantindo a cobertura metabólica mínima durante o jejum.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:10.881Z"
+  },
+  {
+    "id": "AJUDA_1225121d-99ef-4486-a442-970972a3ea67",
+    "originalId": "1225121d-99ef-4486-a442-970972a3ea67",
+    "statement": "Quanto a transfusão de hemocomponentes e reações transfusionais agudas é incorreto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nenhum critério isolado deve ser utilizado como definidor para indicação de transfusão de hemácias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Para a maioria dos pacientes clínicos e cirúrgicos hemodinamicamente estáveis, sugerimos considerar a transfusão de hemácias em pacientes com níveis de hemoglobina abaixo de 7 a 8 g/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A dose recomendada para transfusão de plasma fresco congelado é de 10 a 20 ml por KG de peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A transfusão de plaquetas é sempre terapêutica, não havendo indicação de sua utilização de forma profilática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Reações transfusionais agudas (RTA) variam desde condições clinicamente benignas até ameaçadoras à vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Esta afirmação está correta. A indicação de transfusão de hemácias deve ser individualizada. O médico deve considerar não apenas o valor laboratorial da hemoglobina, mas também a presença de sintomas clínicos (como dispneia, taquicardia ou angina), a estabilidade hemodinâmica, a velocidade da perda sanguínea e as comorbidades do paciente, como doença arterial coronariana.\n\nAlternativa b: Esta afirmação está correta. As diretrizes atuais de hemoterapia recomendam uma estratégia de transfusão restritiva para a maioria dos pacientes hospitalizados e estáveis. O gatilho de 7 g/dL é amplamente aceito para pacientes críticos em UTI e pacientes cirúrgicos estáveis, enquanto o gatilho de 8 g/dL costuma ser utilizado para pacientes com doenças cardiovasculares prévias ou submetidos a cirurgias ortopédicas/cardíacas.\n\nAlternativa c: Esta afirmação está correta. A dose terapêutica padrão de plasma fresco congelado é de 10 a 20 ml por quilograma de peso. Essa dosagem é necessária para elevar os níveis dos fatores de coagulação em cerca de 20 a 30 por cento, o que geralmente é suficiente para restabelecer a hemostasia na maioria das coagulopatias.\n\nAlternativa d: Esta afirmação está incorreta e é o gabarito da questão. A transfusão de plaquetas pode ser terapêutica (quando há sangramento ativo e contagem baixa) ou profilática. A profilaxia é rotineira em pacientes hematológicos com contagem inferior a 10.000/mm³ para evitar sangramentos espontâneos graves, ou antes de procedimentos invasivos, onde o alvo varia entre 50.000/mm³ e 100.000/mm³, dependendo do risco do procedimento.\n\nAlternativa e: Esta afirmação está correta. As reações transfusionais agudas são aquelas que ocorrem durante ou em até 24 horas após a transfusão. Elas podem ser leves, como uma reação alérgica leve (urticária) ou reação febril não hemolítica, ou extremamente graves e fatais, como a reação hemolítica aguda, a lesão pulmonar aguda relacionada à transfusão (TRALI) e a sobrecarga circulatória (TACO).",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Medicina Transfusional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:10.881Z"
+  },
+  {
+    "id": "AJUDA_122b66dc-e61c-4d3a-8e99-0e89e8971a5b",
+    "originalId": "122b66dc-e61c-4d3a-8e99-0e89e8971a5b",
+    "statement": "Sobre a doença hepática gordurosa não alcoólica, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ao contrário da doença hepática alcoólica, os níveis de ALT (alanina aminotransferase) são mais elevados do que os níveis de AST (aspartato aminotransferase), tendo importância prognóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Elevação discreta da ferritina e resultados positivos para anticorpo antinuclear e anticorpo antimúsculo liso são comuns quando do diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pacientes com cirrose induzida por hepatite não alcoólica não têm risco de evoluir para hepatocarcinoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A presença de vírus da hepatite B ou C não interfere nos critérios diagnósticos para doença hepática gordurosa não alcoólica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a: Incorreta. Na fase inicial da doenca hepatica gordurosa nao alcoolica (DHGNA), a ALT (TGP) costuma ser mais alta que a AST (TGO), diferentemente da doenca alcoolica (onde AST > ALT). No entanto, o marcador que confere importancia prognostica e a inversao dessa relacao: a elevacao da AST superando a ALT indica progressao para fibrose avancada ou cirrose hepatica.\n\nAlternativa b: Correta. Cerca de 20% a 30% dos pacientes com DHGNA podem apresentar titulos baixos de autoanticorpos (como FAN e anticorpo antimusculo liso), sem que isso signifique presenca de hepatite autoimune. Alem disso, a hiperferritinemia leve a moderada e um achado frequente, relacionado a sindrome de sobrecarga dismetabolica de ferro e a resistencia a insulina, e nao necessariamente a hemocromatose.\n\nAlternativa c: Incorreta. A cirrose decorrente de esteato-hepatite nao alcoolica e uma das principais causas de carcinoma hepatocelular (hepatocarcinoma) no mundo. Alem disso, o carcinoma hepatocelular pode se desenvolver inclusive em pacientes com DHGNA em fases pre-cirroticas.\n\nAlternativa d: Incorreta. Para o diagnostico classico de DHGNA, e obrigatoria a exclusao de outras etiologias de hepatopatia cronica e esteatose secundaria, incluindo o consumo excessivo de alcool e as hepatites virais cronicas B e C (principalmente o genotipo 3 da hepatite C, que induz esteatose).\n\nGabarito: Letra b.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:10.881Z"
+  },
+  {
+    "id": "AJUDA_122cb0ee-7ce3-4a03-afdf-1b3cc140f4d6",
+    "originalId": "122cb0ee-7ce3-4a03-afdf-1b3cc140f4d6",
+    "statement": "Considere que uma comunidade apresente alta prevalência de hipertensão, e que a equipe da ESF tenha decidido implantar ações como grupos educativos, caminhadas orientadas e articulação com o CRAS para apoio psicossocial. Essas ações correspondem a qual estratégia de promoção da saúde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Educação técnina centrada na transmissão vertical de informações",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Intervenções exclusivamente terapêuticas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ações intersetoriais com empoderamento comunitário",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Medidas restritas ao consultório individual",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os conceitos fundamentais da Promoção da Saúde no âmbito da Atenção Primária, especificamente dentro da Estratégia Saúde da Família (ESF). O enunciado descreve ações que extrapolam o modelo biomédico tradicional, focando na autonomia do paciente e na articulação de diferentes setores da sociedade para enfrentar um problema de saúde pública (hipertensão).\n\nAlternativa (a) Incorreta: A transmissão vertical de informações é um modelo pedagógico tradicional no qual o profissional de saúde detém o saber e apenas \"prescreve\" comportamentos ao paciente, sem considerar sua realidade. Grupos educativos e atividades comunitárias buscam justamente o oposto: uma educação horizontal e participativa, na qual o conhecimento é construído coletivamente.\n\nAlternativa (b) Incorreta: Intervenções exclusivamente terapêuticas são aquelas voltadas para o tratamento direto da doença, como a prescrição de anti-hipertensivos ou procedimentos médicos. Embora o tratamento medicamentoso seja necessário na hipertensão, as ações de caminhada, grupos e apoio psicossocial são classificadas como ações de promoção da saúde e prevenção de agravos, agindo nos determinantes sociais.\n\nAlternativa (c) Correta: Esta alternativa define perfeitamente as ações descritas. A articulação com o CRAS (Centro de Referência de Assistência Social) caracteriza a intersetorialidade, que é a junção de diferentes setores (saúde e assistência social) para produzir saúde de forma integral. O incentivo a grupos e atividades físicas promove o empoderamento comunitário, fornecendo ferramentas para que os indivíduos e a comunidade tenham maior controle sobre sua própria saúde e qualidade de vida.\n\nAlternativa (d) Incorreta: As ações citadas (caminhadas, grupos educativos e parceria com o CRAS) ocorrem obrigatoriamente fora do consultório individual. Elas ocupam o território e os espaços coletivos, visando o alcance populacional e a socialização, o que rompe com o modelo restrito à consulta médica individual.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:10.881Z"
+  },
+  {
+    "id": "AJUDA_12305fb6-f0b0-4539-b34a-23c421ff9dd7",
+    "originalId": "12305fb6-f0b0-4539-b34a-23c421ff9dd7",
+    "statement": "Lactente feminina, 9 meses de vida, retorna em consulta no ambulatório de Pediatria para reavaliação de tratamento da otite média aguda com amoxicilina com boa evolução. Relata que há cinco dias surgiram lesões hiperemiadas com pequenas vesículas na região do pescoço e perineal. Nega outras queixas. Qual a conduta a ser adotada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Creme antifúngico e limpeza local.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Banho com cloridrato de benzidamina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neomicina e banho de sol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Corticoide tópico, neomicina creme e banho de sol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Limpeza local com soro fisiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A paciente apresenta um quadro clínico de candidíase mucocutânea (monilíase), uma complicação frequente em lactentes após o uso de antibióticos de amplo espectro, como a amoxicilina. O antibiótico elimina parte da flora bacteriana normal, o que favorece o crescimento oportunista de fungos, principalmente a Candida albicans. O diagnóstico é reforçado pela localização das lesões em áreas de dobras (pescoço e região perineal) e pela descrição de hiperemia com vesículas (muitas vezes chamadas de lesões satélites), que são características dessa infecção.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. O tratamento padrão para a candidíase cutânea envolve a aplicação de antifúngicos tópicos (como nistatina, clotrimazol, miconazol ou cetoconazol) para eliminar o fungo. A limpeza local e a manutenção das áreas afetadas secas são fundamentais, pois a umidade e o calor das dobras facilitam a proliferação da Candida.\n\nAlternativa b) Incorreta. O cloridrato de benzidamina possui propriedades anti-inflamatórias e analgésicas, mas não tem atividade contra fungos. Portanto, não trata a causa do problema.\n\nAlternativa c) Incorreta. A neomicina é um antibiótico aminoglicosídeo tópico. O uso de antibióticos em uma lesão de origem fúngica é contraindicado, pois pode exacerbar o desequilíbrio da microbiota local. O banho de sol auxilia na secagem de dermatites, mas não é o tratamento principal para uma infecção fúngica instalada.\n\nAlternativa d) Incorreta. O uso de corticoides tópicos em infecções fúngicas é perigoso, pois a imunossupressão local pode mascarar a inflamação e permitir uma proliferação fúngica ainda maior. A neomicina também é desnecessária e inadequada neste contexto.\n\nAlternativa e) Incorreta. A limpeza com soro fisiológico é uma medida de higiene importante, mas isoladamente é insuficiente para resolver a infecção. É indispensável o uso de um agente farmacológico específico (antifúngico) para erradicar o microrganismo.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Tópicos em Pediatria",
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:10.881Z"
+  },
+  {
+    "id": "AJUDA_1233f0b1-8ab4-4741-b064-125417850933",
+    "originalId": "1233f0b1-8ab4-4741-b064-125417850933",
+    "statement": "Paciente de 30 anos, G2 P2 (2 partos vaginais), procura Unidade Básica de Saúde por queixa de dor abdominal em baixo ventre há um mês e foi colhido seu primeiro exame de citologia cervical convencional. O resultado da citologia oncótica revelou uma lesão intra-epitelial de alto grau de colo de útero (NIC 3). O próximo passo para o diagnóstico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colher PCR para HPV com genotipagem",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar para colposcopia e provável biopsia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Conização de colo de útero por cirurgia de alta frequência (CAF)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aguardar 6 meses e realizar nova coleta de citologia oncótica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta um resultado citopatológico de Lesão Intraepitelial de Alto Grau (HSIL), que na classificação histopatológica corresponde ao NIC 2 ou NIC 3. De acordo com as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero (INCA), qualquer resultado de citologia sugestivo de lesão de alto grau exige avaliação imediata do colo uterino através da colposcopia.\n\nAlternativa A (Incorreta): O teste de DNA-HPV com genotipagem não é indicado após um resultado de HSIL. Esse teste pode ser utilizado no rastreamento primário ou no seguimento de lesões de baixo grau (como ASC-US) em situações específicas. Quando a citologia já aponta uma lesão de alto grau, a prioridade é a avaliação morfológica do colo e a confirmação histológica.\n\nAlternativa B (Correta): A conduta padrão diante de uma citologia com HSIL é o encaminhamento para a colposcopia. Durante o exame, o colposcopista avalia a zona de transformação e busca áreas acetobrancas ou com padrões vasculares anormais. Caso sejam encontradas lesões suspeitas, a biópsia deve ser realizada para confirmar o diagnóstico histopatológico e excluir invasão antes de definir o tratamento definitivo.\n\nAlternativa C (Incorreta): A conização ou cirurgia de alta frequência (CAF) é um procedimento terapêutico (e às vezes diagnóstico-terapêutico). Embora exista a conduta de ver e tratar (onde se realiza a excisão da zona de transformação logo na primeira colposcopia se houver critérios específicos), o passo propedêutico fundamental indicado pela questão como diagnóstico é a colposcopia acompanhada de biópsia, especialmente em uma paciente jovem que realizou seu primeiro exame.\n\nAlternativa D (Incorreta): Aguardar e repetir a citologia em 6 meses é uma conduta restrita a lesões de menor gravidade, como o ASC-US (em pacientes acima de 30 anos) ou LSIL (em pacientes acima de 25 anos). No caso de lesão de alto grau (HSIL), o risco de uma neoplasia invasiva já presente ou de progressão é significativo, tornando obrigatória a investigação imediata.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:10.881Z"
+  },
+  {
+    "id": "AJUDA_12410e58-28ad-49a3-abf9-ef05a4765fa1",
+    "originalId": "12410e58-28ad-49a3-abf9-ef05a4765fa1",
+    "statement": "Homem de 62 anos, portador de doença renal crônica há seis anos, hipertensão e diabetes de longa data, em seguimento ambulatorial, relata há cerca de três meses piora progressiva da fadiga, intolerância aos esforços e palidez cutânea. Nega sangramentos, melena, hemoptise, hematúria e nunca recebeu transfusões. Usa losartana 50 mg duas vezes ao dia, sinvastatina 20 mg e metformina 850 mg. No exame físico, apresenta pressão arterial de 142×86 mmHg, frequência cardíaca de 82 bpm, ausculta cardiovascular sem sopros, pulmões limpos, ausência de edemas e mucosas hipocoradas, sem icterícia. Os exames mostram hemoglobina de 9,2 g/dL, hematócrito de 28%, VCM 88 fL, reticulócitos 0,6%, ferritina 200 ng/mL, ferro sérico 70 µg/dL, saturação de transferrina 24%, creatinina 2,8 mg/dL, ureia 88 mg/dL, TFG (KDIGO) de 28 mL/min/1,73m², potássio 4,9 mEq/L e níveis de vitamina B12 e ácido fólico dentro da normalidade.\nDiante desse cenário clínico e laboratorial, qual a conduta terapêutica inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transfundir concentrado de hemácias a cada duas semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar eritropoetina subcutânea associada a ferro (oral ou EV) conforme estoque.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Repor apenas ferro (preferencialmente endovenoso) sem agente estimulador da eritropoiese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tratar apenas se a hemoglobina for menor que 7 g/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar biópsia de medula óssea para excluir mielodisplasia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta Doença Renal Crônica (DRC) em estágio 4 (Taxa de Filtração Glomerular de 28 mL/min) e anemia sintomática. O quadro laboratorial revela hemoglobina de 9,2 g/dL, anemia normocítica (VCM 88) e hipoproliferativa (reticulócitos 0,6%). Na DRC, a principal causa de anemia é a deficiência de eritropoietina, hormônio produzido pelos rins. Para iniciar o tratamento com agentes estimuladores da eritropoiese (eritropoietina), as diretrizes (KDIGO) recomendam que os estoques de ferro sejam adequados: saturação de transferrina (SAT) maior que 20% e ferritina maior que 100 ng/mL (em pacientes não dialíticos). O paciente possui SAT de 24% e ferritina de 200 ng/mL, preenchendo os critérios para o início da terapia.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A transfusão de hemácias deve ser evitada em pacientes com DRC, sendo reservada para casos de anemia grave com instabilidade hemodinâmica ou sintomas agudos não responsivos a outros tratamentos. Transfusões frequentes podem causar sobrecarga de ferro e alossensibilização, o que dificulta a compatibilidade em um eventual futuro transplante renal.\n\nAlternativa b) Correta. Esta é a conduta inicial padrão. Com hemoglobina abaixo de 10 g/dL e estoques de ferro adequados (SAT > 20% e Ferritina > 100 ng/mL), está indicado o início de eritropoietina recombinante humana por via subcutânea. A suplementação de ferro associada é necessária para garantir que a medula óssea tenha substrato suficiente para a produção de novas hemácias estimulada pela medicação.\n\nAlternativa c) Incorreta. Embora a reposição de ferro possa ser feita de forma isolada se houvesse deficiência absoluta ou funcional de ferro, o principal problema deste paciente é a falta de eritropoietina devido à falência renal. Repor apenas ferro não corrigirá a anemia de forma eficaz neste estágio da doença.\n\nAlternativa d) Incorreta. O gatilho para o tratamento da anemia na DRC não é o mesmo das anemias agudas (onde muitas vezes se usa o valor de 7 g/dL). No renal crônico, o objetivo é manter a hemoglobina entre 10 e 11,5 g/dL para melhorar a capacidade funcional e reduzir a hipertrofia ventricular esquerda. Esperar atingir 7 g/dL causaria sofrimento desnecessário ao paciente.\n\nAlternativa e) Incorreta. Não há suspeita clínica de mielodisplasia ou outra patologia primária da medula. O quadro de anemia normocítica e hipoproliferativa é plenamente explicado pela DRC avançada, com níveis de B12 e ácido fólico normais, tornando a biópsia de medula um exame invasivo e desnecessário no momento.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:10.881Z"
+  },
+  {
+    "id": "AJUDA_124b51a6-90d7-47fc-b240-71baa87f1191",
+    "originalId": "124b51a6-90d7-47fc-b240-71baa87f1191",
+    "statement": "Um empresário da construção civil de 63 anos relata perda progressiva de peso não intencional de 9 quilos durante os últimos 10 meses. Refere saciedade precoce e náuseas. Refere fezes escurecidas com odor fétido. A endoscopia digestiva alta revelou adenocarcinoma gástrico. A condição que NÃO é considerado um fator de risco para adenocarcinoma gástrico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "uso prolongado de inibidores de bomba de prótons.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pólipo adenomatoso gástrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gastrite atrófica metaplásica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Infecção por Helicobacter pylori.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cirurgia gástrica tipo Billroth II para úlcera péptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questao aborda a epidemiologia e os fatores predisponentes do adenocarcinoma gastrico (tipo intestinal), focando na fisiopatologia da mucosa e nas lesoes precursoras.\n\nAnalise das alternativas:\n\na) Uso prolongado de inibidores de bomba de protons (IBP): Esta e a resposta correta por representar o fator que NAO e de risco. Os IBPs sao amplamente utilizados e, embora causem hipergastrinemia secundaria compensatoria e o aparecimento comum de polipos de glandulas fundicas, estes polipos sao benignos e sem potencial de malignizacao. Nao ha embasamento cientifico que sustente a associacao entre o uso cronico de IBPs e o desenvolvimento de adenocarcinoma gastrico em humanos.\n\nb) Polipo adenomatoso gastrico: Incorreta, pois e um fator de risco estabelecido. Diferente dos polipos hiperplasicos ou fundicos, os adenomas sao lesoes neoclasicas verdadeiras que apresentam displasia. O risco de transformacao maligna e consideravel, especialmente em lesoes maiores que 2 centimetros, exigindo sempre a resseccao endoscopica e o acompanhamento.\n\nc) Gastrite atrofica metaplasica: Incorreta, pois e um dos principais fatores de risco. De acordo com a Cascata de Correa, a mucosa sofre uma sequencia de insultos: gastrite cronica -> atrofia gastrica (perda de glandulas) -> metaplasia intestinal (substituicao por epitelio tipo intestinal) -> displasia -> adenocarcinoma. A metaplasia intestinal e considerada uma lesao pre-neoplasica fundamental nesse processo.\n\nd) Infeccao por Helicobacter pylori: Incorreta, pois e o fator etiologico mais importante. O H. pylori e classificado pela OMS como um carcinogeno do grupo 1. A bacteria causa um estado de inflamacao cronica da mucosa que desencadeia todo o processo de atrofia e metaplasia descrito anteriormente, aumentando exponencialmente o risco do tumor.\n\ne) Cirurgia gastrica tipo Billroth II para ulcera peptica: Incorreta, pois e um fator de risco conhecido como cancer do coto gastrico. Pacientes submetidos a gastrectomias parciais por doenca benigna apresentam risco aumentado apos 15 a 20 anos do procedimento. No Billroth II, o refluxo biliar e pancreatico cronico para o estomago remanescente causa gastrite alcalina, o que predispoe a degeneracao maligna da mucosa.\n\nResumo: Enquanto estados de inflamacao cronica, alteracoes no epitelio (metaplasia/displasia) e cirurgias previas aumentam o risco de cancer gastrico, o uso de medicamentos da classe dos IBPs e considerado seguro quanto ao potencial carcinogenico.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:10.881Z"
+  },
+  {
+    "id": "AJUDA_124c3f65-1b11-42ea-af4a-abd3825adc70",
+    "originalId": "124c3f65-1b11-42ea-af4a-abd3825adc70",
+    "statement": "Durante uma histerectomia abdominal, o cirurgião deve identificar e ligar a artéria uterina para evitar sangramento excessivo. Ao fazer isso, ele precisa tomar cuidado para evitar lesionar qual estrutura anatômica adjacente que passa imediatamente inferior à artéria uterina?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ureter",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Nervo pudendo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Veia ilíaca interna",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ligamento uterossacro",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda um dos conceitos mais fundamentais da anatomia cirúrgica pélvica, essencial para a realização segura de uma histerectomia abdominal ou vaginal: a relação entre o sistema urinário e o sistema vascular uterino.\n\nA alternativa (a) está correta. O ureter apresenta um trajeto descendente na pelve e, ao se aproximar da região do colo uterino e do fórnice vaginal lateral, ele passa imediatamente por baixo (inferiormente) da artéria uterina. Este cruzamento ocorre dentro do ligamento cardinal (ou ligamento de Mackenrodt), aproximadamente 1,5 a 2 cm lateralmente ao istmo uterino. Na prática cirúrgica, esse é o local de maior risco para lesão ureteral, seja por ligadura acidental, clampeamento ou lesão térmica durante a hemostasia da artéria uterina. O mnemônico clássico utilizado em anatomia para recordar essa relação é \"água sob a ponte\", onde a água (urina no ureter) passa por baixo da ponte (artéria uterina).\n\nA alternativa (b) está incorreta. O nervo pudendo origina-se das raízes sacrais de S2 a S4 e deixa a pelve através do forame isquiático maior, contornando a espinha isquiática para entrar no canal pudendo (canal de Alcock) no períneo. Sua localização é muito mais profunda e lateral no assoalho pélvico, não possuindo relação anatômica direta de cruzamento com a artéria uterina no plano da histerectomia.\n\nA alternativa (c) está incorreta. A veia ilíaca interna situa-se na parede posterolateral da pelve. Embora a artéria uterina seja um ramo da artéria ilíaca interna, a veia principal está posicionada mais profundamente e lateralmente ao local onde a artéria uterina é rotineiramente isolada e ligada junto ao útero. O risco cirúrgico imediato de lesão por proximidade mecânica durante a ligadura da uterina recai sobre o ureter, e não sobre os grandes vasos da parede pélvica.\n\nA alternativa (d) está incorreta. Os ligamentos uterossacros são faixas de tecido conjuntivo e músculo liso que estendem o colo uterino até o sacro, proporcionando suporte posterior ao útero. Embora o ureter passe lateralmente a esses ligamentos, eles não apresentam a relação de cruzamento \"superior-inferior\" com a artéria uterina descrita na questão. O cirurgião secciona os ligamentos uterossacros em uma etapa diferente da ligadura dos vasos uterinos.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Anatomia e Embriologia do Trato Genital Feminino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:10.881Z"
+  }
+]

@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_52233e1a-e5af-40bc-9780-5162dc4ca75d",
+    "originalId": "52233e1a-e5af-40bc-9780-5162dc4ca75d",
+    "statement": "Mulher de 34 anos, nuligesta, com desejo reprodutivo, apresenta dor pélvica crônica e dismenorreia progressiva há 2 anos. Ultrassonografia transvaginal mostra ovário esquerdo aumentado, com formação cística de 6,2 cm, conteúdo homogêneo de baixa ecogenicidade (“vidro fosco”), paredes espessadas, sem septações internas ou projeções papilares. Doppler colorido evidencia vascularização periférica discreta, sem fluxo central. CA-125 sérico: 78 U/mL.\n\nDiante do quadro, a conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia com ooforectomia esquerda, devido ao risco elevado de malignidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acompanhamento expectante com nova ultrassonografia em 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Laparoscopia com cistectomia ovariana, preservando parênquima ovariano.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Punção aspirativa guiada por ultrassonografia e escleroterapia do cisto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Início de quimioterapia empírica para neoplasia ovariana epitelial inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve uma paciente jovem com sintomas clássicos de endometriose (dor pélvica e dismenorreia progressiva) e desejo reprodutivo futuro. O achado ultrassonográfico de um cisto com aspecto de vidro fosco (ground glass), sem áreas sólidas ou papilas, associado a um Doppler com fluxo apenas periférico, é patognomônico de um endometrioma ovariano. O CA-125 discretamente aumentado (78 U/mL) corrobora o diagnóstico, pois essa proteína pode se elevar em processos inflamatórios pélvicos, como a própria endometriose, não sendo necessariamente um marcador de malignidade neste contexto.\n\nExplicação das alternativas:\n\na) Incorreta. A laparotomia é uma via de acesso mais invasiva e desnecessária para um caso com forte suspeita de benignidade. A ooforectomia (retirada do ovário) é contraindicada para esta paciente, pois ela possui desejo reprodutivo e o objetivo deve ser a preservação da reserva ovariana.\n\nb) Incorreta. Embora cistos funcionais possam ser acompanhados, este cisto possui 6,2 cm e a paciente é sintomática. Endometriomas maiores que 5-6 cm ou sintomáticos geralmente têm indicação cirúrgica, pois raramente regridem espontaneamente e podem causar dor crônica ou complicações como a torção ovariana.\n\nc) Correta. A videolaparoscopia é o padrão-ouro para o tratamento cirúrgico do endometrioma. A cistectomia (retirada apenas da cápsula do cisto) é preferível à simples aspiração ou drenagem, pois apresenta menores taxas de recorrência dos sintomas e do cisto, além de permitir o diagnóstico histopatológico e preservar o parênquima ovariano saudável para futuras gestações.\n\nd) Incorreta. A punção aspirativa guiada por ultrassonografia apresenta altíssimas taxas de recorrência (o cisto se enche novamente em pouco tempo) e risco de complicações como infecção (abscesso ovariano) e peritonite química. Não é a conduta de escolha para endometriomas.\n\ne) Incorreta. A quimioterapia é reservada para casos confirmados de neoplasias malignas. O quadro é tipicamente benigno (endometrioma) e o uso de quimioterapia empírica baseada apenas em um CA-125 levemente alterado e imagem sugestiva de endometriose seria um erro gravíssimo de conduta.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia",
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:42.600Z"
+  },
+  {
+    "id": "AJUDA_52257f38-0663-438d-bf4d-e2014920f308",
+    "originalId": "52257f38-0663-438d-bf4d-e2014920f308",
+    "statement": "Analise a imagem a seguir.\n\nCom uma tumoração com essas características, em ultrassonografia endovaginal de uma mulher com 65 anos de idade é possível fazer a hipótese diagnóstica de",
+    "options": [
+      {
+        "id": "A",
+        "text": "endometriose pélvica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "corpo lúteo hemorrágico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tumor ovariano provavelmente benigno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tumor ovariano provavelmente maligno.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A análise desta questão deve considerar dois fatores fundamentais: a idade da paciente (65 anos) e as características morfológicas observadas na ultrassonografia.\n\nA imagem exibe uma massa anexial complexa, multilocular, apresentando septos grosseiros e, principalmente, componentes sólidos e projeções papilíferas (vegetações) volumosas que se projetam para o interior das lojas císticas. Segundo os critérios do grupo IOTA (International Ovarian Tumor Analysis), a presença de estruturas sólidas e a irregularidade interna em uma paciente na pós-menopausa são fortes preditores de malignidade.\n\nAlternativa (a) Incorreta: A endometriose pélvica atinge mulheres predominantemente em idade reprodutiva. O achado ultrassonográfico típico de um endometrioma é uma formação cística com conteúdo hipoecoico homogêneo, apresentando ecos de baixa amplitude (aspecto de vidro fosco), sem a vegetação grosseira observada na imagem.\n\nAlternativa (b) Incorreta: O corpo lúteo hemorrágico é uma estrutura funcional resultante do ciclo ovulatório. Como a paciente tem 65 anos e está na pós-menopausa, ela não apresenta atividade ovariana cíclica, o que exclui esta hipótese. Além disso, o aspecto ultrassonográfico do corpo lúteo hemorrágico é de um cisto com retículo de fibrina (\"aspecto em teia de aranha\"), diferente da massa sólida-cística apresentada.\n\nAlternativa (c) Incorreta: Embora alguns tumores benignos (como o cistadenoma seroso) possam ter septos, eles geralmente são finos e as paredes são lisas, sem componentes sólidos significativos. A complexidade desta tumoração, com vegetações evidentes, aponta contra a benignidade.\n\nAlternativa (d) Correta: A combinação de uma paciente idosa (pós-menopausa) com uma massa ovariana contendo componentes sólidos/papilíferos e septações espessas é altamente sugestiva de câncer de ovário. Na prática clínica, massas com tais \"M-rules\" (regras de malignidade) devem ser investigadas com urgência, incluindo a dosagem de marcadores tumorais (como o CA-125) e avaliação cirúrgica, dada a alta probabilidade de um tumor ovariano maligno.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/db916888651d761509da7a9527b51f8908145785e5217c7a470a754c60cc5767.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_52257f38-0663-438d-bf4d-e2014920f308_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:43.191Z"
+  },
+  {
+    "id": "AJUDA_5227851e-fcd8-4a10-9c92-a991a55651f7",
+    "originalId": "5227851e-fcd8-4a10-9c92-a991a55651f7",
+    "statement": "Mulher de 42 anos, secundigesta, previamente hígida, com antecedente de laqueadura tubária e sem desejo reprodutivo, comparece ao ambulatório de ginecologia referindo sangramento menstrual aumentado há quatro meses. Relata ciclos regulares que anteriormente apresentavam fluxo leve e duravam quatro dias, mas agora tem volume aumentado e duram nove dias, com episódios de sangramento em borra de café fora do período menstrual. Nega dismenorreia, dispareunia ou outras queixas. Durante a investigação foi realizada histeroscopia diagnóstica, cujo achado pode ser visto na imagem a seguir:\n\nQual é o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adenomiose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mioma subseroso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pólipo endometrial",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Endometriose",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve uma paciente de 42 anos com Sangramento Uterino Anormal (SUA), apresentando tanto aumento do fluxo menstrual (menorragia) quanto sangramento intermenstrual (spotting ou borra de café). A ausência de dor, como dismenorreia ou dispareunia, é um dado importante para o raciocínio clínico. O diagnóstico definitivo é fornecido pela imagem da histeroscopia, que revela uma lesão expansiva, de aspecto fofinho, coloração rosada e superfície lisa, projetando-se da parede uterina para o interior da cavidade.\n\nAnálise das alternativas:\n\na) Adenomiose: É caracterizada pela presença de glândulas e estroma endometrial no miométrio uterino. Embora cause aumento do fluxo menstrual, a adenomiose costuma estar fortemente associada à dor (dismenorreia secundária) e ao aumento global do volume uterino. Na histeroscopia, poderiam ser observados achados como irregularidades na superfície ou pequenos orifícios (criptas), mas não uma massa polipoide bem definida como a da imagem.\n\nb) Mioma subseroso: Os miomas são classificados de acordo com sua localização. Os subserosos crescem na face externa do útero, em direção à cavidade pélvica/abdominal. Por não estarem em contato com o endométrio, eles raramente causam sangramento aumentado e não podem ser visualizados durante uma histeroscopia, que avalia apenas a parte interna (cavidade) do útero.\n\nc) Pólipo endometrial: Alternativa correta. Os pólipos são projeções focais do endométrio e representam uma das causas mais comuns de sangramento uterino anormal, especialmente o sangramento intermenstrual, em mulheres na quarta e quinta décadas de vida. A imagem apresentada é patognomônica de um pólipo endometrial sendo visualizado por histeroscopia diagnóstica, mostrando sua base de implantação e projeção para a luz uterina.\n\nd) Endometriose: A endometriose é definida pela presença de tecido endometrial fora do útero (peritônio, ovários, septo retovaginal). Os sintomas cardinais são os \"6 Ds\" (dismenorreia, dor pélvica crônica, dispareunia, disquesia, disúria e dificuldade para engravidar). A endometriose não é diagnosticada por histeroscopia, pois esta técnica visualiza apenas o interior do útero, onde a endometriose, por definição, não está presente.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Pólipos Uterinos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/8ac34758e1d699268c950ac4a9faec539724af7fb27c49c38f1fc74159d64755.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5227851e-fcd8-4a10-9c92-a991a55651f7_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:43.695Z"
+  },
+  {
+    "id": "AJUDA_522c8892-f241-4da9-9413-8f860fad803d",
+    "originalId": "522c8892-f241-4da9-9413-8f860fad803d",
+    "statement": "Sobre os testes diagnósticos, suas métricas e sua validade, afirma-se corretamente que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a especificidade pode ser definida como a medida da probabilidade de resultado positivo em pacientes doentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a sensibilidade pode ser definida como a probabilidade de resultado negativo em pacientes não doentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a razão de verossimilhança pode ser usada para calcular a probabilidade pós-teste combinando múltiplos testes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a acurácia pode ser positiva ou negativa, sendo a razão entre a probabilidade de um determinado resultado em doentes e não-doentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Questão comentada:\n\nAlternativa (a) Incorreta: A definição apresentada refere-se à Sensibilidade, e não à Especificidade. A Sensibilidade é a capacidade do teste de identificar corretamente os indivíduos doentes (resultado positivo entre os doentes). Já a Especificidade é a probabilidade de um resultado negativo em pacientes que comprovadamente não apresentam a doença (verdadeiros negativos).\n\nAlternativa (b) Incorreta: Houve uma inversão de conceitos. A Sensibilidade é a probabilidade de resultado positivo em doentes. A definição trazida pela alternativa (resultado negativo em pacientes não doentes) descreve a Especificidade.\n\nAlternativa (c) Correta: A Razão de Verossimilhança (Likelihood Ratio) é uma das ferramentas mais úteis na medicina baseada em evidências para o raciocínio clínico. Ela indica o quanto um resultado de teste aumenta ou diminui a probabilidade pré-teste de uma doença, gerando uma probabilidade pós-teste. No processo diagnóstico, podemos utilizar a probabilidade pós-teste de um primeiro exame como a probabilidade pré-teste para um segundo exame, permitindo combinar múltiplos testes sequencialmente para refinar o diagnóstico.\n\nAlternativa (d) Incorreta: A acurácia é uma medida de desempenho global do teste, calculada pela soma dos acertos (verdadeiros positivos + verdadeiros negativos) dividida pelo total de indivíduos testados. Ela é expressa em valores positivos entre 0 e 1 (ou 0% a 100%). A definição final da alternativa (razão entre a probabilidade de um determinado resultado em doentes e não doentes) descreve, na verdade, a Razão de Verossimilhança, e não a acurácia.\n\nGabarito: Alternativa (c).",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:43.695Z"
+  },
+  {
+    "id": "AJUDA_522f66f4-6211-4ada-bbad-d6abd88272e8",
+    "originalId": "522f66f4-6211-4ada-bbad-d6abd88272e8",
+    "statement": "Paciente idoso, 75 anos, sequelado de AVC, institucionalizado, é trazido para atendimento médico por cuidadora devido a quadro de dispnéia progressiva e tosse há vários dias. Não sabe referir adequadamente sobre histórico de febre. Ao exame físico, o paciente se encontra emagrecido, algo dispneico (FR: 24irpm), afebril, FC: 68bpm, P.A. 110x70nnHg e edema de membros inferiores ++/4. A ausculta torácica, observamos estertoração em todo o hemitórax esquerdo, com murmúrio vesicular abolido em base e terço médio. Ausculta do hemitórax direito sem alterações. A ausculta cardíaca evidenciava ritmo em galope e bulhas hipofonéticas. Você solicitou uma radiografia de tórax que evidenciou derrame pleural de volume moderado à esquerda, condensação para hilar no pulmão esquerdo e aumento da sombra cardíaca. Sobre a conduta frente a este derrame pleural, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Níveis de proteína no líquido pleural abaixo de 2,9g/dl e relação do DHL no líquido pleural/DHL sérico menor que 0.5 suportariam a hipótese de insuficiência cardíaca congestiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A relação da proteína no líquido pleural/proteína sérica maior que 0,5 em efusão com pH abaixo de 7,2 e evidência de efusão pleural complexa à ultrassom corroboram a indicação de drenagem fechada de tórax para o caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em caso de diagnóstico de exsudato secundário a processo pneumônico, os drenos de silicone mais calibrosos têm preferência de uso por apresentarem drenagem mais efetiva e menor entupimento que os drenos de baixo calibre.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A ultrassonografia pode confirmar a presença da efusão pleural, determinar características do líquido como a presença de debris ou espessamento pleural e guiar a toracocentese indicada para o caso com menor risco de pneumotórax iatrogênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta um quadro clínico misto que sugere tanto Insuficiência Cardíaca Congestiva (edema de membros inferiores, ritmo de galope, cardiomegalia) quanto uma possível pneumonia aspirativa (consolidação para-hilar esquerda, derrame pleural unilateral à esquerda, histórico de AVC e institucionalização). Diante de um derrame pleural unilateral de etiologia incerta ou em paciente com sinais sistêmicos, a toracocentese diagnóstica é fundamental para diferenciar transudato de exsudato.\n\nAlternativa A (Correta): Esta alternativa descreve os Critérios de Light para identificar um transudato. Na insuficiência cardíaca, o líquido pleural é tipicamente um transudato, caracterizado por baixa concentração de proteínas (geralmente abaixo de 3,0 g/dL) e baixa relação de DHL (líquido/soro menor que 0,6). Os valores citados (proteína abaixo de 2,9 e relação de DHL menor que 0,5) estão dentro dos parâmetros que suportam a hipótese de transudato por ICC.\n\nAlternativa B (Correta): Os dados apresentados indicam um exsudato (relação de proteína maior que 0,5). Quando um derrame pleural ocorre associado a uma infecção pulmonar e apresenta pH menor que 7,2 ou evidência de septações/complexidade ao ultrassom, ele é classificado como derrame pleural parapneumônico complicado. Nesses casos, o consenso médico indica a necessidade de drenagem fechada de tórax, pois o líquido dificilmente será resolvido apenas com antibioticoterapia.\n\nAlternativa C (Incorreta/Gabarito): Esta afirmação está incorreta e é o gabarito da questão. Estudos clínicos modernos (como o ensaio MIST-1) e as diretrizes da British Thoracic Society demonstram que drenos de pequeno calibre (cateteres pigtail de 10 a 14 French) são tão eficazes quanto os drenos calibrosos tradicionais para drenar coleções infectadas, com a vantagem de causarem significativamente menos dor e desconforto ao paciente. Portanto, não há preferência sistemática pelos drenos mais calibrosos sob a justificativa de maior efetividade.\n\nAlternativa D (Correta): A ultrassonografia é ferramenta indispensável no manejo do derrame pleural. Ela supera a radiografia na detecção de pequenas quantidades de líquido, permite identificar a presença de septos e debris (sugerindo exsudatos complicados) e, principalmente, aumenta a segurança do procedimento de toracocentese, reduzindo drasticamente o risco de pneumotórax iatrogênico por permitir a visualização em tempo real da agulha e da anatomia local.\n\nGabarito: Alternativa C.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Derrame Pleural",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:43.695Z"
+  },
+  {
+    "id": "AJUDA_523409c4-5d80-4846-ab57-4bcbd6295424",
+    "originalId": "523409c4-5d80-4846-ab57-4bcbd6295424",
+    "statement": "O sinal de Courvoisier-Terrier está associado a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colecistite aguda litiásica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pancreatite crônica alcoólica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neoplasia de cabeça de pâncreas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Colangite esclerosante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O sinal de Courvoisier-Terrier é um achado clássico do exame físico que consiste na palpação de uma vesícula biliar distendida e indolor em um paciente que apresenta icterícia obstrutiva progressiva. A lógica por trás desse sinal é que, se a obstrução do ducto biliar for causada por cálculos (litíase), a vesícula biliar geralmente está inflamada ou sofreu fibrose por episódios prévios de colecistite, o que a impede de se dilatar significativamente. Já em obstruções neoplásicas distais, a vesícula é saudável e consegue se expandir conforme a pressão da bile aumenta, sem causar dor inflamatória.\n\nAlternativa (a) Incorreta. Na colecistite aguda litiásica, o paciente apresenta o sinal de Murphy (interrupção da inspiração profunda à palpação do ponto cístico devido à dor). A vesícula está inflamada e dolorosa, o que é o oposto do sinal de Courvoisier-Terrier, no qual a vesícula é indolor. Além disso, em pacientes com histórico de cálculos na vesícula, o órgão costuma ser cronicamente doente e pouco complacente.\n\nAlternativa (b) Incorreta. A pancreatite crônica alcoólica manifesta-se principalmente por dor abdominal crônica, má absorção (esteatorreia) e diabetes. Embora a fibrose na cabeça do pâncreas possa raramente causar estenose do colédoco, não é a associação típica descrita para este epônimo, que foca na etiologia maligna.\n\nAlternativa (c) Correta. A neoplasia de cabeça do pâncreas é a principal causa do sinal de Courvoisier-Terrier. O tumor promove uma obstrução extrínseca, lenta, contínua e progressiva do ducto colédoco distal. Como a vesícula biliar desse paciente costuma ser previamente hígida, ela se dilata de forma passiva para acomodar o fluxo biliar interrompido, tornando-se uma massa palpável no hipocôndrio direito, mas sem os sinais de irritação peritoneal ou inflamação aguda que causariam dor.\n\nAlternativa (d) Incorreta. A colangite esclerosante é uma doença inflamatória e fibrótica que atinge os ductos biliares de forma multifocal (intra e extra-hepáticos). Ela causa estenoses segmentares e não costuma levar a uma dilatação isolada e massiva da vesícula biliar da forma descrita na questão.\n\nEm resumo, a tríade \"icterícia obstrutiva + vesícula palpável + ausência de dor\" deve sempre levantar a suspeita imediata de tumores periampulares, sendo o câncer de cabeça do pâncreas o mais frequente.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:43.695Z"
+  },
+  {
+    "id": "AJUDA_5238f7c5-ed7e-4ca2-af78-ea5aab59ec16",
+    "originalId": "5238f7c5-ed7e-4ca2-af78-ea5aab59ec16",
+    "statement": "A Rede de Atenção às Urgências tem como objetivo reordenar a atenção à saúde em situações de urgência e emergência de forma coordenada entre os diferentes pontos de atenção que a compõe, de forma a melhor organizar a assistência, definindo fluxos e as referências adequadas. É constituída pela Promoção, Prevenção e Vigilância em Saúde; Atenção Básica; SAMU 192; Sala de Estabilização; Força Nacional do SUS; Unidade de Pronto Atendimento (UPA) 24h; Unidades Hospitalares e Atenção Domiciliar. Realizou-se um estudo epidemiológico transversal (situação hipotética) cujo objetivo foi investigar as variáveis associadas ao uso inadequado de duas UPAs em um município. A população do estudo foi constituída por usuários que procuraram as duas UPAs e que, na recepção, foram classificadas de acordo com o critério de risco no processo de acolhimento. Após terem passado pela classificação de risco e consulta médica, os usuários foram convidados pela pesquisadora a participarem da pesquisa (entrevista) e assinaram um termo de consentimento. Calcule o odds ratio (OR), a partir da TABELA 1 a seguir, para as variáveis “Doença crônica” e “Tempo dos sintomas” e identifique a alternativa contendo os respectivos valores.",
+    "options": [
+      {
+        "id": "A",
+        "text": "OR= 4,0 e OR=3,0.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "OR= 1,6 e OR= 1,5.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "OR= 0,4 e OR= 1,7.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "OR= 4,0 e OR = 1,5.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é fundamental compreender o cálculo da Razão de Chances, ou Odds Ratio (OR). O OR é a razão entre a chance de um evento ocorrer em um grupo exposto e a chance de ocorrer em um grupo não exposto (referência). A fórmula básica para uma tabela 2x2, onde temos os eventos (sim/não) e a exposição (sim/não), é: OR = (a / b) / (c / d) ou OR = (a * d) / (b * c).\n\nDe acordo com a Tabela 1 e as notas de rodapé, a variável dependente (desfecho) é a classificação de urgência (Sim ou Não).\n\nCálculo para a variável Doença Crônica:\nO grupo de referência é \"Não\".\n- Com doença crônica (Expostos): 400 urgentes (a) e 100 não urgentes (b). Chance = 400/100 = 4.\n- Sem doença crônica (Referência): 150 urgentes (c) e 150 não urgentes (d). Chance = 150/150 = 1.\n- OR = 4 / 1 = 4,0.\n\nCálculo para a variável Tempo dos Sintomas:\nO grupo de referência é \"4 dias ou mais\".\n- 1 a 3 dias (Expostos): 300 urgentes (a) e 100 não urgentes (b). Chance = 300/100 = 3.\n- 4 dias ou mais (Referência): 200 urgentes (c) e 200 não urgentes (d). Chance = 200/200 = 1.\n- OR = 3 / 1 = 3,0.\n\nAnálise das alternativas:\n\na) Correta. Os cálculos resultam exatamente em OR de 4,0 para doença crônica e 3,0 para tempo de sintomas, indicando que quem tem doença crônica tem 4 vezes mais chance de ser classificado como urgente, e quem tem sintomas de 1 a 3 dias tem 3 vezes mais chance em comparação aos seus respectivos grupos de referência.\n\nb) Incorreta. Esses valores não correspondem aos dados da tabela. Um OR de 1,6 ou 1,5 exigiria proporções diferentes entre os casos urgentes e não urgentes nos grupos analisados.\n\nc) Incorreta. Um OR de 0,4 indicaria um fator de proteção (menor chance do desfecho no grupo exposto), o que contradiz os dados da tabela, onde o grupo \"Sim\" para doença crônica tem nitidamente mais casos urgentes que o grupo \"Não\".\n\nd) Incorreta. Embora o primeiro valor (4,0) esteja correto para doença crônica, o segundo valor (1,5) para tempo de sintomas está errado, pois a razão de chances correta para o tempo de sintomas é 3,0.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/e7f36321b738c8aa67c4cf8c481071514627bdb1bae1706b907a6604c9739139.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5238f7c5-ed7e-4ca2-af78-ea5aab59ec16_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:44.126Z"
+  },
+  {
+    "id": "AJUDA_523cf195-41af-43f3-86fa-158717ba09fd",
+    "originalId": "523cf195-41af-43f3-86fa-158717ba09fd",
+    "statement": "Vanda, 92 anos, hipertensa, com diagnóstico de Alzheimer há 16 anos, acamada, estável, sem lesões por pressão, sem histórico recente de internação, tem uma filha, Joana, de 68 anos, que faz o manejo diário: banho no leito, administração de medicação, dieta enteral, mudança de decúbito. A filha está bem orientada e procura se informar sobre o quadro e as melhores condutas.\nNesse caso, o plano terapêutico singular deve:",
+    "options": [
+      {
+        "id": "A",
+        "text": "dar suporte à cuidadora, acompanhá-la regularmente para avaliação de sobrecarga no cuidado e manter o acompanhamento de Vanda pela equipe da APS;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "agendar consultas regulares de fisioterapia e fonoaudiologia e encaminhamento ao geriatra para acompanhamento da doença de Alzheimer;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "agendar consultas regulares de nutricionista e encaminhamento ao CER para reabilitação da deglutição;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "dar suporte à cuidadora e encaminhar Vanda para o serviço de atenção secundária domiciliar para reabilitação da deglutição por fonoaudióloga;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "fornecer acompanhamento regular com fonoaudióloga e nutricionista e encaminhar a paciente ao serviço de cuidados paliativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo de uma paciente idosa em estágio avançado de demência (provavelmente GDS 7 na escala de comprometimento cognitivo) no contexto da Atenção Primária à Saúde (APS).\n\nAnálise do quadro clínico:\nVanda tem 92 anos e convive com Alzheimer há 16 anos. Ela está acamada, usa dieta enteral e é totalmente dependente. O ponto crucial aqui é que a paciente está CLINICAMENTE ESTÁVEL, sem lesões por pressão ou intercorrências recentes. O foco do cuidado, portanto, desloca-se da cura ou reabilitação intensiva para a manutenção do conforto e, prioritariamente, para a sustentabilidade da rede de apoio.\n\nExplicação das alternativas:\n\nAlternativa (a) CORRETA: O Plano Terapêutico Singular (PTS) deve focar na tríade paciente-família-equipe. Joana, a cuidadora, tem 68 anos, o que a caracteriza também como uma idosa. Cuidar de uma paciente totalmente dependente exige um esforço físico e emocional hercúleo. A sobrecarga da cuidadora é um dos principais fatores de descompensação clínica da paciente e de hospitalizações evitáveis. Como Vanda está estável, o papel da APS é monitorar essa cuidadora, prevenir o burnout e manter o suporte domiciliar contínuo.\n\nAlternativa (b) INCORRETA: Encaminhar para acompanhamento especializado com geriatra para \"acompanhamento da doença de Alzheimer\" em um estágio de 16 anos de evolução e com a paciente estável é pouco resolutivo. O manejo nesse estágio é predominantemente de controle de sintomas e cuidados paliativos, o que deve ser feito pela equipe de APS que já conhece o território e a família. Consultas regulares de reabilitação (fisio/fono) podem ser exaustivas e ter pouco ganho funcional nesta fase.\n\nAlternativa (c) INCORRETA: A paciente já utiliza dieta enteral e está estável há anos. O encaminhamento ao Centro Especializado em Reabilitação (CER) para \"reabilitação da deglutição\" em uma paciente com demência avançada de 16 anos de evolução costuma ser fútil, pois a neuroplasticidade e a capacidade de aprendizado motor estão severamente comprometidas. O foco deve ser a prevenção de broncoaspiração e conforto.\n\nAlternativa (d) INCORRETA: A atenção secundária domiciliar (como o Melhor em Casa - AD2 ou AD3) é indicada para pacientes que necessitam de maior frequência de visitas, procedimentos complexos ou reabilitação intensiva para quadros agudos/subagudos. Vanda está estável (AD1), sendo o acompanhamento pela equipe de APS o mais adequado para o seu caso crônico.\n\nAlternativa (e) INCORRETA: Embora a paciente esteja, tecnicamente, em cuidados paliativos devido à progressão da doença, o acompanhamento regular com fonoaudióloga e nutricionista não é a prioridade absoluta no PTS diante da estabilidade descrita. Além disso, os cuidados paliativos devem ser iniciados e coordenados pela própria APS (cuidados paliativos primários), reservando o encaminhamento a serviços especializados para casos de difícil controle de sintomas, o que não é o caso de Vanda.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:44.126Z"
+  },
+  {
+    "id": "AJUDA_52464575-7305-4d54-85fc-770b61821a46",
+    "originalId": "52464575-7305-4d54-85fc-770b61821a46",
+    "statement": "Sobre enxertos e retalhos de pele, marque a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O enxerto de pele não possui derme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O autoenxerto vem da própria pessoa e o heteroenxerto vem de outra pessoa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A área mais importante de um enxerto é o pedículo vascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O curativo de Brown é o ideal nos casos de infecção da área receptora de um enxerto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O retalho de pele possui um pediculo vascular para manter o suprimento sanguíneo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda conceitos fundamentais da cirurgia plástica sobre a diferenciação entre enxertos e retalhos, além da nomenclatura de transplantes de tecidos.\n\nA alternativa (a) está incorreta porque o enxerto de pele é composto obrigatoriamente pela epiderme e por uma porção variável da derme. Os enxertos podem ser classificados como de pele parcial (contêm a epiderme e parte da derme) ou de pele total (contêm a epiderme e toda a derme). Sem a derme, o enxerto não teria viabilidade e estrutura.\n\nA alternativa (b) está incorreta devido a uma confusão terminológica comum. O autoenxerto (ou autólogo) de fato provém do próprio indivíduo. No entanto, o enxerto proveniente de outra pessoa (mesma espécie) é denominado aloenxerto ou homoenxerto. O termo heteroenxerto (ou xenoenxerto) refere-se a tecidos provenientes de espécies diferentes, como a pele de porco ou de tilápia.\n\nA alternativa (c) está incorreta porque, por definição, o enxerto não possui pedículo vascular. Ele é um tecido completamente destacado de sua área doadora e sua sobrevivência depende exclusivamente das condições do leito receptor, por meio de processos como embebição plasmática, inosculação e revascularização capilar. Quem possui pedículo vascular é o retalho.\n\nA alternativa (d) está incorreta. O curativo de Brown (ou Tie-over) é uma técnica de sutura compressiva usada para garantir o contato íntimo e a imobilização do enxerto no leito receptor, evitando o cisalhamento e o acúmulo de sangue ou soro. A presença de infecção no leito receptor é, na verdade, uma contraindicação relativa ou absoluta para a realização de enxertia, pois as bactérias e enzimas proteolíticas impedem a integração do enxerto (\"pega\").\n\nA alternativa (e) está CORRETA. Esta é a definição técnica de retalho cutâneo: um segmento de pele e tecidos subjacentes que é transferido de uma área para outra, mantendo seu próprio suprimento sanguíneo através de um pedículo vascular. Diferente do enxerto, o retalho leva sua própria nutrição, o que permite sua utilização em leitos pouco vascularizados, como sobre ossos expostos, tendões sem paratendão ou áreas submetidas à radioterapia.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Cirurgia Plástica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:44.126Z"
+  },
+  {
+    "id": "AJUDA_525311a7-4336-4efe-be9a-32b07d0d98a1",
+    "originalId": "525311a7-4336-4efe-be9a-32b07d0d98a1",
+    "statement": "Leia o caso a seguir.\n\nJ.V.C, masculino, 28 anos, teve diagnóstico de hepatite B há 8 meses. Sua carga viral (HBV-DNA) foi 12.000 UI/ml. A dosagem de (ALT) TGP foi 112 U/l com HBeAg reagente. Na classificação de Child, enquadrou-se no grupo B.\n\nQuanto ao tratamento de J.V.C, a conduta adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "por ser paciente cirrótico com HBeAg reagente, caso apresente soroconversão para anti-HBe, mesmo que não alcance HBsAg indetectável, poderá ser avaliado para a interrupção do tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "por ser paciente cirrótico, deve-se suspender o tratamento após a indetecção sustentada de HBsAg, mas o paciente deverá continuar em atendimento ambulatorial com controle semestral de marcadores da hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "por ser paciente cirrótico, não se poderá interromper seguramente o tratamento, mesmo após a confirmação da indetecção de HBsAg, definida por dois exames com HBsAg não reagente com intervalo mínimo de doze meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "por ser paciente cirrótico, se houver queda de pelo menos 1 log10 UI/ml nos níveis de HBV-DNA aos seis meses de tratamento, poderá ter seu tratamento suspenso, mas deverá ter controle ambulatorial por mais seis meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente jovem com hepatite B crônica, carga viral detectável (12.000 UI/mL), transaminases elevadas e o dado mais importante para a definição da conduta: classificação Child-Pugh B, o que caracteriza a presença de cirrose hepática.\n\nA análise das alternativas baseia-se nas recomendações do Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para hepatite B:\n\nAlternativa a) Incorreta. Em pacientes com cirrose, a soroconversão de HBeAg (passagem de HBeAg reagente para anti-HBe reagente) não é critério para interrupção do tratamento. Mesmo em pacientes não cirróticos, após a soroconversão, é necessário um longo período de tratamento de consolidação. No cirrótico, o risco de reativação viral e descompensação hepática grave impede a suspensão baseada apenas nesse marcador.\n\nAlternativa b) Incorreta. Embora a perda do HBsAg (indetecção sustentada) seja considerada a \"cura funcional\" da hepatite B, as diretrizes clínicas são extremamente cautelosas com pacientes cirróticos. A suspensão do tratamento nesses casos, mesmo após a perda do HBsAg, oferece um risco elevado de recidiva viral que o fígado cirrótico pode não suportar, levando à insuficiência hepática aguda sobre crônica.\n\nAlternativa c) Correta. Pacientes cirróticos (sejam Child A, B ou C) com hepatite B devem receber tratamento por tempo indeterminado (uso contínuo/vitalício). A literatura médica e os protocolos nacionais e internacionais estabelecem que, devido ao risco de descompensação fatal em caso de rebote viral, não se pode interromper o tratamento com segurança, mesmo diante da perda do HBsAg confirmada em exames repetidos. A manutenção da terapia antiviral reduz o risco de progressão da doença, carcinoma hepatocelular e óbito.\n\nAlternativa d) Incorreta. A queda de 1 log₁₀ na carga viral aos seis meses de tratamento é um indicador de resposta virológica parcial, e não um critério de interrupção. Pelo contrário, se a resposta for insuficiente, a conduta seria avaliar a adesão ou ajustar o esquema terapêutico, nunca suspender a medicação, especialmente em um contexto de cirrose.\n\nResumo: Para a prova de residência, grave que o diagnóstico de cirrose em um paciente com hepatite B indica, na quase totalidade dos casos, tratamento medicamentoso para o resto da vida, independentemente da negativação dos marcadores virais.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Hepatites Virais",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:44.126Z"
+  }
+]

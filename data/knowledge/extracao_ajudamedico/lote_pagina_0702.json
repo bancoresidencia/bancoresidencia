@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_c480b12d-0e2c-409b-bc4a-93e451f9285e",
+    "originalId": "c480b12d-0e2c-409b-bc4a-93e451f9285e",
+    "statement": "Você atende uma paciente de 25 anos, gestante de 24 semanas, que está no pré-natal de baixo risco. Ela não tem patologias e nem alergias. Vem à consulta com queixa de corrimento branco e prurido vulvar. Ao exame físico, você identifica: PA=110x70mmHg, AU=23cm, BCF=144bpm. Exame Ginecológico: Vulva hiperemiada com algumas escoriações. Especular: conteúdo vaginal branco, grumoso, espesso, pHmetria= 4,0, Teste das aminas negative. Qual o tratamento mais adequado para a patologia desta paciente descrita acima?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metronidazol 100mg/1gr via vaginal por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fluconazol 250mg via oral em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Miconazol 2% - via vaginal por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Nistatina 10.000UI/gr via vaginal por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Metronidazol 500mg 12/12 hs por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Diagnóstico: O quadro clínico de corrimento branco, grumoso (aspecto de queijo cottage), associado ao prurido vulvar, pH vaginal de 4,0 (ácido) e teste das aminas negativo, direciona o diagnóstico para candidíase vulvovaginal. Na gestação, essa condição é comum devido ao aumento dos níveis de estrogênio, que eleva o conteúdo de glicogênio vaginal, facilitando a proliferação de fungos do gênero *Candida*.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. O metronidazol é um antibiótico/amebicida indicado para o tratamento de vaginose bacteriana e tricomoníase. No caso apresentado, o pH ácido e o teste das aminas negativo excluem essas patologias. A vaginose bacteriana apresenta pH > 4,5 e teste das aminas positivo.\n\nAlternativa B - Incorreta. O uso de antifúngicos orais, como o fluconazol, deve ser evitado durante a gestação devido a possíveis riscos de malformações fetais e abortamento. As diretrizes nacionais (Ministério da Saúde) e internacionais recomendam o tratamento tópico como via preferencial e segura para gestantes. Além disso, a dose de 250 mg não é o padrão para candidíase (o usual é 150 mg).\n\nAlternativa C - Correta. Em gestantes, o tratamento da candidíase deve ser realizado por via vaginal. Os imidazólicos tópicos, como o miconazol creme a 2% por 7 dias, são considerados a primeira linha de tratamento. Eles apresentam alta taxa de cura clínica e micológica com segurança comprovada durante a gravidez.\n\nAlternativa D - Incorreta. Embora a nistatina possa ser usada na gestação, ela é menos eficaz que os derivados imidazólicos (como miconazol e clotrimazol). O tempo de tratamento com nistatina geralmente é de 14 dias, e não 5 dias. Além disso, a concentração correta da nistatina vaginal é de 100.000 UI/g, e não 10.000 UI/g como descrito na opção.\n\nAlternativa E - Incorreta. O metronidazol por via oral é o tratamento de escolha para a tricomoníase ou vaginose bacteriana. Ele não possui atividade contra fungos; portanto, não teria efeito terapêutico no quadro de candidíase da paciente.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Vulvovaginites",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:14.935Z"
+  },
+  {
+    "id": "AJUDA_c48c6610-3157-4b96-8c85-e8d1be158ca1",
+    "originalId": "c48c6610-3157-4b96-8c85-e8d1be158ca1",
+    "statement": "Menina de 11 meses, nascida a termo é levada para avaliação médica pois a mãe está preocupada com o desenvolvimento da criança: está mais irritada, não senta sem apoio, não engatinha, e dorme pouco. A alimentação consiste de aleitamento materno complementado com a dieta da família, que é vegana. Faz suplementação de vitamina D (400 UI ao dia). O hemograma da criança revela leucócitos totais normais e diferencial de células sem alterações, além dos seguintes achados: \nExame: Hemoglobina (Hb) | Resultado: 9,5 g/dL | VR: 10,5 a 13,5 g/dL\nExame: Hematócrito (Ht) | Resultado: 34% | VR: 33 a 39%\nExame: Volume corpuscular médio (VCM) | Resultado: 101 fL | VR: 70 a 86 fL\nExame: Hemoglobina corpuscular média (HCM) | Resultado: 23 pg | VR: 23 a 31 pg\nExame: Plaquetas | Resultado: 120.000/mm³ | VR: 200.000 a 500.000/mm³\n\nConsiderando o quadro descrito, a conduta adequada para essa criança é",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar avaliação de nutricionista e iniciar suplementação de vitamina A e vitamina C.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar suplementação de ferro e vitamina B12 e solicitar acompanhamento com fisioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "encaminhar para neurologista infantil e iniciar suplementação de ácido fólico e de vitamina B12.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aumentar a dose de suplementação de vitamina D, iniciar ferro e manter acompanhamento de rotina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descreve uma lactente de 11 meses com atraso no desenvolvimento neuropsicomotor (não senta sem apoio e não engatinha) e irritabilidade. O hemograma apresenta anemia (Hb 9,5 g/dL) com macrocitose evidente (VCM de 101 fL, quando o normal para a idade seria até 86 fL) e plaquetopenia (120.000/mm³). \n\nO ponto central da questão é a dieta vegana da família. A vitamina B12 (cobalamina) é encontrada exclusivamente em produtos de origem animal. Lactentes amamentados por mães veganas que não suplementam B12, ou crianças em dieta vegana estrita sem acompanhamento, estão em alto risco de deficiência desta vitamina. A falta de B12 compromete a síntese de DNA, resultando em anemia megaloblástica (macrocitose e citopenias) e danos neurológicos, que se manifestam como atraso ou regressão do desenvolvimento, hipotonia e irritabilidade.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. Embora o nutricionista seja importante para o planejamento alimentar, as vitaminas A e C não tratam a anemia macrocítica nem o atraso no desenvolvimento. A urgência médica aqui é a reposição de vitamina B12 para evitar danos neurológicos permanentes.\n\nAlternativa B: Correta. A conduta prioritária é a reposição de vitamina B12 para tratar a causa da anemia megaloblástica e dos sintomas neurológicos. A suplementação de ferro é indicada tanto pela faixa etária (conforme recomendações da Sociedade Brasileira de Pediatria) quanto pelo risco aumentado em dietas restritivas. O acompanhamento com fisioterapia é essencial para estimular a recuperação dos marcos motores atrasados enquanto a deficiência vitamínica é corrigida.\n\nAlternativa C: Incorreta. O ácido fólico (vitamina B9) é abundante em dietas baseadas em vegetais (folhas verdes), sendo raramente a causa de deficiência em veganos. O foco deve ser a vitamina B12. Embora o neurologista possa ser consultado, o diagnóstico e o tratamento inicial da deficiência vitamínica são competências do pediatra.\n\nAlternativa D: Incorreta. A dose de vitamina D que a criança recebe (400 UI) já é a recomendada para a prevenção do raquitismo no primeiro ano de vida. Aumentar essa dose não resolveria a anemia macrocítica nem o quadro neurológico. Além disso, o ferro isoladamente não trata a macrocitose, que é a alteração laboratorial predominante no caso.\n\nSÍNTESE DA CONDUTA\n\nDiante de anemia macrocítica associada a sintomas neurológicos em paciente com dieta vegana, a deficiência de vitamina B12 é a hipótese diagnóstica principal. O tratamento envolve a reposição desta vitamina e suporte terapêutico para o desenvolvimento motor.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:14.935Z"
+  },
+  {
+    "id": "AJUDA_c48e28ac-a624-4a4d-909c-78b95402047f",
+    "originalId": "c48e28ac-a624-4a4d-909c-78b95402047f",
+    "statement": "Considerando adultos acima de 40 anos de idade, não gestantes, assintomáticos, independentemente da presença de outros fatores de risco, para quais condições é recomendado o rastreamento populacional?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diabetes tipo 2 e hipertensão arterial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Câncer de mama e câncer de próstata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Câncer colorretal e diabetes tipo 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Câncer de mama e hipertensão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA questão aborda o rastreamento (*screening*) de doenças em adultos assintomáticos acima de 40 anos, um tema recorrente em provas de Medicina Preventiva e Clínica Médica. O rastreamento populacional deve ser aplicado a condições com alta prevalência, fase latente identificável e cujo tratamento precoce reduza a morbimortalidade.\n\nAlternativa A: Correta. A Hipertensão Arterial Sistêmica (HAS) e o Diabetes Mellitus tipo 2 (DM2) são os pilares do rastreamento em adultos na atenção primária. O rastreamento da hipertensão é recomendado para todos os adultos a partir dos 18 anos em todas as consultas clínicas. Para o Diabetes Mellitus, embora existam variações entre diretrizes (a Sociedade Brasileira de Diabetes sugere a partir dos 45 anos para a população geral, enquanto a USPSTF americana reduziu para 35 anos), a presença de idade acima de 40 anos é um marco clássico para o início da busca ativa dessas patologias metabólicas e vasculares, especialmente no contexto das políticas de saúde pública no Brasil.\n\nAlternativa B: Incorreta. O rastreamento populacional do câncer de próstata é um tema controverso. A maioria das organizações de saúde, incluindo o Ministério da Saúde do Brasil e a USPSTF, não recomenda o rastreamento universal (em massa), mas sim a decisão compartilhada entre médico e paciente, geralmente a partir dos 50 anos, devido ao risco de sobrediagnóstico e sobretratamento. Quanto ao câncer de mama, o Ministério da Saúde recomenda o rastreamento mamográfico bienal apenas para mulheres entre 50 e 69 anos.\n\nAlternativa C: Incorreta. O rastreamento do câncer colorretal é fortemente recomendado, porém as diretrizes do Ministério da Saúde no Brasil tradicionalmente focam na faixa etária a partir dos 50 anos. Embora sociedades especializadas e diretrizes internacionais tenham reduzido essa idade para 45 anos recentemente, a alternativa A descreve condições (HAS e DM2) que são rastreadas de forma mais universal e precoce na rotina da atenção básica para qualquer adulto acima de 40 anos.\n\nAlternativa D: Incorreta. Como mencionado anteriormente, a hipertensão arterial é, de fato, objeto de rastreamento populacional. No entanto, o rastreamento do câncer de mama pelo Ministério da Saúde é indicado para a faixa dos 50 aos 69 anos. Embora a Sociedade Brasileira de Mastologia recomende o início aos 40 anos, a questão pede o que é recomendado como padrão de rastreamento populacional (política de saúde pública), no qual o câncer de mama aos 40 anos para mulheres assintomáticas sem fatores de risco não é o consenso do sistema público.\n\nEm resumo, a Hipertensão Arterial e o Diabetes Mellitus são as condições que possuem recomendação mais sólida e abrangente para rastreamento em adultos assintomáticos na faixa etária citada, visando à prevenção de eventos cardiovasculares e complicações microvasculares.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Hipertensão Arterial Sistêmica",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:14.937Z"
+  },
+  {
+    "id": "AJUDA_c48eab16-4be0-4c32-adba-6d613347ee22",
+    "originalId": "c48eab16-4be0-4c32-adba-6d613347ee22",
+    "statement": "A bronquiolite viral aguda é uma das principais causas de internação em lactentes. Sobre as bronquiolites, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O uso do anticorpo monoclonal humanizado para o vírus sincicial respiratório é indicado, para todas as crianças até 1 ano de idade, pelo Ministério da Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento é baseado no uso de broncodilatadores inalatórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O uso de antibióticos, broncodilatadores, anticolinérgicos e corticoides não é recomendado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A radiografia simples de tórax confirma o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A azitromicina tem se mostrado eficaz, quando iniciada até o 5° dia de sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A bronquiolite viral aguda é caracterizada pelo primeiro episódio de sibilância em lactentes com menos de 24 meses, sendo precedida por sintomas gripais. O principal agente é o Vírus Sincicial Respiratório (VSR).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O palivizumabe é um anticorpo monoclonal indicado apenas para grupos específicos de alto risco e não para todas as crianças. No Brasil, o Ministério da Saúde disponibiliza a imunoprofilaxia para prematuros com idade gestacional menor ou igual a 28 semanas (até 1 ano de vida) e crianças com cardiopatia congênita com repercussão hemodinâmica ou doença pulmonar crônica da prematuridade (até os 2 anos de vida).\n\nAlternativa b: Incorreta. A base do tratamento é o suporte clínico (hidratação, aspiração de vias aéreas superiores e oxigenoterapia, se necessário). Os broncodilatadores inalatórios não são recomendados de rotina porque a obstrução respiratória na bronquiolite é causada por edema da mucosa, excesso de muco e detritos celulares, e não por broncoespasmo do músculo liso.\n\nAlternativa c: Correta. De acordo com as diretrizes da Sociedade Brasileira de Pediatria e da Academia Americana de Pediatria, o uso dessas medicações não é recomendado de rotina. Os corticoides não alteram a evolução da doença; os antibióticos só devem ser usados se houver infecção bacteriana secundária comprovada; e os broncodilatadores/anticolinérgicos não demonstraram eficácia em reduzir o tempo de internação ou melhorar o desfecho clínico.\n\nAlternativa d: Incorreta. O diagnóstico da bronquiolite viral aguda é eminentemente clínico. A radiografia de tórax não é necessária para confirmar o quadro e pode mostrar achados inespecíficos, como hiperinsuflação pulmonar e atelectasias por tampão mucoso, o que muitas vezes induz ao erro diagnóstico de pneumonia bacteriana.\n\nAlternativa e: Incorreta. Não há evidências de que a azitromicina, seja por sua ação antibiótica ou por suas propriedades anti-inflamatórias, tenha benefício no tratamento da bronquiolite viral aguda. Estudos mostram que ela não reduz a gravidade dos sintomas nem a duração da hospitalização.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:14.937Z"
+  },
+  {
+    "id": "AJUDA_c492941b-1b16-44fb-9501-029b8dd5798f",
+    "originalId": "c492941b-1b16-44fb-9501-029b8dd5798f",
+    "statement": "Mulher, 36 anos de idade, G2P2, apresenta citologia oncótica com lesão intraepitelial escamosa de alto grau (HSIL). A colposcopia revelou zona de transformação totalmente visível com epitélio acetobranco espesso, mosaico grosseiro e vasos atípicos. Biópsia dirigida confirmou carcinoma in situ (NIC III). Com base nas recomendações atuais para o manejo do câncer do colo uterino, sabe-se que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a histerectomia total é obrigatória em todos os casos de carcinoma in situ, independentemente do desejo reprodutivo da paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a presença de zona de transformação totalmente visível e biópsia positiva dispensa a necessidade de colposcopia de controle após o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o rastreamento do câncer do colo uterino deve iniciar-se aos 18 anos em mulheres sexualmente ativas e ser anual até os 64 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o tratamento de escolha é conização diagnóstica e terapêutica, com margens livres, especialmente em mulheres que desejam manter a fertilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo das lesões precursoras do câncer do colo uterino, especificamente o NIC III (Neoplasia Intraepitelial Cervical de grau III), também chamado de carcinoma in situ.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A histerectomia total não é o tratamento de primeira linha para o NIC III. O objetivo do tratamento é a erradicação da lesão precursora com a preservação da anatomia e funcionalidade do útero sempre que possível. A histerectomia pode ser considerada em casos selecionados, como recidivas frequentes, dificuldade técnica para novos procedimentos excisionais ou quando já existe indicação de retirada do útero por outras patologias benignas associadas, mas nunca é obrigatória de rotina.\n\nAlternativa b) Incorreta. O seguimento após o tratamento de uma lesão de alto grau é fundamental. Pacientes tratadas por NIC II ou NIC III devem realizar um controle rigoroso para detectar persistência ou recorrência da doença. Segundo as diretrizes brasileiras, o acompanhamento pós-tratamento geralmente envolve a realização de citologia oncótica e colposcopia em intervalos específicos (geralmente a cada 6 meses no primeiro ano) até que a paciente possa retornar ao rastreio citológico de rotina.\n\nAlternativa c) Incorreta. De acordo com as diretrizes do Ministério da Saúde e do INCA (Instituto Nacional de Câncer), o rastreamento do câncer do colo do útero no Brasil deve iniciar-se aos 25 anos de idade para mulheres que já tiveram atividade sexual. O intervalo inicial é anual e, após dois exames consecutivos negativos, deve ser realizado a cada 3 anos. O rastreio deve continuar até os 64 anos de idade.\n\nAlternativa d) Correta. O tratamento padrão para o NIC III é a excisão da zona de transformação, também chamada de conização. Este procedimento é simultaneamente diagnóstico (pois permite avaliar todo o espécime para excluir a presença de carcinoma invasor oculto) e terapêutico (pois visa à retirada completa da lesão com margens livres). Por ser um procedimento preservador, é a conduta de escolha para mulheres que desejam manter a fertilidade e a integridade uterina.\n\nGabarito: Letra (d).",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:14.937Z"
+  },
+  {
+    "id": "AJUDA_c493ba82-37f6-4c40-9178-bc8ffc36d504",
+    "originalId": "c493ba82-37f6-4c40-9178-bc8ffc36d504",
+    "statement": "São quatro as etapas básicas da vigilância e cada uma delas tem atividades e responsáveis específicos dentro do sistema. Sobre isso, há as seguintes afirmativas:\n\nI. É necessário contar com dados de população para usar como denominadores no sistema de vigilância.\nII. A análise envolve principalmente um processo de descrição e comparação de dados com relação a características e atributos de tempo, lugar e pessoa.\nIII. A interpretação dos dados serve para a geração de hipóteses.\n\nDessa forma, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS:\n\nAfirmativa I: Está correta. No sistema de vigilância, não basta apenas contar o número de casos (numerador). Para calcular indicadores de saúde fundamentais, como taxas de incidência, prevalência e mortalidade, é indispensável conhecer a população sob risco, que funciona como o denominador. Esses dados populacionais geralmente são obtidos por meio de censos demográficos ou estimativas oficiais (como as do IBGE).\n\nAfirmativa II: Está correta. A análise de dados na vigilância segue os princípios da epidemiologia descritiva. O objetivo é organizar os dados coletados para identificar padrões de ocorrência. Para isso, utiliza-se a tríade epidemiológica clássica: tempo (sazonalidade, tendências históricas), lugar (distribuição geográfica, bairros, zonas rurais) e pessoa (características como idade, sexo, ocupação e escolaridade).\n\nAfirmativa III: Está correta. A interpretação é a etapa subsequente à análise. Enquanto a análise descreve o cenário, a interpretação busca explicar o porquê daqueles resultados. É nesse momento que o profissional de saúde formula hipóteses sobre a origem de um surto, as formas de transmissão envolvidas ou a eficácia das medidas de controle adotadas, servindo de base para a tomada de decisão e disseminação de informações.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A afirmativa III está correta, mas as afirmativas I e II também expressam conceitos verdadeiros e fundamentais da vigilância.\n\nAlternativa b) Incorreta. A afirmativa II está correta, porém é insuficiente para responder à questão, pois as afirmativas I e III também são verdadeiras.\n\nAlternativa c) Incorreta. Embora considere a correção das afirmativas II e III, esta alternativa exclui a afirmativa I, que é um pré-requisito técnico essencial para o cálculo de indicadores em vigilância.\n\nAlternativa d) Correta. Todas as afirmativas estão tecnicamente adequadas. Elas descrevem etapas lógicas e interdependentes do processo de vigilância em saúde, que vai desde a necessidade de denominadores populacionais até a geração de hipóteses para a ação.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:14.937Z"
+  },
+  {
+    "id": "AJUDA_c495741d-f64f-4255-8915-0cf718e8ce3b",
+    "originalId": "c495741d-f64f-4255-8915-0cf718e8ce3b",
+    "statement": "Homem de 32 anos, portador de retocolite ulcerativa há 5 anos, em uso irregular de mesalazina, procura o pronto-socorro por dor abdominal difusa e intensa há 24 horas, acompanhada de distensão abdominal progressiva e febre (38,9 ºC), além de diarreia sanguinolenta há 5 dias. Ao exame físico, apresenta abdome distendido, timpânico, difusamente doloroso e ruídos hidroaéreos diminuídos. A frequência cardíaca é de 124 bpm e a pressão arterial de 90 x 60 mmHg. Os exames laboratoriais relevantes para o caso são: leucócitos: 18.500/mm³; hemoglobina: 10,2 g/dL; PCR: 160 mg/L; e creatinina: 1,9 mg/dL. A radiografia simples do abdome é demonstrada na imagem a seguir:\n\nForam iniciados jejum, hidratação, antibioticoterapia e corticoterapia, porém sem melhora dos parâmetros clínicos nas primeiras 24 horas. Dessa forma, a conduta indicada neste momento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "colectomia subtotal com ileostomia terminal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "transversostomia em alça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "proctocolectomia total com bolsa ileal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "neostigme e colonoscopia descompressiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E CONTEXTO CLÍNICO\n\nO quadro clínico descreve um paciente com Retocolite Ulcerativa (RCU) apresentando uma complicação grave e potencialmente fatal: o Megacólon Tóxico. Os critérios diagnósticos clássicos estão presentes: evidência radiológica de dilatação colônica (geralmente superior a 6 cm no cólon transverso) associada a pelo menos três sinais de toxicidade sistêmica (febre, taquicardia, leucocitose ou anemia) e um sinal de disfunção orgânica ou distúrbio eletrolítico (neste caso, hipotensão e alteração de função renal).\n\nACHADOS DA IMAGEM\n\nA radiografia simples de abdome demonstra uma acentuada dilatação das alças colônicas, com destaque para o cólon transverso, que apresenta perda das haustrações habituais e diâmetro aumentado. Esse achado, no contexto de uma crise de colite inflamatória, é patognomônico de megacólon tóxico.\n\nINDICAÇÃO CIRÚRGICA\n\nO tratamento inicial para colite grave e megacólon tóxico envolve jejum, reposição volêmica vigorosa, antibioticoterapia de amplo espectro e corticoterapia endovenosa. No entanto, quando não há melhora clínica evidente em um intervalo de 24 a 72 horas (o enunciado especifica 24 horas sem melhora em um paciente já instável), a intervenção cirúrgica de urgência torna-se mandatória para evitar a perfuração e o óbito.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: A colectomia subtotal com ileostomia terminal e sepultamento do reto (ou fístula mucosa) é a cirurgia de escolha nas urgências da RCU. Esse procedimento permite a remoção do cólon doente, que é a fonte da sepse e do risco de perfuração, mas preserva o reto. A preservação do reto em ambiente de urgência é estratégica porque a dissecção pélvica profunda em um paciente inflamado e instável aumentaria drasticamente a morbidade, o tempo cirúrgico e o risco de lesões nervosas, além de permitir uma futura reconstrução do trânsito com bolsa ileal em condições eletivas.\n\nAlternativa (b) INCORRETA: A realização de uma estomia (transversostomia) sem a retirada do órgão afetado não resolve o problema. O cólon inflamado e dilatado continuaria sendo um foco de translocação bacteriana e liberação de citocinas inflamatórias, mantendo o estado de choque e o risco de perfuração diastática.\n\nAlternativa (c) INCORRETA: A proctocolectomia total com bolsa ileal é o tratamento cirúrgico definitivo e curativo da RCU, mas deve ser reservada para o cenário eletivo. Realizar a proctectomia (retirada do reto) em um paciente com sepse e instabilidade hemodinâmica aumenta excessivamente o risco cirúrgico e as complicações pós-operatórias.\n\nAlternativa (d) INCORRETA: A neostigmina e a descompressão por colonoscopia são terapias indicadas para a Síndrome de Ogilvie (pseudo-obstrução colônica aguda), que ocorre por desequilíbrio autonômico sem inflamação de mucosa. No megacólon tóxico da RCU, a colonoscopia é formalmente contraindicada pelo altíssimo risco de perfurar um cólon com parede extremamente friável e inflamada.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f8b604dbe33f90c49aa9538b021054a07415a5111ca1241a5c8c1bde7ac327e4.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c495741d-f64f-4255-8915-0cf718e8ce3b_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:15.406Z"
+  },
+  {
+    "id": "AJUDA_c49860db-4471-41dd-bec1-f9208a4f6cc3",
+    "originalId": "c49860db-4471-41dd-bec1-f9208a4f6cc3",
+    "statement": "Qual é a importância da curva ROC em estudos diagnósticos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliar a correlação entre dois testes diagnósticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estimar a prevalência da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Determinar o ponto de corte ideal de um teste.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Calcular a sensibilidade e a especificidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A curva ROC (*Receiver Operating Characteristic*) e a análise da área sob a curva (AUC) são ferramentas essenciais para medir o desempenho de testes diagnósticos que utilizam variáveis contínuas, como dosagens laboratoriais.\n\nExplicação das alternativas:\n\nAlternativa a: Incorreta. A correlação entre dois testes avalia se eles variam de forma conjunta (por exemplo, se quando um aumenta, o outro também aumenta), o que geralmente é feito por coeficientes de correlação de Pearson ou Spearman. A curva ROC foca na capacidade discriminatória do teste entre indivíduos doentes e sadios.\n\nAlternativa b: Incorreta. A prevalência é a frequência da doença em uma população em determinado momento. A curva ROC utiliza parâmetros como sensibilidade e especificidade, que são características intrínsecas do teste e, em princípio, não dependem da prevalência da doença na população testada.\n\nAlternativa c: Correta. Esta é a principal aplicação clínica e estatística da curva ROC. Ao plotar a sensibilidade (eixo Y) versus o complementar da especificidade (1 - especificidade, no eixo X) para todos os valores possíveis de um teste, a curva permite identificar o valor que melhor equilibra esses dois parâmetros. Esse ponto, muitas vezes identificado pelo Índice de Youden, é o ponto de corte (*cut-off*) ideal para classificar um resultado como normal ou patológico.\n\nAlternativa d: Incorreta. A sensibilidade e a especificidade são as coordenadas utilizadas para construir a curva. Embora a curva ajude a visualizar esses valores, sua importância reside na análise global da acurácia do teste e na definição do melhor limiar de decisão, e não meramente no cálculo isolado desses dois índices, que pode ser feito por uma tabela de contingência 2x2 simples.\n\nGabarito: Alternativa (c).",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:15.406Z"
+  },
+  {
+    "id": "AJUDA_c499f958-7bfb-4596-8583-012846c2f9e3",
+    "originalId": "c499f958-7bfb-4596-8583-012846c2f9e3",
+    "statement": "Recém-nascido com 6 horas de vida apresenta icterícia Zona II leve. Nasceu de parto normal com idade gestacional de 35 semanas e 4/7, mãe com pré-eclâmpsia. O Apgar foi de 7 e 8. A tipagem do sanguínea da mãe é B negativo, e a do bebê é A positivo.\n\nA principal hipótese diagnóstica para a icterícia é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fisiológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Por incompatibilidade ABO.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Por incompatibilidade Rh.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Devido a prematuridade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O ponto fundamental para a resolução do caso é o momento do aparecimento da icterícia e o perfil imunoematológico materno-fetal. Qualquer icterícia que se manifeste nas primeiras 24 horas de vida (neste caso, com apenas 6 horas) é considerada patológica, apontando fortemente para uma etiologia hemolítica imunomediada.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A icterícia fisiológica surge tipicamente após as 24 a 48 horas de vida, atingindo pico entre o 3º e o 5º dia no termo. O aparecimento em apenas 6 horas de vida descarta essa possibilidade.\n\nAlternativa b: Incorreta. Para que ocorra doença hemolítica por incompatibilidade ABO com repercussão clínica, a mãe deve ser obrigatoriamente do grupo O, pois apenas indivíduos do grupo O produzem anticorpos anti-A e anti-B da classe IgG (capazes de atravessar a barreira placentária). Mães do grupo B produzem anticorpos anti-A predominantemente da classe IgM, que não cruzam a placenta e não causam hemólise fetal/neonatal significativa.\n\nAlternativa c: Correta. O binômio apresenta a clássica incompatibilidade do sistema Rh: mãe Rh negativo (B-) e recém-nascido Rh positivo (A+). A aloimunização Rh materna leva à passagem transplacentária de anticorpos anti-D (da classe IgG), provocando hemólise intensa e precoce no concepto, justificando a icterícia com apenas 6 horas de vida em Zona II de Kramer.\n\nAlternativa d: Incorreta. Embora a prematuridade tardia (35 semanas e 4 dias) predisponha o recém-nascido a níveis mais altos e duradouros de hiperbilirrubinemia devido à imaturidade enzimática hepática, ela funciona como um fator agravante e não como a causa primária de uma icterícia de início tão precoce.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Icterícia e Sepse Neonatal",
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:15.406Z"
+  },
+  {
+    "id": "AJUDA_c4a997ce-6227-4c8b-9ce9-5f58fe505a66",
+    "originalId": "c4a997ce-6227-4c8b-9ce9-5f58fe505a66",
+    "statement": "Mulher, de 40 anos de idade, pertencente a uma comunidade indígena e residente em uma grande capital do Sudeste, retorna após viagem para visitar a família no interior do Pará. Há alguns meses, ela percebe “manchas claras” na face lateral da perna direita e relata que a área fica “dormente, como se estivesse anestesiada”. Ao exame físico, observam-se duas lesões hipocrômicas bem delimitadas, com redução da sensibilidade térmica e dolorosa.\n\nApós o manejo do evento adverso, a equipe multiprofissional opta por fazer uma visita domiciliar à paciente. Ela conta que a pajé da comunidade recomendou aplicar diariamente um unguento de ervas “quentes” sobre as áreas dormentes para “acordar o sangue” e orientou evitar “remédio forte da cidade” porque “pode piorar o espírito do membro dormente”. A paciente ficou com medo da medicação e está pensando em interromper o tratamento. Ela também relata medo de ser discriminada na própria rede de parentes, pois “vão dizer que está com a alma suja”. Qual é a resposta clínica e ética correta dentro dos princípios de integralidade, equidade, prevenção de incapacidade e abordagem psicossocial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comunicar imediatamente à liderança indígena do diagnóstico, para garantir que siga o tratamento indicado pela unidade de saúde e reduzir o estigma da comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Explicar com linguagem acessível a importância do tratamento, negociar o uso do unguento como complemento e oferecer suporte contra estigma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Suspender o tratamento para não romper o vínculo, deixando apenas a terapia tradicional. Explicar com linguagem acessível as potenciais complicações, reavaliando clinicamente em alguns meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Advertir a paciente de que práticas tradicionais são ilegais e ameaçar notificar a Vigilância Sanitária, caso a pajé insista em orientá-la a não usar o tratamento proposto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nA paciente apresenta um quadro clínico altamente sugestivo de hanseníase: manchas hipocrômicas com alteração de sensibilidade (térmica e dolorosa) em uma área anestesiada. O desafio proposto pela questão não é apenas o diagnóstico, mas a abordagem terapêutica e ética frente a uma barreira cultural e ao estigma social da doença em uma comunidade indígena.\n\nAnálise das Alternativas:\n\nAlternativa A: Incorreta. Comunicar o diagnóstico à liderança indígena sem o consentimento explícito da paciente viola o sigilo médico e a autonomia da mulher. Além disso, essa atitude poderia aumentar o estigma e o isolamento da paciente dentro de sua comunidade, ferindo princípios éticos fundamentais de privacidade e proteção do paciente.\n\nAlternativa B: Correta. Esta alternativa aplica os conceitos da Medicina Centrada na Pessoa e da Interculturalidade na Saúde. Ao explicar a doença de forma acessível, o médico garante a compreensão do tratamento. Ao negociar o uso do unguento como complemento (desde que não seja prejudicial), o profissional respeita as crenças da paciente, fortalece o vínculo de confiança e aumenta a chance de adesão ao tratamento farmacológico (poliquimioterapia), essencial para a cura e prevenção de incapacidades. O suporte contra o estigma aborda a dimensão psicossocial de forma integral.\n\nAlternativa C: Incorreta. Suspender o tratamento de uma doença infectocontagiosa progressiva como a hanseníase é uma conduta tecnicamente inadequada e negligente. A falta de tratamento leva a danos neurológicos irreversíveis, incapacidades físicas e manutenção da cadeia de transmissão. O respeito à cultura não deve justificar a omissão de socorro diante de uma patologia grave.\n\nAlternativa D: Incorreta. Esta abordagem é autoritária, desrespeitosa e fere os princípios de equidade e humanização do SUS. Ameaças e desqualificação de práticas tradicionais destroem a relação médico-paciente e afastam a paciente do sistema de saúde, consolidando o medo e a desinformação. Práticas tradicionais são reconhecidas e valorizadas nas políticas de saúde indígena, desde que não coloquem a vida em risco imediato.\n\nConclusão:\nA resposta correta é a letra B, pois promove a integração entre o saber científico e o saber tradicional através da negociação terapêutica, garantindo o tratamento necessário para a saúde pública e individual, respeitando a autonomia e o contexto cultural da paciente.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Hanseníase",
+      "Ética Médica",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:15.406Z"
+  }
+]

@@ -1,0 +1,480 @@
+[
+  {
+    "id": "AJUDA_99b850fd-5edb-43b4-ad51-d158ddf006e2",
+    "originalId": "99b850fd-5edb-43b4-ad51-d158ddf006e2",
+    "statement": "Menino, 7 meses de idade, hígido, foi levado à Unidade Básica de Saúde para atualização vacinal. Ele tinha recebido apenas a vacina para hepatite B ao nascimento. Em relação às vacinas que devem ser administradas, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "BCG, pentavalente, pneumocócica 10V, meningocócica C, COVID-19 e influenza, na sazonalidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pentavalente, pneumocócica 10V, COVID-19, tríplice viral e febre amarela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "BCG, rotavírus, pentavalente, pneumocócica 10V, meningocócica C, COVID-19, tríplice viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "BCG, rotavírus, pentavalente, pneumocócica 10V, meningocócica C, COVID-19, influenza.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso apresenta um lactente de 7 meses com atraso vacinal importante, tendo recebido apenas a vacina contra hepatite B ao nascimento. Para resolver a questão, devemos aplicar as normas do Calendário Nacional de Vacinação do Ministério da Saúde (PNI), observando as indicações por faixa etária e, fundamentalmente, os prazos-limite para doses atrasadas.\n\nAlternativa A: CORRETA.\nEsta alternativa lista corretamente as vacinas que devem ser aplicadas ou iniciadas para atualização:\n1. BCG: Deve ser dada ao nascimento, mas crianças que não a receberam podem ser vacinadas até os 4 anos, 11 meses e 29 dias.\n2. Pentavalente (DTP/HB/Hib) e Pneumocócica 10V: O esquema dessas vacinas inicia-se aos 2 meses de idade. Como o paciente está com 7 meses e não as recebeu, devem ser iniciadas imediatamente.\n3. Meningocócica C: O esquema inicia-se aos 3 meses de idade, devendo ser iniciado agora por estar em atraso.\n4. COVID-19: Atualmente, faz parte do calendário de rotina para crianças a partir dos 6 meses de idade.\n5. Influenza: A vacinação anual contra gripe é indicada para crianças a partir dos 6 meses de idade, conforme a sazonalidade das campanhas.\n\nAlternativa B: INCORRETA.\nA vacina contra febre amarela, no calendário de rotina, é administrada apenas aos 9 meses de idade. Já a tríplice viral (sarampo, caxumba e rubéola) é administrada aos 12 meses. Como o lactente tem apenas 7 meses, ele ainda não tem indicação para essas vacinas.\n\nAlternativa C: INCORRETA.\nAlém do erro sobre a tríplice viral (indicada aos 12 meses), esta alternativa inclui a vacina contra rotavírus. A vacina oral de rotavírus humano (VORH) possui limites de idade extremamente rigorosos para evitar o risco de invaginação intestinal: a primeira dose só pode ser aplicada até os 3 meses e 15 dias de vida. Como o paciente já tem 7 meses, ele perdeu a oportunidade de iniciar esse esquema vacinal.\n\nAlternativa D: INCORRETA.\nO erro desta alternativa está exclusivamente na inclusão da vacina contra rotavírus. Embora as demais vacinas citadas (BCG, Pentavalente, Pneumocócica 10V, Meningocócica C, COVID-19 e Influenza) estejam corretas para a idade de 7 meses em atraso, a vacina contra rotavírus não pode mais ser administrada por ultrapassar o prazo máximo para a primeira dose (3 meses e 15 dias).\n\nResumo de prazos importantes para o PNI:\n- Rotavírus: o limite para a 1ª dose é de 3 meses e 15 dias. Se não tomou a primeira até essa data, não pode mais receber nenhuma dose.\n- Febre Amarela: primeira dose aos 9 meses.\n- Tríplice Viral: primeira dose aos 12 meses.\n- COVID-19 e Influenza: iniciam-se aos 6 meses de vida.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:43.662Z"
+  },
+  {
+    "id": "AJUDA_99beed5b-23ec-4104-b16b-63afa32de0c7",
+    "originalId": "99beed5b-23ec-4104-b16b-63afa32de0c7",
+    "statement": "Mulher de 38 anos busca atendimento por demanda espontânea com queixa de prurido vulvar intenso, corrimento branco, grumoso e espesso, mas sem odor fétido há quatro dias. Queixa-se também de disúria leve. Não consegue correlacionar com outro evento e nega dor abdominal, febre e sintomas urinários. Nega comorbidades e uso diário de medicações, mas conta que, há pouco mais de uma semana, teve diagnóstico de amigdalite bacteriana e usou antibiótico para tratar a condição. Considerando o diagnóstico mais provável, o tratamento indicado via vaginal por sete dias é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "metronidazol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "clindamicina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "miconazol",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "estriol",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Diagnóstico: Candidíase vulvovaginal.\n\nO quadro clínico descrito é clássico para candidíase vulvovaginal. Os principais sinais e sintomas que levam a esse diagnóstico são o prurido vulvar intenso e o corrimento branco, grumoso e espesso (frequentemente comparado a leite coalhado), sem odor fétido. A disúria referida é do tipo externa, causada pela inflamação da vulva ao entrar em contato com a urina. Outro ponto fundamental para a confirmação diagnóstica é a história recente de uso de antibióticos para tratar uma amigdalite; os antibióticos reduzem a população de lactobacilos da microbiota vaginal normal, o que eleva o pH e permite a proliferação excessiva de fungos do gênero Candida.\n\nAnálise das alternativas:\n\na) Incorreta. O metronidazol é o tratamento de escolha para a vaginose bacteriana e para a tricomoníase. Na vaginose, o corrimento é tipicamente acinzentado, fluido e apresenta um odor fétido característico (cheiro de peixe podre). Na tricomoníase, o corrimento costuma ser amarelo-esverdeado, bolhoso e acompanhado de sinais inflamatórios intensos no colo do útero, o que não condiz com o aspecto grumoso e sem odor descrito.\n\nb) Incorreta. A clindamicina é um antibiótico que pode ser utilizado como opção no tratamento da vaginose bacteriana ou em protocolos de doença inflamatória pélvica (DIP). Ela não possui atividade antifúngica, sendo ineficaz contra a Candida.\n\nc) Correta. O miconazol é um antifúngico do grupo dos imidazóis, sendo o tratamento de primeira linha para a candidíase vulvovaginal quando se opta pela via vaginal. O uso do creme vaginal por sete dias é um esquema posológico padrão que promove a remissão dos sintomas e a cura micológica em casos de candidíase não complicada.\n\nd) Incorreta. O estriol é um hormônio (estrogênio) indicado para o tratamento da vaginite atrófica. Essa condição atinge principalmente mulheres na pós-menopausa devido à redução dos níveis de estrogênio, o que causa ressecamento, afinamento da mucosa vaginal e dispareunia, quadro bem diferente de uma infecção fúngica aguda em uma paciente de 38 anos.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:43.662Z"
+  },
+  {
+    "id": "AJUDA_99c402c7-8a08-4c56-8b4b-896bd6332e94",
+    "originalId": "99c402c7-8a08-4c56-8b4b-896bd6332e94",
+    "statement": "Mulher, 35 anos, foi mordida pelo cachorro da vizinha e apresenta ferida única, profunda, na perna esquerda, com perda tecidual. Foi vacinada contra tétano há três anos, durante a gestação. Pode-se afirmar, que após a limpeza da ferida, a conduta mais adequada é administrar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "clindamicina e iniciar vacina antirrábica nos dias 0, 3, 7 e 14",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ciprofloxacina e iniciar vacina antirrábica nos dias 0, 3, 7 e 14",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sulfametoxazol-trimetoprim e observar o animal por 10 dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "amoxicilina-clavulanato e observar o animal por 10 dias",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA questão aborda o manejo de uma mordedura de cão em uma paciente com ferimento considerado grave (profundo e com perda tecidual). Para resolver o problema, devemos analisar três frentes: profilaxia do tétano, profilaxia da raiva e escolha da antibioticoterapia.\n\n1. Tétano: A paciente foi vacinada há 3 anos. Em ferimentos graves ou sujos, o reforço vacinal só é indicado se a última dose tiver sido administrada há mais de 5 anos. Portanto, não é necessária nova dose de vacina ou soro antitetânico.\n\n2. Raiva: O cão pertence à vizinha, o que o caracteriza como um animal passível de observação. Em acidentes graves envolvendo cães ou gatos que podem ser observados, a recomendação do Ministério da Saúde é iniciar o esquema de vacinação (duas doses, nos dias 0 e 3) e observar o animal por 10 dias. Se o animal permanecer saudável após esse período, o esquema é encerrado. Embora as alternativas simplifiquem a conduta, a observação do animal é um pilar fundamental quando ele é conhecido.\n\n3. Antibioticoterapia: Feridas por mordedura são polimicrobianas, envolvendo bactérias aeróbias e anaeróbias da boca do animal e da pele da vítima. O patógeno mais específico e preocupante é a *Pasteurella multocida*. O antibiótico de primeira escolha, que cobre tanto a *Pasteurella* quanto *Staphylococcus*, *Streptococcus* e anaeróbios, é a associação amoxicilina + clavulanato.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A clindamicina não é a droga de escolha para mordeduras, pois não apresenta cobertura adequada contra a *Pasteurella multocida*, uma bactéria gram-negativa comum nesses acidentes.\n\nAlternativa b) Incorreta. A ciprofloxacina é uma quinolona que, isoladamente, não oferece a cobertura necessária contra germes anaeróbios da cavidade oral, além de não ser a primeira linha recomendada para profilaxia em mordeduras.\n\nAlternativa c) Incorreta. O sulfametoxazol-trimetoprim não é indicado como primeira escolha para mordeduras de animais, pois falha na cobertura de diversos patógenos importantes presentes na flora bucal canina.\n\nAlternativa d) Correta. Esta alternativa apresenta a conduta farmacológica padrão-ouro (amoxicilina + clavulanato) para prevenir infecções secundárias por mordedura de cães e gatos. Além disso, menciona corretamente a observação do animal por 10 dias, que é a conduta inicial apropriada para animais domésticos que podem ser monitorados, evitando o uso desnecessário de imunobiológicos caso o animal não desenvolva raiva.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Raiva, Tétano, Mordedura e Arranhadura Animal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:43.662Z"
+  },
+  {
+    "id": "AJUDA_99cfe065-764c-498f-bdec-116452dc40c3",
+    "originalId": "99cfe065-764c-498f-bdec-116452dc40c3",
+    "statement": "Homem de 74 anos, viúvo há seis meses, motorista aposentado, vive sozinho. Ele procura a unidade de saúde relatando fraqueza e indisposição desde a morte da esposa. Nega outras queixas. Considerando a importância da avaliação multidimensional, levando em consideração a prevalência das disfunções, a vulnerabilidade à intervenção, a relação com aspectos de prevenção dos agravos mais frequentes e a capacidade de identificação de alguns problemas de grande repercussão funcional, os itens a serem avaliados nesse caso são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "visão, estado nutricional e suporte social",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "história pregressa de câncer, peso e visão",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "função dos membros, obesidade e audição",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "função cardíaca, confusão mental e audição",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso descreve um idoso de 74 anos com fatores de risco clássicos para o declínio funcional e vulnerabilidade social: luto recente (viuvez há seis meses), isolamento (mora sozinho) e queixas inespecíficas (fraqueza e indisposição). A questão exige conhecimento sobre a Avaliação Geriátrica Ampla (AGA) ou Avaliação Multidimensional do Idoso, que foca em identificar problemas que impactam a autonomia e a independência.\n\nAnálise das alternativas:\n\nAlternativa (a): Correta. A visão é um componente fundamental da avaliação funcional, pois sua perda está ligada a quedas e isolamento. O estado nutricional é crítico neste caso, pois idosos que moram sozinhos e estão em luto têm alto risco de desnutrição (síndrome do \"chá e torrada\"). O suporte social é o ponto-chave do enunciado, dado que o paciente perdeu a esposa e vive só, o que aumenta o risco de depressão, abandono do autocuidado e declínio funcional rápido.\n\nAlternativa (b): Incorreta. Embora o histórico de câncer e o peso sejam relevantes na anamnese médica geral, a \"história pregressa\" não é uma ferramenta de triagem de vulnerabilidade funcional imediata tanto quanto o suporte social no contexto de luto e isolamento.\n\nAlternativa (c): Incorreta. A função dos membros e a audição fazem parte da avaliação, mas a obesidade, isoladamente, é menos prevalente como fator de risco imediato para este paciente do que a desnutrição ou a falta de suporte social decorrente da viuvez recente.\n\nAlternativa (d): Incorreta. A função cardíaca é uma avaliação de órgão/sistema específica e a confusão mental (delirium ou demência) é um rastreio importante, mas a alternativa falha ao omitir o estado nutricional e o suporte social, que são as dimensões mais diretamente afetadas pelo contexto psicossocial exposto (homem, idoso, viúvo recente, mora sozinho).\n\nA alternativa (a) é a que melhor contempla os domínios da avaliação multidimensional (biológico, psicológico e social) aplicados às particularidades do paciente descrito.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:43.662Z"
+  },
+  {
+    "id": "AJUDA_99da1834-59f9-43f7-93ba-2a4c05d5c8e9",
+    "originalId": "99da1834-59f9-43f7-93ba-2a4c05d5c8e9",
+    "statement": "Qual é a conduta inicial recomendada para pacientes que apresentam exacerbações graves de DPOC com saturação de oxigênio < 90%?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Oxigênio para saturação > 98%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso de broncodilatadores de curta duração e oxigenoterapia controlada (88-92%).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitação de tomografia antes do tratamento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uso exclusivo de antibiótico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A abordagem das exacerbações da Doença Pulmonar Obstrutiva Crônica (DPOC) é um tema frequente em provas e essencial na prática clínica. O objetivo principal no tratamento agudo é reverter a obstrução brônquica e garantir uma oxigenação segura sem causar complicações ventilatórias.\n\nExplicação detalhada das alternativas:\n\nAlternativa (a) Incorreta: Em pacientes com DPOC, o fornecimento excessivo de oxigênio para atingir saturações elevadas (acima de 98%) é perigoso. O excesso de oxigênio pode causar hipercapnia (aumento do CO2 no sangue) por meio da diminuição do estímulo respiratório (que, nesses pacientes, muitas vezes depende da hipóxia), da alteração na relação ventilação-perfusão e do efeito Haldane. Isso pode levar à acidose respiratória grave e ao coma.\n\nAlternativa (b) Correta: Esta é a conduta padrão. O uso de broncodilatadores de curta duração (beta-2-agonistas como o salbutamol, associados ou não a anticolinérgicos como o ipratrópio) é a base para reduzir a obstrução das vias aéreas e o trabalho respiratório. A oxigenoterapia deve ser sempre controlada, com o objetivo de manter a saturação entre 88-92%, o que garante a oferta de oxigênio aos tecidos sem o risco de depressão respiratória e retenção de CO2.\n\nAlternativa (c) Incorreta: O tratamento de uma exacerbação grave com hipoxemia deve ser imediato. A solicitação de exames de imagem, como a tomografia, não deve retardar o início da oxigenoterapia e dos broncodilatadores. Embora a radiografia de tórax seja útil para excluir diagnósticos diferenciais (como pneumonia ou pneumotórax), a tomografia não é um exame de rotina inicial na exacerbação.\n\nAlternativa (d) Incorreta: Embora os antibióticos tenham papel fundamental quando há sinais de infecção bacteriana (aumento da purulência do escarro, aumento do volume do escarro e aumento da dispneia), eles nunca devem ser usados de forma exclusiva. O manejo da insuficiência respiratória e da obstrução brônquica com oxigênio e broncodilatadores é a prioridade inicial absoluta.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:43.662Z"
+  },
+  {
+    "id": "AJUDA_99dbde9b-44f0-411a-949c-6bfa7e102fcd",
+    "originalId": "99dbde9b-44f0-411a-949c-6bfa7e102fcd",
+    "statement": "Homem, 37 anos de idade, etnia caucasiana, apresenta hipertensão arterial resistente. Em pesquisa para causa secundária, encontra-se: creatinina sérica: 0,9 mg/dL; sódio: 147 mEq/L; potássio: 3,3 mEq/L; cortisol sérico 20% acima do limite superior da normalidade; ACTH reduzido; aldosterona plasmática elevada e atividade de renina plasmática reduzida. Após teste de infusão de solução salina, a aldosterona plasmática mantém-se elevada. Metanefrinas plasmáticas discretamente elevadas, com redução para níveis normais após clonidina.\n\nAssinale a alternativa com a interpretação correta desses achados.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alterações podem ser atribuídas ao uso de hidroclorotiazida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hiperaldosteronismo primário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Cushing.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Feocromocitoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Síndrome de Liddle.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de hipertensão arterial resistente associada a distúrbios hidroeletrolíticos (hipocalemia e tendência à hipernatremia). O passo fundamental para o diagnóstico reside na avaliação do sistema renina-angiotensina-aldosterona e nos testes confirmatórios realizados.\n\n1. Relação Aldosterona/Renina: O achado de aldosterona plasmática elevada com atividade de renina plasmática reduzida (suprimida) aponta fortemente para uma produção autônoma de mineralocorticoide.\n2. Teste de Sobrecarga Salina: Em indivíduos normais, a infusão de solução salina deveria suprimir a secreção de aldosterona. A manutenção de níveis elevados de aldosterona após o teste confirma a autonomia da glândula e sela o diagnóstico de hiperaldosteronismo primário.\n3. Avaliação de Diagnósticos Diferenciais: A supressão das metanefrinas após o uso de clonidina descarta feocromocitoma. O cortisol discretamente elevado com ACTH baixo pode sugerir uma secreção concomitante de cortisol (comum em alguns adenomas adrenais), mas a marca registrada do quadro é o excesso de mineralocorticoide.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Alterações podem ser atribuídas ao uso de hidroclorotiazida: Incorreto. Os diuréticos tiazídicos causam depleção de volume, o que levaria a um aumento reflexo da atividade de renina plasmática (hiperaldosteronismo secundário), e não à sua supressão, como observado no caso.\n\nb) Hiperaldosteronismo primário: Correto. Esta é a interpretação precisa. A combinação de hipertensão resistente, hipocalemia, renina suprimida e o fracasso em suprimir a aldosterona após a carga de sódio (teste da solução salina) preenche todos os critérios diagnósticos para o hiperaldosteronismo primário.\n\nc) Síndrome de Cushing: Incorreto. Embora o cortisol esteja levemente acima do limite e o ACTH reduzido (podendo indicar uma secreção autônoma subclínica de cortisol), a Síndrome de Cushing isolada não explicaria a elevação da aldosterona. No Cushing, a hipertensão geralmente ocorre pelo efeito cruzado do cortisol nos receptores mineralocorticoides, o que tenderia a suprimir tanto a renina quanto a aldosterona.\n\nd) Feocromocitoma: Incorreto. O diagnóstico de feocromocitoma é descartado pelo teste da clonidina. Em pacientes com feocromocitoma, a secreção de catecolaminas é autônoma e não se reduz após o estímulo da clonidina (um agonista alfa-2 adrenérgico que reduz o efluxo simpático central). A normalização dos níveis indica que a elevação inicial era decorrente de hiperatividade simpática, não de um tumor produtor.\n\ne) Síndrome de Liddle: Incorreto. Esta é um \"pseudohiperaldosteronismo\". É uma doença genética em que há hiperatividade do canal de sódio (ENaC) no túbulo coletor. O paciente apresenta hipertensão e hipocalemia, porém, devido à expansão de volume, tanto a renina quanto a aldosterona encontram-se suprimidas. No caso clínico, a aldosterona está elevada.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Adrenal"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:43.662Z"
+  },
+  {
+    "id": "AJUDA_99de47c4-a22d-4110-b23a-7bfcc15b3923",
+    "originalId": "99de47c4-a22d-4110-b23a-7bfcc15b3923",
+    "statement": "Homem de 38 anos retorna a ambulatório de clínica médica de um hospital de atenção secundária, onde faz acompanhamento clínico de retocolite ulcerativa. Analisando os exames complementares solicitados na última consulta, o médico atendente observa elevações significativas da fosfatase alcalina e gama-GT, com discreta elevação dos níveis séricos de aminotransferases, sem hiperbilirrubinemia. Questionado, o paciente refere apenas leve desconforto no hipocôndrio direito. Ao exame físico, não há icterícia, febre ou presença de sinal de Murphy.\nConsiderando a doença de base do caso, o exame complementar indicado e seu resultado provável são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "tomografia computadorizada de abdome; lesão tumoral presente ao nível do hilo hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "colangiopancreatografia retrógrada endoscópica; presença de litíase impactada no colédoco terminal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "colangiorressonância; múltiplas estenoses intercaladas na árvore biliar, com áreas normais ou dilatadas de permeio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ultrassonografia abdominal total; espessamento da parede da vesícula biliar com nodulação no interior, sem sombra acústica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresenta um paciente com Retocolite Ulcerativa (RCU) e um padrão laboratorial de colestase (elevação importante de fosfatase alcalina e gama-GT). Em provas de residência, a associação entre RCU e colestase deve levar imediatamente à suspeita de Colangite Esclerosante Primária (CEP). Cerca de 70% a 80% dos pacientes com CEP possuem Doença Inflamatória Intestinal associada, sendo a RCU a principal delas.\n\nAlternativa A: Incorreta. A tomografia de abdome não é o exame de escolha para avaliar a árvore biliar com os detalhes necessários para o diagnóstico de CEP. Além disso, a presença de uma lesão tumoral (como o colangiocarcinoma) é uma complicação possível da CEP a longo prazo, mas não é o achado esperado para o diagnóstico inicial da doença biliar associada à RCU neste contexto.\n\nAlternativa B: Incorreta. A colangiopancreatografia retrógrada endoscópica (CPRE) é um procedimento invasivo com riscos de complicações graves, como a pancreatite. Atualmente, seu uso é reservado para intervenções terapêuticas (como dilatação de estenoses dominantes ou biópsias suspeitas) e não mais como primeira linha para diagnóstico. Além disso, a litíase biliar (cálculos) não é a patologia tipicamente associada à RCU.\n\nAlternativa C: Correta. A colangiorressonância (colangiopancreatografia por ressonância magnética) é o exame padrão-ouro não invasivo para o diagnóstico de CEP. O achado patognomônico descrito na alternativa é o aspecto de \"contas de rosário\" ou \"colar de pérolas\", caracterizado por múltiplas estenoses multifocais e curtas, intercaladas com segmentos de ductos normais ou levemente dilatados, acometendo tanto as vias biliares intra-hepáticas quanto as extra-hepáticas.\n\nAlternativa D: Incorreta. A ultrassonografia é um exame inicial comum, mas possui baixa sensibilidade para detectar as alterações ductais típicas da CEP. O espessamento da parede da vesícula com nodulação sugeriria pólipos ou neoplasia da vesícula biliar. Embora pacientes com CEP tenham um risco aumentado para pólipos e câncer de vesícula, esse achado isolado não explica o quadro de colestase biliar difusa provocado pela destruição dos ductos biliares.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Doença Inflamatória Intestinal",
+      "Hepatopatias Autoimunes"
+    ],
+    "difficulty": 59.643319213497826,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:43.662Z"
+  },
+  {
+    "id": "AJUDA_99ded99f-1f22-419a-9689-5e065cc809c5",
+    "originalId": "99ded99f-1f22-419a-9689-5e065cc809c5",
+    "statement": "Pode-se afirmar que, segundo a OMS, em mulher portadora de cardiopatia congênita, a condição relacionada a maior morbimortalidade materno-fetal é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "cardiomiopatia hipertrófica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "síndrome de Marfan",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tetralogia de Fallot corrigida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hipertensão arterial pulmonar grave",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda a estratificação de risco para mulheres cardiopatas que desejam engravidar ou que já estão gestantes, fundamentada na Classificação da Organização Mundial da Saúde (OMS) modificada. Esta classificação escala o risco de I (baixo risco) a IV (risco extremamente elevado, com contraindicação para a gestação).\n\nAlternativa (a) Incorreta: A cardiomiopatia hipertrófica é geralmente classificada como OMS II (risco levemente aumentado) ou OMS III (risco significativamente aumentado), dependendo de fatores como a presença de sintomas prévios, grau de obstrução do trato de saída do ventrículo esquerdo e ocorrência de arritmias. Embora demande monitoramento especializado, não possui o mesmo potencial catastrófico imediato da hipertensão pulmonar grave.\n\nAlternativa (b) Incorreta: Na Síndrome de Marfan, o risco é estratificado pelo diâmetro da aorta ascendente. Se a aorta for menor que 40 mm, a classificação é OMS II. Se estiver entre 40 e 45 mm, é OMS III. Somente quando a aorta excede 45 mm (ou 50 mm em alguns protocolos específicos) ela é classificada como OMS IV. Como a alternativa cita a síndrome de forma genérica, sem especificar a dilatação aórtica, ela não supera a gravidade da hipertensão pulmonar em termos estatísticos de mortalidade.\n\nAlternativa (c) Incorreta: Pacientes com Tetralogia de Fallot que realizaram a correção cirúrgica completa e que não apresentam lesões residuais importantes (como disfunção grave do ventrículo direito ou arritmias complexas) são classificadas como OMS II. A maioria dessas mulheres tolera bem as adaptações hemodinâmicas do ciclo gravídico-puerperal.\n\nAlternativa (d) Correta: A hipertensão arterial pulmonar (HAP) grave é a condição de maior risco entre as listadas, sendo o exemplo clássico da categoria OMS IV. A mortalidade materna reportada para esse grupo é historicamente altíssima, variando entre 25% e 50%. Durante a gestação, o aumento do débito cardíaco e a redução da resistência vascular sistêmica sobrecarregam o ventrículo direito, que já trabalha no limite, podendo levar à falência cardíaca direita aguda e morte, especialmente no terceiro trimestre e no puerpério imediato. Por esse motivo, a gestação é formalmente contraindicada em pacientes com HAP de qualquer etiologia.\n\nGabarito: Alternativa (d)",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:43.662Z"
+  },
+  {
+    "id": "AJUDA_99e86b31-f64e-4c39-874a-46390300d502",
+    "originalId": "99e86b31-f64e-4c39-874a-46390300d502",
+    "statement": "Paciente feminina, de 72 anos, com dislipidemia e hipertensão arterial (uso regular de sinvastatina e hidroclorotiazida), buscou atendimento por dor no joelho direito, iniciada há 6 meses, com limitação funcional. Referiu episódios de dor em ambos os joelhos há mais de 5 anos, com duração de poucas semanas, que aliviavam com repouso. O IMC era de 35 kg/m². Ao exame, identificaram-se aumento de volume endurecido em ambos os joelhos, discreto calor local e dor à palpação de linhas articulares, sem dor à mobilização passiva. Com base na principal hipótese diagnóstica, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suplementação com altas doses de vitamina D deve ser iniciada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução de peso deve ser proposta para melhora funcional e da dor.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Exercício físico está contraindicado pelo risco de agravamento da lesão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uso regular de palmilhas está indicado para correção do dano estrutural.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO quadro clínico descreve uma paciente idosa (72 anos), com obesidade (IMC 35 kg/m²) e dor crônica nos joelhos de caráter mecânico (alivia com o repouso). O exame físico revela aumento de volume endurecido (osteófitos) e dor à palpação das linhas articulares, sem sinais inflamatórios exuberantes. Este é o cenário clássico da osteoartrite (ou artrose) de joelhos. O manejo dessa patologia envolve medidas farmacológicas e, principalmente, não farmacológicas voltadas para a redução da sobrecarga articular e fortalecimento muscular.\n\nAnálise das alternativas:\n\na) Incorreta. Não há evidências científicas robustas que sustentem o uso de altas doses de vitamina D como tratamento para a dor ou para a progressão da osteoartrite. A suplementação deve ser feita apenas se houver deficiência comprovada e com foco na saúde óssea geral, não como tratamento específico para a artrose.\n\nb) Correta. A redução de peso é uma das intervenções mais eficazes e recomendadas em todas as diretrizes internacionais (como ACR e EULAR) para pacientes obesos com osteoartrite de joelho. A perda de massa corporal reduz a carga mecânica sobre a articulação e diminui mediadores inflamatórios sistêmicos produzidos pelo tecido adiposo, resultando em melhora significativa da dor e da função física.\n\nc) Incorreta. O exercício físico (aeróbico e de fortalecimento muscular, como fisioterapia, musculação ou natação) não está contraindicado; pelo contrário, é uma recomendação de primeira linha. O fortalecimento do quadríceps, por exemplo, ajuda a estabilizar a articulação e reduzir os sintomas. O sedentarismo agrava a rigidez e a fraqueza muscular.\n\nd) Incorreta. O uso de palmilhas não tem o poder de \"corrigir o dano estrutural\" já estabelecido (como o desgaste da cartilagem e a formação de osteófitos). Embora palmilhas com cunhas laterais tenham sido estudadas para casos específicos de mau alinhamento (varo/valgo), elas não são recomendadas de forma rotineira para correção estrutural e apresentam evidência de benefício limitada em comparação à perda de peso e ao exercício.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Doenças do Osso e da Cartilagem"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:43.662Z"
+  },
+  {
+    "id": "AJUDA_99ed43eb-f3fb-42e9-a5fc-917606c08d9c",
+    "originalId": "99ed43eb-f3fb-42e9-a5fc-917606c08d9c",
+    "statement": "Menina de quatro anos foi encaminhada ao ambulatório de Pediatria por atraso na linguagem e dificuldades de socialização. Os pais relatam que ela fala poucas palavras, não interage com colegas na escola e apresenta episódios de irritabilidade quando há mudanças na rotina. A avaliação neuropsicológica confirmou o diagnóstico de Transtorno do Espectro Autista (TEA), sem deficiência intelectual associada. O exame físico é normal e não há comorbidades clínicas relevantes. Os pais estão ansiosos por uma intervenção rápida e perguntam sobre as condutas iniciais mais indicadas. Com base nas recomendações de guidelines internacionais (AAP, NICE, DSM-5), qual é a conduta MAIS ADEQUADA neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar a criança para terapia fonoaudiológica, pois o foco principal nesse momento deve ser o atraso de linguagem",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orientar que a prioridade é iniciar intervenção precoce baseada em terapias comportamentais estruturadas, associada a treinamento parental",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever risperidona para controlar irritabilidade e iniciar psicoterapia individual de apoio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reforçar que, por não haver deficiência intelectual associada, a criança pode aguardar evolução clínica antes de iniciar tratamento especializado",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o manejo inicial de uma criança de quatro anos com diagnóstico de Transtorno do Espectro Autista (TEA). O foco do tratamento contemporâneo, seguindo as diretrizes da Academia Americana de Pediatria (AAP), do NICE e as definições do DSM-5, baseia-se na precocidade e na abrangência das intervenções.\n\nAlternativa A: Incorreta. Embora a terapia fonoaudiológica seja um componente fundamental do tratamento multimodal para abordar os atrasos de linguagem, o TEA não é apenas um transtorno de fala. Ele envolve déficits na interação social e padrões de comportamento repetitivos. Focar exclusivamente na linguagem negligencia os outros pilares do diagnóstico que necessitam de intervenção simultânea.\n\nAlternativa B: Correta. Esta é a conduta padrão-ouro recomendada por guidelines internacionais. A intervenção precoce utiliza a neuroplasticidade da criança para melhorar o prognóstico funcional. Terapias comportamentais estruturadas (como ABA, Modelo Denver, entre outras) visam desenvolver habilidades sociais, de comunicação e de vida diária. O treinamento parental é um pilar essencial, pois capacita os cuidadores a mediar o aprendizado e aplicar estratégias no ambiente natural da criança, aumentando a intensidade e a eficácia do tratamento.\n\nAlternativa C: Incorreta. O uso de psicofármacos como a risperidona no TEA é indicado para o tratamento de sintomas desafiadores específicos, como irritabilidade severa, agressividade ou automutilação, quando estes não respondem às intervenções comportamentais e ambientais. Não deve ser a conduta inicial de primeira linha, especialmente em uma criança sem comorbidades graves descritas. A psicoterapia individual de apoio também não é a modalidade de intervenção de escolha para os sintomas nucleares do TEA nessa faixa etária.\n\nAlternativa D: Incorreta. A ausência de deficiência intelectual (antigamente referida como autismo de alto funcionamento) não é motivo para adiar o tratamento. As dificuldades de socialização e a rigidez comportamental persistem e podem gerar prejuízos significativos ao longo do desenvolvimento se não forem manejadas precocemente. A recomendação atual é de intervenção imediata após a suspeita ou diagnóstico, independentemente do quociente de inteligência (QI).",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Psiquiatria Infantil",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:43.662Z"
+  }
+]

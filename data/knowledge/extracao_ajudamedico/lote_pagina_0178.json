@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_318a95b1-ce79-42bc-b181-ea83a8fc6b81",
+    "originalId": "318a95b1-ce79-42bc-b181-ea83a8fc6b81",
+    "statement": "Homem, 75 anos, portador de hipertensão arterial, em uso de losartana 50 mg/dia, sem outras comorbidades. Há 5 dias teve início súbito de febre elevada (39ºC), acompanhada de tosse seca, mialgia intensa, coriza e mal-estar. Evoluiu com piora progressiva da tosse e do estado geral, persistência da febre e aparecimento de dispneia, procurando por atendimento em serviço de urgência. Hemograma da avaliação inicial mostrava leucocitose importante com desvio à esquerda. Radiografia de tórax abaixo:\n\nQual é o agente infeccioso provavelmente relacionado à piora clínica do paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proteus mirabilis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acinetobacter baumannii.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aspergillus fumigatus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Staphylococcus aureus.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito é o de uma pneumonia bacteriana secundária a uma infecção viral prévia (provavelmente Influenza), caracterizada por início com síndrome gripal típica (febre alta, mialgia, coriza, tosse seca) que evolui após alguns dias com piora progressiva (\"segunda onda\"), dispneia, persistência da febre e leucocitose importante com desvio à esquerda.\n\nA radiografia de tórax evidencia infiltrados alveolares bilaterais difusos e extensos, com uma consolidação na base direita contendo uma área radiotransparente arredondada de aspecto cavitário ou pneumatocele. Esse achado traduz uma pneumonia necrosante de rápida evolução, padrão clássico de infecções graves causadas por bactérias altamente virulentas no contexto pós-viral.\n\nAnálise das alternativas:\n\na) Incorreta. O Proteus mirabilis é uma enterobactéria associada principalmente a infecções do trato urinário e, menos frequentemente, a infecções respiratórias nosocomiais ou por broncoaspiração em pacientes debilitados. Não é um patógeno típico de pneumonia comunitária pós-influenza.\n\nb) Incorreta. O Acinetobacter baumannii é um bacilo gram-negativo não fermentador estritamente hospitalar (nosocomial), relacionado à ventilação mecânica e internações prolongadas em UTI. Não se aplica a um paciente admitido da comunidade.\n\nc) Incorreta. Embora a aspergilose pulmonar associada à influenza (IAPA) exista, ela acomete predominantemente pacientes gravemente imunossuprimidos ou indivíduos previamente em estado crítico na UTI. O quadro agudo bacteriano comunitário com leucocitose marcante e padrão necrosante clássico aponta para etiologia bacteriana.\n\nd) Correta. O Staphylococcus aureus é classicamente reconhecido como um dos principais agentes de pneumonia bacteriana secundária à infecção por Influenza (ao lado do Streptococcus pneumoniae). A infecção por S. aureus destaca-se pela alta gravidade, rápida deterioração clínica e propensão à necrose tecidual com formação de cavitações, pneumatoceles e empiema pleural, condizente com a clínica e a imagem apresentadas.\n\nGabarito: Letra d.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Pneumonias Bacterianas",
+      "Influenza"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/5a832a4296d8c8b9fa63874452c21a6fdd40c225bd253a59bcb800175bcbadd7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_318a95b1-ce79-42bc-b181-ea83a8fc6b81_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:45.199Z"
+  },
+  {
+    "id": "AJUDA_318ecf95-e630-4f7c-b8c5-b37a99eb342c",
+    "originalId": "318ecf95-e630-4f7c-b8c5-b37a99eb342c",
+    "statement": "Em relação às causas de abdome agudo obstrutivo (AAO) em alça fechada, julgue os itens a seguir. I Volvo de sigmoide II Hérnia interna III Ileobiliar IV Tumor de cólon esquerdo estenosante com válvula ileocecal incompetente V Hérnia inguinal encarcerada",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente os itens I, II e V estão certos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Somente os itens I, II, IV e V estão certos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente os itens II, III e IV estão certos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente os itens II, III e V estão certos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Todos os itens estão certos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender a questão, é fundamental definir o conceito de obstrução em alça fechada: ocorre quando um segmento do intestino é obstruído em dois pontos distintos, impedindo tanto a progressão do conteúdo quanto a sua descompressão proximal ou distal. Essa condição é uma emergência cirúrgica grave, pois o rápido aumento da pressão intraluminal leva precocemente à isquemia, necrose e perfuração.\n\nAnálise dos itens:\n\nItem I. Volvo de sigmoide: Está correto. Ocorre a torção do cólon sigmoide sobre o seu próprio eixo mesentérico. Isso cria dois pontos de obstrução (o local de entrada e o de saída da torção), caracterizando uma alça fechada clássica com alto risco de gangrena.\n\nItem II. Hérnia interna: Está correto. Nas hérnias internas, uma alça intestinal penetra através de um orifício natural ou defeito no mesentério/peritônio. O anel herniário comprime simultaneamente as duas extremidades da alça que atravessou o orifício, configurando o mecanismo de alça fechada.\n\nItem III. Íleo biliar: Está incorreto. O íleo biliar é uma obstrução mecânica simples causada pela impactação de um cálculo biliar de grandes dimensões na luz intestinal (frequentemente na válvula ileocecal). Ocorre obstrução em apenas um ponto; o intestino a montante dilata, mas não está em alça fechada.\n\nItem IV. Tumor de cólon esquerdo estenosante com válvula ileocecal incompetente: Está incorreto. Para que uma obstrução colônica distal seja considerada de alça fechada, a válvula ileocecal deve ser COMPETENTE (impedindo o refluxo de conteúdo e pressão para o íleo). Se a válvula for INCOMPETENTE, a pressão é aliviada pela descompressão do conteúdo para o intestino delgado, transformando-a em uma obstrução simples.\n\nItem V. Hérnia inguinal encarcerada: Está correto. Assim como nas hérnias internas, quando uma alça intestinal fica presa no canal inguinal, o anel herniário exerce pressão em dois pontos da alça (entrada e saída), impedindo o fluxo em ambos os sentidos e criando uma alça fechada.\n\nConclusão das alternativas:\nOs itens I, II e V descrevem situações em que o lúmen intestinal é ocluído em dois pontos, definindo a alça fechada. O item III é uma obstrução simples por corpo estranho e o item IV só seria alça fechada se a válvula ileocecal fosse competente. Portanto, a alternativa correta é a letra (a).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:45.199Z"
+  },
+  {
+    "id": "AJUDA_318ed895-5cca-4120-8c8a-ee4e9a2bb03d",
+    "originalId": "318ed895-5cca-4120-8c8a-ee4e9a2bb03d",
+    "statement": "Ao ser convidado para elaborar uma estratégia com a equipe de coordenação da nova secretaria municipal de saúde, qual das estratégias abaixo você recomendaria como a prioridade de organização do SUS municipal com população de 15.000 habitantes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Capacitação dos profissionais em temas como diversidade cultural e social, contribuindo para que a equidade seja respeitada nas práticas de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Contratualização de serviços hospitalares para 100% das pessoas nas filas do SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hierarquização dos serviços em diferentes níveis de complexidade: básica, média e alta complexidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cobertura de 100% da população por equipes da Estratégia de Saúde da Família.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para organizar o sistema de saúde de um município de pequeno porte (15.000 habitantes), o gestor deve focar na estruturação da Atenção Primária à Saúde (APS), que é a porta de entrada preferencial e a coordenadora do cuidado na Rede de Atenção à Saúde (RAS).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a capacitação em diversidade e o respeito à equidade sejam fundamentais e façam parte das diretrizes do SUS, essas são ações de educação permanente e aprimoramento da qualidade do atendimento. Elas não constituem a estratégia estrutural prioritária para a organização inicial do sistema municipal como um todo.\n\nAlternativa b) Incorreta. A contratualização de serviços hospitalares foca no nível secundário ou terciário de atenção. Tentar resolver 100% das filas hospitalares sem organizar a base do sistema é uma estratégia reativa, de alto custo e pouco resolutiva a longo prazo, pois não atua na prevenção e no manejo ambulatorial das condições crônicas.\n\nAlternativa c) Incorreta. A hierarquização é um princípio organizativo do SUS que já deve ser seguido por norma constitucional e operacional. No entanto, citar apenas a hierarquização é algo genérico. A questão pede uma estratégia prática de organização. Para que a hierarquização funcione, a base (Atenção Básica) precisa estar solidamente estabelecida.\n\nAlternativa d) Correta. A Estratégia de Saúde da Família (ESF) é o modelo prioritário do Ministério da Saúde para a organização da Atenção Primária no Brasil. Em um município de 15.000 habitantes, atingir 100% de cobertura pela ESF permite que toda a população tenha uma equipe de referência próxima de sua residência. A ESF é capaz de resolver cerca de 80% a 85% dos problemas de saúde da comunidade, além de ordenar o fluxo para especialistas e exames, garantindo a longitudinalidade e a coordenação do cuidado. É a base necessária para que todos os outros princípios do SUS sejam aplicados de forma eficiente.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:45.199Z"
+  },
+  {
+    "id": "AJUDA_3197cfd6-9127-429a-a58d-4e10283fc13b",
+    "originalId": "3197cfd6-9127-429a-a58d-4e10283fc13b",
+    "statement": "Paciente feminina, 55 anos, vem à consulta na UBS com queixa de dor crônica de enxaqueca. A médica da atenção primária prescreve amitriptilina, uma vez que possui boa experiência clínica com esse medicamento e encontra respaldo em evidências científicas que sustentam a sua conduta. Sobre a amitriptilina, analise as afirmativas e assinale a alternativa correta.\n\nI. Promove a inibição da recaptação da noradrenalina e, mais fortemente, da serotonina, com importante ação sobre receptores colinérgicos, α1-adrenérgicos e histaminérgicos tipo H1.\nII. O efeito analgésico se dá pelo bloqueio dos canais de sódio, de forma semelhante aos anestésicos locais.\nIII. Para a manutenção do tratamento da depressão, as doses variam entre 25 e 50mg/dia.\nIV. É recomendado realizar ECG basal antes do seu início.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as afirmativas I, II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas II, III e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas I, III e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas as afirmativas I, II e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Afirmativa I: Correta. A amitriptilina pertence à classe dos antidepressivos tricíclicos (ADTs). Ela atua bloqueando a recaptação de serotonina e noradrenalina na fenda sináptica, aumentando a disponibilidade desses neurotransmissores. Além disso, os ADTs são conhecidos por serem drogas \"sujas\" do ponto de vista farmacológico, pois bloqueiam diversos outros receptores, o que justifica muitos de seus efeitos colaterais: o bloqueio muscarínico (colinérgico) causa boca seca e constipação; o bloqueio alfa-1 adrenérgico causa hipotensão postural; e o bloqueio histaminérgico (H1) causa sedação e ganho de peso.\n\nAfirmativa II: Correta. Além da modulação das vias monoaminérgicas descendentes de inibição da dor, a amitriptilina possui a capacidade de bloquear canais de sódio voltagem-dependentes, de forma análoga aos anestésicos locais. Esse mecanismo contribui significativamente para sua eficácia no tratamento de dores neuropáticas e na profilaxia da enxaqueca, ao reduzir a excitabilidade neuronal e a transmissão de sinais dolorosos.\n\nAfirmativa III: Incorreta. Embora doses baixas (geralmente entre 10 mg e 50 mg) sejam eficazes e comumente utilizadas para o tratamento da dor crônica e profilaxia de enxaqueca, essas doses são consideradas subterapêuticas para o tratamento da depressão maior. No transtorno depressivo, as doses de manutenção recomendadas são mais elevadas, variando habitualmente entre 75 mg e 150 mg por dia, podendo chegar a 300 mg em pacientes hospitalizados.\n\nAfirmativa IV: Correta. Devido ao seu efeito de bloqueio nos canais de sódio e potencial de prolongamento do intervalo QT e do complexo QRS, os antidepressivos tricíclicos podem ser cardiotóxicos e pró-arrítmicos. Portanto, recomenda-se a realização de um eletrocardiograma (ECG) basal antes de iniciar o medicamento, especialmente em pacientes acima de 40-50 anos ou naqueles com histórico de doenças cardiovasculares, para rastrear bloqueios de condução ou arritmias prévias.\n\nConclusão: Como as afirmativas I, II e IV estão corretas, a alternativa correta é a letra (d).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Cefaleias",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:45.199Z"
+  },
+  {
+    "id": "AJUDA_319f1e9f-e48f-4aac-9569-28e513e296f6",
+    "originalId": "319f1e9f-e48f-4aac-9569-28e513e296f6",
+    "statement": "A Tríade de Charcot é composta por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Febre, vômitos, diarréia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dor abdominal, febre, icterícia;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Icterícia, vômitos, diarréia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dor abdominal, diarréia e icterícia;",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Tríade de Charcot é um conjunto clássico de sinais e sintomas associado ao diagnóstico de colangite aguda, uma infecção bacteriana das vias biliares decorrente de obstrução (frequentemente por coledocolitíase). Os três componentes que caracterizam essa tríade são: dor abdominal no hipocôndrio direito, febre (geralmente acompanhada de calafrios) e icterícia.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Apesar de a febre fazer parte da tríade, vômitos e diarreia são manifestações gastrointestinais inespecíficas e não integram a Tríade de Charcot.\n\nAlternativa b: Correta. Descreve exatamente os três componentes da Tríade de Charcot: dor abdominal, febre com calafrios e icterícia. Juntos, esses achados clínicos sugerem fortemente o quadro de colangite aguda.\n\nAlternativa c: Incorreta. Apenas a icterícia é um componente correto; vômitos e diarreia não fazem parte da descrição semiológica clássica da tríade.\n\nAlternativa d: Incorreta. Contém a dor abdominal e a icterícia, porém inclui erroneamente a diarreia em vez da febre, que é o sinal indicativo do processo infeccioso bacteriano em curso.\n\nInformação complementar:\nNos casos mais graves de colangite aguda supurativa, a Tríade de Charcot pode evoluir para a Pêntade de Reynolds, caracterizada pelo acréscimo de hipotensão arterial (choque séptico) e alteração do estado mental (confusão/letargia).",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:45.199Z"
+  },
+  {
+    "id": "AJUDA_31aeefcd-1920-4ff2-b78e-e551253c01be",
+    "originalId": "31aeefcd-1920-4ff2-b78e-e551253c01be",
+    "statement": "Um lactente de 10 meses de idade apresenta nódulo doloroso eritematoso na região glútea, evoluindo com flutuação central e febre baixa. Não há sinais sistêmicos de gravidade. O médico pediatra suspeita de furúnculo. A conduta inicial mais adequada nesse caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar antibiótico oral de amplo espectro e banho de permanganato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar drenagem após formação de ponto de flutuação e higiene local.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "utilizar pomada antibiótica isoladamente sendo desnecessário a drenagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar ultrassonografia para descartar abscesso profundo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "prescrever antibiótico endovenoso em ambiente hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO quadro clínico descreve um lactente com um furúnculo que evoluiu para a formação de um abscesso (caracterizado pela presença de flutuação central). Trata-se de uma infecção piogênica localizada da pele e tecidos moles. Em pacientes sem sinais de gravidade sistêmica, o tratamento padrão baseia-se no esvaziamento da coleção purulenta.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O uso de antibióticos orais de amplo espectro não é a conduta inicial prioritária para um abscesso flutuante localizado. A penetração do antibiótico no interior da coleção purulenta é limitada. Além disso, o banho de permanganato de potássio, embora tenha ação antisséptica, é uma medida adjuvante e não trata a causa principal, que é o acúmulo de pus.\n\nAlternativa b) Correta. O preceito clássico da cirurgia e infectologia é \"ubi pus, ibi evacua\" (onde há pus, deve-se esvaziar). A presença de flutuação indica que a coleção está madura e pronta para ser drenada. Em abscessos localizados e sem sinais de celulite extensa ou repercussão sistêmica, a drenagem cirúrgica é o tratamento definitivo e, muitas vezes, dispensa o uso de antibióticos sistêmicos. A higiene local complementa o cuidado para evitar reinfecções.\n\nAlternativa c) Incorreta. Pomadas antibióticas são indicadas para infecções superficiais, como o impetigo. Elas não possuem capacidade de penetração para tratar um nódulo profundo e flutuante como o furúnculo em estágio de abscesso. A drenagem é indispensável nesse estágio.\n\nAlternativa d) Incorreta. A ultrassonografia é um exame útil quando há dúvida diagnóstica ou suspeita de coleções profundas que não são evidentes ao exame físico. No caso relatado, a flutuação é clinicamente detectável, tornando o diagnóstico de abscesso superficial óbvio e dispensando exames de imagem.\n\nAlternativa e) Incorreta. A antibioticoterapia endovenosa e a internação hospitalar são reservadas para casos com sinais de gravidade (sepse, toxemia), celulite periorbitária, abscessos em locais de risco ou em pacientes imunocomprometidos. O lactente apresenta febre baixa e não tem sinais sistêmicos de gravidade, podendo ser tratado ambulatorialmente.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Piodermites",
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:45.199Z"
+  },
+  {
+    "id": "AJUDA_31b4a535-c11f-4f04-841e-a99ebb4360b5",
+    "originalId": "31b4a535-c11f-4f04-841e-a99ebb4360b5",
+    "statement": "Assinale a opção correta, acerca de como deve ser realizada a intubação orotraqueal em um paciente com colar cervical.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Idealmente com dois profissionais, sendo um para remover parcialmente o colar cervical, apenas a parte anterior e mantendo a estabilização manual da cabeça e outro para a intubação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Idealmente com dois profissionais, sendo um para remover o colar cervical e ajudar na preparação do laringoscópio e do tubo orotraqueal e outro para a intubação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Idealmente com dois profissionais, sendo um para remover parcial do colar cervical, apenas a parte anterior, e para realizar a manobra de Sellick e outro para a intubação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não há necessidade de dois profissionais, desde que mantenha o colar cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não há necessidade de dois profissionais, desde que retire o colar cervical e mantenha a cabeça estabilizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A abordagem da via aérea no paciente vítima de trauma com suspeita de lesão na coluna cervical é um tema clássico em provas de residência, fundamentado principalmente nos protocolos do ATLS (Advanced Trauma Life Support).\n\nO ponto central desta questão é a conciliação entre a necessidade de visualizar a glote e a proteção da medula espinhal. O colar cervical rígido, embora necessário para o transporte, limita significativamente a abertura bucal e a mobilidade da mandíbula, o que dificulta ou impossibilita a laringoscopia direta.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Esta é a técnica padrão conhecida como Estabilização Manual em Linha (MILS - Manual In-Line Stabilization). É necessário um segundo profissional para abrir a parte anterior do colar cervical e segurar firmemente as laterais da cabeça/processos mastoides, impedindo a extensão, flexão ou rotação do pescoço durante a laringoscopia. Enquanto isso, o primeiro profissional realiza a intubação. Essa manobra minimiza o movimento das vértebras cervicais e permite a abertura da boca.\n\nAlternativa B (Incorreta): O foco do segundo profissional durante o procedimento deve ser exclusivamente a manutenção da estabilidade cervical. Pedir que ele remova totalmente o colar e ajude na preparação de materiais desvia a atenção da tarefa crítica de evitar uma lesão medular secundária. Além disso, o colar não deve ser totalmente removido sem necessidade, apenas a sua parte frontal.\n\nAlternativa C (Incorreta): A manobra de Sellick (pressão cricotireoidiana para ocluir o esôfago) caiu em desuso nos protocolos mais recentes (como o ATLS 10ª edição) por não haver evidências sólidas de que previna a aspiração, além de poder dificultar a visualização das cordas vocais e a passagem do tubo. O papel primordial do assistente é a estabilização manual, não a manobra de Sellick.\n\nAlternativa D (Incorreta): Tentar intubar com o colar cervical totalmente fechado é tecnicamente muito difícil, pois o dispositivo impede a protrusão da mandíbula e a abertura bucal necessária para posicionar o laringoscópio (piora o grau de Cormack-Lehane).\n\nAlternativa E (Incorreta): É humanamente impossível para um único operador manter a estabilização cervical manual eficaz (que exige as duas mãos nas laterais da cabeça) e, simultaneamente, manejar o laringoscópio e o tubo orotraqueal. O procedimento exige obrigatoriamente a coordenação de dois profissionais.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:45.199Z"
+  },
+  {
+    "id": "AJUDA_31bf8de5-075f-40a7-b7fb-be7541f46e16",
+    "originalId": "31bf8de5-075f-40a7-b7fb-be7541f46e16",
+    "statement": "Considerando o diagnóstico da questão anterior (Coreia Reumática em adolescente de 10 anos com histórico de febre e artrite migratória), qual a conduta terapêutica a ser adotada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quetiapina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Psicoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Piridoxina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Internação para pulsoterapia com corticóide em altas doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico apresenta um quadro clássico de Febre Reumática (FR), manifestada pela Coreia de Sydenham (um dos critérios maiores de Jones), precedida por febre e artrite migratória. O manejo da Febre Reumática envolve três pilares: o tratamento sintomático (da artrite ou da coreia), a erradicação do estreptococo e a profilaxia secundária.\n\nAlternativa a) Incorreta. A quetiapina é um antipsicótico atípico. Embora medicamentos que bloqueiam receptores dopaminérgicos (como o haloperidol ou a risperidona) ou anticonvulsivantes (como o ácido valproico) possam ser utilizados para o controle dos movimentos involuntários na coreia, a quetiapina não é a droga de primeira escolha. Além disso, o tratamento sintomático não substitui a necessidade fundamental de antibioticoterapia.\n\nAlternativa b) Incorreta. A Coreia de Sydenham pode estar associada a sintomas psiquiátricos, como labilidade emocional e ansiedade, mas sua causa é orgânica e autoimune (inflamação nos gânglios da base). A psicoterapia pode ser um suporte adjuvante, mas não é a conduta terapêutica principal para a doença de base.\n\nAlternativa c) Incorreta. A piridoxina (vitamina B6) é utilizada em situações específicas, como na reposição em pacientes em uso de isoniazida para prevenir neuropatia ou em raros casos de convulsões dependentes de piridoxina no período neonatal. Não possui qualquer indicação no tratamento da Febre Reumática.\n\nAlternativa d) Correta. Esta é a conduta prioritária e obrigatória. Todo paciente com diagnóstico de Febre Reumática, independentemente de ter ou não uma infecção de orofaringe ativa no momento, deve receber penicilina benzatina para erradicar qualquer foco remanescente de Streptococcus pyogenes e, crucialmente, para iniciar a profilaxia secundária. O objetivo é evitar novos surtos da doença, que poderiam agravar ou causar lesões cardíacas permanentes. A profilaxia é feita, via de regra, com penicilina benzatina a cada 21 dias.\n\nAlternativa e) Incorreta. A pulsoterapia com corticoides em altas doses é reservada para casos de cardite reumática grave com insuficiência cardíaca congestiva ou em casos de coreia grave e refratária que não respondem ao tratamento medicamentoso habitual. Não é a conduta inicial para o quadro descrito.\n\nEm resumo, diante de um diagnóstico de Febre Reumática, a medida mais importante para o prognóstico do paciente é garantir a erradicação do agente causador e a manutenção da profilaxia secundária com antibióticos.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Febre Reumática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:45.199Z"
+  },
+  {
+    "id": "AJUDA_31c85ca7-3cd2-4a21-b7f7-4736b7a3fa56",
+    "originalId": "31c85ca7-3cd2-4a21-b7f7-4736b7a3fa56",
+    "statement": "Quanto ao mecanismo de parto vaginal fisiológico, na variedade de posição O.E.A., é CORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O lambda encontra-se relacionado com a sinostose sacro-ilíaca esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O ângulo anterior do bregma posiciona-se na eminência íleo-pectínea direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O lambda estará relacionado com o sacro durante o desprendimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A rotação interna ocorrerá no sentido anti-horário.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender a questão, devemos primeiro localizar a posição O.E.A. (occipito-esquerda-anterior). Nessa variedade, o ponto de referência fetal, o lambda (ou pequena fontanela), está voltado para a eminência ílio-pectínea esquerda da bacia materna.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. Na O.E.A., o lambda está na região anterior, especificamente na eminência ílio-pectínea esquerda. A sinostose sacroilíaca esquerda é um ponto de referência posterior da bacia. Quem se localiza próximo a essa região posterior na variedade O.E.A. é o bregma (grande fontanela), e não o lambda.\n\nAlternativa B - Incorreta. Se o lambda está na eminência ílio-pectínea esquerda (anterior-esquerda), o seu ângulo oposto, o bregma, estará voltado para a sinostose sacroilíaca direita (posterior-direita). A eminência ílio-pectínea direita é um ponto de referência anterior.\n\nAlternativa C - Incorreta. No mecanismo de parto fisiológico das variedades anteriores, o feto realiza a rotação interna para que o lambda se posicione abaixo da sínfise púbica (variedade occipitopúbica) para o desprendimento. Se o lambda estivesse relacionado com o sacro no momento do desprendimento, o feto estaria em uma variedade occipitosacra (posterior), o que não é o trajeto habitual para uma O.E.A.\n\nAlternativa D - Correta. Para o desprendimento, a cabeça fetal deve rotar de forma que o lambda saia da posição anterior-esquerda e chegue à sínfise púbica (centro-anterior). Imaginando a bacia materna como um mostrador de relógio, onde a sínfise púbica está no topo (12 horas) e o lado esquerdo da mãe está entre 12 e 3 horas para o observador, o lambda em O.E.A. estaria posicionado aproximadamente à 1 ou 2 horas. Para migrar dessa posição em direção ao ponto central superior (12 horas), a cabeça fetal realiza um movimento de rotação no sentido anti-horário.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:45.199Z"
+  },
+  {
+    "id": "AJUDA_31c93549-ca71-4e0c-aa4c-f0a188fd68cf",
+    "originalId": "31c93549-ca71-4e0c-aa4c-f0a188fd68cf",
+    "statement": "A assistência pré-natal é uma “estratégia interdisciplinar de atendimento profissional que otimiza o alcance e a manutenção da integridade das condições de saúde materna e fetal “(Maternidade Escola UFRJ 2015). Sobre essa assistência do período gestacional, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A consulta de primeiro trimestre é a melhor fase para datação correta ultrassonográfica da gestação, podendo até ouvir batimento cardíaco fetal ao sonar no final deste trimestre.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Entre 16 e 18 semanas, é indicada a avaliação da morfologia fetal, do comprimento do colo uterino e doppler da artéria umbilical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Entre 32 e 34 semanas, é indicada a administração da primeira dose imunoglobulina anti-D para gestantes RH negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O teste de tolerância oral à glicose de 75gr deve ser realizado somente em pacientes de risco, como as pacientes já submetidas a cirurgias bariátricas (pós-bariátricas).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Esta alternativa está correta. O ultrassom realizado no primeiro trimestre, preferencialmente entre a 7ª e a 13ª semana e 6 dias, utiliza a medida do Comprimento Cabeça-Nádega (CCN), que é o parâmetro mais preciso para datar a gestação e definir a data provável do parto. Quanto à ausculta, enquanto o estetoscópio de Pinard detecta os batimentos apenas após a 20ª semana, o sonar Doppler (aparelho de ultrassom portátil) permite ouvir o coração fetal entre a 10ª e a 12ª semana, ou seja, no final do primeiro trimestre.\n\nAlternativa b: Esta alternativa está incorreta. O período ideal para a realização do ultrassom morfológico do segundo trimestre, que avalia a formação dos órgãos e sistemas do feto, assim como a medida do colo uterino para o rastreio de parto prematuro, é entre 20 e 24 semanas de gestação. O Doppler da artéria umbilical não faz parte da rotina de rastreio universal e é utilizado para avaliar a função placentária e a vitalidade fetal em gestações de alto risco, geralmente no terceiro trimestre.\n\nAlternativa c: Esta alternativa está incorreta. A administração profilática da imunoglobulina anti-D para gestantes Rh-negativas e não sensibilizadas (com teste de Coombs indireto negativo) é indicada pelo Ministério da Saúde e por diretrizes internacionais, preferencialmente, na 28ª semana de gestação. O período de 32 a 34 semanas mencionado na alternativa está fora do padrão-ouro para essa prevenção.\n\nAlternativa d: Esta alternativa está incorreta. O rastreio do diabetes mellitus gestacional por meio do Teste de Tolerância Oral à Glicose (TOTG 75g) é universal, ou seja, deve ser realizado por todas as gestantes que não possuem diagnóstico prévio de diabetes, idealmente entre a 24ª e a 28ª semana. Além disso, as pacientes pós-bariátricas representam justamente um grupo no qual o TOTG é frequentemente evitado ou contraindicado devido ao risco de síndrome de *dumping*, sendo substituído por perfis de glicemia capilar ou monitoramento contínuo da glicose.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação",
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": 44.45939319046957,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:45.199Z"
+  }
+]

@@ -1,0 +1,521 @@
+[
+  {
+    "id": "AJUDA_718a29ad-f97c-4926-a2e3-75b8d9f8f93a",
+    "originalId": "718a29ad-f97c-4926-a2e3-75b8d9f8f93a",
+    "statement": "Um paciente de 25 anos de idade foi levado ao pronto-socorro pelo Corpo de Bombeiros com relato de ter sofrido atropelamento em via pública há 30 minutos. Chegou em protocolo de trauma, contactuante, mas apenas por palavras inapropriadas, murmúrios vesiculares fisiológicos bilateralmente. Ao exame físico, apresentou SatO2 = 92%, FR = 20 irpm, PA = 100 mmHg X 60 mmHg, FC = 100 bpm, movimento de flexão à pressão e abertura ocular ausente. Tinha uma ferida cortocontusa em região parietal, sem sangramento ativo. Considerando que, após a estabilização inicial do quadro, foram evidenciadas várias alterações agudas apresentadas na imagem, assinale qual achado não é caracterizado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hematoma epidural",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hematoma subdural",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hemorragia intraparenquimatosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hematoma subgaleal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico e radiológico:\n\nO paciente apresenta um quadro de Traumatismo Cranioencefálico (TCE) grave, com pontuação na Escala de Coma de Glasgow de 8 (Abertura ocular: 1, Resposta verbal: 3, Resposta motora: 4). A tomografia computadorizada de crânio revela diversas lesões traumáticas agudas resultantes do atropelamento.\n\nAlternativa A (Gabarito): O hematoma epidural (ou extradural) não está presente na imagem. Radiologicamente, ele se caracteriza por uma coleção hiperdensa (branca) com formato biconvexo, assemelhando-se a uma lente ou a uma forma de limão. Geralmente decorre de sangramento arterial (artéria meníngea média) e não ultrapassa as linhas de sutura craniana. A ausência dessa imagem biconvexa na tomografia apresentada torna esta a alternativa correta.\n\nAlternativa B: O hematoma subdural está presente. Ele é identificado como uma coleção hiperdensa em formato de crescente (côncavo-convexo) que acompanha a curvatura da superfície cerebral. Na imagem, é visível na periferia do hemisfério direito do paciente (lado esquerdo da foto), logo abaixo da calota craniana. Diferente do epidural, o subdural pode ultrapassar as suturas cranianas.\n\nAlternativa C: A hemorragia intraparenquimatosa está presente. Podem-se observar pequenos focos hiperdensos (pontos brancos) situados dentro do próprio tecido cerebral (parênquima), indicando áreas de contusão hemorrágica resultantes do impacto do trauma contra o crânio.\n\nAlternativa D: O hematoma subgaleal está presente. Ele consiste no acúmulo de sangue ou fluido entre o periósteo e a gálea aponeurótica (couro cabeludo). Na imagem, é representado pelo evidente aumento de espessura das partes moles externas ao osso do crânio, localizado no lado direito do paciente, o que condiz com o relato de ferida cortocontusa na região parietal.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/7a21570ee1096384aa089ac87b464177df5d02072dc430fcf8d796d2c5a1ad3f.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_718a29ad-f97c-4926-a2e3-75b8d9f8f93a_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:05.180Z"
+  },
+  {
+    "id": "AJUDA_718b7865-29c6-4215-b3bc-72b5d35f9d41",
+    "originalId": "718b7865-29c6-4215-b3bc-72b5d35f9d41",
+    "statement": "Recém-nascido, sexo masculino, iniciou ao final da terceira semana de vida, quadro de vômitos em jato após mamadas ao seio materno. A mãe procurou serviço de emergência, sendo prescrito antiemético e recomendada elevação da cabeceira do berço. Os vômitos persistiram e se agravaram nos três dias subsequentes. A criança passou a perder peso e a apresentar pouca atividade, além de diminuição do débito urinário. Foi, então, novamente levado à emergência e os exames laboratoriais iniciais mostraram: Cloro: 90 mEq/L, Potássio: 3,3 mEq/L, Sódio: 130 mEq/L. A gasometria colhida evidenciou alcalose metabólica. Frente ao quadro apresentado, o diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "galactosemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "estenose hipertrófica do piloro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "refluxo gastroesofágico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hiperplasia congênita de supra-renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "síndrome de hipertensão intracraniana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um quadro clássico de Estenose Hipertrófica do Piloro (EHP). Os pontos-chave para o diagnóstico são a idade do lactente (final da terceira semana), o sexo masculino (frequentemente mais acometido), a característica do vômito (em jato, pós-prandial e não bilioso) e a evolução para desidratação, diminuição do débito urinário e perda ponderal. O achado laboratorial de alcalose metabólica hipoclorêmica e hipocalêmica é considerado patognomônico para essa patologia devido à perda persistente de íons hidrogênio e cloro pelo conteúdo gástrico, além da resposta renal compensatória que acaba excretando potássio.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A galactosemia é um erro inato do metabolismo que se manifesta após a ingestão de leite, cursando tipicamente com icterícia, hepatomegalia, hipoglicemia e catarata. Embora possa haver vômitos e perda de peso, o perfil metabólico específico de alcalose hipoclorêmica não é o achado esperado.\n\nAlternativa b: Correta. A estenose hipertrófica do piloro é a principal causa de obstrução gástrica em lactentes entre a 3ª e 6ª semana de vida. A hipertrofia da musculatura pilórica impede a passagem do conteúdo gástrico para o duodeno, gerando vômitos vigorosos. A perda de ácido clorídrico (HCl) do estômago resulta na alcalose metabólica hipoclorêmica. A hipocalemia ocorre pela tentativa do rim de reabsorver sódio e água para compensar a desidratação, excretando potássio em seu lugar.\n\nAlternativa c: Incorreta. O refluxo gastroesofágico é comum nesta faixa etária, mas geralmente se apresenta com regurgitações sem esforço. Mesmo em casos de Doença do Refluxo Gastroesofágico, os vômitos raramente são em jato e a gravidade do distúrbio hidroeletrolítico apresentado é incompatível com essa condição.\n\nAlternativa d: Incorreta. A hiperplasia congênita suprarrenal, na forma perdedora de sal, é um diferencial importante em recém-nascidos com vômitos e desidratação. No entanto, seu perfil laboratorial clássico apresenta hiponatremia e, obrigatoriamente, hipercalemia (potássio elevado) e acidose metabólica, o que é o oposto dos achados de potássio baixo e alcalose descritos no caso.\n\nAlternativa e: Incorreta. A síndrome de hipertensão intracraniana pode causar vômitos em jato (vômitos centrais), mas em um lactente de três semanas ela viria acompanhada de outros sinais como abaulamento de fontanela, irritabilidade extrema ou convulsões. Não explicaria a fisiopatologia da alcalose metabólica hipoclorêmica tão bem quanto a perda de suco gástrico por obstrução mecânica.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:05.180Z"
+  },
+  {
+    "id": "AJUDA_718c1a9e-5ef2-41aa-b28e-bfa22f059818",
+    "originalId": "718c1a9e-5ef2-41aa-b28e-bfa22f059818",
+    "statement": "Lactente de 1 ano e 1 mês apresenta estreitamento prepucial distal, que dificulta a exposição da glande (prepúcio tipo II conforme classificação de Kayaba e colaboradores). Não há outras queixas ou complicações. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expectante, por ser fimose fisiológica nesta idade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Iniciar uso de pomada de corticoide duas vezes ao dia e reavaliar em 90 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Devido ao grau de estreitamento, encaminhar para postectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientar tracionar o prepúcio sequencialmente ao banho (\"exercícios para abertura\") e reavaliar em 90 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A maioria dos meninos nasce com o prepúcio aderido à glande, condição conhecida como fimose fisiológica. A classificação de Kayaba e colaboradores descreve os níveis de retratibilidade do prepúcio, na qual o tipo II (exposição apenas do meato uretral) é uma apresentação comum e perfeitamente normal para um lactente de 13 meses.\n\nAlternativa (a): Correta. A conduta inicial para a fimose fisiológica em crianças nessa faixa etária é a observação (expectante). Com o crescimento do pênis, a ocorrência de ereções espontâneas e o acúmulo de esmegma (que atua na clivagem natural das aderências), a tendência é a resolução espontânea. Aproximadamente 90% dos meninos apresentam o prepúcio totalmente retrátil até os 3 anos de idade.\n\nAlternativa (b): Incorreta. O uso de pomadas de corticoides tópicos é uma opção de tratamento clínico eficaz, porém é reservado para casos de fimose patológica ou quando a fimose fisiológica persiste além da idade em que a resolução espontânea era esperada (geralmente após os 4 ou 5 anos), ou ainda se houver complicações associadas. Aos 13 meses, sem queixas, não há indicação para intervenção medicamentosa.\n\nAlternativa (c): Incorreta. A postectomia (cirurgia) é uma intervenção invasiva indicada para casos específicos, como balanopostites de repetição, infecções urinárias recorrentes, presença de anel fibrótico cicatricial (fimose patológica) ou falha do tratamento clínico após a idade apropriada. Não se aplica a um lactente saudável com desenvolvimento normal.\n\nAlternativa (d): Incorreta. Esta é uma prática antiga que deve ser desencorajada. A realização de exercícios de tração forçada ou massagens (\"exercícios para abertura\") pode causar microfissuras na mucosa prepucial. A cicatrização dessas lesões pode gerar um anel fibroso, transformando uma condição fisiológica em uma fimose patológica (secundária), que exigirá tratamento cirúrgico no futuro. A orientação correta é realizar a higiene apenas até o limite da retração natural, sem forçar.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:05.180Z"
+  },
+  {
+    "id": "AJUDA_71996e82-305a-40a2-b38c-14b427b427d0",
+    "originalId": "71996e82-305a-40a2-b38c-14b427b427d0",
+    "statement": "Homem, 67 anos de idade, apresentou melena em grande quantidade há 1 hora. Tem antecedente de troca de valva mitral e faz uso contínuo de varfarina.\n\n• Exames laboratoriais:\nHb: 6,3 g/dL\nHt: 19%\nPlaquetas: 135 mil/mm³\nTP com INR de 5,1\nTTPa com R de 1,14\n\nNa sala de emergência, além da reanimação volêmica, qual deve ser a conduta mais adequada antes da realização da endoscopia digestiva alta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vitamina K.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fibrinogênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aférese de plaquetas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Complexo protrombínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente em questão apresenta um quadro de hemorragia digestiva alta (melena em grande quantidade) associado a instabilidade laboratorial (Hb 6,3 g/dL) e uso de anticoagulante oral (varfarina) com INR alargado (5,1). Diante de um sangramento importante com risco de morte em paciente anticoagulado com antagonista da vitamina K, a prioridade absoluta, além da estabilização hemodinâmica, é a reversão imediata da coagulopatia para permitir a realização segura da endoscopia digestiva alta e o controle da hemorragia.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nO Complexo Protrombínico (CPN) é a conduta de escolha para a reversão rápida da varfarina em situações de sangramento grave ou necessidade de cirurgia/procedimento de emergência. Ele contém os fatores de coagulação dependentes de vitamina K (II, VII, IX e X) de forma concentrada. Sua principal vantagem sobre o Plasma Fresco Congelado é o início de ação imediata, o baixo volume de infusão (evitando sobrecarga volêmica) e a desnecessidade de compatibilidade sanguínea, permitindo a correção do INR em poucos minutos.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a) Vitamina K: Embora a vitamina K deva ser administrada nesses casos para garantir a síntese sustentada de novos fatores de coagulação, seu efeito demora de 6 a 12 horas para iniciar e cerca de 24 horas para atingir o pico. Em um cenário de sangramento ativo vultoso e necessidade de endoscopia urgente, ela não promove a reversão rápida necessária se usada isoladamente.\n\nAlternativa (b) Fibrinogênio: O uso de crioprecipitado ou concentrado de fibrinogênio é indicado em situações de hipofibrinogenemia (geralmente abaixo de 100-150 mg/dL), como em traumas graves ou coagulação intravascular disseminada. O mecanismo de sangramento deste paciente é a deficiência dos fatores II, VII, IX e X pela varfarina, e não a falta de fibrinogênio.\n\nAlternativa (c) Aférese de plaquetas: O paciente apresenta 135.000 plaquetas/mm³, valor que está bem acima do limite de segurança para a realização de procedimentos endoscópicos (geralmente > 50.000/mm³). O distúrbio da hemostasia aqui é secundário à anticoagulação e não à plaquetopenia ou plaquetopatia.\n\nRESUMO DA CONDUTA\n\nEm sangramentos maiores por varfarina, a diretriz recomenda o uso do Complexo Protrombínico associado à Vitamina K endovenosa. Como a questão foca na conduta imediata antes da endoscopia, o CPN é a prioridade por sua rapidez. Se o CPN não estivesse disponível, a alternativa seria o Plasma Fresco Congelado.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Medicina Transfusional",
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:05.180Z"
+  },
+  {
+    "id": "AJUDA_719da45d-1398-4abb-8f2a-40a5956a47ef",
+    "originalId": "719da45d-1398-4abb-8f2a-40a5956a47ef",
+    "statement": "Em um paciente com DPOC, sob ventilação mecânica invasiva, os gráficos de monitoramento da mecâ-nica respiratória mostram as curvas a seguir. Ao observar os ciclos respiratórios na tela do ventilador, o médico identifica uma alteração e decide realizar alguns ajustes. Em relação a essa alteração, assinale a alternativa que apresenta, corretamente, a melhor conduta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Há presença de vazamento de volume corrente; checar se o circuito está corretamente acoplado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O paciente está assincrônico; alterar o modo ventilatório para pressão de suporte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Presença de Overshooting; aumentar a sedação do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Presença de obstrução no tubo orotraqueal; desconectar o circuito e ventilar o paciente manualmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trata-se de Auto-PEEP; ajustar o tempo expiratório.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Ao analisar os gráficos de monitoramento da mecânica respiratória, observamos um padrão clássico de aprisionamento aéreo, fenômeno muito comum em pacientes com DPOC devido ao aumento da resistência das vias aéreas e à perda da retração elástica pulmonar.\n\nAnálise das curvas:\nNo gráfico inferior (Fluxo x Tempo), observe que o ramo expiratório (parte negativa da curva) não retorna à linha de base (zero) antes do início do próximo ciclo inspiratório. Isso indica que o paciente ainda está expirando quando o ventilador dispara um novo fôlego, resultando no acúmulo de ar nos pulmões, conhecido como Auto-PEEP ou PEEP intrínseca. O gráfico superior (Volume x Tempo) também reflete essa alteração, pois o volume não retorna totalmente ao ponto inicial antes do novo ciclo.\n\nAnálise das alternativas:\n\na) Incorreta. No caso de vazamento, o volume expirado seria menor que o inspirado, e a curva de volume não retornaria à linha de base, mas a curva de fluxo geralmente atingiria o zero, pois não haveria fluxo saindo do paciente após o esvaziamento possível.\n\nb) Incorreta. Embora o Auto-PEEP possa causar dissincronia (como o esforço ineficaz), o problema central demonstrado é mecânico. Alterar para pressão de suporte sem ajustar os tempos expiratórios pode não resolver o aprisionamento aéreo se a frequência respiratória permanecer alta ou o tempo expiratório curto.\n\nc) Incorreta. O overshooting refere-se geralmente a um pico de pressão excessivo no início da inspiração (na curva de pressão), geralmente por ajuste inadequado do \"rise time\" ou fluxo inicial muito alto. Não é o que as curvas de fluxo e volume demonstram.\n\nd) Incorreta. Uma obstrução total cessaria o fluxo. Uma obstrução parcial aumentaria a resistência, contribuindo para o Auto-PEEP, mas a conduta de desconectar e ventilar manualmente é reservada para emergências de obstrução súbita do tubo (rolha ou acotovelamento) com colapso ventilatório, o que não é o foco principal da leitura gráfica apresentada.\n\ne) Correta. Os gráficos confirmam a presença de Auto-PEEP. A melhor conduta inicial é aumentar o tempo disponível para a expiração. Isso pode ser feito reduzindo a frequência respiratória, aumentando o fluxo inspiratório (para encurtar o tempo inspiratório) ou ajustando diretamente a relação I:E, permitindo que o pulmão se esvazie completamente antes do próximo ciclo.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Pneumologia Intensiva",
+      "Ventilação Mecânica",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/c64a500f39579180906ded6565923e4a4fadb23008c22cdecada03f299ed2279.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_719da45d-1398-4abb-8f2a-40a5956a47ef_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:05.628Z"
+  },
+  {
+    "id": "AJUDA_71a863f6-c079-4d86-8992-8c3126bd3779",
+    "originalId": "71a863f6-c079-4d86-8992-8c3126bd3779",
+    "statement": "Mulher de 68 anos de idade apresenta febre, cefaleia intensa e rebaixamento do nível de consciência há um dia. A paciente nega comorbidades e uso de medicamentos. Exame físico: escala de coma de Glasgow de 13; desorientação em tempo e espaço; rigidez nucal. O tratamento deve ser com",
+    "options": [
+      {
+        "id": "A",
+        "text": "ceftriaxona e dexametasona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ampicilina e dexametasona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ceftriaxona e ampicilina, sem indicação de uso de corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ceftriaxona, ampicilina e vancomicina, sem indicação de uso de corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ceftriaxona, ampicilina, vancomicina e dexametasona.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico é clássico de meningite bacteriana aguda em uma paciente idosa (68 anos), manifestando a tríade de febre, cefaleia e alteração do estado mental, associada a sinais de irritação meníngea (rigidez de nuca). \n\nEm adultos com mais de 50 anos, os principais agentes etiológicos prováveis são Streptococcus pneumoniae, Neisseria meningitidis e Listeria monocytogenes. A terapia empírica imediata requer:\n\n1. Ceftriaxona: cefalosporina de terceira geração para cobertura de N. meningitidis e cepas sensíveis de S. pneumoniae.\n2. Vancomicina: associada para cobrir cepas de S. pneumoniae resistentes às penicilinas e cefalosporinas.\n3. Ampicilina: necessária para cobrir Listeria monocytogenes, que é comum em extremos de idade e imunodeprimidos, sendo intrinsecamente resistente a todas as cefalosporinas.\n4. Dexametasona: corticoide adjuvante que deve ser iniciado antes ou junto com a primeira dose de antimicrobiano para atenuar a resposta inflamatória meníngea, reduzindo sequelas neurológicas (como perda auditiva) e mortalidade, principalmente na infecção pneumocócica.\n\nAnálise das alternativas:\n\na) Incorreta. Não inclui ampicilina (essencial para cobrir Listeria monocytogenes pela idade da paciente) nem vancomicina (para pneumococos resistentes).\n\nb) Incorreta. A ampicilina isolada não fornece cobertura adequada para pneumococo resistente nem para meningococo, faltando a ceftriaxona e a vancomicina.\n\nc) Incorreta. Omite a vancomicina e afirma incorretamente que não há indicação de corticoide, o qual é fortemente recomendado no manejo inicial.\n\nd) Incorreta. Contempla os três antimicrobianos corretos, mas erra ao contraindicar o uso de dexametasona.\n\ne) Correta. Abrange todo o espectro necessário para uma paciente com mais de 50 anos (ceftriaxona, vancomicina e ampicilina) e inclui o corticoide adjuvante (dexametasona).",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Meningites",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:05.628Z"
+  },
+  {
+    "id": "AJUDA_71a999c5-6c4b-40be-abc5-c1bed5c8180d",
+    "originalId": "71a999c5-6c4b-40be-abc5-c1bed5c8180d",
+    "statement": "O processo de estruturação da seguridade social no Brasil é marcado por marcos legislativos que refletem o contexto político e econômico de cada época. Em 1923, com a crescente industrialização e o fortalecimento do movimento operário urbano, o Estado brasileiro editou o Decreto Legislativo nº 4.682, conhecido como Lei Eloy Chaves. Diante desse contexto histórico, a Lei Eloy Chaves estabeleceu especificamente",
+    "options": [
+      {
+        "id": "A",
+        "text": "o Sistema Nacional de Assistência e Previdência Social.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "os Institutos de Aposentadoria e Pensões.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o Instituto Nacional de Previdência Social.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a Caixa de Aposentadorias e Pensões.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Lei Eloy Chaves (Decreto Legislativo nº 4.682/1923) é amplamente reconhecida como o marco inicial da Previdência Social no Brasil, criando um modelo de proteção voltado inicialmente aos trabalhadores ferroviários e, posteriormente, estendido a outras categorias.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O Sistema Nacional de Previdência e Assistência Social (SINPAS) foi criado em 1977, durante o regime militar, com o intuito de integrar e reorganizar a administração do setor (englobando órgãos como o INAMPS e o IAPAS).\n\nAlternativa b: Incorreta. Os Institutos de Aposentadoria e Pensões (IAPs) foram instituídos na década de 1930, durante a Era Vargas. Diferenciavam-se das Caixas por serem organizados por categorias profissionais (como marítimos, comerciários e industriários) sob controle e gestão direta do Estado.\n\nAlternativa c: Incorreta. O Instituto Nacional de Previdência Social (INPS) foi criado em 1966 para unificar os diversos IAPs existentes, padronizando a gestão e os benefícios dos trabalhadores urbanos.\n\nAlternativa d: Correta. A Lei Eloy Chaves instituiu as Caixas de Aposentadorias e Pensões (CAPs). Esse modelo era estruturado por empresa (e não por categoria profissional) e financiado de forma tripartite (trabalhadores, empresas e consumidores/Estado), constituindo o primeiro arranjo previdenciário formal no país.\n\nAlternativa e: Incorreta. A alternativa d responde corretamente ao enunciado.\n\nGabarito: Letra d.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "História do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:05.628Z"
+  },
+  {
+    "id": "AJUDA_71b62e31-0ad0-4881-af3c-236dc257bb77",
+    "originalId": "71b62e31-0ad0-4881-af3c-236dc257bb77",
+    "statement": "Pode-se afirmar, sobre a trombocitopenia induzida por heparina, que é mais frequente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "em homens do que nas mulheres",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "um quadro de trombose arterial do que de trombose venosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "com heparina não fracionada do que com heparina de baixo peso molecular",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "em pacientes com patologia clínica do que cirúrgica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Trombocitopenia Induzida por Heparina (HIT) do tipo II é uma complicação imunomediada grave que ocorre devido à formação de anticorpos IgG contra o complexo fator plaquetário 4 (PF4) e heparina. O entendimento dos fatores que aumentam o risco dessa condição é essencial para a prática médica e para a resolução de questões de prova.\n\nAlternativa A: Incorreta. Na verdade, a literatura médica aponta que a HIT é mais frequente no sexo feminino do que no masculino, embora a razão exata para essa predisposição ainda seja discutida.\n\nAlternativa B: Incorreta. A HIT é uma condição intensamente pró-trombótica. Apesar de poder causar tanto tromboses arteriais quanto venosas, os quadros de trombose venosa (como trombose venosa profunda e embolia pulmonar) são significativamente mais comuns, ocorrendo em uma proporção de aproximadamente 4 para 1 em relação aos eventos arteriais.\n\nAlternativa C: Correta. Esta é uma das características epidemiológicas mais importantes da HIT. A heparina não fracionada (HNF) possui cadeias de polissacarídeos mais longas e uma carga negativa mais intensa, o que facilita a formação de complexos macromoleculares com o fator plaquetário 4 (PF4). Esses complexos são altamente imunogênicos. Assim, o risco de desenvolver HIT com HNF é cerca de 10 vezes maior (estimado entre 1% e 5%) do que com o uso de heparina de baixo peso molecular (HBPM), onde o risco é geralmente inferior a 1%.\n\nAlternativa D: Incorreta. A prevalência da HIT é maior em pacientes cirúrgicos do que em pacientes clínicos. Pacientes submetidos a grandes cirurgias ortopédicas, vasculares ou cardíacas apresentam riscos mais elevados. Isso ocorre porque o trauma cirúrgico e a manipulação tecidual geram uma maior ativação plaquetária e liberação de PF4 no sistema, favorecendo a formação dos imunocomplexos.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:05.628Z"
+  },
+  {
+    "id": "AJUDA_71b9d88c-f9db-4e8d-b883-3579a4e6eb58",
+    "originalId": "71b9d88c-f9db-4e8d-b883-3579a4e6eb58",
+    "statement": "As doenças respiratórias são as principais responsáveis pela morbidade e mortalidade no período neonatal, representando a causa mais comum de internação nessa faixa etária. Com base nisso, considere um recém-nascido (RN) de 37 semanas de idade gestacional, com peso de nascimento = 2900, Apgar 7/9, internado em unidade de terapia intensiva neonatal em razão de desconforto respiratório com 24 horas de vida. A gestação ocorreu sem intercorrências, parto vaginal sem intercorrências, líquido amniótico claro, bolsa rota no ato. Ao exame físico, observaram-se FC = 150 bpm, FR = 90 irpm, SatO2 = 96%, RN acianótico, anictérico, ativo, reativo ao exame, com desconforto respiratório, ausculta sem sibilos ou ruídos adventícios.\n\nQuanto a esse caso clínico, é correto afirmar que a hipótese diagnóstica mais provável e o respectivo tratamento de escolha são",
+    "options": [
+      {
+        "id": "A",
+        "text": "taquipneia transitória do recém-nascido – suporte geral e oxigenoterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "síndrome da membrana hialina – CPAP nasal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pneumonia adquirida – corticoterapia intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pneumonia congênita – óxido nítrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve um recém-nascido a termo (37 semanas), com bom peso e boa vitalidade ao nascer (Apgar 7/9), que desenvolve desconforto respiratório caracterizado principalmente por taquipneia (frequência respiratória de 90 irpm). Um dado fundamental é a ausência de ruídos adventícios na ausculta pulmonar e a estabilidade clínica (RN ativo e reativo).\n\nPOR QUE A ALTERNATIVA A ESTÁ CORRETA?\n\nA Taquipneia Transitória do Recém-Nascido (TTRN), também conhecida como \"pulmão úmido\", é a causa mais comum de desconforto respiratório no RN a termo ou prematuro tardio. Ela ocorre devido ao retardo na reabsorção do líquido pulmonar fetal. Embora seja mais frequente em partos cesáreos sem trabalho de parto, também pode ocorrer em partos vaginais. O quadro clínico é tipicamente de taquipneia de início precoce, com melhora em 24 a 72 horas. O tratamento é de suporte, incluindo ambiente termoneutro, monitorização e oxigenoterapia (se necessária) para manter a saturação adequada, exatamente como proposto na alternativa.\n\nPOR QUE A ALTERNATIVA B ESTÁ INCORRETA?\n\nA Síndrome da Membrana Hialina (ou Doença do Desconforto Respiratório) é uma patologia típica do prematuro (geralmente abaixo de 34 semanas) causada pela deficiência de surfactante. O RN do caso é um bebê a termo (37 semanas). Além disso, a membrana hialina costuma apresentar um quadro clínico mais grave, com ruídos à ausculta (estertores) e imagem radiológica de infiltrado reticulogranular com broncogramas aéreos, o que não condiz com a descrição do exame físico deste paciente.\n\nPOR QUE A ALTERNATIVA C ESTÁ INCORRETA?\n\nA pneumonia adquirida não é a principal hipótese para um RN de 24 horas de vida sem fatores de risco claros. Além disso, o tratamento de pneumonias é feito com antibioticoterapia, e não com corticoterapia intravenosa. O corticoide não tem papel no manejo agudo da pneumonia neonatal.\n\nPOR QUE A ALTERNATIVA D ESTÁ INCORRETA?\n\nPara pensar em pneumonia congênita, deveríamos encontrar fatores de risco maternos/ovulares, como febre materna, líquido amniótico meconial ou purulento, ou bolsa rota prolongada (maior que 18-24 horas). O caso informa que a gestação foi sem intercorrências, o líquido era claro e a bolsa rompeu no ato do parto. Adicionalmente, o óxido nítrico é um vasodilatador pulmonar indicado para casos de Hipertensão Pulmonar Persistente Grave com hipoxemia refratária, não sendo o tratamento de escolha para pneumonia.\n\nCONCLUSÃO\n\nDiante de um RN a termo, com taquipneia isolada e sem ruídos adventícios ou fatores de risco para infecção, a TTRN é a principal hipótese diagnóstica, exigindo apenas suporte geral e vigilância.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:05.628Z"
+  },
+  {
+    "id": "AJUDA_71bbff62-cb60-4ecc-9b31-2961a8c79dde",
+    "originalId": "71bbff62-cb60-4ecc-9b31-2961a8c79dde",
+    "statement": "Escolar do sexo feminino, 8 anos, é admitida na emergência com cefaleia intensa, võmitos e desorientação. Ela apresenta peté-quias no tronco e nos membros, além de sangramento gengival. A mãe relata que a criança teve uma infecção viral há 2 semanas. O hemograma mostra plaquetas de 10.000/mm³, sem outras alterações. A tomografia computadorizada de crânio revela um pequeno hematoma subdural. Baseado na provável hipótese diagnóstica, a conduta apropriada para essa criança é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar esplenectomia emergencial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar corticoterapia isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar transfusão plaquetária, corticosteroides e imunoglobulina humana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Internar a paciente para observação clínica e monitorização da evolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administrar imunossupressores e ciclofosfamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico\n\nO quadro clínico descreve uma criança de 8 anos com trombocitopenia isolada (10.000 plaquetas/mm3) precedida por uma infecção viral, o que é clássico da Púrpura Trombocitopênica Imunológica (PTI) na infância. No entanto, a paciente apresenta sinais de gravidade extrema: sangramento mucoso (gengival) e, principalmente, uma complicação neurológica grave (cefaleia, vômitos, desorientação e hematoma subdural na TC). Estamos diante de uma PTI com sangramento com risco de morte (hemorragia intracraniana).\n\nExplicação das Alternativas\n\na) Incorreta. A esplenectomia é considerada um tratamento de segunda ou terceira linha, geralmente reservada para casos crônicos, refratários ou quando outras terapias falham após longo período. Não é a conduta inicial em uma emergência aguda de PTI, mesmo com sangramento grave, devido aos riscos cirúrgicos em um paciente plaquetopênico e à existência de terapias medicamentosas rápidas.\n\nb) Incorreta. A corticoterapia isolada (geralmente prednisona oral ou metilprednisolona venosa) é uma opção para casos de PTI com sangramentos cutâneos extensos ou mucosos moderados. Contudo, em vigência de hemorragia intracraniana, o efeito dos corticoides isolados é muito lento para a gravidade do quadro.\n\nc) Correta. Em casos de PTI com sangramento de risco de vida (como o hematoma subdural), a conduta deve ser agressiva e combinada para elevar a contagem de plaquetas o mais rápido possível. A imunoglobulina humana intravenosa (IVIG) age rapidamente bloqueando os receptores Fc dos macrófagos esplênicos, os corticosteroides em doses altas diminuem a resposta imune, e a transfusão de plaquetas, embora tenha sobrevida curta na PTI, é indicada em vigência de sangramento ativo grave para tentar promover a hemostasia imediata enquanto as outras medicações começam a agir.\n\nd) Incorreta. A observação clínica e a monitorização sem intervenção medicamentosa são condutas aceitáveis apenas para crianças com PTI que apresentam apenas petéquias e equimoses (manifestações cutâneas) e contagens de plaquetas acima de 10.000-20.000/mm3, sem sangramentos ativos. No caso em questão, a paciente tem um sangramento no sistema nervoso central, o que exige intervenção imediata.\n\ne) Incorreta. O uso de imunossupressores potentes como a ciclofosfamida ou o rituximabe é reservado para casos de PTI crônica, grave e refratária aos tratamentos iniciais (corticoides, imunoglobulina e esplenectomia). Não possui espaço no manejo agudo de uma hemorragia intracraniana por PTI.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Medicina Transfusional",
+      "Hemostasia"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:05.628Z"
+  }
+]

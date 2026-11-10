@@ -1,0 +1,494 @@
+[
+  {
+    "id": "AJUDA_f0cdac5f-9968-401e-851f-38b30a2f4c67",
+    "originalId": "f0cdac5f-9968-401e-851f-38b30a2f4c67",
+    "statement": "Sobre o tratamento medicamentoso nos casos de trabalho de parto pré-termo, analise as afirmativas e assinale a alternativa correta.\n\nI. São objetivos principais do uso de tocolíticos: prolongar a gestação por 48 horas de modo a aproveitar os benefícios do uso de corticoides e possibilitar a transferência de pacientes para centros especializados.\nII. A indometacina é um dos fármacos utilizados, mas só pode ser administrada após a 32ª semana de gestação.\nIII. Em geral a nifedipina via oral é o medicamento mais utilizado, por ser eficaz e ter poucos efeitos colaterais.\nIV. O atosibano possui efetividade semelhante à da nifedipina, com a desvantagem de ser mais caro.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as afirmativas I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas III e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas as afirmativas I, III e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS:\n\nAfirmativa I: CORRETA. O objetivo da tocólise (inibição das contrações uterinas) não é evitar o parto indefinidamente, mas sim ganhar tempo. O prazo de 48 horas é o período necessário para que o corticosteroide antenatal (como a betametasona ou dexametasona) exerça seu efeito máximo na maturação pulmonar fetal, reduzindo o risco de Síndrome do Desconforto Respiratório, hemorragia intraventricular e enterocolite necrotizante. Além disso, esse tempo permite a transferência segura da gestante para uma unidade de referência com UTI neonatal.\n\nAfirmativa II: INCORRETA. A indometacina é um inibidor da ciclo-oxigenase (AINE) e seu uso é restrito a gestações com menos de 32 semanas. O uso após a 32ª semana está formalmente contraindicado devido ao elevado risco de fechamento prematuro do ducto arterioso fetal e de oligo-hidrâmnio (redução do líquido amniótico) por diminuição da perfusão renal fetal.\n\nAfirmativa III: CORRETA. A nifedipina, um bloqueador dos canais de cálcio, é atualmente considerada a primeira linha de tratamento em muitos protocolos mundiais. Ela apresenta alta eficácia em retardar o parto por 48 horas e 7 dias, possui administração simplificada (via oral) e um perfil de efeitos colaterais mais favorável e menos grave quando comparada aos antigos beta-agonistas (como a terbutalina).\n\nAfirmativa IV: CORRETA. O atosibano é um antagonista do receptor da ocitocina. Estudos mostram que sua eficácia em prolongar a gestação é comparável à da nifedipina. Sua principal vantagem é a segurança, sendo o medicamento com menos efeitos colaterais maternos. No entanto, o seu alto custo hospitalar é o principal fator limitante para que não seja utilizado rotineiramente como primeira escolha em todos os serviços.\n\nCONCLUSÃO:\n\nComo as afirmativas I, III e IV estão corretas e a afirmativa II está incorreta, a alternativa correta é a letra (d).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:24.577Z"
+  },
+  {
+    "id": "AJUDA_f0e2b652-548d-42e2-968e-d9d9547ea650",
+    "originalId": "f0e2b652-548d-42e2-968e-d9d9547ea650",
+    "statement": "Criança, 6 anos de idade, é levada ao pronto atendimento com história de dor abdominal difusa há 10 dias, artralgia em joelhos e exantema purpúrico palpável em membros inferiores. Ao exame físico, apresenta lesões purpúricas simétricas em região glútea e pernas. Realizado hemograma completo sem alterações. De acordo com o relato do caso clínico, qual é o diagnóstico mais provável e a principal complicação a longo prazo associada a essa condição?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Púrpura trombocitopênica idiopática; hemorragia intracraniana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lúpus eritematoso sistêmico juvenil; nefrite lúpica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vasculite por IgA; nefropatia por IgA.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Doença de Kawasaki; aneurisma de artéria coronária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico da Vasculite por IgA, anteriormente conhecida como Púrpura de Henoch-Schönlein. Trata-se da vasculite de pequenos vasos mais comum na infância. A apresentação típica inclui a tétrade de púrpura palpável (sem trombocitopenia), artralgia ou artrite, dor abdominal e comprometimento renal.\n\nAlternativa (a) Incorreta: A Púrpura Trombocitopênica Idiopática (PTI) manifesta-se tipicamente com petéquias e equimoses decorrentes de uma contagem baixa de plaquetas. O enunciado afirma que o hemograma completo não apresenta alterações, o que exclui a trombocitopenia necessária para o diagnóstico de PTI. Além disso, a dor abdominal e a artralgia não são achados característicos desta condição.\n\nAlternativa (b) Incorreta: O Lúpus Eritematoso Sistêmico Juvenil pode apresentar artralgia e manifestações cutâneas, mas o quadro de púrpura palpável simétrica em membros inferiores e região glútea, associado à dor abdominal aguda em uma criança de 6 anos, é muito mais sugestivo de Vasculite por IgA. O lúpus costuma cursar com outras alterações laboratoriais no hemograma, como anemia ou leucopenia, que estavam ausentes.\n\nAlternativa (c) Correta: O diagnóstico é Vasculite por IgA. A púrpura palpável em áreas de declive (membros inferiores e nádegas) com contagem de plaquetas normal é o sinal patognomônico. A dor abdominal ocorre por vasculite na parede intestinal, e a artralgia é comum em grandes articulações. A principal complicação a longo prazo e o fator que determina o prognóstico da doença é o envolvimento renal (nefropatia por IgA), que pode se manifestar meses após o quadro inicial, exigindo monitoramento periódico da pressão arterial e do exame de urina.\n\nAlternativa (d) Incorreta: A Doença de Kawasaki é uma vasculite de médios vasos que exige, obrigatoriamente, a presença de febre alta por pelo menos 5 dias, associada a critérios como conjuntivite bilateral não purulenta, alterações em lábios e cavidade oral (língua em morango), exantema polimorfo, edema de mãos e pés e linfonodomegalia cervical. O caso clínico não menciona febre e foca em lesões purpúricas e dor abdominal, que não são os pilares diagnósticos de Kawasaki.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Púrpura de Henoch-Schönlein e Vasculite por IgA"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:24.577Z"
+  },
+  {
+    "id": "AJUDA_f0ee2c22-489f-428f-bdf1-cfe768fc1d7e",
+    "originalId": "f0ee2c22-489f-428f-bdf1-cfe768fc1d7e",
+    "statement": "Leia o relato do caso clínico a seguir. Paciente, C.M.S., feminina, 59 anos de idade, auxiliar de serviços gerais, casada, sedentária, hipertensa controlada em monoterapia, nega demais comorbidades, nega alergia a medicamentos, nega etilismo, nega tabagismo e nega consumo de outras drogas. Faz terapia cognitivo comportamental (TCC) uma vez por semana. S1. Paciente refere dor em todas as \"juntas”. Relata que dor multifocal iniciou há 2 anos, forte intensidade (10/10) e ocorre com piora vespertina, fadiga acentuada e sono não reparador. Negou alteração dermatológica, exceto por ter apresentado, recentemente, episódio de celulite periorbital à esquerda, quando a \"maçã do rosto\" ficou extremamente eritemada e edemaciada; tratou com amoxicilina e clavulanato, apresentando melhora dentro de alguns dias. Índice de Dor Difusa (Widespread Pain Index): 6. Escala de Severidade dos Sintomas (Symptom Severity Score): 10. STOP-BANG = 6 pontos. 01. PA 138/86 mmHg; sem sinovite no momento; hipersensibilidade difusa à palpação; IMC 36 kg/m². Exames (há 3 dias): VHS/PCR 1,5× o limite superior da normalidade; TSH normal; hemograma sem alterações; ferritina normal; FAN (ANA) negativo. Com base no registro clínico SOAP apresentado, qual é o complemento de “A” e de “P”?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A1. Fibromialgia. A2. Alto risco de Síndrome da Apneia Obstrutiva do Sono (SAOS). P1. Educação, exercício gradual e TCC; iniciar duloxetina 30 mg/dia, com titulação até 60 mg/dia; evitar opioides (não demonstraram benefício na fibromialgia). P2. Solicita-se estudo domiciliar do sono (polissonografia tipo II/III); se negativo ou não conclusivo, deve-se prosseguir com polissonografia tipo I (laboratorial).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A1. Dor crônica multifocal em investigação. A2. Alto risco de Síndrome da Apneia Obstrutiva do Sono (SAOS). P1. Amplia-se investigação autoimune (anti-dsDNA, anti-Sm, C3/C4) diante de marcadores inflamatórios elevados; se negativos, pode-se considerar fibromialgia (diagnóstico de exclusão); pode-se considerar tramadol em dor intensa 50-100 mg até 4 vezes ao dia, máximo 400 mg/dia. P2. Solicita-se estudo domiciliar do sono (tipo II/III); se não conclusivo ou negativo, deve-se prosseguir com polissonografia tipo I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A1. Fibromialgia. A2. Alto risco de Síndrome da Apneia Obstrutiva do Sono (SAOS). P1. Educação, exercício gradual e TCC; iniciar pregabalina 75 mg a cada 12 horas (titulação até 450 mg/dia); pode-se considerar tramadol 50-100 mg até 4 vezes ao dia, máximo 400 mg/dia. P2. Solicita-se estudo domiciliar do sono (tipo II/III); se negativo, pode-se encerrar a investigação de SAOS e atribuir a fadiga à fibromialgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A1. Dor crônica multifocal em investigação. A2. Alto risco de Síndrome da Apneia Obstrutiva do Sono (SAOS). P1. Amplia-se investigação autoimune (anti-dsDNA, anti-Sm, C3/C4) diante de marcadores inflamatórios elevados; se negativos, pode-se considerar fibromialgia (diagnóstico de exclusão); evitar opioides (não demonstraram benefício na dor crônica difusa). P2. Solicita-se estudo domiciliar do sono (tipo II/III); se negativo, pode-se encerrar a investigação de SAOS e atribuir a fadiga ao quadro de dor crônica em investigação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o raciocínio clínico estruturado no formato SOAP (Subjetivo, Objetivo, Avaliação e Plano), focando no diagnóstico de dor crônica e distúrbios do sono.\n\nAnálise da Avaliação (A):\nA paciente apresenta um quadro de dor multifocal há 2 anos, fadiga e sono não reparador. O Índice de Dor Difusa (WPI) de 6 e a Escala de Severidade de Sintomas (SSS) de 10 preenchem os critérios do Colégio Americano de Reumatologia (ACR 2016) para o diagnóstico de fibromialgia (que exige WPI 4-6 com SSS maior ou igual a 9). O escore STOP-BANG de 6 pontos indica alto risco para Síndrome da Apneia Obstrutiva do Sono (SAOS), uma vez que valores maiores ou iguais a 3 já sugerem risco elevado.\n\nAnálise do Plano (P):\nPara fibromialgia, as diretrizes recomendam como primeira linha o tratamento não farmacológico (exercícios, educação e TCC). O tratamento farmacológico pode incluir duloxetina ou pregabalina. O uso de opioides é contraindicado por não demonstrar eficácia e poder causar hiperalgesia. Para a investigação de SAOS em pacientes de alto risco, se o estudo domiciliar (tipos II ou III) for negativo ou inconclusivo, deve-se realizar a polissonografia padrão-ouro (tipo I, laboratorial) devido ao risco de falsos-negativos nos testes domiciliares.\n\nExplicação das alternativas:\n\nAlternativa (a): Correta. Identifica corretamente a fibromialgia pelos critérios de 2016 e o alto risco de SAOS pelo STOP-BANG. O plano terapêutico está alinhado com as evidências (TCC, exercícios, duloxetina e evitar opioides) e a conduta diagnóstica para SAOS segue o protocolo de confirmação para casos de alta probabilidade pré-teste.\n\nAlternativa (b): Incorreta. A fibromialgia pode ser diagnosticada de forma positiva pelos critérios clínicos e não apenas por exclusão. Com FAN negativo, a pesquisa de anti-dsDNA e anti-Sm é desnecessária e gera custos inúteis. Além disso, o tramadol (opioide) não é medicação de primeira escolha para fibromialgia. A elevação leve de marcadores inflamatórios (1,5x o limite) é comum na obesidade (IMC 36) e não justifica investigação autoimune complexa sem clínica específica.\n\nAlternativa (c): Incorreta. Embora a pregabalina seja uma opção para fibromialgia, o uso de tramadol é evitado. O erro principal está na conduta da SAOS: um resultado negativo em exame domiciliar (tipo II/III) em paciente com STOP-BANG 6 não permite encerrar a investigação, sendo necessária a polissonografia tipo I para exclusão definitiva.\n\nAlternativa (d): Incorreta. Assim como na alternativa (b), falha ao tratar a fibromialgia como diagnóstico de investigação/exclusão e ao solicitar exames autoimunes desnecessários. Também repete o erro da alternativa (c) ao sugerir o encerramento da investigação de SAOS após um teste domiciliar negativo em paciente de alto risco.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Síndromes Dolorosas Crônicas",
+      "Apneia do Sono"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:24.577Z"
+  },
+  {
+    "id": "AJUDA_f0f1d971-8ff0-42bf-b10f-1fd893e16bfb",
+    "originalId": "f0f1d971-8ff0-42bf-b10f-1fd893e16bfb",
+    "statement": "Adolescente de 15 anos apresenta diarreia há 3 meses, liquida, sem muco ou sangue. Refere dor abdominal difusa e perda de peso discreta. Exame laboratorial revelou calprotectina fecal de 300 µg/g (Valor de referência < 50).\nQual exame é mais indicado para investigar a causa desta diarreia crônica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exame de fezes para calprotectina seriada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colonoscopia com biópsias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Anti-transglutaminase IgA/IgA sérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Teste de intolerância à lactose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente de 15 anos apresenta quadro de diarreia crônica (duração superior a 4 semanas), dor abdominal e perda ponderal, associado a elevação expressiva da calprotectina fecal (300 µg/g, sendo o valor de referência inferior a 50 µg/g). A calprotectina fecal é uma proteína citoplasmática liberada por neutrófilos ativados na mucosa intestinal, servindo como biomarcador sensível de inflamação no trato gastrointestinal. Em adolescentes, a combinação de diarreia crônica com perda de peso e calprotectina acima de 250 µg/g aponta prioritariamente para o diagnóstico de Doença Inflamatória Intestinal (Doença de Crohn ou Retocolite Ulcerativa).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A calprotectina fecal é utilizada para rastreamento e triagem de inflamação. Com um resultado francamente positivo e a presença de sinais de alarme clínicos (perda ponderal), a repetição seriada do exame apenas atrasaria o diagnóstico definitivo, sendo mandatório avançar para métodos diagnósticos diretos.\n\nAlternativa b: Correta. A colonoscopia com ileoscopia e biópsias seriadas é o exame padrão-ouro para o diagnóstico de Doenças Inflamatórias Intestinais. Permite a avaliação macroscópica direta da mucosa do cólon e do íleo terminal, além da coleta de material histopatológico essencial para confirmar a inflamação e diferenciar a Doença de Crohn da Retocolite Ulcerativa.\n\nAlternativa c: Incorreta. A dosagem de anticorpos antitransglutaminase tecidual da classe IgA associada à IgA sérica total é o método de escolha para a triagem da Doença Celíaca. Embora a Doença Celíaca curse com diarreia crônica e perda ponderal, ela habitualmente não cursa com elevações tão significativas da calprotectina fecal, tornando a investigação de Doença Inflamatória Intestinal por colonoscopia a conduta prioritária.\n\nAlternativa d: Incorreta. A intolerância à lactose é uma condição funcional e não inflamatória decorrente da deficiência da lactase. Cursa com diarreia osmótica, flatulência e meteorismo após a ingestão de laticínios, mas não causa elevação de calprotectina fecal nem perda de peso significativa.\n\nGabarito: Letra b.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Intestinal",
+      "Diarreia"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:24.577Z"
+  },
+  {
+    "id": "AJUDA_f0f28bf7-4cbd-4787-8e7b-718063699e9c",
+    "originalId": "f0f28bf7-4cbd-4787-8e7b-718063699e9c",
+    "statement": "J.P.O, sexo feminino, de 14 anos de idade, veio para avaliação por ainda não apresentar nenhuma mudança puberal. Apresenta estatura abaixo do Z escore -2 (z < -2) e idade óssea igual à idade cronológica. A paciente pratica ginástica olímpica e treina 6 horas por dia, pois quer participar de um campeonato. De acordo com o relato deste caso, o retardo puberal da paciente pode ser secundário ao",
+    "options": [
+      {
+        "id": "A",
+        "text": "atraso constitucional do crescimento e puberdade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hipogonadismo hipergonadotrófico da Síndrome de Turner.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hipogonadismo hipergonadotrófico da Síndrome de Kallmann.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hipogonadismo hipergonadotrófico pela atividade física excessiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender esta questão, devemos analisar os três pilares do quadro clínico da paciente: a ausência de caracteres sexuais secundários aos 14 anos (puberdade atrasada), a estatura baixa com idade óssea compatível com a idade cronológica e a prática de atividade física intensa.\n\nAnálise do caso:\nA definição de puberdade atrasada no sexo feminino é a ausência de desenvolvimento mamário (telarca) após os 13 anos. A paciente tem 14 anos e nenhuma mudança puberal. O dado mais importante para o diagnóstico diferencial aqui é a idade óssea igual à idade cronológica.\n\nAlternativa A: Incorreta.\nNo Atraso Constitucional do Crescimento e da Puberdade (ACCP), a principal característica é o atraso da idade óssea em relação à idade cronológica. O esqueleto \"mais jovem\" é o que permite que a criança continue crescendo por mais tempo e atinja uma estatura final adequada. Como a paciente tem idade óssea de 14 anos (igual à real), ela não se encaixa no perfil de ACCP.\n\nAlternativa B: Incorreta.\nA Síndrome de Turner (45,X) é uma causa importante de hipogonadismo hipergonadotrófico (falência ovariana primária com FSH/LH elevados) e baixa estatura. Embora a idade óssea na Turner possa ser normal ou discretamente atrasada, a questão fornece um fator ambiental e comportamental muito específico: o treinamento de ginástica olímpica por 6 horas diárias. Em provas de residência, esse dado é o \"marcador\" para o diagnóstico de causa funcional.\n\nAlternativa C: Incorreta.\nA Síndrome de Kallmann é uma causa de hipogonadismo hipogonadotrófico (deficiência de GnRH) associada a distúrbios do olfato (anosmia ou hiposmia). É um erro conceitual classificá-la como \"hipergonadotrófico\", pois o problema é central (hipotálamo) e não nos ovários.\n\nAlternativa D: Correta.\nA atividade física excessiva e o baixo percentual de gordura corporal, comuns em ginastas, provocam um estresse metabólico que inibe o eixo hipotálamo-hipófise-gonadal. Isso ocorre pela supressão da secreção pulsátil do GnRH, levando ao hipogonadismo funcional. É importante notar que, embora o gabarito oficial aponte esta alternativa, o termo correto para o hipogonadismo por exercício é \"hipogonadotrófico\" (gonadotrofinas baixas), e não \"hipergonadotrófico\". O erro na nomenclatura da alternativa é comum em algumas bancas examinadoras, mas a etiologia (atividade física excessiva) é, sem dúvida, o fator que a questão deseja destacar como causa do retardo puberal desta paciente, dada a normalidade da idade óssea e o histórico esportivo de alto rendimento.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Puberdade",
+      "Crescimento"
+    ],
+    "difficulty": 21.76719548797244,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:24.577Z"
+  },
+  {
+    "id": "AJUDA_f105bbc6-a356-42d2-ac25-69c7d4fe96b0",
+    "originalId": "f105bbc6-a356-42d2-ac25-69c7d4fe96b0",
+    "statement": "Em uma área ribeirinha com difícil acesso e indicadores sociais desfavoráveis, a gestão municipal precisa reorganizar a cobertura dos Agentes Comunitários de Saúde (ACS). Qual estratégia está de acordo com a Política Nacional de Atenção Básica (PNAB)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fixar um ACS para cerca de 1.200 pessoas, compensando distâncias com telemonitoramento estruturado e agendamento remoto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adscrever apenas domicílios próximos à UBS, excluindo áreas remotas com baixa densidade e alto custo operacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Assegurar cobertura total do território com teto de 750 pessoas por ACS, ajustando quantitativos por critérios epidemiológicos e sociais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Substituir ACS por equipe itinerante de especialidades, centralizando ações clínicas de maior complexidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Alternar mensalmente os ACS por sorteio, redistribuindo microáreas para equilibrar a carga de trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. De acordo com a Política Nacional de Atenção Básica (PNAB), o número máximo recomendado é de 750 pessoas para cada Agente Comunitário de Saúde (ACS). Propor um contingente de 1.200 pessoas ultrapassa o limite normativo e compromete drasticamente a capacidade de acompanhamento das famílias, especialmente em locais de difícil acesso, onde a presença física do agente é fundamental. O telemonitoramento pode ser uma ferramenta complementar, mas não substitui nem justifica o aumento da carga populacional por agente acima do teto legal.\n\nAlternativa b: Incorreta. Essa estratégia viola os princípios fundamentais do SUS, especificamente a Universalidade e a Equidade. A Atenção Primária tem como diretriz a territorialização e a adscrição de toda a população residente na área de abrangência. Excluir áreas remotas ou de alto custo operacional significa negligenciar justamente as populações que mais necessitam do sistema público de saúde.\n\nAlternativa c: Correta. Esta alternativa está em plena consonância com la PNAB. A política estabelece que a cobertura de ACS deve ser de 100% da população no território da Estratégia Saúde da Família, respeitando o teto de 750 pessoas por agente. Além disso, a PNAB orienta que os gestores devem ajustar esse quantitativo com base em critérios epidemiológicos, sociais e demográficos. Em áreas ribeirinhas ou de grande vulnerabilidade, é indicado que cada ACS cuide de um número menor de pessoas para garantir a qualidade e a frequência das visitas domiciliares.\n\nAlternativa d: Incorreta. O ACS é o elo entre a comunidade e a Unidade Básica de Saúde, exercendo funções de prevenção e promoção que equipes itinerantes de especialidades não conseguem suprir. Substituir a base da atenção primária por especialistas centralizados descaracteriza o modelo de assistência e interrompe o acompanhamento contínuo dos pacientes no território.\n\nAlternativa e: Incorreta. O trabalho do ACS é fundamentado no vínculo e na longitudinalidade. Alternar os agentes por sorteio entre as microáreas impediria que o profissional conhecesse profundamente o histórico das famílias, as dinâmicas locais e os fatores de risco do território. Sem a continuidade da relação profissional-paciente, a confiança da comunidade no sistema de saúde é prejudicada e o planejamento das ações perde eficácia.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:24.577Z"
+  },
+  {
+    "id": "AJUDA_f106c6d6-513f-4143-a977-b787c1a49962",
+    "originalId": "f106c6d6-513f-4143-a977-b787c1a49962",
+    "statement": "A contenção de hemorragias externas no atendimento pré-hospitalar de vítimas de trauma deve seguir o seguinte princípio:",
+    "options": [
+      {
+        "id": "A",
+        "text": "um torniquete aplicado corretamente deve ocluir o fluxo vascular arterial e venoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "se o tempo para intervenção cirúrgica for superior a 6 horas, duas tentativas de desinflar o torniquete podem ser consideradas em um doente instável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "um torniquete pneumático pode exigir uma pressão < 250 mmHg nos membros inferiores e < 400 mmHg nas extremidades superiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a pressão manual direta sobre o ferimento não é mais indicada como medida inicial, por ser ineficaz no controle de sangramento externo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "aplicar uma pressão direta na artéria distal à lesão é medida eficaz para controle de hemorragias, após o insucesso da compressão direta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O controle de hemorragias externas é a prioridade absoluta no atendimento inicial ao trauma (o \"X\" do mnemônico XABCDE), pois a exsanguinação é uma das principais causas de morte evitável no cenário pré-hospitalar. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa A (Correta): Para que um torniquete seja eficaz em interromper uma hemorragia arterial maciça, ele deve ser apertado o suficiente para interromper completamente o influxo de sangue arterial. Consequentemente, ao atingir a pressão necessária para ocluir as artérias (que possuem paredes mais espessas e maior pressão interna), o dispositivo invariavelmente também oclui o retorno venoso. Um torniquete que aperta apenas o suficiente para obstruir veias, mas não artérias, é perigoso, pois aumenta a pressão hidrostática local e pode agravar o sangramento.\n\nAlternativa B (Incorreta): Em doentes instáveis, a prioridade é a manutenção da vida (\"life over limb\"). Jamais se deve tentar desinflar ou remover um torniquete em um paciente em choque ou com instabilidade hemodinâmica no ambiente pré-hospitalar, independentemente do tempo previsto para a cirurgia. A liberação do torniquete pode causar a recorrência de uma hemorragia fatal e a liberação de toxinas metabólicas (síndrome de reperfusão) na circulação sistêmica.\n\nAlternativa C (Incorreta): Os valores citados estão invertidos ou incorretos conforme a fisiologia. Devido à maior massa muscular e ao diâmetro dos membros inferiores, a pressão necessária para ocluir o fluxo arterial nas pernas é geralmente maior do que nos braços. Em torniquetes pneumáticos cirúrgicos, costuma-se usar cerca de 250 mmHg para membros superiores e até 350 mmHg para membros inferiores. Na urgência, o torniquete é apertado até a cessação do pulso distal e do sangramento, sem um valor fixo rígido.\n\nAlternativa D (Incorreta): A pressão manual direta sobre o ferimento continua sendo a medida inicial recomendada para a grande maioria das hemorragias externas. O uso do torniquete é indicado prioritariamente quando a pressão direta falha em controlar o sangramento em extremidades ou quando a lesão é tão grave (ex.: amputação, múltiplas vítimas) que a pressão direta se torna impraticável.\n\nAlternativa E (Incorreta): Para controlar uma hemorragia através da compressão de um ponto arterial, a pressão deve ser feita na artéria proximal à lesão (entre o coração e o ferimento) e não distal. A pressão distal não teria qualquer efeito em interromper o fluxo sanguíneo que chega à ferida. Vale ressaltar que a técnica de pontos de pressão arterial caiu em desuso por ser pouco eficaz comparada à pressão direta ou ao torniquete.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:24.577Z"
+  },
+  {
+    "id": "AJUDA_f1219940-6b20-4552-8254-72605ea47d1e",
+    "originalId": "f1219940-6b20-4552-8254-72605ea47d1e",
+    "statement": "O período pós-parto é uma oportunidade estratégica para o início da contracepção, visando o espaçamento adequado entre gestações. O uso de métodos contraceptivos reversíveis de longa duração (LARC), como os dispositivos intrauterinos (DIU), é encorajado. Assinale a alternativa que apresenta a recomendação correta sobre a inserção de DIU (cobre ou levonorgestrel) no pós-parto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A inserção do DIU deve ser evitada antes de 6 semanas pós-parto (período de intervalo), pois o risco de perfuração uterina e expulsão é inaceitavelmente alto durante a involução uterina, devendo-se aguardar o retorno da menstruação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso de DIU medicado com levonorgestrel é contraindicado nas primeiras 6 semanas pós-parto em mulheres que amamentam, devido à passagem do hormônio para o leite materno e potencial prejuízo ao desenvolvimento neonatal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A inserção pós-placentária do DIU exige necessariamente a realização de uma incisão cesariana, não sendo tecnicamente viável ou segura após um parto vaginal espontâneo devido ao risco de infecção ascendente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A inserção do DIU pode ser realizada no pós-parto imediato (nos primeiros 10 minutos após a dequitação placentária) ou até 48 horas após o parto, apresentando altas taxas de continuidade e segurança, embora com risco de expulsão ligeiramente maior do que na inserção de intervalo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A alternativa (d) é a correta. A inserção do DIU no pós-parto imediato é uma estratégia recomendada pela Organização Mundial da Saúde (OMS) e pelo Ministério da Saúde para reduzir as necessidades não atendidas de anticoncepção e evitar gestações em intervalos curtos. Define-se como inserção pós-placentária aquela realizada nos primeiros 10 minutos após a saída da placenta, e como inserção no pós-parto imediato aquela que ocorre em até 48 horas. Embora o risco de expulsão seja estatisticamente maior (cerca de 10 a 15%) quando comparado à inserção de intervalo (após 6 semanas), as taxas de continuidade do método são excelentes, pois a paciente já sai da maternidade protegida.\n\nAnálise das alternativas incorretas:\n\nAlternativa (a): Incorreta. Não é necessário aguardar o retorno da menstruação ou o período de 6 semanas para a inserção. A inserção entre 48 horas e 6 semanas pós-parto é que deve ser evitada (Critério de Elegibilidade 3 da OMS para DIU de cobre e LNG) devido ao risco aumentado de infecção e perfuração durante essa fase intermediária da involução uterina. No entanto, antes de 48 horas, o procedimento é seguro.\n\nAlternativa (b): Incorreta. Os métodos de progestagênio isolado, como o DIU de levonorgestrel, são classificados como Categoria 2 da OMS (os benefícios superam os riscos) para mulheres que amamentam no pós-parto imediato. Não há evidências de que a pequena quantidade de hormônio que passa para o leite prejudique o crescimento ou o desenvolvimento do recém-nascido.\n\nAlternativa (c): Incorreta. A inserção pós-placentária pode ser realizada tanto em partos cesáreos quanto em partos vaginais. No parto vaginal, a inserção é feita manualmente ou com o auxílio de uma pinça de Kelly longa, levando o dispositivo até o fundo uterino. O risco de infecção não é significativamente maior quando a técnica asséptica é seguida corretamente.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:24.577Z"
+  },
+  {
+    "id": "AJUDA_f124124a-7d33-4441-b00e-6414801c7eda",
+    "originalId": "f124124a-7d33-4441-b00e-6414801c7eda",
+    "statement": "Mulher de 58 anos será submetida a colectomia esquerda eletiva por adenocarcinoma de sigmóide. Não há sinais de infecção ativa. Qual o esquema de profilaxia antibiótica mais apropriado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não é necessária profilaxia em cirurgias colorretais eletivas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cefazolina isolada 30-60 minutos antes da incisão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cefazolina + metronidazol 30-60 minutos antes da incisão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ceftriaxona + azitromicina por 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Piperacilina-tazobactam 30-60 minutos antes da incisão e continuar por 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o tema de antibioticoprofilaxia em cirurgia, especificamente em um procedimento colorretal eletivo. Para responder corretamente, devemos considerar a classificação da cirurgia quanto ao potencial de contaminação e a flora microbiana prevalente no sítio cirúrgico.\n\nAnálise das alternativas:\n\na) Incorreta. Cirurgias colorretais envolvem a abertura da luz intestinal, sendo classificadas como potencialmente contaminadas ou contaminadas. Devido à alta carga bacteriana no cólon, o risco de Infecção do Sítio Cirúrgico (ISC) é elevado (podendo ultrapassar 20% sem profilaxia), tornando a antibioticoprofilaxia obrigatória.\n\nb) Incorreta. A cefazolina é uma cefalosporina de primeira geração com excelente cobertura para Gram-positivos (pele) e alguns Gram-negativos. No entanto, ela não possui cobertura adequada contra bactérias anaeróbias (como o *Bacteroides fragilis*), que são abundantes no trato gastrointestinal inferior. O uso isolado de cefazolina é indicado para cirurgias limpas, como hernioplastias ou cirurgias cardíacas, mas insuficiente para o cólon.\n\nc) Correta. Este é o esquema clássico e amplamente recomendado. A cefazolina cobre a flora da pele e Gram-negativos entéricos, enquanto o metronidazol fornece a cobertura necessária contra os germes anaeróbios que colonizam o intestino grosso. A administração deve ocorrer entre 30 e 60 minutos antes da incisão para garantir níveis teciduais adequados no momento da abertura da pele.\n\nd) Incorreta. A ceftriaxona é uma cefalosporina de terceira geração e a azitromicina é um macrolídeo. Esse esquema é frequentemente utilizado para tratamento de pneumonia comunitária, não sendo um padrão para profilaxia cirúrgica. Além disso, o uso indiscriminado de ceftriaxona na profilaxia favorece a resistência bacteriana sem oferecer benefícios superiores aos esquemas tradicionais.\n\ne) Incorreta. A piperacilina-tazobactam é um antibiótico de amplo espectro, com ação contra *Pseudomonas* e outros germes multirresistentes. Seu uso deve ser reservado para o tratamento de infecções graves ou intra-abdominais complicadas, e não como profilaxia de rotina em pacientes sem fatores de risco específicos. O uso excessivo de drogas de amplo espectro na profilaxia é um erro grave de *stewardship* (gerenciamento de antimicrobianos). Ademais, diretrizes modernas recomendam dose única ou duração máxima de 24 horas, mas o erro principal aqui é a escolha do fármaco.\n\nResumo do raciocínio: Em cirurgia colorretal, a profilaxia deve cobrir Gram-negativos e anaeróbios. O esquema cefazolina + metronidazol cumpre esse papel de forma eficaz e com custo-benefício adequado.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:24.577Z"
+  },
+  {
+    "id": "AJUDA_f12a83de-054b-44d0-ac30-1ffb144cac2f",
+    "originalId": "f12a83de-054b-44d0-ac30-1ffb144cac2f",
+    "statement": "Homem, 62 anos de idade, portador de hepatite C crônica, comparece ao Pronto-Socorro com hematêmese volumosa e melena há três dias. O paciente apresenta-se ictérico, com PA: 90x60mmHg, FR: 115bpm e confusão mental. Ao exame, há ascite moderada. A avaliação laboratorial revela hemoglobina de 5,8g/dL, plaquetas de 70.000/mm3, RNI: 2,5.\n\nConsiderando o caso descrito, a conduta imediata mais adequada envolve:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar terlipressina e ceftriaxone intravenosos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Infusão de albumina e noradrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Passagem do balão de Sengstaken-Blakemore.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Endoscopia digestiva alta com ligadura elástica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Essa questão aborda o manejo inicial da Hemorragia Digestiva Alta (HDA) varicosa em um paciente cirrótico. O quadro clínico de hematêmese, melena, ascite e alterações laboratoriais (anemia, plaquetopenia e RNI alargado) em um paciente com hepatite C é altamente sugestivo de ruptura de varizes esofágicas.\n\nAnálise das alternativas:\n\na) Iniciar terlipressina e ceftriaxona intravenosas. \nEsta é a alternativa correta. Diante da suspeita de hemorragia varicosa, o tratamento farmacológico deve ser iniciado o mais precocemente possível, preferencialmente ainda na admissão. A terlipressina é um análogo da vasopressina que promove vasoconstrição esplâncnica, reduzindo a pressão na veia porta e auxiliando no controle do sangramento. O uso de antibióticos (como a ceftriaxona) é obrigatório em cirróticos com hemorragia digestiva, pois reduz a incidência de infecções (como a Peritonite Bacteriana Espontânea), o risco de ressangramento e a mortalidade.\n\nb) Infusão de albumina e noradrenalina. \nIncorreto. Embora o paciente apresente sinais de choque (hipotensão e taquicardia), a prioridade na hemorragia aguda é a estabilização hemodinâmica com cristaloides e, neste caso específico (Hb 5,8 g/dL), a transfusão de concentrado de hemácias. A noradrenalina não é a primeira escolha no choque hemorrágico antes da reposição volêmica. A albumina é indicada em situações específicas na cirrose (como após paracentese de grande volume ou na síndrome hepatorrenal), mas não como expansor de primeira linha na hemorragia aguda.\n\nc) Passagem do balão de Sengstaken-Blakemore. \nIncorreto. O balão de Sengstaken-Blakemore é uma medida de exceção, utilizada apenas como \"ponte\" para terapias definitivas quando o sangramento é maciço e refratário ao tratamento farmacológico e endoscópico. Não deve ser a conduta inicial imediata.\n\nd) Endoscopia digestiva alta com ligadura elástica. \nIncorreto. A endoscopia é fundamental tanto para o diagnóstico quanto para o tratamento (ligadura elástica das varizes), devendo ser realizada preferencialmente nas primeiras 12 horas. No entanto, ela deve ser precedida pela estabilização hemodinâmica do paciente e pelo início das medidas farmacológicas (vasoativos e antibióticos). O enunciado pede a conduta imediata, e os medicamentos devem ser administrados antes mesmo do deslocamento para a sala de endoscopia.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa",
+      "Cirrose Hepática"
+    ],
+    "difficulty": 100,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:24.577Z"
+  }
+]

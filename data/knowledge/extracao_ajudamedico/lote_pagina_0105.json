@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_1c33d1cb-ca43-459e-9337-09b118460837",
+    "originalId": "1c33d1cb-ca43-459e-9337-09b118460837",
+    "statement": "Criança de 4 anos, com antecedente de asma, chega ao pronto-socorro com febre alta, toxemia, dor torácica e consolidação em lobo superior direito à radiografia. Diante desse quadro, o agente etiológico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bordetella pertussis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adenovirus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mycoplasma pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Staphylococcus aureus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Streptococcus pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do quadro clínico: A paciente de 4 anos apresenta sinais clássicos de pneumonia bacteriana típica. A presença de febre alta, toxemia (comprometimento do estado geral), dor torácica (sugerindo acometimento pleural) e uma consolidação lobar bem definida ao raio-X compõem a apresentação típica do *Streptococcus pneumoniae*.\n\nAlternativa a) *Bordetella pertussis*: Está incorreta. Este agente é o causador da coqueluche, caracterizada por acessos de tosse paroxística, guincho inspiratório e tosse emetizante, geralmente sem febre alta ou consolidação lobar. O achado radiológico clássico na coqueluche é o infiltrado perihilar ou coração felpudo.\n\nAlternativa b) Adenovírus: Está incorreta. Embora o Adenovírus possa causar pneumonias graves e até necrosantes em crianças, o quadro costuma ser precedido por sintomas gripais intensos, conjuntivite ou faringite. Radiologicamente, as pneumonias virais tendem a apresentar infiltrados intersticiais ou multifocais, e não uma consolidação lobar isolada com dor pleurítica tão demarcada.\n\nAlternativa c) *Mycoplasma pneumoniae*: Está incorreta. É o principal agente da pneumonia atípica, mais comum em crianças em idade escolar e adolescentes. O quadro clínico costuma ser mais arrastado (subagudo), com tosse seca persistente e menos toxemia. No raio-X, o achado comum é o infiltrado intersticial ou broncopneumônico dissociado do exame físico, raramente cursando com consolidação lobar densa.\n\nAlternativa d) *Staphylococcus aureus*: Está incorreta. O *S. aureus* causa uma pneumonia bacteriana grave e rapidamente progressiva, mas é menos frequente que o pneumococo na comunidade. Frequentemente está associada a complicações como pneumatoceles, abscessos e derrame pleural (empiema) precoce, muitas vezes ocorrendo após um quadro de gripe (influenza).\n\nAlternativa e) *Streptococcus pneumoniae*: Está correta. O pneumococo é o principal agente causador de pneumonia bacteriana adquirida na comunidade em crianças acima de 1 mês de vida. A tríade de febre alta, dor torácica (indicando irritação da pleura parietal pela consolidação adjacente) e imagem de consolidação lobar no lobo superior direito é a descrição patognomônica da pneumonia pneumocócica clássica. Crianças com asma possuem um risco discretamente aumentado para quadros infecciosos respiratórios, mas o agente principal permanece sendo o *S. pneumoniae*.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:36.110Z"
+  },
+  {
+    "id": "AJUDA_1c377a9e-e55b-4c75-a4e1-6cbc1e8d9c62",
+    "originalId": "1c377a9e-e55b-4c75-a4e1-6cbc1e8d9c62",
+    "statement": "Novas infecções vêm fazendo parte, de forma endêmica ou epidêmica, do dia a dia das gestantes e das puérperas, dentre elas, a covid‑19. Com relação às gestantes e às puérperas, segundo dados de 2023 do boletim do Observatório Obstétrico Brasileiro covid‑19 (OOBr covid‑19), no Brasil já houve 25.163 casos de síndrome respiratória aguda grave (SRAG) confirmados por covid‑19 e 2.000 óbitos. Houve redução de 462 óbitos maternos em 2020 para 75 óbitos em 2022. Com base nessas informações, bem como em relação à covid‑19 e à gestação, assinale a opção correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os principais sintomas da covid‑19 na gestação são tosse produtiva e dor abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vacina AstraZeneca/Fiocruz é atualmente recomendada para as gestantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As vacinas de vírus inativado, ou com mRNA, podem ser administradas a qualquer momento na gravidez.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "As gestantes no primeiro trimestre têm maior risco de desenvolver doença grave, em relação ao terceiro trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "As comorbidades pré‑gestação não aumentam o risco para hospitalização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) INCORRETA: Os sintomas da COVID-19 em gestantes são, em sua maioria, semelhantes aos da população geral. Os principais incluem febre e tosse (geralmente seca). Embora sintomas gastrointestinais possam ocorrer, a dor abdominal não é um sintoma cardinal, e a tosse produtiva é menos frequente que a seca no início do quadro.\n\nAlternativa (b) INCORRETA: O uso da vacina AstraZeneca/Fiocruz, que utiliza a tecnologia de vetor viral, foi suspenso para gestantes e puérperas no Brasil por recomendação do Ministério da Saúde. Essa decisão foi tomada de forma cautelar após o registro de eventos adversos tromboembólicos raros nessa população específica.\n\nAlternativa (c) CORRETA: De acordo com as diretrizes do Ministério da Saúde e de sociedades científicas (como a FEBRASGO), as vacinas de mRNA (Pfizer) e de vírus inativado (CoronaVac) são as recomendadas para gestantes e puérperas. Elas podem ser administradas em qualquer idade gestacional, pois não contêm vírus vivo com capacidade de replicação, sendo seguras e eficazes na redução de casos graves e óbitos maternos.\n\nAlternativa (d) INCORRETA: O maior risco de desenvolvimento de doença grave e complicações respiratórias ocorre no terceiro trimestre da gestação e no puerpério imediato. Isso se deve às adaptações fisiológicas da gravidez, como a elevação do diafragma (reduzindo a capacidade residual funcional), o aumento da demanda de oxigênio e o estado de hipercoagulabilidade.\n\nAlternativa (e) INCORRETA: Comorbidades preexistentes, como obesidade, diabetes mellitus, hipertensão arterial crônica e doenças cardiovasculares, são fatores de risco críticos que aumentam significativamente as chances de hospitalização, internação em UTI e necessidade de ventilação mecânica em gestantes com COVID-19.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Covid-19",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:36.110Z"
+  },
+  {
+    "id": "AJUDA_1c37f660-bea5-41c4-a060-8cb67cad4719",
+    "originalId": "1c37f660-bea5-41c4-a060-8cb67cad4719",
+    "statement": "A alimentação complementar consiste no fornecimento de alimentos quando o leite materno ou a fórmula infantil por si só não são mais adequados para atender as necessidades nutricionais da criança e, geralmente, inicia aos 6 meses de idade. Durante a semana dedicada à primeira infância um profissional de saúde é convidado para participar de uma roda de conversa com mães de bebês de uma creche do município. Após alguns minutos de conversa com as mães o profissional constata que as mesmas apresentam muitas dúvidas sobre a alimentação complementar. Sobre este assunto específico, o profissional orienta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "nos lactentes amamentados exclusivamente com leite materno até os 6 meses de idade, o mecanismo de autorregularão alimentar não está bem estabelecido o que pode levar, como consequência, à má nutrição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a oferta de água não se faz necessária para os bebês que ainda continuam recebendo o leite materno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a introdução do glúten na dieta deverá ser postergada (após 6 meses de idade) naqueles lactentes com maior risco para Doença celíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a restrição de gordura e colesterol durante os dois primeiros anos está contra indicada.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A alimentação complementar é um marco fundamental no desenvolvimento infantil e na pediatria preventiva. Vamos analisar cada alternativa com base nas recomendações da Sociedade Brasileira de Pediatria (SBP) e do Ministério da Saúde:\n\nAlternativa a) Incorreta. Lactentes amamentados apresentam, na verdade, um mecanismo de autorregulação da saciedade muito bem estabelecido. O bebê amamentado no peito aprende a mamar de acordo com sua necessidade metabólica, o que é um fator protetor contra a obesidade futura. A má nutrição nesse período geralmente está associada à introdução inadequada de alimentos, e não a uma falha na autorregulação do bebê.\n\nAlternativa b) Incorreta. A partir do momento em que se inicia a introdução de alimentos complementares (aos 6 meses), a oferta de água potável torna-se obrigatória. Embora o leite materno tenha água em sua composição, a introdução de sólidos aumenta a carga de solutos renais e a necessidade hídrica da criança. A água deve ser oferecida nos intervalos das refeições.\n\nAlternativa c) Incorreta. Evidências científicas atuais demonstram que postergar a introdução do glúten não previne o desenvolvimento da doença celíaca, mesmo em crianças com predisposição genética. A recomendação vigente é que o glúten seja introduzido junto aos demais alimentos da família a partir dos 6 meses de idade, sem atrasos desnecessários.\n\nAlternativa d) Correta. Durante os dois primeiros anos de vida, o crescimento físico e o desenvolvimento do sistema nervoso central são acelerados. A gordura e o colesterol são componentes essenciais para a mielinização dos neurônios e para a formação das membranas celulares. Dietas restritivas em gordura nessa fase podem comprometer o desenvolvimento cerebral e o aporte calórico necessário para o crescimento, sendo, portanto, contraindicadas. O leite materno é naturalmente rico em gorduras e, ao iniciar a alimentação complementar, o aporte lipídico deve ser mantido de forma equilibrada.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": 88.03385697831388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:36.110Z"
+  },
+  {
+    "id": "AJUDA_1c3c7b0f-f6dd-4e18-a3fa-1b1e9d2acada",
+    "originalId": "1c3c7b0f-f6dd-4e18-a3fa-1b1e9d2acada",
+    "statement": "Homem, 30 anos de idade, com lombalgia, disponibiliza na consulta as imagens do exame abaixo. Assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de uma ressonância magnética com diagnóstico de espondilite anquilosante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de uma tomografia computadorizada com diagnóstico de doença degenerativa discal e de hérnia discal extrusa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de uma ressonância magnética com diagnóstico de doença degenerativa discal e de hérnia discal extrusa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de uma tomografia computadorizada com diagnóstico de espondilodiscite infecciosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das imagens:\n\nAs imagens apresentadas são de uma ressonância magnética (RM) da coluna lombossacra. No corte sagital (imagem à esquerda), observa-se uma ponderação em T2, identificada pelo líquor brilhante (hiperintenso) dentro do canal vertebral. É possível notar que alguns discos intervertebrais estão mais escuros (hipointensos), o que indica perda de hidratação e caracteriza a doença degenerativa discal. No nível L4-L5, nota-se uma volumosa hérnia discal que ultrapassa os limites do espaço discal, comprimindo o saco tecal. O corte axial (imagem à direita) confirma a presença de material discal ocupando o canal e deslocando as raízes nervosas, típico de uma hérnia extrusa.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A espondilite anquilosante é uma doença inflamatória que geralmente apresenta sinais de sacroiliíte, formação de sindesmófitos (pontes ósseas entre as vértebras) e fusão vertebral (coluna em bambu). As imagens em questão mostram patologia discal focal e degenerativa, não uma doença inflamatória sistêmica da coluna.\n\nAlternativa b: Incorreta. O exame apresentado não é uma tomografia computadorizada (TC). Na TC, o osso cortical aparece com um branco muito intenso e denso, e não há uma definição tão clara entre o líquor e as estruturas neurais como a observada nesta ressonância magnética.\n\nAlternativa c: Correta. O método de imagem é a ressonância magnética, padrão-ouro para avaliação de tecidos moles e discos. Os achados de discos com sinal reduzido confirmam a doença degenerativa, e a morfologia da hérnia, que se estende de forma volumosa para o canal vertebral, caracteriza a hérnia discal extrusa.\n\nAlternativa d: Incorreta. O exame é uma RM e não uma TC. Além disso, a espondilodiscite infecciosa apresenta-se tipicamente com destruição das placas terminais das vértebras, edema ósseo difuso e, frequentemente, coleções líquidas (abscessos) nos tecidos adjacentes, achados que não estão presentes nestas imagens.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Doenças da Coluna Vertebral"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/8585ddf8c6684da5a53397af960f7610374ccb1c47c42635a941e6e09b2e5891.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1c3c7b0f-f6dd-4e18-a3fa-1b1e9d2acada_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/5cdc18be45f73e3995b6ed24ed40ca03a2776b00fa6222059d649525350b248c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1c3c7b0f-f6dd-4e18-a3fa-1b1e9d2acada_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:37.611Z"
+  },
+  {
+    "id": "AJUDA_1c3e46b9-1bbf-41ac-8558-3676190953b5",
+    "originalId": "1c3e46b9-1bbf-41ac-8558-3676190953b5",
+    "statement": "Um homem de 27 anos chega ao PS com dor periumbilical migrando para FID, náuseas e anorexia. PCR: 28 mg/L; leucócitos: 12.500/mm³. TC mostra apêndice de 8 mm, sem apendicolito, sem coleção, com pouca gordura inflamada. Segundo diretrizes internacionais mais recentes sobre manejo da apendicite aguda não complicada, qual conduta é aceitável e fundamentada por evidência, desde que haja acompanhamento rigoroso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibioticoterapia exclusiva ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Cirurgia laparotômica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apendicectomia apenas se houver piora clínica após 72h de observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internação e antibioticoterapia endovenosa obrigatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Laparoscopia apenas se diâmetro do apêndice > 10 mm.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso: O paciente apresenta um quadro clássico de apendicite aguda (dor migratória, náuseas, anorexia, leucocitose leve e PCR elevada). A tomografia confirma o diagnóstico, classificando-a como apendicite aguda não complicada, uma vez que não há apendicolito, coleções (abscessos), perfuração ou pneumoperitônio.\n\nExplicação das alternativas:\n\na) CORRETA. Recentemente, grandes estudos (como os ensaios APPAC e CODA) e diretrizes internacionais (como a da World Society of Emergency Surgery - WSES) fundamentaram o tratamento conservador da apendicite não complicada com antibióticos. Em pacientes selecionados (estáveis, sem apendicolito e sem sinais de complicações na TC), o manejo ambulatorial com antibioticoterapia oral ou uma dose inicial parenteral seguida de via oral é considerado seguro e eficaz, desde que o paciente receba orientações claras e haja acompanhamento rigoroso para identificar precocemente falhas terapêuticas ou recidivas (que ocorrem em cerca de 25% a 30% dos casos em 1 a 5 anos).\n\nb) INCORRETA. A cirurgia laparotômica (aberta) não é a conduta de escolha imediata se houver disponibilidade de laparoscopia, que é o padrão-ouro cirúrgico por apresentar menor dor pós-operatória e recuperação mais rápida. Além disso, a questão busca uma conduta alternativa fundamentada em evidências recentes para casos não complicados, que é o tratamento não operatório.\n\nc) INCORRETA. A estratégia de \"observar por 72 horas\" sem qualquer tratamento (antibiótico ou cirurgia) não é o padrão para apendicite confirmada. O tratamento não operatório envolve obrigatoriamente o uso de antibióticos para controlar o processo infeccioso/inflamatório, e não apenas a observação clínica pura.\n\nd) INCORRETA. O erro está na palavra \"obrigatória\". Embora a internação para antibioticoterapia endovenosa tenha sido o protocolo inicial nos primeiros estudos de tratamento conservador, evidências mais recentes (como o estudo APPAC II) demonstraram que a antibioticoterapia oral é não inferior à intravenosa para casos não complicados, possibilitando o manejo domiciliar em pacientes com boa rede de apoio e compreensão do quadro.\n\ne) INCORRETA. O diâmetro do apêndice (8 mm vs 10 mm) não é o critério decisório para a indicação de laparoscopia. A indicação cirúrgica baseia-se no diagnóstico de apendicite e na preferência do paciente/cirurgião ou na presença de complicadores (como apendicolito ou peritonite). Um apêndice de 8 mm com sinais inflamatórios já é diagnóstico e pode ser operado por via laparoscópica independentemente de atingir 10 mm.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:37.611Z"
+  },
+  {
+    "id": "AJUDA_1c46edfd-4f2c-44e0-8254-81d6a116c660",
+    "originalId": "1c46edfd-4f2c-44e0-8254-81d6a116c660",
+    "statement": "Um homem de 38 anos de idade, com sinusite crônica e sem mais patologias, chegou ao departamento de emergência com quadro de febre alta (39,5 °C), sudorese intensa, agitação psicomotora, vômitos recorrentes e dor abdominal há 24 horas. No exame, apresentou taquicardia (132 bpm), pressão arterial 110/60 mmHg, confusão mental e tremores finos nas mãos. Estava com boa perfusão periférica. O ECG mostrou fibrilação atrial de alta resposta ventricular. O exame físico resultou em contexto sem lesões cutâneas, sem sopros ou outras alterações dignas de nota. Não havia outros sinais de infecção evidente, de uso de drogas e medicamentos, de episódio prévio semelhante ou de história de abstinência alcoólica. Familiares relataram que, há algumas semanas, o paciente foi submetido a uma cirurgia com otorrinolaringologista, após a visualização de uma anormalidade na TC de face.\n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta a principal hipótese diagnóstica e a conduta adequada na emergência.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fibrilação atrial de alta resposta sem desencadeante aparente no momento; proceder com cardioversão elétrica sincronizada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome serotoninérgica; suspender medicações e iniciar benzodiazepínicos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Crise adrenérgica por feocromocitoma; iniciar alfa‑bloqueador e hidratação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sepse de foco indeterminado; associar vasopressores",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Crise tireotóxica; iniciar corticoesteroides, betabloqueadores, antitérmicos e antitireoideano",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta uma emergência endócrina clássica: a Crise Tireotóxica (ou Tempestade Tireoideia). O quadro é caracterizado por uma exacerbação grave do estado de hipertireoidismo, manifestando-se com disfunção de múltiplos órgãos. \n\nOs sinais cardinais presentes no caso são:\n1. Febre alta (39,5 °C) e sudorese.\n2. Alterações neurológicas: agitação psicomotora, confusão mental e tremores finos.\n3. Alterações cardiovasculares: taquicardia extrema e fibrilação atrial.\n4. Sintomas gastrointestinais: vômitos e dor abdominal.\n\nUm detalhe fundamental no enunciado é o relato de cirurgia recente após achado em tomografia computadorizada (TC). É comum que exames de imagem utilizem contraste iodado, o que pode desencadear tireotoxicose em pacientes com doença tireoidiana subjacente (fenômeno de Jod-Basedow), além de o próprio estresse cirúrgico atuar como gatilho para a crise.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. Embora a fibrilação atrial de alta resposta esteja presente, ela é secundária ao estado hipermetabólico da tireotoxicose. Realizar a cardioversão elétrica em um paciente com tempestade tireoideia sem antes controlar a função hormonal é frequentemente ineficaz (o paciente reverte para a arritmia rapidamente) e pode ser perigoso. O foco deve ser o tratamento da causa-base.\n\nb) Incorreta. A síndrome serotoninérgica compartilha sintomas como agitação e taquicardia, mas geralmente está associada ao uso de medicações pró-serotoninérgicas (antidepressivos, opioides, etc.) e cursa com hiperreflexia e clonus, o que não foi descrito. Além disso, o histórico cirúrgico/tomográfico direciona para a tireoide.\n\nc) Incorreta. O feocromocitoma causa crises adrenérgicas, mas a característica principal é a hipertensão arterial grave e paroxística. O paciente em questão apresenta pressão arterial de 110/60 mmHg (tendendo à hipotensão em relação ao estresse metabólico) e febre muito elevada, o que é mais típico da crise tireotóxica.\n\nd) Incorreta. A sepse é um diagnóstico diferencial importante em pacientes com febre e taquicardia. No entanto, a presença de tremores finos, agitação psicomotora específica e fibrilação atrial, somada ao gatilho cirúrgico/contraste iodado recente, torna a hipótese endócrina muito mais provável. Além disso, o paciente apresenta boa perfusão periférica, o que é menos comum em quadros sépticos com tal instabilidade.\n\ne) Correta. A principal hipótese é Crise Tireotóxica. O tratamento deve ser agressivo e multifatorial:\n- Betabloqueadores (ex.: Propranolol): para controle dos sintomas adrenérgicos e bloqueio da conversão periférica de T4 em T3.\n- Antitireoidianos (ex.: Propiltiouracil ou Metimazol): para bloquear a síntese de novos hormônios.\n- Corticosteroides (ex.: Hidrocortisona ou Dexametasona): para tratar possível insuficiência adrenal relativa e bloquear a conversão periférica de T4 em T3.\n- Medidas de suporte: antitérmicos (evitando o ácido acetilsalicílico, que pode aumentar o T4 livre) e hidratação.\n\nGabarito: Letra (e).",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:37.611Z"
+  },
+  {
+    "id": "AJUDA_1c4e777a-4396-4d57-8cb3-b997b6e8191a",
+    "originalId": "1c4e777a-4396-4d57-8cb3-b997b6e8191a",
+    "statement": "Assinale a assertiva correta sobre doenças miometriais.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mioma submucoso é causa de sangramento excessivo, sendo ressecção histeroscópica o tratamento preferencial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Miomas subserosos estão associados a sangramento excessivo e irregular e devem ser extirpados por videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Adenomiose é causa de sangramento uterino anormal, sendo facilmente diagnosticada pelo aumento do útero ao toque vaginal bimanual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Miomas intramurais de até 2 cm podem ser assintomáticos e são causa frequente de infertilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): Os leiomiomas submucosos (classificação FIGO 0, 1 e 2) são aqueles que se projetam para o interior da cavidade endometrial. Devido ao contato direto com o endométrio e à interferência na contratilidade miometrial, são os tipos de mioma mais fortemente associados ao sangramento uterino anormal, mesmo quando pequenos. A ressecção cirúrgica por via histeroscópica é considerada o tratamento padrão-ouro, pois permite a retirada da lesão por via vaginal, sem incisões abdominais e com preservação uterina.\n\nAlternativa B (Incorreta): Miomas subserosos localizam-se na porção externa do útero. Como não possuem relação direta com a cavidade endometrial, raramente causam sangramento excessivo ou irregular. Quando causam sintomas, estes costumam ser decorrentes do efeito de massa, como dor pélvica ou compressão de órgãos vizinhos (bexiga e reto).\n\nAlternativa C (Incorreta): A adenomiose caracteriza-se pela presença de glândulas e estroma endometriais no interior do miométrio. Embora cause sangramento e aumento do volume uterino (deixando-o com aspecto globoso), o diagnóstico não é feito \"facilmente\" pelo toque vaginal. O exame físico é inespecífico e o diagnóstico baseia-se na suspeita clínica confirmada por exames de imagem, como a ultrassonografia transvaginal e a ressonância magnética, ou pelo estudo anatomopatológico após a histerectomia.\n\nAlternativa D (Incorreta): Miomas intramurais de pequeno tamanho (como 2 cm) são frequentemente assintomáticos. Para que um mioma seja considerado causa frequente de infertilidade, ele geralmente precisa distorcer a cavidade endometrial (como os submucosos) ou atingir grandes dimensões que prejudiquem o transporte dos gametas ou a implantação. Miomas intramurais pequenos que não abaulam a cavidade têm impacto clínico incerto ou nulo sobre a fertilidade.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Miomatose Uterina",
+      "Adenomiose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:37.611Z"
+  },
+  {
+    "id": "AJUDA_1c6cbc20-67a2-436c-a3e3-2824f588c3ef",
+    "originalId": "1c6cbc20-67a2-436c-a3e3-2824f588c3ef",
+    "statement": "Criança, 7 anos, há 2 semanas em uso de fenitoína oral para tratamento de epilepsia de diagnóstico recente. Inicia com febre, linfadenopatia e rash pruriginoso de acometimento de cerca de 5% do tegumento cutâneo, associado a áreas de formação de bolhas, inclusive em mucosas. A principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stevens-Johnson.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Meningite viral aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pênfigo foliáceo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Meningite bacteriana aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico:\n\nO caso apresenta uma criança de 7 anos que iniciou o uso de fenitoína há duas semanas. A fenitoína é um dos principais medicamentos associados a reações cutâneas graves. O quadro de febre, linfadenopatia, rash cutâneo com formação de bolhas e, fundamentalmente, o acometimento de mucosas, compõe o cenário clássico de uma reação de hipersensibilidade tardia grave.\n\nAlternativa (a) Stevens-Johnson: Está correta. A Síndrome de Stevens-Johnson (SSJ) é uma condição imunomediada caracterizada por necrose da epiderme e descolamento cutâneo, quase sempre desencadeada por medicamentos (anticonvulsivantes como a fenitoína, sulfonamidas ou alopurinol). O período de latência de 1 a 3 semanas após o início da droga é típico. Os critérios diagnósticos incluem o acometimento de mucosas e o descolamento de menos de 10% da superfície corporal total (o enunciado descreve 5%).\n\nAlternativa (b) Meningite viral aguda: Está incorreta. Embora possa cursar com febre e alguns exantemas virais, a meningite viral se manifesta primariamente por cefaleia, fotofobia e sinais de irritação meníngea (rigidez de nuca). Não justifica a formação de bolhas, o descolamento epidérmico ou a mucosite grave logo após a introdução de um anticonvulsivante.\n\nAlternativa (c) Pênfigo foliáceo: Está incorreta. O pênfigo foliáceo é uma doença autoimune bolhosa crônica mediada por anticorpos contra a desmogleína 1. Uma característica clínica definidora do pênfigo foliáceo é que ele poupa obrigatoriamente as mucosas. Além disso, não apresenta o caráter agudo e febril associado à introdução de medicações específicas como visto na SSJ.\n\nAlternativa (d) Meningite bacteriana aguda: Está incorreta. A meningite bacteriana é uma emergência médica que cursa com febre alta, toxemia, rigidez de nuca e alteração do estado mental. O rash cutâneo classicamente associado à etiologia bacteriana (especialmente pelo meningococo) é do tipo petequial ou purpúrico (equimoses), e não bolhoso com descolamento de mucosa.\n\nConclusão: O conjunto de gatilho medicamentoso (fenitoína), tempo de latência (2 semanas), sintomas sistêmicos (febre e linfadenopatia), acometimento de mucosas e lesões bolhosas em pequena extensão corporal (5%) torna a Síndrome de Stevens-Johnson a principal hipótese.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Farmacodermias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:37.611Z"
+  },
+  {
+    "id": "AJUDA_1c85ded1-b7f5-4329-85bb-d08dcc84dcb1",
+    "originalId": "1c85ded1-b7f5-4329-85bb-d08dcc84dcb1",
+    "statement": "Em qual das alternativas a seguir a investigação de amenorreia primária se justifica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menina de 14 anos sem menarca e com desenvolvimento de caracteres sexuais secundários e crescimento normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Menina de 16 anos sem menarca com desenvolvimento de caracteres sexuais secundários e crescimento normal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Menina de 13 anos sem menarca, sem desenvolvimento de caracteres sexuais secundários e com altura no percentil 15.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Menina de 16 anos, menarca aos 12 anos, com interrupção do fluxo menstrual há 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "AMENORREIA PRIMÁRIA: CRITÉRIOS DE INVESTIGAÇÃO\n\nA investigação da amenorreia primária é indicada em duas situações principais baseadas na idade e no desenvolvimento puberal:\n1. Ausência de menarca até os 13 anos de idade em meninas que não apresentam caracteres sexuais secundários (ausência de desenvolvimento mamário e de pelos púbicos).\n2. Ausência de menarca até os 15 anos de idade em meninas que já apresentam desenvolvimento normal de caracteres sexuais secundários.\n\nAlternativa (a) Incorreta: Para meninas com desenvolvimento de caracteres sexuais secundários e crescimento normal, a conduta é aguardar até os 15 anos. Como a paciente tem 14 anos, ela ainda está dentro do prazo fisiológico para a ocorrência da menarca.\n\nAlternativa (b) Correta: Esta paciente apresenta caracteres sexuais secundários, porém já completou 16 anos sem ter a primeira menstruação. Como ultrapassou o limite de 15 anos estabelecido pelos protocolos de ginecologia endócrina, a investigação diagnóstica se justifica imediatamente.\n\nAlternativa (c) Incorreta: A investigação pode ser considerada aos 13 anos se não houver nenhum caráter sexual secundário. No entanto, a alternativa (b) representa um critério de investigação muito mais tardio e absoluto (16 anos). Além disso, o percentil 15 de altura é considerado dentro da faixa de normalidade para a idade, não sugerindo, de imediato, condições como a disgenesia gonadal (Síndrome de Turner), que geralmente cursa com baixa estatura acentuada (abaixo do percentil 3 ou 5).\n\nAlternativa (d) Incorreta: Este caso não se trata de amenorreia primária, mas sim de amenorreia secundária. A amenorreia secundária é definida como a ausência de menstruação por 3 ou 6 meses em mulheres que já apresentavam ciclos menstruais anteriormente. Como a paciente teve a menarca aos 12 anos, ela não se enquadra no tema da questão.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:37.611Z"
+  },
+  {
+    "id": "AJUDA_1c8c48be-4d91-4a32-b871-6a2edb8f80bf",
+    "originalId": "1c8c48be-4d91-4a32-b871-6a2edb8f80bf",
+    "statement": "Secundigesta, 35 anos, um parto vaginal há 4 anos, procura a emergência obstétrica devido à cefaleia. Está com 34 semanas de gestação, indicada por ultrassonografia de 12 semanas. Refere pré-natal sem intercorrência até então e diz não possuir doenças crônicas. Está em uso de cálcio e sulfato ferroso. Nega contrações e perdas vaginais e relata boa movimentação fetal. Ao exame, apresenta bom estado geral, PA – 155x105 mmHg, altura uterina de 32 cm, ausência de contrações, batimentos cardiofetais de 145 bpm e cardiotocografia categoria I. Solicitados exames laboratoriais, que retornaram os seguintes resultados: P/C – 0,1; creatinina – 0,7 mg/dL, Hb – 11,9 g/dL, plaquetas – 160.000/mm³; bilirrubina total – 0,6; TGO – 26 U/L. Qual é a hipótese diagnóstica e o tratamento adequado, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipertensão arterial crônica – anlodipino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pré-eclâmpsia – sulfato de magnésio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipertensão gestacional – metildopa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hipertensão transitória – nifedipino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iminência de eclâmpsia – sulfato de magnésio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO caso apresenta uma gestante de 34 semanas com quadro de hipertensão arterial (155x105 mmHg). Para diferenciar as síndromes hipertensivas na gestação, devemos observar o momento do surgimento da hipertensão e a presença de proteinúria ou lesão de órgão-alvo. Como a paciente era previamente normotensa e a hipertensão surgiu após a 20ª semana, descartamos hipertensão crônica. O exame de relação proteína/creatinina (P/C) de 0,1 afasta o diagnóstico de proteinúria (que seria maior ou igual a 0,3). Além disso, os exames laboratoriais (plaquetas, creatinina e enzimas hepáticas) estão normais, o que exclui disfunção orgânica.\n\nDiagnóstico e Conduta:\n\nA presença de hipertensão após 20 semanas, sem proteinúria e sem sinais de gravidade, define a Hipertensão Gestacional. O tratamento medicamentoso para controle da pressão arterial nessas condições tem como primeira escolha a metildopa.\n\nAnálise das alternativas:\n\na) Incorreta. A hipertensão arterial crônica é diagnosticada quando a pressão elevada já existia antes da gravidez ou é detectada antes de 20 semanas de gestação. A paciente tinha pré-natal normal até então. O anlodipino não é a droga de primeira escolha na gestação.\n\nb) Incorreta. Para ser pré-eclâmpsia, deveria haver proteinúria (P/C maior ou igual a 0,3) ou critérios de gravidade com disfunção de órgãos, o que os exames laboratoriais negam. O sulfato de magnésio é indicado apenas em casos de pré-eclâmpsia grave ou eclâmpsia.\n\nc) Correta. O quadro clínico e laboratorial preenche critérios para hipertensão gestacional (pressão maior ou igual a 140/90 mmHg após 20 semanas e ausência de proteinúria). A metildopa é o anti-hipertensivo padrão de primeira linha para o tratamento de manutenção.\n\nd) Incorreta. Hipertensão transitória é um termo frequentemente usado para hipertensão gestacional que regride no pós-parto (diagnóstico retrospectivo). O nifedipino pode ser usado, mas a metildopa permanece como referência inicial na prática clínica e em provas.\n\ne) Incorreta. A iminência de eclâmpsia exige sinais de gravidade, como pressão arterial maior ou igual a 160/110 mmHg, cefaleia persistente e grave, alterações visuais ou dor abdominal em hipocôndrio direito, geralmente associados a alterações laboratoriais. O quadro da paciente é leve/moderado e os exames estão normais, não havendo indicação de sulfato de magnésio.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:37.611Z"
+  }
+]

@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_ae73393c-6ee7-44cb-bd3a-2b9522ec45d1",
+    "originalId": "ae73393c-6ee7-44cb-bd3a-2b9522ec45d1",
+    "statement": "Em relação à febre Oropouche, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A transmissão ocorre, principalmente, por mosquitos do gênero Aedes, semelhante aos vetores da dengue",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Até 2025, não existem relatos publicados de transmissão vertical do vírus Oropouche em humanos, sendo essa hipótese sustentada apenas por estudos experimentais em animais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Até o momento, não há registros de circulação do vírus Oropouche fora da região amazônica, sendo a doença restrita ao norte do Brasil",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O quadro clínico é semelhante ao de outras arboviroses, com febre, cefaleia, mialgia e exantema; geralmente é autolimitado, mas pode evoluir com complicações neurológicas",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise detalhada das alternativas:\n\nAlternativa a: Incorreta. Ao contrário da dengue, zika e chikungunya, cujo principal vetor é o mosquito Aedes aegypti, a febre Oropouche tem como seu principal transmissor no ciclo urbano o Culicoides paraensis, um pequeno inseto popularmente conhecido como maruim ou mosquito-pólvora. Mosquitos do gênero Culex também podem participar da transmissão, mas o Aedes não é o vetor primário.\n\nAlternativa b: Incorreta. Esta afirmação está desatualizada frente aos eventos epidemiológicos recentes. No ano de 2024, o Ministério da Saúde do Brasil confirmou e publicou os primeiros registros de transmissão vertical (da gestante para o feto) do vírus Oropouche em humanos. Esses casos foram associados a desfechos graves, como óbito fetal e malformações congênitas (microcefalia), o que mudou o entendimento sobre a patogênese da doença.\n\nAlternativa c: Incorreta. Historicamente, a circulação do vírus era concentrada na região amazônica. No entanto, a partir de 2024, observou-se uma dispersão significativa do vírus para outras regiões do Brasil, com registros de transmissão autóctone e surtos em estados do Nordeste (como a Bahia) e do Sudeste (como Minas Gerais e Rio de Janeiro). Portanto, a doença não é mais restrita ao Norte do país.\n\nAlternativa d: Correta. O quadro clínico da febre Oropouche é classicamente inespecífico, apresentando-se com febre de início súbito, cefaleia intensa (muitas vezes retro-orbitária), mialgia, artralgia e, em alguns casos, náuseas, vômitos e exantema. Uma característica importante para provas de residência é que o vírus Oropouche é neurotrópico. Embora a doença seja geralmente autolimitada, ela pode evoluir para complicações do sistema nervoso central, como meningite asséptica ou meningoencefalite, especialmente em casos que apresentam uma \"recidiva\" dos sintomas após alguns dias de melhora aparente.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:05.828Z"
+  },
+  {
+    "id": "AJUDA_ae7c4188-8651-4eee-a5e8-db71e5a6e7eb",
+    "originalId": "ae7c4188-8651-4eee-a5e8-db71e5a6e7eb",
+    "statement": "Gestante de 34 semanas, com pré-eclâmpsia, realiza pré-natal compartilhado entre a Unidade Básica de Saúde (UBS) e o ambulatório de especialidades. Após apresentar picos hipertensivos, cefaleia e alterações visuais no domicílio, é encaminhada pelo serviço móvel de urgência à maternidade de referência, onde é submetida à cesariana. Recebe alta hospitalar em boas condições clínicas e retorna à UBS para acompanhamento puerperal. Considerando a organização das Redes de Atenção à Saúde (RAS), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Atenção Primária à Saúde exerce a coordenação do cuidado, devendo acompanhar a puérpera após a alta, integrar as informações dos demais serviços e articular o seguimento com os outros pontos da rede, quando necessário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O acompanhamento puerperal passa a ser atribuição exclusiva da maternidade que realizou o parto, cabendo à UBS retomar o cuidado apenas após a alta definitiva do serviço especializado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A continuidade do cuidado depende da contrarreferência emitida pelo hospital; na sua ausência, a UBS deve aguardar novo encaminhamento antes de retomar o acompanhamento da paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Como a paciente necessitou de atendimento hospitalar de alta complexidade, o seguimento clínico deve permanecer prioritariamente sob responsabilidade do serviço especializado até o término do puerpério.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O acompanhamento compartilhado entre APS e Atenção Especializada deve ocorrer apenas durante a gestação, sendo o puerpério de responsabilidade exclusiva da equipe hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Tema central: coordenação do cuidado pela Atenção Primária à Saúde (APS) nas Redes de Atenção à Saúde (RAS).\n\nConceito-chave: nas RAS, a APS tem três papéis essenciais: ser a base de resolução da maioria dos problemas, ser a porta de entrada preferencial e coordenar o cuidado, ordenando os fluxos entre os pontos da rede. A coordenação é mantida mesmo quando a pessoa é atendida em outros níveis de complexidade. A longitudinalidade e a responsabilização da equipe pelo território não se interrompem com a internação ou com o atendimento especializado.\n\nNo caso, a gestante com pré-eclâmpsia grave (picos hipertensivos, cefaleia e alterações visuais, sugerindo iminência de eclâmpsia) passou por vários pontos da rede: UBS, ambulatório de especialidades (pré-natal de alto risco), SAMU e maternidade. Ao voltar para a UBS no puerpério, a equipe deve:\n- realizar a consulta puerperal precoce, idealmente na primeira semana;\n- monitorar a pressão arterial, pois a pré-eclâmpsia pode persistir ou se agravar no pós-parto;\n- avaliar a ferida operatória, o aleitamento, o planejamento reprodutivo e o estado emocional;\n- integrar as informações de todos os serviços;\n- articular o seguimento com a atenção especializada quando necessário, por exemplo para reavaliação cardiovascular e renal a longo prazo, já que a pré-eclâmpsia é fator de risco cardiovascular futuro.\n\nAnálise das alternativas:\n\na) Correta. Descreve exatamente a função de coordenação da APS: acompanhar após a alta, integrar informações e articular o seguimento com os demais pontos da rede.\n\nb) Incorreta. O puerpério não é atribuição exclusiva da maternidade. A maternidade cuida do parto e do puerpério imediato, e a APS não \"retoma\" o cuidado apenas após alta do serviço especializado, pois o vínculo é contínuo.\n\nc) Incorreta. A contrarreferência é desejável e deve ser buscada, mas sua ausência não justifica a UBS aguardar um novo encaminhamento. A equipe tem o dever de acolher a paciente e buscar ativamente as informações, por exemplo pelo resumo de alta ou contato com o serviço. Condicionar o cuidado à contrarreferência fragiliza a continuidade e o acesso.\n\nd) Incorreta. O fato de a paciente ter precisado de atenção hospitalar não transfere a responsabilidade pelo seguimento ao especialista. Após a alta e em boas condições clínicas, o cuidado é coordenado pela APS, com apoio especializado conforme a necessidade.\n\ne) Incorreta. O cuidado compartilhado não se limita à gestação. O puerpério é parte do ciclo gravídico-puerperal e é foco da APS, com visita domiciliar e consulta puerperal.\n\nResumo: a APS coordena o cuidado ao longo de todo o ciclo, inclusive após atendimentos de maior complexidade. Gabarito: letra A.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:05.828Z"
+  },
+  {
+    "id": "AJUDA_ae8213ef-a4f5-49c2-8663-d1cead31765b",
+    "originalId": "ae8213ef-a4f5-49c2-8663-d1cead31765b",
+    "statement": "A pneumonia necrosante, descrita em crianças desde 1994, é uma forma grave de pneumonia adquirida na comunidade, presente em até 7% dos casos pediátricos. Seu aumento não é completamente explicado pelos avanços diagnósticos, e sua fisiopatologia ainda é pouco compreendida, havendo suspeita de influência genética. Com base nesse contexto, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A consolidação com necrose caracteriza o estágio final da pneumonia necrosante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A necrose evolui rapidamente para cavitação (pneumatocele), geralmente periférica e multilobar. As cavidades podem coalescer, formando lesões maiores, fístulas broncopleurais e pneumotórax.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Os principais agentes etiológicos são Streptococcus pneumoniae, Staphylococcus aureus e o vírus sincicial respiratório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A pneumonia necrosante localiza-se em um espectro clínico entre o abscesso pulmonar e a gangrena pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Estudos recentes não identificaram cepas de Staphylococcus aureus produtoras de leucocidina de Panton-Valentine (PVL), toxina associada a formas graves de pneumonia necrosante em crianças e adultos previamente saudáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Incorreta. A consolidação com necrose e liquefação do parênquima não é o estágio final, mas sim a fase ativa e fisiopatológica central da pneumonia necrosante. O estágio final, após a resolução da infecção, geralmente envolve a restituição do parênquima ou a permanência de pneumatoceles residuais que tendem a desaparecer ao longo de meses.\n\nAlternativa B: Correta. Esta alternativa descreve com precisão a progressão radiológica e clínica da doença. A pneumonia necrosante inicia-se com uma consolidação inflamatória que evolui para a destruição da arquitetura alveolar. Surgem múltiplas microcavidades que podem coalescer (juntar-se), formando cavidades maiores e periféricas. Devido à proximidade com a pleura e à destruição tecidual, é comum a ocorrência de complicações como fístulas broncopleurais, pneumotórax e empiema.\n\nAlternativa C: Incorreta. Os principais agentes bacterianos são de fato o Streptococcus pneumoniae (destaque para os sorotipos 3 e 19A) e o Staphylococcus aureus (especialmente cepas MRSA). No entanto, o Vírus Sincicial Respiratório (VSR) não é um agente etiológico de pneumonia necrosante; ele causa tipicamente bronquiolite e pneumonias virais sem a característica de necrose tecidual destrutiva.\n\nAlternativa D: Incorreta. Embora façam parte de um espectro de doenças pulmonares inflamatórias/infecciosas, a pneumonia necrosante possui características distintas. O abscesso pulmonar geralmente se manifesta como uma cavidade única e bem delimitada com nível hidroaéreo. A gangrena pulmonar é uma condição ainda mais extrema, onde há necrose maciça de um lobo ou de todo o pulmão devido ao comprometimento da circulação sanguínea local. A pneumonia necrosante caracteriza-se por múltiplas cavidades de permeio a áreas de consolidação sem fluxo sanguíneo (detectado ao Doppler).\n\nAlternativa E: Incorreta. O erro da alternativa é afirmar que não foram identificadas tais cepas. Na realidade, a Leucocidina de Panton-Valentine (PVL) é uma exotoxina produzida por certas cepas de Staphylococcus aureus que está intimamente ligada à patogênese da pneumonia necrosante grave. A PVL causa a destruição de leucócitos e necrose tecidual profunda, sendo um marcador de gravidade em pacientes previamente hígidos.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Pneumonia na Infância",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:05.828Z"
+  },
+  {
+    "id": "AJUDA_ae8e2502-4f7d-4f0b-aa4d-3670ea513ec8",
+    "originalId": "ae8e2502-4f7d-4f0b-aa4d-3670ea513ec8",
+    "statement": "Menino de 7 anos, com diagnóstico de asma persistente, faz uso regular de corticosteroide inalatório (CI) em baixa dose. Durante a consulta de seguimento, a mãe relata que ele tem apresentado sintomas diurnos mais de duas vezes por semana, sendo necessário fazer uso frequente de broncodilatador de curta ação para alívio (SABA), além de ocasionar limitação na realização de atividades físicas. No último ano, ele teve duas exacerbações que exigiram o uso de corticosteroides sistêmicos. Considerando os critérios de controle da asma e a abordagem terapêutica passo a passo para crianças de 6 a 11 anos, a alternativa terapêutica preferencial para o caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar baixa dose de CI associada ao formoterol em regime diário e sob demanda",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "manter a dose de CI e adicionar montelucaste de sódio em regime diário",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "dobrar a dose de CI, mantendo o uso de SABA para exacerbações",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "manter a dose de CI e adicionar tiotropio por via inalatória",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do controle da asma:\nO paciente apresenta um quadro de asma não controlada. De acordo com os critérios do GINA (Global Initiative for Asthma), a avaliação do controle considera os sintomas nas últimas quatro semanas e os riscos futuros. Este menino possui sintomas diurnos frequentes (mais de duas vezes por semana), necessidade de medicação de alívio, limitação de atividades físicas e já apresentou duas exacerbações graves no último ano (necessidade de corticoide sistêmico). A presença de três ou quatro desses critérios clínicos classifica a asma como não controlada, indicando a necessidade de subir um passo (step-up) no tratamento.\n\nConduta terapêutica para crianças de 6 a 11 anos:\nA criança já utiliza o tratamento do Passo 2 (Corticosteroide Inalatório - CI em baixa dose) de forma regular. O próximo degrau terapêutico é o Passo 3.\n\nAlternativa a: Correta. Segundo as diretrizes mais recentes, a estratégia preferencial para crianças de 6 a 11 anos no Passo 3 é a terapia MART (Maintenance and Reliever Therapy). Ela consiste no uso de uma combinação de CI e Formoterol (um broncodilatador de longa ação com início de ação rápido) em dose baixa, utilizada tanto como manutenção diária quanto para o alívio dos sintomas sob demanda. Essa abordagem é superior na prevenção de exacerbações em comparação ao uso de broncodilatadores de curta ação (SABA) isolados para alívio.\n\nAlternativa b: Incorreta. A adição de montelucaste de sódio (antagonista de receptor de leucotrienos) é considerada uma opção alternativa no Passo 3, mas não é a preferencial. O CI associado a um LABA (como o formoterol) demonstra maior eficácia no controle da inflamação e dos sintomas.\n\nAlternativa c: Incorreta. Embora aumentar a dose do CI para dose média seja uma opção dentro do Passo 3, a evidência clínica atual prioriza a associação do CI com o Formoterol devido a melhor resposta na redução do risco de crises graves. Manter o SABA (como salbutamol) como única medicação de resgate em um paciente com histórico de exacerbações frequentes é menos protetor do que a estratégia proposta na alternativa A.\n\nAlternativa d: Incorreta. O tiotrópio é um anticolinérgico de longa ação (LAMA) indicado como terapia complementar (add-on) para pacientes que não alcançam o controle no Passo 4 ou 5. Ele não é a medicação de escolha inicial para um paciente que está falhando no tratamento básico com baixa dose de corticoide.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:05.828Z"
+  },
+  {
+    "id": "AJUDA_ae95c440-349d-4a8e-aab4-acb32cd7574c",
+    "originalId": "ae95c440-349d-4a8e-aab4-acb32cd7574c",
+    "statement": "35. Segundo as novas diretrizes brasileiras de hipertensão arterial da sociedade brasileira de cardiologia, para o diagnóstico de hipertensão arterial em adultos, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O diagnóstico pode ser confirmado em apenas uma aferição de pressão arterial elevada em consultório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso da MAPA ou MRPA auxilia na confirmação diagnóstica de outros fenótipos de hipertensão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A presença de lesão de órgão-alvo é obrigatória para diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico só deve ser feito após exames laboratoriais complementares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A pressão de consultório é sempre suficiente para diagnóstico definitivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a resposta correta sobre o diagnóstico de hipertensão arterial (HA) segundo as Diretrizes Brasileiras de Hipertensão Arterial da Sociedade Brasileira de Cardiologia (SBC), vamos analisar cada alternativa:\n\nAlternativa (a) Incorreta: Em regra, o diagnóstico de hipertensão não deve ser baseado em uma única aferição. As diretrizes recomendam pelo menos duas aferições em momentos distintos para confirmação. A exceção ocorre apenas em casos de hipertensão estágio 3 (valores maiores ou iguais a 180/110 mmHg) ou quando o paciente já apresenta lesão de órgão-alvo ou doença cardiovascular estabelecida na primeira avaliação.\n\nAlternativa (b) Correta: Esta é a alternativa que melhor reflete as diretrizes atuais. A Monitorização Ambulatorial da Pressão Arterial (MAPA) e a Monitorização Residencial da Pressão Arterial (MRPA) são fundamentais para o diagnóstico preciso, pois permitem identificar fenótipos que a medida de consultório não alcança. Esses fenótipos incluem a Hipertensão de Avental Branco (pressão alta apenas no médico) e a Hipertensão Mascarada (pressão normal no médico, mas alta na rotina do paciente).\n\nAlternativa (c) Incorreta: A presença de lesão de órgão-alvo (como hipertrofia ventricular esquerda ou alteração na função renal) ajuda a confirmar o diagnóstico em casos limítrofes e a estratificar o risco, mas não é obrigatória. O diagnóstico é definido primariamente pelos níveis de pressão arterial.\n\nAlternativa (d) Incorreta: O diagnóstico de hipertensão arterial é essencialmente clínico e baseado em medidas hemodinâmicas. Os exames laboratoriais complementares são indicados após ou durante o diagnóstico para avaliar o risco cardiovascular global, investigar lesões de órgãos e pesquisar possíveis causas secundárias, mas não são eles que definem se o paciente é hipertenso ou não.\n\nAlternativa (e) Incorreta: A pressão de consultório está sujeita a interferências como o estresse do ambiente médico (efeito do avental branco). Por isso, as diretrizes modernas preconizam que, sempre que possível, o diagnóstico seja corroborado por medidas fora do consultório (MAPA ou MRPA), mostrando que a medida isolada de consultório nem sempre é suficiente para o diagnóstico definitivo.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:05.828Z"
+  },
+  {
+    "id": "AJUDA_aea09833-351f-4c34-9d60-2eee9bd8b286",
+    "originalId": "aea09833-351f-4c34-9d60-2eee9bd8b286",
+    "statement": "O capítulo III da Lei nº 8080, de 19 de setembro de 1990, que trata da Organização, da Direção e da Gestão do Sistema Único de Saúde-SUS, define que...",
+    "options": [
+      {
+        "id": "A",
+        "text": "as comissões intergestores bipartite e tripartite são reconhecidas como foros de negociação e pactuação entre gestores, quanto aos aspectos operacionais do Sistema Único de Saúde (SUS).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "as ações e serviços de saúde, executados pelo Sistema Único de Saúde (SUS), sejam unicamente e diretamente organizadas de forma regionalizada e hierarquizada em níveis de complexidade crescente dentro do sistema sem participação complementar por ser financiamento público.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "os municípios não poderão constituir consórcios para desenvolver em conjunto as ações e os serviços de saúde que lhes correspondam, devido a responsabilidade expressa em lei de que as ações de saúde devem ser executadas no âmbito de seu território devido ao financiamento público.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "as comissões permanentes de integração entre os serviços de saúde e as instituições de ensino profissional e superior, antes previstas no artigo 14 da Lei nº 8080, foram revogadas por decreto em 2024 e criados os financiamentos diretos entre as partes envolvidas por serem mais ágeis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "as ações de maior porte a serem realizadas no âmbito do SUS pelos municípios necessitam de autorização do Palácio do Planalto em Brasília-DF, devido ao alto custo a ser executado, sendo que, os recursos serão distribuídos por área de prioridade definidas pelo Ministério da Saúde e publicadas no diário oficial da união.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa (a) está correta e fundamenta-se no Artigo 14-A da Lei nº 8.080/1990 (incluído pela Lei nº 12.466/2011). Esse artigo reconhece formalmente as Comissões Intergestores Bipartite (CIB), no âmbito estadual, e a Comissão Intergestores Tripartite (CIT), no âmbito nacional, como instâncias de pactuação consensual entre os gestores. Elas servem para definir aspectos operacionais, diretrizes de gestão e a organização das redes de atenção à saúde.\n\nA alternativa (b) está incorreta porque, embora o SUS seja regionalizado e hierarquizado, a Lei nº 8.080/1990 prevê explicitamente, em seu Título II, a participação complementar da iniciativa privada. O setor privado pode atuar no SUS quando as unidades públicas não forem suficientes para garantir o atendimento, não havendo proibição por conta do financiamento público.\n\nA alternativa (c) está incorreta, pois contradiz diretamente o Artigo 10 da referida lei. O texto legal afirma que os municípios poderão constituir consórcios para desenvolver em conjunto as ações e os serviços de saúde que lhes correspondam. Os consórcios são, inclusive, uma ferramenta importante para que municípios menores consigam oferecer serviços de maior complexidade de forma compartilhada.\n\nA alternativa (d) está incorreta porque o Artigo 14 da Lei nº 8.080/1990, que trata das comissões permanentes de integração entre serviços de saúde e instituições de ensino, permanece em vigor. Não houve revogação por decreto em 2024 alterando essa estrutura para um modelo de financiamento direto como o descrito na questão. Essas comissões visam adequar a formação profissional às necessidades do SUS.\n\nA alternativa (e) está incorreta, pois fere o princípio da descentralização e da autonomia federativa previstos no SUS. O gerenciamento das ações de saúde é de responsabilidade do gestor local (municipal ou estadual). Não existe a exigência de autorização do Palácio do Planalto para a execução de ações de saúde, independentemente do porte ou custo; as decisões seguem o planejamento aprovado nos respectivos conselhos de saúde e as pactuações nas comissões intergestores.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:05.828Z"
+  },
+  {
+    "id": "AJUDA_aea5ef61-c415-43ca-ab66-f0efa7eb5c3f",
+    "originalId": "aea5ef61-c415-43ca-ab66-f0efa7eb5c3f",
+    "statement": "Mulher, 60 anos com história de câncer de mama, submetida a mastectomia há 3 semanas e em inicio tratamento quimioterápico complementar. Na consulta ambulatorial observou se edema súbito em perna direita, associada a dor local. Qual a conduta mais adequada, considerando o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever heparina de baixo peso molecular em dose terapêutica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Implante de filtro de veia cava inferior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar uso de meia elástica e dose profilática de anticoagulante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internação para uso de heparina não fracionada subcutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresentado pela paciente é altamente sugestivo de trombose venosa profunda (TVP). Ela apresenta múltiplos fatores de risco que compõem a tríade de Virchow: estase venosa e lesão vascular devido à cirurgia de grande porte recente (mastectomia há 3 semanas) e um estado de hipercoagulabilidade causado pela neoplasia ativa e pelo tratamento quimioterápico. O edema súbito unilateral associado à dor local é o sinal clínico clássico que, neste contexto, exige conduta imediata.\n\nAlternativa (a) CORRETA: Diante do diagnóstico mais provável de TVP em uma paciente estável, a conduta correta é iniciar a anticoagulação em dose terapêutica (plena). A heparina de baixo peso molecular (HBPM), como a enoxaparina, é considerada o padrão-ouro para o tratamento inicial de pacientes com câncer (trombose associada ao câncer). Ela apresenta maior previsibilidade, menor risco de complicações hemorrágicas em comparação à heparina comum e não necessita de monitorização laboratorial frequente, permitindo, em muitos casos, o tratamento ambulatorial.\n\nAlternativa (b) INCORRETA: O implante de filtro de veia cava inferior não é uma conduta de primeira linha. Esse procedimento é reservado exclusivamente para pacientes que possuem contraindicação absoluta à anticoagulação (como sangramentos ativos graves) ou para aqueles que apresentam falha terapêutica documentada, ou seja, pacientes que sofrem novos episódios de embolia pulmonar mesmo estando adequadamente anticoagulados.\n\nAlternativa (c) INCORRETA: Existe uma diferença fundamental entre profilaxia e tratamento. A dose profilática é utilizada para prevenir a formação de um trombo em pacientes de risco. Uma vez que a paciente já apresenta sintomas e sinais clínicos de que o trombo já se formou, a dose deve ser obrigatoriamente terapêutica. O uso de meias elásticas ajuda no controle do edema e na prevenção da síndrome pós-trombótica, mas não trata o coágulo existente nem previne sua progressão.\n\nAlternativa (d) INCORRETA: A internação para uso de heparina não fracionada (HNF) não é a conduta preferencial neste caso. A HNF subcutânea exige monitorização rigorosa do tempo de tromboplastina parcial ativada (TTPA) e possui uma farmacocinética menos previsível que a HBPM. Atualmente, prioriza-se o uso da HBPM pela facilidade posológica e segurança, sendo a HNF geralmente reservada para pacientes com insuficiência renal grave (clearance de creatinina menor que 30 mL/min) ou com alto risco de sangramento que necessitem de uma reversão rápida do efeito anticoagulante.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Hemostasia",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:05.828Z"
+  },
+  {
+    "id": "AJUDA_aeb35c1e-d8a3-4315-84fe-c42101bc6bed",
+    "originalId": "aeb35c1e-d8a3-4315-84fe-c42101bc6bed",
+    "statement": "Em relação ao volume das secreções gastrointestinais, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A secreção gástrica tem volume aproximado entre 2000 e 3000 mL em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A secreção do intestino delgado tem volume aproximado entre 2000 e 3000 mL em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A secreção colônica tem volume aproximado entre 1500 e 2500 mL em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A secreção pancreática tem volume aproximado entre 1000 e 1500 mL em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A secreção biliar tem volume aproximado entre 800 e 1500 mL em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para gabaritar questões sobre fluidos no trato gastrointestinal (TGI), o aluno deve ter em mente que cerca de 7 a 9 litros de líquidos circulam pelo sistema diariamente. Esse volume é a soma da ingestão oral com as secreções das glândulas anexas e do próprio tubo digestivo.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): O estômago produz, em média, entre 1500 e 2000 mL de secreção gástrica por dia. O valor proposto (2000 a 3000 mL) é considerado alto para os padrões fisiológicos normais citados na literatura de referência, como o Sabiston (Tratado de Cirurgia) e o Guyton (Fisiologia Médica).\n\nAlternativa B (Correta): O intestino delgado é o maior secretor do trato gastrointestinal em termos de volume bruto, produzindo entre 2000 e 3000 mL de suco entérico em 24 horas. Embora ele secrete esse volume expressivo para auxiliar na digestão e no transporte de nutrientes, ele também é o principal local de reabsorção hídrica, recuperando a maior parte do fluido antes que ele atinja o cólon.\n\nAlternativa C (Incorreta): O cólon tem função essencialmente absortiva e não secretora. Ele recebe cerca de 1500 mL de conteúdo líquido do íleo e reabsorve quase tudo, deixando apenas 100 a 200 mL para a excreção fecal. Afirmar que ele secreta entre 1500 e 2500 mL é um erro conceitual sobre a fisiologia do órgão.\n\nAlternativa D (Incorreta): A secreção pancreática varia entre 500 e 1500 mL por dia, com valor médio comumente aceito de 1000 mL. Embora o intervalo de 1000 a 1500 mL citado na questão pareça próximo, a alternativa B é a que descreve com maior precisão o intervalo clássico de um dos componentes do balanço hídrico.\n\nAlternativa E (Incorreta): A bile é produzida pelo fígado em um volume que varia de 500 a 1000 mL diários. O limite superior de 1500 mL sugerido pela alternativa ultrapassa os valores fisiológicos habituais para um indivíduo adulto.\n\nResumo dos volumes fisiológicos (por 24 horas):\n1. Saliva: 1000 a 1500 mL\n2. Estômago: 1500 a 2000 mL\n3. Bile: 500 a 1000 mL\n4. Pâncreas: 500 a 1500 mL\n5. Intestino Delgado: 2000 a 3000 mL\n6. Ingestão Oral: ~2000 mL\nTotal circulante: ~9000 mL",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:05.828Z"
+  },
+  {
+    "id": "AJUDA_aeb59f69-3557-4462-a953-9f7fa87ff1da",
+    "originalId": "aeb59f69-3557-4462-a953-9f7fa87ff1da",
+    "statement": "Você atende um paciente que sofreu corte contuso em região da perna em uma barra de ferro acidentalmente. Após limpeza local, anestesia e sutura você o libera para casa com algumas orientações. Isso o faz lembrar no plantão sobre o processo de cicatrização de feridas, então discute com o outro colega plantonista sobre as etapas desse processo. Nesse sentido é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a fase proliferativa, que se inicia por volta do terceiro dia após a lesão, é caracterizada pela intensa atividade fagocitária dos macrófagos, que causam o desbridamento da ferida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a fase inflamatória é a fase inicial, dura cerca de 1 a 6 dias e é responsável pelo processo de hemostasia e quimiotaxia dos leucócitos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a fase de remodelação tem início por volta da segunda semana e apresenta intensa angiogênese e início da produção de colágeno tipo I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a fase de maturação caracteriza o final do processo da cicatrização, que pode durar cerca de um ano e é responsável pela substituição de colágeno tipo I em tipo III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "na fase de proliferação, as principais células presentes na ferida são os miofibroblastos que são responsáveis pelo processo de contração da ferida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para dominar o tema de cicatrização em provas de residência, o segredo é compreender a cronologia e os eventos dominantes de cada uma das três fases principais: Inflamatória, Proliferativa e de Maturação.\n\nAnálise detalhada das alternativas:\n\nAlternativa a) Incorreta. A descrição de descrita como intensa atividade fagocitária e desbridamento da ferida por macrófagos refere-se à fase inflamatória (especialmente em sua transição do componente agudo para o tardio). A fase proliferativa, embora se inicie por volta do terceiro ou quarto dia, tem como marcos a fibroplasia, a angiogênese e a reepitelização, visando a reconstrução do tecido e não a sua limpeza.\n\nAlternativa b) Correta. Esta alternativa define com precisão a fase inflamatória. Ela é o gatilho inicial pós-trauma, durando em média de 3 a 6 dias. Seus eventos primordiais são a hemostasia (formação do coágulo/tampão plaquetário) e a inflamação propriamente dita, onde ocorre o recrutamento (quimiotaxia) de leucócitos (neutrófilos e macrófagos) para controle de patógenos e limpeza da ferida.\n\nAlternativa c) Incorreta. A angiogênese e o início da síntese de colágeno são eventos clássicos da fase proliferativa, que ocorre muito antes da segunda semana. A fase de remodelação, mencionada na alternativa, costuma ter seu início mais tardio (geralmente após a terceira semana ou 21 dias) e foca na reorganização das fibras já existentes para ganho de força tênsil, ocorrendo simultaneamente a redução da vascularização (a ferida deixa de ser tão avermelhada).\n\nAlternativa d) Incorreta. O erro aqui é a inversão dos tipos de colágeno. No início da cicatrização (fase proliferativa), o corpo produz predominantemente colágeno tipo III (mais fino e desorganizado). Durante a fase de maturação, a característica fundamental é a substituição do colágeno tipo III pelo colágeno tipo I, que é mais espesso e resistente, conferindo maior força cicatricial.\n\nAlternativa e) Incorreta. Embora os miofibroblastos sejam fundamentais na contração da ferida, eles não são as únicas células da fase proliferativa. As células protagonistas e mais frequentemente cobradas em provas para esta fase são os fibroblastos (produtores de colágeno) e as células endoteliais (responsáveis pela angiogênese). Além disso, a alternativa b é considerada a resposta mais abrangente e clássica conforme os principais tratados de cirurgia (como Sabiston e Schwartz).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:05.828Z"
+  },
+  {
+    "id": "AJUDA_aeb8f612-5f42-41a5-90b1-4f073f371267",
+    "originalId": "aeb8f612-5f42-41a5-90b1-4f073f371267",
+    "statement": "Mulher de 23 anos, com diagnóstico de anemia falciforme, procura Unidade de Pronto Atendimento devido à dor em membros inferiores (escala visual analógica = 9), iniciada há 12 horas. Relata crises similares anteriores e nega outros sintomas. Ao ser avaliada, está afebril, hidratada, sem sinais de infecção. Exame físico: PA 112 x 70 mmHg; FC 92 bpm; FR 18 irpm e SatO2 97% em ar ambiente.\nQual é a conduta medicamentosa imediata para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Codeína e paracetamol via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dipirona intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tenoxicam intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Morfina intravenosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico: crise vaso-oclusiva (crise álgica) em paciente com anemia falciforme. É a complicação aguda mais comum da doença e resulta da falcização das hemácias, com obstrução da microcirculação, isquemia e dor. O quadro é típico: dor intensa em membros, episódios semelhantes prévios, ausência de febre, de sinais infecciosos e de sintomas respiratórios. A saturação é normal, o que afasta síndrome torácica aguda neste momento.\n\nPrincípio do tratamento: a analgesia deve ser rápida e proporcional à intensidade da dor. O ideal é iniciá-la nos primeiros 30 a 60 minutos da chegada ao serviço. A escolha segue a escala de dor, conforme os protocolos do Ministério da Saúde e as diretrizes internacionais (NHLBI/ASH):\n- Dor leve (EVA 1-3): analgésico simples ou AINE por via oral.\n- Dor moderada (EVA 4-6): analgésico simples associado a opioide fraco, como a codeína.\n- Dor intensa (EVA 7-10): opioide forte por via parenteral, sendo a morfina IV a droga de escolha, associado a analgésico não opioide.\n\nA paciente tem EVA 9, ou seja, dor intensa. Isso indica morfina intravenosa imediata, com reavaliação a cada 15 a 30 minutos e titulação da dose. Associam-se medidas de suporte: hidratação sem hiperidratação, oxigênio apenas se houver hipoxemia e monitorização de efeitos adversos dos opioides, como depressão respiratória e sedação.\n\nAnálise das alternativas:\n\na) Codeína e paracetamol via oral – INCORRETA. É um esquema adequado para dor moderada (EVA 4-6) ou para manutenção após o controle da crise. Em dor de intensidade 9, a combinação é insuficiente. Além disso, a via oral tem início de ação mais lento, o que não é desejável na conduta imediata.\n\nb) Dipirona intravenosa – INCORRETA. A dipirona isolada não basta para dor intensa. Ela é útil como adjuvante da morfina na crise grave ou como monoterapia na dor leve a moderada. Usá-la sozinha retarda o controle álgico adequado.\n\nc) Tenoxicam intramuscular – INCORRETA. AINEs podem ser adjuvantes, mas não substituem o opioide na dor intensa. A via intramuscular deve ser evitada na doença falciforme, pois causa dor, tem absorção errática e traz risco de abscessos e necrose tecidual. Há ainda o risco de nefrotoxicidade, já que esses pacientes frequentemente têm nefropatia falciforme.\n\nd) Morfina intravenosa – CORRETA. É o opioide forte de escolha para crise vaso-oclusiva com dor intensa (EVA 7-10). A via IV permite início de ação rápido e titulação segura da dose. Deve ser feita de imediato, com reavaliações frequentes. Pode ser associada à dipirona ou ao paracetamol para potencializar a analgesia e reduzir o consumo de opioide.\n\nPonto-chave: na crise álgica falciforme, a dor deve ser tratada como emergência e de acordo com sua intensidade. Dor intensa exige opioide forte por via IV, e o subtratamento por receio de \"busca por opioide\" é um erro frequente e prejudicial.\n\nResposta: alternativa D.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:05.828Z"
+  }
+]

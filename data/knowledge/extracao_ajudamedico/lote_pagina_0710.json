@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_c670ef67-8457-42bd-9f59-b064537aaf11",
+    "originalId": "c670ef67-8457-42bd-9f59-b064537aaf11",
+    "statement": "Um homem de 64 anos de idade, saudável, agricultor, apresenta-se no consultório com uma lesão cutânea que ele notou há cerca de 6 meses. A lesão está localizada no dorso da mão direita e tem crescido lentamente. O paciente relata que a área está um pouco dolorosa e pruriginosa. Ao exame físico, observa-se uma lesão de 1,2 cm de diâmetro, de cor acastanhada, bordas irregulares, e com algumas áreas de ulceração, e há linfadenomegalia palpável na axila.\nCom base na descrição clínica e no exame físico, as melhores propostas diagnóstica e terapêutica para esse paciente são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "carcinoma basocelular; tratamento com crioterapia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "queratoacantoma; tratamento com antibioticoterapia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "dermatofibroma; tratamento com observação e seguimento;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "carcinoma espinocelular; tratamento com eletrocoagulação e curetagem;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "melanoma maligno; tratamento com excisão cirúrgica ampla e avaliação do linfonodo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um paciente idoso, com exposição solar crônica (agricultor), apresentando uma lesão cutânea pigmentada (acastanhada) com sinais de alerta para malignidade: crescimento em 6 meses, bordas irregulares, ulceração e, fundamentalmente, linfadenomegalia regional (axilar). Esses achados direcionam o raciocínio para uma neoplasia maligna com potencial de disseminação linfática.\n\nPOR QUE A ALTERNATIVA E ESTÁ CORRETA?\n\nA descrição da lesão segue os critérios do ABCDE do melanoma: Assimetria, Bordas irregulares, Cor variável (acastanhada), Diâmetro (1,2 cm, maior que 6 mm) e Evolução (crescimento em 6 meses). A presença de linfonodo palpável na axila sugere fortemente a disseminação da doença. O tratamento padrão para o melanoma envolve a excisão cirúrgica da lesão primária com margens de segurança e a avaliação da cadeia linfonodal acometida (seja por biópsia de linfonodo sentinela em casos iniciais ou esvaziamento ganglionar/investigação diagnóstica em casos com linfonodo clinicamente suspeito).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa a: O carcinoma basocelular (CBC) é o câncer de pele mais comum e raramente sofre metástase para linfonodos. Clinicamente, costuma apresentar-se como uma pápula perolada com telangiectasias. Além disso, a crioterapia não seria o tratamento de escolha para uma lesão desse tamanho com suspeita de disseminação.\n\nAlternativa b: O queratoacantoma é uma variante do carcinoma espinocelular de crescimento rápido, caracterizado por um nódulo com cratera central de queratina. O tratamento não é antibioticoterapia, mas sim a excisão cirúrgica, dada sua semelhança histológica com o carcinoma espinocelular.\n\nAlternativa c: O dermatofibroma é uma lesão benigna, firme ao toque e geralmente estável por anos. Não apresenta bordas irregulares nem causa linfadenomegalia. A conduta de observação não se aplica a uma lesão com sinais evidentes de malignidade.\n\nAlternativa d: Embora o carcinoma espinocelular (CEC) possa metastatizar para linfonodos e ocorra em áreas de exposição solar, a descrição acastanhada e com bordas irregulares é mais típica de lesões melanocíticas. Além disso, o tratamento por eletrocoagulação e curetagem é reservado para lesões superficiais e de baixo risco, sendo totalmente contraindicado em casos com suspeita de invasão profunda ou acometimento linfonodal.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:33.029Z"
+  },
+  {
+    "id": "AJUDA_c6753a92-1a84-4c4d-bbdc-6681748bd5da",
+    "originalId": "c6753a92-1a84-4c4d-bbdc-6681748bd5da",
+    "statement": "O mecanismo de ação de todos os antitérmicos é o mesmo: inibem a ação das enzimas ciclo-oxigenases COX1 e COX2 de modo não seletivo. Com isso reduzem a produção da prostaglandina (PGE2) responsável pela elevação da temperatura no termostato hipotalâmico. Considerando as recomendações atuais para a prescrição deste grupo de fármacos para crianças, sabe-se que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O paracetamol apresenta ação analgésica e antitérmica, sem ação anti-inflamatória e é o único antitérmico recomendado para febre em menores de um mês, sendo sua dose ajustada segundo a idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A dipirona é o antitérmico mais indicado para profilaxia de convulsões febris, devendo ser prescrita para crianças com histórico de convulsões em vigência de febre a cada seis horas nas primeiras 48 horas da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A alternância de antitérmicos é recomendada quando a temperatura persistir acima de 39 °C após uma hora da administração do primeiro antitérmico; prefere-se alternância entre dipirona e paracetamol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O paracetamol é recomendado de forma profilática, administrado uma hora antes de aplicação de vacinas, principalmente no primeiro ano de vida, pois as evidências indicam que este fármaco pode favorecer a imunogenicidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): O paracetamol (acetaminofeno) possui um mecanismo de ação que envolve a inibição das ciclo-oxigenases predominantemente no sistema nervoso central, o que explica sua excelente ação analgésica e antitérmica, mas sua fraca atividade anti-inflamatória periférica. Em neonatos (menores de 28 dias), é o antitérmico de escolha e o único habitualmente recomendado, pois outros fármacos, como a dipirona e o ibuprofeno, possuem restrições de idade ou carecem de estudos robustos para essa faixa etária específica. A dose deve ser rigorosamente ajustada considerando a idade gestacional e o peso, devido à imaturidade dos sistemas enzimáticos hepáticos de conjugação.\n\nAlternativa B (Incorreta): Existe um conceito equivocado de que o uso agressivo de antitérmicos previne a recorrência de convulsões febris. Estudos clínicos demonstraram que os antitérmicos são eficazes para o conforto da criança e a redução da temperatura, mas não reduzem o risco de novas crises convulsivas durante o episódio febril. A convulsão febril costuma ocorrer na subida brusca da temperatura, muitas vezes antes mesmo de os pais perceberem que a criança está com febre. Portanto, não se recomenda a prescrição profilática de dipirona com esse objetivo.\n\nAlternativa C (Incorreta): A alternância de antitérmicos (por exemplo, intercalar paracetamol e ibuprofeno a cada 3 ou 4 horas) não é recomendada pelas principais sociedades de pediatria, como a Sociedade Brasileira de Pediatria (SBP) e a Academia Americana de Pediatria (AAP). Embora possa ser eficaz na redução da temperatura, essa prática aumenta consideravelmente o risco de erros de dosagem e de confusão por parte dos cuidadores, além de potencializar a toxicidade renal e hepática, sem trazer benefícios clínicos significativos ao estado geral da criança.\n\nAlternativa D (Incorreta): O uso profilático de paracetamol ou de outros antitérmicos antes ou no momento da vacinação é contraindicado. Evidências científicas sugerem que a administração de antitérmicos de forma preventiva pode interferir na resposta imunológica, reduzindo a produção de anticorpos (imunogenicidade) para alguns componentes das vacinas. O medicamento deve ser reservado apenas para o tratamento de sintomas (febre ou dor) que venham a surgir após a imunização.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Febre na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:33.029Z"
+  },
+  {
+    "id": "AJUDA_c67c55e2-e4be-4734-bb05-1b49d0a1ae32",
+    "originalId": "c67c55e2-e4be-4734-bb05-1b49d0a1ae32",
+    "statement": "Mulher de 32 anos, sexualmente ativa, comparece à consulta com o médico de família e comunidade para realização do seu primeiro exame preventivo. O médico realiza a coleta de citologia oncótica. Após 3 semanas, a paciente retorna com o resultado “presença de lesão intraepitelial de baixo grau”.\nConsiderando esse resultado, qual é a conduta adequada do médico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar ultrassonografia transvaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir o exame citopatológico em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar para a realização de colposcopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repetir o exame citopatológico imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o manejo de um resultado citopatológico de Lesão Intraepitelial de Baixo Grau (LSIL) em uma paciente de 32 anos. Segundo as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero (INCA/Ministério da Saúde), a conduta diante desse achado é determinada primordialmente pela idade da paciente.\n\nAnálise da alternativa A: Esta alternativa está incorreta. A ultrassonografia transvaginal é um exame de imagem indicado para a avaliação da morfologia uterina (miométrio e endométrio) e dos anexos (ovários e tubas). Ela não possui indicação no rastreamento ou na investigação de lesões precursoras do câncer do colo do útero, as quais são avaliadas por meio da citologia oncótica e da colposcopia.\n\nAnálise da alternativa B: Esta alternativa está correta. De acordo com o protocolo vigente, mulheres com 25 anos ou mais que apresentam um resultado de LSIL devem repetir o exame citopatológico em 6 meses. O LSIL reflete a manifestação citológica da infecção pelo HPV, que, em grande parte das vezes, é transitória e regride espontaneamente. Se o resultado alterado (LSIL ou superior) persistir na reavaliação de 6 meses, a paciente deverá, então, ser encaminhada para a colposcopia.\n\nAnálise da alternativa C: Esta alternativa está incorreta. O encaminhamento imediato para a colposcopia está indicado em situações de maior gravidade, como na Lesão Intraepitelial de Alto Grau (HSIL) ou na presença de células atípicas em que não se pode excluir lesão de alto grau (ASC-H). Para o primeiro achado de LSIL em mulheres acima de 25 anos, a conduta inicial é a repetição da citologia antes de proceder a um exame invasivo.\n\nAnálise da alternativa D: Esta alternativa está incorreta. A repetição imediata da citologia oncótica é reservada para casos em que a amostra coletada foi considerada insatisfatória para análise (por exemplo, devido a sangramento excessivo, processo inflamatório intenso que prejudica a visualização das células ou dessecamento do material). No caso de um resultado de LSIL, deve-se aguardar o intervalo de 6 meses para observar a evolução biológica da lesão.\n\nEm resumo, como a paciente tem 32 anos e este é o seu primeiro exame com resultado de LSIL, a conduta correta é a repetição do exame em 6 meses. Vale lembrar que, se a paciente tivesse menos de 25 anos, a recomendação seria repetir o exame apenas em 3 anos. Portanto, a alternativa B é a resposta adequada.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 59.643319213497826,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:33.029Z"
+  },
+  {
+    "id": "AJUDA_c67f80d4-2421-4a47-9eb6-a946409f3946",
+    "originalId": "c67f80d4-2421-4a47-9eb6-a946409f3946",
+    "statement": "A febre é uma das principais queixas nos departamentos de emergências pediátricas. Na avaliação de um paciente com febre sem sinais localizatórios com idade entre 1 a 3 meses, a definição entre alto e baixo risco de uma infecção bacteriana grave depende dos seguintes exames:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemograma, Urinálise",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hemograma, coprocultura e Liquor",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hemograma, hemocultura, Urinalise",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hemograma, Urinálise, Liquor e Raio X de tórax",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA avaliação do lactente de 1 a 3 meses (29 a 90 dias) com febre sem sinais localizatórios é baseada na aplicação de protocolos de estratificação de risco para Infecção Bacteriana Grave (IBG). O objetivo principal é identificar pacientes de baixo risco que podem ser acompanhados de forma ambulatorial, muitas vezes sem a necessidade de antibioticoterapia empírica ou procedimentos invasivos.\n\nAlternativa a: Esta é a alternativa correta. O protocolo de Rochester é o principal referencial utilizado para definir o baixo risco nessa faixa etária. Ele estabelece que, além do bom estado geral e da ausência de focos infecciosos no exame físico, o paciente deve apresentar parâmetros laboratoriais de triagem rápidos e normais. Os exames fundamentais para essa definição são o hemograma (contagem de leucócitos totais entre 5.000 e 15.000/mm³) e a urinálise (menos de 10 leucócitos por campo de grande aumento). Se esses exames estiverem normais em um lactente que preenche os critérios clínicos, o risco de IBG é considerado muito baixo.\n\nAlternativa b: Esta alternativa está incorreta. A análise do líquor não é um exame de triagem obrigatório para definir baixo risco nos Critérios de Rochester para lactentes acima de 28 dias que se apresentam em bom estado geral. Além disso, a coprocultura é um exame de diagnóstico definitivo que leva dias para o resultado, não servindo para a estratificação de risco imediata no departamento de emergência.\n\nAlternativa c: Esta alternativa está incorreta. Embora a hemocultura seja frequentemente solicitada durante a investigação de febre em lactentes jovens, ela não é um parâmetro utilizado para definir se o paciente é de alto ou baixo risco no momento do atendimento inicial. Por ser um exame de cultura, seu resultado não é imediato. A definição do risco para decisão de conduta (internar ou liberar) baseia-se em exames de pronto resultado, como o hemograma e o sumário de urina.\n\nAlternativa d: Esta alternativa está incorreta. A realização rotineira de punção lombar (líquor) e raio X de tórax em todos os pacientes desta faixa etária para definir baixo risco faz parte de protocolos mais agressivos, como o de Filadélfia. No entanto, a literatura pediátrica e as diretrizes mais cobradas em provas indicam que o baixo risco pode ser estabelecido de forma menos invasiva através dos Critérios de Rochester, que priorizam o hemograma e a urinálise para essa diferenciação em lactentes que não apresentam sintomas respiratórios ou sinais de toxicidade.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Febre na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:33.029Z"
+  },
+  {
+    "id": "AJUDA_c6892337-b492-47d6-a44c-9b10d7afe065",
+    "originalId": "c6892337-b492-47d6-a44c-9b10d7afe065",
+    "statement": "As manobras de palpação obstétrica, ou manobras de Leopold, dentre outras vantagens, fornecem ao médico informações importantes para o planejamento do parto. Acerca dessa técnica, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As manobras de Leopold devem ser realizadas a partir do primeiro trimestre da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "No segundo tempo das manobras de Leopold, é possível identificar a posição do feto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "No primeiro tempo das manobras de Leopold, palpa-se o polo cefálico, caso a apresentação fetal seja a cefálica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As manobras de Leopold não devem ser realizadas durante o trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "No terceiro tempo das manobras de Leopold, identifica-se a insinuação fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "As manobras de Leopold são uma técnica sistemática de palpação abdominal utilizada para determinar a situação, posição, apresentação e o grau de insinuação fetal. Elas são divididas em quatro tempos específicos. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. As manobras de Leopold não são realizadas no primeiro trimestre, pois o útero ainda é um órgão pélvico ou está iniciando sua ascensão abdominal, sendo pequeno demais para permitir a distinção das partes fetais. A técnica torna-se útil e confiável a partir do terceiro trimestre de gestação, geralmente após a 26ª ou 28ª semana, quando o volume uterino e o tamanho fetal permitem a identificação precisa de polos e dorso.\n\nAlternativa b) Correta. No segundo tempo das manobras de Leopold, o examinador desliza as mãos das laterais do fundo uterino em direção ao polo inferior. O objetivo é localizar o dorso fetal (uma superfície resistente e contínua) de um lado e as pequenas partes ou membros (superfícies irregulares e móveis) do outro. Isso define a posição fetal, que é a relação do dorso com o lado direito ou esquerdo da mãe.\n\nAlternativa c) Incorreta. O primeiro tempo consiste na palpação do fundo uterino para identificar qual polo fetal o ocupa, determinando a situação e a apresentação. Se a apresentação for cefálica, a cabeça do feto está voltada para a bacia da mãe, o que significa que o polo presente no fundo uterino (em cima) será o polo pélvico (nádegas), que é mais mole, largo e irregular.\n\nAlternativa d) Incorreta. As manobras de Leopold são ferramentas fundamentais durante o trabalho de parto. Elas auxiliam o médico a confirmar a apresentação e a posição fetal antes de realizar o toque vaginal, ajudando a prever a mecânica do parto e identificar possíveis distocias de posição.\n\nAlternativa e) Incorreta. O terceiro tempo (manobra de Pawlik) é realizado por meio da apreensão do polo inferior entre o polegar e os demais dedos de uma das mãos. Seu objetivo é avaliar a apresentação fetal e sua mobilidade (se o polo está fixo ou móvel). A identificação da insinuação, que é o grau de descida e fixação profunda do feto na pelve, é o foco principal do quarto tempo de Leopold, no qual o médico se posiciona de costas para a face da paciente e palpa a região acima da sínfise púbica com as pontas dos dedos de ambas as mãos.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:33.029Z"
+  },
+  {
+    "id": "AJUDA_c68dbe90-feb6-4758-b657-19b90dbb9d34",
+    "originalId": "c68dbe90-feb6-4758-b657-19b90dbb9d34",
+    "statement": "Helena, 24 anos, recebeu diagnóstico de doença de Graves há 3 meses e encontra-se em uso de metimazol 10 mg /dia. Vem à consulta, nesta UBS, muita ansiosa, pois teve noticia que está gravida de 8 semanas. Ao exame apresenta-se com peque no bócio palpavel liso e indolor, tremores finos, mãos frias e úmidas e nenhum sinal de oftalmopa tia de Graves. Trouxe exames coletados há 5 dias com os seguintes valores: TSH= 0,1 (0.9-2.2 ng/dL); T4 livre= 1,6 ng/dL (0.9-2.0); T3 livre= 0,4 ng/dL (0,30 a 0,47); TRAb 0,55 UI/L (até 0,55). A melhor conduta neste momento, além de reencaminhá-la ao endocrinologista que solicitou estes exames de controle, será",
+    "options": [
+      {
+        "id": "A",
+        "text": "trocar o metimazol pelo propiltiouracil na proporção de 100 mg para 1 mg de metimazol, podendo mantê-lo até o final da gestação, se necessário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "trocar o metimazol por propiltiouracil e acrescentar levotiroxina em baixas dosagens devido a ação inibi tória do fármaco sobre a conversão de T3 em T4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aumentar a dose de metimazol para 20 mg /d, pois as imunoglobulinas estimulantes da tireoide tendem a aumentar no transcorrer do período gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "suspender a medicação antitireoidiana, pois considera-se que além dos riscos de teratogenicidade do metimazol, os exames atuais estão compatíveis com o bom controle da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "manter o metimazol na dose de 10 mg e acres centar levotiroxina em baixas dosagens (esquema de bloqueio-reposição) para manter níveis normais de T4 livre sem prejuízo ao feto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender a conduta correta nesta questão, devemos analisar o equilíbrio entre o controle do hipertireoidismo e os riscos teratogênicos das medicações antitireoidianas durante a gestação.\n\nAnálise do Caso Clínico:\nHelena tem doença de Graves e está no primeiro trimestre de gestação (8 semanas). Seus exames laboratoriais mostram T4 livre e T3 livre dentro da normalidade (eutireoidismo laboratorial), estando a paciente em uso de dose baixa de metimazol (10 mg/dia). Além disso, o TRAb está em níveis normais (0,55 UI/L). O TSH suprimido é esperado, tanto pela doença de Graves prévia quanto pelo efeito fisiológico do hCG no início da gravidez.\n\nAnálise das Alternativas:\n\nAlternativa A: Incorreta. Embora o propiltiouracil (PTU) seja o fármaco de escolha quando o tratamento é estritamente necessário no primeiro trimestre (devido ao menor risco de malformações graves em comparação ao metimazol), a paciente apresenta exames normais e TRAb negativo em dose baixa de medicação. Nesses casos, a suspensão é preferível à troca, para evitar qualquer exposição fetal desnecessária a drogas antitireoidianas.\n\nAlternativa B: Incorreta. O esquema de \"bloqueio e reposição\" (antitireoidiano + levotiroxina) é contraindicado na gestação. As drogas antitireoidianas atravessam a placenta com facilidade, enquanto a levotiroxina não. Isso poderia resultar em hipotireoidismo fetal iatrogênico e bócio fetal. Além disso, a troca por PTU não se justifica se a suspensão for possível.\n\nAlternativa C: Incorreta. Não há indicação para aumentar a dose, pois a paciente está clinicamente estável e laboratorialmente em eutireoidismo. Ao contrário do que afirma a alternativa, a doença de Graves tende a melhorar durante a gestação devido ao estado de imunossupressão fisiológica relativa, permitindo frequentemente a redução ou suspensão das drogas.\n\nAlternativa D: Correta. De acordo com as diretrizes da American Thyroid Association (ATA), em gestantes com hipertireoidismo leve, bem controlado com doses baixas de antitireoidianos (metimazol até 5-10 mg/dia ou PTU até 100-200 mg/dia) e com TRAb baixo/negativo, a suspensão da medicação no primeiro trimestre é a conduta recomendada. Isso visa proteger o feto do risco de embriopatia pelo metimazol (como aplasia cútis, atresia de coanas e esofágica) e da toxicidade hepática do PTU. A paciente deverá ser monitorada rigorosamente com exames a cada 1 ou 2 semanas.\n\nAlternativa E: Incorreta. O metimazol deve ser evitado no primeiro trimestre sempre que possível devido ao seu potencial teratogênico. O uso associado à levotiroxina (bloqueio-reposição) é contraindicado na gestação pelos riscos ao feto descritos na alternativa B.\n\nConclusão:\nA estabilidade clínica, os níveis normais de T4 livre e T3 livre e a negatividade do TRAb permitem a suspensão segura da medicação no momento mais crítico da organogênese fetal, sob vigilância estreita.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Tireoide",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:33.029Z"
+  },
+  {
+    "id": "AJUDA_c68f0690-d3d4-4dc8-938b-74c71318cfbc",
+    "originalId": "c68f0690-d3d4-4dc8-938b-74c71318cfbc",
+    "statement": "Paciente masculino 55 anos, em investigação de lesão sugestiva de carcinomarenal com invasão de veia cava inferior. Neste caso a melhor conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cirurgia com controle vascular e trombectomia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Quimioterapia neoadjuvante por 4 semanas seguida de cirurgia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Radioterapia paliativa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Embolizacao da lesão por radiologia intervencionista",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quimioterapia com radioterapia paliativas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO TÉCNICO\n\nO carcinoma de células renais (CCR) possui uma característica biológica marcante: a capacidade de invadir o sistema venoso por contiguidade, formando um trombo tumoral que progride da veia renal para a veia cava inferior (VCI). Isso ocorre em cerca de 4% a 10% dos casos. O ponto crucial para esta questão é compreender que a invasão da veia cava, por si só, não classifica a doença como incurável ou metastática. Se não houver metástases a distância, a cirurgia radical com intenção curativa continua sendo a conduta de escolha, independentemente da extensão do trombo venoso.\n\nDISCUSSÃO DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): O tratamento padrão para o câncer renal com invasão de veia cava é a nefrectomia radical associada à trombectomia. O procedimento exige uma técnica cirúrgica complexa que envolve o controle vascular cuidadoso da veia cava (acima e abaixo do trombo) e da veia renal contralateral. Esse controle é fundamental para evitar que fragmentos do tumor se soltem durante a manipulação, o que causaria uma embolia pulmonar tumoral maciça, além de prevenir hemorragias graves durante a abertura da veia (cavotomia) para a retirada do trombo.\n\nAlternativa B (INCORRETA): O carcinoma renal é conhecido por ser um tumor quimiorresistente, ou seja, não responde bem à quimioterapia convencional. Embora o uso de terapias-alvo (como inibidores de tirosina quinase) e imunoterapia tenha evoluído para casos metastáticos, não existe indicação de quimioterapia neoadjuvante por 4 semanas como conduta de primeira linha para redução de trombo venoso visando cirurgia.\n\nAlternativa C (INCORRETA): A radioterapia paliativa é utilizada apenas para o controle de sintomas, como dor em metástases ósseas ou compressões no sistema nervoso central. O tumor primário renal é radiorresistente, e a radioterapia não tem papel no tratamento da invasão vascular em pacientes com potencial de cura cirúrgica.\n\nAlternativa D (INCORRETA): A embolização da artéria renal por radiologia intervencionista pode ser utilizada ocasionalmente como um procedimento pré-operatório para diminuir a vascularização de tumores muito volumosos e facilitar a cirurgia, mas nunca como tratamento isolado ou principal para a invasão da veia cava.\n\nAlternativa E (INCORRETA): Esta opção assume erroneamente que o paciente é terminal ou apenas paliativo. A invasão da veia cava é uma extensão local da doença e não impede a cirurgia com intenção curativa. Além disso, a combinação de radioterapia e quimioterapia é ineficaz para o tratamento definitivo do carcinoma de células renais.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:33.029Z"
+  },
+  {
+    "id": "AJUDA_c68f9c60-8e0e-49f5-ab69-94b09ce1eab4",
+    "originalId": "c68f9c60-8e0e-49f5-ab69-94b09ce1eab4",
+    "statement": "Sobre os marcadores tumorais é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o antígeno carcinoembrionário tem uma sensibilidade de cerca de 90% para a neoplasia de cólon.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o CA 15-3 está relacionado com casos de neoplasia precoce de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o CA 19-9 tem alta sensibilidade e especificidade para a neoplasia de ovário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a alfafetoproteína tem uma sensibilidade de aproximadamente 98% para a neoplasia hepatocelular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "o antígeno carcinoembrionário é utilizado para diagnóstico da neoplasia coloretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. O antígeno carcinoembrionário (CEA) possui baixa sensibilidade para a detecção precoce do câncer de cólon (em torno de 30% a 40%). A sensibilidade desse marcador aumenta apenas em estágios avançados ou na presença de metástases, o que o torna inadequado para triagem ou diagnóstico inicial.\n\nAlternativa b: Incorreta. O CA 15-3 não está relacionado à neoplasia precoce de mama. Ele é um marcador com baixa sensibilidade para doença localizada, sendo utilizado quase exclusivamente para monitorar a resposta terapêutica e a recorrência em pacientes com câncer de mama em estágio avançado ou metastático.\n\nAlternativa c: Incorreta. O CA 19-9 é o marcador de escolha para neoplasias biliopancreáticas, especialmente o adenocarcinoma de pâncreas. Para a neoplasia de ovário (especialmente os tumores epiteliais), o marcador mais utilizado e específico é o CA 125.\n\nAlternativa d: Correta. A alfafetoproteína (AFP) é o marcador tumoral clássico para o carcinoma hepatocelular (CHC). Embora a sensibilidade de 98% seja considerada muito alta na prática clínica atual (onde frequentemente se observa entre 60% e 80%, dependendo do ponto de corte), esta é a alternativa considerada correta pela banca examinadora por ser a única que estabelece a correlação correta entre o marcador e a patologia específica, diferentemente das outras opções que apresentam erros conceituais graves.\n\nAlternativa e: Incorreta. O antígeno carcinoembrionário (CEA) não é utilizado para o diagnóstico da neoplasia colorretal. De acordo com as diretrizes oncológicas, o diagnóstico deve ser feito por exames de imagem e colonoscopia com biópsia. O papel do CEA está restrito ao acompanhamento pós-operatório para detecção de recidiva e na avaliação do prognóstico.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:33.029Z"
+  },
+  {
+    "id": "AJUDA_c69b3b54-977e-431f-bb07-18fda310a281",
+    "originalId": "c69b3b54-977e-431f-bb07-18fda310a281",
+    "statement": "Homem com histórico de etilismo crônico apresenta hematêmese e hipotensão. A endoscopia revela varizes esofágicas. Qual é a primeira medida terapêutica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ligadura elástica das varizes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Administração de IBP intravenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Radioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ressecção esofágica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O paciente apresenta um quadro clínico clássico de hemorragia digestiva alta (HDA) varicosa, caracterizado por hematêmese e instabilidade hemodinâmica (hipotensão) em um contexto de etilismo crônico, o que sugere cirrose e hipertensão portal. Após as medidas iniciais de ressuscitação volêmica e estabilização do paciente, a endoscopia digestiva alta (EDA) deve ser realizada para identificar a fonte do sangramento e realizar o tratamento local.\n\nAlternativa a: Correta. A ligadura elástica das varizes esofágicas é o tratamento de escolha (padrão-ouro) durante a endoscopia para o controle da hemorragia aguda. O procedimento consiste em aspirar o cordão varicoso para dentro de um dispositivo acoplado ao endoscópio e liberar um anel elástico, causando a oclusão mecânica do vaso. Ela é preferível à escleroterapia por apresentar menores taxas de complicações (como ulcerações e estenoses) e maior eficácia no controle do sangramento.\n\nAlternativa b: Incorreta. Os inibidores de bomba de prótons (IBP), como o omeprazol, são fundamentais no manejo da HDA não varicosa (causada por úlceras pépticas). No caso de sangramento por varizes, o IBP não atua na causa do problema, que é a pressão elevada no sistema porta. O tratamento medicamentoso correto para varizes envolve drogas vasoativas, como a terlipressina, octreotida ou somatostatina, que reduzem o fluxo sanguíneo esplâncnico e a pressão portal.\n\nAlternativa c: Incorreta. A radioterapia é uma modalidade de tratamento oncológico que utiliza radiação ionizante para destruir células tumorais. Ela não possui qualquer aplicação no manejo de urgências hemorrágicas digestivas.\n\nAlternativa d: Incorreta. A ressecção esofágica (esofagectomia) é um procedimento cirúrgico de extrema complexidade e alta mortalidade, indicado para casos de neoplasias de esôfago ou estágios terminais de acalásia. Para sangramentos varicosos que não respondem ao tratamento endoscópico e medicamentoso, as opções de resgate incluem a passagem de balão (Sengstaken-Blakemore), a colocação de TIPS (shunt portossistêmico intra-hepático transjugular) ou, raramente, cirurgias de derivação portossistêmica, mas nunca a retirada do esôfago.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:33.029Z"
+  },
+  {
+    "id": "AJUDA_c69f38aa-52dc-4580-91b8-4878d24f6d8b",
+    "originalId": "c69f38aa-52dc-4580-91b8-4878d24f6d8b",
+    "statement": "Pode-se afirmar que ao se suturar uma ferida, além da aproximação das bordas sem tensão, outra medida que auxilia a prevenção de queloide é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "infusão local de corticoide durante a sutura",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "oclusão e hidratação da ferida logo após a sutura",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "remoção do curativo em até 24 horas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "limpeza frequente com clorexidina alcoólica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A prevenção de queloides e cicatrizes hipertróficas baseia-se na redução dos estímulos que levam à proliferação excessiva de fibroblastos e à deposição exagerada de colágeno. Além do fechamento por planos e da ausência de tensão nas bordas da ferida, o controle do microambiente cutâneo é um pilar fundamental no pós-operatório.\n\nAlternativa a: Incorreta. O uso de corticoides, como a triancinolona, é o tratamento padrão para queloides já formados ou em fase ativa de crescimento. No entanto, a infusão local durante o ato da sutura de uma ferida primária não é recomendada como rotina preventiva. O corticoide inibe a fase inflamatória e a síntese de colágeno de forma inespecífica, o que pode retardar a cicatrização normal, aumentar o risco de infecções e predispor à deiscência da ferida.\n\nAlternativa b: Correta. A oclusão e a hidratação são estratégias preventivas de primeira linha. A utilização de curativos oclusivos ou placas de silicone reduz a perda de água transepidérmica. A manutenção desse estado de hidratação sinaliza aos queratinócitos para modularem a atividade dos fibroblastos, resultando em uma menor produção de colágeno e uma organização mais adequada das fibras. Esse controle da hidratação é essencial para evitar o gatilho biológico que gera a cicatriz exuberante.\n\nAlternativa c: Incorreta. A remoção precoce do curativo (em 24 horas) deixa a ferida exposta ao dessecamento e a possíveis irritantes externos. Para a prevenção de queloides, o ideal é que a ferida permaneça protegida e em ambiente controlado, especialmente nas fases iniciais da remodelação tecidual, que ocorrem após a retirada dos pontos.\n\nAlternativa d: Incorreta. A clorexidina alcoólica é um antisséptico excelente para a pele íntegra no pré-operatório, mas é citotóxica para as células envolvidas na cicatrização, como queratinócitos e fibroblastos. A limpeza frequente com soluções alcoólicas causa irritação química persistente e prolonga a fase inflamatória da ferida, o que favorece justamente o desenvolvimento de cicatrizes patológicas. O manejo de limpeza deve ser suave, preferencialmente com soro fisiológico ou água e sabão.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:33.029Z"
+  }
+]

@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_3c3ff153-f6d2-4724-aebc-0d2a88d9e308",
+    "originalId": "3c3ff153-f6d2-4724-aebc-0d2a88d9e308",
+    "statement": "Homem de 61 anos, portador de hipertensão e tabagismo, procura o pronto-socorro por quadro de dispneia progressiva e febre há 3 dias. Ao exame físico, apresenta taquipneia, crepitações em base direita e saturação de O₂ em 88% em ar ambiente. No atendimento inicial, você realiza ultrassonografia point-of-care (POCUS) segundo o Protocolo BLUE. No ponto PLAPS à direita, observa-se a seguinte imagem ultrassonográfica. Qual o diagnóstico mais provável sugerido pelo achado ultrassonográfico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Broncoespasmo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tromboembolismo pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pneumotórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Edema agudo de pulmão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Derrame pleural.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O ponto PLAPS (Posterior and/or Lateral Alveolar and/or Pleural Syndrome) no Protocolo BLUE é a zona de avaliação voltada especificamente para a busca de consolidações e derrames pleurais, localizando-se na região póstero-lateral do tórax, onde o líquido costuma se acumular por gravidade.\n\nAnálise da imagem:\nA ultrassonografia apresenta uma imagem clássica da transição toracoabdominal. À direita da imagem, observa-se o fígado (marcado com L). Acima do diafragma, nota-se uma grande área anecoica (preta), representada pelos asteriscos, que corresponde à presença de líquido no espaço pleural. Imerso nesse líquido, observa-se o parênquima pulmonar (marcado com LL — Lower Lobe), que se apresenta colapsado (atelectasia compressiva) e com aspecto \"hepatizado\", flutuando conforme a respiração (sinal da medusa ou sinal da cauda de baleia).\n\nExplicação das alternativas:\n\na) Incorreta. No broncoespasmo (como na asma ou DPOC), o pulmão apresenta um perfil A (linhas A horizontais e deslizamento pleural preservado). O POCUS não demonstra coleções líquidas ou consolidações nesses casos.\n\nb) Incorreta. O tromboembolismo pulmonar (TEP) costuma apresentar um perfil A no Protocolo BLUE, associado à presença de trombose venosa profunda (TVP) nos membros inferiores. Pequenos infartos pulmonares subpleurais podem ocorrer, mas não explicam a grande coleção líquida vista na imagem.\n\nc) Incorreta. O pneumotórax é caracterizado pela ausência de deslizamento pleural (lung sliding), ausência de linhas B e presença do \"ponto de pulmão\" (lung point). No pneumotórax, veríamos ar (que gera sombra acústica e artefatos de repetição) e não líquido (área preta/anecoica).\n\nd) Incorreta. O edema agudo de pulmão manifesta-se tipicamente pelo perfil B, caracterizado por múltiplas linhas B (caudas de cometa) difusas e bilaterais, indicando síndrome intersticial, e não por um acúmulo isolado de líquido no espaço pleural no ponto PLAPS.\n\ne) Correta. O achado de uma zona anecoica (preta) entre a pleura parietal e a pleura visceral, localizada acima do diafragma no ponto PLAPS, é o sinal patognomônico de derrame pleural na ultrassonografia point-of-care. O quadro clínico de dispneia, febre e crepitações na base corrobora o achado, sugerindo que o derrame pode ser de origem inflamatória/infecciosa (parapneumônico).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Derrame Pleural"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/86a2e67afcd0af6ea7770b6780b7cac7ecdbc5916f77e7e551c9f86ab5ec9d4f.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3c3ff153-f6d2-4724-aebc-0d2a88d9e308_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:54.460Z"
+  },
+  {
+    "id": "AJUDA_3c437082-79f4-4fe6-b1d0-a79dfd9d7b9d",
+    "originalId": "3c437082-79f4-4fe6-b1d0-a79dfd9d7b9d",
+    "statement": "A Febre Reumática (FR) é uma complicação séria decorrente de uma infecção por estreptococos do grupo A, geralmente manifestando-se algumas semanas após a faringite estreptocócica. Este processo inflamatório pode afetar várias camadas do coração, resultando em uma condição conhecida como Pancardite. Sobre a Febre Reumática Aguda (FRA) e suas manifestações cardíacas, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É uma condição rara e não tem impacto significativo na saúde das crianças.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A cardite ocorre imediatamente após a infecção estreptocócica e é a manifestação mais comum da febre reumática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aproximadamente 1/3 dos pacientes com cardite aguda desenvolverão lesões valvares graves que podem requerer cirurgia cardíaca em 10 a 30 anos após o episódio agudo de cardite.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O envolvimento da válvula aórtica é mais comum do que o da válvula mitral na febre reumática aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. A Febre Reumática (FR) está longe de ser uma condição rara, especialmente em países em desenvolvimento. Ela representa um grave problema de saúde pública e continua sendo a principal causa de cardiopatia adquirida em crianças e adultos jovens, exercendo um impacto socioeconômico e clínico muito significativo.\n\nAlternativa b: Incorreta. Há dois erros principais nesta afirmação. Primeiro, a cardite não ocorre imediatamente após a infecção; existe um período de latência de aproximadamente 2 a 4 semanas entre a faringoamigdalite estreptocócica e o início dos sintomas da Febre Reumática Aguda (FRA). Segundo, a manifestação clínica mais comum da doença é a poliartrite migratória (presente em cerca de 75% dos casos), enquanto a cardite, apesar de ser a manifestação mais grave, ocorre em cerca de 40% a 60% dos pacientes no primeiro surto.\n\nAlternativa c: Correta. Esta alternativa descreve com precisão a evolução da Cardiopatia Reumática Crônica. Pacientes que sofrem cardite moderada ou grave durante a fase aguda da doença apresentam um risco elevado de desenvolver danos valvares permanentes. O processo inflamatório recorrente e a cicatrização valvar levam a deformidades progressivas, como estenoses e insuficiências, que frequentemente exigem intervenção cirúrgica (troca ou reparo valvar) entre 10 e 30 anos após o episódio inicial.\n\nAlternativa d: Incorreta. O padrão de acometimento valvar na Febre Reumática segue uma hierarquia clássica: a válvula mitral é a mais frequentemente afetada (geralmente manifestando-se como insuficiência mitral na fase aguda). A válvula aórtica é a segunda mais acometida, geralmente em associação com a lesão mitral. O envolvimento isolado da válvula aórtica é raro quando comparado ao envolvimento da mitral.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Febre Reumática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:54.460Z"
+  },
+  {
+    "id": "AJUDA_3c5e3e22-3de2-4d4f-a3de-ef7ae5bb2969",
+    "originalId": "3c5e3e22-3de2-4d4f-a3de-ef7ae5bb2969",
+    "statement": "Em um estudo observacional, prospectivo, analítico foi avaliada a relação entre fumar e a incidência de acidente vascular cerebral (AVC) em mulheres com idade entre 30-55 anos, acompanhadas por um período de 10 anos que, no início do estudo, não tinham história de doença coronariana, AVC ou câncer. Os pesquisadores calcularam a incidência de AVC em mulheres fumantes e em mulheres não fumantes, resultando em uma força de associação de 2,8 IC95% (2,4-3,9). Com esse resultado podemos afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Faltou o cálculo do p para afirmarmos que mulheres fumantes possuem 2,8 vezes o risco de ter AVC em relação a mulheres não fumantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Faltou o cálculo do p para afirmarmos que mulheres fumantes possuem 2,8 vezes a chance de ter AVC em relação a mulheres não fumantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mulheres fumantes possuem 2,8 vezes a chance de ter AVC em relação a mulheres não fumantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mulheres fumantes possuem 2,8 vezes o risco de ter AVC em relação a mulheres não fumantes.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é fundamental identificar o desenho do estudo e a medida de associação epidemiológica adequada.\n\nAnálise do Estudo:\nO estudo é descrito como observacional, prospectivo e analítico, acompanhando mulheres inicialmente saudáveis ao longo de 10 anos para observar a incidência de uma doença (AVC). Essas características definem um estudo de coorte.\n\nMedida de Associação:\nEm estudos de coorte, trabalhamos com a incidência de eventos ao longo do tempo, o que nos permite calcular o Risco Relativo (RR). O termo \"chance\" (*Odds Ratio*) é utilizado prioritariamente para estudos de caso-controle ou em análises de regressão logística. Portanto, o valor de 2,8 representa que o risco de fumantes desenvolverem AVC é 2,8 vezes o risco das não fumantes.\n\nSignificância Estatística:\nO Intervalo de Confiança de 95% (IC 95%) fornecido é de 2,4 a 3,9. Em epidemiologia, quando o IC 95% de uma medida de associação (como Risco Relativo ou *Odds Ratio*) não inclui o valor 1,0 (valor de nulidade), o resultado é considerado estatisticamente significativo. Isso significa que o valor de p é obrigatoriamente menor que 0,05. Portanto, o Intervalo de Confiança já é suficiente para afirmar a associação, tornando o valor de p informativo, mas não indispensável para a conclusão.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. Não falta o cálculo do valor de p para fazer a afirmação. O Intervalo de Confiança (2,4-3,9) já garante que o resultado tem significância estatística, pois ambos os limites estão acima de 1,0.\n\nAlternativa b) Incorreta. Além do erro sobre a necessidade do valor de p, a alternativa utiliza o termo \"chance\". Em estudos de coorte prospectivos, nos quais se avalia a incidência, a medida correta é o \"risco\".\n\nAlternativa c) Incorreta. O erro reside no uso da palavra \"chance\". \"Chance\" refere-se ao *Odds Ratio*. Como o estudo é de coorte e avaliou a incidência ao longo de 10 anos, a interpretação correta é baseada no \"risco\".\n\nAlternativa d) Correta. Esta alternativa associa corretamente o desenho do estudo (coorte/prospectivo) com a medida de \"risco\". Como o limite inferior do intervalo de confiança (2,4) é maior que 1,0, podemos afirmar, com segurança estatística, que o risco é efetivamente 2,8 vezes maior no grupo exposto (fumantes).",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:54.460Z"
+  },
+  {
+    "id": "AJUDA_3c6aca65-8af8-4a33-890f-9cd2c5475943",
+    "originalId": "3c6aca65-8af8-4a33-890f-9cd2c5475943",
+    "statement": "Mulher de 68 anos, hipertensa e diabética, comparece ao departamento de emergência em decorrência de tosse produtiva e dor pleurítica. Nega alergias, comorbidades pulmonares, uso de agentes imunossupressores, hospitalizações prévias ou uso de antibioticoterapia recente. Ao exame físico, se encontra lúcida, orientada, taquipneica (frequência respiratória de 32 irpm), taquicárdica (frequência cardíaca de 108 bpm), normotensa, com crepitações pulmonares em terço médio à direita. Laboratorialmente, apresenta leucocitose com neutrofilia, aumento da proteína C reativa, ureia de 75 mg/dL e creatinina de 1,5 mg/dL. Eletrólitos séricos se encontram dentro da normalidade. É realizada a radiografia de tórax abaixo demonstrada. \nCom base no caso descrito, a melhor conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tratamento ambulatorial com levofloxacino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tratamento ambulatorial com amoxicilina-clavulanato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tratamento com meropenem e vancomicina em leito de CTI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "internação hospitalar e tratamento com ceftriaxona e azitromicina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para determinar a melhor conduta em um caso de pneumonia adquirida na comunidade (PAC), o primeiro passo fundamental é a estratificação de risco através do escore CURB-65. Vamos calcular a pontuação para esta paciente:\n\nC (Confusão mental): 0 pontos (a paciente encontra-se lúcida e orientada).\nU (Ureia maior ou igual a 43 mg/dL): 1 ponto (a paciente apresenta ureia de 75 mg/dL).\nR (Frequência respiratória maior ou igual a 30 irpm): 1 ponto (a paciente apresenta 32 irpm).\nB (Pressão arterial sistólica menor que 90 mmHg ou diastólica menor ou igual a 60 mmHg): 0 pontos (a paciente está normotensa).\n65 (Idade maior ou igual a 65 anos): 1 ponto (a paciente tem 68 anos).\n\nA pontuação total é de 3 pontos. De acordo com os protocolos de manejo da PAC, pacientes com escore CURB-65 de 0 ou 1 podem ser tratados ambulatorialmente. Um escore de 2 indica necessidade de considerar internação hospitalar, enquanto escores de 3 ou mais indicam internação hospitalar obrigatória, com avaliação de necessidade de UTI se o escore for 4 ou 5.\n\nA radiografia de tórax apresentada mostra uma consolidação alveolar bem definida no terço inferior do pulmão direito, o que confirma o diagnóstico de pneumonia lobar.\n\nAnálise das alternativas:\n\na) Incorreta. O tratamento ambulatorial é contraindicado para esta paciente devido à sua pontuação no escore de gravidade (CURB-65 = 3), que aponta para um risco de mortalidade que exige monitorização hospitalar.\n\nb) Incorreta. Assim como na alternativa anterior, o regime ambulatorial não é seguro para este perfil de paciente. Além disso, embora a amoxicilina com clavulanato seja usada para pacientes com comorbidades na comunidade, o critério de gravidade aqui exige internação.\n\nc) Incorreta. O uso de meropenem e vancomicina constitui um esquema de espectro excessivamente amplo para um quadro inicial de PAC sem fatores de risco para germes multirresistentes. A paciente não possui histórico de hospitalização recente, uso prévio de antibióticos ou imunossupressão que justifiquem a cobertura para Pseudomonas aeruginosa ou MRSA. Além disso, ela não apresenta critérios imediatos de instabilidade hemodinâmica ou ventilatória que exijam obrigatoriamente leito de CTI no primeiro momento.\n\nd) Correta. Esta é a conduta padrão. A pontuação CURB-65 de 3 justifica a internação hospitalar. O tratamento empírico para pacientes internados em enfermaria deve cobrir os patógenos típicos e atípicos, sendo a associação de um beta-lactâmico (ceftriaxona) com um macrolídeo (azitromicina) uma das opções mais recomendadas pelas diretrizes nacionais e internacionais.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/10056b0c5a3c42e359a175272e0bdd4be8d7e7c5a033a4e47298d1cb557c9cf3.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3c6aca65-8af8-4a33-890f-9cd2c5475943_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:54.910Z"
+  },
+  {
+    "id": "AJUDA_3c8e08df-9232-4a37-9406-08f5623d7bb5",
+    "originalId": "3c8e08df-9232-4a37-9406-08f5623d7bb5",
+    "statement": "A respeito do estadiamento do câncer colorretal, pode-se afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "após o procedimento cirúrgico, deve-se avaliar no mínimo 12 linfonodos na peça cirúrgica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "sabe-se que o pulmão é o sítio de metástase mais frequentes dos tumores de cólon",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tumores de ceco podem ter disseminação pelo plexo venoso paravertebral e são mais comumente associados a metástases ósseas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a classificação de tumores malignos (TNM) não é utilizada no estadiamento desse tipo de câncer",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) Correta: De acordo com as diretrizes da AJCC (American Joint Committee on Cancer) e o consenso da OMS, a avaliação de um número mínimo de 12 linfonodos na peça cirúrgica é fundamental para um estadiamento adequado do câncer colorretal. Esse número é considerado o limite mínimo para garantir a detecção de metástases linfonodais e evitar o subestadiamento do paciente (classificar erroneamente um estágio III como estágio II). O achado de menos de 12 linfonodos pode indicar uma linfadenectomia insuficiente ou uma análise patológica limitada.\n\nAlternativa (b) Incorreta: O fígado é o sítio mais comum de metástases à distância nos tumores de cólon. Isso ocorre porque a drenagem venosa da maior parte do intestino grosso é feita pelo sistema portal, que leva o sangue diretamente ao fígado antes de atingir a circulação sistêmica. O pulmão é o segundo sítio mais comum, sendo mais frequente em casos de câncer de reto.\n\nAlternativa (c) Incorreta: Tumores do ceco apresentam drenagem venosa para o sistema portal (veia mesentérica superior), tendo o fígado como principal sítio de metástase inicial. A disseminação pelo plexo venoso paravertebral (plexo de Batson) e a maior associação com metástases ósseas e pulmonares precoces são características de tumores localizados no reto baixo, pois o plexo hemorroidário inferior drena diretamente para a veia cava inferior, contornando a circulação portal.\n\nAlternativa (d) Incorreta: O sistema TNM (Tumor, Linfonodo, Metástase) é o padrão-ouro mundial e a classificação mais utilizada para o estadiamento do câncer colorretal. Ele orienta o prognóstico e define a necessidade de tratamentos adjuvantes, como a quimioterapia. Outros sistemas antigos, como a classificação de Dukes ou Astler-Coller, caíram em desuso na prática clínica moderna.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Proctologia",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:54.910Z"
+  },
+  {
+    "id": "AJUDA_3c96c828-77a0-4833-a9c6-0d9967ead954",
+    "originalId": "3c96c828-77a0-4833-a9c6-0d9967ead954",
+    "statement": "A realização do Teste oral de tolerância à glicose 75 g (TOTG) é o teste diagnóstico para diabetes mellitus gestacional, por todas as gestantes que apresentem resultado de glicemia em jejum solicitada na primeira consulta de pré-natal inferior a 92 mg/dL, de forma universal, no periodo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "entre a 18ª e 24ª semana de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "entre a 22ª e 24ª semana de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "entre a 24ª e 28ª semana de gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "entre a 28º e 32ª semana de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico do Diabetes Mellitus Gestacional (DMG) segue um fluxo bem estabelecido pelas diretrizes do Ministério da Saúde e da FEBRASGO. O rastreamento começa logo na primeira consulta de pré-natal com a glicemia de jejum. Se esse valor inicial for inferior a 92 mg/dL, a gestante deve ser reavaliada obrigatoriamente em um momento posterior da gestação, quando a resistência insulínica aumenta significativamente devido aos hormônios placentários.\n\nO momento ideal para a realização do Teste Oral de Tolerância à Glicose com 75 g (TOTG-75 g) é entre a 24ª e a 28ª semana de gestação. Isso ocorre porque, a partir do segundo trimestre (especialmente após a 24ª semana), há um pico na produção de hormônios contrainsulínicos pela placenta, como o lactogênio placentário humano, o cortisol e a prolactina, o que torna esse período o mais sensível para detectar a falha do pâncreas materno em compensar essa resistência.\n\nAnálise das alternativas:\n\na) Incorreta. Entre a 18ª e a 24ª semana, os níveis dos hormônios diabetogênicos ainda não atingiram o platô necessário para que o teste tenha a sensibilidade diagnóstica padronizada pelos protocolos mundiais.\n\nb) Incorreta. Embora o limite superior (24 semanas) marque o início do período recomendado, o intervalo proposto na alternativa é muito curto e não abrange o período clássico de rastreamento universal.\n\nc) Correta. Este é o intervalo padrão (24 a 28 semanas) recomendado para o rastreamento universal do DMG em gestantes com glicemia de jejum inicial normal (menor que 92 mg/dL). O diagnóstico de DMG no TOTG é feito se um ou mais dos seguintes valores forem atingidos ou ultrapassados: Jejum maior ou igual a 92 mg/dL; 1 hora maior ou igual a 180 mg/dL; 2 horas maior ou igual a 153 mg/dL.\n\nd) Incorreta. O período entre a 28ª e a 32ª semana é considerado tardio para o diagnóstico inicial. O objetivo do rastreamento entre a 24ª e a 28ª semana é permitir intervenções precoces (dieta, exercícios e, se necessário, insulina) para evitar complicações como a macrossomia fetal e a pré-eclâmpsia.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:54.910Z"
+  },
+  {
+    "id": "AJUDA_3c9afaaf-1b8c-456d-a39e-1c946ee1e6a7",
+    "originalId": "3c9afaaf-1b8c-456d-a39e-1c946ee1e6a7",
+    "statement": "Paciente de 35 anos, contente por sua primeira gravidez, começa o pré-natal na unidade básica de saúde (UBS) de seu bairro. Durante a consulta de enfermagem, é identificado, no exame das mamas, um nódulo na mama direita. Quando informada sobre esse achado, a paciente relata que sua mãe teve câncer de mama aos 38 anos. \n\nDiante desse quadro, a conduta médica indicada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "requisitar biópsia do nódulo mamário guiada por ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "encaminhar a paciente para o ambulatório de gestação de alto risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar ultrassonografia de mamas e considerar realização de mamografia com proteção abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "aguardar o final da gestação para realizar investigação do nódulo a partir de ultrassonografia e de mamografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo de nódulos mamários detectados durante a gestação, um cenário que exige rapidez no diagnóstico para não retardar o tratamento de um eventual câncer de mama associado à gravidez.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Embora a biópsia (preferencialmente por agulha grossa ou core biopsy) seja o padrão-ouro para o diagnóstico definitivo, ela geralmente não é a conduta inicial imediata. O protocolo de investigação de um nódulo palpável deve começar com exames de imagem para caracterizar a lesão e classificar o risco de malignidade (sistema BI-RADS), orientando a necessidade e o melhor local para a biópsia.\n\nAlternativa B: Incorreta. O achado de um nódulo mamário requer investigação diagnóstica específica (mastologia/oncologia), mas não define, por si só, uma gestação de alto risco do ponto de vista obstétrico convencional. O foco deve ser o diagnóstico da patologia mamária paralelamente ao acompanhamento pré-natal.\n\nAlternativa C: Correta. A ultrassonografia é o exame de escolha inicial para avaliar massas palpáveis em gestantes, devido à maior densidade do tecido mamário nesse período e à ausência de radiação ionizante. Caso a ultrassonografia revele achados suspeitos ou inconclusivos, a mamografia pode ser realizada com segurança, desde que seja utilizada a proteção abdominal (aventais de chumbo) para minimizar a exposição fetal à radiação dispersa. A investigação deve ser rápida, pois o câncer de mama gestacional costuma ser diagnosticado em estágios avançados devido ao atraso na propedêutica.\n\nAlternativa D: Incorreta. Esta é uma conduta perigosa e contraindicada. Nunca se deve aguardar o término da gestação ou da lactação para investigar um nódulo mamário suspeito. O atraso no diagnóstico é o principal fator que impacta negativamente o prognóstico de pacientes com câncer de mama diagnosticado na gravidez.\n\nResumo do manejo: Diante de um nódulo palpável na gestante, realiza-se a ultrassonografia. Se houver suspeita, prossegue-se com mamografia (se necessário) e biópsia, seguindo os mesmos critérios diagnósticos utilizados em pacientes não grávidas.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Câncer de Mama",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:54.910Z"
+  },
+  {
+    "id": "AJUDA_3c9d1b81-8b21-4af2-b2b7-51ba799f1cb3",
+    "originalId": "3c9d1b81-8b21-4af2-b2b7-51ba799f1cb3",
+    "statement": "Quanto a Insuficiência Cardíaca (IC) em pediatria, todas estão corretas, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "as principais causas de IC na criança são as cardiopatias congênitas estruturais e as cardiomiopatias, sendo que o grupo das cardiopatias congênitas é a causa mais frequente chegando a ser responsável por 50% a 70% dos casos de IC na infância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "as cardiomiopatias são responsáveis por 20% a 30% de todos os casos de IC na criança, podendo ser de origem primária ou secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sintomas de IC na criança independem da causa , gênero ou idade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "para tratamento adequado de IC na infância, devemos dividi-los em dois grandes grupos : pacientes com sinais de congestão ou pacientes com sinais de baixo debito para melhor orientação de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "fenômenos tromboembólicos são frequentes em crianças que apresentam IC decorrente de miocardiopatias com disfunção ventricular. Na presença de trombo intracardíaco está indicada a anticoagulação com heparina na fase aguda e posteriormente varfarina. Quando a fração de ejeção de ventrículo esquerdo for menor que 25%, a anticoagulação profilática com heparina ou varfarina também deve ser considerada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO: INSUFICIÊNCIA CARDÍACA (IC) EM PEDIATRIA\n\nA questão aborda os pilares da cardiologia pediátrica: epidemiologia, quadro clínico, classificação hemodinâmica e manejo de complicações. O objetivo é identificar a afirmação incorreta.\n\nAlternativa A (Correta): A epidemiologia da IC pediátrica é dominada pelas cardiopatias congênitas estruturais. Diferente do adulto, onde a doença isquêmica prevalece, na criança os defeitos de formação cardíaca (como grandes shunts esquerda-direita: CIV e PCA) respondem por cerca de 50% a 70% dos diagnósticos, especialmente no primeiro ano de vida.\n\nAlternativa B (Correta): As cardiomiopatias, em especial a forma dilatada, constituem o segundo grupo mais relevante. Elas podem ser primárias (genéticas/idiopáticas) ou secundárias (inflamatórias/miocardites, nutricionais ou tóxicas), representando a fatia citada de 20% a 30% dos casos.\n\nAlternativa C (Incorreta/Gabarito): Esta afirmação é falsa porque a apresentação clínica da IC na pediatria é altamente dependente da faixa etária. O desenvolvimento ponderal e o comportamento fisiológico mudam conforme a maturação da criança. Lactentes não costumam apresentar edema de membros inferiores ou ortopneia clássica; eles manifestam IC através de dificuldade alimentar, sudorese excessiva ao mamar (esforço físico), taquipneia persistente e déficit de ganho de peso. Já crianças maiores e adolescentes aproximam-se da sintomatologia do adulto. Portanto, os sintomas dependem sim da idade.\n\nAlternativa D (Correta): O manejo clínico baseia-se na avaliação do perfil hemodinâmico. Dividir o paciente entre aquele que tem sinais de congestão (edema pulmonar ou sistêmico) e aquele com sinais de baixo débito (má perfusão periférica, pulsos finos) permite direcionar o uso de diuréticos para o primeiro grupo e inotrópicos para o segundo, otimizando o tratamento agudo.\n\nAlternativa E (Correta): Pacientes com disfunção ventricular grave (fraqueza extrema do músculo cardíaco) apresentam estase sanguínea. Quando a Fração de Ejeção do Ventrículo Esquerdo (FEVE) está abaixo de 25%, o risco de formação de trombos intracavitários é muito alto. Por isso, as diretrizes recomendam a anticoagulação profilática para evitar fenômenos tromboembólicos sistêmicos, e o uso de heparina (fase aguda) seguido de varfarina ou outros anticoagulantes para tratamento de trombos já instalados.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:54.910Z"
+  },
+  {
+    "id": "AJUDA_3c9eaf60-a1ab-40a8-a081-82a9cd5ec7df",
+    "originalId": "3c9eaf60-a1ab-40a8-a081-82a9cd5ec7df",
+    "statement": "A dor retroesternal típica do infarto agudo do miocárdio apresenta padrões característicos de irradiação relacionados à inervação autonômica cardíaca. A irradiação da dor para a mandíbula e face medial do braço esquerdo, associada ao acometimento da parede inferior do ventrículo esquerdo, ocorre predominantemente por comprometimento de fibras nervosas que acompanham a distribuição de raízes sensitivas de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "C7 a T4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "T1 a T5.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "C5 a C7.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "T5 a T8.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "CONTEXTO FISIOPATOLÓGICO\n\nA dor torácica no infarto agudo do miocárdio é classificada como uma dor visceral profunda. A base neuroanatômica para a compreensão de suas características e irradiações reside no trajeto das fibras aferentes (sensitivas) que saem do coração. Essas fibras acompanham os nervos simpáticos em sentido retrógrado, passando pelos gânglios simpáticos cervicais e torácicos, e entram na medula espinal através das raízes dorsais.\n\nO conceito-chave aqui é a Teoria da Convergência-Projeção. As fibras nervosas que trazem a dor do coração (viscerais) entram nos mesmos níveis medulares que as fibras que trazem a sensibilidade da pele e dos músculos (somáticas) de certas regiões do corpo. Quando o sinal doloroso chega à medula, o cérebro tem dificuldade em distinguir a origem exata e projeta a sensação de dor para as áreas somáticas correspondentes aos mesmos segmentos medulares (dermátomos).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (C7 a T4): Esta alternativa está incorreta porque, embora inclua a maior parte dos segmentos torácicos relevantes, a raiz C7 não é um ponto de entrada primário para as aferências nociceptivas cardíacas viscerais. A sensibilidade cardíaca é predominantemente conduzida pelos níveis torácicos.\n\nAlternativa B (T1 a T5): Esta é a alternativa correta. As fibras aferentes viscerais que conduzem os estímulos dolorosos do miocárdio entram na medula espinal predominantemente nos níveis de T1, T2, T3, T4 e T5. \n1. A irradiação para a face medial do braço esquerdo é explicada especificamente pelo envolvimento do dermátomo de T1 (nervo cutâneo medial do braço). \n2. A dor retroesternal clássica ocorre devido aos níveis de T2 a T4. \n3. No caso do acometimento da parede inferior, a dor pode ser referida em regiões mais baixas ou até epigástricas (T5), além da mandíbula, que ocorre por conexões reflexas complexas e compartilhamento de vias ascendentes que podem envolver o núcleo espinal do nervo trigêmeo ou o nervo vago. Portanto, o intervalo T1-T5 cobre a base anatômica da dor referida cardíaca.\n\nAlternativa C (C5 a C7): Esta alternativa está incorreta. As raízes de C5 a C7 suprem a sensibilidade da face lateral do braço, antebraço e parte da mão. A dor de origem cardíaca raramente utiliza esses níveis cervicais médios como via principal de entrada medular, tornando esta opção anatomicamente inadequada para o quadro descrito.\n\nAlternativa D (T5 a T8): Esta alternativa está incorreta. Estes segmentos torácicos inferiores recebem aferências sensoriais de órgãos do abdome superior, como o estômago, pâncreas e vesícula biliar. Embora um infarto de parede inferior possa, por vezes, mimetizar uma dor epigástrica, o intervalo T5-T8 não explica a irradiação para a face medial do braço (T1) nem a dor retroesternal típica (T2-T4).\n\nCONCLUSÃO\n\nO padrão de irradiação para o membro superior esquerdo (especialmente face medial) e mandíbula, associado à dor retroesternal, é classicamente mediado pelas fibras simpáticas aferentes que convergem para os segmentos medulares de T1 a T5.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:54.910Z"
+  },
+  {
+    "id": "AJUDA_3ca3f151-eb59-4437-890e-c5ff25c90321",
+    "originalId": "3ca3f151-eb59-4437-890e-c5ff25c90321",
+    "statement": "Durante atendimento de uma criança asmática com crise moderada, o médico nota forte odor de cigarro no pai. Após confirmar que o adulto é fumante ativo, decide iniciar abordagem motivacional. Qual a próxima pergunta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "“Você já considerou parar de fumar em algum momento?”",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "“Quantos cigarros você fuma diariamente?”",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "“Você tem consciência dos riscos do tabaco para sua saúde?”",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "“Sabia que isso piora a asma do seu filho?”",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "“Você percebe como o cigarro faz mal para sua família?”",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda a técnica de Entrevista Motivacional e o Modelo Transteórico de Prochaska e DiClemente, ferramentas fundamentais para lidar com mudanças de comportamento, como a cessação do tabagismo. O ponto central é identificar em qual estágio de prontidão para a mudança o indivíduo se encontra para, então, adequar a intervenção médica.\n\nAlternativa a: Correta. Para iniciar uma abordagem motivacional, o primeiro passo é avaliar o estágio de mudança. Ao perguntar se o pai já considerou parar de fumar, o médico investiga se ele está na fase de pré-contemplação (quando não reconhece o problema ou não quer mudar) ou na fase de contemplação (quando reconhece o problema e pensa em mudar, mas ainda está ambivalente). É uma pergunta aberta que estimula a reflexão sem ser confrontadora e permite que o médico saiba como prosseguir com o aconselhamento.\n\nAlternativa b: Incorreta. Esta pergunta serve para quantificar o vício e a carga tabágica, o que é importante para o histórico clínico e para avaliar o grau de dependência física (como no Teste de Fagerström), mas não avalia a motivação ou a prontidão do paciente para a mudança naquele momento.\n\nAlternativa c: Incorreta. Esta é uma abordagem meramente informativa e, por vezes, paternalista. A grande maioria dos fumantes tem consciência de que o cigarro faz mal à saúde. Repetir informações óbvias ou \"dar sermão\" costuma criar uma barreira na comunicação e aumentar a resistência do paciente ao tratamento.\n\nAlternativa d: Incorreta. Esta opção utiliza a indução de culpa como ferramenta. Embora seja um fato clínico que o tabagismo passivo agrava a asma infantil, apontar isso de forma direta e acusatória durante um atendimento de crise tende a gerar um mecanismo de defesa, negação e afastamento do pai, prejudicando a aliança terapêutica necessária para o sucesso da cessação tabágica.\n\nAlternativa e: Incorreta. Assim como a alternativa anterior, esta pergunta possui um caráter de julgamento moral. Na entrevista motivacional, deve-se evitar o confronto direto e o julgamento. O objetivo é apoiar a autonomia do paciente e ajudá-lo a encontrar suas próprias razões para parar, em vez de impor uma visão externa sobre seus erros.\n\nConclusão: A abordagem inicial mais adequada em intervenções motivacionais deve ser sempre a exploração da prontidão para a mudança, utilizando uma linguagem neutra, empática e acolhedora, característica presente apenas na alternativa A.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Dependência Química",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:30:54.910Z"
+  }
+]

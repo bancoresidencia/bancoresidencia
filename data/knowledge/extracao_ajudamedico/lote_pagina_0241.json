@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_4326558d-a554-4c3d-8d84-66bd901ecc40",
+    "originalId": "4326558d-a554-4c3d-8d84-66bd901ecc40",
+    "statement": "Paciente vítima de atropelamento é atendido no pronto atendimento e no exame físico nota-se abertura ocular somente aos estímulos dolorosos / de pressão, emite palavras inapropriadas e tem flexão anormal dos membros. Assinale a alternativa que contém a correta pontuação desses achados do exame físico de acordo com a escala de coma de Glasgow.",
+    "options": [
+      {
+        "id": "A",
+        "text": "6 pontos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "7 pontos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "8 pontos",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "9 pontos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "10 pontos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Escala de Coma de Glasgow (ECG) é o principal instrumento para avaliação do nível de consciência em pacientes com traumatismo cranioencefálico (TCE). A técnica foi atualizada recentemente para padronizar os estímulos, utilizando o termo \"pressão\" em vez de \"dor\".\n\nPara resolver a questão, somamos os três domínios da escala:\n\n1. Abertura Ocular: O paciente abre os olhos apenas diante de estímulo de pressão.\n- Espontânea: 4\n- Ao som: 3\n- À pressão: 2\n- Ausente: 1\nPontuação: 2\n\n2. Resposta Verbal: O paciente emite palavras inapropriadas (palavras isoladas e discerníveis, mas sem formar frases ou diálogo).\n- Orientada: 5\n- Confusa: 4\n- Palavras inapropriadas: 3\n- Sons incompreensíveis: 2\n- Ausente: 1\nPontuação: 3\n\n3. Resposta Motora: O paciente apresenta flexão anormal (também conhecida como postura de decorticação).\n- Obedece a comandos: 6\n- Localiza o estímulo: 5\n- Flexão normal (retirada/fuga): 4\n- Flexão anormal: 3\n- Extensão (descerebração): 2\n- Ausente: 1\nPontuação: 3\n\nSomatória: 2 + 3 + 3 = 8 pontos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Uma pontuação 6 indicaria um estado neurológico ainda mais deprimido, como ausência de abertura ocular (1) e emissão de apenas sons (2) com a mesma resposta motora (3).\n\nAlternativa b) Incorreta. O valor 7 não corresponde à soma dos achados específicos descritos (2+3+3).\n\nAlternativa c) Correta. A soma exata dos parâmetros fornecidos resulta em 8. Vale lembrar que, na prática clínica, Glasgow igual ou menor que 8 é um critério clássico para indicação de Intubação Orotraqueal (IOT) para proteção de via aérea.\n\nAlternativa d) Incorreta. Para chegar a 9 pontos, o paciente precisaria apresentar uma resposta ligeiramente melhor, como flexão normal (retirada ao estímulo) no parâmetro motor.\n\nAlternativa e) Incorreta. O valor 10 indicaria um paciente com nível de consciência moderado, incompatível com os sinais graves de flexão anormal e palavras inapropriadas relatados.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:15.356Z"
+  },
+  {
+    "id": "AJUDA_4326a971-f6f7-46a7-a21e-6ccb15b2ff2c",
+    "originalId": "4326a971-f6f7-46a7-a21e-6ccb15b2ff2c",
+    "statement": "O agente anestésico inalatório não indicado em presença de espaços aéreos fechados, como procedimentos laparoscópicos, pneumotórax, obstrução intestinal, operações do ouvido médio ou retina, é o",
+    "options": [
+      {
+        "id": "A",
+        "text": "óxido nitroso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "halotano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "propofol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "etomidato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tiopental.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O ponto central desta questão é o comportamento físico-químico dos agentes anestésicos em relação à sua solubilidade no sangue e à sua capacidade de difusão para espaços gasosos.\n\nA alternativa correta é a (a) óxido nitroso.\n\nO óxido nitroso (N2O) é um gás inorgânico que apresenta uma característica marcante: ele é cerca de 30 a 34 vezes mais solúvel no sangue do que o nitrogênio (N2), o principal componente do ar atmosférico. No entanto, em termos absolutos, o N2O é pouco solúvel no sangue (baixo coeficiente de partição sangue/gás), o que permite que ele se difunda muito rapidamente dos capilares para cavidades que contenham ar.\n\nQuando o óxido nitroso é administrado, ele entra nessas cavidades gasosas em uma velocidade muito superior à velocidade com que o nitrogênio consegue sair delas para o sangue. O resultado é um aumento rápido do volume (em cavidades complacentes, como alças intestinais ou pneumotórax) ou um aumento da pressão (em cavidades rígidas, como o ouvido médio ou o globo ocular com bolhas de gás).\n\nPor esse motivo, o óxido nitroso é contraindicado ou deve ser usado com extrema cautela nas seguintes situações:\n- Pneumotórax: Pode dobrar ou triplicar o volume do pneumotórax em poucos minutos.\n- Obstrução intestinal: Piora a distensão das alças, dificultando a cirurgia e a ventilação.\n- Cirurgias de ouvido médio: Pode aumentar a pressão timpânica e deslocar enxertos de timpanoplastia.\n- Cirurgias oftalmológicas com uso de gases (como SF6 ou C3F8): O aumento da pressão intraocular pode levar à isquemia da retina e à cegueira.\n- Embolia gasosa: O N2O expande a bolha de gás, agravando o quadro clínico.\n\nAnálise das demais alternativas:\n\nb) Halotano: Incorreto. É um agente anestésico inalatório volátil (líquido que se vaporiza). Embora seja um anestésico inalatório, ele não possui a propriedade de difusão rápida para espaços aéreos fechados como o óxido nitroso. Seus principais efeitos colaterais são a sensibilização do miocárdio às catecolaminas e o risco de hepatite medicamentosa.\n\nc) Propofol: Incorreto. É um agente anestésico intravenoso. Por ser administrado diretamente na corrente sanguínea e não ser um gás com baixa solubilidade, ele não interfere no volume ou na pressão de espaços aéreos fechados.\n\nd) Etomidato: Incorreto. É um agente indutor intravenoso, conhecido por sua estabilidade hemodinâmica. Assim como o propofol, não possui propriedades físicas que causem expansão de cavidades gasosas.\n\ne) Tiopental: Incorreto. É um barbitúrico de uso intravenoso utilizado para indução anestésica e proteção cerebral. Também não apresenta qualquer relação com a expansão de espaços aéreos fechados.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:15.356Z"
+  },
+  {
+    "id": "AJUDA_433708d9-2947-4322-8fb4-7e65c9dee3ab",
+    "originalId": "433708d9-2947-4322-8fb4-7e65c9dee3ab",
+    "statement": "Os distúrbios hipertensivos permanecem entre os mais significativos e desafiadores da obstetrícia, o modo como a gravidez incita a pressão ou a agrava ainda permanece sem resposta. Suas repercussões sobre o binômio podem ter desfechos muito desfavoráveis, sendo um dos membros da tríade fatal: hipertensão, hemorragia e infecção. Sobre os distúrbios da pressão e a gravides, esta CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A incidência de eclâmpsia tem se mantido a mesma nos últimos anos, mesmo em áreas com maior disponibilidade da medicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O aumento da creatinina acima de 1mg/dl e em mais de três vezes das enzimas hepáticas, porém sem plaquetopenia associada não são considerados critérios de gravidade da pré-eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico de hipertensão gestacional é realizado com medidas de maiores ou iguais a 140/90mmHg na segunda metade da gestação com proteinúria inferior a 500 mg em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A fisiopatologia da pré-eclâmpsia pode envolver a primeira exposição da mulher as vilosidades coriônicas, a superabundância dessas vilosidades, condições pré-existentes endoteliais e predisposição genética.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A alternativa (d) é a correta. Abaixo, analisamos detalhadamente cada uma das opções:\n\nAlternativa a) Incorreta. A incidência de eclâmpsia não se manteve a mesma. Em locais com maior disponibilidade de assistência médica, acesso qualificado ao pré-natal e uso protocolado do sulfato de magnésio (profilaxia), houve uma redução drástica na ocorrência de crises convulsivas em gestantes com pré-eclâmpsia.\n\nAlternativa b) Incorreta. A presença de disfunção renal (creatinina acima de 1,1 mg/dL ou o dobro do seu valor basal) e a disfunção hepática (elevação das transaminases em pelo menos duas vezes o valor de referência) são critérios de gravidade na pré-eclâmpsia. A ausência de plaquetopenia não anula esses achados; basta um desses critérios de disfunção orgânica para classificar a pré-eclâmpsia como grave.\n\nAlternativa c) Incorreta. A hipertensão gestacional é caracterizada pelo surgimento de hipertensão (maior ou igual a 140/90 mmHg) após a 20ª semana de gravidez em uma mulher previamente normotensa, mas obrigatoriamente sem a presença de proteinúria significativa. O ponto de corte para proteinúria na definição de pré-eclâmpsia é de 300 mg em 24 horas. Portanto, uma proteinúria de 400 mg, por exemplo, já definiria pré-eclâmpsia e não hipertensão gestacional.\n\nAlternativa d) Correta. Esta alternativa resume as principais teorias e fatores de risco associados à gênese da pré-eclâmpsia. A \"primeira exposição às vilosidades\" explica a maior incidência em primigestas; a \"superabundância de vilosidades\" justifica o risco aumentado em gestações múltiplas e na doença trofoblástica gestacional (mola); as \"condições endoteliais preexistentes\" (como hipertensão crônica, diabetes e doenças autoimunes) aumentam a vulnerabilidade do sistema vascular; e a \"predisposição genética\" é um fator bem estabelecido em casos de histórico familiar positivo. Todos esses elementos contribuem para a falha na segunda onda de migração trofoblástica e para o consequente estresse oxidativo placentário.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:15.356Z"
+  },
+  {
+    "id": "AJUDA_43399f04-462a-4984-8eaa-3f6a236adc46",
+    "originalId": "43399f04-462a-4984-8eaa-3f6a236adc46",
+    "statement": "Segundo a Associação Brasileira de Hematologia, Hemoterapia e Terapia Celular (ABHH) no Consenso PBM-ABHH e no Guia para o uso de hemocomponentes do Ministério da Saúde, em circunstâncias clínicas em que não há sangramento ativo grave, qual das alternativas abaixo reflete a prática recomendada para a transfusão de concentrado de hemácias?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transfundir concentrado de hemácias em qualquer paciente com hemoglobina < 9 g/dL, independentemente de sintomas ou contexto clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Utilizar o valor de hemoglobina sozinho como critério absoluto de transfusão, ignorando a estabilidade hemodinâmica e sintomas do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Evitar transfundir concentrado de hemácias mesmo em pacientes sintomáticos com hemoglobina < 7 g/dL se não houver sangramento visível.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Avaliar o paciente considerando hemoglobina, quadro clínico, sintomas de hipoxia ou instabilidade hemodinâmica, e priorizar a estratégia de transfusão orientada por paciente (Patient-Blood-Management/PBM).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A explicação para esta questão baseia-se nas diretrizes modernas de hemoterapia, que priorizam a Estratégia Restritiva de transfusão e o conceito de Patient Blood Management (PBM).\n\nAlternativa (a) Incorreta: Transfundir rotineiramente pacientes com hemoglobina abaixo de 9 g/dL é considerada uma estratégia liberal. As evidências atuais e os consensos da ABHH e do Ministério da Saúde indicam que, para a maioria dos pacientes estáveis e sem sangramento ativo, o gatilho transfusional deve ser mais baixo (geralmente hemoglobina menor que 7 g/dL), visando reduzir riscos de sobrecarga volêmica e reações transfusionais.\n\nAlternativa (b) Incorreta: O valor da hemoglobina é apenas um parâmetro laboratorial e não deve ser utilizado como critério absoluto ou isolado. A decisão transfusional deve obrigatoriamente considerar a reserva fisiológica do paciente, a presença de comorbidades (como doença coronariana) e a presença de sinais clínicos de hipóxia tecidual.\n\nAlternativa (c) Incorreta: Embora o gatilho de 7 g/dL seja comum para pacientes assintomáticos e estáveis, a presença de sintomas de anemia (como dispneia, taquicardia persistente ou dor anginosa) é um indicativo de que a oferta de oxigênio está insuficiente. Nesses casos, a transfusão está indicada mesmo na ausência de sangramento visível.\n\nAlternativa (d) Correta: Esta alternativa resume os pilares do Patient Blood Management (PBM). A recomendação atual é que a transfusão seja individualizada. Deve-se avaliar o binômio laboratório (hemoglobina) e clínica (sinais de instabilidade ou hipóxia). O PBM busca tratar a anemia de forma multifatorial, minimizar perdas iatrogênicas e otimizar a tolerância do paciente à anemia, evitando transfusões desnecessárias e focando na segurança do paciente.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Medicina Transfusional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:15.356Z"
+  },
+  {
+    "id": "AJUDA_434b1a21-d3b4-4e26-a089-76e2cea81736",
+    "originalId": "434b1a21-d3b4-4e26-a089-76e2cea81736",
+    "statement": "Um teste rápido para dengue tem sensibilidade de 85% e especificidade de 95%. Em um cenário de epidemia, observou-se valor preditivo positivo (VPP) de 90%. Se o mesmo teste for utilizado em uma cidade sem surto epidêmico, o VPP esperado será",
+    "options": [
+      {
+        "id": "A",
+        "text": "maior, pois depende apenas da especificidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "menor, pois o VPP diminui quando a prevalência da doença é baixa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "igual, já que, teoricamente, sensibilidade e especificidade não variam com a prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "inalterado, porque o teste foi validado para ser usado em qualquer população.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender essa questão, é fundamental diferenciar as propriedades intrínsecas de um teste diagnóstico das suas propriedades extrínsecas.\n\nSensibilidade e Especificidade são propriedades intrínsecas. Teoricamente, elas não mudam conforme a quantidade de doentes na população, pois avaliam o desempenho do teste em relação a indivíduos sabidamente doentes ou sabidamente saudáveis.\n\nJá os Valores Preditivos (Positivo e Negativo) são propriedades extrínsecas. Eles dependem diretamente da prevalência da doença na população testada. \n\nO Valor Preditivo Positivo (VPP) indica a probabilidade de um indivíduo estar realmente doente dado que o seu teste foi positivo. Existe uma relação diretamente proporcional entre a prevalência e o VPP: quanto maior a prevalência da doença, maior será o VPP. Por outro lado, quanto menor a prevalência (como em uma cidade sem surto epidêmico), menor será o VPP. Isso ocorre porque, em populações com poucos doentes, a chance de um resultado positivo ser um \"falso-positivo\" aumenta proporcionalmente em relação aos \"verdadeiros-positivos\".\n\nAnálise das alternativas:\n\na) Incorreta. O VPP será menor, não maior. Além disso, o VPP não depende apenas da especificidade; ele é influenciado tanto pela especificidade quanto pela prevalência da doença.\n\nb) Correta. Como a cidade não está em surto, a prevalência da dengue é baixa. Em cenários de baixa prevalência, o número de resultados falsos-positivos ganha peso estatístico, o que reduz a probabilidade de um teste positivo ser um caso real da doença (VPP).\n\nc) Incorreta. Embora a sensibilidade e a especificidade não variem com a prevalência, o VPP varia drasticamente. A questão pede o comportamento do VPP, e não das propriedades intrínsecas.\n\nd) Incorreta. A validação do teste para uso populacional garante que ele mantém sua sensibilidade e especificidade, mas não impede que o VPP flutue conforme a probabilidade pré-teste (prevalência) da região onde é aplicado.\n\nGabarito: Letra (b).",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:15.356Z"
+  },
+  {
+    "id": "AJUDA_435a3a30-b90d-40c4-b916-54fbe631d37b",
+    "originalId": "435a3a30-b90d-40c4-b916-54fbe631d37b",
+    "statement": "Mulher, 34 anos, que quer engravidar, realiza ultrassonografias seriadas a fim de programar o coito. Laudo da US de hoje: 5 imagens no ovário direito, regulares, anecóicas, homogêneas, com menos de 10mm em seu maior diâmetro; no ovário esquerdo, 1 imagem de bordas irregulares, com conteúdo heterogêneo, parcialmente hipoecogênico, presença de halo vascular ao Doppler; endométrio de aspecto hiperecogênico, homogêneo, medindo 9,5mm de espessura; fundo de saco posterior com pequena quantidade de líquido livre. Sobre a ovulação e fase do ciclo menstrual, pode-se afirmar, que essa paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ainda não ovulou e encontra-se na fase lútea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ainda não ovulou e encontra-se na fase folicular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "já ovulou e encontra-se na fase folicular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "já ovulou e encontra-se na fase lútea",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, precisamos analisar os achados ultrassonográficos e correlacioná-los com a fisiologia do ciclo menstrual.\n\nA análise detalhada dos dados revela o seguinte:\n\n1. Ovário Esquerdo: A descrição de uma imagem de bordas irregulares, conteúdo heterogêneo, parcialmente hipoecogênico e com halo vascular ao Doppler é patognomônica do corpo lúteo. O corpo lúteo se forma logo após a ruptura do folículo dominante (ovulação). O halo vascular observado no Doppler representa a intensa angiogênese necessária para a produção hormonal nessa fase.\n\n2. Endométrio: O aspecto hiperecogênico e homogêneo é característico do endométrio secretor. Na fase folicular (pré-ovulatória), o endométrio é tipicamente trilaminar. Após a ovulação, a progesterona produzida pelo corpo lúteo modifica o estroma endometrial, tornando-o mais denso e ecogênico (mais branco na imagem).\n\n3. Fundo de Saco Posterior: A presença de pequena quantidade de líquido livre é um sinal indireto de ovulação recente, decorrente da liberação do líquido folicular no momento da ruptura do folículo.\n\n4. Ovário Direito: Apresenta apenas folículos antrais (menores que 10 mm), o que é normal em qualquer fase do ciclo, indicando que não houve recrutamento de um folículo dominante neste ovário especificamente.\n\nAnálise das alternativas:\n\na) Incorreta. O achado de corpo lúteo no ovário esquerdo, o líquido livre no fundo de saco e o endométrio hiperecogênico confirmam que a ovulação já ocorreu.\n\nb) Incorreta. A paciente já ovulou e, portanto, não está mais na fase folicular. Além disso, o endométrio da fase folicular seria trilaminar e não hiperecogênico.\n\nc) Incorreta. Embora afirme corretamente que a paciente já ovulou, erra ao dizer que ela se encontra na fase folicular. Após a ovulação, inicia-se obrigatoriamente a fase lútea.\n\nd) Correta. Os sinais de corpo lúteo (imagem irregular com halo vascular), líquido livre na pelve e endométrio secretor (hiperecogênico) confirmam que a ovulação já aconteceu e que a paciente está na fase lútea do ciclo.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Ciclo Menstrual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:15.356Z"
+  },
+  {
+    "id": "AJUDA_43632a78-9356-4ec3-8f51-b18d3dd47fd6",
+    "originalId": "43632a78-9356-4ec3-8f51-b18d3dd47fd6",
+    "statement": "Sobre neoplasia de tireoide, todas as alternativas estão corretas, EXCETO,",
+    "options": [
+      {
+        "id": "A",
+        "text": "a incidência aumenta com a idade sendo raros em crianças.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "as neoplasias malignas ocorrem duas vezes mais frequentemente nas mulheres que nos homens.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "são fatores causadores do câncer a irradiação, a baixa ingesta de iodo e a predisposição genética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o melhor método de investigação da natureza de um nódulo tireoidiano é a punção do nódulo com agulha fina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "quando não tratado o câncer invade estruturas adjacentes como o esôfago e a traqueia, levando a disfagia progressiva e ou em dispnéia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a: Esta afirmativa está correta. A incidência das neoplasias de tireoide aumenta progressivamente com a idade, atingindo seu pico na meia-idade. Em crianças e adolescentes, esses tumores são considerados raros, representando uma pequena fração do total de casos diagnosticados.\n\nAlternativa b: Esta é a alternativa incorreta (Gabarito). Embora o câncer de tireoide seja de fato mais comum no sexo feminino, a proporção é maior do que a sugerida na alternativa. A literatura médica e estatísticas epidemiológicas indicam que a doença ocorre de 3 a 4 vezes mais frequentemente em mulheres do que em homens, e não apenas duas vezes mais.\n\nAlternativa c: Esta afirmativa está correta. A exposição à radiação ionizante, principalmente durante a infância e adolescência, é o principal fator de risco ambiental. A baixa ingestão de iodo está historicamente associada a uma maior incidência de carcinomas foliculares e anaplásicos. Já a predisposição genética é evidente em casos familiares de carcinoma papilar e, de forma muito específica, no carcinoma medular de tireoide (associado às neoplasias endócrinas múltiplas).\n\nAlternativa d: Esta afirmativa está correta. A Punção Aspirativa por Agulha Fina (PAAF) é o padrão-ouro na avaliação inicial de nódulos tireoidianos suspeitos. É um método seguro, de baixo custo e com alta sensibilidade e especificidade para diferenciar lesões benignas de malignas, sendo fundamental para a decisão cirúrgica.\n\nAlternativa e: Esta afirmativa está correta. O crescimento local de um carcinoma de tireoide não tratado pode levar à invasão de órgãos adjacentes. O comprometimento da traqueia pode gerar obstrução respiratória e falta de ar (dispneia), enquanto a invasão ou compressão do esôfago dificulta a passagem de alimentos (disfagia progressiva). Além disso, pode ocorrer invasão do nervo laríngeo recorrente, causando rouquidão.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:15.356Z"
+  },
+  {
+    "id": "AJUDA_436feb4d-527a-45b2-9b96-22966e495dcd",
+    "originalId": "436feb4d-527a-45b2-9b96-22966e495dcd",
+    "statement": "Os efeitos fisiológicos da hemorragia em pacientes traumatizados são divididos em classes baseadas em sinais clínicos; essa classificação é uma ferramenta útil para estimar a porcentagem de perda sanguínea aguda.\n\nCom relação ao choque hemorrágico classe IV, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em situações não complicadas, ocorre taquicardia leve. Não ocorrem alterações mensuráveis na pressão arterial, na pressão de pulso ou na frequência respiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os sinais clínicos incluem taquicardia, taquipneia e redução da pressão de pulso. Esse último sinal está relacionado primariamente com um aumento da pressão arterial diastólica, devido ao aumento das catecolaminas circulantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A maioria dos doentes incluídos nessa categoria necessitará de transfusão de concentrado de hemácias e de outros hemocomponentes para reverter rapidamente o seu estado de choque.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ocorre perda estimada > 40% da volemia dos pacientes que frequentemente necessitam de transfusão sanguínea rápida (protocolo de transfusão maciça) e de intervenção cirúrgica imediata.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Essa classificação se refere aos casos de pacientes que sofreram exsanguinação imediatamente após o trauma, vieram a óbito e são considerados como potenciais doadores de órgãos pela gravidade do choque.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A classificação do choque hemorrágico proposta pelo ATLS (Advanced Trauma Life Support) é fundamental para o manejo inicial do paciente traumatizado, correlacionando a perda de volume sanguíneo com sinais clínicos. O choque Classe IV representa a forma mais grave de hipovolemia por sangramento.\n\nANÁLISE DAS ALTERNATIVAS:\n\nA) INCORRETA. Esta alternativa descreve o Choque Classe I. Neste estágio, a perda volêmica é inferior a 15% (aproximadamente 750 ml em um adulto de 70 kg). Os mecanismos compensatórios são eficazes, mantendo a frequência cardíaca quase normal ou com taquicardia leve, sem alterações na pressão arterial, pressão de pulso ou frequência respiratória. O enchimento capilar e o débito urinário permanecem preservados.\n\nB) INCORRETA. A descrição corresponde ao Choque Classe II. A perda estimada situa-se entre 15% e 30% (750 a 1500 ml). O sinal clínico clássico é o estreitamento da pressão de pulso (diferença entre a sistólica e a diastólica), causado pelo aumento da resistência vascular periférica (elevação da pressão diastólica) mediado pelas catecolaminas. O paciente apresenta taquicardia e taquipneia leves, mas a pressão arterial sistólica costuma estar mantida.\n\nC) INCORRETA. Esta alternativa descreve o manejo típico do Choque Classe III. Nesse estágio, a perda é de 30% a 40% (1500 a 2000 ml). O paciente apresenta queda da pressão arterial sistólica, taquicardia importante e alteração do estado mental (ansiedade ou confusão). A maioria desses pacientes já exige transfusão de concentrado de hemácias para restaurar a perfusão tecidual, além da cristaloidoterapia.\n\nD) CORRETA. No Choque Classe IV, a perda sanguínea é superior a 40% da volemia (acima de 2000 ml). Os sinais clínicos são extremos: taquicardia severa (> 140 bpm), hipotensão arterial acentuada, pressão de pulso muito reduzida (ou pressão diastólica imperceptível), débito urinário nulo (anúria) e estado mental gravemente deprimido (letargia ou coma). A sobrevivência depende de intervenção imediata, que inclui o controle cirúrgico ou angiográfico da fonte de sangramento e a ativação do protocolo de transfusão maciça (reposição de hemácias, plasma e plaquetas em proporções balanceadas).\n\nE) INCORRETA. A classificação de choque é uma ferramenta clínica para triagem e tratamento de pacientes vivos. Pacientes que falecem imediatamente no local do trauma (exsanguinação fulminante) não são classificados para fins de conduta terapêutica em Classe IV. O protocolo de doação de órgãos é um processo distinto, regulado por critérios de morte encefálica ou critérios específicos de doação após parada circulatória, não se confundindo com a definição clínica de choque hemorrágico.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:15.356Z"
+  },
+  {
+    "id": "AJUDA_4383e80a-cf7f-495a-9553-a34818da438c",
+    "originalId": "4383e80a-cf7f-495a-9553-a34818da438c",
+    "statement": "Mulher de 53 anos vem ao consultório ginecológico queixando-se de fogachos, irritabilidade, falha de memória. Refere última menstruação há cerca de 8 meses. Ao exame físico: IMC: 28 kg/m2. Paciente hipertensa crônica controlada, em uso de enalapril 20 mg/dia. Alega histerectomia há 10 anos por miomatose uterina. Trouxe exames de imagens: mamografia BI-RADS 2; laboratoriais sem alterações significativas. Nega antecedente de primeiro grau de câncer. Assinale a alternativa que apresenta o melhor tratamento para essa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estrogênio transdérmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estrogênio transdérmico e progesterona via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Progesterona isolada via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estrogênio e progesterona, ambos via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Estrogênio e testosterona transdérmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Resumo do caso: mulher de 53 anos, em pós-menopausa (amenorreia há mais de 12 meses ou, como aqui, com histerectomia prévia e sintomas climatéricos típicos), com sintomas vasomotores (fogachos) e sintomas neuropsíquicos (irritabilidade, falha de memória). Tem hipertensão controlada, IMC de 28, mamografia BI-RADS 2 (achado benigno) e nenhum antecedente familiar de câncer de mama. O dado decisivo é a histerectomia: sem útero, não há risco de hiperplasia ou câncer de endométrio por estrogênio sem oposição.\n\nConceitos-chave:\n- A terapia hormonal (TH) é o tratamento mais eficaz para sintomas vasomotores. Está indicada em mulheres sintomáticas com menos de 60 anos ou dentro de 10 anos da menopausa, sem contraindicações.\n- A progestagênio só é adicionado para proteger o endométrio. Em mulheres histerectomizadas, usa-se estrogênio isolado.\n- Com hipertensão, sobrepeso e risco cardiovascular aumentado, a via transdérmica é preferida. Ela evita a primeira passagem hepática, tem menor impacto sobre triglicerídeos e fatores de coagulação, e apresenta menor risco tromboembólico, de AVC e de colecistopatia que a via oral.\n- Progestagênios, sobretudo os sintéticos, podem aumentar o risco de câncer de mama no uso prolongado. O estrogênio isolado tem melhor perfil nesse aspecto (estudo WHI).\n\nAnálise das alternativas:\n\na) Correta. Estrogênio transdérmico isolado trata os sintomas, é adequado para a paciente histerectomizada e é a via mais segura em hipertensa com sobrepeso.\n\nb) Incorreta. A associação com progesterona é desnecessária sem útero. Só traria riscos adicionais (mamário, metabólico e possível efeito adverso sobre humor), sem benefício.\n\nc) Incorreta. Progesterona isolada não trata adequadamente os fogachos nem os demais sintomas, e não tem papel no tratamento de uma mulher sem útero.\n\nd) Incorreta. Combina duas falhas: a progesterona é desnecessária e a via oral é menos favorável em hipertensa, pois aumenta o risco tromboembólico e a síntese hepática de angiotensinogênio e de fatores de coagulação.\n\ne) Incorreta. A testosterona não é primeira linha. Reserva-se ao transtorno do desejo sexual hipoativo, que não é a queixa dessa paciente. Também não há indicação de adicioná-la para fogachos, irritabilidade ou memória, e traz efeitos androgênicos e metabólicos.\n\nMensagem final: em mulher sintomática, com menos de 60 anos, sem contraindicações e histerectomizada, a conduta é estrogênio isolado, preferencialmente transdérmico quando há fatores de risco cardiovascular, como hipertensão.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:15.356Z"
+  },
+  {
+    "id": "AJUDA_4385c193-2d4c-418c-a7de-e83a2da67def",
+    "originalId": "4385c193-2d4c-418c-a7de-e83a2da67def",
+    "statement": "Um homem de 19 anos estava jogando futebol em dia chuvoso quando foi atingido por um raio. Foi encontrado inconsciente pelo serviço pré-hospitalar. No atendimento inicial, apresentava queimaduras superficiais em pele, pupilas midriáticas e ausência de pulso central. Sobre as lesões causadas por descarga elétrica atmosférica (raio), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A transmissão da energia elétrica ocorre principalmente por contato direto com o raio, sendo essa a forma mais comum de acometimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A forma de transmissão por corrente de superfície (flashover) é a mais frequente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A corrente elétrica do raio atinge temperaturas superiores a 30.000 ºC, levando a queimaduras profundas, que representam a principal causa de morte imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As figuras de Lichtenberg correspondem a lesões cutâneas profundas decorrentes de necrose dérmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Para evitar a corrente de passo (step voltage), recomenda-se se abaixar e manter os pés afastados durante tempestades.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda os mecanismos de lesão e as características clínicas do acidente por raio (descarga elétrica atmosférica). Vamos analisar cada alternativa:\n\nAlternativa (a) Incorreta: O contato direto com o raio é responsável por apenas cerca de 3% a 5% dos casos. A maioria dos acidentes ocorre por mecanismos indiretos, como a descarga lateral (*side splash*), a corrente de passo ou a corrente de superfície.\n\nAlternativa (b) Correta: O *flashover* ou corrente de superfície é o mecanismo mais frequente de acometimento. Ele ocorre quando a corrente elétrica viaja pela superfície do corpo, em vez de atravessá-lo internamente. Esse fenômeno é favorecido pela presença de umidade na pele (suor ou chuva), o que reduz a resistência cutânea. Isso explica por que, apesar da altíssima voltagem, muitos pacientes não apresentam lesões internas graves ou queimaduras profundas.\n\nAlternativa (c) Incorreta: Embora o raio atinja temperaturas altíssimas (podendo superar 30.000 °C), o tempo de exposição é extremamente curto (milissegundos). Por isso, as queimaduras costumam ser superficiais e não são a principal causa de morte. A principal causa de morte imediata em vítimas de raio é a parada cardiorrespiratória decorrente da assistolia súbita e da paralisia dos músculos respiratórios.\n\nAlternativa (d) Incorreta: As figuras de Lichtenberg são lesões cutâneas clássicas do acidente por raio, mas não são queimaduras nem representam necrose dérmica. Elas são marcas eritematosas transitórias em padrão arborescente (semelhantes a ramos de árvore ou samambaias) que desaparecem em 24 a 48 horas. Elas ocorrem devido à ruptura de capilares na derme pela passagem da carga elétrica.\n\nAlternativa (e) Incorreta: A corrente de passo ocorre quando a energia do raio se dissipa pelo solo a partir do ponto de impacto, criando uma diferença de potencial entre os pés da vítima. Para evitá-la, a recomendação é manter os pés o mais próximos possível ou juntos. Manter os pés afastados aumenta a diferença de potencial elétrico entre eles, facilitando a passagem da corrente pelo corpo.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:15.356Z"
+  }
+]

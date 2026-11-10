@@ -234,6 +234,100 @@ function migrateGuestFlashcardsToUser(userId: string, supabaseClient: any) {
   }
 }
 
+function migrateGuestAgendaToUser(userId: string, supabaseClient: any) {
+  if (typeof window === 'undefined' || !userId) return;
+  try {
+    // 1. Migra Sessões de Estudo
+    const guestSessionsRaw = localStorage.getItem('bancoresidencia_study_sessions_guest') || localStorage.getItem('bancoresidencia_study_sessions');
+    if (guestSessionsRaw) {
+      try {
+        const guestSessions = JSON.parse(guestSessionsRaw);
+        if (Array.isArray(guestSessions) && guestSessions.length > 0) {
+          const userKey = `bancoresidencia_study_sessions_${userId}`;
+          const existingRaw = localStorage.getItem(userKey);
+          const existing = existingRaw ? JSON.parse(existingRaw) : [];
+          const existingIds = new Set(existing.map((e: any) => e.id));
+          const toAdd = guestSessions.filter((g: any) => !existingIds.has(g.id)).map((g: any) => ({
+            ...g,
+            userId
+          }));
+          const merged = [...toAdd, ...existing];
+          localStorage.setItem(userKey, JSON.stringify(merged));
+
+          const payload = toAdd.map((s: any) => ({
+            id: s.id,
+            user_id: userId,
+            start_time: s.startTime,
+            end_time: s.endTime,
+            duration_seconds: s.durationSeconds || 0,
+            taxonomy: s.taxonomy || {},
+            study_type: s.studyType || 'questoes',
+            questions_count: s.questionsCount || 0,
+            correct_count: s.correctCount || 0,
+            incorrect_count: s.incorrectCount || 0,
+            accuracy: s.accuracy || null,
+            session_source: s.sessionSource || 'manual',
+            notes: s.notes || null,
+            created_at: s.createdAt || new Date().toISOString()
+          }));
+
+          if (payload.length > 0) {
+            supabaseClient
+              .from('user_study_sessions')
+              .upsert(payload, { onConflict: 'id' })
+              .then(() => {}, () => {});
+          }
+          localStorage.removeItem('bancoresidencia_study_sessions_guest');
+        }
+      } catch {}
+    }
+
+    // 2. Migra Tarefas Agendadas da Agenda
+    const guestTasksRaw = localStorage.getItem('bancoresidencia_user_scheduled_tasks_guest') || localStorage.getItem('bancoresidencia_user_scheduled_tasks');
+    if (guestTasksRaw) {
+      try {
+        const guestTasks = JSON.parse(guestTasksRaw);
+        if (Array.isArray(guestTasks) && guestTasks.length > 0) {
+          const userKey = `bancoresidencia_user_scheduled_tasks_${userId}`;
+          const existingRaw = localStorage.getItem(userKey);
+          const existing = existingRaw ? JSON.parse(existingRaw) : [];
+          const existingIds = new Set(existing.map((e: any) => e.id));
+          const toAdd = guestTasks.filter((t: any) => !existingIds.has(t.id));
+          const merged = [...toAdd, ...existing];
+          localStorage.setItem(userKey, JSON.stringify(merged));
+
+          const payload = toAdd.map((t: any) => ({
+            id: t.id,
+            user_id: userId,
+            title: t.title,
+            category: t.category || 'estudo',
+            date: t.date || new Date().toISOString().split('T')[0],
+            start_time: t.startTime,
+            end_time: t.endTime,
+            start_minutes: t.startMinutes || 0,
+            end_minutes: t.endMinutes || 60,
+            source: t.source || 'plataforma',
+            description: t.description || '',
+            is_calendar_task: t.isCalendarTask ?? true,
+            is_completed: false,
+            updated_at: new Date().toISOString()
+          }));
+
+          if (payload.length > 0) {
+            supabaseClient
+              .from('user_scheduled_tasks')
+              .upsert(payload, { onConflict: 'id' })
+              .then(() => {}, () => {});
+          }
+          localStorage.removeItem('bancoresidencia_user_scheduled_tasks_guest');
+        }
+      } catch {}
+    }
+  } catch (err) {
+    console.warn('[AuthContext] Erro na migração de agenda do visitante:', err);
+  }
+}
+
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -469,6 +563,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         if (isMounted) setPersistedUser(account);
         migrateGuestAnswersToUser(session.user.id, supabase);
         migrateGuestFlashcardsToUser(session.user.id, supabase);
+        migrateGuestAgendaToUser(session.user.id, supabase);
       } else if (event === 'SIGNED_OUT') {
         if (isMounted) setPersistedUser(null);
         localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
@@ -501,6 +596,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
         migrateGuestAnswersToUser(data.user.id, supabase);
         migrateGuestFlashcardsToUser(data.user.id, supabase);
+        migrateGuestAgendaToUser(data.user.id, supabase);
       }
 
       return { success: true };
@@ -609,6 +705,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         localStorage.removeItem(`bancoresidencia_custom_decks_${currentUserId}`);
         localStorage.removeItem(`bancoresidencia_user_cards_${currentUserId}`);
         localStorage.removeItem(`bancoresidencia_flashcards_progress_${currentUserId}`);
+        localStorage.removeItem(`bancoresidencia_study_sessions_${currentUserId}`);
+        localStorage.removeItem(`bancoresidencia_user_scheduled_tasks_${currentUserId}`);
+        localStorage.removeItem(`bancoresidencia_google_events_${currentUserId}`);
+        localStorage.removeItem(`bancoresidencia_exported_slots_${currentUserId}`);
+        localStorage.removeItem('bancoresidencia_real_calendar_events');
+        localStorage.removeItem('bancoresidencia_google_calendar_connected');
+        localStorage.removeItem('bancoresidencia_google_access_token');
+        localStorage.removeItem('bancoresidencia_google_last_sync');
+        localStorage.removeItem('bancoresidencia_google_calendar_account');
+        localStorage.removeItem('bancoresidencia_study_timer_state');
         localStorage.removeItem(`user_target_exam_name_${currentUserId}`);
         localStorage.removeItem(`user_target_exam_date_${currentUserId}`);
       } catch {}

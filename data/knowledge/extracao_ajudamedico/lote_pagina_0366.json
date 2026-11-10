@@ -1,0 +1,513 @@
+[
+  {
+    "id": "AJUDA_654ba1ed-0e1f-4cc0-b675-b2041059a256",
+    "originalId": "654ba1ed-0e1f-4cc0-b675-b2041059a256",
+    "statement": "Lactente de 5 meses apresenta febre alta sem foco aparente há 48 horas. O exame de urina coletado por cateterismo mostra leucocitúria e nitrito positivo. A conduta inicial é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aguardar o resultado da urocultura para iniciar antibióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar antibioticoterapia empírica e solicitar urocultura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar profilaxia com nitrofurantoína e solicitar ultrassom.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repetir o exame de urina por saco coletor para confirmação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um lactente de 5 meses com febre sem foco aparente e exame de urina (EAS) sugestivo de infecção do trato urinário (ITU), apresentando leucocitúria e nitrito positivo. A coleta foi realizada por cateterismo vesical, que é um método estéril e confiável para pacientes sem controle esfincteriano.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Em lactentes jovens com febre, a demora no início do tratamento para a ITU está associada a um maior risco de lesão no parênquima renal (cicatrizes renais) e a uma possível evolução para sepse. Como a urocultura demora de 48 a 72 horas para apresentar resultados, o tratamento deve ser iniciado de forma empírica assim que a suspeita é fundamentada pelo EAS.\n\nAlternativa b) Correta. Esta é a conduta padrão. Diante de um quadro clínico compatível (febre sem foco) e um exame de triagem urinária alterado (presença de nitrito e leucócitos), deve-se colher a urocultura (padrão-ouro para o diagnóstico) e iniciar imediatamente a antibioticoterapia empírica. O tratamento poderá ser ajustado posteriormente conforme o resultado do antibiograma da urocultura.\n\nAlternativa c) Incorreta. A nitrofurantoína não é indicada para o tratamento de ITU febril em lactentes, pois possui baixa penetração no tecido renal, sendo reservada para casos de cistite ou profilaxia. Em lactentes com febre, a suspeita é sempre de pielonefrite. Além disso, o ultrassom é um exame complementar importante na investigação de malformações, mas não faz parte do tratamento inicial da infecção aguda.\n\nAlternativa d) Incorreta. O cateterismo vesical é um método de coleta superior ao saco coletor. O saco coletor possui uma taxa de contaminação muito alta (falsos-positivos), não sendo recomendado para confirmar diagnósticos. Se o exame colhido por um método estéril já é positivo, não há sentido em repetir a coleta por um método menos confiável.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:48.548Z"
+  },
+  {
+    "id": "AJUDA_65558696-0736-4d77-99fb-ebdde6ab30e3",
+    "originalId": "65558696-0736-4d77-99fb-ebdde6ab30e3",
+    "statement": "Mãe levou menina de 6 anos de idade ao Pronto Atendimento Infantil com história de há 4 dias febre alta e odinofagia, evoluindo há 24h com manchas pelo corpo. Ao exame físico: EGR, exantema micropapular difuso, áspero, sobretudo em face e tronco, com acentuação em dobras cutâneas e palidez perioral. Orofaringe: hiperemia com petéquias em palato e “língua em framboesa”. Linfonodos cervicais palpáveis, moveis, dolorosos a palpação, os maiores de 1,5cm. Eupneico, ausculta cardiopulmonar fisiológica e abdômen: sem visceromegalia. Cartão vacinal: sem informações. Qual o diagnóstico mais provável desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença de Kawasaki",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sarampo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Escarlatina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Rubéola",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Exantema infeccioso",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é um exemplo clássico de escarlatina, uma doença exantemática causada pela ação das exotoxinas pirogênicas do Streptococcus pyogenes (estreptococo do grupo A), geralmente ocorrendo após um episódio de faringite estreptocócica.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) INCORRETA. A doença de Kawasaki é uma vasculite de pequenos e médios vasos que acomete crianças. Embora possa apresentar a língua em framboesa e febre alta, o diagnóstico exige pelo menos 5 dias de febre associada a outros critérios, como conjuntivite não purulenta, alterações em extremidades (edema ou descamação) e linfonodopatia cervical geralmente unilateral. O exantema da Kawasaki não é classicamente micropapular áspero, e a presença de petéquias no palato e odinofagia intensa aponta mais diretamente para a etiologia estreptocócica.\n\nb) INCORRETA. O sarampo caracteriza-se por um pródromo com sintomas catarrais intensos (tosse, coriza e conjuntivite com fotofobia). O exantema é maculopapular morbiliforme, de progressão crânio-caudal, e não apresenta a textura de lixa. Outro sinal patognomônico ausente no caso são as manchas de Koplik na mucosa oral.\n\nc) CORRETA. O caso reúne os achados patognomônicos da escarlatina. O exantema micropapular difuso que confere sensação de pele áspera (pele em lixa) é a marca da doença. A acentuação nas dobras cutâneas é conhecida como sinal de Pastia, e a palidez ao redor da boca é o sinal de Filatov. A língua em framboesa e as petéquias no palato confirmam o foco infeccioso na orofaringe pelo estreptococo.\n\nd) INCORRETA. A rubéola é uma doença geralmente mais branda, com exantema maculopapular rosado que surge e desaparece rapidamente. O sinal clínico mais característico da rubéola é a presença de linfonodopatia retroauricular, occipital e cervical posterior, o que não foi enfatizado na questão, além de não apresentar o exantema áspero.\n\ne) INCORRETA. O eritema infeccioso, causado pelo parvovírus B19, apresenta-se tipicamente em três fases: a face esbofeteada, seguida por um exantema rendilhado em tronco e membros, que pode recorrer com exposição ao sol ou exercícios. Diferente da escarlatina, o paciente costuma estar em bom estado geral e muitas vezes já está afebril quando as manchas surgem.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:48.548Z"
+  },
+  {
+    "id": "AJUDA_655cf74c-f087-450a-8b97-f0e782add7da",
+    "originalId": "655cf74c-f087-450a-8b97-f0e782add7da",
+    "statement": "A imagem a seguir representa uma laceração ocorrida durante o parto vaginal, visualizada logo após a dequitação.\n\nCom base na figura e nas classificações de laceração perineal, segundo a profundidade e estruturas cometidas, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A lesão é uma laceração cujo reparo deve ser iniciado pela sutura da mucosa vaginal, sendo a realização do toque retal obrigatória após o procedimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A lesão é uma laceração de terceiro grau, que acomete o esfíncter anal externo, mas preserva o esfíncter anal interno e a mucosa retal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A lesão é uma laceração de segundo grau, com comprometimento do músculo transverso superficial do períneo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A lesão ilustrada é compatível com laceração de quarto grau, pois há comprometimento da mucosa retal e do esfíncter anal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A classificação das lacerações perineais baseia-se na profundidade das estruturas atingidas durante o trauma de parto. Para responder a essa questão, é necessário identificar visualmente as camadas expostas na ilustração.\n\nNa imagem, observa-se que a lesão se estende da vagina até o reto, atravessando toda a musculatura perineal e o complexo esfincteriano anal. A presença de uma abertura nítida no canal anal, revelando a luz do reto (mucosa retal), define a gravidade máxima da lesão.\n\nAnalise das alternativas:\n\nAlternativa a - Incorreta: O erro principal desta alternativa está na ordem do reparo cirúrgico. Em lacerações de quarto grau, a sutura deve obrigatoriamente ser iniciada pela camada mais profunda para reconstruir a integridade do canal anal. Portanto, começa-se pela sutura da mucosa retal, seguida pela sutura do esfíncter anal e, por fim, a mucosa vaginal e os músculos perineais. Iniciar pela mucosa vaginal impediria o acesso adequado para o fechamento correto do reto.\n\nAlternativa b - Incorreta: As lacerações de terceiro grau são aquelas que envolvem o complexo do esfíncter anal (subdivididas em 3a, 3b e 3c), mas que obrigatoriamente mantêm a mucosa retal íntegra. Como a ilustração mostra a mucosa retal rompida com exposição do canal anorretal, a classificação correta é de quarto grau.\n\nAlternativa c - Incorreta: A laceração de segundo grau atinge a pele, a mucosa vaginal e os músculos do corpo perineal (como o músculo transverso superficial do períneo e o bulbocavernoso), mas não avança sobre o esfíncter anal ou a mucosa retal. A imagem mostra uma lesão muito mais profunda do que o plano muscular superficial.\n\nAlternativa d - Correta: Esta alternativa descreve exatamente o que a imagem representa. A laceração de quarto grau é a mais grave e ocorre quando a lesão perineal atravessa todos os tecidos, incluindo o esfíncter anal (externo e interno) e a mucosa retal. Na figura, é possível ver a descontinuidade total do tecido até a cavidade retal, confirmando esse diagnóstico.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/3980f01231fd69fe2b2f9b36ba71bcb7ccd2c5070f2f51ca30c21d0cc4271be0.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_655cf74c-f087-450a-8b97-f0e782add7da_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:48.992Z"
+  },
+  {
+    "id": "AJUDA_655f4299-73ff-4722-af82-d7c8a2dc84e9",
+    "originalId": "655f4299-73ff-4722-af82-d7c8a2dc84e9",
+    "statement": "Assinale a assertiva correta sobre o câncer pélvico ginecológico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O rastreamento do carcinoma de endométrio está indicado para mulheres assintomáticas dos 45-65 anos, sendo realizado através da medida da espessura endometrial à ultrassonografia transvaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pacientes pré-menopáusicas com sangramento abundante ou irregular e pacientes pós-menopáusicas assintomáticas com células endometriais ao exame citopatológico de colo uterino têm indicação de biópsia endometrial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O tipo histológico mais frequente do carcinoma de ovário é o seroso de baixo grau, que tem origem em lesões intraepiteliais nas fímbrias das trompas uterinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As mutações em BRCA1 e BRCA2 estão associadas a risco de carcinoma de ovário; a mutação em BRCA2 confere maior risco ao ovário do que a em BRCA1.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa (a) INCORRETA: Não existe indicação de rastreamento para o câncer de endométrio em mulheres assintomáticas na população geral. O diagnóstico precoce é feito por meio da investigação rápida de sintomas, principalmente do sangramento uterino anormal na pós-menopausa. A ultrassonografia transvaginal é um exame de avaliação diagnóstica para mulheres que apresentam sintomas, e não uma ferramenta de rastreamento populacional.\n\nAlternativa (b) CORRETA: Esta alternativa reflete condutas bem estabelecidas na ginecologia oncológica. Em pacientes pré-menopáusicas, o sangramento uterino anormal (abundante ou irregular), especialmente se persistente ou em pacientes com fatores de risco como obesidade e anovulação crônica, exige avaliação histológica do endométrio. Na pós-menopausa, o achado de células endometriais em um exame citopatológico de colo uterino (Papanicolau) é considerado um achado anormal e suspeito, pois as células endometriais não deveriam estar descamando nesse período; portanto, a biópsia é mandatória para excluir hiperplasias ou neoplasias, mesmo que a paciente não apresente sangramento.\n\nAlternativa (c) INCORRETA: O tipo histológico mais frequente do carcinoma de ovário é o seroso de ALTO grau, e não o de baixo grau. O carcinoma seroso de alto grau é responsável por cerca de 70% a 80% das mortes por câncer de ovário. É esse subtipo específico (alto grau) que as evidências científicas atuais apontam ter origem em lesões precursoras localizadas nas fímbrias das trompas uterinas (conhecidas como STIC – Carcinoma Seroso Tubário Intraepitelial).\n\nAlternativa (d) INCORRETA: Ambas as mutações nos genes BRCA1 e BRCA2 elevam drasticamente o risco de câncer de ovário e de mama ao longo da vida. No entanto, o risco conferido pela mutação no BRCA1 é superior ao do BRCA2. Estima-se que o risco acumulado até os 80 anos para câncer de ovário seja de aproximadamente 40% a 50% para portadoras de mutação no BRCA1, enquanto para o BRCA2 esse risco gira em torno de 15% a 25%.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:48.992Z"
+  },
+  {
+    "id": "AJUDA_6568b991-8165-4b42-8239-35d994fdabd1",
+    "originalId": "6568b991-8165-4b42-8239-35d994fdabd1",
+    "statement": "Criança, sexo masculino, 1 mês de vida, previamente hígida, é trazida à unidade de emergência após cair do trocador, há cerca de 30 minutos. Segundo a mãe, ela havia tirado a mão dele por alguns segundos para jogar a fralda no lixo e ele teria rolado e caído do trocador. Na admissão, o paciente estava inconsciente, sendo levado à sala de emergência. A seguir, os dados da avaliação sistematizada:\nA: pérvia\nB: murmúrio vesicular e expansibilidade diminuídos, FR de 8 irpm, SpO2 de 89% em ar ambiente;\nC: tempo de enchimento capilar < 1 segundo, pulsos presentes e simétricos, ausculta com 2BRNF sem sopros, PA de 108×70 mmHg;\nD: escala de coma de Glasgow 7, pupilas isofotorreagentes;\nE: hematoma subgaleal em região temporal direita.\nFoi realizada tomografia de crânio, conforme imagem\ndemonstrada a seguir:\n\nApós medidas de estabilização, o caso foi notificado ao serviço social. Com relação a essa decisão da equipe médica, pode-se afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Foi indicada porque a tomografia não é compatível com o trauma reportado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Foi motivada pela presença de hematoma em localização incomum nos traumas pediátricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É justificada porque o mecanismo de trauma é incompatível com a faixa etária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não havia indicação, pois não há incongruências nas circunstâncias do trauma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Analise do caso:\nO paciente de 1 mes de vida apresenta traumatismo cranioencefalico grave. A tomografia de cranio associada ao caso demonstra uma colecao hiperdensa extra-axial com formato de lente biconvexa na regiao temporoparietal direita, compativel com hematoma epidural (extradural) agudo, acompanhada de hematoma subgaleal sobrejacente e importante desvio das estruturas da linha media. A notificacao ao servico social e ao Conselho Tutelar e mandataria diante de qualquer suspeita de trauma nao acidental (maus-tratos ou violencia infantil).\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. A imagem tomografica de hematoma epidural e compativel com impacto direto de alta energia, como uma queda de superficie elevada (trocador). O motivo da suspeita e notificacao nao e a incompatibilidade da imagem com uma queda, mas sim a impossibilidade de a crianca ter produzido o mecanismo descrito.\n\nAlternativa b: Incorreta. A regiao temporal e a localizacao mais frequente e tipica para o hematoma epidural, devido a fragilidade da regiao do pterio e a proximidade com os ramos da arteria meningea media. A indicacao da notificacao decorre da historia clinica, e nao da topografia da lesao.\n\nAlternativa c: Correta. O marco do desenvolvimento neuropsicomotor de rolar voluntariamente so e atingido por volta dos 4 a 6 meses de vida. Um lactente de apenas 1 mes de vida nao possui capacidade motora para rolar sozinho. Dessa forma, o relato de que a crianca teria rolado e caido do trocador e absolutamente incompativel com a sua faixa etaria, caracterizando uma historia inconsistente, que e o principal sinal de alerta para trauma nao acidental (abuso fisico).\n\nAlternativa d: Incorreta. Ha uma clara e grave incongruencia entre o mecanismo de trauma alegado e o desenvolvimento motor esperado para um bebe de 1 mes, tornando a notificacao e a investigacao social obrigatorias.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Maus Tratos",
+      "Emergências Pediátricas",
+      "Traumatismo Cranioencefálico",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/bf3c4aa87f9fb4cb2c7fe0fd64bd6d6b920275658aeb7bc03fa1071173813f99.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_6568b991-8165-4b42-8239-35d994fdabd1_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:49.474Z"
+  },
+  {
+    "id": "AJUDA_656b6ece-6283-42b2-a8a2-623dee52a1a0",
+    "originalId": "656b6ece-6283-42b2-a8a2-623dee52a1a0",
+    "statement": "Os pais de uma menina com 8 anos de idade e sinais avançados de puberdade procuram o pediatra, pois ouviram que a aceleração da puberdade pode estar associada a disruptores (desreguladores) endócrinos. Pode-se afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "No Brasil, os órgãos públicos de controle retiraram de circulação os desreguladores endócrinos artificiais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não há evidência de que os aditivos chamados desreguladores hormonais atuem na função hormonal de forma expressiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Esse conceito está sendo introduzido e divulgado nas mídias sociais, mas sem relação com pesquisa científica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os bisfenóis (BPA) foram excluídos da composição dos plásticos, não conferindo problema à saúde pública.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Os desreguladores endócrinos são substâncias que se acumulam no organismo e interferem no metabolismo hormonal, como os bisfenóis e os ftalatos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda o papel dos desreguladores endócrinos no desenvolvimento puberal, um tema cada vez mais relevante na endocrinologia pediátrica.\n\nAlternativa a) Incorreta. Embora existam regulações para restringir o uso de certas substâncias (como a proibição do bisfenol A em mamadeiras), muitos desreguladores endócrinos artificiais ainda circulam livremente no Brasil e no mundo, presentes em defensivos agrícolas, cosméticos e diversos produtos industriais.\n\nAlternativa b) Incorreta. Há um corpo robusto de evidências científicas demonstrando que essas substâncias podem atuar como agonistas ou antagonistas hormonais, interferindo de forma expressiva no eixo hipotálamo-hipófise-gonadal e em outros sistemas metabólicos.\n\nAlternativa c) Incorreta. Longe de ser um conceito apenas midiático, o estudo dos desreguladores endócrinos é uma área consolidada da ciência. Organizações internacionais de renome, como a Organização Mundial da Saúde (OMS) e a Endocrine Society, publicam periodicamente diretrizes e revisões sobre o impacto dessas substâncias na saúde humana.\n\nAlternativa d) Incorreta. O bisfenol A (BPA) não foi totalmente excluído dos plásticos. Apesar de restrições pontuais, ele ainda é encontrado em revestimentos de latas, papéis térmicos e diversos outros materiais. Além disso, muitos substitutos do BPA apresentam potencial de toxicidade semelhante, mantendo o problema como uma questão de saúde pública.\n\nAlternativa e) Correta. Esta alternativa traz a definição clássica de desreguladores endócrinos: substâncias químicas exógenas, ou misturas de substâncias, que interferem em qualquer aspecto da ação hormonal. Elas são frequentemente lipofílicas, o que favorece seu acúmulo no organismo (bioacumulação), e têm como exemplos típicos os bisfenóis e os ftalatos, que podem mimetizar estrogênios e contribuir para quadros de puberdade precoce ou acelerada.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:49.474Z"
+  },
+  {
+    "id": "AJUDA_6574b9dc-1fc2-43f6-86b6-fd31b834c85a",
+    "originalId": "6574b9dc-1fc2-43f6-86b6-fd31b834c85a",
+    "statement": "O uso excessivo de exames de rastreamento em pacientes sem sintomas, que pode levar a danos e tratamentos desnecessários, refere-se a qual conceito?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevenção secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prevenção quaternária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prevenção terciária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Promoção da saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O conceito central da questão é a Prevenção Quaternária. Esse nível de prevenção foca na detecção de indivíduos em risco de intervenções médicas excessivas ou desnecessárias, visando protegê-los de danos causados pelo próprio sistema de saúde.\n\nAlternativa (a) Incorreta: A prevenção secundária consiste no diagnóstico precoce de doenças em estágios iniciais ou assintomáticos, como os exames de rastreamento recomendados por protocolos (ex.: mamografia na idade correta). O enunciado não descreve a prática padrão da prevenção secundária, mas sim o seu uso abusivo e os danos decorrentes dessa prática inadequada.\n\nAlternativa (b) Correta: A prevenção quaternária é definida como o conjunto de medidas adotadas para identificar pacientes em risco de medicalização excessiva, protegendo-os de intervenções desnecessárias e sugerindo alternativas eticamente aceitáveis. Ela combate o sobrediagnóstico (*overdiagnosis*) e o sobretratamento (*overtreatment*), que ocorrem quando exames detectam alterações que nunca causariam sintomas ou morte se não fossem descobertas, levando a cirurgias ou medicamentos que trazem apenas riscos ao paciente. O princípio fundamental aqui é o *Primum non nocere* (primeiro, não causar dano).\n\nAlternativa (c) Incorreta: A prevenção terciária é voltada para pessoas que já apresentam uma doença estabelecida e sintomática. O objetivo é reduzir o impacto da doença, prevenir complicações, realizar a reabilitação e evitar incapacidades (ex.: fisioterapia após um AVC ou controle rigoroso de glicemia para evitar amputações no diabetes).\n\nAlternativa (d) Incorreta: A promoção da saúde refere-se a estratégias que visam melhorar as condições de vida e aumentar o controle da população sobre sua saúde, atuando nos determinantes sociais. Exemplos incluem políticas de saneamento básico, criação de espaços de lazer, campanhas contra o tabagismo e incentivo a dietas saudáveis. Não se confunde com a limitação de exames clínicos.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:49.474Z"
+  },
+  {
+    "id": "AJUDA_6576dd1e-1fed-46da-8b82-5f19545c6c49",
+    "originalId": "6576dd1e-1fed-46da-8b82-5f19545c6c49",
+    "statement": "Paciente de 39 anos de idade, fez implante de Dispositivo Intrauterino (DIU) de cobre 380-A em 10/07/2011. Vem a consulta referindo corrimento vaginal. Refere disúria e dispareunia. Ao exame especular: hiperemia de paredes vaginais, fio do DIU visualizado com comprimento de cerca de 2 cm, corrimento intenso, amarelo-esverdeado, bolhoso e espumoso, acompanhado de odor fétido. Foi realizado exame a fresco com identificação de parasita flagelado com auxílio de microscopia. O diagnóstico e conduta para este caso são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "manter o DIU de cobre e prescrever miconazol via vaginal. As parcerias sexuais não devem ser tratadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "manter o DIU de cobre e prescrever clindamicina via oral. As parcerias sexuais devem ser tratadas com o mesmo esquema terapêutico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "retirar o DIU de cobre e prescrever metronidazol oral. As parcerias sexuais devem ser tratadas com o mesmo esquema terapêutico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "manter o DIU de cobre e prescrever clindamicina via oral. As parcerias sexuais não devem ser tratadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "retirar o DIU de cobre e prescrever nistatina via vaginal. As parcerias sexuais devem ser tratadas com o mesmo esquema terapêutico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO E CONDUTA: TRICOMONÍASE VAGINAL\n\nANÁLISE DO QUADRO CLÍNICO:\nA paciente apresenta a descrição clássica de uma vaginite infecciosa causada pelo protozoário Trichomonas vaginalis. Os pontos-chave para o diagnóstico são: \n1. Aspecto do corrimento: amarelo-esverdeado, bolhoso e espumoso (patognomônico).\n2. Sintomas associados: dispareunia (dor na relação) e disúria (dor ao urinar), indicando inflamação importante.\n3. Exame a fresco: Identificação de parasita flagelado, confirmando a tricomoníase.\n\nUm ponto fundamental para provas: a Tricomoníase é a única das três principais vulvovaginites (candidíase, vaginose e tricomoníase) que é considerada uma Infecção Sexualmente Transmissível (IST). Portanto, o tratamento do parceiro é obrigatório. Além disso, o tratamento deve ser preferencialmente por via oral para atingir reservatórios do parasita nas glândulas de Skene e Bartholin.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. O miconazol é um antifúngico indicado para candidíase (corrimento esbranquiçado/grumoso). Para a tricomoníase, o tratamento é com derivados nitroimidazólicos. Além disso, por ser uma IST, as parcerias sexuais devem ser tratadas obrigatoriamente.\n\nAlternativa b) Incorreta. A clindamicina é uma opção de segunda linha para Vaginose Bacteriana (causada pela Gardnerella vaginalis), que apresenta corrimento acinzentado e teste do potássio (whiff test) positivo, sem sinais inflamatórios exuberantes como os descritos. Não tem ação contra o Trichomonas.\n\nAlternativa c) Correta. O metronidazol oral é o padrão-ouro para o tratamento da tricomoníase. O tratamento das parcerias sexuais é indispensável para evitar a reinfecção e o controle da transmissão da IST. Em relação ao DIU, embora a recomendação clínica atual muitas vezes permita a manutenção do dispositivo durante o tratamento de infecções vaginais simples, em questões de prova, a presença de uma IST sintomática com corpo estranho (DIU) inclina o examinador a considerar a retirada para evitar a progressão para Doença Inflamatória Pélvica (DIP) e garantir a cura clínica completa. É a única alternativa que associa corretamente a droga e a conduta com parceiros.\n\nAlternativa d) Incorreta. Reitera o erro do uso da clindamicina e falha gravemente ao negligenciar o tratamento do parceiro sexual em um caso de IST confirmada.\n\nAlternativa e) Incorreta. A nistatina é utilizada exclusivamente para candidíase vaginal. Não possui qualquer atividade biológica contra protozoários flagelados como o Trichomonas.\n\nRESUMO DIDÁTICO:\n- Agente: Trichomonas vaginalis (protozoário flagelado).\n- Quadro: Corrimento verde-bolhoso, colo em framboesa (em 2% a 3% dos casos), pH > 4,5.\n- Conduta: Metronidazol 2g dose única (ou 500mg 12/12h por 7 dias) VO + Tratar parceiro + Abstinência alcoólica (efeito antabuse).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Planejamento Familiar",
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:49.474Z"
+  },
+  {
+    "id": "AJUDA_657cf48a-7ed9-4495-9321-228b3559d0ee",
+    "originalId": "657cf48a-7ed9-4495-9321-228b3559d0ee",
+    "statement": "Os pais de uma menina com 4 anos de idade, preocupados com alguma seletividade alimentar que ela tem apresentado, desejam saber qual a proporção de cada um dos macronutrientes para uma alimentação adequada para sua filha. O médico deve recomendar que a fonte da oferta calórica diária seja composta, em porcentagem, de gordura, proteína e carboidrato, respectivamente, de, aproximadamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "40 - 10 - 50.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "20 - 30 - 50.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "20 - 20 - 60.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "30 - 30 - 40.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "60 - 20 - 20.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda as recomendações nutricionais de macronutrientes na infância, especificamente para a faixa etária pré-escolar (4 anos). A base para essa distribuição são as DRIs (*Dietary Reference Intakes*), amplamente utilizadas na pediatria brasileira e recomendadas pela Sociedade Brasileira de Pediatria (SBP).\n\nPara crianças acima de 1 ano, a distribuição calórica aceitável (AMDR — *Acceptable Macronutrient Distribution Ranges*) deve seguir, aproximadamente, as seguintes proporções: carboidratos (45% a 65%), proteínas (5% a 20% para crianças de 1 a 3 anos e 10% a 30% para crianças de 4 a 18 anos) e gorduras (30% a 40% para 1 a 3 anos e 25% a 35% para 4 a 18 anos).\n\nAnálise das alternativas:\n\na) CORRETA: 40% de gordura, 10% de proteína e 50% de carboidratos. Esta alternativa é a que melhor se aproxima das recomendações para a transição entre a primeira infância e a idade escolar. Embora o limite superior de gordura para crianças de 4 anos seja tecnicamente 35% em algumas referências mais rígidas, na prática clínica e em provas de residência, o valor de 30% a 40% é frequentemente aceito para garantir o aporte energético e de ácidos graxos essenciais necessários ao desenvolvimento neurológico e físico. Os carboidratos em 50% e as proteínas em 10% estão perfeitamente dentro das faixas recomendadas.\n\nb) INCORRETA: 20% de gordura, 30% de proteína e 50% de carboidratos. A oferta de gordura está muito baixa (abaixo do mínimo de 25% a 30%), o que pode comprometer a absorção de vitaminas lipossolúveis e o aporte calórico. Já a proteína em 30% está no limite superior extremo, sendo considerada uma dieta excessivamente proteica para uma criança saudável.\n\nc) INCORRETA: 20% de gordura, 20% de proteína e 60% de carboidratos. Assim como na alternativa anterior, o teor de gordura (20%) é insuficiente para essa faixa etária. Uma dieta hipolipídica na infância pode prejudicar o crescimento e o desenvolvimento do sistema nervoso central.\n\nd) INCORRETA: 30% de gordura, 30% de proteína e 40% de carboidratos. Embora a gordura esteja adequada, a proteína está excessiva (30%) e o carboidrato está abaixo do mínimo recomendado (45%), o que descaracteriza uma alimentação equilibrada para o desenvolvimento infantil.\n\ne) INCORRETA: 60% de gordura, 20% de proteína e 20% de carboidratos. Esta distribuição assemelha-se a uma dieta cetogênica, utilizada apenas em casos terapêuticos específicos (como epilepsia refratária). Para uma criança saudável, é totalmente inadequada por ser excessivamente gordurosa e pobre em carboidratos, as principais fontes de energia para o cérebro e atividades físicas.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Diagnóstico Nutricional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:49.474Z"
+  },
+  {
+    "id": "AJUDA_65826e05-02f8-463d-a8d3-86c283413d5d",
+    "originalId": "65826e05-02f8-463d-a8d3-86c283413d5d",
+    "statement": "Gestante de 30 anos, G2P1, encontra-se na 26ª semana de gestação. Durante o pré-natal, realizou o teste oral de tolerância à glicose (TOTG), cujos resultados foram: jejum = 90mg/dL, 1h = 170mg/dL e 2h = 160mg/dL. A paciente apresenta IMC pré-gestacional de 27Kg/m² e não possui comorbidades associadas. Com base no caso apresentado, qual é o DIAGNÓSTICO e qual deve ser a CONDUTA INICIAL RECOMENDADA para essa gestante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diabetes mellitus gestacional; iniciar orientação nutricional. incentivo à prática de atividade física e monitorização glicêmica domiciliar",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Diabetes mellitus gestacional; orientar atividade física e dieta, monitorização glicêmica domiciliar e prescrever insulina NPH imediatamente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diabetes mellitus prévio à gestação; prescrever metformina e orientar monitorização glicêmica domiciliar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pré-diabetes gestacional; adiar qualquer intervenção até a 34a semana, considerando que a maioria dos casos de pré-diabetes gestacional é autolimitada",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DO CASO\n\nPara o diagnóstico de Diabetes Mellitus Gestacional (DMG) através do Teste Oral de Tolerância à Glicose (TOTG com 75g de glicose), habitualmente realizado entre a 24ª e 28ª semana de gestação, utilizamos os critérios da IADPSG, adotados pela Sociedade Brasileira de Diabetes e pelo Ministério da Saúde. Os valores de referência são:\n- Jejum: < 92 mg/dL\n- 1 hora após sobrecarga: < 180 mg/dL\n- 2 horas após sobrecarga: < 153 mg/dL\n\nBasta um único valor alterado para confirmar o diagnóstico de DMG. No caso apresentado, a paciente possui o valor de 2 horas alterado (160 mg/dL, sendo o limite 152 mg/dL), enquanto os valores de jejum (90 mg/dL) e de 1 hora (170 mg/dL) estão normais. Portanto, o diagnóstico é de Diabetes Mellitus Gestacional.\n\nCONDUTA INICIAL\n\nUma vez diagnosticado o DMG, a conduta inicial é conservadora na grande maioria dos casos. O tratamento baseia-se na mudança do estilo de vida, que inclui orientação nutricional individualizada, incentivo à prática de atividade física (salvo contraindicações obstétricas) e a obrigatoriedade da monitorização glicêmica domiciliar (perfil glicêmico). O objetivo é manter as glicemias capilares dentro dos alvos (jejum < 95; 1h pós-prandial < 140 ou 2h pós-prandial < 120). A terapia farmacológica só é indicada se as metas não forem atingidas após 1 a 2 semanas de medidas dietéticas.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: CORRETA. Identifica corretamente o diagnóstico de DMG com base na alteração do valor de 2 horas do TOTG e propõe as medidas iniciais preconizadas: dieta, exercício e monitorização glicêmica.\n\nAlternativa B: INCORRETA. Embora o diagnóstico esteja correto, a introdução de insulina NPH de forma imediata está equivocada. A insulina é a terapia de escolha se as medidas de estilo de vida falharem, mas não deve ser a primeira conduta antes de testar a resposta à dieta e exercícios por pelo menos uma semana.\n\nAlternativa C: INCORRETA. O diagnóstico de Diabetes Mellitus prévio à gestação (ou Overt Diabetes) ocorre quando a glicemia de jejum é maior ou igual a 126 mg/dL, ou quando o valor de 2 horas no TOTG é maior ou igual a 200 mg/dL, ou ainda se a HbA1c for maior ou igual a 6,5%. Os valores da paciente não atingem esses critérios.\n\nAlternativa D: INCORRETA. Não existe o termo pré-diabetes gestacional na nomenclatura oficial. Trata-se de DMG. Adiar a intervenção até a 34ª semana é perigoso, pois o descontrole glicêmico desde o segundo trimestre aumenta significativamente o risco de complicações como macrossomia fetal, polidrâmnio e pré-eclâmpsia. O tratamento deve ser imediato ao diagnóstico.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:53:49.474Z"
+  }
+]

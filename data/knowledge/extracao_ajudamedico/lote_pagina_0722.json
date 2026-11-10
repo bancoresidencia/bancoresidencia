@@ -1,0 +1,487 @@
+[
+  {
+    "id": "AJUDA_c9b0cbdf-cd82-4dfc-94c5-d89e69db1b69",
+    "originalId": "c9b0cbdf-cd82-4dfc-94c5-d89e69db1b69",
+    "statement": "Paciente masculino, de 55 anos, veio à Emergência por dor no joelho direito, iniciada há 2 dias, e sensação de febre (não aferida) nas últimas 12 horas. Negou trauma e episódios semelhantes prévios. Informou ser portador de hipertensão arterial sistêmica e diabetes melito tipo 2 em tratamento com hidroclorotiazida e metformina. Ao exame físico, constataram-se artrite com eritema e dor à mínima mobilização do joelho direito, úlcera secretiva no hálux direito e eritema de dorso do pé direito. Em relação à principal hipótese diagnóstica, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na análise do líquido sinovial, espera-se encontrar celularidade aumentada, mesmo com pesquisa direta de bactérias e cultura negativas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O paciente deve receber anti-inflamatório não esteroidal intravenoso e, após melhora, alta com colchicina até o retorno ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A infiltração intra-articular com glicocorticoide está indicada por apresentar melhor perfil de segurança sistêmico, levando-se em consideração as comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento antimicrobiano deve ser iniciado conforme resultado da cultura, levando-se em consideração o perfil de sensibilidade identificado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descreve um homem de 55 anos com monoartrite aguda no joelho direito e febre. O detalhe fundamental para a definição da principal hipótese diagnóstica é a presença de uma úlcera secretiva no hálux e eritema no pé direito, que sugerem uma porta de entrada para patógenos. Diante de uma monoartrite aguda associada a um foco infeccioso cutâneo próximo, a principal hipótese a ser investigada e excluída prioritariamente é a Artrite Séptica.\n\nALTERNATIVA A (CORRETA)\n\nNa análise do líquido sinovial de uma artrite séptica, o achado característico é uma celularidade muito elevada, tipicamente acima de 50.000 leucócitos por milímetro cúbico, com predomínio de neutrófilos (acima de 75 a 90 por cento). Contudo, a ausência de bactérias na pesquisa direta (Gram) ou o resultado negativo da cultura não excluem o diagnóstico. O Gram possui sensibilidade limitada (cerca de 50 a 70 por cento) e as culturas podem ser negativas em até 20 a 30 por cento dos casos, especialmente se houver uso prévio de antibióticos ou se o agente for de difícil crescimento. Assim, a celularidade aumentada é o principal critério presuntivo.\n\nALTERNATIVA B (INCORRETA)\n\nEsta alternativa propõe o tratamento para uma crise de Gota. Embora o paciente apresente fatores de risco para gota (uso de diurético tiazídico e diabetes), a presença da úlcera infectada e do eritema no pé aponta fortemente para uma etiologia infecciosa. Tratar um quadro de artrite séptica com anti-inflamatórios e colchicina seria um erro grave, pois permitiria a progressão da infecção e a destruição da cartilagem articular.\n\nALTERNATIVA C (INCORRETA)\n\nA infiltração intra-articular com glicocorticoides é absolutamente contraindicada em casos de suspeita de artrite infecciosa. O corticoide reduz a resposta imunológica local, o que aceleraria a proliferação bacteriana e a gravidade da infecção, podendo levar o paciente a um quadro de sepse.\n\nALTERNATIVA D (INCORRETA)\n\nA artrite séptica é considerada uma emergência reumatológica e infectológica. O tratamento com antibióticos deve ser iniciado de forma empírica e imediata logo após a realização da artrocentese (coleta do líquido sinovial) e das hemoculturas. Não se deve aguardar o resultado final das culturas e do antibiograma para iniciar a terapia, pois o atraso no tratamento correlaciona-se diretamente com maior dano articular permanente e pior prognóstico. O esquema terapêutico é ajustado posteriormente conforme os resultados laboratoriais.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Artrites Microcristalinas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:21.752Z"
+  },
+  {
+    "id": "AJUDA_c9b111af-7447-4c49-a5c6-92317826299e",
+    "originalId": "c9b111af-7447-4c49-a5c6-92317826299e",
+    "statement": "Durante uma roda de conversa em uma sala de espera com mães que aguardavam a consulta de seus filhos com um médico de família e comunidade, uma enfermeira da equipe de saúde da família propôs a discussão do tema da hesitação vacinal. Durante o diálogo, uma das participantes afirmou que “a culpa de tudo isso é da Internet”. Considerando essa situação, assinale a alternativa correta, acerca dos argumentos a serem utilizados pela enfermeira nessa conversa com a comunidade.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Internet veicula dúvidas quanto à real eficácia/eficiência e segurança das vacinas, o que abala a confiança da população nos imunobiológicos; ademais, o algoritmo das redes sociais associa temas antivacinação a outros temas de natureza moral, fazendo exposição seletiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A hesitação vacinal ocorre nos extratos sociais de menor renda, que são contrárias à medicalização da saúde e acreditam que hábitos de vida saudáveis protegem contra doenças e garantem saúde, dispensando a necessidade de vacinação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O paradoxo epidemiológico de que algumas doenças imunopreveníveis hoje são raras, associado à complexidade do calendário vacinal, criou a política de redução temporária do uso de algumas vacinas em determinado ano para aumentar o engajamento da população no ano seguinte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A circulação de informações falsas (fake news), impulsionada pela internet, causa pouco impacto nas escolhas da população de menor poder aquisitivo, que tende a ter mais confiança na vacinação e menor acesso às redes sociais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A hesitação vacinal é um fenômeno complexo definido pela Organização Mundial da Saúde como o atraso na aceitação ou a recusa de vacinas, apesar da disponibilidade de serviços de vacinação. Esse comportamento é influenciado por três fatores principais, conhecidos como os 3 Cs: Confiança (nas vacinas ou no sistema de saúde), Complacência (baixa percepção de risco das doenças) e Conveniência (facilidade de acesso). Abaixo, analisamos cada alternativa sob a ótica da Medicina de Família e Comunidade e da Saúde Coletiva:\n\nAlternativa A: Correta. A internet e as redes sociais alteraram a forma como a informação de saúde é consumida. Os algoritmos das plataformas tendem a entregar conteúdos que reforçam as crenças prévias dos usuários (exposição seletiva), criando bolhas informativas. Além disso, grupos antivacina frequentemente vinculam a recusa vacinal a questões de liberdade individual, religião ou posicionamentos políticos, o que abala o pilar da confiança e dificulta o diálogo técnico-científico.\n\nAlternativa B: Incorreta. A hesitação vacinal não é um fenômeno exclusivo ou predominante em estratos de menor renda. Historicamente, observa-se que grupos de maior renda e escolaridade também apresentam altos índices de hesitação, muitas vezes motivados por filosofias de vida naturalistas, críticas à indústria farmacêutica ou uma falsa sensação de segurança proporcionada pelo saneamento e acesso a tratamentos individuais.\n\nAlternativa C: Incorreta. O paradoxo epidemiológico citado é real: o sucesso das vacinas faz com que as doenças desapareçam da vista do público, levando à percepção de que a vacina não é mais necessária (complacência). No entanto, a estratégia de saúde pública jamais utiliza a redução temporária da oferta de vacinas como ferramenta de engajamento. O objetivo do Programa Nacional de Imunizações é a manutenção constante de coberturas vacinais elevadas para garantir a imunidade de rebanho.\n\nAlternativa D: Incorreta. As fake news têm um impacto significativo em todas as camadas sociais. O acesso à internet móvel e a aplicativos de mensagens como o WhatsApp é amplamente disseminado no Brasil, inclusive entre populações de menor poder aquisitivo. Essas ferramentas são os principais vetores de desinformação, atingindo de forma transversal diferentes perfis socioeconômicos e influenciando diretamente a tomada de decisão sobre a saúde dos filhos.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Imunizações",
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:21.752Z"
+  },
+  {
+    "id": "AJUDA_c9b4f2ec-5d5f-4149-85c8-ab6df33559f4",
+    "originalId": "c9b4f2ec-5d5f-4149-85c8-ab6df33559f4",
+    "statement": "Em relação ao manejo inicial do pneumotórax espontâneo primário, qual conduta é mais adequada em um paciente jovem, estável e com pneumotórax pequeno (<20%)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Toracotomia com sutura de bolhas apicais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Drenagem torácica com selo d’água.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Observação com repetição de imagem.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pleurodese química imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aspiração manual com agulha fina de alívio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Gabarito: A alternativa correta é a letra (c).\n\nExplicação técnica:\n\nO pneumotórax espontâneo primário ocorre tipicamente em pacientes jovens, sem doença pulmonar prévia. O manejo é definido principalmente pela estabilidade hemodinâmica do paciente e pelo tamanho do pneumotórax.\n\nAlternativa (a) Incorreta: O tratamento cirúrgico, seja por toracotomia ou videocirurgia, é indicado apenas em situações específicas, como no segundo episódio de pneumotórax (recidiva ipsilateral), pneumotórax bilateral simultâneo, persistência de fuga aérea após drenagem ou em pacientes com profissões de risco. Não é a conduta inicial para um quadro simples e estável.\n\nAlternativa (b) Incorreta: A drenagem torácica com selo d’água é um procedimento invasivo indicado para pacientes com pneumotórax grande (geralmente acima de 20% ou com distância entre o pulmão e a parede maior que 2-3 cm), pacientes sintomáticos ou que apresentem instabilidade respiratória. Para casos pequenos e estáveis, essa conduta é considerada excessiva.\n\nAlternativa (c) Correta: Segundo as diretrizes do American College of Chest Physicians (ACCP) e da British Thoracic Society (BTS), pacientes estáveis com pneumotórax pequeno (menor que 20% ou com borda pulmonar menor que 2 cm em relação à parede torácica) devem ser manejados inicialmente de forma conservadora. Isso envolve observação clínica, podendo associar oxigenoterapia (que acelera a reabsorção do ar) e realização de novo exame de imagem em 6 a 24 horas para confirmar que não há progressão.\n\nAlternativa (d) Incorreta: A pleurodese química consiste na irritação das pleuras para que elas colem, evitando recidivas. É uma medida preventiva secundária e não faz parte do manejo inicial de um primeiro episódio de pneumotórax espontâneo estável.\n\nAlternativa (e) Incorreta: A aspiração manual com agulha é uma técnica útil e recomendada por alguns protocolos como alternativa à drenagem em pneumotórax espontâneos primários grandes. No entanto, se o pneumotórax for pequeno e o paciente estiver estável, nem a aspiração é necessária, optando-se apenas pela observação.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:21.752Z"
+  },
+  {
+    "id": "AJUDA_c9b9b0aa-e102-4088-8da7-387e168cec97",
+    "originalId": "c9b9b0aa-e102-4088-8da7-387e168cec97",
+    "statement": "Uma gestante de 14 semanas realizou exame de VDRL com resultado de 1/128, sem demais alterações nos exames de primeiro trimestre.\n\nConsiderando que a paciente descrita foi tratada com ceftriaxona em razão de história de alergia a penicilina, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A paciente poderia ter utilizado a doxiciclina com segurança na gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O feto é considerado tratado, independentemente do antibiótico utilizado na gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As gestantes devem ser acompanhadas com VDRL mensal até o parto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não há necessidade de novo exame após o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise da Questão: O caso descreve uma gestante com diagnóstico de sífilis (VDRL 1/128). O ponto central da discussão é o manejo da sífilis na gestação e os critérios de tratamento adequado.\n\nAlternativa a: Incorreta. A doxiciclina é um antibiótico da classe das tetraciclinas, que são formalmente contraindicadas durante a gestação. O uso dessa medicação pode causar alterações na formação óssea do feto e coloração amarelada permanente nos dentes (hipoplasia do esmalte dentário).\n\nAlternativa b: Incorreta. Para que o tratamento da sífilis seja considerado adequado para o feto, a gestante deve ser tratada exclusivamente com penicilina benzatina, na dose correta para o estágio da doença, e o esquema deve ser finalizado pelo menos 30 dias antes do parto. Qualquer outro esquema terapêutico (como a ceftriaxona mencionada no enunciado) é considerado tratamento incompleto ou inadequado para o feto. Isso significa que, embora a mãe possa ser curada, o feto não é considerado tratado e o recém-nascido precisará de avaliação completa e possível tratamento ao nascer.\n\nAlternativa c: Correta. Segundo os protocolos do Ministério da Saúde e as diretrizes brasileiras, toda gestante tratada para sífilis deve realizar o monitoramento com exames de VDRL mensalmente até o parto. O objetivo é verificar a queda dos títulos (sucesso terapêutico) ou identificar precocemente uma possível reinfecção, o que exigiria novo tratamento para proteger o feto.\n\nAlternativa d: Incorreta. O seguimento pós-tratamento é fundamental na sífilis para garantir que a terapia foi eficaz. A ausência de exames impossibilita o diagnóstico de falha terapêutica ou reinfecção, aumentando drasticamente o risco de sífilis congênita e suas complicações graves. Na gestação, a queda dos títulos deve ser acompanhada rigorosamente mês a mês.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:21.752Z"
+  },
+  {
+    "id": "AJUDA_c9ba5d85-2ddf-4827-bab1-f2fba503080d",
+    "originalId": "c9ba5d85-2ddf-4827-bab1-f2fba503080d",
+    "statement": "Assinale a assertiva incorreta sobre cigarros eletrônicos e adolescência.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A detecção de seu uso por pais e profissionais de saúde é difícil, uma vez que o cheiro liberado pelo aquecimento do líquido se dissipa rapidamente (logo após o uso), não deixando odor no ar exalado e nas roupas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os cigarros eletrônicos aromatizados, geralmente preferidos pelos adolescentes, têm pH frequentemente mais baixo, o que resulta em absorção mais rápida da nicotina contida no aerossol gerado pelo dispositivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O acetato de vitamina E, presente nos cigarros eletrônicos, está relacionado a casos de lesão pulmonar associada a produto de vaping, cuja apresentação clínica inclui sintomas respiratórios, gastrointestinais e/ou sistêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Com base na concentração de nicotina informada nos rótulos dos cigarros eletrônicos, é possível verificar se a dose inalada pelo adolescente é maior, menor ou equivalente à da nicotina liberada pelos cigarros de tabaco.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A (Correta): Uma das maiores dificuldades para pais e profissionais de saúde no controle do uso de dispositivos eletrônicos de fumar (DEFs) por adolescentes é a facilidade de ocultação. Ao contrário do cigarro combustível, não há combustão de tabaco. O aerossol gerado pelas essências possui odores frutados ou doces que se dissipam rapidamente e não impregnam em roupas, cabelos ou no hálito, facilitando o uso recreativo sem detecção imediata.\n\nAlternativa B (Correta): Os fabricantes utilizam aditivos químicos para modificar o pH do líquido. A presença de ácidos (como o ácido benzoico) transforma a nicotina em \"sais de nicotina\". Isso reduz o pH da mistura, tornando o aerossol menos irritante para as vias aéreas superiores (menos \"throat hit\"). Como resultado, o adolescente consegue realizar inalações mais profundas e frequentes, o que leva a uma absorção pulmonar mais rápida e a picos plasmáticos de nicotina mais elevados, aumentando o risco de dependência severa.\n\nAlternativa C (Correta): O acetato de vitamina E é um agente espessante frequentemente utilizado em líquidos de vaping, especialmente naqueles que contêm THC. Ele foi identificado como um dos principais responsáveis pela EVALI (E-cigarette or Vaping product use-Associated Lung Injury). O quadro clínico da EVALI é grave e inespecífico, evoluindo com tosse, hipóxia e dor torácica, frequentemente acompanhadas de febre, náuseas, vômitos e perda de peso, o que exige alto índice de suspeição diagnóstica.\n\nAlternativa D (Incorreta - Gabarito): Esta afirmação é falsa porque a rotulagem dos cigarros eletrônicos é amplamente não confiável. Estudos laboratoriais demonstram que a concentração real de nicotina em muitos produtos difere significativamente do que é informado na embalagem. Além disso, a dose de nicotina efetivamente entregue ao organismo não depende apenas da concentração no líquido, mas também de fatores técnicos do dispositivo (como a voltagem e a potência da bobina) e do comportamento do usuário (tempo e profundidade da tragada). Assim, é impossível estabelecer uma equivalência precisa com o cigarro convencional baseando-se apenas no rótulo.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:21.752Z"
+  },
+  {
+    "id": "AJUDA_c9c90d82-0b51-4b11-8248-4a50ebbe90ad",
+    "originalId": "c9c90d82-0b51-4b11-8248-4a50ebbe90ad",
+    "statement": "Paciente de 21 anos, com data da última menstruação (DUM) em 08/04/2024, iniciou acompanhamento pré-natal em unidade de saúde da família na segunda semana de junho. Em 11/07/2024, apresentou ultrassonografia confirmando idade gestacional pela data da última menstruação e os seguintes resultados de exames laboratoriais: grupo sanguíneo 0+, hemoglobina = 12,5mg/dL, hematócrito = 37,8%, glicemia = 78mg/dL, VDRL não reator, anti-HIV não reator, toxoplasmose IgG positivo e IgM negativo, HbsAg negativo e Anti-HBS positivo. Na consulta de 25/09/2024, é recomendado solicitar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sorologia para toxoplasmose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sorologia para hepatite B",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coombs indireto",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "TOTG",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, o primeiro passo é calcular a idade gestacional (IG) da paciente na data da consulta em que se deve solicitar os novos exames (25/09/2024).\n\nCálculo da Idade Gestacional:\nData da Última Menstruação (DUM): 08/04/2024.\nAbril: 22 dias restantes.\nMaio: 31 dias.\nJunho: 30 dias.\nJulho: 31 dias.\nAgosto: 31 dias.\nSetembro: 25 dias.\nTotal: 170 dias.\n170 dividido por 7 = 24 semanas e 2 dias.\n\nAnálise das alternativas:\n\na) Sorologia para toxoplasmose: Incorreta. Os exames de 11/07/2024 mostraram toxoplasmose IgG positivo e IgM negativo. Esse resultado indica que a paciente possui imunidade prévia (infecção antiga), não havendo risco de infecção aguda ou transmissão congênita nesta gestação. Portanto, não há necessidade de repetir este exame.\n\nb) Sorologia para hepatite B: Incorreta. A paciente apresenta HBsAg negativo e anti-HBs positivo. Isso demonstra que ela é imune à hepatite B (provavelmente por vacinação prévia). Não há indicação de repetir a sorologia rotineiramente se a imunidade já foi comprovada.\n\nc) Coombs indireto: Incorreta. O grupo sanguíneo da paciente é O positivo. O teste de Coombs indireto é indicado apenas para gestantes com fator Rh negativo (para pesquisar a presença de anticorpos contra o fator Rh), o que não é o caso desta paciente.\n\nd) TOTG: Correta. Segundo os protocolos do Ministério da Saúde e da FEBRASGO, o Teste Oral de Tolerância à Glicose (TOTG 75g) deve ser realizado em todas as gestantes entre a 24ª e a 28ª semana de gestação, desde que o diagnóstico de diabetes mellitus gestacional (DMG) não tenha sido feito previamente. Como a glicemia de jejum inicial da paciente foi de 78 mg/dL (abaixo do ponto de corte de 92 mg/dL para diagnóstico imediato de DMG) e ela se encontra exatamente na 24ª semana, este é o exame indicado para o rastreio atual.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:21.752Z"
+  },
+  {
+    "id": "AJUDA_c9d10b84-4cb2-48c0-9de6-3c9d367f1aa4",
+    "originalId": "c9d10b84-4cb2-48c0-9de6-3c9d367f1aa4",
+    "statement": "Paciente de 42 anos apresenta quadro de meningite. Assim sendo, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Todos os contactantes adultos próximos devem receber, profilaticamente, rifampicina 600 mg, 12/12 horas, por 2 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Em caso de meningite viral, o isolamento do paciente deverá ser mantido por 24/48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em caso de o agente causador ser Neisseria meningitidis, o melhor tratamento será feito com ceftrixone e vancomicina, e o uso de corticoide é seguro e benéfico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em caso de o agente causador ser Streptococcus pneumoniae, o melhor tratamento será feito com ceftriaxone, e o uso de corticoide é seguro e benéfico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A - Incorreta. A quimioprofilaxia medicamentosa não é indicada para todos os casos de meningite. Ela deve ser realizada apenas para contatantes próximos de pacientes com meningite causada por Neisseria meningitidis (meningococo) ou Haemophilus influenzae tipo b. Embora o esquema de rifampicina 600 mg, de 12 em 12 horas, por 2 dias, esteja correto para a profilaxia do meningococo em adultos, a alternativa peca ao generalizar a conduta para qualquer quadro de meningite.\n\nAlternativa B - Incorreta. Nas meningites virais, a transmissão interpessoal direta é rara para a maioria dos agentes (como os enterovírus), e a conduta preconizada envolve apenas precauções-padrão. O isolamento respiratório para gotículas é indicado especificamente em casos de meningite por Neisseria meningitidis e Haemophilus influenzae, devendo ser mantido por 24 horas após o início da antibioticoterapia eficaz, e não de forma generalizada para casos virais.\n\nAlternativa C - Incorreta. Para a Neisseria meningitidis, o tratamento de escolha é uma cefalosporina de terceira geração, como a ceftriaxona. A vancomicina é incluída no esquema empírico inicial (antes da identificação do agente) para cobrir o Streptococcus pneumoniae com sensibilidade reduzida à penicilina, mas não é necessária para tratar o meningococo após sua identificação. Além disso, embora o corticoide possa ser usado, seu benefício clínico é muito mais evidente e consolidado na meningite pneumocócica do que na meningocócica.\n\nAlternativa D - Correta. O Streptococcus pneumoniae (pneumococo) é o principal agente etiológico de meningite bacteriana em adultos. O tratamento padrão é feito com ceftriaxona (podendo associar vancomicina empiricamente até o resultado do antibiograma). O uso de corticoides (especificamente a dexametasona), iniciado preferencialmente antes ou junto com a primeira dose do antibiótico, é uma conduta padrão-ouro para o pneumococo, pois reduz significativamente a inflamação no espaço subaracnoideo, diminuindo a mortalidade e o risco de sequelas neurológicas, especialmente a perda auditiva.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:21.752Z"
+  },
+  {
+    "id": "AJUDA_c9daa246-4b56-466f-837d-62985b81e281",
+    "originalId": "c9daa246-4b56-466f-837d-62985b81e281",
+    "statement": "Trombocitose refere-se a um aumento da contagem de plaquetas ≥ 450.000mm. Todas as seguintes alternativas estão associadas a trombocitose, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Perda aguda de sangue.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pós-esplenectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome mielodisplásicas a deleção do cromossomo 5 ( síndrome 5q-).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trombocitemia essencial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Anemia perniciosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver esta questão, é fundamental diferenciar as condições que estimulam a produção ou liberação de plaquetas (trombocitose) daquelas que prejudicam a produção celular na medula óssea. O valor de referência para trombocitose é a contagem de plaquetas superior a 450.000/mm3.\n\nAnálise das alternativas:\n\na) Perda aguda de sangue: Incorreta. A hemorragia aguda é uma causa clássica de trombocitose reativa. Isso ocorre por dois motivos: a liberação imediata de plaquetas armazenadas no baço para a circulação e o estímulo à medula óssea através de citocinas inflamatórias e do aumento da eritropoetina, que possui semelhança estrutural com a trombopoetina, acelerando a produção plaquetária para garantir a hemostasia.\n\nb) Pós-esplenectomia: Incorreta. O baço armazena cerca de um terço da massa plaquetária do organismo. Quando o baço é removido cirurgicamente ou sofre autoesplenismo (como na anemia falciforme), esse reservatório deixa de existir e as plaquetas passam a circular livremente no sangue periférico. Além disso, o baço é o local de clivagem de plaquetas senescentes; sem ele, a sobrevida plaquetária na circulação aumenta temporariamente.\n\nc) Síndrome mielodisplásica com deleção do cromossomo 5 (síndrome 5q-): Incorreta. Esta é uma exceção importante dentro das síndromes mielodisplásicas. Enquanto a maioria das mielodisplasias cursa com pancitopenia (redução de todas as linhagens), a síndrome 5q- evolui tipicamente com anemia macrocítica e contagem de plaquetas normal ou elevada (trombocitose), devido a uma proliferação clonal de megacariócitos anômalos.\n\nd) Trombocitemia essencial: Incorreta. É uma neoplasia mieloproliferativa crônica e o exemplo primário de trombocitose clonal. Nela, ocorre uma mutação genética (frequentemente no gene JAK2, CALR ou MPL) que faz com que a medula óssea produza plaquetas de forma autônoma, excessiva e descontrolada, com valores que frequentemente ultrapassam 1.000.000/mm3.\n\ne) Anemia perniciosa: Correta. Esta condição decorre da deficiência de vitamina B12 devido à falta de fator intrínseco. A vitamina B12 é cofator crucial para a síntese de DNA. Sua carência leva à hematopoese ineficaz, onde as células não conseguem se dividir corretamente na medula e morrem precocemente (apoptose). O resultado laboratorial clássico é a pancitopenia: anemia macrocítica, leucopenia e TROMBOCITOPENIA (redução das plaquetas). Portanto, esta é a única alternativa que não se associa à trombocitose.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:21.752Z"
+  },
+  {
+    "id": "AJUDA_c9df0f77-47ce-4d78-8d16-0e51cc30b31b",
+    "originalId": "c9df0f77-47ce-4d78-8d16-0e51cc30b31b",
+    "statement": "Sobre o desenvolvimento dos caracteres sexuais secundários, pode-se afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O final da puberdade nos meninos é o odor axilar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A telarca é o primeiro sinal de puberdade nas meninas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O primeiro sinal de puberdade masculina é o nascimento dos pelos pubianos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nas meninas, a menarca ocorre simultaneamente à telarca, marcando o início da puberdade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a sequência cronológica dos eventos da puberdade, um tema frequente em provas de pediatria e endocrinologia. A análise das alternativas baseia-se na classificação de Tanner e na fisiologia do desenvolvimento:\n\nAlternativa (a) Incorreta: O odor axilar decorre da adrenarca (ativação da glândula adrenal com produção de androgênios), processo que pode ocorrer de forma independente ou concomitante à puberdade central, mas não marca o seu fim. O final da puberdade masculina é caracterizado pela desaceleração do crescimento longitudinal (fechamento das epífises ósseas) e pela maturação completa da genitália (estágio G5 de Tanner).\n\nAlternativa (b) Correta: O marco inicial da puberdade feminina é a telarca, que consiste no surgimento do broto mamário (estágio M2 de Tanner). Este evento ocorre sob estímulo do estradiol, resultante da ativação do eixo hipotálamo-hipófise-gonadal, geralmente entre os 8 e 13 anos de idade.\n\nAlternativa (c) Incorreta: Diferentemente do que muitos acreditam, o primeiro sinal de puberdade no menino não são os pelos pubianos, mas sim o aumento do volume testicular. Considera-se o início da puberdade masculina quando os testículos atingem um volume maior ou igual a 4 ml (medidos pelo orquidômetro de Prader) ou um diâmetro maior que 2,5 cm. O aparecimento de pelos (pubarca) costuma ser o evento subsequente.\n\nAlternativa (d) Incorreta: A menarca é um evento tardio no desenvolvimento puberal das meninas. Ela ocorre, em média, de 2 a 2,5 anos após o surgimento da telarca, geralmente quando a adolescente se encontra no estágio M4 de Tanner. Portanto, a menarca não é simultânea à telarca e não marca o início, mas sim o caminhar para o final da maturação sexual.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:21.752Z"
+  },
+  {
+    "id": "AJUDA_c9dfdaaf-d3ad-4ce5-8121-bc427ba55a5d",
+    "originalId": "c9dfdaaf-d3ad-4ce5-8121-bc427ba55a5d",
+    "statement": "Um dos mecanismos fisiológicos mais importantes que leva ao início do trabalho de parto é a alteração na relação entre hormônios esteroides. Qual dos seguintes eventos bioquímicos é NECESSÁRIO para o início das contrações uterinas e é característico do parto a termo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da concentração de progesterona, promovendo relaxamento uterino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diminuição da expressão de receptores de ocitocina no miométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumento da relação estrogênio/progesterona, resultando na ativação de enzimas que produzem prostaglandinas e na elevação dos receptores de ocitocina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Diminuição dos níveis de cortisol fetal, inibindo a cascata de citocinas inflamatórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O mecanismo do parto humano envolve a transição de um estado de quiescência uterina para um estado de atividade contrátil coordenada. Essa mudança é mediada por complexas interações hormonais e bioquímicas.\n\nAlternativa A: Incorreta. A progesterona é o principal hormônio responsável pela manutenção da gestação e pelo relaxamento do miométrio (quiescência). Para que o trabalho de parto ocorra, deve haver uma diminuição da ação da progesterona no útero (o que chamamos de \"privação funcional de progesterona\"), e não o seu aumento.\n\nAlternativa B: Incorreta. Durante o trabalho de parto, ocorre um aumento expressivo (*up-regulation*) na densidade de receptores de ocitocina no miométrio, chegando a ser 100 a 200 vezes maior do que no estado não gravídico. Isso torna o útero extremamente sensível à ocitocina, facilitando as contrações. Uma diminuição desses receptores impediria o início eficaz do parto.\n\nAlternativa C: Correta. Este é o evento central para o início do parto a termo. Ocorre uma mudança na relação estrogênio/progesterona em favor do estrogênio. Esse aumento relativo do estrogênio estimula a síntese de proteínas associadas à contração (CAPs), como os receptores de ocitocina e as junções comunicantes (*gap junctions*). Além disso, o estrogênio ativa enzimas como a ciclo-oxigenase (COX-2), que aumenta a produção de prostaglandinas (PGE2 e PGF2-alfa), fundamentais para o amolecimento cervical e para o estímulo das contrações miometrais.\n\nAlternativa D: Incorreta. Na verdade, ocorre um aumento dos níveis de cortisol fetal no final da gestação. O cortisol fetal atua na placenta, estimulando a transição enzimática que favorece a produção de estrogênios em detrimento da progesterona, funcionando como um sinalizador biológico de que o feto está maduro e pronto para o nascimento. Além disso, o cortisol está associado ao aumento da cascata inflamatória necessária para o parto, e não à sua inibição.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:48:21.752Z"
+  }
+]

@@ -1,0 +1,516 @@
+[
+  {
+    "id": "AJUDA_b655fb89-f70e-4010-8a06-c3dd3640c510",
+    "originalId": "b655fb89-f70e-4010-8a06-c3dd3640c510",
+    "statement": "Situação-Problema: Menino, 12 anos de idade, vai à consulta pediátrica acompanhado dos pais e apresenta a seguinte queixa: “Meus amigos já cresceram e eu não”. A história mostra uma criança saudável, sem antecedentes de doenças crônicas. O pai refere ter sido o menor da turma e que “cresceu só no último ano do colégio”. Exame físico: altura no percentil 3, velocidade de crescimento de 4 cm/ano, Tanner I. Idade óssea atrasada em 2 anos. Sem dismorfismos.\n\nIndique a hipótese diagnóstica a ser considerada, prioritariamente, para esse caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome genética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deficiência de GH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Baixa estatura familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Atraso constitucional do crescimento e da puberdade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nTrata-se de um menino de 12 anos em estágio pré-puberal (Tanner I), com estatura no percentil 3, sem estigmas sindrômicos ou doenças crônicas, apresentando história familiar paterna clássica de maturação tardia e idade óssea atrasada em 2 anos em relação à idade cronológica. O quadro clínico e radiológico é típico de uma variante normal do crescimento.\n\nJustificativa das Alternativas:\n\nAlternativa a (Incorreta): Síndromes genéticas que cursam com baixa estatura (como Noonan ou Turner) costumam apresentar dismorfismos craniofaciais ou corporais característicos, além de possíveis anomalias congênitas associadas. O caso descreve uma criança saudável e sem dismorfismos.\n\nAlternativa b (Incorreta): A deficiência de hormônio do crescimento (GH) geralmente se manifesta com velocidade de crescimento acentuadamente reduzida (abaixo de 4 cm/ano no período pré-puberal), perda de canal de crescimento e ausência do padrão familiar de desenvolvimento puberal tardio espontâneo.\n\nAlternativa c (Incorreta): Na Baixa Estatura Familiar, a idade óssea é compatível com a idade cronológica (Idade Óssea = Idade Cronológica) e a puberdade ocorre na época esperada. O paciente do caso apresenta atraso significativo de maturação esquelética (idade óssea atrasada em 2 anos), o que afasta essa hipótese.\n\nAlternativa d (Correta): O Atraso Constitucional do Crescimento e da Puberdade (ACCP) é a causa mais frequente de baixa estatura e atraso no desenvolvimento em meninos, sendo considerado uma variante do desenvolvimento normal. Seus marcos diagnósticos são: história familiar positiva para maturação/estirão tardio, exame físico normal sem doenças sistêmicas, velocidade de crescimento pré-puberal preservada e idade óssea atrasada em relação à idade cronológica, preservando o potencial de atingir a estatura-alvo na idade adulta.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Puberdade",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:47.601Z"
+  },
+  {
+    "id": "AJUDA_b658cba8-8001-4622-9f4a-b0b2db6ffc05",
+    "originalId": "b658cba8-8001-4622-9f4a-b0b2db6ffc05",
+    "statement": "Leia as informações a seguir. As doenças exantemáticas podem apresentar diagnósticos enigmáticos em pediatria. Entretanto, alguns achados clínicos podem ser patognomônicos ou sugestivos para elas. Com relação a estas doenças, associe os sinais ou achados clínicos (1, 2, 3, 4) apresentados na coluna I às doenças (a, b, c, d) apresentadas na coluna II.\n\nDe acordo com as informações apresentadas, a associação entre sinal/achado com a doença correspondente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 com b; 2 com d; 3 com c; 4 com a.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1 com b; 2 com a; 3 com c; 4 com d.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1 com c; 2 com d; 3 com b; 4 com a.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "1 com c; 2 com d; 3 com a; 4 com b.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão exige o conhecimento de sinais clínicos específicos (muitas vezes considerados patognomônicos ou altamente sugestivos) associados às principais doenças exantemáticas da infância. Abaixo, a análise detalhada de cada associação baseada na tabela fornecida:\n\nAssociações Corretas:\n\n1. Sinal de Nagayama e Exantema Súbito (1-c): O Sinal de Nagayama caracteriza-se pela presença de pápulas eritematosas no palato mole e na úvula. Ele aparece no período prodrômico ou no início da fase exantemática do Exantema Súbito (Roséola), causado pelo herpesvírus humano 6 ou 7.\n\n2. Sinal de Pastia e Escarlatina (2-d): O Sinal de Pastia consiste em linhas de cor vermelha intensa ou petéquias localizadas nas dobras cutâneas (como pregas axilares, cubitais e inguinais) que não desaparecem à digitopressão. É um sinal clássico da Escarlatina, causada pela toxina pirogênica do Streptococcus pyogenes.\n\n3. Linha de Beau e Doença de Kawasaki (3-b): As Linhas de Beau são sulcos ou depressões transversais nas unhas que resultam da interrupção temporária do crescimento da matriz ungueal devido a um estresse sistêmico grave. Embora possam ocorrer em várias condições, são frequentemente citadas como uma manifestação tardia característica da Doença de Kawasaki na pediatria.\n\n4. Onicomadese e Doença Mão-pé-boca (4-a): A onicomadese é o descolamento indolor da lâmina ungueal a partir da porção proximal (base da unha). É uma complicação tardia muito comum da Doença Mão-pé-boca (causada principalmente pelo vírus Coxsackie A16), ocorrendo geralmente de 4 a 8 semanas após a resolução do quadro agudo.\n\nAnálise das Alternativas:\n\nAlternativa a: Incorreta. Associa incorretamente o Sinal de Nagayama à Doença de Kawasaki (1-b) e a Linha de Beau ao Exantema Súbito (3-c).\n\nAlternativa b: Incorreta. Apresenta diversas associações erradas, como o Sinal de Pastia relacionado à Doença Mão-pé-boca (2-a) e a Onicomadese relacionada à Escarlatina (4-d).\n\nAlternativa c: Correta. Segue a lógica clínica correta: 1-c (Nagayama/Exantema Súbito), 2-d (Pastia/Escarlatina), 3-b (Beau/Kawasaki) e 4-a (Onicomadese/Mão-pé-boca).\n\nAlternativa d: Incorreta. Embora acerte as associações 1 e 2, inverte as associações 3 e 4, ligando a Linha de Beau à Doença Mão-pé-boca e a Onicomadese à Doença de Kawasaki.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/7d4eb3a1bc4ebe5cee62adbfe5b882ff786fa2c0853f60a43716d15078afb0f8.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b658cba8-8001-4622-9f4a-b0b2db6ffc05_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:47.985Z"
+  },
+  {
+    "id": "AJUDA_b6607f7e-327b-4415-a6a8-72269bfc5a41",
+    "originalId": "b6607f7e-327b-4415-a6a8-72269bfc5a41",
+    "statement": "80- A hemorragia pós-parto (HPP) está entre as principais causas de mortalidade materna e a extratificação de risco para HPP pode ser aplicada rotineiramente. Assinale a correta de acordo com o Manual de gestação de Alto Risco do Ministério da Saúde, 2022:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paciente estratificados como de médio risco para HPP incluem aquelas com cesariana prévia e placenta prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pacientes com pré-eclâmpsia grave são estratificadas como de alto risco para HPP mesmo sem história prévia de coagulopatia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Está recomendado o manejo ativo do 3º estágio somente para as pacientes estratificadas como médio e alto risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A presença de acompanhantes é desestimulada para ajudar a detectar sinais de alerta para as pacientes de alto risco para HPP.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é necessário dominar a estratificação de risco para Hemorragia Pós-Parto (HPP) proposta pelo Ministério da Saúde (Manual de Gestação de Alto Risco, 2022), que visa à prevenção e ao diagnóstico precoce dessa condição.\n\nAlternativa A: Incorreta. Embora a cesariana prévia seja considerada um fator de médio risco, a placenta prévia (ou qualquer outra alteração de inserção placentária, como o acretismo) é classificada como um fator de alto risco para HPP. Como a alternativa agrupa ambas no médio risco, ela está tecnicamente errada.\n\nAlternativa B: Correta. De acordo com o manual do Ministério da Saúde de 2022, a pré-eclâmpsia com critérios de gravidade é, sim, classificada como um fator de alto risco para Hemorragia Pós-Parto. Isso ocorre devido a diversos fatores, incluindo a possibilidade de coagulopatias associadas (como na síndrome HELLP) e o uso de sulfato de magnésio, que pode contribuir para a atonia uterina.\n\nAlternativa C: Incorreta. O manejo ativo do terceiro estágio do parto (período de secundamento) é recomendado para todas as mulheres, independentemente do nível de risco. A principal medida desse manejo é a administração de 10 UI de ocitocina por via intramuscular logo após o nascimento do bebê, o que reduz significativamente a incidência de HPP em todos os grupos.\n\nAlternativa D: Incorreta. Pelo contrário, as políticas de humanização e segurança do paciente estimulam a presença de acompanhantes. O acompanhante bem orientado pode, inclusive, ajudar a equipe assistencial a identificar precocemente sinais de alerta, como sangramento excessivo ou alteração do nível de consciência da paciente.\n\nResumo da Estratificação de Risco (MS 2022):\n1. Baixo Risco: Gestação única, menos de 4 partos anteriores, sem cirurgias uterinas prévias.\n2. Médio Risco: Cesariana prévia, mais de 4 partos (multipariedade), miomas, gestação múltipla ou corioamnionite.\n3. Alto Risco: Placenta prévia, suspeita de acretismo, pré-eclâmpsia grave, distúrbios de coagulação conhecidos ou história prévia de HPP grave.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:47.986Z"
+  },
+  {
+    "id": "AJUDA_b66c96ce-a461-4920-ac25-48b12dada662",
+    "originalId": "b66c96ce-a461-4920-ac25-48b12dada662",
+    "statement": "A ultrassonografia é o método diagnóstico mais utilizado para a pesquisa pré-natal das inúmeras anomalias congênitas. Essa técnica permite uma análise detalhada da anatomia fetal, auxilia o diagnóstico das malformações e as possíveis associações com as cromossomopatias.\nSobre o ultrassom morfológico de primeiro trimestre, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A regurgitação de tricúspide é um marcador maior de cardiopatias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O doppler de artérias uterinas tem importância para o cálculo de risco de pré-eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O índice de pulsatilidade das artérias umbilicais deve ser avaliado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Para o cálculo de risco de trissomias, o CCN (comprimento cabeça-nádegas) deve estar entre 40 e 85 mm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A medida do colo uterino deve ser realizado via transabdominal e com a bexiga vazia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o ultrassom morfológico de primeiro trimestre, exame realizado preferencialmente entre 11 semanas e 13 semanas e 6 dias de gestação, que possui objetivos que vão além da simples datação da gravidez, incluindo o rastreamento de anomalias cromossômicas e de complicações obstétricas.\n\nAlternativa a: Incorreta. No primeiro trimestre, a regurgitação tricúspide é considerada um marcador secundário (ou \"soft marker\") para o rastreamento de aneuploidias, especialmente a trissomia 21. Embora possa estar associada a um risco aumentado de cardiopatias congênitas, ela não é classificada isoladamente como um marcador maior de cardiopatias nesse período. O principal marcador ultrassonográfico para defeitos cardíacos e cromossomopatias no primeiro trimestre é o aumento da translucência nucal (TN).\n\nAlternativa b: Correta. O Doppler das artérias uterinas é uma ferramenta fundamental no rastreamento combinado de pré-eclâmpsia (PE) no primeiro trimestre. A avaliação do índice de pulsatilidade (IP) médio das artérias uterinas, somada a fatores de risco maternos, pressão arterial média e biomarcadores séricos, permite identificar pacientes com alto risco de desenvolver pré-eclâmpsia precoce (antes de 34 semanas), permitindo a intervenção profilática com aspirina.\n\nAlternativa c: Incorreta. A avaliação do índice de pulsatilidade das artérias umbilicais não faz parte do protocolo padrão do ultrassom morfológico de primeiro trimestre. O Doppler da artéria umbilical tem sua utilidade clínica estabelecida no segundo e terceiro trimestres para vigilância da vitalidade fetal e diagnóstico de insuficiência placentária em casos de restrição de crescimento fetal. No primeiro trimestre, os vasos avaliados para rastreamento de aneuploidias e predição de desfechos são o ducto venoso e as artérias uterinas.\n\nAlternativa d: Incorreta. Para que o cálculo de risco de trissomias (rastreamento combinado) seja válido seguindo os protocolos internacionais (como os da Fetal Medicine Foundation), o comprimento cabeça-nádega (CCN) do feto deve estar obrigatoriamente entre 45 mm e 84 mm. Valores abaixo de 45 mm ou acima de 84 mm não permitem a utilização das curvas de normalidade para a translucência nucal.\n\nAlternativa e: Incorreta. A medida do colo uterino (cervicometria) é realizada para rastrear o risco de parto prematuro espontâneo. O padrão-ouro para essa medida é a via transvaginal, e não a transabdominal, pois a via abdominal sofre interferências da gordura subcutânea e da posição fetal, além de não permitir a visualização adequada do orifício interno. A recomendação de bexiga vazia está correta para evitar o alongamento artificial do colo, mas a via de acesso proposta torna a alternativa falsa.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:47.986Z"
+  },
+  {
+    "id": "AJUDA_b673d614-59f0-4635-9154-496a3730a759",
+    "originalId": "b673d614-59f0-4635-9154-496a3730a759",
+    "statement": "Mariana, 32 anos, diagnosticada com esquizofrenia, apresenta delírios persecutórios de que está sendo vigiada por câmeras e se recusa a tomar a medicação oral, acreditando conter rastreadores. Ela mora com a irmã e um sobrinho pequeno, o que gera grande tensão familiar. A equipe de Saúde da Família (eSF), após diversas tentativas de abordagem, discute o caso em reunião multiprofissional e elabora estratégias de ação e cuidado. A enfermeira, que construiu um forte vínculo com a paciente, consegue apresentar propostas de tratamento e acompanhamento, e faz algumas adaptações seguindo as solicitações de Mariana, que aceita a medicação injetável de longa duração e o acompanhamento proposto pela eSF.\n\nConsiderando o caso clínico e os princípios da Atenção Primária à Saúde (APS), assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O sucesso do caso deveu-se à articulação da equipe multiprofissional na construção de um Projeto Terapêutico Singular (PTS), exemplificando a coordenação do cuidado e a longitudinalidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico psiquiátrico preciso e a prescrição medicamentosa foram os fatores determinantes para o sucesso, tornando as ações de vínculo da equipe secundárias no tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A presença de um sobrinho no domicílio indicava a necessidade de internação compulsória imediata para garantir a segurança, sendo a abordagem domiciliar uma medida de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A intervenção deveria ter focado exclusivamente na família, pois a recusa de Mariana à medicação oral demonstra uma falha no suporte e na estrutura familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O diagnóstico psiquiátrico foi precipitado, assim como a prescrição inicial de medicamentos, colaborando para a quebra de vínculo com a equipe e gerando maior disfunção familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nEsta questão aborda a organização do cuidado em Saúde Mental dentro da Atenção Primária à Saúde (APS), com foco no trabalho em equipe e nos atributos fundamentais do cuidado.\n\nAlternativa A (CORRETA): O caso descreve perfeitamente a construção de um Projeto Terapêutico Singular (PTS). O PTS é uma estratégia de cuidado que envolve a discussão de um caso complexo por uma equipe multiprofissional, buscando propostas terapêuticas articuladas para um indivíduo específico, considerando suas singularidades e contexto social. A atuação da enfermeira demonstra a longitudinalidade (continuidade do vínculo ao longo do tempo) e a coordenação do cuidado (capacidade da equipe de integrar os diversos pontos de atenção e ofertas terapêuticas, como a medicação injetável aceita pela paciente).\n\nAlternativa B (INCORRETA): Embora o diagnóstico e a prescrição sejam importantes, o sucesso terapêutico no manejo de transtornos mentais graves na APS depende fundamentalmente do vínculo e da clínica ampliada. Tratar as ações de vínculo como secundárias contraria as diretrizes da Reforma Psiquiátrica e da Política Nacional de Atenção Básica (PNAB). No caso, foi justamente o vínculo que permitiu a adesão ao tratamento.\n\nAlternativa C (INCORRETA): A internação compulsória é uma medida extrema, reservada para situações de risco iminente de auto- ou heteroagressividade, quando todos os recursos extra-hospitalares foram esgotados. A presença de um menor no domicílio exige acompanhamento e proteção, mas não justifica, isoladamente, a internação. O manejo domiciliar e ambulatorial bem-sucedido, como mostrado no relato, prova que a internação não era a primeira indicação.\n\nAlternativa D (INCORRETA): O foco do cuidado deve ser sistêmico, envolvendo tanto a paciente quanto sua rede de apoio (família). Isolar a intervenção apenas na família e considerar a recusa medicamentosa da paciente como uma falha estrutural familiar é uma visão reducionista. A recusa fazia parte da psicopatologia da paciente (delírios persecutórios) e foi superada por meio da negociação e adaptação do tratamento.\n\nAlternativa E (INCORRETA): O enunciado afirma o oposto desta alternativa. O diagnóstico permitiu o direcionamento correto da estratégia, e a intervenção da equipe, especialmente da enfermeira, fortaleceu o vínculo em vez de quebrá-lo. Não há evidências no texto de que o diagnóstico tenha sido precipitado, mas sim de que houve uma construção progressiva de cuidado que resultou na aceitação do tratamento pela paciente.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Transtornos Psicóticos",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:47.986Z"
+  },
+  {
+    "id": "AJUDA_b6748c39-409e-461d-8e53-9042d3a0046f",
+    "originalId": "b6748c39-409e-461d-8e53-9042d3a0046f",
+    "statement": "Gestante de 8 semanas, previamente eutireoideana, apresenta TSH = 6,8 mUI/L, T4 livre normal e anticorpo anti-TPO positivo. Sem sintomas. Qual é a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar levotiroxina, pois trata-se de hipotireoidismo subclínico na gravidez com anti-TPO positivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Não tratar, pois apenas o T4 livre deve ser considerado no 1º trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reavaliar em 4 semanas sem medicar, porque TSH<10 nunca indica tratamento gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar TRAb e tratar apenas se houver hipertireoidismo fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Introduzir iodo suplementar em altas doses como alternativa à levotiroxina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso descreve uma gestante no primeiro trimestre com diagnóstico de hipotireoidismo subclínico, definido por TSH elevado (6,8 mUI/L) e T4 livre dentro da normalidade. Além disso, a paciente apresenta anticorpos anti-TPO positivos, o que indica uma etiologia autoimune (Tireoidite de Hashimoto).\n\nDe acordo com as diretrizes da American Thyroid Association (ATA) e da Sociedade Brasileira de Endocrinologia e Metabologia (SBEM), o manejo do hipotireoidismo na gestação difere da população geral devido aos riscos de complicações obstétricas (como aborto e parto prematuro) e prejuízos ao desenvolvimento neurocognitivo fetal.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Na gestação, o tratamento com levotiroxina está formalmente indicado quando o TSH está acima do limite superior da normalidade (geralmente considerado > 4,0 mUI/L) associado à presença do anticorpo anti-TPO. O tratamento visa reduzir os riscos gestacionais e garantir o aporte hormonal adequado ao feto, que no primeiro trimestre depende exclusivamente da tiroxina materna.\n\nAlternativa b) Incorreta. O TSH é o parâmetro mais sensível para avaliar a função tireoidiana. Ignorar um TSH de 6,8 mUI/L e considerar apenas o T4 livre normal colocaria a gestação em risco, pois o hipotireoidismo subclínico tem repercussões clínicas comprovadas no ciclo gravídico-puerperal.\n\nAlternativa c) Incorreta. Diferentemente de adultos não gestantes, em que muitas vezes se aguarda para repetir o exame em casos subclínicos leves, na gestação a intervenção deve ser imediata para proteger o desenvolvimento fetal. Além disso, o ponto de corte de TSH > 10 mUI/L para iniciar tratamento é uma regra que não se aplica à gestante; nela, valores bem menores já justificam a terapia, especialmente se o anti-TPO for positivo.\n\nAlternativa d) Incorreta. O TRAb (anticorpo antirreceptor de TSH) é solicitado na suspeita de Doença de Graves (hipertireoidismo) ou para avaliar risco de hipertireoidismo fetal/neonatal em mães com histórico de Graves. A paciente em questão apresenta um quadro de hipotireoidismo.\n\nAlternativa e) Incorreta. O tratamento do hipotireoidismo estabelecido (seja clínico ou subclínico com critérios de tratamento) é feito exclusivamente com levotiroxina (T4 sintético). O iodo é um micronutriente para prevenção de bócio endêmico, mas o uso de \"altas doses\" pode ser prejudicial, podendo inclusive causar hipotireoidismo iatrogênico (efeito Wolff-Chaikoff).",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Tireoide",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:47.986Z"
+  },
+  {
+    "id": "AJUDA_b6774613-84f8-4f10-abc3-3e85046e888c",
+    "originalId": "b6774613-84f8-4f10-abc3-3e85046e888c",
+    "statement": "As Unidades de Assistência de Alta Complexidade em Oncologia (UNACON) e os Centros de Assistência de Alta Complexidade (CACON) desempenham um papel fundamental no tratamento dos diversos tipos de câncer no SUS.\nA principal diferença entre essas unidades, em termos de atendimento oncológico, reside no fato de que",
+    "options": [
+      {
+        "id": "A",
+        "text": "as UNACON oferecem assistência de alta complexidade em Oncologia para pacientes com câncer de alta complexidade, enquanto as CACON oferecem assistência integral e continuada para todos os tipos de câncer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "as UNACON são unidades hospitalares que atendem pacientes com câncer em estágio inicial, enquanto as CACON atendem pacientes com câncer em estágio avançado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "as UNACON oferecem tratamento quimioterápico para pacientes com câncer, enquanto as CACON oferecem apenas tratamento cirúrgico e radioterápico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "as UNACON são unidades que oferecem assistência de alta complexidade em Oncologia com foco em pesquisa clínica, enquanto as CACON oferecem assistência com foco em atendimento humanizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "as UNACON oferecem assistência de alta complexidade em Oncologia com equipe multidisciplinar para os canceres mais prevalentes, enquanto as CACON oferecem assistência integral para todos os tipos de câncer.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A organização da assistência oncológica no Sistema Único de Saúde (SUS) é estruturada com base na complexidade e na abrangência do atendimento prestado pelas unidades hospitalares. A principal distinção entre UNACON e CACON reside na variedade de tipos de câncer que cada uma está capacitada e autorizada a tratar, conforme as normativas do Ministério da Saúde.\n\nAlternativa a: Incorreta. Ambas as unidades realizam procedimentos de alta complexidade. O que as diferencia não é o nível de \"complexidade do câncer\" individual de cada paciente, mas sim a gama de especialidades oncológicas atendidas pela instituição.\n\nAlternativa b: Incorreta. A divisão entre essas unidades não ocorre pelo estadiamento da doença (se inicial ou avançado). Tanto a UNACON quanto o CACON devem estar preparados para realizar o diagnóstico, o tratamento (cirúrgico, quimioterápico, radioterápico) e o acompanhamento de pacientes em qualquer fase da doença.\n\nAlternativa c: Incorreta. A UNACON não se limita à quimioterapia; ela deve obrigatoriamente oferecer cirurgia oncológica e quimioterapia, podendo ter radioterapia própria ou contratualizada. O CACON, por sua vez, deve obrigatoriamente oferecer as três modalidades de tratamento (cirurgia, quimioterapia e radioterapia) dentro da sua estrutura hospitalar.\n\nAlternativa d: Incorreta. A pesquisa clínica e o atendimento humanizado são diretrizes gerais para toda a rede de oncologia e não servem como critérios técnicos de diferenciação administrativa ou funcional entre UNACON e CACON.\n\nAlternativa e: Correta. Esta alternativa descreve exatamente a diferenciação estabelecida pela Portaria nº 140/2014 do Ministério da Saúde. As Unidades de Assistência de Alta Complexidade em Oncologia (UNACON) são hospitais que possuem condições técnicas, instalações físicas, equipamentos e recursos humanos adequados para prestar assistência especializada de alta complexidade para o diagnóstico e tratamento dos cânceres mais prevalentes na população. Já os Centros de Assistência de Alta Complexidade em Oncologia (CACON) são hospitais que possuem todos os recursos para prestar assistência integral e especializada para todos os tipos de câncer, incluindo tumores mais raros ou de manejo mais específico, centralizando todas as modalidades terapêuticas no mesmo complexo hospitalar.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": 83.08917767174422,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:47.986Z"
+  },
+  {
+    "id": "AJUDA_b67e4f12-1fda-463b-a478-29bb5eb686e8",
+    "originalId": "b67e4f12-1fda-463b-a478-29bb5eb686e8",
+    "statement": "Endometriose é uma condição definida pela presença de tecido endometrial fora da cavidade uterina. Sobre esta doença, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os principais sintomas incluem dismenorreia, dor pélvica crônica, dispareunia de profundidade, alterações intestinais e urinárias acíclicas e infertilidade. A realização do exame físico ginecológico fora do período menstrual facilita a suspeita clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os exames de escolha para a detecção e estadiamento da endometriose são a ultrassonografia transvaginal e a tomografia computadorizada de pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicações de videolaparoscopia incluem infertilidade, endometriomas >5cm e doença obstruindo trato urinário ou gastrintestinal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Os progestagênios isolados são a primeira escolha para o tratamento da dor, enquanto os contraceptivos orais combinados contínuos não apresentam boa eficácia para o alívio dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "RESUMO DO CONTEÚDO\nA endometriose caracteriza-se pelo crescimento de estroma e glândulas endometriais fora do útero, respondendo ao estímulo estrogênico. É uma patologia inflamatória crônica que exige manejo individualizado, variando entre tratamento clínico e cirúrgico.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (INCORRETA): Embora os sintomas citados (dismenorreia, dor pélvica crônica, dispareunia de profundidade e infertilidade) sejam clássicos, as alterações intestinais e urinárias na endometriose costumam ser cíclicas (catameniais), ou seja, pioram significativamente durante o período menstrual. Além disso, o exame físico ginecológico realizado durante o período menstrual é o que facilita a suspeita clínica, pois os focos e nódulos tornam-se mais ingurgitados e dolorosos, facilitando a palpação no toque vaginal e retovaginal.\n\nAlternativa B (INCORRETA): A ultrassonografia transvaginal com preparo intestinal e a Ressonância Magnética (RM) de pelve são os exames de escolha para o mapeamento e estadiamento da doença. A tomografia computadorizada de pelve apresenta baixa sensibilidade para detectar focos de endometriose, não sendo indicada na rotina de investigação desta patologia.\n\nAlternativa C (CORRETA): A videolaparoscopia é indicada em situações específicas. Entre elas, destacam-se: infertilidade (para restaurar a anatomia pélvica e remover focos), presença de endometriomas volumosos (geralmente acima de 5-6 cm, pelo risco de torção, ruptura ou para excluir malignidade) e casos de endometriose profunda com comprometimento funcional de órgãos, como as obstruções do trato urinário (ureteres) ou do trato gastrointestinal. Também é indicada quando há falha no tratamento clínico da dor.\n\nAlternativa D (INCORRETA): Tanto os progestagênios isolados quanto os contraceptivos orais combinados (especialmente em regime contínuo) são considerados tratamentos de primeira linha para o manejo da dor relacionada à endometriose. Ambos apresentam boa eficácia no controle dos sintomas dolorosos por promoverem a atrofia do tecido endometrial e a anovulação. Afirmar que os combinados não apresentam boa eficácia está incorreto.\n\nGABARITO: Alternativa C.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:47.986Z"
+  },
+  {
+    "id": "AJUDA_b68ca23a-46e9-446a-9266-28281f079e52",
+    "originalId": "b68ca23a-46e9-446a-9266-28281f079e52",
+    "statement": "Gestante, 31 anos, com 28 semanas de gestação, foi diagnosticada com diabetes melito gestacional controlado exclusivamente com dieta nas últimas 2 semanas. Apresenta os seguintes controles de glicemia capilar da última semana: Jejum = 105 a 115 mg/dL; 1 hora após o café da manhã = 135 a 172 mg/dL; 1 hora após o almoço = 110 a 120 mg/dL; 1 hora após o jantar = 140 a 168 mg/dL. A ecografia obstétrica recente mostra um peso fetal estimado no percentil 60. Com base nos dados apresentados, a conduta recomendada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever análogo de GLP-1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever metformina e glibenclamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reforçar dieta e exercício físico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar Hb glicada para definir tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prescrever insulina esquema basal-bólus.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver esta questão, é necessário analisar o perfil glicêmico da paciente e compará-lo com os alvos terapêuticos estabelecidos para o Diabetes Mellitus Gestacional (DMG). De acordo com a Sociedade Brasileira de Diabetes e a FEBRASGO, os valores-alvo de glicemia capilar na gestação são: jejum < 95 mg/dL; 1 hora pós-prandial < 140 mg/dL; e 2 horas pós-prandial < 120 mg/dL.\n\nA paciente apresenta:\n1. Jejum alterado (105 a 115 mg/dL), quando o alvo é < 95.\n2. Pós-prandiais do café da manhã e jantar frequentemente alterados (atingindo até 172 e 168 mg/dL), quando o alvo é < 140.\n\nApós duas semanas de dieta e orientações de estilo de vida sem atingir o controle (geralmente considera-se falha quando mais de 30% dos valores estão alterados), a terapia farmacológica deve ser iniciada.\n\nAnálise das alternativas:\n\na) Incorreta. Os análogos de GLP-1 não possuem segurança comprovada na gestação e não fazem parte das diretrizes para o tratamento do DMG.\n\nb) Incorreta. Embora a metformina possa ser utilizada em casos selecionados ou quando há recusa à insulina, ela atravessa a barreira placentária. A glibenclamida está associada a maiores taxas de hipoglicemia neonatal e macrossomia. A insulina permanece como o padrão-ouro e a primeira escolha pela segurança e eficácia no controle rigoroso.\n\nc) Incorreta. A paciente já realizou o manejo não farmacológico (dieta) por duas semanas e os níveis glicêmicos permanecem significativamente acima da meta, tanto no jejum quanto no período pós-prandial. Postergar o tratamento farmacológico aumenta o risco de complicações perinatais.\n\nd) Incorreta. A hemoglobina glicada (HbA1c) não é utilizada para definir ou ajustar o tratamento no DMG. O ajuste terapêutico baseia-se exclusivamente no perfil glicêmico diário (glicemias capilares), pois a HbA1c reflete a média dos últimos meses e não capta as flutuações agudas necessárias para o manejo gestacional.\n\ne) Correta. Como a paciente apresenta hiperglicemia de jejum e também hiperglicemia pós-prandial em mais de uma refeição, a conduta mais adequada é o início da insulinoterapia. O esquema basal-bólus (NPH para o componente basal e insulina rápida/ultrarrápida para o componente bólus) permite controlar tanto os níveis de jejum quanto os picos após as refeições, sendo a conduta recomendada pelas principais diretrizes nacionais e internacionais.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:47.986Z"
+  },
+  {
+    "id": "AJUDA_b6a36871-7f57-4a65-b626-1c5ad44b4d80",
+    "originalId": "b6a36871-7f57-4a65-b626-1c5ad44b4d80",
+    "statement": "Homem, 28 anos de idade, recebeu 20 mL de glicose 50% endovenosa em atendimento por intoxicação alcoólica aguda. Após 20 minutos, o paciente evoluiu com confusão mental. Nesse momento, o paciente encontrava-se com glicemia capilar de 100 mg/dL, afebril, descorado, desnutrido, sem sinais de comprometimento respiratório ou cardíaco. Ao exame neurológico observa-se marcha com base alargada, dismetria à manobra index-nariz bilateralmente, nistagmo horizontal que bate para a esquerda ao olhar para a esquerda e bate para a direita ao olhar para a direita; paresia do músculo ocular reto lateral bilateralmente.\nQual é a principal hipótese diagnóstica para o quadro neurológico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidente vascular cerebral isquêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mielinólise pontina central.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Polirradiculoneurite tóxico-metabólica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encefalopatia de Wernicke.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito é típico da encefalopatia de Wernicke, uma condição neurológica aguda decorrente da deficiência de tiamina (vitamina B1). Esta vitamina é um cofator essencial para enzimas do metabolismo da glicose. Em pacientes etilistas e desnutridos, as reservas de tiamina são mínimas. Quando o paciente recebeu uma carga de glicose (20 mL a 50%), o metabolismo desse carboidrato consumiu o restante da tiamina disponível, precipitando os danos neurológicos em áreas sensíveis, como o tronco encefálico e o cerebelo. O exame físico revela a tríade clássica da doença: confusão mental, ataxia de marcha (marcha com base alargada e dismetria) e anormalidades oculares (nistagmo e paresia do músculo reto lateral bilateralmente, indicando acometimento do VI par craniano).\n\nAlternativa a: Incorreta. O acidente vascular cerebral (AVC) isquêmico costuma apresentar déficits focais súbitos e assimétricos. No caso em questão, os sinais são bilaterais e simétricos (dismetria bilateral, paresia do reto lateral bilateral), além de haver um gatilho metabólico evidente associado à infusão de glicose em um paciente com fatores de risco.\n\nAlternativa b: Incorreta. A mielinólise pontina central (síndrome da desmielinização osmótica) ocorre tipicamente pela correção excessivamente rápida de uma hiponatremia grave, e não pela oferta de glicose. Além disso, os sintomas geralmente surgem alguns dias após a correção do sódio, e não em 20 minutos.\n\nAlternativa c: Incorreta. Polirradiculoneurites são doenças que afetam o sistema nervoso periférico (como a síndrome de Guillain-Barré). O paciente apresenta sinais claros de comprometimento do sistema nervoso central, como nistagmo, confusão mental e sinais cerebelares (ataxia e dismetria).\n\nAlternativa d: Correta. Esta é a principal hipótese diagnóstica. A administração de glicose antes da reposição de tiamina em pacientes com risco de deficiência nutricional (como no alcoolismo crônico) é um erro clássico que desencadeia a encefalopatia de Wernicke. O tratamento deve ser feito com a reposição imediata de tiamina por via parenteral.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Coma e Alterações da Consciência",
+      "Dependência Química"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T17:37:47.986Z"
+  }
+]

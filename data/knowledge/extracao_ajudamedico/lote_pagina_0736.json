@@ -1,0 +1,516 @@
+[
+  {
+    "id": "AJUDA_cd449e84-ef82-49f1-977b-b6c13bcf5072",
+    "originalId": "cd449e84-ef82-49f1-977b-b6c13bcf5072",
+    "statement": "Óbito de gestante por agravamento de cardiopatia congênita pré-existente durante a gestação deve ser classificado como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Morte materna direta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Morte materna indireta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Morte materna tardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Morte obstétrica acidental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Morte relacionada à gestação, não materna.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder a essa questão, é fundamental compreender a classificação da Organização Mundial da Saúde (OMS) para as mortes maternas, que as divide em diretas e indiretas, além das definições de morte tardia e não materna.\n\nMorte materna é o óbito de uma mulher durante a gestação ou até 42 dias após o término da gravidez, devido a qualquer causa relacionada ou agravada pela gestação ou por medidas tomadas em relação a ela, mas não por causas acidentais ou incidentais.\n\nAlternativa a: Incorreta. A morte materna direta é aquela que resulta de complicações obstétricas decorrentes da própria gravidez, parto ou puerpério. São exemplos as mortes por eclâmpsia, hemorragia pós-parto, infecção puerperal ou complicações de abortamento. Como a cardiopatia citada já era preexistente, ela não se enquadra nesta categoria.\n\nAlternativa b: Correta. A morte materna indireta é aquela resultante de doenças preexistentes ou de doenças que se desenvolveram durante a gestação e que não são devidas a causas obstétricas diretas, mas que foram agravadas pelos efeitos fisiológicos da gravidez. O agravamento de uma cardiopatia congênita devido à sobrecarga hemodinâmica natural da gestação é o exemplo clássico de causa indireta.\n\nAlternativa c: Incorreta. A morte materna tardia refere-se ao período cronológico em que o óbito ocorre. Ela é definida como a morte de uma mulher por causas obstétricas diretas ou indiretas que ocorre mais de 42 dias, porém menos de um ano, após a interrupção ou término da gestação. O enunciado afirma que o óbito ocorreu durante a gestação.\n\nAlternativa d: Incorreta. O termo morte obstétrica acidental não é uma classificação padrão da CID-10 para morte materna. Mortes por causas externas (como acidentes de trânsito ou violência), mesmo ocorrendo durante a gravidez, são classificadas como mortes não maternas ou acidentais/incidentais.\n\nAlternativa e: Incorreta. Morte relacionada à gestação é um termo genérico que define qualquer óbito ocorrido durante a gravidez, parto ou puerpério, independentemente da causa. No entanto, tecnicamente, se houve o agravamento de uma patologia pela gestação levando ao óbito, a classificação correta e específica para fins epidemiológicos é morte materna indireta.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:51.283Z"
+  },
+  {
+    "id": "AJUDA_cd4e5cf2-9a21-4328-b636-9ac5ff53b7b0",
+    "originalId": "cd4e5cf2-9a21-4328-b636-9ac5ff53b7b0",
+    "statement": "Qual é a conduta profilática secundária de primeira linha para prevenir o ressangramento em pacientes cirróticos com hemorragia digestiva alta HDA por varizes esofágicas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Combinação de Betabloqueador Não Seletivo (Propranolol ou Carvedilol) e Ligadura Elástica de Varizes Esofágicas (LEVE).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Inibidor de Bomba de Prótons (IBP) em alta dose (ex: Omeprazol 40 mg de 12/12h).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas Antibiótico Profilático (ex: Ceftriaxona) por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Derivação Portossistêmica Intra-Hepática Transjugular (TIPS), como tratamento de primeira linha.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DO PROFESSOR\n\nA profilaxia secundária é indicada para todo paciente cirrótico que já sobreviveu a um episódio de hemorragia digestiva alta (HDA) por varizes esofágicas, uma vez que o risco de ressangramento no primeiro ano é muito elevado (superior a 60%).\n\nAlternativa (a): CORRETA. De acordo com o consenso internacional de Baveno VII e as diretrizes da Sociedade Brasileira de Hepatologia, o padrão-ouro para a profilaxia secundária é a terapia combinada. O betabloqueador não seletivo (propranolol ou carvedilol) reduz o gradiente de pressão venosa hepática por meio da diminuição do débito cardíaco (bloqueio beta-1) e da vasoconstrição esplâncnica (bloqueio beta-2, que deixa a ação alfa-adrenérgica sem oposição). A ligadura elástica de varizes esofágicas (LEVE) complementa o tratamento realizando a obliteração mecânica dos vasos. A associação das duas técnicas é superior a qualquer uma delas utilizada isoladamente.\n\nAlternativa (b): INCORRETA. Os inibidores de bomba de prótons (IBP) são a base do tratamento para hemorragias de origem ulcerosa (úlcera péptica). Na cirrose, o IBP não tem ação sobre a pressão portal. Ele pode ser utilizado por um curto período (geralmente 10 a 14 dias) após a ligadura elástica para auxiliar na cicatrização das úlceras formadas pela queda dos elásticos, mas não é um agente de profilaxia secundária.\n\nAlternativa (c): INCORRETA. A antibioticoterapia (ceftriaxona IV ou norfloxacino VO) é uma medida de fase AGUDA. Ela deve ser iniciada imediatamente na admissão do paciente com sangramento varicoso e mantida por 7 dias para prevenir peritonite bacteriana espontânea (PBE) e outras infecções, o que comprovadamente reduz a mortalidade e o ressangramento precoce. Contudo, não faz parte do esquema de profilaxia secundária crônica.\n\nAlternativa (d): INCORRETA. O TIPS (shunt portossistêmico intra-hepático transjugular) é um procedimento invasivo. Atualmente, ele é indicado como \"TIPS precoce\" (em até 72h) para pacientes de alto risco (Child-Pugh C ou B com sangramento ativo na endoscopia) ou como terapia de resgate quando o tratamento padrão (droga + endoscopia) falha. Não é a conduta inicial de primeira linha para a população geral de cirróticos que tiveram HDA.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:51.283Z"
+  },
+  {
+    "id": "AJUDA_cd55bceb-3c5a-44a3-bfea-a2692be89f8c",
+    "originalId": "cd55bceb-3c5a-44a3-bfea-a2692be89f8c",
+    "statement": "Mulher nuligesta de 29 anos, que apresentou ciclos irregulares (intervalos de 45 a 60 dias, sangramento de 3 dias, com intensidade leve) ao longo do primeiro semestre do ano passado. Sua última menstruação foi há 10 meses. Desde o início do quadro, tem a sensação de calor exagerado, que surge em ondas, associados à descarga de sudorese, especialmente à noite, o que prejudica seu sono. Percebeu também dispareunia de penetração, redução da libido sexual e anorgasmia. Assinale a alternativa INCORRETA frente a esta situação clínica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Será necessário avaliar pelo menos duas vezes os níveis séricos de estradiol e FSH para definição do diagnóstico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "No caso de não haver desejo reprodutivo, o método contraceptivo deve ser associado ao uso da terapia hormonal (TH);",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Para a TH, a dose de estrogênio usualmente é maior do que a prescrita na menopausa habitual;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso seguro de terapia hormonal deverá respeitar o tempo de até cinco anos, ser for efetuada a TH estroprogestativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente de 29 anos apresenta um quadro de amenorreia secundária (10 meses sem menstruar), sintomas vasomotores (fogachos e sudorese noturna) e sinais de atrofia urogenital/disfunção sexual (dispareunia e redução de libido). Em uma mulher com menos de 40 anos, esse conjunto de sinais e sintomas é altamente sugestivo de Insuficiência Ovariana Prematura (IOP).\n\nAnálise das alternativas:\n\nAlternativa a) Está correta. O diagnóstico de Insuficiência Ovariana Prematura é bioquímico e requer a demonstração de hipogonadismo hipergonadotrófico. Os critérios clínicos e laboratoriais exigem pelo menos 4 meses de amenorreia e a confirmação de níveis elevados de FSH (geralmente acima de 25 ou 40 UI/L, dependendo da referência) em duas ocasiões distintas, com intervalo de 4 a 6 semanas entre as coletas.\n\nAlternativa b) Está correta. A terapia hormonal (TH) convencional utilizada para tratar os sintomas do climatério não tem dose suficiente para inibir a ovulação. Como mulheres com IOP podem apresentar ovulações intermitentes e possuem uma chance de 5 a 10 por cento de gravidez espontânea após o diagnóstico, se a paciente não desejar gestar, deve-se associar um método contraceptivo ou utilizar a própria pílula anticoncepcional combinada como forma de terapia de reposição.\n\nAlternativa c) Está correta. Em mulheres na menopausa fisiológica (por volta dos 50 anos), o objetivo da TH é utilizar a menor dose eficaz para controle de sintomas. Já na IOP, o objetivo é a reposição fisiológica, ou seja, devolver a essa mulher os níveis de estrogênio que ela deveria ter naturalmente na sua idade. Por isso, as doses de estrogênio na IOP são usualmente mais altas (ex: 2 mg de estradiol oral) do que as utilizadas na pós-menopausa tardia (ex: 1 mg ou 0,5 mg de estradiol oral).\n\nAlternativa d) Está incorreta e é o gabarito da questão. O limite de cinco anos para a terapia hormonal estroprogestativa é uma recomendação frequentemente discutida para mulheres que iniciam a TH após a menopausa fisiológica, visando minimizar riscos a longo prazo (como o de câncer de mama). No entanto, na Insuficiência Ovariana Prematura, a recomendação é que a terapia hormonal seja mantida obrigatoriamente até, pelo menos, a idade média da menopausa natural (cerca de 50 a 51 anos). Interromper o tratamento após apenas cinco anos em uma paciente de 29 anos a deixaria precocemente exposta a riscos cardiovasculares, osteoporose e declínio cognitivo. Portanto, o uso não deve ser limitado a cinco anos neste contexto clínico.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:51.283Z"
+  },
+  {
+    "id": "AJUDA_cd59ccb7-bfa3-4c5e-aa31-88843275ee3a",
+    "originalId": "cd59ccb7-bfa3-4c5e-aa31-88843275ee3a",
+    "statement": "Paciente, 29 anos de idade, G1P1, procura atendimento para iniciar método contraceptivo. Relata intolerância a hormônios, com história prévia de trombose venosa profunda aos 25 anos. Deseja um método eficaz, reversível e de longa duração. Exame físico normal, exames laboratoriais dentro da normalidade. Nega alergias conhecidas. Sobre os métodos contraceptivos não hormonais, o profissional deve esclarecer à paciente que",
+    "options": [
+      {
+        "id": "A",
+        "text": "o DIU de cobre, apesar de altamente eficaz, está contraindicado em nulíparas devido ao risco aumentado de perfuração uterina e infertilidade futura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a taxa de falha dos métodos de barreira, como preservativo masculino, é menor que a do DIU de cobre, sendo por isso mais recomendados em pacientes com contraindicação a hormônios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a laqueadura tubária é um método definitivo, e pode ser revertida em situações especiais, com altas taxas de sucesso, sem necessidade de aconselhamento prévio sobre irreversibilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o DIU de cobre pode aumentar o fluxo menstrual e a dismenorreia, mas não apresenta restrição quanto ao histórico de trombose e é considerado altamente eficaz e seguro em mulheres jovens.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "GABARITO: Letra (d)\n\nCOMENTÁRIO:\n\nA questão apresenta uma paciente jovem com contraindicação absoluta ao uso de estrogênio devido ao histórico de trombose venosa profunda (TVP). Ela busca um método contraceptivo reversível, de longa duração (LARC) e não hormonal. A alternativa correta aborda o DIU de cobre como a principal opção para esse perfil.\n\nAlternativa (a) Incorreta: O DIU de cobre não é contraindicado para nulíparas. Tanto o Ministério da Saúde quanto a Organização Mundial da Saúde (OMS) classificam o uso de DIU em nulíparas como Categoria 2 (os benefícios superam os riscos). Não há evidências de que o DIU cause infertilidade futura ou que o risco de perfuração seja significativamente maior apenas pela nuliparidade. Além disso, a paciente do caso é G1P1 (já pariu), o que torna a afirmação ainda mais desconexa com o enunciado.\n\nAlternativa (b) Incorreta: Os métodos de barreira, como o preservativo, apresentam taxas de falha muito superiores às do DIU. No uso típico, o preservativo masculino tem uma taxa de falha de aproximadamente 13% a 18%, enquanto o DIU de cobre apresenta falha de apenas 0,8%. Os métodos de longa duração (LARCs) são sempre mais eficazes por não dependerem da disciplina do usuário em cada ato sexual.\n\nAlternativa (c) Incorreta: A laqueadura tubária é um método esterilizante definitivo. Embora existam técnicas de reversão, elas são cirurgias complexas, caras e com taxas de sucesso incertas. O aconselhamento sobre a irreversibilidade é um requisito ético e legal (Lei nº 9.263/96) obrigatório no Brasil. Além disso, a paciente solicitou expressamente um método reversível.\n\nAlternativa (d) Correta: Esta alternativa descreve com precisão as características do DIU de cobre. Os efeitos colaterais mais frequentes são o aumento do volume de sangramento menstrual e a intensificação das cólicas (dismenorreia). Por ser um método livre de hormônios, é Categoria 1 da OMS para pacientes com antecedente de trombose, sendo considerado seguro, altamente eficaz e com validade de até 10 anos, atendendo a todos os requisitos da paciente.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:51.283Z"
+  },
+  {
+    "id": "AJUDA_cd5ff551-6068-4f95-b0b6-355c5c6ef8da",
+    "originalId": "cd5ff551-6068-4f95-b0b6-355c5c6ef8da",
+    "statement": "Homem de 62 anos, portador de obesidade (IMC 34 kg/m²), hipertensão arterial e dislipidemia, procura o pronto atendimento por dor torácica retroesternal em aperto, iniciada há 40 minutos, irradiada para braço esquerdo e acompanhada de sudorese fria. Refere episódios prévios de dor aos esforços, mas nunca havia procurado atendimento.\nNo pronto-socorro, apresenta PA de 138/84 mmHg, FC 92 bpm, FR 20 irpm, SatO₂ 95% em ar ambiente. O exame físico não mostra sopros cardíacos ou sinais de insuficiência cardíaca.\nO ECG demonstra alterações isquêmicas em parede inferior, sem supra de ST ou sinais de oclusão coronária.\nApós administração sublingual de nitrato, o paciente apresentou melhora significativa da dor.\nForam realizadas duas dosagens de troponina ultrasensível, com intervalo de 2 horas, ambas normais (valores: 8 pg/mL e 10 pg/mL; referência do laboratório: <14 pg/mL).\nO escore GRACE calculado foi de 168 pontos.\nQual deve ser a conduta mais adequada neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar ecocardiograma de estresse para avaliar isquemia miocárdica antes de definir conduta invasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar teste ergométrico convencional para avaliação funcional e seguimento clínico ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar cateterismo cardíaco em até 24 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Descartar doença coronariana aguda pela ausência de elevação da troponina, orientando apenas acompanhamento clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar angiotomografia coronariana para melhor caracterização anatômica e eventual decisão terapêutica posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um paciente com quadro clássico de Síndrome Coronariana Aguda sem Supradesnivelamento do Segmento ST (SCASST). A dor precordial típica, associada a fatores de risco cardiovascular e alterações isquêmicas no ECG (mesmo sem supra de ST), direciona o diagnóstico. O fato de as troponinas serem normais e sem curva de ascensão em duas coletas exclui o Infarto Agudo do Miocárdio (IAM), mas confirma o diagnóstico de Angina Instável.\n\nA definição da conduta baseia-se na estratificação de risco. O escore GRACE é a ferramenta recomendada pelas diretrizes da Sociedade Brasileira de Cardiologia e da Sociedade Europeia de Cardiologia. Um escore GRACE de 168 pontos classifica o paciente como de alto risco (GRACE > 140). Para pacientes de alto risco, a estratégia indicada é a invasiva precoce, que consiste na realização de cineangiocoronariografia (cateterismo) em até 24 horas.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Testes de estresse (como ecocardiograma de estresse ou cintilografia) não devem ser realizados na fase aguda de pacientes com alto risco. Esses exames são indicados para estratificação de pacientes de baixo risco ou em quadros de dor torácica estável.\n\nAlternativa b) Incorreta. O teste ergométrico é contraindicado na fase aguda da angina instável de alto risco, devido ao perigo de desencadear arritmias graves ou a oclusão total da artéria durante o esforço.\n\nAlternativa c) Correta. Como o paciente possui um escore GRACE de 168 (alto risco), a diretriz recomenda o cateterismo cardíaco em até 24 horas para definir a anatomia coronariana e proceder com a revascularização necessária.\n\nAlternativa d) Incorreta. A ausência de elevação da troponina apenas descarta a necrose miocárdica (infarto), mas não descarta a doença coronariana aguda. A Angina Instável é um diagnóstico clínico e eletrocardiográfico que apresenta alto risco de evolução para infarto ou morte, se não tratada adequadamente.\n\nAlternativa e) Incorreta. A angiotomografia de coronárias é uma excelente ferramenta para descartar doença coronariana em pacientes de risco baixo ou intermediário no pronto-socorro. Para um paciente já diagnosticado com Angina Instável de alto risco pelo escore GRACE, o cateterismo cardíaco é o exame de escolha, pois permite tanto o diagnóstico definitivo quanto o tratamento imediato (angioplastia).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:51.283Z"
+  },
+  {
+    "id": "AJUDA_cd72d628-6b45-4b38-8fca-c12b5f534b8c",
+    "originalId": "cd72d628-6b45-4b38-8fca-c12b5f534b8c",
+    "statement": "Mulher, 42 anos, queixa-se de fadiga progressiva com diplopia ao final do dia há 6 meses. Exame neurológico sugere fraqueza fatigável; sorologia para anticorpo anti-receptor de acetilcolina é positiva. Radiografia de tórax mostra alargamento do mediastino anterior. A tomografia computadorizada de tórax com contraste mostra uma massa encapsulada no mediastino anterior, sem invasão evidente de estruturas adjacentes (imagem demonstrada a seguir). Não há adenomegalias mediastinais perceptíveis.\n\nQual a conduta mais adequada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Biópsia percutânea guiada por TC da lesão para definição histológica pré-operatória, seguida de tratamento conforme resultado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ressecção cirúrgica completa da lesão, com intenção curativa e regressão dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Radioterapia exclusiva do mediastino, por se tratar de tumor localizado associado à miastenia gravis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observação e seguimento seriado por imagem, já que a lesão é bem delimitada e o paciente está hemodinamicamente estável.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — uma mulher com diplopia, fadiga progressiva (característica de fraqueza fatigável) e sorologia positiva para anticorpo antirreceptor de acetilcolina — confirma o diagnóstico de Miastenia Gravis (MG). A presença de uma massa no mediastino anterior identificada na tomografia computadorizada (TC) de tórax em um paciente com MG é altamente sugestiva de timoma. Na imagem de TC fornecida, observa-se claramente, na janela de partes moles (B), uma lesão sólida, lobulada e bem delimitada localizada no compartimento anterior, anteriormente à aorta e ao tronco da artéria pulmonar, sem sinais de invasão de estruturas adjacentes.\n\nAnálise das alternativas:\n\na) Incorreta. A biópsia percutânea de uma massa mediastinal anterior suspeita de timoma e que seja aparentemente ressecável é geralmente evitada. Isso ocorre pelo risco teórico de disseminação tumoral (*seeding*) pelo trajeto da agulha e porque o resultado histológico raramente mudaria a conduta, que já seria a ressecção cirúrgica. A biópsia é reservada para casos de lesões irressecáveis ou quando há suspeita de diagnósticos que exijam tratamentos não cirúrgicos, como linfomas ou tumores de células germinativas.\n\nb) Correta. A ressecção cirúrgica completa (timectomia) é o tratamento de escolha para o timoma, especialmente quando a lesão é encapsulada e localizada, como sugerido pela TC. Além de ser o tratamento definitivo para a neoplasia (intenção curativa), a timectomia em pacientes com Miastenia Gravis frequentemente leva à melhora clínica dos sintomas neurológicos ou à redução da necessidade de medicações imunossupressoras.\n\nc) Incorreta. A radioterapia não é utilizada como modalidade exclusiva para tumores localizados e ressecáveis. Ela pode ser empregada como terapia adjuvante em casos de ressecção incompleta ou em estágios mais avançados (invasivos), mas a cirurgia permanece como o pilar do tratamento inicial.\n\nd) Incorreta. Timomas são neoplasias com potencial de invasão local e malignidade. Portanto, a observação e o seguimento seriado não são adequados para uma massa sólida no mediastino anterior em um paciente sintomático e com diagnóstico de Miastenia Gravis. O atraso na cirurgia pode permitir o crescimento tumoral e a invasão de estruturas vitais vizinhas.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Torácica",
+      "Doenças Neuromusculares"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/4e86c372f87dc1b6eccffc63c827d0d2adcd1bcc7d6612b565982fb740aa86f2.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_cd72d628-6b45-4b38-8fca-c12b5f534b8c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:51.840Z"
+  },
+  {
+    "id": "AJUDA_cd737acd-25d9-4093-bb85-82557cd9b000",
+    "originalId": "cd737acd-25d9-4093-bb85-82557cd9b000",
+    "statement": "Mulher de 42 anos, multípara, com diagnóstico de mioma uterino submucoso de 5 cm. Relata sangramento mestrual abundante e anemia ferropriva (Hb: 8,5 g/dL). Deseja preservar a fertilidade. Qual é a melhor opção terapêutica para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ablação endometrial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tratamento hormonal com GnRH",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Histerectomia total",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Embolização de artérias uterinas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Miomectomia por histeroscopia",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A alternativa correta é a letra (e).\n\nA questão apresenta uma paciente de 42 anos com mioma submucoso de 5 cm, sintomática (anemia grave com Hb 8,5 g/dL) e com o desejo específico de preservar a fertilidade. O mioma submucoso é aquele que se projeta para dentro da cavidade uterina, sendo o principal responsável por quadros de sangramento menstrual abundante e infertilidade.\n\nAlternativa a: Incorreta. A ablação endometrial é um procedimento que visa destruir o endométrio para reduzir o fluxo menstrual. Ela é formalmente contraindicada para mulheres que desejam gestar, pois a destruição da mucosa endometrial impede a nidação (implantação do embrião) e pode levar a complicações obstétricas graves.\n\nAlternativa b: Incorreta. O tratamento com análogos do GnRH promove um estado de hipoestrogenismo temporário, reduzindo o volume do mioma e o sangramento. No entanto, é utilizado majoritariamente como preparo pré-operatório para melhorar a anemia e reduzir o tumor, não sendo uma terapia definitiva, já que os sintomas retornam após a interrupção do uso.\n\nAlternativa c: Incorreta. A histerectomia total consiste na retirada completa do útero. Embora seja o tratamento definitivo para a miomatose, ela é incompatível com o desejo da paciente de preservar a fertilidade.\n\nAlternativa d: Incorreta. A embolização das artérias uterinas é uma técnica minimamente invasiva que visa cortar o suprimento sanguíneo dos miomas. Apesar de ser uma alternativa à histerectomia, seu uso em pacientes que desejam engravidar é controverso, pois pode comprometer a reserva ovariana e a vascularização placentária em gestações futuras. A miomectomia é superior para preservação reprodutiva.\n\nAlternativa e: Correta. A miomectomia por histeroscopia é o tratamento de escolha para miomas submucosos (especialmente os tipos 0 e 1 de FIGO) em pacientes que desejam manter o potencial reprodutivo. O procedimento é realizado por via vaginal, sem cortes abdominais, permitindo a remoção do mioma que causa o sangramento e restaurando a anatomia da cavidade uterina para uma futura gravidez. Mesmo em miomas de 5 cm, que podem exigir mais de um tempo cirúrgico, esta continua sendo a melhor opção entre as listadas.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:51.840Z"
+  },
+  {
+    "id": "AJUDA_cd799cfd-9f4b-48d0-9c1a-e76d33002651",
+    "originalId": "cd799cfd-9f4b-48d0-9c1a-e76d33002651",
+    "statement": "Um homem de 25 anos de idade buscou atendimento na unidade básica de saúde com sintomas febre ocorrentes já há três dias, cefaleia retrorbitária e exantema maculopapular difuso, acompanhado de vômitos persistentes, dor abdominal intensa e epistaxe. No exame físico, encontrava‑se consciente, hidratado, com pressão arterial de 90 x 60 mmHg, frequência cardíaca de 98 bpm, frequência respiratória de 18 irpm, saturação de oxigênio de 98% e glicemia capilar de 107 mg/dl. Não foi detectado edema em membros inferiores.\n\nConsiderando esse caso clínico hipotético e os critérios do Ministério da Saúde para a classificação da dengue, assinale a opção que apresenta a classificação e a conduta inicial adequada para esse paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "dengue C com sinais de alarme – hidratação oral e acompanhamento ambulatorial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "dengue C com sinais de alarme – hidratação venosa e observação em unidade hospitalar",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "dengue C na fase de recuperação – alta e seguimento ambulatorial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "dengue D hemorrágica – transfusão de plaquetas imediata",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "dengue D grave – internação em unidade de terapia intensiva (UTI)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A análise do quadro clínico é fundamental para a correta classificação e manejo da dengue, seguindo o protocolo do Ministério da Saúde. O paciente apresenta febre e cefaleia (sintomas clássicos), mas o que define sua gravidade são os sinais de alarme: dor abdominal intensa, vômitos persistentes e sangramento de mucosa (epistaxe).\n\nA classificação correta para este caso é Dengue Grupo C. O manejo exige hidratação venosa imediata e observação em leito hospitalar por, no mínimo, 24 horas.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a classificação Grupo C esteja correta devido aos sinais de alarme, a conduta está errada. Pacientes do Grupo C não podem realizar apenas hidratação oral ou acompanhamento ambulatorial; eles apresentam risco de deterioração clínica e necessitam obrigatoriamente de hidratação venosa em ambiente hospitalar.\n\nb) Correta. O paciente apresenta \"sinais de alarme\" (dor abdominal, vômitos e epistaxe), o que o enquadra no Grupo C. Segundo o Ministério da Saúde, a conduta imediata é a internação hospitalar para administração de hidratação venosa (fase de expansão e manutenção) e monitorização contínua, visando prevenir o choque.\n\nc) Incorreta. O paciente está no terceiro dia de sintomas, período que marca o início da fase crítica da doença (onde surgem os sinais de alarme devido ao extravasamento plasmático), e não na fase de recuperação. A alta seria um erro grave, dado o risco de evolução para choque.\n\nd) Incorreta. O termo \"dengue hemorrágica\" caiu em desuso nas classificações mais recentes, sendo substituído por \"dengue grave\" (Grupo D). Além disso, a transfusão de plaquetas não é uma conduta inicial e raramente é indicada na dengue, sendo reservada para casos muito específicos de sangramentos graves com repercussão hemodinâmica ou necessidade de cirurgia de urgência.\n\ne) Incorreta. Para ser classificado no Grupo D (Dengue Grave), o paciente precisaria apresentar sinais de choque (como pulsos finos, extremidades frias, tempo de enchimento capilar prolongado ou hipotensão grave), desconforto respiratório ou disfunção grave de órgãos. Apesar de a pressão arterial de 90 x 60 mmHg estar no limite inferior, o paciente está consciente, hidratado e com frequência cardíaca dentro da normalidade para o quadro, o que mantém a classificação no Grupo C neste momento. A UTI é reservada para o Grupo D.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:51.840Z"
+  },
+  {
+    "id": "AJUDA_cd8a2d6d-c7fe-4106-a230-b9a659b8c729",
+    "originalId": "cd8a2d6d-c7fe-4106-a230-b9a659b8c729",
+    "statement": "Em emergência sanitária, o gestor local remaneja recursos sem apreciação do Conselho de Saúde. O status jurídico desse colegiado, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Órgão consultivo sem poder de decisão orçamentária vinculante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Instância independente sem interface com planejamento e finanças.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colegiado restrito à esfera nacional e conferências quadrienais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Comissão temporária acionada exclusivamente em crises epidêmicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Órgão permanente e deliberativo, com função de controle social.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A fundamentação legal para esta questão encontra-se na Lei número 8.142, de 28 de dezembro de 1990, que define as formas de participação da comunidade na gestão do Sistema Único de Saúde (SUS). O Conselho de Saúde é um dos principais mecanismos de exercício do controle social e possui natureza jurídica específica.\n\nAlternativa a: Incorreta. O Conselho de Saúde não é meramente consultivo. Ele é um órgão deliberativo, o que significa que tem poder de decisão sobre as diretrizes das políticas de saúde. Suas decisões devem ser homologadas pelo chefe do poder executivo, mas ele possui autoridade legal para formular estratégias e controlar a execução da política de saúde, inclusive nos aspectos financeiros.\n\nAlternativa b: Incorreta. O Conselho tem interface obrigatória com o planejamento e as finanças. É responsabilidade do colegiado fiscalizar a movimentação dos recursos repassados aos Fundos de Saúde e aprovar o Plano de Saúde, que é a base para todo o planejamento orçamentário da pasta.\n\nAlternativa c: Incorreta. Os Conselhos de Saúde devem existir em todas as esferas de governo: nacional, estadual, do Distrito Federal e municipal. As conferências de saúde é que possuem periodicidade quadrienal, enquanto os conselhos são colegiados de atuação contínua.\n\nAlternativa d: Incorreta. O caráter do Conselho de Saúde é permanente. Ele não pode ser criado ou extinto apenas em situações de crise ou epidemias. Sua existência é obrigatória para que o município ou estado possa receber repasses de recursos federais de forma regular e automática (fundo a fundo).\n\nAlternativa e: Correta. Esta alternativa reproduz a definição legal contida no artigo 1º, parágrafo 2º, da Lei 8.142/1990. O Conselho de Saúde é um órgão colegiado, composto por representantes do governo, prestadores de serviço, profissionais de saúde e usuários. Sua natureza é permanente (atua de forma ininterrupta) e deliberativa (possui poder de decisão e voto), exercendo a função de controle social sobre a execução da política de saúde e seus aspectos econômicos. Portanto, mesmo em situações de emergência sanitária, o gestor deve respeitar as atribuições deste colegiado.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:51.840Z"
+  },
+  {
+    "id": "AJUDA_cda6760e-4048-4888-861b-c3de7b9701f7",
+    "originalId": "cda6760e-4048-4888-861b-c3de7b9701f7",
+    "statement": "Paciente, 45 anos, sem antecedentes patológicos, foi atendido com dor torácica aguda acompanhada de dispneia. Os achados iniciais mostram supradesnivelamento de segmento ST em derivações precordiais e elevação moderada da troponina. O estudo angiográfico mostra coronárias normais. Nesse caso, é correto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A ressonância nuclear magnética de miocárdio pode diferenciar entre miocardite e cardiomiopatia de Takotsubo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Somente as sorologias podem auxiliar no diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso de drogas como a cocaína está relacionado ao diagnóstico de miocardite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hipocinesia segmentar da parede anterior no ecocardiograma confirma o diagnóstico de cardiomiopatia de Takotsubo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Arritmias cardíacas são comuns somente nas cardiomiopatias de Takotsubo induzidas por cocaína.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nO quadro descreve um paciente com clínica de Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAM com supra), porém com o estudo angiográfico (cateterismo) demonstrando artérias coronárias normais. Esse cenário é conhecido como MINOCA (Infarto do Miocárdio com Artérias Coronárias Não Obstrutivas). Os principais diagnósticos diferenciais nessa situação são a Miocardite, a Cardiomiopatia de Takotsubo e o espasmo coronariano.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\nA Ressonância Magnética Cardíaca (RMC) tornou-se o exame padrão-ouro para o diagnóstico diferencial nos casos de MINOCA. Através da técnica de Realce Tardio com Gadolínio, a RMC consegue identificar o padrão de lesão tecidual:\n1. Na Miocardite, o realce costuma ser subepicárdico ou mesocárdico (não respeita territórios coronarianos).\n2. Na Cardiomiopatia de Takotsubo, é característico o edema miocárdico sem a presença de realce tardio significativo, além do formato típico de balonamento apical.\n3. No Infarto isquêmico, o realce é subendocárdico ou transmural.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (b): As sorologias virais têm utilidade muito limitada no diagnóstico de miocardite, pois a presença de anticorpos não confirma que o vírus é a causa da lesão cardíaca atual. O diagnóstico baseia-se na clínica, biomarcadores, RMC e, em casos específicos, biópsia endomiocárdica.\n\nAlternativa (c): O uso de cocaína está primariamente associado ao espasmo coronariano agudo, aumento do consumo de oxigênio pelo miocárdio e formação de trombos, podendo mimetizar um infarto. Embora possa causar dano miocárdico direto, a sua associação clássica é com isquemia/espasmo e não com o diagnóstico de miocardite infecciosa ou inflamatória.\n\nAlternativa (d): A hipocinesia segmentar pode estar presente tanto no infarto quanto na miocardite e no Takotsubo. Embora o Takotsubo apresente classicamente uma discinesia/hipocinesia apical (balonamento), o ecocardiograma isolado não permite confirmar o diagnóstico, sendo necessário descartar doença coronariana e, muitas vezes, complementar com a RMC para diferenciar de miocardite.\n\nAlternativa (e): Arritmias cardíacas (como fibrilação atrial, taquicardia ventricular e prolongamento do intervalo QT) podem ocorrer em qualquer apresentação da Cardiomiopatia de Takotsubo, independentemente do gatilho (seja estresse emocional, físico ou uso de drogas). Elas são consequência da instabilidade elétrica do miocárdio agudamente sofrido.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Cardiomiopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:51.841Z"
+  }
+]

@@ -1,0 +1,508 @@
+[
+  {
+    "id": "AJUDA_d9585534-e51c-4333-bffd-3b9ac9b7e605",
+    "originalId": "d9585534-e51c-4333-bffd-3b9ac9b7e605",
+    "statement": "Homem de 52 anos, etilista, tratado por pancreatite aguda há 8 semanas, retorna ao ambulatório de seguimento sem apresentar queixas. Relata boa aceitação de dieta, nega dor, náuseas, vômitos ou febre. Apresentava durante o internamento uma tomografia de abdome com moderada quantidade de líquido livre peripancreático sem presença de gás ou necrose. Diante do quadro apresentado pelo paciente e do exame de acompanhamento, qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Drenagem endoscópica guiada por ultrassom endoscópico, para reduzir o risco de complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Drenagem percutânea, já que o tempo > 6 semanas define pseudocisto maduro e há baixa probabilidade de resolução espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Observação com reavaliação clínica e imagem.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pancreatectomia distal profilática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Antibioticoterapia profilática e acompanhamento ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso:\nO paciente em questão apresenta uma evolução de 8 semanas após um quadro de pancreatite aguda. A tomografia computadorizada apresentada na imagem revela uma coleção líquida peripancreática bem delimitada, com parede própria e conteúdo homogêneo, o que caracteriza um pseudocisto pancreático. O fator determinante para a conduta é o estado clínico: o paciente está assintomático, com boa aceitação da dieta e sem sinais de complicações ou infecção.\n\nExplicação das Alternativas:\n\nAlternativa a) Incorreta. A drenagem endoscópica guiada por ultrassom é o padrão-ouro para o tratamento de pseudocistos pancreáticos quando há indicação. No entanto, o procedimento não deve ser realizado de forma profilática para reduzir riscos, mas sim para tratar sintomas (como dor persistente e saciedade precoce) ou complicações (como compressão de vias biliares ou do trato gastrointestinal).\n\nAlternativa b) Incorreta. Antigamente, utilizava-se a regra de \"6 semanas e 6 centímetros\" para indicar a drenagem de pseudocistos. Atualmente, sabe-se que muitos pseudocistos assintomáticos regridem espontaneamente mesmo após esse período. Além disso, a drenagem percutânea apresenta maior risco de formação de fístulas pancreáticas externas em comparação à drenagem interna (endoscópica ou cirúrgica).\n\nAlternativa c) Correta. De acordo com as diretrizes atuais e a Classificação de Atlanta revisada, pseudocistos pancreáticos assintomáticos, independentemente do tamanho, devem ser manejados de forma conservadora. A conduta correta é a observação clínica aliada à reavaliação por exames de imagem para monitorar a estabilidade ou regressão da coleção.\n\nAlternativa d) Incorreta. A pancreatectomia distal é uma cirurgia de grande porte e não possui papel no manejo inicial de coleções fluidas pós-pancreatite. Seria considerada apenas em casos excepcionais de falha de todas as outras medidas terapêuticas ou se houvesse suspeita de neoplasia cística, o que não condiz com a história de pancreatite aguda recente.\n\nAlternativa e) Incorreta. O uso de antibioticoterapia na pancreatite aguda é restrito a casos de necrose ou coleções infectadas. O paciente está afebril, assintomático e a imagem não mostra presença de gás ou outros sinais sugestivos de infecção, tornando o uso de antibióticos desnecessário e sem benefício profilático comprovado.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/543b382b0cb908e3d281604b68c36729254286ebb9137874de5a3ed519364a5e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d9585534-e51c-4333-bffd-3b9ac9b7e605_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:21.662Z"
+  },
+  {
+    "id": "AJUDA_d958d936-d393-4bfb-b41b-b8d7b2696794",
+    "originalId": "d958d936-d393-4bfb-b41b-b8d7b2696794",
+    "statement": "Os povos ciganos/Romani que vivem no Brasil possuem um estilo de vida não homogêneo, com uma cultura muitas vezes divergente. Portanto, é essencial que gestores e profissionais da saúde se aproximem dessa população e conheçam suas questões específicas. Nesse contexto, ao se fazer o planejamento de ações de saúde para essa população, é importante considerar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "as questões de saúde são conduzidas por homens na maioria das comunidades ciganas/Romani, motivo pelo qual as mulheres não devem ir ao hospital sozinhas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a depressão e o suicídio são problemas de saúde nas comunidades ciganas/Romani, com maior incidência em mulheres, sendo motivados pelo racismo e por outras formas de violência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "as mulheres são as lideranças mais respeitadas por toda a comunidade cigana/Romani; por isso, para criar um vínculo de confiança com a comunidade, os agentes públicos de saúde devem iniciar a interlocução com elas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "os povos ciganos/Romani optam, em sua grande maioria, por se manterem nômades, buscando formas alternativas de garantir saúde e educação, apesar de atualmente algumas famílias ciganas/Romani preferirem residências fixas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A saúde das populações ciganas ou Romani no Brasil é um tema transversal que envolve conhecimentos de Saúde Coletiva, Antropologia Médica e Políticas Públicas de Saúde (PNAISP). O planejamento de ações para esses grupos deve considerar os determinantes sociais da saúde e as vulnerabilidades específicas a que estão submetidos.\n\nAlternativa (a) está incorreta. Embora muitas comunidades ciganas apresentem estruturas sociais patriarcais, o cuidado com a saúde e a gestão do bem-estar familiar são tradicionalmente papéis exercidos pelas mulheres dentro da unidade doméstica. A ideia de que as mulheres não devem ir ao hospital sozinhas pode ocorrer em alguns contextos culturais por proteção ou tradição, mas não é uma regra que define a condução das questões de saúde por homens, nem é o ponto central para o planejamento de ações públicas.\n\nAlternativa (b) está correta. Esta alternativa aborda o impacto dos determinantes sociais na saúde mental. O racismo estrutural, a discriminação histórica, a exclusão social e a violência institucional geram um fenômeno conhecido como estresse de minoria. Estudos apontam que esses fatores contribuem diretamente para o aumento de quadros de depressão, ansiedade e comportamento suicida. As mulheres ciganas, muitas vezes, sofrem uma dupla vulnerabilidade (gênero e etnia), o que eleva a incidência desses problemas nesse subgrupo. O reconhecimento desses sofrimentos psíquicos é fundamental para a criação de políticas de saúde mental eficazes e humanizadas.\n\nAlternativa (c) está incorreta. Na organização social da maioria dos povos ciganos (como os grupos Calon e Roma), a liderança política e a interlocução com o mundo exterior são predominantemente exercidas pelos homens mais velhos, os patriarcas. Embora as mulheres sejam figuras centrais na preservação da cultura e nos cuidados internos, o agente de saúde deve reconhecer as hierarquias tradicionais de liderança masculina para estabelecer os primeiros vínculos de confiança com a comunidade como um todo.\n\nAlternativa (d) está incorreta. Existe um senso comum equivocado de que a maioria dos ciganos é nômade. Atualmente, a grande maioria da população cigana no Brasil é sedentária, ou seja, possui residência fixa. O nomadismo hoje é praticado por uma minoria e, muitas vezes, é um nomadismo de circulação sazonal ou motivado pela dificuldade de fixação e expulsão de territórios, e não apenas por uma opção cultural estrita. O planejamento de saúde deve, portanto, focar tanto na população fixada quanto naquela em situação de acampamento.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:21.662Z"
+  },
+  {
+    "id": "AJUDA_d95cc913-ff58-49d9-b765-8c0f0f78a5f1",
+    "originalId": "d95cc913-ff58-49d9-b765-8c0f0f78a5f1",
+    "statement": "Lactente de 7 semanas, previamente hígido, apresenta primeiro episódio de sibilância após coriza e tosse. Mãe relata dois episódios de pausa respiratória curta durante a madrugada e redução importante da mamada. No exame: FR 68 irpm, tiragem subcostal moderada, saturação de 91% em ar ambiente, sibilos e crepitações difusas. Após aspiração nasal, permanece taquipneico, mas a saturação oscila entre 92 e 94%. \nQual conduta tem melhor relação benefício-risco?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alta com beta-agonista inalatório de horário, pois a saturação ficou acima de 90 por cento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internação para suporte clínico, monitorização da alimentação e do padrão respiratório, sem broncodilatadores ou corticoide de rotina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Radiografia de tórax e antibiótico estão indicados em todo lactente menor de 2 meses com sibilância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Corticoide sistêmico por 5 dias para prevenir evolução para asma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nebulização com adrenalina de horário em todos os lactentes hospitalizados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DO QUADRO:\nO paciente é um lactente jovem (7 semanas) com quadro clínico clássico de Bronquiolite Viral Aguda (BVA): pródromos virais (coriza e tosse) seguidos de desconforto respiratório, sibilância e crepitações. Trata-se do primeiro episódio em uma criança abaixo de 2 anos.\n\nCRITÉRIOS DE GRAVIDADE NO CASO:\n1. Idade: Lactentes menores de 3 meses têm maior risco de evolução desfavorável e apneia.\n2. Apneia: A mãe relata pausas respiratórias, que é um sinal de alerta gravíssimo na BVA, especialmente em prematuros e lactentes jovens.\n3. Dificuldade alimentar: A redução importante da mamada indica risco de desidratação e estafa respiratória.\n4. Sinais físicos: Taquipneia importante (68 irpm), tiragem subcostal e saturação limítrofe.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (Incorreta): A alta é contraindicada. O paciente apresenta sinais de gravidade (apneia, baixa ingestão oral e taquipneia moderada/grave). Além disso, o uso de beta-agonistas (salbutamol) não é recomendado rotineiramente na bronquiolite, pois a fisiopatologia da doença é o edema e acúmulo de debris celulares, não o broncoespasmo muscular.\n\nAlternativa B (Correta): Esta é a conduta padrão ouro baseada nas principais diretrizes (Sociedade Brasileira de Pediatria e Academia Americana de Pediatria). O tratamento da bronquiolite é de suporte: garantir hidratação (seja oral, por sonda ou venosa), ofertar oxigênio se a saturação estiver persistentemente abaixo de 90-92%, realizar higiene nasal e monitorar sinais de insuficiência respiratória ou apneia. O uso de corticoides e broncodilatadores não altera o desfecho da doença.\n\nAlternativa C (Incorreta): A radiografia de tórax não deve ser feita de rotina na BVA, sendo reservada para casos de dúvida diagnóstica ou suspeita de complicações (como pneumotórax). O uso de antibióticos é indicado apenas se houver evidência de infecção bacteriana secundária, o que não é o caso padrão da sibilância no lactente jovem.\n\nAlternativa D (Incorreta): O corticoide sistêmico não tem benefício no tratamento da fase aguda da bronquiolite viral aguda e não previne o desenvolvimento futuro de asma. O uso indiscriminado causa efeitos colaterais desnecessários.\n\nAlternativa E (Incorreta): A adrenalina inalatória pode ser testada em ambiente hospitalar como prova terapêutica em casos graves, mas o uso \"de horário em todos os lactentes\" não é recomendado por falta de evidência científica de melhora na taxa de internação ou tempo de hospitalização de forma sustentada.\n\nCONCLUSÃO:\nO lactente apresenta indicação formal de internação pelos sinais de alerta (apneia e redução da mamada). O manejo deve focar no suporte clínico e observação rigorosa, evitando excesso de intervenções medicamentosas ineficazes para esta patologia.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:21.662Z"
+  },
+  {
+    "id": "AJUDA_d960684b-dfd7-45a8-9ac3-0049a853823e",
+    "originalId": "d960684b-dfd7-45a8-9ac3-0049a853823e",
+    "statement": "Um homem de 50 anos apresenta dor abdominal súbita e intensa no epigástrio, irradiando para o dorso. A dor piora ao deitar-se de costas e melhora ao se inclinar para frente. Ele também relata náuseas e vômitos. Exames laboratoriais mostram elevação de amilase de 1040 U/L. O fator etiológico mais comum para este quadro é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colelitíase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Infecção bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trauma abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uso de anti-inflamatórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Consumo excessivo de álcool.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO caso clínico descreve um paciente com pancreatite aguda. Os elementos que sustentam esse diagnóstico são a dor abdominal súbita no epigástrio com irradiação para o dorso (dor em faixa), a presença de náuseas e vômitos, e o sinal clássico de alívio da dor ao inclinar o tronco para frente (posição de prece maometana ou sinal de Blechmann). Laboratorialmente, o diagnóstico é confirmado pela amilase de 1040 U/L, que está significativamente elevada (acima de três vezes o valor de referência).\n\nAlternativa (a) Correta: A colelitíase (cálculos biliares) é a causa mais comum de pancreatite aguda em todo o mundo, respondendo por aproximadamente 40% a 60% dos casos na população geral. Ocorre quando um cálculo migra da vesícula biliar e obstrui, ainda que transitoriamente, a ampola de Vater, causando refluxo biliar ou aumento da pressão no ducto pancreático.\n\nAlternativa (b) Incorreta: Infecções bacterianas ou virais (como a caxumba) são causas reconhecidas, porém raras, de pancreatite aguda. Elas não representam a principal etiologia na prática clínica.\n\nAlternativa (c) Incorreta: O trauma abdominal pode causar lesão direta ao parênquima pancreático ou ruptura de ductos, levando à pancreatite. Contudo, é uma causa pouco frequente quando comparada às causas metabólicas ou obstrutivas.\n\nAlternativa (d) Incorreta: O uso de anti-inflamatórios não esteroidais (AINEs) é um fator de risco importante para úlcera péptica perfurada, que é um diagnóstico diferencial, mas não é uma causa comum de pancreatite. Alguns outros medicamentos específicos podem causar pancreatite medicamentosa, mas os AINEs não estão nesse grupo principal.\n\nAlternativa (e) Incorreta: O consumo excessivo de álcool é a segunda causa mais comum de pancreatite aguda, sendo responsável por cerca de 30% dos episódios. Embora seja uma causa muito prevalente, estatisticamente ela ainda perde para a etiologia biliar (colelitíase) na maioria das séries epidemiológicas.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:21.662Z"
+  },
+  {
+    "id": "AJUDA_d9685890-0579-4a8a-8fd0-467c28754544",
+    "originalId": "d9685890-0579-4a8a-8fd0-467c28754544",
+    "statement": "Pré-escolar, 3 anos, que com 11 meses iniciou tratamento para Leucemia Linfoide aguda, iniciou há quatro dias quadro de febre alta (39,5 ºC), tosse seca, coriza intensa e conjuntivite. No segundo dia de febre surgiram pequenas manchas esbranquiçadas com halo avermelhado em mucosa jugal, na altura dos molares. No terceiro dia, aparece exantema maculopapular eritematoso, inicialmente em face e atrás das orelhas, com progressão em 24 horas para tronco e membros, tornando-se confluente. O rash evolui com descamação fina. Em relação ao quadro descrito, o agente etiológico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rubivirus — agente da rubéola.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Morbillivirus — agente do sarampo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Parvovirus B19 — agente do eritema infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Enterovirus — agente da síndrome mão-pé boca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descrito é clássico e patognomônico de sarampo. A questão apresenta um paciente de 3 anos com uma sequência cronológica típica da doença:\n\n1. Período prodrômico (ou catarral): Caracterizado por febre alta, tosse seca, coriza intensa e conjuntivite. \n2. Sinal de Koplik: As \"pequenas manchas esbranquiçadas com halo avermelhado em mucosa jugal, na altura dos molares\" são o sinal de Koplik, considerado um sinal patognomônico do sarampo, surgindo pouco antes do exantema.\n3. Período exantemático: Exantema maculopapular eritematoso com progressão cefalocaudal (início na face e atrás das orelhas, progredindo para tronco e membros) e tendência à confluência.\n4. Evolução: O exantema do sarampo tipicamente evolui com descamação fina (furfurácea).\n\nO agente etiológico do sarampo é o Morbillivirus, pertencente à família Paramyxoviridae.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: O Rubivirus é o agente da rubéola. Embora a rubéola também apresente exantema cefalocaudal e febre, o quadro costuma ser muito mais leve (febre baixa), com pródromos mínimos ou ausentes em crianças. A principal característica clínica que a diferencia é a presença de linfonodopatias retroauriculares, occipitais e cervicais posteriores, além da ausência das manchas de Koplik.\n\nAlternativa (b) CORRETA: O Morbillivirus é o agente causal do sarampo. Todos os elementos descritos no enunciado — febre alta, a tríade de sintomas catarrais (tosse, coriza, conjuntivite), o sinal de Koplik e o padrão de exantema com descamação — são característicos desta patologia.\n\nAlternativa (c) INCORRETA: O Parvovírus B19 é o agente do eritema infeccioso. Esta doença manifesta-se tipicamente em três fases: a face esbofeteada (eritema malar), seguida por um exantema rendilhado em tronco e membros, que pode recorrer com exposição ao sol ou calor. Não apresenta o quadro prodrômico intenso de tosse e conjuntivite, nem as manchas de Koplik.\n\nAlternativa (d) INCORRETA: A síndrome mão-pé-boca é causada geralmente pelo vírus Coxsackie A16 ou pelo Enterovírus 71. Caracteriza-se por lesões vesiculares em cavidade oral (estomatite), mãos e pés, por vezes em região glútea, mas não apresenta o exantema maculopapular generalizado de progressão cefalocaudal e confluente descrito na questão.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:21.662Z"
+  },
+  {
+    "id": "AJUDA_d9771d3b-1e84-4d32-9b79-0ab0cfe7d045",
+    "originalId": "d9771d3b-1e84-4d32-9b79-0ab0cfe7d045",
+    "statement": "Paciente masculino, 71 anos, foi submetido à ressecção transuretral de próstata e, após a cirurgia, apresentou hematúria macroscópica persistente, sem melhora com irrigação vesical contínua. Previamente hígido e sem antecedentes hemorrágicos, ele apresentava exames pré-operatórios (feitos 10 dias antes do procedimento) dentro da normalidade. No 3º dia pós-operatório, apresentava hemograma com anemia (Hb 7,4g/dL); Leucócitos 8.850/mm3 com contagem diferencial normal; Plaquetas 159.000/mm3. Coagulograma: TAP/INR e TT normais e TTPa alargado (92 - 107 seg) com teste da mistura a 50% sem correção do TTPa. Dosagem de anticoagulante lúpico negativo. Dosagem de FVIII por método cromogênico e coagulométrico = 3,4%. A quantificação de inibidor de FVIII mostrou altos títulos (486 UB). \n\nCom relação a essa situação clínica, qual das alternativas melhor se adequa ao diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Distúrbios de coagulação hereditários não podem se apresentar sem anormalidades laboratoriais ou sangramentos que complicam procedimentos em pacientes hospitalizados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A hemofilia A adquirida é uma doença rara, caracterizada pelo desenvolvimento de auto anticorpos neutralizantes contra o FVIII. Afeta homens e mulheres, especialmente na faixa etária em torno dos 70 anos. Geralmente é idiopática, mas em 30 a 50% dos pacientes está associada a malignidade ou doenças autoimunes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A doença de von Willebrand é uma complicação de muitos distúrbios agudos com risco de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O plasma fresco congelado não deve ser utilizado para tratar distúrbios de coagulação adquiridos com múltiplos defeitos de coagulação ou defeitos específicos, caso o concentrado apropriado não esteja disponível.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Analise do caso clinico:\nTrata-se de um paciente idoso, sem historico pessoal ou familiar de coagulopatia e com exames pre-operatorios normais, que evolui com sangramento grave no pos-operatorio associado a alargamento isolado do TTPa. O achado crucial e o teste da mistura a 50% sem correcao do TTPa, o que demonstra a presenca de um inibidor circulante (autoanticorpo neutralizante) e afasta a simples deficiencia de fator. A confirmacao diagnostica e dada pela dosagem diminuida de Fator VIII (3,4%) associada a presenca de inibidor de FVIII em altos titulos (486 Unidades Bethesda), selando o diagnostico de Hemofilia A Adquirida.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. Formas leves de disturbios hereditarios da coagulacao podem, sim, passar despercebidas ate a idade adulta e se manifestar apenas apos desafios hemostaticos, como cirurgias. No entanto, no caso apresentado, os exames pre-operatorios normais recentes e a presenca documentada de autoanticorpos neutralizantes em titulos elevados confirmam uma etiologia adquirida, e nao genetica.\n\nAlternativa b: Correta. Traz a definicao exata e a epidemiologia da Hemofilia A Adquirida. Trata-se de uma patologia autoimune rara, decorrente da sintese de autoanticorpos contra o FVIII. Diferente da hemofilia congenita (ligada ao cromossomo X), atinge igualmente homens e mulheres, com maior incidencia em idosos (media de 70 anos). Cerca de 50% dos casos sao idiopaticos, e os demais estao associados a doencas autoimunes reumatologicas, neoplasias solidas ou hematologicas, gestacao/puerperio e medicamentos.\n\nAlternativa c: Incorreta. A Doenca de von Willebrand e classicamente um disturbio hemorragico congenito. A definicao de coagulopatia como complicacao de disturbios agudos com risco a vida (como sepse, grandes traumas e choque) descreve tipicamente a Coagulacao Intravascular Disseminada (CIVD), quadro que cursa tambem com consumo plaquetario e alteracao do TAP/INR, os quais estao preservados neste paciente.\n\nAlternativa d: Incorreta. O plasma fresco congelado pode ser indicado no manejo de coagulopatias com deficiencias multiplas de fatores ou na indisponibilidade de concentrados de fatores especificos. Especificamente na Hemofilia A Adquirida, o plasma e ineficaz para controlar o sangramento porque os autoanticorpos neutralizam o FVIII transfundido, sendo a terapia de escolha o uso de agentes de bypass (Fator VII ativado recombinante ou Complexo Protrombinico Parcialmente Ativado) associados a imunossupressao para erradicar o inibidor.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Hemostasia",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:21.662Z"
+  },
+  {
+    "id": "AJUDA_d97b8748-2a48-4682-aa0d-7123e226f60c",
+    "originalId": "d97b8748-2a48-4682-aa0d-7123e226f60c",
+    "statement": "Um menino de 3 anos, previamente saudável, é levado ao pronto atendimento após ingestão acidental de amendoim durante uma festa. Cerca de 15 minutos após a ingestão, ele apresenta urticária difusa, edema periorbital, rouquidão e tosse seca persistente. Está consciente, com frequência cardíaca de 130 bpm, saturação de oxigênio de 94% em ar ambiente, e sem sinais de hipotensão. Não há estridor nem dificuldade respiratória evidente.\n\nA conduta inicial mais adequada neste caso é a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar difenidramina oral e observar por 4 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar nebulização com salbutamol e encaminhar para casa após melhora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar adrenalina intramuscular imediatamente e monitorar em ambiente hospitalar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar corticoterapia intravenosa como primeira medida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar teste de IgE específico antes de qualquer intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um quadro de anafilaxia. A anafilaxia é uma reação alérgica sistêmica, grave e potencialmente fatal, de início rápido após a exposição a um gatilho (neste caso, o amendoim). O diagnóstico é clínico e baseia-se no acometimento de dois ou mais sistemas após contato com alérgeno provável. No caso descrito, temos:\n1. Pele e mucosas: urticária difusa e edema periorbital.\n2. Sistema respiratório: rouquidão e tosse seca persistente (sinais de acometimento de vias aéreas).\n\nA presença de rouquidão e tosse, mesmo sem estridor evidente no momento, indica que o processo inflamatório e o edema estão atingindo a via aérea superior, o que representa risco iminente de obstrução.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA adrenalina (epinefrina) por via intramuscular é a droga de primeira escolha e o único tratamento que salva vidas na anafilaxia. Ela age rapidamente promovendo vasoconstrição (reduzindo o edema de glote e aumentando a pressão arterial) e broncodilatação. Deve ser administrada precocemente, na face anterolateral da coxa, assim que o diagnóstico de anafilaxia for suspeitado. A monitorização hospitalar é obrigatória devido ao risco de reações bifásicas (recorrência dos sintomas após melhora inicial).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: Anti-histamínicos como a difenidramina são medicamentos de segunda linha. Eles auxiliam no controle do prurido e da urticária, mas não tratam o edema de vias aéreas nem previnem o colapso cardiovascular. O retardo na administração de adrenalina é o principal fator de risco para morte por anafilaxia.\n\nAlternativa B: O salbutamol é um broncodilatador indicado para o tratamento do broncoespasmo (chiado no peito). Ele não trata o edema de laringe (sugerido pela rouquidão) nem os sintomas sistêmicos. Jamais deve substituir a adrenalina na anafilaxia. Além disso, o paciente não deve ser mandado para casa sem um período de observação rigoroso.\n\nAlternativa D: Os corticosteroides são medicamentos de ação tardia, levando de 4 a 6 horas para iniciar seu efeito. Eles podem ser usados como terapia adjuvante para tentar reduzir o risco de reações bifásicas, mas nunca são a primeira medida no atendimento de emergência.\n\nAlternativa E: O teste de IgE específico é um exame complementar realizado em ambiente ambulatorial, semanas após o evento agudo, para identificar o gatilho alérgico. Não há espaço para exames laboratoriais ou testes alérgicos durante a abordagem de uma emergência médica. O diagnóstico da anafilaxia é estritamente clínico.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:21.662Z"
+  },
+  {
+    "id": "AJUDA_d97d5f41-3265-4ca0-b63c-b87fc85344da",
+    "originalId": "d97d5f41-3265-4ca0-b63c-b87fc85344da",
+    "statement": "A respeito da profilaxia antimicrobiana de infecções no sítio cirúrgico, pode-se afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "clindamicina pode ser utilizada em pacientes com alergia aos fármacos betalactâmicos",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "cefazolina deve ser usada em cirurgias eletivas videolaparoscópicas de baixo risco",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "não há necessidade de uso de antibiótico profilático em procedimentos como histerectomia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "uso de antibióticos intravenosos são necessários em cirurgias oftalmológicas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a (a).\n\nAlternativa (a): Correta. A cefazolina, uma cefalosporina de primeira geração, é o antibiótico de escolha para a maioria das profilaxias cirúrgicas. Entretanto, em pacientes com histórico de alergia grave (hipersensibilidade do tipo I, como anafilaxia ou urticária) aos betalactâmicos, a clindamicina ou a vancomicina são as alternativas padrão para garantir a cobertura contra germes Gram-positivos da pele, como o *Staphylococcus aureus*.\n\nAlternativa (b): Incorreta. Cirurgias videolaparoscópicas eletivas de baixo risco, como uma colecistectomia não complicada em pacientes saudáveis ou laparoscopias diagnósticas, geralmente não exigem profilaxia antimicrobiana sistêmica. O risco de infecção nessas técnicas minimamente invasivas é muito baixo, e o uso indiscriminado de antibióticos deve ser evitado para prevenir a resistência bacteriana.\n\nAlternativa (c): Incorreta. A histerectomia, independentemente da via (abdominal, vaginal ou laparoscópica), é classificada como uma cirurgia limpa-contaminada, pois envolve a entrada no trato reprodutor feminino, que possui flora bacteriana própria. O uso de antibioticoprofilaxia é obrigatório e reduz significativamente o risco de infecções de sítio cirúrgico e abscesso de cúpula vaginal.\n\nAlternativa (d): Incorreta. Nas cirurgias oftalmológicas, como a de catarata, a profilaxia visa prevenir a endoftalmite. Para isso, utiliza-se preferencialmente a via tópica (colírios) no pré- e pós-operatório ou a injeção intracameral (diretamente na câmara anterior do olho) de antibióticos como cefuroxima ou moxifloxacino ao final do procedimento. A via intravenosa não é indicada de rotina, pois apresenta penetração intraocular limitada e riscos sistêmicos desnecessários.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório",
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:21.662Z"
+  },
+  {
+    "id": "AJUDA_d9807982-e4bd-4a14-ac69-497a10c672d4",
+    "originalId": "d9807982-e4bd-4a14-ac69-497a10c672d4",
+    "statement": "Menino, 1 ano e 10 meses, é avaliado em consulta ambulatorial. Exame físico: escoliose; lordose excessiva; sinal de Trendelenburg e de Galeazzi positivo; limitação de abdução do quadril fletido. A principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "defeito de fechamento do tubo neural",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "miopatia imunomediada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "doença osteometabólica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "luxação do quadril",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta um caso clínico típico de displasia do desenvolvimento do quadril (DDH) diagnosticada tardiamente em uma criança que já iniciou a marcha. A análise dos sinais físicos é fundamental para chegar ao diagnóstico de luxação do quadril.\n\nO sinal de Galeazzi é observado ao deitar a criança em uma superfície firme com os joelhos fletidos e os pés apoiados; a diferença na altura dos joelhos indica um encurtamento aparente do fêmur, decorrente do deslocamento superior da cabeça femoral. A limitação da abdução do quadril fletido é o sinal clínico mais sensível e persistente na luxação do quadril após o período neonatal. O sinal de Trendelenburg ocorre durante a marcha ou apoio unipodal, em que a pelve \"cai\" para o lado oposto ao quadril afetado devido à insuficiência mecânica da musculatura abdutora (glúteo médio), que perde seu ponto de apoio adequado. A lordose lombar excessiva e a escoliose funcional são mecanismos compensatórios para o desequilíbrio pélvico e o encurtamento do membro.\n\nAnálise das alternativas:\n\na) Incorreta. Defeitos de fechamento do tubo neural, como a mielomeningocele, podem causar luxações paralíticas do quadril devido ao desequilíbrio muscular. No entanto, o quadro clínico seria acompanhado de déficits neurológicos evidentes (sensoriais e motores) e alterações na coluna vertebral visíveis ao nascimento, o que não é o foco principal dos sinais ortopédicos descritos.\n\nb) Incorreta. Miopatias imunomediadas manifestam-se primariamente com fraqueza muscular proximal e simétrica. Embora possam causar alterações na marcha, não justificam o sinal de Galeazzi (encurtamento do membro) ou a limitação mecânica específica da abdução do quadril.\n\nc) Incorreta. Doenças osteometabólicas, como o raquitismo, costumam apresentar deformidades ósseas generalizadas, como o arqueamento dos membros inferiores (genu varo ou valgo), rosário raquítico e alargamento metafisário, mas não se apresentam tipicamente com sinais de luxação articular isolada, como Galeazzi e Trendelenburg.\n\nd) Correta. A luxação do quadril (especialmente a displasia do desenvolvimento do quadril em fase de marcha) reúne todos os achados descritos: encurtamento do membro (Galeazzi), insuficiência dos abdutores (Trendelenburg), restrição mecânica de movimento (abdução limitada) e compensações posturais (lordose e escoliose). É a hipótese principal e mais comum para este conjunto de sinais em uma criança desta faixa etária.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Quadril Pediátrico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:21.662Z"
+  },
+  {
+    "id": "AJUDA_d98efe68-cd51-41d1-9869-85efa16ac315",
+    "originalId": "d98efe68-cd51-41d1-9869-85efa16ac315",
+    "statement": "Paciente de 67 anos chega à unidade de emergência com quadro de plaquetopenia em investigação. A correta correlação entre contagem segura de plaqueta e procedimento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "pequena sutura e > 30000 / mm³.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "endoscopia e > 50000 / mm³.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "punção lombar e > 40000 / mm³.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "passagem de acesso central e > 15000 / mm³.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A conduta diante de um paciente com plaquetopenia depende diretamente do procedimento a ser realizado e do risco de sangramento associado. As diretrizes das principais sociedades de hematologia definem limiares específicos para garantir a segurança do paciente.\n\nAlternativa a) Incorreta. Para a realização de pequenas cirurgias e suturas cutâneas, o nível de segurança recomendado é de 50.000 / mm³. Embora valores menores possam ser tolerados em situações de extrema urgência na prática clínica, para fins de prova e segurança em procedimentos eletivos, o corte padrão é de 50.000 / mm³.\n\nAlternativa b) Correta. A endoscopia digestiva alta é um procedimento que frequentemente envolve a realização de biópsias. O consenso médico estabelece que o valor de plaquetas deve estar acima de 50.000 / mm³ para que o procedimento seja realizado com segurança, prevenindo sangramentos iatrogênicos na mucosa digestiva.\n\nAlternativa c) Incorreta. A punção lombar exige um cuidado rigoroso devido ao risco de sangramento em um espaço incompressível (canal vertebral), o que pode resultar em hematoma epidural e compressão medular. O nível mínimo aceito na prática médica e nas diretrizes internacionais é de 50.000 / mm³, e não 40.000 / mm³.\n\nAlternativa d) Incorreta. A passagem de acesso venoso central exige plaquetas acima de 20.000 / mm³ quando o procedimento é guiado por ultrassonografia por um profissional experiente. Caso a técnica seja a convencional (cega), o valor deve ser superior a 50.000 / mm³. O valor de 15.000 / mm³ é considerado inseguro para qualquer uma das técnicas.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:21.662Z"
+  }
+]

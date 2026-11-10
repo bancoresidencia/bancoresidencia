@@ -1,0 +1,517 @@
+[
+  {
+    "id": "AJUDA_5a20431a-3f33-4b73-96ed-5a3a7585ac77",
+    "originalId": "5a20431a-3f33-4b73-96ed-5a3a7585ac77",
+    "statement": "Paciente de 46 anos, vítima de acidente envolvendo moto X carro, deu entrada em um pronto atendimento. Durante a avaliação primária, apresentava-se com a abertura ocular com estímulo doloroso, falando palavras inapropriadas e apresentando flexão anormal. O glasgow desse paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "9",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "8",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "7",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "10",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "6",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para calcular a pontuação na Escala de Coma de Glasgow deste paciente, devemos analisar cada um dos três pilares da avaliação neurológica baseando-se nos dados fornecidos pelo enunciado:\n\n1. Abertura Ocular: O paciente apresenta abertura ocular ao estímulo doloroso (pressão). Isso confere 2 pontos. Na escala, a pontuação é: 4 para espontânea, 3 para estímulo sonoro, 2 para pressão e 1 para ausência de resposta.\n\n2. Resposta Verbal: O paciente fala palavras inapropriadas (palavras soltas que não formam frases com sentido). Isso confere 3 pontos. Na escala, a pontuação é: 5 para orientado, 4 para confuso, 3 para palavras inapropriadas, 2 para sons incompreensíveis e 1 para ausência de resposta.\n\n3. Resposta Motora: O paciente apresenta flexão anormal (postura de decorticação). Isso confere 3 pontos. Na escala, a pontuação é: 6 para obedece comandos, 5 para localiza a dor, 4 para flexão normal (retirada), 3 para flexão anormal, 2 para extensão (decerebração) e 1 para ausência de resposta.\n\nSomando os valores: 2 (Ocular) + 3 (Verbal) + 3 (Motor) = 8 pontos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A pontuação 9 exigiria que o paciente apresentasse um ponto a mais em qualquer um dos critérios, como, por exemplo, ser capaz de localizar a dor na resposta motora (o que daria 5 pontos em vez de 3).\n\nAlternativa b) Correta. O somatório exato dos achados clínicos descritos no caso (2 de abertura ocular + 3 de resposta verbal + 3 de resposta motora) resulta em 8 pontos.\n\nAlternativa c) Incorreta. O valor 7 indicaria uma gravidade maior, ocorrendo se o paciente apresentasse, por exemplo, apenas sons incompreensíveis na resposta verbal (2 pontos) ou extensão anormal na resposta motora (2 pontos).\n\nAlternativa d) Incorreta. A pontuação 10 é alta para o quadro descrito, exigindo uma melhor interação verbal (como estar confuso, mas mantendo frases) ou motora (localizando dor).\n\nAlternativa e) Incorreta. A pontuação 6 representaria um rebaixamento de consciência ainda mais profundo do que o relatado no exame primário do paciente.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:31.814Z"
+  },
+  {
+    "id": "AJUDA_5a23b2af-fd96-4471-bf74-70c1c6bdbfac",
+    "originalId": "5a23b2af-fd96-4471-bf74-70c1c6bdbfac",
+    "statement": "Paciente do sexo masculino, 23 anos, queixando quadro de dor em região perianal há 3 dias que evoluiu com piora progressiva e início de picos de febre alta com calafrios. Ao exame físico, apresenta-se em REG, pálido e sudoreico, febril, taquicárdico, taquipneico e levemente hipotenso. O exame proctológico revelou área edemaciada e eritematosa, com flutuação e bastante dolorosa à palpação, em região perianal às 2:00. Devido ao quadro de dor, optou-se pela não realização do toque retal. Sobre o caso, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A indicação do tratamento cirúrgico dependerá de avaliação radiológica da musculatura pélvica, preferencialmente por ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O quadro séptico justifica o uso de antibióticos como parte do tratamento deste paciente, todavia seu uso não influenciará na possível evolução com fístula perianal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "História de dor abdominal e diarréia crônica ou de doença inflamatória intestinal na família, sugere que o quadro acima pode ser secundário a retocolite ulcerativa incipiente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Por tratar-se de complicação de doença hemorroidária, o tratamento de escolha neste momento é anti-inflamatórios orais, banhos de assento frios 3 vezes ao dia e uso tópico de pomadas à base de nifedipina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um paciente com abscesso perianal complicado por sepse (febre, taquicardia, taquipneia e hipotensão). O diagnóstico de abscesso perianal é predominantemente clínico, baseado na inspeção e palpação que revelam dor, edema e flutuação.\n\nAlternativa A: Incorreta. O diagnóstico do abscesso perianal é clínico. Em pacientes com sinais de sepse e flutuação nítida ao exame físico, a drenagem cirúrgica deve ser realizada de forma imediata. A propedêutica armada (ultrassonografia ou ressonância) é reservada para casos de dúvida diagnóstica ou suspeita de abscessos profundos (como os supraelevadores), não devendo retardar o tratamento de urgência em um quadro séptico.\n\nAlternativa B: Correta. A base do tratamento do abscesso perianal é a drenagem. Contudo, em pacientes com sinais de resposta inflamatória sistêmica ou sepse, o uso de antibióticos está formalmente indicado. É importante destacar que a literatura médica demonstra que o uso de antibióticos não previne a evolução do abscesso para uma fístula perianal crônica, que ocorre devido à persistência da infecção na cripta anal (origem criptoglandular).\n\nAlternativa C: Incorreta. Embora a dor abdominal e a diarreia sugiram Doença Inflamatória Intestinal (DII), a patologia que classicamente apresenta envolvimento perianal importante, com abscessos e fístulas complexas, é a Doença de Crohn, e não a Retocolite Ulcerativa. A Retocolite Ulcerativa é tipicamente limitada à mucosa colorretal e raramente causa doença perianal transmural.\n\nAlternativa D: Incorreta. O quadro não é uma complicação de hemorroidas, mas sim um abscesso perianal agudo. O tratamento de um abscesso com sinais de sepse jamais deve ser conservador (pomadas e banhos de assento). A conduta correta e definitiva é a drenagem cirúrgica ampla e imediata para controle do foco infeccioso. O uso isolado de medidas clínicas neste cenário elevaria drasticamente o risco de complicações graves, como a Síndrome de Fournier.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:31.814Z"
+  },
+  {
+    "id": "AJUDA_5a2709e1-3b1b-4bb6-ab7a-a9d61606c0df",
+    "originalId": "5a2709e1-3b1b-4bb6-ab7a-a9d61606c0df",
+    "statement": "Um estudo epidemiológico investiga a associação entre uma nova exposição ambiental e o desenvolvimento de uma doença rara. Após seguir um grupo de mil indivíduos expostos e mil não expostos por cinco anos, os pesquisadores encontram cinquenta casos da doença no grupo exposto e dez casos no grupo não exposto.\nCom relação a esse estudo, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "representa um modelo tipo caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "é um típico estudo do modelo ecológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o risco relativo para essa associação é igual a 5,0.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "o risco atribuível é igual a 40,0.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "não permite chegar a nenhuma conclusão, devido ao número limitado de indivíduos estudados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Desenho do Estudo: O enunciado descreve um estudo que seleciona participantes com base na presença ou ausência de uma exposição (1.000 expostos e 1.000 não expostos) e os acompanha ao longo do tempo (cinco anos) para observar o desenvolvimento de uma doença. Esse desenho, que parte da exposição em direção ao desfecho, é característico de um Estudo de Coorte.\n\nAlternativa a: Incorreta. Em um estudo de caso-controle, o pesquisador seleciona primeiro os indivíduos doentes (casos) e os saudáveis (controles) para então investigar, de forma retrospectiva, quem foi exposto ao fator de risco no passado. O estudo da questão é prospectivo e parte da exposição, não da doença.\n\nAlternativa b: Incorreta. Estudos ecológicos analisam dados de agregados populacionais (como a incidência de uma doença em diferentes países ou cidades) e não dados individuais. No estudo citado, os pesquisadores acompanharam cada um dos 2.000 indivíduos individualmente.\n\nAlternativa c: Correta. O Risco Relativo (RR) é a razão entre a incidência da doença no grupo exposto e a incidência no grupo não exposto. Para calcular a incidência nos expostos, dividimos 50 por 1.000, obtendo 0,05 (ou 5%). Para a incidência nos não expostos, dividimos 10 por 1.000, obtendo 0,01 (ou 1%). O RR é a divisão de 0,05 por 0,01, o que resulta em 5,0. Isso indica que a exposição aumenta em 5 vezes o risco de desenvolver a doença.\n\nAlternativa d: Incorreta. O Risco Atribuível (RA) representa a diferença absoluta entre a incidência nos expostos e a incidência nos não expostos. O cálculo é 0,05 menos 0,01, resultando em 0,04 (ou 4%). O valor 40,0 mencionado na alternativa está incorreto; o número 40 representa apenas a diferença absoluta no número de casos entre os grupos (50 menos 10), mas não a medida epidemiológica de risco atribuível expressa de forma correta.\n\nAlternativa e: Incorreta. O estudo apresenta uma metodologia robusta de coorte, com grupos de comparação bem definidos e tempo de seguimento adequado, permitindo, sim, o cálculo de medidas de associação e a obtenção de conclusões científicas sobre a relação entre a exposição ambiental e a doença.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:31.814Z"
+  },
+  {
+    "id": "AJUDA_5a39aa59-1997-40e1-8d5b-39cbf8ca56b4",
+    "originalId": "5a39aa59-1997-40e1-8d5b-39cbf8ca56b4",
+    "statement": "Paciente, 88 anos, foi diagnosticado com câncer de próstata, tendo sido proposta pela equipe médica uma prostatectomia radical. O médico explicou detalhadamente os riscos, benefícios e alternativas, utilizando linguagem acessível. O paciente, após refletir com sua família, optou por recusar a cirurgia. A atitude do médico, ao garantir que o paciente recebesse informações compreensíveis e respeitasse sua escolha, mesmo diferente da recomendação inicial da equipe, está fundamentada, principalmente, no seguinte princípio bioético:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Justiça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Beneficência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Autonomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não-maleficência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Paternalismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c).\n\nA questão descreve um cenário em que o médico cumpre o dever de informar adequadamente o paciente e, em seguida, respeita a sua vontade soberana de recusar o tratamento proposto. Esse comportamento é a base da relação médico-paciente moderna, fundamentada nos seguintes princípios:\n\nAlternativa (c) - Autonomia: CORRETA. O princípio da autonomia estabelece que o paciente tem o direito de se autogovernar e tomar decisões sobre sua própria saúde, corpo e vida, desde que esteja devidamente informado e em condições de decidir. Ao fornecer informações claras e respeitar a recusa do paciente de 88 anos à cirurgia, o médico está garantindo que o direito de escolha do indivíduo prevaleça.\n\nAlternativa (a) - Justiça: INCORRETA. Este princípio trata da equidade e da distribuição justa de recursos de saúde. Ele dita que pacientes em situações semelhantes devem receber tratamentos semelhantes e que não deve haver discriminação. Não é o foco central desta questão, que aborda o processo de decisão individual.\n\nAlternativa (b) - Beneficência: INCORRETA. A beneficência é o dever do médico de agir no maior interesse do paciente, buscando promover o bem e a saúde. Embora a recomendação da cirurgia tenha sido feita com base neste princípio (tentar curar o câncer), o respeito à recusa final do paciente é uma aplicação da autonomia, que muitas vezes pode entrar em conflito com o que o médico considera ser o melhor benefício clínico.\n\nAlternativa (d) - Não maleficência: INCORRETA. O princípio da não maleficência estabelece que o médico tem o dever de não causar dano intencional ao paciente (Primum non nocere). Embora evitar uma cirurgia arriscada em um idoso de 88 anos possa evitar danos, o enunciado foca especificamente no respeito à escolha do paciente após ser informado, o que caracteriza a autonomia.\n\nAlternativa (e) - Paternalismo: INCORRETA. O paternalismo ocorre quando o médico toma decisões pelo paciente sem considerar sua vontade, agindo como se soubesse o que é melhor para ele independentemente de sua concordância. A atitude do médico descrita foi justamente o oposto do paternalismo, pois ele priorizou a participação e a escolha do paciente e de sua família.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Urologia",
+      "Saúde do Idoso",
+      "Ética Médica"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:31.814Z"
+  },
+  {
+    "id": "AJUDA_5a406a4c-0ea5-43c4-ad47-b48091de19f3",
+    "originalId": "5a406a4c-0ea5-43c4-ad47-b48091de19f3",
+    "statement": "Lactente, sexo masculino, 15 meses, é admitido no hospital com história de 1 dia de febre, diminuição da aceitação alimentar e 2 episódios de vômitos sem diarreia. Apresenta-se em bom estado geral e consciente, sem lesões de pele. Apresentava rigidez nucal duvidosa ao exame físico, e optou-se por uma punção lombar, e a análise do líquor (LCR) que demonstra 40 leucócitos/mL, com absoluta predominância de linfócitos, níveis normais da glicorraquia e das proteínas. Não se tem ainda resultados de hemograma, provas inflamatórias, baciloscopia ou PCR do LCR.\nDiante do exposto, qual tratamento empírico inicial é indicado enquanto são aguardados os demais exames?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas sintomáticos para febre e vômitos, sem introdução de antibióticos ou antivirais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Sintomáticos para febre e vômitos e aciclovir.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sintomáticos para febre e vômitos e dexametasona com penicilina cristalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sintomáticos para febre e vômitos e dexametasona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Sintomáticos para febre e vômitos + ceftriaxone associado à vancomicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é fundamental analisar os dados clínicos e laboratoriais fornecidos. Estamos diante de um lactente de 15 meses com um quadro agudo de febre e vômitos, mas que se encontra em bom estado geral e consciente. O ponto crucial é a interpretação do líquido cefalorraquidiano (LCR).\n\nA análise do LCR revela:\n1. Pleocitose leve (40 leucócitos/mL).\n2. Predomínio linfocitário absoluto.\n3. Glicorraquia normal.\n4. Proteínas normais.\n\nEste padrão (aumento discreto de células com predomínio de linfócitos e bioquímica normal) é clássico das meningites virais, também chamadas de meningites assépticas. Diferente da meningite bacteriana, na qual esperaríamos um líquor turvo, com centenas ou milhares de células (predomínio de polimorfonucleares/neutrófilos), hipoglicorraquia (glicose baixa) e hiperproteinorraquia (proteína alta).\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: Como o quadro clínico é estável (bom estado geral) e o perfil do líquor é fortemente sugestivo de etiologia viral, a conduta inicial correta é o suporte sintomático (analgésicos, antitérmicos e hidratação) enquanto se aguarda a evolução clínica e exames complementares de confirmação. Na maioria das meningites virais, não há tratamento específico necessário além do suporte.\n\nAlternativa (b) Incorreta: O aciclovir é indicado nos casos de encefalite herpética ou meningite por Herpes Simplex em recém-nascidos. No caso em questão, o paciente está consciente, sem sinais de comprometimento do parênquima cerebral (encefalite) e fora do período neonatal, não havendo indicação rotineira para o uso de antiviral.\n\nAlternativa (c) Incorreta: Esta alternativa sugere tratamento para meningite bacteriana. Além de o perfil do LCR não ser compatível com bactéria, a penicilina cristalina não é a droga de escolha inicial para esta faixa etária, e a dexametasona é um adjuvante usado especificamente antes ou junto com a primeira dose de antibiótico na suspeita bacteriana (principalmente por H. influenzae ou pneumococo) para reduzir sequelas auditivas e neurológicas.\n\nAlternativa (d) Incorreta: A dexametasona isolada não trata a inflamação meníngea de origem viral e não tem indicação como monoterapia no manejo inicial da meningite.\n\nAlternativa (e) Incorreta: Ceftriaxona associada à vancomicina constitui o esquema antibiótico empírico de amplo espectro para meningite bacteriana comunitária. Embora seja uma conduta comum em casos de líquor purulento ou paciente grave, os achados deste LCR (linfocitose e bioquímica normal) e o bom estado geral do paciente permitem a conduta expectante sem o uso imediato de antibióticos potentes.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:31.814Z"
+  },
+  {
+    "id": "AJUDA_5a41beba-dbd5-4902-b4b6-89df53868680",
+    "originalId": "5a41beba-dbd5-4902-b4b6-89df53868680",
+    "statement": "Menino de 10 anos, portador de anemia falciforme, é admitido com febre, dor torácica e taquipneia. A gasometria arterial revela PaO2 de 55 mmHg, e a radiografia de tórax demonstra infiltrado pulmonar multilobar, confirmando o diagnóstico de síndrome torácica aguda (STA). Iniciado tratamento com oxigenoterapia, hidratação venosa, ceftriaxone e azitromicina. Após 24 horas, a saturação de oxigênio permanece abaixo de 90%, e a hemoglobina caiu para 6,5 g/dL.\n\nQual a conduta imediata indicada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Introduzir corticosteroide sistêmico em alta dose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar transfusão sanguínea, simples ou de troca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar anticoagulação profilática com heparina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observar por 24h em UTI com suporte clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de Síndrome Torácica Aguda (STA), uma das principais causas de mortalidade em pacientes com anemia falciforme. O diagnóstico já foi estabelecido (febre, dor torácica, taquipneia e infiltrado radiológico novo). O ponto crucial da questão é que, apesar do tratamento inicial adequado (antibioticoterapia, oxigênio e hidratação), o paciente evoluiu com persistência da hipoxemia (saturação < 90%) e queda nos níveis de hemoglobina (6,5 g/dL). \n\nNesse cenário de gravidade, a medida que visa interromper o ciclo de falcização pulmonar e melhorar a oferta de oxigênio aos tecidos é a transfusão de hemácias.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\n\nA transfusão sanguínea é a intervenção fundamental na STA grave ou progressiva. O objetivo é reduzir a porcentagem de hemoglobina S (HbS) e aumentar a hemoglobina total, melhorando a oxigenação e diminuindo a polimerização dos eritrócitos. \n\nExistem duas modalidades principais:\n1. Transfusão simples: Indicada quando há queda significativa da hemoglobina basal (como no caso, em que está em 6,5 g/dL) e o paciente tolera o volume.\n2. Transfusão de troca (exsanguinotransfusão): Indicada em casos graves, com hipoxemia persistente ou progressão rápida do infiltrado pulmonar, especialmente se a hemoglobina inicial já estiver em níveis mais elevados (acima de 9-10 g/dL), para evitar hiperviscosidade. \n\nComo o paciente mantém hipoxemia e teve queda de hemoglobina, a indicação de transfundir é imediata.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Introduzir corticosteroide sistêmico em alta dose: O uso de corticoides na anemia falciforme é controverso. Embora possam reduzir o tempo de internação e a necessidade de transfusão em alguns estudos, eles estão associados a um alto índice de reinternação por crise álgica de rebote (vaso-oclusão grave após a suspensão do corticoide). Não são a conduta prioritária na vigência de hipoxemia grave.\n\nc) Iniciar anticoagulação profilática com heparina: Pacientes com anemia falciforme têm um estado pró-trombótico, e a profilaxia para tromboembolismo venoso pode ser considerada em pacientes internados. No entanto, a anticoagulação não trata a causa-base da STA nem reverte a hipoxemia aguda, não sendo a conduta imediata para salvar a vida do paciente neste momento.\n\nd) Observar por 24h em UTI com suporte clínico: O paciente já está em tratamento há 24 horas e não apresentou melhora; pelo contrário, mantém saturação baixa e houve queda da hemoglobina. A conduta expectante (apenas observar) é inadequada, pois a STA pode evoluir rapidamente para insuficiência respiratória grave e óbito se não houver intervenção agressiva com transfusão.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:31.814Z"
+  },
+  {
+    "id": "AJUDA_5a530f80-6a57-4298-980b-232cc65e6759",
+    "originalId": "5a530f80-6a57-4298-980b-232cc65e6759",
+    "statement": "Homem de 72 anos, tabagista, com hipertensão e diabetes, procura o pronto-socorro com quadro de dispneia súbita há 6 horas, dor torácica ventilatório-dependente e tosse seca.\nExame físico:\n• PA: 128/78 mmHg\n• FC: 112 bpm\n• FR: 26 irpm\n• SatO₂: 90% em ar ambiente\n• Temperatura: 37,2 °C\n• Sem estertores, bulhas normofonéticas, sem sinais de choque.\nExames:\n• Dímero-D elevado.\n• AngioTC de tórax: trombo em artéria lobar direita.\n• Ecocardiograma: função do ventrículo direito preservada.\n• Troponina: normal.\n• PESI calculado: classe III.\nQual a classificação de risco e a conduta adequada para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Risco alto – trombólise com alteplase 100 mg em 2 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Risco intermediário baixo – iniciar enoxaparina 1 mg/kg a cada 12 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Risco alto – anticoagulação com enoxaparina 1,5 mg/kg ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Risco intermediário alto – trombólise com alteplase 50 mg em bolus seguido de 50 mg em 2 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Risco intermediário alto – anticoagulação com heparina não fracionada em infusão contínua (80 U/kg em bolus seguido de 18 U/kg/h).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para classificar o risco de um paciente com tromboembolismo pulmonar (TEP) e definir a conduta, devemos avaliar três pilares: estabilidade hemodinâmica, escores clínicos (como o PESI) e lesão/disfunção de ventrículo direito (VD).\n\nAnálise do quadro clínico:\nO paciente está hemodinamicamente estável (PA 128/78 mmHg), o que descarta TEP de alto risco (maciço). O escore PESI é classe III (risco intermediário). Para diferenciar entre risco intermediário-alto e intermediário-baixo, olhamos para o ecocardiograma e os marcadores de necrose miocárdica:\n1. Ventrículo Direito (Ecocardiograma): Função preservada (negativo para disfunção).\n2. Marcadores (Troponina): Normais (negativos para lesão).\n\nComo o paciente tem PESI elevado (classe III), mas não apresenta disfunção de VD nem elevação de troponina, ele é classificado como risco intermediário-baixo.\n\nAnálise das alternativas:\n\na) Incorreta. O risco alto (TEP maciço) é definido pela instabilidade hemodinâmica (PAS < 90 mmHg ou queda > 40 mmHg por mais de 15 minutos). O paciente está normotenso; portanto, a trombólise não está indicada.\n\nb) Correta. O paciente é de risco intermediário-baixo porque possui estabilidade hemodinâmica e PESI classe III, porém com marcadores (troponina) e avaliação de imagem (eco) negativos para sobrecarga de VD. A conduta padrão é a hospitalização e o início da anticoagulação plena, sendo a enoxaparina 1 mg/kg de 12/12 h uma opção adequada.\n\nc) Incorreta. A classificação de risco alto está errada pelos motivos expostos na alternativa A. Além disso, se o risco fosse realmente alto, a conduta seria a trombólise, e não apenas a anticoagulação isolada.\n\nd) Incorreta. Para ser classificado como risco intermediário-alto, o paciente precisaria obrigatoriamente apresentar disfunção de VD (no eco ou angio-TC) e troponina positiva. Neste caso, ambos são negativos. Além disso, a trombólise não é a conduta inicial para o risco intermediário-alto; ela é reservada apenas para casos que evoluem com instabilidade hemodinâmica (trombólise de resgate).\n\ne) Incorreta. A classificação está incorreta, pois o paciente não preenche os critérios para risco intermediário-alto. Embora a heparina não fracionada pudesse ser utilizada, a enoxaparina é preferível em pacientes estáveis e sem insuficiência renal por ter posologia mais simples e menor risco de trombocitopenia induzida por heparina. O erro principal reside na classificação de risco.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:31.814Z"
+  },
+  {
+    "id": "AJUDA_5a5aabc8-45c7-458d-b087-426359443a61",
+    "originalId": "5a5aabc8-45c7-458d-b087-426359443a61",
+    "statement": "Um paciente, vítima de atropelamento, deu entrada no pronto-socorro com dor lombar intensa, estável hemodinamicamente, saturação 98%. Realizada tomografia computadorizada de abdome, identificou-se hematoma em retroperitônio, com possível lesão renal. Quanto ao trauma do retroperitônio, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hematomas renais são encontrados na zona 2 do retroperitônio e comumente são autolimitados, não necessitando de intervenção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "na zona 3 do retroperitônio podemos encontrar a aorta abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "lesões retroperitoneais na zona 1 nunca devem ser exploradas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "para explorar um hematoma renal à direita é necessário realizar a manobra de Mattox.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "os traumas renais requerem tratamento cirúrgico em sua maioria, pois normalmente não são autolimitados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda a classificação anatômica e a conduta no trauma de retroperitônio, um tema recorrente em provas de cirurgia e trauma. Para respondê-la, é fundamental conhecer as três zonas do retroperitônio:\n\nZona 1 (Centromedial): Contém a aorta abdominal, a veia cava inferior, o pâncreas e a maior parte do duodeno.\nZona 2 (Laterais ou Flancos): Contém os rins, as glândulas suprarrenais, os ureteres e os cólons ascendente e descendente.\nZona 3 (Pélvica): Contém os vasos ilíacos e o reto extraperitoneal.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Os rins estão localizados na Zona 2 do retroperitônio. Em pacientes com trauma contuso (como o atropelamento citado) que apresentam estabilidade hemodinâmica, a grande maioria das lesões renais é de baixo grau (I a III) e autolimitada. O tratamento padrão-ouro nesses casos é conservador (não cirúrgico), com repouso e observação.\n\nAlternativa b) Incorreta. A aorta abdominal e a veia cava inferior estão localizadas na Zona 1 (área centromedial). A Zona 3 compreende a região pélvica e seus respectivos vasos (ilíacos).\n\nAlternativa c) Incorreta. As lesões na Zona 1 são as que mais frequentemente exigem exploração cirúrgica, especialmente no trauma penetrante ou em traumas contusos com hematomas pulsáteis ou em expansão, devido ao risco de lesão de grandes vasos (aorta e cava).\n\nAlternativa d) Incorreta. A manobra de Mattox (ou rotação visceral medial à esquerda) é utilizada para expor a aorta torácica distal, a aorta abdominal e o rim esquerdo. Para explorar o rim direito e a veia cava inferior, utiliza-se a manobra de Cattell-Braasch (ou rotação visceral medial à direita).\n\nAlternativa e) Incorreta. Atualmente, cerca de 90% dos traumas renais são tratados de forma conservadora. A intervenção cirúrgica fica reservada para casos específicos, como instabilidade hemodinâmica persistente, hematomas perirrenais expansíveis ou pulsáteis (geralmente identificados durante laparotomia por outras causas) ou avulsão do pedículo vascular (Grau V).",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:31.814Z"
+  },
+  {
+    "id": "AJUDA_5a5b3b4f-e86e-4361-b2be-5f300c94d031",
+    "originalId": "5a5b3b4f-e86e-4361-b2be-5f300c94d031",
+    "statement": "Com relação à infecção do vírus da imunodeficiência humana (HIV) no ciclo gravídico-puerperal, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Durante o pré-natal, a dosagem da carga viral deve ser repetida a cada 4 semanas até a negativação e, depois disso, próximo ao parto, ao redor de 37 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gestantes vivendo com HIV que já estavam em uso de terapia antirretroviral (TARV) antes da gestação devem ter seu esquema substituído por TDF + 3TC + DTG, independentemente dos níveis de carga viral ou contagem de linfócitos CD4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gestantes com carga viral desconhecida ou acima de 1.000 cópias/mL devem realizar cesariana eletiva com 38 semanas para reduzir o risco de transmissão vertical do HIV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pacientes que não usam TARV devem ter a lactação bloqueada no pós-parto imediato com 2 comprimidos de cabergolina 0,5 mg em dose única, enquanto as puérperas em uso de TARV podem manter o aleitamento materno, uma vez que o tratamento reduz significativamente a eliminação do HIV pelo leite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a) Incorreta. De acordo com as diretrizes do Ministério da Saúde, a carga viral (CV) deve ser monitorada no início do pré-natal, de quatro a oito semanas após o início da terapia antirretroviral (TARV) e, no mínimo, uma vez a cada trimestre. O exame crucial para a definição da via de parto deve ser realizado a partir da 34ª semana de gestação. Não existe a recomendação de repetição a cada 4 semanas especificamente até a negativação.\n\nAlternativa b) Incorreta. Se a gestante já vinha em uso de TARV antes da concepção, apresentando boa adesão e carga viral indetectável, a recomendação geral é manter o esquema atual, desde que não contenha drogas contraindicadas. A substituição sistemática não é necessária e pode gerar instabilidade virológica. O esquema TDF + 3TC + DTG é o preferencial para aquelas que estão iniciando o tratamento durante a gestação.\n\nAlternativa c) Correta. Esta alternativa descreve corretamente o protocolo de prevenção da transmissão vertical. Quando a carga viral é desconhecida ou superior a 1.000 cópias/mL (resultado de exame realizado após a 34ª semana), a via de parto indicada é a cesariana eletiva. Ela deve ser agendada para a 38ª semana de gestação, com o objetivo de evitar o início do trabalho de parto e a ruptura espontânea das membranas, situações que aumentam o risco de infecção do recém-nascido.\n\nAlternativa d) Incorreta. No Brasil, a amamentação é contraindicada para todas as mulheres vivendo com HIV, independentemente do uso de TARV ou de a carga viral ser indetectável. O vírus pode ser transmitido pelo leite materno. Portanto, todas as puérperas devem receber o inibidor de lactação (cabergolina 1,0 mg, em dose única, logo após o parto) e a criança deve ser alimentada exclusivamente com fórmula infantil fornecida pelo Estado.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:31.814Z"
+  },
+  {
+    "id": "AJUDA_5a5caa46-8a41-4a8b-acf5-899974b98b4b",
+    "originalId": "5a5caa46-8a41-4a8b-acf5-899974b98b4b",
+    "statement": "Considerando a fisiologia de um ciclo menstrual regular, o hormônio identificado pela seta na Figura, refere-se a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inibina A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estradiol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Progesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para identificar o hormônio indicado pela seta, é necessário analisar o comportamento das quatro curvas representadas no gráfico do ciclo menstrual:\n\nA curva cinza, apontada pela seta, é o estradiol. Ela se caracteriza por ser bifásica. O primeiro pico ocorre ao final da fase folicular, quando o folículo dominante secreta grandes quantidades de estrogênio para estimular o pico do hormônio luteinizante (LH). O segundo pico ocorre durante a fase lútea, pois o corpo lúteo, além de progesterona, também secreta estradiol.\n\nAnálise das alternativas:\n\na) FSH: Incorreta. O FSH (hormônio folículo-estimulante) está representado pela linha em azul-claro (ciano). Seus níveis sobem levemente no início do ciclo para o recrutamento folicular e apresentam um pico no meio do ciclo, simultâneo ao LH, porém com menor amplitude.\n\nb) Inibina A: Incorreta. A inibina A é produzida pelo corpo lúteo e seus níveis aumentam principalmente na fase lútea, caindo com a regressão deste. Embora seu gráfico se assemelhe à fase lútea do estradiol, ela não apresenta o pico pré-ovulatório característico e proeminente mostrado na curva cinza.\n\nc) Estradiol: Correta. Esta é a representação clássica do estradiol no ciclo menstrual. O primeiro pico (pré-ovulatório) é fundamental para a ovulação, e o segundo pico (lúteo) faz parte da atividade endócrina do corpo lúteo.\n\nd) Progesterona: Incorreta. A progesterona é representada no gráfico pela linha roxa. Note que ela permanece em níveis praticamente nulos durante toda a fase folicular, elevando-se apenas após a ovulação, com a formação do corpo lúteo, e caindo logo antes da menstruação.\n\nEm resumo, as curvas do gráfico são:\nRosa: LH (pico agudo pré-ovulatório).\nCiano: FSH (acompanha o LH em menor escala).\nRoxo: Progesterona (exclusiva da fase lútea).\nCinza (Seta): Estradiol (picos na fase folicular e lútea).",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Ciclo Menstrual"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/7f63fc217731fdae87045b7fac8f7672dddf290faa8d9c66b91ee291954ab99d.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5a5caa46-8a41-4a8b-acf5-899974b98b4b_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:32.221Z"
+  }
+]

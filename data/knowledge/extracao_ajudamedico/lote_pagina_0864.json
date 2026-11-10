@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_efe3f1af-c41d-41d0-a157-da524a07eb43",
+    "originalId": "efe3f1af-c41d-41d0-a157-da524a07eb43",
+    "statement": "A aorta pode sofrer ruptura completa ou incompleta após trauma torácico contuso ou penetrante. No caso de trauma torácico contuso em um condutor de veículo jovem, vítima de acidente automobilístico frontal, sem dispositivos de contenção, deve-se suspeitar de trauma aórtico em qual das situações abaixo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "e-FAST positivo na janela pericárdica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rebaixamento do brônquio fonte direito, visualizado na tomografia de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alargamento de mediastino, visualizado no RX de tórax.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Diminuição da pressão arterial nos membros superiores em comparação aos membros inferiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Desvio da traqueia e do esôfago (e, portanto, também da sonda nasogástrica) para a esquerda, visualizado no RX de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A lesão traumática da aorta é uma condição de extrema gravidade, frequentemente associada a mecanismos de desaceleração brusca, como colisões automobilísticas frontais ou quedas de grandes alturas. A zona mais vulnerável é o istmo aórtico, localizado logo após a emergência da artéria subclávia esquerda, onde a aorta móvel se encontra com a aorta torácica fixa pelo ligamento arterioso.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O e-FAST com janela pericárdica positiva indica a presença de líquido (hemopericárdio) no saco pericárdico, o que sugere tamponamento cardíaco, geralmente por trauma cardíaco direto ou lesão de grandes vasos da base (aorta ascendente). No entanto, o sinal clássico de triagem para a lesão da aorta por desaceleração (istmo) é radiológico mediastinal, e não o e-FAST.\n\nAlternativa (b) Incorreta: O achado radiológico típico é o rebaixamento (depressão) do brônquio-fonte ESQUERDO abaixo de um ângulo de 40 a 50 graus em relação à traqueia. Isso ocorre porque o hematoma originado no istmo aórtico exerce pressão sobre a estrutura brônquica esquerda. O brônquio-fonte direito não costuma ser afetado dessa forma.\n\nAlternativa (c) Correta: O alargamento do mediastino (superior a 8 cm na altura do botão aórtico ou ocupando mais de 25% do diâmetro do tórax) é o sinal inicial mais importante na radiografia de tórax. Embora tenha baixa especificidade (pode ocorrer por sangramentos venosos ou fraturas vertebrais), possui alta sensibilidade, sendo o principal critério para indicar a realização de uma angiotomografia de tórax, que é o padrão-ouro atual para diagnóstico.\n\nAlternativa (d) Incorreta: Em alguns casos de trauma da aorta, pode ocorrer a chamada síndrome da pseudocoarctação, caracterizada por hipertensão arterial nos membros superiores e diminuição da pressão arterial ou dos pulsos nos membros inferiores. A alternativa descreve o inverso (pressão menor nos membros superiores), o que está incorreto.\n\nAlternativa (e) Incorreta: O desvio das estruturas da linha média, como a traqueia, o esôfago e a sonda nasogástrica, ocorre classicamente para a DIREITA. O hematoma periaórtico se expande para o espaço pleural esquerdo e para a região paravertebral esquerda, empurrando as estruturas mediastinais para o lado oposto.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:05.262Z"
+  },
+  {
+    "id": "AJUDA_efe6e2a9-5086-49b9-811f-d4d36620fe0a",
+    "originalId": "efe6e2a9-5086-49b9-811f-d4d36620fe0a",
+    "statement": "Pactente masculino, 54 anos, foi admitido ao hospital para uma cirurgia de ressecção intestinal por complicações de doença de Crohn. Ele tem um histórico de perda de peso significativa nos últimos cinco meses (aproximadamente 12 kg), apresentando atualmente um IMC: 17,5 kg/m². No exame físico, observa-se massa muscular diminuída e sinais de hipovitaminose. O paciente também relata fadiga constante e episódios de diarreia frequente. Após a cirurgia, ele foi submetido à nutrição enteral, mas apresentou intolerância, necessitando de nutrição parenteral total (NPT), por sete dias. Durante este período, houve dificuldades no controle dos eletrólitos e distúrbios metabólicos.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender completamente a NPT ao primeiro sinal de tolerância à nutrição enteral, para evitar complicações hepáticas associadas à nutrição parenteral de longa duração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Introduzir nutrição oral precoce, mesmo com sinais de intolerância à enteral, para reduzir o risco de infecções relacionadas à nutrição parenteral prolongada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter a nutrição parenteral total (NPT), por tempo indeterminado, até que o paciente apresente melhora clínica significativa e normalização dos eletrólitos, independentemente da reintrodução gradual de nutrição enteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ajustar a nutrição parenteral total (NPT), com foco na redução da quantidade de carboidratos e aumento da oferta lipídica, considerando o risco de síndrome de realimentação em pacientes com desnutrição severa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar monitoramento rigoroso dos níveis de fósforo, magnésio e potássio durante a transição da NPT para a nutrição enteral e oral, visando prevenir complicações como síndrome de realimentação e distúrbios eletrolíticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um quadro de desnutrição grave (IMC 17,5 kg/m², perda de 12 kg em 5 meses e sinais de hipovitaminose) no contexto de uma doença inflamatória intestinal (Crohn) e pós-operatório complexo. Esse perfil é o clássico para o desenvolvimento da Síndrome de Realimentação (SR). A SR ocorre quando a oferta calórica é reiniciada em pacientes que estavam em estado de inanição ou desnutrição severa, provocando um aumento súbito na secreção de insulina. A insulina promove o influxo celular de glicose acompanhado de eletrólitos, resultando em quedas perigosas nos níveis séricos de fósforo, potássio e magnésio.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. A transição da nutrição parenteral total (NPT) para a nutrição enteral deve ser feita de forma gradual e escalonada (*tapering*). A suspensão abrupta da NPT ao primeiro sinal de tolerância enteral pode resultar em um déficit calórico significativo, caso a via enteral ainda não tenha atingido a meta nutricional (geralmente aguarda-se que a via enteral supra pelo menos 60% a 75% das necessidades antes de suspender a parenteral). Além disso, há risco de hipoglicemia de rebote.\n\nAlternativa b) Incorreta. A presença de sinais de intolerância à nutrição enteral (como distensão abdominal, vômitos ou resíduo gástrico elevado) é uma contraindicação para o avanço da dieta oral. Forçar a alimentação oral nessas condições aumenta o risco de complicações mecânicas, como broncoaspiração e desconforto abdominal grave.\n\nAlternativa c) Incorreta. O objetivo da terapia nutricional é sempre migrar para a via mais fisiológica (enteral ou oral) assim que possível. Manter a NPT por tempo indeterminado, independentemente da evolução da via enteral, expõe o paciente a riscos desnecessários, como infecções de cateter (sepse), esteatose hepática e atrofia da mucosa intestinal.\n\nAlternativa d) Incorreta. Embora a redução da oferta de carboidratos e o início cauteloso das calorias sejam estratégias para prevenir a Síndrome de Realimentação, o ajuste isolado da oferta lipídica não substitui a necessidade crítica de monitoramento e reposição eletrolítica. O foco principal na prevenção de danos por SR é o controle dos íons, e não apenas a manipulação da proporção de macronutrientes na bolsa de NPT.\n\nAlternativa e) Correta. Esta alternativa descreve o cuidado padrão-ouro para pacientes de alto risco nutricional. A Síndrome de Realimentação manifesta-se tipicamente com a \"tríade da realimentação\": hipofosfatemia (a marca registrada), hipocalemia e hipomagnesemia. O monitoramento rigoroso e a reposição desses eletrólitos durante o aumento da oferta calórica são vitais para prevenir arritmias cardíacas, insuficiência respiratória, falência cardíaca e óbito.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Nutrição em Cirurgia",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:05.262Z"
+  },
+  {
+    "id": "AJUDA_eff601ce-0164-4702-8676-9233087a483d",
+    "originalId": "eff601ce-0164-4702-8676-9233087a483d",
+    "statement": "Devido ao número elevado de pacientes internados com diagnóstico de diabetes melitus tipo 2 (DM2) internados no Hospital Psiquiátrico Dr. Adolfo Bezerra de Menezes, foi solicitado pela diretoria clínica que o tratamento para diabetes desses pacientes fosse revisado, pelo médico assistente desses pacientes. Com base nas diretrizes da Sociedade Brasileira de Diabetes julgue as afirmativas abaixo em verdadeiro e falso e assinale a alternativa correta:\n\nI- Paciente diabético, sem sobrepeso, com risco cardiovascular baixo e hemoglobina glicada (HBA1C) menor que 7,5% está indicado o tratamento com metformina.\nII- Paciente diabético, obeso, com risco cardiovascular baixo e hemoglobina glicada (HBA1C) menor que 7,5% está indicado o tratamento com Tirzepatida e Análogo de GLP-1.\nIII- Não é indicada a estratificação de risco cardiovascular para iniciar o tratamento de pacientes com DM2.\nIV- Os medicamentos da classe dos Inibidores de SGLT-2 e dos Análogos de GLP-1, além de serem usados no tratamento da diabetes atuam diminuindo risco de eventos cardiovasculares.\nV- Para pacientes obesos e com alto risco cardiovascular está contra-indicado o uso isolado de apenas um medicamento antidiabético.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, V, V, F",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, F, V, F, V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, F, F, V, V",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "F, F, F, F, V",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise dos itens com base nas diretrizes da Sociedade Brasileira de Diabetes (SBD):\n\nItem I (Verdadeiro): Para pacientes com diagnóstico de DM2 que apresentam HbA1c menor que 7,5% e baixo risco cardiovascular, a conduta recomendada é a monoterapia, sendo a metformina o fármaco de primeira escolha devido à sua eficácia, perfil de segurança e baixo custo.\n\nItem II (Falso): Pacientes com HbA1c menor que 7,5% e baixo risco iniciam tratamento com monoterapia. Além disso, a tirzepatida já possui ação agonista de GLP-1 (sendo um coagonista GIP/GLP-1), tornando incorreta e redundante sua associação simultânea com outro análogo de GLP-1.\n\nItem III (Falso): A estratificação de risco cardiovascular é etapa obrigatória no manejo inicial do DM2. É ela que define a necessidade do uso precoce de classes com benefício cardiovascular demonstrado, independentemente do valor da HbA1c inicial.\n\nItem IV (Verdadeiro): Tanto os inibidores de SGLT-2 (iSGLT2) quanto os análogos do receptor de GLP-1 (aGLP-1) comprovaram redução de desfechos cardiovasculares maiores (como infarto, AVC e morte cardiovascular), além de benefícios na insuficiência cardíaca e na nefropatia diabética.\n\nItem V (Verdadeiro): Em pacientes obesos e de alto risco cardiovascular, as diretrizes orientam a terapia combinada precoce, associando medicamentos que atuam no controle glicêmico, perda ponderal e proteção cardiovascular (como aGLP-1 ou iSGLT-2 associados à metformina), evitando a monoterapia isolada convencional que costuma ser insuficiente para estes alvos clínicos.\n\nAnálise das alternativas:\n\na) Incorreta. Os itens II e III são falsos e o item V é verdadeiro.\nb) Incorreta. O item III é falso e o item IV é verdadeiro.\nc) Correta. A sequência de julgamento é V, F, F, V, V.\nd) Incorreta. Os itens I e IV são verdadeiros.\n\nGabarito: Alternativa c.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular",
+      "Obesidade e Síndrome Metabólica",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:05.262Z"
+  },
+  {
+    "id": "AJUDA_f008577d-2db9-452b-a236-85b134936475",
+    "originalId": "f008577d-2db9-452b-a236-85b134936475",
+    "statement": "A evolução da Medicina Preventiva passou por diversas fases, desde o higienismo até a \"Nova Saúde Pública\". O Relatório Lalonde (1974) foi um marco ao propor o conceito de \"Campo da Saúde\", que expandiu a compreensão sobre os fatores que influenciam a saúde para além da assistência médica. Segundo esse relatório, os componentes do Campo da Saúde que possuem maior impacto na morbimortalidade moderna são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O saneamento básico e o controle de vetores, que continuam sendo os determinantes exclusivos da saúde nas populações urbanas contemporâneas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O estilo de vida e o ambiente, superando a influência da biologia humana e da organização dos serviços de saúde na determinação das doenças crônicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A biologia humana e a genética, que determinam a suscetibilidade individual às doenças infecciosas e crônicas, sendo o principal foco da prevenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A organização dos serviços de assistência médica, cuja ampliação e tecnificação são os principais responsáveis pelo aumento da esperança de vida no último século.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Relatório Lalonde, publicado no Canadá em 1974, é um dos documentos fundamentais da moderna Saúde Pública. Ele introduziu o conceito de Campo da Saúde, propondo que a saúde não é apenas o resultado da assistência médica, mas sim da interação de quatro componentes principais: biologia humana, ambiente, estilo de vida e organização dos serviços de saúde.\n\nAlternativa (a) INCORRETA: O foco exclusivo no saneamento e controle de vetores remete à fase do higienismo (século XIX e início do XX), voltada primordialmente para doenças infectocontagiosas. Embora o saneamento seja um determinante ambiental, o Relatório Lalonde expande essa visão para lidar com as doenças crônicas não transmissíveis e as causas externas, típicas da modernidade.\n\nAlternativa (b) CORRETA: Esta é a essência do Relatório Lalonde. O documento demonstrou, por meio de análises epidemiológicas, que a maior parte dos gastos em saúde era direcionada à organização dos serviços de assistência médica (hospitais e médicos), enquanto as principais causas de morbimortalidade na época estavam fortemente ligadas ao estilo de vida (como tabagismo, dieta inadequada e sedentarismo) e ao ambiente. O relatório concluiu que intervenções focadas no comportamento individual e no meio ambiente teriam um impacto muito superior na redução da mortalidade precoce do que o investimento isolado no sistema assistencial.\n\nAlternativa (c) INCORRETA: A biologia humana e a genética fazem parte dos quatro componentes do Campo da Saúde. No entanto, o relatório enfatiza que, para as doenças modernas, os fatores comportamentais (estilo de vida) e ambientais são os principais determinantes e os alvos prioritários da prevenção, pois a biologia humana é menos passível de modificação por políticas públicas de saúde em comparação aos hábitos de vida.\n\nAlternativa (d) INCORRETA: Uma das conclusões mais célebres do relatório é justamente o questionamento do modelo biomédico centrado na assistência médica. Lalonde argumentou que a organização dos serviços de saúde contribui com uma parcela relativamente pequena para a melhoria do estado de saúde geral da população quando comparada às mudanças nos hábitos de vida e na qualidade ambiental. Portanto, a tecnificação dos serviços médicos não é a principal responsável pelo aumento da esperança de vida no contexto moderno analisado pelo relatório.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:05.262Z"
+  },
+  {
+    "id": "AJUDA_f00f3244-f86b-45ef-b9f8-437bab8fffc1",
+    "originalId": "f00f3244-f86b-45ef-b9f8-437bab8fffc1",
+    "statement": "Cinquenta e três indivíduos sedentários participaram de um estudo para avaliar a capacidade física através de um teste de corrida. A pressão diastólica (mmHg) foi medida em cada indivíduo antes e ao final da corrida. O intervalo de 95% de confiança para a mudança média da pressão diastólica (final-inicial) resultante foi de [0,82; 5,59]. Com base nesses resultados assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ao nível de significância de 95%, não há diferença estatisticamente significante entre 0,82 e 5,59 mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Noventa e cinco por cento dos indivíduos têm mudança na pressão diastólica entre 0,82 e 5,59 mmHg nos momentos avaliados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Há indícios de diferença estatisticamente significativa entre as médias da pressão diastólica quando comparamos os momentos avaliados ao nível de significância de 5%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Como o intervalo de 95% de confiança engloba o valor unitário, pode-se afirmar que não houve diferença de pressão diastólica nos momentos avaliados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, é fundamental compreender a interpretação do Intervalo de Confiança (IC) de 95% aplicado a diferenças de médias.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Existe uma confusão de conceitos aqui. O nível de confiança é de 95%, o que implica um nível de significância (alfa) de 5% (ou 0,05), e não de 95%. Além disso, a significância estatística não é testada comparando os dois limites do intervalo entre si, mas sim verificando se o valor de nulidade (zero) faz parte do intervalo.\n\nAlternativa (b) Incorreta. Este é um erro comum de interpretação estatística. O Intervalo de Confiança refere-se à estimativa da média da população, e não aos valores individuais da amostra. O IC indica que, se repetíssemos o estudo várias vezes, a média real da mudança na pressão estaria dentro desse intervalo em 95% das vezes. A variação individual dos indivíduos é geralmente muito maior do que a amplitude do IC da média.\n\nAlternativa (c) Correta. Em estudos que medem a diferença entre dois momentos (final menos inicial), a hipótese nula (H0) é de que não houve mudança, ou seja, que a diferença média é igual a zero. Quando o Intervalo de Confiança de 95% não inclui o valor zero, podemos afirmar que a diferença é estatisticamente significativa ao nível de 5% (p inferior a 0,05). Como o intervalo [0,82; 5,59] é composto apenas por números positivos e não contém o zero, há indícios de uma diferença real (aumento da pressão).\n\nAlternativa (d) Incorreta. O valor unitário (1) é o valor de referência para \"ausência de efeito\" apenas em cálculos de razões, como Risco Relativo (RR) ou Razão de Chances (Odds Ratio). Para diferenças de médias (subtrações), o valor de referência para \"ausência de efeito\" é o zero. Como o zero não está contido no intervalo, a conclusão é o oposto da alternativa: houve, sim, diferença estatisticamente significativa.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:05.262Z"
+  },
+  {
+    "id": "AJUDA_f012d307-6d24-4d7b-beb5-30faf7ffef26",
+    "originalId": "f012d307-6d24-4d7b-beb5-30faf7ffef26",
+    "statement": "Nas gestações gemelares podemos afirmar que são dizigóticas se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Houver a presença de duas placentas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Houver duas cavidades amnióticas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Houver duas vesículas vitelínicas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O sexo fetal for discordante",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para determinar a zigosidade em uma gestação gemelar, devemos diferenciar as características que indicam o tipo de placentação (corionicidade e amnionicidade) daquelas que indicam a origem genética dos fetos.\n\nAlternativa a: Incorreta. A presença de duas placentas caracteriza uma gestação dicoriônica. Embora todas as gestações dizigóticas (dois óvulos) sejam dicoriônicas, cerca de 25% a 30% das gestações monozigóticas (um óvulo que se divide precocemente, nos primeiros 3 dias) também apresentam duas placentas e dois córios. Portanto, ter duas placentas confirma a dicorionicidade, mas não garante a dizigosidade.\n\nAlternativa b: Incorreta. Duas cavidades amnióticas ocorrem em todas as gestações dizigóticas e também na grande maioria das monozigóticas (tanto nas dicoriônicas quanto nas monocoriônicas diamnióticas). Este achado é comum a quase todos os tipos de gemelaridade, não servindo para diferenciar a origem genética.\n\nAlternativa c: Incorreta. O número de vesículas vitelínicas geralmente acompanha o número de sacos amnióticos. Assim como ocorre com as cavidades amnióticas, encontrar duas vesículas vitelínicas é o padrão tanto para gêmeos dizigóticos quanto para a maioria dos monozigóticos, não sendo um critério de diagnóstico para dizigosidade.\n\nAlternativa d: Correta. Gêmeos dizigóticos (fraternos) são formados pela fertilização de dois óvulos distintos por dois espermatozoides diferentes. Eles possuem materiais genéticos independentes, como irmãos de gestações diferentes, o que permite que tenham sexos diferentes. Por outro lado, gêmeos monozigóticos derivam da divisão de um único zigoto e, portanto, compartilham o mesmo patrimônio genético e o mesmo sexo biológico. Dessa forma, a discordância de sexo entre os fetos é uma prova definitiva de que a gestação é dizigótica.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Gestação Múltipla"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:05.262Z"
+  },
+  {
+    "id": "AJUDA_f0187a71-f9fc-48c8-ae93-5f2f584e3e77",
+    "originalId": "f0187a71-f9fc-48c8-ae93-5f2f584e3e77",
+    "statement": "A respeito da composição do leite materno, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "o leite maduro só é secretado a partir do 21º dia após o parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o colostro contém mais lipídios que proteínas em sua composição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a IgM secretória é a principal imunoglobulina presente no leite humano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a concentração de gordura no leite humano costuma diminuir no decorrer de uma mamada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a principal proteína do leite materno é a lactoalbumina; e o principal carboidrato, a lactose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa a: Incorreta. O leite humano passa por três fases principais de maturação cronológica: o colostro (do 1º ao 5º dia pós-parto), o leite de transição (do 6º ao 14º dia) e o leite maduro. Portanto, considera-se que o leite já é maduro a partir do 15º dia após o parto, e não apenas no 21º dia.\n\nAlternativa b: Incorreta. O colostro possui uma composição específica para os primeiros dias de vida, sendo mais rico em proteínas (especialmente imunoglobulinas) e minerais. Em comparação ao leite maduro, o colostro contém menos lipídios (gorduras) e menos lactose (carboidrato).\n\nAlternativa c: Incorreta. A principal imunoglobulina presente no leite materno é a IgA secretória (sIgA). Ela é fundamental para a proteção imunológica do recém-nascido, pois resiste à digestão gástrica e atua diretamente nas mucosas do bebê, impedindo a adesão de patógenos.\n\nAlternativa d: Incorreta. A concentração de gordura no leite humano aumenta progressivamente durante a mamada. O leite inicial (anterior) é mais rico em água para hidratar o bebê, enquanto o leite final (posterior) é significativamente mais rico em gordura, sendo responsável pela sensação de saciedade e pelo ganho de peso.\n\nAlternativa e: Correta. Diferentemente do leite de vaca (onde predomina a caseína), o leite humano tem um maior percentual de proteínas do soro, sendo a alfa-lactoalbumina a principal delas. Em relação aos carboidratos, a lactose é o principal açúcar encontrado, exercendo papel importante na nutrição e na absorção de cálcio.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:05.262Z"
+  },
+  {
+    "id": "AJUDA_f01c7941-07c6-46c4-a0e0-4268030f8468",
+    "originalId": "f01c7941-07c6-46c4-a0e0-4268030f8468",
+    "statement": "Homem de 45 anos, trabalhador da construção civil, comparece à UBS com queixa de lesão na região dorsal há 3 meses. Refere que a lesão “não cicatriza” e, ocasionalmente, sangra ao se coçar. Ao exame físico, observa-se lesão pigmentada, assimétrica, com bordas irregulares e diâmetro de 1,2 cm, localizada em região de exposição solar frequente. O paciente nega dor ou prurido intenso. Nega comorbidades e nega uso de medicamentos. Diante desse quadro, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever corticosteroide tópico de média potência e orientar retorno em 30 dias para reavaliação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar biópsia excisional com margem de segurança de 1 cm e encaminhar para avaliação com dermatologista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar crioterapia com nitrogênio líquido em três sessões semanais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspeitar de melanoma e realizar biópsia excisional da lesão, com margens estreitas para diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Aplicar imiquimode tópico 5% em dias alternados por 6 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Resumo do caso: homem de 45 anos, trabalhador da construção civil (exposição solar crônica), com lesão pigmentada no dorso há 3 meses que não cicatriza e sangra. A lesão é assimétrica, com bordas irregulares e 1,2 cm de diâmetro (acima de 6 mm). Isso preenche vários critérios do ABCDE (Assimetria, Bordas irregulares, Diâmetro maior que 6 mm, Evolução/mudança), além do sangramento espontâneo. A principal hipótese é melanoma cutâneo, e o diagnóstico depende de histopatologia.\n\nConceito-chave: diante de lesão pigmentada suspeita de melanoma, a conduta é biópsia excisional com margens estreitas (cerca de 1 a 3 mm, até 2 mm de pele sã), com inclusão de todo o tecido e do tecido subcutâneo. O objetivo é diagnosticar e medir o Breslow, o principal fator prognóstico. A ampliação de margens (0,5 a 2 cm, conforme o Breslow) é feita só depois, em um segundo tempo cirúrgico, com a lesão já confirmada. Uma margem ampla antes do diagnóstico pode atrapalhar o mapeamento linfático (biópsia do linfonodo sentinela) e causar cirurgia desnecessária se a lesão for benigna. Biópsia incisional ou por shaving deve ser evitada, pois pode comprometer a medida do Breslow. Ela só é aceitável em lesões muito extensas ou em áreas especiais, como face e região acral.\n\nAnálise das alternativas:\n\na) Incorreta. Corticoide tópico trata dermatoses inflamatórias, não lesões pigmentadas suspeitas. Aguardar 30 dias atrasa o diagnóstico de uma neoplasia potencialmente letal.\n\nb) Incorreta. Biópsia excisional com margem de 1 cm antes do diagnóstico é excessiva. Compromete o mapeamento linfático e pode ser desnecessária se a lesão for benigna. A margem ampla é terapêutica e definida pelo Breslow após a confirmação. Encaminhar ao dermatologista é razoável, mas a margem descrita está errada.\n\nc) Incorreta. Crioterapia destrói a lesão sem material para histopatologia. Serve para lesões benignas ou pré-malignas, como queratose actínica, e é contraindicada em suspeita de melanoma.\n\nd) Correta. Reconhece a suspeita clínica de melanoma e indica biópsia excisional com margens estreitas para diagnóstico e estadiamento (Breslow). É a conduta padrão.\n\ne) Incorreta. Imiquimode é usado em queratose actínica, carcinoma basocelular superficial e lentigo maligno selecionado, quando a cirurgia não é possível. Não é indicado como conduta inicial em lesão suspeita sem diagnóstico, pois trata sem confirmação histológica.\n\nPonto de prova: lesão pigmentada com ABCDE positivo exige biópsia excisional com margens de 1 a 3 mm. A ampliação de margens vem depois, conforme o Breslow.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:05.262Z"
+  },
+  {
+    "id": "AJUDA_f0248a4c-23a5-4be9-be6a-e8664529882c",
+    "originalId": "f0248a4c-23a5-4be9-be6a-e8664529882c",
+    "statement": "Homem de 50 anos dá entrada na emergência com dor abdominal súbita e intensa em andar superior do abdome há 40 minutos, acompanhada de sudorese. Nega febre, alterações do hábito intestinal, vômitos ou sangramentos. Tomografia abdominal demonstrada a seguir. O diagnóstico provável do paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "apendicite subaguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pancreatite necrosante",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "perfuração de úlcera péptica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "isquemia intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito apresenta um paciente de 50 anos com dor abdominal de início súbito e muito intensa no andar superior do abdome. Esse perfil de dor em facada ou súbita é altamente sugestivo de abdome agudo perfurativo.\n\nA análise da tomografia computadorizada de abdome revela a presença de uma grande quantidade de gás livre na cavidade peritoneal, localizado anteriormente ao fígado e ao estômago (logo abaixo da parede abdominal anterior). Este achado é o pneumoperitônio, que é o sinal radiológico clássico de perfuração de víscera oca.\n\nAnálise das alternativas:\n\na) Incorreta. A apendicite subaguda manifesta-se geralmente com dor de evolução mais lenta, iniciando-se na região periumbilical e migrando para a fossa ilíaca direita. Além disso, raramente causa pneumoperitônio volumoso como o visualizado na imagem, e a localização da dor no andar superior do abdome não é a habitual.\n\nb) Incorreta. A pancreatite necrosante causa dor intensa em faixa no andar superior do abdome, frequentemente associada a vômitos persistentes. No entanto, o achado radiológico típico seria o edema pancreático, coleções peripancreáticas e áreas de não realce do parênquima (necrose), e não a presença de ar livre (pneumoperitônio).\n\nc) Correta. A perfuração de úlcera péptica (gástrica ou duodenal) é a causa mais comum de pneumoperitônio volumoso em pacientes com dor súbita no andar superior do abdome. O ar escapa da luz do estômago ou duodeno para a cavidade peritoneal, acumulando-se nas regiões mais altas do abdome, o que é nitidamente demonstrado na tomografia apresentada.\n\nd) Incorreta. A isquemia intestinal aguda costuma apresentar uma dor abdominal desproporcional ao exame físico. Embora possa evoluir para perfuração e pneumoperitônio em estágios tardios de necrose transmural, a história de dor súbita no andar superior e a imagem clássica de pneumoperitônio direcionam o diagnóstico prioritariamente para a úlcera perfurada.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Perfurativo",
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/a976563c0e5cff62cfef5a8ac90d8d7f1a285f1a3cded4c12f00412a749622a7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_f0248a4c-23a5-4be9-be6a-e8664529882c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:05.689Z"
+  },
+  {
+    "id": "AJUDA_f029565d-8e4a-4a10-8ca2-f4fb31200bcf",
+    "originalId": "f029565d-8e4a-4a10-8ca2-f4fb31200bcf",
+    "statement": "Homem de 28 anos é levado pelo SAMU para um hospital de trauma, após ferimento por arma de fogo no hemitórax direito. Apresenta dispneia, dor torácica, pulsos filiformes, FC 128 bpm, FR 32 irpm, PA 90 x 55 mmHg e SpO2 89% em ar ambiente. Há assimetria da expansão torácica, macicez à percussão e redução do murmúrio vesicular à direita. A radiografia de tórax evidencia velamento à direita.\nDiante do quadro, qual é a conduta adequada para o paciente nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Drenagem torácica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Toracotomia na sala de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Punção torácica de alívio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Videotoracoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico: hemotórax à direita após ferimento por arma de fogo, com instabilidade hemodinâmica (choque hemorrágico classe III: FC 128, PA 90 x 55, pulsos filiformes, taquipneia). O exame confirma o diagnóstico: macicez à percussão, redução do murmúrio vesicular e velamento do hemitórax na radiografia. O pneumotórax hipertensivo daria hipertimpanismo, e não macicez. O hemotórax maciço é definido por mais de 1.500 mL de sangue drenados de imediato ou por débito superior a 200 mL/h por 2 a 4 horas.\n\nConduta: segundo o ATLS, a primeira medida diante do hemotórax é a drenagem torácica em selo d'água, feita no 4º ou 5º espaço intercostal, entre as linhas axilares anterior e média. Ela é ao mesmo tempo diagnóstica e terapêutica. Deve ser associada à reposição volêmica com hemoderivados, idealmente em protocolo de transfusão maciça, e ao uso de ácido tranexâmico. O volume drenado e o débito subsequente orientam a necessidade de toracotomia.\n\nAnálise das alternativas:\n\na) Drenagem torácica. CORRETA. É a conduta inicial no hemotórax, mesmo no suspeito de ser maciço. Evacua o sangue, reexpande o pulmão e melhora a ventilação. Também quantifica o sangramento, o que define se o paciente precisa de toracotomia (drenagem inicial acima de 1.500 mL, débito acima de 200 mL/h por 2 a 4 horas ou instabilidade persistente).\n\nb) Toracotomia na sala de emergência. INCORRETA. A toracotomia de reanimação é reservada ao paciente em parada cardiorrespiratória, ou na iminência dela, após trauma penetrante torácico, com sinais de vida presenciados. Este paciente está chocado, mas mantém pulso e pressão. Se houver indicação após a drenagem, a toracotomia será feita no centro cirúrgico, e não na sala de emergência.\n\nc) Punção torácica de alívio. INCORRETA. A punção de alívio é indicada no pneumotórax hipertensivo, que cursa com hipertimpanismo, desvio de traqueia e turgência jugular. Aqui há macicez e velamento, ou seja, líquido (sangue) no espaço pleural. A agulha não drena hemotórax. Além disso, a punção é uma medida temporária, sempre seguida de drenagem.\n\nd) Videotoracoscopia. INCORRETA. É contraindicada em paciente instável. Tem papel no paciente estável, por exemplo no hemotórax retido ou coagulado e na avaliação de lesão diafragmática.\n\nResposta: alternativa A.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:05.689Z"
+  }
+]

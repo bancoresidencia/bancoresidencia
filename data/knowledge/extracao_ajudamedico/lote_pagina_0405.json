@@ -1,0 +1,480 @@
+[
+  {
+    "id": "AJUDA_707644a9-0bc9-4a5d-9cfa-08043982f245",
+    "originalId": "707644a9-0bc9-4a5d-9cfa-08043982f245",
+    "statement": "Na imagem a seguir de uma TC do abdome, observa-se um dos setores do fígado evidenciado com um “X”. Pode-se afirmar que esse setor é denominado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "lateral esquerdo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "medial esquerdo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "lateral direito",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "medial direito",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para a correta interpretação da anatomia hepática em exames de imagem, utiliza-se a segmentação funcional baseada na distribuição vascular e biliar (Classificação de Couinaud). O fígado é dividido em dois hemifígados (direito e esquerdo) pela veia hepática média, que segue uma linha imaginária entre a vesícula biliar e a veia cava inferior (linha de Cantlie).\n\nO hemifígado esquerdo é subdividido pela veia hepática esquerda e pelo ligamento falciforme em dois setores: o lateral e o medial. Na imagem da tomografia computadorizada apresentada, o marcador X está localizado no segmento IV de Couinaud. Este segmento situa-se entre o ligamento falciforme (visível como uma fissura na parte superior do lobo esquerdo) e o plano da veia hepática média. De acordo com a nomenclatura de setores, o segmento IV constitui o setor medial esquerdo.\n\nAnálise das alternativas:\n\na) Incorreta. O setor lateral esquerdo é formado pelos segmentos II (superior) e III (inferior). Na imagem, esses segmentos estariam localizados na extremidade mais à esquerda do fígado, para fora da fissura do ligamento falciforme.\n\nb) Correta. O setor medial esquerdo corresponde ao segmento IV. Ele ocupa a porção central do fígado, pertencendo funcionalmente ao lado esquerdo. O marcador X está posicionado exatamente sobre esta área, entre a região lateral esquerda e o lobo direito.\n\nc) Incorreta. O setor lateral direito (também chamado de setor posterior direito) engloba os segmentos VI e VII. Estes estão localizados na porção mais lateral e posterior do hemifígado direito, longe da região marcada com o X.\n\nd) Incorreta. O setor medial direito (também chamado de setor anterior direito) engloba os segmentos V e VIII. Eles estão situados no hemifígado direito, à direita da veia hepática média, enquanto o marcador X está no hemifígado esquerdo.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/5e752067164aa3bb15bbd61c9c923715ef9c9c69270f8d8530f12cbb3383a3f4.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_707644a9-0bc9-4a5d-9cfa-08043982f245_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:44.274Z"
+  },
+  {
+    "id": "AJUDA_707f19e9-4503-4532-aa78-ba20e4ccf92d",
+    "originalId": "707f19e9-4503-4532-aa78-ba20e4ccf92d",
+    "statement": "Questão 31\nNo contexto da Insuficiência Renal Crônica (IRC), como o hiperparatireoidismo secundário se desenvolve e quais são as consequências ósseas associadas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da absorção de cálcio e desenvolvimento de osteopetrose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acúmulo de fosfato e deficiência de vitamina D, levando a osteíte fibrosa cística.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Excesso de cálcio no sangue, resultando em calcificação vascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Produção aumentada de eritropoetina, promovendo anemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O desenvolvimento do hiperparatireoidismo secundário na insuficiência renal crônica (IRC) é um processo multifatorial que envolve principalmente o metabolismo do fósforo, do cálcio e da vitamina D.\n\nFisiopatologia: À medida que a função renal declina, ocorre uma diminuição na excreção renal de fosfato, levando ao seu acúmulo no sangue (hiperfosfatemia). Paralelamente, o rim doente perde a capacidade de converter a vitamina D em sua forma ativa (calcitriol). A falta de calcitriol reduz a absorção intestinal de cálcio e remove o freio inibitório sobre as glândulas paratireoides. A combinação de fósforo alto, cálcio baixo e falta de vitamina D estimula a secreção excessiva do paratormônio (PTH).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Na IRC, ocorre a diminuição da absorção de cálcio (devido à falta de vitamina D ativa) e não o aumento. A osteopetrose é uma doença genética caracterizada pelo aumento da densidade óssea por falha na reabsorção osteoclástica, o que é o oposto do que ocorre no hiperparatireoidismo.\n\nAlternativa b) Correta. Esta alternativa descreve perfeitamente o gatilho (acúmulo de fosfato e deficiência de vitamina D) e a principal manifestação óssea do alto turnover provocado pelo PTH elevado: a osteíte fibrosa cística. Nessa condição, o PTH estimula excessivamente os osteoclastos, resultando em reabsorção óssea, fibrose medular e formação de cistos (tumores marrons).\n\nAlternativa c) Incorreta. O hiperparatireoidismo secundário surge inicialmente em resposta à hipocalcemia (baixa de cálcio) ou à normocalcemia às custas de PTH alto. Embora a calcificação vascular seja uma complicação comum na IRC (devido ao produto cálcio-fósforo elevado e alterações fenotípicas das células musculares lisas), a questão foca no desenvolvimento do distúrbio e nas consequências especificamente ósseas.\n\nAlternativa d) Incorreta. Na IRC, ocorre a redução da produção de eritropoetina pelas células intersticiais peritubulares renais, o que causa anemia normocítica e normocrômica. Essa via fisiopatológica é independente do eixo paratireoide-osso.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Metabolismo Ósseo e Mineral",
+      "Doença Renal Crônica (DRC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:44.274Z"
+  },
+  {
+    "id": "AJUDA_7085bcdb-71e2-40bb-8fd2-b85183096a82",
+    "originalId": "7085bcdb-71e2-40bb-8fd2-b85183096a82",
+    "statement": "Lactente, sexo masculino, com 3 meses, é trazido ao ambulatório de Pediatria. A mãe refere que, há um mês, a criança iniciou coriza mucossanguinolenta e irritabilida-de com choro fácil. Ao nascimento, o peso foi de 2100g, o perímetro cefálico foi de 34 cm e o comprimento de 48cm. Ao exame físico verifica-se dor à mobilização de braço esquerdo com choro intenso, coriza mucossangui-nolenta bilateral e erosões em lábio superior. A criança apresenta palidez cutâneo-mucosa +++/4+ e fígado a 3 cm do rebordo costal direito. Considerando a principal hipótese diagnóstica, quais são, respectivamente, o exame a ser solicitado e o resultado mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tomografia computadorizada de crânio; pólipos em seios da face.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tomografia computadorizada de crânio; calcifica-ções cranianas periventriculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Radiografia simples de crânio; suturas cranianas precocemente soldadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Radiografia de ossos longos; lesões osteolíticas e espessamentos periostais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Tomografia de abdome; microinfartos esplênicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DO CASO:\n\nO quadro clínico descrito é altamente sugestivo de sífilis congênita precoce. Os principais sinais apresentados que direcionam para esse diagnóstico são:\n\n1. Coriza mucossanguinolenta: Manifestação muito característica da sífilis neonatal, que ocorre devido à intensa inflamação da mucosa nasal causada pelo *Treponema pallidum*.\n2. Pseudoparalisia de Parrot: Caracterizada pela dor intensa à mobilização do membro (no caso, o braço esquerdo), fazendo com que a criança evite movimentar o local para não sentir dor. Isso é resultado de alterações inflamatórias ósseas (osteocondrite).\n3. Erosões em lábio superior: Representam as manifestações mucocutâneas da doença.\n4. Hepatoesplenomegalia e anemia (palidez): Indicam o comprometimento sistêmico e a resposta inflamatória generalizada típica das infecções congênitas.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. Pólipos em seios da face não são achados esperados em lactentes de 3 meses e não explicam a sintomatologia sistêmica, a anemia ou a dor osteoarticular apresentada pelo paciente.\n\nAlternativa b) Incorreta. Calcificações cranianas periventriculares são achados clássicos da infecção congênita pelo citomegalovírus (CMV). Na sífilis congênita, as alterações do sistema nervoso central costumam ser meningite ou vasculite, e não calcificações periventriculares.\n\nAlternativa c) Incorreta. A soldadura precoce das suturas cranianas (craniossinostose) é uma alteração anatômica do desenvolvimento do crânio que não guarda relação com coriza, anemia, hepatomegalia ou quadros de dor aguda à movimentação.\n\nAlternativa d) Correta. Na suspeita de sífilis congênita, a realização de radiografia de ossos longos é obrigatória segundo os protocolos do Ministério da Saúde e sociedades de pediatria. A dor à mobilização relatada no exame físico é explicada por alterações como a osteocondrite e a periostite (espessamento periostal). As lesões osteolíticas (como o sinal de Wimberger, que é a erosão da face medial da tíbia proximal) são achados radiográficos frequentes e corroboram o diagnóstico.\n\nAlternativa e) Incorreta. Embora a sífilis possa causar visceromegalias, a busca por microinfartos esplênicos via tomografia de abdome não faz parte da rotina diagnóstica dessa patologia. O foco da investigação de imagem na sífilis congênita recai sobre os ossos longos e, se houver alteração neurológica, no sistema nervoso central.\n\nCONCLUSÃO:\n\nA presença de rinite sifilítica (coriza mucossanguinolenta) associada à dor óssea intensa (Pseudoparalisia de Parrot) em um lactente jovem é um cenário clássico de prova para Sífilis Congênita. O exame fundamental para confirmar o acometimento ósseo é a radiografia de ossos longos, que demonstrará sinais de periostite e osteocondrite.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:44.274Z"
+  },
+  {
+    "id": "AJUDA_708d75d1-2162-43b4-acec-4e04e13dd522",
+    "originalId": "708d75d1-2162-43b4-acec-4e04e13dd522",
+    "statement": "Uma mulher de 63 anos, diabética há 15 anos e com DRC estágio 3b (TFGe estimada em 38 mL/min), procura a emergência por febre alta, calafrios e lombalgia direita há dois dias, acompanhada de disúria e polaciúria. Relata vômitos esporádicos e redução da ingesta hídrica. No exame físico, apresenta FC 102 bpm, PA 110/70 mmHg, Temperatura = 38,7 °C e dor à punho-percussão lombar direita, mas sem sinais de instabilidade hemodinâmica ou sepse. O EAS mostra leucocitúria intensa, bacteriúria evidente e nitrito positivo, enquanto o ultrassom demonstra pielonefrite aguda sem abscesso, sem hidronefrose e sem litíase associada. Há histórico documentado de E. coli resistente a quinolonas em infecção anterior. Diante deste cenário de ITU, qual é a conduta inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever nitrofurantoína VO, mesmo com suspeita de acometimento de trato urinário superior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar ceftriaxona EV como terapia empírica de primeira linha para pielonefrite complicada em paciente com resistência prévia a quinolona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administrar fosfomicina dose única, devido à sua boa ação contra enterobactérias em infecções altas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar para acompanhamento ambulatorial, visto que não há sinais de choque.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aguardar resultado da urocultura antes de iniciar antibiótico, dado o risco de resistência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão apresenta um caso clínico de pielonefrite aguda (infecção do trato urinário superior). O diagnóstico é fundamentado pela tríade de febre, dor lombar (com sinal de Giordano/punho-percussão positivo) e sintomas irritativos miccionais, além de alteração no EAS e imagem compatível.\n\nA paciente possui fatores que classificam a infecção como pielonefrite complicada: presença de diabetes mellitus, doença renal crônica (estágio 3b) e sintomas sistêmicos com vômitos, que podem dificultar a adesão ao tratamento por via oral. Além disso, há um dado crucial: histórico de infecção por E. coli resistente a quinolonas, o que contraindica o uso de ciprofloxacino ou levofloxacino como terapia empírica inicial.\n\nAnálise das alternativas:\n\na) Incorreta. A nitrofurantoína é um antisséptico urinário indicado exclusivamente para o tratamento de cistites (infecção do trato urinário inferior). Ela não atinge concentrações terapêuticas no parênquima renal ou na corrente sanguínea, sendo contraindicada para o tratamento de pielonefrite. Além disso, sua eficácia é reduzida em pacientes com taxa de filtração glomerular abaixo de 30-45 mL/min.\n\nb) Correta. A ceftriaxona é uma cefalosporina de terceira geração com excelente cobertura para os principais uropatógenos (como E. coli) e ótima penetração no parênquima renal. É a droga de escolha para tratamento empírico hospitalar em casos em que há resistência prévia ou contraindicação ao uso de quinolonas. A via endovenosa (EV) é apropriada aqui devido aos vômitos e às comorbidades da paciente, garantindo estabilização inicial.\n\nc) Incorreta. A fosfomicina trometamol, em dose única, é indicada apenas para cistite não complicada. Assim como a nitrofurantoína, não atinge níveis teciduais adequados nos rins para tratar uma pielonefrite.\n\nd) Incorreta. Embora a paciente não apresente instabilidade hemodinâmica imediata, ela possui critérios que sugerem a necessidade de observação hospitalar inicial: idade avançada, diabetes mellitus descompensado, doença renal crônica prévia e vômitos que impedem a hidratação e medicação por via oral. O manejo puramente ambulatorial inicial seria arriscado neste cenário.\n\ne) Incorreta. A pielonefrite é uma infecção potencialmente grave que pode evoluir para sepse e choque séptico. O tratamento antibiótico deve ser iniciado de forma empírica e imediata após a coleta de culturas. Aguardar o resultado da urocultura (que leva de 48 a 72 horas) atrasaria o tratamento e aumentaria o risco de desfechos desfavoráveis.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "ITU - Infecção do Trato Urinário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:44.274Z"
+  },
+  {
+    "id": "AJUDA_70a2d7af-9b6f-4c41-afed-f6bea543653d",
+    "originalId": "70a2d7af-9b6f-4c41-afed-f6bea543653d",
+    "statement": "Leia as informações do texto e o normograma de Fagan a seguir [Imagem de normograma de Fagan omitida]. Mulher, 24 anos de idade previamente higida, procura a UBS há 2 dias por disúria, polaciúria, dor no flanco, dor abdominal baixa e dor lombar. Está afebril, sem hematúria e com sinal de Giordano negativo. A paciente relata corrimento e prurido vaginal; ao exame físico urogenital, observa-se leucorreia. Ao incorporar esses últimos achados, associados à Likelihood Ratio positivo (LR+) abaixo de 1 para infecção do trato urinário (ITU), a probabilidade passou a ser da ordem de ≈ 14%. Considera-se para o exame de urina (fita reagente): LR+ 4,2 quando pelo menos um, entre esterase leucocitária ou nitrito, está positivo; e LR- 0,3 quando ambos, esterase leucocitária e nitrito, estão negativos. Diante da probabilidade atual ~ 14% para ITU e do desempenho do exame de urina (LR+ 4,2; LR- 0,3), qual conduta, com a justificativa bayesiana, é adequada para este momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar exame de urina, pois, em pré-teste baixo, um resultado negativo (LR-0,3) deixaria a probabilidade em torno de 10%, o que permitiria afastar ITU.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prosseguir com propedeutica ginecológica, pois a probabilidade pré-teste é baixa e, mesmo com exame de urina negativo (LR- 0,3), a probabilidade pós-teste seria de cerca de 1%, não eliminando totalmente o risco de ITU.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prosseguir com propedeutica ginecológica, pois, com probabilidade pré-teste de 14%, mesmo um exame de urina positivo (LR+ 4,2) elevaria a probabilidade para ≈ 40%, mantendo-a em faixa intermediária e sem confirmar ITU.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar exame de urina, pois, em pré-teste baixo, um resultado positivo (LR+ 4,2) modularia a probabilidade para a casa de 40%, o que permitiria tratar ITU.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a aplicação do raciocínio bayesiano na prática médica, utilizando o Nomograma de Fagan para interpretar a probabilidade de uma doença antes e depois de um exame diagnóstico.\n\nA paciente apresenta sintomas que poderiam sugerir infecção do trato urinário (ITU), mas a presença de corrimento vaginal e prurido (leucorreia no exame físico) muda o cenário. Estatisticamente, a presença de sintomas ginecológicos em mulheres com queixas urinárias reduz a probabilidade de ITU, pois aumenta a chance de uma vulvovaginite ou cervicite. O enunciado já fornece que, após considerar esses achados ginecológicos, a probabilidade pré-teste para ITU caiu para 14%.\n\nPara utilizar o Nomograma de Fagan, localizamos a probabilidade pré-teste (14%) na coluna da esquerda e traçamos uma linha reta que passa pelo valor da Razão de Verossimilhança (LR) na coluna central. O ponto onde essa linha cruza a coluna da direita indica a probabilidade pós-teste.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Ao traçar uma linha partindo de 14% na coluna da esquerda e passando pelo LR negativo de 0,3 na coluna central, o valor encontrado na probabilidade pós-teste (coluna da direita) é de aproximadamente 4% a 5%, e não de 10%. Além disso, o foco clínico deve ser investigar a causa mais provável (ginecológica).\n\nAlternativa b: Incorreta. Embora a conduta de prosseguir com a propedêutica ginecológica esteja correta, o cálculo bayesiano está errado. Um LR de 0,3 aplicado a uma probabilidade pré-teste de 14% resulta em cerca de 4% a 5% de probabilidade pós-teste, e não de 1%.\n\nAlternativa c: Correta. Esta alternativa aplica corretamente a lógica bayesiana e o julgamento clínico. Ao traçar uma linha partindo de 14% (pré-teste) e passando pelo LR positivo de 4,2 (coluna central), a probabilidade pós-teste atinge a marca de aproximadamente 40% na coluna da direita. Em medicina, uma probabilidade de 40% situa-se em uma zona de incerteza diagnóstica. Como a paciente tem leucorreia confirmada ao exame físico, a probabilidade de uma causa ginecológica é muito superior, tornando inadequado fechar o diagnóstico de ITU com apenas 40% de certeza. Portanto, o médico deve focar na investigação ginecológica.\n\nAlternativa d: Incorreta. Apesar de o cálculo da probabilidade pós-teste estar correto (cerca de 40%), a conclusão clínica está equivocada. No manejo de doenças comuns, um limiar de 40% de probabilidade não é considerado suficiente para confirmar um diagnóstico e iniciar tratamento (limiar terapêutico), especialmente quando há outra hipótese diagnóstica (vaginite) que explica melhor os achados físicos de leucorreia.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/2c892c80caa94ccd648402504c4a0ffc95d6b38793d114911672010b0dd79a11.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_70a2d7af-9b6f-4c41-afed-f6bea543653d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:44.672Z"
+  },
+  {
+    "id": "AJUDA_70a4316e-10ee-4b45-9de5-fc3e55855c62",
+    "originalId": "70a4316e-10ee-4b45-9de5-fc3e55855c62",
+    "statement": "Paciente masculino, de 38 anos, trabalhando há 10 anos na limpeza de comedouros e no abastecimento de ração para aves em um aviário, veio à consulta queixando-se de dor localizada na região lateral do cotovelo direito, que se intensificava ao realizar movimentos que exigiam esforço com o membro superior. Referiu piora progressiva da dor nos últimos 3 meses, acompanhada de fraqueza para segurar objetos e de dificuldade para realizar tarefas manuais. Negou parestesias. Ao exame físico, apresentava dor à palpação sobre o epicôndilo lateral do úmero e dor à extensão resistida do punho. O diagnóstico mais provável é",
+    "options": [
+      {
+        "id": "A",
+        "text": "tendinite de De Quervain.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "síndrome do túnel do carpo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "compressão do nervo cubital ao nível do cotovelo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "epicondilite.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico apresenta um quadro clássico de epicondilite lateral, também conhecida como \"cotovelo de tenista\", embora seja muito frequente em trabalhadores que realizam esforços repetitivos de preensão e extensão do punho, como o paciente em questão.\n\nAnálise das alternativas:\n\na) Incorreta. A tendinite (ou tenossinovite) de De Quervain afeta o primeiro compartimento extensor do punho (tendões do abdutor longo e extensor curto do polegar). A dor localiza-se na face radial do punho (estiloide radial) e não no cotovelo. O teste semiológico clássico é a manobra de Finkelstein.\n\nb) Incorreta. A síndrome do túnel do carpo decorre da compressão do nervo mediano no punho. Os sintomas predominantes são parestesias (formigamentos) e dor na face palmar dos três primeiros dedos e metade lateral do quarto dedo, com piora noturna. O paciente do caso negou expressamente parestesias e a dor é referida no cotovelo.\n\nc) Incorreta. A compressão do nervo cubital (ulnar) ao nível do cotovelo ocorre geralmente no túnel cubital, que se localiza na região medial (interna) do cotovelo. Os sintomas incluem dor medial e parestesias no quarto e quinto dedos da mão. O paciente apresenta dor na região lateral.\n\nd) Correta. A epicondilite lateral é uma síndrome de sobrecarga dos tendões que se inserem no epicôndilo lateral, especialmente o tendão do músculo extensor radial curto do carpo. O diagnóstico é essencialmente clínico, baseado na história de esforço repetitivo e nos achados do exame físico: dor pontual à palpação do epicôndilo lateral e dor desencadeada pela extensão resistida do punho (conhecida como teste de Cozen), exatamente como descrito no enunciado. A fraqueza para segurar objetos é um sintoma comum decorrente da inibição muscular pela dor.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Doenças do Ombro e Cotovelo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:44.672Z"
+  },
+  {
+    "id": "AJUDA_70a9b8da-833d-4776-872e-0234b670c35d",
+    "originalId": "70a9b8da-833d-4776-872e-0234b670c35d",
+    "statement": "Criança de 2 anos de idade, sexo masculino, é levada a uma consulta pediátrica por apresentar palidez cutâneo mucosa. No exame físico, criança com bom estado geral, hipocorado ++/4, frequência cardíaca 92 bpm, sopro sistólico II/VI BEE, frequência respiratória 29 irpm, ausência de visceromegalia palpável. Hemograma realizado mostrou: hemoglobina 7g/dl; volume corpuscular médio (VCM) de 60 fL; global de leucócitos de 5400 mm3, 45% de neutrófilos, 45% de linfócitos, 5% de eosinófilos e 5% de monócitos; plaquetas de 400.000mm3; reticulócitos de 1%.\nDiante desse caso, marque qual a MELHOR conduta dentre as alternativas a seguir.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar reposição de ferro a nível ambulatorial via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Iniciar reposição de ferro a nível hospitalar via parenteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internação hospitalar e indicar transfusão de concentrado de hemácias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internação hospitalar e indicar reposição eritropoietina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nEstamos diante de uma criança de 2 anos com quadro de anemia microcítica (VCM de 60 fL) e hipoproliferativa (reticulócitos de 1%). O diagnóstico mais provável para essa faixa etária, associado a esses achados laboratoriais, é a anemia ferropriva (por deficiência de ferro).\n\nApesar de o nível de hemoglobina estar significativamente baixo (7 g/dL), o ponto crucial para a decisão terapêutica é o estado clínico do paciente. A criança apresenta-se em \"bom estado geral\", com sinais vitais estáveis (frequência cardíaca e respiratória normais para a idade) e ausência de sinais de descompensação hemodinâmica ou insuficiência cardíaca. O sopro sistólico relatado é um \"sopro de fluxo\", comum em anemias, devido à menor viscosidade sanguínea e ao estado hiperdinâmico, não indicando necessariamente gravidade imediata.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\nO tratamento de escolha para a anemia ferropriva em pacientes clinicamente estáveis é a reposição de ferro elementar por via oral, em doses terapêuticas (geralmente 3 a 6 mg/kg/dia). Como não há sinais de instabilidade ou má absorção intestinal documentada, o manejo deve ser ambulatorial.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\nb) A reposição parenteral (intravenosa ou intramuscular) de ferro é reservada para casos específicos, como intolerância grave ao ferro oral, doenças de má absorção (como doença celíaca ativa) ou necessidade de reposição ultrarrápida (ex.: pré-operatório imediato), o que não é o caso desta criança. Além disso, não requer internação apenas para esse fim.\n\nc) A transfusão de concentrado de hemácias em pediatria deve ser criteriosamente indicada. Em anemias crônicas como a ferropriva, o organismo desenvolve mecanismos de compensação. A transfusão é reservada para casos de instabilidade hemodinâmica, hemoglobina geralmente abaixo de 5 g/dL com sinais de insuficiência cardíaca, ou quando há perda sanguínea aguda e volumosa. Internar e transfundir um paciente estável de 7 g/dL seria expô-lo a riscos transfusionais desnecessários.\n\nd) A eritropoietina é utilizada em situações específicas, como na anemia da doença renal crônica ou na anemia da prematuridade. Ela não tem indicação no tratamento da anemia ferropriva, onde o substrato faltante é o ferro, e não o estímulo hormonal da medula óssea.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:44.672Z"
+  },
+  {
+    "id": "AJUDA_70b08c47-9436-4426-988a-9a5ba01812da",
+    "originalId": "70b08c47-9436-4426-988a-9a5ba01812da",
+    "statement": "Chega para consulta, no ambulatório de pediatria de um hospital-escola, uma mãe trazendo seu filho de 7 anos, por orientação de pediatra que o acompanha há meses, para investigação de possível síndrome congênita. A criança é obesa, tem baixa estatura, hipogonadismo, atraso no desenvolvimento psicomotor, olhos amendoados e boca triangular. Mãe relata história de hipotonia importante ao nascimento. \nA síndrome mais provável de estar presente no caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Williams.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Edwards.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prader-Willi.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ehrlers-Danlos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO quadro clínico descrito é clássico da Síndrome de Prader-Willi (SPW). Para identificar essa patologia em provas, o aluno deve focar no binômio: hipotonia neonatal importante (fase inicial) seguida de hiperfagia e obesidade central (fase tardia, geralmente após os 2 anos).\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A Síndrome de Williams caracteriza-se pela \"fácies de gnomo ou elfo\" (fronte larga, íris estrelada, bochechas proeminentes e lábios grossos), personalidade extremamente sociável (conhecida como \"cocktail party personality\"), estenose aórtica supravalvular e hipercalcemia idiopática na infância. Não costuma cursar com a obesidade e o hipogonadismo marcantes vistos no caso.\n\nAlternativa b) Incorreta. A Síndrome de Edwards (Trissomia do 18) apresenta malformações graves e alta mortalidade neonatal. Os achados típicos incluem micrognatia, orelhas de implantação baixa, mãos cerradas com sobreposição de dedos (segundo sobre o terceiro) e pés em \"mata-borrão\". É improvável que uma criança com Edwards chegue aos 7 anos para investigação inicial de síndrome congênita em ambulatório.\n\nAlternativa c) Correta. A Síndrome de Prader-Willi é causada pela ausência de expressão de genes no braço longo do cromossomo 15 de origem paterna (deleção em 70% dos casos ou dissomia uniparental materna). Os critérios clínicos presentes na questão são patognomônicos:\n1. História de hipotonia neonatal (o \"bebê hipotônico\" que tem dificuldade de sucção).\n2. Obesidade de início precoce e hiperfagia.\n3. Baixa estatura (deficiência de GH é comum).\n4. Hipogonadismo (criptorquidia, hipoplasia escrotal ou atraso puberal).\n5. Atraso no desenvolvimento psicomotor e cognitivo.\n6. Dismorfismos faciais: olhos amendoados, diâmetro bifrontal estreito e boca com lábio superior fino e cantos voltados para baixo (boca triangular).\n\nAlternativa d) Incorreta. A Síndrome de Ehlers-Danlos é um grupo heterogêneo de distúrbios do tecido conjuntivo. As principais manifestações são a hiperextensibilidade cutânea, a hipermobilidade articular e a fragilidade tecidual (má cicatrização e propensão a hematomas). Não há associação direta com obesidade, hipogonadismo ou o padrão de atraso neuropsicomotor descrito.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:44.672Z"
+  },
+  {
+    "id": "AJUDA_70b22742-a57f-4a97-8399-8c9af11c6ef6",
+    "originalId": "70b22742-a57f-4a97-8399-8c9af11c6ef6",
+    "statement": "Criança, sexo masculino, 4 anos de idade, foi admitido no pronto-socorro devido a quadro de diarreia e vômitos há 3 dias, em grande quantidade. Na admissão, apresentava sinais de instabilidade hemodinâmica, sendo iniciada expansão volêmica. O resultado da gasometria venosa coletada na admissão foi o seguinte:\n\npH: 7,29\nHCO3-: 15 mmol/L\nNa+: 128 mEq/L\nK+: 3,9 mEq/L\nCa2+: 4,92 mg/dL\n\nFrente aos dados clínicos e laboratoriais apresentados, qual é o traçado eletrocardiográfico esperado?",
+    "options": [],
+    "officialAnswer": "D",
+    "medicalExplanation": "ATENÇÃO: QUESTÃO ANULADA PELA BANCA EXAMINADORA POR INCONSISTÊNCIA TÉCNICA E ERRO DE GABARITO.\n\nAnálise do caso\n\nTrata-se de uma criança de 4 anos com gastroenterite aguda (diarreia e vômitos volumosos há 3 dias) e instabilidade hemodinâmica, ou seja, desidratação grave com choque hipovolêmico. A gasometria mostra:\n\n- pH 7,29 e HCO3- 15 mmol/L: acidose metabólica, esperada pela perda intestinal de bicarbonato e pela hipoperfusão (acidose lática).\n- Na+ 128 mEq/L: hiponatremia (desidratação hiponatrêmica), comum em diarreias com reposição hipotônica.\n- K+ 3,9 mEq/L: potássio normal. Isso é o ponto central: não há hipocalemia nem hipercalemia, portanto não se esperam alterações eletrocardiográficas relacionadas ao potássio.\n- Ca2+ 4,92 mg/dL: em gasometria, o cálcio informado é o cálcio ionizado, cujo valor de referência é aproximadamente 4,5 a 5,3 mg/dL (1,12 a 1,32 mmol/L). Ou seja, o cálcio está normal. O erro conceitual da banca parece ter sido interpretar esse valor como cálcio total (referência 8,5 a 10,5 mg/dL), o que caracterizaria hipocalcemia grave e justificaria a busca por um traçado com QT prolongado.\n\nCom potássio e cálcio ionizado normais, o único achado eletrocardiográfico plausível para o quadro é a taquicardia sinusal, resposta compensatória ao choque hipovolêmico. A acidose metabólica isolada e a hiponatremia não produzem padrão eletrocardiográfico característico. Por isso a questão é tecnicamente inconsistente: o enunciado não permite chegar de forma inequívoca a um traçado que represente distúrbio eletrolítico.\n\nAnálise das alternativas (imagens)\n\nAlternativa A: ritmo sinusal normal, com onda P, complexo QRS estreito, onda T de morfologia habitual e frequência normal. Não é o esperado em uma criança em choque hipovolêmico, que deveria estar taquicárdica. Incorreta.\n\nAlternativa B: onda P pequena ou quase ausente, QRS alargado com componente negativo profundo e onda T alta e larga, quase se fundindo com o QRS. É o padrão de hipercalemia avançada (tendência a onda sinusoidal). O potássio do paciente é normal, então esse traçado não é compatível. Incorreta.\n\nAlternativa C: ondas T altas, apiculadas e simétricas (\"em tenda\"), com aspecto sinusoidal e achatamento de P. Padrão clássico de hipercalemia. Novamente incompatível com K+ de 3,9 mEq/L. Incorreta.\n\nAlternativa D: traçado com frequência elevada, QRS estreito, ondas T achatadas e ondulações que sugerem ondas U ou intervalo QT longo. Pode ser interpretado como taquicardia sinusal (compatível com hipovolemia) ou como padrão de hipocalemia/hipocalcemia. A banca indicou essa como resposta, provavelmente pensando em hipocalcemia (QT prolongado) a partir da leitura errada do cálcio ionizado como cálcio total. Porém, com o cálcio ionizado normal, a única justificativa válida seria a taquicardia sinusal do choque, o que torna a interpretação ambígua.\n\nConclusão\n\nO raciocínio esperado pelo estudante seria: identificar acidose metabólica hiponatrêmica com potássio e cálcio ionizado normais e reconhecer que o ECG deveria mostrar apenas taquicardia sinusal, sem sinais de hipercalemia (alternativas B e C) nem ritmo normal em frequência de repouso (alternativa A). Como o valor de cálcio foi apresentado de forma que gerou dúvida entre cálcio ionizado normal e hipocalcemia grave, e as imagens não permitem uma resposta única, a banca reconheceu a inconsistência e anulou a questão.\n\nPontos de aprendizado: na gasometria, o cálcio é ionizado (referência 4,5 a 5,3 mg/dL ou 1,1 a 1,3 mmol/L); hipocalcemia prolonga o QT; hipercalemia produz T apiculada, alargamento de QRS e padrão sinusoidal; hipocalemia causa achatamento de T, onda U proeminente e depressão de ST; choque hipovolêmico produz taquicardia sinusal.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral",
+      "Diarreia",
+      "Distúrbios do Sódio",
+      "Eletrocardiograma",
+      "Emergências Pediátricas",
+      "Distúrbios Ácido-Básicos",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:44.672Z"
+  },
+  {
+    "id": "AJUDA_70b9ed67-b197-489e-9141-d2211d9b4b79",
+    "originalId": "70b9ed67-b197-489e-9141-d2211d9b4b79",
+    "statement": "Em 2025, o Programa Nacional de Immunizações (PNI) definiu como novas recomendações:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a vacina meningocócica ACWY passa a ser oferecida desde os 3 meses de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a vacina VOP (contra poliomielite) deve ser oferecida aos 6 meses de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a vacina meningocócica ACWY passa a ser oferecida pelo como dose de reforço aos 12 meses de idade, substituindo a dose de reforço com a meningocócica C.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a vacina rotavírus passa a ser oferecida com três doses orais, a serem administradas aos 2, 4 e 6 meses de idade, sendo a primeira dose aplicada entre 2 meses e 11 meses e 29 dias, e a última dose aos 4 meses, com possibilidade de ser administrada até 23 meses e 29 dias. É necessário um intervalo mínimo de 30 dias entre as duas doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda as atualizações importantes do Programa Nacional de Imunizações (PNI) previstas para o ano de 2025, com foco na ampliação da proteção contra a doença meningocócica e na transição de esquemas vacinais.\n\nAlternativa a) Incorreta. A recomendação para o início do esquema primário aos 3 e 5 meses de idade permanece, prioritariamente, com a vacina meningocócica C no calendário básico do PNI. A ampliação para a vacina ACWY, neste momento da atualização, foca na dose de reforço.\n\nAlternativa b) Incorreta. Uma das mudanças mais significativas do PNI em 2024/2025 é a substituição definitiva da vacina oral contra poliomielite (VOP - a vacina da gotinha) pela vacina inativada contra poliomielite (VIP - injetável). Portanto, aos 6 meses, a criança deve receber a vacina VIP, e não a VOP.\n\nAlternativa c) Correta. Esta é a principal novidade para 2025 no que diz respeito à proteção contra meningites. O Ministério da Saúde decidiu ampliar a oferta da vacina meningocócica conjugada ACWY, que antes era restrita aos adolescentes. Agora, a dose de reforço que era aplicada aos 12 meses de idade exclusivamente com a vacina meningocócica C passa a ser feita com a vacina ACWY, garantindo proteção contra quatro sorogrupos da bactéria (A, C, W e Y) já no final do primeiro ano de vida.\n\nAlternativa d) Incorreta. A vacina contra o rotavírus oferecida pelo PNI permanece sendo a monovalente (VORH), administrada em um esquema de duas doses (aos 2 e 4 meses de idade). Além disso, os prazos citados na alternativa estão em desacordo com as normas técnicas vigentes, que estabelecem limites rígidos para a primeira dose (até 3 meses e 15 dias) e para a segunda dose (até 7 meses e 29 dias), visando a segurança do lactente em relação ao risco de intussuscepção intestinal.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:44.672Z"
+  }
+]

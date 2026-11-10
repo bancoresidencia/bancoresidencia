@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_e3152a54-1fa7-4d51-93bf-c30148748632",
+    "originalId": "e3152a54-1fa7-4d51-93bf-c30148748632",
+    "statement": "Em um estudo transversal realizado em uma Unidade de Pronto Atendimento, os pesquisadores avaliaram a acurácia do sintoma \"mialgia\" como preditor clínico para o diagnóstico de dengue. Para isso, 500 pacientes com quadro febril agudo de até 72 horas foram submetidos simultaneamente à pesquisa do antígeno NS1 por teste imunocromatográfico, considerado o padrão-ouro para a determinação do diagnóstico final. \nOs resultados obtidos foram os seguintes:\n• 150 pacientes tiveram o diagnóstico de dengue confirmado pelo NS1.\n• Dentre os 150 pacientes com dengue, 100 referiram mialgia à admissão.\n• Dos 350 pacientes sem dengue, 150 também referiram mialgia.\nCom base nesses dados, suponha que o médico assistente, durante o acolhimento, decidisse classificar o paciente como não portador de dengue com base exclusivamente na ausência de mialgia.\nEm qual porcentagem dos pacientes avaliados nessa condição, essa classificação estaria CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "40%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "57,1%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "66,7%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "80%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para responder a esta questão, devemos construir a tabela de contingência 2x2 com os dados fornecidos:\n\n- Total de pacientes: 500\n- Pacientes com dengue (NS1 positivo): 150\n- Pacientes sem dengue (NS1 negativo): 350 (500 - 150)\n- Com dengue e com mialgia (Verdadeiro-Positivo): 100\n- Com dengue e sem mialgia (Falso-Negativo): 50 (150 - 100)\n- Sem dengue e com mialgia (Falso-Positivo): 150\n- Sem dengue e sem mialgia (Verdadeiro-Negativo): 200 (350 - 150)\n\nTotal de pacientes sem mialgia (teste negativo): 50 + 200 = 250 pacientes.\n\nO comando da questão pergunta a taxa de acerto do médico ao classificar como \"não portador de dengue\" os pacientes avaliados na condição de \"ausência de mialgia\". Trata-se da definição clássica de Valor Preditivo Negativo (VPN): a probabilidade de o indivíduo não ter a doença dado que o teste ou sintoma clínico foi negativo.\n\nCalculando o VPN:\nVPN = Verdadeiro-Negativos / Total de pacientes sem o sintoma\nVPN = 200 / 250 = 0,80 ou 80%\n\nAnálise das alternativas:\n\na) Incorreta. O valor de 40% não corresponde a nenhum dos parâmetros epidemiológicos calculados para este cenário clínico.\n\nb) Incorreta. O valor de 57,1% (200 / 350) corresponde à Especificidade do sintoma (proporção de indivíduos sem a doença que não apresentam mialgia). A questão não perguntou a especificidade, mas sim o acerto no grupo dos pacientes que não apresentavam mialgia no acolhimento (VPN).\n\nc) Incorreta. O valor de 66,7% (100 / 150) corresponde à Sensibilidade da mialgia para o diagnóstico de dengue (proporção de doentes que apresentam o sintoma).\n\nd) Correta. Entre os 250 pacientes que não apresentavam mialgia, 200 realmente não tinham dengue. Logo, a taxa de acerto dessa conduta médica é de 200 em 250, o que equivale a 80% (Valor Preditivo Negativo).\n\ne) Incorreta. A alternativa D apresenta o resultado matematicamente correto.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Arboviroses",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:28.232Z"
+  },
+  {
+    "id": "AJUDA_e31f544d-a948-4496-8404-bfa4e4f6513d",
+    "originalId": "e31f544d-a948-4496-8404-bfa4e4f6513d",
+    "statement": "Paciente de 30 anos, PVHIV diagnosticado concomitante com tuberculose pulmonar. Após 4 semanas de tratamento para TB e início da TARV, evolui com febre, linfonodomegalias e piora radiológica. O quadro é sugestivo de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Falha terapêutica por resistência da micobactéria ao etambutol;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome inflamatória da reconstituição imune (IRIS);",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Infecção oportunista concomitante;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reação adversa ao etambutol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado é clássico da Síndrome Inflamatória de Reconstituição Imune (SIRI ou IRIS), especificamente a forma paradoxal associada à tuberculose. \n\nJustificativa das alternativas:\n\nAlternativa A (Incorreta): A falha terapêutica por resistência bacteriana geralmente é suspeitada mais tardiamente, a partir do segundo mês de tratamento (término da fase de ataque), mediante persistência de baciloscopias positivas ou ausência prolongada de melhora clínica. O etambutol é uma droga adjuvante no esquema RIPE (Rifampicina, Isoniazida, Pirazinamida e Etambutol) e a resistência isolada a ele é rara e não justificaria uma piora inflamatória aguda coincidente com o início da TARV.\n\nAlternativa B (Correta): A IRIS ocorre caracteristicamente entre 2 e 8 semanas após o início da TARV em pacientes com infecções prévias, como a tuberculose. Ocorre uma rápida recuperação da contagem de linfócitos T CD4+ e queda da carga viral do HIV, fazendo com que o sistema imunológico passe a combater antígenos micobacterianos de forma exacerbada e desregulada. Isso gera piora clínica paradoxal, marcada por febre, surgimento de novas linfonodomegalias e agravamento dos infiltrados radiológicos pulmonares, mesmo com o tratamento antimicrobiano adequado em curso.\n\nAlternativa C (Incorreta): Embora pessoas vivendo com HIV possam apresentar coinfecções, o surgimento dos sintomas em estreita relação temporal com o início recente da TARV (4 semanas) torna a IRIS a principal hipótese diagnóstica. O quadro deve ser manejado primariamente como reconstituição imune, reservando-se a busca por outros patógenos se houver refratariedade ou atipicidade acentuada.\n\nAlternativa D (Incorreta): O efeito adverso característico do etambutol é a neurite óptica retrobulbar, que se manifesta com escotoma central, redução da acuidade visual e perda da discriminação das cores (especialmente verde e vermelho). O etambutol não causa febre, linfonodomegalias ou piora de infiltrados pulmonares.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "HIV",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:28.232Z"
+  },
+  {
+    "id": "AJUDA_e31fc546-881a-4595-ab3a-1d2785ad244f",
+    "originalId": "e31fc546-881a-4595-ab3a-1d2785ad244f",
+    "statement": "Uma equipe de saúde da família realiza atendimento itinerante a comunidades ribeirinhas e aldeias indígenas na Região Amazônica. Em visita, uma médica recém-chegada observa que uma mulher ribeirinha evita contato visual durante a consulta e responde às perguntas apenas com monossílabos. Em outra situação, um indígena da etnia Tikuna não aceita ser atendido sozinho e insiste na presença de um pajé da comunidade.\nA abordagem adequada que a equipe deve adotar é",
+    "options": [
+      {
+        "id": "A",
+        "text": "investir na padronização de rotinas clínicas e na capacitação da equipe para comunicação técnica propositiva e objetiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "promover espaços formativos para a equipe assistencial, reconhecendo saberes e práticas das populações atendidas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "reforçar a autonomia profissional da médica, mantendo as condutas clínicas baseadas em evidências científicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "estabelecer rotinas padronizadas uniformes de atendimento para ribeirinhos e indígenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do tema: Competência Cultural e Saúde de Populações Específicas\n\nEsta questão aborda os desafios da assistência à saúde em contextos de grande diversidade cultural, como ocorre na Região Amazônica com populações ribeirinhas e indígenas. O ponto central é a aplicação dos princípios da Política Nacional de Saúde Integral das Populações do Campo, da Floresta e das Águas e da Política Nacional de Atenção à Saúde dos Povos Indígenas.\n\nAlternativa a) Incorreta. A busca por uma comunicação puramente técnica e objetiva ignora as nuances culturais e os diferentes modos de expressão dessas populações. A padronização excessiva de rotinas clínicas pode criar barreiras de acesso, pois não considera a subjetividade e os códigos de conduta locais, como o silêncio ou o evitar do contato visual, que em muitas culturas são sinais de respeito e não de falta de colaboração.\n\nAlternativa b) Correta. A abordagem adequada em saúde coletiva e interculturalidade pressupõe que a equipe de saúde reconheça e respeite a diversidade de saberes. Promover espaços formativos permite que os profissionais compreendam as especificidades culturais, como o papel das lideranças espirituais (pajés) e as formas de comunicação não verbais. O diálogo entre a medicina ocidental e as práticas tradicionais é fundamental para a construção de vínculo, confiança e adesão aos cuidados de saúde.\n\nAlternativa c) Incorreta. Embora a prática baseada em evidências e a autonomia profissional sejam importantes, elas não devem ser utilizadas de forma isolada para ignorar o contexto cultural do paciente. A imposição de condutas sem considerar o universo simbólico do indivíduo pode levar ao afastamento da comunidade e ao fracasso das ações de saúde. A autonomia do profissional deve caminhar junto com a autonomia e o protagonismo do paciente e de sua comunidade.\n\nAlternativa d) Incorreta. Estabelecer rotinas uniformes fere o princípio da equidade do SUS. Populações ribeirinhas e diferentes etnias indígenas (como os Tikuna) possuem necessidades, línguas, crenças e organizações sociais distintas. O atendimento deve ser singular e adaptado à realidade de cada grupo, e não padronizado como se todos fizessem parte de um bloco cultural único.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 30.403439903417993,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:28.232Z"
+  },
+  {
+    "id": "AJUDA_e3206ee9-16a9-4991-93f0-e4dfa6a539c4",
+    "originalId": "e3206ee9-16a9-4991-93f0-e4dfa6a539c4",
+    "statement": "Um homem de 70 anos com histórico de hipertensão e diabetes é diagnosticado com insuficiência cardíaca congestiva. Qual das seguintes classes de medicamentos é fundamental para melhorar o prognóstico desses pacientes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diuréticos de alça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Betabloqueadores.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Anticoagulantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anti-inflamatórios não esteroidais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o manejo farmacológico da Insuficiência Cardíaca Congestiva (ICC), especificamente focando em intervenções que alteram a história natural da doença, ou seja, que melhoram o prognóstico e reduzem a mortalidade.\n\nAlternativa (a) Diuréticos de alça: Incorreta. Embora medicamentos como a furosemida sejam essenciais no manejo da ICC para o controle de sintomas relacionados à hipervolemia (congestão pulmonar e edema periférico), eles não demonstraram, em grandes estudos clínicos, a capacidade de reduzir a mortalidade ou alterar o prognóstico a longo prazo. Seu papel é predominantemente sintomático.\n\nAlternativa (b) Betabloqueadores: Correta. Os betabloqueadores (especificamente carvedilol, succinato de metoprolol e bisoprolol) são pilares fundamentais no tratamento da insuficiência cardíaca com fração de ejeção reduzida. Eles atuam bloqueando a superestimulação do sistema nervoso simpático, o que previne o remodelamento cardíaco adverso, reduz a frequência de hospitalizações e diminui significativamente a mortalidade cardiovascular.\n\nAlternativa (c) Anticoagulantes: Incorreta. O uso de anticoagulantes não é uma terapia de rotina para todos os pacientes com insuficiência cardíaca. Eles são indicados apenas em situações específicas associadas, como a presença de fibrilação atrial, histórico de fenômenos tromboembólicos ou presença de trombo intracavitário. Não há evidência de que a anticoagulação isolada melhore o prognóstico de todos os pacientes com ICC.\n\nAlternativa (d) Anti-inflamatórios não esteroidais (AINEs): Incorreta. Os AINEs são, na verdade, contraindicados em pacientes com insuficiência cardíaca. Essas drogas promovem retenção de sódio e água, podem causar vasoconstrição renal e reduzir a eficácia de diuréticos e inibidores da ECA, levando frequentemente à descompensação do quadro clínico e à piora da função cardíaca.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:28.232Z"
+  },
+  {
+    "id": "AJUDA_e32ef15f-c43c-44b5-91f4-dcc1cd9ac3fe",
+    "originalId": "e32ef15f-c43c-44b5-91f4-dcc1cd9ac3fe",
+    "statement": "A infecção do trato urinário (ITU) é uma das infecções bacterianas mais incidentes em adultos. Cerca de 60% das mulheres apresentarão um episódio de ITU durante a vida e, dessas, pelo menos 25% terão uma ou mais recorrências e de 2% a 5% desenvolverão ITU de repetição.\nConsiderando esse cenário, assinale a alternativa que apresenta a medida, demonstrada em meta-análises, recomendada para diminuir a incidência de ITU de repetição na pós-menopausa.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração oral de D-manose 2 g ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Instilação intravesical de D-manose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso de creme ou comprimido vaginal contendo estrogênio na pós-menopausa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Autocateterização para diminuir a urina residual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Uso de vitamina C 1 g por dia via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A infecção do trato urinário (ITU) de repetição na pós-menopausa está intimamente ligada às alterações fisiológicas decorrentes do hipoestrogenismo. A deficiência de estrogênio provoca a atrofia do epitélio vaginal e a diminuição do glicogênio local, o que leva a uma redução drástica na população de Lactobacillus. Sem esses bacilos, o pH vaginal aumenta, favorecendo a colonização da região periuretral por patógenos fecais, como a Escherichia coli, que posteriormente ascendem para a bexiga.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A D-manose é um açúcar que pode impedir a adesão da E. coli às células do trato urinário. Embora existam alguns estudos pequenos sugerindo benefício, as meta-análises ainda não a colocam como a principal recomendação para o perfil específico da pós-menopausa, especialmente quando comparada à terapia hormonal local.\n\nAlternativa b: Incorreta. A instilação intravesical de substâncias é um procedimento invasivo e reservado para casos muito específicos e refratários de cistite intersticial ou dor pélvica crônica, não sendo uma medida recomendada em meta-análises para prevenção geral de ITU na pós-menopausa.\n\nAlternativa c: Correta. O uso de estrogênio por via vaginal (cremes, anéis ou comprimidos) é a intervenção não antibiótica com maior respaldo em meta-análises (como a da Cochrane) para este grupo. O tratamento reverte a atrofia urogenital, restaura a flora de Lactobacillus e normaliza o pH vaginal, tratando a causa base da predisposição às infecções nesse período da vida. Vale ressaltar que o estrogênio oral não apresenta esse mesmo efeito protetor contra ITUs.\n\nAlternativa d: Incorreta. O autocateterismo intermitente só é indicado se a paciente apresentar um resíduo urinário pós-miccional significativamente elevado devido a problemas neurológicos ou obstrutivos, o que não se aplica à maioria das mulheres com ITU de repetição na pós-menopausa.\n\nAlternativa e: Incorreta. O uso de vitamina C (ácido ascórbico) para acidificar a urina é uma prática antiga, mas que carece de evidência científica robusta. Meta-análises não demonstram eficácia consistente da vitamina C na prevenção de ITUs recorrentes.\n\nPortanto, a alternativa C é a correta por ser a medida que atua diretamente na fisiopatologia da pós-menopausa com comprovação em estudos de alto nível de evidência.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "ITU - Infecção do Trato Urinário",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:28.232Z"
+  },
+  {
+    "id": "AJUDA_e3390313-1a00-4193-9cc5-fd067b33ff6d",
+    "originalId": "e3390313-1a00-4193-9cc5-fd067b33ff6d",
+    "statement": "Paciente realiza acompanhamento de saúde em Unidade Básica, fazendo tratamento para hipertensão, diabetes e transtorno afetivo bipolar do tipo I. Comparece à unidade para solicitar seu prontuário, uma vez que mudou de região e necessita iniciar acompanhamento em outra referência. A conduta CORRETA para esse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar uma cópia do prontuário para que o paciente leve à nova Unidade, mantendo o original sob guarda da instituição.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Negar o pedido do paciente, pois é vedado que o prontuário seja retirado do estabelecimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Explicar ao paciente que ele pode ter acesso ao documento, mas que este não pode ser entregue, pois é de responsabilidade e propriedade da Unidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientar o paciente a agendar uma reunião com a administração da Unidade, para que seja realizada uma transferência de prontuário, e isso deve ser realizado pelo coordenador de cada UBS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda as normas éticas e legais sobre a guarda e o acesso ao prontuário médico, tema fundamentado pelo Código de Ética Médica (CEM) e por resoluções do Conselho Federal de Medicina (CFM).\n\nAlternativa (a) Correta: Esta alternativa reflete exatamente o que preconiza a ética médica. O prontuário médico é um documento cujas informações pertencem ao paciente, mas a guarda física e a propriedade do suporte (seja em papel ou digital) pertencem à instituição de saúde ou ao médico assistente. Assim, o paciente tem o direito legal de obter uma cópia integral do documento para garantir a continuidade de seu tratamento em outro local, enquanto a unidade de saúde tem o dever de manter o original sob sua custódia para fins de fiscalização e defesa jurídica.\n\nAlternativa (b) Incorreta: Negar o acesso do paciente ao seu prontuário ou à cópia dele configura infração ética (Artigo 88 do CEM). O médico ou a instituição não podem impedir o paciente de ter acesso aos seus próprios dados de saúde.\n\nAlternativa (c) Incorreta: Embora a unidade seja, de fato, a depositária e responsável pela guarda do documento, a afirmação de que este \"não pode ser entregue\" é enganosa. O original permanece na unidade, mas o fornecimento da cópia (que é a entrega das informações ali contidas) é obrigatório se solicitado pelo paciente ou por seu representante legal.\n\nAlternativa (d) Incorreta: O processo de entrega da cópia do prontuário é um direito administrativo e clínico direto do paciente. Não existe obrigatoriedade legal de agendamento de reuniões com a administração ou de uma transferência formal obrigatoriamente mediada apenas pelos coordenadores das unidades. O fluxo deve ser facilitado para garantir o direito constitucional de acesso à informação e a continuidade da assistência.\n\nResumo do conceito: O prontuário é do paciente (quanto ao conteúdo) e da instituição (quanto à guarda). O acesso é um direito do paciente e o fornecimento da cópia, quando solicitada, é um dever do serviço de saúde.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:28.232Z"
+  },
+  {
+    "id": "AJUDA_e341f8a9-75ae-44db-b6a2-75035b131662",
+    "originalId": "e341f8a9-75ae-44db-b6a2-75035b131662",
+    "statement": "A existência de informações confiáveis e atualizadas sobre os determinantes e as condições de saúde de uma dada comunidade permite aos gestores e aos profissionais da área da saúde planejar, avaliar e monitorar as ações de saúde orientados por dados que refletem a realidade local.\nRelacione os conceitos, na coluna da esquerda, com sua explicação, na coluna da direita.\n\n(I) Diagnóstico de saúde da comunidade.\n(II) Território.\n(III) Estimativa rápida participativa.\n(IV) Diagnóstico de demanda.\n\n(A) Metodologia que envolve a comunidade na coleta e na análise de informações sobre sua própria situação de saúde e condições de vida. Utiliza técnicas como entrevistas, grupos focais e observação direta e valoriza o conhecimento e a experiência da comunidade para construir um panorama da situação de saúde local.\n(B) Espaço onde se desenvolvem as relações sociais, econômicas, culturais e políticas de uma população, influenciando diretamente o processo de saúde e doença. Além de uma delimitação geográfica, trata-se de um espaço vivido, construído e transformado pelas interações entre as pessoas que nele habitam.\n(C) Processo que identifica e analisa as necessidades e as expectativas de uma população em relação aos serviços de saúde. Busca compreender quais são os problemas de saúde mais prevalentes, os fatores que influenciam essas necessidades e as características socioeconômicas e culturais que podem afetar a busca por assistência.\n(D) Avaliação sistemática que busca identificar as condições de saúde, os fatores de risco, os determinantes sociais e as necessidades da população em um determinado território.\n\nAssinale a alternativa que contém a associação correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "I-A, II-D, III-B, IV-C.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I-C, II-A, III-B, IV-D.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I-C, II-D, III-A, IV-B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I-D, II-A, III-C, IV-B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "I-D, II-B, III-A, IV-C.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nEsta questão aborda conceitos fundamentais da Saúde Coletiva e da Atenção Primária à Saúde (APS), focando em como o planejamento em saúde depende da compreensão do contexto local. Para resolvê-la, é necessário correlacionar termos técnicos de gestão e epidemiologia com suas definições operacionais.\n\nAnálise das correlações:\n\n(I) Diagnóstico de saúde da comunidade associa-se à (D): A definição de diagnóstico de saúde é a aplicação do método epidemiológico para traçar o perfil de morbimortalidade, fatores de risco e determinantes sociais de uma população específica. É uma avaliação sistemática e abrangente.\n\n(II) Território associa-se à (B): Na Saúde Coletiva, o território vai além da geografia física (mapas). Ele é entendido como \"território-processo\", o espaço onde ocorrem as relações sociais, trocas culturais e conflitos, sendo o local onde a vida acontece e onde os determinantes sociais agem.\n\n(III) Estimativa rápida participativa associa-se à (A): O termo-chave aqui é \"participativa\". Trata-se de uma metodologia de diagnóstico que não foca apenas em dados estatísticos oficiais, mas utiliza a percepção dos moradores e atores locais (através de entrevistas e grupos focais) para identificar problemas prioritários de forma ágil.\n\n(IV) Diagnóstico de demanda associa-se à (C): Enquanto o diagnóstico de saúde olha para a comunidade como um todo, o diagnóstico de demanda foca naquilo que chega ao serviço de saúde ou que a população \"sente\" como necessidade de assistência, analisando expectativas e perfis de busca por cuidado.\n\nAnálise das alternativas:\n\na) Incorreta. Troca o diagnóstico de saúde pela estimativa rápida e o território pelo diagnóstico de saúde.\nb) Incorreta. Associa o diagnóstico de saúde à demanda e o território à estimativa rápida.\nc) Incorreta. Apresenta associações desconexas, como o território sendo definido como diagnóstico de saúde.\nd) Incorreta. Embora acerte o item I, erra ao definir território como estimativa rápida e demanda como território.\ne) Correta. Estabelece todas as relações de forma precisa: I-D (Diagnóstico/Avaliação sistemática), II-B (Território/Espaço social), III-A (Estimativa rápida/Metodologia participativa) e IV-C (Demanda/Necessidades e expectativas de assistência).\n\nGabarito: Letra (e).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:28.232Z"
+  },
+  {
+    "id": "AJUDA_e349b0d7-9983-441a-8523-0d5aa10797a4",
+    "originalId": "e349b0d7-9983-441a-8523-0d5aa10797a4",
+    "statement": "Considere as afirmativas a seguir sobre a Atenção Domiciliar (AD) e assinale V para as verdadeiras e F para as falsas.\n(__) A estratificação em modalidades (AD1, AD2, AD3) relaciona a complexidade do cuidado e a necessidade de recursos.\n(__) O plano de cuidados deve ser pactuado com paciente/família e revisado periodicamente.\n(__) Paciente instável hemodinamicamente, que necessita de equipamentos e/ou procedimentos especiais é candidato típico a AD1.\n(__) A equipe deve definir responsável familiar e orientar cuidador quando necessário.\nAssinale a sequência CORRETA de respostas:",
+    "options": [
+      {
+        "id": "A",
+        "text": "V – V – F – V",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "V – F – F – V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V – V – F – V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F – V – V – F",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das assertivas:\n\nPrimeira afirmativa (Verdadeira): A Atenção Domiciliar (AD) no âmbito do SUS é organizada exatamente conforme a complexidade e a frequência do cuidado necessário. A modalidade AD1 é voltada para usuários que apresentam problemas de saúde controlados e com dificuldade de locomoção, sendo acompanhados pela equipe de Atenção Primária. As modalidades AD2 e AD3 são destinadas a casos que exigem maior frequência de visitas, uso de equipamentos (como suporte ventilatório) e equipes multiprofissionais específicas (EMAD e EMAP).\n\nSegunda afirmativa (Verdadeira): O Plano de Atenção Domiciliar (PAD) é o documento que organiza o cuidado. Para que a assistência em domicílio seja eficaz, é indispensável que o plano seja pactuado com o paciente e seus familiares, respeitando a autonomia e a realidade de cada residência. Além disso, o PAD é dinâmico e deve ser revisado periodicamente para se adequar às mudanças no estado clínico do paciente.\n\nTerceira afirmativa (Falsa): Esta afirmativa apresenta dois erros conceituais importantes. Primeiro, a instabilidade hemodinâmica é uma contraindicação para a atenção domiciliar, exigindo ambiente hospitalar para monitorização intensiva. Segundo, pacientes que necessitam de procedimentos complexos ou equipamentos (como oxigenoterapia de alto fluxo ou ventilação mecânica) são classificados em AD2 ou AD3. A modalidade AD1 é restrita a cuidados de baixa complexidade técnica.\n\nQuarta afirmativa (Verdadeira): A figura do cuidador é um dos pilares da Atenção Domiciliar, especialmente nas modalidades AD2 e AD3. A equipe de saúde tem a atribuição legal e assistencial de identificar um responsável familiar ou cuidador e capacitá-lo para realizar tarefas do dia a dia (como higiene, administração de dietas e medicamentos), garantindo a continuidade do cuidado na ausência da equipe profissional.\n\nConclusão: Seguindo a análise, a sequência correta é V – V – F – V.\n\nAlternativa Correta: Letra (a).",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:28.232Z"
+  },
+  {
+    "id": "AJUDA_e3511e8f-8d9f-4863-bf15-b9653446712d",
+    "originalId": "e3511e8f-8d9f-4863-bf15-b9653446712d",
+    "statement": "Um paciente apresenta sintomas de fadiga, perda de peso e pressão arterial baixa. No exame, há hiperpigmentação da pele e das membranas mucosas. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome de Cushing;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença de Addison;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Feocromocitoma;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Conn.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito aponta para a Insuficiência Adrenal Primária, também conhecida como Doença de Addison. Esta patologia decorre da destruição ou disfunção do córtex adrenal, levando à deficiência de glicocorticoides (cortisol) e, frequentemente, de mineralocorticoides (aldosterona).\n\nA tríade de fadiga, perda de peso e hipotensão arterial é marcante pela falta desses hormônios. O achado fundamental para diferenciar a causa primária (na glândula adrenal) da causa secundária (na hipófise) é a hiperpigmentação de pele e mucosas. Isso ocorre porque a queda nos níveis de cortisol remove o feedback negativo sobre a hipófise, estimulando a produção excessiva de ACTH. O precursor do ACTH, a pró-opiomelanocortina (POMC), também dá origem ao hormônio estimulador de melanócitos (MSH), resultando no escurecimento da pele, especialmente em áreas de dobra, cicatrizes, articulações e mucosas.\n\nAnálise das alternativas:\n\na) Incorreta. A Síndrome de Cushing é o oposto da Doença de Addison, sendo causada pelo excesso crônico de cortisol. Os pacientes apresentam tipicamente ganho de peso, obesidade central, hipertensão arterial, estrias violáceas e fácies em lua cheia.\n\nb) Correta. A Doença de Addison apresenta a deficiência hormonal que justifica a perda de peso e a hipotensão (pela perda de sódio e água e falta de efeito pressórico do cortisol). A hiperpigmentação é o sinal-chave que confirma a origem adrenal do problema, devido ao aumento compensatório de ACTH/MSH.\n\nc) Incorreta. O feocromocitoma é um tumor da medula adrenal que secreta catecolaminas (adrenalina e noradrenalina). O quadro clínico clássico envolve paroxismos de hipertensão arterial, cefaleia, palpitações e sudorese, o que não condiz com a hipotensão e emagrecimento progressivo relatados.\n\nd) Incorreta. A Síndrome de Conn, ou hiperaldosteronismo primário, é causada pela produção excessiva de aldosterona. Isso resulta em retenção de sódio e excreção de potássio, levando à hipertensão arterial e hipocalemia, quadro clínico divergente dos sintomas de pressão baixa e fadiga extrema apresentados pelo paciente.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:28.232Z"
+  },
+  {
+    "id": "AJUDA_e35fff7b-411d-41ab-ade6-bd4e1722dbc5",
+    "originalId": "e35fff7b-411d-41ab-ade6-bd4e1722dbc5",
+    "statement": "Homem de 85 anos, portador de insuficiência cardíaca avançada e com múltiplas internações no último ano, procura a unidade de emergência com quadro de febre, dispneia, tosse produtiva e edema de membros inferiores há dois dias. Ele está acompanhado da filha, que relata que o paciente é seguido no ambulatório de cuidados paliativos e possui diretivas antecipadas de vontade descritas em prontuário, previamente alinhadas entre equipe médica, paciente e familiares, priorizando medidas de conforto e limitação de intervenções invasivas. Ao exame, encontra-se caquético, com frequência cardíaca de 110bpm, pressão arterial de 100x60mmHg, frequência respiratória de 44irpm e saturação periférica de 85% em ar ambiente. A ausculta pulmonar demonstra murmúrios vesiculares abolidos em bases e estertores até ápices bilateralmente. Quais condutas devem ser adotadas neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar doses endovenosas de morfina e furosemida para controle de dispneia, seguidos de alta hospitalar para maior conforto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suplementar oxigênio em máscara não reinalante e iniciar antibioticoterapia, furosemida e morfina endovenosos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Suplementar oxigênio com cateter nasal e iniciar midazolam em bomba de infusão contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar ventilação não invasiva e toracocentese de alívio bilateral. Iniciar furosemida e morfina endovenosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente em questão apresenta uma descompensação aguda de insuficiência cardíaca (edema, estertores, congestão) associada a um provável quadro infeccioso respiratório (febre, tosse produtiva). Apesar de estar em acompanhamento paliativo e possuir diretivas antecipadas de vontade que limitam intervenções invasivas (como intubação orotraqueal ou reanimação), o objetivo principal é o controle impecável dos sintomas e a proporcionalidade terapêutica.\n\nAlternativa a) Incorreta. Embora a morfina e a furosemida sejam essenciais para tratar a dispneia e a congestão, a alta hospitalar imediata é inadequada. O paciente apresenta insuficiência respiratória grave (frequência respiratória de 44 irpm e saturação de 85%), necessitando de monitorização e suporte em ambiente hospitalar para garantir que o conforto seja atingido e mantido de forma segura.\n\nAlternativa b) Correta. Esta conduta respeita as diretivas do paciente ao mesmo tempo em que trata as causas reversíveis de sofrimento. A máscara não reinalante visa corrigir a hipoxemia grave. A morfina é o padrão-ouro para o alívio da dispneia em cuidados paliativos. A furosemida trata a sobrecarga volêmica da insuficiência cardíaca. A antibioticoterapia, neste contexto, é considerada uma medida de conforto, pois visa tratar a infecção que está causando febre e agravando o desconforto respiratório.\n\nAlternativa c) Incorreta. O cateter nasal de oxigênio oferece um fluxo baixo, insuficiente para a gravidade da hipoxemia apresentada (85%). Além disso, o midazolam é um benzodiazepínico indicado para sedação ou ansiedade, mas não é a droga de escolha para tratar a dispneia. A morfina é muito mais eficaz para reduzir a sensação de falta de ar sem necessariamente induzir sedação profunda inicial.\n\nAlternativa d) Incorreta. A ventilação não invasiva (VNI) poderia ser discutida como medida de conforto, mas a realização de toracocentese de alívio bilateral é um procedimento invasivo e agressivo para este momento inicial. Antes de procedimentos invasivos, deve-se priorizar o tratamento medicamentoso da congestão e da infecção, que são as causas prováveis dos ruídos abolidos e da piora clínica, conforme o histórico de insuficiência cardíaca avançada e o quadro atual.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Insuficiência Cardíaca",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:03:28.232Z"
+  }
+]

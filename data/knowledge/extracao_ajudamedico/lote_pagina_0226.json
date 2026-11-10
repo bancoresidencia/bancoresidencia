@@ -1,0 +1,491 @@
+[
+  {
+    "id": "AJUDA_3edbc0a4-d1c6-4567-be8e-bb8fa73446e8",
+    "originalId": "3edbc0a4-d1c6-4567-be8e-bb8fa73446e8",
+    "statement": "Homem de 58 anos, hipertenso e tabagista, chega ao pronto-socorro com dor torácica em aperto há 40 minutos, irradiando para o braço esquerdo e mandíbula. ECG mostra supradesnivelamento de ST em DII, DIII e aVF. Qual é a conduta inicial imediata mais indicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar morfina, oxigênio, nitrato e betabloqueador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar fibrinólise imediata se não houver acesso a angioplastia em até 120 minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar troponina antes de qualquer intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aguardar evolução clínica nas próximas horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de Síndrome Coronariana Aguda com supradesnivelamento do segmento ST nas derivações DII, DIII e aVF. Isso caracteriza um Infarto Agudo do Miocárdio com Supradesnivelamento de ST (IAMCSST) de parede inferior. Diante desse diagnóstico, a prioridade absoluta é a reperfusão miocárdica imediata para salvar o músculo cardíaco.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: Embora o mnemônico clássico sugira essas medicações, a prática atual é criteriosa. O oxigênio só é indicado se a saturação estiver abaixo de 90%. O uso de nitratos é perigoso e geralmente contraindicado em infartos de parede inferior (DII, DIII, aVF), pois há um alto risco de envolvimento do ventrículo direito; nesses casos, o nitrato pode causar queda brusca do débito cardíaco e hipotensão severa. O betabloqueador não deve ser administrado rotineiramente na fase imediata sem antes garantir a estabilidade hemodinâmica do paciente.\n\nAlternativa (b) CORRETA: Esta é a conduta padrão para o IAMCSST. O objetivo é a reperfusão. A angioplastia primária é o tratamento de escolha, mas ela deve ser realizada em tempo hábil. Se o serviço não dispõe de hemodinâmica ou se o tempo estimado para cruzar a lesão com o balão for superior a 120 minutos, a fibrinólise (trombólise química) deve ser iniciada imediatamente, preferencialmente nos primeiros 30 minutos após a chegada ao hospital (tempo porta-agulha), desde que não existam contraindicações.\n\nAlternativa (c) INCORRETA: No IAM com supra de ST, o diagnóstico é feito pela clínica e pelo eletrocardiograma. Não se deve, em hipótese alguma, aguardar o resultado da troponina ou de qualquer outro marcador de necrose miocárdica para iniciar a terapia de reperfusão. \"Tempo é músculo\", e o atraso para esperar exames laboratoriais aumenta a mortalidade e o dano cardíaco permanente.\n\nAlternativa (d) INCORRETA: O infarto é uma emergência médica ativa. Aguardar a evolução clínica sem intervenção é permitir que o miocárdio sofra necrose irreversível, o que pode levar a complicações fatais como arritmias malignas, insuficiência cardíaca aguda e choque cardiogênico.\n\nRESUMO DA CONDUTA\n\nIdentificado o supra de ST no ECG em paciente com dor torácica:\n1. Iniciar medidas de suporte e antiagregação plaquetária dupla (aspirina + clopidogrel/ticagrelor).\n2. Definir a estratégia de reperfusão: angioplastia se disponível em até 120 minutos; caso contrário, realizar fibrinólise.\n3. No infarto de parede inferior, ter cautela redobrada com medicações que reduzem a pré-carga (como nitratos e morfina) devido ao risco de choque por acometimento de ventrículo direito.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:06.713Z"
+  },
+  {
+    "id": "AJUDA_3edbfa6f-0c2b-459f-9de6-5834f9027a93",
+    "originalId": "3edbfa6f-0c2b-459f-9de6-5834f9027a93",
+    "statement": "A anafilaxia é uma reação alérgica sistêmica grave. Analise as afirmativas a seguir sobre os critérios diagnósticos e manejo:\n\nI.O diagnóstico de anafilaxia é altamente provável quando há envolvimento agudo de pele/mucosa (urticária, angioedema) associado a pelo menos um dos seguintes: comprometimento respiratório, hipotensão/disfunção de órgão-alvo ou sintomas gastrointestinais persistentes.\nII.A adrenalina intramuscular (face anterolateral da coxa) é a medicação de primeira linha e deve ser administrada precocemente; anti-histamínicos e corticoides são adjuvantes e não revertem a obstrução respiratória ou o choque.\nIII.A reação bifásica pode ocorrer em até 20% dos casos, caracterizando-se pelo retorno dos sintomas horas após a resolução inicial sem nova exposição ao alérgeno, justificando a observação clínica prolongada.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "II e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I e II apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o diagnóstico e o manejo da anafilaxia, uma emergência médica que exige reconhecimento rápido e tratamento imediato. Todas as afirmativas estão corretas, conforme detalhado abaixo:\n\nAfirmativa I: Correta. O diagnóstico de anafilaxia é essencialmente clínico. Segundo as diretrizes da Organização Mundial de Alergia (WAO) e da Associação Brasileira de Alergia e Imunologia (ASBAI), a anafilaxia é altamente provável quando há o início agudo (minutos a horas) de sintomas que envolvem a pele ou mucosas (como urticária generalizada, prurido, rubor ou edema de lábios/língua/úvula) associado a pelo menos um dos seguintes: comprometimento respiratório (dispneia, sibilância, estridor), redução da pressão arterial ou sintomas de disfunção de órgãos-alvo (síncope, hipotonia) e sintomas gastrointestinais graves/persistentes (cólicas abdominais intensas, vômitos repetidos), especialmente após exposição a um alérgeno provável.\n\nAfirmativa II: Correta. A adrenalina (epinefrina) é o único tratamento farmacológico que comprovadamente reduz a mortalidade na anafilaxia. Deve ser administrada por via intramuscular na face anterolateral da coxa (músculo vasto lateral), pois essa região oferece uma absorção mais rápida e níveis plasmáticos mais altos do que a via subcutânea ou intramuscular no deltoide. É fundamental compreender que anti-histamínicos e corticoides são medicações de segunda linha. Os anti-histamínicos tratam apenas sintomas cutâneos (prurido e urticária), e os corticoides agem na fase tardia da inflamação, mas nenhum dos dois é capaz de reverter o edema de glote ou o choque circulatório.\n\nAfirmativa III: Correta. A reação bifásica é definida como o retorno dos sintomas anafiláticos após a resolução completa do quadro inicial, sem que o paciente tenha tido um novo contato com o agente causador. Embora a incidência varie nos estudos, o índice de até 20% é classicamente citado na literatura médica. Essas reações costumam ocorrer entre 1 e 72 horas após o evento inicial (geralmente nas primeiras 8 a 12 horas). Por esse motivo, pacientes que sofreram anafilaxia devem permanecer em observação clínica por um período mínimo de 4 a 8 horas, ou mais, dependendo da gravidade da reação inicial e da presença de fatores de risco.\n\nConclusão: Como todas as afirmativas descrevem corretamente os protocolos atuais de diagnóstico, tratamento e monitoramento da anafilaxia, a alternativa correta é a letra (a).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:06.713Z"
+  },
+  {
+    "id": "AJUDA_3edf3584-52a4-4b74-a9b0-5c12294a0eeb",
+    "originalId": "3edf3584-52a4-4b74-a9b0-5c12294a0eeb",
+    "statement": "Recém-nascido (RN) a termo, 38 semanas, vem à consulta de puericultura com 7 dias de vida. Está em aleitamento materno exclusivo, mas a mãe se queixa de dor ao amamentar e apresenta fissuras mamilares. Apresentou peso de nascimento de 3.140 g e peso de alta, após 48h de internação, de 3.020 g. O peso do RN na consulta é de 3.090 g. A fim de estimular e preservar o aleitamento materno, são sinais de boa pega e posição:\n\nI. Cabeça e tronco do bebê alinhados.\nII. Bochechas do bebê encovadas.\nIII. Lábio inferior do bebê evertido.\nIV. Bochechas do bebê tocando o seio.\nV. Aréola da mãe mais visível acima da boca do bebê.\n\nQuais estão corretos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I, II e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I, III e V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas III, IV e V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II, III, IV e V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Analise dos itens sobre tecnica de amamentacao (posicionamento e pega):\n\nItem I - Correto: O alinhamento entre a cabeca e o tronco do recem-nascido e um dos criterios essenciais de posicionamento. O corpo do bebe deve estar voltado para o corpo da mae (barriga com barriga), mantendo pescoco e coluna alinhados para facilitar a degluticao e evitar tracao no mamilo.\n\nItem II - Incorreto: Durante a succao adequada, as bochechas do bebe devem estar arredondadas (cheias). Bochechas encovadas (com covinhas) indicam que a pega e rasa e a pressao intraoral e inadequada, gerando atrito, dor e fissuras mamilares.\n\nItem III - Correto: O labio inferior evertido (virado para fora, formato de \"peixinho\") e um dos quatro sinais fundamentais de boa pega descritos pela Organizacao Mundial da Saude (OMS) e pelo Ministerio da Saude, demonstrando que o bebe abocanhou profundamente o tecido mamario.\n\nItem IV - Incorreto: O ponto de referencia anatomico facial de contato com a mama e o queixo. O queixo deve estar tocando o seio materno e o nariz deve ficar livre para respirar; o contato das bochechas nao e um criterio de boa pega.\n\nItem V - Correto: A pega adequada e assimetrica. O bebe deve abocanhar uma porcao maior da parte inferior da areola, de modo que seja visivel mais areola acima da boca do que abaixo dela.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. Contem os itens II e IV (que representam erros de tecnica) e omite os itens III e V.\n\nAlternativa b: Correta. Aponta com precisao os itens verdadeiros (I, III e V), que sao os sinais classicos de posicionamento e pega adequados.\n\nAlternativa c: Incorreta. Contem o item IV (incorreto) e deixa de fora o item I (correto).\n\nAlternativa d: Incorreta. Afirma que todas as sentencas estao corretas, ignorando os erros conceituais presentes nos itens II e IV.\n\nGabarito: Letra b.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:06.713Z"
+  },
+  {
+    "id": "AJUDA_3eec4bb2-02cf-4380-9650-2102618ce84e",
+    "originalId": "3eec4bb2-02cf-4380-9650-2102618ce84e",
+    "statement": "Lactente previamente hígido comparece à primeira consulta médica aos 2 meses de idade. Ao exame clínico, nota-se que o testículo direito não é palpável no escroto nem no canal inguinal. O testículo esquerdo encontra-se tópico. Não há outras alterações no exame físico. Qual é a conduta mais adequada no momento desta consulta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar avaliação do cirurgião pediátrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar ao endocrinologista pediátrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Observar e reavaliar na próxima consulta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar ultrassonografia de bolsa escrotal e abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O tema central desta questão é a criptorquidia, que é a ausência de um ou ambos os testículos na bolsa escrotal. Para a prova de residência, o aluno deve conhecer o tempo de descida testicular e o momento exato da intervenção.\n\nA descida testicular ocorre em fases, e é comum que bebês nasçam com o testículo ainda fora da bolsa. No entanto, o processo de descida espontânea pode continuar após o nascimento, geralmente se completando até os 3 ou 4 meses de vida. Após os 6 meses de idade, a descida espontânea é considerada rara.\n\nAlternativa (a) Incorreta: Embora o cirurgião pediátrico seja o profissional que realizará a cirurgia (orquidopexia), o encaminhamento aos 2 meses de idade é considerado precoce. As diretrizes das Sociedades Brasileiras de Pediatria e de Urologia recomendam aguardar a descida espontânea até os 6 meses de idade. O encaminhamento deve ser feito se a condição persistir após esse período.\n\nAlternativa (b) Incorreta: O encaminhamento ao endocrinologista pediátrico é indicado em situações específicas, como criptorquidia bilateral (especialmente se os testículos não forem palpáveis) ou quando há sinais associados de ambiguidade genital (Distúrbios do Desenvolvimento Sexual). Como o lactente apresenta um testículo tópico (normal) e não possui outras alterações, a investigação endócrina não é a prioridade inicial.\n\nAlternativa (c) Correta: Esta é a conduta preconizada para um lactente de 2 meses. Como ainda existe uma janela temporal para que o testículo direito desça espontaneamente para a bolsa escrotal, o médico deve realizar o acompanhamento clínico nas consultas de puericultura. A reavaliação física é o passo mais adequado antes de qualquer intervenção ou encaminhamento.\n\nAlternativa (d) Incorreta: A solicitação de ultrassonografia (USG) é um erro comum na prática clínica, mas frequentemente cobrado em provas. Os consensos atuais desaconselham o uso de exames de imagem (USG, tomografia ou ressonância) para localizar testículos não palpáveis. A USG tem baixa sensibilidade para testículos intra-abdominais e não altera a conduta: se o testículo não for palpável após os 6 meses, o paciente precisará de exploração cirúrgica (preferencialmente por laparoscopia), independentemente do resultado do exame de imagem.\n\nGabarito: Letra (c).",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:06.713Z"
+  },
+  {
+    "id": "AJUDA_3ef2886b-1b23-4a29-9a94-53e6d24bb973",
+    "originalId": "3ef2886b-1b23-4a29-9a94-53e6d24bb973",
+    "statement": "Após a execução das ações iniciais, a paciente evoluiu em melhora clínica e realizou-se um ecocardiograma que apresentou os seguintes achados mais relevantes: coração em ritmo irregular; fração de ejeção 56%; aumento moderado de átrio esquerdo; e aumento moderado na pressão de artéria pulmonar, com e/e' > 9. Com base nessa situação hipotética, e nas informações apresentadas acima, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Achados ecocardiográficos ajudam a corroborar a hipótese de insuficiência cardíaca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "É um paciente sem critérios suficientes para o diagnóstico de insuficiência cardíaca, dado edema agudo de pulmão sem etiologia bem estabelecida. Com isso, deve-se proceder à estratificação com cineangiocoronariografia devido à possibilidade de doença isquêmica associada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É um paciente com provável diagnóstico de insuficiência cardíaca, porém achados ecocardiográficos não auxiliam a hipótese, dada ausência de causa bem estabelecida para a recente descompensação. Seria prudente, então, a realização de cineangiocoronariografia dado o altíssimo risco cardiovascular e dada a possível descompensação por evento isquêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apesar de achados ecocardiográficos afastarem a hipótese de insuficiência cardíaca, ainda existe uma grande probabilidade. A hipótese mais provável, então, seria de insuficiência cardíaca descompensada devido a quadro infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Houve achados ecocardiográficos sugestivos de cor pulmonale. Logo, o paciente deverá realizar tomografia de tórax para avaliar intersticiopatia crônica associada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa (a) está correta. O diagnóstico de insuficiência cardíaca (IC) não depende exclusivamente de uma fração de ejeção reduzida. A Insuficiência Cardíaca com Fração de Ejeção Preservada (ICFEP) é uma síndrome clínica em que o paciente apresenta sintomas de IC, fração de ejeção normal (maior ou igual a 50%) e evidências de disfunção diastólica ou alterações estruturais, como o aumento do átrio esquerdo. No caso descrito, os achados de aumento moderado de átrio esquerdo, pressão da artéria pulmonar elevada e relação E/e' maior que 9 são indicadores objetivos de aumento das pressões de enchimento ventricular e disfunção diastólica, o que sustenta o diagnóstico de IC.\n\nAlternativa (b) está incorreta. O paciente apresenta, sim, critérios ecocardiográficos que corroboram a insuficiência cardíaca, especificamente no perfil de fração de ejeção preservada. A presença de marcadores de pressão de enchimento elevada (E/e' > 9) e o remodelamento estrutural (aumento de átrio esquerdo) são critérios diagnósticos estabelecidos pelas diretrizes de cardiologia.\n\nAlternativa (c) está incorreta. A afirmação de que os achados ecocardiográficos não auxiliam a hipótese é falsa. Na ICFEP, o ecocardiograma é a ferramenta principal para identificar as alterações funcionais e estruturais que justificam os sintomas clínicos na ausência de queda da fração de ejeção.\n\nAlternativa (d) está incorreta. Os achados ecocardiográficos não afastam a hipótese de insuficiência cardíaca; eles a confirmam. Muitos estudantes confundem uma fração de ejeção normal com a ausência de IC, esquecendo-se da disfunção diastólica, que está bem documentada pelos parâmetros descritos no enunciado.\n\nAlternativa (e) está incorreta. O *cor pulmonale* é a dilatação ou hipertrofia do ventrículo direito resultante de doenças que afetam a função ou a estrutura dos pulmões. Os achados do paciente (aumento do átrio esquerdo e alteração na relação E/e') apontam para uma causa cardíaca esquerda (congestão retrógrada), e não para uma doença pulmonar primária como causa do quadro.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:06.713Z"
+  },
+  {
+    "id": "AJUDA_3f029722-aedb-425b-8b05-7d62df01b03b",
+    "originalId": "3f029722-aedb-425b-8b05-7d62df01b03b",
+    "statement": "Uma lactente de 10 meses de vida foi levada ao pediatra pelos pais com queixa de dificuldade para dormir devido a prurido na pele. Ao exame físico, foi verificada a presença de lesões eritematosas com pápulas, vesículas e crostas na face, além de algumas lesões de mesmo aspecto na região extensora dos braços. Foi notada ausência de lesões na região do nariz e da boca. Com base nessa situação hipotética, assinale a alternativa que apresenta o diagnóstico e a conduta terapêutica adequada para esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "impetigo, prescrever antibiótico tópico e orientações para descolonização",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "dermatite seborreica, orientar uso de corticoide tópico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prurigo estrófulo, prescrever corticoide tópico e uso de repelentes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "dermatite atópica, orientar hidratação da pele",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "dermatite de contato alérgica e anti-histamínicos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão descreve um quadro clássico de dermatite atópica em um lactente. O diagnóstico é baseado em critérios clínicos, e a descrição apresentada preenche os principais requisitos para essa patologia nessa faixa etária.\n\nDiagnóstico: Dermatite Atópica (DA)\n\nA dermatite atópica é uma doença inflamatória crônica da pele que cursa com prurido intenso (frequentemente prejudicando o sono) e períodos de exacerbação. No lactente (menor de 2 anos), a distribuição típica das lesões ocorre na face (principalmente bochechas) e nas superfícies extensoras dos membros. Um dado semiológico muito característico, mencionado no enunciado, é o poupamento da região centrofacial (nariz e boca), conhecido como poupamento do triângulo nasolabial. As lesões podem variar de eritema e pápulas a vesículas e crostas na fase aguda (eczema).\n\nConduta: A base do tratamento da dermatite atópica é a restauração da barreira cutânea, o que é feito por meio da hidratação constante com emolientes apropriados, além de cuidados com o banho e controle de gatilhos. Em crises, utilizam-se corticoides tópicos ou imunomoduladores, mas a orientação de hidratação é o pilar preventivo e terapêutico constante.\n\nAnálise das alternativas incorretas:\n\na) Impetigo: é uma infecção bacteriana secundária. Embora possa apresentar crostas melicéricas, o impetigo primário não costuma ser tão pruriginoso a ponto de impedir o sono de forma crônica, nem apresenta essa distribuição específica com poupamento centrofacial característica da dermatite atópica.\n\nb) Dermatite seborreica: é comum em lactentes, mas manifesta-se geralmente como escamas amareladas e gordurosas no couro cabeludo (crosta láctea) e em áreas de dobras (axilas, região inguinal). Diferente da dermatite atópica, a dermatite seborreica raramente causa prurido intenso.\n\nc) Prurigo estrófulo: trata-se de uma reação de hipersensibilidade a picadas de insetos. As lesões costumam ser pápulas eritematosas que evoluem para pequenas vesículas (seropápulas) em áreas expostas, frequentemente agrupadas ou em fileira, e não respeitam o padrão de distribuição facial e extensor descrito.\n\ne) Dermatite de contato alérgica: é menos comum em lactentes tão jovens, pois exige sensibilização prévia. Além disso, as lesões seriam localizadas na área de contato com o agente alérgeno específico, não seguindo o padrão clássico de face e extensores. O uso de anti-histamínicos isoladamente não trata a causa da dermatite de contato.\n\nPortanto, a alternativa (d) é a correta, pois correlaciona adequadamente a clínica (prurido, localização facial com poupamento central e áreas extensoras) com a conduta essencial de manutenção (hidratação).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Dermatoses Eczematosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:06.713Z"
+  },
+  {
+    "id": "AJUDA_3f0d1b53-2f1f-426f-83d2-d78743a230a9",
+    "originalId": "3f0d1b53-2f1f-426f-83d2-d78743a230a9",
+    "statement": "A confecção do pneumoperitôneo é uma etapa fundamental na realização dos procedimentos minimamente invasivos abdominais. No entanto, o aumento da pressão abdominal decorrente de sua instalação resulta em várias alterações em diversos órgãos e sistemas, como redução:",
+    "options": [
+      {
+        "id": "A",
+        "text": "no retorno venoso",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "na pressão venosa central",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "nos níveis de catecolaminas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "na pressão de pico inspiratória",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A confecção do pneumoperitônio consiste na insuflação de gás (geralmente CO2) na cavidade abdominal para permitir a visualização e a manipulação cirúrgica. Esse aumento da pressão intra-abdominal (PIA) gera repercussões hemodinâmicas, respiratórias e metabólicas significativas que o cirurgião e o anestesista devem monitorar.\n\nAlternativa (a): Correta. O aumento da pressão intra-abdominal comprime os grandes vasos venosos, especialmente a veia cava inferior. Essa compressão dificulta o fluxo de sangue das extremidades inferiores e das vísceras em direção ao coração, resultando em uma redução efetiva do retorno venoso (pré-carga). Além disso, o aumento da resistência vascular periférica decorrente da pressão sobre as artérias e da liberação de substâncias vasoativas também contribui para alterações no débito cardíaco.\n\nAlternativa (b): Incorreta. Embora o retorno venoso diminua, a Pressão Venosa Central (PVC) e a Pressão de Oclusão da Artéria Pulmonar costumam apresentar um aumento artificial ou aparente. Isso ocorre porque a pressão abdominal elevada empurra o diafragma para cima, aumentando a pressão intratorácica. Essa pressão é transmitida aos grandes vasos e às câmaras cardíacas, elevando os valores medidos na monitorização, mesmo que o volume de sangue real circulante no coração tenha diminuído.\n\nAlternativa (c): Incorreta. A instalação do pneumoperitônio e a absorção do CO2 (que pode gerar hipercapnia e acidose respiratória) atuam como estressores fisiológicos. Isso ativa o sistema nervoso simpático, levando ao aumento dos níveis de catecolaminas (adrenalina e noradrenalina), além de estimular o sistema renina-angiotensina-aldosterona e a liberação de vasopressina.\n\nAlternativa (d): Incorreta. O deslocamento cranial do diafragma pelo pneumoperitônio reduz a complacência pulmonar e a capacidade residual funcional. Como o parênquima pulmonar encontra mais resistência para se expandir, o ventilador mecânico precisa exercer uma força maior para ofertar o mesmo volume de ar, o que resulta no aumento da pressão de pico inspiratória.\n\nConclusão: O aumento da pressão intra-abdominal durante a laparoscopia reduz o retorno venoso por compressão mecânica da veia cava inferior, tornando a alternativa (a) a resposta correta.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Ventilação Mecânica",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:06.713Z"
+  },
+  {
+    "id": "AJUDA_3f13e332-78fb-4f06-b5cc-88e2592bc695",
+    "originalId": "3f13e332-78fb-4f06-b5cc-88e2592bc695",
+    "statement": "Primigesta, 18 anos de idade, 10 semanas de gestação (pela data da última menstruação), procura atendimento por vômitos frequentes e incoercíveis desde a 7ª semana. Refere tontura ao se levantar e urina escura. Nega febre ou dor abdominal. Exame físico: PA: 100x70 mmHg, FC: 96 bpm, Peso atual: 58 kg (pré-gestacional: 63 kg), mucosas secas, língua saburrosa, abdome flácido, indolor, sem visceromegalias. Com base nesse quadro, considere as afirmativas a seguir. \n\nI. Entre os diagnósticos diferenciais que devem ser investigados estão: moléstia trofoblástica gestacional, gravidez múltipla, distúrbios gastrointestinais (como gastrite, pancreatite, colecistopatia) e causas endócrinas como hipertireoidismo. \nII. Infecções do trato urinário, causas neurológicas (aumento da pressão intracraniana, enxaqueca) е causas metabólicas também devem ser consideradas no diagnóstico diferencial. \nIII. Pode se tratar de hiperêmese gravídica, caracterizada por vômitos persistentes, perda ponderal maior do que 5% do peso pré-gestacional e distúrbios hidroeletrolíticos. \nIV. O tratamento inicial envolve hidratação venosa, correção de distúrbios eletrolíticos, antieméticos seguros na gestação e suporte nutricional, reservando internação apenas para casos refratários. \n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente é uma primigesta de 10 semanas com quadro de vômitos incoercíveis, perda ponderal expressiva (perdeu 5 kg de um total de 63 kg, o que representa aproximadamente 7,9% do seu peso pré-gestacional) e sinais clínicos de desidratação, como mucosas secas, língua saburrosa, urina escura e taquicardia (FC 96 bpm). Esse cenário é clássico para o diagnóstico de hiperêmese gravídica.\n\nANÁLISE DAS AFIRMATIVAS\n\nAfirmativa I: Correta. O diagnóstico de hiperêmese gravídica é, em grande parte, de exclusão. É fundamental investigar condições que cursam com níveis muito elevados de beta-hCG, como a gravidez gemelar e a mola hidatiforme (moléstia trofoblástica gestacional), pois o hormônio está diretamente ligado à etiologia dos vômitos. Além disso, patologias gastrointestinais e o hipertireoidismo (que pode se manifestar como tireotoxicose gestacional transitória) são diferenciais obrigatórios.\n\nAfirmativa II: Correta. Outras causas sistêmicas também devem entrar no radar do examinador. Infecções urinárias, especialmente a pielonefrite, podem causar náuseas e vômitos importantes. Causas neurológicas e distúrbios metabólicos, embora menos comuns, precisam ser descartados quando o quadro foge da apresentação habitual ou não responde ao manejo inicial.\n\nAfirmativa III: Correta. A afirmativa traz a definição técnica da hiperêmese gravídica. Ela se diferencia da êmese fisiológica da gestação pela persistência dos sintomas, pela presença de sinais de desidratação (distúrbios hidroeletrolíticos) e pela perda ponderal superior a 5% do peso pré-gestacional. No caso apresentado, a paciente perdeu quase 8%, confirmando a gravidade.\n\nAfirmativa IV: Incorreta. O erro desta afirmativa está na indicação da internação. Para uma paciente que já apresenta sinais clínicos de desidratação, perda de peso significativa (7,9%) e incapacidade de manter a hidratação por via oral (vômitos incoercíveis), a internação hospitalar está indicada de imediato para reposição volêmica venosa e correção rápida de eletrólitos. A internação não deve ser \"reservada apenas para casos refratários\" quando a paciente já se apresenta descompensada no primeiro atendimento.\n\nCONCLUSÃO\n\nEstão corretas as afirmativas I, II e III. Portanto, a alternativa correta é a letra (d).",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:06.713Z"
+  },
+  {
+    "id": "AJUDA_3f265e3a-b142-407c-a7f6-57b450eca334",
+    "originalId": "3f265e3a-b142-407c-a7f6-57b450eca334",
+    "statement": "Durante investigação de sangramento uterino anormal em paciente de 42 anos de idade, a ultrassonografia transvaginal com histerossalpingografia revelou nódulo miomatoso de 3,8 cm, localizado predominantemente na cavidade uterina, mas com aproximadamente 40% do diâmetro em contato com o miométrio. Segundo a classificação da FIGO (2011/2018) para leiomiomas, este achado corresponde ao",
+    "options": [
+      {
+        "id": "A",
+        "text": "tipo 0-Mioma totalmente intracavitário, pediculado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tipo 1 - Mioma submucoso com menos de 50% intramural.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "tipo 2 - Mioma submucoso com 50% ou mais intramural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tipo 3- Mioma intramural sem deformar a cavidade endometrial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A classificação da FIGO (Federação Internacional de Ginecologia e Obstetrícia) para leiomiomas submucosos é baseada na proporção do nódulo que se projeta para dentro do miométrio. Essa graduação é fundamental na prática clínica para avaliar a complexidade de uma futura miomectomia por histeroscopia.\n\nNo caso descrito, o mioma é classificado como submucoso porque está localizado predominantemente na cavidade uterina. O enunciado informa que aproximadamente 40% do diâmetro do nódulo está em contato ou inserido no miométrio. Como o componente intramural é inferior a 50%, o diagnóstico correto é o tipo 1.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O tipo 0 corresponde ao mioma totalmente intracavitário e pediculado, sem qualquer extensão para o miométrio. O mioma da questão possui 40% de componente intramural, o que exclui essa classificação.\n\nAlternativa b: Correta. Segundo a FIGO, o tipo 1 é definido como um mioma submucoso que possui menos de 50% do seu volume ou extensão dentro da parede miometrial. O achado de 40% relatado na ultrassonografia preenche exatamente esse critério.\n\nAlternativa c: Incorreta. O tipo 2 é reservado para miomas submucosos que apresentam um componente intramural igual ou superior a 50%. Como o mioma em questão tem apenas 40% de contato com o miométrio, ele não atinge o patamar para ser classificado como tipo 2.\n\nAlternativa d: Incorreta. O tipo 3 descreve um leiomioma que é 100% intramural, mas que toca o endométrio. Diferente do caso clínico, o mioma tipo 3 não deforma e não protrui para a cavidade uterina, enquanto o mioma da paciente está localizado predominantemente na cavidade.\n\nResumo da classificação submucosa (FIGO 0-2):\nTipo 0: Totalmente intracavitário, sem componente intramural.\nTipo 1: Componente intramural menor que 50%.\nTipo 2: Componente intramural igual ou maior que 50%.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:06.713Z"
+  },
+  {
+    "id": "AJUDA_3f376a22-202c-4fb6-826e-a5920e599e29",
+    "originalId": "3f376a22-202c-4fb6-826e-a5920e599e29",
+    "statement": "E.N.S., 24 anos, está em observação na emergência do Hospital Psiquiátrico Dr. Adolfo Bezerra de Menezes, há 6 horas, devido a transtornos mentais e comportamentais devido ao uso de múltiplas drogas e ao uso de outras substâncias psicoativas (Cid.10 F19). Não apresenta nenhuma comorbidade clínica, não faz uso de nenhuma medicação de uso contínuo, queixa-se de tosse produtiva e febre com início dos sintomas há 6 dias. Ao exame físico apresenta-se febril 38ºC, em regular estado geral. A ausculta pulmonar apresenta murmúrio vesicular presente bilateral, diminuído com base direita com a presença de crepitações. Sinais vitais estão estáveis com pressão arterial de 110x80 mmHg; Frequência cardíaca de 82 bpm, Saturação de 96% em ar ambiente. Considerando a hipótese diagnóstica de pneumonia bacteriana adquirida na comunidade, qual o principal agente etiológico:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Staphylococcus aureus",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Streptococcus pneumoniae",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Legionella spp",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pseudomonas aeruginosa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um paciente jovem, sem comorbidades clínicas conhecidas, apresentando quadro típico de pneumonia adquirida na comunidade (PAC), caracterizado por tosse produtiva, febre há 6 dias e sinais de consolidação pulmonar focal (crepitações e redução do murmúrio vesicular em base direita). \n\nAlternativa a: Incorreta. O Staphylococcus aureus é um agente importante em cenários específicos, como infecção pós-influenza, pneumonias necrosantes, empiemas ou por disseminação hematogênica em usuários de drogas intravenosas (endocardite com êmbolos sépticos). Contudo, mesmo em populações de risco, o pneumococo ainda é estatisticamente mais comum como causa primária de PAC típica.\n\nAlternativa b: Correta. O Streptococcus pneumoniae (pneumococo) é a bactéria mais comum e o principal agente etiológico da pneumonia adquirida na comunidade em todas as faixas etárias (com exceção do período neonatal), independentemente de o tratamento ser ambulatorial ou hospitalar. O quadro clínico e auscultatório de consolidação lobar típica apresentado pelo paciente é a manifestação clássica da infecção por esse patógeno.\n\nAlternativa c: Incorreta. A Legionella spp. é uma bactéria atípica causadora de pneumonia que costuma cursar com manifestações extrapulmonares (sintomas gastrointestinais, alteração do estado mental, hiponatremia) e acometer pacientes com exposições específicas (como sistemas de água contaminada) ou imunodeprimidos. Possui incidência muito menor que a do pneumococo.\n\nAlternativa d: Incorreta. A Pseudomonas aeruginosa é um bacilo gram-negativo associado a pneumonias hospitalares ou a pacientes com fatores de risco bem definidos para patógenos resistentes, como pneumopatias estruturais graves (bronquiectasias, fibrose cística), uso recente de antibióticos de amplo espectro ou imunossupressão grave, o que não se aplica ao paciente do caso.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:32:06.713Z"
+  }
+]

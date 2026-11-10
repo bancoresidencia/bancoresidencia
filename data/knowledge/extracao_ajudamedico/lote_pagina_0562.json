@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_9d8e3349-7608-487a-85c1-c42d2a6853ab",
+    "originalId": "9d8e3349-7608-487a-85c1-c42d2a6853ab",
+    "statement": "Paciente do sexo masculino, 72 anos, portador de DPOC, recebe alta de internação hospitalar devido à descompensação infecciosa, com dispneia mMRC 4 e hemograma com contagem de eosinófilos de 400/mm³.\n\nQual a classificação (grupo) atual da DPOC do paciente em questão segundo GOLD 2024 e qual o melhor tratamento inalatório de manutenção a ser proposto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "CI (ICS) + SABA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "LABA + SABA + azitromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Metilxantinas + CI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "LABA + LAMA + CI.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "CLASSIFICAÇÃO E CONDUTA:\n\nO paciente em questão apresenta um histórico de internação hospitalar recente devido a uma exacerbação infecciosa de DPOC. De acordo com as diretrizes atualizadas do GOLD 2024 (Global Initiative for Chronic Obstructive Lung Disease), a classificação dos pacientes mudou do antigo modelo ABCD para o modelo ABE. \n\nQualquer paciente que tenha sofrido pelo menos uma exacerbação com necessidade de internação hospitalar (ou duas exacerbações moderadas em um ano) é automaticamente classificado no Grupo E (Exacerbador), independentemente do grau de dispneia medido pelo mMRC ou da intensidade dos sintomas pelo CAT. Portanto, este paciente pertence ao Grupo E.\n\nQuanto ao tratamento de manutenção para o Grupo E, a base é a combinação de dois broncodilatadores de longa ação: um beta-2-agonista de longa ação (LABA) associado a um antimuscarínico de longa ação (LAMA). Contudo, o GOLD estabelece que, se o paciente apresentar uma contagem de eosinófilos no sangue periférico maior ou igual a 300 células/mm³, a terapia tripla inicial (LABA + LAMA + corticoide inalatório - CI) é a conduta preferencial para reduzir o risco de futuras exacerbações e mortalidade. Como o paciente possui 400 eosinófilos/mm³, ele preenche o critério para a terapia tripla.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. O corticoide inalatório (CI) nunca deve ser utilizado como monoterapia no tratamento da DPOC, pois aumenta o risco de pneumonias e não promove a broncodilatação necessária. O SABA (broncodilatador de curta ação) é indicado apenas para alívio agudo de sintomas, não sendo a base da manutenção pós-alta.\n\nAlternativa b) Incorreta. A azitromicina é uma terapia adjuvante considerada apenas para pacientes que permanecem exacerbadores mesmo com o tratamento inalatório otimizado, preferencialmente em ex-fumantes. Além disso, faltam o componente LAMA e o corticoide inalatório, que são prioritários neste caso devido aos eosinófilos.\n\nAlternativa c) Incorreta. As metilxantinas (como a aminofilina e a teofilina) são drogas de terceira linha, com baixo benefício clínico e alto risco de toxicidade e interações medicamentosas. O uso de corticoide isolado é contraindicado.\n\nAlternativa d) Correta. Esta alternativa contempla a terapia tripla (LABA + LAMA + CI), que é a recomendação atual para pacientes do Grupo E com contagem de eosinófilos acima de 300 células/mm³, visando ao controle de sintomas e à prevenção de novas internações.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:32.872Z"
+  },
+  {
+    "id": "AJUDA_9d9dcaf7-6e69-49aa-abcb-c5c3845d2e22",
+    "originalId": "9d9dcaf7-6e69-49aa-abcb-c5c3845d2e22",
+    "statement": "Em US realizada na 12ª semana de gestação, identificou-se uma gestação gemelar monocoriônica e diamniótica. Nesse caso, em relação à placentação, pode-se afirmar que a divisão ocorreu no período de fertilização:",
+    "options": [
+      {
+        "id": "A",
+        "text": "durante os 3 primeiros dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "entre o 3º e 8º dias",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "entre o 8º e o 13º dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "após o 13º dia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a placentação em gestações gemelares monozigóticas, é fundamental correlacionar o momento da divisão do ovo com as estruturas que serão compartilhadas. A regra básica na obstetrícia é: quanto mais tardia for a divisão embrionária, maior será o compartilhamento de anexos ovulares.\n\nAlternativa a) Incorreta. Se a divisão ocorrer precocemente, nos primeiros 3 dias após a fertilização (fase de mórula), as células ainda são totipotentes. Isso resulta em uma gestação dicoriônica e diamniótica, ou seja, cada feto terá sua própria placenta e sua própria bolsa amniótica, de forma idêntica ao que ocorre em gêmeos dizigóticos (fraternos).\n\nAlternativa b) Correta. A divisão entre o 4º e o 8º dia ocorre na fase de blastocisto. Nesse estágio, o trofoblasto (que dará origem ao córion/placenta) já está diferenciado, mas a cavidade amniótica ainda não se formou. Portanto, os embriões compartilharão o mesmo córion, mas desenvolverão sacos amnióticos independentes. Esse processo resulta na gestação monocoriônica e diamniótica, que é o cenário descrito na questão.\n\nAlternativa c) Incorreta. Quando a divisão ocorre entre o 8º e o 13º dia, o disco embrionário e a cavidade amniótica já estão formados. Por esse motivo, os gêmeos dividirão a mesma placenta e a mesma bolsa, resultando em uma gestação monocoriônica e monoamniótica. Este tipo de gestação apresenta maior risco devido ao emaranhamento de cordões umbilicais.\n\nAlternativa d) Incorreta. Divisões que ocorrem após o 13º dia, momento em que se inicia a formação da linha primitiva e do disco embrionário, são incompletas. Isso leva ao desenvolvimento de gêmeos conjugados, popularmente conhecidos como gêmeos siameses.\n\nResumo do cronograma de divisão:\n- 0 a 3 dias: Dicoriônica / Diamniótica (Duas placentas, duas bolsas).\n- 4 a 8 dias: Monocoriônica / Diamniótica (Uma placenta, duas bolsas).\n- 8 a 13 dias: Monocoriônica / Monoamniótica (Uma placenta, uma bolsa).\n- Após 13 dias: Gêmeos conjugados.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Gestação Múltipla"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:32.872Z"
+  },
+  {
+    "id": "AJUDA_9daab9da-4b14-4442-86fe-0a2946d90f38",
+    "originalId": "9daab9da-4b14-4442-86fe-0a2946d90f38",
+    "statement": "Na insuficiência cardíaca com fração de ejeção reduzida, qual é o papel dos Inibidores da Enzima Conversora de Angiotensina (IECA) no remodelamento cardíaco?",
+    "options": [
+      {
+        "id": "A",
+        "text": "IECA promovem vasoconstrição, aumentando a pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "IECA reduzem o volume de ejeção do ventrículo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IECA diminuem a sobrecarga de pressão e o remodelamento ventricular, melhorando a função cardíaca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "IECA aumentam a resistência vascular periférica, reduzindo o retorno venoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Na Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFER), ocorre uma ativação crônica do sistema renina-angiotensina-aldosterona (SRAA). A Angiotensina II, principal produto desse sistema, promove vasoconstrição arterial e estimula o remodelamento cardíaco patológico (hipertrofia de miofibrilas e fibrose miocárdica). O papel dos IECA é central no tratamento dessa patologia.\n\nAnálise das alternativas:\n\na) Incorreta. Os IECA bloqueiam a produção de Angiotensina II, que é um potente vasoconstritor. Logo, o efeito esperado é a vasodilatação com consequente redução da resistência vascular e da pressão arterial, e não o aumento.\n\nb) Incorreta. Ao reduzirem a pós-carga (resistência contra a qual o coração ejeta o sangue), os IECA facilitam o trabalho do ventrículo esquerdo. Isso tende a melhorar ou manter o volume de ejeção, auxiliando o desempenho hemodinâmico do paciente.\n\nc) Correta. Os IECA reduzem a pós-carga ao promoverem vasodilatação sistêmica, diminuindo a sobrecarga de pressão sobre o ventrículo. Além disso, ao bloquearem a Angiotensina II, eles interrompem os estímulos moleculares que levam à fibrose e à dilatação progressiva das cavidades cardíacas (remodelamento). Esse efeito é fundamental para melhorar a função cardíaca e reduzir a mortalidade na ICFER.\n\nd) Incorreta. Os IECA diminuem a resistência vascular periférica através da vasodilatação. Embora possam reduzir indiretamente o retorno venoso (pré-carga) devido à menor secreção de aldosterona e consequente menor retenção de sódio e água, a alternativa erra ao afirmar que essas drogas aumentam a resistência vascular.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:32.872Z"
+  },
+  {
+    "id": "AJUDA_9dae11af-1a17-46e5-a09e-1a21431c7f4f",
+    "originalId": "9dae11af-1a17-46e5-a09e-1a21431c7f4f",
+    "statement": "Em uma mulher de 23 anos de idade, com ciclos regulares de 28 dias, o pico de LH ocorre",
+    "options": [
+      {
+        "id": "A",
+        "text": "na metade da fase lútea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "na metade da fase folicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "no início da fase folicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "no meio do ciclo, entre fase folicular e lútea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "no final da fase lútea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O ciclo menstrual humano, em um modelo clássico de 28 dias, é dividido em duas fases principais: a fase folicular (que precede a ovulação) e a fase lútea (que sucede a ovulação). O evento que separa essas duas fases é a ovulação.\n\nO pico do hormônio luteinizante (LH) é o principal gatilho biológico para a ovulação. Ele ocorre devido ao feedback positivo do estradiol sobre a hipófise quando este atinge níveis elevados e sustentados ao final da fase folicular.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Na metade da fase lútea (aproximadamente no 21.º dia do ciclo), o hormônio predominante é a progesterona, produzida pelo corpo lúteo. O LH está em níveis baixos nesse período devido ao feedback negativo exercido pelos hormônios esteroides sexuais sobre o eixo hipotálamo-hipófise.\n\nAlternativa b) Incorreta. No meio da fase folicular, o folículo dominante está em processo de seleção e crescimento sob influência predominante do FSH (hormônio folículo-estimulante). Os níveis de estrogênio estão em ascensão progressiva, mas ainda não atingiram o limiar necessário para disparar o pico de LH.\n\nAlternativa c) Incorreta. O início da fase folicular coincide com o primeiro dia da menstruação. Nesse estágio, os níveis de progesterona e estrogênio caíram e as gonadotrofinas (FSH e LH) estão em patamares basais, começando a subir discretamente para recrutar uma nova coorte de folículos.\n\nAlternativa d) Correta. O pico de LH ocorre justamente no meio do ciclo, servindo como o divisor biológico entre a fase folicular e a fase lútea. Ele acontece aproximadamente entre 34 a 36 horas antes da liberação do óvulo (ovulação). Em um ciclo de 28 dias, esse fenômeno se concentra em torno do 14.º dia.\n\nAlternativa e) Incorreta. No final da fase lútea, ocorre a regressão do corpo lúteo (luteólise) caso não tenha havido fecundação. Isso resulta na queda drástica dos níveis de progesterona e estrogênio, levando à menstruação. Os níveis de LH permanecem baixos durante essa transição.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Ciclo Menstrual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:32.872Z"
+  },
+  {
+    "id": "AJUDA_9db521e3-a476-4da3-8bbb-c6fdf1f2474b",
+    "originalId": "9db521e3-a476-4da3-8bbb-c6fdf1f2474b",
+    "statement": "Menino de 18 meses de idade, previamente hígido, apresenta quadro súbito de choro, dispneia, engasgo, sialorreia e tosse. A mãe refere que criança estava brincando no quarto sozinha quando os sintomas se iniciaram. No pronto atendimento, mantinha-se choroso, sem sialorreia ou dispneia. A principal hipótese diagnóstica e conduta são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "ingestão de corpo estranho; realizar exame físico completo e Rx cervical, de tórax e de abdome (2 incidências).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "ingestão de corpo estranho; realizar exame físico completo e tomografia de tórax para detectar objetos radiopacos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ingestão de cáustico; realizar exame físico completo e solicitar avaliação de especialista para endoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "intoxicação exógena; realizar lavado gástrico e solicitar exames laboratoriais séricos e urinários.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso: Trata-se de um lactente de 18 meses, faixa etária em que a exploração do ambiente e a fase oral são predominantes, tornando a ingestão de corpos estranhos um evento comum. O início súbito de engasgo, tosse, sialorreia (excesso de saliva) e dispneia enquanto a criança brincava sozinha é a descrição clássica para a ingestão ou aspiração de um corpo estranho. A estabilização clínica posterior (ausência de dispneia e sialorreia no atendimento) pode indicar que o objeto progrediu pelo trato digestório ou que a via aérea foi parcialmente desobstruída, mas a investigação permanece obrigatória.\n\nAlternativa a: Correta. A principal hipótese é a ingestão de corpo estranho. Diante da suspeita, a conduta inicial padrão é realizar o exame físico completo (avaliando sinais de obstrução de via aérea ou perfuração) e solicitar radiografias para localização do objeto. Devem ser solicitados raios X de toda a trajetória possível: região cervical, tórax e abdome. A solicitação em duas incidências (frente e perfil) é essencial, pois alguns objetos, como moedas ou baterias de disco, podem ser visualizados apenas em uma das posições ou podem ser diferenciados entre si pela forma como se posicionam no esôfago versus traqueia.\n\nAlternativa b: Incorreta. Embora a hipótese diagnóstica esteja correta, a tomografia computadorizada não é o exame de triagem inicial. O raio X simples é o padrão-ouro inicial por ser rápido, amplamente disponível, ter menor dose de radiação e ser suficiente para identificar a maioria dos corpos estranhos radiopacos (como moedas e metais). A tomografia é reservada para casos em que o raio X é negativo, mas a suspeita clínica persiste, ou quando há suspeita de complicações como perfuração e abscesso.\n\nAlternativa c: Incorreta. A ingestão de cáusticos geralmente apresenta um contexto de ingestão de produtos de limpeza ou químicos, cursando com lesões em mucosa oral, dor intensa ao deglutir e possível instabilidade hemodinâmica, dependendo da substância. O quadro de \"engasgo súbito\" e \"tosse\" é muito mais sugestivo de um objeto sólido causando obstrução mecânica do que uma queimadura química.\n\nAlternativa d: Incorreta. A intoxicação exógena por fármacos ou drogas costuma apresentar sintomas sistêmicos, como alteração do nível de consciência, alterações pupilares, convulsões ou alterações de sinais vitais, e não um quadro súbito de engasgo mecânico. Além disso, o lavado gástrico possui indicações muito restritas na pediatria moderna, sendo contraindicado em diversas situações (como ingestão de cáusticos ou hidrocarbonetos) e não teria utilidade na remoção de um corpo estranho sólido.\n\nResumo da conduta: Em pediatria, a tríade de início súbito de tosse, sufocação/engasgo e sibilância localizada (ou história de brincar com objetos pequenos) deve sempre levar à investigação de corpo estranho com radiografias em duas incidências abrangendo pescoço, tórax e abdome.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ingestão de corpo estranho",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:32.872Z"
+  },
+  {
+    "id": "AJUDA_9db87ce8-764f-4a20-a3d6-edcaeb920a75",
+    "originalId": "9db87ce8-764f-4a20-a3d6-edcaeb920a75",
+    "statement": "Para a avaliação da adiposidade na infância e adolescência, utilizamos curvas de IMC ajustado para o sexo e a idade. Quando o IMC do paciente foi assinalado na curva adotada pelo Ministério da Saúde, notamos que o paciente encontra-se na categoria de obesidade. Isso ocorre porque (assinale a correta):",
+    "options": [
+      {
+        "id": "A",
+        "text": "Usamos a curva do CDC e o percentil é > p.85",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Usamos a curva do CDC e o percentil é > p.95",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Usamos a curva do CDC e o percentil é > p.97",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Usamos a curva da OMS e o escore Z-IMC é > +1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Usamos a curva da OMS e o escore Z-IMC é > +2",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver essa questão, é fundamental conhecer as normas do Ministério da Saúde do Brasil para a avaliação nutricional de crianças e adolescentes. O Ministério da Saúde adota as curvas de crescimento da Organização Mundial da Saúde (OMS) de 2006 (para crianças de 0 a 5 anos) e de 2007 (para crianças e adolescentes de 5 a 19 anos). Diferentemente das curvas do CDC norte-americano, que utilizam prioritariamente percentis, as curvas da OMS e do Ministério da Saúde utilizam o escore-Z como principal parâmetro de classificação nos manuais de atenção básica.\n\nNa faixa etária de 5 a 19 anos, que abrange grande parte da infância e toda a adolescência, os critérios de IMC para idade da OMS são:\n- Escore-Z maior que +1 e menor ou igual a +2: Sobrepeso.\n- Escore-Z maior que +2 e menor ou igual a +3: Obesidade.\n- Escore-Z maior que +3: Obesidade grave.\n\nPara crianças de 0 a 5 anos, o escore-Z maior que +2 indica sobrepeso e o maior que +3 indica obesidade. No entanto, em questões de prova que englobam a criança e o adolescente de forma geral, o ponto de corte de escore-Z maior que +2 é o padrão-ouro para definir a categoria de obesidade conforme a alternativa correta.\n\nAnálise das alternativas:\n\na) Incorreta. O Ministério da Saúde não utiliza as curvas do CDC (Centers for Disease Control and Prevention) como referência oficial. Além disso, no sistema do CDC, o percentil acima de 85 indica sobrepeso.\n\nb) Incorreta. Embora o percentil acima de 95 na curva do CDC seja o critério para obesidade naquele sistema, o Ministério da Saúde adota as curvas da OMS e prioriza o uso do escore-Z.\n\nc) Incorreta. O percentil 97 não é o ponto de corte definidor de obesidade nas curvas do CDC (que usa o percentil 95), e o modelo adotado no Brasil é o da OMS.\n\nd) Incorreta. Nas curvas da OMS para a faixa de 5 a 19 anos, um escore-Z de IMC maior que +1 indica sobrepeso, e não obesidade.\n\ne) Correta. Conforme as diretrizes da OMS adotadas pelo Ministério da Saúde, o diagnóstico de obesidade na faixa etária de 5 a 19 anos é estabelecido quando o escore-Z do IMC para a idade é maior que +2.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Obesidade na Infância e na Adolescência"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:32.872Z"
+  },
+  {
+    "id": "AJUDA_9dbab839-0357-4f79-ba77-3edea0abbbb5",
+    "originalId": "9dbab839-0357-4f79-ba77-3edea0abbbb5",
+    "statement": "Uma metanálise de ensaios clínicos mostrou um risco relativo de 0,72 (IC 95%: 0,60-0,88) para mortalidade com o uso de um novo anticoagulante. O teste de heterogeneidade Qui-quadrado (Chi²) apresentou p = 0,31. Qual é a implicação principal desse resultado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O valor elevado de p no teste Chi² indica que os resultados da metanálise não são confiáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O novo anticoagulante não apresenta benefício estatisticamente significativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O risco relativo de 0,72 indica aumento de mortalidade com o novo anticoagulante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O p > 0,05 no teste de heterogeneidade é indicativo de viés de publicação entre os estudos analisados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A ausência de heterogeneidade estatisticamente significativa sugere consistência entre os estudos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender essa questão, precisamos analisar dois componentes fundamentais de uma meta-análise: o efeito global (Risco Relativo e seu Intervalo de Confiança) e a heterogeneidade entre os estudos.\n\nAnálise dos dados fornecidos:\n1. Risco Relativo (RR) de 0,72 com IC 95% (0,60-0,88): Como o valor de 0,72 é menor que 1,0 e o intervalo de confiança não cruza a unidade (1,0), concluímos que o novo anticoagulante reduz a mortalidade de forma estatisticamente significativa (uma redução de 28%).\n2. Teste de Heterogeneidade (Qui-quadrado) com p = 0,31: O teste de heterogeneidade avalia se as diferenças entre os resultados dos estudos individuais são maiores do que o esperado apenas pelo acaso. Um p-valor maior que 0,05 (neste caso, 0,31) indica que não há evidência estatística de heterogeneidade significativa. Ou seja, os estudos são considerados homogêneos ou consistentes entre si.\n\nAnálise das alternativas:\n\na) Incorreta. Um p-valor elevado no teste de heterogeneidade não retira a confiabilidade da meta-análise. Pelo contrário, ele sugere que os estudos incluídos são semelhantes o suficiente para que seus resultados sejam combinados de forma robusta.\n\nb) Incorreta. O benefício é estatisticamente significativo, pois o intervalo de confiança do Risco Relativo (0,60 a 0,88) está inteiramente abaixo de 1,0, indicando proteção.\n\nc) Incorreta. Um risco relativo de 0,72 indica uma redução de 28% na mortalidade (efeito protetor), e não um aumento. O aumento de mortalidade seria indicado por um RR maior que 1,0.\n\nd) Incorreta. O teste de heterogeneidade (Qui-quadrado ou I-quadrado) mede a variabilidade entre os estudos. O viés de publicação é avaliado por outros métodos, como o gráfico de funil (Funnel Plot) ou os testes de Egger e Begg.\n\ne) Correta. Como o p-valor do teste Qui-quadrado foi 0,31 (maior que o nível de significância padrão de 0,05 ou 0,10), falhamos em rejeitar a hipótese nula de homogeneidade. Isso significa que as variações entre os estudos são provavelmente devidas ao acaso, sugerindo consistência nos achados.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:32.872Z"
+  },
+  {
+    "id": "AJUDA_9dbc3160-39e0-4323-8994-005d513feded",
+    "originalId": "9dbc3160-39e0-4323-8994-005d513feded",
+    "statement": "Durante uma consulta, um paciente adolescente pediu ao médico que não informasse seus pais sobre um problema de saúde, pois ele temia uma reação negativa. Com base nessa situação hipotética, segundo o Código de Ética Médica, assinale a alternativa que apresenta a situação em que o médico deve respeitar o pedido de confidencialidade do paciente adolescente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quando o paciente tem 16 anos de idade ou mais e entende os riscos envolvidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente se o problema de saúde do adolescente não representa um risco grave à sua saúde ou à saúde de terceiros.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Quando o adolescente assina um termo de responsabilidade pela confidencialidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente se o médico julgar que os pais não são emocionalmente preparados para lidar com a situação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Sempre que o paciente pedir sigilo, independentemente do contexto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O sigilo profissional no atendimento ao adolescente é regido pelo Código de Ética Médica (CEM), especialmente nos artigos 74 e 103. A regra geral estabelece que o médico deve manter o segredo profissional mesmo quando o paciente é menor de idade, desde que este tenha capacidade de discernimento, exceto em situações onde a falta de revelação possa causar dano ao paciente ou a terceiros.\n\nAnalise das alternativas:\n\nAlternativa (a) Incorreta: O Código de Ética Médica não estabelece uma idade cronológica fixa (como 16 anos) para garantir o sigilo. O critério fundamental é a capacidade de discernimento, ou seja, a maturidade do adolescente para compreender seu problema de saúde e as orientações médicas, o que deve ser avaliado caso a caso pelo profissional.\n\nAlternativa (b) Correta: Esta alternativa reflete a exceção prevista no CEM. O sigilo deve ser respeitado sempre que o adolescente tiver discernimento, mas deve ser quebrado obrigatoriamente se houver risco grave à saúde (como risco de morte, autolesão, abuso ou doenças graves sem tratamento adequado) ou risco à coletividade. Nessas situações, configura-se o justo motivo para informar aos responsáveis legais.\n\nAlternativa (c) Incorreta: A manutenção do sigilo é uma prerrogativa da relação médico-paciente baseada na ética e na maturidade do menor. Um termo de responsabilidade assinado por um adolescente não possui validade jurídica ou ética para impedir a comunicação aos pais caso haja necessidade médica ou risco envolvido.\n\nAlternativa (d) Incorreta: O preparo emocional dos pais é um fator que o médico deve considerar na forma como conduz a comunicação, mas não é o critério ético que define a manutenção ou a quebra do sigilo. O foco é sempre a autonomia do adolescente (se houver discernimento) contraposta ao risco de dano.\n\nAlternativa (e) Incorreta: O sigilo médico não é absoluto. O pedido do paciente é importante, mas o médico tem o dever de intervir e comunicar os responsáveis se identificar que o adolescente não compreende os riscos ou se a omissão da informação puder resultar em prejuízo grave à saúde do jovem.\n\nGabarito: Alternativa (b).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:32.872Z"
+  },
+  {
+    "id": "AJUDA_9dbf9f0c-7bd9-4c97-b75e-e94f17d0c325",
+    "originalId": "9dbf9f0c-7bd9-4c97-b75e-e94f17d0c325",
+    "statement": "Durante o período da perimenopausa e da pós-menopausa, devido à alteração dos níveis hormonais, há diferentes alterações metabólicas no corpo da mulher. A respeito dessa questão, assinale a alternativa cuja afirmação está INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O metabolismo basal do corpo feminino diminui significativamente, por conta da elevação expressiva das gonadotrofinas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "No caso de um estilo de vida inalterado, pode resultar em um ganho de peso anual por diminuição da taxa metabólica basal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O ganho de peso, tipicamente, significa um predomínio do aumento da massa gorda abdominal (visceral).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A massa livre de gordura e a massa muscular esquelética são caracterizadas por uma diminuição, o que pode levar à sarcopenia e à obesidade sarcopênica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O tema central da questão aborda as repercussões metabólicas e as alterações da composição corporal decorrentes da perimenopausa e pós-menopausa, períodos marcados pela falência ovariana progressiva e consequente hipoestrogenismo. Como o enunciado solicita a alternativa INCORRETA, vamos analisar cada uma delas:\n\nAlternativa A (Incorreta - Gabarito): Embora a taxa metabólica basal (TMB) decline progressivamente na mulher climatérica, essa redução decorre primariamente do envelhecimento cronológico, da perda de massa muscular esquelética e da própria privação de estrogênio nos tecidos metabólicos, e não da elevação das gonadotrofinas. O aumento do FSH e do LH é uma consequência secundária da perda do feedback negativo pelo hipoestrogenismo e pela redução das inibinas, não exercendo papel causal direto na queda do metabolismo basal.\n\nAlternativa B (Correta): Com a redução fisiológica da taxa metabólica basal, a manutenção do mesmo consumo calórico e do mesmo nível de atividade física (estilo de vida inalterado) leva a um balanço energético positivo. O excedente calórico não utilizado é convertido em tecido adiposo, gerando ganho de peso progressivo ao longo dos anos.\n\nAlternativa C (Correta): O hipoestrogenismo altera a sinalização dos receptores de estrogênio no tecido adiposo, promovendo uma redistribuição da gordura corporal do padrão ginoide (quadris e coxas) para o padrão androide (visceral e abdominal). A adiposidade visceral é metabolicamente ativa e está diretamente associada ao aumento da resistência à insulina e do risco cardiovascular.\n\nAlternativa D (Correta): A transição menopáusica e o envelhecimento favorecem o catabolismo muscular e a perda de massa magra, podendo culminar em sarcopenia. A coexistência de perda de massa muscular com acúmulo de tecido adiposo caracteriza a obesidade sarcopênica, condição que aumenta a fragilidade física, o risco de quedas e o acometimento cardiometabólico.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:32.872Z"
+  },
+  {
+    "id": "AJUDA_9dc269cf-65ed-4cae-9535-039637292b5a",
+    "originalId": "9dc269cf-65ed-4cae-9535-039637292b5a",
+    "statement": "No âmbito da Atenção Primária a crianças e adolescentes, todo médico é responsável pela orientação preventiva de injúrias por causas externas. Nesse sentido, é correto afirmar que há evidências científicas suficientes de que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a estatura mínima para uma criança ocupante do banco traseiro de veículo automotor usar o cinto de segurança do carro isoladamente, sem a necessidade do uso de dispositivo de retenção, independentemente de sua idade, é 1,35 metro segundo o padrão europeu e 1,45 metro segundo o padrão estadunidense.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a orientação antecipatória é factível e comprovadamente eficaz na melhora do conhecimento sobre segurança, na mudança do comportamento para um estilo mais seguro e na redução efetiva de ocorrências de todos os tipos de injúrias por causas externas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o ensino de natação não é uma medida considerada eficaz na prevenção do afogamento de crianças e jovens, devendo-se dar preferência ao uso de dispositivos pessoais de flutuação, como as boias, e ao cercamento de piscinas com grades com altura mínima de 1,0 metro e portões com mola e tranca automática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a supervisão deficiente por parte de cuidadores é o fator de risco mais relevante para injúrias por causas externas, sobretudo não intencionais, havendo à disposição bons programas preventivos, especificamente focados em melhorá-la.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "No âmbito da Atenção Primária à Saúde (APS) e da Puericultura, a prevenção de acidentes (injúrias por causas externas) é um dos pilares do atendimento pediátrico. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A: Incorreta. Embora o valor de 1,45 metro seja amplamente aceito (inclusive pela legislação brasileira recente e pelo padrão estadunidense) como a altura necessária para que o cinto de segurança do carro se ajuste corretamente ao corpo da criança (passando pelo ombro e quadril, e não pelo pescoço e abdome), a questão afirma que isso ocorre \"independentemente da idade\". No Brasil, a Resolução 819/2021 do CONTRAN estabelece que crianças com menos de 10 anos que não atingiram 1,45 metro devem usar dispositivo de retenção (booster). Além disso, a alternativa B é considerada mais abrangente e fundamentada como evidência de prática clínica em APS.\n\nAlternativa B: Correta. Esta alternativa reflete o posicionamento da Sociedade Brasileira de Pediatria (SBP) e de diversas academias internacionais. A \"orientação antecipatória\" consiste em o médico prever os riscos de acordo com a fase do desenvolvimento neuropsicomotor da criança (ex.: risco de sufocação no lactente, quedas quando começa a andar, atropelamentos na idade escolar) e orientar os pais antes que o evento ocorra. Há evidências de que essa prática aumenta o conhecimento da família, promove mudanças para comportamentos mais seguros no domicílio e reduz a morbimortalidade por causas externas.\n\nAlternativa C: Incorreta. A afirmação apresenta vários erros conceituais. Primeiro, o ensino de natação, a partir da idade apropriada (geralmente após os 4 anos, ou entre 1 e 4 anos com supervisão rigorosa), é sim considerado uma camada de proteção adicional. Segundo, o uso de boias de braço ou infláveis não é recomendado como medida de segurança, pois podem furar ou escorregar, gerando falsa sensação de segurança; o correto é o uso de coletes salva-vidas homologados. Por fim, as grades de proteção em piscinas devem ter, preferencialmente, no mínimo 1,2 metro de altura, e não 1,0 metro.\n\nAlternativa D: Incorreta. Embora a supervisão deficiente seja um fator contribuinte importante, ela não é classificada como o fator de risco isolado \"mais relevante\" sobre o qual se tem controle efetivo. Na verdade, as evidências científicas mostram que intervenções passivas (como o uso de cadeirinhas, cercas em piscinas e redução da temperatura de aquecedores de água) são mais eficazes do que depender exclusivamente da supervisão constante, que é passível de falha humana. Além disso, não há abundância de \"bons programas\" que consigam, isoladamente, garantir a melhoria da supervisão de forma sustentável.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Segurança na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:32.872Z"
+  }
+]

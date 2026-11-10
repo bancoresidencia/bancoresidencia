@@ -1,0 +1,534 @@
+[
+  {
+    "id": "AJUDA_5a620d6c-d7a9-4320-82b0-8e6bfb4ac89a",
+    "originalId": "5a620d6c-d7a9-4320-82b0-8e6bfb4ac89a",
+    "statement": "Paciente, sexo masculino, 65 anos de idade, realizou quimioterapia neoadjuvante e está no 5º dia de pós-operatório de colectomia direita com anastomose ileocólica para tratamento de adenocarcinoma de cólon. O paciente já estava com dieta de água, chá e gelatina, quando passou a cursar com distensão e dor abdominal. Sem outras queixas. Ao exame físico, bom estado geral, corado, temperatura axilar de 38ºC, FC: 108bpm, PA: 134x78mmHg; abdome levemente distendido, com dor à palpação profunda difusamente, com descompressão brusca negativa; toque retal sem alterações. Diante desse caso clínico:\n\nIndique o principal fator de risco para a evolução desfavorável deste paciente no pós-operatório.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Introdução da dieta oral com água, chá e gelatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alteração do estado nutricional e imunológico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Formação de aderências intestinais no pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Distúrbio eletrolítico no pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nO paciente em questão está no 5º dia de pós-operatório (DPO) de uma colectomia direita, um período crítico para o surgimento de complicações cirúrgicas, especialmente a deiscência de anastomose (fuga de material entérico pela emenda do intestino). Ele apresenta sinais sugestivos de resposta inflamatória e possível sepse de foco abdominal: taquicardia (108 bpm), febre (38 °C), distensão e dor abdominal. O ponto-chave da questão é identificar qual fator, entre as opções, mais contribui para esse cenário de evolução desfavorável.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\nO paciente foi submetido à quimioterapia neoadjuvante para o tratamento de um adenocarcinoma de cólon. Tanto a presença de uma neoplasia maligna quanto o tratamento quimioterápico prévio impactam severamente o estado nutricional e a competência imunológica do indivíduo. A cicatrização de uma anastomose intestinal depende diretamente da síntese de colágeno e da perfusão tecidual, processos que ficam prejudicados em pacientes desnutridos ou imunossuprimidos. Portanto, a alteração do estado nutricional e imunológico é o principal fator de risco sistêmico para a falha na cicatrização (deiscência) e para a dificuldade em combater infecções no pós-operatório, justificando a evolução clínica negativa.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): A introdução da dieta oral (água, chá e gelatina) no 5º DPO não é um fator de risco. Pelo contrário, protocolos modernos de recuperação acelerada (como o ACERTO ou ERAS) preconizam a realimentação precoce, que auxilia na motilidade intestinal e reduz a translocação bacteriana. A dieta não causa a deiscência; a dor e a distensão surgiram após a dieta porque o intestino já não estava funcionando adequadamente ou havia um processo inflamatório em curso.\n\nAlternativa (c): A formação de aderências (bridas) é um processo cicatricial comum após qualquer cirurgia abdominal e pode causar obstrução intestinal tardia. No entanto, no 5º DPO, as aderências ainda são precoces e fibrinosas, não sendo o principal fator de risco para a evolução desfavorável descrita, que sugere um quadro inflamatório/infeccioso mais agudo relacionado à cirurgia oncológica de grande porte.\n\nAlternativa (d): Distúrbios eletrolíticos (como hipocalemia) podem ocorrer no pós-operatório e levar ao íleo paralítico (parada do funcionamento do intestino). Contudo, eles costumam ser consequência do estresse cirúrgico ou do próprio quadro de distensão, e não a causa primária da evolução desfavorável em um paciente com câncer e quimioterapia prévia. O fator sistêmico (nutricional/imunológico) é muito mais determinante para complicações graves, como a deiscência de anastomose.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Perioperatório",
+      "Nutrição em Cirurgia",
+      "Complicações Pós-Operatórias",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:39.176Z"
+  },
+  {
+    "id": "AJUDA_5a6deaa9-3536-42da-85b4-bd2f1d0bd419",
+    "originalId": "5a6deaa9-3536-42da-85b4-bd2f1d0bd419",
+    "statement": "Paciente de 37 semanas, G3P2, com cesariana prévia única há 4 anos, entra em trabalho de parto. Dilatação 5 cm, bolsa íntegra, evolução adequada. Partograma adequado. A maternidade dispõe de equipe para assistência ao parto vaginal após cesárea (VBAC). Qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar cesariana eletiva, pois toda cesariana prévia contraindica parto vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar cesariana devido risco absoluto de ruptura uterina em VBAC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Permitir tentativa de parto vaginal, com vigilância contínua.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indicar cesariana quando atingir plano +1, pela cicatriz uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar amniotomia imediata para acelerar o trabalho e evitar ruptura uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO TÉCNICO\n\nA questão aborda a Prova de Trabalho de Parto Após Cesárea (conhecida pela sigla em inglês TOLAC — Trial of Labor After Cesarean). O cenário descreve uma paciente com uma única cesariana prévia (há 4 anos), em trabalho de parto a termo, com evolução favorável (dilatação de 5 cm e partograma adequado) em uma unidade com suporte para assistência ao VBAC (Vaginal Birth After Cesarean).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a: Incorreta. Ter uma cesariana prévia não é uma contraindicação absoluta para o parto vaginal. De acordo com as diretrizes do Ministério da Saúde e de grandes instituições como o ACOG, pacientes com uma única cesariana anterior com incisão transversa baixa devem ser informadas sobre os benefícios e incentivadas a tentar o parto vaginal, pois apresentam altas taxas de sucesso.\n\nAlternativa b: Incorreta. O risco de rotura uterina em mulheres com apenas uma cesariana segmentar anterior é considerado baixo, variando aproximadamente entre 0,5% e 0,9%. O termo \"risco absoluto\" está incorreto, pois a maioria das pacientes evolui sem essa complicação.\n\nAlternativa c: Correta. Esta é a conduta preconizada. Diante de uma paciente em trabalho de parto ativo, com boa progressão (partograma adequado) e apenas uma cicatriz uterina prévia, a recomendação é permitir a prova de trabalho de parto. A vigilância deve ser contínua, monitorando-se a frequência cardíaca fetal e a dinâmica uterina para identificar precocemente sinais de rotura uterina ou sofrimento fetal.\n\nAlternativa d: Incorreta. O plano +1 de DeLee indica que a apresentação fetal já ultrapassou as espinhas isquiáticas, o que é um sinal de excelente progressão do parto. Realizar uma cesariana neste estágio, sem uma indicação de urgência (como sofrimento fetal ou parada de progressão), seria uma intervenção desnecessária e contraproducente.\n\nAlternativa e: Incorreta. A amniotomia (rompimento artificial das membranas) não é uma medida preventiva para rotura uterina. Embora possa ser utilizada para acelerar o trabalho de parto em situações de distocia funcional, seu uso rotineiro e imediato não é recomendado, especialmente porque o caso descreve uma evolução espontânea e adequada.\n\nCONCLUSÃO\n\nPara a prática clínica e provas de residência, lembre-se de que uma cesariana prévia não impede o parto vaginal. O sucesso do VBAC é de 60% a 80%. A principal contraindicação seria o antecedente de duas ou mais cesarianas (embora discutível em alguns protocolos), incisão uterina corporal (clássica) prévia ou rotura uterina anterior. No caso descrito, a conduta é manter o trabalho de parto sob vigilância.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:39.176Z"
+  },
+  {
+    "id": "AJUDA_5a6fa851-7c6c-449b-bb62-92a586f57ffa",
+    "originalId": "5a6fa851-7c6c-449b-bb62-92a586f57ffa",
+    "statement": "Assinale a alternativa correta em relação à atenção à saúde da mulher, segundo a Lei nº 8.080/90.",
+    "options": [
+      {
+        "id": "A",
+        "text": "No caso de atendimento que envolva qualquer tipo de sedação ou rebaixamento do nível de consciência, caso a paciente não indique acompanhante, a unidade de saúde responsável pelo atendimento indicará pessoa de sua família para acompanhá-la.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A paciente não poderá renunciar ao direito de ter acompanhante, nos casos de atendimento com sedação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em consultas, exames e procedimentos realizados em unidades de saúde públicas ou privadas, toda mulher tem o direito de fazer-se acompanhar por pessoa maior de idade, durante todo o período do atendimento, independentemente de notificação prévia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "As unidades de saúde de todo o país, desde que públicas, ficam obrigadas a manter, em local visível de suas dependências, aviso que informe sobre o direito da mulher a acompanhante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nos casos graves que requeiram unidades de terapia intensiva, a usuária não terá direito a acompanhante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda as recentes e importantes atualizações da Lei nº 8.080/1990 (Lei Orgânica da Saúde), especificamente trazidas pela Lei nº 14.737/2023, que ampliou o direito da mulher ao acompanhante em atendimentos de saúde.\n\nAlternativa (a) Incorreta. De acordo com o Art. 19-J, § 2º, caso a paciente esteja sedada ou com rebaixamento do nível de consciência e não tenha indicado um acompanhante próprio, a unidade de saúde deverá indicar um profissional de saúde, preferencialmente do sexo feminino, para acompanhá-la. A lei não prevê que a unidade busque ou indique um familiar de ofício para essa função técnica dentro do atendimento.\n\nAlternativa (b) Incorreta. A paciente pode, sim, renunciar ao direito ao acompanhante, inclusive em atendimentos com sedação. No entanto, conforme o Art. 19-J, § 4º, essa renúncia deve ser feita por escrito, assinada pela paciente e com antecedência mínima de 24 horas, após ela ter sido informada sobre seus direitos.\n\nAlternativa (c) Correta. Esta alternativa reproduz o texto do \"caput\" do Art. 19-J. O direito ao acompanhante (pessoa maior de idade) é garantido em consultas, exames e procedimentos, tanto em unidades públicas quanto privadas. Um ponto crucial para provas é que esse direito independe de notificação prévia por parte da paciente.\n\nAlternativa (d) Incorreta. A obrigatoriedade de manter o aviso visível sobre o direito ao acompanhante não se restringe às unidades públicas. Segundo o Art. 19-J, § 5º, essa obrigação estende-se a todas as unidades de saúde do país, sejam elas públicas ou privadas.\n\nAlternativa (e) Incorreta. O direito ao acompanhante não é extinto em casos graves ou em Unidades de Terapia Intensiva (UTIs). O Art. 19-J, § 6º, estabelece que, em centros cirúrgicos e UTIs com restrição de segurança, o acompanhante deverá ser um profissional de saúde. Caso a paciente não indique um, a própria unidade deverá designar um profissional (preferencialmente do sexo feminino) para acompanhá-la, visando a garantir sua segurança e integridade.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:39.176Z"
+  },
+  {
+    "id": "AJUDA_5a70d024-d2d9-489d-ba9a-3d8ef090e7fa",
+    "originalId": "5a70d024-d2d9-489d-ba9a-3d8ef090e7fa",
+    "statement": "Após identificar uma disparidade nos indicadores de saúde da população em seu município, com piores resultados na população negra (alta prevalência de hipertensão e diabetes, baixa adesão ao pré-natal), a gestora Ana promove uma reunião com as equipes de Saúde da Família (eSF) para discutir as causas e construir um plano de ação. Durante a conversa, ela ouve os seguintes relatos dos profissionais:\n\n• Relato 1: \"O problema é que essa população não se cuida, falta adesão por uma questão cultural deles. A gente orienta, mas eles não seguem.\"\n• Relato 2: \"Não temos como dar atenção especial a um grupo. No SUS, o tratamento tem que ser igual para todos. Se começarmos a focar na população negra, estaremos sendo preconceituosos com os outros.\"\n• Relato 3: \"Nós preenchemos o quesito raça/cor na ficha de atendimento porque é obrigatório, mas nunca tivemos treinamento sobre a Política Nacional de Saúde Integral da População Negra (PNSIPN) ou sobre como o racismo impacta a saúde. Sinceramente, não sabemos o que fazer com essa informação.\"\n\nConsiderando os relatos dos profissionais e os princípios do SUS, a análise de Ana deve concluir que os obstáculos para a melhoria dos indicadores de saúde da população negra estão primordialmente relacionados a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uma falha de comunicação e a uma barreira cultural intrínseca à própria comunidade negra, que resiste às abordagens de saúde convencionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uma crise de financiamento na saúde na municipal, que impede a contratação de equipes maiores e mais qualificadas para atender a todas as demandas com a mesma qualidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Um preconceito individual e isolado de alguns profissionais, que pode ser resolvido com a remoção pontual desses trabalhadores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inadequação da própria Política Nacional de Saúde Integral da População Negra (PNSIPN), que se mostra teórica e desconectada da realidade dos serviços de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Manifestações do racismo estrutural, que se expressam na reprodução de estereótipos (culpabilização da vítima), na falsa ideia de \"neutralidade\" do cuidado e na falta de preparo institucional para implementar políticas de equidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão exige do candidato o conhecimento sobre os princípios do Sistema Único de Saúde (SUS), especialmente o princípio da equidade, e a compreensão da Política Nacional de Saúde Integral da População Negra (PNSIPN). Os relatos apresentados pela gestora Ana ilustram barreiras fundamentais que impedem o alcance de melhores indicadores de saúde para esse grupo específico.\n\nAlternativa a) Incorreta. Esta alternativa reproduz a lógica do Relato 1, que transfere a responsabilidade pelos maus indicadores para a própria população (culpabilização da vítima). O conceito de barreira cultural intrínseca ignora que o sistema de saúde deve ser poroso e adaptável às diversidades, e que a dificuldade de adesão muitas vezes é fruto de um atendimento que não reconhece as especificidades e as necessidades do paciente.\n\nAlternativa b) Incorreta. Embora o financiamento seja um desafio crônico no SUS, os relatos apresentados não apontam para a falta de recursos financeiros ou de pessoal como o nó crítico. O problema identificado é de ordem qualitativa, ética e técnica: a forma como o cuidado é percebido e entregue pelos profissionais já contratados.\n\nAlternativa c) Incorreta. O racismo na saúde não se limita a atos individuais de preconceito ou a profissionais isolados. Os relatos demonstram um problema sistêmico e institucional. O Relato 2 mostra um desconhecimento conceitual sobre equidade, e o Relato 3 aponta uma falha na educação permanente da instituição. Portanto, a remoção pontual de indivíduos não resolveria a lacuna de formação e a cultura organizacional instalada.\n\nAlternativa d) Incorreta. A PNSIPN não é inadequada ou puramente teórica; ela é um instrumento necessário para corrigir distorções históricas. O problema, como evidenciado no Relato 3, não é a política em si, mas a sua falta de implementação prática, a ausência de treinamento e o desconhecimento das equipes sobre como utilizar os dados de raça/cor para planejar ações de saúde eficazes.\n\nAlternativa e) Correta. Esta alternativa sintetiza perfeitamente os três relatos sob a ótica do racismo estrutural. O Relato 1 expressa o estereótipo e a culpabilização da vítima. O Relato 2 revela a incompreensão do princípio da equidade sob o manto de uma falsa neutralidade (tratar todos de forma igual quando existem necessidades diferentes gera mais desigualdade). O Relato 3 escancara o racismo institucional, em que a falta de preparo e de diretrizes claras impede que a coleta de dados se transforme em cuidado efetivo. O racismo estrutural molda as relações e os processos de trabalho, resultando em barreiras de acesso e menor qualidade assistencial para a população negra.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Princípios e Diretrizes do SUS",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:39.176Z"
+  },
+  {
+    "id": "AJUDA_5a7a1e25-21cb-4a72-8f8e-d9b868894f9f",
+    "originalId": "5a7a1e25-21cb-4a72-8f8e-d9b868894f9f",
+    "statement": "A síndrome urêmica hemolítica típica (SHU) é uma doença do grupo das microangiopatias trombóticas. São distúrbios caracterizados por anemia hemolítica microangiopática não imune, trombocitopenia e insuficiência multissistêmica. A SHU está associada a infecções intestinais por bactérias produtoras da toxina Shiga, em especial a Escherichia coli enterohemorrágica invasiva (STEC - Shiga-toxin– producing strains of E coli). Carne mal-cozida, especialmente hambúrguer, leite e suco não pasteurizados, além de frutas e vegetais crus, podem estar contaminados por essas bactérias. \nA doença geralmente tem início abrupto com quadro de diarreia, muitas vezes com sangue e dor abdominal. Em adultos, geralmente é autolimitada a 5-10 dias. Porém, em crianças, observa-se maior associação à SHU.\nCom relação a essa doença em crianças, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o antibiótico de escolha é o ciprofloxacino;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a terapia antibiótica pode aumentar o risco de SHU e a plasmaférese pode auxiliar pacientes com doença por e. coli enterohemorrágica invasiva produtora da toxina SHIGA;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "rifaximina associada a fluorquinolona deve ser administrada imediatamente em casos de diarreia hemorrágica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "vancomicina 125 mg, por via oral, quatro vezes ao dia, associada a fidaxomicina 200 mg, duas vezes ao dia durante 10 dias, é o tratamento indicando;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sulfametoxazol + trimetoprima 800/160 mg a cada 6h por 28 dias é o tratamento de escolha.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Síndrome Urêmica Hemolítica (SHU) típica é uma complicação grave, geralmente precedida por diarreia infecciosa causada pela toxina Shiga (produzida principalmente pela E. coli O157:H7). A compreensão do manejo correto é vital para evitar o agravamento do quadro.\n\nAlternativa A: Incorreta. O ciprofloxacino, assim como outros antibióticos, não é indicado no tratamento da infecção intestinal por E. coli produtora de toxina Shiga (STEC). O uso de antimicrobianos pode estimular a liberação de mais toxinas pelas bactérias em lise, aumentando significativamente o risco de o paciente desenvolver a tríade clássica da SHU (anemia hemolítica microangiopática, trombocitopenia e lesão renal aguda).\n\nAlternativa B: Correta. Esta alternativa reflete o consenso terapêutico e fisiopatológico. O uso de antibióticos durante a fase de diarreia por STEC é um fator de risco documentado para a evolução rumo à SHU. Em relação à plasmaférese, embora o pilar do tratamento seja o suporte (hidratação cuidadosa, controle da hipertensão e diálise, se necessário), a troca plasmática pode ser utilizada em casos graves, especialmente quando há manifestações neurológicas importantes ou quadros sistêmicos refratários, visando à remoção de toxinas e citocinas inflamatórias.\n\nAlternativa C: Incorreta. A administração imediata de antibióticos, como a rifaximina ou fluoroquinolonas, em casos de diarreia hemorrágica em crianças é contraindicada até que se exclua a infecção por STEC, devido ao risco de precipitar a falência renal e a hemólise.\n\nAlternativa D: Incorreta. O esquema terapêutico composto por Vancomicina oral e Fidaxomicina é o tratamento padrão-ouro para a infecção por Clostridioides difficile (colite pseudomembranosa). Não há indicação para esse protocolo no manejo da SHU ou da infecção por E. coli enterohemorrágica.\n\nAlternativa E: Incorreta. O Sulfametoxazol + Trimetoprima (SMX-TMP) é um dos antibióticos mais fortemente associados ao aumento da liberação da toxina Shiga no lúmen intestinal. Além da contraindicação do uso do fármaco, a posologia e a duração de 28 dias propostas estão completamente fora dos protocolos para infecções intestinais agudas.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Anemias",
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:39.176Z"
+  },
+  {
+    "id": "AJUDA_5a7b7efd-8c9b-4e67-8f29-842497a6e97a",
+    "originalId": "5a7b7efd-8c9b-4e67-8f29-842497a6e97a",
+    "statement": "Pedro, 3 anos, é levado à consulta pediátrica, com queixa de febre alta (39°C) há 2 dias, associada à dor ao urinar (disúria) e urina turva. A mãe relata que ele teve episódios frequentes de urinar em pequenas quantidades e recusa beber água. Não há antecedentes de doenças renais, malformações urinárias ou cateterismo prévio. Ao exame físico: Estado geral: alerta, porém irritável, Sinais vitais: FC 125 bpm, FR 22 irpm, PA 95/60 mmHg, temperatura 39°C, Abdome: levemente doloroso à palpação suprapúbica, sem massas, Genitália: sem lesões, sinais de inflamação local, Exames laboratoriais: Urina tipo I: leucocitúria (++), nitrito positivo, Cultura de urina: foi colhido e enviado amostra para o laboratório. O pediatra inicia antibioticoterapia empírica oral, solicita avaliação ultrassonográfica de abdome total e orienta acompanhamento clínico.\n\nCom base no caso clínico acima, assinale a alternativa mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de febre e disúria em criança com urina turva é suficiente para diagnosticar infecção urinária, sem necessidade de exame de urina (sumário de urina e urocultura).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infecção urinária em crianças deve sempre ser tratada apenas com antibióticos intravenosos, independentemente da gravidade, pelo risco alto de pielonefrite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A infecção urinária em crianças é suspeitada por sintomas urinários (disúria, polaciúria), febre e alterações laboratoriais; tratamento com antibiótico oral é indicado para casos não complicados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Cultura de urina não é necessária, pois a urina tipo I já confirma o provável agente causal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não há necessidade de investigação adicional, como ultrassonografia, pois infecções urinárias em crianças pequenas raramente estão associadas a malformações.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o diagnóstico e a conduta inicial na Infecção do Trato Urinário (ITU) em pediatria, um tema recorrente em provas de residência.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a clínica seja muito sugestiva, o diagnóstico de ITU na infância não deve ser baseado apenas em sintomas. É indispensável a confirmação laboratorial através do exame de urina (urina tipo I ou sumário) e, fundamentalmente, da urocultura, que é o padrão-ouro para confirmar a infecção, identificar o agente etiológico e determinar o perfil de sensibilidade aos antibióticos.\n\nAlternativa b) Incorreta. O tratamento por via intravenosa não é obrigatório para todos os casos. A via oral é eficaz e indicada para crianças com bom estado geral, que aceitam a ingestão de líquidos e medicamentos, e que não apresentam sinais de sepse ou vômitos persistentes. A hospitalização e antibioticoterapia parenteral são reservadas para lactentes jovens (geralmente menores de 2 a 3 meses), casos graves ou quando há intolerância à via oral.\n\nAlternativa c) Correta. Esta alternativa descreve perfeitamente o raciocínio clínico. A suspeita de ITU em crianças maiores e pré-escolares baseia-se em sintomas irritativos miccionais (disúria, polaciúria, urgência) e febre. O diagnóstico é corroborado por alterações no exame de urina (como leucocitúria e nitrito positivo) e confirmado pela cultura. Em pacientes estáveis e sem critérios de gravidade, o tratamento oral é a escolha inicial adequada.\n\nAlternativa d) Incorreta. O exame de urina tipo I (sumário) sugere a presença de inflamação e infecção (através de piúria e nitrito), mas não identifica qual bactéria está causando a infecção nem a quais antibióticos ela é sensível. Somente a urocultura fornece essas informações essenciais para o manejo correto do paciente.\n\nAlternativa e) Incorreta. Na pediatria, a ocorrência de uma ITU febril (especialmente o primeiro episódio) exige investigação por imagem, geralmente iniciando pela ultrassonografia de rins e vias urinárias. Isso ocorre porque infecções urinárias em crianças pequenas estão frequentemente associadas a malformações congênitas do trato urinário, como o refluxo vesicoureteral, que precisam ser identificadas para prevenir danos renais futuros (cicatrizes renais).\n\nGabarito: Alternativa (c).",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:39.176Z"
+  },
+  {
+    "id": "AJUDA_5a910dbe-3a95-48cd-b9ad-d922decf9172",
+    "originalId": "5a910dbe-3a95-48cd-b9ad-d922decf9172",
+    "statement": "Paciente feminina, 35 anos de idade, obesa (IMC 34 kg/m²), internada no primeiro dia por colecistite aguda, apresentou clearance de creatinina estimado 28 mL/min/1,73 m². Referiu histórico de trombose venosa profunda já há 5 anos, ocorrida após uma viagem internacional de avião, que foi tratada com anticoagulação por seis meses sem recidiva.\n\nCom base nesse caso clínico hipotético e considerando o perfil de risco para TEV, assinale a opção que apresenta a conduta adequada para a profilaxia de TEV.",
+    "options": [
+      {
+        "id": "A",
+        "text": "heparina de baixo peso molecular 40 mg SC uma vez ao dia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "heparina de baixo peso molecular 40 mg SC 12/12 horas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "heparina em bomba de infusão contínua",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "heparina não fracionada 5.000 ui SC de 8/8 horas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Warfarina conforme INR",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é necessário analisar dois pontos principais: o risco de tromboembolismo venoso (TEV) da paciente e a sua função renal.\n\n1. Perfil de Risco: A paciente apresenta múltiplos fatores de risco para TEV: está internada por uma condição inflamatória aguda (colecistite), é obesa (IMC 34 kg/m²) e possui histórico prévio de TVP. Embora o evento anterior tenha sido provocado e tratado, ele a coloca em uma categoria de maior risco durante uma nova hospitalização cirúrgica/aguda. Portanto, a indicação de quimioprofilaxia é clara.\n\n2. Função Renal: O ponto determinante da questão é o *clearance* de creatinina de 28 mL/min. Valores abaixo de 30 mL/min contraindicam ou exigem ajuste cauteloso das heparinas de baixo peso molecular (HBPM), como a enoxaparina, devido ao risco de acúmulo da droga e sangramento, já que sua excreção é predominantemente renal. Nesses casos, a heparina não fracionada (HNF) é a escolha preferencial, pois sua depuração é hepática e celular, não dependendo dos rins.\n\nAnálise das alternativas:\n\na) Incorreta. A heparina de baixo peso molecular (ex.: enoxaparina 40 mg) é a droga de escolha para profilaxia na maioria dos pacientes. No entanto, ela é contraindicada ou deve ser evitada em pacientes com insuficiência renal grave (*clearance* < 30 mL/min), como é o caso desta paciente (28 mL/min).\n\nb) Incorreta. Além da contraindicação pelo *clearance* de creatinina citado acima, a dose de 40 mg a cada 12 horas de HBPM não é o padrão usual para profilaxia, aproximando-se de doses terapêuticas ou de regimes específicos para obesidade mórbida, o que aumentaria ainda mais o risco de sangramento nesta paciente renal crônica.\n\nc) Incorreta. A heparina em bomba de infusão contínua é utilizada para anticoagulação plena (tratamento de trombose ou embolia já instalada) e requer monitorização rigorosa do TTPA. Não é utilizada para profilaxia de TEV.\n\nd) Correta. A heparina não fracionada (HNF) é a droga de escolha para pacientes com *clearance* de creatinina abaixo de 30 mL/min. O regime de 5.000 UI por via subcutânea a cada 8 horas (8/8h) é o mais adequado para pacientes com risco elevado ou obesidade, garantindo a proteção necessária sem o risco de acúmulo por falência renal.\n\ne) Incorreta. A varfarina é um anticoagulante oral que demora dias para atingir o efeito desejado (depende da queda dos fatores de coagulação dependentes de vitamina K). Não tem papel na profilaxia aguda de pacientes internados, sendo reservada para anticoagulação crônica após a alta ou após a fase aguda do tratamento.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Hemostasia",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 100,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:39.176Z"
+  },
+  {
+    "id": "AJUDA_5a911e29-20f6-49f7-a136-ff0eea576e7d",
+    "originalId": "5a911e29-20f6-49f7-a136-ff0eea576e7d",
+    "statement": "Um paciente de 62 anos de idade, com histórico de AVCi recente, apresentou‑se no departamento de emergência com rebaixamento do nível de consciência, sem atividade motora evidente. No exame físico, observaram‑se automatismo oral discreto e movimentos oculares erráticos. A glicemia capilar estava em 128. Foi apontada urina 1 com discreta leucocitúria, sem mais alterações. Aguardava exames de sangue. \nCom base nesse caso clínico hipotético, assinale a opção que apresenta a principal hipótese diagnostica e a conduta inicial recomendada na emergência.",
+    "options": [
+      {
+        "id": "A",
+        "text": "delirium secundário à infecção urinária; iniciar antibiótico empírico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "estado pós‑ictal; observação clínica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estado de mal epiléptico não convulsivo; solicitar EEG urgente e iniciar benzodiazepínico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "encefalopatia metabólica; solicitar eletrólitos e corrigir distúrbios",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "crise epiléptica focal simples; iniciar levetiracetam oral",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente em questão apresenta um quadro de rebaixamento do nível de consciência associado a sinais motores sutis, como automatismos orais e movimentos oculares erráticos. O antecedente de AVC isquêmico recente é um fator de risco primordial, pois áreas de lesão cortical prévia são focos epileptogênicos comuns. Diante de um paciente com alteração do estado mental e esses sinais \"sutis\", a principal suspeita deve ser o Estado de Mal Epiléptico Não Convulsivo (EMENC).\n\nPOR QUE A ALTERNATIVA C ESTÁ CORRETA?\n\nO estado de mal epiléptico não convulsivo caracteriza-se por uma mudança no nível de consciência ou comportamento, sem convulsões tônico-clônicas evidentes, mas com atividade eletroencefalográfica ictal prolongada. Os sinais descritos (automatismos e movimentos oculares) são pistas clínicas clássicas. O diagnóstico é confirmado pelo eletroencefalograma (EEG), e o manejo inicial de qualquer estado de mal epiléptico na emergência envolve o uso de benzodiazepínicos (como diazepam ou midazolam) para cessar a atividade epileptiforme, independentemente da ausência de abalos motores generalizados.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: Embora o delirium possa ser causado por infecção urinária em idosos, a discreta leucocitúria isolada, sem outros sintomas ou alterações no exame de urina, não justifica um quadro agudo de rebaixamento de consciência tão importante, especialmente na presença de sinais motores sugestivos de epilepsia.\n\nAlternativa B: O estado pós-ictal é o período de recuperação após uma crise, no qual o paciente está sonolento. No entanto, a presença de movimentos oculares erráticos e automatismos sugere que a atividade ictal ainda está ocorrendo (evento em curso), o que define o estado de mal, exigindo intervenção imediata em vez de apenas observação.\n\nAlternativa D: Encefalopatias metabólicas (uremia, alterações de sódio, etc.) podem causar rebaixamento de consciência e até mioclonias, mas não costumam se apresentar com automatismos orais específicos e movimentos oculares erráticos de forma tão focalizada quanto o EMENC. Além disso, a glicemia (causa metabólica comum) estava normal.\n\nAlternativa E: A crise epiléptica focal simples é, por definição, aquela em que não há perda ou prejuízo da consciência. Como o paciente apresenta rebaixamento do nível de consciência, essa classificação está incorreta. Além disso, o levetiracetam oral não é a conduta de escolha para uma emergência com rebaixamento de consciência; prefere-se a via parenteral e o uso inicial de benzodiazepínicos.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Epilepsias",
+      "Coma e Alterações da Consciência"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:39.176Z"
+  },
+  {
+    "id": "AJUDA_5a934d8b-78ec-4b98-a2e5-dcad40d04e3f",
+    "originalId": "5a934d8b-78ec-4b98-a2e5-dcad40d04e3f",
+    "statement": "Mulher de 25 anos de idade refere ter tido relação sexual desprotegida há 5 dias. Há um dia, apareceram na vulva úlceras dolorosas. Refere ter passado cremes que tinha em casa, sem melhora. Ao exame, observam-se múltiplas úlceras dolorosas, de bordas irregulares e fundo sujo, facilmente sangrante, nos grandes lábios, associadas a linfonodos inguinais aumentados, dolorosos, com intensos sinais flogísticos. Diante do diagnóstico deve-se indicar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Biopsiar as lesões.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Penicilina cristalina e aciclovir.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Azitromicina e penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aciclovir e azitromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Profilaxia pós-exposição (PEP).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO caso descreve uma paciente com úlceras genitais agudas de caráter inflamatório. Os pontos-chave para o diagnóstico são: múltiplas úlceras, dolorosas, com bordas irregulares, fundo sujo (com exsudato) e que sangram facilmente à manipulação. Além disso, há presença de linfonodopatia inguinal dolorosa com sinais de inflamação (bubão).\n\nEssa descrição é patognomônica do Cancro Mole (também conhecido como cancroide), causado pela bactéria Haemophilus ducreyi. Na abordagem sindrômica das úlceras genitais, recomendada pelo Ministério da Saúde, deve-se sempre tratar as causas mais prováveis, que são o Cancro Mole e a Sífilis (mesmo que a sífilis primária costume ser indolor e de fundo limpo).\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. A biópsia de úlceras genitais não é a conduta inicial em casos com apresentação típica de infecções sexualmente transmissíveis (IST). Ela é reservada para casos de lesões crônicas, que não cicatrizam após o tratamento correto ou quando há suspeita de malignidade (câncer de vulva).\n\nb) Incorreta. A penicilina cristalina é de uso hospitalar endovenoso, indicada principalmente para neurossífilis ou sífilis congênita, não sendo o tratamento de escolha para úlceras genitais. O aciclovir é usado para herpes genital, que costuma apresentar vesículas agrupadas e úlceras rasas de fundo limpo, diferente do fundo sujo e purulento descrito.\n\nc) Correta. Esta é a conduta recomendada para o tratamento sindrômico de úlceras genitais com tempo de evolução menor que 4 semanas. A Azitromicina (1g, via oral, dose única) é o tratamento de escolha para o Cancro Mole (Haemophilus ducreyi). A Penicilina Benzatina (2,4 milhões de UI, intramuscular) é o tratamento para Sífilis (Treponema pallidum), que deve ser coberta em casos de úlceras genitais, dada a gravidade e prevalência da doença.\n\nd) Incorreta. Embora as lesões sejam dolorosas (característica comum ao herpes e ao cancro mole), a descrição de fundo sujo, bordas irregulares e sangramento fácil aponta fortemente para causa bacteriana (cancro mole) e não viral (herpes). O tratamento sindrômico prioriza a cobertura de cancro mole e sífilis neste cenário.\n\ne) Incorreta. A Profilaxia Pós-Exposição (PEP) para o HIV deve ser iniciada, idealmente, nas primeiras 2 horas após a exposição e, no máximo, até 72 horas (3 dias). A paciente refere que a relação sexual ocorreu há 5 dias (120 horas), portanto, o prazo para a eficácia da PEP já expirou. O foco agora deve ser o tratamento das ISTs presentes e o rastreio tardio de outras infecções.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:39.176Z"
+  },
+  {
+    "id": "AJUDA_5aa27d8c-34f0-4095-ae8f-cdcd050784ac",
+    "originalId": "5aa27d8c-34f0-4095-ae8f-cdcd050784ac",
+    "statement": "A hanseníase é uma doença crônica, infectocontagiosa de elevada endemicidade no Brasil, causada por um bacilo capaz de infectar grande número de indivíduos (alta infectividade), embora poucos adoeçam (baixa patogenicidade). Essas propriedades não ocorrem em função apenas das características intrínsecas do agente etiológico, mas dependem, sobretudo, da relação com o hospedeiro e o grau de endemicidade do meio, entre outros aspectos. A forma em que a imunidade celular é nula e o bacilo se multiplica com mais facilidade, levando a uma maior gravidade, com anestesia de pés e mãos, é a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "indeterminada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tuberculoide",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "dimorfa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Virchowiana",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "determinada ou boderline",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A hanseníase é uma doença espectral, o que significa que suas manifestações clínicas dependem diretamente da resposta imunológica do hospedeiro ao *Mycobacterium leprae*. O enunciado descreve uma situação de anergia (ausência de imunidade celular específica), alta carga bacilar e grande gravidade clínica.\n\nA alternativa (d) está correta. A forma virchowiana (ou lepromatosa) representa o polo multibacilar da doença. Nela, o sistema imunológico do paciente é incapaz de montar uma resposta mediada por células (imunidade celular nula) eficaz contra o bacilo. Como consequência, o bacilo multiplica-se desordenadamente e dissemina-se por via hematogênica. Clinicamente, caracteriza-se por lesões infiltrativas (hansenomas), madarose, congestão nasal e comprometimento neural sistêmico e simétrico, o que justifica a anestesia em extremidades (pés e mãos) citada no texto.\n\nA alternativa (a) está incorreta. A forma indeterminada é o estágio inicial da doença. Geralmente apresenta-se como uma mancha hipocrômica com alteração de sensibilidade. Nessa fase, a resposta imunitária ainda não está definida, podendo evoluir para a cura espontânea ou para qualquer uma das outras formas clínicas. Não apresenta imunidade celular nula nem a gravidade descrita.\n\nA alternativa (b) está incorreta. A forma tuberculoide representa o polo oposto à virchowiana. Aqui, o paciente possui uma imunidade celular forte e eficaz, que consegue limitar a proliferação do bacilo. Por isso, as lesões são poucas, bem delimitadas e a carga bacilar é baixíssima ou nula (paucibacilar).\n\nA alternativa (c) está incorreta. A forma dimorfa (ou borderline) é uma forma intermediária e instável do espectro. Embora apresente maior número de lesões e maior comprometimento nervoso do que a forma tuberculoide, ainda existe algum grau de resposta imunológica, não sendo caracterizada pela imunidade celular totalmente nula.\n\nA alternativa (e) está incorreta. O termo \"determinada\" não faz parte da classificação oficial de Ridley e Jopling ou da classificação operacional da OMS. Já a forma \"borderline\" é sinônimo de dimorfa, que, como explicado anteriormente, não se encaixa na descrição de ausência total de imunidade celular e multiplicação bacilar máxima típica da forma virchowiana.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Hanseníase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:39.176Z"
+  }
+]

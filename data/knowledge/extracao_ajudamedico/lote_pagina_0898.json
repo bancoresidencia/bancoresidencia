@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_f9a36fae-bdfb-4541-beb3-6816723ef78f",
+    "originalId": "f9a36fae-bdfb-4541-beb3-6816723ef78f",
+    "statement": "Ainda a respeito da situação hipotética apresentada, considere-se que após o manejo inicial, o hematologista tenha suspeitado de uma condição pró-trombótica associada à doença de base e, devido a esse acontecimento, solicitou-se",
+    "options": [
+      {
+        "id": "A",
+        "text": "anti-ro, ani centromero, anti-sm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "anticardiolipina, antiglicoproteina 1 e anticoagulante lúpico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "anticoagulante lúpico, beta 2 microglobulina e anti-la.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "anticoagulante lúpico, beta 2 microglobulina e anti-ro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "anticoagulante lúpico, anticentrômero e anti-p.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão foca no diagnóstico laboratorial da Síndrome Antifosfolípide (SAF), que é a principal suspeita clínica quando se menciona uma condição pró-trombótica associada a uma doença de base (como o Lúpus Eritematoso Sistêmico). A SAF é uma trombofilia adquirida de natureza autoimune, caracterizada por fenômenos tromboembólicos (trombose venosa, arterial ou de pequenos vasos) ou morbidade gestacional.\n\nDe acordo com os critérios internacionais de classificação, existem três testes laboratoriais que definem a presença de anticorpos antifosfolípides para o diagnóstico desta síndrome:\n\n1. Anticoagulante lúpico: Detectado por meio de testes funcionais de coagulação.\n2. Anticorpos anticardiolipina (classes IgG ou IgM).\n3. Anticorpos antibeta-2-glicoproteína I (classes IgG ou IgM).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. O anti-Ro está associado à Síndrome de Sjögren e ao Lúpus Neonatal. O anticentrômero é o marcador característico da Esclerose Sistêmica Limitada (Síndrome CREST). O anti-Sm é altamente específico para o diagnóstico de Lúpus Eritematoso Sistêmico, mas nenhum deles possui relação com eventos trombóticos.\n\nAlternativa (b) Correta. Esta alternativa lista os três critérios laboratoriais clássicos da SAF. É importante notar que a alternativa utiliza a nomenclatura simplificada antiglicoproteína 1 para se referir à antibeta-2-glicoproteína I, que é o alvo proteico mais importante para a patogênese da síndrome.\n\nAlternativa (c) Incorreta. Embora apresente o anticoagulante lúpico, a alternativa inclui a beta-2-microglobulina, que é um marcador de carga tumoral em mieloma múltiplo e linfomas, ou de função renal, e o anti-La, que é marcador da Síndrome de Sjögren.\n\nAlternativa (d) Incorreta. Assim como na anterior, a inclusão da beta-2-microglobulina e do anti-Ro invalida a alternativa, pois estes exames não servem para investigar estados de hipercoagulabilidade.\n\nAlternativa (e) Incorreta. O anti-P (proteína P ribossomal) é um marcador específico para o Lúpus com envolvimento neuropsiquiátrico. O anticentrômero é marcador de esclerodermia. Nenhum dos dois é utilizado na triagem de doenças pró-trombóticas.\n\nPortanto, a alternativa (b) é a única que apresenta o painel correto para a investigação de uma condição pró-trombótica autoimune.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:05.945Z"
+  },
+  {
+    "id": "AJUDA_f9a8557a-1c39-45a9-83f9-fcba0d423dd2",
+    "originalId": "f9a8557a-1c39-45a9-83f9-fcba0d423dd2",
+    "statement": "Mulher, 45 anos, em tratamento oncológico para câncer de mama, tendo realizado última quimioterapia há sete dias, dá entrada no PS referindo febre de 38,5ºC há dois dias. Nega quaisquer outras queixas. Ao exame físico, apresenta PA de 110x80 mmHg, FC de 92 bpm, FR de 20 ipm, saturação de oxigênio de 96%, temperatura axilar de 38,0ºC; auscultas cardíaca e respiratória sem anormalidades. Solicitados hemoculturas e exames na urgência, que evidenciaram Hb 9,2 g/dL, Leucócitos 1500 células/mm³, Neutrófilos 450 células/mm³, Plaquetas 145 mil/mm³, proteína C reativa 80, Urina tipo 1 com 90 mil Leucócitos, 10 mil hemácias, nitrito negativo. Qual a sua conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação hospitalar, prescrição de Ceftriaxona 2g 12/12h e de Filgrastim.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alta hospitalar, com orientação de que se trata de febre de origem tumoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internação hospitalar, aguardar resultado de hemoculturas para decidir sobre prescrição de antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alta hospitalar, com receita de Ciprofloxacino e Amoxicilina com Clavulanato, orientação de sinais de alarme e retornar ao PS em 3 dias para reavaliação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o manejo da neutropenia febril, uma emergência oncológica comum em pacientes submetidos à quimioterapia citotóxica.\n\nPara resolver a questão, devemos seguir três passos fundamentais: diagnóstico, estratificação de risco e definição da conduta.\n\n1. Diagnóstico: A neutropenia febril é definida como a presença de febre (temperatura oral única de 38,3 °C ou 38,0 °C mantida por mais de uma hora) associada a uma contagem absoluta de neutrófilos (CAN) menor que 500 células/mm³ (ou menor que 1.000 com expectativa de queda para menos de 500). A paciente apresenta 450 neutrófilos e teve febre de 38,5 °C, confirmando o diagnóstico.\n\n2. Estratificação de Risco: Utilizamos o escore MASCC (Multinational Association for Supportive Care in Cancer) para determinar se o paciente é de alto ou baixo risco.\n- Sintomas leves/ausentes: 5 pontos.\n- Ausência de hipotensão: 5 pontos.\n- Ausência de DPOC: 4 pontos.\n- Tumor sólido (sem infecção fúngica prévia): 4 pontos.\n- Ausência de desidratação: 3 pontos.\n- Início da febre fora do hospital: 3 pontos.\n- Idade menor que 60 anos: 2 pontos.\nA paciente em questão apresenta estabilidade hemodinâmica, não tem outras queixas, possui tumor sólido e é jovem. Sua pontuação no MASCC seria 26 (o máximo é 26). Pacientes com MASCC maior ou igual a 21 são considerados de BAIXO RISCO.\n\n3. Definição da Conduta: Pacientes de baixo risco, estáveis, com boa aceitação via oral e suporte social podem ser tratados ambulatorialmente. O esquema antibiótico de escolha para o tratamento domiciliar é a combinação de Ciprofloxacino e Amoxicilina com Clavulanato. O Ciprofloxacino é essencial para cobrir Pseudomonas aeruginosa, e o Clavulin complementa a cobertura contra cocos gram-positivos e anaeróbios.\n\nAnálise das alternativas:\n\na) Incorreta. A internação não é obrigatória para pacientes de baixo risco. Além disso, a Ceftriaxona isoladamente é uma escolha inadequada para neutropenia febril, pois não possui cobertura contra Pseudomonas aeruginosa. O Filgrastim (G-CSF) não é recomendado rotineiramente para o tratamento de neutropenia febril já estabelecida em casos não complicados.\n\nb) Incorreta. Toda febre em paciente neutropênico deve ser tratada como infecciosa até que se prove o contrário, devido à alta mortalidade se não houver cobertura antibiótica precoce. Atribuir a febre ao tumor sem antes tratar a potencial infecção é um erro grave.\n\nc) Incorreta. O tratamento da neutropenia febril é uma emergência médica. O antibiótico deve ser iniciado na primeira hora (\"golden hour\") após a coleta de culturas. Jamais se deve aguardar o resultado das culturas (que demora dias) para iniciar a terapia.\n\nd) Correta. Por ser uma paciente de baixo risco (MASCC alto), estável e sem complicações evidentes, o tratamento domiciliar com Ciprofloxacino e Amoxicilina/Clavulanato é a conduta padrão recomendada pelas diretrizes internacionais (IDSA/ASCO) e nacionais. A orientação de sinais de alarme e reavaliação precoce é fundamental para a segurança do paciente.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Neutropenia Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:05.945Z"
+  },
+  {
+    "id": "AJUDA_f9ad4ecb-7285-472a-a2b4-69ca3116f7be",
+    "originalId": "f9ad4ecb-7285-472a-a2b4-69ca3116f7be",
+    "statement": "Em trabalho de parto a termo, o toque vaginal identifica sutura sagital no diâmetro transverso, com o occipício orientado para o quadrante ilíaco esquerdo anterior da pelve materna. A variedade de posição fetal é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Occípito-ilíaca esquerda anterior.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Occípito-ilíaca direita anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Occípito-ilíaca esquerda posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Occípito-ilíaca direita transversa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para determinar a variedade de posição fetal durante o exame obstétrico, devemos identificar o ponto de referência fetal e sua relação com os pontos de referência da bacia materna. No caso de uma apresentação cefálica fletida, o ponto de referência é o occipício (ou pequena fontanela/lambda), representado pela letra O.\n\nA nomenclatura segue uma ordem padronizada:\n1. Ponto de referência fetal (Occipital - O).\n2. Referência à bacia materna (Ilíaca - I).\n3. Lado da bacia (Esquerda ou Direita).\n4. Posição em relação ao eixo anteroposterior (Anterior, Posterior ou Transversa).\n\nAnálise do enunciado:\nO texto afirma explicitamente que o occipício está orientado para o \"quadrante ilíaco esquerdo anterior\". Isso define diretamente a variedade de posição, independentemente da menção inicial ao diâmetro transverso da sutura (que pode ocorrer em fases de transição da rotação fetal).\n\nAnálise das alternativas:\n\na) Occipito-ilíaca esquerda anterior: Esta é a alternativa correta. O occipício (O) está localizado na porção ilíaca (I) do lado esquerdo (E) e na parte anterior (A) da pelve materna. É uma das posições mais comuns e favoráveis ao parto vaginal.\n\nb) Occipito-ilíaca direita anterior: Incorreta. Nesta posição, o ponto de referência fetal (occipício) estaria voltado para o lado direito da mãe, e não para o esquerdo como aponta a questão.\n\nc) Occipito-ilíaca esquerda posterior: Incorreta. Embora o lado esteja correto (esquerdo), o occipício estaria voltado para a região do sacro (posterior) e não para o quadrante anterior.\n\nd) Occipito-ilíaca direita transversa: Incorreta. Nesta variedade, o occipício estaria apontando diretamente para a lateral direita da pelve materna, sem estar inclinado para a frente (anterior) ou para trás (posterior). Além disso, o lado descrito no enunciado é o esquerdo.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:05.945Z"
+  },
+  {
+    "id": "AJUDA_f9b05391-6ccd-42c7-ab3f-39e57f378b71",
+    "originalId": "f9b05391-6ccd-42c7-ab3f-39e57f378b71",
+    "statement": "Os conselhos de saúde são espaços de participação popular que possuem caráter",
+    "options": [
+      {
+        "id": "A",
+        "text": "normativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "consultivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "executivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "deliberativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o funcionamento das instâncias de participação da comunidade no Sistema Único de Saúde (SUS), conforme estabelecido na Lei Federal nº 8.142/1990 e na Resolução nº 453/2012 do Conselho Nacional de Saúde.\n\nAlternativa a) Incorreta. Órgãos normativos são aqueles que possuem a função primordial de estabelecer normas e regras técnicas de conduta ou operação. Embora as decisões dos Conselhos de Saúde possam originar normas após a homologação do gestor, o caráter jurídico definido por lei para esses colegiados é o deliberativo, focado na formulação de estratégias e no controle da execução.\n\nAlternativa b) Incorreta. Um órgão consultivo é aquele que apenas emite pareceres, conselhos ou opiniões que podem ser seguidos, ou não, pelo gestor público. No SUS, a participação popular é fortalecida pelo fato de os conselhos terem poder de decisão real, indo muito além de uma função meramente consultiva.\n\nAlternativa c) Incorreta. O caráter executivo refere-se à gestão prática, administrativa e operacional das ações de saúde. Essa função pertence ao Poder Executivo, representado pelo Ministério da Saúde e pelas Secretarias Estaduais e Municipais de Saúde. O conselho fiscaliza e delibera sobre a política, mas não executa as ações de saúde ou a gestão direta dos serviços.\n\nAlternativa d) Correta. De acordo com a Lei nº 8.142/1990, o Conselho de Saúde é um órgão colegiado, permanente e deliberativo. O caráter deliberativo significa que o conselho tem competência para decidir sobre as estratégias da política de saúde e atuar no controle da execução dessa política em cada esfera de governo (Municipal, Estadual e Nacional), inclusive nos aspectos econômicos e financeiros. Suas decisões devem ser homologadas pelo chefe do Poder Executivo de cada esfera.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:05.945Z"
+  },
+  {
+    "id": "AJUDA_f9b5c7f9-11f1-4527-a882-29efb7cfe019",
+    "originalId": "f9b5c7f9-11f1-4527-a882-29efb7cfe019",
+    "statement": "Lactente de três meses de idade apresenta pescoço inclinado em direção ao ombro esquerdo, com o queixo desviado e rodado para a direita, conforme imagem a seguir:\n\nExame físico: encurtamento palpável do músculo esternocleidomastoideo esquerdo.\n\nO diagnóstico e o tratamento são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "hemivértebra cervical; órtese para reposicionamento cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "lesão do plexo braquial por tocotrauma; neurotização precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "paralisia cerebral espástica; tenotomia do esternocleidomastoideo esquerdo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "torcicolo congênito; fisioterapia e alongamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito e a imagem apresentada são clássicos do torcicolo muscular congênito. A criança apresenta a postura patognomônica: inclinação lateral da cabeça para o lado do músculo afetado (esquerdo) e rotação do mento (queixo) para o lado oposto (direito). O achado, ao exame físico, de encurtamento palpável no corpo do músculo esternocleidomastoideo (ECM) confirma a etiologia muscular da condição, que muitas vezes está associada a uma massa fibrótica (oliva) nos primeiros meses de vida.\n\nAnálise das alternativas:\n\na) Incorreta. A hemivértebra é uma malformação óssea congênita que pode causar inclinação cervical (escoliose cervical), mas não explicaria o achado específico de encurtamento palpável do músculo esternocleidomastoideo descrito no exame físico. O diagnóstico de malformações vertebrais é confirmado por exames de imagem, como radiografia ou tomografia.\n\nb) Incorreta. A lesão do plexo braquial decorrente de tocotrauma manifesta-se por déficit motor e alteração de reflexos no membro superior (como a postura de \"gorjeta de garçom\" na paralisia de Erb-Duchenne). Embora possa coexistir com o torcicolo em alguns casos de parto difícil, a descrição da questão foca exclusivamente na deformidade cervical e no músculo ECM.\n\nc) Incorreta. A paralisia cerebral espástica é uma patologia neurológica central que envolve atraso no desenvolvimento neuropsicomotor e alterações de tônus generalizadas ou em hemicorpo, não se limitando a um encurtamento isolado do ECM em um lactente de três meses sem outros sinais neurológicos. Além disso, a tenotomia (cirurgia) é reservada para casos refratários ou diagnósticos tardios, não sendo a conduta inicial.\n\nd) Correta. O diagnóstico é torcicolo muscular congênito. A fisioterapia motora, baseada em exercícios de alongamento passivo do músculo esternocleidomastoideo e estímulos para rotação ativa da cabeça, é o tratamento padrão-ouro inicial. Quando iniciado precocemente (antes dos 6 meses de vida), o tratamento conservador apresenta taxas de sucesso superiores a 90%, evitando a necessidade de intervenção cirúrgica futura.\n\nAssociação com a imagem: A fotografia mostra o lactente com a cabeça inclinada para a esquerda e o rosto virado para a direita. Como a função do músculo esternocleidomastoideo é inclinar a cabeça para o seu próprio lado e rodar o queixo para o lado oposto, a imagem confirma visualmente que o músculo encurtado é o esquerdo, corroborando o enunciado e a alternativa D.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Coluna Pediátrica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/c1ef616e9bfacb7389b499797da22393fa288b5a175205a0413aacd4342424a9.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_f9b5c7f9-11f1-4527-a882-29efb7cfe019_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:06.342Z"
+  },
+  {
+    "id": "AJUDA_f9b8b2c0-8fd7-41e1-92d0-5d1a96bb3c05",
+    "originalId": "f9b8b2c0-8fd7-41e1-92d0-5d1a96bb3c05",
+    "statement": "A profundidade da queimadura é importante para avaliar a sua gravidade, assim como para planejar o tratamento da ferida e prever resultados funcionais e estéticos. Sobre a profundidade das queimaduras, avalie se as afirmativas são verdadeiras (V) ou falsas (F) e assinale a sequência correspondente.\n\n( ) Queimaduras superficiais (de primeiro grau), como queimaduras solares, são caracterizadas por eritema e dor, podendo formar flictenas.\n( ) As queimaduras superficiais de espessura parcial são úmidas e muito dolorosas.\n( ) As queimaduras de espessura total geralmente parecem coriáceas. A pele pode parecer translúcida ou branca cerosa. A superfície é dolorida ao toque leve ou picada e geralmente seca.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V - V - F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "F - F - V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V - F - V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F - V - F.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise detalhada das afirmativas:\n\nPrimeira afirmativa (Falsa): As queimaduras de primeiro grau (superficiais), cujo exemplo clássico é a queimadura solar, atingem apenas a camada mais externa da pele (epiderme). Elas se manifestam com eritema (vermelhidão), calor local e dor. No entanto, elas não formam flictenas (bolhas). A presença de flictenas é o marcador clínico que define a progressão para a queimadura de segundo grau (espessura parcial).\n\nSegunda afirmativa (Verdadeira): As queimaduras de espessura parcial superficial (segundo grau) envolvem a epiderme e a porção superior da derme (derme papilar). Elas são caracteristicamente úmidas devido ao extravasamento de plasma após a ruptura ou formação de bolhas. São extremamente dolorosas porque os receptores sensoriais e as terminações nervosas da derme estão expostos e funcionantes.\n\nTerceira afirmativa (Falsa): Esta afirmativa descreve corretamente o aspecto visual da queimadura de espessura total (terceiro grau), que pode ser coriácea (aspecto de couro), seca, branca ou translúcida. Contudo, o erro reside na sensibilidade. Como a queimadura de terceiro grau destrói todas as camadas da pele, incluindo os anexos e os terminais nervosos, a área lesionada é anestésica (indolor ao toque ou picada). A dor sentida pelo paciente em grandes queimados geralmente vem das zonas de primeiro e segundo graus que circundam a área de espessura total.\n\nAnálise das alternativas:\n\na) Incorreta. A primeira afirmativa é falsa e a terceira também é falsa.\nb) Incorreta. A segunda afirmativa é verdadeira.\nc) Incorreta. A primeira afirmativa é falsa e a segunda é verdadeira.\nd) Correta. A sequência correta é Falso, Verdadeiro, Falso, conforme a análise técnica das profundidades teciduais e suas respectivas manifestações clínicas.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:06.342Z"
+  },
+  {
+    "id": "AJUDA_f9bfaad6-b3ec-406d-b4f4-e7c0fef6dfc3",
+    "originalId": "f9bfaad6-b3ec-406d-b4f4-e7c0fef6dfc3",
+    "statement": "Sobre as técnicas de sutura, é correto afirmar que a sutura",
+    "options": [
+      {
+        "id": "A",
+        "text": "em bolsa de tabaco é utilizada preferencialmente em anastomoses intestinais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "contínua tem como principal vantagem o ajuste independente de cada ponto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "em U é frequentemente empregada para hemostasia em áreas de grande fragilidade tecidual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "simples interrompida deve ser evitada em pele devido ao risco de isquemia marginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "em Donatti é considerada estética e indicada em áreas expostas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a) Incorreta. A sutura em bolsa de tabaco (ou \"purse-string\") consiste em um chuleio circular realizado ao redor de uma abertura. Sua principal indicação é o sepultamento de cotos (como o coto apendicular na apendicectomia), a fixação de drenos e tubos (como em gastrostomias) ou o fechamento de pequenas perfurações. Para anastomoses intestinais, utilizam-se, preferencialmente, suturas manuais em planos (contínuas ou interrompidas) ou grampeadores mecânicos.\n\nAlternativa b) Incorreta. A vantagem do ajuste independente de cada ponto é característica da sutura interrompida (pontos separados). Na sutura contínua, a tensão é distribuída ao longo de toda a linha de fechamento e o ajuste não é individualizado. Se o fio se romper ou a tensão falhar em um segmento, toda a sutura fica comprometida.\n\nAlternativa c) Correta. A sutura em U, também chamada de ponto de Wolf ou colchoeiro horizontal, é uma técnica eversante que distribui a tensão por uma área maior do tecido. Por realizar uma compressão lateral eficiente, ela é frequentemente empregada para promover hemostasia em bordos sangrantes e em tecidos com maior fragilidade, onde pontos simples poderiam \"rasgar\" o tecido com facilidade.\n\nAlternativa d) Incorreta. A sutura simples interrompida é a técnica mais versátil e utilizada para o fechamento da pele na prática cirúrgica. Ela não deve ser evitada; pelo contrário, é recomendada por permitir a saída de secreções entre os pontos e garantir a integridade da ferida caso um dos pontos se rompa. O risco de isquemia marginal existe apenas se os pontos forem aplicados com tensão excessiva.\n\nAlternativa e) Incorreta. O ponto de Donatti (colchoeiro vertical) é excelente para promover a eversão das bordas da ferida e garantir resistência em áreas de tensão, sendo a técnica que melhor confronta os planos teciduais (\"longe-longe, perto-perto\"). No entanto, ela costuma deixar marcas transversais na pele (cicatriz em \"escada de trem\"), não sendo considerada a técnica de escolha para fins estéticos em áreas expostas, como a face, onde se prefere a sutura intradérmica.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:06.342Z"
+  },
+  {
+    "id": "AJUDA_f9c3b6f1-4a27-41f1-b179-4bbd51577897",
+    "originalId": "f9c3b6f1-4a27-41f1-b179-4bbd51577897",
+    "statement": "A endometriose é uma condição ginecológica comum, caracterizada pela presença de tecido endometrial fora da cavidade uterina, o que pode causar dor intensa, infertilidade e outros sintomas. O diagnóstico dessa doença pode ser desafiador, exigindo uma combinação de anamnese detalhada, exame físico cuidadoso e, muitas vezes, exames complementares. Sobre o tema, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O ultrassom transvaginal é o exame padrão-ouro para confirmar a endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exames de imagem são sempre suficientes para o diagnóstico definitivo da endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A videolaparoscopia é o exame padrão-ouro para o diagnóstico da endometriose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A videolaparoscopia não é considerada um exame invasivo para o diagnóstico da endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c).\n\nExplicação detalhada:\n\nAlternativa (a) Incorreta: Embora o ultrassom transvaginal com preparo intestinal seja um exame excelente e de alta sensibilidade para detectar endometriose profunda e endometriomas ovarianos, ele não é considerado o padrão-ouro. O ultrassom é um exame operador-dependente e pode apresentar limitações significativas na identificação de lesões superficiais ou iniciais no peritônio.\n\nAlternativa (b) Incorreta: Os exames de imagem, como a ressonância magnética e o ultrassom especializado, são cruciais para o mapeamento da doença e planejamento cirúrgico, mas não são suficientes para o diagnóstico definitivo em todos os casos. O diagnóstico de certeza, em rigor científico, exige a visualização direta das lesões e, preferencialmente, a confirmação por estudo anatomopatológico (biópsia). Além disso, exames de imagem normais não excluem a presença de endometriose superficial.\n\nAlternativa (c) Correta: A videolaparoscopia permanece como o padrão-ouro (gold standard) para o diagnóstico da endometriose. Este procedimento permite ao cirurgião inspecionar diretamente toda a cavidade pélvica e abdominal, identificando focos de diferentes aspectos (lesões pretas, vermelhas ou brancas). Além da visualização, permite a coleta de material para biópsia, o que fornece a confirmação histológica da presença de glândulas e estroma endometrial fora do útero.\n\nAlternativa (d) Incorreta: A videolaparoscopia é, sim, um procedimento invasivo. Trata-se de uma cirurgia realizada sob anestesia geral, que requer a criação de um pneumoperitônio (insuflação de gás no abdome) e a inserção de trocartes através de incisões na parede abdominal. Apesar de ser uma técnica minimamente invasiva quando comparada à laparotomia (cirurgia aberta), ela ainda carrega riscos cirúrgicos e anestésicos.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:06.342Z"
+  },
+  {
+    "id": "AJUDA_f9cc0da2-3630-4ca9-9d69-6cbde157041d",
+    "originalId": "f9cc0da2-3630-4ca9-9d69-6cbde157041d",
+    "statement": "Os tumores estromais gastrointestinais (GIST) são os tumores sarcomatosos mais comuns do trato gastrointestinal. A respeito do GIST gástrico, assinale a opção INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Muito frequentemente estão associados a síndromes familiares.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A aspiração com agulha fina guiada por Ultrassom Endoscópico (EUS) tem melhor sensibilidade diagnóstica que a biópsia convencional por Endoscopia Digestiva Alta (EDA).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O princípio do tratamento é a ressecção cirúrgica completa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A ressecção anatômica de acordo com as cadeias linfonodais não é necessária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tomografia computadorizada de abdome e pelve com contraste venoso é o método utilizado para avaliar doença metastática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Os Tumores Estromais Gastrointestinais (GIST) originam-se das células intersticiais de Cajal e são as neoplasias mesenquimais mais comuns do trato digestivo. A maioria dos casos ocorre no estômago (60%) e é caracterizada pela expressão da proteína KIT (CD117).\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta - Gabarito): A grande maioria dos casos de GIST (cerca de 95%) ocorre de forma esporádica, sem relação com histórico familiar. Embora existam síndromes raras associadas, como a neurofibromatose tipo 1, a tríade de Carney e a síndrome de Carney-Stratakis, elas representam uma minoria absoluta dos diagnósticos. Portanto, dizer que estão \"muito frequentemente\" associados a síndromes familiares é um erro conceitual.\n\nAlternativa B (Correta): Como o GIST é um tumor subepitelial (cresce abaixo da camada mucosa), a biópsia endoscópica convencional por EDA frequentemente resulta em falso-negativo, pois a pinça colhe apenas material superficial. O ultrassom endoscópico (EUS) com punção por agulha fina (FNA) permite atravessar a mucosa e atingir diretamente a massa na camada muscular própria, oferecendo sensibilidade diagnóstica significativamente superior.\n\nAlternativa C (Correta): O tratamento padrão-ouro para o GIST localizado é a ressecção cirúrgica completa (R0). O objetivo é retirar a lesão com margens livres e manter a pseudocápsula íntegra para evitar o extravasamento tumoral, que é um fator de alto risco para recorrência peritoneal.\n\nAlternativa D (Correta): Diferentemente do adenocarcinoma gástrico, o GIST raramente apresenta disseminação por via linfática (menos de 1% a 2% dos casos). Por essa razão, a linfadenectomia (retirada das cadeias linfonodais) não é necessária de rotina, permitindo cirurgias menos invasivas, como a ressecção em cunha do estômago.\n\nAlternativa E (Correta): A tomografia computadorizada (TC) de abdome e pelve com contraste venoso é o exame de escolha para o estadiamento inicial, planejamento cirúrgico e acompanhamento. O GIST metastatiza preferencialmente para o fígado e para o peritônio, e a TC é eficaz na identificação dessas lesões e na avaliação da resposta ao tratamento com inibidores de tirosina quinase (como o imatinibe).",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:06.342Z"
+  },
+  {
+    "id": "AJUDA_f9ccbede-f2da-4e1c-9304-b6284f5e4120",
+    "originalId": "f9ccbede-f2da-4e1c-9304-b6284f5e4120",
+    "statement": "Qual é o tratamento oral de escolha para escabiose em crianças com mais de 15 kg?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ivermectina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Mebendazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Metronidazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Praziquantel.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA escabiose é uma infestação cutânea causada pelo ácaro *Sarcoptes scabiei*. O tratamento padrão-ouro na pediatria costuma ser a permetrina 5% tópica; porém, a terapia oral é uma alternativa eficaz e prática, especialmente em surtos, casos extensos ou quando a aplicação tópica é dificultada.\n\nAlternativa a: Esta é a alternativa correta. A ivermectina oral é o tratamento de escolha para escabiose quando se opta pela via sistêmica. Ela atua paralisando o sistema muscular e nervoso do parasita. Sua segurança e eficácia em crianças estão bem estabelecidas para aquelas com peso corporal acima de 15 kg. A posologia habitual é de 200 microgramas por quilograma em dose única, com repetição em 7 a 14 dias, uma vez que a ivermectina não é ovicida.\n\nAlternativa b: Incorreta. O mebendazol é um anti-helmíntico utilizado para tratar verminoses intestinais, como ascaridíase e oxiuríase. Ele atua interferindo na síntese de microtúbulos dos vermes, mas não possui atividade contra o ácaro da sarna.\n\nAlternativa c: Incorreta. O metronidazol é um agente com propriedades antibacterianas, especificamente contra bactérias anaeróbias, e antiprotozoárias. É indicado para condições como amebíase, giardíase e vaginoses, não exercendo efeito sobre ectoparasitas como o *Sarcoptes scabiei*.\n\nAlternativa d: Incorreta. O praziquantel é utilizado no tratamento de infecções por vermes chatos, como a esquistossomose e a teníase. Ele aumenta a permeabilidade da membrana celular do parasita ao cálcio, provocando paralisia, mas não tem papel no manejo da escabiose.\n\nEm resumo, para uma criança com mais de 15 kg que necessite de tratamento sistêmico, a ivermectina é a medicação oral de escolha.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:06.342Z"
+  }
+]

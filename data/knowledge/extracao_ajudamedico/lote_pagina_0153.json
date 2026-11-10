@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_2a687dce-95a4-4d16-8ae8-9cb29c61c863",
+    "originalId": "2a687dce-95a4-4d16-8ae8-9cb29c61c863",
+    "statement": "Uma paciente com diagnóstico de Síndrome dos Ovários Policístico apresenta hirsutismo moderado e acne persistente, apesar do uso de contraceptivo oral combinado por 6 meses. Qual das seguintes medicações pode ser considerada como terapia adjuvante mais APROPRIADA para melhorar esses sintomas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Letrozol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inositol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Espironolactona",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Metformina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO tratamento do hiperandrogenismo clínico (hirsutismo e acne) na Síndrome dos Ovários Policísticos (SOP) inicia-se preferencialmente com anticoncepcionais orais combinados. Eles agem aumentando a SHBG (globulina transportadora de hormônios sexuais) e suprimindo o LH, o que reduz a testosterona livre circulante. No entanto, o ciclo de crescimento do pelo terminal é lento, exigindo pelo menos 6 meses para a avaliação da resposta terapêutica inicial. Quando o resultado é insuficiente após esse período, as diretrizes da Sociedade de Endocrinologia e do consenso internacional recomendam a adição de um agente antiandrogênico ao esquema terapêutico.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O Letrozol é um inibidor da aromatase indicado como primeira linha para a indução da ovulação em pacientes com SOP que desejam engravidar. Ele não tem papel no tratamento do hirsutismo ou da acne; pelo contrário, ao inibir a conversão de androgênios em estrogênios, ele não auxiliaria na redução dos sinais de hiperandrogenismo cutâneo.\n\nAlternativa b) Incorreta. O Inositol é um sensibilizador de insulina que pode auxiliar na regularidade menstrual e em parâmetros metabólicos de algumas pacientes. Contudo, não há evidência robusta que sustente seu uso como terapia adjuvante eficaz para o tratamento do hirsutismo moderado ou persistente em comparação aos antiandrogênios.\n\nAlternativa c) Correta. A Espironolactona é um diurético poupador de potássio que possui ação antiandrogênica potente por dois mecanismos: bloqueio competitivo do receptor de androgênio no folículo piloso e inibição da enzima 5-alfa-redutase. É a medicação adjuvante mais apropriada e utilizada quando os contraceptivos orais não atingem o controle estético desejado após 6 meses de uso. Vale ressaltar que ela deve ser sempre associada a um método contraceptivo eficaz devido ao risco de feminilização de feto masculino em caso de gestação.\n\nAlternativa d) Incorreta. A Metformina é um agente sensibilizador de insulina. Embora seja útil para tratar a resistência insulínica e possa auxiliar na restauração da ovulação, sua eficácia no tratamento do hirsutismo é comprovadamente inferior aos antiandrogênios e aos próprios contraceptivos, não sendo a escolha adequada para sintomas dermatológicos persistentes.\n\nESTRATÉGIA PARA A PROVA\n\nAo enfrentar questões sobre hirsutismo na SOP, memorize o fluxograma:\n1. Primeira linha: Contraceptivo Oral Combinado (COC).\n2. Tempo de espera: 6 meses (devido ao ciclo do pelo).\n3. Se persistência dos sintomas: Adicionar Antiandrogênio (sendo a Espironolactona o principal representante em provas).",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:02.104Z"
+  },
+  {
+    "id": "AJUDA_2a6c6b11-7272-4d29-9e6c-9b76cb0bfa22",
+    "originalId": "2a6c6b11-7272-4d29-9e6c-9b76cb0bfa22",
+    "statement": "Uma paciente de 72 anos de idade, com histórico de hipertensão e fibrilação atrial crônica, procurou atendimento médico por apresentar fadiga e palpitações há um mês. O exame físico mostrou ritmo irregular, pressão arterial de 130 mmHg x 80 mmHg e ausculta cardíaca sem sopros. O ECG revelou ondas F irregulares e intervalos RR desiguais, sem complexos QRS anormais. Com base nesse caso clínico, assinale a alternativa que contém a interpretação adequada do exame eletrocardiográfico realizado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flutter atrial com condução 2:1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bloqueio atrioventricular de segundo grau tipo Mobitz II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fibrilação atrial crônica com resposta ventricular irregular",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Taquicardia supraventricular paroxística com QRS estreito",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nO caso apresenta uma paciente idosa com histórico conhecido de fibrilação atrial (FA) e hipertensão, apresentando sintomas de fadiga e palpitações. O ponto-chave para a resolução da questão reside na descrição do eletrocardiograma (ECG): a presença de ondas atriais irregulares associada a intervalos RR desiguais (ritmo irregularmente irregular) e complexos QRS estreitos. Essa é a descrição clássica da fibrilação atrial.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\nA fibrilação atrial é caracterizada pela ausência de ondas P organizadas, que são substituídas por ondas de ativação atrial caóticas e rápidas (frequentemente chamadas de ondas f ou, em algumas descrições de provas, ondas F irregulares). Como a condução desses estímulos pelo nó atrioventricular ocorre de forma aleatória, os intervalos entre os batimentos ventriculares (intervalos RR) são sempre desiguais. O histórico de FA crônica da paciente corrobora o achado.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\na) Flutter atrial com condução 2:1: No flutter atrial, as ondas F (em dente de serra) são rítmicas e regulares. Quando a condução é fixa (como no caso 2:1), o ritmo ventricular (intervalos RR) também é estritamente regular, o que contradiz o enunciado, que afirma serem intervalos RR desiguais.\n\nb) Bloqueio atrioventricular de segundo grau tipo Mobitz II: Este bloqueio se caracteriza pela interrupção súbita da condução de uma onda P para o ventrículo, mas as ondas P que conseguem conduzir possuem um intervalo PR constante. O quadro descrito não apresenta ondas P organizadas, mas sim uma arritmia atrial completa.\n\nd) Taquicardia supraventricular paroxística com QRS estreito: As taquicardias supraventriculares, como a reentrada nodal, são caracterizadas por um ritmo cardíaco muito rápido e perfeitamente regular. A característica fundamental descrita no enunciado é a irregularidade dos intervalos RR, o que exclui essa hipótese.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:02.104Z"
+  },
+  {
+    "id": "AJUDA_2a7bce0c-85c5-45a9-9b53-6d24f297786d",
+    "originalId": "2a7bce0c-85c5-45a9-9b53-6d24f297786d",
+    "statement": "Paciente feminina, negra, de 44 anos, consultou na UBS queixando-se de forte ansiedade, tristeza, choro fácil, pensamentos de desvalia, irritabilidade, cansaço excessivo, sensação de esgotamento e de incapacidade de executar as atividades de forma adequada, dificuldade de concentração e atenção, cefaleia e distúrbio do sono. Informou que trabalhava na mesma empresa há 5 anos, que iniciara como recepcionista e que fora promovida em poucos meses para auxiliar de escritório. Há 4 anos havia assumido a chefia do setor, que contava com 10 funcionários e alta demanda de trabalho. Desde então, vinha sofrendo cobranças excessivas e desrespeitosas de sua chefia imediata, inclusive com comentários em relação a sua etnia. Naquela época, começaram os sintomas descritos. Com base no relato, o médico da UBS prescreveu fluoxetina. A paciente retornou à UBS após 2 meses de uso do medicamento e relatou que a situação piorara drasticamente: solicitara um aumento salarial compatível com a função exercida que culminou com sua demissão imediatamente após o afastamento de 14 dias por doença. Diante do exposto, qual a primeira conduta a ser tomada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Emissão de Comunicação de Acidente de Trabalho (CAT)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Avaliação da capacidade laboral e do nexo ocupacional",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhamento para psicoterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ajuste na dose do antidepressivo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve uma paciente com sintomas clássicos de transtorno mental e comportamental relacionado ao trabalho, possivelmente uma Síndrome de Burnout ou Transtorno de Adaptação, precipitados por assédio moral e sobrecarga laboral. A paciente relata uma progressão de sintomas que coincide com sua promoção e o aumento das cobranças desrespeitosas, culminando em uma demissão após afastamento médico, o que sugere uma represália e reforça a necessidade de intervenção médica focada na saúde do trabalhador.\n\nPOR QUE A ALTERNATIVA B ESTÁ CORRETA?\n\nA avaliação da capacidade laboral e do nexo ocupacional é o passo fundamental e inicial. O nexo ocupacional é a relação de causa e efeito entre a doença e as condições de trabalho. Antes de preencher documentos legais ou apenas tratar sintomas, o médico deve realizar uma anamnese ocupacional detalhada para estabelecer se o trabalho foi o agente causal ou concausal do quadro. Além disso, avaliar a capacidade laboral é essencial para determinar se a paciente tem condições de retornar ao mercado ou se necessita de afastamento previdenciário especializado. Sem estabelecer o nexo, as demais ações perdem seu fundamento técnico-legal.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa a: A emissão da Comunicação de Acidente de Trabalho (CAT) é obrigatória em casos de suspeita de doença ocupacional, mas ela é uma consequência da caracterização do nexo. No fluxo da consulta médica, o raciocínio clínico e a investigação do nexo precedem o ato administrativo de emissão do documento, especialmente para que o médico tenha subsídios para descrever o nexo no campo apropriado da CAT.\n\nAlternativa c: O encaminhamento para psicoterapia é uma conduta terapêutica correta e indicada para o tratamento da depressão e ansiedade. No entanto, o foco da questão é a conduta diante do agravamento drástico ligado à situação trabalhista e demissão. Tratar apenas o sintoma psíquico sem documentar a origem ocupacional deixaria a paciente desamparada quanto aos seus direitos trabalhistas e previdenciários decorrentes do assédio sofrido.\n\nAlternativa d: O ajuste da dose do antidepressivo (fluoxetina) pode ser necessário do ponto de vista clínico, mas o agravamento do caso não decorre de uma insuficiência do medicamento, e sim da manutenção e agravamento dos estressores psicossociais e laborais. O foco prioritário na Saúde do Trabalhador, neste momento, é o reconhecimento do adoecimento como fruto do ambiente de trabalho.\n\nRESUMO PARA PROVAS DE RESIDÊNCIA\n\nEm questões que envolvem sofrimento mental e conflitos no ambiente de trabalho (assédio, metas abusivas, sobrecarga), o médico deve sempre suspeitar de doença relacionada ao trabalho. A primeira atitude é investigar o nexo causal. Uma vez estabelecido o nexo, deve-se emitir a CAT, mesmo que haja dúvida, para que a perícia médica do INSS avalie o caso. A caracterização correta permite que o auxílio-doença seja do tipo acidentário (B91), que garante estabilidade de 12 meses após o retorno e manutenção do depósito de FGTS, direitos que o auxílio-doença comum (B31) não oferece.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras",
+      "Transtornos de Ansiedade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:02.104Z"
+  },
+  {
+    "id": "AJUDA_2a94070c-73ae-4a71-b52c-2ea4281f1b29",
+    "originalId": "2a94070c-73ae-4a71-b52c-2ea4281f1b29",
+    "statement": "O Governo Federal lançou em 2025 o programa “Agora Tem Especialistas”, visando ampliar o acesso da população usuária do Sistema Único de Saúde (SUS) à atenção ambulatorial e hospitalar especializada... Este caráter da participação do setor privado no SUS é previsto na legislação como",
+    "options": [
+      {
+        "id": "A",
+        "text": "suplementar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "complementar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "prestador subsidiário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "organização social.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A participacao da iniciativa privada no Sistema Unico de Saude (SUS) e normatizada pelo Artigo 199 da Constituicao Federal de 1988 e pelo Artigo 24 da Lei nº 8.080/1990 (Lei Organica da Saude). Esses dispositivos determinam que a assistencia a saude e livre a iniciativa privada e que as instituicoes privadas poderao participar de forma complementar ao SUS, mediante contrato de direito publico ou convenio, tendo preferencia as entidades filantropicas e as sem fins lucrativos, quando as disponibilidades proprias do Estado forem insuficientes para garantir a cobertura assistencial.\n\nAlternativa a: Incorreta. O termo saude suplementar refere-se a atuacao de planos e seguros privados de saude, que operam de forma paralela e independente ao SUS, regulados pela Agencia Nacional de Saude Suplementar (ANS), e nao a contratacao de servicos privados para atuar dentro da rede publica.\n\nAlternativa b: Correta. A legislacao define expressamente que a atuacao do setor privado dentro do SUS ocorre em carater complementar, suprindo a insuficiencia da rede publica para garantir a cobertura assistencial integral aos usuarios.\n\nAlternativa c: Incorreta. O termo prestador subsidiario nao e uma terminologia juridica ou sanitaria adotada pela legislacao do SUS. A relacao estabelecida e estritamente de complementaridade, sob as normas e principios do sistema publico.\n\nAlternativa d: Incorreta. As Organizacoes Sociais (OSs) representam uma qualificacao juridica de entidades do terceiro setor que firmam contratos de gestao com o poder publico. Trata-se de um modelo de gestao e operacionalizacao de servicos, e nao do carater constitucional de participacao do setor privado no SUS.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:02.104Z"
+  },
+  {
+    "id": "AJUDA_2a9d9e31-6ab2-47e3-ac1d-d7fc3741e9c6",
+    "originalId": "2a9d9e31-6ab2-47e3-ac1d-d7fc3741e9c6",
+    "statement": "Situação-Problema: Menina, 9 meses de idade, é levada à consulta de puericultura na UBS. A mãe, primigesta, relata que a criança está em aleitamento materno exclusivo até os 6 meses, quando iniciou a introdução alimentar, mas “come muito pouco”, inclusive o leite materno. Informa que a criança ainda não senta sem apoio, não balbucia “mama” ou “papa” e mostra-se pouco ativa. A caderneta da criança informa que o peso ao nascer foi de 3 200 g e o comprimento de 52 cm. O peso atual é de 6 100 g e o comprimento de 65 cm. Ao exame físico, a lactente está apática, hipocorada (++/4+), com cabelos finos e quebradiços, e apresenta palidez palmar. O tecido subcutâneo é escasso e a musculatura é hipotrófica.\n\nIndique, entre as deficiências nutricionais citadas, a mais frequente e compatível com a combinação de apatia e cabelos quebradiços observada nesta criança:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deficiência de vitamina A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deficiência de vitamina C .",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deficiência de ferro e zinco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Deficiência de vitamina D.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nTrata-se de uma lactente de 9 meses com desnutrição energético-proteica e falha de crescimento decorrentes de erro alimentar na introdução da dieta complementar. O quadro cursa com atraso do desenvolvimento neuropsicomotor, palidez importante, apatia e alterações de fâneros (cabelos finos e quebradiços).\n\nAlternativa A (Incorreta): A hipovitaminose A manifesta-se classicamente por alterações oculares, como xeroftalmia, manchas de Bitot e cegueira noturna (hemeralopia), além de maior susceptibilidade a infecções e alterações cutâneas de hiperceratose, não sendo a etiologia central para a apatia associada à anemia e aos cabelos quebradiços.\n\nAlternativa B (Incorreta): O escorbuto (deficiência de vitamina C) caracteriza-se por sangramentos (gengivorragia, petéquias, hematomas subperiosteais dolorosos que causam pseudoparalisia dos membros) e pelos em formato de \"saca-rolhas\", manifestações distintas das encontradas no caso.\n\nAlternativa C (Correta): A deficiência de ferro é a carência de micronutriente mais comum na infância e justifica a palidez, a apatia, a hipoatividade e o prejuízo no neurodesenvolvimento. Já a deficiência de zinco, altamente prevalente em crianças desnutridas e com introdução alimentar deficitária, está diretamente relacionada ao retardo pôndero-estatural, déficit cognitivo e alterações tróficas de fâneros, causando cabelos finos, secos e quebradiços.\n\nAlternativa D (Incorreta): A deficiência de vitamina D leva ao raquitismo carencial, cujas repercussões são predominantemente ósseas, como alargamento de punhos e tornozelos, rosário raquítico, craniotabes e arqueamento de ossos longos, sem relação primária com cabelos quebradiços.\n\nGabarito: Letra C.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Desnutrição na Infância",
+      "Diagnóstico Nutricional",
+      "Crescimento",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:02.104Z"
+  },
+  {
+    "id": "AJUDA_2aa3d0ee-d840-4c9f-b3ff-1d418fbab234",
+    "originalId": "2aa3d0ee-d840-4c9f-b3ff-1d418fbab234",
+    "statement": "Primigesta de 22 anos, com 14 semanas de gestação de risco habitual, assintomática, apresenta cultura de urina positiva, com mais de 100 000 UFC/mL, cujo agente identificado foi Escherichia coli, ESBL positivo (antibiograma a seguir).\n\nO tratamento correto é",
+    "options": [
+      {
+        "id": "A",
+        "text": "intra-hospitalar, com carbapenêmicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "intra-hospitalar, com amoxacilina/ácido clavulânico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ambulatorial, com carbapenêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ambulatorial, com amoxacilina/ácido clavulânico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão apresenta um caso de Bacteriúria Assintomática em uma gestante de 14 semanas. O ponto central da discussão é o perfil de resistência do patógeno identificado: Escherichia coli produtora de ESBL (Beta-lactamase de Espectro Estendido).\n\nAnálise do Antibiograma (Imagem):\nA imagem mostra que a bactéria é resistente a todas as cefalosporinas testadas (Cefalexina, Cefuroxima, Ceftriaxona e Cefepime), o que caracteriza o perfil ESBL. Embora o exame aponte sensibilidade à Amoxicilina/Ácido Clavulânico, a literatura médica e as diretrizes de infectologia demonstram que cepas ESBL apresentam alta taxa de falha terapêutica quando tratadas com combinações de beta-lactâmicos e inibidores de beta-lactamase, especialmente em infecções por gram-negativos. Por outro lado, o antibiograma confirma sensibilidade aos carbapenêmicos (Ertapenem e Imipenem).\n\nAnálise das Alternativas:\n\nAlternativa (a) correta: Os carbapenêmicos são o tratamento de escolha para germes produtores de ESBL, devido à sua estabilidade frente às enzimas produzidas por essas bactérias. Como os carbapenêmicos (como Imipenem ou Meropenem) são de administração exclusivamente parenteral (venosa), é necessário o regime intra-hospitalar para garantir a correta aplicação e monitoramento da gestante e do feto.\n\nAlternativa (b) incorreta: Conforme mencionado, a Amoxicilina/Ácido Clavulânico não é recomendada para tratar cepas ESBL devido ao risco elevado de falha clínica, mesmo que o antibiograma in vitro sugira sensibilidade.\n\nAlternativa (c) incorreta: Embora os carbapenêmicos sejam os fármacos corretos, a via de administração é parenteral. No contexto de provas de residência e na prática clínica padrão para gestantes com germes multirresistentes, o tratamento é iniciado em ambiente hospitalar para assegurar a logística de infusão e a vigilância do bem-estar materno-fetal.\n\nAlternativa (d) incorreta: Esta alternativa combina o erro da escolha do antimicrobiano (Amoxicilina/Clavulanato não é ideal para ESBL) com a inadequação do acompanhamento ambulatorial para este perfil específico de resistência em uma gestante.\n\nResumo: Diante de uma gestante com ESBL na urina, o tratamento deve ser feito com carbapenêmicos em regime hospitalar, priorizando a eficácia contra o mecanismo de resistência bacteriana. Outras opções sensíveis no exame, como a Nitrofurantoína, poderiam ser discutidas em contextos ambulatoriais de cistite simples, mas a questão foca na conduta de eleição para o perfil de resistência ESBL apresentado no antibiograma.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "ITU - Infecção do Trato Urinário",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/71f6274db75065eb4c9e0595f59af87d7c94143ce8994ba26226f7a63dbe9c82.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_2aa3d0ee-d840-4c9f-b3ff-1d418fbab234_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:02.572Z"
+  },
+  {
+    "id": "AJUDA_2ab9fdcc-c745-487e-8346-25feadee7a0b",
+    "originalId": "2ab9fdcc-c745-487e-8346-25feadee7a0b",
+    "statement": "Homem, 42 anos, durante consulta na atenção primária, relatou fumar cerca de 20 cigarros ou mais por dia, há mais de 15 anos. Diz sentir forte necessidade de fumar logo ao acordar e que já tentou parar 2 vezes, mas recaiu por irritabilidade e ansiedade. Atualmente, afirma estar decidido a parar de fumar nas próximas semanas, e está em busca de auxílio para planejar a cessação. Ainda não definiu uma data exata, mas deseja iniciar o processo o quanto antes. Ao teste de Fagerström, apresenta escore 7. Com base nas diretrizes terapêuticas para tabagismo, analise as assertivas a seguir:\n\nI. Na data escolhida para parar de fumar, deve-se iniciar imediatamente o uso de adesivo de nicotina de 21 mg/dia, associando bupropiona 150 mg 1 vez ao dia, por 3 dias, e depois aumentar para 2 vezes ao dia.\nII. A combinação da oferta de abordagens comportamentais (que ajudam a lidar com os sintomas de abstinência à nicotina) com a farmacoterapia é o formato mais útil para os pacientes que estão tentando parar de fumar.\nIII. Como segunda linha, clonidina e nortriptilina são opções terapêuticas para cessação do tabagismo, embora com maior perfil de efeitos adversos.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A abordagem do tabagismo na Atenção Primária à Saúde baseia-se na avaliação do grau de dependência nicotínica (escore de Fagerström de 7 indica alta dependência) e na implementação de estratégias comportamentais e farmacológicas baseadas em evidências.\n\nAnálise das assertivas:\n\nAssertiva I está incorreta. O adesivo de nicotina (Terapia de Reposição de Nicotina - TRN) deve ser iniciado na data de cessação (o \"Dia D\"), pois o uso concomitante com o cigarro aumenta o risco de toxicidade por nicotina. Por outro lado, o cloridrato de bupropiona precisa ser iniciado de 7 a 14 dias antes da data marcada para parar de fumar, visando atingir o nível sérico terapêutico e reduzir a fissura previamente ao \"Dia D\".\n\nAssertiva II está correta. A literatura científica e os protocolos do Ministério da Saúde demonstram consistentemente que a associação da abordagem cognitivo-comportamental com a farmacoterapia atinge taxas de sucesso significativamente superiores em comparação a qualquer uma das estratégias de forma isolada.\n\nAssertiva III está correta. Os fármacos de primeira linha recomendados são a Terapia de Reposição de Nicotina, a bupropiona e a vareniclina. Em casos de falha terapêutica ou contraindicação à primeira linha, a nortriptilina (antidepressivo tricíclico) e a clonidina (agonista alfa-2 adrenérgico) representam opções válidas de segunda linha, embora apresentem menor tolerabilidade e maior frequência de eventos adversos (como boca seca, sedação, constipação e hipotensão).\n\nAnálise das alternativas:\n\na) Incorreta. A assertiva I está errada quanto ao momento de início da bupropiona.\nb) Incorreta. A assertiva I está errada quanto ao cronograma de introdução dos fármacos.\nc) Correta. Apenas as assertivas II e III estão tecnicamente corretas e alinhadas aos protocolos clínicos vigentes.\nd) Incorreta. A presença da assertiva I invalida esta opção.\n\nGabarito: Alternativa c.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Dependência Química",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:02.572Z"
+  },
+  {
+    "id": "AJUDA_2acb4724-8554-4784-8c6a-3beed6aea02f",
+    "originalId": "2acb4724-8554-4784-8c6a-3beed6aea02f",
+    "statement": "Homem de 28 anos, com antecedente de litíase urinária, comparece para consulta urológica no AME, com quadro de dor lombar direita há cinco dias, com irradiação para flanco e fossa ilíaca direitos, sem sintomatologia inferior relacionada. Realizou ultrassom, solicitado no atendimento de urgência, que evidenciou dilatação do trato urinário direito, envolvendo rim e ureter proximal, não visualizando imagem de litíase do trato urinário. No momento, o paciente está melhor da sintomatologia. Urina rotina evidencia densidade de 1025, pH de 6.0, leucócitos de 7.000/ml e hemácias de 15.000/ml. Cultura de urina negativa e creatinina de 0,9 mg/ml.\n\nQual o melhor exame de imagem a ser indicado para prosseguir na investigação da litíase do trato urinário no quadro descrito?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tomografia computadorizada sem contraste.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tomografia computadorizada com contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ressonância nuclear magnética com agente paramagnético.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ressonância nuclear magnética sem agente paramagnético.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta um quadro clássico de cólica renal: dor lombar com irradiação para a fossa ilíaca, associada à micro-hematúria (15.000 hemácias/ml na urina de rotina) e presença de dilatação do trato urinário superior (hidronefrose) identificada no ultrassom inicial. Embora o ultrassom seja um excelente exame para triagem e para visualizar o rim, ele tem baixa sensibilidade para localizar cálculos no ureter, especialmente no ureter médio e distal, o que justifica a não visualização da litíase no primeiro atendimento.\n\nPor que a alternativa (a) está correta?\nA tomografia computadorizada (TC) de abdome e pelve sem contraste é, atualmente, o padrão-ouro para o diagnóstico de litíase urinária na urgência ou na investigação ambulatorial. Sua sensibilidade e especificidade são superiores a 95%. O exame identifica quase todos os tipos de cálculos (exceto os raros cálculos de indinavir), permitindo avaliar com precisão o tamanho, a localização exata, a densidade do cálculo (medida em Unidades Hounsfield) e sinais secundários de obstrução, fatores que determinam se o tratamento será conservador ou cirúrgico.\n\nPor que a alternativa (b) está incorreta?\nO contraste radiológico (iodo) não deve ser utilizado na investigação inicial de litíase. O contraste, ao ser excretado pelo sistema urinário, torna o trajeto do ureter hiperdenso (branco) na imagem. Como a maioria dos cálculos urinários também é hiperdensa devido ao cálcio, o contraste acaba \"escondendo\" ou mascarando o cálculo, dificultando o diagnóstico. A TC com contraste fica reservada para casos onde se suspeita de outras massas, tumores ou para avaliação anatômica detalhada em casos complexos.\n\nPor que a alternativa (c) está incorreta?\nA ressonância magnética (RM) com contraste paramagnético (gadolínio) não é o exame de escolha para litíase. O cálcio não emite sinal na RM, o que faz com que os cálculos apareçam apenas como \"vazios de sinal\" (pontos pretos), dificultando a diferenciação entre um cálculo e outras estruturas. Além disso, é um exame mais caro, menos disponível e de execução mais demorada que a tomografia.\n\nPor que a alternativa (d) está incorreta?\nMesmo sem o agente paramagnético, a ressonância magnética continua sendo inferior à tomografia computadorizada na detecção de litíase urinária. Seu uso é restrito a situações específicas onde se deseja evitar a radiação ionizante a qualquer custo e o ultrassom foi inconclusivo, sendo a principal indicação o grupo de pacientes gestantes.\n\nResumo:\nPara a investigação de litíase urinária, a Tomografia Computadorizada de abdome e pelve sem contraste é o exame com maior acurácia e o mais indicado para prosseguir a investigação após um ultrassom sugestivo, porém não conclusivo.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:02.572Z"
+  },
+  {
+    "id": "AJUDA_2aceb111-1609-4c13-a4ca-5a285bf7be15",
+    "originalId": "2aceb111-1609-4c13-a4ca-5a285bf7be15",
+    "statement": "Paciente de 67 anos, sexo masculino, foi submetido a colectomia parcial há cinco dias. Iniciou distensão abdominal importante, taquicardia, taquipneia, hipotensão arterial e sonolência. Gasometria arterial e ionograma apresentou pH 7,18; PaCO2 36 mmHg; PaO2 70 mmHg; HCO3 13 mEq/L; BE 12 mEq/l; Na 135 mEq/L; K 2,8 mEq/L; CI 97 mEq/L. Qual o distúrbio ácido-base apresentado pelo paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidose metabólica com anion gap aumentado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acidose metabólica com ânion gap normal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acidose mista com anion gap aumentado",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Acidose mista com ânion gap normal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, devemos seguir um passo a passo sistemático de análise da gasometria arterial e do ionograma.\n\n1. Análise do pH:\nO valor de referência para o pH sanguíneo situa-se entre 7,35 e 7,45. O paciente apresenta um pH de 7,18, o que caracteriza uma acidemia grave.\n\n2. Identificação do distúrbio primário:\nObservamos que o bicarbonato (HCO3) está em 13 mEq/L (referência: 22 a 26 mEq/L) e o Base Excess (BE) está em -12 mEq/L. A redução do bicarbonato e do BE aponta para uma acidose metabólica como o distúrbio primário.\n\n3. Avaliação da resposta compensatória:\nEm uma acidose metabólica, o pulmão deve compensar reduzindo a PaCO2 através da hiperventilação. Para verificar se a compensação está adequada ou se há um distúrbio respiratório associado, utilizamos a Fórmula de Winters para calcular a PaCO2 esperada:\nPaCO2 esperada = (1,5 x HCO3) + 8 (com margem de erro de +/- 2).\nCalculando: (1,5 x 13) + 8 = 19,5 + 8 = 27,5.\nA faixa de PaCO2 esperada para este paciente seria entre 25,5 e 29,5 mmHg.\nComo a PaCO2 real medida foi de 36 mmHg (valor superior ao limite da compensação esperada), o paciente não está conseguindo lavar CO2 adequadamente, o que caracteriza uma acidose respiratória concomitante. Portanto, estamos diante de uma acidose mista.\n\n4. Cálculo do Ânion Gap (AG):\nO Ânion Gap nos ajuda a identificar a etiologia da acidose metabólica. A fórmula é: AG = Na - (Cl + HCO3).\nSubstituindo os valores do enunciado: 135 - (97 + 13) = 135 - 110 = 25 mEq/L.\nO valor de referência normal do Ânion Gap situa-se entre 8 e 12 mEq/L. Um resultado de 25 mEq/L indica uma acidose metabólica com ânion gap aumentado, o que, no contexto clínico deste paciente (pós-operatório de colectomia com sinais de choque, como hipotensão e taquicardia), sugere acidose lática por hipoperfusão tecidual.\n\nAnálise das alternativas:\n\na) Incorreta. Embora exista acidose metabólica com ânion gap aumentado, a alternativa é incompleta por não reconhecer o distúrbio respiratório associado (PaCO2 de 36 mmHg, quando deveria ser menor que 29,5 mmHg).\n\nb) Incorreta. O cálculo do ânion gap (25 mEq/L) mostra que ele está aumentado, não normal. Além disso, ignora o componente respiratório do distúrbio.\n\nc) Correta. O paciente possui acidose mista (metabólica por baixo bicarbonato e respiratória por PaCO2 acima da compensação esperada) e o cálculo do ânion gap resultou em um valor elevado (25 mEq/L).\n\nd) Incorreta. O distúrbio é misto, porém o ânion gap está aumentado, e não normal. Para ser considerado normal, o valor deveria estar próximo de 12 mEq/L.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Análise da Gasometria Arterial",
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:02.572Z"
+  },
+  {
+    "id": "AJUDA_2ad7c2e4-65a9-4cc1-b607-715a4b7d8df0",
+    "originalId": "2ad7c2e4-65a9-4cc1-b607-715a4b7d8df0",
+    "statement": "Menino de 10 anos é levado para um serviço de urgência com quadro compatível com politraumatismo e choque hemorrágico. Há indicação de transfusão de concentrado de hemácias, porém a mãe do paciente informa que a família e a criança são Testemunhas de Jeová e recusam terminantemente a transfusão. Considerando esse caso clínico e as questões éticas nele implicadas, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A recusa terapêutica coloca em risco a vida de paciente menor de idade e não deve ser aceita pelo médico, que deve realizar a transfusão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de recusa terapêutica apresentada por responsável legal do paciente e, pelo princípio da autonomia, o médico não deverá realizar a transfusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diante da recusa terapêutica, a equipe médica poderá se recusar a prestar o atendimento à criança, até que a família do paciente autorize a realização da transfusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Por se tratar de paciente menor de idade, o fato deve ser comunicado às autoridades competentes, como o Ministério Público e o Conselho Tutelar, para que decidam quanto à transfusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Tema:\nO tema central desta questão é o conflito entre o direito à vida e a liberdade religiosa (autonomia), especificamente no contexto de pacientes menores de idade. Segundo o Código de Ética Médica e as normas do Conselho Federal de Medicina (CFM), o médico tem o dever legal e ético de intervir quando há risco iminente de morte, priorizando a preservação da vida acima de convicções religiosas, especialmente quando o paciente não possui plena capacidade civil.\n\nAlternativa A (Correta):\nEsta alternativa reflete o posicionamento ético e jurídico vigente no Brasil. Em situações de urgência e emergência com risco de morte, o dever do médico de salvar a vida sobrepõe-se ao desejo dos responsáveis. No caso de crianças e adolescentes, o princípio do melhor interesse do menor garante que o tratamento vital não seja negado por decisões de terceiros, mesmo que estes sejam os pais ou responsáveis legais.\n\nAlternativa B (Incorreta):\nO princípio da autonomia não é absoluto e encontra limites no direito à vida de terceiros. Pais não possuem o direito de recusar tratamentos que salvem a vida de seus filhos com base em convicções religiosas. A autonomia do paciente só é plenamente respeitada quando este é capaz e a decisão não implica risco de morte iminente ou quando se trata de paciente terminal, o que não se aplica a uma criança em choque hemorrágico por trauma.\n\nAlternativa C (Incorreta):\nA recusa de atendimento em situação de urgência configura omissão de socorro, infração ética e crime previsto no Código Penal. O médico tem a obrigação de prestar a assistência necessária para estabilizar o paciente, independentemente da autorização familiar em casos de risco de vida. Condicionar o socorro a uma autorização seria uma falha grave na conduta profissional.\n\nAlternativa D (Incorreta):\nEmbora em casos eletivos (sem urgência) o médico possa e deva buscar orientação ou autorização judicial perante a recusa dos pais, em casos de emergência com choque hemorrágico a intervenção deve ser imediata. O tempo necessário para acionar o Ministério Público ou o Conselho Tutelar e aguardar uma decisão judicial seria fatal para o paciente. Portanto, o médico deve realizar a transfusão primeiro e, se necessário, comunicar as autoridades posteriormente.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Medicina Transfusional",
+      "Emergências Pediátricas",
+      "Ética Médica",
+      "Choque em Pediatria"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:02.572Z"
+  }
+]

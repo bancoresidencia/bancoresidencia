@@ -1,0 +1,482 @@
+[
+  {
+    "id": "AJUDA_b28c8530-faba-4f92-8f1c-daf1f614783d",
+    "originalId": "b28c8530-faba-4f92-8f1c-daf1f614783d",
+    "statement": "Leia o caso a seguir.\n\nPaciente L.A.S, masculino, 36 anos, vítima de traumatismo em ombro direito, deu entrada em Unidade de Pronto Atendimento com dor intensa, associado a deformidade, sinal da dragona do soldado e limitação de função. \n\nApós o exame radiográfico foi identificada",
+    "options": [
+      {
+        "id": "A",
+        "text": "luxação glenoumeral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "fratura do úmero proximal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "luxação acromioclavicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "fratura da clavícula.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um paciente jovem com trauma agudo no ombro, apresentando dor intensa, incapacidade funcional e uma deformidade específica conhecida como sinal da dragona do soldado. Este sinal é caracterizado pela perda do contorno arredondado do músculo deltoide, tornando o ombro quadrado devido ao deslocamento da cabeça umeral para fora da cavidade glenoide. Este achado é patognomônico da luxação glenoumeral, mais comumente na sua forma anterior.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Correta. A luxação glenoumeral ocorre quando há a perda completa do contato entre a cabeça do úmero e a cavidade glenoide da escápula. No exame físico, a ausência da cabeça do úmero em sua posição anatômica faz com que o acrômio se torne a estrutura mais proeminente, gerando o aspecto de ombreira militar ou sinal da dragona. O diagnóstico é confirmado por radiografias nas incidências de rotina (AP, perfil escapular e axilar).\n\nAlternativa b) Incorreta. Embora a fratura do úmero proximal cause dor intensa e limitação funcional, ela costuma cursar com edema importante e, após 24 a 48 horas, pode apresentar a equimose de Hennequin (na face interna do braço e lateral do tórax). Não apresenta o sinal da dragona, a menos que haja uma fratura-luxação associada.\n\nAlternativa c) Incorreta. A luxação acromioclavicular (LAC) envolve a articulação entre o acrômio e a extremidade distal da clavícula. O sinal clínico característico da LAC é o sinal da tecla, no qual a extremidade distal da clavícula está elevada (devido à ruptura dos ligamentos coracoclaviculares) e pode ser reduzida momentaneamente ao ser pressionada para baixo, como uma tecla de piano.\n\nAlternativa d) Incorreta. A fratura da clavícula é uma lesão comum em traumas de ombro e apresenta dor localizada e deformidade visível sobre o trajeto do osso (geralmente no terço médio). O paciente pode apresentar o ombro caído para frente e para baixo, mas o contorno do deltoide (articulação glenoumeral) permanece preservado, o que descarta o sinal da dragona.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Fraturas e Luxações",
+      "Doenças do Ombro e Cotovelo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:13.962Z"
+  },
+  {
+    "id": "AJUDA_b293edbe-2d72-4179-879b-cb312de6ac25",
+    "originalId": "b293edbe-2d72-4179-879b-cb312de6ac25",
+    "statement": "Paciente masculino, 6 anos, encontra-se internado por uma Síndrome Nefrítica Pós-Estreptocócica. Sobre a fisiopatologia dessa doença, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ocorre uma intensa resposta inflamatória endocapilar glomerular, com predomínio de polimorfonucleares, sendo poupada a região mesangial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A denominação ‘humps’ corresponde ao depósito de imunocomplexos na membrana basal glomerular, os quais podem ser identificados na imunofluorescência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A ativação do sistema renina-angiotensina promove vasodilatação na arteríola eferente do glomérulo, bem como um aumento da resistência da arteríola aferente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ocorre uma importante lesão dos podócitos, e dessa forma, o ultrafiltrado glomerular é abundante em hemácias dismórficas (crenadas).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A deposição de imunocomplexos desencadeia a ativação do sistema complemento, predominantemente pela via alternativa, resultando em quimiotaxia de neutrófilos, consumo sérico de C3 e proliferação celular que obstrui os capilares glomerulares.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A alternativa correta é a letra (e). Abaixo, segue a análise detalhada de cada alternativa:\n\nAlternativa a: Incorreta. Na Síndrome Nefrítica Pós-estreptocócica (GNPE), a inflamação glomerular é global e difusa. Ocorre uma intensa proliferação de células endoteliais e também das células mesangiais, além do infiltrado de polimorfonucleares (neutrófilos). Dizer que a região mesangial é poupada está tecnicamente errado, pois ela também sofre com o processo proliferativo e inflamatório.\n\nAlternativa b: Incorreta. Os *humps* (ou gibas) são, de fato, depósitos de imunocomplexos situados no espaço subepitelial. Contudo, o erro da alternativa reside na técnica de identificação principal: embora a imunofluorescência mostre depósitos granulares (padrão em \"céu estrelado\"), os *humps* são estruturas ultraestruturais classicamente identificadas e descritas por meio da microscopia eletrônica.\n\nAlternativa c: Incorreta. A fisiopatologia da GNPE envolve a queda da taxa de filtração glomerular e a consequente retenção de sódio e água. Esse estado de hipervolemia (expansão do volume extracelular) promove, por *feedback*, a supressão do sistema renina-angiotensina-aldosterona, e não a sua ativação. A hipertensão arterial na GNPE é classicamente dependente de volume.\n\nAlternativa d: Incorreta. A lesão dos podócitos (podocitopatia) é o mecanismo central das síndromes nefróticas, como a Doença por Lesão Mínima. Na GNPE, o quadro é de uma glomerulite inflamatória que causa ruptura da barreira de filtração e da integridade capilar. Embora a hematúria dismórfica seja um achado clássico da síndrome nefrítica, ela decorre da passagem das hemácias por fendas na membrana basal inflamada, e não puramente de uma lesão primária do podócito.\n\nAlternativa e: Correta. Esta alternativa resume perfeitamente a patogênese da doença. A deposição de antígenos estreptocócicos (como a proteinase piogênica exotoxina B) no glomérulo leva à formação de imunocomplexos *in situ*. Isso desencadeia a ativação do sistema complemento, com consumo proeminente de C3 pela via alternativa (por isso o C3 sérico fica baixo e o C4 geralmente permanece normal). Esse processo gera quimiotaxia para neutrófilos e uma resposta proliferativa celular que obstrui a luz dos capilares glomerulares, reduzindo a filtração e gerando os sintomas clássicos de oligúria, edema e hipertensão.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:13.962Z"
+  },
+  {
+    "id": "AJUDA_b2a4e56f-9bbc-4363-8cf0-2a8f658c3163",
+    "originalId": "b2a4e56f-9bbc-4363-8cf0-2a8f658c3163",
+    "statement": "O seu uso sistemático, de forma descentralizada, contribui para a democratização da informação, permitindo que todos os profissionais de saúde tenham acesso a informações e as tornem disponíveis para a comunidade. É, portanto, um instrumento relevante para auxiliar o planejamento da saúde, definir prioridades de intervenção, além de permitir que seja avaliado o impacto delas. A qual dispositivo do SUS refere-se este conceito?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Conferências de Saúde Municipais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vigilância em Saúde - Sistema de Notificação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Atenção Primária à Saúde nas Redes de Atenção à Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Documento de referência e contrarreferência na regionalização em saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda a importância da gestão da informação e da integração dos serviços dentro do Sistema Único de Saúde (SUS). O enunciado descreve um instrumento que promove a continuidade do cuidado e serve como base para o planejamento e a avaliação das ações de saúde.\n\nAlternativa (a) Incorreta: As Conferências de Saúde são instâncias de participação social que ocorrem a cada quatro anos para avaliar a situação de saúde e propor diretrizes para a formulação de políticas. Embora sejam fundamentais para a democracia no SUS, elas não são um instrumento de uso sistemático e contínuo para o fluxo de informações clínicas ou planejamento cotidiano de intervenções técnicas, como descreve o texto.\n\nAlternativa (b) Incorreta: Os Sistemas de Notificação da Vigilância em Saúde (como o SINAN) são essenciais para o monitoramento de doenças e agravos. No entanto, o enunciado foca na democratização da informação entre profissionais e comunidade como um suporte para o planejamento integral da rede e a avaliação de impacto assistencial, indo além do caráter epidemiológico restrito das notificações compulsórias.\n\nAlternativa (c) Incorreta: A Atenção Primária à Saúde (APS) é o centro comunicador e a porta de entrada preferencial das Redes de Atenção à Saúde (RAS). Ela utiliza diversos instrumentos, mas a APS em si é uma estratégia de organização do sistema e um nível de atenção, não sendo classificada apenas como um \"dispositivo\" ou \"instrumento de informação\" isolado, conforme a descrição técnica da questão.\n\nAlternativa (d) Correta: O documento de referência e contrarreferência é a ferramenta que materializa a comunicação entre os diferentes níveis de complexidade do sistema (regionalização). Ele permite que as informações sobre o diagnóstico, tratamento e conduta de um paciente transitem de forma descentralizada entre os profissionais. Esse fluxo sistemático de dados clínicos e gerenciais é o que permite aos gestores identificar vazios assistenciais, planejar a oferta de serviços (prioridades) e avaliar se as intervenções na rede estão sendo eficazes para a comunidade. É o elo que garante a integralidade e a democratização do conhecimento técnico sobre o usuário dentro da rede.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:13.962Z"
+  },
+  {
+    "id": "AJUDA_b2a9e313-6b91-4655-bc32-34848d6ed132",
+    "originalId": "b2a9e313-6b91-4655-bc32-34848d6ed132",
+    "statement": "Homem, 68 anos, refere tosse persistente há 3 meses, com piora progressiva. Refere perda de peso não intencional de 5kg neste período. Há 2 meses apresenta dor contínua, de intensidade 6/10, localizada no ombro direito, irradiando para o braço ipsilateral. Na última semana, iniciou com sudorese vespertina, principalmente na face à esquerda. É tabagista (carga tabágica de 60 anos/maço). Exame físico: redução da expansibilidade pulmonar e de murmúrio vesicular no terço superior do pulmão direito. Qual é a hipótese diagnóstica mais provável para este quadro clínico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tuberculose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Empiema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Linfoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tumor de Pancoast.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descrito é típico do Tumor de Pancoast, também denominado tumor do sulco superior do pulmão. Trata-se de uma neoplasia maligna (geralmente câncer de pulmão não pequenas células) localizada no ápice pulmonar, que tende a invadir estruturas adjacentes.\n\nOs pontos-chave para o diagnóstico são:\n\n1. Epidemiologia e Sintomas Gerais: Paciente idoso, com carga tabágica muito elevada (60 anos/maço), apresentando tosse crônica e perda de peso. Estes dados tornam a neoplasia pulmonar a principal hipótese.\n\n2. Localização: O exame físico aponta para o terço superior do pulmão direito (ápice), local onde se originam os tumores do sulco superior.\n\n3. Síndrome de Pancoast: A dor persistente no ombro com irradiação para a face ulnar do braço ipsilateral é causada pela invasão do plexo braquial (especialmente as raízes C8, T1 e T2) e/ou do segundo arco costal.\n\n4. Síndrome de Horner: A queixa de alteração na sudorese facial sugere o acometimento da cadeia ganglionar simpática cervical. A tríade clássica desta síndrome inclui miose (pupila pequena), ptose palpebral (queda da pálpebra) e anidrose (ausência de suor) no lado da lesão. No enunciado, o paciente percebe mais suor à esquerda porque o lado direito (do tumor) parou de suar devido à compressão simpática.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. Embora a tuberculose seja uma causa comum de lesões em ápices pulmonares e cause sintomas constitucionais (perda de peso, sudorese, tosse), ela raramente causa a invasão nervosa específica descrita (plexo braquial e cadeia simpática), que é característica de processos expansivos neoplásicos locais.\n\nb) INCORRETA. O empiema é uma complicação infecciosa (pus no espaço pleural), geralmente secundária a uma pneumonia. Cursa com febre, dor pleurítica e sinais de derrame pleural agudo/subagudo, não correspondendo à cronicidade e aos achados neurológicos de invasão apical do caso.\n\nc) INCORRETA. O linfoma pode causar sintomas B (perda de peso, sudorese noturna) e massas torácicas. No entanto, o linfoma costuma se manifestar como massas mediastinais ou linfonodomegalias extensas. A apresentação específica de tumor no sulco superior em um paciente com alta carga tabágica é o \"clichê\" para o diagnóstico de câncer de pulmão tipo Pancoast.\n\nd) CORRETA. O Tumor de Pancoast explica perfeitamente a localização da neoplasia (ápice direito), os sintomas constitucionais, a dor neurológica no braço por invasão do plexo braquial e a disfunção simpática (Síndrome de Horner) manifestada pela alteração na sudorese facial. O tabagismo pesado é o principal fator de risco para essa condição.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Pulmonares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:13.962Z"
+  },
+  {
+    "id": "AJUDA_b2ae5e2b-cede-4a22-90b8-1ba8d27de385",
+    "originalId": "b2ae5e2b-cede-4a22-90b8-1ba8d27de385",
+    "statement": "Pode-se afirmar que são fatores de risco para delirium pós-operatório:",
+    "options": [
+      {
+        "id": "A",
+        "text": "imobilização; privação de sono e controle de infecção",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "idade ˃ 50 anos; desnutrição e ausência de distúrbios eletrolíticos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "desnutrição; desidratação e controle álgico medicamentoso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "fratura de quadril recente; desidratação e uso de álcool",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O delirium pós-operatório é uma disfunção orgânica cerebral aguda caracterizada por alterações flutuantes do estado mental, atenção e consciência. Para resolver essa questão, é necessário diferenciar os fatores que contribuem para o desenvolvimento do quadro (fatores de risco predisponentes e precipitantes) daqueles que são medidas de prevenção ou estados de normalidade.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a imobilização e a privação de sono sejam fatores precipitantes bem conhecidos para o delirium, o controle de infecção é uma medida preventiva e terapêutica. O fator de risco real seria a presença de uma infecção ativa, e não o seu controle.\n\nb) Incorreta. A idade avançada é um fator de risco importante, porém a literatura médica geralmente estabelece um ponto de corte maior, habitualmente acima de 65 ou 70 anos; 50 anos é considerada uma idade ainda jovem para ser isoladamente um fator de risco marcante. Além disso, a \"ausência de distúrbios eletrolíticos\" representa um estado de homeostase (normalidade), enquanto o fator de risco seria a presença de distúrbios (como hiponatremia ou hipocalcemia).\n\nc) Incorreta. A desnutrição e a desidratação são, de fato, fatores de risco. No entanto, o \"controle álgico medicamentoso\" (o ato de tratar a dor do paciente) é uma medida protetora. A dor não controlada é um dos principais gatilhos para o delirium no pós-operatório. Vale ressaltar que apenas o uso de medicações específicas, como benzodiazepínicos e anticolinérgicos, é que agiria como fator de risco.\n\nd) Correta. Esta alternativa reúne três fatores de risco clássicos:\n1. Fratura de quadril recente: Cirurgias ortopédicas de grande porte, especialmente após traumas como fraturas de quadril em idosos, apresentam as maiores incidências de delirium pós-operatório devido à resposta inflamatória sistêmica e ao estresse cirúrgico.\n2. Desidratação: É um fator precipitante metabólico comum que altera a perfusão cerebral e o equilíbrio hidroeletrolítico.\n3. Uso de álcool: O consumo crônico de álcool ou a síndrome de abstinência durante a internação são preditores importantes para o surgimento de quadros confusionais agudos.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:13.962Z"
+  },
+  {
+    "id": "AJUDA_b2b4a065-8321-47c0-9f41-e135181d0105",
+    "originalId": "b2b4a065-8321-47c0-9f41-e135181d0105",
+    "statement": "Leia o caso clínico a seguir. \n\nPaciente de 60 anos, com histórico de AVE isquêmico há 3 meses, risco cardiológico e pneumológico baixo. Em investigação realizou Doppler de Carótidas com as seguintes alterações em sua conclusão: \n• Oclusão de A. Carótida interna direita; \n• Estenose menor que 50% em A. Carótida interna esquerda. \n\nDiante destes resultados, qual é a conduta adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Endarterectomia de carótida direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Angioplastia de artéria carótida interna esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não operatória e medicamentosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Embolectomia arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é fundamental compreender as indicações de intervenção cirúrgica (endarterectomia ou angioplastia) na doença carotídea, baseando-se nas diretrizes atuais (como as da Sociedade Brasileira de Angiologia e de Cirurgia Vascular e consensos internacionais como o NASCET e ESVS).\n\nAnálise do quadro clínico:\nO paciente apresentou um AVE isquêmico há 3 meses. No entanto, os achados do Doppler mostram duas situações distintas que contraindicam a cirurgia no momento:\n\n1. Lado Direito (Oclusão): Uma artéria carótida interna totalmente ocluída (100% de obstrução) não deve ser operada. A tentativa de reabrir uma carótida cronicamente ocluída não traz benefícios na prevenção de novos eventos isquêmicos e apresenta um risco altíssimo de complicações, como o deslocamento de trombos para o cérebro.\n\n2. Lado Esquerdo (Estenose < 50%): Para pacientes sintomáticos, a indicação de intervenção cirúrgica ou endovascular geralmente ocorre quando a estenose é superior a 50%, com benefício máximo em estenoses acima de 70%. Uma estenose menor que 50% é classificada como leve/moderada, e o risco do procedimento cirúrgico supera o benefício da prevenção de um novo evento.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. A endarterectomia é indicada para estenoses (estreitamentos), não para oclusões completas. Uma vez que a artéria está totalmente fechada, a conduta cirúrgica deixa de ser uma opção segura ou eficaz.\n\nAlternativa b) Incorreta. A angioplastia (ou a endarterectomia) da carótida esquerda não está indicada porque o grau de estenose é inferior a 50%. Nesses casos, o tratamento de escolha é o controle rigoroso dos fatores de risco.\n\nAlternativa c) Correta. Como não há indicação cirúrgica para a oclusão total à direita nem para a estenose leve à esquerda, a conduta deve ser o tratamento clínico otimizado. Isso inclui o uso de antiagregantes plaquetários (como aspirina ou clopidogrel), estatinas de alta potência para controle do colesterol e estabilização da placa, além do controle da hipertensão arterial e do diabetes.\n\nAlternativa d) Incorreta. A embolectomia arterial é um procedimento de emergência indicado para casos de oclusão arterial aguda (geralmente em membros ou em fases hiperagudas de AVC isquêmico via trombectomia mecânica). Não se aplica a um paciente estável, com diagnóstico de oclusão crônica realizado meses após o evento inicial.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:13.962Z"
+  },
+  {
+    "id": "AJUDA_b2bba66f-002a-44d9-9841-9393c5fd0f70",
+    "originalId": "b2bba66f-002a-44d9-9841-9393c5fd0f70",
+    "statement": "O aleitamento materno é um dos pilares fundamentais da saúde infantil e da nutrição. A Organização Mundial da Saúde (OMS) recomenda a amamentação exclusiva nos primeiros seis meses de vida, seguida pela introdução de alimentos complementares, mantendo o aleitamento até os dois anos ou mais. Assim, avalie as proposições:\n\nI. Mães com tuberculose pulmonar bacilífera podem amamentar, desde que usem máscara e adotem precauções de contato com a criança, pois não há transmissão da tuberculose pelo leite humano.\nII. O reflexo de sucção nos bebês é plenamente desenvolvido ao nascer, permitindo a amamentação imediatamente após o parto, independentemente da idade gestacional.\nIII. A lactogênese fase I ocorre exclusivamente após o parto, quando a produção de leite materno se inicia.\n\nEstá CORRETO o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DAS PROPOSIÇÕES:\n\nI. VERDADEIRA: A transmissão da tuberculose ocorre por via aérea, por meio de gotículas e aerossóis eliminados pela respiração, fala ou tosse, e não pelo leite materno. Portanto, a amamentação não é contraindicada. A mãe deve utilizar máscara cirúrgica durante a amamentação e os cuidados com o bebê, além de higienizar rigorosamente as mãos. O recém-nascido deve receber a quimioprofilaxia prescrita, e a vacina BCG deve ser adiada até que se complete o protocolo preventivo.\n\nII. FALSA: O reflexo de sucção e, principalmente, a coordenação motora entre as funções de sucção, deglutição e respiração não estão presentes desde o início da gestação. Essa maturidade neurológica costuma ser alcançada apenas entre a 32ª e a 34ª semana de idade gestacional. Por isso, recém-nascidos prematuros muitas vezes não conseguem mamar diretamente ao seio logo após o parto, necessitando de suporte nutricional por sonda gástrica até que se desenvolvam.\n\nIII. FALSA: A fisiologia da lactação é dividida em fases. A Lactogênese Fase I ocorre durante a gestação (a partir da metade da gravidez), quando a glândula mamária se diferencia e se torna capaz de secretar os componentes do leite, iniciando a produção de colostro. O que ocorre após o parto, especificamente entre o segundo e o quinto dia pós-parto, é a Lactogênese Fase II, também conhecida como apojadura ou descida do leite, desencadeada pela queda brusca dos níveis de progesterona após a saída da placenta.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A: ESTÁ CORRETA. Apenas a proposição I apresenta informações tecnicamente adequadas de acordo com as diretrizes do Ministério da Saúde e da Organização Mundial da Saúde.\n\nAlternativa B: ESTÁ INCORRETA. A proposição II é falsa, pois o reflexo e a coordenação dependem da idade gestacional e da maturidade do sistema nervoso.\n\nAlternativa C: ESTÁ INCORRETA. A proposição III é falsa, pois a Fase I da lactogênese é um processo gestacional, e não exclusivamente pós-parto.\n\nAlternativa D: ESTÁ INCORRETA. A proposição I é verdadeira, mas a proposição III é falsa, o que invalida esta opção.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Aleitamento Materno",
+      "Tuberculose"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:13.962Z"
+  },
+  {
+    "id": "AJUDA_b2c50205-f39b-4846-8574-a784bd453487",
+    "originalId": "b2c50205-f39b-4846-8574-a784bd453487",
+    "statement": "Menina de 3 anos, assintomática, é levada ao ambulatório devido ao diagnóstico materno de infecção pelo HIV, detectado em teste rápido há cinco dias, que foi solicitado após confirmação de tuberculose pulmonar. A mãe realizou dez consultas de pré-natal, sem intercorrências, com teste HIV negativo na primeira consulta do primeiro trimestre e no parto. A criança estava sendo amamentada até o momento da consulta. Além da interrupção do aleitamento e da investigação para contactante de tuberculose, a conduta imediata na criança é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "coletar a carga viral do HIV e iniciar profilaxia pós-exposição com antirretrovirais",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "solicitar DNA pró-viral com duas e oito semanas após término da profilaxia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "coletar anti-HIV e iniciar profilaxia para pneumocistose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar anti- HIV após 18 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO cenário descreve uma criança de 3 anos exposta ao HIV por meio do aleitamento materno (transmissão vertical tardia). A mãe foi diagnosticada recentemente com tuberculose e HIV, indicando uma provável imunodepressão e carga viral elevada, o que aumenta significativamente o risco de transmissão para a criança através do leite.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (Correta): De acordo com as diretrizes do Ministério da Saúde, quando a exposição ao HIV é identificada durante o período de amamentação, a conduta imediata inclui a interrupção definitiva do aleitamento materno e o início da Profilaxia Pós-Exposição (PEP) com antirretrovirais para a criança, visando reduzir o risco de infecção. A coleta de exames para diagnóstico (como a carga viral ou anti-HIV, a depender da idade e disponibilidade) deve ser realizada para verificar se a criança já se encontra infectada. Embora em crianças maiores de 18 meses o diagnóstico padrão seja por sorologia, a carga viral pode ser utilizada para detecção precoce em casos de exposição recente. O ponto determinante da alternativa é o início da profilaxia.\n\nAlternativa B (Incorreta): A pesquisa de DNA pró-viral é um método de diagnóstico molecular utilizado prioritariamente em crianças menores de 18 meses, nas quais os testes de anticorpos (anti-HIV) não são fidedignos devido à persistência de anticorpos maternos que atravessam a placenta. Para uma criança de 3 anos, os testes de anticorpos já são diagnósticos. Além disso, o cronograma citado não se aplica a este caso de exposição tardia.\n\nAlternativa C (Incorreta): A profilaxia para pneumonia por Pneumocystis jirovecii (com uso de sulfametoxazol-trimetoprima) é indicada para crianças expostas ao HIV a partir de 4 a 6 semanas de vida até que a infecção seja excluída, ou para crianças já diagnosticadas com HIV que apresentem sinais de imunossupressão. No caso de uma criança de 3 anos que acaba de ser identificada como exposta, a prioridade absoluta é a profilaxia pós-exposição (PEP) com antirretrovirais para evitar a replicação viral, e não a profilaxia para infecções oportunistas antes mesmo de se conhecer o status imunológico.\n\nAlternativa D (Incorreta): O teste anti-HIV após os 18 meses é o marco para o diagnóstico definitivo em crianças que foram expostas durante a gestação ou parto, pois após essa idade não existem mais anticorpos maternos circulantes. Como a paciente já tem 3 anos (36 meses), ela já ultrapassou essa idade, e o teste deve ser realizado imediatamente, seguido da conduta profilática ou terapêutica, sem necessidade de aguardar qualquer prazo adicional relacionado à idade.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Aleitamento Materno",
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:13.962Z"
+  },
+  {
+    "id": "AJUDA_b2c84bae-2194-45b4-afdb-1c9fbf847f2a",
+    "originalId": "b2c84bae-2194-45b4-afdb-1c9fbf847f2a",
+    "statement": "Qual é o melhor e o mais eficaz tratamento para pediculose do couro cabeludo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Benzoato de benzoila.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Remoção mecânica de lêndeas e piolhos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Fórmulas caseiras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repelentes tópicos em couro cabeludo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A pediculose do couro cabeludo, causada pelo Pediculus humanus capitis, exige uma abordagem que elimine tanto as formas adultas (piolhos) quanto os ovos (lêndeas). Para a resolução desta questão, é necessário identificar qual método garante a maior eficácia na interrupção do ciclo biológico do parasita.\n\nAlternativa a: Incorreta. O benzoato de benzila é um agente químico escabicida e pediculicida, porém não é considerado o tratamento de primeira escolha. Ele apresenta um potencial irritativo significativo para a pele e mucosas, além de possuir baixa ação ovicida. Na prática médica atual, quando se opta pelo tratamento farmacológico, a permetrina 1% é a substância de preferência devido à sua maior segurança e eficácia, mas ela não foi listada nas opções.\n\nAlternativa b: Correta. A remoção mecânica de piolhos e lêndeas é o método mais eficaz e seguro, sendo considerada indispensável. O uso frequente do pente-fino permite a retirada física das formas adultas e, principalmente, das lêndeas, que são resistentes a muitos tratamentos químicos. Como a maioria das substâncias pediculicidas não possui ação ovicida completa (não mata todos os ovos), a remoção manual é o que impede a eclosão de novos parasitas e a consequente reinfestação, garantindo a cura definitiva.\n\nAlternativa c: Incorreta. O uso de fórmulas caseiras, como querosene, álcool, vinagre puro ou inseticidas de uso ambiental, é contraindicado. Essas substâncias não têm eficácia comprovada por estudos clínicos e representam riscos graves à saúde do paciente, podendo causar queimaduras químicas, intoxicações sistêmicas e reações alérgicas severas.\n\nAlternativa d: Incorreta. Repelentes tópicos são produtos destinados a tentar evitar a infestação inicial, embora sua eficácia real no couro cabeludo seja limitada e pouco comprovada. Eles não possuem propriedades terapêuticas, ou seja, não conseguem matar ou remover os parasitas e ovos em um paciente que já está infestado. Portanto, não servem como tratamento.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:13.962Z"
+  },
+  {
+    "id": "AJUDA_b2c99457-44e4-4a6c-8b40-17a34141904b",
+    "originalId": "b2c99457-44e4-4a6c-8b40-17a34141904b",
+    "statement": "Homem de 44 anos, com histórico de esquizofrenia, conhecido da equipe de uma Unidade Básica de Saúde, foi encontrado por uma agente comunitária de saúde em situação de rua e estava sem uso de medicamentos há vários meses. Tem histórico de múltiplas internações psiquiátricas e de má adesão aos tratamentos no Centro de Atenção Psicossocial.\nApós o acolhimento, quais ações são indicadas para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar antipsicótico de longa duração e encaminhar à assistência social.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar processo de curatela e recomendar a internação compulsória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acionar a rede de atenção psicossocial e articular o cuidado intersetorial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Resgatar vínculo familiar e promover institucionalização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso trata de um paciente com transtorno mental grave e persistente (esquizofrenia), em situação de rua, sem tratamento há meses, com várias internações e má adesão ao CAPS. Ele já tem vínculo com a Unidade Básica de Saúde e foi localizado pela agente comunitária. A questão avalia o conhecimento dos princípios da Reforma Psiquiátrica (Lei 10.216/2001) e da Rede de Atenção Psicossocial (RAPS, Portaria 3.088/2011):\n\n- cuidado em liberdade, no território;\n- uso de serviços de base comunitária;\n- integralidade;\n- articulação intersetorial, já que a vulnerabilidade social exige mais do que a resposta de saúde.\n\nAlternativa A – Incorreta. O antipsicótico de depósito pode ser útil em pacientes com má adesão, mas não é a conduta prioritária nem suficiente. A prescrição exige avaliação clínica e psiquiátrica e consentimento, e deve fazer parte de um projeto terapêutico singular construído com o CAPS. Além disso, \"encaminhar à assistência social\" é uma ação fragmentada, que transfere o caso em vez de compartilhar o cuidado. A alternativa reduz o problema a medicação mais encaminhamento.\n\nAlternativa B – Incorreta. A curatela é medida judicial excepcional. Após o Estatuto da Pessoa com Deficiência (Lei 13.146/2015), ela é restrita a atos patrimoniais e negociais e não se justifica pelo quadro descrito. A internação compulsória é determinada pela Justiça. A internação involuntária, por sua vez, só é indicada quando os recursos extra-hospitalares se mostram insuficientes, conforme a Lei 10.216. O enunciado não descreve risco iminente para o paciente ou para terceiros, nem crise aguda grave que justifique privação de liberdade. Propor essas medidas logo de início contraria a lógica do cuidado em liberdade.\n\nAlternativa C – Correta. É a conduta preconizada:\n\n- Acionar a RAPS: CAPS, de preferência CAPS III com acolhimento noturno, se houver; equipe de Consultório na Rua; Atenção Básica; e Unidades de Acolhimento.\n- Articular o cuidado intersetorial com a assistência social (CRAS, CREAS, Centro POP, abrigos e acesso a benefícios como BPC e o programa De Volta para Casa), além de habitação e justiça, quando necessário.\n- Construir, de forma compartilhada, um projeto terapêutico singular, retomando o vínculo e a adesão.\n\nDentro desse plano cabe inclusive discutir o uso de antipsicótico de depósito. Essa abordagem responde à complexidade clínica e social do caso.\n\nAlternativa D – Incorreta. Resgatar o vínculo familiar pode compor o plano de cuidado. Porém, \"promover institucionalização\" contraria frontalmente a Reforma Psiquiátrica, que busca a desinstitucionalização e a reinserção social. Além disso, o vínculo familiar nem sempre existe ou é protetor.\n\nPonto-chave: em transtorno mental grave com vulnerabilidade social e sem risco iminente, a resposta é cuidado comunitário em rede (RAPS) e articulação intersetorial. Medidas coercitivas e institucionalizantes ficam reservadas a situações excepcionais.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Psiquiatria Social e Reforma Psiquiátrica",
+      "Transtornos Psicóticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:13.962Z"
+  }
+]

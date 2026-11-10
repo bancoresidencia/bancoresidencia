@@ -1,0 +1,494 @@
+[
+  {
+    "id": "AJUDA_ccefe781-0709-4bd5-94c2-b241fae7eaf8",
+    "originalId": "ccefe781-0709-4bd5-94c2-b241fae7eaf8",
+    "statement": "Mulher de 25 anos comparece a consulta levando uma ultrassonografia que descreve: “ mioma FIGO 0 (zero) com 1 cm de diâmetro e mioma FIGO 2 (dois) com 3 cm de diâmetro”. Considerando a classificação da Federação Internacional de Ginecologia e Obstetrícia (FIGO) entende-se que os miomas com 1 e 3 cm podem ser descritos respectivamente como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "mioma submucoso pediculado, totalmente intracavitário e mioma submucoso com componente com mais de 50% do componente intramural.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "mioma subseroso pediculado e mioma subseroso com menos de 40% de componente intramural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "mioma submucoso pediculado, totalmente intracavitário e mioma subseroso com menos de 50% de componente intramural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "mioma subseroso pediculado e mioma submucoso pediculado, totalmente intracavitário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "mioma subseroso pediculado e mioma subseroso com menos de 50% de componente intramural.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver questões sobre leiomiomas uterinos em provas de residência, o domínio da classificação FIGO (integrante do sistema PALM-COEIN) é fundamental. Essa classificação organiza os miomas de 0 a 8 baseando-se na sua localização em relação às camadas do útero (endométrio, miométrio e serosa).\n\nAnálise dos dados da questão:\n\nO sistema FIGO divide os miomas nos seguintes grupos principais:\n- Submucosos (tipos 0, 1 e 2): Distorcem a cavidade uterina.\n- Intramurais (tipos 3 e 4): Localizados na parede muscular.\n- Subserosos (tipos 5, 6 e 7): Localizados na superfície externa do útero.\n\n1. Mioma FIGO 0 (1 cm): É definido como um mioma submucoso pediculado, localizado totalmente dentro da cavidade endometrial. Por ser inteiramente intracavitário, é o tipo mais acessível para a ressecção histeroscópica.\n\n2. Mioma FIGO 2 (3 cm): É também um mioma submucoso (distorce a cavidade), porém com uma importante extensão para dentro do miométrio. Por definição, o tipo 2 possui 50% ou mais do seu volume localizado dentro da parede intramural. Devido a esse grande componente intramural, sua retirada via histeroscopia é mais complexa e pode exigir mais de um tempo cirúrgico.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Define com precisão o FIGO 0 como submucoso pediculado e totalmente intracavitário, e o FIGO 2 como submucoso com componente intramural igual ou superior a 50%.\n\nAlternativa b) Incorreta. Miomas subserosos são classificados como 5, 6 ou 7. O FIGO 2 é submucoso. Além disso, a porcentagem correta para o tipo 2 é de pelo menos 50% de componente intramural.\n\nAlternativa c) Incorreta. A primeira parte está correta, mas a segunda parte descreve um mioma subseroso (provavelmente o tipo 6, que possui menos de 50% de componente intramural). O FIGO 2 é submucoso.\n\nAlternativa d) Incorreta. Apresenta erro de nomenclatura. O mioma FIGO 0 é submucoso (interno) e não subseroso (externo). O subseroso pediculado seria o FIGO 7.\n\nAlternativa e) Incorreta. Novamente confunde a localização. Miomas subserosos (5, 6 e 7) não se referem às classificações 0 e 2. O FIGO 0 e o FIGO 2 são obrigatoriamente submucosos.\n\nResumo da Classificação FIGO para memorização:\n- FIGO 0: Submucoso pediculado, 100% intracavitário.\n- FIGO 1: Submucoso, < 50% intramural.\n- FIGO 2: Submucoso, >= 50% intramural.\n- FIGO 3: 100% intramural, mas toca o endométrio.\n- FIGO 4: Intramural puro.\n- FIGO 5: Subseroso, >= 50% intramural.\n- FIGO 6: Subseroso, < 50% intramural.\n- FIGO 7: Subseroso pediculado.\n- FIGO 8: Localização extrauterina (cervical, ligamentar).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:43.883Z"
+  },
+  {
+    "id": "AJUDA_ccfde9f7-0cf1-4c84-b54d-8c046eb8e4ec",
+    "originalId": "ccfde9f7-0cf1-4c84-b54d-8c046eb8e4ec",
+    "statement": "Recém-nascido prematuro de 30 semanas apresenta episódios recorrentes de cessação do fluxo respiratório por mais de 20 segundos, acompanhados de bradicardia e cianose. Durante a investigação, foram descartadas infecção, distúrbios metabólicos e patologias do sistema nervoso central. Estabeleça o tratamento farmacológico de primeira escolha e seu mecanismo de ação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Citrato de cafeína aumentando a sensibilidade dos centros respiratórios ao CO2 e estimulando o diafragma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Doxapram endovenoso promovendo estimulação direta dos quimiorreceptores periféricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dexametasona melhorando a maturação pulmonar e reduzindo a resistência das vias aéreas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Surfactante exógeno diminuindo a tensão superficial alveolar e estabilizando os alvéolos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Furosemida reduzindo o edema intersticial pulmonar e melhorando a mecânica ventilatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Quadro Clínico:\nO recém-nascido prematuro de 30 semanas apresenta um quadro clássico de Apneia da Prematuridade, definida por pausas respiratórias superiores a 20 segundos ou pausas menores acompanhadas de bradicardia e cianose. Como a questão informa que causas secundárias (infecção, distúrbios metabólicos e neurológicos) foram descartadas, o diagnóstico baseia-se na imaturidade do controle respiratório central, comum em bebês abaixo de 34 semanas de idade gestacional.\n\nAlternativa (a) Correta: O citrato de cafeína é a droga de escolha (primeira linha) para o tratamento da apneia da prematuridade. Como uma metilxantina, seu principal mecanismo de ação é o antagonismo dos receptores de adenosina (que normalmente inibem o drive respiratório). A cafeína aumenta a sensibilidade do centro respiratório bulbar ao dióxido de carbono (CO2), estimula o esforço inspiratório, melhora a contratilidade do diafragma e aumenta o volume-minuto. Comparada à teofilina/aminofilina, possui meia-vida mais longa, permitindo dose única diária, e apresenta maior índice terapêutico.\n\nAlternativa (b) Incorreta: O doxapram é um estimulante respiratório que atua nos quimiorreceptores periféricos (corpos carotídeos). Embora possa ser eficaz, não é a primeira escolha devido à sua toxicidade potencial, necessidade de infusão endovenosa contínua e efeitos colaterais significativos, como hipertensão, irritabilidade e convulsões. É reservado para casos graves refratários ao tratamento inicial.\n\nAlternativa (c) Incorreta: A dexametasona é um corticosteroide utilizado no período pós-natal principalmente para o manejo da displasia broncopulmonar ou para facilitar a extubação em prematuros crônicos. Ela não atua no centro respiratório para tratar episódios agudos de apneia. Além disso, seu uso precoce e rotineiro em prematuros é evitado devido a riscos de danos ao neurodesenvolvimento.\n\nAlternativa (d) Incorreta: O surfactante exógeno é o tratamento específico para a Síndrome do Desconforto Respiratório (Doença da Membrana Hialina), atuando na estabilização alveolar ao reduzir a tensão superficial. Embora a melhora da função pulmonar possa reduzir o esforço respiratório, o surfactante não corrige a falha central do controle da respiração que caracteriza a apneia da prematuridade.\n\nAlternativa (e) Incorreta: A furosemida é um diurético de alça indicado para casos de sobrecarga hídrica, insuficiência cardíaca ou edema pulmonar. Não possui efeito estimulante sobre os centros respiratórios e não faz parte do protocolo de tratamento para apneia primária.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Outros Distúrbios do Período Neonatal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:43.883Z"
+  },
+  {
+    "id": "AJUDA_cd02f4ac-098a-4987-b369-333abef8f579",
+    "originalId": "cd02f4ac-098a-4987-b369-333abef8f579",
+    "statement": "Uma criança de 4 anos de idade foi levada ao pronto-socorro com febre alta há cinco dias, conjuntivite bilateral, adenomegalia cervical não supurativa e exantema maculopapular. Ao exame físico, apresentava lábios hiperemiados e rachados, além de edema de mãos e pés. Os sinais vitais são FC = 120 bpm, FR = 22 irpm e SatO2 = 98%. Nesse caso, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sarampo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença de Kawasaki",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Escarlatina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Eritema infeccioso",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico: Doença de Kawasaki.\n\nO quadro clínico descrito é clássico para a Doença de Kawasaki, uma vasculite sistêmica primária que acomete vasos de médio calibre, sendo a principal causa de cardiopatia adquirida em crianças em países desenvolvidos. O diagnóstico é essencialmente clínico, exigindo a presença de febre persistente por 5 ou mais dias, associada a pelo menos 4 dos 5 critérios diagnósticos principais:\n\n1. Alterações nas extremidades: eritema e/ou edema de mãos e pés (fase aguda) ou descamação periungueal (fase subaguda).\n2. Exantema polimorfo: geralmente maculopapular, mas pode variar.\n3. Injeção conjuntival bilateral: tipicamente não exsudativa (olhos vermelhos sem secreção).\n4. Alterações labiais e orais: lábios fissurados e eritematosos, língua em morango/framboesa ou hiperemia de orofaringe.\n5. Adenomegalia cervical: geralmente unilateral, medindo mais de 1,5 cm.\n\nO paciente da questão apresenta febre há 5 dias e todos os cinco critérios listados, o que confirma o diagnóstico.\n\nAnálise das alternativas:\n\na) Sarampo: Embora o sarampo apresente febre alta, exantema e conjuntivite, ele é fortemente marcado por sintomas catarrais intensos (tosse, coriza e fotofobia) e pelas manchas de Koplik (patognomônicas). Além disso, o sarampo não costuma cursar com edema de extremidades ou fissuras labiais como descritos.\n\nb) Doença de Kawasaki: Alternativa correta. O caso clínico preenche todos os critérios clássicos. O reconhecimento rápido é vital para o início do tratamento com imunoglobulina venosa (IGIV) e ácido acetilsalicílico (AAS), visando reduzir o risco de formação de aneurismas de artérias coronárias.\n\nc) Escarlatina: Esta doença, causada pela toxina eritrogênica do Streptococcus pyogenes, apresenta febre e faringite. No entanto, o exantema é caracteristicamente micropapular (sensação de lixa ao toque), com os sinais de Pastia (acentuação nas dobras cutâneas) e Filatov (palidez ao redor da boca). A escarlatina não causa conjuntivite.\n\nd) Eritema infeccioso: Causado pelo Parvovírus B19, inicia-se classicamente com o eritema malar (aparência de face esbofeteada), seguido por um exantema rendilhado no tronco e membros. Geralmente, a criança apresenta bom estado geral e a febre é baixa ou ausente quando o exantema surge, o que difere do quadro febril e inflamatório grave da Doença de Kawasaki.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:43.883Z"
+  },
+  {
+    "id": "AJUDA_cd101d3b-be71-4517-bf77-a7c16047947c",
+    "originalId": "cd101d3b-be71-4517-bf77-a7c16047947c",
+    "statement": "Na avaliação das pneumonias adquiridas na comunidade (PAC) em paciente pediátrico, é CORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A concentração de proteína C-reativa (PCR) não pode ser utilizada como único determinante para distinguir entre as causas virais e as bacterianas de PAC.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Os valores de procalcitonina sérica inferiores a 0.1 têm elevado valor preditivo positivo na confirmação de PAC bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A hemocultura se caracteriza por apresentar elevada taxa de sensibilidade e especificidade na PAC bacteriana em lactentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A radiologia de tórax é o padrão ouro para definição da etiologia, devendo ser solicitada para todos os pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise detalhada da questão sobre Pneumonia Adquirida na Comunidade (PAC) em pediatria:\n\nALTERNATIVA A (CORRETA): A proteína C-reativa (PCR) é um marcador inflamatório de fase aguda. Embora níveis significativamente elevados possam sugerir uma etiologia bacteriana, não há um ponto de corte que separe com total segurança vírus de bactérias, especialmente porque alguns vírus (como o adenovírus) podem causar elevações expressivas da PCR. Portanto, o uso isolado desse biomarcador não é suficiente para determinar a causa da pneumonia, devendo ser interpretado em conjunto com o quadro clínico e outros exames.\n\nALTERNATIVA B (INCORRETA): A procalcitonina é um marcador mais específico para infecções bacterianas do que a PCR. Entretanto, valores inferiores a 0,1 ng/mL possuem, na verdade, um elevado valor preditivo NEGATIVO. Isso significa que um valor tão baixo ajuda a excluir uma infecção bacteriana (sugerindo causa viral), e não a confirmá-la. Para sugerir etiologia bacteriana, os níveis geralmente precisam estar acima de 0,25 ou 0,5 ng/mL.\n\nALTERNATIVA C (INCORRETA): A hemocultura em pediatria é conhecida por sua baixíssima sensibilidade nos casos de pneumonia, com taxas de positividade que raramente ultrapassam os 5% a 10%. Como a carga bacteriana na corrente sanguínea em crianças com PAC costuma ser baixa, um resultado negativo não exclui a doença. Por isso, não é recomendada para pacientes com quadros leves tratados em regime ambulatorial.\n\nALTERNATIVA D (INCORRETA): O diagnóstico de PAC na infância é eminentemente CLÍNICO. Segundo as principais diretrizes (como as da Sociedade Brasileira de Pediatria e da IDSA), a radiografia de tórax não deve ser solicitada de rotina para crianças com quadros leves e típicos que serão tratadas em casa. Além disso, o raio X não é o padrão-ouro para definir a etiologia, pois existe uma grande sobreposição de padrões radiológicos (infiltrados, consolidações) entre infecções virais e bacterianas, o que impede uma diferenciação diagnóstica definitiva apenas pela imagem.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Pneumonia na Infância",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:43.883Z"
+  },
+  {
+    "id": "AJUDA_cd16b4c6-7d3f-4538-8632-00ecd4c6014b",
+    "originalId": "cd16b4c6-7d3f-4538-8632-00ecd4c6014b",
+    "statement": "Depois da ligadura da veia adrenal durante a adrenalectomia direita por feocromocitoma, ocorre uma queda brusca da pressão arterial.\nAssinale a alternativa que apresenta, corretamente, a atitude a ser tomada nesse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dopamina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Noradrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solução salina em bólus.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Transfusão sanguínea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\n    Texto Original:\n    Para compreender essa questão, é fundamental entender a fisiopatologia do feocromocitoma e a dinâmica hemodinâmica durante a cirurgia. O feocromocitoma é um tumor produtor de catecolaminas (adrenalina e noradrenalina). Antes da cirurgia, o paciente vive em um estado de vasoconstrição crônica e intensa, o que leva a uma redução reflexa do volume intravascular (hipovolemia relativa).\n\nNo momento em que o cirurgião realiza a ligadura da veia adrenal, interrompe-se bruscamente a entrada dessas catecolaminas na circulação. Sem o estímulo adrenérgico constante, os vasos se dilatam rapidamente (vasoplegia). Como o volume de sangue circulante já era reduzido, a pressão arterial despenca.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a adrenalina seja um vasopressor potente, o manejo inicial da hipotensão pós-ligadura no feocromocitoma deve focar na restauração do volume. O uso de vasopressores é reservado para casos refratários à expansão volêmica. Além disso, o objetivo é estabilizar o paciente sem perpetuar o ciclo de vasoconstrição extrema que o tumor causava.\n\nb) Incorreta. A dopamina poderia aumentar a pressão arterial, mas não trata a causa base do colapso circulatório neste cenário específico, que é a desproporção entre o continente (vasos dilatados) e o conteúdo (baixo volume sanguíneo).\n\nc) Incorreta. Assim como a adrenalina, a noradrenalina é um vasoconstritor. Embora possa ser utilizada em UTIs no pós-operatório se houver choque refratário, a conduta imediata e de primeira linha em sala de cirurgia, logo após a ligadura venosa, é a reposição de fluidos.\n\nd) Correta. A atitude inicial e mais eficaz é a expansão volêmica rápida com solução salina (cristaloides) em bólus. O objetivo é preencher o leito vascular que acabou de sofrer uma vasodilatação súbita. O manejo anestésico moderno do feocromocitoma prevê, inclusive, uma hiper-hidratação iniciada antes mesmo da manipulação do tumor para prevenir essa queda pressórica.\n\ne) Incorreta. A transfusão sanguínea só estaria indicada se a queda da pressão fosse decorrente de uma hemorragia maciça (choque hipovolêmico por perda de sangue). Na questão, o enunciado deixa claro que a queda ocorreu especificamente após a ligadura da veia (momento da retirada do estímulo hormonal), caracterizando um choque distributivo/relativo, e não necessariamente hemorrágico.\n\nGabarito: Alternativa (d).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:43.883Z"
+  },
+  {
+    "id": "AJUDA_cd2245cf-9fb5-4a0b-9168-e02a9badf07f",
+    "originalId": "cd2245cf-9fb5-4a0b-9168-e02a9badf07f",
+    "statement": "Paciente feminina, de 32 anos, veio à consulta na Atenção Primária com queixa de dor precordial em aperto, sem irradiação, com duração de cerca de 1 hora ao final do dia, quadro iniciado há 6 meses. Relatou cansaço, razão pela qual ficava mais em casa. Negou ortopneia, dispneia paroxística noturna ou dispneia aos esforços; negou, também, tabagismo e etilismo; fazia ginástica 3 vezes/semana. Ao exame físico, não apresentava anormalidades. Informou ter estado na Emergência devido à dor, ocasião em que foram feitos exames laboratoriais e eletrocardiografia, todos normais. Referiu muita preocupação com a saúde desde que perdera a mãe por um infarto há 7 meses. Não acreditava que a dor no peito fosse de origem “psicológica”, como sugerido na última consulta na UPA, mas comentou ter pensamentos persistentes com a mãe, chorar quase todos os dias, ter dificuldade para dormir. Quando chegava ao final do dia, horário próximo ao da morte da mãe, apresentava sensações de formigamento na face e a impressão de ouvir a voz dela vindo do quarto. Considerando o quadro de sintomas relatado, assinale a alternativa que contempla o tipo de luto, a natureza dos sintomas somáticos e a proposta terapêutica para a situação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Luto normal - sintomas devidos à somatização do infarto sofrido pela mãe - Prescrever o uso de antidepressivo para prevenir o transtorno do luto complexo persistente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Luto normal - sintomas somáticos decorrentes da vivência da perda da mãe - Indicar intervenção psicossocial (terapia de reatribuição) para o sintoma somático de dor no peito.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Transtorno do luto complexo persistente - sintomas somáticos relacionados ao luto - Iniciar medicamento antidepressivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno do luto complexo persistente - dor torácica a ser investigada com exames complementares - Encaminhar a paciente para psicoterapia para abordagem do luto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise da questão:\n\nO caso clínico descreve uma paciente de 32 anos com sintomas que surgiram após a morte da mãe (ocorrida há 7 meses por infarto). Ela apresenta dor precordial atípica (longa duração, sem relação com esforço, exames normais), formigamento e a percepção de ouvir a voz da mãe. Esses elementos são cruciais para o diagnóstico diferencial entre luto normal, somatização e transtorno de luto patológico.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Embora o quadro possa ser classificado como luto normal, a conduta está errada. Não há indicação de prescrição de antidepressivos para \"prevenir\" o transtorno do luto complexo persistente em uma paciente que está vivenciando o luto dentro de um prazo esperado e cujos sintomas principais são somáticos. O luto é um processo fisiológico e não deve ser medicalizado precocemente sem critérios para Transtorno Depressivo Maior.\n\nAlternativa (b) Correta: O quadro de 7 meses, com sintomas de saudade, choro e fenômenos sensoriais (ouvir a voz), ainda se enquadra no espectro do luto normal para muitas classificações (o DSM-5-TR e a CID-11 consideram o transtorno do luto prolongado geralmente após 6 a 12 meses, mas o foco aqui é a natureza dos sintomas). A dor no peito sem substrato orgânico, que mimetiza a causa da morte da mãe, é uma manifestação clássica de somatização decorrente da perda. A \"terapia de reatribuição\" é a abordagem padrão na Atenção Primária para pacientes com sintomas somáticos: consiste em acolher o sofrimento, fazer o link entre o sintoma físico e o estressor emocional e reatribuir a causa da dor ao processo de luto, evitando exames desnecessários e iatrogenias.\n\nAlternativa (c) Incorreta: O diagnóstico de Transtorno do Luto Complexo Persistente (ou Luto Prolongado) exige que os sintomas sejam incapacitantes e persistam por um período superior ao esperado culturalmente (geralmente 12 meses no DSM-5-TR para adultos). Além disso, a conduta de iniciar antidepressivo não é a primeira linha para o luto em si, mas sim para comorbidades depressivas claras, que não estão totalmente configuradas, visto que a paciente mantém atividades como ginástica.\n\nAlternativa (d) Incorreta: A dor torácica já foi investigada na emergência com exames laboratoriais e eletrocardiograma, que resultaram normais. Além disso, a dor tem características puramente atípicas. Solicitar novos exames complementares sem necessidade clínica reforça a ansiedade da paciente e o comportamento de busca por doenças (somatização), prejudicando o vínculo e o tratamento adequado.\n\nResumo do raciocínio:\nA paciente apresenta uma identificação com a causa da morte da mãe (dor no peito), o que é comum no luto. A conduta na Atenção Primária deve ser a de validar a dor (ela é real, mas não é cardíaca) e conectá-la ao sofrimento emocional através da técnica de reatribuição, evitando a medicalização desnecessária de um processo de vida.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "TOC, Transtornos Somáticos, Dissociativos e do Estresse",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:43.883Z"
+  },
+  {
+    "id": "AJUDA_cd23a6b9-69ee-4f77-a1cb-36a60a812cb2",
+    "originalId": "cd23a6b9-69ee-4f77-a1cb-36a60a812cb2",
+    "statement": "Paciente feminina, de 34 anos, teve diagnóstico confirmado de fissura anal de localização anterior, com evolução de 8 semanas. Com base no quadro, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O caso corresponde a uma fissura anal aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O sítio anterior caracteriza a fissura como atípica uma vez que 90% das fissuras anais estão localizadas na comissura posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Considerando o diagnóstico de fissura anal, é provável que a paciente apresente constipação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento tópico com bloqueadores do canal de cálcio é considerado de primeira linha para a fissura anal crônica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. A fissura anal é classificada cronologicamente como aguda quando o tempo de evolução é de até 6 semanas. No caso clínico descrito, a paciente apresenta sintomas há 8 semanas, o que caracteriza a fissura como crônica. Além do critério temporal, fissuras crônicas costumam apresentar sinais físicos como plicoma sentinela, papila anal hipertrófica e exposição das fibras do esfíncter anal interno.\n\nAlternativa B: Incorreta. Embora a comissura posterior seja a localização mais frequente (cerca de 90% dos casos), a localização anterior é encontrada em aproximadamente 10% a 25% das mulheres, sendo considerada uma localização típica para fissuras primárias (idiopáticas). O termo fissura atípica é reservado para lesões localizadas fora da linha média (laterais) ou aquelas associadas a condições sistêmicas, como doença de Crohn, tuberculose, sífilis, HIV ou neoplasias.\n\nAlternativa C: Incorreta. A constipação intestinal é o principal fator de risco e causa predisponente para o surgimento de fissuras anais devido ao trauma local causado por fezes endurecidas e esforço evacuatório. Entretanto, não é uma regra obrigatória; fissuras podem surgir em pacientes com hábito intestinal normal ou mesmo naqueles com episódios de diarreia crônica. Em questões de prova, afirmações sobre protocolos de tratamento (como a alternativa D) costumam ser consideradas mais corretas do que suposições clínicas de probabilidade.\n\nAlternativa D: Correta. O tratamento inicial da fissura anal crônica é eminentemente médico/conservador, visando reduzir a hipertonia do esfíncter anal interno (esfincterotomia química). O uso tópico de bloqueadores do canal de cálcio (como diltiazem a 2% ou nifedipina) ou de nitratos é recomendado como primeira linha. Os bloqueadores do canal de cálcio são frequentemente os preferidos na prática clínica devido à menor incidência de efeitos colaterais, especialmente a cefaleia, que é muito comum com o uso de nitratos. O tratamento cirúrgico (esfincterotomia lateral interna) é geralmente reservado para casos de falha do tratamento clínico.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:43.883Z"
+  },
+  {
+    "id": "AJUDA_cd27b6e5-276e-4922-96d0-a36077492f0b",
+    "originalId": "cd27b6e5-276e-4922-96d0-a36077492f0b",
+    "statement": "Primigesta de 15 semanas, em consulta de pré-natal, recebeu a informação de que teve contato com o Rubella vírus recentemente, baseado no teste de avidez baixo. Realizou ultrassonografia morfológica do primeiro trimestre sem alterações. A conduta mais adequada nesse caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar imunoglobulina humana G imediatamente para diminuir a viremia materna e fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pesquisa do RNA viral por PCR no líquido amniótico entre 18 a 20 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Repetir o teste de avidez em 30 dias, e se estiver alto, indicar pesquisa do RNA viral por PCR.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pesquisa do RNA viral por PCR no líquido amniótico entre 15 e 16 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso apresenta uma gestante de 15 semanas com diagnóstico de infecção primária recente pelo vírus da rubéola, confirmado pelo teste de baixa avidez de IgG. Em situações de infecção materna comprovada, o principal objetivo é determinar se houve transmissão vertical (infecção fetal), que pode levar à Síndrome da Rubéola Congênita.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O uso de imunoglobulina humana não é indicado para prevenir a infecção fetal ou diminuir a viremia após a confirmação da infecção materna. Ela pode mascarar sintomas clínicos na mãe, mas não reduz o risco de transmissão vertical nem protege o feto.\n\nAlternativa b) Correta. O padrão-ouro para o diagnóstico de infecção fetal por rubéola é a realização da amniocentese para pesquisa do RNA viral por meio da técnica de PCR (reação em cadeia da polimerase) no líquido amniótico. O momento ideal para esse procedimento é entre a 18ª e a 20ª semana de gestação. Isso ocorre porque a sensibilidade do teste é maior após esse período, devido ao início da excreção renal fetal do vírus para o líquido amniótico.\n\nAlternativa c) Incorreta. O teste de avidez de IgG é útil para datar a infecção quando realizado no primeiro trimestre. Uma baixa avidez indica infecção ocorrida nos últimos 3 a 4 meses. Repetir o exame em 30 dias não trará benefícios clínicos, pois o diagnóstico de infecção materna recente já foi estabelecido. O próximo passo deve ser a investigação da saúde fetal.\n\nAlternativa d) Incorreta. Embora a amniocentese possa tecnicamente ser realizada com 15 ou 16 semanas, a pesquisa do vírus no líquido amniótico antes das 18 semanas apresenta um alto índice de resultados falso-negativos. A recomendação padrão é aguardar o intervalo de 18 a 20 semanas para garantir maior acurácia diagnóstica.\n\nResumo da conduta:\nDiante de uma infecção materna confirmada (IgM positivo com baixa avidez de IgG ou soroconversão), deve-se realizar o acompanhamento ultrassonográfico e propor o diagnóstico invasivo (amniocentese com PCR) entre 18 e 20 semanas para confirmar ou excluir a infecção fetal.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:43.883Z"
+  },
+  {
+    "id": "AJUDA_cd3b0636-2b25-494a-ae3c-28fb46802780",
+    "originalId": "cd3b0636-2b25-494a-ae3c-28fb46802780",
+    "statement": "Recém-nascido (RN) com 1 semana de vida, nasceu a termo, de parto vaginal, com peso adequado, Apgar 2 no primeiro minuto e 5 no décimo minuto, necessitando de ventilação mecânica. Apresentou convulsões com 8 horas de vida e manteve-se sem diurese por mais de 24 horas. Permanece hipotônico, não responsivo e em ventilação assistida. Uma das principais causas para o quadro apresentado pelo RN é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "parto vaginal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sífilis congênita",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "uso de álcool pela mãe",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "descolamento prematuro de placenta",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito - um recém-nascido a termo com escores de Apgar persistentemente baixos (2 no 1º minuto e 5 no 10º minuto), necessidade de ventilação mecânica ao nascer, crises convulsivas precoces (com 8 horas de vida), anúria por mais de 24 horas e hipotonia grave - é a apresentação clássica de Asfixia Perinatal evoluindo para Encefalopatia Hipóxico-Isquêmica (EHI). A anúria indica que o insulto isquêmico afetou também os rins (necrose tubular aguda), evidenciando o comprometimento multiorgânico típico da asfixia grave.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O parto vaginal é um evento fisiológico e, na ausência de complicações obstétricas específicas, não é causa de asfixia. O enunciado cita que o parto foi vaginal apenas para descrever a via de nascimento, mas isso não justifica o escore de Apgar baixo ou a falência de múltiplos órgãos.\n\nAlternativa b) Incorreta. A sífilis congênita é uma infecção crônica intrauterina. Suas manifestações típicas incluem hepatosplenomegalia, lesões cutâneas (como o pênfigo palmoplantar), rinite serossanguinolenta, icterícia e alterações ósseas. Embora possa causar prematuridade ou hidropisia, não é a causa primária de um quadro agudo de asfixia perinatal com convulsões e anúria nas primeiras horas de vida em um RN a termo e com peso adequado.\n\nAlternativa c) Incorreta. O uso de álcool pela gestante está associado à Síndrome Alcoólica Fetal. As características principais são restrição de crescimento, microcefalia, dismorfismos faciais e alterações cognitivas/comportamentais a longo prazo. O álcool não causa um insulto hipóxico agudo no momento do nascimento capaz de gerar o quadro de encefalopatia hipóxico-isquêmica descrito.\n\nAlternativa d) Correta. O Descolamento Prematuro de Placenta (DPP) é uma emergência obstétrica grave onde ocorre a separação da placenta da parede uterina antes do nascimento. Isso interrompe abruptamente a troca gasosa e a perfusão sanguínea entre mãe e feto, levando à hipóxia fetal aguda e grave. O DPP é uma das principais causas de asfixia perinatal, justificando perfeitamente a depressão ao nascer (Apgar baixo), a necessidade de ventilação, a encefalopatia (convulsões e hipotonia) e a insuficiência renal aguda (anúria) por redistribuição de fluxo e isquemia tecidual.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Outros Distúrbios do Período Neonatal",
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:43.883Z"
+  },
+  {
+    "id": "AJUDA_cd3f6aca-3486-435f-979e-33c51f09f98b",
+    "originalId": "cd3f6aca-3486-435f-979e-33c51f09f98b",
+    "statement": "Homem, 69 anos, com hipertensão arterial pulmonar (HAP), realizou cateterismo de coração direito para diagnóstico e tratamento, com o seguinte resultado: pressão arterial pulmonar média > 15mmHg; resistência vascular pulmonar > 3,0uW; pressão de oclusão arterial pulmonar > 15mmHg. Pode-se afirmar que se trata de HAP tipo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "II",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para a classificação da Hipertensão Pulmonar (HP), o dado mais relevante do cateterismo de coração direito é a Pressão de Oclusão Arterial Pulmonar (POAP), também conhecida como pressão de capilar pulmonar. Ela permite diferenciar se a causa da pressão alta nos pulmões está antes do capilar (pré-capilar) ou depois dele (pós-capilar, ou seja, originada no coração esquerdo).\n\nO enunciado informa que o paciente apresenta uma POAP maior que 15 mmHg. Esse valor é o principal divisor de águas na hemodinâmica pulmonar:\n- POAP menor ou igual a 15 mmHg define HP pré-capilar.\n- POAP maior que 15 mmHg define HP pós-capilar.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): O Grupo II (ou Tipo II) engloba a HP decorrente de doenças do coração esquerdo, como insuficiência cardíaca (sistólica ou diastólica) e valvulopatias (mitral ou aórtica). Hemodinamicamente, é a única categoria definida obrigatoriamente por uma HP pós-capilar, ou seja, com POAP maior que 15 mmHg. Como o paciente apresenta POAP elevada e resistência vascular pulmonar (RVP) também elevada, ele se encaixa no perfil de HP pós-capilar combinada (componente pré e pós-capilar), típica de casos crônicos do Grupo II.\n\nAlternativa B (Incorreta): O Grupo IV refere-se a HP causada por obstruções das artérias pulmonares, sendo o tromboembolismo pulmonar crônico a causa principal. É uma forma de HP pré-capilar, o que exigiria uma POAP menor ou igual a 15 mmHg.\n\nAlternativa C (Incorreta): O Grupo III inclui a HP associada a doenças pulmonares parenquimatosas (como DPOC e fibrose pulmonar) ou hipóxia. Também é classificada como HP pré-capilar, apresentando POAP menor ou igual a 15 mmHg.\n\nAlternativa D (Incorreta): O Grupo I é a Hipertensão Arterial Pulmonar (HAP) propriamente dita, que inclui as formas idiopática, hereditária e associada a condições como esquistossomose, HIV e colagenoses. Por definição diagnóstica, a HAP é sempre pré-capilar, com POAP menor ou igual a 15 mmHg.\n\nPortanto, a presença de POAP maior que 15 mmHg é o marcador patognomônico para a classificação no Grupo II. Vale ressaltar que, embora a questão mencione PAP média maior que 15 mmHg, as diretrizes atuais da ESC/ERS definem a presença de HP com PAP média maior que 20 mmHg, mas isso não altera o raciocínio para a escolha da alternativa baseada na POAP.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:50:43.883Z"
+  }
+]

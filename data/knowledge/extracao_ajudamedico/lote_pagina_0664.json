@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_b9648480-bb27-435a-9340-9052c47536e3",
+    "originalId": "b9648480-bb27-435a-9340-9052c47536e3",
+    "statement": "Lactente de 20 dias de vida reside no Brasil e apresenta, no resultado do teste do pezinho, TSH de 15 mUI/L. AP: nascido a termo com peso de 3050 g, sem intercorrências, em aleitamento materno exclusivo. Sobre o Programa Nacional de Triagem Neonatal (PNTN) e a conduta correta para o caso, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o teste do pezinho, o da orelhinha, da linguinha e do coraçãozinho devem ser realizados por todas as crianças e estão disponíveis pelo SUS no Brasil; deve-se iniciar o tratamento com levotiroxina e coletar TSH e T4L de sangue periférico em 15 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o teste do pezinho disponível no SUS analisa, na maioria das cidades do Brasil, fenilcetonúria, hipotireoidismo congênito, anemia falciforme, hiperplasia adrenal congênita, deficiência de biotinidase e fibrose cística; deve-se investigar histórico do paciente, fazer exame físico e coletar TSH e T4L de sangue periférico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o teste do pezinho está sendo realizado pelo SUS, na maioria das cidades do país, assim como todos os exames, até a 5ª etapa (atrofia muscular espinhal); deve-se realizar exame físico e coletar exames complementares, incluindo a tireoglobulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "atualmente, o teste do pezinho realizado no Brasil, pelo SUS, na maioria das cidades do país, inclui o teste de triagem neonatal genética para doenças com tratamentos disponíveis; deve-se investigar histórico do paciente, fazer exame físico e coletar TSH e T4L de sangue periférico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um lactente de 20 dias com um resultado de TSH de 15 mUI/L no teste do pezinho. No Programa Nacional de Triagem Neonatal (PNTN) do Brasil, valores de TSH em papel de filtro entre 10 e 20 mUI/L são considerados limítrofes ou suspeitos, exigindo obrigatoriamente uma confirmação diagnóstica com coleta de sangue venoso para dosagem de TSH e T4 livre antes de iniciar o tratamento.\n\nALTERNATIVA A: Está incorreta. Embora os testes do pezinho, orelhinha, linguinha e coraçãozinho sejam garantidos pelo SUS, a conduta clínica proposta está equivocada. Para um TSH de 15 mUI/L, não se deve iniciar a levotiroxina imediatamente sem antes obter os resultados da coleta venosa confirmatória. Além disso, o prazo de 15 dias mencionado para a coleta é excessivamente longo; a confirmação deve ser solicitada em caráter de urgência para evitar danos ao desenvolvimento neuropsicomotor da criança.\n\nALTERNATIVA B: Está correta. Esta alternativa descreve com precisão as seis doenças que compõem a triagem neonatal básica oferecida na vasta maioria dos municípios brasileiros atualmente: fenilcetonúria, hipotireoidismo congênito, anemia falciforme (e outras hemoglobinopatias), fibrose cística, hiperplasia adrenal congênita e deficiência de biotinidase. A conduta de realizar anamnese, exame físico e coleta de TSH e T4L periférico é o protocolo padrão para investigar um resultado alterado na triagem.\n\nALTERNATIVA C: Está incorreta. A Lei 14.154/2021 estabeleceu a ampliação do teste do pezinho para até 53 doenças, dividida em etapas. A 5ª etapa, de fato, inclui a atrofia muscular espinhal (AME), porém essa ampliação ainda está em fase de implementação técnica e logística, não sendo a realidade da maioria das cidades brasileiras até o momento. Além disso, a tireoglobulina não é um exame de primeira linha para a confirmação do hipotireoidismo congênito.\n\nALTERNATIVA D: Está incorreta. Embora mencione a triagem genética, que faz parte do plano de expansão do PNTN, a alternativa B é mais completa e fidedigna à realidade atual do programa na maior parte do país. O foco principal da questão é o conhecimento sobre quais doenças são rotineiramente testadas e qual o manejo clínico imediato para o resultado de TSH fornecido.\n\nEm resumo, diante de um TSH de triagem entre 10 e 20 mUI/L, o médico deve realizar a avaliação clínica e solicitar exames laboratoriais venosos (TSH e T4 livre) para confirmar se há hipotireoidismo congênito antes de prescrever a levotiroxina sódica.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cuidados Neonatais",
+      "Hipotireoidismo Congênito"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:30.013Z"
+  },
+  {
+    "id": "AJUDA_b9695b66-9d0a-4abc-98b4-62c868b57a2b",
+    "originalId": "b9695b66-9d0a-4abc-98b4-62c868b57a2b",
+    "statement": "Em se tratando de trauma abdominal, julgue como V (verdadeiro) ou F (falso) os itens a seguir.\n(__) A uretrografia deve ser feita antes da inserção de sonda vesical na suspeita de lesão de uretra.\n(__) Videolaparoscopia não é um bom método de avaliação para detecção de lesões diafragmáticas.\n(__) É indicação de laparotomia a presença de hipotensão em pacientes com ferimento abdominal penetrante.\n(__) As fraturas de pelve em livro aberto podem estar associadas à hemorragia grave e fatal.\n(__) A tomografia computadorizada de duplo contraste pode não identificar lesões pancreáticas significativas no período imediato pós-trauma.\nA sequência correta é",
+    "options": [
+      {
+        "id": "A",
+        "text": "F – F – V – F – F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V – F – V – V – V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "V – F – F – V – V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F – V – V – F – V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "V – F – F – V – F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ITEM 1 (VERDADEIRO): A suspeita de lesão de uretra é levantada diante de sinais como sangue no meato urinário, equimose perineal ou próstata não palpável/elevada ao toque retal. Nesses casos, a tentativa cega de passar uma sonda vesical de demora pode converter uma lesão parcial em total. Por isso, a uretrografia retrógrada é obrigatória antes de qualquer manipulação para confirmar a integridade da uretra.\n\nITEM 2 (FALSO): A videolaparoscopia é, na verdade, um dos melhores métodos para avaliar o diafragma. Lesões diafragmáticas, especialmente as pequenas e causadas por ferimentos penetrantes na transição toracoabdominal, são frequentemente negligenciadas pelo raio X e pela tomografia computadorizada. A visualização direta por laparoscopia permite o diagnóstico preciso e, muitas vezes, o tratamento.\n\nITEM 3 (VERDADEIRO): Segundo os protocolos de atendimento ao trauma (ATLS), ferimentos abdominais penetrantes (por arma branca ou arma de fogo) associados à instabilidade hemodinâmica (hipotensão) ou sinais de peritonite são indicações clássicas de laparotomia exploradora imediata, visando ao controle de danos e à interrupção de hemorragias ativas.\n\nITEM 4 (VERDADEIRO): As fraturas de pelve em livro aberto ocorrem por compressão anteroposterior, levando à abertura da sínfise púbica e ao aumento do volume pélvico. Esse aumento de espaço permite um sangramento retroperitoneal maciço, originado tanto de plexos venosos quanto de ramos arteriais (como a artéria ilíaca interna), o que pode levar rapidamente ao choque hipovolêmico fatal.\n\nITEM 5 (VERDADEIRO): O pâncreas é um órgão retroperitoneal e lesões traumáticas podem ser sutis inicialmente. A tomografia computadorizada, mesmo com contraste, pode apresentar resultados falsos-negativos no período imediato após o trauma (primeiras 6 a 12 horas), pois os sinais indiretos, como edema peripancreático ou coleções líquidas, podem levar tempo para se manifestar.\n\nSEQUÊNCIA CORRETA: V - F - V - V - V.\nALTERNATIVA CORRETA: Letra (b).",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:30.013Z"
+  },
+  {
+    "id": "AJUDA_b96a5ed2-4a4a-4c1d-8d3c-007b61a9aea1",
+    "originalId": "b96a5ed2-4a4a-4c1d-8d3c-007b61a9aea1",
+    "statement": "Mulher, 63 anos, notou, há 2 meses, um nódulo em mama direita que nunca havia palpado antes. Exame físico: mamas de médio volume; nódulo de 2cm em quadrante superior externo (QSE) da mama direita, indolor, pouco móvel e de consistência endurecida; axilas sem linfonodopatias palpáveis. Mamografia de alta resolução: nódulo espiculado de 2cm no QSE da mama direita (categoria BIRADS 5). Core biópsia do nódulo: compatível com carcinoma ductal infiltrante de mama, com receptores fortemente positivos para estrogênio e progesterona, baixo índice de proliferação celular e grau histológico 1. Indicada a quadrantectomia de mama direita com pesquisa de linfonodo sentinela. Além do procedimento cirúrgico, pode-se afirmar que está indicado obrigatoriamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "nenhum tratamento complementar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "quimioterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hormonioterapia e radioterapia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "radioterapia e quimioterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, devemos analisar dois pilares fundamentais do tratamento do câncer de mama: a extensão da cirurgia e o perfil imuno-histoquímico do tumor.\n\nAnálise Clínica e Imuno-histoquímica:\nA paciente apresenta um carcinoma ductal infiltrante de 2 cm (estádio clínico T2N0), com receptores hormonais positivos (estrogênio e progesterona), baixo índice de proliferação e baixo grau histológico. Esse perfil é compatível com o subtipo Luminal A, que possui melhor prognóstico e alta sensibilidade à hormonioterapia.\n\nPor que a Radioterapia é obrigatória?\nA conduta cirúrgica indicada foi a quadrantectomia (cirurgia conservadora). Em praticamente todos os casos de cirurgia conservadora de mama, a radioterapia adjuvante é mandatória. O objetivo é eliminar focos residuais microscópicos de células neoplásicas na mama remanescente, reduzindo drasticamente as taxas de recidiva local.\n\nPor que a Hormonioterapia é obrigatória?\nA biópsia revelou que o tumor possui receptores de estrogênio e progesterona fortemente positivos. Portanto, o bloqueio hormonal é obrigatório para reduzir o risco de recorrência (tanto local quanto sistêmica) e o surgimento de novos tumores na mama contralateral. Em mulheres na pós-menopausa, como a paciente de 63 anos, as opções principais são os inibidores da aromatase ou o tamoxifeno.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O tratamento conservador da mama (quadrantectomia) exige radioterapia complementar. Além disso, a presença de receptores hormonais positivos exige tratamento sistêmico com hormonioterapia.\n\nAlternativa b) Incorreta. A quimioterapia geralmente é poupada em tumores do tipo Luminal A (receptores positivos, baixo grau e baixo Ki-67) que não possuem comprometimento linfonodal, pois o benefício desse tratamento nesses casos é muito baixo frente aos riscos.\n\nAlternativa c) Correta. A radioterapia é obrigatória devido à realização da cirurgia conservadora (quadrantectomia) e a hormonioterapia é obrigatória devido à expressão de receptores hormonais no tumor.\n\nAlternativa d) Incorreta. Embora a radioterapia esteja correta, a quimioterapia não é obrigatória para este perfil biológico específico (Luminal A, linfonodo negativo, idosa). Atualmente, ferramentas genômicas (como Oncotype ou MammaPrint) poderiam até ser usadas para reforçar a decisão de omitir a quimioterapia, mas clinicamente ela já não estaria indicada de rotina aqui.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:30.013Z"
+  },
+  {
+    "id": "AJUDA_b976721a-8d55-4157-85ac-5f1afea8dfd6",
+    "originalId": "b976721a-8d55-4157-85ac-5f1afea8dfd6",
+    "statement": "Homem com cirrose hepática apresenta ascite, febre e dor abdominal difusa. Paracentese: polimorfonuclear > 250/mm3. Diagnóstico mais provável:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peritonite bacteriana espontânea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Peritonite secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Carcinomatose peritoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tuberculose peritoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito é clássico para Peritonite Bacteriana Espontânea (PBE). O paciente apresenta os três pilares diagnósticos: base clínica (cirrose com ascite), sintomas sugestivos (febre e dor abdominal) e o critério laboratorial de padrão-ouro, que é a contagem de polimorfonucleares (PMN) no líquido ascítico superior a 250 células/mm³.\n\nAlternativa a: Correta. A PBE é a infecção do líquido ascítico que ocorre na ausência de um foco infeccioso intra-abdominal passível de tratamento cirúrgico. O diagnóstico é essencialmente laboratorial, definido pela presença de mais de 250 PMN/mm³ na citometria do líquido ascítico. A febre e a dor abdominal são as manifestações mais comuns, embora o quadro possa ser mais sutil em alguns pacientes cirróticos.\n\nAlternativa b: Incorreta. A peritonite secundária ocorre quando há uma fonte de infecção intra-abdominal evidente, como a perfuração de uma víscera oca ou um abscesso. No líquido ascítico, além do aumento de PMN, costumamos encontrar pelo menos dois dos critérios de Runyon: glicose menor que 50 mg/dL, proteínas totais maiores que 1 g/dL e LDH maior que o limite superior da normalidade no soro. Além disso, a cultura na peritonite secundária costuma ser polimicrobiana, enquanto na PBE é geralmente monomicrobiana.\n\nAlternativa c: Incorreta. A carcinomatose peritoneal é uma infiltração neoplásica do peritônio. O líquido ascítico nesses casos geralmente apresenta proteínas elevadas (exsudato), mas o predomínio celular é de células mononucleares (linfócitos) e não de polimorfonucleares. O diagnóstico definitivo é feito pela citologia oncótica do líquido ou biópsia peritoneal.\n\nAlternativa d: Incorreta. A tuberculose peritoneal apresenta-se habitualmente com um quadro mais arrastado (crônico). O perfil do líquido ascítico na tuberculose é caracterizado por um predomínio de linfócitos, proteínas elevadas e frequentemente níveis elevados de adenosina deaminase (ADA), diferindo do padrão de neutrofilia (PMN > 250) encontrado no caso.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:30.013Z"
+  },
+  {
+    "id": "AJUDA_b9810a3b-f55c-43d2-8dfb-c5975dee68c8",
+    "originalId": "b9810a3b-f55c-43d2-8dfb-c5975dee68c8",
+    "statement": "As áreas de avaliação do desenvolvimento neuropsicomotor segundo o teste de Gesell são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Motora grosseira, motora fina, pessoal-social e emocional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Motora grosseira, motora fina, cognitiva e emocional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Motora grosseira, cognitiva, social e linguagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Motora grosseira, motora fina, pessoal-social e linguagem.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A escala de desenvolvimento de Arnold Gesell é um dos marcos fundamentais da pediatria moderna, baseando-se na premissa de que o desenvolvimento infantil segue uma sequência previsível de maturação do sistema nervoso central. Para sistematizar essa avaliação, Gesell dividiu o comportamento infantil em quatro campos ou domínios principais.\n\nAnálise das alternativas:\n\na) Incorreta. O termo emocional não faz parte das áreas específicas de avaliação de Gesell. Embora o estado emocional influencie o desenvolvimento, a escala foca em marcos comportamentais e motores objetivos.\n\nb) Incorreta. A categoria cognitiva não é uma nomenclatura utilizada por Gesell em sua divisão primária. Além disso, conforme mencionado, o aspecto emocional também está incorreto dentro desta classificação clássica.\n\nc) Incorreta. A nomenclatura social está incompleta, pois o correto é pessoal-social. Além disso, a inclusão de cognitiva substitui incorretamente uma das áreas motoras ou a área adaptativa (que, muitas vezes, é representada pela motora fina em provas).\n\nd) Correta. Esta alternativa lista as áreas consagradas pela metodologia de Gesell. São elas:\n1. Motora Grosseira: Refere-se às reações posturais, controle da cabeça, equilíbrio ao sentar, ficar em pé, engatinhar e andar.\n2. Motora Fina: Envolve a coordenação visomotora, o uso das mãos para manipular objetos, preensão e solução de problemas práticos (muitas vezes referida como comportamento adaptativo).\n3. Linguagem: Inclui todas as formas de comunicação, desde a compreensão de comandos e gestos até a vocalização e formação de frases.\n4. Pessoal-social: Avalia as reações pessoais da criança diante da cultura social e das pessoas, incluindo habilidades de autocuidado (comer sozinha, vestir-se) e interação interpessoal.\n\nDica de prova: Em algumas literaturas, você encontrará as áreas como Motor, Adaptativo, Linguagem e Pessoal-social. Nas provas que desmembram a área motora, a sequência apresentada na alternativa D é o padrão para definir o teste de Gesell.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:30.013Z"
+  },
+  {
+    "id": "AJUDA_b98f3fe6-f443-4868-969a-1cce8e637ab4",
+    "originalId": "b98f3fe6-f443-4868-969a-1cce8e637ab4",
+    "statement": "Em relação à notificação de doenças e agravos relacionados ao trabalho, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A lista é definida pelo Ministério da Saúde, e a estratégia é de monitorar indicadores chaves em unidades sentinelas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A lista exclui os acidentes de trabalho ocorridos com menores de 14 anos, pois a Constituição Federal veda qualquer trabalho, mesmo o de aprendiz, antes desta idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A notificação dos agravos e das doenças da lista deve ser feita imediatamente após a contratação pelo serviço de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os transtornos mentais relacionados ao trabalho fazem parte da lista, salvo nos casos em que o paciente tenha outras doenças concomitantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Comentário da questão:\n\nA alternativa (a) está correta. A Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública é definida e atualizada periodicamente pelo Ministério da Saúde. No caso específico dos agravos relacionados ao trabalho, a estratégia de vigilância muitas vezes se baseia na Rede Nacional de Atenção Integral à Saúde do Trabalhador (RENAST), que utiliza unidades-sentinela (como Centros de Referência em Saúde do Trabalhador – CEREST e serviços de urgência) para identificar e monitorar indicadores-chave, permitindo o planejamento de ações de intervenção e prevenção.\n\nA alternativa (b) está incorreta. A notificação de um acidente de trabalho no sistema de saúde (SINAN) tem finalidade epidemiológica e de proteção social, e não trabalhista. Portanto, se uma criança ou adolescente sofrer um acidente de trabalho, este deve ser notificado obrigatoriamente, independentemente de o trabalho ser proibido ou legal para aquela faixa etária. O objetivo é justamente visibilizar a ocorrência do trabalho infantil e seus danos à saúde.\n\nA alternativa (c) está incorreta. A notificação deve ser realizada diante da suspeita ou confirmação da doença ou agravo, e não \"após a constatação pelo serviço de saúde\". Além disso, o prazo para notificação varia conforme o agravo: alguns exigem notificação imediata (em até 24 horas), enquanto outros possuem periodicidade semanal.\n\nA alternativa (d) está incorreta. Os transtornos mentais relacionados ao trabalho constam na lista de notificação compulsória. A presença de comorbidades (outras doenças concomitantes) não exclui a necessidade de notificação, desde que seja estabelecido o nexo causal ou a concausalidade entre o transtorno mental e as condições de trabalho do paciente.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:30.013Z"
+  },
+  {
+    "id": "AJUDA_b990b108-6af7-448b-80d5-d4fcd1a088df",
+    "originalId": "b990b108-6af7-448b-80d5-d4fcd1a088df",
+    "statement": "Doença infecciosa aguda, de natureza viral, transmissível e extremamente contagiosa. No início da doença surge febre, acompanhada de tosse produtiva, corrimento seromucoso do nariz, conjuntivite e fotofobia. Nas últimas 24 horas deste período surge, na altura dos pré-molares, o sinal de Koplik – pequenas manchas brancas com halo eritematoso, consideradas sinal patognomônico de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sarampo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Rubéola.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Escarlatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Eritema infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Eritema súbito.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO enunciado descreve uma doença exantemática viral clássica, enfatizando a presença de sintomas catarrais intensos (tosse produtiva, coriza e conjuntivite com fotofobia) que precedem o exantema. O ponto determinante para a resolução da questão é a menção ao sinal de Koplik. Na medicina, um sinal patognomônico é aquele que, quando presente, define por si só o diagnóstico da doença. O sinal de Koplik é exclusivo do sarampo.\n\nDISTRIBUIÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) Sarampo: Esta é a alternativa correta. O sarampo é causado por um vírus da família Paramyxoviridae (gênero Morbillivirus). A doença evolui em fases, sendo a fase prodrômica marcada por febre e a tríade catarral (tosse, coriza e conjuntivite). O sinal de Koplik surge no final deste período, geralmente 1 a 2 dias antes do exantema cutâneo. Ele se caracteriza por pequenos pontos brancos, semelhantes a grãos de areia, localizados na mucosa bucal oposta aos molares e pré-molares.\n\nAlternativa (b) Rubéola: Incorreta. A rubéola costuma apresentar sintomas prodrômicos muito mais leves ou até ausentes em crianças. Sua principal característica clínica são as linfadenopatias retroauriculares, occipitais e cervicais posteriores. No palato mole, podem ser observadas as manchas de Forchheimer (pequenas petéquias), mas estas não são patognomônicas e diferem morfologicamente do sinal de Koplik.\n\nAlternativa (c) Escarlatina: Incorreta. Diferente das demais, a escarlatina é uma doença bacteriana causada pelas toxinas do Streptococcus pyogenes (Estreptococo do Grupo A). O quadro típico inclui faringite, língua em framboesa e um exantema micropapular que confere à pele uma textura de lixa. Não apresenta manchas de Koplik.\n\nAlternativa (d) Eritema infeccioso: Incorreta. Causado pelo Parvovírus B19, manifesta-se classicamente com o exantema da face esbofeteada, seguido por um exantema rendilhado no tronco e extremidades. Não cursa com pródromos catarrais significativos nem com o sinal de Koplik.\n\nAlternativa (e) Eritema súbito: Incorreta. Também chamado de roséola infantum, é causado pelo Herpes-vírus humano tipo 6. A doença é caracterizada por febre alta que desaparece subitamente (em crise), momento em que surge um exantema maculopapular no tronco que se espalha para o resto do corpo. Não apresenta o sinal de Koplik.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": 21.76719548797244,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:30.013Z"
+  },
+  {
+    "id": "AJUDA_b9931bc0-0538-4a10-b4ec-0509d13c25f2",
+    "originalId": "b9931bc0-0538-4a10-b4ec-0509d13c25f2",
+    "statement": "Paciente de 26 anos comparece a UBS em consulta, trazendo resultados de exames de rastreios para idade: vida sexual ativa, mais de três parceiros sexuais nos últimos seis meses, uso irregular de preservativos, traz os seguintes exames: Hemograma sem alterações, VDRL: 1:32, Anti- HIV 1 e 2 não reagente, Anti- HCV: não reagente, HBsAg: negativo, Anti-HBs: positivo, HBcAg: negativo, Anti-HBc: negativo, Anti-HTLV: negativo. Neste caso, além de oferecer preservativos e orientar sobre o uso e explicar os riscos deve-se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar teste treponemico e indicar PREP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicar vacinação para Hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "indicar o uso de PREP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "indicar Penicilina benzatina 1.2milhoes UI IM.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "indicar Penicilina benzatina 2.4 milhões UI IM.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ALERTA: ESTA QUESTÃO FOI ANULADA PELA BANCA EXAMINADORA.\n\nA anulação ocorreu porque o enunciado e as alternativas geram um conflito de condutas que, nos protocolos atuais do Ministério da Saúde, devem ser realizadas simultaneamente, tornando impossível escolher uma única \"mais correta\".\n\nAnálise do Caso Clínico:\nPaciente jovem, sexualmente ativa e com exposição de risco (múltiplos parceiros e uso irregular de preservativo).\n1. Sorologia para Hepatite B: HBsAg negativo, Anti-HBc negativo e Anti-HBs positivo. Isso caracteriza imunidade por vacinação prévia.\n2. Sorologia para Sífilis: VDRL 1:32. Um título alto (acima de 1:8) em paciente com exposição de risco é fortemente sugestivo de sífilis ativa.\n3. Outras sorologias: Negativas até o momento.\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta/Dubidosa): O protocolo de sífilis recomenda a realização de um teste treponêmico (como o Teste Rápido) para confirmar o VDRL, que é um teste não treponêmico e pode ter falsos-positivos. Além disso, a PrEP (Profilaxia Pré-Exposição ao HIV) está formalmente indicada para esta paciente, dado o comportamento de risco e o diagnóstico de uma IST (sífilis), que aumenta a vulnerabilidade ao HIV.\n\nAlternativa B (Incorreta): A paciente já está imunizada. O Anti-HBs positivo isolado (com Anti-HBc negativo) confirma que ela respondeu à vacinação completa anteriormente.\n\nAlternativa C (Incorreta/Dubidosa): A indicação de PrEP é correta e necessária neste cenário epidemiológico. No entanto, focar apenas na PrEP ignoraria a necessidade de tratar a sífilis provável detectada no VDRL.\n\nAlternativa D (Incorreta): A dose de 1,2 milhão de UI de Penicilina Benzatina é insuficiente. O esquema terapêutico padrão utiliza 2,4 milhões de UI (aplicadas como 1,2 milhão em cada glúteo na mesma sessão).\n\nAlternativa E (Correta/Gabarito Preliminar): Diante de um VDRL de 1:32 e risco de perda de seguimento em UBS, o Ministério da Saúde recomenda o tratamento imediato (\"in loco\") para sífilis, sem esperar o teste confirmatório. Como a paciente realiza rastreios e tem parceiros recentes, classifica-se como Sífilis Recente (menos de 1 ano de evolução), cujo tratamento é Penicilina Benzatina 2,4 milhões de UI, IM, dose única.\n\nMotivo da Anulação:\nA questão peca pela falta de hierarquização. Em uma consulta de saúde pública (UBS), as condutas das alternativas A, C e E devem ser feitas de forma conjunta: deve-se tratar a sífilis imediatamente (E), solicitar/realizar o teste confirmatório (A) e vincular a paciente ao programa de PrEP (C). Ao oferecer essas condutas separadamente, a questão impede a seleção de uma resposta única e abrangente.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:30.013Z"
+  },
+  {
+    "id": "AJUDA_b994add8-c1b9-4cac-82b6-573c7c815c16",
+    "originalId": "b994add8-c1b9-4cac-82b6-573c7c815c16",
+    "statement": "Mulher de 20 anos procura atendimento médico no ambulatório de clínica médica de referência devido a quadro iniciado há 3 meses, com dor e edema articular acometendo articulações das mãos (interfalangeanas proximais, metacarpofalangeanas e punhos), assim como cotovelos, joelhos e tornozelos. Relata rigidez matinal que persiste por mais de 2 horas. O exame físico confirma dor e edema nas articulações descritas, além de mucosas hipocoradas duas cruzes em quatro, sem outras alterações.\nA hipótese diagnóstica a ser considerada, o achado laboratorial esperado e a primeira linha de tratamento indicada são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "esclerose sistêmica; níveis elevados de creatina quinase; prednisona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "artrite reumatoide; pesquisa de fator reumatoide (FR) positivo; metotrexato.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "lúpus eritematoso sistêmico; FAN com padrão nuclear pontilhado fino denso; cloroquina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "doença mista do tecido conjuntivo; FAN com padrão nuclear pontilhado fino; azatioprina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO caso descreve uma mulher jovem com poliartrite simétrica crônica (3 meses de evolução), acometendo pequenas articulações (interfalangeanas proximais, metacarpofalangeanas e punhos) e grandes articulações (cotovelos, joelhos e tornozelos). A presença de rigidez matinal prolongada (superior a 1 hora, no caso, 2 horas) e o edema articular são sinais cardinais de uma artropatia inflamatória. A palidez mucocutânea sugere anemia, achado comum em doenças inflamatórias crônicas. Esse quadro é a apresentação clássica da Artrite Reumatoide (AR).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A esclerose sistêmica tem como marco clínico o espessamento cutâneo e o fenômeno de Raynaud. Embora possa haver queixas articulares, a poliartrite inflamatória exuberante com rigidez matinal de 2 horas não é a apresentação típica. Além disso, a creatina quinase (CK) é um marcador de lesão muscular (miosite), não sendo o achado laboratorial esperado para definir a doença de base no contexto descrito.\n\nAlternativa B (Correta): O quadro clínico preenche os critérios classificatórios para Artrite Reumatoide (envolvimento de diversas articulações, duração superior a 6 semanas e caráter inflamatório). O Fator Reumatoide (FR) é um marcador laboratorial clássico, presente em cerca de 70 a 80% dos pacientes. O Metotrexato é considerado o padrão-ouro e a primeira linha de tratamento como droga modificadora do curso da doença (MMCD ou DMARD).\n\nAlternativa C (Incorreta): O Lúpus Eritematoso Sistêmico (LES) pode cursar com poliartrite, mas esta costuma ser transitória e menos agressiva do que a descrita. O FAN com padrão nuclear pontilhado fino denso (anti-DFS70) é um achado que, na ausência de outros anticorpos, frequentemente ajuda a excluir doenças autoimunes sistêmicas, não sendo o achado esperado para confirmar o diagnóstico. A cloroquina é usada no LES, mas a questão descreve melhor uma AR.\n\nAlternativa D (Incorreta): A Doença Mista do Tecido Conjuntivo (DMTC) exige a sobreposição de características de lúpus, esclerodermia e polimiosite, além da presença obrigatória do anticorpo anti-U1RNP. O quadro apresentado é puramente articular. A azatioprina não é a primeira linha de tratamento para poliartrite inflamatória isolada; o metotrexato ocupa esse posto.\n\nRESUMO\nDiante de uma poliartrite simétrica de pequenas e grandes articulações com rigidez matinal prolongada em mulher jovem, a principal hipótese é Artrite Reumatoide. O Fator Reumatoide é o exame laboratorial inicial a ser solicitado e o Metotrexato é a terapia de primeira escolha.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Artrite Reumatoide"
+    ],
+    "difficulty": 40.46034411129622,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:30.013Z"
+  },
+  {
+    "id": "AJUDA_b99bd286-5573-4430-9ee8-a0d1a7d1d73b",
+    "originalId": "b99bd286-5573-4430-9ee8-a0d1a7d1d73b",
+    "statement": "Paciente com quadro de descompensação da insuficiência cardíaca tem como causa desta a seguinte distribuição:",
+    "options": [
+      {
+        "id": "A",
+        "text": "10%, aproximadamente, por aparecimento de quadro infeccioso de qualquer natureza.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "20%, aproximadamente, por aumento na ingesta de água e sal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "29%, aproximadamente, por má aderência ao tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "30%, aproximadamente, por desenvolvimento de arritmia cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A descompensação da insuficiência cardíaca ocorre quando um fator-gatilho rompe o equilíbrio clínico do paciente. Para responder a esta questão, utilizamos os dados do Registro BREATHE (Brazilian Registry of Heart Failure), que é o maior levantamento brasileiro sobre pacientes hospitalizados por insuficiência cardíaca e a principal referência para provas de residência no país.\n\nAlternativa A: Incorreta. Embora os quadros infecciosos, como a pneumonia e infecções urinárias, sejam causas muito comuns de descompensação, eles são responsáveis por aproximadamente 22,3% das internações no Brasil, um valor bem superior aos 10% citados na alternativa.\n\nAlternativa B: Incorreta. O aumento isolado da ingestão de sal e água é um fator relevante, mas, nos registros estatísticos, ele raramente aparece isolado com o percentual de 20%. Na maioria das vezes, os erros dietéticos são computados juntamente com a falha no uso das medicações sob o rótulo de má aderência.\n\nAlternativa C: Correta. A má aderência ao tratamento é, estatisticamente, o principal fator de descompensação da insuficiência cardíaca no cenário brasileiro. Ela engloba tanto o uso irregular ou a interrupção das medicações quanto o descumprimento das restrições de sal e líquidos. Segundo o Registro BREATHE, esse fator é responsável por 29,4% dos casos, o que valida o enunciado.\n\nAlternativa D: Incorreta. O desenvolvimento de arritmias cardíacas, como a fibrilação atrial com alta resposta ventricular, é um gatilho clássico para a descompensação. No entanto, sua prevalência gira em torno de 12% a 15% dos casos, não atingindo o patamar de 30% sugerido pela alternativa.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:30.013Z"
+  }
+]

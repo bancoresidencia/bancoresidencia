@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_bb31be51-58e4-4504-85bf-1af74ff23370",
+    "originalId": "bb31be51-58e4-4504-85bf-1af74ff23370",
+    "statement": "Em relação ao Sistema de Informações Ambulatoriais do Sistema Único de Saúde (SIA-SUS), é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As informações obtidas do SIA-SUS não subsidiam os processos de elaboração da Programação Pactuada e Integrada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uma das fontes de alimentação desse Sistema é a notificação, somada à investigação dos casos de doenças e agravos que constam da lista nacional de doenças de notificação compulsória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É uma importante fonte de obtenção de dados epidemiológicos em uma dada região de saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É um sistema de informações cuja principal fonte de dados provém dos profissionais de saúde das equipes de saúde da família.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Sistema de Informações Ambulatoriais do Sistema Único de Saúde (SIA-SUS) é uma ferramenta fundamental para a gestão do SUS, pois registra toda a produção de serviços ambulatoriais (consultas, exames, procedimentos e tratamentos de pequena e média complexidade) realizados em unidades públicas ou privadas conveniadas.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): As informações do SIA-SUS são essenciais para a elaboração da Programação Pactuada e Integrada (PPI). A PPI é o processo onde se definem as ações de saúde de cada município e os recursos financeiros para o atendimento da população. Como o SIA-SUS registra o volume de atendimentos e procedimentos realizados, ele fornece a base de dados necessária para planejar a oferta e o teto financeiro de cada região.\n\nAlternativa B (Incorreta): Esta descrição refere-se ao SINAN (Sistema de Informação de Agravos de Notificação). O SINAN é alimentado especificamente pela notificação e investigação de doenças e agravos que constam na lista nacional de notificação compulsória. O SIA-SUS, por outro lado, é alimentado pela produção de serviços (atendimentos e exames).\n\nAlternativa C (Correta): Embora o SIA-SUS tenha uma finalidade primária de faturamento e controle administrativo, ele se torna uma importante fonte de dados epidemiológicos. Ao registrar o Código Internacional de Doenças (CID) nos atendimentos e a frequência de determinados procedimentos em cada localidade, o sistema permite que gestores e pesquisadores identifiquem o perfil de morbidade ambulatorial (quais doenças estão levando as pessoas aos postos e centros de especialidades) e o uso dos serviços de saúde em uma determinada região.\n\nAlternativa D (Incorreta): Embora as equipes de saúde da família gerem dados ambulatoriais, a principal fonte de dados da Atenção Primária migrou para o sistema e-SUS AB (SISAB). O SIA-SUS é um sistema abrangente que recebe dados de toda a rede ambulatorial, incluindo centros de especialidades, clínicas de hemodiálise, serviços de fisioterapia e centros de diagnose (laboratórios e imagem), não se limitando apenas às equipes de saúde da família.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:22.259Z"
+  },
+  {
+    "id": "AJUDA_bb346e3a-ddff-42bc-82de-228541dcca62",
+    "originalId": "bb346e3a-ddff-42bc-82de-228541dcca62",
+    "statement": "Em relação à Infecção do Trato Urinário (ITU), assinale a opção INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As manifestações clínicas da ITU no período neonatal e no lactente apresentam características inespecíficas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A via de contaminação mais frequente para ITU na infância é a via hematogênica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A presença de malformações do Trato Urinário, tais como Nefropatias Obstrutivas e Refluxo Vesico Ureteral predispõem a ITU.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A ITU quando não diagnosticada e tratada adequadamente, é capaz de causar complicações severas como Insuficiência Renal Crônica e Hipertensão Arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A investigação por imagem devem sempre ser realizada em crianças com diagnostico de ITU.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o diagnóstico, a fisiopatologia e o manejo da Infecção do Trato Urinário (ITU) na infância, um tema recorrente em provas de pediatria e nefrologia. Para encontrar a alternativa incorreta, vamos analisar cada uma:\n\nAlternativa a) Esta afirmação está correta. No período neonatal e em lactentes, a ITU raramente apresenta os sintomas clássicos (disúria, polaciúria). As manifestações costumam ser inespecíficas, como febre sem foco aparente, irritabilidade, baixo ganho de peso, vômitos, recusa alimentar e até icterícia prolongada no recém-nascido.\n\nAlternativa b) Esta é a alternativa INCORRETA e, portanto, o gabarito. A via de contaminação mais frequente da ITU em todas as faixas etárias, inclusive na infância, é a via ASCENDENTE. Isso ocorre quando microrganismos da flora intestinal (principalmente a Escherichia coli) colonizam a região periuretral e ascendem pela uretra até a bexiga. A via hematogênica é rara, ocorrendo geralmente apenas em recém-nascidos no contexto de sepse ou em crianças gravemente imunocomprometidas.\n\nAlternativa c) Esta afirmação está correta. Malformações congênitas do trato urinário que causam estase urinária (dificuldade de esvaziamento) ou refluxo (como o refluxo vesicoureteral) são fatores de risco primordiais para o desenvolvimento de ITUs e para a recorrência do quadro, pois facilitam a proliferação bacteriana.\n\nAlternativa d) Esta afirmação está correta. Quando a ITU (especialmente a pielonefrite) não é tratada precocemente, pode levar à formação de cicatrizes renais. Essas cicatrizes reduzem o parênquima funcional, podendo resultar em hipertensão arterial e, a longo prazo, em doença renal crônica terminal.\n\nAlternativa e) Esta afirmação é considerada correta no contexto pediátrico clássico e na maioria dos editais de residência. Diferentemente dos adultos, em que a primeira ITU baixa não costuma ser investigada, na criança o diagnóstico de uma ITU geralmente impõe a realização de exames de imagem (como ultrassonografia de rins e vias urinárias) para rastrear malformações anatômicas subjacentes que possam predispor a novos episódios e danos renais.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:22.259Z"
+  },
+  {
+    "id": "AJUDA_bb36a863-2d7a-412e-ae0f-5cafd63c0854",
+    "originalId": "bb36a863-2d7a-412e-ae0f-5cafd63c0854",
+    "statement": "Uma primípara comparece à consulta de puericultura com seu filho de 2 meses. Durante a consulta, o pediatra percebe que ela está prestes a abandonar o aleitamento materno exclusivo e conduz a conversa de forma a mantê-lo.\nNessa conversa é importante ser empático, evitando:",
+    "options": [
+      {
+        "id": "A",
+        "text": "fazer perguntas abertas que permitam à mãe expressar argumentos contra a manutenção da amamentação;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "recorrer à comunicação não verbal, uma vez que esta pode induzir a erros de interpretação, tornar-se inapropriada ou gerar problemas éticos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aceitar as opiniões da mãe durante a conversa, a fim de demonstrar, de forma clara e incisiva, que a posição expressa nessas opiniões está equivocada;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "usar palavras que possam ser interpretadas como julgamento, exceto quando possam efetivamente levar ao desmame;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "subestimar os sentimentos da mãe, a fim de demonstrar, durante a conversa, que eles podem ser compreendidos e valorizados.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda as técnicas de aconselhamento em amamentação, fundamentais na puericultura para promover o aleitamento materno exclusivo (AME). O aconselhamento não é apenas dar instruções, mas sim uma forma de atuar em que o profissional escuta e entende a mulher, oferecendo ajuda para que ela planeje e tome decisões.\n\nAlternativa (a) Incorreta. Fazer perguntas abertas é uma das principais técnicas de escuta e aprendizagem recomendadas pela Organização Mundial da Saúde e pelo Ministério da Saúde. Perguntas que começam com \"como\", \"o que\", \"quando\" ou \"por que\" permitem que a mãe se expresse livremente, ajudando o médico a identificar os reais motivos que a levam a considerar a interrupção da amamentação. Portanto, isso deve ser incentivado, não evitado.\n\nAlternativa (b) Incorreta. A comunicação não verbal (manter o olhar no mesmo nível, tocar suavemente, balançar a cabeça em sinal de concordância) é essencial para estabelecer empatia e demonstrar interesse. Embora deva ser usada com bom senso e ética, ela não deve ser evitada, pois é uma ferramenta poderosa para fortalecer o vínculo entre médico e paciente.\n\nAlternativa (c) Incorreta. Aceitar o que a mãe pensa e sente é um passo para a construção de confiança. No entanto, o erro da alternativa está na finalidade: o objetivo de aceitar as opiniões não é demonstrar que a mãe está \"equivocada\" de forma \"incisiva\". O médico deve aceitar as ideias sem julgamento, para então, de forma acolhedora, oferecer informações que possam mudar a percepção da mãe.\n\nAlternativa (d) Incorreta. Palavras de julgamento (como \"certo\", \"errado\", \"bom\", \"ruim\") devem ser sempre evitadas no aconselhamento, pois fazem a mãe se sentir criticada ou incapaz. A segunda parte da alternativa (\"exceto quando possam efetivamente levar ao desmame\") torna a assertiva confusa e clinicamente incorreta, pois o objetivo da consulta é justamente evitar o desmame.\n\nAlternativa (e) Correta. Ser empático significa colocar-se no lugar do outro para entender seus sentimentos. Subestimar ou minimizar os sentimentos da mãe (por exemplo, dizer que o cansaço dela \"não é nada\" ou que a dor é \"psicológica\") destrói a relação de ajuda. Para que a mãe se sinta compreendida e valorizada, o médico deve evitar, de todas as formas, subestimar as queixas e emoções relatadas por ela. Ao validar o que ela sente, o profissional cria um ambiente seguro para que ela aceite as orientações técnicas para manter a amamentação.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Aleitamento Materno",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:22.259Z"
+  },
+  {
+    "id": "AJUDA_bb4b4ece-d6c8-4867-9058-8652b3cb1764",
+    "originalId": "bb4b4ece-d6c8-4867-9058-8652b3cb1764",
+    "statement": "Geraldo, 37 anos, adscrito à unidade básica de saúde, chega para consulta apresentando sintomas psicóticos. Como parte de seu delírio persecutório, recusa-se a ser medicado e não aceita ser encaminhado para o CAPS.\nNesse caso, a conduta correta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "encaminhar para o CAPS mesmo assim, pois a unidade não tem recurso para esse atendimento;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "insistir com a medicação, que é condição para um plano terapêutico adequado;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "fazer o acolhimento de Geraldo e convencê-lo a aderir ao tratamento para os problemas identificados;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "fazer o acolhimento de Geraldo, avaliar o quadro clínico geral e pactuar o acompanhamento na medida de suas limitações, lançando mão da entrevista motivacional se possível;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "chamar a ambulância para levá-lo compulsoriamente para a internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO caso clínico apresenta um paciente com sintomas psicóticos (delírio persecutório) atendido na Atenção Primária à Saúde (APS). O desafio reside no manejo de um paciente que recusa as intervenções padrão (medicação e encaminhamento ao CAPS). A questão exige conhecimento sobre a Política Nacional de Saúde Mental e as diretrizes do Ministério da Saúde para o cuidado em liberdade e a construção de vínculo na Rede de Atenção Psicossocial (RAPS).\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA alternativa (d) é a correta, pois reflete os princípios da Reforma Psiquiátrica e do acolhimento na Atenção Primária. No manejo de pacientes psicóticos, especialmente aqueles com delírios persecutórios, a imposição de tratamentos pode ser interpretada como parte da perseguição, rompendo o vínculo terapêutico. A conduta deve focar no acolhimento, na avaliação integral (excluindo causas orgânicas para a psicose) e no estabelecimento de um plano terapêutico possível dentro das limitações do paciente, respeitando sua autonomia e utilizando técnicas como a entrevista motivacional para fomentar a adesão gradual.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): Incorreta. A unidade básica de saúde tem responsabilidade compartilhada no cuidado em saúde mental. O encaminhamento compulsório para o CAPS contra a vontade do paciente, em um quadro que não apresenta risco iminente de vida, fere a autonomia e sobrecarrega a rede sem garantir o cuidado. O matriciamento (apoio do CAPS à UBS) seria a estratégia indicada aqui, e não o simples \"descarte\" do paciente.\n\nAlternativa (b): Incorreta. Embora a medicação seja um pilar importante no tratamento da psicose, a insistência impositiva em um paciente com delírio persecutório gera resistência e desconfiança. O plano terapêutico deve ser multidimensional, incluindo intervenções psicossociais, e a medicação deve ser pactuada conforme o fortalecimento do vínculo.\n\nAlternativa (c): Incorreta. O erro está no foco exclusivo em \"convencê-lo\". Na psicose aguda e estruturada, a argumentação lógica muitas vezes falha. A abordagem deve ser de escuta e pactuação do que é possível no momento, em vez de uma tentativa de persuasão que pode ser vista como invasiva pelo paciente.\n\nAlternativa (e): Incorreta. A internação compulsória ou o transporte por ambulância sem o consentimento do paciente são medidas de exceção, reservadas para situações de urgência e emergência com risco iminente de auto ou heteroagressão (Lei nº 10.216/2001). O enunciado não descreve agressividade ou risco de morte imediato que justifique tal medida extrema.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Transtornos Psicóticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:22.259Z"
+  },
+  {
+    "id": "AJUDA_bb65fda1-f03e-4b88-a243-29291acbc49c",
+    "originalId": "bb65fda1-f03e-4b88-a243-29291acbc49c",
+    "statement": "F.B.N., 32 anos, primigesta, com 11 semanas de idade gestacional, veio à consulta de pré-natal com resultado de glicemia de jejum de 93 mg/dL. Sobre esse caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de diabetes pré-gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de diabetes gestacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deve-se repetir o exame com 13 semanas para firmar diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se solicitar o TOTG para complementação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deve-se solicitar Hb glicada para complementação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão trata do rastreamento e diagnóstico de diabetes na gestação, e o gabarito oficial é a letra (b). Isso exige atenção, porque o valor de 93 mg/dL fica numa faixa específica dos critérios da OMS/IADPSG, adotados pelo Ministério da Saúde e pela FEBRASGO.\n\nCritérios diagnósticos na primeira consulta de pré-natal (antes de 24 semanas), com glicemia de jejum:\n- Glicemia de jejum igual ou maior que 126 mg/dL: diabetes pré-gestacional (overt diabetes), com confirmação por novo exame ou HbA1c igual ou maior que 6,5%.\n- Glicemia de jejum de 92 a 125 mg/dL: diabetes mellitus gestacional (DMG).\n- Glicemia de jejum menor que 92 mg/dL: normal. Nesse caso, faz-se o TOTG 75 g entre 24 e 28 semanas.\n\nA paciente tem 93 mg/dL, dentro da faixa de 92 a 125 mg/dL. Portanto, o diagnóstico é DMG já na primeira consulta, sem necessidade de exames adicionais.\n\nAnálise das alternativas:\n\na) Incorreta. O diabetes pré-gestacional exigiria glicemia de jejum igual ou maior que 126 mg/dL (ou HbA1c igual ou maior que 6,5%, ou glicemia casual igual ou maior que 200 mg/dL com sintomas). O valor de 93 mg/dL não atinge esse limiar.\n\nb) Correta. Glicemia de jejum entre 92 e 125 mg/dL em qualquer idade gestacional fecha o diagnóstico de DMG. Os critérios de DMG não dependem de o exame ser feito com 11 semanas.\n\nc) Incorreta. Não é preciso esperar nem repetir o exame com 13 semanas, pois o diagnóstico já está estabelecido. Repetir só é necessário em valores igual ou maiores que 126 mg/dL, para confirmar diabetes pré-gestacional na ausência de sintomas.\n\nd) Incorreta. O TOTG 75 g é reservado a gestantes com glicemia de jejum menor que 92 mg/dL, entre 24 e 28 semanas. Aqui o diagnóstico já está firmado, e o TOTG seria desnecessário. Além disso, a sobrecarga de glicose é desconfortável e dispensável nessa situação.\n\ne) Incorreta. A HbA1c não é necessária para complementar o diagnóstico de DMG. Ela pode ser usada para suspeitar ou confirmar diabetes pré-gestacional (igual ou maior que 6,5%), mas não é critério para DMG e tem menor sensibilidade na gestação.\n\nPonto-chave: na primeira consulta, glicemia de jejum menor que 92 mg/dL é normal, de 92 a 125 mg/dL é DMG e igual ou maior que 126 mg/dL é diabetes pré-gestacional. Conduta após o diagnóstico de DMG: orientação nutricional, atividade física e automonitorização glicêmica, com insulina (ou metformina, como alternativa) se as metas não forem atingidas.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:22.259Z"
+  },
+  {
+    "id": "AJUDA_bb66c4db-b268-424b-9e9a-ccb6fe792d5b",
+    "originalId": "bb66c4db-b268-424b-9e9a-ccb6fe792d5b",
+    "statement": "Na anemia ferropriva, qual dado fornece uma estimativa apurada das reservas corporais de ferro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transferrina sérica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hemoglobina corpuscular média;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ferritina sérica;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Volume corpuscular médio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o diagnóstico laboratorial da anemia ferropriva, focando especificamente na avaliação dos estoques de ferro no organismo. Para responder corretamente, é necessário distinguir entre os marcadores de transporte, os índices hematimétricos e os marcadores de reserva.\n\nAnálise das alternativas:\n\na) Transferrina sérica: Incorreta. A transferrina é a principal proteína de transporte do ferro no plasma. Na anemia ferropriva, a capacidade total de ligação do ferro (TIBC) e os níveis de transferrina costumam estar elevados (uma tentativa do corpo de aumentar a captação de ferro), enquanto a saturação da transferrina fica baixa. No entanto, ela reflete o transporte e a disponibilidade imediata, e não a quantidade total de ferro estocado nos tecidos.\n\nb) Hemoglobina corpuscular média (HCM): Incorreta. O HCM é um índice hematimétrico que mede o peso médio da hemoglobina dentro de cada hemácia. Na anemia ferropriva, o HCM diminui, caracterizando a hipocromia. Assim como o VCM, essa alteração ocorre em estágios mais avançados da deficiência, após o esgotamento das reservas, não servindo para estimar os estoques corporais de forma direta ou precoce.\n\nc) Ferritina sérica: Correta. A ferritina é a principal proteína de reserva intracelular de ferro, encontrada principalmente no fígado, baço e medula óssea. Uma pequena quantidade circula no soro e é diretamente proporcional às reservas totais de ferro do organismo. Por isso, a ferritina sérica é considerada o teste laboratorial mais sensível e específico para detectar a deficiência de ferro, sendo o primeiro parâmetro a se alterar (reduzir) quando os estoques começam a diminuir. Vale lembrar que, por ser uma proteína de fase aguda, ela pode estar falsamente elevada em processos inflamatórios ou infecciosos.\n\nd) Volume corpuscular médio (VCM): Incorreta. O VCM mede o tamanho médio das hemácias. Na anemia ferropriva, as células tornam-se pequenas (microcitose), resultando em um VCM baixo. No entanto, a microcitose é uma alteração morfológica tardia, que só surge quando o ferro disponível para a eritropoese já está exaurido. Portanto, o VCM indica uma consequência da falta de ferro, mas não quantifica as reservas corporais.\n\nResumo: A ferritina sérica é o parâmetro de escolha para avaliar as reservas de ferro, sendo o marcador que se reduz precocemente, antes mesmo da instalação da anemia propriamente dita.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:22.259Z"
+  },
+  {
+    "id": "AJUDA_bb71bf35-0266-4586-887f-b4efe3858a5b",
+    "originalId": "bb71bf35-0266-4586-887f-b4efe3858a5b",
+    "statement": "Mulher de 68 anos, hipertensa e diabética, dá entrada no PS com dor torácica típica há 2 horas. ECG mostra supra de ST em DII, DIII e aVF. A melhor conduta inicial é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trombólise intravenosa, independentemente do tempo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "AAS, inibidor de P2Y12 e encaminhamento para angioplastia primária",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Nitrato sublingual e observação clínica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Betabloqueador intravenoso isolado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Encaminhamento para cirurgia de revascularização miocárdica de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA paciente apresenta um quadro de Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAMCSST) de parede inferior, evidenciado pelo supra em DII, DIII e aVF. Como a dor iniciou há apenas 2 horas, ela está dentro da janela terapêutica ideal para reperfusão miocárdica. O manejo deve focar em estabilização medicamentosa e abertura imediata da artéria coronária ocluída.\n\nCOMENTÁRIO DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. A trombólise (fibrinólise) é uma alternativa de reperfusão importante, mas é indicada apenas quando a angioplastia primária não pode ser realizada em tempo hábil (geralmente 120 minutos do diagnóstico). Além disso, o termo \"independentemente do tempo\" está incorreto, pois a fibrinólise perde eficácia após 12 horas de evolução. O tratamento também exige antiagregação prévia.\n\nAlternativa B: Correta. Este é o protocolo padrão para o IAMCSST. A conduta inicial envolve a dupla antiagregação plaquetária (AAS associado a um inibidor do receptor P2Y12, como Clopidogrel, Ticagrelor ou Prasugrel) para evitar a progressão do trombo e a reoclusão. A angioplastia primária é o método de reperfusão de escolha por apresentar melhores resultados em termos de mortalidade e menor taxa de complicações hemorrágicas em comparação à trombólise.\n\nAlternativa C: Incorreta. O nitrato é um medicamento adjuvante para alívio da dor anginosa através da vasodilatação, mas não é o tratamento definitivo para um infarto com supra. Vale ressaltar que, em infartos de parede inferior, o uso de nitratos deve ser feito com extrema cautela devido ao risco de infarto de Ventrículo Direito (VD) associado; nesses casos, o nitrato pode reduzir a pré-carga e causar hipotensão severa. A \"observação\" é contraindicada, pois \"tempo é músculo\".\n\nAlternativa D: Incorreta. O uso de betabloqueadores intravenosos na fase aguda do infarto não é mais conduta de rotina e nunca deve ser feito de forma isolada. Eles podem ser perigosos em pacientes com risco de choque cardiogênico ou bradicardia, condições comuns em infartos de parede inferior.\n\nAlternativa E: Incorreta. A cirurgia de revascularização miocárdica (ponte de safena) não é a conduta inicial para o infarto agudo. Ela é reservada para situações de exceção, como complicações mecânicas (ruptura de válvula mitral ou septo interventricular) ou quando a anatomia coronariana não é favorável à angioplastia em um paciente que mantém isquemia persistente.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:22.259Z"
+  },
+  {
+    "id": "AJUDA_bb76dcb0-7961-46ba-a575-6a8078862067",
+    "originalId": "bb76dcb0-7961-46ba-a575-6a8078862067",
+    "statement": "Durante a reanimação neonatal de um RN > 34 semanas, o parâmetro mais confiável para avaliar a eficácia da ventilação com pressão positiva nos primeiros 30 segundos é o seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da saturação periférica de oxigênio (SpO2).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Presença de movimentos torácicos visíveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Elevação da frequência cardíaca acima de 100 bpm.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ausência de cianose periférica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Melhora do tônus muscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O ponto central da reanimação neonatal é a ventilação pulmonar. Quando um recém-nascido necessita de ventilação com pressão positiva (VPP), o objetivo principal é promover a expansão dos pulmões e a troca gasosa adequada.\n\nA alternativa (c) está correta porque a frequência cardíaca é considerada o indicador clínico mais sensível e confiável para avaliar a resposta do recém-nascido às manobras de reanimação. O aumento da frequência cardíaca acima de 100 batimentos por minuto nos primeiros 30 segundos de VPP indica que a ventilação está sendo eficaz, permitindo a oxigenação do miocárdio e a reversão da hipóxia.\n\nA alternativa (a) está incorreta porque a saturação periférica de oxigênio (SpO2) demora alguns minutos para subir após o nascimento. Existem metas específicas de SpO2 para cada minuto de vida (por exemplo, 70-80% aos 5 minutos), portanto, ela não é o parâmetro de resposta imediata mais confiável nos primeiros 30 segundos de ventilação.\n\nA alternativa (b) está incorreta porque, embora a observação de movimentos torácicos seja fundamental para garantir que a técnica de ventilação esteja permitindo a entrada de ar nos pulmões, o parâmetro que define o sucesso fisiológico da intervenção é a resposta hemodinâmica (frequência cardíaca), e não apenas o movimento mecânico do tórax.\n\nA alternativa (d) está incorreta porque a cianose periférica (acrocianose) é um achado comum e fisiológico nos primeiros minutos de vida, não servindo como parâmetro para avaliar a eficácia da ventilação ou a necessidade de oxigênio suplementar.\n\nA alternativa (e) está incorreta porque a melhora do tônus muscular é um sinal clínico tardio. Durante a recuperação de um quadro de asfixia ou depressão respiratória, a frequência cardíaca é a primeira a responder, seguida pela respiração e, por último, pelo tônus muscular.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:22.259Z"
+  },
+  {
+    "id": "AJUDA_bb8af0e0-6d50-451e-ae2f-383c0b0bdbec",
+    "originalId": "bb8af0e0-6d50-451e-ae2f-383c0b0bdbec",
+    "statement": "Assinale qual é o tipo de derrame papilar que é achado clínico comum em mulheres portadoras de ectasia ductal mamária:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Derrame papilar hemorrágico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Derrame papilar seroso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Derrame papilar em “água de rochas”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Derrame papilar galactorreia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A ectasia ductal mamária é uma condição benigna frequente em mulheres na perimenopausa e pós-menopausa, caracterizada pela dilatação dos ductos principais subareolares, acúmulo de secreções lipídicas e debris celulares, associada a processo inflamatório crônico periductal.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): O derrame papilar hemorrágico (sanguinolento) é uma descarga patológica tipicamente associada ao papiloma intraductal ou a neoplasias malignas da mama, sendo infrequente na ectasia ductal.\n\nAlternativa B (Correta): Na ectasia ductal, a descarga é habitualmente multiductal, bilateral e de aspecto variável, apresentando-se como serosa, viscosa ou em tons esverdeados, amarelados e acastanhados decorrentes da oxidação do material acumulado nos ductos dilatados.\n\nAlternativa C (Incorreta): O derrame cristalino e transparente, denominado em \"água de rocha\", é um achado patológico suspeito fortemente relacionado ao câncer de mama (especialmente carcinoma ductal in situ ou invasor), não sendo o padrão da ectasia ductal.\n\nAlternativa D (Incorreta): A galactorreia caracteriza-se pela eliminação de secreção leitosa decorrente de distúrbios sistêmicos associados à hiperprolactinemia (uso de fármacos, prolactinomas, hipotireoidismo), e não por alteração estrutural ductal inflamatória.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Doenças Benignas da Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:22.259Z"
+  },
+  {
+    "id": "AJUDA_bb8b1221-3a18-4c3c-8762-2f12fc90577d",
+    "originalId": "bb8b1221-3a18-4c3c-8762-2f12fc90577d",
+    "statement": "Quanto à fisiologia reprodutiva feminina, assinale a alternativa que descreve corretamente o papel do hormônio antimülleriano (AMH).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da ovulação mensal por estímulo direto das gonadotrofinas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Determinação do pico ovulatório com amplificação do LH",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumento da sensibilidade folicular ao FSH durante a fase folicular tardia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Regulação da reserva ovariana ao inibir o recrutamento excessivo de folículos primários",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "EXPLICAÇÃO DA QUESTÃO\n\nO Hormônio Antimülleriano (AMH) é uma glicoproteína produzida pelas células da granulosa dos folículos ovarianos que estão em crescimento inicial, especificamente os folículos pré-antrais e antrais pequenos (menores que 8 milímetros). Ele é considerado o melhor marcador endócrino da reserva ovariana.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A: INCORRETA. O AMH não aumenta a ovulação nem estimula diretamente as gonadotrofinas (FSH e LH). Pelo contrário, ele exerce um papel de controle local, impedindo que o recrutamento folicular ocorra de forma desordenada ou excessiva.\n\nAlternativa B: INCORRETA. O pico ovulatório de LH é desencadeado pelos níveis elevados de estradiol produzidos pelo folículo dominante, que exercem um feedback positivo sobre a hipófise. O AMH não participa da determinação ou amplificação do pico de LH.\n\nAlternativa C: INCORRETA. O AMH atua diminuindo a sensibilidade dos folículos antrais ao FSH, e não aumentando. Esse mecanismo serve para proteger os folículos menores de serem recrutados precocemente ou de forma exagerada pelo FSH durante o ciclo. Na fase folicular tardia, a expressão de AMH diminui no folículo dominante para que ele possa se tornar mais sensível ao FSH e completar seu desenvolvimento.\n\nAlternativa D: CORRETA. Esta é a principal função fisiológica do AMH no ovário adulto. Ele atua como um freio biológico, inibindo a transição dos folículos primordiais (que estão em repouso) para o estágio de folículos primários (que entram no pool de crescimento). Sem o AMH, a reserva ovariana seria consumida muito mais rapidamente. Além disso, ele modula o recrutamento cíclico ao reduzir a sensibilidade folicular ao FSH.\n\nRESUMO PARA ESTUDO:\nO AMH é fundamental na prática clínica porque seus níveis plasmáticos são proporcionais à quantidade de folículos pré-antrais e antrais pequenos presentes nos ovários. Por não ser produzido pelo folículo dominante e não depender diretamente do ciclo de gonadotrofinas, seus níveis permanecem relativamente constantes ao longo do ciclo menstrual, permitindo sua dosagem em qualquer fase do mês para avaliar a reserva ovariana.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Ciclo Menstrual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:40:22.259Z"
+  }
+]

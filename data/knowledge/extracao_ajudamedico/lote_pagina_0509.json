@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_8dd19cd2-8f36-4261-9780-ae7b0e30f407",
+    "originalId": "8dd19cd2-8f36-4261-9780-ae7b0e30f407",
+    "statement": "Durante uma consulta ambulatorial, uma mulher de 49 anos com história de artralgia difusa, rigidez matinal e fadiga é questionada sobre sintomas associados. Refere fenômeno de Raynaud, disfagia leve e sensação de pele endurecida nas mãos.\nAo exame: espessamento cutâneo distal, telangiectasias em face e discreta hipertensão arterial.\nQual achado laboratorial confirma o diagnóstico clínico MAIS provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anticorpo anti-centromero positivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Anticorpo anti-RNP positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anticorpo anti-CCP positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anticorpo anti-KLM positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO quadro clínico descrito aponta para o diagnóstico de Esclerose Sistêmica (Esclerodermia). A paciente apresenta a tríade clássica da doença: fenômeno de Raynaud, alterações cutâneas (espessamento da pele e telangiectasias) e acometimento visceral (disfagia, sugerindo dismotilidade esofágica).\n\nO padrão de espessamento cutâneo restrito às extremidades (distal) e a presença de telangiectasias sugerem a forma cutânea limitada da Esclerose Sistêmica (anteriormente conhecida como síndrome CREST: Calcinose, Raynaud, Esofagopatia, Esclerodactilia e Telangiectasia).\n\nAnálise das alternativas:\n\na) CORRETA. O anticorpo anticentrômero é o marcador laboratorial altamente específico para a forma cutânea limitada da Esclerose Sistêmica. Sua presença reforça o diagnóstico clínico e está frequentemente associada a um melhor prognóstico em relação ao envolvimento renal e pulmonar intersticial, embora aumente o risco de hipertensão arterial pulmonar a longo prazo.\n\nb) INCORRETA. O anticorpo anti-RNP (ribonucleoproteína) é o marcador característico da Doença Mista do Tecido Conjuntivo (DMTC). Embora a DMTC possa apresentar características sobrepostas de esclerodermia, lúpus e polimiosite, o quadro clínico de espessamento cutâneo distal e telangiectasias é mais típico e definidor da Esclerose Sistêmica.\n\nc) INCORRETA. O anticorpo anti-CCP (peptídeo citrulinado cíclico) é um marcador de alta especificidade para a Artrite Reumatoide. Apesar de a paciente apresentar artralgia e rigidez matinal, esses sintomas são inespecíficos e comuns a diversas colagenoses. O anti-CCP não explicaria o fenômeno de Raynaud, a disfagia nem o espessamento cutâneo.\n\nd) INCORRETA. O anticorpo anti-LKM-1 (provavelmente referido na questão como KLM por erro de digitação) está associado à Hepatite Autoimune do tipo 2, não possuindo relação com doenças do espectro da esclerodermia ou reumatismos sistêmicos descritos no caso.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Doenças Autoimunes do Tecido Conjuntivo"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:23.694Z"
+  },
+  {
+    "id": "AJUDA_8dd3718d-6d26-4b02-94e9-1559d0414075",
+    "originalId": "8dd3718d-6d26-4b02-94e9-1559d0414075",
+    "statement": "Mulher de 35 anos apresenta perda visual monocular súbita e dor ocular à movimentação. RM mostra lesão desmielinizante. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neuropatia óptica isquêmica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Neurite óptica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Glaucoma agudo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retinopatia diabética",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Descolamento de retina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda um quadro clínico clássico na neurologia e oftalmologia, exigindo o reconhecimento de sinais e sintomas específicos para o diagnóstico diferencial das perdas visuais súbitas.\n\nAlternativa (a) Incorreta: A Neuropatia Óptica Isquêmica geralmente ocorre em pacientes mais velhos (acima de 50 anos) ou com fatores de risco cardiovascular (hipertensão, diabetes). Embora cause perda visual súbita, ela costuma ser indolor. Além disso, a fisiopatologia é vascular e não apresenta relação com lesões desmielinizantes na ressonância magnética.\n\nAlternativa (b) Correta: A Neurite Óptica é a principal causa de perda visual monocular súbita em adultos jovens, com forte predominância no sexo feminino. A dor à movimentação ocular é um sintoma cardinal, presente em cerca de 90% dos casos, causada pela inflamação da bainha do nervo óptico que compartilha inserções com a musculatura extraocular. O achado de lesão desmielinizante na RM é um marcador importante, pois a neurite óptica costuma ser a manifestação inicial da Esclerose Múltipla.\n\nAlternativa (c) Incorreta: O Glaucoma Agudo de ângulo fechado manifesta-se com dor ocular intensa, olho vermelho, percepção de halos ao redor das luzes e sintomas sistêmicos como náuseas e vômitos. O exame físico revelaria um olho endurecido e pupila em midríase média paralítica, sem relação com processos desmielinizantes.\n\nAlternativa (d) Incorreta: A Retinopatia Diabética é uma condição crônica e progressiva. Perdas visuais súbitas no paciente diabético geralmente ocorrem por hemorragia vítrea ou descolamento de retina tracional, sendo processos indolores e de origem vascular/estrutural retiniana, não neurológica.\n\nAlternativa (e) Incorreta: O Descolamento de Retina causa perda visual súbita (frequentemente descrita como uma cortina escurecendo a visão) e pode ser precedido por fotopsias (flashes de luz). Contudo, é uma condição tipicamente indolor e o diagnóstico é realizado pelo mapeamento de retina, não apresentando correlação com lesões desmielinizantes no sistema nervoso central.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Neuroftalmologia",
+      "Doenças Desmielinizantes e Encefalites Autoimunes"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:23.694Z"
+  },
+  {
+    "id": "AJUDA_8dd872f4-b4bf-47ee-8962-edb2771a4e64",
+    "originalId": "8dd872f4-b4bf-47ee-8962-edb2771a4e64",
+    "statement": "Mulher, 23 anos de idade, faz acompanhamento médico por rinite alérgica, dismenorreia e cefaleia tensional, com uso recorrente de anti-inflamatórios e analgésicos. A paciente comparece em consulta ambulatorial de rotina e refere que, nos últimos 8 meses, procurou o pronto-atendimento quatro vezes por edema em pálpebras e lábios. Um dos episódios foi acompanhado de edema de língua. Outro episódio foi acompanhado de lesões de pele eritematosas, edematosas e pruriginosas. Em um dos casos havia ingerido amendoim. Em duas ocasiões, recebeu adrenalina intramuscular com melhora do quadro. Nega que tenha ocorrido hipotensão, dispneia, diarreia ou dor abdominal nos quatro atendimentos. Qual é a causa mais provável do quadro clínico desta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Urticária aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Alergia alimentar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anafilaxia recorrente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Angioedema hereditário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve uma mulher jovem com episódios recorrentes e autolimitados de angioedema (edema de pálpebras, lábios e língua) e urticas (lesões cutâneas eritematosas, edematosas e pruriginosas). O uso frequente de anti-inflamatórios não esteroidais (AINEs) e analgésicos é um clássico gatilho para quadros de urticária e angioedema agudos.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): A urticária aguda é caracterizada pelo surgimento de urticas (placas eritematosas e pruriginosas) e/ou angioedema, com duração inferior a seis semanas por episódio. Em quase metade dos casos, urticária e angioedema ocorrem concomitantemente. A paciente apresenta episódios isolados e agudos ao longo de 8 meses, cenário compatível com episódios recorrentes de urticária aguda desencadeados por gatilhos frequentes, como o uso recorrente de AINEs relatado na história clínica.\n\nAlternativa B (Incorreta): Embora um dos episódios tenha ocorrido após ingestão de amendoim, a alergia alimentar não explica a totalidade dos quatro atendimentos. A paciente tem um histórico muito mais consistente de uso rotineiro de analgésicos e AINEs, sendo o diagnóstico sindrômico de urticária aguda mais abrangente e provável.\n\nAlternativa C (Incorreta): O diagnóstico de anafilaxia exige o acometimento de dois ou mais órgãos ou sistemas (cutâneo-mucoso associado a respiratório, gastrointestinal ou cardiovascular) ou hipotensão isolada após exposição a alérgeno conhecido. O enunciado enfatiza que a paciente não apresentou hipotensão, dispneia, diarreia ou dor abdominal em nenhum dos episódios, restringindo as manifestações apenas ao acometimento cutâneo e mucoso, o que afasta o critério de anafilaxia.\n\nAlternativa D (Incorreta): O angioedema hereditário é mediado por bradicinina e cursa classicamente com angioedema sem urticária e sem prurido. A presença de lesões cutâneas eritematosas e pruriginosas exclui essa hipótese. Além disso, as crises de angioedema hereditário não respondem ao uso de adrenalina, corticoides ou anti-histamínicos, ao contrário do quadro apresentado pela paciente, que melhorou com adrenalina.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:23.694Z"
+  },
+  {
+    "id": "AJUDA_8ddbaaac-cc02-4541-854e-3546d71d7905",
+    "originalId": "8ddbaaac-cc02-4541-854e-3546d71d7905",
+    "statement": "Homem, 56 anos de idade, procura o pronto-socorro com dor súbita e aumento do volume na região inguinal direita há 6 horas. Exame físico: abaulamento doloroso da região inguinal, sem sinais de peritonite. Durante o exame físico, a hérnia reduziu espontaneamente. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hernioplastia aberta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hernioplastia laparoscópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Observação clínica por 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Laparotomia exploradora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um paciente de 56 anos com uma hérnia inguinal que estava encarcerada há 6 horas e que sofreu redução espontânea durante o exame físico. O principal desafio clínico nessa situação é que o conteúdo herniário (geralmente uma alça intestinal), que estava sob risco de sofrimento isquêmico, retornou para a cavidade abdominal sem que sua viabilidade fosse verificada.\n\nAlternativa a) Incorreta. A hernioplastia por via aberta tem como objetivo principal a correção do defeito anatômico na região inguinal. No entanto, ela não oferece acesso visual adequado à cavidade abdominal. Se a alça intestinal que foi reduzida estiver necrótica ou com isquemia irreversível, essa condição não será detectada pela via aberta, o que pode levar a uma peritonite grave no período pós-operatório.\n\nAlternativa b) Correta. A abordagem laparoscópica é a conduta mais adequada e moderna para este cenário. Ela permite que o cirurgião inspecione diretamente a cavidade peritoneal e localize a alça intestinal que estava encarcerada. Através da visualização direta, avaliam-se a cor, o brilho, a presença de peristalse e a pulsação dos vasos do mesentério. Se a alça estiver saudável, o cirurgião procede à correção da hérnia (hernioplastia) por vídeo. Se a alça estiver inviável, o tratamento da necrose pode ser realizado de forma assistida ou por conversão.\n\nAlternativa c) Incorreta. A observação clínica isolada é considerada uma conduta de risco. O paciente apresentou dor súbita e permaneceu 6 horas com a hérnia encarcerada, tempo suficiente para a ocorrência de sofrimento vascular. Aguardar 24 horas pode mascarar uma perfuração intestinal iminente e atrasar uma intervenção necessária, elevando a morbimortalidade do paciente.\n\nAlternativa d) Incorreta. A laparotomia exploradora (abertura ampla do abdome) é uma conduta excessivamente agressiva para um paciente que não apresenta sinais de peritonite generalizada ou instabilidade hemodinâmica. A laparoscopia cumpre o mesmo objetivo diagnóstico de inspeção de forma muito menos invasiva e com recuperação mais rápida.\n\nEm resumo, diante da redução espontânea de uma hérnia inguinal com sinais de encarceramento prolongado, a inspeção da viabilidade do conteúdo é obrigatória, e a laparoscopia é a ferramenta de escolha por unir diagnóstico e tratamento em um único procedimento minimamente invasivo.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:23.694Z"
+  },
+  {
+    "id": "AJUDA_8de1f8d6-6ee7-4397-a738-e47adaca7600",
+    "originalId": "8de1f8d6-6ee7-4397-a738-e47adaca7600",
+    "statement": "Existem inúmeras técnicas descritas para a correção das hérnias inguinais. Algumas delas requerem a utilização de telas de polipropileno. Dentre a relação de técnicas abaixo, assinale aquela que NÃO utiliza tela para sua realização.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lichtenstein.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Stoppa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "TAPP videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Shouldice.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "TEP videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda as principais técnicas de hernioplastia inguinal, dividindo-as basicamente entre técnicas anatômicas (que utilizam apenas suturas e tecidos do próprio paciente) e técnicas sem tensão (que utilizam telas ou próteses).\n\nAlternativa a) Lichtenstein: Está incorreta. A técnica de Lichtenstein é atualmente considerada o padrão-ouro para o reparo por via aberta. É a técnica \"tension-free\" (sem tensão) mais conhecida, utilizando obrigatoriamente uma tela de polipropileno para reforçar a parede posterior do canal inguinal.\n\nAlternativa b) Stoppa: Está incorreta. A técnica de Stoppa consiste no reparo por via posterior (pré-peritoneal) com a colocação de uma grande tela de polipropileno que cobre todo o orifício miopectíneo de Fruchaud. É geralmente indicada para hérnias bilaterais ou recidivantes complexas.\n\nAlternativa c) TAPP (Transabdominal Preperitoneal): Está incorreta. A TAPP é uma via videolaparoscópica que acessa a região inguinal por dentro da cavidade abdominal. Todas as técnicas laparoscópicas padronizadas para correção de hérnia inguinal exigem a utilização de uma tela.\n\nAlternativa d) Shouldice: Está correta. A técnica de Shouldice é uma técnica \"tissue-to-tissue\" (tecido com tecido), ou seja, é um reparo anatômico que não utiliza tela. Ela se baseia no imbricamento de quatro camadas da fáscia transversalis e outros tecidos da parede posterior do canal inguinal por meio de suturas contínuas. É considerada a melhor técnica não protésica devido aos seus menores índices de recidiva quando comparada a outras técnicas antigas, como Bassini e McVay.\n\nAlternativa e) TEP (Totalmente Extraperitoneal): Está incorreta. Assim como a TAPP, a TEP é uma abordagem videolaparoscópica, porém realizada inteiramente no espaço pré-peritoneal, sem violar a cavidade peritoneal. Assim como na TAPP, o uso da tela é indispensável para o sucesso do procedimento.\n\nGabarito: Letra D.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:23.694Z"
+  },
+  {
+    "id": "AJUDA_8de395e0-b15d-4f69-8b8c-ac6adc9744b5",
+    "originalId": "8de395e0-b15d-4f69-8b8c-ac6adc9744b5",
+    "statement": "Homem de 74 anos comparece a uma Unidade Básica de Saúde para consulta. Mora sozinho e tem como renda o Benefício de Prestação Continuada. Relata que, há 6 meses, sente dor e queimação em ambos os pés, de moderada intensidade, com predomínio noturno, associada a parestesias em “bota”, sem alívio com analgésicos simples. Tem diagnóstico de diabetes mellitus tipo 2 há 18 anos, em uso de metformina e insulina NPH em esquema basal. Não há evidência de cardiopatia associada. A hemoglobina glicada se mantém estável em 6,5% e a taxa de filtração glomerular é 75 mL/min/1,73m2. O eletrocardiograma é normal. Ao exame físico, deambula sem dificuldade e evidencia-se hipoestesia tátil e vibratória em padrão distal simétrico, em “bota”, com pulsos distais palpáveis. Não há lesões cutâneas nos membros inferiores.\nQual é a medicação de primeira linha para o manejo da dor nesse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carbamazepina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ibuprofeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Amitriptilina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tramadol e paracetamol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Gabarito: alternativa C (amitriptilina).\n\nDiagnóstico\n\nO quadro é de polineuropatia diabética sensitivo-motora distal e simétrica, a forma mais comum de neuropatia diabética. Os elementos que sustentam o diagnóstico são:\n- diabetes de longa duração (18 anos);\n- dor em queimação com piora noturna;\n- parestesias e hipoestesia tátil e vibratória em \"bota\";\n- pulsos palpáveis, o que afasta isquemia como causa da dor.\n\nTrata-se de dor neuropática. Por isso, analgésicos simples e anti-inflamatórios têm pouca eficácia.\n\nTratamento de primeira linha\n\nAs diretrizes (ADA, SBD, NICE, IASP/NeuPSIG) recomendam três classes como primeira linha:\n- antidepressivos tricíclicos, como a amitriptilina;\n- inibidores da recaptação de serotonina e noradrenalina, como a duloxetina;\n- gabapentinoides, como a pregabalina e a gabapentina.\n\nO enunciado traz pistas deliberadas para a escolha da amitriptilina:\n- Não há cardiopatia e o ECG é normal. Os tricíclicos podem prolongar o QT e causar arritmias, e a questão afasta essa contraindicação.\n- O paciente tem baixa renda (Benefício de Prestação Continuada) e é atendido na UBS. A amitriptilina é barata e está disponível na RENAME/SUS. Duloxetina e pregabalina têm acesso limitado.\n- A função renal está preservada (TFG de 75) e não há queixa de quedas ou alteração cognitiva. Deambula sem dificuldade.\n\nPor ser idoso, o paciente exige cautela, pois a amitriptilina consta nos critérios de Beers pelos efeitos anticolinérgicos, sedação e hipotensão postural. A conduta é iniciar com dose baixa (10 a 25 mg à noite) e titular lentamente, monitorando esses efeitos.\n\nAnálise das alternativas\n\na) Carbamazepina – Incorreta. É a droga de escolha na neuralgia do trigêmeo, mas não é primeira linha na neuropatia diabética. Há evidência limitada e muitos efeitos adversos, especialmente em idosos: hiponatremia, tontura, ataxia, mielossupressão, hepatotoxicidade e interações medicamentosas por indução enzimática.\n\nb) Ibuprofeno – Incorreta. AINEs não têm eficácia comprovada na dor neuropática. Em idoso diabético, ainda aumentam o risco de lesão renal, sangramento gastrointestinal, hipertensão e eventos cardiovasculares.\n\nc) Amitriptilina – Correta. É um tricíclico de primeira linha para a dor da neuropatia diabética, com boa evidência de eficácia e baixo custo. Neste paciente, sem cardiopatia, com ECG normal e dependente do SUS, é a opção mais adequada, desde que usada em dose baixa e com titulação cuidadosa.\n\nd) Tramadol e paracetamol – Incorreta. Opioides fracos como o tramadol são segunda ou terceira linha, reservados para falha ou intolerância às drogas de primeira linha. Têm risco de dependência, quedas, constipação, síndrome serotoninérgica e hipoglicemia. O paracetamol isolado não atua sobre a dor neuropática.\n\nMensagem para a prova: na dor da neuropatia diabética, a primeira linha é tricíclico, duloxetina ou gabapentinoide. Quando a questão destaca ECG normal, ausência de cardiopatia e contexto do SUS, a resposta esperada é a amitriptilina.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Síndromes Dolorosas Crônicas",
+      "Doenças Neuromusculares",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:23.694Z"
+  },
+  {
+    "id": "AJUDA_8de55469-acb8-445e-8a3f-dcd6e3f09d81",
+    "originalId": "8de55469-acb8-445e-8a3f-dcd6e3f09d81",
+    "statement": "Homem, 62 anos de idade, apresenta dispneia progressiva aos moderados esforços e ortopneia há 6 meses. Exame fisico: turgência jugular patológica; murmúrio vesicular presente bilateralmente com estertores crepitantes em ambas as bases; bulhas cardíacas rítmicas com presença de terceira bulha, ictus palpável no sexto espaço intercostal esquerdo na linha axilar anterior, onde se ausculta um sopro sistólico regurgitativo 3+/6+ irradiado para axila, e edema simétrico de membros inferiores 2+/4+. Qual é a causa mais provável do sopro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insuficiência aórtica primária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prolapso de valva mitral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Insuficiência mitral funcional",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Abscesso de valva mitral esquerda",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Quadro Clínico:\nO paciente apresenta sinais e sintomas clássicos de Insuficiência Cardíaca Congestiva (ICC). A dispneia, ortopneia, turgência jugular e estertores crepitantes indicam congestão sistêmica e pulmonar. A presença da terceira bulha (B3) é um sinal de sobrecarga de volume e disfunção ventricular. O dado fundamental para a questão é o ictus cordis deslocado (sexto espaço intercostal na linha axilar anterior), o que comprova que o ventrículo esquerdo está dilatado (cardiomegalia).\n\nAnálise do Sopro:\nO sopro descrito é sistólico, do tipo regurgitativo, localizado no foco mitral (ápice) e com irradiação para a axila. Estas características são típicas da Insuficiência Mitral.\n\nJustificativa da alternativa correta:\nAlternativa (c): Insuficiência mitral funcional. Em pacientes com insuficiência cardíaca e dilatação do ventrículo esquerdo, a arquitetura cardíaca sofre mudanças. O aumento da cavidade ventricular provoca o alargamento do anel da valva mitral e o deslocamento lateral dos músculos papilares. Isso gera uma tração (tethering) nas cordoalhas tendíneas, impedindo que os folhetos da valva se fechem completamente durante a sístole. Portanto, a valva em si não possui uma doença estrutural primária, mas torna-se insuficiente devido à dilatação do coração. Esse mecanismo é chamado de insuficiência mitral funcional ou secundária.\n\nAnálise das alternativas incorretas:\na) Insuficiência aórtica primária: Esta condição gera um sopro diastólico, aspirativo, melhor auscultado no foco aórtico ou aórtico acessório (borda esternal esquerda). O sopro relatado no enunciado é sistólico e de localização mitral.\n\nb) Prolapso de valva mitral: É uma causa primária de insuficiência mitral decorrente de degeneração mixomatosa dos folhetos. Tipicamente apresenta um clique mesossistólico seguido de um sopro telessistólico (no final da sístole). Embora possa evoluir para uma insuficiência mitral importante, o contexto de dilatação ventricular e falência cardíaca evidente torna a causa funcional muito mais provável nesta questão.\n\nd) Abscesso de valva mitral esquerda: O abscesso é uma complicação supurativa da endocardite infecciosa. Para ser a resposta correta, o quadro clínico deveria incluir sinais de infecção sistêmica, como febre, calafrios, prostração, além de possivelmente fenômenos embólicos ou vasculares, o que não é descrito no paciente de 62 anos com quadro crônico de 6 meses.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Valvopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:23.694Z"
+  },
+  {
+    "id": "AJUDA_8df40bbc-c8b6-40f1-a7ed-f3685ddf3a41",
+    "originalId": "8df40bbc-c8b6-40f1-a7ed-f3685ddf3a41",
+    "statement": "Mulher, 30 anos, relata ter realizado há 2 meses cirurgia bariátrica com a técnica de bypass gástrico. Comparece à consulta para ser orientada sobre métodos anticoncepcionais. O seu IMC era de 30, e é de 26 no momento da consulta. Paciente está planejando engravidar em 1 ano, mas precisa de uma opção segura e eficaz até lá. Tem fluxo menstrual aumentado, sem nenhuma causa identificável, e tem história de trombose venosa no passado, estando assintomática no momento. Qual é o melhor método anticoncepcional para essa paciente, considerando a necessidade de eficácia e segurança pós-cirurgia bariátrica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Contraceptivos orais combinados de baixa dosagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sistema intrauterino liberador de levonorgestrel.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Adesivo contraceptivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Medroxiprogesterona injetável, pois a fertilidade retorna 2 meses após a pausa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta quatro condições determinantes para a escolha do método contraceptivo:\n1. Histórico de trombose venosa: contraindica o uso de métodos combinados com estrogênio (Categoria 4 dos Critérios de Elegibilidade da OMS).\n2. Cirurgia bariátrica malabsortiva (bypass gástrico): reduz a biodisponibilidade e a eficácia de medicamentos administrados por via oral.\n3. Fluxo menstrual aumentado: demanda um método que promova controle ou redução do sangramento.\n4. Desejo reprodutivo em curto prazo (1 ano): exige rápido retorno à fertilidade após a suspensão.\n\nAlternativa A - Incorreta: Contraceptivos orais combinados são contraindicados para mulheres com histórico de tromboembolismo venoso devido ao estrogênio (Categoria 4 da OMS). Além disso, a técnica de bypass gástrico compromete a absorção de fármacos por via oral, diminuindo a segurança contraceptiva do método.\n\nAlternativa B - Correta: O Sistema Intrauterino liberador de levonorgestrel (SIU-LNG) atende a todos os critérios. Por ser isento de estrogênio, é seguro para pacientes com antecedente de trombose (Categoria 2 da OMS). Não depende do trato gastrointestinal para sua absorção, mantendo alta eficácia pós-bariátrica. Promove atrofia endometrial, sendo padrão-ouro no controle do fluxo menstrual aumentado, e garante retorno imediato à fertilidade após a sua retirada.\n\nAlternativa C - Incorreta: O adesivo contraceptivo é um método hormonal combinado (estrogênio mais progestagênio) e compartilha a mesma contraindicação absoluta (Categoria 4 da OMS) relacionada ao risco de recidiva tromboembólica.\n\nAlternativa D - Incorreta: O injetável de medroxiprogesterona associa-se a um atraso prolongado no retorno da fertilidade, que costuma demorar de 9 a 12 meses (podendo chegar a 18 meses) após a interrupção, o que inviabiliza o planejamento de engravidar em 1 ano. A assertiva erra ao afirmar que o retorno ocorre em 2 meses. Ademais, o método pode acarretar ganho ponderal, desfavorável no pós-operatório bariátrico.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Cirurgia Bariátrica e Metabólica",
+      "Planejamento Familiar"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:23.694Z"
+  },
+  {
+    "id": "AJUDA_8df74883-8cdc-4d81-9e7f-637ec558542e",
+    "originalId": "8df74883-8cdc-4d81-9e7f-637ec558542e",
+    "statement": "Mulher de 18 anos deu à luz uma criança do sexo feminino, Apgar 9/10, nascida a termo, com peso de nascimento de 3.500 g, comprimento de 50 cm e perímetro cefálico de 35 cm. A criança permaneceu em aleitamento materno exclusivo desde o nascimento. Com 24 horas de vida, o médico constata a perda de 175 g, eliminações presentes, a paciente corada e hidratada. Nesse caso, a perda de peso em relação ao peso do nascimento é de",
+    "options": [
+      {
+        "id": "A",
+        "text": "5%, o que não é motivo de preocupação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "15%, devendo receber complemento com fórmula.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "15%, sendo necessária observação clínica rigorosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "5%, mas não deveria estar acontecendo nesse momento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO primeiro passo para resolver a questão é realizar o cálculo matemático da porcentagem de perda de peso do recém-nascido. Para isso, dividimos o peso perdido pelo peso de nascimento:\n\n175g / 3.500g = 0,05\n0,05 x 100 = 5%\n\nO segundo passo é a interpretação clínica desse dado. É fisiológico que o recém-nascido perca peso nos primeiros dias de vida. Essa perda ocorre devido à eliminação de excesso de líquido extracelular, eliminação de mecônio e urina, além da baixa ingestão calórica inicial (fase do colostro). Em recém-nascidos a termo, espera-se uma perda de até 10% do peso de nascimento nos primeiros 3 a 7 dias de vida. \n\nNo caso descrito, a criança perdeu 5% em 24 horas, mas mantém-se corada, hidratada e com eliminações presentes, o que confirma que o processo é fisiológico e não exige intervenções.\n\nDISTRIBUIÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Correta. O cálculo está correto (5%) e a conduta é expectante, pois a perda está dentro do limite fisiológico de até 10% e o exame físico da criança é normal.\n\nAlternativa b) Incorreta. O cálculo de 15% está matematicamente errado (15% de 3.500g seriam 525g). Além disso, não há indicação de fórmula infantil, pois a criança está clinicamente bem e em aleitamento materno exclusivo.\n\nAlternativa c) Incorreta. O valor de 15% está incorreto. Uma perda de 15% seria considerada patológica e exigiria investigação de técnica de amamentação ou patologias subjacentes, mas não é o caso desta paciente.\n\nAlternativa d) Incorreta. Embora o cálculo de 5% esteja correto, a afirmação de que não deveria estar ocorrendo nesse momento é falsa. A perda ponderal inicia-se logo após o nascimento e pode ser detectada já nas primeiras 24 horas de vida.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Cuidados Neonatais",
+      "Crescimento"
+    ],
+    "difficulty": 19.44858584014352,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:23.694Z"
+  },
+  {
+    "id": "AJUDA_8e009f8a-4272-407e-83ce-f5c567ba1e64",
+    "originalId": "8e009f8a-4272-407e-83ce-f5c567ba1e64",
+    "statement": "Na REMIT, Resposta Endócrino-Metabólica-Imunológica ao Trauma, incluindo os hormônios envolvidos, qual das substâncias abaixo NÃO causa lipólise?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Catecolaminas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Glucagon",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Insulina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "GH",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cortisol",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Resposta Endócrino-Metabólica-Imunológica ao Trauma (REMIT) caracteriza-se por um estado hipermetabólico e catabólico, orquestrado para mobilizar reservas energéticas para a cicatrização e manutenção de funções vitais após uma agressão. Nesse processo, predominam os hormônios contrarreguladores, que buscam elevar os níveis de glicose e ácidos graxos na circulação.\n\nAnálise das alternativas:\n\na) Catecolaminas: A adrenalina e a noradrenalina são liberadas imediatamente após o trauma (fase Ebb). Elas ativam os receptores beta no tecido adiposo, estimulando a enzima lipase hormônio-sensível, o que resulta em uma potente lipólise para fornecer ácidos graxos como combustível metabólico.\n\nb) Glucagon: No trauma, a relação glucagon/insulina aumenta. O glucagon atua no fígado estimulando a produção de glicose, mas também possui um papel na mobilização de gorduras do tecido adiposo, favorecendo a lipólise.\n\nc) Insulina: É o principal hormônio anabólico do organismo. Sua função biológica é promover o armazenamento de energia (glicogênio e triglicerídeos) e a síntese proteica. A insulina é a substância que bloqueia a lipase hormônio-sensível, inibindo a lipólise e estimulando a lipogênese. Durante a REMIT, o corpo frequentemente desenvolve resistência à insulina para garantir que a glicose permaneça disponível no sangue, mas o hormônio em si é antilipolítico. Esta é a alternativa correta.\n\nd) GH (Hormônio do Crescimento): Apesar de sua ação anabólica sobre as proteínas, o GH possui um efeito metabólico importante de mobilização de gordura durante o estresse. Ele estimula a lipólise para que os ácidos graxos livres sejam utilizados como fonte de energia, ajudando a poupar os estoques de glicose.\n\ne) Cortisol: É o mediador fundamental da fase de fluxo (Flow) da REMIT. O cortisol promove a quebra de proteínas (proteólise) e também de gorduras (lipólise) na periferia. O glicerol resultante da lipólise é utilizado pelo fígado como substrato para a gliconeogênese (formação de nova glicose).\n\nEm resumo, enquanto catecolaminas, glucagon, GH e cortisol trabalham para \"quebrar\" as reservas de gordura (lipólise) para enfrentar a situação de estresse, a insulina trabalha no sentido oposto, favorecendo o armazenamento.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Perioperatório",
+      "Trauma",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:15:23.694Z"
+  }
+]

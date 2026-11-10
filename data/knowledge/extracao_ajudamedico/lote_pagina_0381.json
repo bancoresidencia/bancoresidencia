@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_6991c101-09b7-4752-bf1e-261230ca4252",
+    "originalId": "6991c101-09b7-4752-bf1e-261230ca4252",
+    "statement": "Uma criança de 4 anos é atendida em consulta de puericultura. Não apresenta comorbidades e tem esquema vacinal completo até 2 anos. Nesse momento, a recomendação vacinal é indicar reforço de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tríplice bacteriana e polio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hepatite A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pneumocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Varicela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Meningocócica C.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para responder corretamente a essa questão, é necessário conhecer o Calendário Nacional de Vacinação do Ministério da Saúde (PNI). Aos 4 anos de idade, a criança deve receber reforços de vacinas cujas séries primárias foram iniciadas no primeiro ano de vida e que tiveram o primeiro reforço aos 15 meses.\n\nAlternativa (a): CORRETA. De acordo com o PNI, aos 4 anos de idade, a criança deve receber o segundo reforço da vacina DTP (tríplice bacteriana, que protege contra difteria, tétano e coqueluche) e o segundo reforço da vacina VOP (vacina oral poliomielite). Essas duas vacinas compõem o esquema clássico de reforço para essa faixa etária.\n\nAlternativa (b): INCORRETA. A vacina contra a hepatite A é aplicada em dose única no Brasil, aos 15 meses de idade. Não há recomendação de reforço para crianças de 4 anos que já possuem o esquema completo até os 2 anos.\n\nAlternativa (c): INCORRETA. A vacina pneumocócica 10-valente é administrada em um esquema de duas doses (aos 2 e 4 meses) com um único reforço aos 12 meses de idade. Não há previsão de reforço aos 4 anos no calendário de rotina.\n\nAlternativa (d): INCORRETA. No calendário atual do PNI, a criança recebe a primeira dose da vacina varicela aos 15 meses (geralmente como a vacina tetraviral) e a segunda dose aos 4 anos de idade. No entanto, tecnicamente, essa dose aos 4 anos é classificada como uma segunda dose, e não como um reforço (booster) do esquema básico. Além disso, a alternativa (a) contempla o conjunto mais tradicional de reforços exigidos em provas para essa idade.\n\nAlternativa (e): INCORRETA. A vacina meningocócica C (conjugada) tem seu esquema básico aos 3 e 5 meses, com um reforço aos 12 meses. Atualmente, existe um reforço com a vacina meningocócica ACWY, mas ele é destinado a adolescentes entre 11 e 14 anos, não sendo indicado para crianças de 4 anos.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:56.838Z"
+  },
+  {
+    "id": "AJUDA_69931194-244d-409a-8216-2b9f51f9abbe",
+    "originalId": "69931194-244d-409a-8216-2b9f51f9abbe",
+    "statement": "Paciente de 64 anos, portadora de diabetes mellitus tipo 2, hipertensão arterial, hiperuricemia e hipertrigliceridemia, é submetida a colectomia segmentar por neoplasia de cólon há 5 dias. Evolui com febre persistente, dor abdominal progressiva e inapetência na enfermaria. Nas últimas 12 horas, apresentou vômitos biliosos e rebaixamento do nível de consciência sendo transferida para unidade de terapia intensiva. Ao exame físico: PA: 78 x 50 mmHg; FC: 124 bpm; FR: 28 irpm; SatO₂: 94% O₂ nasal; temperatura: 38,9 °C; pele fria; tempo de enchimento capilar 5 s; Glasgow: 13; abdome: distendido, doloroso difusamente, sinais de defesa involuntária e descompressão brusca dolorosa. Exames laboratoriais iniciais: lactato: 5,2 mmol/L; leucócitos: 24.000/mm³; plaquetas: 88.000/mm³; creatinina: 2,3 mg/dL (VR <1,2); bilirrubina total: 2,1 mg/dL. Realizou a tomografia de abdome sem contraste a seguir:\n\nQual é a medida fundamental, associada à antibioticoterapia e ao suporte hemodinâmico, para o manejo desse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar hidrocortisona EV e passagem de sonda nasogástrica, devido ao choque refratário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar reabordagem cirúrgica urgente para controle de foco (lavagem de cavidade, revisão de anastomose, drenagem de coleções), associada à antibioticoterapia de amplo espectro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Transfundir concentrado de hemácias e plasma fresco congelado de imediato, visando melhorar a perfusão tecidual e correção da coagulopatia antes de qualquer decisão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter apenas antibioticoterapia de amplo espectro em doses máximas, aguardando estabilização clínica antes de qualquer intervenção invasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise Clínica e Diagnóstica:\n\nO quadro clínico descreve uma paciente de 64 anos no 5º dia de pós-operatório de uma colectomia segmentar que evolui com sinais claros de choque séptico de foco abdominal. Os parâmetros hemodinâmicos (hipotensão, taquicardia, tempo de enchimento capilar prolongado), a disfunção de órgãos (rebaixamento do nível de consciência, insuficiência renal aguda, hiperbilirrubinemia, plaquetopenia) e o lactato elevado confirmam a gravidade. O exame físico abdominal com sinais de peritonite (defesa e descompressão brusca dolorosa) aponta para uma complicação cirúrgica, provavelmente uma deiscência de anastomose.\n\nAnálise da Imagem:\n\nA tomografia computadorizada de abdome evidencia uma grande quantidade de ar livre na cavidade peritoneal (pneumoperitôneo), visível na região anterior do abdome, associada a distensão de alças intestinais. Em um contexto de pós-operatório de 5 dias, a presença de pneumoperitôneo volumoso associado a sinais de irritação peritoneal é indicativo de perfuração de víscera oca, reforçando a suspeita de deiscência da anastomose intestinal.\n\nAnálise das Alternativas:\n\nAlternativa a: Incorreta. A hidrocortisona é indicada no choque séptico apenas quando há refratariedade à reposição volêmica e ao uso de vasopressores em doses elevadas. A sonda nasogástrica é uma medida de suporte para descompressão em caso de íleo paralítico ou vômitos, mas não trata a causa-base do choque, que é a infecção intra-abdominal não controlada.\n\nAlternativa b: Correta. No manejo da sepse e do choque séptico, os pilares fundamentais são a ressuscitação hemodinâmica precoce, a antibioticoterapia de amplo espectro e o controle do foco infeccioso (Source Control). Neste caso, o foco é uma peritonite purulenta ou fecal por deiscência de anastomose. Sem a reabordagem cirúrgica para lavar a cavidade e tratar a perfuração, o paciente não apresentará melhora, independentemente do suporte intensivo.\n\nAlternativa c: Incorreta. Não há evidências de hemorragia aguda ou anemia grave que justifiquem a transfusão imediata de concentrado de hemácias como medida fundamental. Além disso, a correção de coagulopatia com plasma sem o controle do sangramento ou da causa da sepse é ineficaz. O foco deve ser a estabilização hemodinâmica e a cirurgia.\n\nAlternativa d: Incorreta. Aguardar a estabilização clínica para intervir em um paciente com peritonite e choque séptico é uma conduta inadequada. A estabilização completa muitas vezes só é alcançada após o controle do foco infeccioso. O atraso na cirurgia em casos de peritonite química ou bacteriana aumenta drasticamente a mortalidade.\n\nConclusão:\n\nDiante de um abdome agudo perfurativo com choque séptico no pós-operatório, a medida salvadora e fundamental é a reabordagem cirúrgica urgente para controle do foco.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ventilação Mecânica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/6ec313e4e25d8aafa0283959ccbab0c6b518fb421c36b2194dd23b95b54252e4.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_69931194-244d-409a-8216-2b9f51f9abbe_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:57.342Z"
+  },
+  {
+    "id": "AJUDA_699a0deb-5841-4bd6-90d8-561f8363b1b5",
+    "originalId": "699a0deb-5841-4bd6-90d8-561f8363b1b5",
+    "statement": "Homem, 28 anos de idade, com diagnóstico de anemia falciforme, em acompanhamento irregular, dá entrada no Pronto-Socorro com dor torácica pleurítica, de início súbito há 1 dia, associada à febre de 38,7 ºC, tosse produtiva e dispneia progressiva. Uso irregular de hidroxiureia e ácido fólico. Ao exame: FR 28 irpm, FC 115 bpm, temperatura 38,5 ºC, SpO2 88 % em ar ambiente; estertores crepitantes em base pulmonar direita e murmúrio vesicular diminuído; palidez acentuada e icterícia leve. Radiografia: novo infiltrado em lobo inferior direito. Hemograma: Hb 7,2 g/dL, Ht 21 %, leucócitos 18.500/mm³, plaquetas 320.000/mm³.\n\nIdentifique as medidas mais indicadas para prevenir novos episódios, semelhantes ao atual, após a alta hospitalar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uso regular da hidroxiureia, profilaxia com penicilina benzatina e vacinação contra germes encapsulados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Esplenectomia por cirurgia eletiva, profilaxia com amoxacilina oral e vacinação contra germes encapsulados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anticoagulação com varfarina, transfusões para manter Hb acima de 10 g/dL e profilaxia com amoxacilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transfusões mensais para Hb acima de 10 g/dL, esplenectomia eletiva e profilaxia com penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito (febre, dor torácica pleurítica, tosse, hipoxemia e novo infiltrado pulmonar à radiografia) é característico de Síndrome Torácica Aguda (STA), uma das principais causas de mortalidade na anemia falciforme. A questão aborda as medidas de prevenção secundária após a resolução do evento agudo.\n\nAlternativa a: Correta. O uso regular de hidroxiureia é o pilar terapêutico para reduzir a frequência e a gravidade das crises vaso-oclusivas e dos episódios de síndrome torácica aguda, atuando principalmente pelo aumento da hemoglobina fetal (HbF). Devido à asplenia funcional decorrente de repetidos infartos esplênicos (autoesplenectomia), a imunização contra germes encapsulados (Streptococcus pneumoniae, Neisseria meningitidis e Haemophilus influenzae tipo b) e o uso de profilaxia com penicilina benzatina são medidas indispensáveis para diminuir o risco de infecções graves, que frequentemente atuam como gatilho para a STA.\n\nAlternativa b: Incorreta. A esplenectomia cirúrgica eletiva não tem indicação na prevenção de STA em adultos, visto que o paciente já apresenta autoesplenectomia funcional e atrofia do baço. Além disso, a profilaxia antipneumocócica padrão de escolha utiliza penicilina benzatina ou penicilina V oral, e não amoxicilina contínua.\n\nAlternativa c: Incorreta. A anticoagulação com varfarina não é uma medida profilática padrão para síndrome torácica aguda, sendo indicada apenas diante de trombose venosa profunda ou embolia pulmonar comprovadas. O regime transfusional crônico com alvo de hemoglobina acima de 10 g/dL não é a conduta inicial para este paciente com histórico de má adesão à hidroxiureia, além de apresentar riscos significativos de aloimunização e hemossiderose secundária.\n\nAlternativa d: Incorreta. A esplenectomia não traz benefícios preventivos para STA nesta faixa etária. O regime de hipertransfusão crônica para manter Hb elevada é reservado para indicações muito restritas (como prevenção secundária de AVC ou falha terapêutica documentada da hidroxiureia otimizada), não sendo a conduta preventiva inicial.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Anemias",
+      "Imunizações"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:57.342Z"
+  },
+  {
+    "id": "AJUDA_699d9e55-e60b-4c83-8f73-0fd9fc31d59f",
+    "originalId": "699d9e55-e60b-4c83-8f73-0fd9fc31d59f",
+    "statement": "Homem, 74 anos de idade, apresenta dor abdominal supra-púbica de forte intensidade, com última micção há 16 horas e perda urinária em gotas, em pouco volume. Exame físico: REG, afebril, globo vesical palpável. Exames laboratoriais: C 1,3 mg/dL, U 60 mg/dL, hemograma sem alteração. Realizado sondagem vesical de alívio, com saída de 1.300 mL de urina concentrada, e alivio do desconforto. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Treinar cateterismo intermitente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Passagem de sonda vesical de demora.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar terapia combinada com alfa-bloqueador e inibidor de 5-alfa-redutase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar estudo urodinâmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um paciente idoso com retenção urinária aguda (RUA), evidenciada pela dor suprapúbica intensa, incapacidade de micção há 16 horas e presença de globo vesical ao exame físico. O ponto crucial da questão é o volume drenado na sondagem de alívio: 1.300 mL.\n\nPor que a alternativa (b) está correta?\nVolumes urinários muito elevados (geralmente acima de 1.000 mL) causam um estiramento excessivo das fibras musculares da bexiga (músculo detrusor), resultando em uma atonia vesical temporária. Nesses casos, apenas a sondagem de alívio não é suficiente, pois a bexiga não conseguirá recuperar sua capacidade de contração imediatamente e o paciente voltará a reter urina em pouco tempo. A passagem da sonda vesical de demora é a conduta mais adequada para permitir o repouso vesical por alguns dias, favorecendo a recuperação do tônus muscular. Além disso, grandes drenagens agudas exigem vigilância para potenciais complicações, como a hematúria ex vacuo e a síndrome da diurese pós-obstrutiva.\n\nPor que as outras alternativas estão incorretas?\n\nAlternativa (a): O cateterismo intermitente é uma técnica de escolha para pacientes com bexiga neurogênica ou disfunções crônicas de esvaziamento. No cenário de urgência com distensão vesical maciça (1,3 L), a prioridade é manter a bexiga descomprimida continuamente para recuperação do detrusor, o que torna a sonda de demora mais indicada.\n\nAlternativa (c): Embora a terapia combinada (alfa-bloqueador para relaxar o colo vesical e inibidor de 5-alfa-redutase para reduzir o volume prostático) seja o tratamento padrão-ouro para a hiperplasia prostática benigna sintomática, ela não resolve o quadro agudo de atonia por distensão. O alfa-bloqueador é frequentemente iniciado enquanto o paciente está com a sonda para aumentar as chances de sucesso no teste de retirada do cateter após alguns dias, mas o tratamento medicamentoso isolado agora não substituiria a necessidade da sonda de demora.\n\nAlternativa (d): O estudo urodinâmico é um exame invasivo utilizado para diagnosticar a causa de disfunções miccionais complexas ou para avaliação pré-operatória. Ele não tem papel na fase aguda da retenção urinária. Os resultados seriam imprecisos devido à distensão recente e o foco imediato deve ser o esvaziamento e repouso da bexiga.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:57.342Z"
+  },
+  {
+    "id": "AJUDA_69a07d30-7962-46c5-8844-b4890200f879",
+    "originalId": "69a07d30-7962-46c5-8844-b4890200f879",
+    "statement": "Assinale a alternativa correta sobre a vacina a ser administrada aos 3 meses de idade.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vacina BCG, dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vacina tetra viral, primeira dose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vacina adsorvida difteria, tétano e pertussis (DTP), primeiro reforço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vacina meningocócica C (conjugada), primeira dose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Vacina febre amarela atenuada, primeira dose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para responder corretamente a essa questão, é fundamental o conhecimento do Calendário Nacional de Vacinação da Criança, definido pelo Programa Nacional de Imunizações (PNI).\n\nAnálise das alternativas:\n\na) Incorreta. A vacina BCG, que previne as formas graves de tuberculose, deve ser administrada em dose única o mais precocemente possível, preferencialmente logo após o nascimento, ainda na maternidade.\n\nb) Incorreta. A vacina tetra viral corresponde à segunda dose da tríplice viral (sarampo, caxumba e rubéola) combinada com a vacina contra varicela. Ela é administrada aos 15 meses de idade, após a criança ter recebido a primeira dose da tríplice viral aos 12 meses.\n\nc) Incorreta. A proteção contra difteria, tétano e coqueluche (pertussis) no primeiro ano de vida é feita através da vacina pentavalente, aplicada aos 2, 4 e 6 meses. O primeiro reforço com a vacina DTP (adsorvida difteria, tétano e pertussis) ocorre apenas aos 15 meses de idade, e o segundo reforço aos 4 anos.\n\nd) Correta. A vacina meningocócica C (conjugada), que protege contra a doença invasiva causada pela *Neisseria meningitidis* do sorogrupo C, é a única vacina do calendário oficial prevista especificamente para os 3 meses de idade (1ª dose). O esquema se completa com a segunda dose aos 5 meses e um reforço aos 12 meses de idade.\n\ne) Incorreta. A vacina contra a febre amarela (atenuada) é administrada em sua primeira dose aos 9 meses de idade em todo o país. O reforço dessa vacina deve ser realizado aos 4 anos de idade.\n\nResumo do calendário no primeiro semestre:\n- Ao nascer: BCG e Hepatite B.\n- 2 meses: Pentavalente, VIP, Pneumocócica 10 e Rotavírus.\n- 3 meses: Meningocócica C (1ª dose).\n- 4 meses: Pentavalente, VIP, Pneumocócica 10 e Rotavírus (2ªs doses).\n- 5 meses: Meningocócica C (2ª dose).\n- 6 meses: Pentavalente e VIP (3ªs doses).",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:57.342Z"
+  },
+  {
+    "id": "AJUDA_69aa8266-04cd-4c8e-8a33-032f2ff09639",
+    "originalId": "69aa8266-04cd-4c8e-8a33-032f2ff09639",
+    "statement": "Paciente, 40 anos, realiza mamografia que é classificada como BI-RADS 0. O significado e a conduta são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Achado suspeito; necessária biópsia percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Achado benigno; repetir o rastreamento de acordo com a idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Achado provavelmente benigno; controle radiológico em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Exame incompleto; necessita de avaliação adicional com incidências mamográficas extras ou ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A classificação BI-RADS (Breast Imaging-Reporting and Data System) é uma ferramenta de padronização internacional utilizada para descrever achados em exames de imagem da mama e sugerir condutas médicas baseadas no risco de malignidade.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Achados suspeitos são classificados como BI-RADS 4 (suspeita de malignidade) ou BI-RADS 5 (altamente sugestivo de malignidade). Nestes casos, a conduta indicada é, de fato, a investigação histopatológica por meio de biópsia percutânea ou cirúrgica.\n\nAlternativa b) Incorreta. Um achado benigno é classificado como BI-RADS 2. O risco de câncer nessa categoria é de 0%, e a conduta correta é manter o rastreamento mamográfico conforme a idade da paciente, sem necessidade de exames adicionais imediatos.\n\nAlternativa c) Incorreta. A descrição de achado provavelmente benigno corresponde ao BI-RADS 3. O risco de malignidade é menor ou igual a 2%. A conduta padronizada para essa categoria é o controle radiológico em intervalo curto (inicialmente em 6 meses) para monitorar a estabilidade da lesão.\n\nAlternativa d) Correta. A categoria BI-RADS 0 é definida como uma avaliação incompleta. Isso ocorre quando o radiologista detecta uma alteração que não pode ser totalmente caracterizada apenas com as incidências básicas da mamografia (craniocaudal e mediolateral oblíqua). Portanto, é necessário realizar avaliações adicionais para se chegar a uma conclusão definitiva (BI-RADS 1, 2, 3, 4 ou 5). As ferramentas complementares incluem incidências mamográficas extras (como compressão focalizada ou magnificação), ultrassonografia mamária ou a comparação com exames anteriores da paciente.\n\nResumo das categorias BI-RADS para revisão:\n0: Incompleto (necessita exames adicionais)\n1: Negativo (sem achados)\n2: Benigno\n3: Provavelmente benigno (seguimento em 6 meses)\n4: Suspeito (necessita biópsia)\n5: Altamente suspeito (necessita biópsia)\n6: Malignidade confirmada (já biopsiado anteriormente)",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:57.342Z"
+  },
+  {
+    "id": "AJUDA_69b0032b-66f6-4113-ac69-ed163dab51cd",
+    "originalId": "69b0032b-66f6-4113-ac69-ed163dab51cd",
+    "statement": "Você recebe um recém-nascido em sala de parto com dificuldade respiratória. Paciente nasceu a termo, parto sem intercorrência. Durante o pré-natal, o ultrassom obstétrico evidenciou polidrâmnio. Ao exame físico do recém-nascido foi observado a presença de líquido abundante em cavidade oral. Qual a suspeita diagnóstica desse bebê?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia diafragmática",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aspiração de mecônio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Atresia esofágica com ou sem fístula traqueoesofágica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sìndrome do desconforto respiratório do recém-nascido",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresentado é clássico para a suspeita de atresia de esôfago, frequentemente associada ou não à fístula traqueoesofágica. A análise das evidências clínicas confirma essa hipótese:\n\n1. O polidrâmnio no pré-natal ocorre porque o feto não consegue deglutir e processar o líquido amniótico adequadamente devido à obstrução esofágica.\n2. A presença de líquido abundante na cavidade oral (sialorreia) logo após o nascimento é o sinal patognomônico, pois o recém-nascido é incapaz de deglutir a própria saliva, que acaba se acumulando e transbordando, podendo ser aspirada e causar o desconforto respiratório descrito.\n\nAnálise das alternativas:\n\na) Incorreta. A Hérnia Diafragmática Congênita também causa desconforto respiratório imediato, mas costuma apresentar abdome escavado (pela migração das alças intestinais para o tórax) e desvio das bulhas cardíacas. Embora possa haver polidrâmnio, a sialorreia intensa não é o sinal clínico característico dessa patologia.\n\nb) Incorreta. A Síndrome de Aspiração de Mecônio ocorre tipicamente em recém-nascidos a termo ou pós-termo, mas exige a presença de líquido amniótico meconial e, geralmente, um histórico de sofrimento fetal ou asfixia durante o parto, o que não foi relatado no caso (parto sem intercorrências).\n\nc) Correta. A atresia esofágica impede a passagem da saliva para o estômago, gerando acúmulo de secreção na orofaringe e dificuldade respiratória por aspiração ou obstrução das vias aéreas superiores. A confirmação diagnóstica é feita pela impossibilidade de progressão de uma sonda orogástrica ou nasogástrica, que para no ceco esofágico.\n\nd) Incorreta. A Síndrome do Desconforto Respiratório (ou Doença da Membrana Hialina) é uma patologia típica do recém-nascido pré-termo devido à deficiência de surfactante. O caso descreve um bebê nascido a termo, o que torna esse diagnóstico improvável, além de não explicar o polidrâmnio e a sialorreia.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal",
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:57.342Z"
+  },
+  {
+    "id": "AJUDA_69b6ad8f-e4bf-4611-ad3d-bcbf41015472",
+    "originalId": "69b6ad8f-e4bf-4611-ad3d-bcbf41015472",
+    "statement": "Os médicos do Programa Mais Médico, na versão 2024,",
+    "options": [
+      {
+        "id": "A",
+        "text": "são admitidos no plano de carreira de funcionários do município contratante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "serão lotados apenas em municípios com menos de 100.000 habitantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "devem cumprir 60 horas de atividades, semanalmente, com atribuições semelhantes às da residência médica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "recebem bolsa-formação e supervisão por parte do Ministério da Defesa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "após avaliação em processo seletivo, receberão bolsa-formação paga pelo Ministério da Saúde no valor bruto de R$14.058,00 e auxílio moradia e alimentação providos pela gestão municipal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda as regras e o funcionamento do Programa Mais Médicos (PMMB), especificamente em sua retomada e atualizações para o ano de 2024. O programa é uma estratégia federal para reduzir a carência de médicos em regiões prioritárias para o SUS.\n\nAlternativa A (Incorreta): Os médicos participantes do programa não possuem vínculo empregatício com o município e, portanto, não são admitidos em planos de carreira municipais. A natureza jurídica da participação é a de bolsista em um projeto de aperfeiçoamento e extensão, regido por normas federais, e não pela CLT ou por estatutos de servidores locais.\n\nAlternativa B (Incorreta): O programa não se limita a municípios com menos de 100.000 habitantes. Embora priorize áreas de maior vulnerabilidade social e distritos sanitários especiais indígenas, ele contempla capitais, regiões metropolitanas e municípios de grande porte que possuam áreas periféricas com dificuldade de fixação de profissionais.\n\nAlternativa C (Incorreta): A carga horária semanal estabelecida pelo programa é de 40 horas, e não 60 horas. Dessas 40 horas, 32 horas são dedicadas a atividades assistenciais práticas na Unidade Básica de Saúde (UBS) e 8 horas são reservadas para atividades teóricas de aperfeiçoamento (estudo e supervisão acadêmica).\n\nAlternativa D (Incorreta): O Ministério da Defesa pode prestar apoio logístico em áreas remotas ou de fronteira, mas a gestão, o pagamento da bolsa-formação e a supervisão acadêmica são de responsabilidade conjunta do Ministério da Saúde e do Ministério da Educação.\n\nAlternativa E (Correta): Esta alternativa descreve exatamente o modelo de contrapartida financeira do programa em 2024. A seleção ocorre por processo seletivo público. O Governo Federal, por meio do Ministério da Saúde, é responsável pelo pagamento da bolsa-formação (valor bruto atualizado de R$ 14.058,00). Já a gestão municipal tem a obrigação legal de fornecer ou custear o auxílio-moradia e o auxílio-alimentação para o médico alocado em seu território, garantindo as condições básicas de permanência do profissional.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:57.342Z"
+  },
+  {
+    "id": "AJUDA_69b7edea-823a-4d66-81dd-3baca9d67236",
+    "originalId": "69b7edea-823a-4d66-81dd-3baca9d67236",
+    "statement": "Homem de 68 anos, com cirrose pelo vírus da hepatite C crônica (Child-Pugh B), é admitido no departamento de emergência com história de declínio cognitivo progressivo, letargia e distensão abdominal dolorosa há dois dias. Não há hematêmese, melena, constipação ou uso de novos medicamentos. Glicemia capilar normal. Ao exame físico: sonolento; desorientado no tempo e no espaço; asterixe bilateral (flapping); pressão arterial: 112 x 64 mmHg; frequência cardíaca: 104 bpm; frequência respiratória: 24 irpm; temperatura: 37,6 °C; abdome globoso; sinal da macicez móvel positivo; leve dor à palpação difusa, sem sinais de peritonite. Escore NEWS: 6 pontos. Com base nas diretrizes 2026 de sepse (Surviving Sepsis Campaign), é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a classificação diagnóstica estruturada define a condição como sepse definitiva devido à concomitância de disfunção orgânica aguda e febre aferida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a estratégia de ressuscitação volêmica deve objetivar a normalização rápida dos níveis de lactato como meta terapêutica principal nas primeiras horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a conduta inicial preconiza a realização de propedêutica rápida para avaliar causas infecciosas e não infecciosas antes de instituir antimicrobianos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "o cenário clínico impõe a administração de terapia antimicrobiana na primeira hora de atendimento por se tratar de sepse provável estabelecida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o manejo inicial exige a infusão imediata de volume cristaloide na dose de trinta mililitros por quilo, dentro do intervalo de uma hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Resumo do caso: paciente cirrótico com encefalopatia hepática aguda (asterixe, desorientação) e ascite dolorosa. Há taquicardia, taquipneia e NEWS 6, mas a temperatura é 37,6 °C (sem febre), sem hipotensão e sem foco infeccioso definido. A disfunção neurológica pode ser explicada por causas não infecciosas, como a descompensação da cirrose. Também é preciso investigar peritonite bacteriana espontânea (paracentese diagnóstica), mas o quadro clínico ainda não confirma infecção.\n\nConceito central das diretrizes SSC mais recentes: o rastreamento por escores (NEWS, qSOFA etc.) identifica pacientes em risco, mas não define sepse. A conduta depende da probabilidade de infecção:\n- Choque ou alta probabilidade de sepse: antibiótico imediato, em até 1 hora.\n- Probabilidade possível ou incerta, sem choque: investigação rápida e acelerada de causas infecciosas e não infecciosas, com antibiótico em até 3 horas se a suspeita de infecção persistir. Evita-se o uso empírico indiscriminado de antimicrobianos.\n\nAnálise das alternativas:\n\na) Incorreta. Não se pode falar em sepse definitiva. Falta infecção confirmada ou claramente evidente, e a temperatura de 37,6 °C não é febre. A disfunção orgânica (encefalopatia) tem explicação alternativa plausível na cirrose. No máximo, a infecção é possível.\n\nb) Incorreta. A normalização do lactato não deve ser a meta principal. As diretrizes sugerem usar o lactato como apoio, ao lado do tempo de enchimento capilar e de outros parâmetros de perfusão. Além disso, em cirróticos o lactato pode estar elevado por menor depuração hepática, o que o torna menos confiável. Não há choque nem indicação de ressuscitação agressiva.\n\nc) Correta. Em pacientes com probabilidade incerta ou possível de infecção e sem choque, a recomendação é realizar avaliação rápida de causas infecciosas e não infecciosas antes de iniciar antimicrobianos. No caso, isso inclui paracentese diagnóstica, culturas, exames de urina e de imagem, além de avaliar fatores precipitantes da encefalopatia, como distúrbios hidroeletrolíticos, sangramento e medicamentos. Se a infecção continuar provável, inicia-se o antibiótico em até 3 horas.\n\nd) Incorreta. A janela de 1 hora vale para choque ou sepse provável/definida. Aqui a infecção é apenas possível, sem choque (PA 112x64), e a encefalopatia pode ter outra causa. Não se trata de \"sepse provável estabelecida\".\n\ne) Incorreta. Os 30 mL/kg de cristaloide em até 1 hora são aplicados à hipoperfusão induzida por sepse ou ao choque séptico. As diretrizes mais recentes tratam o volume com mais cautela e o individualizam, e esse paciente tem ascite e cirrose, sem hipotensão nem hipoperfusão evidente. Cabe reavaliar a volemia e usar fluidos de forma criteriosa.\n\nResposta: letra C.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sepse",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:57.342Z"
+  },
+  {
+    "id": "AJUDA_69b8e07d-a592-4dbf-b3e8-0216719cbe01",
+    "originalId": "69b8e07d-a592-4dbf-b3e8-0216719cbe01",
+    "statement": "A pesquisa Action for Health in Diabetes (Look AHEAD) incluiu 5.145 participantes com excesso de peso e diabetes tipo 2. Uma parte desse grupo foi alocada ao acaso para participar de uma intervenção comportamental de longo prazo, visando à perda de peso e com intervenções intensivas no estilo de vida, incluindo uma meta mínima de 175 minutos semanais de atividade física de intensidade moderada. A outra parte recebeu apenas educação e apoio para o autocontrole do diabetes. O estudo buscou avaliar se havia diferença na morbidade e mortalidade cardiovascular entre os dois grupos, com uma mediana de 9,6 anos de acompanhamento. Considerando essa pesquisa, identifique os quatro elementos da pergunta PICO (P – População; I – Intervenção; C – Comparação; O – Desfecho) e o tipo de delineamento adotado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "P – Morbidade e mortalidade cardiovascular; I – Intervenções intensivas no estilo de vida; C – Educação e apoio para o autocontrole do diabetes; O – Pessoas com excesso de peso e diabetes tipo 2. Delineamento: Ensaio Clínico Randomizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "P – Pessoas com excesso de peso e diabetes tipo 2; I – Intervenções intensivas no estilo de vida; C – Educação e apoio para o autocontrole do diabetes; O – Morbidade e mortalidade cardiovascular. Delineamento: Ensaio Clínico Randomizado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "P – Pessoas com excesso de peso e diabetes tipo 2; I – Intervenções intensivas no estilo de vida; C – Educação e apoio para o autocontrole do diabetes; O – Morbidade e mortalidade cardiovascular. Delineamento: Estudo de Coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "P – Intervenções intensivas no estilo de vida; I – Morbidade e mortalidade cardiovascular; C – Educação e apoio para o autocontrole do diabetes; O – Pessoas com excesso de peso e diabetes tipo 2. Delineamento: Estudo de Coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ESTRUTURA DA PERGUNTA PICO E ANÁLISE DO ESTUDO\n\nPara resolver essa questão, devemos aplicar a estratégia PICO, que é uma técnica para construir uma pergunta de pesquisa e facilitar a busca de evidências clínicas.\n\nP (População/Paciente): Representa as características dos participantes. No texto, são pessoas com excesso de peso e diabetes tipo 2.\nI (Intervenção): É o que será feito no grupo principal. No caso, as intervenções intensivas no estilo de vida voltadas para a perda de peso.\nC (Comparação): É o grupo controle ou o padrão de cuidado. Aqui, refere-se ao grupo que recebeu apenas educação e apoio para o autocontrole do diabetes.\nO (Outcome/Desfecho): É o resultado clínico que se pretende observar. O estudo mediu a morbidade e a mortalidade cardiovasculares.\n\nDELINEAMENTO DO ESTUDO: O enunciado afirma que os participantes foram \"alocados ao acaso\". Quando o pesquisador intervém (aplica uma conduta) e distribui os participantes de forma aleatória em grupos, estamos diante de um Ensaio Clínico Randomizado.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) INCORRETA. A alternativa inverte os conceitos de População e Desfecho. Morbidade e mortalidade cardiovasculares não são a população estudada, mas sim o que se pretende medir ao final do acompanhamento.\n\nAlternativa b) CORRETA. Esta alternativa identifica corretamente a população (diabéticos com sobrepeso), a intervenção (mudança intensiva de estilo de vida), a comparação (educação/apoio padrão) e o desfecho (eventos cardiovasculares). Além disso, classifica corretamente o estudo como Ensaio Clínico Randomizado, baseando-se na alocação aleatória descrita no texto.\n\nAlternativa c) INCORRETA. Embora a estrutura PICO esteja correta nesta alternativa, o delineamento está errado. Um Estudo de Coorte é um estudo observacional, no qual os participantes não são distribuídos ao acaso para receber uma intervenção; eles são apenas acompanhados de acordo com exposições que já possuem na vida real.\n\nAlternativa d) INCORRETA. A alternativa apresenta erro na definição de todos os elementos PICO e também no delineamento. Coloca a intervenção no lugar da população e o desfecho no lugar da intervenção, além de classificar o estudo erroneamente como Coorte.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:57.342Z"
+  }
+]

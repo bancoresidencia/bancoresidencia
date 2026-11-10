@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_16da2734-ba09-4723-8333-2ef26715e202",
+    "originalId": "16da2734-ba09-4723-8333-2ef26715e202",
+    "statement": "Dentre os grandes grupos de causas de mortalidade, o que responde pelo maior número de anos potenciais de vida perdidos é o seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neoplasias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doenças infecciosas e parasitárias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Causas externas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Doenças cardiovasculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Doenças crônicas não infecciosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O conceito fundamental para resolver essa questão é o de Anos Potenciais de Vida Perdidos (APVP). Diferentemente da taxa de mortalidade geral, que apenas conta o número de óbitos, o APVP é um indicador de saúde que prioriza as mortes que ocorrem precocemente. Ele é calculado subtraindo-se a idade do óbito de um limite de idade preestabelecido (geralmente 70 ou 75 anos). Portanto, quanto mais jovem for a pessoa ao falecer, maior será a contribuição desse óbito para o índice de APVP.\n\nAcompanhe a análise das alternativas:\n\na) Neoplasias: As neoplasias (cânceres) representam a segunda principal causa de morte no Brasil. Embora vitimem pessoas de todas as idades, a maior concentração de óbitos ocorre em adultos maduros e idosos. Por atingirem uma faixa etária mais avançada do que os acidentes e a violência, não superam as causas externas no cálculo de APVP.\n\nb) Doenças infecciosas e parasitárias: Com a transição epidemiológica ocorrida no último século, o impacto das doenças infectocontagiosas na mortalidade geral e no APVP reduziu-se drasticamente, sendo superado pelas doenças crônicas e pelas causas externas.\n\nc) Causas externas: Esta é a alternativa correta. O grupo das causas externas engloba acidentes (especialmente de trânsito), homicídios e suicídios. No perfil demográfico brasileiro, esses eventos são a principal causa de morte na população jovem (adolescentes e adultos jovens, principalmente do sexo masculino). Como a morte de um jovem de 20 anos \"perde\" muito mais anos potenciais do que a morte de um idoso de 70 anos, as causas externas lideram isoladamente o ranking de APVP, mesmo não sendo a causa número um de mortalidade geral.\n\nd) Doenças cardiovasculares: As doenças cardiovasculares são a principal causa de óbito no Brasil em números absolutos. No entanto, elas costumam vitimar a população em idades mais avançadas. Assim, apesar do alto volume de mortes, cada óbito gera um APVP menor quando comparado a um óbito por causa externa em um jovem.\n\ne) Doenças crônicas não infecciosas: Este é um grande grupo que inclui as doenças cardiovasculares, neoplasias, doenças respiratórias crônicas e diabetes. Embora esse conjunto responda pela maior carga de doença e pela maior parte das mortes totais, o peso individual das mortes precoces causadas pela violência e acidentes (causas externas) ainda faz com que estas últimas gerem mais anos potenciais de vida perdidos.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:28.878Z"
+  },
+  {
+    "id": "AJUDA_16e3e159-aefb-4145-bbc1-ab9c95ef0a8d",
+    "originalId": "16e3e159-aefb-4145-bbc1-ab9c95ef0a8d",
+    "statement": "Paciente masculino, 4 anos (20Kg) é admitido em setor hospitalar devido quadro de alternância entre irritabilidade e sonolência, associado a cianose central e periférica. Aferida saturação de O2: 60% em ar ambiente. Relato de ingestão acidental de comprimidos de dapsona há 8 horas – pai em tratamento para vasculite urticariforme. Considerando o quadro clínico acima, compatível com metemoglobinemia e necessidade de tratamento com azul de metileno via endovenosa, cuja apresentação farmacêutica é: Azul de metileno 1% - frasco 5ml. Qual a resposta CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se a dose escolhida for 1mg/Kg por aplicação, será necessário aspirar da ampola 2,5ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Se a dose escolhida for 1mg/Kg por aplicação, será necessário aspirar da ampola 1ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Se a dose escolhida for 1mg/Kg por aplicação, será necessário aspirar da ampola 0,5ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Se a dose escolhida for 1mg/Kg por aplicação, será necessário aspirar da ampola 0,2ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Se a dose escolhida for 1mg/Kg por aplicação, será necessário aspirar da ampola 2ml.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda um quadro clássico de metemoglobinemia adquirida após a ingestão acidental de dapsona. A dapsona é um agente oxidante potente que transforma o ferro da hemoglobina do seu estado ferroso (Fe2+) para o estado férrico (Fe3+), formando a metemoglobina, que é incapaz de transportar oxigênio, resultando em cianose que não melhora com oxigenoterapia e queda na saturação.\n\nO tratamento de escolha é o azul de metileno, que atua como um cofator para a enzima metemoglobina redutase, acelerando a conversão da metemoglobina de volta em hemoglobina funcional. Para resolver a questão, devemos realizar um cálculo farmacológico dividido em três etapas:\n\n1. Cálculo da dose total em miligramas (mg):\nO enunciado informa que o paciente pesa 20 kg e a dose escolhida é de 1 mg/kg.\nDose total = 20 kg x 1 mg/kg = 20 mg.\n\n2. Entendimento da concentração da ampola:\nA apresentação é azul de metileno a 1%. Na farmacologia, uma solução a 1% significa que existe 1 grama de soluto para cada 100 ml de solvente.\n1 grama = 1000 mg.\nPortanto, 1000 mg em 100 ml.\nSimplificando (dividindo ambos por 100), temos 10 mg para cada 1 ml.\n\n3. Cálculo do volume a ser aspirado:\nSe precisamos de 20 mg e cada 1 ml da solução contém 10 mg:\nVolume = 20 mg / 10 mg/ml = 2 ml.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O valor de 2,5 ml corresponderia a uma dose de 25 mg, o que equivaleria a 1,25 mg/kg para esta criança.\n\nAlternativa b) Incorreta. O valor de 1 ml contém apenas 10 mg do medicamento, metade da dose necessária de 1 mg/kg para um paciente de 20 kg.\n\nAlternativa c) Incorreta. O valor de 0,5 ml contém apenas 5 mg do medicamento, sendo uma subdose terapêutica para o caso clínico apresentado.\n\nAlternativa d) Incorreta. O valor de 0,2 ml contém apenas 2 mg, dose insuficiente para o peso da criança. Geralmente, esse erro ocorre por confusão na conversão de porcentagem para mg/ml.\n\nAlternativa e) Correta. Como demonstrado no cálculo, para administrar 1 mg/kg em uma criança de 20 kg (total de 20 mg) utilizando uma solução a 1% (10 mg/ml), o volume exato a ser aspirado é de 2 ml.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Intoxicações Exógenas",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:28.878Z"
+  },
+  {
+    "id": "AJUDA_170284bc-181e-4946-9dde-284fdf7512c2",
+    "originalId": "170284bc-181e-4946-9dde-284fdf7512c2",
+    "statement": "Cláudia, 46 anos de idade, enfermeira, realizou biópsia de nódulo mamário de 1,8 cm, confirmando carcinoma ductal invasivo, receptor hormonal positivo, HER2 negativo. Estadiamento clínico mostra T1cN0M0 e boa reserva funcional. A paciente deseja preservar a mama, se possível. De acordo com as diretrizes atuais da FEBRASGO (2023) e da National Comprehensive Cancer Network (2024), a melhor conduta cirúrgica inicial nesse caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mastectomia radical com esvaziamento axilar completo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quadrantectomia sem avaliação linfonodal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Radioterapia exclusiva como tratamento inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quadrantectomia com biópsia do linfonodo sentinela.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Quimioterapia neoadjuvante obrigatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso:\nCláudia apresenta um carcinoma ductal invasivo em estágio inicial (T1cN0M0), com diâmetro de 1,8 cm e perfil imuno-histoquímico favorável (receptor hormonal positivo e HER2-negativo). A paciente possui boa reserva funcional e manifestou o desejo de preservar a mama. Segundo as diretrizes da FEBRASGO (2023) e NCCN (2024), o tratamento deve buscar a segurança oncológica com o menor impacto estético e funcional possível.\n\nAlternativa (a) Incorreta. A mastectomia radical com esvaziamento axilar é uma conduta desnecessariamente agressiva para este cenário. Estudos clássicos demonstraram que a cirurgia conservadora, quando seguida de radioterapia, oferece a mesma sobrevida global que a mastectomia em tumores iniciais. Além disso, o esvaziamento axilar completo (linfadenectomia) causa maior morbidade e não é indicado para pacientes com axila clinicamente negativa (N0).\n\nAlternativa (b) Incorreta. A quadrantectomia é a técnica cirúrgica para preservação da mama, porém a avaliação linfonodal é uma etapa indispensável no tratamento do câncer de mama invasivo. Mesmo em tumores pequenos e axila clinicamente negativa, a avaliação do status linfonodal é fundamental para o estadiamento preciso e para a definição das terapias complementares (adjuvantes).\n\nAlternativa (c) Incorreta. A radioterapia isolada não é o tratamento padrão inicial para o câncer de mama invasivo ressecável. A radioterapia atua como tratamento adjuvante (após a cirurgia) em casos de cirurgia conservadora para reduzir as taxas de recidiva local, mas não substitui a remoção cirúrgica do tumor primário.\n\nAlternativa (d) Correta. Esta é a conduta padrão-ouro para o caso descrito. A quadrantectomia atende ao critério de preservação mamária, sendo segura em tumores de 1,8 cm (T1c). A biópsia do linfonodo sentinela é a técnica de escolha para pacientes com axila clinicamente negativa (N0), permitindo identificar se há disseminação linfática com mínima morbidade, evitando as complicações do esvaziamento axilar completo, como o linfedema.\n\nAlternativa (e) Incorreta. A quimioterapia neoadjuvante (antes da cirurgia) é indicada principalmente para converter casos de mastectomia em cirurgia conservadora (tumores grandes em relação à mama), ou para subtipos biológicos mais agressivos, como o HER2-positivo e o triplo-negativo. Em tumores pequenos (T1), com receptores hormonais positivos e HER2-negativo, a cirurgia inicial é a conduta preferencial, sendo a quimioterapia (se necessária) realizada após o procedimento cirúrgico.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:28.878Z"
+  },
+  {
+    "id": "AJUDA_1703a6de-04b8-49f2-9d40-10a80cd58414",
+    "originalId": "1703a6de-04b8-49f2-9d40-10a80cd58414",
+    "statement": "Algumas mulheres possuem indicação de tratamento de doença inflamatória pélvica em nível hospitalar. Assinale a alternativa que inclui critério para indicar tratamento hospitalar da DIP de acordo com o Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis do Ministério da Saúde, 2022:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dor pélvica e à mobilização de anexos ao toque bimanual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Associação de infecção do trato urinário baixo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colo friável e sangrante ao toque com espátula de Ayre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ausência de resposta clínica após 72 horas do início do tratamento com antibioticoterapia oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Doença Inflamatória Pélvica (DIP) é uma síndrome clínica decorrente da ascensão de microrganismos do trato genital inferior para o trato genital superior. O Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para IST do Ministério da Saúde (2022) define critérios claros para decidir entre o tratamento ambulatorial e o hospitalar.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. A dor pélvica e a dor à mobilização de anexos (ou do colo uterino) ao toque bimanual são critérios mínimos para o diagnóstico clínico da DIP. Elas estão presentes na grande maioria dos casos, inclusive nos leves (Estágio I de Monif), que devem ser tratados inicialmente de forma ambulatorial.\n\nAlternativa b) Incorreta. A presença de uma infecção do trato urinário baixo (cistite) associada não é, por si só, um critério de internação. A hospitalização seria considerada apenas se houvesse sinais de gravidade sistêmica, como pielonefrite com instabilidade ou impossibilidade de ingestão oral, o que não é o caso descrito.\n\nAlternativa c) Incorreta. O colo friável e com sangramento ao toque é um achado típico de cervicite (inflamação do colo uterino). Embora a cervicite seja frequentemente a precursora da DIP, esse achado clínico não indica gravidade que justifique o tratamento hospitalar.\n\nAlternativa d) Correta. A ausência de resposta clínica após 72 horas de antibioticoterapia oral ambulatorial é um dos critérios clássicos de internação. Se a paciente não apresenta melhora da dor ou da febre nesse período, o tratamento deve ser migrado para a via parenteral (hospitalar) para melhor controle da infecção e para a realização de exames de imagem (como ultrassonografia ou tomografia) a fim de descartar complicações como abscessos tubo-ovarianos.\n\nComplemento didático — Outros critérios de internação segundo o PCDT 2022:\n- Gestantes.\n- Presença de abscesso tubo-ovariano.\n- Intolerância ou falta de adesão ao tratamento por via oral.\n- Estado geral grave (vômitos, febre alta, sinais de irritação peritoneal).\n- Emergências cirúrgicas que não podem ser excluídas (ex: apendicite).",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:28.878Z"
+  },
+  {
+    "id": "AJUDA_17087dca-3fcd-4860-8f94-a43259dab022",
+    "originalId": "17087dca-3fcd-4860-8f94-a43259dab022",
+    "statement": "Paciente masculino de 55 anos com sangramento nasal há dois dias, em episódios volumosos. Relata ser hipertenso mal controlado. Apresentou episódios de vômitos com sangue escuro ao chegar no pronto-atendimento. Assinale a correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O atendimento incial deve priorizar a avaliação de seu estado hemodinâmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Deve ser realizada a endoscopia digestiva alta e baixa pela suspeita de hemorragia digestiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O quadro clínico não é compatível com a hipertensão mal controlada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A prioridade no atendimento inicial é a realização de tampão nasal posterior bilateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO:\n\nO paciente apresenta um quadro de epistaxe (sangramento nasal) volumosa e recorrente, associado à hipertensão arterial mal controlada. O relato de vômitos com sangue escuro (pseudo-hematêmese) é típico de pacientes que deglutem o sangue proveniente do sangramento nasal, especialmente em casos de sangramentos posteriores ou de grande monta. Em quadros de sangramento ativo volumoso, o foco inicial deve ser sempre a segurança do paciente e a manutenção da vida.\n\nALTERNATIVA A (CORRETA): \nEm qualquer situação de sangramento agudo e volumoso na emergência, a prioridade absoluta é a avaliação do ABC (Vias aéreas, Respiração e Circulação). Deve-se avaliar imediatamente o estado hemodinâmico (frequência cardíaca, pressão arterial, tempo de enchimento capilar e nível de consciência) para identificar precocemente sinais de choque hipovolêmico. A estabilização clínica e a ressuscitação volêmica, se necessárias, devem preceder as medidas específicas de controle local do sangramento.\n\nALTERNATIVA B (INCORRETA): \nEmbora o paciente tenha vomitado sangue, o contexto de epistaxe volumosa indica que houve deglutição de sangue nasal, o que irrita a mucosa gástrica e provoca o vômito. Não há indícios iniciais de hemorragia digestiva primária que justifiquem endoscopia digestiva alta e, muito menos, colonoscopia (endoscopia baixa) no atendimento inicial de urgência.\n\nALTERNATIVA C (INCORRETA): \nO quadro é perfeitamente compatível com hipertensão arterial mal controlada. A hipertensão é um fator de risco clássico e frequente para epistaxe em adultos e idosos, pois a fragilidade vascular e os picos pressóricos dificultam a hemostasia espontânea do corpo.\n\nALTERNATIVA D (INCORRETA): \nO tamponamento nasal posterior é um procedimento invasivo, desconfortável e que pode gerar complicações (como hipóxia e reflexos vagais), sendo reservado para casos em que o sangramento é sabidamente posterior ou quando o tamponamento anterior falhou. Nenhuma manobra mecânica de controle de sangramento deve ser realizada antes da avaliação da estabilidade hemodinâmica do paciente. Além disso, o tamponamento deve ser feito de forma escalonada, iniciando-se pelas medidas mais simples (compressão direta e tamponamento anterior).",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:28.878Z"
+  },
+  {
+    "id": "AJUDA_17320920-1ee4-4909-8ba6-ae0d3c109301",
+    "originalId": "17320920-1ee4-4909-8ba6-ae0d3c109301",
+    "statement": "A Lei nº 8.142/1990 estabelece mecanismos para a participação da comunidade na gestão do Sistema Único de Saúde (SUS) e define os critérios para a transferência intergovernamental de recursos financeiros na área da saúde. Considerando as disposições dessa lei, qual das seguintes afirmações é CORRETA em relação ao papel do Conselho de Saúde e ao repasse de recursos do Fundo Nacional de Saúde (FNS) para os entes federativos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os Conselhos de Saúde possuem caráter consultivo e não têm poder deliberativo sobre a execução da política de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O repasse de recursos do Fundo Nacional de Saúde (FNS) aos Estados e Municípios é condicionado à existência de um Conselho de Saúde com composição paritária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A Conferência de Saúde é responsável por homologar as decisões do Conselho de Saúde em cada esfera de governo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O critério principal para o repasse de recursos do FNS é a densidade populacional dos Municípios, independentemente de outras condições.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Lei nº 8.142 de 1990 e a Lei nº 8.080 de 1990 formam as chamadas Leis Orgânicas do SUS. Especificamente, a Lei nº 8.142 trata da participação da comunidade na gestão do sistema e das transferências intergovernamentais de recursos financeiros.\n\nAlternativa a: Incorreta. De acordo com o § 2º do artigo 1º da referida lei, o Conselho de Saúde possui caráter permanente e deliberativo. Isso significa que ele não apenas é consultado, mas tem poder real de decisão e formulação de estratégias, além de atuar no controle da execução da política de saúde, inclusive nos aspectos econômicos e financeiros.\n\nAlternativa b: Correta. O artigo 4º da Lei nº 8.142/1990 estabelece os requisitos obrigatórios para que os municípios, estados e o Distrito Federal recebam os repasses diretos (fundo a fundo) do Fundo Nacional de Saúde. Entre esses requisitos estão a existência de um Fundo de Saúde, um Plano de Saúde e um Conselho de Saúde. A composição do conselho deve ser paritária, conforme a Resolução nº 453/2012 do CNS, garantindo que 50% dos membros sejam representantes dos usuários, enquanto os outros 50% dividem-se entre trabalhadores de saúde, gestores e prestadores de serviço.\n\nAlternativa c: Incorreta. A Conferência de Saúde ocorre a cada quatro anos e tem o objetivo de avaliar a situação de saúde e propor diretrizes para a formulação da política de saúde. Ela não serve para homologar as decisões do Conselho de Saúde. Na verdade, as decisões do Conselho de Saúde são homologadas pelo chefe do Poder Executivo (prefeito, governador ou presidente) de cada esfera de governo.\n\nAlternativa d: Incorreta. O artigo 2º da lei menciona que os recursos serão destinados a investimentos e despesas correntes, e que o rateio deve considerar critérios como o perfil epidemiológico e a rede de serviços. Embora a população seja um critério importante para o cálculo dos valores, o repasse jamais é feito independentemente de outras condições. Sem o cumprimento das exigências do artigo 4º (como ter o Conselho e o Fundo de Saúde instituídos), o ente federativo fica impedido de receber os recursos de forma regular e automática.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:28.878Z"
+  },
+  {
+    "id": "AJUDA_1734a771-cd8f-46fa-93a4-adc78072f0fb",
+    "originalId": "1734a771-cd8f-46fa-93a4-adc78072f0fb",
+    "statement": "De acordo com as diretrizes mais recentes do Ministério da Saúde do Brasil para o rastreamento de doenças em adultos, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Ministério da Saúde, em conjunto com o INCA, recomenda o rastreamento populacional do câncer de próstata com exame de PSA e toque retal para todos os homens a partir dos 50 anos, mesmo sem fatores de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A avaliação para câncer de colo de útero, para mulheres de 25 a 64 anos, é realizada por meio do exame de Papanicolau, que deve ser feito anualmente para todas as mulheres.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A mamografia de rastreamento no SUS deve ser realizada a cada dois anos para mulheres na faixa etária de 50 a 74 anos, independentemente de fatores de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O rastreamento do câncer de colo de útero em mulheres de 25 a 64 anos utiliza, de forma gradual e em substituição ao Papanicolau, o teste molecular de DNA-HPV, com periodicidade de cinco anos em casos negativos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Gabarito: Letra d.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O Ministério da Saúde e o INCA não recomendam o rastreamento populacional organizado para o câncer de próstata por meio de PSA e toque retal em homens assintomáticos. A recomendação oficial é contra o rastreamento de rotina, devendo ser praticada a decisão clínica compartilhada caso o paciente apresente demanda espontânea, explicando-se os riscos de sobrediagnóstico e sobretratamento.\n\nAlternativa b: Incorreta. Pelo modelo tradicional de citopatologia (Papanicolau), a rotina não é anual para todas as mulheres. O exame deve ser realizado anualmente apenas nos dois primeiros anos consecutivos; se ambos apresentarem resultados normais (negativos para neoplasia), a periodicidade passa a ser trienal (a cada 3 anos) até os 64 anos de idade.\n\nAlternativa c: Incorreta. A faixa etária oficial preconizada pelo Ministério da Saúde e pelo INCA para a mamografia bienal de rastreamento no SUS é de 50 a 69 anos. A extensão até os 74 anos é uma recomendação de entidades internacionais (como a USPSTF) ou de sociedades médicas especializadas, mas não é a diretriz do SUS.\n\nAlternativa d: Correta. Representa a atualização mais recente do Ministério da Saúde, que oficializou a transição do rastreamento do câncer de colo de útero para a testagem molecular de DNA-HPV como método primário de rastreio na população de 25 a 64 anos. Na ausência de detecção do vírus (teste negativo), o intervalo recomendado para a repetição do exame passa a ser de 5 anos, substituindo progressivamente a citopatologia convencional trienal.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "Câncer de Mama",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:28.878Z"
+  },
+  {
+    "id": "AJUDA_173cb2fe-8ed9-4ece-81e2-0672cee5c56e",
+    "originalId": "173cb2fe-8ed9-4ece-81e2-0672cee5c56e",
+    "statement": "No ano 1833, o primeiro inspetor Médico Robert Backer, durante a Revolução Industrial na Inglaterra (1760-1850) assinou o \"Factory Act\", cuja redação era seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A idade minima para o trabalho era de 6 anos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A idade máxima para o trabalho noturno será de 30 anos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fica proibido o trabalho noturno para menores de 35 anos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A jornada de trabalho semanal será no mínimo de 69 horas",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o marco histórico do Factory Act de 1833, um documento fundamental para a Medicina do Trabalho e para o Direito Trabalhista, promulgado durante a Revolução Industrial na Inglaterra para regulamentar as condições laborais, especialmente de crianças e adolescentes.\n\nAlternativa (a) Incorreta. O Factory Act de 1833 estabeleceu a idade mínima de 9 anos para o trabalho em fábricas têxteis. Crianças abaixo dessa idade ficavam proibidas de trabalhar, com raras exceções (como fábricas de seda).\n\nAlternativa (b) Incorreta. A legislação não estipulava idade máxima de 30 anos para trabalho noturno. O foco das restrições de horário era a proteção da população infantojuvenil.\n\nAlternativa (c) Incorreta. A proibição do trabalho noturno (período entre 20h30 e 5h30) era aplicada a todos os menores de 18 anos, e não a menores de 35 anos.\n\nAlternativa (d) Correta. De acordo com o Factory Act de 1833, os trabalhadores jovens (entre 13 e 18 anos) não podiam trabalhar mais de 12 horas por dia, o que resultava em uma jornada semanal de 69 horas (calculada como 12 horas diárias nos dias de semana e 9 horas aos sábados). Embora a redação da alternativa mencione \"no mínimo\", o valor de 69 horas é o dado histórico preciso associado ao limite máximo permitido por essa lei específica para essa categoria de trabalhadores.\n\nO papel de Robert Baker e dos demais inspetores nomeados a partir dessa lei foi crucial, pois, pela primeira vez, o Estado passou a fiscalizar as condições de higiene e segurança nos ambientes de trabalho, influenciando diretamente o desenvolvimento da saúde ocupacional moderna.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:28.878Z"
+  },
+  {
+    "id": "AJUDA_173cdbb9-eae3-4728-81e7-b76ce1ced2f3",
+    "originalId": "173cdbb9-eae3-4728-81e7-b76ce1ced2f3",
+    "statement": "Assinale a alternativa que preenche, correta e respectivamente, as lacunas do parágrafo abaixo. \n\nPaciente masculino, de 65 anos, procurou atendimento médico por dor epigástrica em queimação, com intensidade moderada, irradiada para o dorso, com alívio após as refeições. Apresentou episódios de despertar noturno pela dor. Referiu uso frequente de ibuprofeno e nimesulida por osteoartrose de quadril. Negou a ocorrência de pirose, disfagia, emagrecimento, hematêmese ou melena. Exames recentes não\nindicaram anemia. O quadro clínico é sugestivo de .........., estando indicada avaliação diagnóstica com .......... . Confirmada a presença de .........., deve-se .......... .",
+    "options": [
+      {
+        "id": "A",
+        "text": "doença do refluxo gastroesofágico – endoscopia digestiva alta com pesquisa de Helicobacter pylori – esofagite erosiva grau A de Los Angeles – administrar antiácido por via oral conforme demanda",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "doença do refluxo gastroesofágico – endoscopia digestiva alta com pesquisa de Helicobacter pylori – esofagite erosiva grau A de Los Angeles – evitar o uso de anti-inflamatório não esteroidal (AINE) e prescrever inibidor de bombas de prótons por 8 semanas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "úlcera péptica – raio X contrastado de esôfago, estômago e duodeno – úlcera gástrica por AINE – evitar o uso de AINE e tratar o Helicobacter pylori",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "úlcera péptica – endoscopia digestiva alta com pesquisa de Helicobacter pylori – úlcera gástrica por AINE (Helicobacter pylori negativo) – evitar o uso de AINE e prescrever inibidor de bombas de prótons por 8 semanas",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de dispepsia ulcerosa. Os pontos-chave para o diagnóstico são:\n1. Idade avançada (65 anos), o que por si só já indica investigação com exames de imagem/endoscopia.\n2. Dor epigástrica que melhora com a alimentação (característica comum em úlceras, especialmente duodenais, embora o caso mencione úlcera gástrica adiante) e que desperta o paciente à noite.\n3. Uso crônico de anti-inflamatórios não esteroidais (AINEs), como ibuprofeno e nimesulida, que são os principais fatores de risco para o desenvolvimento de úlcera péptica, ao lado da infecção pelo Helicobacter pylori.\n4. Ausência de pirose (queimação retroesternal), o que torna o diagnóstico de Doença do Refluxo Gastroesofágico (DRGE) menos provável.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): O quadro não é sugestivo de DRGE, pois o paciente negou pirose e a dor tem relação com a alimentação e o despertar noturno, sugerindo úlcera. Além disso, o tratamento de esofagite erosiva ou úlcera com \"antiácido conforme a demanda\" é insuficiente e inadequado para a gravidade potencial do quadro.\n\nAlternativa B (Incorreta): Assim como na alternativa anterior, o diagnóstico inicial proposto (DRGE) não condiz com a clínica de alívio da dor após as refeições e a ausência de pirose. Embora o tratamento com IBP por 8 semanas e a suspensão de AINEs estejam corretos para doenças dispépticas, o diagnóstico inicial está equivocado.\n\nAlternativa C (Incorreta): O diagnóstico de úlcera péptica está correto, porém o exame de escolha para investigação de doenças dispépticas em pacientes acima de 60 anos ou com sinais de alarme é a Endoscopia Digestiva Alta (EDA), e não o raio X contrastado (REED). A EDA permite a visualização direta da lesão, a realização de biópsias para excluir malignidade (em caso de úlcera gástrica) e a pesquisa de Helicobacter pylori.\n\nAlternativa D (Correta): Preenche perfeitamente as lacunas. O quadro clínico de dor epigástrica relacionada à alimentação e ao uso de AINEs é sugestivo de úlcera péptica. O padrão-ouro para o diagnóstico é a Endoscopia Digestiva Alta com pesquisa de Helicobacter pylori. Uma vez confirmada a úlcera gástrica relacionada ao uso de AINEs (especialmente se o H. pylori for negativo), a conduta correta é interromper o agente agressor (AINE) e iniciar a cicatrização da mucosa com Inibidores de Bomba de Prótons (IBP) por um período de 8 semanas.\n\nCONCLUSÃO\n\nA questão exige o reconhecimento da fisiopatologia da úlcera induzida por medicamentos e a correta indicação de EDA em pacientes idosos com dispepsia. A alternativa D é a única que alinha diagnóstico, método propedêutico e conduta terapêutica de forma atualizada.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:28.878Z"
+  },
+  {
+    "id": "AJUDA_174a7e98-08bf-458f-809a-08864af35ad6",
+    "originalId": "174a7e98-08bf-458f-809a-08864af35ad6",
+    "statement": "Adolescente de 14 anos apresenta febre, dor de garganta intensa, exsudato tonsilar e linfonodomegalia cervical posterior. Teste rápido de estreptococo é negativo. Esplenomegalia palpável ao exame. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Faringite estreptocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adenovirose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mononucleose infecciosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Escarlatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Citomegalovirose congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito apresenta os elementos clássicos para o diagnóstico de mononucleose infecciosa, geralmente causada pelo vírus Epstein-Barr (EBV). A combinação de febre, faringite com exsudato e linfonodomegalia compõe a tríade típica da doença, mas alguns detalhes no enunciado são fundamentais para o diagnóstico diferencial.\n\nAnálise das alternativas:\n\na) Incorreta. A faringite estreptocócica (causada pelo *Streptococcus pyogenes*) é a principal causa bacteriana de dor de garganta. No entanto, ela costuma cursar com linfonodomegalia cervical anterior e não costuma causar esplenomegalia. Além disso, o enunciado informa que o teste rápido para estreptococo foi negativo, o que reduz drasticamente a probabilidade desta etiologia.\n\nb) Incorreta. A adenovirose é uma causa comum de faringite exsudativa em crianças e adolescentes, podendo vir acompanhada de febre e conjuntivite (febre faringoconjuntival). Entretanto, o acometimento de cadeias linfonodais posteriores e a presença de esplenomegalia são achados muito mais característicos da mononucleose do que das infecções por adenovírus.\n\nc) Correta. A mononucleose infecciosa é frequente em adolescentes. A presença de exsudato tonsilar pode mimetizar uma infecção bacteriana, mas a linfonodomegalia cervical posterior é um sinal clínico clássico que sugere EBV. O achado de esplenomegalia é altamente específico para este quadro no contexto de faringite aguda, ocorrendo em cerca de 50% dos casos. O teste rápido negativo para estreptococo reforça que a origem é viral.\n\nd) Incorreta. A escarlatina é uma manifestação cutânea associada à faringite estreptocócica. Ela se caracteriza por um exantema micropapular (sensação de pele em lixa), sinal de Filatov (palidez perioral) e sinal de Pastia (acentuação do exantema em dobras). Como o teste rápido foi negativo e há presença de esplenomegalia, o diagnóstico de escarlatina é descartado.\n\ne) Incorreta. A citomegalovirose congênita é uma infecção transmitida da mãe para o feto, manifestando-se ao nascimento com microcefalia, calcificações intracranianas e outras alterações neonatais, o que não condiz com um paciente de 14 anos. A forma adquirida do CMV pode causar uma síndrome semelhante à mononucleose, mas geralmente ocorre com faringite mínima ou ausente e linfonodomegalia menos expressiva que a causada pelo EBV.\n\nEm resumo, a idade do paciente, a localização da linfonodomegalia (posterior) e a presença de esplenomegalia tornam a mononucleose infecciosa a hipótese diagnóstica mais provável.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores",
+      "Hepatoesplenomegalias Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:28.878Z"
+  }
+]

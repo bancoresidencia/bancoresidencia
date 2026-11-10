@@ -1,0 +1,524 @@
+[
+  {
+    "id": "AJUDA_3d36c1b3-607f-44a9-a9d5-8b0884cd18f8",
+    "originalId": "3d36c1b3-607f-44a9-a9d5-8b0884cd18f8",
+    "statement": "Homem, 62 anos de idade, com histórico de hipertensão arterial sistêmica e dislipidemia, foi recentemente internado devido a infarto agudo do miocárdio de parede inferior, tratado com sucesso por intervenção coronariana percutânea primária. Ficou internado por 14 dias para controle sintomático. Neste período, a família notou o surgimento de tremores simétricos em repouso, predominantemente em membros superiores, associados à lentificação dos movimentos e dificuldade de marcha, com piora progressiva ao longo dos dias. Ao exame neurológico, o paciente apresentava rigidez em “roda denteada” em ambos os membros superiores, bradicinesia e tremor de repouso bilateral, mais proeminente nos membros superiores, com frequência de 4-6 Hz. A velocidade da marcha encontrava-se reduzida, com passos curtos e redução do balanço passivo dos membros superiores. Assinale a alternativa que apresenta a medicação mais provavelmente associada ao surgimento desses sintomas no caso descrito.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Clonazepam.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Carvedilol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Bromoprida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Losartana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um paciente que desenvolveu uma síndrome parkinsoniana clássica (rigidez em roda denteada, bradicinesia, passos curtos e tremor de repouso) de início agudo e bilateral durante o período de internação hospitalar. Em pacientes internados, o surgimento súbito e simétrico desses sintomas aponta fortemente para parkinsonismo farmacológico (iatrogênico).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O clonazepam é um benzodiazepínico que atua modulando receptores GABAérgicos. Seus principais efeitos adversos incluem sonolência, sedação, tontura e ataxia cerebelar, não promovendo bloqueio dopaminérgico ou síndrome parkinsoniana.\n\nAlternativa b: Incorreta. O carvedilol é um betabloqueador com ação vasodilatadora (alfa-1 bloqueio), padrão no tratamento pós-infarto agudo do miocárdio. Seus efeitos colaterais comuns são bradicardia, hipotensão e astenia. Não possui relação com parkinsonismo secundário.\n\nAlternativa c: Correta. A bromoprida é um antiemético e procinético amplamente prescrito no ambiente hospitalar, especialmente em infartos de parede inferior, que frequentemente cursam com náuseas e vômitos por reflexo vagal. Essa medicação atua como antagonista dos receptores dopaminérgicos D2 e ultrapassa a barreira hematoencefálica, bloqueando a via nigroestriatal e provocando sintomas extrapiramidais e parkinsonismo medicamentoso de forma aguda e simétrica.\n\nAlternativa d: Incorreta. A losartana é um bloqueador dos receptores de angiotensina II (BRA) utilizado no manejo da hipertensão arterial sistêmica e insuficiência cardíaca. Não atua sobre o sistema dopaminérgico central e não induz sinais parkinsonianos.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios do Movimento",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:09.381Z"
+  },
+  {
+    "id": "AJUDA_3d43c778-9551-4a8e-89ae-b3f27a34c3fe",
+    "originalId": "3d43c778-9551-4a8e-89ae-b3f27a34c3fe",
+    "statement": "Puérpera de 5 dias, primigesta, procura atendimento com queixa de dor intensa na mama direita, associada a área endurecida, quente e avermelhada no quadrante superior externo. Refere febre de 38,5 °C e calafrios nas últimas 24 horas. Relata dificuldade para amamentar, mas sem interrupção do aleitamento. Ao exame: região dolorosa e eritematosa de 6 cm, sem flutuação. Mamas com sinais de ingurgitamento bilateral leve. Com base no caso apresentado, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O diagnóstico é mastite puerperal; o aleitamento deve ser mantido e está indicado uso de antibiótico por via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico mais provável é abscesso mamário; a conduta é drenagem cirúrgica e antibioticoterapia endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A suspeita de ducto lactífero obstruído é mais provável, sendo suficiente orientar compressas frias e repouso mamário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O quadro é compatível com mastite puerperal; deve-se suspender o aleitamento na mama acometida até completa resolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trata-se de ingurgitamento mamário complicado; a conduta inclui analgesia e esvaziamento manual com bomba elétrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito é clássico de mastite puerperal, uma das complicações infecciosas mais comuns do puerpério, ocorrendo geralmente entre a segunda e a quinta semana após o parto, embora possa ocorrer precocemente, como no caso (5 dias).\n\nAnálise do quadro clínico:\nA paciente apresenta sinais flogísticos localizados (dor, calor, rubor e endurecimento em um quadrante específico) associados a sinais sistêmicos (febre de 38,5 °C e calafrios). O fato de não haver flutuação ao exame físico afasta, no momento, a presença de um abscesso mamário organizado.\n\nAnálise das alternativas:\n\na) Correta. O diagnóstico é de mastite puerperal. A conduta terapêutica baseia-se em dois pilares fundamentais: o esvaziamento adequado da mama (manutenção do aleitamento materno ou ordenha) e a antibioticoterapia sistêmica. O aleitamento não deve ser interrompido, pois a estase láctea é o principal fator predisponente para a progressão do quadro para um abscesso. Os antibióticos de escolha costumam ser os que cobrem Staphylococcus aureus (como cefalexina ou dicloxacilina) por via oral.\n\nb) Incorreta. O abscesso mamário é uma complicação da mastite e se caracteriza pela presença de uma coleção purulenta, que se manifesta clinicamente pela flutuação ao exame da área inflamada. Como o enunciado afirma \"sem flutuação\", o diagnóstico de abscesso é menos provável. Além disso, o tratamento inicial da mastite não complicada é ambulatorial, com medicação oral.\n\nc) Incorreta. O ducto lactífero obstruído causa dor e nódulo localizado, mas geralmente não vem acompanhado de febre alta e calafrios (sintomas sistêmicos). Além disso, o \"repouso mamário\" (interrupção da sucção/esvaziamento) é contraindicado, pois aumenta o risco de mastite e abscesso.\n\nd) Incorreta. Na mastite puerperal, a manutenção da amamentação é essencial para o tratamento. O esvaziamento da mama reduz a carga bacteriana e o processo inflamatório. A suspensão só seria considerada em casos muito específicos, como a presença de secreção purulenta drenando pelo mamilo e, mesmo assim, a ordenha deveria ser mantida.\n\ne) Incorreta. O ingurgitamento mamário (\"leite empedrado\") é geralmente um quadro bilateral, com mamas pesadas e dolorosas, mas sem o eritema localizado e a febre alta com calafrios típicos da mastite. Embora o esvaziamento faça parte do tratamento da mastite, o quadro da paciente já evoluiu para um processo infeccioso que exige antibioticoterapia.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Aleitamento Materno",
+      "Doenças Benignas da Mama",
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:09.381Z"
+  },
+  {
+    "id": "AJUDA_3d490424-9062-4d1f-83f5-ae8b68beac77",
+    "originalId": "3d490424-9062-4d1f-83f5-ae8b68beac77",
+    "statement": "Em relação à diferenciação dos tipos de BAV de 2º grau, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "No BAV de 2º grau Mobitz I (Wenckebach), olhando a onda p bloqueada, há intervalo PR maior no batimento conduzido antes que no batimento conduzido depois.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "No BAV de 2º grau Mobitz II, o intervalo PR se alonga progressivamente antes do bloqueio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No BAV 2:1, é sempre possível distinguir se se trata de Mobitz I ou Mobitz II apenas pelo ECG de repouso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O BAV Mobitz I é geralmente mais grave e tem maior risco de evolução para bloqueio total que o Mobitz II.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para entender a diferenciação dos bloqueios atrioventriculares (BAV) de segundo grau, vamos analisar cada alternativa:\n\nAlternativa (a) CORRETA: No BAV de 2º grau Mobitz I, também conhecido como fenômeno de Wenckebach, ocorre um atraso progressivo da condução no nó atrioventricular. Isso se traduz no eletrocardiograma como um aumento gradual do intervalo PR a cada batimento, até que uma onda P não seja conduzida (onda P bloqueada). Após a pausa gerada pelo bloqueio, o sistema de condução se recupera e o ciclo recomeça com o intervalo PR mais curto de todos. Portanto, comparando os batimentos ao redor da onda P bloqueada, o intervalo PR que vem imediatamente antes do bloqueio (que é o mais longo do ciclo) é maior que o intervalo PR do batimento que ocorre logo após o bloqueio (que é o mais curto).\n\nAlternativa (b) INCORRETA: Esta alternativa inverte os conceitos. No Mobitz II, o intervalo PR permanece fixo e constante antes do bloqueio súbito de uma onda P. O alongamento progressivo do intervalo PR antes da falha de condução é a marca registrada do Mobitz I (Wenckebach).\n\nAlternativa (c) INCORRETA: No BAV 2:1, ocorre uma onda P conduzida para cada onda P bloqueada. Como não existem dois batimentos conduzidos em sequência, não é possível observar se o intervalo PR está aumentando (como no Mobitz I) ou se está constante (como no Mobitz II). Embora a largura do complexo QRS e a duração do PR possam dar pistas (QRS estreito e PR longo sugerem Mobitz I; QRS largo e PR normal sugerem Mobitz II), o diagnóstico definitivo nem sempre é possível apenas pelo ECG de repouso, podendo exigir manobras ou estudo eletrofisiológico.\n\nAlternativa (d) INCORRETA: Na verdade, o BAV Mobitz II é significativamente mais grave que o Mobitz I. O Mobitz I geralmente resulta de um atraso funcional no nó atrioventricular, costuma ser benigno e raramente progride para bloqueio total. Já o Mobitz II decorre de uma doença no sistema de condução infra-hissiano (abaixo do nó AV), possui um alto risco de evolução para bloqueio atrioventricular total (BAVT) e geralmente tem indicação de implante de marca-passo definitivo, mesmo em pacientes assintomáticos.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Bradiarritmias",
+      "Eletrocardiograma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:09.381Z"
+  },
+  {
+    "id": "AJUDA_3d4b7786-aaee-4c60-9c44-07aacd2073cf",
+    "originalId": "3d4b7786-aaee-4c60-9c44-07aacd2073cf",
+    "statement": "Um paciente de 65 anos, hipertenso e com histórico de infarto agudo do miocárdio há 3 anos, é admitido no pronto-socorro com palpitações, tontura e sudorese há cerca de 2 horas. Ao exame físico, encontra-se com pressão arterial de 90/60 mmHg, frequência cardíaca de 160 bpm, pulsos finos e irregulares, e frequência respiratória de 20 irpm. A ausculta cardíaca revela ritmo irregular sem sopros. Um eletrocardiograma (ECG) é realizado e revela uma taquicardia com QRS estreito e ondas P não visualizadas claramente, variabilidade na amplitude dos intervalos RR, sem onda F típica em \"dente de serra\". Diante desse quadro, qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de adenosina intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cardioversão elétrica sincronizada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administração de amiodarona intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administração de verapamil intravenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO paciente apresenta uma taquiarritmia caracterizada por ritmo irregular, QRS estreito e ausência de ondas P, o que define o diagnóstico de Fibrilação Atrial (FA). O ponto crucial para a decisão terapêutica é a presença de sinais de instabilidade hemodinâmica. O paciente está hipotenso (90/60 mmHg) e apresenta sinais de má perfusão tecidual (tontura e sudorese). Segundo o protocolo de Taquicardia com Pulso do ACLS (Suporte Avançado de Vida Cardiovascular), qualquer taquicardia que gere sinais de gravidade (hipotensão, alteração do nível de consciência, sinais de choque, dor torácica isquêmica ou insuficiência cardíaca aguda) deve ser tratada imediatamente com cardioversão elétrica sincronizada.\n\nExplicação das alternativas:\n\na) Incorreta. A adenosina é o fármaco de escolha para o tratamento inicial de taquicardias supraventriculares regulares (como a taquicardia por reentrada nodal), após falha de manobras vagais. Como o ritmo deste paciente é francamente irregular (Fibrilação Atrial), a adenosina não está indicada. Além disso, em pacientes instáveis, a prioridade é a terapia elétrica e não a medicamentosa.\n\nb) Correta. A cardioversão elétrica sincronizada é a conduta imediata para pacientes com taquiarritmias e sinais de instabilidade hemodinâmica. O choque deve ser sincronizado com a onda R do eletrocardiograma para evitar que a descarga ocorra durante o período vulnerável do ciclo cardíaco (onda T), o que poderia induzir uma fibrilação ventricular.\n\nc) Incorreta. A amiodarona é um antiarrítmico que pode ser utilizado para controle de ritmo ou frequência em pacientes estáveis. No cenário de instabilidade hemodinâmica, a prioridade é a eletricidade. O uso de amiodarona intravenosa demora a fazer efeito e pode causar vasodilatação periférica, o que pioraria a hipotensão do paciente.\n\nd) Incorreta. O verapamil é um bloqueador dos canais de cálcio não diidropiridínico utilizado para controle de frequência cardíaca na FA em pacientes estáveis. Devido ao seu efeito inotrópico negativo (diminui a força de contração) e efeito vasodilatador, ele é absolutamente contraindicado em pacientes hipotensos ou com insuficiência cardíaca, pois pode levar ao colapso cardiovascular.\n\nGabarito: Letra (b).",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias",
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:09.381Z"
+  },
+  {
+    "id": "AJUDA_3d50b9dc-6094-44f8-9037-f51a6dd18071",
+    "originalId": "3d50b9dc-6094-44f8-9037-f51a6dd18071",
+    "statement": "Fábio tem 17 anos de idade. Sem ter antecedentes de doenças ou sintomas importantes anteriormente, há um mês ele começou a inchar. Esse inchaço foi aumentando progressivamente e hoje ele se apresenta em anasarca. Por isso, veio ao pronto atendimento, onde é assistido por você. Ao exame físico, apresenta PA: 132/88 mmHg e FC: 88 bpm. Sua ausculta pulmonar revela diminuição em base direita e o paciente não apresenta estase jugular. No exame abdominal, nota-se acentuado aumento do volume abdominal. Sinais de piparote, círculo de Skoda e macicez móvel encontram-se presentes. Há edema acentuado em membros inferiores. Exames laboratoriais e resultados acusam: creatinina de 0,7mg/dL (CKDEPI superior a 100 ml/minuto); albuminemia de 2,4 (normal: > 3,5 g/dL); hemograma com discreta anemia; colesterol e triglicérides discretamente elevados. O exame de urina revela presença de proteinúria ++++, leucócitos de 28 mil/ml (normal: <10 mil) e hemácias normais. A relação proteína/creatinina em amostra urinária foi maior que 3.\n\nEm relação ao caso clínico de Fábio, qual das alternativas abaixo pode ser sugerida:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de provável glomerulonefrite pós-estreptocócica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de provável pielonefrite;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de provável glomerulonefrite causadora de síndrome nefrítica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de provável glomerulonefrite por lesões mínimas ou por esclerose segmentar e focal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado por Fábio, de 17 anos, é clássico de uma Síndrome Nefrótica. Os pontos-chave para esse diagnóstico são: edema progressivo atingindo anasarca (ascite, derrame pleural e edema de membros inferiores), hipoalbuminemia importante (2,4 g/dL) e proteinúria maciça (relação proteína/creatinina > 3 e fita urinária com ++++). A presença de dislipidemia (colesterol e triglicerídeos elevados) corrobora o diagnóstico, sendo uma resposta hepática compensatória à perda de proteínas.\n\nAnálise das alternativas:\n\na) Incorreta. A Glomerulonefrite Pós-Estreptocócica (GNPE) é o protótipo da Síndrome Nefrítica. Ela se manifesta tipicamente com hematúria (geralmente macroscópica), hipertensão arterial, edema leve/moderado e oligúria, ocorrendo após uma infecção de orofaringe ou pele. O paciente do caso apresenta uma síndrome nefrótica pura, sem hematúria e com função renal preservada.\n\nb) Incorreta. A pielonefrite é uma infecção bacteriana do trato urinário superior. Manifesta-se com febre, calafrios, dor lombar (sinal de Giordano positivo) e sintomas irritativos urinários. Embora possa haver leucocitúria, a pielonefrite não causa anasarca, hipoalbuminemia ou proteinúria em níveis nefróticos.\n\nc) Incorreta. A Síndrome Nefrítica caracteriza-se por um processo inflamatório agudo nos glomérulos, levando à hematúria glomerular, hipertensão, edema e, frequentemente, queda da taxa de filtração glomerular. O caso de Fábio não apresenta hematúria (hemácias normais no exame de urina) nem hipertensão significativa, predominando a perda proteica maciça, o que define a Síndrome Nefrótica.\n\nd) Correta. Em adolescentes e adultos jovens com Síndrome Nefrótica primária (sem doenças sistêmicas evidentes), as causas histológicas mais comuns são a Doença por Lesão Mínima (DLM) e a Glomeruloesclerose Segmentar e Focal (GESF). A DLM é a causa principal em crianças, mas também ocorre em adolescentes, enquanto a GESF é uma causa muito frequente nessa faixa etária e em adultos. Ambas justificam o quadro de proteinúria isolada e maciça com exames laboratoriais típicos de nefrose.\n\nGabarito: Alternativa (d).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:09.381Z"
+  },
+  {
+    "id": "AJUDA_3d573623-d64c-497c-83b8-6af2d6d33d24",
+    "originalId": "3d573623-d64c-497c-83b8-6af2d6d33d24",
+    "statement": "A principal vantagem do estudo de coorte em relação ao caso-controle é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menor custo e tempo de execução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Capacidade de estimar incidência e risco relativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Facilidade na seleção de controles.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução de perdas no acompanhamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Menor necessidade de amostra.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é necessário diferenciar as propriedades fundamentais dos estudos de coorte e de caso-controle, que são os principais desenhos de estudos observacionais analíticos na epidemiologia.\n\nAlternativa (a) Incorreta. Esta é, na verdade, uma característica do estudo de caso-controle. Estudos de coorte costumam ser caros e demandam muito tempo, pois exigem o acompanhamento de um grande grupo de pessoas por meses ou anos. O caso-controle é mais rápido e barato por partir de desfechos já ocorridos.\n\nAlternativa (b) Correta. Esta é a vantagem metodológica clássica da coorte. Como o estudo parte de indivíduos inicialmente saudáveis (em relação ao desfecho estudado) e os acompanha ao longo do tempo para verificar o surgimento da doença, ele permite o cálculo direto da incidência (casos novos). Com os dados de incidência entre expostos e não expostos, podemos calcular o risco relativo (RR). No estudo de caso-controle, não é possível calcular a incidência real, pois o pesquisador define previamente o número de doentes e saudáveis, utilizando-se o *odds ratio* (razão de chances) como medida de associação.\n\nAlternativa (c) Incorreta. A dificuldade na seleção de controles é um problema clássico do estudo de caso-controle, no qual encontrar um grupo comparável que represente a mesma base populacional dos casos é um desafio constante. Na coorte, a comparação se dá entre grupos de exposição, e não pela seleção ativa de um grupo-controle de doentes.\n\nAlternativa (d) Incorreta. Pelo contrário, a perda de acompanhamento (viés de atrito) é uma das principais limitações do estudo de coorte. Como o estudo depende de seguir os participantes por longos períodos, o risco de as pessoas abandonarem a pesquisa, mudarem de cidade ou falecerem por outras causas é alto.\n\nAlternativa (e) Incorreta. Estudos de coorte geralmente exigem amostras muito grandes, especialmente se a doença estudada tiver um longo período de latência ou baixa frequência na população. O estudo de caso-controle é muito mais eficiente para estudar condições raras com amostras menores.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:09.381Z"
+  },
+  {
+    "id": "AJUDA_3d6743ea-49c2-43cb-9657-724eabedf2b2",
+    "originalId": "3d6743ea-49c2-43cb-9657-724eabedf2b2",
+    "statement": "Fissuras anais são pequenas rupturas ou cortes no revestimento do canal anal, frequentemente causadas por trauma durante a evacuação, constipação ou diarreia. Elas podem causar dor intensa, sangramento e desconforto durante as evacuações. O tratamento das fissuras anais varia conforme a gravidade e a duração dos sintomas, podendo incluir medidas conservadoras ou intervenções cirúrgicas. Sobre o tratamento das fissuras anais, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vasodilatadores tópicos são contraindicados no tratamento de fissuras anais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fissuras anais agudas devem ser tratadas exclusivamente com cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento conservador inclui medidas como consumo de fibras e banhos de assento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Fissuras anais crônicas não requerem tratamento da patologia base.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Fissuras anais são ulcerações lineares no canal anal, situadas distalmente à linha pectínea, geralmente causadas por trauma mecânico (fezes endurecidas) que gera um ciclo de dor, hipertonia do esfíncter anal interno e isquemia local, dificultando a cicatrização.\n\nAlternativa A: Incorreta. Os vasodilatadores tópicos, como a nitroglicerina (nitratos) e os bloqueadores dos canais de cálcio (diltiazem ou nifedipina), são fundamentais no tratamento farmacológico. Eles atuam promovendo a \"esfincterotomia química\", reduzindo a pressão de repouso do esfíncter anal interno, o que melhora o fluxo sanguíneo local e facilita a cicatrização da mucosa.\n\nAlternativa B: Incorreta. As fissuras anais agudas apresentam altas taxas de cura (cerca de 80% a 90%) apenas com medidas clínicas e conservadoras. A intervenção cirúrgica, sendo a esfincterotomia lateral interna o padrão-ouro, é reservada para casos de fissura anal crônica que falharam ao tratamento clínico medicamentoso ou quando há recorrências frequentes.\n\nAlternativa C: Correta. A primeira linha de tratamento para qualquer fissura anal é o manejo conservador. O objetivo é interromper o trauma local e reduzir o espasmo esfincteriano. O consumo de fibras (dieta ou suplementação) e o aumento da ingestão hídrica auxiliam na formação de fezes macias. Já os banhos de assento com água morna promovem o relaxamento reflexo do esfíncter anal interno por meio do calor, aliviando a dor e melhorando a perfusão tecidual.\n\nAlternativa D: Incorreta. Fissuras anais podem ser primárias (idiopáticas) ou secundárias. No caso de fissuras crônicas, especialmente aquelas localizadas fora da linha média (laterais) ou múltiplas, é imperativo investigar e tratar patologias de base, como a doença de Crohn, retocolite ulcerativa, tuberculose, HIV ou sífilis. Sem o controle da doença sistêmica subjacente, a fissura dificilmente cicatrizará apenas com medidas locais.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:09.381Z"
+  },
+  {
+    "id": "AJUDA_3d6e7132-5978-4828-9d01-eb8efdaddc10",
+    "originalId": "3d6e7132-5978-4828-9d01-eb8efdaddc10",
+    "statement": "Correlacionar imagens tomográficas com quadro clínico.\n\nA. homem de meia idade, tabagista, dispneia progressiva aos esforços com meses de evolução, espirometria com vef1/cvf > 70, estertores predominando no final da inspiração ao exame físico\nB. mulher de 67 anos de idade, tabagista, tosse crônica, dispneia aos esforços, policitemia no hemograma, tempo expiratório prolongado, ausculta pulmonar com murmúrios vesicular reduzidos globalmente\nC. homem de 68 anos de idade, hipertenso mal‑controlado, cardiopata, piora de dispneia, edema de membros inferiores, ortopneia, ausculta abolida em bases e estertores em ápice pulmonar\nD. jovem de 27 anos de idade, com antecedente de hepatopatia em investigação, com relatos de dispneia durante os esforços físicos, ausculta com murmúrios vesiculares diminuído em bases pulmonares",
+    "options": [
+      {
+        "id": "A",
+        "text": "A-4, B-3, C-1, D-2",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A-3, B-2, C-1, D-4",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A-3, B-2, C-4, D-1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A-3, B-1, C-2, D-4",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A-4, B-3, C-2, D-1",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Associação entre quadros clínicos e imagens:\n\nA-4: O quadro clínico descreve uma doença pulmonar intersticial fibrótica, compatível com fibrose pulmonar idiopática. O paciente é um homem tabagista com dispneia progressiva, espirometria não obstrutiva (VEF1/CVF maior que 70) e estertores finos (tipo velcro). A imagem 4 é característica desse quadro, apresentando faveolamento (*honeycombing*), que são pequenos cistos subpleurais empilhados, e bronquiectasias de tração.\n\nB-3: Este é o caso clássico de DPOC (doença pulmonar obstrutiva crônica) tipo enfisematoso causado por tabagismo. A paciente apresenta sinais de obstrução ao fluxo aéreo (tempo expiratório prolongado) e policitemia secundária à hipoxemia crônica. A imagem 3 demonstra enfisema centrolobular, onde se observam pequenas áreas de destruição de parênquima distribuídas de forma lobular, padrão típico da exposição à fumaça do cigarro.\n\nC-1: O paciente apresenta um quadro clínico de insuficiência cardíaca congestiva (ICC) descompensada, evidenciada pela história de cardiopatia, hipertensão, edema de membros inferiores, ortopneia e derrame pleural (ausculta abolida em bases). A imagem 1 corrobora o diagnóstico ao mostrar cardiomegalia (coração aumentado), derrame pleural bilateral (coleções líquidas nas porções posteriores dos pulmões) e sinais de congestão pulmonar.\n\nD-2: Paciente jovem com associação de hepatopatia e dispneia é o cenário clássico da deficiência de alfa-1-antitripsina. Nessa condição, o enfisema é do tipo panacinar e tem predileção pelas bases pulmonares, ocorrendo em pacientes mais jovens que o enfisema tabágico comum. A imagem 2 mostra uma destruição importante do parênquima com formação de grandes bolhas, compatível com enfisema avançado em bases.\n\nAnálise das alternativas:\n\na) Correta. Todas as correlações (A-4, B-3, C-1, D-2) estão de acordo com os padrões radiológicos e clínicos esperados.\nb) Incorreta. Associa o quadro de fibrose (A) com a imagem de enfisema centrolobular (3).\nc) Incorreta. Inverte as correlações de ICC e enfisema panacinar, além de errar a associação da fibrose.\nd) Incorreta. Associa o quadro de DPOC tabágico (B) com a imagem de insuficiência cardíaca (1).\ne) Incorreta. Embora acerte A e B, inverte as associações das imagens 1 e 2 para os casos C e D.\n\nGabarito: Alternativa (a).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax",
+      "Insuficiência Cardíaca",
+      "Síndrome Hepatorrenal e Hepatopulmonar"
+    ],
+    "difficulty": 85.17771021979036,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/eaeb58daea8e6a88328510eb05a9ff08879992507b2e27c68e0cc016805389a9.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3d6e7132-5978-4828-9d01-eb8efdaddc10_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/40e925fd165651cb0d25b5af320ff3f5daf1a332480c998d0abcc18695251224.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3d6e7132-5978-4828-9d01-eb8efdaddc10_img_1.webp"
+      },
+      {
+        "order": 2,
+        "originalUrl": "https://files.ajudamedico.com/files/281a63961bea5532b0f93ff9461bf58573dc27afb055d3cf73c99c11fd412770.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3d6e7132-5978-4828-9d01-eb8efdaddc10_img_2.webp"
+      },
+      {
+        "order": 3,
+        "originalUrl": "https://files.ajudamedico.com/files/047c8723423e63b9b9bb8a983261fdbf2962d0b305aeaf6caabdc26f2f69052c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3d6e7132-5978-4828-9d01-eb8efdaddc10_img_3.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:11.082Z"
+  },
+  {
+    "id": "AJUDA_3d7a40e6-a4c4-461d-a94e-28aa5d187209",
+    "originalId": "3d7a40e6-a4c4-461d-a94e-28aa5d187209",
+    "statement": "Relacione a Coluna 1 à Coluna 2, associando os tipos de amenorreias às suas respectivas causas ou mecanismos.\n\nColuna 1\n1. Hipotalâmica.\n2. De causa anatômica.\n3. Por anovulação.\n4. De causa congênita.\n\nColuna 2\n( ) Síndrome de Asherman.\n( ) Exercícios físicos intensos e baixo percentual de gordura corporal.\n( ) Síndrome de Rokitansky.\n( ) Síndrome dos ovários policísticos.\n\nA ordem correta de preenchimento dos parênteses, de cima para baixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 – 1 – 4 – 3.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "4 – 1 – 2 – 3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2 – 3 – 4 – 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4 – 2 – 3 – 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "1 – 2 – 3 – 4.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é necessário correlacionar a fisiopatologia e a etiologia das principais causas de amenorreia.\n\nAssociação entre as colunas:\n\n(2) Síndrome de Asherman: É uma causa anatômica de amenorreia. Caracteriza-se pela presença de sinéquias (cicatrizes/aderências) dentro da cavidade uterina, geralmente após traumas como curetagens uterinas ou infecções graves (endometrite). Essas aderências impedem o funcionamento normal do endométrio e a saída do fluxo menstrual.\n\n(1) Exercícios físicos intensos e baixo percentual de gordura corporal: São causas de amenorreia hipotalâmica funcional. O estresse físico extremo e a baixa disponibilidade de energia (leptina baixa) provocam a supressão da secreção pulsátil do GnRH pelo hipotálamo. Sem o estímulo do GnRH, não há produção adequada de LH e FSH pela hipófise, levando à ausência de ovulação e menstruação.\n\n(4) Síndrome de Rokitansky: Também conhecida como agenesia mülleriana, é uma causa congênita de amenorreia primária. Ocorre por uma falha no desenvolvimento dos ductos de Müller durante a embriogênese, resultando na ausência de útero, trompas e dos dois terços superiores da vagina, embora os ovários e os caracteres sexuais secundários sejam normais (cariótipo 46,XX).\n\n(3) Síndrome dos ovários policísticos (SOP): É a causa clássica de amenorreia por anovulação crônica. Ocorre um desequilíbrio endócrino com hiperandrogenismo e alteração na relação LH/FSH, o que impede o recrutamento e a maturação folicular adequada, resultando em ciclos anovulatórios.\n\nAnálise das alternativas:\n\nAlternativa a) 2 – 1 – 4 – 3: Esta é a alternativa correta. A sequência obedece exatamente às descrições fisiopatológicas de cada condição citada na Coluna 2 em relação às categorias da Coluna 1.\n\nAlternativa b) 4 – 1 – 2 – 3: Incorreta. Classifica a Síndrome de Asherman como congênita (quando é adquirida por trauma) e a Síndrome de Rokitansky como causa anatômica adquirida (quando é uma malformação congênita).\n\nAlternativa c) 2 – 3 – 4 – 1: Incorreta. Associa exercícios físicos à anovulação (embora a anovulação ocorra, o mecanismo primário é a falha hipotalâmica) e coloca a SOP como causa hipotalâmica, o que está incorreto, pois a SOP é um distúrbio endócrino-metabólico que gera anovulação.\n\nAlternativa d) 4 – 2 – 3 – 1: Incorreta. Troca a causa de Asherman por congênita e coloca a SOP como causa anatômica, o que não faz sentido clínico, já que a SOP não apresenta obstrução física ao fluxo.\n\nAlternativa e) 1 – 2 – 3 – 4: Incorreta. Inverte todas as associações, sugerindo, por exemplo, que a Síndrome de Asherman é hipotalâmica e que a SOP é anatômica.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:11.082Z"
+  },
+  {
+    "id": "AJUDA_3d835d47-c7bb-45c5-a059-9a383039ff15",
+    "originalId": "3d835d47-c7bb-45c5-a059-9a383039ff15",
+    "statement": "Paciente de 38 anos, gênero feminino, procura atendimento ambulatorial após realizar Ultrassom de tireoide feito pelo histórico familiar de carcinoma papilífero com evidência de nódulo tireoidiano de 0,9x0,7x0,6cm, em lobo esquerdo, TIRADS 5. Clinicamente está assintomática. Qual deve ser a conduta correta neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cintilografia de tireoide",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PAAF guiada por US",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dosagem de TSH",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ultrassom anual",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o manejo de nódulos tireoidianos baseando-se nas diretrizes de estratificação de risco, como o ACR TI-RADS (American College of Radiology) e a ATA (American Thyroid Association).\n\nO ponto central para a resolução é o tamanho do nódulo associado à sua classificação de risco. No caso, temos um nódulo TI-RADS 5 (alta suspeição), porém com o maior diâmetro de 0,9 cm (subcentimétrico).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A cintilografia de tireoide não é um exame de rotina para avaliação inicial de nódulos suspeitos de malignidade. Ela está indicada apenas quando o paciente apresenta níveis de TSH suprimidos (tireotoxicose), para identificar se o nódulo é funcional (hipercaptante ou \"quente\"), o que reduziria drasticamente a chance de câncer.\n\nAlternativa (b) Incorreta. Embora o nódulo seja classificado como TI-RADS 5, as diretrizes internacionais (tanto ACR quanto ATA) recomendam a realização de Punção Aspirativa por Agulha Fina (PAAF) apenas em nódulos de alta suspeição que possuam 1,0 cm ou mais em seu maior diâmetro. Como o nódulo da paciente mede 0,9 cm, a biópsia imediata não é a conduta padrão, visando evitar o sobrediagnóstico e tratamentos desnecessários de microcarcinomas que, muitas vezes, não evoluem clinicamente.\n\nAlternativa (c) Incorreta. A dosagem de TSH é o primeiro passo laboratorial na investigação de um nódulo tireoidiano recém-descoberto. No entanto, a questão apresenta um cenário onde o nódulo já foi estratificado morfologicamente pelo ultrassom como TI-RADS 5. A dúvida principal aqui é a conduta intervencionista ou expectante sobre um nódulo de alta suspeição menor que 1,0 cm. Entre as opções de manejo do nódulo em si, a observação armada com imagem prevalece.\n\nAlternativa (d) Correta. De acordo com o sistema ACR TI-RADS, para nódulos classificados como TI-RADS 5 que medem entre 0,5 cm e 0,9 cm, a conduta recomendada é o acompanhamento ultrassonográfico periódico (geralmente anual nos primeiros anos) para avaliar se haverá crescimento ou alteração de características. A PAAF só seria indicada se o nódulo atingisse a marca de 1,0 cm durante o seguimento. Mesmo com o histórico familiar de carcinoma papilífero, a conduta conservadora inicial para nódulos subcentimétricos é a mais aceita na prática médica atual para evitar procedimentos invasivos precoces.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:31:11.082Z"
+  }
+]

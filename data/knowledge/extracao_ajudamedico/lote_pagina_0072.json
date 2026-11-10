@@ -1,0 +1,481 @@
+[
+  {
+    "id": "AJUDA_129f1858-af97-4239-a885-1ae7f92f158f",
+    "originalId": "129f1858-af97-4239-a885-1ae7f92f158f",
+    "statement": "A transição demográfica e epidemiológica são processos interligados que descrevem a mudança do perfil de uma população.\n\nNa transição epidemiológica brasileira, observa-se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Predominância crescente de doenças transmissíveis",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução das doenças crônicas e aumento das causas externas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumento da carga de doenças crônicas não transmissíveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Taxas de mortalidade por infecções superiores às cardiovasculares",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Descontinuidade do padrão tripla carga de doenças.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A transição epidemiológica no Brasil é um processo complexo que reflete as mudanças no perfil de saúde e nas causas de morte da população ao longo das últimas décadas. Esse processo está intimamente ligado à transição demográfica (envelhecimento populacional) e a fatores socioeconômicos.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O padrão observado na transição epidemiológica é a redução progressiva da importância relativa das doenças transmissíveis (infectocontagiosas) em comparação às doenças não transmissíveis. Embora o Brasil ainda enfrente desafios com doenças infectocontagiosas, elas não são mais predominantes como no início do século XX.\n\nAlternativa b: Incorreta. Ocorreu, na verdade, um aumento expressivo das doenças crônicas. As causas externas (acidentes e violência) também aumentaram significativamente, mas a afirmação de que houve redução das doenças crônicas invalida a alternativa.\n\nAlternativa c: Correta. Esta é a característica central da transição epidemiológica contemporânea. Com o aumento da expectativa de vida e a mudança para estilos de vida mais urbanos (sedentarismo, dieta inadequada), as Doenças Crônicas Não Transmissíveis (DCNT) — como doenças cardiovasculares, diabetes, câncer e doenças respiratórias crônicas — passaram a representar a maior carga de morbimortalidade no sistema de saúde brasileiro.\n\nAlternativa d: Incorreta. Atualmente, as doenças cardiovasculares são a principal causa de óbito no Brasil. As taxas de mortalidade por doenças infecciosas e parasitárias sofreram uma queda acentuada ao longo das décadas devido a avanços em saneamento, vacinação e antibióticos, sendo hoje inferiores às causas cardiovasculares e oncológicas.\n\nAlternativa e: Incorreta. O Brasil vive o que se denomina \"tripla carga de doenças\". Isso significa que o país não abandonou um padrão para adotar outro, mas sim que enfrenta simultaneamente três agendas: 1) a agenda não concluída de doenças infecciosas e problemas materno-infantis; 2) o crescimento das doenças crônicas não transmissíveis; e 3) o impacto crescente das causas externas (violência e acidentes). Portanto, não há descontinuidade, mas sim uma sobreposição de perfis epidemiológicos.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:23.680Z"
+  },
+  {
+    "id": "AJUDA_12a56b05-2780-4995-92dc-a7f7add81758",
+    "originalId": "12a56b05-2780-4995-92dc-a7f7add81758",
+    "statement": "Sobre a razão de mortalidade materna, está correto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estima a frequência de óbitos femininos, ocorridos até 42 dias após o término da gravidez, atribuídos a causas ligadas à gravidez, ao parto e ao puerpério, em relação ao total de nascidos vivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estima a frequência de óbitos femininos, ocorridos até o momento do parto, atribuídos a causas ligadas a gravidez, ao parto e ao puerpério, em relação ao total de gestações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estima a frequência de óbitos femininos, ocorridos até 14 dias após o término da gravidez, atribuídos a qualquer causa, em relação ao total de nascidos vivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estima a frequência de óbitos femininos, ocorridos até 30 dias após o término da gravidez, atribuídos a qualquer causa, em relação ao total de nascidos vivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Razão de Mortalidade Materna (RMM) é um dos principais indicadores de saúde pública e de qualidade da assistência obstétrica de uma região. Para compreender a questão, devemos recordar a definição de óbito materno e como o cálculo é estruturado.\n\nO óbito materno é definido pela Organização Mundial da Saúde (OMS) como a morte de uma mulher durante a gestação ou dentro de um período de 42 dias após o término da gravidez, independentemente da duração ou da localização da gestação. Essa morte deve ser causada por fatores relacionados ou agravados pela gravidez ou por medidas tomadas em relação a ela, excluindo-se causas acidentais ou incidentais (como um acidente de carro, por exemplo).\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Esta alternativa apresenta a definição técnica precisa. O período de acompanhamento é de até 42 dias após o parto (puerpério), as causas devem estar ligadas ao ciclo gravídico-puerperal e o denominador utilizado é o número de nascidos vivos. O uso de \"nascidos vivos\" no denominador ocorre porque é um dado mais fidedigno e fácil de obter do que o número total de gestações, servindo como uma estimativa da população exposta ao risco. Geralmente, o resultado é expresso por 100.000 nascidos vivos.\n\nAlternativa B (Incorreta): A alternativa erra em dois pontos principais. Primeiro, ao limitar o período \"até o momento do parto\", ignorando o puerpério (até 42 dias), no qual ocorrem muitas complicações fatais (como hemorragias e infecções). Segundo, ao propor o \"total de gestações\" como denominador, o que é tecnicamente difícil de mensurar na prática epidemiológica.\n\nAlternativa C (Incorreta): O erro reside no prazo estipulado de 14 dias, que é insuficiente para a definição de mortalidade materna (o correto são 42 dias). Além disso, o termo \"qualquer causa\" está incorreto, pois óbitos por causas externas ou acidentais não entram no cálculo da Razão de Mortalidade Materna.\n\nAlternativa D (Incorreta): Assim como a anterior, o erro está no prazo (30 dias em vez de 42) e na inclusão de \"qualquer causa\". Mortes não relacionadas ao estado gravídico (ex.: homicídios ou acidentes) não são consideradas mortes maternas para fins deste indicador.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:23.680Z"
+  },
+  {
+    "id": "AJUDA_12a7caf3-3f8a-4c97-a4d1-a91c46116ba9",
+    "originalId": "12a7caf3-3f8a-4c97-a4d1-a91c46116ba9",
+    "statement": "A Lei n.º 8.080/90 dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências. Com base no Art. 7º, que traz os princípios do Sistema Único de Saúde – SUS, o uso da epidemiologia (inciso VII), como princípio do sistema, é indicado para:",
+    "options": [
+      {
+        "id": "A",
+        "text": "regionalização e hierarquização da rede de serviços de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "organização dos serviços públicos de modo a evitar duplicidade de meios para fins idênticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "conjugação dos recursos financeiros, tecnológicos, materiais e humanos da União, dos Estados, do Distrito Federal e dos Municípios na prestação de serviços de assistência à saúde da população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "divulgação de informações quanto ao potencial dos serviços de saúde e a sua utilização pelo usuário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o estabelecimento de prioridades, a alocação de recursos e a orientação programática",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para responder corretamente a essa questão, devemos recorrer ao Artigo 7º da Lei nº 8.080/90, que lista os princípios do Sistema Único de Saúde (SUS). O examinador solicita a finalidade específica da utilização da epidemiologia dentro do sistema, conforme descrito no inciso VII deste artigo.\n\nAlternativa E (Correta): O inciso VII do Artigo 7º afirma textualmente que a utilização da epidemiologia serve para o estabelecimento de prioridades, a alocação de recursos e a orientação programática. Na prática da gestão pública, isso significa que os indicadores de saúde (como taxas de mortalidade, incidência de doenças e perfil epidemiológico local) são as ferramentas científicas que balizam onde o dinheiro deve ser investido e quais programas de saúde devem ser priorizados para atender às reais necessidades da população.\n\nAlternativa A (Incorreta): A regionalização e a hierarquização são princípios do SUS mencionados no inciso IX. Eles se referem à organização da rede de serviços em áreas geográficas definidas e em níveis de complexidade crescente (primária, secundária e terciária), não sendo a definição legal dada especificamente ao uso da epidemiologia no inciso VII.\n\nAlternativa B (Incorreta): A organização dos serviços públicos de modo a evitar duplicidade de meios para fins idênticos está prevista no inciso XIII. Trata-se de um princípio de eficiência administrativa para garantir que diferentes esferas de governo não gastem recursos com a mesma estrutura para o mesmo objetivo de forma desnecessária.\n\nAlternativa C (Incorreta): A conjugação de recursos financeiros, tecnológicos, materiais e humanos da União, Estados, Distrito Federal e Municípios é o princípio da articulação federativa contido no inciso XI, focando na cooperação entre os entes para a prestação de serviços.\n\nAlternativa D (Incorreta): A divulgação de informações quanto ao potencial dos serviços de saúde e a sua utilização pelo usuário é o princípio garantido pelo inciso VI. Esse ponto é focado no direito à informação e na transparência, permitindo que o cidadão saiba quais serviços estão disponíveis e como acessá-los.\n\nEm resumo, para a Lei nº 8.080/90, a epidemiologia é uma ferramenta de gestão estratégica (prioridades, recursos e programas), o que valida a alternativa E.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:23.680Z"
+  },
+  {
+    "id": "AJUDA_12a9765f-2893-454b-a8eb-6fb75b637515",
+    "originalId": "12a9765f-2893-454b-a8eb-6fb75b637515",
+    "statement": "Paciente de 85 anos, portador de hepatopatia crônica por vírus B. É internado devido a rebaixamento do nível de consciência. Encontra-se constipado há 3 dias, mesmo com o uso correto da lactulose prescrita. Ao exame físico, encontra-se em regular estado geral, sarcopênico, ictérico +/4, eupneico, afebril, hidratado, Glasgow 12, flapping presente, abdome globoso com piparote +. MELD-Na: 22. Esta é a 3ª internação em 6 meses por encefalopatia hepática. Desde a última alta hospitalar há 15 dias, o paciente ficou mais acamado e mais dependente e aceitando cada vez menos a alimentação via oral por causa da sonolência. Filho do paciente relata que na última internação o pai tinha solicitado para não realizarem mais medidas invasivas, inclusive a hospitalização, mas os filhos gostariam que todos os procedimentos necessários fossem realizados. A conduta mais adequada diante desse caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "passar sonda nasoenteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar a lavagem transretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "acionar o apoio jurídico do hospital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "encaminhar para transplante hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ofertar apoio aos filhos sobre terminalidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda um cenário complexo que envolve bioética, cuidados paliativos e o manejo de complicações da cirrose em pacientes muito idosos. O ponto central aqui não é apenas a conduta médica técnica para a encefalopatia hepática, mas o respeito à autonomia do paciente e o reconhecimento da terminalidade.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A passagem de sonda nasoenteral é um procedimento invasivo. O paciente, em plena capacidade de suas faculdades anteriormente, expressou o desejo de não ser submetido a medidas invasivas. Além disso, em pacientes com cirrose avançada, sarcopenia grave e rebaixamento recorrente do nível de consciência, a nutrição enteral artificial muitas vezes não altera o prognóstico de sobrevida e pode aumentar o desconforto, indo contra os princípios de cuidados paliativos e a vontade do paciente.\n\nAlternativa b) Incorreta. Embora a lavagem transretal seja um tratamento para encefalopatia hepática por constipação, o contexto clínico global do paciente é de terminalidade e fragilidade extrema (85 anos, MELD-Na 22, múltiplas internações recentes, sarcopenia). Realizar procedimentos invasivos contra a vontade previamente expressa pelo paciente foca apenas na doença e ignora o doente.\n\nAlternativa c) Incorreta. O apoio jurídico não é a primeira medida a ser tomada. O Conselho Federal de Medicina, por meio da Resolução CFM 1.995/2012, garante o respaldo ético e legal para que o médico respeite as Diretivas Antecipadas de Vontade (DAV) do paciente. O conflito com a família deve ser resolvido prioritariamente através do diálogo, da empatia e da comunicação de más notícias, e não pela via judicial.\n\nAlternativa d) Incorreta. O transplante hepático é formalmente contraindicado neste caso. A idade avançada (85 anos) associada à sarcopenia grave e ao estado funcional muito limitado (acamado e dependente) impede a indicação do procedimento, pois o paciente não teria reserva fisiológica para sobreviver à cirurgia e ao pós-operatório imediato, além de a escassez de órgãos priorizar pacientes com maior potencial de reabilitação.\n\nAlternativa e) Correta. O paciente apresenta critérios de terminalidade em uma doença crônica incurável e já manifestou suas Diretivas Antecipadas de Vontade, recusando medidas invasivas e hospitalização. O papel do médico, diante do conflito familiar, é acolher os filhos, explicar a progressão natural da doença, o prognóstico reservado e a importância de respeitar a autonomia e a dignidade do pai, focando o cuidado no conforto e no alívio do sofrimento, em vez de intervenções fúteis que apenas prolongariam o processo de morrer (distanásia).",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Cirrose Hepática",
+      "Ética Médica"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:23.680Z"
+  },
+  {
+    "id": "AJUDA_12d2ce14-df80-412e-a8f6-9b63620ff237",
+    "originalId": "12d2ce14-df80-412e-a8f6-9b63620ff237",
+    "statement": "Em relação à possibilidade de preservação da fertilidade em mulher com câncer de ovário sem prole definida é necessário que",
+    "options": [
+      {
+        "id": "A",
+        "text": "se realize a cirurgia de second look 6 meses após a ooforectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o carcinoma epitelial seja no estádio IA G1-3 com biópsia contralateral negativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o tumor germinativo maligno tenha biópsia contralateral negativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o tumor seja boderline nos estádios I a III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "o tumor boderline tenha biópsia contralateral negativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A preservação da fertilidade no câncer de ovário, técnica conhecida como cirurgia conservadora ou cirurgia de preservação da fertilidade (CPF), consiste na manutenção do útero e de pelo menos parte de um dos ovários. Essa abordagem é criteriosa e depende diretamente do tipo histológico e do estadiamento da doença. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A (Incorreta): A cirurgia de second look (uma reoperação para avaliar a cavidade abdominal após o tratamento inicial) caiu em desuso na oncologia ginecológica moderna. Ela não é um critério ou necessidade para a preservação da fertilidade, tendo sido substituída por exames de imagem de alta resolução e acompanhamento de marcadores tumorais.\n\nAlternativa B (Incorreta): No caso do carcinoma epitelial de ovário (o tipo mais comum e agressivo), a preservação da fertilidade é geralmente aceita apenas no estádio IA e com grau histológico 1 (G1). O estádio IA G3 (alto grau) apresenta um risco de recorrência e metástase muito elevado, o que contraindica a cirurgia conservadora na maioria dos protocolos. Além disso, a biópsia rotineira do ovário contralateral, se ele tiver aparência normal, não é mais recomendada, pois pode causar aderências e reduzir a reserva ovariana sem mudar o prognóstico.\n\nAlternativa C (Incorreta): Os tumores de células germinativas são altamente responsivos à quimioterapia e possuem excelente prognóstico. Por isso, a preservação da fertilidade é o padrão de tratamento mesmo em estádios avançados. Assim como no carcinoma epitelial, a biópsia do ovário contralateral macroscopicamente normal é contraindicada pelo risco de trauma tecidual e infertilidade iatrogênica (aderências).\n\nAlternativa D (Correta): Os tumores de baixo potencial de malignidade (borderline) possuem um comportamento clínico indolente e excelente sobrevida. Nesses casos, a preservação do útero e do tecido ovariano contralateral é permitida não apenas no estádio I, mas também nos estádios II e III (quando há implantes peritoneais não invasivos). A cistectomia (retirada apenas do tumor) ou a salpingo-oforectomia unilateral são opções viáveis, mesmo na presença de doença extraovariana, desde que os implantes não sejam invasivos.\n\nAlternativa E (Incorreta): Conforme mencionado anteriormente, a biópsia do ovário contralateral que apresenta aspecto normal à inspeção cirúrgica não deve ser realizada de rotina em tumores borderline. O procedimento aumenta o risco de falência ovariana precoce e obstrução tubária por aderências pós-operatórias, não trazendo benefício no estadiamento ou na sobrevida da paciente.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:23.680Z"
+  },
+  {
+    "id": "AJUDA_12d7b484-0105-47ff-abbc-13939646105e",
+    "originalId": "12d7b484-0105-47ff-abbc-13939646105e",
+    "statement": "Gestante de 29 anos, 31 semanas, apresenta PA 170/115 mmHg, cefaleia intensa e epigastralgia. Exames laboratoriais: plaquetas 85.000/mm³, TGP 130 U/L, DHL 820 U/L. O quadro materno está mais consistentemente associado a qual alteração placentária fundamental?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da invasão trofoblástica e redução da resistência das artérias espiraladas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ausência de remodelamento adequado das artérias espiraladas com hipóxia placentária",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aumento do fluxo uteroplacentário por vasodilatação sistêmica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução do estresse oxidativo placentário",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hipervascularização placentária com macrossomia fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO:\nO quadro clínico de hipertensão grave (PA 170/115 mmHg) associado a sintomas neurológicos (cefaleia), dor abdominal (epigastralgia) e alterações laboratoriais (plaquetopenia, elevação de TGP e DHL acima de 600 U/L) caracteriza a pré-eclâmpsia com sinais de gravidade, evoluindo para a Síndrome HELLP.\n\nFISIOPATOLOGIA:\nA base da pré-eclâmpsia reside em uma falha na placentação. Em uma gestação normal, ocorre a invasão trofoblástica das artérias espiraladas uterinas em duas ondas. A segunda onda, que ocorre entre 16 e 20 semanas, é responsável por destruir a camada musculoelástica desses vasos, transformando-os em tubos de grande calibre, baixa resistência e alta capacitância. Na pré-eclâmpsia, essa invasão é deficiente, mantendo a alta resistência vascular.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (INCORRETA): Esta alternativa descreve o que ocorre em uma gestação saudável. Na pré-eclâmpsia, a invasão trofoblástica é reduzida e a resistência das artérias espiraladas permanece elevada.\n\nAlternativa B (CORRETA): Representa a alteração fundamental da doença. A falha no remodelamento vascular das artérias espiraladas resulta em uma placenta mal perfundida e em estado de hipóxia. Essa hipóxia placentária estimula a liberação de fatores antiangiogênicos (como sFlt-1 e endoglina solúvel) na circulação materna, que causam a disfunção endotelial sistêmica, hipertensão e as lesões de órgãos-alvo descritas no caso.\n\nAlternativa C (INCORRETA): Ocorre o oposto. Há uma redução do fluxo uteroplacentário e uma vasoconstrição sistêmica generalizada, que é a marca da doença hipertensiva na gestação.\n\nAlternativa D (INCORRETA): A isquemia placentária gera um aumento significativo do estresse oxidativo, com produção de radicais livres que contribuem para a inflamação sistêmica e lesão do endotélio materno.\n\nAlternativa E (INCORRETA): A pré-eclâmpsia está associada à insuficiência placentária, o que geralmente resulta em Restrição de Crescimento Intrauterino (RCIU) e oligodrâmnio, e não em macrossomia fetal. A macrossomia é tipicamente associada ao Diabetes Gestacional por hiperinsulinismo fetal.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:23.680Z"
+  },
+  {
+    "id": "AJUDA_12dc268f-3e3a-49c5-9175-129143479b22",
+    "originalId": "12dc268f-3e3a-49c5-9175-129143479b22",
+    "statement": "Mulher, 26 anos, previamente saudável, procura atendimento em um posto de saúde com queixa de disúria, aumento da frequência miccional e dor suprapúbica há 2 dias. Nega febre, calafrios ou dor lombar. Relata que teve relações sexuais há 3 dias. No exame físico, não há sinais de corrimento vaginal ou irritação vulvar. A análise do sedimento urinário revela leucocitúria e presença de nitritos positivos. Não foram realizados exames de imagem ou urocultura no momento. O diagnóstico e a conduta mais prováveis no caso são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cistite aguda – iniciar nitrofurantoína por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Vulvovaginite – solicitar cultura de secreção vaginal e iniciar tratamento antifúngico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uretrite – solicitar cultura de secreção vaginal e uretral e iniciar azitromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome da bexiga dolorosa – solicitar exame de urina, urocultura e cistoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de cistite aguda não complicada em uma mulher jovem, previamente hígida e não gestante. Os sintomas de disúria, polaciúria e dor suprapúbica de início recente (2 dias), associados à ausência de febre, calafrios ou dor lombar, afastam infecção do trato superior (pielonefrite). O exame de sedimento urinário com leucocitúria e nitrito positivo confirma a presença de bacteriúria por uropatógenos redutores de nitrato (como a Escherichia coli). Em casos típicos de cistite não complicada, a urocultura pré-tratamento não é obrigatória, sendo indicado o início imediato de antibioticoterapia empírica.\n\nAnálise das alternativas:\n\nAlternativa A: Correta. O diagnóstico é cistite aguda não complicada. A nitrofurantoína (100 mg por via oral a cada 12 horas na apresentação de liberação prolongada ou a cada 6 horas na formulação simples, durante 5 dias) é uma das opções de primeira linha recomendadas pelas diretrizes clínicas, pois possui excelente concentração vesical, alta eficácia e baixas taxas de resistência bacteriana.\n\nAlternativa B: Incorreta. A ausência de corrimento vaginal e de irritação vulvar ao exame físico afasta o diagnóstico de vulvovaginite, e a positividade do nitrito na urina ratifica a origem urinária bacteriana da queixa.\n\nAlternativa C: Incorreta. Embora a disúria possa ocorrer na uretrite (geralmente ligada a infecções sexualmente transmissíveis por Chlamydia trachomatis ou Neisseria gonorrhoeae), ela costuma ser acompanhada de corrimento uretral ou secreção vaginal patológica. A presença de dor suprapúbica e nitrito positivo reforça o acometimento vesical por enterobactérias, não justificando o uso isolado de azitromicina.\n\nAlternativa D: Incorreta. A síndrome da bexiga dolorosa (cistite intersticial) é uma condição crônica caracterizada por desconforto vesical persistente por meses, na ausência de infecção urinária ativa documentada. O caso em questão é agudo e tem causa infecciosa bacteriana evidente, não havendo qualquer indicação de cistoscopia neste contexto.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Urologia",
+      "ITU - Infecção do Trato Urinário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:23.680Z"
+  },
+  {
+    "id": "AJUDA_12e4ef57-1701-48df-86dc-36222c9976ce",
+    "originalId": "12e4ef57-1701-48df-86dc-36222c9976ce",
+    "statement": "De acordo com as técnicas cirúrgicas utilizadas em bariátricas, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cirurgia de Sleeve é considerada restritiva e metabólica, nela o estômago é transformado em um tubo, com capacidade de 400 a 500 ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bypass gástrico é a técnica bariátrica mais praticada no Brasil, correspondendo a 75% das cirurgias realizadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Banda gástrica ajustável ainda é amplamente utilizada, apesar de ter sido uma das primeiras técnicas criadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Duodenal Switch é a associação entre gastrectomia vertical e banda gástrica ajustável.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Incorreta. A Gastrectomia Vertical (Sleeve) é, de fato, uma técnica restritiva e metabólica, pois promove a redução de hormônios como a grelina. Entretanto, o erro da alternativa está na capacidade gástrica residual citada. Após o Sleeve, o estômago assume um formato tubular com capacidade aproximada de 100 a 200 mL, e não de 400 a 500 mL, volume que seria excessivo para o propósito da cirurgia.\n\nAlternativa B: Correta. O Bypass Gástrico em Y de Roux (técnica de Fobi-Capella) é tradicionalmente a cirurgia bariátrica mais realizada no Brasil. Dados da Sociedade Brasileira de Cirurgia Bariátrica e Metabólica (SBCBM) historicamente apontam que essa técnica corresponde a cerca de 75% dos procedimentos feitos no país, sendo considerada o padrão-ouro devido à sua segurança e eficácia no controle de comorbidades como o diabetes tipo 2.\n\nAlternativa C: Incorreta. A Banda Gástrica Ajustável, embora tenha sido muito popular no passado por ser um procedimento simples e reversível, não é mais amplamente utilizada. Ela caiu em desuso devido às altas taxas de complicações a longo prazo, como deslizamento da banda, erosão gástrica e reoperação, além de apresentar resultados de perda de peso inferiores ao Bypass e ao Sleeve.\n\nAlternativa D: Incorreta. O Duodenal Switch é uma técnica que associa a Gastrectomia Vertical (Sleeve) a um desvio intestinal complexo, conhecido como derivação biliopancreática. A alternativa descreve erroneamente a técnica como a associação entre gastrectomia vertical e banda gástrica ajustável, o que não corresponde à anatomia desse procedimento disabsortivo.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:23.680Z"
+  },
+  {
+    "id": "AJUDA_12f2696e-fd1c-4dd4-a8a1-dab0a5307c53",
+    "originalId": "12f2696e-fd1c-4dd4-a8a1-dab0a5307c53",
+    "statement": "Homem, recém-chegado ao pequeno município de Siriri, estava em seu domicílio quando, repentinamente, “passou mal”. Foi levado por familiares à única unidade de saúde do município. O médico, prontamente, verificou que o homem já havia morrido, não havendo nenhum registro deste na unidade. A família relatou que, há algum tempo, o paciente disse que “estava com diabetes”. Na ausência de sinais externos de violência e não dispondo a localidade de Serviço de Verificação de Óbito, o médico decidiu emitir a declaração de óbito.\n\nCom essas informações, é correto o seguinte preenchimento da declaração de óbito:\n\nObservação: Se o médico não prestou assistência ao paciente em vida, deve deixar o bloco em branco.",
+    "options": [],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda as normas de preenchimento da Declaração de Óbito (DO) em situações de morte natural sem assistência médica e em localidades sem Serviço de Verificação de Óbito (SVO).\n\nDe acordo com o Ministério da Saúde e o Conselho Federal de Medicina, quando ocorre uma morte natural e não há SVO na localidade, qualquer médico da cidade (geralmente o médico da rede pública local) pode e deve emitir a Declaração de Óbito. No caso relatado, o paciente teve uma morte súbita e não havia registro clínico prévio na unidade de saúde.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Como o médico não acompanhou o paciente e não há exames ou autópsia que definam o mecanismo terminal da morte, a causa imediata na Parte I (linha a) deve ser preenchida como Causa da morte desconhecida. A informação fornecida pela família sobre o diabetes deve constar na Parte II, que é o local destinado a estados patológicos pré-existentes que podem ter contribuído para o óbito, mas não entraram na sequência direta da causa da morte. O uso do termo (sic) indica que a informação foi relatada por terceiros, já que não há comprovação documental.\n\nAlternativa B (Incorreta): O campo Parte II da Declaração de Óbito é destinado a informações clínicas (doenças ou estados mórbidos). Óbito sem assistência médica é uma circunstância do falecimento e não uma doença ou causa contribuinte a ser registrada neste espaço.\n\nAlternativa C (Incorreta): Ao colocar o Diabetes Mellitus na linha b da Parte I, o médico estaria afirmando que o diabetes foi a causa básica que levou a uma causa desconhecida (linha a). Não há nexo causal ou lógico para estruturar o preenchimento desta forma, especialmente sem registros médicos que confirmem a doença e sua gravidade.\n\nAlternativa D (Incorreta): Embora a observação da questão diga para deixar o bloco de assistência médica em branco (referindo-se ao campo específico sobre se o paciente recebeu assistência médica durante a última doença), as causas de óbito (Parte I e II) precisam ser preenchidas com as informações disponíveis, mesmo que seja para declarar a causa como desconhecida.\n\nAssociação com as imagens:\nA imagem A reflete exatamente a conduta técnica correta: admite a ignorância sobre a causa imediata (Parte I) e anota a informação epidemiológica relevante relatada pela família (Parte II), resguardando o médico com o uso do termo (sic). As demais imagens (B, C e D) apresentam erros técnicos de preenchimento ou omissão de informações relevantes para a vigilância epidemiológica.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sistemas de Informação em Saúde",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:23.680Z"
+  },
+  {
+    "id": "AJUDA_13002957-0aad-4532-95bf-db53df3b5f26",
+    "originalId": "13002957-0aad-4532-95bf-db53df3b5f26",
+    "statement": "Entre os objetivos e usos da vigilância em saúde pública estão:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Identificar, quantificar e monitorar as tendências e padrões do processo saúde-doença nas populações.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Detectar mudanças crônicas na ocorrência e na distribuição das doenças.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar mudanças nos padrões de ocorrência dos agentes e hospedeiros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Investigar mesmo sem ter como controlar as doenças.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "RESPOSTA COMENTADA\n\nA vigilância em saúde é definida como um processo contínuo e sistemático de coleta, consolidação, análise e disseminação de dados sobre eventos relacionados à saúde. O seu principal propósito é fornecer informações precisas para que gestores e profissionais possam planejar e executar ações de prevenção e controle.\n\nAlternativa A: Está correta. Esta alternativa sintetiza os objetivos principais da vigilância epidemiológica. Para intervir em uma população, é necessário primeiro identificar quem são os doentes, quantificar a magnitude do agravo (incidência e prevalência) e observar como a doença se comporta ao longo do tempo (tendências) e em diferentes regiões ou grupos sociais (padrões).\n\nAlternativa B: Está incorreta. A vigilância deve ser capaz de detectar qualquer alteração no perfil epidemiológico, com especial ênfase em mudanças agudas e bruscas, como surtos e epidemias. Restringir o objetivo apenas a mudanças crônicas tornaria o sistema ineficaz para a resposta rápida que a saúde pública exige.\n\nAlternativa C: Está incorreta. A vigilância é uma ferramenta de observação e diagnóstico situacional. Ela fornece os dados, mas não é ela quem realiza as mudanças nos agentes ou hospedeiros. Quem promove essas mudanças são as intervenções diretas, como campanhas de vacinação, tratamento de doentes, controle de vetores e saneamento básico, que são guiadas pelos dados da vigilância.\n\nAlternativa D: Está incorreta. Um conceito fundamental na saúde coletiva é o de informação para a ação. Os sistemas de vigilância existem para subsidiar o controle de doenças. Investigar um agravo sem qualquer perspectiva ou capacidade de intervir (seja na prevenção, no tratamento ou na mitigação de danos) não condiz com as prioridades e o uso racional de recursos da saúde pública.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:08:23.680Z"
+  }
+]

@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_a1972cb9-f022-48aa-954d-8e429bb8130e",
+    "originalId": "a1972cb9-f022-48aa-954d-8e429bb8130e",
+    "statement": "Paciente de 65 anos, com histórico de cirurgia abdominal prévia, é admitido no pronto-socorro com quadro de dor e distensão abdominal, náuseas e vômitos biliosos há 48 horas. Ao exame físico, apresenta desidratação e o abdome está distendido com ruídos hidroaéreos diminuídos. A gasometria arterial revela: pH: 7,52; PaCO2: 52mmHg; HCO3¯: 39mEq/L; CI: 88mEq/L; K⁺: 3,2mEq/L; Na*: 135mEq/L. Qual é o DISTÚRBIO ÁCIDO-BASE PRIMÁRIO e a CAUSA MAIS PROVÁVEL, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alcalose metabólica com ânion-gap normal, causada por provável diarreia associada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alcalose metabólica e acidose respiratória, causada por insuficiência respiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alcalose metabólica hipoclorêmica, causada por perda de ácido gástrico e fluidos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Alcalose respiratória, causada por hiperventilação compensatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DOS DADOS DO CASO CLÍNICO\n\nO paciente apresenta um quadro clínico de obstrução intestinal (dor, distensão, vômitos e história de cirurgia prévia sugerindo bridas). Os exames laboratoriais revelam:\n1. pH 7,52: Indica alcalemia (pH acima de 7,45).\n2. HCO3- 39 mEq/L: Elevado, confirmando que o distúrbio primário é uma alcalose metabólica.\n3. PaCO2 52 mmHg: Elevada como resposta compensatória à alcalose metabólica (o centro respiratório reduz a ventilação para reter CO2 e tentar acidificar o sangue).\n4. Cloro 88 mEq/L e Potássio 3,2 mEq/L: Estão baixos (hipocloremia e hipocalemia).\n\nFISIOPATOLOGIA DA ALCALOSE NO QUADRO OBSTRUTIVO\n\nNos quadros de vômitos persistentes ou aspiração gástrica excessiva, ocorre perda de ácido clorídrico (HCl). A perda de íons H+ gera a alcalose, enquanto a perda de cloro (Cl-) gera a hipocloremia. Para compensar a perda de líquidos e a desidratação, o rim ativa o sistema renina-angiotensina-aldosterona. A aldosterona tenta reabsorver sódio e água, mas para isso precisa excretar íons potássio e H+ na urina, o que agrava ainda mais a alcalose e gera a hipocalemia (o chamado distúrbio de alcalose metabólica hipoclorêmica e hipocalêmica).\n\nANALISE DAS ALTERNATIVAS\n\nAlternativa a: Incorreta. A diarreia tipicamente causa acidose metabólica com anion gap normal (pela perda de bicarbonato nas fezes), e não alcalose. O quadro do paciente é de vômitos superiores.\n\nAlternativa b: Incorreta. Embora a PaCO2 esteja elevada (52 mmHg), isso não configura uma acidose respiratória primária ou insuficiência respiratória neste contexto. Trata-se de uma compensação respiratória esperada e fisiológica para a alcalose metabólica primária.\n\nAlternativa c: Correta. O distúrbio primário é a alcalose metabólica, identificada pelo pH elevado e HCO3 elevado. A causa é a perda de suco gástrico rico em cloro e hidrogênio através dos vômitos decorrentes da obstrução intestinal, caracterizando a alcalose metabólica hipoclorêmica.\n\nAlternativa d: Incorreta. A alcalose respiratória ocorreria se o pH estivesse elevado devido a uma PaCO2 baixa (hiperventilação). No caso, a PaCO2 está alta, o que descarta essa hipótese. Além disso, a compensação da alcalose metabólica é a hipoventilação (aumento do CO2), e não a hiperventilação.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Análise da Gasometria Arterial",
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:03.794Z"
+  },
+  {
+    "id": "AJUDA_a19d9c7d-8d67-469e-8bf7-4bc70a949536",
+    "originalId": "a19d9c7d-8d67-469e-8bf7-4bc70a949536",
+    "statement": "Paciente de 65 anos, em acompanhamento em Unidade Básica de Saúde, retorna para sua consulta anual e relata piora de sintomas do trato urinário inferior, como jato urinário fraco, disúria e noctúria. O exame de toque evidencia próstata aumentada, de consistência elástica e superfície lisa. O PSA total (antígeno prostático específico), realizado há 2 semanas, revela o valor de 6,5 ng/mL (VR: até 4,0 ng/mL). Qual exame deve ser solicitado para comprovar a especificidade diagnóstica nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "PSA fração total e livre.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ultrassonografia transretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tomografia contrastada de pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Biópsia transretal de próstata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O paciente tem sintomas obstrutivos e irritativos do trato urinário inferior (jato fraco, disúria, noctúria) e toque retal com próstata aumentada, elástica e lisa. Esses achados sugerem hiperplasia prostática benigna (HPB), sem nódulos ou endurecimento que indiquem neoplasia. O PSA total de 6,5 ng/mL está na chamada \"zona cinzenta\" (4 a 10 ng/mL).\n\nO PSA é específico da próstata, mas não do câncer. Ele se eleva também na HPB, na prostatite, após manipulação uretral, ejaculação recente e retenção urinária. Na zona cinzenta, a probabilidade de câncer gira em torno de 25%. Assim, a maioria das biópsias feitas apenas com base no PSA total seria negativa.\n\nPara aumentar a especificidade, usa-se a relação entre PSA livre e PSA total. No câncer de próstata, predomina o PSA ligado a proteínas (complexado), e a fração livre fica proporcionalmente menor.\n- Relação PSA livre/total abaixo de 10 a 15% sugere maior risco de câncer e reforça a indicação de biópsia.\n- Relação acima de 20 a 25% favorece HPB e permite conduta mais conservadora, com seguimento.\n\nOutros recursos que refinam a interpretação são a densidade do PSA (acima de 0,15 sugere câncer) e a velocidade do PSA (aumento acima de 0,75 ng/mL/ano).\n\nAnálise das alternativas:\n\na) PSA fração total e livre – CORRETA. É o exame laboratorial simples, barato e disponível na atenção básica que aumenta a especificidade do PSA na zona cinzenta. Ele ajuda a diferenciar HPB de câncer e a decidir sobre a biópsia, evitando procedimentos invasivos desnecessários.\n\nb) Ultrassonografia transretal – INCORRETA. Avalia o volume prostático, o que permite calcular a densidade do PSA, e serve para guiar a biópsia. Porém, tem baixa sensibilidade e especificidade para detectar câncer, pois muitas lesões são isoecoicas. Não é o exame para confirmar a especificidade diagnóstica.\n\nc) Tomografia contrastada de pelve – INCORRETA. Tem baixa resolução para o parênquima prostático e não diferencia HPB de câncer. Seu papel é o estadiamento (linfonodos, extensão local) em pacientes já diagnosticados, sobretudo de alto risco.\n\nd) Biópsia transretal de próstata – INCORRETA neste momento. É o padrão-ouro para o diagnóstico histológico. No entanto, é invasiva e tem riscos (sangramento, infecção, sepse). Não deve ser a primeira etapa diante de PSA na zona cinzenta com toque benigno. Antes, estratifica-se o risco com exames que aumentam a especificidade, como a relação PSA livre/total. A biópsia fica indicada se a relação for baixa ou se houver outros critérios de suspeita.\n\nObservação: na prática atual, a ressonância magnética multiparamétrica da próstata (PI-RADS) também é usada antes da biópsia para selecionar pacientes. Entre as opções apresentadas, porém, a relação PSA livre/total é a resposta esperada.\n\nGabarito: letra A.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:03.794Z"
+  },
+  {
+    "id": "AJUDA_a19dbf45-d180-40c7-b354-573d98178567",
+    "originalId": "a19dbf45-d180-40c7-b354-573d98178567",
+    "statement": "Adolescente de 10 anos iniciou, há 1 semana, com mialgia, principalmente nos membros superiores, e cansaço, mesmo sem esforços; passou a apresentar há 3 dias, febre e dificuldade para engolir alimentos sólidos por dores na garganta e no pescoço. Foi trazido à UPA, tendo-lhe sido prescrita amoxicilina (90 mg/kg/dia) por orofaringe hiperemiada, ambas as tonsilas com exsudato e linfadenopatia cervical posterior. Após 24 horas, não teve mais febre, porém apresentou erupção exantemática macular na face, no abdômen e no tórax anterior. Assinale a alternativa que contempla a hipótese diagnóstica mais provável, os achados laboratoriais relacionados e a conduta mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mononucleose - linfocitose com presença de linfócitos atípicos - Manter amoxicilina e associar aciclovir.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mononucleose - linfocitose com presença de linfócitos atípicos - Suspender amoxicilina e iniciar com medicamentos sintomáticos e repouso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Amigdalite bacteriana - leucocitose com neutrofilia - Substituir amoxicilina por macrolídeo devido à alergia causada pelo medicamento betalactâmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Amigdalite bacteriana - leucopenia - Substituir amoxicilina por amoxicilina-clavulanato.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um adolescente com a tríade clássica da Mononucleose Infecciosa, causada pelo vírus Epstein-Barr (EBV): febre, faringite (com exsudato) e linfadenopatia. Um ponto crucial para o diagnóstico diferencial é a localização da linfadenopatia: na mononucleose, ela é predominantemente cervical posterior ou generalizada, enquanto na faringite estreptocócica é tipicamente cervical anterior. \n\nOutro sinal patognomônico apresentado é o surgimento de um exantema maculopapular após o uso inadvertido de amoxicilina. Esse fenômeno ocorre em cerca de 70% a 90% dos pacientes com mononucleose que utilizam aminopenicilinas, não representando uma alergia real ao medicamento, mas sim uma reação imuno-mediada específica da interação vírus-hospedeiro-droga.\n\nPOR QUE A ALTERNATIVA B ESTÁ CORRETA?\n\nO diagnóstico mais provável é Mononucleose Infecciosa. Laboratorialmente, a doença cursa com leucocitose às custas de linfocitose, com presença de linfócitos atípicos (células de Downey), que são linfócitos T citotóxicos ativados para combater as células B infectadas pelo EBV. Como a etiologia é viral e o exantema foi induzido pelo antibiótico, a conduta adequada é a suspensão da amoxicilina e a instituição de tratamento de suporte (repouso e analgésicos/antitérmicos). O repouso é importante especialmente para evitar a ruptura esplênica em casos de esplenomegalia associada.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa a: Embora o diagnóstico e os achados laboratoriais estejam corretos, a conduta está equivocada. Não há indicação de manter a amoxicilina, pois não se trata de uma infecção bacteriana. O aciclovir não possui benefício clínico comprovado no tratamento da mononucleose em pacientes imunocompetentes.\n\nAlternativa c: O quadro de exantema pós-amoxicilina associado a linfadenopatia posterior e fadiga prolongada (1 semana de sintomas) direciona fortemente para mononucleose, e não amigdalite bacteriana. Além disso, a reação cutânea nesse contexto não deve ser confundida com uma alergia permanente a betalactâmicos.\n\nAlternativa d: A amigdalite bacteriana tipicamente apresenta leucocitose com neutrofilia e desvio à esquerda, e não leucopenia. A substituição por amoxicilina-clavulanato não faria sentido clínico diante de um exantema (que poderia sugerir alergia) ou diante de uma suspeita de mononucleose.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:03.794Z"
+  },
+  {
+    "id": "AJUDA_a1a17fbf-a450-4a11-ae4e-5ab7e1a61a4d",
+    "originalId": "a1a17fbf-a450-4a11-ae4e-5ab7e1a61a4d",
+    "statement": "Um estudo recente publicado na Revista Lancet avaliou o efeito do uso profilático de paracetamol administrado imediatamente após a vacinação infantil sobre febre pós-vacinal e resposta imunológica. Para isso, foram incluídos 459 lactentes saudáveis, que foram aleatoriamente alocados em dois grupos: um grupo recebia paracetamol profilático após cada dose de vacina e o outro não recebia paracetamol profilático.\n\nAinda em relação aos métodos do estudo, os participantes foram recrutados em dez centros na República Tcheca, incluíram apenas lactentes saudáveis e foram randomizados em dois grupos (paracetamol profilático versus não-paracetamol profilático). Não houve uso de placebo e os pais sabiam a qual grupo a criança pertencia. A resposta primária avaliada foi a ocorrência de febre ≥ 38°C após a vacinação. Qual das alternativas descreve corretamente uma característica metodológica importante desse\ndesenho?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Foi um estudo duplo-cego, pois nem pesquisadores nem pais sabiam quem recebeu paracetamol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Foi um estudo cego simples, em que apenas os pais desconheciam a alocação do lactente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Foi um estudo aberto (open-label), pois não houve mascaramento dos pais quanto à intervenção recebida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Foi um estudo quase-experimental, sem randomização formal dos lactentes aos grupos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Enunciado:\nO ponto fundamental para resolver esta questão é identificar os elementos de desenho do estudo citados no texto: houve randomização (os grupos foram sorteados), mas não houve uso de placebo nem mascaramento (o texto afirma que os pais sabiam a qual grupo o lactente pertencia).\n\nAlternativa A (Incorreta): No desenho duplo-cego, nem os participantes (ou seus responsáveis) nem os pesquisadores que avaliam os resultados sabem quem está recebendo a intervenção ou o controle. O enunciado nega essa condição ao afirmar que os pais tinham conhecimento da alocação.\n\nAlternativa B (Incorreta): O estudo cego simples ocorre quando apenas uma das partes envolvidas (geralmente o participante) desconhece qual tratamento está recebendo. Como os pais (responsáveis pelos lactentes) sabiam a qual grupo a criança pertencia devido à ausência de placebo, não houve cegamento simples.\n\nAlternativa C (Correta): Um estudo aberto, ou open-label, caracteriza-se pela ausência de mascaramento. Nele, tanto os pesquisadores quanto os participantes sabem exatamente qual intervenção está sendo administrada. Como o estudo não utilizou placebo e os pais sabiam se o filho recebia ou não o paracetamol, essa é a classificação metodológica correta.\n\nAlternativa D (Incorreta): O termo quase-experimental é reservado para estudos que avaliam o efeito de uma intervenção, mas que não utilizam a randomização (sorteio aleatório) para a composição dos grupos. O enunciado afirma explicitamente que os lactentes foram aleatoriamente alocados, o que define o estudo como um experimento clínico randomizado.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:03.794Z"
+  },
+  {
+    "id": "AJUDA_a1a7f865-2e69-4ff0-952e-d4b94de3df65",
+    "originalId": "a1a7f865-2e69-4ff0-952e-d4b94de3df65",
+    "statement": "Maria, recém-nascida a termo, de cesariana eletiva sem trabalho de parto. Ao nascimento, apresenta taquipneia com frequência respiratória de 80 respirações por minuto, saturação de oxigênio levemente diminuída (92%) e ausculta pulmonar sem ruídos adventícios. A radiografia de tórax mostra hiperinsuflação, horizontalização das costelas e presença de líquido nos pulmões. Sobre o caso, a condição clínica mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Taquipneia Transitória do Recém-Nascido (TTRN).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Síndrome do Desconforto Respiratório do Recém-Nascido (SDR).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pneumonia neonatal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aspiração de mecônio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve uma recém-nascida a termo, nascida por cesariana eletiva sem trabalho de parto, que apresenta taquipneia precoce logo após o nascimento. Os principais achados são a frequência respiratória elevada (80 irpm), saturação marginal e uma radiografia de tórax com sinais de hiperinsuflação e presença de líquido pulmonar (congestão peri-hilar e líquido nas fissuras). Esses dados formam o quadro clássico da Taquipneia Transitória do Recém-Nascido (TTRN).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Taquipneia Transitória do Recém-Nascido (TTRN).\nESTÁ CORRETA. A TTRN, também conhecida como \"pulmão úmido\", ocorre devido ao atraso na reabsorção do líquido pulmonar fetal. O principal fator de risco é o parto cesariano sem trabalho de parto prévio, pois a criança não passa pelo \"aperto\" do canal de parto e não sofre a influência hormonal (catecolaminas e corticoides) que ativa os canais de sódio para drenar o líquido dos alvéolos. A clínica é de taquipneia logo ao nascer, com boa evolução em 24 a 72 horas. O RX mostra hiperinsuflação, trama vascular proeminente e líquido na cisura, exatamente como descrito.\n\nAlternativa b) Síndrome do Desconforto Respiratório do Recém-Nascido (SDR).\nESTÁ INCORRETA. A SDR (antiga Doença da Membrana Hialina) é causada pela deficiência de surfactante e acomete tipicamente recém-nascidos pré-termos (prematuros). Radiologicamente, a SDR apresenta-se com volume pulmonar reduzido (hipoinsuflação), infiltrado reticulogranular difuso e broncogramas aéreos, o que é o oposto da hiperinsuflação e das costelas horizontalizadas descritas no caso da Maria.\n\nAlternativa c) Pneumonia neonatal.\nESTÁ INCORRETA. Embora a pneumonia possa causar taquipneia, ela geralmente está associada a fatores de risco infecciosos, como ruptura prolongada de membranas (bolsa rota), febre materna ou secreção purulenta. Na ausculta pulmonar, frequentemente haveria ruídos adventícios. O padrão radiológico da pneumonia costuma apresentar infiltrados alveolares localizados ou difusos, e não apenas sinais de congestão líquida e hiperinsuflação.\n\nAlternativa d) Aspiração de mecônio.\nESTÁ INCORRETA. A Síndrome de Aspiração de Mecônio (SAM) ocorre em recém-nascidos banhados em líquido amniótico meconial, geralmente associada ao sofrimento fetal e pós-maturidade. Clinicamente, o desconforto é muito mais grave desde o início. O RX na SAM mostra infiltrados grosseiros e irregulares (aspecto em \"pipoca\") entremeados com áreas de atelectasia e hiperinsuflação, um padrão muito mais heterogêneo do que o descrito na questão.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:03.794Z"
+  },
+  {
+    "id": "AJUDA_a1ac0e0e-dbf5-4c99-8e71-da56956efc0a",
+    "originalId": "a1ac0e0e-dbf5-4c99-8e71-da56956efc0a",
+    "statement": "No contexto da Política Nacional de Promoção da Saúde (PNPS) e das diretrizes da Carta de Ottawa, a promoção da saúde de grupos populacionais específicos (como idosos, populações ribeirinhas ou quilombolas) deve basear-se em ações que transcendam a prevenção de doenças. Qual estratégia é considerada fundamental para a eficácia dessas ações junto a esses grupos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Foco exclusivo na mudança de hábitos individuais deletérios, como o tabagismo e o sedentarismo, por meio de palestras educativas verticais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transferência da responsabilidade total do cuidado à saúde para o indivíduo, desonerando o Estado de intervir nos determinantes sociais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Priorização de intervenções biomédicas de alta complexidade para garantir a cura de patologias prevalentes nesses grupos específicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fomento ao empoderamento (empowerment) comunitário, visando aumentar a autonomia e o controle dos sujeitos sobre os determinantes sociais de sua saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Padronização de protocolos assistenciais idênticos para todos os grupos, independentemente das particularidades culturais ou regionais, para garantir a equidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Política Nacional de Promoção da Saúde (PNPS), baseada nas diretrizes da Carta de Ottawa, define a promoção da saúde como o processo de capacitar a comunidade para atuar na melhoria de sua qualidade de vida e saúde, incluindo uma maior participação no controle deste processo. Para grupos em situação de vulnerabilidade ou com especificidades culturais, como quilombolas e ribeirinhos, a ação deve ir além da simples prevenção de doenças.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. O foco exclusivo na mudança de hábitos individuais e o uso de palestras educativas verticais (onde o profissional apenas transmite informação sem ouvir a comunidade) são práticas do modelo tradicional e higienista. A promoção da saúde pressupõe a compreensão de que os hábitos são influenciados pelo meio social e exige um diálogo horizontal.\n\nAlternativa b) Incorreta. A promoção da saúde não exime o Estado de suas responsabilidades. Pelo contrário, ela exige que o Estado intervenha nos determinantes sociais (como saneamento, educação e renda). Atribuir a responsabilidade total ao indivíduo ignora as desigualdades estruturais que impedem as pessoas de serem saudáveis.\n\nAlternativa c) Incorreta. Intervenções de alta complexidade estão ligadas ao modelo biomédico curativo e ao nível terciário de atenção. A promoção da saúde foca nos fatores que determinam a saúde na coletividade, buscando evitar que a população adoeça e melhorar as condições gerais de vida, atuando na base do sistema.\n\nAlternativa d) Correta. O empoderamento (empowerment) é o conceito-chave da Carta de Ottawa e da PNPS. Ele visa fortalecer a autonomia dos sujeitos e das comunidades para que eles possam identificar seus problemas, organizar-se e intervir sobre os determinantes sociais de saúde. Para grupos como idosos ou populações tradicionais, o empoderamento garante que as ações de saúde respeitem sua cultura e necessidades reais.\n\nAlternativa e) Incorreta. A padronização de protocolos para todos os grupos fere o princípio da equidade. Grupos com realidades, culturas e localizações geográficas distintas necessitam de abordagens diferenciadas. A equidade no SUS significa tratar desigualmente os desiguais, na medida de suas necessidades, para alcançar a igualdade de oportunidades em saúde.\n\nGABARITO: Alternativa (d).",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:03.794Z"
+  },
+  {
+    "id": "AJUDA_a1b6d0e9-caa4-418f-88d6-7602c7b8ab8a",
+    "originalId": "a1b6d0e9-caa4-418f-88d6-7602c7b8ab8a",
+    "statement": "Considerando os pontos de vista de Bradford Hill e a evolução da inferência causal em epidemiologia, desde a sua formalização para doenças crônicas, em meados do século XX, até as críticas e refinamentos contemporâneos, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a coerência de uma associação é fortalecida quando diferentes pesquisadores, utilizando metodologias variadas em populações distintas, chegam a conclusões similares sobre a relação entre um fator de exposição e um desfecho, demonstrando a reprodutibilidade dos achados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a analogia, que envolve a comparação com outras relações causais estabelecidas, é considerada um dos pontos de vista mais fortes, pois permite a transferência quantitativa de evidências de uma associação conhecida para uma nova associação sob investigação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a plausibilidade biológica e a coerência de uma associação são pontos de vista inerentemente robustos, pelo estado do conhecimento científico em um determinado momento, de modo que a ausência de um mecanismo conhecido constitui forte evidência contra uma relação causal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a utilização de controles negativos, ou exposições de falsificação, para testar a robustez de uma associação contra fatores de confusão, é um dos nove pontos de vista originais propostos por Hill, sendo um componente central de seu arcabouço para a avaliação da especificidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o critério da temporalidade, que postula que a causa deve preceder o efeito no tempo, é reconhecido como o único ponto de vista conceitualmente indispensável para o estabelecimento de uma relação causal, sendo que sua violação refuta a hipótese causal em uma dada observação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda os critérios (ou pontos de vista) propostos por Austin Bradford Hill em 1965 para avaliar se uma associação estatística observada em estudos epidemiológicos pode ser interpretada como uma relação de causalidade.\n\nAlternativa A: Incorreta. A descrição apresentada refere-se ao critério da Consistência, e não ao da Coerência. A Consistência ocorre quando os mesmos resultados são obtidos por diferentes pesquisadores, em diferentes locais e com diferentes delineamentos de estudo. A Coerência, por sua vez, estabelece que a interpretação de causa e efeito não deve conflitar com os fatos conhecidos da história natural e da biologia da doença.\n\nAlternativa B: Incorreta. A Analogia é considerada um dos critérios mais fracos de Hill. Ela sugere que, se uma exposição similar causa um desfecho conhecido (ex.: talidomida causando malformações), é razoável considerar que uma nova exposição similar possa causar desfechos semelhantes. Ela não permite transferência quantitativa de evidências, servindo mais como um exercício de inferência qualitativa.\n\nAlternativa C: Incorreta. Hill argumentava que a Plausibilidade Biológica é limitada pelo estado do conhecimento científico da época. Portanto, a ausência de um mecanismo biológico conhecido no momento da investigação não deve ser usada para descartar uma relação causal, pois a ciência pode ainda não ter descoberto tal mecanismo (como ocorreu inicialmente na relação entre cigarro e câncer de pulmão).\n\nAlternativa D: Incorreta. Embora o uso de controles negativos e de exposições de falsificação seja uma ferramenta contemporânea valiosa na epidemiologia moderna para testar a robustez de associações, esses elementos não faziam parte dos nove pontos de vista originais descritos por Hill em seu artigo de 1965. O critério da Especificidade original de Hill sugeria que uma causa levaria a um único efeito, um conceito hoje considerado limitado para doenças crônicas.\n\nAlternativa E: Correta. Entre todos os pontos de vista de Hill, a Temporalidade é o único consenso absoluto e indispensável. Para que um fator seja considerado causa, ele deve obrigatoriamente preceder o surgimento do efeito (desfecho). Se o desfecho ocorre antes ou simultaneamente à exposição em uma observação específica, a hipótese de causalidade direta para aquele caso é necessariamente refutada. Todos os outros critérios de Hill são guias que auxiliam o raciocínio, mas não são obrigatórios.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:03.794Z"
+  },
+  {
+    "id": "AJUDA_a1b9f880-2eb8-476e-a25d-a8867382a45c",
+    "originalId": "a1b9f880-2eb8-476e-a25d-a8867382a45c",
+    "statement": "A acne é uma doença causada por um distúrbio multifatorial da unidade pilossebácea, caracterizada pela presença de comedões, pápulas, pústulas e nódulos. A apresentação clínica pode variar de um quadro comedônico, não inflamatório, até a uma doença inflamatória, com manifestações sistêmicas, chamada de acne fulminante. Sua importância também é dada pela alta prevalência, afetando aproximadamente 85% das pessoas, com pico de incidência durante a adolescência, sendo uma das queixas mais frequentes nos consultórios pediátricos e dermatológicos. Sobre acne na pediatria, o item mais assertivo é",
+    "options": [
+      {
+        "id": "A",
+        "text": "acne neonatal é a acne que se desenvolve em recém-nascidos do nascimento até a 6ª semana, e é mais frequente em meninas e parece decorrer da estimulação hormonal das glândulas sebáceas por andrógenos endógenos, somente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "acne infantil é a acne que se inicia entre 1 e 7 anos de idade, ela é bastante comum e dificilmente há suspeita de endocrinopatia. A avaliação apropriada deve incluir doença de Cushing, tumores virilizantes e hiperplasia suprarrenal congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "acne do pré-adolescente ocorre entre 7 e 11 anos de idade e sinaliza o despertar das glândulas adrenais. Nos últimos anos, esse distúrbio vem sendo observado cada vez mais raros em crianças e nunca mostram alterações hormonais patológicas associadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "acne do lactente acomete menos de 2% das crianças dessa faixa etária, é mais comum nos meninos. Inicia-se geralmente entre 6 semanas e 1 ano de idade, com pápulas inflamatórias em região malar, podendo ter comedões verdadeiros e pouca frequência de lesões em mento e dorso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. A acne neonatal (ou pustulose cefálica neonatal) é mais frequente em meninos, e não em meninas. Além disso, sua patogenia não se limita apenas aos andrógenos endógenos; envolve a estimulação das glândulas sebáceas por hormônios maternos e a colonização da pele por leveduras do gênero *Malassezia*.\n\nAlternativa b: Incorreta. A acne que ocorre entre 1 e 7 anos de idade (acne da infância média) é considerada rara. Quando presente, ela é altamente suspeita de patologias endócrinas. A alternativa erra ao dizer que ela é comum e que dificilmente há suspeita de endocrinopatia, quando, na verdade, a investigação hormonal é mandatória nesse grupo.\n\nAlternativa c: Incorreta. A acne do pré-adolescente tem se tornado cada vez mais comum devido à tendência de adrenarca e puberdade precoces. Dizer que esse distúrbio é raro é incorreto. Além disso, embora muitas vezes seja fisiológica, pode sim estar associada a alterações hormonais patológicas, como a Síndrome dos Ovários Policísticos em meninas.\n\nAlternativa d: Correta. A acne do lactente (*infantile acne*) surge geralmente após a 6ª semana de vida, podendo ir até o primeiro ano. É mais comum em meninos devido ao pico de testosterona típico dessa fase (minipuberdade). Clinicamente, apresenta pápulas e pústulas inflamatórias, mas sua marca registrada é a presença de comedões verdadeiros, o que a diferencia da acne neonatal. A localização preferencial é a face (região malar).",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Miscelânea",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:03.794Z"
+  },
+  {
+    "id": "AJUDA_a1bf700f-2819-4014-875c-c3e94b50160c",
+    "originalId": "a1bf700f-2819-4014-875c-c3e94b50160c",
+    "statement": "Um homem de 52 anos de idade, tabagista com 30 anos/maço, diabético e dislipidêmico, dirigiu-se ao pronto-socorro com dor precordial, inespecífica, sem irradiação, que se iniciou há 10 minutos, ao levantar uma caixa, com sudorese a mal-estar associado. Foi realizado eletrocardiograma (apresentado a seguir) e troponina (dentro do valor de referência/ normal). Com base nessa situação hipotética, e na imagem acima, assinale a alternativa que apresenta a conduta adequada para essa situação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de um caso de angina, porém sem infarto agudo do miocárdio. O paciente deverá realizar um teste ergométrico ambulatorialmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O paciente deverá ser submetido à angioplastia primária, por se tratar de um infarto com supra de seguimento ST de V2 a V4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deverá ser mantido no pronto-socorro para seriar eletrocardiograma e troponina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de um caso de angina, porém sem infarto agudo do miocárdio. O paciente deverá realizar angiotomografia de coronárias ambulatorialmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O paciente deverá ser submetido à trombólise química devido a infarto agudo do miocárdio sem critérios para angioplastia primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um perfil de alto risco cardiovascular (52 anos, tabagista, diabético e dislipidêmico) e chega ao pronto-socorro com dor precordial iniciada há apenas 10 minutos, desencadeada por esforço físico e acompanhada de sintomas autonômicos (sudorese e mal-estar). Esse quadro é altamente sugestivo de Síndrome Coronariana Aguda (SCA).\n\nInterpretação do Eletrocardiograma (ECG):\n\nAo observar a imagem, notamos que o ritmo é sinusal e a frequência cardíaca está normal. O ponto fundamental está nas derivações precordiais, especialmente de V2 a V4. Observam-se ondas T amplas, simétricas e de base larga (ondas T hiperagudas). Estas alterações são o sinal mais precoce de um Infarto Agudo do Miocárdio (IAM), surgindo nos primeiros minutos de isquemia, antes mesmo do supradesnivelamento do segmento ST clássico.\n\nAnálise das alternativas:\n\na) Incorreta. Não se pode afirmar que se trata apenas de angina sem infarto com base em uma única coleta de troponina realizada apenas 10 minutos após o início da dor. A troponina demora, em média, de 2 a 4 horas para começar a se elevar no sangue. Liberar o paciente para teste ergométrico ambulatorial com dor ativa e ECG alterado seria um erro grave e perigoso.\n\nb) Incorreta. Embora as ondas T hiperagudas sugiram isquemia aguda, elas ainda não preenchem os critérios clássicos de supradesnivelamento do segmento ST (geralmente >= 1mm em duas derivações contíguas, ou critérios específicos para V2-V3 conforme idade e sexo) que autorizariam a abertura imediata do protocolo de angioplastia primária. A conduta inicial correta é a observação e repetição dos exames para documentar a evolução.\n\nc) Correta. Diante de um quadro clínico suspeito, iniciado há pouquíssimo tempo, com troponina inicial normal e ECG com alterações precoces (ondas T hiperagudas), a conduta preconizada pelos protocolos de dor torácica é a manutenção do paciente em ambiente monitorizado para a realização de ECG seriado (a cada 15-30 minutos ou se houver modificação da dor) e nova coleta de marcadores de necrose miocárdica (curva de troponina). Isso permite flagrar a evolução para um infarto com supra de ST ou confirmar um infarto sem supra de ST.\n\nd) Incorreta. Assim como na alternativa A, o paciente apresenta critérios de instabilidade e suspeita de evento agudo em curso. Encaminhá-lo para exames ambulatoriais como a angiotomografia sem antes descartar um infarto em ambiente hospitalar expõe o paciente a risco de morte súbita.\n\ne) Incorreta. A trombólise química só está indicada em casos de infarto com supradesnivelamento do segmento ST quando a angioplastia primária não puder ser realizada no tempo adequado. O ECG atual ainda não mostra o supra de ST definido, e a conduta imediata é a seriação para confirmar o diagnóstico.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": 76.7486654121222,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/87a42a92bf5b1a06bea2d5ae83bbccf6f92da750275a6f3cef8282d8995a6167.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_a1bf700f-2819-4014-875c-c3e94b50160c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:04.262Z"
+  },
+  {
+    "id": "AJUDA_a1c51c4f-1a94-4acc-862a-16fee8199d53",
+    "originalId": "a1c51c4f-1a94-4acc-862a-16fee8199d53",
+    "statement": "Uma família recebe visita domiciliar do agente comunitário da saúde (ACS) devido à situação de não comparecimento de uma criança de 2 anos para atualização das vacinas, conforme o Plano Nacional de Imunização (PNI), e ao fato de não estar frequentando a creche. A mãe da criança tem 17 anos e informa que não está levando o filho à creche, pois não está aguentando o fardo do cuidado desde o assassinato do pai da criança, ocorrido na comunidade onde residem. Considerando o caso descrito, o diagnóstico de violência e a conduta, respectivamente, devem ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "estrutural e abuso emocional / intervenção na família",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "familiar e negligência / ações de monitoramento e de apoio à mãe",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "interpessoal e abuso psicológico / acionamento do conselho tutelar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "doméstica e física / ampliação da rede de apoio para amparo da mãe",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\nO cenário descreve uma criança de 2 anos com atraso vacinal e ausência na creche, o que configura a privação de direitos e cuidados essenciais para seu desenvolvimento. A mãe, uma adolescente de 17 anos, relata sobrecarga e sofrimento psíquico devido ao assassinato do pai da criança. Esses elementos direcionam o diagnóstico para a negligência no âmbito familiar, exacerbada por uma situação de vulnerabilidade social e luto.\n\nPOR QUE A ALTERNATIVA B ESTÁ CORRETA?\nA negligência é a forma de violência caracterizada pela omissão dos pais ou responsáveis em prover as necessidades básicas para o desenvolvimento da criança, incluindo saúde (vacinação), educação (creche) e proteção. Como essa omissão ocorre dentro da relação de cuidado entre mãe e filho, classifica-se como violência familiar. A conduta adequada na Atenção Primária, conforme os protocolos de proteção à criança e ao adolescente, deve focar na abordagem multicausal: a equipe de saúde deve monitorar o caso e oferecer suporte à mãe, que é adolescente e está em sofrimento, visando fortalecer o vínculo e a capacidade de cuidado para que os direitos da criança sejam restabelecidos.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\nA) A violência estrutural refere-se a desigualdades sociais, econômicas e políticas enraizadas no sistema (como a falta de acesso a serviços públicos), não sendo o diagnóstico específico do ato de não vacinar ou não levar à creche. O abuso emocional envolve comportamentos ativos de rejeição, humilhação ou amedrontamento, enquanto o caso clínico descreve uma falha por omissão (negligência).\n\nC) Embora o termo interpessoal possa ser aplicado, o diagnóstico de abuso psicológico não é o mais preciso para a privação de cuidados básicos, como vacinas e educação. Além disso, em casos em que a negligência é fruto de uma crise situacional e da vulnerabilidade da cuidadora (mãe adolescente e enlutada), o acionamento isolado do Conselho Tutelar sem o apoio da rede de saúde à família é uma conduta incompleta sob a ótica da saúde pública.\n\nD) O diagnóstico de violência física é incorreto, pois não há qualquer relato de agressão, lesão corporal ou uso de força física contra a criança. O problema identificado reside exclusivamente na falta de assistência e provimento de necessidades básicas.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Medicina de Família e Comunidade",
+      "Segurança na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:04.262Z"
+  }
+]

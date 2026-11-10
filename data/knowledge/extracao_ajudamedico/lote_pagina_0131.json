@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_23aca642-2831-4977-9edf-256dd7c4571e",
+    "originalId": "23aca642-2831-4977-9edf-256dd7c4571e",
+    "statement": "Adolescente de 14 anos evoluiu com hepatotoxicidade, no 10º dia de tratamento para tuberculose com esquema RIPE, o que levou à suspensão de seu tratamento por 20 dias. \nNa condução clínica, após melhora das transaminases, a melhor conduta é a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Refazer teste tuberculínico, Rx de tórax e cultura de escarro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento deve ser reiniciado com as drogas previamente usadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento deve ser substituído por outros fármacos tuberculostáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O esquema deve ser reintroduzido após avaliação de exame de sensibilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O tratamento deve ser reintroduzido na sequência R/E/I/P e acrescentado 20 dias do esquema suspenso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A hepatotoxicidade é a reação adversa mais comum do esquema RIPE. Segundo as diretrizes brasileiras, diante de níveis de transaminases elevados (3x o valor de referência com sintomas ou 5x sem sintomas), deve-se suspender o tratamento imediatamente. Após a melhora clínica e laboratorial (geralmente quando as transaminases retornam para níveis abaixo de 2x o limite superior da normalidade), o esquema deve ser reintroduzido de forma escalonada para identificar o agente causador da toxicidade.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O diagnóstico de tuberculose já foi estabelecido. Repetir exames como PPD, raio X ou cultura não auxilia no manejo da hepatotoxicidade nem na estratégia de reintrodução medicamentosa. O foco deve ser a retomada segura da terapia.\n\nAlternativa b: Incorreta. Não se deve reiniciar todos os fármacos simultaneamente na dose total. A reintrodução deve ser gradual para que, caso as enzimas hepáticas voltem a subir, o médico saiba exatamente qual droga provocou a nova lesão.\n\nAlternativa c: Incorreta. A substituição por esquemas alternativos (fármacos de segunda linha ou esquemas especiais) só é indicada em casos de hepatopatia grave prévia ou quando o paciente não tolera a reintrodução sequencial do esquema padrão.\n\nAlternativa d: Incorreta. O teste de sensibilidade é utilizado para avaliar a resistência do bacilo aos antibióticos. A hepatotoxicidade é um efeito colateral metabólico do paciente e não tem relação com a sensibilidade da bactéria às drogas.\n\nAlternativa e: Correta. De acordo com o Manual de Recomendações para o Controle da Tuberculose no Brasil, a reintrodução deve ser sequencial. Inicia-se com Rifampicina (R) e Etambutol (E) juntos, por serem os menos hepatotóxicos (ou não hepatotóxico, no caso do E). Após 3 a 7 dias sem novas alterações, acrescenta-se a Isoniazida (I). Por fim, após mais 3 a 7 dias, acrescenta-se a Pirazinamida (P), que é o fármaco mais associado à toxicidade hepática. O tempo em que o tratamento ficou suspenso (20 dias) deve ser somado ao final do cronograma para compensar a interrupção.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Tuberculose",
+      "Tuberculose na Infância"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:17:22.763Z"
+  },
+  {
+    "id": "AJUDA_23b7f661-bac0-46a7-999d-6a9945b0a47a",
+    "originalId": "23b7f661-bac0-46a7-999d-6a9945b0a47a",
+    "statement": "A forma mais comum de cardiopatia congênita é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coarctação da aorta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Comunicação Interventricular (CIV).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tetralogia de Fallot.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transposição das grandes artérias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Comunicação Interventricular (CIV) é amplamente reconhecida na literatura médica como a cardiopatia congênita mais frequente em todo o mundo, excluindo-se a valva aórtica bicúspide (que muitas vezes é considerada uma variante anatômica por ser assintomática na infância). A CIV representa cerca de 25% a 30% de todos os defeitos cardíacos congênitos. Ela se caracteriza por um orifício no septo que divide os ventrículos, permitindo a passagem de sangue do ventrículo esquerdo para o ventrículo direito (shunt esquerda-direita).\n\nAnálise das alternativas:\n\na) Incorreta. A coarctação da aorta consiste em um estreitamento da aorta, geralmente próximo ao canal arterial. Embora seja uma patologia importante e frequentemente associada a outras condições (como a Síndrome de Turner), sua incidência gira em torno de 5% a 8% das cardiopatias congênitas, sendo muito menos comum que a CIV.\n\nb) Correta. A CIV é o defeito cardíaco mais comum ao nascimento. É importante lembrar que muitas CIVs são pequenas e podem fechar espontaneamente nos primeiros anos de vida, mas, em termos de prevalência diagnóstica global, esta é a alternativa correta.\n\nc) Incorreta. A Tetralogia de Fallot é a cardiopatia congênita cianótica mais comum após o período neonatal (além do primeiro mês de vida). No entanto, quando comparada às cardiopatias acianóticas (como a CIV), sua frequência é consideravelmente menor.\n\nd) Incorreta. A Transposição das grandes artérias é a cardiopatia cianótica mais comum que se manifesta precocemente, logo nas primeiras horas ou dias de vida. Apesar de sua gravidade e importância clínica no berçário, sua ocorrência estatística é baixa em comparação com os defeitos do septo ventricular.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:17:22.763Z"
+  },
+  {
+    "id": "AJUDA_23be365d-3f94-4817-9da2-98a82ea8eba9",
+    "originalId": "23be365d-3f94-4817-9da2-98a82ea8eba9",
+    "statement": "No Brasil, a vacina contra o rotavírus faz parte do Programa Nacional de Imunizações (PNI). Considerando as diretrizes do Ministério da Saúde, qual das seguintes afirmações sobre a vacinação contra o rotavírus em crianças está CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vacina contra o rotavírus é administrada em duas doses, aos 2 e 4 meses de idade, com intervalo mínimo de 30 dias entre as doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vacina contra o rotavírus deve ser administrada por via intramuscular, preferencialmente na região deltoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A vacina contra o rotavírus é contraindicada para crianças com histórico de invaginação intestinal ou alergia a qualquer componente da vacina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A primeira dose da vacina contra o rotavírus deve ser administrada a partir dos 6 meses de idade, juntamente com a vacina contra a poliomielite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Em caso de atraso na administração de uma dose da vacina contra o rotavírus, não é necessário reiniciar o esquema vacinal, devendo-se administrar a dose em atraso o mais breve possível.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta é uma questão que exige conhecimento sobre o Calendário Nacional de Vacinação da Criança e as normas técnicas do Programa Nacional de Imunizações (PNI) para a Vacina Oral de Rotavírus Humano (VORH).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o esquema de rotina seja, de fato, aos 2 e 4 meses de idade e o intervalo mínimo seja de 30 dias, a afirmação é considerada incompleta ou secundária em relação às normas de segurança. O ponto crítico da vacina contra o rotavírus no PNI são os prazos rígidos de idade: a primeira dose só pode ser aplicada de 1 mês e 15 dias até 3 meses e 15 dias. A segunda dose só pode ser aplicada de 3 meses e 15 dias até 7 meses e 29 dias.\n\nAlternativa b) Incorreta. A vacina contra o rotavírus disponível no PNI (VORH) é obrigatoriamente administrada por via oral. Caso a criança cuspa ou vomite após a administração, a norma do PNI recomenda não repetir a dose.\n\nAlternativa c) Correta. Esta alternativa descreve as contraindicações absolutas e específicas da vacina contra o rotavírus. Além da hipersensibilidade a componentes da vacina (comum a todos os imunobiológicos), o histórico de invaginação intestinal (ou intussuscepção) e malformações congênitas do trato gastrointestinal que predisponham à invaginação são contraindicações formais devido ao risco aumentado de eventos adversos graves nessas condições.\n\nAlternativa d) Incorreta. A primeira dose deve ser administrada precocemente. O limite máximo para iniciar o esquema (primeira dose) é, rigorosamente, até os 3 meses e 15 dias de idade. Aos 6 meses, a criança já ultrapassou a idade máxima permitida para a primeira dose.\n\nAlternativa e) Incorreta. Diferentemente da maioria das vacinas do PNI, em que \"dose atrasada é dose aplicada\", a vacina contra o rotavírus possui prazos de validade cronológica rígidos. Se a criança ultrapassar a idade máxima de 3 meses e 15 dias para a primeira dose ou de 7 meses e 29 dias para a segunda dose, a vacina NÃO deve ser administrada, e o esquema é considerado perdido para proteger a segurança do lactente contra o risco de invaginação intestinal.\n\nGabarito: Alternativa (c).",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:17:22.763Z"
+  },
+  {
+    "id": "AJUDA_23c62e57-52b8-4d68-ac11-0a2798453530",
+    "originalId": "23c62e57-52b8-4d68-ac11-0a2798453530",
+    "statement": "Paciente, sexo masculino, 49 anos de idade, tabagista 40 anos-maço, tem hipertensão arterial sistêmica. Faz uso contínuo de amlodipino 5 mg uma vez ao dia. Comparece no departamento de emergência com queixa de dor torácica de forte intensidade iniciada há cerca de 30 minutos. Ao exame: PA de 182x104 mmHg, FC de 114 bpm, FR de 23 ipm, saturação de oxigênio 95% em ar ambiente; sem alterações cardiopulmonares; extremidades frias e sudoreicas. Foram realizados os seguintes exames complementares: \n\nConsiderando a principal hipótese diagnóstica, indique o primeiro medicamento a ser administrado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esmolol intravenoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Nitroprussiato intravenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ácido acetil salicílico oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dinitrato de isossorbida oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico: Dissecção aguda da aorta.\n\nA apresentação clínica de um paciente hipertenso e tabagista com dor torácica súbita e excruciante, associada a níveis tensionais muito elevados (182 x 104 mmHg) e taquicardia (114 bpm), é altamente sugestiva de dissecção da aorta. \n\nAssociação com as imagens: \n1. O raio X de tórax demonstra um alargamento evidente do mediastino, que é o sinal radiográfico clássico da dissecção da aorta.\n2. O eletrocardiograma (ECG) revela uma taquicardia sinusal, sem sinais de supradesnivelamento do segmento ST ou outras alterações isquêmicas agudas que sugerissem um infarto do miocárdio como causa primária.\n\nObjetivo do tratamento:\nNa dissecção aguda da aorta, o objetivo imediato é reduzir a força de contração do ventrículo esquerdo e a velocidade de ejeção do sangue (dP/dt), que são os principais fatores que fazem a dissecção progredir. Para isso, devemos controlar a frequência cardíaca (alvo < 60 bpm) e a pressão arterial sistólica (alvo entre 100 e 120 mmHg).\n\nAnálise das alternativas:\n\na) Esmolol intravenoso: Correta. O betabloqueador intravenoso de ação curta (como o esmolol ou o labetalol) é o primeiro medicamento a ser administrado. Ele reduz a frequência cardíaca e a contratilidade miocárdica, diminuindo o estresse de cisalhamento na parede da aorta. O controle da frequência cardíaca deve sempre preceder a tentativa de baixar a pressão com vasodilatadores isolados.\n\nb) Nitroprussiato intravenoso: Incorreta. Embora o nitroprussiato seja um potente vasodilatador usado para baixar a pressão arterial, ele nunca deve ser usado como primeira droga isolada na dissecção da aorta. O seu uso isolado pode causar taquicardia reflexa e aumentar o dP/dt, o que pode ampliar a dissecção e piorar o quadro do paciente. Ele só deve ser iniciado após o paciente estar adequadamente betabloqueado.\n\nc) Ácido acetilsalicílico (AAS) oral: Incorreta. O AAS é indicado na suspeita de síndrome coronariana aguda. No caso da dissecção da aorta, o AAS e outros antiagregantes ou anticoagulantes são contraindicados, pois aumentam o risco de sangramento e complicações caso o paciente precise de intervenção cirúrgica de emergência.\n\nd) Dinitrato de isossorbida oral: Incorreta. Nitratos orais ou sublinguais não têm papel no manejo agudo da dissecção da aorta, que exige medicações intravenosas para controle pressórico rigoroso e imediato. Além disso, assim como outros vasodilatadores, não tratam a taquicardia, que é um componente crítico da fisiopatologia da doença.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Aórticas Agudas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f09713c7f2eebda68a5ba8e45ac542733826cc54134334ec5389c2a0558cc4ab.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_23c62e57-52b8-4d68-ac11-0a2798453530_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/18d8595e0437fd3906626abdee954430a9012a98747269fd15f48f0faba8aaae.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_23c62e57-52b8-4d68-ac11-0a2798453530_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:17:24.217Z"
+  },
+  {
+    "id": "AJUDA_23ce3be9-6452-4044-b034-60d7c4bdf70a",
+    "originalId": "23ce3be9-6452-4044-b034-60d7c4bdf70a",
+    "statement": "Uma trabalhadora da área Metalúrgica apresentou no Exame Periódico (NR-7), reação cutânea maculopapular, pruriginosa nas orelhas ao nivel do orificio dos brincos, no punho ao usar relógio, ou relacionada com o botão metálico da calça \"jeans\" sugere dermatite de contato por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Niquel",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Cromo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Zinco",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aluminio",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão descreve um quadro clássico de Dermatite de Contato Alérgica (DCA), que é uma reação de hipersensibilidade do tipo IV (tardia), mediada por células T. O diagnóstico é sugerido pela localização das lesões em áreas de contato direto com objetos metálicos específicos: orifícios de brincos, punho (relógio) e região umbilical (botão da calça jeans).\n\nAnálise das alternativas:\n\nAlternativa a) Níquel: Esta é a alternativa correta. O níquel é o sensibilizante mais comum em todo o mundo, afetando uma grande parcela da população, especialmente mulheres. Ele está presente em diversas ligas metálicas utilizadas na fabricação de bijuterias, fivelas de cintos, botões de roupas, moedas e armações de óculos. O quadro clínico descrito, com prurido e erupção maculopapular exatamente nos locais de contato com esses objetos, é a apresentação \"de livro\" da alergia ao níquel.\n\nAlternativa b) Cromo: Incorreta. Embora o cromo (especialmente o dicromato de potássio) seja uma causa frequente de dermatite de contato ocupacional, ele é classicamente associado ao cimento (comum em trabalhadores da construção civil), ao couro (processo de curtimento) e a fluidos de corte na metalurgia. A distribuição das lesões por cromo geralmente envolve as mãos e os pés, não sendo a causa típica para reações a brincos e botões de jeans.\n\nAlternativa c) Zinco: Incorreta. O zinco é raramente um agente causador de dermatite de contato alérgica. Pelo contrário, o óxido de zinco é frequentemente utilizado em pomadas e cremes protetores devido às suas propriedades calmantes e cicatrizantes. Não há correlação epidemiológica ou clínica significativa entre o zinco e a reação descrita nos locais de adornos metálicos.\n\nAlternativa d) Alumínio: Incorreta. O alumínio é um sensibilizador muito raro. Quando ocorre alergia ao alumínio, ela costuma estar relacionada a granulomas em locais de aplicação de vacinas ou, raramente, em desodorantes. Ele não é o metal constituinte principal que causa as reações clássicas em bijuterias e acessórios de vestuário descritas no enunciado.\n\nEm resumo, a topografia das lesões é a chave para a questão. A presença de eczema em áreas de contato com acessórios metálicos deve sempre direcionar a suspeita clínica primária para o níquel.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Dermatoses Eczematosas",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:17:24.217Z"
+  },
+  {
+    "id": "AJUDA_23ceed5e-eb82-46e1-96aa-f0567d9f4474",
+    "originalId": "23ceed5e-eb82-46e1-96aa-f0567d9f4474",
+    "statement": "Uma adolescente de 16 anos relata episódios de cefaleia pulsátil unilateral, precedidos por fenômenos visuais que duram cerca de 20 minutos e desaparecem antes do início da dor. O sintoma mais característico relatado é a presença de “luzes em zig-zag” no campo visual. Estes fenômenos são melhor classificados como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diplopia por paralisia de VI par",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fosfenos por síncope iminente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Escotomas cintilantes",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Nistagmo patológico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Alterações visuais permanentes",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um quadro clássico de migrânea (enxaqueca) com aura. A aura consiste em sintomas neurológicos focais e reversíveis que geralmente precedem a fase de dor. O fenômeno visual relatado pela paciente de 16 anos, com duração de 20 minutos e formato de \"luzes em zigue-zague\", é a manifestação mais comum dessa condição.\n\nAlternativa (a) Incorreta: A paralisia do VI par craniano (nervo abducente) causa diplopia horizontal (visão dupla) por incapacidade de realizar a abdução do olho. É um sinal de comprometimento neurológico que pode indicar hipertensão intracraniana ou neuropatia, não correspondendo ao fenômeno visual de zigue-zague descrito.\n\nAlternativa (b) Incorreta: Embora fosfenos sejam percepções de flashes de luz, eles costumam ser breves e inespecíficos. Na síncope iminente (pré-síncope), o paciente geralmente relata escurecimento visual generalizado (\"visão preta\") ou turvação por hipoperfusão cerebral, e não fenômenos visuais estruturados em zigue-zague seguidos de cefaleia unilateral.\n\nAlternativa (c) Correta: O termo técnico para as luzes em zigue-zague que se expandem no campo visual é \"escotoma cintilante\" ou \"espectro de fortificação\". É o sintoma patognomônico da aura visual da enxaqueca. Tipicamente, dura entre 5 e 60 minutos e é seguido por uma cefaleia pulsátil, frequentemente unilateral, o que preenche exatamente os critérios diagnósticos apresentados no caso.\n\nAlternativa (d) Incorreta: O nistagmo é um movimento involuntário, rítmico e oscilatório dos olhos. É um sinal objetivo observado pelo médico durante o exame físico e não uma queixa subjetiva de percepção de luzes pelo paciente.\n\nAlternativa (e) Incorreta: Por definição, a aura da enxaqueca é um fenômeno transitório e reversível. A presença de alterações visuais permanentes obrigaria a investigação de outras patologias graves, como infarto cerebral (AVC isquêmico na área visual) ou descolamento de retina, o que não condiz com a descrição do desaparecimento dos sintomas antes do início da dor.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:17:24.217Z"
+  },
+  {
+    "id": "AJUDA_23d46d20-1821-4a2d-8be7-47a6726b5bb8",
+    "originalId": "23d46d20-1821-4a2d-8be7-47a6726b5bb8",
+    "statement": "O conceito de neoplasia intraepitelial cervical (NIC) foi introduzido por Richart, que sugeriu o potencial de progressão das displasias e, desde então, o desenvolvimento do conhecimento dessas lesões e seu tratamento se tornaram uma forma efetiva de diminuir a incidência do câncer de colo uterino. Sendo uma profilaxia secundária. Sobre estas NICs, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os tipos específicos de papilomavírus humano (HPV) de alto risco, como o tipo 16,18, 31. 33, 35, 39,45... são responsáveis por quase 70 % das lesões de alto grau, por isso a eficácia moderada das vacinas desenvolvidas com partículas desses tipos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O teste para HPV de alto risco é um componente fundamental no rastreamento primário bem como coexame em casos de citologias indeterminadas (ASC-US).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "As mulheres com mais de 30 anos, com citologias sugestivas de lesões de alto grau, devem ter esse exame citológico confirmado em 6 meses antes de serem submetidas à colposcopia e biópsia dirigida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pacientes jovens com citologia sugestiva de lesão de baixo grau, colposcopia satisfatório e teste de HPV positivo podem ser acompanhadas em regime de rastreio apropriado para a idade, anual ou bianual com citologia oncótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (a) INCORRETA: Embora os tipos de HPV citados sejam de fato de alto risco oncogênico, a afirmação de que as vacinas possuem \"eficácia moderada\" está errada. As vacinas disponíveis (quadrivalente e nonavalente) possuem altíssima eficácia, próxima a 100% na prevenção de lesões precursoras e câncer causados pelos tipos virais contidos no imunizante, desde que administradas antes do início da vida sexual.\n\nAlternativa (b) CORRETA: O teste de biologia molecular para detecção de HPV de alto risco é uma ferramenta diagnóstica superior à citologia isolada em termos de sensibilidade. Atualmente, ele é recomendado como estratégia de rastreio primário em diversos protocolos internacionais (e cada vez mais no Brasil para mulheres acima de 30 anos) e é o padrão-ouro para a triagem de casos de ASC-US (células escamosas atípicas de significado indeterminado). Se o teste de HPV for negativo em um caso de ASC-US, a paciente pode retornar ao rastreio de rotina, evitando colposcopias desnecessárias.\n\nAlternativa (c) INCORRETA: Resultados citológicos sugestivos de lesões de alto grau (HSIL) ou suspeitos de invasão exigem encaminhamento imediato para colposcopia, independentemente da idade da paciente (respeitando-se apenas particularidades em gestantes ou adolescentes em contextos específicos). Jamais se deve aguardar 6 meses para repetir a citologia nesses casos, pois há um risco significativo de haver uma neoplasia intraepitelial de alto grau ou mesmo câncer invasor já presente.\n\nAlternativa (d) INCORRETA: A conduta para lesão de baixo grau (LSIL) depende da idade. No Brasil, para pacientes com 25 anos ou mais, a recomendação inicial é repetir a citologia em 6 meses (e não necessariamente colposcopia imediata com teste de HPV). Para pacientes com menos de 25 anos, a conduta é repetir em 3 anos. Além disso, o teste de HPV não é recomendado para rastreio ou triagem em pacientes muito jovens (abaixo de 30 anos na maioria dos protocolos), pois a prevalência de infecções transitórias é altíssima, o que levaria a um excesso de intervenções desnecessárias.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:17:24.217Z"
+  },
+  {
+    "id": "AJUDA_23d5025f-ba79-4f8b-9c68-66fe64aef588",
+    "originalId": "23d5025f-ba79-4f8b-9c68-66fe64aef588",
+    "statement": "Assinale a alternativa que apresenta uma condição na qual é contraindicado o emprego do manitol em pacientes com traumatismo cranioencefálico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipotensão arterial sistêmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Uso de anticoagulantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gravidez confirmada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Perda da consciência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a letra (a).\n\nO manitol é um agente osmótico utilizado para reduzir a pressão intracraniana (PIC) em pacientes com traumatismo cranioencefálico (TCE). Ele atua criando um gradiente osmótico que retira água do tecido cerebral para o compartimento vascular. No entanto, seu efeito colateral mais importante é a diurese osmótica, que pode causar hipovolemia e queda da pressão arterial sistêmica.\n\nExplicação detalhada das alternativas:\n\na) Hipotensão arterial sistêmica: Esta é a alternativa correta. O manitol é contraindicado em pacientes hipotensos (geralmente definidos por Pressão Arterial Sistólica menor que 90 mmHg), porque sua ação diurética agrava a instabilidade hemodinâmica e a hipovolemia. No manejo do TCE, a manutenção da pressão arterial é crucial para garantir a Pressão de Perfusão Cerebral (PPC), que é a diferença entre a Pressão Arterial Média e a Pressão Intracraniana. A queda da pressão arterial leva à redução do fluxo sanguíneo cerebral, causando lesão isquêmica secundária e piorando o prognóstico neurológico. Em pacientes hipotensos com sinais de hipertensão intracraniana, a solução salina hipertônica é frequentemente a escolha preferencial, pois ajuda na expansão volêmica ao mesmo tempo em que reduz a PIC.\n\nb) Uso de anticoagulantes: O uso prévio de anticoagulantes é um fator de risco para a expansão de hematomas intracranianos, mas não constitui uma contraindicação ao uso do manitol. O manejo desses pacientes foca na reversão da anticoagulação e no controle rigoroso da pressão intracraniana, contexto em que o manitol pode ser utilizado se o paciente estiver hemodinamicamente estável.\n\nc) Gravidez confirmada: A gravidez não é uma contraindicação absoluta para o uso de manitol em situações de emergência neurológica. Em casos de TCE grave com risco de herniação cerebral ou hipertensão intracraniana descontrolada, o tratamento da mãe é prioritário para garantir a sobrevivência de ambos, embora o uso deva ser feito com monitoramento adequado.\n\nd) Perda da consciência: A perda da consciência é um achado clínico comum em pacientes com TCE moderado a grave. Ela não contraindica o uso do manitol; pelo contrário, pacientes com rebaixamento do nível de consciência (Escala de Coma de Glasgow menor ou igual a 8) e sinais de deterioração neurológica são justamente os que mais frequentemente necessitam de medidas para o controle da pressão intracraniana.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:17:24.217Z"
+  },
+  {
+    "id": "AJUDA_23e0e8ab-f24b-4f41-b416-7ed4c2b334c2",
+    "originalId": "23e0e8ab-f24b-4f41-b416-7ed4c2b334c2",
+    "statement": "Menino, 7 anos de idade, apresenta baixa estatura, dificuldade de aprendizagem e comportamento hiperativo. Mãe relata uso frequente de álcool durante toda a gestação. Exame físico: fendas palpebrais curtas, hipoplasia de face média, filtro nasolabial apagado e lábio superior fino. Considerando o diagnóstico de transtorno do espectro alcoólico fetal, qual é a alternativa correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Recomenda-se abstinência de bebidas alcoólicas nos dois primeiros trimestres gestacionais, sendo o uso social de álcool permitido no terceiro trimestre de gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O álcool atravessa a barreira placentária, contudo não atravessa a barreira hematoencefálica fetal, permitindo o consumo de até 10 gramas semanais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não existe quantidade segura definida para o uso de bebidas alcoólicas na gestação, portanto, a recomendação é abstinência absoluta de álcool durante toda a gravidez.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mesmo que a gestante se abstenha de ingerir álcool durante a gravidez, uma história pregressa de uso de bebidas alcoólicas aumenta o risco de desenvolvimento de transtornos do espectro alcoólico fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve uma criança com sinais clássicos da Síndrome Alcoólica Fetal (SAF), que faz parte do Transtorno do Espectro Alcoólico Fetal (TEAF). Os achados incluem:\n1. Dismorfia facial: fendas palpebrais curtas, filtro nasolabial apagado (liso) e lábio superior fino.\n2. Deficiência de crescimento: baixa estatura.\n3. Disfunção do Sistema Nervoso Central: dificuldade de aprendizagem e hiperatividade.\n4. História de exposição pré-natal ao álcool.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a: INCORRETA. Não existe período seguro para o consumo de álcool. Embora o primeiro trimestre seja crítico para a organogênese e definição dos traços faciais, o álcool exerce efeitos neurotóxicos e prejudica o crescimento fetal durante todo o segundo e o terceiro trimestres. No final da gestação, o cérebro continua em intenso desenvolvimento e o consumo de álcool pode causar danos funcionais graves.\n\nAlternativa b: INCORRETA. O etanol é uma substância de baixo peso molecular e altamente lipossolúvel, o que permite que ele atravesse com extrema facilidade tanto a barreira placentária quanto a barreira hematoencefálica do feto. Uma vez na circulação fetal, o álcool atinge concentrações semelhantes às do sangue materno, mas o feto tem menor capacidade de metabolização, prolongando a exposição. Não há dose segura (como os 10 gramas sugeridos).\n\nAlternativa c: CORRETA. Esta é a recomendação oficial da Sociedade Brasileira de Pediatria (SBP), da Febrasgo e da Organização Mundial da Saúde (OMS). Como a sensibilidade fetal ao álcool varia de acordo com a genética materna e fetal, estado nutricional e padrão de consumo, é impossível estabelecer um limite mínimo de segurança. Portanto, a orientação deve ser de abstinência absoluta desde o planejamento da gravidez até o final da gestação.\n\nAlternativa d: INCORRETA. O TEAF é causado pela exposição direta do feto ao álcool durante a gestação. Se uma mulher com histórico de etilismo interrompe completamente o uso antes de engravidar e mantém a abstinência durante toda a gravidez, o feto não estará em risco para este transtorno específico, pois não haverá etanol circulante para exercer efeito teratogênico no desenvolvimento embrionário ou fetal.\n\nGABARITO: Alternativa (c).",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Crescimento",
+      "Pré-Natal",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:17:24.217Z"
+  },
+  {
+    "id": "AJUDA_23f2ec19-a927-4a22-af90-271f49bf668d",
+    "originalId": "23f2ec19-a927-4a22-af90-271f49bf668d",
+    "statement": "Menino de 4 anos é levado à emergência devido a edema periorbital em abdômen e membros inferiores, apresentado há uma semana. A mãe informou que, há quatro dias, procurou a equipe de saúde da família e que uma médica avaliou o quadro como alérgico, prescrevendo anti-histamínico. Ela relata que hoje observou piora importante do quadro. Não soube responder sobre diurese, mas achou a urina “diferente”. Nega febre ou qualquer outro sinal ou sintoma. Ao exame físico, o paciente mostra-se lúcido, hipocorado +/4+, com FR = 24irpm, FC = 96bpm, e PA normal para altura, sexo e idade, sem outros sinais ou sintomas. A hipótese diagnóstica para o caso e os exames laboratoriais a serem solicitados, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "edema alérgico difuso; imunoglobulinas e hemograma completo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "insuficiência cardíaca congestiva; radiografia de tórax e ecocardiograma",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "síndrome nefrótica/proteinúria de 24 horas; dosagem sérica de albumina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "glomerulonefrite difusa aguda; exame simples de urina e dosagem de complemento",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve um menino de 4 anos com quadro de edema generalizado (anasarca), envolvendo a região periorbital, o abdome e os membros inferiores. Um detalhe crucial para o raciocínio clínico é a pressão arterial normal para a idade e a ausência de sinais sistêmicos, como febre ou sintomas cardiovasculares. Em pediatria, esse cenário clínico é o clássico da síndrome nefrótica.\n\nAlternativa a: Incorreta. Edemas alérgicos, como o angioedema, possuem início súbito, são transitórios e frequentemente vêm acompanhados de sinais de hipersensibilidade, como urticária ou prurido. Eles não justificam um edema generalizado persistente por uma semana nem alterações nas características da urina. Além disso, o hemograma e a dosagem de imunoglobulinas não são exames de triagem para quadros de edema.\n\nAlternativa b: Incorreta. A insuficiência cardíaca congestiva em crianças geralmente apresenta sinais de desconforto respiratório (taquipneia), frequência cardíaca elevada (taquicardia) e hepatomegalia. O paciente em questão apresenta frequências cardíaca e respiratória normais e não possui queixas de cansaço, o que torna a hipótese cardíaca improvável.\n\nAlternativa c: Correta. A síndrome nefrótica é a principal causa de anasarca em crianças pré-escolares, sendo a Doença por Lesão Mínima a etiologia mais comum nessa faixa etária. O quadro clínico caracteriza-se por edema importante e urina espumosa (descrita pela mãe como diferente) devido à perda massiva de proteínas. Diferentemente das glomerulonefrites, a síndrome nefrótica na criança costuma cursar com pressão arterial normal. O diagnóstico deve ser confirmado pela demonstração de proteinúria na faixa nefrótica (através da urina de 24 horas ou da relação proteína/creatinina em amostra isolada) e pela hipoalbuminemia (dosagem de albumina sérica).\n\nAlternativa d: Incorreta. A glomerulonefrite difusa aguda (síndrome nefrítica) manifesta-se tipicamente pela tríade de edema, hematúria (urina cor de chá ou Coca-Cola) e hipertensão arterial. Como o paciente está normotenso e apresenta um edema muito proeminente, a hipótese de síndrome nefrótica prevalece sobre a nefrítica. A dosagem de complemento seria útil na investigação de uma glomerulonefrite pós-estreptocócica, mas os sinais clínicos não apontam para esse diagnóstico.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:17:24.217Z"
+  }
+]

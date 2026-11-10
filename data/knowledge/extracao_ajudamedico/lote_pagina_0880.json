@@ -1,0 +1,520 @@
+[
+  {
+    "id": "AJUDA_f41073b5-d30f-481a-b74b-a9bc271f48d5",
+    "originalId": "f41073b5-d30f-481a-b74b-a9bc271f48d5",
+    "statement": "Recém-nascido (Rn) de 38 2/7 semanas nascido de parto normal, está em aleitamento materno no Alojamento Conjunto. Durante sua visita a mãe refere que tomou umas injeções muito doloridas no pré-natal devido a uma infecção que apareceu em um exame, e refere que o marido também precisou tomar. Qual deverá ser sua conduta frente a esse recém-nascido:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar testes não treponêmico para o Rn",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar testes não treponêmico para a mãe e o Rn",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar cartão de pré-natal para confirmação de sorologias e tratamento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar cartão de pré-natal para confirmar sorologias e tratamento e já solicitar testes não treponêmicos para a mãe e o Rn",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um recém-nascido cuja mãe relata tratamento para uma infecção durante o pré-natal com injeções doloridas (característica clássica da penicilina benzatina) e tratamento simultâneo do parceiro. Esses dados sugerem fortemente o diagnóstico de sífilis na gestação. A conduta diante de um recém-nascido com exposição vertical à sífilis é rigorosamente normatizada pelo Ministério da Saúde e depende da avaliação da adequação do tratamento materno e da comparação de exames laboratoriais.\n\nAlternativa a: Esta alternativa está incorreta porque é insuficiente. Solicitar apenas o teste não treponêmico (como o VDRL) para o recém-nascido não permite uma conduta completa. Para interpretar o resultado do bebê, é fundamental conhecer o histórico de tratamento da mãe e o título do exame dela no momento do parto para fins de comparação.\n\nAlternativa b: Esta alternativa está incorreta pois, embora recomende os testes para ambos, ignora a necessidade crucial de avaliar o prontuário ou cartão de pré-natal. Sem as informações do cartão, o médico não consegue verificar se o tratamento materno foi adequado (feito com penicilina, na dose correta para o estágio da doença, finalizado pelo menos 30 dias antes do parto e com queda documentada dos títulos).\n\nAlternativa c: Esta alternativa está incorreta porque, apesar de a análise do cartão de pré-natal ser o primeiro passo obrigatório, ela sozinha não encerra a conduta. É indispensável a realização de novos testes não treponêmicos na internação para o parto, tanto na mãe quanto no recém-nascido (em sangue periférico, nunca de cordão umbilical), para definir se a criança será considerada um caso de sífilis congênita ou apenas uma criança exposta.\n\nAlternativa d: Esta alternativa está correta e descreve a conduta inicial completa. Para o manejo adequado, o médico deve: 1) Solicitar o cartão de pré-natal para avaliar os critérios de tratamento materno adequado; 2) Realizar teste não treponêmico na mãe no momento do parto; 3) Realizar teste não treponêmico no recém-nascido. Somente com o cruzamento desses dados (histórico de tratamento + títulos maternos atuais + títulos do recém-nascido) será possível decidir se o bebê precisará de exames complementares (como punção lombar e radiografias de ossos longos) e tratamento imediato ou apenas seguimento ambulatorial.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:23.280Z"
+  },
+  {
+    "id": "AJUDA_f4121823-7704-4297-af34-29f9b9c103e6",
+    "originalId": "f4121823-7704-4297-af34-29f9b9c103e6",
+    "statement": "Paciente de 48 anos de idade do sexo feminino procurou a Unidade Básica de Saúde com queixa de dores articulares intensas há 4 meses. Relatou que há 5 meses foi acometida por quadro infeccioso agudo, com febre, exantema e dores articulares. O diagnóstico à época foi o de infecção por Chikungunya. Apesar de ter utilizado dipirona e anti-inflamatórios não esteroidais, evoluiu com persistência da dor articular em joelhos, punhos e cotovelos. Houve piora progressiva da intensidade das dores articulares com concomitante surgimento de sinais flogísticos nas articulações e rigidez matinal. A medicação inicialmente prescrita foi hidroxicloroquina, porém não houve boa resposta terapêutica. Ao exame físico, apresentava artrite em joelhos, punhos e cotovelos. De acordo com a segunda edição da publicação Chikungunya: Manejo Clínico do Ministério da Saúde, a droga de escolha para o tratamento do quadro da paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colchicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sais de ouro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Metotrexato.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Opioide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Imunobiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma paciente na fase crônica da infecção por Chikungunya (sintomas há 5 meses, ultrapassando o marco de 3 meses ou 90 dias). Ela apresenta sinais de artrite persistente (sinais flogísticos em joelhos, punhos e cotovelos, além de rigidez matinal) e já apresentou falha ao tratamento inicial com anti-inflamatórios e hidroxicloroquina.\n\nDe acordo com o Manual de Manejo Clínico de Chikungunya do Ministério da Saúde (2ª edição), o tratamento da fase crônica deve ser escalonado. A hidroxicloroquina é frequentemente a primeira Droga Modificadora do Curso da Doença (MET) utilizada. Diante da falha terapêutica ou em casos com acometimento articular moderado a grave com sinais de sinovite, o metotrexato é a droga de escolha para o controle do processo inflamatório crônico.\n\nAlternativa a) Incorreta. A colchicina é indicada para o tratamento de crises de gota e em certas condições, como pericardite, mas não possui indicação no protocolo de tratamento da fase crônica da Chikungunya.\n\nAlternativa b) Incorreta. Os sais de ouro são fármacos de uso histórico na reumatologia para o tratamento da artrite reumatoide, porém atualmente estão em desuso e não fazem parte das recomendações para o manejo das arboviroses.\n\nAlternativa c) Correta. O metotrexato é o imunossupressor (MET) de eleição para o manejo da fase crônica da Chikungunya quando há evidência de artrite persistente e falha à hidroxicloroquina. Ele atua reduzindo a inflamação sinovial e é fundamental para evitar a cronificação da dor e possíveis danos articulares.\n\nAlternativa d) Incorreta. Embora os opioides possam ser usados para o controle da dor em pacientes que não respondem a analgésicos comuns, eles são apenas sintomáticos. Eles não tratam a base inflamatória da artrite descrita no exame físico da paciente.\n\nAlternativa e) Incorreta. Os imunobiológicos (como os anti-TNF) são reservados apenas para casos graves e refratários, que permanecem com atividade de doença após a falha de tratamentos convencionais com METs (como o uso isolado ou combinado de metotrexato, leflunomida ou sulfassalazina). Não são a droga de escolha imediata após a falha da hidroxicloroquina.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Manifestações Reumatológicas e Doenças Sistêmicas",
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:23.280Z"
+  },
+  {
+    "id": "AJUDA_f41534a5-cbda-46cd-a563-bd7d4552f556",
+    "originalId": "f41534a5-cbda-46cd-a563-bd7d4552f556",
+    "statement": "Mulher, 62 anos de idade, em estado crítico após sepse grave, necessita de acesso vascular central para administração de medicamentos e monitorização hemodinâmica. Após a punção venosa, a ultrassonografia revela a presença de bolhas de ar entre a agulha de punção e a veia jugular interna. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aspirar as bolhas de ar com seringa e prosseguir com a inserção do cateter no mesmo sítio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar nova punção em outro local, sob orientação ultrassonográfica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Injetar contraste venoso sob orientação ultrassonográfica para confirmar a punção correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Abandonar a inserção do acesso por veia jugular interna e considerar o acesso femoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O surgimento de bolhas de ar (identificadas na ultrassonografia como focos hiperecogênicos com artefatos de reverberação ou sombra acústica suja) entre a agulha e a veia durante uma tentativa de punção da jugular interna é um sinal de alerta crítico. Isso geralmente indica que houve a perfuração acidental de uma estrutura que contém ar, como a traqueia ou o ápice pulmonar (causando pneumotórax ou enfisema subcutâneo).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Aspirar o ar não resolve a lesão estrutural que causou o vazamento de gás para os tecidos moles. Além disso, a presença de ar no tecido subcutâneo gera artefatos que impedem a visualização adequada das estruturas nobres (veia e artéria) pelo ultrassom, tornando a progressão do cateter no mesmo local perigosa e tecnicamente difícil.\n\nAlternativa b) Correta. Diante da suspeita de complicação (perfuração de traqueia ou pleura) e da perda de uma janela ultrassonográfica nítida devido aos artefatos de ar, a conduta correta é interromper o procedimento naquele ponto, realizar compressão local para evitar hematomas e buscar um novo sítio de punção (como a veia jugular contralateral ou as veias subclávias). A segurança do paciente e a manutenção da guia visual são prioridades.\n\nAlternativa c) Incorreta. O uso de contraste não é a conduta padrão para confirmar posicionamento em punções venosas centrais à beira-leito. O problema principal aqui é o ar extraluminal, que já indica um trajeto de agulha inadequado ou uma complicação mecânica que não será resolvida com contraste.\n\nAlternativa d) Incorreta. Embora o acesso femoral seja uma opção em casos de falha total nos acessos superiores, ele apresenta maiores taxas de infecção e trombose. Antes de migrar para o sítio femoral, o médico deve considerar a punção em outro local do segmento superior (como o lado oposto), garantindo que a monitorização hemodinâmica seja tecnicamente mais fidedigna.\n\nConclusão: A presença de ar nos tecidos durante a punção guiada por ultrassom compromete a segurança do procedimento e sugere lesão de via aérea ou pleura. A mudança para um novo sítio de punção é a medida mais prudente para garantir o sucesso do acesso e minimizar danos ao paciente.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:23.280Z"
+  },
+  {
+    "id": "AJUDA_f41877e1-07b3-46cf-8eff-636bbaf36bd7",
+    "originalId": "f41877e1-07b3-46cf-8eff-636bbaf36bd7",
+    "statement": "Mulher, 22 anos de idade, previamente hígida, comparece no pronto atendimento com dor abdominal em baixo ventre de início súbito há 1 hora, de forte intensidade. Vida sexual ativa, usa dispositivo intraútero de cobre há 2 anos. Não se lembra da data da última menstruação, refere ciclos irregulares desde a adolescência. Obstipada há 2 dias, no momento apresenta náusea intensa. Ao exame físico, apresentou regular estado geral, descorada, PA de 80x40 mmHg, FC de 120 bpm. Abdome rígido com defesa global e descompressão brusca positiva em hipogástrio. Toque vaginal intensamente doloroso. Exame de imagem apresentado a seguir: \n\nA conduta correta a ser adotada diante dos achados é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia .",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tomografia de pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retirada do dispositivo intrautero.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta é uma questão clássica de abdome agudo hemorrágico em ginecologia e obstetrícia. A análise do caso clínico revela uma paciente jovem, com vida sexual ativa e usuária de DIU de cobre (fator de risco para gestação ectópica), apresentando dor abdominal súbita, sinais de irritação peritoneal (abdome rígido e descompressão brusca positiva) e, crucialmente, instabilidade hemodinâmica (PA 80x40 mmHg e FC 120 bpm).\n\nA associação entre o quadro clínico e as imagens de ultrassonografia confirma o diagnóstico. A primeira imagem mostra um útero vazio com uma estrutura extrauterina (anexial) contendo um saco gestacional e um embrião, caracterizando uma gravidez ectópica. A segunda imagem mostra o dispositivo intrauterino (DIU) corretamente posicionado dentro da cavidade uterina, o que prova que a gestação não é tópica. O quadro de dor súbita e choque aponta para uma gravidez ectópica rota com hemoperitônio vultoso.\n\nAnálise das alternativas:\n\na) Correta. A laparotomia exploradora é a conduta de escolha para pacientes com gravidez ectópica rota que apresentam instabilidade hemodinâmica. O objetivo é o controle rápido da hemorragia (hemostasia) e a estabilização da paciente. Em situações de choque grave, a via aberta é preferível por permitir um acesso mais rápido e direto ao sítio de sangramento sem os riscos hemodinâmicos adicionais do pneumoperitônio.\n\nb) Incorreta. A videolaparoscopia é o padrão-ouro para o tratamento da gravidez ectópica em pacientes hemodinamicamente estáveis. No entanto, a presença de choque hipovolêmico (hipotensão e taquicardia) torna a laparotomia a via mais segura e rápida para o manejo emergencial.\n\nc) Incorreta. A tomografia de pelve não tem indicação neste cenário. O diagnóstico já foi estabelecido pela clínica e pela ultrassonografia à beira do leito. Retardar o tratamento definitivo de uma paciente instável para realizar um exame de imagem complexo aumenta significativamente a mortalidade.\n\nd) Incorreta. A retirada do DIU é irrelevante no manejo imediato de uma emergência hemorrágica por gravidez ectópica rota. O foco absoluto deve ser a interrupção do sangramento abdominal e a reposição volêmica. O DIU pode ser removido posteriormente ou durante o ato cirúrgico, mas não é a conduta prioritária.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo em Ginecologia",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/9db8c6b6cfa1d9362045221b70bc2f322b5459e30785f7c112ee58c27468266c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_f41877e1-07b3-46cf-8eff-636bbaf36bd7_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/52ba6c763281f9102af8f382ae42772f08bcbf6fc0463390c4f7ab9cd7a9383a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_f41877e1-07b3-46cf-8eff-636bbaf36bd7_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:24.213Z"
+  },
+  {
+    "id": "AJUDA_f42527a8-995e-4709-ad47-0e988d5641e4",
+    "originalId": "f42527a8-995e-4709-ad47-0e988d5641e4",
+    "statement": "Paciente de 38 anos, morador de uma zona urbana não endêmica e sem história de viagens recentes para regiões de risco, vai à unidade básica de saúde (UBS) apresentando histórico vacinal de febre amarela há 9 anos. Ele relata ao médico que um macaco foi encontrado morto perto de sua casa. Diante desse relato, o médico deve",
+    "options": [
+      {
+        "id": "A",
+        "text": "salientar a ausência de risco de febre amarela, uma vez que o Brasil não é país endêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "informar que é desnecessário realizar reforço para a vacina contra febre amarela nesse caso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "solicitar e aguardar resultado do anatomopatológico do animal, a fim de confirmar febre amarela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "indicar o reforço da vacina contra febre amarela, independentemente da ministração da última dose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o protocolo de vacinação contra a febre amarela e a conduta diante de uma epizootia (morte de primatas não humanos), conforme as normas do Ministério da Saúde do Brasil.\n\nAlternativa A: Incorreta. O Brasil é considerado um país endêmico para a febre amarela. Embora existam áreas com diferentes níveis de risco, a recomendação de vacinação foi estendida para todo o território nacional devido à expansão da circulação do vírus para regiões anteriormente consideradas indenes, como as regiões Sul e Sudeste.\n\nAlternativa B: Correta. Atualmente, o Programa Nacional de Imunizações (PNI) segue a recomendação da Organização Mundial da Saúde (OMS), adotando o esquema de dose única para a febre amarela. Para pessoas que receberam a primeira dose a partir dos 5 anos de idade, essa dose é considerada suficiente para conferir imunidade por toda a vida. Como o paciente tem 38 anos e foi vacinado há 9 anos (ou seja, recebeu a vacina aos 29 anos), ele já está devidamente protegido e não necessita de reforço, mesmo diante do encontro de um animal morto (sentinela de circulação viral).\n\nAlternativa C: Incorreta. O encontro de um macaco morto é um evento sentinela importante para a vigilância epidemiológica e deve ser notificado imediatamente para que os órgãos de saúde realizem a coleta de material e a investigação. No entanto, a conduta clínica individual em relação à imunização do paciente não deve aguardar esses resultados, mas sim basear-se no histórico vacinal prévio do indivíduo.\n\nAlternativa D: Incorreta. Não se indica o reforço de forma indiscriminada. A administração de doses desnecessárias da vacina contra a febre amarela aumenta o risco de eventos adversos graves, como a doença viscerotrópica aguda associada à vacina. O reforço só seria indicado se o paciente nunca tivesse sido vacinado ou se tivesse recebido apenas uma dose antes de completar 5 anos de idade.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Arboviroses",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:24.213Z"
+  },
+  {
+    "id": "AJUDA_f432e0f2-3848-4b41-aeb7-2f2d11f448e2",
+    "originalId": "f432e0f2-3848-4b41-aeb7-2f2d11f448e2",
+    "statement": "Um homem de 39 anos procura atendimento devido à dor epigástrica em queimação e episódios de diarreia aquosa. Os sintomas vêm se mantendo há mais de um ano e pioram em jejum, apresentando melhora parcial com uso de antiácidos. Nos últimos três meses, houve piora dos sintomas preexistentes, associada a perda ponderal de 6 kg. O exame físico não revelou alterações relevantes.\nA endoscopia digestiva alta evidenciou múltiplas úlceras no duodeno e jejuno proximal.\nDiante desses achados endoscópicos, deve-se solicitar exame laboratorial de dosagem de",
+    "options": [
+      {
+        "id": "A",
+        "text": "peptídeo intestinal vasoativo (VIP).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "colecistocinina (CCK).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "polipeptídeo pancreático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "somatostatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "gastrina sérica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A apresentação clínica descrita é clássica da Síndrome de Zollinger-Ellison (SZE). O paciente apresenta dor epigástrica refratária, perda de peso e diarreia crônica. O achado mais importante na endoscopia é a presença de múltiplas úlceras em localizações atípicas, como o jejuno proximal. Úlceras distais ao bulbo duodenal são fortemente sugestivas de um estado de hipersecreção ácida gástrica.\n\nA SZE é causada por um gastrinoma, um tumor neuroendócrino (geralmente localizado no pâncreas ou duodeno) que secreta gastrina de forma autônoma. O excesso de gastrina estimula as células parietais a produzirem quantidades massivas de ácido clorídrico. Esse excesso de ácido causa as úlceras graves e a diarreia (pela inativação das enzimas pancreáticas e lesão da mucosa intestinal pelo pH baixo).\n\nAnálise das alternativas:\n\na) Incorreta. O Peptídeo Intestinal Vasoativo (VIP) é o marcador do VIPoma (Síndrome de Verner-Morrison). Embora o VIPoma cause diarreia aquosa grave, ele promove acloridria (ausência de ácido gástrico) e não causa úlceras pépticas.\n\nb) Incorreta. A colecistocinina (CCK) atua na contração da vesícula biliar e secreção enzimática pancreática. Não há correlação clínica entre sua dosagem e o quadro de múltiplas úlceras e hipersecreção ácida.\n\nc) Incorreta. O polipeptídeo pancreático pode estar elevado em diversos tumores neuroendócrinos do pâncreas, mas não é um marcador diagnóstico para uma síndrome ulcerosa específica como a descrita.\n\nd) Incorreta. A somatostatina é um hormônio inibitório. O somatostatinoma (tumor produtor de somatostatina) costuma cursar com diabetes mellitus, colelitíase e esteatorreia, e não com múltiplas úlceras pépticas.\n\ne) Correta. A dosagem de gastrina sérica é o exame inicial de escolha para o diagnóstico da Síndrome de Zollinger-Ellison. Níveis elevados de gastrina (especialmente acima de 1.000 pg/mL) em jejum, na presença de pH gástrico baixo, confirmam o diagnóstico de gastrinoma.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Tumores Neuroendócrinos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:24.213Z"
+  },
+  {
+    "id": "AJUDA_f4469d01-6d32-4bc5-b985-6e04f4d39723",
+    "originalId": "f4469d01-6d32-4bc5-b985-6e04f4d39723",
+    "statement": "Um homem de 72 anos, diabético, foi internado com febre alta (39,2°C), dor abdominal e diminuição da diurese nas últimas 24 horas. No exame físico, o paciente apresenta pressão arterial de 85/50 mmHg, frequência cardíaca de 115 bpm, frequência respiratória de 24 irpm, e saturação de oxigênio de 91% em ar ambiente. O exame de sangue revela leucocitose com desvio à esquerda, lactato elevado (4,2 mmol/L) e função renal alterada (creatinina sérica de 2,1 mg/dL). O paciente estava previamente com a função renal normal. Com base no caso clínico e nos critérios diagnósticos para sepse, assinale a alternativa que descreve corretamente o diagnóstico desta condição.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não se trata de sepse, pois o paciente não apresenta choque hipovolêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de sepse, pois há evidência de infecção suspeita, com disfunção orgânica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Não se trata de sepse, pois o paciente não apresenta sinais de insuficiência respiratória grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de sepse, pois o paciente apresenta febre e leucocitose com desvio à esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não se trata de sepse, pois a elevação da creatinina não é suficiente para este diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO caso clínico apresenta um paciente idoso e diabético com sinais sugestivos de infecção (febre e dor abdominal) associados à instabilidade hemodinâmica e laboratorial. Para identificar o diagnóstico correto, devemos aplicar as definições do Terceiro Consenso Internacional de Definições para Sepse e Choque Séptico (Sepsis-3). Segundo este consenso, a sepse é definida como uma disfunção orgânica potencialmente fatal causada por uma resposta desregulada do hospedeiro a uma infecção.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta: O diagnóstico de sepse não depende da presença de choque hipovolêmico. O choque que ocorre na sepse é do tipo distributivo. Além disso, o paciente já apresenta sinais de gravidade que superam a simples infecção, independentemente do status volêmico.\n\nAlternativa b) Correta: Esta alternativa segue estritamente a definição do Sepsis-3. O paciente possui um foco infeccioso provável (abdominal) e apresenta diversas disfunções orgânicas agudas: cardiovascular (hipotensão de 85/50 mmHg), renal (elevação da creatinina de um patamar prévio normal para 2,1 mg/dL e oligúria), respiratória (frequência respiratória de 24 irpm e queda na saturação) e metabólica (lactato de 4,2 mmol/L). A presença de disfunção orgânica em vigência de infecção confirma a sepse.\n\nAlternativa c) Incorreta: Não é necessária a presença de insuficiência respiratória \"grave\" para o diagnóstico. Qualquer grau de disfunção orgânica aguda (identificada pelo aumento de 2 ou mais pontos no escore SOFA) decorrente de infecção é suficiente. O paciente já apresenta disfunções em outros sistemas.\n\nAlternativa d) Incorreta: Febre e leucocitose com desvio à esquerda são marcadores de inflamação e fazem parte dos antigos critérios de SIRS (Síndrome de Resposta Inflamatória Sistêmica). No entanto, o Consenso Sepsis-3 determinou que esses sinais isolados não são mais suficientes para diagnosticar sepse, sendo obrigatória a identificação de disfunção orgânica.\n\nAlternativa e) Incorreta: A elevação da creatinina é, de fato, um marcador de disfunção orgânica (renal). No escore SOFA, valores de creatinina acima de 1,2 mg/dL já indicam disfunção. No caso apresentado, o aumento para 2,1 mg/dL em alguém com função prévia normal é um sinal claro de lesão renal aguda secundária à sepse.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Sepse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:24.213Z"
+  },
+  {
+    "id": "AJUDA_f446ec04-e057-4fba-bcdc-bc67495843e6",
+    "originalId": "f446ec04-e057-4fba-bcdc-bc67495843e6",
+    "statement": "Os dispositivos eletrônicos para fumar (DEFs), conhecidos como Vapes, está na moda, principalmente, entre os jovens. Recentemente a Sociedade Brasileira de Cardiologia (SBC) divulgou um posicionamento sobre o assunto.\nCom base no posicionamento da SBC, considere as afirmativas a seguir.\n\nI. Pesquisa aponta que os usuários de cigarros eletrônicos apresentam uma maior probabilidade de cessar tabagismo de maneira voluntária.\nII. Mesmo exposições a níveis reduzidos de cigarros consumidos podem desencadear doenças cardiovasculares.\nIII. O cigarro eletrônico não tem combustão, mas existem outros produtos distintos daqueles do cigarro convencional, muitos dos quais com efeitos desconhecidos na saúde humana.\nIV. A comercialização e o consumo de DEFs representam um problema de saúde pública devido ao impacto que exercem tanto sobre fumantes quanto não fumantes.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nEsta questão aborda o posicionamento oficial da Sociedade Brasileira de Cardiologia (SBC) sobre os Dispositivos Eletrônicos para Fumar (DEFs), um tema recorrente em provas devido ao aumento do consumo e aos riscos cardiovasculares associados.\n\nAnálise das Afirmativas:\n\nAfirmativa I (Incorreta): Ao contrário do que sugere o item, a SBC e a ANVISA reiteram que os DEFs não são métodos seguros ou eficazes para a cessação do tabagismo. Na verdade, estudos mostram que o uso de vapes frequentemente leva ao uso dual (cigarro comum + eletrônico) ou serve como porta de entrada para a dependência de nicotina em jovens que nunca haviam fumado. Não há evidência científica robusta que suporte a maior probabilidade de cessação voluntária sustentável.\n\nAfirmativa II (Correta): Para as doenças cardiovasculares, não existe um \"limiar de segurança\" para o tabagismo. Mesmo a exposição passiva ou o consumo de poucos cigarros (ou dispositivos eletrônicos) por dia já são suficientes para provocar disfunção endotelial, estresse oxidativo e aumento da reatividade vascular, elevando o risco de infarto e AVC.\n\nAfirmativa III (Correta): O principal argumento de marketing dos DEFs é a ausência de combustão (queima de tabaco). No entanto, o processo de aquecimento do e-líquido gera um aerossol complexo. Além da nicotina, são encontrados metais pesados (como níquel e estanho), substâncias citotóxicas e flavorizantes que, quando aquecidos, podem se tornar cancerígenos ou causar danos pulmonares e vasculares ainda não totalmente compreendidos pela ciência de longo prazo.\n\nAfirmativa IV (Correta): Os DEFs são um problema de saúde pública multifatorial. Para os fumantes, adiam a cessação real; para os não fumantes, em especial os jovens, criam uma nova geração de dependentes de nicotina sob uma falsa percepção de inocuidade e segurança.\n\nConclusão:\n\nComo as afirmativas II, III e IV estão corretas e condizentes com as diretrizes de prevenção cardiovascular, a alternativa correta é a letra (e).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Dislipidemia e Estratificação de Risco Cardiovascular",
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:24.213Z"
+  },
+  {
+    "id": "AJUDA_f4477a1c-3f0e-4303-8bce-73866ed77587",
+    "originalId": "f4477a1c-3f0e-4303-8bce-73866ed77587",
+    "statement": "Primigesta, 28 anos, refere estar grávida há 2 meses e está com sangramento vaginal e cólica abdominal há 5 dias. Foi atendida no pronto-socorro com presença de sangue coletado em fundo vaginal, útero aumentado 2 vezes de tamanho e colo impérvio. À ultrassonografia observou-se embrião com 105 batimentos cardíacos fetais, diâmetro de saco gestacional 25 mm e área de descolamento ovular de 30%. A conduta mais adequada, nesse caso, deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrição de relaxante muscular e sulfato ferroso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrição de misoprostol 100 mg 6/6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrição de progesterona natural 800 mg ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observação domiciliar e manter o seguimento pré-natal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Repetição da ultrassonografia transvaginal em 2 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A paciente apresenta um quadro clássico de ameaça de abortamento. Os critérios diagnósticos presentes no caso são: sangramento vaginal, cólica abdominal, colo uterino fechado (impérvio) e presença de embrião com vitalidade (batimentos cardíacos fetais de 105 bpm). O achado ultrassonográfico de área de descolamento ovular (hematoma subcoriônico) de 30% é frequente nessas situações e, isoladamente, não indica interrupção da gestação.\n\nAnálise das alternativas:\n\na) Incorreta. O relaxante muscular (antiespasmódico) serve apenas para o alívio sintomático da cólica, não tratando a causa ou mudando o prognóstico. O sulfato ferroso é indicado para suplementação de ferro durante o pré-natal ou tratamento de anemia, não sendo uma conduta pertinente para o quadro agudo de ameaça de abortamento.\n\nb) Incorreta. O misoprostol é um análogo da prostaglandina utilizado para induzir o esvaziamento uterino em casos de abortamento retido, inevitável ou incompleto (quando não há mais viabilidade fetal). Como o embrião está vivo, o uso desta medicação é contraindicado, pois provocaria o aborto de uma gestação viável.\n\nc) Incorreta. O uso de progesterona natural na ameaça de abortamento é um tema de debate, mas as evidências científicas atuais (como o estudo PRISM) mostram que ela não reduz significativamente o risco de perda gestacional em pacientes sem histórico de abortos de repetição. Como a paciente é primigesta, não há indicação formal baseada em evidências para essa prescrição.\n\nd) Correta. Na ameaça de abortamento com feto vivo, a conduta padrão é expectante. Recomenda-se repouso relativo (diminuição de atividades físicas intensas), abstinência sexual e observação domiciliar. Caso os sintomas não progridam, a gestação tende a seguir o curso normal com a reabsorção do descolamento ovular. O acompanhamento pré-natal deve ser mantido para monitorar a evolução.\n\ne) Incorreta. A repetição da ultrassonografia em apenas 48 horas é desnecessária. Alterações na área de descolamento ou no desenvolvimento embrionário levam mais tempo para serem perceptíveis ao exame de imagem. Um novo exame só seria indicado precocemente em caso de piora clínica importante, como sangramento volumoso ou dor excruciante.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:24.213Z"
+  },
+  {
+    "id": "AJUDA_f44fcc34-bf6d-4c3b-91a6-8451cc7c37bb",
+    "originalId": "f44fcc34-bf6d-4c3b-91a6-8451cc7c37bb",
+    "statement": "Um paciente de 45 anos, com histórico familiar de diabetes (mãe e irmão), sedentário, em acompanhamento por hipertensão arterial, veio a uma consulta de rotina. Ao exame físico, apresenta IMC de 32 kg/m² e circunferência abdominal = 97 cm. Trouxe exames laboratoriais recentes com os seguintes resultados: glicemia de jejum de 99 mg/dl (VR: (60-99 mg/dl) e Hemoglobina glicada = 5,5% (VR< 5,6%). Dentre as opções abaixo, qual é a conduta mais apropriada neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Orientar mudanças de estilo de vida e repetir os exames em 6 a 12 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orientar mudanças de estilo de vida e iniciar metformina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar teste oral de tolerância à glicose (TOTG) -1h.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar uma glicemia capilar como triagem para definir a conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, devemos analisar o perfil de risco cardiovascular e metabólico do paciente em conjunto com os valores laboratoriais apresentados.\n\nAnálise do Perfil do Paciente:\nO paciente apresenta múltiplos fatores de risco para Diabetes Mellitus tipo 2 (DM2): idade (45 anos), obesidade (IMC 32 kg/m²), sedentarismo, hipertensão arterial e histórico familiar de primeiro grau. Apesar de sua glicemia de jejum (99 mg/dL) e sua hemoglobina glicada (5,5%) estarem tecnicamente dentro da faixa de normalidade, ambas encontram-se no limite superior do normal (limítrofes). Em pacientes com alto risco clínico, exames de rastreio \"normais\" podem mascarar uma intolerância à glicose já existente.\n\nAnálise das Alternativas:\n\na) Incorreta. Embora a mudança de estilo de vida seja fundamental para este paciente devido à obesidade e hipertensão, aguardar 6 a 12 meses para repetir os exames pode ser uma conduta passiva demais. Como o paciente está no limite da normalidade e possui altíssimo risco, uma investigação mais profunda imediata é justificada para não retardar o diagnóstico de pré-diabetes ou diabetes.\n\nb) Incorreta. A metformina é uma medicação indicada para o tratamento do DM2 ou para prevenção em casos específicos de pré-diabetes (especialmente em pacientes com IMC > 35 kg/m², idade < 60 anos ou mulheres com histórico de diabetes gestacional). Como o paciente ainda apresenta exames dentro da normalidade técnica, o diagnóstico de pré-diabetes ou diabetes ainda não foi firmado, o que contraindica o início imediato da medicação neste momento.\n\nc) Correta. O Teste Oral de Tolerância à Glicose (TOTG) é o exame mais sensível para detectar precocemente distúrbios do metabolismo da glicose que a glicemia de jejum isolada pode não identificar. Especificamente sobre o \"TOTG - 1h\" mencionado na alternativa, estudos recentes e diretrizes atualizadas (como as da Sociedade Brasileira de Diabetes) têm destacado que o valor da glicemia após 1 hora de sobrecarga (quando superior a 155 mg/dL) é um preditor precoce e independente de evolução para DM2 e complicações cardiovasculares, mesmo quando a glicemia de jejum e o valor de 2 horas estão normais. Portanto, em um paciente com alto risco e exames limítrofes, aprofundar a investigação com o TOTG é a conduta mais assertiva.\n\nd) Incorreta. A glicemia capilar é uma ferramenta útil para triagem rápida em pacientes sintomáticos ou para o automonitoramento de pacientes já diagnosticados. Ela não possui validade diagnóstica para DM2 em consultas de rotina e não substitui os exames laboratoriais de sangue venoso para definição de conduta clínica em pacientes assintomáticos.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T18:13:24.213Z"
+  }
+]

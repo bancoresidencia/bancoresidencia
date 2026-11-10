@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_65bda309-3e0a-4c81-a1f1-f045405a86af",
+    "originalId": "65bda309-3e0a-4c81-a1f1-f045405a86af",
+    "statement": "A intoxicação por organofosforados (inibidores da colinesterase) gera uma síndrome colinérgica aguda. Os sinais clínicos dividem-se em efeitos muscarínicos e nicotínicos. Sobre o reconhecimento e tratamento, analise as afirmativas.\n\nI.Os sinais muscarínicos incluem miose, bradicardia, broncorreia, sialorreia, lacrimejamento, vômitos e diarreia (síndrome \"úmida\").\nII.Os sinais nicotínicos resultam da estimulação da placa motora e gânglios simpáticos, manifestando-se como fasciculações musculares, fraqueza, taquicardia e hipertensão (que podem mascarar a bradicardia muscarínica).\nIII.A atropina é o antídoto para os efeitos muscarínicos e nicotínicos, revertendo tanto a broncorreia quanto a fraqueza muscular e as fasciculações.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e II, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "II e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Comentário sobre a Questão: Intoxicação por Organofosforados\n\nA intoxicação por organofosforados ocorre devido à inibição irreversível da enzima acetilcolinesterase, o que leva ao acúmulo de acetilcolina nas fendas sinápticas. Esse excesso de neurotransmissor estimula continuamente tanto os receptores muscarínicos quanto os nicotínicos, gerando a síndrome colinérgica.\n\nAnálise da Afirmativa I: Esta afirmativa está correta. Os efeitos muscarínicos são decorrentes da estimulação do sistema nervoso parassimpático e das glândulas exócrinas. O quadro clínico é marcado por hipersecreção generalizada, frequentemente resumido pelo mnemônico DUMBELS: Diarreia, Urinação, Miose, Bradicardia (ou Broncorreia/Broncoespasmo), Emese, Lacrimejamento e Salivação. Por isso, a apresentação é classicamente chamada de síndrome úmida.\n\nAnálise da Afirmativa II: Esta afirmativa está correta. Os receptores nicotínicos estão localizados na placa motora (junção neuromuscular) e nos gânglios autonômicos (tanto simpáticos quanto parassimpáticos). A estimulação nicotínica na musculatura estriada causa fasciculações, cãibras e fraqueza, que pode evoluir para paralisia flácida e insuficiência respiratória. Nos gânglios simpáticos, a estimulação pode provocar taquicardia e hipertensão arterial, sinais que podem aparecer inicialmente e confundir o examinador, mascarando os efeitos parassimpáticos (muscarínicos) no coração.\n\nAnálise da Afirmativa III: Esta afirmativa está incorreta. A atropina é um agente anticolinérgico que atua exclusivamente como antagonista dos receptores muscarínicos. Ela é excelente para reverter a broncorreia, o broncoespasmo e a bradicardia, que são as principais causas de morte por asfixia nesses pacientes. No entanto, a atropina não tem ação nos receptores nicotínicos. Portanto, ela não reverte as fasciculações nem a fraqueza muscular. Para tratar os efeitos nicotínicos e tentar regenerar a enzima acetilcolinesterase, utilizam-se as oximas (como a pralidoxima), que devem ser administradas precocemente.\n\nConclusão: Como apenas as afirmativas I e II estão corretas, a alternativa correta é a (a).",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Intoxicações Exógenas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:03.961Z"
+  },
+  {
+    "id": "AJUDA_65c30fef-b7e6-4889-8c62-c333ce9ac775",
+    "originalId": "65c30fef-b7e6-4889-8c62-c333ce9ac775",
+    "statement": "Em relação às doenças neurodegenerativas, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O principal conceito da patogênese envolvida na doença de Alzheimer é a hipótese da proteína amiloide, que sugere um desequilíbrio entre a produção e a depuração de β-amiloide, levando ao seu acúmulo excessivo nas células nervosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na esclerose lateral amiotrófica há, predominantemente, o acometimento de neurônios sensitivos e motores.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A doença de Huntington é hereditária, manifestando-se por meio de sintomas cognitivos e motores, levando a um quadro demencial e morte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na doença de Creutzfeldt-Jakob, os patógenos infecciosos que causam essas doenças são desprovidos de ácido nucleico e chamados de príons.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ALTERNATIVA A: Esta alternativa está correta. A hipótese da cascata amiloide é a teoria patogênica central para a Doença de Alzheimer há décadas. Ela postula que o evento primário da doença é o desequilíbrio entre a produção e a depuração (clearance) do peptídeo beta-amiloide no cérebro. Esse acúmulo leva à formação de placas senis extracelulares, que desencadeiam processos neurotóxicos, como a inflamação e a formação de emaranhados neurofibrilares da proteína tau, culminando em morte neuronal.\n\nALTERNATIVA B: Esta alternativa está incorreta e é o gabarito da questão. A Esclerose Lateral Amiotrófica (ELA) é uma doença que acomete seletiva e exclusivamente os neurônios motores, envolvendo tanto o neurônio motor superior (córtex cerebral) quanto o neurônio motor inferior (tronco encefálico e medula espinal). Uma característica clínica clássica da ELA, fundamental para o diagnóstico diferencial, é a preservação das funções sensitivas, além da manutenção dos movimentos oculares e do controle esfincteriano.\n\nALTERNATIVA C: Esta alternativa está correta. A Doença de Huntington é uma patologia hereditária de herança autossômica dominante, causada pela expansão de repetições do tripleto CAG no gene HTT (cromossomo 4). A doença caracteriza-se clinicamente por uma tríade composta por distúrbios do movimento (especialmente a coreia), alterações psiquiátricas e declínio cognitivo progressivo. O quadro evolui inevitavelmente para demência grave e óbito, geralmente 15 a 20 anos após o início dos sintomas.\n\nALTERNATIVA D: Esta alternativa está correta. A Doença de Creutzfeldt-Jakob é a principal encefalopatia espongiforme humana. Ela é causada por príons, que são partículas proteicas infecciosas resultantes do enovelamento incorreto de uma proteína celular normal. O conceito revolucionário da biologia priônica é que esses agentes são capazes de autorreplicação e transmissão de doenças mesmo sendo desprovidos de material genético (ácido nucleico), agindo puramente por indução de mudança conformacional em outras proteínas.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Demências",
+      "Doenças Neuromusculares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:03.961Z"
+  },
+  {
+    "id": "AJUDA_65c45ed8-de2d-4991-995b-c1fb388fd73a",
+    "originalId": "65c45ed8-de2d-4991-995b-c1fb388fd73a",
+    "statement": "São princípios e atributos da APS: acesso de primeiro contato, longitudinalidade, integralidade, coordenação do cuidado, orientação familiar e comunitária, competência cultural. O princípio da longitudinalidade na Atenção Primária à Saúde corresponde a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Porta de entrada obrigatória no sistema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coordenação do cuidado em todos os níveis de assistência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acompanhamento contínuo ao longo do tempo, independente do motivo da consulta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Atenção focada em prevenção e promoção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Capacidade de atendimento de alta complexidade dentro da APS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, é fundamental revisar os atributos da Atenção Primária à Saúde (APS), baseados na teoria de Barbara Starfield. Eles são divididos em atributos essenciais (Acesso de Primeiro Contato, Longitudinalidade, Integralidade e Coordenação do Cuidado) e atributos derivados (Orientação Familiar, Orientação Comunitária e Competência Cultural).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A definição de ser o local preferencial de entrada no sistema de saúde para cada nova necessidade ou problema corresponde ao atributo Acesso de Primeiro Contato. Ele garante que a APS seja a porta de entrada para o restante da rede assistencial.\n\nAlternativa b) Incorreta. A capacidade de integrar os cuidados recebidos pelo paciente em diferentes pontos da rede de saúde, garantindo a continuidade das informações e o acompanhamento dos encaminhamentos, define o atributo da Coordenação do Cuidado.\n\nAlternativa c) Correta. A Longitudinalidade é a existência de um aporte regular de cuidados pela equipe de saúde e seu uso consistente ao longo do tempo. Esse atributo pressupõe a criação de um vínculo terapêutico e de confiança entre o profissional/equipe e o paciente, permitindo que o acompanhamento ocorra de forma perene, independentemente do motivo da consulta ou da presença de patologias específicas. É a relação que se estabelece \"ao longo da vida\".\n\nAlternativa d) Incorreta. A atenção voltada para prevenção e promoção é um componente importante da APS, mas quando falamos em abordar o indivíduo em todas as suas dimensões (biopsicossociais) e oferecer serviços que cubram todo o espectro saúde-doença, estamos nos referindo ao atributo da Integralidade.\n\nAlternativa e) Incorreta. A APS é caracterizada por ser um nível de atenção de baixa densidade tecnológica, porém de alta complexidade clínica e alta resolutividade. O atendimento de alta complexidade tecnológica é típico dos níveis secundário e terciário (especialidades e hospitais), não sendo um atributo da APS.\n\nGabarito: Letra (c).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:03.961Z"
+  },
+  {
+    "id": "AJUDA_65c5a000-d929-4b3a-832b-5417450d5bcd",
+    "originalId": "65c5a000-d929-4b3a-832b-5417450d5bcd",
+    "statement": "Um novo teste rápido para diagnóstico de tuberculose surgiu e apresentou sensibilidade de 95% em um estudo. O que significa esse valor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Que 95% dos indivíduos sem a doença terão teste negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Que 95% dos indivíduos com a doença terão teste positivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Que 95% dos testes positivos realmente têm a doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Que o teste identifica 95% de toda a população estudada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Sensibilidade é a capacidade de um teste diagnóstico identificar corretamente os indivíduos que realmente possuem a condição avaliada. Em termos epidemiológicos, é a taxa de verdadeiros positivos, ou seja, a probabilidade de o teste ser positivo quando a doença está presente (resultado positivo entre os doentes).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A capacidade de um teste resultar negativo em indivíduos comprovadamente sadios define o conceito de especificidade, e não de sensibilidade.\n\nAlternativa b: Correta. Representa fielmente o conceito de sensibilidade: 95% de sensibilidade significa que o teste será positivo em 95% das pessoas que têm a doença (verdadeiros positivos / total de doentes).\n\nAlternativa c: Incorreta. A probabilidade de um indivíduo com teste positivo realmente estar doente corresponde ao Valor Preditivo Positivo (VPP), que varia conforme a sensibilidade, a especificidade e a prevalência da doença na população.\n\nAlternativa d: Incorreta. A sensibilidade não se aplica à população geral indistintamente, mas sim especificamente ao grupo de indivíduos portadores da doença.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Estatística Médica",
+      "Testes Diagnósticos",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:03.961Z"
+  },
+  {
+    "id": "AJUDA_65ca4dd8-35d8-4be4-a6f8-377721bbeaa2",
+    "originalId": "65ca4dd8-35d8-4be4-a6f8-377721bbeaa2",
+    "statement": "Durante uma consulta de puericultura, a mãe de um lactente lhe pergunta o que deveria fazer para reduzir o risco da síndrome de morte súbita. Dentre as alternativas abaixo, assinale a que contém a informação correta em relação ao lactente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve ser colocado em berço com colchão mole e em decúbito lateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pode dormir na cama com os pais, para que eles observem seu sono.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve ser colocado no berço com colchão firme, travesseiro e em decúbito lateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O lactente deve dormir no mesmo quarto com os pais, em berço com colchão e travesseiros macios e na posição de decúbito lateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deve ser colocado em berço com colchão firme, sem cobertas, brinquedos, travesseiros ou qualquer outro tipo de objeto e em decúbito dorsal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A Síndrome da Morte Súbita do Lactente (SMSL) é caracterizada pelo óbito inesperado de uma criança menor de um ano, cuja causa permanece inexplicada mesmo após investigação completa. A prevenção baseia-se no controle de fatores ambientais, sendo o posicionamento no berço o fator modificável mais importante.\n\nAlternativa A: Incorreta. O colchão deve ser obrigatoriamente firme. Colchões moles ou superfícies macias podem se moldar ao rosto do bebê, facilitando o sufocamento. Além disso, o decúbito lateral é uma posição instável que facilita que o lactente role para a posição de decúbito ventral (bruços), que é o principal fator de risco para a SMSL.\n\nAlternativa B: Incorreta. O compartilhamento da cama (pais e bebê dormindo na mesma superfície) é um fator de risco significativo para a morte súbita e asfixia acidental. A recomendação atual é que o bebê durma no mesmo quarto que os pais (*room-sharing*), mas em uma superfície separada (berço ou moisés), o que reduz o risco de SMSL em até 50%.\n\nAlternativa C: Incorreta. Embora mencione o colchão firme, a alternativa erra ao incluir o uso de travesseiro e o decúbito lateral. Travesseiros, protetores de berço e posicionadores aumentam o risco de aprisionamento da face e sufocamento.\n\nAlternativa D: Incorreta. Esta alternativa combina uma recomendação correta (dormir no mesmo quarto que os pais) com três condutas perigosas: uso de colchão macio, uso de travesseiros e decúbito lateral.\n\nAlternativa E: Correta. Esta alternativa sintetiza as principais recomendações das sociedades de pediatria (SBP e AAP) para o sono seguro. O decúbito dorsal (barriga para cima) é a posição mais segura e deve ser mantida em todas as sonecas e no sono noturno. O berço deve ser \"minimalista\": apenas um colchão firme coberto por um lençol justo, sem nenhum objeto solto (cobertores, brinquedos, bichos de pelúcia ou travesseiros), para eliminar qualquer risco de obstrução das vias aéreas.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Segurança na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:03.961Z"
+  },
+  {
+    "id": "AJUDA_65cb63bc-b699-4e41-85cd-c4a922c25f89",
+    "originalId": "65cb63bc-b699-4e41-85cd-c4a922c25f89",
+    "statement": "Homem de 50 anos apresenta febre, tosse produtiva e dor torácica. A radiografia de tórax mostra consolidação no lobo inferior esquerdo. Qual é o tratamento empírico inicial mais indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibióticos de amplo espectro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Broncodilatadores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Corticoides inalatórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito — febre, tosse produtiva e dor torácica, associado ao achado radiológico de consolidação lobar — é a apresentação clássica da Pneumonia Adquirida na Comunidade (PAC). Diante dessa principal hipótese diagnóstica, a conduta deve ser direcionada para o tratamento da infecção do parênquima pulmonar.\n\nAlternativa (a): Correta. O tratamento padrão para pneumonia bacteriana é a antibioticoterapia. O termo \"amplo espectro\" no contexto de questões de prova refere-se à cobertura empírica inicial que deve abranger os patógenos mais comuns, como o *Streptococcus pneumoniae* e germes atípicos, conforme os protocolos de manejo clínico. O início precoce do antibiótico é fundamental para reduzir a mortalidade e complicações.\n\nAlternativa (b): Incorreta. Os broncodilatadores são indicados para o manejo de doenças obstrutivas das vias aéreas, como asma e DPOC, nas quais há broncoespasmo. Embora possam ser usados como terapia adjuvante em pacientes que apresentam sibilos, eles não tratam a causa-base da pneumonia (infecção).\n\nAlternativa (c): Incorreta. Os corticoides inalatórios são medicamentos de manutenção para o controle da inflamação crônica em pacientes asmáticos ou com DPOC. Eles não possuem papel no tratamento agudo da pneumonia bacteriana.\n\nAlternativa (d): Incorreta. A observação clínica isolada é contraindicada na suspeita de pneumonia. Por se tratar de uma doença potencialmente grave e que pode evoluir para sepse e insuficiência respiratória, a intervenção terapêutica com antibióticos deve ser imediata após a suspeita diagnóstica e/ou confirmação radiológica.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:03.961Z"
+  },
+  {
+    "id": "AJUDA_65cf6805-ddb1-4d7e-9604-9dc2f0cef8dc",
+    "originalId": "65cf6805-ddb1-4d7e-9604-9dc2f0cef8dc",
+    "statement": "Amanda, 3 anos de idade, com quadro gripal em tratamento, evoluindo afebril e em bom estado geral, apresenta claudicação há 1 dia, evitando andar e poupando o membro inferior esquerdo quando anda. Ao exame físico, nota-se limitação da mobilização ativa e passiva do quadril esquerdo, sem outras alterações. Com base nessas informações, assinale o diagnóstico ortopédico mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença de Legg-Calvé-Perthes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pioartrite do quadril.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sinovite transitória do quadril.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Epifisiólise do quadril.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Piomiosite do psoas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma criança de 3 anos com claudicação aguda, sem sinais de comprometimento sistêmico (afebril e em bom estado geral) e com história recente de quadro gripal. Este é o cenário típico da Sinovite Transitória do Quadril, a causa mais comum de dor no quadril na faixa etária pediátrica.\n\nAnálise das alternativas:\n\na) Incorreta. A Doença de Legg-Calvé-Perthes refere-se à necrose avascular idiopática da cabeça femoral. Ela costuma ter um início insidioso (crônico), afetando preferencialmente meninos entre 4 e 8 anos. O quadro clínico de Amanda é agudo e fortemente relacionado à infecção viral prévia, o que aponta para outra direção.\n\nb) Incorreta. A Pioartrite (artrite séptica) é uma emergência médica. O paciente apresenta-se toxemiado, com febre alta, dor intensa mesmo em repouso e recusa total à mobilização do membro ou ao suporte de carga. Amanda está afebril e em bom estado geral, o que exclui um processo infeccioso articular agudo.\n\nc) Correta. A Sinovite Transitória do Quadril é um processo inflamatório autolimitado e benigno. Frequentemente ocorre 1 a 2 semanas após uma infecção das vias aéreas superiores. A criança apresenta claudicação súbita e limitação da mobilidade do quadril, mas não apresenta sinais de infecção sistêmica. O tratamento é conservador, baseado em repouso e anti-inflamatórios.\n\nd) Incorreta. A Epifisiólise (escorregamento da epífise femoral proximal) é uma patologia característica da adolescência (geralmente entre 10 e 16 anos), frequentemente associada ao sobrepeso e ao estirão de crescimento. A idade de 3 anos é incompatível com este diagnóstico.\n\ne) Incorreta. A Piomiosite do Psoas é uma infecção bacteriana do músculo psoas. Assim como na artrite séptica, o paciente apresentaria febre, prostração e sinais inflamatórios laboratoriais. O exame físico tipicamente mostra dor à extensão do quadril (sinal do psoas), o que difere da limitação global de movimentos da Sinovite.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Quadril Pediátrico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:03.961Z"
+  },
+  {
+    "id": "AJUDA_65cfa921-0bbd-4a7c-bf1d-a9090f555c66",
+    "originalId": "65cfa921-0bbd-4a7c-bf1d-a9090f555c66",
+    "statement": "Um paciente masculino de 55 anos, tabagista há 30 anos, apresenta perda de peso não intencional de 10 kg nos últimos 6 meses, tosse persistente e hemoptise ocasional. Na avaliação clínica, observa-se linfadenopatia cervical. O raio-x de tórax revela uma massa pulmonar no lobo superior direito. A tomografia computadorizada confirma a presença de uma massa de 4 cm com linfonodos mediastinais aumentados. A biópsia guiada por broncoscopia revela carcinoma de pequenas células do pulmão. A conduta inicial mais apropriada para este paciente, dentre as opções abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ressecção cirúrgica do tumor com linfadenectomia mediastinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quimioterapia seguida de radioterapia para tratamento local e sistêmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia citorredutora seguida de quimioterapia adjuvante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quimioterapia neoadjuvante seguida de ressecção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Observação com seguimento periódico devido à baixa agressividade do tumor.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso:\nO paciente apresenta um Carcinoma de Pequenas Células do Pulmão (CPCP), também conhecido como oat cell. Este tipo histológico é caracterizado por sua alta agressividade, rápido tempo de duplicação celular e uma tendência precoce à disseminação sistêmica (micrometástases). Clinicamente, o CPCP é dividido em Doença Limitada (restrita a um hemitórax e linfonodos regionais que caibam em um campo de radioterapia) e Doença Extensa. No caso em questão, a presença de linfonodos mediastinais e cervicais, associada à massa pulmonar, classifica o quadro como uma doença que requer tratamento sistêmico e local agressivo, mas não cirúrgico.\n\nAlternativa a: Incorreta. Diferente do câncer de pulmão de não pequenas células (adenocarcinoma, carcinoma epidermoide), a cirurgia raramente tem papel no tratamento do CPCP. A ressecção só é considerada em casos excepcionais de nódulo solitário muito pequeno (T1-2, N0), o que não se aplica a este paciente, que já apresenta linfonodopatia mediastinal e cervical.\n\nAlternativa b: Correta. O carcinoma de pequenas células é extremamente sensível à quimioterapia e à radioterapia. Para pacientes em estádio de doença limitada (como parece ser o caso, já que os linfonodos cervicais/supraclaviculares e mediastinais podem ser incluídos no planejamento radioterápico), o padrão-ouro é a quimiorradioterapia concomitante. A quimioterapia trata a doença sistêmica (micrometástases) e a radioterapia foca no controle local da massa e dos linfonodos.\n\nAlternativa c: Incorreta. Não há indicação de cirurgia citorredutora (debulking) para o carcinoma de pequenas células. A biologia do tumor, marcada por disseminação hematogênica precoce, torna o procedimento cirúrgico ineficaz para o controle da sobrevivência global nestes estágios.\n\nAlternativa d: Incorreta. Embora a quimioterapia neoadjuvante seja utilizada em alguns casos de câncer de pulmão de não pequenas células, ela não é a conduta de escolha para o CPCP com acometimento linfonodal. Uma vez que há linfonodos mediastinais positivos no CPCP, o tratamento de escolha é a combinação de quimio e radioterapia, e não a sequência com cirurgia.\n\nAlternativa e: Incorreta. O CPCP é o tipo mais agressivo de câncer pulmonar. Sem tratamento, a sobrevida média é de apenas algumas semanas a poucos meses. O seguimento periódico sem intervenção seria considerado negligência diante de um tumor de crescimento tão rápido e fatal.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Pulmonares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:03.961Z"
+  },
+  {
+    "id": "AJUDA_65dc95f6-6acf-48a5-aec0-d8dfc97545a8",
+    "originalId": "65dc95f6-6acf-48a5-aec0-d8dfc97545a8",
+    "statement": "A meta trianual para o rastreio do câncer de colo uterino é uma razão de 0,4 exames coletados em mulheres da faixa etária compreendida entre 25 e 64 anos. No último triênio, uma UBS alcançou a razão de 0,36, tendo realizado a média de 9 exames citopatológicos por mês, 108 por ano e 324 no triênio. Considerando 900 mulheres da faixa etária preconizada para o rastreio e a periodicidade do rastreio, quantos citopatológicos a mais - em relação ao ano anterior - por mês e por ano deverão ser realizados para alcançar a razão de 0,4?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 a mais por mês - 12 a mais por ano",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "2 a mais por mês - 24 a mais por ano",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3 a mais por mês - 36 a mais por ano",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "4 a mais por mês - 48 a mais por ano",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DOS DADOS FORNECIDOS:\n\n1. População-alvo na UBS: 900 mulheres (25 a 64 anos).\n2. Meta trianual de razão de exames: 0,4.\n3. Desempenho atual (razão): 0,36.\n4. Desempenho atual em números: 9 exames/mês, 108 exames/ano e 324 exames no triênio.\n\nPASSO A PASSO DO CÁLCULO:\n\nPrimeiro, devemos calcular quantos exames são necessários no triênio para atingir a meta de 0,4:\nCálculo: População total x Meta desejada = 900 mulheres x 0,4 = 360 exames no triênio.\n\nSegundo, calculamos a meta anual dividindo o total trianual por 3:\nCálculo: 360 exames / 3 anos = 120 exames por ano.\n\nTerceiro, calculamos a meta mensal dividindo o total anual por 12:\nCálculo: 120 exames / 12 meses = 10 exames por mês.\n\nQuarto, comparamos os novos valores com o que a UBS já realiza para encontrar a diferença (o quanto \"a mais\" deve ser feito):\nDiferença anual: Meta de 120 exames - Atuais 108 exames = 12 exames a mais por ano.\nDiferença mensal: Meta de 10 exames - Atuais 9 exames = 1 exame a mais por mês.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Correta. Conforme os cálculos acima, o incremento necessário é de exatamente 1 exame por mês, totalizando 12 exames adicionais ao final de um ano (12 x 1 = 12).\n\nAlternativa b) Incorreta. Se fossem realizados 2 exames a mais por mês, seriam 24 a mais por ano. Isso resultaria em 132 exames anuais e 396 no triênio, superando a meta de 360 (razão de 0,44).\n\nAlternativa c) Incorreta. O valor de 36 exames a mais corresponde ao déficit total do triênio (360 necessários menos 324 realizados), e não ao incremento anual ou mensal solicitado pela questão.\n\nAlternativa d) Incorreta. Realizar 4 exames a mais por mês resultaria em 48 a mais por ano, elevando o total anual para 156 exames, o que ultrapassa significativamente a meta estabelecida.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:03.961Z"
+  },
+  {
+    "id": "AJUDA_65ecede0-6e2c-4040-be1c-e5a0fd3f08b4",
+    "originalId": "65ecede0-6e2c-4040-be1c-e5a0fd3f08b4",
+    "statement": "Paciente IIGIPN, 35 anos, primeira gestação com o atual parceiro, apresenta-se na 35ª semana gestacional com PA: 173 x 121 mmHg, confirmada após repouso em DLE, dor epigástrica e náuseas. A melhor conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "internação, coleta de exames da rotina hipertensiva, hidralazina, sulfato de magnésio e realização de cesariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "internação, coleta de exames da rotina hipertensiva, metildopa, corticoide, sulfato de magnésio e indução do parto após a estabilização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "internação, coleta de exames da rotina hipertensiva, hidralazina, sulfato de magnésio e indução do parto após a estabilização.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "internação, coleta de exames da rotina hipertensiva, hidralazina e indução do parto após a estabilização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma gestante de 35 semanas com pré-eclâmpsia grave, caracterizada por níveis pressóricos acima de 160 x 110 mmHg (173 x 121 mmHg) e sinais de iminência de eclâmpsia (dor epigástrica e náuseas). Diante desse quadro de urgência hipertensiva na gestação, a conduta deve focar na estabilização materna e na resolução da gestação.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a internação, os exames, a hidralazina e o sulfato de magnésio estejam corretos, a realização de cesariana, por si só, não é a conduta padrão. A pré-eclâmpsia grave, isoladamente, não é uma indicação absoluta de cesariana. A via de parto deve ser decidida com base em critérios obstétricos (condições cervicais, vitalidade fetal e estabilidade materna). A indução do parto é preferível sempre que possível.\n\nb) Incorreta. A metildopa é um anti-hipertensivo de ação central utilizado para o controle crônico da pressão arterial, não sendo a droga de escolha para o manejo de crises hipertensivas agudas (emergências). Além disso, o uso de corticoides para maturação pulmonar fetal é indicado, geralmente, até a 34ª semana de gestação; como a paciente está na 35ª semana, o benefício é reduzido frente à necessidade de resolução imediata após a estabilização.\n\nc) Correta. Esta alternativa descreve o manejo padrão-ouro para a pré-eclâmpsia grave/iminência de eclâmpsia:\n1. Internação: Obrigatória para monitoramento.\n2. Exames de rotina hipertensiva: Para avaliar disfunção orgânica (função renal, enzimas hepáticas, plaquetas e proteinúria).\n3. Hidralazina: Medicamento de escolha para o controle agudo da pressão arterial em níveis de crise (acima de 160/110 mmHg) para prevenir complicações como o AVC.\n4. Sulfato de magnésio: Droga de escolha para a prevenção e tratamento de convulsões (eclâmpsia), obrigatória em casos de pré-eclâmpsia com sinais de gravidade.\n5. Indução do parto após estabilização: Como a gestação já ultrapassou as 34 semanas, a conduta é o parto. A estabilização clínica da mãe deve preceder o nascimento, e a indução vaginal é a via preferencial se as condições materno-fetais permitirem.\n\nd) Incorreta. Esta alternativa falha ao omitir o uso do sulfato de magnésio. Em uma paciente com sinais de iminência de eclâmpsia (dor epigástrica e náuseas), a administração do magnésio é fundamental e mandatória para evitar a progressão para convulsões, que aumentariam drasticamente a morbimortalidade materna e fetal.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Indução do Parto e Pós-Datismo",
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:54:03.961Z"
+  }
+]

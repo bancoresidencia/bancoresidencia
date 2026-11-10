@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_cbdd95ff-2a2b-4ec5-bdc9-d1f331d2cc70",
+    "originalId": "cbdd95ff-2a2b-4ec5-bdc9-d1f331d2cc70",
+    "statement": "Paciente feminino, de 40 anos, com 60kg, referindo apenas ser portadora de DIU, sem outras comorbidades e portadora de lipoma de dorso, com plano de exérese sob anestesia local. Considerando a dose tóxica de lidocaína em 5mg/kg e de 7mg/kg quando associado a epinefrina, qual a quantidade máxima de lidocaína 1% com epinefrina, que pode ser usada com segurança para este paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 a 40ml.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "50 a 60 ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "60 a 70ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "70 a 80ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "80 a 100ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver este cálculo de dose máxima anestésica, devemos seguir três etapas lógicas:\n\n1. Cálculo da Dose Total em Miligramas (mg):\nO enunciado informa que o limite de segurança para a lidocaína com epinefrina é de 7 mg/kg. Como a paciente pesa 60 kg, multiplicamos seu peso pelo limite estabelecido:\n60 kg x 7 mg/kg = 420 mg.\nPortanto, a dose máxima absoluta que esta paciente pode receber é 420 mg de lidocaína para evitar toxicidade.\n\n2. Conversão da Concentração da Lidocaína:\nA solução apresentada é lidocaína a 1%. Em farmacologia, a porcentagem indica a quantidade de soluto em gramas para cada 100 ml de solução.\n1% significa 1 grama de lidocaína em 100 ml.\nComo 1 grama equivale a 1000 mg, temos 1000 mg em 100 ml.\nAo dividir 1000 mg por 100 ml, encontramos que a concentração da lidocaína a 1% é de 10 mg por cada 1 ml.\n\n3. Cálculo do Volume Máximo em Mililitros (ml):\nPara encontrar o volume final, dividimos a dose máxima permitida pela concentração da solução:\n420 mg / 10 mg/ml = 42 ml.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. O cálculo matemático preciso resulta em 42 ml. Esta alternativa é a única que contempla o limite de segurança. Embora o intervalo termine em 40 ml, na prática clínica e em provas de residência, deve-se optar pela faixa que não induza ao erro de ultrapassar a dose tóxica. Qualquer valor acima de 42 ml já entraria na zona de risco para esta paciente.\n\nAlternativa b) Incorreta. O volume de 50 a 60 ml de lidocaína a 1% entregaria entre 500 mg e 600 mg do fármaco. Isso excede o limite de 420 mg calculado, expondo a paciente a riscos de efeitos adversos neurológicos e cardiovasculares.\n\nAlternativa c) Incorreta. Volumes de 60 a 70 ml representam 600 mg a 700 mg de lidocaína, o que ultrapassa significativamente a dose máxima de 7 mg/kg.\n\nAlternativa d) Incorreta. Esta faixa (700 mg a 800 mg) é francamente tóxica para uma pessoa de 60 kg.\n\nAlternativa e) Incorreta. O uso de 80 a 100 ml resultaria em até 1000 mg de lidocaína, o que é extremamente perigoso e incompatível com a segurança em anestesia local para este peso corporal.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:49.732Z"
+  },
+  {
+    "id": "AJUDA_cbe0c0a9-6d9c-43f4-88f3-4d2884e2156b",
+    "originalId": "cbe0c0a9-6d9c-43f4-88f3-4d2884e2156b",
+    "statement": "Menina de 4 anos, previamente hígida, apresenta febre alta há 3 dias, dor intensa para se alimentar e hipersalivação. Ao exame, nota-se gengiva hiperemiada e edemaciada, múltiplas vesículas e úlceras dolorosas disseminadas pela mucosa oral, língua e palato. Há halitose e linfadenopatia cervical dolorosa. Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Herpangina (enterovírus) – conduta de suporte apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Candidíase oral – tratamento com antifúngico nistatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estomatite aftosa recorrente – corticoide tópico oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gengivoestomatite herpética primária – analgesia, hidratação, e considerar uso de Aciclovir.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso apresenta uma criança de 4 anos com um quadro febril agudo associado a manifestações orais intensas. Os pontos-chave para o diagnóstico são: febre alta, lesões ulceradas disseminadas por toda a cavidade oral (não apenas na região posterior), halitose, linfadenopatia cervical e, fundamentalmente, o envolvimento gengival importante (gengiva hiperemiada e edemaciada).\n\nDISCUSSÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A herpangina é causada por enterovírus (geralmente Coxsackie A). Embora também cause febre e úlceras orais, as lesões ficam localizadas tipicamente na região posterior da orofaringe, como palato mole, úvula e pilares amigdalianos. A herpangina não costuma causar gengivite nem acometer a parte anterior da boca e língua de forma tão generalizada quanto o descrito no caso.\n\nAlternativa b) Incorreta. A candidíase oral (sapinho) manifesta-se tipicamente como placas esbranquiçadas aderentes na mucosa, que lembram leite coalhado e que, ao serem removidas, deixam uma base eritematosa. Não é um quadro caracterizado por febre alta e múltiplas úlceras dolorosas com gengivite aguda em pacientes previamente hígidos.\n\nAlternativa c) Incorreta. A estomatite aftosa recorrente (aftas comuns) apresenta-se com úlceras dolorosas, mas geralmente são lesões isoladas ou em pequeno número, sem febre alta, sem halitose intensa e sem o comprometimento gengival generalizado e inflamatório característico da infecção herpética primária.\n\nAlternativa d) Correta. O quadro descrito é clássico de gengivoestomatite herpética primária, causada pelo vírus herpes simplex tipo 1 (HSV-1). É a causa mais comum de estomatite em crianças entre 6 meses e 5 anos. Diferencia-se da herpangina justamente pelo acometimento da porção anterior da boca e pela presença de gengivite intensa (edema e vermelhidão na gengiva). A presença de halitose e linfadenopatia cervical dolorosa reforça o diagnóstico. O tratamento é voltado para o controle da dor e hidratação, mas o uso de aciclovir oral pode ser indicado para reduzir o tempo de febre e a duração das lesões, especialmente se iniciado nas primeiras 72 horas de sintomas.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Febre na Pediatria",
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:49.732Z"
+  },
+  {
+    "id": "AJUDA_cbe2a6bf-db42-4eaa-90cb-b52275f9d878",
+    "originalId": "cbe2a6bf-db42-4eaa-90cb-b52275f9d878",
+    "statement": "Uma mulher de 26 anos, vítima de acidente automobilístico, chega no Hospital de Urgências de Sergipe trazida pelo SAMU, intubada, descorada, FC: 140bpm, PA: 85x50mmHg, em uso de droga vasoativa em alta dose. FAST foi positivo, porém com cerca de 15 mL na pelve. Raio-X de tórax sem alterações traumáticas. Sobre a abordagem desse paciente com choque após trauma assinale a opção incorreta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nesse momento deve ser realizada TC de crânio, tórax e abdome para elucidar etiologia do choque.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O raio-X de tórax na sala de estabilização foi adequado e poderia ter revelado hemotórax maciço como causa do choque.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O FAST, apesar de positivo, não explica a causa do choque nesse caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O caso tem indicação para o protocolo de transfusão maciça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Um raio-X de bacia e a procura por sinais de fratura de fêmur são imprescindíveis nesse caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico: A paciente apresenta um quadro de choque circulatório grave (provavelmente hemorrágico) classificado como grau IV, evidenciado pela hipotensão (PA 85x50 mmHg), taquicardia severa (FC 140 bpm) e necessidade de altas doses de drogas vasoativas. No atendimento ao trauma (ATLS), o foco principal é identificar e tratar a fonte do sangramento.\n\nAlternativa (a) incorreta (gabarito): Esta é a conduta errada no cenário de instabilidade hemodinâmica. Um preceito fundamental no trauma é que pacientes instáveis não devem ser levados para a sala de tomografia computadorizada (TC). A TC é um exame demorado e realizado fora de um ambiente de ressuscitação controlada. Se a causa do choque não foi esclarecida pelos exames à beira do leito (FAST e raio X) e a paciente permanece instável, a conduta correta seria a exploração cirúrgica ou a busca por fontes ósseas de sangramento, e não a tomografia.\n\nAlternativa (b) correta: O raio X de tórax é um adjunto essencial do exame primário. Ele permite diagnosticar rapidamente causas de choque que necessitam de intervenção imediata, como hemotórax maciço ou pneumotórax hipertensivo. No caso, o resultado foi normal, o que ajuda a excluir o tórax como fonte principal do choque.\n\nAlternativa (c) correta: Um volume de 15 mL na pelve é considerado mínimo. Para que o choque fosse de origem abdominal e justificasse a gravidade do quadro (choque classe IV), seria esperado encontrar uma grande quantidade de líquido livre no espaço intraperitoneal. Portanto, o FAST positivo, nesse volume específico, é um achado incidental que não explica a instabilidade hemodinâmica.\n\nAlternativa (d) correta: A paciente preenche critérios para ativação do protocolo de transfusão maciça devido à gravidade do choque, instabilidade hemodinâmica persistente e provável necessidade de reposição rápida de volume e fatores de coagulação para evitar a tríade da morte (acidose, coagulopatia e hipotermia).\n\nAlternativa (e) correta: Uma vez que o tórax e o abdome (pelo FAST) não explicam a magnitude da perda volêmica, é obrigatório investigar outros sítios de sangramento oculto. A bacia pode acomodar litros de sangue em casos de fraturas complexas, assim como o fêmur. O raio X de bacia e o exame físico das coxas são passos fundamentais na avaliação de um paciente com choque de origem indeterminada.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:49.732Z"
+  },
+  {
+    "id": "AJUDA_cbe36bd9-72d4-4e3c-9e8a-0d6d454f9222",
+    "originalId": "cbe36bd9-72d4-4e3c-9e8a-0d6d454f9222",
+    "statement": "Menino de 2 anos com histórico de epilepsia é trazido para a sala de emergência. Mãe refere que criança fez uso de um medicamento por via retal por orientação médica (não lembra o nome), pois apresentou movimentos tônicos clônicos com duração aproximada de 6 minutos. Ao exame físico: sonolenta, frequência respiratória = 10 incursões/minuto, respiração superficial, saturação de oxigênio = 85%. À ausculta pulmonar: murmúrio vesicular diminuído bilateralmente. Qual é a conduta imediata mais apropriada para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fornecer oxigênio por máscara não reinalante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar Naloxone.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ventilar com bolsa-válvula-máscara.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Administrar flumazenil.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve uma criança de 2 anos com insuficiência respiratória aguda após o uso de medicação por via retal (provavelmente diazepam) para cessar uma crise convulsiva de 6 minutos. A frequência respiratória de 10 incursões por minuto para essa idade é considerada bradipneia grave (o normal seria entre 20 e 30 irpm), e a saturação de 85% com murmúrio diminuído indica hipoventilação importante e hipoxemia.\n\nPor que a alternativa (c) está correta?\nSeguindo a priorização do ABCDE na emergência, o paciente apresenta uma falha na ventilação (letra B). Diante de um quadro de bradipneia severa e respiração superficial, o oxigênio suplementar sozinho não resolve o problema, pois o paciente não tem drive respiratório ou força mecânica para realizar as trocas gasosas. A conduta imediata deve ser a ventilação com pressão positiva utilizando a bolsa-válvula-máscara (Ambu) para garantir o volume corrente e a oxigenação.\n\nPor que as outras alternativas estão incorretas?\n\na) Fornecer oxigênio por máscara não reinalante: Esta medida é indicada para pacientes que mantêm um esforço respiratório e volume corrente adequados, mas precisam de maior fração inspirada de oxigênio. No caso em questão, o paciente está hipoventilando; sem suporte ventilatório (pressão positiva), o oxigênio não chegará adequadamente aos alvéolos.\n\nb) Administrar naloxona: A naloxona é o antídoto específico para intoxicação por opioides. O histórico da criança (uso de medicação retal após convulsão) aponta claramente para o uso de benzodiazepínicos, como o diazepam, tornando a naloxona ineficaz neste cenário.\n\nd) Administrar flumazenil: Embora seja o antídoto para benzodiazepínicos, o flumazenil é contraindicado em pacientes com histórico de epilepsia ou que utilizam medicamentos que reduzem o limiar convulsivo. A sua administração pode desencadear crises convulsivas refratárias (estado de mal epiléptico). Além disso, em emergências, a estabilização clínica (ventilação) sempre precede a administração de antídotos.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Epilepsias",
+      "Intoxicações Exógenas",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:49.732Z"
+  },
+  {
+    "id": "AJUDA_cbe90706-8a14-4564-912d-6d5e71332620",
+    "originalId": "cbe90706-8a14-4564-912d-6d5e71332620",
+    "statement": "O grau de contaminação das feridas cirúrgicas no momento da cirurgia é um fator de risco importante para a ocorrência de infecção pós-operatória. O potencial de contaminação cirúrgica descrito pelo NHSN (National Healthcare Safety Network) é amplamente utilizado mundialmente. Nele, as feridas cirúrgicas podem ser classificadas em limpas, potencialmente contaminadas, contaminadas e infectadas, de acordo com as condições locais, condições técnicas da cirurgia e sítio cirúrgico a ser abordado. Analise as seguintes cirurgias e sua classificação:\n\nI) Colecistectomia eletiva por colelitíase – contaminada\nII) Herniorrafia umbilical eletiva – limpa\nIII) Retossigmoidectomia Hartmann por diverticulite com perfuração e abscesso – infectada\nIV) Retirada de enxerto de pele da face lateral da coxa – limpa\nV) Histerectomia por mioma – potencialmente contaminada\nVI) Enterectomia com enteroanastomose por obstrução intestinal por bridas, sem perfuração - contaminada\n\nEstão CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Todas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a II, III, IV, V e VI.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas a IV, V e VI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas a II, III, V e VI.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a questão, devemos recordar os critérios de classificação de cirurgias segundo o potencial de contaminação, estabelecidos pelo CDC/NHSN:\n\n1. Limpas: Tecidos estéreis ou passíveis de descontaminação, sem abertura de tratos (digestório, respiratório ou geniturinário) e sem inflamação.\n2. Potencialmente Contaminadas: Abertura controlada de tratos colonizados (digestório, respiratório ou geniturinário) sob condições controladas e sem contaminação incomum.\n3. Contaminadas: Feridas traumáticas recentes, inflamação aguda não purulenta ou grande extravasamento de conteúdo de vísceras ocas.\n4. Infectadas (ou Sujas): Presença de pus, tecidos necróticos, feridas traumáticas antigas ou perfuração de vísceras ocas com infecção prévia.\n\nAnálise dos itens:\n\nItem I: Incorreto. A colecistectomia eletiva por colelitíase é classificada como Potencialmente Contaminada. Isso ocorre porque há a abertura de um trato colonizado (vias biliares) de forma controlada, sem inflamação aguda. Ela só seria contaminada se houvesse colecistite aguda ou extravasamento biliar importante.\n\nItem II: Correto. A herniorrafia umbilical eletiva não invade tratos colonizados e é realizada em tecido sem processo inflamatório, caracterizando-se como cirurgia Limpa.\n\nItem III: Correto. A presença de diverticulite com perfuração e abscesso indica que já existe uma infecção clínica e material purulento no local antes da cirurgia, o que classifica o procedimento como Infectado.\n\nItem IV: Correto. A retirada de enxerto de pele na coxa é um procedimento realizado em pele íntegra e sem contato com mucosas colonizadas, sendo, portanto, uma cirurgia Limpa.\n\nItem V: Correto. A histerectomia exige a entrada no trato genital (vagina), que é uma cavidade colonizada por flora bacteriana. Como a entrada é controlada e eletiva, é classificada como Potencialmente Contaminada.\n\nItem VI: Correto. Em quadros de obstrução intestinal, há estase de conteúdo e aumento expressivo da carga bacteriana nas alças. A manipulação e a abertura de alça (enterectomia) nessas condições de sofrimento tecidual ou grande contaminação fecaloide classificam a cirurgia como Contaminada.\n\nConclusão:\nOs itens II, III, IV, V e VI estão corretos, enquanto o item I está incorreto.\n\nGabarito: Letra (b).",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Perioperatório",
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:49.732Z"
+  },
+  {
+    "id": "AJUDA_cbeb21ba-8e12-4c1d-b99f-d47a7d8381be",
+    "originalId": "cbeb21ba-8e12-4c1d-b99f-d47a7d8381be",
+    "statement": "Uma mulher de 57 anos comparece à unidade de saúde após receber resultado de biópsia de mama indicando carcinoma do tipo não especial com imunohistoquímica positiva para HER-2 e negativa para receptores de estrogênio e progesterona. Com esse resultado, após a cirurgia, será indicada terapia complementar com:",
+    "options": [
+      {
+        "id": "A",
+        "text": "inibidores da aromatase",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "trastuzumabe",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "desogestrel",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tamoxifeno",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um carcinoma de mama cujo perfil imuno-histoquímico é HER2 positivo e receptores hormonais (estrogênio e progesterona) negativos. Esse perfil define o subtipo molecular HER2-enriquecido. O tratamento adjuvante (após a cirurgia) visa eliminar micrometástases e depende diretamente dos alvos expressos pelo tumor. Como o tumor não expressa receptores de estrogênio ou progesterona, ele não responderá a terapias endócrinas (hormonioterapia), mas como expressa a proteína HER2, ele é altamente sensível a terapias anti-HER2.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Os inibidores da aromatase (como anastrozol, letrozol e exemestano) são utilizados na hormonioterapia de mulheres na pós-menopausa. No entanto, sua indicação exige que o tumor apresente receptores hormonais positivos. No caso descrito, os receptores são negativos, logo, não há alvo para esse medicamento agir.\n\nAlternativa B: Correta. O trastuzumabe é um anticorpo monoclonal que se liga especificamente ao receptor HER2 na superfície das células cancerígenas. Ele bloqueia as vias de sinalização que promovem o crescimento e a proliferação celular, além de marcar a célula para destruição pelo sistema imunológico. É o tratamento de escolha e obrigatório para pacientes com tumores HER2 positivos, reduzindo significativamente o risco de recorrência e mortalidade.\n\nAlternativa C: Incorreta. O desogestrel é um hormônio progestogênio isolado utilizado em métodos contraceptivos ou para controle de ciclos menstruais. Não possui qualquer papel ou indicação no tratamento do câncer de mama.\n\nAlternativa D: Incorreta. O tamoxifeno é um modulador seletivo do receptor de estrogênio (SERM) que atua bloqueando a ligação do estrogênio ao seu receptor na célula tumoral. Assim como os inibidores da aromatase, sua eficácia depende da presença de receptores hormonais no tumor. Como a paciente é negativa para esses receptores, o tamoxifeno não tem indicação clínica neste caso.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:49.732Z"
+  },
+  {
+    "id": "AJUDA_cbfaf8e9-647d-4e54-8c34-74ff84c014d1",
+    "originalId": "cbfaf8e9-647d-4e54-8c34-74ff84c014d1",
+    "statement": "Com relação ao midazolam, muito utilizado em sedação, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sua diluição é obrigatória, e apenas com soro fisiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Seu tempo de início de ação é, em média, de 3-4 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Seu tempo de ação é, em média, de 60 a 90 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doses repetidas se acumulam no tecido adiposo, prolongando seu efeito sedativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O evento adverso mais encontrado durante seu uso é a hipotensão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa (a) Incorreta: A diluição do midazolam não é obrigatória; ele pode ser administrado por via endovenosa em sua forma pura (bolus). Quando a diluição é desejada, a droga é compatível não apenas com o soro fisiológico a 0,9%, mas também com o soro glicosado a 5% e com a solução de Ringer-lactato.\n\nAlternativa (b) Incorreta: O tempo de início de ação (onset) do midazolam após administração endovenosa é bastante rápido, ocorrendo geralmente entre 1 e 2 minutos. O intervalo de 3 a 4 minutos é excessivo para a via IV em condições normais de circulação.\n\nAlternativa (c) Incorreta: O midazolam é um benzodiazepínico de ação curta. Embora sua meia-vida de eliminação varie de 1,5 a 2,5 horas, o tempo de efeito clínico de uma dose única para sedação procedimental costuma ser menor, com o pico de sedação ocorrendo rapidamente e a recuperação iniciando-se antes do intervalo de 60-90 minutos citado.\n\nAlternativa (d) Correta: O midazolam possui alta lipossolubilidade em pH fisiológico. Essa característica permite que a droga atravesse rapidamente a barreira hematoencefálica, mas também faz com que ela se distribua para o tecido adiposo. Quando são administradas doses repetidas ou infusões contínuas, os locais de depósito (gordura) ficam saturados. Ao interromper a droga, ela retorna desses tecidos para o plasma, o que prolonga consideravelmente o tempo de despertar e o efeito sedativo residual, fenômeno relacionado ao aumento da meia-vida sensível ao contexto.\n\nAlternativa (e) Incorreta: O evento adverso mais crítico e frequentemente observado em sedações com midazolam é a depressão respiratória (podendo causar diminuição do volume corrente, da frequência respiratória ou apneia). Embora a hipotensão possa ocorrer por redução da resistência vascular periférica, ela é geralmente leve em pacientes estáveis e menos frequente do que as alterações do drive respiratório. Além disso, a amnésia anterógrada é o efeito farmacológico colateral mais comum da droga.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:49.732Z"
+  },
+  {
+    "id": "AJUDA_cc0ea3ff-58f4-4ebb-b6e5-c7af42f48c22",
+    "originalId": "cc0ea3ff-58f4-4ebb-b6e5-c7af42f48c22",
+    "statement": "Paciente do sexo masculino, com 65 anos, refere dor lombar esquerda de leve intensidade e hematúria macroscópica, há 1 semana. Antecedente pessoal de hipertensão arterial e tabagismo de 45 maços/ano. Ao exame físico encontra-se descorado 1+, abdome indolor, massa endurecida palpável em hipocondrio esquerdo, sinal de Giordano negativo. O melhor exame para elucidação diagnóstica e a provável patologia são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ressonância magnética de próstata - Adenocarcinoma de próstata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ultrassom transretal de próstata - Hiperplasia prostática benigna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Exame de urina tipo 1 - Carcinoma urotelial de bexiga.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ressonância magnética de abdome - Adenocarcinoma de úraco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tomografia computadorizada de abdome - Carcinoma de células renais.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta a tríade clássica do carcinoma de células renais (Tumor de Grawitz): dor lombar, hematúria macroscópica e massa abdominal palpável. Embora essa tríade completa ocorra em menos de 10% dos casos atualmente (devido aos achados incidentais em exames de imagem), sua presença é fortemente sugestiva de neoplasia renal avançada. O tabagismo (45 maços/ano) é o principal fator de risco modificável para essa patologia. A localização da massa em hipocôndrio esquerdo e a dor lombar ipsilateral direcionam o diagnóstico para o rim esquerdo.\n\nAnálise das alternativas:\n\na) Incorreta. O adenocarcinoma de próstata geralmente se manifesta com sintomas obstrutivos urinários baixos ou é assintomático nas fases iniciais. A dor lombar no câncer de próstata costuma estar associada a metástases ósseas, e não a uma massa palpável no hipocôndrio. Além disso, a RM de próstata não é o exame inicial para investigação de hematúria e massa abdominal.\n\nb) Incorreta. A hiperplasia prostática benigna (HPB) causa sintomas de armazenamento e esvaziamento vesical (polaciúria, nictúria, jato fraco). Embora possa causar hematúria, não justifica uma massa palpável em hipocôndrio nem dor lombar isolada. O ultrassom transretal é utilizado para guiar biópsias ou avaliar o volume prostático, não para o diagnóstico de massas abdominais.\n\nc) Incorreta. O carcinoma urotelial de bexiga tem o tabagismo como importante fator de risco e se manifesta com hematúria. No entanto, não explicaria uma massa palpável no hipocôndrio/flanco. O exame de urina tipo 1 apenas confirmaria a hematúria, mas não é um exame de elucidação diagnóstica para a causa da massa.\n\nd) Incorreta. O adenocarcinoma de úraco é um tumor raro que se localiza na linha média, entre a cúpula vesical e o umbigo. Os sintomas costumam envolver hematúria e massa palpável na região suprapúbica ou infraumbilical, o que não condiz com a localização no hipocôndrio esquerdo descrita no caso.\n\ne) Correta. A tomografia computadorizada (TC) de abdome com contraste venoso é o padrão-ouro para o diagnóstico, avaliação de características morfológicas e estadiamento do carcinoma de células renais. O quadro clínico do paciente (idade, tabagismo, hematúria, dor e massa palpável) é a descrição clássica desta patologia, tornando a TC o próximo passo mais adequado para a elucidação diagnóstica.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:49.732Z"
+  },
+  {
+    "id": "AJUDA_cc13eebd-0377-4cac-aeb6-4286b17df614",
+    "originalId": "cc13eebd-0377-4cac-aeb6-4286b17df614",
+    "statement": "Paciente com diverticulite aguda perfurada e peritonite difusa purulenta (Hinchey III), hemodinamicamente instável. A conduta cirúrgica mais segura é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lavagem laparoscópica e drenagem da cavidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sigmoidectomia com anastomose primária e ileostomia de proteção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hemicolectomia esquerda com anastomose primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cirurgia de Hartmann.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o manejo cirúrgico da diverticulite aguda complicada. Para resolvê-la, é fundamental integrar a classificação de Hinchey com o estado clínico do paciente.\n\nO paciente apresenta um quadro de Hinchey III (peritonite purulenta generalizada) associado à instabilidade hemodinâmica. Esse último fator é o principal determinante para a escolha da técnica mais segura.\n\nAnálise das alternativas:\n\na) Lavagem laparoscópica e drenagem da cavidade: Incorreta. Embora a lavagem laparoscópica tenha sido estudada como alternativa para Hinchey III em pacientes selecionados e estáveis, ela ainda é controversa. Em um cenário de instabilidade hemodinâmica e peritonite difusa, o foco infeccioso (o segmento doente) deve ser preferencialmente removido, e a laparoscopia não é a via de escolha para pacientes instáveis.\n\nb) Sigmoidectomia com anastomose primária e ileostomia de proteção: Incorreta. A anastomose primária (com ou sem estomia de proteção) tem ganhado espaço no tratamento de Hinchey III e IV, mas sua realização exige que o paciente esteja hemodinamicamente estável e com tecidos em boas condições. Em vigência de choque ou instabilidade, o risco de deiscência da sutura é muito alto devido à má perfusão tecidual, tornando essa opção insegura neste caso.\n\nc) Hemicolectomia esquerda com anastomose primária: Incorreta. Além de ser uma cirurgia mais extensa do que a necessária (o foco costuma estar no sigmoide), a realização de anastomose primária é contraindicada pelos mesmos motivos citados na alternativa anterior: a instabilidade hemodinâmica do paciente.\n\nd) Cirurgia de Hartmann: Correta. A Cirurgia de Hartmann consiste na ressecção do cólon acometido (sigmoidectomia), fechamento do coto retal e confecção de uma colostomia terminal em flanco esquerdo. É considerada a conduta clássica e mais segura para pacientes com peritonite franca (Hinchey III e IV) que apresentam instabilidade hemodinâmica ou comorbidades graves. Ela elimina rapidamente a fonte da infecção e evita o risco de uma deiscência de anastomose em um paciente criticamente enfermo.\n\nEm resumo, diante de peritonite purulenta ou fecal com instabilidade hemodinâmica, a Cirurgia de Hartmann permanece como o padrão-ouro por priorizar a sobrevivência do paciente e o controle rápido do foco séptico.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:49.732Z"
+  },
+  {
+    "id": "AJUDA_cc16950c-411c-4cfe-a18d-89ef784fe1d8",
+    "originalId": "cc16950c-411c-4cfe-a18d-89ef784fe1d8",
+    "statement": "Uma paciente de 30 anos de idade, grávida de 36 semanas, apresenta-se ao Pronto-Socorro com queixas de cefaleia persistente e visão turva. Durante a avaliação, verifica-se PA: 160x105mmHg e a urina de 24 horas revela 4g de proteína. A ultrassonografia obstétrica realizada identifica feto com crescimento adequado e oligoidrâmnio. O médico assistente diagnostica pré-eclâmpsia com critérios de gravidade ou deterioração.\n\nA intervenção farmacológica capaz de previnir a eclâmpsia, no manejo da pré-eclâmpsia com critérios de gravidade é o uso de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antihipertensivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gluconato de Cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sulfato de Magnésio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Essa questão aborda o manejo farmacológico da pré-eclâmpsia grave, focando especificamente na prevenção da sua complicação mais temida: a eclâmpsia (crises convulsivas). A paciente apresenta sinais clássicos de gravidade, como níveis pressóricos elevados (160 x 105 mmHg) e sintomas de iminência (cefaleia e visão turva).\n\nAnálise das alternativas:\n\na) Anti-hipertensivos: Estão indicados para o controle dos níveis pressóricos, visando reduzir o risco de complicações maternas, como o acidente vascular cerebral (AVC) e o edema agudo de pulmão. No entanto, embora controlem a pressão, não possuem a propriedade de estabilizar a membrana neuronal para prevenir as convulsões da eclâmpsia.\n\nb) Gluconato de cálcio: Esta substância é o antídoto utilizado em casos de intoxicação pelo sulfato de magnésio. Deve estar sempre à beira do leito durante a infusão do magnésio, caso a paciente apresente sinais de toxicidade (como perda de reflexo patelar ou depressão respiratória), mas não serve para prevenir a eclâmpsia.\n\nc) Corticoide: O uso de corticoides (como betametasona ou dexametasona) na gestação tem como objetivo principal a aceleração da maturidade pulmonar fetal em casos de risco de parto prematuro, geralmente até as 34 semanas. Além de a paciente estar com 36 semanas, o corticoide não possui efeito na prevenção de convulsões.\n\nd) Sulfato de magnésio: É a alternativa correta. O sulfato de magnésio é a droga de escolha e o padrão-ouro mundial para a prevenção e o tratamento das convulsões na pré-eclâmpsia com critérios de gravidade. Ele atua no sistema nervoso central promovendo vasodilatação cerebral e bloqueando receptores NMDA, o que reduz a excitabilidade neuronal. Deve ser iniciado imediatamente em pacientes com sinais de iminência ou pré-eclâmpsia grave.\n\nJustificativa do Gabarito: O sulfato de magnésio é a única intervenção farmacológica, entre as listadas, que comprovadamente reduz o risco de progressão da pré-eclâmpsia para eclâmpsia. Portanto, a alternativa (d) está correta.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:49.732Z"
+  }
+]

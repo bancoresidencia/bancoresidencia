@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_4d5c2056-f486-48e9-8db4-4f4b869a5e9c",
+    "originalId": "4d5c2056-f486-48e9-8db4-4f4b869a5e9c",
+    "statement": "Homem jovem, 33 anos, após abusar de ingestão de álcool em uma rave, iniciou quadro de dor abdominal intensa em andar superior do abdome associada a náuseas. Foi internado devido a dor intensa. Fez tomografia de admissão sendo normal. No terceiro dia de internação, não havendo melhora do quadro clínico, foi repetida a tomografia e laboratório. Amilase e lipase estavam elevadas em 3 vezes o normal, e a tomografia apresentava necrose pancreática de 40% do parênquima.\n\nSobre o caso relatado, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A antibioticoprofilaxia deve ser iniciada logo no primeiro dia para prevenir necrose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A nutrição parenteral precoce é a via alimentar preferida, pois dá repouso ao pâncreas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A tomografia com contraste deve ser solicitada precocemente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todos os pacientes com pancreatite devem ser tratados em unidade de terapia intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Se confirmado necrose infectada, o tratamento deve ser cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O caso descreve um paciente com Pancreatite Aguda Grave, caracterizada pela presença de necrose pancreática (40%) identificada em tomografia computadorizada. Vamos analisar cada alternativa para entender por que a letra E é a correta:\n\nAlternativa A: Incorreta. O uso de antibioticoprofilaxia na pancreatite aguda, mesmo naquelas com extensa necrose estéril, não é recomendado pelas diretrizes atuais (como as da Associação Americana de Gastroenterologia e da IAP/APA). O antibiótico não previne a formação de necrose nem a sua infecção, devendo ser reservado apenas para casos de infecção confirmada ou suspeita clínica forte (como febre e piora laboratorial após a primeira semana).\n\nAlternativa B: Incorreta. A nutrição parenteral não é a via preferida. Atualmente, a nutrição enteral (por sonda nasoenteral ou nasogástrica) é a primeira escolha para pacientes que não toleram a via oral. A nutrição enteral ajuda a manter a integridade da barreira intestinal, reduzindo a translocação bacteriana e, consequentemente, o risco de infecção da necrose. A nutrição parenteral é reservada apenas para casos em que a via enteral não é possível ou não atinge as metas calóricas.\n\nAlternativa C: Incorreta. A tomografia com contraste realizada precocemente (nas primeiras 48 a 72 horas) muitas vezes não consegue delimitar a extensão real da necrose, podendo resultar em um exame falso-negativo ou subestimar a gravidade, como ocorreu no caso relatado. O momento ideal para avaliar complicações locais como a necrose é após 72 a 96 horas do início dos sintomas.\n\nAlternativa D: Incorreta. A grande maioria dos casos de pancreatite aguda (cerca de 80%) é de natureza leve e autolimitada, podendo ser tratada em enfermaria com hidratação e analgesia. A Unidade de Terapia Intensiva (UTI) é indicada apenas para casos graves, com falência orgânica persistente ou critérios de alto risco.\n\nAlternativa E: Correta. A necrose pancreática estéril deve ser tratada clinicamente. No entanto, se houver confirmação de necrose infectada (seja por presença de gás na tomografia ou punção por agulha fina com cultura positiva), a intervenção para desbridamento é necessária. Embora atualmente se prefira a abordagem \"step-up\" (começando com drenagem percutânea ou endoscópica), a necrosectomia (cirúrgica) continua sendo o tratamento definitivo clássico para a necrose infectada que não responde a medidas minimamente invasivas. No contexto de provas de residência, a associação \"necrose infectada = tratamento cirúrgico/intervencionista\" é a regra.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:08.493Z"
+  },
+  {
+    "id": "AJUDA_4d5c581a-44f3-474d-84cf-de8616b9f969",
+    "originalId": "4d5c581a-44f3-474d-84cf-de8616b9f969",
+    "statement": "Um homem de 65 anos de idade, diabético, com DRC estágio 4 (TFG estimada 28 ml/min/1,73 m²) e hipertenso relatou possuir arritmia há anos, bem como insuficiência cardíaca com fração de ejeção preservada. O paciente estava em uso de losartana e apresentava PA de 150/90 mmHg e FC de 115 na consulta. Foram confirmadas aferições em valores semelhantes em controle, o que fora trazido pelo próprio paciente.\n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta o próximo agente farmacológico preferencial para o tratamento anti‑hipertensivo ao caso em específico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "furosemida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "bisoprolol",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "anlodipino",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "diltiazem",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "espironolactona",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um quadro de Hipertensão Arterial Sistêmica (HAS) não controlada (150/90 mmHg), associada à Doença Renal Crônica (DRC) estágio 4 (TFG 28 ml/min), Diabetes Mellitus, Insuficiência Cardíaca com Fração de Ejeção Preservada (ICFEp) e uma arritmia crônica com frequência cardíaca (FC) elevada (115 bpm). O desafio é escolher uma droga que auxilie no controle pressórico e, simultaneamente, trate as comorbidades, especialmente a taquicardia/arritmia.\n\nAnálise das Alternativas:\n\na) Furosemida: É um diurético de alça indicado para o tratamento da hipertensão em pacientes com DRC avançada (TFG < 30 ml/min), em que os diuréticos tiazídicos perdem eficácia. Embora seja útil no manejo da volemia e da pressão na DRC estágio 4, a furosemida não possui efeito sobre a frequência cardíaca. Como o paciente está nitidamente taquicárdico (FC 115), ela não é a escolha prioritária neste momento.\n\nb) Bisoprolol (Correta): Os betabloqueadores são indicados como terapia anti-hipertensiva quando o paciente possui indicações específicas, como insuficiência cardíaca ou necessidade de controle de frequência cardíaca em arritmias (como a fibrilação atrial, sugerida pelo histórico). O bisoprolol é um betabloqueador cardiosseletivo que ajudará tanto a reduzir a pressão arterial quanto a controlar a frequência cardíaca de 115 bpm, sendo a escolha ideal para este cenário clínico.\n\nc) Anlodipino: É um bloqueador de canais de cálcio diidropiridínico, excelente anti-hipertensivo e seguro na DRC. No entanto, ele pode causar taquicardia reflexa e não tem nenhuma ação no controle da arritmia/frequência cardíaca elevada do paciente. Portanto, não é a melhor opção frente à necessidade de controle da FC.\n\nd) Diltiazem: É um bloqueador de canais de cálcio não diidropiridínico que reduz a frequência cardíaca. Contudo, em pacientes com insuficiência cardíaca (mesmo com fração de ejeção preservada), os betabloqueadores (como o bisoprolol) são geralmente preferidos e possuem maior evidência de benefício clínico do que o diltiazem para o controle de frequência e proteção cardiovascular.\n\ne) Espironolactona: É um antagonista do receptor mineralocorticoide. Embora seja uma droga de quarta linha no tratamento da HAS e útil na IC, seu uso é contraindicado ou deve ser evitado em pacientes com DRC estágio 4 e 5 (especialmente com TFG < 30 ml/min) devido ao alto risco de hipercalemia grave. Como a TFG do paciente é 28 ml/min, esta opção é incorreta e perigosa.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica",
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:08.493Z"
+  },
+  {
+    "id": "AJUDA_4d5eefb1-079b-4fa3-9d98-23f9a78ccf4d",
+    "originalId": "4d5eefb1-079b-4fa3-9d98-23f9a78ccf4d",
+    "statement": "É um fator de risco para alergia respiratória ao contraste intravenoso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "história familiar de alergia medicamentosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "insuficiência renal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hipotireoidismo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "história de alergia prévia ao meio de contraste",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Explicação da Questão:\n\nAs reações adversas aos meios de contraste iodados podem ser divididas em reações quimiotóxicas (dependentes da dose e da concentração) e reações de hipersensibilidade ou idiossincráticas (independentes da dose, que se assemelham a alergias). A questão solicita a identificação de um fator de risco para as reações de hipersensibilidade.\n\nAlternativa (a) Incorreta: Ter familiares com alergia medicamentosa não é um fator de risco estabelecido para que o paciente desenvolva uma reação ao contraste. O risco é individual e baseia-se prioritariamente no histórico clínico do próprio paciente.\n\nAlternativa (b) Incorreta: A insuficiência renal é o principal fator de risco para a Nefropatia Induzida por Contraste (NIC). No entanto, a NIC é uma reação de toxicidade renal direta e não possui mecanismo alérgico ou imunológico. Portanto, o comprometimento da função renal não predispõe a reações respiratórias ou cutâneas de caráter alérgico.\n\nAlternativa (c) Incorreta: O hipotireoidismo não está associado ao aumento do risco de alergia ao contraste. Existe uma preocupação teórica em pacientes com hipertireoidismo descompensado ou bócio nodular, em que a carga de iodo poderia desencadear tireotoxicose (efeito Jod-Basedow), mas isso é uma complicação metabólica/endócrina, não uma reação alérgica.\n\nAlternativa (d) Correta: O histórico de reação adversa prévia ao meio de contraste iodado é o fator de risco isolado mais importante para uma nova reação. Pacientes que já apresentaram manifestações alérgicas ao contraste têm uma probabilidade significativamente maior (cerca de 5 a 10 vezes mais) de sofrerem um novo evento em exposições subsequentes. Nesses casos, recomenda-se o uso de contrastes de baixa osmolaridade e a realização de protocolos de dessensibilização ou pré-medicação com corticoides e anti-histamínicos.\n\nGabarito: Letra (d).",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:08.493Z"
+  },
+  {
+    "id": "AJUDA_4d6f4117-451e-446c-9087-615c0e856e2f",
+    "originalId": "4d6f4117-451e-446c-9087-615c0e856e2f",
+    "statement": "Paciente de 78 anos, com quadro de bexiga neurogênica, apresenta um quadro de delirium no pós-operatório imediato de prostatectomia. Qual das medicações abaixo é melhor indicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Haloperidol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Clorpromazina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tioridazina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Levomepromazina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo farmacológico do delirium no paciente idoso, com foco especial nas comorbidades e no perfil de efeitos colaterais dos antipsicóticos.\n\nO delirium é um distúrbio agudo da atenção e da cognição, muito comum em idosos no pós-operatório. A primeira linha de tratamento é sempre a identificação e a correção das causas subjacentes e a implementação de medidas não farmacológicas. Quando o uso de medicação se torna necessário (devido à agitação severa ou ao risco à integridade do paciente), os antipsicóticos em baixas doses são as drogas de escolha.\n\nAlternativa A: Correta. O haloperidol é um antipsicótico típico de alta potência. Ele é a medicação de escolha no delirium por possuir pouca atividade anticolinérgica, pouco efeito sedativo e mínima interferência na pressão arterial. No caso específico deste paciente, que possui bexiga neurogênica e operou a próstata, o uso de medicações com perfil anticolinérgico é perigoso, pois pode causar retenção urinária aguda e agravar ainda mais o quadro de confusão mental.\n\nAlternativa B: Incorreta. A clorpromazina é um antipsicótico de baixa potência com elevada atividade anticolinérgica e alfa-bloqueadora. Em idosos, ela aumenta consideravelmente o risco de hipotensão ortostática, sedação excessiva e retenção urinária, sendo contraindicada para o manejo do delirium nesse perfil de paciente.\n\nAlternativa C: Incorreta. A tioridazina também é um antipsicótico de baixa potência com fortíssimos efeitos colaterais, incluindo sedação e risco de arritmias por prolongamento do intervalo QT. Assim como a clorpromazina, agravaria a condição urinária do paciente e a própria desorientação.\n\nAlternativa D: Incorreta. A levomepromazina é um antipsicótico de baixa potência extremamente sedativo e com alto poder anticolinérgico. Seu uso no pós-operatório de um paciente idoso com comorbidades urológicas elevaria drasticamente o risco de complicações como quedas, retenção urinária e prolongamento do estado confusional.\n\nEm resumo, o haloperidol (alternativa A) é preferível porque oferece o melhor perfil de segurança em relação aos efeitos colaterais autonômicos (anticolinérgicos), preservando a função urinária e hemodinâmica do paciente idoso.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:08.493Z"
+  },
+  {
+    "id": "AJUDA_4d7185ce-86a4-4d28-a0c0-98bcf8d81dab",
+    "originalId": "4d7185ce-86a4-4d28-a0c0-98bcf8d81dab",
+    "statement": "Recém-nascido à termo nasceu apresentando malformação congênita de parede abdominal, ocasionando exposição de estrutura intra abdominal. A hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gastroquise.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tocotraumatismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Prune-Belly.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome Beckwith-Wiedemann.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a (a) Gastroquise.\n\nA gastroquise é um defeito congênito da parede abdominal caracterizado por uma abertura, geralmente à direita da inserção do cordão umbilical, que permite a herniação das alças intestinais (e, por vezes, de outros órgãos) para fora da cavidade abdominal. Uma característica distintiva é que não existe uma membrana ou saco recobrindo essas estruturas, deixando-as em contato direto com o líquido amniótico durante a gestação e com o meio externo após o nascimento. O enunciado descreve exatamente esse cenário de malformação com exposição de estrutura intra-abdominal.\n\nAlternativa (b) Tocotraumatismo: Está incorreta. O termo se refere a qualquer lesão ou trauma sofrido pelo recém-nascido durante o processo de parto, como fraturas de clavícula, cefaloematomas ou lesões de plexo braquial. Não se trata de uma malformação congênita de desenvolvimento da parede abdominal.\n\nAlternativa (c) Síndrome de Prune-Belly: Está incorreta. Também conhecida como Síndrome da Barriga em Ameixa Seca, é caracterizada por uma tríade: ausência ou hipoplasia da musculatura abdominal, malformações do trato urinário e criptorquidia. Embora a parede abdominal seja muito fina, flácida e enrugada, a pele está íntegra e não há comunicação ou exposição das vísceras para o meio externo.\n\nAlternativa (d) Síndrome Beckwith-Wiedemann: Está incorreta. Trata-se de um distúrbio de hipercrescimento que cursa com macrossomia, macroglossia (língua aumentada) e defeitos da parede abdominal, mais comumente a onfalocele. Na onfalocele, as vísceras saem através do anel umbilical, mas, diferentemente da gastroquise, elas são recobertas por um saco membranoso composto por peritônio e âmnio. A descrição de exposição direta favorece o diagnóstico de gastroquise.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:08.493Z"
+  },
+  {
+    "id": "AJUDA_4d732130-6e51-4e4e-ae88-9478bf4add99",
+    "originalId": "4d732130-6e51-4e4e-ae88-9478bf4add99",
+    "statement": "Sobre o tratamento farmacológico crônico da obesidade, é indicado",
+    "options": [
+      {
+        "id": "A",
+        "text": "a liraglutida, análogo ao hormônio peptídeo semelhante ao glucagon-1 (GLP-1) endógeno, inibidos de glucagon e somatostatina, de uso diário, tendo como vantagem o uso permitido em gestantes e lactantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a semaglutida, peptídeo sintético com ação de duplo agonismo nos receptores de GLP-1 e GIP, é a medicação que demonstrou o maior percentual de perda de peso até o momento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "as medicações aprovadas para perda de peso no Brasil demonstraram efeitos benéficos sobre o perfil lipídico, exceto a sibutramina, que demonstrou aumento do risco cardiovascular em pacientes dislipidêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o orlistate tem o potencial de aumento de risco de cálculos renais, pelo aumento da absorção intestinal de oxalato, o que pode levar a hiperoxalúria.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa (a) INCORRETA: A liraglutida é, de fato, um análogo do GLP-1 de uso diário. No entanto, o erro da alternativa reside na afirmação de que seu uso é permitido em gestantes e lactantes. Todas as medicações aprovadas para o tratamento da obesidade são contraindicadas durante a gestação e a amamentação. No caso de pacientes que planejam engravidar, a recomendação é a suspensão do fármaco meses antes da concepção.\n\nAlternativa (b) INCORRETA: A semaglutida é um agonista seletivo do receptor de GLP-1. A medicação que atua como duplo agonista (nos receptores de GLP-1 e GIP - polipeptídeo insulinotrópico dependente de glicose) é a tirzepatida. Embora a semaglutida apresente excelentes resultados de perda de peso, a descrição de \"duplo agonismo\" refere-se especificamente à tirzepatida, que em estudos recentes demonstrou percentuais de perda ponderal ainda superiores aos da semaglutida isolada.\n\nAlternativa (c) INCORRETA: A sibutramina é um inibidor da recaptação de serotonina e noradrenalina. O estudo SCOUT (Sibutramine Cardiovascular Outcomes Trial) demonstrou um aumento do risco de eventos cardiovasculares não fatais (como infarto e AVC) em pacientes que já apresentavam doença cardiovascular prévia ou diabetes com outro fator de risco. No entanto, a sibutramina não é a única exceção quanto aos benefícios lipídicos; o foco da contraindicação está no seu efeito simpaticomimético (aumento de pressão arterial e frequência cardíaca) em pacientes de alto risco, e não especificamente na dislipidemia isolada.\n\nAlternativa (d) CORRETA: O orlistate atua inibindo as lipases gástrica e pancreática, reduzindo a absorção de gorduras no trato gastrointestinal em cerca de 30%. Essa gordura não absorvida permanece na luz intestinal e se liga ao cálcio dietético (processo de saponificação). Em condições normais, o cálcio se ligaria ao oxalato para impedir sua absorção. Com o cálcio \"ocupado\" pelas gorduras, o oxalato permanece livre e é absorvido em maior quantidade pelo cólon (hiperoxalúria entérica), o que aumenta significativamente o risco de formação de cálculos renais de oxalato de cálcio e, em casos raros, pode levar à nefropatia por oxalato.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:08.493Z"
+  },
+  {
+    "id": "AJUDA_4d7bf219-0e11-4d47-bc1f-213f92b7837d",
+    "originalId": "4d7bf219-0e11-4d47-bc1f-213f92b7837d",
+    "statement": "Paciente, 37 anos de idade, G1P1, procura atendimento por amenorreia há 10 meses, ondas de calor intensas e ressecamento vaginal. Relata que a mãe entrou na menopausa aos 39 anos de idade. História de hipotireoidismo autoimune controlado. Exame físico: IMC 22 kg/m², mucosa vaginal atrófica. Exames laboratoriais (duas dosagens com intervalo de 1 mês): β-hCG: negativo, FSH: 48 mUl/mL, LH: 32 mUl/mL, TSH: 1,4 mUI/L, Densitometria óssea: T-score: -2,2 em coluna lombar, Perfil lipídico com LDL 172 mg/dL e ressonância de mamas BI-RADS I. Assinale a alternativa que apresenta, corretamente, a conduta prioritária nesse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas acompanhar clinicamente, já que não há risco imediato à saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar anticoncepcional oral combinado, como alternativa segura para controle dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar terapia hormonal estro-progestagênica até a idade esperada da menopausa natural.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever bisfosfonato, devido à baixa densidade mineral óssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Reforçar estrogênio, cálcio e vitamina D, com tratamento específico para osteopenia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Diagnóstico: O caso clínico descreve uma paciente de 37 anos (abaixo de 40 anos) com amenorreia há 10 meses e sintomas climatéricos (ondas de calor e ressecamento vaginal). Os exames laboratoriais confirmam o diagnóstico de Insuficiência Ovariana Prematura (IOP) ao apresentarem níveis de FSH superiores a 25-40 mUI/mL em duas dosagens com intervalo de um mês. O histórico familiar (mãe com menopausa aos 39 anos) e a doença autoimune (hipotireoidismo) são fatores de risco conhecidos para IOP.\n\nAnálise das complicações: A paciente já apresenta repercussões sistêmicas do hipoestrogenismo: atrofia vaginal, dislipidemia (LDL 172 mg/dL) e osteopenia (T-score de -2,2). Sem intervenção, ela apresenta alto risco de osteoporose precoce e doenças cardiovasculares.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A conduta expectante é perigosa. A IOP não tratada em mulheres jovens está associada ao aumento da mortalidade geral, principalmente por causas cardiovasculares, além de perda acelerada de massa óssea e risco de declínio cognitivo.\n\nAlternativa (b) Incorreta. Embora o anticoncepcional oral combinado (AOC) possa ser utilizado em mulheres com IOP que desejam contracepção, ele não é a escolha prioritária para a reposição fisiológica. O AOC utiliza doses suprafisiológicas de etinilestradiol, enquanto a Terapia Hormonal (TH) utiliza estrogênio natural (estradiol), que é mais benéfico para o perfil lipídico, pressão arterial e saúde metabólica nesta faixa etária.\n\nAlternativa (c) Correta. A Terapia Hormonal estroprogestagênica (estrogênio para tratar a deficiência e progestagênio para proteção endometrial, já que a paciente tem útero) é o tratamento de escolha. O objetivo é substituir os hormônios que o ovário não produz mais, devendo ser mantida até a idade média da menopausa natural (aproximadamente 50-51 anos). Esta conduta trata os sintomas vasomotores, reverte a atrofia vaginal e protege os sistemas ósseo e cardiovascular.\n\nAlternativa (d) Incorreta. Os bisfosfonatos não são terapia de primeira linha para osteopenia em mulheres de 37 anos. A prioridade é a reposição de estrogênio, que é o hormônio fundamental para a manutenção da densidade mineral óssea nesta fase da vida. O uso de bisfosfonatos em mulheres em idade fértil deve ser feito com cautela devido ao longo tempo de permanência da droga no osso e potenciais riscos em gestações futuras.\n\nAlternativa (e) Incorreta. Embora o aporte de cálcio e vitamina D seja importante como coadjuvante, o termo \"tratamento específico para osteopenia\" geralmente remete ao uso de drogas antirreabsortivas (como bisfosfonatos), que não são a prioridade. A conduta mais eficaz para a saúde global da paciente, incluindo a melhora do perfil lipídico e da densidade óssea, é a terapia hormonal completa descrita na alternativa C.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Amenorreia",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:08.493Z"
+  },
+  {
+    "id": "AJUDA_4d7e0d94-0df3-4a83-80e3-d687098d2c7b",
+    "originalId": "4d7e0d94-0df3-4a83-80e3-d687098d2c7b",
+    "statement": "Quais são os quatro principais tipos de choque?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cardiogênico, séptico, hipovolêmico e distributivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Distributivo, cardiogênico, hipovolêmico e obstrutivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Séptico, hipovolêmico, cardiogênico e neurogênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Neurogênico, anafilático, distributivo e hipovolêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hipovolêmico, distributivo, cardiogênico e neurogênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O choque é definido como um estado de hipoperfusão tecidual generalizada, em que a oferta de oxigênio é insuficiente para atender à demanda metabólica das células. Para fins didáticos e clínicos, a medicina classifica o choque em quatro grandes grupos fisiopatológicos, baseados no mecanismo principal que leva à queda da pressão arterial ou do débito cardíaco.\n\nAlternativa (a) Incorreta. Embora apresente três categorias principais (cardiogênico, hipovolêmico e distributivo), o choque séptico é, na verdade, um exemplo ou subtipo de choque distributivo. Ao listar \"séptico\" e \"distributivo\" separadamente, a alternativa cria uma redundância e deixa de fora a categoria do choque obstrutivo.\n\nAlternativa (b) Correta. Esta alternativa descreve com precisão a classificação clássica adotada nos principais protocolos mundiais, como o ATLS (Advanced Trauma Life Support) e tratados de terapia intensiva. Os quatro tipos são:\n1. Hipovolêmico: Causado pela perda de volume intravascular (sangue ou fluidos).\n2. Cardiogênico: Decorrente da falha primária da bomba cardíaca em ejetar sangue adequadamente.\n3. Distributivo: Caracterizado por vasodilatação periférica intensa, reduzindo a resistência vascular sistêmica (inclui sepse, anafilaxia e choque neurogênico).\n4. Obstrutivo: Causado por um impedimento físico ao fluxo sanguíneo, seja no enchimento ou na ejeção (ex.: tamponamento cardíaco ou tromboembolismo pulmonar).\n\nAlternativa (c) Incorreta. Séptico e neurogênico são ambos subtipos de choque distributivo. A alternativa falha ao não citar a categoria \"distributivo\" como um todo e ao omitir o choque obstrutivo.\n\nAlternativa (d) Incorreta. Neurogênico e anafilático são formas de choque distributivo. A alternativa é incompleta e tecnicamente imprecisa por misturar subcategorias com categorias principais, além de não mencionar o choque cardiogênico.\n\nAlternativa (e) Incorreta. Novamente, o choque neurogênico está contido na categoria de choque distributivo. A alternativa peca pela redundância e pela ausência do choque obstrutivo na listagem dos quatro tipos principais.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:08.493Z"
+  },
+  {
+    "id": "AJUDA_4d7fc75e-5eb5-4287-ae8c-cde4e08fee27",
+    "originalId": "4d7fc75e-5eb5-4287-ae8c-cde4e08fee27",
+    "statement": "Moça de 21 anos, em consulta com o proctologista, queixa-se de dor lancinante na região do reto e de sangramento baixo. A paciente relata que sempre esteve acima do peso e que se submeteu à lipoaspiração há 2 anos, pois tinha vergonha do tamanho do próprio braço, o que a impedia de vestir camisetas sem mangas em dias quentes. Bastante preocupada com a sua forma física, costuma gastar horas fazendo exercícios aeróbicos na academia. Aspira a ser uma pessoa saudável e quer correr a maratona de São Silvestre. A paciente evita se alimentar na frente de familiares e amigas, pois costuma comer muito rápido e em grande quantidade. Muitas vezes passa mal após uma refeição farta e chega a provocar vômitos com os dedos. O seu índice de massa corpórea atual é 19 kg/m². Orientada de forma online por uma amiga, passou a comprar medicação laxante em grande quantidade por temor de constipação intestinal recorrente. Estocou os laxativos e passou a consumir a medicação secretamente. Há 3 meses, toma diariamente o laxante, pelo menos 2 comprimidos ao dia, e relata que o seu hábito intestinal passou a ser bastante frequente, por vezes com fezes aquosas. Há 2 semanas, começou a sentir dores ao evacuar. Ao exame clínico da região afetada, revelou-se uma lesão compatível com fissura na região de reto. Com base no caso hipotético, é correto afirmar que o diagnóstico provável dessa paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "transtorno de ruminação alimentar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "transtorno de compulsão alimentar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "bulimia nervosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "anorexia nervosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico de transtornos alimentares exige a análise detalhada do comportamento alimentar, dos métodos compensatórios e do estado nutricional (Índice de Massa Corpórea - IMC). No caso clínico apresentado, a paciente apresenta um quadro clássico de Bulimia Nervosa.\n\nAnálise das alternativas:\n\na) Incorreta. O transtorno de ruminação caracteriza-se pela regurgitação repetida de alimentos, que podem ser remastigados, deglutidos novamente ou cuspidos. Não envolve episódios de compulsão alimentar seguidos de métodos purgativos (como vômitos e laxantes) nem a preocupação patológica com o peso e a forma física descrita na questão.\n\nb) Incorreta. No Transtorno de Compulsão Alimentar (TCA), o indivíduo apresenta episódios de ingestão exagerada de alimentos com perda de controle, mas, diferentemente da bulimia, não utiliza métodos compensatórios inadequados (vômitos, laxantes, exercícios extenuantes) para evitar o ganho de peso.\n\nc) Correta. A Bulimia Nervosa é definida por: 1) Episódios recorrentes de compulsão alimentar (comer grande quantidade em curto tempo com sensação de perda de controle); 2) Comportamentos compensatórios recorrentes para evitar o ganho de peso (vômitos autoinduzidos, uso de laxantes, exercícios físicos excessivos); 3) Autoavaliação indevidamente influenciada pela forma física e peso. A paciente apresenta todos esses critérios, incluindo o uso secreto de laxantes, que resultou em diarreia crônica e consequente fissura anal, queixa que a levou ao proctologista. O IMC de 19 kg/m² (dentro da normalidade) é um dado clínico frequente na bulimia, diferenciando-a da anorexia.\n\nd) Incorreta. Embora a Anorexia Nervosa (tipo purgativo) também envolva episódios de purgação, o critério fundamental para esse diagnóstico é o baixo peso corporal significativo (IMC abaixo de 18,5 kg/m² para adultos ou abaixo do esperado para a idade/estatura). A paciente em questão possui IMC de 19 kg/m², o que a enquadra na faixa de normalidade, direcionando o diagnóstico para Bulimia Nervosa.\n\nEm resumo, a combinação de compulsão alimentar, métodos purgativos (vômitos e laxantes), exercício físico excessivo e preocupação extrema com a autoimagem, mantendo um peso dentro da faixa de normalidade, sela o diagnóstico de Bulimia Nervosa.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transtornos Alimentares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:08.493Z"
+  },
+  {
+    "id": "AJUDA_4d819bcc-5eb9-4886-92e4-9229046ef57f",
+    "originalId": "4d819bcc-5eb9-4886-92e4-9229046ef57f",
+    "statement": "Assinale a alternativa que apresenta a estratégia de maior impacto na redução da mortalidade por sepse.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração precoce de corticosteroides sistêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Implementação de ventilação mecânica protetora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Controle glicêmico estrito com insulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reposição volêmica precoce associada à antibioticoterapia inicial.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O tema central desta questão é o manejo inicial da sepse, uma condição de alta mortalidade em que o tempo é um fator determinante para o desfecho clínico. De acordo com as diretrizes da Surviving Sepsis Campaign, o tratamento precoce é o pilar fundamental para salvar vidas.\n\nAlternativa a: Incorreta. O uso de corticosteroides sistêmicos (como a hidrocortisona) é reservado para pacientes com choque séptico que permanecem instáveis hemodinamicamente mesmo após a reposição volêmica adequada e o uso de vasopressores. Embora ajudem na reversão do choque, eles não superam o impacto da antibioticoterapia e da reposição de fluidos na mortalidade global.\n\nAlternativa b: Incorreta. A ventilação mecânica protetora (uso de volumes correntes baixos) é uma estratégia essencial para pacientes que evoluem com Síndrome do Desconforto Respiratório Agudo (SDRA). Apesar de reduzir a mortalidade nesse subgrupo específico de pacientes críticos, ela é uma medida de suporte e não a intervenção primária de maior impacto para todos os casos de sepse.\n\nAlternativa c: Incorreta. O controle glicêmico estrito (manter a glicose em níveis muito baixos, entre 80-110 mg/dL) foi defendido no passado, mas estudos posteriores, como o NICE-SUGAR, demonstraram que essa prática aumenta o risco de hipoglicemia grave e mortalidade. Atualmente, recomenda-se um controle moderado, iniciando a insulina apenas quando a glicemia ultrapassa 180 mg/dL.\n\nAlternativa d: Correta. Esta é a base do tratamento da sepse. A reposição volêmica precoce visa restaurar a perfusão tecidual e o débito cardíaco, combatendo a hipóxia celular. Paralelamente, cada hora de atraso na administração de antibióticos de amplo espectro está diretamente associada ao aumento da mortalidade. Juntas, essas duas ações formam o núcleo do bundle de primeira hora, sendo as intervenções com maior evidência científica na redução da mortalidade.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Sepse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:08.493Z"
+  }
+]

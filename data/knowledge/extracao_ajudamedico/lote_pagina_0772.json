@@ -1,0 +1,522 @@
+[
+  {
+    "id": "AJUDA_d7550a0b-635c-47ab-84b9-9ab2b9fd8aaf",
+    "originalId": "d7550a0b-635c-47ab-84b9-9ab2b9fd8aaf",
+    "statement": "Um homem de 28 anos é levado ao pronto-socorro por familiares após apresentar comportamento desorganizado, agitação psicomotora e discurso incoerente. Ele tenta agredir a equipe e recusa qualquer contato. Qual é a conduta mais adequada e imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tentar entrevista diagnóstica detalhada antes de qualquer intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Contê-lo fisicamente apenas com familiares, evitando uso de medicamentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Priorizar a contenção física e química para garantir segurança do paciente e da equipe.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar diretamente para internação psiquiátrica sem abordagem inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A abordagem do paciente com agitação psicomotora grave e comportamento agressivo no pronto-socorro visa prioritariamente à garantia da segurança do próprio paciente e da equipe assistencial, além do alívio rápido dos sintomas.\n\nAlternativa A: Incorreta. Em quadros de agitação psicomotora franca, desorganização e agressividade ativa, a abordagem verbal e a realização de uma entrevista diagnóstica detalhada tornam-se inviáveis e perigosas. A insistência nessa conduta retarda o manejo adequado e eleva o risco de lesões para todos os presentes.\n\nAlternativa B: Incorreta. A contenção física é um ato médico e assistencial que deve ser executado exclusivamente por profissionais de saúde treinados, utilizando técnicas adequadas para evitar complicações como rabdomiólise, fraturas e asfixia. Familiares não devem realizar esse procedimento. Além disso, a contenção química é indispensável para tratar a causa do quadro e promover a sedação segura.\n\nAlternativa C: Correta. Na presença de risco iminente de auto ou heteroagressão em que o diálogo falhou ou é impossível, a prioridade absoluta é a contenção física (mecânica) para proteção imediata, associada à contenção química (geralmente com antipsicóticos injetáveis, como o haloperidol, e/ou benzodiazepínicos, como o midazolam). Apenas após a estabilização é possível realizar o exame clínico e a investigação diagnóstica.\n\nAlternativa D: Incorreta. Nenhum paciente agitado e clinicamente instável deve ser transferido ou internado sem a devida abordagem e estabilização inicial na sala de emergência. Ademais, é obrigatório afastar causas clínicas e orgânicas agudas (como intoxicações exógenas, hipoglicemia e infecções) antes de encaminhar para internação psiquiátrica.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Transtornos Psicóticos",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:13.688Z"
+  },
+  {
+    "id": "AJUDA_d75ef5e9-b6ec-4183-a395-808138a0feb1",
+    "originalId": "d75ef5e9-b6ec-4183-a395-808138a0feb1",
+    "statement": "Homem de 32 anos, usuário de cocaína e tabagista, dá entrada no pronto-atendimento devido à dor abdominal súbita, de forte intensidade, associado a vômitos com raias de sangue e palidez cutânea, de início há aproximadamente 4 horas. Refere fezes pastosas e escurecidas há 2 dias, após alimentação de origem duvidosa. Ao exame físico apresenta-se em REG, pálido (3+/4+), FC = 138bpm, PA = 70X40 mmHg, oximetria de pulso = 90%. Ausculta pulmonar com presença de sibilos esparsos e roncos em base direita. O abdome é escavado e com sinais de peritonite difusa. Toque retal positivo para melena. Realizou RX de tórax, cuja imagem encontra-se abaixo. Assinale a alternativa que indique a melhor conduta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ressuscitação volêmica e laparotomia exploradora",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ressuscitação volêmica e endoscopia digestiva alta",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estabilização hemodinâmica e videolaparoscopia diagnóstica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estabilização hemodinâmica e tomografia computadorizada do abdome",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um paciente jovem com fatores de risco importantes (tabagismo e uso de cocaína) que evolui com um quadro de abdome agudo perfurativo. A história de dor súbita de forte intensidade, associada a sinais de peritonite difusa ao exame físico e instabilidade hemodinâmica (choque), aponta para uma emergência cirúrgica.\n\nAssociando a imagem ao caso: O raio X de tórax mostra claramente o sinal de pneumoperitônio, identificado pelo acúmulo de ar abaixo das cúpulas diafragmáticas (imagem radiolúcida em crescente). Este achado confirma a perfuração de uma víscera oca, muito provavelmente uma úlcera péptica gastroduodenal, dada a história de melena e uso de substâncias irritantes à mucosa gástrica.\n\nPor que a alternativa (a) está correta: O paciente encontra-se em choque (PA 70x40 mmHg e FC 138 bpm). A prioridade absoluta é a ressuscitação volêmica imediata para tentar restaurar a perfusão tecidual enquanto se prepara o paciente para a laparotomia exploradora. A cirurgia é o tratamento definitivo para fechar a perfuração e realizar a limpeza da cavidade peritoneal, que sofreu contaminação por conteúdo digestivo.\n\nPor que a alternativa (b) está incorreta: A endoscopia digestiva alta (EDA) é o padrão-ouro para o manejo de hemorragia digestiva alta não perfurada. No entanto, diante de um pneumoperitônio e sinais de peritonite, a EDA é contraindicada. A insuflação de ar necessária para realizar o exame aumentaria o pneumoperitônio, a dor e o extravasamento de conteúdo para a cavidade abdominal.\n\nPor que a alternativa (c) está incorreta: O termo \"diagnóstica\" torna a alternativa incorreta porque o diagnóstico de abdome agudo perfurativo já foi estabelecido pela clínica e pelo raio X. Além disso, pacientes com instabilidade hemodinâmica grave e choque não são bons candidatos à videolaparoscopia devido ao efeito cardiovascular do pneumoperitônio artificial; nesses casos, a laparotomia por via aberta é a conduta padrão.\n\nPor que a alternativa (d) está incorreta: A tomografia computadorizada (TC) de abdome é um excelente exame para quando há dúvida diagnóstica. Contudo, em um paciente com choque circulatório e evidência clara de perfuração no raio X, o tempo gasto para realizar uma TC é um atraso perigoso que aumenta a morbimortalidade. O paciente deve ser levado diretamente para estabilização e bloco cirúrgico.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Perfurativo"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/dce123edd3c7312a0a747ebe8843994f2e6a807aa0442b775fd0213be82ab89b.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d75ef5e9-b6ec-4183-a395-808138a0feb1_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:14.183Z"
+  },
+  {
+    "id": "AJUDA_d7622a89-a894-43c5-99bd-689e4712b56c",
+    "originalId": "d7622a89-a894-43c5-99bd-689e4712b56c",
+    "statement": "Paciente vítima de ferimento por arma de fogo no abdome, dando entrada no hospital com pulso de 144 bpm, PA: 60/30 mmHg, com pele fria e sudorífico. Assinale a alternativa que apresenta a conduta correta em relação à reposição volêmica desse paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "sangue total",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "dois concentrados de hemácias tipadas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ringer lactato 30 mL/kg/hora",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "soro fisiológico 0,9% 2.000 mL",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "quatro concentrados de hemácias e uma unidade de Plasma",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um ferimento por arma de fogo (PAF) no abdômen com sinais claros de choque hipovolêmico Classe IV (frequência cardíaca acima de 140 bpm, hipotensão severa de 60/30 mmHg e sinais de má perfusão periférica, como pele fria e sudorese). Nessa situação, a perda volêmica estimada é superior a 40% do volume sanguíneo total, configurando uma emergência médica com alto risco de morte por exsanguinação.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) sangue total: ESTÁ CORRETA. Atualmente, as diretrizes mais modernas de trauma (incluindo as atualizações do ATLS e protocolos de ressuscitação hemostática) preconizam que, em pacientes com choque hemorrágico grave (Classe IV), a reposição deve ser feita precocemente com derivados de sangue. O sangue total (*Whole Blood*) é considerado o padrão-ouro nessas situações, pois repõe simultaneamente hemácias, fatores de coagulação e plaquetas na concentração fisiológica, combatendo a tríade letal (acidose, coagulopatia e hipotermia) de forma mais eficaz do que a administração isolada de cristaloides ou componentes separados de forma desproporcional.\n\nb) dois concentrados de hemácias tipadas: ESTÁ INCORRETA. Em um paciente com PA de 60/30 mmHg, não há tempo hábil para aguardar a tipagem sanguínea e prova cruzada (que levam cerca de 45 a 60 minutos). Nesses casos de instabilidade extrema, deve-se utilizar sangue tipo O negativo (ou O positivo em homens e mulheres fora da idade fértil) imediatamente. Além disso, a reposição apenas de hemácias, sem plasma e plaquetas, agrava a coagulopatia dilucional.\n\nc) Ringer lactato 30 mL/kg/hora: ESTÁ INCORRETA. Essa conduta é comumente associada ao manejo inicial de sepse, não ao trauma abdominal penetrante com choque Classe IV. O uso excessivo de cristaloides no trauma hemorrágico está associado a piores desfechos, aumento do sangramento (fenômeno de *pop-the-clot*) e desenvolvimento de coagulopatia.\n\nd) soro fisiológico 0,9% 2.000 mL: ESTÁ INCORRETA. Esta era a recomendação de edições mais antigas do ATLS. No entanto, a partir da 10ª edição, o volume inicial de cristaloides foi reduzido para no máximo 1.000 mL, com ênfase na transição precoce para hemoderivados. Administrar 2 litros de soro fisiológico em um choque Classe IV agrava a acidose hiperclorêmica e a coagulopatia por diluição.\n\ne) quatro concentrados de hemácias e uma unidade de plasma: ESTÁ INCORRETA. Embora essa alternativa caminhe no sentido da ressuscitação hemostática, a proporção apresentada (4:1) está abaixo do ideal recomendado para protocolos de transfusão maciça, que buscam uma proporção mais equilibrada de 1:1:1 (um concentrado de hemácias para um de plasma para um de plaquetas). O sangue total (alternativa A) cumpre esse papel de forma superior em termos de equilíbrio de componentes.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Medicina Transfusional",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:14.183Z"
+  },
+  {
+    "id": "AJUDA_d772c5ac-2fdd-4a1c-9610-c932ff67e33a",
+    "originalId": "d772c5ac-2fdd-4a1c-9610-c932ff67e33a",
+    "statement": "Em relação à Doença do Refluxo Gastroesofágico (DRGE), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A manometria auxilia no diagnóstico da DRGE através da medida da pressão de repouso do esfíncter inferior do esôfago.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento cirúrgico da doença do refluxo deve ser realizado em pacientes que apresentam hérnias hiatais mesmo sem a presença de esofagite erosiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os consensos atuais da doença do refluxo gastroesofágico (Lyon e Lyon 2.0) utilizam além dos critérios pH-métricos, a presença de alterações endoscópicas específicas para definição da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Os pacientes com sintomas atípicos da doença do refluxo, apresentam melhores respostas ao tratamento cirúrgico que ao clínico, devido ao refluxo não ácido que está muito presente nas queixas atípicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Uma vez desenvolvido o esôfago de Barrett, a conduta resolutiva mais indicada é a cirurgia antirrefluxo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A: INCORRETA. A manometria esofágica não é um exame utilizado para o diagnóstico da DRGE. Sua principal utilidade clínica é a localização do esfíncter inferior do esôfago (EIE) para o posicionamento correto do cateter de pH-metria e, fundamentalmente, para a exclusão de distúrbios motores do esôfago (como acalásia ou esclerodermia) em pacientes que serão submetidos a tratamento cirúrgico. Uma pressão de repouso baixa do EIE não confirma o diagnóstico de refluxo, assim como uma pressão normal não o exclui.\n\nAlternativa B: INCORRETA. A existência de uma hérnia hiatal isolada não é indicação cirúrgica. O tratamento cirúrgico da DRGE é indicado para pacientes com a doença comprovada que apresentam sintomas refratários ao tratamento clínico, intolerância aos inibidores de bomba de prótons (IBP), complicações (como estenose ou esôfago de Barrett de difícil controle) ou pelo desejo do paciente de não utilizar medicação de forma contínua. Hérnias assintomáticas e sem evidência de esofagite erosiva devem ser apenas observadas.\n\nAlternativa C: CORRETA. O Consenso de Lyon (e sua versão atualizada 2.0) revolucionou o diagnóstico da DRGE ao propor critérios mais rigorosos. O diagnóstico é estabelecido de forma conclusiva por meio da endoscopia quando há presença de esofagite grave (graus C e D de Los Angeles), esôfago de Barrett de segmento longo ou estenose péptica. Do ponto de vista funcional, utiliza-se a pH-metria, sendo o diagnóstico confirmado quando o Tempo de Exposição Ácida (TEA) é superior a 6%. Casos com TEA entre 4% e 6% ou esofagite graus A e B são considerados limítrofes e necessitam de critérios adicionais.\n\nAlternativa D: INCORRETA. Pacientes com sintomas atípicos (como tosse crônica, pigarro, rouquidão ou asma) possuem, em geral, uma resposta ao tratamento cirúrgico inferior e menos previsível do que a dos pacientes que apresentam os sintomas clássicos (pirose e regurgitação). O melhor preditor de sucesso para a cirurgia antirrefluxo é a resposta satisfatória prévia ao tratamento clínico com IBP. O refluxo não ácido pode ser identificado pela impedâncio-pH-metria, mas sua presença isolada não garante sucesso cirúrgico superior para sintomas atípicos.\n\nAlternativa E: INCORRETA. O esôfago de Barrett é uma complicação da DRGE caracterizada por metaplasia intestinal. A cirurgia antirrefluxo é eficaz no controle dos sintomas e na cicatrização da esofagite, porém não há evidências definitivas de que ela promova a regressão da metaplasia ou que seja superior ao tratamento clínico na prevenção do adenocarcinoma esofágico. A conduta em pacientes com Barrett envolve o controle do refluxo (seja clínico ou cirúrgico) associado a um protocolo rigoroso de vigilância endoscópica com biópsias, reservando-se terapias ablativas ou ressecções para casos com displasia.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:14.183Z"
+  },
+  {
+    "id": "AJUDA_d77e12f3-46d9-4ac7-ba7e-a071da2e478a",
+    "originalId": "d77e12f3-46d9-4ac7-ba7e-a071da2e478a",
+    "statement": "Primigesta com idade gestacional de 38 semanas procura a maternidade. Realizou pré-natal regular e todos os seus exames estão dentro da normalidade. Relata sentir ansiedade porque a data provável do parto se aproxima e ela ainda não tem sinais do início do trabalho de parto. Diante disso, expressa desejo de realizar uma cesariana para evitar possíveis complicações. Ao exame clínico, não foram identificadas alterações. \n\nNesse caso, a conduta mais adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "conversar sobre os riscos da cesariana e, caso a paciente mantenha o desejo de realizá-la, agendar o procedimento a partir de 39 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "expor que, devido aos maiores riscos da cesariana, o parto vaginal é a via de parto indicada em gestações de baixo risco e que, por isso, é inviável optar pela cesariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "explicar que, em gestações de baixo risco, a cesariana por desejo materno só pode ser realizada antes do início do trabalho de parto, a partir de 41 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "orientar sobre os riscos da cesariana e, caso a paciente mantenha o desejo de realizá-la, fazer o procedimento imediatamente, posto que a autonomia da gestante deve ser garantida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o tema da cesariana a pedido da gestante, assunto regulamentado no Brasil pelo Conselho Federal de Medicina (CFM) por meio da Resolução nº 2.144/2016. O foco aqui é o equilíbrio entre a autonomia da paciente e a segurança do recém-nascido.\n\nAnálise das alternativas:\n\nAlternativa (a) CORRETA: De acordo com a Resolução do CFM, é direito da gestante, em situações de risco habitual, optar pela cesariana, desde que ela tenha sido devidamente informada, de forma compreensível, sobre os riscos e benefícios tanto do parto vaginal quanto da cirurgia. O ponto crucial é que, para garantir a maturidade pulmonar fetal e evitar a prematuridade iatrogênica, a cesariana eletiva a pedido só pode ser realizada a partir de 39 semanas completas de gestação. Como a paciente está com 38 semanas, a conduta é orientar e agendar para a semana seguinte, caso o desejo persista.\n\nAlternativa (b) INCORRETA: Embora o parto vaginal seja geralmente preferível em gestações de baixo risco por apresentar menos complicações maternas, a ética médica atual valoriza a autonomia da paciente. O médico não pode proibir a escolha da via de parto, mas deve atuar como um orientador para que a decisão seja tomada de forma consciente e segura.\n\nAlternativa (c) INCORRETA: O limite de 41 semanas é frequentemente associado ao manejo da gestação prolongada (pós-termo), em que se discute a indução do parto. Para a realização de cesariana por desejo materno, o marco temporal estabelecido pelo CFM é de 39 semanas, e não 41.\n\nAlternativa (d) INCORRETA: Apesar de a autonomia da gestante ser um princípio fundamental, ela não é absoluta acima da segurança clínica. Realizar a cesariana imediatamente, com 38 semanas, contraria as evidências científicas que mostram maior morbidade respiratória neonatal em crianças nascidas por cesariana eletiva antes das 39 semanas. Portanto, o médico deve respeitar a autonomia, mas dentro do prazo legal e seguro de 39 semanas.\n\nEm resumo, a conduta médica diante do desejo materno de cesariana envolve:\n1. Explicação detalhada sobre riscos e benefícios.\n2. Registro em prontuário e assinatura de Termo de Consentimento Livre e Esclarecido (TCLE).\n3. Respeito ao limite mínimo de 39 semanas de idade gestacional.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Ética Médica",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:14.183Z"
+  },
+  {
+    "id": "AJUDA_d78e55d4-427c-4323-9455-ee0ceec1aac0",
+    "originalId": "d78e55d4-427c-4323-9455-ee0ceec1aac0",
+    "statement": "Situação-Problema: Mulher, 28 anos de idade, G2P1, 26 semanas de gestação, sem comorbidades prévias. História familiar de diabetes mellitus tipo 2 (pai). Ganho ponderal de 10 kg até o momento. Teste oral de tolerância à glicose (TOTG) 75 g: jejum 94 mg/dL; 1 h: 185 mg/dL; 2 h: 161 mg/dL. Relata alimentação rica em carboidratos simples e rotina sedentária por trabalho administrativo. Ultrassonografia obstétrica às 26 semanas: feto único, crescimento adequado (p60), líquido amniótico normal, doppler normal. Sem cetonúria. Não usa medicamentos. Solicita plano alimentar estruturado.\n\nIndique a primeira medida terapêutica recomendada para essa gestante:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar insulina NPH à noite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar metformina oral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Modificar a dieta e indicar atividade física",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever glibenclamida oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta critérios para o diagnóstico de Diabetes Mellitus Gestacional (DMG). De acordo com as diretrizes da FEBRASGO e da Sociedade Brasileira de Diabetes (SBD), o diagnóstico no Teste Oral de Tolerância à Glicose (TOTG 75 g), realizado entre 24 e 28 semanas, é firmado com pelo menos um valor alterado entre os seguintes limites: jejum igual ou maior a 92 mg/dL; 1 hora igual ou maior a 180 mg/dL; 2 horas igual ou maior a 153 mg/dL. No caso apresentado, todos os três valores estão alterados (94, 185 e 161 mg/dL). A avaliação ultrassonográfica demonstra feto com crescimento adequado (percentil 60) e líquido amniótico normal, permitindo uma conduta inicial conservadora.\n\nAnálise das alternativas:\n\nAlternativa a (Incorreta): A insulinoterapia e a prescrição de insulina NPH constituem o tratamento farmacológico padrão-ouro no DMG, porém trata-se de uma intervenção de segunda linha. A insulina só deve ser introduzida se a paciente não atingir o controle glicêmico após 1 a 2 semanas de medidas não farmacológicas, ou diante de evidências ultrassonográficas de crescimento fetal excessivo (circunferência abdominal fetal maior que o percentil 75).\n\nAlternativa b (Incorreta): A metformina é um antidiabético oral que pode ser utilizado em casos selecionados como alternativa à insulina quando há falha do tratamento conservador, mas não é a conduta inicial recomendada logo após a confirmação diagnóstica.\n\nAlternativa c (Correta): A primeira medida terapêutica para toda gestante diagnosticada com DMG é a modificação do estilo de vida, que inclui a terapia nutricional (plano alimentar fracionado, com controle de carboidratos simples) e a realização de atividade física regular, na ausência de contraindicações obstétricas. Entre 70% e 85% das gestantes alcançam o controle glicêmico adequado apenas com essas medidas.\n\nAlternativa d (Incorreta): A glibenclamida é uma sulfonilureia que atravessa a barreira placentária e está associada a maior risco de hipoglicemia neonatal, macrossomia e outros desfechos desfavoráveis. Não é recomendada como primeira linha de tratamento.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:14.183Z"
+  },
+  {
+    "id": "AJUDA_d795dd0e-b0d0-44cd-a0a2-e41b1cd766f5",
+    "originalId": "d795dd0e-b0d0-44cd-a0a2-e41b1cd766f5",
+    "statement": "A respeito das vacinas contra poliomielite disponíveis no Programa Nacional de Imunizações (PNI) brasileiro – vacina contra poliomielite inativa (VIP) e vacina contra poliomielite atenuada oral (VOP), considere as afirmativas a seguir.\n\nI. O PNI preconiza o uso do seguinte esquema de vacinação contra poliomielite para crianças com as respectivas idades: VIP aos 2, aos 4 e aos 6 meses, VOP aos 15 meses e aos 4 anos.\nII. Após a erradicação da poliomielite, o PNI introduziu a VIP por possuir efeitos colaterais menos graves do que a VOP.\nIII. Mesmo a VIP pode provocar poliomielite associada à vacina.\nIV. Uma vez que os efeitos colaterais da VOP são extremamente raros, crianças com imunodepressão severa podem receber esta vacina.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender essa questão, é fundamental dominar o Calendário Nacional de Vacinação do PNI e a fisiopatologia das vacinas de vírus vivos versus vírus inativados. Vamos analisar cada afirmativa:\n\nAfirmativa I (Correta): O esquema atual do PNI para a vacinação rotineira contra poliomielite em crianças consiste em 3 doses da vacina inativada (VIP), aplicada por via intramuscular aos 2, 4 e 6 meses de vida. Posteriormente, a criança recebe dois reforços com a vacina oral atenuada (VOP), as famosas \"gotinhas\", aos 15 meses e aos 4 anos de idade. Nota importante: Recentemente, o Ministério da Saúde anunciou a transição para um esquema exclusivamente com VIP, mas, para fins de prova e conforme o histórico recente do PNI, esta afirmativa descreve o esquema padrão vigente.\n\nAfirmativa II (Correta): Embora a poliomielite selvagem tenha sido erradicada do Brasil (último caso em 1989), a VOP apresenta um risco raríssimo, porém grave: a Poliomielite Paralítica Associada à Vacina (VAPP). Isso ocorre porque o vírus atenuado pode, em casos excepcionais, sofrer mutação e recuperar a neurovirulência. Por isso, o PNI introduziu a VIP nas primeiras doses para garantir que a criança já tenha imunidade antes de ter contato com o vírus vivo da VOP, reduzindo drasticamente o risco de paralisia por vacina.\n\nAfirmativa III (Incorreta): A VIP é uma vacina de vírus inativado (\"vírus morto\"). Como o vírus não tem capacidade de replicação, é biologicamente impossível que a VIP cause poliomielite associada à vacina. Somente a VOP (de vírus vivo atenuado) possui esse risco.\n\nAfirmativa IV (Incorreta): Esta alternativa apresenta um erro grave de conduta médica. Vacinas de vírus vivos atenuados (como a VOP) são contraindicadas para indivíduos com imunodepressão severa e para seus contatos domiciliares. Nesses casos, o risco de o vírus vacinal se replicar de forma descontrolada e causar a doença é significativamente alto. Para esses pacientes, utiliza-se exclusivamente a VIP.\n\nAnálise das alternativas:\nComo as afirmativas I e II estão corretas e as afirmativas III e IV estão incorretas, a alternativa que reflete essa análise é a letra (a).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:14.183Z"
+  },
+  {
+    "id": "AJUDA_d7ac7eeb-c8e5-46a0-a958-66ff3742024e",
+    "originalId": "d7ac7eeb-c8e5-46a0-a958-66ff3742024e",
+    "statement": "Homem de 68 anos, previamente hipertenso, comparece ao pronto-socorro após episódio de perda súbita da consciência durante caminhada. O evento ocorreu sem pródromos, com recuperação espontânea em menos de 1 minuto. A esposa nega movimentos tônico-clônicos, mordedura de língua ou incontinência esfincteriana.\nExame físico:\n• PA: 112/70 mmHg\n• FC: 56 bpm\n• Ausculta cardíaca: sopro sistólico em foco aórtico irradiado para carótidas\n• ECG: bloqueio de ramo esquerdo.\nDiante desse quadro, qual deve ser a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acompanhamento ambulatorial com cardiologia, visto que o paciente já se encontra estável após o episódio e apresenta recuperação rápida da consciência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internação hospitalar para investigação, considerando o risco elevado pela ausência de pródromos e achados compatíveis com cardiopatia estrutural.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realização de tilt-test em momento oportuno, uma vez que causas reflexas são a principal etiologia para o quadro em pacientes idosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observação clínica em pronto-socorro e liberação posterior, caso não ocorram novos episódios ou instabilidade hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Início de tratamento farmacológico para controle de sintomas, interpretando o episódio como de provável origem psicogênica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente em questão apresenta um quadro clássico de síncope de alto risco. A síncope é definida como a perda súbita e transitória da consciência, com recuperação espontânea e completa, decorrente de hipoperfusão cerebral global. No caso descrito, diversos sinais de alerta (*red flags*) direcionam para uma etiologia cardíaca estrutural ou arrítmica: a idade avançada (68 anos), a ocorrência durante o esforço (caminhada), a ausência de pródromos (sintomas que precedem o desmaio), o achado de sopro sistólico compatível com estenose aórtica e a alteração eletrocardiográfica (bloqueio de ramo esquerdo - BRE).\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\n\nA conduta mais adequada é a internação hospitalar para investigação imediata. Segundo as diretrizes da Sociedade Brasileira de Cardiologia e da Sociedade Europeia de Cardiologia, pacientes que apresentam síncope com critérios de alto risco devem ser monitorizados e investigados em ambiente hospitalar. O paciente tem suspeita de cardiopatia estrutural grave (estenose aórtica, sugerida pelo sopro que irradia para as carótidas) e distúrbio de condução intraventricular (BRE). Essas condições aumentam significativamente o risco de morte súbita e eventos cardiovasculares maiores, exigindo a realização de exames complementares urgentes, como ecocardiograma e monitorização cardíaca.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): O acompanhamento ambulatorial é indicado apenas para pacientes de baixo risco, como jovens com síncope claramente reflexa (vasovagal). Liberar um paciente idoso, com sopro cardíaco e BRE, que desmaiou no esforço, é perigoso, pois o risco de um novo evento fatal em curto prazo é elevado.\n\nAlternativa (c): O *tilt-test* é utilizado para investigar síncopes de origem reflexa ou disautonômica em casos de dúvida diagnóstica. No caso clínico, a suspeita principal é de causa cardíaca estrutural ou mecânica (estenose aórtica). O *tilt-test* não é o exame inicial e não deve atrasar a investigação de causas graves.\n\nAlternativa (d): Apenas a observação e posterior liberação não garantem a segurança do paciente. Mesmo que ele esteja estável no momento, a causa subjacente (potencialmente uma estenose aórtica severa ou um bloqueio atrioventricular paroxístico) permanece sem tratamento, mantendo o risco iminente de morte.\n\nAlternativa (e): A origem psicogênica é um diagnóstico de exclusão e raramente ocorre pela primeira vez aos 68 anos. Além disso, a presença de achados objetivos no exame físico (sopro) e no ECG (BRE) afasta completamente a hipótese de ser algo meramente psicogênico ou funcional. O tratamento farmacológico sem diagnóstico definitivo é contraindicado.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Síncope",
+      "Bradiarritmias",
+      "Valvopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:14.183Z"
+  },
+  {
+    "id": "AJUDA_d7af0ebb-2f32-49f8-b85e-6cb803763755",
+    "originalId": "d7af0ebb-2f32-49f8-b85e-6cb803763755",
+    "statement": "Homem, 30 anos, foi vítima de um acidente em um incêndio residencial que lhe causou queimaduras no tronco anterior e membros superiores, totalizando 25% de superfície de área queimada. No atendimento inicial, encontra-se consciente, orientado, Glasgow – 15, FC – 115 bpm, PA – 140x68 mmHg, FR – 22 irpm, Sat – 96% com oferta de O2. Apresenta rouquidão e fuligem em orofaringe. Considerando o caso apresentado, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de estridor e fuligem na orofaringe é indicação de intubação orotraqueal precoce.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A administração de oxigênio suplementar por máscara de alto fluxo é suficiente, já que a saturação se mantém acima de 94%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A cricotireoidostomia é a primeira escolha para todo paciente com suspeita de queimadura de via aérea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nebulização com broncodilatadores e/ou adrenalina é o tratamento inicial de escolha, em função de o paciente apresentar estridor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pacientes com sinais leves de queimadura inalatória podem seguir em observação caso não apresentem sinais de hipoxemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a letra (a).\n\nEsta questão avalia o conhecimento sobre o manejo das vias aéreas em pacientes vítimas de queimaduras e lesão por inalação. O ponto central é identificar sinais de alerta que indicam a necessidade de intervenção imediata para evitar a obstrução completa das vias respiratórias.\n\nAlternativa (a): Está correta. A presença de fuligem na orofaringe, rouquidão (mencionada no quadro clínico) e estridor (mencionado na alternativa) são sinais clínicos de lesão térmica das vias aéreas superiores. Em vítimas de incêndio em locais fechados, o edema de glote e epiglote é progressivo e pode ocorrer rapidamente. A intubação orotraqueal precoce é a conduta de escolha para garantir a perviedade da via aérea antes que o edema torne a intubação tecnicamente impossível.\n\nAlternativa (b): Está incorreta. A oferta de oxigênio por máscara de alto fluxo é uma medida de suporte importante, mas não trata nem previne a obstrução física causada pelo edema inflamatório das vias superiores. Além disso, a saturação de oxigênio normal pode ser enganosa em casos de intoxicação por monóxido de carbono (frequente em incêndios), pois o oxímetro de pulso não diferencia a oxi-hemoglobina da carboxi-hemoglobina.\n\nAlternativa (c): Está incorreta. A cricotireoidostomia não é a primeira escolha. A via aérea definitiva de escolha é a intubação orotraqueal. O acesso cirúrgico (cricotireoidostomia) é reservado para situações de exceção, quando a intubação orotraqueal falha ou não é possível de ser realizada (cenário de \"não intubo, não ventilo\").\n\nAlternativa (d): Está incorreta. Embora a nebulização possa ser utilizada em protocolos específicos para lesões de vias aéreas inferiores ou broncoespasmo, ela não é o tratamento inicial de escolha diante de sinais de obstrução de via aérea superior em um queimado. O foco principal deve ser assegurar a via aérea mecanicamente através da intubação.\n\nAlternativa (e): Está incorreta. A observação passiva é contraindicada na presença de sinais de alerta (fuligem, rouquidão, estridor). O edema de via aérea em queimados é dinâmico e evolutivo. Aguardar a instalação de sinais de hipoxemia ou desconforto respiratório grave pode significar que a janela de oportunidade para uma intubação segura já passou, aumentando drasticamente o risco de morte ou necessidade de via aérea cirúrgica de emergência.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Queimaduras",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:14.183Z"
+  },
+  {
+    "id": "AJUDA_d7b06ce2-299c-495b-9fbd-51f0546bd3d3",
+    "originalId": "d7b06ce2-299c-495b-9fbd-51f0546bd3d3",
+    "statement": "Mulher, 25 anos, com asma desde a infância, relata estar grávida, com idade gestacional estimada de 7 semanas. Relata uso de budesonida 800 mcg + formoterol 12 mcg de 12/12 horas há 3 anos. Usou salbutamol 100 mcg por dispneia 1 vez por semana nas últimas 4 semanas. Nega sintomas noturnos, tabagismo e procura por serviço de médico de emergência. Exame físico normal. Espirometria realizada há 2 meses (tabela abaixo).\n\nQual é a melhor recomendação para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduzir dose de corticóide inalatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter medicamentos inalatórios.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aumentar dose de broncodilatador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender corticóide inalatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O manejo da asma na gestação baseia-se no princípio de que os riscos de uma asma descontrolada (hipóxia materna, restrição de crescimento intrauterino, prematuridade e mortalidade perinatal) são infinitamente maiores do que os riscos do tratamento farmacológico inalatório. O objetivo é manter o controle absoluto dos sintomas e a estabilidade pulmonar.\n\nA paciente do caso apresenta asma controlada segundo os critérios do GINA: utilizou broncodilatador de resgate apenas uma vez por semana nas últimas quatro semanas (limite de controle é até duas vezes por semana), não apresenta sintomas noturnos ou limitações diárias e o exame físico é normal. A tabela de espirometria confirma esse controle com parâmetros normais: CVF de 3,51 L (105%), VEF1 de 2,74 L (98%), relação VEF1/CVF de 0,78 e variação pós-broncodilatador de apenas 3%, o que demonstra ausência de obstrução e estabilização funcional com a terapia vigente.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Embora a paciente esteja bem controlada, a gravidez não é o momento recomendado para descalonamento (step-down) de medicação, devido às alterações hormonais e mecânicas da gestação que aumentam a instabilidade das vias aéreas e o risco de exacerbações.\n\nAlternativa b: Correta. A conduta padrão é manter o esquema terapêutico com o qual a paciente atingiu a estabilidade clínica e espirométrica. A budesonida é o corticoide inalatório com maior evidência de segurança no período gestacional, e o uso de formoterol é seguro e mantém a eficácia do tratamento.\n\nAlternativa c: Incorreta. A elevação de dose (step-up) é indicada apenas na vigência de perda do controle clínico ou funcional, o que não ocorre nesta paciente.\n\nAlternativa d: Incorreta. A suspensão do corticoide inalatório é uma conduta perigosa, pois retira a base anti-inflamatória do tratamento da asma, predispondo à descompensação clínica rápida e crises graves.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Asma",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/67f571285740a95cca27e5da09cbf90343f55565f0096e5b4b0ee4ac885481e5.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d7b06ce2-299c-495b-9fbd-51f0546bd3d3_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:14.727Z"
+  }
+]

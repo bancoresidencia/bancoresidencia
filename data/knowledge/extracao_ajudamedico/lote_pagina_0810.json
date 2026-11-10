@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_e1371412-891a-4192-b69f-f2952ed6fc5f",
+    "originalId": "e1371412-891a-4192-b69f-f2952ed6fc5f",
+    "statement": "Um paciente de 68 anos, hipertenso e diabético, é internado por pneumonia comunitária grave. No terceiro dia de internação, apresenta queda da diurese e elevação da creatinina sérica de 1,0 mg/dL para 2,1 mg/dL em 48 horas. Ao exame, está levemente hipotenso e com turgor diminuído. Sódio urinário: 8 mEq/L; fração de excreção de sódio (FENa): 0,4%; osmolaridade urinária: 520 mOsm/kg. Qual é o diagnóstico e a conduta inicial mais adequados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lesão renal aguda intrínseca; iniciar furosemida para estimular diurese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lesão renal aguda intrínseca; iniciar antibiótico nefrotóxico ajustado à função renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lesão renal aguda pós-renal; solicitar ultrassonografia para avaliar hidronefrose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lesão renal aguda pré-renal; otimizar volemia com cristaloides isotônicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O diagnóstico de Lesão Renal Aguda (LRA) neste paciente baseia-se na análise clínica e laboratorial. O aumento da creatinina de 1,0 mg/dL para 2,1 mg/dL em 48 horas confirma a LRA. O ponto crucial é diferenciar entre as causas pré-renais, intrínsecas e pós-renais.\n\nO paciente apresenta sinais de hipovolemia (hipotensão leve e turgor diminuído), sugerindo uma redução na perfusão renal. Os exames complementares corroboram essa hipótese: \n1. Sódio urinário baixo (8 mEq/L, menor que 20): Indica que os túbulos renais estão preservados e reabsorvendo sódio avidamente para tentar reter volume.\n2. FENa baixa (0,4%, menor que 1%): É o parâmetro mais fidedigno para confirmar a etiologia pré-renal, mostrando que o rim está economizando sódio.\n3. Osmolaridade urinária alta (520 mOsm/kg, maior que 500): Indica que o rim ainda consegue concentrar a urina, uma função que se perde na lesão intrínseca (necrose tubular aguda).\n\nAnálise das alternativas:\n\na) Incorreta. A lesão renal aguda intrínseca (como a necrose tubular aguda) apresentaria FENa maior que 2% e sódio urinário maior que 40 mEq/L, pois os túbulos lesados perdem a capacidade de reabsorção. Além disso, o uso de furosemida em um paciente com sinais de desidratação e hipotensão agravaria severamente o quadro.\n\nb) Incorreta. Como demonstrado pelos índices urinários, a lesão é pré-renal e não intrínseca. Além disso, embora o ajuste de dose de antibióticos seja necessário na insuficiência renal, a conduta prioritária é a reversão da causa da LRA.\n\nc) Incorreta. A causa pós-renal deve ser considerada em casos de obstrução do trato urinário (ex.: hiperplasia prostática, cálculos, tumores). No entanto, o quadro clínico de desidratação e os índices de reabsorção de sódio apontam diretamente para uma causa pré-renal. A ultrassonografia é um exame útil na investigação inicial da LRA, mas não é a conduta diagnóstica principal diante desses achados laboratoriais.\n\nd) Correta. Os achados de FENa menor que 1%, sódio urinário baixo e osmolaridade urinária elevada definem o quadro como LRA pré-renal. A conduta inicial correta é a reposição volêmica com cristaloides isotônicos para restaurar a perfusão renal e normalizar a função do órgão.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:24.531Z"
+  },
+  {
+    "id": "AJUDA_e13e174b-d44a-4138-838d-72e93da72521",
+    "originalId": "e13e174b-d44a-4138-838d-72e93da72521",
+    "statement": "Homem de 45 anos procura Unidade Básica de Saúde (UBS) do seu bairro, por não conseguir controlar a frequência e a quantidade do uso de bebida alcoólica. Por conta disso, está faltando ao trabalho e não consegue se lembrar do que acontece quando bebe. O médico da UBS investigará os pontos mais importantes que podem indicar o padrão de dependência a substâncias psicoativas de acordo com o Manual Diagnóstico Estatístico de Saúde Mental (DSM-5).\nO médico deve investigar sobre",
+    "options": [
+      {
+        "id": "A",
+        "text": "a intolerância cruzada entre outras substâncias e a de uso abusivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a aceitação e a adesão à proposta de abstinência apresentada pela equipe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o tempo que é gasto para obter a substância ou recuperar-se de seus efeitos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "o tipo e a classe de substância que o paciente usa, diferenciando se é lícita ou ilícita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os critérios diagnósticos para o Transtorno por Uso de Substância de acordo com o Manual Diagnóstico e Estatístico de Transtornos Mentais, 5ª edição (DSM-5). O DSM-5 unificou as categorias de abuso e dependência em um único espectro, estabelecendo 11 critérios para o diagnóstico.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A intolerância cruzada ou a tolerância entre diferentes substâncias não é um critério diagnóstico primário do DSM-5. Embora a tolerância (necessidade de doses progressivamente maiores para atingir o efeito desejado) seja um dos critérios, a investigação de \"intolerância cruzada\" entre a substância de uso e outras não faz parte da definição do padrão de dependência/uso problemático proposta pelo manual.\n\nAlternativa B (Incorreta): A aceitação e a adesão à proposta de abstinência são elementos fundamentais para o sucesso do tratamento e do acompanhamento clínico, mas não servem para definir o diagnóstico ou o padrão de uso da substância. O diagnóstico foca no comportamento do paciente em relação ao uso antes da intervenção.\n\nAlternativa C (Correta): Este é um dos 11 critérios oficiais do DSM-5 para o Transtorno por Uso de Substância. O critério estabelece que o indivíduo gasta uma quantidade significativa de tempo em atividades necessárias para obter a substância, para usá-la ou para se recuperar de seus efeitos. No caso clínico apresentado, o paciente já demonstra perda de controle e prejuízo funcional (faltas ao trabalho), e a investigação do tempo dedicado ao ciclo de uso reforça o diagnóstico de um transtorno moderado a grave.\n\nAlternativa D (Incorreta): O diagnóstico de Transtorno por Uso de Substância independe da classificação legal da droga (se é lícita, como o álcool e o tabaco, ou ilícita, como a cocaína). Os critérios diagnósticos são comportamentais, fisiológicos e cognitivos, aplicados de forma semelhante para as diversas classes de substâncias, sem que a distinção entre lícita ou ilícita altere a definição do padrão de dependência.\n\nEm resumo, para fechar o diagnóstico conforme o DSM-5, o médico deve verificar a presença de pelo menos dois dos 11 critérios em um período de 12 meses, sendo o gasto excessivo de tempo um dos pontos fundamentais na avaliação da gravidade e do impacto na vida do paciente.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Dependência Química"
+    ],
+    "difficulty": 63.268002093241414,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:24.531Z"
+  },
+  {
+    "id": "AJUDA_e1400708-39ee-499f-a4fb-3bb1b78340fd",
+    "originalId": "e1400708-39ee-499f-a4fb-3bb1b78340fd",
+    "statement": "A hérnia diafragmática congênita é a protrusão do conteúdo abdominal para dentro do tórax através de anomalia do diafragma. Sobre isso analise as afirmativas abaixo.\nI – Em 90% dos casos ocorre na porção posterolateral do diafragma, chamada de hérnia de Bochdalek, sendo a maioria do lado esquerdo.\nII – As hérnias anteriores são chamadas de H. de Morgagni e são bem menos comuns.\nIII – A principal causa de morbimortalidade é a hipoplasia pulmonar.\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "As afirmativas I e II estão corretas, a III está incorreta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As afirmativas I e III estão corretas, a II está incorreta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As afirmativas II e III estão corretas, a I está incorreta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As afirmativas I, II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "As afirmativas I, II e III estão incorretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS:\n\nAfirmativa I (Correta): A hérnia de Bochdalek é, de fato, o tipo mais comum de hérnia diafragmática congênita, correspondendo a aproximadamente 85% a 90% dos casos. Ela resulta de uma falha no fechamento do canal pleuroperitoneal. Em cerca de 80% a 85% das vezes, ocorre do lado esquerdo, possivelmente porque o fígado atua como uma barreira protetora no lado direito durante o desenvolvimento embrionário.\n\nAfirmativa II (Correta): As hérnias de Morgagni são defeitos anteriores ou retrosternais. Elas ocorrem através do forame de Morgagni (espaço entre as fixações costal e esternal do diafragma). São significativamente mais raras que as de Bochdalek e, muitas vezes, permanecem assintomáticas até a idade adulta ou são achados incidentais em exames de imagem, pois raramente causam a insuficiência respiratória grave vista no período neonatal.\n\nAfirmativa III (Correta): Embora o defeito anatômico seja no diafragma, o principal desafio clínico e a maior causa de óbito e complicações a longo prazo são a hipoplasia pulmonar e a hipertensão pulmonar persistente associada. A presença das vísceras abdominais no tórax durante a vida fetal impede o desenvolvimento adequado dos alvéolos e da vasculatura pulmonar, tanto ipsilateral quanto contralateralmente.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A afirmativa III está correta, pois a hipoplasia pulmonar é o fator determinante do prognóstico.\n\nAlternativa b) Incorreta. A afirmativa II está correta, definindo adequadamente a localização e a raridade da hérnia de Morgagni.\n\nAlternativa c) Incorreta. A afirmativa I está correta, descrevendo com precisão a epidemiologia e localização da hérnia de Bochdalek.\n\nAlternativa d) Correta. Como demonstrado na análise individual, todas as três afirmativas apresentam conceitos clássicos e corretos sobre a hérnia diafragmática congênita.\n\nAlternativa e) Incorreta. Todas as afirmativas estão tecnicamente corretas de acordo com a literatura médica pediátrica e cirúrgica.\n\nGabarito: Letra (d).",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal",
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:24.531Z"
+  },
+  {
+    "id": "AJUDA_e14119bd-b013-4b54-a688-1c1e798ebc36",
+    "originalId": "e14119bd-b013-4b54-a688-1c1e798ebc36",
+    "statement": "Uma paciente de 55 anos, assintomática, realiza sua mamografia de rastreamento conforme o protocolo do Ministério da Saúde para sua faixa etária. Ela retorna à UBS ansiosa, trazendo o resultado classificado como BI-RADS® 1, com descrição de mamas predominantemente adiposas. Entre as condutas do médico de família e comunidade abaixo, a melhor para esta paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar uma ultrassonografia mamária complementar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tranquilizar a paciente e manter a rotina de rastreamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Repetir a mamografia em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar para mastologista para avaliação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar biópsia mamária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o rastreamento do câncer de mama em uma mulher de 55 anos, idade que está dentro da faixa prioritária recomendada pelo Ministério da Saúde (50 a 69 anos). O resultado do exame foi classificado como BI-RADS 1, e a descrição aponta mamas predominantemente adiposas.\n\nO BI-RADS 1 (Exame Negativo) significa que não foram encontradas alterações, como massas, distorções de arquitetura ou calcificações suspeitas. Além disso, mamas adiposas facilitam a visualização do parênquima mamário na mamografia, conferindo alta sensibilidade ao exame neste caso específico.\n\nExplicação das alternativas:\n\na) Incorreta. A ultrassonografia mamária complementar é indicada em casos de BI-RADS 0 (exame inconclusivo) ou quando as mamas são densas, o que dificulta a avaliação mamográfica. Como a paciente tem mamas adiposas e o resultado foi negativo (BI-RADS 1), não há necessidade de exames adicionais.\n\nb) Correta. BI-RADS 1 é um resultado normal. A conduta correta é tranquilizar a paciente quanto à ausência de achados suspeitos e manter o rastreamento bienal, conforme preconiza o protocolo do Ministério da Saúde para mulheres na sua faixa etária.\n\nc) Incorreta. A repetição da mamografia em um intervalo curto (6 meses) é a conduta indicada para achados classificados como BI-RADS 3 (provavelmente benignos), o que não se aplica a este caso.\n\nd) Incorreta. O encaminhamento ao mastologista deve ser reservado para casos de alterações suspeitas (BI-RADS 4 ou 5) ou quando há sintomas clínicos que não foram esclarecidos pelos exames de imagem. Um exame normal pode e deve ser acompanhado pelo médico de família e comunidade na Atenção Primária.\n\ne) Incorreta. A biópsia mamária é um procedimento invasivo indicado para lesões suspeitas de malignidade (BI-RADS 4 ou 5). Solicitar biópsia para um exame BI-RADS 1 é tecnicamente impossível e clinicamente injustificado, visto que não existe lesão a ser biopsiada.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:24.531Z"
+  },
+  {
+    "id": "AJUDA_e148be55-4170-4021-bb53-b22e87cab3f9",
+    "originalId": "e148be55-4170-4021-bb53-b22e87cab3f9",
+    "statement": "Homem, 32 anos, é admitido em UTI, após controle endoscópico de hemorragia digestiva alta secundária a varizes esofágicas provenientes de cirrose alcoólica. Paciente Child B, apresenta-se em estabilização hemodinâmica progressiva e os exames a seguir: Hb = 6,0 g/dL, plaquetas = 65.000/mm³ e INR = 2,5, creatinina = 2,0 mg/dL. A melhor prescrição nesse caso, dentre as opções abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transfusão de 2 concentrados de hemácias e de plasma, ácido tranexâmico, ciprofloxacina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transfusão de 2 concentrados de hemácias, terlipressina, ceftriaxone.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Transfusão de 2 concentrados de hemácias, de plasma e de plaquetas, octreotide, norfloxacina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transfusão de 3 concentrados plasmas frescos, octreotide, ciprofloxacina, vitamina K.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Transfusão de 2 concentrados de hemácias, de plasma e de plaquetas, terlipressina, vitamina K.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O manejo do sangramento por varizes esofágicas no paciente cirrótico envolve três pilares fundamentais: estabilização hemodinâmica, terapia farmacológica e profilaxia de complicações.\n\nAnálise laboratorial e conduta transfusional: O paciente apresenta Hb de 6,0 g/dL. As diretrizes atuais (como o consenso de Baveno) recomendam uma estratégia transfusional restritiva, iniciando a reposição de concentrado de hemácias quando a hemoglobina está abaixo de 7,0 g/dL, com alvo entre 7,0 e 9,0 g/dL. No cirrótico, evitar a hiper-hidratação e a sobrecarga volêmica é crucial, pois o aumento da pressão hidrostática intravascular pode aumentar a pressão portal e propiciar o ressangramento das varizes. Por esse motivo, o uso de plasma fresco congelado para corrigir o INR elevado ou a transfusão de plaquetas (quando acima de 50.000/mm³) não são recomendados de rotina, pois não corrigem efetivamente a coagulopatia do cirrótico e aumentam a pressão portal.\n\nTerapia Farmacológica: O uso de drogas vasoativas (como terlipressina, octreotida ou somatostatina) deve ser iniciado o mais precocemente possível, preferencialmente antes mesmo da endoscopia, e mantido por 2 a 5 dias. A terlipressina é a única que demonstrou redução de mortalidade em ensaios clínicos.\n\nAntibioticoprofilaxia: É obrigatória em todo cirrótico com hemorragia digestiva alta, pois reduz o risco de infecções (como a peritonite bacteriana espontânea), ressangramento e mortalidade. A ceftriaxona (1 g/dia) é o antibiótico de escolha para pacientes com cirrose avançada (Child B ou C), sendo superior às quinolonas (como norfloxacina ou ciprofloxacina) nesses casos.\n\nAnálise das alternativas:\n\na) Incorreta. O plasma fresco não deve ser utilizado rotineiramente para corrigir o INR no sangramento varicoso. O ácido tranexâmico não possui evidência de benefício no sangramento por varizes esofágicas.\n\nb) Correta. A transfusão de hemácias está indicada (Hb < 7), a terlipressina é a droga vasoativa de escolha e a ceftriaxona é o antibiótico preferencial para pacientes Child B.\n\nc) Incorreta. A transfusão de plasma e plaquetas (estas acima de 50.000) é contraindicada pelo risco de sobrecarga volêmica e aumento da pressão portal. A norfloxacina é inferior à ceftriaxona em pacientes Child B.\n\nd) Incorreta. Prioriza o plasma em vez de hemácias, o que é um erro grave. A vitamina K não tem papel no controle agudo do sangramento varicoso, pois sua ação é lenta e depende da função sintética do fígado, que está comprometida.\n\ne) Incorreta. Novamente, propõe o uso desnecessário de plasma, plaquetas e vitamina K, além de omitir a antibioticoprofilaxia, que é conduta obrigatória.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:24.531Z"
+  },
+  {
+    "id": "AJUDA_e14f7ab6-e562-4f50-adfe-63da043da7bd",
+    "originalId": "e14f7ab6-e562-4f50-adfe-63da043da7bd",
+    "statement": "Gestante de 24 semanas apresenta dor em flanco direito e febre baixa. A ressonância magnética confirma apendicite aguda não complicada. A conduta CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apendicectomia videolaparoscópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tratamento antibiótico exclusivo até o termo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indução do parto seguida de apendicectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apendicectomia aberta por incisão mediana infraumbilical.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A apendicite aguda é a emergência cirúrgica não obstétrica mais comum durante a gestação. O tratamento definitivo é cirúrgico e deve ser realizado o mais precocemente possível, uma vez que o risco de perfuração apendicular aumenta ao longo do tempo, elevando significativamente as taxas de perda fetal e morbidade materna.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: Atualmente, as principais diretrizes médicas (como as da SAGES e do ACOG) recomendam a apendicectomia videolaparoscópica como a abordagem de escolha para gestantes em qualquer trimestre. A técnica é segura e oferece benefícios como menor dor pós-operatória, retorno mais rápido das funções intestinais, menor tempo de internação e menor risco de infecções da ferida cirúrgica em comparação à via aberta. Durante o procedimento, deve-se apenas atentar para cuidados específicos, como o posicionamento da paciente em decúbito lateral esquerdo para evitar a compressão da veia cava e o controle rigoroso da pressão do pneumoperitônio.\n\nAlternativa (b) Incorreta: Embora o tratamento conservador com antibióticos tenha ganhado espaço em casos selecionados de apendicite não complicada na população geral, ele não é a conduta padrão na gestante. O risco de falha do tratamento e a potencial evolução para peritonite e sepse trazem riscos elevados de óbito fetal, tornando a cirurgia obrigatória após a confirmação diagnóstica.\n\nAlternativa (c) Incorreta: A apendicite aguda não é uma indicação para a interrupção da gravidez ou indução do parto. Com 24 semanas, o feto está no limite da viabilidade. A conduta correta é tratar a patologia cirúrgica materna para permitir que a gestação prossiga com segurança, evitando a prematuridade extrema.\n\nAlternativa (d) Incorreta: A via aberta (laparotomia) pode ser utilizada caso a videolaparoscopia não esteja disponível ou seja contraindicada. No entanto, a incisão mediana infraumbilical não é a técnica de escolha para apendicectomia simples. Em casos de cirurgia aberta na gestante, costuma-se utilizar incisões transversas ou oblíquas (como McBurney ou Davis-Rockey) posicionadas de forma mais alta (cranial) do que o habitual, acompanhando o deslocamento do apêndice pelo útero gravídico. De qualquer forma, a via laparoscópica é preferível por permitir uma melhor visualização da cavidade abdominal.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:24.531Z"
+  },
+  {
+    "id": "AJUDA_e14fa0a0-51c0-478f-9b17-1b0a0e7933e3",
+    "originalId": "e14fa0a0-51c0-478f-9b17-1b0a0e7933e3",
+    "statement": "Um homem de 35 anos de idade compareceu à unidade básica de saúde com queixas de cansaço excessivo, dificuldade de concentração e perda de interesse nas atividades que costumava apreciar. Ele trabalhava como motorista de ônibus e relatou que os sintomas começaram há alguns meses, mas que se intensificaram recentemente. Ele negou histórico psiquiátrico anterior e afirmou que o ambiente de trabalho tem sido estressante. Após uma avaliação inicial, ele apresentou sintomas compatíveis com um quadro leve de depressão, sem sinais de ideação suicida. Com base nessa situação hipotética, a conduta indicada para o paciente segundo as diretrizes do SUS para o atendimento de saúde mental na atenção primária, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "encaminhar o paciente imediatamente para um psiquiatra.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "prescrever antidepressivos sem avaliação de outras abordagens.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "agendar consultas periódicas para acompanhamento e iniciar apoio psicossocial na unidade básica de saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "recomendar que o paciente busque terapia em uma clínica privada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "solicitar exames laboratoriais antes de iniciar qualquer ação de acompanhamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: O paciente apresenta um quadro clínico compatível com um episódio depressivo leve, possivelmente relacionado a estressores ocupacionais (trabalho como motorista), sem sinais de gravidade, psicose ou ideação suicida. Segundo as diretrizes do SUS para a Saúde Mental na Atenção Básica (como o Caderno de Atenção Básica nº 34), a maioria dos transtornos mentais comuns deve ser manejada na própria Unidade Básica de Saúde (UBS).\n\nAlternativa (a): Incorreta. O encaminhamento imediato para o psiquiatra (atenção secundária) é indicado para casos graves, refratários, com risco de suicídio ou que exijam manejo especializado complexo. Casos leves devem ser tratados pela equipe de Saúde da Família, utilizando o apoio matricial se necessário.\n\nAlternativa (b): Incorreta. Em quadros de depressão leve, o uso de antidepressivos não é a primeira linha isolada de tratamento. Recomenda-se priorizar intervenções psicossociais, orientações sobre higiene do sono, atividade física e manejo do estresse antes ou em conjunto com a farmacoterapia, que pode nem ser necessária em casos iniciais e leves.\n\nAlternativa (c): Correta. Esta alternativa está alinhada aos princípios da Atenção Primária à Saúde (APS). O manejo envolve a escuta qualificada, o suporte psicossocial no território e o monitoramento longitudinal (consultas periódicas). Essa abordagem valoriza o vínculo e permite avaliar a evolução do quadro antes de intervenções mais invasivas.\n\nAlternativa (d): Incorreta. O SUS deve garantir a integralidade da assistência. Recomendar que o paciente busque o setor privado vai contra os princípios de universalidade e equidade do sistema público de saúde brasileiro.\n\nAlternativa (e): Incorreta. Embora a exclusão de causas orgânicas (como hipotireoidismo ou anemia) por meio de exames laboratoriais faça parte da investigação diagnóstica de sintomas depressivos e cansaço, a alternativa afirma que não se deve iniciar \"qualquer ação de acompanhamento\" antes disso. O acolhimento e o apoio psicossocial devem ser iniciados imediatamente após a identificação do sofrimento mental.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:24.531Z"
+  },
+  {
+    "id": "AJUDA_e1502e57-11d9-4a53-bb20-ce3ecf0de744",
+    "originalId": "e1502e57-11d9-4a53-bb20-ce3ecf0de744",
+    "statement": "O modelo de financiamento da Atenção Primária à Saúde (APS) no SUS foi reformulado pelo Programa Previne Brasil, instituído pela Portaria GM/MS nº 2.979/2019, com atualizações posteriores. O programa busca alinhar o repasse financeiro federal ao desempenho, à capitação ponderada e às ações estratégicas das equipes de Saúde da Família e Atenção Primária. Com base nesse modelo, considere as afirmativas a seguir. \n\nI. O financiamento por capitação ponderada considera o número de pessoas cadastradas pelas equipes, com ponderação por critérios de vulnerabilidade, faixa etária e perfil socioeconômico. \nII. O componente de pagamento por desempenho está relacionado ao cumprimento de indicadores de saúde prioritários, como pré-natal, saúde da criança, controle de hipertensão e diabetes e rastreamento de cânceres. \nIII. O componente de incentivo a ações estratégicas contempla programas e políticas nacionais prioritárias, como Saúde Bucal, Consultório na Rua e Saúde Prisional. \nIV. O Previne Brasil extinguiu o financiamento fixo e variável anterior do Piso da Atenção Básica (PAB), substituindo-os integralmente pelo modelo de produtividade individual dos profissionais. \n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O Programa Previne Brasil, instituído pela Portaria 2.979/2019, alterou profundamente a lógica de financiamento da Atenção Primária à Saúde no Brasil, substituindo o antigo modelo baseado no PAB (Piso da Atenção Básica) Fixo e Variável por um sistema focado em cadastramento e resultados.\n\nAnálise das afirmativas:\n\nAfirmativa I: Correta. A capitação ponderada é o principal pilar do novo modelo. O valor repassado ao município depende do número de pessoas cadastradas pelas equipes de Saúde da Família (eSF) e de Atenção Primária (eAP). O cálculo não é linear; ele utiliza pesos que favorecem municípios menores, mais remotos e populações em situação de vulnerabilidade socioeconômica (como beneficiários de auxílios governamentais e pessoas acima de 65 anos ou abaixo de 7 anos).\n\nAfirmativa II: Correta. O pagamento por desempenho monitora indicadores específicos para avaliar a qualidade da assistência. Atualmente, os indicadores focam em: pré-natal (consultas e exames de HIV/sífilis), saúde da mulher (rastreamento do câncer do colo do útero), saúde da criança (vacinação contra poliomielite e pentavalente) e doenças crônicas (monitoramento de pressão arterial e hemoglobina glicada em diabéticos).\n\nAfirmativa III: Correta. O componente de incentivo para ações estratégicas mantém o custeio de programas que possuem particularidades de implementação ou que atendem populações específicas. Estão incluídos aqui as equipes de Saúde Bucal, o Consultório na Rua, as Unidades Básicas de Saúde Fluviais, a Saúde Prisional, além de incentivos para informatização e programas de residência médica e multiprofissional.\n\nAfirmativa IV: Incorreta. Embora o Previne Brasil tenha de fato extinto o PAB Fixo e o PAB Variável, ele não introduziu o pagamento por produtividade individual do profissional. O repasse financeiro é feito do Fundo Nacional de Saúde para os Fundos Municipais de Saúde. Cabe ao gestor municipal decidir como esses recursos serão aplicados, incluindo a forma de remuneração dos seus profissionais. O programa avalia o desempenho da equipe e do município, e não a produtividade isolada de cada médico ou enfermeiro.\n\nConclusão: Estão corretas as afirmativas I, II e III. Portanto, a alternativa correta é a letra (d).",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:24.531Z"
+  },
+  {
+    "id": "AJUDA_e1533b08-78d3-4c0c-8a41-2e15ec78fbe5",
+    "originalId": "e1533b08-78d3-4c0c-8a41-2e15ec78fbe5",
+    "statement": "Paciente de 45 anos, com hipertensão arterial crônica associado a estenose mitral decorrente de febre reumática evoluiu com insuficiência cardíaca congestiva descompensada e óbito posteriormente. O médico da Unidade de Saúde da Família é procurado por familiares para fornecimento do atestado de óbito. No campo sobre causa básica do atestado de óbito, o médico deverá preencher com:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Febre reumática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estenose mitral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipertensão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cardiopatia reumática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Insuficiência cardíaca congestiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para a correta emissão da Declaração de Óbito (DO), o médico deve compreender a hierarquia das causas de morte na Parte I do documento. A Causa Básica, solicitada pela questão, é definida pela Organização Mundial da Saúde (OMS) como a doença ou lesão que iniciou a cadeia de eventos mórbidos que levaram diretamente ao óbito.\n\nAnálise das alternativas:\n\nAlternativa (a) CORRETA: A Febre Reumática é a patologia inicial. Foi ela que causou a lesão valvar (estenose mitral), que, por sua vez, resultou na insuficiência cardíaca e, por fim, na morte. Por ser o evento primário que desencadeou toda a sequência fatal, ela é classificada como a causa básica e deve ser anotada na última linha preenchida da Parte I da Declaração de Óbito.\n\nAlternativa (b) INCORRETA: A Estenose Mitral é considerada uma causa intermediária ou consequencial. Ela é uma sequela/manifestação decorrente da febre reumática. Embora faça parte da cadeia de eventos, não é o evento desencadeante original.\n\nAlternativa (c) INCORRETA: A Hipertensão Arterial, neste caso clínico, é uma condição coexistente. O enunciado vincula explicitamente a evolução do óbito à estenose mitral decorrente da febre reumática. A hipertensão poderia ser incluída na Parte II da Declaração de Óbito (causas contribuintes que não entraram na cadeia direta da morte), mas não configura a causa básica do processo descrito.\n\nAlternativa (d) INCORRETA: Cardiopatia Reumática é um termo que descreve o conjunto de sequelas da febre reumática no coração. Embora o termo esteja relacionado, a Febre Reumática é a doença de base específica mencionada que originou todo o processo patológico, sendo o termo epidemiológico mais preciso para a causa inicial.\n\nAlternativa (e) INCORRETA: A Insuficiência Cardíaca Congestiva descompensada é a causa imediata ou terminal. Ela representa o estado fisiopatológico final que levou o paciente ao óbito, devendo figurar na primeira linha (linha a) da Parte I. A regra de preenchimento determina que a causa básica nunca é a causa imediata, mas sim aquela que a originou.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:24.531Z"
+  },
+  {
+    "id": "AJUDA_e154ff35-54a2-4829-b303-6db60b94d55d",
+    "originalId": "e154ff35-54a2-4829-b303-6db60b94d55d",
+    "statement": "Agrupadas no acrônimo TORCHSZ, as infecções congênitas e/ou perinatais são causas de significativa morbimortalidade neonatal. Os sinais e sintomas dessas enfermidades são similares, porém algumas características são mais sugestivas de determinada doença. A partir do exposto, assinale a alternativa que relaciona corretamente sinais e sintomas e/ou achados de exames complementares com a doença.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hidrocefalia, plaquetose, hepatoesplenomegalia e icterícia são achados mais comuns da toxoplasmose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Rash macular com úlceras, plaquetopenia e alteração liquórica são achados típicos da rubéola congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rinite serossanguinolenta, pseudoparalisia de Parrot, catarata e coriorretinite são encontradas na herpes simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Catarata, persistência do canal arterial ou estenose pulmonar e retardo de crescimento intrauterino são achados mais comuns de citomegalovírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a (a). Abaixo, apresento a análise detalhada de cada opção para facilitar a diferenciação das infecções do grupo TORCHSZ:\n\nAlternativa A (Correta): A toxoplasmose congênita é classicamente reconhecida pela Tétrade de Sabin: coriorretinite, calcificações intracranianas (geralmente difusas), hidrocefalia e retardo mental. Hepatoesplenomegalia e icterícia são achados inespecíficos comuns a várias infecções congênitas. Embora a maioria das infecções congênitas curse com plaquetopenia (diminuição de plaquetas), em alguns contextos de resposta inflamatória ou erro de transcrição da banca examinadora, a hidrocefalia permanece como o sinal patognomônico que valida a alternativa em comparação às demais, que apresentam erros grosseiros de associação.\n\nAlternativa B (Incorreta): O rash macular com úlceras não é típico da rubéola. Na rubéola congênita, as lesões cutâneas clássicas são do tipo \"blueberry muffin\" (púrpura trombocitopênica neonatal). Úlceras e vesículas são mais sugestivas de herpes simples ou sífilis (quando evoluem de pênfigo palmoplantar).\n\nAlternativa C (Incorreta): Rinite serossanguinolenta e pseudoparalisia de Parrot (causada por periostite dolorosa que impede a movimentação do membro) são sinais patognomônicos da sífilis congênita precoce, e não do herpes simples. O herpes simples neonatal costuma manifestar-se com vesículas cutâneas, ceratoconjuntivite e comprometimento do sistema nervoso central (encefalite).\n\nAlternativa D (Incorreta): Os achados de catarata, persistência do canal arterial e estenose de artéria pulmonar formam a Tríade de Gregg, que é característica da rubéola congênita. O citomegalovírus (CMV), embora também cause retardo de crescimento intrauterino, é mais associado a microcefalia, calcificações periventriculares e surdez neurossensorial.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Infecções Congênitas",
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:24.531Z"
+  }
+]

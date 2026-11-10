@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_ee28ffe5-517b-4747-844b-830a7463a9c5",
+    "originalId": "ee28ffe5-517b-4747-844b-830a7463a9c5",
+    "statement": "Paciente, 28 anos, chegou ao pronto-socorro após um ferimento por arma branca na região cervical, apresentando estridor, enfisema subcutâneo e hemorragia pulsátil. Com base nos sinais clínicos apresentados, a conduta mais apropriada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar ressecção cirúrgica para explorar e reparar as lesões vasculares e laringotraqueais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar o paciente para observação em um setor não cirúrgico, considerando que a hemorragia está controlada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar antibióticos e alta do paciente, pois não há sinais de choque.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar apenas monitoramento clínico, pois os sinais são leves e não requerem cirurgia imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender a resolução desta questão, devemos aplicar os protocolos de atendimento ao trauma cervical, especificamente as indicações de exploração cirúrgica imediata. No trauma de pescoço, os sinais clínicos são divididos em \"hard signs\" (sinais de certeza de lesão grave) e \"soft signs\" (sinais sugestivos).\n\nO paciente apresenta três sinais clássicos que indicam a necessidade de intervenção cirúrgica imediata, conhecidos como sinais \"duros\":\n1. Estridor: indica obstrução ou lesão iminente de via aérea superior (laringe/traqueia).\n2. Enfisema subcutâneo: indica perda da integridade da via aérea ou do trato digestivo superior.\n3. Hemorragia pulsátil: sinal inequívoco de lesão arterial maior.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. A presença de sinais \"duros\" de lesão vascular (hemorragia pulsátil) e de via aérea (estridor e enfisema) torna a exploração cirúrgica mandatória e imediata. O objetivo é o controle do sangramento e a estabilização da via aérea e de eventuais lesões laringotraqueais ou esofágicas.\n\nAlternativa b) Incorreta. A observação em setor não cirúrgico é reservada apenas para pacientes estáveis, sem sinais de alerta e, geralmente, após exames de imagem negativos. Um paciente com hemorragia pulsátil e estridor nunca deve ser apenas observado.\n\nAlternativa c) Incorreta. A administração de antibióticos pode fazer parte do suporte (especialmente em lesões esofágicas), mas jamais substitui o tratamento cirúrgico das lesões mecânicas. A alta é contraindicada e representaria risco de morte iminente por asfixia ou choque hipovolêmico.\n\nAlternativa d) Incorreta. O monitoramento clínico é indicado para pacientes assintomáticos ou com sinais muito leves (\"soft signs\") que passarão por propedêutica armada (angiotomografia, endoscopia). No caso descrito, os sinais não são leves, mas sim indicadores de gravidade que exigem cirurgia imediata.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:59.885Z"
+  },
+  {
+    "id": "AJUDA_ee2e0b0a-f4e9-482b-86d0-25128458cae4",
+    "originalId": "ee2e0b0a-f4e9-482b-86d0-25128458cae4",
+    "statement": "Mulher, 30 anos de idade, é atendida no PS por apresentar, agudamente, dificuldade para andar e referindo visão dupla. A irmã acha que ela está confusa e desorientada. Exame físico: paciente emagrecida, com excesso de pele, desorientada no tempo e espaço, confusa, com nistagmo multidirecional, alteração do equilíbrio, dificuldade para ficar em pé e caminhar. Antecedentes pessoais: hipertensão arterial, obesidade tratada com cirurgia bariátrica há 3 anos. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encefalite Viral por Herpes Vírus tipo 1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encefalopatia por deficiência de vitamina A",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encefalopatia de Wernicke",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Encefalite autoimune por anticorpos anti-NMDAR",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta a tríade clássica da Encefalopatia de Wernicke, composta por: 1) Alteração do estado mental (confusão e desorientação); 2) Ataxia (dificuldade para caminhar e alteração do equilíbrio); e 3) Alterações oculomotoras (visão dupla e nistagmo multidirecional). O antecedente de cirurgia bariátrica há 3 anos, associado ao aspecto físico de emagrecimento acentuado (excesso de pele), são fatores de risco cruciais, pois indicam uma provável deficiência nutricional grave de tiamina (vitamina B1), essencial para o metabolismo cerebral.\n\nAnálise das alternativas:\n\na) Incorreta. A Encefalite Viral por Herpes Simples tipo 1 costuma apresentar-se com febre alta, cefaleia progressiva e crises convulsivas, além de sinais de focalidade neurológica, já que o vírus tem predileção pelos lobos temporais. Embora cause confusão mental, não explicaria a tríade típica no contexto de uma paciente pós-bariátrica.\n\nb) Incorreta. A deficiência de vitamina A manifesta-se primordialmente por xeroftalmia (olho seco) e cegueira noturna. Embora possa causar alterações na pele, não causa o quadro neurológico agudo de ataxia e nistagmo descrito na questão.\n\nc) Correta. O quadro é uma apresentação típica da Encefalopatia de Wernicke. Esta condição é causada pela carência de tiamina (B1). Apesar de ser muito lembrada no etilismo crônico, qualquer estado de desnutrição ou má absorção, como ocorre após cirurgias bariátricas, pode desencadear a doença. A presença da tríade completa (confusão, ataxia e nistagmo/oftalmoplegia) ocorre em cerca de um terço dos pacientes, tornando o diagnóstico altamente provável neste cenário.\n\nd) Incorreta. A Encefalite anti-NMDAR é uma condição autoimune que afeta frequentemente mulheres jovens, mas o quadro clínico típico envolve sintomas psiquiátricos agudos, discinesias orofaciais (movimentos involuntários da face e língua), crises epilépticas e instabilidade autonômica. O histórico de cirurgia bariátrica e o exame físico da paciente direcionam o examinador especificamente para uma causa nutricional.\n\nConclusão:\nO diagnóstico é Encefalopatia de Wernicke. O tratamento deve ser iniciado imediatamente com reposição de tiamina intravenosa, preferencialmente antes de qualquer administração de glicose, para evitar o agravamento das lesões neurológicas.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:59.885Z"
+  },
+  {
+    "id": "AJUDA_ee305023-517e-4445-bd4c-dd0416518728",
+    "originalId": "ee305023-517e-4445-bd4c-dd0416518728",
+    "statement": "Assinale a alternativa que corresponde a um fio cirúrgico inabsorvível.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Categute",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Polidioxanona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Poliglactina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Seda",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para responder a essa questão, é fundamental classificar os fios cirúrgicos quanto ao seu destino no organismo: absorvíveis (degradados e assimilados pelo corpo) e inabsorvíveis (permanecem no tecido ou precisam ser removidos).\n\na) Categute: Incorreta. O categute é um fio de origem animal (submucosa do intestino de ovinos ou serosa de bovinos), sendo classificado como um fio absorvível natural. Ele pode ser simples (absorção rápida) ou cromado (absorção um pouco mais lenta devido ao tratamento com sais de cromo), mas ambos são digeridos por enzimas proteolíticas.\n\nb) Polidioxanona: Incorreta. Conhecida comercialmente como PDS, a polidioxanona é um fio sintético monofilamentar e absorvível. Sua principal característica é a absorção lenta (em torno de 180 a 210 dias), o que garante suporte tensional prolongado aos tecidos, mas, ainda assim, ele é totalmente degradado por hidrólise.\n\nc) Poliglactina: Incorreta. A poliglactina 910 (como o Vicryl) é um fio sintético multifilamentar (trançado) e absorvível. É amplamente utilizado na síntese de tecidos internos, apresentando uma absorção completa por hidrólise em um período médio de 56 a 70 dias.\n\nd) Seda: Correta. A seda é um material de origem natural (extraído do casulo do bicho-da-seda) classificado classicamente como um fio inabsorvível. Embora possa sofrer uma degradação muito lenta ao longo de anos por meio de proteólise, na prática clínica e para fins de provas de residência, ela é o exemplo clássico de fio inabsorvível natural de alta resistência e excelente manuseio (segurança do nó).\n\nPortanto, entre as opções apresentadas, apenas a seda pertence ao grupo dos fios inabsorvíveis.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:59.885Z"
+  },
+  {
+    "id": "AJUDA_ee333c7b-16a4-4eec-9355-1d62536a1507",
+    "originalId": "ee333c7b-16a4-4eec-9355-1d62536a1507",
+    "statement": "Um paciente masculino de 45 anos, recentemente internado num leito de UTI, tem diagnóstico sindrômico de choque. Foi submetido à passagem de cateter de Swan-Ganz. As medidas realizadas evidenciam: pressão capilar pulmonar ocluída reduzida, débito cardíaco normal, pressão venosa central reduzida e resistência vascular sistêmica reduzida. Com base nesses achados, esse paciente apresenta que tipo de choque?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obstrutivo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Distributivo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hipovolêmico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cardiogênico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender essa questão, devemos analisar o perfil hemodinâmico fornecido pelo cateter de Swan-Ganz, focando principalmente na Resistência Vascular Sistêmica (RVS), que é a chave para o diagnóstico diferencial dos choques.\n\nAnálise dos dados hemodinâmicos:\n\n1. Pressão Capilar Pulmonar Ocluída (PCPO/PAPC) e Pressão Venosa Central (PVC) reduzidas: Isso indica que as pressões de enchimento das câmaras esquerdas e direitas estão baixas. Ou seja, há menos volume retornando ao coração ou uma \"hipovolemia relativa\" por dilatação dos vasos.\n2. Débito Cardíaco (DC) normal: Em fases iniciais ou compensadas de alguns choques, o DC pode estar normal ou até elevado. Isso exclui causas em que a falha primária é a bomba ou uma obstrução severa ao fluxo.\n3. Resistência Vascular Sistêmica (RVS) reduzida: Este é o achado patognomônico. Em quase todos os outros tipos de choque (hipovolêmico, cardiogênico e obstrutivo), o corpo tenta compensar a queda da pressão arterial aumentando a resistência vascular (vasoconstrição). O único choque que cursa primariamente com vasodilatação (RVS baixa) é o choque distributivo.\n\nAnálise das alternativas:\n\na) Incorreta. O choque obstrutivo (como no tromboembolismo pulmonar ou tamponamento cardíaco) apresenta, geralmente, débito cardíaco reduzido e pressões de enchimento (PVC e/ou PCPO) elevadas. Além disso, a RVS estaria aumentada como mecanismo compensatório.\n\nb) Correta. O choque distributivo (cujas causas principais são sepse, anafilaxia e choque neurogênico) caracteriza-se por uma falha na regulação do tônus vascular, levando a uma vasodilatação generalizada. Isso explica a RVS reduzida. Como os vasos estão dilatados, as pressões de enchimento (PVC e PCPO) caem, e o débito cardíaco tende a ser normal ou aumentado (estado hiperdinâmico) para tentar suprir a demanda tecidual.\n\nc) Incorreta. No choque hipovolêmico, tanto a PVC quanto a PCPO estão reduzidas, e o débito cardíaco também cai. No entanto, a RVS estará obrigatoriamente aumentada, pois o sistema nervoso simpático promove vasoconstrição periférica intensa para manter a perfusão dos órgãos vitais.\n\nd) Incorreta. No choque cardiogênico, o problema é a falha da bomba cardíaca. O débito cardíaco é baixo, o que gera um acúmulo de sangue \"atrás\" do coração, elevando a PCPO e a PVC (congestão). A RVS também estará aumentada como mecanismo de compensação para manter a pressão arterial.\n\nConclusão: O único tipo de choque que apresenta Resistência Vascular Sistêmica reduzida é o distributivo.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Ventilação Mecânica",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:59.885Z"
+  },
+  {
+    "id": "AJUDA_ee38e165-dabe-402f-b381-8120c4934921",
+    "originalId": "ee38e165-dabe-402f-b381-8120c4934921",
+    "statement": "Adolescente de 16 anos procura atendimento no centro de saúde, acompanhada da mãe, referindo nunca ter menstruado. Nega dor abdominal cíclica e atividade sexual. Ao exame físico: Altura = 1,75m (percentil 90-95 para a idade), Peso = 68kg (IMC = 22,2kg/m²). Estágio puberal de Marshall-Tanner M4 P2. Abdome plano, macio, indolor à palpação; presença de massas palpáveis como protrusões ovaladas, firmes e móveis em região inguinal bilateralmente. Genitália externa de aspecto feminino habitual, com pilificação bastante reduzida. Considerando o caso descrito, assinale a alternativa que apresenta, respectivamente, hipótese diagnóstica e propedêutica inicial CORRETAS:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Agenesia mülleriana; ultrassonografia pélvica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Disgenesia gonadal pura; dosagens de FSH e estradiol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hiperplasia adrenal congênita não clássica; dosagem de 17-OH-progesterona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de insensibilidade androgênica completa; ultrassonografia inguinal e pélvica abdominal",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso apresenta uma adolescente de 16 anos com amenorreia primária. Os pontos-chave para o diagnóstico são:\n\n1. Desenvolvimento mamário presente (M4): Indica que houve ação de estrogênio no organismo.\n2. Pilificação pubiana e axilar escassa/ausente (P2): Este é o sinal patognomônico para pensar em insensibilidade androgênica. Em uma paciente 46,XX com desenvolvimento mamário normal, espera-se pilificação normal (estimulada pelos androgênios adrenais e ovarianos). A ausência de pelos sugere que os receptores de androgênio não estão funcionando.\n3. Massas em região inguinal: Em uma paciente com fenótipo feminino e amenorreia, a presença de massas móveis e firmes nos canais inguinais sugere fortemente a presença de testículos que não desceram.\n4. Estatura elevada: Pacientes com Síndrome de Insensibilidade Androgênica Completa (46,XY) tendem a ser mais altas que a média feminina devido à presença do cromossomo Y.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. Na Agenesia Mülleriana (Síndrome de Mayer-Rokitansky-Küster-Hauser), a paciente é 46,XX. Ela possui ovários funcionantes e glândulas adrenais normais, portanto, a pilificação axilar e pubiana é normal e compatível com o desenvolvimento das mamas (o que não ocorre no caso descrito). Além disso, não há presença de massas inguinais (testículos).\n\nb) INCORRETA. Na Disgenesia Gonadal Pura (Síndrome de Swyer), a paciente possui cariótipo 46,XY, mas as gônadas são em fita e não produzem hormônios. Como não há produção de estrogênio (nem por produção direta, nem por conversão periférica), a paciente apresentaria infantilismo sexual (mamas M1), o que contraria o estágio M4 descrito.\n\nc) INCORRETA. A Hiperplasia Adrenal Congênita não clássica costuma cursar com sinais de excesso de androgênios, como hirsutismo (excesso de pelos), acne e irregularidade menstrual ou puberdade precoce, e não com ausência de pelos e amenorreia primária com massas inguinais.\n\nd) CORRETA. A Síndrome de Insensibilidade Androgênica Completa (antigamente chamada de Síndrome de Morris) explica todos os achados: o cariótipo é 46,XY e os testículos produzem testosterona, mas o corpo não responde a esse hormônio. A testosterona é convertida perifericamente em estrogênio, gerando o desenvolvimento das mamas (M4). Como não há resposta aos androgênios, não há crescimento de pelos (P2). Os testículos frequentemente são encontrados nos canais inguinais. A propedêutica inicial correta envolve a ultrassonografia para confirmar a ausência de útero (já que o hormônio antimülleriano produzido pelos testículos impede a formação das estruturas müllerianas) e caracterizar as massas inguinais como testículos. O diagnóstico definitivo é feito pelo cariótipo.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:59.885Z"
+  },
+  {
+    "id": "AJUDA_ee40e12b-64d0-4aba-8fd0-889b45b5c7ff",
+    "originalId": "ee40e12b-64d0-4aba-8fd0-889b45b5c7ff",
+    "statement": "87- Em relação à Avaliação de Tecnologias em Saúde (ATS) e sua aplicação na Atenção Primária, assinale a alternativa que expressa corretamente a lógica de incorporação de tecnologias no SUS segundo critérios de evidência e custo-efetividade.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tecnologias são incorporadas prioritariamente por demanda da indústria farmacêutica, considerando avanços terapêuticos globais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O processo de incorporação no SUS é guiado exclusivamente por análise econômica e custos absolutos, feita em conjunto pelo ministério da fazenda e pelo ministério da saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A Comissão Nacional de Incorporação de Tecnologias (CONITEC) avalia segurança, efetividade, impacto orçamentário e relevância clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A análise de custo-efetividade não se aplica à Atenção Primária à Saúde (APS), sendo restrita a medicamentos de alto custo da atenção especializada, visto que a APS tem baixa densidade tecnológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O tema central desta questão é a Avaliação de Tecnologias em Saúde (ATS), um processo multidisciplinar que analisa as implicações clínicas, sociais, éticas e econômicas da utilização de uma tecnologia. No Brasil, esse processo é institucionalizado e segue normas específicas para garantir a sustentabilidade do Sistema Único de Saúde (SUS).\n\nAlternativa (a) Incorreta: A incorporação de tecnologias no SUS não ocorre prioritariamente por demanda da indústria farmacêutica ou apenas seguindo tendências globais. O processo deve ser pautado no interesse público, nas necessidades epidemiológicas da população brasileira e em evidências científicas robustas. Embora a indústria possa solicitar a análise de um produto, a decisão final cabe ao Estado, baseada em critérios técnicos e sociais.\n\nAlternativa (b) Incorreta: Embora a análise econômica seja um pilar fundamental, o processo não é guiado exclusivamente por ela nem apenas por custos absolutos. A avaliação é multidimensional, incluindo segurança e eficácia. Além disso, o órgão responsável é a CONITEC, vinculada ao Ministério da Saúde. O Ministério da Fazenda pode participar de discussões orçamentárias macroestruturais, mas a avaliação técnica de ATS é competência da área da saúde.\n\nAlternativa (c) Correta: Esta alternativa descreve com precisão as atribuições da Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde (CONITEC), criada pela Lei nº 12.401/2011. Para que uma tecnologia seja incorporada, a CONITEC exige evidências de que o novo produto ou procedimento é, no mínimo, tão seguro e eficaz quanto os já existentes (relevância clínica). Além disso, realiza-se a análise de custo-efetividade (se o benefício justifica o gasto adicional) e o impacto orçamentário (quanto custará ao SUS ao longo dos anos para oferecer essa tecnologia a todos que precisam).\n\nAlternativa (d) Incorreta: Existe um equívoco conceitual em dizer que a Atenção Primária à Saúde (APS) possui baixa densidade tecnológica. A APS utiliza intensamente tecnologias leves (relacionais e de gestão de cuidado) e leves-duras (conhecimentos estruturados). A análise de custo-efetividade é extremamente relevante na APS, pois, como as intervenções são aplicadas em grandes massas populacionais (como vacinas ou rastreamentos), qualquer decisão de incorporação gera um impacto financeiro e clínico massivo no sistema de saúde.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:59.885Z"
+  },
+  {
+    "id": "AJUDA_ee506930-14c9-4cc1-8674-0335d5d2b405",
+    "originalId": "ee506930-14c9-4cc1-8674-0335d5d2b405",
+    "statement": "Homem de 68 anos, emagrecido, chega ao pronto-socorro com distensão abdominal importante, vômitos fecaloides e dor contínua. Exame físico: abdome distendido, doloroso difusamente, sinais de irritação peritoneal. Sinais vitais: FC 128 bpm, PA 84/52 mmHg, lactato 4,2 mmol/L, febre 38,5 °C. Tomografia abdominal mostra obstrução em sigmoide compatível com neoplasia, grande distensão colônica, pneumatose parietal no ceco, pequeno pneumoperitônio e líquido livre turvo. Qual a conduta cirúrgica inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colectomia segmentar com anastomose primária e ileostomia de proteção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colectomia subtotal com ileostomia terminal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Endoprótese colônica como ponte para cirurgia eletiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colectomia à Hartmann de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cecostomia de descompressão associada a antibiótico, adiando ressecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO paciente apresenta um quadro de obstrução intestinal baixa (no sigmoide por neoplasia) complicada. A presença de dor contínua, irritação peritoneal, febre, hipotensão (84/52 mmHg), taquicardia (128 bpm) e lactato elevado caracteriza um abdome agudo perfurativo com choque séptico. O achado tomográfico de pneumatose parietal no ceco e pneumoperitônio indica que houve uma perfuração diastática do ceco. Isso ocorre devido à Lei de Laplace: em uma obstrução em alça fechada (com válvula ileocecal competente), a pressão retrógrada aumenta o diâmetro do cólon, e o ceco, por ser a porção de maior calibre, é o que sofre maior tensão na parede, evoluindo com isquemia e perfuração.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\nDiante de uma obstrução distal (sigmoide) com complicação proximal (isquemia/perfuração do ceco), a conduta de escolha é a colectomia subtotal. Esta cirurgia remove tanto o tumor obstrutivo quanto o segmento isquêmico/perfurado. Como o paciente está instável hemodinamicamente (choque séptico) e apresenta peritonite difusa, a realização de qualquer anastomose (emenda) intestinal é formalmente contraindicada pelo alto risco de deiscência. Portanto, a reconstrução deve ser adiada, realizando-se uma ileostomia terminal para proteção do paciente.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): A colectomia segmentar com anastomose primária e ileostomia de proteção é contraindicada neste caso por dois motivos principais: a instabilidade hemodinâmica do paciente e a presença de comprometimento isquêmico no ceco. Fazer uma anastomose em vigência de choque e peritonite resulta em falha de cicatrização. Além disso, a colectomia segmentar não resolveria o problema do ceco isquêmico.\n\nAlternativa (c): A endoprótese colônica é uma opção para descompressão em casos de obstrução neoplásica aguda como ponte para cirurgia eletiva, mas é absolutamente contraindicada se houver sinais de perfuração, peritonite ou instabilidade hemodinâmica, que são exatamente o quadro que o paciente apresenta.\n\nAlternativa (d): A cirurgia de Hartmann (sigmoidectomia com colostomia terminal e fechamento do coto retal) seria adequada se o problema estivesse restrito apenas ao sigmoide. No entanto, o paciente tem pneumatose cecal e pneumoperitônio, o que indica que o ceco também está doente. Se o cirurgião retirar apenas o sigmoide e deixar o ceco perfurado/isquêmico para trás, o foco da sepse não será controlado.\n\nAlternativa (e): A cecostomia de descompressão é um procedimento de exceção, tecnicamente inferior e raramente indicado hoje em dia. Em um cenário de peritonite generalizada e pneumoperitônio, ela não trata a causa da perfuração nem remove o tumor, sendo insuficiente para o manejo de um paciente em choque séptico.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Abdome Agudo Perfurativo",
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:59.885Z"
+  },
+  {
+    "id": "AJUDA_ee508786-0fae-412e-85f3-bc7d53438d49",
+    "originalId": "ee508786-0fae-412e-85f3-bc7d53438d49",
+    "statement": "Jovem de 19 anos apresenta urina espumosa e edema de membros inferiores. PA: 120 x 70 mmHg. Laboratorialmente temos creatinina sérica: 0,8 mg/dL, albumina sérica: 1,9 g/dL e proteinúria de 5,4 gramas em 24 horas. A biópsia renal mostra anátomo patológico sem alterações significativas. No exame de urina típico desta situação o mais provável é encontrarmos cilindros",
+    "options": [
+      {
+        "id": "A",
+        "text": "hemáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "gordurosos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "hialinos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "leucocitários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "granulosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve um paciente jovem com síndrome nefrótica clássica, caracterizada por edema, proteinúria maciça (5,4 g/24h) e hipoalbuminemia (1,9 g/dL). O fato de a biópsia renal não apresentar alterações significativas à microscopia óptica aponta para o diagnóstico de doença de lesões mínimas, que é a causa mais comum de síndrome nefrótica primária nesta faixa etária e em crianças.\n\nNa síndrome nefrótica, a perda de proteínas estimula o fígado a aumentar a produção de lipoproteínas, resultando em hiperlipidemia. Como a barreira de filtração glomerular está com a permeabilidade alterada, esses lipídios acabam passando para o lúmen tubular, fenômeno conhecido como lipidúria. No exame de urina, essa gordura pode ser vista livre, dentro de células epiteliais (corpos gordurosos ovais) ou compondo a matriz de cilindros.\n\nAnálise das alternativas:\n\na) Incorreta. Cilindros hemáticos indicam sangramento de origem glomerular e são o achado típico das síndromes nefríticas (como a glomerulonefrite pós-estreptocócica), onde há inflamação intensa e ruptura da membrana basal glomerular, permitindo a passagem de hemácias.\n\nb) Correta. Cilindros gordurosos são formados pela incorporação de gotículas de gordura e ésteres de colesterol na matriz proteica do cilindro. Eles são o achado clássico no sedimento urinário de pacientes com síndrome nefrótica, independentemente da causa histológica, refletindo a lipidúria.\n\nc) Incorreta. Cilindros hialinos são compostos basicamente pela proteína de Tamm-Horsfall. Embora possam estar presentes em qualquer quadro de proteinúria, eles são inespecíficos e podem aparecer em situações fisiológicas, como desidratação, febre ou após exercícios físicos intensos.\n\nd) Incorreta. Cilindros leucocitários sugerem um processo inflamatório ou infeccioso acometendo diretamente os túbulos e o interstício renal. São encontrados tipicamente na pielonefrite aguda e na nefrite intersticial aguda.\n\ne) Incorreta. Cilindros granulosos surgem da degeneração de cilindros celulares ou da agregação de proteínas plasmáticas. Eles são marcadores de lesão tubular ativa, sendo o achado principal na necrose tubular aguda (NTA), ou podem estar presentes em doenças renais crônicas avançadas.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:59.885Z"
+  },
+  {
+    "id": "AJUDA_ee5153f7-7f3c-4a1b-89fc-80f9eaab9610",
+    "originalId": "ee5153f7-7f3c-4a1b-89fc-80f9eaab9610",
+    "statement": "Qual foi uma das características da Norma Operacional Básica (NOB) do Sistema Único de Saúde (SUS) 01/96?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Criar os Conselhos Municipais de Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apresentar o tema central “a municipalização é o caminho”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Constituir as Comissões Intergestores Bipartite e Tripartite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Incorporar as ações de Vigilância Sanitária, criando o incentivo para as Ações Básicas de Vigilância Sanitária.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nAlternativa a) Incorreta. A criação e a exigência dos Conselhos Municipais de Saúde como condição obrigatória para o repasse de recursos financeiros estão fundamentadas na Lei Federal 8.142 de 1990. Portanto, essa estrutura de controle social já estava estabelecida antes da edição da NOB 01/96.\n\nAlternativa b) Incorreta. O lema \"A municipalização é o caminho\" é a principal marca da NOB 01/93. Foi essa norma que deu o impulso inicial vigoroso para a descentralização, definindo que o município deveria ser o gerente principal dos serviços de saúde em seu território.\n\nAlternativa c) Incorreta. As Comissões Intergestores Bipartite (CIB) e Tripartite (CIT) foram constituídas pela NOB 01/93. Elas surgiram como espaços de negociação e pactuação entre os gestores municipais, estaduais e federais para viabilizar a descentralização do sistema.\n\nAlternativa d) Correta. A NOB 01/96 consolidou o papel do município como gestor e reordenou o modelo de financiamento. Uma de suas características marcantes foi a inclusão das ações de Vigilância em Saúde (Sanitária e Epidemiológica) no escopo da atenção básica, criando incentivos financeiros específicos para que os municípios assumissem essas responsabilidades, como o Incentivo para as Ações Básicas de Vigilância Sanitária. Além disso, esta norma introduziu o Piso da Atenção Básica (PAB), substituindo gradualmente o pagamento por produção pelo repasse per capita.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Processos de Descentralização e Regionalização do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:59.885Z"
+  },
+  {
+    "id": "AJUDA_ee5bae95-2c7c-4603-b819-c9ed074b3336",
+    "originalId": "ee5bae95-2c7c-4603-b819-c9ed074b3336",
+    "statement": "Lactente, sexo feminino, com 6 meses e 15 dias de vida, em aleitamento materno e introdução de alimentação complementar, nascido a termo com 2.890 gramas, é trazido para uma consulta de rotina de puericultura na Unidade Básica de Saúde.\nDe acordo com as recentes diretrizes da Sociedade Brasileira de Pediatria, assinale a alternativa correta no que se refere à suplementação profilática de ferro elementar para essa criança.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se realizar um hemograma para todas as crianças aos seis meses de vida, para a decisão da suplementação profilática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não se deve administrar ferro para essa criança enquanto ela estiver em aleitamento materno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se administrar 1 mg/kg/dia de ferro elementar para todas as crianças com essas características.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Deve-se administrar 2 mg/kg/dia de ferro elementar para todas as crianças com essas características.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deve-se administrar ferro apenas para crianças com problemas qualitativos durante a introdução da alimentação complementar, como baixa ingesta de proteína animal e de verduras verdes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda as recomendações da Sociedade Brasileira de Pediatria (SBP) para a suplementação profilática de ferro na infância, um tema recorrente em provas de residência e concursos médicos.\n\nA criança descrita no caso clínico nasceu a termo (idade gestacional igual ou superior a 37 semanas) e com peso adequado (2.890 gramas, portanto, acima de 2.500 gramas). De acordo com as diretrizes atuais da SBP (atualização de 2018/2021), o protocolo de suplementação para este perfil específico de paciente é:\n\n- Início: Aos 6 meses de vida (momento da introdução da alimentação complementar).\n- Dose: 1 mg de ferro elementar por quilo de peso ao dia.\n- Duração: Até os 24 meses de vida.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A suplementação é profilática e universal para crianças nessa faixa etária e perfil de nascimento. Não há necessidade de realizar hemograma para decidir pelo início do ferro; a conduta baseia-se na prevenção da deficiência, que ocorre pelo esgotamento das reservas fisiológicas e aumento da demanda metabólica por volta do sexto mês.\n\nAlternativa b) Incorreta. O aleitamento materno é o melhor alimento para o lactente, mas, após os 6 meses, o aporte de ferro proveniente do leite materno e da alimentação complementar pode não ser suficiente para suprir as necessidades de crescimento acelerado. Por isso, a SBP recomenda a suplementação mesmo para crianças em aleitamento materno.\n\nAlternativa c) Correta. Esta alternativa reflete exatamente a recomendação da SBP para lactentes nascidos a termo e com peso superior a 2.500g: administração de 1 mg/kg/dia de ferro elementar dos 6 aos 24 meses de vida.\n\nAlternativa d) Incorreta. A dose de 2 mg/kg/dia é utilizada para grupos de maior risco de deficiência, como prematuros (nascidos com menos de 37 semanas) ou recém-nascidos de baixo peso (entre 1.500g e 2.500g), com início geralmente aos 30 dias de vida. Não é o caso da criança em questão, que nasceu a termo e com peso adequado.\n\nAlternativa e) Incorreta. A suplementação não deve ser restrita a crianças com dieta qualitativamente pobre. Por ser uma medida de saúde pública profilática, ela deve ser realizada de forma universal em todos os lactentes conforme os critérios de peso e idade gestacional, independentemente da aceitação inicial de proteínas animais ou vegetais.\n\nGabarito: Alternativa (c).",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno",
+      "Deficiências Vitamínicas e Profilaxias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:59.885Z"
+  }
+]

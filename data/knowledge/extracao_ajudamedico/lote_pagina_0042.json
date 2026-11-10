@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_0ae5b3b7-7ef5-4306-bea6-57776516bb6c",
+    "originalId": "0ae5b3b7-7ef5-4306-bea6-57776516bb6c",
+    "statement": "Diante de um paciente com queixa de corrimento uretral com bacterioscopia cujo resultado revelou diplococos Gram-negativos intracelulares, a conduta terapêutica de acordo com o Fluxograma de corrimento uretral,é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tratar clamídia e gonorreia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "tratar só clamídia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tratar só gonorreia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tratar tricomoníase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tratar Clamídia, gonorreia e tricomoníase.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo das Infecções Sexualmente Transmissíveis (IST) no homem, especificamente a abordagem baseada na bacterioscopia pelo método de Gram.\n\nO achado de diplococos Gram-negativos intracelulares (com aspecto de \"grãos de café\") é altamente sensível e específico para a Neisseria gonorrhoeae no material uretral masculino. No entanto, a prática clínica e os protocolos do Ministério da Saúde determinam que o tratamento deve ser abrangente.\n\nAnálise das alternativas:\n\na) Correta. O achado confirma a presença do gonococo (Neisseria gonorrhoeae). Entretanto, existe uma taxa de coinfecção por Chlamydia trachomatis que varia de 15% a 30% nos casos de uretrite. Como a clamídia não é visível ao Gram por ser um patógeno intracelular obrigatório, o protocolo dita o tratamento conjunto para ambos os agentes. A conduta padrão atual envolve Ceftriaxona 500mg IM (para gonorreia) e Azitromicina 1g VO ou Doxiciclina 100mg 12/12h por 7 dias (para clamídia).\n\nb) Incorreta. Não se pode tratar apenas a clamídia quando o exame confirma visualmente a presença do gonococo (diplococos Gram-negativos). A infecção gonocócica permaneceria ativa, mantendo a transmissão e o risco de complicações como a epididimite.\n\nc) Incorreta. Tratar apenas a gonorreia é um erro comum que leva à chamada \"uretrite pós-gonocócica\". Como o período de incubação da clamídia é maior, se o médico tratar apenas o gonococo, os sintomas podem retornar ou persistir após alguns dias devido à infecção persistente pela clamídia que não foi abordada inicialmente.\n\nd) Incorreta. A Trichomonas vaginalis é um protozoário que pode causar uretrite, mas não apresenta a morfologia de diplococos Gram-negativos. O tratamento para tricomoníase no homem não faz parte da abordagem inicial padrão de corrimento uretral, sendo reservado para casos de persistência de sintomas após o tratamento para gonococo e clamídia ou se houver visualização direta do parasita.\n\ne) Incorreta. Embora a tricomoníase seja uma causa de uretrite, o fluxograma de manejo sindrômico para corrimento uretral masculino preconiza o tratamento empírico para Neisseria gonorrhoeae e Chlamydia trachomatis. A inclusão do metronidazol (para tratar Trichomonas) na primeira linha de tratamento é indicada apenas no fluxograma de corrimento vaginal em mulheres ou em situações específicas de falha terapêutica no homem.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Cervicites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:46.580Z"
+  },
+  {
+    "id": "AJUDA_0ae8682a-2ced-4704-ac06-da98a2c98299",
+    "originalId": "0ae8682a-2ced-4704-ac06-da98a2c98299",
+    "statement": "Primigesta, 39 anos de idade, é admitida com 40 semanas de gravidez para indução de parto. Apresenta antecedente de hipertensão arterial crônica, controlada atualmente com metildopa 1,5 g por dia e diabetes gestacional em uso de insulina NPH 12 unidades antes do café da manhã, 6 unidades na hora do almoço e 6 unidades às 22 horas (12-6-0-6) e insulina regular 4 unidades no café da manhã, 4 unidades no almoço e 2 no jantar (4-4-2-0). Ao exame inicial, apresenta\nbom estado geral, corada, normotensa e normocárdica, altura uterina de 38 cm, cefálico, BCF presente de 148 bpm, colo médio, medianizado, com 4 cm.\nApós 6 horas de trabalho de parto, a paciente apresentava dilatação total e apresentação cefálica no plano 0 de De Lee, occipito transversa direita e avaliação abdominal conforme a imagem a seguir:\n\nQual é o diagnóstico e a conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Distocia funcional – ocitocina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Retenção urinária – sondagem de alívio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iminência de rotura – parto cesárea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hipertonia uterina – terbutalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve uma primigesta com diabetes gestacional e feto de grande volume (altura uterina de 38 cm) que atinge dilatacao total, mas apresenta parada de descida em plano alto (De Lee 0) e em variedade transversa, caracterizando desproporcao cefalopelvica ou distocia mecanica. \n\nA imagem associada e classica: evidencia uma depressao transversa visivel no abdome materno, conferindo ao utero um formato em ampulheta. Trata-se do Anel de Bandl, que demarca o limite entre o corpo uterino espessado e hipercontraido e o segmento inferior excessivamente distendido e afilado. Junto ao estiramento dos ligamentos redondos (sinal de Frommel), compoe a sindrome de Bandl-Frommel, patognomonica de iminencia de rotura uterina.\n\nAnalise das alternativas:\n\na) Incorreta. Nao se trata de distocia funcional (da contratilidade). A administracao de ocitocina diante de um quadro de obstrucao mecanica e anel de Bandl e formalmente contraindicada, pois aumentaria a pressao intrauterina e levaria a rotura uterina consumada.\n\nb) Incorreta. Embora a retencao urinaria com bexigoma possa gerar elevacao suprapubica, ela nao produz a deformidade em ampulheta caracteristica do anel de Bandl nem se associa a parada de progressao no periodo expulsivo com risco iminente de rotura.\n\nc) Correta. A associacao entre a parada de descida do polo cefalico e a visibilizacao do anel de Bandl na imagem define o diagnostico de iminencia de rotura uterina. A conduta e cirurgica e imediata: cesariana de emergencia para prevencao da rotura completa e de suas graves complicacoes materno-fetais.\n\nd) Incorreta. Embora exista hiperatividade/hipertonia miometrial secundaria a obstrucao, a administracao de terbutalina (tocolitico) nao e a conduta definitiva. O tratamento exige a interrupcao imediata do trabalho de parto por via cesariana.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Partograma e Distocias",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/261336e1d7b084e29554c531b462e8284a13678973b935f5c7579d6cd82e5593.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_0ae8682a-2ced-4704-ac06-da98a2c98299_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:47.050Z"
+  },
+  {
+    "id": "AJUDA_0ae9d141-7272-4131-8018-ebd82d9bba97",
+    "originalId": "0ae9d141-7272-4131-8018-ebd82d9bba97",
+    "statement": "O médico atende uma paciente, 42 anos de idade, que notou um nódulo cervical há 30 dias. Esse nódulo não causa nenhum sintoma e não vem aumentando com o tempo. Ao exame físico, o único achado é um nódulo na glândula tireoide, no lobo esquerdo, com 3 cm, móvel e fibroelástico. Assinale a alternativa que descreve, corretamente, os dois melhores exames para avaliação inicial desse nódulo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cintilografia da tireoide e Dosagem de tireoglobulina sérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dosagem de calcitonina sérica e Pesquisa de mutação somática do gene RET.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dosagem de TSH sérico e Ultrassonografia da tireoide.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "PET CT e Dosagem de TSH sérico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ultrassonografia da tireoide e Radiografia de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A conduta inicial diante de um nódulo de tireoide palpável deve focar em duas frentes fundamentais: a avaliação funcional da glândula e a avaliação morfológica do nódulo para estratificação do risco de malignidade.\n\nAlternativa (a) Incorreta. A cintilografia de tireoide não é um exame de primeira linha para todos os casos; ela é indicada apenas se o TSH estiver baixo (suprimido), para verificar se o nódulo é funcional (\"quente\"). A dosagem de tireoglobulina sérica não serve para diagnóstico de malignidade, pois seus níveis podem estar elevados em diversas doenças benignas; sua utilidade reside no acompanhamento pós-operatório para detectar recidivas.\n\nAlternativa (b) Incorreta. A calcitonina e a pesquisa de mutação do gene RET são exames direcionados para o diagnóstico e rastreamento do Carcinoma Medular de Tireoide (CMT). Apesar de importantes, não são recomendados como exames de triagem inicial para todos os nódulos tireoidianos na prática clínica rotineira.\n\nAlternativa (c) Correta. O TSH é o parâmetro laboratorial inicial para avaliar a função tireoidiana. Se o TSH estiver normal ou elevado, prossegue-se com a investigação de malignidade. A ultrassonografia é o melhor exame de imagem para caracterizar o nódulo (tamanho, presença de microcalcificações, vascularização, limites e ecogenicidade) e determinar, através de classificações de risco como o TI-RADS, se há indicação de Punção Aspirativa por Agulha Fina (PAAF).\n\nAlternativa (d) Incorreta. O PET-CT é um exame de medicina nuclear de alto custo utilizado para estadiamento e acompanhamento de neoplasias específicas, não tendo indicação na propedêutica inicial de um nódulo cervical recém-descoberto.\n\nAlternativa (e) Incorreta. Embora a ultrassonografia seja um dos pilares da investigação, a radiografia de tórax não possui utilidade na avaliação da natureza ou do risco de um nódulo na tireoide. Ela seria reservada apenas para casos de bócio mergulhante com desvio de traqueia ou em suspeitas de metástases pulmonares, o que não faz parte do rastreio inicial.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:47.050Z"
+  },
+  {
+    "id": "AJUDA_0aea8aa1-d691-4b1c-b9cd-9454ff6aabeb",
+    "originalId": "0aea8aa1-d691-4b1c-b9cd-9454ff6aabeb",
+    "statement": "Paciente de 58 anos, gênero masculino, etilista importante é admitido em unidade de emergência após apresentar episódio de crise convulsiva. Ao exame físico, apresenta-se confuso no tempo e espaço. Exames complementares colhidos evidenciaram Mg+2=0,9mg/dl. Em decorrência deste achado laboratorial qual outro distúrbio hidroeletrolítico você esperaria encontrar neste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiponatremia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipercalemia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipocalcemia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hiperfosfatemia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente etilista crônico com quadro de crise convulsiva, confusão mental e hipomagnesemia grave (Mg+2 = 0,9 mg/dl). O etilismo é uma das principais causas de deficiência de magnésio devido à má absorção intestinal, perdas renais induzidas pelo álcool e má ingestão dietética. A relação entre o magnésio e outros eletrólitos é um tema frequente em provas de residência.\n\nAlternativa (a) INCORRETA: Embora pacientes etilistas possam apresentar hiponatremia (por exemplo, na síndrome de potomania por cerveja ou por desnutrição), não existe uma relação fisiopatológica direta na qual a hipomagnesemia cause a queda dos níveis de sódio.\n\nAlternativa (b) INCORRETA: A hipomagnesemia está classicamente associada à HIPOCALEMIA (baixos níveis de potássio) e não à hipercalemia. O magnésio intracelular atua bloqueando os canais ROMK nos túbulos renais; quando o magnésio está baixo, esses canais ficam \"abertos\", permitindo a secreção excessiva e a perda urinária de potássio. Por isso, a hipocalemia costuma ser refratária à reposição de potássio se o magnésio não for corrigido simultaneamente.\n\nAlternativa (c) CORRETA: A hipocalcemia é o distúrbio mais comumente associado à hipomagnesemia grave. O magnésio é fundamental para o metabolismo do cálcio por dois motivos principais:\n1. Liberação de PTH: Níveis muito baixos de magnésio inibem a secreção do paratormônio (PTH) pelas glândulas paratireoides, gerando um hipoparatireoidismo funcional.\n2. Resistência ao PTH: A falta de magnésio causa uma resistência dos órgãos-alvo (ossos e rins) à ação do PTH que ainda circula.\nDessa forma, sem a ação efetiva do PTH, os níveis de cálcio sérico caem. Assim como no caso do potássio, a hipocalcemia associada à falta de magnésio não costuma melhorar apenas com a reposição de cálcio, sendo necessária a correção do magnésio primeiro.\n\nAlternativa (d) INCORRETA: A hiperfosfatemia não é um achado característico da hipomagnesemia. Em casos de hipoparatireoidismo funcional (causado pela falta de Mg), o fósforo poderia até sofrer alterações, mas a hipocalcemia é o achado clínico e laboratorial mais direto, esperado e classicamente cobrado em cenários de emergência e provas.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": 67.15159089296671,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:47.050Z"
+  },
+  {
+    "id": "AJUDA_0af042be-9d9a-4272-ad3f-a7b6cc987164",
+    "originalId": "0af042be-9d9a-4272-ad3f-a7b6cc987164",
+    "statement": "Menino, 45 dias de vida, há 15 dias apresenta eliminação de fezes com raios de sangue em todas as evacuações. Evacua de 6 a 8 vezes ao dia desde o nascimento e não houve mudança na frequência ou consistência das fezes. Recebe fórmula láctea de partida desde a segunda semana de vida. Não apresenta outros sintomas e não tem alterações ao exame físico. Considerando o diagnóstico mais provável, qual é o mecanismo fisiopatológico envolvido?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reação mediada por IgE",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reação não mediada por IgE",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deficiência de lactase",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reação mista",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DO PROFESSOR\n\nO quadro clínico descrito é clássico de um lactente jovem (45 dias) que apresenta sangue vivo nas fezes (hematoquezia) sem comprometer o seu estado geral, mantendo a frequência evacuatória normal e bom ganho de peso. Esse cenário, especialmente após a introdução de fórmula infantil, aponta diretamente para o diagnóstico de Proctocolite Alérgica, que é uma das manifestações da Alergia à Proteína do Leite de Vaca (APLV).\n\nAlternativa a) Incorreta. As reações mediadas por IgE são reações de hipersensibilidade imediata. Elas ocorrem geralmente em até duas horas após o contato com o alérgeno e se manifestam clinicamente através de urticária, angioedema (inchaço de lábios e olhos), vômitos a jato imediatos ou anafilaxia. O sangramento intestinal isolado e subagudo não é característico desse mecanismo.\n\nAlternativa b) Correta. A proctocolite alérgica é a causa mais comum de sangramento retal em lactentes que estão em bom estado geral. Ela é classificada fisiopatologicamente como uma reação não mediada por IgE. Nesse mecanismo, ocorre uma resposta imune tardia baseada em células (linfócitos T) que causa uma inflamação eosinofílica na porção final do intestino grosso (cólon e reto), tornando a mucosa frágil e sujeita a sangramentos ao contato com a proteína irritante.\n\nAlternativa c) Incorreta. A deficiência de lactase causa intolerância à lactose, que é o carboidrato (açúcar) do leite, e não a proteína. O quadro clínico da intolerância à lactose no lactente envolve diarreia osmótica (fezes líquidas e ácidas), flatulência excessiva, distensão abdominal e dermatite perianal (assadura) importante. A presença de sangue vivo nas fezes não faz parte deste quadro.\n\nAlternativa d) Incorreta. As reações mistas são aquelas que envolvem tanto anticorpos IgE quanto resposta celular. Os exemplos mais conhecidos na pediatria são a esofagite eosinofílica, a gastrenterite eosinofílica e a dermatite atópica. A proctocolite alérgica isolada do lactente é estritamente não mediada por IgE.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Alergia Alimentar"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:47.050Z"
+  },
+  {
+    "id": "AJUDA_0af0d46a-e1c0-4d60-8cc5-f6dfcf329371",
+    "originalId": "0af0d46a-e1c0-4d60-8cc5-f6dfcf329371",
+    "statement": "Menino de 5 anos de idade, apresenta lesões violáceas elevadas com predomínio em membros inferiores e nádegas há 2 dias, associadas a dor e edema em tornozelos, mantendo bom estado geral, sem outras alterações. Atendido pelo pediatra que solicitou hemograma e coagulograma, ambos sem alterações. Neste contexto, assinale a alternativa que contém a principal hipótese diagnóstica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Púrpura Trombocitopênica Imune (PTI).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sepsis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Meningococcemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Púrpura de Henoch-Schönlein (vasculite por IgA).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Lúpus Eritematoso sistêmico Juvenil.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda a causa mais comum de vasculite na infância. O diagnóstico baseia-se no reconhecimento de um padrão clínico específico, aliado à exclusão de causas hematológicas graves.\n\nANÁLISE DO CASO CLÍNICO:\nO paciente é um menino de 5 anos (faixa etária típica de 3 a 10 anos) apresentando púrpura palpável (lesões violáceas elevadas) com distribuição característica em áreas de gravidade e pressão (membros inferiores e nádegas). A associação com dor e edema articular (artrite/artralgia) completa o quadro clínico clássico. O ponto fundamental para o raciocínio clínico é o hemograma e o coagulograma normais, o que descarta causas plaquetárias ou de distúrbios de coagulação, confirmando tratar-se de uma púrpura de origem vascular.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) INCORRETA. A Púrpura Trombocitopênica Imune (PTI) tem como característica laboratorial obrigatória a plaquetopenia (plaquetas baixas, geralmente < 20.000/mm3). No exame físico, a púrpura da PTI é tipicamente plana (petéquias e equimoses), e não elevada/palpável como descrito no caso. Como o enunciado afirma que o hemograma é normal, a PTI é excluída.\n\nb) INCORRETA. A sepse é uma condição de disfunção orgânica grave. Um paciente com sepse não apresentaria o \"bom estado geral\" relatado no enunciado. Além disso, haveria sinais de resposta inflamatória sistêmica, como febre, taquicardia e alterações laboratoriais (leucocitose ou leucopenia).\n\nc) INCORRETA. A Meningococcemia é uma emergência médica de evolução rapidíssima. O paciente apresenta-se toxemiado, com febre alta e prostração. As lesões purpúricas tendem a evoluir para necrose (púrpura fulminans) e o coagulograma costuma estar alterado devido ao consumo de fatores (CIVD), o que contradiz o caso apresentado.\n\nd) CORRETA. A Púrpura de Henoch-Schönlein (também chamada de Vasculite por IgA) é a hipótese principal. É uma vasculite de pequenos vasos que se manifesta pela tríade clássica: púrpura palpável não trombocitopênica (em 100% dos casos), artralgia/artrite (75%) e dor abdominal (60%). O acometimento renal também é comum. O diagnóstico é essencialmente clínico e os exames laboratoriais básicos (como hemograma e coagulograma) servem justamente para descartar diagnósticos diferenciais hematológicos, mantendo-se dentro da normalidade na PHS.\n\ne) INCORRETA. O Lúpus Eritematoso Sistêmico Juvenil (LESJ) é uma doença multissistêmica rara em meninos de 5 anos, sendo muito mais frequente em adolescentes do sexo feminino. Embora possa causar artrite e lesões cutâneas, o LESJ geralmente apresenta alterações hematológicas (anemia, leucopenia, linfopenia) e o comprometimento do estado geral é mais acentuado.\n\nGABARITO: Letra (d).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Púrpura de Henoch-Schönlein e Vasculite por IgA"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:47.050Z"
+  },
+  {
+    "id": "AJUDA_0af786b0-655e-4e65-8a51-714174d08d83",
+    "originalId": "0af786b0-655e-4e65-8a51-714174d08d83",
+    "statement": "Durante o evento climático no Rio Grande do Sul em maio de 2024, o Programa de Triagem Neonatal do RS solicitou às unidades hospitalares de referência em nascimento a coleta do Teste do Pezinho ainda no ambiente hospitalar, para evitar que não fosse feito em razão do alagamento ou destruição de Postos de Saúde das regiões afetadas. Assinale a alternativa que contempla a doença e um possível falso resultado em uma coleta precoce do teste (antes do 3º dia) em recém-nascido a termo, com peso de nascimento de 3.000 g, nascido em maternidade do SUS e cuja mãe não apresenta patologias nem faz uso de medicamentos contínuos.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fenilcetonúria – falso positivo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipotireoidismo congênito – falso positivo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hiperplasia adrenal congênita – falso positivo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Galactosemia – falso negativo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O período ideal para a realização da coleta do Teste do Pezinho (Programa Nacional de Triagem Neonatal) é entre o 3º e o 5º dia de vida do recém-nascido. Essa recomendação visa evitar interferências de fenômenos fisiológicos do parto e garantir que a criança já tenha tido um aporte nutricional proteico e de lactose suficiente para a detecção de erros inatos do metabolismo.\n\nAlternativa (b) CORRETA: No caso do Hipotireoidismo Congênito, o rastreamento é feito primordialmente pela dosagem do TSH neonatal. Imediatamente após o nascimento, ocorre um aumento fisiológico abrupto do TSH, conhecido como pico neonatal de TSH, que atinge seu nível máximo cerca de 30 a 60 minutos após o parto para estimular a produção de hormônios tireoidianos essenciais para a termogênese. Os níveis de TSH começam a declinar progressivamente, mas, se a coleta for realizada antes de 48 a 72 horas de vida (antes do 3º dia), os valores ainda podem estar acima do ponto de corte laboratorial, resultando em um falso positivo.\n\nAlternativa (a) INCORRETA: Para o rastreamento da Fenilcetonúria, é necessário que o recém-nascido tenha ingerido uma quantidade adequada de fenilalanina (presente no leite materno ou fórmulas infantis). Se a coleta for feita precocemente, antes de o bebê ter se alimentado o suficiente, os níveis de fenilalanina no sangue podem não ter subido o bastante para serem detectados, o que resultaria em um falso negativo, e não em um falso positivo.\n\nAlternativa (c) INCORRETA: A Hiperplasia Adrenal Congênita (HAC) é rastreada pela dosagem da 17-alfa-hidroxiprogesterona (17-OHP). Embora existam muitos falsos positivos na triagem da HAC, eles ocorrem majoritariamente em recém-nascidos prematuros ou de baixo peso, devido ao estresse do nascimento ou à imaturidade do eixo adrenal. Em um recém-nascido a termo e com peso adequado (3.000 g), como o descrito na questão, a alteração mais clássica esperada pela coleta precoce devido ao pico fisiológico pós-parto é a do TSH.\n\nAlternativa (d) INCORRETA: Na Galactosemia, o rastreio busca identificar o acúmulo de galactose ou a deficiência da enzima GALT. Semelhante à Fenilcetonúria, se a coleta for feita antes de uma oferta láctea adequada, o teste poderia teoricamente apresentar um falso negativo. No entanto, o enunciado busca a correlação mais frequente e academicamente consagrada sobre a precocidade do teste, que reside no falso positivo do TSH.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Cuidados Neonatais",
+      "Hipotireoidismo Congênito"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:47.050Z"
+  },
+  {
+    "id": "AJUDA_0afd3f5f-76df-4171-a123-5cb06ae83de0",
+    "originalId": "0afd3f5f-76df-4171-a123-5cb06ae83de0",
+    "statement": "Mulher de 48 anos, G3P3, comparece ao pronto atendimento ginecológico referindo sangramento uterino intenso há 10 dias, associado a dor pélvica contínua e sensação de peso no baixo ventre. Relata episódios semelhantes nos últimos meses, com menstruações prolongadas e coágulos volumosos, não responsivos a tratamento clínico prévio com anti-inflamatórios e anticoncepcionais hormonais. Apresenta fadiga e tontura aos esforços. Antecedentes: hipertensão controlada, prole constituída, laqueadura tubária há 15 anos. Ao exame físico: • Bom estado geral, pálida ++/4+; • PA: 110x70 mmHg, FC: 96 bpm; • Abdome: palpação hipogástrica dolorosa com massa endurecida e irregular, que se eleva até 4 cm abaixo da cicatriz umbilical; • Ao toque bimanual: útero aumentado de volume, superfície irregular, consistência firme, móvel e indolor; • Colo uterino sem lesões, sangramento moderado pelo orifício externo. Exames complementares: • Hemoglobina: 9,4 g/dL; • Hematócrito: 29%; • Beta-hCG: negativo; • Ultrassonografia transvaginal: útero aumentado (volume 420 cm³), múltiplos nódulos hipoecoicos intramurais e submucosos, o maior medindo 6,2 cm, endométrio afilado e anexos sem alterações. Considerando o quadro clínico e os achados dos exames complementares, a conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inserir dispositivo intrauterino com levonorgestrel para controle do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Programar miomectomia por via laparoscópica para preservação uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar antifibrinolítico (ácido tranexâmico) e reavaliar em 30 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar ablação endometrial por histeroscopia para controle do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar histerectomia total devido à miomatose sintomática e prole constituída.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente de 48 anos apresenta um quadro clássico de Sangramento Uterino Anormal (SUA) de etiologia estrutural (Leiomiomatose Uterina - PALM-COEIN: Leiomioma). Os pontos fundamentais para a decisão terapêutica são:\n1. Sintomatologia exuberante: Sangramento volumoso, dor pélvica e sintomas compressivos (sensação de peso e massa palpável).\n2. Repercussão sistêmica: Anemia secundária instalada (Hemoglobina 9,4 g/dL).\n3. Falha terapêutica: Ausência de resposta ao tratamento clínico prévio com anti-inflamatórios e anticoncepcionais.\n4. Perfil reprodutivo: 48 anos (perimenopausa), prole constituída e laqueadura prévia.\n5. Achados de imagem: Útero volumoso (420 cm³), múltiplos nódulos e presença de miomas submucosos (que justificam o sangramento intenso) e intramurais.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: INCORRETA. Embora o sistema intrauterino liberador de levonorgestrel (SIU-LNG) seja uma excelente opção para controle do sangramento uterino, ele é contraindicado ou tem eficácia muito reduzida em úteros com distorção importante da cavidade endometrial. Miomas submucosos grandes e múltiplos nódulos que deformam a cavidade aumentam significativamente a taxa de expulsão do dispositivo e dificultam sua inserção.\n\nAlternativa B: INCORRETA. A miomectomia é a cirurgia de escolha para mulheres que desejam preservar a fertilidade ou o útero. No caso de uma paciente com 48 anos, com prole constituída, múltiplos miomas e sintomas significativos, a miomectomia apresenta maior risco de sangramento intraoperatório e possibilidade de recidiva dos sintomas, não sendo a conduta mais custo-efetiva ou definitiva.\n\nAlternativa C: INCORRETA. O ácido tranexâmico é um agente antifibrinolítico utilizado para o manejo sintomático do sangramento agudo. No entanto, esta paciente já apresenta falha ao tratamento clínico anterior e possui uma patologia estrutural volumosa com anemia. Manter apenas o manejo medicamentoso e reavaliar em 30 dias é insuficiente e posterga a resolução de um quadro já grave e refratário.\n\nAlternativa D: INCORRETA. A ablação endometrial consiste na destruição da camada funcional do endométrio para reduzir o fluxo menstrual. Ela é contraindicada em úteros com volume superior a 250-300 cm³ ou quando existem miomas submucosos maiores que 3 cm. Como o útero da paciente mede 420 cm³ e o maior nódulo tem 6,2 cm, a técnica é tecnicamente inviável e ineficaz.\n\nAlternativa E: CORRETA. A histerectomia total é o tratamento definitivo e mais adequado para este caso. A indicação baseia-se na presença de miomatose uterina sintomática (sangramento e dor), presença de anemia, falha comprovada do tratamento clínico conservador, sintomas compressivos (massa abdominal atingindo quase a cicatriz umbilical) e o fato de a paciente já ter a prole constituída e estar na transição menopausal.\n\nCONCLUSÃO\n\nDiante de um útero volumoso com múltiplos miomas em paciente com prole constituída e falha ao tratamento clínico, a cirurgia definitiva (histerectomia) oferece a melhor resolução para os sintomas e para a anemia, eliminando o risco de recorrência.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Miomatose Uterina"
+    ],
+    "difficulty": 63.268002093241414,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:47.050Z"
+  },
+  {
+    "id": "AJUDA_0aff252a-2381-4450-addc-256151589595",
+    "originalId": "0aff252a-2381-4450-addc-256151589595",
+    "statement": "Um menino de 6 anos é trazido ao consultório por apresentar episódios recorrentes de tosse seca, especialmente à noite, e sibilância ocasional há cerca de seis meses. Nas últimas semanas, os sintomas se intensificaram, com dispneia leve aos esforços. Nega febre e refere expectoração mucosa eventual. Há histórico familiar de asma. Ao exame, notam-se sibilos expiratórios bilaterais. Considerando o manejo clínico dessa criança, qual dos critérios a seguir é mais útil para avaliar, a longo prazo, o controle e a eficácia do tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Frequência de uso de broncodilatadores de curta ação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Monitoramento quinzenal da função pulmonar com espirometria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Medição da frequência respiratória e do pulso durante as crises.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realização de exames de imagem torácica a cada dois meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um menino de 6 anos com sintomas típicos de asma: episódios recorrentes de sibilância, tosse seca noturna e dispneia aos esforços, com histórico familiar positivo. Ao avaliar o manejo clínico e a eficácia do tratamento a longo prazo, o foco deve estar nos critérios de controle da doença.\n\nAlternativa (a): Correta. A frequência de uso de broncodilatadores de curta ação (medicação de resgate) é um dos indicadores clínicos mais sensíveis e práticos para avaliar o controle da asma. De acordo com as diretrizes globais (como o GINA), o uso de medicação de resgate em dois ou mais dias por semana sinaliza que a inflamação das vias aéreas não está adequadamente controlada, sugerindo a necessidade de ajuste na terapia de manutenção (corticoides inalatórios) ou revisão da técnica de inalação e adesão ao tratamento.\n\nAlternativa (b): Incorreta. A espirometria é uma ferramenta essencial para o diagnóstico e para o acompanhamento periódico da função pulmonar, mas não deve ser realizada de forma quinzenal. Na prática clínica, para uma criança com asma controlada ou em fase de ajuste, o intervalo recomendado para a prova de função pulmonar costuma ser de 3 a 6 meses. O controle clínico baseado em sintomas e uso de resgate é muito mais ágil para o manejo cotidiano.\n\nAlternativa (c): Incorreta. A aferição da frequência respiratória e do pulso é fundamental para classificar a gravidade de uma crise aguda no momento do atendimento de urgência. No entanto, esses parâmetros não são úteis para monitorar o controle da doença a longo prazo, pois refletem apenas o estado fisiológico pontual durante uma exacerbação.\n\nAlternativa (d): Incorreta. Exames de imagem, como a radiografia de tórax, não fazem parte do protocolo de monitoramento da asma. Eles são reservados para situações específicas, como a exclusão de diagnósticos diferenciais ou a identificação de complicações (pneumonia, atelectasias ou pneumotórax) durante crises graves. A realização desses exames a cada dois meses exporia a criança à radiação desnecessária sem trazer benefícios para a avaliação do controle clínico da asma.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:47.050Z"
+  },
+  {
+    "id": "AJUDA_0b055640-deff-49ec-a61c-b5af81e6600b",
+    "originalId": "0b055640-deff-49ec-a61c-b5af81e6600b",
+    "statement": "Paciente com 18 anos de idade relata atraso menstrual de sete semanas e queixa-se de dor hipogástrica com sangramento vaginal discreto, estando hemodinamicamente estável. A dosagem de beta-hCG foi de 700 mIU/ml e o ultrassom pélvico endovaginal não detectou a presença de saco gestacional intrauterino e nem massas anexiais. Assinale a alternativa que contém a próxima etapa indicada na conduta desta paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento com metotrexato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar videolaparoscopia de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir dosagem de beta-hCG em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Repetir ultrassonografia em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cefoxitina 2 g IV a cada 6 h + Doxiciclina 100 mg VO a cada 12 h",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso:\nA paciente apresenta um quadro de dor abdominal e sangramento vaginal com teste de gravidez positivo (beta-hCG de 700 mIU/ml). O ultrassom transvaginal não mostra sinais de gestação intrauterina nem massas anexiais. Este cenário é classificado como uma Gravidez de Localização Indeterminada (PUL - Pregnancy of Unknown Location).\n\nO conceito fundamental para resolver esta questão é a Zona Discriminatória do beta-hCG. Este termo refere-se ao nível de beta-hCG a partir do qual um saco gestacional deve ser obrigatoriamente visualizado no útero por meio da ultrassonografia transvaginal em uma gestação normal. Na maioria das diretrizes, esse valor varia entre 1.500 e 3.500 mIU/ml.\n\nComo o valor da paciente (700 mIU/ml) está abaixo da zona discriminatória, a ausência de saco gestacional no útero é um achado esperado para uma gestação muito inicial. Nestes casos, em pacientes hemodinamicamente estáveis, a conduta correta é aguardar e monitorar a evolução laboratorial.\n\nAlternativa (a) Incorreta: O metotrexato é uma medicação quimioterápica usada no tratamento clínico da gestação ectópica íntegra. Não se deve iniciar esse tratamento sem um diagnóstico confirmado ou uma suspeita muito alta baseada em critérios específicos, pois a paciente pode ter uma gestação intrauterina viável que ainda não atingiu o tempo de ser vista ao ultrassom.\n\nAlternativa (b) Incorreta: A videolaparoscopia é uma intervenção cirúrgica invasiva. Ela é indicada em casos de instabilidade hemodinâmica (que sugere ruptura de gestação ectópica) ou quando há massa anexial evidente com forte suspeita diagnóstica que exija tratamento cirúrgico. A paciente do caso está estável e não possui massas visíveis.\n\nAlternativa (c) Correta: Em pacientes estáveis com beta-hCG abaixo da zona discriminatória e ultrassom inconclusivo, a conduta padrão é repetir a dosagem de beta-hCG em 48 horas. Em uma gestação intrauterina viável, espera-se que o nível de beta-hCG aumente significativamente (geralmente dobrando ou subindo pelo menos 35-50% a cada 48 horas). Se os níveis caírem, indica-se uma gestação não evolutiva (abortamento). Se subirem de forma lenta ou em platô, a suspeita de gestação ectópica aumenta.\n\nAlternativa (d) Incorreta: Repetir a ultrassonografia em apenas 24 horas é um intervalo muito curto. As alterações morfológicas da gestação demoram mais tempo para serem percebidas ao exame de imagem. A evolução bioquímica (dosagem hormonal) em 48 horas é o parâmetro mais fidedigno para guiar o raciocínio clínico neste momento.\n\nAlternativa (e) Incorreta: O esquema de antibióticos mencionado (cefoxitina e doxiciclina) é utilizado para o tratamento da Doença Inflamatória Pélvica (DIP). Embora a DIP cause dor pélvica, o foco da questão é o diagnóstico diferencial de uma gravidez inicial com sangramento e dor, onde a prioridade é definir a localização e viabilidade da gestação.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:47.050Z"
+  }
+]

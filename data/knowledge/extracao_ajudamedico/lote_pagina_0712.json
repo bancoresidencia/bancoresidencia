@@ -1,0 +1,508 @@
+[
+  {
+    "id": "AJUDA_c6dc93db-1f43-4c24-bc79-ce8198892892",
+    "originalId": "c6dc93db-1f43-4c24-bc79-ce8198892892",
+    "statement": "Mulher, 45 anos, recém-diagnosticada com vírus da imunodeficiência humana, com contagem de células CD4 de 80. Apresenta tosse seca, febre baixa e emagrecimento. Radiografia de tórax mostra infiltrado com cavitação em lobo superior direito. Duas baciloscopias de escarro foram negativas. Qual exame é mais indicado para confirmar o provável diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "PPD;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Teste rápido molecular para Mycobacterium tuberculosis (GeneXpert) em escarro ou lavado broncoalveolar;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cultura em meio de Löwenstein-Jensen apenas;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "TC de tórax de alta resolução com biópsia de pele simultânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nTrata-se de uma paciente vivendo com HIV com imunossupressão avançada (CD4 de 80 celulas/mm3), apresentando sintomas constitucionais (febre, emagrecimento, tosse) e imagem cavitária em lobo superior, padrão altamente sugestivo de tuberculose pulmonar. Em pacientes imunodeprimidos, a baciloscopia direta do escarro (pesquisa de BAAR) pode apresentar menor sensibilidade devido a quadros paucibacilares, exigindo métodos diagnósticos mais sensíveis e rápidos.\n\nAnálise das alternativas:\n\nAlternativa a (Incorreta): O PPD (teste tuberculinico) avalia a resposta imune celular para diagnosticar infeccao latente por tuberculose (ILTB) e nao deve ser utilizado para confirmar doenca ativa. Alem disso, em pacientes com CD4 inferior a 200 celulas/mm3, a anergia cutanea e frequente, gerando altas taxas de resultados falso-negativos.\n\nAlternativa b (Correta): O Teste Rapido Molecular para Tuberculose (TRM-TB / GeneXpert) e o exame de escolha preconizado pelo Ministerio da Saude para o diagnostico inicial de tuberculose em populacoes vulneraveis, como pessoas vivendo com HIV. Ele apresenta alta sensibilidade e especificidade, detecta o DNA do Mycobacterium tuberculosis em poucas horas mesmo em amostras paucibacilares e ainda identifica resistencia a rifampicina. Pode ser realizado no escarro (espontaneo ou induzido) ou em lavado broncoalveolar.\n\nAlternativa c (Incorreta): A cultura em meio de Lowenstein-Jensen e o metodo de referencia e deve ser realizada em conjunto para confirmacao e teste de sensibilidade completo, porem seu crescimento e lento, demorando de 2 a 8 semanas para apresentar resultado. Portanto, nao e o exame mais indicado de forma isolada (\"apenas\") para a tomada de conduta imediata em uma paciente com imunossupressao grave.\n\nAlternativa d (Incorreta): A tomografia de alta resolucao e util para definir melhor a extensao das lesoes pulmonares, mas fornece apenas dados morfologicos e nao confirmacao etiologica (microbiologica). A biopsia de pele e descabida, pois nao ha descricao de qualquer lesao cutanea no quadro clinico.\n\nGabarito: Letra b.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "HIV",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:45.531Z"
+  },
+  {
+    "id": "AJUDA_c6e200ef-7b29-4a03-8262-a2ebf03b7005",
+    "originalId": "c6e200ef-7b29-4a03-8262-a2ebf03b7005",
+    "statement": "A partir da identificação das características de um local de atuação de um serviço de saúde é possível verificar situações, planejar e implementar ações, assim é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Com o processo de territorialização não é possível o estabelecimento de ações mais apropriadas e resolutivas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Territorialização não é uma condição para a obtenção e a análise de informações sobre as condições de vida e de saúde da população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Área de abrangência é um espaço que vive em permanente construção, compreendendo sua dimensão econômica, política, cultural e epidemiológica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Elaboração dos diagnósticos territoriais não requer dados de condições de vida e saúde da população.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta. O processo de territorialização é, na verdade, a ferramenta fundamental que permite o estabelecimento de ações mais apropriadas e resolutivas. Ao mapear e compreender as especificidades de uma região, a equipe de saúde consegue atuar diretamente sobre os problemas reais daquela população, aumentando a eficácia das intervenções.\n\nAlternativa b) Incorreta. A territorialização é uma condição essencial para a obtenção e análise de informações. É por meio dela que se identificam os determinantes sociais da saúde, os grupos de risco e a dinâmica epidemiológica local. Sem territorializar, os dados de saúde tornam-se abstratos e perdem sua capacidade de orientar o planejamento local.\n\nAlternativa c) Correta. Este é o conceito moderno de território na saúde pública. A área de abrangência não é apenas um limite geográfico em um mapa, mas um \"território vivo\". Ele está em permanente construção e transformação pelas relações sociais, econômicas, políticas e culturais, as quais influenciam diretamente o perfil epidemiológico e as necessidades de saúde da comunidade.\n\nAlternativa d) Incorreta. É impossível elaborar um diagnóstico territorial sem dados sobre as condições de vida e saúde da população. Esses dados (como saneamento básico, escolaridade, renda, taxas de mortalidade e prevalência de doenças) são os insumos básicos que compõem o diagnóstico, permitindo identificar as prioridades de cada local.\n\nResumo: A questão exige o conhecimento sobre Territorialização no âmbito da Atenção Primária à Saúde (APS). O examinador buscou a definição de território como um espaço dinâmico e multifatorial, reforçando que o planejamento em saúde depende diretamente do reconhecimento profundo do local de atuação.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:45.531Z"
+  },
+  {
+    "id": "AJUDA_c6ea6a0d-3ab2-47ba-946f-f5f6da47594c",
+    "originalId": "c6ea6a0d-3ab2-47ba-946f-f5f6da47594c",
+    "statement": "O médico atendeu um paciente na sala vermelha para o qual fez a hipótese principal de tromboembolismo pulmonar. Nenhuma medida ou exame foi feito ainda. Quais são os exames e medicações iniciais indicadas de acordo com a estratificação de risco por escore na suspeita de tromboembolismo pulmonar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pacientes de baixo risco pré-teste têm indicação de enoxaparina 1 mg/kg SC e realização de dímero-D.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pacientes de médio risco pré-teste têm indicação de enoxaparina 1 mg/kg SC e realização de dímero-D.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pacientes de alto risco pré-teste têm indicação de enoxaparina 1,5 mg/kg SC e realização de dímero-D.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pacientes de médio risco pré-teste, com PERC positivo, têm indicação de enoxaparina 1,5 mg/kg SC e angiotomografia de aorta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O manejo do tromboembolismo pulmonar (TEP) baseia-se inicialmente na estratificação da probabilidade clínica, geralmente utilizando o Escore de Wells ou o Escore de Genebra. Essa classificação define se o paciente tem baixa, média (intermediária) ou alta probabilidade de apresentar a doença, o que direciona a escolha dos exames e o momento de iniciar o tratamento.\n\nAlternativa A: Incorreta. Em pacientes de baixo risco pré-teste, a conduta inicial é a realização do D-dímero. Devido ao alto valor preditivo negativo desse exame, um resultado normal exclui o TEP sem necessidade de novos testes. Não se deve iniciar a anticoagulação (como a enoxaparina) antes do resultado do exame em pacientes de baixo risco, pois a chance de doença é pequena e o risco de sangramento não justifica o início empírico.\n\nAlternativa B: Correta. Para pacientes com média probabilidade clínica (risco intermediário), a diretriz recomenda a solicitação do D-dímero ou a realização direta de exames de imagem, dependendo da disponibilidade. No entanto, o ponto crucial é que, em pacientes com probabilidade moderada ou alta, deve-se iniciar a anticoagulação plena de forma empírica enquanto se aguarda a confirmação diagnóstica por exames de imagem, desde que não haja contraindicações ao uso de anticoagulantes. A dose de enoxaparina de 1 mg/kg por via subcutânea (administrada de 12 em 12 horas) é a dose terapêutica padrão.\n\nAlternativa C: Incorreta. Pacientes de alto risco pré-teste não devem realizar o D-dímero. Nesse grupo, a probabilidade da doença é tão elevada que um resultado de D-dímero negativo não seria suficiente para excluir o diagnóstico de forma segura. Esses pacientes devem ser encaminhados diretamente para exames de imagem confirmatórios, como a angiotomografia das artérias pulmonares. Além disso, embora a dose de 1,5 mg/kg uma vez ao dia seja uma opção posológica, a dose de 1 mg/kg de 12 em 12 horas é mais comum no ambiente de urgência.\n\nAlternativa D: Incorreta. O PERC (Pulmonary Embolism Rule-out Criteria) é uma ferramenta aplicada apenas em pacientes que já foram classificados como de baixo risco, com o objetivo de evitar a solicitação desnecessária até mesmo do D-dímero. Se um paciente de baixo risco tem PERC positivo (ou seja, não preenche todos os critérios de exclusão), ele deve realizar o D-dímero. Outro erro grave da alternativa é indicar \"angiotomografia da aorta\", que é o exame para diagnóstico de dissecção da aorta ou aneurismas, e não para TEP, cujo exame correto é a angiotomografia das artérias pulmonares.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:45.531Z"
+  },
+  {
+    "id": "AJUDA_c6f580aa-41a8-42cd-ae60-f37f2e65fa83",
+    "originalId": "c6f580aa-41a8-42cd-ae60-f37f2e65fa83",
+    "statement": "Letícia está na 10ª semana de gestação. Diante do aumento de casos de gripe entre familiares e conhecidos, ela foi à unidade básica de saúde para saber se precisava tomar a vacina contra influenza. Na análise em seu prontuário, verificou-se que sua última vacina havia sido no ano anterior.\nEm relação a esse caso, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "não se recomenda a vacina nesse estágio da gestação;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "não é necessário o reforço da vacina, pois ela confere imunidade por 10 anos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "deve-se evitar a vacina na gestação;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a paciente deve ser revacinada;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "a vacina deve ser tomada, por segurança, após 12 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A vacinação contra a influenza (gripe) é uma das medidas profiláticas mais importantes durante o pré-natal. A gestante é considerada um grupo de risco para complicações respiratórias graves decorrentes da infecção pelo vírus influenza, o que justifica a recomendação formal de imunização.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A vacina contra a influenza é recomendada em qualquer idade gestacional. Não existe um período de espera inicial para a sua administração, pois os benefícios na proteção da mãe e a transferência de anticorpos para o feto superam qualquer risco teórico.\n\nAlternativa b) Incorreta. A imunidade conferida pela vacina da influenza não dura 10 anos. O vírus influenza possui alta capacidade de mutação, e a composição da vacina é atualizada anualmente pela Organização Mundial da Saúde (OMS) com base nas cepas circulantes. Além disso, os níveis de anticorpos protetores declinam ao longo de um ano.\n\nAlternativa c) Incorreta. Pelo contrário, a vacina é fortemente recomendada na gestação. Ela é composta por vírus inativados (mortos), o que a torna segura para uso em gestantes e puérperas.\n\nAlternativa d) Correta. Como a última vacina de Letícia foi no ano anterior, ela deve ser revacinada com a dose da campanha atual. A vacinação anual é necessária devido à mudança das cepas virais e à perda da imunidade ao longo do tempo. No Brasil, o Programa Nacional de Imunizações (PNI) inclui as gestantes como prioridade absoluta em todas as campanhas sazonais.\n\nAlternativa e) Incorreta. Não é necessário aguardar as 12 semanas (fim do primeiro trimestre) para administrar a vacina. A recomendação do Ministério da Saúde e das sociedades de ginecologia e obstetrícia é que a vacina seja aplicada assim que estiver disponível, independentemente do tempo de gravidez.\n\nResumo didático:\nGestantes podem e devem receber a vacina da influenza em qualquer mês da gestação. Por ser uma vacina de vírus inativado, não há contraindicação gestacional. A vacinação deve ser anual devido à sazonalidade e mutação viral. Letícia, na 10ª semana, deve receber a dose atualizada prontamente.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Influenza",
+      "Pré-Natal"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:45.531Z"
+  },
+  {
+    "id": "AJUDA_c6f9b383-21ff-489a-ab89-aebf4d94822e",
+    "originalId": "c6f9b383-21ff-489a-ab89-aebf4d94822e",
+    "statement": "Paciente, 33 anos de idade, nuligesta, busca orientação sobre os métodos contraceptivos. A paciente apresenta diagnóstico prévio de enxaqueca com aura, sem outras comorbidades associadas. Atualmente, faz uso de Topiramato 200 mg/d para controle das crises de enxaqueca. Ela deseja um método eficaz, pois não tem planos de engravidar nos próximos três anos.\nEm relação a esse quadro, considere as afirmativas a seguir.\n\nI. É importante que, durante essa consulta, seja abordado o tema sobre desejo gestacional, idade e fertilidade feminina.\nII. Estão contraindicados métodos contraceptivos combinados, porém a paciente pode fazer uso de métodos com progesterona isolada, inclusive a pílula via oral.\nIII. Métodos contraceptivos hormonais de progesterona isolada, como o DIU hormonal e o implante subdérmico, são menos eficazes que os contraceptivos hormonais combinados.\nIV. O DIU liberador de levonorgestrel e o implante subdérmico são opções adequadas para pacientes com enxaqueca com aura, pois não aumentam o risco de eventos tromboembólicos.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\n    Texto Original:\n    Para compreender esta questão, devemos analisar dois pilares fundamentais da anticoncepção na prática clínica: os Critérios Médicos de Elegibilidade da OMS e as interações medicamentosas.\n\nAnálise das Afirmativas:\n\nAfirmativa I (Correta): Todo aconselhamento contraceptivo deve ser individualizado. Em uma paciente de 33 anos, nuligesta, que planeja adiar a gestação por pelo menos três anos, é dever do médico discutir o declínio fisiológico da reserva ovariana que se acentua após os 35 anos. O planejamento familiar envolve não apenas evitar uma gravidez indesejada agora, mas garantir a saúde reprodutiva futura.\n\nAfirmativa II (Incorreta): Esta é a \"pegadinha\" da questão. Embora pacientes com enxaqueca com aura tenham contraindicação absoluta ao uso de estrogênio (Categoria 4 da OMS pelo risco de AVC), o uso do Topiramato muda o cenário para os métodos orais. O Topiramato é um anticonvulsivante indutor enzimático que aumenta o metabolismo dos hormônios esteroides no fígado. Isso reduz a eficácia de pílulas de progesterona isolada (minipílulas ou desogestrel). Portanto, embora a progesterona isolada em si não seja contraindicada para a enxaqueca, a via oral é considerada Categoria 3 ou não recomendada devido à interação medicamentosa com o Topiramato, que compromete a eficácia do método.\n\nAfirmativa III (Incorreta): O DIU de levonorgestrel e o implante de etonogestrel fazem parte dos LARCs (Long-Acting Reversible Contraception). Eles são, na verdade, MUITO mais eficazes que os métodos combinados orais, pois não dependem da adesão da paciente e possuem taxas de falha (índice de Pearl) comparáveis à laqueadura tubária.\n\nAfirmativa IV (Correta): O DIU de levonorgestrel e o implante subdérmico são métodos de progesterona isolada que não sofrem influência relevante da indução enzimática do Topiramato (no caso do DIU, a ação é predominantemente local; no caso do implante, a dose é suficiente para manter a anovulação apesar da indução). Além disso, por não conterem estrogênio, são Categoria 2 da OMS para pacientes com enxaqueca com aura, sendo opções seguras que não elevam o risco de eventos tromboembólicos ou isquêmicos.\n\nConclusão:\nA alternativa (b) está correta porque apenas as afirmativas I (aconselhamento reprodutivo) e IV (indicação de métodos de longa duração seguros para enxaqueca e resistentes à interação medicamentosa) estão tecnicamente precisas conforme os manuais de ginecologia e a OMS. A afirmativa II peca ao ignorar a interferência do Topiramato na eficácia das pílulas orais.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:45.531Z"
+  },
+  {
+    "id": "AJUDA_c6f9c4f6-530e-4fa6-9b27-2be27db64acd",
+    "originalId": "c6f9c4f6-530e-4fa6-9b27-2be27db64acd",
+    "statement": "Um estudo avaliou a presença de artralgia como um sinal clínico para o diagnóstico precoce de Dengue em pacientes febris. Foram incluídos 300 pacientes atendidos em um serviço de emergência durante um surto. O diagnóstico definitivo de Dengue foi confirmado por sorologia (padrão-ouro). Os resultados foram os seguintes:\n- Dos 90 pacientes com Dengue confirmada, 72 apresentavam artralgia.\n- Dos 210 pacientes sem Dengue, 147 não apresentavam artralgia.\nCom base nesses dados, qual é a sensibilidade da presença de artralgia como sinal clínico para o diagnóstico de Dengue nessa população?",
+    "options": [
+      {
+        "id": "A",
+        "text": "58%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "70%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "80%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "85%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão de epidemiologia clínica, o primeiro passo é compreender o conceito de sensibilidade e identificar os dados fornecidos pelo enunciado.\n\nA sensibilidade é a capacidade de um teste (neste caso, o sinal clínico artralgia) de identificar corretamente os indivíduos que realmente possuem a doença (dengue). Em termos matemáticos, a sensibilidade é a proporção de resultados positivos entre todos aqueles que têm a doença.\n\nDados fornecidos:\n- Total de pacientes com dengue confirmada: 90.\n- Pacientes com dengue que apresentam artralgia (verdadeiros-positivos): 72.\n- Total de pacientes sem dengue: 210.\n- Pacientes sem dengue que não apresentam artralgia (verdadeiros-negativos): 147.\n\nCálculo da Sensibilidade:\nSensibilidade = Verdadeiros-positivos / Total de doentes\nSensibilidade = 72 / 90\nSensibilidade = 0,8 ou 80%.\n\nAnálise das alternativas:\n\nAlternativa a) 58%. Incorreta. Este valor não possui correspondência direta com os principais índices de acurácia (sensibilidade, especificidade ou valores preditivos) calculados a partir dos dados fornecidos.\n\nAlternativa b) 70%. Incorreta. Este valor corresponde à especificidade do sinal clínico. A especificidade é a capacidade do teste de identificar os verdadeiros saudáveis. O cálculo seria: 147 (verdadeiros-negativos) dividido por 210 (total de saudáveis), resultando em 0,7 ou 70%. A questão, no entanto, pede a sensibilidade.\n\nAlternativa c) 80%. Correta. Como demonstrado no cálculo acima, a relação entre os doentes que apresentam o sinal (72) e o total de doentes (90) é de exatamente 80%.\n\nAlternativa d) 85%. Incorreta. Não há base matemática nos dados apresentados para chegar a este percentual através das fórmulas de desempenho diagnóstico.\n\nAlternativa e) Nenhuma das alternativas. Incorreta, uma vez que o valor correto de 80% está contemplado na alternativa c.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Arboviroses",
+      "Estatística Médica",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:45.531Z"
+  },
+  {
+    "id": "AJUDA_c704a17f-ca30-4986-84a4-662a377ef9ce",
+    "originalId": "c704a17f-ca30-4986-84a4-662a377ef9ce",
+    "statement": "Uma paciente de 67 anos, do sexo feminino, está internada em leito de enfermaria para tratamento de infecção urinária complicada. Ao 5º dia de internação, inicia novo quadro febril (T: 38,2 ºC), associado a taquipneia (FR: 24 ipm) e taquicardia (FC: 110 bpm), normotensa (PA: 136 x 79 mmHg) e bem perfundida, além de ausculta com estertores crepitantes em base esquerda do tórax. Submetida a tomografia computadorizada, com achado compatível com processo infeccioso broncopneumônico multifocal. Foi escalonada antibioticoterapia de ceftriaxone para cefepime e vancomicina.\n\nQuanto ao restante da investigação complementar, pode-se afirmar, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a coleta de swab nasal para pesquisa de staphylococcus resistente a meticilina pode ajudar no escalonamento antimicrobiano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a coleta de painel molecular para vírus respiratórios não está recomendada, pois não mudará a terapia instituída.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "é oportuna a coleta de procalcitonina e seu monitoramento para auxiliar na avaliação de resposta antimicrobiana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a coleta de culturas é recomendada, mesmo que a paciente não desenvolva sepse.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Essa questão aborda o manejo diagnóstico de uma pneumonia hospitalar (HAP), definida como aquela que ocorre 48 horas ou mais após a admissão. A paciente apresenta critérios clínicos e radiológicos de pneumonia surgindo no 5º dia de internação, o que exige uma investigação diagnóstica criteriosa para guiar o ajuste da antibioticoterapia.\n\nAlternativa a) Esta afirmação está correta. O swab nasal para pesquisa de Staphylococcus aureus resistente à meticilina (MRSA) possui um elevado valor preditivo negativo (frequentemente acima de 95-99%). Isso significa que, se o swab for negativo, é muito pouco provável que o MRSA seja o agente causador da pneumonia, permitindo a suspensão segura da vancomicina (descalonamento), diminuindo a toxicidade e os custos.\n\nAlternativa b) Esta é a alternativa incorreta (o \"exceto\" da questão) e, portanto, o gabarito. Atualmente, as diretrizes recomendam a coleta de painel molecular para vírus respiratórios (como Influenza, Coronavírus e Vírus Sincicial Respiratório) em pacientes com pneumonia hospitalar, especialmente em períodos de sazonalidade ou surtos. A identificação de um vírus pode, sim, mudar a conduta, seja pela introdução de antivirais específicos (como o oseltamivir), pelo reforço de medidas de isolamento ou pela possibilidade de suspensão precoce de antibióticos se a suspeita de coinfecção bacteriana for baixa.\n\nAlternativa c) Esta afirmação está correta. A procalcitonina é um biomarcador de cinética rápida que responde bem a estímulos bacterianos. Seu uso é recomendado principalmente para auxiliar na decisão de interromper a antibioticoterapia. Níveis em queda ou abaixo de determinados pontos de corte sugerem resolução da infecção bacteriana, auxiliando na redução do tempo de exposição aos antimicrobianos.\n\nAlternativa d) Esta afirmação está correta. Em casos de pneumonia hospitalar, a coleta de hemoculturas e de culturas de secreção respiratória (seja por escarro, aspirado traqueal ou lavado broncoalveolar) é fundamental, independentemente da presença de sepse ou choque séptico. O objetivo é identificar o patógeno específico e seu perfil de sensibilidade (antibiograma) para transitar da terapia empírica de amplo espectro para uma terapia dirigida e mais estreita.\n\nResumo: A alternativa B é a incorreta porque desconsidera a importância diagnóstica e terapêutica dos painéis virais no contexto hospitalar atual, no qual a etiologia viral pode influenciar diretamente o manejo clínico e as medidas de controle de infecção.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:45.531Z"
+  },
+  {
+    "id": "AJUDA_c71fb947-3033-482d-bbf7-52311de5fff3",
+    "originalId": "c71fb947-3033-482d-bbf7-52311de5fff3",
+    "statement": "Lactente de 8 meses inicia fezes líquidas e ácidas logo após reintrodução de fórmula com lactose após quadro viral recente; há dermatite perianal e melhora parcial com jejum curto, piora após mamadas. Sem sangue nas fezes, sem toxemia. Estabelecer o mecanismo fisiopatológico predominante para o quadro e sua base conceitual:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Promover hipersecreção de íons para a luz intestinal como evento primário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Desencadear inflamação invasiva da mucosa com exsudação proteica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acelerar o trânsito intestinal por hiperatividade do reflexo gastrocólico como fator principal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ativar toxinas bacterianas enterotóxicas e manter perdas hídricas independentemente da ingesta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Acumular solutos intraluminais não absorvidos e aumentar a osmolaridade intestinal, produzindo diarreia que melhora com jejum.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O caso clínico descreve um lactente com diarreia osmótica decorrente de uma deficiência transitória de lactase após um quadro viral (gastroenterite). O dano às vilosidades intestinais reduz a atividade da lactase na borda em escova, impedindo a quebra e a absorção da lactose.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A hipersecreção de íons (como o cloreto) para a luz intestinal é o mecanismo primário da diarreia secretora, observada em doenças como o cólera. Nesse tipo de diarreia, as perdas de água e eletrólitos são volumosas e não melhoram com o jejum, o que contradiz o quadro clínico apresentado.\n\nAlternativa b: Incorreta. A inflamação invasiva da mucosa com exsudação de muco e proteínas é característica das diarreias inflamatórias ou disenterias (causadas por patógenos como Shigella ou Salmonella). Esses quadros costumam cursar com febre, toxemia e presença de sangue ou pus nas fezes, sinais que estão ausentes no paciente.\n\nAlternativa c: Incorreta. Embora o reflexo gastrocólico possa estar exacerbado em diversas patologias intestinais, ele não explica a fisiopatologia da diarreia ácida nem a melhora específica com o jejum após a reintrodução de lactose.\n\nAlternativa d: Incorreta. Toxinas enterotóxicas (como as da E. coli enterotoxigênica) estimulam a secreção ativa de água e eletrólitos. A característica fundamental desse mecanismo é que a diarreia é independente da ingesta, ou seja, persiste de forma importante mesmo se o paciente for mantido em jejum.\n\nAlternativa e: Correta. Este é o mecanismo clássico da diarreia osmótica. A lactose não hidrolisada permanece na luz intestinal e atua como um soluto osmoticamente ativo, atraindo água para o lúmen. Além disso, a lactose é fermentada pela microbiota colônica, gerando gases e ácidos orgânicos (como o ácido lático). Esses ácidos reduzem o pH das fezes (tornando-as ácidas) e causam irritação na pele perianal (dermatite). Como a causa é o soluto ingerido, a interrupção da oferta (jejum) leva à melhora do quadro.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:45.531Z"
+  },
+  {
+    "id": "AJUDA_c729ae2e-330d-47f2-b5aa-347ff461a3d6",
+    "originalId": "c729ae2e-330d-47f2-b5aa-347ff461a3d6",
+    "statement": "Homem de 29 anos de idade apresenta dor lombar direita de forte intensidade, sem febre. Urina I: hematúria microscópica. TC helicoidal sem contraste: cálculo de 5 mm no terço distal do ureter direito, sem hidronefrose ou alterações inflamatórias periureterais. Função renal preservada.\n\nA conduta inicial é",
+    "options": [
+      {
+        "id": "A",
+        "text": "analgesia com AINE e alfabloqueador oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "litotripsia extracorpórea de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ureterolitotripsia com duplo J profilático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "antibioticoterapia e hidratação venosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo inicial da litíase ureteral (cólica nefrética). O paciente apresenta um quadro clássico de cálculo ureteral distal pequeno (5 mm), sem sinais de complicação, como infecção (ausência de febre), obstrução importante (sem hidronefrose) ou insuficiência renal.\n\nAnálise das alternativas:\n\na) Correta. Diante de um cálculo ureteral menor que 10 mm (especialmente os de 5 mm ou menos), a conduta inicial padrão é o tratamento conservador, conhecido como Terapia Expulsiva Médica (MET). Os anti-inflamatórios não esteroides (AINEs) são a primeira escolha para o controle da dor e redução do edema ureteral. Os alfa-bloqueadores (como a tansulosina) promovem o relaxamento da musculatura lisa do ureter distal, aumentando significativamente a taxa de eliminação espontânea do cálculo.\n\nb) Incorreta. A litotripsia extracorpórea por ondas de choque (LECO) não é um procedimento de urgência neste cenário. Ela pode ser considerada se o tratamento conservador falhar ou em cálculos maiores, mas não é a conduta inicial para um cálculo de 5 mm em paciente estável. Além disso, a LECO tem menor eficácia em cálculos localizados no terço distal do ureter devido à interposição dos ossos da bacia.\n\nc) Incorreta. A ureterolitotripsia (cirurgia endoscópica) é um tratamento invasivo indicado para cálculos maiores (geralmente > 10 mm), dor intratável, obstrução persistente ou infecção associada. Realizar um procedimento cirúrgico com colocação de cateter duplo-J de forma \"profilática\" para um cálculo de 5 mm com alta chance de eliminação espontânea é uma conduta excessiva.\n\nd) Incorreta. Não há indicação de antibioticoterapia, pois o paciente não apresenta febre nem sinais laboratoriais ou radiológicos de infecção urinária obstrutiva (uropatia obstrutiva infectada). A hidratação venosa vigorosa também não é recomendada na fase aguda da cólica, pois pode aumentar a pressão na via urinária e piorar a dor, devendo-se manter apenas a hidratação habitual.\n\nEm resumo, para cálculos ureterais pequenos e não complicados, a conduta consiste em sintomáticos e estímulo à eliminação espontânea com auxílio de medicamentos.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:45.531Z"
+  },
+  {
+    "id": "AJUDA_c72e5a20-7705-4278-8292-2db542572992",
+    "originalId": "c72e5a20-7705-4278-8292-2db542572992",
+    "statement": "Sobre o manejo do trauma hepático de alto grau (AST IV–V) em paciente hemodinamicamente estável, assinale a conduta MAIS adequada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia obrigatória em todos os casos grau IV–V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Embolização arterial seletiva e tratamento não operatório, se disponível.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Laparoscopia diagnóstica sistemática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Packings hepáticos seriados via laparotomia programada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Instalação de shunt portossistêmico intra-hepático transjugular (TIPS) de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nO manejo do trauma hepático evoluiu drasticamente nas últimas décadas. Antigamente, lesões de alto grau (graus IV e V pela escala da AAST) eram sinônimos de cirurgia imediata. Hoje, o paradigma mudou: a estabilidade hemodinâmica do paciente é o fator determinante para a conduta, e não apenas o grau da lesão anatômica vista nos exames de imagem.\n\nAlternativa (a) Incorreta: A laparotomia não é obrigatória baseada apenas na classificação da lesão. Atualmente, cerca de 80% a 90% dos traumas hepáticos fechados podem ser conduzidos de forma não operatória (TNO), desde que o paciente esteja hemodinamicamente estável e não apresente sinais de peritonite. Mesmo lesões de graus IV e V podem ser manejadas sem cirurgia em centros com suporte adequado.\n\nAlternativa (b) Correta: Para pacientes estáveis, o tratamento não operatório (TNO) é a conduta de escolha. Quando a tomografia computadorizada (TC) mostra extravasamento de contraste (o chamado \"blush\" arterial), a embolização arterial seletiva por angiografia é uma ferramenta fundamental. Ela permite o controle do sangramento de forma minimamente invasiva, aumentando as taxas de sucesso do tratamento conservador em lesões complexas.\n\nAlternativa (c) Incorreta: A laparoscopia diagnóstica não é a conduta padrão para o trauma hepático fechado em pacientes estáveis. O padrão-ouro para diagnóstico e classificação da lesão é a tomografia computadorizada com contraste. A laparoscopia tem seu uso mais restrito a traumas penetrantes para avaliar a integridade diafragmática ou em casos muito específicos, mas não sistemáticos.\n\nAlternativa (d) Incorreta: O \"packing\" ou tamponamento hepático faz parte da cirurgia de controle de danos. Essa estratégia é reservada para pacientes hemodinamicamente instáveis, com coagulopatia ou acidose, que precisam de uma cirurgia rápida para controle de hemorragia e contaminação. Não se aplica ao paciente estável descrito no enunciado.\n\nAlternativa (e) Incorreta: O shunt portossistêmico intra-hepático transjugular (TIPS) é um procedimento utilizado principalmente para tratar complicações da hipertensão portal, como varizes esofágicas sangrentas ou ascite refratária. Não tem papel no manejo agudo do trauma hepático.\n\nResumo do raciocínio:\nPaciente estável + trauma hepático = Tentativa de Tratamento Não Operatório (TNO).\nPresença de sangramento arterial na TC ou lesão de alto grau = Considerar angioembolização para viabilizar o TNO.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:45.531Z"
+  }
+]

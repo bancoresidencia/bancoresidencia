@@ -1,0 +1,508 @@
+[
+  {
+    "id": "AJUDA_01e2549b-c8f3-4acc-988a-c366542c008b",
+    "originalId": "01e2549b-c8f3-4acc-988a-c366542c008b",
+    "statement": "Em 05 de julho de 2024, a Sociedade Brasileira de Diabetes (SBD) divulgou um novo capitulo, denominado \"Diagnóstico de diabetes mellitus\". Esse adendo à diretriz atual de 2024 apresenta novos conceitos diagnósticos que caracterizam como portadores de",
+    "options": [
+      {
+        "id": "A",
+        "text": "perfil glicémico normal, pacientes com glicemia de jejum e hemoglobina glicada normais e que, apresentando 3 ou mais fatores de risco. possuam glicemia menor que 209 mg/dL na 1ª hora no teste de tolerância à glicose por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pré-diabetes, pacientes com glicemia de jejum e hemoglobina glicada normais e que, apresentando 3 ou mais fatores de risco, possuam glicemia de 155 a 208 mg/dl na 1ª hora no teste de tolerância à glicose por via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "diabetes, pacientes com glicemia acima de 155 mg/dL na 1ª hora no teste de tolerância à glicose por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "diabetes, pacientes com glicemia de jejum e hemoglobina glicada normais e que, apresentando 3 ou mais fatores de risco, possuam glicemia ≥200 mg/dL na 1ª hora no teste de tolerância à glicose por via oral em duas testagens.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DO PROFESSOR\n\nEsta questão aborda a atualização da Sociedade Brasileira de Diabetes (SBD) de julho de 2024, que incorporou novas recomendações da Federação Internacional de Diabetes (IDF). A principal mudança é a valorização da glicemia de 1 hora no Teste Oral de Tolerância à Glicose (TOTG) de 75g como critério diagnóstico para pacientes que possuem glicemia de jejum e hemoglobina glicada normais, mas apresentam fatores de risco.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Segundo a nova diretriz, o perfil glicêmico é considerado normal quando a glicemia na 1ª hora do TOTG é inferior a 155 mg/dL. O valor de 209 mg/dL mencionado é o ponto de corte para o diagnóstico de diabetes, e não para a normalidade.\n\nAlternativa b: Correta. Esta alternativa descreve precisamente o novo critério. Em indivíduos com alto risco metabólico (3 ou mais fatores de risco) que possuem exames convencionais (jejum e HbA1c) normais, uma glicemia entre 155 e 208 mg/dL na primeira hora do TOTG define o diagnóstico de pré-diabetes (ou hiperglicemia intermediária).\n\nAlternativa c: Incorreta. O valor de 155 mg/dL é o limite inferior para o diagnóstico de pré-diabetes na 1ª hora do TOTG. Para que o paciente seja diagnosticado com diabetes por esse método, o valor deve ser igual ou superior a 209 mg/dL.\n\nAlternativa d: Incorreta. O valor de corte para o diagnóstico de diabetes na 1ª hora do TOTG, conforme a atualização de 2024, é de 209 mg/dL, e não 200 mg/dL. \n\nResumo dos novos critérios da SBD (Glicemia de 1 hora no TOTG):\n- Normal: menor que 155 mg/dL.\n- Pré-diabetes: 155 a 208 mg/dL.\n- Diabetes: igual ou maior que 209 mg/dL.\n\nGabarito: Letra (b).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:08.970Z"
+  },
+  {
+    "id": "AJUDA_01e9dd53-37c5-496c-b1bb-f0906e80b091",
+    "originalId": "01e9dd53-37c5-496c-b1bb-f0906e80b091",
+    "statement": "Durante uma cirurgia abdominal de grande porte, o paciente desenvolve súbita queda na saturação periférica (SpO2 de 82%); a pressão de pico no ventilador aumenta subitamente e há queda do débito cardíaco. A inspeção mostra aumento do diâmetro torácico e palpação difícil para ventilação manual.\n\nQuais são a causa mais provável do distúrbio respiratório e a conduta técnica imediata a ser realizada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Broncoespasmo grave — administrar broncodilatador inalatório e esteroide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Embolia pulmonar — iniciar trombólise imediata em sala de cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pneumotórax hipertensivo — realizar descompressão torácica imediata com agulha, seguida de drenagem por dreno de tórax.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Edema pulmonar cardiogênico — diurese e suporte inotrópico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Desconexão do circuito ventilatório — reinserir circuito e ventilar manualmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma emergência intraoperatória clássica caracterizada pela tríade: hipoxemia súbita (SpO2 de 82%), aumento agudo da pressão de pico no ventilador mecânico (perda importante de complacência pulmonar e dificuldade para ventilação manual) e instabilidade hemodinâmica por choque obstrutivo (queda do débito cardíaco), associada à hiperinsuflação/aumento do diâmetro torácico. \n\nEssa apresentação é patognomônica de Pneumotórax Hipertensivo. Sob ventilação com pressão positiva, o ar entra no espaço pleural por um mecanismo valvular e não consegue sair, gerando alta pressão intrapleural. Isso colapsa o parênquima pulmonar ipsilateral (elevando a pressão de pico nas vias aéreas) e desvia o mediastino, comprimindo as veias cavas e o coração, o que impede o retorno venoso e causa queda dramática do débito cardíaco.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. O broncoespasmo grave cursa com aumento da pressão de pico e expiração prolongada com sibilos, mas não justifica o colapso hemodinâmico imediato nessa magnitude nem a assimetria ou aumento súbito e visível do diâmetro torácico típico do aprisionamento pleural sob tensão.\n\nAlternativa B - Incorreta. O tromboembolismo pulmonar maciço causa hipoxemia e choque obstrutivo, porém as pressões nas vias aéreas (pressão de pico) costumam permanecer inalteradas ou pouco modificadas, e não há aumento do diâmetro torácico ou resistência mecânica à insuflação manual. Além disso, a trombólise imediata em pleno ato cirúrgico abdominal de grande porte acarretaria risco proibitivo de hemorragia maciça.\n\nAlternativa C - Correta. O quadro clínico fecha perfeitamente o diagnóstico de pneumotórax hipertensivo. A conduta deve ser imediata e baseada puramente na suspeita clínica, sem aguardar exames de imagem: realização de toracocentese de alívio com agulha calibrosa (geralmente no 4º ou 5º espaço intercostal na linha axilar média/anterior, ou 2º espaço intercostal na linha hemiclavicular), convertendo o pneumotórax hipertensivo em aberto/simples, seguida prontamente pela inserção de dreno de tórax com sistema em selo d'água.\n\nAlternativa D - Incorreta. O edema agudo de pulmão pode reduzir a complacência e gerar hipoxemia, mas sua instalação é tipicamente progressiva (salvo em rotura aguda de cordoalha) e não causa aumento do diâmetro torácico. O tratamento clínico com diuréticos não resolveria um quadro mecânico agudo.\n\nAlternativa E - Incorreta. A desconexão do circuito provocaria queda a zero da pressão de pico e acionamento de alarme de baixa pressão/apneia, e não aumento da pressão de pico com resistência aumentada à ventilação.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório",
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax",
+      "Ventilação Mecânica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:08.970Z"
+  },
+  {
+    "id": "AJUDA_01eb12f1-f4d1-4cd6-b56a-3692e0ff15e7",
+    "originalId": "01eb12f1-f4d1-4cd6-b56a-3692e0ff15e7",
+    "statement": "Mulher preta de 73 anos de idade apresenta fraqueza há dois meses. Exame físico: palidez 3+/4+. Exames laboratoriais: GV: 3.810.000/mm³; Hb: 7,7 g/dl, Ht: 25,8%; VCM: 68 fl; HCM: 20,3 pg; CHCM: 30 g/dl; RDW: 22,8%, plaquetas: 653.000/mm³; leucócitos: 14.680/mm³; bastonetes: 4%; segmentados: 66%; linfócitos: 12%, monócitos: 4%; eosinófilos: 4%, eritroblastos: 1%; mielócitos: 1%; sofrimento tóxico; neutrófilos hipersegmentados; policromasia.\n\nConsidere valores normais a seguir:\n•  VCM: 80–100 fl; HCM: 26–34 pg; CHCM: 31–37 g/dl\n•  Leucócitos: 4.000–10.000/mm3\n•  Neutrófilos: 2.000–7.000/mm3\n•  Linfócitos: 1.000–4.000/mm3\n•  Monócitos: 80–800/mm3\n•  Eosinófilos: 0–450/mm3\n•  Basófilos: 0–120/mm3\n•  Plaquetas: 140.000–450.000/mm3\n\nA hipótese diagnóstica é anemia",
+    "options": [
+      {
+        "id": "A",
+        "text": "crônica por perdas com reação leucoeritroblástica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "aguda com linfocitopenia por estado consumptivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "crônica com linfocitopenia por estado inflamatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aguda por hemorragia com plaquetose reacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO E LABORATORIAL\n\nA paciente apresenta uma anemia importante (Hb: 7,7 g/dl) de caráter microcítico e hipocrômico (VCM: 68 fl; HCM: 20,3 pg), com anisocitose acentuada (RDW: 22,8%). Esse perfil é clássico da anemia ferropriva, que em uma paciente de 73 anos tem como principal causa as perdas crônicas, geralmente pelo trato gastrointestinal. A plaquetose (653.000/mm3) também é um achado reacional comum na deficiência de ferro.\n\nO ponto fundamental para a resolução da questão está no leucograma e na morfologia periférica. A presença de formas jovens de ambas as linhagens no sangue periférico, como eritroblastos (série vermelha) e mielócitos (série branca), caracteriza o que chamamos de reação leucoeritroblástica. Esse achado sugere um estresse medular intenso ou ocupação medular (mieloftise), podendo ocorrer em anemias graves, hemorragias agudas ou quadros de infiltração por neoplasias.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: A anemia é crônica, sugerida pela microcitose e hipocromia marcantes, que indicam um processo de instalação lenta (perda de ferro ao longo do tempo). A presença de eritroblastos e mielócitos no sangue periférico define, por conceito, a reação leucoeritroblástica. Os neutrófilos hipersegmentados citados também podem ocorrer em estados de deficiência nutricional ou regeneração medular.\n\nAlternativa (b) INCORRETA: A anemia não é aguda. Hemorragias agudas cursam com anemia normocítica e normocrômica, pois não há tempo para a alteração do tamanho da hemácia. Além disso, não há linfocitopenia; o cálculo absoluto de linfócitos (12% de 14.680 = 1.761/mm3) está dentro da faixa de normalidade fornecida (1.000 a 4.000/mm3).\n\nAlternativa (c) INCORRETA: Embora a anemia possa ser considerada crônica, o termo linfocitopenia está incorreto, conforme o cálculo dos valores absolutos mencionado anteriormente (1.761 linfócitos/mm3). Na análise de um hemograma, sempre devemos observar os valores absolutos e não apenas as porcentagens.\n\nAlternativa (d) INCORRETA: Como discutido, o VCM baixo (68 fl) e o HCM baixo (20,3 pg) invalidam a hipótese de hemorragia aguda. Esses índices baixos refletem uma deficiência de ferro estabelecida há semanas ou meses. Embora a plaquetose reacional esteja presente, o diagnóstico de anemia aguda está errado.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:08.970Z"
+  },
+  {
+    "id": "AJUDA_01f45661-cbdf-48b7-88b1-5f39db5cfe64",
+    "originalId": "01f45661-cbdf-48b7-88b1-5f39db5cfe64",
+    "statement": "Um paciente de 45 anos de idade chegou ao pronto-socorro com dor abdominal intensa iniciada há 12 horas, localizada inicialmente no epigástrio, que migrou para o quadrante inferior direito. Ele apresentava febre (38,2 °C), náuseas e anorexia. Ao exame físico, havia dor à palpação profunda no quadrante inferior direito e sinal de Blumberg positivo. O hemograma revelou leucocitose com desvio à esquerda. Qual é a conduta mais adequada para o caso desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar tomografia de abdome e pelve para confirmação diagnóstica, antes de qualquer intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar imediatamente para apendicectomia, preferencialmente por via laparoscópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar antibioticoterapia de amplo espectro e observar evolução clínica por 24 – 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar analgesia e dar alta, com retorno ambulatorial em 24 horas caso haja persistência dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico de apendicite aguda, a causa mais comum de abdome agudo cirúrgico. O paciente apresenta a tríade clássica: dor migratória (iniciada no epigástrio e localizada no quadrante inferior direito - sinal de Murphy), anorexia e febre, além de sinais de irritação peritoneal (sinal de Blumberg positivo) e resposta inflamatória sistêmica (leucocitose com desvio à esquerda).\n\nAnálise das alternativas:\n\na) Incorreta. Embora a tomografia computadorizada (TC) de abdome seja o padrão-ouro para o diagnóstico de apendicite em adultos devido à sua alta sensibilidade e especificidade, em casos com apresentação clínica muito clara e \"de livro\", como este, o diagnóstico pode ser firmado apenas clinicamente. Em provas de residência, quando o quadro é clássico em homens ou pacientes que não estão nos extremos de idade, a conduta frequentemente direcionada é a cirurgia imediata, sem necessidade de atrasar o tratamento com exames de imagem confirmatórios.\n\nb) Correta. O paciente apresenta uma pontuação alta em escores clínicos (como o de Alvarado), indicando alta probabilidade de apendicite aguda. Uma vez firmado o diagnóstico, o tratamento de escolha é a apendicectomia. A via laparoscópica é preferencial por estar associada a menor dor pós-operatória, menor taxa de infecção de ferida operatória e retorno mais rápido às atividades, especialmente em pacientes obesos ou quando há dúvida diagnóstica.\n\nc) Incorreta. A antibioticoterapia isolada e observação (manejo não operatório) podem ser discutidas em protocolos muito específicos e selecionados, mas não são a conduta padrão para um quadro inicial de 12 horas com sinais claros de irritação peritoneal. A conduta expectante em um caso com Blumberg positivo aumenta significativamente o risco de perfuração e peritonite generalizada.\n\nd) Incorreta. Esta conduta é perigosa e contraindicada. Diante de um quadro de abdome agudo inflamatório com sinais de irritação peritoneal, a alta hospitalar sem o tratamento definitivo (cirurgia) pode levar a complicações graves, como sepse e óbito. O controle da dor deve ser feito, mas nunca como medida isolada para permitir a alta de um paciente com abdome cirúrgico.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:08.970Z"
+  },
+  {
+    "id": "AJUDA_01f64d23-ebd3-45be-bba2-1777fe9f197c",
+    "originalId": "01f64d23-ebd3-45be-bba2-1777fe9f197c",
+    "statement": "São modelos clássicos de saúde os denominados Beveridge, Bismarck e de Mercado. Cada um deles concebe a saúde como sendo, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "bem de consumo, direito universal, seguro social.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "seguro social, bem de consumo, direito universal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "seguro social, direito universal, bem de consumo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "direito universal, bem de consumo, seguro social.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "direito universal, seguro social, bem de consumo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para responder a esta questão, é fundamental compreender os três modelos clássicos de organização dos sistemas de saúde:\n\n1. Modelo Beveridge: Criado no Reino Unido, é financiado por impostos gerais do Estado e oferece cobertura a todos os cidadãos, concebendo a saúde como um direito universal e dever do Estado (modelo que inspirou o SUS no Brasil).\n2. Modelo Bismarck: Criado na Alemanha, é financiado por contribuições obrigatórias de empregados e empregadores, vinculando o acesso à condição de trabalho e contribuição, o que caracteriza a saúde como um seguro social.\n3. Modelo de Mercado (ou Liberal): Predominante nos Estados Unidos, baseia-se na compra privada de serviços e seguros, tratando a assistência médica como um bem de consumo sujeito às leis de mercado e à capacidade de pagamento individual.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Atribui incorretamente a visão de bem de consumo ao modelo Beveridge, direito universal a Bismarck e seguro social ao modelo de mercado.\n\nAlternativa b: Incorreta. Confunde o modelo Beveridge com seguro social e o modelo Bismarck com bem de consumo.\n\nAlternativa c: Incorreta. Inverte as definições dos dois primeiros modelos, classificando Beveridge como seguro social e Bismarck como direito universal.\n\nAlternativa d: Incorreta. Embora acerte a definição de Beveridge como direito universal, inverte os conceitos de Bismarck e Mercado.\n\nAlternativa e: Correta. Estabelece a correspondência exata na ordem solicitada pelo enunciado: Beveridge corresponde a direito universal, Bismarck a seguro social e Mercado a bem de consumo.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "História do SUS",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:08.970Z"
+  },
+  {
+    "id": "AJUDA_01fb5c43-fce4-4294-85a4-1363f2bb8b5e",
+    "originalId": "01fb5c43-fce4-4294-85a4-1363f2bb8b5e",
+    "statement": "Homem, 49 anos de idade, tem diagnóstico recente de insuficiência adrenal e faz uso crônico de hidrocortisona e fludrocortisona por via oral. Ele procura o pronto-socorro com queixa de 3 dias de congestão nasal, cefaleia frontal intermitente, rinorreia e odinofagia leve. Ao exame físico, apresenta temperatura de 38,3 ºC, bom estado geral, congestão nasal bilateral, orofaringe com hiperemia, sem linfonodos cervicais ou lesões orais; sem outras anormalidades. Ele conta que a equipe de endocrinologia lhe entregou uma carta para levar consigo em caso de atendimentos de urgência, mas esqueceu de trazer este documento. Com base nessas informações, assinale a alternativa que apresenta a conduta mais apropriada para o paciente neste momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter as doses dos medicamentos e observar evolução em domicílio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter as doses dos medicamentos e indicar hospitalização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar a dose de hidrocortisona e observar evolução em domicílio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aumentar a dose de hidrocortisona e indicar hospitalização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O paciente apresenta insuficiência adrenal crônica e desenvolveu um quadro infeccioso de vias aéreas superiores associado a febre de 38,3 °C. Em condições normais, o organismo responde ao estresse e a infecções aumentando significativamente a produção endógena de cortisol. Como o paciente com insuficiência adrenal não consegue produzir esse hormônio, ele necessita de ajustes na dose de reposição de glicocorticoide durante intercorrências clínicas, estratégia conhecida como regras para dias de doença (sick day rules). Diante de estresse infeccioso leve a moderado com febre, a recomendação clássica é dobrar ou triplicar a dose habitual de hidrocortisona por 2 a 3 dias. Como o paciente está em bom estado geral, clinicamente estável e com boa aceitação da via oral, o tratamento pode ser realizado de forma ambulatorial.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Manter a dose habitual de hidrocortisona durante um quadro febril é inadequado, pois a dose basal não supre a demanda metabólica do organismo em estresse, aumentando o risco de evolução para crise adrenal aguda (choque, distúrbios hidroeletrolíticos e hipotensão).\n\nAlternativa b: Incorreta. Além de ser contraindicado manter a dose basal diante de febre, a hospitalização é desnecessária para uma infecção de vias aéreas superiores leve em um paciente sem sinais de alarme e com trânsito gastrointestinal preservado.\n\nAlternativa c: Correta. O aumento da dose oral de hidrocortisona compensa a incapacidade de resposta adrenal ao estresse infeccioso e previne a crise adrenal. A observação domiciliar é adequada, pois o paciente está clinicamente bem, sem vômitos e sem critérios de gravidade que justifiquem internação.\n\nAlternativa d: Incorreta. O aumento da hidrocortisona é a conduta correta, porém a indicação de internação hospitalar e corticoterapia parenteral estaria reservada a quadros graves, presença de vômitos ou diarreia que impeçam a absorção oral, ou suspeita de crise adrenal já instalada.\n\nGabarito: Letra c.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores",
+      "Adrenal"
+    ],
+    "difficulty": 93.37411062940907,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:08.970Z"
+  },
+  {
+    "id": "AJUDA_01feeab7-1da5-460f-9a4c-0d7717e1d749",
+    "originalId": "01feeab7-1da5-460f-9a4c-0d7717e1d749",
+    "statement": "Um homem de 65 anos, diabético, apresenta uma úlcera no pé há uma semana. A lesão está rodeada de tecido necrosado e a área é dolorosa e com secreção purulenta. O exame físico revela eritema que se estende até a panturrilha. Há sinais de toxemia e febre de 39 °C. O paciente foi previamente tratado com antibiótico oral. O próximo passo mais adequado no manejo deste paciente deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar corticoide sistêmico para reduzir a inflamação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumentar a dose do antibiótico oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aplicar curativo de carvão ativado e acompanhar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar desbridamento cirúrgico e iniciar antibiótico intravenoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Iniciar fisioterapia para melhorar a circulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um quadro de pé diabético infectado com gravidade importante. Os pontos-chave para a decisão terapêutica são: presença de tecido necrosado (foco de infecção que exige controle local), secreção purulenta, eritema em expansão (sugerindo celulite/infecção de tecidos moles ascendente) e sinais de resposta inflamatória sistêmica (toxemia e febre de 39 °C). Além disso, houve falha prévia ao tratamento com antibiótico por via oral. Este cenário classifica a infecção como grave, exigindo intervenção imediata para salvar o membro e a vida do paciente.\n\nAnálise das alternativas:\n\na) Incorreta. O uso de corticoide sistêmico em um paciente com infecção ativa e diabetes é perigoso. O corticoide pode causar descontrole glicêmico severo e mascarar ou piorar o quadro infeccioso ao suprimir a resposta imune necessária para o combate aos patógenos.\n\nb) Incorreta. Aumentar a dose do antibiótico oral é insuficiente. O paciente já falhou à terapia oral, apresenta sinais sistêmicos (toxemia) e uma ferida com necrose. Casos com comprometimento sistêmico exigem internação hospitalar e início de antibioticoterapia intravenosa de amplo espectro para garantir níveis séricos adequados.\n\nc) Incorreta. Curativos, como o de carvão ativado, são medidas adjuvantes para o manejo de exsudato e odor, mas não tratam a causa-base de uma infecção profunda e sistêmica. Adotar uma conduta expectante (\"acompanhar\") em um paciente toxêmico e com necrose resultaria na progressão da infecção e possível sepse.\n\nd) Correta. O manejo do pé diabético infectado grave baseia-se em dois pilares inegociáveis: controle do foco e antibioticoterapia sistêmica. O desbridamento cirúrgico é fundamental para remover o tecido necrosado e purulento, que impede a cicatrização e serve de meio de cultura bacteriana. A antibioticoterapia intravenosa é mandatória devido à gravidade do quadro (febre e toxemia).\n\ne) Incorreta. A fisioterapia não possui indicação no tratamento de uma infecção aguda necrotizante. Sua função no pé diabético é voltada para a reabilitação funcional ou prevenção de deformidades em fases crônicas, nunca na vigência de sepse ou necrose infectada.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Cicatrização de Feridas",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:08.970Z"
+  },
+  {
+    "id": "AJUDA_0202b37b-7e51-4236-a725-5694f91096e8",
+    "originalId": "0202b37b-7e51-4236-a725-5694f91096e8",
+    "statement": "São eventos relacionados à diminuição da sexualidade com o envelhecimento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Idade, maior longevidade masculina, obesidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Falta de parceria, força do relacionamento, maior longevidade masculina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cultura, redução da lubrificação, ardência pós-coital.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Força do relacionamento, maior longevidade feminina, obesidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A sexualidade no envelhecimento é um fenômeno complexo influenciado por fatores biológicos, psicológicos e socioculturais. A diminuição da atividade sexual nesta fase da vida não decorre de um único motivo, mas da interação entre mudanças fisiológicas e o contexto em que o idoso está inserido.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. Embora a idade avançada esteja associada a mudanças na resposta sexual, a afirmação sobre a longevidade está errada. Epidemiologicamente, existe uma maior longevidade feminina, e não masculina. O fato de as mulheres viverem mais do que os homens resulta em um excedente de mulheres idosas sem parceiros, o que é um fator limitante para a sexualidade nessa população.\n\nAlternativa b) Incorreta. A falta de parceria é, de fato, um dos principais motivos para a cessação da atividade sexual em idosos, especialmente mulheres. Contudo, a força do relacionamento é um fator facilitador e positivo para a manutenção da sexualidade, e não um evento relacionado à sua diminuição. Além disso, a alternativa repete o erro sobre a longevidade masculina.\n\nAlternativa c) Correta. Esta alternativa engloba os principais pilares da redução da sexualidade no idoso:\n1. Cultura: O preconceito social e o estigma de que o idoso é um ser \"assexuado\" geram barreiras psicológicas e inibição.\n2. Redução da lubrificação: É uma mudança fisiológica decorrente do hipoestrogenismo (na mulher) e de alterações vasculares, dificultando o ato sexual.\n3. Ardência pós-coital: Frequentemente associada à atrofia vaginal e à síndrome geniturinária da menopausa, causa desconforto físico (dispareunia), levando à evitação da prática sexual.\n\nAlternativa d) Incorreta. A força do relacionamento atua como um fator que estimula e mantém a vida sexual ativa. Embora a maior longevidade feminina seja um fato real que impacta a disponibilidade de parceiros, a presença da obesidade, embora possa influenciar a autoimagem, não é o fator determinante ou clássico para a diminuição da sexualidade quando comparada aos elementos culturais e fisiológicos da alternativa C.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Sexualidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:08.970Z"
+  },
+  {
+    "id": "AJUDA_02116d70-068a-4523-8633-2663cb2867f4",
+    "originalId": "02116d70-068a-4523-8633-2663cb2867f4",
+    "statement": "A rotação interna de uma apresentação cefálica OS é de",
+    "options": [
+      {
+        "id": "A",
+        "text": "0°.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "45°.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "90°.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "135°.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "180°.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender essa questão, é necessário revisar o mecanismo de parto, especificamente a etapa de rotação interna da cabeça fetal. O objetivo dessa fase é alinhar o maior diâmetro da cabeça do feto (diâmetro anteroposterior) com o maior diâmetro do estreito inferior da pelve materna (também o diâmetro anteroposterior). Na mecânica clássica do parto, o ponto de referência fetal (occipício) busca se posicionar sob a sínfise púbica da mãe, em uma posição denominada Occipito-Púbica (OP).\n\nA sigla OS refere-se à variedade de posição Occipito-Sacra. Nesse cenário, o occipício fetal está voltado diretamente para o sacro materno, ou seja, para a parte posterior da pelve. Para que esse feto realize a rotação interna completa até atingir a posição anterior (Occipito-Púbica), ele deve percorrer um arco correspondente à metade de uma circunferência.\n\nAnálise das alternativas:\n\nAlternativa a) 0 grau. Está incorreta. Essa seria a rotação caso o feto já estivesse na posição Occipito-Púbica (OP), onde o occipício já está alinhado com a sínfise púbica desde o início.\n\nAlternativa b) 45 graus. Está incorreta. Este é o arco de rotação percorrido pelas variedades oblíquas anteriores, como a Occipito-Esquerda-Anterior (OEA) e a Occipito-Direita-Anterior (ODA).\n\nAlternativa c) 90 graus. Está incorreta. Este grau de rotação é observado nas variedades transversas, como a Occipito-Esquerda-Transversa (OET) e a Occipito-Direita-Transversa (ODT).\n\nAlternativa d) 135 graus. Está incorreta. Essa rotação ocorre nas variedades posteriores oblíquas, como a Occipito-Esquerda-Posterior (OEP) e a Occipito-Direita-Posterior (ODP), quando estas giram para a posição anterior (grande rotação).\n\nAlternativa e) 180 graus. Está correta. Na variedade Occipito-Sacra (OS), o occipício está em posição diametralmente oposta à sínfise púbica. Portanto, para realizar o movimento de rotação interna em direção ao púbis e completar o mecanismo de parto fisiológico, a cabeça fetal precisa descrever um arco de 180 graus.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto"
+    ],
+    "difficulty": 55.80549204171814,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:08.970Z"
+  },
+  {
+    "id": "AJUDA_02118071-1ba0-4752-9541-2a04309c597d",
+    "originalId": "02118071-1ba0-4752-9541-2a04309c597d",
+    "statement": "Assinale a alternativa correta sobre o sarampo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as crianças são suscetíveis ao vírus do sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Se, para um paciente com sarampo, receita-se antibioticoterapia, é porque deve haver evidências de infecção secundária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de uma doença que praticamente não evolui para óbito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de uma doença que não tem qualquer relação com a época do ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não há imunidade passiva ao sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa (a) Incorreta: O sarampo não é exclusivo da infância. Qualquer pessoa que não tenha sido vacinada e que não tenha tido a doença anteriormente é considerada suscetível, independentemente da faixa etária. Em adultos, inclusive, a doença pode apresentar um curso clínico mais grave e com maior risco de complicações.\n\nAlternativa (b) Correta: O sarampo é uma doença infecciosa aguda causada por um vírus (*Morbillivirus*). Sendo uma virose, o tratamento é essencialmente de suporte e a antibioticoterapia não tem ação sobre o agente causador. Portanto, a prescrição de antibióticos só é justificada quando o quadro clínico é complicado por infecções bacterianas secundárias, como pneumonia, otite média ou sinusite.\n\nAlternativa (c) Incorreta: O sarampo é uma doença potencialmente letal. Embora muitos casos sejam autolimitados, as complicações graves (especialmente a pneumonia e a encefalite) podem levar ao óbito. A letalidade é maior em crianças pequenas, indivíduos desnutridos e pacientes imunocomprometidos.\n\nAlternativa (d) Incorreta: A epidemiologia do sarampo demonstra uma clara relação com a época do ano, apresentando um padrão de sazonalidade. Em regiões de clima temperado, a incidência da doença costuma aumentar significativamente no final do inverno e durante a primavera.\n\nAlternativa (e) Incorreta: A imunidade passiva ao sarampo existe e é clinicamente relevante. Ela ocorre de forma natural por meio da transferência de anticorpos maternos (IgG) pela placenta, protegendo o recém-nascido nos primeiros meses de vida. Além disso, existe a imunidade passiva artificial, obtida por meio da administração de imunoglobulina como profilaxia pós-exposição em grupos específicos.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": 55.80549204171814,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:08.970Z"
+  }
+]

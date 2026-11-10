@@ -1,0 +1,481 @@
+[
+  {
+    "id": "AJUDA_fb5e0874-3aa2-4b31-aa41-2e1d049f8df1",
+    "originalId": "fb5e0874-3aa2-4b31-aa41-2e1d049f8df1",
+    "statement": "Homem, 24 anos de idade, é admitido no PS por acidente automobilístico. Exame físico: via aérea pérvia, pneumotórax esquerdo com fratura linear da 3°, 4° e 5° costelas, estável hemodinamicamente, sinais de trauma raquimedular em L3-L4, múltiplas fraturas em membros superiores e inferiores. Exames de imagem: ausência de outras lesões no abdômen e na pelve. Com relação à drenagem da via urinária, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sondagem vesical de demora.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Cistostomia supra-púbica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cateterismo intermitente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nefrostomia bilateral guiada por radiointervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo inicial de um paciente politraumatizado com foco na monitorização e cuidados urológicos diante de um trauma raquimedular (TRM).\n\nAlternativa A: Está correta. No atendimento inicial ao trauma (seguindo os preceitos do ATLS), a sondagem vesical de demora é a conduta indicada para monitorar o débito urinário horário. Essa medida é fundamental para avaliar a perfusão tecidual e guiar a reposição volêmica. Além disso, o paciente apresenta sinais de trauma raquimedular em L3-L4, o que geralmente resulta em uma bexiga neurogênica atônica durante a fase de choque medular, impedindo o esvaziamento espontâneo da bexiga. Como não há sinais de trauma de uretra (como sangue no meato urinário, hematoma perineal ou fraturas complexas de pelve), a sondagem transuretral é segura.\n\nAlternativa B: Está incorreta. A cistostomia suprapúbica é uma alternativa mais invasiva, indicada apenas quando a sondagem vesical de demora é contraindicada (suspeita de lesão uretral) ou quando a passagem da sonda pela uretra é impossibilitada por estenoses ou outros traumas locais. No caso descrito, não há elementos que contraindiquem a via uretral.\n\nAlternativa C: Está incorreta. O cateterismo intermitente é o padrão-ouro para o manejo crônico de pacientes com bexiga neurogênica após a estabilização do quadro. No entanto, no ambiente de pronto-socorro e na fase aguda do trauma, ele não é adequado porque não permite a monitorização contínua e precisa do débito urinário, essencial para o controle hemodinâmico.\n\nAlternativa D: Está incorreta. A nefrostomia bilateral é um procedimento de exceção, utilizado para desviar o fluxo urinário diretamente dos rins em casos de obstrução ureteral bilateral ou outras patologias do trato urinário superior. O problema do paciente em questão está relacionado ao esvaziamento vesical (trato inferior) e à necessidade de monitorização clínica, não havendo indicação para um procedimento de radiointervenção renal.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:17.552Z"
+  },
+  {
+    "id": "AJUDA_fb5ed163-0340-49e5-b783-d2e1c2d72c12",
+    "originalId": "fb5ed163-0340-49e5-b783-d2e1c2d72c12",
+    "statement": "Uma mulher de 63 anos, portadora de diabetes mellitus e hipertensão arterial sistêmica controlada, encontra-se em menopausa há 10 anos. Comparece ao ginecologista com queixas de sangramento vaginal há 3 meses. O exame físico não apresenta alterações aparentes ou sinais de sangramento ativo no momento. É realizada uma ultrassonografia transvaginal, que evidencia endométrio com 3 mm de espessura, com imagem ecogênica focal que ocupa a interface entre os folhetos endometriais e mede 5 mm no maior eixo.\nA causa mais provável do sangramento nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "adenomiose;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pólipo endometrial;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "miomatose uterina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hiperplasia endometrial;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "adenocarcinoma do endométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A queixa de sangramento na pós-menopausa é um sinal de alerta que exige investigação imediata, principalmente para excluir malignidade. A ultrassonografia transvaginal é o exame inicial de escolha para essa triagem.\n\nNeste caso, a paciente apresenta um endométrio com espessura de 3 mm. Em mulheres na pós-menopausa, um endométrio com espessura inferior a 4 ou 5 mm possui um alto valor preditivo negativo para câncer de endométrio e hiperplasias. Isso significa que, estatisticamente, é muito improvável que o sangramento seja causado por um processo maligno ou hiperplásico difuso.\n\nO ponto-chave para a resolução da questão é a descrição de uma imagem ecogênica focal de 5 mm na interface dos folhetos endometriais. Essa é a descrição ultrassonográfica clássica de um pólipo endometrial. Os pólipos são projeções benignas da mucosa endometrial e constituem uma causa frequente de sangramento uterino anormal na pós-menopausa, ocorrendo muitas vezes em endométrios que, no restante da sua extensão, apresentam-se finos ou atróficos.\n\nAnálise das alternativas:\n\na) Adenomiose: Esta condição ocorre quando o tecido endometrial se infiltra na musculatura uterina (miométrio). Os achados ultrassonográficos típicos incluem útero aumentado, miométrio heterogêneo e presença de pequenos cistos miometriais, e não uma lesão focal dentro da cavidade endometrial. Além disso, é mais comum em mulheres na pré-menopausa.\n\nb) Pólipo endometrial: Alternativa correta. A presença de uma formação ecogênica, focal e bem delimitada dentro da cavidade endometrial, mesmo com a espessura endometrial total dentro dos limites da normalidade (3 mm), é característica do pólipo endometrial.\n\nc) Miomatose uterina: Os miomas são nódulos benignos originados do tecido muscular. Embora os miomas submucosos possam causar sangramento e protruir para a cavidade, eles geralmente são descritos como massas hipoecoicas (mais escuras) que distorcem o contorno endometrial, o que difere da imagem ecogênica (mais clara) descrita.\n\nd) Hiperplasia endometrial: É uma proliferação excessiva do endométrio que se manifesta na ultrassonografia como um espessamento endometrial difuso e geralmente superior a 5 mm em mulheres na pós-menopausa. O valor de 3 mm relatado torna este diagnóstico improvável.\n\ne) Adenocarcinoma do endométrio: É o câncer de endométrio. Embora seja a hipótese que sempre deve ser descartada no sangramento pós-menopausa, ele costuma apresentar-se com endométrio significativamente espessado (superior a 5 mm), irregular e com ecogenicidade heterogênea. A espessura de 3 mm é um forte indicador de que não se trata de câncer.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Pólipos Uterinos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:17.552Z"
+  },
+  {
+    "id": "AJUDA_fb677533-1203-4a04-8160-3e1e0a619967",
+    "originalId": "fb677533-1203-4a04-8160-3e1e0a619967",
+    "statement": "Mulher, 74 anos de idade, tabagista, tem hipertensão e diabetes. Foi encontrada confusa em casa pela filha, que há 2 dias atrás havia a visto bem. Na admissão no pronto-socorro, encontrava-se afebril, eupneica, com PA de 170×110 mmHg, FC de 102 bpm, glicemia capilar de 145 mg/dL. Ao exame neurológico, apresentou-se vigil, alerta, irritada, afirmando “estou bem, quero ir para casa”. Tinha o olhar desviado para a direita quando distraída, mas conseguia olhar para a esquerda quando instruída pelo examinador. A paciente percebia o dedo do examinador em todos os quadrantes no exame de campos visuais por confrontação. Quando solicitada a ler um texto, começava a partir do meio da página e lia apenas o lado direito das frases repetidamente. Não apresentava fraqueza muscular. Assinale a alternativa que apresenta uma imagem de ressonância magnética compatível com o quadro da paciente descrita.",
+    "options": [],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clinico apresentado e classico de uma sindrome de heminegligencia a esquerda associada a anosognosia (falta de percepcao do proprio deficit), desvio conjugado do olhar para a direita (em direcao ao hemisferio lesionado) e preservacao dos campos visuais e da forca motora. Esse conjunto de achados localiza a lesao no hemisferio cerebral direito (nao dominante), especificamente no lobo parietal, caracteristico de um acidente vascular cerebral isquemico no territorio da arteria cerebral media direita.\n\nAnalise das alternativas:\n\nAlternativa A (Correta): A primeira imagem de ressonancia magnetica, em sequencia FLAIR, evidencia uma area de hipersinal corticossubcortical no lobo parietal direito. Essa topografia explica com precisao a heminegligencia espacial esquerda e o desvio do olhar, poupando a area visual primaria occipital e o trato corticoespinhal frontal.\n\nAlternativa B (Incorreta): A segunda imagem mostra uma lesao isquêmica com hipersinal em lobo occipital e temporal medial direito (territorio da arteria cerebral posterior). Uma lesao nessa regiao causaria hemianopsia homonima esquerda, alteracao que foi expressamente afastada no exame fisico por confrontacao.\n\nAlternativa C (Incorreta): A terceira imagem apresenta um corte axial sem evidência de lesao isquemica aguda ou subaguda que justifique os deficits focais descritos na paciente.\n\nAlternativa D (Incorreta): A quarta imagem exibe um corte ao nivel dos lobos temporais e fossa posterior, sem qualquer alteracao parietal focal relacionada a sindrome de negligencia espacial.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Acidentes Vasculares Cerebrais",
+      "Anatomia, Fisiologia e Semiologia Neurológica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:17.552Z"
+  },
+  {
+    "id": "AJUDA_fb6d5e8b-70a6-4bc2-9a5b-714d7a98a465",
+    "originalId": "fb6d5e8b-70a6-4bc2-9a5b-714d7a98a465",
+    "statement": "Gestante com 35 semanas e 2 dias de gestação que evolui para parto vaginal sem intercorrências. O pré-natal foi adequado, e a sorologia para hepatite B revelava HBsAg positivo. O recém-nascido, do sexo masculino, é pequeno para a idade gestacional, com peso de nascimento de 1.850 g. Qual a conduta a ser adotada para a prevenção de hepatite B nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vacina para hepatite B nas primeiras 12 horas de vida, sem necessidade de administração de imunoglobulina para hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Imunoglobulina específica contra a hepatite B, e a vacina para hepatite B só poderá ser administrada após atingir peso acima de 2.000 g.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vacina para hepatite B nas primeiras 12 horas de vida e imunoglobulina específica contra a hepatite B.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Imunoglobulina específica contra a hepatite B, e aplicar a vacina para hepatite B após 30 dias de vida, em razão da prematuridade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CENÁRIO CLÍNICO\n\nO caso descreve um recém-nascido de mãe HBsAg-positiva, o que configura uma situação de alto risco para a transmissão vertical do vírus da hepatite B (HBV). O objetivo principal é realizar a profilaxia pós-exposição de forma imediata para evitar que a criança se torne uma portadora crônica do vírus, risco que chega a 90% quando a profilaxia não é realizada adequadamente em filhos de mães infectadas.\n\nDiferente do esquema vacinal de rotina para recém-nascidos de baixo risco, quando a mãe é sabidamente portadora do HBsAg, a conduta é de urgência e não deve ser adiada por conta do peso ou da idade gestacional.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA conduta padrão para todo recém-nascido de mãe HBsAg-positiva, independentemente do peso ao nascer ou da idade gestacional, é a administração simultânea da vacina contra hepatite B e da Imunoglobulina Humana Anti-Hepatite B (IGHAHB) nas primeiras 12 horas de vida. A vacina estimula a imunidade ativa, enquanto a imunoglobulina fornece anticorpos prontos (imunidade passiva) para neutralizar o vírus que possa ter tido contato com o bebê durante o parto. Elas devem ser aplicadas em locais (músculos) diferentes.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): Apenas a vacina não é suficiente neste cenário. Em filhos de mães HBsAg-positivas, a associação da vacina com a imunoglobulina reduz drasticamente o risco de transmissão vertical em comparação com o uso isolado da vacina. A imunoglobulina é mandatória para garantir a proteção imediata.\n\nAlternativa (b): É um erro retardar a vacinação. Embora exista uma recomendação geral de que a primeira dose da vacina de hepatite B possa ser adiada em prematuros com menos de 2.000 g, essa regra só se aplica quando a mãe é HBsAg-negativa. Quando a mãe é positiva, a proteção deve ser iniciada imediatamente após o nascimento, independentemente do peso.\n\nAlternativa (d): Não se deve aguardar 30 dias para iniciar a vacinação em filhos de mães portadoras do vírus. O vírus da hepatite B tem um alto potencial de cronificação em neonatos, e a janela de oportunidade para a eficácia da profilaxia (vacina + imunoglobulina) é nas primeiras horas de vida, idealmente nas primeiras 12 horas.\n\nOBSERVAÇÃO COMPLEMENTAR SOBRE O PESO\n\nPara recém-nascidos com peso inferior a 2.000 g ou idade gestacional menor que 33 semanas, a resposta imunológica à vacina pode ser menor. Por isso, nesses casos específicos (como o do enunciado, com 1.850 g), o Ministério da Saúde recomenda que o esquema vacinal seja de 4 doses (0, 1, 2 e 6 meses), em vez das 3 doses habituais, para garantir a soroconversão. No entanto, a primeira dose e a imunoglobulina permanecem obrigatórias logo ao nascer.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Hepatites Virais",
+      "Imunizações",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:17.552Z"
+  },
+  {
+    "id": "AJUDA_fb83ad31-ec1a-4dfe-8675-d82e4aee12a8",
+    "originalId": "fb83ad31-ec1a-4dfe-8675-d82e4aee12a8",
+    "statement": "Durante a segunda metade da gestação, uma queixa frequente que leva à procura pelo pronto-socorro são as contrações uterinas relatadas como \"endurecimento da barriga\". Se a gestante tem menos de 36 semanas, a hipótese de trabalho de parto prematuro deve ser sempre afastada e medidas cabíveis devem ser tomadas. Como o médico deve proceder frente ao quadro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se tem contrações ritmadas e dilatação cervical de 1 cm com esvaecimento cervical, pode-se classificar como TPP e internar para inibição.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Se apresenta contrações ritmadas e dilatação de 5 cm, deve-se realizar a corticoterapia e sulfato de magnésio para neuroproteção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Se ao toque há dilatação de 3 cm e saída de líquido amniótico, introduz-se antibioticoprofilaxia e cesariana de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Se o colo é impérvio, classifica-se como útero irritável e indica-se a inibina via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) Correta: O diagnóstico de Trabalho de Parto Prematuro (TPP) é clínico e baseia-se na presença de contrações uterinas rítmicas e regulares associadas a modificações do colo uterino. Em gestações com menos de 34 a 36 semanas, a constatação de esvaecimento cervical (afinamento) e dilatação inicial (como 1 cm) em uma paciente com contrações persistentes justifica a internação para inibição uterina (tocólise). O objetivo é postergar o parto por pelo menos 48 horas para que se possa administrar a corticoterapia para maturação pulmonar fetal.\n\nAlternativa (b) Incorreta: Com 5 cm de dilatação, a gestante já se encontra na fase ativa do trabalho de parto, o que torna a tentativa de inibição uterina (tocólise) geralmente ineficaz e contraindicada. Além disso, o sulfato de magnésio para neuroproteção fetal é formalmente indicado em casos de parto iminente abaixo de 32 semanas de gestação, não sendo a conduta padrão para todas as idades gestacionais abaixo de 36 semanas.\n\nAlternativa (c) Incorreta: A saída de líquido amniótico caracteriza a Amniorrexe Prematura. Quando associada ao trabalho de parto (dilatação de 3 cm), a conduta envolve a avaliação da idade gestacional e da vitalidade fetal. A prematuridade, por si só, não é indicação de cesariana de urgência; o parto vaginal é preferencial, a menos que haja uma contraindicação obstétrica clássica (como descolamento de placenta ou sofrimento fetal agudo).\n\nAlternativa (d) Incorreta: Se o colo é impérvio (fechado e grosso), não há diagnóstico de trabalho de parto prematuro, podendo ser apenas contrações de Braxton-Hicks ou útero irritável. O erro principal desta alternativa é o uso do termo \"inibina\". A inibina é um hormônio produzido pelos ovários e placenta, não sendo uma medicação utilizada na prática médica para tocólise. Os medicamentos utilizados para esse fim são a Nifedipina ou o Atosiban.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:17.552Z"
+  },
+  {
+    "id": "AJUDA_fb9058f8-5cb9-40bc-aef1-eeef643a5533",
+    "originalId": "fb9058f8-5cb9-40bc-aef1-eeef643a5533",
+    "statement": "Rastreamento é uma medida realizada por meio de testes diagnósticos em pessoas assintomáticas para estabelecer diagnóstico precoce com objetivo de reduzir morbimortalidade do agravo. O Ministério da Saúde estabelece no seu Protocolo Clínico e Diretrizes para Tratamento de ISTs, de 2022, o rastreamento para esses agravos. Com relação ao rastreamento de ISTs segundo as Diretrizes do Ministério da Saúde de 2022, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Profissionais do sexo devem realizar testes de HIV e Sífilis a cada 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pessoas de até 30 anos e com vida sexual ativa devem realizar testes de HIV e Sífilis anualmente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pessoas privadas de liberdade com vida sexual ativa devem realizar testes de Hepatite B, C e Sífilis bianualmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Travestis e transexuais devem realizar testes de HIV, Sífilis, Chlamydia e Gonococo anualmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pessoas que fazem uso abusivo de álcool e drogas devem fazer teste de HIV e Sífilis anualmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento das periodicidades de rastreamento para Infecções Sexualmente Transmissíveis (IST) conforme o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) do Ministério da Saúde de 2022. O rastreamento é fundamental para identificar casos assintomáticos em populações com vulnerabilidades específicas.\n\nAlternativa a: Incorreta. Segundo o protocolo, para profissionais do sexo, a recomendação é que a testagem para HIV, sífilis e hepatites virais seja realizada semestralmente (a cada 6 meses), e não a cada 3 meses.\n\nAlternativa b: Correta. O Ministério da Saúde, em 2022, incluiu a recomendação de que pessoas com vida sexual ativa na faixa etária de 15 a 30 anos realizem o rastreamento para HIV e sífilis anualmente. Essa medida visa ampliar o diagnóstico em um grupo etário que apresenta alta taxa de novas infecções.\n\nAlternativa c: Incorreta. Para pessoas privadas de liberdade (PPL), a orientação é que o rastreamento de HIV, sífilis e hepatites seja feito anualmente ou no momento da admissão na unidade prisional. A alternativa utiliza o termo \"bianualmente\", que significa a cada dois anos, o que está em desacordo com a vigilância necessária para esse grupo.\n\nAlternativa d: Incorreta. Travestis e transexuais são considerados populações de maior vulnerabilidade e, por isso, a recomendação é que o rastreamento para HIV, sífilis, clamídia e gonococo seja realizado com periodicidade semestral (a cada 6 meses), e não anual.\n\nAlternativa e: Incorreta. Pessoas que fazem uso abusivo de álcool e outras drogas devem realizar o rastreamento de HIV e sífilis semestralmente (a cada 6 meses), devido aos contextos de maior vulnerabilidade em que podem estar inseridas. A frequência anual citada na alternativa torna o intervalo longo demais para as diretrizes vigentes.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:17.552Z"
+  },
+  {
+    "id": "AJUDA_fb920b37-ea9d-4acd-96b6-a87efa557640",
+    "originalId": "fb920b37-ea9d-4acd-96b6-a87efa557640",
+    "statement": "Homem de 69 anos, portador de fibrilação atrial crônica, apresenta dor abdominal súbita há 8 horas, vômitos e evolução para choque. Ao exame físico, o abdome mostra defesa generalizada e sinais de peritonite. Exames revelam lactato de 5,9 mmol/L. Qual é a conduta mais adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar anticoagulação plena e analgesia, aguardando realização de angiotomografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar trombólise seletiva após estabilização hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar laparotomia imediata com trombectomia e ressecção do segmento necrótico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Instituir antibioticoterapia e observação clínica por 12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Optar por abordagem endovascular primária sem exploração cirúrgica do intestino",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um quadro clássico de Isquemia Mesentérica Aguda, provavelmente de origem embólica devido ao antecedente de fibrilação atrial crônica. A dor abdominal súbita, desproporcional ao exame físico inicial, que evolui para sinais de irritação peritoneal (defesa generalizada), choque e acidose lática (lactato de 5,9 mmol/L), indica que já houve sofrimento de alça com necrose e provável perfuração intestinal.\n\nNeste estágio de peritonite e instabilidade hemodinâmica, a conduta deve ser imediata e cirúrgica.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Embora a anticoagulação e a angiotomografia façam parte do manejo da isquemia mesentérica em fases iniciais ou em pacientes estáveis, o quadro atual é de abdome agudo perfurativo/vascular com sinais de peritonite. Aguardar exames de imagem em um paciente com indicação clara de laparotomia atrasa o tratamento definitivo e aumenta a mortalidade.\n\nAlternativa b) Incorreta. A trombólise seletiva é uma opção em casos selecionados de embolia arterial mesentérica sem sinais de necrose intestinal. A presença de peritonite e choque é uma contraindicação absoluta ao procedimento, pois a necrose intestinal exige ressecção cirúrgica. Além disso, a estabilização hemodinâmica plena pode não ser alcançada sem a resolução do foco séptico/isquêmico.\n\nAlternativa c) Correta. A laparotomia imediata é a conduta de escolha. O objetivo é duplo: realizar a revascularização do território isquemiado (através de embolectomia ou trombectomia) e ressecar os segmentos intestinais que já apresentam necrose irreversível. A presença de peritonite confirma que já há dano transmural ao intestino, tornando a cirurgia mandatória.\n\nAlternativa d) Incorreta. A observação clínica por 12 horas em um paciente com suspeita de necrose intestinal e choque é fatal. A antibioticoterapia deve ser iniciada como suporte, mas jamais como conduta isolada ou protelatória para a cirurgia.\n\nAlternativa e) Incorreta. A abordagem endovascular isolada (como angioplastia ou stent) não permite a avaliação da viabilidade das alças intestinais. Havendo sinais físicos de peritonite, é obrigatória a exploração cirúrgica direta para remover tecidos mortos, que causam a liberação de toxinas e mantêm o estado de choque.\n\nGABARITO: Letra (c).",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Abdome Agudo Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:17.553Z"
+  },
+  {
+    "id": "AJUDA_fb94e852-648f-4a04-b084-6e0ac4cd9644",
+    "originalId": "fb94e852-648f-4a04-b084-6e0ac4cd9644",
+    "statement": "O maior fator de risco para câncer de mama é o gênero feminino. Assinale a alternativa CORRETA que apresenta outros fatores de risco para o câncer de mama.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histórico familiar, ciclos ovulatórios e terapia de reposição hormonal com progestagênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumento da densidade mamográfica, consumo de álcool e aumento do índice de massa corporal (IMC).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Idade avançada, idade do primeiro parto antes dos 28 anos e história familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doença mamária proliferativa benigna, história de câncer primário de ovário e menarca tardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender os fatores de risco para o câncer de mama, é fundamental separar os fatores biológicos/endócrinos, genéticos e os relacionados ao estilo de vida.\n\nAlternativa a: Incorreta. O histórico familiar e a terapia de reposição hormonal (especialmente a combinada, com estrogênio e progestagênio) são, de fato, fatores de risco conhecidos. No entanto, o termo ciclos ovulatórios é genérico e não constitui, por si só, um fator de risco. O que aumenta o risco é o tempo de exposição a esses ciclos (exposição estrogênica), como ocorre em mulheres com vida reprodutiva muito longa.\n\nAlternativa b: Correta. A densidade mamográfica elevada indica uma maior proporção de tecido glandular e estroma em relação ao tecido gorduroso, o que é um fator de risco independente e significativo. O consumo de álcool, mesmo em quantidades moderadas, está associado ao aumento do risco. O aumento do índice de massa corporal (IMC), caracterizando sobrepeso e obesidade, é um fator de risco crucial, especialmente no período da pós-menopausa, devido à produção periférica de estrogênio no tecido adiposo por meio da enzima aromatase.\n\nAlternativa c: Incorreta. A idade avançada (principalmente acima dos 50 anos) e o histórico familiar são fatores de risco importantes. Contudo, a idade do primeiro parto antes dos 28 anos é considerada um fator protetor. O risco de câncer de mama aumenta em mulheres nulíparas (que nunca pariram) ou naquelas que tiveram a primeira gestação a termo após os 30 anos de idade.\n\nAlternativa d: Incorreta. As doenças mamárias proliferativas benignas (como a hiperplasia ductal atípica) e a história de câncer primário de ovário (que pode sugerir mutações genéticas hereditárias, como nos genes BRCA1 e BRCA2) são fatores de risco. Entretanto, a alternativa está incorreta porque a menarca tardia é um fator protetor. O fator de risco é a menarca precoce (antes dos 12 anos), pois antecipa o início da exposição do tecido mamário aos hormônios ovarianos.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:17.553Z"
+  },
+  {
+    "id": "AJUDA_fb98acdf-6c4d-414e-8733-63deba4a078d",
+    "originalId": "fb98acdf-6c4d-414e-8733-63deba4a078d",
+    "statement": "Homem de 74 anos, diabético e hipertenso, chega após 48 horas de febre alta, calafrios, prostração intensa e redução acentuada da diurese, após dois dias de mal-estar progressivo em casa. Na admissão: PA 82/48 mmHg mesmo após 1,5 L de cristaloide, FC 128 bpm, lactato 6,1 mmol/L, diurese 0,3 mL/kg/h, creatinina 2,1 mg/dL (prévia 1,0). Temperatura 38,9 C, extremidades frias, SatO₂ 90% em 4 L/min. Hemoculturas já colhidas, e urina turva sugere foco urinário. Qual é o próximo passo imediato?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar somente mais volume até normalização da pressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar norepinefrina imediatamente para atingir PAM ≥ 65 mmHg e estabilizar perfusão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Começar dopamina pela menor taxa de arritmia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aguardar antibioticoterapia antes de vasopressor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Transferir para enfermaria após estabilização inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve um paciente em choque séptico. De acordo com a definição do Sepsis-3, o choque séptico é identificado pela necessidade de vasopressores para manter uma pressão arterial média (PAM) maior ou igual a 65 mmHg e um lactato sérico maior que 2 mmol/L, após ressuscitação volêmica adequada. O paciente já recebeu 1,5 L de cristaloides e mantém hipotensão (PAM de aproximadamente 59 mmHg), lactato elevado (6,1) e sinais de má perfusão (extremidades frias e oligúria).\n\nAnálise das alternativas:\n\na) Incorreta. Embora a ressuscitação volêmica seja a conduta inicial, o paciente já recebeu um volume considerável (1,5 L) e permanece hipotenso, com sinais de congestão ou risco de sobrecarga hídrica se for administrado volume indefinidamente. A persistência da hipotensão após a carga inicial de fluidos caracteriza o estado de choque, exigindo suporte vasopressor imediato para garantir a perfusão orgânica.\n\nb) Correta. A norepinefrina é o vasopressor de primeira escolha no choque séptico. O objetivo imediato é restaurar a PAM para pelo menos 65 mmHg, visando garantir a pressão de perfusão crítica para órgãos vitais, como rins e cérebro, além de reverter a acidose lática.\n\nc) Incorreta. A dopamina não é mais recomendada como droga de primeira linha no choque séptico. Estudos demonstraram que, em comparação com a norepinefrina, a dopamina está associada a uma maior incidência de eventos adversos, especialmente arritmias (taquicardia, fibrilação atrial), além de maior mortalidade em alguns subgrupos.\n\nd) Incorreta. A antibioticoterapia deve ser iniciada o mais rápido possível (idealmente na primeira hora), mas não se deve \"aguardar\" o antibiótico para iniciar o vasopressor. Em um paciente com instabilidade hemodinâmica grave, as medidas de suporte circulatório e o tratamento da causa-base (infecção) devem ocorrer de forma simultânea.\n\ne) Incorreta. Um paciente em choque séptico, necessitando de drogas vasoativas, monitorização invasiva e apresentando disfunção de múltiplos órgãos (renal, respiratória, hemodinâmica), tem indicação absoluta de internação em Unidade de Terapia Intensiva (UTI), e não em enfermaria.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "ITU - Infecção do Trato Urinário",
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Sepse",
+      "Ventilação Mecânica",
+      "Choque",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": 13.36223551459257,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:17.553Z"
+  },
+  {
+    "id": "AJUDA_fba6a82b-49b1-4111-a9d5-c192f3e4fde0",
+    "originalId": "fba6a82b-49b1-4111-a9d5-c192f3e4fde0",
+    "statement": "Paciente, 20 anos de idade, G1P1N, sem comorbidades, procurou o ambulatório de ginecologia referindo estar 6 meses sem menstruar. Faz parte da propedêutica inicial:",
+    "options": [
+      {
+        "id": "A",
+        "text": "BHCG, RNM de hipófise e ultrassonografia transvaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "BHCG, ultrassonografia transvaginal e estrogênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "BHCG, TSH e prolactina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "TSH, estrogênio e RNM de hipófise.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo inicial da amenorreia secundária. Define-se amenorreia secundária como a ausência de menstruação por 3 meses em mulheres com ciclos previamente regulares ou por 6 meses em mulheres com ciclos irregulares. No caso clínico, a paciente de 20 anos está há 6 meses sem menstruar, o que exige uma investigação sistematizada.\n\nA propedêutica inicial deve sempre começar pela exclusão das causas mais frequentes e fisiológicas antes de avançar para exames de imagem complexos ou testes dinâmicos.\n\nAlternativa A: Incorreta. Embora o Beta-HCG seja o primeiro passo, a Ressonância Nuclear Magnética (RNM) de hipófise é um exame de alto custo e complexidade, reservado para casos onde já se diagnosticou uma hiperprolactinemia importante ou quando há suspeita clínica de tumores hipofisários. Não faz parte da propedêutica inicial básica. A ultrassonografia transvaginal pode auxiliar, mas não substitui a triagem hormonal inicial.\n\nAlternativa B: Incorreta. O Beta-HCG é fundamental, mas a dosagem isolada de estrogênio não fornece informações diagnósticas precisas no início do quadro, pois seus níveis variam conforme a fase do ciclo (que no caso está ausente) e não indicam a causa base da amenorreia.\n\nAlternativa C: Correta. Esta é a conduta preconizada pelos principais protocolos nacionais e internacionais. A triagem inicial da amenorreia secundária deve obrigatoriamente incluir: \n1. Beta-HCG: Para excluir gravidez, que é a causa mais comum de amenorreia em mulheres em idade fértil.\n2. TSH: Para avaliar disfunções tireoidianas (tanto o hipotireoidismo quanto o hipertireoidismo podem causar alterações menstruais).\n3. Prolactina: Para diagnosticar hiperprolactinemia, que interfere no eixo hipotálamo-hipófise-gônada, impedindo a ovulação.\n\nAlternativa D: Incorreta. Não inclui o Beta-HCG, que é o exame mais importante em qualquer mulher em idade fértil com atraso menstrual. Além disso, inclui a RNM de hipófise e a dosagem de estrogênio, que não são exames de primeira linha.\n\nEm resumo, diante de uma paciente com amenorreia secundária, o primeiro passo laboratorial é o \"tripé\": afastar gestação, avaliar a tireoide e dosar a prolactina. Caso esses exames venham normais, o próximo passo habitual seria o teste do progestagênio.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:17.553Z"
+  }
+]

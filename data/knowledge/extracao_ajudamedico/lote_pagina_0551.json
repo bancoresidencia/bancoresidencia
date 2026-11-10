@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_9a481eaa-140d-400d-9fe5-c258dcfd2658",
+    "originalId": "9a481eaa-140d-400d-9fe5-c258dcfd2658",
+    "statement": "Você atende na Unidade de Pronto Atendimento uma paciente primípara de 40 anos, ela está no 15º dia pós parto e queixa-se de sangramento vaginal com odor fétido, febre não aferida e mal estar geral. Está em amamentação exclusiva e seu pré natal não teve intercorrências. No parto, teve rotura prematura de membranas e ficou 18 horas em trabalho de parto. Ela não tem doenças e não faz uso de medicações. Ao exame físico apresenta hipocorada ++/+++, T=39ºC, FC=100bpm, PA = 100X70mmHg. Mamas ingurgitadas, pele sem hiperemia, expressão láctea. Abdome - doloroso à palpação com útero amolecido e palpado na altura da cicatriz umbilical, lóquios serossanguinolento e com odor fétido, Toque com útero doloroso à mobilização. Com base no diagnóstico clínico, qual o tratamento é mais adequado para a paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metronidazol 500mg IV 12/12hs + Clindamicina 900mg 8/8hs.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Azitromicina 500mg via oral dose única e Metronidazol 250mg via oral 12/12hs.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cefalexina 500mg via oral 6/6hs + Metronidazol 250mg 12/12hs.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Clindamicina 600mg 8/8hs e Gentamicina 3,5 a 5mg/kg a cada 24hs.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Histerectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "DIAGNÓSTICO\nO quadro clínico descrito é clássico de endometrite puerperal, a principal causa de infecção puerperal. A tríade diagnóstica está presente: febre, útero doloroso/amolecido (subinvolução uterina) e lóquios fétidos. Os fatores de risco citados corroboram o diagnóstico: longo tempo de trabalho de parto (18 horas) e rotura prematura de membranas. O fato de a paciente estar no 15º dia ainda se enquadra no período puerperal (que vai até o 42º dia).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O metronidazol e a clindamicina possuem espectros de ação muito semelhantes, focando principalmente em bactérias anaeróbias. Esse esquema peca pela falta de cobertura adequada contra bacilos Gram-negativos (como a *E. coli*), que são agentes frequentes na infecção puerperal.\n\nAlternativa b) Incorreta. O tratamento da endometrite puerperal com sinais sistêmicos (febre de 39 °C, taquicardia) deve ser realizado por via intravenosa e em ambiente hospitalar. A azitromicina oral e o metronidazol oral não são o esquema de escolha para quadros agudos de infecção pós-parto.\n\nAlternativa c) Incorreta. Assim como a alternativa anterior, a via oral é inadequada para o manejo inicial de uma paciente com febre alta e mal-estar geral no pós-parto. Além disso, a associação de cefalexina com metronidazol não é o padrão-ouro recomendado pelos protocolos nacionais e internacionais.\n\nAlternativa d) Correta. O esquema composto por clindamicina associada a um aminoglicosídeo (gentamicina) é considerado o padrão-ouro (*gold standard*) para o tratamento da endometrite. A clindamicina oferece excelente cobertura para Gram-positivos e anaeróbios, enquanto a gentamicina cobre os Gram-negativos. A dose de 3,5 a 5 mg/kg de gentamicina em dose única diária é segura e eficaz. O tratamento deve ser mantido por via intravenosa até que a paciente esteja afebril e assintomática por 24 a 48 horas.\n\nAlternativa e) Incorreta. A histerectomia é um procedimento de exceção na infecção puerperal. É reservada para casos graves que não respondem ao tratamento clínico, presença de abscesso miometrial, gangrena gasosa do útero ou quando há choque séptico refratário. Não é a conduta inicial para uma paciente estável.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:57.061Z"
+  },
+  {
+    "id": "AJUDA_9a4dcaa3-cf49-4261-bc4c-7e7142993c79",
+    "originalId": "9a4dcaa3-cf49-4261-bc4c-7e7142993c79",
+    "statement": "De acordo com os critérios clínicos de elegibilidade para métodos contraceptivos segundo a Organização Mundial de Saúde (OMS), é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Categoria 1: O método pode ser usado sem restrições.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Categoria 2: O método é contraindicado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Categoria 3: O método pode ser usado com restrições, desde que as vantagens superem os riscos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Categoria 4: O método pode ser utilizado, no entanto, deve ser a última escolha disponível.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Organização Mundial da Saúde (OMS) estabelece os Critérios Médicos de Elegibilidade para o uso de métodos contraceptivos, visando garantir a segurança da paciente baseada em suas condições clínicas. Essa classificação é dividida em quatro categorias:\n\nAlternativa a) Correta. A Categoria 1 engloba situações em que não há restrição ao uso do método anticoncepcional. O método pode ser utilizado de forma livre, pois não representa riscos à saúde da paciente naquela condição específica.\n\nAlternativa b) Incorreta. Na Categoria 2, as vantagens de usar o método geralmente superam os riscos teóricos ou comprovados. O método pode ser usado, mas pode exigir um acompanhamento mais cuidadoso. O que é contraindicado (risco inaceitável) é a Categoria 4.\n\nAlternativa c) Incorreta. A descrição apresentada inverte o conceito da Categoria 3. Nela, os riscos teóricos ou comprovados geralmente superam as vantagens do uso do método. O uso não é recomendado, a menos que métodos mais adequados não estejam disponíveis ou não sejam aceitos pela paciente. É necessário um julgamento clínico rigoroso e acompanhamento cauteloso.\n\nAlternativa d) Incorreta. A Categoria 4 representa uma contraindicação absoluta. Nessa situação, o uso do método anticoncepcional apresenta um risco inaceitável à saúde da paciente. Portanto, o método não deve ser utilizado em hipótese alguma, e não apenas ser \"a última escolha\".\n\nResumo das Categorias da OMS:\nCategoria 1: Uso sem restrições (pode usar).\nCategoria 2: Vantagens superam riscos (pode usar com cautela).\nCategoria 3: Riscos superam vantagens (uso geralmente não recomendado).\nCategoria 4: Risco inaceitável (contraindicado).",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:57.061Z"
+  },
+  {
+    "id": "AJUDA_9a5a196d-9f87-428c-a472-3d523eb0f6eb",
+    "originalId": "9a5a196d-9f87-428c-a472-3d523eb0f6eb",
+    "statement": "Assinale a assertiva correta sobre metástases ósseas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metástases ósseas do câncer de próstata geralmente apresentam um padrão osteoblástico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Fraturas são raras em ossos longos acometidos por lesões metastáticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As metástases ósseas localizam-se preferencialmente no esqueleto apendicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A radioterapia é inapropriada para o manejo da dor em pacientes com metástases ósseas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a) Correta. O adenocarcinoma de próstata é o tumor que mais classicamente se associa a metástases ósseas de padrão osteoblástico (ou esclerótico). Nessas lesões, as células tumorais secretam fatores que estimulam a atividade dos osteoblastos, resultando em uma deposição densa e desorganizada de matriz óssea. Nos exames de imagem, como a radiografia ou tomografia, essas lesões aparecem como áreas mais brancas ou radiopacas.\n\nAlternativa b) Incorreta. Fraturas patológicas são complicações frequentes e graves em pacientes com metástases ósseas. A infiltração neoplásica compromete a integridade estrutural e a resistência mecânica do osso, especialmente nos ossos longos que suportam carga (como o fêmur). O risco de fratura é uma preocupação constante no planejamento terapêutico ortopédico.\n\nAlternativa c) Incorreta. As metástases ósseas localizam-se preferencialmente no esqueleto axial, que compreende a coluna vertebral (local mais comum), pelve, costelas e crânio. O esqueleto apendicular (membros) é acometido com menor frequência. Essa predileção pelo esqueleto axial ocorre devido à rica vascularização da medula óssea vermelha nessas regiões e à comunicação com o plexo venoso de Batson.\n\nAlternativa d) Incorreta. A radioterapia é um dos pilares do tratamento paliativo de metástases ósseas e é altamente eficaz no manejo da dor. Ela promove a redução da massa tumoral e dos mediadores inflamatórios locais, proporcionando alívio da dor em cerca de 70% a 80% dos casos, além de auxiliar na remineralização e estabilização do osso acometido.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Oncologia Ortopédica e Osteomielite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:57.061Z"
+  },
+  {
+    "id": "AJUDA_9a60f4b8-f8fd-45c5-a3d2-846f5948d061",
+    "originalId": "9a60f4b8-f8fd-45c5-a3d2-846f5948d061",
+    "statement": "Paciente, sexo masculino, 50 anos, assintomático, sem histórico familiar de câncer colorretal, avaliação preventiva em serviço com acesso a rastreamento organizado de câncer colorretal. A recomendação de rastreamento mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colonoscopia a cada 5 anos, independentemente dos achados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pesquisa de sangue oculto nas fezes anual ou colonoscopia a cada 10 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tomografia computadorizada de abdome total a cada 3 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rastreamento não indicado, pois o paciente é assintomático e não tem histórico familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve um paciente de 50 anos que se enquadra na categoria de risco habitual para o câncer colorretal (CCR), pois é assintomático e não apresenta fatores de risco adicionais, como histórico familiar ou doenças inflamatórias intestinais. O rastreamento do CCR é fundamental nessa faixa etária para a detecção de lesões precursoras (pólipos) e tumores em estágio inicial.\n\nAlternativa a: Incorreta. O intervalo de 5 anos para a realização da colonoscopia não é a recomendação padrão para pacientes de risco habitual. Quando a colonoscopia inicial é normal e não há fatores de risco, o intervalo preconizado é de 10 anos. O intervalo de 5 anos pode ser aplicado em situações específicas, como após a retirada de determinados tipos de pólipos ou em exames de imagem alternativos, como a colonografia por tomografia.\n\nAlternativa b: Correta. Esta alternativa descreve as duas estratégias principais e mais aceitas para o rastreamento organizado do câncer colorretal em adultos de risco habitual. A pesquisa de sangue oculto nas fezes (preferencialmente pelo método imunoquímico – FIT) deve ser realizada anualmente devido à sua menor sensibilidade para lesões únicas, exigindo repetição frequente. Já a colonoscopia, por ser um método invasivo de alta sensibilidade e que permite a visualização direta e biópsia, é recomendada a cada 10 anos quando o exame é normal.\n\nAlternativa c: Incorreta. A tomografia computadorizada de abdome total convencional não é um método de rastreamento para câncer colorretal, pois não possui resolução adequada para identificar pólipos pequenos ou lesões precoces na mucosa do cólon. Existe a colonografia por tomografia computadorizada (colonoscopia virtual), mas o intervalo recomendado para ela seria de 5 anos, e não 3, além de exigir preparo intestinal específico.\n\nAlternativa d: Incorreta. O rastreamento é indicado exatamente para indivíduos assintomáticos, visando à prevenção primária e secundária. A ausência de histórico familiar não exclui a necessidade de exames, pois a maioria dos casos de câncer colorretal é esporádica. Atualmente, as principais diretrizes recomendam iniciar o rastreamento aos 50 anos (ou 45 anos em recomendações mais recentes de algumas sociedades) para toda a população de risco habitual.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Medicina de Família e Comunidade",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:57.061Z"
+  },
+  {
+    "id": "AJUDA_9a6328e7-a335-43d4-b2a3-63f5d418d768",
+    "originalId": "9a6328e7-a335-43d4-b2a3-63f5d418d768",
+    "statement": "Um homem de 28 anos é trazido ao pronto-socorro após ferimento penetrante por arma branca na face medial da coxa direita durante assalto. Ele chega carregado por terceiros, sem imobilização, visivelmente pálido e agitado. Na admissão, apresenta com pele fria e pegajosa, FC 148 bpm, P.A. não mensurável no braço direito; 70×40 mmHg no braço esquerdo, tempo de enchimento capilar > 4 segundos, FR 32 irpm e SpO₂ 90% em ar ambiente. O ferimento apresenta sangramento pulsátil ativo, encharcando roupas e macas. O paciente está consciente, porém confuso e sonolento, repetindo que “não consegue respirar direito”. A equipe de plantão prepara material para intubação orotraqueal imediata, considerando a taquipneia e a instabilidade hemodinâmica. Sobre o caso descrito, qual deve ser a próxima conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proceder à intubação orotraqueal imediata para estabilização da via aérea e controle da ventilação, antes de manejar o sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar acesso venoso calibroso bilateral, iniciar infusão rápida de cristaloides aquecidos e só então avaliar a necessidade de torniquete ou hemostasia local.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aplicar torniquete proximal de alta pressão no membro afetado para controle imediato da hemorragia, antes de qualquer intervenção de via aérea ou ventilação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Proceder imediatamente a clampagem cirúrgica exploratória do vaso femoral em sala de trauma, sem intervenções prévias no local do PS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta um quadro clássico de choque hipovolêmico classe IV decorrente de uma hemorragia externa maciça (sangramento pulsátil em coxa direita). Pelas diretrizes mais recentes do PHTLS e as atualizações do ATLS, a prioridade absoluta em traumas com sangramento arterial visível em extremidades é o controle da hemorragia exsanguinante, seguindo o protocolo X-ABCDE. O \"X\" (exsanguinação) precede o \"A\" (vias aéreas), pois o paciente pode evoluir para óbito por choque hemorrágico antes mesmo de uma intervenção respiratória ser concluída.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA aplicação do torniquete proximal de alta pressão é a conduta indicada para o controle imediato de hemorragias arteriais em membros quando a compressão direta não é suficiente ou como medida inicial rápida no \"X\" do trauma. No caso descrito, o sangramento é pulsátil e já causou instabilidade hemodinâmica grave (hipotensão e taquicardia severa). Interromper a perda sanguínea é o passo crítico para permitir que o paciente sobreviva às etapas seguintes de reanimação.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): A intubação orotraqueal imediata em um paciente com choque hipovolêmico extremo é perigosa. A pressão positiva da ventilação mecânica diminui o retorno venoso, o que pode levar à parada cardiorrespiratória imediata em um paciente já depletado. Além disso, a confusão mental e a queixa de \"não conseguir respirar\" são sintomas de hipoperfusão cerebral e acidose metabólica (fome de ar), que melhoram com o controle do sangramento e reposição volêmica, não necessariamente com ventilação.\n\nAlternativa (b): A reposição de fluidos (etapa C) é fundamental, mas não deve ser feita antes do controle da fonte do sangramento (etapa X). Tentar encher o compartimento vascular enquanto existe uma artéria aberta é ineficaz e pode piorar o prognóstico ao aumentar a pressão de perfusão e diluir fatores de coagulação antes da hemostasia.\n\nAlternativa (d): Embora o paciente precise de uma intervenção cirúrgica definitiva, o controle temporário da hemorragia deve ser feito imediatamente na admissão. Levar o paciente para a sala de trauma ou centro cirúrgico sem aplicar um torniquete ou compressão eficaz significaria permitir que ele continuasse sangrando durante o transporte e preparo, o que seria fatal. O controle deve ser feito onde o paciente está, no momento da identificação do sangramento.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Trauma",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:57.061Z"
+  },
+  {
+    "id": "AJUDA_9a64f94a-1616-478d-8c42-a33946f76b3b",
+    "originalId": "9a64f94a-1616-478d-8c42-a33946f76b3b",
+    "statement": "Paciente, sexo masculino, 63 anos de idade, procura o ambulatório com queixa de empachamento pós-prandial, perda ponderal de 10,0 kg nos últimos 4 meses e vômitos ocasionais. Nega comorbidades prévias. Ao exame físico, regular estado geral, descorado +2/+4, emagrecido; auscultas respiratória e cardíaca sem alterações; abdome plano, flácido, dor leve à palpação profunda do epigástrio, sem sinais de irritação peritoneal, massas não palpáveis. Foi realizado endoscopia digestiva alta que mostrou lesão ulcerada no antro gástrico, medindo 4,0 cm; feito biópsia que confirmou adenocarcinoma gástrico intestinal de Lauren. Realizado tomografia computadorizada de abdome e pelve que evidenciou espessamento parietal antral, linfonodos perigástricos aumentados e ausência de metástases à distância.\n\nIndique a alternativa correta em relação à avaliação pré-operatória e ao estadiamento desse paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A endoscopia digestiva alta com biópsia é suficiente para definir o estadiamento clínico inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O PET-CT substitui a tomografia de abdome no estadiamento inicial de rotina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A ultrassonografia endoscópica é útil para determinar profundidade da invasão (T) e linfonodos regionais (N).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O estadiamento laparoscópico não tem papel na avaliação pré-operatória de tumores gástricos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O estadiamento do adenocarcinoma gástrico é fundamental para determinar se o paciente é candidato a ressecção endoscópica, cirurgia direta, quimioterapia perioperatória/neoadjuvante ou cuidados paliativos.\n\nAlternativa a: Incorreta. A endoscopia digestiva alta (EDA) com biópsia é o exame de escolha para o diagnóstico histopatológico e localização do tumor, mas é insuficiente para o estadiamento TNM clínico. A EDA convencional não permite mensurar a profundidade da invasão na parede gástrica, o acometimento de linfonodos ou a presença de metástases a distância.\n\nAlternativa b: Incorreta. A tomografia computadorizada (TC) contrastada de tórax, abdome e pelve é o exame padrão para o estadiamento inicial. O PET-CT não substitui a TC de rotina, pois apresenta menor sensibilidade para lesões pequenas e menor captação em certos subtipos histológicos, como carcinomas difusos e mucinosos.\n\nAlternativa c: Correta. A ultrassonografia endoscópica (ecoendoscopia) é o melhor método para avaliar a profundidade da invasão tumoral nas camadas da parede gástrica (estadiamento T) e a presença de linfonodos perigástricos acometidos (estadiamento N), auxiliando principalmente na diferenciação entre lesões precoces e avançadas.\n\nAlternativa d: Incorreta. A laparoscopia de estadiamento associada ao lavado peritoneal tem papel bem estabelecido, especialmente em tumores T3/T4 ou com linfonodos suspeitos na TC. Ela detecta micrometástases e carcinomatose peritoneal que passam despercebidas nos exames de imagem, evitando laparotomias desnecessárias.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Perioperatório",
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:57.061Z"
+  },
+  {
+    "id": "AJUDA_9a6ce5e9-d981-472d-bf83-1a077c787b19",
+    "originalId": "9a6ce5e9-d981-472d-bf83-1a077c787b19",
+    "statement": "Paciente de 60 anos de idade chega ao consultório com queixa de bola na vagina há um ano e perda involuntária de urina aos esforços, além de referir frouxidão vaginal durante ato sexual. DUM há 10 anos, G4 P4, partos vaginais. No momento do exame, foi evidenciado o seguinte cenário, segundo o POP-q.\n\nAssinale a alternativa com o diagnóstico e a conduta CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prolapso genital E IV, rotura perineal. Realizar colpocleise + sling",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "PPP E II, rotura perineal. Realizar colpocleise com sling.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "PPA E I, hipertrofia de colo. Realizar traquelectomia parcial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prolapso apical E II, rotura perineal. Realizar histerectomia vaginal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prolapso apical, IUE mista e rotura perineal. Realizar colpoplastia posterior",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, devemos primeiro interpretar os valores do sistema POP-Q (Pelvic Organ Prolapse Quantification) apresentados na tabela:\n\n1. Análise da Tabela POP-Q:\n- Linha superior (Aa, Ba, C): Aa está em +3 (máximo de prolapso anterior em repouso), Ba está em +10 e C (colo/ápice) está em +11.\n- Linha média (gh, pb, TVL): gh (hiato genital) é 10, pb (corpo perineal) é 3 e o TVL (comprimento vaginal total) é 11.\n- Linha inferior (Ap, Bp, D): Ap está em +3 e Bp (parede posterior) está em +10. O ponto D está ausente ou não pontuado.\n\n2. Definição do Estágio:\nO estadiamento é definido pelo ponto de maior prolapso em relação ao hímen. No POP-Q, o Estágio IV é caracterizado quando a parte mais distal do prolapso se projeta além de (comprimento vaginal total - 2 cm). \nComo o TVL desta paciente é 11 cm, o critério para Estágio IV seria qualquer ponto maior ou igual a +9 cm (11 - 2 = 9). Como os pontos Ba, C e Bp estão em +10 e +11, temos uma eversão vaginal completa, o que confirma o Estágio IV. O hiato genital (gh) de 10 cm é muito alargado, corroborando a queixa de frouxidão e a rotura perineal.\n\nAnálise das alternativas:\n\na) Correta. O diagnóstico de prolapso genital Estágio IV está correto, pois os pontos de prolapso atingem a medida do comprimento vaginal total (TVL). A conduta de colpocleise é uma cirurgia obliterativa indicada para prolapsos graves, e o sling trata a perda involuntária de urina aos esforços (incontinência urinária de esforço) mencionada. Embora a paciente mencione atividade sexual, esta é a única alternativa com o estadiamento técnico correto segundo a tabela.\n\nb) Incorreta. O erro está no estadiamento. O Estágio II ocorre quando o ponto mais distal está entre -1 cm e +1 cm em relação ao hímen. Os valores +10 e +11 indicam um prolapso muito mais avançado.\n\nc) Incorreta. O Estágio I ocorre quando o ponto de maior prolapso está a mais de 1 cm acima do hímen (valor menor que -1). A tabela mostra valores positivos altos, indicando que o órgão está totalmente para fora.\n\nd) Incorreta. Assim como na alternativa B, o estadiamento como Estágio II está incorreto perante os dados da tabela POP-Q.\n\ne) Incorreta. Esta alternativa não define o estágio do prolapso e sugere apenas a colpoplastia posterior. Para um prolapso de Estágio IV (eversão total), uma cirurgia apenas na parede posterior seria insuficiente para tratar o componente apical (ponto C) e anterior. Além disso, a queixa da paciente é de esforço, e não necessariamente de incontinência urinária mista.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Incontinência Urinária",
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/03d929e7a6db8248ef462f75823e09ca4060b8c09abb21b1e40d63c80d56fad2.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_9a6ce5e9-d981-472d-bf83-1a077c787b19_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:57.486Z"
+  },
+  {
+    "id": "AJUDA_9a73c8ba-6985-463a-af1d-90e18db60fa9",
+    "originalId": "9a73c8ba-6985-463a-af1d-90e18db60fa9",
+    "statement": "O chiado no peito é a expressão clínica de uma grande variedade de doenças das vias aéreas. A asma é apenas uma entre as várias causas de sibilância na infância. Os critérios para avaliação do estado de controle da asma são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sintomas diurnos mais de uma vez por semana e limitação de atividades",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "limitação de atividades e sintomas diurnos esporádicos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "limitação de atividades e febre",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "despertar noturno e febre",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A avaliação do controle da asma em crianças é fundamental para o manejo adequado da doença e baseia-se em diretrizes internacionais, como o GINA (Global Initiative for Asthma), e nos consensos brasileiros de pneumologia e pediatria. O objetivo é verificar se a terapêutica atual é suficiente ou se precisa de ajustes. Os critérios de avaliação focam no quadro clínico das últimas quatro semanas.\n\nOs quatro parâmetros clínicos principais utilizados para avaliar o controle da asma são:\n1. Presença de sintomas diurnos.\n2. Limitação de atividades físicas ou cotidianas.\n3. Necessidade de uso de medicação de resgate (aliviador).\n4. Despertar noturno ou tosse noturna decorrente da asma.\n\nAlternativa (a): Está correta. A alternativa elenca dois dos quatro pilares fundamentais. A presença de sintomas diurnos com frequência superior a duas vezes por semana (ou mais de uma vez por semana em certas adaptações de protocolos) e qualquer grau de limitação de atividades indicam que a asma não está totalmente controlada, exigindo revisão do tratamento.\n\nAlternativa (b): Está incorreta. Embora a limitação de atividades seja um critério de descontrole, sintomas diurnos esporádicos (considerados como duas vezes ou menos por semana) são compatíveis com o quadro de asma controlada. Portanto, a combinação não define critérios de falta de controle de forma tão precisa quanto a alternativa (a).\n\nAlternativa (c): Está incorreta. A febre não é um critério para a avaliação do estado de controle da asma. A asma é uma doença inflamatória crônica não infecciosa. A febre pode estar presente se houver uma infecção respiratória viral ou bacteriana atuando como fator desencadeante de uma crise (exacerbação), mas não faz parte dos parâmetros de monitoramento do controle crônico.\n\nAlternativa (d): Está incorreta. O despertar noturno é, de fato, um critério de asma não controlada e um dos sinais de alerta mais importantes na pediatria. No entanto, a presença da febre invalida a alternativa, pois, como mencionado, ela não é um parâmetro de avaliação de controle da patologia asmática.\n\nEm resumo, para classificar a asma como controlada, parcialmente controlada ou não controlada, o examinador busca identificar a frequência dos sintomas e o impacto da doença na rotina da criança, excluindo sinais de infecção aguda como a febre.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:57.486Z"
+  },
+  {
+    "id": "AJUDA_9a8f262a-af9d-42f1-b5ef-66a3b4a79770",
+    "originalId": "9a8f262a-af9d-42f1-b5ef-66a3b4a79770",
+    "statement": "Uma paciente de 65 anos de idade, hipertensa em uso de enalapril 10 mg/dia (para hipertensão arterial), relatou sangramento genital durante três dias em pequena quantidade, sem cólicas. Ela negou qualquer outra sintomatologia. O exame ginecológico foi normal. Com base nessa situação hipotética, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a causa mais provável do sangramento é atrofia endometrial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a causa mais provável é o uso do enalapril. Deve-se suspender a medicação e manter a observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a causa mais provável, nessa faixa etária, é o câncer do endométrio. Deve-se investigar e fazer a ablação histeroscópica do endométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "deve-se realizar a ultrassonografia transvaginal. Se a espessura endometrial estiver menor que 10 mm, é considerada normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a histeroscopia ambulatorial será indicada, se a espessura endometrial à ultrassonografia for maior que 15 mm.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo e o diagnóstico diferencial do sangramento uterino anormal na pós-menopausa, um tema recorrente em provas de residência.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Em mulheres na pós-menopausa que apresentam sangramento genital, a causa mais frequente é a atrofia endometrial ou vaginal, decorrente da queda dos níveis de estrogênio. Embora o câncer de endométrio seja a principal preocupação e deva sempre ser excluído, estatisticamente, a atrofia responde pela maioria dos casos.\n\nAlternativa b) Incorreta. O enalapril é um inibidor da enzima conversora de angiotensina (IECA) utilizado para o tratamento da hipertensão arterial e não possui relação causal com sangramento uterino. Além disso, qualquer sangramento na pós-menopausa exige investigação diagnóstica ativa, e não apenas observação.\n\nAlternativa c) Incorreta. Como mencionado, o câncer de endométrio é a causa maligna mais importante, mas não é a mais provável (ocorre em cerca de 10% dos casos de sangramento na pós-menopausa). Além disso, a ablação endometrial não é um método diagnóstico nem o tratamento indicado para o câncer de endométrio; o tratamento padrão para neoplasia endometrial envolve, geralmente, a histerectomia com anexectomia.\n\nAlternativa d) Incorreta. A ultrassonografia transvaginal é, de fato, o exame inicial de escolha para triagem. No entanto, o ponto de corte para considerar a espessura endometrial normal na pós-menopausa (sem uso de terapia de reposição hormonal) é de até 4 ou 5 mm. Um endométrio de 10 mm é considerado espessado e exige, obrigatoriamente, uma investigação diagnóstica histopatológica (biópsia ou histeroscopia).\n\nAlternativa e) Incorreta. A indicação de histeroscopia ou biópsia endometrial ocorre quando a espessura endometrial é superior a 4 ou 5 mm na ultrassonografia de uma paciente com sangramento. Aguardar o endométrio atingir 15 mm para indicar o exame atrasaria o diagnóstico de possíveis lesões precursoras ou malignas.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:57.486Z"
+  },
+  {
+    "id": "AJUDA_9a933c58-d5fe-4779-a2d7-1df512f26544",
+    "originalId": "9a933c58-d5fe-4779-a2d7-1df512f26544",
+    "statement": "A displasia do desenvolvimento do quadril (DDQ) é uma afecção que acompanha a história da medicina e caracteriza-se por englobar todas as variações que afetam a estabilidade coxofemoral em crescimento do bebê. Considerando os fatores epidemiológicos e etiológicos, pode-se considerar um grupo de pacientes com maior risco de desenvolver a DDQ se",
+    "options": [
+      {
+        "id": "A",
+        "text": "posição pélvica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Poligodrâmnio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "gênero masculino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "deformidade dos membros superiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A displasia do desenvolvimento do quadril (DDQ) envolve uma série de alterações que vão desde a frouxidão ligamentar com instabilidade até a luxação completa da articulação coxofemoral. O conhecimento dos fatores de risco é essencial para o diagnóstico precoce, que é determinante para o prognóstico.\n\nAlternativa (a): Correta. A apresentação pélvica é o fator de risco mecânico mais importante para o desenvolvimento da DDQ. A posição pélvica, especialmente com os joelhos estendidos (pélvica agripina), submete a articulação do quadril a forças anormais e limita o espaço para o desenvolvimento adequado do acetábulo. Por esse motivo, qualquer recém-nascido que tenha permanecido em posição pélvica (mesmo que o parto tenha sido cesárea) deve ser submetido a uma triagem rigorosa, muitas vezes incluindo ultrassonografia de rotina, dependendo do protocolo.\n\nAlternativa (b): Incorreta. O fator de risco relacionado ao volume de líquido amniótico é o oligodrâmnio (baixo volume) e não o polidrâmnio. O oligodrâmnio reduz o espaço intrauterino, causando compressão fetal e limitando os movimentos, o que predispõe a deformidades osteomusculares, incluindo a DDQ.\n\nAlternativa (c): Incorreta. A DDQ é significativamente mais comum no gênero feminino, afetando cerca de 6 a 8 meninas para cada menino. Isso ocorre devido à maior sensibilidade do feto feminino aos hormônios maternos, como a relaxina, que aumentam a frouxidão dos ligamentos, facilitando o deslocamento da cabeça femoral.\n\nAlternativa (d): Incorreta. Embora a DDQ esteja associada a outras deformidades por \"empacotamento\" intrauterino, estas ocorrem tipicamente no pescoço (torcicolo congênito) ou nos pés (metatarso aduto). As deformidades isoladas de membros superiores não possuem associação epidemiológica clássica com o aumento de risco para displasia do quadril.\n\nEm resumo, os principais fatores de risco para DDQ são: sexo feminino, apresentação pélvica, histórico familiar positivo, primiparidade (primeiro filho, devido ao útero mais tenso) e condições que restrinjam o espaço uterino, como o oligodrâmnio.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Quadril Pediátrico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:57.486Z"
+  }
+]

@@ -1,0 +1,518 @@
+[
+  {
+    "id": "AJUDA_6ad89cf7-10eb-41fb-a8c1-8cd96f6f315c",
+    "originalId": "6ad89cf7-10eb-41fb-a8c1-8cd96f6f315c",
+    "statement": "A gemelidade tem uma importância fundamental, pois eleva a taxa de morbidade materna e morbidade e mortalidade fetal. A respeito da gestação gemelar, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O melhor período para avaliar a corionicidade é no ultrassom obstétrico inicial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O sinal do lâmbda representa que a gestação é monocoriônica e diamniótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O “sinal do T” representa que a gestação é monocoriônica e monoamniótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gestações gemelares dicoriônicas e diamnióticas são dizigóticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A síndrome da transfusão feto-fetal é uma complicação das gestações gemelares dicoriônicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Correta. A determinação da corionicidade é mais fidedigna no primeiro trimestre de gestação, preferencialmente entre a 11ª e a 14ª semana. Esse é o período ideal porque a morfologia da inserção das membranas na placenta (sinais de lambda ou T) é claramente visível, o que permite definir se há uma ou duas placentas, informação crucial para o acompanhamento pré-natal.\n\nAlternativa b: Incorreta. O sinal do lambda (ou sinal do twin-peak) é característico das gestações dicoriônicas. Ele representa a projeção de tecido placentário entre as duas camadas de córion e as duas de âmnio na base da membrana divisória, indicando que cada feto possui seu próprio córion.\n\nAlternativa c: Incorreta. O sinal do T é característico das gestações monocoriônicas e diamnióticas. Ele ocorre quando a membrana divisória (formada apenas por dois âmnios, sem córion entre eles) se insere na placenta em um ângulo reto, assemelhando-se à letra T. Nas gestações monocoriônicas e monoamnióticas, não existe membrana divisória entre os fetos, logo não há sinal do T.\n\nAlternativa d: Incorreta. Nem toda gestação dicoriônica e diamniótica é obrigatoriamente dizigótica (proveniente de dois óvulos). Se a divisão de um único ovo (monozigótica) ocorrer de forma muito precoce, até o terceiro dia após a fertilização (fase de mórula), a gestação resultará em dois córions e dois âmnios, sendo, portanto, dicoriônica e diamniótica.\n\nAlternativa e: Incorreta. A síndrome da transfusão feto-fetal é uma complicação exclusiva de gestações monocoriônicas. Ela depende da existência de anastomoses vasculares profundas na placenta compartilhada, que geram um desequilíbrio no fluxo sanguíneo entre os fetos. Em gestações dicoriônicas, as placentas são funcionalmente independentes, não havendo comunicação vascular entre as circulações fetais.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Gestação Múltipla",
+      "Ultrassom em Obstetrícia"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:44.539Z"
+  },
+  {
+    "id": "AJUDA_6ad8ed0d-68f4-45d2-9f7e-cfb1683c3994",
+    "originalId": "6ad8ed0d-68f4-45d2-9f7e-cfb1683c3994",
+    "statement": "Recém-nascido com 36 semanas de idade gestacional, peso ao nascer de 2850 gramas, filho de mãe secundigesta, hígida, sem intercorrências na gestação, nasceu de parto normal com boa vitalidade. Com 48 horas de vida, está em alojamento conjunto, em aleitamento moderno exclusivo, com diurese e evacuação presentes e normais. Exame físico: ictérico zona II, sem outras alterações. Qual é a conduta recomendada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar fototerapia e coletar bilirrubinas em 24 horas para avaliar alta hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar alta hospitalar e reavaliação clínica em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar alta hospitalar sem necessidade de reavaliação precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dosar bilirrubinas para avaliar indicação de fototerapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo da icterícia neonatal em um recém-nascido pré-termo tardio (36 semanas de idade gestacional). O ponto fundamental para a resolução é entender que a avaliação visual da icterícia é subjetiva e insuficiente para definir condutas terapêuticas em pacientes com fatores de risco.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Não se deve iniciar fototerapia baseando-se apenas na avaliação visual (Zonas de Kramer), exceto em situações de extrema escassez de recursos ou icterícia nitidamente grave (Zona V) enquanto se aguarda o exame. A fototerapia possui indicações precisas baseadas em curvas de níveis de bilirrubina para a idade cronológica e a idade gestacional. Iniciar o tratamento sem a dosagem prévia levaria a tratamentos desnecessários e ao prolongamento da internação.\n\nAlternativa b) Incorreta. Embora a reavaliação clínica seja necessária para todo recém-nascido, dar alta a um prematuro tardio (36 semanas) com icterícia visível às 48 horas de vida sem uma dosagem objetiva de bilirrubinas é arriscado. Recém-nascidos entre 35 e 37 semanas têm maior risco de desenvolver hiperbilirrubinemia grave e neurotoxicidade do que os bebês a termo, exigindo uma avaliação mais rigorosa antes da alta.\n\nAlternativa c) Incorreta. Todo recém-nascido que recebe alta antes de 72 horas de vida deve ser reavaliado em até 48 horas. No caso de um prematuro tardio com icterícia presente, a alta sem reavaliação precoce contraria todas as diretrizes de segurança neonatal, aumentando o risco de complicações como o kernicterus (encefalopatia bilirrubínica).\n\nAlternativa d) Correta. Esta é a conduta padrão. Segundo as recomendações da Sociedade Brasileira de Pediatria e da Academia Americana de Pediatria, todo recém-nascido com icterícia visível nas primeiras 24-48 horas ou que pertença a grupos de risco (como os prematuros tardios) deve ter a bilirrubina total dosada (seja por coleta sanguínea ou por bilirrubinometria transcutânea). O valor obtido deve ser plotado em gráficos específicos (nomograma de Bhutani ou curvas de indicação de fototerapia) que levam em conta a idade em horas e os fatores de risco do paciente para determinar se ele precisa de tratamento ou se pode ser acompanhado ambulatorialmente.\n\nEm resumo, a icterícia no prematuro tardio exige objetividade. A Zona II de Kramer às 48 horas pode representar níveis de bilirrubina que já atingiram o limiar para fototerapia nesse grupo de idade gestacional, tornando a dosagem laboratorial obrigatória antes de qualquer decisão de alta ou tratamento.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:44.539Z"
+  },
+  {
+    "id": "AJUDA_6ae6bbfc-d58e-4d39-b29c-a8ddc9faaafa",
+    "originalId": "6ae6bbfc-d58e-4d39-b29c-a8ddc9faaafa",
+    "statement": "Maria, 45 anos, vem à consulta relatando dores generalizadas há mais de oito meses, além de sensação de fadiga e sono não reparador. Ela já foi a vários especialistas e realizou múltiplos exames, os quais trouxe à consulta, todos avaliados como normais, incluindo alguns autoanticorpos e provas de atividade inflamatória. Maria chora e expressa preocupação de que os médicos não estão levando suas queixas a sério. Durante o exame físico, percebe-se que Maria tem sensibilidade dolorosa difusa à palpação muscular e articular, mas não se notam sinais inflamatórios articulares. Ao aplicar o método clínico centrado na pessoa, qual deve ser a primeira abordagem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Informar à paciente que, apesar de todos os exames normais, os sintomas indicam claramente uma fibromialgia e iniciar o tratamento com antidepressivos tricíclicos e relaxantes musculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Explorar detalhadamente os sintomas e solicitar novos exames com perfil completo de autoanticorpos para melhor abordar a preocupação de Maria e confirmar o diagnóstico com segurança.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Investigar como Maria está vivenciando esses sintomas, seus medos, expectativas e impacto na sua rotina de vida e, somente então, discutir possíveis estratégias para manejo conjunto dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar a paciente para um especialista em reumatologia, considerando o tempo de duração dos sintomas, o que colabora para a possibilidade de uma condição autoimune não detectada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o Método Clínico Centrado na Pessoa (MCCP), uma ferramenta fundamental na Medicina de Família e Comunidade e na prática médica humanizada. O foco aqui não é apenas o diagnóstico nosológico (a doença em si), mas a experiência de adoecimento da paciente.\n\nAlternativa (a) Incorreta. Embora o quadro clínico de dor difusa, fadiga e sono não reparador, associado a exames laboratoriais normais, seja altamente sugestivo de fibromialgia, a aplicação do Método Clínico Centrado na Pessoa exige que, antes de instituir um tratamento farmacológico (como tricíclicos), o médico valide a experiência da paciente. Nomear a doença e prescrever imediatamente pode ser percebido pela paciente como mais uma tentativa de encerrar o assunto sem compreender seu sofrimento.\n\nAlternativa (b) Incorreta. A solicitação de novos exames laboratoriais, quando os anteriores já são completos e normais, caracteriza uma conduta de medicina defensiva ou um desperdício de recursos. Isso não resolve a preocupação da paciente e pode até reforçar a ideia de que existe uma doença grave \"escondida\" que nenhum exame consegue detectar, aumentando a ansiedade de Maria. O MCCP busca reduzir a dependência de exames em casos em que a clínica e a escuta são soberanas.\n\nAlternativa (c) Correta. Esta alternativa descreve o primeiro componente do MCCP: Explorar a saúde, a doença e a experiência da pessoa com a enfermidade. Para isso, utiliza-se o mnemônico SIFE: Sentimentos (o choro e a angústia de Maria), Ideias (o que ela acha que tem), Função (como a dor limita seu dia a dia) e Expectativas (o que ela espera da consulta). Ao explorar esses pontos, o médico legitima o sofrimento da paciente, estabelece uma relação de confiança e prepara o terreno para um plano de manejo conjunto, que é o terceiro componente do método.\n\nAlternativa (d) Incorreta. Maria já passou por vários especialistas e traz exames normais, o que torna o encaminhamento para a reumatologia uma medida que apenas prolonga o ciclo de fragmentação do cuidado. O médico que a atende no momento tem plenas condições de manejar o quadro, desde que utilize a abordagem centrada na pessoa para entender que o foco não é a \"cura\" de uma inflamação inexistente, mas a melhora da qualidade de vida e o acolhimento do sofrimento psíquico associado.\n\nEm resumo, o gabarito é a letra (c) porque prioriza a dimensão subjetiva do adoecimento, essencial para pacientes com dor crônica que se sentem desacreditados pelo sistema de saúde.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Dolorosas Crônicas",
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:44.539Z"
+  },
+  {
+    "id": "AJUDA_6aed993f-4803-46c1-9767-0274c4ced2dc",
+    "originalId": "6aed993f-4803-46c1-9767-0274c4ced2dc",
+    "statement": "A cirurgia fetal antenatal para correção de espinha bífida (meningomielocele fetal) é considerada atualmente o padrão ouro para tratamento da doença. Sabe-se que ela pode não só dobrar as chances do acometido deambular sem auxílio de aparelhos, como também reduzir a necessidade de colocação de válvula de derivação ventrículo peritoneal para tratamento de hidrocefalia em mais de 50% dos casos, assim como melhorar o prognóstico urológico e intestinal, quando comparada ao tratamento pós-natal neurocirúrgico convencional. Sobre a cirurgia fetal pela técnica SAFER (Skin-over biocellulose for Antenatal FEtoscopic Repair) para correção de meningomielocele, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É contraindicada para pacientes com cicatriz uterina prévia (cesariana ou miomectomia anterior).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve ser realizada obrigatoriamente antes de 25 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É absolutamente segura e não apresenta nenhum risco ao gêmeo não afetado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de técnica antenatal possível de ser realizada em gestações gemelares.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A principal complicação pós-cirúrgica observada é a rotura uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA correção antenatal da meningomielocele (espinha bífida) tem como objetivo proteger a placa neural da toxicidade do líquido amniótico e evitar o trauma mecânico, além de reduzir a herniação do cerebelo (malformação de Arnold-Chiari tipo II). A técnica SAFER (Skin-over biocellulose for Antenatal FEtoscopic Repair) é uma abordagem minimamente invasiva, via fetoscopia, que utiliza uma película de biocelulose para auxiliar no fechamento do defeito.\n\nAlternativa A: Incorreta. A técnica SAFER é realizada por via fetoscópica, utilizando pequenos trocartes para acessar a cavidade uterina. Ao contrário da cirurgia a céu aberto (histerotomia clássica), a fetoscopia não exige uma grande incisão na parede muscular do útero, o que permite sua realização mesmo em pacientes que já possuem cicatrizes uterinas prévias de cesarianas ou miomectomias.\n\nAlternativa B: Incorreta. Embora o estudo MOMS (Management of Myelomeningocele Study) tenha estabelecido o intervalo entre 19 e 25 semanas e 6 dias para a cirurgia a céu aberto, as técnicas fetoscópicas seguem janelas semelhantes, mas o termo \"obrigatoriamente\" é inadequado na prática médica. Alguns protocolos estendem a possibilidade de intervenção até a 27ª ou 28ª semana, dependendo da avaliação individual do binômio mãe-feto e do centro de referência.\n\nAlternativa C: Incorreta. Não existe procedimento cirúrgico fetal \"absolutamente seguro\". Qualquer intervenção invasiva no útero gravídico acarreta riscos, como descolamento prematuro de placenta, corioamnionite e, especialmente, a rotura prematura de membranas. Em gestações gemelares, o risco de parto prematuro decorrente do procedimento coloca ambos os fetos em risco.\n\nAlternativa D: Correta. Esta é uma das principais vantagens das técnicas fetoscópicas em relação à cirurgia a céu aberto. Na cirurgia a céu aberto, a necessidade de uma grande histerotomia torna o procedimento extremamente arriscado em gestações gemelares, muitas vezes sendo considerado uma contraindicação. A técnica SAFER, por ser minimamente invasiva, permite o acesso seletivo ao feto afetado, tornando a correção antenatal uma opção viável e segura para o tratamento de apenas um dos fetos em gestações de gêmeos.\n\nAlternativa E: Incorreta. A rotura uterina é uma complicação tardia associada especificamente à técnica a céu aberto, devido à cicatriz de grandes proporções deixada no útero. Na técnica fetoscópica (SAFER), a complicação mais comum e clinicamente relevante é a rotura prematura de membranas pré-termo (ROPREMA), causada pela perfuração das membranas amnióticas para a entrada dos instrumentos, o que pode levar ao parto prematuro.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Ultrassom em Obstetrícia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:44.539Z"
+  },
+  {
+    "id": "AJUDA_6b21b67d-b887-45ae-a89b-aa7b94f585eb",
+    "originalId": "6b21b67d-b887-45ae-a89b-aa7b94f585eb",
+    "statement": "Homem de 42 anos apresenta lesões cutâneas (conforme figura a seguir) que se iniciaram há dois dias, com muita dor na região torácica à esquerda. AP: transplantado renal há 6 anos em uso de drogas imunossupressoras.\n\nA conduta correta envolve",
+    "options": [
+      {
+        "id": "A",
+        "text": "o uso de aciclovir endovenoso, na dose de 10 mg/kg a cada 8 horas, até melhora clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "apenas aguardar evolução do quadro, uma vez que se trata de doença autolimitada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o uso de aciclovir tópico por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o uso de aciclovir oral na dose 200 mg cinco vezes ao dia por sete dias e analgesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresentado na imagem e na descrição é de herpes-zóster, caracterizado por vesículas agrupadas sobre base eritematosa que seguem estritamente o trajeto de um dermátomo (unilateral, na região torácica), acompanhadas de dor intensa (neuralgia).\n\nO ponto determinante para a conduta correta é o estado imunológico do paciente: ele é um transplantado renal em uso de drogas imunossupressoras. Pacientes imunocomprometidos com herpes-zóster apresentam alto risco de complicações graves, como a disseminação cutânea generalizada e o acometimento visceral (pneumonite, encefalite ou hepatite), o que exige tratamento agressivo.\n\nAnálise das alternativas:\n\nAlternativa a) CORRETA. Em pacientes imunossuprimidos, o tratamento de escolha para o herpes-zóster é o aciclovir por via endovenosa, na dose de 10 mg/kg a cada 8 horas. A internação e o uso da via parenteral garantem níveis séricos adequados para prevenir a disseminação sistêmica do vírus. O tratamento é mantido até a melhora clínica e a crostificação das lesões.\n\nAlternativa b) INCORRETA. Embora o herpes-zóster possa ser autolimitado em indivíduos jovens e saudáveis, no paciente imunossuprimido a doença é potencialmente fatal. Aguardar a evolução sem intervenção médica é uma conduta inadequada e perigosa.\n\nAlternativa c) INCORRETA. O aciclovir tópico não apresenta eficácia no tratamento do herpes-zóster. O tratamento deve ser obrigatoriamente sistêmico (oral ou endovenoso) para atuar na replicação viral nervosa e sistêmica.\n\nAlternativa d) INCORRETA. Esta alternativa possui dois erros. Primeiro, a dose de 200 mg de aciclovir (5 vezes ao dia) é a posologia para herpes simples; a dose oral para herpes-zóster em adultos imunocompetentes seria de 800 mg (5 vezes ao dia). Segundo, a via oral é reservada para casos leves em pacientes sem fatores de risco; para um transplantado imunossuprimido, a prioridade é a via endovenosa.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Dermatoses Infecciosas",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/334adcafaa74e2b4dd8bfbbc104a46e1a1b7049e75ade039b1c25c45efbd587b.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_6b21b67d-b887-45ae-a89b-aa7b94f585eb_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:44.919Z"
+  },
+  {
+    "id": "AJUDA_6b23ab04-9c34-4f40-ba3d-f5ef82c14f9c",
+    "originalId": "6b23ab04-9c34-4f40-ba3d-f5ef82c14f9c",
+    "statement": "Durante a manutenção de um aparelho refrigerador, um tubo de oxigênio explodiu e acertou a cabeça do mecânico de manutenção Wilson, de 38 anos de idade. Ele foi socorrido com trauma craniano. Internado, acabou evoluindo com infecção pulmonar e septicemia, indo a óbito após 10 dias de internação.\nPara fins de declaração de óbito, assinale a alternativa que apresenta a causa básica do óbito.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infecção pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trauma craniano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Septicemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Explosão do tubo de oxigênio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender esta questão, é fundamental dominar o conceito de Causa Básica de Morte, definido pela Organização Mundial da Saúde (OMS) e utilizado obrigatoriamente no preenchimento da Declaração de Óbito (DO). \n\nA causa básica é definida como: (1) a doença ou lesão que iniciou a cadeia de eventos patológicos que conduziram diretamente à morte, ou (2) as circunstâncias do acidente ou violência que produziram a lesão fatal.\n\nNo caso clínico apresentado, temos a seguinte sequência cronológica: \nExplosão do tubo (evento inicial) -> Trauma craniano (lesão decorrente) -> Internação -> Infecção pulmonar (complicação) -> Septicemia (estado terminal) -> Óbito.\n\nAnálise das alternativas:\n\na) INCORRETA. A internação hospitalar é um evento de assistência à saúde, e não uma causa de morte. Ela é consequência da gravidade do quadro clínico, mas não integra a etiologia do óbito.\n\nb) INCORRETA. A infecção pulmonar é considerada uma causa intermediária. Ela surgiu como uma complicação do estado de saúde do paciente durante o período hospitalar, mas só existiu porque o paciente sofreu o trauma inicial que o levou à internação.\n\nc) INCORRETA. O trauma craniano é a lesão diagnóstica. Em mortes por causas naturais, a doença principal seria a causa básica. Entretanto, em mortes por causas externas (acidentes e violências), as regras internacionais de certificação determinam que a causa básica é a circunstância do acidente (o \"porquê\" da lesão), e não a natureza da lesão em si.\n\nd) INCORRETA. A septicemia é a causa imediata ou terminal. É o mecanismo fisiopatológico final que levou o paciente ao óbito. Na Declaração de Óbito, ela deve ser anotada na linha \"a\" da Parte I, sendo o desfecho da cadeia iniciada pela causa básica.\n\ne) CORRETA. A explosão do tubo de oxigênio é o evento desencadeador, o fato que deu início a toda a sucessão de eventos mórbidos que culminaram na morte de Wilson. Para fins estatísticos e epidemiológicos, em casos de acidentes de trabalho ou causas externas, o evento produtor do dano é sempre a causa básica. Na Declaração de Óbito, este evento seria registrado na última linha preenchida da Parte I.\n\nResumo: Em óbitos por causas externas, a causa básica será sempre a circunstância do acidente ou da violência, e não as lesões ou complicações clínicas subsequentes.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:44.919Z"
+  },
+  {
+    "id": "AJUDA_6b2c4f26-c033-4e76-9714-07df9f8406de",
+    "originalId": "6b2c4f26-c033-4e76-9714-07df9f8406de",
+    "statement": "Sobre a composição dos Conselhos e Conferências de Saúde, o princípio da paridade assegura a representação dos diversos segmentos sociais. Qual a correta distribuição percentual de representação nesses colegiados, conforme a Lei 8.142/90?",
+    "options": [
+      {
+        "id": "A",
+        "text": "50% de usuários, 25% de gestores e 25% de trabalhadores de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "50% de usuários, 30% de trabalhadores de saúde e 20% de gestores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "50% de usuários, 25% de trabalhadores de saúde, 12,5% de gestores e 12,5% de prestadores de serviços.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "40% de usuários, 30% de trabalhadores de saúde e 30% de gestores/prestadores de serviços.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "50% de usuários e os 50% restantes divididos entre trabalhadores, gestores e prestadores de serviços, respeitando a proporção mínima de 25% para os trabalhadores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "CONTEÚDO E CONTEXTO\n\nA questão aborda a Lei 8.142/90, que é um dos pilares do Sistema Único de Saúde (SUS) ao tratar da participação da comunidade e das transferências intergovernamentais de recursos financeiros. O conceito fundamental para responder a essa questão é o Princípio da Paridade.\n\nDe acordo com o Artigo 1º, parágrafo 4º da Lei 8.142/90, a representação dos usuários nos Conselhos de Saúde e nas Conferências de Saúde deve ser paritária em relação ao conjunto dos demais segmentos. Isso significa que os usuários (pacientes/comunidade) devem ocupar 50% das vagas, enquanto os outros 50% devem ser preenchidos pela soma dos profissionais de saúde, gestores e prestadores de serviços.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a: Incorreta. Embora cite corretamente os 50% de usuários, esta alternativa ignora a figura dos prestadores de serviços de saúde. Os prestadores possuem assento garantido e dividem espaço com os gestores governamentais.\n\nAlternativa b: Incorreta. A distribuição de 30% e 20% não possui base na legislação. A lei exige que a soma de todos os não usuários seja exatamente igual aos 50% destinados aos usuários.\n\nAlternativa c: Correta. Esta alternativa reflete a composição detalhada na Resolução 453/2012 do Conselho Nacional de Saúde, que regulamenta a Lei 8.142/90. A divisão fica assim:\n- 50% Usuários do SUS.\n- 25% Trabalhadores de Saúde (profissionais).\n- 25% Representantes do Governo (Gestores) e Prestadores de Serviços de Saúde (filantrópicos ou privados conveniados). \nAo dividir o último grupo de forma equânime, temos 12,5% para gestores e 12,5% para prestadores, totalizando os 100% do colegiado e mantendo a paridade de 50% para usuários contra 50% dos demais.\n\nAlternativa d: Incorreta. O erro principal está no percentual de 40% para usuários. Pela lei, a representação da comunidade nunca pode ser inferior a 50% do total de membros.\n\nAlternativa e: Incorreta. Não existe a regra de \"proporção mínima de 25% para os trabalhadores\" de forma variável. A estrutura é rígida: os trabalhadores devem compor exatamente 25% do total do conselho/conferência.\n\nDICA DE PROVA\n\nPara memorizar a composição dos Conselhos de Saúde, utilize a regra 50-25-25:\n50% Usuários (sempre metade).\n25% Trabalhadores de Saúde.\n25% Gestores e Prestadores de Serviços.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:44.919Z"
+  },
+  {
+    "id": "AJUDA_6b30a8ff-6ece-4c3b-9247-9028bb8fbabc",
+    "originalId": "6b30a8ff-6ece-4c3b-9247-9028bb8fbabc",
+    "statement": "Conforme o Calendário de Vacinação 2025, do Ministério da Saúde, qual o esquema de vacinação contra HPV?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dose única entre 9 e 14 anos apenas em meninas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dose única entre 9 e 14 anos em meninas e meninos",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Duas doses entre 9 e 14 anos em meninas e meninos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Duas doses entre 9 e 14 anos em meninas e dose única em meninos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Ministério da Saúde do Brasil, por meio da Nota Técnica nº 41/2024, atualizou o esquema vacinal contra o HPV (Papilomavírus Humano) no Programa Nacional de Imunizações (PNI). A principal mudança foi a transição do esquema de duas doses para o regime de dose única.\n\nAbaixo, a análise detalhada das alternativas:\n\nAlternativa a) Incorreta. Embora a faixa etária de 9 a 14 anos esteja correta e o esquema de dose única seja o atual, a vacinação não é exclusiva para meninas. Os meninos foram incluídos gradualmente no calendário nacional e, atualmente, ambos os sexos possuem o mesmo direito e recomendação vacinal.\n\nAlternativa b) Correta. Conforme a atualização mais recente, vigente para 2025, o esquema consiste em uma dose única da vacina HPV quadrivalente para meninas e meninos na faixa etária de 9 a 14 anos (14 anos, 11 meses e 29 dias). O objetivo dessa mudança, respaldada pela Organização Mundial da Saúde (OMS), é aumentar a adesão vacinal, simplificar a logística e ampliar a cobertura para a eliminação do câncer do colo do útero e outras lesões relacionadas ao vírus.\n\nAlternativa c) Incorreta. Este era o esquema anterior utilizado pelo Ministério da Saúde (0 e 6 meses). Com a nova diretriz de 2024, o esquema de duas doses para o público geral de 9 a 14 anos foi substituído pela dose única.\n\nAlternativa d) Incorreta. Não existe diferenciação no número de doses entre meninos e meninas dentro da estratégia básica do PNI para essa faixa etária. Ambos seguem o esquema de dose única.\n\nObservação importante para provas: Grupos especiais, como pessoas vivendo com HIV/Aids, transplantados de órgãos sólidos ou medula óssea e pacientes oncológicos (na faixa de 9 a 45 anos), ainda mantêm o esquema de três doses (0, 2 e 6 meses), além das vítimas de violência sexual, que também possuem protocolos específicos. No entanto, para a população geral de 9 a 14 anos citada na questão, a resposta é dose única para ambos os sexos.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:44.919Z"
+  },
+  {
+    "id": "AJUDA_6b34f09d-9623-4c06-a9d1-7daada643ccc",
+    "originalId": "6b34f09d-9623-4c06-a9d1-7daada643ccc",
+    "statement": "Chega no seu plantão em Unidade de Pronto Atendimento em São Paulo um adolescente de 16 anos com ferimento cortocontuso de 2 cm em face por mordedura de sagui doméstico pertencente à família. A respeito da sua conduta, aponte a alternativa mais adequada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se realizar limpeza e desbridamento de tecidos desvitalizados e coleta de cultura do ferimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lesões menores de 2,5 cm em face são pequenas, e consideradas lesões leves.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em sendo animal observável e saudável, não está indicada vacina antitetânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apesar de ser animal observável, existe indicação de sorovacinação antirrábica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Deve-se fazer limpeza com Clorexidina e sutura primária do ferimento aproximando por camadas o subcutâneo e a pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A alternativa correta é a letra (d).\n\nPara compreender a conduta correta, devemos analisar os protocolos de profilaxia da raiva e o tratamento de ferimentos por mordedura.\n\nAlternativa (a) Incorreta: A limpeza e o desbridamento de tecidos desvitalizados são condutas padrão para ferimentos contaminados. No entanto, a coleta de cultura de um ferimento agudo por mordedura não é indicada de rotina. A cultura deve ser solicitada apenas se houver sinais clínicos de infecção secundária após o atendimento inicial.\n\nAlternativa (b) Incorreta: No manejo da profilaxia da raiva humana, a classificação de ferimento leve ou grave depende da localização e da natureza da lesão. Ferimentos na face, cabeça, pescoço, mãos, polpas digitais e plantas dos pés são considerados ferimentos graves, independentemente do tamanho da lesão, devido à rica inervação e proximidade com o sistema nervoso central.\n\nAlternativa (c) Incorreta: A indicação de profilaxia contra o tétano baseia-se exclusivamente no histórico vacinal do paciente e nas características do ferimento (se é limpo ou de risco). Mordeduras de animais são ferimentos considerados de risco para o tétano. O estado de saúde ou a observação do animal agressor não influenciam a conduta em relação ao tétano, apenas em relação à raiva.\n\nAlternativa (d) Correta: O sagui (gênero Callithrix) é um primata não humano e, portanto, é classificado como um animal silvestre. De acordo com o Guia de Vigilância Epidemiológica do Ministério da Saúde, o protocolo para agressões por animais silvestres (incluindo macacos, raposas e morcegos) é sempre tratar o acidente como grave. Como não se conhece o período de incubação e transmissão do vírus da raiva nessas espécies, a observação do animal por 10 dias não é válida. Assim, independentemente do ferimento ou de o animal ser domesticado, a conduta imediata para agressões por saguis é a sorovacinação completa (soro antirrábico e 4 doses de vacina).\n\nAlternativa (e) Incorreta: Ferimentos por mordedura são considerados altamente contaminados pela microbiota oral do animal. A recomendação geral é não realizar sutura primária, deixando a ferida aberta para cicatrização por segunda intenção ou realizando apenas pontos de aproximação frouxos se houver grande dano estético. A sutura por camadas (subcutâneo e pele) está formalmente contraindicada, pois favorece o crescimento bacteriano e a formação de abscessos em espaço fechado.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Raiva, Tétano, Mordedura e Arranhadura Animal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:44.919Z"
+  },
+  {
+    "id": "AJUDA_6b4fa09f-e0bd-4f47-8403-6a143e165e52",
+    "originalId": "6b4fa09f-e0bd-4f47-8403-6a143e165e52",
+    "statement": "São vantagens do estudo citado na questão 48 [Foi realizado um estudo com o objetivo de analisar tendência temporal e padrões espaciais da mortalidade por doenças tropicais negligenciadas (DTNs) no Piauí, Brasil, 2001-2018. Estudo ecológico misto...], EXCETO,",
+    "options": [
+      {
+        "id": "A",
+        "text": "baixo custo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "rapidez e praticidade em sua elaboração e análise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "levantamento de hipóteses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "relação causa-efeito.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "avaliação de políticas de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda as características dos estudos ecológicos, especificamente no contexto de uma análise de tendência temporal e padrões espaciais. Para respondê-la corretamente, é fundamental identificar qual das opções apresentadas não representa uma vantagem desse delineamento de pesquisa.\n\nAnálise das alternativas:\n\na) Baixo custo: Esta é uma vantagem real dos estudos ecológicos. Como eles utilizam, em sua maioria, dados secundários já coletados por órgãos governamentais (como o SIM ou SINAN), não há necessidade de grandes investimentos financeiros para a coleta primária de dados.\n\nb) Rapidez e praticidade em sua elaboração e análise: Correto. Por trabalharem com bancos de dados populacionais já existentes, os pesquisadores conseguem processar as informações e obter resultados de forma muito mais célere do que em estudos que acompanham indivíduos ao longo do tempo (como as coortes).\n\nc) Levantamento de hipóteses: Correto. Os estudos ecológicos são excelentes para identificar associações e sugerir possíveis relações entre fatores de risco e doenças. Eles funcionam como um primeiro passo para que hipóteses sejam geradas e, posteriormente, testadas em estudos de maior poder analítico, como ensaios clínicos ou coortes.\n\nd) Relação causa-efeito: Esta é a alternativa incorreta e, portanto, o gabarito. O estudo ecológico analisa grupos ou populações, e não indivíduos. Por essa razão, ele não permite estabelecer uma relação de causalidade direta. A principal limitação é a chamada falácia ecológica (ou viés de agregação), que ocorre quando uma associação observada no nível populacional é erroneamente aplicada ao nível individual.\n\ne) Avaliação de políticas de saúde: Correto. Esse delineamento é muito útil para observar o impacto de intervenções coletivas (como campanhas de vacinação ou mudanças em legislações) ao longo do tempo em uma determinada região ou país, permitindo avaliar se uma política pública foi eficaz na redução de indicadores de morbimortalidade.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:44.919Z"
+  }
+]

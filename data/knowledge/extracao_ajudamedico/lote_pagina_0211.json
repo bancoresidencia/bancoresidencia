@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_3a24d79d-5e08-48ff-9a40-cc804306e841",
+    "originalId": "3a24d79d-5e08-48ff-9a40-cc804306e841",
+    "statement": "Assinale a assertiva correta sobre a assistência pré-natal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Saída de colostro, colo uterino friável, sangramento gengival, náuseas e vômitos no primeiro e terceiro trimestres, leucocitose de 18.000/mm³ e hematúria são alterações fisiológicas frequentes na gestação, não havendo necessidade de investigação adicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Com 8 semanas de gestação, o útero tem o dobro do tamanho normal, adquire formato ovoide e ganha a cavidade abdominal, podendo ser palpado acima da sínfise púbica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No terceiro trimestre, a pressão arterial deve ser aferida em todas as consultas de pré-natal com a paciente em decúbito lateral esquerdo, uma vez que essa posição proporciona aumento do débito cardíaco materno e da perfusão uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A frequência normal dos batimentos cardiofetais situa-se entre 110-160 bpm ao final da gestação, e a presença de acelerações transitórias indica boa vitalidade, estando frequentemente associada a movimentação fetal ou contração uterina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a) Incorreta. Embora a saída de colostro, o colo uterino mais vascularizado (friável), o sangramento gengival e a leucocitose (que pode chegar a 15.000-16.000/mm³ em condições normais) sejam achados comuns, a hematúria (presença de sangue na urina) nunca é considerada uma alteração fisiológica e sempre exige investigação para afastar infecções urinárias ou litíase. Além disso, náuseas e vômitos no terceiro trimestre não são a regra e podem indicar complicações como pré-eclâmpsia grave ou distúrbios gastrointestinais.\n\nAlternativa b) Incorreta. Com 8 semanas de gestação, o útero ainda é um órgão pélvico e tem aproximadamente o tamanho de uma laranja. O útero só se torna palpável acima da sínfise púbica por volta da 12ª semana de gestação, momento em que ele deixa a pelve e ganha a cavidade abdominal.\n\nAlternativa c) Incorreta. Apesar de o decúbito lateral esquerdo realmente aumentar o débito cardíaco e a perfusão uterina ao evitar a compressão da veia cava inferior, a padronização para a aferição da pressão arterial no pré-natal é com a paciente sentada. A medida em decúbito lateral pode subestimar os valores reais da pressão arterial, o que prejudica o diagnóstico de síndromes hipertensivas.\n\nAlternativa d) Correta. Esta alternativa descreve corretamente os parâmetros da propedêutica fetal. A frequência cardíaca fetal basal normal varia entre 110 e 160 bpm. As acelerações transitórias (aumentos abruptos da frequência cardíaca acima da linha de base) são os principais marcadores de reatividade e boa vitalidade fetal, ocorrendo habitualmente em resposta aos movimentos do feto ou a contrações uterinas.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:35.365Z"
+  },
+  {
+    "id": "AJUDA_3a27c05d-586f-4e50-b1ba-cae65043c4bf",
+    "originalId": "3a27c05d-586f-4e50-b1ba-cae65043c4bf",
+    "statement": "Paciente, 27 anos de idade, procura consultório com história de sangramento anal recente e sem outros sintomas. Após realização de colonoscopia, foram encontrados múltiplos pólipos (mais que 500), sendo vários ressecados. Assinale a alternativa que apresenta, corretamente, a hipótese diagnóstica e o tipo de pólipo encontrado com maior frequência na biópsia.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença de Crohn – Pólipos inflamatórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Retocolite ulcerativa – Pólipos inflamatórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Polipose adenomatosa familiar – Pólipos adenomatosos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Lynch – Pólipos serráteis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Síndrome de Peutz-jeghers – Pólipos hamartomatosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente jovem (27 anos) com um achado colonoscópico de mais de 500 pólipos. Esse número é o divisor de águas para o diagnóstico das síndromes polipoides hereditárias, sendo que a presença de mais de 100 pólipos adenomatosos é o critério clássico para a Polipose Adenomatosa Familiar (PAF).\n\nAlternativa a: Incorreta. A Doença de Crohn é uma doença inflamatória intestinal que pode apresentar pseudopólipos (pólipos inflamatórios) decorrentes do processo de inflamação e cicatrização da mucosa. No entanto, a doença de Crohn geralmente se manifesta com dor abdominal, diarreia crônica, perda de peso e alterações inflamatórias na colonoscopia (como úlceras e aspecto em pedra de calçamento), não apresentando centenas de pólipos reais.\n\nAlternativa b: Incorreta. Assim como na Doença de Crohn, a Retocolite Ulcerativa pode cursar com pólipos inflamatórios, mas estes não aparecem em tal quantidade (mais de 500) como achado principal em um paciente sem outros sintomas graves de colite.\n\nAlternativa c: Correta. A Polipose Adenomatosa Familiar (PAF) é uma síndrome autossômica dominante causada pela mutação no gene APC. Ela se caracteriza pelo desenvolvimento de centenas a milhares de pólipos adenomatosos em todo o cólon e reto, geralmente iniciando-se na adolescência ou início da vida adulta. O sangramento retal é o sintoma mais comum quando os pólipos crescem. Como esses pólipos são adenomas, o potencial de malignização é de praticamente 100% se o paciente não for tratado precocemente com colectomia.\n\nAlternativa d: Incorreta. A Síndrome de Lynch, historicamente conhecida como Câncer Colorretal Hereditário Não Polipoide (HNPCC), caracteriza-se por uma predisposição ao câncer colorretal sem a presença de polipose profusa. Os pacientes com Lynch desenvolvem poucos pólipos, porém esses pólipos possuem uma progressão muito rápida para a malignidade. Além disso, os pólipos serráteis são mais característicos da Síndrome de Polipose Serrátil, e não da Síndrome de Lynch clássica.\n\nAlternativa e: Incorreta. A Síndrome de Peutz-Jeghers é caracterizada por pólipos hamartomatosos, mas eles ocorrem com maior frequência no intestino delgado e em número bem menor do que o descrito na questão. Além disso, a síndrome está associada a manchas melanóticas (hiperpigmentação) na pele e mucosas, especialmente nos lábios e região perioral, o que não foi relatado.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:35.365Z"
+  },
+  {
+    "id": "AJUDA_3a28459e-5309-415c-8d65-bcbe360a958b",
+    "originalId": "3a28459e-5309-415c-8d65-bcbe360a958b",
+    "statement": "Durante o acompanhamento de rotina, você observa duas primas. A paciente A, de 6 anos e 2 meses, apresenta aumento mamário bilateral há 4 meses e discreto surgimento de pelos pubianos. A paciente B, de 9 anos, é saudável, sem desenvolvimento mamário ou de pelos pubianos. As mães relatam preocupação, pois as meninas são muito próximas e “parecem com ritmos de desenvolvimento completamente diferentes”. \n\nQual deve ser a conduta inicial para a paciente A (de 6 anos) e para a paciente B (de 9 anos), respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar ambas para endocrinologista pediátrico por provável alteração genética familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aguardar evolução espontânea de ambas, pois a variação é fisiológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar dosagem de LH, FSH, estradiol e idade óssea para a paciente A e reavaliar a paciente B em 6 meses, acompanhando curva de crescimento e desenvolvimento puberal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar bloqueio hormonal com análogo de GnRH para a paciente A e reposição com estrogênio para a paciente B.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os marcos cronológicos do desenvolvimento puberal na infância. Para meninas, a puberdade é considerada precoce quando há o surgimento de caracteres sexuais secundários antes dos 8 anos de idade. Por outro lado, a puberdade é considerada atrasada quando não há o surgimento do broto mamário (telarca) até os 13 anos.\n\nA paciente A tem 6 anos e 2 meses e apresenta telarca e pubarca (pelos pubianos). Como esses sinais surgiram antes dos 8 anos, ela se enquadra nos critérios de puberdade precoce. A investigação inicial obrigatória deve confirmar se há ativação precoce do eixo hormonal e se isso está impactando o crescimento ósseo. Por isso, solicita-se a idade óssea (para verificar se há avanço em relação à idade cronológica) e as dosagens hormonais de LH, FSH e estradiol.\n\nA paciente B tem 9 anos e não possui sinais de desenvolvimento puberal. Como ela ainda não atingiu o limite de 13 anos, seu estado é considerado pré-puberal fisiológico (normal). A conduta adequada é manter o acompanhamento clínico de rotina, monitorando a velocidade de crescimento e o surgimento futuro das mamas.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A paciente B é saudável e não precisa de especialista. Para a paciente A, antes de suspeitar de alterações genéticas raras, deve-se realizar a propedêutica básica.\n\nAlternativa b) Incorreta. A paciente A não apresenta uma variação fisiológica, pois o desenvolvimento ocorreu antes da idade mínima esperada (8 anos), exigindo investigação para descartar causas centrais ou periféricas.\n\nAlternativa c) Correta. Esta alternativa descreve exatamente a conduta inicial padrão: investigação laboratorial e radiológica para o quadro de puberdade precoce (paciente A) e seguimento clínico para a criança com desenvolvimento normal para a idade (paciente B).\n\nAlternativa d) Incorreta. Nunca se inicia bloqueio hormonal ou reposição estrogênica como conduta inicial. O tratamento só é instituído após o diagnóstico etiológico confirmado. Além disso, a paciente B, aos 9 anos, não possui qualquer indicação de reposição hormonal.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:35.365Z"
+  },
+  {
+    "id": "AJUDA_3a2d35e1-f53a-45b7-a223-78e53d985530",
+    "originalId": "3a2d35e1-f53a-45b7-a223-78e53d985530",
+    "statement": "Paciente vem a unidade de saúde com quadro de acidente vascular cerebral isquêmico. Considerando tal quadro, é correto afirmar que é critério atual de indicação de trombólise no AVC isquêmico o seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tempo < que 6 horas, desde o último momento visto assintomático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "entre 2 e 4 horas e meia, desde o último momento visto assintomático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "≥ 18 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "paciente diabético com glicemia, no momento do evento > 50 e < 250 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "pressão arterial 185 x 110 mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A trombólise química com o uso de rtPA (alteplase) ou tenecteplase é uma das intervenções fundamentais no manejo do Acidente Vascular Cerebral Isquêmico (AVCi) agudo. Para a indicação do procedimento, o paciente deve preencher critérios rigorosos de inclusão e não apresentar contraindicações.\n\nAlternativa (a) Incorreta: O tempo máximo estabelecido para a trombólise endovenosa na prática clínica convencional é de até 4,5 horas a partir do último momento em que o paciente foi visto assintomático (\"last known well\"). Janelas maiores, como até 6 ou 24 horas, são reservadas para a trombectomia mecânica em casos de oclusão de grandes vasos ou protocolos específicos com uso de neuroimagem avançada (perfusão).\n\nAlternativa (b) Incorreta: Esta alternativa tenta confundir o candidato ao delimitar uma faixa de tempo. A indicação de trombólise começa no minuto zero da chegada do paciente, desde que dentro da janela de 4,5 horas. Não existe um intervalo inicial de 2 horas para que o procedimento seja indicado.\n\nAlternativa (c) CORRETA: De acordo com as diretrizes da American Heart Association/American Stroke Association (AHA/ASA) e da Sociedade Brasileira de Doenças Cerebrovasculares, a idade maior ou igual a 18 anos é um critério de inclusão padrão para o uso do trombolítico endovenoso nos protocolos de rotina.\n\nAlternativa (d) Incorreta: O critério glicêmico fundamental para a trombólise é que a glicemia esteja acima de 50 mg/dL. Isso ocorre porque a hipoglicemia é um importante \"stroke mimic\" (condição que simula o AVC). Embora a hiperglicemia deva ser controlada, o limite de 250 mg/dL mencionado na alternativa não é um critério de exclusão absoluto nos protocolos; geralmente, valores muito elevados (acima de 400 mg/dL) exigem manejo, mas o foco principal é a exclusão da hipoglicemia.\n\nAlternativa (e) Incorreta: Este é um ponto clássico de \"pegadinha\" em provas. Para iniciar a trombólise, a pressão arterial (PA) deve estar obrigatoriamente abaixo de 185/110 mmHg. Se o paciente apresentar PA igual ou superior a 185/110 mmHg, ele tem uma contraindicação relativa momentânea, devendo-se realizar o controle pressórico com medicamentos endovenosos (como o labetalol ou nitroprussiato) para baixar os níveis abaixo desse patamar antes de infundir o trombolítico. Além disso, após o início da infusão, a PA deve ser mantida abaixo de 180/105 mmHg.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:35.365Z"
+  },
+  {
+    "id": "AJUDA_3a2ee915-043d-4fe5-9fdd-887fdc2c063f",
+    "originalId": "3a2ee915-043d-4fe5-9fdd-887fdc2c063f",
+    "statement": "Um lactente de 3 meses apresenta regurgitações frequentes (mais de 2 vezes ao dia, há pelo menos 3 semanas), sem sinais de alerta como recusa alimentar, hematoquezia, dificuldade para ganhar peso ou apneias. O exame físico está normal. Os pais relatam que o bebê está bem, com bom ganho de peso e sem desconforto significativo. Não há suspeita de doença associada. O diagnóstico mais provável e conduta inicial mais adequada nesse caso são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Refluxo gastroesofágico fisiológico; iniciar imediatamente inibidor de bomba de prótons (IBP).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "DRGE (doença do refluxo gastroesofágico) manifestada por regurgitação; solicitar pHmetria e iniciar bloqueador H₂ como teste terapêutico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Refluxo gastroesofágico fisiológico; adotar medidas conservadoras (como espessar a dieta e manter aleitamento) e evitar tratamento farmacológico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Suspeita de DRGE (doença do refluxo gastroesofágico) complicada; encaminhar para endoscopia digestiva alta imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clinico apresenta um lactente de 3 meses que se enquadra no quadro de refluxo gastroesofagico (RGE) fisiologico, classicamente conhecido como regurgitador feliz. A condicao e definida por regurgitacoes frequentes em lactentes saudaveis, com bom ganho pondero-estatural, sem sinais de irritabilidade excessiva, recusa alimentar ou sinais de alerta. O manejo fundamenta-se em tranquilizar a familia, fornecer orientacoes posturais e dieteticas, evitando intervencoes medicamentosas ou exames invasivos.\n\nAlternativa A - Incorreta. O diagnostico de refluxo fisiologico esta correto, porem a conduta farmacologica com inibidores de bomba de protons (IBP) e contraindicada nesse cenario. O RGE fisiologico decorre da imaturidade funcional do esfincter esofagico inferior associada a dieta exclusivamente liquida e decubito horizontal predominante, nao havendo indicacao de supressao acida.\n\nAlternativa B - Incorreta. A Doenca do Refluxo Gastroesofagico (DRGE) caracteriza-se pela presenca de repercussoes clinicas patologicas ou complicacoes, como baixo ganho de peso, esofagite, irritabilidade intensa ou manifestacoes respiratorias. O paciente nao preenche criterios para DRGE e nao necessita de investigacao com pHmetria ou teste terapeutico medicamentoso.\n\nAlternativa C - Correta. O paciente apresenta RGE fisiologico, cujo curso e benigno e autolimitado, com resolucao espontanea habitual ao longo do primeiro ano de vida. A conduta adequada consiste em esclarecimento e apoio aos pais, manutencao do aleitamento materno e adocao de medidas conservadoras (como manter a crianca em posicao ereta apos as mamadas), evitando qualquer tratamento farmacologico.\n\nAlternativa D - Incorreta. Nao ha qualquer indicio de complicacao organica no relato. A endoscopia digestiva alta e um metodo invasivo reservado para criancas com sinais de alarme, suspeita de estenose esofagica, hematemese ou doenca refrataria ao tratamento otimizado.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:35.365Z"
+  },
+  {
+    "id": "AJUDA_3a322b5c-6208-4d26-994b-0343460e4e51",
+    "originalId": "3a322b5c-6208-4d26-994b-0343460e4e51",
+    "statement": "Recém-nascido de 5 dias, a termo, saudável, apresenta múltiplas pápulas eritematosas com centro amarelado disseminadas em tronco e face, sem acometimento palmo-plantar. Exames laboratoriais prévios normais, RN em aleitamento materno exclusivo, sem sinais sistêmicos. Em relação a este quadro, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de eritema tóxico neonatal, condição benigna e autolimitada, caracterizada histologicamente por infiltrado eosinofílico perifolicular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O quadro descrito corresponde à melanose pustulosa transitória, devendo sempre ser investigado com culturas bacterianas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de miliária rubra, decorrente de obstrução ductal de glândulas sudoríparas, típica de áreas cobertas e de dobra.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É provável impetigo bolhoso neonatal, exigindo antibioticoterapia sistêmica devido ao risco de disseminação estafilocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve um recém-nascido (RN) de 5 dias, saudável e em aleitamento materno, com lesões cutâneas típicas: pápulas eritematosas com centro amarelado (frequentemente descritas como \"picada de pulga\") distribuídas em tronco e face, poupando as regiões palmoplantares. Este é o cenário clássico do Eritema Tóxico Neonatal (ETN), a erupção cutânea benigna mais comum no período neonatal.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: O eritema tóxico neonatal é uma condição idiopática, benigna e autolimitada que atinge cerca de 50% dos recém-nascidos a termo. Surge geralmente entre as primeiras 24 e 72 horas de vida, podendo aparecer até a segunda semana. Sua principal característica histológica (ou obtida por meio do citodiagnóstico de Tzanck da lesão) é a presença de um infiltrado rico em eosinófilos. O fato de poupar palmas e plantas é um dado clínico crucial para o diagnóstico diferencial.\n\nAlternativa (b) INCORRETA: A melanose pustulosa transitória neonatal manifesta-se tipicamente já ao nascimento com pequenas pústulas que se rompem facilmente, deixando um colarete de descamação e máculas hipercrômicas (manchas escuras) residuais. Diferentemente do eritema tóxico, a melanose frequentemente acomete palmas e plantas, e seu conteúdo citológico é predominantemente composto por neutrófilos, não eosinófilos. Por ser benigna, não exige investigação rotineira com culturas bacterianas em pacientes saudáveis.\n\nAlternativa (c) INCORRETA: A miliária rubra (brotoeja) ocorre pela obstrução dos ductos das glândulas sudoríparas écrinas em um nível mais profundo da epiderme. Ela está associada ao excesso de calor e abafamento do RN, localizando-se preferencialmente em áreas de dobras e regiões cobertas por roupas. Não apresenta o aspecto de pápula com centro amarelado sobre base eritematosa larga característico do ETN.\n\nAlternativa (d) INCORRETA: O impetigo bolhoso é uma infecção bacteriana (geralmente pelo *Staphylococcus aureus*) que se manifesta por vesículas e bolhas que se tornam purulentas e rompem, formando crostas melicéricas. O RN do caso está sistemicamente bem, sem febre e com exames normais, o que torna o diagnóstico de infecção estafilocócica improvável. O ETN não requer antibioticoterapia, apenas conduta expectante.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:35.365Z"
+  },
+  {
+    "id": "AJUDA_3a3b06dd-8dd3-4f96-96be-3655cc8cc144",
+    "originalId": "3a3b06dd-8dd3-4f96-96be-3655cc8cc144",
+    "statement": "Homem, 67 anos de idade, com antecedente de 90 anos-maço, tem lesão espiculada em LSE de 4 cm de diâmetro. A biópsia da lesão revelou tratar-se de carcinoma espinocelular primário de pulmão. A tomografia de tórax mostrou linfonodomegalia mediastinal ipsilateral em cadeia 4. O PET Scan revelou aumento de SUV em lesão descrita acima, porém sem outros locais de captação. A ultrassonografia endobrônquica para biópsia dos linfonodos mediastinais foi negativa. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lobectomia superior esquerda",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar a mediastinoscopia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Quimioterapia neoadjuvante",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Radioterapia conformacional",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um paciente com carcinoma espinocelular de pulmão com 4 cm (T2) e uma suspeita de acometimento linfonodal mediastinal (N2) pela tomografia de tórax (linfonodomegalia na cadeia 4). O desafio diagnóstico reside na divergência entre os exames: a tomografia sugere doença no mediastino, mas o PET scan e a biópsia por EBUS (ultrassonografia endobrônquica) foram negativos.\n\nA estratégia de estadiamento mediastinal segue diretrizes rigorosas. Quando há linfonodos aumentados na tomografia (geralmente > 10 mm no menor eixo), mesmo que o PET seja negativo ou que o EBUS não identifique células neoplásicas, recomenda-se a confirmação cirúrgica. Isso ocorre porque o EBUS, apesar de ter alta sensibilidade, possui um valor preditivo negativo que pode não ser suficiente para excluir metástases ocultas em linfonodos visivelmente aumentados na imagem anatômica.\n\nAnálise das alternativas:\n\na) Incorreta. Realizar a lobectomia diretamente, sem a confirmação definitiva do status do mediastino, é arriscado. Se o paciente for realmente N2 (estágio IIIA), o tratamento cirúrgico imediato pode não ser a melhor conduta inicial ou o paciente pode necessitar de uma estratégia multimodal (quimioterapia e radioterapia) que seria comprometida por um estadiamento incompleto.\n\nb) Correta. A mediastinoscopia é o padrão-ouro para o estadiamento cirúrgico do mediastino. Ela está indicada para confirmar os achados negativos do EBUS em casos em que a suspeita clínica ou radiológica (linfonodomegalia na TC) é alta. Garantir que o mediastino seja realmente negativo (N0 ou N1) é o passo fundamental antes de proceder com a ressecção pulmonar curativa.\n\nc) Incorreta. A quimioterapia neoadjuvante só deve ser considerada se houver comprovação histológica de acometimento de linfonodos mediastinais ipsilaterais (N2). Como o EBUS foi negativo, não há, até o momento, prova de doença que justifique o tratamento sistêmico pré-operatório.\n\nd) Incorreta. A radioterapia isolada não é o tratamento padrão para um tumor de 4 cm em um paciente que, a princípio, apresenta condições cirúrgicas e doença potencialmente ressecável. Ela seria uma opção para casos inoperáveis ou como parte do tratamento definitivo em estágios mais avançados (IIIB).",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Pulmonares",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:35.365Z"
+  },
+  {
+    "id": "AJUDA_3a3eec39-1a87-448a-bd42-4edc32c909d8",
+    "originalId": "3a3eec39-1a87-448a-bd42-4edc32c909d8",
+    "statement": "Homem de 48 anos, etilista crônico, é admitido com dor abdominal em faixa irradiando para dorso, associada a náuseas. Amilase e lipase estão três vezes acima do limite superior da normalidade. O diagnóstico de pancreatite aguda é confirmado. Qual é a conduta inicial mais adequada segundo as evidências atuais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Analgesia e antibioticoterapia guiada para foco abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar hidratação vigorosa precoce com solução cristaloide (Ringer Lactato), analgesia e iniciar dieta de forma precoce.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Manter jejum absoluto por pelo menos 7 dias para repouso pancreático associado com analgesia e hidratação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar imediatamente colangiopancreatografia retrógrada endoscópica (CPRE).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Essa questão aborda o manejo inicial da pancreatite aguda, um tema frequente em provas de residência. O paciente apresenta o quadro clínico clássico (dor em faixa e náuseas) e laboratorial (amilase e lipase elevadas) que confirmam o diagnóstico.\n\nA alternativa (a) está incorreta porque o uso de antibióticos de forma profilática não é recomendado na pancreatite aguda, independentemente da gravidade inicial. A antibioticoterapia deve ser reservada apenas para casos com evidência de infecção (como necrose pancreática infectada confirmada ou suspeita após a segunda semana), ou para focos extrapancreáticos (pneumonia, infecção urinária).\n\nA alternativa (b) está correta e reflete as diretrizes atuais (como as da Associação Internacional de Pancreatologia e do Colégio Americano de Gastroenterologia). A hidratação venosa precoce e vigorosa é o pilar do tratamento para manter a perfusão microvascular do pâncreas e prevenir a necrose. O Ringer Lactato é a solução de escolha, pois estudos sugerem que ele reduz a resposta inflamatória sistêmica em comparação com o Soro Fisiológico 0,9%. Além disso, a analgesia é fundamental, e a introdução da dieta deve ser feita de forma precoce, assim que tolerada pelo paciente, para preservar a barreira intestinal e reduzir o risco de translocação bacteriana e complicações infecciosas.\n\nA alternativa (c) está incorreta. O conceito antigo de repouso pancreático absoluto por longos períodos (jejum prolongado) caiu em desuso. Manter o paciente em jejum por 7 dias aumenta o risco de complicações, atrofia da mucosa intestinal e infecções. Se o paciente não tolerar a dieta oral, a preferência é pela nutrição enteral em vez de manter o jejum prolongado ou iniciar nutrição parenteral.\n\nA alternativa (d) está incorreta. A Colangiopancreatografia Retrógrada Endoscópica (CPRE) não é um exame de rotina para pancreatite aguda. Ela está indicada apenas em casos de pancreatite de origem biliar associada a colangite ou obstrução biliar persistente (icterícia progressiva). No caso descrito, o paciente é etilista crônico, o que sugere etiologia alcoólica, e não há sinais de colangite que justifiquem o procedimento imediato.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": 33.113294339221014,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:35.365Z"
+  },
+  {
+    "id": "AJUDA_3a485dc0-6b7a-4c0d-9224-ff174150e2d0",
+    "originalId": "3a485dc0-6b7a-4c0d-9224-ff174150e2d0",
+    "statement": "Homem assintomático de 66 anos com histórico de hiperlipidemia, diabetes mellitus tipo 2 e hipertensão arterial é atendido em consulta de rotina. Ele tem antecedente de tabagismo de 15 anos-maço e parou de fumar há 30 anos. Refere beber uma taça de 300 mL de vinho tinto por dia e diz que faz longas caminhadas diariamente para se exercitar. Relata tomar a vacina contra a gripe anualmente e que recebeu a vacina pneumocócica no ano passado. Uma colonoscopia, realizada há 5 anos, com resultado normal. Medicações de uso contínuo: enalapril, anlodipino e rosuvastatina. Seus sinais vitais são normais e o exame físico não apresenta alterações.\n\nCom base nas melhores evidências comprovadas de benefício, a próxima conduta para o rastreamento e promoção da saúde é solicitar",
+    "options": [
+      {
+        "id": "A",
+        "text": "angiotomografia de coronárias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "antígeno prostático específico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "teste de esforço em esteira (ergométrico).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tomografia computadorizada de tórax de baixa dose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ultrassom abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente em questão é um homem de 66 anos, ex-tabagista, com fatores de risco cardiovasculares (hipertensão, diabetes e hiperlipidemia), mas que se encontra assintomático e com exames de rastreamento de câncer colorretal e vacinação em dia. A questão exige o conhecimento das diretrizes de rastreamento populacional baseadas em evidências, especificamente para a faixa etária e o histórico de exposição.\n\nPOR QUE A ALTERNATIVA (E) ESTÁ CORRETA?\n\nO rastreamento do aneurisma de aorta abdominal (AAA) é recomendado para homens entre 65 e 75 anos que já fumaram em algum momento da vida (mesmo que tenham parado, como é o caso do paciente, que tem histórico de 15 anos-maço). A evidência (como as recomendações da USPSTF e de sociedades de cardiologia/cirurgia vascular) demonstra que a realização de um ultrassom de abdome total ou da aorta, uma única vez nessa faixa etária, reduz a mortalidade relacionada ao rompimento do aneurisma em ex-tabagistas do sexo masculino. Como o paciente tem 66 anos e histórico de tabagismo, o ultrassom é a conduta indicada.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Angiotomografia de coronárias: Não é recomendada como exame de rastreamento para pacientes assintomáticos, independentemente dos fatores de risco cardiovasculares. É um exame utilizado para estratificação em casos específicos de dor torácica duvidosa ou em cenários clínicos muito pontuais, mas não tem indicação em check-up de rotina para promoção da saúde.\n\nb) Antígeno prostático específico (PSA): O rastreamento do câncer de próstata é um tema de decisão compartilhada entre médico e paciente para homens entre 55 e 69 anos. Embora pudesse ser discutido, o ultrassom abdominal para AAA em ex-tabagistas possui um nível de evidência de benefício populacional mais consolidado em diretrizes internacionais para essa faixa etária específica do que o rastreamento universal com PSA.\n\nc) Teste de esforço em esteira (ergométrico): Não há indicação de teste ergométrico para pacientes assintomáticos que já realizam atividade física vigorosa (como as longas caminhadas diárias citadas) sem apresentar sintomas. O rastreamento de doença arterial coronariana em indivíduos assintomáticos com exames de esforço não reduz eventos cardiovasculares e pode levar a procedimentos invasivos desnecessários.\n\nd) Tomografia computadorizada de tórax de baixa dose: O rastreamento de câncer de pulmão é indicado para adultos de 50 a 80 anos com carga tabágica de pelo menos 20 anos-maço e que sejam fumantes ativos ou tenham parado há menos de 15 anos. O paciente em questão tem apenas 15 anos-maço e parou de fumar há 30 anos; portanto, não preenche os critérios para esse rastreamento.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:35.365Z"
+  },
+  {
+    "id": "AJUDA_3a4ccaaa-e563-4873-bd98-098ae6fe2761",
+    "originalId": "3a4ccaaa-e563-4873-bd98-098ae6fe2761",
+    "statement": "Na puberdade, em resposta à ação das gonadotrofinas, inicia-se nos ovários o processo de esteroidogênese. Em relação a esse processo, assinale a alternativa que apresenta o local em que ele é realizado e a enzima responsável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nas células da teca, sob a ação da aromatase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nas células da granulosa, sob a ação da 21-hidroxilase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nas células da teca e da granulosa, sob a ação da aromatase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nas células da teca, sob a ação da 21-hidroxilase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nas células da granulosa, sob a ação da aromatase.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A esteroidogênese ovariana funciona com base na Teoria das Duas Células e Duas Gonadotrofinas, um modelo de cooperação essencial para a síntese final de estrogênios:\n\n1. Células da Teca: Estimuladas pelo LH, captam o colesterol e produzem androgênios (como androstenediona e testosterona). Elas não possuem a enzima aromatase, portanto não sintetizam estrogênios diretamente.\n2. Células da Granulosa: Estimuladas pelo FSH, expressam a enzima aromatase (CYP19A1). Elas recebem os androgênios sintetizados pela teca e os convertem em estrogênios (estrona e estradiol).\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. A aromatase não está presente nas células da teca; ela é expressa exclusivamente nas células da granulosa. As células da teca realizam a síntese de androgênios.\n\nAlternativa B - Incorreta. A enzima 21-hidroxilase atua no córtex da adrenal na síntese de mineralocorticoides e glicocorticoides (sendo o defeito clássico da Hiperplasia Adrenal Congênita), não participando da esteroidogênese ovariana normal.\n\nAlternativa C - Incorreta. Embora a esteroidogênese como processo global dependa de ambos os tipos celulares, a enzima aromatase atua especificamente nas células da granulosa, e não nas células da teca.\n\nAlternativa D - Incorreta. A 21-hidroxilase é uma enzima do córtex adrenal e não atua na produção ovariana de estrogênios.\n\nAlternativa E - Correta. A aromatização (conversão final de androgênios em estrogênios) ocorre nas células da granulosa, mediada pela enzima aromatase sob estímulo do FSH.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ciclo Menstrual",
+      "Puberdade"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:35.365Z"
+  }
+]

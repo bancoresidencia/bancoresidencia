@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_881e3fcf-6b86-425c-a846-73cc3532ba57",
+    "originalId": "881e3fcf-6b86-425c-a846-73cc3532ba57",
+    "statement": "Menino de 8 anos apresenta febre alta, dor de garganta, vômitos e cefaleia há 24 h. Está em uso de amoxacilina há 24 h. Exame físico: hipoativo, faringe hiperemiada com placas esbranquiçadas sobre as amígdalas, língua saburrosa com papilas evidentes e adenomegalia cervical, exantema micropapular avermelhado em todo o tegumento, que poupa região perioral e some à digitopressão, acentuado nas pregas poplíteas e na região cubital. O diagnóstico e a conduta corretos são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "mononucleose infecciosa; uso de sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "farmacodermia; suspensão do antibiótico e uso de corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sarampo; vitamina A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "escarlatina; penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão descreve um quadro clínico clássico de escarlatina, uma doença exantemática causada pelas exotoxinas pirogênicas do Streptococcus pyogenes (estreptococo beta-hemolítico do grupo A). O paciente apresenta a tríade de febre alta, faringite estreptocócica e o exantema característico.\n\nO exantema da escarlatina é classicamente descrito como micropapular, conferindo à pele uma textura de lixa (pele de ganso). O enunciado traz dois sinais clínicos patognomônicos que confirmam o diagnóstico:\n1. Sinal de Filatov: palidez ao redor da boca (região perioral) que contrasta com a face avermelhada.\n2. Sinal de Pastia: acentuação do exantema nas áreas de dobras cutâneas (como as pregas cubitais e poplíteas), formando linhas hemorrágicas que não desaparecem à digitopressão.\nAlém disso, a descrição da língua saburrosa com papilas evidentes corresponde à fase inicial da língua em morango, típica da doença.\n\nAnálise das alternativas:\n\na) Incorreta. A mononucleose infecciosa cursa com febre, faringite e linfonodomegalia (frequentemente em cadeia posterior), mas o exantema que surge após o uso inadvertido de amoxicilina é do tipo maculopapular e não apresenta os sinais de Pastia e Filatov. O tratamento para mononucleose é de suporte (sintomáticos).\n\nb) Incorreta. Embora o paciente esteja em uso de amoxicilina há 24 horas, os sinais específicos (faringite com placas, sinal de Filatov e sinal de Pastia) indicam uma etiologia infecciosa bacteriana (escarlatina) e não uma reação alérgica medicamentosa (farmacodermia).\n\nc) Incorreta. O sarampo apresenta um pródromo marcado por sintomas catarrais (tosse, coriza, conjuntivite), manchas de Koplik e um exantema maculopapular morbiliforme que se inicia na linha do cabelo e progride de forma craniocaudal, o que difere do quadro descrito. A vitamina A é o tratamento padrão para sarampo, mas o diagnóstico clínico não corresponde.\n\nd) Correta. O diagnóstico de escarlatina é clínico, baseado na faringite e no exantema micropapular com os sinais de Pastia e Filatov. O tratamento de escolha é a erradicação do Streptococcus pyogenes com antibióticos, sendo a penicilina benzatina a opção clássica e eficaz para prevenir complicações como a febre reumática.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:57.599Z"
+  },
+  {
+    "id": "AJUDA_882010b5-bf18-4efe-bd9f-e01487e55370",
+    "originalId": "882010b5-bf18-4efe-bd9f-e01487e55370",
+    "statement": "Paciente com dispneia progressiva, TCAR mostrando faveolamento e bronquiectasias de tração. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Asma grave",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fibrose pulmonar idiopática",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sarcoidose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pneumonite por hipersensibilidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Derrame pleural recidivante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Explicação:\n\nA questão descreve um quadro clínico e radiológico clássico de uma doença pulmonar intersticial fibrosante. A combinação de dispneia progressiva com achados de Tomografia Computadorizada de Alta Resolução (TCAR) que demonstram faveolamento e bronquiectasias de tração define o padrão de Pneumonia Intersticial Usual (PIU). No contexto clínico adequado, esse padrão é o pilar diagnóstico da Fibrose Pulmonar Idiopática (FPI).\n\nAlternativa a: Incorreta. A asma grave é uma doença obstrutiva das vias aéreas. Na TCAR, os achados comuns incluem espessamento das paredes brônquicas e áreas de aprisionamento aéreo (vistas na fase expiratória). O faveolamento e as bronquiectasias de tração são sinais de fibrose e distorção da arquitetura pulmonar, o que não faz parte da fisiopatologia da asma.\n\nAlternativa b: Correta. A Fibrose Pulmonar Idiopática é a causa mais comum de pneumonia intersticial idiopática. O padrão radiológico de Pneumonia Intersticial Usual (PIU) é caracterizado justamente pela presença de faveolamento (cistos subpleurais com paredes compartilhadas), bronquiectasias e bronquiolectasias de tração, além de um gradiente de distribuição que costuma ser predominantemente basal e subpleural.\n\nAlternativa c: Incorreta. Embora a sarcoidose possa evoluir para fibrose em seu estágio IV, os achados típicos da doença incluem linfonodomegalias hilares bilaterais e mediastinais, além de micronódulos de distribuição perilinfática (ao longo das fissuras e feixes broncovasculares). A fibrose na sarcoidose geralmente tem uma distribuição predominante em campos pulmonares superiores e médios.\n\nAlternativa d: Incorreta. A Pneumonite por Hipersensibilidade (PH), em sua forma fibrótica, pode mimetizar a FPI. No entanto, a PH costuma apresentar outros achados associados, como atenuação em mosaico (áreas de aprisionamento aéreo), nódulos centrolobulares em vidro fosco e, frequentemente, poupa as bases pulmonares, apresentando uma distribuição mais difusa ou com predomínio em campos superiores.\n\nAlternativa e: Incorreta. O derrame pleural recidivante é o acúmulo de líquido no espaço pleural de forma recorrente. Essa é uma alteração do espaço pleural, e não do parênquima pulmonar. Não há relação entre derrame pleural e a formação de faveolamento ou bronquiectasias de tração no tecido do pulmão.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:57.599Z"
+  },
+  {
+    "id": "AJUDA_8823f028-18b2-41ba-87f6-831279c1b562",
+    "originalId": "8823f028-18b2-41ba-87f6-831279c1b562",
+    "statement": "Os pais de um menino morador da capital de São Paulo, que está com 6 anos e tem diagnóstico de deficiência de G-6PD (Glico-se-6 fosfato desidrogenase), querem saber se existe alguma doença cujo tratamento seja de alto risco para hemólise grave, bem como algum alimento, uma vez que desejam viajar e querem estar mais seguros. O médico deve esclarecer que convém evitar exposição a",
+    "options": [
+      {
+        "id": "A",
+        "text": "gergelim.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "malária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "salmonela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "alga.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "lentilha.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A deficiência de G-6PD (glicose-6-fosfato desidrogenase) é uma condição genética ligada ao cromossomo X que torna as hemácias suscetíveis ao estresse oxidativo. A enzima G-6PD é fundamental para produzir NADPH, que mantém a glutationa em seu estado reduzido, protegendo a hemoglobina contra danos oxidativos. Na ausência dessa proteção, a exposição a certos gatilhos causa a precipitação da hemoglobina (corpúsculos de Heinz) e a hemólise aguda.\n\nAlternativa (a) Incorreta: O gergelim não é reconhecido como um gatilho oxidativo para pacientes com deficiência de G-6PD. Os cuidados dietéticos focam primordialmente nas favas.\n\nAlternativa (b) Correta: A malária, especificamente o seu tratamento, representa um grande risco para esses pacientes. A primaquina, medicamento essencial para a cura radical da malária por Plasmodium vivax (eliminando hipnozoítos no fígado), é um potente agente oxidante. Em indivíduos com deficiência de G-6PD, o uso de primaquina pode desencadear uma crise hemolítica grave e potencialmente fatal. Como os pais mencionam o desejo de viajar, a preocupação com áreas endêmicas de malária e a necessidade de testagem antes de usar tal medicação são pontos fundamentais da orientação médica.\n\nAlternativa (c) Incorreta: Embora infecções bacterianas agudas (incluindo a salmonela) possam atuar como gatilhos para crises hemolíticas na deficiência de G-6PD devido à liberação de radicais livres pelos leucócitos, o tratamento padrão da salmonelose (como ceftriaxona ou ciprofloxacino) não é classificado como de alto risco hemolítico comparável à primaquina no tratamento da malária.\n\nAlternativa (d) Incorreta: Não há evidências científicas que correlacionem o consumo de algas com episódios de hemólise em pacientes deficientes de G-6PD.\n\nAlternativa (e) Incorreta: Existe uma confusão comum entre leguminosas. O alimento clássico que causa hemólise nesses pacientes é a fava (Vicia faba), fenômeno conhecido como favismo. Embora algumas diretrizes muito restritivas sugiram cautela com outras leguminosas, a lentilha não é considerada um gatilho de alto risco estabelecido como a fava ou os medicamentos oxidantes.\n\nResumo: O foco da questão é a segurança farmacológica em viagens. O tratamento da malária com primaquina é o exemplo clássico de risco de hemólise grave em pacientes com deficiência de G-6PD.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Malária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:57.599Z"
+  },
+  {
+    "id": "AJUDA_882ce53f-56f2-4034-9acc-5fd342cdd56d",
+    "originalId": "882ce53f-56f2-4034-9acc-5fd342cdd56d",
+    "statement": "Sobre a hipertensão arterial sistêmica, analise as assertivas a seguir:\n\nI. Para diagnóstico, indica-se a medição anual de pressão arterial se a pressão arterial aferida for inferior a 140/90 mmHg.\nII. O diagnóstico da hipertensão arterial sistêmica deve ser baseado na medição da pressão fora do consultório com monitorização ambulatorial da pressão arterial, desde que seja viável sua realização.\nIII. História prévia de pré-eclâmpsia em mulheres é fator de risco para hipertensão arterial sistêmica.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Item I: De acordo com as diretrizes brasileiras de hipertensão, a periodicidade da reavaliação da pressão arterial depende dos valores obtidos na triagem. Para pacientes com pressão arterial normal (120-129 / 80-84 mmHg) ou pré-hipertensão (130-139 / 85-89 mmHg), recomenda-se a medição anual. Como a assertiva menciona o limite inferior a 140/90 mmHg, ela engloba essas categorias que exigem o acompanhamento anual para o diagnóstico precoce, tornando o item correto.\n\nItem II: As diretrizes mais recentes recomendam que, sempre que possível e viável, o diagnóstico de hipertensão arterial sistêmica seja confirmado por medidas realizadas fora do consultório. O uso da Monitorização Ambulatorial da Pressão Arterial (MAPA) ou da Monitorização Residencial da Pressão Arterial (MRPA) é preferível porque permite identificar fenômenos como a hipertensão do avental branco (pressão alta apenas no médico) e a hipertensão mascarada (pressão normal no médico, mas alta em casa), oferecendo maior precisão diagnóstica. Portanto, o item está correto.\n\nItem III: A história prévia de pré-eclâmpsia ou outras síndromes hipertensivas da gestação é um fator de risco cardiovascular bem estabelecido e específico do sexo feminino. Mulheres que passaram por essas condições têm uma probabilidade significativamente maior de desenvolver hipertensão arterial crônica, diabetes e doenças isquêmicas do coração ao longo da vida. Assim, o item está correto.\n\nComo as três assertivas estão corretas, a alternativa correta é a letra (d).",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:57.599Z"
+  },
+  {
+    "id": "AJUDA_8833d206-d3d6-4b22-882b-dba9d76e904f",
+    "originalId": "8833d206-d3d6-4b22-882b-dba9d76e904f",
+    "statement": "Na avaliação de um paciente vítima de trauma, qual é a primeira conduta a ser tomada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Provocar resposta verbal e proteger coluna cervical.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Máscara laríngea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Expor todo o paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mobilizar todas as extremidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Oximetria de pulso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A abordagem sistemática do paciente vítima de trauma é regida pelo protocolo ATLS (Advanced Trauma Life Support), que utiliza o mnemônico ABCDE para priorizar o atendimento às lesões que oferecem risco imediato à vida. No entanto, o primeiro contato com o paciente exige uma avaliação rápida e simultânea que precede ou inicia o passo A.\n\nAlternativa (a): CORRETA. A primeira conduta ao abordar um paciente politraumatizado é avaliar a responsividade (provocar resposta verbal) e garantir a estabilização manual da coluna cervical. Ao perguntar \"Como você se chama?\" ou \"O que aconteceu?\", se o paciente responde de forma clara, o médico confirma simultaneamente que a via aérea está pérvia (passo A), que a ventilação está minimamente preservada (passo B) e que há perfusão cerebral adequada com nível de consciência preservado (passo D). A proteção da coluna cervical deve ser feita de forma imediata para evitar lesões medulares secundárias.\n\nAlternativa (b): INCORRETA. A máscara laríngea é um dispositivo supraglótico utilizado para o manejo de via aérea, mas não é a primeira conduta. Ela pode ser usada como um método auxiliar ou de resgate caso a intubação orotraqueal falhe ou não seja possível, situando-se dentro do passo A, mas após a avaliação inicial.\n\nAlternativa (c): INCORRETA. A exposição total do paciente para busca de lesões ocultas e o controle do ambiente (prevenção de hipotermia) correspondem à letra E do exame primário. Trata-se da última etapa da avaliação inicial, realizada somente após o paciente estar estabilizado nos passos anteriores.\n\nAlternativa (d): INCORRETA. No trauma, a regra é a imobilização, e não a mobilização de extremidades. A movimentação desnecessária de membros ou do tronco pode agravar fraturas e causar sangramentos internos graves ou lesões neurológicas. A avaliação osteomuscular detalhada ocorre apenas no exame secundário.\n\nAlternativa (e): INCORRETA. A oximetria de pulso é um exame complementar adjunto ao exame primário, geralmente realizado durante a avaliação da respiração e ventilação (passo B). Embora seja importante para monitorar a saturação de oxigênio, não precede a avaliação da responsividade e a proteção cervical.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:57.599Z"
+  },
+  {
+    "id": "AJUDA_8835dfd1-d9ed-4def-93e6-e8ed79426907",
+    "originalId": "8835dfd1-d9ed-4def-93e6-e8ed79426907",
+    "statement": "Criança, 10 anos de idade, previamente hígida, é trazida ao pronto-socorro com queixa de febre alta (39,5 °C), tosse produtiva com expectoração amarelada, dor torácica em hemitórax direito e dificuldade respiratória, há 3 dias. Os pais relatam que a criança apresentou início súbito dos sintomas após um episódio de resfriado comum, há 1 semana. Ao exame físico, a criança encontra-se em regular estado geral, taquipneica, com tiragem subcostal e estertores crepitantes no terço inferior do pulmão direito. Oximetria de pulso com saturação de 90% em ar ambiente.\nConsiderando esse caso, assinale a alternativa que apresenta, corretamente, a conduta mais apropriada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observar a evolução sem prescrição de antibiótico e reavaliação clínica em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar amoxicilina oral em dose baixa por 5 dias e reavaliar ambulatorialmente em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internar e iniciar ampicilina intravenosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever azitromicina para cobrir Mycoplasma pneumoniae, associada à amoxicilina em dose alta, com tratamento ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar tomografia computadorizada de tórax para confirmar o diagnóstico e nortear a terapêutica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma criança de 10 anos com sinais clássicos de Pneumonia Adquirida na Comunidade (PAC). Os pontos fundamentais para a decisão terapêutica são: febre alta, tosse produtiva, dor torácica e sinais de desconforto respiratório (tiragem subcostal e taquipneia). O fator determinante para a conduta aqui é a gravidade clínica evidenciada pela hipoxemia (saturação de 90% em ar ambiente).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A criança apresenta uma infecção bacteriana evidente (febre alta, tosse produtiva, estertores localizados) e sinais de insuficiência respiratória. A conduta expectante é contraindicada e perigosa, pois há necessidade imediata de suporte de oxigênio e antibioticoterapia.\n\nAlternativa B (Incorreta): Embora a amoxicilina seja a droga de escolha para tratamento ambulatorial de PAC, este paciente apresenta critérios de internação. Além disso, a hipoxemia (SatO2 < 92%) e o esforço respiratório impedem o tratamento domiciliar seguro. A \"dose baixa\" também não seria recomendada em casos de suspeita de resistência pneumocócica.\n\nAlternativa C (Correta): Esta é a conduta padrão. De acordo com as diretrizes da Sociedade Brasileira de Pediatria (SBP), a presença de sinais de gravidade (taquipneia importante, tiragem e, principalmente, SatO2 < 92%) indica internação hospitalar. Em ambiente hospitalar, a via intravenosa é preferencial inicialmente, e a ampicilina (ou penicilina cristalina) é o antibiótico de escolha para cobrir o Streptococcus pneumoniae, principal agente etiológico nessa faixa etária.\n\nAlternativa D (Incorreta): O Mycoplasma pneumoniae é um agente comum em crianças escolares, mas o quadro clínico descrito (início súbito, febre muito alta, sinais localizados) é mais sugestivo de pneumonia típica (pneumococo). Mesmo que se considerasse o uso de macrolídeos, a gravidade do paciente exige internação e estabilização de oxigênio, não permitindo o tratamento ambulatorial.\n\nAlternativa E (Incorreta): O diagnóstico de pneumonia na infância é eminentemente clínico. Se houver necessidade de exame de imagem, o raio-X de tórax em incidências frente e perfil é o padrão inicial para avaliar extensões ou complicações (como derrame pleural). A tomografia computadorizada é um exame de alta radiação e deve ser reservado para casos de complicações graves, abscessos ou falta de resposta ao tratamento, não sendo necessária para o manejo inicial deste caso.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Pneumonia na Infância",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:57.599Z"
+  },
+  {
+    "id": "AJUDA_883c9001-ced3-4ae8-876a-f9165665cea0",
+    "originalId": "883c9001-ced3-4ae8-876a-f9165665cea0",
+    "statement": "Menina, 13 anos de idade, apresenta queixa de lesões em face que pioram com o sol, além de dor e edema nas articulações de punhos e alguns dedos há 3 meses. Refere febre esporádica. Apresenta alteração de urina, que está escura e com espuma. Qual é a alteração mais provável de ser encontrada no exame de urina?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hematúria com dismorfismo eritrocitário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Leucocitúria sem cilindrúria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Relação proteinúria/creatinúria <0,2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alteração de pH e cilindros hialinos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta uma adolescente com um quadro clássico de Lúpus Eritematoso Sistêmico (LES), caracterizado por fotossensibilidade (lesões que pioram com o sol), artrite de pequenas articulações (punhos e dedos) e sintomas constitucionais (febre). A descrição de urina escura, sugerindo hematúria, e com espuma, sugerindo proteinúria, indica o desenvolvimento de Nefrite Lúpica, uma das complicações mais graves e comuns da doença.\n\nAlternativa A: Correta. A Nefrite Lúpica é uma glomerulonefrite. Quando há inflamação dos glomérulos, as hemácias atravessam a barreira de filtração glomerular e sofrem deformações estruturais durante esse trajeto e pela passagem nos túbulos renais. Esse fenômeno é chamado de dismorfismo eritrocitário e é um marcador clássico de sangramento de origem glomerular, sendo o achado mais provável diante da urina escura relatada no contexto de uma doença sistêmica como o lúpus.\n\nAlternativa B: Incorreta. Embora a leucocitúria possa estar presente no lúpus (quadro conhecido como piúria estéril), a alternativa afirma a ausência de cilindrúria. Na nefrite ativa, o encontro de cilindros (especialmente cilindros hemáticos e granulosos) é um achado esperado e fundamental para caracterizar o chamado sedimento urinário ativo.\n\nAlternativa C: Incorreta. A relação proteinúria/creatinúria menor que 0,2 indica valores normais de excreção de proteínas. A queixa de urina com espuma sugere fortemente uma proteinúria clinicamente significativa. Na Nefrite Lúpica, espera-se encontrar valores elevados de proteinúria, frequentemente acima de 0,5 ou até em níveis nefróticos (acima de 3,5), o que resultaria em uma relação proteinúria/creatinúria bem superior a 0,2.\n\nAlternativa D: Incorreta. Cilindros hialinos são formados basicamente por proteínas de Tamm-Horsfall e podem ser encontrados em situações fisiológicas, como desidratação, febre ou após exercícios físicos intensos, não sendo marcadores de lesão inflamatória glomerular. O pH urinário isolado é um dado inespecífico e não auxilia no diagnóstico de atividade de nefrite lúpica.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:57.599Z"
+  },
+  {
+    "id": "AJUDA_8844072a-94a5-4a06-8264-f3ce498a3fe1",
+    "originalId": "8844072a-94a5-4a06-8264-f3ce498a3fe1",
+    "statement": "São parâmetros, nas classes de choque Hemorrágico do ATLS, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliação pupilar",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pulso (batimentos\\min)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Frequência Respiratória",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Perda de sangue (%)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Urina (mL\\h)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para responder corretamente a essa questão, devemos lembrar da tabela de Classificação de Choque Hemorrágico do ATLS (10ª edição), que estratifica a gravidade da perda volêmica em quatro classes (I a IV). Essa classificação utiliza parâmetros clínicos e fisiológicos para estimar a gravidade do quadro e guiar a reposição volêmica.\n\nA seguir, a análise de cada alternativa:\n\nAlternativa A (Incorreta/Gabarito): A avaliação pupilar faz parte do exame neurológico detalhado e da avaliação do \"D\" (Déficit neurológico) do exame primário. Embora o estado mental (nível de consciência, ansiedade ou confusão) seja um parâmetro da tabela de choque do ATLS, o exame das pupilas especificamente não é utilizado para classificar os estágios do choque hemorrágico.\n\nAlternativa B (Correta): O pulso (frequência cardíaca) é um dos primeiros sinais a se alterar. No choque Classe I, a frequência costuma estar normal; na Classe II, surge a taquicardia (>100 bpm); e nos graus III e IV, a taquicardia torna-se mais severa (>120 ou >140 bpm).\n\nAlternativa C (Correta): A frequência respiratória aumenta progressivamente conforme o choque se agrava, como uma tentativa de compensar a acidose metabólica decorrente da má perfusão tecidual.\n\nAlternativa D (Correta): A estimativa da perda de sangue em porcentagem é a base teórica da classificação. Classe I (até 15%), Classe II (15-30%), Classe III (30-40%) e Classe IV (acima de 40%).\n\nAlternativa E (Correta): O débito urinário (medido em mL/h) é um excelente marcador de perfusão orgânica. Ele diminui à medida que o volume circulante cai, sendo discretamente reduzido na Classe II e significativamente baixo ou ausente nas Classes III e IV.\n\nResumo dos parâmetros oficiais do ATLS para choque hemorrágico: Perda de sangue (estimada), frequência cardíaca (pulso), pressão arterial, pressão de pulso, frequência respiratória, débito urinário, estado mental (consciência) e a necessidade inicial de reposição de fluidos/sangue. Como a avaliação pupilar não consta nesta lista, a alternativa A é a resposta da questão.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:57.599Z"
+  },
+  {
+    "id": "AJUDA_8848e9b3-81c0-4a33-924f-89b5a82c995f",
+    "originalId": "8848e9b3-81c0-4a33-924f-89b5a82c995f",
+    "statement": "Homem, 56 anos, com diagnóstico de diabetes tipo 2 há 7 anos, refere fadiga progressiva, perda de peso de 4 kg em 3 meses e poliúria. Em uso de metformina 850 mg 3x/dia, gliclazida 120 mg/dia, dapaglifozina 10 mg/dia. Admite baixa adesão às orientações dietéticas. Nega prática de atividade física. Nega episódios de hipoglicemia. Exame físico: IMC: 28 kg/m², PA: 142x86 mmHg, FC: 84 bpm. Turgência jugular presente a 45 graus. Edema 2+/4+ bilateral e simétrico em membros inferiores. Exames laboratoriais: glicemia de jejum: 270 mg/dL, Hemoglobina A1c: 10,8%, creatinina: 1,0 mg/dL, função hepática e hemograma: normais.\nQual é a conduta mais indicada para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar insulina regular antes do almoço e jantar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender dapaglifozina e iniciar pioglitazona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter esquema atual e reforçar adesão à dieta e exercício.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender gliclazida e iniciar insulina NPH e regular.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O paciente apresenta diabetes mellitus tipo 2 com descompensação metabólica grave e sinais francos de catabolismo (perda ponderal inexplicada de 4 kg em 3 meses, poliúria, fadiga importante), além de hemoglobina glicada muito elevada (10,8%) e glicemia de jejum de 270 mg/dL, a despeito do uso de terapia tripla oral em doses otimizadas (metformina, sulfonilureia e iSGLT2). O exame físico também sugere insuficiência cardíaca associada (turgência jugular e edema em membros inferiores). \n\nDiante de falência de terapia oral associada a catabolismo e HbA1c maior que 10%, a indicação formal segundo as diretrizes da Sociedade Brasileira de Diabetes (SBD) e da ADA é o início imediato de insulinização plena.\n\nAnálise das alternativas:\n\na) Incorreta. O uso isolado de insulina regular pré-refeições (insulina prandial) não corrige a hiperglicemia de jejum nem suprime a produção hepática de glicose entre as refeições. O tratamento necessita primariamente de uma cobertura basal (com NPH ou análogos de longa ação).\n\nb) Incorreta. A pioglitazona é formalmente contraindicada em pacientes com sinais de insuficiência cardíaca ou sobrecarga volêmica (como turgência jugular e edema de membros inferiores), pois causa retenção hídrica e piora o quadro congestivo. Além disso, a dapagliflozina traz benefício cardiovascular comprovado e deve ser mantida.\n\nc) Incorreta. O paciente apresenta falência funcional das células beta pancreáticas e glicotoxicidade grave. Embora as mudanças no estilo de vida sejam fundamentais, mantê-lo apenas no esquema atual é insuficiente e posterga o tratamento de resgate metabólico necessário.\n\nd) Correta. A conduta padrão para o resgate metabólico em paciente sintomático e com HbA1c acima de 10% em falência de terapia oral é a introdução de insulinoterapia basal-bolus (NPH e regular). Ao iniciar o esquema pleno de insulina, a sulfonilureia (gliclazida) deve ser suspensa, pois o estímulo à secreção endógena perde eficácia e eleva desnecessariamente o risco de hipoglicemia. A metformina e o iSGLT2 são tipicamente mantidos.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:57.599Z"
+  },
+  {
+    "id": "AJUDA_884a9136-7874-4371-bda7-205c981e9aff",
+    "originalId": "884a9136-7874-4371-bda7-205c981e9aff",
+    "statement": "Você está de plantão em um Pronto Atendimento e avalia uma criança de 4 anos de idade com quadro, há dois dias, de febre alta, inapetência, vômitos e dor abdominal aguda, em cólica, com piora ao deambular. Há relato de piora progressiva. Os pais estão ansiosos e pensam que pode ser apendicite. Considerando as causas de dor abdominal aguda na infância, assinale a alternativa ERRADA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apendicite aguda é a causa mais comum de dor abdominal de indicação cirúrgica em lactentes, sendo o diagnóstico difícil face à apresentação atípica e à dificuldade de se obter a história clínica e realizar o exame físico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A radiografia simples de abdome pode mostrar sinais de alerta como o apagamento do músculo psoas no quadrante inferior direito, a presença de alça sentinela, níveis líquidos em alça intestinal, massa intra abdominal e fecalito",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em crianças menores de 3 anos de idade, devido à dificuldade em diagnosticar apendicite, a taxa de perfuração é alta, ocorrendo geralmente nas primeiras 48 horas após o início dos sintomas clínicos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os escores de Alvarado e o PAS (Pediatric Appendicitis Score) utilizam elementos da história clínica, exame físico e resultados de exames laboratoriais para identificação de pacientes com alta probabilidade de apendicite",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO objetivo da questão é identificar a alternativa INCORRETA sobre a dor abdominal aguda na infância, com foco especial na apendicite aguda, que é a principal suspeita no caso clínico apresentado.\n\nALTERNATIVA A (INCORRETA/GABARITO): A afirmação está errada porque define a apendicite aguda como a causa mais comum de dor abdominal cirúrgica em lactentes. Na verdade, a apendicite é extremamente rara em lactentes (crianças de 29 dias a 2 anos). Nessa faixa etária específica, a causa cirúrgica mais comum é a intussuscepção intestinal (ou invaginação). A apendicite aguda assume o posto de principal causa de abdome agudo cirúrgico em crianças em idade escolar e adolescentes. Embora a parte final da alternativa esteja correta (diagnóstico difícil e apresentação atípica em crianças pequenas), o erro reside na definição epidemiológica para o grupo dos lactentes.\n\nALTERNATIVA B (CORRETA): A radiografia simples de abdome não é o exame de escolha para o diagnóstico (sendo a ultrassonografia preferencial na pediatria), mas pode, sim, apresentar sinais indiretos importantes. O apagamento da linha do músculo psoas e a presença de escoliose antálgica sugerem processo inflamatório retroperitoneal. A alça sentinela (dilatação de alça próxima ao foco) e níveis hidroaéreos indicam íleo paralítico localizado. A presença de um fecalito (apendicolito) calcificado é um sinal altamente específico para apendicite em crianças com dor abdominal.\n\nALTERNATIVA C (CORRETA): Em crianças menores de 3 anos, o diagnóstico é frequentemente tardio porque os sintomas são inespecíficos (irritabilidade, recusa alimentar, diarreia) e a criança não consegue localizar a dor. Além disso, o omento (epíplon) é menos desenvolvido nessa idade, o que dificulta o bloqueio da infecção. Isso resulta em taxas de perfuração muito elevadas, que podem chegar a 80-100% nessa faixa etária, ocorrendo rapidamente após o início dos sintomas.\n\nALTERNATIVA D (CORRETA): Os sistemas de escore são ferramentas valiosas para a triagem. O Escore de Alvarado e o PAS (Pediatric Appendicitis Score) são os mais conhecidos. Eles pontuam critérios como migração da dor, anorexia, náuseas/vômitos, defesa em quadrante inferior direito, dor à descompressão, febre, leucocitose e desvio à esquerda no hemograma. Pacientes com pontuações baixas podem ser observados ou liberados, enquanto pontuações altas indicam necessidade de avaliação cirúrgica ou exames de imagem confirmatórios.\n\nRESUMO: A alternativa A é a errada porque a apendicite aguda é a principal causa cirúrgica em escolares e adolescentes, não em lactentes.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Cirurgia Infantil",
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:57.599Z"
+  }
+]

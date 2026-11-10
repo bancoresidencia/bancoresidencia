@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_5560b089-ac13-4241-8ce4-96f63b4f1372",
+    "originalId": "5560b089-ac13-4241-8ce4-96f63b4f1372",
+    "statement": "Gestante G3P0, 40 semanas, período expulsivo há 50 min, analgesiada por duplo bloqueio, apresenta desaceleração prolongada de 6 min na cardiotocografia, não responsiva a medidas iniciais de ressuscitação fetal. Ao toque: dilatação total, occípito-direita-anterior, plano +2 de De Lee, pelve adequada e líquido claro. Qual a conduta mais adequada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Monitorar e aguardar recuperação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cesariana de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar ocitocina para abreviar expulsivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Parto vaginal instrumental imediato (fórcipe/vácuo).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é necessário identificar a urgência obstétrica e avaliar as condições técnicas para a realização de um parto vaginal assistido.\n\nA paciente encontra-se no período expulsivo (segundo estágio do parto) e apresenta um sinal de sofrimento fetal agudo grave: uma desaceleração prolongada de 6 minutos que não respondeu às medidas de ressuscitação fetal (como decúbito lateral esquerdo, oxigenoterapia e hidratação). Diante de um comprometimento da vitalidade fetal no período expulsivo, a conduta deve ser a abreviação imediata do nascimento.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Diante de uma desaceleração de 6 minutos sem resposta às manobras iniciais, a monitorização passiva é contraindicada. A persistência da bradicardia ou de desacelerações profundas indica risco iminente de acidose metabólica, lesão neurológica e óbito fetal.\n\nAlternativa b) Incorreta. Embora a cesariana seja uma via para interromper a gestação, ela não é a mais rápida neste contexto. A paciente está com dilatação total e o feto encontra-se no plano +2 de De Lee (cabeça baixa e encaixada). Preparar o centro cirúrgico e realizar a laparotomia levaria mais tempo do que o parto instrumental. Além disso, a extração de um feto profundamente encaixado por via abdominal aumenta o risco de lacerações uterinas e trauma fetal.\n\nAlternativa c) Incorreta. A ocitocina aumenta o número e a intensidade das contrações, o que reduz o aporte de oxigênio para o feto através da placenta. Em um cenário de sofrimento fetal agudo, o objetivo é aliviar o estresse uterino e retirar o feto, e não estimular ainda mais a atividade contrátil.\n\nAlternativa d) Correta. O parto instrumental (fórcipe ou vácuo-extrator) é a conduta de escolha para abreviar o período expulsivo em situações de sofrimento fetal, desde que os critérios de aplicabilidade sejam preenchidos. No caso descrito, a paciente apresenta todos os requisitos: dilatação total, bolsa rota (implícito pelo plano avançado), pelve adequada, posição fetal conhecida (occipito-direita-anterior) e, crucialmente, o feto está no plano +2 de De Lee (estação baixa), o que torna a extração instrumental segura e imediata.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Parto Vaginal Operatório",
+      "Vitalidade Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:38.053Z"
+  },
+  {
+    "id": "AJUDA_55637958-db05-4733-be7b-7359a5f74e55",
+    "originalId": "55637958-db05-4733-be7b-7359a5f74e55",
+    "statement": "Segundo o Ministério da Saúde, no Brasil, as causas externas de morbimortalidade em crianças e adolescentes de 1 a 19 anos incluem acidentes (lesões não intencionais) e violências intencionais. De acordo com dados do DATASUS apenas os acidentes foram responsáveis por 6.381 óbitos nessa faixa etária, sendo que cerca de 90% poderiam ter sido evitados. Considerando crianças de 1 a 4 anos, qual foi a principal causa de morte por acidentes evitáveis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quedas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Afogamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Acidentes de trânsito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Intoxicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A análise epidemiológica da mortalidade por causas externas no Brasil demonstra que o perfil dos acidentes varia significativamente conforme a faixa etária e o desenvolvimento neuropsicomotor da criança. Para responder corretamente a esta questão, é necessário focar especificamente no grupo de 1 a 4 anos de idade.\n\nAlternativa a) Incorreta. As quedas representam a principal causa de morbidade, ou seja, são o motivo número um de atendimentos em prontos-socorros e internações hospitalares por causas externas nesta faixa etária. No entanto, elas possuem uma letalidade relativamente baixa, não sendo a principal causa de óbito.\n\nAlternativa b) Correta. O afogamento é, estatisticamente, a maior causa de morte acidental entre crianças de 1 a 4 anos no Brasil. Nessa idade, a criança já possui mobilidade (anda e corre), mas ainda não tem discernimento sobre riscos e perigos. A maioria desses eventos ocorre no ambiente doméstico ou em áreas de lazer próximas (piscinas, baldes, cisternas e caixas d'água), muitas vezes em momentos de distração momentânea dos cuidadores. Por ser um evento silencioso e rápido, apresenta alta taxa de mortalidade.\n\nAlternativa c) Incorreta. Os acidentes de trânsito (que incluem atropelamentos e a condição de passageiro de veículos) são a principal causa de morte acidental na faixa etária ampla de 1 a 19 anos. Contudo, quando o recorte é restrito especificamente ao grupo de 1 a 4 anos, o afogamento supera o trânsito em números absolutos de óbitos por causas evitáveis.\n\nAlternativa d) Incorreta. As intoxicações e envenenamentos são ocorrências frequentes em crianças pequenas devido à fase de exploração oral e curiosidade. Apesar de gerarem um grande volume de chamados aos centros de controle de intoxicações e atendimentos médicos, a taxa de letalidade é baixa em comparação ao afogamento e aos traumas no trânsito.\n\nResumo epidemiológico para prova: \n- Menores de 1 ano: A principal causa de morte acidental é a sufocação (aspiração de corpos estranhos ou sufocamento no berço).\n- De 1 a 4 anos: A principal causa de morte acidental é o afogamento.\n- Acima de 5 anos e adolescentes: A principal causa de morte acidental são os acidentes de trânsito.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Segurança na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:38.053Z"
+  },
+  {
+    "id": "AJUDA_5568afc3-ccdf-4f90-902c-1dc5d5043d49",
+    "originalId": "5568afc3-ccdf-4f90-902c-1dc5d5043d49",
+    "statement": "Uma menina de 7 anos é levada ao consultório devido a queixas de dor abdominal crônica, diarreia frequente e perda de peso não intencional. A mãe relata que a criança teve crescimento abaixo do esperado para a idade e apresenta um abdômen distendido. Durante o exame físico, notam-se sinais de deficiência nutricional, como palidez e fraqueza muscular. Os exames laboratoriais mostram anemia microcítica e a presença de anticorpos anti transglutaminase tecidual elevados. Qual é o diagnóstico mais provável para essa criança?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença de Crohn",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Intolerância à lactose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença celíaca",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Síndrome do intestino irritável",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico de uma síndrome disabsortiva na infância. A combinação de diarreia crônica, distensão abdominal, perda de peso e déficit de crescimento (baixa estatura) aponta para uma interrupção na absorção adequada de nutrientes. A presença de anemia microcítica reforça a existência de uma deficiência nutricional (provavelmente ferropriva) decorrente da lesão na mucosa intestinal. O ponto decisivo para o diagnóstico é a presença de anticorpos antitransglutaminase tecidual elevados, que possuem alta sensibilidade e especificidade para a Doença Celíaca.\n\nAnálise das alternativas:\n\na) Incorreta. A Doença de Crohn é uma doença inflamatória intestinal que pode causar dor abdominal, perda de peso e atraso no crescimento. No entanto, ela geralmente apresenta marcadores inflamatórios elevados (como proteína C-reativa ou calprotectina fecal) e não está associada ao anticorpo antitransglutaminase tecidual, que é específico para a sensibilidade ao glúten.\n\nb) Incorreta. A intolerância à lactose é uma deficiência enzimática que causa gases, distensão e diarreia osmótica após a ingestão de leite e derivados. Ela não provoca lesão permanente na mucosa intestinal a ponto de gerar anemia microcítica grave, desnutrição severa ou baixa estatura, e não envolve mecanismos imunológicos detectados pelo anticorpo antitransglutaminase.\n\nc) Correta. A Doença Celíaca é uma enteropatia imunomediada desencadeada pela ingestão de glúten em indivíduos geneticamente predispostos. O caso apresenta a forma clássica da doença: sintomas gastrointestinais de má absorção, repercussões sistêmicas (anemia e déficit de crescimento) e sorologia positiva. O anticorpo antitransglutaminase tecidual da classe IgA é o teste de triagem padrão-ouro devido à sua alta acurácia.\n\nd) Incorreta. A Síndrome do Intestino Irritável é um distúrbio funcional do trato gastrointestinal. Ela se manifesta com dor abdominal e alterações no hábito intestinal, mas não evolui com sinais de alarme como perda de peso, anemia, deficiências nutricionais ou atraso no crescimento. Além disso, exames laboratoriais e sorológicos costumam ser normais nessa condição.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Anemias",
+      "Diarreia",
+      "Desnutrição na Infância",
+      "Doença Celíaca em Pediatria",
+      "Crescimento"
+    ],
+    "difficulty": 33.113294339221014,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:38.053Z"
+  },
+  {
+    "id": "AJUDA_556c9328-927e-49ae-a1cd-abf82f7a7369",
+    "originalId": "556c9328-927e-49ae-a1cd-abf82f7a7369",
+    "statement": "Homem de 64 anos de idade apresentou episódio de hematêmese há duas horas. AP: fibrilação atrial em uso de dabigatrana. Exame físico sem alterações. Exames laboratoriais: hemoglobina: 13,4 g/dL; creatinina: 0,7 mg/dL; ureia: 24 mg/dL. A conduta, em relação ao manejo da coagulopatia, além da suspensão da dabigatrana, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "observação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "administração de carvão ativado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "administração de concentrado de complexo protrombínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "administração de idarucizumabe.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "administração de andexanete.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso apresenta um paciente em uso de dabigatrana que desenvolve hemorragia digestiva alta (hematêmese), uma situação de sangramento potencialmente grave e com risco à vida. A dabigatrana é um anticoagulante oral de ação direta (DOAC) que atua como inibidor direto da trombina (fator IIa). O manejo de sangramentos clinicamente relevantes associados ao seu uso exige, além da suspensão do fármaco e medidas de suporte, a reversão específica da coagulopatia.\n\nAnálise das alternativas:\n\na) Incorreta. A observação clínica isolada é inadequada para sangramentos clinicamente relevantes, como a hematêmese, que apresentam risco de instabilidade hemodinâmica e necessitam de reversão ativa do efeito anticoagulante.\n\nb) Incorreta. O carvão ativado atua apenas na descontaminação gástrica se administrado muito precocemente após a ingestão, mas não reverte a dabigatrana já absorvida nem trata a coagulopatia sistêmica já instalada.\n\nc) Incorreta. O concentrado de complexo protrombínico (CCP) é indicado principalmente para reversão de antagonistas da vitamina K (varfarina) ou como alternativa para inibidores do fator Xa quando o antídoto específico não está disponível. Não é a primeira escolha para a dabigatrana, que possui antídoto específico.\n\nd) Correta. O idarucizumabe é um fragmento de anticorpo monoclonal humanizado que se liga especificamente à dabigatrana com afinidade 350 vezes superior à da trombina, promovendo reversão imediata, completa e sustentada do seu efeito anticoagulante. É a conduta de escolha para sangramentos graves associados a esse medicamento.\n\ne) Incorreta. O andexanete alfa é uma molécula recombinante modificada que atua como antídoto específico dos inibidores diretos do fator Xa (rivaroxabana, apixabana e edoxabana), não tendo eficácia contra inibidores diretos da trombina como a dabigatrana.\n\nGabarito: Alternativa d.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hemostasia",
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:38.053Z"
+  },
+  {
+    "id": "AJUDA_556ff138-8709-492a-b099-fe50cd73b065",
+    "originalId": "556ff138-8709-492a-b099-fe50cd73b065",
+    "statement": "Mulher de 48 anos, previamente saudável, foi submetida a tireoidectomia total seguida de ablação com iodo radioativo, para tratamento de carcinoma papilífero da tireoide de alto risco, com invasão extratireoidiana mínima e disseminação linfonodal (pT3bN1aM0). Retorna para acompanhamento seis meses após o tratamento, estando sem evidência estrutural de doença, com tireoglobulina indetectável e anticorpos antitireoglobulina detectáveis. Qual é a conduta adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduzir a dose de levotiroxina para manter o TSH entre 0,5 e 2mUI/L, pois a paciente apresenta boa resposta inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar nova ablação com iodo radioativo, para garantir erradicação completa de tecido remanescente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever levotiroxina com o objetivo de manter TSH < 0,1mUI/L, visando reduzir o risco de recidiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar uma tomografia por emissão de pósitrons (PET/TC) para rastreio de metástases à distância da neoplasia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Essa questão aborda o manejo pós-operatório do carcinoma diferenciado de tireoide (CDT), especificamente o alvo terapêutico do TSH em pacientes de alto risco.\n\nA paciente em questão apresenta um carcinoma papilífero classificado como de alto risco devido à invasão extratireoidiana e disseminação linfonodal (pT3bN1aM0). Na avaliação de seis meses após a tireoidectomia total e radioiodoterapia, ela apresenta ausência de doença estrutural e tireoglobulina (Tg) indetectável. No entanto, possui anticorpos antitireoglobulina (TgAb) detectáveis. A presença desses anticorpos impede que a resposta seja classificada como excelente, sendo considerada uma resposta indeterminada, uma vez que o anticorpo pode estar mascarando uma tireoglobulina elevada ou indicando a persistência de tecido tireoidiano (neoplásico ou não).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A manutenção do TSH em níveis fisiológicos (0,5 a 2 mUI/L) é reservada para pacientes de baixo risco que apresentam resposta excelente ao tratamento (Tg indetectável, TgAb negativo e exames de imagem limpos). Para uma paciente de alto risco com anticorpos ainda positivos, essa conduta aumentaria o risco de recidiva.\n\nAlternativa (b) Incorreta. Não há indicação de nova ablação com iodo radioativo neste momento. A radioiodoterapia adicional é indicada quando há evidência de doença persistente, progressão de metástases ou elevação significativa de marcadores tumorais em exames subsequentes. A simples presença de TgAb, seis meses após o tratamento inicial, não justifica nova dose de iodo sem evidência estrutural de doença.\n\nAlternativa (c) Correta. De acordo com os consensos nacionais e internacionais (como o da American Thyroid Association – ATA), pacientes classificados inicialmente como de alto risco devem manter a terapia de supressão de TSH (TSH < 0,1 mUI/L) nos primeiros anos de seguimento. O objetivo é reduzir o estímulo do TSH sobre possíveis células neoplásicas remanescentes, diminuindo assim a taxa de recorrência. Como a paciente ainda possui anticorpos positivos e teve um estadiamento inicial agressivo, a supressão rigorosa deve ser mantida.\n\nAlternativa (d) Incorreta. O PET/TC com FDG-18 não é um exame de rotina para o rastreio inicial após seis meses. Ele é geralmente indicado em casos de suspeita de recorrência com tireoglobulina elevada (geralmente acima de 10 ng/dL) e pesquisa de corpo inteiro (PCI) negativa, ou em carcinomas de padrão histológico muito agressivo e desdiferenciado. Não há indicação para essa paciente no cenário atual.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:38.053Z"
+  },
+  {
+    "id": "AJUDA_55738bba-f08a-43d0-a488-d99a59000e5d",
+    "originalId": "55738bba-f08a-43d0-a488-d99a59000e5d",
+    "statement": "O câncer do colo do útero é o segundo tipo de câncer mais frequente em mulheres que vivem em regiões em desenvolvimento. Como prevenção a Organização Mundial de Saúde (OMS) recomenda a prática sexual segura, incluindo educação para jovens e promoção do uso e fornecimento de preservativos para pessoas que já iniciaram atividade sexual. Contudo, a prevenção mais eficaz eficiente – indicada pela OMS – é a vacinação contra o HPV. A recomendação do Programa Nacional de Imunizações é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "para meninos e meninas de 9 a 14 anos - 3 doses da vacina, 2ª dose dois meses após a primeira e 3ª dose seis meses após a primeira.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "para meninos e meninas de 9 a 14 anos - 2 doses da vacina, 2ª dose dois meses após a primeira.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "para meninos e meninas de 9 a 14 anos - dose única da vacina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "para meninos e meninas de 9 a 14 anos - somente tomar a vacina em caso de violência sexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "pessoas de 15 a 19 anos devem receber 2 doses da vacina, 2ª dose dois meses após a primeira.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O câncer do colo do útero é uma das principais preocupações de saúde pública, sendo o HPV (Papilomavírus Humano) seu principal agente etiológico. Em abril de 2024, o Ministério da Saúde do Brasil, seguindo recomendações da Organização Mundial da Saúde (OMS) e da Organização Pan-Americana da Saúde (OPAS), atualizou a estratégia de vacinação contra o HPV no Programa Nacional de Imunizações (PNI).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O esquema de 3 doses (intervalos de 0, 2 e 6 meses) é destinado exclusivamente a grupos especiais de pessoas imunossuprimidas, como pacientes vivendo com HIV/AIDS, transplantados de órgãos sólidos ou medula óssea e pacientes oncológicos, na faixa etária de 9 a 45 anos. Não é a recomendação para o público geral saudável de 9 a 14 anos.\n\nAlternativa b) Incorreta. Até o início de 2024, o esquema para crianças e adolescentes de 9 a 14 anos era composto por 2 doses, porém com intervalo de seis meses entre elas (0 e 6 meses), e não dois meses como sugere a alternativa. Com a atualização normativa, esse esquema de duas doses foi descontinuado para o público em geral.\n\nAlternativa c) Correta. A partir da Nota Técnica nº 41/2024 do Ministério da Saúde, a recomendação oficial para meninos e meninas de 9 a 14 anos passou a ser a aplicação de dose única da vacina quadrivalente contra o HPV. Esta mudança fundamenta-se em estudos que demonstram que uma única dose gera uma resposta imunológica eficaz e duradoura, facilitando o aumento da cobertura vacinal e a adesão dos adolescentes ao programa.\n\nAlternativa d) Incorreta. A vacinação contra o HPV faz parte do calendário nacional de vacinação de rotina, sendo uma estratégia de prevenção primária universal para a faixa etária de 9 a 14 anos. Ela não é restrita a casos de violência sexual, embora vítimas de violência sexual possuam esquemas específicos de profilaxia caso não tenham sido vacinadas previamente.\n\nAlternativa e) Incorreta. A faixa etária-alvo prioritária do PNI para a vacinação sistemática é de 9 a 14 anos. Além disso, a recomendação atual para pessoas que não se vacinaram anteriormente e estão dentro do grupo elegível também segue a tendência de simplificação para dose única, e não o esquema de duas doses com intervalo de dois meses.\n\nEm resumo, a questão reflete a atualização mais recente das diretrizes de imunização no Brasil, onde a estratégia de dose única foi adotada para otimizar a proteção contra os tipos de HPV 6, 11, 16 e 18 em adolescentes.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:38.053Z"
+  },
+  {
+    "id": "AJUDA_557417cf-26d3-4820-8e1b-a1d504cfcda9",
+    "originalId": "557417cf-26d3-4820-8e1b-a1d504cfcda9",
+    "statement": "Mulher travesti de 28 anos, profissional do sexo, comparece à Unidade Básica de Saúde (UBS) em demanda espontânea. Relata relações sexuais frequentes com diferentes parceiros, com uso inconsistente de preservativos, principalmente durante relações anais receptivas. Há 2 dias teve uma relação sexual desprotegida com um cliente que se recusou a usar camisinha. Nunca utilizou medicamento para profilaxia pré-exposição (PrEP) ou pós exposição (PEP) à infecção pelo HIV.\nConsiderando que a paciente está assintomática no momento, qual a melhor estratégia de prevenção nesse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever PrEP após resultado não reagente para HIV; indicar PEP após tratamento inicial e orientar rastreamento de ISTs a cada 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Oferecer teste rápido para HIV e sífilis; prescrever PrEP de início imediato; orientar sobre as vacinas disponíveis no SUS para seu grupo populacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar testagem rápida para HIV e sífilis; prescrever PEP mediante resultado não reagente para HIV e programar início da PrEP após término da PEP.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever PEP e PrEP de forma concomitante; solicitar sorologias para ISTs; agendar retorno para analisar os resultados e revisar adesão ao tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo das estratégias de prevenção combinada ao HIV, especificamente a transição entre a Profilaxia Pós-Exposição (PEP) e a Profilaxia Pré-Exposição (PrEP) em uma paciente com exposição de risco recente e comportamento de risco crônico.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A alternativa inverte a prioridade clínica. Diante de uma relação sexual desprotegida ocorrida há 2 dias (dentro da janela de 72 horas), a prioridade imediata é a PEP para tentar evitar a infecção decorrente desse evento específico. A PrEP é uma estratégia para exposições futuras e não substitui a PEP em casos de urgência. Além disso, a indicação de PEP após o tratamento inicial não faz sentido lógico no fluxo de prevenção.\n\nAlternativa (b) Incorreta. Embora o rastreio de ISTs e a vacinação sejam condutas corretas na atenção integral, prescrever PrEP de início imediato ignorando a exposição ocorrida há 48 horas é um erro técnico. A PrEP (composta por dois antirretrovirais) não é o esquema profilático indicado para uma exposição de alto risco já ocorrida; para isso, deve-se utilizar o esquema de PEP (composto por três antirretrovirais).\n\nAlternativa (c) Correta. Esta é a conduta preconizada pelo Protocolo Clínico e Diretrizes Terapêuticas (PCDT). Primeiro, realiza-se a testagem rápida para verificar o status sorológico atual. Como a exposição ocorreu há 2 dias, a paciente está dentro do prazo de até 72 horas para início da PEP. Após os 28 dias de uso da PEP, se a sorologia permanecer não reagente, a paciente tem indicação clara de iniciar a PrEP imediatamente (transição PEP-PrEP), dado seu histórico de parcerias múltiplas, uso inconsistente de preservativos e vulnerabilidade social/profissional.\n\nAlternativa (d) Incorreta. Não se prescreve PEP e PrEP de forma concomitante. O esquema da PEP brasileira atual consiste em Tenofovir + Lamivudina + Dolutegravir por 28 dias. O esquema da PrEP utiliza apenas Tenofovir + Emtricitabina (ou Lamivudina). Como a PEP já contém os medicamentos da PrEP somados a um terceiro fármaco mais potente, o uso simultâneo causaria sobreposição desnecessária de medicação e aumento de toxicidade sem benefício clínico. A PrEP deve ser iniciada logo após o término do ciclo da PEP.\n\nResumo do raciocínio: Exposição de risco < 72 horas + Teste rápido negativo = Iniciar PEP por 28 dias. Devido ao risco contínuo (profissional do sexo, uso inconsistente de preservativo) = Programar início da PrEP imediatamente após o fim da PEP.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "HIV"
+    ],
+    "difficulty": 27.874242430001843,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:38.053Z"
+  },
+  {
+    "id": "AJUDA_557d4286-b412-493a-86f3-db2d16652ff5",
+    "originalId": "557d4286-b412-493a-86f3-db2d16652ff5",
+    "statement": "Qual situação contraindica tentativa de parto operatório vaginal em trabalho de parto distócico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Analgesia peridural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bolsa rota prolongada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cabeça fetal não insinuada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Posição occipito-posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Segundo estágio prolongado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A resolução dessa questão exige o conhecimento das condições de aplicabilidade e contraindicações para o parto operatório vaginal (uso de fórceps ou vácuo-extrator). Para que o procedimento seja realizado com segurança, critérios rigorosos devem ser preenchidos.\n\nAlternativa (a) Incorreta: A analgesia peridural não é uma contraindicação. Pelo contrário, ela é frequentemente desejável, pois proporciona conforto para a gestante e relaxamento da musculatura do assoalho pélvico, facilitando o posicionamento do instrumento e as manobras de tração ou rotação.\n\nAlternativa (b) Incorreta: A bolsa rota não é contraindicação; é, na verdade, um pré-requisito. O parto operatório vaginal só pode ser realizado se as membranas amnióticas estiverem rotas. Se a bolsa ainda estiver íntegra no momento da indicação, o obstetra deve realizar a amniotomia antes de aplicar o fórceps ou o vácuo-extrator.\n\nAlternativa (c) Correta: A cabeça fetal não insinuada (cabeça alta ou móvel) é uma contraindicação absoluta ao parto operatório. A insinuação ocorre quando o maior diâmetro transverso da apresentação (diâmetro biparietal) ultrapassa o estreito superior da bacia, o que clinicamente corresponde a o ápice da apresentação estar no plano 0 de DeLee (espinhas isquiáticas). Tentar um parto operatório com a cabeça não insinuada (fórceps \"alto\") está associado a riscos altíssimos de traumatismo craniano fetal, hemorragia intracraniana e lacerações de trajeto materno graves, sendo uma prática abandonada na obstetrícia moderna.\n\nAlternativa (d) Incorreta: A posição occipitoposterior não contraindica o procedimento. Muitas vezes, essa variedade de posição é justamente a causa da distocia que leva à necessidade do parto operatório. O fórceps pode ser utilizado tanto para rodar o feto para a posição occipitopúbica quanto para realizar a tração diretamente na posição posterior.\n\nAlternativa (e) Incorreta: O segundo estágio prolongado (período expulsivo prolongado) é uma das principais indicações para o parto operatório, e não uma contraindicação. Quando a fase de expulsão ultrapassa os limites de tempo definidos (que variam conforme a paridade e o uso de analgesia) ou quando há sinais de exaustão materna, o uso de fórceps ou vácuo está indicado para abreviar o nascimento.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Parto Vaginal Operatório",
+      "Partograma e Distocias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:38.053Z"
+  },
+  {
+    "id": "AJUDA_557dc849-bf89-4fc6-af7d-128a62c5293e",
+    "originalId": "557dc849-bf89-4fc6-af7d-128a62c5293e",
+    "statement": "A coordenação do cuidado é um dos princípios da atenção primária e uma habilidade importante para a medicina de família e comunidade. Um exemplo de aplicação do princípio da coordenação do cuidado é quando se realiza",
+    "options": [
+      {
+        "id": "A",
+        "text": "o matriciamento do caso de um paciente com a equipe do CAPS que o atende.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o encaminhamento de um diabético descompensado para a endocrinologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "um grupo comunitário sobre alimentação saudável na unidade de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "uma visita domiciliar a um paciente acamado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Coordenação do Cuidado é um dos atributos essenciais da Atenção Primária à Saúde (APS). Ela pressupõe que a Equipe de Saúde da Família seja capaz de sincronizar e integrar as ações de saúde realizadas pelo paciente em diferentes pontos da rede assistencial. Para que a coordenação ocorra, é necessário que haja fluxo de informações entre os profissionais, continuidade da relação e gestão compartilhada dos casos.\n\nAlternativa a: Esta é a alternativa correta. O matriciamento (ou apoio matricial) é uma ferramenta pedagógico-terapêutica que visa oferecer suporte técnico especializado a uma equipe de referência (APS). Quando a Equipe de Saúde da Família realiza o matriciamento com o CAPS, ela está articulando o cuidado entre a Atenção Primária e a Atenção Especializada em saúde mental. Isso garante que o cuidado não seja fragmentado, promovendo a integração e o acompanhamento conjunto do paciente, o que define a Coordenação do Cuidado.\n\nAlternativa b: Esta alternativa está incorreta. O encaminhamento, isoladamente, é apenas o ato de referenciar o paciente para um nível de maior complexidade tecnológica (derivativo). A Coordenação do Cuidado vai além: ela exige que a Equipe de Saúde da Família receba a contrarreferência, analise as condutas do especialista e integre essas informações ao plano de cuidado contínuo do paciente. O simples encaminhamento sem o acompanhamento do retorno não garante a coordenação.\n\nAlternativa c: Esta alternativa está incorreta. A realização de grupos comunitários sobre alimentação saudável está mais relacionada aos atributos de Orientação Comunitária e Promoção da Saúde. Embora seja uma habilidade importante na APS, o foco aqui é a educação em saúde e o trabalho coletivo, e não a articulação entre diferentes serviços ou profissionais da rede para a continuidade de um caso individual.\n\nAlternativa d: Esta alternativa está incorreta. A visita domiciliar é uma ferramenta fundamental para garantir a Acessibilidade e a Longitudinalidade, permitindo que a equipe conheça o contexto de vida do paciente e ofereça assistência a quem tem dificuldade de locomoção. No entanto, o ato da visita em si não exemplifica a Coordenação do Cuidado entre os níveis de atenção da rede de saúde, mas sim o exercício do cuidado direto no território.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:38.053Z"
+  },
+  {
+    "id": "AJUDA_557fe79b-f4a4-4181-a519-82c54576e9b9",
+    "originalId": "557fe79b-f4a4-4181-a519-82c54576e9b9",
+    "statement": "Homem de 30 anos procurou uma Unidade Básica de Saúde pela primeira vez com o objetivo de reduzir o consumo de crack. Nega uso diário, mas afirma que há momentos em que “engata” 3 dias de uso. Após, consegue ficar semanas sem utilizar, mas recai na sequência. Depois do último uso continuado por 3 dias, não retornou para casa e decidiu buscar ajuda.\nConsiderando-se as recomendações atuais dos Ministérios da Saúde e da Justiça, qual é a conduta inicial para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação hospitalar com abstinência total, com vistas a cessar os efeitos nocivos do consumo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhamento a uma comunidade terapêutica, para acolhimento, devido ao padrão de uso apresentado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realização de ações voltadas à redução de danos, para minimizar problemas secundários ao consumo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrição de psicofármaco, uma vez que há medicamentos padronizados para o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Gabarito: alternativa C\n\nO paciente procurou a Unidade Básica de Saúde (UBS) por vontade própria, pela primeira vez, querendo reduzir o consumo de crack. Ele não relata uso diário e sim um padrão em \"binge\": episódios de cerca de 3 dias de uso intenso, seguidos de semanas de abstinência e novas recaídas. Não há sinais de intoxicação grave, abstinência complicada, risco de suicídio, comorbidade psiquiátrica grave ou complicação clínica. Também chama atenção que o objetivo dele é reduzir, e não necessariamente parar.\n\nAs diretrizes dos Ministérios da Saúde e da Justiça vigentes na época da questão orientam o cuidado em liberdade, de base comunitária, centrado no usuário e na estratégia de redução de danos. Essas diretrizes se apoiam em:\n- Lei 10.216/2001, da reforma psiquiátrica;\n- Portaria 1.028/2005, sobre redução de danos;\n- Lei 11.343/2006, do SISNAD;\n- Portaria 3.088/2011, da Rede de Atenção Psicossocial (RAPS).\n\nNessa lógica, a abstinência não é pré-requisito para o cuidado. A porta de entrada é a Atenção Básica, com acolhimento, construção de vínculo e um Projeto Terapêutico Singular. Quando necessário, o paciente é articulado com o CAPS AD.\n\nAnálise das alternativas\n\na) Incorreta. A internação é recurso de exceção e não conduta inicial. Ela se reserva a situações como:\n- intoxicação ou abstinência graves;\n- risco de suicídio ou de heteroagressão;\n- comorbidade clínica ou psiquiátrica descompensada;\n- falha do tratamento ambulatorial.\nMesmo nesses casos, deve ser breve e preferencialmente em leitos de hospital geral, como prevê a Lei 10.216/2001. Impor abstinência total como meta inicial contraria a redução de danos e o objetivo trazido pelo próprio paciente. Isso tende a afastá-lo do serviço.\n\nb) Incorreta. As comunidades terapêuticas são serviços residenciais de caráter transitório e de adesão voluntária. Elas não são porta de entrada. O encaminhamento exige avaliação clínica prévia e articulação com a rede (CAPS AD). O padrão de uso descrito não justifica afastar o paciente do convívio comunitário logo no primeiro atendimento.\n\nc) Correta. A conduta inicial é acolher sem julgamento, criar vínculo e trabalhar com as metas do próprio paciente. Exemplos de ações de redução de danos:\n- orientações sobre uso menos arriscado, hidratação, alimentação e sono;\n- evitar compartilhar cachimbos;\n- prevenção e testagem de IST, HIV, hepatites e tuberculose;\n- identificação de gatilhos de recaída;\n- apoio psicossocial.\nEssa abordagem minimiza os prejuízos do consumo e aumenta a adesão. A partir dela, pode-se pactuar redução ou abstinência ao longo do acompanhamento.\n\nd) Incorreta. Não existe medicamento aprovado ou padronizado para o tratamento da dependência de cocaína/crack. Diversos fármacos foram testados (topiramato, modafinil, antidepressivos, antipsicóticos, entre outros), sem eficácia consistente. Psicofármacos podem ser usados apenas para sintomas específicos ou comorbidades, como insônia, ansiedade ou depressão. Não são a conduta inicial.\n\nObservação: a Nova Política Nacional sobre Drogas (Decreto 9.761/2019) deu maior ênfase à abstinência e às comunidades terapêuticas. Ainda assim, para um paciente estável que busca a UBS voluntariamente, o primeiro passo continua sendo o acolhimento ambulatorial na rede de atenção psicossocial, e não internação, comunidade terapêutica ou medicação.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:38.053Z"
+  }
+]

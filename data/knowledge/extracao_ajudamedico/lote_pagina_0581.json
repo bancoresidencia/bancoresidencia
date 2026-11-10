@@ -1,0 +1,491 @@
+[
+  {
+    "id": "AJUDA_a283f497-56bd-4541-a9dd-a25154ff7889",
+    "originalId": "a283f497-56bd-4541-a9dd-a25154ff7889",
+    "statement": "Filomena, de 12 meses de idade, previamente saudável, está apresentando diarreia líquida há sete dias, com fezes volumosas, sem sangue, eliminadas de forma explosiva acompanhada de distensão abdominal e assadura importante na região perianal. Ao exame físico, pesa 6Kg, está levemente enoftálmica, com sede, diurese diminuída. A perfusão de extremidades é de quatro segundos. Em uso de dieta normal para a idade e com fórmula alimentar habitual. Qual deve ser a conduta inicial MAIS ADEQUADA em relação à hidratação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solução fisiológica endovenosa 0,9%- 20ml/Kg, correr livre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solução glicofisiológica endovenosa 1:1- 50ml/Kg- correr em 1 hora",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solução de reidratação oral por gastróclise",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Terapia de reidratação oral",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Quadro Clínico:\nFilomena apresenta um quadro de diarreia aguda que evoluiu com sinais de desidratação. Os achados de enoftalmia leve (olhos fundos), sede e diminuição da diurese classificam a criança no Plano B de hidratação (alguma desidratação), de acordo com os protocolos do Ministério da Saúde e da Organização Mundial da Saúde. Embora o tempo de enchimento capilar de quatro segundos seja um sinal de alerta para perfusão tecidual, a presença de sede e a ausência de alteração do nível de consciência (como letargia ou coma) indicam que a criança ainda tem condições de receber hidratação por via oral.\n\nAlternativa (a) Incorreta. A administração de soro fisiológico 0,9% em bolus de 20ml/kg é a conduta preconizada para o Plano C, indicado quando há desidratação grave ou choque séptico/hipovolêmico. No caso em questão, a paciente está consciente e aceitando líquidos (com sede), o que permite iniciar o tratamento de forma menos invasiva.\n\nAlternativa (b) Incorreta. Esta alternativa descreve uma conduta de hidratação venosa que não segue os protocolos atuais de expansão rápida. Atualmente, utiliza-se apenas solução isotônica (Soro Fisiológico 0,9%) para expansão, sem adição de glicose nessa fase inicial. Além disso, a hidratação venosa não é a escolha inicial para crianças que conseguem beber.\n\nAlternativa (c) Incorreta. A gastroclise (hidratação por sonda nasogástrica) é indicada dentro do Plano B apenas quando a criança apresenta falha na hidratação oral, como em casos de vômitos persistentes (mais de 4 em 1 hora), distensão abdominal grave ou se a criança não conseguir ingerir o volume necessário após um período de observação. Não é a conduta inicial.\n\nAlternativa (d) Correta. A Terapia de Reidratação Oral (TRO) é a conduta inicial mais adequada para pacientes no Plano B. A presença de sede é um forte indicativo de que a via oral será bem-sucedida. A TRO é mais segura, evita picadas desnecessárias e tem menor custo, sendo o padrão-ouro para o manejo da desidratação leve a moderada na pediatria. O quadro de fezes explosivas e assadura sugere uma intolerância transitória à lactose por lesão da mucosa intestinal, mas isso não contraindica a TRO com sais de reidratação padrão.\n\nConclusão: A presença de sede e a consciência da paciente orientam para o Plano B, cujo tratamento inicial é sempre a Terapia de Reidratação Oral.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:32.362Z"
+  },
+  {
+    "id": "AJUDA_a288a8ed-5533-4c95-9799-7b64b7f18dd0",
+    "originalId": "a288a8ed-5533-4c95-9799-7b64b7f18dd0",
+    "statement": "Maria, 17 anos, tem histórico de diabetes tipo 1 diagnosticado há cinco anos. Nos últimos dias, relata aumento da sede, da frequência urinária e perda de peso de cerca de 4 kg. A mãe menciona que Maria tem se sentido mais cansada e confusa nos últimos dias. Exame físico: Frequência cardíaca de 110 bpm; pressão arterial de 90/50 mmHg; frequência respiratória de 28 irpm; mucosas secas, redução do turgor cutâneo, olhos encovados, abdômen distendido e sensível à palpação, sem defesa. Respiração de Kussmaul evidente e hálito cetônico perceptível. Exames laboratoriais: glicemia capilar de 500 mg/dL, pH de 7.25, bicarbonato de 12 mEq/L, cetonas no sangue e hipocalemia moderada. O diagnóstico mais provável para Maria é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cetoacidose Diabética (CAD).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Síndrome hiperosmolar hiperglicêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipoglicemia severa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pancreatite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico: Cetoacidose Diabética (CAD).\n\nO caso clínico descreve uma paciente de 17 anos com Diabetes Mellitus tipo 1 (DM1) apresentando um quadro de descompensação aguda. A tríade diagnóstica da CAD é composta por hiperglicemia, acidose metabólica e cetonemia/cetonúria. Maria apresenta glicemia de 500 mg/dL (critério > 250 mg/dL), pH de 7,25 e bicarbonato de 12 mEq/L (critérios para acidose metabólica) e presença de cetonas no sangue. Além disso, os sinais físicos são clássicos: a respiração de Kussmaul é uma tentativa do organismo de compensar a acidose metabólica por meio da eliminação de CO2, e o hálito cetônico decorre da volatilização da acetona.\n\nAlternativa a) Correta: Esta é a alternativa que define o diagnóstico da paciente. Estão presentes os critérios laboratoriais (hiperglicemia, acidose e cetonemia) e os sinais clínicos típicos (desidratação, dor abdominal, respiração de Kussmaul e hálito cetônico). A hipocalemia mencionada é um achado importante na CAD, pois, embora o potássio corporal total esteja baixo devido à perda urinária, o nível sérico pode variar, exigindo reposição cuidadosa durante o tratamento com insulina.\n\nAlternativa b) Incorreta: A Síndrome Hiperosmolar Hiperglicêmica (SHH) é mais frequente em pacientes com DM tipo 2 e idosos. Caracteriza-se por glicemias extremamente elevadas (geralmente > 600 mg/dL), osmolaridade plasmática muito alta e, fundamentalmente, ausência de acidose metabólica significativa ou cetose importante, uma vez que a presença de pequena quantidade de insulina no DM2 impede a lipólise exacerbada.\n\nAlternativa c) Incorreta: A hipoglicemia severa manifesta-se com níveis de glicose baixos (geralmente < 54 mg/dL) e sintomas neuroglicopênicos e autonômicos (sudorese fria, tremores, taquicardia). A paciente em questão apresenta hiperglicemia acentuada (500 mg/dL).\n\nAlternativa d) Incorreta: A dor abdominal e a distensão são sintomas comuns na cetoacidose diabética (podendo simular um quadro de abdome agudo). Embora a pancreatite possa ser um gatilho para a CAD, o conjunto de achados (Kussmaul, hálito cetônico, pH baixo e cetonemia) aponta diretamente para a cetoacidose como o diagnóstico principal e explicativo para todo o estado metabólico da paciente.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:32.362Z"
+  },
+  {
+    "id": "AJUDA_a28f4ee7-3c28-47f2-8209-2eeaea5ac943",
+    "originalId": "a28f4ee7-3c28-47f2-8209-2eeaea5ac943",
+    "statement": "A hemorragia que ocorre quando há eliminação de sangue proveniente do trato respiratório inferior, pulmões ou brônquios é denominada de",
+    "options": [
+      {
+        "id": "A",
+        "text": "hemoptise.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "epistaxe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "melena.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hematêmese.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão exige o conhecimento dos termos semiológicos utilizados para descrever a origem de sangramentos no corpo humano.\n\nAlternativa (a) Hemoptise: Esta é a alternativa correta. A hemoptise é definida como a expulsão de sangue através da tosse, proveniente do trato respiratório inferior (abaixo da glote), o que inclui a traqueia, brônquios e o parênquima pulmonar. Clinicamente, o sangue costuma ser vermelho rutilante, alcalino e frequentemente apresenta-se aerado (com bolhas de ar).\n\nAlternativa (b) Epistaxe: Está incorreta. Epistaxe é o termo técnico para o sangramento nasal. Ocorre devido ao rompimento de vasos sanguíneos na mucosa das fossas nasais, sendo uma condição comum em quadros de ressecamento, traumas ou crises hipertensivas.\n\nAlternativa (c) Melena: Está incorreta. Melena refere-se à eliminação de fezes negras, tipo borra de café ou graxa, com odor extremamente fétido. Esse aspecto decorre da presença de sangue digerido no trato gastrointestinal, sinalizando habitualmente uma hemorragia digestiva alta.\n\nAlternativa (d) Hematemese: Está incorreta. Hematemese é o vômito de sangue vivo ou em borra de café, indicando que a hemorragia tem origem no trato digestivo superior (acima do ligamento de Treitz). Diferencia-se da hemoptise por ser precedida de náuseas e vômitos, apresentando pH ácido e, por vezes, restos alimentares associados.\n\nPortanto, para o sangramento com origem pulmonar ou brônquica, o termo correto é hemoptise.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:32.362Z"
+  },
+  {
+    "id": "AJUDA_a294282e-ee92-4528-a566-6a7fcf903005",
+    "originalId": "a294282e-ee92-4528-a566-6a7fcf903005",
+    "statement": "Uma mulher de 72 anos procura a UBS por dor crônica em ambos os joelhos, sem horário preferencial, mas pior ao subir escadas. Nega sinais inflamatórios. Tem hipertensão diagnosticada há quinze anos, atualmente com níveis controlados com uso de enalapril 20 mg ao dia. Usa paracetamol “de vez em quando”, pois não gosta de tomar comprimidos, com pouco alívio da dor. Nega outras comorbidades. Sem história de úlcera péptica, sangramento ou doença hepática. Queixa de dispepsia esporádica. Ao exame físico, notam-se crepitação bilateral em joelhos, dor à palpação da interlinha medial. IMC: 29 kg/m2. Raios-X prévios mostram osteófitos e redução do espaço articular tibiofemoral bilateral. TFG estimada: 80 mL/min/1,73 m2.\nConsiderando as melhores evidências científicas, assim como as preferências da paciente, qual é a melhor conduta para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever sulfato de glucosamina, iniciar reabilitação fisioterápica e associar ibuprofeno 600 mg + omeprazol se necessário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Oferecer programa de exercícios e perda ponderal, associando AINE tópica como primeira linha, com plano de revisão em seis semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Oferecer programa de perda ponderal e manter paracetamol 1 g em dose única diária, suspender exercícios e reavaliar em seis semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar para infiltração intra-articular de glicocorticoide, por oferecer alívio mais duradouro que medidas não farmacológicas nesse caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — paciente idosa com dor mecânica nos joelhos, crepitação, redução de espaço articular e presença de osteófitos ao raio X — é clássico de osteoartrite (OA) de joelhos. O manejo deve ser baseado nas diretrizes atuais (como ACR e OARSI), que priorizam medidas não farmacológicas e segurança medicamentosa.\n\nAnálise das alternativas:\n\nAlternativa A: INCORRETA. O sulfato de glucosamina possui evidência científica fraca ou conflitante, não sendo recomendado de forma rotineira pelas principais diretrizes internacionais. Embora a reabilitação seja correta, o uso de anti-inflamatórios não esteroidais (AINEs) por via oral (como o ibuprofeno) deve ser evitado como primeira escolha em idosos, especialmente naqueles com queixas dispépticas, devido ao risco de complicações gastrointestinais e renais, mesmo associando o omeprazol.\n\nAlternativa B: CORRETA. Esta alternativa segue as recomendações padrão-ouro para o tratamento da osteoartrite. Medidas não farmacológicas, como exercícios físicos (fortalecimento de quadríceps e aeróbicos) e perda ponderal (o IMC da paciente é 29 kg/m², indicando sobrepeso), são as intervenções mais eficazes a longo prazo. Quanto à farmacologia, os AINEs tópicos são a primeira linha para mãos e joelhos, pois oferecem eficácia similar aos orais com uma incidência muito menor de efeitos colaterais sistêmicos, sendo ideais para pacientes idosos e com dispepsia.\n\nAlternativa C: INCORRETA. A perda ponderal é correta, porém suspender exercícios é uma conduta contraindicada na osteoartrite, pois o sedentarismo leva à atrofia muscular e piora da dor e da função articular. Além disso, o paracetamol em dose única de 1 g é geralmente insuficiente para o controle da dor crônica na OA, e diretrizes recentes questionam sua eficácia superior ao placebo nesse contexto.\n\nAlternativa D: INCORRETA. A infiltração intra-articular com glicocorticoide é uma opção para alívio de crises agudas ou quando o tratamento inicial falha. No entanto, seu efeito é temporário (geralmente dura de algumas semanas a poucos meses) e não deve substituir ou ser considerada superior às medidas não farmacológicas (exercício e controle de peso), que são os pilares do tratamento duradouro e modificador da qualidade de vida.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças do Osso e da Cartilagem"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:32.362Z"
+  },
+  {
+    "id": "AJUDA_a2973c10-734e-4dd8-9750-75bbe4087bb8",
+    "originalId": "a2973c10-734e-4dd8-9750-75bbe4087bb8",
+    "statement": "Uma paciente de 23 anos realizou ultrassonografia abdominal de rotina, na qual foi observado nódulo sólido de 4 cm de diâmetro no fígado. Foi realizada tomografia abdominal com contraste venoso trifásico, que mostrou lesão hipercaptante, bem circuncrita, com cicatriz central localizada em segmento VII do fígado.\nDentre os diagnósticos abaixo, o mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "adenoma hepático;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hepatocarcinoma;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hemangioma hepático;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hiperplasia nodular focal;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "colangiocarcinoma periférico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão descreve um quadro clássico de Hiperplasia Nodular Focal (HNF), que é o segundo tumor benigno mais comum do fígado, sendo frequentemente encontrado de forma incidental em mulheres jovens.\n\nAlternativa (a) Incorreta. O adenoma hepático também acomete mulheres jovens e está fortemente associado ao uso de anticoncepcionais orais. No entanto, na tomografia, ele se apresenta como uma lesão hipervascular, mas não possui a cicatriz central característica. Além disso, o adenoma tem risco de sangramento e de transformação maligna, diferentemente da HNF.\n\nAlternativa (b) Incorreta. O hepatocarcinoma (HCC) é o tumor maligno primário mais frequente, mas ocorre geralmente em fígados cirróticos ou com hepatites crônicas. O padrão radiológico típico é o realce intenso na fase arterial com lavagem rápida (washout) nas fases portal e de equilíbrio, o que não condiz com a descrição de cicatriz central.\n\nAlternativa (c) Incorreta. O hemangioma é o tumor benigno mais comum do fígado. Na tomografia com contraste, ele apresenta um padrão de captação periférica, nodular e centrípeta (o contraste preenche a lesão da periferia para o centro ao longo do tempo), o que é bem distinto da hipercaptação homogênea com cicatriz central descrita no caso.\n\nAlternativa (d) Correta. A Hiperplasia Nodular Focal (HNF) é caracterizada radiologicamente por uma lesão bem circunscrita, que apresenta realce intenso e homogêneo na fase arterial da tomografia (hipercaptante). O achado patognomônico (característico) é a presença de uma cicatriz central, que corresponde a uma área de tecido fibroso e canais vasculares. Essa cicatriz costuma apresentar realce tardio pelo contraste, fechando o diagnóstico clínico e radiológico.\n\nAlternativa (e) Incorreta. O colangiocarcinoma periférico é um tumor maligno dos ductos biliares. Ele geralmente se apresenta como uma massa hipovascular ou com realce periférico progressivo e tardio, frequentemente associado à retração da cápsula hepática e dilatação de vias biliares adjacentes, características que não foram mencionadas e não guardam relação com a cicatriz central da HNF.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:32.362Z"
+  },
+  {
+    "id": "AJUDA_a29c6607-170a-4d75-b57a-1d1c85794761",
+    "originalId": "a29c6607-170a-4d75-b57a-1d1c85794761",
+    "statement": "A Doença de Kawasaki é uma vasculite sistêmica de médio calibre. Assinale a alternativa correta sobre o diagnóstico e complicações.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O diagnóstico de Kawasaki Clássico exige febre persistente por 5 dias ou mais associada a 4 de 5 critérios: conjuntivite não exsudativa, alterações orais, alterações de extremidades, exantema polimorfo e linfadenopatia cervical > 1,5 cm.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O tratamento com imunoglobulina venosa (IGIV) e aspirina em dose anti-inflamatória só é eficaz se iniciado após o 10º dia de doença, para evitar o fenômeno de resistência à imunoglobulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os aneurismas de artéria coronária são a complicação mais grave, ocorrendo tipicamente na fase aguda febril (primeiros 5 dias), sendo a ecocardiografia desnecessária após a primeira semana se a febre ceder.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A forma atípica ou incompleta é mais comum em crianças maiores de 5 anos e cursa sem risco de aneurismas coronarianos, permitindo conduta expectante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A doença de Kawasaki é uma vasculite sistêmica de vasos de médio calibre, sendo a principal causa de cardiopatia adquirida em crianças em países desenvolvidos. Abaixo, analisamos cada alternativa conforme os critérios diagnósticos e o manejo clínico:\n\nAlternativa A: CORRETA.\nO diagnóstico da doença de Kawasaki clássica é eminentemente clínico. Os critérios internacionais estabelecem a presença de febre por 5 dias ou mais (podendo ser aceitos 4 dias se os outros sinais forem muito evidentes), associada a pelo menos 4 dos 5 critérios principais:\n1. Conjuntivite bilateral não exsudativa (geralmente poupando a região limbar).\n2. Alterações orais (eritema e fissura de lábios, língua em framboesa e hiperemia de orofaringe).\n3. Alterações de extremidades (eritema e edema de mãos e pés na fase aguda ou descamação periungueal na fase subaguda).\n4. Exantema polimorfo (podendo ser maculopapular, urticariforme ou escarlatiniforme, mas nunca vesicular).\n5. Linfadenopatia cervical, geralmente unilateral, com pelo menos um linfonodo medindo mais de 1,5 cm de diâmetro.\n\nAlternativa B: INCORRETA.\nO tratamento padrão é feito com imunoglobulina venosa (IGIV) em dose única associada ao ácido acetilsalicílico (aspirina). O objetivo principal é a prevenção de aneurismas coronarianos. Para que seja eficaz, a IGIV deve ser iniciada idealmente entre o 5º e o 10º dia do início da febre. O atraso no tratamento aumenta consideravelmente o risco de lesões coronarianas. A resistência à imunoglobulina é uma característica intrínseca de alguns pacientes e não é evitada pelo início tardio da terapia.\n\nAlternativa C: INCORRETA.\nOs aneurismas de artéria coronária são, de fato, a complicação mais grave, porém eles raramente ocorrem na fase aguda (primeira semana). Eles costumam surgir na fase subaguda, tipicamente entre a 2ª e a 4ª semana de evolução da doença. O ecocardiograma é obrigatório no momento do diagnóstico e deve ser repetido periodicamente (geralmente entre a 1ª-2ª semana e novamente entre a 6ª-8ª semana), mesmo que o paciente esteja afebril, para monitorar a vasculite coronariana.\n\nAlternativa D: INCORRETA.\nA forma incompleta (ou atípica) da doença ocorre quando o paciente tem febre, mas não preenche o número mínimo de critérios clínicos. Essa forma é mais frequente em lactentes (menores de 1 ano) e em crianças maiores, sendo um desafio diagnóstico. O risco de aneurismas coronarianos na forma incompleta é igual ou até maior do que na forma clássica, muitas vezes devido ao atraso no diagnóstico e início do tratamento. Nesses casos, o uso de exames laboratoriais (como aumento de provas de fase aguda) e o ecocardiograma auxiliam na decisão terapêutica, nunca sendo indicada a conduta puramente expectante se houver suspeita clínica.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:32.362Z"
+  },
+  {
+    "id": "AJUDA_a29d3af7-fe5b-4bd9-b563-2eb3d62931f5",
+    "originalId": "a29d3af7-fe5b-4bd9-b563-2eb3d62931f5",
+    "statement": "Paciente de 39 anos de idade, internada no Hospital silvestre apresentando quadro de disfunção renal de instalação rápida associado a anasarca e oligoanúria. Parecer para nefrologia que indicou biópsia renal, evidenciandoglomerulonefrite crescêntica com imunofluorescência de padrão pauci-imune. Neste caso, o exame imunológico que melhor se correlaciona ao quadro nefrológico descrito é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anticorpo anticardiolipina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anticorpos anticitoplasma de neutrófilo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Anticorpos antimembrana basal glomerular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anticorpos antirreceptor de fosfolipase A2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Anti-DNA.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — disfunção renal de instalação rápida, anasarca e oligoanúria — caracteriza a Síndrome de Glomerulonefrite Rapidamente Progressiva (GNRP). O achado histopatológico de crescentes na biópsia renal confirma esse diagnóstico sindrômico.\n\nO passo fundamental para definir a etiologia da GNRP é o padrão da imunofluorescência (IF) na biópsia:\n\n1. Padrão Linear: Sugere Doença Antimembrana Basal Glomerular (Doença de Goodpasture).\n2. Padrão Granular: Indica deposição de imunocomplexos (como no Lúpus, Glomerulonefrite Pós-Estreptocócica ou Nefropatia por IgA).\n3. Padrão Pauci-imune: Caracteriza-se pela ausência ou raridade de depósitos de imunoglobulinas ou complemento.\n\nNo caso clínico, a imunofluorescência é pauci-imune. Esse padrão é fortemente associado às vasculites sistêmicas de pequenos vasos, como a Poliangeíte Microscópica e a Granulomatose com Poliangeíte (antiga Wegener). O marcador sorológico desses quadros é o ANCA (Anticorpo Anticitoplasma de Neutrófilos).\n\nAnálise das alternativas:\n\na) Anticorpo anticardiolipina: Incorreto. É um marcador da Síndrome do Anticorpo Antifosfolípide (SAF), que se associa a fenômenos trombóticos e perdas gestacionais, podendo causar microangiopatia trombótica renal, mas não glomerulonefrite crescêntica pauci-imune.\n\nb) Anticorpos anticitoplasma de neutrófilos (ANCA): Correto. Como discutido, o ANCA (seja o padrão P-ANCA/antimieloperoxidase ou C-ANCA/antiproteinase 3) é o exame de escolha para investigar vasculites de pequenos vasos que se manifestam como glomerulonefrite crescêntica com imunofluorescência negativa ou mínima (pauci-imune).\n\nc) Anticorpos antimembrana basal glomerular (Anti-GBM): Incorreto. Embora causem GNRP, o padrão de imunofluorescência seria linear, e não pauci-imune.\n\nd) Anticorpos antirreceptor de fosfolipase A2 (Anti-PLA2R): Incorreto. É um marcador específico da Nefropatia Membranosa Primária, que se manifesta tipicamente como síndrome nefrótica de evolução mais lenta, apresentando depósitos granulares na imunofluorescência.\n\ne) Anti-DNA: Incorreto. É o marcador do Lúpus Eritematoso Sistêmico (LES). A nefrite lúpica, quando grave, pode cursar com crescentes, porém a imunofluorescência apresentaria um padrão granular intenso (conhecido como padrão de *full-house*), devido ao depósito de imunocomplexos.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Vasculites",
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:32.362Z"
+  },
+  {
+    "id": "AJUDA_a2a147ff-1d96-4438-bd5b-51758da28d15",
+    "originalId": "a2a147ff-1d96-4438-bd5b-51758da28d15",
+    "statement": "Sobre a interação do tabagismo com diferentes medicamentos, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduz a depuração metabólica da teofilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumenta a sedação induzida por benzodiazepínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reduz o nível sérico da warfarina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aumenta a efetividade do betabloqueador.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A interação medicamentosa decorrente do tabagismo não ocorre primariamente pela nicotina, mas sim pelos hidrocarbonetos policíclicos aromáticos presentes na fumaça do cigarro. Essas substâncias são potentes indutoras das enzimas do complexo citocromo P450 no fígado, com destaque para a isoenzima CYP1A2. A indução enzimática acelera o metabolismo de diversos fármacos, reduzindo suas concentrações plasmáticas e sua eficácia.\n\nAlternativa (a) Incorreta: O tabagismo aumenta a atividade da enzima CYP1A2, responsável pelo metabolismo da teofilina. Dessa forma, o tabagismo aumenta a depuração (clearance) metabólica da teofilina, reduzindo sua meia-vida e seus níveis séricos, o que pode exigir doses maiores do medicamento para atingir o efeito terapêutico.\n\nAlternativa (b) Incorreta: Pacientes fumantes tendem a apresentar uma resposta reduzida ao efeito sedativo dos benzodiazepínicos. Isso ocorre devido a uma combinação de indução metabólica (em alguns benzodiazepínicos específicos) e, principalmente, ao efeito estimulante da nicotina no sistema nervoso central, que atua como um antagonista farmacodinâmico da sedação.\n\nAlternativa (c) Correta: O tabagismo induz o metabolismo hepático da varfarina. O aumento da atividade enzimática faz com que o fármaco seja excretado mais rapidamente, o que reduz o seu nível sérico e, consequentemente, diminui o seu efeito anticoagulante. Clinicamente, isso se traduz em uma redução do RNI (Relação Normatizada Internacional), podendo ser necessário o ajuste da dose para cima em pacientes que fumam.\n\nAlternativa (d) Incorreta: O tabagismo reduz a efetividade dos betabloqueadores (como o propranolol). Primeiro, porque a indução enzimática acelera o metabolismo de alguns desses fármacos. Segundo, porque a nicotina ativa o sistema nervoso simpático, aumentando a frequência cardíaca e a pressão arterial, o que se opõe diretamente aos efeitos farmacológicos pretendidos pelos betabloqueadores.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:32.362Z"
+  },
+  {
+    "id": "AJUDA_a2a24edb-7f5c-4931-867b-1a5d39a08c3d",
+    "originalId": "a2a24edb-7f5c-4931-867b-1a5d39a08c3d",
+    "statement": "O Conselho de Saúde é órgão colegiado, deliberativo e permanente do Sistema Único de Saúde (SUS) em cada esfera de governo. Sua composição, organização e competência são fixadas pela Lei N° 8.142/90. Qual das alternativas abaixo representa atribuição deste Conselho?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Formular princípios e diretrizes da política de saúde, de sua esfera correspondente de governo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Formular e propor estratégias, assim como controlar a execução das políticas de saúde, inclusive nos seus aspectos econômicos e financeiros.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Executar ações que visem implantar a política de saúde na sua esfera de atuação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Decidir a alocação dos recursos financeiros, de acordo com as prioridades definidas em suas reuniões ordinárias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Formular investigações sobre conselhos de medicina e enfermagens em seus respectivos estados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é fundamental dominar a Lei Federal nº 8.142/90, que é um dos pilares do Sistema Único de Saúde (SUS) ao tratar da participação da comunidade e das transferências de recursos.\n\nO Artigo 1º, § 2º, da referida lei define exatamente o papel do Conselho de Saúde. Vamos à análise das alternativas:\n\nAlternativa (a) Incorreta: A formulação de diretrizes para a política de saúde é uma competência primordial da Conferência de Saúde, que ocorre a cada quatro anos com representação de vários segmentos sociais. O Conselho atua no dia a dia da gestão, mas as diretrizes macro são emanadas pelas Conferências.\n\nAlternativa (b) Correta: Esta alternativa é a transcrição literal do texto legal (Art. 1º, § 2º, da Lei nº 8.142/90). O Conselho de Saúde tem caráter deliberativo e permanente, atuando na formulação de estratégias e, fundamentalmente, no controle da execução da política de saúde, o que inclui a fiscalização dos aspectos econômicos e financeiros (como o acompanhamento do Fundo de Saúde).\n\nAlternativa (c) Incorreta: O Conselho de Saúde é um órgão de controle e deliberação, não um órgão executor. A execução das políticas, ações e serviços de saúde é responsabilidade do Poder Executivo, ou seja, do Ministério da Saúde, das Secretarias Estaduais e das Secretarias Municipais de Saúde.\n\nAlternativa (d) Incorreta: Embora o Conselho de Saúde fiscalize a movimentação financeira e deva aprovar o Plano de Saúde (que contém a previsão orçamentária), ele não \"decide a alocação\" de forma isolada em reuniões ordinárias. A alocação de recursos públicos segue o ciclo orçamentário previsto na Constituição e em leis específicas (PPA, LDO e LOA), cabendo ao Conselho o controle e a fiscalização dessa aplicação.\n\nAlternativa (e) Incorreta: Os conselhos de classe (como CRM, COREN, CRF) são autarquias federais com legislação própria e autonomia para fiscalizar o exercício de suas respectivas profissões. O Conselho de Saúde do SUS não possui atribuição legal para realizar investigações sobre a estrutura ou o funcionamento administrativo desses conselhos profissionais.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:32.362Z"
+  },
+  {
+    "id": "AJUDA_a2a36926-f25c-419e-b86a-81498a9df27c",
+    "originalId": "a2a36926-f25c-419e-b86a-81498a9df27c",
+    "statement": "Um homem leucodérmico e com idade de 61 anos, etilista e tabagista por mais de 40 anos, emagrecido, mas sem uso de medicamentos, procurou o seu consultório com queixa de dificuldade para engolir alimentos sólidos. Entre os exames solicitados, a endoscopia mostrou uma lesão de quatro centímetros, dois centímetros distalmente ao esfincter esofágico superior. A biópsia confirmou a suspeita de carcinoma espinocelular. Com base apenas nessas informações, entre os itens seguintes, qual o tratamento INDICADO nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neoadjuvância com quimio e radioterapia, seguida de esofagectomia e esofagogastroplastia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Neoadjuvância com quimio e radioterapia, seguida de esofagectomia e esofagocoloplastia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente quimioterapia e radioterapia em ciclos completos e sem esofagectomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Introdução de prótese esofágica por endoscopia para nutrir e depois tratar o paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O ponto central para resolver esta questão é a localização anatômica da lesão. O enunciado descreve um carcinoma espinocelular (CEC) de quatro centímetros, situado apenas dois centímetros distalmente ao esfíncter esofágico superior (EES).\n\nAnálise da localização:\nO esfíncter esofágico superior marca o início do esôfago cervical. Uma lesão que se inicia 2 cm abaixo desse ponto está localizada integralmente no esôfago cervical (que se estende até cerca de 18 cm dos dentes incisivos ou até a fúrcula esternal).\n\nPor que a alternativa (c) está correta?\nPara o câncer de esôfago localizado no segmento cervical, especialmente o carcinoma espinocelular, o tratamento de escolha é a quimiorradioterapia definitiva (protocolo não cirúrgico). Isso ocorre porque a cirurgia para tumores nessa região (esofagectomia cervical ou faringolaringoesofagectomia) é extremamente agressiva, exige a remoção da laringe (perda da voz) e possui alta morbidade. Estudos demonstram que a quimiorradioterapia exclusiva oferece taxas de sobrevida global equivalentes à cirurgia nessa localização, com a grande vantagem da preservação orgânica (manutenção da laringe e da deglutição funcional).\n\nPor que as alternativas (a) e (b) estão incorretas?\nAmbas propõem a esofagectomia como passo final após a neoadjuvância. Embora a terapia trimodal (quimiorradioterapia seguida de cirurgia) seja o padrão para tumores do esôfago torácico e distal, ela não é a primeira escolha para o esôfago cervical devido à necessidade de mutilação (laringectomia associada) e resultados oncológicos similares aos do tratamento clínico exclusivo. A diferença entre (a) e (b) reside na técnica de reconstrução (estômago ou cólon), mas a indicação cirúrgica em si é o erro principal para esta localização específica.\n\nPor que a alternativa (d) está incorreta?\nA colocação de prótese esofágica é uma medida paliativa, indicada para pacientes com doença avançada, fístulas ou sem condições clínicas para tratamento curativo. O quadro descreve um paciente emagrecido, mas não há evidências de metástases à distância ou incurabilidade que justifiquem apenas a paliação com prótese antes de tentar o tratamento curativo com quimiorradioterapia.\n\nResumo do raciocínio:\n1. Localização: Esôfago cervical (2 cm distal ao EES).\n2. Histologia: Carcinoma Espinocelular (CEC).\n3. Conduta: Quimiorradioterapia definitiva para preservação de órgão e redução de morbidade.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:32.362Z"
+  }
+]

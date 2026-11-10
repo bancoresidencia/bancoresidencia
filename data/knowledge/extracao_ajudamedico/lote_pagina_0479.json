@@ -1,0 +1,493 @@
+[
+  {
+    "id": "AJUDA_86559ee3-b78d-44a6-a313-037e7c5e0742",
+    "originalId": "86559ee3-b78d-44a6-a313-037e7c5e0742",
+    "statement": "Segundo Rouquayrol (Epidemiologia & Saúde, 2018), é uma medida de ordem individual importante para prevenção e controle da cólera",
+    "options": [
+      {
+        "id": "A",
+        "text": "uso do hipoclorito de sódio na água de beber (duas gotas por litro).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o saneamento básico, com a oferta de água abundante e de boa qualidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a aplicação das vacinas eficazes contra a cólera inclusas no calendário oficial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a desinfecção concorrente de fezes e vômitos (com o uso de Cloreto de sódio a 5%).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão exige o conhecimento das medidas de controle da cólera baseadas na obra de Rouquayrol, diferenciando ações de ordem individual daquelas de ordem coletiva.\n\nAlternativa a) Correta. O tratamento da água no domicílio é classificado como uma medida de proteção individual. O uso de hipoclorito de sódio a 2,5 por cento, na dosagem de duas gotas por litro de água, seguido de um tempo de contato de 30 minutos, é a recomendação padrão para garantir a potabilidade da água de beber em locais sem saneamento adequado ou durante surtos.\n\nAlternativa b) Incorreta. Embora o saneamento básico e a oferta de água tratada sejam fundamentais para o controle da cólera, estas são medidas de ordem coletiva ou estrutural, dependentes do poder público e de políticas de infraestrutura, e não de uma ação isolada do indivíduo.\n\nAlternativa c) Incorreta. A vacinação contra a cólera não faz parte do calendário oficial de vacinação (PNI) do Brasil de forma rotineira. As vacinas disponíveis possuem eficácia limitada e duração curta, sendo indicadas apenas em situações específicas de surtos ou para viajantes em áreas de alto risco, não sendo a principal medida de controle individual preconizada por Rouquayrol frente às medidas de higiene e tratamento de água.\n\nAlternativa d) Incorreta. O erro desta alternativa é químico e técnico. O cloreto de sódio (sal de cozinha) a 5 por cento não possui propriedades desinfetantes eficazes para a eliminação do *Vibrio cholerae* em fezes e vômitos. A substância correta para a desinfecção concorrente seria o hipoclorito de sódio ou compostos fenólicos. Além disso, a desinfecção concorrente é mais associada ao manejo do paciente no ambiente hospitalar do que a uma medida preventiva individual primária.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:01.230Z"
+  },
+  {
+    "id": "AJUDA_865a02da-e775-4a07-ab68-09b510e226d8",
+    "originalId": "865a02da-e775-4a07-ab68-09b510e226d8",
+    "statement": "A molécula tirzepatida, considerada como agonista duplo de GLP-1 (peptídeo semelhante ao glucagon-1) e GIP (polipeptídeo inibitório gástrico) é a mais potente droga antiobesidade e antidiabética com aprovação pela Agência Nacional de Vigilância Sanitária (ANVISA). Neste contexto, uma função fisiológica do GIP é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diminuir os níveis de glucagon.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aumentar a sensação de náusea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar a secreção de insulina de forma mais potente que o GLP-1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Diminuir a capacidade de tamponamento lipídico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA tirzepatida é uma molécula inovadora que atua como um coagonista dos receptores de GLP-1 (Peptídeo Semelhante ao Glucagon-1) e GIP (Polipeptídeo Insulinotrópico Dependente de Glicose). Para responder à questão, devemos analisar as ações fisiológicas específicas do GIP e como elas interagem no controle metabólico.\n\nAlternativa A (Correta): As incretinas (GLP-1 e GIP) desempenham um papel fundamental na regulação do pâncreas endócrino. Embora o efeito do GIP sobre as células-alfa pancreáticas possa ser complexo e dependente dos níveis de glicose (podendo até estimular o glucagon em estados de hipoglicemia para proteção), no contexto da fisiologia do controle glicêmico e da ação de agonistas duplos como a tirzepatida, a ativação desses receptores contribui para a redução dos níveis de glucagon. Essa supressão do glucagon é essencial para diminuir a produção hepática de glicose, auxiliando no efeito antidiabético da droga.\n\nAlternativa B (Incorreta): Diferentemente do GLP-1, que é conhecido por causar náuseas e vômitos devido à sua ação no sistema nervoso central e no retardo do esvaziamento gástrico, o GIP tem um efeito oposto. Evidências sugerem que o agonismo do receptor de GIP em áreas específicas do cérebro (como o centro do vômito) ajuda a reduzir a sensação de náusea. É por esse motivo que a tirzepatida costuma apresentar um perfil de tolerabilidade gastrointestinal favorável em comparação com agonistas puros de GLP-1 em doses equivalentes de eficácia.\n\nAlternativa C (Incorreta): Em indivíduos saudáveis, o GIP é responsável por uma parte significativa do efeito incretina. No entanto, em pacientes com diabetes mellitus tipo 2, a resposta insulinotrópica (estimulação de insulina) ao GIP está significativamente diminuída ou embotada. Portanto, na prática clínica e fisiopatológica do diabetes, o GIP não é mais potente que o GLP-1 para aumentar a secreção de insulina; o GLP-1 mantém sua eficácia muito melhor no estado diabético.\n\nAlternativa D (Incorreta): O GIP possui uma função crucial no tecido adiposo, mas sua ação é aumentar a capacidade de tamponamento lipídico (*lipid buffering*). Isso significa que o GIP favorece o armazenamento de ácidos graxos no tecido adiposo branco de forma saudável e eficiente, o que reduz a circulação de lipídios e o seu depósito em órgãos como fígado e músculos (gordura ectópica), melhorando a sensibilidade à insulina. A alternativa afirma incorretamente que ele diminuiria essa capacidade.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Obesidade e Síndrome Metabólica",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:01.230Z"
+  },
+  {
+    "id": "AJUDA_8665701b-ff11-4736-9c87-665d08ab54c0",
+    "originalId": "8665701b-ff11-4736-9c87-665d08ab54c0",
+    "statement": "Um paciente em hemodiálise há cerca de 15 anos desenvolve dor e limitação funcional no ombro esquerdo. A radiografia simples do local mostra cistos ósseos próximos à articulação. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperparatireoidismo secundário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hiperparatireoidismo primário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença óssea adinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Amiloidose da diálise.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Texto Original:\nO quadro clínico descrito aponta para uma complicação clássica de pacientes que permanecem em terapia renal substitutiva por longos períodos, geralmente por mais de 10 a 15 anos. A chave para a questão é a associação entre o tempo de diálise, a dor articular (especialmente no ombro) e a presença de cistos ósseos periarticulares.\n\nAlternativa d (Correta): A Amiloidose Associada à Diálise é causada pelo acúmulo de beta-2-microglobulina. Esta proteína, que normalmente é filtrada pelos rins, não é removida de forma eficiente pelas membranas de hemodiálise convencionais. Com o passar dos anos, ela se deposita em tecidos osteoarticulares, sinóvia e ligamentos. As manifestações mais comuns incluem a síndrome do túnel do carpo, a espondiloartropatia e o acometimento de grandes articulações, como o ombro. Radiograficamente, caracteriza-se por cistos ósseos subcondrais (geodos) e erosões articulares, exatamente como relatado no caso.\n\nAlternativa a (Incorreta): O Hiperparatireoidismo Secundário faz parte do distúrbio mineral e ósseo da doença renal crônica, resultando em osteíte fibrosa cística devido ao alto turnover ósseo. Embora possa causar lesões líticas conhecidas como tumores marrons, o quadro de dor articular limitante associada a cistos ósseos específicos após 15 anos de diálise é muito mais sugestivo de depósito amiloide do que de reabsorção óssea pelo PTH elevado.\n\nAlternativa b (Incorreta): O Hiperparatireoidismo Primário decorre de um problema intrínseco nas glândulas paratireoides (como um adenoma) em pacientes sem doença renal. Pacientes em hemodiálise apresentam a forma secundária ou, em casos de autonomia glandular prolongada, a forma terciária.\n\nAlternativa c (Incorreta): A Doença Óssea Adinâmica é um estado de baixo turnover ósseo, frequentemente causado pela supressão excessiva do paratormônio (PTH) pelo uso de vitamina D ou calcimiméticos. Ela cursa com maior risco de fraturas e calcificações vasculares, mas não apresenta cistos ósseos periarticulares ou o quadro inflamatório articular típico da amiloidose.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Doença Renal Crônica (DRC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:01.230Z"
+  },
+  {
+    "id": "AJUDA_86670e9e-4309-4b5e-b094-ef1df759d4ad",
+    "originalId": "86670e9e-4309-4b5e-b094-ef1df759d4ad",
+    "statement": "Paciente masculino, de 52 anos, em acompanhamento ambulatorial devido a uma insuficiência renal crônica avançada, foi incluído na lista de espera para transplante renal há 18 meses após passar por várias avaliações e tratamentos. Em razão da ampla publicidade do duplo transplante de um apresentador de televisão, ele expressou, durante a consulta, sua preocupação sobre a transparência e justiça do sistema de alocação dos órgãos no Brasil, questionando como os critérios de prioridade eram determinados e se seu tempo de espera era considerado justo em comparação com o de outros pacientes na lista. De acordo com a legislação brasileira, que critério, dentre os abaixo, é considerado o mais importante na priorização dos pacientes na lista de espera para transplante renal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A idade do paciente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A compatibilidade imunológica entre doador e receptor",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A ordem de entrada na lista de espera",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A gravidade de sintomas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O sistema brasileiro de transplantes é regido por leis e decretos que visam garantir a equidade e a eficiência técnica na alocação de órgãos. Diferentemente de outros órgãos, como o fígado (onde a gravidade clínica medida pelo escore MELD é o principal fator) ou o coração (onde a urgência clínica impera), o transplante renal possui critérios específicos de seleção.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A idade do paciente é um critério de priorização apenas em situações específicas, como no caso de receptores pediátricos (menores de 18 anos), que possuem prioridade na recepção de órgãos de doadores também jovens. Contudo, de forma geral para a lista, a idade não é o critério soberano acima da compatibilidade.\n\nAlternativa (b) Correta. A compatibilidade imunológica é o critério técnico primordial na alocação de rins no Brasil. Isso ocorre porque o sucesso do transplante renal e a sobrevida do enxerto dependem diretamente da semelhança genética entre doador e receptor, especificamente no sistema HLA (Antígenos Leucocitários Humanos). A alocação segue uma pontuação que prioriza a identidade HLA (mismatch zero) e a compatibilidade nos loci HLA-DR, HLA-B e HLA-A, além de exigir obrigatoriamente a prova cruzada (crossmatch) negativa para evitar rejeição hiperaguda.\n\nAlternativa (c) Incorreta. A ordem cronológica de inscrição na lista de espera funciona como um critério de desempate, e não como o critério principal. Dois pacientes com a mesma pontuação de compatibilidade e perfil clínico serão diferenciados pelo tempo de espera, mas a compatibilidade sempre será analisada antes da antiguidade na lista.\n\nAlternativa (d) Incorreta. Diferentemente do transplante de fígado ou coração, a gravidade dos sintomas ou a urgência clínica não constituem o critério principal para o rim. Isso se deve ao fato de que pacientes com insuficiência renal crônica podem ser mantidos em terapia dialítica (hemodiálise ou diálise peritoneal) por longos períodos. A \"priorização\" por gravidade clínica no transplante renal é reservada a casos excepcionais, como a impossibilidade total de acesso para diálise (esgotamento de acessos vasculares e peritoneais).\n\nResumo: No transplante de rim, o objetivo maior é a longevidade do órgão transplantado; por isso, a legislação prioriza a compatibilidade imunológica para reduzir as chances de rejeição.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:01.230Z"
+  },
+  {
+    "id": "AJUDA_866733da-7db6-45ef-9593-c21cedd3f16b",
+    "originalId": "866733da-7db6-45ef-9593-c21cedd3f16b",
+    "statement": "Mulher, 57 anos, com história há 6 meses de sangramento às evacuações, realizou colonoscopia, que evidenciou lesão vegetante e ulcerada a cerca de 6cm da borda anal, com resultado anatomopatológico compatível com adenocarcinoma de reto. Estadiamento completo revelou lesão localmente avançada, T3N1, sem lesões secundárias à distância. \n\nEm relação ao caso, assinale a conduta CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pela localização da lesão, a conduta é cirúrgica com amputação abdominoperineal de reto e reconstrução perineal com retalho glúteo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O estadiamento é feito com CEA e tomografia de tórax, abdome e pelve e a conduta indicada nesse momento é a retossigmoidectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A retossigmoidectomia deve ser sempre realizada, mesmo nos casos em que há resposta completa pela radioterapia neoadjuvante e, nesses casos, não é necessária a linfadenectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quimioterapia e radioterapia neoadjuvante, seguido de reestadiamento para provável retossigmoidectomia, com excisão do mesorreto.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve uma paciente com adenocarcinoma de reto localizado a 6 cm da borda anal (reto médio/baixo), estadiado como localmente avançado (T3N1M0), ou seja, o tumor ultrapassou a camada muscular e há presença de linfonodos comprometidos, sem metástases a distância.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A amputação abdominoperineal de reto (cirurgia de Miles) é indicada apenas para tumores extremamente baixos que invadem o aparelho esfincteriano, onde não é possível obter margem de segurança preservando a função anal. Uma lesão a 6 cm da borda anal geralmente permite a preservação do esfíncter. Além disso, o tratamento de escolha para o estágio T3N1 não é a cirurgia imediata, mas sim a neoadjuvância.\n\nAlternativa b) Incorreta. Embora o CEA e as tomografias de tórax e abdome sejam essenciais para o estadiamento sistêmico, o estadiamento local do câncer de reto exige, preferencialmente, a ressonância magnética (RM) de pelve ou o ultrassom endorretal. O erro principal da alternativa é indicar a cirurgia (retossigmoidectomia) como conduta imediata, ignorando a necessidade de tratamento neoadjuvante para casos T3 ou N positivo.\n\nAlternativa c) Incorreta. A afirmação de que a cirurgia deve ser \"sempre realizada\" é contestada pelo protocolo de \"Watch and Wait\" (Vigiar e Esperar), proposto pela escola brasileira (Angelita Habr-Gama), que admite o acompanhamento clínico estrito em pacientes com resposta clínica completa após neoadjuvância. Além disso, se a cirurgia for realizada, a linfadenectomia (através da excisão total do mesorreto) é parte fundamental e obrigatória do procedimento oncológico.\n\nAlternativa d) Correta. Esta alternativa descreve o protocolo padrão para o câncer de reto localmente avançado (estádios II e III). O tratamento inicia-se com quimiorradioterapia neoadjuvante para reduzir o tamanho do tumor (downsizing) e o estágio (downstaging), aumentando as chances de preservação esfincteriana e diminuindo a recidiva local. Após o período de resposta (geralmente 8 a 12 semanas), o paciente é reestadiado e submetido à cirurgia com excisão total do mesorreto (ETM), que é o padrão-ouro técnico para garantir a retirada dos linfonodos regionais.\n\nGabarito: Letra (d).",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:01.230Z"
+  },
+  {
+    "id": "AJUDA_867197f3-9693-4a3b-be7c-49562ac2b494",
+    "originalId": "867197f3-9693-4a3b-be7c-49562ac2b494",
+    "statement": "Criança de 6 meses e 15 dias é levada pela mãe para uma consulta de puericultura com a médica de família e comunidade devido à dificuldade de introdução alimentar, pois apresenta baixa aceitação das papas de frutas e de legumes. A mãe relata preocupação, pois o desenvolvimento da criança tem sido diferente da experiência que teve com o primeiro filho, que aceitou rapidamente as primeiras papas introduzidas aos 6 meses. A médica, então, revisa o prontuário e identifica que, em avaliações anteriores, a criança não apresentava sorriso social e não vocalizava nenhum tipo de som. Esses achados foram confirmados nesta consulta. \n\nDiante desse quadro, a conduta médica apropriada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar o M-CHAT (Modified Children’s Autism Test) e, se o resultado for positivo, encaminhar a criança para avaliação multidisciplinar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "levar em consideração a preocupação da mãe sobre o desenvolvimento da criança e investigar fatores de risco sociofamiliares e sinais de alerta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "aplicar o protocolo de observação para diagnóstico de Transtorno do Espectro Autista (TEA) a fim de diferenciar a suspeita de autismo e de outras deficiências.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "encaminhar a criança ao neurologista para avaliação clínica e para a solicitação de exames de imagem, a fim de investigar o atraso de desenvolvimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o acompanhamento do desenvolvimento infantil na Atenção Primária, focando na identificação de marcos do desenvolvimento e na valorização das queixas maternas.\n\nA criança em questão tem 6 meses e 15 dias e apresenta ausência de marcos que deveriam ter sido atingidos muito antes: o sorriso social (esperado por volta dos 2 meses) e a vocalização (esperada entre os 2 e 4 meses). Além disso, há uma queixa materna específica comparando o desenvolvimento com o do irmão.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O M-CHAT (Modified Checklist for Autism in Toddlers) é uma ferramenta de rastreio para o Transtorno do Espectro Autista (TEA) validada para crianças entre 16 e 30 meses de idade. Aplicá-lo em um lactente de 6 meses é tecnicamente inadequado, pois o teste não foi desenhado para essa faixa etária.\n\nAlternativa b) Correta. Esta é a conduta preconizada pelo Ministério da Saúde e pelas diretrizes de pediatria (como as da Sociedade Brasileira de Pediatria). A preocupação dos pais é um dos preditores mais sensíveis de problemas no desenvolvimento. Diante da ausência de marcos fundamentais (sorriso social e vocalização), o médico deve realizar uma investigação detalhada, buscando fatores de risco (biológicos, psicossociais e ambientais) e outros sinais de alerta que possam guiar a propedêutica e a intervenção precoce.\n\nAlternativa c) Incorreta. Protocolos de observação diagnóstica para TEA, como o ADOS ou outros critérios diagnósticos fechados, são complexos e geralmente aplicados em crianças mais velhas por especialistas ou equipes treinadas. Aos 6 meses, o foco deve estar na identificação de atrasos globais ou sinais de risco no desenvolvimento, e não na aplicação de protocolos diagnósticos definitivos para TEA.\n\nAlternativa d) Incorreta. Embora o encaminhamento para o especialista possa vir a ser necessário após a investigação inicial, a conduta imediata na consulta de puericultura não deve ser o encaminhamento direto com solicitação de exames de imagem. A maioria dos atrasos de desenvolvimento não apresenta alterações em exames de imagem cerebral de rotina; o diagnóstico e a avaliação inicial são eminentemente clínicos e contextuais, focados na estimulação e no acompanhamento dos marcos.\n\nEm resumo, a identificação de \"sinais de alerta\" (ausência de marcos para a idade) e a valorização da queixa materna impõem uma investigação clínica e sociofamiliar cuidadosa para determinar os próximos passos da linha de cuidado.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:01.230Z"
+  },
+  {
+    "id": "AJUDA_8677bff8-9a44-478d-9833-7e144cd57184",
+    "originalId": "8677bff8-9a44-478d-9833-7e144cd57184",
+    "statement": "Um dos melhores métodos de avaliação da cavidade uterina é a histeroscopia. A respeito dessa propedêutica, assinale a opção correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Com os modernos histeroscópios, como o de Bettocchi, não é mais necessária a distensão da cavidade uterina, seja com gás ou com líquido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A biópsia orientada é preferível à dirigida por coletar material para exame anatomopatológico com melhor acurácia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Na histeroscopia ambulatorial, o pinçamento do colo uterino em úteros retrovertidos deve ser feito nas laterais do colo uterino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na suspeita de câncer do endométrio, a distensão da cavidade uterina deve ser feita com gás para não haver passagem de células malignas para a cavidade abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quando se usa corrente elétrica bipolar, o meio de distensão preferencial é o soro fisiológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa a) Incorreta. A cavidade uterina é um espaço virtual cujas paredes permanecem colabadas. Para que seja possível a visualização de seu interior, é indispensável a utilização de um meio de distensão, que pode ser gasoso (CO2) ou líquido (soro fisiológico, glicina, manitol). Mesmo com o uso de histeroscópios finos e modernos, como o de Bettocchi, a distensão é mandatória.\n\nAlternativa b) Incorreta. Na propedêutica uterina, a biópsia dirigida (feita sob visão direta durante a histeroscopia) é o padrão-ouro e preferível à biópsia \"cega\" ou orientada apenas pela topografia. A visualização direta permite coletar material exatamente da área que apresenta alteração, o que aumenta significativamente a acurácia do exame anatomopatológico.\n\nAlternativa c) Incorreta. Na histeroscopia ambulatorial moderna, utiliza-se preferencialmente a técnica de vaginoscopia, que dispensa o uso de espéculo e o pinçamento do colo uterino para diminuir a dor. Quando o pinçamento é inevitável para retificar o canal, ele deve ser feito no lábio anterior ou posterior (dependendo da posição uterina). O pinçamento lateral deve ser evitado devido à presença dos feixes vasculares das artérias uterinas.\n\nAlternativa d) Incorreta. Não há obrigatoriedade do uso de gás na suspeita de câncer de endométrio. Embora existam debates sobre a pressão de infusão e a possibilidade de disseminação de células neoplásicas para a cavidade peritoneal através das tubas, as evidências clínicas mostram que o uso de meio líquido não altera o estadiamento ou o prognóstico da paciente. Além disso, o gás CO2 em contato com sangue gera bolhas que dificultam a visão, sendo o meio líquido tecnicamente superior em casos de sangramento.\n\nAlternativa e) Correta. A escolha do meio de distensão depende do tipo de energia elétrica utilizada. Na energia monopolar, o meio deve ser não condutor e livre de eletrólitos (como glicina ou manitol) para evitar a dispersão da corrente. Na energia bipolar, a corrente elétrica passa apenas entre os dois polos do próprio instrumento; por isso, pode-se utilizar o soro fisiológico (meio eletrolítico), que é mais seguro por reduzir o risco de complicações graves, como a hiponatremia dilucional, em caso de absorção sistêmica do líquido (síndrome de sobrecarga hídrica).",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:01.230Z"
+  },
+  {
+    "id": "AJUDA_86828f25-c08a-4ba0-8f1e-162129a6baf7",
+    "originalId": "86828f25-c08a-4ba0-8f1e-162129a6baf7",
+    "statement": "A anemia mais comum durante a gestação é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia falciforme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anemia ferropriva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Anemia megaloblástica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anemia aplástica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Anemia hemolítica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A anemia na gestação é definida pela Organização Mundial da Saúde (OMS) como níveis de hemoglobina (Hb) inferiores a 11 g/dL. Durante o período gestacional, ocorre um fenômeno fisiológico chamado hemodiluição, pois o volume plasmático aumenta cerca de 50%, enquanto a massa de glóbulos vermelhos aumenta apenas cerca de 20% a 30%. No entanto, quando os níveis caem abaixo do limite estabelecido, entramos no campo das anemias patológicas.\n\nAlternativa a) Incorreta. A anemia falciforme é uma hemoglobinopatia hereditária. Embora seja uma condição importante que exige pré-natal de alto risco devido ao maior risco de crises álgicas, infecções e complicações placentárias, sua prevalência é restrita a indivíduos portadores do gene, não sendo a causa mais comum na população geral de gestantes.\n\nAlternativa b) Correta. A anemia ferropriva (por deficiência de ferro) é, isoladamente, a causa mais comum de anemia durante a gestação, sendo responsável por mais de 90% dos casos. Isso ocorre porque a demanda por ferro aumenta significativamente para suprir as necessidades do feto, da placenta e a expansão da volemia materna. Muitas mulheres já iniciam a gestação com estoques baixos de ferro, o que torna essa carência nutricional extremamente prevalente.\n\nAlternativa c) Incorreta. A anemia megaloblástica, geralmente causada pela deficiência de ácido fólico ou, mais raramente, de vitamina B12, é considerada a segunda causa mais comum de anemia nutricional na gravidez. No entanto, sua incidência diminuiu consideravelmente com a recomendação universal de suplementação de ácido fólico no período periconcepcional para a prevenção de defeitos do tubo neural.\n\nAlternativa d) Incorreta. A anemia aplástica é uma condição rara e grave, caracterizada pela falência da medula óssea na produção de todas as linhagens celulares (hemácias, leucócitos e plaquetas). Não possui relação direta de frequência com o estado gestacional e é considerada uma intercorrência hematológica de alta complexidade.\n\nAlternativa e) Incorreta. A anemia hemolítica decorre da destruição precoce das hemácias. Pode estar associada a condições graves na gestação, como a síndrome HELLP ou anemias autoimunes, mas são quadros específicos e muito menos frequentes do que a carência de ferro.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Anemias",
+      "Pré-Natal"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:01.230Z"
+  },
+  {
+    "id": "AJUDA_8682a4f4-3bd1-4cb6-8606-6b866b7d2d5f",
+    "originalId": "8682a4f4-3bd1-4cb6-8606-6b866b7d2d5f",
+    "statement": "O reflexo inibitório anorretal, em pacientes constipados com sorologia reagente para a Doença de Chagas, evidencia o diagnóstico de megacólon chagásico por meio do exame de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "enema opaco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "manometria anorretal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "radiografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O diagnóstico do megacólon chagásico baseia-se na história clínica de constipação crônica, sorologia positiva para *Trypanosoma cruzi* e exames complementares que avaliam a anatomia e a fisiologia colorretal.\n\nA questão foca no reflexo inibitório anorretal (RIAR), que é uma resposta fisiológica na qual ocorre o relaxamento do esfíncter anal interno em resposta à distensão da ampola retal. No megacólon chagásico, ocorre a destruição dos plexos nervosos mioentéricos (plexo de Auerbach), o que resulta na ausência desse reflexo.\n\nAbaixo, a análise das alternativas:\n\na) Incorreta. O enema opaco é um exame radiológico contrastado fundamental para avaliar a morfologia do cólon. Ele permite identificar a dilatação (megacólon), o alongamento (dolicocólon) e sinais como o sinal do \"bico de pássaro\" no reto distal. No entanto, ele é um exame anatômico e não possui a capacidade de mensurar pressões ou avaliar reflexos fisiológicos como o RIAR.\n\nb) Correta. A manometria anorretal é o exame padrão-ouro para o estudo funcional da região anorretal. Por meio de sensores de pressão e da insuflação de um balão no reto, o exame avalia a sensibilidade retal, a complacência e, especificamente, a presença ou ausência do reflexo inibitório anorretal. No paciente com megacólon chagásico, a manometria demonstrará a ausência desse reflexo devido à denervação do plexo mioentérico.\n\nc) Incorreta. A ultrassonografia (seja abdominal ou endorretal) tem papel limitado no diagnóstico do megacólon chagásico. A ultrassonografia endorretal é mais utilizada para o estadiamento de tumores retais ou avaliação de fístulas e abscessos, não sendo capaz de avaliar o reflexo inibitório anorretal.\n\nd) Incorreta. A radiografia simples de abdome é útil em quadros agudos para identificar distensão de alças, níveis hidroaéreos ou a presença de um fecaloma (sinal do miolo de pão). Contudo, é um exame de baixa especificidade que não fornece informações sobre a integridade do sistema nervoso entérico ou sobre reflexos esfincterianos.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:01.230Z"
+  },
+  {
+    "id": "AJUDA_868f70cd-e3ee-425c-bb92-2af47b26aee5",
+    "originalId": "868f70cd-e3ee-425c-bb92-2af47b26aee5",
+    "statement": "Uma paciente em uma casa de repouso com demência leve é internada com obstrução intestinal de alto grau. Ela é internada para repouso intestinal e monitoramento. Nas 24 horas seguintes, seu débito por sonda nasogástrica permanece bilioso, sua dor abdominal piora e seu lactato aumenta. Você determina que ela precisa ir urgentemente para o centro cirúrgico, mas quando ela é informada sobre a cirurgia, diz: \"Não quero cirurgia, quero ir para casa e preparar o jantar com meu marido\" e afirma que vai melhorar sozinha, sem cirurgia. Ela insiste em deixar o hospital e continua falando com o marido como se ele estivesse presente. Quando você liga para a casa de repouso, eles informam que o marido dela faleceu há décadas, que ela não possui Diretiva Antecipada de Vontade registrada, já que todos os seus irmãos faleceram e que ela não tem filhos.\n\nConsiderando o caso anterior da paciente com demência leve e obstrução intestinal, qual princípio bioético pode ser usado para justificar essa decisão de prosseguir com o tratamento cirúrgico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Autonomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Beneficência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Não maleficência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Justiça.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso:\n\nTrata-se de uma emergência cirúrgica (abdome agudo obstrutivo com sinais de complicação e provável isquemia intestinal, evidenciada pela elevação do lactato e piora da dor abdominal). A paciente expressa recusa ao procedimento, porém encontra-se claramente incapacitada de tomar decisões clínicas por apresentar desorientação têmporo-espacial e perda do contato com a realidade (acredita que o marido falecido há décadas está presente). Na ausência de capacidade de discernimento, de diretivas antecipadas de vontade e de representantes legais, o médico tem o dever ético e legal de agir para salvar a vida da paciente.\n\nAnálise das alternativas:\n\na) Incorreta. A autonomia baseia-se no direito do paciente de autodeterminação sobre sua saúde e tratamentos. No entanto, para ser exercida, exige capacidade cognitiva para compreender o diagnóstico, o prognóstico e os riscos da recusa. Como a paciente está em quadro confusional agudo/delirium, sua recusa verbal não constitui uma manifestação autônoma válida.\n\nb) Correta. O princípio da beneficência dita o dever do profissional de agir no melhor interesse do paciente, promovendo seu bem-estar e preservando sua vida. Em situações de urgência e emergência com risco iminente de morte, quando o paciente não tem capacidade de decisão e não há responsáveis legais, a intervenção médica mandatória é plenamente justificada pela beneficência.\n\nc) Incorreta. A não maleficência fundamenta-se no dever de não causar dano intencional (primum non nocere). Embora a omissão do tratamento resultasse em morte, o ato positivo e intervencionista de levar a paciente ao centro cirúrgico para reverter uma patologia fatal é sustentado fundamentalmente pelo dever de beneficiar o paciente (beneficência).\n\nd) Incorreta. O princípio da justiça trata da distribuição equitativa de recursos de saúde e do tratamento imparcial na sociedade, não sendo o princípio que rege a conduta médica individual nesta emergência clínica.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Demências",
+      "Saúde do Idoso",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:01.230Z"
+  }
+]

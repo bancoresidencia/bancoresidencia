@@ -1,0 +1,857 @@
+[
+  {
+    "url": "https://www.medevo.com.br/material-apoio/ler/26cf8a5e-d5ad-4d07-98bd-5b6dd3e773b2",
+    "method": "GET",
+    "resourceType": "document"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/rpc/upsert_platform_heartbeat",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/index-HfHWTIjd-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/lucide-common-immURn7B-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/performance/medevo-logo-v1-256.webp",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://www.medevo.com.br/manifest.webmanifest",
+    "method": "GET",
+    "resourceType": "manifest"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/lazy-recorder-DKlnYsTu-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/dead-clicks-autocapture-BqSenBET-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/exception-autocapture-BiOWT4Aq-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/contracts-BAa86QbQ-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/index-lVk5EygV-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/supabaseRetryUtils-BtaBmCnU-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/pendingChat-o-kl6WCo-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/pendingPublicQuestion-B1e1Hxsa-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/enamedMission-BsBuFzYj-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/index-C7LHS-zE-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/dialog-C7Stl8mQ-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/searchUtils-B0-DRAF9-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/enamedMissionInvite-x75Qx2VG-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/chunkArray-DTwT6nK1-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/SharedSession-ulp1p4NT-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/LegacyPlantaoRedirectPage-DONVaQI4-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/errorLogger-CSP2GRpM-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/skeleton-Bnt08C2c-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/flashcardQueryKeys-Cv4hJ_Sp-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/IllustratedToolIcon-DU_SoXdL-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/rounds-v2-CkgKNd0a-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/localStorageCleanup-COPqQsVM-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/loading-spinner-DmnQWgcU-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/pista-clinica-v2-C4PULciF-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/toaster-WvOdLfEX-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/native-BAXC4wra-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/web-vitals-ArAQ40MM-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/module.no-external-B2XOnQhn-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://posthog.medunity.com.br/array/phc_CKpBCwg2guKmYcdUeXoouZrhbCndU9QoaRFi49UyFYsu/config",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://connect.facebook.net/en_US/fbevents.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/rpc/get_my_pending_institution_admission",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "blob:https://www.medevo.com.br/a335ce41-acf8-4714-b5ff-108681864f83",
+    "method": "GET",
+    "resourceType": "media"
+  },
+  {
+    "url": "blob:https://www.medevo.com.br/88da90e4-1a73-454b-860a-235fae4e9e88",
+    "method": "GET",
+    "resourceType": "media"
+  },
+  {
+    "url": "blob:https://www.medevo.com.br/aade07ca-9000-4dfa-bee5-d7e129ad557a",
+    "method": "GET",
+    "resourceType": "media"
+  },
+  {
+    "url": "blob:https://www.medevo.com.br/8a6706cc-5556-4f4e-a207-153dd50f316c",
+    "method": "GET",
+    "resourceType": "media"
+  },
+  {
+    "url": "blob:https://www.medevo.com.br/18b9985c-8cb3-4f30-84a1-3e9e0b3765f3",
+    "method": "GET",
+    "resourceType": "media"
+  },
+  {
+    "url": "https://posthog.medunity.com.br/flags/?v=2",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://connect.facebook.net/signals/config/25309913901951561?v=2.9.419&r=stable&domain=www.medevo.com.br&hme=7459fa3e38c2784dbaf309537bed5fa7e8560fab51fb61e53e5ffafeb46a02a9&ex_m=118%2C241%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C56%2C127%2C54%2C161%2C72%2C185%2C110%2C184%2C210%2C255%2C84%2C274%2C273%2C272%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C324%2C325%2C326%2C323%2C339%2C361%2C248%2C237%2C70%2C238%2C236%2C364%2C355%2C59%2C249%2C121%2C145%2C92%2C135%2C61%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/user_preferences?select=id%2Cuser_id%2Ctutorial_completed%2Cfilter_tutorial_completed%2Cdiscord_community_dialog_dismissed%2Cerror_notebook_shuffle_alternatives%2Cflashcard_comment_expanded_by_default%2Ccinematic_viewed%2Ctarget_specialty%2Cstudy_months%2Cpreferences_completed%2Ctarget_institutions_unknown%2Cdark_mode_enabled%2Ctheme_mode%2Creading_font_preference%2Cschedule_view_preference%2Cui_experience%2Cui_experience_chosen_at%2Chas_seen_drwill_context_tutorial%2Chas_seen_contextual_notes_tutorial%2Csound_enabled%2Cduel_invites_enabled%2Cshow_online_status%2Chide_timers%2Cguided_study_enabled%2Cguided_study_home_view%2Cstore_review_feedback_mission%2Ccreated_at%2Cupdated_at&user_id=eq.dc46d6d6-57a3-45e5-b5cc-9f7561361373",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/study_categoriesv2?select=id%2Cname%2Ctype%2Cparent_id%2Cslug%2Cknowledge_domain%2Capplicable_domains%2Ckeywords&is_active=eq.true&type=in.%28specialty%2Ctheme%2Cfocus%29&order=type.asc%2Cname.asc%2Cid.asc&offset=0&limit=1000",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/rpc/check_user_shadow_ban",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/pomodoro_sessions?select=id%2Csession_type%2Cduration_minutes%2Cstarted_at%2Ccycle_position%2Cpaused_at%2Caccumulated_pause_seconds&user_id=eq.dc46d6d6-57a3-45e5-b5cc-9f7561361373&status=eq.in_progress&order=started_at.desc&limit=1",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/rpc/acquisition_server_time",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://k6-e4e4123be8e54363900a90353991ca93.ecs.us-west-1.on.aws/events?cee=no",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://www.facebook.com/tr/?id=25309913901951561&ev=PageView&dl=https%3A%2F%2Fwww.medevo.com.br%2Fmaterial-apoio%2Fler%2F26cf8a5e-d5ad-4d07-98bd-5b6dd3e773b2&rl=&if=false&ts=1792259601981&iw=false&sw=1536&sh=864&v=2.9.419&r=stable&ec=0&o=20509&aems=0%3B0&fbp=fb.2.1792256659193.753043560476975897&eid=ob3_plugin-set_09baabdb36da538b71d616d039008062ee295704702f83af6a32509f78579197&ler=empty&cdl=API_unavailable&plt=396&tz=-180&it=1792259601872&coo=false&cf=1&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra0&expv2[4]=rp0&expv2[5]=ct3&expv2[6]=hf0&expv2[7]=sd1&expv2[8]=sp1&expv2[9]=ek1&expv2[10]=pc1&expv2[11]=gs1&expv2[12]=zs1&expv2[13]=cp1&expv2[14]=es1&expv2[15]=ac1&expv2[16]=so1&expv2[17]=wc1&expv2[18]=la1&expv2[19]=sf1&expv2[20]=da1&expv2[21]=io1&expv2[22]=ae1&expv2[23]=sx1&expv2[24]=if1&expv2[25]=fd1&expv2[26]=bg1&expv2[27]=mg1&expv2[28]=kl1&expv2[29]=sg1&expv2[30]=mk1&expv2[31]=sn1&expv2[32]=ec1&expv2[33]=mp1&expv2[34]=ps1&expv2[35]=fx1&expv2[36]=vt1&expv2[37]=dp1&expv2[38]=fw1&expv2[39]=cn1&expv2[40]=tz1&expv2[41]=pe1&expv2[42]=ee1&expv2[43]=bu1&expv2[44]=ta1&expv2[45]=ot1&expv2[46]=hv1&expv2[47]=ep1&expv2[48]=rh0&expv2[49]=ah0&rqm=GET",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://posthog.medunity.com.br/i/v0/e/",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/profiles?select=id%2Cfull_name%2Cavatar_url%2Cpreparation_type%2Cspecialty%2Ceducation_institution_id%2Ceducation_period_year%2Cis_admin%2Cis_ambassador%2Cambassador_benefit_active%2Cambassador_benefit_status%2Cambassador_benefit_granted_at%2Cambassador_benefit_suspension_reason%2Cis_mentor%2Cpremium%2Csubscription_status%2Csubscription_expires_at%2Cpoints_premium_expires_at%2Cfeedback_premium_expires_at%2Cinstitution_premium_expires_at%2Cinstitution_staff_expires_at%2Cprofile_banner_url%2Cbio%2Cprofile_color%2Cname_color%2Cname_style%2Cselected_badges%2Cusername%2Ccreated_at%2Cupdated_at%2Casaas_customer_id%2Casaas_subscription_id%2Cbeta_premium_granted%2Cis_anonymous_in_ranking%2Cshow_in_ranking%2Clast_seen_at&id=eq.dc46d6d6-57a3-45e5-b5cc-9f7561361373",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "blob:https://www.medevo.com.br/a095f0cc-01a3-4469-be27-ec462f537fc9",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=G-Q6MGCCV2VP",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtag/js?id=AW-1035346699&cx=c&gtm=4e6ae1",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-Q6MGCCV2VP&gtm=45je6ae1v9223139024za208zd9223139024xf1&_p=1792259601005&gcd=13l3l3l3l3l1&npa=1&dma=0&_eu=AAAAACQC&cid=1420172775.1792256650&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=9&sr=1536x864&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B155.0.8059.80%7CChromium%3B155.0.8059.80%7CNot(A%253ABrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=pt-br&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792256649&sct=1&seg=1&dl=https%3A%2F%2Fwww.medevo.com.br%2Fmaterial-apoio%2Fler%2F26cf8a5e-d5ad-4d07-98bd-5b6dd3e773b2&dt=MedEvo%20%E2%80%94%20A%20plataforma%20que%20acelera%20sua%20evolu%C3%A7%C3%A3o%20m%C3%A9dica&_tu=wAg&en=page_view&_ee=1&tfd=1448",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://www.google.com/ccm/collect?rcb=17&frm=0&apvc=1&auid=1112578467.1792256650&dt=MedEvo%20%E2%80%94%20A%20plataforma%20que%20acelera%20sua%20evolu%C3%A7%C3%A3o%20m%C3%A9dica&tid=AW-1035346699&en=page_view&dl=https%3A%2F%2Fwww.medevo.com.br%2Fmaterial-apoio%2Fler%2F26cf8a5e-d5ad-4d07-98bd-5b6dd3e773b2&scrsrc=www.googletagmanager.com&rnd=1416029049.1792259602&navt=n&npa=1&gtm=45be6ae1v9209469483za208zb9223139024zd9223139024xecxf1&gcd=13l3l3l3l3l1&dma=0&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&tft=1792259602198&tfd=1501&tids=AW-1035346699&fmt=8",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/FloatingToolsHub-DwdSAPdD-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/DrWillChatPresence-CtyFMPfF-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/PauseContext-CzQLIsgV-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/drawer-Dr51Q9X4-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/link-2-IR_Rh0M5-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/rpc/get_conversations_list",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/rpc/get_pending_friend_requests",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://posthog.medunity.com.br/flags/?v=2",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/rpc/save_profile_acquisition",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/performance/dr-will-ensinando-v1-192.webp",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/study_categoriesv2?select=id%2Cname%2Ctype%2Cparent_id%2Cslug%2Cknowledge_domain%2Capplicable_domains%2Ckeywords&is_active=eq.true&type=in.%28specialty%2Ctheme%2Cfocus%29&order=type.asc%2Cname.asc%2Cid.asc&offset=1000&limit=1000",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/DiscordCommunityDialog-SbmGKwuG-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/LerMaterial-BJ_tVNTI-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/storeReviewFeedbackMission-BubK_gpp-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/sanitize-CLVBZ9BQ-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/useGuidedTopicProgress-9_rHXJVO-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/completeGuidedMaterial-m-bk6HXi-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/GuidedTopicJourney-BiMzVhCP-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/FontSizeControl-BZPeTE6w-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/ContributionBlockEditor-CLrLZmKr-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/style-DeiZEZLE-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/with-selector-o6lz5XmU-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/useMaterialProgress-BvPwqK6l-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/useStudyMaterials--3zFCHbn-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/italic-D8oZI_zv-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/graduation-Bj4kUdOG-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/heading-2-Bu6i6mPP-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/list-kFBSs9U7-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/list-ordered-D5l6KHVo-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/image-plus-nbyixTnI-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/markdownHtmlConverter-BJYOZsH2-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/copyTextCleaner-BXXp3GNs-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/mathFormatting-B5I_EDfz-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/MarketingPurchaseAudit-DvBxhcub-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/drWillEndpoint-DG1ruPUD-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/MarkdownRenderer-JJW-LQyU-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/TextWithImages-DelE3PRe-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/index.esm-CdS42dHx-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/commentaryReferences-nt-Iaaee-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/correctChoices-D_6FAOXQ-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/markdownHeadings-CUoOxwcE-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/question-BiSKHDUs-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/index-CLiy3IR0-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/index-DypGk_nl-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/ContextualNotebookCard-mEvSvhC6-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/useNextStudy-XJXXX89t-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/book-open-text-BhwP9tQm-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/materialReferences-Bgz6E2UL-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/useQuestionFetcher-Bohn-DcX-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/MaterialFavoriteButton-DSZg_IuS-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/useAdminPermissions-D6LCP2D4-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/popover-Dg_j__JQ-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/ellipsis-CSAEslQm-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/EducationPeriodYearSelect-Sig5AvYE-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/index-HKpoAgy_-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/pdf.worker.min-ClYcEjgm-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/useContributions-FLXsQRh_-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/AdminLayout-QphneQKg-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/pen-line-DBktZcKW-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/MaterialFeedbackInline-uZaillDN-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/message-square-plus-ePHdXR1Z-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/useStudyContentReports-Dle-TxCs-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/secureStorage-Crrfg8BI-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/lightbulb-DZmNNFJ6-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/StudyOptionsDialog-M2gx0z65-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/ScheduleActivationDialog-DgsvDyNT-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/AmbassadorPagination-hX-OkIXB-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/PistaClinicaManagement-BKfEi0p6-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/MiniGamesManagement-CIzK40gm-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/especialidade-ideal-v2-Dhrn8utA-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/study-streak-cache-CnEjC2i9-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/checkbox-CQUUYrpP-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/SimpleFolderSelector-DVygHfzb-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/SessionQuantityControl-BGnPZycA-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/sessionTransformers-C_kk2wLX-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/useSessionFolders-DER7HUdL-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/ensureUserId-CXFAc7XN-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/drWillQuestionResults-CrpvdmI3-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/QuestionSessionFilterFields-B-14z9Pn-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/AnonymousBanner-DK5RPmGu-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/QuantityPerFilterSelector-CXFy2t2D-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/InstitutionSelectorDialog-Bcp3TatS-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/useStudyPreferences-DcFoQm14-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/QuestionImport-ByjZ0KK8-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/pen-DKXRJYth-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/network-Bk6qDXmB-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/YouTubeVideosDialog-DAcO8Rxk-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/minimize-2-BQinRlvd-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/youtube-CZjbz80R-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/thumbs-up-btmJz5p--cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/printer-QZ-B26Xi-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/book-marked-BF4mJMqO-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/FloatingYouTubePlayer-DAWJtLmF-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/FloatingPodcastPlayer-BthkRKai-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/useEnamedReadiness-CPUxn60V-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://www.medevo.com.br/assets/maximize-2-ZOFQBwxc-cache1.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/user_notifications?select=id&user_id=eq.dc46d6d6-57a3-45e5-b5cc-9f7561361373&read_at=is.null&dismissed_at=is.null",
+    "method": "HEAD",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://game.medevo.com.br/stats",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/user_blacklisted_institutions?select=institution_id%2Cexam_locations%21inner%28id%2Cname%2Cshort_name%2Ccanonical_name%29&user_id=eq.dc46d6d6-57a3-45e5-b5cc-9f7561361373",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/study_material_progress?select=*&user_id=eq.dc46d6d6-57a3-45e5-b5cc-9f7561361373&material_id=eq.26cf8a5e-d5ad-4d07-98bd-5b6dd3e773b2",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/study_materials?select=id%2Cspecialty_id%2Ctheme_id%2Cfocus_id%2Cspecialty_v2_id%2Ctheme_v2_id%2Cfocus_v2_id%2Ctitle%2Csummary%2Cversion%2Cstatus%2Cai_generated%2Ccreated_by%2Capproved_by%2Ccreated_at%2Cupdated_at%2Cpublished_at%2Creading_time_minutes%2Cdifficulty_level%2Ctags%2Cmetadata%2Csource_file_name%2Csource_file_url%2Csource_file_type%2Csource_file_size%2Ctranscribed_text%2Cprocessing_status%2Cprocessing_mode%2Cprocessing_started_at%2Cprocessing_completed_at%2Cerror_message%2Cstudylab_generated%2Cspecialty%3Astudy_categoriesv2%21specialty_v2_id%28id%2Cname%29%2Ctheme%3Astudy_categoriesv2%21theme_v2_id%28id%2Cname%29%2Cfocus%3Astudy_categoriesv2%21focus_v2_id%28id%2Cname%29%2Cstudy_material_questions%28id%2Cquestion_id%2Cused_in_generation%2Crelevance_score%29&id=eq.26cf8a5e-d5ad-4d07-98bd-5b6dd3e773b2",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://posthog.medunity.com.br/flags/?v=2",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/rpc/get_study_material_content_secure",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/user_material_favorites?select=material_id&user_id=eq.dc46d6d6-57a3-45e5-b5cc-9f7561361373&order=material_id.asc&offset=0&limit=500",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/user_referrals?select=referral_code%2Ccommission_percentage%2Ccreated_at&referrer_id=eq.dc46d6d6-57a3-45e5-b5cc-9f7561361373",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/exam_locations?select=id%2Cname%2Ccanonical_name%2Cshort_name%2Ccity%2Cstate_code%2Cinstitution_kind%2Cparent_institution_name%2Caliases%2Ccreated_at%2Cupdated_at&order=name.asc",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/user_preferences?select=id%2Cuser_id%2Ctutorial_completed%2Cfilter_tutorial_completed%2Cdiscord_community_dialog_dismissed%2Cerror_notebook_shuffle_alternatives%2Cflashcard_comment_expanded_by_default%2Ccinematic_viewed%2Ctarget_specialty%2Cstudy_months%2Cpreferences_completed%2Ctarget_institutions_unknown%2Cdark_mode_enabled%2Ctheme_mode%2Creading_font_preference%2Cschedule_view_preference%2Cui_experience%2Cui_experience_chosen_at%2Chas_seen_drwill_context_tutorial%2Chas_seen_contextual_notes_tutorial%2Csound_enabled%2Cduel_invites_enabled%2Cshow_online_status%2Chide_timers%2Cguided_study_enabled%2Cguided_study_home_view%2Cstore_review_feedback_mission%2Ccreated_at%2Cupdated_at&user_id=eq.dc46d6d6-57a3-45e5-b5cc-9f7561361373",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/rpc/get_institutions_with_questions",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/rpc/get_filtered_question_count_v4",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/study_sessions?select=id%2Ccurrent_question_index%2Ctotal_questions%2Ctitle&user_id=eq.dc46d6d6-57a3-45e5-b5cc-9f7561361373&status=eq.in_progress&questions=cs.%7B26cf8a5e-d5ad-4d07-98bd-5b6dd3e773b2%7D&order=started_at.desc&limit=1",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://data.medevo.com.br/rest/v1/user_target_institutions?select=institution_id%2Cexam_locations%21inner%28id%2Cname%2Cshort_name%2Ccanonical_name%29&user_id=eq.dc46d6d6-57a3-45e5-b5cc-9f7561361373",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://posthog.medunity.com.br/e/",
+    "method": "POST",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "https://posthog.medunity.com.br/i/v0/e/",
+    "method": "POST",
+    "resourceType": "fetch"
+  }
+]

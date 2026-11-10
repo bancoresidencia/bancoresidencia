@@ -1,0 +1,488 @@
+[
+  {
+    "id": "AJUDA_d0280ec8-1e01-4348-b03f-118f6528b4c4",
+    "originalId": "d0280ec8-1e01-4348-b03f-118f6528b4c4",
+    "statement": "Homem de 75 anos é levado ao pronto atendimento com queixa de mal-estar inespecífico e astenia. É portador de Diabetes Melito-2, Insuficiência Cardíaca Congestiva com Fração de Ejeção do Ventrículo Esquerdo de 28%, Doença Renal Crônica 3bA2 (creatinina basal 1,5mg/dL, 37mL/min/1.73m²). Faz uso de furosemida 40mg ao dia, losartana 50mg 2x ao dia, espironolactona 25mg ao dia, carvedilol 25mg 2x ao dia, dapagliflozina 10mg ao dia e metformina 500mg 2x ao dia. Ao exame físico, PA 102/54mmHg, FC 56bpm. As mucosas estão coradas e desidratadas. AR, ACV, abdome: sem anormalidades. A Pressão Venosa Central estimada pelo exame do Pulso Venoso Jugular encontra-se normal. Abdome: sem anormalidades. EXAMES DE LABORATÓRIO: creatinina 2,2mg/dL; ureia 102mg/dL; potássio 6,1mEq/L; sódio 129mEq/L; bicarbonato 16mEq/L; glicemia 126mg/dL; lactato 1,2mEq/L. Assinale a alternativa que NÃO representa uma causa contributiva para a hiperpotassemia apresentada por esse paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carvedilol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Desidratação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença renal crônica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Metformina",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro de hiperpotassemia (K = 6,1 mEq/L) associado a uma Lesão Renal Aguda sobreposta a uma Doença Renal Crônica (creatinina subiu de 1,5 para 2,2 mg/dL). Ele possui diversos fatores de risco, incluindo o uso de medicamentos que interferem na excreção de potássio, como Losartana (BRA) e Espironolactona (antagonista da aldosterona).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Carvedilol): INCORRETA (representa uma causa contributiva). Os betabloqueadores, como o carvedilol, interferem no deslocamento do potássio do meio extracelular para o meio intracelular (shift intracelular). Eles bloqueiam os receptores beta-2 adrenérgicos que estimulam a bomba Na+/K+ ATPase. Sem esse estímulo, o potássio tende a permanecer no plasma, elevando seus níveis.\n\nAlternativa B (Desidratação): INCORRETA (representa uma causa contributiva). A desidratação reduziu a perfusão renal, causando uma lesão renal aguda pré-renal. Isso diminui o fluxo de fluido e a oferta de sódio para o túbulo distal, ambos necessários para que ocorra a secreção de potássio na urina. Menos fluxo urinário distal resulta em menor excreção de potássio.\n\nAlternativa C (Doença renal crônica): INCORRETA (representa uma causa contributiva). A DRC reduz a massa total de néfrons funcionantes. Com menos néfrons para realizar a filtração e a secreção tubular, a capacidade do rim de manter a homeostase do potássio fica severamente comprometida, especialmente em situações de estresse ou uso de fármacos.\n\nAlternativa D (Metformina): CORRETA (NÃO representa uma causa contributiva). A metformina não possui ação direta no manejo renal ou celular do potássio. O principal risco associado à metformina em pacientes com insuficiência renal é o desenvolvimento de acidose lática, pois a droga é excretada pelos rins e pode se acumular. No entanto, o lactato do paciente está normal (1,2 mEq/L) e a droga em si não causa hiperpotassemia. Embora seu uso deva ser evitado ou ajustado em casos de redução importante da taxa de filtração glomerular, ela não explica o potássio elevado.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Distúrbios do Potássio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:35.570Z"
+  },
+  {
+    "id": "AJUDA_d02c3b28-6239-44f3-b5e4-166aedfd52fa",
+    "originalId": "d02c3b28-6239-44f3-b5e4-166aedfd52fa",
+    "statement": "Lúcia, 74 anos, viúva, aposentada, vive sozinha e apresenta hipertensão controlada com losartana, além de insuficiência renal leve (TFG estimada em 55 mL/min). Há catorze meses, queixa-se de dor difusa, fadiga intensa e insônia. Apresenta diagnóstico de fibromialgia realizado por reumatologista há oito meses. Refere que o uso regular de paracetamol não trouxe benefício relevante. Relata tristeza, isolamento social e redução importante das atividades que antes realizava, como encontros no grupo da igreja. Na consulta da APS, pede “um remédio mais forte” e diz que não acredita em “exercícios que nunca funcionaram”.\nQual deve ser a conduta prioritária nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Introduzir antidepressivo tricíclico em baixa dose para manejo da dor e do sono, mantendo analgésico simples conforme necessidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar anticonvulsivante, como gabapentina ou pregabalina, para tratamento da dor neuropática difusa, associado a seguimento clínico próximo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fortalecer o plano terapêutico multiprofissional com exercícios supervisionados, psicoterapia e educação em saúde, podendo associar fármaco adjuvante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Escalar a dose de paracetamol até o limite terapêutico seguro, monitorando função hepática e reforçando adesão ao uso regular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A abordagem da fibromialgia, especialmente em pacientes idosos com comorbidades e componentes psicossociais importantes, deve ser baseada no modelo biopsicossocial. A questão apresenta uma paciente com dor crônica, fadiga, insônia e sinais de isolamento social e humor depressivo, o que exige uma estratégia que vá além da simples prescrição medicamentosa.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Embora os antidepressivos tricíclicos, como a amitriptilina, sejam opções de primeira linha no tratamento farmacológico da fibromialgia, seu uso em idosos (74 anos) deve ser feito com extrema cautela. De acordo com os Critérios de Beers, os tricíclicos possuem forte efeito anticolinérgico, aumentando o risco de quedas, sedação, retenção urinária e prejuízo cognitivo nesta faixa etária. Além disso, focar apenas no medicamento ignora a necessidade de intervenções não farmacológicas que são o pilar do tratamento.\n\nAlternativa (b) Incorreta: Gabapentina e pregabalina são úteis no manejo da dor crônica, mas não devem ser a conduta isolada ou prioritária sem um plano de cuidados abrangente. Vale ressaltar que a pregabalina exige ajuste de dose em pacientes com insuficiência renal, como é o caso de Lúcia (TFG 55 mL/min). Assim como na alternativa anterior, o tratamento medicamentoso isolado é insuficiente para a reabilitação funcional e social da paciente.\n\nAlternativa (c) Correta: Esta é a conduta prioritária e mais adequada segundo as diretrizes atuais (como as da EULAR). O tratamento da fibromialgia deve ser centrado no paciente, priorizando medidas não farmacológicas. O plano multiprofissional aborda a resistência da paciente aos exercícios por meio da educação em saúde, trata o isolamento social e a tristeza por meio da psicoterapia e suporte da equipe, e utiliza a medicação apenas como um adjuvante para controle de sintomas, facilitando a adesão às outras terapias. O foco é a melhora da qualidade de vida e funcionalidade, e não apenas a redução da escala de dor.\n\nAlternativa (d) Incorreta: O paracetamol tem eficácia limitada ou nula na fibromialgia, pois a fisiopatologia da doença envolve a sensibilização central e não processos inflamatórios periféricos. Escalar a dose em uma paciente idosa com função renal limítrofe, para uma medicação que ela já referiu ser ineficaz, é uma conduta tecnicamente inadequada e potencialmente iatrogênica.\n\nEm resumo, a alternativa (c) é a correta por defender a abordagem multimodal, que é o padrão-ouro para o manejo de quadros de dor crônica complexos na Atenção Primária à Saúde.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Dolorosas Crônicas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:35.570Z"
+  },
+  {
+    "id": "AJUDA_d0335d90-630d-48e7-904a-7e99c81bb745",
+    "originalId": "d0335d90-630d-48e7-904a-7e99c81bb745",
+    "statement": "Mulher de 34 anos procurou a emergência, referindo dor pélvica há quatro dias, febre baixa, corrimento vaginal purulento e dispareunia. Não fez uso recente de antibióticos e nem teve internações nos últimos meses. Ao exame, apresenta sensibilidade à palpação abdominal em hipogástrio, dor à mobilização do colo uterino e presença de secreção vaginal espessa. A ultrassonografia apresenta imagem de abscesso tubo-ovariano de 3cm. A conduta preconizada é realizar tratamento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ambulatorial com antibioticoterapia polimicrobiana oral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hospitalar com antibioticoterapia polimicrobiana parenteral",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "cirúrgico seguido de antibioticoterapia polimicrobiana parenteral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "expectante com antibioticoterapia polimicrobiana oral em caso de piora clínica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descrito é clássico de Doença Inflamatória Pélvica (DIP). A paciente apresenta critérios maiores (dor infraumbilical, dor à mobilização do colo uterino e dor à palpação de anexos) e critérios menores (febre e secreção vaginal purulenta). A ultrassonografia confirma a classificação da DIP como Estágio III de Monif, devido à presença de abscesso tubo-ovariano de 3 cm.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. O tratamento ambulatorial com antibióticos por via oral é reservado apenas para casos de DIP leve (Estágio I de Monif), nos quais não há sinais de peritonite nem evidência de abscessos. A presença de abscesso tubo-ovariano, independentemente do tamanho, é uma indicação clássica de internação hospitalar para tratamento venoso.\n\nb) CORRETA. De acordo com os protocolos do CDC e da FEBRASGO, a presença de abscesso tubo-ovariano (Estágio III) exige internação hospitalar para administração de antibioticoterapia polimicrobiana parenteral (venosa). O tratamento venoso garante níveis séricos e teciduais mais elevados do medicamento para penetrar a parede do abscesso e permite o monitoramento rigoroso da paciente quanto ao risco de ruptura ou sepse.\n\nc) INCORRETA. O tratamento cirúrgico imediato não é a primeira escolha para um abscesso de 3 cm estável. A conduta inicial deve ser o tratamento clínico medicamentoso. A cirurgia (ou drenagem guiada por imagem) fica reservada para casos de falha do tratamento clínico (ausência de melhora em 48 a 72 horas), abscessos rotos com sinais de peritonite generalizada (Estágio IV), ou abscessos de grandes dimensões (geralmente maiores do que 8 ou 10 cm).\n\nd) INCORRETA. A conduta expectante não tem lugar no manejo da DIP com abscesso. Trata-se de uma infecção grave que requer intervenção imediata com antibióticos potentes. Aguardar a piora clínica para iniciar o tratamento oral aumentaria significativamente o risco de complicações graves, como infertilidade, dor pélvica crônica e choque séptico.\n\nSÍNTESE DA CONDUTA NA DIP (CLASSIFICAÇÃO DE MONIF)\n\n- Estágio I: Salpingite aguda sem peritonite (Tratamento ambulatorial/oral).\n- Estágio II: Salpingite com peritonite pélvica (Tratamento hospitalar/venoso).\n- Estágio III: Presença de abscesso tubo-ovariano íntegro (Tratamento hospitalar/venoso).\n- Estágio IV: Abscesso roto ou peritonite generalizada (Tratamento hospitalar/venoso + Cirurgia de urgência).",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:35.570Z"
+  },
+  {
+    "id": "AJUDA_d0375f87-c672-4723-b9d8-b0a471d404c6",
+    "originalId": "d0375f87-c672-4723-b9d8-b0a471d404c6",
+    "statement": "Mulher de 19 anos, tabagista, refere dor abdominal em baixo ventre, há 2 dias, associada a náuseas e intolerância alimentar. Relata que hoje a dor está mais intensa e que se localizou no lado direito do abdome. Mantém náuseas e vômitos, não conseguindo se alimentar. Refere ainda atraso menstrual de aproximadamente 60 dias, mas que tem ciclos menstruais irregulares desde a menarca. Tem vida sexual ativa, com parceiro fixo e faz uso irregular de anticoncepcional oral e preservativo. Relata ainda ser constipada (ritmo intestinal a cada 2 dias, com fezes endurecidas). Ao exame físico, apresenta-se em REG, descorada (3+/4+), FC = 142bpm, PA = 60 X 40 mmHg. O abdome é plano, doloroso a palpação difusa, mais importante na fossa ilíaca direita, com descompressão brusca positiva. Assinale a alternativa que indique o exame complementar à propedêutica capaz de definir o tratamento mais eficaz e rápido para o tipo de abdome agudo apresentado pela paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "RX de abdome agudo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "RX simples de abdome",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ultrassonografia do abdome a beira leito",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tomografia computadorizada do abdome",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma paciente de 19 anos, em idade fértil, com atraso menstrual de 60 dias e vida sexual ativa (uso irregular de métodos contraceptivos). Ela apresenta dor abdominal aguda com sinais de irritação peritoneal (descompressão brusca positiva) e, crucialmente, sinais de choque hemodinâmico grave: taquicardia importante (142 bpm), hipotensão severa (60/40 mmHg) e palidez cutâneo-mucosa intensa (3+/4+). \n\nDiante de uma mulher jovem com amenorreia, dor abdominal e instabilidade hemodinâmica, o diagnóstico principal é Abdome Agudo Hemorrágico, sendo a Gravidez Ectópica Rota a principal hipótese diagnóstica.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. A rotina de abdome agudo (que inclui RX de tórax em pé, RX de abdome em pé e deitado) é útil na investigação de abdome agudo perfurativo (busca de pneumoperitônio) ou obstrutivo (níveis hidroaéreos e distensões). No entanto, o raio X não possui sensibilidade para detectar sangue livre na cavidade abdominal (hemoperitônio) nem para diagnosticar gestação ectópica. Além disso, a paciente está instável demais para ser transportada ao setor de radiologia.\n\nb) INCORRETA. O RX simples de abdome isolado tem baixíssima utilidade diagnóstica na urgência e, assim como na alternativa anterior, não identifica sangramentos e submeteria uma paciente em choque a um transporte desnecessário e perigoso.\n\nc) CORRETA. A ultrassonografia de abdome à beira-leito (frequentemente realizada como FAST — Focused Assessment with Sonography for Trauma, ou POCUS — Point-of-Care Ultrasound) é o exame de escolha neste cenário. Ela pode ser realizada na própria sala de emergência enquanto a paciente é reanimada. O objetivo é identificar líquido livre na cavidade abdominal (sangue). Em uma paciente com choque e suspeita de gravidez ectópica, a presença de líquido livre no abdome confirma a necessidade de intervenção cirúrgica imediata (laparotomia exploradora), sendo o método mais rápido e eficaz para definir a conduta.\n\nd) INCORRETA. Embora a Tomografia Computadorizada (TC) seja um exame de alta precisão para diversas patologias abdominais, ela é terminantemente contraindicada para pacientes com instabilidade hemodinâmica (PA 60x40 mmHg). O transporte e o tempo necessário para a execução do exame em uma paciente em choque hemorrágico podem levar ao óbito antes mesmo da conclusão do diagnóstico. No abdome agudo, \"paciente instável não passeia pelo hospital\".\n\nCONCLUSÃO\n\nO foco em pacientes instáveis com suspeita de sangramento intra-abdominal deve ser a confirmação rápida de líquido livre sem retirar o paciente do ambiente de monitorização, o que torna a ultrassonografia à beira-leito a resposta correta.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo em Ginecologia",
+      "Abdome Agudo Hemorrágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:35.570Z"
+  },
+  {
+    "id": "AJUDA_d041d9f2-9b7e-45bb-abb0-e8c7e38007a2",
+    "originalId": "d041d9f2-9b7e-45bb-abb0-e8c7e38007a2",
+    "statement": "Uma paciente, sexo feminino, 52 anos, realizou ultrassonografia de tireoide por queixa de aumento do volume cervical. Na ultrassonografia, foram evidenciados quatro nódulos tireoideanos. Assinale a alternativa que descreve corretamente o nódulo mais suspeito para malignidade",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nódulo sólido, hipoecogênico, bem delimitado, sem focos ecogênicos de permeio, medindo 0,8 x 0,9 x 0,9 cm em istmo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nódulo hiperecogênico de limites bem definidos, com fluxo vascular predominantemente periférico, medindo 2,5 x 1,5 x 1,8 cm, mais largo do que alto em terço inferior de lobo direito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nódulo isoecogênico, medindo 4,0 x 2,0 x 2,5 cm, ocupando quase integralmente o lobo esquerdo da tireoide, com calcificações grosseiras de permeio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nódulo sólido hipoecogênico, medindo 1,2 x 1,0 x 0,9 cm em 1/3 superior de lobo direito, com contornos parcialmente delimitados e focos hiperecogenicos puntiformes de permeio (prováveis microcalcificações).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para avaliar o risco de malignidade de um nódulo tireoidiano à ultrassonografia, utilizamos critérios morfológicos bem estabelecidos, como os do sistema ACR TI-RADS ou da American Thyroid Association (ATA). As características de maior suspeição incluem a hipoecogenicidade, a presença de microcalcificações, as margens irregulares ou mal delimitadas e o formato mais alto do que largo (taller-than-wide).\n\nAnálise das alternativas:\n\na) Incorreta. Embora o nódulo seja sólido e hipoecogênico, ele possui limites bem definidos e não apresenta focos ecogênicos (microcalcificações). Além disso, o tamanho reduzido (menor que 1 cm) diminui a urgência de investigação diagnóstica invasiva na ausência de outros fatores de risco.\n\nb) Incorreta. Este nódulo apresenta diversas características de benignidade: é hiperecogênico (geralmente associado a baixo risco), tem limites bem definidos, é mais largo do que alto e possui fluxo vascular predominantemente periférico. Esses achados sugerem um nódulo de baixo risco (provavelmente TI-RADS 2).\n\nc) Incorreta. Nódulos isoecogênicos possuem risco intermediário. As calcificações grosseiras, embora necessitem de atenção, são menos específicas para malignidade do que as microcalcificações. Frequentemente, calcificações grosseiras ou \"em casca de ovo\" estão associadas a processos crônicos ou nódulos benignos antigos, apesar de não excluírem a neoplasia.\n\nd) Correta. Esta alternativa descreve o nódulo com o maior número de critérios de suspeição para câncer de tireoide (especialmente o carcinoma papilífero). As características que justificam o gabarito são: ser sólido, hipoecogênico, possuir contornos parcialmente delimitados (margens imprecisas) e, fundamentalmente, apresentar focos hiperecogênicos puntiformes, que são as microcalcificações. Além disso, o tamanho (1,2 cm) já preenche critérios para indicação de Punção Aspirativa por Agulha Fina (PAAF), conforme a maioria dos consensos, devido à sua morfologia suspeita.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:35.570Z"
+  },
+  {
+    "id": "AJUDA_d0440a45-ffd6-448d-8b30-b36841564ec8",
+    "originalId": "d0440a45-ffd6-448d-8b30-b36841564ec8",
+    "statement": "São causas de hiperbilirrubinemia indireta, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hemolise",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "icterícia pelo leite materno",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hipotiroidismo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "icterícia fisiológica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "atresia de vias biliares",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver esta questão, é fundamental diferenciar os mecanismos que levam ao aumento da bilirrubina indireta (não conjugada) daqueles que elevam a bilirrubina direta (conjugada). A bilirrubina indireta aumenta quando há excesso de produção, falha na captação ou deficiência na conjugação hepática. Já a bilirrubina direta aumenta quando há falha na excreção hepatocelular ou obstrução do fluxo biliar (colestase).\n\nAnálise das alternativas:\n\na) Hemólise: Incorreta. A destruição acelerada de hemácias libera grandes quantidades de hemoglobina, que é convertida em bilirrubina indireta. Esse excesso de oferta sobrecarrega a capacidade de conjugação do fígado, gerando hiperbilirrubinemia indireta.\n\nb) Icterícia pelo leite materno: Incorreta. Ocorre geralmente após a primeira semana de vida. Substâncias presentes no leite materno (como o pregnandiol e ácidos graxos livres) inibem a atividade da enzima glicuroniltransferase, responsável pela conjugação, elevando a fração indireta.\n\nc) Hipotireoidismo: Incorreta. O hormônio tireoidiano é um indutor metabólico da enzima glicuroniltransferase. No hipotireoidismo congênito, a atividade enzimática fica reduzida, o que retarda a conjugação da bilirrubina e causa icterícia indireta prolongada.\n\nd) Icterícia fisiológica: Incorreta. É a causa mais comum de icterícia neonatal. Decorre da combinação entre uma maior carga de hemácias (com menor vida útil) e a imaturidade enzimática transitória do fígado do recém-nascido. O aumento é estritamente de bilirrubina indireta.\n\ne) Atresia de vias biliares: Correta (Gabarito). Esta é uma patologia obstrutiva das vias biliares extra-hepáticas. O fígado realiza a conjugação da bilirrubina normalmente (transformando-a em direta), porém, devido à obstrução dos ductos, essa bilirrubina não alcança o intestino e reflui para o sangue. Portanto, caracteriza-se por hiperbilirrubinemia direta (colestase), sendo uma emergência cirúrgica pediátrica.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:35.570Z"
+  },
+  {
+    "id": "AJUDA_d045c6d3-6baf-4411-ab7b-f2ccd1fc2e24",
+    "originalId": "d045c6d3-6baf-4411-ab7b-f2ccd1fc2e24",
+    "statement": "O sistema STRAW (Stages of Reproductive Aging Workshop) caracteriza os diferentes estágios do envelhecimento do sistema reprodutivo com base em características clínicas e laboratoriais. Segundo esse sistema, uma mulher com amenorréia há 90 dias, baixa contagem de folículos ovariano, alto nível de hormônio folículo estimulante, baixo nível de hormônio antimülleriano, baixo nível de Inibina B encontra-se na seguinte fase da vida reprodutiva:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pós menopausa Tardia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pós menopausa Precoce",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transição menopausal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Período reprodutivo precoce",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pico do período reprodutivo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O sistema STRAW (Stages of Reproductive Aging Workshop) é o padrão-ouro para classificar o envelhecimento reprodutivo feminino, dividindo a vida da mulher em estágios baseados na regularidade do ciclo menstrual e em marcadores hormonais.\n\nA questão descreve uma paciente com amenorreia de 90 dias e marcadores de reserva ovariana significativamente reduzidos (AMH baixo, inibina B baixa e contagem de folículos antrais baixa), além de um FSH elevado. Essas características são patognomônicas da fase de transição menopausal.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A pós-menopausa tardia (estágio +2 de STRAW) ocorre muitos anos após a última menstruação. Nela, a amenorreia já está estabelecida há longo prazo (anos) e os sintomas de atrofia urogenital tornam-se mais proeminentes. O relato de \"90 dias de amenorreia\" sugere um processo ainda em curso, não uma fase tardia.\n\nAlternativa b) Incorreta. Para definir a pós-menopausa (mesmo a precoce, que engloba os primeiros 5 a 8 anos após o término das menstruações), é necessário que a mulher esteja em amenorreia por pelo menos 12 meses consecutivos. Como a paciente está há apenas 90 dias sem menstruar, ela ainda não atingiu o critério clínico para a pós-menopausa.\n\nAlternativa c) Correta. A transição menopausal é dividida em inicial (estágio -2) e tardia (estágio -1). A fase tardia é definida justamente pela presença de intervalos de amenorreia iguais ou superiores a 60 dias (neste caso, 90 dias). Laboratorialmente, nesta fase, o FSH já se encontra persistentemente elevado, enquanto os marcadores de reserva ovariana (hormônio antimülleriano, inibina B e contagem de folículos antrais) estão em níveis muito baixos, refletindo o esgotamento folicular.\n\nAlternativa d) Incorreta. O período reprodutivo precoce (estágio -5) refere-se aos anos logo após a menarca. Nessa fase, os ciclos estão se tornando regulares e a reserva ovariana está no seu auge ou em níveis normais, com AMH alto e FSH baixo.\n\nAlternativa e) Incorreta. O pico do período reprodutivo (estágio -4) é a fase de máxima fertilidade da mulher, com ciclos menstruais perfeitamente regulares, níveis de FSH normais e excelentes marcadores de reserva ovariana, o que é o oposto do quadro de falência ovariana iminente descrito no enunciado.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:35.570Z"
+  },
+  {
+    "id": "AJUDA_d046ee43-460b-47dd-80c6-ebbfa613f88d",
+    "originalId": "d046ee43-460b-47dd-80c6-ebbfa613f88d",
+    "statement": "Em relação ao delirium, analise as assertivas a seguir:\n\nI. Suas principais características são o déficit de atenção e o distúrbio de consciência.\nII. É um estado de confusão mental e comportamental de redução da compreensão, coerência e da capacidade de raciocínio, com meses de evolução.\nIII. O clonazepam é o fármaco de escolha para a promoção do sono em pacientes com delirium hiperativo, devido à facilidade de administração e ao baixo risco de eventos adversos.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das assertivas:\n\nAssertiva I está correta. O delirium é definido fundamentalmente por um declínio agudo e flutuante da atenção (dificuldade para focar, sustentar ou mudar a atenção) e da consciência (redução da clareza da percepção do ambiente).\n\nAssertiva II está incorreta. O delirium apresenta início agudo ou subagudo (horas a dias) e curso flutuante. Um quadro progressivo que se estende por meses é característico de demência (transtorno neurocognitivo maior), não de delirium.\n\nAssertiva III está incorreta. Os benzodiazepínicos, como o clonazepam, são contraindicados como primeira linha no delirium, pois podem piorar a confusão mental, causar sedação excessiva, agitação paradoxal e prolongar o quadro. O manejo farmacológico de escolha para agitação refratária a medidas não farmacológicas é feito com antipsicóticos (como haloperidol em baixas doses). Os benzodiazepínicos são reservados apenas para casos de delirium por abstinência de álcool ou de sedativos.\n\nAnálise das alternativas:\n\na) Correta. Apenas a assertiva I apresenta a definição clínica adequada do delirium.\nb) Incorreta. A assertiva III é falsa, pois os benzodiazepínicos não são a escolha e podem agravar o quadro.\nc) Incorreta. A assertiva II erra a temporalidade da síndrome e a III erra a indicação farmacológica.\nd) Incorreta. Apenas a primeira assertiva é verdadeira.\n\nGabarito oficial: alternativa a.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Coma e Alterações da Consciência",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:35.570Z"
+  },
+  {
+    "id": "AJUDA_d046ff5c-b307-4bdd-98ef-0a381805ea0b",
+    "originalId": "d046ff5c-b307-4bdd-98ef-0a381805ea0b",
+    "statement": "O artigo de Faisal-Cury e Menezes (2012) apresenta os resultados de uma coorte de gestantes que estimou a associação entre depressão antenatal e depressão pós-parto. Segundo a pesquisa, gestantes deprimidas apresentaram maior risco de depressão pós-parto (risco relativo: 2,5; IC95%: 2,3-2,7). No entanto, dentre as 828 gestantes avaliadas no início da pesquisa, 107 não responderam ao instrumento de avaliação da depressão no período pós-parto. A análise dos dados mostra que as mulheres que não responderam eram mais deprimidas, menos escolarizadas e mais frequentemente solteiras, mas com idade similar às mulheres que completaram a pesquisa. Caso estas mulheres tivessem retornado e fossem incluídas na análise dos dados, o que provavelmente ocorreria com a medida de associação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ficaria estável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumentaria.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Diminuiria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não é possível prever.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o viés de seleção, mais especificamente o viés de perda de seguimento ou de atrito em um estudo de coorte, e seu impacto na medida de associação (Risco Relativo - RR).\n\nO estudo avaliou a relação entre depressão antenatal (exposição) e depressão pós-parto (desfecho). O enunciado informa que as 107 mulheres perdidas no seguimento não eram perdas aleatórias: elas eram mais deprimidas na gestação e apresentavam maior vulnerabilidade psicossocial (menor escolaridade e solteiras), que são fatores de risco adicionais para depressão pós-parto. \n\nPortanto, esse subgrupo de mulheres perdidas tinha uma probabilidade muito alta de desenvolver o desfecho (depressão pós-parto) caso tivessem completado o seguimento. Como a perda ocorreu predominantemente no grupo de maior gravidade da exposição e de maior risco para o desfecho, o estudo original subestimou a força real da associação. A reinclusão dessas mulheres aumentaria a incidência do desfecho no grupo exposto, elevando a magnitude do Risco Relativo.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A medida só permaneceria estável se as perdas fossem completamente aleatórias, ou seja, se a distribuição da exposição e do desfecho entre as mulheres perdidas fosse idêntica à daquelas que permaneceram no estudo.\n\nAlternativa b: Correta. Como as mulheres perdidas eram mais deprimidas e tinham mais fatores de risco para o desfecho, sua inclusão aumentaria a taxa de depressão pós-parto entre as expostas, resultando em um Risco Relativo maior do que o previamente encontrado (2,5).\n\nAlternativa c: Incorreta. A medida diminuiria se as perdas tivessem ocorrido em mulheres com menor risco de adoecer dentro do grupo exposto, ou se houvesse maior perda de casos graves no grupo não exposto, o que não corresponde aos dados apresentados.\n\nAlternativa d: Incorreta. É possível prever a direção do viés epidemiológico quando se conhece o perfil clínico e demográfico das perdas de seguimento em relação à exposição e aos fatores de risco para o desfecho.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:35.570Z"
+  },
+  {
+    "id": "AJUDA_d050c32e-0ced-4f7b-b3a8-979177c583bf",
+    "originalId": "d050c32e-0ced-4f7b-b3a8-979177c583bf",
+    "statement": "Homem, 54 anos de idade, ex-tabagista (20 anos-maço), encontra-se internado com o diagnóstico de síndrome colestática (bilirrubina total = 13,2 mg/dL e bilirrubina direta = 12,5 mg/dL). Durante investigação, realizou tomografia de abdome e pelve, com o diagnóstico de massa na região da cabeça do pâncreas de 6,5cm; suspeita para neoplasia primária, com invasão circunferencial da artéria mesentérica superior. Além disso, observaram-se dois nódulos hepáticos, suspeitos para acometimento secundário. Em relação ao caso acima, qual é a alternativa CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se biopsiar a lesão pancreática ou hepática, solicitar passagem de prótese biliar metálica e encaminhar o paciente para tratamento sistêmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A primeira conduta deve ser complementar ao estadiamento da condição clínica, com exame de colangiorressonância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de tumor ressecável em paciente jovem e a melhor conduta é prosseguir com a duodenopancreatectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não há informações suficientes na questão para determinar a ressecabilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um quadro de icterícia obstrutiva (síndrome colestática) com níveis elevados de bilirrubina direta, associado a uma massa na cabeça do pâncreas de 6,5 cm. Os achados tomográficos são cruciais: invasão circunferencial da artéria mesentérica superior (AMS) e presença de nódulos hepáticos suspeitos de metástases.\n\nAnálise das Alternativas:\n\nAlternativa A (Correta):\nO tumor é classificado como irressecável por dois motivos principais. Primeiro, a invasão circunferencial (360 graus) da artéria mesentérica superior caracteriza um tumor localmente avançado e tecnicamente impossível de retirar com margens livres. Segundo, a presença de nódulos hepáticos sugere doença metastática (estádio IV). Em casos de doença avançada/metastática, o objetivo é o tratamento paliativo e sistêmico. Para iniciar a quimioterapia (tratamento sistêmico), é indispensável a confirmação histológica por biópsia (da lesão primária ou da metástase). Além disso, a drenagem da via biliar é necessária para reduzir a icterícia e permitir que o fígado metabolize os quimioterápicos. A prótese metálica é preferível à de plástico em pacientes com expectativa de vida superior a 3-6 meses, pois possui maior patência e menor taxa de oclusão.\n\nAlternativa B (Incorreta):\nA colangiorressonância é um excelente exame para avaliar a anatomia das vias biliares e pancreáticas, mas, neste caso, a tomografia computadorizada de abdome e pelve já forneceu informações suficientes para determinar a extensão da doença e sua irressecabilidade. O próximo passo deve focar no diagnóstico histológico e no alívio dos sintomas para início do tratamento, e não em novos exames de imagem morfológica.\n\nAlternativa C (Incorreta):\nEsta alternativa está tecnicamente errada. Um tumor que envolve a artéria mesentérica superior de forma circunferencial é considerado irressecável pelos critérios da NCCN (National Comprehensive Cancer Network). Além disso, a suspeita de metástases hepáticas contraindica formalmente a duodenopancreatectomia (cirurgia de Whipple), pois o procedimento não traria benefício de sobrevida em um cenário de doença sistêmica, expondo o paciente a uma cirurgia de grande porte desnecessária.\n\nAlternativa D (Incorreta):\nHá informações suficientes. Na avaliação de câncer de pâncreas, o envolvimento arterial maior que 180 graus da artéria mesentérica superior ou do tronco celíaco é um critério clássico de irressecabilidade. Somado a isso, os nódulos hepáticos em um contexto de neoplasia pancreática de 6,5 cm são altamente sugestivos de M1 (metástase à distância), o que define o caso como avançado.\n\nResumo do Manejo:\nDiante de um câncer de pâncreas irressecável/metastático com icterícia, a conduta padrão-ouro é o tripé: Diagnóstico Histológico (Biópsia) + Paliação da Obstrução Biliar (Stent/Prótese) + Tratamento Sistêmico (Quimioterapia).",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:52:35.571Z"
+  }
+]

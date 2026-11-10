@@ -1,0 +1,521 @@
+[
+  {
+    "id": "AJUDA_603e436e-05fa-4e98-b232-b2c96874f889",
+    "originalId": "603e436e-05fa-4e98-b232-b2c96874f889",
+    "statement": "Mulher de 35 anos, IMC 38 kg/m², diabética tipo 2 em uso de metformina e insulina, comparece ao ambulatório para avaliação de cirurgia bariátrica. Relata dificuldade de controle glicêmico, mesmo em acompanhamento endocrinológico regular.\n\nNesse caso, a técnica cirúrgica que apresenta melhor efeito metabólico e maior taxa de remissão do diabetes tipo 2 é a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Banda gástrica ajustável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gastrectomia vertical (sleeve).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Bypass gástrico em Y de Roux.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Balão intragástrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Derivação biliopancreática com switch duodenal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nA paciente apresenta indicação de cirurgia metabólica por possuir IMC de 38 kg/m² (obesidade grau II) associado ao diabetes mellitus tipo 2 (DM2) de difícil controle com tratamento clínico otimizado (uso de metformina e insulina).\n\nAlternativa A (Incorreta): A banda gástrica ajustável é uma técnica puramente restritiva, baseada na colocação de um anel de silicone ao redor da parte superior do estômago. Por não promover alterações hormonais significativas no trato gastrointestinal, apresenta as menores taxas de perda de peso e os piores resultados na remissão do diabetes quando comparada às outras técnicas cirúrgicas.\n\nAlternativa B (Incorreta): A gastrectomia vertical, ou sleeve, é uma técnica que remove cerca de 80% do estômago, transformando-o em um tubo fino. Embora promova a redução da grelina (hormônio orexígeno) e tenha bons resultados metabólicos, o seu efeito na remissão do diabetes é, em geral, inferior ao do bypass gástrico, pois não envolve o desvio intestinal que potencializa a secreção de incretinas.\n\nAlternativa C (Correta): O bypass gástrico em Y de Roux é considerado o padrão-ouro para o tratamento do diabetes em pacientes obesos. Esta técnica combina um pequeno reservatório gástrico (restrição) com um desvio intestinal (má absorção parcial). O seu principal diferencial é o efeito incretínico, explicado por duas teorias: a do foregut (exclusão do duodeno da passagem alimentar) e a do hindgut (chegada precoce do alimento ao íleo distal). Isso causa um aumento rápido e potente de hormônios como o GLP-1 e o PYY, que melhoram a secreção de insulina e a sensibilidade periférica à glicose, levando a altas taxas de remissão da doença de forma independente da perda de peso.\n\nAlternativa D (Incorreta): O balão intragástrico é um procedimento endoscópico e temporário. Ele ocupa espaço no estômago para promover saciedade precoce, mas não altera a fisiologia hormonal do eixo entero-insular de forma definitiva. Por ser removido após alguns meses, não é uma técnica voltada para a remissão a longo prazo do diabetes tipo 2.\n\nAlternativa E (Incorreta): A derivação biliopancreática com switch duodenal é uma técnica com componente malabsortivo predominante. Embora possua uma potência metabólica muito elevada, ela é associada a uma maior incidência de complicações nutricionais severas, como desnutrição proteico-calórica e deficiências de vitaminas lipossolúveis. Na prática clínica e em protocolos de cirurgia metabólica, o bypass gástrico (Alternativa C) é a técnica preferencial por oferecer um excelente perfil de remissão glicêmica com maior segurança e menor morbidade nutricional que as derivações biliopancreáticas.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Cirurgia Bariátrica e Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:49.620Z"
+  },
+  {
+    "id": "AJUDA_603f1497-b7b8-4255-b915-4c1f8f8cf4d5",
+    "originalId": "603f1497-b7b8-4255-b915-4c1f8f8cf4d5",
+    "statement": "O carcinoma de endométrio constitui a neoplasia maligna mais comum do sistema genital feminino nos países desenvolvidos; no nosso meio, ele é o segundo, mas estima-se um aumento proporcional da sua ocorrência. Sobre o câncer de endométrio, é INCORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O risco de progressão para câncer de endométrio das atípias está ligado ao grau de complexidade de atipias citológicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O câncer demonstra ser cada vez mais agressivo com a progressão da idade das pacientes. Como a maioria dos casos tem uma ligação já estabelecida com o estrogênio, qualquer fator que aumente exposição ao estrogênio, sem a oposição da progesterona, pode aumentar o seu risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cerca de metade das pacientes apresentam sangramento vaginal irregular, seu diagnóstico precoce é realizado, na maioria dos casos, pelo rastreio oncológico através da ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Os carcinomas serosos papilares do endométrio são considerados tumores de alto risco e não apresentam relação bem estabelecida com o excesso de estrogênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Correta. A presença de atipia celular é o fator prognóstico mais importante para a progressão de uma hiperplasia endometrial para o carcinoma. Historicamente, classificava-se a hiperplasia em simples ou complexa, com ou sem atipias. Atualmente, a Organização Mundial da Saúde (OMS) simplifica para hiperplasia com ou sem atipia, mas o conceito permanece: a desorganização arquitetural (complexidade) somada às alterações nucleares (atipias) dita o risco de malignização, chegando a cerca de 29% nos casos de hiperplasias atípicas.\n\nAlternativa b) Correta. O câncer de endométrio é classicamente dividido em dois tipos. O Tipo I (endometrioide) é estrogênio-dependente e associado a fatores como obesidade, anovulação crônica e nuliparidade (exposição estrogênica sem oposição da progesterona). Já o Tipo II ocorre em mulheres mais velhas, não tem relação com o estrogênio e é histologicamente mais agressivo. Portanto, a idade avançada e a exposição estrogênica sem oposição são conceitos fundamentais na patogênese da doença.\n\nAlternativa c) Incorreta (Gabarito). Esta alternativa apresenta dois erros principais. Primeiro, o sangramento vaginal pós-menopausa ou irregular é o sintoma cardinal da doença, ocorrendo em aproximadamente 75% a 90% das pacientes, e não apenas em \"metade\". Segundo, e mais importante: não existe indicação de rastreio populacional (screening) para câncer de endométrio. O diagnóstico é realizado a partir da investigação de mulheres sintomáticas (com sangramento) ou em grupos de altíssimo risco (como portadoras da Síndrome de Lynch). A ultrassonografia é um excelente exame inicial para avaliar a espessura endometrial em sintomáticas, mas não é ferramenta de rastreio em pacientes assintomáticas na população geral.\n\nAlternativa d) Correta. Os carcinomas serosos papilares e os de células claras pertencem ao chamado Tipo II de Bokhman. São tumores que surgem geralmente em endométrios atróficos de mulheres idosas, têm comportamento biológico agressivo, alto grau de diferenciação (G3) e não possuem relação causal com o hiperestrogenismo. O prognóstico desses tipos histológicos é significativamente pior quando comparado ao adenocarcinoma endometrioide típico.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Câncer do Corpo do Útero"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:49.620Z"
+  },
+  {
+    "id": "AJUDA_6046aeb1-236c-41ff-9e41-1565761a2d66",
+    "originalId": "6046aeb1-236c-41ff-9e41-1565761a2d66",
+    "statement": "Homem de 62 anos é levado ao pronto-socorro com febre de 39,5°C, cefaleia intensa, cervicalgia, fotofobia e confusão mental há 12 horas. Desconhece qualquer comorbidade, nega o uso de medicamentos, etilismo e tabagismo. Ao exame físico, PA 120/70mmHg, FC 94bpm, FR 16ipm, SpO2 96% (ar ambiente). Apresenta flexão involuntária dos joelhos e quadris ao fletir o pescoço do paciente e dor e resistência à extensão da perna quando o quadril está flexionado a 90°. Não há histórico de alergias a medicamentos. Na localidade onde vive, a taxa de resistência do pneumococo à penicilina é menor que 1%. EXAMES DE LABORATÓRIO: leucocitos 16.000/µL; plaquetas 165.000/μL; PCR 56mg/L; creatinina 0,9mg/dL. A análise do líquido cefalorraquidiano revela: contagem de células 1.200/μL com 95% de neutrófilos, glicose 25mg/dL (glicemia 120mg/dL) e proteínas 150mg/dL. Assinale a alternativa que apresenta o tratamento antimicrobiano empírico MAIS ADEQUADO para esse paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cefepime e vancomicina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ceftriaxona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ceftriaxona e ampicilina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ceftriaxona e vancomicina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um homem de 62 anos com a tríade clássica de meningite aguda: febre, cefaleia e rigidez de nuca (sinais de Brudzinski e Kernig presentes), associada a alteração do nível de consciência (confusão mental). O exame do líquido cefalorraquidiano (LCR) confirma o diagnóstico de meningite bacteriana aguda, apresentando pleocitose neutrofílica (1.200 células/uL com 95% de neutrófilos), hipoglicorraquia (25 mg/dL, bem abaixo de 2/3 da glicemia) e hiperproteinorraquia (150 mg/dL).\n\nA escolha do esquema antibiótico empírico deve levar em conta os agentes etiológicos mais prováveis para a faixa etária e condições do paciente. Em adultos com mais de 50 anos, os principais patógenos são:\n1. Streptococcus pneumoniae (Pneumococo)\n2. Neisseria meningitidis (Meningococo)\n3. Listeria monocytogenes\n\nO diferencial epidemiológico fundamental neste caso é a idade (62 anos), que obriga à cobertura contra Listeria monocytogenes, um bacilo gram-positivo que acomete preferencialmente idosos, recém-nascidos e imunodeprimidos.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Cefepime e vancomicina: Incorreta. O cefepime (uma cefalosporina de 4ª geração) é geralmente indicado quando há suspeita de infecção por Pseudomonas aeruginosa, como em casos de meningite pós-neurocirurgia ou traumatismo cranioencefálico. Além disso, esse esquema não cobre adequadamente a Listeria monocytogenes.\n\nb) Ceftriaxona: Incorreta. Embora a ceftriaxona cubra o meningococo e o pneumococo (especialmente com a informação de baixa resistência local à penicilina), ela não possui atividade contra a Listeria monocytogenes. O uso isolado de ceftriaxona seria insuficiente para um paciente de 62 anos.\n\nc) Ceftriaxona e ampicilina: Correta. Esta é a conduta recomendada para adultos acima de 50 anos. A ceftriaxona garante a cobertura contra Streptococcus pneumoniae e Neisseria meningitidis. A ampicilina é adicionada especificamente para cobrir a Listeria monocytogenes, já que as cefalosporinas não têm ação contra esse patógeno. A informação de que a resistência do pneumococo à penicilina é menor que 1% na localidade reforça que a ceftriaxona será eficaz contra o pneumococo sem necessidade obrigatória de vancomicina associada para este fim específico.\n\nd) Ceftriaxona e vancomicina: Incorreta. Este é o esquema empírico padrão para adultos jovens (até 50 anos), onde a vancomicina é adicionada para cobrir cepas de pneumococo resistentes a cefalosporinas. No entanto, para um paciente de 62 anos, este esquema está incompleto por não incluir a cobertura para Listeria (ampicilina).\n\nRESUMO DIDÁTICO\n\n- Paciente > 50 anos com meningite: Pensar em Pneumococo, Meningococo e LISTERIA.\n- Cobertura para Listeria: Ampicilina ou Penicilina Cristalina (Listeria é naturalmente resistente às cefalosporinas).\n- Esquema empírico padrão > 50 anos: Ceftriaxona + Ampicilina (+ Vancomicina se houver alta taxa de resistência do pneumococo, o que não é o caso aqui).",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:49.620Z"
+  },
+  {
+    "id": "AJUDA_604c282b-a419-471a-bc24-af908458990a",
+    "originalId": "604c282b-a419-471a-bc24-af908458990a",
+    "statement": "Mulher de 42 anos foi vítima de estupro há 1 dia. Compareceu à sua Estratégia Saúde da Família (ESF) em busca de apoio médico devido ao ocorrido. G2PC2, já tem laqueadura tubária. Durante o atendimento, o médico deu várias orientações sobre profilaxia de infecções sexualmente transmissíveis. Dentre as medicações prescritas, assinale o item que não faz parte do protocolo do Ministério da Saúde para vítimas de violência sexual.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Benzilpenicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Azitromicina/Ceftriaxone.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tenofovir/lamivudine.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aciclovir.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Metronidazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O atendimento médico a vítimas de violência sexual segue protocolos rigorosos do Ministério da Saúde para reduzir riscos de gravidez indesejada e infecções sexualmente transmissíveis (ISTs). No caso clínico apresentado, a paciente já possui laqueadura tubária, o que exclui a necessidade de contracepção de emergência, focando o manejo na profilaxia infecciosa.\n\nAlternativa a) Incorreta. A benzilpenicilina benzatina (2,4 milhões de UI, via intramuscular, em dose única) faz parte do protocolo oficial. Ela é administrada para a profilaxia da sífilis (Treponema pallidum).\n\nAlternativa b) Incorreta. A associação de azitromicina (1 g, via oral, dose única) e ceftriaxona (500 mg, via intramuscular, dose única) é o esquema padrão para a profilaxia de clamídia e gonorreia, respectivamente. Ambas são medicações essenciais no atendimento imediato.\n\nAlternativa c) Incorreta. O tenofovir e a lamivudina, associados ao dolutegravir, compõem o esquema de Profilaxia Pós-Exposição (PEP) para o HIV. Como a paciente buscou atendimento um dia após o ocorrido (dentro do limite de 72 horas), o início da terapia antirretroviral por 28 dias é mandatório.\n\nAlternativa d) Correta (Gabarito). O aciclovir é um antiviral utilizado para o tratamento de episódios ativos ou supressão do herpes simples. No entanto, ele não faz parte do protocolo de profilaxia de rotina para vítimas de violência sexual. O Ministério da Saúde recomenda apenas o tratamento se houver aparecimento posterior de lesões características, mas não o uso profilático imediato.\n\nAlternativa e) Incorreta. O metronidazol (2 g, via oral, dose única) é incluído no protocolo para a profilaxia da tricomoníase, uma IST causada por protozoário que frequentemente acompanha outras infecções genitais.\n\nEm resumo, o \"kit\" de profilaxia para ISTs em adultos após violência sexual inclui: ceftriaxona, azitromicina, metronidazol, penicilina benzatina, vacina contra hepatite B (se não imunizada), imunoglobulina contra hepatite B (se o agressor for sabidamente HBsAg positivo e a vítima não vacinada) e a PEP para HIV (tenofovir + lamivudina + dolutegravir). O aciclovir é a medicação intrusa na lista.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:49.620Z"
+  },
+  {
+    "id": "AJUDA_605546da-61a0-4a1b-9751-bc9df9e81c7b",
+    "originalId": "605546da-61a0-4a1b-9751-bc9df9e81c7b",
+    "statement": "Um rapaz de 18 anos foi atendido no ambulatório de clínica médica para acompanhamento de lúpus eritematoso sistêmico com nefrite e cardite. Estava em bom estado geral após 3 pulsoterapias com corticoide e ciclofosfamida, mas deveria fazer nova dose de corticoide sistêmico naquele mês. No entanto, apresentava lesões hiperemiadas com vesículas e algumas pústulas em dermátomos oftálmico e maxilar da hemiface direita. A impressão do médico foi de herpes-zóster.\nA conduta adequada para esse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "prescrição de aciclovir oral 800 mg, 5 vezes ao dia, por 14 dias, e encaminhar o paciente para casa;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "profilaxia dos contactantes domiciliares e hospitalares com a vacina contra varicela-zóster, independentemente do estado de imunização, do estado imunológico e do tempo de exposição;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "internação hospitalar para isolamento respiratório e de contato, prescrição de aciclovir parenteral e acompanhamento de complicações pelo herpes-zóster disseminado;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "prescrição de aciclovir parenteral apenas se o rash e as vesículas tiverem iniciado há menos de 72 horas. Caso contrário, fazer apenas a profilaxia dos contactantes com vacina e do paciente com antibiótico devido à alta prevalência de infecção bacteriana secundária;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "internação hospitalar em quarto com pressão negativa e precauções de contato como máscara cirúrgica, capote, luva, gorro e óculos para toda a equipe assistencial. O aciclovir de 800 mg pode ser feito de forma oral, 5 vezes ao dia, por 7 a 10 dias ou até a alta hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo do herpes-zóster em um paciente com alto grau de imunossupressão. O paciente em questão possui lúpus eritematoso sistêmico (LES) com atividade grave (nefrite e cardite) e está em uso de terapia imunossupressora potente (pulsoterapia com corticoide e ciclofosfamida).\n\nA análise do caso clínico revela dois pontos cruciais:\n1. Imunossupressão grave: O uso de ciclofosfamida e doses elevadas de corticoides comprometem severamente a imunidade celular, aumentando o risco de disseminação do vírus varicela-zóster (VVZ).\n2. Apresentação clínica: O envolvimento de mais de um dermátomo (oftálmico e maxilar) e a localização na face sugerem uma apresentação mais agressiva, com risco de complicações oculares e neurológicas.\n\nAbaixo, a análise das alternativas:\n\nAlternativa A (Incorreta): O aciclovir oral em altas doses (800 mg, 5 vezes ao dia) é o tratamento padrão para pacientes imunocompetentes com herpes-zóster localizado. No entanto, para pacientes com imunossupressão grave, envolvimento de múltiplos dermátomos ou risco de disseminação visceral, a via oral é insuficiente devido à menor biodisponibilidade e à necessidade de níveis séricos terapêuticos rápidos e elevados. Além disso, o paciente precisa de monitoramento hospitalar.\n\nAlternativa B (Incorreta): A profilaxia pós-exposição com a vacina de vírus vivos atenuados não deve ser feita de forma indiscriminada, especialmente em ambiente hospitalar com outros pacientes imunossuprimidos. Além disso, a prioridade absoluta no momento é o tratamento curativo do paciente e o bloqueio da transmissão, e não apenas a vacinação de terceiros.\n\nAlternativa C (Correta): Em pacientes gravemente imunossuprimidos com herpes-zóster, existe o risco de zóster disseminado (definido geralmente por mais de 20 lesões fora do dermátomo primário ou envolvimento de múltiplos dermátomos). Nessas condições, o vírus pode ser transmitido não apenas por contato direto com as lesões, mas também por aerossóis (via respiratória). Portanto, a internação em isolamento de contato e respiratório (aerossóis) é necessária. O tratamento de escolha é o aciclovir parenteral (venoso) para garantir eficácia máxima e prevenir complicações viscerais (hepatite, pneumonite, encefalite).\n\nAlternativa D (Incorreta): Embora o início precoce do antiviral (nas primeiras 72 horas) seja o ideal para reduzir a dor e a duração das lesões, em pacientes imunossuprimidos o tratamento está indicado mesmo após 72 horas do início das vesículas, pois a replicação viral nesses indivíduos é prolongada. O uso de antibióticos profiláticos não é indicado; eles seriam usados apenas se houvesse evidência de infecção bacteriana secundária.\n\nAlternativa E (Incorreta): Embora mencione o isolamento (pressão negativa e precauções), esta alternativa falha ao indicar o aciclovir por via oral. O paciente com LES em vigência de ciclofosfamida e envolvimento de múltiplos dermátomos faciais tem indicação absoluta de terapia parenteral inicial até que não surjam novas lesões e as atuais apresentem crostas. Além disso, a máscara cirúrgica mencionada é insuficiente para precaução de aerossóis (que exige máscara N95/PFF2).",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": 74.2228561565159,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:49.620Z"
+  },
+  {
+    "id": "AJUDA_605623f4-6b6a-4e2b-9d8e-5d20ac2ad92a",
+    "originalId": "605623f4-6b6a-4e2b-9d8e-5d20ac2ad92a",
+    "statement": "Uma mulher secundigesta, já com um parto normal realizado anteriormente, encontrava‑se com 33 semanas de idade gestacional e com diagnóstico de pré‑eclâmpsia. A paciente apresentou exames laboratoriais com AST 320, LDH alta e plaquetas 48.000.\n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta a conduta adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "manter conduta expectante até 37 semanas de idade gestacional",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "induzir parto vaginal com misoprostol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estabilização materna e resolução da gestação",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "transfundir as plaquetas e aguardar a melhoria laboratorial para a resolução da gestação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "internação para cesárea imediata após diazepan, para a profilaxia de convulsão",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma gestante de 33 semanas com quadro clássico de síndrome HELLP, uma complicação grave do espectro da pré-eclâmpsia. O diagnóstico é firmado pela tríade: hemólise (LDH alta), elevação de enzimas hepáticas (AST 320) e plaquetopenia (48.000). Diante dessa gravidade, a conduta deve ser a interrupção da gestação após a estabilização do quadro materno.\n\nAnálise das alternativas:\n\na) Incorreta. A conduta expectante até 37 semanas é reservada para casos de pré-eclâmpsia sem sinais de gravidade. Na síndrome HELLP, o risco de complicações maternas (como descolamento de placenta, AVC e óbito) e fetais é muito alto, o que contraindica aguardar o termo.\n\nb) Incorreta. Embora o parto vaginal não seja proibido e possa ser tentado se as condições cervicais forem favoráveis (índice de Bishop), a indução isolada com misoprostol não é a conduta completa. O passo primordial é a estabilização hemodinâmica e neurológica da paciente antes de qualquer procedimento de resolução.\n\nc) Correta. Diante de uma pré-eclâmpsia grave ou síndrome HELLP em gestação acima de 33-34 semanas, a conduta padrão é a estabilização materna (controle pressórico com anti-hipertensivos e profilaxia de eclâmpsia com sulfato de magnésio) seguida da resolução da gestação. Abaixo de 32-34 semanas, poderia se discutir a corticoterapia para maturidade pulmonar fetal por 24-48 horas se o quadro materno estivesse estável, mas a resolução continua sendo a meta em curto prazo.\n\nd) Incorreta. A transfusão de plaquetas na síndrome HELLP só está indicada se os níveis estiverem abaixo de 20.000/mm³ ou abaixo de 50.000/mm³, caso haja necessidade de cesariana. Além disso, esperar a melhora laboratorial para resolver a gestação é um erro grave, pois a cura definitiva da doença só ocorre com a retirada da placenta.\n\ne) Incorreta. O diazepam não é a medicação indicada para a profilaxia de convulsões (eclâmpsia); o fármaco de escolha, com superioridade comprovada em evidências científicas, é o sulfato de magnésio. Além disso, o termo \"cesárea imediata\" pode ser perigoso se a paciente não estiver estabilizada e com os níveis pressóricos controlados.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:49.620Z"
+  },
+  {
+    "id": "AJUDA_605ca2b1-d5db-48ce-bb8d-34af94f58cdc",
+    "originalId": "605ca2b1-d5db-48ce-bb8d-34af94f58cdc",
+    "statement": "Menina, 7 anos. Refere que apresentou febre, coriza e tosse há uma semana. Há 2 dias, iniciou lesões purpúricas em membros inferiores, palpáveis com característica ascendente em grande quantidade, com bolhas hemáticas (figura). Associado ao quadro, apresenta dor abdominal importante e artralgia em joelhos e cotovelos. Ao exame físico, apresenta além das púrpuras, dor à palpação profunda de abdome e dor à movimentação de tornozelos, sem edemas. Hemograma normal e urina rotina com hemácias 10/campo sem outras alterações.\n\nQual o exame mais importante a ser solicitado, pensando nas possíveis complicações relacionadas ao quadro clínico atual desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doppler Ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Biópsia de pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ultrassonografia de abdome.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Biópsia renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresentado e a imagem são característicos da Púrpura de Henoch-Schönlein (Vasculite por IgA), a vasculite de pequenos vasos mais frequente na infância. A fotografia evidencia lesões purpúricas confluentes em membro inferior, com uma área ulcerada central decorrente do rompimento de uma bolha hemática, achado que pode ocorrer em quadros cutâneos mais intensos. A associação clássica envolve pródromo de infecção de vias aéreas superiores, púrpura palpável, artralgia, queixas gastrointestinais e alteração urinária leve.\n\nAnálise das alternativas:\n\na) Incorreta. O ecocardiograma com Doppler é o exame de escolha para avaliação e seguimento de aneurismas coronarianos na Doença de Kawasaki. A Púrpura de Henoch-Schönlein não apresenta acometimento cardíaco característico.\n\nb) Incorreta. Embora a biópsia de pele possa demonstrar vasculite leucocitoclástica com deposição tecidual de IgA, o diagnóstico de PHS é eminentemente clínico. Além disso, a biópsia cutânea não avalia as complicações sistêmicas agudas e potencialmente graves da paciente.\n\nc) Correta. A dor abdominal intensa na PHS é provocada por edema e hemorragia na parede das alças intestinais (vasculite mesentérica), criando pontos de ancoragem que aumentam substancialmente o risco de intussuscepção intestinal (invaginação de um segmento de alça dentro de outro), a principal complicação cirúrgica aguda. A ultrassonografia de abdome é o exame de escolha para o diagnóstico precoce dessa complicação, permitindo conduta imediata.\n\nd) Incorreta. A biópsia renal está indicada apenas em quadros com suspeita de nefrite grave, como síndrome nefrótica persistente, declínio agudo da função renal ou proteinúria nefrótica. A paciente apresenta apenas hematúria microscópica discreta (10 hemácias por campo), que exige apenas vigilância clínica e ambulatorial seriada, sem necessidade de procedimento invasivo.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Púrpura de Henoch-Schönlein e Vasculite por IgA",
+      "Reumatologia Pediátrica",
+      "Vasculites"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/542c1f93e159b17cc10b81f3b93dd2f7877de0dfcc406ffe12d4220499e58f01.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_605ca2b1-d5db-48ce-bb8d-34af94f58cdc_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:50.072Z"
+  },
+  {
+    "id": "AJUDA_605e1377-6c4a-41b3-9135-08e2132d5f98",
+    "originalId": "605e1377-6c4a-41b3-9135-08e2132d5f98",
+    "statement": "Paciente de 71 anos, sexo masculino, hipertenso e diabético, foi submetido a retossigmoidectomia por adenocarcinoma de cólon. No 1º dia de pós-operatório, está em uso de dieta zero, sem sangramento ativo aparente, pressão arterial de 118/76 mmHg, frequência cardíaca de 78 bpm, sem dor torácica ou dispneia. A hemoglobina caiu de 10,1 g/dℓ no pré-operatório para 7,3 g/dℓ. Encontra-se lúcido, orientado e clinicamente estável. Qual a conduta mais adequada em relação à transfusão de concentrado de hemácias (CH)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não transfundir, pois o paciente está hemodinamicamente estável e o valor de hemoglobina ainda está acima do limite recomendado para transfusão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Indicar transfusão apenas se houver sinais de isquemia miocárdica ou instabilidade hemodinâmica, independentemente do valor de hemoglobina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transfundir 1 unidade de CH, pois o valor de hemoglobina está abaixo de 8 g/dℓ em um paciente cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transfundir 2 unidades de CH devido à queda significativa da hemoglobina no pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar transfusão profilática devido à idade do paciente e presença de comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda um tema fundamental na prática clínica e cirúrgica: os gatilhos (*triggers*) para a transfusão de concentrado de hemácias. A conduta atual é pautada na estratégia restritiva, fundamentada em grandes estudos clínicos (como o TRICC e o FOCUS).\n\nAnálise do caso clínico:\nO paciente é idoso e possui comorbidades cardiovasculares (hipertensão e diabetes), o que exige atenção. No entanto, ele encontra-se hemodinamicamente estável (PA 118/76 mmHg, FC 78 bpm), lúcido e sem sintomas de hipóxia tecidual ou isquemia miocárdica (sem dor torácica ou dispneia). Sua hemoglobina (Hb) atual é de 7,3 g/dL.\n\nExplicação das alternativas:\n\nAlternativa a) Correta. De acordo com as diretrizes da maioria das sociedades médicas (como a AABB e a ASA), para pacientes hospitalizados e hemodinamicamente estáveis, o gatilho para transfusão deve ser um valor de hemoglobina inferior a 7,0 g/dL. Como o paciente apresenta Hb de 7,3 g/dL e está assintomático, a conduta inicial é a observação clínica e a monitorização laboratorial, sem necessidade imediata de transfusão.\n\nAlternativa b) Incorreta. Embora a presença de sinais de isquemia miocárdica ou instabilidade hemodinâmica seja uma indicação clara de transfusão imediata, não é a única. Se o valor da hemoglobina cair abaixo de 7,0 g/dL, a transfusão está indicada mesmo na ausência desses sintomas, visando garantir o transporte adequado de oxigênio.\n\nAlternativa c) Incorreta. O valor de corte de 8,0 g/dL para transfusão costuma ser reservado para pacientes que apresentam sintomas de anemia ou que possuem doença cardiovascular preexistente sintomática (como angina instável) ou em pós-operatório imediato de cirurgias cardíacas em contextos específicos. Para o paciente estável em questão, o limite de 7,0 g/dL é o mais seguro para evitar riscos associados à transfusão (sobrecarga volêmica, reações transfusionais, etc.).\n\nAlternativa d) Incorreta. A conduta moderna preconiza a transfusão de \"uma unidade por vez\" (*single-unit transfusion*), seguida de reavaliação clínica e laboratorial. Transfundir 2 unidades de rotina aumenta desnecessariamente o risco de complicações, como a sobrecarga circulatória associada à transfusão (TACO). Além disso, como o paciente está acima do gatilho de 7,0 g/dL, nenhuma unidade está indicada no momento.\n\nAlternativa e) Incorreta. Não existe o conceito de \"transfusão profilática\" baseado apenas na idade ou na presença de comorbidades estáveis. A decisão deve ser baseada no valor da hemoglobina e no status clínico atual do paciente. Transfusões desnecessárias em pacientes idosos e hipertensos podem, inclusive, precipitar quadros de insuficiência cardíaca por sobrecarga de volume.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Perioperatório",
+      "Medicina Transfusional",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:50.072Z"
+  },
+  {
+    "id": "AJUDA_60648651-0f04-40ee-8c48-deb2c9a2589e",
+    "originalId": "60648651-0f04-40ee-8c48-deb2c9a2589e",
+    "statement": "Qual o conjunto de dados clínicos necessários para que seja estabelecido o diagnóstico de ANAFILAXIA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dor abdominal e vomito após exposição a um alérgeno conhecido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sincope que tem início minutos ou horas após exposição a um alérgeno provável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sintomas gastrointestinais persistente após exposição a um alérgeno conhecido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipotensão que tem início minutos ou horas, após exposição a um alérgeno conhecido.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A anafilaxia é uma reação de hipersensibilidade sistêmica, grave e potencialmente fatal, caracterizada por um início rápido. O diagnóstico é essencialmente clínico e baseia-se em critérios específicos estabelecidos por consensos internacionais, como os da WAO (World Allergy Organization).\n\nAlternativa a) Incorreta. Embora dor abdominal e vômitos sejam sintomas gastrointestinais comuns na anafilaxia, eles isoladamente não fecham o diagnóstico, mesmo após exposição a um alérgeno conhecido. Para que os sintomas gastrointestinais façam parte do diagnóstico, eles geralmente precisam estar acompanhados de sintomas em outros órgãos ou sistemas (como pele, mucosas ou sistema respiratório).\n\nAlternativa b) Incorreta. A síncope indica hipoperfusão tecidual e é um sinal de gravidade. No entanto, quando a exposição ocorre a um alérgeno apenas provável, os critérios diagnósticos exigem o envolvimento de pelo menos dois sistemas orgânicos (por exemplo: sintomas cutâneos + síncope, ou sintomas respiratórios + síncope). A síncope isolada após exposição a um alérgeno provável não preenche o critério de forma isolada.\n\nAlternativa c) Incorreta. Sintomas gastrointestinais persistentes (como cólicas abdominais intensas e vômitos) são considerados um dos critérios apenas quando há o envolvimento conjunto de outros sistemas após exposição a um alérgeno provável. Isoladamente, não são suficientes para estabelecer o diagnóstico de anafilaxia.\n\nAlternativa d) Correta. Esta alternativa descreve um dos três cenários clássicos para o diagnóstico de anafilaxia. De acordo com as diretrizes internacionais, a hipotensão (ou queda acentuada da pressão arterial basal) que ocorre minutos ou horas após a exposição a um alérgeno conhecido para aquele paciente é suficiente, por si só, para o diagnóstico. Nesse cenário específico (alérgeno conhecido), não é obrigatória a presença de sintomas cutâneos ou respiratórios para definir o quadro como anafilaxia e iniciar o tratamento imediato.\n\nResumo dos critérios diagnósticos:\n1. Início agudo (minutos a horas) com envolvimento de pele/mucosas E (comprometimento respiratório OU hipotensão/disfunção de órgão).\n2. Dois ou mais sintomas após exposição a alérgeno provável: pele/mucosas, respiratório, hipotensão ou sintomas gastrointestinais persistentes.\n3. Hipotensão após exposição a alérgeno conhecido para o paciente.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:50.072Z"
+  },
+  {
+    "id": "AJUDA_6066bd6b-dce5-4b96-834f-96231c269c0d",
+    "originalId": "6066bd6b-dce5-4b96-834f-96231c269c0d",
+    "statement": "Uma mulher de 23 anos de idade, com antecedentes de lúpus eritematoso sistêmico com atividade articular bem controlada, em uso de hidroxicloroquina, compareceu ao pronto‑socorro com quadro agudo de tosse, dispneia, febre, náusea e mal-estar, desidratação, piora das dores articulares e rash malar. Nos exames admissionais, constatou-se ureia de 88 e creatinina de 2,1. Foi notada a presença de consolidação em base direita nos raios X de tórax. A paciente fez exames ambulatoriais recentes que não apresentaram alteração na função renal. Com base nessa situação hipotética, quanto à investigação da etiologia da injúria renal apresentada, assinale a alternativa que apresenta o tratamento correto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Além de hidratar a paciente, a depender da evolução clínico laboratorial, seria prudente solicitação de C3, C4 e anti-DNA, além da avaliação de possível proteinúria.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Além de hidratar a paciente, a depender da evolução clínico laboratorial, seria prudente solicitação de C3, C4 e anti-la, além da avaliação de possível proteinúria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Paciente já possui indicação de biópsia renal para determinar a classe da nefrite lúpica apresentada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Além de hidratar a paciente, a depender da evolução clínico laboratorial, seria prudente solicitação de C3, C4 e P-ANCA, como também de avaliação de possível proteinúria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Além de hidratar a paciente, a depender da evolução clínico laboratorial, seria prudente a solicitação de C3, C4 e anti-histona, como também de avaliação de possível proteinúria.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA paciente apresenta um lúpus eritematoso sistêmico (LES) previamente controlado, mas que agora evolui com dois problemas simultâneos: um quadro infeccioso respiratório (febre, tosse e consolidação no raio X) e sinais de reativação da doença autoimune (rash malar e piora articular). A elevação de escórias nitrogenadas (ureia e creatinina) caracteriza uma injúria renal aguda. O desafio diagnóstico é diferenciar se essa insuficiência renal é pré-renal, causada pela desidratação e infecção, ou se é intrínseca, causada por uma nefrite lúpica ativa.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nA conduta inicial deve ser conservadora e investigativa. A hidratação é fundamental para tratar a possível causa pré-renal (desidratação e sepse de foco pulmonar). Para investigar a atividade da doença lúpica nos rins, os marcadores mais importantes são o consumo de complemento (C3 e C4) e a elevação dos títulos de anti-DNA de dupla hélice (anti-dsDNA), que possui forte correlação com a nefrite lúpica. Além disso, a avaliação de proteinúria e do sedimento urinário é o primeiro passo para identificar dano glomerular.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ INCORRETA?\n\nO anticorpo anti-La (ou anti-SSB) está associado principalmente à síndrome de Sjögren e ao lúpus neonatal. Ele não é um marcador fidedigno de atividade de doença renal no lúpus eritematoso sistêmico, ao contrário do anti-DNA.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ INCORRETA?\n\nEmbora a biópsia renal seja o padrão-ouro para classificar a nefrite lúpica, ela não é o primeiro passo neste momento. Como a paciente está desidratada e infectada, a prioridade é estabilizá-la clinicamente e realizar exames laboratoriais menos invasivos. Se, após a hidratação e o tratamento da infecção, a função renal não melhorar, ou se os exames de triagem (proteinúria e anti-DNA) confirmarem a suspeita de nefrite, a biópsia será indicada.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ INCORRETA?\n\nO P-ANCA é um anticorpo relacionado a vasculites de pequenos vasos (como a poliangeíte microscópica) e outras condições autoimunes, mas não é o marcador utilizado para monitorar a atividade renal específica do lúpus eritematoso sistêmico. O marcador clássico de atividade para nefrite é o anti-DNA.\n\nPOR QUE A ALTERNATIVA (E) ESTÁ INCORRETA?\n\nO anticorpo anti-histona é o marcador clássico do lúpus induzido por drogas. No caso de uma paciente que já possui diagnóstico de lúpus eritematoso sistêmico idiopático e apresenta uma possível reativação renal, a solicitação desse anticorpo não contribui para o diagnóstico de atividade de doença ou manejo da injúria renal.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:50.072Z"
+  }
+]

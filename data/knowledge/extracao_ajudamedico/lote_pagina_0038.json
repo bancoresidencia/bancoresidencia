@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_09f02329-9783-498a-9a4e-76544d1b165c",
+    "originalId": "09f02329-9783-498a-9a4e-76544d1b165c",
+    "statement": "Homem de 39 anos procurou o serviço médico em duas ocasiões na mesma semana por parada de eliminação de gases e fezes, distensão abdominal importante, náuseas e vômitos biliosos há 4 dias. No segundo atendimento, refere piora da dor nas últimas 12 horas. Ao exame físico, observa-se cicatriz mediana ampla (cirurgia prévia por trauma abdominal). No primeiro atendimento, os ruídos hidroaéreos estavam aumentados, mas agora se encontram diminuídos. A radiografia de abdome em posição supina mostra dilatação importante de alças de intestino delgado e ausência de gás nas porções distais do cólon e reto.\n\nEsse quadro aponta para o seguinte diagnóstico:",
+    "options": [
+      {
+        "id": "A",
+        "text": "perfuração de víscera oca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "obstrução intestinal alta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "volvo de sigmoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sinal da alça sentinela.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico\n\nO paciente apresenta um quadro clássico de abdome agudo obstrutivo. Os sinais cardinais estão presentes: dor abdominal, distensão, vômitos (neste caso, biliosos, o que sugere uma obstrução abaixo da ampola de Vater) e parada de eliminação de flatos e fezes. A presença de uma cicatriz mediana por cirurgia prévia é um dado fundamental, pois as bridas ou aderências são a principal causa de obstrução do intestino delgado em adultos que já passaram por procedimentos cirúrgicos abdominais. A evolução dos ruídos hidroaéreos, que passaram de aumentados (fase de luta do intestino para vencer o obstáculo) para diminuídos, indica exaustão da musculatura lisa ou possível sofrimento de alça (isquemia).\n\nAnálise Radiológica\n\nA radiografia de abdome em decúbito supino (deitado) revela múltiplas alças de intestino delgado dilatadas, ocupando a região central do abdome. É possível identificar as válvulas coniventes (pregas circulares), que atravessam toda a luz da alça, conferindo o aspecto típico de empilhamento de moedas. A descrição de ausência de gás nas porções distais (cólon e reto) confirma tratar-se de uma obstrução mecânica completa, onde o conteúdo gasoso não consegue progredir além do ponto de obstrução no delgado.\n\nAnálise das Alternativas\n\nAlternativa (a) Incorreta: A perfuração de víscera oca caracteriza o abdome agudo perfurativo. O principal achado radiológico seria o pneumoperitônio, que é a presença de ar livre na cavidade abdominal, geralmente visualizado como uma linha de gás abaixo do diafragma na radiografia de tórax ou abdome em pé. Embora uma obstrução possa complicar com perfuração, os achados descritos são de obstrução.\n\nAlternativa (b) Correta: O diagnóstico de obstrução intestinal alta (referindo-se ao intestino delgado) é fundamentado pela clínica de vômitos precoces e biliosos, distensão abdominal e o padrão radiográfico de dilatação de alças centrais com válvulas coniventes e ausência de ar no intestino grosso. O histórico de cirurgia prévia reforça a etiologia por bridas.\n\nAlternativa (c) Incorreta: O volvo de sigmoide é uma causa de obstrução intestinal baixa (cólon). No raio X, ele se manifestaria como uma alça colônica maciçamente dilatada com o sinal do grão de café ou sinal do ômega, partindo da pelve. A imagem e a descrição mostram um padrão de intestino delgado, não de cólon.\n\nAlternativa (d) Incorreta: O sinal da alça sentinela é uma dilatação segmentar e localizada de uma alça intestinal próxima a um processo inflamatório adjacente (como na pancreatite, apendicite ou colecistite). No caso apresentado, há uma dilatação generalizada das alças de delgado a montante de uma obstrução, o que não caracteriza apenas uma alça isolada de resposta inflamatória.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": 21.76719548797244,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f6c55cf9ae434de862807500a7b04f4ba12b4998561810e9ad75058697677531.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_09f02329-9783-498a-9a4e-76544d1b165c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:21.883Z"
+  },
+  {
+    "id": "AJUDA_09f1061e-f237-44fe-9cd8-633c28806ab2",
+    "originalId": "09f1061e-f237-44fe-9cd8-633c28806ab2",
+    "statement": "A fibrose retroperitoneal idiopática (Doença de Ormond) é uma condição rara que pode simular neoplasias e causar obstrução de estruturas retroperitoneais. Assinale a alternativa correta sobre as manifestações clínicas e o tratamento desta afecção.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento inicial é sempre cirúrgico, visando a ressecção completa da placa fibrótica para evitar a transformação maligna em linfoma retroperitoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ocorre predominantemente em mulheres jovens e está fortemente associada ao uso de anticoncepcionais orais e infecções urinárias de repetição, resolvendo-se espontaneamente após a suspensão da medicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A apresentação clínica típica inclui icterícia obstrutiva precoce devido à compressão do colédoco intrapancreático pela massa fibrótica, antes do comprometimento renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A complicação mais frequente é o encarceramento ureteral com hidronefrose progressiva e insuficiência renal pós-renal, exigindo muitas vezes ureterólise cirúrgica e intraperitonização dos ureteres.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Doença de Ormond, ou fibrose retroperitoneal idiopática, caracteriza-se pela presença de um tecido fibroinflamatório que se desenvolve no espaço retroperitoneal, tipicamente ao redor da aorta abdominal e das artérias ilíacas, podendo englobar e comprimir estruturas adjacentes.\n\nExplicação detalhada das alternativas:\n\na) Incorreta. O tratamento inicial da fibrose retroperitoneal idiopática é preferencialmente medicamentoso, baseado no uso de corticosteroides (como a prednisona), podendo ser associado a outros imunossupressores (como metotrexato ou azatioprina) em casos refratários. A cirurgia não tem como objetivo evitar a transformação em linfoma, pois a doença não é pré-maligna, embora o linfoma possa ser um diagnóstico diferencial ou uma causa secundária de fibrose.\n\nb) Incorreta. A afecção ocorre predominantemente em homens (proporção de 2:1 a 3:1 em relação às mulheres), com pico de incidência entre os 40 e 60 anos de idade. Não há associação estabelecida com anticoncepcionais orais. Historicamente, a associação medicamentosa mais conhecida era com o uso de metissergida (um derivado do ergot), mas a maioria dos casos atuais é idiopática ou relacionada à doença sistêmica por IgG4.\n\nc) Incorreta. A manifestação clínica mais comum e característica decorre da compressão dos ureteres, e não das vias biliares. Embora a fibrose retroperitoneal possa, raramente, estar associada à colangite esclerosante primária (dentro do espectro da doença por IgG4), a icterícia obstrutiva não é a apresentação clínica típica inicial. O quadro costuma começar com dor lombar ou abdominal vaga e evoluir para complicações renais.\n\nd) Correta. Esta é a alternativa que descreve a evolução clássica da doença. O tecido fibrótico tende a tracionar os ureteres medialmente, levando ao seu encarceramento e consequente obstrução extrínseca. Isso resulta em hidronefrose progressiva e pode culminar em insuficiência renal pós-renal se não houver intervenção. Nos casos em que o tratamento clínico não reverte a obstrução ou em situações de urgência, o tratamento cirúrgico indicado é a ureterólise (liberação dos ureteres da placa fibrótica), seguida da intraperitonização dos mesmos (posicionamento dentro da cavidade peritoneal) para protegê-los de novas compressões pela fibrose.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:21.883Z"
+  },
+  {
+    "id": "AJUDA_09f952df-911e-452d-8c42-5d5e6c4f36db",
+    "originalId": "09f952df-911e-452d-8c42-5d5e6c4f36db",
+    "statement": "Menino de 11 anos apresenta dor abdominal há 24 horas, inicialmente periumbilical e depois em fossa ilíaca direita, com anorexia, náuseas e febre de 38,3 graus. Ao exame: dor localizada, defesa discreta e sinal de Rovsing positivo. Leucócitos: 15.500 por mm³ com neutrofilia. Ultrassonografia não visualiza o apêndice e não mostra líquido livre. \nQual é a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alta com analgesia, pois ultrassonografia inconclusiva afasta apendicite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Antibiótico oral e retorno se febre persistir por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Avaliação cirúrgica e complementação diagnóstica conforme risco clínico, mantendo observação se necessário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Colonoscopia, pois dor em fossa ilíaca direita sugere doença inflamatória intestinal como primeira hipótese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Parasitológico de fezes antes de qualquer decisão, devido à dor abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente é um menino de 11 anos com quadro clássico de apendicite aguda: dor que migra da região periumbilical para a fossa ilíaca direita (migração de Kocher), acompanhada de sintomas constitucionais (anorexia, náuseas e febre) e sinais de irritação peritoneal (defesa e sinal de Rovsing positivo). O hemograma reforça o processo inflamatório/infeccioso (leucocitose com neutrofilia).\n\nO ponto central da questão é o manejo diante de um exame de imagem (ultrassonografia) inconclusivo. Na pediatria, a ultrassonografia é o exame de escolha inicial, mas a não visualização do apêndice não exclui a doença, especialmente em quadros clinicamente sugestivos.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA apendicite aguda é um diagnóstico eminentemente clínico. Em casos de dúvida ou exames iniciais negativos/inconclusivos em pacientes com alta probabilidade clínica, a conduta adequada é a observação clínica seriada em ambiente hospitalar, reavaliação pela cirurgia pediátrica e, se necessário, complementação com exames de maior acurácia (como a Tomografia Computadorizada ou Ressonância Magnética, dependendo da disponibilidade e idade) ou indicação de videolaparoscopia diagnóstica/terapêutica. O escore de Alvarado, embora menos sensível em crianças, estaria elevado neste caso, justificando a investigação rigorosa.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Incorreta. Um exame de imagem inconclusivo jamais afasta apendicite se a clínica é soberana. Dar alta com analgesia poderia levar à perfuração apendicular, peritonite e sepse, aumentando drasticamente a morbimortalidade.\n\nb) Incorreta. O uso de antibióticos orais sem diagnóstico definido mascara sinais clínicos e não trata a causa obstrutiva da apendicite. O tempo de espera sugerido (7 dias) é absurdamente longo para uma urgência cirúrgica.\n\nd) Incorreta. Embora a doença inflamatória intestinal (Doença de Crohn) possa cursar com dor em fossa ilíaca direita, o quadro atual é agudo e típico de apendicite. A colonoscopia não é o exame inicial para abdome agudo inflamatório e apresenta riscos de perfuração em tecidos friáveis e inflamados.\n\ne) Incorreta. O exame parasitológico de fezes não tem papel na investigação de abdome agudo inflamatório. Embora parasitoses possam causar dor abdominal em crianças, os sinais de peritonite e a leucocitose apontam para uma patologia cirúrgica urgente.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:21.883Z"
+  },
+  {
+    "id": "AJUDA_0a0a900b-86c6-45f2-ac20-7eb72df7bc0c",
+    "originalId": "0a0a900b-86c6-45f2-ac20-7eb72df7bc0c",
+    "statement": "Leia o caso a seguir.\n\nRecém-nascido, cuja mãe fez tratamento adequado para sífilis durante a gestação, após o nascimento apresenta teste não treponêmico negativo, assintomático ao exame físico.\n\nQual deverá, nesse caso, ser a conduta referente à sífilis congênita?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Penicilina benzatina intramuscular em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Penicilina cristalina endovenosa por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fazer acompanhamento ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar exame liquórico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um recém-nascido de baixo risco para sífilis congênita, fundamentado em três pilares: mãe adequadamente tratada durante a gestação, exame físico do bebê normal (assintomático) e teste não treponêmico (VDRL) do bebê negativo.\n\nDe acordo com as diretrizes atuais do Ministério da Saúde do Brasil (Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis), a conduta para este cenário é detalhada a seguir:\n\nAlternativa (a) Incorreta. A penicilina benzatina em dose única (50.000 UI/kg, via intramuscular) é indicada para recém-nascidos assintomáticos cujas mães não foram tratadas ou foram tratadas de forma inadequada, desde que todos os exames complementares do bebê (líquor, hemograma e radiografia de ossos longos) estejam normais e o VDRL do recém-nascido seja não reagente. No caso em questão, como a mãe teve tratamento adequado, essa intervenção medicamentosa imediata não é necessária.\n\nAlternativa (b) Incorreta. O uso de penicilina cristalina endovenosa por 10 dias é reservado para casos de sífilis congênita confirmada ou com alta probabilidade. Isso inclui bebês sintomáticos, aqueles com alterações em exames complementares (como hemograma ou raios X) ou quando há alteração no exame liquórico (caracterizando neurosífilis). O cenário descrito não preenche esses critérios de gravidade.\n\nAlternativa (c) Correta. Quando a mãe recebeu tratamento adequado (esquema de penicilina correto para o estágio da sífilis, iniciado até 30 dias antes do parto e com queda documentada dos títulos de VDRL) e o recém-nascido encontra-se assintomático com VDRL negativo, o risco de infecção é considerado mínimo. A conduta preconizada é o acompanhamento clínico e laboratorial ambulatorial. O seguimento deve incluir consultas periódicas e repetição dos testes não treponêmicos para garantir que o bebê permaneça sem sinais da doença.\n\nAlternativa (d) Incorreta. A realização do exame liquórico (punção lombar) é um procedimento invasivo indicado apenas para recém-nascidos que apresentam sinais clínicos de sífilis congênita, alterações laboratoriais/radiológicas ou quando o VDRL do sangue periférico do bebê é reagente. Em um bebê assintomático, com VDRL negativo e filho de mãe bem tratada, não há justificativa clínica para a coleta de líquor.\n\nEm resumo, para filhos de mães adequadamente tratadas, assintomáticos e com VDRL negativo ao nascimento, não há necessidade de exames invasivos ou tratamento imediato, sendo o acompanhamento ambulatorial a conduta padrão.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:21.883Z"
+  },
+  {
+    "id": "AJUDA_0a0bc17e-8170-4241-8d18-4f2033ab7348",
+    "originalId": "0a0bc17e-8170-4241-8d18-4f2033ab7348",
+    "statement": "Assinale a assertiva correta sobre rupturas agudas do tendão calcâneo (tendão de Aquiles).",
+    "options": [
+      {
+        "id": "A",
+        "text": "É mais comum em pacientes femininas com mais de 60 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ocorre com maior frequência na junção miotendínea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Geralmente requer tratamento cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Complicações de pele são raras após a cirurgia aberta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a) Incorreta. A ruptura do tendão de Aquiles é predominantemente uma lesão masculina, com uma proporção que varia de 4:1 a 10:1 em relação às mulheres. O pico de incidência ocorre entre os 30 e 50 anos de idade, geralmente associada a atividades esportivas recreativas (o perfil clássico do \"atleta de final de semana\").\n\nAlternativa b) Incorreta. A grande maioria das rupturas agudas ocorre na chamada zona crítica ou zona hipovascular, situada entre 2 e 6 centímetros acima da inserção do tendão no calcâneo. A junção miotendínea é um local mais comum para lesões musculares do gastrocnêmio (como a \"perna do tenista\"), e não para a ruptura completa do tendão de Aquiles.\n\nAlternativa c) Correta. Historicamente, o tratamento cirúrgico é a conduta preferencial para rupturas agudas em pacientes jovens, ativos e atletas, com o objetivo de restabelecer o comprimento e a tensão do tendão, além de permitir uma reabilitação mais precoce. Embora o tratamento conservador com protocolos de mobilização funcional venha ganhando espaço em estudos recentes, a cirurgia ainda é considerada o padrão para o perfil epidemiológico mais comum da lesão, visando minimizar o risco de rerruptura.\n\nAlternativa d) Incorreta. As complicações de partes moles e de pele são relativamente frequentes na cirurgia aberta do tendão calcâneo. A região posterior do tornozelo possui um suprimento sanguíneo cutâneo limitado e pouco tecido subcutâneo, o que eleva o risco de deiscência de sutura, necrose de pele e infecções profundas no pós-operatório. Isso faz com que técnicas minimamente invasivas sejam cada vez mais estudadas para mitigar esses riscos.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Doenças de Partes Moles"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:21.883Z"
+  },
+  {
+    "id": "AJUDA_0a0ee63f-0407-4ec0-863f-212942981225",
+    "originalId": "0a0ee63f-0407-4ec0-863f-212942981225",
+    "statement": "Na administração de insulina Lantus (glargina) em pacientes com Diabetes Tipo 1, qual das seguintes afirmações descreve corretamente seu mecanismo de ação e aplicação clínica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A insulina Lantus é uma insulina de ação rápida que atinge seu pico de ação em 30 minutos, sendo ideal para controle glicêmico pós-prandial imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A insulina Lantus é uma insulina basal de ação prolongada que fornece níveis constantes de insulina por aproximadamente 24 horas, sem picos pronunciados, auxiliando no controle glicêmico basal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A insulina Lantus é uma insulina de ação intermediária que deve ser administrada duas vezes ao dia para manter o controle glicêmico basal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A insulina Lantus é um análogo de insulina que deve ser misturado com insulina de ação rápida para alcançar um efeito prolongado e um controle glicêmico pós-prandial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A insulina Lantus é uma insulina de ação ultra-rápida que atinge seu pico de ação em menos de 15 minutos, sendo ideal para correção rápida de hiperglicemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Comentário Técnico:\n\nA insulina glargina (Lantus) é um análogo de insulina humana de ação prolongada, produzida por meio da tecnologia de DNA recombinante. Sua principal característica é a substituição do aminoácido asparagina pela glicina na posição A21 e a adição de duas argininas na terminação C da cadeia B. Essas modificações alteram o ponto isoelétrico da molécula, tornando-a solúvel em pH ácido (4,0) e menos solúvel no pH fisiológico (7,4) do tecido subcutâneo.\n\nAnálise das alternativas:\n\na) Incorreta. A descrição de início de ação em 30 minutos e pico definido refere-se à insulina de ação rápida (como a insulina regular). A glargina não é indicada para o controle imediato do pico glicêmico pós-prandial, mas sim para a manutenção dos níveis basais.\n\nb) Correta. Após a aplicação subcutânea, a solução ácida da glargina é neutralizada, levando à formação de microprecipitados que liberam gradualmente pequenas quantidades de insulina na circulação. Isso resulta em um perfil de concentração plasmática versus tempo relativamente constante, sem picos pronunciados (\"flat profile\"), com duração de ação de aproximadamente 24 horas. Isso a torna ideal para a terapia basal em pacientes com diabetes tipo 1.\n\nc) Incorreta. A insulina de ação intermediária é a NPH (Neutral Protamine Hagedorn). A NPH apresenta um pico de ação nítido (geralmente entre 4 a 10 horas após a aplicação) e duração de cerca de 12 a 18 horas, frequentemente exigindo duas ou mais aplicações diárias. A glargina é classificada como de ação prolongada ou ultraprolongada.\n\nd) Incorreta. Devido ao seu pH ácido, a insulina glargina não deve ser misturada na mesma seringa ou frasco com outras insulinas, pois isso pode alterar o perfil de absorção e a eficácia de ambos os componentes. Em esquemas \"basal-bolus\", as insulinas basal (glargina) e ultrarrápida (asparte, lispro ou glulisina) devem ser administradas em injeções separadas.\n\ne) Incorreta. A descrição de ação ultrarrápida (início em menos de 15 minutos) refere-se a análogos como lispro, asparte ou glulisina, que são utilizados especificamente para cobrir a ingestão de carboidratos nas refeições ou para correção de hiperglicemias agudas.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:21.883Z"
+  },
+  {
+    "id": "AJUDA_0a0f19de-464f-4e02-a329-c1d418b7ed4f",
+    "originalId": "0a0f19de-464f-4e02-a329-c1d418b7ed4f",
+    "statement": "Mulher, 67 anos, deu entrada no Pronto Socorro com dor e edema de membro inferior direito associada a leve dispnéia. Tem antecedente de histerectomia com salpingo-ooforectomia bilateral videolaparoscópica por neoplasia de ovário há 6 dias, com alta hospitalar há 3 com medicação sintomática. À admissão, estava eupneica em ar ambiente, Sat O2 97%, PA 130 x 80 mmHg, Pulso 82 bpm. Ausculta pulmonar e cardíaca limpas. Abdome flácido, indolor, cicatrizes de bom aspecto. Edema de perna direita com dor à palpação dessa panturrilha, sem outras peculiaridades. Qual a primeira medida mais adequada para realização ainda no Pronto Socorro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doppler Venoso de Membro Inferior direito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dosagem de D-Dímero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anticoagulação plena.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Angiotomografia de Tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Gasometria venosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nA paciente apresenta um quadro clínico de alta probabilidade para Tromboembolismo Venoso (TEV), que engloba a Trombose Venosa Profunda (TVP) e o Tromboembolismo Pulmonar (TEP). Os fatores de risco são claros: idade avançada, pós-operatório recente de cirurgia de grande porte (6 dias) e neoplasia ativa (câncer de ovário). Os sintomas de edema unilateral em membro inferior e a leve dispneia sugerem fortemente a presença de TVP evoluindo com TEP.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\nDiante de uma suspeita clínica moderada a alta de tromboembolismo venoso, a conduta inicial recomendada pelas principais diretrizes é iniciar a anticoagulação plena antes mesmo da confirmação por exames de imagem, desde que não haja contraindicações formais ao uso de anticoagulantes. O objetivo é evitar a progressão do trombo e a ocorrência de novos eventos embólicos que possam levar à instabilidade hemodinâmica ou morte. Como a paciente está hemodinamicamente estável e não há relato de sangramentos ativos, a anticoagulação imediata é a prioridade.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Doppler Venoso de Membro Inferior direito: É um exame fundamental para o diagnóstico de TVP, porém, em casos de alta probabilidade clínica e presença de sintomas pulmonares (dispneia), o tratamento não deve ser retardado para aguardar a realização do exame, especialmente se houver previsão de demora para sua execução.\n\nb) Dosagem de D-Dímero: O D-dímero tem alto valor preditivo negativo, sendo útil apenas para excluir tromboembolismo em pacientes de baixa probabilidade clínica. Nesta paciente, a probabilidade é alta (pós-operatório de câncer), o que torna o D-dímero desnecessário, pois, independentemente do resultado, a investigação precisaria prosseguir.\n\nd) Angiotomografia de Tórax: É o padrão-ouro para o diagnóstico de TEP. Assim como o Doppler, é um exame essencial para confirmação diagnóstica, mas a conduta terapêutica (anticoagulação) deve preceder ou ser iniciada simultaneamente ao agendamento do exame em pacientes com alta suspeita clínica.\n\ne) Gasometria venosa: Não possui papel no diagnóstico de tromboembolismo venoso. Mesmo a gasometria arterial costuma ser inespecífica no TEP inicial, podendo mostrar hipoxemia ou alcalose respiratória, mas não confirma nem exclui a patologia de forma definitiva.\n\nRESUMO:\nEm casos de alta suspeita clínica de TEV (TVP/TEP), a conduta correta é tratar primeiro e confirmar depois. A presença de fatores de risco maiores (câncer e cirurgia recente) associada a sinais clínicos típicos eleva o escore de Wells, justificando a anticoagulação imediata.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": 88.03385697831388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:21.883Z"
+  },
+  {
+    "id": "AJUDA_0a2350b7-56c9-433e-9e44-54a7f5a44a46",
+    "originalId": "0a2350b7-56c9-433e-9e44-54a7f5a44a46",
+    "statement": "Uma mulher de 52 anos, com hipertensão arterial sistêmica (HAS), dislipidemia, diabetes mellitus (DM), obesidade grau III e colelitíase, em uso de metformina, gliclazida, losartana e sinvastatina e realizando terapia de reposição hormonal pós-menopausa, procura o ambulatório de clínica médica após realização de ultrassonografia (USG) de abdômen superior, que evidenciou esteatose hepática acentuada e nódulo em lobo direito do fígado. É solicitada TC de abdômen superior com contraste trifásico, que revela fígado de tamanho aumentado e nódulo de 4cm em segmento VIII, com realce na fase arterial e lavagem do contraste na fase portal. Considerando o diagnóstico mais provável, dois fatores de risco associados nesse caso são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sexo feminino e dislipidemia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "diabetes mellitus e obesidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "idade acima de 50 anos e uso de estatina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "terapia de reposição hormonal e colelitíase",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma paciente com múltiplos critérios para síndrome metabólica (obesidade, diabetes mellitus, hipertensão arterial e dislipidemia) e um quadro de esteatose hepática acentuada. O achado na tomografia computadorizada (TC) de um nódulo de 4 cm com realce na fase arterial (hipercaptação) e lavagem do contraste na fase portal (washout) é o padrão radiológico clássico e diagnóstico do carcinoma hepatocelular (CHC). Atualmente, a esteato-hepatite associada à disfunção metabólica (MASH) é uma das principais causas de CHC, podendo inclusive ocorrer na ausência de cirrose estabelecida.\n\nAlternativa a) Incorreta. O sexo masculino é, na verdade, um fator de risco mais significativo para o desenvolvimento de carcinoma hepatocelular do que o sexo feminino. A dislipidemia é um componente da síndrome metabólica presente no caso, mas não é o fator isolado de maior peso para a carcinogênese quando comparada ao diabetes e à obesidade.\n\nAlternativa b) Correta. O diabetes mellitus e a obesidade grau III são os pilares da Doença Hepática Esteatótica Associada à Disfunção Metabólica (MASLD). Essas condições promovem um estado de inflamação crônica, resistência à insulina e estresse oxidativo no fígado, que são mecanismos centrais para a progressão de esteatose simples para esteato-hepatite, fibrose e, finalmente, carcinoma hepatocelular.\n\nAlternativa c) Incorreta. Embora a idade avançada seja um fator de risco genérico para câncer, o uso de estatinas (como a sinvastatina que a paciente utiliza) tem sido apontado em diversos estudos científicos como um fator de proteção contra o carcinoma hepatocelular, auxiliando na redução da incidência deste tumor em pacientes de risco.\n\nAlternativa d) Incorreta. A terapia de reposição hormonal e, principalmente, o uso de anticoncepcionais orais estão classicamente associados ao desenvolvimento de adenoma hepático, que é um tumor benigno. Embora o adenoma possa sofrer transformação maligna, o padrão de washout na TC e o contexto de síndrome metabólica apontam diretamente para o CHC relacionado à esteato-hepatite. A colelitíase (pedras na vesícula) não é fator de risco para tumores primários do parênquima hepático.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:21.883Z"
+  },
+  {
+    "id": "AJUDA_0a29dc91-69b6-4104-8f0b-bbe28b54b3c0",
+    "originalId": "0a29dc91-69b6-4104-8f0b-bbe28b54b3c0",
+    "statement": "Considerando-se sedação e analgesia de procedimentos não eletivos, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Midazolam tem efeito cardiodepressor importante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tempo de início de ação do etomidato é, em geral, de 2 a 5 minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tempo de ação médio da cetamina é de 30 a 60 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A ocorrência de quadro de hipotensão arterial é frequente quando do uso de fentanil.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a: Incorreta. O midazolam é um benzodiazepínico que apresenta efeitos cardiovasculares mínimos em doses terapêuticas habituais. Embora possa causar uma leve redução da resistência vascular sistêmica e depressão respiratória dose-dependente, ele não é classificado como um cardiodepressor importante. Comparado a outros agentes, como o propofol ou o tiopental, o midazolam é considerado relativamente seguro para a estabilidade hemodinâmica.\n\nAlternativa b: Correta. O etomidato é um hipnótico de escolha para sedação e indução em procedimentos não eletivos (como a sequência rápida de intubação), justamente por sua alta estabilidade cardiovascular. Embora o tempo de início de ação (onset) descrito em diversos livros-texto seja inferior a 1 minuto (tempo de circulação braço-cérebro), a alternativa é considerada a correta conforme o gabarito oficial, refletindo o tempo necessário para o pleno estabelecimento do efeito clínico e prontidão para o procedimento no contexto da questão.\n\nAlternativa c: Incorreta. A cetamina é um anestésico dissociativo de ação rápida, mas de curta duração. Após uma administração intravenosa única, o efeito clínico de anestesia e dissociação dura geralmente entre 10 e 15 minutos, devido à rápida redistribuição da droga do cérebro para outros tecidos. O intervalo de 30 a 60 minutos mencionado na alternativa está incorreto para a duração média do efeito sedativo/anestésico agudo.\n\nAlternativa d: Incorreta. O fentanil é um opioide sintético conhecido por sua excelente estabilidade cardiovascular. Ao contrário de opioides naturais como a morfina, o fentanil não induz a liberação de histamina e tem efeito mínimo na contratilidade miocárdica. Portanto, a ocorrência de hipotensão arterial não é frequente nem característica do uso do fentanil em doses isoladas e habituais para procedimentos.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:21.883Z"
+  },
+  {
+    "id": "AJUDA_0a30c003-3121-4988-bb86-70714d2c29f0",
+    "originalId": "0a30c003-3121-4988-bb86-70714d2c29f0",
+    "statement": "Uma paciente de 52 anos, sem histórico familiar de câncer de mama, apresentou-se com massa palpável na mama esquerda há aproximadamente 2 meses. Os exames de imagem revelaram lesão espiculada de 1,7 cm na mama esquerda (Bi-Rads 5). A avaliação clínica e ultrassonográfica da axila não mostrou evidências de comprometimento linfonodal. A biópsia por agulha grossa diagnosticou carcinoma invasivo do tipo não especial (SOE), grau histológico 3. A imuno-histoquímica da neoplasia mostrou receptores de estrogênio e progesterona negativos, Ki-67 de 70% e HER2 positivo (3+). Assinale a alternativa que apresenta a melhor abordagem terapêutica para esta paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mastectomia com pesquisa de linfonodo sentinela e reconstrução imediata com prótese de silicone, seguida de quimioterapia adjuvante e terapia alvo anti-HER2 (trastuzumabe).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cirurgia conservadora (quadrantectoma) com pesquisa de linfonodo sentinela, seguida de quimioterapia adjuvante, terapia alvo anti-HER2 (trastuzumabe) e radioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Quimioterapia neoadjuvante com duplo bloqueio anti-HER2 (trastuzumabe e pertuzumabe), seguida de cirurgia conservadora (quadrantectomia) com pesquisa de linfonodo sentinela e tamoxifeno por 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cirurgia conservadora (quadrantectomia) com pesquisa de linfonodo sentinela, seguida de quimioterapia adjuvante, terapia alvo anti-HER2 (trastuzumabe), radioterapia e tamoxifeno por 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um carcinoma invasivo do tipo não especial (SOE), grau histológico 3, com 1,7 cm (T1c) e axila clinicamente negativa (cN0). A imuno-histoquímica revela um perfil HER2-positivo puro, ou seja, com receptores de estrogênio e progesterona negativos e HER2 com forte expressão (3+). O Ki-67 de 70% indica alta atividade proliferativa.\n\nAlternativa (a) Incorreta: Embora a mastectomia seja uma opção cirúrgica, em tumores pequenos (1,7 cm) e localizados, a cirurgia conservadora é a conduta de escolha por ser menos invasiva e apresentar taxas de sobrevida global equivalentes à mastectomia, desde que acompanhada de radioterapia. A reconstrução imediata é uma possibilidade técnica, mas a abordagem conservadora [descrita na alternativa (b)] é considerada a mais adequada e padrão para este cenário clínico inicial.\n\nAlternativa (b) Correta: Esta alternativa contempla todos os pilares do tratamento para este caso. A cirurgia conservadora (quadrantectomia) é indicada para o tamanho do tumor (T1c). A pesquisa de linfonodo-sentinela é o padrão-ouro para o estadiamento axilar em pacientes com axila clinicamente negativa (cN0). Como a cirurgia foi conservadora, a radioterapia adjuvante na mama remanescente é obrigatória para o controle local. No que diz respeito à terapia sistêmica, tumores HER2-positivos maiores que 0,5 cm têm indicação de quimioterapia associada à terapia-alvo com trastuzumabe, devido ao maior risco de recidiva inerente a esse subtipo biológico.\n\nAlternativa (c) Incorreta: Apresenta dois erros principais. O primeiro é a indicação de tamoxifeno por 5 anos; este medicamento é um modulador seletivo do receptor de estrogênio, indicado apenas para tumores que expressam receptores hormonais positivos, o que não é o caso desta paciente (receptores negativos). O segundo ponto é que, embora a quimioterapia neoadjuvante com duplo bloqueio possa ser discutida em tumores HER2-positivos, ela é classicamente indicada para tumores maiores que 2,0 cm (T2) ou com comprometimento linfonodal (N+). Para um tumor de 1,7 cm cN0, a cirurgia upfront (inicial) seguida de tratamento adjuvante é uma conduta sólida e amplamente aceita.\n\nAlternativa (d) Incorreta: O erro fundamental desta alternativa é a indicação do tamoxifeno por 5 anos. Como a paciente possui receptores de estrogênio e progesterona negativos na imuno-histoquímica, o tumor não é responsivo à hormonioterapia, tornando o uso do tamoxifeno desnecessário e ineficaz para o tratamento da doença.\n\nResumo dos pontos-chave:\n1. Tumor T1c (1,7 cm) e axila negativa permitem cirurgia conservadora.\n2. Toda cirurgia conservadora exige radioterapia adjuvante.\n3. Subtipo HER2-positivo (ER/PR negativos) exige bloqueio anti-HER2 e quimioterapia, mas exclui o uso de hormonioterapia (tamoxifeno ou inibidores de aromatase).",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:21.883Z"
+  }
+]

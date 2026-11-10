@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_e53b5a08-870d-44d0-86ee-3e268c84ba80",
+    "originalId": "e53b5a08-870d-44d0-86ee-3e268c84ba80",
+    "statement": "Paciente feminina, 51 anos, previamente saudável, exceto por hipertensão controlada, procura o pronto-socorro com dor epigástrica de longa data, recentemente agravada. A paciente está hemodinamicamente estável, sem sinais claros de peritonite difusa. Tomografia de abdome abaixo. Das condutas abaixo, a que representa a medida inicial mais apropriada no tratamento inicial desta paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Endoscopia de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colonoscopia urgente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Corticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Paracentese diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\nA paciente apresenta um quadro de dor epigástrica crônica que agudizou, sugerindo uma complicação de doença ulcerosa péptica. Ao analisar as imagens de tomografia computadorizada de abdômen, observamos achados clássicos de abdome agudo perfurativo: presença de ar livre na cavidade abdominal (pneumoperitônio), indicado pelas setas brancas na imagem axial e coronal, e presença de líquido livre na cavidade (identificado pelos asteriscos). \n\nAnálise das alternativas:\n\na) Incorreta. A endoscopia digestiva alta é contraindicada na suspeita de perfuração de víscera oca, pois a insuflação de ar necessária para o exame pode aumentar o pneumoperitônio, agravar a dor e piorar o estado clínico da paciente.\n\nb) Incorreta. A colonoscopia também é contraindicada em quadros de perfuração intestinal aguda e não teria papel diagnóstico ou terapêutico inicial para uma dor de origem epigástrica com pneumoperitônio.\n\nc) Correta. Diante de um abdome agudo perfurativo (pneumoperitônio visualizado na TC), a indicação é de tratamento cirúrgico de urgência. Como a paciente está hemodinamicamente estável e sem sinais de peritonite difusa grave que impeçam o pneumoperitônio artificial, a videolaparoscopia é a via de escolha inicial. Ela permite tanto a confirmação do local da perfuração (geralmente úlceras gástricas ou duodenais) quanto o tratamento definitivo (sutura da lesão e proteção com epíplon, conhecida como manobra de Graham).\n\nd) Incorreta. A corticoterapia não tem indicação no tratamento de abdome agudo perfurativo. Pelo contrário, o uso de corticoides pode mascarar sinais de irritação peritoneal e dificultar a cicatrização.\n\ne) Incorreta. A paracentese diagnóstica é utilizada principalmente na investigação de ascites (em cirróticos, por exemplo) ou em casos de trauma (lavado peritoneal), mas não é indicada quando o diagnóstico de perfuração já foi estabelecido por imagem (TC com pneumoperitônio), pois o próximo passo deve ser a intervenção cirúrgica.\n\nResumo: O achado de pneumoperitônio na tomografia de uma paciente com história sugestiva de úlcera péptica define o diagnóstico de abdome agudo perfurativo, exigindo intervenção cirúrgica, sendo a videolaparoscopia a medida inicial mais adequada para estabilidade hemodinâmica.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Perfurativo"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/61be904ea32117f2fa61d53fa72a5e3ae5b7111bd9f1a5e3b506303aca139aad.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e53b5a08-870d-44d0-86ee-3e268c84ba80_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:38.117Z"
+  },
+  {
+    "id": "AJUDA_e53fdcaf-f3f3-4584-8b99-e524a346cd52",
+    "originalId": "e53fdcaf-f3f3-4584-8b99-e524a346cd52",
+    "statement": "A epilepsia é considerada refratária quando:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As crises são diárias e não melhoram com uso de pelo menos três medicações antiepilépticas em doses apropriadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As crises não melhoram com pelo menos quatro medicações antiepilépticas em doses apropriadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As crises não melhoram com pelo menos duas medicações antiepilépticas em doses apropriadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "As crises são diárias e não melhoram com pelo menos cinco medicações antiepilépticas em doses apropriadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Definição de Epilepsia Refratária:\n\nA definição de epilepsia refratária, também conhecida como epilepsia farmacorresistente, foi estabelecida por um consenso da ILAE (Liga Internacional Contra a Epilepsia). O objetivo dessa padronização é identificar rapidamente pacientes que não respondem ao tratamento clínico convencional, permitindo que sejam encaminhados para avaliações de terapias alternativas, como a cirurgia de epilepsia, dieta cetogênica ou neuroestimulação.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. Não existe a exigência de que as crises sejam diárias para que a epilepsia seja considerada refratária. Além disso, o critério técnico internacional estabelece a falha de duas medicações, e não três. A frequência das crises é importante para a qualidade de vida, mas o diagnóstico de farmacorresistência foca no insucesso terapêutico medicamentoso.\n\nAlternativa b) Incorreta. O número de quatro medicações está incorreto. Estudos epidemiológicos demonstraram que, após a falha de duas drogas antiepilépticas bem indicadas e em doses corretas, a probabilidade de o paciente alcançar o controle total das crises com uma terceira ou quarta droga é muito baixa (geralmente inferior a 5%). Portanto, aguardar a falha de quatro fármacos atrasaria o tratamento adequado.\n\nAlternativa c) Correta. De acordo com a ILAE, a epilepsia é considerada refratária quando ocorre a falha de ensaios adequados de duas medicações antiepilépticas toleradas, apropriadamente escolhidas e utilizadas (seja em monoterapia ou em combinação) para alcançar a liberdade sustentada de crises. O termo \"doses apropriadas\" é fundamental, pois o uso de subdoses não permite classificar a droga como falha terapêutica.\n\nAlternativa d) Incorreta. Assim como na alternativa A, o critério de crises diárias não é necessário. O número de cinco medicações também está totalmente fora dos critérios diagnósticos vigentes na literatura médica atual.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Epilepsias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:38.117Z"
+  },
+  {
+    "id": "AJUDA_e547fca4-dd0f-4c04-b699-e8bab976ba78",
+    "originalId": "e547fca4-dd0f-4c04-b699-e8bab976ba78",
+    "statement": "Um homem de 27 anos, sem comorbidades, relatou o seguinte evento em consulta com o clínico geral da unidade básica de saúde: estava em um shopping center tomando cerveja com os amigos, quando, de forma repentina, apresentou palpitação, \"respiração curta\", sudorese, tremores e sensação de que ia morrer. Pediu ajuda para ser levado à área externa e \"tomar ar\", pois temia estar vivenciando um \"derrame ou um ataque cardíaco”. Os sintomas duraram cerca de 15 minutos. O paciente ainda relatou que costuma ser uma pessoa tensa, principalmente em situações que requerem interação social. Ao exame físico, não foram observadas alterações. Com base nos sintomas apresentados pelo paciente, qual o diagnóstico provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Episódio conversivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transtorno de sintomas somáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno de ansiedade social.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ataque de pânico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito apresenta um episódio agudo, súbito e autolimitado de intensa ansiedade, caracterizado por sintomas físicos e cognitivos clássicos.\n\nAlternativa a) Incorreta. O episódio conversivo, ou transtorno de sintomas neurológicos funcionais, manifesta-se pela perda ou alteração de funções motoras ou sensoriais voluntárias (como paralisia, cegueira, anestesia ou crises não epilépticas) que não podem ser explicadas por uma condição neurológica orgânica. O paciente em questão apresenta sintomas de hiperatividade autonômica, e não déficits neurológicos funcionais.\n\nAlternativa b) Incorreta. No transtorno de sintomas somáticos, o foco está na presença de sintomas físicos que geram sofrimento, mas a característica principal é a resposta excessiva a esses sintomas (pensamentos, sentimentos ou comportamentos desproporcionais e persistentes sobre a gravidade das sensações). É uma condição crônica, diferente do evento paroxístico e breve de 15 minutos relatado.\n\nAlternativa c) Incorreta. Embora o paciente relate ser uma pessoa tensa em interações sociais, o evento descrito no shopping não foi motivado pelo medo de julgamento ou humilhação social, mas sim por um mal-estar súbito com medo de morte iminente. O Transtorno de Ansiedade Social pode cursar com ataques de pânico situacionais, mas o diagnóstico do evento agudo em si, com a constelação de sintomas apresentada, é o ataque de pânico.\n\nAlternativa d) Correta. O ataque de pânico é definido como um surto abrupto de medo ou desconforto intenso que atinge o pico em poucos minutos. Para o diagnóstico, são necessários quatro ou mais sintomas de uma lista que inclui: palpitações, sudorese, tremores, sensação de falta de ar (dispneia), náuseas, calafrios, parestesias, despersonalização e medo de morrer ou de \"enlouquecer\". O paciente apresentou cinco desses sintomas, com duração limitada e exame físico normal, o que caracteriza perfeitamente o episódio. O fato de o paciente temer um \"derrame ou ataque cardíaco\" é uma interpretação catastrófica comum dos sintomas corporais durante o ataque.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transtornos de Ansiedade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:38.117Z"
+  },
+  {
+    "id": "AJUDA_e54b77ec-cba0-438e-afc0-75116f202a7d",
+    "originalId": "e54b77ec-cba0-438e-afc0-75116f202a7d",
+    "statement": "Um lactente de 2 meses é internado com tosse paroxística precedida de sintomas gripais, e o diagnóstico de coqueluche é confirmado.\nA antibioticoterapia de primeira escolha para o tratamento da coqueluche deve ser feita com",
+    "options": [
+      {
+        "id": "A",
+        "text": "azitromicina por 3 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "azitromicina por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "sulfametoxazol e trimetropim por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "eritromicina por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "claritromicina por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A coqueluche é uma doença infectocontagiosa aguda causada pela bactéria Bordetella pertussis. O objetivo principal da antibioticoterapia não é apenas a melhora clínica (que ocorre principalmente se iniciada na fase catarral), mas sobretudo a redução da transmissibilidade do agente, permitindo que o paciente saia do isolamento respiratório após 5 dias de tratamento adequado.\n\nOs macrolídeos são os antibióticos de primeira escolha. Entre eles, a azitromicina é o fármaco preferencial, especialmente em lactentes jovens, devido à sua posologia simplificada (uma dose ao dia), melhor tolerância gastrointestinal e menor associação com o risco de estenose hipertrófica do piloro quando comparada à eritromicina.\n\nAnalise das alternativas:\n\nAlternativa a) Incorreta. Embora a azitromicina possua uma meia-vida longa, o esquema preconizado pelo Ministério da Saúde e por organizações internacionais para o tratamento da coqueluche é de 5 dias, e não apenas 3 dias.\n\nAlternativa b) Correta. A azitromicina por 5 dias é o esquema de primeira linha. A posologia habitual é de 10 mg/kg/dia em dose única diária por 5 dias para crianças. Em recém-nascidos (menos de 1 mês), o esquema também é de 5 dias.\n\nAlternativa c) Incorreta. O sulfametoxazol-trimetoprim é considerado uma alternativa de segunda linha, indicado apenas em casos de contraindicação, intolerância ou alergia aos macrolídeos. Além disso, não deve ser utilizado em lactentes com menos de 2 meses de vida devido ao risco de kernicterus.\n\nAlternativa d) Incorreta. A eritromicina já foi o tratamento padrão, mas requer um tempo de uso prolongado (14 dias) e possui posologia de 4 vezes ao dia, o que dificulta a adesão. Além disso, está associada à maior incidência de efeitos colaterais e risco de estenose de piloro em lactentes pequenos.\n\nAlternativa e) Incorreta. A claritromicina é uma opção de macrolídeo válida, porém o tempo de tratamento recomendado para este fármaco é de 7 dias, e não 5 dias.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Coqueluche"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:38.117Z"
+  },
+  {
+    "id": "AJUDA_e552a0a5-e9fd-439a-929b-44b94667bd9d",
+    "originalId": "e552a0a5-e9fd-439a-929b-44b94667bd9d",
+    "statement": "Paciente de 38 anos, gênero masculino, é admitido em unidade de emergência por rebaixamento do nível de consciência sucedido por crises convulsivas há 6 horas. Não apresenta déficits sensitivos ou motores. Exames complementares evidenciaram calcemia total=13,5mg/dl (VR: 8,8 a 10,2), PTH=8 pg/ml (VR=15 a 65), 1,25(OH)2vitamina D=120 pg/ml (VR=18 a 72), 25(OH)vitamina D=28 ng/ml (VR=30 a 60). Qual, dentre as abaixo, seria a possibilidade diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Linfoma",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Amiloidose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neoplasia produtora de PTHrp",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Intoxicação de colecalciferol",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta é uma questão clássica que exige o raciocínio clínico sobre o metabolismo do cálcio e as causas de hipercalcemia. Vamos analisar os dados laboratoriais passo a passo:\n\n1. Cálcio total de 13,5 mg/dl: Confirma uma hipercalcemia grave (geralmente definida acima de 12-13 mg/dl), o que justifica os sintomas neurológicos (rebaixamento de consciência e crises convulsivas).\n\n2. PTH de 8 pg/ml: O PTH está suprimido (o valor de referência mínimo é 15). Isso indica que a causa da hipercalcemia NÃO é o paratireoidismo primário. Estamos diante de uma hipercalcemia PTH-independente.\n\n3. 25(OH) vitamina D de 28 ng/ml: Esta é a forma de estoque da vitamina D. O valor está normal/baixo, o que descarta intoxicação por vitamina D exógena (colecalciferol).\n\n4. 1,25(OH)2 vitamina D (calcitriol) de 120 pg/ml: Esta é a forma ativa da vitamina D e está significativamente ELEVADA. \n\nO ponto-chave da questão é: por que o calcitriol está alto se o PTH (que normalmente estimula sua produção nos rins) está suprimido? Isso ocorre quando há uma produção extrarrenal de 1-alfa-hidroxilase (a enzima que converte a vitamina D em sua forma ativa). As duas principais condições que fazem isso são as doenças granulomatosas (como sarcoidose e tuberculose) e os linfomas.\n\nAnálise das alternativas:\n\na) CORRETA. O linfoma (tanto Hodgkin quanto não Hodgkin) pode apresentar expressão da enzima 1-alfa-hidroxilase nas células imunes ou nas próprias células neoplásicas, levando ao aumento do calcitriol, aumento da absorção intestinal de cálcio e consequente hipercalcemia com PTH suprimido.\n\nb) INCORRETA. Embora a amiloidose seja uma doença sistêmica crônica, ela não é uma causa típica de produção ectópica de 1,25(OH)2 vitamina D ou de hipercalcemia por esse mecanismo.\n\nc) INCORRETA. A proteína relacionada ao PTH (PTHrp) é produzida em diversas neoplasias (como carcinoma de células escamosas de pulmão ou rim). No entanto, a hipercalcemia mediada por PTHrp costuma cursar com níveis BAIXOS ou normais de 1,25(OH)2 vitamina D, pois o PTHrp não estimula a conversão renal de forma tão eficaz quanto o PTH original e a própria hipercalcemia suprime a produção de calcitriol.\n\nd) INCORRETA. Na intoxicação por colecalciferol (vitamina D3), os níveis de 25(OH)D estariam extremamente elevados (geralmente acima de 100-150 ng/ml), o que não é o caso do paciente (28 ng/ml).",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:38.117Z"
+  },
+  {
+    "id": "AJUDA_e5569433-61ee-4082-8ce3-2c733b6ceb42",
+    "originalId": "e5569433-61ee-4082-8ce3-2c733b6ceb42",
+    "statement": "A codeína e o tramadol podem ser prescritos em dois tipos de notificação de receitas, segundo a Portaria 344/98. Para decisão do tipo de notificação a ser utilizada lança-se mão dos chamados \"adendos de lista\", os quais preveem os tipos de notificação conforme a unidade posológica e concentração. Sendo assim, quais as notificações de receitas possíveis de serem elaboradas para estes opioides?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Notificação de Receita A - acima de 100 mg e Notificação de Receita B -psicotrópico - acima de 100 mg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Notificação de Receita B - acima de 100 mg e Receituário Sujeito a Controle Especial - abaixo de 100 mg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Notificação de Receita B - acima de 100 mg e Notificação de Receita C2 - abaixo de 100 mg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Notificação de Receita A - acima de 100 mg e Receituário Sujeito a Controle Especial - abaixo de 100 mg.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A compreensão desta questão exige o conhecimento da Portaria SVS/MS número 344/1998, que regulamenta as substâncias sujeitas a controle especial no Brasil. A codeína e o tramadol são opioides que figuram originalmente na Lista A2 (substâncias entorpecentes de uso permitido em concentrações especiais). No entanto, o enquadramento dessas substâncias depende da dose por unidade posológica, conforme descrito nos adendos das listas.\n\nAnálise das alternativas:\n\na) Incorreta. A Notificação de Receita B (cor azul) é utilizada para substâncias psicotrópicas (Lista B1) ou psicotrópicas anorexígenas (Lista B2), como benzodiazepínicos e sibutramina. A codeína e o tramadol, sendo opioides, seguem as regras das Listas A ou C1, nunca a Lista B.\n\nb) Incorreta. Novamente, cita-se a Notificação de Receita B, que não se aplica a esses opioides. O erro permanece na indicação do formulário azul para substâncias que pertencem aos grupos de entorpecentes ou controle especial simples.\n\nc) Incorreta. A Notificação de Receita C2 é o formulário de cor branca destinado exclusivamente a substâncias retinoides de uso sistêmico (como a isotretinoína), que exigem termo de consentimento devido ao risco de teratogenia. Não há aplicação da C2 para codeína ou tramadol. Além disso, repete o erro sobre a Notificação de Receita B.\n\nd) Correta. Esta alternativa está em total conformidade com os adendos da Lista A2 da Portaria 344/98. O texto legal estabelece que:\n1. Se a concentração da unidade posológica (ex: por comprimido ou ampola) for superior a 100 mg, a prescrição deve ser feita obrigatoriamente em Notificação de Receita A (cor amarela), seguindo o rigor das substâncias entorpecentes.\n2. Se a concentração da unidade posológica for de até 100 mg, a substância é \"rebaixada\" para a Lista C1, permitindo a prescrição em Receituário Sujeito a Controle Especial (formulário branco em duas vias). É por este motivo que a maioria das apresentações comerciais comuns desses fármacos (como tramadol 50 mg ou codeína 30 mg/60 mg) utiliza a receita branca em duas vias na prática clínica.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:38.117Z"
+  },
+  {
+    "id": "AJUDA_e56c276f-f3ee-4479-a695-71914b577a0a",
+    "originalId": "e56c276f-f3ee-4479-a695-71914b577a0a",
+    "statement": "Mulher, 32 anos de idade, com história de obesidade (IMC 32 kg/m²), é admitida na enfermaria de clínica médica para investigação de edema generalizado de início há 3 semanas, progressivo, associado a ganho de peso de 8 kg. Ao exame, apresenta-se hipertensa (PA 150/95 mmHg), com edema ++/4+ em membros inferiores, edema periorbital e ascite. Exames laboratoriais revelam: creatinina 1,6 mg/dL, albumina sérica 1,8 g/dL, colesterol total 450 mg/dL, triglicerídeos 380 mg/dL. A proteinúria de 24 horas foi de 8,5 gramas. O sedimento urinário mostrou lipidúria e hematúria microscópica, sem leucocitúria significativa. As sorologias para hepatites B, C e HIV foram negativas, e o FAN foi não reagente.\n\nIndique a fisiopatologia envolvida na hiperlipidemia apresentada pela paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução da atividade da lipase lipoproteica, diminuindo a depuração de triglicerídeos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Absorção intestinal aumentada de colesterol devido à perda de proteínas reguladoras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumento da síntese hepática de lipoproteínas, estimulada pela baixa pressão oncótica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Diminuição da excreção de colesterol pela bile por disfunção hepatocelular secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de Síndrome Nefrótica, definida pela presença de proteinúria nefrótica (8,5 g/24h, acima do ponto de corte de 3,5 g/24h), hipoalbuminemia importante (1,8 g/dL), edema generalizado (anasarca) e dislipidemia mista (colesterol total 450 mg/dL e triglicerídeos 380 mg/dL), além de lipidúria no sedimento urinário.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. Embora a redução do clearance de lipoproteínas por alterações enzimáticas (como menor atividade da lipase lipoproteica) possa contribuir de forma secundária para a hipertrigliceridemia, o estímulo primário e clássico para a hiperlipidemia na síndrome nefrótica decorre da resposta hepática à hipoalbuminemia.\n\nAlternativa B - Incorreta. A dislipidemia na síndrome nefrótica é de origem endógena (síntese e depuração hepática/plasmática de lipoproteínas), não havendo relação com aumento na absorção de colesterol no trato gastrointestinal.\n\nAlternativa C - Correta. A proteinúria maciça leva à hipoalbuminemia e consequente queda da pressão oncótica plasmática. Esse estímulo oncótico reduzido induz o fígado a aumentar de forma compensatória e inespecífica a síntese proteica, elevando a produção de lipoproteínas ricas em colesterol e triglicerídeos (como VLDL e LDL). Por terem alto peso molecular, essas lipoproteínas não são perdidas na urina e se acumulam na circulação, gerando a hiperlipidemia marcante.\n\nAlternativa D - Incorreta. Não ocorre disfunção hepatocelular na síndrome nefrótica. O parênquima hepático encontra-se íntegro e com sua função de síntese ativada, sem redução da excreção biliar de colesterol como fator determinante da patologia.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:38.117Z"
+  },
+  {
+    "id": "AJUDA_e56c6847-1f59-459c-8806-0a200fcdc78b",
+    "originalId": "e56c6847-1f59-459c-8806-0a200fcdc78b",
+    "statement": "Mulher de 62 anos, passou por situação estressante há 1 ano e, após isso, iniciou dor difusa pelo corpo, uma sensação de “exaustão”. Refere parestesia, porém sem padrão neuropático claro, de intensidade 8 em 10, assim como rigidez muscular e articular matinal, de padrão não inflamatório. Após o evento estressor, refere apresentar labilidade emocional, irritabilidade, tristeza intensa, humor deprimido, além de sono não reparador. Nega ideação suicida, porém não tem disposição para realizar suas atividades habituais. Exame físico sem alterações, exceto pela presença de dor ao exame dos tender points. Seus exames gerais vieram sem alterações, VHS e PCR dentro do limite de normalidade, assim como FR e TSH. Diante do exposto, a conduta médica adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar Amitriptilina 12,5 mg no período noturno pelo diagnóstico de fibromialgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manejar como transtorno de ajustamento ao trauma e reavaliar em seis meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar à psicoterapia e iniciar tratamento para Transtorno Depressivo Maior; após estabilização do quadro, reavaliar dor crônica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever Clonazepam gotas para insônia e melhorar qualidade do sono.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um quadro de dor crônica difusa associado a sintomas depressivos significativos (tristeza intensa, humor deprimido, irritabilidade e falta de disposição) iniciados após um evento estressor há um ano. Embora o exame físico e a descrição da dor (tender points e rigidez não inflamatória) sugiram fibromialgia, a gravidade e a persistência dos sintomas psiquiátricos indicam a presença de um Transtorno Depressivo Maior (TDM) concomitante. Em provas de residência, quando há uma sobreposição clara entre sintomas somáticos (dor) e um transtorno de humor grave, o tratamento da esfera psiquiátrica é prioritário para a melhora funcional da paciente.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A amitriptilina é, de fato, uma medicação de primeira linha para o tratamento da fibromialgia, agindo tanto na dor quanto no sono. No entanto, a dose de 12,5 mg é considerada subterapêutica para o tratamento do Transtorno Depressivo Maior que a paciente apresenta. Além disso, a alternativa foca exclusivamente no diagnóstico de fibromialgia, negligenciando a gravidade do quadro depressivo.\n\nAlternativa b) Incorreta. O Transtorno de Ajustamento (ou de Adaptação) ocorre em resposta a um estressor identificável, mas os sintomas geralmente surgem em até 3 meses após o evento e não costumam persistir por tanto tempo (1 ano) com essa intensidade de sintomas depressivos e físicos. O quadro atual preenche critérios para depressão maior, e aguardar mais seis meses para reavaliar retardaria o tratamento necessário.\n\nAlternativa c) Correta. A paciente preenche critérios clínicos para Transtorno Depressivo Maior. Existe uma íntima relação entre depressão e dor crônica; muitas vezes, a dor é uma manifestação somática da depressão ou é por ela exacerbada. A conduta de iniciar o tratamento para o transtorno de humor (farmacoterapia adequada e psicoterapia) é fundamental. Após a estabilização do humor, a dor crônica deve ser reavaliada, pois pode haver remissão total ou parcial com o tratamento antidepressivo em doses adequadas.\n\nAlternativa d) Incorreta. O clonazepam é um benzodiazepínico. Embora possa auxiliar no início do sono, ele não trata a causa da insônia (que neste caso é secundária à depressão e à dor) e pode prejudicar a arquitetura do sono (sono não reparador). Além disso, o uso isolado de benzodiazepínicos não é indicado para transtornos depressivos e pode aumentar o risco de quedas e declínio cognitivo em pacientes idosos (62 anos).",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "TOC, Transtornos Somáticos, Dissociativos e do Estresse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:38.117Z"
+  },
+  {
+    "id": "AJUDA_e56ec4a8-307e-4ad6-8504-957f35e17e58",
+    "originalId": "e56ec4a8-307e-4ad6-8504-957f35e17e58",
+    "statement": "Gestante é atendida em emergência obstétrica com queixa de sangramento vaginal de pequena monta há cerca de 4 dias. Paciente nega dor abdominal associada. Gesta 4 com 3 cesarianas prévias. Idade gestacional de 34 semanas. Tabagista sem outros fatores de risco associados. Ao exame, encontra-se em bom estado geral, normotensa e apirética. Dinâmica uterina ausente com tônus uterino normal. Ao exame especular, encontrou-se pequena quantidade de sangue vermelho-vivo em fundo de saco vaginal, sem sangramento ativo e colo sem modificação aparente. Foi submetida à avaliação de bem-estar fetal, sem evidência de alterações. Considerando o caso descrito, qual é a hipótese diagnóstica e a conduta a ser tomada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Descolamento prematuro de placenta – interrupção da gestação pela via de parto mais rápida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Placenta de inserção baixa – realização de ecografia obstétrica com complementação transvaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Vasa prévia – internação e acompanhamento até 37 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ruptura uterina – cesariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descreve uma gestante no terceiro trimestre (34 semanas) com sangramento vaginal de pequena monta, indolor e de cor vermelho-vivo. Os pontos-chave para o diagnóstico são: ausência de dor abdominal, tônus uterino normal (útero relaxado), estabilidade hemodinâmica da mãe e bem-estar fetal preservado. Além disso, a paciente possui um fator de risco clássico para patologias placentárias: três cesarianas prévias e tabagismo.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\n\nA hipótese de placenta de inserção baixa ou placenta prévia é a principal suspeita diante de sangramento indolor no terceiro trimestre, especialmente em pacientes com cicatrizes uterinas prévias. O diagnóstico de certeza é ultrassonográfico. A complementação transvaginal é fundamental, pois é o padrão-ouro para medir a distância entre a borda da placenta e o orifício interno do colo do útero, sendo um procedimento seguro quando realizado de forma técnica (sem introdução profunda do transdutor).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nA) Descolamento prematuro de placenta (DPP): Esta patologia se manifesta classicamente com dor abdominal súbita e intensa, sangramento de cor escura e, obrigatoriamente, hipertonia uterina (útero rígido/lenhoso). O quadro da questão descreve útero com tônus normal e ausência de dor, o que exclui DPP.\n\nC) Vasa prévia: É uma condição rara onde vasos fetais cruzam o orifício interno do colo. O sangramento ocorre tipicamente no momento da ruptura das membranas (amniorrexe) e é de origem fetal, levando ao sofrimento fetal agudo e óbito em poucos minutos. A paciente apresenta sangramento há 4 dias com feto hígido, o que invalida esta hipótese. Além disso, a conduta de aguardar até 37 semanas sem confirmação diagnóstica e internação rigorosa não seria adequada para vasa prévia suspeita.\n\nD) Ruptura uterina: Embora as três cesarianas anteriores sejam um fator de risco, a ruptura uterina é um evento dramático que geralmente ocorre durante o trabalho de parto, cursando com dor lancinante, interrupção das contrações, subida da apresentação fetal à palpação e choque materno. A estabilidade clínica da paciente e a ausência de dinâmica uterina descartam essa urgência no momento.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:38.117Z"
+  },
+  {
+    "id": "AJUDA_e58030f5-09cf-4807-8d42-2c8153db7b36",
+    "originalId": "e58030f5-09cf-4807-8d42-2c8153db7b36",
+    "statement": "Homem, 48 anos de idade, previamente assintomático, comparece ao PS com dor torácica de forte intensidade, em aperto, com início súbito e irradiação para dorso e região interescapular, há 2 horas. Exame físico: sudoreico, FC 100 bpm, PA 190 x 100 mm Hg nos quatro membros, pulsos rítmicos e presença de sopro diastólico suave, 4+/6+, no foco aórtico. Após análise do eletrocardiograma, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cirurgia de emergência",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Angioplastia primária da artéria culpada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Passagem de balão intra-aórtico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trombólise com alteplase",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico e alarmante: dor torácica súbita e intensa com irradiação para o dorso, associada a níveis pressóricos elevados (190 x 100 mmHg) e a um sopro diastólico no foco aórtico, que sugere insuficiência aórtica aguda. Ao analisar o eletrocardiograma (ECG), observa-se um supradesnivelamento do segmento ST nas derivações inferiores (II, III e aVF), o que caracteriza um Infarto Agudo do Miocárdio (IAM) com supra de ST de parede inferior.\n\nO diagnóstico unificador para dor torácica excruciante, sopro de insuficiência aórtica e IAM inferior é a Dissecção Aguda de Aorta Ascendente (Stanford A). Nesse cenário, a dissecção progride retrogradamente ou atinge o óstio da artéria coronária direita, causando a oclusão coronariana secundária à dissecção, além de comprometer a valva aórtica.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nA alternativa (a), Cirurgia de emergência, é a conduta correta. A dissecção de aorta tipo A de Stanford é uma emergência cirúrgica absoluta. O tratamento visa corrigir a ruptura da íntima, reconstruir a aorta e, se necessário, tratar a valva aórtica e revascularizar a coronária acometida. Sem a intervenção cirúrgica imediata, a mortalidade é extremamente elevada.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nb) Angioplastia primária da artéria culpada: Embora o ECG mostre um IAM com supra de ST, a causa não é uma placa aterosclerótica rota, mas sim a dissecção da aorta que obstruiu a coronária. Realizar uma angioplastia ou administrar antiagregantes plaquetários potentes e anticoagulantes (necessários no procedimento) seria catastrófico em um paciente com dissecção de aorta, aumentando o risco de sangramento e progressão da dissecção.\n\nc) Passagem de balão intra-aórtico: Esta conduta é absolutamente contraindicada em pacientes com dissecção de aorta e naqueles com insuficiência aórtica (presente no caso, conforme indicado pelo sopro diastólico). O balão intra-aórtico infla na diástole, o que aumentaria a pressão retrógrada na aorta, agravando a dissecção e a regurgitação aórtica, podendo levar ao edema agudo de pulmão e óbito.\n\nd) Trombólise com alteplase: A trombólise é formalmente contraindicada na suspeita de dissecção de aorta. Administrar um fibrinolítico nesse paciente resultaria em hemorragia maciça e morte, pois impediria a formação de trombos necessários para conter o sangramento no falso lúmen da aorta. Em qualquer paciente com dor torácica e supra de ST no ECG, deve-se descartar clinicamente a dissecção de aorta antes de trombolisar.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+      "Síndromes Aórticas Agudas",
+      "Eletrocardiograma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/8c572fb5cdf4cc152d6d7c2c7e9db11a02935e6f1fd71df9b4f49ba1b901804e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e58030f5-09cf-4807-8d42-2c8153db7b36_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:38.651Z"
+  }
+]

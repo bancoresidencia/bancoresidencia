@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_893c5b01-b407-498e-93f3-96a22158cac4",
+    "originalId": "893c5b01-b407-498e-93f3-96a22158cac4",
+    "statement": "Lactente de 6 meses comparece à consulta na Unidade Básica de Saúde, onde é verificado que nunca recebeu nenhuma imunização. Para atualização do cartão vacinal segundo o Programa Nacional de Imunização, o adequado é aplicar",
+    "options": [
+      {
+        "id": "A",
+        "text": "BCG, dose única; Poliomielite Inativada (VIP), 3 doses, com 2 meses de intervalo; Rotavírus (VORH), 2 doses, com 2 meses de intervalos; Pentavalente (Difteria + Tétano + Pertussis + Hepatite B + Haemophilus tipo B), 3 doses, com 2 meses de intervalo, Meningococo C, 2 doses, com 60 dias de intervalos; Pneumococo-10, 3 doses, com 60 dias de intervalo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "BCG, dose única; VIP, 3 doses, com 2 meses de intervalo; Pentavalente, 3 doses, com 60 dias de intervalo; Meningococo-C 2, doses, com 60 dias de intervalo; Pneumococo-10, 2 doses, com 60 dias de intervalo; Covid-19, 2 doses, com 4 semanas de intervalo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Poliomielite Oral (VOP), 3 doses, com 2 meses de intervalo; Pentavalente, 3 doses, com 2 meses de intervalo; Meningococo-C, 2 doses, com 60 dias de intervalo; Pneumococo-10, 2 doses, com 60 dias de intervalo; Covid-19, 2 doses, com 4 semanas de intervalo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "BCG, dose única; Rotavírus, dose única; VIP, 3 doses; DTP (Difteria + Tétano + Pertussis), 3 doses, com 2 meses de intervalo; Meningococo-C, 2 doses, com 60 dias de intervalo; Pneumococo-10, 2 doses, com 60 dias de intervalo; Covid-19, 2 doses, com 4 semanas de intervalo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo do calendário vacinal em atraso, seguindo as normas do Programa Nacional de Imunizações (PNI) do Ministério da Saúde. Para resolver o caso de um lactente de 6 meses que nunca foi vacinado, devemos considerar as idades-limite para cada imunobiológico e a transição das vacinas inativadas para as orais.\n\nANÁLISE DAS ALTERNATIVAS:\n\nALTERNATIVA A: INCORRETA. O erro principal é a indicação da vacina contra o rotavírus (VORH). De acordo com o PNI, a primeira dose desta vacina deve ser administrada obrigatoriamente entre os 2 meses e, no máximo, até os 3 meses e 15 dias de vida. Como o paciente já tem 6 meses, ele ultrapassou o limite de idade para iniciar o esquema e não deve receber a vacina. Além disso, o esquema básico atual da Pneumocócica 10-valente é de 2 doses (aos 2 e 4 meses) com um reforço aos 12 meses, e não 3 doses no primeiro ano.\n\nALTERNATIVA B: CORRETA. Esta alternativa apresenta a conduta adequada para a atualização vacinal:\n- BCG: Pode ser aplicada em dose única em crianças de até 4 anos, 11 meses e 29 dias que ainda não foram vacinadas.\n- VIP (Poliomielite Inativada): O esquema básico de três doses deve ser realizado exclusivamente com a vacina inativada (VIP), com intervalo de 60 dias entre as doses.\n- Pentavalente: Necessária para proteger contra difteria, tétano, coqueluche, hepatite B e Haemophilus influenzae tipo b. São indicadas 3 doses com intervalo de 60 dias.\n- Meningocócica C: Para crianças que iniciam o esquema após os 5 meses, o protocolo de catch-up prevê 2 doses com intervalo de 60 dias (mais o reforço aos 12 meses).\n- Pneumocócica 10-valente: Para quem inicia aos 6 meses, aplicam-se 2 doses com intervalo de 60 dias (mais o reforço).\n- Covid-19: Desde 2024, a vacina contra a Covid-19 foi incluída no calendário de rotina para crianças de 6 meses a menores de 5 anos. O esquema inicial consiste em doses com intervalo de 4 semanas entre a primeira e a segunda.\n\nALTERNATIVA C: INCORRETA. O erro reside na indicação da VOP (Poliomielite Oral) para o esquema primário. O PNI determina que as três primeiras doses da vacina contra a pólio (esquema básico) devem ser obrigatoriamente feitas com a VIP (inativada/injetável). A vacina oral (VOP) é utilizada apenas para as doses de reforço e em campanhas de multivacinação.\n\nALTERNATIVA D: INCORRETA. Apresenta dois erros fundamentais: primeiro, inclui a vacina contra o rotavírus, que está contraindicada para o início em crianças de 6 meses devido ao limite de idade de 3 meses e 15 dias. Segundo, indica a vacina DTP (difteria, tétano e pertussis) em vez da Pentavalente. Como o lactente nunca recebeu nenhuma imunização, ele precisa obrigatoriamente dos componentes contra hepatite B e Hib, que estão presentes na formulação Pentavalente utilizada na rede pública para o esquema básico.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:25.412Z"
+  },
+  {
+    "id": "AJUDA_89452bcb-7333-4a3a-84a2-abd15722c629",
+    "originalId": "89452bcb-7333-4a3a-84a2-abd15722c629",
+    "statement": "A Alfa-1 Antitripsina (AAT) é uma proteína essencial que atua como um inibidor de proteases, protegendo os tecidos do corpo contra a ação destrutiva de enzimas como a elastase. Sobre a AAT, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A deficiência de AAT no organismo leva exclusivamente à destruição do parênquima hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A deficiência de AAT resulta em enfisema pulmonar devido à falta de inibição da elastase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A AAT é produzida apenas no fígado e não tem função nos pulmões.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A AAT é sempre suficiente para proteger os pulmões em pacientes com hepatopatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A alfa-1-antitripsina (AAT) é uma glicoproteína da família dos inibidores de serinoproteases (serpinas), produzida predominantemente pelos hepatócitos e secretada na circulação sistêmica. Sua função primordial é a proteção dos tecidos contra enzimas proteolíticas, com destaque para a elastase neutrofílica.\n\nAlternativa a: Incorreta. A deficiência de AAT não se restringe ao fígado. Na verdade, ela é uma doença multissistêmica. Enquanto o dano hepático ocorre pelo acúmulo intracelular de proteínas mal dobradas que não conseguem ser secretadas (ganho de função tóxica), o dano pulmonar ocorre pela ausência da proteína na circulação (perda de função protetora).\n\nAlternativa b: Correta. Esta alternativa descreve o mecanismo fisiopatológico clássico da doença no sistema respiratório. Sob condições normais, a AAT neutraliza a elastase liberada pelos neutrófilos. Na falta dessa inibição, a elastase degrada livremente a elastina e outros componentes da matriz extracelular dos alvéolos, levando à destruição do parênquima e ao desenvolvimento de enfisema pulmonar, tipicamente do tipo panacinar e com predomínio nas bases.\n\nAlternativa c: Incorreta. Embora o fígado seja o maior produtor, a AAT também pode ser sintetizada em menores quantidades por monócitos, macrófagos alveolares e células epiteliais intestinais. Além disso, sua principal função biológica conhecida e clinicamente relevante ocorre justamente nos pulmões, onde protege contra a autodigestão enzimática.\n\nAlternativa d: Incorreta. Pacientes que apresentam hepatopatia por deficiência de AAT geralmente possuem o fenótipo PiZZ, que cursa com níveis séricos da proteína extremamente baixos (cerca de 10% a 15% do normal). Portanto, esses pacientes estão em alto risco de desenvolver doença pulmonar grave, pois a quantidade de AAT circulante é insuficiente para proteger os pulmões contra o dano proteolítico.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:25.412Z"
+  },
+  {
+    "id": "AJUDA_894bdc7d-d420-403f-a34c-3fb10cfde29c",
+    "originalId": "894bdc7d-d420-403f-a34c-3fb10cfde29c",
+    "statement": "Um menino de 8 anos é levado à consulta por apresentar aumento testicular, odor axilar e crescimento acelerado há 6 meses. Ao exame físico, apresenta testículos simétricos, com volume de 6 mL, estadiamento P2. A velocidade de crescimento é de 10 cm/ano e a idade óssea corresponde a 10 anos. A dosagem de LH é de 9,1 UI/L e FSH de 3,2 UI/L. Não há queixas neurológicas, alterações cognitivas ou histórico familiar de puberdade precoce. Qual é a conduta mais apropriada nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar bloqueio com agonista de GnRH, pois na ausência de sinais neurológicos não há necessidade de exames de imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir a dosagem de LH e FSH após estímulo com GnRH para documentar a etiologia central da puberdade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar ressonância magnética de encéfalo, pois meninos com diagnóstico de PPC devem ser avaliados quanto a lesões centrais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar ultrassonograﬁa abdominal para afastar lesão adrenal, pois o quadro clínico sugere puberdade de origem periférica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um menino de 8 anos com sinais claros de puberdade precoce (início antes dos 9 anos no sexo masculino). O aumento do volume testicular (6 mL) é o marco inicial da puberdade masculina e indica que o eixo hipotálamo-hipófise-gonadal está ativado. A velocidade de crescimento aumentada e o avanço da idade óssea corroboram o diagnóstico clínico. Do ponto de vista laboratorial, um LH basal acima de 0,3 a 1,0 UI/L (neste caso, 9,1 UI/L) é diagnóstico de puberdade precoce central (PPC), sem necessidade de testes de estímulo adicionais.\n\nDiferentemente das meninas, nas quais a imensa maioria dos casos de PPC é idiopática, nos meninos a probabilidade de uma causa orgânica subjacente (lesões no sistema nervoso central) é muito elevada, variando de 40% a 75% dos casos. Portanto, a investigação etiológica com exames de imagem é obrigatória em todos os pacientes do sexo masculino.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o bloqueio com agonista de GnRH seja o tratamento de escolha para PPC, ele não deve ser iniciado sem antes realizar a investigação etiológica por imagem. A ausência de sintomas neurológicos não exclui a presença de tumores ou malformações do SNC (como hamartomas hipotalâmicos ou gliomas) que podem estar causando a puberdade.\n\nAlternativa b) Incorreta. O teste de estímulo com GnRH é indicado quando os níveis basais de LH são duvidosos ou pré-púberes em uma criança com clínica suspeita. No caso descrito, o LH basal de 9,1 UI/L já é francamente puberal e confirma a origem central da puberdade, tornando o teste de estímulo desnecessário.\n\nAlternativa c) Correta. Todo menino com diagnóstico de puberdade precoce central deve ser submetido a uma ressonância magnética (RM) de encéfalo/sela túrcica. O objetivo é descartar tumores do SNC, mesmo na ausência de queixas neurológicas, devido à alta incidência de causas orgânicas nesta população.\n\nAlternativa d) Incorreta. A ultrassonografia abdominal seria útil na suspeita de puberdade precoce periférica (independente de GnRH), como em tumores adrenais. No entanto, o quadro do paciente é claramente central: há aumento testicular simétrico (estimulado pelo LH/FSH) e o LH está elevado. Na puberdade periférica, os testículos geralmente permanecem com volume pré-púbere (menores que 4 mL) enquanto há sinais de virilização, ou apresentam aumento assimétrico em caso de tumor testicular localizado.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:25.412Z"
+  },
+  {
+    "id": "AJUDA_895624f6-39e3-4d51-beef-82c2f1295a26",
+    "originalId": "895624f6-39e3-4d51-beef-82c2f1295a26",
+    "statement": "Sobre o manejo do clampeamento do cordão umbilical ao nascimento, de acordo com as diretrizes atuais do Programa Brasileiro de Reanimação Neonatal da SBP, analise os cinco cenários clínicos a seguir e assinale a alternativa que apresenta a conduta correta para a situação clínica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "RN de 39 semanas, nascido de parto vaginal eutócico, chorando ao nascer, com tônus muscular em flexão e boa vitalidade. Líquido amniótico claro – clampeamento em, no mínimo, 30 segundos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "RN de 32 semanas, nascido de parto vaginal, chorando ao nascer, com tônus em flexão e boa vitalidade – clampeamento em, no mínimo, 60 segundos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "RN de 38 semanas, nascido de parto vaginal. Ao nascer, não chora, não respira e apresenta tônus flácido. A equipe realiza estímulo tátil delicado no dorso por cerca de 15 segundos e o RN passa a respirar e chorar, recuperando o tônus em flexão – clampeamento imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "RN de 40 semanas, nascido de parto vaginal. Ao nascer, apresenta circular de cordão apertada, chorando ao nascer e com tônus em flexão – clampeamento em, no mínimo, 30 segundos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "RN de 37 semanas, nascido de parto vaginal. Ao nascer, não chora, não respira e apresenta tônus flácido. A equipe realiza estímulo tátil delicado no dorso por cerca de 15 segundos, mas o RN permanece em apneia, com tônus flácido – clampeamento em, no mínimo, 30 segundos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Conduta correta: alternativa (b). Segundo as diretrizes do PRN-SBP (2022 em diante), o clampeamento do cordão depende da vitalidade ao nascer e da idade gestacional.\n\nRegras gerais:\n- RN com idade gestacional ≥ 34 semanas, respirando ou chorando e com tônus em flexão: clampeamento tardio, entre 1 e 3 minutos, ou seja, no mínimo 60 segundos.\n- RN com idade gestacional < 34 semanas, com boa vitalidade: também clampeamento tardio, de 30 a 60 segundos, desde que a vitalidade esteja boa. Na edição mais recente, o tempo mínimo é 30 segundos para prematuros.\n- RN sem boa vitalidade (apneia, tônus flácido) que não melhora após os passos iniciais: clampeamento imediato, para que as manobras de reanimação sejam iniciadas sem atraso.\n- A circular de cordão apertada, que impede a progressão do parto ou a manutenção da circulação, leva a clampeamento imediato.\n\nObservação: a questão tem gabarito (b), compatível com a recomendação de manter a circulação placentária em prematuro com boa vitalidade por pelo menos 60 segundos. A (b) é a única que descreve o cenário e o tempo coerentes com a diretriz.\n\nAnálise das alternativas:\n\na) Incorreta. O RN a termo com boa vitalidade deve ter clampeamento tardio, de 1 a 3 minutos (mínimo de 60 segundos). Indicar apenas 30 segundos subestima o tempo preconizado.\n\nb) Correta. O prematuro de 32 semanas que chora e tem tônus em flexão tem boa vitalidade. Nesse caso, o clampeamento tardio traz benefícios: menor frequência de hemorragia intraventricular, menor necessidade de transfusão e melhor estabilidade hemodinâmica. O tempo mínimo de 60 segundos é o adotado pelo gabarito.\n\nc) Incorreta. O RN a termo que estava flácido e apneico, mas respondeu ao estímulo tátil e passou a respirar, chorar e ter tônus em flexão, recupera a boa vitalidade com os passos iniciais. Pode-se então fazer o clampeamento tardio. O clampeamento imediato não é necessário.\n\nd) Incorreta. A circular de cordão apertada pode impedir a continuidade da circulação placentária e dificultar o desprendimento. Nessa situação, o clampeamento é imediato, com secção do cordão, e não aos 30 segundos. Além disso, o tempo mínimo para o RN a termo com boa vitalidade seria 60 segundos.\n\ne) Incorreta. O RN que permanece em apneia e flácido após os passos iniciais não tem boa vitalidade. Ele precisa de ventilação com pressão positiva em até 60 segundos de vida (o \"minuto de ouro\"), logo o clampeamento deve ser imediato para levá-lo à mesa de reanimação. Aguardar 30 segundos atrasaria a ventilação.\n\nResumo: boa vitalidade leva a clampeamento tardio, e ausência de respiração ou tônus flácido persistente leva a clampeamento imediato e reanimação. Pelo gabarito, a alternativa correta é a (b).",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:25.412Z"
+  },
+  {
+    "id": "AJUDA_8956fa2f-6dfb-466f-9841-c8ea082d374b",
+    "originalId": "8956fa2f-6dfb-466f-9841-c8ea082d374b",
+    "statement": "Recém-nascido com 18 dias de vida, em aleitamento materno exclusivo, evolui há 2 semanas com quadro de vômito, perda de peso, icterícia e colúria. Ao exame físico: peso - 2.700kg, comprimento - 50cm, icterícia 3+/4+, fígado palpável a 3 cm do RCD. A pesquisa urinaria de substâncias redutoras foi positiva. O diagnóstico em questão é GALACTOSEMIA, qual o tratamento a ser proposto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dieta isenta de lactose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Dieta cetogênica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Piloromiotomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ganciclovir.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE CLÍNICA DO CASO\nO quadro clínico descreve um recém-nascido com 18 dias de vida apresentando sintomas clássicos de um erro inato do metabolismo: vômitos, perda de peso, hepatomegalia e icterícia (com colúria, sugerindo aumento de bilirrubina direta). O dado laboratorial patognomônico citado é a presença de substâncias redutoras na urina com glicemia normal (ou pesquisa de glicose negativa na urina), o que aponta para a excreção de galactose.\n\nA galactosemia clássica ocorre geralmente pela deficiência da enzima galactose-1-fosfato uridiltransferase (GALT). Como a principal fonte de galactose na dieta do lactente é o leite (materno ou fórmulas infantis), que contém lactose (dissacarídeo composto por glicose + galactose), a interrupção imediata dessa exposição é o pilar do tratamento.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: O tratamento da galactosemia baseia-se na exclusão total e permanente de galactose e lactose da dieta. Como a lactose é quebrada em glicose e galactose no trato digestivo, o paciente não pode consumir leite humano ou de origem animal. Devem ser utilizadas fórmulas infantis à base de soja ou fórmulas de aminoácidos/hidrolisados isentas de lactose. O diagnóstico precoce e a intervenção dietética rápida são cruciais para evitar falência hepática, sepse por E. coli e catarata.\n\nAlternativa (b) INCORRETA: A dieta cetogênica é rica em gorduras e pobre em carboidratos, sendo indicada principalmente para casos de epilepsia refratária ou deficiências específicas como a do transportador de glicose cerebral (GLUT1) e a da piruvato-desidrogenase. Não possui indicação no manejo da galactosemia.\n\nAlternativa (c) INCORRETA: A piloromiotomia é o tratamento cirúrgico para a estenose hipertrófica do piloro. Embora a estenose de piloro cause vômitos em lactentes jovens, ela geralmente se manifesta com vômitos não biliosos em jato e alcalose metabólica hipoclorêmica, não apresentando icterícia colestática ou substâncias redutoras na urina.\n\nAlternativa (d) INCORRETA: O ganciclovir é um antiviral utilizado no tratamento de infecções pelo citomegalovírus (CMV). Embora o CMV congênito possa causar icterícia e hepatomegalia, ele não justifica a presença de substâncias redutoras na urina nem os vômitos relacionados à alimentação logo após o nascimento, além de o enunciado já confirmar o diagnóstico de galactosemia.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:25.412Z"
+  },
+  {
+    "id": "AJUDA_895e311a-b5fc-45b4-a46b-86d5c1ec9e85",
+    "originalId": "895e311a-b5fc-45b4-a46b-86d5c1ec9e85",
+    "statement": "Homem de 30 anos, previamente hígido, farmacêutico, é atendido em ambulatório devido a queixa de tosse seca de mais de 6 meses de evolução. Buscou atendimento pois vem tendo episódios de febre durante a noite, acompanhados de sudorese profusa, que cessam ao uso de dipirona. Durante anamnese, nega escarro produtivo, hemoptise, dor torácica ou dispneia, mas refere perda de peso discreta no período. No exame físico, evidencia-se adenomegalia de cerca de 2 centímetros em cadeia cervical anterior esquerda, pouco endurecida, aderida a planos profundos, sem sinais flogísticos, além de abaulamento discreto em fossa supraclavicular ipsilateral. Ausculta pulmonar com murmúrio vesicular reduzido, percussão com submacicez e frêmito toracovocal aumentado em ápice esquerdo, além de sibilos discretos em hemitórax esquerdo. Realizou a radiografia abaixo.\n\nCom base no caso acima, a hipótese diagnóstica mais provável para o paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "linfoma de Hodgkin.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "pneumocriptococose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "asma não controlada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tuberculose disseminada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "adenocarcinoma de pulmão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO paciente é um homem jovem (30 anos) com um quadro clínico clássico de sintomas constitucionais, também conhecidos como sintomas B: febre vespertina/noturna, sudorese profusa e perda ponderal. A queixa de tosse seca persistente há mais de 6 meses, associada ao achado físico de sibilos localizados e alterações na ausculta/percussão no ápice esquerdo, sugere um processo expansivo intratorácico comprimindo as vias aéreas. A presença de linfonodo endurecido em cadeia cervical e abaulamento supraclavicular reforça a hipótese de uma neoplasia de origem linfonodal ou metastática.\n\nA radiografia de tórax apresentada mostra um alargamento importante do mediastino superior, com uma massa volumosa projetada principalmente para o lado esquerdo, o que justifica tanto o abaulamento supraclavicular quanto os sinais de compressão brônquica (sibilos e alteração do murmúrio).\n\nAnálise das Alternativas:\n\na) CORRETA. O linfoma de Hodgkin tem um pico de incidência em adultos jovens (20 a 30 anos). É a causa mais comum de massas mediastinais volumosas nessa faixa etária, frequentemente cursando com sintomas B e linfadenopatia cervical ou supraclavicular indolor e endurecida. A massa mediastinal pode comprimir estruturas adjacentes, causando tosse seca e sibilos localizados, exatamente como descrito no caso.\n\nb) INCORRETA. A criptococose pulmonar é uma infecção fúngica que geralmente ocorre em pacientes imunocomprometidos. Embora possa causar febre e tosse, a imagem radiológica típica costuma apresentar nódulos pulmonares ou infiltrados, e não um alargamento mediastinal maciço e isolado como o observado. Além disso, o histórico de higidez e a duração dos sintomas tornam o linfoma muito mais provável.\n\nc) INCORRETA. A asma não justifica a presença de linfadenopatia cervical endurecida e aderida, febre, sudorese noturna ou perda de peso. Além disso, a radiografia na asma costuma ser normal ou apresentar sinais de hiperinsuflação, nunca uma massa mediastinal.\n\nd) INCORRETA. A tuberculose pode causar febre, sudorese e linfadenopatia (escrófula). No entanto, a forma \"disseminada\" (miliar) apresentaria um padrão de micronódulos difusos em ambos os pulmões no RX. Embora a tuberculose ganglionar possa causar aumento de linfonodos mediastinais, a magnitude da massa observada na imagem e a apresentação clínica em um jovem hígido, sem contato epidemiológico citado, direcionam o diagnóstico prioritariamente para o linfoma.\n\ne) INCORRETA. O adenocarcinoma de pulmão é o tipo mais comum de câncer de pulmão em não fumantes, mas é raro aos 30 anos de idade. Além disso, ele costuma se apresentar como uma massa periférica no parênquima pulmonar. O quadro de linfadenopatia cervical associado a uma grande massa mediastinal em um paciente jovem é muito mais característico de uma neoplasia hematológica (linfoma) do que de um carcinoma sólido pulmonar.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/11f7573dd9f7c895b5f613a9f365d3c4433617eb4553aa1360a02c3b0f15ff5b.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_895e311a-b5fc-45b4-a46b-86d5c1ec9e85_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:25.878Z"
+  },
+  {
+    "id": "AJUDA_8966b5c8-723c-4dbc-8374-3dc38f052e7d",
+    "originalId": "8966b5c8-723c-4dbc-8374-3dc38f052e7d",
+    "statement": "Você irá iniciar um programa de cirurgia minimamente invasiva em um novo hospital. O diretor pede que você avalie avalie todas as novas técnicas e equipamentos minimamente invasivos, especificamente no que diz respeito à segurança do paciente, para que o hospital possa adquirir os equipamentos mais apropriados.\n\nEm relação ao uso seguro de dispositivos de energia em cirurgia laparoscópica, como instrumentos monopolares, qual das seguintes opções é a mais correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lesão térmica não pode ocorrer por outro instrumento se o instrumento eletricamente ativo não estiver em contato com ele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Falhas no isolamento de um instrumento ativo podem descarregar energia para estruturas ou tecidos circundantes, levando a lesões térmicas inadvertidas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O uso de dispositivos monopolares no modo de coagulação cria menos dispersão lateral de energia do que no modo de corte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Se o eletrodo ativo de um instrumento robótico for inserido através de um trocarte não metálico, este pode atuar como um capacitor, causando lesões potenciais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A (Incorreta): Lesões térmicas podem ocorrer mesmo sem contato físico direto entre o instrumento ativo e outro condutor. Isso pode acontecer devido ao fenômeno de acoplamento capacitivo, no qual uma corrente elétrica é induzida através de um isolamento intacto para outro instrumento ou estrutura condutora próxima, transferindo energia inadvertidamente.\n\nAlternativa B (Correta): As falhas no isolamento (insulation failure) representam um dos maiores riscos de segurança com instrumentos monopolares em laparoscopia. Pequenas microfissuras na bainha isolante concentram a corrente elétrica em uma área de superfície muito pequena (alta densidade de corrente), resultando em descargas e queimaduras graves em tecidos adjacentes (como alças intestinais), frequentemente fora do campo de visão do cirurgião.\n\nAlternativa C (Incorreta): O modo de coagulação utiliza ondas elétricas intermitentes de alta voltagem, o que gera temperaturas teciduais mais altas e maior dispersão térmica lateral em comparação com o modo de corte, que opera com corrente contínua e baixa voltagem, gerando vaporização tecidual rápida e menor propagação térmica lateral.\n\nAlternativa D (Incorreta): Trocartes puramente plásticos (não metálicos) não atuam como condutores capacitivos. O risco clássico de lesão associado a trocartes ocorre em trocartes híbridos (combinação de metal e plástico), nos quais o metal acumula carga capacitiva e o plástico impede que essa energia seja dissipada com segurança na parede abdominal, facilitando a descarga elétrica não intencional em órgãos intra-abdominais adjacentes.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:25.878Z"
+  },
+  {
+    "id": "AJUDA_896856f1-6848-41f0-b9a4-dad439f82c74",
+    "originalId": "896856f1-6848-41f0-b9a4-dad439f82c74",
+    "statement": "Na triagem inicial do paciente politraumatizado pediátrico, a lesão de menor mortalidade, considerando as apresentadas abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trauma cervical com ruptura de laringe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumotórax aberto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Concussão cerebral, levando à crise convulsiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hipotensão por ruptura gástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A avaliação do paciente politraumatizado pediátrico segue a priorização mnemônica do ABCDE do trauma (ATLS), na qual condições com risco iminente de morte nas vias aéreas (A), respiração (B) e circulação (C) têm prioridade de identificação e manejo imediato devido à sua alta letalidade.\n\nAlternativa A - Incorreta. A ruptura de laringe compromete diretamente a via aérea (etapa A). Na faixa etária pediátrica, as vias aéreas são anatomicamente estreitas e vulneráveis à obstrução rápida por edema, hematoma ou colapso estrutural, conferindo risco iminente de asfixia e morte se não houver intervenção imediata.\n\nAlternativa B - Incorreta. O pneumotórax aberto compromete a respiração e a ventilação (etapa B). Essa lesão altera gravemente a dinâmica da caixa torácica, provoca colapso pulmonar, desvio mediastinal e hipóxia severa, podendo evoluir para pneumotórax hipertensivo, sendo classificada como uma lesão com risco de morte iminente.\n\nAlternativa C - Correta. A concussão cerebral é uma lesão encefálica funcional e transitória, sem dano estrutural macroscópico, caracterizando um trauma cranioencefálico leve (etapa D). A ocorrência de crise convulsiva precoce após o impacto é um fenômeno conhecido que demanda suporte clínico, mas a lesão de base possui excelente prognóstico e a menor taxa de mortalidade entre as alternativas apresentadas.\n\nAlternativa D - Incorreta. A hipotensão em pediatria é um sinal tardio e crítico de choque descompensado (etapa C), pois a criança mantém a pressão arterial normal até perder de 30% a 45% da volemia. Quando a hipotensão se manifesta, o risco de parada cardiorrespiratória é altíssimo. Além disso, a ruptura gástrica adiciona o risco de peritonite química e choque séptico.\n\nPortanto, a alternativa C é a correta.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Trauma",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:25.878Z"
+  },
+  {
+    "id": "AJUDA_896a06a6-362a-45b4-bc71-4a848b5a0b80",
+    "originalId": "896a06a6-362a-45b4-bc71-4a848b5a0b80",
+    "statement": "Você é médico e pretende atuar em uma Unidade de Estratégia de Saúde da Família (ESF), em uma área rural, que abrange populações do campo, da floresta e das águas. Essas populações enfrentam diversas vulnerabilidades e desafios em relação à saúde, muitas vezes associadas às suas condições de vida e trabalho. A Política Nacional de Saúde Integral das Populações do Campo, da Floresta e das Águas (PNSIPCFa) visa a melhorar o acesso aos serviços de saúde e reduzir os riscos de adoecimento dessas populações. Considerando seu futuro trabalho em uma ESF rural, com base nas vulnerabilidades comuns dessas populações, assinale a alternativa CORRETA sobre os principais fatores de risco para a saúde dessas comunidades:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Embora o uso indiscriminado de agrotóxicos seja frequente, ele não está diretamente relacionado ao aumento das intoxicações exógenas, que têm como principal causa a contaminação de alimentos e água, sendo o câncer de pele o único agravo de destaque devido à exposição solar;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A alta exposição ao sol e o uso inadequado de agrotóxicos, sem os devidos Equipamentos de Proteção Individual (EPI), são fatores que contribuem para o aumento da incidência de câncer de pele e de intoxicações exógenas, enquanto os acidentes com animais peçonhentos e as doenças osteomusculares também são frequentes nas atividades laborais dessas populações;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "As doenças crônicas não transmissíveis (DCNT), como hipertensão e diabetes, são raras nessas populações devido ao estilo de vida fisicamente ativo e às dietas predominantemente naturais, sendo as intoxicações por agrotóxicos e os acidentes de trabalho os principais agravos de saúde;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os fatores de risco mais prevalentes entre essas populações incluem a exposição ao sol, o uso de agrotóxicos e a falta de acesso a serviços de saúde; já as doenças ocupacionais relacionadas ao trabalho, como as osteomusculares, são de menor relevância se comparadas aos agravos provocados por inovações tecnológicas agrícolas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a saúde das populações do campo, da floresta e das águas, pautada pela Política Nacional de Saúde Integral dessas populações (PNSIPCFA). Para responder corretamente, o candidato deve conhecer o perfil epidemiológico e os riscos ocupacionais e ambientais específicos desses territórios.\n\nAlternativa a) Incorreta. O uso de agrotóxicos é uma das principais causas de intoxicações exógenas agudas e crônicas nessas regiões, ocorrendo tanto por ingestão de água e alimentos contaminados quanto pela exposição direta durante o manuseio e a aplicação. Além disso, o câncer de pele não é o único agravo de destaque; a exposição solar intensa também contribui para desidratação, insolação e afecções oculares (como o pterígio).\n\nAlternativa b) Correta. Esta alternativa descreve com precisão a realidade dessas populações. A exposição prolongada à radiação ultravioleta sem proteção adequada eleva o risco de neoplasias cutâneas. O manuseio de defensivos agrícolas sem Equipamentos de Proteção Individual (EPIs) é o principal fator de risco para intoxicações. Somado a isso, as atividades laborais em matas e áreas agrícolas predispõem a acidentes com animais peçonhentos (como serpentes e escorpiões) e a doenças osteomusculares devido ao esforço físico intenso, posturas inadequadas e carregamento de peso.\n\nAlternativa c) Incorreta. Embora o estilo de vida possa ser fisicamente ativo, as Doenças Crônicas Não Transmissíveis (DCNT), como hipertensão arterial e diabetes, não são raras. Essas populações atravessam processos de transição nutricional e envelhecimento, e o acesso limitado a serviços de saúde e medicamentos muitas vezes agrava o controle dessas patologias. Afirmar que tais doenças são raras é um erro epidemiológico.\n\nAlternativa d) Incorreta. As doenças ocupacionais relacionadas ao trabalho, especialmente as osteomusculares (como lombalgias e tendinites), são extremamente relevantes e representam uma das principais causas de morbidade e afastamento do trabalho no campo. Elas não podem ser consideradas de menor relevância; pelo contrário, são problemas estruturais da saúde do trabalhador rural, independentemente do nível de inovação tecnológica aplicada na produção.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:25.878Z"
+  },
+  {
+    "id": "AJUDA_896d82e9-66aa-40e4-bca5-41a81bfeae3f",
+    "originalId": "896d82e9-66aa-40e4-bca5-41a81bfeae3f",
+    "statement": "As vasculites podem ser caracterizadas conforme o calibre do vaso acometido. De acordo com o Consenso de Chapel Hill (2012), um exemplo de vasculite de grande vaso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "granulomatose de Wegener.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "púrpura de Henoch-Schönlein.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "poliarterite nodosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "arterite de Takayasu.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A classificação das vasculites sistematizada pelo Consenso de Chapel Hill (2012) é fundamental para a prática clínica, pois organiza essas patologias de acordo com o calibre predominante dos vasos inflamados: grandes, médios ou pequenos vasos.\n\nDe acordo com esse consenso, as vasculites de grandes vasos são aquelas que acometem a aorta e seus ramos principais de forma predominante. Os dois exemplos principais dessa categoria são a Arterite de Takayasu e a Arterite de Células Gigantes. Portanto, a alternativa (d) está correta.\n\nAnálise das alternativas:\n\nAlternativa (a) INCORRETA: A granulomatose de Wegener (atualmente denominada Granulomatose com Poliangiite - GPA) é classificada como uma vasculite de pequenos vasos. Ela faz parte do grupo das vasculites associadas ao ANCA (especificamente o c-ANCA/anti-PR3) e caracteriza-se pelo envolvimento de vias aéreas superiores, pulmões e rins (glomerulonefrite).\n\nAlternativa (b) INCORRETA: A púrpura de Henoch-Schönlein (atualmente denominada Vasculite por IgA) é uma vasculite de pequenos vasos mediada por depósitos de imunocomplexos de IgA. É muito comum na pediatria e manifesta-se tipicamente com púrpura palpável em membros inferiores, dor abdominal, artrite e comprometimento renal.\n\nAlternativa (c) INCORRETA: A poliarterite nodosa (PAN) é o exemplo clássico de vasculite de médios vasos. Ela acomete artérias de médio calibre e não costuma envolver vasos menores como capilares, vênulas ou arteríolas, o que a distingue das vasculites de pequenos vasos. Frequentemente poupa o pulmão e pode estar associada à infecção pelo vírus da Hepatite B.\n\nAlternativa (d) CORRETA: A arterite de Takayasu é uma vasculite de grandes vasos que atinge primordialmente a aorta e seus ramos principais (como as artérias subclávia, carótida e renais). É mais prevalente em mulheres jovens, abaixo dos 50 anos, e pode levar à claudicação de membros, ausência de pulsos e sopros arteriais.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Vasculites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:12:25.878Z"
+  }
+]

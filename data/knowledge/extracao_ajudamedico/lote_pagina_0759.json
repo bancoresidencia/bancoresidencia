@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_d3bbb5ba-5c97-4d01-9b98-20e541842ffd",
+    "originalId": "d3bbb5ba-5c97-4d01-9b98-20e541842ffd",
+    "statement": "Em um estudo caso-controle para investigar fatores associados ao diagnóstico de câncer de esôfago, os casos foram identificados em um hospital de referência oncológica e os controles foram selecionados na comunidade. Qual é o principal viés que pode ocorrer nesse estudo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inclusão de controles com doença subclínica, reduzindo a diferença real entre casos e controles.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Exclusão de indivíduos expostos, levando a um viés de aferição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Seleção de casos com formas menos graves da doença, gerando viés de informação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Escolha de controles com maior risco de exposição, levando a viés de confusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO:\nEm estudos de caso-controle, a validade dos resultados depende diretamente da escolha adequada do grupo-controle. Os controles devem representar a base populacional de onde os casos surgiram, permitindo estimar a frequência de exposição ao fator de risco em indivíduos sem a doença. Quando os casos são recrutados em um hospital de referência (casos já estabelecidos e frequentemente graves) e os controles são retirados da comunidade, há um risco inerente de erros sistemáticos na comparabilidade dos grupos.\n\nALTERNATIVA A (CORRETA):\nO câncer de esôfago é uma patologia que pode ter uma fase subclínica (assintomática ou com sintomas leves) relativamente longa. Ao selecionar pessoas na comunidade para compor o grupo-controle apenas com base na ausência de um diagnóstico prévio, o pesquisador corre o risco de incluir indivíduos que já possuem a neoplasia, mas ainda não foram diagnosticados. Se o grupo-controle contiver pessoas doentes (casos \"mascarados\"), a diferença de exposição entre os dois grupos diminuirá artificialmente, subestimando a associação entre o fator de risco e a doença. Isso é um erro de classificação que compromete a sensibilidade do estudo.\n\nALTERNATIVA B (INCORRETA):\nO viés de aferição ou mensuração ocorre quando a forma de coletar os dados é diferente entre os grupos (por exemplo, entrevistar os casos pessoalmente e mandar um questionário por correio para os controles). A exclusão de indivíduos expostos durante a seleção configuraria um viés de seleção, mas a questão descreve uma metodologia de recrutamento que aponta mais diretamente para o risco de doença não detectada nos controles do que para a exclusão deliberada de expostos.\n\nALTERNATIVA C (INCORRETA):\nGeralmente, ocorre o oposto: hospitais de referência oncológica costumam concentrar casos mais graves, avançados ou complexos, o que pode gerar o Viés de Berkson (uma forma de viés de seleção). Além disso, o erro na escolha dos casos é um viés de seleção, enquanto o viés de informação refere-se a falhas na coleta de dados sobre a exposição (como o viés de memória, onde o doente lembra mais detalhadamente de hábitos passados do que o saudável).\n\nALTERNATIVA D (INCORRETA):\nO viés de confusão acontece quando uma terceira variável está associada tanto ao fator de risco quanto ao desfecho, distorcendo o resultado. Não se pode afirmar que controles da comunidade tenham, por definição, maior risco de exposição. Na verdade, controles comunitários são frequentemente preferíveis aos hospitalares para evitar que outras doenças (que levaram o controle ao hospital) também estejam associadas ao fator de risco em estudo. O problema central da questão reside na dificuldade de garantir que o controle comunitário esteja realmente livre da doença específica (câncer de esôfago).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:19.899Z"
+  },
+  {
+    "id": "AJUDA_d3c5e6ff-aede-4141-a0f4-931cc61b6afb",
+    "originalId": "d3c5e6ff-aede-4141-a0f4-931cc61b6afb",
+    "statement": "Menino de 6 anos de idade é trazido ao PS após colidir sua bicicleta contra automóvel. Foi encontrado caído sem capacete, inconsciente e com sangramento nasal. Exame físico: via aérea pérvia e coluna cervical imobilizada com colar cervical rígido; ausculta pulmonar com MV presente bilateralmente, com roncos difusos; FR: 30 irpm, tiragem subdiafragmática discreta, SatO2 95% com máscara não reinalante; FC: 140 bpm; PA: 120 × 70 mmHg; pulsos presentes, cheios e simétricos; TEC < 3 segundos; abdômen normal; pelve estável; FAST negativo; escala de coma de Glasgow 7 (abertura ocular 2, resposta verbal 2 e resposta motora 3); pupilas isocóricas e fotorreagentes; HGT: 110 mg/dl. O paciente foi transportado em maca rígida, com escoriações na face e no tórax. Com base na avaliação primária do ATLS pediátrico, a conduta imediata é",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar infusão de cristaloide isotônico em bolus de 20 mL/kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar IOT em sequência rápida, com estabilização manual da coluna cervical.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "solicitar radiografia de crânio e tomografia de face.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "iniciar ventilação com bolsa-válvula-máscara com oxigênio a 15 L/min.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A análise da questão deve seguir a sistematização do ATLS (Advanced Trauma Life Support), que prioriza o tratamento das condições que representam risco imediato à vida, seguindo a sequência ABCDE.\n\nO paciente apresenta uma Escala de Coma de Glasgow (ECG) de 7 pontos (abertura ocular 2 + resposta verbal 2 + resposta motora 3). De acordo com os protocolos de trauma pediátrico e adulto, qualquer paciente com ECG menor ou igual a 8 tem indicação formal de estabelecimento de uma via aérea definitiva (intubação orotraqueal). Isso ocorre porque, com esse nível de consciência, o paciente perde a capacidade de proteger a via aérea contra aspiração de secreções ou sangue (como o sangramento nasal relatado) e pode evoluir com hipóxia central ou obstrução.\n\nAlternativa (a) Incorreta: O paciente apresenta taquicardia (140 bpm), que pode ser sinal precoce de choque, dor ou estresse. No entanto, a pressão arterial está normal para a idade (120 x 70 mmHg), o enchimento capilar é rápido (menor que 3 segundos) e os pulsos estão cheios. Não há sinais de choque descompensado que justifiquem a expansão volêmica imediata como prioridade antes de garantir a via aérea, especialmente diante de um Glasgow tão baixo.\n\nAlternativa (b) Correta: Esta é a conduta imediata. O paciente possui indicação de via aérea definitiva por rebaixamento do nível de consciência (Glasgow 7). A técnica de escolha é a Intubação Orotraqueal em Sequência Rápida (IOTSR), que utiliza sedação e bloqueio neuromuscular para facilitar o procedimento e reduzir o aumento da pressão intracraniana. A estabilização manual da coluna cervical é obrigatória durante a manobra, retirando-se a parte frontal do colar cervical para permitir a visualização da glote sem movimentar o pescoço.\n\nAlternativa (c) Incorreta: Exames de imagem fazem parte da avaliação secundária ou de exames complementares após a estabilização do paciente. Levar um paciente com Glasgow 7 para a sala de tomografia ou realizar radiografias antes de garantir a via aérea é um erro grave de conduta, pois o paciente pode aspirar ou parar de respirar durante o exame.\n\nAlternativa (d) Incorreta: A ventilação com bolsa-válvula-máscara (BVM) é uma medida temporária de suporte respiratório utilizada quando o paciente não consegue manter oxigenação ou ventilação adequadas por conta própria. Embora possa ser usada para pré-oxigenar o paciente antes da intubação, a conduta definitiva e prioritária para um Glasgow de 7 é a intubação orotraqueal, e não apenas o suporte com máscara, que não protege a via aérea contra aspiração.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Emergências Pediátricas",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:19.899Z"
+  },
+  {
+    "id": "AJUDA_d3cc8271-502d-4138-bc54-8bd2b65ecd43",
+    "originalId": "d3cc8271-502d-4138-bc54-8bd2b65ecd43",
+    "statement": "A melanose pustulosa transitória neonatal é uma dermatose benigna que acomete 1 a 4% dos recém-nascidos.\nSobre a doença em questão, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "são lesões vesicopustulosas que acometem apenas o tronco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "as lesões vesicopustulosas estão presentes desde o nascimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "na evolução, as lesões não se rompem, mantendo aspecto de vesículas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "é mais observada em crianças com fototipos I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "as lesões não acometem palmas e plantas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Melanose Pustulosa Transitória Neonatal (MPTN) é uma condição dermatológica benigna, de etiologia desconhecida, que se manifesta tipicamente no período neonatal imediato. Para compreender a questão, é necessário revisar as características clínicas e epidemiológicas que a diferenciam de outras dermatoses comuns do recém-nascido, como o eritema tóxico neonatal.\n\nAlternativa (a) Incorreta: As lesões da MPTN não são exclusivas do tronco. Elas podem ser encontradas em qualquer parte do corpo, incluindo face, pescoço, extremidades e, significativamente, em palmas e plantas.\n\nAlternativa (b) Correta: Esta é a característica fundamental para o diagnóstico diferencial em provas. Ao contrário do eritema tóxico neonatal, que geralmente surge entre o segundo e o terceiro dia de vida, as pústulas da MPTN estão presentes desde o nascimento. O quadro clínico evolui em três estágios: pústulas superficiais e frágeis, seguidas por um colarete de descamação e, finalmente, máculas hiperpigmentadas (a \"melanose\").\n\nAlternativa (c) Incorreta: As lesões são extremamente efêmeras e frágeis. Elas se rompem muito facilmente, geralmente em 24 a 48 horas após o nascimento, evoluindo para a fase de descamação e hiperpigmentação residual que pode durar semanas ou meses.\n\nAlternativa (d) Incorreta: A MPTN é significativamente mais comum em recém-nascidos de pele negra (fototipo VI), ocorrendo em cerca de 4% a 5% desses bebês, enquanto em recém-nascidos de pele clara (fototipos baixos), a incidência é de aproximadamente 0,6% a 1%.\n\nAlternativa (e) Incorreta: Diferentemente de outras erupções neonatais, a MPTN pode, sim, acometer as regiões palmoplantares. Esse detalhe clínico é importante para descartar diagnósticos diferenciais que poupam essas áreas.\n\nResumo do quadro: A Melanose Pustulosa Transitória Neonatal apresenta pústulas estéreis (sem infecção), neutrofílicas (ao citodiagnóstico de Tzanck), presentes ao nascimento, mais frequentes em negros e que evoluem para manchas escuras que desaparecem espontaneamente sem necessidade de tratamento.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Outros Distúrbios do Período Neonatal"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:19.899Z"
+  },
+  {
+    "id": "AJUDA_d3cfff38-9f4c-470b-8363-2ea53a6e0c78",
+    "originalId": "d3cfff38-9f4c-470b-8363-2ea53a6e0c78",
+    "statement": "Na classificação da American Society of Anesthesiology (ASA) de avaliação do estado clínico para risco cirúrgico, o paciente que apresenta doença sistêmica grave que resulta em debilidade funcional não incapacitante corresponde ao tipo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "III",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "V",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação da American Society of Anesthesiologists (ASA) é uma ferramenta fundamental na avaliação pré-anestésica, utilizada para estratificar o estado físico do paciente e o risco de mortalidade perioperatória.\n\nAlternativa a) Incorreta. O ASA I define um paciente saudável, sem doenças sistêmicas, não fumante e que faz uso mínimo ou nenhum de álcool. Não há limitações funcionais ou debilidades.\n\nAlternativa b) Incorreta. O ASA II refere-se a um paciente com doença sistêmica leve, sem limitações funcionais substanciais. Exemplos comuns incluem hipertensão arterial controlada, diabetes mellitus controlado, tabagismo sem DPOC, obesidade leve (IMC entre 30 e 40) ou gravidez.\n\nAlternativa c) Correta. O ASA III é definido como um paciente com doença sistêmica grave que resulta em limitação funcional substantiva (ou debilidade funcional). O termo \"não incapacitante\" é utilizado para diferenciá-lo do nível seguinte, indicando que, embora a doença seja grave e limite as atividades do paciente, ela não representa uma ameaça constante à vida no momento imediato. Exemplos incluem diabetes ou hipertensão mal controlados, DPOC, obesidade mórbida (IMC acima de 40), hepatite ativa ou presença de marca-passo cardíaco.\n\nAlternativa d) Incorreta. O ASA IV caracteriza um paciente com doença sistêmica grave que constitui uma ameaça constante à vida. Nesse estágio, a debilidade é incapacitante. Exemplos são o infarto agudo do miocárdio recente (menos de 3 meses), acidente vascular cerebral recente, disfunção valvar grave ou sepse.\n\nAlternativa e) Incorreta. O ASA V descreve um paciente moribundo, cuja expectativa de vida é menor que 24 horas e que não se espera que sobreviva sem a realização da cirurgia. Exemplos clássicos são a ruptura de aneurisma de aorta abdominal ou trauma maciço com choque refratário.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:19.899Z"
+  },
+  {
+    "id": "AJUDA_d3db3c92-f1b9-45a1-9c04-97620d455ce8",
+    "originalId": "d3db3c92-f1b9-45a1-9c04-97620d455ce8",
+    "statement": "Você é responsável pela organização de uma pesquisa sobre obesidade infantil. O objetivo é buscar pacientes do sexo masculino, de 0 a 15 anos de idade, com diagnóstico de obesidade, conforme padronização da Organização Mundial de Saúde (OMS) apresentadas nas tabelas a seguir, a fim de conhecer os hábitos alimentares destas crianças.\n\nConsiderando as referências da OMS e o objetivo da pesquisa, assinale a alternativa que apresenta o paciente mais adequado para o estudo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 ano e 10 meses, IMC de 20 kg/m2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3 anos e 2 meses, IMC de 17,5 kg/m2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "8 anos e 3 meses, IMC de 21 kg/m2",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "12 anos e 6 meses, IMC de 22,5 kg/m2",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para responder a esta questão, é necessário correlacionar os dados de cada alternativa com os gráficos de Índice de Massa Corporal (IMC) por idade para meninos da Organização Mundial da Saúde (OMS), lembrando que os pontos de corte para definição diagnóstica mudam de acordo com a faixa etária:\n\n- De 0 a 5 anos (primeiro gráfico):\nEscore-z entre mais 1 e mais 2 indica risco de sobrepeso.\nEscore-z entre mais 2 e mais 3 indica sobrepeso.\nEscore-z acima de mais 3 define obesidade.\n\n- De 5 a 19 anos (segundo gráfico):\nEscore-z entre mais 1 e mais 2 indica sobrepeso.\nEscore-z entre mais 2 e mais 3 define obesidade.\nEscore-z acima de mais 3 define obesidade grave.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. No primeiro gráfico (0 a 5 anos), localizando a idade de 1 ano e 10 meses e o IMC de 20 kg/m2, o ponto fica entre as linhas de escore-z mais 2 (linha vermelha) e mais 3 (linha preta). Nessa faixa etária, essa classificação corresponde a sobrepeso, e não obesidade.\n\nAlternativa b: Incorreta. Ao analisar o primeiro gráfico na idade de 3 anos e 2 meses com IMC de 17,5 kg/m2, o ponto situa-se entre as curvas de escore-z mais 1 (linha laranja) e mais 2 (linha vermelha), correspondendo ao diagnóstico de risco de sobrepeso.\n\nAlternativa c: Correta. Utilizando o segundo gráfico (5 a 19 anos), para a idade de 8 anos e 3 meses, o escore-z mais 2 (linha vermelha) está em aproximadamente 20,4 kg/m2. Um IMC de 21 kg/m2 posiciona a criança acima da linha de escore-z mais 2 e abaixo de mais 3, o que define com precisão o diagnóstico de obesidade para essa faixa etária.\n\nAlternativa d: Incorreta. No segundo gráfico, para a idade de 12 anos e 6 meses com IMC de 22,5 kg/m2, o ponto encontra-se entre as linhas de escore-z mais 1 (linha laranja) e mais 2 (linha vermelha), caracterizando sobrepeso.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Obesidade na Infância e na Adolescência",
+      "Diagnóstico Nutricional",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/d22db0bec0ce2e375e5d54afefeb11d2662ba044fa7920d13690b985ba807430.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d3db3c92-f1b9-45a1-9c04-97620d455ce8_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/633048b977e002aa629b6295ce87bc07957b1c0c2d0de6676234e3eaec16fbe8.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d3db3c92-f1b9-45a1-9c04-97620d455ce8_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:20.997Z"
+  },
+  {
+    "id": "AJUDA_d3dc043e-415a-471e-84f5-deee90a541b5",
+    "originalId": "d3dc043e-415a-471e-84f5-deee90a541b5",
+    "statement": "Menino de 2 anos e 3 meses é levado pela mãe a uma Unidade Básica de Saúde para consulta de rotina. Ela refere palidez progressiva e redução do apetite nos últimos dois meses. O exame físico mostra palidez cutaneomucosa, sem outros achados relevantes. O hemograma mostra os seguintes resultados.\n\n| Exame | Resultado | Valor de referência |\n| :--- | :---: | :---: |\n| Hemoglobina | 9,4 g/dL | 10,5 a 14,2 g/dL |\n| Volume corpuscular médio | 68 fL | 75 a 87 fL |\n| Índice de anisocitose | Aumentado | – |\n\nA conduta para essa criança é prescrever",
+    "options": [
+      {
+        "id": "A",
+        "text": "ferro oral em dose terapêutica e orientar adequação alimentar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "polivitamínico com ferro em dose profilática e manter dieta atual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ferro oral em dose profilática e orientar uso de ácido fólico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ferro endovenoso e suplementar com vitamina B12.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A criança tem o quadro típico de anemia ferropriva: idade de maior risco (6 a 24 meses e logo após), palidez progressiva, hiporexia e exame físico sem outros achados (sem hepatoesplenomegalia, icterícia ou adenomegalia que sugiram hemólise ou doença hematológica maligna). O hemograma mostra:\n\n- hemoglobina de 9,4 g/dL, abaixo do limite para a idade (anemia leve a moderada);\n- VCM de 68 fL (microcitose);\n- RDW aumentado (anisocitose).\n\nA combinação de microcitose com RDW elevado é característica da deficiência de ferro. Esse dado ajuda a diferenciá-la do traço talassêmico, que costuma ter microcitose com RDW normal e número de hemácias normal ou aumentado.\n\nNa atenção básica, diante desse quadro típico, é aceitável iniciar o tratamento empírico com ferro em dose terapêutica, sem exigir ferritina antes. A prova terapêutica é feita com reticulocitose em 5 a 10 dias e aumento da hemoglobina de cerca de 1 g/dL em aproximadamente 4 semanas. A falta de resposta indica investigar outras causas.\n\nEsquema terapêutico:\n- dose de 3 a 6 mg/kg/dia de ferro elementar (em geral sulfato ferroso), por via oral, longe das refeições;\n- duração até normalizar a hemoglobina, mantendo por mais 2 a 3 meses (ou até ferritina normal) para repor os estoques.\n\nNa criança dessa idade, a principal causa é a ingestão inadequada de ferro. Os erros alimentares mais comuns são:\n- consumo excessivo de leite de vaca, que é pobre em ferro, pode causar micro-hemorragias intestinais e reduz o apetite por outros alimentos;\n- pouca ingestão de carnes e de alimentos ricos em ferro heme.\n\nPor isso, a orientação alimentar é obrigatória para evitar recidiva.\n\nAnálise das alternativas:\n\na) Correta. Ferro oral em dose terapêutica corrige a anemia e repõe os estoques. A adequação alimentar trata a causa de base.\n\nb) Incorreta. A dose profilática (cerca de 1 mg/kg/dia) serve para prevenir em crianças sem anemia, não para tratar anemia já instalada. Polivitamínicos têm pouco ferro e não oferecem vantagem. Manter a dieta atual perpetua a causa.\n\nc) Incorreta. A dose profilática é insuficiente para tratar. O ácido fólico não está indicado: sua deficiência causa anemia macrocítica, não microcítica.\n\nd) Incorreta. O ferro endovenoso fica reservado para intolerância ou falha do ferro oral, má absorção (por exemplo, doença celíaca ou doença inflamatória intestinal) ou perdas maiores que a capacidade de reposição oral. Não é a primeira escolha. A vitamina B12 também não se aplica, pois sua deficiência causa macrocitose.\n\nResposta: alternativa A.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:20.997Z"
+  },
+  {
+    "id": "AJUDA_d3df9c10-3c7b-4974-bf07-0dd6dfe2d013",
+    "originalId": "d3df9c10-3c7b-4974-bf07-0dd6dfe2d013",
+    "statement": "Paciente de 35 anos de idade, com queixa de sangramento uterino aumentado de fluxo e duração durante as menstruações há 12 meses, vem a consulta com exame de ultrassonografia transvaginal evidenciando útero antevertido, com presença de lesão nodular característica de leiomioma do útero classificada como FIGO 2. A paciente apresenta desejo de uma gestação futura. A melhor conduta para o caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "miomectomia laparoscópica, pois se trata de um mioma classificado como subseroso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "miomectomia histeroscópica, pois se trata de um mioma FIGO 2.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "histerectomia, pois se trata de um mioma transmural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "miomectomia seletiva laparoscópica, pois se trata de um mioma submucoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "embolização das artérias uterinas, pois se trata de um mioma FIGO 2-5.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nA paciente apresenta Sangramento Uterino Anormal (SUA) e desejo de gestação futura. O ponto-chave da questão é a classificação FIGO 2. Segundo a classificação PALM-COEIN, os miomas submucosos (que distorcem a cavidade endometrial e são os principais responsáveis pelo sangramento) são divididos em:\n- FIGO 0: Totalmente intracavitário (pediculado).\n- FIGO 1: Menos de 50% intramural.\n- FIGO 2: 50% ou mais intramural, porém com componente submucoso.\n\nPara pacientes com desejo reprodutivo e miomas que distorcem a cavidade (submucosos), o tratamento de escolha é a remoção da lesão preservando o útero.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (Incorreta): O mioma FIGO 2 é classificado como submucoso, não subseroso. Miomas subserosos são classificados como FIGO 5, 6 ou 7 e crescem para fora do útero, raramente causando aumento do fluxo menstrual. A via laparoscópica é indicada para miomas subserosos ou intramurais, mas não é a via de eleição para o componente submucoso.\n\nAlternativa B (Correta): A miomectomia histeroscópica é o padrão-ouro para o tratamento de miomas submucosos (FIGO 0, 1 e 2). Por ser uma técnica minimamente invasiva que acessa o interior do útero pelo canal vaginal, ela permite a retirada da lesão que causa o sangramento e a restauração da anatomia cavitária, favorecendo a fertilidade da paciente.\n\nAlternativa C (Incorreta): A histerectomia consiste na retirada do útero. Embora resolva o sangramento, é terminantemente contraindicada para pacientes que manifestam desejo de gestação futura. Além disso, o termo \"transmural\" refere-se a miomas que atravessam do endométrio à serosa (FIGO 2-5), o que não foi descrito no enunciado.\n\nAlternativa D (Incorreta): O erro reside na via cirúrgica. Miomas submucosos (dentro da cavidade) devem ser abordados preferencialmente por via histeroscópica. A laparoscopia aborda o útero por fora (via abdominal), o que exigiria uma incisão desnecessária no miométrio para atingir a cavidade uterina no caso de um mioma estritamente submucoso.\n\nAlternativa E (Incorreta): A embolização das artérias uterinas é uma alternativa à histerectomia em mulheres que desejam manter o útero, mas o consenso atual (incluindo manuais da FEBRASGO) indica que ela deve ser evitada em mulheres com desejo de gravidez. A técnica pode comprometer a vascularização do endométrio e a reserva ovariana, prejudicando o futuro reprodutivo. Além disso, o diagnóstico dado foi de mioma FIGO 2 isolado.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:20.997Z"
+  },
+  {
+    "id": "AJUDA_d3e89814-8a7f-4a34-a72e-7a335172a5bd",
+    "originalId": "d3e89814-8a7f-4a34-a72e-7a335172a5bd",
+    "statement": "O modelo dos determinantes sociais da saúde de Dahlgren e Whitehead é representado por um diagrama de camadas concêntricas. Sobre a composição e a relação entre essas camadas, analise as afirmativas abaixo:\nI. Na camada mais central, temos os fatores individuais não-modificáveis, incluindo idade, sexo e fatores hereditários.\nII. Na terceira camada, estão as redes sociais e comunitárias, que abrangem o suporte oferecido pela família, amigos e comunidade local.\nIII. Na quarta camada, temos as condições de vida e trabalho, que são determinadas por políticas públicas e contextos econômicos locais.\nIV. Na camada mais externa, estão os fatores gerais socioeconômicos, culturais e ambientais, que constituem os macrodeterminantes.",
+    "options": [
+      {
+        "id": "A",
+        "text": "todas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "apenas três.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "apenas duas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "apenas uma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "nenhuma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O modelo de Dahlgren e Whitehead, proposto em 1991, é uma das representações mais didáticas e utilizadas para o estudo dos Determinantes Sociais da Saúde (DSS). Ele organiza os diversos fatores que influenciam a saúde em camadas concêntricas, partindo do micro (individual) para o macro (sociedade).\n\nAnálise das afirmativas:\n\nAfirmativa I: Correta. No centro do diagrama, ou primeira camada, estão as características individuais intrínsecas. São os fatores biológicos e genéticos que o indivíduo já possui ao nascer, como idade, sexo e carga genética. Eles são classificados como não modificáveis porque não podem ser alterados por intervenções externas.\n\nAfirmativa II: Correta. A terceira camada foca nas redes sociais e comunitárias. Ela se posiciona logo após a camada de estilos de vida individuais (que é a segunda camada). Este nível destaca a importância do capital social e do suporte oferecido pela família, vizinhos e pela comunidade local como fatores protetores ou de risco para a saúde.\n\nAfirmativa III: Correta. A quarta camada detalha as condições de vida e trabalho. Ela abrange fatores intermediários que impactam diretamente o bem-estar, como acesso à educação, saneamento básico, habitação adequada, serviços de saúde, ambiente de trabalho e situação de emprego. Esses elementos dependem fortemente de políticas públicas locais e da economia.\n\nAfirmativa IV: Correta. A camada mais externa (quinta camada) é o arco que envolve todas as outras. Nela residem os macrodeterminantes, que são as condições gerais socioeconômicas, culturais e ambientais de um país ou região. Isso inclui o sistema econômico, as normas culturais e a estabilidade ambiental, que influenciam todas as camadas internas do modelo.\n\nConclusão:\nComo todas as afirmativas (I, II, III e IV) descrevem corretamente a estrutura e o conteúdo das camadas do modelo de Dahlgren e Whitehead, a resposta correta é a alternativa (a). O modelo demonstra que a saúde não depende apenas de escolhas individuais, mas de uma rede complexa de fatores sociais.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:20.997Z"
+  },
+  {
+    "id": "AJUDA_d407a1b2-2fc3-4577-a8ac-72dbe8d6f6b2",
+    "originalId": "d407a1b2-2fc3-4577-a8ac-72dbe8d6f6b2",
+    "statement": "Um colangiocarcinoma peri-hilar, que envolve o ducto hepático comum e o ducto hepático direito, de acordo com Bismut-Corlette, é classificado como tipo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IIIa",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "IIIb",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação de Bismuth-Corlette é o sistema utilizado para descrever a extensão anatômica dos tumores de Klatskin (colangiocarcinoma peri-hilar). Ela é essencial para definir a conduta cirúrgica, baseando-se no nível de obstrução da árvore biliar e no envolvimento das confluências ductais.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O Tipo I define um tumor que acomete apenas o ducto hepático comum, situando-se abaixo da confluência dos ductos hepáticos direito e esquerdo. Nesse caso, a bifurcação biliar está livre.\n\nAlternativa b) Incorreta. O Tipo II é aquele que atinge a confluência (bifurcação principal) dos ductos hepáticos direito e esquerdo, porém sem progredir para os ductos de segunda ordem. Há comunicação interrompida entre o lado direito e o esquerdo, mas os ductos hepáticos individuais estão preservados em sua extensão.\n\nAlternativa c) Correta. O Tipo IIIa caracteriza-se por um tumor que atinge a confluência principal e se estende para o ducto hepático direito. O enunciado descreve exatamente essa situação: o comprometimento do ducto hepático comum (parte da via biliar principal) associado ao envolvimento do ducto hepático direito.\n\nAlternativa d) Incorreta. O Tipo IIIb refere-se ao tumor que atinge a confluência principal e se estende para o ducto hepático esquerdo, poupando a anatomia segmentar do lado direito.\n\nResumo da classificação para fixação:\nTipo I: Ducto hepático comum (abaixo da confluência).\nTipo II: Confluência dos ductos hepáticos direito e esquerdo.\nTipo IIIa: Confluência + ducto hepático direito.\nTipo IIIb: Confluência + ducto hepático esquerdo.\nTipo IV: Envolvimento de ambos os ductos (direito e esquerdo) ou tumor multicêntrico.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:20.997Z"
+  },
+  {
+    "id": "AJUDA_d40e9fb1-acce-4289-ac86-a7a420c59ea7",
+    "originalId": "d40e9fb1-acce-4289-ac86-a7a420c59ea7",
+    "statement": "Lactente de 12 meses previamente hígido, é trazido ao Pronto Atendimento devido a irritabilidade e febre alta há quatro dias. A mãe informa que, há uma semana, o lactente ficou resfriado e houve piora do quadro nos três últimos dias, com prostração e recusa alimentar. Ao exame fisico, encontra-se toxemiado, com membrana timpânica abaulada e hiperemiada à direita. Apresenta também hiperemia e dor retroauricular homolateral, com desaparecimento do sulco retroauricular. O diagnostico e a conduta inicial são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Otite média aguda à direita, iniciar amoxicilina 50 mg/kg/dia e pedir para retornar em 72 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Otite média aguda com dermatite seborreica, iniciar cefalexina 50 mg/kg/dia) e pedir para retornar em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Otite média aguda com mastoidite à direita, solicitar internação hospitalar, iniciar ceftriaxona parenteral e solicitar tomografia axial computadorizada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Otite média aguda à direita, iniciar amoxicilina + ácido clavulânico (respectivamente 50mg + 12,5mg/kg/dia), de 12/12 horas e pedir para retornar em 72 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO caso descreve um lactente de 12 meses com sintomas iniciais de uma infecção das vias aéreas superiores que evoluiu para uma Otite Média Aguda (OMA), evidenciada pela otoscopia (membrana timpânica abaulada e hiperemiada). No entanto, o paciente apresenta sinais de gravidade e complicações: estado toxêmico, prostração, recusa alimentar e, crucialmente, sinais inflamatórios na região retroauricular (dor e hiperemia) com o desaparecimento do sulco retroauricular. Esse último achado é patognomônico da mastoidite aguda, que causa a anteriorização do pavilhão auricular devido ao processo inflamatório/infeccioso nas células da mastoide.\n\nAnálise das Alternativas:\n\nAlternativa A: Incorreta. Embora o paciente tenha OMA, o quadro já evoluiu para uma complicação supurativa (mastoidite). O tratamento ambulatorial com amoxicilina na dose de 50 mg/kg/dia é insuficiente para um paciente toxêmico com sinais de mastoidite, que exige terapia parenteral e vigilância hospitalar.\n\nAlternativa B: Incorreta. Não há elementos na descrição que sugiram dermatite seborreica (que se manifestaria com crostas lácteas ou descamação gordurosa, geralmente sem sinais sistêmicos graves). Além disso, a cefalexina não é a droga de escolha para complicações de OMA, e o quadro exige internação, não apenas retorno em 48 horas.\n\nAlternativa C: Correta. O diagnóstico de mastoidite aguda é clínico, baseado na dor, hiperemia retroauricular e apagamento do sulco (sinal do pavilhão auricular saltado). Devido ao risco de complicações intracranianas e à necessidade de antibioticoterapia venosa de amplo espectro, a conduta correta é a internação hospitalar e o início de antibiótico parenteral (como a ceftriaxona). A Tomografia Computadorizada (TC) de ossos temporais é fundamental para avaliar a extensão da destruição óssea e descartar abscessos subperiósteos ou intracranianos.\n\nAlternativa D: Incorreta. O uso de amoxicilina com clavulanato em regime ambulatorial é indicado para casos de falha terapêutica na OMA simples ou em pacientes com critérios de maior gravidade local, mas não é adequado para tratar a mastoidite aguda, que é uma emergência pediátrica necessitando de suporte hospitalar.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:54:20.997Z"
+  }
+]

@@ -1,0 +1,525 @@
+[
+  {
+    "id": "AJUDA_87e23ab2-10ba-4054-9526-efaefe8a0567",
+    "originalId": "87e23ab2-10ba-4054-9526-efaefe8a0567",
+    "statement": "Um homem de 78 anos apresenta-se para avaliação geriátrica. De acordo com o Fenótipo de Fragilidade de Fried, qual conjunto de achados confirmaria o diagnóstico de fragilidade?\"",
+    "options": [
+      {
+        "id": "A",
+        "text": "Perda de peso não intencional, exaustão autorreferida e redução da força de preensão palmar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Idade superior a 80 anos, polifarmácia (5+ medicamentos) e déficit cognitivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dependência em atividades básicas de vida diária e histórico de quedas no último ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Presença de pelo menos três doenças crônicas e isolamento social.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Lentidão na velocidade da marcha associada exclusivamente a déficit auditivo e visual.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A síndrome de fragilidade no idoso é um estado de vulnerabilidade fisiológica reduzida, decorrente da diminuição das reservas biológicas e da resistência aos estressores. O modelo mais utilizado e cobrado em provas para definir essa condição é o Fenótipo de Fragilidade de Fried (2001), que se baseia em cinco critérios biológicos objetivos:\n\n1. Perda de peso não intencional (mais de 4,5 kg ou 5% do peso corporal no último ano).\n2. Exaustão autorreferida (avaliada por perguntas sobre o esforço para realizar tarefas habituais).\n3. Redução da força de preensão palmar (medida por dinamometria, ajustada por sexo e IMC).\n4. Baixa velocidade de marcha (tempo para percorrer uma distância fixa, geralmente 4,6 metros, ajustado por sexo e altura).\n5. Baixo nível de atividade física (gasto calórico semanal estimado por questionário).\n\nA classificação ocorre da seguinte forma:\n- Frágil: 3 ou mais critérios presentes.\n- Pré-frágil: 1 ou 2 critérios presentes.\n- Robusto ou Não Frágil: Nenhum critério presente.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Apresenta três dos cinco critérios originais de Fried (perda de peso, exaustão e redução da força). A presença desses três achados simultâneos é suficiente para confirmar o diagnóstico de fragilidade segundo o fenótipo.\n\nAlternativa B (Incorreta): Idade avançada, polifarmácia e déficit cognitivo são fatores de risco ou condições frequentemente associadas à fragilidade, mas não fazem parte dos critérios diagnósticos de Fried. O modelo de Fried é essencialmente biológico/físico e não inclui variáveis cognitivas ou sociais.\n\nAlternativa C (Incorreta): Dependência em atividades de vida diária (AVDs) e histórico de quedas são desfechos adversos ou consequências da fragilidade. Embora um idoso frágil tenha maior risco de quedas e dependência, esses itens não compõem os critérios diagnósticos do fenótipo.\n\nAlternativa D (Incorreta): O número de doenças crônicas (comorbidades) e o isolamento social são dimensões importantes na Avaliação Geriátrica Ampla (AGA), mas o fenótipo de Fried busca distinguir a fragilidade como uma síndrome clínica independente da simples presença de doenças ou fatores psicossociais.\n\nAlternativa E (Incorreta): Embora a lentidão na velocidade da marcha seja um dos cinco critérios de Fried, ela não está associada a déficits sensoriais (auditivos e visuais) no contexto desse diagnóstico específico. Os déficits sensoriais são limitações funcionais que podem coexistir com a fragilidade, mas não a definem segundo este modelo.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:51.744Z"
+  },
+  {
+    "id": "AJUDA_87e7ae00-2c57-4177-807a-7068f608c7f4",
+    "originalId": "87e7ae00-2c57-4177-807a-7068f608c7f4",
+    "statement": "O conjunto de ações que proporcionam o conhecimento, a detecção ou prevenção de qualquer mudança nos fatores determinantes e condicionantes de saúde individual ou coletiva, com a finalidade de recomendar e adotar as medidas de prevenção e controle das doenças ou agravos, refere-se ao conceito de",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vigilância Epidemiológica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Promoção da Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Educação em Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Planejamento Sanitário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Atenção Primária à Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Essa questão exige o conhecimento da Lei Federal nº 8.080/1990, que regula as ações e serviços de saúde no Brasil. O enunciado reproduz exatamente a definição legal contida no Artigo 6º, parágrafo 2º, desta lei.\n\nAlternativa a) Correta. A Vigilância Epidemiológica é definida como um conjunto de ações que proporciona o conhecimento, a detecção ou prevenção de qualquer mudança nos fatores determinantes e condicionantes de saúde individual ou coletiva, com a finalidade de recomendar e adotar as medidas de prevenção e controle das doenças ou agravos. É o famoso conceito de \"informação para a ação\": coleta-se o dado, analisa-se e intervém-se oportunamente.\n\nAlternativa b) Incorreta. A Promoção da Saúde refere-se a um conjunto de estratégias e ações políticas voltadas para a melhoria da qualidade de vida e redução de vulnerabilidades e riscos à saúde relacionados aos seus determinantes e condicionantes (como moradia, lazer, trabalho). Embora use dados da vigilância, seu foco é o empoderamento da população e a criação de ambientes saudáveis, não se limitando à detecção e controle direto de doenças.\n\nAlternativa c) Incorreta. A Educação em Saúde é um processo pedagógico que visa ao desenvolvimento da autonomia e da responsabilidade dos indivíduos e grupos no cuidado com a própria saúde. É uma ferramenta utilizada tanto na vigilância quanto na promoção e atenção primária, mas não abrange todo o ciclo de detecção e recomendação de medidas de controle descrito no enunciado.\n\nAlternativa d) Incorreta. O Planejamento Sanitário (ou planejamento em saúde) é o processo de estabelecer prioridades, objetivos e metas, além de prever os recursos necessários para a execução das ações de saúde. Ele utiliza as informações geradas pela Vigilância Epidemiológica, mas não se confunde com o ato de detectar mudanças nos fatores de saúde em tempo real.\n\nAlternativa e) Incorreta. A Atenção Primária à Saúde (APS) é o primeiro nível de atenção e a porta de entrada preferencial do sistema de saúde. Ela é responsável pela coordenação do cuidado e realiza ações de vigilância em seu território; porém, a definição apresentada no enunciado é a definição técnica e legal específica da Vigilância Epidemiológica como campo de atuação do SUS.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:51.744Z"
+  },
+  {
+    "id": "AJUDA_87ebc66d-b495-45d0-b8f8-bdcfe5beafd3",
+    "originalId": "87ebc66d-b495-45d0-b8f8-bdcfe5beafd3",
+    "statement": "Mulher de 45 anos procura atendimento por fadiga progressiva, ganho de peso não explicado e constipação há seis meses. Relata pele mais ressecada, intolerância ao frio e sonolência excessiva. Menciona que a mãe teve “problema na tireoide” e usou hormônio por muitos anos. O exame mostra discreta lentificação psicomotora e pele fria. Os exames revelam TSH 12 mUI/L, T4 livre 0,6 ng/dL e anticorpo anti-TPO positivo.\nQual é o diagnóstico e a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipotireoidismo subclínico; apenas observar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tireoidite de Hashimoto; iniciar levotiroxina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Síndrome do eutiroideo doente; iniciar levotiroxina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tireotoxicose induzida por amiodarona; suspender a droga.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Doença de Graves; iniciar antitireoidiano.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA paciente de 45 anos apresenta um quadro clássico de hipometabolismo, caracterizado por fadiga, ganho de peso, constipação, pele fria e ressecada, intolerância ao frio e lentificação psicomotora. Esse conjunto de sinais e sintomas é altamente sugestivo de hipotireoidismo. O histórico familiar positivo para doenças tireoidianas reforça a etiologia autoimune.\n\nINTERPRETAÇÃO DOS EXAMES LABORATORIAIS\n\nOs exames revelam o seguinte padrão:\n1. TSH elevado (12 mUI/L): Indica que a hipófise está tentando estimular a tireoide, que não está respondendo adequadamente.\n2. T4 livre baixo (0,6 ng/dL): Confirma que a produção hormonal da glândula está insuficiente. Quando o T4 livre está abaixo do valor de referência, o hipotireoidismo é classificado como clínico ou manifesto.\n3. Anti-TPO positivo: Este anticorpo é o principal marcador da Tireoidite de Hashimoto, uma doença autoimune na qual o sistema imunológico agride a glândula tireoide, sendo a causa mais comum de hipotireoidismo em adultos.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O hipotireoidismo é chamado de subclínico quando o TSH está elevado, mas o T4 livre ainda consegue se manter dentro da faixa de normalidade. No caso em questão, o T4 livre está baixo, o que caracteriza hipotireoidismo clínico. Além disso, a paciente é francamente sintomática e possui TSH > 10 mUI/L, situações que exigiriam tratamento mesmo se o quadro fosse subclínico.\n\nAlternativa b) Correta. A Tireoidite de Hashimoto é o diagnóstico etiológico, confirmado pela presença do anticorpo anti-TPO. Como há repercussão laboratorial (T4 livre baixo) e clínica, a conduta adequada é iniciar a reposição hormonal com levotiroxina.\n\nAlternativa c) Incorreta. A Síndrome do Eutireoideo Doente é uma alteração nos exames de tireoide que ocorre em pacientes gravemente enfermos (geralmente internados em UTI), sem doença tireoidiana prévia. O padrão típico é T3 baixo com TSH normal ou baixo, o que não condiz com o quadro ambulatorial e os anticorpos positivos da paciente.\n\nAlternativa d) Incorreta. A tireotoxicose refere-se ao excesso de hormônios tireoidianos (hipertireoidismo), que causaria sintomas opostos, como perda de peso, agitação e taquicardia. Não há indícios de uso de amiodarona ou excesso hormonal.\n\nAlternativa e) Incorreta. A Doença de Graves é uma causa de hipertireoidismo. Ela é causada por anticorpos que estimulam a glândula a produzir hormônio em excesso, resultando em TSH baixo e T4 livre elevado, quadro oposto ao apresentado pela paciente.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:51.744Z"
+  },
+  {
+    "id": "AJUDA_87f4d05d-f420-47df-8409-b154306bdc45",
+    "originalId": "87f4d05d-f420-47df-8409-b154306bdc45",
+    "statement": "Homem de 69 anos de idade deu entrada no pronto-socorro por dor abdominal há 2 dias. É hipertenso, diabético, obeso e tabagista. Foi feito o diagnóstico de abdome agudo inflamatório, sendo submetido a laparotomia exploradora que evidenciou diverticulite perfurada. Foi realizada sigmoidectomia a Hartmann. No 6° dia pós-operatório o paciente teve saída de grande quantidade de líquido sero-hemático por entre os pontos da ferida operatória.\nQual é a principal hipótese diagnóstica para a complicação pós-operatória apresentada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deiscência da aponeurose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Infecção de sítio cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fístula intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hematoma na parede abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda uma complicação pós-operatória clássica em cirurgia abdominal. O ponto-chave para a resolução é a descrição do líquido que drena pela ferida operatória.\n\nA alternativa (a) está correta. A deiscência de aponeurose é a separação das bordas da fáscia que foram suturadas durante o fechamento da parede abdominal. O sinal clínico patognomônico dessa condição é a saída súbita de grande quantidade de líquido sero-hemático (frequentemente descrito como \"água de carne lavada\" ou \"cor de salmão\") entre o 5º e o 10º dia pós-operatório. O paciente apresenta múltiplos fatores de risco que prejudicam a cicatrização: idade avançada, obesidade, diabetes mellitus, tabagismo e a natureza de urgência da cirurgia em campo contaminado (diverticulite perfurada).\n\nA alternativa (b) está incorreta. Embora a infecção do sítio cirúrgico seja uma causa comum de complicações, ela costuma se manifestar com drenagem de material purulento, sinais inflamatórios locais (calor, rubor, dor) e, frequentemente, febre. A saída súbita de líquido sero-hemático volumoso é muito mais sugestiva de falha mecânica da parede (deiscência) do que de um processo purulento infeccioso isolado.\n\nA alternativa (c) está incorreta. Uma fístula intestinal manifestaria a saída de conteúdo entérico (fezes, bile ou secreção entérica franca) pela ferida ou por drenos, e não apenas líquido sero-hemático. Além disso, a evolução clínica costuma ser acompanhada de íleo paralítico prolongado ou sinais de irritação peritoneal se a drenagem não for dirigida.\n\nA alternativa (d) está incorreta. Hematomas de parede abdominal geralmente se manifestam precocemente (nas primeiras 24 a 48 horas) através de abaulamento localizado, dor e equimose na pele. No 6º dia pós-operatório, a saída de grande volume de líquido fluido não condiz com um hematoma, que a essa altura estaria em processo de organização ou já teria se manifestado anteriormente.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:51.744Z"
+  },
+  {
+    "id": "AJUDA_87fb1107-3277-4223-a207-e66b932978f5",
+    "originalId": "87fb1107-3277-4223-a207-e66b932978f5",
+    "statement": "Mulher, 60 anos, é admitida no CTI devido a infarto agudo do miocárdio com supra de segmento ST em toda parede anterior há 36 horas. Apresenta dispneia e esforço respiratório. Exames realizados na admissão: Gasometria arterial pH = 7,32, PO2=55 mmHg, lactato = 4 mmol/L e troponina elevada. Rx de tórax: infiltrado pulmonar bilateral. Ecocardiograma transtorácico com Doppler: função sistólica do ventrículo esquerdo diminuída, aumento do átrio esquerdo e da pressão sistólica da arterial pulmonar. Qual dos fatores abaixo melhor explica o quadro pulmonar descrito acima?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diminuição da drenagem linfática do interstício pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumento da pressão diastólica do ventrículo esquerdo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A baixa capacitância da circulação pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Recrutamento e distensão dos capilares pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma paciente com infarto agudo do miocárdio (IAM) de parede anterior complicado por choque cardiogênico e edema agudo de pulmão. A disfunção sistólica do ventrículo esquerdo (VE) acarreta acúmulo de volume intracavitário ao final da diástole e consequente aumento da pressão diastólica final do VE (PDFVE). Esse aumento de pressão é transmitido retrogradamente para o átrio esquerdo, veias pulmonares e leito capilar pulmonar, elevando a pressão hidrostática microvascular acima da pressão oncótica e culminando no extravasamento de líquido para o interstício e alvéolos (congestão e edema pulmonar).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O sistema linfático pulmonar continua funcionando e até aumenta sua taxa de drenagem na tentativa de compensar o extravasamento de fluido. O edema se forma não por uma falha ou diminuição primária da drenagem linfática, mas porque o volume de transudato gerado pelo aumento da pressão hidrostática supera a capacidade máxima de depuração dos vasos linfáticos.\n\nAlternativa b: Correta. A elevação da pressão diastólica final do ventrículo esquerdo decorrente da falência ventricular aguda é o ponto de partida fisiopatológico da congestão pulmonar cardiogênica. Essa hipertensão é transmitida de forma retrógrada para o átrio esquerdo e capilares pulmonares, promovendo o extravasamento de líquido para o parênquima pulmonar.\n\nAlternativa c: Incorreta. A circulação pulmonar é classicamente um leito vascular de alta capacitância e baixa resistência. O quadro não decorre de uma baixa complacência intrínseca dos vasos pulmonares, mas sim da sobrecarga pressórica retrógrada transmitida pelas câmaras esquerdas em falência.\n\nAlternativa d: Incorreta. O recrutamento e a distensão capilar são respostas fisiológicas adaptativas normais para acomodar aumentos de fluxo sem elevação desproporcional da pressão. O fator determinante do infiltrado e da insuficiência respiratória apresentada é o aumento da pressão hidrostática capilar gerado pelo aumento pressórico no VE, e não o fenômeno de recrutamento capilar.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+      "Insuficiência Cardíaca",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:51.744Z"
+  },
+  {
+    "id": "AJUDA_8801089d-cc8e-46ea-a9ed-ca915faa1bf5",
+    "originalId": "8801089d-cc8e-46ea-a9ed-ca915faa1bf5",
+    "statement": "Na avaliação de uma criança com baixa estatura o principal indicador de uma baixa estatura patológica é a velocidade de crescimento baixa.\nI – Em caso de baixa estatura com baixa velocidade de crescimento o principal exame a colher é a dosagem de GH.\nPORQUE\nII – A principal causa endocrinológica de baixa estatura é a deficiência de GH.\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ambas afirmativas estão corretas e a II é uma justificativa correta da I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ambas afirmativas estão corretas e a II não é uma justificativa correta da I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A afirmativa I está correta e a II incorreta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A afirmativa II está incorreta e a I correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ambas estão incorretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise da Afirmativa I:\nA afirmativa está incorreta por dois motivos principais. Primeiro, a dosagem basal de GH (hormônio do crescimento) não tem utilidade diagnóstica, pois o GH é secretado em pulsos, principalmente durante o sono profundo. Assim, um valor baixo em uma coleta aleatória não confirma deficiência. Para avaliar a reserva de GH, são necessários testes de estímulo ou a dosagem de marcadores indiretos, como o IGF-1 e a IGFBP-3. Segundo, na investigação de baixa estatura com velocidade de crescimento alterada, o GH não é o primeiro exame. Deve-se primeiro afastar doenças sistêmicas comuns (anemia, doença celíaca, doenças renais) e hipotireoidismo por meio de exames laboratoriais gerais e triagem tireoidiana.\n\nAnálise da Afirmativa II:\nA afirmativa está incorreta. Na endocrinologia, o hipotireoidismo é considerado uma causa mais frequente de baixa estatura do que a deficiência de GH, que é uma condição rara. Além disso, ao considerar todas as causas de baixa estatura patológica, as doenças não endócrinas (doenças crônicas e síndromes genéticas) superam em prevalência as causas endocrinológicas.\n\nAnálise das Alternativas:\n\na) Incorreta. Como ambas as afirmativas são falsas, não há como uma ser a justificativa da outra.\n\nb) Incorreta. O erro não está apenas na relação de justificativa, mas no conteúdo de ambas as sentenças, que são medicamente falsas.\n\nc) Incorreta. A afirmativa I está incorreta, pois a dosagem de GH basal não é o principal e nem o primeiro exame a ser solicitado.\n\nd) Incorreta. Embora a afirmativa II esteja realmente incorreta, a afirmativa I também está incorreta, o que invalida esta alternativa.\n\ne) Correta. Ambas as afirmativas são falsas. A investigação não começa pelo GH e a deficiência de GH não é a principal causa endócrina de baixa estatura.\n\nGabarito: Letra (e).",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:51.744Z"
+  },
+  {
+    "id": "AJUDA_880558b3-c97e-4559-a363-ff3ffc817b54",
+    "originalId": "880558b3-c97e-4559-a363-ff3ffc817b54",
+    "statement": "Um homem de 35 anos é admitido após traumatismo cranioencefálico grave. A tomografia de crânio evidencia hematoma intracraniano associado a edema cerebral. Durante a monitorização, observa-se elevação progressiva da pressão intracraniana. Assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O aumento do volume intracraniano é compensado principalmente pelo aumento do volume de líquido cefalorraquidiano, mantendo a pressão intracraniana estável inicialmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O crânio adulto comporta expansão progressiva de sangue, edema e líquido cefalorraquidiano com repercussão mínima sobre a pressão intracraniana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O aumento de volume intracraniano por sangue extravascular ou edema pode ser inicialmente compensado, mas, após o esgotamento desses mecanismos, ocorre elevação exponencial da pressão intracraniana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A pressão de perfusão cerebral aumenta proporcionalmente à elevação da pressão intracraniana, para reduzir de forma compensatória o risco de isquemia cerebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A risco de herniação cerebral tem relação indireta com o aumento do volume e da pressão intracranianas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão cobre a doutrina de Monro-Kellie e a curva de complacência intracraniana.\n\nConceito central: o crânio do adulto é uma caixa rígida, com três componentes: parênquima cerebral (cerca de 80%), sangue (cerca de 10%) e líquido cefalorraquidiano (LCR, cerca de 10%). Segundo Monro-Kellie, o aumento de volume de um componente (hematoma, edema) só é tolerado se houver redução de outro. Os mecanismos compensatórios iniciais são:\n- Deslocamento de LCR do compartimento intracraniano para o espaço subaracnóideo espinhal.\n- Aumento da reabsorção de LCR.\n- Redução do volume sanguíneo venoso intracraniano.\n\nEnquanto esses mecanismos funcionam, a pressão intracraniana (PIC) se mantém relativamente estável. Quando se esgotam, a complacência cai e a curva pressão-volume torna-se exponencial: pequenos aumentos de volume geram grandes aumentos de PIC. Daí o risco de deterioração súbita em pacientes que pareciam estáveis.\n\nAnálise das alternativas:\n\na) Incorreta. O LCR não é compensado por aumento do próprio volume. Ele é um dos componentes que são deslocados e reduzidos para acomodar a massa nova. Aumentar o volume de LCR agravaria a PIC, como na hidrocefalia.\n\nb) Incorreta. O crânio adulto é inextensível, e a expansão progressiva desses componentes eleva a PIC de forma importante após o esgotamento da compensação. Essa afirmação se aproximaria da realidade apenas em lactentes com fontanelas abertas e suturas não fundidas.\n\nc) Correta. Hematoma e edema são compensados inicialmente por deslocamento de LCR e sangue venoso. Depois que esses mecanismos se esgotam, a PIC sobe de forma exponencial, como descreve a curva de complacência.\n\nd) Incorreta. A pressão de perfusão cerebral (PPC) é igual à pressão arterial média menos a PIC. Com a elevação da PIC, a PPC diminui, a menos que a pressão arterial média aumente, e isso aumenta o risco de isquemia. A resposta de Cushing (hipertensão, bradicardia e respiração irregular) é uma tentativa de manter a PPC, mas ela não é uma elevação \"proporcional\" nem protetora de forma confiável. A meta no trauma é PPC de cerca de 60 a 70 mmHg.\n\ne) Incorreta. O risco de herniação (subfalcina, uncal, tonsilar) tem relação direta com o aumento de volume e de pressão, sobretudo quando há gradientes pressóricos entre compartimentos. Não é uma relação indireta.\n\nPontos práticos no paciente: elevar a cabeceira a 30°, manter sedação e analgesia, normocapnia, osmoterapia (manitol ou salina hipertônica), drenagem de LCR e avaliação de evacuação cirúrgica do hematoma, e craniectomia descompressiva em casos refratários.\n\nGabarito: letra c.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:51.744Z"
+  },
+  {
+    "id": "AJUDA_8806460b-890b-43ef-8d0a-d35bf6c23b2d",
+    "originalId": "8806460b-890b-43ef-8d0a-d35bf6c23b2d",
+    "statement": "Um paciente de 48 anos apresenta-se no pronto-socorro com dor abdominal intensa e intermitente há 18 horas, com náuseas e vômitos. Ele relata não ter evacuado ou eliminado gases nas últimas 48 horas. Sua história patológica pregressa inclui uma apendicectomia realizada há 20 anos e uma cirurgia para correção de hérnia inguinoescrotal há 5 anos. O exame físico mostrou o paciente lúcido e apirético; sinais vitais: PA 125/80 mmHg, FC 90 bpm, FR 20 ipm, T 36,8 °C. O abdômen está distendido. Peristalse de luta apresenta ruídos metálicos e hipercinéticos. Sente dor à palpação difusa, porém sem sinais de defesa e com ausência de hérnias palpáveis. Os exames laboratoriais registram hemograma com leucócitos de 8.000/mm³ e eletrólitos dentro dos limites normais. Os exames de imagem revelam rotina de abdômen agudo, mostrando distensão de alças intestinais com níveis hidroaéreos, e sem evidências de tumorações.\nDiante desse quadro clínico, a etapa inicial mais apropriada para o manejo do caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "colonoscopia urgente;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "administração de laxantes e observação;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "cirurgia imediata para exploração abdominal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "alta com orientação para retorno no caso de persistirem os sintomas;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "administração intravenosa de líquidos, descompressão nasogástrica e observação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta um quadro clássico de abdome agudo obstrutivo. Os sinais de dor abdominal em cólica, náusea, vômitos, parada de eliminação de gases e fezes, distensão abdominal e a presença de ruídos hidroaéreos metálicos (peristalse de luta) fecham o diagnóstico clínico de obstrução intestinal mecânica. A radiografia confirma a distensão de alças e níveis hidroaéreos. Considerando as cirurgias prévias (apendicectomia e hernioplastia), a causa mais provável são bridas ou aderências intestinais, que representam a principal etiologia de obstrução de intestino delgado em adultos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A colonoscopia tem papel limitado no abdome agudo obstrutivo de intestino delgado. Ela poderia ser considerada em casos de obstrução do cólon (como em volvos de sigmoide ou neoplasias colorretais), o que não condiz com a clínica de vômitos precoces e a provável etiologia por bridas neste paciente.\n\nAlternativa b) Incorreta. O uso de laxantes é formalmente contraindicado em casos de obstrução intestinal mecânica. Aumentar o estímulo ao peristaltismo contra um obstáculo físico pode levar a dor intensa, aumento da pressão intraluminal e até mesmo perfuração da alça intestinal.\n\nAlternativa c) Incorreta. Embora a cirurgia seja o tratamento definitivo para casos de obstrução mecânica que não se resolvem, a cirurgia \"imediata\" é reservada para casos de sofrimento de alça (isquemia, necrose), peritonite ou obstruções em alça fechada. O paciente em questão está hemodinamicamente estável, afebril, com leucograma normal e sem sinais de irritação peritoneal, o que permite a tentativa inicial de tratamento conservador.\n\nAlternativa d) Incorreta. Um paciente com quadro de obstrução intestinal completa (ausência de eliminação de gases e fezes há 48 horas) e sinais radiológicos de distensão necessita obrigatoriamente de internação hospitalar. A alta médica seria um erro grave de conduta, dado o risco de evolução para isquemia e perfuração.\n\nAlternativa e) Correta. O manejo inicial do abdome agudo obstrutivo por bridas (aderências), em um paciente estável e sem sinais de complicações, é o tratamento conservador. Este consiste na tríade: suporte clínico com hidratação venosa (para repor as perdas para o terceiro espaço e pelos vômitos), descompressão gastrointestinal através de sonda nasogástrica (para aliviar a distensão, reduzir o risco de broncoaspiração e melhorar o conforto) e jejum absoluto. Cerca de 70% a 80% dos casos de obstrução por bridas resolvem-se apenas com essas medidas nas primeiras 48 a 72 horas. Se não houver melhora nesse período ou se surgirem sinais de sofrimento de alça, a conduta passa a ser cirúrgica.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:51.744Z"
+  },
+  {
+    "id": "AJUDA_88134033-fcaa-484b-ba03-868bf12a7c00",
+    "originalId": "88134033-fcaa-484b-ba03-868bf12a7c00",
+    "statement": "Qual é a causa mais comum de hemorragia gastrointestinal baixa em adultos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença diverticular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Angiodisplasia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neoplasias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hemorroidas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Colite isquêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA hemorragia digestiva baixa (HDB) refere-se ao sangramento originado abaixo do ligamento de Treitz, envolvendo o intestino delgado (em menor escala), o cólon e o reto. Em adultos, a principal causa de sangramento volumoso e hospitalização por essa condição é a doença diverticular.\n\nAlternativa a: Esta é a alternativa correta. A doença diverticular do cólon é a causa número um de HDB aguda e indolor em adultos, especialmente em pacientes acima de 60 anos. O sangramento é de origem arterial e ocorre pela erosão das arteríolas (vasa recta) que atravessam a parede do divertículo. Aproximadamente 70 a 80 por cento desses sangramentos param espontaneamente.\n\nAlternativa b: Incorreta. A angiodisplasia, que consiste em malformações vasculares ectásicas, é uma causa comum de sangramento em idosos, sendo frequentemente citada como a segunda causa mais prevalente de HDB significativa. Contudo, estatisticamente, ela ainda ocorre com menor frequência que a doença diverticular.\n\nAlternativa c: Incorreta. Neoplasias e pólipos intestinais são causas frequentes de sangramento digestivo, porém costumam manifestar-se como sangramento crônico, oculto ou de pequena monta, associado à anemia ferropriva e a alterações do hábito intestinal, e não como a causa mais comum de hemorragia aguda volumosa.\n\nAlternativa d: Incorreta. As hemorroidas são a causa mais comum de sangramento anorretal (sangue vivo no papel higiênico ou gotejamento no vaso). Entretanto, na literatura médica e nas questões de prova que abordam a hemorragia digestiva baixa de origem colônica no contexto de emergência ou internação, a doença diverticular é a resposta padrão como causa principal.\n\nAlternativa e: Incorreta. A colite isquêmica ocorre devido a uma redução transitória do fluxo sanguíneo para o cólon, geralmente em áreas de divisor de águas vascular. Embora seja uma causa relevante de dor abdominal aguda seguida de diarreia com sangue, sua incidência é menor que a da doença diverticular.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Divertículos Colônicos e Divertículo de Meckel",
+      "Hemorragia Digestiva Baixa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:51.744Z"
+  },
+  {
+    "id": "AJUDA_881604fc-4b95-4fbc-bfe8-24447e7fbf97",
+    "originalId": "881604fc-4b95-4fbc-bfe8-24447e7fbf97",
+    "statement": "Helena, 6 semanas, é levada à consulta pela mãe por icterícia persistente, que começou na terceira semana de vida. A mãe relata fezes progressivamente mais claras, chegando a aspecto quase acólico, e urina escura. A criança apresenta irritabilidade em alguns momentos e ganho ponderal insuficiente. Nega febre ou episódios infecciosos. Aleitamento materno exclusivo. Exame físico: Icterícia evidente, Hepatomegalia: fígado palpável a 3,5 cm abaixo do RCD. Sem esplenomegalia, Fontanelas normais. Sem alterações dismórficas. Boa perfusão periférica. Exames iniciais: Bilirrubina total: 11 mg/dL, Bilirrubina direta: 6,2 mg/dL, GGT: bastante elevada, TGO/TGP: moderadamente elevadas, Coagulograma: normal, Teste do pezinho: sem alterações. O pediatra suspeita de colestase neonatal e considera causas obstrutivas e não obstrutivas.\n\nDiante do quadro apresentado, qual é o diagnóstico que deve ser excluído com maior urgência, devido à necessidade de intervenção precoce para melhor prognóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hepatite neonatal por vírus (ex.: CMV).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deficiência de alfa-1 antitripsina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Atresia de vias biliares.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Colestase por síndrome de Alagille.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Colestase associada à nutrição parenteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda um tema clássico e de extrema importância na pediatria e na hepatologia infantil: a colestase neonatal. O reconhecimento precoce das causas de icterícia à custa de bilirrubina direta é fundamental para o prognóstico do paciente.\n\nAnálise do quadro clínico:\nHelena apresenta icterícia iniciada após as duas primeiras semanas de vida (o que afasta a icterícia fisiológica), acompanhada de colúria (urina escura) e hipocolia/acolia fecal (fezes claras). Laboratorialmente, confirma-se a colestase pela Bilirrubina Direta (BD) elevada (6,2 mg/dL), acompanhada de níveis muito altos de GGT. Esse conjunto de achados (acolia fecal + GGT elevada + início precoce) é o tripé clássico que aponta para uma etiologia obstrutiva extra-hepática.\n\nAnálise das alternativas:\n\na) Incorreta. A hepatite neonatal por citomegalovírus (CMV) é uma causa importante de colestase neonatal não obstrutiva. Embora possa causar hepatomegalia e alteração de transaminases, as fezes geralmente mantêm sua coloração normal (pigmentadas). Além disso, não há uma intervenção cirúrgica com \"janela de oportunidade\" tão restrita quanto na Atresia de Vias Biliares.\n\nb) Incorreta. A deficiência de alfa-1 antitripsina é a causa genética mais comum de colestase neonatal. O quadro clínico pode mimetizar a atresia, mas o tratamento é clínico e de suporte, não havendo urgência cirúrgica imediata para mudar o curso natural da doença nas primeiras semanas de vida.\n\nc) Correta. A Atresia de Vias Biliares (AVB) é a principal causa de colestase neonatal com indicação cirúrgica e a principal indicação de transplante hepático em crianças. É considerada uma urgência diagnóstica porque o sucesso do tratamento cirúrgico (Portoenterostomia de Kasai) depende diretamente da idade da criança. O ideal é que a cirurgia seja realizada antes dos 60 dias de vida (Helena já está com 42 dias). Após esse período, a progressão da fibrose hepática é rápida, reduzindo drasticamente as chances de sucesso do procedimento e de sobrevida do fígado nativo.\n\nd) Incorreta. A Síndrome de Alagille é uma doença genética (autossômica dominante) que causa escassez de ductos biliares interlobulares. Frequentemente, apresenta-se com características dismórficas (face em triângulo, testa larga), alterações cardíacas e vértebras em borboleta, o que não foi descrito no caso. O manejo inicial é clínico.\n\ne) Incorreta. A colestase associada à nutrição parenteral ocorre em recém-nascidos, geralmente prematuros, que necessitam de suporte nutricional venoso por tempo prolongado. O enunciado afirma explicitamente que Helena está em aleitamento materno exclusivo, o que exclui esta possibilidade.\n\nConclusão:\nDiante de um lactente com colestase e fezes acólicas, a Atresia de Vias Biliares deve ser a primeira hipótese a ser excluída ou confirmada, devido ao curto intervalo de tempo disponível para a intervenção cirúrgica de Kasai.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Cirurgia Infantil",
+      "Outros Distúrbios do Período Neonatal",
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:51.744Z"
+  }
+]

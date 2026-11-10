@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_66e176a2-1cd0-4ca6-907a-b179a6f35194",
+    "originalId": "66e176a2-1cd0-4ca6-907a-b179a6f35194",
+    "statement": "Homem de 28 anos sofreu trauma doméstico com serra elétrica, evoluindo com perda de substância na ponta do II quirodáctilo direito, com exposição da polpa, porém sem exposição óssea ou tendínea. O paciente encontra-se estável, sem outras lesões associadas.\n\nQual é a melhor opção de fechamento para este defeito cutâneo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enxerto de pele parcial da coxa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fechamento primário com descolamento amplo para sutura sem tensão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fechamento por segunda intenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retalho de avanço V-Y local.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso descreve uma lesão traumática na ponta do dedo (quirodátilo) com perda de substância na polpa digital, porém sem exposição de estruturas nobres (osso ou tendão). O objetivo no tratamento de lesões de extremidades digitais é manter o comprimento do dedo, preservar a sensibilidade e proporcionar uma cobertura cutânea estável e acolchoada.\n\nExplicação das alternativas:\n\na) Incorreta. O enxerto de pele parcial (retirado da coxa, por exemplo) é muito fino e sofre grande contração cicatricial. Na polpa digital, ele não ofereceria o preenchimento necessário para proteger a extremidade, resultando em uma cobertura frágil, pouco estética e com baixa qualidade sensorial.\n\nb) Incorreta. A pele da ponta do dedo é firmemente aderida aos tecidos profundos por septos fibrosos. Tentar um fechamento primário com descolamento amplo em uma área com perda de substância gera tensão excessiva, o que pode levar à necrose das bordas, dor crônica e deformidade em \"unha em bico de papagaio\" ou encurtamento do dedo.\n\nc) Incorreta. Embora o fechamento por segunda intenção possa ser utilizado em lesões muito pequenas e superficiais (geralmente menores que 1 cm² em crianças ou feridas muito distais), ele demanda um tempo de cicatrização prolongado e pode resultar em uma cicatriz atrófica e hipersensível. Em um paciente jovem de 28 anos com exposição da polpa, busca-se um resultado funcional superior.\n\nd) Correta. O retalho de avanço V-Y local (como as técnicas de Atasoy ou Kutler) é a conduta de escolha para perdas de substância na ponta do dedo com exposição da polpa. Esse procedimento consiste em avançar um retalho de pele e tecido subcutâneo da própria região para cobrir o defeito. Ele é ideal porque leva tecido vascularizado e com inervação preservada para a área lesionada, garantindo o \"acolchoamento\" necessário para a pinça digital e mantendo a sensibilidade local.\n\nResumo: Para lesões de polpa digital onde se deseja manter a sensibilidade e o volume da ponta do dedo, os retalhos locais (V-Y) superam os enxertos e o fechamento simples.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Plástica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:01.567Z"
+  },
+  {
+    "id": "AJUDA_66e8ee40-c7e3-4323-bef1-f69625da6316",
+    "originalId": "66e8ee40-c7e3-4323-bef1-f69625da6316",
+    "statement": "Mulher de 60 anos, hipertensa há 10 anos, DM2 controlado com metformina. PA média: 148 x 92 mmHg. TFG 58mL/min/1,73m2.\nA melhor classe medicamentosa para iniciar ou intensificar o tratamento anti-hipertensivo é a de",
+    "options": [
+      {
+        "id": "A",
+        "text": "beta-bloqueadores isolados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "diuréticos tiazídicos isolados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "inibidores da ECA (IECA).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "antagonistas do canal de cálcio (verapamil).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "bloqueadores alfa-adrenérgico (doxazosina).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: Trata-se de uma paciente de 60 anos com Hipertensão Arterial Sistêmica (HAS) e Diabetes Mellitus tipo 2 (DM2). O dado fundamental para a escolha da medicação é a Taxa de Filtração Glomerular (TFG) de 58 mL/min/1,73 m², que caracteriza a presença de Doença Renal Crônica (DRC) estágio 3a. Em pacientes que apresentam a tríade HAS, DM2 e DRC, a escolha do anti-hipertensivo deve priorizar a nefroproteção.\n\nAlternativa a: Incorreta. Os betabloqueadores não são fármacos de primeira linha para o tratamento da hipertensão arterial não complicada. No contexto do diabetes, eles podem mascarar sintomas de hipoglicemia e, em alguns casos, interferir na resistência à insulina. Seu uso na hipertensão é reservado para situações específicas, como insuficiência cardíaca, pós-infarto agudo do miocárdio ou controle de arritmias.\n\nAlternativa b: Incorreta. Os diuréticos tiazídicos são excelentes opções para o tratamento inicial da hipertensão arterial em diversos perfis de pacientes. No entanto, em pacientes diabéticos com sinais de comprometimento renal (TFG menor que 60), eles perdem a preferência para drogas que bloqueiam o sistema renina-angiotensina-aldosterona. Além disso, em doses elevadas, podem ter efeitos metabólicos neutros ou levemente negativos sobre a glicemia.\n\nAlternativa c: Correta. Os Inibidores da Enzima Conversora de Angiotensina (IECA) são a classe de escolha para pacientes hipertensos que possuem Diabetes Mellitus ou Doença Renal Crônica. O principal benefício é a nefroproteção: os IECA promovem a dilatação da arteríola eferente no glomérulo, o que reduz a pressão intraglomerular e a proteinúria, retardando a progressão da doença renal.\n\nAlternativa d: Incorreta. O verapamil é um antagonista do canal de cálcio não di-idropiridínico, utilizado mais frequentemente para controle de frequência cardíaca ou angina. Embora reduzam a pressão arterial, os antagonistas de cálcio não oferecem o mesmo grau de proteção renal específica documentada pelos IECA em pacientes diabéticos com disfunção renal.\n\nAlternativa e: Incorreta. A doxazosina é um bloqueador alfa-1 adrenérgico de ação periférica. Esta classe não é considerada de primeira linha para o tratamento da hipertensão devido à falta de evidências robustas na redução de desfechos cardiovasculares maiores quando comparada a outras classes. Seu uso costuma ser reservado como terapia de quarta linha ou para pacientes com hiperplasia prostática benigna associada.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:01.567Z"
+  },
+  {
+    "id": "AJUDA_66fa1d24-687b-41ac-80a8-8e6e0cecb1b1",
+    "originalId": "66fa1d24-687b-41ac-80a8-8e6e0cecb1b1",
+    "statement": "Uma adolescente de 16 anos comparece à consulta sem apresentar menarca, embora tenha iniciado o desenvolvimento mamário aos 11 anos. Com base na classificação das anormalidades puberais, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Puberdade heterossexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Puberdade precoce isossexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Puberdade tardia ou interrompida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Desenvolvimento puberal assincrônico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, é necessário revisar os critérios diagnósticos da puberdade tardia e da amenorreia primária. A puberdade em meninas segue uma sequência cronológica geralmente iniciada pela telarca (desenvolvimento mamário), seguida pela pubarca e, por fim, pela menarca (primeira menstruação).\n\nO diagnóstico de puberdade tardia ou interrupção do desenvolvimento é feito quando:\n1. Não há caracteres sexuais secundários aos 13 anos.\n2. A menarca não ocorreu até os 15 anos, mesmo com a presença de caracteres sexuais.\n3. A menarca não ocorreu dentro de um período de 3 anos após o início da telarca.\n\nNo caso da paciente de 16 anos: ela iniciou a telarca aos 11 anos (idade normal), mas já se passaram 5 anos sem a ocorrência da menarca, e ela já ultrapassou a idade limite de 15 anos para o primeiro ciclo. Portanto, o diagnóstico clínico é de puberdade tardia.\n\nAnálise das alternativas:\n\na) Incorreta. A puberdade heterossexual é caracterizada pelo desenvolvimento de caracteres sexuais secundários opostos ao fenótipo biológico. Em meninas, isso se manifesta como virilização (crescimento de pelos em padrão masculino, clitoromegalia, engrossamento da voz), geralmente causada por excesso de androgênios, como na Hiperplasia Adrenal Congênita ou tumores virilizantes. A paciente em questão apresenta telarca, que é um desenvolvimento isossexual (feminino).\n\nb) Incorreta. A puberdade precoce isossexual ocorre quando os caracteres sexuais secundários do mesmo sexo aparecem antes dos 8 anos de idade em meninas. A paciente iniciou o desenvolvimento mamário aos 11 anos, o que está dentro da faixa de normalidade cronológica para o início da puberdade.\n\nc) Correta. Esta alternativa define a situação da paciente. Embora o início da puberdade (telarca) tenha ocorrido na idade adequada, houve uma falha na progressão para a menarca. O atraso na menarca além dos 15 anos ou após 3 anos da telarca classifica o quadro como puberdade tardia ou desenvolvimento interrompido/atrasado.\n\nd) Incorreta. O desenvolvimento puberal assincrônico refere-se a situações em que a sequência normal da puberdade é alterada ou em que um dos componentes do desenvolvimento está ausente enquanto outros progridem. Um exemplo clássico é a Síndrome de Insensibilidade aos Androgênios, na qual há desenvolvimento mamário (por conversão periférica de estrogênios), mas ausência de pelos pubianos e axilares. No caso clínico, o foco principal é o atraso cronológico da menarca, o que direciona o diagnóstico para a classificação de puberdade tardia.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Puberdade",
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:01.567Z"
+  },
+  {
+    "id": "AJUDA_66fcce25-e4ee-4db2-aebb-4033aebec3d2",
+    "originalId": "66fcce25-e4ee-4db2-aebb-4033aebec3d2",
+    "statement": "Os achados semiológicos característicos na síndrome do bebê azul em neonatos estão associados principalmente à/ao:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cianose central persistente agravada pelo choro, sem melhora com administração de oxigênio suplementar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Palidez cutânea generalizada associada à taquicardia e hiperpnéia em repouso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rubor facial evidente durante o choro, com melhora após elevação da cabeça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cianose periférica transitória em extremidades, com pulsos femorais amplos e simétricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Icterícia generalizada com discreta coloração azulada em leitos ungueais e mucosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda a síndrome do bebê azul, termo clinicamente associado às cardiopatias congênitas cianóticas no período neonatal. O foco é identificar o padrão semiológico que diferencia essa condição de outras causas de alteração de cor na pele do recém-nascido.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. A cianose central é o sinal clínico clássico dessa síndrome. Ela é persistente porque decorre de defeitos estruturais no coração que promovem um shunt (desvio) de sangue venoso (pobre em oxigênio) diretamente para a circulação sistêmica, ou devido a uma circulação em paralelo (como na Transposição das Grandes Artérias). O esforço, como o choro, aumenta a resistência vascular pulmonar e a demanda metabólica, agravando o shunt e intensificando a coloração azulada. A ausência de melhora significativa com oxigênio suplementar (Teste da Hiperóxia negativo) é o que diferencia a causa cardíaca da causa pulmonar: se o sangue não está passando pelos alvéolos devido ao desvio anatômico, ofertar mais oxigênio nos pulmões não resolverá a hipoxemia sistêmica.\n\nAlternativa b) Incorreta. A palidez cutânea generalizada é característica de quadros de anemia aguda, choque circulatório ou hipovolemia grave. Embora o bebê azul possa apresentar taquicardia e hiperpneia como mecanismos de compensação, o sinal cardinal é a cianose (cor azulada), e não a palidez.\n\nAlternativa c) Incorreta. O rubor facial (cor avermelhada) ocorre por vasodilatação ou policitemia, sendo o oposto da cianose. Além disso, a elevação da cabeça não é uma manobra utilizada para melhorar a oxigenação em casos de cardiopatia congênita cianótica. Em crises de hipóxia específicas (como na Tetralogia de Fallot), utiliza-se a posição genupeitoral para aumentar a resistência vascular sistêmica.\n\nAlternativa d) Incorreta. A cianose periférica (acrocianose) limitada às extremidades é frequentemente um achado fisiológico em recém-nascidos nas primeiras horas de vida, resultante de instabilidade vasomotora ou frio, sem indicar cardiopatia. Pulsos femorais amplos podem sugerir outras condições, como a persistência do canal arterial, mas não definem a síndrome do bebê azul.\n\nAlternativa e) Incorreta. A icterícia é a coloração amarelada da pele decorrente do acúmulo de bilirrubina. Embora uma icterícia muito intensa possa mascarar outras cores, ela possui fisiopatologia e implicações clínicas totalmente distintas da cianose central por shunt cardíaco.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:01.567Z"
+  },
+  {
+    "id": "AJUDA_670f4419-c832-4695-87b5-9a38936f7b6c",
+    "originalId": "670f4419-c832-4695-87b5-9a38936f7b6c",
+    "statement": "Em qual situação é recomendada a vacinação de bloqueio?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em resposta a um surto de uma doença evitável por vacina, para impedir a propagação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Em campanhas de vacinação de rotina em todo o país.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Exclusivamente em crianças menores de 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Para controle de doenças não transmissíveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A vacinação de bloqueio é uma estratégia de vigilância epidemiológica aplicada em situações de emergência ou frente à detecção de casos suspeitos ou confirmados de doenças imunopreveníveis. O objetivo principal é criar uma barreira imunológica ao redor do caso para interromper a cadeia de transmissão do patógeno.\n\nAlternativa (a): Correta. Esta é a definição clássica da vacinação de bloqueio. Ela é recomendada quando ocorre um surto ou a ameaça de um (como no caso de sarampo, febre amarela ou meningite), visando vacinar rapidamente os contatos e pessoas na área de abrangência do caso-índice para impedir que a doença se propague para o restante da população.\n\nAlternativa (b): Incorreta. As campanhas de rotina e o calendário nacional de vacinação têm caráter preventivo e sistemático. Elas visam manter altas coberturas vacinais na população ao longo do tempo para evitar que os casos apareçam, enquanto o bloqueio é uma ação reativa e localizada após a ocorrência de um evento sentinela.\n\nAlternativa (c): Incorreta. Embora as crianças sejam um público-alvo importante em muitas vacinas, a vacinação de bloqueio é direcionada a indivíduos suscetíveis de qualquer idade que possam ter tido contato com o agente infeccioso. No caso de febre amarela ou sarampo, por exemplo, adultos não vacinados também recebem a dose de bloqueio.\n\nAlternativa (d): Incorreta. Doenças não transmissíveis, como diabetes, hipertensão ou doenças cardiovasculares, não são causadas por agentes infecciosos transmissíveis entre pessoas. Portanto, não existe o conceito de \"bloqueio\" vacinal para essas condições, já que não há uma cadeia de transmissão a ser interrompida.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Imunizações",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:01.567Z"
+  },
+  {
+    "id": "AJUDA_671f3695-faf9-47b5-965e-f4da872ca670",
+    "originalId": "671f3695-faf9-47b5-965e-f4da872ca670",
+    "statement": "Acerca da profilaxia de tromboembolismo venoso (TEV) em pacientes internados, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A profilaxia mecânica é mais eficaz do que a farmacológica em pacientes com alto risco de sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A enoxaparina deve ser administrada apenas em pacientes cirúrgicos de alto risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A profilaxia com heparina de baixo peso molecular reduz significativamente a mortalidade hospitalar em pacientes clínicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pacientes com insuficiência renal grave devem receber heparina de baixo peso molecular em dose ajustada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. A profilaxia mecânica, que inclui o uso de meias de compressão graduada e compressão pneumática intermitente, é a estratégia de escolha quando a profilaxia farmacológica é contraindicada devido ao alto risco de sangramento. No entanto, ela é considerada menos eficaz na prevenção de eventos trombóticos do que o uso de fármacos. Os métodos farmacológicos são a primeira linha para pacientes de alto risco que não apresentam contraindicações hemorrágicas.\n\nAlternativa b: Incorreta. A enoxaparina, uma heparina de baixo peso molecular, não é restrita a pacientes cirúrgicos. Ela é amplamente indicada para pacientes clínicos (não cirúrgicos) internados que apresentam fatores de risco para tromboembolismo venoso, como insuficiência cardíaca congestiva, doenças respiratórias graves, infecções agudas ou imobilização prolongada, frequentemente avaliados por escores como o de Pádua.\n\nAlternativa c: Correta. Esta alternativa reflete o consenso estabelecido por grandes ensaios clínicos (como o estudo MEDENOX). A profilaxia farmacológica com heparina de baixo peso molecular em pacientes clínicos com perfil de risco adequado reduz não apenas a incidência de trombose venosa profunda e embolia pulmonar, mas também contribui para a redução da mortalidade hospitalar global ao prevenir complicações fatais relacionadas ao tromboembolismo.\n\nAlternativa d: Incorreta. Em pacientes com insuficiência renal grave, geralmente definida por um clearance de creatinina inferior a 30 mL/min, o uso de heparina de baixo peso molecular deve ser evitado ou feito com monitorização rigorosa do nível de fator anti-Xa, pois a droga é eliminada pelos rins e pode se acumular, elevando o risco de sangramentos graves. Na prática de provas e diretrizes, a conduta preferencial para esses pacientes é o uso de heparina não fracionada (HNF) em doses profiláticas, uma vez que a HNF tem metabolismo predominantemente não renal.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Perioperatório",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:01.567Z"
+  },
+  {
+    "id": "AJUDA_67314200-316a-43cd-a9f9-eba347536e42",
+    "originalId": "67314200-316a-43cd-a9f9-eba347536e42",
+    "statement": "Casal tenta engravidar há 14 meses sem sucesso. A mulher tem ciclos regulares e o homem tem espermograma normal. A histerossalpingografia mostra obstrução tubária bilateral. A conduta para obtenção de gravidez é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fertilização In Vitro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Inseminação Intrauterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indução da ovulação com citrato de clomifeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coito programado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso:\nO casal apresenta um quadro de infertilidade, definida pela ausência de gravidez após 12 meses de relações sexuais regulares sem uso de métodos contraceptivos. A investigação básica mostra que o fator masculino é normal e a mulher apresenta ciclos regulares (sugerindo ovulação preservada). O ponto crítico é a histerossalpingografia, que diagnostica obstrução tubária bilateral.\n\nExplicação das alternativas:\n\na) CORRETA. A Fertilização in vitro (FIV) é o tratamento de escolha para o fator tubário bilateral. Como as trompas são o local onde ocorre a fecundação natural (encontro do óvulo com o espermatozoide), a obstrução total impede que esse processo aconteça no corpo da mulher. Na FIV, a coleta dos óvulos e a fecundação ocorrem em laboratório, e os embriões são transferidos diretamente para o útero, contornando a necessidade de trompas funcionais.\n\nb) INCORRETA. A Inseminação intrauterina (IIU) consiste na deposição de espermatozoides preparados diretamente na cavidade uterina. Para que a IIU tenha sucesso, é pré-requisito obrigatório que a paciente tenha pelo menos uma das trompas pérvias (abertas) e funcionais, pois a fecundação ainda ocorre dentro do trato reprodutor feminino.\n\nc) INCORRETA. O citrato de clomifeno é um medicamento utilizado para induzir a ovulação em pacientes que não ovulam regularmente (anovulação). No caso descrito, a paciente tem ciclos regulares e o problema é de ordem mecânica/anatômica (obstrução), e não hormonal ou ovulatória. Mesmo que ela ovule mais óvulos, eles não conseguirão encontrar os espermatozoides devido ao bloqueio nas trompas.\n\nd) INCORRETA. O coito programado é uma técnica de baixa complexidade que orienta o casal a ter relações nos dias de maior fertilidade. Assim como a inseminação, essa conduta exige a integridade anatômica das trompas de Falópio. Com a obstrução bilateral confirmada, não há possibilidade de gravidez por via natural.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:01.567Z"
+  },
+  {
+    "id": "AJUDA_673f8f54-9e39-47f7-b6c6-6188fe2a2d57",
+    "originalId": "673f8f54-9e39-47f7-b6c6-6188fe2a2d57",
+    "statement": "Os pais de um escolar em tratamento de rinite alérgica com corticoide nasal procuraram o posto de saúde para aplicação da vacina HPV (papilomavírus humano).\nEm vista do quadro apresentado, o agente do posto de saúde deverá:",
+    "options": [
+      {
+        "id": "A",
+        "text": "orientar os pais a vacinarem a criança após o término do tratamento;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "suspender a medicação por 7 dias após a vacinação;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "vacinar a criança com as orientações habituais;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "vacinar a criança com a dose dobrada da vacina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "vacinar a criança, advertindo quanto à possibilidade de reações vacinais mais intensas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Essa questão aborda um tema recorrente em provas de residência: as contraindicações e precauções para a vacinação, especificamente quanto ao uso de corticoides.\n\nO ponto fundamental para resolver a questão é entender que o uso de corticoides por via inalatória, nasal ou tópica, bem como o uso sistêmico em doses baixas ou por curto período (menos de 14 dias), não causa imunossupressão clinicamente relevante. Além disso, a vacina contra o HPV é uma vacina inativada (recombinante), o que oferece um perfil de segurança ainda maior em pacientes com algum grau de comprometimento imunológico, embora este não seja o caso do paciente em questão.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Não há necessidade de adiar a vacinação. O corticoide nasal tem ação local e absorção sistêmica mínima, não interferindo na resposta imunológica à vacina. Postergar a dose apenas atrasa a proteção do paciente de forma desnecessária.\n\nAlternativa b) Incorreta. Não existe recomendação clínica ou farmacológica para suspender o tratamento da rinite alérgica devido à vacinação. A medicação não interfere na eficácia da vacina e a vacina não altera a segurança do corticoide nasal.\n\nAlternativa c) Correta. Como o paciente não apresenta imunossupressão (o uso de corticoide nasal não é contraindicação nem precaução para vacinas) e a vacina contra o HPV não é composta por vírus vivos, a conduta correta é seguir o calendário vacinal normalmente, aplicando a vacina com as orientações de rotina.\n\nAlternativa d) Incorreta. O uso de dose dobrada de vacinas é uma conduta excepcional, reservada a protocolos muito específicos para pacientes gravemente imunossuprimidos (como em alguns esquemas para hepatite B em nefropatas crônicos), e nunca se aplica ao uso de corticoide nasal ou à vacina contra o HPV neste contexto.\n\nAlternativa e) Incorreta. O uso de corticoide nasal não predispõe o paciente a reações adversas mais intensas após a aplicação da vacina contra o HPV. As reações esperadas são as mesmas de qualquer outro paciente da mesma faixa etária (dor local, eritema ou febre baixa).\n\nEm resumo: Corticoides tópicos, inalatórios ou nasais NÃO são contraindicações para qualquer vacina do calendário nacional de imunização. Além disso, por ser uma vacina inativada, a vacina contra o HPV poderia ser administrada com segurança até mesmo em pacientes em corticoterapia sistêmica imunossupressora, embora, nestes casos, a resposta imune pudesse ser menor.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:01.567Z"
+  },
+  {
+    "id": "AJUDA_6740205e-9ecc-4d4a-b36a-b1f7b85b8a86",
+    "originalId": "6740205e-9ecc-4d4a-b36a-b1f7b85b8a86",
+    "statement": "Um homem de 40 anos apresenta queixa de sangramento anal esporádico às evacuações. Além disso, refere sensação de evacuação incompleta, mas nega dor. Ao exame, exibe hemorroidas internas com prolapso aos esforços, mas com redução espontânea, isto é, sem a necessidade de manobras. O paciente é hígido e nega uso de medicações.\nCom base nas queixas e no exame físico, qual o tratamento definitivo mais adequado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemorroidectomia convencional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Escleroterapia química com fenol a 5%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ligaduras elásticas em consultório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Procedimento para prolapso hemorroidário (PPH).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Terapia medicamentosa com anti-inflamatórios, dieta laxativa e modificação do estilo de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de hemorroidas internas. O ponto fundamental para a escolha do tratamento é a classificação do grau de prolapso:\n\n1. Grau I: Sangramento, mas sem prolapso.\n2. Grau II: Prolapso com o esforço evacuatório, mas com redução espontânea (caso do paciente).\n3. Grau III: Prolapso que exige redução manual para retornar ao canal anal.\n4. Grau IV: Prolapso persistente, não passível de redução manual.\n\nPara o tratamento de hemorroidas internas de grau II, a conduta inicial após falha das medidas comportamentais ou como medida definitiva ambulatorial é a realização de procedimentos minimamente invasivos em consultório.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. A hemorroidectomia convencional (técnicas de Milligan-Morgan ou Ferguson) é considerada o padrão-ouro para hemorroidas de graus III e IV, ou para casos de graus inferiores que não responderam ao tratamento ambulatorial. Por ser um procedimento cirúrgico mais invasivo e com pós-operatório doloroso, não é a primeira escolha para o grau II.\n\nb) Incorreta. A escleroterapia química consiste na injeção de agentes esclerosantes na submucosa. Embora possa ser utilizada em graus I e II, apresenta taxas de recorrência maiores e resultados menos consistentes do que a ligadura elástica, sendo geralmente reservada para pacientes com distúrbios de coagulação onde a ligadura é contraindicada.\n\nc) Correta. A ligadura elástica é o tratamento de escolha (padrão-ouro) para hemorroidas internas de grau II e pode ser aplicada também no grau III. É um procedimento realizado em consultório, sem necessidade de anestesia geral, com baixos índices de complicações e excelente eficácia na resolução do prolapso e do sangramento.\n\nd) Incorreta. O PPH (grampeamento) é uma técnica cirúrgica indicada principalmente para hemorroidas de grau III e alguns casos de grau IV com componente circular. Assim como a hemorroidectomia, é um procedimento de maior porte, realizado em ambiente hospitalar, sendo excessivo para um quadro de grau II inicial.\n\ne) Incorreta. A terapia medicamentosa e a modificação do estilo de vida (dieta rica em fibras e hidratação) são a base do tratamento para todos os pacientes, especialmente no grau I. No entanto, para um paciente que já apresenta prolapso (grau II) e busca um tratamento definitivo para cessar os sintomas, os procedimentos ambulatoriais como a ligadura elástica são as condutas mais resolutivas.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:01.567Z"
+  },
+  {
+    "id": "AJUDA_67430642-fd8b-493d-9a58-517ddec03f8d",
+    "originalId": "67430642-fd8b-493d-9a58-517ddec03f8d",
+    "statement": "O câncer de colo do útero é o quarto câncer mais incidente em mulheres, com a ocorrência de 604 mil novos casos no mundo anualmente, o que corresponde a 6,5% de todos os cânceres em mulheres. Apesar da alta incidência, o câncer de colo do útero é considerado suscetível à erradicação, devido à existência do exame de rastreio cujo padrão-ouro é o exame citopatológico do colo do útero. É situação na qual deve ser realizada a coleta do exame citopatológico do colo do útero anualmente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mulher cis, bissexual, 35 anos, em tratamento com quimioterápicos, sem realizar exame citopatológico há cinco anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mulher cis, homossexual, de 65 anos, ativa sexualmente, com dois exames anuais negativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mulher cis, heterossexual, ativa sexualmente, de 25 anos, com dois exames anuais consecutivos negativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Homem trans, de 25 anos, ativo sexualmente, com dois exames anuais consecutivos negativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Mulher cis, lésbica, 29 anos, com primeiro e último exame citopatológico há um ano, com resultado negativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender a questão, devemos utilizar as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, estabelecidas pelo Ministério da Saúde e pelo INCA. O rastreamento é indicado para mulheres (ou pessoas com colo do útero) entre 25 e 64 anos que já iniciaram a vida sexual. A regra de periodicidade padrão é: realizar dois exames com intervalo de um ano entre eles; se ambos apresentarem resultados normais, as próximas coletas devem ser feitas a cada três anos.\n\nAlternativa A - Incorreta. Pacientes em tratamento quimioterápico são consideradas imunossuprimidas. Para pessoas imunossuprimidas, a recomendação é de rastreamento anual (no caso de HIV, com exames semestrais no primeiro ano se houver contagem de CD4 baixa). No entanto, o enunciado busca a aplicação da rotina básica de transição de periodicidade. Além disso, como ela está há cinco anos sem realizar o exame, ela deve realizar uma coleta imediata para reiniciar o rastreio, mas a alternativa E descreve com maior precisão a fase obrigatória de coleta anual do protocolo de rotina.\n\nAlternativa B - Incorreta. O rastreamento deve ser realizado até os 64 anos de idade. Mulheres com 65 anos ou mais que apresentarem pelo menos dois exames negativos consecutivos nos últimos cinco anos podem ter a coleta encerrada. Como esta paciente de 65 anos já possui dois exames anuais negativos, ela atingiu o critério para a cessação do rastreio, não havendo necessidade de coleta anual.\n\nAlternativa C - Incorreta. A paciente está na faixa etária correta (25 a 64 anos), porém já cumpriu o requisito inicial de dois exames anuais consecutivos negativos. De acordo com a norma técnica, após dois resultados anuais normais, o intervalo de coleta passa a ser trienal. Portanto, ela não deve realizar o exame anualmente.\n\nAlternativa D - Incorreta. Homens trans que mantêm a estrutura do colo do útero devem ser submetidos ao rastreamento seguindo os mesmos critérios e periodicidade aplicados às mulheres cis. Como este paciente de 25 anos já possui dois exames anuais negativos, ele também deve migrar para o intervalo de coleta trienal.\n\nAlternativa E - Correta. Esta paciente tem 29 anos (está na faixa etária de rastreio) e realizou apenas o primeiro exame da sua vida há um ano. Para que ela possa passar para o intervalo de coleta a cada três anos, o protocolo exige obrigatoriamente dois exames anuais consecutivos negativos. Como ela tem apenas um resultado negativo, ela deve realizar o segundo exame agora (um ano após o primeiro) para completar o ciclo inicial e, se este novo resultado for negativo, poderá passar para o regime trienal. Portanto, esta é a situação em que a coleta anual deve ser realizada.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:01.567Z"
+  }
+]

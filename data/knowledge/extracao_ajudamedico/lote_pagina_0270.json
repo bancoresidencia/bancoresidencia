@@ -1,0 +1,493 @@
+[
+  {
+    "id": "AJUDA_4ae60548-dba8-4ffe-b94f-3126677a7ef9",
+    "originalId": "4ae60548-dba8-4ffe-b94f-3126677a7ef9",
+    "statement": "A imunoglobulina anti-RH é indicada em qual situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Puérpera Rh negativa, coombs indireto negativo e RN Rh negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Puérpera Rh negativa, coombs indireto negativo e RN Rh positivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Puérpera Rh negativa, Coombs indireto positivo e RN Rh negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Puérpera Rh negativa, Coombs indireto positivo e RN Rh positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A profilaxia com imunoglobulina anti-D (anti-Rh) tem como objetivo evitar a aloimunização Rh em mulheres com potencial de desenvolver anticorpos contra o fator Rh do feto. Para que a medicação seja indicada no pós-parto, três critérios fundamentais devem ser preenchidos simultaneamente: a mãe deve ser Rh negativa, ela não deve estar previamente sensibilizada e o recém-nascido deve ser Rh positivo.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Se o recém-nascido for Rh negativo, ele não possuirá o antígeno D em suas hemácias. Portanto, não há risco de sensibilizar a mãe, tornando a aplicação da imunoglobulina desnecessária.\n\nAlternativa b) Correta. Esta alternativa descreve a situação clássica de indicação. A puérpera é Rh negativa e o Coombs indireto negativo prova que ela ainda não possui anticorpos contra o fator Rh. O recém-nascido ser Rh positivo fornece o estímulo antigênico necessário para uma possível sensibilização durante o parto. A imunoglobulina agirá destruindo as hemácias fetais que cruzarem para a circulação materna antes que o sistema imunológico da mãe as reconheça e inicie a produção de anticorpos próprios.\n\nAlternativa c) Incorreta. Se o Coombs indireto for positivo, a paciente já estará sensibilizada, o que torna a imunoglobulina ineficaz como medida preventiva. Além disso, se o recém-nascido for Rh negativo, não haverá exposição a antígenos estranhos ao organismo materno.\n\nAlternativa d) Incorreta. Apesar de o recém-nascido ser Rh positivo, a presença de um Coombs indireto positivo na puérpera indica que o processo de sensibilização já ocorreu em gestações ou eventos anteriores. A imunoglobulina é uma medicação profilática e não tem utilidade em pacientes que já são portadoras de anticorpos anti-D (já aloimunizadas).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:46.962Z"
+  },
+  {
+    "id": "AJUDA_4ae7947a-986b-4554-bbf1-99cc9de69daf",
+    "originalId": "4ae7947a-986b-4554-bbf1-99cc9de69daf",
+    "statement": "Uma paciente de 26 anos, nuligesta, apresenta citologia oncótica com resultado de Lesão Intraepitelial de Alto Grau (HSIL). A colposcopia é satisfatória (junção escamocolunar visível) e identifica uma lesão acetobranca densa com pontilhado grosseiro no lábio anterior. A biópsia dirigida confirma Neoplasia Intraepitelial Cervical grau 3 (NIC 3). Considerando a idade da paciente e o desejo reprodutivo futuro, a conduta terapêutica adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A cauterização da lesão com crioterapia ou laser (terapia destrutiva) é a melhor opção, pois a NIC 3 é uma lesão superficial que não requer análise histopatológica da peça, minimizando o risco de insuficiência istmocervical futura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A realização de procedimento excisional da zona de transformação (EZT/CAF/LLETZ) ou conização é o tratamento preferencial, pois permite a remoção completa da lesão e fornece amostra para avaliação histopatológica das margens e exclusão de microinvasão, preservando o útero.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O seguimento semestral com citologia e colposcopia por 2 anos é a conduta recomendada, uma vez que a maioria das lesões de alto grau (NIC 3) em mulheres com menos de 30 anos regride espontaneamente, evitando-se intervenções cirúrgicas desnecessárias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A histerectomia total é a conduta de escolha imediata para NIC 3, visto que se trata de um carcinoma in situ com risco iminente de invasão estromal e metástase linfática, não sendo seguro preservar o órgão em nenhuma faixa etária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta um diagnóstico de Neoplasia Intraepitelial Cervical grau 3 (NIC 3), que é uma lesão precursora do câncer de colo uterino. O manejo deve equilibrar a eficácia no tratamento da lesão e a preservação da fertilidade, dado o perfil da paciente (26 anos, nuligesta).\n\nAlternativa a) Incorreta. Terapias destrutivas, como crioterapia ou cauterização a laser, não são recomendadas para o tratamento da NIC 3. O principal problema dessas técnicas é que elas destroem o tecido, impedindo a análise histopatológica de toda a zona de transformação. Isso impossibilita a avaliação das margens cirúrgicas e, crucialmente, impede a exclusão de um possível carcinoma invasor oculto que a biópsia inicial por pinça pode não ter detectado.\n\nAlternativa b) Correta. O tratamento de escolha para a NIC 3 é o procedimento excisional, preferencialmente a Exérese da Zona de Transformação (EZT), também chamada de CAF (Cirurgia de Alta Frequência) ou LLETZ. Esse método retira a lesão inteira e permite que o patologista examine a peça para confirmar se a neoplasia foi totalmente removida (margens livres) e se não há sinais de microinvasão estromal. É um procedimento conservador que preserva o útero e a capacidade reprodutiva da paciente.\n\nAlternativa c) Incorreta. O seguimento citocolposcópico (conduta expectante) é aceitável apenas em casos selecionados da NIC 2 em pacientes jovens (geralmente menores de 25 anos), devido à possibilidade de regressão espontânea. No entanto, a NIC 3 é considerada uma lesão precursora imediata do câncer, com baixas taxas de regressão e alto potencial de progressão. Portanto, o tratamento ativo é mandatório logo após o diagnóstico histológico.\n\nAlternativa d) Incorreta. A histerectomia é um tratamento excessivo (overtreatment) para uma paciente de 26 anos com desejo reprodutivo. A NIC 3, embora seja um carcinoma in situ, está restrita ao epitélio e não apresenta invasão do estroma ou risco de metástase linfática nesse estágio. A Cirurgia de Alta Frequência (CAF) ou a conização são suficientes para a cura na grande maioria dos casos, devendo-se reservar a histerectomia para situações muito específicas, como recidivas persistentes ou quando há outras patologias uterinas associadas que justifiquem a remoção do órgão.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:46.962Z"
+  },
+  {
+    "id": "AJUDA_4ae89af1-f1a1-4202-856e-f017b399b901",
+    "originalId": "4ae89af1-f1a1-4202-856e-f017b399b901",
+    "statement": "Tradicionalmente, as estatísticas de mortalidade segundo causas de morte são produzidas atribuindo-se ao óbito uma só causa, chamada causa básica. No Atestado de Óbito esta causa básica é descrita em qual linha do campo n°49 - Causas da Morte?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na primeira linha da Parte I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na última linha da Parte II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Na primeira linha da Parte II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na última linha da Parte I.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Na primeira linha da Parte III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O preenchimento do Atestado de Óbito, especificamente no campo 49 (Causas da Morte), segue uma lógica internacional padronizada pela Organização Mundial da Saúde (OMS) para fins estatísticos e epidemiológicos. Esse campo é dividido em duas seções: Parte I e Parte II.\n\nA Parte I é destinada a descrever a sequência de eventos que levaram diretamente à morte. O preenchimento deve ser feito de modo que a Causa Terminal ou Imediata (o evento final) apareça na primeira linha (linha a) e a Causa Básica (a doença ou lesão que iniciou a cadeia de eventos) apareça na última linha preenchida da Parte I.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A primeira linha da Parte I é reservada para a Causa Terminal ou Imediata, que é a doença ou estado que causou diretamente o óbito (por exemplo, choque séptico ou insuficiência respiratória).\n\nAlternativa b: Incorreta. A Parte II é destinada às causas contribuintes, ou seja, estados patológicos que não estão na cadeia direta do evento que levou à morte, mas que colaboraram para o desfecho desfavorável. Não é nela que se registra a causa básica.\n\nAlternativa c: Incorreta. Assim como a alternativa anterior, a Parte II não é o local para a causa básica, independentemente da linha.\n\nAlternativa d: Correta. A Causa Básica é, por definição, a doença ou lesão que iniciou a cadeia de eventos patológicos que conduziram diretamente à morte. Para fins de tabulação epidemiológica, ela deve ser registrada na última linha preenchida da Parte I. Se a sequência tiver quatro etapas, ela ficará na linha d; se tiver apenas duas, ficará na linha b.\n\nAlternativa e: Incorreta. O campo 49 do modelo brasileiro de Declaração de Óbito não possui uma Parte III. Ele se encerra na Parte II.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:46.962Z"
+  },
+  {
+    "id": "AJUDA_4aea5d5e-9c99-47b9-8bd2-9f480cfe854e",
+    "originalId": "4aea5d5e-9c99-47b9-8bd2-9f480cfe854e",
+    "statement": "Várias classes de medicamentos, incluindo bloqueadores α, inibidores dos canais de cálcio e inibidores da fosfodiesterase tipo 5, são usadas para terapia expulsiva medicamentosa de cálculos ureterais. Foi demonstrado um efeito de classe dos α-bloqueadores na terapia expulsiva medicamentosa em casos específicos. Considera-se o seu uso para cálculos ureterais",
+    "options": [
+      {
+        "id": "A",
+        "text": "proximais > 5 mm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "distais < 5 mm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "proximais < 5 mm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "distais > 5 mm.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Terapia Expulsiva Medicamentosa (TEM) utiliza fármacos para facilitar a eliminação de cálculos ureterais, sendo os alfa-bloqueadores, como a tansulosina, a classe mais recomendada. O mecanismo de ação baseia-se no bloqueio dos receptores alfa-1 adrenérgicos, que estão presentes em alta densidade na musculatura lisa do ureter, especialmente no terço distal. O bloqueio desses receptores promove o relaxamento ureteral, reduzindo a pressão intraureteral e facilitando a progressão do cálculo.\n\nAlternativa (a) Incorreta: Cálculos proximais (localizados no ureter superior) apresentam uma resposta menos consistente aos alfa-bloqueadores em comparação aos distais. A densidade de receptores alfa-1 é maior no ureter distal, o que torna a terapia menos eficaz para cálculos situados próximos ao rim.\n\nAlternativa (b) Incorreta: Cálculos menores que 5 mm apresentam uma taxa de eliminação espontânea muito elevada, frequentemente superior a 80-90%. Grandes estudos multicêntricos demonstraram que, para cálculos desse tamanho, o uso de alfa-bloqueadores não oferece um benefício estatisticamente significativo na taxa de expulsão quando comparado ao placebo.\n\nAlternativa (c) Incorreta: Esta opção combina a localização proximal, onde a eficácia da medicação é reduzida, com um tamanho de cálculo (menor que 5 mm) que geralmente dispensa o uso de terapia expulsiva devido à alta probabilidade de passagem espontânea apenas com hidratação e analgesia.\n\nAlternativa (d) Correta: O benefício da terapia expulsiva medicamentosa com alfa-bloqueadores é claramente demonstrado em cálculos localizados no ureter distal que medem mais de 5 mm (geralmente entre 5 mm e 10 mm). Nessas situações, a medicação aumenta significativamente a taxa de sucesso da expulsão, reduz o tempo necessário para a saída do cálculo e diminui a intensidade da dor e a necessidade de analgésicos. As principais diretrizes urológicas internacionais (EAU e AUA) recomendam a TEM especificamente para este perfil de paciente.\n\nGabarito: Letra (d).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:46.962Z"
+  },
+  {
+    "id": "AJUDA_4b01b5b0-7514-4e03-8774-940af9217d57",
+    "originalId": "4b01b5b0-7514-4e03-8774-940af9217d57",
+    "statement": "Assinale a alternativa que apresenta o diagnóstico associado ao achado da radiografia:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia diafragmática",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estenose hipertrófica do piloro",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neuroblastoma",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tumor de Wilms",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pneumomediastino",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A radiografia de tórax e abdome apresentada é um caso clássico de hérnia diafragmática congênita, especificamente do tipo Bochdalek (posterolateral), que ocorre mais frequentemente no lado esquerdo. A imagem revela diversas imagens radiolucentes circulares no hemitórax esquerdo, que representam alças intestinais preenchidas por ar dentro da cavidade torácica. Observa-se também um importante desvio do mediastino e das estruturas cardíacas para o lado direito, além da presença de uma sonda orogástrica cuja extremidade se localiza no tórax, confirmando que o conteúdo abdominal está herniado.\n\nAlternativa A: Correta. O diagnóstico é de hérnia diafragmática. No recém-nascido, a presença de ruídos hidroaéreos no tórax, o desconforto respiratório imediato e o achado radiológico de alças intestinais no hemitórax com desvio do mediastino fecham o diagnóstico. O abdome costuma apresentar-se escavado (pobre em gás) devido à transposição das vísceras.\n\nAlternativa B: Incorreta. A estenose hipertrófica do piloro é uma patologia que surge geralmente entre a 3ª e a 6ª semana de vida, manifestando-se com vômitos não biliosos em jato. Radiograficamente, pode-se observar uma distensão da bolha gástrica, mas não há passagem de conteúdo abdominal para a cavidade torácica.\n\nAlternativa C: Incorreta. O neuroblastoma é um tumor sólido derivado da crista neural, comumente localizado nas adrenais ou na cadeia simpática. Na radiografia, apresentar-se-ia como uma massa de densidade de partes moles, muitas vezes com calcificações finas, mas sem o aspecto de \"bolhas de ar\" característico das alças intestinais.\n\nAlternativa D: Incorreta. O tumor de Wilms (nefroblastoma) é um tumor renal maligno da infância. Ele se manifesta clinicamente como uma massa abdominal palpável e, na radiografia, aparece como um efeito de massa que desloca as alças intestinais adjacentes, mas não causa herniação para o tórax.\n\nAlternativa E: Incorreta. O pneumomediastino é a presença de ar livre no mediastino. Radiologicamente, ele é visualizado como linhas de ar que contornam a silhueta cardíaca ou elevam o timo (sinal da vela ou sinal do spinnaker). O aspecto de múltiplas imagens císticas e o desvio mediastinal maciço por conteúdo sólido/gasoso (alças) não correspondem a esse diagnóstico.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal",
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/65694c8ed628b32111ac1a7e6f705d5f225bd9d913263c37d0ce2730f2110a50.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_4b01b5b0-7514-4e03-8774-940af9217d57_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:47.474Z"
+  },
+  {
+    "id": "AJUDA_4b1421c9-9485-456c-ba72-99ebdd2a0e4e",
+    "originalId": "4b1421c9-9485-456c-ba72-99ebdd2a0e4e",
+    "statement": "São aspectos de relevância para uma prática médica orientada pela prevenção quaternária, exceto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplicação dos fundamentos da saúde baseada em evidências.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reflexão sobre os limites éticos das intervenções em saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reforço das hierarquias existentes entre médico, equipe de saúde e pacientes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A construção de uma relação médico-paciente de confiança.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O conceito de prevenção quaternária refere-se ao conjunto de ações que visam identificar pacientes em risco de excesso de intervenção médica (medicalização excessiva), protegendo-os de novas invasões diagnósticas ou terapêuticas desnecessárias e sugerindo alternativas eticamente aceitáveis. O foco principal é evitar a iatrogenia e o dano causado pelo próprio sistema de saúde.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. A aplicação da saúde baseada em evidências é fundamental para a prevenção quaternária. Para que o médico possa evitar intervenções desnecessárias, ele deve basear suas decisões em dados científicos sólidos que demonstrem se um exame ou tratamento realmente traz benefício ou se causa apenas sobrediagnóstico (overdiagnosis) e sobretratamento (overtreatment).\n\nAlternativa b) Incorreta. A reflexão sobre os limites éticos é o cerne da prevenção quaternária. Ela se fundamenta no princípio bioético da não-maleficência (primum non nocere), que obriga o profissional a considerar se o potencial dano de uma intervenção supera seus possíveis benefícios.\n\nAlternativa c) Correta (Gabarito). Esta alternativa descreve uma prática contrária aos princípios da prevenção quaternária e da medicina moderna. A prevenção quaternária está intimamente ligada ao Método Clínico Centrado na Pessoa e à tomada de decisão compartilhada. O reforço de hierarquias rígidas e de uma postura paternalista impede a autonomia do paciente e dificulta o diálogo necessário para evitar intervenções excessivas. Portanto, este não é um aspecto relevante para essa prática, mas sim um obstáculo.\n\nAlternativa d) Incorreta. A construção de uma relação de confiança é indispensável. Para que um paciente aceite a proposta de não realizar um exame desnecessário ou de adotar uma conduta de observação vigilante (watchful waiting), ele precisa confiar plenamente no julgamento clínico do médico e sentir que suas angústias foram acolhidas. Sem confiança, a tendência do paciente é buscar intervenções em excesso com outros profissionais.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:47.474Z"
+  },
+  {
+    "id": "AJUDA_4b2310a5-ddb9-44c6-b4b0-d2b4595f4d5a",
+    "originalId": "4b2310a5-ddb9-44c6-b4b0-d2b4595f4d5a",
+    "statement": "Parturiente de 25 anos de idade encontra-se com dilatação cervical de 8 cm, feto com apresentação cefálica fletida e ponto de referência fetal orientado em direção à articulação sacroilíaca à esquerda.\nA variedade de posição occípito esquerda, o ângulo de rotação interna e seu sentido são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "posterior, 135 graus e sentido anti-horário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "anterior, 135 graus e sentido horário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "posterior, 45 graus e sentido horário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "anterior, 45 graus e sentido anti-horário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é necessário identificar a variedade de posição fetal e compreender a mecânica do parto, especificamente a rotação interna.\n\n1. Identificação da Variedade de Posição:\nO enunciado descreve que o ponto de referência fetal (o occipital ou lambda, já que a apresentação é cefálica fletida) está orientado para a articulação sacroilíaca esquerda da mãe. No estudo da pelve obstétrica, as articulações sacroilíacas ficam na parte de trás (posterior). Portanto, a variedade de posição é occípito-esquerda posterior (OEP).\n\n2. Cálculo do Ângulo de Rotação Interna:\nO objetivo da rotação interna é levar o ponto de referência fetal para baixo da sínfise púbica da mãe (posição occípito-púbica ou OP), que é a via de saída mais curta e fisiológica. \nA pelve é dividida em quadrantes de 45 graus cada:\n- De occípito-esquerda posterior (OEP) para occípito-esquerda transversa (OET): 45 graus.\n- De occípito-esquerda transversa (OET) para occípito-esquerda anterior (OEA): 45 graus.\n- De occípito-esquerda anterior (OEA) para occípito-púbica (OP): 45 graus.\nSomando os trajetos: 45 + 45 + 45 = 135 graus.\n\n3. Sentido da Rotação:\nImagine a bacia da paciente como um relógio, onde a sínfise púbica está às 12 horas e o sacro às 6 horas. O lado esquerdo da paciente corresponde à posição de 3 horas. A articulação sacroilíaca esquerda estaria entre as 4 e 5 horas. Para o occipital sair da posição de 4/5 horas e chegar às 12 horas (púbis) percorrendo o lado esquerdo, ele deve girar no sentido anti-horário.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. A posição voltada para a sacroilíaca é posterior; o trajeto da posição posterior até a sínfise púbica exige uma rotação longa de 135 graus; e, partindo da esquerda em direção ao púbis, o sentido é anti-horário.\n\nAlternativa b) Incorreta. A posição é posterior, não anterior (as posições anteriores estariam voltadas para as eminências iliopúbicas). Além disso, o sentido horário a partir da esquerda levaria o feto em direção ao sacro (posição sacra), o que não é o trajeto habitual da rotação interna.\n\nAlternativa c) Incorreta. O ângulo de 45 graus só ocorreria se o feto já estivesse em posição anterior (occípito-esquerda anterior). Como ele está em uma posição posterior, a rotação deve ser de 135 graus. O sentido horário também está errado para o lado esquerdo.\n\nAlternativa d) Incorreta. A classificação \"anterior\" está errada, pois a sacroilíaca é um ponto de referência posterior. O ângulo de 45 graus também não corresponde ao trajeto necessário para uma posição posterior atingir o púbis.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:47.474Z"
+  },
+  {
+    "id": "AJUDA_4b25be98-da3f-4ff0-bef9-da806d4be74b",
+    "originalId": "4b25be98-da3f-4ff0-bef9-da806d4be74b",
+    "statement": "Um homem de 50 anos com histórico de colite ulcerativa apresenta dor abdominal intensa, distensão e diarreia sanguinolenta profusa. No exame, parece toxemiado e a tomografia de abdome revela dilatação colônica >6cm. Qual é o próximo passo do tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas corticosteroides intravenosos e repouso intestinal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas terapia antibiótica com cobertura de amplo espectro;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Consulta cirúrgica de emergência para possível colectomia;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Avaliação endoscópica com biópsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise Clínica:\nO quadro clínico descrito — paciente com colite ulcerativa, dor abdominal intensa, distensão, diarreia sanguinolenta, estado toxêmico e dilatação colônica maior que 6 cm na tomografia — é o diagnóstico clássico de Megacólon Tóxico. Esta é uma complicação potencialmente fatal da Doença Inflamatória Intestinal (DII) que exige intervenção imediata.\n\nAnálise das Alternativas:\n\na) Incorreta. Embora os corticosteroides intravenosos e o repouso intestinal façam parte do manejo clínico inicial para reduzir a inflamação na colite ulcerativa, o termo \"apenas\" invalida a alternativa. O megacólon tóxico é uma emergência que requer cobertura antibiótica e, crucialmente, monitoramento cirúrgico rigoroso, pois o risco de perfuração é iminente.\n\nb) Incorreta. A antibioticoterapia de amplo espectro é fundamental para tratar a translocação bacteriana e o estado de sepse, mas, isoladamente, não trata a causa inflamatória subjacente (que exige corticoides) nem aborda a complicação mecânica/cirúrgica da dilatação progressiva.\n\nc) Correta. O Megacólon Tóxico é uma condição de alto risco cirúrgico. O próximo passo fundamental, em conjunto com o início do tratamento médico agressivo, é a consulta com a cirurgia de emergência. A equipe cirúrgica deve acompanhar o paciente desde o diagnóstico, pois a falha do tratamento médico (geralmente avaliada em 24 a 72 horas) ou qualquer sinal de perfuração, peritonite ou hemorragia incontrolável indica a necessidade de colectomia total de urgência com ileostomia terminal. O envolvimento precoce do cirurgião reduz a mortalidade.\n\nd) Incorreta. A avaliação endoscópica (colonoscopia) é contraindicada na fase aguda do megacólon tóxico. O procedimento de insuflação de ar aumenta drasticamente o risco de perfuração do cólon, que já se encontra com a parede extremamente friável e distendida. O diagnóstico de megacólon tóxico é essencialmente clínico e radiológico.\n\nResumo do Manejo:\nO tratamento do megacólon tóxico baseia-se no tripé: 1) Suporte clínico agressivo (hidratação, correção eletrolítica e antibióticos); 2) Corticosteroides IV para controle da DII; 3) Avaliação e acompanhamento contínuo da cirurgia para intervenção oportuna se não houver melhora rápida.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:47.474Z"
+  },
+  {
+    "id": "AJUDA_4b25f375-81d9-4256-9514-a913724d0ec9",
+    "originalId": "4b25f375-81d9-4256-9514-a913724d0ec9",
+    "statement": "Considerando a criação de um efetivo e eficiente sistema de registro de atendimentos com a finalidade de garantir a organização de uma rede de serviços e a gestão das suas ações de saúde no território nacional, foi criado no Brasil um sistema de identificação unívoca. Este sistema permite o cadastramento, a identificação com segurança tecnológica e a confidencialidade em uma base de dados em condições de preservar o registro eletrônico das informações em saúde.\nQual alternativa abaixo apresenta a principal finalidade atual de uso deste sistema na interface entre o SUS e o setor de Saúde Suplementar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Auditoria de Contas Hospitalares nas Operadoras de Planos de Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ressarcimento ao SUS no Sistema de Informação em Saúde para Atenção Básica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ressarcimento ao SUS informado pelo Aviso de Beneficiário Identificado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Autorização de Internação Hospitalar na Saúde Suplementar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O sistema de identificação unívoca descrito no enunciado refere-se ao Cartão Nacional de Saúde (CNS). No contexto de integração e interface entre o Sistema Único de Saúde (SUS) e a Saúde Suplementar, a principal aplicação desse registro é viabilizar o processo de Ressarcimento ao SUS, previsto no artigo 32 da Lei 9.656/1998, que obriga as operadoras de planos de saúde a reembolsarem o SUS sempre que seus beneficiários utilizarem a rede pública em procedimentos cobertos pelos contratos privados.\n\nAnálise das alternativas:\n\na) Incorreta. A auditoria de contas hospitalares dentro das operadoras de planos de saúde é um processo de gestão interna entre o plano privado e sua rede conveniada/credenciada, não dependendo da interface pública do CNS para essa finalidade.\n\nb) Incorreta. O Sistema de Informação em Saúde para a Atenção Básica (SISAB) destina-se ao monitoramento e financiamento da Atenção Primária à Saúde. O ressarcimento ao SUS concentra-se em atendimentos de média e alta complexidade (ambulatoriais e hospitalares) registrados em outros sistemas, como o SIH e o SIA.\n\nc) Correta. O Aviso de Beneficiário Identificado (ABI) é o instrumento formal emitido pela Agência Nacional de Saúde Suplementar (ANS) para notificar as operadoras sobre atendimentos prestados aos seus clientes na rede do SUS. O cruzamento seguro entre a base de dados do SUS (por meio do CNS) e os cadastros das operadoras é o que torna possível identificar o usuário e gerar o ABI para cobrança do ressarcimento.\n\nd) Incorreta. A Autorização de Internação Hospitalar (AIH) é um documento restrito ao âmbito do SUS para autorização e faturamento de leitos públicos ou conveniados. O setor suplementar utiliza padrões próprios definidos pela ANS, como o padrão TISS (Troca de Informações na Saúde Suplementar).\n\nGabarito: Letra c.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Sistemas de Informação em Saúde",
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:47.474Z"
+  },
+  {
+    "id": "AJUDA_4b29c29c-fcc1-465d-8bcf-20d44f09853b",
+    "originalId": "4b29c29c-fcc1-465d-8bcf-20d44f09853b",
+    "statement": "Sobre o processo de cicatrização de feridas, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A fase inflamatória ocorre nos primeiros dias, com predomínio de neutrófilos e macrófagos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A fase inflamatória dura em média 14 dias e caracteriza-se pela síntese de colágeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A fase proliferativa inicia-se logo após a formação da cicatriz definitiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A fase de remodelamento é a responsável pela hemostasia inicial da ferida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender o processo de cicatrização de feridas, é fundamental dividir os eventos em três fases principais que se sobrepõem: inflamatória, proliferativa (ou de fibroplasia) e de remodelamento (ou maturação).\n\nAlternativa (a): Correta. A fase inflamatória inicia-se imediatamente após a lesão e dura, em média, de 1 a 4 dias. Os eventos vasculares e celulares são predominantes aqui. Inicialmente, ocorre o recrutamento de neutrófilos, responsáveis pela fagocitose de bactérias e debris celulares. Na sequência, os macrófagos tornam-se as células predominantes e essenciais, atuando tanto na limpeza da ferida quanto na liberação de citocinas que estimularão a fase seguinte.\n\nAlternativa (b): Incorreta. A fase inflamatória é curta, geralmente limitada aos primeiros 4 dias. O período de 14 dias mencionado já estaria bem inserido na fase proliferativa. Além disso, a síntese intensa de colágeno é a característica marcante da fase proliferativa (através dos fibroblastos) e não da fase inflamatória, onde o foco é a limpeza e o controle de patógenos.\n\nAlternativa (c): Incorreta. A sequência cronológica está invertida na afirmação. A fase proliferativa ocorre logo após a fase inflamatória e é responsável pela formação do tecido de granulação, angiogênese e contração da ferida. A cicatriz definitiva só é formada após a conclusão da fase de remodelamento, que é a etapa final do processo.\n\nAlternativa (d): Incorreta. A hemostasia é o primeiro evento que ocorre após uma lesão tecidual, sendo considerada por muitos autores como a fase zero ou o início da fase inflamatória. Ela envolve vasoconstrição, agregação plaquetária e formação do tampão de fibrina. Já a fase de remodelamento é a etapa final, que pode durar meses ou anos, onde ocorre a substituição do colágeno tipo III por colágeno tipo I e o aumento da força tênsil do tecido.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:47.474Z"
+  }
+]

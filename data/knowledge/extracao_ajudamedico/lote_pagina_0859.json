@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_ee7652c4-b67e-4cbf-84b5-f091a02aecae",
+    "originalId": "ee7652c4-b67e-4cbf-84b5-f091a02aecae",
+    "statement": "Mulher, 60 anos de idade, faz uso de terapia hormonal com estrogênio e progesterona, além do uso de alendronato, colecalciferol e carbonato de cálcio. Qual dos seguintes procedimentos poderá ter seu resultado comprometido nesta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Litotripsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cirurgia refrativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia de varizes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Implante dentário.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Texto Original:\nO ponto central desta questão é identificar as complicações relacionadas ao uso crônico de bisfosfonatos, especificamente o alendronato, em pacientes no período pós-menopausa.\n\nAlternativa a) Incorreta. A litotripsia (extracorpórea ou intracorpórea) é utilizada para a fragmentação de cálculos, principalmente renais ou biliares. Não existem evidências de que os bisfosfonatos, o cálcio ou a terapia hormonal interfiram na eficácia das ondas de choque ou na eliminação dos cálculos.\n\nAlternativa b) Incorreta. A cirurgia refrativa visa corrigir problemas de visão por meio da remodelação da córnea. Embora a terapia hormonal possa ocasionalmente alterar a estabilidade do filme lacrimal (olho seco), isso não representa um comprometimento direto ou uma contraindicação que invalide o resultado do procedimento cirúrgico ocular.\n\nAlternativa c) Incorreta. O uso de terapia hormonal (estrogênio e progesterona) aumenta o risco de fenômenos tromboembólicos, o que demanda atenção especial no manejo perioperatório de cirurgias de varizes. No entanto, a medicação não compromete o resultado técnico da cirurgia venosa em si, mas sim o risco sistêmico da paciente.\n\nAlternativa d) Correta. O alendronato é um bisfosfonato, uma classe de drogas que inibe a atividade dos osteoclastos, reduzindo a reabsorção óssea. O uso crônico dessa medicação está fortemente associado à osteonecrose dos maxilares associada a medicamentos (MRONJ). Em procedimentos de implante dentário, a capacidade de remodelação óssea e a osseointegração são fundamentais para o sucesso. A supressão excessiva do turnover ósseo causada pelo alendronato pode impedir a cicatrização adequada do osso ao redor do implante, levando à perda da prótese ou ao desenvolvimento de necrose óssea no local da intervenção. Por isso, o implante dentário é o procedimento com resultado mais claramente comprometido entre as opções apresentadas.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:06.522Z"
+  },
+  {
+    "id": "AJUDA_ee7f9e5e-f0b8-4e69-ac13-f55d93c28da2",
+    "originalId": "ee7f9e5e-f0b8-4e69-ac13-f55d93c28da2",
+    "statement": "Menino, de 7 meses de idade, é encontrado inconsciente na sala de aula, sem respiração e sem pulso central palpável. Imediatamente, a professora chamou a equipe de atendimento médico da escola, que chegou em poucos segundos e realizou a monitorização cardíaca do paciente com o desfibrilador, sendo mostrado atividade elétrica organizada. Qual é a sequência correta da ressuscitação cardiopulmonar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar compressões torácicas imediatas com frequência de 100 a 120 compressões por minuto, profundidade de um terço do tórax e relação de 15 compressões para 2 ventilações, permitindo retorno completo do tórax. Puncionar acesso venoso periférico e administrar adrenalina 0,1mg/kg via endovenosa. Checar ritmo e pulso após 2 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Garantir via aérea pérvia, com melhor posicionamento de cabeça e pescoço. Iniciar ventilação com dispositivo bolsa-válvula-máscara ligado a fonte de oxigênio, com ventilações de um segundo e frequência de 20 a 30 ventilações por minuto, durante 2 minutos. Então, checar novamente ritmo e pulso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fazer desfibrilação imediata, com carga de 2J/kg e imediatamente iniciar compressões torácicas com frequência de 100 a 120 compressões por minuto e profundidade de um terço do tórax. Puncionar acesso venoso periférico e administrar adrenalina 0,01mg/kg via endovenosa. Checar ritmo e pulso após 2 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar compressões torácicas imediatas com frequência de 100 a 120 compressões por minuto, profundidade de 4cm no tórax e relação de 15 compressões para 2 ventilações. Puncionar acesso venoso periférico e administrar adrenalina 0,01mg/kg via endovenosa. Checar ritmo e pulso após 2 minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso descreve um lactente de 7 meses em Parada Cardiorrespiratória (PCR). O monitor cardíaco revela uma atividade elétrica organizada, porém o paciente não possui pulso palpável, o que define o ritmo de Atividade Elétrica Sem Pulso (AESP). A AESP, juntamente com a assistolia, compõe o grupo dos ritmos não chocáveis.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a técnica de compressão (frequência, profundidade e relação 15:2 para dois socorristas) esteja correta, o erro reside na dose da adrenalina. A dose recomendada na via endovenosa ou intraóssea para pediatria é de 0,01 mg/kg (correspondente a 0,1 ml/kg da solução diluída a 1:10.000). A dose de 0,1 mg/kg é dez vezes superior à recomendada e pode ser utilizada apenas via endotraqueal, caso não haja acesso vascular.\n\nAlternativa b) Incorreta. O manejo da parada cardiorrespiratória exige compressões torácicas imediatas e de alta qualidade. Isolar apenas a ventilação por 2 minutos sem realizar as compressões torácicas é uma conduta inadequada para um paciente sem pulso, retardando a perfusão de órgãos vitais.\n\nAlternativa c) Incorreta. A desfibrilação (choque) está indicada apenas para ritmos chocáveis: Fibrilação Ventricular (FV) e Taquicardia Ventricular sem pulso (TVSP). Como o paciente apresenta atividade elétrica organizada sem pulso (AESP), o tratamento consiste em RCP de alta qualidade e administração precoce de adrenalina. O choque em ritmos não chocáveis não tem benefício e prejudica a ressuscitação.\n\nAlternativa d) Correta. Esta alternativa descreve perfeitamente o protocolo de Suporte Avançado de Vida Pediátrico (PALS) para ritmos não chocáveis. Em lactentes (menores de 1 ano), a profundidade das compressões deve ser de um terço do diâmetro anteroposterior do tórax, o que equivale a aproximadamente 4 cm. A frequência deve ser de 100 a 120 por minuto, com relação de 15 compressões para 2 ventilações quando há dois ou mais socorristas profissionais presentes. A dose de adrenalina está correta (0,01 mg/kg) e a reavaliação de ritmo e pulso deve ocorrer a cada 2 minutos.\n\nResumo dos parâmetros para lactentes:\n- Ritmo identificado: AESP (não chocável).\n- Frequência de compressão: 100 a 120/min.\n- Profundidade: 1/3 do tórax ou cerca de 4 cm.\n- Relação compressão-ventilação: 15:2 (equipe de saúde).\n- Adrenalina: 0,01 mg/kg EV/IO a cada 3-5 minutos.\n- Ciclos: Reavaliar a cada 2 minutos.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Parada Cardiorrespiratória (PCR)",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:06.522Z"
+  },
+  {
+    "id": "AJUDA_ee875dbb-0e5d-4410-8fbc-fd3a1b383738",
+    "originalId": "ee875dbb-0e5d-4410-8fbc-fd3a1b383738",
+    "statement": "Homem, 43 anos, vem para atendimento de demanda espontânea no acolhimento da equipe de eSF com queixa de angústia, palpitações frequentes, tremores, tontura e medo de perder o controle no último mês. Isto tem causado prejuízo no trabalho e na vida social. Durante a consulta está tranquilo, nega ideação suicida ou pensamentos de morte. Entre as condutas abaixo, a melhor para este paciente no âmbito da APS é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhamento para hospital via SAMU, para internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhamento para o CAPS para avaliação inicial do quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar seguimento multiprofissional na UBS e considerar introdução de inibidor seletivo da recaptação da serotonina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar paciente para psicóloga da equipe para definir se o seguimento será na APS ou no CAPS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Acolher paciente, realizar escuta qualificada e explicar que é comum se sentir assim, sem necessidade de acompanhamento específico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nO caso clínico apresenta um paciente com sintomas clássicos de um transtorno de ansiedade, possivelmente transtorno de pânico ou transtorno de ansiedade generalizada, caracterizado por sintomas físicos (palpitações, tremores, tontura) e psíquicos (medo de perder o controle, angústia). O quadro já gera prejuízo funcional e social, o que indica a necessidade de intervenção clínica.\n\nAlternativa a) Incorreta. O paciente está clinicamente estável no momento da consulta, tranquilo e nega ideação suicida ou planos de morte. Não há critérios para internação hospitalar ou acionamento de serviço de urgência (SAMU), que são reservados para crises psicóticas agudas, risco iminente de autoagressão ou heteroagressão ou instabilidade clínica grave.\n\nAlternativa b) Incorreta. Os Centros de Atenção Psicossocial (CAPS) são destinados ao atendimento de transtornos mentais graves e persistentes. Casos de ansiedade leve a moderada, como o apresentado, devem ser manejados preferencialmente na Atenção Primária à Saúde (APS), utilizando as ferramentas da própria unidade e, se necessário, o matriciamento.\n\nAlternativa c) Correta. A conduta ideal na APS para transtornos de ansiedade que causam prejuízo funcional envolve a abordagem multiprofissional (médico, enfermeiro, psicólogo, grupos terapêuticos) e o manejo farmacológico. Os inibidores seletivos da recaptação da serotonina (ISRS), como a fluoxetina ou a sertralina, são a primeira linha de tratamento medicamentoso para esses casos devido à sua eficácia e ao seu perfil de segurança.\n\nAlternativa d) Incorreta. Embora o psicólogo faça parte da equipe multiprofissional e seja fundamental no tratamento (psicoterapia), a definição do local de seguimento (fluxo de cuidado) e o diagnóstico inicial são competências de toda a equipe de saúde da família, especialmente do médico no acolhimento. Além disso, o quadro descrito é tipicamente de manejo na APS, não havendo dúvida clínica que justifique o encaminhamento para o CAPS apenas para \"definição de local\".\n\nAlternativa e) Incorreta. Embora o acolhimento e a escuta qualificada sejam fundamentais, dizer que é \"comum se sentir assim\" e que não há necessidade de acompanhamento específico minimiza o sofrimento do paciente e ignora o prejuízo funcional relatado (trabalho e vida social). O paciente preenche critérios para um transtorno mental que requer tratamento e acompanhamento longitudinal.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Transtornos de Ansiedade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:06.522Z"
+  },
+  {
+    "id": "AJUDA_ee897fb8-22da-4089-b864-89dbd2413bec",
+    "originalId": "ee897fb8-22da-4089-b864-89dbd2413bec",
+    "statement": "A farmacovigilância e todos os aspectos que envolvem a segurança de medicamentos são pertinentes a todos aqueles que têm sua vida afetada, direta ou indiretamente, por procedimentos em saúde. A notificação de eventos adversos é fundamental no fortalecimento tanto do Sistema Nacional de Vigilância em Saúde quanto do Sistema Nacional de Vigilância Sanitária. Devem ser notificados os seguintes problemas ou eventos relacionados aos medicamentos, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inefetividade terapêutica, total e parcial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Interações medicamentosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Abusos de medicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Automedicação com medicamentos isentos de prescrição.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DO PROFESSOR\n\nO tema central desta questão é a Farmacovigilância, que consiste na ciência e nas atividades relativas à detecção, avaliação, compreensão e prevenção de efeitos adversos ou quaisquer outros problemas relacionados a medicamentos. De acordo com as diretrizes da ANVISA e da Organização Mundial da Saúde (OMS), o objetivo é identificar precocemente riscos e garantir a segurança do paciente.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa A: Inefetividade terapêutica, total e parcial.\nESTÁ INCORRETA (deve ser notificada): A ausência de efeito esperado de um medicamento é um evento fundamental para a farmacovigilância. Ela pode indicar desde desvios de qualidade na fabricação do lote e presença de medicamentos falsificados até o desenvolvimento de resistência (como no caso de antibióticos). Por isso, falhas terapêuticas, sejam elas totais ou parciais, precisam ser registradas.\n\nAlternativa B: Interações medicamentosas.\nESTÁ INCORRETA (deve ser notificada): Quando a administração conjunta de dois ou mais fármacos altera o efeito de um deles, resultando em dano ou toxicidade ao paciente, caracteriza-se um evento passível de notificação. O monitoramento de interações ajuda a atualizar as bulas e a guiar a prática clínica segura.\n\nAlternativa C: Abusos de medicações.\nESTÁ INCORRETA (deve ser notificada): O uso intencional, excessivo ou persistente de um medicamento, acompanhado de efeitos físicos ou psicológicos prejudiciais (uso abusivo), é um dos pilares de monitoramento da farmacovigilância. Isso permite que órgãos reguladores identifiquem substâncias com alto potencial de dependência ou que necessitem de maior controle na dispensação.\n\nAlternativa D: Automedicação com medicamentos isentos de prescrição.\nESTA É A ALTERNATIVA CORRETA (o \"exceto\"): A automedicação com medicamentos isentos de prescrição (MIPs) é uma prática comum e permitida pela legislação para o tratamento de sintomas menores e autolimitados. O ato da automedicação em si não é um evento a ser notificado. O que deve ser notificado são as possíveis CONSEQUÊNCIAS dessa automedicação, como uma reação adversa, uma intoxicação ou uma inefetividade, mas não a prática da escolha do medicamento isento de prescrição pelo paciente.\n\nResumo: A vigilância sanitária foca no problema ou evento ocorrido (dano, falha, erro, desvio de qualidade) e não na prática comportamental do uso de medicamentos isentos de prescrição, desde que esta prática não resulte em um evento adverso. Por exclusão e definição técnica, a letra D é a única que não configura um evento de notificação obrigatória por si só.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:06.522Z"
+  },
+  {
+    "id": "AJUDA_ee8bec18-1fe3-4761-abd2-1a17e0ec017a",
+    "originalId": "ee8bec18-1fe3-4761-abd2-1a17e0ec017a",
+    "statement": "Sobre as contraindicações e precauções relacionadas ao uso de anestésicos locais nas diferentes técnicas anestésicas, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A anestesia com lidocaína associada à adrenalina é contraindicada em bloqueios peridurais devido ao risco aumentado de neurotoxicidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A anestesia tópica com lidocaína a 5% pode ser aplicada em mucosa oral em crianças pequenas, desde que a dose total não ultrapasse 10 mg/kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A infiltração com lidocaína 1% associada à adrenalina 1:200.000 deve ser evitada em áreas com circulação terminal, como dedos, pênis, nariz e orelhas, devido ao risco de isquemia e necrose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A bupivacaína a 0,5% não deve ser utilizada para bloqueios de nervos periféricos por seu alto risco de toxicidade, sendo restrita à anestesia raquidiana com dose máxima de 5 mg/kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (a) Incorreta: A associação de adrenalina à lidocaína em bloqueios peridurais é uma prática comum e não é contraindicada. A adrenalina atua promovendo vasoconstrição local, o que reduz a absorção sistêmica do anestésico, prolonga a duração do efeito e diminui o risco de toxicidade sistêmica. Não há evidências de que essa associação aumente a neurotoxicidade em doses e concentrações clínicas usuais.\n\nAlternativa (b) Incorreta: A dose de 10 mg/kg de lidocaína é excessiva e perigosa, especialmente em crianças pequenas e quando aplicada em mucosas, onde a absorção é muito rápida. O limite de segurança para a lidocaína sem vasoconstritor em pediatria geralmente gira em torno de 3 a 5 mg/kg. Doses elevadas em crianças aumentam drasticamente o risco de toxicidade do sistema nervoso central (convulsões) e toxicidade cardiovascular.\n\nAlternativa (c) Correta: Esta alternativa reflete o ensinamento clássico da anestesiologia e cirurgia. Áreas com circulação terminal (supridas por artérias terminais sem circulação colateral exuberante), como dedos, pênis, ponta do nariz e pavilhões auriculares, são vulneráveis à isquemia. O uso de vasoconstritores como a adrenalina nessas regiões pode causar um espasmo vascular prolongado, levando à hipóxia tecidual, isquemia e, em casos graves, necrose das extremidades. Embora existam estudos recentes discutindo a segurança em doses muito diluídas, para fins de provas e concursos, a regra de evitar vasoconstritores nessas áreas permanece o padrão.\n\nAlternativa (d) Incorreta: A bupivacaína a 0,5% é amplamente utilizada em bloqueios de nervos periféricos (como bloqueio do plexo braquial) devido à sua longa duração de ação. Ela não é restrita à anestesia raquidiana. Além disso, a dose máxima citada de 5 mg/kg está incorreta e é extremamente tóxica para a bupivacaína; o limite de segurança geralmente recomendado é de até 2 mg/kg (ou 3 mg/kg se associada à adrenalina), devido ao seu elevado potencial de cardiotoxicidade (arritmias graves e depressão miocárdica).",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:06.522Z"
+  },
+  {
+    "id": "AJUDA_ee91b590-14cd-44f9-a7e9-5207352f6035",
+    "originalId": "ee91b590-14cd-44f9-a7e9-5207352f6035",
+    "statement": "Criança, 6 anos de idade, apresenta episódios recorrentes de infecção do trato urinário mesmo após múltiplos ciclos de antibioticoterapia de amplo espectro.\nConsiderando as causas mais comuns para a recorrência de infecções urinárias em pediatria e os mecanismos fisiopatológicos envolvidos, assinale a alternativa que apresenta, corretamente, a estratégia terapêutica mais adequada para prevenir novos episódios infecciosos, levando em consideração as particularidades anatômicas e funcionais do trato urinário pediátrico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de inibidores de síntese de folato para reduzir o risco de resistência bacteriana em infecções de repetição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Investigação da presença de bexiga neurogênica com disfunção miccional e correção por fisioterapia ou cirurgia, se necessário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Investigação e correção cirúrgica de anormalidades anatômicas do trato urinário, como o refluxo vesicoureteral primário, que pode predispor à ascensão bacteriana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Uso de probióticos em altas doses para promover a restauração da microbiota local e aumentar a imunidade inata contra bactérias uropatogênicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Vacinação profilática contra patógenos uropatogênicos, visando à imunização ativa contra os principais microorganismos causadores de infecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\nTexto Original:\nEsta questão aborda o manejo da Infecção do Trato Urinário (ITU) recorrente na infância, um tema clássico em provas de residência que exige o conhecimento da abordagem diagnóstica e terapêutica das anomalias congênitas do trato urinário.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): O uso de inibidores da síntese de folato (como o Sulfametoxazol-Trimetoprim) é uma estratégia comum para a quimioprofilaxia de ITU. No entanto, a alternativa afirma que isso reduziria o risco de resistência bacteriana. Pelo contrário, o uso prolongado de antibióticos em baixas doses aumenta a pressão seletiva e o risco de desenvolvimento de resistência bacteriana, sendo uma medida para prevenir a colonização, e não para reduzir resistência.\n\nAlternativa B (Incorreta): Embora a bexiga neurogênica e as disfunções miccionais sejam causas importantes de ITU recorrente, a bexiga neurogênica em uma criança de 6 anos sem antecedentes de mielomeningocele ou trauma medular é menos frequente do que as malformações anatômicas. Além disso, a estratégia de tratamento inicial para disfunções miccionais funcionais é comportamental (treinamento miccional) e não necessariamente cirúrgica, como sugerido de forma prioritária.\n\nAlternativa C (Correta): Em pediatria, especialmente em casos de ITUs de repetição, a investigação de anomalias estruturais é mandatória. O Refluxo Vesicoureteral (RVU) é a malformação mais comum associada. O mecanismo fisiopatológico envolve a falha na válvula ureterovesical, permitindo que a urina contaminada da bexiga retorne aos ureteres e rins (ascensão bacteriana), predispondo a pielonefrites e cicatrizes renais. A correção (seja clínica com profilaxia ou cirúrgica em graus elevados/refratários) é fundamental para prevenir novos episódios e proteger o parênquima renal.\n\nAlternativa D (Incorreta): Não há evidências científicas robustas que sustentem o uso de probióticos em altas doses como estratégia terapêutica principal ou isolada para prevenir ITUs recorrentes em pediatria. Embora o equilíbrio da microbiota seja estudado, as diretrizes uropediátricas focam no diagnóstico por imagem e profilaxia medicamentosa ou cirúrgica.\n\nAlternativa E (Incorreta): Atualmente, não existe uma vacina disponível no calendário vacinal ou de rotina médica com eficácia comprovada para a imunização ativa contra patógenos uropatogênicos em crianças que substitua as condutas de investigação anatômica e profilaxia convencional.\n\nConclusão: Diante de uma criança com ITUs de repetição, o raciocínio médico deve sempre priorizar a exclusão de anomalias anatômicas (como RVU, estenose de junção ureteropélvica ou válvulas de uretra posterior) através de exames de imagem (Ultrassonografia, Uretrocistografia Miccional e Cintilografia Renal), pois a correção desses defeitos é a chave para interromper o ciclo de infecções.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:06.522Z"
+  },
+  {
+    "id": "AJUDA_ee9226af-2fe9-409f-b864-55a26d987676",
+    "originalId": "ee9226af-2fe9-409f-b864-55a26d987676",
+    "statement": "Uma forma eficaz de prevenção do câncer de colo uterino e das verrugas genitais é a vacina contra o HPV. Em relação a essa medida, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a vacina deve ser aplicada em meninos e meninas de 9 a 14 anos de idade, segundo orientação do Ministério da Saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a vacina não deve ser aplicada em pessoas imunossuprimidas e transplantadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a vacina é considerada a melhor forma de tratamento para mulheres com câncer de colo uterino IA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "estudos recentes demonstram que a vacina também age preventivamente contra o câncer do endométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a vacina previne infecções por qualquer tipo de HPV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda as diretrizes de vacinação contra o Papilomavírus Humano (HPV) no Brasil, conforme o Programa Nacional de Imunizações (PNI) do Ministério da Saúde.\n\nAlternativa a: Correta. No Brasil, a recomendação atual do Ministério da Saúde é a vacinação de meninas e meninos na faixa etária de 9 a 14 anos. Recentemente, em abril de 2024, houve uma atualização importante: o esquema vacinal passou a ser de dose única para este grupo, visando aumentar a adesão e a cobertura vacinal.\n\nAlternativa b: Incorreta. Pessoas imunossuprimidas, transplantadas de órgãos sólidos ou de medula óssea, e pacientes com câncer, na faixa etária de 9 a 45 anos, são justamente um grupo prioritário para a vacinação. Para esses indivíduos, o esquema vacinal permanece em três doses (0, 2 e 6 meses), devido à necessidade de uma resposta imune mais robusta.\n\nAlternativa c: Incorreta. A vacina contra o HPV é profilática, ou seja, serve para prevenir a infecção pelos tipos de vírus contidos na vacina e, consequentemente, as lesões precursoras e o câncer. Ela não possui efeito terapêutico em lesões já existentes. O tratamento do câncer de colo uterino estádio IA envolve procedimentos cirúrgicos, como a conização ou a histerectomia, dependendo da invasão e do desejo reprodutivo da paciente.\n\nAlternativa d: Incorreta. O câncer de endométrio não está relacionado à infecção pelo HPV. Seus principais fatores de risco são obesidade, exposição estrogênica sem oposição de progesterona, nuliparidade e fatores genéticos. O HPV está diretamente ligado aos cânceres de colo do útero, vulva, vagina, ânus, pênis e orofaringe.\n\nAlternativa e: Incorreta. Existem mais de 200 tipos de HPV. A vacina distribuída pelo SUS é a quadrivalente, que protege contra quatro tipos específicos: 6 e 11 (causadores de verrugas genitais) e 16 e 18 (tipos de alto risco oncogênico responsáveis pela maioria dos casos de câncer de colo do útero). Portanto, ela não confere proteção contra todos os tipos existentes do vírus.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:06.522Z"
+  },
+  {
+    "id": "AJUDA_ee95eae5-c467-4e0e-9450-ec60e2f7d705",
+    "originalId": "ee95eae5-c467-4e0e-9450-ec60e2f7d705",
+    "statement": "RN de 37 semanas apresenta más condições de vitalidade, hipotonia e ausência de choro. Após estímulo dorsal e clampeamento do cordão umbilical, o RN foi conduzido ao berço com fonte de calor radiante. Exame físico: apneia e FC: 60 bpm. Os próximos passos da reanimação neonatal são realizar",
+    "options": [
+      {
+        "id": "A",
+        "text": "ventilação com pressão positiva (VPP) com balão autoinflável e máscara, com oxigênio a 21%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "VPP com ventilador manual em T e máscara laríngea, com oxigênio de 30% a 60%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "VPP com balão autoinflável e máscara, com oxigênio a 100%, sincronizada com a massagem cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "intubação traqueal e ventilação pulmonar com oxigênio a 21% sincronizada com a massagem cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO caso descreve um recém-nascido (RN) a termo (37 semanas) que, após os passos iniciais da reanimação neonatal (prover calor, posicionar a cabeça e estimular), permanece em apneia e apresenta frequência cardíaca (FC) de 60 bpm. \n\nDe acordo com as diretrizes do Programa de Reanimação Neonatal da Sociedade Brasileira de Pediatria (PRN-SBP), o passo mais importante na reanimação do RN em sala de parto é a ventilação pulmonar. Se o RN apresenta apneia, respiração irregular ou FC menor que 100 bpm após os passos iniciais, deve-se iniciar a Ventilação com Pressão Positiva (VPP) nos primeiros 60 segundos de vida (o chamado Minuto de Ouro).\n\nPara recém-nascidos com idade gestacional de 34 semanas ou mais, a recomendação é iniciar a VPP com ar ambiente, ou seja, oxigênio a 21%. A concentração de oxigênio só deve ser aumentada se não houver melhora clínica, sempre guiada pela oximetria de pulso.\n\nAnálise das alternativas:\n\nAlternativa a) CORRETA. Esta é a conduta padrão. Para um RN de 37 semanas com FC de 60 bpm e apneia, a prioridade absoluta é iniciar a VPP. O equipamento preconizado é o balão autoinflável com máscara facial, e a concentração inicial de oxigênio deve ser de 21%.\n\nAlternativa b) INCORRETA. Embora o ventilador manual em T seja uma interface superior ao balão autoinflável em alguns aspectos, a máscara laríngea não é a primeira escolha de interface (usa-se primeiro a máscara facial). Além disso, a concentração inicial de oxigênio entre 30% e 60% é excessiva para um RN a termo no início da reanimação.\n\nAlternativa c) INCORRETA. O uso de oxigênio a 100% logo no início da reanimação é contraindicado devido ao risco de lesão tecidual por excesso de radicais livres. Além disso, a massagem cardíaca só deve ser iniciada após 30 segundos de VPP técnica e efetivamente realizada, caso a FC permaneça abaixo de 60 bpm.\n\nAlternativa d) INCORRETA. A intubação traqueal e a massagem cardíaca não são os primeiros passos. A grande maioria dos RNs responde bem à VPP por máscara facial. A massagem cardíaca nunca deve ser iniciada antes de se garantir uma ventilação adequada por pelo menos 30 segundos.\n\nGabarito: Letra A.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:06.522Z"
+  },
+  {
+    "id": "AJUDA_ee972d12-2c20-461d-a63e-c2188435793c",
+    "originalId": "ee972d12-2c20-461d-a63e-c2188435793c",
+    "statement": "Paciente de 26 anos apresenta-se ao pronto atendimento com quadro de cefaleia há 3 dias, náuseas e febre, sem outros sintomas associados. Nega comorbidades ou medicações de uso habitual. Não apresenta alterações nos sinais vitais, além da elevação da temperatura. Não apresenta rigidez de nuca, Kernig e Brudzinski são negativos. Relata piora da cefaleia após mexer a cabeça horizontalmente por alguns segundos. Hemograma sem alterações. Realizado LCR com o seguinte resultado: celularidade: 153 leucócitos/microL com predomínio de linfócitos, 0 hemácia. Não há alteração em lactato, glicose ou proteína.\n\nConsiderando as hipóteses diagnósticas mais prováveis, qual a conduta correta para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter antibioticoterapia endovenosa por 48 horas, mesmo considerando o provável caso de meningite viral, enquanto aguarda resultado de culturas e painel molecular (quando disponível no serviço).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Orientar alta hospitalar com anti-inflamatórios não esteroidais para tratamento de cefaleia, pois o exame físico associado ao resultado do líquor indica baixa probabilidade de meningite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prosseguir a investigação de cefaleia com sinais de alarme com tomografia de crânio e, caso negativa, com ressonância magnética, uma vez que está descartada a hipótese de meningite neste cenário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter uso de corticoide, antibiótico empírico, terapia para herpes-vírus e infecções fúngicas, enquanto aguarda resultados de painel molecular (se disponível), pois o exame de líquor possui alta taxa de falso-negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta a tríade clínica de cefaleia, febre e náuseas. Um ponto semiótico fundamental no enunciado é a piora da dor ao movimentar a cabeça horizontalmente, manobra conhecida como *Jolt Accentuation* (acentuação por solavanco). Este teste possui alta sensibilidade para meningite, sendo frequentemente positivo mesmo na ausência de rigidez de nuca ou sinais de Kernig e Brudzinski.\n\nO exame do líquido cefalorraquidiano (LCR) revela pleocitose (153 leucócitos/microL) com predomínio linfocitário e níveis normais de glicose e proteína. Esse padrão liquórico é clássico das meningites virais. No entanto, o diagnóstico diferencial imediato deve sempre incluir a meningite bacteriana, que é uma emergência médica com alta morbimortalidade.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: Embora o padrão do líquor sugira fortemente uma etiologia viral (linfocitária, glicose e proteínas normais), a conduta inicial segura em casos de pleocitose é o início ou manutenção da antibioticoterapia empírica até que os resultados das culturas (que levam de 48 a 72 horas) ou de testes moleculares (PCR/painel molecular) confirmem a ausência de crescimento bacteriano. Não se deve suspender o tratamento precocemente apenas com base na celularidade inicial, pois fases muito precoces de meningite bacteriana ou casos parcialmente tratados podem se manifestar de forma atípica.\n\nAlternativa (b) INCORRETA: O diagnóstico de meningite está confirmado pela presença de 153 leucócitos no líquor (o valor normal é de até 5 células). Dar alta hospitalar com anti-inflamatórios seria um erro grave, pois o paciente apresenta uma inflamação do sistema nervoso central que exige vigilância e exclusão definitiva de causa bacteriana.\n\nAlternativa (c) INCORRETA: A hipótese de meningite não está descartada; pelo contrário, ela foi confirmada pela pleocitose no líquor. Exames de imagem (tomografia ou ressonância) são indicados na suspeita de complicações (como abscessos ou infartos), sinais de hipertensão intracraniana ou déficit focal, mas não substituem o manejo infeccioso já estabelecido pelo líquor alterado.\n\nAlternativa (d) INCORRETA: Esta alternativa propõe um tratamento excessivamente agressivo para o perfil do paciente. O uso de antifúngicos não é indicado empiricamente para um paciente hígido, sem comorbidades ou sinais de imunossupressão (como HIV), e com líquor apresentando glicose e proteínas normais. Além disso, a afirmação de que o líquor possui \"alta taxa de falso-negativo\" está incorreta no contexto da detecção de inflamação (celularidade), que é o padrão-ouro para o diagnóstico de meningite.\n\nCONCLUSÃO\n\nDiante de uma pleocitose no LCR, a segurança do paciente exige a cobertura antibiótica empírica até que a causa bacteriana seja formalmente excluída por culturas negativas em 48-72 horas, mesmo que o perfil inicial sugira vírus.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:06.522Z"
+  },
+  {
+    "id": "AJUDA_eea9118b-c69b-45ae-bf77-cd42794de82d",
+    "originalId": "eea9118b-c69b-45ae-bf77-cd42794de82d",
+    "statement": "Dentre os comportamentos abaixo, o que é considerado um sinal de alerta para TEA (transtorno do espectro autista) em uma criança de 7 anos é o seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Brincar de faz de conta, como fingir ser médico ou cozinheiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ter contato visual frequente ao conversar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Demonstrar interesse em interagir e brincar com outras crianças.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adesão rígida a rotinas e inflexibilidade a mudanças.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Usar gestos variados, como apontar ou acenar, para se comunicar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O diagnóstico de Transtorno do Espectro Autista (TEA) é fundamentado em dois domínios principais, conforme o DSM-5: 1) Déficits persistentes na comunicação e na interação social e 2) Padrões restritos e repetitivos de comportamento, interesses ou atividades.\n\nAbaixo, a análise de cada alternativa sob a ótica do desenvolvimento infantil e dos sinais de alerta para o TEA:\n\nAlternativa a) Incorreta. O brincar de faz de conta ou jogo simbólico é um marco esperado do desenvolvimento neuropsicomotor. Ele demonstra capacidade de abstração e imaginação. No TEA, o que se observa é justamente o oposto: um empobrecimento ou ausência do brincar simbólico, com preferência por jogos mecânicos, repetitivos ou foco excessivo em partes de objetos.\n\nAlternativa b) Incorreta. O contato visual é uma das ferramentas fundamentais da interação social e da comunicação não verbal. O sinal de alerta para o autismo seria o contato visual pobre, fugaz, ausente ou atípico, e não o contato visual frequente.\n\nAlternativa c) Incorreta. O interesse em interagir e brincar com outras crianças indica busca por reciprocidade social. No TEA, há frequentemente um isolamento social, falta de iniciativa para interações ou uma abordagem social inadequada e descontextualizada.\n\nAlternativa d) Correta. Este comportamento integra o critério de padrões restritos e repetitivos. A insistência na mesmice e a adesão inflexível a rotinas (como sofrimento intenso com pequenas mudanças, rituais verbais ou padrões de pensamento rígidos) são características centrais do transtorno. Em uma criança de 7 anos, isso pode se manifestar como resistência extrema a mudar o trajeto para a escola ou a ordem das atividades diárias.\n\nAlternativa e) Incorreta. O uso de gestos variados, como apontar para mostrar algo de interesse ou acenar, faz parte da comunicação não verbal funcional. Crianças com TEA apresentam déficits no uso, na compreensão e na integração desses gestos com a linguagem falada.\n\nPortanto, enquanto as outras opções descrevem comportamentos típicos de uma criança de 7 anos com desenvolvimento neuropsicomotor adequado, a alternativa d descreve um sinal clínico patognomônico para a investigação de TEA.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Psiquiatria Infantil",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:06.522Z"
+  }
+]

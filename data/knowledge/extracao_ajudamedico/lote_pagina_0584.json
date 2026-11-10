@@ -1,0 +1,518 @@
+[
+  {
+    "id": "AJUDA_a349a167-b265-4bdb-8669-fac46e0a2757",
+    "originalId": "a349a167-b265-4bdb-8669-fac46e0a2757",
+    "statement": "Analise a figura abaixo, que representa os diferentes tipos de miomas segundo a classificação da Federação Internacional de Ginecologia e Obstetrícia (FIGO).\n\nOs miomas que mais causam sangramento uterino anormal são os representados pelos números:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0, 1 e 2.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "0, 4 e 6.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1, 2 e 7.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1, 3 e 5.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "3, 4 e 6.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A classificação da Federação Internacional de Ginecologia e Obstetrícia (FIGO) para leiomiomas uterinos é fundamental para correlacionar a localização do tumor com a sintomatologia da paciente. O sangramento uterino anormal (SUA) é o sintoma mais comum associado aos miomas que distorcem a cavidade endometrial ou estão em contato direto com ela.\n\nAnálise das alternativas:\n\nAlternativa a) CORRETA. Os números 0, 1 e 2 compõem o grupo dos miomas submucosos. \n- O tipo 0 é pediculado e totalmente intracavitário. \n- O tipo 1 é submucoso com componente intramural menor que 50%. \n- O tipo 2 é submucoso com componente intramural maior ou igual a 50%. \nEstes miomas aumentam a área de superfície endometrial, causam congestão venosa local e dificultam a contratilidade do miométrio para o controle da hemostasia, sendo os principais causadores de hemorragia.\n\nAlternativa b) INCORRETA. Apesar de incluir o tipo 0, a alternativa apresenta os tipos 4 e 6. O tipo 4 é um mioma intramural puro, que não toca a cavidade. O tipo 6 é subseroso (está na parte externa do útero). Miomas subserosos estão mais associados a sintomas de compressão de órgãos vizinhos (bexiga e reto) ou aumento do volume abdominal, e não a sangramento.\n\nAlternativa c) INCORRETA. Embora apresente os tipos 1 e 2, inclui o tipo 7. O tipo 7 é um mioma subseroso pediculado. Por estar localizado na superfície externa do útero e preso apenas por um pedículo, ele não tem qualquer impacto no fluxo menstrual.\n\nAlternativa d) INCORRETA. O tipo 1 é submucoso, mas os tipos 3 e 5 são menos propensos a causar sangramento importante. O tipo 3 é intramural mas toca o endométrio (sem ser submucoso), e o tipo 5 é subseroso com componente intramural maior ou igual a 50%. O tipo 5, especificamente, tem baixa correlação com sangramento.\n\nAlternativa e) INCORRETA. Esta alternativa agrupa miomas intramurais e subserosos (3, 4 e 6). Como nenhum destes é submucoso, eles não são os tipos que \"mais causam\" sangramento uterino anormal quando comparados aos tipos 0, 1 e 2.\n\nPortanto, a alternativa A é a correta por selecionar exclusivamente os tipos submucosos da classificação FIGO.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/20dbcc19a061ef3b332446d6fe1112dc6581840bd5fdb6933886a36fda4fab9d.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_a349a167-b265-4bdb-8669-fac46e0a2757_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:04.344Z"
+  },
+  {
+    "id": "AJUDA_a34a7e3a-2e3a-4045-9ad4-8ebe4c89d6fa",
+    "originalId": "a34a7e3a-2e3a-4045-9ad4-8ebe4c89d6fa",
+    "statement": "A cetoacidose diabética é um distúrbio metabólico grave que apresenta característica peculiares que devem ser consideradas no momento do tratamento. Assinale a resposta CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A administração de insulina é o procedimento inicial mais importante no tratamento da cetoacidose diabética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A correção da desidratação é o procedimento inicial mais importante no tratamento da cetoacidose diabética.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Na admissão, o paciente apresenta hiperpotassemia e, portanto, não se deve administrar potássio sérico durante o tratamento da cetoacidose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se evitar o uso de glicose endovenosa devido a glicemia elevada na admissão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O uso de bicarbonato é fundamental para o tratamento da acidose metabólica na cetoacidose diabética.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A cetoacidose diabética (CAD) é uma emergência médica caracterizada por hiperglicemia, acidose metabólica e cetonemia. O manejo terapêutico segue uma hierarquia de prioridades para evitar complicações graves, como o choque hipovolêmico e o edema cerebral.\n\nAlternativa (a) Incorreta: Embora a insulina seja fundamental para interromper a cetogênese e reduzir a glicemia, ela não é o primeiro passo. Administrar insulina antes de iniciar a hidratação pode agravar o choque hipovolêmico, pois a glicose entra nas células acompanhada de água, reduzindo ainda mais o volume intravascular. Além disso, a insulina só deve ser iniciada após a verificação dos níveis de potássio, para evitar hipocalemia severa.\n\nAlternativa (b) Correta: A correção da desidratação é a medida inicial mais importante. Pacientes com CAD apresentam um déficit hídrico acentuado devido à diurese osmótica. A reposição volêmica imediata com solução salina isotônica visa restaurar a perfusão tecidual, melhorar a função renal para a excreção de glicose e cetonas e diminuir a resistência periférica à insulina.\n\nAlternativa (c) Incorreta: Apesar de o potássio sérico poder estar elevado ou normal na admissão (devido à saída do íon da célula pela acidose e deficiência de insulina), o estoque corporal total de potássio está invariavelmente depletado. Assim que o tratamento com insulina e fluidos começa, o potássio retorna rapidamente para o meio intracelular. Por isso, a reposição de potássio é quase sempre necessária durante o tratamento, assim que os níveis séricos baixam para valores entre 5,0 e 5,2 mEq/L e o paciente apresenta diurese.\n\nAlternativa (d) Incorreta: O uso de glicose endovenosa é uma etapa obrigatória no tratamento da CAD. Quando a glicemia atinge valores próximos a 200-250 mg/dL, deve-se adicionar glicose (soro glicosado a 5%) à hidratação venosa. Isso permite que a infusão de insulina seja mantida para resolver a acidose e a cetonemia sem causar hipoglicemia no paciente.\n\nAlternativa (e) Incorreta: O uso de bicarbonato não é fundamental e é desaconselhado na maioria dos casos. Ele está reservado apenas para situações de acidose extrema (pH inferior a 6,9), pois o tratamento com hidratação e insulina permite que o próprio organismo metabolize os cetoácidos e regenere o bicarbonato endógeno. O uso indiscriminado de bicarbonato pode aumentar o risco de edema cerebral e hipocalemia.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:04.344Z"
+  },
+  {
+    "id": "AJUDA_a34bafca-9429-4be4-9289-6b57e00ff15d",
+    "originalId": "a34bafca-9429-4be4-9289-6b57e00ff15d",
+    "statement": "Paciente, 3 anos de idade, do sexo masculino, previamente hígido, foi admitido no pronto-socorro com quadro de diarreia aguda há dois dias e baixa aceitação de líquidos. Chegou com desidratação grave, sendo obtido acesso venoso periférico e feita hidratação Endovenosa (EV). Após estabilização inicial, apresentou melhora da hidratação e das perdas, porém segue sem aceitar nada por via oral. O seu peso atual é de 14 kg. Os resultados dos exames laboratoriais atuais e o traçado eletrocardiográfico estão apresentados a seguir: \n\npH: 7.35\npO2: 100 mmHg\npCO2: 35 mmHg\nHCO3: 21,0 mEq/L\nSatO2: 99%\nPotássio: 2,9 mEq/L\nSódio: 132 mEq/L \n\nEm relação ao caso descrito, qual das prescrições é a mais adequada para o paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Soro glicosado 10% 960 mL; NaCl 0.9% 240 mL; KCl 19.1% 28 mL. EV em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Soro glicosado 10% 1000 mL; NaCl 20% 40 mL; KCl 19.1% 16 mL. EV correr a 50 mL/hora.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "KCl 19.1% 5 mL EV em 20 minutos; Soro glicosado 10% 1000 mL; NaCl 20% 40 mL; KCl 19.1% 10 mL. EV correr a 50 mL/hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "KCl 19.1% 5 mL EV em 20 minutos; Soro glicosado 10% 960 mL; NaCl 0.9% 240 mL; KCl 19.1% 12 mL. EV em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Este é um caso clínico que exige o cálculo da hidratação de manutenção e a correção de distúrbios eletrolíticos em pediatria.\n\n1. Análise do Paciente e Necessidades Hidroeletrolíticas:\nPeso: 14 kg.\nCálculo de manutenção (Regra de Holliday-Segar):\nPara os primeiros 10 kg: 1000 mL.\nPara os 4 kg restantes (4 x 50 mL): 200 mL.\nTotal em 24 horas: 1200 mL.\nGotejamento: 1200 mL / 24 horas = 50 mL/hora.\n\n2. Avaliação dos Eletrólitos e ECG:\nSódio (Na): 132 mEq/L (hiponatremia leve). As diretrizes atuais (como as da Academia Americana de Pediatria e da Sociedade Brasileira de Pediatria) recomendam o uso de soluções isotônicas ou quase isotônicas para manutenção em pacientes hospitalizados, visando prevenir hiponatremia dilucional.\nPotássio (K): 2,9 mEq/L (hipocalemia moderada).\nECG: O traçado mostra um achatamento da onda T, alteração clássica da hipocalemia.\nConduta no Potássio: Como o paciente tem hipocalemia com repercussão eletrocardiográfica, ele necessita de uma oferta maior de potássio na solução de manutenção. A concentração máxima segura para infusão em veia periférica é de 40 mEq/L.\n\n3. Análise das Alternativas:\n\na) Incorreta. Volume total de 1200 mL (correto). Na: NaCl 0,9% tem 0,154 mEq/mL. 240 mL x 0,154 = 37 mEq de Na (manutenção padrão antiga, mas o paciente já está hiponatrêmico). K: 28 mL de KCl 19,1% (cada 1 mL tem 2,5 mEq) = 70 mEq de K. Em 1200 mL, a concentração seria de 58 mEq/L, o que ultrapassa o limite de segurança para acesso periférico (40 mEq/L).\n\nb) Correta (Gabarito). Volume e Velocidade: 50 mL/h em 24 h totalizam 1200 mL, respeitando o Holliday-Segar. Na: 40 mL de NaCl 20% (cada 1 mL tem 3,4 mEq) = 136 mEq de Na. Em aproximadamente 1 litro de solução, isso resulta em uma concentração próxima à do soro fisiológico (isotônico), adequada para corrigir a hiponatremia e manter a estabilidade osmótica. K: 16 mL de KCl 19,1% x 2,5 mEq/mL = 40 mEq de K. Em 1 litro de solução, a concentração é de 40 mEq/L, o limite máximo permitido para veia periférica, sendo a conduta ideal para repor o potássio de forma segura.\n\nc) Incorreta. Propõe uma fase de ataque de potássio (5 mL de KCl 19,1% = 12,5 mEq) em 20 minutos. Em pediatria, a infusão rápida de potássio é extremamente perigosa e reservada apenas para arritmias graves com risco de morte, o que não é o caso (o paciente está estável). Além disso, a manutenção posterior (10 mL de KCl) oferece apenas 25 mEq/L, o que seria insuficiente para uma correção eficiente comparado à alternativa B.\n\nd) Incorreta. Também propõe uma fase de ataque perigosa de potássio em 20 minutos e utiliza uma oferta de sódio menor na manutenção (mesmo erro da letra A).",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Diarreia",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/d6d2198b7401d2fe0851f43e60ae24610e4a345d73878359463c4f824bb5c210.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_a34bafca-9429-4be4-9289-6b57e00ff15d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:04.860Z"
+  },
+  {
+    "id": "AJUDA_a35d20ea-4dbe-4644-8f8d-89cf43f2dcb6",
+    "originalId": "a35d20ea-4dbe-4644-8f8d-89cf43f2dcb6",
+    "statement": "O prolapso dos órgãos pélvicos (POP) é a herniação dos órgãos pélvicos através do diafragma urogenital, causando sintomas que reduzem a qualidade de vida das pacientes e com frequência associados à incontinência urinária. Sobre essa patologia, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "No sistema de quantificação do prolapso de órgão pélvico (POP-Q), uma medida do ponto Ba igual a -3 significa um prolapso grau I parede vaginal anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Em uma paciente com comprimento total da vagina de 10 cm, um colo uterino com medida de 7cm para fora do introito vaginal, configuraria um prolapso uterino grau IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento com pessário está indicado apenas para pacientes que querem preservar a fertilidade, sendo a cirurgia o tratamento nos outros casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os tratamentos como a colpocleise são indicados em pacientes com risco cirúrgico alto e que não pretendem manter a função vaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender corretamente a questão sobre o Prolapso de Órgãos Pélvicos (POP), vamos analisar detalhadamente cada uma das alternativas baseadas nos critérios diagnósticos e terapêuticos atuais:\n\nAlternativa (a) Incorreta: No sistema POP-Q (Pelvic Organ Prolapse Quantification), os pontos da parede anterior e posterior da vagina (Aa, Ba, Ap, Bp) em uma paciente com suporte normal possuem a medida de -3 cm em relação ao hímen. Portanto, uma medida de Ba igual a -3 indica que a parede vaginal anterior está em sua posição anatômica normal, não havendo prolapso. O estágio I ocorre quando o ponto de maior prolapso está a mais de 1 cm acima do hímen (por exemplo, -2 cm ou -1,5 cm).\n\nAlternativa (b) Incorreta: No sistema POP-Q, o estágio IV é definido como a eversão total da vagina ou quando o ponto de maior prolapso atinge uma medida maior ou igual ao Comprimento Vaginal Total (TVL) menos 2 cm. Se o TVL da paciente é 10 cm, o estágio IV seria caracterizado por um prolapso de +8 cm ou mais (10 - 2 = 8). Como a medida apresentada foi de +7 cm, o caso se classifica como prolapso estágio III (onde o prolapso está além de 1 cm do hímen, mas não chega ao estágio IV).\n\nAlternativa (c) Incorreta: O uso de pessários vaginais é uma opção de tratamento conservador disponível para qualquer paciente, independentemente do desejo de preservar a fertilidade. Ele é frequentemente indicado para pacientes que possuem contraindicações cirúrgicas, pacientes que aguardam a cirurgia, gestantes ou aquelas que simplesmente preferem não se submeter a um procedimento invasivo.\n\nAlternativa (d) Correta: A colpocleise (como as técnicas de LeFort ou Labhardt) é um procedimento cirúrgico obliterativo, ou seja, que consiste no fechamento parcial ou total do canal vaginal. Por ser uma cirurgia tecnicamente mais simples, rápida e com menor morbidade em comparação às cirurgias reconstrutivas, ela é excelente para pacientes idosas, com risco cirúrgico elevado e que não possuem mais desejo de atividade sexual com penetração vaginal (coito), uma vez que a vagina deixará de ser funcional para esse fim.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Incontinência Urinária",
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:04.860Z"
+  },
+  {
+    "id": "AJUDA_a363bb06-16a5-48d1-9737-d11bc627d9f1",
+    "originalId": "a363bb06-16a5-48d1-9737-d11bc627d9f1",
+    "statement": "Um menino saudável, nascido a termo, com peso e comprimentos adequados à idade gestacional, tem histórico de bom desenvolvimento neuropsicomotor e peso sempre adequado à altura. Os registros revelam que cresceu com velocidade normal/baixa, a partir do final do primeiro ano de vida, chegando a -2,1 de desvio padrão (DP) aos 13 anos, permanecendo nessa faixa até os 16 anos, quando iniciou estirão puberal. Chegou a seu alvo genético sem qualquer intervenção terapêutica. Aos 19 anos, a estatura final é de 170cm. Aos 13 anos, o diagnóstico provável da estatura baixa era:",
+    "options": [
+      {
+        "id": "A",
+        "text": "familiar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "patológica de origem pré-natal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "patológica de origem pós-natal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "atraso constitucional do crescimento",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para solucionar esta questão, é fundamental diferenciar as variantes normais do crescimento: a Estatura Baixa Familiar e o Atraso Constitucional do Crescimento e da Puberdade (ACCP).\n\nA alternativa (d) está correta porque o quadro clínico descreve perfeitamente o Atraso Constitucional do Crescimento e da Puberdade. As principais características presentes no caso são:\n1. Nascimento com peso e comprimento adequados (descarta causas pré-natais).\n2. Crescimento com velocidade normal ou limite inferior da normalidade, resultando em uma curva que corre abaixo, mas paralela ao percentil mínimo durante a infância.\n3. Atraso no início da puberdade (estirão apenas aos 16 anos, quando o habitual para meninos é entre 12 e 14 anos).\n4. Alcance do alvo genético sem necessidade de tratamento, com estatura final normal aos 19 anos.\nNo ACCP, a criança \"pula\" o estirão na idade habitual, mas continua crescendo por mais tempo porque sua idade óssea é atrasada, fechando as epífises mais tarde e atingindo seu potencial genético final.\n\nA alternativa (a) está incorreta porque, na Estatura Baixa Familiar, a criança tem pais baixos, a idade óssea costuma ser compatível com a idade cronológica e a puberdade ocorre na idade esperada. O indivíduo atinge sua estatura final cedo e permanece em um patamar mais baixo, condizente com o histórico da família, diferentemente do paciente do caso que teve um estirão tardio.\n\nA alternativa (b) está incorreta pois o enunciado afirma explicitamente que o menino nasceu a termo, com peso e comprimento adequados para a idade gestacional. Causas patológicas pré-natais geralmente envolvem restrição de crescimento intrauterino ou síndromes genéticas diagnosticadas precocemente.\n\nA alternativa (c) está incorreta porque causas patológicas pós-natais (como deficiência de hormônio do crescimento, hipotireoidismo ou doenças crônicas como a doença celíaca) geralmente cursam com queda acentuada da velocidade de crescimento (desvio da curva) e, na maioria das vezes, impedem que o indivíduo atinja o alvo genético sem que haja uma intervenção terapêutica específica para a doença de base. O paciente em questão atingiu seu alvo naturalmente.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:04.860Z"
+  },
+  {
+    "id": "AJUDA_a3682bf2-6205-41ce-bf0c-fb9d4098b018",
+    "originalId": "a3682bf2-6205-41ce-bf0c-fb9d4098b018",
+    "statement": "Durante a territorialização de uma microárea de alta vulnerabilidade, a equipe de Saúde da Família realizou uma Estimativa Rápida Participativa (ERP) para mapear lideranças, recursos comunitários e os principais problemas de saúde percebidos pela população. Paralelamente, na Unidade Básica de Saúde, uma médica residente atende um adolescente de 16 anos com crises recorrentes de ansiedade. Ao elaborar o genograma e o ecomapa, identifica que o jovem reside com a mãe e o padrasto, com quem mantém relação conflituosa; evadiu da escola; tem pouco contato com o pai biológico; e mantém forte vínculo de apoio com a avó materna e com um projeto social de capoeira do bairro. Considerando a finalidade e a interpretação dessas ferramentas na Atenção Primária à Saúde, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O genograma representa a estrutura e as relações familiares, sendo utilizado para identificar vínculos de parentesco e padrões de transmissão familiar de doenças, enquanto as relações de apoio com pessoas sem parentesco devem ser representadas no ecomapa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A Estimativa Rápida Participativa utiliza informações provenientes de diferentes fontes, incluindo dados secundários e informações obtidas diretamente junto à comunidade, constituindo instrumento voltado, principalmente, ao diagnóstico clínico individual dos usuários acompanhados pela equipe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O ecomapa complementa o genograma ao representar as relações da família com pessoas, instituições e recursos comunitários, sendo utilizado, principalmente, para identificar vínculos hereditários e padrões de transmissão familiar das doenças.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O ecomapa complementa o genograma ao representar as relações da família com o meio, evidenciando que a avó materna e o projeto social de capoeira constituem importantes pontos de apoio para o plano de cuidado do adolescente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O conflito entre o adolescente e o padrasto deve ser representado no genograma, enquanto o ecomapa destina-se exclusivamente à representação das relações da família com instituições e equipamentos da rede de atenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A alternativa correta é a letra (d). A questão cobra a diferença entre três ferramentas da Atenção Primária à Saúde: a ERP, que atua no território, e o genograma e o ecomapa, que atuam na família.\n\nConceitos essenciais:\n- Estimativa Rápida Participativa (ERP): método de diagnóstico situacional do território. Usa dados secundários (sistemas de informação, censo), observação ativa e entrevistas com informantes-chave e a comunidade. Identifica problemas, necessidades, lideranças e recursos, e serve ao planejamento e à programação local em saúde. Seu foco é coletivo, não o diagnóstico clínico individual.\n- Genograma: representação gráfica da estrutura familiar, em geral com três gerações. Mostra parentesco, casamentos, separações, óbitos, doenças, padrões hereditários e também a qualidade das relações entre os membros da família, como conflito, proximidade ou distanciamento.\n- Ecomapa: representa a relação da família ou do indivíduo com o meio externo, como escola, igreja, trabalho, serviços de saúde, projetos sociais, amigos e vizinhos. Mostra a rede de apoio e as fontes de estresse, com linhas que indicam vínculos fortes, fracos ou estressantes. Ele complementa o genograma.\n\nNo caso, o adolescente tem a avó materna e a capoeira como vínculos fortes de apoio. O conflito com o padrasto e a evasão escolar são fontes de estresse. Esses achados orientam o plano de cuidado: fortalecer a avó e o projeto social e abordar a reinserção escolar e a dinâmica familiar.\n\nAnálise das alternativas:\n\na) Incorreta. A primeira parte está certa, mas a afirmação de que relações de apoio com pessoas sem parentesco devem ser representadas no ecomapa é uma simplificação. A avó materna é parente e é um dos principais apoios, e a relação com ela aparece no genograma e também no ecomapa, pois é um recurso de apoio. A classificação por \"ter ou não parentesco\" não é o critério correto. O critério é núcleo familiar versus relações com o meio externo. A alternativa fica menos precisa que a (d), que é a melhor resposta.\n\nb) Incorreta. A ERP usa dados secundários e informações da comunidade, mas serve ao diagnóstico coletivo do território. Não serve ao diagnóstico clínico individual.\n\nc) Incorreta. A primeira parte, sobre o ecomapa, está certa. O erro está na segunda: vínculos hereditários e padrões de transmissão de doenças são função do genograma, não do ecomapa.\n\nd) Correta. Descreve com precisão o ecomapa como complemento do genograma, representando a relação da família com o meio. Identifica corretamente a avó e o projeto de capoeira como pontos de apoio úteis ao plano de cuidado.\n\ne) Incorreta. O conflito com o padrasto pode ser representado no genograma, que também registra a qualidade das relações. O erro está em dizer que o ecomapa é \"exclusivamente\" para instituições e equipamentos da rede. Ele também inclui pessoas e redes informais de apoio, como amigos, vizinhos e comunidade.\n\nPonto-chave: genograma é a estrutura e a dinâmica interna da família, e ecomapa é a família no seu contexto social. A ERP olha o território, não o indivíduo.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:04.860Z"
+  },
+  {
+    "id": "AJUDA_a369b5eb-4e81-40f3-80ce-dabaf3986e14",
+    "originalId": "a369b5eb-4e81-40f3-80ce-dabaf3986e14",
+    "statement": "A criação do Sistema Único de Saúde (SUS) no Brasil, em 1988, responde a aspectos de crise e reconstruções no cenário institucional e político do país, dentre os quais é possível destacar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A crise financeira da assistência médica previdenciária, a falta de articulação entre as ações de saúde nos diversos níveis da federação, a desmobilização dos movimentos sociais por saúde e a redemocratização do país.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A crise financeira do setor saúde nos diversos níveis da federação, a mobilização dos movimentos sociais pela expansão da assistência médica previdenciária e o movimento popular pela redemocratização do país.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A crise previdenciária, a mobilização dos movimentos sociais por aumento da extensão das ações de assistência médica, uma nova articulação entre os setores público e privado na saúde e a participação popular nos diversos níveis da federação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A desarticulação entre setor público e privado, a desmobilização dos movimentos sociais por saúde, a articulação entre os diversos níveis de atenção à saúde da federação e a crise das instituições democráticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender a criação do Sistema Único de Saúde (SUS), é preciso analisar o contexto das décadas de 1970 e 1980 no Brasil. O sistema de saúde anterior era fragmentado e centrado no modelo previdenciário (INPS/INAMPS), no qual apenas trabalhadores com carteira assinada tinham direito pleno à assistência médica.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O erro principal desta alternativa é citar a desmobilização dos movimentos sociais pela saúde. Na verdade, ocorreu o oposto: houve uma intensa mobilização da sociedade civil e de profissionais de saúde, conhecida como Movimento da Reforma Sanitária, que foi fundamental para as conquistas da Constituição de 1988.\n\nAlternativa B: Incorreta. Embora cite corretamente a mobilização social, a alternativa afirma que o objetivo era a expansão da assistência médica previdenciária. O movimento sanitário buscava romper com o modelo previdenciário (que era contributivo e excludente) para instituir um sistema universal, no qual a saúde passasse a ser um direito de todos e dever do Estado, independentemente de contribuição para a previdência.\n\nAlternativa C: Correta. Esta alternativa sintetiza os pilares que levaram à mudança constitucional. A crise previdenciária (o modelo do INAMPS estava falido financeiramente e era ineficiente) somou-se à pressão dos movimentos sociais que exigiam a extensão das ações de saúde a toda a população. O SUS trouxe uma nova articulação entre os setores público e privado (com o privado atuando de forma complementar e sob regulação estatal) e garantiu a participação popular como uma de suas diretrizes organizativas, consolidada por meio dos Conselhos e Conferências de Saúde.\n\nAlternativa D: Incorreta. A alternativa apresenta várias incorreções. Ela menciona a desmobilização dos movimentos sociais, quando houve intensa mobilização. Também cita a crise das instituições democráticas, mas o contexto era justamente de redemocratização e fortalecimento das instituições após o fim da ditadura militar.\n\nEm resumo, o SUS surge como uma resposta política e social à falência do modelo excludente anterior, impulsionado pelo desejo de democratização do acesso e pela organização da sociedade civil durante a Assembleia Nacional Constituinte.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "História do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:04.860Z"
+  },
+  {
+    "id": "AJUDA_a36a7efe-74e1-436e-bd6f-b6e8a7fd92f4",
+    "originalId": "a36a7efe-74e1-436e-bd6f-b6e8a7fd92f4",
+    "statement": "As crises convulsivas febris são aquelas que ocorrem em crianças neurologicamente normais com menos de 6 anos de idade.\nSobre a convulsão febril, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "um período de sonolência após o evento ictal de alguns minutos é incomum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "não ocorre durante infecções virais ou bacterianas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "em geral, ocorre no início da elevação rápida da temperatura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "não acontece a recorrência após o primeiro episódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "não está relacionada à febre decorrente da vacinação contra alguns vírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A convulsão febril é a desordem convulsiva mais comum na infância, ocorrendo em cerca de 2% a 5% das crianças. Ela é definida como uma crise que ocorre em crianças entre 6 meses e 5 ou 6 anos de idade, associada à febre, mas sem evidência de infecção do sistema nervoso central ou causa metabólica definida.\n\nAlternativa A (Incorreta): O período pós-ictal, que é o tempo de recuperação logo após a crise, é frequentemente marcado por sonolência, letargia ou confusão mental. Na convulsão febril simples, esse período costuma ser curto (alguns minutos), mas é um achado comum e esperado, e não incomum.\n\nAlternativa B (Incorreta): As crises são desencadeadas justamente por quadros febris, que na grande maioria das vezes são decorrentes de infecções virais comuns (como exantema súbito ou gripe) ou bacterianas (como otites, amigdalites e infecções urinárias). A febre é o gatilho, independentemente da etiologia da infecção, desde que não seja uma infecção do próprio cérebro (meningite/encefalite).\n\nAlternativa C (Correta): Esta alternativa descreve o comportamento clássico da crise febril. A convulsão costuma ocorrer nas primeiras 24 horas do quadro febril e está fortemente relacionada à velocidade de elevação da temperatura. Muitas vezes, a crise é o primeiro sinal da doença, ocorrendo antes mesmo de os pais perceberem que a criança está febril.\n\nAlternativa D (Incorreta): A recorrência é frequente. Aproximadamente 30% a 35% das crianças que apresentam o primeiro episódio terão uma nova crise febril em quadros infecciosos futuros. Esse risco de recorrência sobe para 50% se o primeiro episódio ocorrer em crianças menores de 1 ano de idade.\n\nAlternativa E (Incorreta): A febre decorrente de vacinações (como a tríplice viral ou a DTP) pode, sim, atuar como gatilho para uma crise convulsiva febril em crianças predispostas. O evento não é causado por uma toxicidade da vacina, mas sim pela resposta térmica (febre) que o sistema imunológico produz após a imunização.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Convulsão Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:04.860Z"
+  },
+  {
+    "id": "AJUDA_a371cd74-0865-48db-9d06-7c72360cdb2d",
+    "originalId": "a371cd74-0865-48db-9d06-7c72360cdb2d",
+    "statement": "Adolescente, 15 anos de idade, sofreu trauma na região orbitária durante uma partida de tênis que evoluiu com equimose e imobilidade quase completa do globo ocular. Exame físico: enoftalmia e rebordo orbitário íntegro à palpação. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fratura isolada da maxila",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fratura isolada do arco zigomático",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fratura isolada do osso frontal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fratura isolada da órbita interna",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão descreve um quadro clássico de fratura por explosão da órbita, conhecida tecnicamente como fratura em blow-out. O mecanismo de trauma (objeto de diâmetro menor ou igual à abertura da órbita, como uma bola de tênis) aumenta a pressão intraorbitária subitamente, causando a fratura da parede mais frágil (geralmente o assoalho da órbita ou a parede medial), enquanto preserva o rebordo orbitário, que é uma estrutura óssea mais resistente.\n\nAnálise das características clínicas:\n1. Enoftalmia: Ocorre devido ao aumento do volume da cavidade orbitária após a ruptura de uma de suas paredes, fazendo com que o conteúdo orbitário (gordura e globo ocular) sofra um deslocamento posterior ou inferior.\n2. Imobilidade do globo ocular: Acontece pelo aprisionamento dos músculos extraoculares (principalmente o reto inferior) ou de tecidos adjacentes nos fragmentos ósseos da fratura, impedindo a movimentação do olho.\n3. Rebordo orbitário íntegro: Característica fundamental da fratura isolada das paredes internas da órbita, diferenciando-a de fraturas complexas da face.\n\nAnálise das alternativas:\n\na) Incorreta. Uma fratura isolada da maxila geralmente se refere a fraturas do corpo do osso ou fraturas do tipo Le Fort. Embora o assoalho da órbita seja parte da maxila, o termo \"fratura isolada da maxila\" não descreve adequadamente o mecanismo de blow-out e costuma cursar com outras deformidades faciais ou instabilidade do arco dentário superior.\n\nb) Incorreta. A fratura do arco zigomático ocorre tipicamente por traumas laterais na face. Os principais sinais são o afundamento da região geniana (maçã do rosto) e, às vezes, limitação da abertura bucal por compressão do processo coronoide da mandíbula, não causando enoftalmia ou aprisionamento muscular ocular de forma isolada.\n\nc) Incorreta. A fratura do osso frontal atingiria a parte superior da órbita e a testa. O rebordo orbitário superior estaria comprometido e seria palpável uma solução de continuidade ou degrau ósseo, o que contradiz o exame físico da questão.\n\nd) Correta. A fratura isolada da órbita interna (especificamente do assoalho ou parede medial) explica perfeitamente o quadro. O impacto da bola de tênis transmitiu pressão para o conteúdo orbitário, que \"explodiu\" a parede óssea mais fina para dentro do seio maxilar ou etmoidal. Isso gera o aprisionamento muscular (causando a imobilidade) e o aumento do espaço orbitário (causando a enoftalmia), mantendo o rebordo externo intacto.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Traumatismos Oculares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:04.860Z"
+  },
+  {
+    "id": "AJUDA_a37cbef4-db6f-46d1-b519-1b7e4813c06a",
+    "originalId": "a37cbef4-db6f-46d1-b519-1b7e4813c06a",
+    "statement": "Em relação à asma na infância, qual das seguintes opções é diagnosticamente mais sugestiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tosse noturna recorrente e sibilância episódica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pneumonias bacterianas de repetição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Espirometria sempre normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tosse produtiva diária crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Estridor laríngeo persistente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A asma na infância é uma doença inflamatória crônica das vias aéreas, caracterizada por hiper-responsividade brônquica e limitação variável ao fluxo aéreo. O diagnóstico em pediatria é eminentemente clínico, baseando-se no padrão dos sintomas.\n\nExplicação das alternativas:\n\nAlternativa (a) - CORRETA: Esta é a apresentação clássica da asma. A sibilância episódica, desencadeada por gatilhos como infecções virais, alérgenos ou exercício, é o sinal clínico cardinal. A tosse noturna recorrente é um sintoma muito sugestivo, ocorrendo devido ao ritmo circadiano (queda fisiológica do cortisol e da adrenalina à noite) e ao maior contato com ácaros no ambiente de dormir, o que acentua a inflamação e a broncoconstrição.\n\nAlternativa (b) - INCORRETA: Pneumonias bacterianas de repetição não definem asma. Embora a asma não controlada possa predispor a complicações respiratórias, quadros infecciosos bacterianos recorrentes devem levantar a suspeita de imunodeficiências, fibrose cística, discinesia ciliar primária ou malformações anatômicas.\n\nAlternativa (c) - INCORRETA: A espirometria na asma é caracterizada por um distúrbio ventilatório obstrutivo que apresenta reversibilidade após o uso de broncodilatador. Uma espirometria \"sempre normal\" não ajuda no diagnóstico; pelo contrário, a demonstração da variação da função pulmonar é o que corrobora a patologia. Vale lembrar que, em crianças pequenas, o diagnóstico é clínico, pois muitas não conseguem realizar a manobra técnica necessária para o exame.\n\nAlternativa (d) - INCORRETA: A tosse característica da asma é tipicamente seca e irritativa. Uma tosse produtiva (com catarro) diária e crônica é um \"sinal de alerta\" (red flag) que sugere diagnósticos diferenciais como bronquiectasias, fibrose cística ou bronquite bacteriana prolongada.\n\nAlternativa (e) - INCORRETA: O estridor é um ruído inspiratório originado em vias aéreas superiores (laringe ou traqueia), comum em condições como laringomalácia ou crupe viral. A asma manifesta-se com sibilos, que são ruídos predominantemente expiratórios decorrentes do estreitamento das vias aéreas inferiores (brônquios).",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:04.860Z"
+  }
+]

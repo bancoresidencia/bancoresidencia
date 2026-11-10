@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_4ea85f0e-a8e1-4ee9-8709-4a43e1788373",
+    "originalId": "4ea85f0e-a8e1-4ee9-8709-4a43e1788373",
+    "statement": "Miguel, 2 anos, é avaliado por atraso na marcha e deformidades ósseas progressivas. Os pais relatam que ele foi alimentado exclusivamente com leite materno até os 12 meses, sem suplementação vitamínica, e que raramente é exposto ao sol. Ao exame físico, observam-se arqueamento bilateral dos membros inferiores, alargamento dos punhos, craniotabes e atraso na erupção dentária. Radiografia de joelhos mostra desorganização da placa de crescimento e rarefação óssea. Os exames laboratoriais revelam: 25(OH) vitamina D = 10 ng/mL, hipocalcemia, hipofosfatemia, fosfatase alcalina elevada e PTH elevado. Considerando os achados clínicos, laboratoriais e radiológicos, qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Osteomalácia nutricional com hipocalcemia secundária à má absorção intestinal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Raquitismo carencial por deficiência de vitamina D com hiperparatireoidismo secundário;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Displasia metafisária congênita com alterações da placa de crescimento;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipoparatireoidismo primário com hipocalcemia e alterações ósseas;",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Analise das alternativas:\n\nAlternativa A: Incorreta. O termo osteomalacia refere-se ao defeito de mineralizacao da matriz ossea apos o fechamento das epifises, enquanto em criancas com cartilagem de crescimento aberta o termo correto e raquitismo. Alem disso, os dados da historia clinica evidenciam privacao nutricional direta (falta de suplementacao de vitamina D durante o aleitamento materno exclusivo e baixa exposicao solar), sem qualquer indicio de sindrome de ma absorcao intestinal.\n\nAlternativa B: Correta. O quadro clinico, radiologico e laboratorial e a representacao classica do raquitismo carencial por deficiencia de vitamina D. A falta de aporte e sintese cutanea de colecalciferol leva a queda da absorcao intestinal de calcio, gerando hipocalcemia. Essa hipocalcemia estimula as paratireoides a aumentarem a secrecao de PTH (hiperparatireoidismo secundario), o qual atua aumentando a reabsorcao ossea e promovendo fosfaturia intensa, o que justifica a hipofosfatemia. A fosfatase alcalina eleva-se pelo aumento da atividade osteoblastica na tentativa de mineralizar o osteoide. O defeito na mineralizacao da placa fisaria resulta nas alteracoes osseas tipicas: craniotabes, alargamento metafisario (punhos), arqueamento dos membros inferiores e atraso no desenvolvimento motor e dentario.\n\nAlternativa C: Incorreta. As displasias metafisarias constituem um grupo heterogeneo de doencas geneticas do desenvolvimento osseo intrinseco. Embora provoquem deformidades de membros e irregularidade radiologica nas metafises, o perfil laboratorial fosfocalcico (calcio, fosforo, PTH, vitamina D) mantem-se dentro dos padroes da normalidade, o que descarta essa condicao.\n\nAlternativa D: Incorreta. No hipoparatireoidismo primario ha deficit na sintese ou secrecao de PTH, logo o hormonio estaria indetectavel ou diminuido, e nao elevado. Adicionalmente, a falta de PTH reduz a excrecao renal de fosfato, gerando hiperfosfatemia, quadro oposto a hipofosfatemia observada no paciente.\n\nGabarito: Alternativa B.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Doenças do Osso e da Cartilagem",
+      "Deficiências Vitamínicas e Profilaxias",
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:59.161Z"
+  },
+  {
+    "id": "AJUDA_4eb4bfb3-4123-44b8-a297-b3629f722cf1",
+    "originalId": "4eb4bfb3-4123-44b8-a297-b3629f722cf1",
+    "statement": "Em relação ao uso de ambroxol em pediatria, a indicação clínica mais fundamentada pelo seu mecanismo de ação é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alívio imediato de crises asmáticas devido à sua ação broncodilatadora direta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução da viscosidade do muco em doenças respiratórias com hipersecreção, facilitando a expectoração.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prevenção de infecções respiratórias virais devido à sua ação imunomoduladora nas vias aéreas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Controle da inflamação em bronquiolites através da inibição de mediadores inflamatórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tratamento de tosse seca crônica por sua ação antitussígena no sistema nervoso central.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ambroxol é um fármaco classificado quimicamente como um metabólito da bromexina, atuando como um agente mucolítico e expectorante. Seu principal mecanismo de ação envolve a despolimerização das fibras de mucopolissacarídeos ácidos do muco brônquico, o que reduz a viscosidade da secreção. Além disso, ele estimula a atividade dos cílios do epitélio respiratório e promove a síntese de surfactante pelos pneumócitos tipo II, facilitando o transporte e a eliminação do muco.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O ambroxol não possui ação broncodilatadora direta. O alívio imediato de crises asmáticas requer o uso de broncodilatadores de curta ação (como o salbutamol), que atuam nos receptores beta-2-adrenérgicos da musculatura lisa brônquica para reverter o broncoespasmo.\n\nAlternativa b) Correta. Esta é a descrição clássica da indicação clínica e do mecanismo de ação do ambroxol. Ao reduzir a viscoelasticidade do muco e melhorar o clearance mucociliar, ele facilita a expectoração em patologias onde há hipersecreção e dificuldade de eliminação do catarro, como em bronquites agudas e crônicas.\n\nAlternativa c) Incorreta. Embora existam estudos experimentais sugerindo propriedades antioxidantes ou efeitos sobre citocinas, o ambroxol não é indicado clinicamente como um imunomodulador para a prevenção de infecções virais. A prevenção dessas infecções em pediatria é feita primordialmente via vacinação e medidas de higiene.\n\nAlternativa d) Incorreta. Na bronquiolite aguda (geralmente causada pelo Vírus Sincicial Respiratório), o uso de mucolíticos como o ambroxol não é recomendado pelas principais diretrizes pediátricas, pois não há evidência de que eles alterem o curso da doença ou reduzam a inflamação de forma clinicamente significativa. O tratamento da bronquiolite é prioritariamente de suporte (hidratação e oxigenação).\n\nAlternativa e) Incorreta. O ambroxol é indicado para tosse produtiva (com secreção). Para o tratamento de tosse seca crônica, utilizam-se fármacos antitussígenos (como a codeína ou o dextrometorfano) que atuam no centro da tosse no sistema nervoso central para inibir o reflexo. O ambroxol atua na periferia (vias aéreas) e não tem ação sedativa no sistema nervoso central.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:59.161Z"
+  },
+  {
+    "id": "AJUDA_4ebb1f29-8394-4618-9c49-51e2585d0f10",
+    "originalId": "4ebb1f29-8394-4618-9c49-51e2585d0f10",
+    "statement": "A Atenção Básica é parte essencial do cuidado em Saúde no Sistema Único de Saúde (SUS) e tem a Política Nacional de Atenção Básica (PNAB) como documento base para suas diretrizes e organização. Esse documento traz, em seu Art. 2º, que as ações de saúde da Atenção Básica são realizadas com equipes multiprofissionais a uma população em território definido. Ademais, a Estratégia Saúde da Família é a estratégia prioritária desse nível de atenção. Uma das equipes citadas na PNAB de 2017 é o Núcleo Ampliado de Saúde da Família e Atenção Básica (Nasf-AB), equipe multiprofissional e interdisciplinar complementar às equipes de saúde. Em 2023, ο NASF foi substituído pela eMulti (equipes Multiprofissionais na Atenção Primária à Saúde), pela Portaria nº 635, para a continuidade do trabalho, atendendo demandas do perfil demográfico e epidemiológico atual. Sobre a eMulti, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A eMulti pode ofertar ações de saúde a distância mediadas por Tecnologias de Informação e Comunicação (TIC).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A eMulti pode realizar atendimento compartilhado entre profissionais e equipes, contudo não pode realizar a construção conjunta de projetos terapêuticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A integralidade das ações da eMulti excluem apoio matricial, discussões de casos e atendimento domiciliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As atividades coletivas desenvolvidas pela eMulti devem ser dentro do espaço físico da Unidade Básica de Saúde (UBS).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O foco da eMulti é a assistência à saúde, na forma de atendimento individual, uniprofissional e unisetorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda a transição do antigo modelo do Núcleo Ampliado de Saúde da Família e Atenção Básica (NASF-AB) para as novas Equipes Multiprofissionais na Atenção Primária à Saúde (eMulti), instituídas pela Portaria nº 635, de 2023. O objetivo dessa mudança foi fortalecer a composição multiprofissional na Atenção Básica, garantindo financiamento e novas formas de atuação.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Correta. Uma das grandes inovações trazidas pela Portaria nº 635/2023 para as eMulti é a incorporação oficial das Tecnologias de Informação e Comunicação (TIC). O documento estabelece que essas equipes podem realizar atendimentos e ações de saúde a distância, como teleconsultas e telediagnóstico, visando ampliar o acesso e a resolutividade no território da Atenção Primária.\n\nAlternativa b) Incorreta. A construção conjunta de projetos terapêuticos, especialmente o Projeto Terapêutico Singular (PTS), é uma das ferramentas fundamentais do trabalho interdisciplinar das eMulti. Negar essa atribuição vai contra o princípio de cuidado compartilhado e integral que rege essas equipes.\n\nAlternativa c) Incorreta. O apoio matricial, as discussões de casos clínicos entre equipes e o atendimento domiciliar não são excluídos, mas sim incentivados e fazem parte do escopo de atuação das eMulti. Essas ações são essenciais para garantir que a integralidade do cuidado seja alcançada no âmbito do SUS.\n\nAlternativa d) Incorreta. As atividades coletivas das eMulti não estão restritas ao espaço físico da Unidade Básica de Saúde (UBS). A Atenção Primária é pautada pela territorialização, o que significa que as ações podem e devem ocorrer em espaços comunitários, domicílios, escolas e outros equipamentos sociais presentes no território, conforme a necessidade da população.\n\nAlternativa e) Incorreta. O foco das eMulti é exatamente o oposto do que afirma a alternativa. Elas são estruturadas para o trabalho multiprofissional (diversas profissões), interdisciplinar (integração de saberes) e, muitas vezes, intersetorial (articulação com outras políticas públicas). Embora realizem atendimentos individuais, sua lógica principal é o apoio às equipes de Saúde da Família e o cuidado compartilhado.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:59.161Z"
+  },
+  {
+    "id": "AJUDA_4ed36b5f-d9db-4aac-aceb-e7d294d344de",
+    "originalId": "4ed36b5f-d9db-4aac-aceb-e7d294d344de",
+    "statement": "Primigesta, 18 anos de idade, comparece ao pré-natal com 33 semanas de gravidez. Refere falta de ar para a rotina domiciliar, sente-se cansada o tempo todo. Ultimamente, com mais dificuldade para dormir. Boa movimentação fetal, mas tem contrações dolorosas há 3 horas. Ao exame físico, apresentou-se descorada 1+/4+, FR de 18 ipm, FC de 118 bpm, saturação de O2 de 94%, PA de 130x90 mmHg. Sopro diastólico mitral 3+/6+ com reforço pré-sistólico, sopro sistólico aórtico 2+/6+ sem irradiações. Ausculta pulmonar com estertores e sibilos esparsos. Edema membros inferiores 2+/4+. Abdome gravídico, AU 30 cm, BCF+, dinâmica 3 contrações fracas em 10 minutos. Colo médio posterior, 4 cm de dilatação, bolsa íntegra, cefálico.\n\nA escolha terapêutica imediata é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Terbutalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Metildopa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Furosemida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sulfato de magnésio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente é uma primigesta de 33 semanas com um quadro claro de descompensação cardíaca. O exame físico revela um sopro diastólico mitral com reforço pré-sistólico, que é o achado clássico da estenose mitral. Durante a gestação, ocorrem mudanças hemodinâmicas fisiológicas, como o aumento do volume plasmático e da frequência cardíaca. Na estenose mitral, a valva estreitada impede a passagem adequada de sangue do átrio esquerdo para o ventrículo esquerdo. Com o aumento da frequência cardíaca, o tempo de diástole (enchimento ventricular) diminui, elevando a pressão no átrio esquerdo e, consequentemente, nos capilares pulmonares. Isso leva à congestão pulmonar, explicada pelos estertores, sibilos, dispneia e queda na saturação de oxigênio.\n\nAlternativa (c) Correta: A escolha terapêutica imediata deve focar no alívio da congestão pulmonar. A furosemida é um diurético de alça que promove a redução da pré-carga através da depleção de volume e venodilatação, diminuindo a pressão hidrostática nos vasos pulmonares e melhorando a troca gasosa. É a medida prioritária para estabilizar a mãe.\n\nAlternativa (a) Incorreta: A terbutalina é um agente beta-agonista utilizado para tocólise (inibição das contrações no parto prematuro). No entanto, ela é formalmente contraindicada em pacientes cardiopatas, especialmente naquelas com estenose mitral. A terbutalina causa taquicardia significativa, o que encurta ainda mais o tempo diastólico, impedindo o esvaziamento do átrio esquerdo e agravando criticamente o edema agudo de pulmão.\n\nAlternativa (b) Incorreta: A metildopa é um anti-hipertensivo de ação central indicado para o controle da hipertensão arterial crônica na gestação. A pressão arterial da paciente (130x90 mmHg) está no limite da normalidade e não justifica uma intervenção de emergência. Além disso, a metildopa tem início de ação lento e não trata a causa da insuficiência respiratória da paciente, que é mecânica/valvular e não hipertensiva.\n\nAlternativa (d) Incorreta: O sulfato de magnésio é utilizado para neuroproteção fetal em partos prematuros e para prevenção de eclâmpsia. Embora a paciente apresente contrações e dilatação cervical (trabalho de parto prematuro), a estabilização da função respiratória e hemodinâmica materna precede qualquer medida de neuroproteção ou tocogestão. Em uma paciente com edema pulmonar e saturação limite, a prioridade é salvar a vida da gestante através do manejo da insuficiência cardíaca.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Valvopatias",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:59.161Z"
+  },
+  {
+    "id": "AJUDA_4ed61e8e-31bd-474b-8e1c-a870f053bd44",
+    "originalId": "4ed61e8e-31bd-474b-8e1c-a870f053bd44",
+    "statement": "Situação-Problema: Menina, 3 anos de idade, é levada ao Pronto Atendimento com história de manchas avermelhadas e pruriginosas pelo corpo, iniciadas 30 minutos após o almoço. A mãe relata que a criança comeu ovo mexido e camarão pela primeira vez. Ao exame físico, observam-se pápulas eritematosas e edematosas em tronco e membros, prurido intenso, sem sinais respiratórios ou hipotensão.\n\nIndique a conduta inicial mais apropriada para esse caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Evitar o alimento suspeito por 24 horas e observar a evolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iníciar de imediato o uso de anti-histamínico de segunda geração.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administrar corticosteroide sistêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fazer uso de antibiótico profilático.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado é de urticária aguda decorrente de provável reação de hipersensibilidade alimentar imediata (após ingestão de ovo e camarão). As lesões eritematoedematosas e pruriginosas surgiram sem sinais de gravidade sistêmica ou anafilaxia (ausência de sintomas respiratórios, queixas gastrointestinais e instabilidade hemodinâmica). O foco do manejo inicial é o alívio dos sintomas cutâneos.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A restrição dos alimentos suspeitos é importante para a prevenção de novos episódios, mas a conduta expectante isolada é insuficiente. A paciente apresenta prurido intenso e desconforto importante, o que exige intervenção farmacológica imediata para controle dos sintomas.\n\nAlternativa b: Correta. Os anti-histamínicos de segunda geração (como cetirizina, levocetirizina e desloratadina) constituem a primeira linha de tratamento para urticária aguda. Eles atuam bloqueando os receptores H1 da histamina, principal mediador do quadro, com a vantagem de apresentarem menor efeito sedativo e melhor perfil de segurança em comparação aos de primeira geração.\n\nAlternativa c: Incorreta. Corticosteroides sistêmicos não são a terapia de primeira escolha para urticária aguda isolada. O seu uso é restrito a casos graves refratários aos anti-histamínicos, quadros de angioedema importante associado ou como medicação adjuvante na anafilaxia (na qual a adrenalina intramuscular é a prioridade).\n\nAlternativa d: Incorreta. A etiologia do quadro é estritamente alérgica (imunomediada por IgE / hipersensibilidade tipo I), não existindo qualquer indicação para o uso de antibióticos profiláticos ou terapêuticos.\n\nGabarito: Letra b.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Alergia Alimentar",
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:59.161Z"
+  },
+  {
+    "id": "AJUDA_4ef0cc4d-5f29-44ce-99fb-11d8cb6ea913",
+    "originalId": "4ef0cc4d-5f29-44ce-99fb-11d8cb6ea913",
+    "statement": "Mulher, 78 anos de idade, é trazida ao PS com história de queda da própria altura, evoluindo com dor no quadril D e consequente incapacidade a deambulação. Antecedentes pessoais: dependente de cuidadores em casa de repouso, arritmia, demência e diabetes tipo II sem controle. Radiografias: fratura desviada instável do colo do fêmur D, sem osteoartrose. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução e fixação percutânea com parafusos canulados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Artroplastia total do quadril.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Artroplastia parcial do quadril.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Redução e fixação com haste cefalomedular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO caso clínico descreve uma paciente de 78 anos com uma fratura desviada e instável do colo do fêmur (fratura intracapsular). A escolha do tratamento depende da idade da paciente, do nível de atividade prévia, da qualidade óssea e das comorbidades.\n\nNa fratura do colo do fêmur em idosos, o desvio do fragmento rompe a vascularização da cabeça femoral, o que gera um alto risco de necrose avascular e pseudoartrose (não consolidação). Por isso, a tendência nesses casos é a substituição protética (artroplastia) em vez da fixação.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Redução e fixação percutânea com parafusos canulados.\nIncorreta. A fixação interna está indicada para fraturas do colo do fêmur sem desvio (Garden I e II) em idosos ou fraturas em pacientes jovens (na tentativa de preservar a cabeça femoral). Em idosos com fratura desviada e instável, o índice de falha da fixação e a necessidade de reoperação são muito elevados.\n\nb) Artroplastia total do quadril.\nIncorreta. Embora seja uma opção para idosos com fratura do colo femoral, a artroplastia total (que substitui a cabeça femoral e o acetábulo) é preferencialmente indicada para pacientes hígidos, ativos, com boa expectativa de vida e que já deambulavam fora de casa sem auxílio, ou naqueles que já apresentam osteoartrose prévia. No caso da paciente, a presença de demência, a dependência de cuidadores e a baixa demanda funcional tornam o procedimento mais complexo e com maior risco de luxação, sem benefícios funcionais claros sobre a parcial.\n\nc) Artroplastia parcial do quadril.\nCorreta. A artroplastia parcial (hemiartroplastia) é o tratamento de escolha para idosos com baixa demanda funcional, dependentes ou com comprometimento cognitivo (como demência) que sofrem fraturas desviadas do colo do fêmur. É uma cirurgia tecnicamente mais simples, mais rápida, com menor perda sanguínea e menor risco de luxação em comparação à artroplastia total, sendo suficiente para permitir que a paciente retorne à sua mobilidade básica (sentar e realizar transferências).\n\nd) Redução e fixação com haste cefalomedular.\nIncorreta. As hastes cefalomedulares são o padrão-ouro para o tratamento de fraturas extracapsulares (transtrocantéricas e subtrocantéricas). Para fraturas do colo do fêmur (intracapsulares), o seu uso não é a conduta de escolha, especialmente em idosos, em que a substituição protética é preferível.\n\nResumo da conduta:\n- Idoso ativo/independente: Artroplastia Total.\n- Idoso com baixa demanda/demência/dependente: Artroplastia Parcial.\n- Jovem ou fratura sem desvio no idoso: Fixação interna (parafusos ou DHS).",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Trauma Ortopédico",
+      "Fraturas e Luxações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:59.161Z"
+  },
+  {
+    "id": "AJUDA_4ef1a6df-d8d2-4b2e-83a2-68ea9ec875ac",
+    "originalId": "4ef1a6df-d8d2-4b2e-83a2-68ea9ec875ac",
+    "statement": "Sobre a Terapia de Reposição Hormonal (TRH) na menopausa, analise as afirmações:\n\nI. A indicação primária da TRH é o alívio dos sintomas vasomotores (fogachos) e geniturinários que impactam a qualidade de vida.\nII. Em mulheres com útero, é obrigatória a associação de progestagênio ao estrogênio para proteção endometrial.\nIII. A TRH está indicada como prevenção primária de doença cardiovascular em todas as mulheres após os 60 anos.\n\nDessa forma, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a proposição I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a proposição III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as proposições I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Todas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS PROPOSIÇÕES:\n\nI. CORRETA. A principal indicação para o início da Terapia de Reposição Hormonal (TRH) são os sintomas climatéricos moderados a intensos que prejudicam a qualidade de vida da paciente. O padrão-ouro para o tratamento dos sintomas vasomotores (fogachos e sudorese noturna) é a terapia hormonal. Além disso, a TRH também trata a síndrome geniturinária da menopausa, embora em casos puramente locais o tratamento tópico possa ser preferido.\n\nII. CORRETA. Em mulheres com útero preservado, o uso de estrogênio isolado de forma sistêmica causa uma proliferação excessiva do endométrio, aumentando o risco de hiperplasia e adenocarcinoma de endométrio. A associação de um progestagênio é obrigatória para contrapor esse efeito e garantir a proteção endometrial. O uso de estrogênio isolado é reservado apenas para mulheres histerectomizadas.\n\nIII. INCORRETA. Esta afirmação contraria as diretrizes atuais. A TRH não deve ser indicada com o objetivo primário de prevenir doenças cardiovasculares. Existe o conceito da Janela de Oportunidade, que indica que a TRH é mais segura quando iniciada antes dos 60 anos ou nos primeiros 10 anos após a menopausa. Iniciar a TRH em mulheres com mais de 60 anos ou longe da data da menopausa está associado a um maior risco de eventos tromboembólicos e cardiovasculares, não sendo recomendada como prevenção nessa faixa etária.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A proposição II também está correta, tornando esta alternativa incompleta.\n\nb) Incorreta. A proposição III é falsa conforme os consensos da Sociedade Brasileira de Climatério (SOBRAC) e da International Menopause Society (IMS).\n\nc) CORRETA. As afirmações I e II descrevem corretamente as indicações clássicas e os cuidados de segurança endometrial na prescrição da TRH.\n\nd) Incorreta. Como a proposição III é falsa, a alternativa que afirma que todas estão corretas não pode ser assinalada.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:59.161Z"
+  },
+  {
+    "id": "AJUDA_4ef77233-50a2-4653-8747-0f1f4db4371e",
+    "originalId": "4ef77233-50a2-4653-8747-0f1f4db4371e",
+    "statement": "Uma paciente de 25 anos de idade procurou atendimento por sangramento uterino irregular há quatro meses, com intervalos variáveis entre 15 e 45 dias, acompanhado de fluxo aumentado. Negou uso de anticoncepcionais, histórico de doenças crônicas ou gestação. O exame físico não mostrou alterações relevantes. O s exames laboratoriais revelaram: Beta-hCG negativo, Hemograma: Hb = 11,2 g/dL. A ultrassonografia transvaginal mostrou útero de volume normal, endométrio com 1 mm na fase tardia do ciclo, sem pólipos ou miomas visíveis. No caso clínico apresentado, qual é a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sangramento uterino anovulatório por disfunção ovulatória",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Miomatose uterina submucosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Asherman",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adenomiose difusa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar as características clínicas da paciente e os achados dos exames complementares, utilizando a classificação PALM-COEIN da Federação Internacional de Ginecologia e Obstetrícia (FIGO) para Sangramento Uterino Anormal (SUA).\n\nAnálise do quadro clínico:\nA paciente é jovem (25 anos) e apresenta um padrão de sangramento irregular (intervalos de 15 a 45 dias) e aumentado. A irregularidade nos intervalos é um marcador clássico de disfunção ovulatória. O Beta-hCG negativo descarta gravidez. O hemograma mostra uma anemia leve (Hb 11,2 g/dL), compatível com a queixa de fluxo aumentado. A ultrassonografia transvaginal é fundamental, pois descarta causas estruturais (pólipos, miomas ou adenomiose) e revela um endométrio muito fino (1 mm) mesmo na fase tardia do ciclo, o que sugere que não houve a preparação endometrial adequada pela progesterona (que ocorreria após a ovulação).\n\nAnálise das alternativas:\n\na) Correta. O sangramento uterino anovulatório (classificado como SUA-O na FIGO) é a principal causa de irregularidade menstrual em mulheres na menacme, especialmente quando não há lesões estruturais identificadas. Na ausência de ovulação, não há formação do corpo lúteo nem produção de progesterona. O endométrio fica sob estímulo estrogênico contínuo (ou oscilante), tornando-se instável, o que leva a sangramentos imprevisíveis em termos de duração, intervalo e volume. O endométrio de 1 mm no exame sugere que o sangramento recente pode ter descamado a camada funcional ou que há uma falha no desenvolvimento proliferativo.\n\nb) Incorreta. A miomatose submucosa (SUA-L) costuma causar sangramento com aumento de volume (menorragia), mas geralmente mantém a regularidade do ciclo. Além disso, a ultrassonografia realizada foi especificamente descrita como normal, sem a presença de miomas.\n\nc) Incorreta. A Síndrome de Asherman consiste na presença de sinéquias (cicatrizes/aderências) dentro da cavidade uterina, geralmente após procedimentos como curetagens. Clinicamente, ela se manifesta por hipomenorreia (redução do fluxo) ou amenorreia (ausência de menstruação), o que é o oposto do quadro de fluxo aumentado e sangramento irregular apresentado pela paciente.\n\nd) Incorreta. A adenomiose (SUA-A) caracteriza-se pela presença de tecido endometrial no miométrio. Os sintomas clássicos são aumento do volume uterino, dor pélvica e dismenorreia secundária intensa. A ultrassonografia da paciente mostrou útero de volume normal e não descreveu os sinais típicos de adenomiose, como a assimetria das paredes uterinas ou miométrio heterogêneo.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:59.161Z"
+  },
+  {
+    "id": "AJUDA_4efae1ef-1029-431f-8d10-40f6a2ccf7d3",
+    "originalId": "4efae1ef-1029-431f-8d10-40f6a2ccf7d3",
+    "statement": "82- Na abordagem a uma família com diversos problemas de saúde, o ecomapa revela conexões fortes e recíprocas com a igreja local e o clube de futebol do bairro. Há uma conexão fraca com a escola do filho mais velho e uma relação de estresse com o serviço de saúde. A mãe está desempregada, e não há conexão com o mercado de trabalho. Baseado nesta representação, qual é a principal inferência que o profissional de saúde pode tirar para planejar intervenções?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O ecomapa sugere que a família tem mais problemas do que recursos e, portanto, a intervenção será difícil e provavelmente ineficaz.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A rede social externa da família pode ser usada como recurso para fortalecer a resiliência familiar, mesmo com a ausência de conexão profissional da mãe.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O principal problema da família é o desemprego da mãe, e todas as intervenções devem ser focadas em encontrar um emprego para ela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O profissional deve focar em fortalecer a relação com o serviço de saúde antes de qualquer outra intervenção, pois este é o principal fator de estresse.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ecomapa é uma ferramenta visual fundamental na Medicina de Família e Comunidade, utilizada para representar as relações da família com o meio externo e sua rede social. Ele permite identificar tanto os estressores quanto os recursos disponíveis no território, auxiliando na compreensão do suporte social e dos determinantes de saúde.\n\nAlternativa a) Incorreta. O ecomapa não serve apenas para listar problemas, mas para encontrar potenciais e recursos de apoio. A presença de conexões fortes e recíprocas (como com a igreja e o clube) indica que a família possui capital social significativo. O planejamento de saúde visa justamente utilizar esses recursos para superar as dificuldades, e não considerar a intervenção ineficaz ou difícil por antecipação.\n\nAlternativa b) Correta. A principal inferência ao analisar um ecomapa é identificar onde a família encontra suporte e pertencimento. Conexões fortes e recíprocas com instituições comunitárias sugerem uma rede de apoio que pode ser mobilizada para fortalecer a resiliência familiar. Mesmo diante de vulnerabilidades econômicas (desemprego) e atritos com o serviço de saúde, esses vínculos externos são ativos valiosos que o profissional deve integrar ao plano terapêutico para ajudar a família a enfrentar suas adversidades.\n\nAlternativa c) Incorreta. Esta alternativa apresenta uma visão reducionista. Embora o desemprego seja um determinante social de saúde relevante e impactante, o profissional de saúde deve atuar de forma integral e multidimensional. Focar todas as intervenções apenas na busca por emprego desconsidera as outras necessidades de saúde da família e negligencia o uso das potencialidades da rede social identificadas no instrumento.\n\nAlternativa d) Incorreta. O estresse com o serviço de saúde é um ponto que exige atenção e melhoria do vínculo, mas não existe uma regra que determine que ele deva ser a prioridade absoluta antes de qualquer outra ação. Em muitos casos, utilizar os recursos que a família já confia e frequenta (como a igreja ou o clube) é o caminho mais eficaz para, gradualmente, fortalecer a família e reconstruir a confiança com a equipe de saúde.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:59.161Z"
+  },
+  {
+    "id": "AJUDA_4efe17dd-30a5-444e-a271-7a5ee8b22f9e",
+    "originalId": "4efe17dd-30a5-444e-a271-7a5ee8b22f9e",
+    "statement": "Em paciente com abdome agudo perfurativo, o exame radiológico mais útil é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "TC de abdome com contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Radiografia de abdome em decúbito lateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Radiografia de tórax em ortostase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico de abdome agudo perfurativo baseia-se na identificação de ar livre na cavidade peritoneal, sinal radiológico conhecido como pneumoperitônio. Para a detecção desse achado, a estratégia inicial e mais eficaz na rotina de urgência é a realização da chamada rotina de abdome agudo.\n\nAlternativa (a) Incorreta: A tomografia computadorizada (TC) é, de fato, o exame mais sensível para detectar quantidades mínimas de ar e para localizar o sítio exato da perfuração. No entanto, por questões de disponibilidade, custo e rapidez, a radiografia continua sendo o exame inicial mais útil e prático para o rastreio. Além disso, o uso de contraste (especialmente o baritado) é contraindicado na suspeita de perfuração.\n\nAlternativa (b) Incorreta: A radiografia em decúbito lateral esquerdo com raios horizontais (incidência de Hicken) é útil apenas quando o paciente está impossibilitado de assumir a posição de ortostase (em pé). Ela permite ver o ar entre o fígado e a parede abdominal, mas não é a primeira escolha para pacientes que podem deambular.\n\nAlternativa (c) Correta: A radiografia de tórax em ortostase é considerada o exame mais útil e sensível entre as radiografias simples para o diagnóstico de pneumoperitônio. Isso ocorre porque o ar, sendo menos denso, migra para a região mais alta da cavidade abdominal, acumulando-se logo abaixo das cúpulas diafragmáticas. A nitidez da transição entre o pulmão (ar), o diafragma e o fígado/estômago facilita a visualização de lâminas de ar muito pequenas, sendo superior à radiografia de abdome para este fim.\n\nAlternativa (d) Incorreta: A ultrassonografia apresenta baixa sensibilidade para detectar ar livre na cavidade, pois o gás atua como uma barreira física para as ondas de ultrassom, gerando artefatos que dificultam a visualização de estruturas profundas. Sua utilidade é maior no abdome agudo inflamatório (como colecistite) ou hemorrágico.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Perfurativo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:59.161Z"
+  }
+]

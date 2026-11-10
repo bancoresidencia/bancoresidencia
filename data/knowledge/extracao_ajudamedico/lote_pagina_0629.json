@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_b01be231-3b7c-4915-a3be-e84a38862b0e",
+    "originalId": "b01be231-3b7c-4915-a3be-e84a38862b0e",
+    "statement": "Homem, 57 anos de idade, residente em uma área rural de difícil acesso, é portador de diabetes mellitus tipo 2 há 12 anos. Em visita domiciliar, ele relata usar metformina 850mg, 3 vezes ao dia, e não faz com frequência o controle de glicemia. Não tem usado a medicação, em virtude da dificuldade de comparecer à Unidade de Saúde. Nos últimos três meses, começou a notar uma ferida no pé esquerdo, que inicialmente era pequena, mas que tem aumentado de tamanho, com bordas endurecidas e exsudato purulento esporádico. Também apresenta dor de intensidade moderada que piora ao andar, mas continua trabalhando na lavoura. Ao exame físico, observa-se uma úlcera plantar com secreção amarela serosa, presença de pulsos periféricos diminuídos e uma área ao redor da lesão com edema discreto e rubor. Foi feita uma glicemia capilar: 240mg/dl no momento da consulta.\n\nIndique aspectos de evolução que podem determinar necessidade de amputação no caso apresentado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infecção sistêmica, necrose irreversível ou osteomielite.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Miosite infecciosa com pulsos periféricos diminuídos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Incapacidade de controle glicêmico com insulinização adequada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Neuropatia periférica grave com artropatia de Charcot.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso descreve um paciente com Diabetes Mellitus tipo 2 de longa data, com controle inadequado e presença de uma úlcera em membro inferior, configurando o quadro de Pé Diabético. A presença de pulsos diminuídos sugere um componente isquêmico associado (Doença Arterial Periférica), e os sinais inflamatórios com exsudato sugerem infecção. A decisão por uma amputação em pacientes com pé diabético é baseada na viabilidade do tecido, no controle da infecção e na funcionalidade do membro.\n\nAlternativa (a): CORRETA. Esta alternativa lista os principais determinantes clássicos para a amputação. A infecção sistêmica (sepse de foco cutâneo/ósseo) impõe risco imediato à vida, exigindo o controle do foco, que por vezes é a amputação. A necrose irreversível (gangrena) indica que o tecido não pode mais ser recuperado por revascularização ou desbridamento. A osteomielite, especialmente quando extensa, crônica ou associada a grande destruição óssea que impede o apoio do pé, é uma causa frequente de amputações maiores ou menores.\n\nAlternativa (b): INCORRETA. Embora a miosite infecciosa seja uma complicação grave e a diminuição de pulsos indique isquemia, esses achados isolados não determinam obrigatoriamente uma amputação. Inicialmente, o manejo clínico envolve antibioticoterapia de amplo espectro, drenagem de abscessos e tentativa de revascularização do membro para melhorar o aporte sanguíneo.\n\nAlternativa (c): INCORRETA. O descontrole glicêmico é um fator de risco que dificulta a cicatrização e favorece infecções, mas nunca é uma indicação de amputação. O tratamento para o descontrole glicêmico é o ajuste da insulinoterapia e medidas educativas, e não a remoção cirúrgica do membro.\n\nAlternativa (d): INCORRETA. A neuropatia periférica e a artropatia de Charcot (neuroartropatia) são complicações crônicas do diabetes. A artropatia de Charcot causa deformidades graves e instabilidade articular, mas o tratamento inicial é conservador, com imobilização e descarga de peso (offloading). A amputação na neuroartropatia de Charcot só é considerada em casos de deformidades extremas que impedem o uso de órteses ou quando há infecção secundária (osteomielite) intratável associada.\n\nResumo do raciocínio: A amputação é um recurso terapêutico de exceção, indicado quando há perda da viabilidade tecidual (necrose), falha no tratamento de infecções profundas (osteomielite grave) ou quando a infecção local coloca em risco a vida do paciente (infecção sistêmica).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Cirurgia Vascular",
+      "Medicina de Família e Comunidade",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:45.203Z"
+  },
+  {
+    "id": "AJUDA_b01cf7b2-9ad3-4f4e-a95e-67dd2fced873",
+    "originalId": "b01cf7b2-9ad3-4f4e-a95e-67dd2fced873",
+    "statement": "Gestante, 25 anos de idade, com 12 semanas de gravidez, comparece à consulta de pré-natal sem queixas. Refere parceiro fixo há 5 anos, saudável, atualmente em privação de liberdade, que não aceita uso de preservativo. Antecedentes pessoais: sífilis tratada com comprovação de tratamento e seguimento há 1 ano. Exames subsidiários: Teste rápido de HIV negativo. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever profilaxia pré-exposição (PrEP) sob demanda, antes e após relação sexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever profilaxia pós-exposição (PEP).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever terapia antiretroviral (TARV).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever profilaxia pré-exposição (PrEP) de uso contínuo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente em questão é uma gestante de 12 semanas que apresenta um risco contínuo e elevado de infecção pelo HIV, devido ao fato de seu parceiro estar em privação de liberdade (população com alta prevalência de infecções sexualmente transmissíveis) e não aceitar o uso de preservativo. O objetivo principal da conduta é prevenir a infecção materna e, consequentemente, evitar a transmissão vertical do HIV, que é significativamente mais alta se a soroconversão ocorrer durante a gestação.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. A profilaxia pré-exposição (PrEP) sob demanda (esquema 2-1-1) consiste na tomada de comprimidos antes e após a relação sexual. No entanto, essa modalidade só é validada e recomendada para homens cisgêneros que fazem sexo com homens e pessoas trans, devido à farmacocinética das drogas nos tecidos retais. Para mulheres cisgêneras e pessoas com exposição vaginal, a PrEP sob demanda não é eficaz, pois as drogas levam mais tempo para atingir concentrações protetoras no trato genital feminino.\n\nb) INCORRETA. A profilaxia pós-exposição (PEP) é indicada para situações de exposição esporádica e excepcional ao vírus (como violência sexual, ruptura de preservativo ou acidentes biológicos). No caso descrito, a paciente possui uma exposição crônica e recorrente, o que torna a PEP insuficiente e inadequada como estratégia de prevenção a longo prazo.\n\nc) INCORRETA. A terapia antirretroviral (TARV) refere-se ao tratamento de pessoas que já vivem com o HIV (soropositivas). Como a paciente possui teste rápido negativo, o objetivo é a prevenção (profilaxia) e não o tratamento.\n\nd) CORRETA. A PrEP de uso contínuo (um comprimido diário de Tenofovir + Entricitabina) é a conduta mais adequada. Segundo as diretrizes do Ministério da Saúde, a gestação e a amamentação não são contraindicações para o uso da PrEP; ao contrário, são consideradas situações prioritárias quando há risco de infecção. A proteção eficaz para tecidos vaginais só é alcançada com o uso diário e contínuo, garantindo que, em caso de exposição, o vírus não consiga se replicar no organismo da gestante.\n\nJUSTIFICATIVA DO GABARITO\n\nA indicação da PrEP contínua baseia-se na vulnerabilidade da paciente e na necessidade de manter níveis terapêuticos constantes da medicação para proteger o binômio mãe-feto, sendo o uso diário a única forma recomendada para mulheres cisgêneras devido à dinâmica de distribuição do medicamento no trato reprodutor feminino.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "HIV",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:45.203Z"
+  },
+  {
+    "id": "AJUDA_b01fd568-d86f-486a-8bfd-9bcd63030845",
+    "originalId": "b01fd568-d86f-486a-8bfd-9bcd63030845",
+    "statement": "Lactente de 5 meses, sexo masculino, é levado inconsciente ao SPA após episódio de crise convulsiva. A mãe relata que o quadro ocorreu após sua irmã, de 2 anos, arremessar uma boneca com força contra o corpo do lactente. Fundoscopia: hemorragia retiniana bilateral. Hipótese mais provável:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intoxicação exógena.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deficiência de piridoxina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome do bebê sacudido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ruptura de aneurisma cerebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descreve um lactente de 5 meses com rebaixamento do nível de consciência e crise convulsiva, associados ao achado de hemorragia retiniana bilateral na fundoscopia. Um ponto fundamental para o diagnóstico é a incompatibilidade entre a gravidade das lesões e a história relatada pela mãe (uma criança de 2 anos arremessando uma boneca). Esse cenário é um marcador clássico de Trauma Craniano Abusivo, especificamente a Síndrome do Bebê Sacudido.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA Síndrome do Bebê Sacudido ocorre quando o lactente é sacudido vigorosamente, geralmente por um cuidador em um momento de estresse ou frustração. O movimento de aceleração e desaceleração da cabeça (que é proporcionalmente maior e mais pesada, com musculatura cervical ainda fraca) provoca o cisalhamento de vasos sanguíneos e do tecido cerebral. A tríade clássica desta síndrome consiste em: hematoma subdural, edema cerebral e hemorragia retiniana. A hemorragia retiniana, especialmente quando bilateral e extensa, é altamente sugestiva de maus-tratos, sendo raramente encontrada em traumas acidentais leves.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a) Intoxicação exógena: Embora substâncias tóxicas possam causar crises convulsivas e alteração da consciência em lactentes, elas não explicam o achado de hemorragia retiniana bilateral. Este achado ocular direciona o raciocínio para um evento traumático ou de pressão intracraniana súbita e grave.\n\nAlternativa (b) Deficiência de piridoxina: Esta é uma causa rara de crises convulsivas neonatais ou na infância precoce que não respondem aos anticonvulsivantes comuns. Contudo, a deficiência de vitamina B6 não causa hemorragias oculares nem explica o início súbito de inconsciência em um lactente previamente saudável sob suspeita de trauma.\n\nAlternativa (d) Ruptura de aneurisma cerebral: Aneurismas cerebrais são extremamente raros em lactentes de 5 meses. Embora uma hemorragia subaracnoide por ruptura de aneurisma possa causar convulsão e coma, a presença de hemorragia retiniana bilateral e o contexto de uma história incompatível com o trauma relatado tornam a hipótese de maus-tratos muito mais provável e frequente na prática pediátrica.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Segurança na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:45.203Z"
+  },
+  {
+    "id": "AJUDA_b0296360-7cde-452b-bffc-69b4b7964aeb",
+    "originalId": "b0296360-7cde-452b-bffc-69b4b7964aeb",
+    "statement": "Uma paciente de 59 anos de idade apresenta perda urinária insensível, associada a urgência miccional, sem queixas de esvaziamento vesical associado. Ao exame clínico, mostra-se em bom estado geral, sem demais alterações, com FC = 90 bpm, PA = 120 mmHg x 80 mmHg, FR = 17 irpm, SatO2 = 95%, POP-Q tópico.\n\nQuanto ao referido caso clínico, assinale a alternativa que corresponde ao tratamento de primeira linha.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Medicamento anticolinérgico ou simpaticomimético",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Modificação do estilo de vida",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia da incontinência urinária (sling)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Toxina botulínica intravenosa",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente em questão apresenta um quadro clínico compatível com Incontinência Urinária de Urgência ou Bexiga Hiperativa, caracterizado pelo sintoma de urgência miccional associado à perda involuntária de urina. O exame físico com POP-Q tópico indica que não há prolapsos de órgãos pélvicos significativos que justifiquem a sintomatologia. Para o manejo dessas condições, seguimos uma hierarquia terapêutica.\n\nAlternativa a: Incorreta. O uso de medicamentos anticolinérgicos (como a oxibutinina, tolterodina ou solifenacina) ou agonistas beta-3 adrenérgicos (mirabegrona) é considerado tratamento de segunda linha. Essas medicações são prescritas quando as medidas iniciais não apresentam resposta satisfatória ou como complemento a elas.\n\nAlternativa b: Correta. O tratamento de primeira linha para qualquer tipo de incontinência urinária, incluindo a de urgência, baseia-se em intervenções comportamentais e modificações do estilo de vida. Isso inclui a redução do consumo de irritantes vesicais (como cafeína, álcool e adoçantes artificiais), controle da ingestão hídrica, perda de peso, cessação do tabagismo, além de treinamento vesical e exercícios para a musculatura do assoalho pélvico. Por serem medidas não invasivas e com baixo risco de efeitos colaterais, devem sempre preceder o uso de fármacos ou cirurgias.\n\nAlternativa c: Incorreta. A cirurgia de sling (fita suburetral) é o tratamento padrão-ouro para a Incontinência Urinária de Esforço (perda urinária aos esforços físicos). No caso de Incontinência de Urgência, a cirurgia não é indicada como tratamento primário e pode, inclusive, agravar os sintomas de urgência da paciente.\n\nAlternativa d: Incorreta. A aplicação de toxina botulínica é reservada para casos de bexiga hiperativa refratária ao tratamento conservador e medicamentoso, sendo considerada uma terapia de terceira linha. Além disso, a via de administração correta é a intravesical (aplicada diretamente no músculo detrusor via cistoscopia) e nunca por via intravenosa, como afirma a alternativa.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:45.203Z"
+  },
+  {
+    "id": "AJUDA_b03030eb-855b-4715-8d4f-ddd54177e787",
+    "originalId": "b03030eb-855b-4715-8d4f-ddd54177e787",
+    "statement": "Paciente masculino, 75 anos, procura atendimento devido a dor abdominal localizada em fossa ilíaca esquerda, com início há 48h, acompanhada de aumento da temperatura axilar (aferição máxima de 38,5°C). Na chegada, apresentava frequência cardíaca de 85bpm, pressão arterial de 135x90mmHg e Tax 38,5°C. Realizou tomografia de abdome com contraste, a qual evidenciou um quadro de diverticulite aguda com pequeno abscesso pericólico, sem líquido livre e sem sinais de pneumoperitônio. Conforme o quadro descrito, assinale a melhor alternativa de tratamento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação hospitalar para realização de antibioticoterapia endovenosa sem indicação de colectomia de urgência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Alta hospitalar com indicação de antibioticoterapia via oral, revisão em uma semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internação hospitalar com indicação de antibioticoterapia endovenosa e colectomia de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internação hospitalar para antibioticoterapia endovenosa com indicação de colonoscopia nas próximas 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão descreve um caso de diverticulite aguda complicada por um pequeno abscesso pericólico. De acordo com a Classificação de Hinchey modificada, este quadro é compatível com o estágio Ib (abscesso pericólico localizado).\n\nAlternativa a: Está correta. O manejo inicial para pacientes com abscessos pericólicos pequenos (geralmente menores que 3 a 4 cm) e estabilidade hemodinâmica consiste em internação hospitalar, suporte clínico e antibioticoterapia endovenosa. Como o exame de imagem não evidenciou sinais de peritonite generalizada (ausência de líquido livre e pneumoperitônio) e o paciente está estável, a colectomia de urgência não está indicada neste momento.\n\nAlternativa b: Está incorreta. O tratamento ambulatorial com antibióticos orais costuma ser reservado para casos de diverticulite não complicada (Hinchey Ia) em pacientes jovens, estáveis e sem comorbidades. A presença de um abscesso, associada à idade avançada do paciente (75 anos) e à presença de febre, justifica a hospitalização para terapia endovenosa e monitorização evolutiva.\n\nAlternativa c: Está incorreta. A cirurgia de urgência é indicada para casos de peritonite purulenta ou fecal (Hinchey III e IV) ou em situações de falha do tratamento clínico e da drenagem percutânea. Para abscessos localizados e estágios iniciais, a conduta inicial deve ser conservadora com antibióticos.\n\nAlternativa d: Está incorreta. A realização de colonoscopia é formalmente contraindicada na fase aguda da diverticulite. Devido ao processo inflamatório intenso, a parede do cólon torna-se frágil, o que eleva significativamente o risco de perfuração iatrogênica durante a insuflação de ar do exame. A colonoscopia deve ser realizada apenas 6 a 8 semanas após a resolução completa dos sintomas para excluir neoplasias malignas.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:45.203Z"
+  },
+  {
+    "id": "AJUDA_b0305882-ab41-4bb1-9d7d-72c2a17d59aa",
+    "originalId": "b0305882-ab41-4bb1-9d7d-72c2a17d59aa",
+    "statement": "Gestante de 33 semanas, com diabetes gestacional diagnosticado no início da gestação, atualmente controlado com dieta, vem para consulta de pré-natal de rotina com os seguintes controles glicêmicos (mg/dL):\n\nA porcentagem dos controles alterados e a conduta são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "53,6%; introduzir insulina, controle diário com perfil glicêmico e internação com 34 semanas para monitoração da vitalidade fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "42,8%; internar para perfil glicêmico, introduzir insulina e avaliar vitalidade fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "42,8%; orientar novamente dieta e exercícios, retorno semanal com novos controles glicêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "53,6%; internar para perfil glicêmico, introduzir tratamento farmacológico oral e avaliar a vitalidade fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "53,6%; reforçar as orientações de dieta, com redução efetiva de carboidratos, retorno semanal com novos controles glicêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, devemos primeiro identificar os alvos terapêuticos para o controle do diabetes gestacional e, em seguida, analisar os dados da tabela fornecida.\n\n1. Identificação dos alvos de controle (segundo a FEBRASGO e a Sociedade Brasileira de Diabetes):\nPara o acompanhamento da gestante com diabetes, os valores de referência são:\n- Glicemia de jejum: menor que 95 mg/dL.\n- Glicemia 1 hora após as refeições: menor que 140 mg/dL.\n- Glicemia 2 horas após as refeições: menor que 120 mg/dL.\n\n2. Análise dos dados da tabela:\nA paciente realizou 4 medições por dia durante 7 dias, totalizando 28 controles glicêmicos. Vamos contar quantos estão fora do alvo:\n- Segunda-feira: Jejum (98), 1h Almoço (147), 1h Jantar (145) = 3 alterados.\n- Terça-feira: 1h Jantar (146) = 1 alterado.\n- Quarta-feira: 1h Café (141), 1h Jantar (145) = 2 alterados.\n- Quinta-feira: Jejum (96) = 1 alterado.\n- Sexta-feira: Nenhum alterado.\n- Sábado: Jejum (97), 1h Café (150), 1h Almoço (148), 1h Jantar (142) = 4 alterados.\n- Domingo: 1h Jantar (149) = 1 alterado.\n\nTotal de controles alterados: 3 + 1 + 2 + 1 + 0 + 4 + 1 = 12 controles.\n\n3. Cálculo da porcentagem:\nPara encontrar a porcentagem, dividimos o número de alterados pelo total de testes:\n12 / 28 = 0,4285... ou seja, 42,8%.\n\n4. Definição da conduta:\nNo diabetes gestacional, quando mais de 30% dos valores de controle estão alterados em uma semana, a terapia dietética é considerada insuficiente e deve-se iniciar o tratamento farmacológico. A insulina continua sendo a droga de escolha e o padrão-ouro na gestação. Pela idade gestacional (33 semanas) e pelo descontrole significativo, a internação para ajuste de dose da insulina (perfil glicêmico hospitalar) e avaliação da vitalidade fetal é uma conduta adequada e segura.\n\nAnálise das alternativas:\n\na) Incorreta. O cálculo de 53,6% estaria correto apenas se utilizássemos o valor de jejum menor que 92 mg/dL (que é o critério de diagnóstico, não necessariamente o de controle em todos os protocolos). Além disso, a alternativa propõe aguardar as 34 semanas para internação, o que retardaria o ajuste necessário agora.\n\nb) Correta. Apresenta o cálculo correto baseado nos alvos de controle (42,8%) e indica a conduta de iniciar insulina e avaliar a vitalidade fetal devido à falha no controle dietético.\n\nc) Incorreta. Embora o cálculo esteja correto, a conduta de apenas orientar dieta e exercícios é insuficiente, pois a paciente já ultrapassou o limite de 30% de exames alterados, indicando necessidade de intervenção farmacológica.\n\nd) Incorreta. O cálculo da porcentagem está errado (53,6%) e, embora o tratamento oral (como metformina) possa ser discutido em alguns cenários, a insulina ainda é a resposta mais esperada em provas de residência como primeira escolha para o tratamento farmacológico no Brasil, além da inconsistência no cálculo.\n\ne) Incorreta. O cálculo está errado e a conduta de apenas reforçar a dieta é inadequada para uma paciente que já apresenta descontrole glicêmico importante na 33ª semana de gestação.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/7824eb4b603e53a0e3baf69427afbb319dc19285909af02a69ac9dafb3ebb2df.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b0305882-ab41-4bb1-9d7d-72c2a17d59aa_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:45.584Z"
+  },
+  {
+    "id": "AJUDA_b045c396-10c0-4222-be52-ffd1be09d2cc",
+    "originalId": "b045c396-10c0-4222-be52-ffd1be09d2cc",
+    "statement": "Menina de 4 anos é levada a uma Unidade Básica de Saúde pela mãe, que relata o aparecimento de lesões avermelhadas e com crostas amareladas na região periorbital, labial e nasal da criança há cerca de 5 dias. A mãe refere que as lesões começaram como pequenas bolhas que se romperam facilmente, liberando um líquido amarelado, com prurido associado. Nega febre, prostração ou demais queixas. Exame físico: sem alterações, exceto a pele da face, conforme a seguinte imagem.\nO diagnóstico provável para o caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "celulite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "impetigo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ectima.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "herpes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico: impetigo (alternativa B).\n\nAssociação com a imagem\nA foto mostra a face de uma criança com lesões eritematosas ao redor da boca e nas narinas, cobertas por crostas amarelo-acastanhadas, com aspecto de \"mel seco\" (crostas melicéricas). Há também várias pequenas lesões eritematosas espalhadas pelas bochechas e pelo queixo, sugerindo disseminação por autoinoculação. Não há edema difuso, necrose nem ulceração profunda. Esse é o aspecto clássico do impetigo não bolhoso.\n\nRaciocínio clínico\nOs dados que sustentam o diagnóstico são:\n- Pré-escolar, a faixa etária mais acometida.\n- Lesões em áreas expostas da face (perioral, perinasal e periorbital).\n- Evolução típica: vesículas ou bolhas frágeis que se rompem com facilidade, liberam conteúdo seroso amarelado e formam crostas melicéricas.\n- Prurido, que favorece a autoinoculação e a formação de lesões satélites.\n- Ausência de sintomas sistêmicos.\n\nO impetigo é uma infecção bacteriana superficial, restrita à epiderme, causada principalmente por Staphylococcus aureus e/ou Streptococcus pyogenes. É muito contagioso.\n\nO tratamento das formas localizadas inclui:\n- Higiene local com remoção das crostas.\n- Antibiótico tópico, como mupirocina ou ácido fusídico.\n\nO antibiótico sistêmico (por exemplo, cefalexina) fica reservado para lesões extensas, múltiplas ou com acometimento sistêmico.\n\nUma complicação importante é a glomerulonefrite pós-estreptocócica, que pode ocorrer mesmo com tratamento adequado.\n\nAnálise das alternativas\n\na) Celulite – incorreta. A celulite é uma infecção da derme profunda e do subcutâneo. Manifesta-se como placa eritematosa, quente, edemaciada e dolorosa, de limites mal definidos, frequentemente acompanhada de febre e mal-estar. Não forma bolhas que evoluem para crostas melicéricas. Na região periorbital, a celulite causaria edema palpebral importante, o que não se vê no caso.\n\nb) Impetigo – correta. O quadro é típico: vesículas e bolhas superficiais que se rompem, crostas melicéricas em face de criança, prurido e ausência de sintomas sistêmicos.\n\nc) Ectima – incorreta. O ectima é uma forma ulcerada e mais profunda do impetigo, que atinge a derme. Forma úlceras com crostas espessas, aderentes e escuras, que deixam cicatriz. Acomete preferencialmente os membros inferiores e está associado a más condições de higiene e imunossupressão. As lesões da imagem são superficiais e localizadas na face.\n\nd) Herpes – incorreta. O herpes simples labial cursa com vesículas agrupadas \"em cacho\" sobre base eritematosa, precedidas por ardor ou dor local, e costuma ser recorrente no mesmo sítio. As crostas são mais finas, e não melicéricas difusas. A gengivoestomatite herpética primária, comum nessa idade, cursaria com febre, lesões intraorais e prostração. Vale lembrar que o herpes pode sofrer impetiginização secundária, mas o padrão disseminado de crostas melicéricas aponta para o impetigo.\n\nResposta: alternativa B.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Piodermites"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/d1b5c5c93b0580338bfec92eadca0c9f87e0639c519586f14cc6bf41453b2f4c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b045c396-10c0-4222-be52-ffd1be09d2cc_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:46.075Z"
+  },
+  {
+    "id": "AJUDA_b045edc0-6985-4f02-a24f-e4ca29669108",
+    "originalId": "b045edc0-6985-4f02-a24f-e4ca29669108",
+    "statement": "O seguimento de puericultura de crianças com trissomia do 21 tem suas peculiaridades devido ao risco aumentado de certas entidades clínicas nos mais diversos sistemas. O acompanhamento das condições médicas prevalentes em crianças com síndrome de Down deve considerar que a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "alteração clínica hematológica mais comum é plaquetopenia com plaquetas pequenas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "condição clínica cardiológica mais comuns é hipertensão arterial sistêmica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "alteração clínica ortopédica mais comumente encontrada é pés planos",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "condição clínica endocrinológica mais frequente é o diabetes tipo 1",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a (c).\n\nA questão aborda o manejo clínico e as comorbidades associadas à Síndrome de Down (Trissomia 21), conhecimento fundamental para a puericultura especializada. Abaixo, a análise de cada alternativa:\n\nAlternativa a: Incorreta. As alterações hematológicas mais frequentes na Síndrome de Down incluem a macrocitose (aumento do volume corpuscular médio das hemácias, geralmente sem anemia), a policitemia neonatal e o risco aumentado de reações leucemoides e leucemias (especialmente a leucemia megacariocítica aguda). A plaquetopenia com plaquetas pequenas é uma característica específica da Síndrome de Wiskott-Aldrich, uma imunodeficiência ligada ao X, e não faz parte do quadro típico da trissomia 21.\n\nAlternativa b: Incorreta. Cerca de 50% das crianças com Síndrome de Down possuem cardiopatias congênitas. A condição mais comum e característica é o defeito do septo atrioventricular (DSAV), seguido pela comunicação interventricular (CIV) e comunicação interatrial (CIA). A hipertensão arterial sistêmica não é a condição cardiológica prevalente ou definidora desta população na infância.\n\nAlternativa c: Correta. A trissomia 21 cursa obrigatoriamente com hipotonia muscular e frouxidão ligamentar generalizada. Essas características levam a uma série de manifestações ortopédicas, sendo os pés planos (desabamento do arco plantar por frouxidão dos ligamentos do pé) uma das alterações mais comuns encontradas no acompanhamento clínico. Outras alterações ortopédicas importantes, embora menos frequentes que o pé plano, incluem a instabilidade atlantoaxial, a escoliose e a subluxação do quadril.\n\nAlternativa d: Incorreta. A condição endocrinológica mais frequente na Síndrome de Down é o hipotireoidismo, que pode ser tanto congênito quanto adquirido (autoimune/tireoidite de Hashimoto). O rastreio da função tireoidiana é obrigatório e periódico no seguimento de puericultura desses pacientes. Embora o diabetes mellitus tipo 1 tenha uma incidência aumentada em relação à população geral, ele ocorre com frequência muito menor do que as disfunções da tireoide.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:46.075Z"
+  },
+  {
+    "id": "AJUDA_b04ad972-8918-4a91-8117-8298d90826d6",
+    "originalId": "b04ad972-8918-4a91-8117-8298d90826d6",
+    "statement": "Homem de 38 anos de idade, há três meses começou a apresentar tosse persistente, inicialmente seca, mas que evoluiu para tosse produtiva, com escarro amarelado. Refere perda de peso de cerca de 8kg e fadiga, febre baixa predominante à tarde. É morador de comunidade em periferia urbana. Vive em uma casa pequena, e divide o espaço com quatro familiares, incluindo duas crianças pequenas. Nenhum dos familiares apresenta sintomas no momento, mas todos convivem em contato próximo. Ao exame, apresenta-se emagrecido. Mucosas hipocrômicas. FR: 24ipm, PR: 91bpm, Temp: 36,8ºC. Sem linfonodos cervicais e axilares patológicos. Ap resp: presença de crépitos e roncos que se intensificam pós tosse em terço superior de pulmão direito. O paciente relata que trabalha como pedreiro, mas tem se sentido muito cansado e, muitas vezes, falta ao trabalho devido aos sintomas. \n\nIndique o critério empregado para definir este paciente como portador de tosse crônica, segundo os critérios empregados no SUS para fins epidemiológicos.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tosse persistente mais de 10 dias com escarro purulento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tosse persistente há mais de 8 semanas, independente de outros sintomas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tosse persistente mais de 4 semanas com perda ponderal e febre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tosse com perda ponderal e febre independente da duração.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento sobre a classificação temporal da tosse e os critérios diagnósticos e epidemiológicos utilizados na prática médica e no Sistema Único de Saúde (SUS). O caso clínico apresenta um paciente com um quadro altamente sugestivo de tuberculose pulmonar, mas a pergunta foca especificamente no critério para definir \"tosse crônica\".\n\nA classificação da tosse, baseada em consensos de pneumologia e diretrizes de saúde pública, é dividida em três períodos:\n1. Aguda: duração de até 3 semanas.\n2. Subaguda: duração entre 3 e 8 semanas.\n3. Crônica: duração superior a 8 semanas.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Uma tosse com 10 dias de evolução é considerada aguda. Mesmo que haja escarro purulento, o que sugere uma etiologia infecciosa (como pneumonia ou sinusite), o tempo decorrido não permite a classificação como crônica.\n\nAlternativa (b) Correta. Este é o critério técnico e epidemiológico padrão. A tosse é definida como crônica quando persiste por um período superior a 8 semanas. Essa definição é independente da presença de outros sintomas, como febre ou expectoração, embora esses sinais ajudem a guiar o diagnóstico diferencial (como tuberculose, DPOC ou neoplasia). No caso do paciente em questão, ele apresenta tosse há 3 meses (aproximadamente 12 semanas), o que o enquadra perfeitamente neste critério.\n\nAlternativa (c) Incorreta. É comum haver confusão com o marco de 3 ou 4 semanas devido ao protocolo de busca ativa de tuberculose no SUS. O Ministério da Saúde define como \"Sintomático Respiratório\" o indivíduo com tosse há 3 semanas ou mais, visando ao diagnóstico precoce da doença. No entanto, o termo específico \"tosse crônica\" permanece reservado para durações superiores a 8 semanas.\n\nAlternativa (d) Incorreta. Perda de peso e febre são sintomas constitucionais conhecidos como \"sinais de alerta\" (red flags). Eles indicam que a tosse pode estar associada a uma patologia grave e exigem investigação imediata, mas não definem o critério de cronicidade da tosse, que é estritamente temporal.\n\nGabarito: Letra (b).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Vigilância em Saúde",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas",
+      "Atenção Primária à Saúde",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:46.075Z"
+  },
+  {
+    "id": "AJUDA_b04e8169-ce1a-4030-835f-35d13f723f96",
+    "originalId": "b04e8169-ce1a-4030-835f-35d13f723f96",
+    "statement": "Criança de 4 anos, previamente saudável, é levada ao pronto atendimento com história de surgimento súbito de petéquias em membros inferiores, equimoses espontâneas e sangramento gengival leve. A mãe relata quadro viral de vias aéreas superiores há cerca de duas semanas, sem uso de medicamentos recentes. Ao exame físico, a criança está ativa, sem febre, com exame neurológico normal, sem linfadenomegalia ou hepatoesplenomegalia. O hemograma revela: plaquetas = 18.000/mm³, hemoglobina = 12,4 g/dL, leucócitos = 7.800/mm³. Coagulograma e função renal normais. Não há evidência de esquizócitos no esfregaço periférico. Qual a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Leucemia linfoblástica aguda, com plaquetopenia isolada e ausência de blastos periféricos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Púrpura trombocitopênica trombótica, com plaquetopenia e ausência de anemia hemolítica microangiopática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trombocitopenia Imune Primária (PTI) aguda pós-infecciosa, com plaquetopenia isolada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Coagulação intravascular disseminada (CIVD), com plaquetopenia e coagulograma normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO quadro apresenta uma criança de 4 anos, em bom estado geral, com manifestações hemorrágicas cutâneo-mucosas de início súbito após infecção viral de vias aéreas superiores. O dado laboratorial central é a plaquetopenia grave e isolada (18.000/mm³), com hemoglobina, leucócitos, coagulograma, função renal e esfregaço periférico estritamente normais, além de exame físico sem visceromegalias ou linfadenomegalias.\n\nAlternativa a: Incorreta. A Leucemia Linfoblástica Aguda (LLA) raramente se manifesta apenas com plaquetopenia isolada sem outras alterações no hemograma (como anemia ou presença de blastos). Além disso, a LLA costuma cursar com sintomas constitucionais (febre, dor óssea) e alterações ao exame físico, como linfadenomegalia e hepatoesplenomegalia, ausentes no paciente.\n\nAlternativa b: Incorreta. A Púrpura Trombocitopênica Trombótica (PTT) é uma microangiopatia trombótica caracterizada pela presença de anemia hemolítica microangiopática (com visualização obrigatória de esquizócitos no esfregaço periférico), plaquetopenia, disfunção renal e alterações neurológicas flutuantes, achados descartados pelo enunciado.\n\nAlternativa c: Correta. A Trombocitopenia Imune Primária (PTI) aguda é a causa mais frequente de plaquetopenia isolada na faixa etária pediátrica (pico entre 2 e 5 anos). Caracteriza-se pelo surgimento súbito de petéquias e equimoses em crianças previamente hígidas, frequentemente precedido por infecção viral (gatilho imunomediado), mantendo as demais linhagens celulares e o coagulograma normais, além de exame físico inocente quanto a visceromegalias.\n\nAlternativa d: Incorreta. A Coagulação Intravascular Disseminada (CIVD) é uma coagulopatia de consumo associada a condições sistêmicas graves (sepse, choque, politrauma). Laboratorialmente, além da plaquetopenia, cursa obrigatoriamente com alterações no coagulograma (prolongamento do TP e TTPA, queda do fibrinogênio) e presença de esquizócitos, ao passo que o caso relata coagulograma e função renal normais.\n\nGabarito: Alternativa c.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Hemostasia",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:46.075Z"
+  }
+]

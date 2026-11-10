@@ -1,0 +1,484 @@
+[
+  {
+    "id": "AJUDA_05863e8d-981f-4bc5-baa5-33d376cca5bb",
+    "originalId": "05863e8d-981f-4bc5-baa5-33d376cca5bb",
+    "statement": "Homem, 23 anos de idade, apresentou primeiro episódio de pneumotórax espontâneo à direita e foi submetido à drenagem pleural. Após expansão e resolução do pneumotórax recebeu alta com orientação para seguimento ambulatorial. Um ano depois apresentou quadro de pneumotórax espontâneo, agora à esquerda, primeiro episódio. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aguardar 2º episódio para indicar cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar bulectomia e pleurodese bilateral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Drenagem pleural à esquerda e pleurodese à esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Drenagem pleural à esquerda e pleurodese à direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro de pneumotórax espontâneo primário bilateral sequencial. Ele teve um primeiro episódio à direita, tratado conservadoramente com drenagem, e agora apresenta o primeiro episódio à esquerda. No manejo do pneumotórax espontâneo, existem indicações clássicas para intervenção cirúrgica definitiva (normalmente por videotoracoscopia para realização de bulectomia e pleurodese).\n\nAs indicações cirúrgicas são:\n1. Segundo episódio ipsilateral (mesmo lado).\n2. Primeiro episódio contralateral (pneumotórax bilateral sequencial), que é exatamente o caso deste paciente.\n3. Pneumotórax bilateral simultâneo.\n4. Escape aéreo persistente pelo dreno (geralmente por mais de 3 a 5 dias).\n5. Profissões de risco (pilotos, mergulhadores).\n6. Hemopneumotórax ou pneumotórax hipertensivo no primeiro episódio.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O paciente já possui indicação cirúrgica. Aguardar um segundo episódio no pulmão esquerdo (ou um terceiro evento no total) é perigoso, pois o paciente demonstrou tendência a recidivas em ambos os pulmões. O risco de um futuro episódio bilateral simultâneo é uma emergência potencialmente fatal que deve ser prevenida agora.\n\nAlternativa b) Correta. Como o paciente já apresentou a patologia em ambos os pulmões em momentos diferentes (caracterizando o pneumotórax bilateral sequencial), a conduta mais adequada é a intervenção definitiva em ambos os lados. A bulectomia retira as pequenas bolhas (*blebs*) que costumam ser a causa do escape de ar, e a pleurodese promove a sínfise pleural (adesão entre as pleuras) para evitar que o pulmão colapse novamente.\n\nAlternativa c) Incorreta. A drenagem isolada trata apenas o evento agudo, mas não resolve a causa-base nem previne futuras recidivas com a mesma eficácia da cirurgia. Além disso, focar apenas no lado esquerdo ignora que o lado direito já falhou anteriormente e permanece sob risco.\n\nAlternativa d) Incorreta. Não há lógica técnica em realizar a pleurodese no lado direito (lado do episódio antigo) e apenas drenar o lado esquerdo (lado do episódio atual). O tratamento cirúrgico deve englobar o lado afetado no momento e o lado previamente afetado para garantir a segurança respiratória do paciente a longo prazo.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:03.629Z"
+  },
+  {
+    "id": "AJUDA_058ca5de-ef84-468b-adf1-4d82abdd2bf5",
+    "originalId": "058ca5de-ef84-468b-adf1-4d82abdd2bf5",
+    "statement": "Menina de 8 anos de idade, previamente sadia, chega à Unidade de Pronto Atendimento com história de fraqueza intensa, sede excessiva e aumento da frequência urinária há duas semanas. Há relato de perda de peso nesse período, embora se alimente normalmente. Nas últimas 24 horas, passou a apresentar dor abdominal, náuseas e vômitos frequentes. Ao exame está sonolenta, taquicárdica, com movimentos respiratórios rápidos e profundos e prega cutânea com retorno prolongado. Exames Laboratoriais: Glicemia: 480 mg/dL; Gasometria arterial: pH: 7,15; Bicarbonato: 10mEq/L; Anion gap: 22mEq/L; Cetonúria: (+++); Potássio sérico: 4,0mEq/L; Sódio sérico: 130mEq/L; Creatinina sérica: 1,0mg/dL. \n\nO exame que deve ser realizado para avaliar a gravidade do quadro desta paciente, naquele momento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ultrassonografia abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Eletrocardiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gasometria arterial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Raio-X de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico e laboratorial da paciente aponta para Cetoacidose Diabética (CAD), caracterizada pela tríade de hiperglicemia (480 mg/dL), acidose metabólica (pH 7,15 e bicarbonato 10 mEq/L) e cetonúria. Em pediatria, a gravidade da CAD é classificada especificamente por meio dos valores de pH e bicarbonato sérico obtidos pela gasometria.\n\nAlternativa a: Incorreta. A dor abdominal é um sintoma muito comum na CAD, muitas vezes simulando um quadro de abdome agudo devido à própria acidose metabólica e à desidratação. No entanto, a ultrassonografia abdominal não é o exame utilizado para avaliar a gravidade metabólica do quadro e não deve ser o foco inicial, a menos que haja uma suspeita clínica muito forte de uma causa cirúrgica concomitante que não melhore com a estabilização da acidose.\n\nAlternativa b: Incorreta. O eletrocardiograma (ECG) é fundamental durante o manejo da CAD para monitorar alterações eletrolíticas, especialmente as variações de potássio que ocorrem durante a reposição de insulina (risco de hipocalemia). Contudo, o ECG não é o parâmetro que define a classificação de gravidade da cetoacidose em si.\n\nAlternativa c: Correta. A gasometria é o exame primordial para graduar a gravidade da CAD e definir o local de tratamento (enfermaria ou UTI). Pelos critérios do Consenso da ISPAD (Sociedade Internacional de Diabetes Pediátrica e do Adolescente), a CAD é classificada como: leve (pH menor que 7,3 ou bicarbonato menor que 15), moderada (pH menor que 7,2 ou bicarbonato menor que 10) e grave (pH menor que 7,1 ou bicarbonato menor que 5). No caso relatado, o pH de 7,15 e o bicarbonato de 10 mEq/L classificam a paciente em um quadro de moderada gravidade.\n\nAlternativa d: Incorreta. O raio X de tórax pode ser solicitado para investigar possíveis fatores precipitantes da CAD, como uma infecção pulmonar oculta. Entretanto, ele não tem papel na avaliação da gravidade do distúrbio metabólico apresentado pela criança.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Análise da Gasometria Arterial",
+      "Emergências Pediátricas",
+      "Distúrbios Ácido-Básicos",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": 19.44858584014352,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:03.629Z"
+  },
+  {
+    "id": "AJUDA_05907e5f-2fd2-48f9-8224-95cc2de53985",
+    "originalId": "05907e5f-2fd2-48f9-8224-95cc2de53985",
+    "statement": "Sobre os mecanismos imunológicos das alergias alimentares, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A alergia ao leite de vaca sempre é mediada por IgE.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anafilaxia alimentar é reação não mediada por IgE.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dermatite atópica não se associa a mecanismos alimentares mistos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Enterocolite induzida por proteínas alimentares é exemplo de reação não mediada por IgE.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "As alergias alimentares são classificadas didaticamente em três grupos, baseados no mecanismo imunológico subjacente: mediadas por IgE, não mediadas por IgE (celulares) e mistas (envolvendo ambos os mecanismos). Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A (Incorreta): A alergia à proteína do leite de vaca (APLV) é uma condição clínica que pode se manifestar pelos três mecanismos imunológicos. Ela pode ser mediada por IgE (causando urticária e anafilaxia), não mediada por IgE (causando proctocolite alérgica ou FPIES) ou mista (como na esofagite eosinofílica). Portanto, afirmar que ela é \"sempre\" mediada por IgE está incorreto.\n\nAlternativa B (Incorreta): A anafilaxia alimentar é o protótipo da reação de hipersensibilidade imediata (Tipo I de Gell e Coombs). Ela é obrigatoriamente mediada por anticorpos IgE específicos que, ao reconhecerem o alérgeno, provocam a degranulação explosiva de mastócitos e basófilos, liberando mediadores como histamina e triptase.\n\nAlternativa C (Incorreta): A dermatite atópica é classicamente considerada uma doença de mecanismo misto quando associada à alergia alimentar. Nela, observa-se tanto a participação de anticorpos IgE quanto a resposta de fase tardia mediada por células (linfócitos T), que contribuem para a inflamação crônica da barreira cutânea.\n\nAlternativa D (Correta): A Enterocolite Induzida por Proteínas Alimentares (conhecida pela sigla FPIES) é o exemplo clássico de uma alergia alimentar gastrointestinal não mediada por IgE. O quadro clínico se caracteriza por vômitos incoercíveis e diarreia que ocorrem de forma tardia (geralmente 2 a 4 horas após a ingestão do alimento), podendo levar à desidratação e choque. Como o mecanismo é celular, os testes de IgE específica (RAST) e o teste cutâneo (Prick Test) são tipicamente negativos nesses pacientes.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Alergia Alimentar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:03.629Z"
+  },
+  {
+    "id": "AJUDA_05926ee4-3400-4414-aa28-3f0e6f05fe14",
+    "originalId": "05926ee4-3400-4414-aa28-3f0e6f05fe14",
+    "statement": "Mulher, 32 anos de idade, não consegue engravidar há 3 anos. O casal tem relações sexuais frequentes (3-4 vezes por semana) sem métodos contraceptivos. O ciclo menstrual é regular. Nega dismenorreia. Exame físico: sem alterações. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histerossalpingografia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Dosagem de hormônios sexuais e tireoidianos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ultrassonografia transvaginal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Teste de ovulação domiciliar",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta paciente apresenta um quadro de infertilidade, definida pela ausência de gravidez após um ano de relações sexuais frequentes sem uso de métodos contraceptivos (neste caso, ela tenta há 3 anos e tem 32 anos). A investigação básica da infertilidade deve avaliar os quatro pilares principais: fator masculino, fator ovulatório, fator tuboperitoneal e fator uterino.\n\nConsiderando que a paciente tem ciclos menstruais regulares, há um forte indício de que ela seja ovulatória. Além disso, a frequência de relações sexuais (3 a 4 vezes por semana) afasta a possibilidade de erro na identificação do período fértil como causa principal.\n\nAnálise das alternativas:\n\na) Histerossalpingografia: Esta é a alternativa correta. A histerossalpingografia é o exame padrão-ouro inicial para a avaliação do fator tuboperitoneal. Como a paciente já possui indícios de ovulação normal (ciclos regulares) e o exame físico não sugere alterações uterinas grosseiras ou endometriose profunda (ausência de dismenorreia), a investigação da permeabilidade tubária é um passo fundamental na propedêutica básica.\n\nb) Dosagem de hormônios sexuais e tireoidianos: Embora façam parte da triagem em muitos protocolos, essas dosagens são indicadas prioritariamente quando há irregularidade menstrual ou sinais clínicos de endocrinopatias (como distúrbios da tireoide ou hiperprolactinemia). Em uma mulher com ciclos regulares, a probabilidade de anovulação crônica é baixa, tornando este passo menos prioritário que a avaliação tubária no momento.\n\nc) Ultrassonografia transvaginal: É um exame fundamental para avaliar a anatomia uterina (presença de miomas, pólipos) e os ovários (contagem de folículos antrais, cistos). No entanto, a ultrassonografia convencional não consegue avaliar a permeabilidade das trompas de Falópio. Como o exame físico da paciente é normal e o objetivo é avançar na investigação da infertilidade, a histerossalpingografia oferece informações adicionais críticas que o ultrassom comum não provê.\n\nd) Teste de ovulação domiciliar: Este teste detecta o pico do hormônio luteinizante (LH) na urina. Para este casal, o teste é desnecessário e não aumentaria as chances de concepção, pois a frequência das relações sexuais já cobre amplamente a janela fértil, e a regularidade do ciclo sugere que a ovulação já ocorre.\n\nConclusão: Diante de uma mulher jovem com ciclos regulares e exame físico normal, a investigação deve prosseguir para a avaliação da integridade anatômica e funcional das trompas e da cavidade uterina, sendo a histerossalpingografia a conduta mais adequada entre as opções apresentadas. Vale lembrar que o estudo do sêmen do parceiro (espermograma) também seria uma conduta inicial essencial, embora não conste nas alternativas.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:03.629Z"
+  },
+  {
+    "id": "AJUDA_059cfdd1-6bff-459b-9fd5-8a92909081e5",
+    "originalId": "059cfdd1-6bff-459b-9fd5-8a92909081e5",
+    "statement": "A principal função da progesterona durante a fase lútea do ciclo menstrual é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter o corpo lúteo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Organizar as glândulas endometriais e cessar as mitoses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Promover a proliferação do endométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estimular a secreção de FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ciclo endometrial é dividido didaticamente em duas fases: a fase proliferativa, sob influência predominante do estrogênio, e a fase secretora, sob influência da progesterona produzida pelo corpo lúteo. A questão aborda o papel fisiológico deste último hormônio.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A manutenção do corpo lúteo depende do estímulo do hormônio luteinizante (LH) durante o ciclo menstrual ou do hCG (gonadotrofina coriônica humana) caso ocorra a fecundação e implantação. A progesterona é o hormônio secretado pelo corpo lúteo, mas ela não é responsável por mantê-lo funcional.\n\nAlternativa b: Correta. Esta é a principal função da progesterona no endométrio. Após a fase de crescimento celular intenso (mitoses) estimulada pelo estrogênio, a progesterona atua interrompendo essa proliferação e promovendo a diferenciação celular. Ela organiza as glândulas endometriais, tornando-as tortuosas e ricas em secreções (glicogênio), preparando o ambiente para a recepção de um eventual embrião. Esse processo é o que define a fase secretora do ciclo.\n\nAlternativa c: Incorreta. A promoção da proliferação endometrial (aumento da espessura e mitoses) é a função primária dos estrogênios durante a fase folicular do ciclo. A progesterona possui um efeito oposto, sendo considerada um agente antimitótico no tecido endometrial.\n\nAlternativa d: Incorreta. A progesterona, em conjunto com o estrogênio e a inibina, exerce um feedback negativo sobre a hipófise e o hipotálamo durante a fase lútea. Isso resulta na supressão da secreção de FSH e LH, e não no seu estímulo. Essa queda de FSH é necessária para evitar o recrutamento de novos folículos durante o período em que o útero está se preparando para a nidação.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Ciclo Menstrual"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:03.629Z"
+  },
+  {
+    "id": "AJUDA_059dd58e-785a-428f-899a-d71711e89942",
+    "originalId": "059dd58e-785a-428f-899a-d71711e89942",
+    "statement": "Um médico recém-formado, que atua em uma Unidade de Estratégia de Saúde da Família, está atendendo um aumento de casos de dengue na comunidade. Uma paciente chega à unidade com dor abdominal intensa e outros sinais de alarme, como vômitos persistentes, o que sugere um quadro de dengue mais grave, porém, durante o exame, não apresenta sinais de choque. Com base no quadro clínico apresentado e na classificação de risco de dengue, assinale a alternativa CORRETA para o caso dessa paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dengue grupo A;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dengue grupo B;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dengue grupo C;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Dengue grupo D.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação de risco da dengue, estabelecida pelo Ministério da Saúde, é fundamental para definir a conduta terapêutica e o local de atendimento do paciente. Ela é dividida em quatro grupos: A, B, C e D.\n\nAlternativa a: Incorreta. O Grupo A engloba pacientes com suspeita de dengue que não apresentam sinais de alarme, não possuem condições clínicas especiais (como gestantes, idosos ou portadores de comorbidades) e não apresentam riscos sociais. Como a paciente do caso apresenta dor abdominal e vômitos, ela não pode ser classificada neste grupo.\n\nAlternativa b: Incorreta. O Grupo B inclui pacientes com suspeita de dengue que também não possuem sinais de alarme, mas que apresentam alguma condição clínica especial, risco social ou prova do laço positiva. Embora seja um grupo que requer observação, a presença de sinais de alarme (dor abdominal e vômitos persistentes) eleva a classificação para o próximo nível.\n\nAlternativa c: Correta. O Grupo C é caracterizado pela presença de pelo menos um sinal de alarme. De acordo com o protocolo oficial, são sinais de alarme: dor abdominal intensa e contínua, vômitos persistentes, acúmulo de líquidos (ascite, derrame pleural), hipotensão postural, hepatomegalia dolorosa, sangramento de mucosa e aumento repentino do hematócrito. A paciente descrita apresenta dois desses sinais (dor abdominal intensa e vômitos), o que a enquadra obrigatoriamente no Grupo C, exigindo internação para hidratação venosa imediata.\n\nAlternativa d: Incorreta. O Grupo D é reservado para os casos de dengue grave, onde já existem sinais de choque (como pulso rápido e fino, extremidades frias, enchimento capilar lento), desconforto respiratório grave ou disfunção grave de órgãos. A questão afirma explicitamente que a paciente não apresenta sinais de choque, o que descarta a classificação no grupo D.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:03.629Z"
+  },
+  {
+    "id": "AJUDA_05a3727f-54b0-426f-9147-a8e05b93a27d",
+    "originalId": "05a3727f-54b0-426f-9147-a8e05b93a27d",
+    "statement": "Um homem de 45 anos de idade, diabético tipo 2, auxiliar de enfermagem, realizou teste tuberculínico (PPD), cujo resultado foi 7mm. A radiografia de tórax resultou normal, e ele não referiu tosse, febre ou perda ponderal não intencional. \n\nCom base nesse caso clínico hipotético e de acordo com as orientações do Manual de Recomendações para o Controle da Tuberculose no Brasil, a conduta terapêutica adequada para esse paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "prescrever rifampicina, isoniazida, pirazinamida e etambutol (60 doses), seguida de rifampicina e isoniazida (120 doses).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "observar o surgimento de sintomas como tosse, e solicitar baciloscopia de escarro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prescrever pirazinamida dose diária (120 doses), a ser aplicada por um período entre 4 e 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prescrever isoniazida e rifapentina dose semanal (12 doses), em até 15 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "prescrever rifampicina dose diária (60 doses) entre 2 a 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente em questão é um auxiliar de enfermagem (profissional de saúde) e diabético tipo 2, o que o enquadra em grupos com maior risco de exposição e de progressão para tuberculose-doença. Ele apresenta um teste tuberculínico (PPD) de 7 mm, está assintomático e possui radiografia de tórax normal. \n\nDe acordo com o Manual de Recomendações para o Controle da Tuberculose no Brasil, o diagnóstico é de Infecção Latente por *Mycobacterium tuberculosis* (ILTB). Em pacientes diabéticos ou profissionais de saúde que tiveram contato com o bacilo, um PPD igual ou superior a 5 mm é considerado positivo. Uma vez descartada a doença ativa (pela ausência de sintomas e RX normal), deve-se iniciar o tratamento da infecção latente.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) INCORRETA. Esta alternativa descreve o esquema básico (RIPE) utilizado para o tratamento da tuberculose ativa (doença). O esquema consiste em 2 meses de rifampicina, isoniazida, pirazinamida e etambutol, seguidos de 4 meses de rifampicina e isoniazida. Como o paciente tem apenas a infecção latente, esse tratamento seria excessivo e inadequado.\n\nAlternativa b) INCORRETA. A conduta de observação (\"expectante\") não é indicada para este paciente. Por ser diabético, ele possui um risco aumentado de o bacilo latente se tornar ativo. O tratamento da ILTB é fundamental para prevenir que ele adoeça no futuro. A baciloscopia de escarro só faria sentido se ele apresentasse tosse produtiva.\n\nAlternativa c) INCORRETA. A pirazinamida não é utilizada isoladamente para tratar infecção latente. Os esquemas recomendados pelo Ministério da Saúde para ILTB utilizam isoniazida, rifampicina ou a combinação de isoniazida com rifapentina.\n\nAlternativa d) CORRETA. O esquema conhecido como 3HP (isoniazida + rifapentina em doses semanais, totalizando 12 doses administradas em até 15 semanas) é uma das opções preferenciais para o tratamento da ILTB no Brasil. Ele oferece a vantagem de ser um curso curto de tratamento, o que favorece a adesão do paciente em comparação aos esquemas mais longos de 6 ou 9 meses.\n\nAlternativa e) INCORRETA. Embora a rifampicina isolada possa ser usada para tratar a ILTB, o esquema correto exige 120 doses diárias (o que corresponde a 4 meses de tratamento). A alternativa propõe apenas 60 doses, o que seria insuficiente para garantir a eficácia do tratamento preventivo.\n\nGABARITO: Letra d.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:03.629Z"
+  },
+  {
+    "id": "AJUDA_05a5fd35-bb16-4cf5-978e-d09876711f06",
+    "originalId": "05a5fd35-bb16-4cf5-978e-d09876711f06",
+    "statement": "Paciente de 40 semanas de idade gestacional, primigesta, foi admitida em trabalho de parto às 13h00, momento em que a atividade uterina (AU) era 2/10’/50’’, havendo 5 cm de dilatação, feto em -3 de DeLee e BCF normais. Às 16h00, estava com AU 3/10’/50’’, 7 cm de dilatação, feto em -2 de DeLee e BCF normais. Às 20h00, a AU era 4/10’/60’’, sendo o toque vaginal exatamente igual ao das 16h00. \nO diagnóstico correto é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "distocia funcional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fase ativa prolongada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "apresentação oblíqua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "desproporção cefalopélvica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é fundamental analisar a evolução do partograma e a dinâmica uterina da paciente.\n\nAnálise da evolução clínica:\nEntre as 13h00 e as 16h00, houve progressão da dilatação (de 5 cm para 7 cm) e da descida fetal (de -3 para -2 de DeLee), caracterizando uma fase ativa em evolução, embora lenta.\nEntre as 16h00 e as 20h00 (um intervalo de 4 horas), a dilatação permaneceu estagnada em 7 cm e o feto manteve-se na mesma altura (-2 de DeLee). Isso define clinicamente uma Parada Secundária da Dilatação (estase da dilatação por 2 horas ou mais).\n\nPor que o diagnóstico é Desproporção Cefalopélvica (DCP)?\nA Parada Secundária da Dilatação pode ter duas causas principais: motoras (contrações insuficientes) ou mecânicas (o feto não passa pela bacia). No caso descrito, às 20h00, a paciente apresentava uma Atividade Uterina (AU) excelente: 4 contrações em 10 minutos, com duração de 60 segundos cada (4/10'/60''). Se as contrações são efetivas e de boa intensidade, mas o trabalho de parto não progride em termos de dilatação e descida, o diagnóstico é de causa mecânica, ou seja, Desproporção Cefalopélvica.\n\nAnálise das alternativas:\n\na) Incorreta. A distocia funcional ocorre quando a dinâmica uterina é ineficiente (hipossistolia ou bradisistolia). O enunciado mostra que a paciente tem contrações vigorosas (4/10'/60''), descartando falha no \"motor\" do parto.\n\nb) Incorreta. A fase ativa prolongada é caracterizada por uma dilatação lenta (menos de 1 cm por hora), mas que ainda assim progride. No caso, houve uma interrupção total da progressão por 4 horas, o que configura parada e não apenas prolongamento.\n\nc) Incorreta. Não há elementos no exame físico (como a palpação de Leopold ou o toque vaginal) que sugiram apresentação oblíqua. O feto está em apresentação cefálica, conforme sugerido pela estação de DeLee e pela dinâmica habitual de uma primigesta a termo.\n\nd) Correta. A manutenção da dilatação e da altura da apresentação por 4 horas consecutivas, na presença de contrações uterinas adequadas e eficientes, é o critério clássico para o diagnóstico de Desproporção Cefalopélvica (DCP) no partograma. Trata-se de uma parada secundária da dilatação por obstrução mecânica.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Partograma e Distocias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:03.629Z"
+  },
+  {
+    "id": "AJUDA_05b898e4-68fd-4b2a-a31c-3737976bec7b",
+    "originalId": "05b898e4-68fd-4b2a-a31c-3737976bec7b",
+    "statement": "Sobre o exame físico neurológico, avalie se as afirmativas são verdadeiras (V) ou falsas (F) e assinale a sequência correspondente:\n\n( ) O reflexo cutâneo plantar normal consiste em flexão plantar dos dedos dos pés.\n( ) O acometimento do lobo frontal em algumas doenças pode provocar a manifestação de vários reflexos primitivos que normalmente não estão presentes no adulto.\n( ) Uma das formas de examinar a integridade do VII nervo craniano (nervo facial) consiste na avaliação da sensibilidade da face.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V - F - V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "F - F - V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V - V - F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "F - V - F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise detalhada das afirmativas:\n\nPrimeira afirmativa: O reflexo cutâneo plantar normal consiste em flexão plantar dos dedos dos pés.\nVERDADEIRO. Ao realizar o estímulo na borda lateral da planta do pé, partindo do calcanhar em direção aos artelhos, a resposta fisiológica esperada em indivíduos adultos e crianças acima de 2 anos é a flexão plantar dos dedos. A resposta em extensão (dorsiflexão do hálux acompanhada ou não de abertura em leque dos demais dedos) é o sinal de Babinski, que indica lesão do trato corticoespinhal (via piramidal).\n\nSegunda afirmativa: O acometimento do lobo frontal em algumas doenças pode provocar a manifestação de vários reflexos primitivos que normalmente não estão presentes no adulto.\nVERDADEIRO. Conhecidos como sinais de liberação frontal, esses reflexos são normais em recém-nascidos e desaparecem com o amadurecimento do sistema nervoso central e a mielinização. Em patologias que afetam os lobos frontais, como demências (ex.: doença de Alzheimer, demência frontotemporal) ou tumores, ocorre a perda da inibição cortical, fazendo com que reflexos como o de preensão (grasping), sucção, busca (rooting) e palmomentoniano reapareçam.\n\nTerceira afirmativa: Uma das formas de examinar a integridade do VII nervo craniano (nervo facial) consiste na avaliação da sensibilidade da face.\nFALSO. A sensibilidade da face (tato, dor e temperatura) é de responsabilidade do V nervo craniano, o nervo trigêmeo (ramos oftálmico, maxilar e mandibular). O VII nervo craniano, o nervo facial, é predominantemente motor, sendo responsável pelos músculos da expressão facial. Ele também possui funções sensoriais específicas (gustação dos 2/3 anteriores da língua) e autonômicas (glândulas lacrimais e salivares), mas não a sensibilidade cutânea geral da face.\n\nPortanto, a sequência correta é V - V - F.\n\nAlternativa correta: Letra (c).",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Anatomia, Fisiologia e Semiologia Neurológica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:03.629Z"
+  },
+  {
+    "id": "AJUDA_05b9d442-de93-4919-8677-4c78bc57e767",
+    "originalId": "05b9d442-de93-4919-8677-4c78bc57e767",
+    "statement": "Menina, 15 anos, há aproximadamente 24 horas, iniciou quadro de febre associada a odinofagia. Exame físico: hiperemia de orofaringe sem exudatos ou adenomegalia cervical. Refere que está em tratamento para hipertireoidismo, há 2 meses. Neste momento, a conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar hemograma completo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "prescrever medicação para alívio dos sintomas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar swab para teste rápido de antígeno de estreptococos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "iniciar antibioticoterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão apresenta uma paciente jovem com febre e dor de garganta (odinofagia) que está em tratamento para hipertireoidismo há dois meses. O ponto central para a resolução desta questão é o conhecimento sobre os efeitos colaterais das drogas antitireoidianas de síntese (tionamidas), como o metimazol e o propiltiouracil.\n\nO efeito colateral mais grave e temido dessas medicações é a agranulocitose, que é a redução severa na contagem de granulócitos (especialmente neutrófilos). Essa condição ocorre tipicamente nos primeiros meses de tratamento. Clinicamente, a agranulocitose se manifesta de forma súbita por meio de febre e dor de garganta. Diante de qualquer paciente em uso de tionamidas que apresente esses sintomas, a conduta imediata e obrigatória é a realização de um hemograma para avaliar a contagem de leucócitos.\n\nAlternativa a: Correta. É a conduta prioritária e essencial. O hemograma permite confirmar ou excluir a agranulocitose. Caso a contagem de neutrófilos seja inferior a 500/mm³, a medicação para o hipertireoidismo deve ser suspensa imediatamente, e a paciente pode necessitar de cuidados hospitalares para evitar infecções generalizadas graves.\n\nAlternativa b: Incorreta. Limitar-se ao tratamento sintomático é um erro grave neste contexto, pois ignora a possibilidade de uma complicação hematológica potencialmente fatal induzida pelo medicamento que a paciente já utiliza.\n\nAlternativa c: Incorreta. Embora o teste para estreptococos seja uma conduta comum em faringites, o histórico de uso de tionamidas torna a pesquisa de agranulocitose muito mais urgente. Além disso, o exame físico não descreve exsudato purulento ou adenomegalia, o que diminui a probabilidade de uma faringite bacteriana clássica em comparação ao risco da reação medicamentosa.\n\nAlternativa d: Incorreta. Iniciar antibióticos de forma empírica sem antes verificar o hemograma é inadequado. O tratamento da agranulocitose envolve primeiro a retirada da droga causadora. A antibioticoterapia será indicada se houver confirmação de neutropenia febril, mas o passo inicial diagnóstico é o hemograma.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Tireoide",
+      "Neutropenia Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:03.629Z"
+  }
+]

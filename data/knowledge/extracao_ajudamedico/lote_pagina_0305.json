@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_546c0186-40ec-436c-83d2-a441a67c5009",
+    "originalId": "546c0186-40ec-436c-83d2-a441a67c5009",
+    "statement": "Paciente com diagnóstico de Mola Hidatiforme, submetida à aspiração a vácuo, sem intercorrências.\nQual é o protocolo do seguimento pós molar em relação ao BHCG?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Semanal, negativo por 03 semanas consecutivas, dosá-lo mensalmente por 06 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Quinzenal, negativo em 08 semanas, dosá-lo mensalmente por 01 ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Semanal, negativo por 04 semanas consecutivas, dosá-lo por 01 ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quinzenal, negativo por 03 semanas consecutivas, dosá-lo por 06 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O seguimento pós-molar visa identificar precocemente a evolução para Neoplasia Trofoblástica Gestacional (NTG). O principal marcador é o BHCG, que reflete diretamente a atividade e a quantidade de tecido trofoblástico remanescente no organismo.\n\nO protocolo seguido no Brasil, baseado nas diretrizes da FEBRASGO e do Ministério da Saúde, determina que, após o esvaziamento uterino, a paciente deve realizar dosagens de BHCG semanalmente. Esse acompanhamento semanal deve persistir até que ocorram três resultados negativos (ou abaixo do valor de referência do laboratório) em semanas consecutivas.\n\nUma vez atingidos esses três negativos semanais, a paciente entra na fase de controle de cura, na qual as dosagens passam a ser mensais por um período de 6 meses. Se os níveis de BHCG permanecerem negativos durante todo esse semestre, a paciente recebe alta do acompanhamento e é liberada para uma nova gestação. É fundamental que a paciente utilize um método contraceptivo eficaz durante todo esse processo para evitar uma gravidez que possa confundir a interpretação dos níveis de BHCG.\n\nAnálise das alternativas:\n\nAlternativa a: Esta alternativa está correta. Ela descreve precisamente as duas etapas do seguimento: a fase semanal para observar a queda da curva de BHCG até a negativação (3 semanas consecutivas) e a fase de manutenção mensal por 6 meses para confirmar a remissão completa.\n\nAlternativa b: Incorreta. A periodicidade inicial de 15 dias (quinzenal) é considerada inadequada para detectar precocemente o platô ou a ascensão do BHCG, que são os critérios laboratoriais para o diagnóstico de malignização (NTG). Além disso, o tempo de um ano de seguimento mensal não é a recomendação padrão para casos de mola hidatiforme que evoluem para a negativação.\n\nAlternativa c: Incorreta. O erro está na exigência de 4 semanas consecutivas de resultados negativos e no tempo de seguimento mensal de um ano. O protocolo nacional e internacional mais aceito preconiza 3 semanas de resultados negativos e 6 meses de acompanhamento mensal subsequente.\n\nAlternativa d: Incorreta. O erro principal reside na periodicidade quinzenal no início do acompanhamento. O seguimento deve ser rigorosamente semanal para garantir a segurança da paciente e permitir o diagnóstico rápido de persistência ou evolução para neoplasia.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:08.204Z"
+  },
+  {
+    "id": "AJUDA_547ad0d9-ab01-4411-b0a9-1b730d36028f",
+    "originalId": "547ad0d9-ab01-4411-b0a9-1b730d36028f",
+    "statement": "Paciente do sexo feminino, 68 anos, em tratamento de câncer de cólon metastático. Apresenta-se ao pronto-socorro com dor torácica intensa em queimação e dispneia. Ela está em quimioterapia com mFOLFOX6 (5‐fluorouracil, oxaliplatina e leucovorin). No momento do atendimento, a paciente está recebendo o 5‐fluorouracil em infusão contínua por meio de bomba elastomérica. Durante a avaliação inicial, foi realizado um ECG que demonstrou supradesnivelamento do segmento ST em derivadas anteriores (V2-V4) e troponina elevada. Diante do quadro clínico e dos achados descritos de ECG, qual é a conduta mais apropriada para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continuar o esquema de mFOLFOX6 e iniciar tratamento para angina estável com betabloqueadores e nitratos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender o 5-FU, realizar cateterismo cardíaco emergencial e iniciar anticoagulação plena.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Substituir o 5-FU por capecitabina e tratar a dor torácica com analgesia simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar anticoagulação plena e continuar com o tratamento quimioterápico, incluindo o 5-FU, ajustando as doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso: O quadro clínico descreve uma emergência oncológica e cardiológica clássica. A paciente apresenta sinais de cardiotoxicidade induzida pelo 5-fluorouracil (5-FU), que é a segunda causa mais comum de toxicidade cardíaca por quimioterapia. O mecanismo principal desse fármaco é o vasoespasmo coronariano, que pode mimetizar perfeitamente um infarto agudo do miocárdio, apresentando dor torácica, supradesnivelamento do segmento ST e elevação de biomarcadores (troponina).\n\nAlternativa a: Incorreta. Manter o esquema de quimioterapia diante de uma toxicidade cardíaca aguda é perigoso e contraindicado. Além disso, o tratamento para angina estável é insuficiente para uma paciente que apresenta critérios de síndrome coronariana aguda com supradesnivelamento do segmento ST (IAMCSST).\n\nAlternativa b: Correta. A conduta imediata diante da suspeita de cardiotoxicidade pelo 5-FU é a interrupção da infusão do fármaco. Como a paciente apresenta alterações eletrocardiográficas (supra de ST) e laboratoriais (troponina positiva), ela deve ser manejada conforme o protocolo de IAMCSST, o que inclui a realização de cateterismo cardíaco de urgência para descartar uma obstrução coronariana por placa aterosclerótica e o início da terapia antitrombótica com anticoagulação.\n\nAlternativa c: Incorreta. A capecitabina é um pró-fármaco convertido em 5-fluorouracil no organismo. Portanto, pacientes que apresentam cardiotoxicidade ao 5-FU possuem um risco altíssimo de apresentar o mesmo evento com a capecitabina. Tratar a dor apenas com analgesia simples em um contexto de supra de ST é negligenciar a isquemia miocárdica grave.\n\nAlternativa d: Incorreta. Não se deve continuar o tratamento quimioterápico com 5-FU, mesmo ajustando as doses, enquanto a paciente está em vigência de um evento isquêmico agudo. A reintrodução do 5-FU após um evento de cardiotoxicidade é controversa e, se considerada, deve ser feita com extrema cautela após estabilização completa, mas nunca durante a fase aguda.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:08.204Z"
+  },
+  {
+    "id": "AJUDA_54818785-3938-4fef-a0b4-53501da458ec",
+    "originalId": "54818785-3938-4fef-a0b4-53501da458ec",
+    "statement": "O Pacto pela Saúde de 2006, consolidado por meio da Portaria GM/MS nº 399/2006, propôs a estruturação do Sistema Único de Saúde (SUS) em três componentes fundamentais: Pacto pela Vida, Pacto em Defesa do SUS e Pacto de Gestão. Considerando as diretrizes estabelecidas por este pacto, qual das seguintes ações é uma prioridade expressa no Pacto pela Vida?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A regulamentação da Emenda Constitucional nº 29 para garantir financiamento adequado ao SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A promoção de ações de mobilização social para fortalecer o SUS como política de Estado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A implementação de políticas de regionalização e descentralização dos serviços de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A redução da mortalidade materna e infantil através de intervenções específicas na atenção básica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender esta questão, é fundamental diferenciar os três eixos que compõem o Pacto pela Saúde de 2006. Cada um possui objetivos e prioridades distintas que, frequentemente, são alvo de pegadinhas em provas de residência.\n\nO Pacto pela Vida é o componente que estabelece compromissos em torno de prioridades que apresentam impacto direto na situação de saúde da população brasileira, focando em resultados e metas de saúde pública.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A regulamentação da Emenda Constitucional nº 29 e a garantia de financiamento adequado são diretrizes que pertencem ao Pacto em Defesa do SUS. Este componente foca na valorização do SUS como política de Estado e na garantia de recursos financeiros.\n\nAlternativa b) Incorreta. A promoção de ações de mobilização social e a repolitização da saúde, visando mostrar o SUS como um direito de cidadania, também são prioridades do Pacto em Defesa do SUS.\n\nAlternativa c) Incorreta. A implementação de políticas de regionalização, a definição de responsabilidades sanitárias e a descentralização são os pilares do Pacto de Gestão. Este eixo foca nos aspectos administrativos, organizacionais e na relação entre os entes federados (União, Estados e Municípios).\n\nAlternativa d) Correta. A redução da mortalidade materna e infantil é uma das seis prioridades originais estabelecidas pelo Pacto pela Vida em 2006. As outras cinco prioridades iniciais foram: saúde do idoso, controle do câncer do colo do útero e de mama, fortalecimento da atenção básica, promoção da saúde e fortalecimento da capacidade de resposta a doenças emergentes e endemias (com foco em dengue, hanseníase, tuberculose, malária e influenza). Por se tratar de uma intervenção direta em indicadores de saúde, ela se encaixa perfeitamente no escopo do Pacto pela Vida.\n\nGabarito: Letra (d).",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:08.204Z"
+  },
+  {
+    "id": "AJUDA_5485cb18-14a6-4cdc-9452-a9799760b5c1",
+    "originalId": "5485cb18-14a6-4cdc-9452-a9799760b5c1",
+    "statement": "Pedro tem 30 anos e teve diagnóstico de sífilis por teste rápido durante o período de pré-natal da esposa. Realizou três doses de penicilina benzatina, e apresentava um VDRL inicial de 1:128. Seis meses após o tratamento seu VDRL estava em 1:16, mantendo a titulação no VDRL do 9o. mês. Todavia, ao realizar o VDRL no 12o. mês pós-tratamento, o valor encontrado foi de 1:64. Diante da situação apresentada, qual a conduta CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Repetir VDRL daqui a três meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar novo tratamento com penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Considerar o valor de VDRL do 12o. mês como cicatriz sorológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repetir teste rápido de sífilis e tratar somente se resultado positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, devemos analisar os critérios de seguimento do tratamento da sífilis. Pedro foi tratado com três doses de penicilina benzatina, o esquema indicado para sífilis de duração ignorada ou tardia. O acompanhamento do tratamento é feito com testes não treponêmicos, como o VDRL, em intervalos regulares (geralmente trimestrais).\n\nO sucesso do tratamento é definido pela queda da titulação em duas diluições (ou quatro vezes) em até seis meses para sífilis recente, ou em até 12 meses para sífilis tardia. No caso de Pedro, o VDRL caiu de 1:128 para 1:16 em seis meses, o que representa uma queda de três diluições (1:128 para 1:64, 1:64 para 1:32, 1:32 para 1:16), indicando uma resposta inicial excelente.\n\nEntretanto, o ponto crucial da questão é o resultado do 12º mês. A titulação subiu de 1:16 para 1:64. De acordo com os protocolos do Ministério da Saúde, o aumento da titulação em duas diluições ou mais (neste caso, de 1:16 para 1:32 e depois 1:64) é critério para diagnóstico de reinfecção ou falha de tratamento, exigindo nova intervenção terapêutica.\n\nAnálise das alternativas:\n\na) Incorreta. Diante de um aumento de duas diluições no VDRL (de 1:16 para 1:64), não se deve aguardar. Esse aumento é clinicamente significativo e indica a necessidade de nova abordagem imediata para evitar a progressão da doença e a transmissão para parceiros.\n\nb) Correta. O aumento de 1:16 para 1:64 caracteriza uma elevação de duas diluições (ou um aumento de quatro vezes o valor anterior). Esse achado laboratorial, em um paciente já tratado anteriormente, define a necessidade de um novo curso de tratamento com penicilina benzatina, independentemente da presença de novos sintomas, sendo classificado como reinfecção ou recidiva.\n\nc) Incorreta. A cicatriz sorológica ocorre quando, após o tratamento adequado e a queda das titulações, o VDRL permanece em valores baixos (geralmente 1:1, 1:2 ou 1:4) e estáveis por longos períodos. Um valor de 1:64, especialmente após uma titulação menor de 1:16, não pode ser considerado cicatriz sorológica, mas sim atividade da doença.\n\nd) Incorreta. Os testes rápidos são testes treponêmicos. Uma vez que o indivíduo teve sífilis, esses testes tendem a permanecer reagentes pelo resto da vida (memória imunológica). Portanto, repetir o teste rápido não auxilia no diagnóstico de reinfecção ou na avaliação de cura, devendo o seguimento ser realizado exclusivamente por testes não treponêmicos quantitativos, como o VDRL.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:08.204Z"
+  },
+  {
+    "id": "AJUDA_54865ccc-071c-4bed-8bcf-30cdf1631613",
+    "originalId": "54865ccc-071c-4bed-8bcf-30cdf1631613",
+    "statement": "Homem de 42 anos, natural de Vitória de Santo Antão (PE), previamente hígido, procura atendimento por dor torácica ventilatório-dependente à esquerda, tosse seca e dispneia aos esforços há três semanas. Refere febre baixa predominantemente vespertina, sudorese noturna e perda de aproximadamente 5 kg no último mês. Ao exame físico, apresenta temperatura de 37,8°C, frequência cardíaca de 92 bpm e redução do murmúrio vesicular na base pulmonar esquerda, com macicez à percussão. A radiografia de tórax evidencia derrame pleural moderado à esquerda, sem consolidações pulmonares. A toracocentese demonstra derrame pleural exsudativo, com proteína pleural de 5,1 g/dL, DHL de 420 U/L, glicose de 72 mg/dL, pH de 7,36, predomínio linfocitário (92%), ADA de 68 U/L e culturas bacterianas negativas.\nCom base no quadro clínico e nos achados do líquido pleural, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Derrame pleural parapneumônico complicado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Derrame pleural tuberculoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hidrotórax hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Derrame pleural secundário à insuficiência cardíaca congestiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quilotórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta uma síndrome consuptiva (perda de peso), febre vespertina e sudorese noturna há um mês, associada a sintomas respiratórios e dor pleurítica à esquerda. Este quadro é clássico de uma infecção granulomatosa crônica ou neoplasia. O exame físico e a radiografia confirmam a presença de derrame pleural.\n\nANÁLISE DO LÍQUIDO PLEURAL\n\nA análise bioquímica e citológica é a chave para o diagnóstico:\n1. Critérios de Light: O líquido é um exsudato (proteína > 3,0 g/dL e DHL elevado).\n2. Citologia: Predomínio linfocitário (92%) indica uma inflamação crônica.\n3. Bioquímica específica: O valor da Adenosina Deaminase (ADA) é de 68 U/L. Em contextos epidemiológicos favoráveis, um ADA acima de 40 U/L em exsudatos linfocitários tem alto valor preditivo positivo para Tuberculose Pleural.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. O derrame parapneumônico complicado geralmente apresenta um quadro agudo, febre alta, dor intensa e, laboratorialmente, o líquido pleural teria predomínio de neutrófilos, pH inferior a 7,20 e glicose baixa (muitas vezes < 40-60 mg/dL). O caso apresenta evolução subaguda/crônica e predomínio linfocitário.\n\nb) CORRETA. A Tuberculose Pleural é a principal causa de exsudato linfocitário com ADA elevado no Brasil. Os sintomas constitucionais (febre vespertina, sudorese, perda de peso) somados ao perfil do líquido (exsudato, linfocitose acentuada e ADA > 40-60 U/L) tornam este o diagnóstico mais provável. A ausência de consolidações no raio-X é comum na forma pleural isolada.\n\nc) INCORRETA. O hidrotórax hepático é uma complicação da cirrose com ascite. Bioquimicamente, ele é um transudato (proteína baixa, DHL baixo) e geralmente ocorre no lado direito, o que não condiz com os achados de exsudato e localização à esquerda deste paciente.\n\nd) INCORRETA. O derrame pleural por Insuficiência Cardíaca Congestiva (ICC) é tipicamente um transudato, bilateral (ou à direita) e melhora com o uso de diuréticos. O paciente é jovem, previamente hígido e apresenta características de exsudato inflamatório e sintomas infecciosos/constitucionais.\n\ne) INCORRETA. O quilotórax é causado pelo acúmulo de linfa (geralmente por lesão do ducto torácico ou linfoma). O aspecto do líquido costuma ser leitoso e o diagnóstico é confirmado pela dosagem de triglicerídeos no líquido pleural (acima de 110 mg/dL). Não há relato de aspecto leitoso ou trauma que sustente essa hipótese.\n\nDIAGNÓSTICO MAIS PROVÁVEL: Derrame pleural tuberculoso.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Derrame Pleural",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:08.204Z"
+  },
+  {
+    "id": "AJUDA_548a3674-e06e-4d87-b8e4-f2a6af2f12db",
+    "originalId": "548a3674-e06e-4d87-b8e4-f2a6af2f12db",
+    "statement": "Uma paciente de 60 anos de idade, com menopausa aos 48, referiu sangramento genital em pequena quantidade sem cólicas por 4 dias, e que findou há 20 dias espontaneamente. O exame ginecológico foi normal e a ultrassonografia transvaginal revelou útero com 56 cc de volume, mioma intramural de 1 cm e eco endometrial de 3 mm. Referiu ter diabetes tipo 2 e hipertensão arterial com uso de metformina e enalapril. A causa do sangramento é",
+    "options": [
+      {
+        "id": "A",
+        "text": "câncer do endométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o mioma intramural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "atrofia endometrial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "efeito colateral da medicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "hiperplasia endometrial simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A abordagem inicial do sangramento uterino anormal na pós-menopausa foca, primordialmente, na exclusão de neoplasia maligna. No entanto, estatisticamente, a causa mais comum desse sintoma é a atrofia endometrial.\n\nO ponto-chave para resolver esta questão é a análise do eco endometrial fornecido pela ultrassonografia transvaginal. Em pacientes na pós-menopausa sem uso de terapia de reposição hormonal, um endométrio igual ou menor que 4 mm (nesta paciente, 3 mm) possui um valor preditivo negativo altíssimo (cerca de 99%) para câncer de endométrio.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o câncer de endométrio seja a principal preocupação diagnóstica no sangramento pós-menopausa, ele costuma se apresentar com endométrio espessado (geralmente > 5 mm). Um eco endometrial de 3 mm torna essa hipótese improvável.\n\nb) Incorreta. Miomas intramurais pequenos (1 cm) e que não distorcem a cavidade endometrial raramente são causa de sangramento, especialmente na pós-menopausa, período em que os leiomiomas tendem a sofrer involução pela carência estrogênica.\n\nc) Correta. A atrofia endometrial é a causa mais frequente de sangramento na pós-menopausa (responsável por 60% a 80% dos casos). Ocorre devido à fragilidade do epitélio atrófico e dos capilares superficiais, que podem se romper e causar sangramentos de pequena quantidade. O achado ultrassonográfico de endométrio fino (3 mm) corrobora esse diagnóstico.\n\nd) Incorreta. Nem a metformina (antidiabético) nem o enalapril (anti-hipertensivo) possuem entre seus efeitos colaterais comuns o sangramento uterino.\n\ne) Incorreta. Assim como o câncer, as hiperplasias endometriais (proliferações excessivas do endométrio devido ao estímulo estrogênico sem oposição da progesterona) manifestam-se obrigatoriamente com um eco endometrial espessado na ultrassonografia.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:08.204Z"
+  },
+  {
+    "id": "AJUDA_548d4a64-a496-4ec1-81b8-752b57eb5159",
+    "originalId": "548d4a64-a496-4ec1-81b8-752b57eb5159",
+    "statement": "Homem 72 anos com FA crônica. Qual fator mais importante para indicar anticoagulação oral?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presença de palpitações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "História de sincope.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Escore CHA2DS2-VASc elevado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "História de tabagismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A fibrilação atrial (FA) aumenta significativamente o risco de fenômenos tromboembólicos, sendo o acidente vascular cerebral (AVC) a complicação mais temida. A decisão de iniciar a anticoagulação oral não se baseia na intensidade dos sintomas, mas sim na estratificação do risco de o paciente apresentar um evento embólico em comparação ao risco de sangramento.\n\nAlternativa a) Incorreta. A presença de palpitações é um sintoma clínico decorrente da irregularidade do ritmo cardíaco ou da alta resposta ventricular. Embora as palpitações guiem a estratégia de controle de sintomas (decidir entre controle de ritmo ou de frequência), elas não possuem correlação direta com o risco de formação de trombos no átrio esquerdo. Portanto, não são critérios para indicar a anticoagulação.\n\nAlternativa b) Incorreta. A síncope em um paciente com FA pode ocorrer por diversas causas, como resposta ventricular excessivamente alta, pausas após a reversão espontânea da arritmia ou doenças estruturais associadas. Apesar de ser um sinal de gravidade clínica que exige investigação, a síncope não é um preditor de risco tromboembólico e não consta nos critérios de indicação de terapia anticoagulante.\n\nAlternativa c) Correta. O escore CHA2DS2-VASc é a ferramenta recomendada pelas principais diretrizes (SBC, ESC, AHA) para determinar o risco de AVC em pacientes com FA não valvar. Ele pontua fatores como Insuficiência Cardíaca (C), Hipertensão (H), Idade igual ou superior a 75 anos (A2), Diabetes (D), AVC ou Ataque Isquêmico Transitório prévio (S2), Doença Vascular (V), Idade entre 65-74 anos (A) e Sexo feminino (Sc). No caso deste paciente de 72 anos, ele já possui pontuação pelo critério de idade. Um escore elevado (geralmente maior ou igual a 2 em homens e maior ou igual a 3 em mulheres) indica que o benefício da anticoagulação supera os riscos de sangramento.\n\nAlternativa d) Incorreta. O tabagismo é um fator de risco cardiovascular clássico para aterosclerose e infarto agudo do miocárdio. No entanto, ele não faz parte dos componentes do escore CHA2DS2-VASc e não é considerado, isoladamente, como um critério para o início da anticoagulação oral na fibrilação atrial.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:08.204Z"
+  },
+  {
+    "id": "AJUDA_548e11cc-2ef2-4790-b7b6-51418aea63fa",
+    "originalId": "548e11cc-2ef2-4790-b7b6-51418aea63fa",
+    "statement": "Paciente de 50 anos, saudável, iniciou tratamento com estradiol associado ao progestogênio para sintomas vasomotores do climatério. Durante a consulta, referiu que uma amiga utilizava estriol e questionou sobre a potência do estriol em relação ao estradiol. Considerando a dúvida da paciente, qual é a explicação CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O estriol tem apenas 20-30% da afinidade pelo receptor estrogênico comparado ao estradiol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O estriol tem a mesma afinidade que o estradiol, mas dissocia mais rapidamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O estriol parece ser mais eficaz do que o estradiol em manter densidade mineral óssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O estriol permanece ligado por mais tempo ao receptor do que o estradiol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender a farmacologia dos estrogênios na terapia de reposição hormonal, é fundamental diferenciar as três formas principais: estradiol (E2), estrona (E1) e estriol (E3). O estradiol é o estrogênio mais potente produzido pelo ovário durante a vida reprodutiva, possuindo a maior afinidade pelos receptores estrogênicos alfa e beta.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. O estriol é considerado um estrogênio fraco. Sua afinidade de ligação aos receptores estrogênicos é significativamente menor quando comparada à do estradiol, situando-se em torno de 20% a 30%. Além da menor afinidade, o complexo estriol-receptor é menos estável, o que resulta em uma resposta biológica muito menos intensa.\n\nAlternativa b) Incorreta. O estriol não possui a mesma afinidade que o estradiol. Embora seja verdade que ele se dissocia mais rapidamente do receptor, a premissa de que a afinidade é igual torna a alternativa errada. A rapidez na dissociação é, inclusive, um dos motivos pelos quais o estriol tem efeito sistêmico limitado.\n\nAlternativa c) Incorreta. Para a manutenção da densidade mineral óssea e o tratamento de sintomas vasomotores sistêmicos (ondas de calor), o estradiol é muito mais eficaz. O estriol, devido à sua baixa potência e curto tempo de ação no núcleo celular, não consegue promover a proteção óssea adequada nas doses habitualmente utilizadas, sendo mais indicado para o tratamento da atrofia urogenital (uso tópico).\n\nAlternativa d) Incorreta. O estriol permanece ligado por menos tempo ao receptor do que o estradiol. Para que o estriol exerça um efeito estrogênico pleno (similar ao estradiol), ele precisaria ser administrado em doses muito altas e repetidas vezes ao longo do dia para manter a ocupação do receptor, o que não ocorre na prática clínica.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:08.204Z"
+  },
+  {
+    "id": "AJUDA_5492cbd8-ffa1-481d-a304-50cae0020c7b",
+    "originalId": "5492cbd8-ffa1-481d-a304-50cae0020c7b",
+    "statement": "Mulher de 30 anos, IG IP (normal há 8 anos), refere ciclos menstruais regulares, dismenorreia leve (meIhora espontânea sem uso de analgésicos), faz uso de preservativo como método contraceptivo. Há 4 meses, teve início dor em região lombar direita, em cólica, com irradiação pélvica e intensidade progressiva sem melhora com analgésico ou anti-inflamatório. Nega disúria ou polaciúria.\nExame abdominal: plano e flácido, sem massas palpáveis. Apresenta dor à palpação profunda em fossa ilíaca direita. Punho percussão negativa em regiões lombares. \nExame especular: conteúdo vaginal habitual, colo epitelizado anteriorizado, zona de transição normal. Toque vaginal: útero retrovertido, tamanho habitual, dor à palpação em fórnice vaginal posterior, tumoração anexial direita, regular, móvel, indolor. Exame de sedimento urinário normal. Colpocitologia classe 2 de Papanicolau.\nA principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mioma uterino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Câncer de ovário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Câncer de colo uterino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Endometriose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Texto Original:\nA paciente de 30 anos apresenta um quadro clínico de dor pélvica de caráter progressivo e crônico, sem melhora com analgésicos comuns. Os achados do exame físico são fundamentais para o diagnóstico diferencial em ginecologia, especialmente a dor à palpação do fórnice vaginal posterior e a presença de uma tumoração anexial.\n\nAlternativa a) Incorreta. O mioma uterino é um tumor benigno da musculatura do útero que se manifesta principalmente por sangramento uterino anormal ou aumento do volume abdominal com sintomas compressivos. Embora miomas subserosos possam ser confundidos com massas anexiais, a dor específica no fórnice vaginal posterior e a natureza da dor descrita não são achados típicos de miomatose, a menos que houvesse uma degeneração aguda, o que não condiz com a progressão de quatro meses.\n\nAlternativa b) Incorreta. O câncer de ovário é mais prevalente em mulheres em idade mais avançada, geralmente após a menopausa. No exame físico, massas ovarianas malignas costumam ser sólidas, de contornos irregulares, fixas e frequentemente bilaterais. A descrição de uma tumoração regular, móvel e unilateral em uma paciente jovem favorece fortemente uma hipótese benigna, como um cisto ovariano simples ou um endometrioma.\n\nAlternativa c) Incorreta. A hipótese de câncer de colo uterino é afastada pelos dados do exame físico e laboratorial. O exame especular mostrou um colo epitelizado com zona de transição normal, e a colpocitologia (Papanicolau) resultou em classe 2, que indica achados inflamatórios normais ou alterações benignas, sem evidência de células neoplásicas.\n\nAlternativa d) Correta. A endometriose é a principal hipótese diagnóstica. Trata-se de uma doença caracterizada pela presença de tecido endometrial fora da cavidade uterina, comum em mulheres em idade reprodutiva. A dor à palpação do fórnice vaginal posterior é um sinal semiológico clássico de endometriose profunda, sugerindo o acometimento dos ligamentos uterossacrais ou do fundo de saco de Douglas. A tumoração anexial regular e móvel é compatível com um endometrioma (cisto de chocolate). O útero retrovertido também é um achado frequente nesses casos, muitas vezes devido a aderências pélvicas causadas pelo processo inflamatório crônico da doença.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia",
+      "Endometriose",
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": 55.80549204171814,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:08.204Z"
+  },
+  {
+    "id": "AJUDA_549b1908-77d9-4cb0-b52b-0a8a0a4181fc",
+    "originalId": "549b1908-77d9-4cb0-b52b-0a8a0a4181fc",
+    "statement": "Observe a seguinte figura.\n\nAssinale a alternativa que descreve corretamente a estática fetal acima.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Situação longitudinal, apresentação cefálica, occípito esquerda anterior, rotação interna de 45 graus para occípito púbica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Situação longitudinal, apresentação cefálica, occípito direita anterior, rotação interna de 45 graus para occipito púbica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Situação longitudinal, apresentação cefálica, occípito esquerda anterior, rotação interna de 135 graus para occito púbica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Situação longitudinal, apresentação cefálica, occípito direita anterior, rotação interna de 90 graus para occito púbica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Situação longitudinal, apresentação cefálica, occípito esquerda posterior, rotação interna de 135 graus para occito púbica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para analisar a estática fetal na imagem, devemos observar os quatro elementos fundamentais: situação, apresentação, posição e variedade de posição.\n\n1. Situação: É a relação entre o maior eixo do feto e o maior eixo da mãe. Na imagem, os eixos são paralelos, caracterizando uma situação longitudinal.\n\n2. Apresentação: É a parte fetal que se ocupa do estreito superior da pelve. Aqui, a cabeça está voltada para baixo, configurando uma apresentação cefálica. Pela flexão da cabeça, trata-se de uma apresentação cefálica fletida (ou de vértice), onde a referência é o occípito (lambda).\n\n3. Variedade de Posição: Observando a pelve materna, a sínfise púbica está na parte inferior da imagem (anterior) e o sacro na parte superior (posterior). O dorso do feto e o seu occípito estão voltados para o lado esquerdo da mãe e para a região anterior da pelve. Portanto, a variedade de posição é Occípito Esquerda Anterior (OEA).\n\n4. Mecanismo de Parto (Rotação Interna): Para que o feto complete o desprendimento, o occípito deve girar em direção à sínfise púbica, atingindo a posição occípito-púbica (OP). Partindo de uma posição anterior (OEA), o feto precisa realizar uma rotação interna de apenas 45 graus.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Como descrito, o feto está em situação longitudinal, apresentação cefálica, variedade OEA e necessita de uma rotação de 45 graus para atingir a posição occípito-púbica.\n\nAlternativa b) Incorreta. A imagem mostra claramente o dorso e o occípito voltados para a esquerda da bacia materna, e não para a direita.\n\nAlternativa c) Incorreta. Embora a posição seja esquerda anterior, a rotação de 135 graus seria necessária apenas se o feto estivesse em uma variedade posterior (como Occípito Esquerda Posterior - OEP) para atingir a posição occípito-púbica por via anterior.\n\nAlternativa d) Incorreta. O feto não está à direita e a rotação de 90 graus seria necessária se a apresentação estivesse em posição transversa (Occípito Esquerda Transversa - OET).\n\nAlternativa e) Incorreta. O feto está em posição anterior (perto do púbis) e não posterior (perto do sacro). A rotação de 135 graus está correta para casos de posição posterior, mas não condiz com a imagem apresentada.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/bb5fcc73d6353bd5ed1d46de53915adef61ca9695d49ce86e6daf54540a9d7aa.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_549b1908-77d9-4cb0-b52b-0a8a0a4181fc_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:08.673Z"
+  }
+]

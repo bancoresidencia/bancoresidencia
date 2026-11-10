@@ -1,0 +1,514 @@
+[
+  {
+    "id": "AJUDA_b9d89f8b-137d-4782-9803-1d75a0caa0d6",
+    "originalId": "b9d89f8b-137d-4782-9803-1d75a0caa0d6",
+    "statement": "Homem, 67 anos, hipertenso, tabagista, apresentando disfagia progressiva e perda de peso. Endoscopia mostra lesão vegetante em terço médio do esôfago. Para estadiamento da lesão, o melhor exame é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Radiografia contrastada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tomografia de abdome",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "PET – CT",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Broncoscopia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ultrassom endoscópico",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão descreve um paciente com quadro clínico clássico de neoplasia de esôfago (idade avançada, tabagismo, disfagia progressiva e perda de peso) com lesão vegetante em terço médio identificada na endoscopia. Uma vez feito o diagnóstico, o passo seguinte é o estadiamento para definir a conduta terapêutica.\n\nAlternativa a) Incorreta. A radiografia contrastada (esofagograma) é útil para avaliar a localização, a extensão longitudinal da lesão e o grau de estenose, mas não fornece informações sobre a profundidade de invasão na parede do esôfago ou o acometimento de linfonodos, não servindo para o estadiamento TNM.\n\nAlternativa b) Incorreta. A tomografia computadorizada é mandatória no estadiamento para avaliar metástases à distância (estádio M) e a relação do tumor com órgãos vizinhos. Entretanto, a TC tem baixa sensibilidade para diferenciar os estádios iniciais de invasão da parede (T1 a T3) e para avaliar linfonodos pequenos, sendo inferior ao ultrassom endoscópico no estadiamento local.\n\nAlternativa c) Incorreta. O PET-CT é um exame excelente para detectar metástases à distância ocultas e para avaliar a resposta à quimioterapia e radioterapia neoadjuvante. Contudo, não possui resolução espacial suficiente para o estadiamento local detalhado da parede esofágica.\n\nAlternativa d) Incorreta. A broncoscopia é um exame complementar importante especificamente para tumores localizados no terço médio e superior do esôfago, com o objetivo de excluir a invasão da árvore traqueobronquial (que classificaria o tumor como T4b, contraindicando a cirurgia imediata). No entanto, não é o melhor exame para o estadiamento geral da lesão.\n\nAlternativa e) Correta. O ultrassom endoscópico (ecoendoscopia) é considerado o padrão-ouro para o estadiamento local do câncer de esôfago. Ele é o exame com maior acurácia para determinar a profundidade de invasão do tumor nas camadas da parede esofágica (estádio T) e para avaliar a presença de linfonodos regionais suspeitos (estádio N), permitindo inclusive a realização de punção por agulha fina para confirmação diagnóstica de linfonodos ou lesões adjacentes. Essas informações são fundamentais para decidir se o paciente é candidato a tratamento endoscópico, cirurgia direta ou tratamento neoadjuvante.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:40.523Z"
+  },
+  {
+    "id": "AJUDA_b9dc29d8-38c6-4645-9c56-32ef5359a82e",
+    "originalId": "b9dc29d8-38c6-4645-9c56-32ef5359a82e",
+    "statement": "Um Médico de Saúde da Família, atuando em uma área rural, identifica vários casos de infecções cutâneas por Staphylococcus e, simultaneamente, é notificado pela equipe do Núcleo de Apoio à Saúde da Família (NASF) sobre um surto de mastite no gado leiteiro da região. Ao correlacionar os casos, ele levanta a hipótese de uma zoonose. Com base na classificação das zoonoses, identifique o tipo de transmissão que ocorre quando a doença circula de maneira igualmente distribuída entre humanos e outros animais.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antropozoonose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Zooantropozoonose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Metazoonose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Saprozoonose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Anfixenose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda a classificação epidemiológica das zoonoses, que são doenças ou infecções naturalmente transmitidas entre animais vertebrados e seres humanos. O ponto central é identificar o termo técnico para a doença que circula de maneira equilibrada e bidirecional entre humanos e outros animais.\n\nA) Antropozoonose: Alternativa incorreta. Este termo é utilizado para zoonoses em que o ciclo se mantém em animais vertebrados, que funcionam como reservatórios, e a transmissão ocorre do animal para o ser humano. Exemplos comuns são a raiva e a brucelose.\n\nB) Zooantropozoonose: Alternativa incorreta. Refere-se a zoonoses em que o ser humano é o reservatório principal e a doença é transmitida para os animais. Um exemplo clássico é a transmissão do Mycobacterium tuberculosis (agente da tuberculose humana) para rebanhos bovinos.\n\nC) Metazoonose: Alternativa incorreta. Esta classificação não foca na direção da transmissão, mas sim na necessidade de um hospedeiro intermediário invertebrado (vetor) para que o ciclo biológico do agente se complete. Exemplos incluem a leishmaniose e a esquistossomose.\n\nD) Saprozoonose: Alternativa incorreta. Esta classificação indica que o agente infeccioso necessita de um reservatório não animal (abiótico), como solo, matéria orgânica ou plantas, para completar seu ciclo de vida. Exemplos são o tétano e a maioria das micoses sistêmicas.\n\nE) Anfixenose: Alternativa correta. O termo anfixenose é aplicado quando a doença circula de maneira igualmente distribuída entre humanos e outros animais, com ambos funcionando como reservatórios e a transmissão ocorrendo de forma intercambiável. O enunciado descreve exatamente essa situação ao correlacionar Staphylococcus em humanos e em bovinos (mastite) na mesma região, evidenciando uma circulação conjunta.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:40.523Z"
+  },
+  {
+    "id": "AJUDA_b9de68c5-b8cd-4852-ad25-21eb04b1f1e4",
+    "originalId": "b9de68c5-b8cd-4852-ad25-21eb04b1f1e4",
+    "statement": "Homem de 40 anos procura a unidade básica de saúde (UBS) relatando que está com tosse produtiva há 3 meses, associada a febre vespertina e perda de peso. Nega histórico de tuberculose. Na UBS, é realizado o teste rápido molecular (TRM) para tuberculose no escarro, com resultado positivo e resistência à rifampicina. Diante disso, esse paciente é encaminhado para o ambulatório de referência em tuberculose do município.\nNessa situação, a conduta médica, baseada no resultado do TRM, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "inadequada, devendo ser solicitada a baciloscopia no escarro; o encaminhamento do paciente deve ser cancelado enquanto aguarda o resultado da baciloscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "adequada, sendo desnecessário aguardar a baciloscopia no escarro; o encaminhamento do paciente deve ser cancelado e deve ser iniciado o esquema básico imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "adequada, sendo desnecessário aguardar a baciloscopia no escarro; o encaminhamento do paciente deve ser mantido e deve ser feito novo TRM, além de cultura e teste de sensibilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "inadequada, devendo ser solicitada a baciloscopia no escarro; o encaminhamento do paciente deve ser mantido, devido à necessidade de confirmação diagnóstica por centro especializado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Teste Rápido Molecular para Tuberculose (TRM-TB) é atualmente a ferramenta de escolha para o diagnóstico inicial da tuberculose pulmonar no Brasil. Quando o resultado indica a presença do *Mycobacterium tuberculosis* associada à resistência à rifampicina, o protocolo do Ministério da Saúde estabelece fluxos específicos para garantir o manejo adequado e evitar a propagação de cepas resistentes.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A conduta de encaminhar o paciente para a unidade de referência não é inadequada; pelo contrário, é necessária diante da detecção de resistência. O TRM-TB tem valor diagnóstico superior à baciloscopia. Cancelar o encaminhamento atrasaria o início do tratamento especializado, que é fundamental para casos de resistência.\n\nAlternativa b) Incorreta. Embora o encaminhamento seja adequado, o erro desta alternativa reside em sugerir o cancelamento do encaminhamento e o início do esquema básico (Rifampicina, Isoniazida, Pirazinamida e Etambutol - RHZE). Se o teste molecular já apontou resistência à rifampicina, o esquema básico será ineficaz e poderá ampliar a resistência bacteriana. O paciente necessita de um esquema para tuberculose resistente.\n\nAlternativa c) Correta. Segundo o Manual de Recomendações para o Controle da Tuberculose no Brasil, diante de um resultado de TRM-TB com resistência à rifampicina, a conduta correta é manter o encaminhamento para o centro de referência. Nesses casos, o protocolo orienta coletar uma segunda amostra de escarro para realizar um novo TRM-TB (visando confirmar a resistência e descartar erros pré-analíticos), além de realizar obrigatoriamente a cultura para micobactéria e o teste de sensibilidade (TS) fenotípico para determinar o perfil completo de resistência aos outros fármacos.\n\nAlternativa d) Incorreta. A conduta de encaminhamento é classificada como adequada, e não inadequada. O diagnóstico de tuberculose já foi confirmado pelo teste molecular; a necessidade do centro especializado não é para a confirmação do diagnóstico da doença em si, mas sim para o manejo clínico da resistência e a definição do esquema terapêutico de segunda linha.\n\nResumo do manejo: Todo caso com resistência à rifampicina detectada no TRM-TB deve ser referenciado para uma unidade de referência secundária ou terciária, com solicitação de nova amostra para repetição do TRM-TB, cultura e teste de sensibilidade.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Testes Diagnósticos",
+      "Tuberculose"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:40.523Z"
+  },
+  {
+    "id": "AJUDA_b9e0093b-e312-4172-a43c-c7a1c707b983",
+    "originalId": "b9e0093b-e312-4172-a43c-c7a1c707b983",
+    "statement": "Paciente do sexo masculino, com 64 anos, apresenta enterorragia, petéquias e equimoses, além de epistaxe. Ao exame físico, apresenta baço palpável a 4 cm do RCE. Pesa 80 Kg. Hemograma mostra Hb: 12,1 g/dl, leucócitos: 7.800/mm3 com diferencial normal e plaquetas: 1.450.000/mm3. TP com INR de 1,3 e TTPa de 26”. Relata ser portador de trombocitemia essencial. Qual o tratamento indicado para a hemorragia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "8 unidades de concentrados de plaquetas;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "4 unidades (800 ml) de plasma fresco congelado;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1 unidade de crioprecipitado;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "3.200 UI de fator de Von Willebrand.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve um paciente com Trombocitemia Essencial (TE) apresentando sangramentos mucocutâneos e gastrointestinais, apesar de uma contagem de plaquetas extremamente elevada (1.450.000/mm³). Esse fenômeno é uma complicação clássica e paradoxal das neoplasias mieloproliferativas com trombocitose acentuada, conhecida como Síndrome de von Willebrand Adquirida (SvWA).\n\nNa trombocitose extrema (geralmente acima de 1 a 1,5 milhão de plaquetas), ocorre a adsorção e a degradação proteolítica excessiva dos multímeros de alto peso molecular do Fator de von Willebrand (FvW) pela superfície das plaquetas. Como esses multímeros são os mais eficazes na mediação da adesão plaquetária ao endotélio lesado, sua escassez leva a um defeito funcional na hemostasia primária, resultando em sangramentos.\n\nAnálise das alternativas:\n\na) Incorreta. O paciente já possui uma contagem altíssima de plaquetas. O problema não é a quantidade, mas a deficiência funcional do Fator de von Willebrand no plasma. Transfundir mais plaquetas não corrigiria o defeito e poderia até agravar a viscosidade sanguínea ou a própria síndrome de consumo do FvW.\n\nb) Incorreta. O plasma fresco congelado contém Fator de von Willebrand, porém em concentrações fisiológicas baixas para a correção rápida necessária em um quadro de hemorragia ativa por SvWA. Além disso, o volume necessário para atingir níveis terapêuticos seria muito alto, com risco de sobrecarga volêmica.\n\nc) Incorreta. O crioprecipitado contém FvW e Fator VIII concentrados, mas uma única unidade é uma dose insuficiente para um adulto de 80 kg em vigência de sangramento grave. Seriam necessárias cerca de 10 a 15 unidades para um efeito hemostático inicial, tornando os concentrados de fator uma opção superior e mais segura.\n\nd) Correta. O tratamento de escolha na emergência hemorrágica decorrente da Síndrome de von Willebrand Adquirida por trombocitose é a reposição do Fator de von Willebrand. A dose recomendada para episódios de sangramento moderado a grave varia de 40 a 60 UI/kg. Para este paciente de 80 kg, o cálculo de 40 UI/kg resulta exatamente em 3.200 UI, justificando a alternativa. Complementarmente, deve-se iniciar a citorredução (geralmente com hidroxiureia) para reduzir a contagem plaquetária e resolver a causa-base da síndrome.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Medicina Transfusional",
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:40.523Z"
+  },
+  {
+    "id": "AJUDA_b9e203fc-fddb-4281-9e0f-0f239b39bd54",
+    "originalId": "b9e203fc-fddb-4281-9e0f-0f239b39bd54",
+    "statement": "Sobre as técnicas utilizadas para o tratamento de atonia (hemorragia) uterina puerperal, considere as afirmativas a seguir.\nI. Dispositivo de Odon.\nII. Ligadura da artéria ilíaca comum.\nIII. Sistema JADA.\nIV. Sutura de B-Lynch.\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender a questão, devemos focar no manejo da Hemorragia Pós-Parto (HPP) causada por atonia uterina, que é a incapacidade do útero de se contrair após o nascimento, sendo a principal causa de morte materna no mundo.\n\nAnálise das Afirmativas:\n\nI. Dispositivo de Odon: Incorreta. O Dispositivo de Odon é uma inovação tecnológica projetada para auxiliar no período expulsivo do parto (parto instrumental), funcionando como uma alternativa ao vácuo-extrator ou ao fórceps em casos de parto prolongado ou obstruído. Ele não tem como finalidade o tratamento da atonia uterina ou o controle de hemorragia pós-parto.\n\nII. Ligadura da artéria ilíaca comum: Incorreta. No manejo cirúrgico da hemorragia puerperal grave, quando as medidas conservadoras falham, pode-se realizar a ligadura das artérias uterinas ou a ligadura das artérias ilíacas INTERNAS (também conhecidas como artérias hipogástricas). A ligadura da artéria ilíaca COMUM é contraindicada nesse cenário, pois interromperia o fluxo sanguíneo para os membros inferiores, causando isquemia grave das pernas.\n\nIII. Sistema JADA: Correta. É uma tecnologia recente e avançada (aprovada pela FDA e introduzida em protocolos internacionais) que utiliza o controle de vácuo para tratar a atonia uterina. O dispositivo de baixa pressão é inserido no útero e cria um vácuo que auxilia na compressão fisiológica das paredes uterinas, facilitando a contração e cessando o sangramento de forma rápida.\n\nIV. Sutura de B-Lynch: Correta. É a técnica de sutura compressiva uterina mais conhecida e utilizada mundialmente. É realizada durante a laparotomia e consiste em passar fios (geralmente categute cromado ou monocryl) que \"envelopam\" o útero, aplicando uma compressão mecânica contínua sobre o miométrio para controlar o sangramento por atonia.\n\nAnálise das Alternativas:\n\nA alternativa (a) está incorreta porque inclui os itens I e II.\nA alternativa (b) está incorreta porque inclui o item I.\nA alternativa (c) está correta, pois identifica corretamente que apenas o Sistema JADA e a Sutura de B-Lynch são técnicas voltadas para o tratamento da atonia.\nA alternativa (d) está incorreta porque inclui os itens I e II.\nA alternativa (e) está incorreta porque inclui o item II.\n\nConclusão:\nO tratamento da atonia uterina envolve uma sequência que vai desde massagem uterina e ocitócitos até métodos mecânicos (como o balão de Bakri ou o Sistema JADA) e métodos cirúrgicos (como a sutura de B-Lynch ou ligadura de artérias ilíacas internas). Portanto, apenas III e IV atendem ao enunciado.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:40.523Z"
+  },
+  {
+    "id": "AJUDA_b9e29d0d-464e-4148-a06a-feacbe708d53",
+    "originalId": "b9e29d0d-464e-4148-a06a-feacbe708d53",
+    "statement": "Homem de 57 anos, sem comorbidades, chega ao setor de emergência com quadro de melena e hipotensão. Após adequada estabilização clínica, realizou endoscopia digestiva alta que demonstrou massa subepitelial com umbilicação central em pequena curvatura gástrica com sangramento ativo. Biópsia realizada identificou apenas processo inflamatório inespecífico. Tomografia computadorizada com contraste oral e venoso demonstra lesão de aproximadamente 5,0cm com realce heterogêneo. Qual seria a conduta mais apropriada para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar Imatinibe neoadjuvante por 3 meses e posterior reavaliação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Embolização endoscópica, seguida de alta para seguimento ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ressecção cirúrgica com margens livres sem necessidade de linfadenectomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Radioterapia hemostática para controle do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Gastrectomia total com linfadenectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente com hemorragia digestiva alta decorrente de uma lesão gástrica com características clássicas de um GIST (Tumor Estromal Gastrointestinal). A descrição endoscópica de massa subepitelial com umbilicação central (onde ocorre o sangramento) e o achado tomográfico de lesão de 5,0 cm com realce heterogêneo são marcos diagnósticos dessa patologia. A biópsia endoscópica muitas vezes é inespecífica, como no caso, pois a lesão é submucosa e a pinça de biópsia convencional frequentemente não alcança o tecido tumoral.\n\nAssociação com a imagem: A tomografia computadorizada demonstra uma volumosa formação expansiva originada na parede gástrica, com crescimento predominantemente exofítico e realce periférico pelo contraste, apresentando áreas centrais de menor densidade que sugerem necrose ou degeneração cística, achados típicos de tumores estromais de dimensões maiores.\n\nAnálise das alternativas:\n\na) Incorreta. O imatinibe neoadjuvante é indicado para casos de tumores inicialmente irressecáveis ou quando a cirurgia inicial resultaria em grande mutilação (como necessidade de gastrectomia total ou exenteração). Uma lesão de 5,0 cm é geralmente passível de ressecção primária. Além disso, o paciente apresentou sangramento ativo, o que prioriza o tratamento definitivo.\n\nb) Incorreta. A embolização é uma técnica da radiologia intervencionista, não endoscópica. Além disso, o tratamento de um tumor de 5,0 cm com potencial de malignidade não se encerra na hemostasia; ele exige a exérese da lesão para cura e estadiamento histopatológico.\n\nc) Correta. O tratamento padrão para o GIST localizado é a ressecção cirúrgica com margens livres (R0). Diferente do adenocarcinoma gástrico, o GIST apresenta disseminação predominantemente hematogênica e raramente acomete linfonodos (menos de 1 a 2% dos casos). Portanto, a linfadenectomia não é necessária, permitindo ressecções menos invasivas, como a gastrectomia em cunha.\n\nd) Incorreta. O GIST é um tumor radiorresistente. A radioterapia não desempenha papel no controle de sangramento ou no tratamento curativo dessas lesões gástricas.\n\ne) Incorreta. A gastrectomia total e a linfadenectomia seriam condutas indicadas para um adenocarcinoma gástrico difuso ou de localização proximal. Para o GIST, essa conduta é considerada excessiva (overtreatment), uma vez que a ressecção local com margens livres é suficiente e a retirada de linfonodos não traz benefício oncológico.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago",
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/9724a63d08c63f618c4913d8891c6b0391f2cffbef280418b41447404f581b18.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b9e29d0d-464e-4148-a06a-feacbe708d53_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:41.247Z"
+  },
+  {
+    "id": "AJUDA_b9e3df20-a5e6-450d-94d6-11575764d664",
+    "originalId": "b9e3df20-a5e6-450d-94d6-11575764d664",
+    "statement": "A Portaria GM/MS nº 5.201/2024, incluiu novas doenças na Lista Nacional de Notificação Compulsória. De acordo com ela, a notificação dos transtornos mentais relacionados ao trabalho deve ser feita, para a Secretaria Municipal de Saúde, em até",
+    "options": [
+      {
+        "id": "A",
+        "text": "24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "72 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para responder a essa questão, é fundamental estar atualizado com as mudanças recentes na Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública. A Portaria GM/MS nº 5.201, de 15 de agosto de 2024, consolidou atualizações importantes que frequentemente são cobradas em provas de residência e concursos.\n\nNo sistema de vigilância epidemiológica brasileiro, as notificações podem ser classificadas como imediatas (realizadas em até 24 horas) ou semanais (realizadas em até 7 dias). Os transtornos mentais relacionados ao trabalho foram incluídos como agravos de notificação compulsória e seguem o fluxo de periodicidade semanal para o envio dos dados às Secretarias Municipais de Saúde.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O prazo de 24 horas é reservado para a notificação imediata, aplicada a situações de maior gravidade ou potencial de disseminação rápida, como surtos de doenças infectocontagiosas específicas, óbitos suspeitos por certas patologias ou acidentes de trabalho graves e fatais. Os transtornos mentais relacionados ao trabalho não se enquadram nesse critério de urgência cronológica de 24 horas.\n\nAlternativa b) Incorreta. O intervalo de 72 horas não é um prazo padrão estabelecido pela Portaria de Consolidação nº 4/2017 ou suas atualizações (incluindo a 5.201/2024) para a notificação compulsória de agravos à saúde do trabalhador ou doenças infectocontagiosas.\n\nAlternativa c) Incorreta. O prazo de 5 dias não faz parte da sistemática de classificação da Vigilância Epidemiológica brasileira para a periodicidade das notificações na Lista Nacional. O sistema trabalha com o binômio \"imediata\" (24h) ou \"semanal\" (7 dias).\n\nAlternativa d) Correta. De acordo com a legislação vigente, a notificação dos transtornos mentais relacionados ao trabalho é de periodicidade semanal. Isso significa que o registro deve ser feito e comunicado à Secretaria Municipal de Saúde em um prazo de até 7 dias a partir do diagnóstico ou suspeita. Essa periodicidade permite o monitoramento epidemiológico e a formulação de políticas de saúde ocupacional sem a exigência de resposta de emergência em 24 horas.\n\nGabarito: Letra (d).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Vigilância em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:41.247Z"
+  },
+  {
+    "id": "AJUDA_b9ebfec7-319e-4650-89da-2d4b0c5c840f",
+    "originalId": "b9ebfec7-319e-4650-89da-2d4b0c5c840f",
+    "statement": "Puérpera, 34 anos, no 35º dia pós parto, foi diagnosticada com abcesso em mama direita. Pode-se afirmar que no caso de indicação de drenagem, o dreno deve permanecer, em horas, por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "24 a 48",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "12 a 24",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "24 a 36",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "36 a 48",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O abscesso mamário puerperal é uma complicação da mastite aguda, ocorrendo geralmente quando o tratamento da infecção inicial é retardado ou inadequado. O quadro clínico clássico envolve dor intensa, febre, mal-estar e a presença de uma área de flutuação na mama. No 35º dia pós-parto, como descrito no caso, a paciente está em pleno período de lactação, o que caracteriza o abscesso como puerperal.\n\nO tratamento do abscesso mamário baseia-se no esvaziamento da coleção purulenta e na manutenção da antibioticoterapia. O esvaziamento pode ser feito por aspiração por agulha ou por drenagem cirúrgica (incisão e drenagem). Quando a drenagem cirúrgica é a opção escolhida, especialmente em abscessos volumosos, é comum a colocação de um dreno (como o dreno de Penrose) para garantir que a cavidade continue a ser esvaziada e não ocorra o fechamento precoce da pele com nova formação de pus.\n\nDe acordo com a literatura obstétrica clássica e protocolos de mastologia frequentemente cobrados em concursos (como o Tratado de Obstetrícia de Rezende), o tempo recomendado para a permanência desse dreno é de 24 a 36 horas. Esse período é suficiente para permitir a saída do excesso de secreção inflamatória inicial sem aumentar excessivamente o risco de contaminação externa ou dificultar a cicatrização local.\n\nAnálise das alternativas:\n\nAlternativa (a) 24 a 48 horas: Incorreta. Embora o limite inferior esteja correto, o limite superior de 48 horas extrapola o tempo preconizado pelas referências bibliográficas específicas para abscessos mamários puerperais simples.\n\nAlternativa (b) 12 a 24 horas: Incorreta. O período de 12 horas é considerado muito curto para garantir que toda a secreção tenha sido drenada e que as paredes da cavidade tenham começado a colapsar adequadamente.\n\nAlternativa (c) 24 a 36 horas: Correta. Este é o intervalo de tempo padrão recomendado para a retirada do dreno após a drenagem cirúrgica de um abscesso mamário puerperal, visando o equilíbrio entre a drenagem eficaz e a prevenção de infecções secundárias.\n\nAlternativa (d) 36 a 48 horas: Incorreta. Este intervalo ultrapassa a recomendação clássica de 24 a 36 horas encontrada nos principais manuais de obstetrícia e ginecologia adotados pelas bancas examinadoras.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Benignas da Mama",
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:41.247Z"
+  },
+  {
+    "id": "AJUDA_b9ef0dda-0596-447e-b1ad-ca24a813bc5c",
+    "originalId": "b9ef0dda-0596-447e-b1ad-ca24a813bc5c",
+    "statement": "Considere a seguinte situação: pré-escolar, sexo masculino, 3 anos de idade, com síndrome de Down, sem cardiopatia congênita e com função tireoidiana normal.\nDe acordo com as atuais recomendações dos Centros de Referência para Imunobiológicos Especias (CRIE), qual esquema vacinal especial, não contemplado para outras populações, ele poderá receber?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ampliação da proteção para doença pneumocócica, com a vacina 13-valente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ampliação da proteção para doença pneumocócica, com a vacina polissacarídica 23-valente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ampliação da proteção para doença meningocócica, com a vacina ACWY.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ampliação da proteção para influenza, com a vacina quadrivalente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Segundo reforço para difteria, tétano e coqueluche, com a vacina tríplice acelular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda as recomendações do Manual do Centro de Referência para Imunobiológicos Especiais (CRIE) para crianças com trissomia 21 (síndrome de Down). Essas crianças apresentam um risco aumentado para infecções respiratórias e doença pneumocócica invasiva, devido a alterações imunológicas e anatômicas.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a vacina pneumocócica conjugada 13-valente (VPC13) faça parte do arsenal do CRIE, para crianças com síndrome de Down que já completaram o esquema básico com a VPC10 (oferecida pelo PNI aos 2, 4 e 12 meses), a principal ampliação de proteção preconizada após os 2 anos de idade é o acréscimo da vacina polissacarídica.\n\nb) Correta. De acordo com o Manual do CRIE, a síndrome de Down é uma indicação para a ampliação da proteção contra o *Streptococcus pneumoniae*. O esquema consiste em garantir as doses da vacina conjugada e, obrigatoriamente, administrar a vacina pneumocócica polissacarídica 23-valente (VPP23) a partir dos 2 anos de idade, com uma dose de reforço cinco anos após a primeira. Como o paciente tem 3 anos, ele está na faixa etária indicada para receber essa proteção adicional.\n\nc) Incorreta. A vacina meningocócica conjugada ACWY é disponibilizada pelo CRIE para grupos específicos, como pacientes com asplenia anatômica ou funcional, deficiências de complemento ou em uso de eculizumabe. A síndrome de Down, isoladamente, não é uma indicação para a vacina ACWY pelo CRIE fora do calendário vacinal de rotina (que a prevê para adolescentes).\n\nd) Incorreta. A vacina influenza é oferecida anualmente para todas as crianças de 6 meses a menores de 6 anos pelo Programa Nacional de Imunizações (PNI). Não existe um esquema \"especial\" de ampliação para influenza no CRIE especificamente para a síndrome de Down que difira do que já é ofertado na rotina para essa faixa etária.\n\ne) Incorreta. A vacina tríplice bacteriana acelular (DTPa) é indicada no CRIE para crianças que apresentaram eventos adversos graves à vacina de células inteiras (DTP) ou para aquelas com cardiopatias ou pneumopatias crônicas. O enunciado especifica que a criança não possui cardiopatia congênita, logo, não haveria indicação de um esquema especial com a vacina acelular apenas pela síndrome de Down. Além disso, não há previsão de um \"segundo reforço\" aos 3 anos, uma vez que os reforços de rotina ocorrem aos 15 meses e aos 4 anos.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:41.247Z"
+  },
+  {
+    "id": "AJUDA_b9f951e0-9a97-4624-9f10-eb378ddc35fc",
+    "originalId": "b9f951e0-9a97-4624-9f10-eb378ddc35fc",
+    "statement": "Mulher de 33 anos, foi submetida a cirurgia para ooforoplastia devido a massa anexial benigna. Evoluiu bem no pós-operatório imediato, mas apresentou dor na região inguinal direita que progrediu continuamente. Há 8 meses vem apresentando dor intensa no local, acompanhada de alodínia, formigamento, dor à exposição ao frio e episódios súbitos e repentinos de dor, ambos muito intensos. Tem antecedente de apendicectomia e colecistectomia. A ultrassonografia transvaginal e transabdominal não identificou alterações anatômicas significativas. Com base nestas informações, qual a opção terapêutica mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adesiólise laparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Neuromodulação lombossacral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gabapentina 1800 mg ao dia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Canabidiol 100 mg ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um quadro clássico de dor neuropática crônica pós-operatória. Os principais sinais que corroboram esse diagnóstico são a cronicidade (8 meses), a localização (região inguinal após cirurgia pélvica/abdominal) e as características semiológicas da dor, como alodínia (dor por estímulo não doloroso), formigamento (parestesia), hipersensibilidade ao frio e paroxismos (pontadas súbitas). Em cirurgias de ooforoplastia ou apendicectomia, nervos como o ílio-inguinal, ílio-hipogástrico ou genitofemoral podem sofrer lesão direta, compressão por suturas ou encarceramento em tecidos cicatriciais.\n\nAnálise das alternativas:\n\na) Incorreta. A adesiólise (retirada de aderências) por laparoscopia não é o tratamento inicial para dor com características puramente neuropáticas. Além disso, a ultrassonografia não demonstrou alterações anatômicas. Intervenções cirúrgicas adicionais em pacientes com dor neuropática podem, inclusive, agravar o quadro por gerar novos traumas nervosos.\n\nb) Incorreta. A neuromodulação (como estimuladores de medula espinhal ou de raízes sacrais) é uma terapia de alta complexidade e custo elevado. Ela é reservada apenas para casos refratários, ou seja, pacientes que não obtiveram sucesso com o tratamento farmacológico otimizado e outras medidas menos invasivas.\n\nc) Correta. A gabapentina é um dos fármacos de primeira linha para o tratamento da dor neuropática. Ela atua ligando-se à subunidade alfa-2-delta dos canais de cálcio dependentes de voltagem no sistema nervoso central, reduzindo a liberação de neurotransmissores excitatórios. A dose de 1.800 mg/dia está dentro da faixa terapêutica usual (que varia geralmente de 900 mg a 3.600 mg ao dia), sendo uma conduta farmacológica adequada e padrão-ouro para o controle dos sintomas descritos.\n\nd) Incorreta. Embora o canabidiol venha sendo estudado para diversas condições de dor crônica, ele ainda não é considerado terapia de primeira linha para dor neuropática periférica pós-operatória nos principais protocolos clínicos mundiais. Fármacos como gabapentinoides, antidepressivos tricíclicos e inibidores da recaptação de serotonina e noradrenalina possuem evidências científicas muito mais robustas para este cenário.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:39:41.247Z"
+  }
+]

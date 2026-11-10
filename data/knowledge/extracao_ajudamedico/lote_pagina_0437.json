@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_7a75af78-9f99-4568-a9b8-0b0f51eb3fa4",
+    "originalId": "7a75af78-9f99-4568-a9b8-0b0f51eb3fa4",
+    "statement": "Com relação à pré-eclâmpsia (PE), as afirmativas estão corretas, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As gestantes devem receber AAS 100mg, heparina de baixo peso molecular, vitamina C, vitamina E e ácido fólico para prevenção de PE;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Consideram-se marcadores clínicos de risco aumentado para PE: IMC > 30, gestação múltipla e gestação decorrente de reprodução assistida;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O estudo Doppler das artérias uterinas com 24 semanas em pacientes de risco aumentado é o melhor fator preditivo para o desenvolvimento de PE;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Para a definição de proteinúria deve ser considerada a perda de 300 mg ou mais em urina de 24 horas; ou, em amostra isolada de urina, uma relação proteinúria/creatininúria (ambas em mg/dl) igual ou superior a 0,3.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (a) INCORRETA: Esta é a alternativa a ser assinalada, pois contém diversos erros conceituais sobre a profilaxia da pré-eclâmpsia (PE). As principais diretrizes nacionais (FEBRASGO) e internacionais (ACOG, FIGO) recomendam apenas o uso de AAS (aspirina) em doses de 100 a 150 mg e a suplementação de cálcio (para pacientes com baixa ingestão dietética) como medidas eficazes de prevenção. O uso de vitamina C e vitamina E foi amplamente estudado e não demonstrou benefício, não sendo recomendado. O ácido fólico é indicado para a prevenção de defeitos do tubo neural, e a heparina de baixo peso molecular não é uma droga de rotina para prevenção de PE, sendo reservada para gestantes com trombofilias específicas.\n\nAlternativa (b) CORRETA: Fatores de risco clínicos são essenciais na triagem pré-natal. A obesidade (IMC acima de 30 kg/m²), a gestação múltipla (devido à maior massa placentária) e o uso de técnicas de reprodução assistida são marcadores epidemiológicos clássicos associados a uma maior incidência de pré-eclâmpsia.\n\nAlternativa (c) CORRETA: O Doppler de artérias uterinas avalia a invasão trofoblástica das artérias espiraladas. A persistência da incisura protodiastólica bilateral ou o aumento do índice de pulsatilidade médio após a 24ª semana de gestação indica uma falha na segunda onda de migração trofoblástica. Em pacientes que já apresentam riscos clínicos, este exame possui um alto valor preditivo negativo e é considerado um dos melhores métodos para identificar aquelas que evoluirão com pré-eclâmpsia, especialmente nas formas precoces.\n\nAlternativa (d) CORRETA: De acordo com os critérios diagnósticos atuais, a proteinúria significativa é definida pela coleta de urina de 24 horas apresentando 300 mg ou mais de proteína. Como a coleta de 24 horas é frequentemente sujeita a erros de armazenamento e tempo, a relação proteína/creatinina (P/C) em amostra isolada de urina tornou-se o padrão-ouro por sua praticidade; valores iguais ou superiores a 0,3 (ambos em mg/dL) confirmam a proteinúria para o diagnóstico de PE.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:24.193Z"
+  },
+  {
+    "id": "AJUDA_7a780fcc-7418-42ce-bbc7-e11df9081379",
+    "originalId": "7a780fcc-7418-42ce-bbc7-e11df9081379",
+    "statement": "Um paciente com histórico de fibrilação atrial é admitido na emergência com um novo episódio de arritmia. Após estabilização inicial, a equipe médica opta por iniciar a infusão de amiodarona. Diante do caso, avalie a correta administração do fármaco:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diluir a dose prescrita em 100 mL de soro fisiológico 0,9%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A medicação pode ser administrada em bolus, sem diluição, em situações de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É recomendado diluir a dose em 250 mL de soro glicosado 5%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Orientar o paciente sobre o risco de hipertensão e insônia como reações comuns.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A amiodarona injetável deve ser administrada exclusivamente por via intramuscular profunda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A amiodarona é um antiarrítmico de classe III amplamente utilizado no manejo de arritmias supraventriculares e ventriculares. Sua administração exige cuidados específicos quanto à compatibilidade química e à monitorização de efeitos colaterais.\n\nAlternativa (a) - Incorreta: A amiodarona é quimicamente incompatível com o soro fisiológico (cloreto de sódio 0,9%). Quando misturada a soluções salinas, a medicação pode precipitar, formando cristais que comprometem a segurança da infusão.\n\nAlternativa (b) - Incorreta: Em pacientes com pulso e estabilidade hemodinâmica (como o caso descrito de fibrilação atrial), a administração não deve ser feita em bolus direto e sem diluição. O bolus rápido está reservado para situações de parada cardiorrespiratória (ritmos chocáveis). Em pacientes conscientes, a infusão rápida pode causar hipotensão severa e colapso cardiovascular.\n\nAlternativa (c) - Correta: O soro glicosado a 5% (SG 5%) é o veículo padrão e obrigatório para a diluição da amiodarona em infusão contínua ou doses de ataque. Ele garante a estabilidade da molécula e evita a precipitação. Recomenda-se que a concentração final da solução não seja inferior a 0,6 mg/mL para manter a estabilidade.\n\nAlternativa (d) - Incorreta: Os efeitos colaterais agudos mais comuns da infusão de amiodarona são a hipotensão arterial e a bradicardia. A hipotensão ocorre muitas vezes devido ao solvente utilizado na formulação (polissorbato 80) ou à própria ação vasodilatadora do fármaco. Hipertensão e insônia não são reações agudas esperadas.\n\nAlternativa (e) - Incorreta: A via de escolha na emergência é a intravenosa (preferencialmente em acesso venoso central, se a infusão for prolongada, devido ao risco de flebite). A via intramuscular não é utilizada para o controle agudo de arritmias e pode causar danos teciduais no local da aplicação.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:24.193Z"
+  },
+  {
+    "id": "AJUDA_7a7dc36a-ad88-4c2d-a364-b0ce1a59f70d",
+    "originalId": "7a7dc36a-ad88-4c2d-a364-b0ce1a59f70d",
+    "statement": "Gestante com 23 anos, III gesta, II para, com idade gestacional de 33 semanas de gravidez, procura o pronto atendimento da maternidade com queixa de perda de água, há 4 horas, quando estava dormindo, tendo molhado toda sua cama. Ao exame clínico realizado, a PA era de 110 x 70 mmHg, demais parâmetros clínicos normais. A altura uterina era de 31 cm, o feto estava em situação longitudinal, em apresentação pélvica, a FCF estava em 156 bpm e a dinâmica uterina estava ausente. Ao exame genital, observava-se que a vulva estava molhada e escorria líquido claro pela rima vulvar. Frente ao caso apresentado, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "trata-se de um caso de rotura prematura de membranas ovulares, pois a gestante está com apenas 33 semanas de gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "embora a gestante seja multípara, é de boa norma indicar cesárea, pois se trata de apresentação pélvica com feto prematuro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estando a gestante com dinâmica ausente, é importante proceder ao exame de toque para saber a dilatação e poder se tomar uma conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "trata-se de uma rotura prematura de membranas ovulares pré-termo e a melhor conduta é expectante armada, desde que os parâmetros de infecção clínica e laboratorial sejam afastados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "sendo um caso de bolsa rota e sendo a gestante multípara, a indução do trabalho de parto estaria indicada com razoável chance de sucesso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta um quadro de Rotura Prematura de Membranas Ovulares (RPMO), definida como a ruptura das membranas antes do início das contrações de trabalho de parto. Como a idade gestacional é de 33 semanas, trata-se especificamente de uma RPMO pré-termo.\n\nAlternativa A: Incorreta. O conceito de rotura prematura de membranas refere-se ao momento da ruptura em relação ao início do trabalho de parto (ocorre antes das contrações) e não à idade gestacional. Uma gestante com 40 semanas pode apresentar RPMO. O fato de ela ter 33 semanas classifica a rotura como pré-termo, mas a definição de prematuridade da membrana não depende da idade gestacional isoladamente.\n\nAlternativa B: Incorreta. A apresentação pélvica em feto prematuro não é uma indicação absoluta de cesariana imediata, especialmente em um cenário onde não há trabalho de parto e a estabilidade materno-fetal é mantida. Antes das 34 semanas, a prioridade é a conduta conservadora para reduzir complicações da prematuridade, a menos que haja sinais de infecção ou sofrimento fetal.\n\nAlternativa C: Incorreta. O toque vaginal é formalmente contraindicado em casos de rotura de membranas fora do trabalho de parto, pois cada exame realizado aumenta significativamente o risco de infecção ascendente (corioamnionite). O diagnóstico e a avaliação devem ser feitos preferencialmente pelo exame especular.\n\nAlternativa D: Correta. De acordo com os principais protocolos obstétricos (como FEBRASGO e ACOG), para gestantes com RPMO entre 24 e 34 semanas sem sinais de infecção ou comprometimento da vitalidade fetal, a conduta é a expectante armada. Isso envolve internação, monitoramento rigoroso de sinais vitais maternos e fetais, exames laboratoriais seriados para detectar infecção precocemente, antibioticoterapia (para aumentar o período de latência e profilaxia de GBS) e corticoterapia para maturação pulmonar fetal.\n\nAlternativa E: Incorreta. A indução do parto às 33 semanas não é a conduta de primeira escolha na ausência de complicações. A interrupção da gestação (seja por indução ou cesárea) na RPMO geralmente é indicada após as 34 semanas de gestação. Antes disso, os riscos da prematuridade superam os riscos da conduta expectante vigiada.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:24.193Z"
+  },
+  {
+    "id": "AJUDA_7a953808-c3a3-430c-bd1f-d969456af167",
+    "originalId": "7a953808-c3a3-430c-bd1f-d969456af167",
+    "statement": "No que diz respeito aos distúrbios da puberdade, assinale a opção correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A puberdade precoce central é idiopática em apenas 20% das meninas e em 85% dos meninos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os casos de puberdade precoce periféricos são mais comuns, sendo a hiperplasia adrenal congênita uma causa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A síndrome de McCune‑Albright é uma causa de puberdade precoce periférica, a qual é caracterizada, em meninas, pelo desenvolvimento de cistos ovarianos funcionantes que produzem estrogênio de forma autônoma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A puberdade precoce em meninos é caracterizada pelo aumento do volume testicular maior que 10 ml antes dos nove anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O hipotireoidismo primário de longa duração, quando não é tratado, torna‑se uma causa comum de puberdade precoce central.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) Incorreta. Os dados apresentados estão incorretos e desproporcionais à realidade clínica. Na puberdade precoce central (PPC), a etiologia idiopática é responsável pela vasta maioria dos casos em meninas (cerca de 90%). Já nos meninos, a situação é oposta: a maioria dos casos de PPC (entre 40% a 75%) possui uma causa orgânica subjacente, como tumores ou malformações do sistema nervoso central.\n\nAlternativa (b) Incorreta. A puberdade precoce central (GnRH-dependente) é muito mais frequente na prática clínica do que a puberdade precoce periférica (GnRH-independente). Embora a hiperplasia adrenal congênita seja uma causa importante de puberdade precoce periférica, a afirmação de que os casos periféricos são os mais comuns torna a alternativa falsa.\n\nAlternativa (c) Correta. A Síndrome de McCune-Albright é uma forma de puberdade precoce periférica causada por uma mutação somática ativadora na proteína Gs-alfa. Essa mutação leva a uma hiperativação de glândulas endócrinas independentemente de estímulo hormonal central. Nas meninas, isso resulta na formação de cistos ovarianos funcionantes que produzem estrogênio de forma autônoma, causando desenvolvimento de mamas e sangramento vaginal. A tríade clássica da síndrome inclui puberdade precoce periférica, manchas café com leite de bordos irregulares e displasia fibrosa poliostótica.\n\nAlternativa (d) Incorreta. A puberdade precoce em meninos é definida pelo aparecimento de caracteres sexuais secundários antes dos 9 anos de idade. O marco clínico do início da puberdade masculina é o aumento do volume testicular, porém o ponto de corte é um volume igual ou maior que 4 ml (medido pelo orquidômetro de Prader). Um volume de 10 ml já indica uma puberdade em estágio intermediário/avançado.\n\nAlternativa (e) Incorreta. O hipotireoidismo primário de longa duração, quando grave e não tratado, pode causar a Síndrome de Van Wyk-Grumbach. Esta condição caracteriza-se por uma puberdade precoce do tipo periférica, e não central. Isso ocorre porque os níveis extremamente elevados de TSH conseguem estimular os receptores de FSH (devido à semelhança estrutural entre as moléculas), levando ao desenvolvimento de caracteres sexuais sem a ativação do eixo hipotálamo-hipófise-gônada. Além disso, é uma causa considerada rara, não comum.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:24.193Z"
+  },
+  {
+    "id": "AJUDA_7a9870a2-1754-4da6-bca8-8cd1fbbebbe5",
+    "originalId": "7a9870a2-1754-4da6-bca8-8cd1fbbebbe5",
+    "statement": "Mulher de 32 anos, faxineira, estava limpando a parte externa de uma janela, em um prédio, quando caiu de altura de 12 metros, chocando o abdome sobre um muro. No PS teve diagnóstico de laceração de fígado com hemorragia intra-abdominal, choque hemorrágico e óbito. A família informou que ela tinha anemia falciforme. Em face do exposto, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O preenchimento correto da Declaração de Óbito (DO) deve ser: PARTE I a) Choque hemorrágico b) Laceração hepática c) Traumatismo abdominal d) Queda de edifício PARTE II Anemia falciforme",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O preenchimento correto da Declaração de Óbito (DO) deve ser: PARTE I a) Queda de edifício b) Traumatismo abdominal c) Laceração de fígado d) Choque hemorrágico PARTE II -------------",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O preenchimento correto da Declaração de Óbito (DO) deve ser: PARTE I a) Choque hemorrágico b) Laceração hepática c) Anemia falciforme d) ------------- PARTE II Queda de edifício",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O preenchimento correto da Declaração de Óbito (DO) deve ser: PARTE I a) Choque hemorrágico b) Traumatismo de fígado c) Anemia falciforme d) ------------- PARTE II Queda de edifício",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender o preenchimento da Declaração de Óbito (DO), é fundamental dominar a lógica da Parte I e da Parte II do documento, conforme as normas do Ministério da Saúde e da Organização Mundial da Saúde (OMS).\n\nA Parte I da DO destina-se à causa terminal e à sequência de eventos patológicos que levaram diretamente à morte. Ela é preenchida de cima para baixo, mas a leitura lógica da sequência causal ocorre de baixo para cima:\n- Linha (a): Causa terminal ou imediata (o evento final que parou a vida).\n- Linhas (b) e (c): Causas intermediárias (estados mórbidos que produziram a causa acima).\n- Linha (d): Causa básica (a doença ou lesão que iniciou a cadeia de eventos patológicos; no caso de mortes violentas, é a circunstância do acidente ou violência).\n\nA Parte II destina-se a outras condições mórbidas significativas que contribuíram para a morte, mas que não entraram na sequência direta da Parte I.\n\nAnálise das alternativas:\n\na) Correta. Esta alternativa obedece rigorosamente à hierarquia causal. O choque hemorrágico (a) foi a causa imediata, decorrente da laceração hepática (b), que foi causada pelo traumatismo abdominal (c), o qual, por sua vez, foi originado pela queda do edifício (d). A anemia falciforme, sendo uma doença preexistente que pode agravar o quadro clínico ou dificultar a recuperação, mas que não causou a queda ou o trauma, deve ser colocada na Parte II como condição contribuinte.\n\nb) Incorreta. Esta alternativa inverte a ordem da Parte I. No preenchimento da DO, a causa básica (neste caso, a queda) deve figurar na última linha preenchida da Parte I, e não na primeira linha (a). A linha (a) é sempre reservada para a causa terminal/imediata.\n\nc) Incorreta. A anemia falciforme não faz parte da sequência fisiopatológica direta que liga a queda ao choque hemorrágico, portanto, não deve estar na Parte I. Além disso, a \"Queda de edifício\" é a causa básica (o evento iniciador) e deve obrigatoriamente estar na última linha preenchida da Parte I, e não na Parte II.\n\nd) Incorreta. Comete o mesmo erro da alternativa anterior ao incluir a anemia falciforme na sequência direta da Parte I e ao deslocar a causa básica (queda) para a Parte II. A causa básica de um óbito por causa externa (acidentes ou violências) nunca deve ser colocada na Parte II se ela foi a origem do trauma.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:24.193Z"
+  },
+  {
+    "id": "AJUDA_7a9ab704-bfd5-4706-88d9-99055a208864",
+    "originalId": "7a9ab704-bfd5-4706-88d9-99055a208864",
+    "statement": "Sobre as afecções cirúrgicas do pâncreas, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A pancreatite aguda leve deve ser tratada cirurgicamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A necrosectomia pancreática está indicada precocemente, ainda na primeira semana da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A pancreatite crônica está relacionada, mais frequentemente, a causas autoimunes e iatrogênicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O adenocarcinoma de pâncreas localizado na cauda é tratado, preferencialmente, com duodenopancreatectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pseudocistos com diâmetro menor que 6 cm são mais propensos a serem acompanhados sem intervenção.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa a) Incorreta. A pancreatite aguda leve é uma condição autolimitada na imensa maioria dos casos. O tratamento é eminentemente clínico e baseia-se no tripé: hidratação venosa agressiva, analgesia e realimentação oral precoce, conforme a tolerância do paciente. A intervenção cirúrgica não faz parte do manejo inicial da pancreatite leve, sendo reservada apenas para tratar a causa-base (como a colecistectomia na pancreatite biliar) após a melhora do quadro clínico.\n\nAlternativa b) Incorreta. A necrosectomia pancreática (remoção do tecido necrótico) deve ser adiada o máximo possível, preferencialmente por pelo menos 4 semanas após o início dos sintomas. Intervenções cirúrgicas precoces, na primeira ou segunda semana, estão associadas a altíssimas taxas de hemorragia e mortalidade, pois o tecido necrótico ainda não está delimitado (organizado) do tecido viável.\n\nAlternativa c) Incorreta. A causa mais comum de pancreatite crônica é, disparadamente, o etilismo crônico (consumo excessivo de álcool), responsável por cerca de 70% a 80% dos casos. Causas autoimunes, hereditárias e idiopáticas são menos frequentes. Causas iatrogênicas são raras na forma crônica, sendo mais associadas a quadros agudos (como após uma colangiopancreatografia retrógrada endoscópica – CPRE).\n\nAlternativa d) Incorreta. A duodenopancreatectomia (cirurgia de Whipple) é o procedimento indicado para tumores situados na cabeça do pâncreas ou no processo uncinado. Para o adenocarcinoma localizado na cauda ou no corpo do pâncreas, a cirurgia de escolha é a pancreatectomia distal, frequentemente acompanhada de esplenectomia (retirada do baço).\n\nAlternativa e) Correta. A maioria dos pseudocistos pancreáticos regride espontaneamente sem necessidade de intervenção. Historicamente, utilizava-se a regra dos \"6 cm e 6 semanas\" para indicar drenagem, mas hoje sabe-se que, mesmo após 6 semanas, pseudocistos assintomáticos menores que 6 cm podem ser acompanhados com segurança apenas com exames de imagem periódicos, pois apresentam baixo risco de complicações e alta chance de resolução espontânea. A intervenção é reservada para casos sintomáticos ou que apresentem complicações (infecção, ruptura ou hemorragia).",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Pancreáticas",
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:24.193Z"
+  },
+  {
+    "id": "AJUDA_7aac8d1f-9aeb-4271-ac57-a9e706733073",
+    "originalId": "7aac8d1f-9aeb-4271-ac57-a9e706733073",
+    "statement": "Um homem de 35 anos é levado ao departamento de emergência após uma briga de bar. Ele tem um ferimento por arma branca de 3 cm no hemitórax direito, de aproximadamente 5 cm lateralmente e logo acima do mamilo. Informa que o ferimento foi provocado por uma faca. Está consciente e orientado, embora embriagado, e reclama muito de dor no lado direito do tórax. Seus sinais vitais iniciais são: FC 96 bpm; PA 110/63 mmHg; FR 20 ipm e saturação de 98% em ar ambiente.\n\nO paciente apresenta drenagem inicial de 800mL no tubo torácico do lado direito, e isso diminui nas próximas horas. Ele é internado para monitoramento e permanece estável. Uma radiografia de tórax de controle, na manhã seguinte, demonstra líquido residual significativo na base direita. Qual é o passo mais apropriado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sala de cirurgia para videotoracoscopia e evacuação do hemotórax retido;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Sala de cirurgia para uma toracotomia anterolateral direita;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cateter Pigtail para drenar o hemotórax residual;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observação e radiografias de tórax seriadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso: O paciente sofreu um trauma torácico penetrante e apresentou uma drenagem inicial de 800 mL. Esse volume não atinge os critérios clássicos para toracotomia de emergência (geralmente drenagem imediata maior que 1.500 mL ou débito contínuo superior a 200 mL/h). Entretanto, a radiografia de controle revela um hemotórax retido significativo, que é a persistência de sangue e coágulos no espaço pleural mesmo após a drenagem tubular.\n\nAlternativa (a) Correta: A videotoracoscopia (VATS) é o procedimento de escolha para o manejo do hemotórax retido. Ela permite a limpeza completa da cavidade pleural, a remoção de coágulos e a reexpansão do pulmão. A intervenção precoce (idealmente entre 24 e 72 horas após o trauma) reduz o tempo de internação e previne complicações graves, como o empiema (infecção do espaço pleural) e o fibrotórax (cicatrização que impede a expansão pulmonar).\n\nAlternativa (b) Incorreta: A toracotomia é uma cirurgia muito mais invasiva e não é necessária neste momento, pois o paciente está hemodinamicamente estável e não apresenta sangramento ativo maciço que justifique a abertura formal do tórax. A videotoracoscopia consegue resolver o problema de forma minimamente invasiva.\n\nAlternativa (c) Incorreta: A colocação de um novo dreno, seja de grosso calibre ou um cateter Pigtail, raramente é eficaz no hemotórax retido. Isso ocorre porque o sangue remanescente geralmente está coagulado ou organizado em lojas (loculações), o que impede que o líquido flua livremente para fora do tórax através de um tubo simples.\n\nAlternativa (d) Incorreta: A observação e radiografias seriadas seriam aceitáveis apenas para hemotórax residuais mínimos (geralmente menores que 200 a 300 mL). Como a questão descreve um volume líquido significativo, a conduta expectante aumenta muito o risco de o paciente desenvolver pneumonia, empiema ou encarceramento pulmonar, exigindo cirurgias muito mais complexas no futuro.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:24.193Z"
+  },
+  {
+    "id": "AJUDA_7ab79680-3169-4b14-865f-b1a0d77529cf",
+    "originalId": "7ab79680-3169-4b14-865f-b1a0d77529cf",
+    "statement": "Paciente, 27 anos de idade, procura atendimento por apresentar úlcera genital única, dolorosa, de bordas irregulares e fundo purulento, associada a linfonodomegalia inguinal unilateral dolorosa e flutuante. Refere início dos sintomas há 7 dias. Com base nesse relato, o quadro desta paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "compatível com sífilis primária, cujo diagnóstico deve ser confirmado pelo VDRL reagente e tratamento deve ser feito com penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "típico de linfogranuloma venéreo, causado pelo Treponema pallidum, com necessidade de tratamento com ceftriaxona intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "característico de herpes genital, que cursa com lesões múltiplas vesiculosas, e deve ser tratado com penicilina procaína.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "provavelmente de cancro mole, cujo agente é Haemophilus ducreyi, e o tratamento pode ser feito com azitromicina em dose única oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão descreve uma paciente com úlcera genital dolorosa e linfonodomegalia inguinal flutuante, o que direciona o diagnóstico para as infecções sexualmente transmissíveis (IST) ulcerativas. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa a: Incorreta. Na sífilis primária, a úlcera (conhecida como cancro duro) é classicamente indolor, possui bordas bem delimitadas e fundo limpo, sem presença de pus. A linfonodomegalia na sífilis costuma ser bilateral, indolor e não sofre flutuação (não forma abscesso). O VDRL é um teste não treponêmico que pode ser negativo na fase inicial da lesão primária, tendo sua sensibilidade aumentada após algumas semanas.\n\nAlternativa b: Incorreta. Há um erro no agente etiológico apresentado: o linfogranuloma venéreo é causado pela bactéria Chlamydia trachomatis (sorotipos L1, L2 e L3), enquanto o Treponema pallidum é o agente da sífilis. No linfogranuloma, a úlcera inicial é pequena, indolor e transitória, muitas vezes nem sendo notada pela paciente. O sintoma principal é a linfonodomegalia inguinal dolorosa que pode fistulizar por múltiplos orifícios (aspecto de \"bico de regador\").\n\nAlternativa c: Incorreta. O herpes genital caracteriza-se pelo aparecimento de múltiplas pequenas vesículas agrupadas sobre base eritematosa, que se rompem e formam úlceras rasas e muito dolorosas. O tratamento é feito com antivirais, como o aciclovir. A penicilina procaína é um antibiótico e não possui ação contra o vírus do herpes.\n\nAlternativa d: Correta. O quadro descrito é típico do cancro mole, também chamado de cancroide. As características principais são a dor local intensa, bordas irregulares, fundo com exsudato purulento (sujo) e a presença do bubão inguinal (linfonodomegalia que flutua e drena por um único orifício). O agente causador é o bacilo Gram-negativo Haemophilus ducreyi. O tratamento padrão-ouro é a azitromicina 1 g por via oral em dose única, podendo-se utilizar também a ceftriaxona.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:24.193Z"
+  },
+  {
+    "id": "AJUDA_7ab7e4ed-cbf2-4fb2-b45c-9bd9e1a8086e",
+    "originalId": "7ab7e4ed-cbf2-4fb2-b45c-9bd9e1a8086e",
+    "statement": "No que se refere a administração de vacinas assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "As vacinas de vírus vivos quando não são administradas simultaneamente devem ser realizadas em um intervalo de 15 dias entre elas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vacina da febre amarela pode ser administrada simultaneamente com a pneumocócica 10 valente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A taxa de soro conversão é superior no caso de administração das vacinas de maneira isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vacina inativada ou toxóide podem ser utilizados simultaneamente com imunoglobulinas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A aplicação de vacina após transfusão de sangue total deve ser realizada após o intervalo de 30 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise detalhada da questão sobre normas gerais de imunização:\n\nAlternativa A (Incorreta): O erro está no prazo estabelecido. Segundo o Programa Nacional de Imunizações (PNI), quando duas vacinas de vírus vivos atenuados (por via parenteral) não são aplicadas simultaneamente, deve-se respeitar um intervalo mínimo de 30 dias entre elas. Esse intervalo é fundamental para evitar que a resposta imunológica inicial (especialmente a produção de interferon) interfira na replicação do vírus da segunda vacina, o que comprometeria a eficácia da imunização.\n\nAlternativa B (Incorreta): A vacina da Febre Amarela (vírus vivo) e a Pneumocócica 10-valente (inativada) podem, tecnicamente, ser administradas no mesmo dia em locais anatômicos diferentes. No entanto, em questões de prova e diretrizes do PNI, a ênfase é dada às restrições de simultaneidade específicas para a Febre Amarela, como a restrição com a Tríplice Viral/Tetraviral em crianças menores de dois anos (intervalo de 30 dias). A alternativa é considerada incorreta por não refletir uma \"norma padrão\" de ouro tão relevante quanto a descrita na alternativa D.\n\nAlternativa C (Incorreta): Não há evidência científica de que a vacinação isolada produza mais anticorpos do que a vacinação simultânea. O sistema imunológico humano tem capacidade de processar milhares de antígenos simultaneamente. A administração conjunta é uma estratégia fundamental de saúde pública para evitar oportunidades perdidas de vacinação e otimizar a cobertura vacinal.\n\nAlternativa D (Correta): Esta alternativa apresenta um conceito fundamental em infectologia e imunização. As vacinas inativadas, fragmentadas ou toxoides não sofrem interferência de anticorpos prontos (imunoglobulinas ou soros). Por isso, podem ser administradas a qualquer momento, inclusive simultaneamente a hemoderivados ou imunoglobulinas, desde que em seringas e locais de aplicação diferentes. Um exemplo prático é o manejo de ferimentos graves, onde se aplica o soro antitetânico e a vacina contra o tétano conjuntamente.\n\nAlternativa E (Incorreta): O intervalo de 30 dias é subestimado. Após a transfusão de sangue total ou hemoderivados, a presença de anticorpos passivos pode neutralizar vacinas de vírus vivos (como sarampo, caxumba, rubéola e varicela), impedindo a replicação viral necessária para gerar imunidade. O PNI recomenda intervalos que variam de 3 a 11 meses, dependendo do volume e do tipo de hemoderivado recebido, para assegurar que esses anticorpos exógenos tenham sido eliminados. Note que para vacinas inativadas não há necessidade de intervalo após transfusões.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:24.193Z"
+  },
+  {
+    "id": "AJUDA_7abac935-560b-4926-b3a3-ed5aee81de79",
+    "originalId": "7abac935-560b-4926-b3a3-ed5aee81de79",
+    "statement": "Lactente, 8 meses de vida, é levado ao pronto atendimento com febre há 48 horas, sem outros sintomas respiratórios ou digestivos. Ao exame físico, encontra-se irritado, sem sinais de foco infeccioso evidente. O pediatra solicita coleta de urina para investigação. A coleta é realizada por saco coletor e a urocultura mostra crescimento de Escherichia coli em 10^5 UFC/mL. Sobre esse caso clínico, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A ausência de piúria no exame de urina simples exclui o diagnóstico de infecção urinária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A coleta por saco coletor é aceitável para diagnóstico definitivo em lactentes febris com suspeita de ITU.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A realização de ultrassonografia de rins e vias urinárias está indicada apenas após o segundo episódio de ITU.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico de infecção urinária deve ser confirmado por urocultura obtida por cateterismo vesical ou punção suprapúbica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o diagnóstico de Infecção do Trato Urinário (ITU) na infância, um tema recorrente em provas de residência. O ponto central aqui é a confiabilidade dos métodos de coleta de urina em lactentes sem controle esfincteriano.\n\nAnálise das alternativas:\n\na) Incorreta. A presença de piúria (leucocitúria) no exame de urina simples (EAS) é um marcador de inflamação e reforça a suspeita de ITU, mas sua ausência não é suficiente para excluir o diagnóstico de forma absoluta. Existem casos de ITU confirmada por cultura em que o EAS não apresenta leucocitúria significativa, especialmente em fases muito precoces da infecção ou em pacientes imunossuprimidos.\n\nb) Incorreta. O saco coletor apresenta uma taxa de contaminação extremamente elevada (superior a 50% em muitos estudos). Por esse motivo, ele possui um excelente valor preditivo negativo (se o resultado for negativo, provavelmente não há infecção), mas um baixo valor preditivo positivo. Um crescimento bacteriano no saco coletor não é suficiente para o diagnóstico definitivo; ele indica apenas a necessidade de uma nova coleta por método estéril.\n\nc) Incorreta. Segundo as diretrizes da Sociedade Brasileira de Pediatria (SBP) e da Academia Americana de Pediatria (AAP), a investigação por imagem (geralmente iniciada pela ultrassonografia de rins e vias urinárias) deve ser realizada após o primeiro episódio de ITU febril confirmada em lactentes entre 2 meses e 2 anos de idade. O objetivo é identificar precocemente malformações anatômicas ou sinais de refluxo vesicoureteral.\n\nd) Correta. Como a coleta inicial foi realizada por saco coletor e resultou em crescimento bacteriano, há um alto risco de o resultado ser um falso positivo por contaminação da pele perineal. Para firmar o diagnóstico de ITU em um lactente febril e iniciar o tratamento com segurança, as diretrizes recomendam a confirmação por meio de métodos de coleta estéreis, como o cateterismo vesical (sondagem) ou a punção suprapúbica, que garantem que a bactéria identificada realmente provém da bexiga.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:24.193Z"
+  }
+]

@@ -1,0 +1,489 @@
+[
+  {
+    "id": "AJUDA_4f95d753-51f3-4445-80d4-90722b4a685e",
+    "originalId": "4f95d753-51f3-4445-80d4-90722b4a685e",
+    "statement": "Mulher, de 40 anos de idade, pertencente a uma comunidade indígena e residente em uma grande capital do Sudeste, retorna após viagem para visitar a família no interior do Pará. Há alguns meses, ela percebe “manchas claras” na face lateral da perna direita e relata que a área fica “dormente, como se estivesse anestesiada”. Ao exame físico, observam-se duas lesões hipocrômicas bem delimitadas, com redução da sensibilidade térmica e dolorosa.\n\nQuatro semanas após iniciar o tratamento adequado, a paciente retorna referindo dor em choque e queimação intensa na borda cubital do antebraço direito (“parece fio desencapado”), dificuldade para segurar objetos leves e novo edema eritematoso em lesões antigas. Ao exame clínico, o nervo ulnar direito está espessado, muito doloroso à palpação e há perda de força de flexão do 5º dedo. Qual hipótese diagnóstica e conduta imediata estão corretas para prevenir incapacidade permanente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reação hansênica tipo 1 com neurite aguda. Manter tratamento e iniciar rapidamente corticoide sistêmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Efeito adverso neuromuscular do antifúngico oral. Suspender o tratamento até cessar a dor e substituir por tratamento tópico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Efeito adverso neuromuscular do antifúngico oral. Suspender antifúngico e substituir por corticoide tópico e analgésico comum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Neurite aguda por miltefosina. Manter o tratamento e iniciar rapidamente corticoide sistêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um quadro clássico de hanseníase, evidenciado por manchas hipocrômicas com perda de sensibilidade térmica e dolorosa em uma pessoa proveniente de área endêmica (Pará). Quatro semanas após o início do tratamento (poliquimioterapia - PQT), ela desenvolve um quadro agudo de inflamação nas lesões antigas (edema e eritema) e sinais de comprometimento do nervo ulnar (dor em choque, espessamento neural e perda de força de flexão do 5.º dedo). \n\nEste cenário caracteriza uma Reação Hansênica Tipo 1, também conhecida como Reação de Reversão. A neurite aguda associada é uma emergência médica na hanseníase, pois o edema dentro da bainha do nervo pode causar isquemia e morte axonal, levando a incapacidades físicas permanentes.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): O diagnóstico é Reação Hansênica Tipo 1 com neurite aguda. A conduta correta é manter o tratamento específico para hanseníase (PQT) e iniciar imediatamente a corticoterapia sistêmica (geralmente prednisona na dose de 1 mg/kg/dia). O corticoide é essencial para reduzir o processo inflamatório no nervo e preservar a função motora e sensitiva.\n\nAlternativa B (Incorreta): Não há sinais de infecção fúngica. Manchas anestésicas são características de hanseníase, não de micoses. Além disso, a conduta de suspender o tratamento e usar terapia tópica está incorreta para o quadro de neurite descrito.\n\nAlternativa C (Incorreta): O quadro clínico não sugere efeito adverso de antifúngicos. O erro principal aqui é a recomendação de suspender o tratamento da hanseníase. A poliquimioterapia não deve ser interrompida durante os episódios reacionais.\n\nAlternativa D (Incorreta): A miltefosina é um medicamento utilizado para o tratamento da leishmaniose. Embora o estado do Pará seja endêmico para leishmaniose, as lesões hipocrômicas com anestesia e o espessamento de troncos nervosos periféricos são manifestações típicas da hanseníase, e não da leishmaniose.\n\nConclusão:\nA identificação precoce da neurite aguda e o início rápido do corticoide são os passos fundamentais para evitar que a paciente evolua com sequelas funcionais, como a mão em garra ulnar.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Hanseníase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:18.536Z"
+  },
+  {
+    "id": "AJUDA_4f9b39be-ebfd-4bb2-bb82-00f8bf204854",
+    "originalId": "4f9b39be-ebfd-4bb2-bb82-00f8bf204854",
+    "statement": "Mulher, 67 anos de idade, procura atendimento na sua Unidade Básica de Saúde (UBS) para exames de rotina, especialmente preocupada com os exames ginecológicos. Tem vida sexual ativa, não tem comorbidades. Realizou exame citopatológico do colo uterino aos 61 e 64 anos de idade, e mamografia aos 65 anos. Não tem história familiar de câncer, nem teve exames de rastreamento alterados anteriormente. Seguindo as recomendações do Ministério da Saúde para câncer de mama e colo de útero, qual conduta deve ser orientada para a paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar apenas mamografia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar apenas citopatológico de colo de útero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar mamografia e citopatológico de colo de útero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientar que não há indicação de exames.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão avalia as diretrizes do Ministério da Saúde e do Instituto Nacional de Câncer (INCA) para o rastreamento dos cânceres de colo do útero e de mama na Atenção Primária à Saúde.\n\n1. Rastreamento do Câncer de Colo do Útero:\nRecomenda-se para mulheres entre 25 e 64 anos de idade com atividade sexual. O rastreamento pode ser interrompido aos 64 anos caso a mulher tenha pelo menos dois exames normais consecutivos nos últimos cinco anos. A paciente tem 67 anos e realizou citopatológicos normais aos 61 e 64 anos, preenchendo os critérios para suspensão definitiva da coleta de rotina.\n\n2. Rastreamento do Câncer de Mama:\nRecomenda-se a realização de mamografia bienal (a cada dois anos) para mulheres na faixa etária de 50 a 69 anos em risco habitual. Como a paciente tem 67 anos e fez o último exame aos 65 anos, já se completou o intervalo de dois anos, estando indicada uma nova mamografia.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Está indicada apenas a mamografia, pois a paciente está na faixa etária alvo (50 a 69 anos) e no intervalo de dois anos desde o último exame. O citopatológico não é mais necessário devido aos critérios de interrupção preenchidos.\n\nAlternativa B (Incorreta): O citopatológico está suspenso pela idade e pelo histórico prévio normal, enquanto a mamografia é necessária.\n\nAlternativa C (Incorreta): Apenas a mamografia deve ser solicitada; o citopatológico de colo de útero não tem mais indicação.\n\nAlternativa D (Incorreta): Há indicação de exame, especificamente a mamografia de rastreamento bienal.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "Câncer de Mama",
+      "Atenção Primária à Saúde",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:18.536Z"
+  },
+  {
+    "id": "AJUDA_4f9cbfab-e271-4e6b-b2db-f5ece1467b0c",
+    "originalId": "4f9cbfab-e271-4e6b-b2db-f5ece1467b0c",
+    "statement": "Qual das situações abaixo não corresponde a uma atribuição típica da Vigilância Sanitária?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Controle de qualidade da água para consumo humano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fiscalização da produção e comercialização de medicamentos, alimentos e cosméticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Monitoramento de surtos de doenças transmissíveis em escolas e creches.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Inspeção de serviços de saúde, como hospitais e clínicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Sistema Nacional de Vigilância em Saúde divide suas ações em diferentes eixos, sendo fundamental diferenciar as atribuições da Vigilância Sanitária daquelas da Vigilância Epidemiológica, conforme preconiza a Lei Federal número 8.080/1990. \n\nA Vigilância Sanitária atua prioritariamente sobre fatores de risco associados a produtos, bens de consumo, meio ambiente e prestação de serviços de interesse à saúde, enquanto a Vigilância Epidemiológica dedica-se à detecção, notificação e controle de agravos e doenças na população.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O controle da qualidade e dos padrões de potabilidade da água destinada ao consumo humano faz parte das ações de vigilância sanitária e ambiental em saúde (como no programa Vigiagua), visando prevenir riscos à saúde pública decorrentes do consumo de água inadequada.\n\nAlternativa b: Incorreta. A fiscalização de todo o ciclo de fabricação, transporte, armazenamento e comercialização de medicamentos, cosméticos, alimentos e saneantes é uma das atividades mais clássicas e centrais da Vigilância Sanitária (Anvisa e órgãos locais).\n\nAlternativa c: Correta. O monitoramento, a investigação e a contenção de surtos de doenças transmissíveis (como meningite, catapora, influenza ou escabiose) em escolas, creches ou na comunidade em geral são atribuições típicas da Vigilância Epidemiológica, cujo foco é o comportamento das doenças e seus determinantes biológicos no coletivo.\n\nAlternativa d: Incorreta. A inspeção, licenciamento e fiscalização das condições de funcionamento, biossegurança, higienização e estrutura física de serviços de saúde (hospitais, clínicas, laboratórios, serviços de diálise) são competências diretas da Vigilância Sanitária.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:18.536Z"
+  },
+  {
+    "id": "AJUDA_4fa1c178-7599-43b6-b916-914c0ed1da35",
+    "originalId": "4fa1c178-7599-43b6-b916-914c0ed1da35",
+    "statement": "Paciente de 16 anos de idade procura o serviço de saúde preocupada porque acha que a barriga está pequena e não sente o bebê mexer ainda. Não iniciou o pré-natal por medo de contar para os pais da gravidez, não se lembra da data da última menstruação, mas acha que está com 7 meses (lembra de ter sangrado em maio). Nega doenças, refere uso eventual de maconha e cigarro. Ao exame obstétrico, altura uterina 22 cm, BCF presente e rítmico ao sonar, especular sem alterações, toque vaginal com colo amolecido, grosso e impérvio. Realizada ultrassonografia obstétrica, com peso fetal estimado de 650 g e índice de líquido amniótico de 10 cm, biometria compatível com 24 semanas.\nA orientação para a paciente é de que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A datação da gravidez é de 24 semanas; seguir pré-natal normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar dopplervelocimetria de artérias uterinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É necessário repetir a ultrassonografia em 14 a 21 dias para confirmar a datação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar amniocentese e cariótipo fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda um desafio comum na prática obstétrica: o início tardio do pré-natal com incerteza quanto à data da última menstruação (DUM).\n\nA paciente acredita estar com 7 meses (cerca de 28 a 30 semanas), baseando-se em um sangramento em maio. No entanto, o exame físico revela uma altura uterina de 22 cm e a ultrassonografia (USG) estima a idade gestacional em 24 semanas. É fundamental lembrar que a acurácia da ultrassonografia para datar a gestação diminui conforme a gravidez avança. No primeiro trimestre, a margem de erro é de apenas 3 a 5 dias. No segundo trimestre (entre 14 e 24 semanas), essa margem sobe para cerca de 7 a 14 dias e, no terceiro trimestre, pode chegar a 21 dias.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): Não se pode afirmar categoricamente que a gestação é de 24 semanas e seguir o pré-natal de forma rotineira. Como o exame foi realizado tardiamente e há uma discrepância entre o que a paciente acredita e o achado ultrassonográfico, existe o risco de estarmos diante de um feto com Restrição de Crescimento Fetal (RCF) em vez de apenas um feto mais jovem. Assumir o dado da USG isolada pode levar a erros graves na condução do parto e na avaliação da vitalidade fetal futuramente.\n\nAlternativa B (Incorreta): A dopplervelocimetria de artérias uterinas é um exame de rastreamento para o risco de pré-eclâmpsia e restrição de crescimento, geralmente realizado no morfológico do segundo trimestre. Embora a paciente tenha fatores de risco (tabagismo e uso de drogas), o Doppler isolado não resolve o problema da datação gestacional incerta. O foco imediato é confirmar a idade gestacional para, então, avaliar o crescimento.\n\nAlternativa C (Correta): Esta é a conduta padrão em casos de dúvida sobre a datação em exames tardios. Ao repetir a ultrassonografia em um intervalo de 14 a 21 dias, o médico avalia a velocidade de crescimento fetal. Se o feto crescer proporcionalmente ao intervalo de tempo decorrido, confirma-se a idade gestacional sugerida pela primeira USG (24 semanas). Se o crescimento for insuficiente, reforça-se a suspeita de Restrição de Crescimento Fetal, indicando que o bebê pode ser mais velho, porém desnutrido.\n\nAlternativa D (Incorreta): A amniocentese para estudo de cariótipo fetal é um procedimento invasivo indicado em situações específicas, como malformações fetais detectadas ao exame morfológico ou risco elevado para cromossomopatias. Não há qualquer evidência no enunciado (malformações ou marcadores) que justifique esse procedimento, que traz riscos à gestação.\n\nPortanto, a repetição do exame para avaliar o intervalo de crescimento é a conduta mais prudente e correta para estabelecer a cronologia da gravidez.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Restrição de Crescimento Fetal e Óbito Fetal",
+      "Pré-Natal"
+    ],
+    "difficulty": 100,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:18.536Z"
+  },
+  {
+    "id": "AJUDA_4fa684c1-bc6c-48e1-92bf-cf298cb0895a",
+    "originalId": "4fa684c1-bc6c-48e1-92bf-cf298cb0895a",
+    "statement": "Após a ocorrência de grandes ondas de calor em determinada região, idosa de 72 anos procura atendimento em Unidade Básica de Saúde por apresentar tontura, fraqueza, cefaleia pulsátil e redução do volume urinário. Ela refere ser hipertensa e morar em uma casa pequena com pouca ventilação. Nega outras comorbidades ou sintomas adicionais. O exame físico mostra PA 100 x 60 mmHg, FC 110 bpm, mucosas secas e temperatura axilar de 38 °C. A equipe de saúde observa que outros moradores da área estão nas mesmas condições dessa paciente.\nNessa situação, quais são as estratégias adequadas a serem adotadas, nas abordagens individual e coletiva, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever antitérmicos, antieméticos e resfriamento corporal; mobilizar os agentes comunitários na orientação das famílias quanto às medidas para amenizar os efeitos do calor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar reposição hidroeletrolítica e encaminhar paciente ao pronto-socorro; notificar caso à Secretaria de Saúde para intervenções nesse território.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar o aumento da ingestão hídrica em domicílio; realizar reunião de equipe para organizar o fluxo assistencial desses atendimentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar reposição hídrica, resfriamento corporal e monitorização; realizar a vigilância ativa de idosos vulneráveis com ações intersetoriais.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Trata-se de uma idosa exposta a onda de calor, com quadro compatível com exaustão pelo calor (heat exhaustion) e desidratação. Os achados que sustentam o diagnóstico são:\n\n- tontura, fraqueza, cefaleia e oligúria;\n- hipotensão relativa (100 x 60 mmHg numa hipertensa) e taquicardia;\n- mucosas secas;\n- temperatura de 38 °C, sem sinais de disfunção neurológica (confusão, convulsão, coma), o que afasta a intermação (heat stroke), em que a temperatura costuma ser maior que 40 °C e há alteração do sistema nervoso central.\n\nEla tem fatores de risco importantes: idade avançada, hipertensão (provável uso de anti-hipertensivos ou diuréticos) e moradia pouco ventilada. Como há outros moradores nas mesmas condições, o problema também é de saúde coletiva e exige ação de vigilância.\n\nNa abordagem individual, a conduta é:\n- reposição hídrica e eletrolítica (oral, se tolerada, ou venosa);\n- resfriamento corporal com medidas físicas (ambiente fresco, retirada de roupas, compressas ou borrifação de água, ventilação);\n- monitorização de sinais vitais, diurese e estado neurológico, para detectar evolução para intermação;\n- revisão dos anti-hipertensivos, especialmente diuréticos, até a recuperação.\n\nAntitérmicos não são eficazes, porque a hipertermia por calor não depende do \"set point\" hipotalâmico.\n\nNa abordagem coletiva, cabe à Atenção Primária:\n- fazer vigilância ativa de grupos vulneráveis (idosos, acamados, portadores de doenças crônicas, pessoas que moram sozinhas);\n- desenvolver ações intersetoriais com assistência social, defesa civil e outros setores, como orientação, pontos de hidratação, locais climatizados e busca ativa.\n\nAnálise das alternativas:\n\na) Incorreta. Antitérmicos não atuam na hipertermia ambiental e podem causar dano (por exemplo, AINEs pioram a lesão renal numa paciente desidratada e oligúrica). Antieméticos não têm indicação, pois a paciente não tem náuseas nem vômitos. Além disso, a alternativa omite a medida principal, a reposição hídrica. A ação coletiva com agentes comunitários é válida, mas insuficiente diante da conduta individual inadequada.\n\nb) Incorreta. A reposição está correta, mas o encaminhamento ao pronto-socorro não é obrigatório: a paciente não tem sinais de gravidade (alteração neurológica, temperatura muito elevada, choque refratário) e pode ser manejada e monitorizada na UBS. A simples notificação à Secretaria transfere a responsabilidade e não substitui a vigilância ativa pela própria equipe, que é atribuição da Atenção Primária no território.\n\nc) Incorreta. Orientar apenas hidratação domiciliar é insuficiente para uma paciente com hipotensão relativa, taquicardia, oligúria e febre. Ela precisa de reposição imediata, resfriamento e observação. Reunião de equipe para organizar fluxo é uma medida administrativa interna, sem ação efetiva sobre a população exposta.\n\nd) Correta. Contempla o tripé do manejo individual da exaustão pelo calor (reposição hídrica, resfriamento e monitorização). Na esfera coletiva, propõe vigilância ativa dos idosos vulneráveis com ações intersetoriais, conforme os planos de contingência para ondas de calor e os princípios da Atenção Primária (territorialização, busca ativa e intersetorialidade).\n\nGabarito: D.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Atenção Primária à Saúde",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:18.536Z"
+  },
+  {
+    "id": "AJUDA_4fa995ce-1d79-447d-9f35-c13319ca0c62",
+    "originalId": "4fa995ce-1d79-447d-9f35-c13319ca0c62",
+    "statement": "Homem de 65 anos, tabagista, com angina estável controlada, agendada para colectomia eletiva por câncer de cólon. ECO recente mostra FEVE 40%. Segundo o manejo perioperatório recomendado em Cirurgia Geral, qual a conduta mais adequada em relação ao risco cardíaco?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Contraindicar a cirurgia e indicar revascularização miocárdica prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prosseguir com a cirurgia eletiva, mantendo a medicação habitual e vigilância hemodinâmica no intra e pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Adiar a cirurgia por pelo menos 12 meses para otimização função cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cancelar a cirurgia e indicar angioplastia visto que a FEVE é < 50%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar teste ergométrico e, se normal, seguir com a programação da cirurgia, tendo o cuidado de suspender os fármacos cardiovasculares no dia da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a avaliação de risco cirúrgico em um paciente cardiopata que necessita de uma cirurgia oncológica. O ponto central para a resolução é entender que a estabilidade clínica é o fator determinante para a conduta perioperatória.\n\nAnálise das alternativas:\n\na) Incorreta. A revascularização miocárdica profilática (seja por cirurgia ou angioplastia) antes de uma cirurgia não cardíaca não é indicada de rotina para pacientes com angina estável, mesmo que haja disfunção ventricular leve a moderada. Estudos mostram que essa estratégia não reduz a mortalidade perioperatória em comparação ao tratamento clínico otimizado.\n\nb) Correta. O paciente apresenta angina estável e controlada. Nessas condições, o foco deve ser o manejo clínico perioperatório adequado. Isso inclui a manutenção das medicações cardiovasculares habituais (como beta-bloqueadores e estatinas, se já em uso) e uma vigilância hemodinâmica rigorosa durante e após o procedimento para detectar precocemente qualquer sinal de descompensação ou isquemia. Como se trata de uma cirurgia de câncer de cólon, o benefício da cirurgia oncológica supera os riscos cardíacos controlados.\n\nc) Incorreta. Adiar uma cirurgia oncológica por 12 meses é injustificável e prejudica gravemente o prognóstico do câncer. Além disso, não há recomendação de tempo de espera tão longo para a otimização da função cardíaca em pacientes já estáveis.\n\nd) Incorreta. Uma Fração de Ejeção do Ventrículo Esquerdo (FEVE) de 40% indica disfunção ventricular, mas isoladamente não é indicação de angioplastia nem motivo para cancelamento da cirurgia. A indicação de angioplastia deve seguir critérios clínicos e anatômicos de gravidade da doença coronariana, e não apenas o valor da FEVE ou o planejamento de uma cirurgia eletiva.\n\ne) Incorreta. O teste ergométrico tem pouco valor adicional em pacientes que já possuem diagnóstico conhecido de coronariopatia estável e que já têm indicação cirúrgica por neoplasia. O erro mais grave desta alternativa é a recomendação de suspender os fármacos cardiovasculares no dia da cirurgia. Medicamentos como beta-bloqueadores, estatinas e anti-hipertensivos devem, em regra, ser mantidos para evitar efeito rebote (taquicardia e hipertensão) e instabilização da placa aterosclerótica.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:18.536Z"
+  },
+  {
+    "id": "AJUDA_4fa9a52a-62a6-47ab-8a32-73dc87579b69",
+    "originalId": "4fa9a52a-62a6-47ab-8a32-73dc87579b69",
+    "statement": "Criança de 2 anos, com desenvolvimento normal, na vigência de 38,8 graus secundária a resfriado, apresenta uma crise convulsiva tônico clônica generalizada, com duração de 3 minutos, sendo referenciada para pronto socorro, onde já dá entrada alerta, lúcida, sem rigidez de nuca e com restante de exame físico sem alterações. Mãe refere que é a primeira crise da vida desta criança. Frente a este quadro, qual a conduta ADEQUADA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "orientar a família a respeito de crise febril simples e liberar a criança com sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "solicitar eletroencefalograma e tomografia de crânio ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar eletroencefalograma ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar tomografia de crânio ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresentado é de uma Crise Febril Simples. Os critérios que definem essa condição estão todos presentes no caso: 1) Idade entre 6 meses e 5 anos (a criança tem 2 anos); 2) Crise de caráter generalizado; 3) Curta duração, inferior a 15 minutos (durou 3 minutos); 4) Ausência de recorrência nas últimas 24 horas; 5) Recuperação rápida da consciência e exame físico normal, sem sinais de irritação meníngea ou déficits focais.\n\nAlternativa a: Esta é a conduta correta. Em casos de crise febril simples em crianças com desenvolvimento normal e exame físico sem sinais de infecção do sistema nervoso central, não há necessidade de exames complementares, punção lombar ou internação. O papel do médico é orientar a família, explicando que se trata de um evento benigno, com excelente prognóstico e que não causa sequelas neurológicas. O tratamento deve ser direcionado à causa da febre (neste caso, o resfriado) com o uso de antitérmicos e sintomáticos.\n\nAlternativa b: Incorreta. A solicitação de exames de imagem (tomografia) e eletroencefalograma não é indicada de forma rotineira. Esses exames são reservados para crises complexas (focais, com duração superior a 15 minutos ou que se repetem em 24 horas) ou quando há suspeita de alteração neurológica estrutural, o que não condiz com o estado alerta e lúcido da paciente.\n\nAlternativa c: Incorreta. O eletroencefalograma (EEG) não deve ser realizado após uma primeira crise febril simples. O exame não consegue prever se a criança terá novas crises febris nem se desenvolverá epilepsia no futuro. Além disso, pode apresentar alterações inespecíficas que não mudam a conduta clínica e causam preocupação desnecessária aos responsáveis.\n\nAlternativa d: Incorreta. A tomografia de crânio não está indicada. O exame de imagem deve ser solicitado apenas se houver sinais de hipertensão intracraniana, história de trauma, macrocefalia ou persistência de déficit neurológico pós-crise. O uso de radiação em crianças pequenas deve ser criteriosamente evitado quando o diagnóstico clínico é claro.\n\nGabarito: Letra (a).",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Convulsão Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:18.536Z"
+  },
+  {
+    "id": "AJUDA_4fb354b7-9bd4-4815-9678-6c74e4884dfb",
+    "originalId": "4fb354b7-9bd4-4815-9678-6c74e4884dfb",
+    "statement": "Homem com história de dor abdominal intensa e imagem de aneurisma da aorta abdominal na tomografia. Qual é a conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Intervenção cirúrgica imediata.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administração de heparina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administração de antibióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado descreve um paciente com Aneurisma da Aorta Abdominal (AAA) associado à dor abdominal intensa. Esta combinação é um sinal clínico de extrema gravidade, indicando que o aneurisma está em processo de expansão rápida, rotura iminente ou que já houve uma rotura contida. Trata-se de uma emergência cirúrgica clássica na prática médica.\n\nANÁLISE DAS ALTERNATIVAS:\n\nLetra A - Incorreta. A observação (ou conduta expectante) é indicada apenas para pacientes assintomáticos com aneurismas de pequeno diâmetro (geralmente menores que 5,5 cm em homens e 5,0 cm em mulheres). A partir do momento em que o paciente apresenta dor relacionada ao aneurisma, os critérios de tamanho são ignorados e a intervenção torna-se mandatória.\n\nLetra B - Correta. Todo aneurisma da aorta abdominal sintomático deve ser tratado como uma rotura iminente. A dor indica que a parede do vaso está sofrendo uma tensão que excede sua resistência estrutural. O objetivo da intervenção imediata, seja por cirurgia aberta ou reparo endovascular, é prevenir a rotura franca, que possui taxas de mortalidade superiores a 80%.\n\nLetra C - Incorreta. A heparina é um anticoagulante. Administrar essa medicação em um paciente com suspeita de rotura de aneurisma é contraindicado, pois impediria a formação de trombos protetores e agravaria severamente qualquer sangramento ativo, acelerando a progressão para o choque hipovolêmico e óbito.\n\nLetra D - Incorreta. Antibióticos são utilizados para tratar infecções. Embora existam os chamados aneurismas micóticos (causados por infecção da parede arterial), eles são raros. Mesmo nesses casos, o tratamento definitivo exige intervenção cirúrgica associada à terapia medicamentosa. No cenário de um AAA clássico com dor súbita, o problema é mecânico e estrutural, não infeccioso.\n\nRESUMO DIDÁTICO:\nAo analisar a tomografia em casos como este, o médico busca sinais de instabilidade, como o sinal do \"crescente hiperatenuante\" na parede do aneurisma ou o extravasamento de contraste. Contudo, a simples presença de dor em um paciente com AAA conhecido já é suficiente para indicar a cirurgia de urgência. Lembre-se: AAA sintomático é igual à conduta cirúrgica imediata.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Abdome Agudo Vascular",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:18.536Z"
+  },
+  {
+    "id": "AJUDA_4fbfe387-b9bf-4e61-821e-93ff7feb0a9b",
+    "originalId": "4fbfe387-b9bf-4e61-821e-93ff7feb0a9b",
+    "statement": "Sobre a infecção urinária, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mulheres com suspeita de cistite não complicada devem realizar cultura de urina para direcionar o tratamento conforme o perfil de sensibilidade antimicrobiano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Homens com sintomas de cistite podem receber tratamento empírico, sem necessidade de exame de cultura adicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O critério microbiológico para diagnóstico de bacteriúria assintomática é a presença de mais de 10.000 unidades formadoras de colônia/ml de bactérias na urina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas membros da família Enterobacteriaceae convertem o nitrato em nitrito na urina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Gabarito: Alternativa D\n\nAnálise detalhada das alternativas:\n\nAlternativa A (Incorreta): O quadro de cistite aguda não complicada em mulheres jovens e não gestantes possui diagnóstico essencialmente clínico, baseado na presença de sintomas como disúria, polaciúria e urgência miccional na ausência de corrimento vaginal. Nesses casos, o tratamento empírico imediato é a conduta padrão, sendo a urocultura dispensável na abordagem inicial. O exame de cultura fica reservado para casos de falha terapêutica, recorrência frequente, gestantes ou suspeita de pielonefrite.\n\nAlternativa B (Incorreta): A infecção do trato urinário no sexo masculino é, por definição, classificada como ITU complicada, devido à proteção anatômica da uretra masculina e à frequência de associação com alterações urológicas estruturais ou doenças prostáticas. Dessa forma, a solicitação de urocultura com antibiograma é sempre mandatória no homem para confirmar o agente etiológico e guiar a terapêutica adequada.\n\nAlternativa C (Incorreta): O ponto de corte clássico e validado para o diagnóstico de bacteriúria assintomática é a contagem de colônias maior ou igual a 100.000 unidades formadoras de colônias por mililitro (10^5 UFC/ml) em amostra de jato médio de urina, e não 10.000 UFC/ml. Para mulheres, preconiza-se a confirmação em duas amostras consecutivas.\n\nAlternativa D (Correta): O teste de nitrito positivo na fita reagente (urinálise/EAS) depende da presença da enzima bacteriana nitrato-redutase, capaz de converter o nitrato endógeno da urina em nitrito. Esta enzima é expressa primariamente pelas bactérias da família Enterobacteriaceae (como Escherichia coli, Klebsiella spp. e Proteus spp.). Outros uropatógenos, como cocos Gram-positivos (Enterococcus spp., Staphylococcus saprophyticus) e bacilos Gram-negativos não fermentadores (Pseudomonas aeruginosa), não possuem essa via metabólica e geram testes de nitrito falso-negativos.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Urologia",
+      "ITU - Infecção do Trato Urinário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:18.536Z"
+  },
+  {
+    "id": "AJUDA_4fd11c73-629d-47d5-abff-fd7a7bd9e0ea",
+    "originalId": "4fd11c73-629d-47d5-abff-fd7a7bd9e0ea",
+    "statement": "A American Society of Anesthesiology (ASA) mais apropriada para uma criança de 8 anos com asma exacerbada e obesidade mórbida, que está sendo avaliada para uma cirurgia de apendicectomia, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ASA 4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ASA 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ASA 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ASA 3.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A classificação do estado físico da American Society of Anesthesiologists (ASA) é uma ferramenta essencial para avaliar o risco cirúrgico do paciente com base em suas comorbidades. No caso dessa criança, a presença de obesidade mórbida e asma exacerbada define o enquadramento clínico.\n\nAlternativa a) ASA 4: Incorreta. O ASA 4 é reservado para pacientes com doenças sistêmicas graves que representam uma ameaça constante à vida, como insuficiência renal terminal sem hemodiálise, insuficiência cardíaca severa ou choque. Embora a asma exacerbada seja uma condição séria, ela não é classificada rotineiramente como ASA 4, a menos que haja insuficiência respiratória aguda grave com risco iminente de morte.\n\nAlternativa b) ASA 2: Incorreta. O ASA 2 é atribuído a pacientes com doenças sistêmicas leves e bem controladas, sem limitações funcionais. Exemplos incluem asma controlada, obesidade leve ou diabetes mellitus controlado. A obesidade mórbida e a asma em fase de exacerbação ultrapassam os critérios desta categoria.\n\nAlternativa c) ASA 1: Incorreta. O ASA 1 é exclusivo para pacientes saudáveis, não fumantes e com mínima ou nenhuma ingestão de álcool, o que não se aplica ao caso descrito devido às patologias apresentadas.\n\nAlternativa d) ASA 3: Correta. O ASA 3 define um paciente com doença sistêmica grave que apresenta limitação funcional, mas que não constitui uma ameaça constante à vida. De acordo com as diretrizes da ASA, a obesidade mórbida (definida por critérios de IMC) e a asma com sintomas ativos ou exacerbada são exemplos típicos de classificação ASA 3. Como o paciente será submetido a uma cirurgia de emergência (apendicectomia), a classificação técnica completa seria ASA 3E, mas a alternativa D identifica corretamente o nível de gravidade sistêmica.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Asma em Pediatria",
+      "Perioperatório",
+      "Obesidade na Infância e na Adolescência"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:41:18.536Z"
+  }
+]

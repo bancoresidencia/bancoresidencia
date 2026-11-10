@@ -18,9 +18,19 @@ import {
 } from '@/types/studyTimer';
 import { useAuth } from '@/context/AuthContext';
 import { DailyScheduleSlot } from '@/components/dashboard/scheduleTypes';
+import {
+  loadUserStudySessions,
+  saveUserStudySession,
+  deleteUserStudySession,
+  getUserStudySessionsStorageKey
+} from '@/services/userStudySessionsService';
+import {
+  saveUserScheduledTask,
+  deleteUserScheduledTask,
+  getUserScheduledTasksStorageKey
+} from '@/services/userScheduledTasksService';
 
 const TIMER_STORAGE_KEY = 'bancoresidencia_study_timer_state';
-const SESSIONS_STORAGE_KEY = 'bancoresidencia_study_sessions';
 
 export function formatSecondsToHms(totalSec: number): string {
   if (isNaN(totalSec) || totalSec < 0) return '00:00:00';
@@ -119,17 +129,30 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   const activeStudyTypeRef = useRef<StudyType>('questoes');
   const sessionSourceRef = useRef<'manual' | 'questoes' | 'simulado' | 'flashcards'>('manual');
 
-  // Carrega sessões anteriores do localStorage
+  // Carrega e sincroniza sessões vinculadas à conta do aluno
   useEffect(() => {
-    try {
-      const storedSessions = localStorage.getItem(SESSIONS_STORAGE_KEY);
-      if (storedSessions) {
-        setSavedSessions(JSON.parse(storedSessions));
+    let active = true;
+    loadUserStudySessions(user?.id).then((sessions) => {
+      if (active) {
+        setSavedSessions(sessions);
       }
-    } catch (err) {
-      console.warn('Erro ao carregar sessões de estudo do localStorage:', err);
-    }
-  }, []);
+    });
+
+    const handleStorageChange = (e: StorageEvent) => {
+      const currentKey = getUserStudySessionsStorageKey(user?.id);
+      if (e.key === currentKey && e.newValue) {
+        try {
+          setSavedSessions(JSON.parse(e.newValue));
+        } catch {}
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    return () => {
+      active = false;
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, [user?.id]);
 
   // Recupera estado salvo do timer ao montar (resiliência a F5)
   useEffect(() => {
@@ -354,18 +377,13 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         createdAt: endTimeIso
       };
 
-      // 1. Atualiza lista de sessões no estado e localStorage de forma funcional e segura
-      setSavedSessions((prev) => {
-        const updated = [newSession, ...prev];
-        try {
-          localStorage.setItem(SESSIONS_STORAGE_KEY, JSON.stringify(updated));
-        } catch (err) {
-          console.warn('Erro ao salvar sessão no localStorage:', err);
-        }
-        return updated;
+      // 1. Atualiza lista de sessões no estado e persiste na conta do aluno (local + Supabase)
+      setSavedSessions((prev) => [newSession, ...prev]);
+      saveUserStudySession(newSession, userRef.current?.id).catch((err) => {
+        console.warn('Erro ao salvar sessão na conta do aluno:', err);
       });
 
-      // 2. Integra diretamente na Agenda (`bancoresidencia_user_scheduled_tasks`)
+      // 2. Integra diretamente na Agenda vinculada à conta do aluno
       try {
         const startDate = new Date(newSession.startTime);
         const endDate = new Date(newSession.endTime);
@@ -391,16 +409,15 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
           date: getLocalDateStr(startDate)
         };
 
-        const existingTasksJson = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
-        const existingTasks: DailyScheduleSlot[] = existingTasksJson ? JSON.parse(existingTasksJson) : [];
-        const newTasks = [scheduleSlot, ...existingTasks];
-        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(newTasks));
+        saveUserScheduledTask(scheduleSlot, userRef.current?.id).catch((err) => {
+          console.warn('Erro ao salvar tarefa na conta do aluno:', err);
+        });
 
         // Dispara evento de storage para sincronizar abas e telas da Agenda instantaneamente
+        const tasksKey = getUserScheduledTasksStorageKey(userRef.current?.id);
         window.dispatchEvent(
           new StorageEvent('storage', {
-            key: 'bancoresidencia_user_scheduled_tasks',
-            newValue: JSON.stringify(newTasks)
+            key: tasksKey
           })
         );
       } catch (agendaErr) {
@@ -543,29 +560,17 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     [saveSession, cancelTimer]
   );
 
-  // Excluir uma sessão realizada
+  // Excluir uma sessão realizada da conta do aluno
   const deleteSession = useCallback((sessionId: string) => {
-    setSavedSessions((prev) => {
-      const updated = prev.filter((s) => s.id !== sessionId);
-      try {
-        localStorage.setItem(SESSIONS_STORAGE_KEY, JSON.stringify(updated));
-      } catch { }
-      return updated;
+    setSavedSessions((prev) => prev.filter((s) => s.id !== sessionId));
+    deleteUserStudySession(sessionId, userRef.current?.id).catch((err) => {
+      console.warn('Erro ao excluir sessão do aluno:', err);
     });
 
     // Remove também da linha do tempo da agenda se estiver lá
-    try {
-      const existingTasksJson = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
-      if (existingTasksJson) {
-        const existingTasks: DailyScheduleSlot[] = JSON.parse(existingTasksJson);
-        const filteredTasks = existingTasks.filter((t) => t.id !== `task_${sessionId}`);
-        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(filteredTasks));
-        window.dispatchEvent(new StorageEvent('storage', {
-          key: 'bancoresidencia_user_scheduled_tasks',
-          newValue: JSON.stringify(filteredTasks)
-        }));
-      }
-    } catch { }
+    deleteUserScheduledTask(`task_${sessionId}`, userRef.current?.id).catch((err) => {
+      console.warn('Erro ao excluir tarefa associada à sessão:', err);
+    });
   }, []);
 
   // Adiciona manualmente uma sessão de estudo (Novo Bloco)
@@ -629,34 +634,28 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         createdAt: new Date().toISOString()
       };
 
-      setSavedSessions((prev) => {
-        const updated = [newSession, ...prev];
-        try {
-          localStorage.setItem(SESSIONS_STORAGE_KEY, JSON.stringify(updated));
-        } catch (err) {
-          console.warn('Erro ao salvar sessão manual no localStorage:', err);
-        }
-        return updated;
-      });
+      setSavedSessions((prev) => [newSession, ...prev]);
+      await saveUserStudySession(newSession, userRef.current?.id);
 
       try {
+        const sessionsKey = getUserStudySessionsStorageKey(userRef.current?.id);
         window.dispatchEvent(
           new StorageEvent('storage', {
-            key: SESSIONS_STORAGE_KEY,
-            newValue: JSON.stringify([newSession, ...savedSessions])
+            key: sessionsKey
           })
         );
       } catch { }
 
       return newSession;
     },
-    [savedSessions]
+    []
   );
 
   // Auto-cura de tarefas agendadas salvas com fuso UTC deslocado
   useEffect(() => {
     try {
-      const rawTasks = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
+      const tasksKey = getUserScheduledTasksStorageKey(user?.id);
+      const rawTasks = localStorage.getItem(tasksKey);
       if (!rawTasks) return;
       const tasks: DailyScheduleSlot[] = JSON.parse(rawTasks);
       if (!Array.isArray(tasks) || tasks.length === 0) return;
@@ -678,16 +677,16 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       });
 
       if (modified) {
-        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(fixedTasks));
+        localStorage.setItem(tasksKey, JSON.stringify(fixedTasks));
         window.dispatchEvent(new StorageEvent('storage', {
-          key: 'bancoresidencia_user_scheduled_tasks',
+          key: tasksKey,
           newValue: JSON.stringify(fixedTasks)
         }));
       }
     } catch (err) {
       console.warn('Erro na sincronização de datas de tarefas:', err);
     }
-  }, [savedSessions]);
+  }, [savedSessions, user?.id]);
 
   // Sessões e tempo total do dia de hoje (respeitando o fuso horário local do estudante)
   const todayStr = useMemo(() => {

@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_f67f206b-b851-4879-9d67-31450da7909a",
+    "originalId": "f67f206b-b851-4879-9d67-31450da7909a",
+    "statement": "A espondilolistese consiste no deslocamento de uma vértebra em relação à vértebra subjacente. Em jovens, a descontinuidade da parte interarticular da lâmina (espondilólise) é uma causa comum da espondilolistese e pode ser diagnosticada na radiografia convencional com incidências adicionais. Qual é a incidência adicional da radiografia da coluna lombar utilizada para o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em flexão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Oblíqua.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Inclinação lateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Posteroanterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O tema central desta questão é o diagnóstico por imagem da espondilólise, que é a descontinuidade óssea da \"pars interarticularis\" (ou parte interarticular). Quando essa falha ocorre, a vértebra pode deslizar para a frente, configurando a espondilolistese. Para identificar essa alteração na radiografia convencional, é fundamental visualizar a anatomia dos elementos posteriores da vértebra.\n\nA incidência oblíqua da coluna lombar é o exame clássico para essa finalidade. Nessa projeção, as estruturas ósseas formam uma imagem característica conhecida como \"Cachorrinho de Lachapelle\". O focinho do cachorro é o processo transverso, o olho é o pedículo, a orelha é o processo articular superior, a pata dianteira é o processo articular inferior e, crucialmente, o pescoço do cachorro representa a \"pars interarticularis\". Se houver uma espondilólise, o \"cachorro\" aparecerá com uma linha de fratura no pescoço (como se estivesse usando uma coleira ou estivesse decapitado).\n\nAnálise das alternativas:\n\na) Em flexão: As incidências em flexão e extensão (chamadas de radiografias dinâmicas) são utilizadas para avaliar a estabilidade segmentar da coluna. Elas servem para verificar se o deslizamento vertebral (listese) aumenta ou se reduz com o movimento, mas não são a técnica primária para visualizar a integridade óssea da pars interarticularis.\n\nb) Oblíqua: Esta é a alternativa correta. Como explicado, as incidências oblíquas (direita e esquerda) permitem a visualização do \"Cachorrinho de Lachapelle\", facilitando a identificação de fraturas ou defeitos na parte interarticular que muitas vezes passam despercebidos nas incidências de rotina (frente e perfil).\n\nc) Inclinação lateral: Também conhecida como incidência com \"bending\", é utilizada principalmente na avaliação de escolioses para testar a flexibilidade das curvas laterais da coluna e planejar cirurgias. Não tem papel no diagnóstico de espondilólise.\n\nd) Póstero-anterior: É uma incidência de rotina (frente) que avalia o alinhamento coronal, a integridade dos pedículos e dos corpos vertebrais. Devido à sobreposição de estruturas ósseas, ela é insuficiente para diagnosticar com precisão uma falha na pars interarticularis.\n\nPortanto, a incidência oblíqua é a ferramenta radiográfica adicional específica para o diagnóstico da espondilólise. Em casos de dúvida persistente, a Tomografia Computadorizada é considerada o padrão-ouro para confirmar o defeito ósseo.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Doenças da Coluna Vertebral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:37.732Z"
+  },
+  {
+    "id": "AJUDA_f67f7421-4b46-4665-ad1d-ca4709ad41f7",
+    "originalId": "f67f7421-4b46-4665-ad1d-ca4709ad41f7",
+    "statement": "Paciente de 50 anos, internado em uma Unidade de Terapia Intensiva (UTI) há 7 dias por sepse abdominal, encontra-se em ventilação mecânica invasiva há 5 dias. Evoluiu com piora clínica e o diagnóstico de pneumonia associada à ventilação mecânica foi estabelecido. Considerando o tempo de intubação e a epidemiologia das infecções hospitalares em UTIs brasileiras, qual das seguintes alternativas contempla os agentes etiológicos mais frequentes para esse quadro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Streptococcus pneumoniae e Haemophilus influenzae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mycoplasma pneumoniae e Chlamydophila pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pseudomonas aeruginosa e Staphylococcus aureus.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Candida albicans e Klebsiella pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A pneumonia associada à ventilação mecânica (PAV) é definida como aquela que ocorre após 48 horas da intubação orotraqueal. O ponto crucial desta questão é o tempo de internação e ventilação: o paciente está na UTI há 7 dias e ventilado há 5 dias. Isso classifica o quadro como uma PAV tardia.\n\nNas PAVs tardias (geralmente após o 4º ou 5º dia), há uma mudança significativa na microbiota colonizante. Ocorre a substituição de germes da comunidade por microrganismos multirresistentes (MDR) e de perfil hospitalar, influenciados pelo ambiente da UTI brasileira e pelo uso prévio de antibióticos (no caso, para sepse abdominal).\n\nAnálise das alternativas:\n\na) Incorreta. Streptococcus pneumoniae e Haemophilus influenzae são os principais agentes da pneumonia adquirida na comunidade (PAC). Eles podem causar PAV precoce (até o 4º dia) em pacientes sem fatores de risco para multirresistência, o que não se aplica ao caso de um paciente já em tratamento para sepse abdominal há uma semana.\n\nb) Incorreta. Mycoplasma e Chlamydophila são germes atípicos, causadores de quadros comunitários. Eles não possuem relevância epidemiológica como agentes etiológicos de pneumonia hospitalar em pacientes críticos.\n\nc) Correta. Em UTIs brasileiras, a Pseudomonas aeruginosa é um dos bacilos Gram-negativos mais prevalentes em infecções tardias. O Staphylococcus aureus também figura entre os principais agentes, com alta incidência de cepas resistentes à oxacilina (MRSA) em ambiente hospitalar. Outros agentes frequentes seriam a Klebsiella pneumoniae (KPC) e o Acinetobacter baumannii.\n\nd) Incorreta. Embora a Klebsiella pneumoniae seja um agente muito comum na PAV tardia, a Candida albicans dificilmente é um patógeno respiratório primário. A presença de Candida em secreção traqueal geralmente indica colonização e não infecção, raramente justificando tratamento específico para pneumonia fúngica em pacientes imunocompetentes.\n\ne) Incorreta. A alternativa C preenche corretamente os critérios epidemiológicos exigidos pela questão.\n\nConclusão: Diante de uma PAV tardia em ambiente de terapia intensiva no Brasil, o foco terapêutico e a suspeita clínica devem obrigatoriamente cobrir Pseudomonas aeruginosa e Staphylococcus aureus.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:37.732Z"
+  },
+  {
+    "id": "AJUDA_f68279c4-b20f-41ca-b4e3-d9fd6061410f",
+    "originalId": "f68279c4-b20f-41ca-b4e3-d9fd6061410f",
+    "statement": "A paciente descrita (mulher de 65 anos com colangite) é submetida a CPRE com remoção bem-sucedida do cálculo. Um colangiograma de controle é realizado, demonstrando ausência de outros defeitos de enchimento na árvore biliar. Seu quadro séptico se resolve rapidamente e ela é transferida para a enfermaria. O que é verdade em relação ao seu tratamento posterior?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Considerando que uma esfincterotomia foi realizada durante a CPRE, não há indicação para colecistectomia, pois a coledocolitíase recorrente é rara após a esfincterotomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A colecistectomia deve ser realizada imediatamente após a CPRE, de preferência sob a mesma anestesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A colecistectomia pode ser adiada por enquanto, mas deve ser realizada se ele sofrer outro episódio de coledocolitíase ou colangite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A colecistectomia deve ser realizada durante esta internação, assim que o paciente esteja estabilizado e recuperado de seu quadro séptico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A conduta definitiva para pacientes que apresentaram coledocolitíase complicada por colangite aguda consiste na desobstrução da via biliar (geralmente por CPRE com esfincterotomia e remoção do cálculo) associada à remoção da fonte formadora de cálculos, que é a vesícula biliar (colecistectomia).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A esfincterotomia endoscópica trata apenas a via biliar principal e facilita o fluxo biliar, mas não impede a migração de novos cálculos a partir da vesícula biliar nem previne outras complicações biliares, como a colecistite aguda e a pancreatite biliar. A permanência da vesícula biliar está associada a taxas significativas de recorrência de eventos biliares graves.\n\nAlternativa b: Incorreta. A realização da colecistectomia imediatamente após a CPRE, sob o mesmo ato anestésico, não é recomendada em pacientes que se apresentaram com colangite aguda séptica. É fundamental aguardar a resolução do quadro infeccioso/inflamatório sistêmico e a completa estabilização clínica para minimizar os riscos perioperatórios.\n\nAlternativa c: Incorreta. Adotar uma conduta expectante expõe a paciente a um risco elevado (cerca de 20% a 40%) de novos eventos biliares potencialmente graves nas semanas seguintes à alta. Não se deve postergar a cirurgia até que ocorra uma nova complicação. Apenas pacientes com comorbidades proibitivas para cirurgia seriam candidatos ao tratamento expectante.\n\nAlternativa d: Correta. As diretrizes internacionais recomendam a realização da colecistectomia durante a mesma internação hospitalar, logo após a estabilização clínica e a melhora do quadro infeccioso. Essa abordagem precoce reduz de forma expressiva as taxas de readmissão hospitalar e a morbimortalidade associada a novos episódios biliares.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:37.732Z"
+  },
+  {
+    "id": "AJUDA_f69baf66-4cae-41f2-8da3-d81049f13b4a",
+    "originalId": "f69baf66-4cae-41f2-8da3-d81049f13b4a",
+    "statement": "Uma adolescente de 12 anos apresenta pelos espessos e esparsos em genitália e mamas/mamilos aumentados, sem contorno definido.\nÉ correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a adolescente tem o desenvolvimento puberal adequado para a sua idade;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a adolescente tem o desenvolvimento puberal atrasado para a sua idade;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o diagnóstico de pubarca precoce deve ser investigado;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o diagnóstico de telarca precoce deve ser investigado;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "os dados apresentados não permitem avaliação do desenvolvimento puberal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para avaliar o desenvolvimento puberal de uma paciente do sexo feminino, a medicina utiliza os critérios de Marshall e Tanner, que dividem a maturação sexual em cinco estágios para as mamas (M1 a M5) e cinco estágios para os pelos pubianos (P1 a P5). A puberdade normal em meninas ocorre entre os 8 e 13 anos de idade.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a paciente tenha 12 anos, idade em que é esperado que a puberdade esteja em curso, a descrição fornecida na questão é subjetiva e não permite uma classificação precisa nos estágios de Tanner. Sem a definição exata do estágio (ex.: M3, P2) e sem dados complementares, como a velocidade de crescimento e o histórico de progressão desses caracteres, não se pode afirmar categoricamente que o desenvolvimento é adequado.\n\nb) Incorreta. O desenvolvimento puberal é considerado atrasado em meninas quando não há o surgimento do broto mamário (telarca) até os 13 anos de idade. Como a paciente já apresenta aumento de mamas e presença de pelos aos 12 anos, ela não se enquadra nos critérios de atraso puberal.\n\nc) Incorreta. A pubarca precoce é definida pelo aparecimento de pelos pubianos antes dos 8 anos de idade nas meninas. A paciente tem 12 anos, portanto, a presença de pelos está dentro da faixa etária esperada, não havendo indicação para investigar precocidade.\n\nd) Incorreta. A telarca precoce é o surgimento do broto mamário antes dos 8 anos de idade. Assim como na pubarca, a idade da paciente (12 anos) exclui o diagnóstico de precocidade.\n\ne) Correta. Esta é a alternativa que melhor responde à questão do ponto de vista técnico. A descrição \"pelos espessos e esparsos\" e \"mamas/mamilos aumentados, sem contorno definido\" é vaga e não utiliza a terminologia técnica necessária para o estadiamento de Tanner. Por exemplo, a descrição das mamas poderia sugerir um estágio M3 (no qual mama e aréola apresentam um único contorno), mas a falta de detalhes sobre a glândula e a aréola impede a confirmação. Além disso, uma avaliação puberal completa exige a correlação com a estatura, velocidade de crescimento e, se necessário, idade óssea. Portanto, os dados apresentados são insuficientes para uma conclusão clínica definitiva sobre o desenvolvimento.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:37.733Z"
+  },
+  {
+    "id": "AJUDA_f6a3815e-c34c-406f-9884-c605d1305540",
+    "originalId": "f6a3815e-c34c-406f-9884-c605d1305540",
+    "statement": "Menino de 1 ano com testículo direito não palpável na bolsa escrotal ou canal inguinal. A laparoscopia identifica o testículo intra-abdominal. A conduta CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Orquidopexia cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tratamento hormonal com hCG.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Observação até a puberdade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orquiectomia imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente de 1 ano apresenta criptorquidia (testículo não palpável). A laparoscopia confirmou que o testículo está localizado no interior do abdome. Nessa idade, a conduta deve ser a intervenção cirúrgica definitiva.\n\nAlternativa (a) Correta: A orquidopexia é a conduta indicada para testículos criptorquídicos após os 6 meses de idade. O objetivo é levar o testículo para a bolsa escrotal para preservar a função das células germinativas (fertilidade), permitir a palpação para rastreio de tumores e evitar complicações como a torção testicular. No caso de testículos intra-abdominais identificados por laparoscopia, a cirurgia pode ser realizada por via laparoscópica em um tempo único ou em dois tempos (técnica de Stephens-Fowler), dependendo da extensão dos vasos espermáticos.\n\nAlternativa (b) Incorreta: O tratamento hormonal com hCG (gonadotrofina coriônica humana) apresenta eficácia muito baixa, geralmente inferior a 20%, e é ainda menos resolutivo em casos de testículos comprovadamente intra-abdominais. As diretrizes urológicas atuais não recomendam o uso de hormônios como terapia primária devido à baixa taxa de sucesso e aos potenciais efeitos colaterais.\n\nAlternativa (c) Incorreta: A descida testicular espontânea é rara após os 6 meses de vida. Manter a observação até a puberdade é um erro grave, pois a permanência do testículo em ambiente intra-abdominal (com temperatura mais elevada que a bolsa escrotal) causa danos histológicos irreversíveis a partir do primeiro ano de vida, prejudicando a fertilidade e aumentando o risco de desenvolvimento de câncer testicular (seminoma).\n\nAlternativa (d) Incorreta: A orquiectomia (remoção do testículo) é reservada para situações específicas, como testículos atróficos, inviáveis ou quando a criptorquidia unilateral é diagnosticada em pacientes já pós-púberes. Em uma criança de 1 ano, o esforço deve ser voltado para a preservação do órgão e sua fixação na bolsa escrotal para garantir a função hormonal e o potencial reprodutivo.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:37.733Z"
+  },
+  {
+    "id": "AJUDA_f6a3f83f-5ed1-4fbd-8672-61086bc1e66b",
+    "originalId": "f6a3f83f-5ed1-4fbd-8672-61086bc1e66b",
+    "statement": "C., 62 anos, procura atendimento em um ambulatório multidisciplinar para tratamento da dor. Na avaliação com o médico anestesiologista, refere uma dor cervical que dura cerca de dois anos e que a classifica como 9 em uma intensidade de 0 a 10. Já tentou inúmeros tratamentos sem resposta. Em função da cronicidade, da gravidade e do grande impacto na qualidade de vida desse paciente, o médico decide prescrever metadona. Em relação à classe farmacológica dessa medicação, é INCORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Todos os fármacos dessa classe tendem a desenvolver tolerância, com necessidade de doses maiores para manter seus feitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Caso as doses estejam estáveis, os efeitos adversos também desenvolvem a mesma tolerância, com exceção da constipação, que deve ser abordada de imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O desenvolvimento da dependência física e psíquica durante o uso dessas medicações é comum mesmo em pessoas sem história de abuso de drogas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sinais de neurotoxicidade com essa classe incluem depressão respiratória, sonolência, confusão mental, convulsões, entre outros.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: O paciente apresenta dor crônica intensa e refratária, sendo indicada a metadona, um analgésico da classe dos opioides que também possui ação antagonista nos receptores NMDA. A questão solicita a alternativa incorreta sobre essa classe farmacológica.\n\nAlternativa (a): Está correta. A tolerância é uma característica marcante dos opioides. Com o uso contínuo, ocorre uma redução da resposta farmacológica, exigindo o aumento da dose para manter o mesmo nível de analgesia. Isso ocorre por mecanismos de adaptação celular e regulação dos receptores opioides.\n\nAlternativa (b): Está correta. O organismo desenvolve tolerância a diversos efeitos colaterais dos opioides, como náuseas, vômitos e sedação, que tendem a diminuir após os primeiros dias de uso com doses estáveis. Contudo, a constipação e a miose são as grandes exceções: o paciente não desenvolve tolerância a esses efeitos, e a constipação deve ser monitorada e tratada preventivamente durante todo o curso da terapia.\n\nAlternativa (c): Esta é a alternativa INCORRETA e, portanto, o gabarito. É fundamental distinguir dependência física de dependência psíquica (adicção). A dependência física é uma adaptação fisiológica esperada no uso crônico, resultando em sintomas de abstinência se o remédio for parado subitamente. Já a dependência psíquica ou adicção é um transtorno caracterizado pelo uso compulsivo e perda de controle. Em pacientes com dor crônica, sem histórico prévio de abuso de substâncias e que utilizam a medicação conforme orientação médica, o desenvolvimento de adicção é considerado infrequente, e não \"comum\".\n\nAlternativa (d): Está correta. A toxicidade por opioides e a superdosagem manifestam-se clinicamente através da depressão do sistema nervoso central. Os sinais incluem sonolência excessiva, confusão mental, mioclonias e depressão respiratória. Em casos graves ou com o uso de determinados opioides (como a meperidina ou doses muito altas de outros), podem ocorrer convulsões.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Síndromes Dolorosas Crônicas",
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:37.733Z"
+  },
+  {
+    "id": "AJUDA_f6a70e6b-00a9-40dc-bc65-899f96bd2122",
+    "originalId": "f6a70e6b-00a9-40dc-bc65-899f96bd2122",
+    "statement": "Paciente do sexo masculino dá entrada na sala de emergência por quadro de hematêmese franca e melena, associado à instabilidade hemodinâmica. Foi submetido a medidas de reanimação com expansão volêmica seguidas de intubação orotraqueal para proteção das vias aéreas. Assim que as condições clínicas permitiram, foi realizada uma endoscopia digestiva alta, que evidenciou uma úlcera duodenal bulbar com sangramento ativo em jato. Foi realizada hemostasia com aplicação de clipes hemostáticos havendo a interrupção do sangramento. Após 48 horas de internação, mantém quadro de melena importante, com níveis de hemoglobina ainda baixos. Uma segunda endoscopia foi realizada, e evidenciou-se sangue na região duodenal, não sendo conclusiva. Ao todo, foram necessárias múltiplas transfusões, totalizando 8 concentrados de hemácias no período. No momento: mau estado geral, descorado ++. PA: 90 x 70 mmHg, FC: 105 bpm.\nDiante do caso, assinale a alternativa que apresenta a conduta mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar cirurgia, pois o paciente agora apresenta sangramento lento, mas contínuo, com necessidade de transfusão diária (> 3U/dia).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Manter observação clínica, pois trata-se de melena residual que pode persistir por vários dias devido à intensidade do sangramento ocorrido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar nova tentativa de controle endoscópico em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar exame de cápsula endoscópica de delgado para avaliação de hemorragia digestiva média.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar cintilografia com hemácias marcadas para avaliação do foco de sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve um paciente com Hemorragia Digestiva Alta (HDA) grave decorrente de uma úlcera duodenal com sangramento ativo (Classificação de Forrest Ia). Apesar da tentativa inicial de tratamento endoscópico com clipes e da estabilização hemodinâmica prévia, o paciente evoluiu com falha terapêutica. Os sinais de alerta são: necessidade de transfusão maciça (8 bolsas de concentrado de hemácias em 48 horas), manutenção da instabilidade hemodinâmica (PA 90x70 mmHg e taquicardia) e uma segunda endoscopia inconclusiva que confirmou a presença de sangue no duodeno.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nA indicação cirúrgica na úlcera péptica baseia-se em critérios de gravidade e falha das medidas conservadoras/endoscópicas. As principais indicações são:\n1. Choque refratário ou instabilidade hemodinâmica persistente apesar da reanimação vigorosa.\n2. Falha no controle endoscópico após duas tentativas (no caso, a primeira falhou e a segunda foi inconclusiva devido ao volume de sangue).\n3. Sangramento persistente que requer transfusão de mais de 3 a 4 unidades de concentrado de hemácias por dia para manter a estabilidade.\n4. Sangramento maciço com risco imediato de vida.\nO paciente em questão preenche critérios de refratariedade e necessidade transfusional elevada, o que torna a intervenção cirúrgica (ou eventualmente radiologia intervencionista, se disponível) a conduta definitiva.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (b): Manter a observação clínica seria um erro grave. Embora a melena possa persistir por alguns dias, a queda da hemoglobina, a necessidade de 8 bolsas de sangue e a instabilidade hemodinâmica (PA 90x70 mmHg) comprovam que o sangramento não é residual, mas sim ativo e grave.\n\nAlternativa (c): Uma nova tentativa endoscópica em 24 horas retardaria o tratamento definitivo em um paciente já instável. As diretrizes sugerem que, após a falha da segunda endoscopia (que já foi realizada e foi inconclusiva), deve-se partir para cirurgia ou angiografia com embolização.\n\nAlternativa (d): A cápsula endoscópica é indicada para investigação de hemorragia digestiva de origem obscura (sangramento de intestino delgado) quando a endoscopia e a colonoscopia são normais. No caso, já sabemos que a fonte é uma úlcera duodenal identificada na primeira endoscopia.\n\nAlternativa (e): A cintilografia com hemácias marcadas serve para localizar o sítio de sangramento em casos de hemorragia digestiva ativa onde os exames iniciais não identificaram o foco. No paciente em questão, o foco é conhecido (duodeno) e o quadro exige tratamento imediato, não apenas diagnóstico de localização.\n\nRESUMO DA CONDUTA:\nDiante de uma HDA por úlcera péptica com instabilidade hemodinâmica e falha de duas tentativas de controle endoscópico (ou necessidade transfusional > 3U/dia), a indicação de tratamento cirúrgico de urgência é a conduta preconizada para controle do foco hemorrágico.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:37.733Z"
+  },
+  {
+    "id": "AJUDA_f6ae3249-e772-4452-b68b-6683bee9cbe8",
+    "originalId": "f6ae3249-e772-4452-b68b-6683bee9cbe8",
+    "statement": "Mulher de 50 anos, portadora de carcinoma papilífero de tireoide submetida a tireoidectomia total sem intercorrências. Já no quarto, evolui com rouquidão e dispneia progressiva, pouco tempo após a cirurgia. Nesse caso qual seria a conduta mais correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reabordagem cirúrgica após garantia de via aérea",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aspiracao com agulha de seroma de ferida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Observação em UTI",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Corticoide intravenoso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Programar traqueostomia eletiva pela lesão do nervo laríngeo recorrente",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CENÁRIO CLÍNICO\n\nO caso apresenta uma paciente de 50 anos que, após uma tireoidectomia total, desenvolve rouquidão e dispneia progressiva no pós-operatório imediato. Em cirurgias cervicais, o surgimento de desconforto respiratório agudo deve ser tratado prontamente como um hematoma cervical compressivo até que se prove o contrário. O acúmulo de sangue nos espaços profundos do pescoço exerce pressão direta sobre a traqueia e compromete a drenagem linfática e venosa da laringe, levando ao edema de glote e à obstrução total das vias aéreas.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (CORRETA):\nA conduta imediata diante de um hematoma cervical expansivo é a garantia da via aérea (seja por intubação orotraqueal ou descompressão rápida à beira do leito através da abertura dos pontos da pele) seguida de reabordagem cirúrgica. A reoperação é necessária para identificar o ponto de sangramento, realizar a hemostasia e drenar os coágulos que estão causando a compressão mecânica.\n\nAlternativa B (INCORRETA):\nA aspiração com agulha é inadequada por dois motivos principais: primeiro, o sangue em um hematoma pós-operatório geralmente está coagulado, o que impede sua aspiração por agulhas finas; segundo, a dispneia indica uma compressão importante que requer descompressão ampla e imediata, não apenas uma punção. Além disso, seromas costumam surgir mais tardiamente e raramente causam desconforto respiratório agudo.\n\nAlternativa C (INCORRETA):\nApenas observar a paciente em uma Unidade de Terapia Intensiva (UTI) sem intervir é um erro grave. O hematoma compressivo é uma emergência dinâmica; a compressão tende a aumentar rapidamente, podendo levar à asfixia e morte em poucos minutos. A intervenção deve ser ativa e imediata.\n\nAlternativa D (INCORRETA):\nEmbora o corticoide possa ser utilizado para reduzir o edema inflamatório das pregas vocais ou da laringe, ele não tem efeito sobre a compressão extrínseca causada por um hematoma. Usá-lo como conduta principal mascara o problema e retarda o tratamento definitivo, colocando a vida da paciente em risco.\n\nAlternativa E (INCORRETA):\nA lesão do nervo laríngeo recorrente bilateral pode causar obstrução respiratória por paralisia das pregas vocais em adução. No entanto, o termo traqueostomia eletiva está incorreto, pois se houvesse uma obstrução aguda por lesão nervosa, a traqueostomia seria de urgência (caso a intubação não fosse possível). Além disso, a principal suspeita diagnóstica em um pós-operatório imediato com dispneia progressiva é o hematoma, que deve ser descartado ou tratado antes de se considerar causas puramente neurológicas.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Tireoide",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:37.733Z"
+  },
+  {
+    "id": "AJUDA_f6b48519-16cd-4f1f-b4ad-f7eea9cb697a",
+    "originalId": "f6b48519-16cd-4f1f-b4ad-f7eea9cb697a",
+    "statement": "Menino de 2 anos, previamente saudável, é levado ao pronto atendimento com febre moderada há 3 dias, associada a recusa alimentar, irritabilidade e lesões vesiculares dolorosas na mucosa oral. Apresenta exantema maculopapular nas palmas das mãos, plantas dos pés e região glútea. Está hidratado, aceita líquidos e não apresenta sinais de toxemia. A mãe relata que há outros casos semelhantes na creche. Considerando o quadro clínico, a epidemiologia e a principal hipótese diagnóstica, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar aciclovir oral, pois o padrão vesicular oral sugere infecção por Herpes simples tipo 1, que pode evoluir com complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever antibióticos tópicos e sistêmicos para prevenir infecção secundária das lesões cutâneas e orais, especialmente em áreas úmidas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar manejo clínico com hidratação, analgesia e antipiréticos, orientar afastamento escolar até resolução das lesões e reforçar medidas de higiene, sem indicação de antivirais ou antibióticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever pleconaril, antiviral experimental contra enterovírus, indicado em casos de doença mão-pé-boca com lesões extensas e dor oral intensa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANALISE DO CASO CLINICO\n\nO quadro clínico de febre moderada, recusa alimentar, irritabilidade e lesões orais dolorosas associadas a exantema em palmas das mãos, plantas dos pés e região glútea em uma criança de 2 anos, somado ao contexto de surto em creche, é a apresentação clássica da Doença Mão-Pé-Boca (DMPB). Essa afecção é causada por enterovírus (com destaque para o Coxsackievirus A16 e Enterovírus 71), tem transmissão fecal-oral e por via respiratória, e possui caráter tipicamente benigno e autolimitado.\n\nANALISE DAS ALTERNATIVAS\n\nAlternativa A - Incorreta. Embora o Herpes simples tipo 1 (HSV-1) cause gengivoestomatite com dor oral intensa e recusa alimentar, ele não produz o padrão clássico de lesões acrais em mãos, pés e nádegas. Além disso, o aciclovir atua sobre vírus de DNA como os herpesvírus, não tendo atividade contra enterovírus, que são vírus de RNA.\n\nAlternativa B - Incorreta. A etiologia é estritamente viral e a evolução natural é a cura espontânea. Não há indicação de antibioticoterapia profilática tópica ou sistêmica. Antibióticos seriam reservados apenas para casos com infecção bacteriana secundária diagnosticada (como impetiginização das lesões), o que não está presente no caso.\n\nAlternativa C - Correta. O tratamento da Doença Mão-Pé-Boca é baseado em suporte e sintomáticos. Como a criança está hidratada e estável, a conduta consiste no controle térmico e álgico (analgésicos e antipiréticos), estímulo à hidratação oral (preferencialmente com líquidos frios e não ácidos para minimizar o desconforto), afastamento temporário da creche durante a fase aguda/vesicular para quebra da cadeia de transmissão e reforço de medidas de higiene (lavagem de mãos e desinfecção de objetos).\n\nAlternativa D - Incorreta. O pleconaril é uma droga experimental que atuaria em picornavírus, mas não possui aprovação para uso clínico de rotina e não faz parte de nenhum protocolo pediátrico para o manejo da Doença Mão-Pé-Boca.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:37.733Z"
+  },
+  {
+    "id": "AJUDA_f6b579fd-48c0-4590-8272-47ea9e717250",
+    "originalId": "f6b579fd-48c0-4590-8272-47ea9e717250",
+    "statement": "O propofol é um dos agentes anestésicos intravenosos mais utilizados atualmente. Qual o principal mecanismo de ação do propofol que explica seu efeito hipnótico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O propofol atua como agonista dos receptores NMDA, promovendo a inibição da transmissão sináptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O propofol inibe a liberação de acetilcolina nos terminais sinápticos, diminuindo a excitabilidade neuronal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O propofol bloqueia os canais de sódio voltagem-dependentes, impedindo a despolarização das membranas neuronais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O propofol facilita a ligação do GABA aos seus receptores, aumentando a condutância de íons cloreto e hiperpolarizando a membrana celular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O propofol reduz a atividade da adenilciclase, diminuindo a concentração intracelular de AMPc e a atividade neuronal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O propofol e seu mecanismo de ação:\n\nAlternativa a: Incorreta. O receptor NMDA é um receptor excitatório mediado pelo glutamato. Atuar como agonista aumentaria a excitação neuronal, o que é o oposto do efeito hipnótico desejado. O mecanismo de ação da cetamina, por exemplo, envolve o antagonismo (bloqueio) dos receptores NMDA.\n\nAlternativa b: Incorreta. A modulação da acetilcolina não é o mecanismo primário do propofol. Embora os anestésicos gerais possam ter efeitos secundários em diversos neurotransmissores, o efeito hipnótico principal do propofol não decorre da inibição da liberação de acetilcolina.\n\nAlternativa c: Incorreta. O bloqueio dos canais de sódio voltagem-dependentes é o mecanismo de ação clássico dos anestésicos locais, como a lidocaína e a bupivacaína. Esses fármacos impedem a geração e a condução do impulso nervoso nos nervos periféricos ou na medula, mas não são o mecanismo de hipnose dos agentes intravenosos como o propofol.\n\nAlternativa d: Correta. O propofol exerce seu efeito hipnótico principalmente através da potencialização do neurotransmissor inibitório GABA (ácido gama-aminobutírico) no receptor GABA-A. O fármaco se liga ao receptor e aumenta a afinidade do GABA por ele, além de manter o canal de cloreto aberto por mais tempo. O aumento da condutância de íons cloreto para dentro do neurônio causa a hiperpolarização da membrana celular, tornando o neurônio menos propenso a disparar potenciais de ação, o que resulta na depressão do sistema nervoso central e hipnose.\n\nAlternativa e: Incorreta. A redução da atividade da adenil ciclase e dos níveis de AMP cíclico (AMPc) é um mecanismo associado a outros fármacos, como os agonistas alfa-2 adrenérgicos (ex: dexmedetomidina) ou receptores opioides acoplados à proteína Gi, mas não é o mecanismo de ação fundamental do propofol.\n\nGabarito: Letra d.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:37.733Z"
+  }
+]

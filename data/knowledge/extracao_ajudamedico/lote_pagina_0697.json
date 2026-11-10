@@ -1,0 +1,520 @@
+[
+  {
+    "id": "AJUDA_c32537d7-9e02-441a-b1dc-a89403c1f8c2",
+    "originalId": "c32537d7-9e02-441a-b1dc-a89403c1f8c2",
+    "statement": "Os parâmetros avaliados no índice de Apgar ao nascimento incluem:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Temperatura corporal, frequência cardíaca, tônus muscular, reflexo de sucção e cor da pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Frequência cardíaca, esforço respiratório, reflexo pupilar, tônus muscular e coloração das extremidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Frequência cardíaca, respiração, cor da pele, tônus muscular e reflexo à estimulação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Frequência cardíaca, esforço respiratório, reflexo de Moro, movimentação ativa e temperatura corporal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Reflexo de sucção, frequência cardíaca, cor dos lábios, esforço respiratório e movimentação das extremidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O índice de Apgar é o método mais utilizado mundialmente para avaliar a vitalidade do recém-nascido e sua adaptação imediata ao ambiente extrauterino. Ele deve ser aplicado rotineiramente no primeiro e no quinto minutos após o nascimento, podendo ser repetido a cada cinco minutos se a nota for baixa.\n\nOs cinco parâmetros avaliados são:\n1. Frequência cardíaca.\n2. Esforço respiratório (ou respiração).\n3. Tônus muscular.\n4. Irritabilidade reflexa (ou resposta a estímulos).\n5. Cor da pele (ou aparência).\n\nCada parâmetro recebe uma pontuação de 0 a 2, totalizando um índice que varia de 0 a 10.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A temperatura corporal e o reflexo de sucção não fazem parte do índice de Apgar. Embora a temperatura seja monitorada para evitar a hipotermia neonatal, ela não compõe a nota de vitalidade. O reflexo de sucção é um reflexo primitivo avaliado no exame neurológico completo, não nos primeiros minutos de vida para fins de Apgar.\n\nAlternativa (b) Incorreta: O reflexo pupilar não é um componente deste índice. O Apgar foca em sinais vitais macroscópicos e respostas motoras simples.\n\nAlternativa (c) Correta: Esta alternativa cita corretamente os cinco sinais clínicos preconizados: frequência cardíaca, respiração (esforço respiratório), cor da pele, tônus muscular e reflexo à estimulação (irritabilidade reflexa).\n\nAlternativa (d) Incorreta: O reflexo de Moro é um reflexo arcaico avaliado no exame físico detalhado do neonato, mas não no Apgar. A temperatura corporal, como mencionado anteriormente, também não é um parâmetro avaliado nesta escala.\n\nAlternativa (e) Incorreta: O reflexo de sucção não pertence ao índice. Além disso, a avaliação da cor é feita de forma generalizada (corpo e extremidades) e não restrita apenas aos lábios.\n\nResumo dos critérios para memorização (A-P-G-A-R):\nA - Aparência (Cor da pele)\nP - Pulso (Frequência cardíaca)\nG - Gesticulação (Irritabilidade reflexa)\nA - Atividade (Tônus muscular)\nR - Respiração (Esforço respiratório)",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:39.365Z"
+  },
+  {
+    "id": "AJUDA_c3265a53-72a3-471f-93a8-8a57fb6a64e6",
+    "originalId": "c3265a53-72a3-471f-93a8-8a57fb6a64e6",
+    "statement": "Paciente do sexo masculino, 3 anos, previamente hígido, apresentou edema palpebral e ascite. Realizados exames, identificando-se proteinúria na faixa maciça, hipoalbuminemia e dislipidemia. Foi iniciado tratamento com prednisona, evoluindo com desaparecimento do edema e remissão completa da proteinúria, em três semanas.\n\nConsiderando o tipo histológico mais comumente encontrado na doença dessa criança, qual dos gráficos acima representa sua distribuição por idade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gráfico 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gráfico 3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gráfico 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gráfico 4.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico exposto descreve um menino de 3 anos com a síndrome nefrótica clássica, caracterizada por edema importante (palpebral e ascite), proteinúria maciça, hipoalbuminemia e dislipidemia. A idade da criança associada à excelente e rápida resposta ao corticoide (remissão completa da proteinúria em três semanas de prednisona) define o diagnóstico de Doença de Lesões Mínimas (DLM).\n\nA Doença de Lesões Mínimas é a etiologia mais frequente de síndrome nefrótica na infância, correspondendo a cerca de 80% a 90% dos casos em crianças abaixo de 6 anos, com pico de incidência entre 1 e 4 anos de idade. Conforme a faixa etária progride em direção à adolescência, sua frequência proporcional cai progressivamente, dando lugar a outras etiologias como a Glomeruloesclerose Segmentar e Focal (GESF).\n\nAnálise das alternativas e correlação com as imagens:\n\na) Incorreta. O Gráfico 1 ilustra uma frequência constante e inalterada de 50% dos zero aos 15 anos de idade, o que não reflete a epidemiologia da DLM, cuja prevalência varia de forma marcante com a idade.\n\nb) Incorreta. O Gráfico 3 exibe um aumento progressivo e linear da frequência conforme a idade aumenta, atingindo o pico na adolescência. O comportamento epidemiológico da DLM é justamente o oposto, sendo muito mais frequente nos primeiros anos de vida.\n\nc) Incorreta. O Gráfico 2 demonstra uma curva bimodal com queda acentuada no meio da infância (próximo a zero entre 5 e 8 anos), padrão que não condiz com as glomerulopatias infantis.\n\nd) Correta. O Gráfico 4 representa fielmente a epidemiologia da Doença de Lesões Mínimas, apresentando uma elevação rápida no início da vida, atingindo cerca de 80% de frequência relativa nos primeiros anos (1 a 4 anos de idade), seguida de uma queda progressiva e linear em direção aos 15 anos.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/eebe48eb2a0cefb07b651f8be2ae9ac5da920c09422ff0c9ef69d4f1f431b366.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c3265a53-72a3-471f-93a8-8a57fb6a64e6_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:39.879Z"
+  },
+  {
+    "id": "AJUDA_c327a91b-8020-4b8a-9e8e-cf0f65e9ab9e",
+    "originalId": "c327a91b-8020-4b8a-9e8e-cf0f65e9ab9e",
+    "statement": "81- Em relação às quatro modalidades de prevenção (primária, secundária, terciária e quaternária), qual a característica distintiva da prevenção quaternária?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Busca reduzir a exposição a fatores de risco antes do aparecimento da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Foca na detectação precoce de doenças assintomáticas por meio de rastreamentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Objetiva evitar intervenções médicas desnecessárias e seus potenciais danos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Visa limitar complicações e reabilitar pacientes com doença já estabelecida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender as modalidades de prevenção, utilizamos a classificação clássica de Leavell e Clark, somada ao conceito contemporâneo de Prevenção Quaternária introduzido por Marc Jamoulle.\n\nAlternativa a) Incorreta. Esta alternativa define a Prevenção Primária. Ela atua no período pré-patogênico, ou seja, antes de a doença se instalar. O objetivo é remover causas e fatores de risco para impedir que o processo patológico se inicie. Exemplos comuns são a vacinação e a promoção de hábitos de vida saudáveis.\n\nAlternativa b) Incorreta. Esta definição refere-se à Prevenção Secundária. Seu foco é a detecção precoce de doenças em indivíduos que já apresentam a patologia, mas ainda em estágio inicial e assintomático (fase subclínica). O rastreamento (screening), como a mamografia ou o preventivo do colo do útero, é a estratégia principal aqui para permitir um tratamento mais eficaz.\n\nAlternativa c) Correta. A Prevenção Quaternária consiste na detecção de indivíduos em risco de intervenções médicas excessivas ou desnecessárias (sobremedicalização). O objetivo fundamental é proteger o paciente de danos iatrogênicos, evitando o excesso de diagnósticos (overdiagnosis) e o excesso de tratamentos (overtreatment). Baseia-se no princípio ético da Não Maleficência (Primum non nocere).\n\nAlternativa d) Incorreta. Esta descrição corresponde à Prevenção Terciária. Ela é aplicada quando a doença já está clinicamente manifesta e avançada. O foco está em reduzir os impactos negativos da doença, limitar incapacidades, prevenir complicações e promover a reabilitação funcional do paciente. Um exemplo é a fisioterapia após um acidente vascular cerebral (AVC).\n\nGabarito: Letra (c).",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:39.879Z"
+  },
+  {
+    "id": "AJUDA_c3331e2a-e38a-4fe2-b8f1-c5132da27412",
+    "originalId": "c3331e2a-e38a-4fe2-b8f1-c5132da27412",
+    "statement": "Homem, 68 anos, pedreiro. Refere que os dedos de suas mãos estão entortando, além de doerem quando realiza atividades manuais mais intensas, como carregar balde ou preparar concreto. Tabagista e etilista diário (aproximadamente 2 litros de cerveja por dia). Exame físico: bom estado geral; aumento de volume, de consistência óssea, em algumas interfalangeanas proximais e distais de ambas as mãos, com desvios articulares em 3º e 4º quirodáctilos à direita. A radiografia da mão direita é mostrada abaixo:\n\nQual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gota tofácea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Artrite reumatoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Artrite psoriásica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Osteoartrite.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico e radiográfico apresentado é típico de Osteoartrite (artrose) das mãos, uma artropatia degenerativa caracterizada pela degradação da cartilagem articular e neoformação óssea reativa. \n\nO paciente apresenta fatores de risco clássicos: idade avançada, sexo masculino e história de sobrecarga mecânica crônica e repetitiva devido à profissão de pedreiro. O padrão de dor é tipicamente mecânico, ou seja, piora com o uso e esforço da articulação (como carregar baldes e preparar concreto) e melhora com o repouso. \n\nAo exame físico, os aumentos de volume de consistência óssea correspondem aos Nódulos de Heberden (nas articulações interfalangeanas distais) e Nódulos de Bouchard (nas interfalangeanas proximais). \n\nA radiografia corrobora o diagnóstico ao demonstrar os achados radiológicos cardinais da osteoartrite:\n1. Redução assimétrica do espaço articular (pinçamento articular);\n2. Esclerose óssea subcondral (aumento da densidade óssea logo abaixo da cartilagem);\n3. Presença marcante de osteófitos marginais (projeções ósseas);\n4. Desvios e subluxações articulares, evidentes principalmente nas articulações interfalangeanas.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. Embora o etilismo diário seja um fator de risco para hiperuricemia e gota, a gota tofácea se manifesta tipicamente após crises prévias de artrite inflamatória aguda mono/oligoarticular. Os tofos gotosos são formados por depósitos de cristais de urato monossódico e apresentam consistência de partes moles (borrachuda), não óssea. Radiograficamente, a gota produz erosões ósseas em saca-bocado com bordas escleróticas sobressalentes (sinal de Martel), o que não é observado na imagem.\n\nAlternativa B - Incorreta. A artrite reumatoide é uma doença inflamatória autoimune que poupa caracteristicamente as articulações interfalangeanas distais (IFDs), acometendo predominantemente as metacarpofalangeanas, interfalangeanas proximais e punhos. Seu padrão de dor é inflamatório (rigidez matinal prolongada que melhora com o movimento). Radiograficamente, caracteriza-se por osteopenia justa-articular e erosões marginais, sem formação exuberante de osteófitos ou esclerose subcondral.\n\nAlternativa C - Incorreta. Embora a artrite psoriásica possa acometer as articulações interfalangeanas distais e causar deformidades, ela habitualmente vem acompanhada de manifestações ungueais (como depressões puntiformes/pitting), lesões cutâneas psoriásicas ou dactilite (\"dedo em salsicha\"). Radiologicamente, apresenta um padrão misto destrutivo e proliferativo, com reabsorção óssea marcante que pode gerar a clássica imagem de \"lápis no copo\" (pencil-in-cup), ausente no caso.\n\nAlternativa D - Correta. A congruência entre a clínica (dor mecânica, ocupação de risco, nódulos duros de Heberden e Bouchard) e os achados radiográficos (osteófitos, redução do espaço articular e esclerose subcondral) estabelece com segurança o diagnóstico de osteoartrite.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Doenças do Osso e da Cartilagem",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/4592e101befb8604148987054e5a527f5b5bc681ddb19c9cd0f3a716d0438008.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c3331e2a-e38a-4fe2-b8f1-c5132da27412_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:40.369Z"
+  },
+  {
+    "id": "AJUDA_c333d9b3-3c1b-4524-80ac-2a7b29951cb1",
+    "originalId": "c333d9b3-3c1b-4524-80ac-2a7b29951cb1",
+    "statement": "Em relação à sífilis na gestação, está correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A possibilidade de uma reação alérgica à penicilina é alta, sendo indicado teste de sensibilidade para gestantes antes de iniciar tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quando se tem um teste não treponêmico positivo, deve-se aguardar o teste treponêmico específico para iniciar o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A transmissão vertical não acontece intraútero, apenas pode ocorrer durante a passagem do feto pelo canal do parto, se houver a presença de lesão ativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A benzilpenicilina é a única opção segura e eficaz para o tratamento adequado em gestantes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Se o teste rápido do parceiro for negativo, ele deve realizar teste treponêmico antes de receber penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. A incidência de reações alérgicas graves (anafilaxia) à penicilina é muito baixa, ocorrendo em cerca de 0,01% a 0,05% dos casos. Por isso, não há indicação de testes de sensibilidade rotineiros para gestantes. Se houver história confirmada de alergia, o procedimento padrão é a dessensibilização em ambiente hospitalar, pois a penicilina é o único tratamento que cura o feto.\n\nAlternativa b: Incorreta. Na gestação, para fins de controle da sífilis congênita, o tratamento deve ser iniciado imediatamente após um teste positivo (seja ele rápido, treponêmico ou não treponêmico), sem necessidade de aguardar o segundo teste confirmatório. O objetivo é evitar o atraso terapêutico e a transmissão ao feto.\n\nAlternativa c: Incorreta. A transmissão vertical da sífilis é predominantemente transplacentária, podendo ocorrer em qualquer idade gestacional. Embora a transmissão durante o parto seja possível por meio do contato com lesões ativas, a via hematogênica intraútero é a principal responsável pela sífilis congênita.\n\nAlternativa d: Correta. A penicilina benzatina é o padrão-ouro e a única droga considerada eficaz para tratar tanto a gestante quanto o feto, pois atravessa a barreira placentária. Qualquer outro esquema terapêutico realizado durante a gestação, como o uso de ceftriaxona ou macrolídeos, é considerado tratamento inadequado para o feto, exigindo investigação completa do recém-nascido ao nascimento.\n\nAlternativa e: Incorreta. O parceiro sexual deve ser tratado para evitar a reinfecção da gestante (efeito pingue-pongue). De acordo com os protocolos atuais, o parceiro deve ser testado, mas se houve exposição sexual recente, o tratamento pode ser realizado mesmo com teste negativo para cobrir o período de incubação da doença. O foco é a abordagem epidemiológica imediata para interromper a cadeia de transmissão.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:40.369Z"
+  },
+  {
+    "id": "AJUDA_c333fc58-d65d-46a0-b2b1-30ead40f9a7b",
+    "originalId": "c333fc58-d65d-46a0-b2b1-30ead40f9a7b",
+    "statement": "Patrícia, 12 anos de idade, admitida por dispneia progressiva, cansaço e astenia nos últimos 3 dias. Tem antecedente pessoal de doença hematológica (foi adotada e os pais não sabem referir exatamente o histórico prévio), com quadros anteriores de dor intensa, infecções respiratórias e edema de dedos das mãos. Apresenta, neste momento, os seguintes sinais vitais: PA 98 x 66 mmHg; FC 101 bpm, FR 18 irpm e temperatura de 37°C. Ao exame físico, encontra-se pálida, sem alterações à ausculta pulmonar, com presença de um sopro sistólico audível em todo o precórdio e exame abdominal inocente. Exames laboratoriais demonstram: Hb = 4,5 g/dLl; reticulócitos corrigidos de 0,1%; plaquetas = 180.000/mm³ e leucócitos totais = 8.000/mm³. Dentre os seguintes, qual é o mais provável contribuidor para o quadro descrito?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sequestro esplênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hemólise intensa mediada por complemento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infecção prévia por parvovirus B19.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mudança brusca de temperatura no inverno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Transfusão sanguínea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente em questão apresenta um histórico clínico altamente sugestivo de doença falciforme, evidenciado pelos antecedentes de dor intensa, infecções respiratórias e dactilite (edema dos dedos das mãos, comum na infância). O quadro atual é de anemia grave (Hb 4,5 g/dL) acompanhada de reticulocitopenia (reticulócitos corrigidos de 0,1%), o que indica uma crise de anemia hiporregenerativa.\n\nEm pacientes com doenças hemolíticas crônicas, nas quais a vida média da hemácia é curta, qualquer interrupção na produção medular resulta em queda rápida e severa da hemoglobina. Esse cenário de anemia aguda com queda de reticulócitos é chamado de crise aplásica.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. O sequestro esplênico é uma complicação aguda na qual o sangue é retido no baço, causando anemia súbita e choque. No entanto, ele se caracteriza clinicamente por um baço muito aumentado (esplenomegalia) e, laboratorialmente, por reticulocitose (a medula óssea está funcionando intensamente para tentar compensar). No caso, o abdome é inocente e os reticulócitos estão baixos.\n\nb) INCORRETA. Quadros de hemólise acentuada cursam com resposta medular compensatória, elevando o número de reticulócitos. O valor de 0,1% demonstra que o problema não é o aumento da destruição na periferia, mas sim a falta de produção na medula.\n\nc) CORRETA. A infecção pelo parvovírus B19 é a causa mais comum de crise aplásica em pacientes com doença falciforme. O vírus infecta e destrói temporariamente os precursores eritroides na medula óssea. Em pessoas saudáveis, isso passa despercebido, mas em pacientes falcêmicos, a parada na produção de hemácias por 5 a 10 dias leva a uma queda drástica dos níveis de hemoglobina e ao desaparecimento dos reticulócitos no sangue periférico.\n\nd) INCORRETA. Embora a mudança brusca de temperatura e o frio sejam gatilhos conhecidos para crises vaso-oclusivas (crises de dor), eles não explicam a falência momentânea da produção eritroide (crise aplásica) observada nos exames laboratoriais.\n\ne) INCORRETA. A transfusão sanguínea é a conduta terapêutica indicada para estabilizar a paciente diante de uma hemoglobina tão baixa e sintomática. Ela não é o agente causador ou contribuidor da fisiopatologia da crise apresentada.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:40.369Z"
+  },
+  {
+    "id": "AJUDA_c34107ed-2532-4ad4-91ae-4f508cbab3e2",
+    "originalId": "c34107ed-2532-4ad4-91ae-4f508cbab3e2",
+    "statement": "O tratamento mais benéfico das meningites em pacientes adultos, que apresentam a correta correlação entre seus agentes, está contido na alternativa:",
+    "options": [
+      {
+        "id": "A",
+        "text": "encefalite herpética, e aciclovir associado a corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Neisseria meningitis, e ceftrixone associado a corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Haemophylus influenzae, e ceftrixone associado a corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lysteria monocytogenes, e ampicilina associada a corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Streptococcus pneumonie, e ceftrixone, vancomicina e corticoide.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão exige o conhecimento sobre o tratamento empírico e específico das meningites bacterianas em adultos, com foco na cobertura antibiótica e no papel da corticoterapia adjuvante.\n\nAlternativa A: Incorreta. Primeiramente, a encefalite herpética é uma infecção do parênquima cerebral, distinta da meningite propriamente dita. O tratamento de escolha é o aciclovir venoso. Embora o uso de corticosteroides possa ser discutido em casos de grande edema cerebral, ele não é considerado a base do tratamento \"mais benéfico\" ou o padrão-ouro na correlação direta para essa patologia como é para as bacterianas.\n\nAlternativa B: Incorreta. Para a Neisseria meningitidis (meningococo), o tratamento de escolha é a ceftriaxona. No entanto, o uso de corticoides (dexametasona) em adultos com meningite meningocócica não demonstrou o mesmo benefício clínico claro que possui na meningite por pneumococo. As diretrizes recomendam iniciar o corticoide antes ou junto com a primeira dose de antibiótico na suspeita de meningite bacteriana, mas ele deve ser descontinuado se o agente identificado for o meningococo.\n\nAlternativa C: Incorreta. O Haemophilus influenzae é uma causa menos comum de meningite em adultos após a introdução das vacinas. O tratamento é feito com ceftriaxona. O uso de corticoide no Haemophilus tem evidência robusta de benefício principalmente na população pediátrica, visando à redução de sequelas auditivas, mas não é a principal correlação de benefício em adultos quando comparada ao pneumococo.\n\nAlternativa D: Incorreta. A Listeria monocytogenes deve ser suspeitada em idosos, gestantes e imunossuprimidos. O tratamento baseia-se em ampicilina (ou penicilina G cristalina) associada ou não à gentamicina. O uso de corticoides na meningite por Listeria é geralmente desaconselhado ou não possui evidência de benefício, pois, por se tratar de um patógeno intracelular, a imunossupressão local causada pelo esteroide pode prejudicar a resposta do hospedeiro.\n\nAlternativa E: Correta. O Streptococcus pneumoniae (pneumococo) é o agente mais comum das meningites bacterianas em adultos. Devido ao aumento global da resistência bacteriana, o esquema empírico ideal associa a ceftriaxona (uma cefalosporina de 3ª geração) à vancomicina (para cobrir cepas de pneumococo com sensibilidade reduzida às cefalosporinas). Além disso, o pneumococo é o agente que mais se beneficia do uso de corticoides (dexametasona) em adultos, com redução comprovada de mortalidade e de complicações neurológicas, desde que administrado antes ou junto com a primeira dose do antibiótico. Portanto, esta é a alternativa que apresenta a correlação mais precisa e benéfica.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Meningites",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:40.369Z"
+  },
+  {
+    "id": "AJUDA_c34b661b-52cb-44c4-87f1-a8aff4a125a8",
+    "originalId": "c34b661b-52cb-44c4-87f1-a8aff4a125a8",
+    "statement": "Analise as assertivas em relação à associação HIPERTENSÃO ARTERIAL CRÔNICA E GRAVIDEZ:\n\nI -Gestantes com hipertensão prévia à gestação demostram melhora dos níveis tensionais no início da gravidez e depois, no início do terceiro trimestre, apresentam um aumento até níveis um pouco mais altos que no início da gravidez. \nII - Descolamento prematuro de placenta, crescimento intrauterino restrito e parto prematuro são complicações mais frequentes. \nIII - Hipertensas crônicas sem lesões em órgãos alvos (coração, retina e rins) devem receber terapia anti-hipertensiva quando os níveis diastólicos forem \"menor ou igual a\" 100mmHg. \nIV - Fármacos inibidores da enzima conversora da angiotensina (captopril) e antagonistas de receptores da angiotensina II (losartana) são contraindicados.\nÉ correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e V estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I - II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I - III e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I - II - III e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS ASSERTIVAS:\n\nAssertiva I: CORRETA. No primeiro e segundo trimestres da gestação, ocorre uma queda fisiológica da resistência vascular sistêmica devido à ação da progesterona e à formação do leito placentário de baixa resistência. Isso faz com que os níveis tensionais da hipertensa crônica diminuam no início da gravidez (o chamado \"nadir\" da pressão arterial). No terceiro trimestre, a pressão arterial tende a retornar aos níveis pré-gravídicos ou até superá-los levemente devido ao aumento do débito cardíaco e volume plasmático.\n\nAssertiva II: CORRETA. A hipertensão arterial crônica está diretamente associada a danos na vasculatura uteroplacentária. Isso aumenta significativamente o risco de descolamento prematuro de placenta (DPP), restrição de crescimento intrauterino (CIUR) por insuficiência placentária e, consequentemente, necessidade de interrupção da gestação antes do termo (parto prematuro), seja por indicação materna ou fetal.\n\nAssertiva III: CORRETA. De acordo com as principais diretrizes brasileiras (como as da Sociedade Brasileira de Cardiologia e FEBRASGO), em gestantes hipertensas crônicas sem lesão em órgãos-alvo (baixo risco), o início ou manutenção da terapia medicamentosa é indicado quando a pressão arterial atinge níveis de 150/100 mmHg. Portanto, o valor de 100 mmHg para a pressão diastólica é o ponto de corte clássico para intervenção farmacológica nesse grupo para evitar a progressão para hipertensão grave, enquanto níveis abaixo disso (entre 90-100 mmHg) podem ser apenas observados se não houver complicações. \n\nAssertiva IV: CORRETA. Os Inibidores da Enzima Conversora de Angiotensina (IECA), como o captopril e enalapril, e os Antagonistas dos Receptores de Angiotensina II (BRA), como a losartana, são terminantemente contraindicados na gestação. O uso dessas drogas, especialmente no segundo e terceiro trimestres, está associado a toxicidade fetal grave, incluindo disgenesia renal, oligodrâmnia, hipoplasia pulmonar, defeitos de ossificação do crânio e morte fetal.\n\nJUSTIFICATIVA DO GABARITO:\n\nComo todas as quatro assertivas analisadas (I, II, III e IV) apresentam conceitos corretos e alinhados com a prática obstétrica e cardiológica atual, a alternativa correta é a letra (d). \n\nObservação: Nota-se uma inconsistência na alternativa (a), que menciona uma assertiva \"V\", a qual não existe no enunciado. No entanto, isso não invalida a questão, uma vez que a alternativa (d) contempla integralmente a veracidade de todos os itens apresentados.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:40.369Z"
+  },
+  {
+    "id": "AJUDA_c3511bb2-347a-43d6-8f3a-a318c29a07d4",
+    "originalId": "c3511bb2-347a-43d6-8f3a-a318c29a07d4",
+    "statement": "Secundigesta com 1 cesariana prévia, idade gestacional de 33 semanas, consulta em PA com queixa de perda líquida vaginal, contrações uterinas de frequência irregular e lombalgia. Refere que há cerca de 1 semana vem apresentando episódios de disúria. Ao exame físico apresenta bom estado geral, normotensa, FC de 110bpm, temperatura axilar de 38°C. Útero com sensibilidade aumentada e dinâmica de 1 contração a cada 10 minutos. Batimentos cardiofetais de 145bpm. Ao especular apresenta líquido amniótico visualizado em orifício cervical externo e dilatação de 3cm. Punho-percussão lombar negativa. Qual é o provável diagnóstico e qual é a conduta a ser seguida?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Corioamnionite – cesariana de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rupreme pré-termo – internação e indução de trabalho de parto com misoprostol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rupreme pré-termo + endometrite – internação e antibioticoterapia até 34 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rupreme pré-termo + corioamnionite – internação e desfecho gestacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise Clínica e Diagnóstico:\n\nA paciente apresenta um quadro clássico de Ruptura Prematura de Membranas Ovulares (RPMO ou Rupreme) pré-termo, evidenciado pela perda líquida vaginal e visualização de líquido amniótico no exame especular em uma gestação de 33 semanas.\n\nO ponto crucial da questão é identificar a complicação associada. A presença de febre (38 °C), taquicardia materna (110 bpm) e sensibilidade uterina aumentada (dor à palpação do útero) preenche os critérios clínicos para o diagnóstico de corioamnionite (Critérios de Gibbs). A dor lombar e a queixa de disúria poderiam sugerir uma infecção urinária, porém a punho-percussão lombar negativa (Giordano negativo) afasta a hipótese de pielonefrite como causa primária da febre, reforçando o foco infeccioso intrauterino.\n\nAnálise das Alternativas:\n\na) Incorreta. Embora o diagnóstico de corioamnionite esteja correto, a conduta de \"cesariana de urgência\" não é a regra absoluta. Na presença de corioamnionite, o parto deve ser agilizado, mas a via de parto é decidida por critérios obstétricos. Se o trabalho de parto evoluir bem, o parto vaginal é preferível para evitar os riscos de uma cirurgia em campo infectado.\n\nb) Incorreta. Esta alternativa ignora a presença da infecção (corioamnionite). Além disso, o uso de misoprostol é contraindicado em pacientes com cicatriz uterina prévia (cesariana anterior), devido ao alto risco de ruptura uterina.\n\nc) Incorreta. O termo \"endometrite\" refere-se à infecção puerperal (após o parto). Durante a gestação, a infecção das membranas e do líquido é chamada de corioamnionite. Além disso, na presença de infecção, a conduta deve ser o parto imediato, e não a conduta expectante até as 34 semanas.\n\nd) Correta. Identifica corretamente a ruptura prematura de membranas em idade pré-termo e a complicação infecciosa (corioamnionite). A conduta correta perante a corioamnionite, independentemente da idade gestacional, é a internação para antibioticoterapia intravenosa e a interrupção da gestação (desfecho gestacional), visando cessar o foco infeccioso e proteger o binômio mãe-feto.\n\nResumo da Conduta:\nConfirmada a corioamnionite, não se deve aguardar a maturidade pulmonar fetal ou atingir 34 semanas. Deve-se iniciar antibióticos de amplo espectro (geralmente ampicilina e gentamicina) e proceder ao parto pela via mais rápida e segura, priorizando a via vaginal se houver condições favoráveis.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:40.369Z"
+  },
+  {
+    "id": "AJUDA_c3548c6b-f4bf-409b-b56c-e6a897d14f66",
+    "originalId": "c3548c6b-f4bf-409b-b56c-e6a897d14f66",
+    "statement": "A medicina com base em evidências (MBE) é um paradoxo que mudou a forma de se praticar a medicina no mundo. O artigo de 1996, de David Sackett, intitulado “Evidence based medicine: what it is and what it isn't”, define a conceitualização primordial do conceito. Na pandemia de covid, esse conceito foi posto à prova com diversos profissionais de saúde lançando mão de terapias hoje sabidamente ineficazes para o tratamento da infecção por SARS-CoV-2. Um dos tratamentos mais polêmicos foi o uso de ivermectina em quadros com gravidade variável. A respeito da MBE e do uso de ivermectina para a covid, é correto afirmar que o(a)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Espera por novos dados da literatura, para a tomada de decisão clínica, é um processo que aumenta o risco, por atrasar o início dos tratamentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ausência de dados da literatura em situações extremas justifica condutas clínicas fundamentadas na autonomia profissional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Experiência profissional, que não faz parte da MBE, foi o principal argumento de muitos profissionais para justificar o uso da droga.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desejo do paciente é superior aos dados da literatura e da experiência profissional na tomada de decisão clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Decisão clínica fundamentada em erro e em acerto justifica erroneamente as condutas inseguras.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise da Questão: Medicina Baseada em Evidências (MBE) e Ivermectina na COVID-19\n\nA Medicina Baseada em Evidências (MBE), conforme definida por David Sackett, é a integração da melhor evidência científica disponível com a experiência clínica do médico e os valores e preferências do paciente. O caso da ivermectina na pandemia ilustra a falha na aplicação desses pilares quando a evidência científica é negligenciada em favor de observações anedóticas.\n\nAlternativa A: Incorreta. A MBE preconiza que a segurança do paciente vem em primeiro lugar (primum non nocere). Prescrever tratamentos sem comprovação de eficácia e segurança, sob o pretexto de pressa, expõe o paciente a riscos desnecessários de efeitos colaterais sem benefício comprovado. A espera por dados robustos é o que garante uma prática ética e segura.\n\nAlternativa B: Incorreta. A autonomia profissional não é absoluta e não autoriza o médico a ignorar a ciência. Em situações extremas ou de ausência de dados, a conduta deve ser pautada pelo suporte clínico e, preferencialmente, dentro de protocolos de pesquisa ética. A falta de evidência não justifica o uso indiscriminado de terapias ineficazes.\n\nAlternativa C: Incorreta. A experiência clínica é, sim, um dos três pilares fundamentais da MBE descritos por Sackett. O erro cometido por muitos profissionais não foi usar a experiência, mas sim usá-la de forma isolada, ignorando o pilar da evidência científica externa (estudos clínicos randomizados e revisões sistemáticas) que demonstravam a ineficácia da droga.\n\nAlternativa D: Incorreta. Embora os desejos e valores do paciente sejam um dos pilares da MBE, eles não são superiores à evidência científica ou à segurança clínica. O médico tem o dever ético de informar ao paciente quando um desejo (como o uso de ivermectina) não possui respaldo científico e pode causar dano. A decisão é compartilhada, mas baseada em fatos.\n\nAlternativa E: Correta. Esta alternativa aborda o conceito de empirismo sem rigor científico. Muitos profissionais observaram pacientes que melhoraram após usar a droga (acerto aparente) e ignoraram aqueles que pioraram ou os que melhorariam espontaneamente sem o fármaco (erro de percepção). Esse processo de tentativa e erro, sem o uso de grupo-controle ou método científico, cria uma falsa percepção de eficácia, sendo usado para justificar erroneamente condutas que, na verdade, são inseguras e ineficazes.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:40.369Z"
+  }
+]

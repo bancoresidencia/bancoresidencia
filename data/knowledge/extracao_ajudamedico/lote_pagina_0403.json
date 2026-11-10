@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_6fd714ac-7a97-4cf5-8506-ab7f14041f3d",
+    "originalId": "6fd714ac-7a97-4cf5-8506-ab7f14041f3d",
+    "statement": "Homem de 42 anos, IMC 41 kg/m², com refluxo gastroesofágico sintomático documentado por endoscopia (esofagite grau C de Los Angeles) e pHmetria positiva. Sem cirurgias prévias. Deseja tratamento cirúrgico para obesidade. Qual o melhor procedimento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gastrectomia vertical (sleeve), pois é menos complexa tecnicamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Banda gástrica ajustável, pela reversibilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Bypass gástrico em Y de Roux, por tratar obesidade e refluxo concomitantemente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Derivação biliopancreática, pela maior perda ponderal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Mini-bypass gástrico (one anastomosis), pela menor taxa de fístula.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Este caso clínico apresenta um paciente com obesidade grau III (IMC de 41 kg/m²) e doença do refluxo gastroesofágico (DRGE) grave, evidenciada por esofagite erosiva grau C de Los Angeles e pHmetria positiva. O desafio aqui é escolher a técnica bariátrica que trate a obesidade sem agravar o refluxo preexistente.\n\nAlternativa a) Incorreta. A gastrectomia vertical (sleeve) é considerada uma técnica \"refluxogênica\". Ela aumenta a pressão intragástrica, pode levar à hipotonia do esfíncter esofágico inferior e altera o ângulo de His. Em pacientes com esofagite grave (graus C e D de Los Angeles), o sleeve é contraindicado por muitos especialistas, pois há um risco elevado de piora do refluxo e desenvolvimento de esôfago de Barrett no pós-operatório.\n\nAlternativa b) Incorreta. A banda gástrica ajustável caiu em desuso devido às altas taxas de reoperação e complicações a longo prazo. Além disso, ela pode causar estase esofágica e não é o tratamento de escolha para pacientes com refluxo grave documentado.\n\nAlternativa c) Correta. O bypass gástrico em Y de Roux é o padrão-ouro para pacientes obesos com DRGE. O procedimento reduz drasticamente a produção de ácido (devido ao pequeno reservatório gástrico), cria um mecanismo de baixa pressão e a alça em Y de Roux impede o refluxo biliar para o esôfago. É a técnica que oferece o melhor controle dos sintomas de refluxo e a cicatrização da esofagite, tratando as duas patologias simultaneamente.\n\nAlternativa d) Incorreta. As derivações biliopancreáticas (como o Scopinaro ou o Duodenal Switch) são técnicas predominantemente malabsortivas, geralmente reservadas para obesidade extrema (IMC acima de 50 ou 60). Elas não possuem o mesmo efeito antirrefluxo consolidado que o bypass em Y de Roux.\n\nAlternativa e) Incorreta. O mini-bypass gástrico, ou bypass de anastomose única, possui uma configuração em \"alça\" (ômega). Essa anatomia predispõe ao refluxo biliar (refluxo alcalino) para o estômago e, consequentemente, para o esôfago. Para um paciente que já possui esofagite grave, o risco de desenvolver uma esofagite biliar grave torna essa técnica contraindicada.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:27.571Z"
+  },
+  {
+    "id": "AJUDA_6fe0e65b-ca33-4d34-a5ff-dbdf1cee7bf5",
+    "originalId": "6fe0e65b-ca33-4d34-a5ff-dbdf1cee7bf5",
+    "statement": "Mulher de 47 anos apresenta dor abdominal no quadrante superior direito iniciada há 3 dias, associada a náuseas e vômitos. Ela relata que a dor, inicialmente intermitente, tornou-se constante e irradia para o dorso. O exame físico mostra icterícia leve, dor à palpação do quadrante superior direito e sinal de Murphy ausente. Os exames laboratoriais revelam elevação de bilirrubinas (sendo a direta predominante), aumento de fosfatase alcalina e gama-GT, amilase e lipase normais. A ultrassonografia abdominal evidencia múltiplos cálculos na vesícula biliar e dilatação das vias biliares. A colangiorressonância evidencia cálculo no ducto biliar comum (diâmetro de 9 mm), associado a dilatação do colédoco e das vias biliares intra-hepáticas. \n\nNesse caso, a conduta médica adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "prescrever antibióticos e acompanhar a paciente clinicamente até a resolução dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar tomografia computadorizada, antes de qualquer intervenção, para avaliar o estado da via biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar colecistectomia laparoscópica imediatamente, sem necessidade de outros exames ou intervenções.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "indicar colangiopancreatografia retrógrada endoscópica (CPRE) para remoção dos cálculos na via biliar principal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito — dor abdominal no quadrante superior direito, icterícia e exames laboratoriais evidenciando padrão colestático (elevação de bilirrubina direta, fosfatase alcalina e gama-GT) — aponta diretamente para uma obstrução de vias biliares. O diagnóstico de coledocolitíase (presença de cálculo no ducto biliar comum) foi confirmado pela colangiorressonância, que mostrou um cálculo de 9 mm e dilatação das vias biliares.\n\nAlternativa a: Incorreta. A coledocolitíase é uma obstrução mecânica. Prescrever apenas antibióticos e observar a paciente é uma conduta inadequada, pois não resolve a causa da obstrução. O tratamento requer a remoção do cálculo para prevenir complicações graves, como colangite aguda ou pancreatite biliar.\n\nAlternativa b: Incorreta. A tomografia computadorizada tem menor sensibilidade para identificar cálculos biliares quando comparada à colangiorressonância. Como a colangiorressonância já confirmou o diagnóstico e a localização exata do cálculo, a TC seria um exame redundante que não alteraria a conduta e atrasaria a intervenção necessária.\n\nAlternativa c: Incorreta. A colecistectomia (retirada da vesícula biliar) é indicada para tratar a colelitíase e evitar novos episódios; porém, se realizada isoladamente, sem tratar o colédoco, o cálculo que está obstruindo a via biliar principal permaneceria lá, mantendo a icterícia e o risco de complicações. Em casos de coledocolitíase, deve-se realizar a limpeza da via biliar antes ou durante o ato cirúrgico da colecistectomia.\n\nAlternativa d: Correta. A colangiopancreatografia retrógrada endoscópica (CPRE) é o procedimento de escolha para o tratamento da coledocolitíase confirmada. Trata-se de um procedimento minimamente invasivo que permite a realização de papilotomia e extração de cálculos do ducto biliar comum, apresentando altas taxas de sucesso na desobstrução da via biliar.\n\nEm resumo, diante de uma paciente com coledocolitíase sintomática confirmada por exame de imagem de alta resolução (colangiorressonância), a conduta terapêutica imediata é a desobstrução da via biliar principal, preferencialmente por via endoscópica (CPRE).",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:27.571Z"
+  },
+  {
+    "id": "AJUDA_6fe14749-5001-4fd3-bb48-33cb221195bd",
+    "originalId": "6fe14749-5001-4fd3-bb48-33cb221195bd",
+    "statement": "Considerando os princípios da estatística, se um mesmo número for somado a todos os elementos de um conjunto de dados, o que acontecerá com a média e com o desvio padrão?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento do valor da média correspondente ao número adicionado e aumento do valor do desvio-padrão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumento do valor da média correspondente ao número adicionado e inalteração do valor do desvio-padrão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Redução do valor da média correspondente ao número adicionado e redução do valor do desvio-padrão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução do valor da média correspondente ao número adicionado e aumento do valor do desvio-padrão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "CONCEITOS FUNDAMENTAIS\n\nNa bioestatística, as medidas de tendência central e de dispersão reagem de formas diferentes a transformações matemáticas nos dados. Para resolver esta questão, devemos entender o comportamento da média e do desvio-padrão diante de uma operação de soma constante.\n\nMÉDIA ARITMÉTICA\n\nA média é uma medida de posição. Se todos os valores de um conjunto de dados forem aumentados por uma constante (somar um mesmo número a todos os elementos), todo o conjunto se desloca para a direita na reta numérica. Como resultado, a nova média será exatamente a média original somada a esse valor constante. Por exemplo, se um grupo de pacientes ganha 2 kg cada, a média de peso do grupo aumentará exatamente 2 kg.\n\nDESVIO-PADRÃO\n\nO desvio-padrão é uma medida de dispersão que indica o quão afastados os dados estão da média, ou seja, a variabilidade do conjunto. Quando somamos um mesmo valor a todos os elementos, as distâncias entre os valores individuais permanecem rigorosamente as mesmas. Como a dispersão ou o espalhamento dos dados não sofre alteração, o desvio-padrão permanece inalterado.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Embora a média aumente corretamente, o desvio-padrão não aumenta. O desvio-padrão só aumentaria se os dados se tornassem mais espalhados entre si (o que ocorreria em uma multiplicação, por exemplo).\n\nAlternativa b) Correta. Reflete as propriedades estatísticas de translação: a média (medida de posição) é alterada pela soma, enquanto o desvio-padrão (medida de dispersão) permanece constante, pois a distância relativa entre os dados não mudou.\n\nAlternativa c) Incorreta. Ao somar um número positivo a todos os elementos, a média obrigatoriamente aumenta, e não reduz. Além disso, o desvio-padrão não sofre redução; ele permanece igual.\n\nAlternativa d) Incorreta. A média aumenta com a soma de um valor positivo, e o desvio-padrão não sofre alteração, pois a variabilidade interna do conjunto de dados foi preservada.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:27.571Z"
+  },
+  {
+    "id": "AJUDA_6fe92d9c-c856-43a4-828b-2ed555229d70",
+    "originalId": "6fe92d9c-c856-43a4-828b-2ed555229d70",
+    "statement": "A Estratégia de Atenção Integrada às Doenças Prevalentes na Infância (AIDPI) é uma abordagem padronizada para o atendimento infantil, que tem como objetivo principal a redução da mortalidade e da morbidade em uma faixa etária específica.\nDe acordo com o manual do Ministério da Saúde, qual é a faixa etária contemplada pela estratégia AIDPI CRIANÇA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nascimento aos 2 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nascimento até 4 anos, 11 meses e 29 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2 meses até 4 anos, 11 meses e 29 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "2 anos até 9 anos, 11 meses e 29 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Estratégia de Atenção Integrada às Doenças Prevalentes na Infância (AIDPI), elaborada pela OMS/OPAS e adotada pelo Ministério da Saúde do Brasil, tem como foco a redução da morbimortalidade em menores de 5 anos. Para fins de abordagem clínica e sistematização da conduta, a estratégia é dividida em dois grandes módulos: o AIDPI Neonatal (voltado para o recém-nascido e lactente jovem até 2 meses incompletos) e o AIDPI Criança (voltado para a faixa etária de 2 meses até menores de 5 anos).\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. A faixa do nascimento aos 2 anos não corresponde à divisão técnica da estratégia. Além disso, os menores de 2 meses são contemplados no módulo neonatal e a estratégia geral se estende até menores de 5 anos.\n\nAlternativa B - Incorreta. O período do nascimento até 4 anos, 11 meses e 29 dias representa o público-alvo total da estratégia AIDPI somando seus módulos, mas não a faixa específica da AIDPI Criança, que exclui os menores de 2 meses de idade.\n\nAlternativa C - Correta. O manual da AIDPI Criança destina-se especificamente à avaliação, classificação e tratamento de crianças a partir de 2 meses até 4 anos, 11 meses e 29 dias (menores de 5 anos). \n\nAlternativa D - Incorreta. Essa faixa etária exclui os lactentes jovens (entre 2 meses e 2 anos), que são os mais vulneráveis às doenças prevalentes cobertas pelo protocolo, e inclui faixas etárias escolares (acima de 5 anos) que não são o foco da AIDPI básica.\n\nAlternativa E - Incorreta. A alternativa C contempla com precisão a definição do manual do Ministério da Saúde.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:27.571Z"
+  },
+  {
+    "id": "AJUDA_6ff6438f-445e-4780-8b01-b921563ebddd",
+    "originalId": "6ff6438f-445e-4780-8b01-b921563ebddd",
+    "statement": "84- Durante uma visita domiciliar, uma equipe de Saúde da Família identifica que uma idosa acamada, portadora de uma doença crônica não transmissível em estágio avançado, recebe cuidados apenas da filha, que não possui qualificação técnica para a manipulação dos equipamentos e curativos. A filha relata cansaço extremo e dificuldade em conciliar os cuidados com o próprio trabalho. A equipe de saúde, então, elabora um plano de cuidados que inclui a capacitação da filha, o agendamento de visitas periódicas de enfermagem para o auxílio nos procedimentos e o apoio psicossocial para a cuidadora. Essa atuação da equipe, conforme a Lei nº 8.080/1990, representa a aplicação de qual princípio do SUS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Princípio da universalidade, pois a idosa, como todos os cidadãos, tem direito ao acesso a ações de saúde de forma gratuita e indiscriminada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Princípio da equidade, garantindo a adaptação das ações de saúde às necessidades específicas da idosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Princípio da resolutividade, uma vez que a equipe da Atenção Primária resolve o problema dentro de sua competência, sem necessidade de referenciar o caso para outros níveis de atenção, garantindo a resolutividade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Princípio da integralidade da assistência, que se manifesta no cuidado holístico, que abrange desde os aspectos físicos (curativos, manipulação de equipamentos) até o suporte psicossocial à cuidadora.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda a aplicação prática dos princípios doutrinários e organizativos do Sistema Único de Saúde (SUS), conforme estabelecidos na Lei nº 8.080/1990, dentro do contexto da Atenção Primária à Saúde.\n\nAlternativa a: Incorreta. O princípio da universalidade estabelece que a saúde é um direito de todos e dever do Estado, garantindo o acesso de qualquer cidadão aos serviços de saúde. Embora a idosa esteja exercendo esse direito ao ser atendida em domicílio, a alternativa não descreve a essência da conduta da equipe, que foi além de apenas permitir o acesso, focando na complexidade do cuidado oferecido.\n\nAlternativa b: Incorreta. A equidade fundamenta-se em tratar desigualmente os desiguais para alcançar a justiça social, ou seja, oferecer mais recursos ou atenção a quem possui maiores necessidades. Apesar de o plano ser personalizado para aquela realidade, o enunciado foca na articulação de diversas esferas de cuidado (físico, técnico e psicológico), o que remete diretamente a outro princípio.\n\nAlternativa c: Incorreta. A resolutividade é a capacidade de um serviço de saúde de resolver o problema de saúde que lhe é apresentado, utilizando os recursos disponíveis. Embora a equipe esteja buscando ser resolutiva ao estruturar o plano de cuidados, a resolutividade é frequentemente vista como um objetivo ou diretriz organizacional, enquanto a questão busca o princípio que fundamenta a visão holística e multidisciplinar da assistência.\n\nAlternativa d: Correta. O princípio da integralidade da assistência é definido pela Lei nº 8.080/1990 como um conjunto articulado e contínuo de ações e serviços, preventivos e curativos, nos diversos níveis de complexidade. No cenário descrito, a integralidade se manifesta quando a equipe de saúde enxerga a situação para além da doença crônica: eles tratam o aspecto biológico (curativos), o aspecto educativo (capacitação da filha) e o aspecto biopsicossocial (apoio à cuidadora). Essa abordagem multidimensional, que considera o indivíduo e seu contexto familiar como um todo, é a tradução prática da integralidade.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Atenção Primária à Saúde",
+      "Princípios e Diretrizes do SUS",
+      "Saúde do Idoso",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:27.571Z"
+  },
+  {
+    "id": "AJUDA_6ffd3870-3b8e-495f-9736-8d4560becf86",
+    "originalId": "6ffd3870-3b8e-495f-9736-8d4560becf86",
+    "statement": "Em um estudo de coorte, após dez anos de seguimento, a incidência de doença coronariana entre fumantes e não fumantes foi igual a, respectivamente, 5 casos por 1.000 pessoas ano e 1 caso por 1.000 pessoas ano. Por meio de um inquérito dirigido à população total que serviu como fonte para a seleção dos participantes do estudo de coorte, estimou-se em 50% a prevalência do tabagismo. Pode-se afirmar, com base nestas informações, que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "50% dos casos de doença coronariana na população total são atribuíveis ao tabagismo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "80% dos casos de doença coronariana entre os fumantes são atribuíveis ao tabagismo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a incidência de doença coronariana entre os fumantes, atribuível ao tabagismo, é de 2,5/1.000",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a incidência de doença coronariana na população total, atribuível ao tabagismo, é de 0,5/1",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão de epidemiologia, é necessário aplicar as fórmulas de medidas de associação e de impacto em saúde pública a partir dos dados fornecidos pelo estudo de coorte.\n\nDados iniciais:\nIncidência entre fumantes (Expostos - Ie): 5 por 1.000 pessoas-ano.\nIncidência entre não fumantes (Não Expostos - Io): 1 por 1.000 pessoas-ano.\nPrevalência do tabagismo na população (P): 50% ou 0,5.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Esta alternativa refere-se à Fração Atribuível Populacional (FAP), que calcula a proporção de casos na população total que são devidos ao fator de risco. Primeiro, calculamos a Incidência na População total (Ip): Ip = (Ie * P) + (Io * (1 - P)). Ip = (5 * 0,5) + (1 * 0,5) = 2,5 + 0,5 = 3 por 1.000 pessoas-ano. Agora, aplicamos a fórmula da FAP = (Ip - Io) / Ip. FAP = (3 - 1) / 3 = 2 / 3, o que resulta em aproximadamente 66,7%. Portanto, não é 50%.\n\nAlternativa b) Correta. Esta alternativa pede a Fração Atribuível no Exposto (FAe), também conhecida como Risco Atribuível Percentual. Ela mede a proporção da doença entre os expostos que é especificamente causada pelo fator de risco (tabagismo). A fórmula é: FAe = (Ie - Io) / Ie. Substituindo os valores: FAe = (5 - 1) / 5 = 4 / 5 = 0,8. Transformando em porcentagem, temos 80%. Isso significa que 80% dos casos de doença coronariana entre fumantes são atribuíveis ao cigarro.\n\nAlternativa c) Incorreta. A incidência de doença coronariana entre os fumantes atribuível ao tabagismo é o Risco Atribuível (RA) ou Diferença de Riscos. O cálculo é: RA = Ie - Io. RA = 5 - 1 = 4 por 1.000 pessoas-ano. O valor de 2,5 mencionado na alternativa está incorreto.\n\nAlternativa d) Incorreta. A incidência na população total atribuível ao tabagismo é o Risco Atribuível Populacional (RAP). O RAP indica quantos casos na população geral podem ser creditados ao fator de risco. A fórmula é: RAP = Ip - Io. Como calculado anteriormente, a Ip é 3 por 1.000 e a Io é 1 por 1.000. Logo, RAP = 3 - 1 = 2 por 1.000 pessoas-ano. O valor de 0,5 por 1 apresentado na alternativa é matematicamente muito superior ao resultado real.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:27.572Z"
+  },
+  {
+    "id": "AJUDA_700b8655-477e-4e45-af8b-ed8ebad12f1d",
+    "originalId": "700b8655-477e-4e45-af8b-ed8ebad12f1d",
+    "statement": "Paciente de 48 anos, portador de doença autoimune, em uso recente de corticoide associados a ciclosporina. Refere que apresenta febre e dor abdominal há uma semana, associado à diarreia aquosa de forte intensidade. Devido à suspeita de Clostridium, foram coletados alguns exames e iniciado tratamento após o resultado dos mesmos. Sobre essa condição, é INCORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O exame de maior sensibilidade é o NAAT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O clostridium pode produzir tanto toxinas A quanto toxinas B. Devido ao alto volume de toxinas necessárias para positivar o teste, há alta incidência de falso negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A avaliação do GDH tem alta sensibilidade, indicando sua presença apenas nas cepas toxigênicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O Tratamento com fidaxomicina pode ser utilizado para primeiro episódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o diagnóstico e o tratamento da infecção pelo Clostridioides difficile (anteriormente chamado de Clostridium difficile), uma causa importante de diarreia em pacientes imunossuprimidos ou em uso de antibióticos. Vamos analisar cada alternativa para identificar a incorreta:\n\nAlternativa A (Correta): O NAAT (Teste de Amplificação de Ácido Nucleico), como o PCR, detecta a presença dos genes que codificam as toxinas nas fezes. É, de fato, o exame com maior sensibilidade (frequentemente acima de 95%), sendo excelente para excluir a presença da bactéria quando o resultado é negativo.\n\nAlternativa B (Correta): O C. difficile produz principalmente duas toxinas: a Toxina A (enterotoxina) e a Toxina B (citotoxina). Os testes de imunoensaio (EIA) para detecção direta dessas toxinas possuem uma sensibilidade menor (variando entre 60% e 80%) porque dependem de uma quantidade considerável de toxina livre na amostra para serem detectadas. Por isso, um teste de toxina negativo não exclui a doença, caracterizando a alta incidência de falsos-negativos nesse método específico.\n\nAlternativa C (Incorreta - Gabarito): O GDH (Glutamato Desidrogenase) é uma enzima produzida em larga escala por todas as cepas de C. difficile. Por ser produzida tanto por cepas toxigênicas (que causam doença) quanto por cepas não toxigênicas (que apenas colonizam o intestino sem causar dano), o GDH tem alta sensibilidade, mas baixa especificidade. Ele serve como um excelente teste de triagem inicial: se for negativo, exclui a doença com segurança; se for positivo, é necessário realizar um segundo teste (como pesquisa de toxinas ou NAAT) para confirmar se a cepa presente é realmente produtora de toxina. Portanto, a afirmação de que ele indica a presença apenas em cepas toxigênicas está errada.\n\nAlternativa D (Correta): Segundo as diretrizes internacionais mais recentes (como as da IDSA/SHEA), a fidaxomicina passou a ser recomendada como uma das opções preferenciais de primeira linha para o tratamento do primeiro episódio de infecção por C. difficile, ao lado da vancomicina oral. A fidaxomicina tem a vantagem de apresentar menores taxas de recorrência da doença.\n\nResumo: O erro da alternativa C reside no fato de o GDH ser um marcador da presença da bactéria (espécie), e não especificamente da sua capacidade de produzir toxinas.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Hemorragia Digestiva Baixa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:27.572Z"
+  },
+  {
+    "id": "AJUDA_700bdb43-f613-458c-8133-3db5b8c77265",
+    "originalId": "700bdb43-f613-458c-8133-3db5b8c77265",
+    "statement": "Pacientes em uso de bloqueadores de receptores PY12 nas plaquetas (clopidogrel) que serão submetidos à cirurgia de herniorrafia inguino-escrotal, o seu uso deverá ser suspenso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 - 3 dias antes da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "14 dias antes da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "5 - 7 dias antes da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Apenas na véspera da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Seu uso não deverá ser suspenso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O clopidogrel é um medicamento antiagregante plaquetário que atua bloqueando de forma irreversível os receptores P2Y12 de adenosina difosfato (ADP) nas plaquetas. Por se tratar de uma ligação irreversível, o efeito do fármaco persiste por toda a vida útil da plaqueta, que dura em média de 7 a 10 dias. Em procedimentos cirúrgicos eletivos, como a herniorrafia inguino-escrotal, o objetivo da suspensão é permitir a produção de novas plaquetas funcionais para garantir uma hemostasia segura.\n\nAlternativa (c): Está correta. As principais diretrizes nacionais e internacionais recomendam a suspensão do clopidogrel entre 5 a 7 dias antes de procedimentos cirúrgicos eletivos. Esse intervalo é suficiente para que cerca de 50% a 70% da população plaquetária seja renovada, o que é considerado adequado para prevenir sangramentos excessivos e formação de hematomas no pós-operatório.\n\nAlternativa (a): Está incorreta. O período de 2 a 3 dias é insuficiente para a recuperação da função plaquetária necessária para uma cirurgia desse porte, mantendo o paciente em risco de sangramento.\n\nAlternativa (b): Está incorreta. O prazo de 14 dias é excessivo. Suspender a antiagregação por um período tão longo aumenta desnecessariamente o risco de eventos tromboembólicos e cardiovasculares, sem oferecer ganho adicional na segurança cirúrgica em relação ao prazo de 7 dias.\n\nAlternativa (d): Está incorreta. Como o clopidogrel inibe a plaqueta de forma permanente, a suspensão apenas na véspera não tem efeito prático na recuperação da agregação plaquetária para o momento da operação.\n\nAlternativa (e): Está incorreta. A herniorrafia inguino-escrotal, embora seja um procedimento comum, envolve uma área com potencial para sangramento e formação de grandes hematomas no saco escrotal. Diferente de pequenos procedimentos dermatológicos ou odontológicos, nela recomenda-se a interrupção do antiagregante plaquetário para evitar complicações hemorrágicas.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:27.572Z"
+  },
+  {
+    "id": "AJUDA_700c931f-9cb9-41a7-8c32-9348a7713e23",
+    "originalId": "700c931f-9cb9-41a7-8c32-9348a7713e23",
+    "statement": "A Síndrome do Intestino Irritável (SII) é um distúrbio funcional do trato gastrointestinal que impacta significativamente a qualidade de vida dos pacientes. A característica CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A dor abdominal está frequentemente associada à anorexia e desnutrição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A dor abdominal costuma piorar com alimentação e estresse.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A dor abdominal raramente melhora com a eliminação de fezes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A dor abdominal geralmente acorda o paciente durante o sono.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Síndrome do Intestino Irritável (SII) é um distúrbio funcional comum, definido pelos Critérios de Roma IV como dor abdominal recorrente associada a alterações no hábito intestinal (constipação, diarreia ou ambos). Para responder a essa questão, é fundamental diferenciar as características típicas de um distúrbio funcional daquelas que sugerem doenças orgânicas (sinais de alerta).\n\nAlternativa A - Incorreta: A SII não costuma cursar com anorexia ou desnutrição. Esses são considerados sinais de alerta ou sintomas de alarme (*red flags*). A presença de perda de peso significativa, anemia ou desnutrição deve conduzir o médico a investigar causas orgânicas, como neoplasias, doença celíaca ou doenças inflamatórias intestinais (DII).\n\nAlternativa B - Correta: Esta alternativa descreve perfeitamente o comportamento clínico da SII. A dor abdominal é frequentemente exacerbada pela ingestão de alimentos, muitas vezes devido a um reflexo gastrocólico hipersensível. Além disso, a forte conexão do eixo cérebro-intestino faz com que o estresse psicológico e a ansiedade sejam gatilhos primordiais para o surgimento ou a piora dos sintomas.\n\nAlternativa C - Incorreta: Uma das características clássicas da SII é justamente a relação da dor com a defecação. Embora os Critérios de Roma IV descrevam que a dor está relacionada à evacuação (podendo melhorar ou piorar), a apresentação mais comum relatada pelos pacientes é o alívio ou a melhora do desconforto após a eliminação de fezes ou gases.\n\nAlternativa D - Incorreta: A dor que acorda o paciente durante o sono (dor noturna) é um sinal de alerta clássico na gastroenterologia. Distúrbios funcionais, como a SII, geralmente manifestam sintomas apenas durante o período de vigília. Se o paciente desperta devido à dor ou à diarreia, a probabilidade de uma patologia orgânica (como infecções ou doenças inflamatórias) é muito maior.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Síndrome do Intestino Irritável"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:27.572Z"
+  },
+  {
+    "id": "AJUDA_700eacec-d93c-4986-9825-351610a4ec45",
+    "originalId": "700eacec-d93c-4986-9825-351610a4ec45",
+    "statement": "Sobre estática fetal, a variedade de posição representada na figura abaixo é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Podálica direita anterior",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sacro direita posterior",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sacro esquerda anterior",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Podálica esquerda anterior",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Sacro direita anterior",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para identificar a variedade de posição, devemos analisar três componentes na estática fetal: a apresentação, o ponto de referência e a relação deste ponto com a bacia materna.\n\n1. Apresentação: A imagem mostra o polo pélvico do feto (nádegas e pés) voltado para o canal de parto. Trata-se, portanto, de uma apresentação pélvica.\n2. Ponto de referência: Na apresentação pélvica, o ponto de referência oficial é o sacro (S) do feto.\n3. Orientação na bacia: Observando a pelve materna de frente (visão do examinador), o dorso e o sacro do feto estão voltados para o lado direito da mãe. Além disso, o sacro está direcionado para a região posterior da pelve materna (em direção ao sacro materno), e não para o púbis.\n\nAnálise das alternativas:\n\na) Incorreta. O termo \"podálica\" é usado para descrever a apresentação, mas a nomenclatura da variedade de posição exige o ponto de referência específico (sacro). Além disso, a posição é posterior, não anterior.\n\nb) Correta. O ponto de referência é o sacro. Ele está localizado no lado direito da pelve materna e voltado para a parte posterior da bacia. Isso configura a variedade Sacro Direita Posterior (SDP).\n\nc) Incorreta. O feto está com o sacro voltado para o lado direito da pelve materna, e a orientação é posterior, não anterior.\n\nd) Incorreta. O lado está incorreto (é direita, não esquerda) e a orientação também (é posterior, não anterior). O termo \"podálica\" também não é o preferencial para designar a variedade de posição.\n\ne) Incorreta. Embora o lado esteja correto (direita), a imagem mostra o sacro fetal voltado para a parte de trás da bacia materna (posterior), e não para a frente (anterior/púbis).",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/915024d71ab78f02a4401ba5d3736321b15090647bc6a2dd4436eddd6f3d64af.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_700eacec-d93c-4986-9825-351610a4ec45_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:28.033Z"
+  }
+]

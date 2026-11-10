@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_a83afd69-9a6b-44e0-beb0-c32597d7a7f6",
+    "originalId": "a83afd69-9a6b-44e0-beb0-c32597d7a7f6",
+    "statement": "Lactente de 7 meses apresenta lacrimejamento excessivo em olho esquerdo (OE). AP: nascida com 35 semanas de IG, parto cesáreo. Exame ocular: cílios grudados, filme lacrimal aumentado em OE, sem lesões de superfície ocular, presença de secreção à expressão do canto medial do OE.\nO diagnóstico correto é",
+    "options": [
+      {
+        "id": "A",
+        "text": "glaucoma congênito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "conjuntivite química.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "dacrioestenose congênita.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "oftalmia neonatal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico de dacrioestenose congênita, uma condição frequente em lactentes. Vamos analisar os achados e por que a alternativa (c) é a correta, diferenciando-a das demais opções.\n\nAlternativa (c): Dacrioestenose congênita. Esta é a alternativa correta. A dacrioestenose ocorre pela obstrução do ducto nasolacrimal, geralmente devido à persistência de uma membrana na sua porção distal (válvula de Hasner). Os sinais cardinais são o lacrimejamento contínuo (epífora) e o acúmulo de secreção mucosa ou mucopurulenta, que faz com que os cílios fiquem grudados ao acordar. O sinal patognomônico citado no caso é a expressão de secreção pelo ponto lacrimal ao pressionar o canto medial (região do saco lacrimal). Como não há lesão na superfície ocular ou hiperemia importante, o diagnóstico clínico é confirmado.\n\nAlternativa (a): Glaucoma congênito. Embora o glaucoma congênito também cause lacrimejamento, ele costuma vir acompanhado de uma tríade clássica: epífora, fotofobia (sensibilidade à luz) e blefaroespasmo (contração involuntária das pálpebras). Além disso, no exame físico, notaríamos buftalmia (olho aumentado de tamanho) e edema de córnea (aspecto turvo ou azulado), achados que não estão presentes no caso clínico.\n\nAlternativa (b): Conjuntivite química. Esta condição ocorre quase exclusivamente nas primeiras 24 a 48 horas de vida do recém-nascido, sendo uma reação inflamatória ao uso do nitrato de prata (método de Credé) para prevenção de oftalmia neonatal. O paciente da questão tem 7 meses, o que exclui essa hipótese cronologicamente.\n\nAlternativa (d): Oftalmia neonatal. A oftalmia neonatal refere-se a conjuntivites infecciosas agudas (causadas principalmente por clamídia ou gonococo) que ocorrem no primeiro mês de vida. Elas se manifestam com forte hiperemia conjuntival, edema palpebral importante e secreção purulenta abundante. O paciente em questão está fora da faixa etária neonatal e não apresenta sinais de inflamação aguda da conjuntiva.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndrome do Olho Vermelho"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:29:22.550Z"
+  },
+  {
+    "id": "AJUDA_a84ba8c0-1582-4a40-a4e6-16692ee4204d",
+    "originalId": "a84ba8c0-1582-4a40-a4e6-16692ee4204d",
+    "statement": "Considerando-se os quadros de diarreia aguda, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Período de incubação causado pelo *S. aureus* é, em média, de 1-6 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Causados por norovírus, mais frequentemente observados em meses do verão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Causados pela *Giardia lamblia*, e o tratamento mais recomendado é com quinolona em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Causados por rotavírus, que raramente cursa com quadro de epigastralgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Recidiva causada pelo *Clostridium difficile* é, em geral, da ordem de 5%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): A intoxicação alimentar pelo Staphylococcus aureus é causada pela ingestão de enterotoxinas pré-formadas no alimento contaminado. Devido ao fato de a toxina já estar pronta, a ação no trato gastrointestinal é imediata, resultando em um período de incubação muito curto, tipicamente entre 1 e 6 horas. Os sintomas predominantes são náuseas, vômitos e cólicas abdominais.\n\nAlternativa B (Incorreta): O norovírus é a principal causa de gastroenterite viral em adultos e crianças em todo o mundo. Embora os surtos possam ocorrer em qualquer período do ano, em regiões de clima temperado é comum observar um aumento de casos durante os meses de inverno (conhecido em alguns locais como a virose do vômito de inverno), e não especificamente no verão.\n\nAlternativa C (Incorreta): A Giardia lamblia é um protozoário flagelado. O tratamento preconizado para a giardíase baseia-se no uso de derivados nitroimidazólicos, como o Metronidazol (por 5 a 7 dias) ou o Tinidazol e Secnidazol (em dose única), além da Nitazoxanida. As quinolonas (como Ciprofloxacino) são antibióticos utilizados para tratar diarreias bacterianas invasivas e não têm eficácia contra protozoários.\n\nAlternativa D (Incorreta): O rotavírus é uma causa frequente de diarreia aquosa, especialmente em crianças não vacinadas. O quadro clínico costuma ser precedido por vômitos e dor abdominal, que pode se manifestar como epigastralgia ou desconforto em andar superior do abdômen. Dizer que o quadro raramente cursa com essa sintomatologia está incorreto do ponto de vista clínico.\n\nAlternativa E (Incorreta): A taxa de recidiva da infecção pelo Clostridioides difficile (antigo Clostridium) é significativamente superior a 5%. Estima-se que cerca de 20% a 25% dos pacientes apresentem recorrência dos sintomas após o tratamento do primeiro episódio. Esse risco é ainda maior (podendo chegar a 50-60%) em pacientes que já tiveram duas ou mais recidivas anteriores.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diarreia",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:29:22.550Z"
+  },
+  {
+    "id": "AJUDA_a84f5f69-339b-464d-a349-2d9a35dfb373",
+    "originalId": "a84f5f69-339b-464d-a349-2d9a35dfb373",
+    "statement": "Homem de 62 anos, previamente hipertenso, é admitido no pronto atendimento por déficit neurológico súbito iniciado há 2 horas: paresia facial central à esquerda, disartria leve e paresia braquial esquerda discreta.\nExame neurológico: NIHSS = 3 pontos.\nTC de crânio: sem sinais de hemorragia ou alterações isquêmicas extensas.\nPaciente está hemodinamicamente estável e sem contraindicações para antiagregação.\nQual a conduta mais adequada neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar anticoagulação plena com enoxaparina 1mg por kg a cada 12 horas subcutânea até elucidação da etiologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter apenas aspirina em monoterapia, visto que o déficit foi mínimo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar trombólise com alteplase intravenosa, com 0,9mg/kg sendo 10% realizado em bolus e o restante em 1 hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar dupla antiagregação plaquetária com AAS + Clopidogrel, por tempo limitado, para prevenção de novos eventos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Indicar trombectomia mecânica, pois atualmente é considerado o padrão ouro em pacientes com NIHSS superior a 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve um paciente com Acidente Vascular Cerebral Isquêmico (AVCi) agudo, apresentando um déficit neurológico leve, caracterizado por uma pontuação na escala NIHSS de 3. Esse cenário é classificado como AVC minor (ou AVC menor), definido geralmente por um NIHSS menor ou igual a 3.\n\nA conduta para esses casos foi modificada nos últimos anos com base em grandes estudos clínicos, como o CHANCE e o POINT. A seguir, analisamos cada alternativa:\n\nAlternativa a) Incorreta. A anticoagulação plena (com enoxaparina ou heparina) não está indicada na fase aguda do AVC isquêmico. Seu uso não previne a recorrência imediata e aumenta significativamente o risco de transformação hemorrágica da área infartada. A anticoagulação pode ser considerada posteriormente se for identificada uma fonte cardioembólica (como fibrilação atrial), mas não como conduta inicial no pronto-atendimento.\n\nAlternativa b) Incorreta. Embora a aspirina (AAS) tenha sido o padrão por muito tempo, evidências atuais mostram que a monoterapia é inferior à dupla antiagregação plaquetária para prevenir novos eventos isquêmicos nos primeiros dias após um AVC minor ou um Ataque Isquêmico Transitório (AIT) de alto risco.\n\nAlternativa c) Incorreta. O uso de trombolítico endovenoso (alteplase) é indicado para pacientes com déficits neurológicos moderados a graves ou déficits leves que sejam considerados incapacitantes (como afasia grave, perda visual ou fraqueza que impeça a marcha). No caso descrito, o paciente apresenta paresia discreta e disartria leve, totalizando NIHSS 3, o que não configura um déficit incapacitante que justifique o risco de sangramento da trombólise. Para AVC minor não incapacitante, a preferência atual é a dupla antiagregação.\n\nAlternativa d) Correta. Em pacientes com AVC minor (NIHSS menor ou igual a 3) ou AIT de alto risco (ABCD2 maior ou igual a 4), a conduta de escolha, quando não há indicação de trombólise, é iniciar a dupla antiagregação plaquetária com AAS e clopidogrel. Essa estratégia deve ser iniciada nas primeiras 24 horas e mantida por um período limitado (geralmente 21 dias, conforme o protocolo CHANCE), seguida de monoterapia com um dos agentes para prevenção secundária a longo prazo. Essa conduta reduz o risco de um novo AVC isquêmico no período de maior vulnerabilidade do paciente.\n\nAlternativa e) Incorreta. A trombectomia mecânica é um procedimento invasivo indicado para oclusões de grandes vasos da circulação anterior (como carótida interna ou segmento M1 da artéria cerebral média). Geralmente, é indicada para pacientes com NIHSS maior ou igual a 6. Um NIHSS de 2 ou 3 é baixo demais para os critérios de trombectomia, a menos que haja uma oclusão proximal com déficit rapidamente progressivo ou incapacitante, o que não é o caso descrito. Além disso, a afirmação de que o NIHSS superior a 2 é o padrão-ouro para trombectomia está factualmente errada.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:29:22.550Z"
+  },
+  {
+    "id": "AJUDA_a85ed12e-9c81-402b-b6b1-e2758933a10b",
+    "originalId": "a85ed12e-9c81-402b-b6b1-e2758933a10b",
+    "statement": "Mulher, 47 anos, com doença de Crohn otimamente tradada, persiste com área de 15cm de estenose em íleo distal. Indicado procedimento cirúrgico. Confirmou-se que havia apenas este segmento estenosado. A conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ressecção do segmento afetado com anastomose primária",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "ressecção com confecção de ileostomia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "entero-entero anastomose, com bypass da área estenosada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "estrituroplastia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o tratamento cirúrgico da doença de Crohn estenosante. O ponto fundamental para a escolha da técnica é a extensão da estenose e o estado clínico da paciente.\n\nAnálise das alternativas:\n\na) CORRETA. A ressecção segmentar (enterectomia) com anastomose primária é o tratamento de escolha para estenoses longas (geralmente acima de 10 a 12 cm) ou quando há um segmento único e isolado de doença, como é o caso desta paciente (15 cm no íleo distal). Como a paciente está \"otimamente tratada\" (estável e sem sinais de sepse ou desnutrição grave), a realização de uma anastomose primária é segura e recomendada.\n\nb) INCORRETA. A confecção de uma ileostomia após a ressecção é reservada para situações de urgência, como peritonite por perfuração, vigência de sepse abdominal, desnutrição grave ou uso de altas doses de corticoterapia, onde o risco de deiscência da anastomose é muito elevado. O enunciado descreve uma paciente em boas condições clínicas.\n\nc) INCORRETA. O bypass (anastomose entre alças contornando o segmento doente) caiu em desuso no tratamento da doença de Crohn. Essa técnica deixa o segmento doente \"excluído\" no abdome, o que mantém o risco de inflamação persistente, formação de abscessos e, a longo prazo, o risco de degeneração maligna (adenocarcinoma) no segmento desviado.\n\nd) INCORRETA. A estrituroplastia (plástica da estenose) é uma técnica poupadora de intestino, indicada principalmente para pacientes com múltiplas estenoses curtas (geralmente menores que 10 cm) ou naqueles que já sofreram múltiplas ressecções prévias e têm risco de síndrome do intestino curto. Para uma estenose única de 15 cm, a estrituroplastia (que teria que ser do tipo Finney para essa extensão) é menos vantajosa que a ressecção, pois a retirada de 15 cm de íleo não traz risco de intestino curto e remove efetivamente o foco da doença.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:29:22.550Z"
+  },
+  {
+    "id": "AJUDA_a8621185-7037-4c1a-8210-7cca099e7ff7",
+    "originalId": "a8621185-7037-4c1a-8210-7cca099e7ff7",
+    "statement": "A lesão do primeiro neurônio motor gera uma síndrome conhecida como síndrome do primeiro neurônio motor ou síndrome piramidal. Além do déficit motor, também são achados desta síndrome os seguintes sinais:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hiperreflexia e clônus.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hoffman e hipotonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Babinski e amiotrofia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "espasticidade e fasciculações.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A síndrome do primeiro neurônio motor, ou síndrome piramidal, decorre da interrupção da via corticoespinhal. Como esse neurônio exerce um papel inibitório sobre o arco reflexo medular, sua lesão resulta em sinais de \"liberação\" ou hiperexcitabilidade nervosa.\n\nAlternativa (a): Correta. A hiper-reflexia (exacerbação dos reflexos profundos) e o clônus (série de contrações rítmicas e involuntárias desencadeadas pelo estiramento muscular) são sinais clássicos de liberação piramidal. Eles ocorrem porque a medula perde a modulação inibitória superior, tornando-se hiperexcitável.\n\nAlternativa (b): Incorreta. O sinal de Hoffmann (flexão do polegar e do indicador ao pressionar a unha do dedo médio) é, de fato, um sinal de lesão do primeiro neurônio motor nos membros superiores. No entanto, a hipotonia (redução do tônus muscular) é uma característica da síndrome do segundo neurônio motor. Na lesão piramidal, o tônus está aumentado (hipertonia espástica).\n\nAlternativa (c): Incorreta. O sinal de Babinski (extensão do hálux ao estimular a planta do pé) é o sinal patognomônico da lesão do primeiro neurônio motor. Contudo, a amiotrofia (atrofia muscular importante e precoce) é típica da lesão do segundo neurônio motor. Na lesão piramidal, a atrofia é mínima ou ausente, ocorrendo apenas tardiamente por desuso.\n\nAlternativa (d): Incorreta. A espasticidade é a forma de hipertonia característica da síndrome piramidal. Entretanto, as fasciculações (contrações musculares finas e involuntárias visíveis sob a pele) são sinais clássicos de sofrimento ou degeneração do segundo neurônio motor, não fazendo parte da síndrome piramidal.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Anatomia, Fisiologia e Semiologia Neurológica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:29:22.550Z"
+  },
+  {
+    "id": "AJUDA_a866cf90-6faa-42cf-87c1-671c7a51d63f",
+    "originalId": "a866cf90-6faa-42cf-87c1-671c7a51d63f",
+    "statement": "A endometriose é uma doença inflamatória crônica estrogênio-dependente, caracterizada pela presença de tecido endometrial fora da cavidade uterina. O manejo clínico da endometriose visa principalmente o controle da dor pélvica. Sobre as opções terapêuticas farmacológicas e seus mecanismos de ação, a alternativa correta que fundamenta o uso empírico de medicações é apresentada abaixo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento empírico com progestogênios, contraceptivos orais combinados ou análogos de GnRH é recomendado para pacientes com suspeita clínica de endometriose e dor pélvica, sem a necessidade de confirmação cirúrgica prévia, visando a supressão da ovulação, a atrofia dos implantes e a redução do processo inflamatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O uso de inibidores da aromatase é a primeira linha de tratamento em mulheres jovens com endometriose, pois bloqueia a produção ovariana de estrogênio sem causar os efeitos colaterais de hipoestrogenismo sistêmico ou perda de massa óssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento clínico com anti-inflamatórios não esteroidais (AINEs) isoladamente é capaz de promover a regressão das lesões endometrióticas profundas, sendo superior à terapia hormonal no controle da progressão da doença a longo prazo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A confirmação histopatológica por videolaparoscopia é mandatória antes de iniciar qualquer tratamento medicamentoso hormonal, pois o uso de progestogênios em pacientes sem endometriose pode agravar quadros de dor pélvica de outra etiologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA alternativa (a) está correta. Atualmente, os principais consensos internacionais (como o da ESHRE) e nacionais (FEBRASGO) recomendam o início do tratamento clínico empírico em pacientes com forte suspeita clínica de endometriose (baseada em sintomas como dismenorreia, dispareunia de profundidade e dor pélvica crônica), sem a obrigatoriedade de confirmação por videolaparoscopia ou biópsia. O objetivo é reduzir o impacto da doença na qualidade de vida, utilizando medicamentos que bloqueiam o estímulo estrogênico, promovendo a decidualização e a atrofia do tecido endometrial ectópico, além de reduzir o estado inflamatório peritoneal.\n\nA alternativa (b) está incorreta. Os inibidores da aromatase (como o letrozol e o anastrozol) não são fármacos de primeira linha. Eles são reservados para casos refratários aos tratamentos convencionais, geralmente em protocolos de exceção. Ao contrário do afirmado, seu uso pode causar efeitos colaterais significativos relacionados ao hipoestrogenismo, incluindo a redução da densidade mineral óssea e sintomas vasomotores, necessitando muitas vezes de terapia de reposição (add-back therapy).\n\nA alternativa (c) está incorreta. Os anti-inflamatórios não esteroidais (AINEs) agem apenas no controle sintomático da dor, por meio da inibição da síntese de prostaglandinas. Eles não possuem o poder de promover a regressão das lesões endometrióticas, especialmente as formas profundas, e não interferem na progressão da doença ou no controle hormonal, sendo inferiores à terapia hormonal no manejo a longo prazo.\n\nA alternativa (d) está incorreta. A tendência atual da ginecologia é evitar a cirurgia desnecessária apenas para diagnóstico. A confirmação histopatológica por videolaparoscopia não é mandatória para o início do tratamento. O atraso no tratamento à espera de uma cirurgia pode permitir a progressão da doença e o agravamento dos sintomas de dor. Além disso, progestogênios são frequentemente usados em diversas outras patologias ginecológicas e não costumam agravar quadros de dor pélvica de outras etiologias.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:29:22.550Z"
+  },
+  {
+    "id": "AJUDA_a87d875d-0a26-4fbd-bb14-adc0646adb4f",
+    "originalId": "a87d875d-0a26-4fbd-bb14-adc0646adb4f",
+    "statement": "Paciente masculino, 54 anos, apresenta dor abdominal intensa irradiada para o tórax e dorso, com intensidade 10/10, associada a náuseas, porém sem vômitos. Ao exame físico, encontra-se afebril, anictérico, com PA 166x121 mmHg, FC 78 bpm, abdome globoso, tenso, doloroso difusamente, com ruídos hidroaéreos diminuídos. Exames laboratoriais: Hb19,4 g/dL, leucócitos 21.930/mm³, creatinina 2,81 mg/dL, ureia 92 mg/dL; bilirrubina total 1,45 mg/dL, bilirrubina direta 0,38 mg/dL, fosfatase alcalina 49 U/L, GGT 37 U/L, amilase 2234 U/L, lipase 2984 U/L, PCR 44 mg/L (VR<1,0). Aferida pressão intrabdominal 17mmHg. Realizada tomografia computadorizada para diagnóstico diferencial e obtida a imagem abaixo: \n\nConsiderando o diagnóstico do paciente, a conduta imediata deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Drenagem percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Expansão volêmica e transferência para UTI.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Drenagem cirúrgica videolaparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Descompressão cirúrgica por laparotomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das anteriores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta um quadro clássico de pancreatite aguda grave. O diagnóstico é confirmado pelos níveis elevadíssimos de amilase (2234 U/L) e lipase (2984 U/L), associados à dor abdominal característica. A gravidade é evidenciada pela hemoconcentração (Hb 19,4 g/dL), indicando desidratação severa por perda de líquido para o terceiro espaço, e pela disfunção orgânica (insuficiência renal aguda com creatinina de 2,81 mg/dL). Além disso, a aferição da pressão intra-abdominal (PIA) de 17 mmHg caracteriza Hipertensão Intra-abdominal (HIA) Grau II (que vai de 15 a 20 mmHg).\n\nAnálise da imagem de tomografia:\nA imagem mostra um pâncreas com aumento volumétrico e borramento da gordura peripancreática, compatível com pancreatite edematosa intersticial. Nota-se também a presença de líquido livre peripancreático e retroperitoneal, achados comuns nas fases iniciais da pancreatite aguda grave.\n\nAnálise das alternativas:\n\na) Incorreta. A drenagem percutânea é indicada para coleções líquidas agudas ou necrose pancreática que apresentem sinais de infecção ou causem obstrução de órgãos adjacentes, geralmente após a segunda ou terceira semana de evolução. Na fase inicial (fase aguda), não há indicação de drenagem.\n\nb) Correta. O tratamento inicial e imediato da pancreatite aguda grave baseia-se na reposição volêmica agressiva para combater a hemoconcentração e melhorar a perfusão renal e pancreática. Dado o estado de disfunção orgânica (rins) e a hipertensão intra-abdominal, o paciente tem indicação formal de suporte em Unidade de Terapia Intensiva (UTI) para monitorização hemodinâmica rigorosa e manejo da PIA.\n\nc) Incorreta. A drenagem cirúrgica videolaparoscópica não faz parte da conduta imediata na pancreatite aguda. A intervenção cirúrgica precoce na pancreatite está associada a maiores taxas de morbimortalidade.\n\nd) Incorreta. A descompressão cirúrgica por laparotomia é o tratamento de escolha para a Síndrome do Compartimento Abdominal (SCA), definida por uma PIA sustentada acima de 20 mmHg associada a uma nova disfunção orgânica. Este paciente possui HIA Grau II (17 mmHg) e disfunção renal, mas o manejo inicial deve ser médico (sonda nasogástrica, sedação, drenagem de coleções, se houver, e otimização volêmica) antes de considerar a descompressão cirúrgica.\n\ne) Incorreta. A alternativa B descreve a conduta padrão-ouro para o caso.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ad516426f867429f07b7c608ecc4abce190dcbf12ad76a8d8e92af4cadd42f2f.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_a87d875d-0a26-4fbd-bb14-adc0646adb4f_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:29:23.047Z"
+  },
+  {
+    "id": "AJUDA_a8884118-0893-4fcb-bc2c-60bdef3fa2a4",
+    "originalId": "a8884118-0893-4fcb-bc2c-60bdef3fa2a4",
+    "statement": "Mulher, 43 anos, com 3 filhos vivos, foi submetida à colposcopia e biópsia de colo uterino por colpocitologia oncótica NIC 3. A biópsia revelou carcinoma epidermoide in situ. O exame ginecológico era normal e os paramétrios livres. Foi submetida à histerectomia total abdominal. O exame anatomopatológico revelou corpo uterino normal e colo com carcinoma epidermoide invasivo com mais de 5 mm de profundidade. Pode-se concluir que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A conduta foi correta e a paciente deve ser considerada curada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A conduta foi correta e a paciente deve receber radioterapia pélvica adjuvante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A conduta foi inadequada, deveria ter sido feito cirurgia de Wertheim Meigs, visto que a biópsia da colposcopia já mostrava carcinoma in situ.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A conduta foi inadequada, deveria ter sido feito conização de colo uterino para definição diagnóstica e melhor escolha terapêutica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A conduta foi inadequada, pois carcinoma epidermoide “in situ” tem ótima resposta ao tratamento radioterápico exclusivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O ponto central desta questão é o manejo correto das lesões precursoras do câncer de colo uterino e a importância do diagnóstico definitivo antes de uma cirurgia de grande porte.\n\nAnálise do caso:\nA paciente apresentava uma citologia sugestiva de NIC 3 e uma biópsia (geralmente realizada por pinça durante a colposcopia) revelando carcinoma epidermoide in situ. O erro na condução do caso foi realizar uma histerectomia total abdominal baseando-se apenas em uma biópsia de fragmento. Em casos de NIC 3 ou carcinoma in situ, antes de qualquer tratamento definitivo (como a histerectomia), é mandatória a realização de um procedimento excisional diagnóstico, conhecido como conização ou cirurgia de alta frequência (CAF).\n\nPor que a conização era necessária?\nA biópsia por pinça retira apenas uma pequena amostra da lesão. Ela não consegue excluir com segurança a existência de um carcinoma invasor em áreas adjacentes não biopsiadas. A conização, por retirar todo o canal cervical e a zona de transformação, permite ao patologista avaliar a profundidade da invasão e o comprometimento de vasos e nervos. No caso da paciente, o exame da peça cirúrgica após a histerectomia revelou uma invasão maior que 5 mm. Isso significa que o estadiamento real era, no mínimo, IB1. Para este estágio, a histerectomia simples é um tratamento insuficiente (subtratamento), pois não aborda os paramétrios nem os linfonodos pélvicos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A conduta foi inadequada. Como o tumor tinha mais de 5 mm de profundidade, a cirurgia indicada seria a de Wertheim-Meigs (histerectomia radical com linfadenectomia pélvica) ou quimiorradioterapia, dependendo da extensão. A paciente não pode ser considerada curada apenas com a histerectomia simples, pois há risco de metástases linfonodais e persistência de doença nos paramétrios.\n\nAlternativa b) Incorreta. Embora a paciente possa vir a precisar de radioterapia agora para tentar compensar a cirurgia incompleta, o enunciado pede a análise da conduta inicial. A conduta não foi correta; o erro foi não ter diagnosticado a invasão antes de decidir o tipo de cirurgia.\n\nAlternativa c) Incorreta. Não se deve realizar uma cirurgia de Wertheim-Meigs (que é um procedimento de alta morbidade) baseando-se apenas em um achado de carcinoma in situ. O tratamento padrão para carcinoma in situ, caso a paciente deseje retirar o útero por outros motivos ou tenha prole constituída, é a histerectomia simples ou a própria conização. A conduta agressiva só se justifica após a confirmação de invasão através da conização.\n\nAlternativa d) Correta. Esta é a regra de ouro na patologia cervical: se há suspeita de lesão de alto grau ou carcinoma in situ, deve-se realizar a conização para definição diagnóstica precisa. Se a conização tivesse sido feita, o patologista teria identificado a invasão de 5 mm e a equipe médica teria indicado a cirurgia radical (Wertheim-Meigs) ou o tratamento adequado para câncer invasor desde o início.\n\nAlternativa e) Incorreta. O carcinoma epidermoide in situ é uma lesão pré-invasiva e o tratamento de escolha é cirúrgico (conização ou, em casos selecionados, histerectomia simples). A radioterapia é reservada para tumores invasores e não é a primeira escolha para lesões in situ devido aos seus efeitos colaterais e à excelente taxa de cura da cirurgia conservadora.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:29:23.047Z"
+  },
+  {
+    "id": "AJUDA_a88bb1a4-dc93-499b-890c-184ff98b5700",
+    "originalId": "a88bb1a4-dc93-499b-890c-184ff98b5700",
+    "statement": "E.G.N., 29 anos, GIII PII (1N 1C há 3 anos) A0, idade gestacional de 37 semanas, deu entrada no pronto-socorro obstétrico queixando-se de perda de líquido há 4 horas, além de dor tipo cólica. Paciente HIV positivo, em uso de terapia antirretroviral (TARV), sendo que o último exame demonstrou carga viral de 1.500 cópias/mL, além de CD4 100 céls/mm3. Ao exame físico: especular: saída de líquido claro com grumos pelo orifício externo do colo uterino; toque vaginal: colo 5 cm médio e posterior; dinâmica uterina: 4/10’/40”; BCF: 140 bpm. Cardiotocografia normal. Para o caso descrito, é correto afirmar que o AZT",
+    "options": [
+      {
+        "id": "A",
+        "text": "endovenoso está contraindicado, pois a paciente faz uso de TARV combinado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "endovenoso deve ser infundido apenas se o tempo de rotura de membranas ultrapassar 18 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "é desnecessário porque a profilaxia é indicada em cargas virais acima de 5.000 cópias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "endovenoso está indicado, pois a carga viral é superior a 1.500 cópias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "estaria indicado apenas na falha objetiva do esquema de TARV no primeiro trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Resumo do caso: gestante HIV positiva de 37 semanas, em trabalho de parto ativo (dilatação de 5 cm, dinâmica 4/10'/40\") e com bolsa rota há 4 horas. Faz uso de TARV, mas a última carga viral foi de 1.500 cópias/mL, e o CD4 é de 100 céls/mm3.\n\nConceito central (protocolos do Ministério da Saúde para prevenção da transmissão vertical do HIV): o AZT endovenoso intraparto está indicado para gestantes com carga viral desconhecida ou maior que 1.000 cópias/mL no 3º trimestre (a partir de 34 semanas). Deve ser iniciado 3 horas antes de uma cesárea eletiva e, no trabalho de parto, é mantido até o clampeamento do cordão. Com carga viral igual ou inferior a 1.000 cópias/mL e uso regular de TARV, o AZT intraparto é opcional ou dispensável. Quando a carga viral é indetectável, ele não é necessário.\n\nNesta paciente, a carga viral de 1.500 cópias/mL ultrapassa o limiar de 1.000. Por isso o AZT EV está indicado, independentemente de ela já usar TARV combinada. Além disso, a carga viral acima de 1.000 cópias/mL indica cesárea eletiva às 38 semanas. Como a paciente já está em trabalho de parto avançado com bolsa rota, a via de parto é discutida caso a caso, e o parto vaginal costuma ser conduzido. Nessa situação, deve-se evitar procedimentos invasivos e prolongar o tempo de bolsa rota.\n\nAnálise das alternativas:\n\na) Incorreta. O AZT EV não é contraindicado pelo uso de TARV. Ele é um complemento da profilaxia, justamente quando a supressão viral é insuficiente.\n\nb) Incorreta. O tempo de bolsa rota maior que 18 horas é fator de risco para transmissão vertical, mas não é critério para indicar o AZT. A indicação depende da carga viral.\n\nc) Incorreta. O ponto de corte é 1.000 cópias/mL, e não 5.000.\n\nd) Correta. A carga viral de 1.500 é superior a 1.000 cópias/mL, o que indica o AZT EV intraparto. O enunciado fala em \"1.500\", mas o raciocínio é o mesmo.\n\ne) Incorreta. A indicação não depende de falha de TARV no 1º trimestre. O que importa é a carga viral próxima ao parto, a partir de 34 semanas.\n\nPonto-chave: carga viral maior que 1.000 cópias/mL ou desconhecida perto do parto indica AZT EV intraparto (dose de ataque de 2 mg/kg na 1ª hora, depois 1 mg/kg/h até o clampeamento do cordão) e cesárea eletiva às 38 semanas, se não houver trabalho de parto.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "HIV",
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:29:23.047Z"
+  },
+  {
+    "id": "AJUDA_a88fdacd-022a-4589-aab3-142258f792a2",
+    "originalId": "a88fdacd-022a-4589-aab3-142258f792a2",
+    "statement": "Um homem de 64 anos foi submetido à gastrectomia parcial, linfadenectomia regional e restabelecimento do trânsito digestório por anastomose gastrojejunal, para tratar adenocarcinoma do tipo intestinal de Laurén, localizado no antro gástrico. Ao final da operação, foi inserido um cateter nasoentérico para nutrição enteral a partir do segundo dia pós-operatório. No quarto dia pós-operatório, começou a sair líquido gastroentérico por um dreno sentinela, colocado próximo à anastomose e exteriorizado pela parede abdominal direita, abaixo do gradil costal. O exame contrastado confirmou a fístula anastomótica, drenando para o exterior, sem coleção de líquido próximo a ela. A drenagem diária era ao redor de 150 ml. O paciente continuou clinicamente bem, sendo nutrido apenas pelo tubo nasoentérico e sem queixas abdominais, com peristaltismo normal e evacuações com fezes amolecidas. Qual a conduta a ser adotada para tratar essa fístula?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter o paciente em acompanhamento clínico sem mudar a conduta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Injetar substância esclerosante através do dreno para fechar a fístula mais rápido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Interromper a nutrição enteral e iniciar parenteral para acelerar a cicatrização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Laprotomia para suturar a fístula e derivar o trajeto alimentar gastroentérico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO caso descreve um paciente no 4º dia de pós-operatório de gastrectomia parcial com uma fístula anastomótica de baixo débito (150 ml/dia). Os pontos cruciais para a tomada de decisão são: 1) O paciente está clinicamente estável e sem sinais de irritação peritoneal; 2) A fístula está \"dirigida\" ou \"bloqueada\", ou seja, o conteúdo sai pelo dreno sentinela sem formar coleções intra-abdominais; 3) O paciente já possui uma via de nutrição adequada (cateter nasoentérico) que está sendo bem tolerada.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nA conduta conservadora é a base do tratamento de fístulas digestivas precoces que estejam devidamente drenadas e em pacientes estáveis. Como o débito é baixo (menor que 500 ml em 24 horas), o paciente não apresenta sepse e a nutrição está garantida via enteral, a tendência natural é o fechamento espontâneo do trajeto fistuloso. Manter a observação e a oferta calórica é a estratégia mais segura e eficaz neste cenário.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ INCORRETA?\n\nO uso de substâncias esclerosantes não faz parte do protocolo inicial de tratamento de fístulas anastomóticas agudas. Tais substâncias podem causar necrose tecidual, piorar o processo inflamatório local e dificultar a cicatrização espontânea, além de não tratarem a causa-base do problema.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ INCORRETA?\n\nSempre que o trato gastrointestinal estiver funcional, a nutrição enteral deve ser preferida em relação à nutrição parenteral (NP). A nutrição enteral mantém a barreira mucosa intestinal, tem menor custo e apresenta menos complicações infecciosas que a NP. Como o cateter nasoentérico permite nutrir o paciente de forma distal à anastomose ou o trânsito está preservado sem estase, não há justificativa para suspender a dieta enteral e iniciar uma via mais invasiva.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ INCORRETA?\n\nA reoperação (laparotomia) é indicada apenas em casos de fístulas não controladas, com sinais de peritonite generalizada, coleções não drenáveis por radiologia intervencionista ou instabilidade hemodinâmica (sepse grave). Suturar uma fístula em um tecido inflamado e friável no 4º dia pós-operatório geralmente resulta em falha da sutura e aumento da morbidade para o paciente. Como o dreno já está cumprindo o papel de limpar a cavidade, a cirurgia é desnecessária.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago",
+      "Nutrição em Cirurgia",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:29:23.047Z"
+  }
+]

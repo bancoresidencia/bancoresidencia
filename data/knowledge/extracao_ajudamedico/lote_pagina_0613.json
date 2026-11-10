@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_abc9457f-43f6-4f24-bec5-b0b5c0170aaf",
+    "originalId": "abc9457f-43f6-4f24-bec5-b0b5c0170aaf",
+    "statement": "Paciente, 18 anos de idade, atleta de basquete, é trazido ao pronto-socorro após um episódio de síncope sem pródromos durante um treino. Ele nega comorbidades ou uso de drogas e relata que, nos últimos meses, vem sentindo cansaço e falta de ar ao realizar esforços mais intensos. Menciona que um tio faleceu subitamente aos 30 anos de idade. Ao exame físico, apresenta pulso cheio e simétrico em membros superiores e inferiores e a ausculta cardíaca revela um sopro sistólico ejetivo em borda esternal esquerda baixa, com irradiação para axila, que aumenta de intensidade quando o paciente realiza manobra de Valsalva. Quanto à principal hipótese diagnóstica para esse quadro clínico, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cardiomiopatia hipertrófica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Comunicação interventricular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estenose aórtica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Miocardite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prolapso de valva mitral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito é clássico e apresenta os principais \"red flags\" para a cardiomiopatia hipertrófica (CMH), uma doença genética caracterizada pela hipertrofia ventricular, geralmente assimétrica, acometendo principalmente o septo interventricular.\n\nAbaixo, a análise detalhada da hipótese principal e a exclusão das demais alternativas:\n\nA alternativa (a) está correta: a cardiomiopatia hipertrófica é a principal causa de morte súbita em atletas jovens. O paciente apresenta a tríade diagnóstica clássica sugerida em provas: 1) sintomas de baixo débito ou obstrução (síncope no esforço, dispneia); 2) história familiar de morte súbita em parente jovem; 3) sopro sistólico que aumenta com manobras que reduzem o volume ventricular esquerdo, como a manobra de Valsalva ou ortostatismo (pois aproximam o septo hipertrofiado da cordoalha da valva mitral, aumentando a obstrução da via de saída). O sopro é ejetivo e localiza-se na borda esternal esquerda baixa.\n\nA alternativa (b) está incorreta: a comunicação interventricular (CIV) geralmente cursa com um sopro holossistólico (e não ejetivo) que é mais audível na borda esternal esquerda média/baixa. Diferentemente da CMH, o sopro da CIV tende a diminuir de intensidade com a manobra de Valsalva, pois há uma redução do retorno venoso e do volume de sangue passando pelo defeito.\n\nA alternativa (c) está incorreta: na estenose aórtica (EAO), o sopro também é sistólico ejetivo, porém ele é mais audível no foco aórtico (2º espaço intercostal direito) com irradiação para as carótidas. O ponto-chave para diferenciar da CMH é a manobra de Valsalva: na EAO, a redução do retorno venoso diminui a quantidade de sangue que passa pela valva estenótica, o que faz com que a intensidade do sopro diminua, ao contrário da CMH, na qual a intensidade aumenta.\n\nA alternativa (d) está incorreta: a miocardite aguda costuma apresentar um quadro clínico precedido por infecção viral, com sintomas de insuficiência cardíaca de início súbito, dor torácica ou arritmias. Embora possa causar morte súbita, não explica o sopro característico que se altera dinamicamente com a manobra de Valsalva, nem a história familiar crônica mencionada.\n\nA alternativa (e) está incorreta: o prolapso de valva mitral (PVM) apresenta, classicamente, um clique mesossistólico seguido de um sopro sistólico tardio em foco mitral. Embora o sopro do PVM também possa se acentuar ou tornar-se mais longo com a manobra de Valsalva, ele não é a principal causa de síncope em atletas nem justifica a hipertrofia e obstrução sugeridas pelo sopro ejetivo em borda esternal. Além disso, a irradiação típica da CMH para a axila pode ocorrer quando há insuficiência mitral secundária ao movimento sistólico anterior da valva mitral (SAM), comum na CMH.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Cardiomiopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:26.242Z"
+  },
+  {
+    "id": "AJUDA_abce1708-ee10-4541-8ed3-5cdf02a1ba8e",
+    "originalId": "abce1708-ee10-4541-8ed3-5cdf02a1ba8e",
+    "statement": "Homem, 68 anos de idade, com diagnóstico de diabetes mellitus do tipo 2 e hipertensão há 20 anos, compensado clinicamente, vem em consulta de rotina, sem queixas. Exame físico: PA = 128/82 mmHg, sem outras alterações. Exames laboratoriais: creatinina = 1,50 mg/dL (TFGe por CKD-EPI = 50 mL/min/1,73m²), ureia = 42 mg/dL, sódio = 138 mEq/L, potássio = 4,2 m Eq/L, glicemia de jejum = 102 mg/dL, Hb1Ac = 6,2%; urina 1: pH = 5,5, densidade = 1015, proteína +, hematúria ausente, glicosúria ausente; relação albumina/creatinina em amostra isolada de urina = 400 mg/g. Faz uso de enalapril 40 mg/dia, anlodipino 10 mg/dia, metformina 2000 mg/dia. Foi iniciado dapaglifozina 10 mg/d. Após 4 semanas, o paciente retorna em consulta, assintomático, sem queixas ou intercorrências no período, trazendo novos exames: creatinina = 1,67 mg/dL (TFGe por CKD-EPI = 44 mL/min/1,73m²), ureia = 40 mg/dL, sódio = 138 mEq/L, potássio = 4,2 mEq/L. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter todas as medicações em uso atual e reavaliar em próxima consulta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Manter as medicações em uso prévio e suspender dapaglifozina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspender a metformina e manter a dapaflifozina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender o enalapril e manter a dapaglifozina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "CONCEITO-CHAVE: O *DIP* DA CREATININA COM INIBIDORES DA SGLT2\n\nO ponto fundamental desta questão é o reconhecimento de uma alteração fisiológica esperada ao iniciar os inibidores do cotransportador sódio-glicose 2 (iSGLT2), como a dapagliflozina. Essas drogas promovem o aumento da oferta de sódio ao túbulo distal, o que ativa o *feedback* tubuloglomerular, levando à vasoconstrição da arteríola aferente. O resultado é uma redução da pressão intraglomerular, o que clinicamente se manifesta como uma queda inicial da Taxa de Filtração Glomerular (TFGe) e um leve aumento da creatinina sérica, fenômeno conhecido como *creatinine dip*.\n\nANÁLISE DO CASO CLÍNICO\n\nO paciente apresentou um aumento da creatinina de 1,50 mg/dL para 1,67 mg/dL após 4 semanas de uso de dapagliflozina. Isso representa um aumento de aproximadamente 11,3%. Na prática nefrológica e cardiológica, considera-se aceitável um aumento de até 30% na creatinina sérica (ou uma queda de até 30% na TFGe) após o início de iSGLT2 ou de inibidores do sistema renina-angiotensina-aldosterona (IECA/BRA), desde que o paciente esteja assintomático e com níveis de potássio controlados. \n\nComo o paciente está assintomático, o potássio permaneceu estável em 4,2 mEq/L e o aumento da creatinina foi bem inferior ao limite de 30%, a conduta correta é manter o tratamento, pois esse efeito hemodinâmico está diretamente relacionado à nefroproteção a longo prazo.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): Manter todas as medicações em uso atual e reavaliar na próxima consulta. Como o aumento da creatinina foi de apenas 11%, dentro da faixa de tolerância de 30%, e o paciente não apresenta distúrbios eletrolíticos (potássio normal) ou sintomas de depleção de volume, a conduta é manter a terapia. O benefício de redução da albuminúria e da progressão da doença renal crônica supera essa oscilação laboratorial inicial.\n\nAlternativa B (INCORRETA): Manter as medicações em uso prévio e suspender dapagliflozina. A suspensão seria um erro, pois o aumento da creatinina observado não caracteriza lesão renal aguda, mas sim um ajuste hemodinâmico protetor. Retirar a droga privaria o paciente de um tratamento com comprovado benefício em reduzir a mortalidade e a falência renal em diabéticos com albuminúria.\n\nAlternativa C (INCORRETA): Suspender a metformina e manter a dapagliflozina. As diretrizes recomendam cautela com a metformina quando a TFGe cai abaixo de 45 mL/min, geralmente sugerindo redução da dose pela metade (máximo 1000 mg/dia) e suspensão apenas se a TFGe for inferior a 30 mL/min. Embora a TFGe do paciente tenha atingido 44 mL/min, a questão foca na resposta aguda ao iSGLT2. Manter a medicação glicêmica atual enquanto se monitora o *dip* inicial é a conduta mais adequada para este momento de reavaliação de 4 semanas.\n\nAlternativa D (INCORRETA): Suspender o enalapril e manter a dapagliflozina. O enalapril (IECA) é peça-chave no tratamento da doença renal diabética por reduzir a pressão intraglomerular (via vasodilatação da arteríola eferente). Não há motivo para suspendê-lo, já que o potássio está normal e o aumento da creatinina foi discreto. A combinação de IECA e iSGLT2 é a base da terapia de nefroproteção atual.\n\nRESUMO DA CONDUTA\n\nSe a creatinina subir menos de 30% e o potássio estiver normal: Manter a conduta e reavaliar.\nSe a creatinina subir mais de 30% ou houver hipercalemia: Investigar causas secundárias (hipovolemia, uso de anti-inflamatórios, estenose de artéria renal) e considerar ajuste de dose.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:26.242Z"
+  },
+  {
+    "id": "AJUDA_abd1b73a-3580-4bb2-b65c-95e3c9ea34d7",
+    "originalId": "abd1b73a-3580-4bb2-b65c-95e3c9ea34d7",
+    "statement": "Um homem de 54 anos procura o pronto-atendimento com queixa de insônia, ansiedade intensa, palpitações e tremores nas mãos há 3 dias. Refere histórico de etilismo crônico (1 litro de destilado/dia por 10 anos) e nega uso de outras substâncias. Está em abstinência há 48 horas por orientação médica após internação por gastrite erosiva. Ao exame, encontra-se agitado, sudoreico, taquicárdico (FC 118 bpm) e com pressão arterial 150x95 mmHg. Não há sinais neurológicos focais nem delirium. Com base no quadro descrito, qual é a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar quetiapina 50 mg à noite para controle da agitação e insônia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever clonazepam 0,5 mg sob demanda e manter observação ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar diazepam e monitorar sinais vitais e eletrólitos em ambiente hospitalar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Administrar haloperidol intramuscular e observar melhora clínica nas próximas horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Tema da questão: Síndrome de Abstinência Alcoólica (SAA).\n\nO caso descreve um quadro clássico de Síndrome de Abstinência Alcoólica moderada a grave, caracterizado por sinais de hiperatividade autonômica (taquicardia, hipertensão, tremores e sudorese) cerca de 48 horas após a interrupção do uso pesado de álcool. O tratamento imediato visa controlar os sintomas, restabelecer o equilíbrio neurotransmissor (GABA/glutamato) e prevenir complicações graves, como convulsões e delirium tremens.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A quetiapina é um antipsicótico atípico que pode promover sedação, mas não atua na via gabaérgica para conter a hiperatividade do sistema nervoso central, além de não prevenir convulsões ou a evolução para delirium tremens.\n\nAlternativa b: Incorreta. O manejo ambulatorial com benzodiazepínico sob demanda é contraindicado para este paciente, que apresenta consumo prévio muito elevado e sinais autonômicos claros de abstinência moderada a grave, conferindo alto risco de complicações que exigem supervisão hospitalar.\n\nAlternativa c: Correta. Os benzodiazepínicos (como diazepam, clordiazepóxido ou lorazepam) constituem a terapia de primeira linha na SAA, pois aumentam a atividade gabaérgica e reduzem o tônus adrenérgico. O paciente deve ser mantido em ambiente hospitalar para monitoramento de sinais vitais, aplicação de escalas clínicas (como o escore CIWA-Ar), correção de distúrbios hidroeletrolíticos e reposição de tiamina.\n\nAlternativa d: Incorreta. O haloperidol não deve ser utilizado em monoterapia na abstinência alcoólica, pois reduz o limiar convulsivo (aumentando o risco de crises epilépticas) e não trata a causa de base. Seu uso é restrito a adjuvante nos casos de agitação refratária aos benzodiazepínicos.\n\nGabarito: Alternativa c.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Dependência Química",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:26.242Z"
+  },
+  {
+    "id": "AJUDA_abdc847c-57e3-4d4f-9cc9-da1fd60d7f6e",
+    "originalId": "abdc847c-57e3-4d4f-9cc9-da1fd60d7f6e",
+    "statement": "Homem, 28 anos, apresenta aumento da bolsa testicular à direita, com dor discreta apenas à palpação. Ao realizar a transiluminação, você observou que o teste foi positivo. Seu diagnóstico inicial foi",
+    "options": [
+      {
+        "id": "A",
+        "text": "hérnia inguinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "varicocele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tumor testicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hidrocele.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "torção testicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve um paciente jovem com aumento do volume escrotal e dor discreta. O ponto determinante para o diagnóstico é o resultado positivo no teste de transiluminação. Este teste é realizado posicionando uma fonte de luz contra a bolsa escrotal em ambiente escurecido. Se a luz atravessa o escroto, produzindo um brilho avermelhado difuso, indica que o conteúdo no interior da bolsa é líquido (seroso). Se a luz for bloqueada, o conteúdo é sólido ou opaco (sangue, tecidos ou alças intestinais).\n\nPOR QUE A ALTERNATIVA D ESTÁ CORRETA?\n\nA hidrocele consiste no acúmulo de fluido seroso entre as camadas (visceral e parietal) da túnica vaginalis, que envolve o testículo. Por ser um líquido claro e citrino, ele permite a passagem da luz, tornando o teste de transiluminação positivo. É a causa mais comum de aumento escrotal indolor ou com dor leve em homens jovens e adultos.\n\nANÁLISE DAS ALTERNATIVAS INCORRETAS:\n\nA) HÉRNIA INGUINAL: O conteúdo de uma hérnia escrotal geralmente é composto por omento (gordura) ou alças intestinais. Por serem estruturas sólidas e densas, elas não permitem a passagem da luz, resultando em um teste de transiluminação negativo. Além disso, na hérnia, é comum encontrar ruídos hidroaéreos à ausculta do escroto.\n\nB) VARICOCELE: Caracteriza-se pela dilatação das veias do plexo pampiniforme. Ao exame físico, a sensação tátil é comparada a um \"saco de minhocas\". O sangue venoso no interior dos vasos não permite a transiluminação positiva. Geralmente ocorre no lado esquerdo devido à anatomia da veia renal, enquanto o caso cita o lado direito.\n\nC) TUMOR TESTICULAR: As neoplasias de testículo apresentam-se como massas sólidas, endurecidas e firmes. Por ser um tecido denso e opaco, a transiluminação será obrigatoriamente negativa. Na prática clínica, qualquer aumento testicular que não transilumina deve ser investigado como suspeita de câncer até que se prove o contrário.\n\nE) TORÇÃO TESTICULAR: Trata-se de uma emergência cirúrgica. A dor é tipicamente aguda, de início súbito e de grande intensidade, frequentemente associada a náuseas, vômitos e elevação do testículo (sinal de Angel). Embora possa haver edema escrotal, o conteúdo não é líquido seroso livre, portanto a transiluminação é negativa.\n\nGABARITO: ALTERNATIVA D.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:26.242Z"
+  },
+  {
+    "id": "AJUDA_abde0050-3265-4788-948c-75aba40290fe",
+    "originalId": "abde0050-3265-4788-948c-75aba40290fe",
+    "statement": "Na abordagem clínica da gonorreia em adultos jovens, preencha corretamente as lacunas com os métodos diagnósticos e tratamentos indicados:\n_____ 1: O diagnóstico da infecção por Neisseria gonorrhoeae é confirmado principalmente pelo método laboratorial que utiliza amplificação de ácidos nucleicos.\n______ 2: O tratamento de primeira linha para gonorreia não complicada é realizado com o uso de um antibiótico de terceira geração, administrado por via intramuscular em dose única.\nAs lacunas são corretamente preenchidas, respectivamente, por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "PCR, Ceftriaxona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Cultura bacteriana, Azitromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste rápido imunocromatográfico, Doxiciclina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "PCR, Amoxicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cultura bacteriana, Cefixima.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Lacuna 1: O enunciado refere-se ao método de amplificação de ácidos nucleicos (conhecido pela sigla NAAT ou, mais popularmente no meio clínico, PCR). Esse método é atualmente o padrão-ouro para o diagnóstico da *Neisseria gonorrhoeae* devido à sua elevada sensibilidade e especificidade, permitindo a detecção do patógeno em amostras de urina ou *swabs* uretrais/endocervicais, sem a necessidade de manter as bactérias vivas para o processamento.\n\nLacuna 2: O tratamento de primeira linha para a gonorreia não complicada em adultos, conforme as diretrizes atuais do Ministério da Saúde e protocolos internacionais, é a ceftriaxona. Ela é uma cefalosporina de terceira geração, administrada por via intramuscular (IM) em dose única (geralmente 500 mg). Vale lembrar que, embora a azitromicina tenha sido utilizada em conjunto no passado, a recomendação atual foca na ceftriaxona para o componente gonocócico devido ao aumento da resistência bacteriana.\n\nAnálise das alternativas:\n\na) Correta. O PCR é a técnica de amplificação de ácidos nucleicos citada, e a ceftriaxona preenche todos os requisitos: antibiótico de terceira geração, via intramuscular e dose única.\n\nb) Incorreta. A cultura bacteriana é um método diagnóstico importante, especialmente para realizar o antibiograma, mas o enunciado pede especificamente o método de amplificação de ácidos nucleicos. Além disso, a azitromicina é um macrolídeo de administração oral, não atendendo aos critérios da segunda lacuna.\n\nc) Incorreta. Testes rápidos imunocromatográficos possuem sensibilidade inferior ao PCR e não são baseados em amplificação de ácidos nucleicos. A doxiciclina é utilizada no tratamento da clamídia (7 dias, via oral), não sendo a droga de escolha para tratamento de dose única IM na gonorreia.\n\nd) Incorreta. Embora o PCR esteja correto, a amoxicilina é uma penicilina (beta-lactâmico de espectro ampliado, mas não de terceira geração) e apresenta altas taxas de resistência, não sendo indicada para o tratamento da gonorreia.\n\ne) Incorreta. A cultura é um método de isolamento em meio seletivo, não de amplificação de ácidos nucleicos. A cefixima é, de fato, uma cefalosporina de terceira geração, porém sua administração é por via oral e não intramuscular. No Brasil, sua disponibilidade é limitada e a ceftriaxona permanece como a droga de escolha.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Cervicites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:26.242Z"
+  },
+  {
+    "id": "AJUDA_abe69d1b-5336-4d94-bced-161ecd0f4699",
+    "originalId": "abe69d1b-5336-4d94-bced-161ecd0f4699",
+    "statement": "Paciente do sexo masculino, 65 anos, hipertenso e tabagista. Há algumas semanas apresenta dor em membros inferiores ao caminhar curtas distâncias. Refere que o alívio da dor ocorre com o repouso. Durante o exame físico, o pulso dos membros inferiores está diminuído e apresenta palidez cutânea. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trombose venosa profunda (TVP).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Insuficiência arterial periférica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Varizes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Erisipela.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\n\nO paciente apresenta um quadro clássico de claudicação intermitente, que é o sintoma cardinal da insuficiência arterial periférica. O perfil do paciente (homem de 65 anos, tabagista e hipertenso) aponta para a presença de aterosclerose, a principal etiologia dessa patologia. A dor que surge ao caminhar e cessa prontamente com o repouso reflete a incapacidade das artérias doentes em suprir a demanda metabólica muscular aumentada durante o exercício. Os achados de exame físico, especificamente os pulsos diminuídos e a palidez cutânea, confirmam o déficit de perfusão arterial para os membros inferiores.\n\nAnálise das alternativas:\n\na) Trombose venosa profunda (TVP): Incorreta. A TVP manifesta-se tipicamente com dor unilateral de início agudo, acompanhada de edema (inchaço), calor local e, por vezes, cianose (coloração azulada). A dor da TVP não costuma ter relação direta com o esforço físico (claudicação) e os pulsos arteriais estão geralmente preservados.\n\nb) Insuficiência arterial periférica: Correta. Esta alternativa descreve perfeitamente a fisiopatologia do caso. A obstrução do fluxo arterial reduz a oferta de oxigênio aos tecidos. Durante a marcha, a demanda aumenta, gerando isquemia e dor. O repouso reduz a demanda, aliviando a dor. A diminuição dos pulsos e a palidez são sinais objetivos de obstrução ao fluxo de sangue oxigenado.\n\nc) Varizes: Incorreta. As varizes são manifestações da insuficiência venosa crônica. A dor venosa é descrita como uma sensação de peso ou cansaço que piora ao final do dia ou após longos períodos em pé (ortostase) e melhora com a elevação dos membros inferiores, não necessariamente apenas com o repouso sentado. Além disso, não há redução de pulsos ou palidez nessa condição.\n\nd) Erisipela: Incorreta. A erisipela é uma infecção bacteriana aguda da pele e dos vasos linfáticos. O quadro clínico é marcado por sinais flogísticos intensos, como eritema (vermelhidão) vivo e bem delimitado, calor, dor local constante e febre alta com calafrios. Não apresenta relação com a deambulação nem causa diminuição de pulsos periféricos.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:26.242Z"
+  },
+  {
+    "id": "AJUDA_abf7698d-0c77-4e34-883d-1a695d20f6bc",
+    "originalId": "abf7698d-0c77-4e34-883d-1a695d20f6bc",
+    "statement": "Menino, 3 anos, internado em uma unidade de terapia intensiva pediátrica com neoplasia de sistema nervoso central, foi operado pela neurocirurgia com retirada parcial da lesão há 3 meses, e desde então vem realizando tratamento quimioterápico. Ressonância magnética recente mostra aumento importante do tumor e a equipe de oncologia considera que não há mais possibilidades terapêuticas para tratamento do tumor. O paciente permanece acamado, pouco responsivo e acompanhado de sua mãe. A equipe multidisciplinar se reúne para definir quais condutas terapêuticas serão realizadas nesse paciente. Nesse caso, a conduta a ser adotada deve ser",
+    "options": [
+      {
+        "id": "A",
+        "text": "administrar opióides para controle da dor e, junto da família, orientar a não realização de ressuscitação cardiopulmonar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "realizar sedação e intubação orotraqueal para maior conforto e orientar a não realização de ressuscitação cardiopulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar um novo ciclo de quimioterapia com medicações diferentes das que já foram utilizadas, para controle da proliferação celular tumoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar nova abordagem pela equipe de neurocirurgia para retirada de parte da lesão, o que aliviará a pressão intracraniana e prolongará a sobrevida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda um cenário de oncologia pediátrica avançada em que as possibilidades de cura ou controle da doença de base foram esgotadas. O foco da assistência deve migrar do modelo curativo para o modelo de Cuidados Paliativos, visando à dignidade, ao alívio do sofrimento e ao respeito à terminalidade da vida (ortotanásia), evitando a distanásia (prolongamento fútil do processo de morrer).\n\nAlternativa (a) CORRETA: O controle de sintomas, especialmente da dor por meio de opioides, é um pilar fundamental nos cuidados paliativos. Diante de um tumor do sistema nervoso central em progressão e sem resposta terapêutica, a parada cardiorrespiratória é o evento final natural da doença. A realização de manobras de ressuscitação cardiopulmonar (RCP) em pacientes terminais é considerada uma medida fútil, pois não reverte a patologia de base e impõe sofrimento adicional ao paciente e à família. Portanto, a decisão compartilhada com a família para a não realização de RCP é a conduta ética e tecnicamente adequada.\n\nAlternativa (b) INCORRETA: A intubação orotraqueal é um procedimento invasivo que, em pacientes terminais sem possibilidade de melhora, costuma aumentar o desconforto e o isolamento, dificultando o contato com a família e a despedida. O conforto respiratório e a ansiedade devem ser manejados com medicações (como opioides e benzodiazepínicos) em doses adequadas, sem a necessidade de suporte ventilatório mecânico invasivo, o que caracterizaria obstinação terapêutica neste caso.\n\nAlternativa (c) INCORRETA: O enunciado afirma explicitamente que a equipe de oncologia considera que não há mais possibilidades terapêuticas para o tratamento do tumor. Insistir em novos ciclos de quimioterapia nesse contexto, com substâncias que possuem alta toxicidade e nenhum benefício esperado na sobrevida ou na qualidade de vida, configura distanásia e desrespeita o princípio bioético da não maleficência.\n\nAlternativa (d) INCORRETA: Embora a descompressão cirúrgica possa ser utilizada de forma paliativa em situações específicas, o quadro clínico descrito (paciente acamado, pouco responsivo, tumor em franco crescimento após cirurgia prévia e quimioterapia) indica que uma nova neurocirurgia seria uma intervenção desproporcional e fútil. O objetivo médico deve ser garantir o máximo de conforto no fim da vida, e não prolongar o processo de morte por meio de procedimentos invasivos de grande porte.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Tumores Intracranianos",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:26.242Z"
+  },
+  {
+    "id": "AJUDA_abfb2a42-a9ad-4c95-8427-c81ee10d8f6a",
+    "originalId": "abfb2a42-a9ad-4c95-8427-c81ee10d8f6a",
+    "statement": "Adolescente de 14 anos, sexo feminino, é levada ao médico por apresentar pêlos excessivos em todo o corpo e ganho de peso nos últimos seis meses. Menarca: há dois anos e depois não teve mais nenhum ciclo menstrual. A anamnese, exame físico e exames complementares confirmam a hipótese de síndrome dos ovários policísticos (SOP).\n\nOs achados clínico-laboratoriais acima decorrem mais frequentemente do aumento do seguinte hormônio:",
+    "options": [
+      {
+        "id": "A",
+        "text": "estrogênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "luteinizante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "testosterona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "folículo estimulante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A paciente do caso apresenta um quadro clínico clássico de Síndrome dos Ovários Policísticos (SOP), com manifestações de hiperandrogenismo clínico (hirsutismo), disfunção ovulatória (amenorreia secundária) e ganho ponderal. O hormônio diretamente responsável pelas manifestações clínicas androgênicas descritas é a testosterona.\n\nAnálise das alternativas:\n\na) Incorreta. Na SOP ocorre hiperestrogenismo relativo e mantido (principalmente por conversão periférica de androgênios em estrona no tecido adiposo), sem oposição de progesterona devido à anovulação. No entanto, o estrogênio não é o causador do hirsutismo nem das características masculinizantes.\n\nb) Incorreta. O aumento dos pulsos de hormônio luteinizante (LH) e da relação LH/FSH é um achado fisiopatológico frequente na SOP, responsável por hiperestimular as células da teca ovariana. Contudo, o LH atua como mediador superior; os achados clínicos periféricos, como o crescimento excessivo de pelos, decorrem do produto final dessa estimulação, que são os androgênios.\n\nc) Correta. A testosterona (especialmente a sua fração livre) é o principal androgênio elevado na SOP. O excesso de testosterona atua nos folículos pilosos sensíveis a androgênios, transformando pelos finos (vilos) em pelos grossos e pigmentados (terminais), gerando o hirsutismo. Também contribui para o bloqueio da maturação folicular e anovulação.\n\nd) Incorreta. Os níveis de hormônio folículo-estimulante (FSH) na SOP encontram-se normais ou no limite inferior da normalidade, resultando em uma relação LH/FSH aumentada. O FSH não está aumentado e não tem relação com o hirsutismo ou ganho de peso.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:26.242Z"
+  },
+  {
+    "id": "AJUDA_abff3100-5bc5-4079-8895-91dc9bc37043",
+    "originalId": "abff3100-5bc5-4079-8895-91dc9bc37043",
+    "statement": "Homem de 52 anos, sem sintomas, procurou uma clínica popular para a realização de exames laboratoriais de rotina. O médico solicitou muitos exames, e o paciente resolveu procurar a UBS para tentar fazê-los gratuitamente, pois tem apresentado gastos elevados com exames e consultas. Preocupa-se bastante com sua saúde e apresenta com frequência sintomas ansiosos e perda de sono. Com base nas recomendações de rastreamento de doenças e nos princípios da prevenção quaternária, o médico de família e comunidade deve:",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar os seguintes exames para check-up anual: hemograma completo, hemoglobina glicada, TSH, perfil lipídico, creatinina, exame de urina simples, ultrassonografia abdominal e painel completo de marcadores tumorais, pois são importantes para rastrear precocemente alterações, mesmo sem sintomas aparentes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "reavaliar o caso, acolher as preocupações do paciente com empatia, explicar os riscos do excesso de exames e solicitar apenas rastreamentos recomendados para sua faixa etária, como aferição da pressão arterial, pesagem, avaliação de risco cardiovascular, glicemia de jejum, perfil lipídico e sangue oculto nas fezes",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "avaliar com o paciente os exames que foram solicitados anteriormente e transcrever todos para realização na UBS, mesmo sem indicação, para garantir o vínculo com o paciente, que não costuma buscar atendimento na unidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prescrever medicações para ansiedade e insônia imediatamente, sem discutir os exames, pois a ansiedade e a insônia devem ser tratadas antes de qualquer abordagem clínica preventiva",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o conceito de Prevenção Quaternária, que consiste na detecção de indivíduos em risco de intervenções médicas excessivas para protegê-los de novos danos e evitar a iatrogenia diagnóstica ou terapêutica. No contexto da Atenção Primária, o médico deve equilibrar as demandas do paciente com as evidências científicas de rastreamento.\n\nA alternativa (a) está incorreta porque propõe uma bateria excessiva de exames sem evidência de benefício para pacientes assintomáticos. O uso de marcadores tumorais para rastreamento na população geral é contraindicado, pois gera muitos resultados falso-positivos, levando a biópsias e procedimentos invasivos desnecessários. Além disso, exames como hemograma e ultrassonografia abdominal de rotina em homens saudáveis não reduzem a morbimortalidade.\n\nA alternativa (b) está correta porque aplica os princípios da Prevenção Quaternária e da Medicina Baseada em Evidências. O médico deve acolher as angústias do paciente e usar a comunicação para explicar os riscos do excesso de exames (*overdiagnosis*). Para um homem de 52 anos, as diretrizes nacionais e internacionais recomendam o rastreamento de hipertensão (pressão arterial), obesidade (peso/IMC), risco cardiovascular, dislipidemia (perfil lipídico), diabetes (glicemia) e câncer colorretal (sangue oculto nas fezes ou colonoscopia).\n\nA alternativa (c) está incorreta porque a simples transcrição de exames solicitados por terceiros, sem critério clínico, fere a autonomia do médico e o uso racional de recursos do SUS. O vínculo com o paciente deve ser construído por meio da confiança e da explicação técnica, e não pela realização de vontades que podem ser prejudiciais à saúde do indivíduo a longo prazo.\n\nA alternativa (d) está incorreta porque propõe a medicalização imediata da ansiedade e da insônia sem uma investigação diagnóstica adequada. Muitas vezes, os sintomas ansiosos desse paciente são reflexos da preocupação com a saúde e do excesso de informações ou exames anteriores. Tratar com medicamentos sem abordar a causa e a questão dos exames preventivos ignora a integralidade do cuidado e pode causar dependência medicamentosa.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:26.242Z"
+  },
+  {
+    "id": "AJUDA_ac00925a-ad14-474d-9bc7-c8c265e41d99",
+    "originalId": "ac00925a-ad14-474d-9bc7-c8c265e41d99",
+    "statement": "Uma gestante de 32 anos, G2P1A0, com 34 semanas de gestação, chega ao pronto-socorro com queixas de dor abdominal intensa no quadrante superior direito, irradiando para o ombro direito, acompanhada de náuseas e vômitos. A paciente relata ter tido um episódio de pré-eclâmpsia em sua primeira gestação, mas até o momento, nesta gravidez, não apresentou alterações significativas na pressão arterial. Ao exame físico, encontra-se hipertensa (160 x 110 mmHg), com sinais de icterícia e hematomas em abdômen. A ultrassonografia abdominal mostra líquido livre no abdômen, sugerindo hemoperitônio. O exame de sangue revela hemoglobina de 8 g/dL e plaquetas de 80.000/mm³. Diante desse quadro, o diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trombose da veia porta com hemorragia intra-abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ruptura hepática espontânea associada à Síndrome HELLP.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hemorragia por descolamento prematuro de placenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apendicite aguda complicada com hemoperitônio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hepatite viral com complicação hemorrágica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito apresenta uma gestante no terceiro trimestre com hipertensão arterial (160 x 110 mmHg), dor intensa em hipocôndrio direito com irradiação para o ombro (sinal de Kehr, indicativo de irritação diafragmática), icterícia, anemia (Hb 8 g/dL) e plaquetopenia (80.000/mm³). A presença de líquido livre no abdômen (hemoperitônio) em uma paciente com sinais de síndrome HELLP (hemólise, enzimas hepáticas elevadas e baixas plaquetas) aponta para uma complicação grave e rara: a ruptura de um hematoma subcapsular hepático.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A trombose da veia porta pode causar dor abdominal e hipertensão portal a longo prazo, mas não justifica a hipertensão arterial aguda de 160 x 110 mmHg, a plaquetopenia sistêmica ou o hemoperitônio súbito neste contexto gestacional. Além disso, não há relação direta entre a história de pré-eclâmpsia da paciente e uma trombose de veia porta.\n\nAlternativa B (Correta): A síndrome HELLP é uma forma grave de pré-eclâmpsia. Uma de suas complicações mais temíveis é a formação de um hematoma subcapsular hepático. Quando esse hematoma se rompe, ocorre hemoperitônio, dor súbita no quadrante superior direito que pode irradiar para o ombro devido à irritação do nervo frênico, queda da hemoglobina e instabilidade hemodinâmica. A tríade de hipertensão, dor no hipocôndrio direito e evidência de sangramento intraperitoneal na gestante é clássica para esse diagnóstico.\n\nAlternativa C (Incorreta): O descolamento prematuro de placenta (DPP) manifesta-se tipicamente com dor abdominal súbita de localização uterina, hipertonia uterina e, frequentemente, sangramento vaginal escuro. Embora o DPP possa levar ao choque e distúrbios de coagulação, ele não explicaria a dor específica no quadrante superior direito com irradiação para o ombro, nem a icterícia ou o líquido livre compatível com hemoperitônio de origem hepática.\n\nAlternativa D (Incorreta): A apendicite aguda na gestante pode ter apresentação atípica devido ao deslocamento do apêndice pelo útero gravídico, podendo causar dor no flanco ou hipocôndrio direito. No entanto, ela se manifesta com sinais inflamatórios (febre, leucocitose) e não causa hipertensão arterial grave, plaquetopenia ou hemoperitônio maciço, a menos que houvesse uma perfuração com peritonite purulenta, o que não condiz com a queda abrupta de hemoglobina.\n\nAlternativa E (Incorreta): A hepatite viral pode causar icterícia, náuseas, vômitos e dor no hipocôndrio direito. Contudo, não é uma causa comum de hemoperitônio espontâneo nem de hipertensão arterial sistêmica grave. A associação com a história prévia de pré-eclâmpsia e a plaquetopenia atual direciona o diagnóstico para uma patologia obstétrica hipertensiva e não infecciosa.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:26.242Z"
+  }
+]

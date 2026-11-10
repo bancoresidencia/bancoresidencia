@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_bf35f02a-00be-4baf-bddd-125b0aeeb1c8",
+    "originalId": "bf35f02a-00be-4baf-bddd-125b0aeeb1c8",
+    "statement": "Uma menina de 7 anos é diagnosticada com puberdade precoce central idiopática. Qual dos seguintes achados laboratoriais é MAIS consistente com essa condição?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Níveis elevados de sulfato de deidroepiandrosterona (SDHEA)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Níveis suprimidos de LH e FSH após teste de estímulo com GnRH",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Níveis elevados de estradiol e níveis suprimidos de LH e FSH",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Níveis elevados de LH e FSH basais e resposta aumentada ao teste de estímulo com GnRH",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "CONCEITOS-CHAVE\n\nA puberdade precoce é classificada em dois grandes grupos: Central (dependente de GnRH) e Periférica (independente de GnRH). Na Puberdade Precoce Central (PPC), ocorre a ativação prematura do eixo hipotálamo-hipófise-gonadal, mimetizando o que ocorre em uma puberdade fisiológica, porém em idade cronológica inadequada (antes dos 8 anos em meninas e 9 anos em meninos).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: O sulfato de deidroepiandrosterona (SDHEA) é um marcador da zona reticular da glândula adrenal. Níveis elevados de SDHEA estão associados à adrenarca (maturação da adrenal), que pode ocorrer de forma isolada ou em casos de puberdade precoce periférica (como tumores adrenais ou hiperplasia adrenal congênita). Na puberdade precoce central, o foco está na ativação das gonadotrofinas (LH e FSH) e não primariamente nos andrógenos adrenais.\n\nAlternativa (b) INCORRETA: Níveis suprimidos de LH e FSH após o teste de estímulo com GnRH (ou análogo de GnRH) são característicos da Puberdade Precoce Periférica. Nesse caso, a fonte de esteroides sexuais (estrogênio ou testosterona) é externa ao eixo central, exercendo um feedback negativo que mantém a hipófise \"bloqueada\".\n\nAlternativa (c) INCORRETA: Este padrão (estradiol elevado com gonadotrofinas suprimidas) também é clássico da Puberdade Precoce Periférica. Pode ser encontrado em situações como cistos foliculares autônomos, tumores ovarianos produtores de estrogênio ou síndrome de McCune-Albright. Na forma central, esperamos que as gonadotrofinas estejam elevadas ou ao menos responsivas, pois são elas que estimulam a produção de estradiol.\n\nAlternativa (d) CORRETA: Por definição, a Puberdade Precoce Central decorre da ativação precoce do gerador de pulsos de GnRH no hipotálamo. Isso resulta no aumento dos níveis basais de LH (que é o parâmetro laboratorial mais sensível) e FSH. Ao realizarmos o teste de estímulo com GnRH, a hipófise, que já está \"sensibilizada\", apresenta uma resposta exacerbada, com liberação acentuada de LH (geralmente acima de 5 UI/L, dependendo do ensaio utilizado), confirmando que o eixo central está ativo.\n\nRESUMO DO DIAGNÓSTICO LABORATORIAL NA PPC\n1. LH basal elevado (valor de corte varia conforme o método, geralmente > 0,1 - 0,3 UI/L).\n2. Resposta puberal ao teste de estímulo com GnRH ou análogo (pico de LH elevado).\n3. Avanço da idade óssea (comum a ambas as formas de puberdade precoce).\n4. Elevação de esteroides sexuais (estradiol na menina) secundária ao estímulo das gonadotrofinas.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:45.860Z"
+  },
+  {
+    "id": "AJUDA_bf3b8167-d7a5-4049-81b7-4ee27a14a4ee",
+    "originalId": "bf3b8167-d7a5-4049-81b7-4ee27a14a4ee",
+    "statement": "Há 1 mês a mãe de Yuri observa que o menino de 4 anos vem apresentando edema palpebral ao acordar que melhora durante o dia, apatia, e urina com espuma. A médica da UBS encaminhou a criança ao pediatra que suspeitou de Síndrome Nefrótica e solicitou alguns exames na urgência. Para elucidação diagnóstica, os exames que devem ser solicitados são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ureia, creatinina, urina 1, proteinúria de 24hs, triglicerideos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colesterol total e frações, proteinúria de 24hs, albumina sérica, triglicerideos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Não é necessária a realização de exames, pois o diagnóstico é clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Proteinúria de 24hs, albumina, triglicerideos, ureia, creatinina, proteína C reativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Glicemia, sódio, potássio, cálcio, proteinúria de 24hs, hemograma completo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Síndrome Nefrótica é definida por uma tríade (ou tétrade) clássica resultante do aumento da permeabilidade glomerular às proteínas. O quadro clínico descrito (edema palpebral matutino e urina espumosa em criança de 4 anos) é altamente sugestivo dessa patologia, sendo a Doença de Lesões Mínimas a causa mais provável nesta faixa etária. Para confirmar o diagnóstico, os exames devem comprovar os pilares da síndrome.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a ureia e a creatinina sejam importantes para avaliar a função renal e o EAS (Urina I) possa sugerir a presença de proteínas, esta alternativa peca por não incluir a dosagem de albumina sérica, que é um critério diagnóstico fundamental para definir a hipoalbuminemia.\n\nb) Correta. Esta alternativa contempla todos os elementos necessários para o diagnóstico da Síndrome Nefrótica: a proteinúria maciça (confirmada pela proteinúria de 24 horas), a hipoalbuminemia (albumina sérica < 2,5 - 3,0 g/dL) e a dislipidemia (colesterol e triglicerídeos elevados, que ocorrem pela estimulação hepática na síntese de lipoproteínas em resposta à baixa pressão oncótica).\n\nc) Incorreta. O diagnóstico da Síndrome Nefrótica não é exclusivamente clínico. É obrigatória a comprovação laboratorial da perda proteica urinária maciça e da redução dos níveis de albumina no sangue para diferenciar de outras causas de edema (como doenças cardíacas ou hepáticas).\n\nd) Incorreta. A proteína C-reativa (PCR) é um marcador inflamatório inespecífico e não faz parte dos critérios diagnósticos da síndrome. Além disso, embora ureia e creatinina sejam úteis no acompanhamento, o perfil lipídico completo é mais característico para a definição diagnóstica inicial.\n\ne) Incorreta. Glicemia, hemograma e eletrólitos (sódio, potássio, cálcio) são exames complementares que ajudam a avaliar o estado geral do paciente e possíveis complicações, mas não definem o diagnóstico de Síndrome Nefrótica por si só, faltando a dosagem de albumina e do perfil lipídico.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:45.860Z"
+  },
+  {
+    "id": "AJUDA_bf436a3f-8e51-422b-bbe9-cc0ba1f51624",
+    "originalId": "bf436a3f-8e51-422b-bbe9-cc0ba1f51624",
+    "statement": "Paciente submetido a laparotomia exploratória de urgência após quadro de abdome agudo perfurativo, evoluiu em pós-operatório com plaquetopenia progressiva, alargamento de tempo de protrombina (TP) e tempo de tromboplastina parcial ativado (TTPA) e fibrinogênio consumido < 85 mg/dL, sem sangramento ativo. Qual é a conduta hemoterápica adequada para este caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transfusão de plasma fresco congelado (PFC) 20 ml/Kg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transfusão de plasma fresco congelado (PFC) 1UI/10 Kg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transfusão de Crioprecipitado 1 UI/10 Kg.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transfusão de Crioprecipitado 20 mL/Kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito aponta para uma Coagulopatia Intravascular Disseminada (CIVD) ou uma coagulopatia de consumo decorrente do quadro infeccioso grave (abdome agudo perfurativo). Os exames mostram plaquetopenia, alargamento dos tempos de coagulação (TP e TTPA) e, fundamentalmente, uma hipofibrinogenemia grave (fibrinogênio < 85 mg/dL).\n\nA reposição de fibrinogênio é indicada quando os níveis estão abaixo de 100 mg/dL na presença de sangramento ou em pacientes que serão submetidos a procedimentos invasivos; frequentemente, o limiar de 100-150 mg/dL é utilizado em pacientes críticos. O crioprecipitado é o hemocomponente de escolha para repor especificamente o fibrinogênio, pois contém uma concentração muito maior dessa proteína em um volume reduzido quando comparado ao plasma.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O Plasma Fresco Congelado (PFC) é utilizado para repor todos os fatores de coagulação, mas não é a forma mais eficiente de repor fibrinogênio isoladamente. A dose de 20 mL/kg é uma dose de ataque alta e, para atingir níveis seguros de fibrinogênio apenas com plasma, o volume necessário poderia causar sobrecarga volêmica no paciente.\n\nAlternativa b) Incorreta. Além de o PFC não ser a primeira escolha para reposição específica de fibrinogênio neste nível crítico, a dose de plasma é habitualmente calculada em mL/kg (geralmente 10 a 15 mL/kg), e não em unidades por peso.\n\nAlternativa c) Correta. O crioprecipitado é rico em fibrinogênio, fator VIII, fator XIII e fator de von Willebrand. A recomendação padrão para o tratamento da hipofibrinogenemia é a administração de 1 unidade de crioprecipitado para cada 10 kg de peso do paciente. Essa dose costuma elevar o fibrinogênio plasmático em aproximadamente 50 mg/dL.\n\nAlternativa d) Incorreta. A dose do crioprecipitado é calculada em unidades (UI) por peso, e não em mL/kg. O volume de uma unidade de crioprecipitado é muito pequeno (cerca de 10 a 20 mL); portanto, 20 mL/kg seria uma dose volumétrica absurda e tecnicamente errada para este hemocomponente.\n\nResumo: Diante de um fibrinogênio abaixo de 100 mg/dL em um contexto de coagulopatia de consumo, a conduta mais assertiva é a reposição com crioprecipitado na dose de 1 UI para cada 10 kg de peso.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Abdome Agudo Perfurativo",
+      "Medicina Transfusional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:45.860Z"
+  },
+  {
+    "id": "AJUDA_bf439f2e-7a2e-4bc0-a581-7635f14a77d7",
+    "originalId": "bf439f2e-7a2e-4bc0-a581-7635f14a77d7",
+    "statement": "Homem de 68 anos, hipertenso e diabético, é admitido na emergência com febre, tosse produtiva, dispneia e confusão mental há dois dias. Ao exame físico, apresenta temperatura de 38,9°C, pressão arterial de 82×48 mmHg, frequência cardíaca de 122 bpm, frequência respiratória de 30 irpm, saturação de oxigênio de 89% em ar ambiente e enchimento capilar lentificado. Os exames iniciais mostram leucócitos de 19.800/mm³, lactato de 4,5 mmol/L, creatinina de 2,1 mg/dL (basal de 1,0 mg/dL) e radiografia de tórax com consolidação em lobo inferior direito. Após o reconhecimento de choque séptico, foram coletadas hemoculturas.\nDe acordo com as recomendações atuais da Surviving Sepsis Campaign, qual é a conduta mais adequada nas primeiras horas de atendimento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aguardar o resultado das hemoculturas antes de iniciar antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar antibioticoterapia empírica de amplo espectro o mais precocemente possível, sem retardar seu início pela coleta de exames adicionais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar hidrocortisona intravenosa para todos os pacientes com choque séptico, independentemente da resposta à reposição volêmica e aos vasopressores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adiar a reposição volêmica até a confirmação microbiológica do agente infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar vasopressores somente após a infusão de todo o volume de cristaloides programado, mesmo na presença de hipotensão persistente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nEstamos diante de um paciente idoso, com comorbidades (HAS e DM), apresentando um quadro clássico de Sepse com foco pulmonar, evoluindo para Choque Séptico. Os critérios preenchidos incluem disfunção orgânica (confusão mental, aumento de creatinina), hipotensão refratária com hiperlactatemia (lactato > 2 mmol/L) e necessidade de intervenção imediata.\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): O início da antibioticoterapia é uma emergência médica. O atraso na administração de antimicrobianos está diretamente associado ao aumento da mortalidade no choque séptico. A recomendação é iniciar o tratamento na primeira hora após o reconhecimento do quadro. Jamais deve-se aguardar resultados de culturas, que levam dias, para tratar uma infecção grave.\n\nAlternativa B (Correta): De acordo com o Surviving Sepsis Campaign (SSC), a administração de antibióticos de amplo espectro deve ser feita o mais rápido possível, idealmente dentro da primeira hora do reconhecimento da sepse ou choque séptico. Embora a coleta de culturas seja recomendada antes do início do antibiótico para guiar o descalonamento futuro, essa coleta não deve atrasar significativamente o início da terapia medicamentosa.\n\nAlternativa C (Incorreta): O uso de corticoides (como a hidrocortisona) não é indicado para todos os pacientes. A diretriz recomenda seu uso apenas em pacientes com choque séptico que permanecem hemodinamicamente instáveis (necessitando de doses crescentes de vasopressores) após reposição volêmica adequada. Não é uma conduta de primeira linha para todos os casos.\n\nAlternativa D (Incorreta): A reposição volêmica com cristaloides (30 ml/kg nas primeiras 3 horas) é um dos pilares do tratamento inicial do choque séptico para restaurar a perfusão tecidual. Adiar essa conduta para aguardar resultados microbiológicos é um erro grave que leva à falência múltipla de órgãos e morte.\n\nAlternativa E (Incorreta): Embora a expansão volêmica seja o passo inicial, as diretrizes atuais permitem (e muitas vezes sugerem) o início precoce de vasopressores (preferencialmente noradrenalina) se o paciente apresentar hipotensão grave ou se a pressão arterial média não estiver sendo restabelecida rapidamente, com o objetivo de garantir uma pressão de perfusão mínima durante a própria reanimação fluídica. Não se deve esperar o término de todo o volume programado se o choque for profundo.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Sepse",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:45.860Z"
+  },
+  {
+    "id": "AJUDA_bf536c9c-7a56-4905-8d73-f035c5d4a3d2",
+    "originalId": "bf536c9c-7a56-4905-8d73-f035c5d4a3d2",
+    "statement": "Joana, 37 anos, mulher cis, separada, gerente de RH, tinha em prontuário mais de 6 passagens na UBS nos últimos 3 meses por manchas no corpo, que não coçam. O médico atendeu a paciente em consulta agendada e, por avaliar as lesões como maculopapulares no corpo inclusive com algumas lesões nas mãos, suspeitou de sífilis, pedindo um teste rápido. O teste foi realizado na mesma manhã com resultado positivo. Ao conversar com a paciente, o médico apurou que ela havia tido, em uma única oportunidade, uma relação sexual desprotegida, há 9 meses. Nunca sentiu nada e não percebeu nenhuma lesão até o aparecimento das manchas pelo corpo e palma da mão há 3 meses, quando fez um exame médico para piscina do clube e foi reprovada, vindo buscar ajuda na UBS. Solicitou-se, então, o teste não treponêmico, cujo resultado foi positivo, confirmando o diagnóstico de sífilis. Com relação ao estadiamento, esquema terapêutico e seguimento, por se tratar de sífilis",
+    "options": [
+      {
+        "id": "A",
+        "text": "recente secundária, benzilpenicilina benzatina 2,4 milhões UI, IM, 1x/semana (1,2 milhão Ul em cada glúteo) por 3 semanas, teste não treponêmico mensal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "latente tardia, benzilpenicilina benzatina 2,4 milhões UI, IM, 1x/semana (1,2 milhão Ul em cada glúteo) por 3 semanas, teste não treponêmico trimestral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "recente primária, benzilpenicilina benzatina 2,4 milhões UI, IM, dose única (1,2 milhão Ul em cada glúteo), teste não treponêmico mensal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "recente secundária, benzilpenicilina benzatina 2,4 milhões UI, IM, dose única (1,2 milhão Ul em cada glúteo), teste não treponêmico trimestral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "latente recente, benzilpenicilina benzatina 2,4 milhões UI, IM, dose única (1,2 milhão Ul em cada glúteo), teste não treponêmico mensal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é necessário correlacionar o quadro clínico da paciente com o estadiamento da sífilis, o tratamento preconizado pelo Ministério da Saúde e o protocolo de seguimento laboratorial.\n\n1. Estadiamento:\nA paciente apresenta manchas maculopapulares pelo corpo, incluindo a palma das mãos, sem prurido. Essas são as lesões clássicas da sífilis secundária (sifilídides). Como a relação sexual desprotegida ocorreu há 9 meses (menos de 1 ano), trata-se de sífilis recente secundária. Se a paciente não tivesse sintomas, seria classificada como sífilis latente recente.\n\n2. Esquema Terapêutico:\nDe acordo com o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST), o tratamento para sífilis recente (primária, secundária e latente recente com menos de um ano de evolução) é feito com benzilpenicilina benzatina, 2,4 milhões de UI, via intramuscular, em dose única.\n\n3. Seguimento:\nO monitoramento da cura é realizado com testes não treponêmicos (VDRL ou RPR). Em pacientes não gestantes, o seguimento deve ser trimestral (nos 3º, 6º, 9º e 12º meses após o tratamento). O seguimento mensal é exclusivo para gestantes, visando evitar a sífilis congênita.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O erro está no tempo de tratamento e na frequência do seguimento. As 3 doses (uma por semana) são indicadas para sífilis tardia (latente tardia, latente de tempo ignorado ou terciária). O teste mensal é para gestantes.\n\nAlternativa b) Incorreta. A paciente não possui sífilis latente, pois apresenta manifestações clínicas (lesões na pele e mãos). Além disso, a latente tardia exigiria 3 doses de penicilina.\n\nAlternativa c) Incorreta. A sífilis primária é caracterizada pelo cancro duro (úlcera genital), que a paciente não relata ter percebido. O quadro atual é de disseminação (secundária). O seguimento mensal também está incorreto para uma paciente não gestante.\n\nAlternativa d) Correta. O quadro clínico de manchas nas mãos e corpo define a sífilis secundária. Como a infecção tem 9 meses, é classificada como recente. O tratamento para sífilis recente é dose única de 2,4 milhões de UI de benzilpenicilina benzatina e o seguimento em adultos não gestantes é trimestral.\n\nAlternativa e) Incorreta. A sífilis latente é aquela em que não há sinais ou sintomas clínicos, o que não se aplica ao caso de Joana, que tem lesões visíveis. O seguimento mensal também está incorreto para o perfil da paciente.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:45.860Z"
+  },
+  {
+    "id": "AJUDA_bf549ce2-d6f2-4761-86a9-2c63ee99a369",
+    "originalId": "bf549ce2-d6f2-4761-86a9-2c63ee99a369",
+    "statement": "Homem, 18 anos, em tratamento adjuvante com metotrexato endovenoso, no segundo mês pós-operatório de ressecção de osteossarcoma tibial. Comparece ao pronto atendimento com história de febre (38°C) há 1 dia, acompanhada de lesões aftosas dolorosas em mucosa jugal e em lábio (figuras abaixo), que impedem a ingestão via oral. Encontra-se estável clinicamente. Hemograma: Hb 8,7 g/dL; Ht 26,1%; leucócitos 1.200/mm³; neutrófilos 240/mm³ (20%); linfócitos 600/mm³ (50%); plaquetas 58.000/mm³. \n\nQual é a conduta imediata indicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cefepime endovenoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ganciclovir endovenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aciclovir via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nistatina via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve um paciente jovem em quimioterapia com metotrexato que apresenta febre associada a neutropenia grave (contagem absoluta de neutrófilos de 240/mm³), configurando uma emergência oncológica: neutropenia febril (temperatura maior ou igual a 38,0 °C associada a neutrófilos abaixo de 500/mm³).\n\nAs imagens evidenciam uma mucosite oral grave, caracterizada por extensas ulcerações recobertas por fibrina em lábios e mucosa jugal, decorrente da toxicidade celular do metotrexato. Essa quebra da barreira epitelial representa uma porta de entrada crítica para translocação bacteriana, especialmente por bacilos Gram-negativos (incluindo Pseudomonas aeruginosa) e cocos Gram-positivos. A conduta imediata mandatória é o início de antibioticoterapia endovenosa de amplo espectro com cobertura antipseudomonal na primeira hora do atendimento (hora de ouro).\n\nAnalise das alternativas:\n\nAlternativa A: Correta. O cefepime e uma cefalosporina de quarta geracao com acao contra bacterias Gram-positivas e Gram-negativas, apresentando excelente cobertura contra Pseudomonas aeruginosa. E um dos farmacos de primeira linha recomendados em monoterapia empírica para o manejo imediato da neutropenia febril.\n\nAlternativa B: Incorreta. O ganciclovir e um antiviral utilizado no tratamento de infeccoes por citomegalovirus (CMV). Nao ha indicacao de terapia antiviral empirica inicial para neutropenia febril sem diagnostico especifico comprovado.\n\nAlternativa C: Incorreta. O aciclovir e direcionado ao tratamento do virus Herpes simplex. As lesoes apresentadas decorrem de mucosite citotoxica induzida por quimioterapia, e nao de infeccao herpetica primaria. Alem disso, o paciente apresenta impossibilidade de degluticao por dor e a prioridade clinica e a cobertura bacteriana sistemica.\n\nAlternativa D: Incorreta. A nistatina e um antifungico topico indicado para candidiase oral. Ela nao trata o foco sistemico responsavel pela febre nem previne a evolucao para sepse e choque septico bacteriano.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Oncologia Ortopédica e Osteomielite",
+      "Neutropenia Febril",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ed88ef22cc6ad34d64fab14c61ea7e9122eefa07724498a29cc8a82193f4476b.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_bf549ce2-d6f2-4761-86a9-2c63ee99a369_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:46.388Z"
+  },
+  {
+    "id": "AJUDA_bf5c6127-43d0-46e9-b0e1-6f51faa82f9c",
+    "originalId": "bf5c6127-43d0-46e9-b0e1-6f51faa82f9c",
+    "statement": "Uma mulher de 63 anos, portadora de carcinoma lobular invasivo de mama direita de 2,0 cm, com axila clinicamente livre, é submetida a quadrantectomia com biópsia de linfonodo sentinela. Durante o exame de congelação intraoperatória, o patologista encontra a presença de células carcinomatosas nos linfonodos sentinelas biopsiados. É indicado o esvaziamento axilar. Para tanto, é importante definir quais são os 3 níveis dos linfonodos axilares.\nA estrutura anatômica que define esses níveis é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a artéria axilar;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o músculo peitoral maior;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o músculo peitoral menor;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a artéria mamária interna;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o nervo intercostobraquial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda um conceito fundamental da anatomia cirúrgica mamária e da oncologia: a classificação dos linfonodos axilares, essencial para o estadiamento e tratamento do câncer de mama.\n\nA resposta correta é a letra (c): o músculo peitoral menor.\n\nOs níveis linfonodais axilares foram descritos por Berg e são definidos exclusivamente pela sua relação anatômica com o músculo peitoral menor. Essa divisão é crucial para orientar a extensão do esvaziamento axilar (linfadenectomia).\n\nOs três níveis são divididos da seguinte forma:\nNível I: Linfonodos situados lateralmente à borda lateral do músculo peitoral menor.\nNível II: Linfonodos situados profundamente (atrás do) músculo peitoral menor.\nNível III: Linfonodos situados medialmente à borda medial do músculo peitoral menor, estendendo-se até o ligamento de Halsted (ápice da axila).\n\nExplicação das alternativas:\n\na) Incorreta. A artéria axilar é uma estrutura vascular importante que atravessa a região axilar e serve como referência para a identificação de grupos de linfonodos (como os linfonodos laterais ou braquiais), mas não é o parâmetro utilizado para definir os níveis I, II e III de Berg.\n\nb) Incorreta. O músculo peitoral maior é o músculo mais superficial da região anterior do tórax. Embora ele cubra a axila e precise ser afastado ou visualizado durante a cirurgia, ele não serve como o marco anatômico para a divisão técnica dos níveis axilares.\n\nc) Correta. Como detalhado acima, o músculo peitoral menor é o referencial anatômico padrão na literatura cirúrgica para a classificação dos níveis de Berg. É a partir de sua localização que o cirurgião determina a extensão da dissecção.\n\nd) Incorreta. A artéria mamária interna (ou torácica interna) está relacionada à cadeia de linfonodos da mamária interna, que fica paralela ao esterno. Esses linfonodos são distintos da cadeia axilar e não seguem a classificação de níveis de I a III.\n\ne) Incorreta. O nervo intercostobraquial é uma estrutura nervosa sensitiva frequentemente identificada e preservada durante o esvaziamento axilar para evitar parestesia (dormência) na face interna do braço. Apesar de sua importância cirúrgica, ele não define os níveis linfonodais.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:46.388Z"
+  },
+  {
+    "id": "AJUDA_bf5e09d5-5b41-4ada-94f4-4f6a321b43a3",
+    "originalId": "bf5e09d5-5b41-4ada-94f4-4f6a321b43a3",
+    "statement": "Homem de 58 anos chega prostrado, febril, rigidez de nuca e alteração do nível de consciência. Suspeita de meningite bacteriana. Qual a sequência imediata correta no pronto-socorro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente administrar antipiréticos e observar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar antiviral empírico com aciclovir isolado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aguardar punção lombar antes de antibioticoterapia para coletar LCR, mesmo com instabilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nos casos de suspeita de meningite com sinais de instabilidade ou papiledema, colher hemoculturas e iniciar antibiótico empírico intravenoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO caso clínico apresenta um paciente com a tríade clássica de meningite (febre, rigidez de nuca e alteração do nível de consciência). Diante dessa suspeita, o tempo é o fator prognóstico mais importante. O objetivo no pronto-socorro é iniciar a antibioticoterapia o mais rápido possível, idealmente dentro da primeira hora.\n\nAlternativa A: Incorreta. A meningite bacteriana é uma emergência médica grave. A conduta de apenas observar e administrar antipiréticos é inadequada e perigosa, pois a demora no tratamento antibiótico específico aumenta exponencialmente a taxa de mortalidade e o risco de sequelas neurológicas permanentes.\n\nAlternativa B: Incorreta. O aciclovir é utilizado para o tratamento de encefalites virais (especialmente por *Herpes simplex*). Embora a alteração do nível de consciência possa ocorrer em encefalites, a rigidez de nuca marcante em um paciente febril aponta fortemente para a etiologia bacteriana. O tratamento isolado com antiviral não cobre os agentes bacterianos, que são a prioridade absoluta neste cenário.\n\nAlternativa C: Incorreta. Um erro comum na prática médica é retardar o antibiótico para aguardar a coleta do líquido cefalorraquidiano (LCR). Se o paciente apresenta sinais de instabilidade, sinais focais, papiledema (sinal de hipertensão intracraniana) ou rebaixamento importante do nível de consciência, a punção lombar deve ser adiada até a realização de uma tomografia de crânio para afastar o risco de herniação cerebral. Nesses casos, o antibiótico deve ser iniciado antes mesmo de qualquer exame de imagem ou punção.\n\nAlternativa D: Correta. Esta alternativa descreve o protocolo de manejo rápido da meningite bacteriana. Quando há contraindicação para a punção lombar imediata (como papiledema ou instabilidade), a sequência correta é: colher hemoculturas (que podem identificar o agente em 50% a 80% dos casos), iniciar imediatamente a antibioticoterapia empírica intravenosa (geralmente associada à dexametasona) e, posteriormente, providenciar a imagem e a coleta do LCR assim que houver segurança clínica. O início do antibiótico não altera a citobioquímica do LCR de forma imediata; portanto, não invalida a análise diagnóstica posterior.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:46.388Z"
+  },
+  {
+    "id": "AJUDA_bf5ef44f-b7b5-4de7-abe9-4751ce9c8fc2",
+    "originalId": "bf5ef44f-b7b5-4de7-abe9-4751ce9c8fc2",
+    "statement": "Prevenção clínica é um tema que se discute há um certo tempo, houve uma mudança paradigmática de uma organização de prevenção de base cronológica para uma de base relacional, logo é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Devido visão relacional, definida por médicos e não centrada na doença, Bury, em 1988, levou a uma proposta de utilizar termo prevenção quaternária para definir os cuidados paliativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Continuidade e longitudinalidade são fundamentais para a prática da medicina de família e comunidade, assim, a prevenção é incorporada nos contatos diários.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A redução de complicações, somada à reabilitação, por definição implicam na prevenção primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prevenção primária foi cunhado no fim da década de 1940 por Leavell e Clark, cuja fundamentação teórica é antropologia médica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a transição entre os modelos de prevenção na medicina. O modelo tradicional (cronológico), proposto por Leavell e Clark, baseia-se na história natural da doença. Já o modelo moderno (relacional), proposto por Marc Jamoulle, baseia-se na percepção de saúde/doença pelo paciente e na avaliação clínica do médico, sendo fundamental na Medicina de Família e Comunidade.\n\nAlternativa a: Incorreta. O conceito de prevenção quaternária foi proposto pelo médico belga Marc Jamoulle em 1986, e não por Bury em 1988. A prevenção quaternária consiste em identificar pacientes em risco de excesso de intervenção médica (supermedicalização) e protegê-los de intervenções desnecessárias ou iatrogênicas. Michael Bury é um sociólogo que contribuiu com o conceito de ruptura biográfica em doenças crônicas.\n\nAlternativa b: Correta. A prevenção de base relacional foca na pessoa e no vínculo estabelecido ao longo do tempo. Na Medicina de Família e Comunidade, os atributos da longitudinalidade (acompanhamento ao longo da vida) e da continuidade permitem que o médico realize ações preventivas de forma oportunística em cada encontro, integrando a prevenção ao cuidado diário, em vez de isolá-la em momentos cronológicos rígidos.\n\nAlternativa c: Incorreta. A redução de complicações de doenças já estabelecidas e a reabilitação de sequelas definem a prevenção terciária. A prevenção primária, por definição, ocorre antes do surgimento da patologia, visando remover os fatores de causa para que a doença não ocorra (exemplo: vacinação e promoção de hábitos saudáveis).\n\nAlternativa d: Incorreta. Leavell e Clark publicaram seus estudos sobre a História Natural da Doença entre as décadas de 1940 e 1960. No entanto, a base teórica utilizada por eles foi a epidemiologia e o modelo ecológico (tríade composta por agente, hospedeiro e meio ambiente), e não a antropologia médica. O modelo de Leavell e Clark é justamente o marco da visão cronológica que a questão menciona ter sido superada pelo modelo relacional.\n\nGabarito: Letra b.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:46.388Z"
+  },
+  {
+    "id": "AJUDA_bf6196cc-fb57-4cf2-a675-51ea5afeb4fe",
+    "originalId": "bf6196cc-fb57-4cf2-a675-51ea5afeb4fe",
+    "statement": "Analgesia pós-operatória multimodal é uma estratégia que visa associar fármacos com diferentes mecanismos de ação para promover um melhor controle da dor pós-operatória, reduzindo seus efeitos colaterais. Associe os fármacos (coluna da esquerda) a seus mecanismos de ação (coluna da direita).\n\n1 - Dipirona\n2 - Cetorolaco trometamol\n3 - Tramadol\n4 - Oxicodona\n5 - Buprenorfina\n\n( ) Agonismo mü, kapa e delta\n( ) Inibição de recaptação da serotonina\n( ) Inibição da cicloxigenase 3\n\nA sequência numérica correta, de cima para baixo, da coluna da direita, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 - 4 - 2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3 - 5 - 2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "4 - 3 - 1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "5 - 3 - 1",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A analgesia multimodal combina diferentes classes de medicamentos para obter sinergismo no controle da dor e reduzir a incidência de efeitos adversos, permitindo o uso de doses menores de cada substância. \n\nPara resolver a questão, devemos relacionar as características farmacológicas específicas de cada item:\n\n(5) Buprenorfina: É um opioide que apresenta um perfil farmacodinâmico complexo. É classificada como um agonista parcial de receptores mu, mas também interage com os receptores kapa e delta. No contexto da questão, é o fármaco associado ao agonismo desses três receptores.\n\n(3) Tramadol: Este fármaco possui um mecanismo de ação dual. Além de ser um agonista fraco dos receptores opioides mu, ele atua no sistema de modulação descendente da dor através da inibição da recaptação de neurotransmissores como a serotonina e a noradrenalina na fenda sináptica.\n\n(1) Dipirona: É um analgésico e antipirético cujo mecanismo de ação exato envolve diversos caminhos. Um dos principais mecanismos descritos, e frequentemente cobrado em provas de residência, é a inibição da enzima cicloxigenase 3 (COX-3), uma variante da COX-1 encontrada predominantemente no sistema nervoso central.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Associa o Tramadol (3) ao agonismo geral, a Oxicodona (4) à serotonina e o Cetorolaco (2) à COX-3. O Cetorolaco é um AINE inibidor de COX-1 e COX-2, não de COX-3, e a Oxicodona não tem ação na recaptação de serotonina.\n\nAlternativa B: Incorreta. Troca as funções da Buprenorfina e do Tramadol, além de associar erroneamente o Cetorolaco à inibição da COX-3.\n\nAlternativa C: Incorreta. Embora acerte a associação do Tramadol com a serotonina e da Dipirona com a COX-3, a sequência começa com a Oxicodona (4). Entre Oxicodona e Buprenorfina, a literatura específica de dor utilizada por diversas bancas associa a interação tripla (mu, kapa e delta) à Buprenorfina nesta estrutura de questão.\n\nAlternativa D: Correta. Apresenta a sequência exata (5 - 3 - 1) que relaciona a Buprenorfina aos receptores opioides, o Tramadol à inibição da recaptação de serotonina e a Dipirona à inibição da COX-3.\n\nInformações complementares:\n- O Cetorolaco trometamol (2) é um potente inibidor das cicloxigenases 1 e 2, sendo um AINE de uso comum no pós-operatório.\n- A Oxicodona (4) é um opioide agonista puro, com afinidade predominante por receptores mu, amplamente utilizada para dor moderada a forte.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:46.388Z"
+  }
+]

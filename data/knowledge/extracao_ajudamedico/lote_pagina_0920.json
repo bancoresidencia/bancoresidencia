@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_ff4683e3-0376-4838-b068-1aa425eac361",
+    "originalId": "ff4683e3-0376-4838-b068-1aa425eac361",
+    "statement": "Fernando, 50 anos, negro, previamente hígido, busca a Unidade Básica de Saúde do bairro para avaliação de rotina, sendo acolhido pela enfermeira Aline. Nega história familiar de hipertensão e diabetes, mas refere tabagismo e relata sedentarismo, com hábitos alimentares inadequados. Apresenta PA 170x100mmHg ao chegar e 160x100mmHg ao exame físico. Não é possível acessar a internet na UBS para consultar o risco cardiovascular pelo aplicativo HEARTS. Sobre o manejo inicial do paciente Fernando, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar monoterapia com diurético tiazídico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar terapia combinada diurético tiazídico + Bloqueadores de Receptores da Angiotensina (BRA), independentemente do risco cardiovascular",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar exames para definir o risco e iniciar monoterapia com IECA",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar MRPA e adiar início do tratamento até o resultado deste exame",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso: Fernando, 50 anos, negro, tabagista e sedentário, apresenta níveis tensionais de 170 x 100 mmHg e 160 x 100 mmHg. De acordo com as Diretrizes Brasileiras de Hipertensão Arterial, esses valores o classificam como portador de Hipertensão Estágio 2 (quando a pressão sistólica está entre 160-179 e/ou a diastólica entre 100-109 mmHg).\n\nPor que a alternativa B está correta:\nPara pacientes com Hipertensão Estágio 2 ou 3, a recomendação inicial é o início imediato do tratamento farmacológico. A estratégia preferencial nessas fases, ou mesmo no Estágio 1 com risco cardiovascular alto, é a terapia combinada (dois fármacos em doses baixas ou plenas). A associação de um bloqueador do sistema renina-angiotensina (como os BRA) com um diurético tiazídico ou um bloqueador de canais de cálcio é uma das combinações de primeira linha. No caso de pacientes negros, as diretrizes destacam que há uma excelente resposta a diuréticos tiazídicos e bloqueadores de canais de cálcio, tornando a combinação da alternativa B tecnicamente adequada e preconizada.\n\nExplicação das alternativas incorretas:\n\nAlternativa A: Incorreta. A monoterapia é geralmente reservada para pacientes com Hipertensão Estágio 1 de risco cardiovascular baixo ou para pacientes muito idosos e/ou frágeis. Fernando possui Hipertensão Estágio 2 e fatores de risco (tabagismo), o que exige uma abordagem mais agressiva com dois fármacos para atingir a meta terapêutica.\n\nAlternativa C: Incorreta. Embora a solicitação de exames para avaliação de lesão de órgão-alvo e estratificação de risco seja necessária na rotina, o diagnóstico de Hipertensão Estágio 2 com duas medidas elevadas já permite o início do tratamento. Além disso, a monoterapia com IECA é menos eficaz em pacientes negros quando comparada a outras classes ou à terapia combinada.\n\nAlternativa D: Incorreta. O MRPA (Monitorização Residencial da Pressão Arterial) ou o MAPA são úteis para confirmar o diagnóstico em casos de dúvida ou suspeita de hipertensão do avental branco. No entanto, em um paciente com níveis de 170 x 100 mmHg (Estágio 2) e presença de outros fatores de risco, o início do tratamento não deve ser retardado, pois o benefício da redução pressórica imediata supera a necessidade de confirmação por métodos de monitorização domiciliar.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:19.704Z"
+  },
+  {
+    "id": "AJUDA_ff479afb-8dc0-4739-b202-be29c01856d9",
+    "originalId": "ff479afb-8dc0-4739-b202-be29c01856d9",
+    "statement": "Gestante, 28 anos, G3P2 (cesáreas) A0, atualmente na 39ª semana é atendida no pronto socorro obstétrico em período expulsivo. Evolui sem intercorrências para parto por via vaginal. Após 30 minutos do nascimento, não ocorreu o secundamento. Realizada curagem, não ocorrendo o desprendimento placentário. O útero está contraído na cicatriz umbilical e não existem lacerações de trajeto. É indicado laparotomia exploradora de emergência. Qual a conduta mais adequada para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histerectomia puerperal com placenta in loco",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Cirurgia de B-Lynch e posterior histerectomia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Retirada da placenta e posterior histerorrafia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manobra da Taxe e procedimento de Huntington",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nO quadro clínico descreve uma paciente com fatores de risco importantes (duas cesáreas prévias) que apresenta falha no secundamento (delivramento) da placenta. Após a tentativa de extração manual (curagem) sem sucesso, e o fato de o útero estar contraído (afastando atonia uterina) e sem lacerações, a principal hipótese diagnóstica é o acretismo placentário (Espectro da Placenta Acreta).\n\nO acretismo ocorre quando as vilosidades coriônicas se fixam diretamente ao miométrio devido a uma deficiência da decídua basal, geralmente sobre uma cicatriz uterina prévia. Quando a placenta é acreta, increta ou percreta, não existe plano de clivagem para o descolamento.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Esta é a conduta padrão em casos de acretismo placentário diagnosticados ou suspeitados no intraoperatório após a falha da extração manual. A tentativa de remover a placenta à força causará uma hemorragia maciça e fatal, pois o miométrio não consegue se contrair para fechar os vasos abertos no sítio de invasão placentária. A histerectomia com a placenta mantida no local (in loco) é a medida mais segura para salvar a vida da paciente e controlar o sangramento.\n\nAlternativa B (Incorreta): A técnica de B-Lynch é uma sutura de compressão uterina utilizada para o tratamento da atonia uterina refratária. Como o enunciado afirma que o útero já está contraído na cicatriz umbilical, o problema não é a atonia, mas sim a aderência mórbida da placenta. Realizar o B-Lynch e postergar a histerectomia apenas atrasaria o tratamento definitivo.\n\nAlternativa C (Incorreta): Tentar retirar a placenta para depois realizar a sutura do útero (histerorrafia) é justamente o que deve ser evitado no acretismo. Como não há plano de clivagem, a retirada forçada arrancará partes do miométrio, resultando em hemorragia incoercível e possível coagulopatia de consumo.\n\nAlternativa D (Incorreta): A manobra de Taxe (reposição manual do útero) e o procedimento de Huntington (reposição cirúrgica via laparotomia através da tração dos ligamentos redondos) são manobras específicas para o tratamento da Inversão Uterina Aguda. O caso não descreve inversão, pois o fundo uterino é palpável na altura do umbigo e não houve colapso do fundo para dentro da cavidade vaginal.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:19.704Z"
+  },
+  {
+    "id": "AJUDA_ff48869b-5ac3-4ae0-ba9f-c0cb93a1a361",
+    "originalId": "ff48869b-5ac3-4ae0-ba9f-c0cb93a1a361",
+    "statement": "Paciente, 32 anos de idade, nuligesta, apresenta dor pélvica intermitente há 3 meses. Ao exame físico, nota-se massa pélvica móvel, de limites bem definidos. A ultrassonografia transvaginal evidencia imagem ovariana unilateral, de aspecto cístico, com conteúdo hiperecogênico e sombra acústica posterior. Com base nesse quadro, o diagnóstico provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cistoadenoma seroso, caracterizado por conteúdo anecogênico e paredes finas, sem áreas sólidas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Teratoma cístico maduro (dermoide), com possível complicação de torção ovariana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cistoadenoma mucinoso, que geralmente apresenta imagem cística multiloculada e conteúdo homogêneo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fibroma ovariano, caracterizado por hipovascularização e associação frequente com ascite e derrame pleural (síndrome de Meigs).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA questão descreve uma paciente jovem (32 anos) com uma massa pélvica cujas características ultrassonográficas são patognomônicas. A presença de uma imagem cística com conteúdo hiperecogênico e, principalmente, a sombra acústica posterior apontam diretamente para a presença de componentes densos, como sebo, fios de cabelo ou tecido ósseo/dentário dentro da lesão.\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\nAlternativa (a) INCORRETA: O cistoadenoma seroso é o tumor epitelial benigno mais comum. No entanto, sua apresentação clássica na ultrassonografia é de um cisto simples, de paredes finas e conteúdo totalmente anecogênico (preto no ultrassom, indicando líquido fluido). O enunciado descreve conteúdo hiperecogênico e sombra acústica, o que descarta essa opção.\n\nAlternativa (b) CORRETA: O Teratoma Cístico Maduro, também conhecido como Cisto Dermoide, é o tumor de células germinativas mais comum em mulheres em idade reprodutiva. Seus achados ultrassonográficos típicos incluem áreas hiperecogênicas (nódulo de Rokitansky ou protuberância dermoide) e o sinal da \"ponta do iceberg\", no qual o conteúdo de gordura e cabelo causa uma sombra acústica posterior acentuada, impedindo a visualização das estruturas atrás da massa. Além disso, devido ao seu peso e mobilidade, esses tumores apresentam um risco aumentado de torção ovariana, o que pode justificar a dor pélvica intermitente relatada pela paciente.\n\nAlternativa (c) INCORRETA: O cistoadenoma mucinoso tende a atingir grandes dimensões, sendo caracteristicamente multiloculado (vários septos finos internos) e com conteúdo de ecogenicidade variável (devido à densidade do muco), mas não costuma apresentar a sombra acústica posterior característica dos dermoides.\n\nAlternativa (d) INCORRETA: O fibroma ovariano é um tumor benigno do estroma gonadal, de consistência sólida e não cística. No ultrassom, manifesta-se como uma massa sólida hipoecogênica (semelhante a um mioma uterino). Embora a Síndrome de Meigs (fibroma, ascite e derrame pleural) seja uma associação clássica de prova, a descrição ultrassonográfica de imagem cística com sombra acústica posterior invalida este diagnóstico para o caso em questão.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:19.704Z"
+  },
+  {
+    "id": "AJUDA_ff6144d0-38e9-46e1-8f0e-23a515ccd59e",
+    "originalId": "ff6144d0-38e9-46e1-8f0e-23a515ccd59e",
+    "statement": "Mulher transgênero, 35 anos de idade, realizou cirurgia plástica há 3 semanas. Procura PS após síncope, dor torácica e dispneia. Faz uso de estrogênio nos últimos 10 anos e há 3 meses trocou para injetável. Exame físico: REG, T = 37,1°C, PA = 90/50 mmHg, FC = 110 bpm, FR = 22 irpm, SpO2 = 94% (ar ambiente). Ausculta pulmonar e cardíaca normais. Considerando a hipótese diagnóstica mais provável, qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Angiotomografia de tórax e infusão endovenosa de heparina não fracionada em bomba de infusão continua nas próximas 48h",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dímero-D e heparina de baixo peso molecular em dose profilática enquanto aguarda o resultado do exame",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dímero-D, angiotomografia de tórax e heparina de baixo peso molecular em dose plena nas primeiras 48h seguida de anticoagulante de ação direta",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ecodopplercardiograma e infusão endovenosa de rt-PA em 2h",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve uma paciente com alta probabilidade clínica de Tromboembolismo Pulmonar (TEP), apresentando fatores de risco importantes (cirurgia plástica recente e uso de estrogênio injetável) e sintomas clássicos (síncope, dor torácica e dispneia). O ponto crucial para a resolução da questão é a estabilidade hemodinâmica: a paciente apresenta hipotensão (PA 90/50 mmHg), o que classifica o TEP como de Alto Risco (ou TEP Massivo).\n\nAnálise das alternativas:\n\na) Incorreta. Embora a angiotomografia seja o padrão-ouro para o diagnóstico de TEP em pacientes estáveis, o tratamento proposto (apenas heparina não fracionada) é insuficiente para um caso de TEP de alto risco com instabilidade hemodinâmica. Pacientes com choque ou hipotensão necessitam de terapia de reperfusão (trombólise), a menos que haja contraindicação absoluta.\n\nb) Incorreta. O Dímero-D é um exame com alto valor preditivo negativo, utilizado apenas para excluir TEP em pacientes com baixa ou moderada probabilidade clínica. Nesta paciente, a suspeita é alta e ela está instável, tornando o Dímero-D desnecessário e contraindicado, pois retardaria a conduta. Além disso, a dose profilática de heparina é usada para prevenção, não para tratamento de um evento agudo já instalado.\n\nc) Incorreta. Novamente, o Dímero-D não tem lugar em pacientes de alto risco. A anticoagulação plena com heparina de baixo peso molecular isolada é o tratamento de escolha para o TEP de baixo risco ou risco intermediário (pacientes hemodinamicamente estáveis). No TEP massivo (instável), a conduta prioritária é a trombólise química.\n\nd) Correta. Diante de um paciente com suspeita de TEP e instabilidade hemodinâmica (PA sistólica < 90 mmHg ou queda > 40 mmHg por mais de 15 minutos), a diretriz recomenda a realização de um ecocardiograma à beira-leito. Se houver sinais de disfunção do ventrículo direito, o diagnóstico de TEP é corroborado e a terapia de reperfusão com trombolíticos (como o rt-PA) deve ser iniciada imediatamente para desobstruir a circulação pulmonar e reverter o choque. O ecocardiograma é preferível à angiotomografia em pacientes muito instáveis por poder ser feito sem transportar a paciente.\n\nResumo da conduta no TEP de Alto Risco:\n1. Estabilização inicial (oxigênio e suporte hemodinâmico cauteloso).\n2. Confirmação diagnóstica rápida (Ecocardiograma ou Angiotomografia, se disponível).\n3. Trombólise sistêmica (ex.: Alteplase/rt-PA) como terapia definitiva, caso não haja contraindicações.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Incongruência de Gênero",
+      "Choque",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:19.704Z"
+  },
+  {
+    "id": "AJUDA_ff6d460c-d9b3-4c81-9d7e-f49efe3f42e8",
+    "originalId": "ff6d460c-d9b3-4c81-9d7e-f49efe3f42e8",
+    "statement": "Diante de adolescente de 17 anos, com dismenorreia e episódios de dor pélvica acíclica, sem comorbidades, sexualmente ativa e sem desejo reprodutivo em curto prazo, com ultrassonografia com preparo intestinal para pesquisa de endometriose demonstrando discreto espessamento inespecífico de ligamentos uterossacros, qual é a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ressonância nuclear magnética para investigação complementar de endometriose e outras causas de dor pélvica crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar tratamento clínico com contraceptivo oral combinado e reavaliar em 3 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia laparoscópica para confirmação diagnóstica e remoção de prováveis lesões endometrióticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dosagem de CA 125, considerado alterado e marcador de endometriose se maior ou igual a 50 U/mL.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve uma paciente adolescente com quadro clínico e achados ultrassonográficos sugestivos de endometriose (dismenorreia, dor pélvica acíclica e espessamento de ligamentos uterossacros). No manejo da dor pélvica crônica com suspeita de endometriose, especialmente em adolescentes e mulheres sem desejo reprodutivo imediato, a conduta inicial deve priorizar o controle dos sintomas e a observação da resposta terapêutica.\n\nAlternativa (a) Incorreta: A Ressonância Nuclear Magnética (RNM) é um excelente exame para o mapeamento da endometriose profunda, mas, neste caso, a ultrassonografia com preparo intestinal (que possui sensibilidade comparável à RNM para lesões retrocervicais e de ligamentos) já foi realizada e trouxe informações suficientes para guiar a suspeita inicial. Solicitar um novo exame de imagem de alto custo antes de iniciar qualquer tratamento não é a conduta mais custo-efetiva nem necessária no momento.\n\nAlternativa (b) Correta: O tratamento clínico empírico é a conduta de primeira linha para adolescentes com suspeita de endometriose. O uso de contraceptivos orais combinados tem como objetivo promover a atrofia endometrial e reduzir a produção de prostaglandinas, aliviando a dor. Como a paciente é sexualmente ativa e não deseja engravidar, o contraceptivo atende a ambas as necessidades. A reavaliação em 3 meses é o período padrão para verificar a eficácia do tratamento clínico na redução da dor.\n\nAlternativa (c) Incorreta: A cirurgia laparoscópica é considerada o padrão-ouro para o diagnóstico definitivo, mas é um procedimento invasivo com riscos cirúrgicos. Na prática clínica atual, a laparoscopia é reservada para casos em que há falha do tratamento clínico medicamentoso após 3 a 6 meses, presença de massas anexiais suspeitas (endometriomas volumosos) ou evidência de obstrução de vias urinárias ou intestinais.\n\nAlternativa (d) Incorreta: A dosagem do CA 125 possui baixa sensibilidade e baixa especificidade para o diagnóstico de endometriose, podendo elevar-se em diversas condições benignas (como a própria menstruação, miomas e doença inflamatória pélvica) e malignas. Não é um exame recomendado para o rastreio ou diagnóstico inicial da doença, e o valor de corte de 50 U/mL mencionado na alternativa não é um critério validado para definir o início do tratamento.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia",
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:19.704Z"
+  },
+  {
+    "id": "AJUDA_ff75e9ed-68d2-45f5-b069-3d9a1324e41b",
+    "originalId": "ff75e9ed-68d2-45f5-b069-3d9a1324e41b",
+    "statement": "Homem, 28 anos, trazido ao pronto atendimento por familiares com história de dor abdominal difusa e diarreia sanguinolenta intensa. O acompanhante desconhecia mais detalhes sobre o estado de saúde do paciente, porém referia que o mesmo estava em uso de corticoides de longa data. Ao exame encontrava-se torporoso e febril. Apresentava hipotensão e taquicardia. O abdome era difusamente doloroso, distendido e com sinais de peritonite difusa. Foi submetido a colectomia total com ileostomia terminal e fechamento do coto retal baixo. A análise macroscópica da peça cirúrgica mostrou cólons e reto com mucosa difusamente inflamada, hiperemiada e friável, com ulcerações contínuas e difusas (figura).\n\nConsiderando o quadro clínico apresentado e a análise macroscópica da peça cirúrgica, qual seria o achado histopatológico mais característico da doença?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exsudatos pseudomembranosos com placas de fibrina e necrose superficial da mucosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inflamação transmural com granulomas não caseosos e áreas de mucosa normal intercalada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Depósitos amiloides na mucosa colônica associados a vasculite transmural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inflamação difusa restrita à mucosa e submucosa, com abscessos de cripta e distorção arquitetural.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clinico de diarreia sanguinolenta cronica em paciente jovem em uso de corticoide, associado a um abdome agudo com peritonite, e a peca cirurgica de colectomia total exibindo acometimento continuo, difuso e uniforme da mucosa colica e retal, sem areas de mucosa normal intercaladas (skip lesions), definem o diagnostico de Retocolite Ulcerativa (RCU) complicada com colite fulminante ou megacolon toxico. A imagem ilustra com clareza o padrao macroscopico continuo e a mucosa intensamente inflamada e friavel, tipicos da RCU.\n\nAnalise das alternativas:\n\nAlternativa A (Incorreta): Descreve os achados histopatologicos e macroscopicos tipicos da Colite Pseudomembranosa por Clostridioides difficile, na qual se observam placas amareladas e aderidas a superficie da mucosa, e nao o padrao de ulceracoes continuas e difusas observado na peca cirurgica.\n\nAlternativa B (Incorreta): Descreve os achados classicos da Doenca de Crohn, caracterizada por inflamacao transmural, formacao de granulomas nao caseosos e acometimento descontínuo ou salteado da mucosa. A peca apresentada mostra acometimento estritamente continuo.\n\nAlternativa C (Incorreta): Depositos amiloides e vasculite transmural sao achados associados a amiloidose sistemica e vasculites intestinais primarias, nao constituindo a fisiopatologia nem a histologia das doencas inflamatorias intestinais idiopaticas.\n\nAlternativa D (Correta): O diagnostico histopatologico caracteristico da Retocolite Ulcerativa consiste em processo inflamatorio cronico restrito a mucosa e a submucosa, marcado por distorcao da arquitetura das criptas glandulares, infiltrado linfoplasmocitario e presenca de neutrofilos no lumen das criptas formando abscessos de cripta, que indicam atividade da doenca.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Intestinal",
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ecbbd12fdd5c889eb13333dfeeb3cbc2799c2a77b5d5446500210c8bec4aca70.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ff75e9ed-68d2-45f5-b069-3d9a1324e41b_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:20.212Z"
+  },
+  {
+    "id": "AJUDA_ff7f2d3b-9ac5-4fa5-89c8-5f6a8c77c764",
+    "originalId": "ff7f2d3b-9ac5-4fa5-89c8-5f6a8c77c764",
+    "statement": "Homem, 73 anos de idade, com antecedente de insuficiência cardíaca de fração de ejeção reduzida e hipertensão arterial sistêmica. Internado por descompensação da insuficiência cardíaca por má adesão. Após 8 dias de internação hospitalar, intercorreu com febre, tosse produtiva, taquicardia e pressão arterial média limítrofe. \n\n• Exames laboratoriais: \nHb: 14,2 mg/dL\nLeucócitos: 9.200/mm3\nPlaquetas: 184 mil/mm3\nCr: 0,9 mg/dL\n\nHemocultura com identificação de Staphylococcus epidermidis em frasco aeróbio após 22h, frasco anaeróbio e outro par de hemocultura seguem negativos. Assinale a alternativa que apresenta a antibioticoterapia mais pertinente para o caso apresentado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ceftriaxone e azitromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Piperacilina com tazobactam.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Vancomicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Oxacilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver este caso, é fundamental correlacionar a apresentação clínica da infecção com a correta interpretação do resultado da hemocultura.\n\nO paciente desenvolveu febre, tosse produtiva e instabilidade hemodinâmica após 8 dias de internação. Como o quadro teve início após 48 horas da admissão, trata-se de uma Pneumonia Hospitalar (nosocomial), infecção que exige cobertura empírica para bacilos Gram-negativos hospitalares, incluindo Pseudomonas aeruginosa.\n\nEm relação à hemocultura, o crescimento de Staphylococcus epidermidis em apenas 1 de 4 frascos (1 frasco aeróbio de um total de dois pares) representa uma contaminação de coleta pela microbiota da pele. Para que estafilococos coagulase-negativos sejam considerados patógenos verdadeiros, eles devem crescer em múltiplos frascos/pares e haver contexto clínico compatível (como infecção de corrente sanguínea associada a cateter), o que não é o caso. Portanto, o tratamento deve ser direcionado para a pneumonia hospitalar e não para a hemocultura contaminada.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): O esquema de ceftriaxona associada a azitromicina é indicado para pneumonia adquirida na comunidade. Ele não possui cobertura para Pseudomonas aeruginosa nem para outros bacilos Gram-negativos multirresistentes comuns no ambiente hospitalar.\n\nAlternativa B (Correta): A piperacilina com tazobactam é um antibiótico de amplo espectro com excelente ação contra bacilos Gram-negativos nosocomiais, incluindo Pseudomonas aeruginosa, além de cobrir Gram-positivos sensíveis. É uma das opções de primeira linha recomendadas para a abordagem empírica da pneumonia hospitalar.\n\nAlternativa C (Incorreta): A vancomicina é um glicopeptídeo com espectro restrito a Gram-positivos (como MRSA). Ela não deve ser usada como monoterapia neste caso, pois não cobre os bacilos Gram-negativos (principais agentes da pneumonia nosocomial) e a hemocultura isolada representa apenas contaminação.\n\nAlternativa D (Incorreta): A oxacilina tem espectro direcionado apenas para Staphylococcus aureus sensível à meticilina (MSSA), carecendo de cobertura para os patógenos causadores de pneumonia hospitalar.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Pneumonias Bacterianas",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:20.212Z"
+  },
+  {
+    "id": "AJUDA_ff7fe772-d0a6-4558-aec1-56f0eedebb34",
+    "originalId": "ff7fe772-d0a6-4558-aec1-56f0eedebb34",
+    "statement": "Gestante, 24 anos de idade, G1P0, em trabalho de parto de evolução espontânea, encontra-se em fase ativa com dilatação cervical de 5 cm. O partograma mostra que a curva de dilatação cruzou a linha de alerta em direção à linha de ação. A dinâmica uterina é de 2 contrações em 10 minutos, e a ausculta fetal está dentro da normalidade. Considerando o caso clínico relatado e, com base nas recomendações da OMS para o uso do partograma, sabe-se que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a linha de alerta representa o limite máximo aceitável de dilatação, devendo-se indicar imediatamente cesariana quando ultrapassada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a presença de dinâmica uterina hipossistólica (menos de 3 contrações em 10 minutos) não influencia a interpretação do partograma, pois este avalia apenas a dilatação cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o cruzamento da linha de alerta indica falha de progressão obrigatória, sendo necessário administrar ocitocina imediatamente, independentemente da dinâmica uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a linha de ação situa-se 4 horas à direita da linha de alerta, e seu cruzamento indica necessidade de intervenção ativa, como avaliação para cesariana ou uso de ocitocina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a: Incorreta. A linha de alerta não representa um limite para indicação imediata de cesariana. Ela serve como um sinal de aviso precoce, indicando que a progressão da dilatação está mais lenta do que o esperado (menos de 1 cm por hora). O cruzamento dessa linha exige apenas uma observação mais rigorosa e a reavaliação das condições maternas e fetais, não uma intervenção cirúrgica automática.\n\nAlternativa b: Incorreta. A dinâmica uterina é um dos pilares da interpretação do partograma e da condução do trabalho de parto. No caso descrito, a gestante apresenta hipossistolia (apenas 2 contrações em 10 minutos), o que justifica a progressão lenta entre as linhas de alerta e ação. O partograma deve ser interpretado em conjunto com a frequência cardíaca fetal, a descida da apresentação e a qualidade das contrações.\n\nAlternativa c: Incorreta. O cruzamento da linha de alerta não significa falha de progressão obrigatória nem torna o uso de ocitocina mandatório de imediato. Ele sinaliza que o médico deve investigar a causa da lentidão. A conduta pode envolver medidas simples como a deambulação ou a ruptura de membranas antes de se optar pela ocitocina, sempre respeitando a análise clínica individualizada.\n\nAlternativa d: Correta. Segundo os critérios da Organização Mundial da Saúde (OMS) para o modelo tradicional de partograma, a linha de ação é traçada paralelamente à linha de alerta, com um intervalo de 4 horas à sua direita. O cruzamento da linha de ação indica que o tempo de espera esgotou-se e que condutas ativas são necessárias para resolver a distocia ou corrigir a dinâmica, como o uso de ocitocina, amniotomia ou a reavaliação para o parto operatório (cesariana), caso haja sinais de desproporção cefalopélvica ou sofrimento fetal.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Partograma e Distocias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:20.212Z"
+  },
+  {
+    "id": "AJUDA_ff89f244-3167-4707-a95f-f0ea92e0a8d2",
+    "originalId": "ff89f244-3167-4707-a95f-f0ea92e0a8d2",
+    "statement": "Homem de 65 anos, hipertenso, chega ao PS com dor torácica opressiva há 2 horas. ECG: supra de ST em DII, DIII e aVF. Conduta imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Angioplastia primária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Betabloqueador oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Heparina isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nitroglicerina sublingual apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve um paciente idoso, hipertenso, com dor torácica típica há 2 horas e eletrocardiograma evidenciando supradesnivelamento do segmento ST nas derivações DII, DIII e aVF. Esses achados confirmam o diagnóstico de Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAMCSST) de parede inferior. No IAMCSST, o tempo é um fator determinante para a sobrevida do miocárdio, e a prioridade absoluta é a terapia de reperfusão imediata para desobstruir a artéria coronária.\n\nAlternativa a: Correta. A angioplastia primária (intervenção coronária percutânea) é o tratamento padrão-ouro para o IAM com supra de ST. Ela deve ser realizada preferencialmente nas primeiras 2 horas do início dos sintomas para garantir a maior taxa de sucesso na abertura do vaso e redução da mortalidade. Caso o serviço disponha de hemodinâmica, esta é sempre a conduta de escolha.\n\nAlternativa b: Incorreta. Os betabloqueadores fazem parte da terapia medicamentosa do infarto, pois reduzem o consumo de oxigênio pelo miocárdio. No entanto, não são a conduta de emergência prioritária. Além disso, em infartos de parede inferior, existe um risco aumentado de bradicardias e bloqueios atrioventriculares, o que exige cautela extrema e estabilização antes do uso dessa classe de drogas.\n\nAlternativa c: Incorreta. A heparina é uma terapia adjuvante essencial para evitar a propagação do trombo, mas não é capaz de promover a reperfusão mecânica ou química necessária para abrir uma artéria totalmente ocluída no IAM com supra. Ela deve ser usada em conjunto com a angioplastia ou após a fibrinólise, e nunca como conduta isolada.\n\nAlternativa d: Incorreta. A nitroglicerina é um nitrato utilizado para controle da dor anginosa por meio da vasodilatação, mas não trata a causa da obstrução. No contexto específico de infarto de parede inferior, o uso de nitratos deve ser feito com muito cuidado, pois há grande chance de acometimento do ventrículo direito (VD). Nesses casos, a administração de nitratos pode causar queda súbita e grave da pressão arterial por redução da pré-carga.\n\nEm resumo, diante de um IAM com supra de ST, a conduta imediata é abrir a artéria, sendo a angioplastia primária a opção preferencial.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:20.212Z"
+  },
+  {
+    "id": "AJUDA_ff8ab839-126b-44bc-81cd-16904339da24",
+    "originalId": "ff8ab839-126b-44bc-81cd-16904339da24",
+    "statement": "Adolescente de 14 anos de idade, vem desacompanhada ao hospital com queixa de algúria e polaciúria há 2 dias. Nega febre. Ela relata durante a consulta que tem vida sexualmente ativa desde os 13 anos de idade, sem parceiro fixo. Relata ainda que sempre faz uso de preservativo durante as relações sexuais e que sempre são de forma consentida. Refere nunca ter sido consultada por ginecologista, por ter receio de que os pais fiquem sabendo, pois ela acredita que eles não aceitariam seu modo de viver. Os exames solicitados sugerem infecção do trato urinário baixo, sendo orientado à paciente tratamento antimicrobiano oral, orientações de higiene íntima e métodos contraceptivos, e a importância do acompanhamento ginecológico especializado.\nQual a conduta correta quanto ao sigilo médico nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter o sigilo nessa consulta, porém solicitando que a adolescente venha acompanhada dos pais no retorno para que ela mesma conte aos pais sobre seu comportamento sexual, assistida pela equipe de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter o sigilo nessa consulta, porém posteriormente convocar os pais com auxílio da assistência social para que seja comunicado aos pais o comportamento sexual relatado pela adolescente, com quebra do sigilo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter o sigilo do relatado nessa consulta, deixando claro que ela tem direito ao sigilo, confiabilidade e privacidade, alertando quanto aos limites das questões éticas para com ela e seus responsáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quebrar o sigilo nessa consulta impreterivelmente, convocando os pais a comparecerem ao hospital antes de liberar a paciente da consulta, para assegurar o tratamento adequado da infecção urinaria atual e o agendamento da consulta ginecológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quebra do sigilo nessa consulta impreterivelmente, incentivando a adolescente a que ela própria relate aos pais seu diagnostico atual e seu comportamento sexual, oferecendo amplo apoio para tal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O atendimento médico a adolescentes é regulamentado pelo Código de Ética Médica (Artigo 74) e pela Recomendação CFM nº 1/2016. De acordo com a legislação e a ética médica brasileira, o menor de idade que possui capacidade de discernimento e avaliação de seu próprio estado de saúde tem direito ao atendimento desacompanhado e à garantia de sigilo médico, inclusive em relação aos seus pais ou responsáveis legais. A quebra do sigilo só é permitida em situações excepcionais, nas quais a não revelação traga risco de morte ou dano grave à integridade física e psíquica do adolescente, ou em casos de suspeita de violência e abuso.\n\nNa situação descrita, a paciente de 14 anos demonstra plena capacidade de compreensão, relata relações sexuais consentidas, faz uso de preservativo e apresenta um quadro simples de infecção urinária baixa (cistite), que não coloca sua vida em risco. Portanto, a conduta correta é preservar sua privacidade e confidencialidade.\n\nAnálise das alternativas:\n\nAlternativa a - Incorreta. O médico não deve condicionar o tratamento nem forçar a paciente a revelar sua vida íntima aos pais em um retorno. O sigilo deve ser mantido de forma contínua enquanto a adolescente mantiver sua capacidade de discernimento e não houver risco à sua integridade.\n\nAlternativa b - Incorreta. Acionar o serviço social para expor o comportamento sexual da paciente aos pais constitui uma quebra injustificada de sigilo e uma infração ética direta aos direitos de autonomia e privacidade da adolescente.\n\nAlternativa c - Correta. O médico deve garantir o sigilo das informações relatadas, esclarecendo à adolescente seus direitos de privacidade e autonomia, além de explicar os limites éticos existentes (como situações de risco grave ou violência, que não se aplicam ao caso em questão).\n\nAlternativa d - Incorreta. A infecção urinária baixa não é uma urgência com risco de vida e o tratamento pode ser conduzido de forma ambulatorial pela própria paciente, tornando a quebra de sigilo desproporcional e antiética.\n\nAlternativa e - Incorreta do ponto de vista ético e doutrinário. Embora o gabarito oficial de alguns certames aponte esta opção, a quebra de sigilo compulsória fere o Código de Ética Médica e a jurisprudência dos Conselhos de Medicina, já que a adolescente é lúcida, orientada, faz sexo consentido com proteção e tem uma patologia de baixo risco. O estímulo ao diálogo com os pais deve existir, mas a revelação não pode ser imposta ou executada pelo médico contra a vontade da paciente capaz.\n\nObservação importante sobre a questão: Tecnicamente, a alternativa correta segundo o Conselho Federal de Medicina (CFM) e o Estatuto da Criança e do Adolescente (ECA) é a letra C. Gabaritos que indicam a letra E violam os preceitos éticos estabelecidos para a relação médico-paciente na adolescência e são amplamente passíveis de recurso e anulação.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)",
+      "Ética Médica",
+      "Sexualidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:20.212Z"
+  }
+]

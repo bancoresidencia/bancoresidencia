@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_0b730204-6ea6-480b-be59-a1cd016c3667",
+    "originalId": "0b730204-6ea6-480b-be59-a1cd016c3667",
+    "statement": "Mulher de 62 anos, menopausada há 10 anos, hipertensa crônica, diabética tipo 2, IMC 33, vai ao pronto-socorro com queixa de sangramento genital escurecido, indolor e imotivado há 5 dias. Refere episódio anterior há 3 meses. Não faz terapia de reposição hormonal. Exame clínico sem anormalidades. Ultrassonografia endovaginal mostra endométrio heterogêneo de espessura de 8,0 mm.\nConsiderando a principal hipótese diagnóstica, qual método apresenta melhor acurácia diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histerossalpingografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cureta de Novak.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ressonância magnética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colposcopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Citologia meio líquido.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve uma paciente de 62 anos na pós-menopausa apresentando sangramento uterino anormal, associado a múltiplos fatores de risco para adenocarcinoma de endométrio (idade avançada, obesidade, diabetes tipo 2 e hipertensão). O achado ultrassonográfico de endométrio heterogêneo com 8,0 mm de espessura (quando o corte de normalidade sem terapia hormonal é de 4 a 5 mm) reforça a suspeita de neoplasia endometrial. Diante dessa principal hipótese diagnóstica, é obrigatória a obtenção de amostra tecidual para estudo histopatológico.\n\nAlternativa a: Incorreta. A histerossalpingografia é um exame radiológico contrastado utilizado essencialmente na propedêutica de infertilidade para avaliar a perviedade das tubas uterinas e contornos cavitários. Não tem utilidade nem indicação no diagnóstico de malignidade endometrial.\n\nAlternativa b: Correta. A cureta de Novak é um dispositivo projetado para a realização de biópsia endometrial ambulatorial. Entre as opções fornecidas, é o método que permite a coleta de tecido para análise anatomopatológica, essencial para confirmar ou descartar o câncer de endométrio.\n\nAlternativa c: Incorreta. A ressonância magnética pélvica tem papel fundamental no estadiamento locorregional pré-operatório do câncer de endométrio (avaliação da profundidade de invasão miometrial e comprometimento cervical ou linfonodal), mas não substitui a confirmação histológica tecidual necessária para o diagnóstico primário.\n\nAlternativa d: Incorreta. A colposcopia avalia o trato genital inferior (colo uterino, vagina e vulva), sendo indicada na investigação de alterações citológicas cervicais, sem capacidade de visualização ou amostragem da cavidade endometrial.\n\nAlternativa e: Incorreta. A citologia em meio líquido é destinada ao rastreamento do câncer do colo do útero e lesões precursoras. Embora células endometriais possam ocasionalmente ser visualizadas, a sensibilidade do método para diagnosticar patologias endometriais é muito baixa e inadequada para investigação diagnóstica.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": 83.08917767174422,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:31.865Z"
+  },
+  {
+    "id": "AJUDA_0b74671e-f050-49f7-a170-df64d104a67f",
+    "originalId": "0b74671e-f050-49f7-a170-df64d104a67f",
+    "statement": "A mãe acompanha sua filha de 16 anos com “atraso no desenvolvimento”. Ao exame físico, ela mede 1,43 m e pesa 78 Kg (IMC = 38.1). Apresenta fronte olímpica, encurtamento do quarto metacarpo, hipertelorismo mamilar e ausência de sinais de desenvolvimento sexual secundários. Nunca menstruou e a mãe relata dificuldades escolares. Ela apresenta níveis de FSH elevados. Assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A provável etiologia da amenorreia primária deve ser obesidade grau II;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O quadro clínico é compatível com síndrome dos ovários micropolicísticos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Faz parte da propedêutica uma ultrassonografia de vias urinárias e ecocardiograma;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Há indicação de se fazer a prescrição de agonista de gonadorrelina para reduzir os níveis de FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descrito é clássico da Síndrome de Turner, uma disgenesia gonadal que ocorre em indivíduos do sexo feminino (geralmente com cariótipo 45,X ou mosaicismo). Os principais achados que sustentam esse diagnóstico são: a baixa estatura acentuada (1,43 m aos 16 anos), o infantilismo sexual (ausência de desenvolvimento de mamas e pelos, Tanner 1), a amenorreia primária e o hipogonadismo hipergonadotrófico (FSH elevado, indicando que a hipófise está tentando estimular ovários que não funcionam). Os estigmas físicos citados, como o tórax em escudo (hipertelorismo mamilar), o encurtamento do quarto metacarpo (sinal de Archibald) e a fronte olímpica, são sinais dismórficos típicos da síndrome.\n\nALTERNATIVA A\nIncorreta. Embora a paciente apresente obesidade grau II, esta não é a causa da amenorreia primária. A obesidade pode causar irregularidades menstruais por disfunção do eixo, mas não justifica a baixa estatura, as malformações físicas nem o nível elevado de FSH. O FSH alto confirma que o problema é a falência ovariana (causa hipergonadotrófica).\n\nALTERNATIVA B\nIncorreta. A Síndrome dos Ovários Policísticos (SOP) costuma cursar com amenorreia secundária, sinais de hiperandrogenismo (como excesso de pelos e acne) e níveis de FSH normais ou baixos. A SOP não está associada a malformações congênitas nem à baixa estatura severa como a relatada.\n\nALTERNATIVA C\nCorreta. Pacientes com Síndrome de Turner possuem um risco significativamente aumentado de malformações congênitas em outros sistemas. Cerca de 30% a 50% apresentam anomalias cardiovasculares (como coarctação da aorta e valva aórtica bicúspide) e cerca de 30% apresentam malformações renais (como o rim em ferradura). Por isso, a realização de ecocardiograma e ultrassonografia de rins e vias urinárias é obrigatória na propedêutica inicial após o diagnóstico.\n\nALTERNATIVA D\nIncorreta. Os agonistas de gonadorrelina (GnRH) são medicamentos usados para suprimir a puberdade em casos de puberdade precoce central. Nesta paciente, o FSH está elevado como uma resposta fisiológica à falta de estrogênio (ausência de feedback negativo). O tratamento adequado para a Síndrome de Turner envolve o uso de hormônio do crescimento (GH) para melhorar a estatura final e a terapia de reposição hormonal com estrogênios para promover o desenvolvimento sexual secundário e prevenir a osteoporose.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Puberdade",
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:31.865Z"
+  },
+  {
+    "id": "AJUDA_0b762af0-cb4b-4699-b9c3-665603346e56",
+    "originalId": "0b762af0-cb4b-4699-b9c3-665603346e56",
+    "statement": "Uma mulher de 28 anos apresenta-se ao consultório devido alteração no exame de urina. Trazia exames com proteinúria 1g/24 horas e anemia - hemoglobina 10,5 g/dL. Em investigação apresentou FAN positivo 1:360. Realizada biópsia renal, demonstrava nefrite lúpica classe 4. Com base nos achados acima, em relação ao diagnóstico da paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lúpus eritematoso sistêmico, pois possui FAN positivo com titulação elevada e proteinúria com biópsia compatível, computando 6 pontos pelos critérios EULAR",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não é lúpus eritematoso sistêmico, pois paciente não possui sintomas compatíveis",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não é lúpus eritematoso sistêmico, pois apesar do FAN positivo com titulação elevada, essa alteração pode ser encontrada na população geral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lúpus eritematoso sistêmico, pois possui FAN positivo em titulação elevada e biópsia renal compatível com nefrite lúpica classe 4, o que é suficiente para diagnóstico",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda os critérios diagnósticos para o Lúpus Eritematoso Sistêmico (LES), especificamente baseando-se nos critérios classificatórios do EULAR/ACR 2019. Para que um paciente seja diagnosticado com LES por esse sistema, ele deve obrigatoriamente apresentar um critério de entrada: o FAN (Fator Antinuclear) positivo em titulação igual ou superior a 1:80. Uma vez preenchido esse requisito, somam-se pontos de diversos domínios clínicos e laboratoriais. O diagnóstico é confirmado se o paciente atingir 10 ou mais pontos.\n\nUm ponto crucial desses critérios é a valorização da biópsia renal. A presença de nefrite lúpica classes III ou IV na biópsia confere, isoladamente, 10 pontos ao paciente. Como a pontuação necessária para o diagnóstico é justamente 10, a combinação de FAN positivo com biópsia compatível (Classe III ou IV) é suficiente para fechar o diagnóstico de LES.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora afirme corretamente que a paciente tem LES, a pontuação citada está errada. De acordo com a tabela de pontuação do EULAR/ACR 2019, a nefrite lúpica classe IV atribui 10 pontos, e não 6. Como a paciente já atinge 10 pontos apenas com o critério renal (biópsia), ela já possui o critério classificatório completo. É importante lembrar que, dentro de um mesmo domínio (como o renal), apenas a pontuação mais alta é contabilizada (não se somam os pontos da proteinúria com os da biópsia).\n\nAlternativa b) Incorreta. A afirmação de que a paciente não possui sintomas compatíveis é falsa. A proteinúria de 1 g/24h e a anemia (Hb 10,5 g/dL) são sinais de atividade de doença. Além disso, a nefrite comprovada por biópsia é uma manifestação clínica grave do lúpus, sendo um dos pilares do diagnóstico.\n\nAlternativa c) Incorreta. De fato, o FAN pode ser positivo em uma pequena porcentagem da população saudável ou em outras condições inflamatórias. No entanto, o diagnóstico de LES é clínico-laboratorial. Quando o FAN positivo (critério de entrada) está associado a um achado tão específico quanto a nefrite lúpica classe IV na biópsia, o diagnóstico de LES é estabelecido com segurança.\n\nAlternativa d) Correta. Conforme os critérios EULAR/ACR 2019, o FAN positivo em titulação maior ou igual a 1:80 é o critério de entrada. A nefrite lúpica classe IV, confirmada por biópsia, é o achado de maior peso na pontuação, conferindo 10 pontos. Como a soma mínima exigida para a classificação de lúpus é 10 pontos, a presença do FAN positivo associado à biópsia compatível com classe IV é, por si só, suficiente para o diagnóstico.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:31.865Z"
+  },
+  {
+    "id": "AJUDA_0b7d0560-67d6-4505-90f7-7d4f2bf919fc",
+    "originalId": "0b7d0560-67d6-4505-90f7-7d4f2bf919fc",
+    "statement": "Paciente masculino, de 43 anos, procurou atendimento pela segunda vez no serviço ambulatorial da empresa onde trabalhava. Referiu fadiga, cefaleia, esquecimentos e irritabilidade, quadro iniciado há 2 meses. Trouxe resultados de exames solicitados na consulta anterior: hemograma, glicemia, TSH, dosagem de vitaminas, perfil lipídico, todos dentro dos padrões da normalidade. Há cerca de 2 semanas, apresentou algumas medidas de pressão arterial elevadas, o que nunca havia ocorrido. Negou tabagismo e uso abusivo de álcool ou outras drogas. Supervisor de estoque em uma rede de supermercados, há 3 meses passou a trabalhar no turno noturno, 4 vezes/semana, das 22 às 6 horas, com folga no dia seguinte. Informou que, quando chegava em casa, tomava café da manhã, ajudava a arrumar o filho para a escola e ia dormir. Não fazia uso de medicações contínuas. Diante da história, qual a hipótese mais provável e qual a intervenção possível na consulta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transtorno de estresse agudo - Por provocar insônia, necessita de prescrição de antidepressivos e hipnóticos por curto período.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Episódio depressivo moderado - Necessita de encaminhamento para psicoterapia e início de medicamento antidepressivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno do ciclo circadiano gerando insônia aguda - Recomendam-se manejo comportamental e uso por curto tempo de hipnóticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transtorno de ansiedade leve com sintomas somáticos - Necessita de adoção de medidas não farmacológicas, como exercícios físicos e meditação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso:\nO paciente apresenta sintomas de fadiga, cefaleia, esquecimento e irritabilidade que surgiram cerca de um mês após iniciar o trabalho em turno noturno (das 22h às 06h). O quadro é reforçado pela normalidade dos exames laboratoriais, o que descarta causas orgânicas comuns, como anemia, diabetes ou disfunções tireoidianas. O surgimento recente de níveis pressóricos elevados é uma repercussão fisiopatológica típica do estresse biológico causado pela privação de sono e pela desregulação do ritmo circadiano.\n\nAlternativa (a) Incorreta: O Transtorno de Estresse Agudo exige a exposição a um evento traumático (ameaça de morte, ferimento grave ou violência sexual), o que não condiz com a rotina de trabalho descrita. Além disso, os sintomas desse transtorno devem ocorrer e ser resolvidos em até 30 dias após o trauma. O tratamento de escolha não seria necessariamente antidepressivos de curto prazo.\n\nAlternativa (b) Incorreta: Embora fadiga e irritabilidade possam compor um quadro depressivo, o vínculo temporal com a mudança do turno de trabalho é muito forte. Não há relato de humor deprimido, anedonia ou outros critérios necessários para fechar o diagnóstico de um episódio depressivo moderado. A conduta correta deve focar primeiro na causa evidente: o distúrbio do sono.\n\nAlternativa (c) Correta: O diagnóstico é de Transtorno do Trabalho em Turnos, classificado como um Transtorno do Ritmo Circadiano. Ocorre porque o horário de trabalho do paciente é desalinhado com seu ciclo biológico natural de vigília e sono. O fato de ele realizar atividades domésticas e sociais logo após o turno (ajudar o filho) prejudica ainda mais a higiene do sono. O manejo inicial envolve orientações comportamentais para melhorar a qualidade do descanso diurno e o uso de hipnóticos por curto período pode ser útil para estabilizar a insônia aguda e facilitar a adaptação ao turno.\n\nAlternativa (d) Incorreta: Embora sintomas somáticos possam surgir na ansiedade, o histórico ocupacional aponta diretamente para o distúrbio do ciclo sono-vigília. Medidas como exercícios e meditação são coadjuvantes saudáveis, mas não resolvem o problema principal de um paciente que trabalha à noite e não consegue estruturar um período de sono reparador durante o dia.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Distúrbios do Sono"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:31.865Z"
+  },
+  {
+    "id": "AJUDA_0b8795d6-7a0a-44ad-ae0c-ee1217f2000d",
+    "originalId": "0b8795d6-7a0a-44ad-ae0c-ee1217f2000d",
+    "statement": "Homem 58 anos, com dor e aumento do volume da região inguinal direita há 16h, com identificação de hérnia encarcerada no exame físico. Foi submetido a hernioplastia aberta onde foi identificado o apêndice inflamado dentro do saco herniario. Esse achado recebe o nome de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia de Littre",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hérnia de Richter",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hérnia de Amyand",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hérnia por deslizamento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hérnia de Charcot",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os epônimos das hérnias da parede abdominal, um tema frequente em provas de cirurgia. O caso descreve o achado transoperatório do apêndice cecal inflamado dentro de um saco herniário inguinal, o que define a hérnia de Amyand.\n\nAlternativa (a) Incorreta. A hérnia de Littré é definida pela presença do divertículo de Meckel no interior do saco herniário. Embora também envolva uma estrutura \"apendicular\" vestigial, o epônimo é específico para o divertículo.\n\nAlternativa (b) Incorreta. A hérnia de Richter ocorre quando apenas uma parte da circunferência da borda antimesentérica da alça intestinal fica presa no anel herniário. É uma condição perigosa, pois pode levar à isquemia e necrose da parede intestinal sem causar obstrução intestinal completa, retardando o diagnóstico.\n\nAlternativa (c) Correta. A hérnia de Amyand é o termo utilizado para descrever a presença do apêndice vermiforme (esteja ele inflamado ou não) dentro de uma hérnia inguinal. O nome é uma homenagem a Claudius Amyand, cirurgião que realizou a primeira apendicectomia documentada em 1735, justamente em um caso de apendicite dentro de um saco herniário inguinal. Nota importante: se o apêndice estivesse dentro de uma hérnia femoral (crural), o nome correto seria hérnia de Garengeot.\n\nAlternativa (d) Incorreta. A hérnia por deslizamento acontece quando um órgão retroperitoneal (como o ceco, o cólon sigmoide ou a bexiga) faz parte da própria parede do saco herniário, e não apenas está contido nele.\n\nAlternativa (e) Incorreta. Não existe a denominação \"hérnia de Charcot\" na literatura cirúrgica. O epônimo de Charcot é amplamente reconhecido na medicina pela tríade de Charcot (relacionada à colangite aguda) ou pela artropatia de Charcot, mas não descreve um tipo de hérnia.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:31.865Z"
+  },
+  {
+    "id": "AJUDA_0b87d9d9-d081-49eb-95a8-3aaae4cdb15c",
+    "originalId": "0b87d9d9-d081-49eb-95a8-3aaae4cdb15c",
+    "statement": "Mulher residente em Curitiba, com 25 anos vem para mostrar o resultado do seu primeiro exame de rastreamento do câncer de colo uterino. Está correto de acordo com a Linha Guia de Cuidado do Câncer do Colo do Útero da Secretaria Municipal da Saúde de Curitiba 2025:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se o resultado for de Lesão intraepitelial de baixo grau deve ser encaminhadas para telerregulação de Patologia Cervical/Colposcopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Se o resultado mostrar atipias de significado indeterminado em células glandulares deve repetir o citopatológico em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Se com resultado mostrar células atípicas de origem indefinida deve-se repetir o citopatológico em 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Se o resultado indicar carcinoma escamoso invasor deve ser encaminhada para colposcopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão exige conhecimento específico sobre a Linha-Guia de Cuidado do Câncer do Colo do Útero da Secretaria Municipal da Saúde de Curitiba (atualização 2025), que possui algumas condutas divergentes das diretrizes nacionais do INCA para otimizar o diagnóstico precoce na rede local.\n\nAlternativa (a) Correta: De acordo com o protocolo específico de Curitiba para 2025, o achado de Lesão Intraepitelial de Baixo Grau (LSIL/LIEBG) em mulheres na faixa etária de rastreamento (a partir de 25 anos) é critério para encaminhamento via telerregulação para a Patologia Cervical/Colposcopia. Diferentemente da diretriz nacional, que sugere repetição em 6 meses, o protocolo municipal busca a confirmação diagnóstica imediata nesses casos.\n\nAlternativa (b) Incorreta: As atipias em células glandulares (AGC) possuem um alto valor preditivo positivo para lesões precursoras de alto grau ou adenocarcinoma. Por esse motivo, a conduta correta é o encaminhamento imediato para colposcopia, preferencialmente com avaliação do canal endocervical, e nunca a repetição do exame citopatológico em 6 meses.\n\nAlternativa (c) Incorreta: Células atípicas nas quais não se pode afastar lesão de alto grau (ASC-H) ou de origem indefinida exigem investigação imediata. O protocolo determina o encaminhamento para colposcopia, e não a repetição do citopatológico em curto prazo (3 meses), devido ao risco aumentado de lesão histológica subjacente grave.\n\nAlternativa (d) Incorreta: Diante de um resultado citopatológico indicando carcinoma escamoso invasor, o manejo deixa de ser apenas diagnóstico (colposcopia de rastreio) e passa a ser terapêutico e de estadiamento. Nessas situações, a paciente deve ser encaminhada diretamente para serviços de oncologia de referência (CACON ou UNACON) para o início rápido do tratamento oncológico.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 96.13256428306485,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:31.865Z"
+  },
+  {
+    "id": "AJUDA_0b8dd5c7-8295-4f1b-a223-77d325a4237e",
+    "originalId": "0b8dd5c7-8295-4f1b-a223-77d325a4237e",
+    "statement": "Paciente de 10 anos, sexo feminino, apresenta níveis de PA acima do percentil 95. Há 6 meses teve fratura no pé e parou o balé, ganhando peso (sobrepeso pelo IMC). Exames de imagem: USG de rins e vias urinárias e Doppler de Artérias renais normais, Ecocardiograma com hipertrofia concêntrica do ventrículo esquerdo. As medidas de PA continuam acima dos valores de referência. Qual é a sua conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Orienta mudança de estilo de vida e inicia anti-hipertensivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Orienta mudança de estilo de vida e aguarda evolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orienta mudança de estilo de vida e solicita monitorização ambulatorial da pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orienta mudança de estilo de vida e solicita fundoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Orienta mudança de estilo de vida e inicia tratamento para dislipidemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\nEstamos diante de uma paciente de 10 anos com diagnóstico de hipertensão arterial (níveis acima do percentil 95). O ponto crucial para a decisão terapêutica neste caso é a presença de lesão de órgão-alvo, evidenciada pelo ecocardiograma que revelou hipertrofia concêntrica do ventrículo esquerdo.\n\nAlternativa (a): Correta. De acordo com as diretrizes de hipertensão na infância e adolescência, o tratamento medicamentoso deve ser iniciado, associado às mudanças de estilo de vida, em pacientes que apresentam hipertensão com lesão de órgão-alvo (como a hipertrofia ventricular esquerda), hipertensão estágio 2, hipertensão sintomática ou naqueles com hipertensão estágio 1 que não respondem às mudanças de estilo de vida. A presença de alteração estrutural cardíaca impõe a necessidade de controle pressórico imediato e eficaz para reverter ou impedir a progressão do dano.\n\nAlternativa (b): Incorreta. A conduta de apenas observar a evolução com mudanças de estilo de vida seria adequada para casos de hipertensão estágio 1 sem evidência de lesão em órgãos-alvo. Havendo hipertrofia ventricular, o atraso no início da medicação coloca a paciente em risco cardiovascular desnecessário.\n\nAlternativa (c): Incorreta. A monitorização ambulatorial da pressão arterial (MAPA) é uma ferramenta excelente para confirmar o diagnóstico (excluir hipertensão do avental branco) ou avaliar o perfil circadiano. Entretanto, neste cenário, a hipertensão já se manifestou de forma sustentada a ponto de causar repercussão anatômica (hipertrofia), o que já confirma a patologia e indica o tratamento medicamentoso.\n\nAlternativa (d): Incorreta. A fundoscopia é um exame complementar para pesquisar retinopatia hipertensiva, que também é uma lesão de órgão-alvo. Embora possa ser solicitada na avaliação completa da paciente, ela não é o passo decisivo para a conduta neste momento, pois a lesão cardíaca já encontrada já é suficiente para indicar o início do anti-hipertensivo.\n\nAlternativa (e): Incorreta. Embora o ganho de peso e o sobrepeso sugiram um risco metabólico aumentado, a prioridade absoluta diante de uma hipertrofia de ventrículo esquerdo é o controle dos níveis tensionais. O tratamento de uma eventual dislipidemia seria um adjunto, mas não resolve a causa da lesão cardíaca apresentada.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Hipertensão Arterial na Criança e no Adolescente"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:31.865Z"
+  },
+  {
+    "id": "AJUDA_0b92252e-fd99-42ba-89cf-6f87773ebdf7",
+    "originalId": "0b92252e-fd99-42ba-89cf-6f87773ebdf7",
+    "statement": "Em relação à infertilidade, analise as assertivas a seguir:\n\nI. A idade materna é um importante preditor na taxa de nascidos vivos, tanto na concepção natural quanto na concepção assistida.\nII. No mínimo um terço dos casos de infertilidade é de causa masculina.\nIII. Pacientes que relatam ciclos menstruais a cada 28 dias são presumidamente ovulatórias, não sendo necessária a confirmação sistemática de ovulação na avaliação inicial.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise das assertivas:\n\nAssertiva I: Correta. A idade da mulher é o fator isolado mais importante para o sucesso reprodutivo. Com o avançar da idade, ocorre uma diminuição quantitativa e qualitativa dos oócitos (maior taxa de aneuploidias). Esse declínio impacta tanto a fertilidade natural quanto as taxas de sucesso em técnicas de reprodução assistida, como a fertilização in vitro, na qual a taxa de nascidos vivos diminui progressivamente após os 35 anos.\n\nAssertiva II: Correta. A literatura médica estabelece que os fatores de infertilidade são distribuídos de forma equilibrada entre os sexos. Aproximadamente 30% a 40% dos casos são de causa exclusivamente feminina, cerca de 30% são de causa exclusivamente masculina e os demais casos dividem-se entre causas combinadas (ambos os parceiros) e infertilidade sem causa aparente (ISCA). Portanto, afirmar que no mínimo um terço (33%) é de causa masculina está estatisticamente correto.\n\nAssertiva III: Correta. A regularidade menstrual (eumenorreia) é um excelente indicador clínico de ciclos ovulatórios. Mulheres que apresentam ciclos previsíveis, com intervalos entre 25 e 35 dias, têm alta probabilidade de estarem ovulando normalmente devido à integridade do eixo hipotálamo-hipófise-gonadal. Na propedêutica inicial básica, se a paciente é eumenorreica, a confirmação laboratorial ou ultrassonográfica da ovulação pode ser dispensada, focando a investigação em outros fatores (como o tubário ou o masculino).\n\nConclusão: Como todas as assertivas estão corretas, a alternativa correta é a letra (e).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:31.865Z"
+  },
+  {
+    "id": "AJUDA_0b936d8d-e198-469d-a72c-33d93bb1a100",
+    "originalId": "0b936d8d-e198-469d-a72c-33d93bb1a100",
+    "statement": "Uma criança apresenta febre, tosse e taquipneia. A radiografia de tórax mostra consolidação no lobo superior direito. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tuberculose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bronquiolite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pneumonia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Asma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico: O paciente apresenta a tríade clássica de infecção respiratória aguda: febre, tosse e taquipneia. Na pediatria, a taquipneia é o sinal clínico isolado mais sensível para o diagnóstico de pneumonia. O achado radiográfico de consolidação lobar no lobo superior direito confirma o envolvimento do parênquima pulmonar por processo infeccioso agudo com exsudato alveolar.\n\nAlternativa a: Incorreta. A tuberculose na criança costuma ter uma evolução subaguda ou crônica, com sintomas que persistem por mais de duas semanas, perda de peso e sudorese noturna. Embora possa apresentar consolidação, os achados mais comuns na radiografia de tórax na tuberculose primária infantil são linfonodomegalias hilares e infiltrados localizados, diferindo da apresentação aguda e típica descrita.\n\nAlternativa b: Incorreta. A bronquiolite viral aguda é caracterizada pelo primeiro episódio de sibilância (chiado no peito) em crianças menores de 2 anos, geralmente precedida por sintomas gripais (coriza e obstrução nasal). A radiografia de tórax na bronquiolite revela sinais de hiperinsuflação pulmonar, como retificação de costelas e rebaixamento do diafragma, ou atelectasias, mas não consolidações lobares.\n\nAlternativa c: Correta. O quadro clínico de início agudo com febre, tosse e alteração da frequência respiratória (taquipneia), associado ao achado de imagem de consolidação (opacidade densa e homogênea que respeita as fissuras lobares), define o diagnóstico de pneumonia bacteriana. O Streptococcus pneumoniae é o agente etiológico mais comum em todas as faixas etárias pediátricas após o período neonatal.\n\nAlternativa d: Incorreta. A asma é uma doença obstrutiva crônica que se manifesta com crises recorrentes de sibilância, tosse e dispneia. A febre não é um sintoma primário da asma, e a radiografia de tórax durante uma crise tipicamente mostra apenas sinais de aprisionamento de ar (hiperinsuflação), sem a presença de consolidação localizada.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:31.865Z"
+  },
+  {
+    "id": "AJUDA_0b95176a-ddca-4d9f-b588-a05f39dd3c4f",
+    "originalId": "0b95176a-ddca-4d9f-b588-a05f39dd3c4f",
+    "statement": "A distopia vaginal é uma afecção comum e pode ter morbidade importante para a paciente, porém de baixaa mortalidade. Uma nova classificação mais objetiva e consistente desde 1996 (POP-Q) para aprimorar as estratégias de correção e a comparação dos resultados dos tratamentos, Numere a coluna II de acordo com a coluna I das medidas obtidas pela classificação de POP-Q durante uma avaliação de distopia vaginal, considerando o cumprimento vaginal de 11 centímetros. \n\nColuna I \n1. Grau 1 \n2. Grau 2 \n3. Grau 3 \n4. Grau 4 \n\nColuna II \n( ) O ponto Ba foi medido com o valor de +6 \n( ) O ponto C foi medido com o valor de +9 \n( ) O ponto Bp foi medido com o valor de +1 \n\nMarque a sequência CORRETA de respostas:",
+    "options": [
+      {
+        "id": "A",
+        "text": "3-4-2",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "2-3-1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "3-3-2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "2-4-2",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender a classificação POP-Q (Pelvic Organ Prolapse Quantification System), devemos primeiro relembrar os critérios de estadiamento baseados na posição do ponto mais prolapsado em relação ao hímen (ponto zero):\n\nEstágio 0: Ausência de prolapso.\nEstágio 1: O ponto de maior prolapso está a mais de 1 cm acima do hímen (valor menor que -1).\nEstágio 2: O ponto de maior prolapso está entre 1 cm acima e 1 cm abaixo do hímen (valor entre -1 e +1, inclusive).\nEstágio 3: O ponto de maior prolapso está a mais de 1 cm abaixo do hímen (valor maior que +1), porém sem atingir a eversão completa (o valor é menor que o Comprimento Vaginal Total - 2 cm).\nEstágio 4: Eversão completa. O ponto de maior prolapso está a uma distância maior ou igual ao Comprimento Vaginal Total (CVT) menos 2 cm.\n\nAnálise dos itens com CVT = 11 cm:\n\nItem 1: Ponto Ba medido com o valor de +6.\nO valor +6 está além de +1 cm (saindo do estágio 2). Como o CVT é 11 cm, o critério para o estágio 4 seria um valor maior ou igual a 9 (11 - 2 = 9). Como +6 é menor que +9, este ponto classifica-se como Grau 3.\n\nItem 2: Ponto C medido com o valor de +9.\nO valor +9 é exatamente o limite para o estágio 4 (CVT - 2 = 11 - 2 = 9). Pela regra, valores maiores ou iguais a (CVT - 2) são classificados como Grau 4.\n\nItem 3: Ponto Bp medido com o valor de +1.\nO estágio 2 compreende o intervalo entre -1 e +1. Como o ponto está exatamente em +1, ele ainda se enquadra no Grau 2.\n\nPortanto, a sequência correta na Coluna II é 3 - 4 - 2.\n\nAnálise das alternativas:\n\na) CORRETA. Segue a lógica do POP-Q: Ba +6 (Grau 3), C +9 (Grau 4) e Bp +1 (Grau 2).\n\nb) INCORRETA. Ba +6 não pode ser Grau 2 (o limite é +1). C +9 é Grau 4, e não 3. Bp +1 não é Grau 1 (que deve ser menor que -1).\n\nc) INCORRETA. Embora o primeiro item esteja correto (Grau 3), o segundo item (C +9) já atinge o critério de eversão completa (Grau 4), não permanecendo no Grau 3.\n\nd) INCORRETA. Ba +6 ultrapassa o limite de +1 do Grau 2, sendo obrigatoriamente Grau 3. O restante da sequência (4-2) está correto, mas o primeiro item invalida a alternativa.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:04:31.865Z"
+  }
+]

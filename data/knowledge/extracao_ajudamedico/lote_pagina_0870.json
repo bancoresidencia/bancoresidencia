@@ -1,0 +1,494 @@
+[
+  {
+    "id": "AJUDA_f18e695b-227d-4086-830f-5c43c46f93b4",
+    "originalId": "f18e695b-227d-4086-830f-5c43c46f93b4",
+    "statement": "Um paciente de 25 anos de idade foi levado ao pronto-socorro pelo Corpo de Bombeiros com relato de ter sofrido atropelamento em via pública há 30 minutos. Chegou em protocolo de trauma, contactuante, mas apenas por palavras inapropriadas, murmúrios vesiculares fisiológicos bilateralmente. Ao exame físico, apresentou SatO2 = 92%, FR = 20 irpm, PA = 100 mmHg X 60 mmHg, FC = 100 bpm, movimento de flexão à pressão e abertura ocular ausente. Tinha uma ferida cortocontusa em região parietal, sem sangramento ativo. Em relação ao trauma cranioencefálico moderado (TCE) e grave, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A tomografia de crânio nem sempre é necessária no TCE moderado, devendo ser realizada caso o paciente apresente sinais de alarme avaliados desde o momento do trauma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O coma barbitúrico e a hiperventilação transitória já foram condutas muito adotadas nos pacientes vítimas de TCE grave, contudo, por causa dos efeitos colaterais, hoje são proscritas nesses pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uma vez que o alto fluxo cerebral é capaz de gerar danos agudos e subagudos no paciente vítima de TCE grave, a hipotensão permissiva deve ser iniciada assim que for possível manter a perfusão tecidual adequada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso de manitol deve ser evitado em pacientes vítimas de TCE grave que mantenham hipotensão. Uma alternativa é o uso de soluções salinas hipertônicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO paciente apresenta um quadro de traumatismo cranioencefálico (TCE). Calculando a Escala de Coma de Glasgow (ECG): abertura ocular ausente (1), palavras inapropriadas (3) e movimento de flexão à pressão (4). Total = 8 pontos. Portanto, trata-se de um TCE grave (ECG menor ou igual a 8).\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nO manitol é um diurético osmótico amplamente utilizado para reduzir a pressão intracraniana (PIC). No entanto, ele promove a perda de volume e pode causar ou agravar a hipotensão arterial. No trauma, a hipotensão é um dos principais fatores de lesão cerebral secundária, pois reduz a pressão de perfusão cerebral. Em pacientes hipotensos ou hipovolêmicos, a solução salina hipertônica é preferível, pois ajuda a reduzir a PIC enquanto auxilia na expansão do volume intravascular, mantendo a estabilidade hemodinâmica.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: No TCE moderado (Glasgow 9 a 12) e no TCE grave (Glasgow 3 a 8), a realização de tomografia computadorizada (TC) de crânio é mandatória. A observação sem exames de imagem ou a seleção por \"sinais de alarme\" aplica-se apenas a alguns casos de TCE leve (Glasgow 13 a 15), seguindo protocolos específicos como o Canadian CT Head Rule.\n\nAlternativa B: O coma barbitúrico e a hiperventilação transitória não são condutas \"proscritas\" (proibidas). Elas são consideradas medidas de segunda linha (ou de exceção). O coma barbitúrico é reservado para casos de hipertensão intracraniana refratária a outras medidas. A hiperventilação transitória e agressiva pode ser usada por períodos curtos em situações de herniação cerebral iminente como medida de salvatagem, embora não deva ser mantida de forma contínua pelo risco de isquemia cerebral.\n\nAlternativa C: A hipotensão permissiva é uma estratégia utilizada no choque hemorrágico sem trauma craniano associado, para evitar a exacerbação do sangramento antes do controle da fonte. No paciente com TCE grave, a hipotensão é formalmente contraindicada. As diretrizes da Brain Trauma Foundation recomendam manter a Pressão Arterial Sistólica (PAS) em níveis superiores a 100-110 mmHg (dependendo da idade) para garantir que o cérebro receba oxigenação e fluxo sanguíneo adequados.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:47.918Z"
+  },
+  {
+    "id": "AJUDA_f19527ed-0223-4640-83c3-ffc8e1849c38",
+    "originalId": "f19527ed-0223-4640-83c3-ffc8e1849c38",
+    "statement": "No exame físico de um lactente de um mês de vida, o coto umbilical está “mumificado”. A conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "pesquisar erro inato da imunidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "aguardar queda do coto umbilical",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar tratamento para granuloma",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "avaliar persistência do úraco",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O coto umbilical geralmente se desprende entre o 7º e o 15º dia de vida. Considera-se que há um atraso na queda do coto quando ele permanece aderido após 21 a 30 dias de vida. No caso descrito, o lactente tem um mês e o coto ainda está presente (mumificado), o que exige investigação diagnóstica.\n\nAlternativa (a): Correta. O atraso na queda do coto umbilical é um sinal de alerta clássico para as Imunodeficiências Primárias, atualmente chamadas de Erros Inatos da Imunidade. A patologia mais associada a esse achado é a Deficiência de Adesão Leucocitária Tipo 1 (LAD-1). Nessa doença, os glóbulos brancos (neutrófilos) apresentam um defeito nas moléculas de adesão (integrinas), o que os impede de migrar do sangue para os tecidos. Como o desprendimento do coto depende de um processo inflamatório mediado por neutrófilos, a falha nessa migração faz com que o cordão demore muito mais para cair.\n\nAlternativa (b): Incorreta. Diante de um sinal clínico que aponta para uma possível imunodeficiência grave, a conduta expectante é perigosa. O diagnóstico precoce de condições como a LAD-1 é fundamental, pois essas crianças apresentam infecções bacterianas graves e recorrentes sem a formação de pus, podendo evoluir para o óbito se não houver intervenção adequada (frequentemente transplante de medula óssea).\n\nAlternativa (c): Incorreta. O granuloma umbilical é uma lesão que surge após a queda do coto umbilical. Ele se caracteriza por um tecido de granulação avermelhado, úmido e friável no fundo da cicatriz umbilical. Como o coto do paciente ainda está presente e mumificado (seco), não se trata de um granuloma.\n\nAlternativa (d): Incorreta. A persistência do úraco é uma malformação congênita decorrente da falha no fechamento do canal que liga a bexiga ao umbigo durante a vida fetal. Clinicamente, manifesta-se pela saída de secreção clara (urina) pelo umbigo após a queda do coto, e não pelo atraso no desprendimento do cordão umbilical.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:47.918Z"
+  },
+  {
+    "id": "AJUDA_f1a22ce8-62ad-40e8-bd35-ad2174e9ed9b",
+    "originalId": "f1a22ce8-62ad-40e8-bd35-ad2174e9ed9b",
+    "statement": "Um teste rápido para influenza apresenta valor preditivo positivo (VPP) de 70% em uma população com alta prevalência da doença. Qual a melhor interpretação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quando o teste é positivo, há 70% de chance de o indivíduo realmente ter influenza.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O teste é capaz de identificar 70% dos doentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "70% dos indivíduos sadios terão teste negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O teste exclui a doença em 70% dos negativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O Valor Preditivo Positivo (VPP) é a probabilidade pós-teste de um indivíduo realmente estar doente dado que o seu resultado foi positivo. Trata-se de uma medida que depende diretamente da prevalência da doença na população testada.\n\nAnálise das alternativas:\n\nAlternativa a: Correta. Representa com precisão o conceito de Valor Preditivo Positivo. Ter um VPP de 70% significa que, dentro do grupo de pacientes que testaram positivo, 70% são verdadeiros positivos (têm influenza) e 30% são falsos positivos.\n\nAlternativa b: Incorreta. A capacidade de um teste de identificar corretamente os indivíduos doentes corresponde ao conceito de Sensibilidade, que avalia a proporção de testes positivos entre todas as pessoas que comprovadamente têm a doença.\n\nAlternativa c: Incorreta. A capacidade de um teste de identificar corretamente os indivíduos sadios (ausência de doença) corresponde ao conceito de Especificidade, que avalia a proporção de testes negativos entre todas as pessoas sabidamente sadias.\n\nAlternativa d: Incorreta. A probabilidade de um indivíduo não ter a doença diante de um resultado negativo refere-se ao Valor Preditivo Negativo (VPN), e não ao VPP.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Estatística Médica",
+      "Testes Diagnósticos",
+      "Influenza"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:47.918Z"
+  },
+  {
+    "id": "AJUDA_f1b0693a-7252-4026-a2d1-9ac9ea59db05",
+    "originalId": "f1b0693a-7252-4026-a2d1-9ac9ea59db05",
+    "statement": "Menina de 7 anos de idade é levada em consulta por apresentar broto mamário e odor axilar há 6 meses. Ao exame físico, observa-se Tanner M2P1, sem outros achados. Comparando a estatura da última consulta, há 6 meses, você observa crescimento de 6 cm. Assinale a alternativa que contém a conduta mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observar e reavaliar em 3 meses, pois pode tratar-se de telarca precoce isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar Rx para avaliar idade óssea, dosagem de LH, FSH e estradiol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar USG pélvica para avaliação inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar tratamento com análogo de GnRH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar TSH e T4 livre para investigação inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente de 7 anos apresenta desenvolvimento mamário (M2) antes dos 8 anos de idade, o que define clinicamente a puberdade precoce feminina. Além da telarca, o dado mais relevante do quadro é a velocidade de crescimento: um ganho de 6 cm em apenas 6 meses (equivalente a 12 cm por ano) indica um estirão puberal evidente. Diante desse cenário de puberdade precoce com sinais de progressão rápida (aceleração do crescimento), a investigação laboratorial e de imagem é mandatória para confirmar o diagnóstico e diferenciar entre a forma central (dependente de GnRH) e a periférica (independente de GnRH).\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A conduta de observar e reavaliar só seria adequada se houvesse dúvida sobre a progressão do quadro ou se a velocidade de crescimento fosse normal para a idade, sugerindo uma variante benigna como a telarca precoce isolada. O crescimento acelerado (6 cm em 6 meses) exclui essa conduta expectante.\n\nAlternativa B: Correta. Esta é a conduta inicial padrão. A idade óssea (avaliada por radiografia de mãos e punhos) é fundamental para verificar se o desenvolvimento biológico está avançado em relação à idade cronológica, o que indica exposição prolongada a esteroides sexuais. As dosagens de LH, FSH e estradiol são necessárias para identificar a ativação do eixo hipotálamo-hipófise-gonadal. Níveis de LH basal elevados (geralmente acima de 0,1 a 0,3 UI/L, dependendo do método) confirmam a puberdade precoce central.\n\nAlternativa C: Incorreta. A ultrassonografia pélvica é um exame complementar útil para avaliar o volume do útero e dos ovários, mas não substitui a necessidade da idade óssea e das dosagens hormonais como avaliação inicial. Ela auxilia na confirmação da puberdade, mas não define a origem (central ou periférica) de forma tão precisa quanto o perfil hormonal.\n\nAlternativa D: Incorreta. O tratamento com análogo de GnRH (como a leuprorelina) é o padrão-ouro para a puberdade precoce central, mas só deve ser iniciado após a confirmação diagnóstica e a documentação de que a puberdade é progressiva. Iniciar o tratamento antes de investigar é uma conduta prematura.\n\nAlternativa E: Incorreta. O hipotireoidismo primário severo pode, raramente, causar uma forma de puberdade precoce (Síndrome de Van Wyk-Grumbach). No entanto, o hipotireoidismo cursa obrigatoriamente com queda na velocidade de crescimento e atraso da idade óssea, o que é o oposto do caso clínico apresentado, no qual a menina está crescendo acima do normal.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:47.918Z"
+  },
+  {
+    "id": "AJUDA_f1b2dc0a-773a-440e-82b8-599186cb74f4",
+    "originalId": "f1b2dc0a-773a-440e-82b8-599186cb74f4",
+    "statement": "Menino de 8 anos foi atendido em pronto atendimento por fratura do rádio após cair de uma árvore na rua de casa. A mãe relata que ele é bastante inquieto, não conseguindo ficar muito tempo em um lugar, que é “barulhento”, conversador e perturba a aula. Já recebeu diversos bilhetes da escola a respeito de seu comportamento, mas a professora relata que ele parece não querer desobedecer de propósito. Apresenta também deficiência de aprendizado, por ter dificuldades em realizar as tarefas de aula, e comete erros em seus trabalhos por descuido. A professora relatou que sua atenção se perde constantemente, e que precisa chamá-lo ou acenar, pois aparenta às vezes não ouvir, não conseguindo seguir as instruções propostas. O instrutor do futebol também percebeu problemas de concentração durantes os treinos. Além disso, esquece os materiais que deveria levar para escola. Seu quarto é bagunçado e ele perde suas coisas o tempo todo. Em função da preocupação com a criança, os pais iniciaram uma avaliação em que um dos testes demonstrou que seu QI está na faixa normal. Considerando o caso de Transtorno de Déficit de Atenção e Hiperatividade (TDAH), qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TDAH, tipo predominante hiperativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "TDAH, tipo predominante desatento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "TDAH, tipo combinado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "TDAH com comorbidade de Transtorno de Oposição Desafiante (TOD).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar os critérios diagnósticos do Transtorno de Déficit de Atenção e Hiperatividade (TDAH) conforme o DSM-5, que divide os sintomas em dois domínios principais: desatenção e hiperatividade/impulsividade.\n\nAnálise do quadro clínico:\n\n1. Sintomas de Hiperatividade e Impulsividade: O menino é descrito como inquieto, não para no lugar, é barulhento, conversador e perturba a aula. Esses comportamentos preenchem os critérios para o domínio de hiperatividade.\n\n2. Sintomas de Desatenção: Ele apresenta dificuldade em realizar tarefas, comete erros por descuido, perde o foco constantemente, aparenta não ouvir quando chamado, não segue instruções, esquece materiais e perde objetos pessoais. Esses comportamentos preenchem os critérios para o domínio de desatenção.\n\n3. Contextos e Impacto: Os sintomas se manifestam em múltiplos ambientes (escola, casa e treino de futebol), começaram na infância e trazem prejuízo funcional (aprendizado e socialização), com QI dentro da normalidade.\n\nAnálise das alternativas:\n\na) Incorreta. O tipo predominante hiperativo-impulsivo é diagnosticado quando os critérios de hiperatividade são preenchidos, mas os de desatenção não atingem o limite mínimo nos últimos seis meses. O paciente do caso apresenta claramente ambos os domínios de forma marcante.\n\nb) Incorreta. O tipo predominante desatento ocorre quando os critérios de desatenção são preenchidos, mas os de hiperatividade-impulsividade não. Como o menino é descrito como inquieto, barulhento e conversador, ele não se encaixa apenas neste perfil.\n\nc) Correta. O TDAH de apresentação combinada (ou tipo combinado) é diagnosticado quando tanto os critérios para desatenção quanto os critérios para hiperatividade-impulsividade são preenchidos nos últimos seis meses. O enunciado fornece evidências robustas de sintomas significativos em ambos os pilares do transtorno.\n\nd) Incorreta. O Transtorno de Oposição Desafiante (TOD) caracteriza-se por um padrão de humor irritável, comportamento questionador, desafiante ou vingativo. O enunciado afirma explicitamente que a professora relata que ele parece não querer desobedecer de propósito, o que afasta a característica principal do TOD, que é a oposição intencional e a hostilidade às figuras de autoridade. O comportamento dele é fruto da impulsividade e desatenção do TDAH, não de uma postura desafiadora deliberada.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:47.918Z"
+  },
+  {
+    "id": "AJUDA_f1b8386d-de6f-439b-9327-68a551c57675",
+    "originalId": "f1b8386d-de6f-439b-9327-68a551c57675",
+    "statement": "Homem de 32 anos relata cefaleia bilateral, de intensidade moderada, com sensação de peso na cabeça. Informa que começou nos últimos quatro meses, tendo uma frequência média de 20 dias por mês. Refere fonofobia, mas nega fotofobia ou náuseas. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "enxaqueca sem áurea episódica frequente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cefaleia tensional episódica frequente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "enxaqueca sem áurea crônica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "cefaleia tensional crônica",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar as características clínicas da dor e a sua frequência, utilizando os critérios da Classificação Internacional das Cefaleias (ICHD-3).\n\nAnálise dos dados clínicos:\n1. Localização e Qualidade: A dor é bilateral e descrita como sensação de peso. Essas são características clássicas da cefaleia tensional. A enxaqueca costuma ser unilateral e pulsátil.\n2. Intensidade: Moderada. A cefaleia tensional varia de leve a moderada, enquanto a enxaqueca costuma ser de moderada a forte.\n3. Sintomas Associados: O paciente apresenta fonofobia, mas nega fotofobia e náuseas. Na cefaleia tensional, é permitida a presença de apenas um desses sintomas (ou fonofobia ou fotofobia), e a náusea deve estar ausente. Na enxaqueca, a náusea é comum e a combinação de fotofobia e fonofobia é o padrão.\n4. Frequência e Duração: O paciente apresenta dor há 4 meses, com frequência de 20 dias por mês.\n\nClassificação quanto à frequência:\n- Episódica infrequente: menos de 1 dia por mês.\n- Episódica frequente: entre 1 e 14 dias por mês.\n- Crônica: 15 ou mais dias por mês, por pelo menos 3 meses.\n\nAnálise das alternativas:\n\na) Incorreta. A enxaqueca (migrânea) geralmente apresenta caráter pulsátil, unilateral e vem acompanhada de náuseas ou da dupla fotofobia e fonofobia. Além disso, a frequência de 20 dias por mês a classificaria como crônica, e não episódica.\n\nb) Incorreta. Embora as características da dor (bilateral, peso, sem náuseas) sugiram cefaleia tensional, a frequência de 20 dias por mês ultrapassa o limite da forma \"episódica frequente\" (que é de até 14 dias/mês).\n\nc) Incorreta. Para o diagnóstico de enxaqueca crônica, o paciente precisaria preencher critérios para migrânea em pelo menos 8 dos 15 ou mais dias de dor por mês. O quadro clínico descrito (dor em peso, bilateral, sem náuseas) aponta para o fenótipo tensional.\n\nd) Correta. O quadro clínico é soberano para cefaleia tensional: dor bilateral, em peso (pressão), de intensidade moderada e sem náuseas. A presença isolada de fonofobia é aceitável dentro dos critérios. Como a dor ocorre em 20 dias por mês há mais de 3 meses, o diagnóstico correto é cefaleia tensional crônica.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:47.918Z"
+  },
+  {
+    "id": "AJUDA_f1ba9831-3e39-4fbe-8db2-7b0e2ff91ef2",
+    "originalId": "f1ba9831-3e39-4fbe-8db2-7b0e2ff91ef2",
+    "statement": "Um homem de 46 anos de idade, obeso, tabagista, apresenta pirose e regurgitação, há mais de 5 anos, em uso irregular de inibidor de bomba de próton (IBP), com alívio parcial. Nos últimos meses, evoluiu com disfagia progressiva para sólidos. A endoscopia mostra esofagite erosiva grau C (classificação de Los Angeles) e estenose esofágica curta. Nesse caso, a conduta MAIS adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter IBP em dose padrão isoladamente, pois é suficiente para controle de longo prazo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar dilatação endoscópica da estenose, associada a IBP em alta dose e considerar cirurgia antirrefluxo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Indicar cirurgia de ressecção esofágica de rotina, devido à presença de estenose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tratar apenas com medidas dietéticas e observação clínica, sem necessidade de intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico: O paciente apresenta Doença do Refluxo Gastroesofágico (DRGE) de longa data, com fatores de risco importantes (obesidade e tabagismo) e sinais de complicação. A presença de disfagia progressiva para sólidos e o achado endoscópico de estenose esofágica curta, associada a esofagite grave (classificação de Los Angeles grau C), confirmam o diagnóstico de estenose péptica do esôfago.\n\nAlternativa a) Incorreta. O uso isolado de IBP em dose padrão não é suficiente para tratar uma estenose já estabelecida. A estenose é uma cicatriz fibrosa que reduz o diâmetro da luz do esôfago, exigindo intervenção mecânica para o alívio imediato da disfagia. Além disso, casos de esofagite grave (graus C e D) frequentemente necessitam de doses otimizadas (dobradas) de IBP para alcançar a cicatrização.\n\nAlternativa b) Correta. Esta é a conduta padrão-ouro para estenoses pépticas. A dilatação endoscópica (realizada com balões ou velas) é necessária para restaurar o calibre do esôfago e resolver a disfagia. O tratamento medicamentoso com IBP em dose alta é indispensável para tratar a esofagite de base e, crucialmente, para reduzir a taxa de recorrência da estenose após a dilatação. A cirurgia antirrefluxo deve ser considerada e discutida com o paciente, pois ele é jovem e já apresenta uma complicação estrutural da DRGE, o que indica uma doença de difícil controle apenas com medidas clínicas.\n\nAlternativa c) Incorreta. A ressecção esofágica (esofagectomia) é um procedimento cirúrgico de alta complexidade e elevada morbimortalidade. Sua indicação é reservada para casos de câncer de esôfago ou doenças benignas em estágio terminal e intratáveis por métodos menos invasivos. Não existe indicação de ressecção \"de rotina\" para estenoses pépticas curtas que podem ser resolvidas com dilatação.\n\nAlternativa d) Incorreta. Diante de uma complicação estrutural (estenose) e uma esofagite erosiva grave (grau C), as medidas dietéticas e a observação são absolutamente insuficientes. Essa conduta permitiria a progressão da obstrução esofágica, risco de impactação alimentar e agravamento da lesão mucosa, podendo levar a quadros mais graves como o esôfago de Barrett.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico",
+      "Disfagia, Alterações Estruturais e Distúrbios de Motilidade do Esôfago"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:47.918Z"
+  },
+  {
+    "id": "AJUDA_f1bdc4a5-9cba-4ac5-af10-05bde696986a",
+    "originalId": "f1bdc4a5-9cba-4ac5-af10-05bde696986a",
+    "statement": "Um médico é chamado para atestar o óbito de um paciente de 70 anos internado por pneumonia, que evoluiu com insuficiência respiratória e choque séptico. O paciente tinha como doença de base uma neoplasia pulmonar avançada.\nNo preenchimento da Declaração de Óbito, a causa básica a ser registrada deve ser",
+    "options": [
+      {
+        "id": "A",
+        "text": "insuficiência respiratória, por ser o evento final que levou à morte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "choque séptico, como complicação imediata que culminou no óbito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pneumonia, considerada a causa intermediária do processo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "neoplasia pulmonar, por ter iniciado a cadeia de eventos que levou à morte.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "idade avançada, por constituir fator determinante para maior vulnerabilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para preencher corretamente a Declaração de Óbito (DO), o médico deve seguir as normas do Ministério da Saúde e da Organização Mundial da Saúde (OMS). O conceito fundamental aqui é o de causa básica da morte, definida como a doença ou lesão que iniciou a cadeia de eventos patológicos que levaram diretamente ao óbito.\n\nNa Parte I da Declaração de Óbito, as causas são anotadas em ordem inversa à ocorrência, partindo da causa imediata (linha a) até a causa básica (última linha preenchida). No caso clínico descrito, a sequência de eventos foi: Neoplasia pulmonar avançada -> Pneumonia -> Choque séptico e Insuficiência respiratória -> Óbito.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A insuficiência respiratória é a causa terminal ou imediata. É o mecanismo fisiopatológico final, mas não a doença que desencadeou o processo. Ela deve constar na linha superior da Parte I, mas não é a causa básica.\n\nAlternativa b) Incorreta. O choque séptico é uma complicação e uma causa imediata ou intermediária decorrente da pneumonia. Embora tenha culminado no óbito, ele foi provocado por um evento anterior.\n\nAlternativa c) Incorreta. A pneumonia é considerada uma causa intermediária ou consequencial. Ela se desenvolveu em função do estado de debilidade e do comprometimento pulmonar gerado pela neoplasia maligna.\n\nAlternativa d) Correta. A neoplasia pulmonar é a causa básica porque foi a patologia que iniciou toda a sucessão de eventos mórbidos. Sem o câncer pulmonar, o paciente não teria a fragilidade e as condições que permitiram a instalação da pneumonia e suas complicações fatais. É a doença fundamental que deve ser registrada na última linha preenchida da Parte I.\n\nAlternativa e) Incorreta. A idade avançada não é considerada causa de morte quando existe uma doença diagnosticada que explique o óbito. O uso de termos como senilidade ou velhice só é permitido em casos raros em que não há qualquer evidência de doença ou lesão, o que não se aplica a este paciente com diagnóstico de câncer.\n\nGabarito: Letra d.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sistemas de Informação em Saúde",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:47.918Z"
+  },
+  {
+    "id": "AJUDA_f1c04781-414b-4a63-b39a-3c77cf5e80de",
+    "originalId": "f1c04781-414b-4a63-b39a-3c77cf5e80de",
+    "statement": "Homem, 35 anos, após queda de altura é resgatado pelo SAMU e levado para HETSHL com quadro de traumatismo cranioencefálico grave. Ao exame:\nX: sem sinais de hemorragia externa ativa. A: vias aéreas pérvias.\nB: saturação 98% (máscara com reservatório), FR 18 ipm, mv + simétrico.\nC: PA 70/40 mmHg, FC 62 bpm. Pulsos simétricos. Pelve estável. Sangramento em região parieto occipital.\nD: Glasgow 7, anisocoria direita.\nE: colar cervical, prancha rígida. Membros sem evidência de fratura exposta. Recebendo Solução Ringer lactato em acesso periférico 16F em veia antecubital. Abd plano.\nConsiderando o quadro, qual das seguintes estratégias é a mais apropriada controle de via aérea por indução em sequência rápida e manejo simultâneo do paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indução com propofol 2 mg/kg e paralisia com succinilcolina 1,5 mg/kg; não administrar vasopressor pré-indução; aplicar manobra de Sellick e proceder intubação rápida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indução com etomidato 0,3 mg/kg e paralisia com succinilcolina 1-1,5 mg/kg; não administrar terapia hiperosmolar; iniciar suporte vasopressor apenas se a pressão cair após intubação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pré-tratamento com bolo de solução hipertônica (3% NaCl, 250 mL) por via rápida (considerar se disponível), indução com ketamina 1-2 mg/kg IV e paralisia com rocurônio 1,0-1,2 mg/kg IV preparar push-dose vasopressor (epinefrina 10-20 ug ou fenilefrina conforme contexto) ou infusão de noradrenalina pronta para titulação imediatamente antes/ao longo da indução; realizar Intubação orotraqueal e ventilação controlada após cânula posicionada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indução com midazolam 0,1 mg/kg e paralisia com rocurônio 0,6 mg/kg, com administração profilática de manitol 1 g/kg imediatamente antes da laringoscopia; adiar vasopressor até pós-intubação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar intubação orotraqueal sem indução (intubação “às cegas”) e suturar nasoenteral para reduzir risco de aspiração, iniciando depois sedação e vasopressor se necessário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um Traumatismo Cranioencefálico (TCE) grave (Glasgow 7), com sinais de hipertensão intracraniana e iminência de herniação (anisocoria à direita). Além disso, encontra-se em choque circulatório (PA 70/40 mmHg). O desafio aqui é realizar a Indução em Sequência Rápida (ISR) para proteção das vias aéreas sem agravar a hipotensão (o que reduziria a Pressão de Perfusão Cerebral - PPC) e sem piorar a hipertensão intracraniana.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nEsta alternativa aborda os dois problemas críticos simultaneamente:\n1. Hipertensão Intracraniana: O uso de solução hipertônica (NaCl 3%) é preferível ao manitol em pacientes hipotensos, pois ajuda no controle do edema cerebral e na expansão volêmica, sem o efeito diurético imediato do manitol.\n2. Choque e Estabilidade Hemodinâmica: A cetamina (ketamina) é um agente de indução que preserva a estabilidade hemodinâmica por sua ação simpatomimética, sendo segura no TCE desde que o paciente seja ventilado adequadamente. O uso de bloqueadores neuromusculares em doses plenas (rocurônio 1,2 mg/kg) garante condições ideais de laringoscopia na primeira tentativa.\n3. Otimização Hemodinâmica: Em pacientes chocados, a indução deve ser acompanhada de vasopressores (push-dose ou infusão contínua) para evitar o colapso cardiovascular pós-indução e manter a PPC acima de 60-70 mmHg.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: O propofol é um potente vasodilatador e depressor miocárdico. Administrar 2 mg/kg em um paciente com PA 70/40 mmHg causaria parada cardiorrespiratória imediata por choque obstrutivo/distributivo. Além disso, a manobra de Sellick não é mais recomendada rotineiramente, pois pode dificultar a visualização da glote e não previne a aspiração com segurança.\n\nAlternativa B: Embora o etomidato seja hemodinamicamente neutro, o erro da alternativa reside em negligenciar o tratamento da hipertensão intracraniana (anisocoria presente) e em adotar uma postura reativa quanto ao suporte vasopressor (\"esperar a pressão cair\"). Em pacientes críticos, a ressuscitação hemodinâmica deve ser proativa e simultânea à intubação.\n\nAlternativa D: O midazolam tem um início de ação mais lento e errático para ISR e pode causar hipotensão. A dose de 0,6 mg/kg de rocurônio é insuficiente para uma sequência rápida (o ideal é 1,0 a 1,2 mg/kg). O manitol é contraindicado em pacientes hipotensos devido ao seu efeito diurético osmótico, que agravaria o choque.\n\nAlternativa E: A intubação \"às cegas\" ou sem drogas em um paciente que ainda apresenta reflexos (apesar do Glasgow baixo) aumenta drasticamente a pressão intracraniana, o risco de vômito e a aspiração. O uso de sonda nasoenteral não tem nenhuma relação com o manejo imediato das vias aéreas no trauma e é contraindicado se houver suspeita de fratura de base de crânio.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:47.918Z"
+  },
+  {
+    "id": "AJUDA_f1c3f70c-a9bb-4b03-9c3f-0b29766f591a",
+    "originalId": "f1c3f70c-a9bb-4b03-9c3f-0b29766f591a",
+    "statement": "Você é médico de uma Unidade Básica de Saúde e, preocupado com o crescente número de pacientes com dependência ao álcool, você decide avaliar se o etilismo é mais comum entre os hipertensos e diabéticos comparados com aqueles que não são. Você revisou, retrospectivamente, todos os prontuários de pacientes hipertensos e diabéticos nos últimos cinco anos, comparando-os com a mesma quantidade de pacientes sem hipertensão ou diabetes no mesmo período. Qual das alternativas a seguir descreve CORRETAMENTE o tipo de estudo que você realizou?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ecológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Caso-controle.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ensaio clínico randomizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para identificar corretamente o tipo de estudo epidemiológico descrito na questão, devemos observar o ponto de partida do pesquisador e a direção da análise.\n\nA alternativa correta é a letra (c): Caso-controle.\n\nAnálise das alternativas:\n\na) Coorte: Incorreta. No estudo de coorte, o pesquisador seleciona indivíduos com base na exposição a um fator de risco (ex.: etilistas vs. não etilistas) e os acompanha ao longo do tempo para observar quem desenvolve a doença (desfecho). Embora exista a coorte histórica (retrospectiva), o ponto de partida é sempre a exposição. Na questão, o médico fez o contrário: partiu do desfecho (ter ou não hipertensão/diabetes) para buscar a exposição (etilismo).\n\nb) Ecológico: Incorreta. Estudos ecológicos não utilizam dados individuais de prontuários, mas sim dados agregados de populações ou grupos geográficos (ex.: comparar o consumo de álcool per capita de uma cidade com a taxa de mortalidade por infarto dessa mesma cidade). Como o médico analisou prontuários individuais, este não é um estudo ecológico.\n\nc) Caso-controle: Correta. Este é o delineamento clássico em que se selecionam dois grupos baseados na presença ou ausência de uma condição/doença: os \"casos\" (hipertensos e diabéticos) e os \"controles\" (pacientes sem essas doenças). A partir dessa seleção, o pesquisador olha para o passado (estudo retrospectivo) para verificar se a exposição ao fator estudado (etilismo) foi maior no grupo dos casos do que no grupo-controle.\n\nd) Ensaio clínico randomizado: Incorreta. Trata-se de um estudo experimental e prospectivo, no qual o pesquisador aplica uma intervenção (ex.: um novo medicamento) em um grupo selecionado de forma aleatória (randomizada) e o compara a um grupo-controle. O relato da questão é puramente observacional e baseado em revisão de dados passados, sem qualquer intervenção ou sorteio de grupos.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:47.918Z"
+  }
+]

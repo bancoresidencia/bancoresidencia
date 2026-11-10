@@ -1,0 +1,491 @@
+[
+  {
+    "id": "AJUDA_dd9cdedf-7bb0-4182-8944-9afdcf833356",
+    "originalId": "dd9cdedf-7bb0-4182-8944-9afdcf833356",
+    "statement": "Paciente masculino, de 69 anos, com história de infarto do miocárdio, hipertensão arterial e dislipidemia, compareceu à consulta de revisão trazendo exames laboratoriais recentes, dentre os quais constava o perfil lipídico alterado. Vinha em uso apenas de AAS e enalapril. Qual das opções abaixo representa a conduta mais adequada para o tratamento da dislipidemia do paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar estatina de moderada intensidade e reavaliar o perfil lipídico em 6 meses, com meta de LDL-colesterol < 100 mg/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever estatina de alta intensidade, com meta de LDL-colesterol < 70 mg/dl, e considerar ezetimiba apenas se houver intolerância a estatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar estatina de alta intensidade, com meta de LDL-colesterol < 55 mg/dl e redução de, pelo menos, 50% dos níveis basais; se a meta não for atingida, adicionar ezetimiba.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tratar apenas se os níveis de LDL-colesterol forem > 130 mg/dl, com foco principal na mudança do estilo de vida e acompanhamento anual.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO:\nO paciente em questão apresenta antecedentes de infarto agudo do miocárdio (IAM), o que o classifica automaticamente na categoria de Muito Alto Risco Cardiovascular, conforme as diretrizes da Sociedade Brasileira de Cardiologia (SBC) e da Sociedade Europeia de Cardiologia (ESC). Em pacientes que já manifestaram doença arterial coronariana (prevenção secundária), o tratamento deve ser agressivo para reduzir a probabilidade de novos eventos isquêmicos e mortalidade.\n\nALTERNATIVA A - INCORRETA: O uso de estatinas de moderada intensidade e a meta de LDL-colesterol inferior a 100 mg/dl são condutas apropriadas para pacientes de risco intermediário ou baixo. Para um paciente que já sofreu um infarto, essas metas são excessivamente permissivas e não oferecem a proteção vascular necessária.\n\nALTERNATIVA B - INCORRETA: Embora a prescrição de estatina de alta intensidade esteja correta, a meta de LDL < 70 mg/dl é considerada ultrapassada para pacientes de muito alto risco pelas diretrizes mais recentes, que reduziram esse alvo para < 55 mg/dl. Além disso, a ezetimiba não deve ser reservada apenas para casos de intolerância; ela é a primeira droga a ser associada quando a estatina em dose máxima não atinge a meta de LDL.\n\nALTERNATIVA C - CORRETA: Esta alternativa está em perfeita consonância com as recomendações atuais para prevenção secundária. Pacientes com doença cardiovascular aterosclerótica estabelecida devem utilizar estatinas de alta intensidade (como Atorvastatina 40-80mg ou Rosuvastatina 20-40mg). A meta terapêutica é alcançar um LDL-colesterol menor que 55 mg/dl e, simultaneamente, garantir uma redução de pelo menos 50% em relação aos níveis basais do paciente. Se, após o uso da dose máxima tolerada de estatina, a meta não for atingida, a ezetimiba deve ser adicionada ao esquema.\n\nALTERNATIVA D - INCORRETA: No contexto de prevenção secundária, o tratamento medicamentoso com estatinas é obrigatório, independentemente do valor inicial do LDL-colesterol. Aguardar que o LDL ultrapasse 130 mg/dl ou focar apenas em mudanças de estilo de vida seria uma conduta insuficiente, aumentando drasticamente o risco de um novo evento cardiovascular ou morte do paciente.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:22.680Z"
+  },
+  {
+    "id": "AJUDA_dda266e0-8cfb-49ae-adbb-9da6820727a8",
+    "originalId": "dda266e0-8cfb-49ae-adbb-9da6820727a8",
+    "statement": "Após a realização de uma laparotomia exploradora por uma úlcera perfurada, a melhor maneira de fechar a aponeurose abdominal é a sutura",
+    "options": [
+      {
+        "id": "A",
+        "text": "com poligratina, pontos separados",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "contínua com polidioxanona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "contínua com polipropileno.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "separada com mononylon.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "contínua com categute cromado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O fechamento da parede abdominal (aponeurose) após uma laparotomia exploradora, especialmente em contextos de potencial contaminação como uma úlcera perfurada, exige uma técnica que garanta força tênsil prolongada, minimize o risco de infecção e evite a evisceração.\n\nAlternativa (a) Incorreta: A poliglactina é um fio absorvível e multifilamentar (trançado). Em cirurgias com potencial de contaminação, os espaços entre os filamentos podem abrigar bactérias, aumentando o risco de infecção do sítio cirúrgico. Além disso, pontos separados demandam mais tempo cirúrgico e não distribuem a tensão de forma tão homogênea quanto a sutura contínua.\n\nAlternativa (b) Incorreta: A polidioxanona (PDS) é um fio monofilamentar de absorção lenta, sendo uma excelente opção técnica na prática moderna. No entanto, para fins de prova e baseando-se na literatura clássica de técnica cirúrgica, o uso de fios inabsorvíveis de alta resistência como o polipropileno ainda é frequentemente apontado como o padrão-ouro para garantir a integridade da parede em casos de risco.\n\nAlternativa (c) Correta: O polipropileno é um fio inabsorvível e monofilamentar. Ele é considerado ideal para o fechamento da aponeurose por ser inerte, não favorecer a fixação bacteriana (por ser monofilamento) e manter sua força tênsil permanentemente, o que previne hérnias incisionais e eviscerações. A técnica contínua é a preferida por ser mais rápida, promover uma distribuição uniforme da tensão ao longo de toda a ferida e causar menos isquemia tecidual quando comparada aos múltiplos nós de uma sutura simples.\n\nAlternativa (d) Incorreta: O mononylon é um fio monofilamentar e inabsorvível, mas é mais comumente utilizado em suturas de pele ou em situações específicas. Embora pudesse ser usado na aponeurose, a técnica de pontos separados é considerada inferior à contínua para o fechamento da linha média (laparotomia), pois cria pontos de isquemia focal e demanda mais tempo.\n\nAlternativa (e) Incorreta: O categute cromado é um fio absorvível orgânico de degradação rápida e imprevisível, além de causar uma reação inflamatória intensa. Seu uso em aponeurose é formalmente contraindicado, pois o fio perde a resistência muito antes de a cicatriz ter força suficiente para manter a parede fechada, resultando em altíssimas taxas de deiscência.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Perfurativo",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:22.680Z"
+  },
+  {
+    "id": "AJUDA_dda79fc2-5896-4c17-be2f-4326627e3496",
+    "originalId": "dda79fc2-5896-4c17-be2f-4326627e3496",
+    "statement": "Homem, 78 anos de idade, realizou ultrassonografia abdominal que evidenciou dilatação da aorta abdominal abaixo das artérias renais de 4,5 cm de diâmetro e 10 cm de extensão. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acompanhamento seriado com ultrassom a cada 6 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tratamento endovascular com prótese reta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia convencional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tratamento endovascular com prótese bifurcada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um paciente masculino de 78 anos com Aneurisma da Aorta Abdominal (AAA) infrarrenal de 4,5 cm de diâmetro. A conduta para o AAA é baseada principalmente no diâmetro transverso do aneurisma, na velocidade de crescimento e na presença de sintomas.\n\nAlternativa a: Correta. Para pacientes do sexo masculino e assintomáticos, o consenso atual indica que a intervenção (cirúrgica ou endovascular) deve ser realizada quando o diâmetro atinge 5,5 cm. Aneurismas com diâmetro entre 4,0 cm e 4,9 cm devem ser monitorados com exames de imagem seriados, geralmente ultrassonografia ou tomografia computadorizada, em intervalos de 6 a 12 meses. Portanto, o acompanhamento a cada 6 meses está perfeitamente adequado para o diâmetro de 4,5 cm.\n\nAlternativa b: Incorreta. O tratamento invasivo não está indicado para este paciente, pois o diâmetro de 4,5 cm ainda oferece um risco de ruptura baixo em comparação ao risco do procedimento. Além disso, a prótese reta raramente é utilizada em aneurismas infrarrenais, pois a dilatação costuma se estender até próximo à bifurcação das ilíacas.\n\nAlternativa c: Incorreta. A cirurgia convencional (aberta) é uma opção de tratamento, mas só deve ser indicada quando o limiar de 5,5 cm for atingido, se houver crescimento rápido (maior que 0,5 cm em 6 meses ou 1 cm em um ano) ou se o paciente se tornar sintomático.\n\nAlternativa d: Incorreta. Embora o tratamento endovascular com prótese bifurcada seja a técnica de escolha em muitos centros para correção de AAA, ele segue o mesmo critério de indicação por diâmetro (5,5 cm para homens). Intervir precocemente em aneurismas pequenos não traz benefício de sobrevida e expõe o paciente a riscos desnecessários.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:22.680Z"
+  },
+  {
+    "id": "AJUDA_ddb107c1-4515-45d5-b934-1249dc5849f9",
+    "originalId": "ddb107c1-4515-45d5-b934-1249dc5849f9",
+    "statement": "A hematêmese por varizes de esôfago, quando apresentada por um paciente com trombose de veias supra-hepáticas, é decorrente de alteração parenquimatosa hepática e compromete o espaço:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ducto biliar terciário",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pós-sinusoidal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "pré-sinusoidal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "linfático",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é necessário classificar a hipertensão portal de acordo com o local da obstrução ao fluxo sanguíneo em relação aos sinusoides hepáticos. A condição descrita, a trombose das veias supra-hepáticas, é a definição clínica da Síndrome de Budd-Chiari.\n\nAlternativa (a) Incorreta: O ducto biliar terciário integra o sistema excretor de bile. Problemas nesse nível causam quadros de colestase (como icterícia e prurido), mas não possuem relação fisiopatológica direta com a hipertensão portal ou com a formação de varizes de esôfago, que são fenômenos de origem vascular venosa.\n\nAlternativa (b) Correta: A drenagem venosa do fígado ocorre dos sinusoides para as veias centrolobulares, que convergem para as veias supra-hepáticas e, finalmente, para a veia cava inferior. Quando há uma trombose nas veias supra-hepáticas, o sangue encontra uma barreira após ter atravessado os sinusoides. Por isso, essa obstrução é classificada como pós-sinusoidal. Esse represamento sanguíneo aumenta a pressão de forma retrógrada em todo o sistema porta, levando ao desenvolvimento de circulação colateral, como as varizes de esôfago, que podem romper e causar hematêmese.\n\nAlternativa (c) Incorreta: A alteração pré-sinusoidal ocorre quando a resistência ao fluxo está posicionada antes de o sangue atingir os sinusoides hepáticos. Isso é observado em doenças como a esquistossomose (onde o dano ocorre nos espaços porta) ou na trombose da veia porta. Como a questão especifica que a trombose ocorre nas veias de saída (supra-hepáticas), a classificação pré-sinusoidal está incorreta.\n\nAlternativa (d) Incorreta: O espaço linfático hepático sofre impacto indireto na Síndrome de Budd-Chiari. O aumento da pressão hidrostática nos sinusoides gera uma produção excessiva de linfa, o que é um dos principais mecanismos da ascite volumosa observada nesses pacientes. Entretanto, a hematêmese e as varizes de esôfago são decorrentes do componente vascular venoso pós-sinusoidal, e não do sistema linfático.\n\nResumo: A trombose das veias supra-hepáticas impede o efluxo (saída) de sangue do fígado. Como essa obstrução está localizada após os sinusoides na arquitetura lobular, ela é definida como pós-sinusoidal.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:22.680Z"
+  },
+  {
+    "id": "AJUDA_ddb9d067-ade8-443e-8510-46912e63099e",
+    "originalId": "ddb9d067-ade8-443e-8510-46912e63099e",
+    "statement": "Menina de 07 anos de idade previamente hígida, é admitida no hospital com febre, tosse, queda do estado geral, inapetência e dor abdominal de início há três dias. À radiografia de tórax notou-se área de opacidade em terço médio-inferior esquerdo, com obliteração do seio costofrênico esquerdo e sinal do menisco. A propedeutica pulmonar esperada ao exame físico dessa criança é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expansibilidade pulmonar diminuída no hemitórax esquerdo, frêmito toracovocal e murmúrio vesicular diminuídos em terço médio-inferior esquerdo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Expansibilidade pulmonar diminuida no hemitórax esquerdo, frêmito toracovocal aumentado e murmúrio vesicular diminuído em terço médio-inferior esquerdo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Expansibilidade pulmonar diminuida no hemitórax esquerdo, frêmito toracovocal diminuido com murmúrio vesicular presente bilateralmente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Expansibilidade pulmonar diminuida no hemitórax esquerdo, frêmito toracovocal aumentado e murmúrio vesicular abolido em terço médio-inferior esquerdo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito — febre, tosse e queda do estado geral associadas a um achado radiológico de opacidade com sinal do menisco (curva de Damoiseau) e obliteração do seio costofrênico — é um diagnóstico clássico de derrame pleural, provavelmente de origem parapneumônica (decorrente de uma pneumonia).\n\nPara responder à questão, devemos nos lembrar da semiologia do derrame pleural:\n\n1. Expansibilidade: Diminuída no lado afetado, devido à dor pleurítica e à presença de líquido ocupando o espaço pleural, o que restringe a movimentação do pulmão.\n2. Frêmito Toracovocal (FTV): Diminuído ou abolido. O líquido entre o pulmão e a parede torácica atua como um isolante acústico, dificultando a transmissão das vibrações das cordas vocais até a mão do examinador.\n3. Percussão: Macicez ou submacicez na região do líquido.\n4. Murmúrio Vesicular (MV): Diminuído ou abolido. O líquido afasta o parênquima pulmonar da parede torácica, impedindo que o som da passagem do ar chegue adequadamente ao estetoscópio.\n\nAnálise das alternativas:\n\na) CORRETA. Apresenta exatamente os achados esperados para um derrame pleural: redução da expansibilidade, redução do frêmito toracovocal (característica que diferencia o derrame da consolidação pura) e redução do murmúrio vesicular na área afetada.\n\nb) INCORRETA. O frêmito toracovocal aumentado é característico da síndrome de consolidação pulmonar (como na pneumonia lobar sem derrame), na qual o tecido pulmonar solidificado transmite melhor a vibração. No derrame pleural, o FTV está sempre diminuído.\n\nc) INCORRETA. Embora a expansibilidade e o FTV estejam diminuídos, o murmúrio vesicular não pode estar presente de forma normal (bilateralmente). Na região onde há líquido (terço médio-inferior esquerdo), o MV deve estar obrigatoriamente diminuído ou ausente.\n\nd) INCORRETA. Novamente, o erro está em afirmar que o frêmito toracovocal está aumentado. Como explicado, o líquido bloqueia a vibração, resultando em FTV diminuído.\n\nDica diagnóstica adicional: Em crianças, é comum que pneumonias de lobos inferiores causem irritação diafragmática, o que justifica a dor abdominal referida pela paciente no caso clínico.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Derrame Pleural",
+      "Pneumonia na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:22.680Z"
+  },
+  {
+    "id": "AJUDA_ddbaa2f9-d202-442b-ac34-5ee1507caec0",
+    "originalId": "ddbaa2f9-d202-442b-ac34-5ee1507caec0",
+    "statement": "Homem de 48 anos, previamente saudável, apresenta dor e edema em panturrilha esquerda há 3 dias. Doppler venoso confirma trombose venosa profunda proximal. O paciente está estável, com função renal preservada. Qual é a conduta medicamentosa inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rivaroxabana 15 mg via oral a cada 12 horas por 21 dias, seguida de 20 mg uma vez ao dia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apixabana 5 mg via oral a cada 12 horas desde o início.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Enoxaparina 40 mg subcutânea uma vez ao dia, como esquema de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Varfarina 5 mg via oral associada a Enoxaparina 1 mg/kg subcutânea a cada 12 horas até atingir INR terapêutico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o tratamento inicial da Trombose Venosa Profunda (TVP) proximal em um paciente estável e com função renal preservada. Atualmente, as principais diretrizes nacionais e internacionais (como o CHEST e a Sociedade Brasileira de Angiologia e de Cirurgia Vascular) recomendam os Anticoagulantes Orais Diretos (DOACs) como primeira escolha para o tratamento de pacientes sem contraindicações ou câncer, devido à maior conveniência, dispensabilidade de monitorização laboratorial do RNI e menor risco de sangramento intracraniano.\n\nAlternativa (a): CORRETA. A Rivaroxabana é um inibidor direto do fator Xa que permite o tratamento em regime de monoterapia, ou seja, sem a necessidade de uma \"ponte\" inicial com heparina injetável. O esquema posológico aprovado para o tratamento da fase aguda da TVP e EP (Embolia Pulmonar) é exatamente o descrito: 15 mg via oral a cada 12 horas por 21 dias (fase de ataque), seguido de 20 mg uma vez ao dia (fase de manutenção).\n\nAlternativa (b): INCORRETA. Embora a Apixabana também seja um DOAC que permite monoterapia, a dosagem citada está errada para o início do tratamento. Para TVP aguda, a dose de ataque da Apixabana deve ser de 10 mg via oral a cada 12 horas durante os primeiros 7 dias. Após esse período, a dose de manutenção passa a ser de 5 mg a cada 12 horas.\n\nAlternativa (c): INCORRETA. A dose de Enoxaparina de 40 mg uma vez ao dia é uma dose profilática, indicada para prevenção de tromboembolismo em pacientes hospitalizados. Para o tratamento de uma TVP já estabelecida (dose terapêutica), a posologia correta da Enoxaparina é de 1 mg/kg por via subcutânea a cada 12 horas (ou 1,5 mg/kg uma vez ao dia).\n\nAlternativa (d): INCORRETA. Este é o esquema tradicional de anticoagulação com antagonista da vitamina K (Varfarina) e ponte de heparina. Embora seja um tratamento eficaz, ele não é mais considerado a conduta inicial \"mais adequada\" ou de primeira escolha para pacientes estáveis com boa função renal. A Varfarina demora de 3 a 5 dias para atingir o efeito pleno, exige exames frequentes de RNI e apresenta mais interações medicamentosas e alimentares do que os novos anticoagulantes orais, como a Rivaroxabana mencionada na alternativa A.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Hemostasia",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:22.680Z"
+  },
+  {
+    "id": "AJUDA_ddc5cb07-0bfe-4398-8821-47ee0fd3f56b",
+    "originalId": "ddc5cb07-0bfe-4398-8821-47ee0fd3f56b",
+    "statement": "Criança de 6 meses foi trazida à Emergência com história de febre há 3 dias, sem identificação de foco. A mãe negou tosse, coriza, diarreia e alteração de humor. Ao exame físico, encontrava-se ativa, hidratada e corada, com temperatura axilar de 39,4º C; à oroscopia e otoscopia, não foram identificadas alterações; à ausculta cardíaca, o ritmo era regular, sem sopros; à ausculta respiratória, os pulmões estavam limpos; à palpação, o abdômen estava flácido e sem visceromegalias. As extremidades estavam com bons pulsos e boa perfusão periférica. Com base no quadro, assinale a alternativa que contempla o conjunto de condutas recomendado no momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coleta de sangue para hemograma, hemocultura e PCR - início de antibiótico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coleta de sangue para hemograma, hemocultura e PCR - realização de raio X de tórax - sem antibiótico até os resultados dos exames",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coleta de urina para EQU com urocultura - sem antibiótico até o resultado do exame",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Coleta de urina para EQU com urocultura - realização de raio X de tórax - coleta de secreção nasal para pesquisa de vírus respiratórios – início de antibiótico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo da Febre Sem Sinal Localizatório (FSSL) em lactentes. O paciente em questão é uma criança de 6 meses, em bom estado geral (ativa, hidratada e corada), com febre alta há 3 dias e exame físico completamente normal, sem sinais de toxicidade.\n\nEm lactentes entre 3 e 36 meses de idade com febre sem foco, a principal preocupação bacteriana é a Infecção do Trato Urinário (ITU), que é a causa bacteriana oculta mais frequente nessa faixa etária, especialmente quando não há sintomas respiratórios ou gastrointestinais.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A coleta de hemograma e hemocultura e o início imediato de antibiótico estariam indicados para uma criança com sinais de toxicidade ou suspeita de sepse. Como o lactente está em bom estado geral e estável, não há indicação de antibioticoterapia empírica imediata nem de exames invasivos de sangue como primeira conduta.\n\nAlternativa b) Incorreta. O raio X de tórax não é indicado em crianças com febre sem foco que apresentam ausculta pulmonar limpa e ausência de sinais de desconforto respiratório (como taquipneia ou tiragens). Além disso, a investigação urinária é prioritária em relação aos exames de sangue (hemograma/PCR) neste cenário clínico.\n\nAlternativa c) Correta. Em um lactente de 6 meses em bom estado geral com febre sem foco, a conduta inicial prioritária é a exclusão de Infecção do Trato Urinário. Deve-se realizar a coleta de urina para Exame Quimiotécnico de Urina (EQU) e Urocultura. Como a criança está clinicamente bem e não apresenta sinais de gravidade, deve-se aguardar o resultado dos exames para decidir sobre o início do tratamento, evitando o uso desnecessário de antibióticos.\n\nAlternativa d) Incorreta. O raio X de tórax e a pesquisa de vírus respiratórios são desnecessários, pois não há sintomas respiratórios (tosse ou coriza) e o exame físico pulmonar é normal. O início imediato de antibiótico é contraindicado para uma criança com bom estado geral antes da confirmação de um foco bacteriano.\n\nEm resumo, para lactentes febris que parecem bem, a investigação deve ser direcionada para a causa bacteriana oculta mais comum (ITU), mantendo uma conduta conservadora quanto ao uso de antimicrobianos.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Febre na Pediatria",
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": 100,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:22.680Z"
+  },
+  {
+    "id": "AJUDA_ddcc558b-78cc-4725-ad95-ce37f85bafa7",
+    "originalId": "ddcc558b-78cc-4725-ad95-ce37f85bafa7",
+    "statement": "O reflexo de Moro deve desaparecer até:",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "4 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "9 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O reflexo de Moro, também conhecido como reflexo do sobressalto, é um dos reflexos primitivos mais importantes avaliados no exame neurológico do recém-nascido e do lactente. Ele é desencadeado por uma sensação de queda súbita ou um estímulo sonoro/visual brusco, resultando em uma resposta simétrica de abdução e extensão dos membros superiores, seguida por adução e flexão (o movimento de \"abraço\"), frequentemente acompanhada de choro.\n\nAnálise das alternativas:\n\na) Incorreta. Aos 2 meses de idade, o reflexo de Moro ainda está presente de forma vigorosa e é um achado normal e esperado durante a consulta de puericultura.\n\nb) Correta. O reflexo de Moro é fisiológico ao nascimento e sua integração (desaparecimento) ocorre gradualmente à medida que o sistema nervoso central amadurece, devendo desaparecer completamente entre o 3º e o 4º mês de vida. Este é o marco temporal clássico cobrado em provas de residência e utilizado na prática clínica para avaliar a integridade do desenvolvimento neuropsicomotor.\n\nc) Incorreta. Embora alguns lactentes possam apresentar resquícios do reflexo até o 5º mês, a permanência do reflexo de Moro aos 6 meses de idade é considerada um sinal de alerta importante. Sua persistência após o segundo trimestre de vida pode sugerir lesões neurológicas, como a paralisia cerebral.\n\nd) Incorreta. Aos 9 meses, a criança já possui marcos motores avançados, como sentar sem apoio e iniciar o engatinhar. A presença de um reflexo primitivo como o de Moro nesta fase é francamente patológica e indica um atraso grave na maturação neurológica.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:22.680Z"
+  },
+  {
+    "id": "AJUDA_ddd54e0e-2208-40a2-a86d-b94dbd5672c5",
+    "originalId": "ddd54e0e-2208-40a2-a86d-b94dbd5672c5",
+    "statement": "Dona Ana, 22 anos de idade, dá entrada na unidade materno-infantil em trabalho de parto com 38 semanas de idade gestacional. Relata perda de líquido há 16 horas, realizou 3 consultas de pré-natal, apenas uma no último trimestre. Três horas após a internação deu a luz a recém nascido pesando 2.800 g, APGAR 6/9. O RN evoluiu com desconforto respiratório no alojamento conjunto, 12 horas após o nascimento com gemência, batimento de asa de nariz e tiragem subcostal, com queda de saturação. A alternativa que contém a conduta inicial mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "suporte ventilatório, suporte hídrico e nutricional, bicarbonato de sódio e antibioticoterapia com Ampicilina e Aminoglicosídeo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "suporte ventilatório, suporte hídrico e nutricional, bicarbonato de sódio e antibioticoterapia com Ceftriaxona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "suporte ventilatório, suporte hídrico e nutricional, e antibioticoterapia com Penicilina Cristalina e Aminoglicosídeo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "oxigênio circulatório, coletar exames de rotina e observar o desconforto respiratório durante as próximas 2 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "suporte de oxigênio, dieta zero, hidratação venosa e uma dose de penicilina G Benzatina até que sejam avaliados exames complementares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um recém-nascido (RN) a termo com um quadro clássico de Sepse Neonatal Precoce, manifestando-se como desconforto respiratório (frequentemente decorrente de pneumonia congênita).\n\nOs principais pontos de atenção são os fatores de risco: ruptura prolongada de membranas por 19 horas (o risco aumenta após 18 horas), pré-natal incompleto (sem rastreio para Estreptococo do Grupo B - GBS) e o início dos sintomas antes de 48 horas de vida.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o esquema antibiótico sugerido (Ampicilina + Aminoglicosídeo) seja adequado para sepse precoce, a administração de Bicarbonato de Sódio é o erro. O uso de bicarbonato no manejo inicial do desconforto respiratório neonatal é proscrito, pois pode causar hiperosmolaridade, risco de hemorragia intracraniana e piora da acidose intracelular.\n\nb) Incorreta. Além do erro sobre o bicarbonato (mencionado acima), a Ceftriaxona não deve ser usada nesta faixa etária. Ela aumenta o risco de Kernicterus (por deslocar a bilirrubina da albumina) e pode causar precipitação fatal quando administrada com soluções contendo cálcio.\n\nc) Correta. Esta alternativa aborda as medidas essenciais. O suporte ventilatório e nutricional (geralmente dieta zero e hidratação venosa em casos de desconforto respiratório moderado/grave) estabiliza o paciente. A antibioticoterapia com Penicilina Cristalina (ou Ampicilina) associada a um Aminoglicosídeo (como a Gentamicina) é o esquema padrão-ouro para cobrir os patógenos mais comuns da sepse precoce: Streptococcus agalactiae (GBS) e Escherichia coli.\n\nd) Incorreta. Diante de um RN com gemência e batimento de asa de nariz associados a fatores de risco infecciosos, a conduta \"observar\" é perigosa. O quadro é sugestivo de infecção sistêmica e requer intervenção imediata para reduzir a mortalidade.\n\ne) Incorreta. A Penicilina G Benzatina é uma medicação de depósito para administração intramuscular e absorção lenta, sem indicação para casos agudos de sepse ou pneumonia. Além disso, o tratamento de sepse precoce exige a cobertura para patógenos Gram-negativos (como a E. coli), o que a penicilina isolada não oferece satisfatoriamente.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal",
+      "Rotura Prematura de Membranas (RPM)",
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:22.680Z"
+  },
+  {
+    "id": "AJUDA_ddd941c6-dd68-47dc-ba5e-b3b93fe8bc9f",
+    "originalId": "ddd941c6-dd68-47dc-ba5e-b3b93fe8bc9f",
+    "statement": "Em relação aos diferentes desenhos de pesquisa em epidemiologia, o modelo conhecido como estudo ecológico pode ser descrito como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a observação detalhada de fatores de risco ligados ao meio ambiente e doenças em determinada região ao longo do tempo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o acompanhamento de pessoas expostas e não expostas a agrotóxicos, medindo a incidência de doenças com o tempo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o uso de estudos controlados e randomizados para avaliar a eficácia de tratamentos em grupos distintos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a análise de dados agregados, comparando grupos ou populações, em vez de indivíduos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O estudo ecológico é um delineamento de pesquisa epidemiológica que se distingue fundamentalmente pela sua unidade de análise: o grupo ou a população, e não o indivíduo isolado.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) Incorreta: O termo \"ecológico\" em epidemiologia refere-se ao nível de agregação dos dados e não, necessariamente, a fatores ambientais ou à ecologia no sentido biológico. Além disso, a observação detalhada ao longo do tempo, sem mencionar o caráter agregado dos dados, não define o método.\n\nAlternativa (b) Incorreta: Esta alternativa descreve o desenho de um estudo de coorte. No estudo de coorte, o pesquisador acompanha indivíduos (unidade de análise individual) expostos e não expostos a um determinado fator para observar a incidência de doenças ao longo do tempo.\n\nAlternativa (c) Incorreta: Esta é a definição de um ensaio clínico randomizado. Trata-se de um estudo experimental, e não apenas observacional, no qual a unidade de análise é o indivíduo e o objetivo é avaliar a eficácia de intervenções sob condições controladas.\n\nAlternativa (d) Correta: Define precisamente o estudo ecológico. A principal característica deste modelo é o uso de dados agregados (como médias, proporções ou coeficientes) de populações inteiras, como cidades, estados ou países. Por exemplo, ao comparar a taxa de mortalidade por infarto em diferentes cidades com o consumo médio de gordura per capita de cada uma. Como não se têm dados individuais, existe o risco da falácia ecológica, que é o erro de atribuir a um indivíduo uma associação que foi observada apenas no nível populacional.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:22.680Z"
+  }
+]

@@ -1,0 +1,532 @@
+[
+  {
+    "id": "AJUDA_9ae39c1e-18d4-4408-88be-a42e70b84164",
+    "originalId": "9ae39c1e-18d4-4408-88be-a42e70b84164",
+    "statement": "Mulher, 58 anos de idade, tercípara (3 cesáreas), menopausa há 8 anos, refere perda urinária aos grandes esforços, incontinência de urgência e noctúria (2 vezes/noite) há 6 meses. Nega comorbidades. Exame físico: sem perda urinária ao esforço solicitado, ponto Ba -1 (POP-q), nota 4 na Avaliação Funcional do Assoalho Pélvico. A conduta mais adequada nesse caso, dentre as abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever oxibutinina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hormonioterapia sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Medidas comportamentais e fisioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indicar sling retropúbico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar colpoplastia anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise Clínica do Caso:\n\nA paciente de 58 anos apresenta um quadro de Incontinência Urinária Mista, pois relata tanto perda aos esforços (incontinência de esforço) quanto urgência e noctúria (componentes de bexiga hiperativa/urgência). No exame físico, o ponto Ba em -1 indica um prolapso de parede anterior muito leve (Estágio I pelo POP-Q), que não justifica intervenção cirúrgica. A Avaliação Funcional do Assoalho Pélvico (AFA) com nota 4 demonstra que a paciente possui uma boa percepção e contração da musculatura perineal, o que aumenta as chances de sucesso com o tratamento conservador.\n\nAnálise das Alternativas:\n\nAlternativa (a) Incorreta: A oxibutinina é um agente anticolinérgico indicado para o tratamento da incontinência de urgência (bexiga hiperativa). Embora a paciente tenha esses sintomas, a terapia medicamentosa não é a primeira escolha isolada, devendo ser precedida ou acompanhada por medidas comportamentais. Além disso, ela não trata o componente de perda aos esforços.\n\nAlternativa (b) Incorreta: O hipoestrogenismo da menopausa contribui para a atrofia urogenital, mas a hormonioterapia sistêmica não é o tratamento de primeira linha para a incontinência urinária. O uso de estrogênio tópico poderia ser considerado como adjuvante, mas não a terapia sistêmica isolada para este fim.\n\nAlternativa (c) Correta: De acordo com os protocolos da FEBRASGO e diretrizes internacionais, o tratamento inicial para a incontinência urinária (seja de esforço, de urgência ou mista) deve ser sempre conservador. As medidas comportamentais (como redução de cafeína, controle hídrico e treinamento vesical) somadas à fisioterapia pélvica (exercícios de Kegel) são altamente eficazes, apresentam baixo risco de efeitos colaterais e devem ser a primeira escolha, especialmente em pacientes com boa função muscular (AFA nota 4).\n\nAlternativa (d) Incorreta: O sling retropúbico é o padrão-ouro para o tratamento cirúrgico da incontinência urinária de esforço. No entanto, a cirurgia só deve ser indicada após a falha do tratamento conservador ou em casos de perda urinária grave e bem documentada. No caso em questão, a paciente sequer demonstrou perda ao exame físico e tem sintomas mistos, o que exige cautela, pois a cirurgia de esforço pode piorar os sintomas de urgência.\n\nAlternativa (e) Incorreta: A colpoplastia anterior é uma cirurgia para correção de cistocele (prolapso de parede anterior). A paciente apresenta um prolapso estágio I (Ba -1), que é considerado normal ou assintomático na maioria das mulheres e não tem indicação cirúrgica. Vale ressaltar que a colpoplastia anterior isolada não é o tratamento adequado para a incontinência de esforço.\n\nConclusão:\n\nDiante de uma paciente com sintomas mistos, sem prolapsos significativos e com boa função muscular, a conduta mais adequada e menos invasiva é iniciar com medidas comportamentais e fisioterapia pélvica.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:34.875Z"
+  },
+  {
+    "id": "AJUDA_9aead432-9b62-414c-b231-2188fb863dc9",
+    "originalId": "9aead432-9b62-414c-b231-2188fb863dc9",
+    "statement": "Homem de 28 anos, vítima de colisão automobilística, chega ao pronto-socorro instável hemodinamicamente (PA 78x40 mmHg, FC 136 bpm, SatO₂ 90% em O₂ suplementar). No atendimento inicial pelo protocolo ATLS, é realizada ultrassonografia abdominal (FAST), que mostra as seguintes imagens nos cortes hipocôndrio direito, hipocôndrio esquerdo e pelve. \n\nCom base no protocolo FAST, qual a interpretação CORRETA e a conduta imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "FAST negativo – estabilizar clinicamente e solicitar tomografia de abdome com contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "FAST inconclusivo por artefatos – repetir o exame em 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "FAST Positivo em Pelve – indicar laparoscopia diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "FAST negativo – liberar o paciente após observação clínica de 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "FAST positivo para líquido livre intraperitoneal – indicar laparotomia exploradora imediata.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descreve um paciente jovem com trauma contuso grave e sinais claros de choque hipovolêmico/hemorrágico (hipotensão arterial e taquicardia importante). A análise das imagens de ultrassonografia (FAST) é fundamental para definir a conduta.\n\nAnálise das Imagens:\n\nA primeira imagem mostra o quadrante superior direito (RUQ), especificamente o espaço hepatorrenal (Espaço de Morison). É possível observar uma faixa anecoica (preta) entre o fígado e o rim direito, o que indica a presença de líquido livre intraperitoneal.\n\nA segunda e a terceira imagens mostram o quadrante superior esquerdo (LUQ), evidenciando líquido livre ao redor do baço (espaço periesplênico).\n\nAnálise das Alternativas:\n\na) Incorreta. O FAST é nitidamente positivo, apresentando líquido livre em múltiplos espaços. Além disso, a realização de tomografia computadorizada (TC) é contraindicada em pacientes hemodinamicamente instáveis, pois o deslocamento para a sala de exames coloca a vida do paciente em risco. A TC é reservada para pacientes estáveis.\n\nb) Incorreta. As imagens não possuem artefatos que impeçam a interpretação; o líquido livre é facilmente identificável. Repetir o exame em 24 horas em um paciente com choque classe IV seria fatal.\n\nc) Incorreta. Embora o FAST possa ser positivo na pelve, a conduta para um paciente instável com evidência de sangramento abdominal é a laparotomia exploradora (cirurgia aberta) para controle imediato da hemorragia, e não a laparoscopia, que exige estabilidade e pneumoperitônio.\n\nd) Incorreta. O FAST é positivo e o paciente está em choque, necessitando de intervenção imediata, e não de observação ou liberação.\n\ne) Correta. De acordo com o protocolo ATLS (Advanced Trauma Life Support), o achado de líquido livre ao ultrassom (FAST positivo) em um paciente com instabilidade hemodinâmica após trauma abdominal contuso é indicação direta de laparotomia exploradora imediata. O objetivo é localizar e estancar a fonte do sangramento o mais rápido possível.\n\nGabarito: Alternativa (e).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/db28997806a371fc5136d70a68abc08b2f826afb6ab4c9325c6bea7c0192b1a7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_9aead432-9b62-414c-b231-2188fb863dc9_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/27b51f658d578a004c61133bec0e314f4d3a38304f1fcf8fd5afd46fd2bac4ad.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_9aead432-9b62-414c-b231-2188fb863dc9_img_1.webp"
+      },
+      {
+        "order": 2,
+        "originalUrl": "https://files.ajudamedico.com/files/27b51f658d578a004c61133bec0e314f4d3a38304f1fcf8fd5afd46fd2bac4ad.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_9aead432-9b62-414c-b231-2188fb863dc9_img_2.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:35.975Z"
+  },
+  {
+    "id": "AJUDA_9af5ff45-d57a-4593-b927-63c6a7aa125e",
+    "originalId": "9af5ff45-d57a-4593-b927-63c6a7aa125e",
+    "statement": "Lactente do sexo feminino, 8 meses de idade, foi levada ao pronto-atendimento com febre e vômitos há dois dias, sendo inicialmente liberada com orientações e sintomáticos. Retornou no dia seguinte devido à persistência da febre. No exame físico, apresentava-se em mau estado geral, gemente, com taquipneia (76 irpm), tiragens subcostais e intercostais, retração de fúrcula, batimento de asa de nariz e rebaixamento do nível de consciência. A percussão torácica revelou submacicez no terço superior do hemitórax direito. Radiografia de tórax mostrou hipotransparência difusa no hemitórax direito e presença de pneumatoceles no lobo superior direito. Tomografia computadorizada sem contraste evidenciou áreas de necrose pulmonar. Diante desse quadro, a melhor conduta antimicrobiana inicial é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amoxicilina oral, associada a cuidados domiciliares e reavaliação ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Oxacilina intravenosa associada a gentamicina, em enfermaria pediátrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ceftriaxona intravenosa, mantendo observação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vancomicina associada a cefepime, com suporte avançado de vida, internação em UTI e intubação orotraqueal, se necessário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Azitromicina oral associada a antipiréticos e vigilância clínica em casa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO quadro descreve uma lactente de 8 meses com pneumonia de evolução rápida e gravíssima. Os sinais de alerta incluem mau estado geral, gemência, taquipneia severa (76 irpm) e esforço respiratório importante (tiragens e batimento de asa de nariz). O ponto crítico é o rebaixamento do nível de consciência, que indica uma falência respiratória iminente ou choque séptico, exigindo intervenção imediata em ambiente de terapia intensiva.\n\nOs achados de imagem são fundamentais para o raciocínio clínico. A presença de pneumatoceles (cistos de parede fina repletos de ar) na radiografia e a confirmação de necrose pulmonar na tomografia são marcas registradas de pneumonias causadas por agentes agressivos, sendo o Staphylococcus aureus a principal suspeita, seguido por linhagens virulentas de Streptococcus pneumoniae.\n\nAnálise das Alternativas:\n\nAlternativa a: Incorreta. A amoxicilina oral e o manejo domiciliar são reservados para pneumonias comunitárias leves, em crianças que conseguem ingerir líquidos e não apresentam sinais de desconforto respiratório ou toxemia. O caso em questão é de extrema urgência.\n\nAlternativa b: Incorreta. A oxacilina é eficaz contra o Staphylococcus aureus sensível (MSSA), mas não cobre o Staphylococcus resistente à meticilina (MRSA), que deve ser empiricamente coberto em quadros necrotizantes graves. A gentamicina possui baixa penetração no tecido pulmonar inflamado e a enfermaria não oferece o suporte ventilatório e monitorização necessários para uma paciente com alteração de consciência.\n\nAlternativa c: Incorreta. A ceftriaxona é uma cefalosporina de terceira geração que cobre bem o pneumococo, mas falha em cobrir o Staphylococcus aureus MRSA. O termo observação hospitalar é inadequado para uma paciente com sinais de choque e insuficiência respiratória, que necessita de suporte intensivo imediato.\n\nAlternativa d: Correta. Esta alternativa atende às necessidades clínicas e microbiológicas do caso. A vancomicina oferece cobertura robusta contra o Staphylococcus aureus (incluindo MRSA) e pneumococos com alta resistência à penicilina. O cefepime (cefalosporina de quarta geração) amplia o espectro para bacilos gram-negativos. O suporte em Unidade de Terapia Intensiva (UTI) e a preparação para intubação orotraqueal são mandatórios, dado o risco de falência respiratória total e a incapacidade da paciente de proteger a via aérea pelo rebaixamento de consciência.\n\nAlternativa e: Incorreta. A azitromicina é um macrolídeo voltado para germes atípicos e não possui papel como monoterapia em pneumonias bacterianas graves. O tratamento domiciliar é contraindicado e representaria risco iminente de morte para a paciente.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:35.975Z"
+  },
+  {
+    "id": "AJUDA_9af6a955-d4fc-429b-9045-164a6a19d67e",
+    "originalId": "9af6a955-d4fc-429b-9045-164a6a19d67e",
+    "statement": "Homem de 47 anos foi submetido a hemorroidectomia aberta por doença hemorroidária grau III pela técnica de Milligan-Morgan. Evoluiu bem no pós-operatório imediato. Entretanto, cerca de 4 semanas após a cirurgia, passou a apresentar evacuações progressivamente difíceis, fezes afiladas e dor anal persistente.\n\nO mecanismo mais provavelmente responsável por esse quadro é a",
+    "options": [
+      {
+        "id": "A",
+        "text": "ressecção excessiva da mucosa e pele anorretal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "lesão inadvertida de fibras nervosas do esfíncter anal externo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "infecção tardia do leito cirúrgico, determinando estreitamento secundário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "deiscência parcial da ferida operatória, com formação de cicatriz irregular e retração subsequente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito, caracterizado por dificuldade progressiva para evacuar, fezes afiladas e dor anal cerca de 4 semanas após uma hemorroidectomia, é um caso clássico de estenose anal cicatricial. A estenose é uma das complicações tardias mais temidas da cirurgia orificial.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa A (Correta): A técnica de Milligan-Morgan é uma hemorroidectomia aberta. O princípio fundamental para evitar a estenose anal nesta técnica é a preservação de pontes de mucosa e pele entre as áreas ressecadas (pontes mucocutâneas). Essas pontes permitem a reepitelização adequada do canal anal. Quando ocorre uma ressecção excessiva de tecido, sem o devido respeito a essas pontes, o processo de cicatrização por segunda intenção resulta em fibrose circular e estreitamento do lúmen anal, explicando perfeitamente os sintomas de fezes afiladas e esforço evacuatório.\n\nAlternativa B (Incorreta): A lesão das fibras do esfíncter anal externo ou interno durante a cirurgia resultaria, primariamente, em quadros de incontinência fecal (perda de gases ou fezes) devido ao prejuízo na pressão de fechamento do canal anal, e não em obstrução ou estreitamento (estenose).\n\nAlternativa C (Incorreta): Embora infecções graves e persistentes possam, teoricamente, aumentar a resposta fibrótica, a causa principal e mais comum de estenose pós-hemorroidectomia é técnica e mecânica (falta de tecido para regeneração). Além disso, um processo infeccioso tardio manifestar-se-ia geralmente com sinais flogísticos, secreção purulenta ou formação de abscessos/fístulas, o que não foi o foco do enunciado.\n\nAlternativa D (Incorreta): O termo deiscência refere-se à abertura de uma sutura. Como a técnica de Milligan-Morgan é uma técnica aberta, as feridas já são deixadas deliberadamente abertas para cicatrizar por segunda intenção. Portanto, não se fala em deiscência nesse contexto. O problema relatado não é a irregularidade da cicatriz em si, mas sim a redução do diâmetro do canal anal pela falta de revestimento epitelial remanescente.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Proctologia",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:35.975Z"
+  },
+  {
+    "id": "AJUDA_9b088d70-e7cd-4224-8f2b-5664117031c1",
+    "originalId": "9b088d70-e7cd-4224-8f2b-5664117031c1",
+    "statement": "Uma gestante de 28 semanas, previamente hígida, apresenta dispnéia leve aos esforços. No pré-natal, o ecocardiograma materno é normal. A ausculta revela sopro sistólico ejetivo grau II/VI em foco pulmonar. Considerando as adaptações fisiológicas maternas da gestação, qual achado é esperado e fisiológico nesse período?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução do volume plasmático e aumento da viscosidade sanguínea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Queda da resistência vascular sistêmica e aumento de 40–50% do débito cardíaco",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Diminuição progressiva da frequência cardíaca materna",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução da filtração glomerular em cerca de 50%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aumento da resistência vascular sistêmica devido ao efeito da progesterona",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise da questão:\nA gestação é um estado de intensas modificações fisiológicas para acomodar o feto e preparar o corpo materno para o parto. O relato de dispneia leve aos esforços e a presença de sopro sistólico ejetivo funcional (grau II/VI) em foco pulmonar são achados frequentes e considerados fisiológicos, decorrentes do estado circulatório hiperdinâmico característico deste período.\n\nAlternativa a) Incorreta. Na gestação, ocorre um aumento expressivo do volume plasmático (cerca de 40% a 50%). Como o aumento da massa eritrocitária é proporcionalmente menor, ocorre uma hemodiluição, o que resulta na diminuição da viscosidade sanguínea, e não no seu aumento.\n\nAlternativa b) Correta. Esta é a alteração hemodinâmica clássica da gravidez. Sob ação da progesterona, óxido nítrico e prostaglandinas, ocorre uma queda acentuada da resistência vascular sistêmica (vasodilatação). Como resposta compensatória para manter a perfusão tecidual e uteroplacentária, o débito cardíaco aumenta significativamente, entre 40% e 50%, atingindo seu pico máximo ao redor da 28ª a 32ª semana.\n\nAlternativa c) Incorreta. A frequência cardíaca materna não diminui. Pelo contrário, ela aumenta progressivamente ao longo da gestação, elevando-se em média 10 a 15 batimentos por minuto acima dos níveis basais da mulher antes de engravidar.\n\nAlternativa d) Incorreta. O sistema renal também sofre o impacto do aumento do débito cardíaco. O fluxo sanguíneo renal aumenta, o que leva a um incremento da taxa de filtração glomerular em cerca de 50%. Por esse motivo, é comum observarmos níveis menores de creatinina e ureia no sangue das gestantes.\n\nAlternativa e) Incorreta. A progesterona atua como um potente relaxante da musculatura lisa vascular. Dessa forma, sua ação promove a redução da resistência vascular sistêmica, e não o seu aumento. O aumento da resistência vascular em gestantes é um sinal patológico, geralmente associado a quadros de hipertensão arterial ou pré-eclâmpsia.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Modificações Fisiológicas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:35.975Z"
+  },
+  {
+    "id": "AJUDA_9b0f37ee-a14c-4b11-a9ba-5cc92e46f57b",
+    "originalId": "9b0f37ee-a14c-4b11-a9ba-5cc92e46f57b",
+    "statement": "Um recém-nascido com gemência e dificuldade respiratória é diagnosticado com síndrome do desconforto respiratório neonatal. Qual é o tratamento inicial mais indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de surfactante exógeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso de antibióticos profiláticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ventilação não invasiva apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Nutrição parenteral imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Síndrome do Desconforto Respiratório Neonatal (SDRN), ou Doença da Membrana Hialina, é causada pela deficiência de surfactante pulmonar, resultando em colapso alveolar e insuficiência respiratória. Atualmente, as principais diretrizes nacionais e internacionais (como o Consenso Europeu de Neonatologia) priorizam a estabilização respiratória com a menor agressividade possível.\n\nAlternativa a) Incorreta. Embora o surfactante exógeno seja o tratamento específico para a SDRN, ele não é mais indicado como a primeira medida isolada para todos os casos. A tendência atual é a estratégia de resgate: inicia-se o suporte de pressão e, caso o recém-nascido apresente falha (necessidade de oxigênio inspirado acima de 30% ou sinais persistentes de desconforto), administra-se o surfactante.\n\nAlternativa b) Incorreta. O uso de antibióticos é uma prática comum no manejo desses pacientes porque a SDRN pode ser clinicamente indistinguível de uma sepse neonatal ou pneumonia precoce. Entretanto, os antibióticos tratam uma possível infecção associada e não a fisiopatologia da síndrome do desconforto respiratório em si.\n\nAlternativa c) Correta. O tratamento inicial mais indicado é o suporte respiratório não invasivo, preferencialmente por meio do CPAP (Pressão Positiva Contínua nas Vias Aéreas). O uso precoce do CPAP, muitas vezes iniciado ainda na sala de parto, ajuda a recrutar os alvéolos, mantém a capacidade residual funcional e previne o colapso pulmonar, reduzindo significativamente a necessidade de intubação orotraqueal e ventilação mecânica invasiva.\n\nAlternativa d) Incorreta. A nutrição parenteral precoce é essencial no cuidado global do recém-nascido pré-termo para garantir o aporte metabólico e o crescimento, mas não é uma medida de tratamento para o quadro de desconforto respiratório agudo no momento do diagnóstico.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:35.975Z"
+  },
+  {
+    "id": "AJUDA_9b1133e2-2c48-4f15-a166-9c5cbcd8e586",
+    "originalId": "9b1133e2-2c48-4f15-a166-9c5cbcd8e586",
+    "statement": "Com relação às anomalias congênitas branquiais, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "As fístulas completas do primeiro arco branquial vão desde a tonsila palatina, na cavidade oral, até o terço inferior da borda anterior do músculo esternocleidomastoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As mais frequentes são as derivadas do terceiro arco branquial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Incluem doenças como linfangioma cervical e torcicolo congênito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento cirúrgico do cisto do ducto tireoglosso inclui a ressecção da porção medial do osso hioide para diminuir a chance de recidiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Os sínus pré-auriculares, também chamados de coloboma auris, são derivados do segundo arco branquial e devem ser sempre ressecados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise Detalhada da Questão: Anomalias Congênitas Cervicais\n\nAs anomalias branquiais resultam de falhas no desenvolvimento ou na involução dos arcos, fendas e bolsas faríngeas durante a embriogênese. Abaixo, analisamos cada alternativa:\n\nAlternativa A (Incorreta): A descrição apresentada refere-se às fístulas do SEGUNDO arco branquial, que são as mais comuns. As fístulas do segundo arco estendem-se da fossa tonsilar (tonsila palatina), passam entre as artérias carótidas interna e externa e desembocam na borda anterior do músculo esternocleidomastoide (geralmente na transição do terço médio com o inferior). As fístulas do primeiro arco têm relação direta com o conduto auditivo externo e a glândula parótida.\n\nAlternativa B (Incorreta): As anomalias mais frequentes são as derivadas do SEGUNDO arco branquial (cerca de 90 a 95% dos casos). As derivadas do terceiro e quarto arcos são raras e geralmente se manifestam no lado esquerdo do pescoço, muitas vezes associadas a quadros de tireoidite supurativa aguda.\n\nAlternativa C (Incorreta): Linfangiomas (malformações linfáticas) e torcicolo congênito (fibrose do músculo esternocleidomastoide) não são anomalias branquiais. Embora sejam diagnósticos diferenciais de massas cervicais na infância, possuem origens embriológicas e fisiopatológicas completamente distintas do aparelho branquial.\n\nAlternativa D (Correta): Embora o cisto do ducto tireoglosso seja uma anomalia da migração da glândula tireoide (e não uma anomalia branquial propriamente dita, apesar de frequentemente estudadas em conjunto), a alternativa descreve corretamente a Cirurgia de Sistrunk. Este procedimento é o padrão-ouro para o tratamento do cisto tireoglosso e exige a ressecção do corpo (porção central) do osso hioide junto com o trajeto ductal até a base da língua (forame cego). Essa técnica reduziu a taxa de recidiva de cerca de 50% para menos de 3-5%.\n\nAlternativa E (Incorreta): Os sínus pré-auriculares (coloboma auris) originam-se da fusão incompleta dos tubérculos de His, que derivam do PRIMEIRO e SEGUNDO arcos branquiais. A segunda parte da alternativa está incorreta porque o tratamento cirúrgico não deve ser \"sempre\" realizado; a ressecção é indicada apenas em casos de infecções recorrentes, abscessos ou drenagem crônica de secreção purulenta/fétida. Pacientes assintomáticos não necessitam de cirurgia.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Tireoide",
+      "Neoplasias Benignas e Malignas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:35.975Z"
+  },
+  {
+    "id": "AJUDA_9b186463-58f4-48ff-b201-6bca96e6256a",
+    "originalId": "9b186463-58f4-48ff-b201-6bca96e6256a",
+    "statement": "Segundo o Manual de Recomendações e Controle da Tuberculose no Brasil 2ª ed., atualizado em 29/05/2024, a transmissão e adoecimento por TB são influenciados por fatores demográficos, sociais e econômicos. Dentre os fatores que contribuem para a manutenção e propagação da doença, destacam-se: urbanização crescente e desordenada, desigualdade na distribuição de renda, moradias precárias e superlotação, insegurança alimentar e baixa escolaridade, bem como dificuldade de acesso aos serviços e bens públicos. Dessa maneira, no Brasil, assim como em outros países que têm condições de vida semelhantes, alguns grupos populacionais apresentam maior vulnerabilidade para a TB.\nPelo exposto acima, em comparação com a população em geral, o risco de adoecimento por tuberculose é maior no seguinte grupo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "indígenas;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "profissionais de saúde;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pessoas vivendo com o HIV;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pessoas privadas de liberdade;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "pessoas vivendo em situação de rua.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O Manual de Recomendações para o Controle da Tuberculose (TB) no Brasil, atualizado em 2024, reafirma que a doença está intrinsecamente ligada aos determinantes sociais da saúde. Para fins de prova e prática clínica, o Ministério da Saúde estabelece o risco relativo de adoecimento de grupos vulneráveis em comparação ao da população geral.\n\nAlternativa (a) Incorreta: A população indígena é considerada um grupo prioritário devido às condições de vida e às barreiras geográficas de acesso ao sistema de saúde. No entanto, o risco de adoecimento por TB nesse grupo é cerca de 3 vezes maior do que o da população geral, sendo o menor risco entre as opções apresentadas.\n\nAlternativa (b) Incorreta: Profissionais de saúde possuem um risco aumentado devido à exposição ocupacional em ambientes de cuidado. Embora formem um grupo sob vigilância, o risco epidemiológico relativo não atinge as proporções observadas nos grupos de extrema vulnerabilidade social e biológica listados nas demais alternativas.\n\nAlternativa (c) Incorreta: Pessoas vivendo com HIV/aids (PVHA) compõem um grupo de altíssima vulnerabilidade biológica. O risco de adoecimento por TB nesse grupo é estimado entre 21 e 28 vezes maior do que o da população geral. Apesar de ser um valor elevado, ainda é estatisticamente inferior ao das pessoas em situação de rua.\n\nAlternativa (d) Incorreta: As pessoas privadas de liberdade enfrentam condições de confinamento, superpopulação e ventilação precária, o que eleva o risco de adoecimento para um patamar cerca de 21 a 26 vezes maior do que o da população geral. Esse dado as coloca em patamar semelhante ao das pessoas vivendo com HIV, mas abaixo do grupo da alternativa (e).\n\nAlternativa (e) Correta: De acordo com os dados epidemiológicos consolidados pelo Ministério da Saúde e citados no Manual de 2024, as pessoas em situação de rua apresentam o maior risco de adoecimento por tuberculose no Brasil, sendo este aproximadamente 56 vezes maior do que o da população geral. Essa vulnerabilidade extrema é explicada pela soma de múltiplos fatores: desnutrição, exposição a intempéries, dificuldades de acesso e de adesão ao tratamento, além da alta prevalência de comorbidades e do uso de substâncias.\n\nEm resumo, a hierarquia de risco relativo aproximado em relação à população geral é:\n1. Pessoas em situação de rua: 56 vezes maior.\n2. Pessoas vivendo com HIV: 21 a 28 vezes maior.\n3. Pessoas privadas de liberdade: 21 a 26 vezes maior.\n4. População indígena: 3 vezes maior.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:35.975Z"
+  },
+  {
+    "id": "AJUDA_9b221d9f-454d-4e85-8636-26f77496065e",
+    "originalId": "9b221d9f-454d-4e85-8636-26f77496065e",
+    "statement": "Durante um surto de gastroenterite em um casamento, calculou-se a taxa de ataque da doença entre os que consumiram maionese (80%) e entre os que não consumiram (10%). A medida de associação adequada para estimar a força dessa relação é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Risco relativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Odds ratio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Valor preditivo positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão apresenta um cenário clássico de investigação de surto (gastroenterite após um evento). Para resolver esse tipo de problema, é fundamental identificar que os dados fornecidos (80% e 10%) representam a taxa de ataque, que é uma medida de incidência em uma população bem definida durante um curto período de tempo.\n\nAlternativa a: Incorreta. A prevalência é uma medida de frequência que descreve a proporção de indivíduos doentes em uma população em um ponto específico do tempo. Ela não é utilizada para medir a força de associação entre uma exposição (consumo de maionese) e um desfecho (doença) em estudos de causalidade ou surtos.\n\nAlternativa b: Correta. O Risco Relativo (RR) é a medida de associação de escolha quando trabalhamos com incidência, o que ocorre em estudos de coorte e em investigações de surtos nos quais se conhece o total de expostos e não expostos. O RR é calculado pela razão entre a incidência nos expostos (taxa de ataque de 80%) e a incidência nos não expostos (taxa de ataque de 10%). No exemplo, o RR seria 8 (80/10), indicando que quem consumiu maionese teve um risco 8 vezes maior de adoecer.\n\nAlternativa c: Incorreta. O Odds Ratio (Razão de Chances) é a medida de associação padrão para estudos de caso-controle, nos quais não é possível calcular a incidência diretamente. Embora o Odds Ratio possa estimar o Risco Relativo em doenças raras, em um surto no qual as taxas de ataque são conhecidas, o Risco Relativo é a medida direta e preferencial.\n\nAlternativa d: Incorreta. O Valor Preditivo Positivo (VPP) é uma medida de desempenho de testes diagnósticos. Ele indica a probabilidade de um paciente realmente ter a doença quando o resultado do teste é positivo. Não possui relação com a estimativa de risco ou força de associação em estudos epidemiológicos de exposição ambiental ou alimentar.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:35.975Z"
+  },
+  {
+    "id": "AJUDA_9b28ef5f-7982-4884-b13a-73bf9cedbecf",
+    "originalId": "9b28ef5f-7982-4884-b13a-73bf9cedbecf",
+    "statement": "Mulher de 64 anos, obesa, multípara, apresenta dor em região inguinal esquerda há 24 horas, associada a náuseas e parada de eliminação de gases. Refere que o abaulamento apareceu subitamente e não consegue reduzi-lo. Ao exame físico, há massa dolorosa em região inferior ao ligamento inguinal, arredondada, de consistência firme, sem expansibilidade à tosse.\n\nNesse caso, o diagnóstico mais provável é o seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia inguinal indireta estrangulada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hérnia femoral estrangulada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hérnia inguinal direta encarcerada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Linfonodo inguinal inflamado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hérnia umbilical encarcerada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, devemos focar na localização anatômica da massa e no quadro clínico da paciente. A paciente apresenta sinais de obstrução intestinal (náuseas e parada de eliminação de gases) e uma massa irredutível e dolorosa na região da virilha. O ponto-chave para o diagnóstico é a relação da massa com o ligamento inguinal.\n\nExplicação das alternativas:\n\nAlternativa a: Incorreta. As hérnias inguinais (sejam diretas ou indiretas) se localizam superiormente ao ligamento inguinal. Embora a hérnia inguinal indireta seja o tipo mais comum em ambos os sexos, a localização anatômica descrita no enunciado (inferior ao ligamento) descarta essa opção.\n\nAlternativa b: Correta. A hérnia femoral (ou crural) ocorre através do canal femoral, que se localiza logo abaixo (inferiormente) ao ligamento inguinal e medialmente aos vasos femorais. É uma condição muito mais frequente em mulheres idosas, multíparas e obesas, exatamente o perfil da paciente descrita. Pelo fato de o canal femoral ser estreito e possuir bordas rígidas, essas hérnias apresentam um alto risco de encarceramento e estrangulamento. Isso justifica a dor súbita, a irredutibilidade, a ausência de expansibilidade à tosse e os sinais de obstrução intestinal (vômitos e parada de eliminação de gases).\n\nAlternativa c: Incorreta. Assim como a indireta, a hérnia inguinal direta se posiciona acima do ligamento inguinal. Ela decorre de uma fraqueza na parede posterior do canal inguinal (fáscia transversalis) e tem um risco de estrangulamento significativamente menor do que a hérnia femoral.\n\nAlternativa d: Incorreta. Um linfonodo inflamado (linfadenite) pode causar dor e massa palpável na região inguinal, mas não explicaria os sintomas sistêmicos de obstrução intestinal, como a parada de eliminação de gases e náuseas.\n\nAlternativa e: Incorreta. A localização descrita é a região inguinal esquerda, abaixo do ligamento. Uma hérnia umbilical estaria localizada na cicatriz umbilical, na linha média do abdome, e não na região da virilha.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:22:35.975Z"
+  }
+]

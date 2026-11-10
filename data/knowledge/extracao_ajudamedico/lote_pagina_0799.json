@@ -1,0 +1,516 @@
+[
+  {
+    "id": "AJUDA_de654e79-3af3-4635-a0d8-333a062066bf",
+    "originalId": "de654e79-3af3-4635-a0d8-333a062066bf",
+    "statement": "Mulher de 45 anos vai ao Pronto Socorro queixando-se de dor há 12h no andar superior do abdome, intensa, associada a náuseas e vômitos, piora após a alimentação. Desconhece comorbidades e nega uso de medicamentos ou drogas. Ao exame físico, PA 130/92mmHg, FC 128bpm, FR 22ipm, SpO2 98% (ar ambiente). A palpação do andar superior do abdome é dolorosa, e não há sinais de irritação peritoneal. EXAMES DE LABORATÓRIO: hemoglobina 16,7g/dL; leucócitos 13.450/mm³; neutrófilos 9.880/mm³; plaquetas 156.000/mm³; proteína C reativa 56mg/L; creatinina 1,5mg/dL; ureia 89mg/dL; amilase 590U/L; lipase 1340U/L. Assinale a alternativa que apresenta uma prescrição inicial INADEQUADA nesse caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dieta oral suspensa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Meropenem IV",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Morfina IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ressuscitação volêmica com solução cristaloide",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO: O quadro clínico da paciente, caracterizado por dor intensa no andar superior do abdome, náuseas e vômitos, associado a exames laboratoriais com amilase e lipase acima de três vezes o valor de referência (amilase 590 U/L e lipase 1340 U/L), confirma o diagnóstico de Pancreatite Aguda. Além disso, os exames mostram sinais de gravidade e desidratação, como hemoconcentração (hemoglobina 16,7 g/dL), taquicardia (128 bpm) e disfunção renal pré-renal (ureia e creatinina elevadas).\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (Dieta oral suspensa): Esta conduta é CORRETA e adequada para o manejo inicial. Na fase aguda da pancreatite, especialmente em pacientes com dor intensa e vômitos, a suspensão da via oral ajuda no controle sintomático e na estabilização do quadro. Embora a nutrição deva ser iniciada precocemente assim que tolerada, o jejum na admissão é uma prática padrão.\n\nAlternativa B (Meropenem IV): Esta conduta é INADEQUADA (Gabarito). O uso de antibióticos na pancreatite aguda não deve ser feito de forma profilática, independentemente da gravidade do quadro. O uso de antibióticos de amplo espectro, como o meropenem, está indicado apenas quando há suspeita ou confirmação de infecção (como necrose pancreática infectada, que geralmente ocorre após 7 a 14 dias de evolução, ou focos infecciosos extrapancreáticos, como pneumonia e infecção urinária). O uso precoce e indiscriminado aumenta o risco de infecções fúngicas e resistência bacteriana.\n\nAlternativa C (Morfina IV): Esta conduta é CORRETA. O controle da dor é um dos pilares fundamentais no tratamento da pancreatite aguda. Analgésicos potentes, incluindo opioides como a morfina ou o fentanil, são recomendados para garantir o conforto da paciente. O antigo conceito de que a morfina seria contraindicada por causar espasmo no esfíncter de Oddi foi refutado pela literatura médica atual, não havendo evidência de prejuízo clínico.\n\nAlternativa D (Ressuscitação volêmica com solução cristaloide): Esta conduta é CORRETA e é a medida terapêutica mais importante na fase inicial. A paciente apresenta sinais claros de depleção de volume (taquicardia, ureia e creatinina elevadas, hematócrito alto). A infusão de soluções cristaloides (como Ringer Lactato ou Soro Fisiológico) é essencial para restaurar a perfusão tecidual e tentar prevenir a progressão para necrose pancreática ou falência múltipla de órgãos.\n\nPortanto, a única prescrição inadequada para o caso inicial é a antibioticoterapia profilática com Meropenem.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:45.762Z"
+  },
+  {
+    "id": "AJUDA_de69f6ec-3b75-4efa-98fe-2d680b1a411c",
+    "originalId": "de69f6ec-3b75-4efa-98fe-2d680b1a411c",
+    "statement": "Segundo a Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública, os casos de \"Doença aguda pelo vírus Zika em gestante\" são de notificação imediata junto ao Sistema de Informação de Agravos de Notificação (Sinan). Isso significa que devem ser obrigatoriamente notificados",
+    "options": [
+      {
+        "id": "A",
+        "text": "no ato do diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "no mesmo dia do diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "em até 12 horas após o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "em até 24 horas após o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "em até 48 horas após o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda os prazos estabelecidos pela Lista Nacional de Notificação Compulsória do Ministério da Saúde. No Brasil, o Sistema de Informação de Agravos de Notificação (Sinan) opera com dois fluxos principais de tempo: a notificação semanal (realizada em até 7 dias) e a notificação imediata (realizada em até 24 horas).\n\nA definição técnica de Notificação Imediata é aquela realizada em até 24 horas a partir do conhecimento da ocorrência de doença, agravo ou evento de saúde pública, pelo meio de comunicação mais rápido disponível. No caso específico do vírus Zika, a notificação é semanal para a população geral, mas torna-se imediata (24 horas) quando o caso ocorre em gestantes, em situações de óbito ou quando há suspeita de síndrome congênita.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Embora o ideal seja que a notificação ocorra o mais rápido possível, a legislação define um prazo máximo de 24 horas para as notificações classificadas como imediatas, e não a obrigatoriedade estrita de ser no exato ato do diagnóstico.\n\nAlternativa B: Incorreta. O termo \"no mesmo dia do diagnóstico\" é impreciso para fins regulatórios. Se um médico diagnostica um caso às 23h, ele tem até as 23h do dia seguinte para realizar a notificação imediata, o que ultrapassaria o mesmo dia civil, mas estaria dentro do prazo de 24 horas.\n\nAlternativa C: Incorreta. O prazo de 12 horas não é um padrão utilizado na lista de notificação compulsória do Ministério da Saúde para definir a urgência das notificações.\n\nAlternativa D: Correta. Esta alternativa reflete a definição oficial do Ministério da Saúde para Notificação Imediata. Todo agravo que exige resposta rápida da vigilância epidemiológica, como a infecção por Zika em gestantes (devido ao risco de microcefalia e outras alterações neurológicas no feto), deve ser comunicado às autoridades de saúde em até 24 horas após o diagnóstico ou suspeita.\n\nAlternativa E: Incorreta. O prazo de 48 horas não corresponde a nenhuma das categorias-padrão de notificação (imediata ou semanal) previstas na Portaria de Consolidação nº 4/2017 e suas atualizações (como a Portaria GM/MS nº 217/2023).\n\nGabarito: Alternativa (d).",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:45.762Z"
+  },
+  {
+    "id": "AJUDA_de6c1245-c93a-44c8-9009-378a1c15e698",
+    "originalId": "de6c1245-c93a-44c8-9009-378a1c15e698",
+    "statement": "Parturiente em expulsivo optou por parir em posição de quatro apoios. Após a liberação do polo cefálico, observou-se retração da cabeça contra o períneo (sinal da tartaruga) e falha da restituição da cabeça.\nApós chamar por ajuda, a primeira conduta a ser tomada, nesse caso, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "aplicar pressão fúndica simultânea à tração cefálica para liberar o ombro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar a manobra de McRoberts.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "manter a paciente em quatro apoios e realizar pressão suprapúbica dirigida ao ombro anterior.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "realizar episiotomia ampla e proceder diretamente à extração do braço posterior como primeira medida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "executar manobra de Zavanelli (reposição cefálica) seguida de cesariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a conduta imediata diante de uma distocia de ombros em uma paciente que já se encontra na posição de quatro apoios (também conhecida como manobra de Gaskin). O sinal da tartaruga (retração da cabeça fetal contra o períneo) é o sinal patognomônico dessa emergência obstétrica, indicando que o ombro anterior está impactado na sínfise púbica ou o posterior no promontório sacral.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A aplicação de pressão fúndica (manobra de Kristeller) é absolutamente contraindicada na distocia de ombros. Essa manobra aumenta o risco de impactação ainda maior do ombro, rotura uterina e lesão do plexo braquial fetal. A tração cefálica excessiva também deve ser evitada pelo risco de lesão nervosa.\n\nAlternativa (b) Incorreta. A manobra de McRoberts consiste na hiperflexão e abdução das coxas da paciente em direção ao abdome. É a manobra inicial de escolha quando a paciente está em posição de litotomia (deitada de costas). Como a paciente já está em quatro apoios, não faz sentido mudá-la de posição para realizar a manobra de McRoberts, pois a posição de quatro apoios (Gaskin) já é, por si só, uma manobra terapêutica que aumenta os diâmetros pélvicos.\n\nAlternativa (c) Correta. A manobra de Gaskin (quatro apoios) é uma técnica eficaz para a resolução da distocia de ombros, pois utiliza a gravidade e aumenta o diâmetro sagital da saída pélvica. Se a paciente já optou por parir nessa posição e a distocia ocorreu, a sequência lógica é manter a posição e associar a pressão suprapúbica. A pressão suprapúbica (manobra de Rubin I) tem o objetivo de aduzir o ombro fetal, reduzindo seu diâmetro biacromial e deslocando-o de trás da sínfise púbica.\n\nAlternativa (d) Incorreta. A episiotomia não resolve a distocia de ombros, pois o problema é uma obstrução óssea, não de tecidos moles. Ela pode ser realizada apenas para facilitar o acesso das mãos do obstetra para manobras internas. A extração do braço posterior é uma manobra interna avançada e não deve ser a primeira medida antes de tentar manobras externas mais simples e menos invasivas.\n\nAlternativa (e) Incorreta. A manobra de Zavanelli consiste em reposicionar a cabeça fetal para dentro do canal de parto e proceder à realização de uma cesariana de emergência. É considerada uma manobra de último recurso, utilizada apenas quando todas as outras tentativas de resolução por via vaginal falharam, devido à sua alta taxa de morbimortalidade materna e fetal.\n\nEm resumo, a conduta correta na distocia de ombros segue algoritmos como o HELPERR. Quando a paciente já está em quatro apoios, utiliza-se o benefício dessa posição somado à pressão suprapúbica para tentar liberar o ombro impactado de forma rápida e segura.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Partograma e Distocias",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:45.762Z"
+  },
+  {
+    "id": "AJUDA_de6c526f-64a5-434e-8093-588466739608",
+    "originalId": "de6c526f-64a5-434e-8093-588466739608",
+    "statement": "De acordo com os preceitos da 10ª edição do Advanced Trauma Life Support (ATLS®), a necessidade de reposição volêmica inicial no choque classificado como IV é de",
+    "options": [
+      {
+        "id": "A",
+        "text": "2000 mL de solução cristaloide + 2000 mL de hemocomponentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3000 mL de sangue total + 500 mL de solução hipertônica 7,5%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1000 mL de solução cristaloide e observação dos sinais vitais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1000 mL de Ringer Lactato e protocolo de transfusão maciça.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "reposição maciça com 4000 mL de solução cristaloide e vasoconstritores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo inicial do choque hipovolêmico no trauma, especificamente o choque Classe IV, seguindo as diretrizes da 10ª edição do ATLS (Advanced Trauma Life Support).\n\nO choque Classe IV representa uma perda volêmica superior a 40 por cento do volume sanguíneo total. É um estado crítico com hipotensão acentuada, taquicardia severa, alteração do nível de consciência (letargia ou coma) e débito urinário quase nulo.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A 10ª edição do ATLS reduziu o volume inicial de cristaloides para 1000 mL (1 litro) em adultos, visando evitar a coagulopatia dilucional e a hipotermia. O valor de 2000 mL era preconizado em edições anteriores (como a 8ª e a 9ª).\n\nAlternativa b) Incorreta. O uso de solução hipertônica a 7,5 por cento não é a conduta de primeira linha estabelecida pelo protocolo padrão do ATLS para a reposição inicial no choque hemorrágico. Além disso, a quantidade de sangue total citada não segue a padronização inicial.\n\nAlternativa c) Incorreta. Embora o volume de 1000 mL de cristaloide esteja correto como bolus inicial, no choque Classe IV a simples observação é insuficiente e perigosa. O paciente nesta classe de choque necessita obrigatoriamente de hemoderivados de forma imediata, e não apenas cristaloide.\n\nAlternativa d) Correta. De acordo com o ATLS 10ª edição, o manejo inicial do choque hemorrágico grave (Classes III e IV) envolve a administração de um bolus de 1000 mL de solução cristaloide isotônica aquecida (preferencialmente Ringer Lactato) e a ativação precoce do protocolo de transfusão maciça, visando repor sangue e componentes (plasma e plaquetas) na proporção 1:1:1.\n\nAlternativa e) Incorreta. A reposição maciça com 4000 mL de cristaloide é contraindicada, pois contribui para a tríade da morte (acidose, coagulopatia e hipotermia). O uso de vasoconstritores (vasopressores) não é o tratamento inicial do choque hipovolêmico; a prioridade absoluta é a reposição de volume com sangue e o controle da fonte de sangramento.\n\nRESUMO: No choque Classe IV (perda superior a 40 por cento), a conduta atual é infundir 1000 mL de Ringer Lactato e iniciar imediatamente o protocolo de transfusão maciça.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:45.762Z"
+  },
+  {
+    "id": "AJUDA_de81db99-b53f-47cc-98dd-1dba49735305",
+    "originalId": "de81db99-b53f-47cc-98dd-1dba49735305",
+    "statement": "Paciente de 82 anos, sexo feminino, professora aposentada, hipertensa e diabética há 15 anos em uso de enalapril 10 mg 2 vezes ao dia e metformina 500 mg 2 vezes ao dia e lombalgia crônica, com uso cerca de uma a duas vezes por semana de diclofenaco 50 mg para controle de dor. Paciente com seguimento irregular, sem acompanhamento há cerca de dois anos vem à consulta referindo fadiga, dispneia aos moderados esforços e perda de peso, de cerca de 5 kg em 12 meses. Refere episódios intermitentes de diarreia há 2 anos. Ao exame físico, paciente em bom estado geral, mas com palidez cutaneomucosa 2+/4+, hidratada, anictérica, eupneica, queilite angular, PA 130/80 mmHg, ausência de hepato ou esplenomegalia. Restante do exame físico sem alterações. Exames laboratoriais: hemoglobina 9,0 g/dL; hematócrito 25%; VCM 75 fL; HCM 25 pg; RDW 16%; leucócitos 4.500/mL; plaquetas 400.000/mL; ureia 73 mg/dL; creatinina 1.38 mg/dL. Com base no caso clínico, qual a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia de doença crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Talassemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anemia sideroblástica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anemia ferropriva.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA paciente apresenta um quadro de anemia caracterizado laboratorialmente por microcitose (VCM 75 fL, abaixo do valor de referência de 80-100 fL) e hipocromia (HCM 25 pg, abaixo do valor de referência de 27-32 pg). Um dado fundamental é o RDW de 16%, que está elevado (anisocitose), indicando uma variação no tamanho das hemácias. Clinicamente, a presença de queilite angular é um sinal clássico de deficiência de ferro ou de vitaminas do complexo B. O uso crônico de diclofenaco (anti-inflamatório) em uma paciente idosa levanta a forte suspeita de perda sanguínea crônica pelo trato gastrointestinal, a qual é a principal causa de deficiência de ferro nessa faixa etária.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA anemia ferropriva é a principal causa de anemia microcítica e hipocrômica no mundo. O aumento do RDW é uma característica marcante da ferropenia, pois, conforme os estoques de ferro diminuem, a medula passa a produzir hemácias cada vez menores, gerando uma população heterogênea no sangue periférico. O histórico de uso de AINEs (diclofenaco), a perda de peso e a queilite angular reforçam o diagnóstico de deficiência de ferro por provável sangramento digestivo ou má absorção.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Anemia de doença crônica: Embora a paciente tenha doenças crônicas (DM e HAS), essa anemia é tipicamente normocítica e normocrômica. Pode tornar-se microcítica em fases muito avançadas, mas o RDW costuma ser normal, refletindo uma produção homogênea de hemácias, diferentemente do caso apresentado.\n\nb) Talassemia: É uma alteração genética da hemoglobina que cursa com microcitose importante desde a infância. No entanto, uma característica marcante da talassemia é o RDW normal (ou muito próximo do normal), pois todas as hemácias produzidas são uniformemente pequenas. Não justifica o surgimento recente de perda de peso e queilite aos 82 anos.\n\nc) Anemia sideroblástica: É um grupo heterogêneo de distúrbios nos quais há utilização inadequada do ferro intracelular para a síntese do grupo heme. Embora possa ser microcítica, é muito mais rara e geralmente cursa com aumento dos estoques de ferro (ferritina elevada) e, em alguns casos, com a presença de uma população dimórfica de hemácias, mas não se correlaciona com o quadro de uso de anti-inflamatórios e sinais carenciais periféricos.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:45.762Z"
+  },
+  {
+    "id": "AJUDA_de8726ff-09d4-4153-919e-1e05ee144eb6",
+    "originalId": "de8726ff-09d4-4153-919e-1e05ee144eb6",
+    "statement": "Mulher, 36 anos, com IMC 37 kg/m², sem comorbidades, procura avaliação para cirurgia bariátrica. Segundo os critérios atuais, de acordo com a Resolução CFM nº 2.429/2025, assinale a alternativa correta sobre a indicação de cirurgia bariátrica no caso apresentado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Está indicada para a paciente, por ela ter IMC >35 kg/m², mesmo com ausência de comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A cirurgia é indicada somente em IMC ≥45 kg/m², independentemente de comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É necessária a presença de uma comorbidade agravada pela obesidade para indicar a cirurgia no caso dessa paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A faixa etária acima de 18 anos é critério absoluto, sendo a cirurgia contraindicada aos menores de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O tratamento clínico prévio não é necessário para indicação da cirurgia em pacientes com IMC ≥35kg/m².",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda os critérios de indicação para a cirurgia bariátrica no Brasil, que são regidos pelas resoluções do Conselho Federal de Medicina (CFM). Para responder corretamente, é necessário conhecer os pontos de corte de IMC e as condições associadas.\n\nAnálise da paciente: Mulher de 36 anos com IMC de 37 kg/m² e sem comorbidades relatadas.\n\nAlternativa (a) Incorreta: Para pacientes com IMC entre 35 e 39,9 kg/m² (Obesidade Grau II), a indicação cirúrgica não é automática. Segundo as normas do CFM, nessa faixa de peso, a cirurgia só é indicada se houver a presença de pelo menos uma comorbidade relacionada à obesidade que seja agravada pelo excesso de peso. A indicação baseada apenas no IMC, independentemente de doenças associadas, é reservada para pacientes com IMC maior ou igual a 40 kg/m² (Obesidade Grau III).\n\nAlternativa (b) Incorreta: O valor de IMC de 45 kg/m² não é o limite estabelecido para indicação independente. O critério atual define que pacientes com IMC a partir de 40 kg/m² já possuem indicação formal para o procedimento, mesmo que não apresentem outras doenças, devido ao alto risco cardiovascular e metabólico que esse grau de obesidade impõe.\n\nAlternativa (c) Correta: Esta é a alternativa que reflete exatamente a norma técnica. Como a paciente possui IMC de 37 kg/m², ela se enquadra na categoria de Obesidade Grau II. Para que a cirurgia seja autorizada e indicada com segurança, é indispensável que ela apresente alguma comorbidade que tenha o tratamento otimizado pela perda ponderal, como hipertensão arterial, diabetes mellitus tipo 2, apneia do sono, dislipidemia, doenças ortopédicas graves ou esteatose hepática, entre outras listadas pelo CFM.\n\nAlternativa (d) Incorreta: A idade acima de 18 anos não é um critério absoluto e impeditivo. A Resolução do CFM permite a realização da cirurgia em jovens entre 16 e 18 anos, desde que haja uma avaliação criteriosa de uma equipe multidisciplinar e que os riscos e benefícios sejam discutidos com os responsáveis. Em casos ainda mais excepcionais, crianças e adolescentes abaixo de 16 anos podem ser operados após autorização especial e avaliação de juntas médicas.\n\nAlternativa (e) Incorreta: O tratamento clínico prévio é um requisito fundamental para a indicação da cirurgia bariátrica. O paciente deve demonstrar que tentou o tratamento conservador (que inclui dieta, atividade física e acompanhamento médico e psicológico) por um período mínimo (geralmente dois anos), sem sucesso na manutenção da perda de peso ou no controle das comorbidades, antes de ser submetido a um procedimento invasivo e definitivo.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Cirurgia Bariátrica e Metabólica",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:45.762Z"
+  },
+  {
+    "id": "AJUDA_de8d0fd1-d484-41df-880c-8e513573d34c",
+    "originalId": "de8d0fd1-d484-41df-880c-8e513573d34c",
+    "statement": "A complicação tardia mais comum após redução aberta e fixação interna de fraturas do rádio distal é",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infeção superficial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome do túnel do carpo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não união.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Instabilidade ulnar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Rigidez articular.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "As fraturas do rádio distal representam uma das lesões mais comuns na prática ortopédica. O objetivo da redução aberta e fixação interna (RAFI) é restabelecer a superfície articular e permitir a mobilização precoce. No entanto, mesmo com uma técnica cirúrgica adequada, complicações podem surgir no período tardio.\n\nAlternativa (a) Incorreta. A infecção superficial é classificada como uma complicação precoce, ocorrendo geralmente nos primeiros dias ou semanas após a cirurgia. Com o uso de técnicas assépticas e antibioticoprofilaxia, sua incidência é baixa e raramente se manifesta como um problema tardio principal.\n\nAlternativa (b) Incorreta. A síndrome do túnel do carpo (compressão do nervo mediano) é uma complicação conhecida e pode ocorrer de forma aguda pelo trauma/edema ou tardia por mau posicionamento dos fragmentos ou irritação pelo material de síntese. Apesar de importante, sua incidência estatística é menor do que a perda de mobilidade articular.\n\nAlternativa (c) Incorreta. A não união (pseudoartrose) do rádio distal é extremamente rara. A região metafisária do rádio é altamente vascularizada e possui uma grande área de osso esponjoso, o que facilita muito o processo de consolidação óssea, tornando a falha de união uma exceção.\n\nAlternativa (d) Incorreta. A instabilidade ulnar ou da articulação radioulnar distal (ARUD) pode ocorrer em casos de lesões ligamentares associadas (como no complexo da fibrocartilagem triangular) ou fraturas da estiloide da ulna. Embora traga prejuízo funcional, não é a complicação mais frequente no acompanhamento de longo prazo.\n\nAlternativa (e) Correta. A rigidez articular é considerada a complicação tardia mais comum. Ela decorre da fibrose tecidual, aderências tendíneas e capsulares resultantes do próprio trauma inicial e da manipulação cirúrgica. Muitos pacientes apresentam alguma limitação permanente na amplitude de movimento, especialmente na flexão ou na supinação, sendo este o desfecho negativo mais reportado na literatura especializada e no acompanhamento clínico pós-operatório.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Fraturas e Luxações",
+      "Complicações do Trauma Ortopédico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:45.762Z"
+  },
+  {
+    "id": "AJUDA_de8f326e-3fa3-4e5b-83c7-9e8424afbe36",
+    "originalId": "de8f326e-3fa3-4e5b-83c7-9e8424afbe36",
+    "statement": "Criança de 3 anos, masculino, apresentou febre de 38,5°C há 1 dia, tosse seca (inicialmente), coriza, conjuntivite não purulenta, com pequenos pontos brancos na boca na altura do último molar, com exantema que surgiu atrás das orelhas, no rosto e se espalhou pelo corpo. Foi à UPA, onde foi feita a suspeita de sarampo. Frequentou a Creche Municipal até o dia anterior ao início dos sintomas. Esta Creche atende crianças de 3 meses a 6 anos de idade e fica em um bairro com grande densidade populacional. A mãe refere que tem outra filha de 7 anos, que está em tratamento de leucemia linfoide aguda. Qual é a ação de vacinação, de acordo com a recomendação do Ministério da Saúde, no domicílio desta criança e na creche para interromper a circulação do vírus e controlar da transmissão do sarampo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve ser realizada a vacinação por varredura, em até 48 horas, em todos os indivíduos suscetíveis* maiores de seis meses e que residem nos quarteirões próximos da creche e nos quarteirões próximos do domicílio do caso suspeito (*exceto nas contraindicações a aplicação da vacina, como a irmã de 7 anos com Leucemia que deve receber a Imunoglobulina humana inespecífica)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve ser realizada a vacinação de bloqueio com a Vacina Tríplice Viral (SCR), preferencialmente no prazo máximo de até 72 horas, para as crianças suscetíveis de 3 a 6 meses e gestantes* (*exceto nos indivíduos com contraindicações a aplicação da vacina)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve ser realizada a vacinação de bloqueio, em até 72 horas, em todos os indivíduos suscetíveis*, que tiveram contato com o caso suspeito, a partir dos 6 meses de idade, sem limite de idade com a Vacina Tríplice Viral (SCR) (*exceto nas contraindicações a aplicação da vacina, como a irmã de 7 anos com Leucemia que deve receber a Imunoglobulina humana inespecífica)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Deve ser realizada a vacinação por varredura com a Vacina Tríplice Viral (SCR), no prazo máximo de até 48 horas, em todos os indivíduos suscetíveis* de 3 meses até nove meses que frequentam as creches no bairro do caso suspeito bem como no seu domicílio (*exceto nos indivíduos com contraindicações a aplicação da vacina)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um quadro clássico de sarampo: febre, pródromos catarrais (tosse, coriza, conjuntivite não purulenta), sinal de Koplik (pontos brancos na mucosa oral) e exantema morbiliforme com progressão cefalocaudal (atrás das orelhas e do rosto para o resto do corpo). Diante de um caso suspeito de sarampo, as medidas de controle devem ser imediatas, antes mesmo da confirmação laboratorial, devido à alta contagiosidade do vírus.\n\nAnálise das alternativas:\n\nAlternativa (a) INCORRETA: O termo \"vacinação por varredura\" refere-se a uma estratégia de vacinação em massa, indiscriminada, realizada em uma determinada área geográfica (quarteirões ou bairros) para elevar rapidamente a cobertura vacinal. Embora possa ser utilizada em surtos, a ação prioritária e inicial diante de um caso suspeito é a \"vacinação de bloqueio\", focada nos contatos diretos do paciente. Além disso, a varredura não é a conduta padrão imediata descrita pelos protocolos do Ministério da Saúde para o controle de contatos domiciliares e de creche.\n\nAlternativa (b) INCORRETA: A vacinação de bloqueio deve ser estendida a todos os contatos suscetíveis a partir dos 6 meses de idade, e não limitada à faixa de 3 a 6 meses. Além disso, gestantes suscetíveis não podem receber a vacina tríplice viral (SCR) por ser uma vacina de vírus vivos atenuados; para elas, a recomendação em caso de contato é a imunoglobulina.\n\nAlternativa (c) CORRETA: Esta alternativa descreve exatamente o protocolo do Ministério da Saúde. A vacinação de bloqueio deve ser realizada em até 72 horas após o contato com o caso suspeito, visando interromper a cadeia de transmissão. O público-alvo são os contatos suscetíveis (sem comprovação vacinal) a partir dos 6 meses de idade, sem limite superior de idade. A alternativa também aborda corretamente a situação da irmã com leucemia: pacientes imunodeprimidos têm contraindicação absoluta para vacinas de vírus vivos (SCR) e, por serem contatos de alto risco para complicações graves, devem receber a imunoglobulina humana inespecífica para profilaxia passiva (idealmente em até 6 dias após a exposição).\n\nAlternativa (d) INCORRETA: Assim como na alternativa (a), o termo \"vacinação por varredura\" está incorreto para a ação inicial de controle de contatos. Além disso, a faixa etária citada (3 a 9 meses) está equivocada, pois a vacinação de bloqueio deve abranger todos os suscetíveis acima de 6 meses de idade, e não apenas bebês.\n\nResumo Didático:\n1. Bloqueio Vacinal (Profilaxia Ativa): Deve ser feito com a vacina tríplice viral (SCR) em até 72 horas para todos os contatos suscetíveis acima de 6 meses de idade.\n2. Imunoglobulina (Profilaxia Passiva): Indicada para contatos suscetíveis com contraindicação à vacina (imunodeprimidos, gestantes e menores de 6 meses), preferencialmente até o 6º dia após a exposição. No caso da irmã com leucemia (imunocomprometida), a imunoglobulina é a conduta mandatória.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Doenças Exantemáticas",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:45.762Z"
+  },
+  {
+    "id": "AJUDA_de9fc588-29c3-49e9-8ddd-99ab1dda7489",
+    "originalId": "de9fc588-29c3-49e9-8ddd-99ab1dda7489",
+    "statement": "Leia o caso a seguir.\n\nUm homem de 67 anos procurou uma unidade de atenção primária devido à presença de múltiplas pápulas hipercrômicas (de cor marrom-clara) com a superfície verrucosa no tronco e na face, que surgiram ao longo dos últimos 5 anos. Nega dor, sangramento e prurido. Uma das lesões, na área da barba, foi removida com uma cureta, pois causava incômodo ao paciente. O médico o orientou sobre o caráter benigno destas lesões epidérmicas.\n\nAs lesões epidérmicas citadas no caso acima são denominadas de",
+    "options": [
+      {
+        "id": "A",
+        "text": "queratoses actínicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "nevos melanocíticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "melanoses solares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "queratoses seborreicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "As características clínicas descritas no caso - paciente idoso, múltiplas pápulas hipercrômicas (marrom-claras), superfície verrucosa, localização em tronco e face, evolução lenta e caráter benigno - são patognomônicas da queratose seborreica. \n\nA seguir, a análise de cada alternativa:\n\nAlternativa a) queratoses actínicas. Incorreta. As queratoses actínicas são lesões pré-malignas que surgem em áreas de exposição solar crônica. Clinicamente, apresentam-se como máculas ou pápulas eritematosas cobertas por uma escama aderente e áspera (textura de lixa), sendo mais palpáveis do que visíveis. No caso descrito, a superfície é verrucosa e a lesão é puramente benigna, o que difere do potencial de transformação para carcinoma espinocelular das queratoses actínicas.\n\nAlternativa b) nevos melanocíticos. Incorreta. Embora os nevos (pintas) sejam comuns e possam ser hipercrômicos, eles geralmente surgem na infância e juventude. O surgimento de múltiplas lesões com aspecto verrucoso em um paciente de 67 anos é muito mais característico de uma proliferação epitelial benigna do que de nevos melanocíticos. Além disso, a descrição de superfície verrucosa e a facilidade de remoção por curetagem apontam para uma lesão mais superficial e epidérmica.\n\nAlternativa c) melanoses solares. Incorreta. Também conhecidas como manchas senis ou lentigos solares, as melanoses solares são máculas (lesões planas) hiperpigmentadas que ocorrem em áreas fotoexpostas. O enunciado descreve pápulas (lesões elevadas) com superfície verrucosa, o que exclui o diagnóstico de melanose solar, que é sempre plana.\n\nAlternativa d) queratoses seborreicas. Correta. Esta é a neoplasia benigna epitelial mais comum em idosos. Elas se caracterizam por pápulas ou placas bem delimitadas, de coloração variando do castanho-claro ao preto, com uma aparência típica de terem sido coladas sobre a pele (aspecto \"stuck-on\"). A superfície pode ser cerácea ou verrucosa. São lesões estritamente epidérmicas, o que explica por que podem ser removidas facilmente por curetagem ou criocirurgia, sem necessidade de excisão profunda. O tronco e a face são locais de acometimento frequentes, e as lesões costumam ser assintomáticas, exatamente como relatado no caso clínico.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:45.762Z"
+  },
+  {
+    "id": "AJUDA_dea279b4-c2ae-46e5-b34e-30fdecc95d2c",
+    "originalId": "dea279b4-c2ae-46e5-b34e-30fdecc95d2c",
+    "statement": "Mulher de 42 anos, sem comorbidades, sem passado de etilismo ou tabagismo, realizou ultrassonografia de abdome durante avaliação pré-operatória de cirurgia plástica que identificou nódulo hepático de 3,0cm no segmento 7 hepático. Complementou investigação com tomografia de abdome com contraste trifásica que evidenciou lesão de 3,5 cm no segmento 7 hepático com hipercaptação arterial e “wash-out” portal. Solicitada alfa-fetoproteína que resultou em 30ng/mL. Qual é a conduta mais apropriada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diante da imagem típica, do tamanho da lesão e ausência de hipertensão portal, prosseguir diretamente para a ressecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar biópsia percutânea para confirmar o diagnóstico, pois a paciente não é cirrótica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar ressonância magnética com contraste hepatoespecífico para confirmar o diagnóstico e avaliação de LI-RADS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar PET-CT como parte do estadiamento para avaliação de metástases.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar quimioembolização transarterial (TACE) para incluir a lesão nos critérios de Milão para transplante hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ponto central para a resolução desta questão é identificar que a paciente não possui cirrose ou hepatopatia crônica (como hepatite B ou C). O diagnóstico de carcinoma hepatocelular (CHC) baseado exclusivamente em métodos de imagem (tomografia ou ressonância com padrão de hipercaptação arterial e *wash-out*) é validado apenas para pacientes que apresentam cirrose hepática ou infecção crônica pelo vírus da hepatite B. Em fígados sem doença de base, o padrão de imagem não é patognomônico, podendo ser mimetizado por outras lesões, como o adenoma hepático.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a ressecção cirúrgica seja o tratamento de escolha para o CHC em fígados não cirróticos, a conduta de prosseguir diretamente para a cirurgia sem confirmação tecidual é temerária neste caso. Em pacientes sem fatores de risco, o diagnóstico por imagem não oferece a certeza necessária para indicar uma hepatectomia, sendo necessária a comprovação histológica prévia.\n\nAlternativa b) Correta. Esta é a conduta recomendada pelas principais diretrizes (como as da AASLD e EASL). Quando os critérios radiológicos típicos de CHC são encontrados em um paciente que não pertence ao grupo de alto risco (não cirrótico), a biópsia percutânea é obrigatória para confirmar a natureza da lesão e excluir outros diagnósticos diferenciais antes de qualquer intervenção definitiva.\n\nAlternativa c) Incorreta. A ressonância magnética com contraste hepatoespecífico é uma ferramenta diagnóstica superior à tomografia, mas ela não anula a necessidade de biópsia neste cenário específico. O sistema LI-RADS (*Liver Imaging Reporting and Data System*) foi criado para ser aplicado exclusivamente em pacientes com alto risco de CHC. Em pacientes sem cirrose ou hepatite B, os critérios de imagem não são definitivos.\n\nAlternativa d) Incorreta. O PET-CT não possui papel bem estabelecido no diagnóstico inicial ou no estadiamento padrão do CHC, uma vez que o tumor pode ter baixa captação de glicose marcada (FDG), resultando em muitos resultados falsos-negativos, especialmente em tumores bem diferenciados.\n\nAlternativa e) Incorreta. A quimioembolização transarterial (TACE) é uma modalidade de tratamento locorregional, geralmente indicada para pacientes com tumores intermediários que não são candidatos à cirurgia ou como ponte para o transplante. Os critérios de Milão e a indicação de transplante são aplicados no contexto de pacientes cirróticos com CHC, o que não é o perfil desta paciente, que possui um fígado presumivelmente saudável e uma lesão passível de ressecção.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:45.762Z"
+  }
+]

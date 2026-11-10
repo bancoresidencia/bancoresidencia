@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_2f9b628e-1ead-4e12-804a-46fa70805537",
+    "originalId": "2f9b628e-1ead-4e12-804a-46fa70805537",
+    "statement": "Paciente feminina, 18 anos, procurou atendimento em UPA com queixa de dor abdominal em baixo ventre há 2 dias e recebeu antibioticoterapia com ciprofloxacina para infecção do trato urinário. Sem melhora dos sintomas após 3 dias de tratamento, procurou um hospital de referência apresentando piora da dor abdominal, além de náuseas e vômitos. Ao exame físico, a paciente estava descorada (1+/4+), desidratada (2+/4+), afebril ao toque, com abdome tenso e doloroso à palpação em flanco e fossa ilíaca direita, com sinal de Giordano negativo. Exames laboratoriais: Hemoglobina: 12,6 g/dL, Leucócitos: 16.260/mm³, Plaquetas: 260.000/mm³, Creatinina: 1,01 mg/dL, Ureia: 21,8 mg/dL, INR: 1,15, PCR: 23,9 mg/L (VR<1,0). Realizou tomografia computadorizada de abdome com contraste venoso para investigação que apresentou o seguinte achado. Dentre os diagnósticos diferenciais para esse caso, qual dos seguintes é o mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diverticulite de ceco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença inflamatória pélvica (DIP).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Torção de cisto ovariano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apendicite aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Infecção urinária complicada com pielonefrite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Texto Original:\nO quadro clínico descreve uma paciente jovem com dor abdominal aguda localizada no flanco e na fossa ilíaca direita, associada a náuseas, vômitos e marcadores inflamatórios elevados (leucocitose de 16.260/mm³ e PCR de 23,9 mg/L). A falha no tratamento inicial para infecção urinária com ciprofloxacina é um dado comum em casos de apendicite, pois a irritação do ureter ou da bexiga pelo apêndice inflamado pode gerar sintomas urinários ou alterações leves no sedimento urinário, levando ao erro diagnóstico inicial.\n\nAnálise da Imagem:\nNa tomografia computadorizada apresentada, observa-se, na região da fossa ilíaca direita, uma estrutura tubular distendida com paredes espessadas. O achado patognomônico na imagem é a presença de uma formação hiperdensa (cor branca brilhante) em seu interior, que corresponde a um apendicólito (fecalito). Além disso, há sinais de densificação (borramento) da gordura periapendicular, indicando um processo inflamatório local agudo.\n\nAnálise das alternativas:\n\na) Diverticulite do ceco: É um diagnóstico diferencial possível para dor na fossa ilíaca direita, porém é muito raro em pacientes de 18 anos. A imagem é mais característica de inflamação do apêndice do que de um divertículo cecal isolado.\n\nb) Doença inflamatória pélvica (DIP): Embora comum nesta faixa etária, a DIP geralmente apresenta dor pélvica bilateral, febre e dor à mobilização do colo uterino. A imagem tomográfica é específica ao mostrar o apêndice inflamado com um apendicólito, o que direciona para a etiologia cirúrgica abdominal.\n\nc) Torção de cisto ovariano: Causa dor aguda intensa, mas a imagem não demonstra massas anexiais volumosas ou sinais de comprometimento vascular do ovário, focando a patologia no trajeto do apêndice cecal.\n\nd) Apendicite aguda: Alternativa correta. A epidemiologia (jovem de 18 anos), a história clínica de dor que migra ou se localiza na fossa ilíaca direita, os achados laboratoriais de infecção e a imagem tomográfica com presença de apendicólito e distensão da luz apendicular fecham o diagnóstico.\n\ne) Infecção urinária complicada com pielonefrite: O sinal de Giordano (percussão lombar) foi descrito como negativo e a paciente não respondeu à antibioticoterapia prévia adequada para o trato urinário. A tomografia não mostra alterações renais ou ureterais que justifiquem pielonefrite, mas sim a inflamação apendicular.\n\nGabarito: Letra (d).",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/9c9e2255d8259dfa99ce5bfd2ae5fadf84b9f552000e9212078ea90de3adced5.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_2f9b628e-1ead-4e12-804a-46fa70805537_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:40.812Z"
+  },
+  {
+    "id": "AJUDA_2fa6cc54-35de-426a-b8b1-459cd7d87cfb",
+    "originalId": "2fa6cc54-35de-426a-b8b1-459cd7d87cfb",
+    "statement": "Um paciente de 28 anos de idade, previamente hígido, procurou a unidade de pronto atendimento com queixa de dor abdominal há três dias, localizada inicialmente na região periumbilical, que posteriormente se intensificou e migrou para a fossa ilíaca direita. Associado ao quadro, relata febre (38,5 °C), náuseas e um episódio de vômito. Refere diminuição do apetite e constipação nos últimos dois dias. Nega sintomas urinários ou outros desconfortos abdominais prévios. Informou que a mãe tem história de câncer colorretal aos 56 anos de idade. Ao exame físico, os sinais vitais na admissão são PA = 120 mmHg X 70 mmHg, FC = 104 bpm, FR = 20 irpm, temperatura 38,2 ºC e SatO2 = 97%. Abdome levemente distendido, com dor à descompressão brusca em fossa ilíaca direita e defesa muscular localizada. Exames laboratoriais evidenciaram leucocitose = 15.200/mm³ sem desvio, PCR = 15 mg/dL, função renal e eletrólitos normais. Realizou tomografia computadorizada de abdome com contraste que evidenciou apêndice dilatado e cístico com 4,0 cm de diâmetro, calcificações e espessamento irregular na parede.\n\nAssinale a alternativa que melhor representa a pontuação e a interpretação do escore de Alvarado para esse paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quatro pontos. Baixa probabilidade de apendicite aguda. Investigar diagnósticos diferenciais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Seis pontos. Moderada probabilidade de apendicite aguda. Observar e realizar mais exames complementares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nove pontos. Alta probabilidade de apendicite aguda. Indicação de abordagem cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Dez pontos. Alta probabilidade de apendicite aguda. Indicação de drenagem guiada e antibioticoterapia, seguida de colonoscopia em quarto a seis semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Escore de Alvarado é uma ferramenta clínica fundamental para o diagnóstico de apendicite aguda, baseada em critérios clínicos e laboratoriais. Para resolver esta questão, devemos aplicar os dados do caso clínico aos componentes do escore (mnemônico MANTRELS):\n\n1. Migração da dor para a fossa ilíaca direita: 1 ponto (O paciente relata dor que se iniciou periumbilical e migrou).\n2. Anorexia (perda de apetite): 1 ponto (O paciente refere diminuição do apetite).\n3. Náuseas e/ou Vômitos: 1 ponto (O paciente apresenta ambos).\n4. Tenderness (Dor à palpação na fossa ilíaca direita): 2 pontos (Evidenciada pela dor localizada e defesa muscular).\n5. Rebound (Dor à descompressão brusca - sinal de Blumberg): 1 ponto (Presente no exame físico).\n6. Elevação da temperatura (Febre > 37,3 °C): 1 ponto (Paciente com 38,5 °C e 38,2 °C).\n7. Leucocitose (> 10.000/mm³): 2 pontos (Paciente com 15.200/mm³).\n8. Shift to the left (Desvio à esquerda/Neutrofilia): 1 ponto (O enunciado afirma que o leucograma está \"sem desvio\", portanto, 0 pontos aqui).\n\nSomando a pontuação: 1 (migração) + 1 (anorexia) + 1 (náuseas/vômitos) + 2 (dor à palpação) + 1 (descompressão brusca) + 1 (febre) + 2 (leucocitose) + 0 (desvio) = 9 pontos.\n\nInterpretação das alternativas:\n\na) Incorreta. A pontuação calculada é de 9 pontos, e não 4. Uma pontuação de 4 indicaria necessidade de observação ou exames de imagem, mas o quadro clínico é muito mais exuberante.\n\nb) Incorreta. Seis pontos indicariam uma probabilidade moderada. O paciente já preenche critérios suficientes para uma alta probabilidade clínica, e a tomografia já confirmou o diagnóstico de apêndice dilatado.\n\nc) Correta. A pontuação de 9 pontos indica uma altíssima probabilidade de apendicite aguda (escores entre 7 e 10 são preditivos de apendicite). Em pacientes masculinos com essa pontuação, a indicação cirúrgica é a conduta padrão.\n\nd) Incorreta. A pontuação não chega a 10 porque não há desvio à esquerda. Além disso, a conduta de drenagem guiada e colonoscopia posterior é reservada para casos de apendicite complicada com abscesso bloqueado (massa inflamatória), o que não é o foco principal da interpretação do Escore de Alvarado solicitada na questão.\n\nConclusão: O paciente apresenta 9 pontos no Escore de Alvarado, o que classifica o quadro como alta probabilidade de apendicite aguda, ratificando a indicação de abordagem cirúrgica.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:40.812Z"
+  },
+  {
+    "id": "AJUDA_2fa93694-b471-4abb-aa8f-19008ca66c04",
+    "originalId": "2fa93694-b471-4abb-aa8f-19008ca66c04",
+    "statement": "Paciente, 28 anos de idade, hígida, tercigesta com dois partos vaginais anteriores, 40 semanas e 5 dias de gravidez, comparece para avaliação de vitalidade fetal indicada para controle de pós-datismo. Ao exame físico, apresentou bom estado geral, normotensa. Abdome gravídico, AU 38 cm, BCF+. Toque vaginal apresenta colo médio, medianizado, 4 cm, líquido claro, cefálico alto e móvel. Realizado perfil biofísico fetal de 10, com ILA de 9 cm. A conduta recomendada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Misoprostol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ocitocina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cesárea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reavaliar em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar a indicação de indução do parto e as condições do colo uterino por meio do Índice de Bishop. A paciente encontra-se com 40 semanas e 5 dias de gestação, o que configura um quadro de pós-datismo (termo tardio), com indicação de resolução da gravidez para evitar riscos de insuficiência placentária, mesmo com a vitalidade fetal atual preservada (Perfil Biofísico 10/10 e ILA de 9 cm).\n\nA escolha do método de indução depende de se o colo uterino é favorável ou desfavorável. De acordo com os dados do exame físico: a paciente é multípara (2 partos vaginais anteriores), tem 4 cm de dilatação e colo médio/medianizado. Um colo com 4 cm de dilatação já atinge uma pontuação no Índice de Bishop que o torna favorável (geralmente com Bishop maior ou igual a 6).\n\nExplicação das alternativas:\n\nAlternativa a) Misoprostol: Incorreta. O misoprostol é um análogo da prostaglandina E1 utilizado para o preparo ou amadurecimento do colo uterino quando este se encontra desfavorável (Índice de Bishop baixo). Como a paciente já apresenta 4 cm de dilatação e é multípara, o uso de misoprostol é desnecessário e poderia causar uma hiperestimulação uterina.\n\nAlternativa b) Ocitocina: Correta. A ocitocina é a droga de escolha para indução do parto em pacientes que já possuem um colo uterino favorável. A presença de 4 cm de dilatação em uma paciente com antecedentes de partos vaginais sugere que a infusão de ocitocina será eficaz para coordenar as contrações e progredir o trabalho de parto.\n\nAlternativa c) Cesárea: Incorreta. Não há indicação de via alta neste momento. A vitalidade fetal está excelente (10/10) e a paciente tem ótimos antecedentes obstétricos. A via vaginal deve ser sempre a preferência, e a indução é o passo inicial correto.\n\nAlternativa d) Reavaliar em 48 horas: Incorreta. Embora alguns protocolos permitam aguardar até 41 semanas com monitorização, a questão apresenta uma paciente que já está sendo avaliada para controle de pós-datismo e já apresenta um colo favorável (4 cm de dilatação). Diante da maturidade da gestação e das condições cervicais facilitadas, a conduta ativa de indução é a mais recomendada pelos principais protocolos nacionais.\n\nGabarito: Alternativa (b).",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Indução do Parto e Pós-Datismo",
+      "Vitalidade Fetal"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:40.812Z"
+  },
+  {
+    "id": "AJUDA_2fab1f17-e953-4c1d-8715-b0c14750510b",
+    "originalId": "2fab1f17-e953-4c1d-8715-b0c14750510b",
+    "statement": "Uma paciente de 42 anos, IMC 35 kg/m², sem comorbidades aparentes, procura atendimento para manejo da obesidade. Após avaliação multiprofissional, decide-se iniciar terapia farmacológica. Segundo diretrizes atuais, qual das seguintes opções é CORRETA com relação ao tratamento medicamentoso da obesidade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Medicamentos antiobesidade devem ser iniciados apenas em pacientes com IMC ≥ 40 kg/m², independentemente de comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso de análogos de GLP-1 pode ser considerado em pacientes com IMC ≥ 30 kg/m², mesmo sem comorbidades, quando associado a mudanças de estilo de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A sibutramina é considerada primeira linha em todos os pacientes com obesidade devido à sua segurança cardiovascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento farmacológico substitui a necessidade de acompanhamento nutricional e atividade física estruturada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA questão aborda os critérios para o tratamento farmacológico da obesidade, um tema frequente em provas de residência médica e concursos, fundamentado em diretrizes da Associação Brasileira para o Estudo da Obesidade e da Síndrome Metabólica (ABESO) e de sociedades internacionais.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: O tratamento farmacológico da obesidade está indicado para pacientes com Índice de Massa Corporal (IMC) maior ou igual a 30 kg/m² (obesidade grau I) ou para pacientes com IMC maior ou igual a 27 kg/m² quando houver presença de comorbidades associadas ao excesso de peso (como hipertensão, diabetes tipo 2 ou dislipidemia). O valor de IMC maior ou igual a 40 kg/m² é um dos critérios para indicação de cirurgia bariátrica, não o limite mínimo para início de medicamentos.\n\nAlternativa (b) CORRETA: De acordo com as diretrizes atuais, os análogos do receptor de GLP-1 (como a liraglutida e a semaglutida) são opções seguras e eficazes para o tratamento da obesidade. Eles podem ser prescritos para pacientes com IMC maior ou igual a 30 kg/m², independentemente da presença de outras doenças, desde que o tratamento seja realizado de forma complementar às modificações do estilo de vida (dieta e exercícios). No caso da paciente em questão (IMC 35 kg/m²), ela já possui indicação formal para o início da terapia.\n\nAlternativa (c) INCORRETA: A sibutramina não é considerada primeira linha para todos os pacientes. Embora seja uma droga acessível e eficaz, ela possui contraindicações importantes, especialmente em pacientes com doenças cardiovasculares preexistentes, hipertensão arterial não controlada ou arritmias. O estudo SCOUT demonstrou aumento do risco de eventos cardiovasculares em pacientes de alto risco que utilizaram a droga, o que limita seu uso a um perfil selecionado de pacientes sem essas contraindicações.\n\nAlternativa (d) INCORRETA: O tratamento farmacológico é uma ferramenta auxiliar e nunca deve substituir as mudanças no estilo de vida. O sucesso a longo prazo no manejo da obesidade depende obrigatoriamente do déficit calórico (acompanhamento nutricional) e do aumento do gasto energético/preservação de massa magra (atividade física estruturada). A medicação atua ajudando no controle do apetite e da saciedade, facilitando a adesão a essas mudanças.\n\nCONCLUSÃO\n\nA alternativa (b) reflete corretamente as recomendações atuais, validando o uso de medicamentos modernos como os análogos de GLP-1 em pacientes com obesidade estabelecida (IMC maior ou igual a 30), sempre como terapia adjunta ao estilo de vida saudável.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:40.812Z"
+  },
+  {
+    "id": "AJUDA_2fabcc14-28e6-48f2-b19d-a939591d6551",
+    "originalId": "2fabcc14-28e6-48f2-b19d-a939591d6551",
+    "statement": "Menina de 6 anos com história de febre alta há 3 dias, conjuntivite sem secreção purulenta, tosse seca e coriza. Nas últimas 24 horas surgiram manchas pequenas esbranquinçadas na mucosa jugal e, no dia seguinte, exantema maculopapular que iniciou na face e se espalhou de forma craniocaudal, confluentes no tronco e discretos nos membros. Calendário vacinal incompleto. Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exantema súbito (HHV-6)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rubéola",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Eritema infeccioso (Parvovírus B19)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sarampo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Dengue",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta um caso clínico clássico de uma doença exantemática na infância, destacando elementos fundamentais para o diagnóstico diferencial. A paciente apresenta o chamado período prodrômico ou catarral, caracterizado por febre alta, tosse, coriza e conjuntivite não purulenta (fotofobia também é comum). O ponto determinante para o diagnóstico é a presença das manchas pequenas esbranquiçadas na mucosa jugal, conhecidas como Manchas de Koplik, que são sinal patognomônico do sarampo e costumam preceder o exantema em cerca de 1 a 2 dias.\n\nO exantema do sarampo é tipicamente maculopapular, com progressão craniocaudal (começa na região retroauricular e face, descendo para o tronco e membros) e tendência à confluência, especialmente no tronco. O histórico de vacinação incompleta reforça a suspeita, dado que o sarampo é uma doença prevenível por vacina (Tríplice Viral).\n\nAnálise das alternativas:\n\na) Incorreta. O exantema súbito (roséola) ocorre tipicamente em lactentes (6 meses a 2 anos). A principal característica é a febre muito alta que desaparece subitamente (crise) logo antes do surgimento do exantema. No caso descrito, o exantema surgiu enquanto os sintomas e a febre ainda estavam presentes ou em evolução, e a presença de sintomas catarrais intensos não é típica do exantema súbito.\n\nb) Incorreta. Na rubéola, o estado geral da criança costuma ser bom, a febre é baixa ou ausente, e os sintomas catarrais são leves. Uma marca registrada da rubéola é a presença de linfonodopatias retroauriculares, occipitais e cervicais posteriores. O exantema da rubéola é menos intenso, não costuma confluir e desaparece rapidamente (em cerca de 3 dias).\n\nc) Incorreta. O eritema infeccioso, causado pelo Parvovírus B19, apresenta-se em três fases: a primeira é a face esbofeteada (eritema malar), a segunda é o exantema rendilhado em tronco e membros, e a terceira é a recorrência do exantema com estímulos como sol ou exercício. Geralmente não apresenta o período catarral intenso (tosse/coriza/conjuntivite) observado no sarampo.\n\nd) Correta. O quadro clínico é soberano para sarampo: febre alta, tríade catarral (tosse, coriza, conjuntivite), presença de Manchas de Koplik e exantema maculopapular de progressão craniocaudal e confluente.\n\ne) Incorreta. Embora a dengue cause febre e exantema, o quadro respiratório (tosse e coriza) e a conjuntivite intensa não são manifestações típicas. Além disso, a dengue não apresenta as manchas de Koplik na mucosa oral. O exantema da dengue costuma ser acompanhado de mialgia, dor retro-orbitária e artralgia.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": 41.358293966692464,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:40.812Z"
+  },
+  {
+    "id": "AJUDA_2fb5764a-4585-4f6a-9ff8-c39745cf8998",
+    "originalId": "2fb5764a-4585-4f6a-9ff8-c39745cf8998",
+    "statement": "Pode-se afirmar, sobre às práticas de vigilância em saúde, que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o monitoramento de riscos pela vigilância sanitária engloba os processos relacionados à definição de caso suspeito de agravos sujeitos à notificação compulsória",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "as normas sanitárias buscam manter os problemas de saúde fora da possibilidade de ocorrência, constituindo, portanto, medidas de prevenção secundária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "entre os objetivos da vigilância epidemiológica da dengue, a detecção oportuna dos casos visando promover tratamento adequado e reduzir a morbidade, a letalidade e a mortalidade é uma medida de prevenção primária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a vigilância sanitária tem, entre outras, a atribuição de avaliar os produtos e procedimentos que possam causar algum dano à saúde e ao meio ambiente",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Vigilância em Saúde no Brasil é composta por diferentes frentes de atuação, sendo as principais a Vigilância Epidemiológica e a Vigilância Sanitária. Para responder corretamente a esta questão, é necessário diferenciar as atribuições de cada uma e compreender os níveis de prevenção de doenças.\n\nAlternativa (a) Incorreta. O monitoramento de agravos, a definição de casos suspeitos e o manejo da lista de notificação compulsória são atribuições da Vigilância Epidemiológica. A Vigilância Sanitária (VISA) foca sua atuação no controle de riscos relacionados a produtos (medicamentos, alimentos, cosméticos), serviços de saúde e meio ambiente, visando eliminar ou prevenir riscos à saúde decorrentes da produção e circulação de bens.\n\nAlternativa (b) Incorreta. Medidas que buscam evitar que o problema de saúde ocorra, agindo sobre os fatores de risco ou condicionantes antes que a doença se instale, são classificadas como Medidas de Prevenção Primária. A prevenção secundária, por outro lado, foca no diagnóstico precoce e no tratamento imediato de uma doença já existente para evitar sua progressão ou sequelas.\n\nAlternativa (c) Incorreta. A detecção oportuna de casos de dengue para oferecer tratamento adequado e reduzir a mortalidade e a letalidade é uma ação de Prevenção Secundária (diagnóstico e tratamento precoce). Prevenção primária no contexto da dengue seria o controle do vetor (Aedes aegypti) ou a vacinação, ações que evitam que o indivíduo adoeça.\n\nAlternativa (d) Correta. Esta alternativa descreve com precisão a missão da Vigilância Sanitária conforme estabelecido na Lei 8.080/1990. A VISA tem o poder de polícia administrativa para intervir em problemas sanitários decorrentes do meio ambiente, da produção e circulação de bens e da prestação de serviços de interesse da saúde. Isso inclui a avaliação rigorosa de produtos (como fármacos e equipamentos médicos) e procedimentos (como métodos de esterilização ou protocolos clínicos) que possam gerar danos à coletividade.\n\nGabarito: Alternativa (d).",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:40.812Z"
+  },
+  {
+    "id": "AJUDA_2fd3fb00-b01a-4a29-a43d-4a42684839d7",
+    "originalId": "2fd3fb00-b01a-4a29-a43d-4a42684839d7",
+    "statement": "Em um município com 12.000 habitantes, sendo 52% do sexo feminino, ocorreram 80 casos de câncer de mama em mulheres ao longo do ano de 2024. Nesse período, 4 desses casos evoluíram para óbitos em decorrência do câncer de mama. Ao final do mesmo ano, o município registrou um total de 200 óbitos por todas as causas.\n\nCom base nesses dados, a taxa de letalidade do câncer de mama no município em 2024 foi",
+    "options": [
+      {
+        "id": "A",
+        "text": "5%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "0,03%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "0,05%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "2%",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "CONCEITO E FÓRMULA\n\nA taxa de letalidade é um indicador epidemiológico que mede a gravidade de uma doença, expressando a capacidade de uma patologia em conduzir o indivíduo ao óbito. Ela não deve ser confundida com a taxa de mortalidade, que utiliza a população total no denominador.\n\nA fórmula para o cálculo da letalidade é:\n(Número de óbitos por uma causa específica / Número de pessoas com aquela doença) x 100\n\nAPLICAÇÃO DOS DADOS DA QUESTÃO\n\nPara este município em 2024, os dados relevantes são:\n- Número de casos de câncer de mama: 80\n- Número de óbitos por câncer de mama: 4\n\nCálculo:\nLetalidade = (4 / 80) = 0,05\nPara expressar em porcentagem: 0,05 x 100 = 5 por cento.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Embora 5 por cento seja o resultado matemático correto da conversão da razão 0,05 para a escala percentual, esta alternativa diverge do gabarito oficial fornecido para a questão.\n\nAlternativa b) Incorreta. O valor de 0,03 por cento seria obtido aproximadamente se calculássemos o Coeficiente de Mortalidade Geral por câncer de mama (4 óbitos divididos pelos 12.000 habitantes totais). A mortalidade mede o risco de morte na população geral, não a gravidade entre os doentes.\n\nAlternativa c) Correta. Ao realizar a divisão de 4 por 80, o resultado decimal é 0,05. Em diversas provas de concursos e residências médicas, ocorre um erro conceitual de grafia onde a banca examinadora mantém o valor decimal (0,05) e simplesmente adiciona o símbolo de porcentagem, ignorando que 0,05 equivale a 5 por cento. Seguindo o gabarito oficial indicado, a alternativa C foi a considerada correta com base no valor numérico bruto da divisão.\n\nAlternativa d) Incorreta. O valor de 2 por cento corresponde à Mortalidade Proporcional (4 óbitos por câncer de mama divididos pelo total de 200 óbitos de todas as causas). Esse indicador mostra o quanto aquela doença representa dentro do total de mortes do município, o que é diferente de letalidade.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:40.812Z"
+  },
+  {
+    "id": "AJUDA_2fdcb641-cce8-4aa7-a746-1cf5e52a5c08",
+    "originalId": "2fdcb641-cce8-4aa7-a746-1cf5e52a5c08",
+    "statement": "Qual a causa mais provável de sangramento digestivo alto com instabilidade hemodinâmica em um paciente masculino, de 65 anos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Úlcera péptica sangrante",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Esofagite erosiva",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neoplasia gástrica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Laceração de Mallory-Weiss",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A hemorragia digestiva alta (HDA) é uma condição clínica prevalente, e a identificação da sua causa principal é fundamental para o manejo terapêutico inicial. No cenário de um paciente idoso apresentando instabilidade hemodinâmica, a probabilidade estatística e a fisiopatologia da lesão direcionam para causas que envolvem sangramentos de maior volume.\n\nAlternativa a: Esta é a alternativa correta. A úlcera péptica, seja gástrica ou duodenal, permanece como a causa mais comum de hemorragia digestiva alta em todo o mundo, respondendo por cerca de 40 a 50 por cento dos casos. Quando uma úlcera sofre penetração profunda, ela pode erodir vasos arteriais de calibre significativo, como a artéria gastroduodenal no duodeno ou a artéria gástrica esquerda no estômago. Esse mecanismo resulta em sangramento arterial volumoso e rápido, sendo a principal causa de instabilidade hemodinâmica e choque hipovolêmico em pacientes desta faixa etária.\n\nAlternativa b: Esta alternativa está incorreta. A esofagite erosiva é uma inflamação da mucosa esofágica, geralmente secundária à doença do refluxo gastroesofágico. Embora seja uma causa frequente de sangramento digestivo, as erosões são superficiais e o sangramento costuma ser de pequena monta. O quadro clínico mais comum é de sangramento oculto ou episódios de melena leve, sendo raríssima a evolução para instabilidade hemodinâmica aguda.\n\nAlternativa c: Esta alternativa está incorreta. As neoplasias gástricas podem sangrar devido à friabilidade do tecido tumoral, erosão de vasos de neoformação ou necrose da massa tumoral. Contudo, o padrão clássico de sangramento em câncer gástrico é crônico, insidioso e persistente, levando o paciente a procurar auxílio médico por anemia ferropriva ou perda ponderal. Embora um sangramento maciço possa ocorrer, ele é significativamente menos frequente do que na doença ulcerosa péptica.\n\nAlternativa d: Esta alternativa está incorreta. A laceração de Mallory-Weiss consiste em cortes longitudinais na mucosa da transição esofagogástrica, tipicamente após episódios de vômitos vigorosos ou tosse intensa. Na maioria dos casos (cerca de 80 a 90 por cento), o sangramento é autolimitado e cessa espontaneamente sem necessidade de intervenção endoscópica ou cirúrgica agressiva. É uma causa importante de hematêmese, mas raramente provoca o grau de instabilidade hemodinâmica descrito na questão.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori",
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:40.812Z"
+  },
+  {
+    "id": "AJUDA_2fe140a0-c585-40b0-8436-c5c345c93a09",
+    "originalId": "2fe140a0-c585-40b0-8436-c5c345c93a09",
+    "statement": "Lactente de 1 ano e 4 meses, apresentando há 3 semanas quadro de “torcicolo” frequente, segundo a mãe, o que deixa a criança irritada e provoca quedas frequentes. Houve nos últimos dias surgimento de irritabilidade e hoje início de vômitos e leve sonolência. Com base nessas informações, a hipótese diagnóstica mais provável é",
+    "options": [
+      {
+        "id": "A",
+        "text": "rasopatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "neuroblastoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ataxia-telangectasia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "astrocitoma pilocítico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "encefalite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um lactente com sintomas neurológicos de evolução subaguda (três semanas). Os pontos-chave para o diagnóstico são:\n1. Torcicolo: Em pediatria, o torcicolo persistente ou intermitente, sem causa ortopédica evidente, é um sinal de alerta clássico para tumores da fossa posterior. Ele ocorre como uma posição compensatória da cabeça para evitar a diplopia ou devido à herniação das amígdalas cerebelares pelo forame magno.\n2. Ataxia (quedas frequentes): Indica comprometimento cerebelar ou das vias de equilíbrio, também localizados na fossa posterior.\n3. Hipertensão Intracraniana (vômitos, irritabilidade e sonolência): Sugere que a lesão está obstruindo a circulação do líquido cefalorraquidiano, gerando uma hidrocefalia obstrutiva.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: Rasopatias são um grupo de síndromes genéticas (como a Síndrome de Noonan ou a Neurofibromatose tipo 1) causadas por mutações em genes da via RAS-MAPK. Embora pacientes com neurofibromatose tenham maior risco de desenvolver tumores do sistema nervoso central, o termo \"rasopatia\" descreve a síndrome genética de base e não a patologia aguda apresentada pela criança.\n\nAlternativa (b) INCORRETA: O neuroblastoma é o tumor extracraniano sólido mais comum da infância, geralmente originado na glândula suprarrenal ou nos gânglios simpáticos abdominais. Embora possa causar ataxia como parte de uma síndrome paraneoplásica (síndrome de opsoclonus-mioclonus), ele não costuma se apresentar com torcicolo e sinais diretos de hipertensão intracraniana por obstrução liquórica.\n\nAlternativa (c) INCORRETA: A ataxia-telangiectasia é uma doença autossômica recessiva que causa ataxia progressiva e imunodeficiência. No entanto, ela costuma ser diagnosticada mais tarde (quando a criança começa a andar), tem curso crônico e não se apresenta com sinais agudos de hipertensão intracraniana, como os vômitos e a sonolência descritos.\n\nAlternativa (d) CORRETA: O astrocitoma pilocítico é o tumor cerebral primário mais frequente na infância. Sua localização preferencial é o cerebelo (fossa posterior). O crescimento do tumor nessa região explica perfeitamente a tríade apresentada: ataxia (quedas), posição viciosa da cabeça (torcicolo) e a evolução para hidrocefalia obstrutiva, que culmina com vômitos, irritabilidade e rebaixamento do nível de consciência pelo aumento da pressão intracraniana.\n\nAlternativa (e) INCORRETA: A encefalite é um processo inflamatório/infeccioso do parênquima cerebral. Geralmente apresenta um início muito mais súbito e agudo, frequentemente acompanhado de febre, crises convulsivas e alterações comportamentais rápidas, não se encaixando na progressão de três semanas com sintomas focais de fossa posterior (torcicolo e ataxia) seguidos de hipertensão intracraniana.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Tumores Intracranianos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:40.812Z"
+  },
+  {
+    "id": "AJUDA_2fe2de8d-54e3-4cc1-8707-a4c46f144c20",
+    "originalId": "2fe2de8d-54e3-4cc1-8707-a4c46f144c20",
+    "statement": "Sobre o câncer gástrico, na presença de nódulo palpável em região periumbilical dá-se o nome de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nódulo de Krukemberg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nódulo de Sister Mary Joseph",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Nódulo de Virchow",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nódulo de Troisier",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Metástase de Blumer",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda os sinais clássicos de disseminação metastática do adenocarcinoma gástrico, conhecidos como epônimos semiológicos. Esses sinais indicam, na maioria das vezes, uma doença em estágio avançado (IV).\n\nAnálise das alternativas:\n\na) Nódulo de Krukenberg: Incorreta. Refere-se à metástase para os ovários, geralmente bilateral. Ocorre por disseminação transcelômica (peritoneal) e é caracterizado histologicamente pela presença de células em anel de sinete.\n\nb) Nódulo de Sister Mary Joseph: Correta. É o nome dado à metástase cutânea na região umbilical, manifestando-se como um nódulo palpável, endurecido e, por vezes, ulcerado no umbigo. Recebe este nome em homenagem à enfermeira que observou a relação entre o nódulo umbilical e neoplasias intra-abdominais avançadas.\n\nc) Nódulo de Virchow: Incorreta. É o aumento do linfonodo supraclavicular esquerdo. Sua presença indica disseminação linfática à distância através do ducto torácico, sendo um sinal de inoperabilidade no câncer gástrico.\n\nd) Nódulo de Troisier: Incorreta. Frequentemente usado como sinônimo do Nódulo de Virchow, o sinal de Troisier refere-se especificamente ao achado clínico do linfonodo supraclavicular esquerdo endurecido e aumentado em pacientes com câncer abdominal.\n\ne) Metástase de Blumer: Incorreta. Também chamada de Prateleira de Blumer (Blumer's shelf), refere-se ao implante tumoral no fundo de saco de Douglas (espaço retovesical em homens ou retouterino em mulheres). Esse depósito é detectado através do toque retal ou vaginal como uma massa ou \"prateleira\" endurecida.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:40.812Z"
+  }
+]

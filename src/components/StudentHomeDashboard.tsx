@@ -109,6 +109,13 @@ import { GoogleCalendarScheduleView } from './dashboard/GoogleCalendarScheduleVi
 import { AiScheduleDrawer } from './dashboard/AiScheduleDrawer';
 import { DailyScheduleSlot, AiScheduleAnalysis, TimelineFilter } from './dashboard/scheduleTypes';
 import {
+  loadUserScheduledTasks,
+  saveUserScheduledTask,
+  deleteUserScheduledTask,
+  clearAllUserScheduledTasks,
+  getUserScheduledTasksStorageKey
+} from '@/services/userScheduledTasksService';
+import {
   buildGoogleCalendarTemplateUrl,
   requestGoogleCalendarAccessToken,
   startGoogleOAuthPopup,
@@ -1278,6 +1285,28 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     return [];
   });
 
+  // Carrega e sincroniza tarefas da agenda vinculadas à conta do aluno
+  useEffect(() => {
+    let active = true;
+    loadUserScheduledTasks(user?.id).then((tasks) => {
+      if (active) {
+        setUserScheduledTasks(tasks);
+      }
+    });
+
+    const handleStorageChange = (e: StorageEvent) => {
+      const userTasksKey = getUserScheduledTasksStorageKey(user?.id);
+      if ((e.key === userTasksKey || e.key === 'bancoresidencia_user_scheduled_tasks') && e.newValue) {
+        try { setUserScheduledTasks(JSON.parse(e.newValue)); } catch { }
+      }
+    };
+    window.addEventListener('storage', handleStorageChange);
+    return () => {
+      active = false;
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, [user?.id]);
+
   // Estado para Análise de Horários Livres com IA
   const [isAnalyzingSchedule, setIsAnalyzingSchedule] = useState(false);
   const [scheduleAiAnalysis, setScheduleAiAnalysis] = useState<{
@@ -1419,15 +1448,15 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         };
       });
 
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
-      }
+      updated.forEach((t) => {
+        saveUserScheduledTask(t, user?.id).catch(() => {});
+      });
       return updated;
     });
 
     setShowDelayModal(false);
     setCalendarSyncSuccessMsg(`Cronograma reorganizado com sucesso (+${minsToUse}m)! A IA adaptou seus blocos restantes.`);
-  }, []);
+  }, [user?.id]);
 
   // Criação de Bloco de Estudo Manual Personalizado
   const handleCreateManualSlot = useCallback(() => {
@@ -1459,12 +1488,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       rationale: 'Planejamento pessoal adicionado à grade.'
     };
 
-    setUserScheduledTasks(prev => {
-      const updated = [...prev, newSlot];
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
-      }
-      return updated;
+    setUserScheduledTasks(prev => [...prev, newSlot]);
+    saveUserScheduledTask(newSlot, user?.id).catch((err) => {
+      console.warn('Erro ao salvar bloco manual na conta do aluno:', err);
     });
 
     setManualSlotTitle('');
@@ -2138,14 +2164,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   };
 
   const handleAddSuggestedTask = (task: DailyScheduleSlot) => {
+    const item = { ...task, isAiSuggested: true };
     setUserScheduledTasks((prev) => {
       if (prev.some(t => t.id === task.id)) return prev;
-      const updated = [...prev, { ...task, isAiSuggested: true }];
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
-      }
-      return updated;
+      return [...prev, item];
     });
+    saveUserScheduledTask(item, user?.id).catch(() => {});
     setCalendarSyncSuccessMsg(`Bloco "${task.title}" adicionado ao seu cronograma!`);
   };
 
@@ -2156,22 +2180,18 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       const newItems = scheduleAiAnalysis.suggestions
         .filter(s => !prevIds.has(s.id))
         .map(s => ({ ...s, isAiSuggested: true }));
-      const updated = [...prev, ...newItems];
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
-      }
-      return updated;
+      newItems.forEach((item) => {
+        saveUserScheduledTask(item, user?.id).catch(() => {});
+      });
+      return [...prev, ...newItems];
     });
     setCalendarSyncSuccessMsg(`${scheduleAiAnalysis.suggestions.length} tarefas de estudo adicionadas ao cronograma!`);
   };
 
   const handleRemoveScheduledTask = (taskId: string) => {
-    setUserScheduledTasks((prev) => {
-      const updated = prev.filter(t => t.id !== taskId);
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
-      }
-      return updated;
+    setUserScheduledTasks((prev) => prev.filter(t => t.id !== taskId));
+    deleteUserScheduledTask(taskId, user?.id).catch((err) => {
+      console.warn('Erro ao excluir tarefa remota:', err);
     });
     setExportedSlotIds(prev => {
       const next = { ...prev };
@@ -2187,8 +2207,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     setUserScheduledTasks([]);
     setExportedSlotIds({});
     setIsBatchSyncCompleted(false);
+    clearAllUserScheduledTasks(user?.id).catch((err) => {
+      console.warn('Erro ao limpar tarefas remotas:', err);
+    });
     if (typeof window !== 'undefined') {
-      localStorage.removeItem('bancoresidencia_user_scheduled_tasks');
       localStorage.removeItem('bancoresidencia_exported_slots');
       localStorage.removeItem('bancoresidencia_batch_sync_completed');
     }
@@ -2208,11 +2230,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         setUserScheduledTasks(prev => {
           const prevIds = new Set(prev.map(p => p.id));
           const newItems = suggestionsToAdd.filter(s => !prevIds.has(s.id)).map(s => ({ ...s, isAiSuggested: true }));
-          const updated = [...prev, ...newItems];
-          if (typeof window !== 'undefined') {
-            localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
-          }
-          return updated;
+          newItems.forEach((item) => {
+            saveUserScheduledTask(item, user?.id).catch(() => {});
+          });
+          return [...prev, ...newItems];
         });
       }
     }
@@ -7444,11 +7465,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             const newItems = tasks
               .filter(s => !prevIds.has(s.id))
               .map(s => ({ ...s, isAiSuggested: true }));
-            const updated = [...prev, ...newItems];
-            if (typeof window !== 'undefined') {
-              localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
-            }
-            return updated;
+            newItems.forEach((item) => {
+              saveUserScheduledTask(item, user?.id).catch(() => {});
+            });
+            return [...prev, ...newItems];
           });
           setCalendarSyncSuccessMsg(`${tasks.length} atividade(s) adicionada(s) ao cronograma oficial!`);
         }}

@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_daa6c4ab-0c2a-421b-98be-e3bb693b0164",
+    "originalId": "daa6c4ab-0c2a-421b-98be-e3bb693b0164",
+    "statement": "Paciente masculino, 55 anos, apresenta artrite migratória nas articulações do punho, joelho e tornozelo, associada a episódios de febre baixa e mal-estar nos últimos 6 meses. Refere manchas avermelhadas em lesões purpúricas nas pernas, além de perda de peso de 4 kg. Exame laboratoriais: VHS: 68 mm/h; PCR: 22 mg/L; Creatinina: 1,4 mg/dL; Proteinúria: 0,8 g/24h; FAN: negativo; ANCA c-positivo; Hemograma: leucocitose discreta. Biópsia de pele: vasculite leucocitoclástica com infiltração neutrofílica.\n\nQual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Granulomatose com poliangeíte (GPA).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Poliarterite nodosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Artrite reumatoide soronegativa com vasculite cutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lúpus eritematoso sistêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve um homem de 55 anos com sintomas constitucionais, manifestações articulares, púrpura palpável em membros inferiores, evidência de acometimento renal (elevação de creatinina e proteinúria) e biópsia cutânea compatível com vasculite leucocitoclástica. O achado imunológico determinante é a positividade do c-ANCA.\n\nAlternativa a: Correta. A Granulomatose com Poliangeíte (GPA), anteriormente conhecida como Granulomatose de Wegener, é uma vasculite necrosante de pequenos e médios vasos fortemente associada à presença do anticorpo c-ANCA (padrão citoplasmático, direcionado contra a proteinase 3 - PR3). O quadro de vasculite sistêmica com envolvimento cutâneo, articular e renal (glomerulonefrite sugerida pela proteinúria e disfunção renal) é típico dessa patologia.\n\nAlternativa b: Incorreta. A Poliarterite Nodosa (PAN) é uma vasculite de artérias de médio calibre que não cursa com glomerulonefrite (o dano renal é isquêmico decorrente de aneurismas e estenoses vasculares) e é tipicamente ANCA-negativa.\n\nAlternativa c: Incorreta. A vasculite reumatoide é uma complicação rara observada quase exclusivamente em pacientes com artrite reumatoide grave de longa data, com deformidades estabelecidas e sorologias específicas positivas em altos títulos (Fator Reumatoide e anti-CCP), não se associando à presença de c-ANCA.\n\nAlternativa d: Incorreta. O Lúpus Eritematoso Sistêmico (LES) tem como teste de triagem de alta sensibilidade o FAN, que é positivo em mais de 98% dos pacientes com doença ativa. A presença de FAN negativo afasta o diagnóstico de lúpus na prática clínica. Além disso, o c-ANCA não faz parte do perfil sorológico do LES.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Vasculites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:38.360Z"
+  },
+  {
+    "id": "AJUDA_dabc0c60-8b3c-4af7-a442-262d2edc0490",
+    "originalId": "dabc0c60-8b3c-4af7-a442-262d2edc0490",
+    "statement": "Pré-escolar, sexo masculino, 3 anos de idade, é atendido em uma Unidade Básica de Saúde com quadro de tosse com catarro e febre alta há 3 dias, associado à dificuldade para respirar. No exame físico apresenta-se afebril (medicado há 1 hora), corado, hidratado, com boa perfusão periférica, com FC frequência cardíaca de 100 bpm e frequência respiratória de 45 irpm. O paciente não apresenta retração subcostal e tiragens intercostais, mas tem murmúrio vesicular diminuído em base de hemitórax esquerdo. Não há disponibilidade de exames de imagem na Unidade de Saúde. Segundo o Programa de Atenção Integrada das Doenças Prevalentes na Infância (AIDPI) do Ministério da Saúde para identificação das infecções respiratórias agudas, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A criança tem uma pneumonia que pode ser tratada ambulatorialmente com amoxicilina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A criança tem uma pneumonia grave, que deve ser encaminhada ao hospital e ser tratada com penicilina cristalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A criança tem um quadro de infecção de vias aéreas superiores que não deve ser tratada com antibióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A criança tem um quadro de pneumonia não grave, mas há sinais de perigo e, portanto, deve ser encaminhada ao hospital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A criança tem um quadro de pneumonia não grave e deve receber um antibiótico da classe dos macrolídeos, devido ao atual perfil de sensibilidade do principal agente etiológico envolvido.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo das Infecções Respiratórias Agudas (IRA) em pediatria, fundamentado na estratégia AIDPI (Atenção Integrada às Doenças Prevalentes na Infância) do Ministério da Saúde. O ponto central é identificar a classificação correta e a conduta baseada nos achados clínicos.\n\nAnálise Clínica:\n1. Idade: 3 anos (faixa etária de 2 meses a 5 anos).\n2. Frequência Respiratória (FR): 45 irpm. Segundo o AIDPI, para crianças de 12 meses a 5 anos, considera-se taquipneia (respiração rápida) uma FR igual ou superior a 40 irpm. Portanto, o paciente apresenta taquipneia.\n3. Sinais de Gravidade: O enunciado informa que não há retração subcostal nem tiragens intercostais, nem menção a sinais de perigo (incapacidade de beber, vômitos incoercíveis, convulsões ou letargia).\n4. Ausculta: O murmúrio vesicular diminuído em base esquerda corrobora o diagnóstico clínico de pneumonia, mas, no contexto do AIDPI, a decisão terapêutica baseia-se prioritariamente na presença de taquipneia e sinais de esforço.\n\nClassificação segundo o AIDPI:\nA presença de tosse ou dificuldade para respirar associada à respiração rápida (taquipneia), na ausência de sinais de gravidade (tiragem subcostal ou sinais de perigo), classifica o quadro como PNEUMONIA.\n\nAnálise das Alternativas:\n\na) Correta. A criança apresenta taquipneia (45 irpm, sendo o corte 40 irpm para a idade), o que define o quadro como pneumonia não grave segundo o AIDPI. O tratamento é ambulatorial, e a amoxicilina é o antibiótico de primeira escolha para a cobertura do *Streptococcus pneumoniae*, principal agente etiológico nessa faixa etária.\n\nb) Incorreta. Para ser classificada como pneumonia grave, a criança deveria apresentar obrigatoriamente tiragem subcostal ou pelo menos um sinal geral de perigo. O tratamento com penicilina cristalina é indicado para casos graves em ambiente hospitalar, o que não se aplica aqui.\n\nc) Incorreta. A presença de taquipneia (FR 45 irpm) retira o paciente da classificação de \"Tosse ou Resfriado\" (infecção de vias aéreas superiores) e o coloca na classificação de pneumonia, exigindo antibioticoterapia.\n\nd) Incorreta. Não há sinais de perigo descritos (o paciente está corado, hidratado e com boa perfusão). Pelo AIDPI, se houvesse sinal de perigo, a classificação seria Pneumonia Grave ou Doença Muito Grave, exigindo encaminhamento hospitalar, e não \"pneumonia não grave com sinais de perigo\".\n\ne) Incorreta. Embora seja pneumonia não grave, os macrolídeos (como azitromicina ou claritromicina) não são a primeira escolha para o tratamento de pneumonia comunitária típica nessa idade. A primeira escolha é a amoxicilina (classe das penicilinas), visando ao pneumococo. Macrolídeos seriam indicados em suspeita de germes atípicos ou alergia grave à penicilina.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pneumonia na Infância",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:38.360Z"
+  },
+  {
+    "id": "AJUDA_dabd48b9-8a75-4f19-bdcd-38440500e1f3",
+    "originalId": "dabd48b9-8a75-4f19-bdcd-38440500e1f3",
+    "statement": "Sobre os regimes de uso dos Contraceptivos Orais Combinados (COCs), é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O regime estendido consiste no uso de 28 comprimidos ativos seguidos por 7 dias de pausa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O regime contínuo consiste no uso de 21 comprimidos seguidos por 7 dias de pausa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O regime-padrão consiste no uso de 24 comprimidos ativos seguidos por 4 dias de placebo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O regime estendido flexível permite o uso de até 120 dias sem intervalos, com pausas opcionais de 4 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa A: INCORRETA. O regime estendido não se limita a 28 dias. Ele consiste no uso de hormônios ativos por períodos prolongados, tipicamente por 84 dias (12 semanas) seguidos por um intervalo de 7 dias, ou até por 120 dias seguidos. O objetivo é reduzir a frequência das menstruações para aproximadamente quatro vezes ao ano.\n\nAlternativa B: INCORRETA. A descrição de 21 comprimidos seguidos por 7 dias de pausa define o regime cíclico convencional ou regime-padrão. No regime contínuo, os comprimidos ativos são ingeridos diariamente, sem qualquer interrupção ou período de pausa, visando à suspensão total do fluxo menstrual (amenorreia).\n\nAlternativa C: INCORRETA. O esquema de 24 comprimidos ativos seguidos por 4 dias de placebo ou pausa é conhecido como regime de intervalo encurtado. Embora seja amplamente prescrito atualmente para reduzir sintomas de privação hormonal, a definição clássica de regime-padrão na literatura médica é o ciclo de 21 dias de uso com 7 dias de intervalo.\n\nAlternativa D: CORRETA. O regime estendido flexível é uma estratégia moderna para melhorar a adesão e o controle do sangramento de escape (spotting). Nele, a mulher utiliza os comprimidos ativos continuamente por um período inicial obrigatório (geralmente 24 dias) e pode estender o uso por até 120 dias. Se houver sangramento de escape persistente ou por conveniência da paciente após o período inicial, realiza-se uma pausa curta de 4 dias para permitir a descamação do endométrio, reiniciando o uso contínuo logo em seguida.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:38.360Z"
+  },
+  {
+    "id": "AJUDA_dabe45bc-113b-40b8-a4c7-02ef92086a6d",
+    "originalId": "dabe45bc-113b-40b8-a4c7-02ef92086a6d",
+    "statement": "R.T.B., 31 anos, GIII PII 2C A0, idade gestacional de 32 semanas, tipagem sanguínea (ABO Rh): O negativo, Coombs indireto negativo, deu entrada no PSO com quadro de sangramento vaginal vermelho-vivo, indolor. Ao exame físico e obstétrico: PA 120 x 70 mmHg, FC materna: 88 bpm. Abdome: Tônus uterino normal. Dinâmica uterina ausente. Batimentos cardiofetais de 144 bpm. Especular: colo uterino sem lesões, com moderada quantidade de sangue, coletado em fundo de saco posterior, sem sangramento ativo.\n\nDe acordo com o caso acima, assinale a alternativa que representa o diagnóstico correto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rotura de vasa prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rotura uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rotura de seio venoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Descolamento prematuro de placenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Placenta prévia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve uma gestante de 32 semanas (terceiro trimestre) com quadro de sangramento vaginal vermelho-vivo e indolor. Os dados fundamentais para o diagnóstico são:\n1. Ausência de dor abdominal.\n2. Tônus uterino normal (útero relaxado).\n3. Estabilidade hemodinâmica materna.\n4. Bem-estar fetal preservado (BCF 144 bpm).\n5. Antecedente de duas cesarianas prévias (fator de risco importante).\n\nEssas características formam o quadro clássico de Placenta Prévia.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. A rotura de vasa prévia manifesta-se tipicamente no momento da amniorrexe (ruptura das membranas). Como o sangue perdido é de origem fetal, ocorre sofrimento fetal agudo e rápido, com bradicardia e óbito se não houver intervenção imediata. No caso, não houve ruptura de membranas e o BCF está normal.\n\nb) INCORRETA. A rotura uterina é uma emergência grave que geralmente ocorre durante o trabalho de parto, apresentando dor abdominal intensa e súbita, interrupção das contrações, subida da apresentação fetal e sinais de choque materno. Embora a paciente tenha cicatrizes de cesárea (fator de risco), o quadro clínico de estabilidade e ausência de dor afasta essa hipótese.\n\nc) INCORRETA. A rotura do seio marginal (seio venoso) é um diagnóstico de exclusão. O quadro clínico pode ser semelhante ao da placenta prévia (sangramento indolor e tônus normal), porém costuma ocorrer em placentas de inserção normal, geralmente no final da gestação ou início do trabalho de parto, e com menor volume de sangramento. Diante da história de cesáreas prévias e sangramento no terceiro trimestre, a Placenta Prévia é a hipótese principal.\n\nd) INCORRETA. O Descolamento Prematuro de Placenta (DPP) caracteriza-se classicamente por dor abdominal súbita, sangramento vaginal (geralmente escurecido) e, principalmente, hipertonia uterina (útero de madeira). O sofrimento fetal é comum no DPP. O quadro da paciente (sangramento indolor e útero relaxado) é o oposto do esperado no DPP.\n\ne) CORRETA. A Placenta Prévia é a principal causa de sangramento na segunda metade da gestação com as seguintes características: progressivo, repetitivo, espontâneo, vermelho-vivo, indolor e com ausência de hipertonia uterina (o útero fica relaxado). O principal fator de risco é a cicatriz uterina prévia, e a paciente possui duas cesarianas anteriores, o que corrobora o diagnóstico.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:38.360Z"
+  },
+  {
+    "id": "AJUDA_dac18f0d-9cba-4190-9859-53c3c6209b6f",
+    "originalId": "dac18f0d-9cba-4190-9859-53c3c6209b6f",
+    "statement": "As medidas de saúde pública são fundamentais para a prevenção de doenças e promoção da qualidade de vida, contribuindo para a redução de desigualdades e custos com saúde. Uma doença com alta incidência e baixa prevalência provavelmente apresenta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Curta duração.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Alto índice de ataque.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Baixa magnitude.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alto risco atribuível na população.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A relação fundamental entre os principais indicadores epidemiológicos de frequência é descrita pela equação: Prevalência = Incidência x Duração média da doença. A incidência representa o fluxo de novos casos, enquanto a prevalência reflete o estoque total de indivíduos doentes em um dado momento.\n\nAlternativa a: Correta. Pela relação matemática citada, se o número de casos novos é elevado (alta incidência), mas o total de doentes acumulados na população permanece reduzido (baixa prevalência), significa que o indivíduo permanece doente por pouco tempo. Ou seja, a condição tem curta duração, com rápida resolução dos casos por cura ou por óbito. Exemplos clássicos incluem infecções respiratórias agudas autolimitadas ou doenças agudas de altíssima letalidade.\n\nAlternativa b: Incorreta. O coeficiente ou taxa de ataque é apenas uma medida de incidência cumulativa utilizada em investigações de surtos e populações delimitadas. Ter uma taxa de ataque alta reflete apenas uma alta incidência no contexto do surto, mas não explica o motivo de a prevalência global ser baixa.\n\nAlternativa c: Incorreta. A magnitude é a dimensão do problema de saúde na população, avaliada pela frequência de sua ocorrência (morbidade e mortalidade). Uma patologia que gera muitos casos novos tem magnitude epidemiológica expressiva, não baixa.\n\nAlternativa d: Incorreta. O risco atribuível na população é uma medida de impacto epidemiológico que estima a proporção da incidência de uma doença que seria evitada caso um fator de risco fosse completamente removido. Trata-se de uma métrica de causalidade e intervenção, não tendo relação direta com a dinâmica temporal de duração da doença que modula o estoque de casos prevalentes.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:38.360Z"
+  },
+  {
+    "id": "AJUDA_dac5310c-e4de-48a3-b7ff-efa33f228a95",
+    "originalId": "dac5310c-e4de-48a3-b7ff-efa33f228a95",
+    "statement": "Mulher, 45 anos, submetida a tireoidectomia total para tratamento de carcinoma papilífero de tireoide em estádio I. A cirurgia transcorreu sem anormalidades, porém no pós-operatório a paciente evoluiu com incapacidade de emitir sons mais agudos. Qual procedimento deveria ter sido adotado para evitar essa complicação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Utilização de tubo orotraqueal adequado para o calibre da luz laríngea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Evitar manipulação excessiva da glândula tireoide durante o procedimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Identificação do nervo vago no sulco traqueoesofágico antes do descolamento da tireoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ligadura individualizada dos vasos do polo superior da tireoide.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A incapacidade de emitir sons agudos após uma tireoidectomia é um sinal clínico clássico de lesão do ramo externo do nervo laríngeo superior. Esse nervo é o responsável pela inervação do músculo cricotireoideo, cuja função é alongar e tensionar as pregas vocais, permitindo que a voz alcance frequências mais altas.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A escolha do calibre do tubo orotraqueal é importante para evitar trauma na mucosa da laringe, estenose traqueal ou edema glótico no pós-operatório. No entanto, o uso de um tubo adequado não previne lesões nervosas decorrentes da dissecção cirúrgica da glândula tireoide.\n\nAlternativa b: Incorreta. Embora a manipulação delicada da glândula tireoide seja um princípio fundamental da técnica cirúrgica para evitar sangramentos e trauma tecidual, essa é uma recomendação genérica. Ela não substitui a manobra específica de identificação e proteção das estruturas nervosas adjacentes.\n\nAlternativa c: Incorreta. O nervo que se localiza no sulco traqueoesofágico é o nervo laríngeo recorrente, e não o nervo vago (embora o recorrente seja um ramo do vago). A lesão do nervo laríngeo recorrente causa paralisia da prega vocal ipsilateral, resultando em rouquidão ou soprosidade na voz, mas não é a causa específica da perda de sons agudos.\n\nAlternativa d: Correta. O ramo externo do nervo laríngeo superior caminha em estreita proximidade com a artéria e a veia tireoideas superiores, na região do polo superior da glândula. Para evitar a lesão deste nervo, a técnica cirúrgica correta consiste na dissecção e ligadura individualizada dos vasos do polo superior o mais próximo possível da cápsula tireoidiana. Se o cirurgião realizar uma ligadura em massa do pedículo superior, há um risco elevado de incluir o ramo externo do nervo laríngeo superior no clampeamento, levando à incapacidade de tensionar a prega vocal e, consequentemente, à perda dos tons agudos.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Tireoide",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:38.360Z"
+  },
+  {
+    "id": "AJUDA_dacb727c-c38b-460e-8206-11c255e008f2",
+    "originalId": "dacb727c-c38b-460e-8206-11c255e008f2",
+    "statement": "Homem de 62 anos, com artrite reumatoide em acompanhamento ambulatorial, apresenta fadiga progressiva. Hemograma mostra Hb 9,8 g/dL, VCM 78 fL. Solicitaram-se exames de ferro:\n• Ferro sérico: 35 µg/dL (VR: 60–170)\n• Ferritina: 180 ng/mL (VR: 30–400)\n• Saturação de transferrina: 12% (VR: 20–50)\n• Capacidade total de ligação do ferro (TIBC): 240 µg/dL (VR: 250–400)\nQual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia da doença crônica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Anemia ferropriva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anemia por deficiência de vitamina B12.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anemia hemolítica autoimune.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é fundamental diferenciar as duas principais causas de anemia microcítica que apresentam ferro sérico baixo: a anemia ferropriva e a anemia de doença crônica (ADC).\n\nO paciente apresenta artrite reumatoide, uma doença inflamatória crônica ativa. Em estados inflamatórios, ocorre a liberação de citocinas (como a interleucina-6) que estimulam a produção de hepcidina pelo fígado. A hepcidina bloqueia a ferroportina, impedindo a saída do ferro dos seus estoques (macrófagos e hepatócitos) para o sangue e reduzindo a absorção intestinal de ferro.\n\nAnálise dos dados laboratoriais:\n\n1. Ferritina (180 ng/mL): É o parâmetro mais discriminatório. Na anemia ferropriva, a ferritina estaria obrigatoriamente baixa (geralmente menor que 30 ng/mL), refletindo a falta de estoque. Na anemia de doença crônica, a ferritina está normal ou aumentada, pois o ferro está \"preso\" dentro das células de estoque e a própria ferritina se comporta como um reagente de fase aguda.\n\n2. TIBC (240 µg/dL): A capacidade total de ligação do ferro reflete indiretamente a quantidade de transferrina circulante. Na deficiência de ferro, o corpo aumenta a produção de transferrina para tentar captar qualquer ferro disponível, elevando o TIBC. Na inflamação (ADC), o TIBC está baixo ou no limite inferior da normalidade.\n\n3. VCM (78 fL): A anemia de doença crônica é classicamente normocítica e normocrômica, mas em cerca de 30% a 50% dos casos de longa duração, pode se tornar microcítica, como no caso deste paciente.\n\nAlternativa (a) Correta: O quadro clínico de doença inflamatória crônica (artrite reumatoide) associado a ferro sérico baixo com ferritina normal/alta e TIBC reduzido é o perfil clássico da anemia de doença crônica.\n\nAlternativa (b) Incorreta: Na anemia ferropriva, além de a história clínica geralmente envolver perdas sanguíneas ou má absorção, os exames mostrariam ferritina baixa (estoques vazios) e TIBC elevado (alta disponibilidade de transporte para pouco ferro).\n\nAlternativa (c) Incorreta: A deficiência de vitamina B12 causa uma anemia megaloblástica, caracterizada por macrocitose (VCM significativamente elevado, geralmente acima de 100-110 fL), o que contradiz o VCM de 78 fL apresentado.\n\nAlternativa (d) Incorreta: Anemias hemolíticas são tipicamente normocíticas ou macrocíticas (pela reticulocitose compensatória). Além disso, apresentariam elevação de bilirrubina indireta e LDH, sem o padrão de sequestro de ferro (TIBC baixo e ferritina normal/alta) característico da inflamação.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Artrite Reumatoide",
+      "Anemias"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:38.360Z"
+  },
+  {
+    "id": "AJUDA_daced60d-bbf3-4764-ad11-d613aeb69fd2",
+    "originalId": "daced60d-bbf3-4764-ad11-d613aeb69fd2",
+    "statement": "Puérpera de 48 horas pós-cesariana apresenta febre (38,8 °C), útero subinvoluído, doloroso à palpação e lóquios fétidos. O diagnóstico mais provável e o tratamento inicial mais adequado são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Endometrite puerperal – clindamicina associada à gentamicina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Infecção urinária – cefalexina por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mastite puerperal – oxacilina intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trombose séptica pélvica – anticoagulação imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deiscência de ferida operatória – exploração cirúrgica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE CLÍNICA DO CASO\n\nO quadro clínico descreve uma puérpera com febre alta no segundo dia pós-operatório de cesariana, acompanhada de sinais de comprometimento uterino (dor, subinvolução e lóquios fétidos). Esta apresentação compõe a clássica Tríade de Bumm, que é patognomônica da endometrite puerperal. A endometrite é a principal causa de febre no puerpério, sendo a cesariana o principal fator de risco, aumentando a incidência em até 30 vezes em comparação ao parto vaginal.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Correta. O diagnóstico de endometrite puerperal é clínico, baseado na tríade de febre, dor uterina à palpação e loquiação fétida. O tratamento padrão-ouro (esquema de Newton e Friedman) é a associação de clindamicina (cobertura para anaeróbios e Gram-positivos) e gentamicina (cobertura para Gram-negativos), administrados por via intravenosa até que a paciente esteja afebril e assintomática por 24 a 48 horas.\n\nAlternativa b) Incorreta. Embora a infecção urinária possa causar febre no puerpério, ela costuma vir acompanhada de sintomas disúricos (dor ao urinar, polaciúria) e não justifica os achados de útero doloroso e lóquios fétidos. Além disso, a cefalexina oral não seria a primeira escolha para uma infecção sistêmica com febre alta (38,8 °C) nesta fase.\n\nAlternativa c) Incorreta. A mastite puerperal geralmente ocorre após a primeira semana de amamentação (mais comum entre a 2ª e a 4ª semanas). O exame físico revelaria mamas com sinais flogísticos (calor, rubor, dor e endurecimento). O caso em questão foca claramente em sintomas pélvicos.\n\nAlternativa d) Incorreta. A trombose séptica pélvica é uma complicação rara da própria endometrite. Ela deve ser suspeitada quando a paciente mantém febre persistente apesar da antibioticoterapia adequada por 48 a 72 horas. Não é o diagnóstico inicial nem a conduta primária diante de uma paciente que acaba de apresentar os sintomas.\n\nAlternativa e) Incorreta. A deiscência de ferida operatória refere-se à separação das bordas da incisão cirúrgica (pele e aponeurose). Embora possa causar febre e dor local, não explicaria a alteração no odor dos lóquios nem a dor especificamente na palpação do corpo uterino (útero subinvoluído). A conduta de exploração cirúrgica imediata é reservada para casos específicos de evisceração ou suspeita de fasciíte necrosante, o que não é o quadro descrito.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:38.360Z"
+  },
+  {
+    "id": "AJUDA_dad37e51-5ff0-4f62-bf7e-bbedcb56bed1",
+    "originalId": "dad37e51-5ff0-4f62-bf7e-bbedcb56bed1",
+    "statement": "Homem de 82 anos de idade refere fadiga diária e perda de peso de 6 kg em dez meses de modo não intencional. Refere não conseguir subir dez degraus sem interromper para descansar, mas caminha 500 metros no plano sem auxílio. AP: HAS; DM2 e dislipidemia. Índice de Katz 6 pontos. Escala de Lawton 5 pontos. Exame físico: peso: 52 kg. De acordo com a escala FRAIL, o diagnóstico é",
+    "options": [
+      {
+        "id": "A",
+        "text": "pré-frágil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "frágil.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "robusto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sarcopenia primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "caquexia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A escala FRAIL e uma ferramenta simples e validada para o rastreio e diagnostico da sindrome de fragilidade em idosos. Ela e composta por 5 dominios autorreferidos, onde cada item positivo confere 1 ponto:\n\n1. F (Fatigue - Fadiga): Sentir-se cansado a maior parte do tempo no ultimo mes. O paciente relata fadiga diaria (1 ponto).\n2. R (Resistance - Resistencia): Dificuldade para subir um lance de escadas (10 degraus) sem descansar. O paciente relata nao conseguir subir sem parar para descansar (1 ponto).\n3. A (Ambulation - Ambulacao): Dificuldade para caminhar um quarteirao (100 a 200 metros) sem auxilio. O paciente caminha 500 metros no plano sem ajuda (0 pontos).\n4. I (Illness - Doencas): Presenca de 5 ou mais doencas cronicas de uma lista predefinida. O paciente apresenta apenas 3 comorbidades: HAS, DM2 e dislipidemia (0 pontos).\n5. L (Loss of weight - Perda de peso): Perda nao intencional de 5% ou mais do peso corporal nos ultimos 6 a 12 meses. O paciente perdeu 6 kg em 10 meses (peso anterior de 58 kg, perda de aproximadamente 10,3%), preenchendo o criterio (1 ponto).\n\nPontuacao total: 3 pontos (Fadiga + Resistencia + Perda de peso).\n\nInterpretacao da escala FRAIL:\n- 0 pontos: Robusto.\n- 1 a 2 pontos: Pre-fragil.\n- 3 a 5 pontos: Fragil.\n\nAnalise das alternativas:\n\nAlternativa A (Incorreta): O diagnostico de pre-fragilidade pela escala FRAIL e estabelecido quando a pontuacao e de 1 ou 2 pontos.\n\nAlternativa B (Correta): Com a somatoria de 3 pontos, o paciente atinge o ponto de corte para o diagnostico de fragilidade (3 a 5 pontos).\n\nAlternativa C (Incorreta): O estado robusto ocorre apenas quando o paciente tem pontuacao igual a zero, sem nenhum criterio positivo.\n\nAlternativa D (Incorreta): Sarcopenia e uma condicao clinica caracterizada pela perda de forca e massa muscular que necessita de criterios diagnosticos especificos (como forca de preensao palmar e avaliacao de massa muscular), nao sendo uma categoria diagnostica da escala FRAIL.\n\nAlternativa E (Incorreta): Caquexia e uma sindrome metabolica complexa associada a doenca subjacente e perda de peso grave, nao fazendo parte da classificacao proposta pela escala FRAIL.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:38.360Z"
+  },
+  {
+    "id": "AJUDA_dad7782c-01e9-438b-b0e8-7fb2875dcd62",
+    "originalId": "dad7782c-01e9-438b-b0e8-7fb2875dcd62",
+    "statement": "Descreve CORRETAMENTE aspectos do reumatismo de partes moles, a seguinte alternativa:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É caracterizado por inflamação de estruturas periarticulares, como tendões, bursas e fáscias, sendo o diagnóstico feito principalmente pela avaliação clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Deve ser tratado com repouso absoluto prolongado, uso de antibióticos de rotina e restrição total da articulação afetada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Necessita obrigatoriamente de exames de imagem avançados, como ressonância magnética, além de exames laboratoriais específicos para confirmação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve ser tratado prioritariamente com cirurgia, pois as medidas conservadoras geralmente não oferecem benefício clínico relevante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa (a) está correta porque o termo reumatismo de partes moles engloba uma série de condições que afetam as estruturas situadas ao redor das articulações, conhecidas como estruturas periarticulares. Isso inclui os tendões (tendinites), as bursas (bursites), as fáscias (fasciítes), os músculos e os ligamentos. O diagnóstico dessas afecções é essencialmente clínico, dependendo de uma anamnese que identifique o tipo de dor e o mecanismo de trauma ou sobrecarga, além de um exame físico que utilize manobras específicas para isolar a estrutura acometida.\n\nA alternativa (b) está incorreta pois o tratamento moderno do reumatismo de partes moles evita o repouso absoluto e prolongado, que pode resultar em atrofia muscular e rigidez articular (como a capsulite adesiva). O repouso deve ser relativo e limitado à fase aguda. O uso de antibióticos não é uma conduta de rotina, sendo indicado exclusivamente nos casos de bursites ou tenossinovites infecciosas (sépticas).\n\nA alternativa (c) está incorreta porque exames de imagem avançados, como a ressonância magnética ou a ultrassonografia, são considerados exames complementares. Eles são úteis em casos de dúvida diagnóstica, suspeita de ruptura completa ou quando o paciente não responde ao tratamento inicial, mas não são obrigatórios para o diagnóstico na maioria das situações. Da mesma forma, exames laboratoriais costumam ser normais nessas patologias e servem mais para excluir doenças reumáticas sistêmicas.\n\nA alternativa (d) está incorreta porque a cirurgia é reservada apenas como último recurso para casos crônicos, graves ou que não apresentaram melhora após meses de tratamento conservador adequado. Medidas como fisioterapia, correções ergonômicas, uso de anti-inflamatórios e aplicação de calor ou gelo são altamente eficazes e constituem a base do tratamento para a grande maioria dos pacientes.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Doenças de Partes Moles"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:58:38.360Z"
+  }
+]

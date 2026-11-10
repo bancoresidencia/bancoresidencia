@@ -1,0 +1,482 @@
+[
+  {
+    "id": "AJUDA_875d0fb5-374c-4f41-94c5-7a9422a5fbc5",
+    "originalId": "875d0fb5-374c-4f41-94c5-7a9422a5fbc5",
+    "statement": "Homem de 57 anos dá entrada no pronto-atendimento com queixa de dor abdominal em quadrante inferior esquerdo, febre aferida e diarréia com raias de sangue há 3 dias. Ao exame físico apresenta-se em regular estado geral, PAM = 65mmHg, FC = 98bpm, TAx = 37,9°C, abdome globoso, doloroso a palpação profusa, com sinais de peritonite. Exames laboratoriais - Leucometria = 17000/mm³ (88% de segmentados), PCR = 32mg/dl. Após realização de tomografia do abdome, recebe o diagnóstico de diverticulite aguda complicada (classificação de Hinchey II). Assinale a alternativa que indica a provável necessidade de tratamento cirúrgico:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presença de peritonite",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Leucocitose maior que 15000/mm³",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Temperatura axilar maior que 36,5°C",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "PCR maior que 30mg/dl",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro de diverticulite aguda complicada, classificada pela tomografia como Hinchey II. Na classificação original de Hinchey, o estágio II é caracterizado pela presença de um abscesso pélvico, retroperitoneal ou à distância do foco inflamatório inicial. O tratamento padrão para o Hinchey II costuma ser a antibioticoterapia associada à drenagem percutânea do abscesso (geralmente indicada quando a coleção é maior que 3 ou 4 cm). No entanto, a conduta cirúrgica torna-se necessária quando o quadro clínico sugere que a infecção não está mais bloqueada (localizada).\n\nJUSTIFICATIVA DAS ALTERNATIVAS\n\nALTERNATIVA A (CORRETA): A presença de sinais de peritonite ao exame físico (como dor à descompressão súbita e defesa abdominal) é a principal indicação clínica para tratamento cirúrgico de urgência. A peritonite indica que houve ruptura do abscesso ou progressão da doença para os estágios Hinchey III (peritonite purulenta) ou Hinchey IV (peritonite fecal). Nesses casos, o tratamento conservador ou a drenagem percutânea não são suficientes, sendo necessária a laparotomia ou laparoscopia para controle da fonte de infecção e lavagem da cavidade.\n\nALTERNATIVA B (INCORRETA): A leucocitose (17.000/mm³) é um achado laboratorial comum em processos infecciosos e inflamatórios. Embora ajude a avaliar a gravidade do paciente, não é, por si só, um critério que obrigue a realização de cirurgia. Muitos pacientes com leucocitose importante respondem bem ao tratamento com antibióticos.\n\nALTERNATIVA C (INCORRETA): A temperatura de 37,9 graus Celsius indica febre, que é um sinal sistêmico de infecção esperado na diverticulite. A presença de febre isolada não justifica uma intervenção cirúrgica, sendo um parâmetro utilizado para monitorar a resposta ao tratamento clínico instituído.\n\nALTERNATIVA D (INCORRETA): A Proteína C-Reativa (PCR) é um marcador de fase aguda inespecífico. Valores elevados sugerem uma inflamação sistêmica significativa, mas não são critérios determinantes para indicação cirúrgica. A decisão de operar baseia-se prioritariamente na clínica do paciente e nos achados de imagem que demonstrem complicações não passíveis de tratamento conservador.\n\nRESUMO PARA ESTUDO\n\nNa diverticulite aguda, as principais indicações de cirurgia de urgência são:\n1. Peritonite generalizada (purulenta ou fecal).\n2. Obstrução intestinal completa.\n3. Pneumoperitônio volumoso (sinal de perfuração livre).\n4. Falha do tratamento clínico ou da drenagem percutânea após 48 a 72 horas.\n\nComo o enunciado menciona sinais de peritonite ao exame físico, a alternativa A é a resposta correta.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:38.908Z"
+  },
+  {
+    "id": "AJUDA_875d2af5-0e63-456a-abfa-479f835dee1a",
+    "originalId": "875d2af5-0e63-456a-abfa-479f835dee1a",
+    "statement": "Mulher de 38 anos, previamente hígida, apresenta dor súbita em hipocôndrio direito com irradiação para dorso, associada a náuseas, sem febre, icterícia ou vômitos persistentes. Ultrassonografia na urgência evidencia vesícula com múltiplos cálculos, sem sinais ultrassonográficos de colecistite aguda (sem espessamento de parede, líquido pericolecístico ou sinal de Murphy ultrassonográfico positivo). Exames laboratoriais com hemograma, transaminases, amilase e lipase normais. Após analgesia inicial  com dipirona EV. a paciente persiste com dor intensa. Com base nas melhores evidências disponíveis, qual é a conduta analgésica inicial mais apropriada para esse quadro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar antiespasmódico isolado (escopolamina) como medicação de primeira escolha para alívio da dor biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar AINEs como primeira linha, pois reduzem dor, inflamação e risco de progressão para colecistite, podendo associar opioides se refratário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Evitar AINEs pelo risco de espasmo do esfincter de Oddi, devendo-se priorizar opioides em todos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "dministrar antibiótico profilático (ceftriaxona + metronidazol) e programar colecistectomia eletiva, pois dor biliar isolada já é indicação de terapia antimicrobiana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "anter observação clínica sem analgesia específica, já que cálculos assintomáticos são tratados apenas com cirurgia eletiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é compatível com cólica biliar (colelitíase sintomática), caracterizada por dor aguda em hipocôndrio direito, sem sinais de resposta inflamatória sistêmica (leucocitose ou febre) e com ultrassonografia demonstrando cálculos, mas com parede da vesícula preservada.\n\nAlternativa A: Incorreta. Embora os antiespasmódicos, como a escopolamina, sejam frequentemente utilizados na prática clínica brasileira, evidências científicas de alta qualidade, incluindo revisões da Cochrane, demonstram que eles são menos eficazes do que os AINEs no controle da dor biliar. Além disso, não possuem o benefício de reduzir a progressão para colecistite.\n\nAlternativa B: Correta. Os anti-inflamatórios não esteroidais (AINEs) são a primeira linha de tratamento para a dor biliar. Eles atuam bloqueando a síntese de prostaglandinas, que são mediadores da contração da vesícula e do aumento da pressão intraluminal. O uso de AINEs (como cetorolaco, diclofenaco ou tenoxicam) oferece analgesia superior aos antiespasmódicos e reduz o risco de a cólica biliar evoluir para uma colecistite aguda. Caso a dor persista após o uso de AINEs, os opioides podem ser associados.\n\nAlternativa C: Incorreta. O espasmo do esfíncter de Oddi é uma preocupação clássica associada aos opioides (especialmente a morfina), e não aos AINEs. Contudo, estudos mostram que esse efeito raramente tem importância clínica na cólica biliar, e os AINEs permanecem como a escolha preferencial pela sua fisiopatologia de ação.\n\nAlternativa D: Incorreta. A antibioticoterapia (como ceftriaxona e metronidazol) está indicada apenas quando há evidência de infecção ou inflamação aguda da vesícula (colecistite aguda) ou das vias biliares (colangite). Como a paciente não tem febre, leucocitose ou alterações ultrassonográficas de colecistite, o uso de antibióticos não se justifica.\n\nAlternativa E: Incorreta. Cálculos assintomáticos podem ser observados, mas a paciente em questão é sintomática e apresenta dor intensa. O controle álgico é obrigatório no atendimento de urgência. A observação sem analgesia é clinicamente inadequada para uma paciente com dor aguda estabelecida.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:38.908Z"
+  },
+  {
+    "id": "AJUDA_8768d219-1fda-47ed-b726-cf35ace48e7c",
+    "originalId": "8768d219-1fda-47ed-b726-cf35ace48e7c",
+    "statement": "Desde 1988, o Brasil tem estabelecido um sistema de saúde dinâmico e complexo (o Sistema Único de Saúde – SUS), baseado nos princípios da saúde como um direito do cidadão e um dever do Estado. O SUS tem o objetivo de prover uma atenção abrangente e universal, preventiva e curativa, por meio da gestão e prestação descentralizadas de serviços de saúde, promovendo a participação da comunidade em todos os níveis de governo. Essa participação foi garantida",
+    "options": [
+      {
+        "id": "A",
+        "text": "pela Lei nº 8.142/1990 que dispõe também sobre as transferências intergovernamentais de recursos financeiros.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "pelo Pacto da Saúde que, a partir da definição de objetivos e metas, promoveu a consolidação do SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pelas Normas Operacionais Básicas, que definiram as estratégias a serem tomadas ao longo dos anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pela Lei nº 8.080/1990 que definiu todas as formas de organização e funcionamento do SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O tema central da questão é a base legal do Controle Social no Sistema Único de Saúde (SUS). Para responder corretamente, é necessário distinguir as duas leis fundamentais que compõem a Lei Orgânica da Saúde (Leis nº 8.080 e nº 8.142).\n\nAlternativa a) Correta. A Lei nº 8.142, de 28 de dezembro de 1990, é o marco legal que garante a participação da comunidade na gestão do SUS. Ela instituiu as instâncias colegiadas: as Conferências de Saúde (que ocorrem a cada quatro anos) e os Conselhos de Saúde (permanentes e deliberativos). Além disso, essa lei estabeleceu os critérios para o repasse de recursos financeiros entre as esferas de governo (federal, estadual e municipal).\n\nAlternativa b) Incorreta. O Pacto pela Saúde, instituído em 2006, foi uma estratégia de gestão para qualificar o SUS por meio de metas e compromissos entre os gestores (Pacto pela Vida, em Defesa do SUS e de Gestão). Embora seja importante para a consolidação do sistema, ele não foi o instrumento que garantiu legalmente a participação da comunidade, que já estava estabelecida desde 1990.\n\nAlternativa c) Incorreta. As Normas Operacionais Básicas (NOBs) foram portarias publicadas ao longo da década de 1990 para regulamentar a descentralização e as formas de financiamento. Elas serviram para operacionalizar o sistema e definir o papel dos municípios, mas a garantia legal da participação popular advém da Lei nº 8.142.\n\nAlternativa d) Incorreta. A Lei nº 8.080/1990 é conhecida como a \"Lei Mãe\" do SUS, pois define os princípios, objetivos e a organização dos serviços. No entanto, no momento de sua sanção, os trechos que tratavam da participação popular e do financiamento foram vetados pelo então presidente Fernando Collor. Para suprir essa lacuna, foi editada, logo em seguida, a Lei nº 8.142. Portanto, a 8.080 não é a lei que garante a participação da comunidade.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:38.908Z"
+  },
+  {
+    "id": "AJUDA_8769b220-e5b7-42d0-ad78-2b9301324698",
+    "originalId": "8769b220-e5b7-42d0-ad78-2b9301324698",
+    "statement": "Adolescente de 16 anos procura o ambulatório com queixa de dor abdominal difusa e vômitos há dois dias, sem outros sinais e sintomas. A menstruação é irregular. Ela informa ter um namorado, vida sexual ativa e que faz uso irregular de camisinha. É filha mais velha de três irmãos. Está fora da escola e ajuda sua mãe cuidando da casa e dos irmãos. Ao exame físico, verificam-se IMC = 36, PA = 145x90mmHg e abdômen levemente doloroso difusamente. Além de prescrever antiemético e analgésico e orientar quanto à alimentação, a conduta indicada nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar beta-HCG e fazer propranolol sublingual e orientação alimentar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar lipidograma, encaminhar ao serviço social e prescrever anti-hipertensivo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar beta-HCG, orientação alimentar e verificar a PA em mais duas ocasiões",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "orientar a prática de atividade física, encaminhar ao serviço social e prescrever anti-hipertensivo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A resolução desta questão exige que o médico identifique as prioridades no atendimento de uma adolescente com múltiplos achados clínicos e sociais. Vamos analisar os pontos principais: dor abdominal em paciente sexualmente ativa, obesidade e pressão arterial elevada.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Embora a solicitação do beta-hCG seja imperativa para descartar gravidez (causa frequente de dor abdominal e vômitos em adolescentes sexualmente ativas), o uso de propranolol sublingual não é indicado. A pressão arterial de 145 x 90 mmHg em uma única consulta, especialmente em uma paciente com dor e estresse, não autoriza o diagnóstico imediato de hipertensão arterial sistêmica nem o início de medicação anti-hipertensiva aguda sem sinais de emergência.\n\nAlternativa (b) Incorreta. O lipidograma é importante para avaliar as comorbidades da obesidade (IMC = 36), e o encaminhamento ao serviço social é pertinente pela evasão escolar. No entanto, prescrever anti-hipertensivo imediatamente é uma conduta errada. O diagnóstico de hipertensão em pediatria e adolescência exige medidas repetidas em momentos distintos, preferencialmente com a paciente calma e sem dor.\n\nAlternativa (c) Correta. Esta é a conduta mais adequada. Primeiro, solicita-se o beta-hCG devido ao risco de gravidez (vida sexual ativa, uso irregular de preservativo e sintomas gastrointestinais). Segundo, a orientação alimentar é fundamental devido à obesidade evidente. Terceiro, quanto à pressão arterial, a conduta correta perante um valor elevado em adolescentes é a confirmação do achado em pelo menos mais duas ocasiões antes de rotular a paciente como hipertensa e iniciar tratamento farmacológico, evitando o erro diagnóstico causado pelo efeito do avental branco ou pela resposta fisiológica à dor.\n\nAlternativa (d) Incorreta. Assim como nas alternativas A e B, o erro principal reside na prescrição imediata de anti-hipertensivo. O tratamento medicamentoso para hipertensão em adolescentes geralmente é reservado para casos confirmados que não respondem à mudança de estilo de vida ou que já apresentam lesão de órgão-alvo. Além disso, essa alternativa ignora a necessidade clínica imediata de investigar a causa da dor abdominal (gravidez).\n\nResumo do raciocínio médico: Diante de uma adolescente com dor abdominal e vida sexual ativa, a primeira conduta é excluir gestação. Perante uma pressão arterial elevada em consulta isolada, a conduta é a reavaliação seriada, e não a medicação imediata. A obesidade deve ser abordada com orientações de estilo de vida.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Hipertensão Arterial na Criança e no Adolescente"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:38.908Z"
+  },
+  {
+    "id": "AJUDA_876fe546-e3d9-4ce7-9945-f546a3c56c23",
+    "originalId": "876fe546-e3d9-4ce7-9945-f546a3c56c23",
+    "statement": "Clarisse, 28 anos, procura atendimento na Unidade Básica de Saúde com queixa de dor no braço esquerdo após ser agredida pelo companheiro. Durante a consulta, ela relata episódios frequentes de violência verbal e física, mas diz que não deseja denunciar o agressor por medo de represálias. Ao exame físico, observa-se hematoma extenso no braço esquerdo e escoriações no rosto.\n\nQual deve ser a conduta do médico diante dessa situação, considerando as diretrizes do SUS e a legislação vigente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar anamnese e exame físico detalhado, registrar as lesões no prontuário, notificar o caso às autoridades competentes e orientar a paciente sobre os serviços de apoio disponíveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar anamnese e exame físico, emitir prescrição e fornecer orientações, não efetuar notificação, em razão da decisão da paciente de não denunciar o agressor, mantendo o sigilo e a confidencialidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acolher, prestar a assistência necessária, orientar a paciente a procurar uma delegacia para registrar a ocorrência, sem necessidade de notificação compulsória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Atender, não registrar a ocorrência respeitando a decisão da paciente de não denunciar, não realizar nenhuma notificação, mantendo o sigilo médico, marcando retorno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O atendimento a pessoas em situação de violência interpessoal, especialmente a violência contra a mulher, exige uma abordagem clínica, ética e legal bem estabelecida pelas diretrizes do SUS e pela legislação brasileira (Lei 10.778/2003 e Lei 13.931/2019). O profissional de saúde tem o dever de acolher, prestar assistência médica integral, documentar detalhadamente todas as lesões em prontuário (o que tem valor pericial e documental) e realizar a notificação compulsória. A notificação em saúde é um instrumento de vigilância epidemiológica e proteção social, sendo obrigatória independentemente da vontade da vítima de prestar queixa policial formal.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Descreve a conduta médica completa e adequada. O médico deve realizar uma avaliação clínica minuciosa, descrever detalhadamente o exame físico e as lesões no prontuário, preencher a ficha de notificação compulsória (SINAN) e comunicar às autoridades conforme preconiza a legislação, além de orientar a paciente e articulá-la com a rede intersetorial de apoio (como CREAS, CRAS, Centros de Referência da Mulher e delegacias especializadas).\n\nAlternativa B (Incorreta): O desejo da paciente de não formalizar queixa criminal não desobriga o médico de realizar a notificação compulsória. A notificação é um dever legal da saúde pública e não fere o sigilo médico, pois este é relativizado por justa causa e dever legal para a proteção da vida e integridade da vítima.\n\nAlternativa C (Incorreta): A notificação de violência doméstica e intrafamiliar contra a mulher é de notificação compulsória obrigatória pelos serviços de saúde. Dizer que não há necessidade de notificação contraria a legislação vigente.\n\nAlternativa D (Incorreta): Não registrar as lesões em prontuário e não realizar a notificação compulsória configura omissão de dever funcional e ético-legal. A simples prescrição e agendamento de retorno mantêm a paciente em situação de vulnerabilidade e risco iminente sem acionar as redes de apoio e proteção social.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Marcos Legais do Sistema Único de Saúde",
+      "Atenção Primária à Saúde",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:38.908Z"
+  },
+  {
+    "id": "AJUDA_87759843-44bc-4143-9793-054f74fb166b",
+    "originalId": "87759843-44bc-4143-9793-054f74fb166b",
+    "statement": "Recém-nascido a termo apresenta, no 1° minuto de vida, quadro de apneia e bradicardia, desvio do ictus à direita, abdome escavado e presença de ruídos hidroaéreos à ausculta do hemitórax esquerdo.\nNo decorrer do atendimento desse recém-nascido, em sala de parto, os procedimentos adequados a serem realizados são",
+    "options": [
+      {
+        "id": "A",
+        "text": "intubação traqueal e massagem cardíaca externa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "cateterismo umbilical e drenagem de hemitórax esquerdo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ventilação com óxido nítrico e administração de surfactante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ventilação com balão autoinflável com pressão expiratória final positiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE CLÍNICA:\nO quadro clínico apresentado é clássico de Hérnia Diafragmática Congênita (HDC). Os sinais que levam a esse diagnóstico são: recém-nascido com desconforto respiratório grave (apneia), abdome escavado (vazio, pois as vísceras migraram para o tórax), desvio do ictus cordis para a direita (o que indica que o conteúdo abdominal está empurrando o mediastino para o lado oposto) e a presença de ruídos hidroaéreos no hemitórax esquerdo.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) CORRETA: Diante de uma suspeita de Hérnia Diafragmática Congênita na sala de parto, a regra de ouro é evitar a ventilação com balão e máscara (VPP). Isso ocorre porque a ventilação por máscara envia ar também para o esôfago e estômago; como essas estruturas estão dentro do tórax, elas se distendem e comprimem ainda mais os pulmões, piorando drasticamente a insuficiência respiratória. Assim, a intubação traqueal imediata é o procedimento correto para estabilizar a via aérea sem distender o trato gastrointestinal. A massagem cardíaca externa é indicada conforme o protocolo de reanimação neonatal, uma vez que o paciente apresenta bradicardia persistente (frequência cardíaca inferior a 60 bpm) mesmo após as manobras iniciais de ventilação.\n\nAlternativa (b) INCORRETA: Embora o cateterismo umbilical possa ser útil para a monitorização posterior e infusão de líquidos, ele não é a prioridade na reanimação imediata. A drenagem do hemitórax esquerdo é um erro grave neste contexto, pois o que se ouve no tórax são alças intestinais e não ar (pneumotórax). A inserção de um dreno de tórax causaria a perfuração do intestino.\n\nAlternativa (c) INCORRETA: O óxido nítrico é um vasodilatador pulmonar usado para tratar a hipertensão pulmonar persistente, que frequentemente acompanha a HDC, e o surfactante pode ser indicado em casos de prematuridade ou inativação do surfactante nativo. No entanto, essas são terapias de suporte avançado realizadas na Unidade de Terapia Intensiva Neonatal e não procedimentos de primeira linha para um recém-nascido em apneia e bradicardia no primeiro minuto de vida em sala de parto.\n\nAlternativa (d) INCORRETA: Como mencionado, o uso de balão autoinflável (VPP com máscara) é formalmente contraindicado na Hérnia Diafragmática Congênita. A pressão positiva exercida pela máscara infla o estômago e as alças intestinais que estão localizadas no tórax, aumentando a compressão sobre o pulmão hipoplásico e desviando ainda mais o mediastino, o que pode levar ao colapso cardiovascular imediato.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": 85.17771021979036,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:38.908Z"
+  },
+  {
+    "id": "AJUDA_877ccd9a-4dc5-464b-937d-6dfab78ebb09",
+    "originalId": "877ccd9a-4dc5-464b-937d-6dfab78ebb09",
+    "statement": "Na enfermaria da Gastroenterologia, você acompanha um paciente do sexo masculino, sabidamente, etilista crônico, portador de cirrose hepática (Child-Pugh C), 59 anos, não abstêmio. Você é chamado pelo plantão para avaliar relato de vômitos com sangue. Ao exame: PA 90×60 mmHg, FC 120 bpm, FR 24 irpm, SpO₂ 94% em ar ambiente. Encefalopatia grau II, abdome ascítico, circulação colateral visível. Laboratório: Hb 8,2 g/dL, plaquetas 75.000/mm³, TP 60%, creatinina 1,4 mg/dL. Qual deve ser a conduta inicial ESPECÍFICA, além da reposição volêmica controlada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transfundir plasma fresco congelado e levar para endoscopia de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Passar sonda nasogástrica e iniciar lavagem gástrica vigorosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar octréotideo, IBP e antibiótico profilático e endoscopia em 12h.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar IBP em dose dobrada e endoscopia em 48h.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO caso clínico descreve um paciente com cirrose hepática Child-Pugh C (estágio avançado) apresentando um quadro de hemorragia digestiva alta (HDA). Os sinais de instabilidade hemodinâmica (hipotensão e taquicardia) associados ao histórico de cirrose sugerem fortemente que a origem do sangramento seja variceal (varizes esofágicas ou gástricas). Em pacientes cirróticos com HDA, o manejo deve ser agressivo e focado em reduzir a pressão portal, prevenir infecções e realizar o diagnóstico/tratamento endoscópico precocemente.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A transfusão de plasma fresco congelado não é uma medida prioritária inicial, a menos que haja uma coagulopatia grave com sangramento ativo refratário, o que não é o caso (TP de 60%). Além disso, essa alternativa ignora a necessidade fundamental de antibioticoterapia profilática e de drogas vasoativas (como octreotídeo ou terlipressina) antes da endoscopia.\n\nAlternativa b) Incorreta. O uso de sonda nasogástrica para lavagem gástrica não traz benefício na sobrevida ou na redução do sangramento em casos de varizes esofágicas. Atualmente, a lavagem gástrica \"vigorosa\" é considerada uma prática obsoleta e potencialmente traumática, não fazendo parte das diretrizes modernas de manejo da HDA variceal.\n\nAlternativa c) Correta. Esta alternativa descreve o tripé fundamental do tratamento da HDA no cirrótico: 1. Droga vasoativa (Octreotídeo, Terlipressina ou Somatostatina) para reduzir a pressão portal e o fluxo sanguíneo nas varizes; 2. Antibioticoterapia profilática (geralmente Ceftriaxone ou Norfloxacino), que é mandatória, pois reduz drasticamente a mortalidade e o risco de ressangramento; 3. Inibidor de Bomba de Prótons (IBP), que, embora menos importante que a droga vasoativa no sangramento variceal, é utilizado para cobrir a possibilidade de úlcera péptica e auxiliar na cicatrização após a ligadura elástica. A endoscopia deve ser realizada, idealmente, nas primeiras 12 horas após a estabilização hemodinâmica inicial.\n\nAlternativa d) Incorreta. O prazo de 48 horas para a realização da endoscopia é muito longo para um paciente com suspeita de sangramento por varizes, o que aumenta o risco de óbito. Além disso, a alternativa ignora o uso de antibióticos e de drogas vasoativas, que são essenciais para o controle do sangramento portal.\n\nSÍNTESE DO MANEJO ESPECÍFICO\n\nDiante de um cirrótico com hemorragia digestiva, a conduta deve sempre incluir a estabilização hemodinâmica cuidadosa (evitando super-hidratação para não aumentar a pressão portal), início imediato de drogas vasoativas, antibioticoterapia profilática e planejamento de endoscopia digestiva alta precoce (em até 12 horas). O gabarito é a alternativa C, por contemplar todas essas medidas essenciais.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:38.908Z"
+  },
+  {
+    "id": "AJUDA_877fbafb-3311-4935-b580-503ead86ddca",
+    "originalId": "877fbafb-3311-4935-b580-503ead86ddca",
+    "statement": "A transmissão habitual da doença de Chagas ocorre intradomiciliarmente, por via cutânea ou mucosa, com a contaminação por fezes de vetores infectados, insetos dos gêneros",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aedes, Culex e Anopheles.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cimex, Culex e Triatoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Culex, Panstrongylus e Ixodes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Triatoma, Rhodnius e Panstrongylus.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A doença de Chagas, ou tripanossomíase americana, é causada pelo protozoário Trypanosoma cruzi. A forma clássica de transmissão descrita na questão envolve a participação de insetos hematófagos da subfamília Triatominae, conhecidos popularmente como barbeiros, chupanças ou bicudos. Esses insetos não injetam o parasita pela saliva; a infecção ocorre quando o inseto defeca durante ou logo após o repasto sanguíneo, e as formas infectantes presentes nas fezes penetram no hospedeiro pelo orifício da picada, por lesões de coceira ou pelas mucosas (ocular e oral).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Os gêneros citados pertencem à família Culicidae (mosquitos). O Aedes é o principal vetor de arboviroses como Dengue, Zika e Chikungunya; o Culex é o pernilongo comum, vetor da Filariose linfática; e o Anopheles é o vetor da Malária. Nenhum deles transmite a doença de Chagas.\n\nAlternativa b: Incorreta. O gênero Cimex corresponde aos percevejos de cama, que embora sejam hematófagos, não são vetores do Trypanosoma cruzi. O Culex é um mosquito comum. Apenas o Triatoma pertence ao grupo dos vetores da doença de Chagas.\n\nAlternativa c: Incorreta. O Culex é um mosquito. O Panstrongylus é, de fato, um dos gêneros vetores de Chagas. Já o Ixodes é um gênero de carrapatos, responsável pela transmissão de patógenos como os da Doença de Lyme.\n\nAlternativa d: Correta. Esta alternativa elenca os três principais gêneros de triatomíneos de importância epidemiológica nas Américas. O gênero Triatoma (ex: Triatoma infestans) é o mais conhecido no ciclo domiciliar; o gênero Rhodnius (ex: Rhodnius prolixus) é comum em palmeiras e áreas rurais; e o gênero Panstrongylus (ex: Panstrongylus megistus) é um importante vetor tanto em ambientes silvestres quanto domiciliares. Todos são capazes de transmitir o T. cruzi via contaminação por fezes e urina.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Parasitoses"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:38.908Z"
+  },
+  {
+    "id": "AJUDA_8785f63b-fd1d-4bfe-a49d-1a2a7d65de0a",
+    "originalId": "8785f63b-fd1d-4bfe-a49d-1a2a7d65de0a",
+    "statement": "Sobre fraturas ósseas, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A necrose asséptica é uma complicação precoce associada a fraturas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fraturas por estresse representam o estágio final das lesões por estresse nos ossos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A formação do calo ósseo ocorre no estágio inicial da consolidação da fratura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A pseudoartrose é uma complicação imediata das fraturas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise detalhada das alternativas:\n\nAlternativa a) Incorreta. A necrose asséptica (também chamada de osteonecrose) é uma complicação tardia das fraturas, não precoce. Ela decorre da interrupção do suprimento sanguíneo para um fragmento ósseo (comum em fraturas do colo do fêmur ou do escafoide), e suas manifestações clínicas e radiográficas levam meses para se tornarem evidentes.\n\nAlternativa b) Correta. As lesões ósseas por estresse ocorrem em um \"continuum\" de gravidade. O processo começa com um aumento da atividade reabsortiva (reação de estresse ou edema ósseo), que enfraquece a estrutura. Se a carga mecânica repetitiva persistir sem tempo adequado para a recuperação, ocorre a falha mecânica completa, resultando na fratura por estresse. Portanto, a fratura é o estágio final dessa evolução de sobrecarga.\n\nAlternativa c) Incorreta. O processo de consolidação óssea indireta é dividido em três fases: inflamatória, reparadora e de remodelamento. A formação do calo ósseo (primeiro o calo mole e depois o calo duro) ocorre na fase reparadora, que é a fase intermediária. O estágio inicial é a fase inflamatória, caracterizada pela formação do hematoma e invasão de células de defesa.\n\nAlternativa d) Incorreta. A pseudoartrose, ou \"não união\", é definida como a falha definitiva da consolidação óssea após o tempo esperado para a cura (geralmente considerada após 6 a 9 meses do trauma). Trata-se de uma complicação tardia e crônica, e nunca uma complicação imediata, que ocorreria nas primeiras horas ou dias após a fratura.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Fraturas e Luxações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:38.909Z"
+  },
+  {
+    "id": "AJUDA_87887749-3d6f-4e83-98c5-93bf1a8ad495",
+    "originalId": "87887749-3d6f-4e83-98c5-93bf1a8ad495",
+    "statement": "Paciente com prótese valvar aórtica biológica, febre e sopro novo. Ecocardiograma mostra vegetação de 18 mm no lado arterial da válvula. Nas últimas 24 horas apresentou déficit neurológico compatível com AVC embólico isquêmico. Hemoculturas positivas para Staphylococcus aureus sensível. Qual a melhor conduta cirúrgica/antimicrobiana?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas terapia antimicrobiana por 6 semanas, sem cirurgia, por risco hemorrágico cerebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cirurgia valvar urgente indicada apesar do AVC isquêmico recente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aguardar 6 semanas após AVC para realizar cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trocar a prótese por via percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um quadro de endocardite infecciosa (EI) em prótese valvar biológica aórtica, causada por um agente agressivo (*Staphylococcus aureus*), cursando com uma vegetação de grande dimensão (18 mm) e uma complicação embólica recente (AVC isquêmico nas últimas 24 horas).\n\nA análise das alternativas segue abaixo:\n\nAlternativa (a) Incorreta: O tratamento apenas com antimicrobianos é insuficiente para este paciente. O *S. aureus* em prótese valvar é uma condição de alta virulência e destruição tecidual. Além disso, vegetações maiores que 10 mm associadas a eventos embólicos prévios são indicações clássicas de intervenção cirúrgica para prevenir novos episódios, que costumam ocorrer precocemente durante o tratamento.\n\nAlternativa (b) Correta: Esta é a conduta preconizada pelas principais diretrizes (SBC, ESC e AHA). A cirurgia cardíaca deve ser realizada precocemente (urgente) em pacientes com EI que apresentam vegetações grandes (> 10 mm) e já sofreram um evento embólico, especialmente se houver disfunção de prótese ou patógenos agressivos. Em casos de AVC isquêmico, desde que o paciente não apresente coma ou instabilidade neurológica grave, a cirurgia não deve ser adiada, pois o risco de um novo embolismo (que pode ser ainda mais grave) supera o risco de piora neurológica perioperatória.\n\nAlternativa (c) Incorreta: O atraso da cirurgia por 4 a 6 semanas é geralmente reservado para pacientes que sofreram um AVC hemorrágico, devido ao alto risco de expansão do sangramento durante a anticoagulação plena necessária para a circulação extracorpórea. No AVC isquêmico, se houver indicação cirúrgica clara (como vegetação de 18 mm e *S. aureus*), a cirurgia deve ser feita o quanto antes.\n\nAlternativa (d) Incorreta: A troca valvar percutânea (TAVI) não é indicada no tratamento da endocardite infecciosa ativa. O tratamento cirúrgico da endocardite requer o desbridamento cirúrgico direto de todo o tecido infectado, a remoção de abscessos e a limpeza da região anular, procedimentos que só são realizados com segurança através da cirurgia convencional aberta.\n\nResumo do raciocínio:\n1. Paciente com endocardite em prótese por *S. aureus* (indicação cirúrgica).\n2. Vegetação muito grande (18 mm) com embolização prévia (indicação de cirurgia urgente para prevenção de novo embolismo).\n3. AVC isquêmico recente (não contraindica cirurgia urgente; o benefício de prevenir novo embolismo supera o risco).\n4. Conduta: Antibioticoterapia direcionada + Cirurgia valvar urgente.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Endocardite Bacteriana"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:11:38.909Z"
+  }
+]

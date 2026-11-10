@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_b75a0cb4-acf4-468c-a14a-7f348671687c",
+    "originalId": "b75a0cb4-acf4-468c-a14a-7f348671687c",
+    "statement": "Paciente do sexo masculino, 72 anos, ex-tabagista com carga tabágica de 45 maços-ano, hipertenso em uso de losartana 50 mg/dia, procura atendimento ambulatorial por dispneia e tosse seca progressivas há 2 anos. Ao exame físico, apresenta frequência respiratória de 21 irpm, murmúrio vesicular reduzido nos ápices e estertores crepitantes finos bibasais. Saturação periférica de oxigênio em ar ambiente: 92%. Traz tomografia computadorizada de tórax realizada durante internação devido a piora da tosse há 2 meses, que mostra áreas de enfisema centrolobular nos lobos superiores associadas a reticulações, bronquiectasias e bronquiolectasias de tração nos lobos inferiores, e cistos de faveolamento, sem consolidações ou derrame pleural.\n\nConsiderando o quadro clínico e o achado tomográfico, o diagnóstico provável e o exame complementar a ser solicitado para confirmar a repercussão funcional da doença são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "DPOC com bronquiectasias císticas e dosagem de alfa- 1 antitripsina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "enfisema pulmonar associado a bronquite crônica e gasometria arterial em repouso sem uso de oxigênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "superposição DPOC-fibrose pulmonar e prova de função pulmonar completa com teste de difusão de monóxido de carbono.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "doença intersticial fibrosante - fibrose pulmonar idiopática e teste de caminhada de seis minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO caso apresenta um paciente idoso, ex-tabagista pesado (45 maços-ano), com sintomas respiratórios crônicos (dispneia e tosse seca há 2 anos). O exame físico revela um dado crucial: estertores crepitantes finos nas bases (tipo velcro), que são característicos de doenças pulmonares intersticiais. A tomografia de tórax é o ponto-chave para o diagnóstico, descrevendo a coexistência de dois padrões distintos: enfisema centrolobular nos lobos superiores e achados de fibrose (reticulações, faveolamento e bronquiectasias de tração) nos lobos inferiores.\n\nDIAGNÓSTICO: SÍNDROME DE COMBINAÇÃO FIBROSE PULMONAR E ENFISEMA (CPFE)\nEssa condição, também referida como superposição DPOC-fibrose, ocorre tipicamente em homens tabagistas. A fisiopatologia é marcada pela coexistência de enfisema nos ápices e fibrose nas bases. Funcionalmente, essa síndrome é peculiar: os volumes pulmonares na espirometria (VEF1 e CVF) podem estar relativamente preservados ou próximos do normal, pois a hiperinsuflação do enfisema compensa a restrição da fibrose. No entanto, há uma redução acentuada e desproporcional da capacidade de difusão de monóxido de carbono (DLCO) e hipoxemia importante ao esforço.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\nO diagnóstico de superposição DPOC-fibrose correlaciona-se perfeitamente com os achados tomográficos (enfisema superior e fibrose inferior). Para confirmar a repercussão funcional, a prova de função pulmonar completa, incluindo a difusão de monóxido de carbono (DLCO), é essencial, pois é o parâmetro que melhor reflete a gravidade do comprometimento da unidade alvéolo-capilar nessa síndrome específica.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) DPOC com bronquiectasias císticas e dosagem de alfa-1 antitripsina: As bronquiectasias descritas na TC são \"de tração\", o que indica retração do parênquima por fibrose, e não uma doença primária das vias aéreas como a bronquiectasia cística. Além disso, a deficiência de alfa-1 antitripsina costuma causar enfisema panlobular com predomínio nas bases, o oposto do descrito (enfisema centrolobular nos ápices).\n\nb) Enfisema pulmonar associado a bronquite crônica e gasometria arterial: A bronquite crônica é um diagnóstico clínico definido por tosse produtiva na maioria dos dias por pelo menos 3 meses em 2 anos consecutivos; o paciente em questão tem tosse seca. Além disso, a gasometria isolada não avalia a repercussão funcional completa e os volumes pulmonares. Os achados de faveolamento na TC não são explicados apenas pela bronquite crônica.\n\nd) Doença intersticial fibrosante - fibrose pulmonar idiopática e teste de caminhada de seis minutos: Embora o padrão de base (faveolamento e bronquiectasias de tração) sugira um padrão de Pneumonia Intersticial Usual (UIP), comum na Fibrose Pulmonar Idiopática (FPI), a questão enfatiza a presença de enfisema centrolobular importante nos lobos superiores em um grande fumante. Isso caracteriza a síndrome combinada (CPFE), e não apenas a FPI isolada. O teste de caminhada avalia a capacidade funcional, mas a prova de função pulmonar com difusão é mais completa para a caracterização fisiopatológica inicial.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:09.801Z"
+  },
+  {
+    "id": "AJUDA_b75d3f2c-782e-4ea5-b2d2-ed3f6024fe12",
+    "originalId": "b75d3f2c-782e-4ea5-b2d2-ed3f6024fe12",
+    "statement": "Um homem de 36 anos, vítima de trauma abdominal fechado após queda de altura, foi submetido à laparotomia para controle de sangramento intra-abdominal. Encontra-se em unidade intensiva, grave, sedado e intubado. Nas horas seguintes à intervenção cirúrgica, evolui com distensão abdominal importante, necessidade de aumento progressivo dos parâmetros da ventilação mecânica, hipotensão persistente, apesar de reanimação volêmica, oligúria e acidose metabólica progressiva com retenção importante de CO2. Quais são o diagnóstico mais provável e a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Íleo paralítico pós-operatório; manter observação clínica, analgesia e aguardar retorno do trânsito intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome compartimental abdominal; indicar descompressão abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Choque séptico primário; iniciar antibioticoterapia de amplo espectro e evitar reabordagem cirúrgica nesse momento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipovolemia residual isolada; intensificar reposição volêmica e de hemoderivados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hipertensão intra-abdominal sem síndrome compartimental; manter tratamento conservador.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico: síndrome compartimental abdominal (SCA), com indicação de laparotomia descompressiva. A alternativa correta é a (b).\n\nConceitos-chave:\n- Hipertensão intra-abdominal (HIA) é a pressão intra-abdominal (PIA) sustentada ≥ 12 mmHg. Normal em adultos críticos: 5 a 7 mmHg.\n- SCA é a PIA sustentada > 20 mmHg, com ou sem pressão de perfusão abdominal < 60 mmHg, associada a uma nova disfunção ou falência de órgão.\n- A PIA é medida pela pressão vesical, com a bexiga instilada com no máximo 25 mL de soro, paciente em decúbito dorsal e medida ao final da expiração.\n- Fatores de risco presentes no caso: trauma abdominal fechado, sangramento intra-abdominal, laparotomia de controle de danos, grande reposição volêmica e hemoderivados, acidose, hipotermia e coagulopatia (a tríade letal).\n\nFisiopatologia no caso:\n- Distensão abdominal importante: aumento do conteúdo e do edema visceral após reanimação volêmica e hemorragia.\n- Aumento das pressões ventilatórias e hipercapnia: o diafragma é empurrado para cima, reduzindo a complacência pulmonar e a ventilação.\n- Hipotensão refratária à volemia: compressão da veia cava inferior e redução do retorno venoso e do débito cardíaco.\n- Oligúria: redução da perfusão renal e compressão de veias e parênquima renais. Isso costuma ser a primeira disfunção orgânica.\n- Acidose metabólica progressiva: hipoperfusão tecidual e mesentérica.\n\nEsse conjunto de disfunções respiratória, cardiovascular e renal em pós-operatório de trauma é a apresentação clássica da SCA. O tratamento definitivo da SCA refratária ao manejo clínico é a laparotomia descompressiva, com manutenção do abdome aberto (laparostomia) e fechamento temporário. Medidas clínicas (sedação e analgesia, bloqueio neuromuscular, sonda gástrica e retal, drenagem de coleções, otimização do balanço hídrico) são adjuvantes e não devem atrasar a cirurgia quando já há falência orgânica.\n\nAnálise das alternativas:\na) Incorreta. O íleo paralítico causa distensão, mas não explica a hipotensão refratária, a oligúria e a piora ventilatória com hipercapnia. Aguardar seria perigoso, pois a SCA é potencialmente fatal.\nb) Correta. O quadro tem fator de risco, distensão e disfunção de múltiplos órgãos (pulmão, rim e hemodinâmica). A conduta é a descompressão cirúrgica.\nc) Incorreta. Não há evidência de foco infeccioso nem tempo suficiente para um choque séptico primário. Evitar a reabordagem seria um erro, pois a causa mecânica exige intervenção.\nd) Incorreta. Mais volume e hemoderivados agravariam o edema visceral e a PIA. A hipotensão persiste apesar da reanimação, e a causa é a redução do retorno venoso por compressão.\ne) Incorreta. Já existe disfunção orgânica, o que define SCA e não apenas HIA. O tratamento conservador isolado é insuficiente nesse cenário.\n\nResumo: após trauma e reanimação volêmica maciça, distensão abdominal com falência ventilatória, hemodinâmica e renal indica SCA, tratada com laparotomia descompressiva.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:09.801Z"
+  },
+  {
+    "id": "AJUDA_b76e824a-e5d3-4c27-a3ef-a984330f541b",
+    "originalId": "b76e824a-e5d3-4c27-a3ef-a984330f541b",
+    "statement": "Paciente, 62 anos, com diagnóstico prévio de úlcera duodenal, apresenta sangramento ativo em jato durante endoscopia digestiva alta após relatar presença de sangue nas fezes. A classificação para úlcera, de acordo com a classificação de Forrest, e o risco de ressangramento são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "IIA, 50%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "IA, 90%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "IB, 10 - 20%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "IIB, 25 - 30%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda um tema fundamental na gastroenterologia e na cirurgia: a Classificação de Forrest para úlceras pépticas. Esta classificação é utilizada durante a endoscopia digestiva alta (EDA) para descrever o aspecto da úlcera, prever o risco de ressangramento e orientar a necessidade de terapia endoscópica.\n\nO enunciado descreve um sangramento ativo em jato. De acordo com os critérios de Forrest, temos:\n\nForrest I: Sangramento ativo.\n- IA: Sangramento arterial em jato (spurting).\n- IB: Sangramento em \"babação\" ou gotejamento (oozing).\n\nForrest II: Sinais de sangramento recente (estigmas).\n- IIA: Vaso visível não sangrante.\n- IIB: Coágulo aderido.\n- IIC: Mancha de hematina (base negra).\n\nForrest III: Úlcera com base limpa, sem estigmas de sangramento.\n\nAnálise das alternativas:\n\na) Incorreta. A classificação IIA corresponde ao vaso visível (não sangrante no momento do exame). Embora o risco de ressangramento citado (50%) esteja correto para essa categoria, ela não condiz com a descrição de \"sangramento ativo em jato\".\n\nb) Correta. O sangramento em jato é a definição clássica do Forrest IA. Por ser um sangramento arterial pulsátil, apresenta o maior risco de persistência ou ressangramento caso não seja tratado, atingindo índices de até 90%.\n\nc) Incorreta. O Forrest IB também é um sangramento ativo, mas do tipo \"babação\" (venoso ou capilar), sem a pressão observada no jato arterial. O risco de ressangramento para IB é consideravelmente menor que o do IA, situando-se geralmente entre 10% e 30%.\n\nd) Incorreta. A classificação IIB refere-se à presença de um coágulo aderido sobre a cratera da úlcera. Embora o risco de ressangramento de 25-30% seja uma estimativa aceita para coágulos que não são removidos, o quadro clínico de sangramento ativo em jato exclui essa opção.\n\nResumo dos riscos de ressangramento por Forrest:\n- IA (Jato): ~90%\n- IB (Babação): ~10-30%\n- IIA (Vaso visível): ~40-50%\n- IIB (Coágulo aderido): ~20-30%\n- IIC (Mancha de hematina): ~5-10%\n- III (Base limpa): <5%",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:09.801Z"
+  },
+  {
+    "id": "AJUDA_b780d8b4-bfa0-4ec4-ad6e-09836a79c008",
+    "originalId": "b780d8b4-bfa0-4ec4-ad6e-09836a79c008",
+    "statement": "Um menino de 5 anos é trazido ao consultório por apresentar fadiga, irritabilidade e hematomas espontâneos. Ao exame físico, a mãe nota que ele tem gengivas inchadas e sangrantes, além de algumas lesões pontuais na pele. A criança tem uma dieta restrita, com baixa ingestão de frutas e vegetais. Qual é a deficiência vitamínica mais provável que está causando esses sintomas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipovitaminose A",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipovitaminose K",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipovitaminose D",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipovitaminose C",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A análise do quadro clínico descrito aponta para um caso clássico de escorbuto, que é a manifestação clínica da deficiência de vitamina C (ácido ascórbico). O diagnóstico é fundamentado na tríade de dieta restritiva, manifestações hemorrágicas e alterações gengivais.\n\nA alternativa (d) está correta, pois a vitamina C é um cofator essencial para as enzimas prolil-hidroxilase e lisil-hidroxilase, responsáveis pela hidroxilação dos resíduos de prolina e lisina no colágeno. Sem essa etapa, as fibras de colágeno tornam-se instáveis, resultando em extrema fragilidade capilar e defeitos no tecido conjuntivo. Os principais sintomas incluem fadiga, irritabilidade, petéquias perifoliculares (lesões pontuais), equimoses, gengivas esponjosas e sangrantes, além de dor óssea em crianças devido a hemorragias subperiosteais. A história de baixa ingestão de frutas e vegetais corrobora diretamente essa hipótese.\n\nA alternativa (a) está incorreta. A deficiência de vitamina A (hipovitaminose A) manifesta-se primariamente por alterações oculares, como xeroftalmia (olho seco), manchas de Bitot e cegueira noturna, além de hiperqueratose folicular. Não costuma apresentar o quadro hemorrágico e gengival descrito.\n\nA alternativa (b) está incorreta. Embora a deficiência de vitamina K leve a distúrbios de coagulação e hematomas espontâneos por comprometer a síntese dos fatores II, VII, IX e X, ela não causa o inchaço gengival característico nem as lesões perifoliculares. Além disso, a vitamina K é amplamente encontrada em diversos alimentos e produzida pela microbiota intestinal, sendo menos comum em dietas restritivas simples sem distúrbios absortivos associados.\n\nA alternativa (c) está incorreta. A deficiência de vitamina D em crianças causa o raquitismo, caracterizado por deformidades ósseas (como o rosário raquítico e pernas arqueadas), atraso no fechamento das fontanelas e fraqueza muscular, mas não está associada a sangramentos gengivais ou fragilidade capilar cutânea.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:09.801Z"
+  },
+  {
+    "id": "AJUDA_b7872887-0f51-4c51-99f5-d1addc635679",
+    "originalId": "b7872887-0f51-4c51-99f5-d1addc635679",
+    "statement": "Qual achado é característico da síndrome nefrótica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hematúria dismórfica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Proteinúria maior que 3,5 g/dia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Oligúria persistente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipertensão grave precoce",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Piúria estéril.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A síndrome nefrótica é definida por uma alteração na permeabilidade da barreira de filtração glomerular, levando a uma perda maciça de proteínas na urina. Para entender a questão, é fundamental diferenciar os achados da síndrome nefrótica dos achados da síndrome nefrítica.\n\nAlternativa a) Incorreta. A hematúria dismórfica (presença de hemácias que sofrem deformação ao passar pelo glomérulo) é o achado clássico da síndrome nefrítica, indicando um processo inflamatório agudo no glomérulo. Embora algumas causas de síndrome nefrótica possam apresentar hematúria discreta, ela não é o achado definidor ou característico do quadro.\n\nAlternativa b) Correta. A proteinúria em níveis nefróticos, definida em adultos como uma perda superior a 3,5 g em 24 horas, é o marco fisiopatológico central da síndrome nefrótica. É essa perda proteica maciça que desencadeia as demais manifestações, como a hipoalbuminemia, o edema intenso (por redução da pressão oncótica) e a hiperlipidemia.\n\nAlternativa c) Incorreta. A oligúria (redução do volume urinário) é uma característica comum da síndrome nefrítica ou de quadros de insuficiência renal aguda, em que há uma queda súbita na taxa de filtração glomerular por inflamação. Na síndrome nefrótica, o volume urinário costuma estar preservado na fase inicial.\n\nAlternativa d) Incorreta. A hipertensão arterial sistêmica, especialmente quando grave e de início súbito, é típica da síndrome nefrítica, devido à retenção hidrossalina e à congestão volêmica. Na síndrome nefrótica, a pressão arterial pode ser normal ou até baixa em alguns pacientes, devido à transudação de líquido para o terceiro espaço.\n\nAlternativa e) Incorreta. A piúria estéril (presença de leucócitos na urina sem crescimento bacteriano em cultura) está associada a condições como tuberculose urinária, nefrite intersticial ou uso prévio de antibióticos, não sendo um achado próprio da síndrome nefrótica.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:09.801Z"
+  },
+  {
+    "id": "AJUDA_b78c8530-d2a4-4743-9bda-8c3983583d89",
+    "originalId": "b78c8530-d2a4-4743-9bda-8c3983583d89",
+    "statement": "Assinale a alternativa correta sobre a Rede de Frio do Programa Nacional de Imunizações.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de uma estrutura física e técnico-administrativa localizada no Ministério da Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O processo logístico dessa Rede envolve o sistema de armazenamento e transporte dos imunobiológicos, mas não o de manuseio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Essa Rede deve ser garantida pelas três esferas de governo mediante convênio com serviços especializados nos estados e municípios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientada pelo Ministério da Saúde, permeia as três esferas de governo, União, Estados, Distrito Federal e Municípios.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "As salas de vacina fazem parte dessa Rede e são controladas pelo Ministério da Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Rede de Frio do Programa Nacional de Imunizações (PNI) é o sistema logístico (instalações, equipamentos e pessoal) responsável por garantir que os imunobiológicos sejam mantidos em condições adequadas de temperatura, desde o laboratório produtor até o momento da administração no paciente, assegurando a manutenção de sua potência e eficácia.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A Rede de Frio não é uma estrutura localizada apenas no Ministério da Saúde. Ela é uma rede hierarquizada e descentralizada que se distribui por todo o território nacional, compreendendo instâncias nacionais, estaduais, regionais e municipais.\n\nAlternativa (b) Incorreta: O processo logístico envolve, obrigatoriamente, o manuseio. A integridade física e química dos imunobiológicos depende de como eles são manipulados durante o recebimento, o armazenamento, o transporte e a própria aplicação na sala de vacina.\n\nAlternativa (c) Incorreta: Embora a responsabilidade seja das três esferas de governo, a Rede de Frio é uma estrutura própria do Sistema Único de Saúde (SUS). A gestão é feita pelas Secretarias de Saúde, não dependendo de convênios com serviços especializados externos para existir, sendo uma atividade-fim da gestão pública de saúde.\n\nAlternativa (d) Correta: Esta alternativa descreve perfeitamente o funcionamento do PNI. O Ministério da Saúde exerce o papel de coordenador nacional, formulando as diretrizes e normas técnicas, mas a execução e a manutenção da Rede de Frio ocorrem de forma integrada e compartilhada entre a União, os Estados, o Distrito Federal e os Municípios.\n\nAlternativa (e) Incorreta: As salas de vacina representam a instância local (o elo final) da Rede de Frio. No entanto, elas são gerenciadas e controladas pelas Secretarias Municipais de Saúde, e não diretamente pelo Ministério da Saúde. Cabe ao nível federal a coordenação geral e o fornecimento de diretrizes, mas a gestão operacional das salas é de responsabilidade municipal.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:09.801Z"
+  },
+  {
+    "id": "AJUDA_b797df87-edc3-4b0d-ab14-c2f79c485f68",
+    "originalId": "b797df87-edc3-4b0d-ab14-c2f79c485f68",
+    "statement": "Lactente, do sexo masculino, 1 mês de idade, nascido a termo, é trazido ao pronto-socorro pelos pais com história de vômitos biliosos em grande quantidade há 12 horas, associados à distensão abdominal e parada de eliminação de gases e fezes. Ao exame físico, encontra-se febril, apresentando grau moderado de irritabilidade e prostração, além de estar levemente desidratado. Apresenta também o abdome distendido. O exame físico da região inguinal que apresenta hiperemia local e dor à palpação está apresentado a seguir (Imagem omitida por causa do ECA, mas descrevendo sinais inflamatórios em região inguinal):\n\nCom base nas informações fornecidas, a principal hipótese diagnóstica e a conduta neste momento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Torção testicular. Redução manual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Torção testicular Cirurgia de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hernia inguinal. Redução manual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hérnia inguinal. Cirurgia de emergência.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve um lactente com sinais clássicos de obstrução intestinal alta (vômitos biliosos e distensão abdominal) associados a um abaulamento doloroso na região inguinal com sinais inflamatórios (hiperemia e dor). Em pediatria, a principal causa de obstrução intestinal associada a abaulamento inguinal é a hérnia inguinal encarcerada. A presença de febre, prostração, irritabilidade e hiperemia local indica que a hérnia não está apenas presa (encarcerada), mas provavelmente sofrendo isquemia ou necrose (estrangulada).\n\nAnálise das alternativas:\n\na) Incorreta. Embora a torção testicular possa causar dor e irritabilidade, ela não justifica o quadro de obstrução intestinal com vômitos biliosos e parada de eliminação de gases e fezes. Além disso, a redução manual não é a conduta definitiva para torção testicular.\n\nb) Incorreta. A torção testicular é uma emergência cirúrgica, mas o diagnóstico clínico deste paciente é de obstrução intestinal por hérnia. O foco dos sinais sistêmicos (vômitos biliosos e distensão) aponta diretamente para o envolvimento de alças intestinais no canal inguinal.\n\nc) Incorreta. O diagnóstico de hérnia inguinal está correto, porém a conduta de redução manual é contraindicada neste caso. A presença de sinais de sofrimento vascular, como febre, prostração e hiperemia na pele do local (sinais de estrangulamento), torna a redução manual perigosa, pois há o risco de reduzir uma alça intestinal necrótica para dentro da cavidade abdominal, o que levaria à peritonite química e bacteriana.\n\nd) Correta. O paciente apresenta uma hérnia inguinal complicada (provavelmente estrangulada), evidenciada pela clínica de obstrução intestinal e sinais inflamatórios locais e sistêmicos. Nesta situação, a conduta é a estabilização clínica rápida (hidratação e jejum) seguida de cirurgia de emergência para avaliar a viabilidade da alça intestinal e realizar a correção do defeito herniário.\n\nEm resumo, a chave para a questão é identificar que os vômitos biliosos indicam obstrução intestinal e que os sinais inflamatórios locais (hiperemia) e sistêmicos (febre) contraindicam a tentativa de redução manual, exigindo intervenção cirúrgica imediata.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil",
+      "Abdome Agudo Obstrutivo",
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:09.801Z"
+  },
+  {
+    "id": "AJUDA_b79a2d96-0cc7-4a33-815a-0df327aa6a18",
+    "originalId": "b79a2d96-0cc7-4a33-815a-0df327aa6a18",
+    "statement": "Em atendimento na UBS, você avalia homem de 59 anos, hipertenso há seis anos, sem lesão de órgão alvo e exames todos normais para investigar hipertensão secundária. Em uso de losartana 50 mg 2x dia, hidroclorotiazida 50 mg 1x pela manhã, anlodipino 10 mg pela manhã, sinvastatina 40 mg pela noite, trazendo MRPA com pressão média 155 por 95 mmHg. O manejo adequado para controle da pressão arterial, neste caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar espironolactona associada as drogas já instituídas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "substituir anlodipino por um betabloqueador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "encaminhar ao cardiologista para avaliação e manejo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "substituir hidroclorotiazida por espironolactona e reavaliar em três meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "iniciar AAS como medida de prevenção secundaria otimizando estatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, precisamos identificar que o paciente apresenta o quadro de Hipertensão Arterial Resistente (HAR). A HAR é definida quando a pressão arterial permanece acima das metas recomendadas (neste caso, 155 por 95 mmHg pelo MRPA) mesmo com o uso de três classes de anti-hipertensivos em doses otimizadas, sendo obrigatoriamente uma delas um diurético.\n\nO paciente já utiliza as três classes fundamentais:\n1. Um bloqueador do receptor de angiotensina (Losartana 100 mg/dia);\n2. Um bloqueador de canal de cálcio (Anlodipino 10 mg/dia);\n3. Um diurético tiazídico (Hidroclorotiazida 50 mg/dia).\n\nSegundo as Diretrizes Brasileiras de Hipertensão Arterial e os principais consensos internacionais, o manejo da hipertensão resistente exige a adição de um quarto fármaco com mecanismo de ação diferente.\n\nAnálise das alternativas:\n\nAlternativa a: Correta. A espironolactona (um antagonista do receptor mineralocorticoide) é a droga de escolha como quarta linha no tratamento da hipertensão resistente. O estudo PATHWAY-2 demonstrou que a espironolactona é superior a outras classes (como betabloqueadores ou alfabloqueadores) para reduzir a pressão arterial nesse perfil de paciente. A dose inicial usual é de 25 mg uma vez ao dia.\n\nAlternativa b: Incorreta. O anlodipino é um dos pilares do tratamento triplo inicial e deve ser mantido. Substituí-lo por um betabloqueador não é a conduta preconizada para hipertensão resistente, a menos que o paciente apresentasse uma indicação específica para o uso de betabloqueadores, como insuficiência cardíaca com fração de ejeção reduzida, angina ou pós-infarto agudo do miocárdio.\n\nAlternativa c: Incorreta. Embora casos complexos possam ser discutidos com especialistas, o manejo inicial da hipertensão resistente (adição do quarto fármaco) faz parte das competências do médico na Atenção Primária (UBS). O encaminhamento só seria estritamente necessário se houvesse suspeita forte de hipertensão secundária não detectada nos exames iniciais ou resistência ao esquema de quatro ou mais drogas.\n\nAlternativa d: Incorreta. Não se deve substituir o diurético tiazídico pela espironolactona, mas sim associá-los. A manutenção da hidroclorotiazida é importante para o controle volêmico, e a adição da espironolactona atua no bloqueio do escape da aldosterona, comum nesses pacientes. Além disso, a associação ajuda a mitigar o risco de hipercalemia (aumento do potássio) que a espironolactona isolada poderia causar.\n\nAlternativa e: Incorreta. O AAS (ácido acetilsalicílico) é indicado para prevenção secundária (em pacientes que já possuem doença cardiovascular estabelecida). O enunciado afirma que o paciente não possui lesão de órgão-alvo. Além disso, o foco da questão é o controle da pressão arterial, e o AAS não possui efeito anti-hipertensivo, podendo inclusive dificultar o controle da pressão em alguns casos devido ao efeito nos rins. A sinvastatina já está em dose terapêutica para o risco cardiovascular habitual.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:09.801Z"
+  },
+  {
+    "id": "AJUDA_b79d1223-5aa8-4a50-b44b-34ae9064392d",
+    "originalId": "b79d1223-5aa8-4a50-b44b-34ae9064392d",
+    "statement": "Primigesta de 25 anos, com 6 semanas de gestação, procurou uma UBS em Porto Alegre para o pré-natal. Não havia registro das vacinações prévias. Assinale a assertiva que contempla o conjunto de vacinas que a gestante deve receber antes do parto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vacina dTpa (tríplice bacteriana adulto - difteria, tétano e coqueluche acelular, 1 dose); VFA (vacina contra febre amarela atenuada) após a 20ª semana de gestação; influenza em qualquer período de gestação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vacina dTpa (1 dose) após a 20ª semana de gestação; vacina contra influenza em qualquer período de gestação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vacina dT (difteria e tétano, 2 doses); vacina contra influenza em qualquer período de gestação; vacina dTpa (1 dose) após a 20ª semana de gestação",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Vacina dT (3 doses); influenza em qualquer período de gestação; VFA após a 20ª semana de gestação",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos seguir o Calendário Nacional de Vacinação da Gestante do Ministério da Saúde (PNI). O ponto-chave é que a paciente não possui registro vacinal prévio, o que exige o esquema completo de imunização para uma pessoa não vacinada.\n\nAnálise das Alternativas:\n\na) Incorreta. A vacina contra a febre amarela (VFA) é composta por vírus vivo atenuado e, em regra geral, é contraindicada para gestantes. Seu uso só é considerado em situações de risco epidemiológico muito elevado, nas quais o benefício supera o risco, não sendo uma recomendação de rotina para todas as gestantes em Porto Alegre. Além disso, apenas 1 dose de dTpa é insuficiente para uma paciente sem histórico vacinal prévio (ela precisa completar o esquema de 3 doses para tétano e difteria).\n\nb) Incorreta. Embora a dTpa e a influenza estejam corretas, a alternativa peca pela omissão. Uma paciente sem registro vacinal precisa de 3 doses de vacinas contendo o componente tetânico. Apenas a dTpa após a 20ª semana deixaria a gestante desprotegida contra o tétano e a difteria durante o restante da gestação.\n\nc) Correta. Esta alternativa segue o protocolo do Ministério da Saúde para gestantes com esquema vacinal incompleto ou desconhecido. O esquema consiste em 3 doses de vacina contra o tétano e a difteria, sendo que:\n1. Devem ser administradas 2 doses de dT (dupla adulto).\n2. A 3ª dose deve ser obrigatoriamente a dTpa (tríplice bacteriana acelular), administrada a partir da 20ª semana de gestação (idealmente entre a 27ª e a 36ª semana), para garantir a transferência transplacentária de anticorpos contra a coqueluche para o feto.\n3. A vacina contra a influenza é recomendada para todas as gestantes em qualquer idade gestacional durante as campanhas anuais.\nObservação: A vacina contra a hepatite B (3 doses) também deveria ser iniciada, mas a alternativa foca corretamente nos esquemas de difteria, tétano, coqueluche e influenza.\n\nd) Incorreta. Administrar 3 doses de dT ignora a recomendação mandatória da dTpa na gestação. A dTpa é essencial para a proteção do recém-nascido contra a coqueluche nos primeiros meses de vida. Além disso, a vacina contra a febre amarela não é rotina pré-natal, conforme explicado na alternativa A.\n\nResumo do Esquema para Gestante Não Vacinada (Tétano/Difteria/Coqueluche):\n- 1ª dose: dT (o mais cedo possível).\n- 2ª dose: dT (mínimo de 30 a 60 dias após a primeira).\n- 3ª dose: dTpa (a partir da 20ª semana, respeitando o intervalo mínimo de 30 dias após a última dose de dT).",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Imunizações",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:09.801Z"
+  },
+  {
+    "id": "AJUDA_b79e969f-a576-465a-8050-5bb096d5be14",
+    "originalId": "b79e969f-a576-465a-8050-5bb096d5be14",
+    "statement": "Dentre as neoplasias benignas hepáticas, aquela que é encontrada predominantemente em mulheres jovens e está geralmente associada ao uso de hormônios esteroides de longo prazo é",
+    "options": [
+      {
+        "id": "A",
+        "text": "a hiperplasia nodular focal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o cisto simples hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o adenoma hepático.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "o hemangioma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a (c).\n\nA questão aborda o diagnóstico diferencial das massas hepáticas benignas, focando nos fatores epidemiológicos e de risco.\n\nAlternativa a: Incorreta. A hiperplasia nodular focal (HNF) é a segunda neoplasia benigna mais comum do fígado e acomete predominantemente mulheres. No entanto, sua fisiopatologia está relacionada a uma resposta hiperplásica das células hepáticas a uma malformação vascular arterial preexistente. Diferentemente do adenoma, a HNF não possui uma relação causal direta com o uso de anticoncepcionais orais, embora hormônios possam influenciar minimamente o seu crescimento.\n\nAlternativa b: Incorreta. O cisto simples hepático é uma lesão de conteúdo líquido, revestida por epitélio biliar, de origem geralmente congênita. Não é classificado como uma neoplasia sólida e não apresenta nenhuma associação com o uso de hormônios esteroides ou anticoncepcionais.\n\nAlternativa c: Correta. O adenoma hepático é um tumor epitelial benigno que ocorre quase exclusivamente em mulheres jovens (na idade fértil). Existe uma forte e bem documentada correlação entre o desenvolvimento desses tumores e o uso prolongado de anticoncepcionais orais (geralmente por mais de 5 anos), além de estar associado ao uso de esteroides anabolizantes. É uma lesão clinicamente importante pelo risco de complicações, como a ruptura com hemorragia intraperitoneal e o risco de transformação maligna para carcinoma hepatocelular.\n\nAlternativa d: Incorreta. O hemangioma é o tumor benigno mais comum do fígado. Embora seja mais frequente em mulheres e possa aumentar de tamanho durante a gravidez ou terapia de reposição hormonal, sua origem não é causada pelo uso de esteroides exógenos. É uma malformação vascular de natureza congênita.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:09.801Z"
+  }
+]

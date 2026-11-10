@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_472a2858-04cd-4db4-897a-cdfbc4d8485b",
+    "originalId": "472a2858-04cd-4db4-897a-cdfbc4d8485b",
+    "statement": "Paciente de 59 anos, com diagnóstico confirmado de adenocarcinoma gástrico localizado no antro, é avaliado para tratamento cirúrgico. A endoscopia digestiva alta mostra lesão ulcerada infiltrativa, e a biópsia revela adenocarcinoma tipo intestinal pela classificação de Lauren. A tomografia não evidencia metástases à distância. Com base nas informações acima, qual das alternativas representa a conduta e classificação MAIS adequadas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tipo intestinal de Lauren está associado ao melhor prognóstico e maior relação com fatores ambientais; a gastrectomia subtotal com linfadenectomia D2 é indicada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O tipo difuso de Lauren é mais comum em idosos e está relacionado à infecção por H. pylori; a gastrectomia total é obrigatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A classificação de Borrmann tipo IV é a mais comum e representa lesões polipoides; a cirurgia é indicada e deve ser a gastrectomia total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tipo intestinal de Lauren é mais agressivo e, frequentemente, metastático; a quimioterapia neoadjuvante é sempre indicada antes da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda dois pilares fundamentais do estudo do câncer gástrico: a Classificação de Lauren e a conduta cirúrgica baseada na localização do tumor.\n\nAnálise das alternativas:\n\nAlternativa (a) - Correta: A classificação de Lauren divide o adenocarcinoma gástrico em dois tipos principais: intestinal e difuso. O tipo intestinal é mais comum em homens idosos, está fortemente associado a fatores ambientais (dieta, tabagismo) e à gastrite atrófica crônica (frequentemente por *H. pylori*). Ele apresenta melhor prognóstico que o tipo difuso. Para tumores localizados no antro (terço distal), a gastrectomia subtotal com linfadenectomia D2 é o tratamento padrão, desde que se consiga uma margem de segurança microscópica livre (geralmente 5 cm).\n\nAlternativa (b) - Incorreta: O tipo difuso de Lauren é mais comum em pacientes jovens, possui igual distribuição entre os sexos e tem forte componente genético (como mutações na E-caderina), não estando tão relacionado a fatores ambientais ou ao *H. pylori* como o tipo intestinal. Além disso, embora o tipo difuso exija margens maiores devido ao seu crescimento infiltrativo, a gastrectomia total é obrigatória apenas se o tumor for proximal ou se não houver margem de segurança na subtotal.\n\nAlternativa (c) - Incorreta: A classificação de Borrmann é macroscópica. O tipo I é a lesão polipoide. O tipo IV, mencionado na alternativa, refere-se à \"linite plástica\" (lesão infiltrativa difusa), que é a de pior prognóstico e não a mais comum. A conduta cirúrgica depende da localização e do estadiamento, não sendo a gastrectomia total uma regra para todas as classificações de Borrmann.\n\nAlternativa (d) - Incorreta: O tipo intestinal de Lauren é, na verdade, menos agressivo que o tipo difuso. O tipo difuso é o que tende a ser mais indiferenciado, infiltrativo e com maior propensão a metástases precoces. Sobre a quimioterapia neoadjuvante, embora seja amplamente utilizada em tumores a partir do estágio T2 ou com linfonodos positivos (câncer gástrico localmente avançado), não se pode dizer que ela é \"sempre\" indicada apenas com base no tipo histológico, e a afirmação sobre a agressividade está invertida.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:44.196Z"
+  },
+  {
+    "id": "AJUDA_472df647-9818-4682-99d9-56e72d35d64a",
+    "originalId": "472df647-9818-4682-99d9-56e72d35d64a",
+    "statement": "Em relação à anatomia da veia porta-hepática, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A veia porta possui válvulas intraluminais que impedem a inversão do fluxo sanguíneo em direção ao sistema esplênico e mesentérico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A veia porta forma-se na altura do hilo hepático, pela confluência dos ramos portais direito e esquerdo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A veia porta responde por 25% do fluxo sanguíneo hepático, sendo a artéria hepática a principal fonte de vascularização do fígado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A formação da veia porta se dá posterior ao colo pancreático, na junção das veias mesentérica superior e esplênica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O ramo portal esquerdo irriga os segmentos V, VI, VII e VIII do fígado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a) Incorreta. Uma característica fundamental do sistema porta hepático é a ausência de válvulas em seu interior. Por ser um sistema desprovido de válvulas, qualquer aumento na pressão venosa (hipertensão portal) é transmitido de forma retrógrada para os territórios esplênico e mesentérico, o que explica a formação de varizes e o surgimento de esplenomegalia em pacientes com hepatopatias crônicas.\n\nAlternativa b) Incorreta. A alternativa descreve o término da veia porta, e não sua formação. A veia porta termina no hilo hepático, onde ela efetivamente se divide nos ramos portais direito e esquerdo para penetrar no fígado. Sua formação ocorre fora do fígado, em uma topografia mais inferior.\n\nAlternativa c) Incorreta. A veia porta é o principal vaso em termos de volume sanguíneo para o fígado, sendo responsável por aproximadamente 75% a 80% do fluxo sanguíneo hepático total. A artéria hepática contribui com os 20% a 25% restantes. É importante notar que, apesar de fornecer menos volume, a artéria hepática é responsável por cerca de 50% da oferta de oxigênio ao órgão.\n\nAlternativa d) Correta. Esta alternativa descreve precisamente a anatomia cirúrgica do sistema porta. A veia porta hepática é formada pela confluência da veia mesentérica superior com a veia esplênica (que frequentemente já recebeu a veia mesentérica inferior). Esse encontro ocorre na transição entre a cabeça e o corpo do pâncreas, especificamente atrás do colo pancreático, na altura da segunda vértebra lombar (L2).\n\nAlternativa e) Incorreta. O ramo portal esquerdo é responsável pela irrigação dos segmentos II, III e IV (além de emitir ramos para o segmento I). Os segmentos citados na alternativa (V, VI, VII e VIII) compõem o lobo direito funcional do fígado e são irrigados pelo ramo portal direito. O segmento I (lobo caudado) possui a peculiaridade de receber suprimento sanguíneo de ambos os ramos portais (direito e esquerdo).",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:44.196Z"
+  },
+  {
+    "id": "AJUDA_47390fe7-0e99-42d9-ab5a-fcc90aa95fbd",
+    "originalId": "47390fe7-0e99-42d9-ab5a-fcc90aa95fbd",
+    "statement": "Menino com nove anos de idade é levado ao pronto-socorro com queixa de dor e perda da força muscular nos membros inferiores. Segundo os familiares, os sintomas começaram nos pés e foram subindo pelas pernas. No exame físico, apresenta perda de força muscular, paralisia flácida e arreflexia nos membros inferiores. Hipótese diagnóstica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidente vascular cerebral;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mielite transversa;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neuromielite óptica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Guillain-Barré.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A alternativa correta é a letra (d).\n\nANÁLISE DAS ALTERNATIVAS:\n\nA) ACIDENTE VASCULAR CEREBRAL (INCORRETA): O AVC em crianças costuma manifestar-se com déficits neurológicos focais e súbitos, geralmente unilaterais (hemiparesia). O quadro descrito é de uma paralisia simétrica e ascendente, o que não condiz com a apresentação clínica de um evento isquêmico ou hemorrágico cerebral.\n\nB) MIELITE TRANSVERSA (INCORRETA): A mielite é uma inflamação da medula espinhal. Embora possa causar fraqueza nos membros inferiores, ela tipicamente apresenta um nível sensitivo bem definido (o paciente perde a sensibilidade a partir de certa altura do tronco) e disfunção precoce de esfíncteres (bexiga neurogênica). A progressão ascendente clássica (\"dos pés para cima\") é a marca das polirradiculoneuropatias periféricas, não de lesões medulares.\n\nC) NEUROMIELITE ÓPTICA (INCORRETA): Trata-se de uma doença inflamatória do sistema nervoso central que combina episódios de mielite transversa com neurite óptica (perda visual e dor ocular). O quadro clínico apresentado não menciona queixas visuais nem sinais medulares específicos, focando apenas na fraqueza ascendente e arreflexia.\n\nD) SÍNDROME DE GUILLAIN-BARRÉ (CORRETA): O caso clínico descreve a apresentação clássica da Síndrome de Guillain-Barré (SGB), que é a principal causa de paralisia flácida aguda após a erradicação da poliomielite. Os pontos-chave para o diagnóstico aqui são:\n1. Paralisia flácida simétrica e ascendente (começa nos membros inferiores e progride proximalmente).\n2. Arreflexia ou hiporreflexia (perda de reflexos profundos), indicando lesão de neurônio motor inferior.\n3. Dor em membros inferiores, que é um sintoma proeminente e comum no início do quadro em pacientes pediátricos.\n\nSÍNTESE PARA PROVAS:\nA tríade paralisia ascendente + arreflexia + simetria em um contexto de evolução aguda (dias ou semanas) define clinicamente a Síndrome de Guillain-Barré até que se prove o contrário. O diagnóstico pode ser complementado futuramente com a análise do líquido cefalorraquidiano (demonstrando dissociação proteinocitológica) e eletroneuromiografia.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Doenças Neuromusculares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:44.196Z"
+  },
+  {
+    "id": "AJUDA_473bc8ee-11d3-49ba-99fc-ed7270324444",
+    "originalId": "473bc8ee-11d3-49ba-99fc-ed7270324444",
+    "statement": "Paciente masculino, de 70 anos, com hipertensão de longa data, apresentou quadro súbito de dor torácica retroesternal, de forte intensidade, tendo sido trazido à Emergência. À admissão, apresentava saturação de oxigênio de 96%. Foram realizados eletrocardiografia de repouso e raio X de tórax (imagens abaixo). O resultado da dosagem de troponina estava normal, e a dosagem de D-dímeros indicou 1.900 ng/ml (valor de referência: 500 ng/ml). Qual o provável diagnóstico e qual a investigação complementar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome aórtica aguda – angiotomografia de tórax e abdômen",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Síndrome coronariana aguda – coronariografia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tromboembolismo pulmonar agudo – angiografia pulmonar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aneurisma roto da aorta torácica – angiotomografia de tórax",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve um paciente idoso, hipertenso, com dor torácica súbita e intensa. Essa tríade é clássica para as Síndromes Aórticas Agudas (SAA). O eletrocardiograma (ECG) apresentado não demonstra sinais de isquemia aguda (como supra ou infradesnivelamento do segmento ST), e a troponina normal afasta, inicialmente, um Infarto Agudo do Miocárdio. O D-dímero elevado possui alto valor preditivo negativo para SAA; ou seja, um valor alto corrobora a suspeita, embora não seja específico. No raio X de tórax, observa-se um alargamento evidente do mediastino e do botão aórtico, sinal radiológico típico de patologias da aorta.\n\nAnálise das alternativas:\n\na) Correta. O diagnóstico de Síndrome Aórtica Aguda (que inclui a dissecação da aorta, o hematoma intramural e a úlcera penetrante) é o mais provável diante da dor súbita \"dilacerante\" em paciente hipertenso com mediastino alargado. A angiotomografia de tórax e abdômen é o padrão-ouro para confirmação, permitindo avaliar a extensão da lesão por toda a aorta, o que é fundamental para a classificação (Stanford A ou B) e o planejamento cirúrgico.\n\nb) Incorreta. Embora a dor torácica seja um sintoma cardinal da Síndrome Coronariana Aguda, o ECG sem alterações isquêmicas e a troponina normal após o início da dor tornam esse diagnóstico menos provável. Além disso, o achado radiológico de mediastino alargado direciona o raciocínio para a aorta.\n\nc) Incorreta. O tromboembolismo pulmonar (TEP) pode cursar com D-dímero elevado e dor torácica. No entanto, o paciente apresenta saturação de oxigênio normal (96%) e a imagem radiológica mostra alargamento do mediastino, o que não é característico do TEP. Além disso, a dor do TEP costuma ser do tipo pleurítica, e a angiografia pulmonar (cateterismo) é um método invasivo reservado para casos específicos, não sendo a primeira escolha diagnóstica atual.\n\nd) Incorreta. O termo \"Síndrome Aórtica Aguda\" é mais abrangente e adequado para o quadro inicial. Um aneurisma de aorta torácica roto geralmente evolui com instabilidade hemodinâmica grave e choque hipovolêmico de forma muito rápida, o que não foi descrito na admissão do paciente. Adicionalmente, a investigação complementar deve abranger o abdômen para mapear toda a extensão da aorta.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Síndromes Aórticas Agudas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/079a2d68b2449e885330513f34d731d58d3b1185de8a3c63c012210588a86f42.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_473bc8ee-11d3-49ba-99fc-ed7270324444_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/5b0b7c7a127b3c168eeed39de3dda87219a20aefd762244fda5819d8de0fc193.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_473bc8ee-11d3-49ba-99fc-ed7270324444_img_1.webp"
+      },
+      {
+        "order": 2,
+        "originalUrl": "https://files.ajudamedico.com/files/4a34d2f110c55d120d68abd530738d924849822e159c7bbcfb8b9dd7ad74948d.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_473bc8ee-11d3-49ba-99fc-ed7270324444_img_2.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:45.293Z"
+  },
+  {
+    "id": "AJUDA_473e4517-e6a2-4a8f-9a0b-872970d16262",
+    "originalId": "473e4517-e6a2-4a8f-9a0b-872970d16262",
+    "statement": "Um adolescente de 16 anos foi admitido no pronto-socorro após queda de motocicleta. Ele estava lúcido e com sinais vitais estáveis. Realizou-se uma tomografia computadorizada do abdômen, que mostrou uma laceração esplênica grau II. Optou-se por um tratamento conservador inicial com monitoramento em unidade de terapia intensiva. Após 24 horas de internação, o paciente apresentou uma queda súbita na pressão arterial, aumento da frequência cardíaca e sinais de irritação peritoneal. Uma nova TC de abdômen mostrou aumento significativo do hemoperitônio e sinais de ruptura esplênica adicional.\nDiante desse quadro, a conduta mais apropriada para esse paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "indicar a cirurgia de Warren;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar uma embolização seletiva da artéria esplênica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "transferi-lo para a sala de cirurgia para uma esplenectomia de emergência;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "continuar com o manejo conservador e aumentar a frequência de monitoramento hemodinâmico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "administrar fluidos intravenosos e realizar a transfusão sanguínea, mantendo o paciente sob observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o manejo do trauma esplênico (baço). O paciente iniciou um tratamento não operatório (TNO), que é a conduta padrão para pacientes hemodinamicamente estáveis com lesões de órgãos sólidos. No entanto, o quadro evoluiu para falha do tratamento conservador.\n\nAnálise das alternativas:\n\na) Incorreta. A cirurgia de Warren, ou derivação esplenorrenal distal, é um procedimento cirúrgico indicado para o tratamento da hipertensão portal e varizes esofágicas sangrentas, não tendo qualquer aplicação no contexto do trauma abdominal agudo.\n\nb) Incorreta. A angioembolização seletiva da artéria esplênica é uma ferramenta útil no tratamento conservador para conter sangramentos ativos (*blush* na tomografia) em pacientes que se mantêm hemodinamicamente estáveis. No caso descrito, o paciente apresenta instabilidade hemodinâmica (queda de pressão e taquicardia) e sinais de peritonite, o que contraindica a permanência no setor de radiologia intervencionista e exige intervenção cirúrgica imediata.\n\nc) Correta. O paciente apresenta sinais clássicos de falha do tratamento conservador: instabilidade hemodinâmica súbita e sinais de irritação peritoneal (que sugerem hemoperitônio maciço). Nessas circunstâncias, a conduta de emergência é a laparotomia exploradora. A esplenectomia (retirada do baço) é o procedimento mais seguro e rápido para o controle da hemorragia em um paciente instável com ruptura esplênica documentada.\n\nd) Incorreta. Continuar com o manejo conservador diante de um choque obstrutivo ou hipovolêmico por sangramento abdominal é uma conduta inadequada e aumenta significativamente a mortalidade do paciente. A piora clínica e radiológica exige mudança de conduta.\n\ne) Incorreta. Embora a reposição volêmica e a transfusão sanguínea façam parte da ressuscitação inicial (protocolo ATLS), manter o paciente apenas sob observação diante de uma ruptura esplênica com sinais de peritonite e choque é insuficiente. A medida definitiva é o controle cirúrgico do foco de sangramento.\n\nEm resumo, a presença de instabilidade hemodinâmica após trauma abdominal, associada a sinais de irritação peritoneal e confirmação de aumento de sangramento na tomografia, é uma indicação absoluta de cirurgia de urgência. Portanto, a alternativa (c) é a correta.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:45.293Z"
+  },
+  {
+    "id": "AJUDA_47429160-638b-4919-ac3d-5d3a8b5d5bf9",
+    "originalId": "47429160-638b-4919-ac3d-5d3a8b5d5bf9",
+    "statement": "Paciente, 45 anos, com queixa de perda urinária ao esforço e sem histórico de cirurgias pélvicas. A conduta mais adequada em relação ao uso do Estudo Urodinâmico (EUD) na abordagem da Incontinência Urinária (IU) feminina é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar o EUD para todos os casos de IU, a fim de definir a melhor conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar o EUD antes do tratamento conservador da IU.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não solicitar o EUD antes do tratamento conservador da IU.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar o EUD apenas se houver suspeita de disfunção do esvaziamento vesical.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A abordagem da incontinência urinária feminina deve seguir uma lógica de complexidade crescente, priorizando métodos menos invasivos inicialmente. No caso de uma paciente com quadro clínico clássico de perda urinária aos esforços e sem fatores complicadores, como cirurgias pélvicas prévias, o diagnóstico clínico é suficiente para o início do manejo.\n\nAlternativa (a) Incorreta: O estudo urodinâmico é um exame invasivo, desconfortável e de custo elevado. Ele não deve ser solicitado de forma rotineira para todos os casos, sendo reservado para situações em que o diagnóstico clínico é incerto ou quando há falha no tratamento inicial.\n\nAlternativa (b) Incorreta: O tratamento conservador, que envolve mudanças no estilo de vida e fisioterapia do assoalho pélvico, possui baixo risco e não exige a confirmação urodinâmica prévia. Solicitar o exame antes dessas medidas geraria custos e desconforto desnecessários à paciente.\n\nAlternativa (c) Correta: Em casos de incontinência urinária de esforço não complicada, as diretrizes da Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) e de sociedades internacionais recomendam iniciar o tratamento conservador sem a necessidade de estudo urodinâmico. O exame é geralmente postergado para casos de falha terapêutica ou quando se planeja uma intervenção cirúrgica, embora mesmo no pré-operatório de casos puros sua obrigatoriedade seja discutida.\n\nAlternativa (d) Incorreta: A suspeita de disfunção do esvaziamento vesical é, de fato, uma indicação para o estudo urodinâmico. No entanto, o uso da palavra \"apenas\" torna a alternativa incorreta, pois existem outras indicações importantes, como a incontinência urinária mista, a urgência urinária refratária ao tratamento medicamentoso e a avaliação de recidivas após cirurgias prévias.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:45.293Z"
+  },
+  {
+    "id": "AJUDA_4743edfe-9c64-46de-9c9f-1f956d193b4c",
+    "originalId": "4743edfe-9c64-46de-9c9f-1f956d193b4c",
+    "statement": "Um homem de 29 anos, em investigação de infertilidade conjugal, recebe o diagnóstico de azoospermia obstrutiva. Na anamnese dirigida, identificam-se sinusopatia crônica e episódios recorrentes de infecção de vias aéreas inferiores desde a adolescência, além de diarreia crônica com esteatorreia. O exame que deve ser solicitado nesse momento para investigação da etiologia mais provável da infertilidade é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "teste do suor",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "elastase fecal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sorologia para HIV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "dosagem de imunoglobulinas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta uma tríade clássica que deve imediatamente sugerir o diagnóstico de fibrose cística (mucoviscidose): \n1. Doença respiratória crônica (sinusopatia e infecções de repetição desde a juventude);\n2. Insuficiência pancreática exócrina (diarreia crônica com esteatorreia);\n3. Infertilidade por azoospermia obstrutiva (frequentemente causada pela ausência congênita bilateral dos vasos deferentes — CBAVD).\n\nA fibrose cística é uma doença autossômica recessiva causada por mutações no gene CFTR, que codifica um canal de cloro. A disfunção dessa proteína leva à produção de secreções mais espessas e desidratadas em diversos órgãos. No sistema reprodutor masculino, quase 99% dos pacientes apresentam azoospermia obstrutiva.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Correta. O teste do suor (dosagem de cloretos no suor) continua sendo o padrão-ouro para o diagnóstico de fibrose cística. Valores de cloreto acima de 60 mmol/L em duas medidas independentes confirmam a doença. Como o quadro clínico do paciente é altamente sugestivo dessa patologia, este é o exame de escolha para investigar a etiologia da infertilidade e dos demais sintomas.\n\nb) Incorreta. A elastase fecal é um excelente marcador para avaliar a função exócrina do pâncreas e confirmar se a diarreia é de fato por insuficiência pancreática. No entanto, ela avalia a consequência da doença e não a sua etiologia (causa-base). O enunciado solicita o exame para investigação da etiologia mais provável.\n\nc) Incorreta. Embora o HIV possa predispor a infecções de repetição devido à imunossupressão, ele não explica a azoospermia obstrutiva nem a esteatorreia crônica de forma tão característica quanto a fibrose cística neste contexto clínico.\n\nd) Incorreta. A dosagem de imunoglobulinas serve para investigar imunodeficiências primárias (como a imunodeficiência comum variável). Pacientes com essas condições podem ter sinusopatia e infecções pulmonares recorrentes, além de diarreia crônica por má absorção ou giardíase. Contudo, as imunodeficiências não costumam cursar com azoospermia obstrutiva, que é um marcador muito forte para fibrose cística em homens jovens com esse perfil de sintomas.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Infertilidade Conjugal",
+      "Fibrose Cística"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:45.293Z"
+  },
+  {
+    "id": "AJUDA_474d13f0-4841-4653-9f79-c57b7189a987",
+    "originalId": "474d13f0-4841-4653-9f79-c57b7189a987",
+    "statement": "Lactente de 18 meses é trazido à emergência com febre há 3 dias, evoluindo com pápulas e vesículas distribuídas em região oral, mãos e pés (principalmente em palmas e plantas).\nA hipótese diagnóstica para o caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "herpes zoster.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "varicela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "síndrome mão-pé-boca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "eritema multiforme.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta um quadro clínico clássico na pediatria, caracterizado pela tríade de febre, estomatite (lesões orais) e exantema papulovesicular com distribuição específica.\n\nANÁLISE DO QUADRO CLÍNICO:\nO paciente é um lactente com febre há 3 dias que evoluiu com pápulas e vesículas localizadas na região oral, palmas das mãos e plantas dos pés. Essa apresentação é patognomônica da Síndrome Mão-Pé-Boca, uma enterovirose causada habitualmente pelo Coxsackievirus A16 ou pelo Enterovirus 71. Ocorre principalmente em menores de 5 anos e a transmissão é fecal-oral ou respiratória.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) INCORRETA. O herpes-zoster é a reativação do vírus varicela-zoster (VZV) e se caracteriza por lesões vesiculares dolorosas que seguem rigorosamente o trajeto de um dermátomo. Não apresenta a distribuição generalizada em mãos, pés e boca simultaneamente.\n\nb) INCORRETA. A varicela (catapora) manifesta-se com um exantema polimórfico (máculas, pápulas, vesículas e crostas presentes ao mesmo tempo) de distribuição centrípeta, acometendo tronco, face e couro cabeludo. Embora possam ocorrer lesões em mucosas, a predileção por palmas e plantas e a tríade específica descrita não são típicas da varicela.\n\nc) INCORRETA. O sarampo é uma doença exantemática grave que cursa com febre alta, tosse, coriza e conjuntivite (sintomas catarrais). O exantema é maculopapular morbiliforme, com progressão craniocaudal, iniciando-se geralmente atrás das orelhas e na linha do cabelo. Não apresenta vesículas. O sinal patognomônico oral são as manchas de Koplik, e não lesões vesiculares/ulcerativas.\n\nd) CORRETA. A Síndrome Mão-Pé-Boca apresenta exatamente o quadro descrito: febre seguida do aparecimento de vesículas e pápulas em mãos e pés (incluindo palmas e plantas) e lesões ulceradas dolorosas na cavidade oral (estomatite). É a principal hipótese para o caso.\n\ne) INCORRETA. O eritema multiforme é uma reação de hipersensibilidade caracterizada pelas chamadas lesões em alvo ou em íris (centro escuro ou vesiculoso rodeado por um halo claro e um anel eritematoso externo). Embora possa acometer palmas, plantas e mucosas, a morfologia das lesões e o contexto clínico de febre autolimitada em lactente direcionam mais fortemente para a etiologia viral infecciosa descrita na alternativa D.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:45.293Z"
+  },
+  {
+    "id": "AJUDA_474d8467-f0e0-4b24-9cae-2981693ffaa6",
+    "originalId": "474d8467-f0e0-4b24-9cae-2981693ffaa6",
+    "statement": "Em pacientes com diabetes mellitus tipo 2, qual é o mecanismo de ação dos inibidores da SGLT2 e sua principal vantagem terapêutica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentam a secreção de insulina, melhorando a glicose pós-prandial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diminuem a reabsorção de glicose nos túbulos renais, promovendo perda de glicose na urina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Inibem a produção hepática de glicose, diminuindo a glicemia de jejum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumentam a sensibilidade à insulina no músculo esquelético.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o mecanismo de ação dos inibidores do cotransportador sódio-glicose tipo 2 (SGLT2), uma classe de antidiabéticos orais que revolucionou o tratamento do diabetes mellitus tipo 2 devido aos seus benefícios adicionais além do controle glicêmico.\n\nAlternativa a) Incorreta. O aumento da secreção de insulina é o mecanismo de ação das sulfonilureias (como a gliclazida) e das glinidas (como a repaglinida). Os inibidores do SGLT2 agem de forma independente da insulina, o que reduz drasticamente o risco de hipoglicemia quando comparados aos secretagogos.\n\nAlternativa b) Correta. O SGLT2 é uma proteína localizada no túbulo contorcido proximal do rim, responsável pela reabsorção de cerca de 90% da glicose filtrada pelos glomérulos. Ao inibir esse transportador, o medicamento impede que a glicose retorne à circulação, promovendo sua excreção direta pela urina (glicosúria). Além de reduzir a glicemia, esse mecanismo gera perda calórica (auxiliando na redução de peso) e diurese osmótica associada à natriurese, o que confere proteção cardiovascular (especialmente na insuficiência cardíaca) e proteção renal.\n\nAlternativa c) Incorreta. A inibição da produção hepática de glicose (gliconeogênese) é o principal mecanismo de ação da metformina, que pertence à classe das biguanidas e continua sendo o fármaco de primeira escolha para a maioria dos pacientes com diabetes tipo 2.\n\nAlternativa d) Incorreta. O aumento da sensibilidade à insulina no músculo esquelético e no tecido adiposo é a principal característica das tiazolidinedionas, como a pioglitazona. Essas drogas atuam via receptores nucleares PPAR-gama.\n\nEm resumo, os inibidores do SGLT2 (como a empagliflozina, dapagliflozina e canagliflozina) atuam especificamente nos rins, promovendo a eliminação do excesso de glicose pela urina, o que justifica a alternativa b como correta.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:45.293Z"
+  },
+  {
+    "id": "AJUDA_4755c469-a817-4ba5-8ad3-82afd0a777b0",
+    "originalId": "4755c469-a817-4ba5-8ad3-82afd0a777b0",
+    "statement": "Mulher, 58 anos de idade, menopausa aos 55 anos menarca aos 10 anos, nulípara, com história familiar de câncer de mama em irmã aos 42 anos. Relata uso de terapia de reposição hormonal combinada por 7 anos após menopausa. Exame físico atual sem alterações. Considerando os fatores de risco para câncer de mama, sabe-se que",
+    "options": [
+      {
+        "id": "A",
+        "text": "menarca precoce, menopausa tardia, nuliparidade e uso prolongado de terapia hormonal estão associados a maior exposição estrogênica cumulativa, elevando o risco de câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A história familiar de câncer de mama em parente de primeiro grau é sem relevância clínica, a não ser que o diagnóstico tenha ocorrido após os 60 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A nuliparidade reduz o risco de câncer de mama por evitar o estresse proliferativo da lactação nos ductos mamários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A terapia de reposição hormonal isolada com estrogênio é a que mais aumenta o risco de câncer de mama, sendo maior que o da terapia combinada estrogênio-progestagênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Correta. O risco de câncer de mama está intimamente ligado ao tempo total de exposição do tecido mamário ao estrogênio e à progesterona ao longo da vida. A menarca precoce e a menopausa tardia prolongam o tempo em que a mulher vivencia ciclos menstruais ativos. A nuliparidade priva a glândula mamária dos períodos de diferenciação celular terminal que ocorrem na gestação e lactação, além de não proporcionar a pausa nos ciclos ovulatórios. O uso prolongado de terapia hormonal exógena (geralmente por mais de 5 anos) adiciona um estímulo proliferativo extra ao epitélio mamário, elevando o risco.\n\nAlternativa b) Incorreta. A história familiar de primeiro grau é um dos fatores de risco mais significativos na mastologia. O diagnóstico em parentes jovens (antes dos 50 anos) aumenta consideravelmente o risco relativo da paciente, podendo sugerir síndromes de predisposição hereditária. No caso clínico, a irmã diagnosticada aos 42 anos é um dado de extrema relevância clínica.\n\nAlternativa c) Incorreta. A nuliparidade é um fator de risco clássico, e não de proteção. A gestação completa e o aleitamento materno promovem a diferenciação dos lobos mamários (passagem de lobos tipo 1 e 2 para tipo 3 e 4), tornando o tecido mais maduro e menos suscetível a carcinógenos, além de reduzir a exposição hormonal cumulativa devido à anovulação desses períodos.\n\nAlternativa d) Incorreta. Evidências científicas, notadamente a partir do estudo WHI (Women's Health Initiative), indicam que a terapia hormonal combinada (estrogênio associado a progestagênio) confere um risco maior de câncer de mama quando comparada à terapia isolada com estrogênio. O progestagênio parece exercer um efeito sinérgico na proliferação das células mamárias. Vale lembrar que a terapia isolada é reservada para mulheres histerectomizadas, devido ao risco de câncer de endométrio se o estrogênio for usado sem oposição em mulheres com útero.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:36:45.293Z"
+  }
+]

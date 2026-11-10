@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_fa7167df-d31c-4886-99e9-d284a5f92376",
+    "originalId": "fa7167df-d31c-4886-99e9-d284a5f92376",
+    "statement": "A discussão acerca do sobrediagnóstico (overdiagnosis) vem sendo cada vez mais abordada nas publicações clínico-epidemiológicas atuais. Isso ocorre, entre outros motivos, porque:",
+    "options": [
+      {
+        "id": "A",
+        "text": "exames diagnósticos com resultados falsos positivos vêm causando um excesso de intervenções.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a especificidade dos testes diagnósticos preventivos vem aumentando consistentemente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a prevenção quaternária vem se impondo ante o excesso de intervenções médicas desnecessárias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a prevenção secundária vem sendo pouco privilegiada nas políticas de saúde pública.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O conceito de sobrediagnóstico (*overdiagnosis*) refere-se à detecção de condições que não causariam sintomas ou morte ao paciente durante seu tempo de vida. É um fenômeno distinto do erro diagnóstico ou do falso-positivo. A discussão sobre esse tema ganha força à medida que a medicina busca equilibrar os benefícios e os danos das intervenções.\n\nAlternativa (a) INCORRETA: Existe uma diferença técnica importante entre falso-positivo e sobrediagnóstico. No falso-positivo, o exame aponta uma doença que o paciente, de fato, não possui (um erro do teste). No sobrediagnóstico, o teste está tecnicamente correto e identifica uma alteração real, mas essa alteração é clinicamente irrelevante (por exemplo, um câncer de próstata indolente em um idoso que morrerá de outras causas). Embora ambos causem intervenções excessivas, o sobrediagnóstico é o termo específico para a detecção de doenças que não precisam de tratamento.\n\nAlternativa (b) INCORRETA: O aumento da especificidade dos testes serviria para reduzir os resultados falsos-positivos. O que tem impulsionado o sobrediagnóstico, na verdade, é o aumento da sensibilidade dos exames de imagem e laboratoriais, capazes de detectar alterações cada vez menores e mais sutis, além da redução dos limiares diagnósticos para diversas doenças crônicas.\n\nAlternativa (c) CORRETA: A prevenção quaternária é o nível de prevenção que visa detectar indivíduos em risco de medicalização excessiva, protegendo-os de intervenções médicas desnecessárias e de danos iatrogênicos. Como o sobrediagnóstico leva inevitavelmente ao sobretratamento (*overtreatment*), a prevenção quaternária surge como a resposta ética e clínica necessária para mitigar esses excessos, fundamentando a crescente discussão sobre o tema na literatura médica.\n\nAlternativa (d) INCORRETA: A prevenção secundária consiste no diagnóstico precoce e no rastreamento (*screening*). Ao contrário do que afirma a alternativa, a prevenção secundária tem sido amplamente incentivada e privilegiada nas políticas de saúde pública. É justamente essa expansão, muitas vezes acrítica, do rastreamento populacional que tem gerado o aumento dos casos de sobrediagnóstico observados atualmente.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:25.340Z"
+  },
+  {
+    "id": "AJUDA_fa85de91-1340-41ed-8ff9-d2ed569feecd",
+    "originalId": "fa85de91-1340-41ed-8ff9-d2ed569feecd",
+    "statement": "Mulher, 23 anos de idade, com 26,7 kg/m² de IMC, refere estar preocupada com suas “gordurinhas a mais”. Relata que, nos últimos meses, apresenta um a dois episódios por mês em que, em meia hora, come muito doce, principalmente chocolate. Está com medo de engordar mais. Uma amiga está tomando lisdexanfetamina e perdeu 2 kg em um mês. Não apresenta alterações no exame físico. Ao exame psíquico, não apresentou alterações. Refere ser uma pessoa pragmática, mas não se adapta bem a rotinas; já tentou fazer atividade física algumas vezes, sem muito sucesso na continuidade. Nega problemas de saúde e gostaria de poder tomar lisdexanfetamina para controlar seu peso e apetite. Qual a conduta adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Discutir riscos da lisdexantetamina e prescrever fluoxetina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar semaglutida se exames hepáticos e pancreáticos normais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar para avaliação psiquiátrica de distúrbios alimentares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientar sobre hábitos alimentares sem indicação de exames ou medicamentos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso apresenta uma paciente jovem com IMC de 26,7 kg/m², o que configura sobrepeso (IMC entre 25 e 29,9 kg/m²), sem comorbidades associadas e com exame físico e psíquico normais. Os episódios de consumo exagerado de doces ocorrem apenas uma a duas vezes por mês, não preenchendo os critérios diagnósticos do DSM-5 para Transtorno de Compulsão Alimentar (que exige no mínimo um episódio por semana durante pelo menos três meses).\n\nAlternativa A - Incorreta. A lisdexanfetamina é indicada para Transtorno de Compulsão Alimentar moderado a grave, e a fluoxetina tem indicação na bulimia nervosa. Como a paciente não apresenta critérios para nenhum transtorno alimentar formal, não há indicação de psicofármacos.\n\nAlternativa B - Incorreta. A indicação de semaglutida para manejo ponderal requer IMC maior ou igual a 30 kg/m² (obesidade) ou maior ou igual a 27 kg/m² associado a pelo menos uma comorbidade relacionada ao peso (como dislipidemia, hipertensão arterial, diabetes tipo 2). A paciente tem IMC de 26,7 kg/m² e nega comorbidades. Além disso, a solicitação de exames hepáticos e pancreáticos não é exigência obrigatória para o início da medicação.\n\nAlternativa C - Incorreta. A paciente não apresenta critérios diagnósticos de transtorno psiquiátrico alimentar, e seu exame psíquico é normal. O manejo de hábitos de vida e sobrepeso inicial deve ser conduzido pelo próprio médico assistente na atenção básica/clínica, sem necessidade de encaminhamento especializado.\n\nAlternativa D - Correta. Diante de sobrepeso isolado, ausência de doenças de base e frequência esporádica de deslizes alimentares, a conduta de primeira linha é a intervenção não farmacológica, com orientações nutricionais e estímulo à prática regular de atividade física, sem indicação de medicamentos ou propedêutica laboratorial adicional.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Transtornos Alimentares",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:25.340Z"
+  },
+  {
+    "id": "AJUDA_fa8781d6-6d9b-4ceb-8de9-0785db2308f0",
+    "originalId": "fa8781d6-6d9b-4ceb-8de9-0785db2308f0",
+    "statement": "Criança de 15 meses, 10 kg, chega ao pronto-socorro com diarreia aquosa há 3 dias, com cerca de 8 episódios/dia, e vômitos frequentes há 12 horas. Não consegue ingerir líquidos por via oral. Ao exame: prostrada, sonolenta, olhos fundos, prega cutânea desaparece lentamente, mucosas secas. A fontanela anterior já está fechada. Pulso radial presente, enchimento capilar de 4 a 5 segundos. O médico diagnostica desidratação grave sem sinais de choque e indica hidratação venosa, conforme o Plano C. De acordo com as recomendações atuais do Ministério da Saúde / OMS / SBP, qual a conduta correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "30 mL/kg (300 mL) de ringer-lactato em 30 minutos, seguido de 70 mL/kg (700 mL) do mesmo soro em 2 horas e 30 minutos, com reavaliação clínica frequente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "30 mL/kg (300 mL) de SF 0,9% em 1 hora, seguido de 70 mL/kg (700 mL) em 5 horas, com reavaliação clínica a cada 30–60 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "50 mL/kg (500 mL) de ringer-lactato em 1 hora, seguido de 50 mL/kg (500 mL) em 3 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "100 mL/kg (1.000 mL) de SG 5% + SF 0,9% (1:1) em infusão contínua por 6 horas, sem fase de expansão inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "20 mL/kg (200 mL) de SF 0,9% em 20 minutos (repetir até 3 vezes se necessário), seguido de 40 mL/kg (400 mL) em 4 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Conduta no Plano C (desidratação grave) em criança de 15 meses: o esquema do Ministério da Saúde para menores de 5 anos e para lactentes é de 100 mL/kg de Ringer-lactato (ou SF 0,9%), dividido em duas fases. Nos lactentes (menores de 12 meses), a fase rápida usa 30 mL/kg em 1 hora e a fase seguinte 70 mL/kg em 5 horas. Nos maiores de 12 meses, o esquema é 30 mL/kg em 30 minutos e 70 mL/kg em 2 horas e 30 minutos. Esta criança tem 15 meses, então se enquadra no segundo esquema.\n\nCálculo para 10 kg: 300 mL em 30 minutos e 700 mL em 2,5 horas, com reavaliação frequente. A solução de escolha é o Ringer-lactato, e o SF 0,9% é a alternativa se não houver Ringer. Se o pulso estivesse ausente ou houvesse choque, seria preciso expansão com 20 mL/kg de solução isotônica, repetida conforme necessário. Aqui o pulso radial está presente, portanto não há choque.\n\nAnálise das alternativas:\n\na) Correta. Corresponde ao esquema para maiores de 12 meses: 30 mL/kg em 30 minutos, depois 70 mL/kg em 2,5 horas, com Ringer-lactato e reavaliação frequente. Os sinais da criança (prostração, olhos fundos, prega que desfaz lentamente, incapacidade de beber) confirmam desidratação grave.\n\nb) Incorreta. O esquema de 30 mL/kg em 1 hora e 70 mL/kg em 5 horas é o dos menores de 12 meses. A criança tem 15 meses, então a hidratação seria lenta demais. O fato de a fontanela estar fechada reforça a faixa etária acima de 12 meses.\n\nc) Incorreta. A divisão 50 + 50 mL/kg com esses tempos não corresponde a nenhum esquema do Plano C. A fase inicial rápida deve ser de 30 mL/kg.\n\nd) Incorreta. A solução glicosada com SF 1:1 sem fase de expansão não restaura a volemia rapidamente. A solução recomendada é isotônica (Ringer-lactato ou SF), e a fase rápida é obrigatória na desidratação grave. A infusão em 6 horas também não bate com o esquema.\n\ne) Incorreta. 20 mL/kg repetidos é a conduta do choque hipovolêmico, que esta criança não apresenta, e o restante (40 mL/kg em 4 horas) soma apenas 60 mL/kg, abaixo dos 100 mL/kg recomendados. Embora o enchimento capilar esteja lentificado, o pulso radial presente afasta choque descompensado.\n\nPonto-chave: no Plano C, 100 mL/kg de Ringer-lactato; para maiores de 12 meses, 30 mL/kg em 30 minutos + 70 mL/kg em 2,5 horas; para menores de 12 meses, 1 hora + 5 horas. Reavalie a criança continuamente e inicie a TRO assim que ela conseguir beber.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:25.340Z"
+  },
+  {
+    "id": "AJUDA_fa8e6822-5964-435a-b16d-ec566b1fde6d",
+    "originalId": "fa8e6822-5964-435a-b16d-ec566b1fde6d",
+    "statement": "Homem de 62 anos apresenta dor abdominal difusa e perda de apetite há 3 meses. Ele refere episódios de diarreia intercalados com constipação. No exame físico, o abdome está distendido, com dor à palpação profunda no quadrante inferior esquerdo. Uma colonoscopia revela uma lesão estenosante no sigmoide, com biópsia demonstrando adenocarcinoma moderadamente diferenciado. A tomografia de abdome mostra a lesão confinada ao sigmoide, sem evidências de metástases à distância. Nesse caso, a conduta mais apropriada, dentre as elencadas abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ressecção anterior do reto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colectomia total com ileostomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Retossigmoidectomia com anastomose primária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ressecção abdominoperineal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Colectomia esquerda ampliada para transverso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente de 62 anos com diagnóstico de adenocarcinoma do sigmoide, sem evidência de metástases a distância nos exames de estadiamento (TNM clínico M0). O tratamento fundamental para o câncer de cólon não metastático é a ressecção cirúrgica com margens oncológicas e linfadenectomia.\n\nAlternativa a) Incorreta. A ressecção anterior do reto é o procedimento padrão para tumores localizados no reto (especialmente reto médio e superior). Embora a cirurgia para tumor do sigmoide envolva a porção superior do reto para a realização da anastomose, o termo técnico mais adequado para a retirada do sigmoide é a sigmoidectomia ou retossigmoidectomia.\n\nAlternativa b) Incorreta. A colectomia total é uma cirurgia extensa indicada em situações específicas, como na polipose adenomatosa familiar, em casos de tumores sincrônicos (múltiplos tumores em diferentes segmentos do cólon) ou em colites inflamatórias graves. Não há indicação para uma lesão única e localizada no sigmoide.\n\nAlternativa c) Correta. A retossigmoidectomia oncológica é a conduta de escolha para o câncer do sigmoide. O procedimento envolve a ligadura da artéria mesentérica inferior na sua origem (ou distalmente à saída da artéria cólica esquerda, dependendo da estratégia), a ressecção do segmento acometido com margens de segurança e a retirada dos linfonodos regionais. A reconstrução do trânsito é feita preferencialmente por meio de uma anastomose primária (ligação direta entre o cólon descendente e o reto) quando as condições clínicas e locais permitem, como é o caso deste paciente, que não apresenta sinais de obstrução aguda complicada ou perfuração.\n\nAlternativa d) Incorreta. A ressecção abdominoperineal, também conhecida como cirurgia de Miles, é indicada para tumores de reto muito baixo que invadem o complexo esfincteriano ou que estão tão próximos da margem anal que não permitem a preservação do esfíncter. Resulta em uma colostomia definitiva, o que não se aplica a um tumor do sigmoide.\n\nAlternativa e) Incorreta. A colectomia esquerda ampliada para o transverso é indicada quando o tumor está localizado na flexura esplênica (ângulo esplênico) ou no cólon descendente alto, necessitando da ligadura da artéria cólica esquerda e de ramos da cólica média. Para uma lesão restrita ao sigmoide, a retossigmoidectomia é o tratamento oncológico suficiente e menos mórbido.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:25.340Z"
+  },
+  {
+    "id": "AJUDA_fa9edabb-243e-4712-a544-eabcc8884419",
+    "originalId": "fa9edabb-243e-4712-a544-eabcc8884419",
+    "statement": "Criança de 3 meses de idade vem trazida pelo pai em consulta de rotina de puericultura. Refere estar bem, em aleitamento materno exclusivo. Pai solicita avaliar a carteirinha de vacinação, porque sempre se preocupa em não deixar atrasar nenhuma vacina. Nascido de parto cesáreo eletivo, idade gestacional de 40 semanas, peso ao nascer 3260g, comprimento 51 cm, perímetro cefálico 34 cm, APGAR 8/9. Recebeu alta hospitalar em 48h com peso 3018g. Testes de triagem neonatal normais. Exame físico dentro da normalidade, ganho de peso adequado e com bom desenvolvimento neuropsicomotor. Na faixa etária que o paciente se encontra, qual alternativa apresenta a vacina que está indicada nesta criança?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Febre amarela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumocócica 10 valente conjugada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Meningocócica C.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tríplice viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão exige o conhecimento do Calendário Nacional de Vacinação do Ministério da Saúde para o primeiro ano de vida. Aos 3 meses de idade, o calendário brasileiro prevê a administração de uma vacina específica que não coincide com as doses aplicadas nos meses pares (2, 4 e 6 meses).\n\nAnálise das alternativas:\n\na) Incorreta. A vacina contra a febre amarela é indicada rotineiramente aos 9 meses de idade no Brasil, com uma dose de reforço aos 4 anos. Ela não faz parte das vacinas aplicadas no primeiro semestre de vida do lactente.\n\nb) Incorreta. A vacina pneumocócica 10-valente (conjugada) é administrada em um esquema de duas doses básicas no primeiro ano de vida, aplicadas aos 2 e 4 meses, com uma dose de reforço aos 12 meses. Aos 3 meses, não há indicação dessa vacina pelo Programa Nacional de Imunizações (PNI).\n\nc) Correta. A vacina meningocócica C (conjugada) é a vacina indicada especificamente aos 3 meses de idade (primeira dose). O esquema vacinal completo consiste em duas doses no primeiro ano (aos 3 e 5 meses) e uma dose de reforço, preferencialmente aos 12 meses de idade (podendo ser administrada até os 4 anos).\n\nd) Incorreta. A vacina tríplice viral, que protege contra sarampo, caxumba e rubéola, tem sua primeira dose prevista apenas aos 12 meses de idade. Aos 15 meses, a criança recebe a segunda dose, frequentemente por meio da vacina tetraviral (que inclui a varicela).\n\nResumo do calendário vacinal no primeiro semestre para memorização:\n\n2 meses: Pentavalente (DTP + HepB + Hib), VIP (pólio inativada), pneumocócica 10 e rotavírus.\n3 meses: Meningocócica C (primeira dose).\n4 meses: Segunda dose das vacinas de 2 meses.\n5 meses: Segunda dose da meningocócica C.\n6 meses: Terceira dose da pentavalente e VIP.\n\nPortanto, a vacina indicada para o paciente de 3 meses de idade é a meningocócica C.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:25.340Z"
+  },
+  {
+    "id": "AJUDA_faa00d4a-b694-49a1-9407-a1bfb6422c36",
+    "originalId": "faa00d4a-b694-49a1-9407-a1bfb6422c36",
+    "statement": "O partograma abaixo evidencia:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trabalho de parto eutócico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Parada secundária da dilatação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Parada secundária da descida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apresentação cefálica defletida de 2º grau.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Fase de latência prolongada.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O partograma é a representação gráfica do trabalho de parto e permite diagnosticar desvios da normalidade. Para analisar esta questão, devemos observar a dilatação cervical (representada pelos triângulos) e a descida da apresentação fetal em relação às linhas de Alerta e de Ação.\n\nAnálise das alternativas:\n\na) Incorreta. Um trabalho de parto eutócico (normal) deve manter a curva de dilatação sobre a linha de Alerta ou à esquerda dela. No gráfico, observamos que a dilatação demora a evoluir e acaba cruzando a linha de Alerta e a linha de Ação, caracterizando um trabalho de parto distócico.\n\nb) Incorreta. A parada secundária da dilatação é definida quando a dilatação permanece a mesma por, pelo menos, duas horas, após o trabalho de parto já ter entrado na fase ativa (pelo menos 4 cm de dilatação). Embora o gráfico mostre uma lentidão em 6 cm, a questão foca no início do registro, que ocorre antes da fase ativa.\n\nc) Incorreta. A parada secundária da descida ocorre quando o feto para de descer no canal de parto por uma hora ou mais, após a dilatação cervical estar completa (10 cm). O gráfico mostra que a dilatação ainda não atingiu o estágio total.\n\nd) Incorreta. A apresentação cefálica defletida de 2º grau (apresentação de fronte) é uma distocia mecânica que poderia causar uma parada na progressão, mas o gráfico não fornece elementos suficientes (como a palpação de pontos de referência específicos na variedade de posição) para afirmar essa deflexão específica apenas pela observação da curva.\n\ne) Correta. A fase de latência é o período que vai do início das contrações rítmicas até o colo atingir 4 cm de dilatação (início da fase ativa). No partograma apresentado, o registro começa com 3 cm de dilatação. Observa-se que a paciente permanece um longo período (várias horas) para evoluir de 3 cm para 4 cm. Quando esse período se prolonga além de 20 horas em primíparas ou 14 horas em multíparas, diagnosticamos a fase de latência prolongada. O registro iniciado antes dos 4 cm é a pista visual para esta alternativa.\n\nAssociação com a imagem:\nNo gráfico, o primeiro triângulo (dilatação) está marcado no nível de 3 cm. Nota-se que o tempo decorrido até que a dilatação atinja 4 cm (entrada na fase ativa) é excessivo, ocupando vários quadrados horizontais (cada quadrado representa 1 hora), o que caracteriza clinicamente a fase de latência prolongada antes mesmo de a curva cruzar as linhas de Alerta e de Ação na fase ativa.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Partograma e Distocias"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/7d3b3b31f54afc315acc68c6375ebe82e0dec35050c9cc14f0b72b61c7d0206f.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_faa00d4a-b694-49a1-9407-a1bfb6422c36_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:25.806Z"
+  },
+  {
+    "id": "AJUDA_fab119e5-4416-42e1-9ed5-8535b8381816",
+    "originalId": "fab119e5-4416-42e1-9ed5-8535b8381816",
+    "statement": "Paciente 75 anos, portador de neoplasia de próstata em tratamento com quimioterapia e radioterapia, história de metástase vertebral com paresia em m.m.i.i. Procura a emergência com edema e dor a palpação da panturrilha D. \n\nNo caso acima descrito qual a probabilidade clínica de TVP de acordo com o escore de weels e qual propedêutica de escolha indicada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Probabilidade intermediária deve-se realizar dosagem D dímero e US com doppler.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Probabilidade intermediária, deve-se realizar dosagem de D dímero e na dependência do resultado realizar US com doppler.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alta probabilidade, realizar dosagem de D dímero e US com doppler.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alta probabilidade, propedêutica escolha US com doppler sem dosagem prévia de D dímero.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Moderada probabilidade, mas como a neoplasia é uma condição que aumenta D dímero procede-se a ultrassonografia com doppler sem realizar D dímero.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, devemos aplicar o Escore de Wells para Trombose Venosa Profunda (TVP) e seguir o algoritmo diagnóstico recomendado pelas diretrizes atuais.\n\nAnálise do Escore de Wells para este paciente:\n1. Neoplasia ativa (em tratamento com quimioterapia e radioterapia): +1 ponto.\n2. Paresia em membros inferiores (devido à metástase vertebral): +1 ponto.\n3. Edema na panturrilha: +1 ponto.\n4. Dor/Sensibilidade à palpação no trajeto venoso (panturrilha): +1 ponto.\n\nTotal: 4 pontos.\n\nInterpretação do Escore de Wells (modelo clássico):\n- 0 pontos: Probabilidade baixa.\n- 1 a 2 pontos: Probabilidade intermediária (moderada).\n- 3 ou mais pontos: Probabilidade alta.\n\nNo modelo simplificado (DVT Likely/Unlikely), uma pontuação igual ou superior a 2 já classifica a TVP como Provável.\n\nConduta diagnóstica:\n- Em pacientes com probabilidade baixa ou intermediária (ou \"TVP improvável\"), o primeiro passo é a dosagem do D-dímero. Se vier negativo, a TVP pode ser excluída.\n- Em pacientes com probabilidade alta (ou \"TVP provável\"), a propedêutica de escolha é diretamente a Ultrassonografia com Doppler (USG-TVP). Nesses casos, o D-dímero não deve ser solicitado, pois mesmo um resultado negativo não possui valor preditivo negativo suficiente para descartar a doença com segurança em um cenário de alto risco pré-teste.\n\nAnálise das alternativas:\n\na) Incorreta. O paciente apresenta alta probabilidade (4 pontos no Wells) e, nesse caso, a dosagem de D-dímero é dispensável, devendo-se proceder diretamente ao Doppler.\n\nb) Incorreta. A probabilidade é alta, não intermediária. A estratégia de realizar D-dímero para decidir sobre o Doppler é reservada para pacientes de baixo risco ou probabilidade improvável.\n\nc) Incorreta. Embora acerte a probabilidade (alta), erra na propedêutica ao indicar a dosagem de D-dímero para este perfil de paciente.\n\nd) Correta. O paciente preenche critérios para alta probabilidade clínica (Wells maior ou igual a 3). Em cenários de alta probabilidade, o exame de escolha inicial é o US Doppler venoso dos membros inferiores, sem a necessidade de triagem prévia com D-dímero.\n\ne) Incorreta. A pontuação do paciente o coloca na categoria de alta probabilidade, não moderada. Além disso, embora seja verdade que a neoplasia pode elevar o D-dímero (reduzindo sua especificidade), a decisão de ir direto para o Doppler em pacientes de alto risco baseia-se na baixa segurança em excluir o diagnóstico apenas com o biomarcador, independentemente da causa da sua elevação.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Cirurgia Vascular",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:25.806Z"
+  },
+  {
+    "id": "AJUDA_fab337af-00e6-47c6-915d-1b795d441821",
+    "originalId": "fab337af-00e6-47c6-915d-1b795d441821",
+    "statement": "Homem de 58 anos, portador de fibrilação atrial em uso de varfarina (INR 3,1), vítima de queda de moto a 60 km/h, dá entrada consciente, Glasgow 14, PA 80/40 mmHg, FC 142 bpm, FR 32 irpm, SatO₂ 89% em O₂. Ao exame: murmúrio vesicular diminuído à direita, dor abdominal difusa, jugulares colabadas. FAST: líquido livre em quadrante superior direito. Não há fraturas pélvicas. Após acesso venoso calibroso, recebeu 500 mL de cristalóide aquecido. Qual deve ser a próxima conduta imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar plasma fresco congelado e vitamina K para reversão do INR antes da abordagem cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar TC de abdome com contraste para avaliar extensão da lesão abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar toracostomia em selo d’água à direita antes da laparotomia exploradora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Proceder laparotomia exploradora imediata, com correção de coagulopatia durante o ato operatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Iniciar ressuscitação com protocolo de transfusão maciça e encaminhar à UTI para estabilização antes da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta um quadro clássico de choque hipovolêmico hemorrágico classe IV. Os sinais de instabilidade hemodinâmica são claros: hipotensão severa (80/40 mmHg), taquicardia importante (142 bpm), taquipneia (32 irpm) e queda do nível de consciência (Glasgow 14). As jugulares colabadas reforçam que o choque é de origem hipovolêmica (perda de volume), e não obstrutiva (como no pneumotórax hipertensivo ou tamponamento cardíaco), apesar da diminuição do murmúrio vesicular à direita. O FAST positivo confirma a presença de líquido livre (sangue) na cavidade abdominal.\n\nPor que a alternativa (d) é a correta:\nDiante de um trauma com instabilidade hemodinâmica e FAST positivo para líquido livre abdominal, a indicação é de laparotomia exploradora imediata para controle do foco de sangramento. O fato de o paciente usar varfarina (anticoagulante) e apresentar um INR elevado agrava o risco de sangramento, mas não deve atrasar a intervenção cirúrgica de emergência. A correção da coagulopatia, com uso de plasma fresco congelado, complexo protrombínico e vitamina K, deve ser iniciada simultaneamente ao procedimento cirúrgico, e não antes dele.\n\nAnálise das alternativas incorretas:\n\na) Administrar plasma fresco congelado e vitamina K para reversão do INR antes da abordagem cirúrgica: Incorreta. Em um paciente com choque classe IV e sangramento ativo, o tempo é fator determinante. Aguardar a reversão laboratorial do INR para operar levaria ao óbito por choque irreversível. A cirurgia de controle de danos é a prioridade.\n\nb) Solicitar TC de abdome com contraste para avaliar extensão da lesão abdominal: Incorreta. A tomografia computadorizada é um exame indicado apenas para pacientes hemodinamicamente ESTÁVEIS. Levar um paciente instável para a sala de radiologia é um erro grave em trauma, pois ele pode evoluir para parada cardiorrespiratória em um ambiente sem recursos para ressuscitação imediata.\n\nc) Realizar toracostomia em selo d’água à direita antes da laparotomia exploradora: Incorreta. Embora haja diminuição do murmúrio vesicular à direita, as jugulares colabadas e o FAST positivo indicam que a causa principal do choque é a hemorragia abdominal. A prioridade é a laparotomia. O manejo torácico pode ser feito de forma secundária ou simultânea, mas não deve atrasar o controle do sangramento abdominal.\n\ne) Iniciar ressuscitação com protocolo de transfusão maciça e encaminhar à UTI para estabilização antes da cirurgia: Incorreta. O protocolo de transfusão maciça deve ser iniciado, mas o destino de um paciente instável com sangramento cavitário não é a UTI, e sim o Centro Cirúrgico. A estabilização definitiva só será alcançada com o controle mecânico (cirúrgico) da hemorragia.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:25.806Z"
+  },
+  {
+    "id": "AJUDA_fabab630-4c1b-4b92-a1b3-2c0515da00c2",
+    "originalId": "fabab630-4c1b-4b92-a1b3-2c0515da00c2",
+    "statement": "A Portaria no 399, de 22 de fevereiro de 2006, apresenta as Diretrizes do Pacto pela Saúde. O documento contempla o pacto firmado entre os gestores do Sistema Único de Saúde (SUS) em 3 dimensões visando a consolidação do SUS. Assinale a alternativa que relaciona uma das dimensões do pacto a uma das ações previstas para a respectiva dimensão.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pacto pela Vida - Política Nacional de DST/AIDS",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pacto de Gestão - Fortalecimento da Atenção Básica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pacto em Defesa do SUS - Elaboração e publicação da Carta dos Direitos dos Usuários do SUS",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pacto pela Prevenção - Promoção do envelhecimento ativo e saudável",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Pacto pela Saúde, regulamentado pela Portaria 399/2006, substituiu os antigos processos de habilitação de gestores e organizou a gestão do SUS em três dimensões: Pacto pela Vida, Pacto em Defesa do SUS e Pacto de Gestão.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. O Pacto pela Vida estabeleceu seis prioridades iniciais em 2006: saúde do idoso, controle do câncer de colo de útero e de mama, redução da mortalidade infantil e materna, promoção da saúde, fortalecimento da atenção básica e controle de doenças emergentes/endemias (dengue, hanseníase, tuberculose, malária e influenza). A Política Nacional de DST/AIDS não constava como uma das prioridades pactuadas originalmente neste documento.\n\nAlternativa B - Incorreta. O Fortalecimento da Atenção Básica é uma das prioridades do Pacto pela Vida, e não do Pacto de Gestão. O Pacto de Gestão foca nas diretrizes para a gestão do sistema, abrangendo aspectos como regionalização, financiamento, planejamento e programação pactuada e integrada (PPI).\n\nAlternativa C - Correta. O Pacto em Defesa do SUS possui um caráter político e social, visando consolidar o SUS como uma política de Estado e mobilizar a sociedade na defesa dos princípios constitucionais da saúde. Entre suas ações previstas estão o estímulo à cidadania e a elaboração da Carta dos Direitos dos Usuários do SUS, visando informar as pessoas sobre seus direitos e deveres no sistema.\n\nAlternativa D - Incorreta. Não existe a dimensão denominada Pacto pela Prevenção. As três dimensões são Vida, Defesa e Gestão. Além disso, a promoção do envelhecimento ativo e saudável é uma ação vinculada à prioridade Saúde do Idoso, que pertence ao Pacto pela Vida.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:25.806Z"
+  },
+  {
+    "id": "AJUDA_fabf97cd-3d05-47ea-add2-8e1703e98ebe",
+    "originalId": "fabf97cd-3d05-47ea-add2-8e1703e98ebe",
+    "statement": "Em um ensaio clínico controlado, o planejamento de delineamento de cross-over",
+    "options": [
+      {
+        "id": "A",
+        "text": "elimina a necessidade de randomização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "requer randomização estratificada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "deve considerar um possível efeito residual da primeira intervenção.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "aumenta a validade externa dos resultados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O delineamento de ensaio clínico do tipo cross-over (ou cruzado) é aquele em que cada participante recebe, em momentos diferentes e em uma sequência aleatória, tanto a intervenção experimental quanto o controle. Dessa forma, o próprio paciente serve como seu próprio controle, o que reduz a variabilidade individual.\n\nAlternativa (a) Incorreta: A randomização não é eliminada. Ela continua sendo essencial para definir a ordem em que os tratamentos serão administrados (por exemplo, se o paciente receberá primeiro o medicamento A e depois o B, ou vice-versa). Isso evita o viés de seleção e o efeito de período.\n\nAlternativa (b) Incorreta: Embora a randomização estratificada possa ser utilizada em diversos desenhos de estudos para equilibrar variáveis específicas entre os grupos, ela não é um requisito obrigatório ou exclusivo do planejamento de um estudo cross-over.\n\nAlternativa (c) Correta: O maior desafio técnico do estudo cross-over é o chamado efeito residual (carry-over effect). Isso acontece quando os efeitos da primeira intervenção persistem e interferem nos resultados da segunda intervenção. Para mitigar esse risco, o pesquisador deve obrigatoriamente prever um período de \"washout\" (lavagem), que é um intervalo de tempo sem nenhuma intervenção, suficiente para que a primeira substância seja totalmente eliminada do organismo do participante.\n\nAlternativa (d) Incorreta: O desenho cross-over aumenta principalmente a eficiência estatística e a validade interna, ao isolar o efeito da droga das características individuais do paciente. A validade externa (capacidade de generalizar os resultados) costuma ser igual ou até menor do que em outros estudos, pois o protocolo é mais longo e exigente, o que pode levar a maiores taxas de abandono pelos participantes.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T18:16:25.806Z"
+  }
+]

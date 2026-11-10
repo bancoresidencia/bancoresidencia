@@ -1,0 +1,494 @@
+[
+  {
+    "id": "AJUDA_85ad1905-9069-4c3f-a5e5-59bc816fb404",
+    "originalId": "85ad1905-9069-4c3f-a5e5-59bc816fb404",
+    "statement": "O climatério é caracterizado como a fase de transição entre a menacme e a senectude. Dentre as transformações que ocorrem nesta fase, observa-se que nas mulheres:",
+    "options": [
+      {
+        "id": "A",
+        "text": "pode ocorrer elevação de FSH, mesmo com ciclos menstruais presentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "pode ocorrer elevação do LH superior à elevação do FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o estradiol é mantido como o principal estrogênio circulante no plasma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a testosterona plasmática apresenta uma queda abrupta no seu nível.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O climatério representa a fase de transição entre o período reprodutivo e o não reprodutivo, sendo marcado por importantes oscilações e declínios hormonais decorrentes da depleção da reserva folicular ovariana.\n\nAlternativa (a) CORRETA: Esta é a alteração hormonal mais precoce e característica da transição menopausal. Com a diminuição da quantidade e da qualidade dos folículos ovarianos, há uma queda na produção de inibina B. Como a inibina B é responsável por realizar o feedback negativo sobre a hipófise para controlar a secreção de FSH, sua redução leva ao aumento dos níveis de FSH. Esse fenômeno ocorre anos antes da interrupção definitiva da menstruação, ou seja, a mulher continua tendo ciclos menstruais, embora eles possam começar a apresentar irregularidades na duração.\n\nAlternativa (b) INCORRETA: Embora tanto o FSH quanto o LH aumentem após a falência ovariana devido à ausência de feedback negativo dos estrogênios, o aumento do FSH é significativamente mais acentuado e ocorre mais cedo do que o do LH. Isso acontece porque o FSH possui uma meia-vida plasmática mais longa e sofre a influência direta da queda da inibina, um efeito que não se aplica da mesma forma ao LH.\n\nAlternativa (c) INCORRETA: Durante a menacme, o estradiol, produzido pelos folículos ovarianos, é o estrogênio principal e mais potente. No climatério avançado e na pós-menopausa, com a falência folicular, os níveis de estradiol caem drasticamente. O principal estrogênio circulante passa a ser a estrona, que é derivada da conversão periférica de precursores androgênicos (como a androstenediona) no tecido adiposo.\n\nAlternativa (d) INCORRETA: A queda dos níveis de testosterona não é abrupta. Enquanto o estradiol sofre uma redução drástica em um curto período de tempo durante a transição, a testosterona apresenta um declínio gradual e contínuo relacionado ao envelhecimento tanto ovariano quanto adrenal. Mesmo após a menopausa, o estroma ovariano continua produzindo pequenas quantidades de androgênios sob estímulo do LH elevado.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:38.582Z"
+  },
+  {
+    "id": "AJUDA_85aea15f-7c76-4fac-8879-1f9be4478cda",
+    "originalId": "85aea15f-7c76-4fac-8879-1f9be4478cda",
+    "statement": "Você está de plantão em um hospital terciário e atende um paciente do sexo masculino, 23 anos, ciclista vítima de atropelamento em via pública. O paciente é trazido pelo SAMU imobilizado, em prancha longa, com acesso venoso periférico sendo administrado 500ml de Ringer Lactato. Estava consciente e relatava contusão abdominal pelo guidão da bicicleta devido ao trauma. O tórax era atípico, estável, com ausculta cardiopulmonar sem alterações. FC: 90bpm, FR: 16irpm, P.A.: 120x80mmHg, sem sangramentos externos. Glasgow 15 pontos, pupilas isocóricas e reativas a luz, sem déficits motores ou sensitivos periféricos. O abdome apresentava escoriações em abdome superior, era doloroso à palpação profunda, porém sem sinais de irritação peritoneal à admissão. Bacia estável, sem deformidades de membros ou lesões no dorso. Sobre o caso, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neste momento, a melhor conduta para o caso é a realização de ultrassonografia de abdome para diagnóstico de lesões de vísceras maciças e ocas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "De acordo com o mecanismo de trauma apresentado, há indicação precisa de lavado peritoneal diagnóstico devido ao elevado risco de lesão pancreática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mesmo que a tomografia de abdome deste paciente evidencie trauma esplênico com extravasamento de contraste pela lesão, o tratamento não operatório pode ser factível.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Trauma abdominal contuso associada a dor abdominal ao exame físico, mesmo na ausência de irritação peritoneal, indica laparotomia exploradora pela elevada probabilidade de lesões de vísceras maciças.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: O paciente é uma vítima de trauma abdominal contuso com mecanismo de compressão (guidão da bicicleta). O dado mais importante para a condução do caso é que o paciente se encontra hemodinamicamente estável (pressão arterial de 120x80 mmHg e frequência cardíaca de 90 bpm).\n\nAlternativa (a) INCORRETA: Embora o ultrassom (FAST) seja útil na sala de emergência, ele serve prioritariamente para detectar líquido livre na cavidade abdominal (hemoperitôneo). Ele possui baixa sensibilidade para o diagnóstico de lesões de vísceras maciças (como pâncreas) e é muito limitado para diagnosticar lesões de vísceras ocas (como intestino). No paciente estável, o padrão-ouro é a Tomografia Computadorizada (TC).\n\nAlternativa (b) INCORRETA: O Lavado Peritoneal Diagnóstico (LPD) é um procedimento invasivo indicado principalmente para pacientes com instabilidade hemodinâmica nos quais a fonte do sangramento não é clara. Além disso, o LPD é pouco sensível para avaliar o retroperitônio, onde se localiza o pâncreas, órgão frequentemente lesionado no trauma por guidão de bicicleta.\n\nAlternativa (c) CORRETA: O manejo do trauma abdominal mudou significativamente nas últimas décadas. Atualmente, a estabilidade hemodinâmica é o fator determinante para decidir pelo Tratamento Não Operatório (TNO). Mesmo que a Tomografia de abdome mostre uma lesão esplênica com extravasamento de contraste (blush arterial), indicando sangramento ativo, o tratamento conservador pode ser tentado. Nesses casos, a radiologia intervencionista com angioembolização do vaso sangrante é uma ferramenta valiosa que evita a necessidade de esplenectomia (retirada do baço).\n\nAlternativa (d) INCORRETA: A presença de dor abdominal ou escoriações em um paciente estável não é indicação imediata de laparotomia. A laparotomia exploradora no trauma contuso é reservada para pacientes com instabilidade hemodinâmica que não respondem à reposição volêmica inicial, pacientes com sinais nítidos de irritação peritoneal (peritonite) ou evidência de ar livre na cavidade (pneumoperitôneo). No caso descrito, a estabilidade permite a realização de exames de imagem para definir a melhor estratégia.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:38.582Z"
+  },
+  {
+    "id": "AJUDA_85b4c020-b7d6-4672-8e2e-62353f8f0fd7",
+    "originalId": "85b4c020-b7d6-4672-8e2e-62353f8f0fd7",
+    "statement": "Entre as opções a seguir, o fator de risco para o desenvolvimento da Doença de Crohn é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tabagismo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apendicectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso de Anti-Inflamatórios Não Esteroides (AINEs).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Contraceptivos orais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a letra (a).\n\nA Doença de Crohn é uma patologia inflamatória intestinal de etiologia complexa, envolvendo predisposição genética, resposta imune desregulada e gatilhos ambientais. A compreensão dos fatores de risco é essencial para o diagnóstico e manejo clínico. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A (CORRETA): O tabagismo é o fator de risco ambiental mais importante e bem estabelecido para a Doença de Crohn. Estudos epidemiológicos demonstram que fumantes possuem um risco duas vezes maior de desenvolver a doença em comparação com não fumantes. Além do papel na gênese da patologia, o cigarro atua como um fator de mau prognóstico, estando associado a formas mais agressivas da doença, maior taxa de recidiva após cirurgias, maior necessidade de terapia com biológicos e maior frequência de complicações, como fístulas e estenoses. É importante destacar para as provas de residência que o tabagismo apresenta um efeito paradoxal, sendo um fator protetor para a retocolite ulcerativa, mas um fator de risco grave para a Doença de Crohn.\n\nAlternativa B (INCORRETA): A apendicectomia é reconhecida na literatura médica como um fator protetor para o desenvolvimento da retocolite ulcerativa, especialmente quando realizada em pacientes jovens por quadro de apendicite verdadeira. No caso da Doença de Crohn, a relação é controversa. Alguns estudos sugerem um aumento do diagnóstico de Crohn nos primeiros anos após a apendicectomia, mas acredita-se que isso decorra de um viés de diagnóstico, em que a inflamação inicial do íleo terminal (característica do Crohn) é confundida com apendicite aguda. Portanto, a apendicectomia não é classificada como um fator de risco clássico para a doença.\n\nAlternativa C (INCORRETA): O uso de anti-inflamatórios não esteroides (AINEs) é classicamente associado ao desencadeamento de crises de atividade (exacerbações) em pacientes que já possuem o diagnóstico de doença inflamatória intestinal. Isso ocorre porque a inibição das prostaglandinas pode comprometer a integridade da barreira mucosa intestinal. Embora existam discussões sobre o papel dos AINEs no surgimento da doença, a força dessa associação é muito inferior à do tabagismo, não sendo a resposta principal em exames de seleção.\n\nAlternativa D (INCORRETA): O uso de contraceptivos orais tem sido investigado como um possível fator de risco, com alguns estudos sugerindo um leve aumento na incidência de Doença de Crohn em usuárias de longa data. O mecanismo proposto envolveria alterações na microvasculatura intestinal ou modulação imune por estrogênios. Contudo, assim como os AINEs, a evidência é considerada fraca e inconsistente quando comparada ao impacto clínico e epidemiológico do tabagismo.\n\nEm resumo, o tabagismo é o principal fator de risco ambiental modificável e o dado mais frequentemente cobrado em questões sobre a epidemiologia da Doença de Crohn.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:38.582Z"
+  },
+  {
+    "id": "AJUDA_85b5b8f7-4c3f-4925-8088-2b36fabc6d12",
+    "originalId": "85b5b8f7-4c3f-4925-8088-2b36fabc6d12",
+    "statement": "Mulher, 40 anos de idade, procura o serviço de emergência com dor lombar há 3 dias e aumento da intensidade nas últimas 12h. No momento relata dor 10 em 10 e incapacidade de trabalhar. Relata múltiplos episódios prévios semelhantes em momentos de aumento da carga de trabalho. Tem obesidade (IMC de 41 kg/m2), insônia e tabagismo de 20 anos-maço. Faz uso de benzodiazepínico para dormir. Nega outras comorbidades. Ao exame físico, após analgesia, apresenta dor localizada na região lombar, com irradiação para o membro inferior direito, força motora e sensibilidade dos membros inferiores sem alterações. Qual das características apresentadas pela paciente representa fator de risco para cronificação do episódio de dor lombar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dor intensa gerando incapacidade funcional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Índice de massa corpórea maior que 35 kg/m2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tabagismo com elevada carga tabágica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Insônia com uso de benzodiazepínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A transição da dor lombar aguda para a forma crônica (duração superior a 12 semanas) é fortemente influenciada por fatores biopsicossociais, conhecidos como bandeiras amarelas (yellow flags), além da gravidade da apresentação clínica inicial.\n\nAlternativa A: Correta. A dor de alta intensidade (no caso, 10 de 10) e a presença de incapacidade funcional importante (incapacidade para o trabalho) são os fatores prognósticos mais robustos e bem estabelecidos na literatura médica para a cronificação da dor lombar. Escores validados de estratificação de risco, como o STarT Back, consideram a gravidade do sintoma e a limitação funcional precoce como determinantes centrais para o risco de cronicidade e para a necessidade de intervenções mais direcionadas.\n\nAlternativa B: Incorreta. A obesidade é um fator de risco comprovado para o surgimento (incidência) e recorrência da lombalgia, em decorrência da sobrecarga mecânica e de fatores inflamatórios sistêmicos. No entanto, isoladamente, não é um preditor tão direto ou forte para a cronificação de um episódio agudo em comparação à intensidade da dor e à incapacidade funcional.\n\nAlternativa C: Incorreta. O tabagismo contribui para a degeneração do disco intervertebral e eleva a prevalência de dor lombar na população geral, mas tem menor peso como fator prognóstico imediato de cronificação durante a avaliação de um episódio agudo de dor.\n\nAlternativa D: Incorreta. Embora os distúrbios do sono e o sofrimento psíquico possam se correlacionar com a persistência da dor, a insônia e o uso de benzodiazepínicos isolados não superam a dor intensa combinada à limitação funcional como principal marcador de mau prognóstico e cronificação.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Dolorosas Crônicas",
+      "Doenças da Coluna Vertebral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:38.582Z"
+  },
+  {
+    "id": "AJUDA_85be608f-bdb4-4aa5-a04d-6f79ce5f3f8f",
+    "originalId": "85be608f-bdb4-4aa5-a04d-6f79ce5f3f8f",
+    "statement": "Paciente de 32 anos, 60 dias após parto por cesareana comparece em consulta de puerpério em Centro de Saúde. Queixa-se que após fissura em mamilo esquerdo sua mama apresenta-se edemaciada, endurecida, com dor intensa e eritema. Apresentou em domicílio dois picos febris de 39 graus, com melhora após uso de dipirona. Devido à fissura, paciente foi orientada por cunhada a só manter aleitamento na mama não fissurada. Ao exame físico: identifica-se mama esquerda com área de 5cm em quadrante supero lateral com endurecimento, dor, calor e vermelhidão. Não são visualizados trajetos fistulosos, secreção purulenta ou pontos de flutuação. Em relação ao caso, assinale a alternativa que apresenta o diagnóstico e a conduta CORRETOS:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abscesso Lactacional; solicitar ultrassonografia e realizar drenagem cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ectasia Ductal; prescrever analgésicos e desobstruir o ducto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mastite Lactacional; iniciar antibioticoterapia com amoxicilina ou cafalexina, além de incentivar aleitamento em ambas as mamas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mastite Lactacional; iniciar antibioticoterapia com ciprofloxacino, além de incentivar aleitamento em ambas as mamas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico de uma mastite lactacional. A paciente apresenta os sinais cardinais de inflamação (dor, calor, rubor e tumor) em uma área localizada da mama, associados a sintomas sistêmicos (febre alta de 39 graus) e um fator predisponente claro: a fissura mamilar, que serve como porta de entrada para bactérias da pele e da orofaringe do lactente, sendo o *Staphylococcus aureus* o agente mais comum.\n\nAnálise das alternativas:\n\na) Incorreta. O abscesso mamário é uma complicação da mastite. Embora o quadro seja sugestivo de uma inflamação intensa, o exame físico descreve especificamente a ausência de \"pontos de flutuação\". A flutuação é o sinal clínico patognomônico de coleção líquida (pus), indicando abscesso. Na ausência deste sinal e de secreção purulenta, o diagnóstico primário permanece como mastite. A drenagem cirúrgica só está indicada se houver abscesso confirmado.\n\nb) Incorreta. A ectasia ductal é uma condição benigna que geralmente ocorre em mulheres no climatério ou pós-menopausa, caracterizada pela dilatação dos ductos subareolares. Não costuma cursar com febre alta aguda ou sinais inflamatórios exuberantes relacionados ao puerpério imediato como os descritos no caso.\n\nc) Correta. O diagnóstico é de mastite lactacional. O tratamento padrão envolve o uso de antibióticos que cubram cocos Gram-positivos (especialmente *S. aureus*), sendo a cefalexina ou a amoxicilina (muitas vezes associada ao clavulanato) escolhas adequadas e seguras para o lactente. O ponto crucial da conduta é o esvaziamento mamário: a paciente deve ser orientada a manter a amamentação em ambas as mamas, começando pela mama sadia para estimular o reflexo de ejeção e depois passando para a mama afetada, ou realizar a ordenha manual/mecânica após as mamadas. A interrupção do aleitamento na mama afetada, como sugerido pela cunhada da paciente, favorece a estase láctea e a progressão para abscesso.\n\nd) Incorreta. Embora o diagnóstico de mastite esteja correto, o ciprofloxacino não é a primeira escolha para o tratamento de mastite lactacional. Antibióticos da classe das quinolonas devem ser evitados como primeira linha durante a amamentação quando existem opções mais seguras e eficazes para os germes mais comuns da pele, como as cefalosporinas de primeira geração ou penicilinas.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Aleitamento Materno",
+      "Doenças Benignas da Mama",
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:38.582Z"
+  },
+  {
+    "id": "AJUDA_85c6253c-13ac-40ee-aba9-3983b1c3140e",
+    "originalId": "85c6253c-13ac-40ee-aba9-3983b1c3140e",
+    "statement": "Sobre o genograma, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não é necessário colocar legenda nem data de realização, mas é obrigatório identificar quem fez o genograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "São necessárias no mínimo quatro gerações, sendo que se deve identificar o paciente índice.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Quando há união entre um casal heterossexual, o símbolo de homem (quadrado) deve estar à esquerda do símbolo da mulher (circulo); entre estes deve-se fazer a linha correspondente de tal união (casamento, não casados que vivem juntos, separação etc.).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Os filhos aparecem em ordem cronológica de nascimento, do mais velho para o mais novo. Caso a mulher tenha tido aborto não é necessário colocar em registro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não é obrigatório apontar com quem o paciente índice mora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O genograma é um instrumento essencial na Estratégia Saúde da Família (ESF) para a avaliação da estrutura e dinâmica familiar. Abaixo, analisamos cada alternativa com base nas normas padronizadas de construção desta ferramenta:\n\nAlternativa a: Incorreta. A legenda é fundamental, pois embora existam símbolos padrões, a família pode apresentar particularidades que exigem anotações específicas. A data de realização é indispensável, uma vez que a configuração familiar é dinâmica e sofre alterações ao longo do tempo (nascimentos, óbitos, divórcios), servindo como um registro histórico no prontuário.\n\nAlternativa b: Incorreta. O recomendado para um genograma completo é a representação de, no mínimo, três gerações, e não quatro. A identificação do paciente índice (a pessoa que serve de referência para o desenho) é realmente obrigatória, geralmente feita com uma seta ou uma linha dupla ao redor do símbolo.\n\nAlternativa c: Correta. Esta é uma das regras básicas de convenção gráfica do genograma. Em casais heterossexuais, o homem é representado por um quadrado à esquerda e a mulher por um círculo à direita. A linha que os une descreve o tipo de vínculo: uma linha contínua para casamento, linha tracejada para união estável, e linhas cortadas por traços diagonais para representar separação ou divórcio.\n\nAlternativa d: Incorreta. Embora os filhos devam ser colocados em ordem cronológica, da esquerda para a direita (do mais velho para o mais novo), a segunda parte da alternativa invalida a questão. Os abortos (espontâneos ou provocados) devem ser registrados no genograma, geralmente representados por um pequeno \"X\" ou um triângulo, pois são eventos significativos na história reprodutiva e emocional da família.\n\nAlternativa e: Incorreta. É fundamental identificar quem mora na mesma casa que o paciente índice. Isso é feito por meio de uma linha circular tracejada ao redor dos membros que compartilham o mesmo domicílio (linha de coabitação). Essa informação é crucial para entender a rede de apoio direto e os riscos de transmissão de doenças infectocontagiosas ou estressores domiciliares.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:38.582Z"
+  },
+  {
+    "id": "AJUDA_85cc601d-9571-401c-b492-0359aa791885",
+    "originalId": "85cc601d-9571-401c-b492-0359aa791885",
+    "statement": "Sra. Mildred, 55 anos, queixa-se que há quase 3 semanas notou dor na mão D quando tenta descascar alimentos. Percebeu que a dor surge principalmente ao apertar o polegar contra os de dos da mão D quando apóia a faca. De história re levante comenta que aposentou-se recentemente e tem dedicado grande parte de seu tempo livre navegando na internet e atualizando-se sobre as noticias diárias nas redes sociais. Descobriu que ao dar “likes” as redes oferecem cada vez mais conteúdo sobre o assunto e confessa que já ficou mais de duas horas seguidas fazendo scrolling (palavra que agora domina após a filha alertá-la sobre posições viciosas que podem causar pro blemas). Ao exame físico apresenta edema discre to e sensibilidade dolorosa na região do processo estiloide do rádio a D. A manobra de Phalen e o sinal de Tinel são negativas, mas refere agudiza ção da dor quando coloca o polegar na palma da mão e fecha os dedos sobre ele. Qual destes diagnósticos é o mais provável frente ao conjunto de informações acima?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de provável fasceíte palmar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de tenossinovite de Quervain.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de artrite gotosa da primeira articulação metacarpofalangeana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de artrite de pequenas articulações, muito provavelmente artrite reumatoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trata-se de síndrome do túnel do carpo com provável artrose de punho concomitante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nA paciente apresenta um quadro clássico de dor na borda radial do punho, especificamente sobre o processo estiloide do rádio. O histórico de atividades repetitivas (descascar alimentos e uso excessivo de smartphone/scrolling) é um fator de risco determinante para processos inflamatórios tendíneos. O ponto-chave para o diagnóstico é a descrição da manobra física: a dor que se intensifica ao realizar o desvio ulnar do punho com o polegar fletido e aduzido dentro da mão (conhecida como Manobra de Finkelstein).\n\nAnálise das Alternativas:\n\na) Incorreta. A fasceíte palmar manifesta-se com dor e, por vezes, espessamento ou nódulos na palma da mão, podendo evoluir para contraturas (como na moléstia de Dupuytren). Não guarda relação com a dor localizada no processo estiloide do rádio nem é desencadeada pela manobra descrita.\n\nb) Correta. A Tenossinovite de Quervain é a inflamação dos tendões do primeiro compartimento extensor do punho (abdutor longo e extensor curto do polegar). É extremamente comum em mulheres de meia-idade e associada a movimentos repetitivos do polegar. A dor no estiloide radial e a positividade na Manobra de Finkelstein (descrita no enunciado) são os critérios diagnósticos fundamentais.\n\nc) Incorreta. A artrite gotosa (gota) é uma artropatia inflamatória aguda que causa dor extrema, calor, rubor e edema importante em uma articulação específica. Embora possa ocorrer na base do polegar, a história de Mildred é de uma dor crônica/subaguda relacionada ao movimento, sem sinais flogísticos sistêmicos ou crises agudas típicas de gota.\n\nd) Incorreta. A Artrite Reumatoide é uma doença autoimune sistêmica que geralmente se apresenta com poliartrite simétrica (afeta as duas mãos), rigidez matinal prolongada (superior a uma hora) e acometimento de múltiplas pequenas articulações (metacarpofalangeanas e interfalangeanas proximais), o que diverge do quadro localizado e unilateral da paciente.\n\ne) Incorreta. A Síndrome do Túnel do Carpo é causada pela compressão do nervo mediano e manifesta-se com parestesia (formigamento) e dor na face palmar dos três primeiros dedos. O enunciado afirma explicitamente que as manobras de Phalen e Tinel (testes de triagem para esta síndrome) foram negativas, o que afasta essa hipótese. Além disso, a artrose de punho apresentaria alterações radiológicas e uma dor mais profunda e difusa, não limitada ao trajeto tendíneo do estiloide radial.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Doenças de Partes Moles",
+      "Doenças da Mão e Síndromes Compressivas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:38.582Z"
+  },
+  {
+    "id": "AJUDA_85d47935-c57c-4fb9-b9cf-460ff4e92b3f",
+    "originalId": "85d47935-c57c-4fb9-b9cf-460ff4e92b3f",
+    "statement": "As medidas efetivas na melhora do prognóstico de um paciente com síndrome de Marfan é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ultrassom de abdome seriado em pacientes com dor lombar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "profilaxia antibiótica para ecocardiograma transesofágico quando houver insuficiência aórtica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "evitar o uso de inibidores da enzima de conversão de angiotensina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "cirurgia profilática em paciente com prolapso mitral moderada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "uso de betabloqueadores em paciente com diâmetro da aorta ascendente maior que 4 cm.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa a: Incorreta. A síndrome de Marfan manifesta-se prioritariamente através de alterações na aorta torácica, especificamente na raiz da aorta e na aorta ascendente (necrose cística da média). O ultrassom de abdome seriado é utilizado para o rastreio e acompanhamento de aneurismas da aorta abdominal, que possuem fisiopatologia distinta, geralmente ligada à aterosclerose e ao tabagismo, não sendo o foco principal do manejo na síndrome de Marfan.\n\nAlternativa b: Incorreta. As diretrizes atuais de cardiologia para prevenção de endocardite infecciosa são restritivas. A profilaxia antibiótica não é indicada para a realização de ecocardiograma transesofágico, mesmo em pacientes com valvulopatias como a insuficiência aórtica. Ela é reservada para procedimentos odontológicos que manipulem tecido gengival em pacientes de altíssimo risco (como portadores de próteses valvares).\n\nAlternativa c: Incorreta. Os inibidores da enzima conversora de angiotensina (IECAs) não devem ser evitados. Na verdade, tanto os IECAs quanto os bloqueadores dos receptores de angiotensina II (BRAs), como a losartana, são drogas que podem ser utilizadas no tratamento. Elas ajudam a reduzir a progressão da dilatação aórtica não apenas pelo controle pressórico, mas também pela modulação da sinalização do fator de crescimento transformante beta (TGF-beta).\n\nAlternativa d: Incorreta. O prolapso de valva mitral é um achado comum na síndrome de Marfan, porém a conduta cirúrgica profilática para casos moderados não é indicada. A intervenção cirúrgica na valva mitral só deve ser considerada se houver insuficiência mitral grave associada a sintomas, disfunção ventricular esquerda ou dilatação progressiva das câmaras esquerdas.\n\nAlternativa e: Correta. O uso de betabloqueadores é a terapia farmacológica de primeira linha para pacientes com síndrome de Marfan que apresentam evidência de dilatação aórtica. O mecanismo de benefício envolve a redução da frequência cardíaca e da contratilidade miocárdica, o que diminui a força de ejeção do sangue contra a parede da aorta (redução do dP/dt). Isso minimiza o estresse mecânico sobre o tecido conjuntivo fragilizado, retardando o crescimento do aneurisma e reduzindo o risco de dissecção aórtica, impactando positivamente na sobrevida do paciente.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Aórticas Agudas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:38.582Z"
+  },
+  {
+    "id": "AJUDA_85d705dd-f40c-4f36-97f8-c4a3db47a4cf",
+    "originalId": "85d705dd-f40c-4f36-97f8-c4a3db47a4cf",
+    "statement": "Um casal de 83 e 85 anos, acompanhado na Estratégia Saúde da Família (ESF), vai à consulta médica, pois o homem sofreu queda da própria altura há cinco dias e ficou com dor no quadril, que melhora com o uso de analgésicos. Considerando a avaliação multidimensional do idoso e a abordagem centrada na pessoa, visando à prevenção de quedas, as orientações do médico devem ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "indicação de internação hospitalar e moderação nas atividades",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "manejo para controle de sintomas de dor e sedação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "exame de vista e realização de exercícios físicos",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "prescrição de outro analgésico e fisioterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a prevenção de quedas em idosos sob a ótica da Avaliação Multidimensional, um pilar fundamental da Geriatria e da Estratégia de Saúde da Família. Quando um idoso sofre uma queda, o médico deve investigar as causas e intervir nos fatores de risco modificáveis para evitar novos episódios, que são causas importantes de morbimortalidade nessa faixa etária.\n\nAlternativa A: Incorreta. A indicação de internação hospitalar não se justifica para um paciente estável, cuja dor melhora com analgésicos simples e que não apresenta sinais clínicos de fratura aguda ou complicações graves. Além disso, a orientação de moderação nas atividades é prejudicial ao idoso. O repouso excessivo e a restrição de mobilidade levam à sarcopenia (perda de massa e força muscular) e à perda de autonomia, o que paradoxalmente aumenta o risco de novas quedas e do declínio funcional.\n\nAlternativa B: Incorreta. O manejo da dor é necessário, mas o uso de sedação é formalmente contraindicado como estratégia de prevenção. Medicamentos sedativos, como benzodiazepínicos, estão entre os principais fatores de risco para quedas, pois causam sonolência, lentificação dos reflexos e instabilidade postural. Prescrever sedação para um paciente que já sofreu uma queda seria uma conduta iatrogênica.\n\nAlternativa C: Correta. Esta alternativa foca na prevenção secundária baseada em evidências. A avaliação da acuidade visual (exame de vista) é essencial, pois déficits de visão são fatores de risco significativos para tropeços e erros de julgamento espacial. Paralelamente, a prática de exercícios físicos (especialmente os que envolvem fortalecimento muscular e treino de equilíbrio) é a intervenção isolada mais eficaz para reduzir a taxa de quedas em idosos residentes na comunidade, agindo diretamente na reserva funcional do paciente.\n\nAlternativa D: Incorreta. Embora a fisioterapia seja uma excelente aliada na recuperação e prevenção, a simples troca ou adição de analgésicos foca apenas na consequência da queda (a dor) e não na causa ou na prevenção de eventos futuros. A abordagem multidimensional exige identificar por que o idoso caiu e agir sobre esses fatores, indo além do tratamento sintomático.\n\nGabarito: Letra (c).",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:38.582Z"
+  },
+  {
+    "id": "AJUDA_85daa866-67f1-4313-935c-f9fc244362ee",
+    "originalId": "85daa866-67f1-4313-935c-f9fc244362ee",
+    "statement": "A fistula anorretal de etiologia criptoglandular mais frequente é a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "supraesfincteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "transesfincteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "interesfincteriana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "extraesfincteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "As fístulas anorretais são, em sua grande maioria (cerca de 90%), decorrentes de infecções inespecíficas das glândulas anais localizadas nas criptas de Morgagni (teoria criptoglandular). A classificação mais utilizada mundialmente para descrever o trajeto dessas fístulas em relação ao aparelho esfincteriano é a Classificação de Parks.\n\nPara responder a essa questão, devemos analisar a prevalência de cada tipo:\n\na) Incorreta. A fístula supraesfincteriana tem seu trajeto passando acima do músculo puborretal, saindo para a pele através da fossa isquiorretal. É um tipo menos comum, correspondendo a aproximadamente 5% dos casos.\n\nb) Incorreta. A fístula transesfincteriana é aquela que atravessa tanto o esfíncter anal interno quanto o externo. Embora seja frequente na prática clínica, ela é a segunda mais comum, representando cerca de 25% a 30% das fístulas anorretais.\n\nc) Correta. A fístula interesfincteriana é o tipo mais frequente de fístula anorretal de origem criptoglandular. O seu trajeto percorre o espaço entre os esfíncteres anal interno e externo, não atravessando o esfíncter externo. Estima-se que ela ocorra em cerca de 45% a 70% dos casos, dependendo da literatura estatística consultada.\n\nd) Incorreta. A fístula extraesfincteriana é a mais rara de todas, ocorrendo em cerca de 1% dos casos. Seu trajeto vai do reto até a pele perianal, passando totalmente por fora do complexo esfincteriano (por fora do músculo elevador do ânus). Geralmente está associada a doenças inflamatórias intestinais, traumas ou complicações de procedimentos cirúrgicos.\n\nPortanto, seguindo a Classificação de Parks e as estatísticas epidemiológicas clássicas da coloproctologia, a fístula interesfincteriana é a que apresenta maior incidência.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:38.582Z"
+  }
+]

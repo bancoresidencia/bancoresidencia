@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_543e17de-539a-4973-9b45-4c304c0602f0",
+    "originalId": "543e17de-539a-4973-9b45-4c304c0602f0",
+    "statement": "A comunicação interatrial (CIA) é a cardiopatia congênita mais comum e geralmente os pacientes são assintomáticos ou oligossintomáticos. Na maioria dos pacientes com CIA o achado característico na ausculta é",
+    "options": [
+      {
+        "id": "A",
+        "text": "segunda bulha única e alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sopro sistólico de regurgitação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "desdobramento amplo e fixo da segunda bulha.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "sopro sistólico de ejeção em borda esternal esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "estalido protossistólico com segunda bulha hipofonética.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS\n\nA Comunicação Interatrial (CIA) permite a passagem de sangue do átrio esquerdo para o átrio direito (shunt esquerda-direita), gerando uma sobrecarga de volume no ventrículo direito (VD) e na artéria pulmonar. Os achados da ausculta são consequências diretas dessa fisiopatologia.\n\nAlternativa a: INCORRETA. A segunda bulha (B2) única sugere que os componentes aórtico (A2) e pulmonar (P2) estão ocorrendo simultaneamente ou que um deles está ausente. Já a B2 hiperfonética (alta) é sinal de hipertensão pulmonar. Na CIA clássica, a B2 é caracteristicamente desdobrada.\n\nAlternativa b: INCORRETA. Sopros sistólicos de regurgitação (holossistólicos) são típicos de Comunicação Interventricular (CIV), insuficiência mitral ou insuficiência tricúspide. Na CIA, o fluxo através do septo interatrial não costuma gerar sopro por ser uma região de baixa pressão. O sopro audível na CIA é decorrente do excesso de sangue passando pela valva pulmonar (sopro de ejeção funcional).\n\nAlternativa c: CORRETA. Este é o achado patognomônico da CIA. O desdobramento é amplo porque o ventrículo direito, estando sobrecarregado de volume, demora mais tempo para ejetar o sangue, atrasando o fechamento da valva pulmonar (P2). Ele é fixo porque a comunicação entre os átrios permite uma equalização de pressão e fluxo durante o ciclo respiratório; assim, a variação do retorno venoso na inspiração é compensada pela diminuição do shunt esquerda-direita, mantendo o volume do VD e o intervalo entre A2 e P2 constantes.\n\nAlternativa d: INCORRETA. Embora um sopro sistólico de ejeção possa ser ouvido no foco pulmonar (borda esternal esquerda superior) devido ao aumento do volume de sangue passando por uma valva pulmonar normal, este achado é menos específico que o desdobramento fixo da segunda bulha. O sopro de ejeção pode ocorrer em diversas outras situações, como estenose pulmonar leve ou estados de débito cardíaco aumentado.\n\nAlternativa e: INCORRETA. O estalido protossistólico é típico de estenose valvar (abertura de valvas espessadas), e a B2 hipofonética ocorre quando os folhetos valvares estão calcificados ou com mobilidade reduzida, como na estenose pulmonar grave. Na CIA, a valva pulmonar é geralmente normal, apenas lidando com um fluxo aumentado.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Semiologia Cardíaca",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:01.969Z"
+  },
+  {
+    "id": "AJUDA_5440720b-a10d-4354-9c2f-240a0a55786f",
+    "originalId": "5440720b-a10d-4354-9c2f-240a0a55786f",
+    "statement": "Menino, 9 meses, com atraso do desenvolvimento neuropsicomotor, em investigação diagnóstica, tem avaliação oftalmológica com retinopatia em “sal e pimenta”. A principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "erro inato do metabolismo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "síndrome genética",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "doença neuromuscular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "infecção congênita",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da Questão:\n\nO sinal oftalmológico de retinopatia em \"sal e pimenta\" refere-se ao aspecto do fundo de olho que apresenta múltiplos focos de hiperpigmentação (pontos escuros) intercalados com áreas de atrofia ou despigmentação (pontos claros), criando uma aparência mosqueada. Este achado é um marcador clássico para o diagnóstico de infecções congênitas, sendo a descrição patognomônica da rubéola congênita, embora também possa ser vista na sífilis congênita.\n\nAlternativa (a) Erro inato do metabolismo: Incorreta. Alguns erros inatos do metabolismo, como as doenças peroxissomais (exemplo: síndrome de Zellweger) ou certas doenças de depósito, podem cursar com alterações pigmentares na retina. No entanto, essas condições são significativamente mais raras que as infecções congênitas e geralmente apresentam outros sinais clínicos mais específicos (como dismorfismos faciais ou organomegalias) que não foram citados.\n\nAlternativa (b) Síndrome genética: Incorreta. Existem síndromes genéticas que apresentam retinopatia pigmentar, como a síndrome de Usher ou a síndrome de Bardet-Biedl. Contudo, o padrão visual nessas síndromes costuma ser o de \"retinite pigmentosa\" (com formação de espículas ósseas) e a manifestação clínica costuma ser mais tardia. O termo \"sal e pimenta\" em um lactente com atraso do desenvolvimento direciona o examinador especificamente para o grupo das infecções.\n\nAlternativa (c) Doença neuromuscular: Incorreta. Doenças neuromusculares, como a atrofia muscular espinal (AME) ou distrofias musculares, manifestam-se primariamente com hipotonia, fraqueza muscular e arreflexia. Elas não apresentam, de forma característica, alterações pigmentares da retina como o sinal de \"sal e pimenta\".\n\nAlternativa (d) Infecção congênita: Correta. Esta é a principal hipótese diagnóstica. A retinopatia em \"sal e pimenta\" é a alteração ocular mais frequente da rubéola congênita. Além da rubéola, a sífilis congênita também é uma causa importante. Ambas as infecções fazem parte do grupo TORCH e frequentemente resultam em atraso do desenvolvimento neuropsicomotor devido à encefalite ou malformações do sistema nervoso central ocorridas durante o período gestacional.\n\nConclusão: Diante de um quadro de atraso do desenvolvimento associado ao achado oftalmológico específico de retinopatia em \"sal e pimenta\", a investigação deve priorizar infecções congênitas.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:01.969Z"
+  },
+  {
+    "id": "AJUDA_5448f6c9-6aae-4cad-975f-49914652d3b8",
+    "originalId": "5448f6c9-6aae-4cad-975f-49914652d3b8",
+    "statement": "Sobre as doenças congênitas, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A penicilina benzatina é o tratamento de escolha para sífilis congênita em recém-nascidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A toxoplasmose congênita apresenta-se com catarata + cardiopatia (PCA/estenose pulmonar) + surdez neurossensorial; pode ter microcefalia, retinopatia pigmentária, púrpura “blueberry muffin”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Na zika congênita pode-se encontrar microcefalia, coriorretinite, calcificações intracranianas, convulsões, atraso do desenvolvimento ao nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A sífilis congênita precoce pode apresentar manifestações como rinite serossanguinolenta, lesões cutâneas, periostite, alterações dentárias e ósseas em fases tardias e hepatomegalia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. A penicilina benzatina não é o tratamento de escolha para o recém-nascido com diagnóstico ou suspeita de sífilis congênita. Isso ocorre porque essa formulação não atinge níveis terapêuticos adequados no líquido cefalorraquidiano, sendo ineficaz para tratar uma possível neurosífilis. Para o tratamento do neonato, as opções de escolha são a Penicilina G Cristalina (via intravenosa) ou a Penicilina G Procaína (via intramuscular), conforme o protocolo clínico e a avaliação de exames.\n\nAlternativa b: Incorreta. Os achados descritos (catarata, cardiopatia congênita como persistência do canal arterial, surdez neurossensorial e lesões cutâneas do tipo blueberry muffin) compõem o quadro clássico da Síndrome da Rubéola Congênita. A toxoplasmose congênita apresenta-se tipicamente com a Tétrade de Sabin, caracterizada por coriorretinite, hidrocefalia, calcificações intracranianas difusas e retardo mental.\n\nAlternativa c: Incorreta. Embora a Síndrome da Zika Congênita apresente microcefalia, calcificações e convulsões, a alternativa apresenta uma imprecisão terminológica ao citar atraso do desenvolvimento ao nascimento. O atraso no desenvolvimento neuropsicomotor é uma condição avaliada longitudinalmente no acompanhamento da criança, e não um achado pontual diagnosticado imediatamente ao nascimento. Comparativamente, a alternativa d apresenta uma descrição mais precisa das fases da sífilis.\n\nAlternativa d: Correta. A sífilis congênita é classificada em precoce (manifestações até os 2 anos de idade) e tardia (após os 2 anos). A fase precoce é marcada por rinite serossanguinolenta (que contém alta carga de treponemas), lesões cutâneas como o pênfigo sifilítico, hepatomegalia e periostite (inflamação do periósteo que causa dor e alterações radiológicas). A alternativa está correta ao listar essas manifestações e ao pontuar que as alterações dentárias (dentes de Hutchinson) e certas alterações ósseas (tíbia em sabre) são características da fase tardia da doença.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:01.969Z"
+  },
+  {
+    "id": "AJUDA_544ddebb-b502-4c52-a32f-0a892126514f",
+    "originalId": "544ddebb-b502-4c52-a32f-0a892126514f",
+    "statement": "Gestante, 30 anos de idade, 30 semanas de gravidez, com antecedente de prolapso de valva mitral diagnosticado na infância, comparece no pronto atendimento com queixa de taquicardia. Está muito preocupada com o bem-estar de seu bebê. Refere que tem tido cansaço a esforços pequenos, como caminhar no plano, e sente “o coração disparado” com muita frequência. Ao exame físico, apresenta bom estado geral, descorada 1+, PA de 108×70 mmHg, FC de 108 bpm, IMC de 38,2 kg/m2, bulhas rítmicas normofonéticas com sopro sistólico ejetivo aórtico 2+/6+, murmúrios vesiculares sem ruídos adventícios. Abdome gravídico, altura uterina de 32 cm, BCF presente de 146 bpm. Diante da anamnese e exame clínico, a hipótese diagnóstica principal é de",
+    "options": [
+      {
+        "id": "A",
+        "text": "estenose aórtica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "anemia sintomática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "arritmia supraventricular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "transtorno de ansiedade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente encontra-se no terceiro trimestre de gestação, período de grande expansão volêmica e demanda metabólica, apresentando sintomas de fadiga aos pequenos esforços, taquicardia e palidez de mucosas (descorada 1+), além de um sopro sistólico ejetivo.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. Embora a estenose aórtica produza um sopro sistólico ejetivo em foco aórtico, trata-se de uma patologia rara em mulheres jovens sem antecedentes de valvopatia congênita (como valva aórtica bicúspide). O sopro auscultado nesta paciente é um sopro funcional ou de hiperfluxo, decorrente da menor viscosidade sanguínea e do estado hiperdinâmico da gestação e da anemia. Além disso, a estenose aórtica isolada não justifica a palidez de mucosas.\n\nAlternativa B - Correta. A anemia sintomática explica a totalidade do quadro clínico. A gestação cursa com hemodiluição fisiológica e elevada necessidade de ferro. Quando a anemia se instala, a redução da oferta de oxigênio aos tecidos provoca fadiga e desencadeia taquicardia sinusal compensatória. A diminuição da viscosidade sanguínea associada ao débito cardíaco elevado gera turbilhonamento do sangue e o sopro sistólico ejetivo (sopro de fluxo). O achado de paciente \"descorada 1+\" no exame físico é o sinal objetivo central que confirma essa suspeita.\n\nAlternativa C - Incorreta. A taquicardia apresentada (108 bpm) com bulhas rítmicas representa uma taquicardia sinusal compensatória e não uma arritmia primária do sistema de condução. As taquiarritmias supraventriculares paroxísticas geralmente se manifestam com frequências cardíacas mais elevadas (frequentemente superiores a 150 bpm) e de início súbito, além de não explicarem a palidez cutaneomucosa.\n\nAlternativa D - Incorreta. O transtorno de ansiedade é um diagnóstico de exclusão. Embora a paciente relate preocupação com o feto e palpitações, a ansiedade não justifica os achados do exame físico, especificamente a palidez de mucosas e o sopro cardíaco de hiperfluxo. Diante de sinais orgânicos evidentes, deve-se priorizar a causa clínica.\n\nPortanto, a alternativa correta é a letra B.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Modificações Fisiológicas da Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:01.969Z"
+  },
+  {
+    "id": "AJUDA_544e3536-2295-4080-bddb-320b39dbb1ce",
+    "originalId": "544e3536-2295-4080-bddb-320b39dbb1ce",
+    "statement": "Puérpera, com 6 dias após parto normal, queixando-se de febre, dor suprapúbica e sangramento vaginal com odor fétido. Nega outras queixas. Exame físico: loquiação purulenta com odor fétido; colo uterino pérvio para 1 cm, útero amolecido; mamas túrgidas, sem flogose e indolores; Giordano negativo bilateralmente, frequência cardíaca= 107 bpm; temperatura axilar= 38,5°C. Com base nos sinais e sintomas descritos a principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mastite puerperal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Puerpério fisiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Endometrite puerperal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Cistite no puerpério.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pielonefrite no puerpério.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A endometrite é a causa mais comum de infecção e febre no período pós-parto, sendo caracterizada clinicamente pela tríade de febre, dor uterina e loquiação fétida. O quadro descrito na questão apresenta todos os elementos clássicos para essa patologia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Para o diagnóstico de mastite, seria necessário encontrar sinais inflamatórios nas mamas, como calor, rubor e dor. O exame físico da paciente descreve explicitamente mamas sem flogose e indolores, o que descarta o diagnóstico de infecção mamária.\n\nAlternativa b) Incorreta. No puerpério fisiológico (normal), a loquiação evolui de rubra para serosa, mas nunca deve apresentar odor fétido ou aspecto purulento. Além disso, a presença de febre (38,5 graus Celsius) e o útero amolecido são sinais claros de um processo patológico infeccioso.\n\nAlternativa c) Correta. A endometrite puerperal é a principal hipótese. Os achados de febre após o primeiro dia do parto, dor suprapúbica, útero amolecido (indicando subinvolução uterina) e loquiação purulenta com odor fétido compõem o diagnóstico clínico. A taquicardia (107 bpm) reforça o estado infeccioso da paciente.\n\nAlternativa d) Incorreta. A cistite se manifesta com sintomas urinários baixos, como disúria (dor ao urinar) e polaciúria (aumento da frequência). Embora a dor suprapúbica possa ocorrer, a cistite isolada não justifica a febre alta, o útero amolecido nem as alterações fétidas no sangramento vaginal.\n\nAlternativa e) Incorreta. A pielonefrite é uma infecção do trato urinário superior que cursa com febre alta e calafrios, mas sua marca característica no exame físico é a dor à punho-percussão lombar. Como o enunciado informa que o sinal de Giordano é negativo bilateralmente, esta hipótese é descartada.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Infecção Puerperal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:01.969Z"
+  },
+  {
+    "id": "AJUDA_544e3f8d-ec8e-4374-a942-c3aadcc60add",
+    "originalId": "544e3f8d-ec8e-4374-a942-c3aadcc60add",
+    "statement": "Paciente, 6 anos de idade, com antecedente de síndrome nefrótica corticodependente, iniciou quadro de urina espumosa, edema periorbital e escrotal, lipotimia e derrame pleural após episódio de resfriado comum. Foi indicada a internação para controle da descompensação e indicada infusão de albumina. \n\n• Exames laboratoriais:\nHb: 13,7g/dL\nHt: 45,2%\nLeucócitos: 3.400/mm3, sem desvio\nPlaquetas: 409 mil/mm3\nNa+: 125 mEq/L\nK+: 4,5 mEq/L\nCreatinina: 1,7 mg/dL (anterior de 0,9 mg/dL)\nUreia: 69 mg/dL\nAlbumina: 1,5 g/dL \n\nEvoluiu após 48 horas de internação com queixa de dor abdominal intensa, pior à palpação, com descompressão brusca positiva. Qual processo fisiopatológico está relacionado à complicação apresentada pelo paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução da opsonização por perda urinária de imunoglobulinas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aumento da pressão oncótica e da viscosidade sanguínea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infusão de coloide em paciente com redução da tonicidade plasmática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Perda urinária de proteínas C e S e antitrombina III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão descreve um paciente pediátrico com Síndrome Nefrótica (SN) em recaída, que desenvolve um quadro súbito de dor abdominal intensa e sinais de irritação peritoneal (descompressão brusca positiva). Em pediatria, diante de um paciente com SN e peritonite, o diagnóstico principal é a Peritonite Bacteriana Espontânea (PBE).\n\nAnálise das alternativas:\n\nAlternativa (a) CORRETA: Pacientes com Síndrome Nefrótica apresentam uma imunodeficiência secundária multifatorial. A principal causa de infecções por germes encapsulados (especialmente o *Streptococcus pneumoniae*) nesses pacientes é a perda urinária de proteínas importantes para o sistema imune, como as imunoglobulinas (principalmente IgG) e fatores do sistema complemento (como o fator B da via alternativa). Essa perda resulta em uma falha na opsonização das bactérias, dificultando a sua fagocitose e facilitando a ocorrência de quadros como a Peritonite Bacteriana Espontânea.\n\nAlternativa (b) INCORRETA: Na Síndrome Nefrótica, ocorre, na verdade, uma redução da pressão oncótica plasmática devido à hipoalbuminemia grave. O aumento da viscosidade sanguínea pode ocorrer devido à hemoconcentração e hiperlipidemia, mas esse mecanismo está relacionado ao risco de fenômenos tromboembólicos, e não à irritação peritoneal aguda.\n\nAlternativa (c) INCORRETA: A infusão de albumina (coloide) é frequentemente utilizada para o manejo de edemas graves ou hipovolemia na SN, mas não é o fator fisiopatológico que explica o desenvolvimento de dor abdominal com sinais de peritonite. A redução da tonicidade plasmática (hiponatremia) observada nos exames é comum na SN devido à retenção de água livre e alteração do volume arterial efetivo, mas não causa o quadro clínico descrito.\n\nAlternativa (d) INCORRETA: A perda urinária de antitrombina III e das proteínas C e S ocorre na Síndrome Nefrótica e é o principal mecanismo para o estado de hipercoagulabilidade desses pacientes, aumentando o risco de trombose da veia renal e tromboembolismo pulmonar. Embora uma trombose de veia mesentérica pudesse causar dor abdominal, a associação clássica com o quadro de irritação peritoneal (PBE) em crianças nefróticas é a deficiência de opsonização. Além disso, a alternativa (a) descreve a causa mais comum para o \"abdome agudo\" tipicamente cobrado em provas nesta patologia.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:01.969Z"
+  },
+  {
+    "id": "AJUDA_545331ae-25af-4c75-88e8-959636cedd40",
+    "originalId": "545331ae-25af-4c75-88e8-959636cedd40",
+    "statement": "Gestante, 29 anos, com 41 semanas de gestação, sem doenças, sente o bebê mexer normalmente e apresenta cardiotocografia reativa. A ultrassonografia mostra adramnia. O exame do colo do útero mostra que ele ainda está fechado e grosso. Qual é a conduta mais adequada no caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar amnioinfusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aguardar até completar 42 semanas sem fazer exames.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir os exames de bem-estar fetal em 2 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Interrupção da gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nTrata-se de uma gestante com 41 semanas (termo tardio) com diagnóstico de adramnia (ausência de líquido amniótico). Em gestações prolongadas, a adramnia é o principal marcador de insuficiência placentária crônica, decorrente da redistribuição do fluxo sanguíneo fetal para órgãos nobres em detrimento dos rins, levando à diminuição da diurese fetal. A adramnia também aumenta o risco mecânico de compressão grave do cordão umbilical e óbito fetal intrauterino. Por isso, mesmo que a cardiotocografia esteja momentaneamente reativa, a adramnia no termo tardio é uma indicação formal de interrupção da gestação.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A amnioinfusão tem indicação restrita durante o trabalho de parto para tratar desacelerações variáveis recorrentes (compressão de cordão). Não é uma medida terapêutica para prolongar a gravidez em casos de insuficiência placentária no termo tardio.\n\nAlternativa b: Incorreta. A conduta expectante sem vigilância é totalmente contraindicada, pois a adramnia eleva drasticamente a morbimortalidade perinatal e o risco de óbito fetal súbito.\n\nAlternativa c: Incorreta. Não se deve adiar a resolução da gestação para repetir exames em 2 dias. O achado de adramnia já comprova que o ambiente intrauterino está hostil e que a reserva placentária está esgotada, exigindo conduta ativa imediata.\n\nAlternativa d: Correta. A interrupção da gestação é a conduta padrão. O fato de o colo estar fechado e grosso indica que haverá necessidade de métodos para maturação cervical ou avaliação de via de parto adequada com monitorização contínua, mas a decisão clínica imediata mandatória é a resolução da gravidez.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Indução do Parto e Pós-Datismo",
+      "Alteração do Volume do Líquido Amniótico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:01.969Z"
+  },
+  {
+    "id": "AJUDA_54539aa9-4c5b-47d1-a5b7-ec360aeb77e8",
+    "originalId": "54539aa9-4c5b-47d1-a5b7-ec360aeb77e8",
+    "statement": "Uma paciente de 22 anos apresentou quadro de dor pélvica súbita há cerca de 2 horas. Ao exame, constata-se que está hipocorada ++/4, com PA = 90 x 40 mmHg e FC = 118 bpm. Seu abdômen está atípico com dor à palpação difusa, mais acentuada em fossa ilíaca direita, com descompressão dolorosa.\nO diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "apendicite aguda;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cisto ovariano direito roto;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "gravidez tubária rota;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "mittelschmerz;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "torção de ovário direito.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico:\nA paciente é uma mulher jovem (22 anos) com quadro de abdome agudo de início súbito (2 horas de evolução). O ponto-chave da questão reside nos sinais vitais e no exame físico: a paciente apresenta hipotensão (PA 90 x 40 mmHg), taquicardia (FC 118 bpm) e palidez (hipocorada ++/4). Esses achados indicam choque hipovolêmico (neste contexto, hemorrágico). A presença de dor à descompressão abdominal indica irritação peritoneal, sugerindo a presença de sangue livre na cavidade abdominal (hemoperitônio). Em mulheres em idade fértil com dor pélvica súbita e sinais de choque, a gravidez ectópica rota é a principal hipótese.\n\nAlternativa a) Incorreta. A apendicite aguda é uma causa comum de dor na fossa ilíaca direita e pode apresentar irritação peritoneal. No entanto, sua evolução costuma ser mais lenta (geralmente acima de 12-24 horas), iniciando com dor periumbilical que migra para o ponto de McBurney, acompanhada de anorexia e febre baixa. A apendicite não justifica um quadro de choque hemorrágico súbito como o descrito.\n\nAlternativa b) Incorreta. O cisto ovariano roto (como o cisto de corpo lúteo hemorrágico) pode causar dor aguda e hemoperitônio. Embora seja um diagnóstico diferencial importante, o sangramento costuma ser menos volumoso e raramente leva a uma instabilidade hemodinâmica tão grave em tão pouco tempo. Em provas de concursos médicos, a presença de choque hemorrágico associado a abdome agudo ginecológico direciona classicamente para gravidez ectópica.\n\nAlternativa c) Correta. A gravidez tubária rota ocorre quando a gestação ectópica cresce a ponto de romper a tuba uterina, causando sangramento intraperitoneal maciço. O quadro é caracterizado por dor pélvica aguda, sinais de peritonite e rápida progressão para o choque hipovolêmico (hipotensão, taquicardia e palidez), exatamente como apresentado pela paciente.\n\nAlternativa d) Incorreta. Mittelschmerz é o termo alemão para a dor da ovulação. É um evento fisiológico que ocorre no meio do ciclo menstrual, de caráter leve e transitório, sem causar qualquer repercussão hemodinâmica ou sinais de choque.\n\nAlternativa e) Incorreta. A torção de ovário causa dor pélvica de início súbito e muito intensa, frequentemente acompanhada de náuseas e vômitos. Embora seja uma emergência cirúrgica, a fisiopatologia é a isquemia do órgão por obstrução do fluxo sanguíneo, e não a hemorragia. Portanto, não explicaria a hipotensão e a taquicardia acentuadas (choque) observadas nesta paciente.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo em Ginecologia"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:01.969Z"
+  },
+  {
+    "id": "AJUDA_54620f1f-de7a-4370-8f24-295d0fb87a75",
+    "originalId": "54620f1f-de7a-4370-8f24-295d0fb87a75",
+    "statement": "Um menino de 8 anos, previamente saudável, é levado ao serviço de emergência com dor intensa em joelho esquerdo, febre de 38,9°C e claudicação. A avaliação inicial revelou leucocitose com neutrofilia, proteína C reativa (PCR) de 98mg/L e velocidade de hemossedimentação (VHS) de 104mm/h. A RM confirmou osteomielite aguda em metáfise distal do fêmur. Iniciou-se antibioticoterapia empírica com oxacilina endovenosa. Após dez dias, o paciente evoluiu com melhora clínica significativa, sem febre, e com deambulação sem dor. Os exames laboratoriais mostraram PCR = 5mg/L, VHS = 42mm/h e leucócitos = 7.800/mm3. Com base no seguimento clínico e laboratorial da osteomielite aguda hematogênica, a conduta mais adequada para esse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "repetir a RM para avaliar resolução da infecção óssea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "suspender o antibiótico e observar clinicamente, já que os sintomas desapareceram",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "considerar transição para antibiótico oral e programação de alta hospitalar com seguimento ambulatorial",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "manter antibioticoterapia venosa obrigatoriamente por quatro a seis semanas para garantir erradicação da infecção",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta um quadro de osteomielite aguda hematogênica com excelente resposta ao tratamento inicial. Os critérios para a transição da antibioticoterapia venosa para a via oral em pediatria incluem a melhora clínica evidente (ausência de febre e melhora da dor e mobilidade do membro) e a melhora laboratorial significativa, especialmente a queda da Proteína C Reativa (PCR). No caso descrito, o paciente está assintomático e sua PCR normalizou (5 mg/L), preenchendo os critérios para mudança de via de administração e alta hospitalar.\n\nALTERNATIVA A\n\nIncorreta. A Ressonância Magnética (RM) é um exame excelente para o diagnóstico inicial, mas não deve ser utilizada para monitorar a resolução da infecção a curto prazo. As alterações radiológicas e o edema ósseo vistos na RM demoram semanas ou até meses para desaparecer, persistindo muito além da cura clínica e laboratorial. Solicitar uma nova RM agora não traria benefício terapêutico e poderia gerar confusão diagnóstica.\n\nALTERNATIVA B\n\nIncorreta. Embora o paciente esteja clinicamente bem, a osteomielite requer um tempo total de tratamento prolongado (geralmente entre 3 a 6 semanas) para garantir a erradicação da bactéria no tecido ósseo e prevenir a recidiva ou a evolução para osteomielite crônica. Dez dias de tratamento são insuficientes para a cura completa.\n\nALTERNATIVA C\n\nCorreta. Esta é a conduta preconizada pelos protocolos atuais de infectologia pediátrica e ortopedia. Uma vez que o paciente atingiu estabilidade clínica (está afebril e deambulando sem dor) e houve queda importante dos marcadores inflamatórios (PCR < 20 mg/L), a transição para o antibiótico oral é segura. Isso permite que o paciente complete o tempo total de tratamento em casa, diminuindo o risco de infecções hospitalares e complicações associadas ao cateter venoso.\n\nALTERNATIVA D\n\nIncorreta. A recomendação de manter antibioticoterapia venosa obrigatoriamente por 4 a 6 semanas é considerada ultrapassada para casos de osteomielite aguda hematogênica não complicada em crianças. Diversos estudos demonstram que a transição precoce para a via oral, após um período inicial de 3 a 7 dias de medicação venosa, possui a mesma taxa de sucesso que o tratamento venoso prolongado, com a vantagem de ser menos invasivo e mais confortável para a criança.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Oncologia Ortopédica e Osteomielite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:01.969Z"
+  },
+  {
+    "id": "AJUDA_54655707-9833-4a57-a50e-297344c808f9",
+    "originalId": "54655707-9833-4a57-a50e-297344c808f9",
+    "statement": "Pneumoconioses são doenças pulmonares parenquimatosas relacionadas à inalação de poeiras minerais em ambientes de trabalho. Pode se afirmar que é uma atividade relacionada ao desenvolvimento de pneumoconiose não fibrogênica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "indústria aeroespacial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "siderurgia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "indústria de fibrocimento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ceramista",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "As pneumoconioses são classificadas em dois grandes grupos baseados na reação tecidual pulmonar à poeira inalada: fibrogênicas e não fibrogênicas. As pneumoconioses fibrogênicas, como a silicose e a asbestose, causam cicatrização permanente e alteração da arquitetura pulmonar. Já as não fibrogênicas são causadas por poeiras consideradas inertes, que se acumulam no parênquima sem provocar fibrose significativa ou perda funcional importante.\n\nAlternativa (a) Incorreta: A indústria aeroespacial utiliza ligas metálicas de alta resistência que frequentemente contêm berílio. A inalação de partículas de berílio causa a beriliose, uma doença granulomatosa crônica que evolui com fibrose pulmonar, sendo, portanto, uma pneumoconiose fibrogênica.\n\nAlternativa (b) Correta: A siderurgia envolve a manipulação de ferro e seus óxidos. A inalação crônica de poeira de ferro leva à siderose. O ferro é considerado uma poeira inerte; ele se deposita nos macrófagos alveolares e no interstício, gerando imagens radiológicas opacas (devido à densidade do metal), mas sem desencadear uma reação fibrótica proliferativa. Por isso, a siderose é o exemplo clássico de pneumoconiose não fibrogênica.\n\nAlternativa (c) Incorreta: A indústria de fibrocimento utilizou amplamente o amianto (asbesto) em sua composição. A exposição ao asbesto causa a asbestose, uma doença caracterizada por fibrose intersticial difusa e progressiva, além de estar associada a neoplasias como o mesotelioma. É uma doença marcadamente fibrogênica.\n\nAlternativa (d) Incorreta: A atividade de ceramista envolve o manuseio de argila e minerais ricos em sílica livre cristalina. A inalação de sílica causa a silicose, que é a pneumoconiose fibrogênica mais comum no Brasil, caracterizada pela formação de nódulos de colágeno densos e fibrose maciça progressiva.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:01.969Z"
+  }
+]

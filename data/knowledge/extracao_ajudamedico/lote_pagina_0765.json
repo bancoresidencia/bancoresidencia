@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_d583f4e8-8dd9-4060-ac24-6c74153a0051",
+    "originalId": "d583f4e8-8dd9-4060-ac24-6c74153a0051",
+    "statement": "Criança de dois anos de idade é hospitalizada para tratamento de impetigo em membros inferiores. Durante a internação foi prescrito ampicilina. No terceiro dia de tratamento, o paciente apresenta piora clínica e evolui com quadro de pneumonia associada. Assinale a alternativa que descreve o agente infeccioso comumente relacionado a quadros de impetigo e pneumonia na infância e o tratamento mais adequado nesse caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Haemophilus influenzae do tipo B e amoxicilina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Staphylococcus aureus e oxacilina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Streptococcus pneumoniae e cefalexina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Streptococcus pyogenes e gentamicina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA questão descreve um caso clínico clássico de uma criança com infecção cutânea (impetigo) que evolui com complicações sistêmicas, especificamente uma pneumonia, durante o uso de ampicilina. A chave para resolver o problema está em identificar o agente etiológico que frequentemente causa infecções de pele e tem a capacidade de causar pneumonias graves e rapidamente progressivas, além de notar que o paciente não respondeu à ampicilina.\n\nANÁLISE DO QUADRO CLÍNICO:\nO impetigo é causado principalmente por dois agentes: Staphylococcus aureus e Streptococcus pyogenes (estreptococo do grupo A). No entanto, o Staphylococcus aureus é o principal responsável pelo impetigo bolhoso e é um agente conhecido por causar pneumonia grave por via hematogênica ou após infecções cutâneas. O fato de o paciente ter piorado em uso de ampicilina sugere que o agente seja produtor de beta-lactamase (penicilinase), o que é característico de quase 100% das cepas de S. aureus, tornando-as resistentes a aminopenicilinas puras como a ampicilina.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. O Haemophilus influenzae do tipo B (Hib) teve sua incidência drasticamente reduzida após a vacinação universal. Ele costumava causar pneumonias e epiglotites, mas não é um agente relacionado ao impetigo. Além disso, se fosse uma cepa produtora de beta-lactamase, a amoxicilina isolada também não seria eficaz.\n\nb) Correta. O Staphylococcus aureus é o agente mais comum de impetigo na infância atual. Ele é conhecido por causar pneumonias estafilocócicas, que são quadros graves, muitas vezes acompanhados de derrame pleural, pneumatoceles e rápida piora clínica. Como a maioria das cepas de S. aureus produz penicilinase, o tratamento de escolha para casos que necessitam de internação e cobertura para MSSA (Staphylococcus aureus sensível à meticilina) é a oxacilina, uma penicilina resistente à penicilinase.\n\nc) Incorreta. Embora o Streptococcus pneumoniae (pneumococo) seja a causa mais comum de pneumonia bacteriana na infância, ele não é um agente de impetigo. Além disso, a cefalexina é uma cefalosporina de primeira geração de uso oral, não sendo o tratamento de escolha para um quadro de pneumonia com piora clínica em ambiente hospitalar.\n\nd) Incorreta. O Streptococcus pyogenes causa impetigo, mas sua associação com pneumonia é menos frequente que a do S. aureus neste contexto de rápida progressão a partir de foco cutâneo. Além disso, a gentamicina é um aminoglicosídeo com excelente ação contra bacilos Gram-negativos, mas possui baixíssima atividade contra estreptococos em monoterapia, não sendo o tratamento indicado.\n\nCONCLUSÃO:\nO diagnóstico é de impetigo estafilocócico com provável disseminação ou complicação pulmonar (pneumonia estafilocócica). A resistência à ampicilina corrobora a presença do Staphylococcus aureus, e a oxacilina é o tratamento hospitalar adequado para esse patógeno.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Piodermites",
+      "Pneumonia na Infância"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:27.313Z"
+  },
+  {
+    "id": "AJUDA_d584a926-5450-44ec-8b62-14bdaa3f8272",
+    "originalId": "d584a926-5450-44ec-8b62-14bdaa3f8272",
+    "statement": "Há um conceito emergente de que a pré-eclâmpsia, na verdade, seja uma síndrome que compreenda diferentes doenças e que a manifestação clínica de cada uma resulte da resposta constitucional materna à placentação, com subsequente inflamação, estresse oxidativo e disfunção endotelial e angiogênica.\nCom relação a essa suposta síndrome, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quanto mais precoce seu desenvolvimento, menos relação há com isquemia placentária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Proteinúria é critério essencial para o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Quanto maior a proteinúria, maior a gravidade da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A convulsão materna, em geral, ocorre predominantemente após o parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Relação proteína (mg/dL)/creatinina (mg/dL) de amostra urinária isolada maior ou igual a 0,3 indica pré-eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa a) Incorreta. O conceito atual divide a pré-eclâmpsia em dois grandes fenótipos. A pré-eclâmpsia precoce (antes de 34 semanas) é a que possui maior relação com a má placentação e isquemia placentária crônica. Já a pré-eclâmpsia tardia está mais associada a fatores constitucionais maternos e inflamação sistêmica.\n\nAlternativa b) Incorreta. Embora seja o achado mais comum, a proteinúria não é mais considerada critério obrigatório para o diagnóstico. Na ausência de proteinúria, o diagnóstico de pré-eclâmpsia pode ser firmado se houver hipertensão de início recente associada a qualquer um dos seguintes sinais de gravidade: plaquetopenia, insuficiência renal, alteração da função hepática, edema agudo de pulmão ou sintomas visuais e cerebrais.\n\nAlternativa c) Incorreta. Estudos mostram que o montante da proteinúria (mesmo acima de 5 gramas em 24 horas) não se correlaciona diretamente com o prognóstico materno ou fetal. Por isso, a proteinúria maciça foi retirada dos critérios de gravidade da doença nas diretrizes mais recentes (ACOG e FEBRASGO).\n\nAlternativa d) Incorreta. A eclâmpsia ocorre predominantemente antes do parto (anteparto) ou durante o trabalho de parto. O período pós-parto responde por uma porcentagem menor dos casos (cerca de 20 a 30%), embora ainda exija vigilância clínica.\n\nAlternativa e) Correta. A relação proteína/creatinina em amostra isolada de urina é uma ferramenta diagnóstica validada e prática. O ponto de corte de 0,3 tem excelente correlação com a coleta de urina de 24 horas (superior a 300 mg), sendo um critério oficial para o diagnóstico de pré-eclâmpsia.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:27.313Z"
+  },
+  {
+    "id": "AJUDA_d587f33c-fa1f-4717-8e1d-faca39f654a0",
+    "originalId": "d587f33c-fa1f-4717-8e1d-faca39f654a0",
+    "statement": "As principais malformações pulmonares congênitas são: enfisema lobar congênito, malformação pulmonar congênita das vias aéreas, sequestro pulmonar intralobar e sequestro pulmonar extralobar. As manifestações respiratórias dependem das alterações anatômicas envolvidas.\nAssinale a alternativa que apresenta, corretamente, as malformações que têm comunicação com a árvore traqueobrônquica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sequestro pulmonar intralobar e sequestro pulmonar extralobar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enfisema lobar congênito e malformação pulmonar congênita das vias aéreas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Enfisema lobar congênito, malformação pulmonar congênita das vias aéreas e sequestro pulmonar extralobar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Enfisema lobar congênito, malformação pulmonar congênita das vias aéreas e sequestro pulmonar intralobar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Enfisema lobar congênito, malformação pulmonar congênita das vias aéreas, sequestro pulmonar intralobar e sequestro pulmonar extralobar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender essa questão, o candidato deve focar na definição embriológica e anatômica de cada malformação, especificamente na conexão com a árvore traqueobrônquica normal.\n\nANÁLISE DAS PATOLOGIAS:\n\n1. Enfisema Lobar Congênito (ELC): Caracteriza-se pela hiperinsuflação progressiva de um lobo pulmonar (mais comum o superior esquerdo). Embora haja uma obstrução funcional (colapso brônquico por condromalácia, por exemplo) que causa um mecanismo de válvula, o lobo está anatomicamente conectado à árvore traqueobrônquica normal.\n\n2. Malformação Pulmonar Congênita das Vias Aéreas (CPAM/antiga MAAC): Consiste em uma proliferação multicística de tecido pulmonar bronquiolar sem alvéolos normais. Por definição, essas lesões mantêm comunicação com a árvore traqueobrônquica principal, o que explica por que elas podem se preencher de ar após o nascimento e por que são propensas a infecções bacterianas recorrentes (contaminação por via aérea).\n\n3. Sequestro Pulmonar: Esta é a palavra-chave para o erro de muitas alternativas. Um sequestro pulmonar é uma massa de tecido pulmonar não funcional que NÃO possui comunicação normal com a árvore traqueobrônquica e recebe suprimento sanguíneo de uma artéria sistêmica (geralmente da aorta).\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A - Incorreta. O sequestro pulmonar, seja ele intralobar (dentro da pleura visceral de um lobo normal) ou extralobar (com pleura própria), define-se justamente por ser uma massa isolada que não se comunica com a árvore traqueobrônquica.\n\nAlternativa B - Correta (Gabarito). O Enfisema Lobar Congênito e a CPAM são as duas patologias da lista que fazem parte do sistema brônquico nativo, mantendo conexão com a via aérea principal, permitindo a passagem de ar para o interior da lesão.\n\nAlternativa C - Incorreta. O erro está na inclusão do sequestro pulmonar extralobar. Este tipo de sequestro é um órgão acessório, separado do pulmão normal por sua própria pleura, sem qualquer conexão brônquica.\n\nAlternativa D - Incorreta. Embora o sequestro intralobar esteja 'dentro' do pulmão, ele não possui comunicação bronquial pérvia com o restante da árvore traqueobrônquica; ele é uma massa de tecido isolada e não funcional.\n\nAlternativa E - Incorreta. Inclui todas as malformações, ignorando o conceito fundamental de que os sequestros (intra ou extralobares) são, por definição, desconectados da via aérea principal.\n\nCONCLUSÃO:\nA comunicação com a árvore traqueobrônquica é o que permite que a CPAM e o Enfisema Lobar contenham ar. Já os sequestros são 'ilhas' de tecido pulmonar que permanecem sólidas ou com conteúdo fluido, a menos que ocorra uma infecção secundária que crie uma fístula, o que não é a anatomia original da malformação. Portanto, apenas a alternativa B está correta.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Infantil",
+      "Outros Distúrbios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:27.313Z"
+  },
+  {
+    "id": "AJUDA_d588e03b-95ec-4bcf-b157-e436dd49e9c4",
+    "originalId": "d588e03b-95ec-4bcf-b157-e436dd49e9c4",
+    "statement": "Em relação à abordagem do trauma esplênico, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de líquido livre ao Focused Assessment with Sonography for Trauma (FAST) em paciente estável indica, necessariamente, laparotomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O baço raramente está envolvido nos traumas penetrantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A esplenectomia é a primeira escolha para todas as lesões esplênicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pacientes instáveis com lesão esplênica devem ser levados imediatamente ao centro cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "No trauma esplênico é essencial classificar o grau com tomografia antes de definir a conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O trauma esplênico é um dos temas mais frequentes em provas de cirurgia e trauma. O baço é o órgão sólido mais comumente lesionado no trauma abdominal contuso. A conduta atual prioriza a preservação do órgão sempre que possível, mas a estabilidade hemodinâmica é o fator determinante para a decisão terapêutica.\n\nExplicação detalhada das alternativas:\n\nAlternativa a) Incorreta. A presença de líquido livre ao FAST (Focused Assessment with Sonography for Trauma) em um paciente hemodinamicamente estável não é indicação absoluta de laparotomia. Nesses casos, o próximo passo preconizado é a realização de uma tomografia de abdome com contraste para avaliar a extensão da lesão, graduá-la e decidir entre o tratamento conservador ou intervenção.\n\nAlternativa b) Incorreta. O baço é frequentemente envolvido em traumas abdominais. Embora o fígado seja o órgão mais comumente atingido em traumas penetrantes de abdome como um todo, o baço é o órgão mais lesado no trauma contuso e é comumente atingido em ferimentos penetrantes que envolvem o quadrante superior esquerdo.\n\nAlternativa c) Incorreta. Atualmente, a esplenectomia não é a primeira escolha. A tendência moderna é o Tratamento Não Operatório (TNO) para pacientes estáveis, mesmo em lesões de alto grau, visando preservar a função imunológica do baço e evitar complicações como a sepse fulminante pós-esplenectomia. A cirurgia é reservada para casos de instabilidade ou falha do tratamento clínico.\n\nAlternativa d) Correta. Esta é a regra de ouro no atendimento ao trauma (ATLS): paciente com sinal de sangramento intra-abdominal (confirmado ou por mecanismo de trauma sugestivo) que apresenta instabilidade hemodinâmica (hipotensão, taquicardia, alteração do nível de consciência) e não responde à reposição volêmica inicial deve ser levado imediatamente para laparotomia exploradora para controle do dano e da hemorragia.\n\nAlternativa e) Incorreta. Embora a classificação por tomografia seja fundamental para guiar o tratamento nos pacientes estáveis, ela jamais deve ser realizada em pacientes instáveis. Levar um paciente chocado para a sala de tomografia atrasa o tratamento definitivo e aumenta a mortalidade. Nesses casos, o diagnóstico de líquido livre é feito à beira do leito (FAST ou lavado peritoneal diagnóstico) e a conduta é cirúrgica imediata, sem necessidade de estadiamento prévio por imagem.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:27.313Z"
+  },
+  {
+    "id": "AJUDA_d58f34ad-c738-4cb0-b0f3-cbb0a65d9ff4",
+    "originalId": "d58f34ad-c738-4cb0-b0f3-cbb0a65d9ff4",
+    "statement": "Você atende, em sala de parto, um recém-nascido com características do diagnóstico de síndrome de Down. Além do cariótipo, você deve solicitar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Angiorressonância cerebral;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ecocardiografia cerebral;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Radiografia de coluna cervical;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ecocardiograma com Doppler.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda a conduta inicial e o rastreamento de malformações associadas em um recém-nascido com suspeita clínica de Síndrome de Down (Trissomia do 21). Devido à alta prevalência de malformações congênitas nessa população, protocolos de diretrizes pediátricas, como os da Academia Americana de Pediatria e da Sociedade Brasileira de Pediatria, estabelecem exames prioritários logo após o nascimento.\n\nExplicação das alternativas:\n\na) Incorreta. A angiorressonância cerebral não é um exame de triagem neonatal para a Síndrome de Down. Embora pacientes com a síndrome apresentem um risco aumentado de doenças vasculares cerebrais ao longo da vida (como a Doença de Moyamoya), esse exame não é indicado de rotina no período neonatal, sendo reservado para casos com sintomas neurológicos específicos.\n\nb) Incorreta. O termo ecocardiografia cerebral parece ser uma confusão terminológica. Se o examinador se referia à ultrassonografia transfontanelar, ela pode ser realizada para avaliar o sistema nervoso central, mas não é a prioridade absoluta ou o exame padrão-ouro de rastreamento para todos os recém-nascidos com Down, pois as malformações cardíacas são muito mais frequentes e impactantes no prognóstico imediato.\n\nc) Incorreta. A radiografia da coluna cervical é utilizada para avaliar a instabilidade atlantoaxial (frouxidão dos ligamentos entre a primeira e a segunda vértebra cervical), que é comum na Síndrome de Down. No entanto, esse exame não é realizado na sala de parto ou no período neonatal imediato. A triagem radiológica costuma ser recomendada apenas a partir dos 3 anos de idade ou se houver sintomas neurológicos sugestivos de compressão medular.\n\nd) Correta. Cerca de 40% a 50% dos recém-nascidos com Síndrome de Down apresentam cardiopatia congênita, sendo o defeito do septo atrioventricular (DSAV) a lesão mais característica, seguido por comunicação interventricular (CIV) e comunicação interatrial (CIA). Como muitas dessas cardiopatias podem não apresentar sopros ou sinais de insuficiência cardíaca nas primeiras horas de vida devido à resistência vascular pulmonar ainda elevada, o ecocardiograma com Doppler é obrigatório para todos os recém-nascidos com diagnóstico ou suspeita de trissomia do 21, independentemente do exame físico cardiovascular.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:27.313Z"
+  },
+  {
+    "id": "AJUDA_d591c2d1-a900-4526-953a-9df6b71c52d9",
+    "originalId": "d591c2d1-a900-4526-953a-9df6b71c52d9",
+    "statement": "Pré-escolar, sexo masculino, com 2 anos e 4 meses é levado ao pronto-socorro após ter uma convulsão tônico-clônica generalizada que durou cerca de 3 minutos. Os pais relatam que nunca observaram isso em seu filho e que ele estava com febre desde a noite anterior, mas não apresentava outros sintomas significativos além de irritabilidade. Após a convulsão, a criança estava sonolenta, mas recuperou a consciência em cerca de 15 minutos e estava alerta na chegada ao hospital. No exame físico, ele apresenta temperatura de 37,1 °C, sem sinais de irritação meníngea. Nenhuma anormalidade é identificada no exame físico. Não há histórico familiar de epilepsia. Qual é o diagnóstico mais provável e o manejo inicial apropriado para este caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Epilepsia; encaminhamento para neuropediatra sem introdução de drogas anticonvulsivantes no pronto atendimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Meningite bacteriana; colher liquor e iniciar antibióticos intravenosos imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Convulsão febril simples; orientação apenas para controle da febre e observação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Convulsão afebril; realizar eletroencefalograma (EEG) e solicitar avaliação do neuropediatra no pronto atendimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve um caso clássico de crise febril simples em um paciente na faixa etária típica. Para chegarmos ao diagnóstico correto, devemos analisar os critérios de definição e a conduta recomendada.\n\nA crise febril é o distúrbio convulsivo mais comum da infância, ocorrendo geralmente entre os 6 meses e os 5 anos de idade. Ela é classificada como simples quando preenche três critérios: é generalizada (não focal), dura menos de 15 minutos e não se repete em um período de 24 horas. No caso apresentado, a criança tem 2 anos e 4 meses, a crise durou apenas 3 minutos, foi do tipo tônico-clônica generalizada e houve recuperação completa da consciência, o que confirma o diagnóstico de crise febril simples.\n\nAnálise das alternativas:\n\na) Incorreta. A epilepsia é definida pela ocorrência de duas ou mais crises convulsivas não provocadas. No caso em questão, a crise foi provocada pela febre. Além disso, o prognóstico da crise febril simples é excelente e não há necessidade de introdução de anticonvulsivantes ou encaminhamento rotineiro ao neuropediatra após um único episódio simples.\n\nb) Incorreta. Embora a meningite seja um diagnóstico diferencial importante em crianças com febre e convulsão, o exame físico do paciente é normal, ele não apresenta sinais de irritação meníngea (como rigidez de nuca) e recuperou prontamente o estado de alerta. A coleta de líquor e o início de antibioticoterapia seriam condutas agressivas e desnecessárias para este quadro clínico estável.\n\nc) Correta. Este é o diagnóstico mais provável. O manejo inicial da crise febril simples baseia-se em tranquilizar os pais sobre a natureza benigna do evento, orientar que a febre não causa dano cerebral e focar no controle térmico com antitérmicos para o conforto da criança. Exames de imagem ou eletroencefalograma não são indicados rotineiramente.\n\nd) Incorreta. A crise não foi afebril, pois os pais relataram febre desde a noite anterior e irritabilidade. O fato de a temperatura estar 37,1 °C no momento do atendimento não exclui o diagnóstico, pois a crise geralmente ocorre na subida térmica da febre. O eletroencefalograma (EEG) não está indicado para crises febris simples, pois não prediz a recorrência de crises nem o desenvolvimento futuro de epilepsia.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Convulsão Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:27.313Z"
+  },
+  {
+    "id": "AJUDA_d59d9a48-f986-4433-a088-cc4628cff8cb",
+    "originalId": "d59d9a48-f986-4433-a088-cc4628cff8cb",
+    "statement": "Em relação à nutrição no paciente cirúrgico grave, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nutrição parenteral total é sempre preferível à nutrição enteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nutrição enteral precoce (24–48 h) está associada à redução de complicações infecciosas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Não há benefício em suplementação com glutamina em nenhum cenário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A meta calórica inicial deve ser ≥ 40 kcal/kg/dia nas primeiras 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pacientes obesos não devem receber suporte nutricional no pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a: Incorreta. A via enteral é a preferencial sempre que o trato gastrointestinal estiver funcionante. A nutrição enteral mantém a integridade da barreira mucosa do intestino, reduz a translocação bacteriana e apresenta menos complicações infecciosas e metabólicas do que a nutrição parenteral total, que deve ser reservada para casos em que a via enteral é contraindicada ou insuficiente.\n\nAlternativa b: Correta. O início da nutrição enteral de forma precoce, idealmente entre 24 e 48 horas após o insulto cirúrgico ou a admissão à UTI, é uma recomendação central das diretrizes internacionais (como ESPEN e ASPEN). Essa prática está diretamente associada à redução de complicações infecciosas, à melhora da resposta imune e ao menor tempo de internação hospitalar.\n\nAlternativa c: Incorreta. Embora o uso rotineiro de glutamina seja controverso em pacientes críticos genéricos, a literatura aponta benefícios em cenários específicos, como em pacientes com traumas graves ou grandes queimados. Afirmar que não há benefício em nenhum cenário torna a alternativa errada.\n\nAlternativa d: Incorreta. Uma oferta de 40 kcal/kg/dia é excessiva e caracteriza hiperalimentação (overfeeding), o que pode levar à hiperglicemia, à esteatose hepática e à dificuldade de desmame ventilatório. As metas calóricas padrão para pacientes estáveis giram em torno de 25 a 30 kcal/kg/dia. No paciente grave, na fase aguda, muitas vezes se utiliza a nutrição trófica ou hipocalórica permissiva (15 a 20 kcal/kg/dia).\n\nAlternativa e: Incorreta. Pacientes obesos críticos possuem alto risco de perda de massa magra (obesidade sarcopênica) e de complicações de cicatrização. Eles devem receber suporte nutricional, porém com uma estratégia diferenciada: dieta hipocalórica (para mobilizar reservas de gordura) e hiperproteica (para preservar a musculatura e auxiliar na recuperação).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:27.313Z"
+  },
+  {
+    "id": "AJUDA_d5a4f876-2919-44a3-95e1-896229b5a62a",
+    "originalId": "d5a4f876-2919-44a3-95e1-896229b5a62a",
+    "statement": "Vítima de ferimento por arma branca em transição toracoabdominal direita, instável hemodinamicamente, com drenagem de 2L de sangue em dreno de tórax direito, com FAST positivo em espaço hepato renal e pelve. A próxima melhor conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia exploradora",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Toracotomia exploradora",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Passagem de outro dreno de tórax ipsilateral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tomografia computadorizada de tórax e abdômen",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro descreve um paciente com ferimento penetrante na transição toracoabdominal direita, apresentando sinais de choque (instabilidade hemodinâmica). Há evidência de sangramento volumoso tanto no tórax (drenagem de 2 litros, caracterizando hemotórax maciço) quanto no abdome (FAST positivo em dois locais: espaço hepatorrenal e pelve). Em traumas de transição à direita com instabilidade e FAST positivo, a prioridade é a abordagem abdominal.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: A laparotomia exploradora é a conduta prioritária. Em ferimentos de transição toracoabdominal direita, o fígado é o órgão mais frequentemente lesionado. O sangue proveniente de uma lesão hepática pode passar através de uma laceração no diafragma e ser drenado pelo dreno de tórax, simulando um sangramento de origem pulmonar ou intercostal. Como o paciente está instável e o FAST confirmou sangue em múltiplos espaços da cavidade abdominal, a fonte do sangramento é predominantemente abdominal, e a laparotomia permite o controle do fígado e a reparação do diafragma.\n\nAlternativa (b) INCORRETA: Embora a drenagem inicial superior a 1.500 ml de sangue pelo dreno de tórax seja uma indicação clássica de toracotomia de urgência em traumas torácicos isolados, o cenário muda na transição toracoabdominal com FAST positivo. Se iniciarmos pela toracotomia, não teremos controle sobre o sangramento abdominal (fígado e pelve), que é a causa provável do choque neste paciente. A regra é: se houver instabilidade e evidência de sangramento abdominal, o abdome deve ser explorado primeiro.\n\nAlternativa (c) INCORRETA: A passagem de um segundo dreno de tórax não trata a causa do sangramento. O dreno de tórax tem função diagnóstica e de esvaziamento do espaço pleural para permitir a expansão pulmonar, mas, em casos de hemotórax maciço e instabilidade, o tratamento deve ser cirúrgico (hemostasia definitiva), e não apenas de drenagem.\n\nAlternativa (d) INCORRETA: A tomografia computadorizada é contraindicada para pacientes com instabilidade hemodinâmica. O paciente instável não deve ser transportado para a sala de exames radiológicos, pois há risco de parada cardiorrespiratória longe do ambiente de ressuscitação. O diagnóstico de sangramento cavitário já foi feito por métodos rápidos à beira do leito (drenagem e FAST), o que indica a necessidade imediata de cirurgia.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:27.313Z"
+  },
+  {
+    "id": "AJUDA_d5aa5f23-0448-4a61-b396-b5a5f0b95804",
+    "originalId": "d5aa5f23-0448-4a61-b396-b5a5f0b95804",
+    "statement": "Homem, 76 anos, em acompanhamento por DPOC há 8 anos; nega comorbidades. Refere piora progressiva da dispneia (de pequenos esforços para dispneia em repouso) há 2 semanas, sem piora da tosse ou do aspecto da expectoração. Nega dor torácica, hemoptise, piora súbita dos sintomas. Exame físico: BEG, corado, cianótico (++/4+). Murmúrio vesicular fisiológico sem ruídos adventícios. Frequência respiratória: 28 i.pm. Ritmo cardíaco regular, com hiperfonese de B2, sem sopros. FC: 98 bpm. PA: 110 x 80 mmHg. Edema de membros inferiores (3+/4+) bilateral, depressível e simétrico. Presença de estase jugular a 45°. Qual é a medida indicada para o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anticoagulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Agente inotrópico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vasodilatador pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Oxigenioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresenta um paciente com DPOC de longa data que desenvolveu sinais de insuficiência cardíaca direita, condição conhecida como *Cor Pulmonale*. Os principais achados são a dispneia progressiva, a cianose e a hiperfonese de segunda bulha (indicativa de hipertensão pulmonar), além de edema de membros inferiores e estase jugular. A ausência de ruídos adventícios pulmonares e a estabilidade hemodinâmica reforçam que a causa da descompensação é a própria evolução da doença pulmonar crônica, levando à sobrecarga do coração direito.\n\nAlternativa a: Incorreta. A anticoagulação é o tratamento indicado para o tromboembolismo pulmonar (TEP). Embora o TEP seja um diagnóstico diferencial importante em pacientes com DPOC que apresentam piora da dispneia, a evolução de duas semanas, a cianose acentuada e a presença de sinais claros de hipertensão pulmonar crônica direcionam o diagnóstico para *Cor Pulmonale* secundário à hipoxemia crônica.\n\nAlternativa b: Incorreta. O uso de agentes inotrópicos é indicado em situações de baixo débito cardíaco com sinais de má perfusão ou choque cardiogênico. O paciente em questão mantém níveis pressóricos normais (110 x 80 mmHg), não havendo indicação imediata para essa classe de medicamentos no manejo da hipertensão pulmonar por DPOC.\n\nAlternativa c: Incorreta. Os vasodilatadores pulmonares (como sildenafila ou análogos da prostaciclina) são indicados principalmente para a hipertensão arterial pulmonar (Grupo 1). Na hipertensão pulmonar secundária a doenças pulmonares (Grupo 3), como a DPOC, esses medicamentos podem piorar a relação ventilação-perfusão, causando queda adicional da saturação de oxigênio ao antagonizarem a vasoconstrição pulmonar hipóxica fisiológica.\n\nAlternativa d: Correta. No paciente com DPOC e *Cor Pulmonale*, a fisiopatologia principal é a vasoconstrição pulmonar reflexa à hipoxemia alveolar. A oxigenioterapia é o tratamento de escolha, pois reverte essa vasoconstrição, reduz a pressão na artéria pulmonar e alivia a sobrecarga do ventrículo direito. Além disso, a oxigenioterapia de longo prazo é uma das poucas intervenções que comprovadamente aumentam a sobrevida em pacientes com DPOC e hipoxemia grave, sendo fundamental para o controle das complicações cardíacas da doença.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:27.313Z"
+  },
+  {
+    "id": "AJUDA_d5b0f094-9f0f-4fc4-b332-a3aa00a84395",
+    "originalId": "d5b0f094-9f0f-4fc4-b332-a3aa00a84395",
+    "statement": "Homem, 26 anos de idade, apresenta dispneia aos esforços. Ao exame físico, apresenta sopro sistólico em foco aórtico e ausculta pulmonar normal. Frequência cardíaca e pressão arterial normais. Foi solicitado ecocardiograma, que mostra átrio esquerdo dilatado, ventrículos com dimensões normais, espessura miocárdica aumentada no septo (20 mm; anormal > 10 mm) com demais paredes miocárdicas com espessura normal. Valva mitral tem movimento anterior sistólico e insuficiência discreta. Apresenta gradiente sistólico máximo de 70 mmHg.\n\nQual é a melhor estratégia indicada para melhora sintomática desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Furosemida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Betabloqueador.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Nitrato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Terapia de ressincronização cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cardioversor desfibrilador implantável.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A análise do quadro clínico e do ecocardiograma direciona o diagnóstico para cardiomiopatia hipertrófica (CMH) na sua forma obstrutiva. Os achados patognomônicos descritos são: hipertrofia septal assimétrica (20 mm), movimento anterior sistólico (SAM) da valva mitral e a presença de um gradiente sistólico de 70 mmHg (considerado obstrução importante quando acima de 30 mmHg). O sopro sistólico no foco aórtico, nesse caso, não é por estenose da valva aórtica, mas pela obstrução dinâmica no fluxo de saída do ventrículo esquerdo.\n\nA melhor estratégia para melhora sintomática é:\n\nAlternativa (b) CORRETA: Os betabloqueadores são a terapia de primeira linha para pacientes sintomáticos com CMH obstrutiva. Eles agem por três mecanismos principais: 1) reduzem a frequência cardíaca, aumentando o tempo de enchimento diastólico; 2) possuem efeito inotrópico negativo, diminuindo a força de ejeção e, consequentemente, reduzindo o gradiente de obstrução (efeito Venturi); 3) diminuem o consumo de oxigênio pelo miocárdio, melhorando a dispneia e a angina.\n\nAlternativa (a) INCORRETA: A furosemida é um diurético que reduz a pré-carga. Na CMH obstrutiva, a redução do volume dentro do ventrículo esquerdo faz com que as paredes fiquem mais próximas e o septo obstrua ainda mais a saída do sangue, piorando o gradiente e os sintomas. Deve ser usada com extrema cautela apenas se houver congestão pulmonar grave e refratária.\n\nAlternativa (c) INCORRETA: Nitratos são vasodilatadores que reduzem tanto a pré-carga quanto a pós-carga. Assim como os diuréticos, ao reduzir o volume ventricular, eles exacerbam a obstrução dinâmica do fluxo de saída, podendo levar a síncope e piora importante do quadro clínico. São contraindicados na CMH obstrutiva.\n\nAlternativa (d) INCORRETA: A terapia de ressincronização cardíaca é indicada para pacientes com insuficiência cardíaca de fração de ejeção reduzida, geralmente com bloqueio de ramo esquerdo e QRS largo. Não é o tratamento padrão para a melhora dos sintomas obstrutivos na CMH. Embora a estimulação artificial (marca-passo) possa ser usada em casos selecionados para alterar a sequência de ativação septal e reduzir o gradiente, não é a estratégia inicial.\n\nAlternativa (e) INCORRETA: O cardioversor desfibrilador implantável (CDI) tem como objetivo a prevenção de morte súbita em pacientes de alto risco (prevenção primária ou secundária). Embora pacientes com CMH tenham risco de arritmias fatais, o CDI não trata a obstrução mecânica nem melhora os sintomas de dispneia aos esforços descritos no enunciado.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cardiomiopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:27.313Z"
+  }
+]

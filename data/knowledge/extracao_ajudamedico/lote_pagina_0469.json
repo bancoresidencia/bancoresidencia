@@ -1,0 +1,487 @@
+[
+  {
+    "id": "AJUDA_841306d6-1739-40fb-82b6-83654bf2dc01",
+    "originalId": "841306d6-1739-40fb-82b6-83654bf2dc01",
+    "statement": "Trata-se de contraindicação(ões) formal(is) à amamentação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "infecção por hepatite C e HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "infecção por hepatite B e HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "somente infecção por HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "infecção por HIV e uso de antineoplásicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A: Incorreta. A infecção pela hepatite C não é considerada uma contraindicação formal à amamentação. Não há evidências de transmissão do vírus C pelo leite materno. A recomendação atual é suspender o aleitamento apenas temporariamente se houver presença de fissuras ou mamilos sangrantes. O HIV, conforme citado, é de fato uma contraindicação.\n\nAlternativa B: Incorreta. A hepatite B não contraindica o aleitamento materno. O risco de transmissão é neutralizado quando o recém-nascido recebe a profilaxia adequada com a vacina e a imunoglobulina específica contra a hepatite B (HBIG) ainda na sala de parto ou nas primeiras 12 horas de vida.\n\nAlternativa C: Incorreta. Embora o HIV seja uma contraindicação, a palavra \"somente\" torna a alternativa errada. Existem outras condições que também contraindicam formalmente a amamentação, como a infecção pelos vírus HTLV-1 e HTLV-2, além do uso de medicações citotóxicas e radiofármacos.\n\nAlternativa D: Correta. Esta alternativa apresenta dois exemplos clássicos de contraindicação formal. A infecção pelo HIV é uma contraindicação absoluta no Brasil por conta do risco de transmissão do vírus através do leite. O uso de antineoplásicos (quimioterapia) também contraindica a amamentação devido à alta toxicidade dessas drogas para as células em divisão, o que pode causar graves efeitos colaterais e supressão da medula óssea no lactente.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:21.050Z"
+  },
+  {
+    "id": "AJUDA_841c1ad8-faac-4d71-ad0e-6b83b75e12fb",
+    "originalId": "841c1ad8-faac-4d71-ad0e-6b83b75e12fb",
+    "statement": "Um novo medicamento antifibrótico foi aprovado para o tratamento da fibrose pulmonar idiopática. Ensaios clínicos demonstraram que, embora o fármaco não previna o aparecimento da doença, ele reduz a velocidade de progressão e aumenta significativamente o tempo de sobrevida dos pacientes após o diagnóstico. Considerando esse cenário, qual seria a consequência epidemiológica mais provável após a ampla implementação do novo tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevalência aumentada, com incidência diminuída.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prevalência aumentada, com incidência inalterada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prevalência diminuída, com incidência aumentada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prevalência diminuída, com incidência diminuída.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prevalência inalterada, com incidência aumentada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender essa questão, devemos aplicar os conceitos fundamentais de incidência e prevalência na epidemiologia.\n\nIncidência refere-se ao número de novos casos de uma doença que surgem em uma população em um determinado período. O enunciado afirma explicitamente que o fármaco não previne o aparecimento da doença. Portanto, o número de pessoas que desenvolvem a fibrose pulmonar idiopática a cada ano permanecerá o mesmo. Logo, a incidência é inalterada.\n\nPrevalência refere-se ao número total de casos (novos e antigos) existentes em um determinado momento. A prevalência é influenciada tanto pela incidência quanto pela duração da doença. A fórmula clássica que relaciona esses conceitos é: Prevalência aproximadamente igual à Incidência multiplicada pela Duração média da doença. Como o novo medicamento aumenta significativamente o tempo de sobrevida, os pacientes vivem por mais tempo com a patologia em vez de irem a óbito precocemente. Esse aumento na duração da sobrevivência faz com que os casos se acumulem na população, resultando em uma prevalência aumentada.\n\nAnálise das alternativas:\n\na) Incorreta. A incidência não diminui porque o medicamento não tem caráter preventivo; ele atua apenas após o diagnóstico.\n\nb) Correta. A incidência permanece inalterada (não há prevenção) e a prevalência aumenta (devido ao aumento da sobrevida e consequente acúmulo de doentes vivos na população).\n\nc) Incorreta. A prevalência aumenta com a sobrevida, não diminui. Além disso, não há dados que sugiram um aumento no surgimento de novos casos (incidência).\n\nd) Incorreta. A prevalência aumenta com o aumento da sobrevida. A incidência só diminuiria se o medicamento evitasse que novas pessoas ficassem doentes.\n\ne) Incorreta. Se a sobrevida aumenta, a prevalência obrigatoriamente sofrerá alteração (aumento), a menos que a incidência caísse drasticamente, o que não é o caso descrito. Além disso, o fármaco não aumenta o risco de desenvolver a doença.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:21.050Z"
+  },
+  {
+    "id": "AJUDA_84274e88-a8c8-4edb-9028-c3b5f79a7ee4",
+    "originalId": "84274e88-a8c8-4edb-9028-c3b5f79a7ee4",
+    "statement": "São pouco frequentes os estudos epidemiológicos dedicados à distribuição sociogeográfica e aos determinantes envolvidos na transmissão do vírus da hepatite B em populações, limitando-se, geralmente, a determinados segmentos sociais como doadores de sangue, gestantes, profissionais de saúde e usuários de drogas injetáveis, ou a locais específicos, a exemplo dos centros de hemodiálise e de unidades prisionais. Dessa forma, um estudo foi realizado para analisar os fatores associados à infecção pelo vírus da hepatite B entre usuários da Atenção Primária em Saúde, no município de São Mateus, estado do Espírito Santo, Brasil.\n\nEm relação aos resultados do estudo acima: a análise multivariada (ajustada) identificou fatores estatisticamente significantes associados à infecção pelo vírus da hepatite B, como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "residir em área rural (OR=6,37; IC95%:1,61-25,14) e nenhuma escolaridade (OR=20,02; IC95%:2,36-173,06).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "residir em área rural (OR=0,20; IC95%:0,18-1,30) e nenhuma escolaridade (OR=0,63; IC95%:0,51-1,72).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "residir em área rural (OR=1,72; IC95%:1,31-1,84) e nenhuma escolaridade (OR=2,43; IC95%:0,79-2,91).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "residir em área rural (OR=0,48; IC95%:0,32-4,37) e nenhuma escolaridade (OR=0,94; IC95%:0,44-1,94).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda os fatores de risco e determinantes sociais da hepatite B, exigindo do candidato a interpretação correta de dados epidemiológicos, especificamente o Odds Ratio (OR) e o Intervalo de Confiança de 95% (IC 95%). \n\nPara que um fator seja considerado estatisticamente significativo em um estudo de associação, o seu intervalo de confiança não deve conter o valor 1,0. Se o OR for maior que 1 e o limite inferior do IC também for superior a 1, o fator é considerado um risco. Se o IC atravessar o valor 1,0 (por exemplo, de 0,8 a 2,5), não há significância estatística.\n\nAlternativa a) Correta: Esta alternativa apresenta os dois fatores com significância estatística clara. Para residir em área rural, o OR é de 6,37 com um IC de 1,61 a 25,14 (ambos os limites acima de 1). Para nenhuma escolaridade, o OR é de 20,02 com IC de 2,36 a 173,06. Em ambos os casos, a ausência do valor 1 no intervalo confirma que são fatores associados ao aumento das chances de infecção pelo vírus da hepatite B (VHB) na população estudada em São Mateus-ES.\n\nAlternativa b) Incorreta: Nesta opção, os intervalos de confiança de ambos os fatores incluem o valor 1,0 (0,18-1,30 e 0,51-1,72). Isso indica que, estatisticamente, não se pode afirmar que residir em área rural ou a baixa escolaridade sejam fatores de risco ou de proteção, pois o resultado pode ter ocorrido ao acaso.\n\nAlternativa c) Incorreta: Embora o fator residir em área rural apresente significância (IC de 1,31 a 1,84), o fator nenhuma escolaridade apresenta um IC de 0,79 a 2,91. Como este segundo intervalo contém o valor 1,0, ele é considerado estatisticamente não significativo na análise multivariada desta alternativa.\n\nAlternativa d) Incorreta: Assim como na alternativa b, os intervalos de confiança aqui apresentados (0,32-4,37 e 0,44-1,94) atravessam a unidade (1,0). Portanto, os dados não possuem força estatística para sustentar uma associação real entre as variáveis e a infecção pelo VHB.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Hepatites Virais",
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:21.050Z"
+  },
+  {
+    "id": "AJUDA_842b458a-c9b2-4faf-87ad-1ffb1b52f14f",
+    "originalId": "842b458a-c9b2-4faf-87ad-1ffb1b52f14f",
+    "statement": "Um paciente de 34 anos de idade queixou-se de dor inguinal na região esquerda, que piorava após a pratica esportiva. Ele negou comorbidades. Apresentava hábito intestinal diário. Ao exame físico, foi evidenciada a presença de hérnia inguinal à esquerda pequena e redutível. Com base nessa situação hipotética, assinale a alternativa incorreta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento cirúrgico está indicado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O motivo para definir o momento da cirurgia não é o risco de encarceramento ou estrangulamento, mas, sim, o prejuízo na qualidade de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diagnósticos diferenciais incluem linfonodomegalia e hidrocele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O melhor exame de imagem para o diagnóstico é a tomografia computadorizada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Desde que o cirurgião domine as técnicas anestésica e cirúrgica, a melhor anestesia para se operar hérnia inguinal por inguinotomia é a anestesia local.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da Questão:\n\nA questão descreve um homem jovem, sem comorbidades, com uma hérnia inguinal sintomática (dor ao esforço) e redutível. O objetivo é identificar a alternativa incorreta sobre o manejo e diagnóstico dessa patologia.\n\nAlternativa A: Correta. No paciente do caso, a hérnia é sintomática (causa dor após a prática esportiva). Embora para hérnias inguinais em homens assintomáticos o \"watchful waiting\" (observação vigilante) seja uma opção aceitável, a presença de sintomas e o impacto na atividade física do paciente justificam a indicação cirúrgica.\n\nAlternativa B: Correta. O risco anual de encarceramento ou estrangulamento de uma hérnia inguinal redutível é considerado baixo (menos de 1% a 3% ao ano). Por isso, a cirurgia eletiva é indicada principalmente para aliviar os sintomas e melhorar a qualidade de vida, e não por uma necessidade de emergência iminente.\n\nAlternativa C: Correta. Diante de um aumento de volume ou dor na região inguinal, o médico deve considerar diagnósticos diferenciais. Linfonodomegalias (por infecções ou neoplasias), hidrocele, varicocele, hérnias femorais e até causas ortopédicas (pubalgia) devem ser lembradas.\n\nAlternativa D: Incorreta (Gabarito). O diagnóstico da hérnia inguinal é essencialmente clínico, baseado na anamnese e no exame físico (manobra de Valsalva). Quando há dúvida diagnóstica, o exame de imagem inicial de escolha é a ultrassonografia (USG), por ser um método dinâmico, acessível e sem radiação. A tomografia computadorizada é reservada para casos complexos, obesos mórbidos ou quando a ultrassonografia é inconclusiva. Portanto, a TC não é o \"melhor\" exame para o diagnóstico de rotina.\n\nAlternativa E: Correta. Segundo as diretrizes internacionais (como as da International Hernia Collaboration), para o reparo de hérnias inguinais unilaterais por via aberta (inguinotomia), a anestesia local associada à sedação é considerada a melhor opção em termos de segurança e custo-benefício. Ela apresenta menores taxas de retenção urinária, menos complicações sistêmicas e permite uma recuperação pós-operatória e alta hospitalar mais rápidas.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:21.050Z"
+  },
+  {
+    "id": "AJUDA_842f4b6e-59dd-4866-acdb-896576c7a7e1",
+    "originalId": "842f4b6e-59dd-4866-acdb-896576c7a7e1",
+    "statement": "Mulher, 40 anos, Gesta 2, Para 1 (parto normal há 12 anos), inicia o pré-natal com 8 semanas de idade gestacional (IG), com IMC = 32,9kg/m². Pode-se afirmar que a recomendação para o ganho de peso total em quilos na gravidez é de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "11,5 a 16",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "12,5 a 18",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "5 a 9",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "7 a 11,5",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, o primeiro passo é classificar o estado nutricional da gestante com base no Índice de Massa Corporal (IMC) inicial, que é de 32,9 kg/m².\n\nDe acordo com as diretrizes do Ministério da Saúde e do Institute of Medicine (IOM), a classificação do IMC para gestantes segue os seguintes parâmetros:\n- Baixo peso: IMC menor que 18,5 kg/m²\n- Eutrofia (peso adequado): IMC entre 18,5 e 24,9 kg/m²\n- Sobrepeso: IMC entre 25,0 e 29,9 kg/m²\n- Obesidade: IMC maior ou igual a 30,0 kg/m²\n\nNo caso da paciente, o IMC de 32,9 kg/m² a enquadra na categoria de obesidade. A partir dessa classificação, as recomendações de ganho de peso total durante a gestação são:\n\n- Baixo peso: ganho de 12,5 a 18,0 kg\n- Eutrofia: ganho de 11,5 a 16,0 kg\n- Sobrepeso: ganho de 7,0 a 11,5 kg\n- Obesidade: ganho de 5,0 a 9,0 kg\n\nAnálise das alternativas:\n\na) Incorreta. O ganho de 11,5 a 16 kg é recomendado para gestantes que iniciam o pré-natal com peso adequado (eutrofia).\n\nb) Incorreta. O ganho de 12,5 a 18 kg é indicado para gestantes classificadas com baixo peso no início da gravidez.\n\nc) Correta. Como a paciente apresenta obesidade (IMC = 32,9 kg/m²), a recomendação oficial é um ganho de peso mais restrito, variando entre 5 e 9 kg ao longo de toda a gestação, visando reduzir riscos metabólicos e complicações obstétricas.\n\nd) Incorreta. O intervalo de 7 a 11,5 kg é a recomendação para gestantes que apresentam sobrepeso no início da gestação.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:21.050Z"
+  },
+  {
+    "id": "AJUDA_8433544a-f8ad-4f38-9932-408468b9c1ef",
+    "originalId": "8433544a-f8ad-4f38-9932-408468b9c1ef",
+    "statement": "Lactente de 6 meses está em aleitamento materno exclusivo (AME) e iniciará introdução da alimentação complementar. AP: pré-natal e parto sem intercorrências, nascido a termo com peso de 3020 g. Peso atual: 8900 g. A recomendação de suplementação de ferro é",
+    "options": [
+      {
+        "id": "A",
+        "text": "desnecessária por não haver fatores de risco e pelo RN ter recebido AME.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "de 1 mg/kg/dia de ferro elementar, via oral, longe da mamada, de agora até o 24º mês de idade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "de 2 mg/kg/dia de sulfato ferroso, via oral, a qualquer horário do dia, de agora até o 24º mês de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "de 1 mg/kg/dia de ferro elementar, via oral, se o aleitamento materno for suspenso, até o 24º mês de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, é fundamental conhecer as recomendações atuais da Sociedade Brasileira de Pediatria (SBP) sobre a prevenção da anemia ferropriva na infância.\n\nAnálise do caso clínico:\nO lactente nasceu a termo (37 a 42 semanas) e com peso adequado (3.020 g, ou seja, maior que 2.500 g). Ele esteve em aleitamento materno exclusivo até os 6 meses, momento em que as reservas de ferro começam a se esgotar e a demanda metabólica aumenta, exigindo a suplementação profilática.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Antigamente, acreditava-se que o aleitamento materno exclusivo por si só protegia contra a anemia até o sexto mês e que a introdução de alimentos ricos em ferro supriria a demanda. No entanto, as diretrizes atuais da SBP (desde 2018) recomendam a suplementação universal para todos os lactentes a partir dos 6 meses, independentemente do tipo de dieta ou da ausência de fatores de risco, para garantir o aporte necessário até os 2 anos de idade.\n\nAlternativa b) Correta. Esta é a recomendação oficial da SBP para lactentes nascidos a termo e com peso superior a 2.500 g: iniciar a suplementação de 1 mg/kg/dia de ferro elementar aos 6 meses de vida (ao iniciar a alimentação complementar) e manter até os 24 meses de idade. A administração deve ser feita, preferencialmente, longe das mamadas (cerca de 1 hora antes ou após), pois o cálcio do leite pode reduzir a absorção do ferro.\n\nAlternativa c) Incorreta. A dose de 2 mg/kg/dia de ferro elementar é indicada para recém-nascidos prematuros ou aqueles que nasceram com baixo peso (menos de 2.500 g), começando geralmente aos 30 dias de vida. Para o paciente em questão (termo e peso normal), a dose profilática é de 1 mg/kg/dia. Além disso, o horário de administração importa para otimizar a absorção.\n\nAlternativa d) Incorreta. A suplementação não depende da suspensão do aleitamento materno. Pelo contrário, ela deve ser feita simultaneamente à manutenção do aleitamento materno e à introdução da alimentação complementar, uma vez que o teor de ferro nos alimentos de transição e no leite materno pode não ser suficiente para cobrir as necessidades diárias nessa fase de crescimento acelerado.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno",
+      "Deficiências Vitamínicas e Profilaxias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:21.050Z"
+  },
+  {
+    "id": "AJUDA_8436b65a-4c9e-475c-bc83-ffb917935a62",
+    "originalId": "8436b65a-4c9e-475c-bc83-ffb917935a62",
+    "statement": "Paciente, sexo feminino, 22 anos, refere dor pélvica crônica, dispareunia de profundidade e dismenorreia progressiva. Ao exame, nota-se nodularidade no ligamento uterossacro e útero com mobilidade reduzida. A principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença Inflamatória Pélvica crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Endometriose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Síndrome dos Ovários Policísticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Leiomiomatose uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A alternativa correta e a principal hipótese diagnóstica para o caso é a endometriose (letra B).\n\nA questão apresenta uma paciente jovem com a tríade clássica da endometriose: dor pélvica crônica, dismenorreia progressiva (cólica menstrual que piora com o passar dos anos) e dispareunia de profundidade (dor durante a relação sexual). O exame físico é altamente sugestivo, pois a presença de nodularidade nos ligamentos uterossacros e a mobilidade uterina reduzida indicam a presença de focos de endometriose infiltrativa profunda e possíveis aderências pélvicas, achados característicos desta patologia.\n\nAnálise das alternativas incorretas:\n\na) Doença Inflamatória Pélvica (DIP) crônica: Embora a DIP possa causar dor pélvica crônica e aderências devido a processos infecciosos prévios (como por clamídia ou gonococo), ela geralmente vem acompanhada de histórico de infecção aguda, febre ou corrimento vaginal. A nodularidade específica em ligamentos uterossacros, associada a uma dismenorreia que progride sistematicamente, é muito mais típica da endometriose.\n\nc) Síndrome dos Ovários Policísticos (SOP): Esta é uma disfunção endócrina caracterizada por irregularidade menstrual (oligomenorreia ou amenorreia) e sinais de hiperandrogenismo (acne, hirsutismo). A SOP não evolui com dor pélvica crônica, dismenorreia progressiva ou alterações anatômicas palpáveis como nódulos pélvicos.\n\nd) Leiomiomatose uterina: Os miomas são tumores benignos do miométrio. Os sintomas mais comuns são o sangramento uterino anormal e o aumento do volume do útero, que pode se tornar irregular. Embora possam causar pressão pélvica, raramente provocam nodularidade em ligamentos uterossacros ou o quadro de dor cíclica progressiva descrito, sendo também menos comuns em pacientes tão jovens quanto a do caso (22 anos).",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia",
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:21.050Z"
+  },
+  {
+    "id": "AJUDA_843b260a-84d7-4fcb-8cd6-9ac6490b7506",
+    "originalId": "843b260a-84d7-4fcb-8cd6-9ac6490b7506",
+    "statement": "O esquema terapêutico de primeira linha para o tratamento da Tuberculose Pulmonar no Brasil (fase intensiva) é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rifampicina, Isoniazida, Pirazinamida e Etambutol (RIPE) por 2 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Rifampicina e Isoniazida por 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rifampicina, Isoniazida e Etambutol por 2 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estreptomicina, Isoniazida e Pirazinamida por 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O tratamento da Tuberculose (TB) no Brasil é padronizado pelo Ministério da Saúde e segue diretrizes específicas para garantir a adesão e evitar a resistência bacteriana. Para adultos e adolescentes (acima de 10 anos), o esquema terapêutico básico para novos casos é dividido em duas fases distintas: a fase intensiva (ou de ataque) e a fase de manutenção.\n\nFase Intensiva: Tem como objetivo a redução rápida da carga bacilar no paciente. Dura 2 meses e utiliza a combinação de quatro fármacos em doses fixas combinadas: Rifampicina (R), Isoniazida (I), Pirazinamida (P) e Etambutol (E), formando a sigla RIPE.\n\nFase de Manutenção: Tem como objetivo eliminar os bacilos latentes ou persistentes. Dura 4 meses e utiliza apenas dois fármacos: Rifampicina (R) e Isoniazida (I).\n\nAnálise das alternativas:\n\nAlternativa a: Correta. Esta alternativa descreve precisamente a fase intensiva do esquema de primeira linha adotado no Brasil desde 2009. A introdução do Etambutol como quarto fármaco foi fundamental para prevenir a seleção de bacilos resistentes, especialmente à Isoniazida. O tempo de 2 meses é o padrão para esta etapa inicial.\n\nAlternativa b: Incorreta. Rifampicina e Isoniazida são utilizadas juntas na fase de manutenção, que dura 4 meses. Embora o tratamento completo da tuberculose sensível dure 6 meses no total, a fase intensiva (mencionada no enunciado) exige os quatro fármacos (RIPE).\n\nAlternativa c: Incorreta. O esquema RIE (Rifampicina, Isoniazida e Etambutol) está incompleto para a fase intensiva padrão, pois não inclui a Pirazinamida. A Pirazinamida é essencial nos primeiros dois meses por sua ação em bacilos de localização intracelular (macrófagos) e em ambiente ácido.\n\nAlternativa d: Incorreta. A Estreptomicina é um aminoglicosídeo que já foi muito utilizado no passado, mas atualmente não compõe o esquema básico de primeira linha para casos novos no Brasil. Ela é reservada para esquemas especiais, casos de multirresistência ou situações clínicas específicas onde os fármacos de primeira linha não podem ser utilizados. O tempo de 3 meses também não corresponde ao protocolo de ataque brasileiro.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:21.050Z"
+  },
+  {
+    "id": "AJUDA_844a6c8c-a7d7-4975-9af2-ca5886119d0b",
+    "originalId": "844a6c8c-a7d7-4975-9af2-ca5886119d0b",
+    "statement": "As biopsias percutâneas de tumores renais são eventualmente indicadas; a maioria dos pacientes com tumores renais é tratada sem o conhecimento prévio histológico destas lesões. Entretanto, essas biópsias podem ser indicadas para",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obter histologia de massas renais radiologicamente indeterminadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Selecionar pacientes com pequenas massas renais para espera vigilante (Watchful waiting).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Obter histologia antes ou simultaneamente com tratamentos ablativos como a nefrectomia parcial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Selecionar a forma mais adequada de estratégia médica e cirúrgica no cenário de doença localizada em pacientes frágeis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Comentário da Questão:\n\nA biópsia percutânea de massa renal não é realizada de rotina porque a maioria dos tumores sólidos renais com realce ao contraste nos exames de imagem (tomografia ou ressonância) tem alta probabilidade de ser carcinoma de células renais (CCR). No entanto, em cenários específicos, a histologia prévia torna-se necessária para guiar a conduta.\n\nAlternativa A (Correta): Esta é a indicação clássica. Quando os exames de imagem são inconclusivos (massas indeterminadas), não permitindo diferenciar entre uma lesão benigna (como um oncocitoma ou angiomiolipoma com pouco conteúdo gorduroso) e uma lesão maligna, a biópsia é indicada para evitar cirurgias desnecessárias ou para confirmar a necessidade de tratamento.\n\nAlternativa B (Incorreta): Existe uma distinção técnica entre Espera Vigilante (Watchful Waiting) e Vigilância Ativa (Active Surveillance). A espera vigilante é geralmente adotada para pacientes idosos ou com muitas comorbidades, situação em que o foco é o tratamento paliativo se os sintomas surgirem, tornando a biópsia frequentemente dispensável. Na Vigilância Ativa (para pequenas massas renais), a biópsia pode até ser usada para estratificar o risco, mas a alternativa A descreve uma indicação diagnóstica mais fundamental e universalmente aceita.\n\nAlternativa C (Incorreta): A biópsia é obrigatória antes de tratamentos ablativos térmicos (como crioablação ou radiofrequência), pois o tecido será destruído e não haverá peça cirúrgica para análise. No entanto, a alternativa está incorreta ao classificar a nefrectomia parcial como um \"tratamento ablativo\". A nefrectomia parcial é uma técnica cirúrgica de ressecção, na qual o tumor é retirado e enviado para patologia, tornando a biópsia prévia ou simultânea geralmente desnecessária.\n\nAlternativa D (Incorreta): Embora a biópsia possa auxiliar na decisão em pacientes frágeis, a estratégia médica e cirúrgica nesses casos é definida primariamente pelo estado clínico do paciente, expectativa de vida e riscos operatórios. A biópsia é um complemento, mas o objetivo principal do procedimento percutâneo listado na literatura é o esclarecimento de lesões cujo diagnóstico por imagem não foi definitivo.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:21.050Z"
+  },
+  {
+    "id": "AJUDA_8452ffbd-eed0-444b-ad14-dc0fa9c8a163",
+    "originalId": "8452ffbd-eed0-444b-ad14-dc0fa9c8a163",
+    "statement": "Prematuro, pesando 1.200 g, com doença da membrana hialina e manifestações de insuficiência respiratória, necessitou de ventilação mecânica. A evolução clínica inicial foi satisfatória, com diminuição dos parâmetros do respirador. No 4º dia de vida, subitamente apresentou taquipneia, estertores crepitantes difusos e bilaterais, sopro sistólico na área infraclavicular esquerda (2+/4+) e má perfusão periférica. Tinha pulso periférico amplo. O fígado era facilmente palpável 5 cm abaixo do rebordo costal direito. Essa descompensação clínica provavelmente foi causada pela presença de",
+    "options": [
+      {
+        "id": "A",
+        "text": "padrão de circulação fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "comunicação interatrial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "persistência de canal arterioso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "tetralogia de Fallot.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda uma complicação clássica no período neonatal de prematuros com Doença da Membrana Hialina (DMH). Para chegar ao diagnóstico correto, devemos analisar os sinais clínicos apresentados e o momento da evolução do paciente.\n\nAnálise do Quadro Clínico:\n\nO paciente é um prematuro de muito baixo peso (1.200 g) que estava em melhora respiratória da DMH. A evolução para insuficiência cardíaca no 4º dia de vida, com sinais de congestão pulmonar (estertores), hepatomegalia (fígado a 5 cm) e, fundamentalmente, pulsos amplos e sopro em região infraclavicular esquerda, aponta diretamente para a Persistência do Canal Arterioso (PCA).\n\nPor que isso acontece no 4º dia? Nos primeiros dias de vida, a resistência vascular pulmonar ainda é alta, o que limita o fluxo de sangue da aorta para a artéria pulmonar através do canal. Conforme a DMH melhora e a resistência pulmonar cai, ocorre um grande desvio de sangue da esquerda para a direita (shunt esquerda-direita). Isso sobrecarrega a circulação pulmonar (causando taquipneia e estertores) e \"rouba\" sangue da circulação sistêmica (causando má perfusão e pulsos amplos pela grande diferença entre a pressão sistólica e diastólica).\n\nAnálise das Alternativas:\n\na) Incorreta. O padrão de circulação fetal (ou Hipertensão Pulmonar Persistente do Recém-Nascido) caracteriza-se por alta resistência pulmonar e shunt direita-esquerda (o sangue foge dos pulmões). Clinicamente, o paciente apresenta cianose intensa e hipoxemia refratária, o que é o oposto do quadro de congestão pulmonar e pulsos amplos descrito.\n\nb) Incorreta. A Comunicação Interatrial (CIA) raramente causa sintomas de insuficiência cardíaca de forma tão aguda e precoce no período neonatal. O shunt é geralmente menor e não provoca o sinal clássico de pulsos amplos observado na PCA.\n\nc) Correta. A Persistência do Canal Arterioso é a principal causa de descompensação cardíaca em prematuros após a fase aguda da DMH. Os achados de sopro sistólico (ou contínuo) em área infraclavicular esquerda, pulsos periféricos amplos (em \"martelo d'água\"), precórdio hiperdinâmico e sinais de congestão pulmonar/sistêmica (hepatomegalia) formam o quadro típico desta patologia.\n\nd) Incorreta. A Tetralogia de Fallot é uma cardiopatia congênita cianótica caracterizada por fluxo pulmonar reduzido (devido à estenose pulmonar). O paciente apresentaria cianose e não sinais de hiperfluxo pulmonar ou congestão, como estertores e hepatomegalia volumosa. Além disso, não justifica os pulsos amplos.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": 55.80549204171814,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:21.050Z"
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AJUDA_c8093816-dc48-41ed-ad19-a33bef703dd1",
+    "originalId": "c8093816-dc48-41ed-ad19-a33bef703dd1",
+    "statement": "Uma equipe de Saúde da Família, durante planejamento semestral, identificou um aumento significativo na incidência de obesidade e hipertensão arterial sistêmica na população adscrita. O nutricionista propôs uma ação educativa baseada nas recomendações do Guia alimentar para a população brasileira. O objetivo era impactar positivamente os determinantes sociais da saúde e a redução de doenças crônicas não transmissíveis.\n\nAssinale a alternativa que contém a estratégia educativa a ser priorizada pela equipe para enfrentar o problema identificado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estimular a redução do aporte calórico diário, com o uso de produtos diet e light.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ensinar a contagem sistemática de calorias, com cálculo de macronutrientes para controle da ingestão energética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Promover habilidades culinárias, com o resgate de hábitos regionais, e incentivar o consumo de alimentos in natura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Recomendar a exclusão de alimentos processados, como queijos e pães artesanais, e conservar vegetais da dieta regular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A estratégia a ser priorizada é a da alternativa C: promover habilidades culinárias, resgatar hábitos regionais e incentivar o consumo de alimentos in natura.\n\nO Guia Alimentar para a População Brasileira (Ministério da Saúde, 2014) abandona a lógica centrada em nutrientes e calorias. Em seu lugar, adota uma abordagem baseada no grau e no propósito do processamento dos alimentos, a chamada classificação NOVA. Essa classificação organiza os alimentos em quatro grupos:\n- alimentos in natura ou minimamente processados;\n- ingredientes culinários processados (óleos, sal, açúcar);\n- alimentos processados;\n- alimentos ultraprocessados.\n\nA regra de ouro do Guia é: \"Prefira sempre alimentos in natura ou minimamente processados e preparações culinárias a alimentos ultraprocessados\". O documento também valoriza dimensões culturais, sociais e ambientais da alimentação: comer com regularidade e atenção, em companhia, desenvolver habilidades culinárias e respeitar a cultura alimentar regional. Por isso, a ação educativa coerente com o Guia, e capaz de atuar sobre determinantes sociais da saúde, é aquela que fortalece a autonomia alimentar da população.\n\nAnálise das alternativas:\n\na) Incorreta. O Guia não recomenda produtos diet e light como estratégia populacional. Em geral, esses produtos são ultraprocessados, cujo consumo o Guia orienta evitar. Além disso, focar apenas na redução calórica reproduz a lógica nutricionista que o Guia busca superar.\n\nb) Incorreta. Contar calorias e calcular macronutrientes é uma abordagem individual, técnica e de baixa aplicabilidade em educação em saúde coletiva. Ela não considera aspectos culturais e sociais da alimentação e não age sobre determinantes sociais. O Guia propositalmente não se organiza em torno de nutrientes ou calorias.\n\nc) Correta. A alternativa reúne pilares centrais do Guia:\n- base da alimentação em alimentos in natura e minimamente processados;\n- desenvolvimento e partilha de habilidades culinárias, apontado no próprio Guia como forma de superar obstáculos à alimentação adequada;\n- valorização da cultura alimentar regional.\n\nÉ uma estratégia de promoção da saúde, coletiva e emancipadora, compatível com a Atenção Primária e com a prevenção de obesidade e hipertensão.\n\nd) Incorreta. O Guia não manda excluir alimentos processados. Ele recomenda limitar seu consumo e usá-los em pequenas quantidades, como ingredientes ou parte de refeições baseadas em alimentos in natura. Queijos e pães artesanais e conservas de vegetais são exemplos de alimentos processados aceitáveis com moderação. A exclusão é recomendada para os ultraprocessados (\"evite\"), e não para os processados.\n\nPonto-chave para prova: as recomendações do Guia Alimentar seguem a gradação in natura (base da alimentação), ingredientes culinários (usar com moderação), processados (limitar) e ultraprocessados (evitar). Associe sempre o Guia a cultura alimentar, culinária, comensalidade e autonomia, e não a calorias, nutrientes ou produtos diet e light.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Processo Saúde-Doença",
+      "Medicina de Família e Comunidade",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:40.010Z"
+  },
+  {
+    "id": "AJUDA_c815bafa-7c68-4d4e-bee7-87f98af1d4aa",
+    "originalId": "c815bafa-7c68-4d4e-bee7-87f98af1d4aa",
+    "statement": "Durante uma reunião de equipe, o médico da Unidade de Saúde da Família discute a prescrição de um novo medicamento para prevenção de eventos cardiovasculares em pacientes com risco cardiovascular moderado. Ele apresenta os dados de um ensaio clínico a seguir. • NNT (Número Necessário para Tratar) = 120 para prevenir um evento em 5 anos. • NNH (Número Necessário para Causar Dano) = 40 para provocar um evento adverso grave no mesmo período. A partir desses dados e considerando os princípios da prevenção quaternária na Atenção Primária à Saúde, assinale a alternativa que apresenta, corretamente, a conduta mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliar criticamente a relação benefício-dano, discutir os resultados com o paciente e considerar não prescrever, uma vez que o risco de dano é maior que o benefício potencial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aplicar o conceito de NNT sobreposto ao conceito de NNH, pois os eventos adversos não devem limitar o potencial benefício do tratamento na decisão clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar o uso do medicamento para os pacientes com fatores de risco cardiovascular, entendendo que a tomada de decisão clínica não pode ser baseada em NNT e NNH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Priorizar a prescrição do medicamento, pois o NNT elevado demonstra eficácia em longo prazo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Suspender o uso de todos os medicamentos com NNT maior que 50, pois indicam ineficácia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O cerne desta questão reside na interpretação dos indicadores bioestatísticos NNT (Número Necessário para Tratar) e NNH (Número Necessário para Causar Dano), aplicados ao conceito de Prevenção Quaternária.\n\nO NNT de 120 indica que é necessário tratar 120 pacientes durante 5 anos para que apenas um evento cardiovascular seja evitado. Já o NNH de 40 indica que, a cada 40 pacientes tratados pelo mesmo período, um apresentará um evento adverso grave. Ao compararmos os dois dados, percebemos que, para cada 120 pessoas tratadas, evitaremos 1 desfecho desfavorável, mas causaremos 3 eventos adversos graves (120 dividido por 40). Portanto, o risco de dano é três vezes superior ao benefício potencial.\n\nAnálise das alternativas:\n\na) Correta. A conduta reflete o princípio da Prevenção Quaternária, que busca detectar pacientes em risco de medicalização excessiva e protegê-los de intervenções médicas desnecessárias ou que tragam mais danos que benefícios. Diante de um NNH significativamente menor que o NNT, a relação risco-benefício é desfavorável, exigindo cautela, discussão com o paciente e, frequentemente, a não prescrição.\n\nb) Incorreta. Os eventos adversos (NNH) são fundamentais na decisão clínica. Ignorar o potencial de dano fere o princípio da não maleficência e a segurança do paciente. O NNH e o NNT devem ser analisados em conjunto, e não um sobreposto ao outro de forma a ignorar os riscos.\n\nc) Incorreta. A Medicina Baseada em Evidências utiliza justamente ferramentas como NNT e NNH para fundamentar a tomada de decisão. Afirmar que a decisão não pode ser baseada nesses dados é invalidar a análise crítica dos ensaios clínicos.\n\nd) Incorreta. Um NNT elevado (como 120) não demonstra alta eficácia; pelo contrário, demonstra uma eficácia clínica pequena em nível populacional (muitas pessoas precisam ser tratadas para que poucas se beneficiem). Além disso, a priorização da prescrição deve considerar o balanço com o NNH, que neste caso é muito preocupante.\n\ne) Incorreta. Não existe um valor de corte arbitrário (como 50) para suspender medicamentos. A decisão clínica depende da gravidade do desfecho que se pretende evitar, da gravidade do dano possível e do contexto individual do paciente. Um NNT de 100 pode ser aceitável se o NNH for 10.000, por exemplo. O erro da alternativa é generalizar uma regra que não existe.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:40.010Z"
+  },
+  {
+    "id": "AJUDA_c818fc92-f907-4dcd-8ae0-3009dfd86fab",
+    "originalId": "c818fc92-f907-4dcd-8ae0-3009dfd86fab",
+    "statement": "A incontinência urinária é definida como qualquer perda involuntária de urina. As estimativas de prevalência são variadas, devido à dificuldade de definição, populações usadas, idade e outros fatores envolvidos nos estudos. Estima-se que afete um terço das mulheres durante a sua vida e com repercussões muitas vezes importantes na qualidade de vida. Sobre essa patologia, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A síndrome da bexiga hiperativa é acompanhada de urgência urinária, geralmente acompanhada do aumento da frequência, nictúria e incontinência de urgência, na ausência de infecção do trato urinário baixo ou outra doença óbvia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A obesidade por si não é um fator de risco isolado para incontinência urinária, estando associada à paridade, idade e à raça negra.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A urodinâmica tem sua indicação atualmente restrita, devido a sua baixa acuidade em elucidar as diferenças entre a anamnese e o exame físico e na distinção entre as incontinências de esforço, de urgência e mista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os tratamentos conservadores não farmacológicos como a fisioterapia, modificações do estilo de vida, perda de peso não têm indicação, na maioria dos casos, devido à baixa eficácia e potenciais efeitos adversos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a): CORRETA. Esta alternativa descreve com precisão a definição da Síndrome da Bexiga Hiperativa conforme os critérios da Sociedade Internacional de Continência (ICS). Trata-se de um diagnóstico clínico caracterizado fundamentalmente pela urgência miccional (o desejo súbito e difícil de adiar a micção), frequentemente associada ao aumento da frequência urinária diurna e à nictúria (acordar à noite para urinar). A perda involuntária de urina (incontinência de urgência) pode ou não estar presente. O diagnóstico exige obrigatoriamente a exclusão de processos infecciosos (ITU), inflamatórios ou neoplásicos do trato urinário inferior.\n\nAlternativa (b): INCORRETA. A obesidade é considerada um dos principais fatores de risco independentes e modificáveis para a incontinência urinária. O aumento do índice de massa corporal (IMC) eleva a pressão intra-abdominal e, consequentemente, a pressão intravesical, o que sobrecarrega os músculos e fáscias do assoalho pélvico. Estudos mostram que a perda de peso, por si só, é capaz de reduzir significativamente os episódios de perda urinária. Além disso, a prevalência de incontinência urinária de esforço tende a ser maior em mulheres brancas do que em mulheres negras.\n\nAlternativa (c): INCORRETA. O estudo urodinâmico é o padrão-ouro para a avaliação funcional do trato urinário inferior. Ele não possui baixa acuidade; sua função é justamente objetivar os achados da anamnese e do exame físico, sendo fundamental para distinguir entre a incontinência urinária de esforço (hipermobilidade vesical ou deficiência esfincteriana) e a incontinência de urgência (hiperatividade do detrusor), especialmente em casos de incontinência mista, recidivas ou antes de procedimentos cirúrgicos.\n\nAlternativa (d): INCORRETA. As terapias conservadoras não farmacológicas são, na verdade, a primeira linha de tratamento para a maioria das mulheres com incontinência urinária. Mudanças no estilo de vida (como redução de cafeína e tabagismo), perda de peso e, principalmente, a fisioterapia do assoalho pélvico (treinamento muscular) possuem alta eficácia comprovada, excelente relação custo-benefício e são praticamente isentas de efeitos colaterais, ao contrário das terapias medicamentosas e cirúrgicas.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:40.010Z"
+  },
+  {
+    "id": "AJUDA_c81ff8f7-a689-49e7-ad16-a78ce894b993",
+    "originalId": "c81ff8f7-a689-49e7-ad16-a78ce894b993",
+    "statement": "Mulher de 40 anos, com diagnóstico de doença de Graves, procura o pronto-socorro com febre, taquicardia e tremores. Relata interrupção do uso de metimazol há um mês. Ao exame esta hipertensa (PA 130×75 mmHg), FC 140 bpm, FR 26 irpm, T 38,9°C. Apresenta agitação psicomotora e sudorese intensa.\nLaboratório: TSH < 0,02, T4 livre 4,8 ng/dL (VR: 0,8–1,8).\nApós estabilização inicial com beta-bloqueador e Propiltiuracil, qual é o PRÓXIMO passo na sequência terapêutica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar corticoide EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar Verapamil para controle de taquicardia refratária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Introduzir iodo antes da tionamida para bloquear a liberação hormonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar iodo uma hora após a Propiutiuracil.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito, caracterizado por febre elevada, taquicardia importante (140 bpm), agitação psicomotora e sudorese intensa em uma paciente com doença de Graves que interrompeu o tratamento, é patognomônico de uma tempestade tireoidiana. Trata-se de uma emergência endocrinológica com alta taxa de mortalidade, exigindo intervenção rápida e organizada em etapas específicas para bloquear a síntese, a liberação e a ação periférica dos hormônios tireoidianos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O uso de corticoides, como a hidrocortisona ou dexametasona, é um componente essencial no tratamento da tempestade tireoidiana. Eles atuam reduzindo a conversão periférica de T4 em T3 e prevenindo a insuficiência adrenal relativa que pode ocorrer no estado hipermetabólico. No entanto, na sequência clássica de manejo farmacológico após o início da tionamida, a prioridade é o bloqueio da liberação hormonal glandular com iodo, respeitando o intervalo de tempo necessário.\n\nAlternativa b) Incorreta. O verapamil é um bloqueador dos canais de cálcio utilizado para controle de frequência cardíaca apenas quando existe contraindicação absoluta ao uso de betabloqueadores (como em casos de asma brônquica grave ou insuficiência cardíaca descompensada com baixo débito). Como a paciente já iniciou o betabloqueador e não há menção à refratariedade ou contraindicação, não há indicação para o verapamil.\n\nAlternativa c) Incorreta. Esta alternativa apresenta um erro conceitual perigoso. O iodo nunca deve ser administrado antes da tionamida. Se o iodo for oferecido a uma glândula hiperativa sem o bloqueio prévio da síntese (organificação), ele servirá como substrato para a produção de novos hormônios, o que pode exacerbar gravemente a tireotoxicose (fenômeno de Jod-Basedow).\n\nAlternativa d) Correta. A sequência terapêutica correta na tempestade tireoidiana envolve primeiro o bloqueio da síntese hormonal com tionamidas (preferencialmente o propiltiouracil, que também inibe a conversão periférica de T4 em T3). Após cerca de 60 minutos da dose inicial da tionamida, deve-se administrar o iodo inorgânico (como a solução de Lugol). Esse intervalo de uma hora é fundamental para garantir que a glândula já esteja \"bloqueada\" e que o iodo atue apenas impedindo a liberação do hormônio pré-formado que já está estocado nos folículos tireoidianos (efeito Wolff-Chaikoff), sem o risco de ser utilizado para sintetizar novos hormônios.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:40.010Z"
+  },
+  {
+    "id": "AJUDA_c844a2bf-790a-4a32-9877-cfe8590bd2ab",
+    "originalId": "c844a2bf-790a-4a32-9877-cfe8590bd2ab",
+    "statement": "Paciente feminina de 37 anos vem em consulta de retorno. Ela havia procurado atendimento inicialmente por queixa de tosse seca persistente e dispneia progressiva até para andar no plano, sendo que em alguns dias tinha até que parar para andar dois quarteirões. Referia que os sintomas pioravam com mudança de tempo, contato com poeiras e pelos de animais e que algumas noites percebia um chiado no peito. Já tinha ido algumas vezes a pronto atendimentos nos últimos meses por conta de falta de ar. Na ocasião da primeira consulta, foi feita a hipótese de asma, solicitada espirometria e iniciado tratamento com formoterol-budesonida 12/400 mcg 12/12h. A paciente retorna hoje referindo melhora importante dos sintomas, mantendo sintomas noturnos e necessidade de medicação de resgate pelo menos 1 a 2 vezes por semana. Seu score no Asthma Control Test (ACT) é de 18 de 25. Não teve mais buscas ao pronto-socorro. Está utilizando regularmente a medicação inalatória prescrita, refere coriza e prurido nasal persistentes e importantes, pirose e regurgitação a depender da alimentação. Tirou tapetes e cortinas de casa, mas mantém exposição ao cachorro da vizinha, que entra na sua casa regularmente. Nega história de asma na infância. Ao exame físico, paciente em bom estado geral, corada, hidratada, IMC 33 kg/m². Exame cardiovascular sem alterações, ausculta pulmonar com murmúrios vesiculares presentes bilateralmente e tempo expiratório aumentado, com raros sibilos expiratórios. SpO2 em ar ambiente de 96%, frequência respiratória de 16 ipm. Traz espirometria mostrando distúrbio ventilatório obstrutivo leve com resposta ao broncodilatador, hemograma com eosinófilos de 350/mcL (4%) e IgE total de 200 UI/mL. Assinale a alternativa que corresponde à melhor classificação de gravidade e conduta nesse momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de asma de difícil controle, sendo sugerido aumento da frequência de formoterol-budesonida para 3x/dia, checar técnica de uso da medicação inalatória, tratar rinite e refluxo e afastar da exposição ao cão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de asma leve controlada, dado que a espirometria mostrou apenas um distúrbio obstrutivo leve, e a paciente referiu melhora importante dos sintomas. Sugere-se manter as medicações atuais e tratar a rinite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de asma moderada, pois a paciente está em STEP 4 de tratamento segundo o GINA 2024. Sugere-se adicionar um anticolinérgico de longa ação ou um antileucotrieno para melhora do controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de asma grave não controlada, sendo indicado agora o uso de imunobiológico devido ao fenótipo alérgico-eosinofílico. A escolha entre omalizumabe e mepolizumab dependerá da disponibilidade da medicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um diagnóstico confirmado de asma (clínica sugestiva e espirometria com distúrbio obstrutivo reversível). Ela já está em tratamento com dose alta de corticoide inalatório associado a um broncodilatador de longa duração (formoterol-budesonida 12/400 mcg 12/12h). Apesar da melhora, a asma permanece não controlada, evidenciada pelo escore de 18 no ACT (valores abaixo de 20 indicam controle insuficiente), sintomas noturnos e uso de medicação de resgate. Além disso, a paciente possui fatores que sabidamente dificultam o controle da asma: obesidade (IMC 33), rinite alérgica não tratada, sintomas de refluxo gastroesofágico (DRGE) e exposição contínua a alérgenos (cachorro).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) CORRETA. A asma é classificada como de difícil controle (ou difícil tratamento) quando o paciente permanece sintomático apesar do uso de doses elevadas de medicação (neste caso, STEP 4/5 do GINA). Antes de classificar como asma grave e indicar terapias biológicas, é obrigatório investigar e tratar fatores modificáveis: checar a técnica inalatória e a adesão ao tratamento, tratar comorbidades (rinite e refluxo) e realizar o controle ambiental (afastar o animal de estimação). O ajuste da dose do corticoide/formoterol pode ser considerado enquanto se otimizam esses fatores.\n\nb) INCORRETA. A gravidade da asma não é definida pelo resultado da espirometria, mas sim pelo nível de tratamento necessário para manter o controle dos sintomas. Como a paciente está usando doses altas de medicação e, ainda assim, apresenta sintomas significativos (ACT 18), ela não pode ser classificada como tendo asma leve, nem a asma está controlada.\n\nc) INCORRETA. Embora a paciente esteja em um degrau terapêutico elevado (STEP 4 ou 5, dependendo da classificação de dose adotada), a conduta de simplesmente adicionar um LAMA (anticolinérgico) ou antileucotrieno é precipitada sem antes abordar a técnica inalatória e as comorbidades evidentes (rinite, refluxo e exposição ao cão). Na asma de difícil controle, a prioridade é a correção dos fatores agravantes.\n\nd) INCORRETA. Para diagnosticar \"asma grave\", é necessário que a doença permaneça sem controle mesmo após a otimização de todas as comorbidades, correção da técnica de inalação e verificação da adesão. A paciente ainda possui diversos gatilhos e doenças associadas não tratadas. Portanto, o uso de imunobiológicos (como omalizumabe ou mepolizumabe) não é a conduta inicial correta neste momento. Além disso, os níveis de eosinófilos (350/mcL) e IgE (200 UI/mL) sugerem um fenótipo T2, mas a indicação dessas drogas é o último passo da linha de tratamento.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Asma",
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:40.010Z"
+  },
+  {
+    "id": "AJUDA_c84bb34e-fc2c-46ce-9e0b-945edbd98164",
+    "originalId": "c84bb34e-fc2c-46ce-9e0b-945edbd98164",
+    "statement": "Um estudo, aliando o nível de saúde de uma população, escolheu cinco grupos etários para estudar a mortalidade proporcional (os óbitos infantis; pré-escolares; escolares e adolescentes; adultos jovens; adultos de meia-idade e velhos) e criar a Curva de Nelson Moraes para o período estudado. Obteve como resultado uma curva em forma de \"Jota\" invertido, o que indica um nível sanitário:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Elevado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bom.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Regular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Baixo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Muito baixo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Curva de Nelson Moraes avalia o nível de saúde de uma população analisando a proporção de mortes em cinco faixas etárias: menores de 1 ano, 1 a 4 anos, 5 a 19 anos, 20 a 49 anos e 50 anos ou mais. O formato gráfico gerado por esses dados indica a qualidade sanitária de uma região.\n\nQuando a curva apresenta o formato de Jota Invertido (também conhecido como Tipo 2 ou formato em L), ela demonstra que a maior parte dos óbitos ocorre no primeiro ano de vida. Isso sinaliza que a população ainda sofre com condições precárias de saneamento, nutrição e assistência médica básica, resultando em um nível sanitário baixo.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. O nível elevado é representado pela curva em formato de Jota (Tipo 4). Nesse modelo, a maioria das mortes se concentra no grupo de 50 anos ou mais, indicando que a população tem alta expectativa de vida e que as mortes infantis são raras.\n\nAlternativa b: Incorreta. Esta alternativa não condiz com a terminologia técnica da classificação de Nelson Moraes para esse desenho gráfico. O formato de Jota Invertido é um indicador negativo de saúde pública.\n\nAlternativa c: Incorreta. O nível regular é representado pela curva em formato de U ou V (Tipo 3). Esse desenho mostra uma queda na mortalidade infantil e um aumento proporcional de mortes em idosos, indicando uma fase de transição epidemiológica.\n\nAlternativa d: Correta. O Jota Invertido é a representação clássica do nível sanitário baixo. Ele mostra que a mortalidade proporcional infantil é a mais alta entre todos os grupos etários, evidenciando falhas nas políticas de saúde e desenvolvimento social.\n\nAlternativa e: Incorreta. O nível muito baixo é representado pela curva em formato de N (Tipo 1). Nesse caso, a mortalidade infantil é extremamente elevada e a curva apresenta uma queda ainda mais acentuada logo após o primeiro grupo etário, indicando condições de saúde ainda piores que as do Jota Invertido.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:40.010Z"
+  },
+  {
+    "id": "AJUDA_c84bb48d-7203-4a74-88d9-c5cf032acd37",
+    "originalId": "c84bb48d-7203-4a74-88d9-c5cf032acd37",
+    "statement": "L.M.R, 63 anos, sexo masculino, apresentando quadro insidioso de fraqueza muscular proximal e distal assimétricas, rouquidão e disfagia. Ao exame, apresenta atrofia dos músculos flexores profundos dos dedos e da região anterior das pernas. Exames laboratoriais evidenciando aumento das enzimas musculares. Eletroneuromiografia com miopatia próximal e distal. Iniciado tratamento com corticoterapia e imunossupressores, sem melhora relevante. Diante desse quadro, a principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Polimiosite",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dermatomiosite",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Miosite por corpúsculos de inclusão",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Miosite necrosante imunomediada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Artrite reumatóide.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO PRINCIPAL: MIOSITE POR CORPÚSCULOS DE INCLUSÃO (IBM)\n\nO caso clínico apresenta um quadro clássico de Miosite por Corpúsculos de Inclusão (IBM). Esta patologia é a miopatia inflamatória mais comum em pacientes com mais de 50 anos, sendo mais frequente no sexo masculino. O que a diferencia das demais miosites é o seu caráter insidioso (evolução lenta ao longo de anos) e o padrão de fraqueza muscular, que é tipicamente assimétrico e envolve tanto a musculatura proximal quanto a distal. Os sinais patognomônicos descritos na questão são a atrofia e fraqueza dos flexores profundos dos dedos e da musculatura anterior da perna (levando a tropeços). Além disso, a disfagia é um sintoma comum e a doença é notavelmente conhecida por sua má resposta ao tratamento com corticoides e imunossupressores.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A polimiosite é uma doença que cursa com fraqueza muscular simétrica e predominantemente proximal (cinturas escapular e pélvica). Diferente do caso relatado, ela costuma ter um início mais rápido (subagudo) e apresenta uma boa resposta inicial ao uso de corticosteroides. Não costuma poupar a musculatura distal nem ser assimétrica.\n\nAlternativa b) Incorreta. A dermatomiosite também se caracteriza por fraqueza proximal e simétrica, mas sua principal marca são as alterações dermatológicas, como o heliotropo (erupção violácea nas pálpebras) e as pápulas de Gottron (lesões avermelhadas sobre as articulações dos dedos). A ausência de lesões cutâneas e a presença de acometimento distal assimétrico afastam este diagnóstico.\n\nAlternativa c) Correta. A miosite por corpúsculos de inclusão preenche todos os critérios do enunciado: paciente idoso, fraqueza distal e assimétrica (especialmente flexores dos dedos e tibial anterior), disfagia e refratariedade ao tratamento imunossupressor convencional. O aumento das enzimas musculares costuma ser leve a moderado, o que também condiz com o quadro.\n\nAlternativa d) Incorreta. A miosite necrosante imunomediada manifesta-se com fraqueza proximal simétrica de início agudo ou subagudo, geralmente com níveis de creatinofosfoquinase (CK) muito elevados (frequentemente acima de 10 vezes o valor normal). Embora possa ser de difícil tratamento, o padrão clínico e de distribuição da fraqueza é distinto da IBM.\n\nAlternativa e) Incorreta. A artrite reumatoide é uma doença inflamatória autoimune que ataca primariamente a sinóvia das articulações, causando dor, edema articular e rigidez matinal. Embora possa causar atrofia muscular secundária por desuso ou inflamação sistêmica, não apresenta o padrão de miopatia distal e proximal assimétrica com aumento isolado de enzimas musculares como descrito no caso.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Neuromusculares",
+      "Doenças Autoimunes do Tecido Conjuntivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:40.010Z"
+  },
+  {
+    "id": "AJUDA_c84d3985-d114-4ffc-8c80-e2f569989bca",
+    "originalId": "c84d3985-d114-4ffc-8c80-e2f569989bca",
+    "statement": "Você é chamado para avaliar um paciente idoso e emagrecido na enfermaria da Clínica Médica, acamado por sequela de AVC prévio e internado para tratamento de uma pneumonia. Durante a visita de rotina, a enfermagem identificou uma lesão na região sacral e solicitou seu parecer. Ao exame físico, observa-se área ulcerada superficial, de cerca de 5cm de diâmetro, com perda parcial da pele e exposição da derme, de coloração rosada, com pouca umidade, sem presença de tecido desvitalizado. Não há flutuação, drenagem de secreção ou odor fétido. Não há exposição de tecidos profundos. A borda da lesão é bem definida e a pele ao redor está íntegra e sem sinais flogísticos. Sobre o caso, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Devido a proximidade com o ânus e provável contaminação fecal, podemos afirmar que se trata de ferida infectada, sendo indicado a antibioticoterapia com cobertura para flora polimicrobiana e reavaliação da lesão em 48 a 72 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Os dados descritos nos permitem inferir que houve falha nas condutas preventivas deste tipo de lesão, tais como o uso de colchões tipo “casca de ovo” e a mudança de decúbito de horário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O ferimento ocorreu devido a pressão que o osso sacro exerce nos tecidos moles adjacentes em contato com o leito, levando a isquemia e perda da pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fazem parte do tratamento deste paciente o desbridamento não cirúrgico do tecido desvitalizado, suporte nutricional adequado e uso de agentes tópicos a base de hidrogel.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta uma Lesão por Pressão (LPP) em Estágio 2. Esta fase é caracterizada pela perda parcial da espessura da pele com exposição da derme. O leito da ferida é viável, de coloração rosada ou avermelhada e úmido, podendo também se apresentar como uma bolha intacta ou rompida. No caso descrito, a ausência de tecido desvitalizado, odor ou secreção confirma que não há sinais clínicos de infecção no momento.\n\nAlternativa A (Incorreta - Gabarito):\nEsta alternativa está incorreta porque a proximidade com o ânus e a potencial contaminação fecal não definem, por si sós, uma ferida como infectada. Todas as lesões por pressão são colonizadas por bactérias, mas a infecção é um diagnóstico clínico que exige a presença de sinais como calor, rubor, edema, dor, drenagem purulenta ou odor fétido, além de possíveis sintomas sistêmicos. O uso de antibioticoterapia sistêmica é contraindicado para LPPs em estágio 2 que não apresentem sinais de infecção tecidual (como celulite ou osteomielite). O tratamento deve ser focado na limpeza local e proteção da ferida.\n\nAlternativa B (Correta):\nAs lesões por pressão são consideradas eventos adversos em sua maioria evitáveis. O surgimento de uma LPP de 5 cm em um paciente internado indica que as medidas de prevenção padrão falharam ou não foram aplicadas de forma eficaz. O uso de colchões de redistribuição de pressão (como os de ar ou os de espuma tipo piramidal/casca de ovo) e o rodízio de decúbito a cada 2 horas são os pilares da prevenção em pacientes acamados.\n\nAlternativa C (Correta):\nEsta alternativa descreve exatamente a fisiopatologia da lesão. A pressão externa prolongada entre uma proeminência óssea (sacro) e uma superfície dura (leito) comprime os capilares sanguíneos. Quando essa pressão excede a pressão de enchimento capilar, ocorre isquemia tecidual. Se a compressão persistir, a falta de oxigênio e nutrientes leva à morte celular e formação da úlcera.\n\nAlternativa D (Correta):\nO manejo das LPPs é multidisciplinar. O suporte nutricional é essencial, já que pacientes desnutridos e emagrecidos (como o do caso) possuem menor coxim gorduroso e dificuldade de cicatrização. O hidrogel é uma cobertura indicada para manter o ambiente úmido e favorecer a granulação. Embora a descrição mencione que não há tecido desvitalizado no momento, o desbridamento (seja autolítico ou mecânico) faz parte do protocolo terapêutico sempre que detritos ou esfacelos surgirem no leito da ferida para permitir a cicatrização.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:40.010Z"
+  },
+  {
+    "id": "AJUDA_c84e89a5-1ce9-4eec-8d38-83ce69cb1963",
+    "originalId": "c84e89a5-1ce9-4eec-8d38-83ce69cb1963",
+    "statement": "Em um paciente com diagnostico prévio de retocolite ulcerativa moderada e confinada ao colón descendente e reto, vinha sendo tratado com mesalazina oral. Na suspeita de atividade da doença, o melhor marcador laboratorial, não invasivo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Proteína C reativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Calprotectina fecal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sangue oculto nas fezes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Beta-2 microglobulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Velocidade de hemossedimentação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o monitoramento da atividade inflamatória na retocolite ulcerativa (RCU), uma doença inflamatória intestinal (DII). O desafio clínico é identificar um exame que reflita com precisão o estado da mucosa intestinal sem a necessidade imediata de exames invasivos, como a colonoscopia.\n\nAlternativa A: Incorreta. A proteína C-reativa (PCR) é um marcador de fase aguda produzido pelo fígado. Embora seja útil, sua sensibilidade na retocolite ulcerativa é limitada, especialmente em casos de atividade leve a moderada ou quando a doença está restrita ao reto e cólon distal. Muitos pacientes com RCU ativa apresentam PCR normal.\n\nAlternativa B: Correta. A calprotectina fecal é uma proteína ligadora de cálcio encontrada no citoplasma dos neutrófilos. Quando ocorre inflamação na mucosa intestinal, os neutrófilos migram para a parede do intestino e liberam calprotectina no lúmen, que é então excretada nas fezes. É o marcador não invasivo mais sensível e específico para a atividade da doença intestinal, apresentando excelente correlação com os achados endoscópicos e histológicos. Além de diagnosticar a atividade, é excelente para prever recaídas e monitorar a resposta ao tratamento.\n\nAlternativa C: Incorreta. O teste de sangue oculto nas fezes é uma ferramenta de rastreamento para o câncer colorretal em pacientes assintomáticos. Na retocolite ulcerativa em atividade, o sangramento costuma ser macroscópico (visível), e a presença de sangue oculto não ajuda a quantificar o grau de inflamação ou diferenciar a atividade da doença de outras causas de sangramento leve.\n\nAlternativa D: Incorreta. A beta-2-microglobulina é um marcador utilizado principalmente no acompanhamento de doenças linfoproliferativas (como mieloma múltiplo e linfomas) e na avaliação da função tubular renal. Não possui utilidade clínica comprovada ou indicação no manejo das doenças inflamatórias intestinais.\n\nAlternativa E: Incorreta. A velocidade de hemossedimentação (VHS) é outro marcador sistêmico de inflamação inespecífico. Assim como a PCR, o VHS pode estar elevado por diversas causas extracolônicas (infecções, anemias, processos inflamatórios em outros órgãos) e demora mais para refletir mudanças agudas no estado clínico do paciente, sendo menos sensível que a calprotectina para a inflamação da mucosa.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:40.010Z"
+  },
+  {
+    "id": "AJUDA_c8545748-adaa-4dbb-84fc-192bd58568c9",
+    "originalId": "c8545748-adaa-4dbb-84fc-192bd58568c9",
+    "statement": "No mês de agosto, é comemorado o mês do Aleitamento Materno. Sabe-se que essa prática oferece inúmeros benefícios para o crescimento e o desenvolvimento da criança, além de fortalecer o vínculo mãe-bebê. Entretanto, existem algumas contraindicações a essa prática. São condições consideradas contraindicação absoluta à amamentação, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tuberculose bacilífera.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Abscesso de origem tuberculosa na mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mãe soropositiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Bebê com galactosemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão exige o conhecimento das contraindicações absolutas e relativas ao aleitamento materno, diferenciando as condições maternas e do lactente.\n\nAlternativa (a) - Tuberculose bacilífera: Esta é a alternativa correta (o \"exceto\") porque a tuberculose não é uma contraindicação absoluta à amamentação. A transmissão da tuberculose ocorre por via aérea (gotículas e aerossóis), e não através do leite materno. De acordo com o Ministério da Saúde e a Sociedade Brasileira de Pediatria, a mãe com tuberculose bacilífera deve continuar amamentando, desde que utilize máscara cirúrgica ao manusear o bebê e higienize as mãos. O recém-nascido deve receber a quimioprofilaxia primária, e a vacina BCG deve ser adiada até o final do tratamento profilático da criança.\n\nAlternativa (b) - Abscesso de origem tuberculosa na mama: Esta condição é considerada uma contraindicação absoluta ao aleitamento na mama afetada. Diferentemente da tuberculose pulmonar, a presença de uma lesão ativa e infectada diretamente no tecido mamário ou mamilo oferece risco de transmissão direta do bacilo de Koch ao lactente durante a sucção.\n\nAlternativa (c) - Mãe soropositiva: A infecção materna pelo vírus HIV (assim como pelo HTLV-1 e HTLV-2) é uma contraindicação absoluta e definitiva para a amamentação no Brasil. Existe um risco significativo de transmissão vertical do vírus através do leite materno. Nessas situações, a mãe deve ser orientada a suspender a lactação (com uso de enfaixamento ou inibidores farmacológicos), e a criança deve receber fórmula infantil e acompanhamento especializado.\n\nAlternativa (d) - Bebê com galactosemia: Esta é uma contraindicação absoluta por parte do lactente. A galactosemia é um erro inato do metabolismo em que a criança não possui a enzima necessária para metabolizar a galactose (um componente da lactose). Como o leite materno é rico em lactose, sua ingestão pode causar danos graves ao fígado, aos rins e ao sistema nervoso central do bebê, sendo obrigatória a substituição por fórmulas isentas de lactose e galactose (geralmente à base de soja).",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:40.010Z"
+  }
+]

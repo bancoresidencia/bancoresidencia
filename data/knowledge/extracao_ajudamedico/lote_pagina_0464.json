@@ -1,0 +1,526 @@
+[
+  {
+    "id": "AJUDA_82ca2dd0-e78c-4823-81b6-a2da6eb7311c",
+    "originalId": "82ca2dd0-e78c-4823-81b6-a2da6eb7311c",
+    "statement": "Uma criança de 5 anos apresenta prurido intenso há 3 semanas, com piora à noite. No exame físico, observam-se pápulas eritematosas, escoriações e lesões agrupadas nas axilas, região periumbilical e nas mãos. A mãe relata que o avô, que mora na mesma casa, também tem “muita coceira nas mãos”. Qual conduta mais adequada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratar apenas a criança com ivermectina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever hidrocortisona tópica para reduzir o prurido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar exame parasitológico da pele antes de iniciar o tratamento, pois o diagnóstico sempre exige confirmação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar permetrina 5% para a criança e tratar simultaneamente todos os contatos domiciliares, mesmo assintomáticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Evitar retorno escolar por 10 dias, mesmo após início do tratamento, devido à alta transmissibilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nO quadro descrito é clássico de escabiose (sarna humana), causada pelo ácaro Sarcoptes scabiei. Os pontos-chave para o diagnóstico são o prurido intenso com caráter de piora noturna e a localização das lesões em áreas de pele fina e dobras (axilas, região periumbilical e espaços interdigitais). A história de que o avô também apresenta sintomas reforça o caráter infectocontagioso da patologia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O tratamento apenas do paciente índice é um erro comum que leva à reinfestação. Além disso, embora a ivermectina possa ser utilizada, a permetrina 5% (tópica) é considerada a primeira linha de tratamento para crianças, sendo a ivermectina reservada para casos específicos, surtos em instituições ou pacientes com contraindicação ao tópico.\n\nAlternativa b) Incorreta. Corticoides tópicos como a hidrocortisona podem mascarar os sintomas e até exacerbar a infestação por suprimir a resposta imune local (condição conhecida como escabiose incógnita). O foco deve ser a eliminação do parasita. O prurido pode ser manejado com anti-histamínicos orais até que o tratamento escabicida faça efeito.\n\nAlternativa c) Incorreta. O diagnóstico da escabiose é fundamentalmente clínico. O exame parasitológico (raspado cutâneo para visualização do ácaro, ovos ou fezes) pode ser realizado para confirmação, mas sua sensibilidade é variável. Diante de uma história clínica e exame físico clássicos, o tratamento não deve ser retardado pela espera de exames complementares.\n\nAlternativa d) Correta. A permetrina 5% aplicada do pescoço para baixo e removida após 8 a 14 horas é o tratamento de escolha. A medida de saúde pública mais importante na escabiose é o tratamento simultâneo de todos os contatos domiciliares e parceiros sexuais, mesmo que estejam assintomáticos no momento, pois o período de incubação pode durar até 6 semanas. Isso evita o ciclo de reinfestação familiar.\n\nAlternativa e) Incorreta. Não há necessidade de um isolamento tão prolongado. A transmissibilidade da escabiose cai drasticamente após o primeiro ciclo de tratamento eficaz. Geralmente, a criança pode retornar à escola ou creche 24 horas após a primeira aplicação da permetrina.\n\nGabarito: Alternativa (d).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:48.343Z"
+  },
+  {
+    "id": "AJUDA_82f01a6a-5fdf-4fa0-ba6a-710fdb821396",
+    "originalId": "82f01a6a-5fdf-4fa0-ba6a-710fdb821396",
+    "statement": "Homem de 54 anos apresenta dor torácica e tosse com expectoração amarelada há 5 dias, febre há 2 dias. AP: tabagista (carga tabágica: 35 anos-maço). Radiografia de tórax: broncograma aéreo em lobo superior direito e derrame pleural à direita de 15 mm em decúbito lateral direito. Toracocentese diagnóstica: líquido pleural seroso, pH: 7,2, glicose: 80 mg/dL, proteína: 2,6 g/dL, DHL: 270 UI/L, 55% de neutrófilos, 25% de linfócitos, 10% de monócitos. Exames laboratoriais séricos: proteína: 6,5 g/dL, DHL: 520 UI/L. \n\nCom relação ao derrame pleural, deve-se realizar",
+    "options": [
+      {
+        "id": "A",
+        "text": "biópsia pleural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "drenagem torácica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "conduta expectante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "pleurodese.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreendermos a conduta correta, devemos analisar o quadro clínico e os dados da toracocentese. O paciente apresenta uma pneumonia (febre, tosse produtiva, dor torácica e broncograma aéreo no raio X) associada a um derrame pleural. Estamos diante de um Derrame Pleural Parapneumônico.\n\nO passo fundamental é diferenciar se o derrame é simples (não complicado) ou complicado/com empiema, pois isso define a necessidade de drenagem.\n\nCritérios para derrame pleural parapneumônico NÃO COMPLICADO (conduta: apenas antibioticoterapia para a pneumonia e observação):\n1. Aspecto do líquido: Seroso/claro.\n2. pH: Maior ou igual a 7,2.\n3. Glicose: Maior que 60 mg/dL.\n4. DHL: Menor que 1000 UI/L.\n5. Gram e Cultura: Negativos (ausência de germes).\n6. Tamanho: Pequeno volume (geralmente menor que 10 mm ou, se maior, sem critérios de gravidade).\n\nAnálise dos dados do paciente:\nO líquido é seroso, o pH é exatamente 7,2 (no limite, mas ainda não indica drenagem imediata por si só), a glicose está normal (80 mg/dL) e o DHL está baixo (270 UI/L). Além disso, a lâmina de decúbito lateral mostrou apenas 15 mm de lâmina líquida, o que é considerado um derrame pequeno/médio. Portanto, trata-se de um derrame parapneumônico simples.\n\nAnálise das alternativas:\n\na) Incorreta. A biópsia pleural é indicada na suspeita de tuberculose pleural ou neoplasias, quando o citopatológico do líquido é inconclusivo. No quadro agudo de pneumonia com derrame simples, não há indicação desse procedimento invasivo.\n\nb) Incorreta. A drenagem torácica está indicada se o derrame for complicado: presença de pus (empiema), pH menor que 7,2, glicose menor que 60 mg/dL, DHL acima de 1000 UI/L ou presença de bactérias no Gram/cultura. Como os parâmetros do paciente estão acima desses limites (pH 7,2 e glicose 80), a drenagem não é necessária no momento.\n\nc) Correta. A conduta expectante, mantendo o tratamento com antibióticos para a pneumonia e monitorando a evolução clínica e radiológica, é a escolha adequada para derrames parapneumônicos não complicados e de pequeno volume.\n\nd) Incorreta. A pleurodese consiste na obliteração do espaço pleural para evitar a recorrência de derrames. É utilizada quase exclusivamente em derrames pleurais malignos (câncer) recorrentes ou em casos específicos de pneumotórax de repetição, não tendo papel no tratamento de pneumonia aguda.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Derrame Pleural",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:48.343Z"
+  },
+  {
+    "id": "AJUDA_82f55214-6432-4794-99ff-3cc1f9003e2f",
+    "originalId": "82f55214-6432-4794-99ff-3cc1f9003e2f",
+    "statement": "De acordo com os atuais recomendações acerca da reposição volêmica em pacientes queimados graves, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O débito urinário continua sendo o melhor indicador do estado de volume, com valores mínimos de 0,5 mL/kg/h em adultos e 1 mL/kg/h em crianças.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Para queimaduras de primeiro e segundo graus, a ressuscitação com fluidos deve começar com 4 mL de Ringer Lactato × peso (em kg) do paciente × porcentagem de superfície corporal queimada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Onde os cuidados médicos não estão imediatamente disponíveis, a reposição volêmica com fluidos deve ser realizada por via parenteral, sendo a via enteral proscrita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O volume total de fluido calculado é iniciado da seguinte maneira: metade do fluido total é fornecida nas primeiras 12 horas após a queimadura, e metade, nas 12 horas seguintes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Complicações frequentes na ressuscitação volêmica desses pacientes podem ocorrer, como alcalose metabólica e hipopotassemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): O débito urinário é o principal parâmetro clínico utilizado para monitorar a eficácia da ressuscitação volêmica e a perfusão tecidual em pacientes queimados. Os valores de referência aceitos universalmente pelas diretrizes (como o ATLS) são de 0,5 mL/kg/h para adultos e 1 mL/kg/h para crianças com menos de 30 kg.\n\nAlternativa B (Incorreta): O cálculo da porcentagem de superfície corporal queimada (SCQ) para a reposição volêmica deve considerar apenas queimaduras de segundo e terceiro graus. Queimaduras de primeiro grau (apenas eritema, como a solar) não entram no cálculo. Além disso, diretrizes recentes como o ATLS 10 recomendam iniciar a ressuscitação em adultos com 2 mL/kg/% SCQ para queimaduras térmicas, reservando o valor de 4 mL/kg/% SCQ para queimaduras elétricas.\n\nAlternativa C (Incorreta): A via enteral não é proscrita. Em cenários de recursos limitados, zonas de guerra ou desastres de massa em que o acesso venoso não pode ser estabelecido imediatamente, a hidratação oral ou por sonda nasogástrica é incentivada para queimaduras de até 20% da superfície corporal, conforme protocolos da Organização Mundial da Saúde e de sociedades de queimaduras.\n\nAlternativa D (Incorreta): O protocolo padrão de administração de fluidos (baseado na fórmula de Parkland) preconiza que metade do volume total calculado seja administrada nas primeiras 8 horas contadas a partir do momento da queimadura, e não em 12 horas. A outra metade deve ser infundida nas 16 horas seguintes.\n\nAlternativa E (Incorreta): O perfil metabólico inicial do grande queimado costuma cursar com acidose metabólica (devido à hipoperfusão e ao acúmulo de lactato) e hiperpotassemia (devido à lise celular maciça que libera potássio intracelular na corrente sanguínea). A alcalose e a hipopotassemia não são achados típicos da fase aguda de ressuscitação.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:48.343Z"
+  },
+  {
+    "id": "AJUDA_82f64d8f-4399-4499-87eb-a321910a0943",
+    "originalId": "82f64d8f-4399-4499-87eb-a321910a0943",
+    "statement": "Menino de 4 anos é levado a uma unidade de pronto atendimento (UPA) devido a dor abdominal e constipação. A mãe relata que a criança vem apresentando constipação importante desde o desfralde, que foi realizado antes dos dois anos de idade, com evacuações a cada 4 dias, fezes em cíbalos, esforço evacuatório e dor. O exame físico revela massa palpável em fossa ilíaca esquerda e dor abdominal difusa. \n\nNesse caso, a conduta inicial adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar radiografia de abdome e coprológico funcional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicar desimpactação retal com lactulose e óleo mineral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "orientar sobre alimentação, ingesta hídrica e treinamento de toalete.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "indicar desimpactação fecal com enema retal ou polietilenoglicol por via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve um caso clássico de constipação intestinal funcional na infância, comum após o período de desfralde. Os critérios de Roma IV para o diagnóstico estão presentes, como a frequência reduzida de evacuações (a cada 4 dias), fezes endurecidas (cíbalos) e dor ao evacuar. O achado de massa palpável em fossa ilíaca esquerda é o ponto-chave da questão, pois indica a presença de um fecaloma (impactação fecal). Diante de um paciente com impactação, a conduta inicial obrigatória é realizar a desimpactação antes de iniciar qualquer terapia de manutenção.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O diagnóstico de constipação funcional é eminentemente clínico. A radiografia de abdome não deve ser solicitada de rotina, sendo reservada para casos em que o exame físico é inconclusivo ou em pacientes com suspeita de abuso sexual ou fobia de toque retal nos quais não se consegue palpar o abdome. O exame coprológico funcional não possui utilidade diagnóstica ou terapêutica no manejo da constipação funcional.\n\nAlternativa b) Incorreta. Embora o óleo mineral possa ser utilizado em crianças maiores, a lactulose é um laxante osmótico mais suave, indicado para a fase de manutenção e não para a desimpactação aguda, pois sua ação é lenta e menos potente para desfazer um fecaloma volumoso. Além disso, a via preferencial para desimpactação em casos graves envolve agentes mais robustos.\n\nAlternativa c) Incorreta. O treinamento de toalete, o aumento da ingestão hídrica e de fibras são pilares fundamentais do tratamento de manutenção a longo prazo. No entanto, essas medidas sozinhas são insuficientes para resolver uma impactação fecal já estabelecida. Tentar tratar a constipação com fibras sem antes desimpactar o paciente pode, inclusive, piorar a dor e a distensão abdominal.\n\nAlternativa d) Correta. Esta é a conduta padrão-ouro para pacientes com impactação fecal comprovada ao exame físico. A desimpactação deve ser a primeira etapa do tratamento e pode ser realizada tanto por via retal (enemas de fosfato ou soro fisiológico com glicerina) quanto por via oral, utilizando altas doses de polietilenoglicol (PEG 3350), tipicamente na dose de 1 a 1,5 g/kg/dia por 3 a 6 dias. O PEG oral é frequentemente preferido por ser eficaz e menos invasivo ou traumático para a criança do que os procedimentos retais.\n\nGabarito: Letra (d).",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Constipação Intestinal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:48.343Z"
+  },
+  {
+    "id": "AJUDA_82fae281-58e4-4a54-bf58-d176328c4b3b",
+    "originalId": "82fae281-58e4-4a54-bf58-d176328c4b3b",
+    "statement": "Em relação à hipertensão arterial, analise as afirmativas e assinale a alternativa correta.\n\nI. O hiperaldosteronismo primário é a causa de hipertensão mais passível de ser revertida.\nII. Um dos mecanismos mais importantes da hipertensão de origem parenquimatosa renal é a expansão de volume plasmático.\nIII. Betabloqueadores tradicionais, como atenolol e metoprolol, são considerados primeira linha no tratamento da hipertensão não complicada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as afirmativas I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmativas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da Afirmativa I:\nO hiperaldosteronismo primário (HAP) é atualmente reconhecido como a causa mais comum de hipertensão arterial secundária, afetando cerca de 5 a 10 por cento dos pacientes hipertensos. Ele é considerado uma das causas mais passíveis de reversão, pois o diagnóstico precoce permite intervenções que podem curar a hipertensão ou facilitar drasticamente o seu controle. Nos casos de adenoma produtor de aldosterona unilateral, a cirurgia (adrenalectomia) pode levar à cura completa. Já nos casos de hiperplasia adrenal bilateral, o tratamento farmacológico específico com antagonistas da aldosterona reverte o estado de hipertensão resistente. Portanto, a afirmativa está correta.\n\nAnálise da Afirmativa II:\nA hipertensão de origem parenquimatosa renal (doença renal crônica) possui uma fisiopatologia multifatorial, mas a retenção de sódio e água é o mecanismo central. A incapacidade do rim doente em excretar adequadamente a carga de sódio leva inevitavelmente à expansão do volume plasmático (hipervolemia), o que aumenta o débito cardíaco e eleva a pressão arterial. Outros mecanismos, como a ativação do sistema renina-angiotensina-aldosterona, também participam, mas a expansão volêmica é um dos pilares fundamentais. Portanto, a afirmativa está correta.\n\nAnálise da Afirmativa III:\nAs diretrizes modernas de hipertensão, incluindo a Diretriz Brasileira de Hipertensão Arterial e consensos internacionais, não posicionam mais os betabloqueadores tradicionais (como atenolol e metoprolol) como primeira linha para pacientes com hipertensão não complicada. Estudos de larga escala mostraram que essas drogas são menos eficazes na redução de desfechos importantes, como o acidente vascular cerebral (AVC), em comparação com diuréticos tiazídicos, bloqueadores dos canais de cálcio, IECA ou BRA. Os betabloqueadores são indicados como primeira linha apenas em situações específicas, como pacientes com insuficiência cardíaca, pós-infarto agudo do miocárdio ou certas arritmias. Portanto, a afirmativa está incorreta.\n\nConclusão:\nUma vez que as afirmativas I e II apresentam conceitos corretos sobre a epidemiologia e fisiopatologia das causas secundárias, e a afirmativa III discorda das recomendações terapêuticas atuais para hipertensão essencial, a alternativa correta é a letra (a).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:48.343Z"
+  },
+  {
+    "id": "AJUDA_831174d6-2193-4de8-a9c1-257395627692",
+    "originalId": "831174d6-2193-4de8-a9c1-257395627692",
+    "statement": "Recém-nascido (RN) termo, com idade gestacional de 40 semanas, nasceu de parto vaginal. Gestante não apresentou intercorrências durante o pré-natal. RN nasceu vigoroso, sem necessidade de medidas de reanimação neonatal, boletim de Apgar 9 e 9, no primeiro e quinto minuto de vida. Em alojamento conjunto, foi realizada avaliação propedêutica com sistema cardiorrespiratório normal e demais sistemas sem alterações identificadas. Paciente foi submetido ao teste de oximetria, com 30 horas de vida, conforme demonstrado nas imagens a seguir:\n\nAssinale a alternativa que apresenta a interpretação adequada sobre o resultado do teste neste paciente e a respectiva conduta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esta diferença deve ser consequência de hipoperfusão em membro inferior, por hipotermia, deve-se aquecer o paciente e repetir o teste após 1 hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A técnica do teste de oximetria não foi realizada de forma adequada, deve-se corrigir técnica e refazer o teste no período adequado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O teste de oximetria é considerado positivo, deve-se realizar investigação complementar com ecocardiograma transtorácico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Devido à dessaturação, deve-se iniciar oxigenioterapia e repetir o teste de oximetria 24 horas após suspensão, para excluir causa respiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Teste do Coraçãozinho (oximetria de pulso) é uma triagem neonatal fundamental para a detecção precoce de cardiopatias congênitas críticas (CCC). Para interpretar corretamente a questão, devemos aplicar o fluxograma preconizado pela Sociedade Brasileira de Pediatria (SBP) e pelo Ministério da Saúde.\n\nAnálise dos dados do paciente:\n1. Momento do teste: 30 horas de vida (adequado, pois deve ser feito entre 24 e 48 horas).\n2. Localização: mão direita (pré-ductal) e um dos pés (pós-ductal). As imagens confirmam o posicionamento correto.\n3. Valores obtidos: saturação pré-ductal de 94% e saturação pós-ductal de 89%.\n\nInterpretação do fluxograma:\n- Teste Negativo (Normal): saturação maior ou igual a 95% em ambas as medidas e diferença entre elas menor ou igual a 3%.\n- Teste Duvidoso: saturação entre 90% e 94% em qualquer um dos membros ou diferença maior ou igual a 4% entre os membros. Nesses casos, repete-se o teste em 1 hora.\n- Teste Positivo (Alterado): saturação menor que 90% em qualquer um dos membros (mão ou pé).\n\nNo caso apresentado, o recém-nascido apresenta uma saturação de 89% no membro inferior (pós-ductal). Como esse valor é inferior a 90%, o teste é considerado positivo imediatamente, sem necessidade de repetição.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a hipotermia possa causar má perfusão e interferir na leitura, o protocolo é rígido: saturação abaixo de 90% define um teste positivo. A conduta de aquecer e repetir em 1 hora seria aplicada se os valores estivessem na zona de dúvida (90-94%), o que não é o caso aqui (89% é positivo).\n\nb) Incorreta. As imagens demonstram que a técnica foi executada corretamente: o sensor está bem posicionado na mão direita (pré-ductal) e no pé (pós-ductal). O período de 30 horas de vida é o ideal para a triagem.\n\nc) Correta. Pelo fato de uma das aferições ser menor que 90% (neste caso, 89% no pé), o teste é positivo. A conduta mandatória diante de um teste de oximetria positivo é a realização de um ecocardiograma transtorácico em até 24 horas para descartar cardiopatias dependentes do canal arterial.\n\nd) Incorreta. A oxigenioterapia não é a conduta inicial para a triagem alterada e pode, inclusive, mascarar a cianose em algumas cardiopatias ou acelerar o fechamento do canal arterial em situações críticas. O objetivo do teste é o diagnóstico anatômico via ecocardiograma, não o tratamento sintomático respiratório imediato, já que o RN estava clinicamente bem (estável no alojamento conjunto).\n\nGabarito: Alternativa (c).",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Cuidados Neonatais",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/134f5a7415f78eb6d92cb8d9fd7f257f736b769cae04609f3d3ba99e52f9df0f.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_831174d6-2193-4de8-a9c1-257395627692_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/8e8361a56f519800fd8f90552d3a0381eb81a2e75d26d84422a2c0492ec4fcdb.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_831174d6-2193-4de8-a9c1-257395627692_img_1.webp"
+      },
+      {
+        "order": 2,
+        "originalUrl": "https://files.ajudamedico.com/files/92bebedc61355d782f98a9b71338211f6454a6744544b3c8a7de1247f0ae279c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_831174d6-2193-4de8-a9c1-257395627692_img_2.webp"
+      },
+      {
+        "order": 3,
+        "originalUrl": "https://files.ajudamedico.com/files/309e89e1d2e0ef839fcaa2965ee31903e1bfa9d1a583da84d520572a052c2d70.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_831174d6-2193-4de8-a9c1-257395627692_img_3.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:48.879Z"
+  },
+  {
+    "id": "AJUDA_8317a946-463d-4946-be91-364657c6bc77",
+    "originalId": "8317a946-463d-4946-be91-364657c6bc77",
+    "statement": "Paciente masculino, 55 anos, procurou atendimento para rastreamento de câncer de próstata com resultados de exames a seguir. Apresenta sintomas leves do trato urinário inferior com pontuação de 6/35 de acordo com o International Prostate Symptoms Score (I PSS). Refere antecedente de neoplasia de próstata na família. Exame digital demonstrou próstata com consistência fibroelástica, sem nódulos, indolor e peso estimado em 30g. Ressonância Magnética Multiparamétrica de próstata não demonstrou nódulos ou lesões suspeitas. Volume da próstata à ressonância de 21cm³.\n\nQual a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retorno em um ano com novo PSA.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Fluxometria urinária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alfa bloqueador associado a inibidor da 5 alfa redutase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Biópsia de próstata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso apresenta um homem de 55 anos em rastreamento de cancer de prostata com historia familiar positiva. Ao exame fisico, o toque retal e normal (prostata fibroelastica, sem nodulos, peso estimado em 30g). A tabela de exames laboratoriais complementares demonstra PSA total de 1,2 ng/ml, relacao PSA livre/total de 42%, densidade de PSA de 0,06 ng/ml/cm3 e urocultura negativa, todos dentro dos limites da normalidade. A Ressonancia Magnetica Multiparametrica nao evidenciou lesoes suspeitas e o escore IPSS de 6/35 classifica os sintomas urinarios como leves (faixa de 0 a 7). \n\nAlternativa a (Correta): O paciente apresenta rastreamento negativo para neoplasia prostatica, com toque retal normal, PSA e derivados dentro dos padroes de benignidade e ressonancia multiparametrica sem lesoes suspeitas. Como possui 55 anos e fator de risco familiar, a conduta recomendada e manter o seguimento com reavaliacao e dosagem de PSA em um ano.\n\nAlternativa b (Incorreta): A fluxometria urinaria e indicada para investigar queixas miccionais em pacientes com sintomas do trato urinario inferior de grau moderado a grave para avaliacao de obstrucao infravesical. Nao tem papel no rastreamento oncologico e nao se justifica em pacientes com sintomas leves (IPSS 6).\n\nAlternativa c (Incorreta): A associacao de alfa-bloqueador com inibidor da 5-alfa redutase e reservada para o tratamento da hiperplasia prostatica benigna sintomatica moderada a grave (IPSS maior que 7) associada a aumento prostatico significativo (geralmente acima de 30 a 40g). O paciente possui sintomas leves e prostata com volume normal (21 a 30g).\n\nAlternativa d (Incorreta): A biopsia prostatica e um metodo invasivo indicado diante de suspeita clinica de neoplasia (alteracoes no toque retal, elevacao do PSA ou presenca de lesoes PI-RADS 4 ou 5 na ressonancia). Com todos os parametros rigorosamente normais, o procedimento e contraindicado no momento.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/6b1936efc1fd035ab3492e68548ea8378bd5d64044cb0b3bd57bd64c955a3543.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_8317a946-463d-4946-be91-364657c6bc77_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:49.152Z"
+  },
+  {
+    "id": "AJUDA_8317e2c3-fe95-4d1d-9a9d-bb440bece317",
+    "originalId": "8317e2c3-fe95-4d1d-9a9d-bb440bece317",
+    "statement": "Pré-escolar, sexo masculino, de 1 ano e 11 meses de idade, com diagnóstico estabelecido de Síndrome de Down (trissomia livre do cromossomo 21), comparece à consulta pediátrica de rotina. Os pais relatam que ela tem acompanhamento regular com equipe multidisciplinar e um desenvolvimento ponderoestatural adequado, conforme as curvas específicas. Não há histórico de cardiopatia congênita, conforme ecocardiograma normal, realizado ao nascimento, nem de alterações hematológicas importantes em hemogramas anteriores. O cariótipo da criança e dos pais confirmou a trissomia livre e ausência de translocações. Os pais questionam quais exames de rotina são necessários e recomendados para o seu filho nessa fase da vida.\n\nCom base nas diretrizes mais atuais da Sociedade Brasileira de Pediatria, a conduta correta para essa paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "recomendar a realização anual de hemograma completo, dosagem de TSH e T4 livre, e avaliação odontológica semestral, sem necessidade de triagem para doença celíaca ou radiografia da coluna cervical, pois estas são indicadas apenas em idades mais avançadas ou mediante sintomas específicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "orientar a manutenção de avaliação anual da acuidade visual e auditiva, realizar anualmente TSH e T4 livre, e iniciar a triagem para doença celíaca com IgA total e anticorpo anti-endomísio, com repetição bianual se houver suspeita clínica, mas adiar a radiografia da coluna cervical para após os 5 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar anualmente hemograma completo, dosagem de TSH e T4 livre, e avaliações oftalmológica e auditiva. Além disso, devido à idade, realizar a triagem inicial para doença celíaca e investigar a instabilidade atlantoaxial com radiografia da coluna cervical em perfil, flexão e extensão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "considerar a realização de ecocardiograma a cada 5 anos, devido ao risco residual de cardiopatias tardias, e focar primariamente na estimulação do desenvolvimento neuropsicomotor, postergando os demais exames laboratoriais até a adolescência, a menos que surjam sintomas específicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "priorizar o encaminhamento para avaliação genética, a fim de determinar o risco de recorrência em futuras gestações, e aprimorar o aconselhamento dos pais sobre o manejo das manifestações dermatológicas e bucais, que são as principais preocupações nessa faixa etária e as únicas a exigir acompanhamento rotineiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o protocolo de acompanhamento de saúde da criança com Síndrome de Down (SD), seguindo as diretrizes da Sociedade Brasileira de Pediatria (SBP) e do Ministério da Saúde. O manejo do paciente com SD exige uma vigilância ativa de comorbidades que são mais prevalentes nessa população.\n\nAlternativa A: Incorreta. A triagem para doença celíaca e a investigação de instabilidade atlantoaxial não devem ser realizadas apenas em idades avançadas ou mediante sintomas. Segundo as diretrizes, a triagem para doença celíaca deve começar a partir dos 2 anos de idade (ou antes, se houver sintomas) e a radiografia de coluna cervical é recomendada rotineiramente entre os 3 e 5 anos de idade, mesmo em pacientes assintomáticos.\n\nAlternativa B: Incorreta. O erro principal reside no tempo sugerido para a radiografia da coluna cervical. A recomendação é que ela seja realizada entre 3 e 5 anos de idade, e não após os 5 anos. Além disso, a triagem para doença celíaca é um marco importante que se inicia aos 2 anos.\n\nAlternativa C: Correta. Esta alternativa reflete o plano de cuidados adequado para um paciente que está completando 2 anos. O hemograma deve ser solicitado anualmente devido ao risco aumentado de leucemias e para vigilância de anemia ferropriva. A dosagem de TSH e T4 livre é mandatória anualmente, dado que o hipotireoidismo (especialmente o subclínico) é muito frequente na SD. As avaliações oftalmológica e auditiva também devem ser anuais para garantir que o desenvolvimento neuropsicomotor não seja prejudicado por déficits sensoriais. A triagem para doença celíaca (anticorpos IgA) inicia-se aos 2 anos e a investigação de instabilidade atlantoaxial (radiografia de coluna cervical em perfil, flexão e extensão) é o exame de triagem recomendado na fase pré-escolar (entre 3 e 5 anos).\n\nAlternativa D: Incorreta. Se o ecocardiograma realizado ao nascimento foi normal e a criança não apresenta sintomas cardiovasculares ou sopros novos, não há recomendação de repetição rotineira a cada 5 anos. Além disso, postergar exames laboratoriais como TSH e hemograma até a adolescência é uma conduta perigosa e incorreta, pois essas patologias surgem frequentemente na infância.\n\nAlternativa E: Incorreta. Embora o aconselhamento genético seja importante, o diagnóstico de trissomia livre já foi estabelecido e o risco de recorrência para os pais já é conhecido como baixo (cerca de 1%). O foco das consultas de rotina não deve se limitar a aspectos genéticos, dermatológicos ou bucais, mas sim abranger a vigilância sistêmica (tireoide, sangue, visão, audição e coluna) que impacta diretamente a qualidade de vida e o desenvolvimento da criança.\n\nEm resumo, o acompanhamento da criança com Síndrome de Down é multidisciplinar e preventivo. Para um pré-escolar de quase 2 anos, a manutenção de exames anuais de tireoide, sangue e sentidos, somada ao início da triagem para doença celíaca e preparo para a avaliação da coluna cervical, constitui a conduta padrão-ouro.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:49.152Z"
+  },
+  {
+    "id": "AJUDA_83183637-9c85-486a-b0ce-8402f3c882ed",
+    "originalId": "83183637-9c85-486a-b0ce-8402f3c882ed",
+    "statement": "Uma criança de 4 meses comparece à unidade básica de saúde acompanhada pela mãe para atualização do calendário vacinal. A mãe relata que a criança já recebeu as vacinas aos 2 meses de idade conforme orientação do serviço. O enfermeiro verifica a caderneta de vacinação e observa registro das doses realizadas no segundo mês de vida. Indique o esquema vacinal preconizado pelo Calendário Nacional de Vacinação para esta faixa etária:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pentavalente, VIP, VORH, pneumocócica 10 valente e meningocócica C.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "BCG, hepatite B, pentavalente e VIP exclusivamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tríplice viral, hepatite A, VIP reforço e pneumocócica 10 reforço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "DTP reforço, tetra viral, varicela e febre amarela reforço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Meningocócica ACWY, HPV dose única e dupla adulto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O Calendário Nacional de Vacinação do Ministério da Saúde do Brasil estabelece que, aos 4 meses de vida, a criança deve receber a segunda dose das vacinas que compuseram o esquema de 2 meses de idade.\n\nAlternativa a: Esta é a alternativa correta. Aos 4 meses, o esquema vacinal preconizado consiste na aplicação da 2ª dose da vacina Pentavalente (que protege contra difteria, tétano, coqueluche, hepatite B e Haemophilus influenzae tipo b), 2ª dose da VIP (Vacina Inativada Poliomielite), 2ª dose da VORH (Vacina Oral de Rotavírus Humano) e 2ª dose da Pneumocócica 10-valente. Embora a vacina Meningocócica C seja administrada oficialmente aos 3 e aos 5 meses de idade no calendário nacional básico, esta alternativa é a única que contém as quatro vacinas essenciais do quarto mês, sendo a resposta esperada pela banca examinadora.\n\nAlternativa b: Incorreta. A vacina BCG e a dose isolada da Hepatite B são vacinas administradas ao nascimento. A Pentavalente e a VIP são iniciadas aos 2 meses, mas não representam o esquema completo ou exclusivo desta fase.\n\nAlternativa c: Incorreta. Este conjunto de vacinas pertence ao final do primeiro ano e início do segundo ano de vida. A Tríplice viral e o reforço da Pneumocócica 10 são realizados aos 12 meses. A Hepatite A e o reforço da VIP/VOP ocorrem aos 15 meses.\n\nAlternativa d: Incorreta. O primeiro reforço da DTP, a vacina Varicela e a Tetra viral (ou segunda dose da Tríplice viral) são indicados aos 15 meses. O reforço da Febre Amarela é realizado aos 4 anos de idade.\n\nAlternativa e: Incorreta. Estas vacinas são voltadas para outros grupos etários. A Meningocócica ACWY é destinada a adolescentes entre 11 e 14 anos. A vacina contra o HPV é aplicada em dose única para meninos e meninas de 9 a 14 anos. A vacina Dupla Adulto (dT) é utilizada para reforços a cada 10 anos em adultos ou em esquemas para gestantes.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:49.152Z"
+  },
+  {
+    "id": "AJUDA_83206310-a05e-470d-b5f3-752410186e4a",
+    "originalId": "83206310-a05e-470d-b5f3-752410186e4a",
+    "statement": "Crianças e adolescentes ao apresentarem quadro de miocardite viral, mostram-nos certas particularidades na sua etiologia e, ao mesmo tempo, têm seu diagnóstico subestimado.\n\nQual a principal etiologia das miocardites virais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Parvovírus B19.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Enterovírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coxsackievírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Herpes-vírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A etiologia das miocardites virais em pediatria passou por uma mudança importante de perfil epidemiológico com a introdução de técnicas de biologia molecular. Antigamente, o diagnóstico baseava-se predominantemente em sorologias e culturas, mas a utilização da técnica de PCR (Reação em Cadeia da Polimerase) em fragmentos de biópsia endomiocárdica permitiu identificar os agentes com maior precisão diagnóstica.\n\nAlternativa a: Esta é a alternativa correta. O Parvovírus B19 é, atualmente, o agente viral mais comumente isolado em biópsias de crianças e adolescentes com quadro de miocardite. Diversos estudos epidemiológicos modernos demonstram que ele superou os agentes clássicos em prevalência, sendo a resposta mais atualizada para exames de residência e concursos médicos.\n\nAlternativa b: Esta alternativa está incorreta. Os Enterovírus formam um grupo que inclui o Coxsackievírus e o Ecovírus. Embora tenham sido os principais agentes identificados no passado, os estudos contemporâneos mostram que sua incidência caiu para patamares inferiores aos do Parvovírus B19.\n\nAlternativa c: Esta alternativa está incorreta. O Coxsackievírus (especialmente o grupo B) é o agente etiológico clássico e historicamente mais associado à miocardite viral na literatura tradicional. No entanto, com o uso de métodos moleculares de detecção viral, observou-se que ele não é mais a causa principal na população pediátrica atual, apesar de ainda ser um patógeno importante.\n\nAlternativa d: Esta alternativa está incorreta. Os Herpes-vírus, especificamente o Herpes-vírus Humano tipo 6 (HHV-6), são causas frequentes e importantes de miocardite viral em crianças. Contudo, nas séries de casos e registros de biópsias, eles costumam aparecer como a segunda causa mais comum, ficando atrás do Parvovírus B19.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Cardiomiopatias",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:08:49.152Z"
+  }
+]

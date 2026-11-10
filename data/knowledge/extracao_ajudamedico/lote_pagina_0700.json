@@ -1,0 +1,520 @@
+[
+  {
+    "id": "AJUDA_c3deb64d-1136-4d9a-b875-64aaa559fd54",
+    "originalId": "c3deb64d-1136-4d9a-b875-64aaa559fd54",
+    "statement": "Um paciente de 7 anos encontra-se internado em UTI pediátrica devido a queimaduras que acometem 40% da superfície corpórea. Está intubado e em ventilação mecânica, sem necessidade de drogas vasoativas. Nas últimas 24 horas, apresentou piora ventilatória importante (radiografia de tórax a seguir). Não apresenta disfunção hemodinâmica grave; ecocardiograma funcional sem alterações.\n\nNo momento, encontra-se em modo assistido-controlado, pressão controlada, com os seguintes parâmetros: PEEP: 8 cmH2O; frequência respiratória: 30 irpm; pressão controlada (acima do PEEP): 18 cmH2O; tempo inspiratório: 0,8 s; FiO2: 100%; média de volume corrente: 7 mL/kg; pressão média das vias aéreas (Paw): 15 cmH2O. Gasometria arterial: pH: 7,24; pCO2: 60; pO2: 100; bic: 23; BE: –2; SatO2: 84%.\n\nCom base nos dados apresentados, assinale a alternativa que contenha o valor mais adequado do Índice de Oxigenação (IO) e a melhor conduta ventilatória a ser instituída nesse momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "IO: 15 – Aumentar PEEP para 10, tentar baixar PC para 15, objetivando volume corrente de 4 a 6 mL/kg por ciclo ventilatório, diminuir FR para 25; tolerar hipercapnia até pH de 7,2.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "IO: 18 – Aumentar PEEP para 12, tentar baixar PC para 15, objetivando volume corrente de 4 a 6 mL/kg por ciclo ventilatório; tolerar hipercapnia até pH de 7,15.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IO = 15 – Aumentar PEEP para 10, aumentar PC para 20, objetivando melhora do volume corrente e da hipercapnia; diminuir FR para 22.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "IO = 18 – Aumentar PEEP para 10, manter PC em 18, com alvo de volume corrente de 6 a 8 mL/kg por ciclo ventilatório; diminuir FR para 25.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve um paciente pediátrico com queimaduras extensas (40% da superfície corpórea) que evoluiu com insuficiência respiratória aguda grave. A radiografia de tórax revela infiltrado alveolar bilateral difuso, o que, somado ao contexto de resposta inflamatória sistêmica, fecha o diagnóstico de SDRA pediátrica (PARDS).\n\nCÁLCULO DO ÍNDICE DE OXIGENAÇÃO (IO)\n\nO IO é uma ferramenta fundamental para avaliar a gravidade da disfunção respiratória em pediatria. A fórmula é:\nIO = (Pressão Média de Vias Aéreas [Paw] x FiO2) / PaO2\n\nAplicando os dados do enunciado:\nPaw = 15\nFiO2 = 100 (utiliza-se o número inteiro, não decimal)\nPaO2 = 100\nIO = (15 x 100) / 100 = 15\n\nEste valor (IO entre 8 e 16) classifica a PARDS como moderada, exigindo uma estratégia de ventilação protetora.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): O IO calculado é 15. A conduta baseia-se nos princípios da ventilação protetora (diretrizes PALICC). O volume corrente (Vt) atual de 7 mL/kg está no limite superior; o ideal na SDRA é reduzi-lo para 4 a 6 mL/kg para evitar volutrauma. Para isso, reduz-se a pressão controlada (PC) de 18 para 15. O aumento da PEEP para 10 visa melhorar o recrutamento alveolar e a oxigenação, já que o paciente está com FiO2 de 100%. A redução da frequência respiratória e a aceitação de um pH de até 7,20 configuram a hipercapnia permissiva, priorizando a proteção pulmonar em vez da normalização dos gases sanguíneos.\n\nAlternativa B (INCORRETA): O valor do IO está calculado incorretamente como 18. Embora a estratégia de reduzir o volume corrente e tolerar a hipercapnia esteja correta conceitualmente para SDRA, o erro no cálculo inicial invalida a opção.\n\nAlternativa C (INCORRETA): Apesar de o IO estar correto (15), a conduta de aumentar a pressão controlada (PC) para 20 vai contra os princípios da ventilação protetora. Aumentar a PC elevaria ainda mais o volume corrente (que já está em 7 mL/kg), aumentando o risco de lesão induzida pelo ventilador (VILI).\n\nAlternativa D (INCORRETA): O valor do IO está calculado incorretamente como 18. Além disso, propõe manter o alvo de volume corrente entre 6 a 8 mL/kg, o que é considerado alto para um pulmão com complacência reduzida pela SDRA, onde o alvo deve ser mais restrito (4 a 6 mL/kg).\n\nASSOCIAÇÃO COM A IMAGEM\n\nA radiografia de tórax apresentada é típica de SDRA, exibindo o chamado \"pulmão branco\". Notam-se opacidades alveolares bilaterais e difusas, que não são explicadas por insuficiência cardíaca (conforme o ecocardiograma normal citado) ou sobrecarga hídrica isolada, confirmando a necessidade de uma estratégia ventilatória que minimize a pressão de distensão e o volume excessivo nos alvéolos remanescentes saudáveis (baby lung).",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndrome do Desconforto Respiratório Agudo",
+      "Emergências Pediátricas",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ef92de97c1382a637946589ccc5bb6bd31e28365c8596df696b03c87aec43b0f.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c3deb64d-1136-4d9a-b875-64aaa559fd54_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:00.096Z"
+  },
+  {
+    "id": "AJUDA_c3e45138-1e47-493d-a00c-0877c96c71ac",
+    "originalId": "c3e45138-1e47-493d-a00c-0877c96c71ac",
+    "statement": "Paciente feminina, de 40 anos, com diabetes melito (IMC de 35 kg/m2), referiu dor e inchaço na perna direita com evolução de 24 horas, associados a vermelhidão local e alguns episódios de mal-estar e calafrios. Ao exame clínico, constataram-se eritema e aumento da temperatura local; registraram-se dor ao toque na perna e dificuldade de deambular. Considerando o quadro clínico, qual a principal suspeita diagnóstica e qual a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tromboflebite venosa superficial - ecodoppler venoso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lipedema sintomático - suporte elástico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trombose venosa profunda - ecodoppler venoso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Erisipela - antibioticoterapia",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito apresenta uma paciente com fatores de risco importantes (diabetes melito e obesidade) que desenvolveu subitamente (24 horas) sinais de inflamação aguda em um membro inferior: dor, edema, eritema (vermelhidão) e calor local. A presença de sintomas sistêmicos, como mal-estar e calafrios, é um forte indicativo de um processo infeccioso agudo, direcionando o diagnóstico para uma infecção de pele e tecidos moles.\n\nAnálise das alternativas:\n\na) Incorreta. A tromboflebite venosa superficial manifesta-se geralmente como um cordão venoso endurecido, palpável, hiperemiado e doloroso. Embora cause inflamação local, raramente evolui com sintomas sistêmicos, como calafrios e mal-estar, de forma tão proeminente quanto a erisipela, e o tratamento inicial não seria apenas o ecodoppler, mas sim medidas anti-inflamatórias e, em casos específicos, anticoagulação.\n\nb) Incorreta. O lipedema é uma condição crônica, simétrica (acomete as duas pernas) e decorrente do acúmulo anormal de gordura, poupando habitualmente os pés. Não apresenta início súbito, calor local intenso, eritema agudo ou sintomas sistêmicos, como febre e calafrios.\n\nc) Incorreta. A trombose venosa profunda (TVP) é um diagnóstico diferencial importante em casos de dor e inchaço unilateral de início súbito. No entanto, o eritema na TVP costuma ser mais discreto ou cianótico, e a presença de calafrios e mal-estar é muito mais característica de quadros infecciosos (erisipela ou celulite). Embora o ecodoppler seja o exame de escolha para TVP, o quadro sistêmico da paciente torna a infecção a suspeita principal.\n\nd) Correta. A principal suspeita é erisipela (ou celulite, dada a sobreposição clínica). A erisipela é uma infecção cutânea que atinge a derme superficial e os linfáticos, manifestando-se com eritema vivo, edema, dor e calor, frequentemente precedida ou acompanhada de sintomas sistêmicos (febre, calafrios, mal-estar). Pacientes diabéticos e obesos têm maior predisposição devido a deficiências na microcirculação e maior chance de solução de continuidade na pele. A conduta inicial correta é a instituição de antibioticoterapia para cobrir os agentes mais comuns (geralmente estreptococos do grupo A).\n\nGabarito: Alternativa (d).",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Piodermites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:00.096Z"
+  },
+  {
+    "id": "AJUDA_c3e69037-8410-415d-a471-6b3ae3d025dd",
+    "originalId": "c3e69037-8410-415d-a471-6b3ae3d025dd",
+    "statement": "Paciente masculino, 45 anos, agricultor, morador de uma área rural no interior do Rio Grande do Sul. História Clínica: O paciente foi atendido em um hospital de campanha três semanas após uma enchente que devastou sua comunidade. Ele relata múltiplos problemas de saúde desde que foi deslocado para um abrigo temporário superlotado. Nos últimos sete dias, desenvolveu diarreia aquosa, associada a dores abdominais e vômitos. Além disso, descreve episódios de febre intermitente, cefaleia e dor retro-orbitária. O paciente também apresenta uma lesão puntiforme no pé direito, resultado de uma ferida causada por um pedaço de metal enferrujado durante a enchente. Relata, ainda, dores musculares e cãibras nos últimos dias. Sua esposa, que está no mesmo abrigo, desenvolveu sintomas respiratórios agudos. Ele expressa preocupação com a segurança das filhas adolescentes, temendo violência sexual no abrigo.\nExames Físicos: -PA: 90/60 mmHg -FC:105 bpm -Temperatura:38,4°C. Ao exame físico revela desidratação moderada, abdome doloroso à palpação difusa, lesão puntiforme com eritema e edema no pé direito, além de icterícia leve. História de Saúde: Paciente hipertenso, em uso irregular de medicamentos. Tem histórico de episódios anteriores de dengue, mas nunca apresentou hepatite ou outra doença infecciosa crônica.\n\nQual seria a abordagem terapêutica inicial mais apropriada para o paciente com diarreia aguda pós-enchente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de antibióticos de amplo espectro e hidratação intravenosa imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reposição agressiva de eletrólitos via oral, acompanhada de hidratação oral ou intravenosa, conforme necessário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tratamento antiparasitário empírico e dieta rica em fibras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrição de probióticos e antibióticos profiláticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve um paciente de 45 anos em um cenário de pós-desastre natural (enchente), apresentando um quadro de diarreia aguda associado a sinais de desidratação e instabilidade hemodinâmica (PA 90/60 mmHg e FC 105 bpm). Além da diarreia, há sinais que sugerem diagnósticos diferenciais importantes nesse contexto, como a leptospirose (icterícia, febre, mialgia e história de exposição a alagamento). No entanto, o enunciado foca especificamente na abordagem inicial para a diarreia aguda.\n\nFUNDAMENTAÇÃO DA CONDUTA\n\nA base do tratamento de qualquer diarreia aguda, especialmente quando há sinais de desidratação e perda de eletrólitos (como cãibras e hipotensão), é a reidratação. O objetivo primordial é restaurar o volume intravascular e corrigir os distúrbios hidroeletrolíticos para evitar o choque hipovolêmico e a insuficiência renal aguda.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) Incorreta: Embora o paciente apresente febre e uma lesão cutânea, a administração imediata de antibióticos de amplo espectro não é a primeira prioridade no manejo da diarreia aguda, a menos que haja suspeita clara de sepse de foco abdominal ou cutâneo. O foco inicial deve ser a estabilização hemodinâmica. O uso indiscriminado de antibióticos em quadros diarreicos pode, inclusive, prolongar o estado de portador de certas bactérias ou causar colite pseudomembranosa.\n\nAlternativa (b) Correta: Esta alternativa segue as diretrizes da Organização Mundial da Saúde (OMS) e do Ministério da Saúde para o manejo da desidratação. Pacientes com sinais de desidratação moderada a grave e hipotensão necessitam de reposição agressiva. A via preferencial inicial é a oral (Plano B), mas, diante de vômitos ou sinais de choque/instabilidade (como a PA 90/60 mmHg), a hidratação intravenosa (Plano C) torna-se mandatória. A reposição de eletrólitos é essencial para tratar as cãibras e prevenir arritmias.\n\nAlternativa (c) Incorreta: O tratamento antiparasitário empírico não é indicado na fase aguda de uma diarreia infecciosa, pois a maioria dos casos é viral ou bacteriana autolimitada. Além disso, uma dieta rica em fibras é contraindicada na fase aguda, pois as fibras aumentam o trânsito intestinal e podem piorar a diarreia.\n\nAlternativa (d) Incorreta: Probióticos podem ser usados como adjuvantes para reduzir o tempo de duração da diarreia em alguns casos, mas nunca como terapia inicial isolada ou prioritária. Antibióticos profiláticos não têm indicação no tratamento da diarreia aguda estabelecida.\n\nCONCLUSÃO\n\nA abordagem inicial correta foca na manutenção da vida por meio da estabilização hemodinâmica. Em um paciente com diarreia, vômitos, hipotensão e taquicardia, a reposição volêmica e eletrolítica é a conduta que deve preceder qualquer investigação diagnóstica adicional ou terapia medicamentosa específica.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses",
+      "Diarreia",
+      "Leptospirose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:00.096Z"
+  },
+  {
+    "id": "AJUDA_c3e73f01-e322-4dee-ba8b-20ccd3b49ddc",
+    "originalId": "c3e73f01-e322-4dee-ba8b-20ccd3b49ddc",
+    "statement": "Menina com 9 dias de vida, vem com a mãe à primeira consulta de Puericultura. Recém-nascida de 40 semanas, de parto cesáreo, com peso adequado para a idade gestacional, Apgar 9/9 (primeiro e quinto minuto), encaminhada para alojamento conjunto, após o nascimento. A mãe não relata intercorrências e mostra-se aparentemente apática durante toda a consulta, relatando estar amamentando por livre demanda e referindo dificuldades na amamentação. Relata, ainda, choro intenso e constante do bebê desde a alta hospitalar. O exame físico da lactente não mostra alterações, já em ganho ponderal. A mãe não apresenta alterações dos mamilos e as mamas parecem normais. Qual é a conduta a ser tomada, inicialmente, nessa situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observar a amamentação, encorajar a mãe e corrigir pega e posição adequadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Interromper a amamentação e prescrever fórmula infantil de partida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter a amamentação e fazer compressas mornas na mama para ajudar na descida do leite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter a amamentação e complementar com fórmula infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Encaminhar mãe para consultora de amamentação e prescrever fórmula de partida para complementação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\nEstamos diante de uma recém-nascida de 9 dias com desenvolvimento físico adequado e ganho de peso, o que indica que a transferência de leite está ocorrendo de forma eficaz, apesar das queixas. No entanto, o relato de dificuldade na amamentação, o choro intenso do bebê e a apatia materna sugerem problemas na técnica de amamentação ou necessidade de suporte emocional à puérpera.\n\nAlternativa (a) Correta:\nA observação direta da mamada é o padrão-ouro e a conduta inicial obrigatória em consultas de puericultura quando há queixas de amamentação. Isso permite ao médico avaliar a pega, o posicionamento e o vínculo entre mãe e filho. O encorajamento é fundamental, dado que a apatia materna pode sinalizar cansaço ou depressão pós-parto incipiente, e a correção da técnica pode resolver o choro do bebê, muitas vezes causado por aerofagia (ingestão de ar) em pegas incorretas.\n\nAlternativa (b) Incorreta:\nNão existe qualquer indicação médica para interromper o aleitamento materno neste cenário. O bebê está saudável, ganhando peso e a mãe não apresenta contraindicações formais à amamentação. A interrupção precoce priva o lactente dos benefícios imunológicos e nutricionais do leite humano.\n\nAlternativa (c) Incorreta:\nO uso de compressas mornas é contraindicado na rotina da amamentação. O calor provoca vasodilatação, o que pode aumentar o edema e a congestão mamária, piorando o desconforto ou dificultando a pega. Se houver necessidade de facilitar a saída do leite, o manejo correto envolve massagens circulares e ordenha manual da aréola.\n\nAlternativa (d) Incorreta:\nA complementação com fórmula infantil não é necessária porque a criança já apresenta ganho ponderal satisfatório com o leite materno exclusivo. A introdução de fórmulas sem indicação clínica precisa leva ao desmame precoce, pois o bebê pode perder o interesse no seio e a produção de leite materno tende a diminuir devido ao menor estímulo de sucção.\n\nAlternativa (e) Incorreta:\nEmbora o auxílio de uma consultora possa ser benéfico em casos complexos, o erro principal da alternativa é a prescrição de fórmula para complementação. Como o exame físico da lactente é normal e o peso está em ascensão, a complementação é iatrogênica. O médico assistente deve ser capaz de realizar a avaliação inicial e o manejo básico da amamentação na própria consulta.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:00.096Z"
+  },
+  {
+    "id": "AJUDA_c3f60f13-5384-4a85-bad0-f353d8c14b5f",
+    "originalId": "c3f60f13-5384-4a85-bad0-f353d8c14b5f",
+    "statement": "A característica clínica dos guinchos respiratórios (\"whoop\") na coqueluche em crianças está relacionada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A contrações espasmódicas da musculatura diafragmática durante o esforço respiratório prolongado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A episódios de tosse paroxística seguidos de inspiração ruidosa devido à obstrução parcial das vias aéreas superiores.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ao broncoespasmo associado a hipersecreção mucosa, resultando em sons estridentes contínuos durante a expiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A alterações estruturais das vias aéreas inferiores com colapso dinâmico durante o ciclo respiratório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A presença de edema laríngeo intenso associado a epiglotite bacteriana concomitante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nA coqueluche, causada pela bactéria *Bordetella pertussis*, é caracterizada por três fases clínicas: catarral, paroxística e de convalescença. O \"guincho\" (*whoop*) é o sinal patognomônico da fase paroxística e sua compreensão fisiopatológica é fundamental para o diagnóstico clínico.\n\nAlternativa A: Incorreta. Embora o diafragma e os músculos acessórios participem do esforço respiratório intenso, o som característico do guincho não é produzido pela contração muscular em si, mas sim pela passagem forçada do ar através das vias aéreas superiores estreitadas.\n\nAlternativa B: Correta. Durante a fase paroxística, o paciente apresenta sucessivas tosses rápidas e curtas em uma única expiração, o que leva ao esvaziamento pulmonar quase completo. Ao final dessa crise de tosse, ocorre uma inspiração profunda, súbita e forçada. Como há um estreitamento funcional ou inflamatório da glote/vias aéreas superiores, a passagem do ar por esse espaço reduzido gera o ruído inspiratório agudo conhecido como guincho.\n\nAlternativa C: Incorreta. O broncoespasmo e a hipersecreção são característicos de doenças obstrutivas das vias inferiores, como a asma ou a bronquiolite. No guincho da coqueluche, o som é classicamente inspiratório, enquanto o sibilo do broncoespasmo é predominantemente expiratório.\n\nAlternativa D: Incorreta. A coqueluche não é definida por alterações estruturais permanentes ou pelo colapso dinâmico das vias inferiores (característico de condições como a traqueomalácia), mas sim por um processo infeccioso e toxêmico que afeta o epitélio respiratório.\n\nAlternativa E: Incorreta. O edema laríngeo intenso e a epiglotite são emergências médicas distintas, geralmente causadas por outros agentes (como o *Haemophilus influenzae* tipo b). Embora causem estridor, o mecanismo e o contexto clínico (febre alta, odinofagia, sialorreia) diferem totalmente da tosse paroxística da coqueluche.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Coqueluche"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:00.096Z"
+  },
+  {
+    "id": "AJUDA_c4076642-3945-474d-b569-4ce135c7d4b3",
+    "originalId": "c4076642-3945-474d-b569-4ce135c7d4b3",
+    "statement": "Um paciente com 36 anos de idade apresentou sintomas de redução da necessidade do sono, sensação de grandiosidade, aumento da libido e aceleração dos pensamentos. Apresentou tais sintomas por 10 dias consecutivos, 5 vezes no último ano. Sobre a afecção desse paciente, é correto afirmar que se trata de provável diagnóstico de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ciclotimia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Distimia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno Afetivo Bipolar, sendo a medicação mais indicada a Lamotrigina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno Afetivo Bipolar, sendo a medicação mais indicada o Ácido Valproico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Esquizofrenia, sendo a medicação mais indicada a Clozapina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico: O paciente apresenta sintomas clássicos de um episódio de mania ou hipomania: redução da necessidade de sono, grandiosidade, aumento da libido e taquipsiquismo (aceleração dos pensamentos). Como os sintomas duraram 10 dias, preenchem o critério temporal para um Episódio Maníaco (mínimo de 7 dias) ou Hipomaníaco (mínimo de 4 dias). A ocorrência de 5 episódios em um único ano caracteriza o que chamamos de Ciclagem Rápida (definida por 4 ou mais episódios de humor em 12 meses).\n\nAlternativa a) Incorreta. A ciclotimia é um transtorno crônico, com duração mínima de 2 anos, caracterizado por períodos com sintomas hipomaníacos e períodos com sintomas depressivos que não fecham critérios completos para um episódio maníaco ou depressivo maior. O relato de sintomas francos e recorrentes em um ano direciona para o Transtorno Bipolar.\n\nAlternativa b) Incorreta. A distimia (Transtorno Depressivo Persistente) caracteriza-se por um humor depressivo crônico, de intensidade leve a moderada, por pelo menos 2 anos. O quadro do paciente é de exaltação do humor e aumento de energia, o oposto da distimia.\n\nAlternativa c) Incorreta. Embora o diagnóstico de Transtorno Afetivo Bipolar esteja correto, a lamotrigina não é a medicação de escolha para o tratamento de episódios de mania ou para o controle de estados de agitação e aceleração. A lamotrigina tem sua principal indicação na prevenção de episódios depressivos no Transtorno Bipolar e possui pouca eficácia no tratamento da mania aguda.\n\nAlternativa d) Correta. O paciente apresenta critérios para Transtorno Afetivo Bipolar. No caso de pacientes com \"Ciclagem Rápida\" (como os 5 episódios relatados em um ano), os estabilizadores de humor, como o ácido valproico (valproato de sódio), costumam apresentar uma resposta terapêutica superior ao lítio. O ácido valproico é uma das medicações de primeira linha para episódios maníacos e para o perfil de ciclagem rápida.\n\nAlternativa e) Incorreta. A esquizofrenia é um transtorno psicótico caracterizado por delírios, alucinações, desorganização do pensamento e sintomas negativos, com duração mínima de 6 meses e prejuízo funcional significativo. O quadro descrito é puramente afetivo (humor e energia), sem evidências de sintomas psicóticos dissociados do humor, o que exclui o diagnóstico de esquizofrenia. A clozapina é utilizada para esquizofrenia refratária.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Transtornos do Humor",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:00.096Z"
+  },
+  {
+    "id": "AJUDA_c40dfb3a-f1b2-490c-a8fb-889fb1a00e28",
+    "originalId": "c40dfb3a-f1b2-490c-a8fb-889fb1a00e28",
+    "statement": "Uma paciente com transtorno por uso de álcool chega a um Centro de Atenção Psicossocial (CAPS) solicitando apoio para ficar abstinente. Cristiane tem 42 anos, é mãe, está desempregada, faz uso de álcool desde os 16 anos; ela conta que aumentou o consumo perto dos 35 anos e, desde então, faz uso diariamente e ao longo de todo o dia, com maior consumo à noite. Faz 10 dias que vem diminuindo, estando há 2 dias sem beber, mas não está se sentido bem; tem insônia, náusea e inquietação, e por isso buscou ajuda. Nega febre, suor, tremor e sintomas psicóticos. É a terceira vez que tenta parar. Nas outras vezes, tentou sozinha e não conseguiu, mas não teve problemas graves de saúde. Não costuma ir à sua UBS de referência e tem receio do que as pessoas podem falar. Na avaliação, a equipe usou o Alcohol Use Disorders Identification Test (AUDIT). O escore da paciente nesse teste foi de 24 pontos, indicando provável transtorno por uso de álcool de moderado a grave. Adote: CAGE - sigla formada pelas iniciais em inglês das palavras-chaves das perguntas de um instrumento utilizado para avaliar uso de álcool (cutdown, annoyed, guilty e eyeopened). Qual das alternativas a seguir descreve a conduta correta do CAPS frente ao caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplicar também o CAGE, solicitar exames e iniciar o tratamento com inibidores da recaptação de serotonina associados a benzodiazepínicos, além de encaminhar para Unidade Básica de Saúde para demais cuidados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve acolher, ouvir a história da paciente e encaminhá-la para cuidado longitudinal na Atenção Primária à Saúde (APS), pois ela deve entrar no sistema de saúde por intermédio da APS e, se necessário, ser encaminhada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reconhecer a gravidade do caso pelos sinais de abstinência e, a partir do diagnóstico, encaminhar para serviço de emergência para atendimento inicial, organizando internação breve para tratamento posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve fazer observação por algumas horas, avaliar rede de apoio, introduzir Diazepam de até 10 mg de 8/8 horas e tiamina 100 mg IM por 5 dias, orientar sinais de alerta e marcar retorno breve para reavaliação do caso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro de Transtorno por Uso de Álcool (TUA) grave, evidenciado pelo escore 24 no AUDIT e pelo histórico de consumo diário prolongado. Ela está no segundo dia de abstinência, apresentando sintomas de Síndrome de Abstinência Alcoólica (SAA) de intensidade leve a moderada (insônia, náusea e inquietação), sem sinais de complicações graves como convulsões, delirium tremens ou instabilidade autonômica.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ INCORRETA:\nO questionário CAGE é uma ferramenta de rastreio rápido; uma vez que o AUDIT (mais detalhado) já foi aplicado e confirmou a gravidade, o CAGE torna-se redundante. Além disso, os inibidores da recaptação de serotonina (ISRS) não possuem indicação no tratamento da síndrome de abstinência aguda. O foco farmacológico deve ser a modulação do sistema GABAérgico e a reposição vitamínica.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ INCORRETA:\nEmbora a Atenção Primária à Saúde (APS) seja a porta de entrada preferencial, o CAPS AD (Álcool e Drogas) é um serviço de \"porta aberta\" e faz parte da Rede de Atenção Psicossocial (RAPS). Encaminhá-la imediatamente para a UBS, sem intervir nos sintomas de abstinência e ignorando o medo da paciente em relação ao estigma local, representa uma falha no acolhimento e na resolutividade do cuidado especializado.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ INCORRETA:\nA paciente não apresenta critérios de gravidade que exijam obrigatoriamente um serviço de emergência ou internação hospitalar imediata. Ela nega febre, tremores e sintomas psicóticos. Casos de abstinência leve a moderada podem e devem ser manejados de forma ambulatorial ou em observação no CAPS, desde que haja rede de apoio e monitoramento próximo.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA:\nEsta alternativa contempla as diretrizes clínicas para o manejo da abstinência ambulatorial. O Diazepam (um benzodiazepínico) é a droga de escolha para tratar os sintomas de abstinência e prevenir a progressão para quadros graves (como convulsões). A Tiamina (Vitamina B1) é indispensável em pacientes com uso crônico de álcool para prevenir a Encefalopatia de Wernicke, uma complicação neurológica grave. A observação inicial, a avaliação da rede de apoio familiar e o agendamento de retorno breve são condutas de segurança fundamentais para garantir que a desintoxicação ocorra sem intercorrências fora do hospital.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Social e Reforma Psiquiátrica",
+      "Dependência Química",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:00.096Z"
+  },
+  {
+    "id": "AJUDA_c41d0a81-076a-4362-b36f-57ed98b4195c",
+    "originalId": "c41d0a81-076a-4362-b36f-57ed98b4195c",
+    "statement": "Yasmin, paciente trans feminino, vai à sua primeira consulta na UBS para solicitar seguimento do seu processo de hormonização, uma vez que o iniciou de forma independente conforme orientação de suas colegas que se encontram neste mesmo processo. Ouviu que no município existe um ambulatório de acompanhamento de população trans e que gostaria de ser encaminhada para o serviço. A médica de família e comunidade que realiza o atendimento explica para a paciente qual seu papel no acompanhamento de suas necessidades de saúde e dessa demanda em especial e que mesmo que esteja realizando o seguimento em outro serviço é papel da Atenção Primária à Saúde (APS) a articulação entre os serviços da rede e das ações de saúde de forma sincronizada. Neste caso, o atributo da APS que está sendo cumprido é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Equidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coordenação do cuidado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Integralidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Universalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Longitudinalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda os atributos da Atenção Primária à Saúde (APS), que são fundamentais para a organização do trabalho na Estratégia Saúde da Família e temas recorrentes em provas de residência. O enunciado descreve uma situação em que a médica ressalta a importância de articular o cuidado entre a Unidade Básica de Saúde e o serviço especializado (ambulatório trans), garantindo que as ações de saúde ocorram de forma sincronizada.\n\nAnálise das alternativas:\n\na) Incorreta. A Equidade é um princípio doutrinário do SUS que prega oferecer mais a quem mais precisa, visando diminuir as desigualdades. Embora o atendimento à população trans exija um olhar de equidade para garantir o acesso e o respeito às suas especificidades, o texto da questão foca especificamente na articulação e sincronia entre diferentes pontos da rede de saúde, o que define outro atributo.\n\nb) Correta. A Coordenação do Cuidado é o atributo da APS que garante a continuidade da atenção dentro da rede de serviços. Ela implica que o médico de família deve acompanhar o paciente mesmo quando este é encaminhado a especialistas ou outros níveis de atenção. O papel do coordenador é organizar o fluxo de informações, evitar a duplicidade de exames e garantir que o cuidado seja harmônico, exatamente como descrito pela médica ao falar em articulação entre os serviços da rede de forma sincronizada.\n\nc) Incorreta. A Integralidade pressupõe que a equipe de saúde deve perceber o indivíduo como um todo, abordando suas necessidades biológicas, psicológicas e sociais, além de garantir acesso a todos os níveis de prevenção e tratamento. Embora o acompanhamento trans envolva a integralidade, o foco do enunciado está na conexão entre os serviços (intersetorialidade e rede), e não na abrangência das ações de saúde de Yasmin.\n\nd) Incorreta. A Universalidade é um princípio do SUS que garante que todo cidadão tem direito ao acesso aos serviços de saúde, sem distinção ou barreiras. No caso, Yasmin já está acessando o serviço, e a discussão gira em torno de como esse cuidado será organizado na rede, e não sobre o seu direito de entrar no sistema.\n\ne) Incorreta. A Longitudinalidade refere-se ao acompanhamento do paciente ao longo do tempo pela mesma equipe ou profissional, criando um vínculo de confiança que facilita o diagnóstico e o tratamento. Embora a médica de família mencione que continuará acompanhando Yasmin, o destaque dado à sincronização e articulação com o serviço de referência aponta diretamente para a Coordenação do Cuidado, e não apenas para a manutenção do vínculo temporal.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:00.096Z"
+  },
+  {
+    "id": "AJUDA_c41e1ca8-e3a6-4006-9da9-c9392cb3aefd",
+    "originalId": "c41e1ca8-e3a6-4006-9da9-c9392cb3aefd",
+    "statement": "Em uma enfermaria de pediatria, a médica acompanha um lactente de 8 meses, internado há 5 dias por bronquiolite. A mãe, visivelmente exausta e angustiada, relata que se sente “invisível” para a equipe, que apenas examina a criança e passa orientações rápidas sem ouvir suas preocupações. \nA ação que a médica poderia adotar, alinhada aos princípios da Política Nacional de Humanização (PNH), para melhor acolher essa mãe seria",
+    "options": [
+      {
+        "id": "A",
+        "text": "explicar detalhadamente a ela, mais uma vez, a fisiopatologia da bronquiolite para que entenda melhor o tratamento que está sendo dispendido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "garantir que ela tenha acesso a local para descansar, afastando-a temporariamente do leito para reduzir seu estresse.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar à equipe de enfermagem que administre um sedativo leve para a criança, garantindo que ela durma, e a mãe possa descansar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "informá-la que o protocolo do hospital é eficiente e que o bem-estar da criança é a prioridade máxima da equipe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ouvir ativamente as suas preocupações, validar seus sentimentos e, com seu consentimento, compartilhar essas percepções com a equipe multiprofissional.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa a: Incorreta. Focar em termos técnicos e na fisiopatologia da doença reduz o atendimento à dimensão puramente biológica, ignorando a demanda subjetiva e emocional da mãe, que se sente invisível e não ouvida.\n\nAlternativa b: Incorreta. Afastar a mãe do leito pode aumentar ainda mais a sua angústia e vai de encontro ao direito de permanência contínua do acompanhante assegurado pelo Estatuto da Criança e do Adolescente (ECA). A humanização busca integrar a família no processo de cuidado, não afastá-la.\n\nAlternativa c: Incorreta. Administrar sedativo a um lactente sem indicação clínica é uma conduta antiética, tecnicamente incorreta e com risco de complicações respiratórias, principalmente em vigência de bronquiolite.\n\nAlternativa d: Incorreta. Adotar uma postura institucional e tecnicista, justificando-se por meio de protocolos, desqualifica a queixa materna e agrava a sensação de distanciamento e frieza na relação equipe-família.\n\nAlternativa e: Correta. Esta opção reflete diretamente as diretrizes da Política Nacional de Humanização (PNH), em especial o Acolhimento e a Clínica Ampliada. Praticar a escuta qualificada, validar o sofrimento da acompanhante e integrá-la à equipe multiprofissional promove o cuidado centrado na pessoa e a corresponsabilização na assistência à saúde.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Bronquiolite",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:00.096Z"
+  },
+  {
+    "id": "AJUDA_c4211661-52ec-47d5-8635-c8f145fb9990",
+    "originalId": "c4211661-52ec-47d5-8635-c8f145fb9990",
+    "statement": "Na crise adrenal do lactente em choque séptico, há evidência de hiponatremia e hiperpotassemia. Em relação às complicações graves, a parada cardiorrespiratória associada nesse contexto tem como causa mais plausível:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A desidratação neuronal da hiponatremia, gerando morte neuronal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O edema cerebral da hiperpotassemia, gerando herniação uncal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A fibrilação ventricular da hiperpotassemia, gerando ausência de pulso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A hipoxemia celular pelo deslocamento da curva de dissociação da hemoglobina para a direita, pela hiponatremia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A crise adrenal aguda em lactentes cursa com deficiência de glicocorticoides e mineralocorticoides (aldosterona). A carência de aldosterona impede a reabsorção de sódio e a excreção de potássio pelos túbulos renais, culminando no quadro clássico de hiponatremia e hiperpotassemia.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A hiponatremia aguda reduz a osmolaridade plasmática, gerando um gradiente osmótico que favorece a entrada de água nas células do sistema nervoso central, resultando em edema cerebral, e não em desidratação neuronal. A desidratação neuronal ocorre na hipernatremia grave.\n\nAlternativa b: Incorreta. O edema cerebral e o risco de herniação são complicações associadas à hiponatremia grave e sua rápida instalação. A hiperpotassemia tem repercussão predominantemente no sistema de condução cardíaco e na junção neuromuscular, não causando edema cerebral.\n\nAlternativa c: Correta. O potássio é o principal íon responsável pela manutenção do potencial de repouso da membrana dos cardiomiócitos. Em níveis muito elevados, a hiperpotassemia causa despolarização persistente da membrana, lentificação da condução atrioventricular e intraventricular, podendo evoluir rapidamente para arritmias ventriculares fatais, como taquicardia/fibrilação ventricular ou assistolia, que são as principais causas de parada cardiorrespiratória nesse cenário.\n\nAlternativa d: Incorreta. O deslocamento da curva de dissociação da oxi-hemoglobina para a direita é mediado pelo aumento da temperatura, aumento da pCO2, aumento do 2,3-DPG e acidose (queda do pH), não guardando relação fisiopatológica direta com a hiponatremia.\n\nPortanto, a hiperpotassemia grave e a subsequente fibrilação ventricular constituem o mecanismo mais imediato e plausível para a parada cardiorrespiratória na crise adrenal.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Distúrbios do Potássio",
+      "Hiperplasia Adrenal Congênita",
+      "Parada Cardiorrespiratória (PCR)",
+      "Adrenal",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:45:00.096Z"
+  }
+]

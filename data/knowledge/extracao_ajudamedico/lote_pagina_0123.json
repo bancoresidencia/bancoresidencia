@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_21e36f05-8f6f-4187-a14b-6731e114f32d",
+    "originalId": "21e36f05-8f6f-4187-a14b-6731e114f32d",
+    "statement": "Lactente, sexo masculino, com 50 dias de vida, é levado à Unidade Básica de Saúde e, durante o exame físico, nota-se, à palpação, linfonodo axilar à direita, de cerca de 1,5 a 2 cm, sem sinais flogísticos. O achado não foi percebido pela mãe, a qual refere que a criança está sem febre. Não se acham lesões de pele na criança, exceto a cicatriz da vacina BCG e que está evoluindo de forma satisfatória. A criança está em aleitamento materno exclusivo, e o ganho ponderal aferido na consulta é de 26 g/dia.\nConsiderando o diagnóstico mais provável, a conduta adequada a ser tomada para essa criança é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar tratamento com isoniazida até regressão do linfonodo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "manter conduta expectante, sem necessidade de investigação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "solicitar teste tuberculínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar punção-biópsia do linfonodo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realizar tratamento para tuberculose, sem o uso da pirazinamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um caso clássico de reação vacinal à BCG (linfadenopatia regional não supurada). O lactente apresenta um linfonodo axilar à direita (mesmo lado da aplicação da vacina), com tamanho entre 1,5 e 2 cm, sem sinais inflamatórios (flogísticos), sem febre e com ótimo estado geral e desenvolvimento ponderal.\n\nDe acordo com o Manual de Vigilância Epidemiológica de Eventos Adversos Pós-Vacinação do Ministério da Saúde e as orientações da Sociedade Brasileira de Pediatria, a presença de linfonodo axilar, supraclavicular ou infraclavicular, não supurado, com tamanho de até 3 cm, é considerada uma reação esperada à vacina BCG.\n\nAnálise das alternativas:\n\na) Incorreta. O tratamento com isoniazida só estaria indicado se o linfonodo fosse supurado (com flutuação ou fístula) ou se apresentasse um tamanho superior a 3 cm. Como o linfonodo tem no máximo 2 cm e não apresenta sinais de supuração, a medicação não é necessária.\n\nb) Correta. Diante de uma linfadenopatia regional não supurada menor que 3 cm após a vacina BCG, a conduta correta é apenas a observação clínica (conduta expectante). Na grande maioria dos casos, ocorre a regressão espontânea do linfonodo sem necessidade de intervenções médicas ou farmacológicas.\n\nc) Incorreta. O teste tuberculínico (PPD) não tem indicação neste cenário. Ele não ajudaria a diferenciar a reação vacinal de uma infecção tuberculosa ativa nessa idade, além do fato de a própria vacina BCG poder positivar o teste em crianças pequenas. O diagnóstico aqui é clínico, baseado na história vacinal e no exame físico.\n\nd) Incorreta. Procedimentos invasivos como punção ou biópsia são desnecessários e contraindicados para reações vacinais comuns e benignas. A biópsia seria reservada apenas para casos de dúvida diagnóstica importante ou suspeita de neoplasias, o que não condiz com o quadro clínico de um lactente saudável com cicatriz de BCG em evolução normal.\n\ne) Incorreta. O esquema de tratamento para tuberculose (com ou sem pirazinamida) é indicado para a tuberculose-doença propriamente dita. O quadro descrito é um evento adverso local/regional da vacina, e não uma tuberculose-doença. Além disso, o *M. bovis* (cepa da BCG) é naturalmente resistente à pirazinamida, mas o tratamento medicamentoso sequer está indicado para este paciente.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações",
+      "Tuberculose na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:32.030Z"
+  },
+  {
+    "id": "AJUDA_21e42e5f-0af5-47c8-ba17-34ef2617960c",
+    "originalId": "21e42e5f-0af5-47c8-ba17-34ef2617960c",
+    "statement": "Lactente, 8 meses de vida, é trazida ao pronto-socorro com história de febre de 39 °C há 2 dias, irritabilidade e recusa alimentar. Mãe nega sintomas respiratórios, gastrointestinais ou cutâneos. Ao exame físico, apresenta-se febril (38,8 °C), irritada, sem sinais de desidratação. Ausculta cardiopulmonar normal, abdome flácido e indolor, sem visceromegalias. Exame de urina tipo I mostra: leucócitos > 100/campo, nitrito positivo, esterase leucocitária positiva. Urocultura em andamento. Considerando esse quadro clínico e as diretrizes atuais para manejo de infecção do trato urinário em pediatria, assinale a alternativa que apresenta, corretamente, a conduta mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aguardar o resultado da urocultura antes de iniciar qualquer tratamento antimicrobiano, mantendo apenas medidas de suporte e controle da febre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hospitalizar para antibioticoterapia endovenosa com ceftriaxona por 10 a 14 dias, considerando tratar-se de pielonefrite aguda em lactente febril.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar antibioticoterapia oral com sulfametoxazol-trimetoprima por 7 dias e aguardar o resultado da urocultura para eventual ajuste terapêutico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar cefalexina oral por 5 dias e solicitar ultrassonografia de vias urinárias de urgência para investigação de malformações congênitas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prescrever nitrofurantoína oral por 3 dias, uma vez que o exame de urina sugere cistite não complicada em criança previamente hígida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve um lactente de 8 meses com febre alta (39 graus) sem foco aparente, associada a sintomas sistêmicos como irritabilidade e recusa alimentar. O exame de urina (Urina Tipo I) é fortemente sugestivo de infecção do trato urinário (ITU) devido à presença de nitrito positivo, esterase leucocitária e leucocitúria maciça. Em lactentes febris, a ITU deve ser sempre considerada como pielonefrite (infecção alta) até que se prove o contrário, exigindo tratamento imediato para evitar cicatrizes renais permanentes.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): Em lactentes febris com sedimento urinário alterado, o tratamento deve ser iniciado precocemente. Aguardar o resultado da urocultura (que leva de 48 a 72 horas) aumenta significativamente o risco de lesão do parênquima renal e evolução para sepse.\n\nAlternativa B (Correta): Esta é a conduta preconizada para lactentes com sinais de comprometimento sistêmico. A presença de febre alta, irritabilidade e recusa alimentar em um bebê de 8 meses sugere pielonefrite aguda. A internação hospitalar para início de antibioticoterapia endovenosa (como a ceftriaxona) é indicada para garantir a hidratação, a aceitação medicamentosa e monitorar a resposta clínica nas primeiras 24-48 horas. O tempo de tratamento para pielonefrite em pediatria varia geralmente de 10 a 14 dias.\n\nAlternativa C (Incorreta): O sulfametoxazol-trimetoprima apresenta elevadas taxas de resistência bacteriana (especialmente da E. coli) em diversas regiões, não sendo a primeira escolha empírica para pielonefrite em lactentes. Além disso, a via oral pode ser arriscada em um paciente com recusa alimentar e irritabilidade importante.\n\nAlternativa D (Incorreta): Embora a cefalexina seja uma opção para ITUs, o tempo de 5 dias é insuficiente para o tratamento de uma pielonefrite (que exige pelo menos 7 a 14 dias). Quanto à ultrassonografia, ela faz parte da investigação de imagem após o primeiro episódio de ITU febril em lactentes, mas a prioridade imediata é a estabilização clínica e o início do antibiótico correto, não sendo necessariamente um exame de urgência absoluta no primeiro momento, a menos que haja suspeita de obstrução ou abscesso.\n\nAlternativa E (Incorreta): A nitrofurantoína é um antisséptico urinário que atinge concentrações terapêuticas apenas na bexiga. Ela é contraindicada em casos de febre ou suspeita de pielonefrite, pois não alcança níveis adequados no tecido renal e na corrente sanguínea. Além disso, 3 dias é um tempo terapêutico curto demais para a faixa etária e gravidade do quadro.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:32.030Z"
+  },
+  {
+    "id": "AJUDA_21e6f4fb-7b47-4022-9d78-b5d9db02f83a",
+    "originalId": "21e6f4fb-7b47-4022-9d78-b5d9db02f83a",
+    "statement": "Durante o atendimento em sala de parto, nasce um recém-nascido de 37 semanas e 4 dias, após trabalho de parto complicado por prolapso de cordão umbilical. O bebê chega ao berço aquecido em apneia, e os passos iniciais da reanimação são realizados. Após 30 segundos, o recém-nascido permanece em apneia, com frequência cardíaca de 80 bpm. Foi iniciada ventilação com balão e máscara, e o oxímetro de pulso pré-ductal foi colocado, mas ainda sem leitura disponível. Considerando as diretrizes de reanimação neonatal atualizadas (AHA/AAP 2025), qual deve ser a próxima conduta imediata?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar massagem cardíaca sincronizada, pois a frequência cardíaca permanece abaixo de 100 bpm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Verificar se a técnica de ventilação está correta quanto à adaptação da máscara à face do recém-nascido, permeabilidade das vias aéreas e pressão exercida no balão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Repetir o ciclo de ventilação por balão e máscara, oferecendo oxigênio suplementar a 100%. não efetiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Está indicada a ventilação através de cânula traqueal devido à ventilação por máscara facial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo do recém-nascido (RN) em sala de parto que necessita de reanimação neonatal, focando na etapa fundamental: a ventilação. De acordo com as diretrizes internacionais (AHA/AAP) e brasileiras (SBP) de reanimação, o sucesso do procedimento depende quase inteiramente de uma ventilação pulmonar eficaz.\n\nAnálise das alternativas:\n\na) Incorreta. A massagem cardíaca só é indicada quando a frequência cardíaca (FC) permanece abaixo de 60 bpm, após pelo menos 30 segundos de ventilação por pressão positiva (VPP) efetiva, preferencialmente por via aérea avançada (cânula traqueal ou máscara laríngea). No caso clínico, a FC é de 80 bpm, portanto, não há indicação de compressões torácicas neste momento.\n\nb) Correta. Este é o passo imediato e mais importante. Se o recém-nascido permanece em apneia ou com FC abaixo de 100 bpm após o início da VPP, a primeira conduta é avaliar a eficácia da ventilação. Isso inclui verificar o ajuste da máscara (selo facial), a abertura das vias aéreas (posicionamento da cabeça e aspiração, se necessário) e se a pressão aplicada no balão é suficiente para promover a expansão torácica. Na literatura, esses passos são frequentemente resumidos pelo mnemônico MR. SOPA (Máscara, Reposicionamento, Sucção, Boca aberta, Pressão, Via aérea alternativa).\n\nc) Incorreta. Em recém-nascidos com idade gestacional maior ou igual a 35 semanas, a reanimação deve ser iniciada com ar ambiente (oxigênio a 21%). O aumento da concentração de oxigênio deve ser guiado pela oximetria de pulso e pelos alvos de saturação para cada minuto de vida. Oferecer 100% de oxigênio de forma indiscriminada, antes de garantir que a ventilação está sendo mecanicamente efetiva, é tecnicamente incorreto e pode causar lesão por estresse oxidativo.\n\nd) Incorreta. Embora a intubação traqueal possa ser necessária caso a ventilação por máscara facial falhe, a diretriz prioriza a correção da técnica de máscara antes de proceder para a via aérea avançada, a menos que haja uma malformação evidente ou falha clara nos passos corretivos iniciais. A questão pede a conduta imediata para garantir a eficácia do que já está sendo feito.\n\nResumo do raciocínio:\nO RN apresenta FC < 100 bpm e apneia após os passos iniciais, o que indica VPP. Se após o início da VPP a FC não sobe ou o bebê não melhora, o examinador quer saber se você conhece os \"passos corretivos da ventilação\". Sem garantir que o pulmão está sendo ventilado, nenhuma outra medida (oxigênio extra, massagem ou drogas) terá efeito. Por isso, a verificação da técnica (alternativa B) é a prioridade absoluta.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Reanimação Neonatal",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:32.030Z"
+  },
+  {
+    "id": "AJUDA_21e708da-4048-4782-aeb6-41000adb672f",
+    "originalId": "21e708da-4048-4782-aeb6-41000adb672f",
+    "statement": "A Doença Inflamatória Pélvica (DIP) é uma infecção polimicrobiana do trato genital superior que exige tratamento imediato para prevenir sequelas como infertilidade e dor pélvica crônica. O tratamento deve cobrir os principais agentes etiológicos, incluindo Neisseria gonorrhoeae, Chlamydia trachomatis e anaeróbios. Para o tratamento ambulatorial de pacientes com DIP leve a moderada, o esquema antibiótico recomendado pelas diretrizes brasileiras e pelo CDC (Centers for Disease Control and Prevention) é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O uso de Ciprofloxacino 500 mg via oral a cada 12 horas por 14 dias em monoterapia é o esquema de escolha, devido à alta sensibilidade do gonococo às quinolonas e sua excelente penetração tecidual no trato reprodutivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A Azitromicina 1 g via oral em dose única, repetida após uma semana, associada à Penicilina Benzatina 2,4 milhões UI intramuscular, é suficiente para erradicar os patógenos da DIP e prevenir complicações tardias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A Doxiciclina 100 mg via oral a cada 12 horas por 7 dias, associada ao Levofloxacino 500 mg via oral uma vez ao dia, constitui o tratamento padrão, dispensando o uso de cobertura anaeróbia em casos leves.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A administração de Ceftriaxone 500 mg intramuscular em dose única, associada à Doxiciclina 100 mg via oral a cada 12 horas por 14 dias e Metronidazol 500 mg via oral a cada 12 horas por 14 dias, oferece cobertura adequada contra gonococo, clamídia e anaeróbios.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da Questão: O tratamento da Doença Inflamatória Pélvica (DIP) deve ser iniciado empiricamente assim que o diagnóstico clínico for estabelecido, visando à cobertura de Neisseria gonorrhoeae, Chlamydia trachomatis e uma ampla gama de bactérias anaeróbias e aeróbias.\n\nAlternativa (a) - INCORRETA. O uso de quinolonas (como o ciprofloxacino) em monoterapia é contraindicado devido às elevadas taxas de resistência da Neisseria gonorrhoeae a essa classe de antibióticos. Além disso, a monoterapia não cobriria adequadamente a natureza polimicrobiana da infecção.\n\nAlternativa (b) - INCORRETA. A penicilina benzatina é o tratamento padrão para a sífilis, mas não possui espectro de ação adequado para os principais agentes da DIP. A azitromicina em dose única pode ser usada para cervicites não complicadas, mas na DIP, que envolve o trato genital superior, é necessário um esquema terapêutico mais prolongado e abrangente.\n\nAlternativa (c) - INCORRETA. O tratamento da DIP exige uma duração de 14 dias para garantir a erradicação dos patógenos e prevenir sequelas, e não apenas 7 dias. Além disso, as diretrizes mais recentes do CDC e do Ministério da Saúde recomendam a inclusão rotineira do metronidazol para cobertura de anaeróbios, devido à sua frequente associação com a vaginose bacteriana e a formação de abscessos. O uso de levofloxacino também esbarra na questão da resistência do gonococo.\n\nAlternativa (d) - CORRETA. Este é o esquema de escolha para o tratamento ambulatorial (DIP leve a moderada, classificada como Monif I). O ceftriaxone (500 mg IM) oferece cobertura eficaz contra o gonococo, inclusive as cepas resistentes a outros antibióticos. A doxiciclina (100 mg VO, 12/12h por 14 dias) é o padrão-ouro para o tratamento da Chlamydia trachomatis. O metronidazol (500 mg VO, 12/12h por 14 dias) é adicionado para garantir a cobertura contra anaeróbios, reduzindo o risco de falha terapêutica e complicações a longo prazo.\n\nResumo do Tratamento Ambulatorial (Diretrizes Brasileiras e CDC):\n- Ceftriaxone 500 mg, IM, dose única.\n- Doxiciclina 100 mg, VO, de 12 em 12 horas, por 14 dias.\n- Metronidazol 500 mg, VO, de 12 em 12 horas, por 14 dias.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:32.030Z"
+  },
+  {
+    "id": "AJUDA_21e76552-b1b8-4084-b377-e1c6018ae419",
+    "originalId": "21e76552-b1b8-4084-b377-e1c6018ae419",
+    "statement": "A figura a seguir representa o exame realizado pelo obstetra, em paciente em trabalho de parto há sete horas, com 8cm de dilatação. A situação, a posição e a variedade de posição do feto, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "longitudinal, esquerda e occiptoilíaca esquerda posterior (OEP)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cefálica, esquerda e occiptoilíaca esquerda posterior (OEP)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "longitudinal, direita e occiptoilíaca direita anterior (ODA)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "cefálica, direita e occiptoilíaca direita anterior (ODA)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar a estática fetal através do toque vaginal representado na figura. Para isso, identificamos os pontos de referência da cabeça fetal: a sutura sagital e as fontanelas. No caso de uma apresentação cefálica fletida (de vértice), o ponto de referência é a fontanela posterior (lâmbda), que possui formato triangular.\n\n1. Situação: É a relação entre o maior eixo do feto e o maior eixo da mãe. Como a cabeça fetal está em contato com o colo uterino e o eixo do feto está paralelo ao eixo materno, a situação é Longitudinal.\n\n2. Posição: Refere-se ao lado da mãe em que se encontra o dorso fetal (Direita ou Esquerda). No toque vaginal, identificamos para qual lado da bacia materna o ponto de referência (lâmbda/occipital) está voltado. Na imagem, o lâmda (fontanela triangular) está voltado para o lado direito da paciente. Portanto, a posição é Direita.\n\n3. Variedade de Posição: É a relação do ponto de referência fetal (Occipital/Lâmbda) com pontos específicos da bacia materna (púbis, sacro ou ilíacos). Na figura, o lâmda está localizado na metade anterior da bacia (próximo ao púbis) e voltado para a direita. Logo, a variedade é Occipitoilíaca Direita Anterior (ODA).\n\nAnálise das alternativas:\n\na) Incorreta. Apesar de a situação ser longitudinal, a posição é direita (o lâmda está à direita do examinador, que corresponde à direita da paciente) e a variedade é anterior (voltada para o púbis), não posterior (que seria voltada para o sacro).\n\nb) Incorreta. O termo \"cefálica\" descreve a Apresentação, não a Situação (que deve ser longitudinal, transversa ou oblíqua). Além disso, a posição identificada é a direita.\n\nc) Correta. A situação é Longitudinal (eixos paralelos), a posição é Direita (dorso e lâmda à direita da mãe) e a variedade de posição é ODA (Occipitoilíaca Direita Anterior), pois o lâmda está na região anterior e direita da bacia materna.\n\nd) Incorreta. Embora a posição e a variedade de posição estejam descritas corretamente como Direita e ODA, o termo \"cefálica\" foi utilizado incorretamente para definir a Situação, sendo que \"cefálica\" é uma classificação de Apresentação.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:32.030Z"
+  },
+  {
+    "id": "AJUDA_21e7b408-1259-4eef-b467-ccc176315472",
+    "originalId": "21e7b408-1259-4eef-b467-ccc176315472",
+    "statement": "Paciente feminina de 63 anos de idade, faz uso de rivaroxabana. Procura o pronto socorro do hospital por queda após tropeçar em desnível da calçada com trauma em região frontal direita. Via aérea pérvia, sem cervicalgia, mantém expansibilidade torácica normal com frequência respiratória de 19 ipm, saturação de 97% em ar ambiente, pressão arterial de 134/70 mmHg, frequência cardíaca de 85 bpm, escala de Glasgow 15, pupilas isofotorreagentes, presença de escoriações e edema em região frontal direita. Assinale a alternativa com a melhor conduta a seguir:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Radiografia de crânio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Analgesia e alta, orientar retorno se apresentar sintoma neurológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tomografia computadorizada de crânio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar coagulograma. Se alterado, prosseguir investigação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Internar e observar por 72 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta é uma questão clássica sobre o manejo do traumatismo cranioencefálico (TCE) leve em pacientes de alto risco. O ponto central do caso é uma paciente idosa (63 anos) que sofreu um trauma craniano e faz uso de rivaroxabana, um anticoagulante oral direto (DOAC).\n\nA conduta correta baseia-se no fato de que pacientes em uso de anticoagulantes apresentam um risco significativamente maior de hemorragia intracraniana, mesmo após traumas de baixa energia e apresentando pontuação 15 na Escala de Coma de Glasgow.\n\nAnálise das alternativas:\n\na) Incorreta. A radiografia de crânio tem utilidade muito limitada no trauma atual. Ela pode identificar fraturas ósseas, mas não visualiza o parênquima cerebral nem detecta sangramentos (hematomas extradurais, subdurais ou contusões), que são a principal preocupação neste caso.\n\nb) Incorreta. Dar alta para um paciente anticoagulado após trauma craniofacial sem a realização de exame de imagem é uma conduta insegura. O risco de sangramento tardio ou oculto é real, e a normalidade do exame físico inicial (Glasgow 15 e pupilas normais) não exclui a presença de lesão intracraniana nesta população específica.\n\nc) Correta. A tomografia computadorizada (TC) de crânio é o padrão-ouro para a avaliação inicial. Protocolos internacionais e nacionais (como o Canadian CT Head Rule e o New Orleans Criteria, embora frequentemente aplicados a pacientes sem anticoagulantes) são unânimes ao indicar que o uso de anticoagulação é, por si só, um critério de alto risco que exige a realização de TC de crânio, independentemente da ausência de sintomas neurológicos no momento da admissão.\n\nd) Incorreta. O coagulograma (TP/INR e TTPa) não é útil para guiar a decisão de imagem neste cenário. Primeiramente, a rivaroxabana não altera o INR de forma fidedigna para monitorização. Segundo, mesmo que o coagulograma estivesse normal, o risco mecânico do trauma em um paciente anticoagulado ainda exigiria a visualização do cérebro por imagem.\n\ne) Incorreta. A observação clínica é uma etapa importante, mas deve ser precedida pela exclusão de lesões agudas por meio da TC. Internar para observar sem realizar o diagnóstico por imagem atrasaria a identificação de um possível hematoma que necessite de intervenção cirúrgica imediata ou reversão da anticoagulação.\n\nResumo didático: Todo paciente em uso de anticoagulante (varfarina ou DOACs como rivaroxabana, apixabana e dabigatrana) que sofre trauma craniano deve ser submetido à tomografia de crânio, mesmo que esteja assintomático e com Glasgow 15.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:32.030Z"
+  },
+  {
+    "id": "AJUDA_21e7f9ea-8e07-4065-be46-2a5265cc888a",
+    "originalId": "21e7f9ea-8e07-4065-be46-2a5265cc888a",
+    "statement": "Mulher de 24 anos, previamente saudável, portadora de rim único, sofreu um acidente motociclístico há 7 dias. Foi levada a um hospital, onde foi submetida a craniectomia descompressiva e drenagem de hematoma subdural agudo. No entanto, há 1 dia, evoluiu com coma aperceptivo e ausência de reflexos de tronco encefálico. Diante disso, foi realizado o protocolo de morte encefálica, com confirmação diagnóstica. Testes laboratoriais mostraram função renal preservada, anti-HBs positivo e HBsAg negativo. Embora a paciente seja doadora de órgãos e tecidos, seu esposo se posiciona contra a doação, afirmando que isso interferirá em suas crenças.\nCom base na legislação pertinente, assinale a alternativa correta quanto à doação de órgãos nessa situação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A condição renal da paciente, embora seja saudável, contraindica a doação de órgãos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A doação de órgãos da paciente requer o consentimento e a autorização de seu esposo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O poder público poderá intervir a favor do cumprimento do desejo de doação da paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os resultados dos exames laboratoriais citados impossibilitam a doação de órgãos da paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda os aspectos éticos e legais da doação de órgãos e tecidos no Brasil, fundamentados principalmente na Lei nº 9.434/1997 e no Decreto nº 9.175/2017.\n\nAlternativa (a) Incorreta: A presença de um rim único não constitui uma contraindicação para a doação de órgãos. Se a função renal está preservada, como afirma o enunciado, os rins podem ser avaliados para transplante. Além disso, a doação não se restringe aos rins; outros órgãos e tecidos (como coração, fígado, pulmões e córneas) poderiam ser doados independentemente da anatomia renal da paciente.\n\nAlternativa (b) Correta: No Brasil, o modelo de consentimento adotado é o \"consentimento informado familiar\". Isso significa que, após a constatação da morte encefálica, a retirada de órgãos e tecidos depende obrigatoriamente da autorização do cônjuge ou de parente consanguíneo, maior de idade, na linha reta ou colateral até o segundo grau. Atualmente, a vontade da família prevalece sobre qualquer manifestação prévia do falecido (mesmo que estivesse registrada em documentos, o que não é mais exigido por lei). Como o esposo se posicionou contra, a doação não pode ser realizada.\n\nAlternativa (c) Incorreta: O Poder Público não tem autoridade para intervir e obrigar a doação contra a vontade expressa da família. A legislação brasileira protege a autonomia familiar no processo de luto e decisão sobre o corpo do falecido, não permitindo que o Estado obrigue a retirada de órgãos em casos de recusa dos parentes legalmente responsáveis.\n\nAlternativa (d) Incorreta: Os resultados laboratoriais citados são favoráveis à doação. O HBsAg negativo indica ausência de infecção ativa pelo vírus da hepatite B, enquanto o anti-HBs positivo indica imunidade (seja por vacinação ou por contato prévio e cura da doença). Esses marcadores mostram que a paciente não transmitiria hepatite B aos receptores, o que validaria a segurança biológica da doação.\n\nGabarito: Letra (b).",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:32.030Z"
+  },
+  {
+    "id": "AJUDA_21e85700-2684-4e33-8699-e847a6aaa6ba",
+    "originalId": "21e85700-2684-4e33-8699-e847a6aaa6ba",
+    "statement": "A principal estratégia do PNHPN (Programa Nacional de Humanização do Pré-Natal e Nascimento) é fazer com que a assistência prestada à gestante e ao recém-nascido (RN) seja com qualidade e humanizada. Para tanto, é necessário",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar atividades educativas e, no mínimo, 12 consultas médicas de pré-natal, nos 9 meses de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "contraindicar a aplicação de vacina antitetânica em gestantes ou dose de reforço em mulheres já imunizadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar a primeira consulta de pré-natal até o 4º mês de gestação e a classificação de risco gestacional na primeira consulta e nas consultas subsequentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "reduzir a taxa de mortalidade infantil, composta por óbitos perinatal, neonatal e pós-neonatal por ser um coeficiente sensível à adequação da assistência obstétrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Programa Nacional de Humanização do Pré-Natal e Nascimento (PNHPN), instituído pelo Ministério da Saúde no ano 2000, estabelece critérios técnicos e diretrizes para garantir a melhoria do acesso e da qualidade da assistência à gestante e ao recém-nascido. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa a) Incorreta. De acordo com as normas do PNHPN, o número mínimo de consultas de pré-natal estabelecido é de 6 consultas (e não 12). A recomendação padrão é que ocorra preferencialmente uma consulta no primeiro trimestre, duas no segundo e três no terceiro trimestre da gestação.\n\nAlternativa b) Incorreta. A prevenção do tétano neonatal é um dos pilares da assistência pré-natal. A vacina antitetânica (ou a dose de reforço, caso necessário) é fundamental e obrigatória para gestantes que não possuem esquema vacinal completo ou atualizado, visando à proteção do binômio mãe-filho.\n\nAlternativa c) Correta. O PNHPN define que, para uma assistência de qualidade, é necessária a captação precoce da gestante, o que tecnicamente é descrito como o início do pré-natal até o 4º mês de gestação (16ª semana). Além disso, a avaliação do risco gestacional deve ser um processo dinâmico e contínuo, realizado obrigatoriamente na primeira consulta e reavaliado em todos os atendimentos subsequentes, garantindo que gestantes de alto risco sejam identificadas e referenciadas adequadamente.\n\nAlternativa d) Incorreta. Embora a redução da mortalidade seja o objetivo final de qualquer política de saúde materno-infantil, a alternativa confunde um \"resultado esperado\" com as \"ações necessárias\" para a execução da estratégia. Além disso, a mortalidade infantil total (especialmente o componente pós-neonatal) é muito influenciada por fatores externos, como saneamento e nutrição, enquanto a mortalidade materna e a perinatal são os indicadores mais sensíveis e específicos para avaliar a qualidade da assistência obstétrica direta preconizada pelo PNHPN.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Políticas de Saúde",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:32.030Z"
+  },
+  {
+    "id": "AJUDA_21eb13eb-7ada-4777-9dc1-413d6a1f6cf7",
+    "originalId": "21eb13eb-7ada-4777-9dc1-413d6a1f6cf7",
+    "statement": "Vítima de ferimento penetrante por projetil de arma de fogo em região cervical acima do ângulo da mandíbula mantendo estabilidade hemodinâmica, com hematoma local. Caso seja confirmada lesão vascular nessa região pela angiotomografia, a melhor opção de tratamento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Endovascular",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Observação clínica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tamponamento com balão",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Exploração cirúrgica de urgência",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender a conduta correta nesta questão, o primeiro passo é identificar a anatomia da região cervical traumatizada. Didaticamente, o pescoço é dividido em três zonas: a Zona I (da fúrcula esternal e das clavículas até a cartilagem cricoide), a Zona II (da cartilagem cricoide até o ângulo da mandíbula) e a Zona III (do ângulo da mandíbula até a base do crânio).\n\nO enunciado descreve uma lesão acima do ângulo da mandíbula, o que situa o trauma na Zona III. Esta região apresenta um grande desafio técnico para a cirurgia aberta, pois as estruturas vasculares (como a artéria carótida interna e a veia jugular interna) estão protegidas pelo ramo da mandíbula e se aproximam do forame carotídeo na base do crânio, tornando o controle vascular distal extremamente difícil sem manobras agressivas como a subluxação ou osteotomia da mandíbula.\n\nAnálise das alternativas:\n\na) Endovascular: Alternativa correta. Em pacientes com estabilidade hemodinâmica e lesão confirmada na Zona III, o tratamento endovascular (por meio de stents ou embolização, dependendo do vaso atingido) é a primeira escolha. Ele permite tratar a lesão por dentro do vaso, evitando a morbidade de um acesso cirúrgico extremamente complexo e reduzindo o risco de lesões de nervos cranianos.\n\nb) Observação clínica: Incorreta. Uma lesão vascular confirmada por exame de imagem, associada a um hematoma local, exige intervenção definitiva para prevenir complicações graves, como sangramento tardio, formação de pseudoaneurismas, fístulas arteriovenosas ou eventos isquêmicos cerebrais.\n\nc) Tamponamento com balão: Incorreta. O uso de cateter de Foley para tamponamento é uma manobra de emergência e temporária, utilizada para controle de hemorragia exsanguinante em ferimentos penetrantes quando a compressão externa não funciona, servindo como \"ponte\" até o tratamento definitivo. Não se aplica a um paciente hemodinamicamente estável com diagnóstico já estabelecido.\n\nd) Exploração cirúrgica de urgência: Incorreta. A exploração cirúrgica imediata no pescoço é indicada prioritariamente em pacientes com instabilidade hemodinâmica ou sinais \"duros\" de lesão vascular (hemorragia ativa pulsátil, hematoma em expansão rápida ou choque). No caso da Zona III, mesmo com indicação cirúrgica, a via endovascular é preferível devido à dificuldade de exposição anatômica da região.\n\nEm resumo, a estabilidade do paciente permite a realização da angiotomografia e o planejamento do tratamento menos invasivo e mais eficaz para uma região de difícil acesso cirúrgico, que é a terapia endovascular.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:32.030Z"
+  },
+  {
+    "id": "AJUDA_21ee6f5a-9c56-4975-b212-ce78a30f6dec",
+    "originalId": "21ee6f5a-9c56-4975-b212-ce78a30f6dec",
+    "statement": "Durante o período pós-operatório, é essencial monitorar diversas condições do paciente, tais como:\n\nI. A hidratação e o balanço hídrico do paciente devem ser analisados diariamente.\nII. A movimentação precoce do paciente é recomendada para prevenir o acúmulo de secreções.\nIII. A dor pós-operatória é mais intensa após 72 horas do procedimento.\n\nDessa forma, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise dos Itens:\n\nItem I: Correto. O controle rigoroso da hidratação e do balanço hídrico (diferença entre o que foi administrado e o que foi eliminado pelo paciente) é fundamental no pós-operatório. Esse monitoramento permite identificar precocemente quadros de desidratação, sobrecarga volêmica ou distúrbios eletrolíticos, garantindo a estabilidade hemodinâmica e a função renal adequada.\n\nItem II: Correto. A deambulação e a movimentação precoce são pilares do cuidado pós-operatório moderno. Além de estimular a motilidade intestinal e reduzir o risco de tromboembolismo venoso, o movimento auxilia na expansão pulmonar, prevenindo atelectasias e o acúmulo de secreções brônquicas, o que reduz a incidência de pneumonias.\n\nItem III: Incorreto. A dor pós-operatória atinge seu pico de intensidade, geralmente, nas primeiras 24 a 48 horas após a cirurgia (período pós-operatório imediato e mediato). Uma dor que se torna mais intensa ou ressurge após 72 horas deve alertar a equipe médica para possíveis complicações, como infecção do sítio cirúrgico, deiscências, isquemia tecidual ou processos inflamatórios secundários.\n\nAnálise das Alternativas:\n\na) Incorreta. O item I também está correto, portanto a alternativa está incompleta.\nb) Correta. Como demonstrado, os itens I e II trazem condutas e conceitos corretos sobre o manejo pós-operatório, enquanto o item III apresenta uma cronologia errônea sobre a intensidade da dor.\nc) Incorreta. O item III é o único falso entre os três apresentados.\nd) Incorreta. Embora o item II esteja correto, o item III invalida esta alternativa.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:32.030Z"
+  }
+]

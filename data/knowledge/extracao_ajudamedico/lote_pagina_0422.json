@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_757afca8-5332-46e1-b788-901cd72d76b5",
+    "originalId": "757afca8-5332-46e1-b788-901cd72d76b5",
+    "statement": "Mulher de 62 anos com perda ponderal, anemia e saciedade precoce. EDA com biópsia revela adenocarcinoma gástrico antral, sem metástases à distância nos exames de estadiamento. Qual é, em geral, a ressecção padrão para tumor restrito ao antro distal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gastrectomia total com linfadenectomia D0.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gastrectomia parcial distal com linfadenectomia D2.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ressecção local endoscópica sem linfonodectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas gastrojejunostomia paliativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma ressecção, apenas quimio exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma paciente com adenocarcinoma gástrico localizado no antro (terço distal do estômago). Como os exames de estadiamento não demonstraram metástases a distância, o tratamento deve ser realizado com intenção curativa.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A gastrectomia total é indicada para tumores localizados no terço proximal ou médio do estômago, ou em casos de tumores de padrão difuso (linite plástica). Além disso, a linfadenectomia D0 (retirada incompleta ou nula de linfonodos) é considerada insuficiente para o tratamento oncológico adequado segundo as diretrizes atuais.\n\nAlternativa b: Correta. Para tumores localizados no antro distal, a gastrectomia parcial distal (também chamada de subtotal) é o padrão, pois permite a ressecção do tumor com margens de segurança oncológicas (geralmente de 3 a 5 cm) e oferece melhor qualidade de vida pós-operatória ao preservar parte do reservatório gástrico. A linfadenectomia D2, que remove os linfonodos perigástricos e aqueles localizados junto aos principais ramos do tronco celíaco, é o padrão-ouro recomendado para o tratamento curativo no Brasil e no mundo.\n\nAlternativa c: Incorreta. A ressecção local por via endoscópica é indicada apenas para o câncer gástrico precoce (restrito à camada mucosa) que preencha critérios muito específicos de baixo risco de metástase linfonodal (tumor pequeno, bem diferenciado e não ulcerado). A presença de sintomas sistêmicos, como anemia e perda ponderal, sugere uma doença mais avançada, o que contraindica a via endoscópica exclusiva.\n\nAlternativa d: Incorreta. A gastrojejunostomia é uma cirurgia paliativa de derivação, indicada apenas para pacientes com obstrução gástrica que não possuem condições de cura (doença metastática ou irressecável). No caso apresentado, a paciente é candidata ao tratamento cirúrgico radical.\n\nAlternativa e: Incorreta. A quimioterapia exclusiva é o tratamento de escolha para pacientes com doença metastática (Estádio IV) ou sem condições clínicas para cirurgia. Para o adenocarcinoma gástrico não metastático, a ressecção cirúrgica com linfadenectomia é o pilar fundamental da terapia curativa.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:57.780Z"
+  },
+  {
+    "id": "AJUDA_757e9cb7-7f72-4d42-ab7a-5b9d060e738e",
+    "originalId": "757e9cb7-7f72-4d42-ab7a-5b9d060e738e",
+    "statement": "Na abordagem clínica ampliada, a anamnese transcende o levantamento de dados objetivos, exigindo do profissional médico uma escuta qualificada e interpretativa que articule a narrativa do paciente aos fundamentos biopsicossociais do processo de adoecimento. Com base nessa informação e nas diretrizes da medicina centrada na pessoa e nos princípios da clínica ampliada, assinale a opção que apresenta a concepção contemporânea de entrevista clínica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A estruturação da anamnese deve restringir‑se aos elementos técnicos objetivos, evitando a interferência de conteúdos subjetivos que possam obscurecer o raciocínio diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O método clínico exige padronização da coleta de dados, priorizando a fidedignidade estatística das informações colhidas sobre a experiência do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A elaboração da hipótese clínica deve orientar‑se exclusivamente pelos protocolos fundamentados em evidências, minimizando o tempo dedicado a informações que não se enquadrem nos algoritmos diagnósticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O processo anamnésico deve priorizar os critérios classificatórios das nosologias oficiais (DSM, CID), como forma de garantir uniformidade e segurança técnico‑jurídica na prática assistencial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A escuta clínica deve considerar a singularidade biográfica do paciente, incorporando as suas dimensões subjetivas, sociais e simbólicas na formulação diagnóstica e no plano terapêutico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda os fundamentos da Clínica Ampliada e da Medicina Centrada na Pessoa, modelos que buscam superar a visão puramente biomédica e fragmentada do paciente. O objetivo é compreender o indivíduo em sua totalidade, unindo o saber técnico à escuta atenta da história de vida de cada um.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A: Incorreta. A clínica ampliada propõe justamente a inclusão da subjetividade no processo de cuidado. Restringir a anamnese apenas a dados técnicos e objetivos é uma característica do modelo biomédico tradicional, que é considerado insuficiente para lidar com a complexidade do sofrimento humano na contemporaneidade.\n\nAlternativa B: Incorreta. O método clínico contemporâneo não deve priorizar estatísticas sobre a experiência vivida pelo paciente. Pelo contrário, a medicina centrada na pessoa valoriza a narrativa individual e o modo como o paciente percebe sua própria saúde, fugindo de uma padronização rígida que ignora o contexto pessoal.\n\nAlternativa C: Incorreta. Embora a medicina baseada em evidências seja essencial, ela não deve ser utilizada de forma exclusiva ou cega. Minimizar informações que não se encaixam em algoritmos diagnósticos prejudica a compreensão integral do paciente, impedindo a identificação de determinantes sociais e psicológicos que impactam o adoecimento.\n\nAlternativa D: Incorreta. Focar prioritariamente em classificações como CID e DSM significa dar mais importância ao rótulo da doença do que ao sujeito que sofre. A uniformidade técnico-jurídica não deve se sobrepor à construção de um vínculo terapêutico e à compreensão do processo saúde-doença de forma multidimensional.\n\nAlternativa E: Correta. Esta alternativa descreve com precisão a essência da clínica ampliada. A escuta qualificada permite que o médico acesse a singularidade biográfica do paciente, integrando os aspectos biopatológicos aos aspectos subjetivos, sociais e simbólicos. Essa visão integral é fundamental para elaborar um diagnóstico mais preciso e um plano terapêutico que seja, de fato, compartilhado e eficaz para a realidade daquela pessoa.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:57.780Z"
+  },
+  {
+    "id": "AJUDA_7585c9a5-3f97-447a-af80-81a8a5297c1c",
+    "originalId": "7585c9a5-3f97-447a-af80-81a8a5297c1c",
+    "statement": "O momento ideal para o congelamento de óvulos é entre 25 e 35 anos de idade, com base na combinação de quantidade e qualidade dos óvulos. Procedimentos realizados após os 38 anos, embora possam ser feitos, apresentam taxas mais baixas de sucesso em razão da maior prevalência de aneuploidias.\nNesse contexto, assinale a alternativa que indica o marcador mais adequado para avaliação de reserva ovariana.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hormônio antimulleriano.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estradiol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hormônio luteinizante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hormônio folículo estimulante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Inibina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A avaliação da reserva ovariana é um passo essencial para determinar o potencial reprodutivo e a resposta a tratamentos de infertilidade. O objetivo principal é estimar a quantidade de folículos primordiais restantes nos ovários por meio de marcadores que reflitam esse pool biológico.\n\nAlternativa a: Hormônio antimülleriano. Esta é a alternativa correta. O AMH é produzido pelas células da granulosa de folículos em estágios iniciais de desenvolvimento, especificamente os pré-antrais e antrais pequenos. Ele é considerado atualmente o padrão-ouro entre os marcadores bioquímicos porque seus níveis permanecem relativamente estáveis ao longo de todo o ciclo menstrual, o que permite sua coleta em qualquer dia. Além disso, ele apresenta uma forte correlação com o número de óvulos recuperados em procedimentos de fertilização in vitro, sendo superior aos demais hormônios na predição da resposta ovariana.\n\nAlternativa b: Estradiol. Incorreta. O estradiol não deve ser utilizado isoladamente para avaliar reserva ovariana. Seus níveis sofrem flutuações acentuadas durante o ciclo menstrual. Em mulheres com reserva reduzida, pode ocorrer um aumento precoce do estradiol no início da fase folicular, o que acaba suprimindo os níveis de FSH e gerando uma falsa impressão de normalidade nos exames.\n\nAlternativa c: Hormônio luteinizante. Incorreta. O LH tem funções específicas relacionadas ao desencadeamento da ovulação e à esteroidogênese. Embora seus níveis aumentem após a menopausa, ele não possui sensibilidade ou especificidade para quantificar a reserva folicular remanescente em mulheres que ainda apresentam ciclos regulares.\n\nAlternativa d: Hormônio folículo-estimulante. Incorreta. O FSH é um marcador clássico, mas apresenta limitações importantes. Ele é considerado um marcador tardio, pois seus níveis séricos só costumam subir quando a reserva ovariana já está significativamente comprometida. Além disso, o FSH deve ser dosado obrigatoriamente entre o segundo e o quarto dia do ciclo menstrual e apresenta grande variabilidade de um mês para o outro, o que diminui sua precisão em comparação ao hormônio antimülleriano.\n\nAlternativa e: Inibina. Incorreta. A inibina B é produzida pelos folículos antrais e seus níveis tendem a cair com o envelhecimento ovariano. No entanto, ela possui baixa acurácia diagnóstica e sofre variações cíclicas importantes, não sendo recomendada pelas diretrizes atuais como um marcador de primeira linha para avaliação de reserva ovariana.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:57.780Z"
+  },
+  {
+    "id": "AJUDA_75865eb4-d2de-4249-b671-6845fb5fcbe9",
+    "originalId": "75865eb4-d2de-4249-b671-6845fb5fcbe9",
+    "statement": "Menino de 6 anos reside com seus pais e com o avô materno, que é alcoólatra e apresenta tosse há um mês, além de emagrecimento e suor noturno. O médico de saúde da família fez o diagnóstico do avô e chamou todos os moradores da residência para fazer exames. O menino estava assintomático e sua radiografia de tórax era normal. A conduta correta em relação ao menino é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "fazer PPD ou Igra, se PPD menor 5mm ou Igra não reagente, tratar ILTB",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fazer somente o Igra, se reagente tratar a doença e repetir em 12 semanas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "fazer somente PPD, e se for maior 5mm tratar a doença e repetir o exame em seis semanas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "fazer PPD ou Igra, se PPD menor 5mm ou Igra não reagente, repetir exame em oito semanas",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Essa questão aborda o manejo de contatos de pacientes com tuberculose (TB), especificamente em crianças, seguindo as diretrizes do Ministério da Saúde do Brasil.\n\nO cenário apresenta uma criança de 6 anos que teve contato prolongado com um caso bacilífero (avô com sintomas clássicos). A criança está assintomática e possui radiografia de tórax normal, o que inicialmente afasta o diagnóstico de TB doença. O próximo passo é investigar a Infecção Latente por Tuberculose (ILTB).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Se o PPD (teste tuberculínico) for menor que 5 mm ou o IGRA for não reagente, não se deve tratar a ILTB imediatamente. Nesses casos, existe a possibilidade de o sistema imune ainda não ter tido tempo de reagir à infecção (período de janela imunológica). O correto é aguardar e repetir o exame.\n\nAlternativa b) Incorreta. Se o IGRA for reagente em um paciente assintomático e com radiografia normal, o diagnóstico é de infecção latente (ILTB) e não de doença (TB ativa). Além disso, o prazo de repetição de 12 semanas não é o preconizado pelo protocolo nacional para verificação de conversão.\n\nAlternativa c) Incorreta. Se o PPD for maior ou igual a 5 mm em contatos, o diagnóstico é ILTB, e o tratamento deve ser para infecção, não para a doença ativa. O tempo de repetição de seis semanas também está incorreto.\n\nAlternativa d) Correta. Este é o protocolo padrão para investigação de contatos assintomáticos com radiografia de tórax normal. Realiza-se o PPD ou o IGRA. Se o resultado for negativo (PPD < 5 mm ou IGRA não reagente), deve-se repetir o exame após 8 semanas (2 meses). Esse intervalo é necessário para cobrir a janela imunológica (tempo que o corpo leva para desenvolver uma resposta detectável ao teste após o contato com a bactéria). Se, após 8 semanas, houver conversão (aumento de 10 mm no segundo PPD em relação ao primeiro ou IGRA positivo), inicia-se o tratamento para ILTB. Se o exame permanecer negativo, a criança recebe alta do monitoramento.\n\nResumo da conduta para contatos de TB (crianças > 5 anos e adultos):\n1. Avaliar sintomas e raio X de tórax.\n2. Se assintomático e raio X normal: fazer PPD ou IGRA.\n3. Se PPD ≥ 5 mm ou IGRA (+): tratar ILTB.\n4. Se PPD < 5 mm ou IGRA (-): repetir em 8 semanas para avaliar viragem/conversão.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Tuberculose",
+      "Tuberculose na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:57.780Z"
+  },
+  {
+    "id": "AJUDA_75875db7-8c81-448d-88e5-49be815510cc",
+    "originalId": "75875db7-8c81-448d-88e5-49be815510cc",
+    "statement": "Dona Vera chega à recepção da UBS perguntando como fazer para seu marido, Sr. Joaquim, continuar seus tratamentos no SUS, pois acabou de perder o plano de saúde. Fazia acompanhamento pelo convênio médico para Hipertensão e Diabetes Mellitus tipo 2. No último mês havia iniciado investigação para uma nova perda de peso e fraqueza no corpo, ao ponto que Joaquim está com muita dificuldade para deambulação. A recepcionista acolhe Dona Vera e prontamente faz o cadastro de Joaquim e em seguida encaminha Dona Vera para acolhimento com a equipe, no qual o enfermeiro Cleiton esclarece que o caso de Joaquim será discutido na reunião de equipe desta semana para agendamento de avaliação domiciliar com brevidade. Dona Vera pergunta se levará 6 meses, como vê sua vizinha acamada receber consultas domiciliares com a médica da equipe. Cleiton reforça que cada caso é avaliado individualmente para a frequência e agendamento de consultas. Os princípios doutrinários do SUS que estão presentes na condução do caso pela equipe da UBS é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Universalidade e Autonomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Equidade e Autonomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Integralidade e Equidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Universalidade e Equidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Universalidade e Integralidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender a questão, devemos analisar as ações da equipe da Unidade Básica de Saúde (UBS) à luz dos princípios doutrinários do Sistema Único de Saúde (SUS).\n\nAnálise do caso clínico:\n\nO primeiro princípio identificado é a Universalidade. Isso fica evidente quando Dona Vera busca a UBS porque o marido perdeu o plano de saúde e, prontamente, a recepcionista realiza o cadastro de Joaquim. A Universalidade garante que todo cidadão tenha direito ao acesso às ações e serviços de saúde, independentemente de sua condição social, financeira ou de possuir ou não um convênio privado. O SUS é um sistema para todos.\n\nO segundo princípio em destaque é a Equidade. O enfermeiro Cleiton explica que Joaquim passará por uma avaliação domiciliar com brevidade e que a frequência das consultas é definida individualmente. Ao comparar o caso de Joaquim (que apresenta perda de peso e dificuldade de deambulação recente) com o da vizinha acamada (que recebe visitas a cada 6 meses), a equipe aplica o conceito de oferecer mais a quem mais precisa. A Equidade consiste em tratar de forma desigual os desiguais, priorizando o atendimento conforme a gravidade e a necessidade social/clínica de cada indivíduo, para diminuir as desigualdades.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a Universalidade esteja presente, a Autonomia (princípio ético e jurídico que garante ao paciente o direito de decidir sobre sua própria vida e tratamentos) não é o foco principal da conduta descrita no enunciado. O foco está na organização do acesso e da priorização do cuidado.\n\nb) Incorreta. A Equidade está presente, mas a Autonomia não é o princípio doutrinário que define a entrada de Joaquim no sistema ou a forma como a equipe organizou a visita domiciliar neste relato.\n\nc) Incorreta. A Equidade está correta. A Integralidade (que pressupõe a visão total do indivíduo e a articulação de ações preventivas, curativas e de reabilitação em todos os níveis de complexidade) até poderia ser considerada em um contexto mais amplo de tratamento, mas a questão enfatiza especificamente o acesso garantido (Universalidade) e a diferenciação da prioridade de atendimento conforme a necessidade (Equidade).\n\nd) Correta. Esta alternativa contempla perfeitamente os dois pontos centrais do texto: o acesso irrestrito ao sistema após a perda do plano de saúde (Universalidade) e o planejamento do cuidado baseado na necessidade individual e gravidade do caso em comparação a outros pacientes (Equidade).\n\ne) Incorreta. A Universalidade está presente. Contudo, a Integralidade não é o princípio que melhor descreve a justificativa do enfermeiro sobre a diferença de periodicidade das visitas domiciliares; essa diferenciação baseada na necessidade é a definição clássica de Equidade no SUS.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:57.780Z"
+  },
+  {
+    "id": "AJUDA_7587df48-f297-4664-922e-7a5d6d9eb1ef",
+    "originalId": "7587df48-f297-4664-922e-7a5d6d9eb1ef",
+    "statement": "Assinale a assertiva correta sobre o tratamento da obesidade tendo como base resultados de ensaios clínicos randomizados.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A redução de peso com mudança de estilo de vida é, via de regra, sustentada a longo prazo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento medicamentoso é seguro por um prazo de 6 meses até 1 ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os agonistas combinados de GLP-1 e GIP produzem redução de cerca de 20% de peso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Os agonistas do GLP-1 reduzem o peso de forma sustentada, mas sem evidência de redução de mortalidade até o momento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a (c).\n\nAbaixo, a análise detalhada de cada alternativa baseada em evidências científicas atuais:\n\nAlternativa (a) Incorreta: A mudança no estilo de vida (dieta e exercício) é o pilar fundamental do tratamento; porém, ensaios clínicos mostram que a manutenção do peso perdido apenas com essas medidas é extremamente difícil a longo prazo. O organismo aciona mecanismos adaptativos neuroendócrinos (como a redução da taxa metabólica basal e alterações em hormônios de saciedade e fome) que favorecem o reganho de peso na grande maioria dos pacientes.\n\nAlternativa (b) Incorreta: A obesidade é reconhecida como uma doença crônica e recidivante. Portanto, o tratamento medicamentoso não deve ser limitado a um período curto de 6 meses ou 1 ano. Assim como no tratamento da hipertensão ou do diabetes, a suspensão da medicação geralmente resulta no retorno dos sintomas e do peso inicial. Atualmente, existem medicações aprovadas e seguras para uso contínuo por tempo indeterminado.\n\nAlternativa (c) Correta: Esta assertiva reflete os resultados dos estudos com a tirzepatida (estudos da série SURMOUNT). A tirzepatida é uma molécula que atua como agonista duplo dos receptores de GLP-1 (peptídeo semelhante ao glucagon-1) e de GIP (polipeptídeo insulinotrópico dependente de glicose). Nos ensaios clínicos de fase 3, pacientes utilizando a dose máxima de 15 mg alcançaram uma redução média de peso entre 20,9% e 22,5%, um patamar de eficácia superior aos agonistas isolados de GLP-1 de gerações anteriores.\n\nAlternativa (d) Incorreta: Esta afirmação está desatualizada. O estudo SELECT, publicado em 2023, avaliou o uso da semaglutida 2,4 mg em pacientes com sobrepeso ou obesidade e doença cardiovascular estabelecida (sem diabetes). O estudo demonstrou de forma robusta uma redução de 20% no risco de eventos cardiovasculares maiores (MACE), que incluem morte por causas cardiovasculares, infarto não fatal e acidente vascular cerebral não fatal. Portanto, já existe evidência de redução de desfechos duros e mortalidade cardiovascular com o uso de agonistas de GLP-1 no tratamento da obesidade.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:57.780Z"
+  },
+  {
+    "id": "AJUDA_758b3b35-265f-4a35-b4c5-01fe0064b047",
+    "originalId": "758b3b35-265f-4a35-b4c5-01fe0064b047",
+    "statement": "Em um bairro com altos índices de doenças respiratórias, a equipe da unidade básica de saúde desenvolveu um projeto de promoção da saúde para prevenir contra esses problemas. Com base nessa situação hipotética, assinale a estratégia que está alinhada a uma abordagem de promoção da saúde.",
+    "options": [
+      {
+        "id": "A",
+        "text": "distribuir medicamentos para todos os moradores com sintomas respiratórios",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar oficinas sobre controle de umidade e ventilação adequada nas residências",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "encaminhar os pacientes com sintomas respiratórios para consultas especializadas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "identificar os indivíduos com problemas respiratórios e oferecer assistência prioritária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "fazer exames de raio X em todos os moradores para detectar doenças respiratórias precocemente",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, é fundamental diferenciar os conceitos de Promoção da Saúde, Prevenção de Doenças e Assistência Curativa. A promoção da saúde, baseada na Carta de Ottawa, foca nos determinantes sociais e no empoderamento da comunidade para melhorar sua qualidade de vida e saúde, atuando sobre as causas das doenças e não apenas sobre os riscos específicos ou enfermidades já instaladas.\n\nAlternativa a) Incorreta. A distribuição de medicamentos é uma ação de assistência farmacêutica e tratamento curativo. Ela foca no controle de sintomas de uma doença já manifesta, não atuando na raiz do problema ou na promoção de saúde da coletividade.\n\nAlternativa b) Correta. Realizar oficinas sobre controle de umidade e ventilação é uma estratégia típica de promoção da saúde. Essa ação atua diretamente sobre um determinante ambiental (as condições de moradia) que influencia os índices de doenças respiratórias. Ao educar e capacitar os moradores para modificar seu ambiente, a equipe de saúde promove autonomia e melhoria das condições de vida, prevenindo o surgimento de novos casos de forma ampla.\n\nAlternativa c) Incorreta. O encaminhamento para especialistas é uma ação de fluxo do sistema de saúde (nível secundário de atenção). Trata-se de assistência individual voltada para o diagnóstico e tratamento de patologias já existentes, e não de uma estratégia promocional.\n\nAlternativa d) Incorreta. Oferecer assistência prioritária a indivíduos já doentes é uma medida de gestão da clínica e equidade no atendimento assistencial. Embora necessária, essa estratégia é reativa e individualizada, focando no cuidado ao doente em vez de atuar nos fatores que geram a doença na comunidade.\n\nAlternativa e) Incorreta. A realização de exames de raio X para detecção precoce é classificada como Prevenção Secundária (rastreamento ou screening). O objetivo aqui é diagnosticar a doença em estágio inicial para melhorar o prognóstico, mas isso não impede que a doença ocorra nem atua sobre os condicionantes sociais e ambientais do bairro.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:57.780Z"
+  },
+  {
+    "id": "AJUDA_7592ea02-818c-43d5-9b06-dd67483d3c36",
+    "originalId": "7592ea02-818c-43d5-9b06-dd67483d3c36",
+    "statement": "Homem, 75 anos de idade, em tratamento de câncer de próstata metastático, em uso de tansulosina, leuprorrelina e enzalutamida, não apresenta evidência de progressão de doença nos últimos 18 meses. Relata piora dos sintomas urinários obstrutivos há 6 meses. Nega antecedentes cirúrgicos. Exames: PSA 1,4ng/dL, Ureia 80 mg/dL e Creatinina 1,8 mg/dL. Ultrassonografia de abdômen: volume prostático de 30 g e resíduo pós-miccional de 330 mL. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prostatectomia Radical",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Radioterapia Externa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "RTU de próstata",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Braquiterapia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta um quadro de câncer de próstata metastático em tratamento hormonal (bloqueio androgênico com leuprorrelina e enzalutamida). Embora a doença esteja sistemicamente controlada, com PSA baixo (1,4 ng/dL) e estabilidade nos últimos 18 meses, ele desenvolveu uma complicação local: uropatia obstrutiva infravesical. Isso é evidenciado pelo aumento de ureia e creatinina (insuficiência renal pós-renal), resíduo pós-miccional elevado (330 mL) e piora dos sintomas obstrutivos, apesar do uso de tansulosina. O volume prostático é de 30 g, o que permite uma abordagem cirúrgica transuretral.\n\nPor que a alternativa (c) está correta:\nA Ressecção Transuretral da Próstata (RTU de próstata) é a conduta mais adequada neste momento. Ela tem finalidade paliativa e desobstrutiva. Em pacientes com câncer de próstata avançado que apresentam retenção urinária ou deterioração da função renal por obstrução infravesical que não responde ao tratamento medicamentoso, a RTU permite a desobstrução do fluxo urinário, melhora dos sintomas e proteção da função renal. O volume de 30 g é perfeitamente compatível com a técnica.\n\nPor que as outras alternativas estão incorretas:\n\na) Prostatectomia Radical: Esta cirurgia é indicada para o tratamento curativo do câncer de próstata localizado. Em um paciente de 75 anos com doença metastática já estabelecida, a retirada radical da próstata com intuito curativo não se aplica. O objetivo aqui é desobstrução urinária, e não a cura da neoplasia.\n\nb) Radioterapia Externa: A radioterapia não é o tratamento de escolha para resolver uma obstrução mecânica aguda ou subaguda que já está causando repercussão renal. Além disso, a radioterapia pode causar inflamação (actinite) e edema local, o que poderia, inicialmente, piorar ainda mais os sintomas obstrutivos e a função renal do paciente.\n\nd) Braquiterapia: Trata-se de uma forma de radioterapia interna indicada para casos selecionados de câncer de próstata de baixo risco e localizado. Além de não ser indicada para doença metastática, a braquiterapia é contraindicada em pacientes com sintomas urinários obstrutivos importantes ou grande resíduo pós-miccional, pois o procedimento costuma agravar a obstrução urinária.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:57.780Z"
+  },
+  {
+    "id": "AJUDA_759d7677-e368-4ed1-ba2a-dc58dfc76879",
+    "originalId": "759d7677-e368-4ed1-ba2a-dc58dfc76879",
+    "statement": "Um escolar de 8 anos de idade foi levado à emergência em razão de um quadro de indisposição, inapetência, cefaleia e edema periorbital. A médica, em sua anamnese, perguntou acerca de quedas, brigas na escola e sintomas associados, como queda de cabelo, febre, vômitos e síncope. A mãe negou quaisquer dos sintomas citados. Na história patológica pregressa, relatou infecção de garganta com frequência. Ao exame, a criança encontrava-se em bom estado geral, eupneica (FR = 20 irpm), eucárdica (FC = 100 bpm), com SatO2 = 98%, edema periorbital bilateralmente, de moderada intensidade, sem hiperemia, indolor, sem sinais de trauma. Verificaram-se pressão arterial acima do percentil 95 para a idade e exame simples de urina com hematúria presente.\n\nA respeito do caso clínico descrito e com base nos conhecimentos médicos correlatos, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sintomas como edema e hipertensão manifestam-se durante o episódio de infecção de garganta pelo estafilococo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O edema é frequente e pode ser evidenciado por queixas indiretas, como aumento brusco de peso e (ou) calçados apertados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Os sintomas clínicos clássicos são cabelos escassos, finos e quebradiços, edema e proteinúria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O edema é generalizado na maior parte dos casos e está sempre acompanhado de história de trauma anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado — um escolar com edema periorbital, hipertensão arterial (acima do percentil 95) e hematúria, somado ao histórico de infecções de garganta frequentes — é a apresentação clássica da glomerulonefrite difusa aguda (GNDA) pós-estreptocócica. Esta é a causa mais comum de síndrome nefrítica na infância.\n\nAlternativa (a) Incorreta. Na GNDA pós-estreptocócica, os sintomas não ocorrem simultaneamente à infecção ativa. Existe um período de latência obrigatório entre a infecção estreptocócica e o início das manifestações renais: cerca de 1 a 3 semanas após uma faringite e de 2 a 6 semanas após uma piodermite. Além disso, o agente etiológico é o estreptococo beta-hemolítico do grupo A (*Streptococcus pyogenes*), e não o estafilococo.\n\nAlternativa (b) Correta. O edema na síndrome nefrítica é do tipo mole e ocorre devido à retenção hidrossalina (o rim reduz a taxa de filtração glomerular, mas continua reabsorvendo sódio e água). Em muitos casos, o edema é discreto ou moderado, sendo notado inicialmente por queixas indiretas dos pais, como o ganho de peso rápido em poucos dias ou a dificuldade da criança em calçar sapatos que antes serviam perfeitamente.\n\nAlternativa (c) Incorreta. Os sintomas clínicos clássicos da síndrome nefrítica (GNDA) são o \"tripé\": hematúria, edema e hipertensão arterial. Cabelos escassos, finos e quebradiços são sinais semiológicos típicos de desnutrição proteico-calórica grave (como o Kwashiorkor), não tendo relação com a fisiopatologia da glomerulonefrite.\n\nAlternativa (d) Incorreta. O edema na GNDA é frequentemente matutino e periorbital, podendo progredir para membros inferiores ao longo do dia, mas nem sempre evolui para o estado de anasarca (edema generalizado), que é mais característico da síndrome nefrótica. Além disso, a doença é de natureza inflamatória e imunomediada (deposição de imunocomplexos no glomérulo), não possuindo qualquer relação com traumas físicos ou quedas.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:57.780Z"
+  },
+  {
+    "id": "AJUDA_75a6edeb-e774-4a29-921c-b988eb12d344",
+    "originalId": "75a6edeb-e774-4a29-921c-b988eb12d344",
+    "statement": "Durante a reunião de equipe, a enfermeira traz como pauta para discussão o alto número de internações por condições sensíveis à APS (ICSAP) relacionados ao pré-natal e ao parto. A equipe avalia o território e realiza diagnóstico situacional: O território é rural, de difícil acessibilidade, bastante vulnerável e com alta taxa de absenteísmo nas consultas. Baseando-se nessas informações, entre as estratégias abaixo, a melhor a ser adotada pela equipe levando em consideração planejamento local em saúde é",
+    "options": [
+      {
+        "id": "A",
+        "text": "orientar durante as consultas a importância do acompanhamento pré-natal, no comparecimento das consultas e a realização de exames.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar visitas no território para compreender os entraves no acesso e vulnerabilidades envolvidas e após elaborar estratégias eficazes para resolução.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "informar a gestão que essa responsabilidade não é da equipe e que seria necessária a construção de uma nova UBS no território rural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "priorizar a identificação de todas as gestantes de risco e encaminhá-las para serviço de pré-natal especializado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "solicitar à gestão a necessidade de contratação de especialistas com o intuito de melhorar a assistência pré-natal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Tema:\nAs Internações por Condições Sensíveis à Atenção Primária (ICSAP) são indicadores que refletem a efetividade e a resolutividade da Atenção Primária à Saúde (APS). Quando as taxas de internação por causas evitáveis estão altas, indica-se que o acesso ou a qualidade do acompanhamento na UBS estão deficientes. No caso em questão, o cenário envolve barreiras geográficas (zona rural), sociais (vulnerabilidade) e de adesão (absenteísmo). O planejamento em saúde exige que as ações sejam pautadas na realidade do território.\n\nAlternativa (a): Incorreta. Orientar a importância do pré-natal e dos exames é uma ação educativa de rotina, mas ela é ineficaz como estratégia isolada neste caso. Se há uma alta taxa de absenteísmo e dificuldade de acesso, a gestante muitas vezes nem sequer chega à consulta para receber essa orientação. A estratégia falha por não enfrentar a causa raiz do não comparecimento.\n\nAlternativa (b): Correta. Esta alternativa segue os preceitos da territorialização e do diagnóstico situacional. Para planejar ações em saúde, a equipe precisa primeiro compreender o \"porquê\" do absenteísmo e quais são os obstáculos reais daquela população rural. Ao realizar visitas e diagnosticar as vulnerabilidades \"in loco\", a equipe pode criar estratégias específicas, como o uso de transporte sanitário, busca ativa por Agentes Comunitários de Saúde ou adequação do cronograma de atendimento à realidade local.\n\nAlternativa (c): Incorreta. A redução das ICSAP e o pré-natal de baixo risco são responsabilidades fundamentais e inerentes à equipe de APS. Afirmar que a responsabilidade não é da equipe é um erro conceitual frente às diretrizes da Política Nacional de Atenção Básica (PNAB). Além disso, a construção de uma nova UBS é uma decisão de gestão macro, não uma estratégia imediata de planejamento local para resolver o problema assistencial identificado.\n\nAlternativa (d): Incorreta. O pré-natal especializado (alto risco) deve ser reservado para gestantes que apresentam critérios clínicos de risco gestacional. Encaminhar todas as gestantes apenas pela dificuldade de acesso local causaria um colapso no sistema secundário e não resolveria o problema das condições sensíveis à APS, que devem ser manejadas na própria comunidade.\n\nAlternativa (e): Incorreta. A solução para o problema de acesso e vulnerabilidade em território rural não reside na contratação de especialistas focais. O fortalecimento da APS se faz com a melhoria do processo de trabalho da equipe já existente, foco na territorialização e resolutividade do médico de família e da enfermeira. O problema descrito é de logística, acesso e vulnerabilidade social, e não de falta de densidade tecnológica especializada.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:57.780Z"
+  }
+]

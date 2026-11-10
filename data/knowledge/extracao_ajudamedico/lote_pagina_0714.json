@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AJUDA_c7771ad7-f8b6-43d1-b10b-b39398f772eb",
+    "originalId": "c7771ad7-f8b6-43d1-b10b-b39398f772eb",
+    "statement": "Menina, 5 anos de idade, transplantada renal há 2 anos, faz uso contínuo de imunossupressores. Durante a consulta, a família questiona sobre vacinação contra a COVID-19. Qual deve ser a orientação para a família?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vacinação contra a COVID-19 é indicada apenas para os contactantes domiciliares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vacinação contra a COVID-19 é indicada se os imunossupressores forem temporariamente suspensos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A vacinação contra a COVID-19 é indicada no esquema habitual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vacinação contra a COVID-19 é indicada com doses adicionais.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO:\nA questão aborda a imunização contra a COVID-19 em uma paciente pediátrica (5 anos) com condição de imunossupressão por transplante renal. O ponto central é entender que indivíduos imunocomprometidos apresentam uma resposta imune menos robusta às vacinas e, ao mesmo tempo, maior risco de complicações pela doença. Por isso, as diretrizes do Programa Nacional de Imunizações (PNI) e de sociedades como a Sociedade Brasileira de Pediatria (SBP) estabelecem esquemas especiais para esse público.\n\nALTERNATIVA A - INCORRETA:\nA vacinação de contatantes domiciliares (conhecida como estratégia casulo) é recomendada para reduzir a circulação do vírus no ambiente próximo da paciente, mas ela é uma medida complementar. A indicação de vacinação direta para a criança transplantada é prioritária e absoluta, dada a sua vulnerabilidade individual e o risco de formas graves da doença.\n\nALTERNATIVA B - INCORRETA:\nA suspensão de imunossupressores em um transplantado renal é uma medida perigosa que pode levar à perda do enxerto por rejeição aguda. A vacinação deve ser feita mantendo-se a terapia imunossupressora de manutenção. O que as diretrizes sugerem é apenas a busca pelo melhor momento imunológico (evitando períodos de pulsoterapia ou transplante muito recente), mas nunca a suspensão da medicação crônica para este fim.\n\nALTERNATIVA C - INCORRETA:\nO esquema habitual é desenhado para indivíduos imunocompetentes. Para pacientes com alto grau de imunossupressão, como os transplantados de órgãos sólidos, o esquema vacinal considerado \"padrão\" para a idade é insuficiente para garantir a soroconversão. Esses pacientes necessitam de um regime intensificado.\n\nALTERNATIVA D - CORRETA:\nEsta é a orientação preconizada pelo Ministério da Saúde e pelas sociedades de especialistas. Indivíduos imunocomprometidos (incluindo transplantados de órgãos sólidos) a partir de 6 meses de idade têm indicação de um esquema vacinal diferenciado que inclui doses adicionais como parte do esquema primário. O objetivo é aumentar a probabilidade de uma resposta imune protetora, compensando a deficiência na produção de anticorpos causada pelo uso contínuo de imunossupressores. Portanto, para essa menina, a recomendação é a vacinação com doses adicionais previstas nos protocolos específicos para imunocomprometidos.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:24.986Z"
+  },
+  {
+    "id": "AJUDA_c77ab5ed-ab5f-4eaa-a843-495a59b4f830",
+    "originalId": "c77ab5ed-ab5f-4eaa-a843-495a59b4f830",
+    "statement": "Uma jovem de 24 anos é admitida na sala de trauma após queda de motocicleta em alta velocidade. Está sonolenta, desorientada em tempo e espaço e apresenta hálito etílico. Responde com poucas palavras aos questionamentos da equipe assistente. Apresenta escoriações em face e epistaxe bilateral ativa. Ao exame, observam-se esforço respiratório leve e dificuldade para falar. A equipe pré-hospitalar aplicou o colar cervical rígido ainda na cena do trauma, mantendo-o durante todo o transporte e realizou a remoção do capacete (que estava rachado) a quatro mãos. Atualmente, a saturação de oxigênio se encontra em 87%.\n\nConsiderando a abordagem inicial da via aérea dessa paciente, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A manobra de tração da mandíbula (jaw-thrust) é a maneira apropriada de manejo da via aérea nesse momento, associada à oxigenioterapia suplementar, máscara acoplada e saco reservatório não reinalante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar exame físico da região cervical e, caso não haja dor à palpação do linha média, remover o colar cervical que aparenta estar causando dificuldades ventilatórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar oxigênio suplementar, preferencialmente, com cânula nasofaríngea, para, posteriormente, avaliar o quadro neurológico que aparenta estar alterado devido à hipóxia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A manobra de elevação do queixo (chin-lift) deve ser realizada e posteriormente avaliar se houve melhora do padrão respiratório e da saturação de oxigênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A via aérea somente pode ser abordada após a avaliação radiológica completa da coluna cervical e do crânio, pois caso seja preciso realizar a intubação orotraqueal, a sedação necessária poderia mascarar sintomas neurológicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo inicial das vias aéreas em um paciente politraumatizado, seguindo os preceitos do ATLS (Advanced Trauma Life Support). A paciente apresenta sinais de instabilidade respiratória (saturação de 87% e esforço respiratório) e risco de lesão da coluna cervical devido ao mecanismo de trauma (queda de moto em alta velocidade com capacete rachado).\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Em pacientes com suspeita de lesão na coluna cervical, a manobra de escolha para abertura das vias aéreas é a tração da mandíbula (jaw-thrust), pois ela minimiza a movimentação do pescoço em comparação à elevação do queixo (chin-lift). Como a paciente apresenta hipoxemia importante (87%), a oferta de oxigênio suplementar com máscara de alta concentração e reservatório é mandatória para tentar elevar a saturação enquanto a via aérea é estabilizada.\n\nAlternativa b) Incorreta. A retirada do colar cervical baseada apenas no exame físico (palpação da linha média) só pode ser feita em pacientes que estejam alertas e orientados (GCS 15), sem déficit neurológico e sem fatores de confusão, como intoxicação alcoólica ou dor em outros locais (lesões distrativas). Esta paciente está sonolenta, desorientada e apresenta hálito etílico, o que impede a \"limpeza\" clínica da coluna cervical conforme os critérios de NEXUS ou Canadian C-Spine Rule.\n\nAlternativa c) Incorreta. A cânula nasofaríngea é formalmente contraindicada em pacientes com suspeita de fratura de base de crânio ou traumas de face significativos, como é o caso desta paciente (escoriações na face e epistaxe bilateral ativa). O risco é a inserção acidental da cânula no espaço intracraniano através de uma fratura da lâmina crivosa.\n\nAlternativa d) Incorreta. Embora a elevação do queixo (chin-lift) seja uma manobra de abertura de via aérea, ela promove uma extensão da coluna cervical que deve ser evitada no trauma. A tração da mandíbula (jaw-thrust) é a técnica recomendada pelo ATLS para garantir a patência da via aérea com proteção da coluna.\n\nAlternativa e) Incorreta. No trauma, a prioridade absoluta é o ABCDE. Problemas na via aérea (A) e na ventilação (B) devem ser resolvidos imediatamente. Aguardar exames de imagem para intervir em uma paciente com saturação de 87% e rebaixamento do nível de consciência coloca a vida da paciente em risco imediato por hipóxia e parada respiratória. Se houver indicação de intubação, esta deve ser realizada com proteção manual da coluna cervical (estabilização em linha).",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:24.986Z"
+  },
+  {
+    "id": "AJUDA_c7808549-be98-4ade-8716-2fdaecc6d33e",
+    "originalId": "c7808549-be98-4ade-8716-2fdaecc6d33e",
+    "statement": "Lactente de 10 meses de vida, sexo masculino, iniciou febre de 38,8 Cº há cerca de 6 dias, procurou serviço médico de Pediatra apresentando bom estado geral e sem alterações ao exame físico normal. O exame de urina tipo I por saco coletor mostrou 50.000 leucócitos/mm3 e 13.000 hemácias/mm3. Qual a conduta a ser realizada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação para iniciar antibiótico por via parenteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colher urocultura e administrar antibiótico por via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Colher urocultura através de punção suprapúbica e administrar antibiótico por via parenteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colher urocultura por sondagem vesical e administrar anti-inflamatório oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Observar a evolução do quadro e reavaliar com 72 horas para decidir sobre a terapêutica a ser adotada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a conduta diante de uma suspeita de Infecção do Trato Urinário (ITU) em um lactente febril. O paciente tem 10 meses e apresenta febre de início recente (embora já dure 6 dias), sem foco aparente ao exame físico, mas com alteração no exame de urina.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A internação e o uso de antibióticos por via parenteral (intravenosa ou intramuscular) são indicados para lactentes com sinais de sepse, toxemia, desidratação, incapacidade de ingestão oral (vômitos) ou para aqueles com idade inferior a 2 ou 3 meses. Como o lactente apresenta bom estado geral, o tratamento pode ser realizado de forma ambulatorial.\n\nAlternativa b: Correta. Em lactentes com febre sem sinais de localização, a ITU deve ser sempre pesquisada. O exame de urina tipo I colhido por saco coletor tem um alto valor preditivo negativo (se vier normal, ajuda a excluir a infecção), mas um baixo valor preditivo positivo, pois a contaminação é comum. Diante de um resultado alterado e febre prolongada (6 dias), o próximo passo é a coleta de urocultura (método padrão-ouro) e o início imediato da antibioticoterapia empírica por via oral, já que o paciente está clinicamente estável. Vale ressaltar que, para a urocultura ser fidedigna em lactentes sem controle esfincteriano, a coleta deve ser feita preferencialmente por sondagem vesical ou punção suprapúbica.\n\nAlternativa c: Incorreta. Embora a punção suprapúbica seja o método de coleta com menor taxa de contaminação, ela é um procedimento invasivo e não é a primeira escolha na rotina, sendo a sondagem vesical mais comum. Além disso, como mencionado, o bom estado geral dispensa o uso inicial de antibióticos parenterais.\n\nAlternativa d: Incorreta. A coleta por sondagem vesical está correta para um diagnóstico preciso em lactentes, mas a conduta terapêutica está errada. Anti-inflamatórios não tratam o processo infeccioso bacteriano da via urinária; o tratamento exige o uso de antibióticos.\n\nAlternativa e: Incorreta. Aguardar mais 72 horas para reavaliação seria perigoso. O paciente já está com febre há 6 dias e apresenta leucocitúria significativa. O atraso no início do tratamento antibiótico em casos de ITU aumenta o risco de cicatrizes renais permanentes e de progressão para urossepse.\n\nResumo do raciocínio: Lactente febril com urina alterada e bom estado geral deve ter urocultura colhida (por método fidedigno) e iniciar antibiótico via oral enquanto aguarda o resultado do crescimento bacteriano.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:24.986Z"
+  },
+  {
+    "id": "AJUDA_c78169af-5b34-41e5-9d35-77ef832124c8",
+    "originalId": "c78169af-5b34-41e5-9d35-77ef832124c8",
+    "statement": "Gestante de 19 anos, primigesta e nulípara, veio para nova consulta pré-natal, no dia 27 de julho de 2026, referindo que está no 5º mês de gestação e assintomática. Fez várias ultrassonografias e refere ainda que tinha ciclos regulares e sabia o momento da sua ovulação todos os meses. Abaixo seguem os dados informados pela paciente e as ultrassonografias anteriores com suas idades gestacionais na época do exame:\n- Primeiro dia da última menstruação: 16 de fevereiro de 2026.\n- Data da 1ª ultrassonografia: 27 de março de 2026 (calculada pelo diâmetro médio do saco gestacional – 4 semanas).\n- Data da 2ª ultrassonografia: 29 de abril de 2026 (IG: calculada pela média do diâmetro biparietal, circunferência abdominal e comprimento do fêmur – 11 semanas).\n- Data da 3ª ultrassonografia: 20 de maio de 2026 (IG: calculada pelo comprimento céfalo-nadegas – 13 semanas e 6\ndias).\n- Data da 4ª ultrassonografia: 06 de junho de 2026 (IG: 17 semanas).\n\nDiante desses dados, qual a idade gestacional CORRETA para acompanhamento da gravidez no dia da consulta de prénatal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "21 semanas e 3 dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "23 semanas e 0 dia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "23 semanas e 4 dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "24 semanas e 2 dias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "23 semanas e 5 dias",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Este é um tema clássico em provas de residência: a datação da gravidez. Para resolver essa questão, precisamos aplicar a hierarquia dos métodos de datação da Idade Gestacional (IG).\n\nANÁLISE DOS DADOS E CRITÉRIOS DE ESCOLHA:\n\n1. Data da Última Menstruação (DUM): 16/02/2026.\n2. 1ª USG (27/03): 4 semanas pelo Saco Gestacional. O saco gestacional é um parâmetro impreciso (margem de erro de +/- 1 a 2 semanas).\n3. 2ª USG (29/04): 11 semanas por múltiplos diâmetros.\n4. 3ª USG (20/05): 13 semanas e 6 dias pelo Comprimento Céfalo-Nádegas (CCN).\n5. 4ª USG (06/06): 17 semanas.\n\nREGRA DE OURO NA OBSTETRÍCIA:\nO parâmetro ultrassonográfico mais fiel para datar uma gravidez é o Comprimento Céfalo-Nádegas (CCN) realizado no primeiro trimestre (preferencialmente entre 7 e 13 semanas e 6 dias). Ele tem uma margem de erro de apenas 3 a 5 dias.\n\nEmbora a DUM tenha sido fornecida (16/02), devemos validá-la pelo primeiro USG disponível que tenha CCN. A 3ª USG foi feita em 20/05, exatamente no limite superior do CCN (13 semanas e 6 dias).\n\nCÁLCULO DA IDADE GESTACIONAL:\nVamos usar a 3ª USG como referência, pois é a mais precisa tecnicamente:\n- Em 20/05/2026, a paciente tinha 13 semanas e 6 dias.\n- Queremos saber a IG em 27/07/2026.\n\nContagem dos dias de intervalo:\n- Restante de Maio: 11 dias (31 - 20)\n- Junho: 30 dias\n- Julho: 27 dias\nTotal: 11 + 30 + 27 = 68 dias.\n\nConversão para semanas:\n68 dias / 7 = 9 semanas e 5 dias.\n\nSoma com a IG inicial:\n13 semanas e 6 dias + 9 semanas e 5 dias = 22 semanas e 11 dias.\nComo 11 dias = 1 semana e 4 dias, temos:\n22 semanas + 1 semana + 4 dias = 23 semanas e 4 dias.\n\nIMPORTANTE: A questão nos diz que a DUM é 16/02. Vamos verificar a concordância:\nDe 16/02 até 27/07:\n- Fevereiro: 12 dias (28 - 16)\n- Março: 31 dias\n- Abril: 30 dias\n- Maio: 31 dias\n- Junho: 30 dias\n- Julho: 27 dias\nTotal: 161 dias.\n161 / 7 = 23 semanas exatas.\n\nCONFLITO E DECISÃO:\nEm provas, quando a DUM é conhecida e regular e o USG do primeiro trimestre é concordante (diferença menor que 7 dias), utiliza-se a DUM.\nDiferença entre DUM e a melhor USG (a de 20/05):\nPela DUM, em 20/05 seriam 13 semanas e 3 dias.\nPela USG, em 20/05 eram 13 semanas e 6 dias.\nA diferença é de apenas 3 dias (menor que 7 dias). Portanto, a DUM (16/02/2026) é o parâmetro legal e clínico para o acompanhamento.\n\nCÁLCULO FINAL PELA DUM:\n161 dias totalizados de 16/02 a 27/07.\n161 dividido por 7 = 23 semanas e 0 dias.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. 21 semanas e 3 dias seria um cálculo subestimado, possivelmente ignorando o calendário correto ou usando a USG de 4 semanas (pouco precisa).\n\nb) Correta. Ao validar a DUM (16/02) com a ultrassonografia de primeiro trimestre (CCN em 20/05), notamos que a diferença é menor que 5-7 dias. Assim, mantém-se a DUM para o cálculo, resultando em 23 semanas cravadas no dia 27/07.\n\nc) Incorreta. 23 semanas e 4 dias seria o resultado se ignorássemos a DUM e utilizássemos exclusivamente o valor absoluto da USG de 20/05. Na prática obstétrica, se a DUM é confiável e a diferença é mínima, a DUM prevalece.\n\nd) Incorreta. Valor superestimado, sem base nos exames apresentados.\n\ne) Incorreta. Valor que não corresponde à aplicação da regra de Naegele ou à validação ultrassonográfica.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:24.986Z"
+  },
+  {
+    "id": "AJUDA_c788b4ae-4484-462a-9c62-d309583974fd",
+    "originalId": "c788b4ae-4484-462a-9c62-d309583974fd",
+    "statement": "As Infecções Sexualmente Transmissíveis (IST) são causadas por vírus, bactérias ou outros microrganismos. Elas são transmitidas, principalmente, por meio do contato sexual (oral, vaginal, anal) sem o uso de camisinha masculina ou feminina, com uma pessoa que esteja infectada. A vacina seria um recurso importante para prevenir essas infecções. Existe vacina contra a seguinte IST:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tricomoníase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sífilis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hepatite B.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda a disponibilidade de imunobiológicos para a prevenção de Infecções Sexualmente Transmissíveis (IST). Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) Incorreta. A tricomoníase é uma infecção causada pelo protozoário *Trichomonas vaginalis*. Atualmente, não existe vacina disponível para prevenir essa patologia. As medidas preventivas baseiam-se fundamentalmente no uso de preservativos e no tratamento simultâneo dos parceiros sexuais para evitar a reinfecção.\n\nAlternativa (b) Incorreta. A sífilis é causada pela bactéria *Treponema pallidum*. Apesar de ser uma doença antiga e bem conhecida, ainda não há uma vacina aprovada para uso em seres humanos. O controle da transmissão depende da educação em saúde, triagem sorológica frequente e tratamento precoce com penicilina.\n\nAlternativa (c) Incorreta. O HIV (Vírus da Imunodeficiência Humana) é objeto de extensas pesquisas há décadas. No entanto, devido à alta taxa de mutação do vírus e à sua complexa interação com o sistema imunológico, ainda não foi desenvolvida uma vacina eficaz para uso populacional. A prevenção atual foca no uso de preservativos, na Profilaxia Pré-Exposição (PrEP) e na Profilaxia Pós-Exposição (PEP).\n\nAlternativa (d) Correta. A hepatite B, causada pelo vírus HBV, é uma IST para a qual existe vacinação segura e altamente eficaz. A vacina contra a hepatite B faz parte do Programa Nacional de Imunizações (PNI) e é recomendada para todas as faixas etárias, sendo fundamental para a prevenção da transmissão sexual, vertical e parenteral do vírus. Vale ressaltar que, além da hepatite B, o HPV é a outra grande IST que possui vacina disponível na rede pública.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hepatites Virais",
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:24.986Z"
+  },
+  {
+    "id": "AJUDA_c7958099-44bb-443a-92d6-74c0002c3781",
+    "originalId": "c7958099-44bb-443a-92d6-74c0002c3781",
+    "statement": "95- Uma médica de família e comunidade atende uma adolescente de 14 anos acompanhada pela tia. A médica observa múltiplos hematomas em diferentes estágios de cicatrização nos braços e costas da menina. Ao conversar em particular com a adolescente, esta revela, após a construção de um vínculo de confiança, que tem sofrido agressões físicas por parte do seu padrasto, e que sua mãe é conivente por medo. Considerando o Estatuto da Criança e do Adolescente (ECA) e as diretrizes de atenção integral à saúde, qual das seguintes opções descreve a conduta correta e prioritária da médica diante do caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A médica tem o dever legal de realizar a notificação compulsória para fins de vigilância epidemiológica e, simultaneamente, comunicar o fato ao Conselho Tutelar para garantir as medidas de proteção à adolescente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A comunicação ao Conselho Tutelar deve ser feita apenas após a confirmação do diagnóstico com exames de corpo de delito e o consentimento explícito da adolescente e da tia, para não violar o sigilo profissional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A médica deve priorizar a notificação para fins epidemiológicos e aguardar a orientação da gestão da unidade de saúde antes de fazer qualquer comunicação a órgãos externos, como o Conselho Tutelar, para seguir o fluxo institucional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A conduta mais adequada é convocar uma reunião com a mãe e o padrasto para confrontá-los com a suspeita, buscando uma resolução familiar antes de acionar a rede de proteção, a fim de preservar o vínculo familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A resolução desta questão exige o conhecimento do Estatuto da Criança e do Adolescente (ECA - Lei 8.069/1990) e das normas do Ministério da Saúde sobre violência interpessoal. Diante de qualquer suspeita ou confirmação de maus-tratos contra crianças ou adolescentes, o médico tem obrigações legais e éticas que visam à proteção integral do menor.\n\nAnálise das alternativas:\n\nAlternativa (a) - Correta: Esta é a conduta preconizada. Segundo o Artigo 13 do ECA, os casos de suspeita ou confirmação de castigo físico, de tratamento cruel ou degradante e de maus-tratos devem ser obrigatoriamente comunicados ao Conselho Tutelar da respectiva localidade. Além disso, a violência contra crianças e adolescentes é um agravo de notificação compulsória (Portaria de Consolidação nº 4/2017 do Ministério da Saúde), devendo ser preenchida a ficha do SINAN para fins de vigilância epidemiológica. Portanto, são duas ações paralelas e complementares: a notificação para fins de dados estatísticos e a comunicação para fins de proteção social e jurídica.\n\nAlternativa (b) - Incorreta: A lei é clara ao afirmar que a simples suspeita já obriga a comunicação ao Conselho Tutelar. Aguardar exames de corpo de delito ou a confirmação absoluta retardaria a proteção da vítima e a colocaria em risco. Além disso, em casos de violência contra menores, o dever legal de notificação se sobrepõe ao sigilo profissional, não sendo necessário o consentimento dos responsáveis, especialmente quando estes são os supostos agressores ou coniventes.\n\nAlternativa (c) - Incorreta: O fluxo de proteção à criança e ao adolescente deve ser ágil. Embora protocolos institucionais existam, a médica tem a responsabilidade individual e legal de comunicar o órgão de proteção (Conselho Tutelar). Aguardar orientações da gestão ou trâmites burocráticos internos fere o princípio da prioridade absoluta e da urgência na proteção do menor em situação de risco.\n\nAlternativa (d) - Incorreta: Confrontar o padrasto e a mãe é uma conduta contraindicada e perigosa. Isso pode aumentar o risco de novas agressões contra a adolescente, provocar a fuga da família ou colocar em risco a própria segurança da equipe de saúde. O papel do médico é acolher a vítima, tratar as lesões, garantir a proteção por meio dos órgãos competentes (Conselho Tutelar, Ministério Público ou delegacias especializadas) e registrar o caso, não atuar como mediador de conflitos domésticos violentos ou investigador.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Vigilância em Saúde",
+      "Maus Tratos",
+      "Ética Médica",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:24.986Z"
+  },
+  {
+    "id": "AJUDA_c7a0339f-ccb3-4b42-9068-f543f1e48cb0",
+    "originalId": "c7a0339f-ccb3-4b42-9068-f543f1e48cb0",
+    "statement": "Helena, 27 anos de idade, G2P2, comparece à Unidade Básica de Saúde 45 dias após parto vaginal sem complicações. Encontra-se em amamentação exclusiva, sem retorno da menstruação, e relata bom suporte familiar. Deseja evitar nova gestação por, pelo menos, dois anos e apresenta dúvida quanto ao uso de contraceptivos, afirmando ter ouvido que “a pílula pode secar o leite”. \nConforme as diretrizes do Ministério da Saúde e da FEBRASGO, assinale a alternativa que apresenta a conduta mais adequada para o planejamento reproutivo dessa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar anticoncepcional combinado oral imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Oferecer laqueadura tubária imediata por conveniência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever anticoncepcional injetável combinado mensal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Recomendar aguardar a volta da menstruação para iniciar anticoncepção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar método de amenorreia lactacional (LAM) e discutir opções de longa duração.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do caso clínico:\nHelena está com 45 dias de pós-parto, em amamentação exclusiva e amenorreia. Ela deseja contracepção por pelo menos dois anos. O principal ponto para resolver esta questão é o conhecimento sobre os Critérios Médicos de Elegibilidade da OMS e as recomendações da FEBRASGO/Ministério da Saúde para lactantes.\n\nAlternativa A - Incorreta. Os anticoncepcionais combinados (que contêm estrogênio) são contraindicados para mulheres que amamentam até o 6º mês pós-parto. O estrogênio pode interferir negativamente na produção (quantidade) e na composição (qualidade) do leite materno.\n\nAlternativa B - Incorreta. A laqueadura tubária é um procedimento definitivo. A paciente deseja evitar a gestação por dois anos, o que indica necessidade de um método reversível. Além disso, a legislação brasileira estabelece critérios rigorosos para esterilização voluntária, incluindo prazo mínimo de 60 dias entre a manifestação do desejo e a cirurgia, não sendo indicada de forma \"imediata por conveniência\" nesse contexto.\n\nAlternativa C - Incorreta. O anticoncepcional injetável mensal é um método combinado (contém um estrogênio e um progestogênio). Assim como a pílula combinada, é contraindicado para lactantes antes dos 6 meses pós-parto devido aos prejuízos potenciais à amamentação.\n\nAlternativa D - Incorreta. Orientar a paciente a aguardar a menstruação para iniciar a contracepção é uma conduta de risco. A ovulação ocorre antes da primeira menstruação pós-parto, o que pode levar a uma gestação indesejada em um curto intervalo interpartal.\n\nAlternativa E - Correta. O Método da Amenorreia Lactacional (LAM) é uma opção válida para esta paciente, pois ela cumpre os três requisitos de eficácia: amamentação exclusiva, ausência de menstruação (amenorreia) e está dentro dos primeiros 6 meses pós-parto. Entretanto, como o LAM perde a validade após os 6 meses ou caso ocorra mudança no padrão de amamentação, a discussão sobre métodos de longa duração (LARCs) é ideal. O DIU de cobre, o DIU de levonorgestrel e o implante subdérmico de etonogestrel são excelentes opções para quem deseja espaçamento de 2 anos, pois não interferem no leite materno e apresentam altíssima eficácia.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno",
+      "Planejamento Familiar"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:24.986Z"
+  },
+  {
+    "id": "AJUDA_c7a4e95a-bcd3-4d59-b2dd-e0ff9a639c13",
+    "originalId": "c7a4e95a-bcd3-4d59-b2dd-e0ff9a639c13",
+    "statement": "Paciente masculino de 35 anos, vítima de acidente automobilístico, é admitido no pronto-socorro com múltiplas fraturas e hemotórax à direita. Sobre a resposta orgânica ao trauma, qual das alternativas abaixo está mais ADEQUADA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A resposta inflamatória sistêmica ao trauma é mediada exclusivamente por citocinas pró-inflamatórias, como TNF-α e IL-6, e há aumento da ação do cortisol e da insulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A resposta orgânica ao trauma envolve um desequilíbrio entre os sistemas pró e anti-inflamatórios, aumentando o risco de sepse e falência orgânica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A ativação do eixo hipotálamo-hipófise-adrenal é irrelevante na resposta ao trauma, sendo suprimida pela ação das catecolaminas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A resposta inflamatória ao trauma é sempre benéfica e suficiente para prevenir infecções secundárias, não sendo necessário monitoramento laboratorial contínuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a Resposta Endócrina, Metabólica e Imunológica ao Trauma (REMIT), um tema fundamental na cirurgia e terapia intensiva.\n\nAlternativa (a) Incorreta. A resposta inflamatória não é mediada exclusivamente por citocinas pró-inflamatórias (como TNF-alfa, IL-1, IL-6); ela envolve também uma contrarresposta anti-inflamatória (mediada por IL-10, por exemplo). Além disso, embora o cortisol realmente aumente, ocorre uma resistência periférica à ação da insulina. Isso significa que, apesar de poder haver níveis elevados de insulina, sua eficácia está diminuída, resultando em hiperglicemia de estresse.\n\nAlternativa (b) Correta. O trauma desencadeia a Síndrome da Resposta Inflamatória Sistêmica (SIRS) e, simultaneamente ou logo em seguida, a Síndrome da Resposta Anti-inflamatória Compensatória (CARS). O equilíbrio entre essas duas forças é crucial. Se a resposta pró-inflamatória for excessiva, ocorre dano tecidual e falência orgânica; se a resposta anti-inflamatória for predominante, o paciente entra em um estado de imunoparalisia, aumentando significativamente o risco de infecções secundárias e sepse.\n\nAlternativa (c) Incorreta. O eixo hipotálamo-hipófise-adrenal é um dos principais componentes da resposta neuroendócrina ao trauma. Ele não é irrelevante, mas sim essencial. A liberação de ACTH pela hipófise estimula as adrenais a produzirem cortisol. As catecolaminas (adrenalina e noradrenalina) atuam em sinergia com esse eixo, e não o suprimem.\n\nAlternativa (d) Incorreta. A resposta inflamatória ao trauma tem um objetivo adaptativo e de sobrevivência inicial, mas não é \"sempre benéfica\". Quando exacerbada, ela se torna a causa de lesões em órgãos distantes do trauma original (como pulmões e rins). O monitoramento laboratorial e clínico contínuo é obrigatório para guiar o suporte ventilatório, hemodinâmico e nutricional desses pacientes.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:24.986Z"
+  },
+  {
+    "id": "AJUDA_c7b93488-0368-41d7-9d79-37c35643b2cc",
+    "originalId": "c7b93488-0368-41d7-9d79-37c35643b2cc",
+    "statement": "O câncer do colo do útero (CCU), também chamado de câncer cervical, é causado pela infecção genital persistente por alguns tipos do Papilomavírus Humano – HPV (chamados de tipos oncogênicos). Esse vírus é sexualmente transmissível, muito frequente na população, e seria evitável o contágio com o uso de preservativos. Na maioria das vezes a infecção não causa doença, mas, em alguns casos, ocorrem alterações celulares que podem evoluir ao longo dos anos para o câncer. A presença do vírus e de lesões pré-cancerosas são identificadas no exame preventivo (conhecido também como Papanicolau), e são curáveis na quase totalidade dos casos. Por isso é importante a realização periódica do exame preventivo. As vacinas contra o HPV são também muito importantes para prevenir infecções por esses vírus e, portanto, prevenir o desenvolvimento deste câncer. Outros fatores de risco para o seu desenvolvimento são o tabagismo e a baixa imunidade. Quanto ao rastreamento do CCU, quais as recomendações do Ministério da Saúde (INCA, 2016)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rastrear os 14 subtipos de HPV independentemente da idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Priorizar a faixa etária dos 25 aos 64 anos, com citologia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Citologia a cada três anos deve ser a conduta atual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Se lesão de baixo grau presente na citologia, deve-se encaminhar para colposcopia imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento das Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, publicadas pelo Ministério da Saúde e pelo INCA.\n\nAlternativa A: Incorreta. No Brasil, o método de rastreamento preconizado pelo Ministério da Saúde é a citopatologia oncótica (exame de Papanicolaou), e não a pesquisa de DNA de HPV como rotina inicial para toda a população. Além disso, o rastreamento não deve ser feito \"independentemente da idade\", mas sim em uma faixa etária específica e em pessoas que já iniciaram a vida sexual.\n\nAlternativa B: Correta. As diretrizes do INCA/Ministério da Saúde estabelecem que o rastreamento deve ser priorizado em mulheres de 25 a 64 anos de idade que já tiveram atividade sexual. O exame de escolha para essa população é a citopatologia oncótica (citologia).\n\nAlternativa C: Incorreta. A periodicidade de três anos não é a regra para todos os momentos. A recomendação oficial é que o exame seja realizado anualmente. Somente após dois resultados consecutivos negativos (normais), com intervalo de um ano entre eles, é que o próximo exame deve ser realizado após três anos. Portanto, a alternativa B define melhor a estrutura do programa de rastreamento.\n\nAlternativa D: Incorreta. Segundo o manual de condutas do INCA, o achado de lesão intraepitelial escamosa de baixo grau (LSIL) não justifica o encaminhamento imediato para colposcopia. A conduta recomendada para mulheres com 25 anos ou mais é repetir a citologia em seis meses. Para mulheres com menos de 25 anos, a recomendação é a repetição em três anos. A colposcopia é indicada apenas se a lesão persistir nos exames de seguimento ou em casos de suspeita de alto grau.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:24.986Z"
+  },
+  {
+    "id": "AJUDA_c7bb5a59-74c1-4313-b019-134c2b382783",
+    "originalId": "c7bb5a59-74c1-4313-b019-134c2b382783",
+    "statement": "O conjunto de orientações sobre como melhor transitar pelas múltiplas possibilidades de organizar o cuidado de pacientes com multimorbidade recebe o nome de Princípios de Ariadne, fazendo referência à personagem da mitologia grega que, por meio de um novelo de lã, auxiliou Teseu a superar o labirinto do Minotauro. Dado o assunto, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter uma lista das condições clínicas apresentadas, com sua gravidade e impacto sobre a saúde, além de listar outros profissionais de saúde envolvidos no cuidado do paciente, é uma forma de avaliar as possíveis interações entre as condições clínicas e os tratamentos do paciente em questão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Envolver o paciente emocionalmente para que ele se renda ao argumento médico e desvie o foco da doença para outros aspectos da saúde é uma forma de habilidade de comunicação que preza pelos desfechos em saúde mais desejados pelo paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Considerar a adequação do plano de cuidado de acordo com as capacidades e as necessidades do paciente é uma forma de individualizar o manejo do alcance das metas terapêuticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acordar com o paciente e com cuidadores, se apropriado, metas terapêuticas realistas é uma forma de explorar as prioridades e as preferências do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Os Princípios de Ariadne surgiram como um guia prático para médicos de família e generalistas lidarem com a complexidade do cuidado em pacientes com multimorbidade (duas ou mais doenças crônicas no mesmo indivíduo). O foco é evitar que o excesso de diretrizes clínicas específicas para cada doença leve à polifarmácia inadequada ou tratamentos conflitantes.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a (Correta): Este item reflete o princípio da Interação. Em pacientes com múltiplas doenças, é vital mapear todas as condições de saúde e os tratamentos em curso (incluindo o que outros especialistas prescrevem). Isso permite identificar interações medicamento-medicamento ou medicamento-doença, garantindo a segurança do paciente e evitando a fragmentação do cuidado.\n\nAlternativa b (Incorreta e Gabarito): O erro desta alternativa está na descrição da habilidade de comunicação. Os Princípios de Ariadne e o Método Clínico Centrado na Pessoa defendem a tomada de decisão compartilhada e a autonomia. A ideia de que o paciente deve se render ao argumento médico ou ser envolvido emocionalmente para ser manipulado fere a ética da relação médico-paciente. A comunicação deve servir para criar um plano comum, e não para impor a vontade do profissional por meio de persuasão emocional.\n\nAlternativa c (Correta): Refere-se ao princípio da Individualização. Na multimorbidade, seguir cegamente diretrizes de uma única doença pode ser prejudicial. O médico deve considerar o contexto social, a capacidade funcional, cognitiva e financeira do paciente para ajustar as metas terapêuticas, tornando o plano de cuidado exequível e benéfico para aquele indivíduo específico.\n\nAlternativa d (Correta): Refere-se aos princípios de Priorização e Acordo. Muitas vezes, o que é prioridade biológica para o médico (ex: um nível rigoroso de hemoglobina glicada) não é a prioridade do paciente (ex: conseguir caminhar sem dor). Estabelecer metas realistas e pactuadas entre médico, paciente e cuidadores evita o sobretratamento e foca na qualidade de vida e nos desfechos que o paciente realmente valoriza.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:47:24.986Z"
+  }
+]

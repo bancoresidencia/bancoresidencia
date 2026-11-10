@@ -1,0 +1,490 @@
+[
+  {
+    "id": "AJUDA_39cbcbd0-3c83-47d6-b16f-db343b10c956",
+    "originalId": "39cbcbd0-3c83-47d6-b16f-db343b10c956",
+    "statement": "Lactente de 2 meses de idade, em aleitamento materno exclusivo, inicia quadro de fezes com sangue, e o pediatra, após investigação clínica e laboratorial, suspeita de alergia à proteína do leite de vaca. Assinale a afirmação correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O diagnóstico não é possível, pois o bebê mama apenas leite materno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico é possível, sendo recomendada a substituição do leite materno por fórmula especial para alergia ao leite de vaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico é possível, sendo indicada a dieta de restrição de proteína do leite de vaca para a nutriz.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico é possível, sendo recomendada a substituição do leite materno por fórmula infantil de partida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a Proctocolite Alérgica, uma das formas de apresentação da Alergia à Proteína do Leite de Vaca (APLV) no lactente jovem.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O diagnóstico é possível e bem documentado na literatura médica. Embora o bebê consuma apenas leite materno, as proteínas do leite de vaca ingeridas pela mãe podem atravessar a barreira mamária e ser excretadas no leite humano. O sistema imunológico do lactente reconhece essas proteínas como estranhas, gerando a reação alérgica e a consequente inflamação intestinal com perda de sangue nas fezes.\n\nAlternativa b: Incorreta. O aleitamento materno é o padrão-ouro da alimentação infantil e deve ser mantido sempre que possível. A substituição por fórmulas especiais (como as extensamente hidrolisadas ou de aminoácidos) só é considerada em casos excepcionais, como na impossibilidade de a mãe manter a dieta ou em quadros graves que não respondem à restrição dietética materna.\n\nAlternativa c: Correta. Esta é a conduta recomendada pelos consensos nacionais e internacionais. Diante da suspeita de APLV em um lactente amamentado exclusivamente, a mãe deve iniciar uma dieta com exclusão total de leite de vaca e seus derivados. Se houver melhora dos sintomas, o diagnóstico é reforçado e, após o teste de desencadeamento oral (reintrodução da proteína na dieta materna), o diagnóstico é confirmado.\n\nAlternativa d: Incorreta. As fórmulas infantis de partida são produzidas a partir do leite de vaca integral. Oferecer esse tipo de fórmula para um lactente com suspeita de APLV seria oferecer o próprio agente causador da alergia, o que agravaria o sangramento e os demais sintomas gastrointestinais.\n\nEm resumo, para o tratamento da APLV no lactente em aleitamento exclusivo, o alvo da intervenção dietética é a mãe, preservando o aleitamento materno e garantindo a recuperação do paciente.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Alergia Alimentar"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:21.015Z"
+  },
+  {
+    "id": "AJUDA_39d53cca-fa92-428a-8218-f64e3197147c",
+    "originalId": "39d53cca-fa92-428a-8218-f64e3197147c",
+    "statement": "Um grupo de pesquisadores brasileiros analisou dados do Programa Nacional de Imunizações (PNI) entre os anos de 2013 e 2020, com o objetivo de avaliar o impacto da pandemia de COVID 19 sobre a cobertura vacinal de crianças com até 12 meses de idade. Foram incluídas dez vacinas do calendário nacional infantil e os dados foram obtidos a partir de bancos públicos do DATASUS. Observou-se que, em 2020, nove vacinas atingiram seus menores índices históricos de cobertura e a média geral caiu de 84,44% em 2019 para 75,07% em 2020. O estudo não analisou indivíduos, mas sim tendências populacionais ao longo do tempo, utilizando dados agregados por ano em nível nacional. A Tabela 1 mostra as coberturas vacinais de 2013 a 2020.\n\nQual é o tipo de delineamento deste estudo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Caso controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transversal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Levantamento epidemiológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Coorte prospectivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O estudo apresentado analisa dados secundários e agregados obtidos a partir de bancos de dados públicos de sistemas de informação em saúde (DATASUS/PNI), avaliando o comportamento temporal de indicadores de cobertura vacinal em nível populacional (e não individual). Trata-se de um estudo ecológico de série temporal ou descritivo.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O estudo de caso-controle é observacional, analítico e individualizado. Nele, parte-se de indivíduos com o desfecho (casos) e sem o desfecho (controles) para investigar retrospectivamente exposições passadas. O enunciado enfatiza que a análise não foi realizada em indivíduos, mas sim com dados agregados.\n\nAlternativa b: Incorreta. O estudo transversal (seccional) avalia exposição e desfecho simultaneamente em um único ponto no tempo (como uma fotografia), a nível individual. A pesquisa em questão avaliou a evolução temporal de indicadores ao longo de vários anos (2013 a 2020), caracterizando uma série temporal ecológica e não um corte transversal individualizado.\n\nAlternativa c: Correta. O termo levantamento epidemiológico engloba estudos observacionais descritivos que utilizam dados de sistemas de vigilância e registros em saúde para quantificar e descrever a magnitude, a distribuição e o comportamento de eventos ou indicadores de saúde (como as taxas de cobertura vacinal) em uma população.\n\nAlternativa d: Incorreta. O estudo de coorte prospectivo acompanha longitudinalmente grupos de indivíduos inicialmente livres do desfecho, classificados segundo a exposição, para observar a incidência da doença ou agravo no futuro. É um desenho individualizado e prospectivo, diferente do uso de dados secundários agregados.\n\nAssociação com a imagem (Tabela 1):\nA Tabela 1 corrobora o caráter ecológico e de levantamento de dados do estudo. Nela, as unidades de observação não são pacientes, mas sim percentuais anuais consolidados de cobertura para cada vacina entre 2013 e 2020 no Brasil. Esses valores agregados permitem demonstrar a tendência de queda histórica na cobertura vacinal no país, culminando na média geral de 75,07% em 2020.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/eefe68d252d3d1eba77fbdf25d8d923502f645d947c11127cfceca3bdd2f9a31.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_39d53cca-fa92-428a-8218-f64e3197147c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:21.546Z"
+  },
+  {
+    "id": "AJUDA_39d890b1-3005-41f1-895c-7d053f9038f1",
+    "originalId": "39d890b1-3005-41f1-895c-7d053f9038f1",
+    "statement": "Menina de 9 anos com epilepsia de difícil controle chega na emergência pediátrica em crise tônico-clônica generalizada iniciada há 15 minutos, sem resposta ao diazepam retal administrado pela mãe em casa. Na unidade, está em crise contínua, com necessidade de oxigênio suplementar. Mesmo após 3 tentativas em 2 minutos pela equipe de enfermagem, não há acesso venoso. A equipe prepara material para acesso intraósseo e medicação. Considerando o caso descrito, qual é a conduta mais indicada para interromper o estado epiléptico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar fenobarbital pela via intraóssea, por ser mais seguro em crianças com epilepsia conhecida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar infusão rápida de fenitoína, por ser um agente de segunda escolha para casos refratários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir diazepam retal em maior dose, pois o intervalo entre as doses ainda é curto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar midazolam intramuscular, visto que é eficaz, seguro e viável sem acesso venoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso descreve uma criança em estado de mal epiléptico (EME), definido classicamente como uma crise convulsiva com duração superior a 5 minutos ou crises repetidas sem recuperação da consciência entre elas. A paciente já ultrapassou os 15 minutos de crise, o que exige intervenção imediata para evitar danos neurológicos.\n\nNa abordagem inicial do EME, os benzodiazepínicos são as drogas de primeira escolha. Quando não há acesso venoso (IV) disponível, o protocolo deve ser adaptado para vias alternativas rápidas e eficazes.\n\nAnálise das alternativas:\n\na) Incorreta. O fenobarbital é geralmente considerado uma medicação de segunda ou terceira linha (exceto em neonatos). Embora possa ser administrado pela via intraóssea, ele não é a primeira escolha para interromper a crise aguda antes de se esgotarem as tentativas com benzodiazepínicos por vias mais rápidas. Além disso, o acesso intraósseo ainda está sendo preparado, enquanto a via intramuscular é imediata.\n\nb) Incorreta. A fenitoína é uma droga de segunda linha, utilizada para manutenção e para evitar a recorrência após a fase inicial de benzodiazepínicos. Ela exige obrigatoriamente um acesso (venoso ou intraósseo) para ser infundida e possui uma velocidade de infusão controlada, não sendo a conduta mais ágil no momento exato em que a equipe ainda prepara o material de punção.\n\nc) Incorreta. A via retal apresenta absorção errática e menor eficácia comparada às vias parenterais. Como a dose administrada em casa já falhou, insistir nessa via em ambiente hospitalar, onde existem opções superiores, retarda o tratamento adequado.\n\nd) Correta. O midazolam intramuscular (IM) é a conduta de escolha para o tratamento do estado de mal epiléptico na ausência de acesso venoso. Diversos estudos e diretrizes internacionais (como o protocolo RAMPART) demonstram que o midazolam IM é tão eficaz quanto o diazepam IV e superior às opções não venosas (como diazepam retal), apresentando rápida absorção sistêmica e facilidade de aplicação imediata, sem necessidade de esperar a obtenção de um acesso intraósseo.\n\nResumo da conduta: No EME, se não há acesso venoso em até 2 ou 3 tentativas, o midazolam IM deve ser administrado prontamente para interromper a atividade convulsiva enquanto se providencia o acesso definitivo (venoso ou intraósseo) para as medicações de segunda linha.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Epilepsias",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:21.546Z"
+  },
+  {
+    "id": "AJUDA_39d8e56a-b7fa-4753-b75a-0f9d09357706",
+    "originalId": "39d8e56a-b7fa-4753-b75a-0f9d09357706",
+    "statement": "Uma paciente de 18 anos de idade comparece ao serviço médico com queixa de dor abdominal baixa e aumento de volume abdominal. Durante a avaliação, foi realizada uma ultrassonografia pélvica, que revelou a presença de uma massa ovariana de, aproximadamente, 8cm. O médico suspeita de um teratoma imaturo.\n\nEm relação ao prognóstico do teratoma imaturo, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O teratoma imaturo é benigno, independentemente do grau de diferenciação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A recorrência é rara após o tratamento inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento cirúrgico não é necessário, pois a observação é suficiente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O prognóstico é geralmente bom, mas depende das características histológicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O teratoma imaturo é uma neoplasia maligna de células germinativas do ovário, sendo o segundo tumor germinativo maligno mais comum, perdendo apenas para o disgerminoma. Diferentemente do teratoma maduro (cisto dermoide), que é benigno, o teratoma imaturo possui tecidos derivados dos três folhetos embrionários, mas com a presença de tecidos embrionários imaturos, predominantemente neuroectoderma.\n\nAnálise das alternativas:\n\na) Incorreta. O teratoma imaturo é, por definição, um tumor maligno. O termo \"imaturo\" indica potencial de invasão e metástase. A confusão comum ocorre com o teratoma maduro, este sim benigno. No teratoma imaturo, o grau de diferenciação (grau histológico de Norris) é o fator que determina a agressividade do tumor.\n\nb) Incorreta. Embora o prognóstico geral seja favorável com o tratamento adequado, o risco de recorrência existe e está diretamente relacionado ao estágio da doença e, principalmente, ao grau histológico (quantidade de tecido neuroepitelial imaturo presente na amostra). Tumores de alto grau (grau 3) têm maior taxa de recidiva se não tratados com quimioterapia adjuvante.\n\nc) Incorreta. O tratamento inicial para o teratoma imaturo é obrigatoriamente cirúrgico. Em pacientes jovens que desejam preservar a fertilidade, realiza-se a salpingo-ooforectomia unilateral com estadiamento cirúrgico completo. A conduta de observação (\"watchful waiting\") não é aplicada a tumores germinativos malignos suspeitos ou confirmados devido ao seu rápido crescimento e potencial de disseminação.\n\nd) Correta. Esta é a alternativa que melhor define a realidade clínica da patologia. O prognóstico dos tumores de células germinativas, incluindo o teratoma imaturo, melhorou drasticamente com o advento da quimioterapia moderna (esquema BEP – Bleomicina, Etoposídeo e Cisplatina). Atualmente, a sobrevida em 5 anos é alta. No entanto, o desfecho clínico depende fundamentalmente do estágio da doença no diagnóstico e das características histológicas, especificamente o grau de imaturidade dos tecidos (Sistema de Graduação de Norris: Graus 1, 2 e 3). Quanto maior o grau, maior o risco de metástases e pior o prognóstico se não houver complementação terapêutica.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:21.546Z"
+  },
+  {
+    "id": "AJUDA_39d93b34-5255-46a2-80b7-42e1860ee1a3",
+    "originalId": "39d93b34-5255-46a2-80b7-42e1860ee1a3",
+    "statement": "Uma mulher de 25 anos e o irmão de 64 anos comparecem na UBS com teste ergométrico (TE) com sinais de isquemia induzida por esforço. Eles relatam recente morte do pai por doença coronariana aos 84 anos. A mulher nega sintomas cardiovasculares e informa que o exame foi solicitado porque ela desejava realizar atividade física. O irmão, que é diabético, hipertenso e tabagista, relata que vinha sentindo dor precordial retroesternal em aperto, que piorava com atividade física intensa e melhorava rapidamente quando reduzia o esforço. Diante dessa situação, o médico solicita uma cintilografia miocárdica com TE para ambos. Como o paciente usava betabloqueador e anlodipina em baixas doses, o médico pediu a suspensão das medicações três dias antes de realizar o exame. \n\n Nesse caso, a conduta do médico está:",
+    "options": [
+      {
+        "id": "A",
+        "text": "inadequada para a mulher, pois o valor pré-teste não sugere risco de coronariopatia; adequada para o homem, pois o exame complementar é necessário para a confirmação do diagnóstico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "inadequada para a mulher, pois o valor pré-teste não sugere risco de coronariopatia; inadequada para o homem, pois não há necessidade de exame complementar, uma vez que o risco pré-teste é suficiente para o diagnóstico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "adequada para a mulher, pois o valor pré-teste indica a necessidade de exame complementar para confirmar o diagnóstico de coronariopatia; adequada para o homem, pois não há dados epidemiológicos suficientes para o diagnóstico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "adequada para a mulher, pois o valor pré-teste indica a necessidade de exame complementar para confirmar o diagnóstico de coronariopatia; inadequada para o homem, pois não há necessidade de exame complementar, já que os dados epidemiológicos são suficientes para o diagnóstico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o raciocínio clínico baseado na probabilidade pré-teste para o diagnóstico de Doença Arterial Coronariana (DAC) e a aplicação criteriosa de exames complementares.\n\nAnálise do caso da mulher (25 anos):\nA paciente é jovem, assintomática e não possui fatores de risco significativos (a morte do pai aos 84 anos não é considerada história familiar precoce, que seria antes dos 55 anos para homens). A probabilidade pré-teste de DAC nessa paciente é muito baixa. Solicitar um teste ergométrico para \"check-up\" em pacientes de baixo risco frequentemente resulta em resultados falso-positivos, como ocorreu aqui. Indicar uma cintilografia para prosseguir a investigação de um achado que, estatisticamente, é um falso-positivo é uma conduta inadequada.\n\nAnálise do caso do homem (64 anos):\nO paciente apresenta múltiplos fatores de risco (idade, diabetes, hipertensão, tabagismo) e um quadro clínico de angina típica (dor retroesternal em aperto, desencadeada pelo esforço e aliviada pelo repouso). Em um homem idoso com esses fatores e sintomas clássicos, a probabilidade pré-teste de DAC é muito alta (acima de 90%). Nesses casos, o diagnóstico é clínico, e o exame complementar para fins diagnósticos é desnecessário, pois um resultado negativo teria grandes chances de ser um falso-negativo. O foco aqui deveria ser a estratificação de risco e o início do tratamento, e não a confirmação diagnóstica.\n\nExplicação das alternativas:\n\na) Incorreta. Embora esteja correta quanto à mulher, a conduta para o homem é inadequada porque o diagnóstico clínico já está estabelecido pela altíssima probabilidade pré-teste, tornando o exame para \"confirmação\" redundante e desnecessário para o diagnóstico em si.\n\nb) Correta. A conduta é inadequada para a mulher porque o teste ergométrico inicial não deveria ter sido solicitado devido ao baixíssimo risco, sendo o resultado provavelmente um falso-positivo. É inadequada para o homem porque a probabilidade pré-teste é tão elevada que o diagnóstico de angina está firmado clinicamente, não havendo necessidade de exames de imagem para confirmá-lo.\n\nc) Incorreta. A conduta é inadequada para ambos. Na mulher, o valor pré-teste é baixo (não indica necessidade de exame) e, no homem, os dados epidemiológicos e clínicos são mais do que suficientes para o diagnóstico.\n\nd) Incorreta. Inverte a lógica para a mulher. O valor pré-teste dela não indica necessidade de exame complementar; pelo contrário, contraindica a perseguição de resultados falso-positivos em pacientes de baixo risco. Está correta apenas na parte que diz ser inadequada para o homem.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença Arterial Coronariana Estável (DAC Estável)",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:21.546Z"
+  },
+  {
+    "id": "AJUDA_39dc25dc-e604-4dce-ae7a-735690a00c4a",
+    "originalId": "39dc25dc-e604-4dce-ae7a-735690a00c4a",
+    "statement": "Sobre o uso de fármacos durante o aleitamento materno, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O metimazol não é compatível com a amamentação devido ao risco elevado de hipotireoidismo no lactente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A fluoxetina é compatível com a amamentação, já que seus níveis plasmáticos no lactente são baixos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O ácido valproico não é compatível com a amamentação, pelo risco de causar hepatotoxicidade no lactente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A amiodarona pode ser utilizada de forma criteriosa, já que sua excreção no leite é mínima.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Incorreta. O metimazol é classificado como um fármaco compatível com o aleitamento materno. Em doses terapêuticas habituais (geralmente até 20 mg ou 30 mg por dia), a quantidade da droga transferida para o leite materno é pequena e não costuma afetar a função tireoidiana do lactente. Recomenda-se apenas o acompanhamento clínico do crescimento e desenvolvimento do bebê, sem necessidade de interrupção da amamentação.\n\nAlternativa b) Correta. A fluoxetina é considerada compatível com a amamentação, conforme manuais do Ministério da Saúde e da Academia Americana de Pediatria. Embora apresente uma meia-vida longa em comparação a outros inibidores seletivos da recaptação de serotonina (como a sertralina), a maioria dos estudos demonstra que os níveis plasmáticos da droga no lactente são baixos ou indetectáveis, não causando repercussões clínicas significativas na maior parte dos casos.\n\nAlternativa c) Incorreta. O ácido valproico é compatível com a amamentação. A passagem desse fármaco para o leite materno é muito reduzida devido à sua alta ligação a proteínas plasmáticas na mãe. O risco de hepatotoxicidade ou efeitos hematológicos é descrito para o uso direto do medicamento no paciente, mas é considerado desprezível para o lactente exposto via leite materno em doses terapêuticas.\n\nAlternativa d) Incorreta. A amiodarona é geralmente contraindicada durante a amamentação. Ao contrário do que afirma a alternativa, sua excreção no leite é significativa e o fármaco possui uma concentração muito elevada de iodo. O uso materno de amiodarona coloca o lactente em risco real de desenvolver disfunções tireoidianas (hipotireoidismo ou tireotoxicose) e toxicidade pelo iodo, além de a droga possuir uma meia-vida de eliminação extremamente prolongada, favorecendo o acúmulo no organismo da criança.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:21.546Z"
+  },
+  {
+    "id": "AJUDA_39e4f4d0-649f-45ae-8be1-42b96db42a5f",
+    "originalId": "39e4f4d0-649f-45ae-8be1-42b96db42a5f",
+    "statement": "Paciente, sexo feminino, 14 anos, procura a Unidade Básica de Saúde (UBS) para consulta de rotina. No momento da consulta, está desacompanhada e menciona que quer começar a usar anticoncepcional, pois pretende ter relações sexuais com o namorado, de 18 anos. No que diz respeito à conduta médica, a abordagem mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Explicar para a paciente que ela deve trazer seus pais ou responsáveis para uma nova consulta, pois eles devem estar cientes e autorizar a prescrição do anticoncepcional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar que os responsáveis compareçam em consulta para orientação e autorização da prescrição da pílula, pois por se tratar de uma adolescente, essa decisão deve ser compartilhada com os responsáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar a paciente sobre o uso de preservativos, que não devem ser dispensados mesmo com o uso do anticoncepcional, fornecer instruções sobre o uso correto da pílula e prescrever, conforme solicitado, sem necessidade de contatar os pais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever a pílula, desde que ela se comprometa a trazer um termo de consentimento assinado pelos pais ou responsáveis, e se comprometa a comparecer a cada 30 dias em consulta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o atendimento médico a adolescentes e o sigilo profissional, temas recorrentes em provas de residência e fundamentais na prática clínica da Atenção Primária. O ponto central é o direito à privacidade e à autonomia do adolescente que possui capacidade de discernimento.\n\nDe acordo com o Código de Ética Médica e o Estatuto da Criança e do Adolescente (ECA), o médico deve respeitar o sigilo profissional no atendimento a menores de idade, desde que o paciente tenha capacidade de compreender seu problema e de se autoconduzir. No caso de uma adolescente de 14 anos que busca contracepção por iniciativa própria, entende-se que ela possui discernimento para tal decisão.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O médico não deve condicionar o atendimento ou a prescrição à presença dos pais. Quebrar o sigilo sem que haja risco de vida ou de dano grave à paciente constitui infração ética. A autonomia da adolescente deve ser respeitada se ela for considerada capaz de avaliar sua situação.\n\nAlternativa B: Incorreta. Embora a participação da família seja desejável em muitos contextos, o direito ao sigilo e à privacidade da adolescente prevalece. Exigir autorização dos responsáveis para prescrever anticoncepcional fere o direito à saúde reprodutiva e afasta a jovem do sistema de saúde, aumentando o risco de gravidez indesejada.\n\nAlternativa C: Correta. Esta alternativa reflete a conduta ética e técnica adequada. O médico deve acolher a demanda, avaliar a maturidade da paciente e, constatando o discernimento, fornecer as orientações necessárias. É fundamental orientar sobre a dupla proteção (pílula para evitar gravidez e preservativo para evitar Infecções Sexualmente Transmissíveis - ISTs) e realizar a prescrição, mantendo o sigilo em relação aos pais.\n\nAlternativa D: Incorreta. A exigência de termo de consentimento assinado pelos pais viola o sigilo médico. Além disso, a obrigatoriedade de consultas a cada 30 dias cria uma barreira desnecessária ao acesso ao método contraceptivo, sem justificativa clínica para uma paciente saudável iniciando o uso de pílula.\n\nResumo ético-legal: O sigilo só deve ser rompido em situações excepcionais, como suspeita de abuso sexual, risco de morte ou risco de autoagressão. O início da vida sexual consentida aos 14 anos não se enquadra nessas exceções, e o fornecimento de métodos anticoncepcionais é um direito garantido para a proteção da saúde da adolescente.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Planejamento Familiar",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:21.547Z"
+  },
+  {
+    "id": "AJUDA_39eebad8-ac1f-405f-93da-7664de3b2753",
+    "originalId": "39eebad8-ac1f-405f-93da-7664de3b2753",
+    "statement": "Na vaginose bacteriana, a alternativa medicamentosa ao tratamento com metronidazol é o (a):",
+    "options": [
+      {
+        "id": "A",
+        "text": "Secnidazol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Miconazol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Clindamicina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Fenticonazol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Clotrimazol",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A vaginose bacteriana é uma disbiose da flora vaginal caracterizada pela substituição dos lactobacilos por uma proliferação excessiva de bactérias anaeróbias, especialmente a Gardnerella vaginalis, Mobiluncus spp e Atopobium vaginae. O tratamento padrão de primeira escolha é realizado com o metronidazol, que pode ser administrado por via oral ou vaginal.\n\nA alternativa correta é a letra (c). A clindamicina, um antibiótico da classe das lincosamidas, é a principal alternativa farmacológica ao metronidazol para o tratamento da vaginose bacteriana. Ela é indicada em casos de alergia ou intolerância aos nitroimidazóis, ou conforme a preferência da paciente e disponibilidade do serviço de saúde. Pode ser utilizada na forma de creme vaginal a 2% ou por via oral.\n\nA alternativa (a) está incorreta porque o secnidazol pertence à mesma família do metronidazol (nitroimidazóis). Embora seja uma opção terapêutica eficaz, inclusive com a facilidade da dose única, ele não é considerado a alternativa clássica de escolha quando se busca uma opção distinta da classe dos nitroimidazóis.\n\nAs alternativas (b), (d) e (e) estão incorretas porque miconazol, fenticonazol e clotrimazol são medicamentos antifúngicos da classe dos azóis. Essas drogas são indicadas exclusivamente para o tratamento da candidíase vulvovaginal e não possuem atividade antibacteriana contra os agentes causadores da vaginose bacteriana. Portanto, não servem como substitutos ao metronidazol nesta patologia.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:21.547Z"
+  },
+  {
+    "id": "AJUDA_39f6c31f-46e3-41a0-a54d-ded14ff78e13",
+    "originalId": "39f6c31f-46e3-41a0-a54d-ded14ff78e13",
+    "statement": "Gestante de 29 semanas foi atendida pelo SAMU porque foi vítima de trauma de trânsito grave. Na admissão, a paciente está com múltiplas fraturas em membros superiores e lesões contusas no abdome, com hematoma de parede abdominal. Após a estabilização e primeiro atendimento pela equipe de emergência, solicita-se a avaliação obstétrica. Assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em situações de trauma como a descrita anteriormente, o ultrassom apresenta baixa sensibilidade para identificação do hematoma retroplacentário em sua fase inicial;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico do DPP traumático é clínico. A dor abdominal aguda, de forte intensidade e não ritmada, é o principal preditor clínico de desfecho desfavorável;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A ocorrência do DPP nos casos de acidentes automobilísticos decorre do incremento da pressão negativa que se impõe ao abdome e da falha de tração/tensão da placenta, que não acompanha o movimento uterino;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O cinto de segurança para gestantes deve ser feito de maneira diversa, com nenhuma das faixas passando sobre o útero gravídico, e o dispositivo de airbag deverá ser desligado pelo risco oferecido às gestantes.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o manejo e a fisiopatologia do trauma na gestante, com foco no Descolamento Prematuro de Placenta (DPP) traumático e em medidas preventivas. Para identificar a alternativa incorreta, vamos analisar cada uma delas:\n\nAlternativa a) Correta. Na fase inicial do descolamento de placenta, o ultrassom apresenta sensibilidade limitada (variando de 25% a 50%). O sangue pode ter a mesma ecogenicidade do tecido placentário ou pode ainda não ter se acumulado em volume suficiente para ser visualizado. Portanto, um ultrassom normal não exclui o diagnóstico de DPP.\n\nAlternativa b) Correta. O diagnóstico do DPP é predominantemente clínico, baseado na história de trauma, dor abdominal súbita, hipertonia uterina (útero de madeira) e, por vezes, sangramento vaginal. A dor intensa e contínua é um marcador clínico importante de gravidade e de um possível desfecho desfavorável para o binômio mãe-feto.\n\nAlternativa c) Correta. O mecanismo fisiopatológico do DPP no trauma automobilístico deve-se às forças de desaceleração. Enquanto o miométrio (músculo uterino) é elástico e se deforma durante o impacto, a placenta é um órgão inelástico. Essa diferença de flexibilidade gera uma força de cisalhamento na interface entre a placenta e o útero, levando ao descolamento.\n\nAlternativa d) Incorreta (Gabarito). Esta alternativa contém dois erros graves de orientação técnica. Primeiro, o cinto de segurança de três pontos deve ser usado rotineiramente pela gestante; a faixa subabdominal deve passar abaixo do útero (sobre as cristas ilíacas e a sínfise púbica) e a faixa diagonal deve passar entre as mamas, nunca sendo abolida. Segundo, o airbag nunca deve ser desligado. Estudos mostram que o airbag, quando associado ao uso correto do cinto de segurança, reduz a mortalidade materna e não aumenta o risco de lesão fetal ou DPP. A recomendação é apenas afastar o banco o máximo possível do painel ou volante.\n\nPortanto, a alternativa d é a incorreta, pois recomenda condutas de segurança (desligar o airbag e mudar drasticamente a configuração do cinto) que contrariam as evidências científicas de proteção à gestante.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:21.547Z"
+  },
+  {
+    "id": "AJUDA_39f7cd20-4c23-4650-80b6-bc514c32447d",
+    "originalId": "39f7cd20-4c23-4650-80b6-bc514c32447d",
+    "statement": "Paciente submetido a cirurgia de tireoidectomia total com esvaziamento nível VI por carcinoma papilífero de tireoide, sem intercorrências intraoperatórias. Alguns minutos após a extubação, o paciente cursou com estridor e necessidade de uso de musculatura acessória para respirar.\nQual estrutura deve ter sido comprometida durante a cirurgia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nervos laríngeos inferiores.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pleura visceral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Parede posterior traqueia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Paratireoides.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a letra (a).\n\nAnálise do Caso Clínico:\nO paciente apresentou estridor e insuficiência respiratória aguda (uso de musculatura acessória) imediatamente após a extubação em uma cirurgia de tireoidectomia total associada ao esvaziamento cervical de nível VI (compartimento central). O estridor é um sinal patognomônico de obstrução de via aérea superior. No contexto cirúrgico da tireoide, a causa mais temida para esse evento imediato é a paralisia das pregas vocais por lesão nervosa.\n\nAlternativa (a): Correta. Os nervos laríngeos inferiores, também chamados de nervos laríngeos recorrentes, passam pelo compartimento central do pescoço (nível VI), exatamente onde foi realizado o esvaziamento ganglionar. Esses nervos inervam quase todos os músculos intrínsecos da laringe, incluindo o músculo cricoaritenoideo posterior, que é o único responsável por abrir (abduzir) as pregas vocais. Uma lesão bilateral desses nervos faz com que as pregas vocais fiquem paralisadas na linha média ou posição paramediana, obstruindo a passagem do ar assim que o tubo orotraqueal é removido, gerando estridor e necessidade de reintubação ou traqueostomia de urgência.\n\nAlternativa (b): Incorreta. A lesão da pleura visceral poderia ocorrer em cirurgias de bócio mergulhante ou esvaziamentos cervicais muito baixos, resultando em pneumotórax. O quadro clínico seria de desconforto respiratório com redução do murmúrio vesicular no pulmão afetado, mas não causaria estridor, que é um ruído de via aérea superior.\n\nAlternativa (c): Incorreta. A lesão da parede posterior da traqueia (membranácea) poderia causar enfisema subcutâneo, pneumomediastino ou fístulas, mas não é a causa típica de obstrução glótica e estridor imediato após a extubação.\n\nAlternativa (d): Incorreta. O comprometimento das paratireoides leva ao hipoparatireoidismo e consequente hipocalcemia. Embora a hipocalcemia aguda e grave possa causar laringoespasmo, esse sintoma costuma aparecer entre 24 a 72 horas após a cirurgia, conforme os níveis de cálcio caem progressivamente, e não minutos após a extubação. Além disso, o laringoespasmo por cálcio é precedido por outros sinais de irritabilidade neuromuscular (sinais de Chvostek e Trousseau).",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:21.547Z"
+  }
+]

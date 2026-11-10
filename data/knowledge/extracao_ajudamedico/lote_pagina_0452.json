@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_7f7ec331-9f31-4f1f-9a13-87a8d65da26c",
+    "originalId": "7f7ec331-9f31-4f1f-9a13-87a8d65da26c",
+    "statement": "Lactente, sexo feminino, com 10 meses de idade, com esquema vacinal completo para a idade (incluindo as duas doses da vacina pneumocócica conjugada 13 valente e Haemophilus influenzae tipo b), é levada ao pronto-socorro com história de febre de 39.2°C (axilar) há 24 horas. A mãe refere que a criança está irritada, mas consegue mamar bem e interage com o ambiente. Ao exame físico, não há sinais localizatórios de infecção. Os exames laboratoriais realizados na emergência mostram hemograma com leucócitos totais de 16.000/mm³ (com neutrófilos de 8.500/mm³) e urina tipo I normal. Com base nas diretrizes de manejo da febre sem sinais localizatórios (FSSL) para essa faixa etária, da Sociedade Brasileira de Pediatria, qual é a conduta mais adequada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar radiografia de tórax e iniciar antibioticoterapia empírica, devido à febre elevada em lactente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coletar hemocultura e urocultura por cateterismo vesical para investigação de Infecção Bacteriana Grave (IBG).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internar a paciente para observação clínica e investigação estendida, considerando a febre sem causa aparente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientar os pais sobre os sinais de alerta para piora clínica e alta hospitalar, com reavaliação ambulatorial em 24 – 48 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Realizar punção lombar para análise do líquido cefalorraquidiano, dada a idade e a ausência de foco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO:\nO caso clínico apresenta uma lactente de 10 meses de idade com Febre Sem Sinais Localizatórios (FSSL). Para definir a conduta nesta faixa etária (3 a 36 meses), os critérios fundamentais são o estado geral da criança e o seu status vacinal. A paciente está em bom estado geral (interage, mama bem), possui vacinação completa para pneumococo (13-valente) e *Haemophilus influenzae* tipo b, e apresenta exames iniciais (leucograma e urina tipo I) sem alterações significativas.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\nDe acordo com as diretrizes da Sociedade Brasileira de Pediatria (SBP), lactentes entre 3 e 36 meses que estão com o esquema vacinal em dia e apresentam bom estado geral têm um risco de bacteremia oculta extremamente baixo (menor que 0,5%). O principal foco bacteriano a ser excluído nessa idade é a Infecção do Trato Urinário (ITU). Como a paciente apresenta urina tipo I normal e não tem sinais de toxemia, a conduta recomendada é a observação clínica domiciliar. É essencial orientar os pais sobre sinais de alerta (como piora do estado geral ou persistência da febre) e garantir uma reavaliação médica em 24 a 48 horas.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: A radiografia de tórax é indicada apenas se houver sinais de comprometimento respiratório (tosse, taquipneia, esforço respiratório ou ausculta alterada). O uso de antibiótico empírico não deve ser feito em crianças com bom estado geral e sem foco infeccioso definido, sob risco de uso desnecessário de medicação.\n\nAlternativa B: A hemocultura não é obrigatória para lactentes vacinados com bom estado geral e sem alterações laboratoriais importantes. Quanto à urocultura, embora seja o padrão-ouro para ITU, a negatividade da triagem inicial (urina tipo I normal) em uma criança de baixo risco permite o acompanhamento ambulatorial sem a necessidade imediata de cateterismo vesical no pronto-socorro.\n\nAlternativa C: A internação hospitalar é reservada para crianças com sinais de toxemia (má perfusão, letargia, irritabilidade persistente), suspeita de sepse, lactentes menores de 30 dias ou quando há impossibilidade de seguimento ambulatorial pela família. A paciente em questão está clinicamente estável.\n\nAlternativa E: A punção lombar está indicada na presença de sinais clínicos de meningite (como abaulamento de fontanela ou rigidez de nuca) ou em quadros de toxemia grave. A irritabilidade descrita no caso é comum durante o pico febril e a criança interage bem com o ambiente, o que torna a meningite uma hipótese remota neste cenário.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Febre na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:38.844Z"
+  },
+  {
+    "id": "AJUDA_7f822e78-d8b2-481d-b793-c1ad70e25992",
+    "originalId": "7f822e78-d8b2-481d-b793-c1ad70e25992",
+    "statement": "Durante uma visita de supervisão, a gestão municipal identifica que uma Unidade de Saúde da Família localizada em área rural tem apresentado baixa cobertura de pré-natal, elevada taxa de faltas às consultas e aumento de internações por causas sensíveis à atenção primária. A equipe relata que a população depende de transporte público irregular, possui baixa escolaridade, grande dispersão territorial e dificuldade de compreensão das orientações de saúde. Diante desse cenário, considerando os princípios doutrinários e organizativos do SUS, bem como as diretrizes da Atenção Primária à Saúde, qual medida representa a intervenção MAIS apropriada para reorganizar o cuidado e melhorar os indicadores?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar que o município contrate um médico especialista em obstetrícia para realizar pré-natal de alto risco na própria unidade, reduzindo encaminhamentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Implantar um sistema municipal de teleconsulta centralizada, substituindo consultas presenciais sempre que houver dificuldade de deslocamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Implementar ações de planejamento territorial, intensificando busca ativa, ampliação da agenda programada, visitas domiciliares e estratégias de educação em saúde adaptadas ao perfil da comunidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transferir os pacientes moradores de áreas mais distantes para outra UBS urbana com melhor infraestrutura e equipe completa, garantindo atendimento mais rápido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Reestruturar a unidade para modelo tradicional, priorizando atendimento por demanda espontânea e reduzindo visitas domiciliares, para aumentar a produtividade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Essa questão aborda os fundamentos da Atenção Primária à Saúde (APS) e da Estratégia Saúde da Família (ESF) no contexto do Sistema Único de Saúde (SUS). O cenário descrito apresenta barreiras de acesso geográficas, socioeconômicas e culturais em uma zona rural. Para resolver problemas como baixa cobertura e internações evitáveis, a resposta deve estar alinhada aos princípios de territorialização, equidade e acessibilidade.\n\nAlternativa A: Incorreta. A contratação de um obstetra foca na atenção secundária (alto risco), enquanto o problema relatado é na atenção primária (baixa cobertura de pré-natal básico e falta às consultas). Além disso, a presença do especialista na unidade não resolve as dificuldades de transporte e a dispersão territorial da população.\n\nAlternativa B: Incorreta. Embora a telessaúde seja uma ferramenta útil, a substituição completa das consultas presenciais em uma população com baixa escolaridade e dificuldade de compreensão das orientações pode agravar as lacunas no cuidado e prejudicar o vínculo. A tecnologia deve complementar, e não substituir, o cuidado em áreas com vulnerabilidade social.\n\nAlternativa C: Correta. Esta medida aplica as diretrizes da Política Nacional de Atenção Básica (PNAB). O planejamento territorial permite identificar onde estão os vazios assistenciais. A busca ativa e as visitas domiciliares superam a barreira do transporte irregular, levando a equipe até o paciente. A agenda programada e ampliada facilita o acesso, e a educação em saúde adaptada ao perfil cultural da comunidade garante que as orientações sejam compreendidas, aumentando a adesão ao tratamento e reduzindo internações sensíveis à atenção primária.\n\nAlternativa D: Incorreta. Transferir pacientes para uma unidade urbana viola o princípio da descentralização e da capilaridade do SUS. Se a população já tem dificuldade com transporte irregular para a unidade rural, obrigá-la a se deslocar para um centro urbano tornaria o acesso praticamente impossível, rompendo o vínculo entre equipe e comunidade.\n\nAlternativa E: Incorreta. O modelo tradicional (centrado na demanda espontânea e no consultório) é menos eficaz para populações rurais e vulneráveis. Reduzir visitas domiciliares em um cenário de grande dispersão territorial é o oposto do que recomendam as diretrizes da ESF, que preconizam a proatividade da equipe na vigilância à saúde da população adstrita.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:38.844Z"
+  },
+  {
+    "id": "AJUDA_7f87f40a-fb4f-43d7-abd3-45e4bc023fb9",
+    "originalId": "7f87f40a-fb4f-43d7-abd3-45e4bc023fb9",
+    "statement": "Mulher de 65 anos procura atendimento queixando-se de dor na região cervical, ombros, braços, região lombar, quadris e coxas bilateralmente, há três semanas. A dor é pior ao acordar e após longos períodos de repouso, e se associa a rigidez em alguns movimentos, como pentear os cabelos e se levantar do vaso sanitário. A paciente nega edema articular e febre. EXAMES COMPLEMENTARES: hemoglobina 9,7g/dL; Proteína C Reativa 15mg/L; VHS 65mm/h; FAN e fator reumatoide resultaram não reagentes. Assinale a alternativa que apresenta a conduta inicial MAIS ADEQUADA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever prednisona em dose baixa",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Prescrever pregabalina e anti-inflamatório não esteroidal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar radiografia das articulações sacroilíacas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar ressonância magnética da coluna cervical",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descrito é clássico de polimialgia reumática (PMR), uma doença inflamatória que acomete preferencialmente indivíduos acima de 50 anos. Os pontos-chave para o diagnóstico neste caso são:\n\n1. Perfil do paciente: Mulher, 65 anos.\n2. Localização da dor: Cintura escapular (ombros, braços e pescoço) e cintura pélvica (quadris e coxas), com caráter bilateral e simétrico.\n3. Rigidez matinal: A dor piora ao acordar e após repouso, durando geralmente mais de 45-60 minutos, o que caracteriza um padrão inflamatório.\n4. Marcadores inflamatórios: Elevação significativa do VHS (65 mm/h) e da PCR (15 mg/L), além de anemia de doença crônica (Hb 9,7 g/dL).\n5. Exclusão: Ausência de fator reumatoide e FAN, o que ajuda a afastar artrite reumatoide e lúpus eritematoso sistêmico.\n\nA polimialgia reumática apresenta uma resposta dramática e rápida ao uso de corticosteroides em doses baixas, sendo esta a conduta terapêutica e, muitas vezes, um critério confirmatório do diagnóstico.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Correta. O tratamento de escolha para a polimialgia reumática é a corticoterapia em doses baixas, geralmente de 12,5 mg a 20 mg de prednisona por dia. A melhora clínica costuma ocorrer em poucos dias.\n\nAlternativa b) Incorreta. A pregabalina é utilizada para dor neuropática ou fibromialgia. Embora a fibromialgia cause dor difusa, ela não cursa com elevação de provas de atividade inflamatória (VHS e PCR) nem com o padrão de anemia observado. Os anti-inflamatórios não esteroidais (AINEs) têm eficácia limitada na PMR e não são a primeira escolha.\n\nAlternativa c) Incorreta. A radiografia de sacroilíacas é utilizada na investigação de espondiloartrites (como a espondilite anquilosante), que tipicamente se manifestam em pacientes mais jovens (abaixo de 45 anos) e com dor lombar de ritmo inflamatório, não explicando o acometimento proximal de cinturas e a idade da paciente.\n\nAlternativa d) Incorreta. A ressonância de coluna cervical poderia ser indicada se houvesse suspeita de radiculopatia ou compressão medular. No entanto, os sintomas são sistêmicos e proximais (cinturas escapular e pélvica), acompanhados de marcadores inflamatórios elevados, o que direciona o raciocínio para uma doença inflamatória sistêmica e não para um problema mecânico focal da coluna.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Vasculites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:38.844Z"
+  },
+  {
+    "id": "AJUDA_7f8a36cf-7ec3-4d2e-8729-b9901347329d",
+    "originalId": "7f8a36cf-7ec3-4d2e-8729-b9901347329d",
+    "statement": "Paciente do sexo feminino, 46 anos, sem doenças prévias, passou em consulta para realização de rastreamento do câncer de mama com a médica de família e comunidade (MFC). A paciente não tinha queixas mamárias, não tinha história de câncer na família. Negava etilismo, tabagismo e o uso de medicamentos de rotina. Era laqueada há 13 anos. Tinha mamografia de 2 anos antes com laudo BIRADS 1. Exame físico geral sem alterações.\nAo exame mamário:\nMama esquerda: nódulo firme, indolor, de cerca de 2 cm de diâmetro, no quadrante súpero lateral, com um linfonodo endurecido, indolor, de cerca de 3 cm de diâmetro na axila esquerda.\nMama direita e axila direita: não havia alterações.\nForam solicitadas mamografia e ultrassonografia das mamas com prioridade. Paciente retorna em 25 dias com laudos:\nMamografia: BIRADS 0 à esquerda devido a nódulo de cerca de 1,8 cm de diâmetro no quadrante súpero lateral e linfonodo aumentado na axila esquerda.\nUltrassonografia de mamas: BIRADS 3 à esquerda, devido a nódulo no quadrante súpero lateral de cerca de 2 cm de diâmetro e linfonodo na axila esquerda de 2,8 cm.\nDiante deste quadro, qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar ressonância nuclear magnética das mamas imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar nova mamografia para ser realizada em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar ao mastologista com prioridade para realização de biópsia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar nova ultrassonografia de mamas para ser realizada em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A propedêutica mamária baseia-se na correlação entre o exame clínico, os métodos de imagem e a avaliação anatomopatológica (o tripé diagnóstico). Quando o exame físico revela alterações altamente suspeitas, como nódulo palpável endurecido associado à linfonodopatia axilar ipsilateral endurecida e volumosa, a conduta deve ser orientada pela clínica. Havendo discordância clínico-radiológica (clínica suspeita com imagem BI-RADS 3 ou 0), a investigação diagnóstica invasiva (biópsia) é mandatória e urgente para afastar malignidade.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A ressonância magnética das mamas tem indicações específicas (como estadiamento local em casos selecionados, avaliação de mamas densas ou rastreamento de alto risco genético) e não deve ser utilizada como exame intermediário para definir conduta em nódulos palpáveis suspeitos, postergando o diagnóstico histológico.\n\nAlternativa b: Incorreta. A categoria BI-RADS 0 denota exame incompleto e não permite seguimento em 6 meses. Além disso, aguardar esse período diante de uma lesão clinicamente suspeita gera atraso inaceitável no diagnóstico e tratamento de um provável câncer de mama.\n\nAlternativa c: Correta. A paciente apresenta achados clínicos de alta suspeição para neoplasia mamária com acometimento linfonodal. A conduta padrão é o encaminhamento prioritário ao especialista (mastologista) para realização de biópsia (geralmente biópsia por agulha grossa/core biopsy da mama e abordagem do linfonodo axilar).\n\nAlternativa d: Incorreta. O seguimento ultrassonográfico em 6 meses aplica-se apenas a lesões BI-RADS 3 identificadas incidentalmente em pacientes assintomáticas (rastreamento). A presença de nódulo palpável e linfonodo alterado invalida a conduta expectante.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:38.844Z"
+  },
+  {
+    "id": "AJUDA_7f8a5f7a-7750-448c-bafb-d4d724952b0e",
+    "originalId": "7f8a5f7a-7750-448c-bafb-d4d724952b0e",
+    "statement": "Paciente de 45 anos, gênero feminino, é admitida por quadro de tosse produtiva, febre e dispneia há 3 dias. Realizou Rx de tórax cuja imagem é compatível com pneumonia de lobo inferior direito associado a velamento do seio costofrênico ipsilateral. Ao POCUS (Point-of Care-Ultrasound) foi possível confirmar a hipótese de derrame pleural tendo sido realizada toracocentese e prescritos ceftriaxona associado a azitromicina. Os achados bioquímicos do líquido pleural evidenciam proteínas totais=4,5g/dl (sérica=6,8), DHL=1250UI/I, pH=6,9, celularidade=1800 células/mm³ (88% neutrófilos), ADA=120UI/I e cultura em andamento. Qual deve ser a conduta mais adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar drenagem torácica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Escalonar antibioticoterapia para tazocin e vancomicina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter antibioticoterapia e reavaliar resposta clínica em 48h",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Investigar tuberculose como condição facilitadora da pneumonia bacteriana",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta é uma questão sobre derrame pleural parapneumônico, uma complicação comum das pneumonias bacterianas. Para definir a conduta, devemos primeiro classificar o líquido pleural e identificar sinais de complicação.\n\nAnálise do líquido pleural:\nPelos Critérios de Light, o líquido é um exsudato, pois a relação de Proteína Pleural/Sérica é de 0,66 (superior a 0,5). No entanto, o ponto crucial da questão reside nos critérios de gravidade do derrame parapneumônico. O líquido apresenta pH de 6,9 (valor de referência para complicação é menor que 7,2) e DHL de 1250 UI/L (valor de referência para complicação é maior que 1000 UI/L).\n\nJustificativa das alternativas:\n\na) Correta. A presença de um derrame pleural parapneumônico complicado (definido por pH menor que 7,2, glicose menor que 60 mg/dL ou DHL maior que 1000 UI/L) ou de um empiema (pus franco ou cultura positiva) é indicação absoluta de drenagem torácica imediata. A permanência desse líquido ácido e infectado no espaço pleural favorece a formação de septações, loculações e a evolução para a fase de organização fibrosa, o que dificulta a resolução do quadro apenas com antibióticos.\n\nb) Incorreta. Embora o quadro seja grave, a conduta prioritária não é a troca do esquema antibiótico, mas sim a drenagem do foco infeccioso (o líquido pleural). O esquema inicial (Ceftriaxona + Azitromicina) é adequado para os patógenos comunitários mais comuns. O escalonamento para Piperacilina/Tazobactam e Vancomicina seria reservado para casos de falha terapêutica após a drenagem, instabilidade hemodinâmica grave ou fatores de risco para germes multirresistentes.\n\nc) Incorreta. Aguardar 48 horas em um paciente com pH pleural de 6,9 é um erro técnico. Um pH tão baixo indica intensa atividade metabólica bacteriana e lise celular no espaço pleural. Postergar a drenagem aumenta significativamente o risco de encarceramento pulmonar e a necessidade de procedimentos cirúrgicos mais invasivos, como a videotoracoscopia ou toracotomia.\n\nd) Incorreta. Embora o valor de ADA (Adenosina Desaminase) esteja elevado (120 UI/L), o que em outros contextos sugeriria tuberculose pleural, o quadro clínico é agudo (3 dias de tosse e febre) e típico de pneumonia bacteriana. O empiema e os derrames parapneumônicos complicados são causas conhecidas de \"falso-positivo\" para o ADA, pois o nível desta enzima se eleva muito na presença de grande quantidade de neutrófilos e debris celulares. A prioridade é o tratamento da infecção bacteriana aguda e a drenagem do derrame.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Derrame Pleural",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:38.844Z"
+  },
+  {
+    "id": "AJUDA_7f92394c-7986-4359-81de-6801a1f110f4",
+    "originalId": "7f92394c-7986-4359-81de-6801a1f110f4",
+    "statement": "WEF, 42 anos, sexo feminino, bancária, vem apresentando disfagia desde há seis anos. No início, a disfagia se manifestava somente com sólidos, deglutidos em porções maiores, mas progrediu para dificuldade de ingestão até de água. Apresentou perda ponderal de cerca de três quilos, nos últimos seis meses. Sobre a propedeutica para esse caso, e os achados possíveis, qual das alternativas abaixo está ERRADA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A esofagoscopia é o exame principal, pois permite avaliar diretamente a função peristáltica do esôfago.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A impedanciometria esofágica pode auxiliar na avaliação, mostrando a distensibilidade do órgão durante a deglutição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A manometria esofágica é um exame importante que pode demonstrar o relaxamento incompleto do esfíncter esofagiano inferior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O esofagograma baritado é pouco invasivo e pode demonstrar estenose na porção distal e retardo do esvaziamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso: O quadro clínico de disfagia progressiva (sólidos para líquidos) de longa duração (seis anos), associado à perda ponderal leve, sugere fortemente um distúrbio motor do esôfago, sendo a acalasia (megaesôfago) a principal hipótese diagnóstica.\n\nAlternativa (a) - INCORRETA: Esta é a alternativa errada e, portanto, o gabarito da questão. A esofagoscopia (endoscopia digestiva alta) é um exame fundamental no início da investigação para descartar causas mecânicas e orgânicas, como o câncer de esôfago ou estenoses (chamadas de pseudoacalasia), além de avaliar a mucosa. No entanto, ela é um exame morfológico e não funcional. Ela não permite avaliar a função peristáltica do esôfago de forma direta ou fidedigna; essa avaliação é feita exclusivamente por exames funcionais, como a manometria.\n\nAlternativa (b) - CORRETA: A impedanciometria esofágica, especialmente quando associada à manometria, é uma ferramenta útil para avaliar o movimento do bolo alimentar dentro do esôfago (trânsito esofágico). Ela ajuda a identificar se o conteúdo deglutido está sendo efetivamente transportado ou se há resíduo, fornecendo dados sobre a dinâmica de esvaziamento e a funcionalidade do órgão durante a deglutição.\n\nAlternativa (c) - CORRETA: A manometria esofágica é considerada o exame padrão-ouro para o diagnóstico de acalasia. Ela mede as pressões dentro do corpo do esôfago e dos esfíncteres. Os achados clássicos que confirmam a doença são a ausência de ondas peristálticas organizadas (aperistalse) e o relaxamento incompleto ou ausente do esfíncter esofagiano inferior após a deglutição.\n\nAlternativa (d) - CORRETA: O esofagograma baritado é um estudo radiológico contrastado simples e muito informativo. Em pacientes com acalasia, ele demonstra o retardo no esvaziamento do contraste para o estômago, a dilatação do corpo esofágico e o afilamento da porção distal, classicamente descrito como sinal do bico de pássaro ou chama de vela. É essencial também para a classificação radiológica do megaesôfago, o que orienta a escolha do tratamento.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Disfagia, Alterações Estruturais e Distúrbios de Motilidade do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:38.844Z"
+  },
+  {
+    "id": "AJUDA_7f9e9eda-e06d-48e2-9d03-a4f63ba0f9db",
+    "originalId": "7f9e9eda-e06d-48e2-9d03-a4f63ba0f9db",
+    "statement": "Pré-escolar de quatro anos, sexo masculino, apresenta febre acima de 38,5° há 6 dias, associado à queda do estado geral, palidez, eritema de boca e mãos com descamação. Ao exame físico, apresenta linfadenomegalia cervical anterior e occipital, cavidade oral com língua em framboesa, orofaringe hiperemiada sem exsudato. Apresenta carteira vacinal completa até a idade descrita. O tratamento desta condição visa evitar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insuficiência renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Endocardite infecciosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hepatite fulminante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aneurisma da artéria coronária.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "DIAGNÓSTICO: DOENÇA DE KAWASAKI\n\nO quadro clínico descrito é clássico da Doença de Kawasaki, uma vasculite sistêmica de médios vasos que afeta predominantemente crianças menores de cinco anos. O paciente apresenta os critérios diagnósticos fundamentais: febre persistente por mais de cinco dias (seis dias no relato), associada a quatro outros critérios: 1) Alterações de extremidades (eritema e descamação); 2) Alterações na cavidade oral (língua em framboesa e hiperemia de orofaringe); 3) Linfadenomegalia cervical anterior; 4) Embora não citado explicitamente como conjuntivite, o conjunto dos sintomas confirma a patologia. O tratamento de escolha é a imunoglobulina venosa (IGIV) associada ao ácido acetilsalicílico (AAS).\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A insuficiência renal não é uma complicação característica da Doença de Kawasaki. Alguns pacientes podem apresentar piúria estéril (leucócitos na urina sem infecção bacteriana) por inflamação uretral, mas o comprometimento da função renal é extremamente raro e não é o foco da terapêutica.\n\nb) Incorreta. A endocardite infecciosa é uma infecção bacteriana ou fúngica do endocárdio e das valvas cardíacas. A Doença de Kawasaki é uma vasculite inflamatória, não uma infecção das estruturas internas do coração, embora possa causar miocardite ou pericardite na fase aguda.\n\nc) Incorreta. A hepatite fulminante não está associada à Doença de Kawasaki. É possível observar uma leve elevação de transaminases ou a presença de hidropisia da vesícula biliar, mas estas condições costumam ser autolimitadas e não evoluem para falência hepática grave.\n\nd) Correta. O desenvolvimento de aneurismas da artéria coronária é a complicação mais grave e temida da Doença de Kawasaki. Sem o tratamento adequado com imunoglobulina dentro dos primeiros 10 dias de febre, o risco de formação de aneurismas é de aproximadamente 20% a 25%. O tratamento precoce reduz essa incidência para cerca de 3% a 5%, prevenindo sequelas como estenoses coronarianas, infarto agudo do miocárdio na infância ou morte súbita.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:38.844Z"
+  },
+  {
+    "id": "AJUDA_7faa4765-623d-487a-9a60-2f88792e6182",
+    "originalId": "7faa4765-623d-487a-9a60-2f88792e6182",
+    "statement": "“Internações sem consentimento aumentam na Cracolândia, em meio a denúncias de agressões”. (ZYLBERKAN, M.; KRUSE, T. Folha de S. Paulo, 3 jul. 2024.)\nNotícias como esta têm se tornado frequentes em jornais brasileiros nos últimos anos. Alguns municípios têm criado leis locais próprias para as internações involuntárias que muitas vezes contradizem as leis federais sobre o tema.\nSobre a internação involuntária no Brasil, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a internação involuntária é determinada, de acordo com a legislação, pela Justiça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "é autorizada por médico devidamente registrado no Conselho Regional de Medicina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "no prazo de 15 dias, a internação deve ser comunicada ao Ministério Público Federal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o término da internação involuntária ocorrerá por solicitação do Ministério Público Municipal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda os aspectos legais das internações psiquiátricas e de dependentes químicos no Brasil, fundamentadas principalmente pela Lei 10.216/2001 (Lei da Reforma Psiquiátrica) e atualizadas pela Lei 13.840/2019 (Nova Lei de Drogas). Para responder corretamente, é preciso diferenciar os três tipos de internação previstos no ordenamento jurídico brasileiro.\n\nAlternativa (a) Incorreta: A internação determinada pela Justiça é classificada como internação compulsória. Na modalidade involuntária, o paciente é internado sem o seu consentimento, porém a pedido de um familiar, responsável legal ou, na falta destes, de um servidor público da área da saúde ou assistência social, dispensando a ordem judicial prévia.\n\nAlternativa (b) Correta: Conforme o Artigo 6º da Lei 10.216/2001 e reforçado pela Lei 13.840/2019, qualquer internação psiquiátrica, seja ela voluntária ou involuntária, só pode ser realizada mediante laudo médico circunstanciado que a caracterize. Portanto, é obrigatória a autorização de um médico devidamente registrado no Conselho Regional de Medicina (CRM), que atestará a necessidade do tratamento em regime fechado devido aos riscos para o paciente ou para terceiros.\n\nAlternativa (c) Incorreta: A legislação determina que a internação involuntária deve ser comunicada ao Ministério Público Estadual (e não Federal) no prazo máximo de 72 horas. O prazo de 15 dias citado na alternativa não encontra amparo legal para esse tipo de comunicação obrigatória.\n\nAlternativa (d) Incorreta: O término da internação involuntária ocorre por solicitação do responsável legal ou por decisão do médico assistente (alta médica). O Ministério Público exerce um papel de fiscalização da legalidade da internação, mas o ato da alta é uma decisão técnica baseada na evolução clínica do paciente, e não uma solicitação administrativa do Ministério Público Municipal.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Psiquiatria Social e Reforma Psiquiátrica",
+      "Dependência Química"
+    ],
+    "difficulty": 67.15159089296671,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:38.844Z"
+  },
+  {
+    "id": "AJUDA_7fab730a-e182-49b0-9ec8-7bb8de2c5393",
+    "originalId": "7fab730a-e182-49b0-9ec8-7bb8de2c5393",
+    "statement": "Uma médica atende uma criança de 5 anos com histórico de repetidas internações por pneumonia. Ao investigar a história social, constata que a família vive em uma área de ocupação, em um domicílio com um cômodo, sem janelas, com presença de mofo na parede e uso de fogão a lenha. A médica, ao analisar o caso, considera que a causa do problema de saúde está na interação entre o agente biológico (bactéria), o hospedeiro (criança com possível desnutrição) e o ambiente inadequado (fatores sociais e físicos descritos). O modelo explicativo do processo saúde-doença que melhor se aplica à análise feita pela médica é o",
+    "options": [
+      {
+        "id": "A",
+        "text": "biomédico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "social.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ecológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "histórico-cultural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "mágico-religioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os modelos explicativos do processo saúde-doença, tema fundamental na Saúde Coletiva e Epidemiologia.\n\nAlternativa a: Incorreta. O modelo biomédico foca exclusivamente no agente etiológico e nas alterações biológicas e anatomopatológicas do indivíduo (visão mecanicista e unicausal), desconsiderando a influência do meio ambiente e dos fatores socioeconômicos no adoecimento.\n\nAlternativa b: Incorreta. O modelo social (ou da determinação social da saúde) coloca a organização socioeconômica, a estratificação social e as relações de produção como os determinantes centrais do adoecimento. Embora a vulnerabilidade social tenha sido mencionada, a médica estruturou sua análise na interação entre três polos distintos.\n\nAlternativa c: Correta. O modelo ecológico, também conhecido como Tríade Epidemiológica, postula que o estado de saúde ou doença é fruto da interação dinâmica e do equilíbrio/desequilíbrio entre três componentes: o agente (bactéria), o hospedeiro (criança e seu estado nutricional/imunológico) e o ambiente (condições físicas e sociais de habitação). Essa é exatamente a linha de raciocínio apresentada no caso.\n\nAlternativa d: Incorreta. O modelo histórico-cultural analisa como as percepções e práticas de saúde são moldadas pelas crenças, valores e transformações históricas de uma sociedade ao longo do tempo, o que não reflete a análise epidemiológica descrita.\n\nAlternativa e: Incorreta. O modelo mágico-religioso é um paradigma pré-científico que atribui as enfermidades a desígnios espirituais, forças sobrenaturais ou punições divinas.\n\nGabarito: Letra C.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pneumonia na Infância",
+      "Processo Saúde-Doença",
+      "Desnutrição na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:38.844Z"
+  },
+  {
+    "id": "AJUDA_7faf1db0-9c02-40de-a501-460db2c28c48",
+    "originalId": "7faf1db0-9c02-40de-a501-460db2c28c48",
+    "statement": "Homem, 62 anos de idade, foi encaminhado para investigação ambulatorial de aumento do volume abdominal. Ele tem antecedentes de hipertensão arterial sistêmica, diabetes melito tipo 2, obesidade e dislipidemia. Há 3 meses, notou aumento progressivo do volume abdominal e evoluiu com sensação de saciedade precoce e perda de 2 kg. Ao exame clínico, apresentou sinais vitais normais, abdome globoso com semicírculos de Skoda e sinal do piparote, não apresentou edema nos membros inferiores, não há outras anormalidades. Foi realizada uma paracentese diagnóstica com saída de líquido amarelo claro com 257 leucócitos (22% de neutrófilos), proteína total 3,1 g/dL, albumina 2,3 g/dL, citologia oncótica negativa.\n\n• Exames laboratoriais:\nHb: 11,1 g/dL\nLeucócitos: 4.450 células/mm3\nPlaquetas: 156 mil/mm3\nCreatinina: 1,53 mg/dL\nAlbumina: 3,3 g/dL\n\nConsiderando as informações, assinale a conduta ideal neste caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Começar espironolactona por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar ecocardiograma transtorácico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar adenosina deaminase no líquido ascítico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Fazer albumina endovenosa por 2 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do GASA (Gradiente de Albumina Soro-Ascite):\nPara diagnosticar a causa de uma ascite, o passo fundamental é calcular o GASA, que é a subtração da albumina do soro pela albumina do líquido ascítico.\nGASA = Albumina Sérica (3,3 g/dL) — Albumina do Líquido Ascítico (2,3 g/dL) = 1,0 g/dL.\n\nInterpretação do GASA:\n- GASA maior ou igual a 1,1 g/dL: indica hipertensão portal (ex.: cirrose, insuficiência cardíaca, trombose de veia porta).\n- GASA menor que 1,1 g/dL: indica causas sem hipertensão portal (ex.: carcinomatose peritoneal, tuberculose peritoneal, síndrome nefrótica, pancreatite).\n\nNo caso em questão, o GASA é 1,0 g/dL (baixo gradiente). O líquido também apresenta proteínas totais elevadas (3,1 g/dL), o que é característico de exsudatos. Diante de um quadro de perda de peso, ascite com baixo GASA e proteínas altas, as principais suspeitas são tuberculose peritoneal e neoplasia (carcinomatose).\n\nAlternativa (a) Incorreta: O uso de diuréticos, como a espironolactona, é o tratamento de escolha para ascites decorrentes de hipertensão portal (GASA alto). Para ascites com GASA baixo, o tratamento deve focar na causa-base (inflamatória, infecciosa ou neoplásica), e o quadro não costuma responder bem a diuréticos.\n\nAlternativa (b) Incorreta: A insuficiência cardíaca congestiva pode causar ascite; porém, nesses casos, o GASA esperado seria elevado (maior ou igual a 1,1 g/dL), pois a fisiopatologia envolve um aumento da pressão hidrostática que é transmitido ao sistema porta (hipertensão portal pós-sinusoidal).\n\nAlternativa (c) Correta: Como o paciente apresenta um GASA de 1,0 g/dL e proteínas totais de 3,1 g/dL, a tuberculose peritoneal torna-se um diagnóstico diferencial prioritário. A dosagem da adenosina deaminase (ADA) no líquido ascítico é um exame com alta sensibilidade e especificidade para o diagnóstico de tuberculose em serosas. Como a citologia oncótica foi negativa, a investigação de TB é o próximo passo lógico e menos invasivo antes de se considerar uma biópsia peritoneal.\n\nAlternativa (d) Incorreta: A infusão de albumina endovenosa é indicada em situações específicas, como na profilaxia de insuficiência renal na peritonite bacteriana espontânea (PBE) ou para reposição volêmica após paracenteses de grande volume (retirada de mais de 5 litros). O paciente não apresenta PBE (o número de neutrófilos no líquido é de apenas 56/mm³, enquanto o critério é > 250/mm³) e a paracentese realizada foi apenas diagnóstica.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Cirrose Hepática",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:38.844Z"
+  }
+]

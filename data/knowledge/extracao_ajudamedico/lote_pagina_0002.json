@@ -1,0 +1,523 @@
+[
+  {
+    "id": "AJUDA_7fc0947f-f9c2-4154-8ffd-927d61e97d8a",
+    "originalId": "7fc0947f-f9c2-4154-8ffd-927d61e97d8a",
+    "statement": "Lactente de 6 meses é avaliado em consulta de puericultura. Nasceu com 30 semanas de idade gestacional, pesando 1250g, com boa evolução. A mãe relata aleitamento materno exclusivo desde a alta hospitalar e nega queixas. Peso atual: 6100g. Na avaliação clínica, o lactente apresenta sustentação da cabeça, emite sons, não rola, pega objetos e não leva à boca. Tem exame físico normal. Curva de crescimento trazida pela mãe. Os círculos pretos correspondem às medidas de peso do lactente nos primeiros 6 meses de vida. Observando os dados da curva de crescimento trazida pela mãe (figura), qual é a orientação alimentar mais adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar a introdução alimentar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar fórmula infantil de partida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter amamentação exclusiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar fórmula infantil de seguimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, o conceito fundamental é a idade corrigida e a avaliação dos marcos de desenvolvimento em prematuros.\n\nAnálise do caso:\nO lactente nasceu com 30 semanas de idade gestacional. Para calcular a idade corrigida, subtraímos do tempo de vida cronológico o tempo que faltou para atingir 40 semanas (termo).\nFaltaram 10 semanas (40 - 30 = 10 semanas, ou aproximadamente 2,5 meses).\nIdade cronológica: 6 meses.\nIdade corrigida: 6 meses - 2,5 meses = 3,5 meses.\n\nDesenvolvimento e Introdução Alimentar:\nA recomendação da Sociedade Brasileira de Pediatria e da OMS é iniciar a introdução alimentar aos 6 meses. Para prematuros, essa orientação deve considerar a idade corrigida e os sinais de prontidão (sustentação do tronco, interesse pelos alimentos, desaparecimento do reflexo de extrusão da língua e coordenação para levar objetos à boca). \n\nNeste caso, com idade corrigida de 3,5 meses, o lactente ainda não apresenta prontidão: o enunciado afirma que ele não leva objetos à boca e não rola. Além disso, a curva de crescimento (pontos pretos na imagem) mostra uma excelente evolução ponderal (*catch-up*), saindo de um peso muito abaixo do percentil 3 no nascimento para atingir a linha do percentil 3 aos 6 meses de idade cronológica, tudo isso em aleitamento materno exclusivo.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a idade cronológica seja de 6 meses, a idade corrigida de 3,5 meses e a ausência de sinais de prontidão indicam que o sistema motor e digestivo do lactente ainda não está maduro para receber alimentos complementares.\n\nb) Incorreta. Não há indicação para fórmula infantil de partida. O lactente está em aleitamento materno exclusivo com excelente ganho de peso (de 1.250 g para 6.100 g) e crescimento adequado para sua condição de prematuridade.\n\nc) Correta. Como o bebê tem idade corrigida de 3,5 meses, está clinicamente bem e crescendo satisfatoriamente apenas com o leite materno, a conduta mais adequada é manter a amamentação exclusiva até que ele se aproxime dos 6 meses de idade corrigida e apresente os marcos de desenvolvimento necessários.\n\nd) Incorreta. A fórmula de seguimento é indicada para crianças a partir de 6 meses que já utilizam substitutos do leite materno, o que não se aplica a este caso de sucesso na amamentação exclusiva.\n\nGabarito: Letra (c).",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno",
+      "Prematuridade e Trabalho de Parto Prematuro",
+      "Crescimento",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 78.96831597007923,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ca6b028b012ee7b83a46bfe4a1167471aa5641e1323f66738d75324683d75a0b.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_7fc0947f-f9c2-4154-8ffd-927d61e97d8a_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:11.146Z"
+  },
+  {
+    "id": "AJUDA_ce41758f-f018-47da-9eeb-dde8bbee555d",
+    "originalId": "ce41758f-f018-47da-9eeb-dde8bbee555d",
+    "statement": "Paciente de 28 anos, previamente saudável, chega ao pronto atendimento com palpitações súbitas e desconforto torácico leve. Está estável hemodinamicamente, PA 125/80 mmHg, SatO₂ 97%. O eletrocardiograma foi realizado, qual a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar manobra vagal para tentativa de reversão do ritmo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Administrar Amiodarona 150mg intravenosa em bolus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar Adenosina 6mg em dose plena imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar cardioversão elétrica sincronizada de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico e Eletrocardiograma:\nO traçado eletrocardiográfico apresenta uma taquicardia de complexo QRS estreito (inferior a 120 ms ou 3 quadradinhos), com ritmo regular e ausência de ondas P visíveis precedendo o QRS. Esse padrão é compatível com uma Taquicardia Supraventricular (TSV), sendo a Taquicardia por Reentrada Nodal a causa mais provável em um paciente jovem sem comorbidades. O quadro clínico descreve estabilidade hemodinâmica, evidenciada pela pressão arterial de 125/80 mmHg e boa saturação de oxigênio.\n\nAnálise das Alternativas:\n\nAlternativa a) Correta. De acordo com as diretrizes de suporte avançado de vida cardiovascular (ACLS), o primeiro passo no manejo da taquicardia supraventricular estável consiste na realização de manobras vagais. A manobra de Valsalva (especialmente a técnica modificada) ou a massagem do seio carotídeo podem aumentar o tônus parassimpático e interromper o circuito de reentrada no nó atrioventricular, revertendo a arritmia de forma não invasiva.\n\nAlternativa b) Incorreta. A amiodarona não é o fármaco de primeira escolha para taquicardias supraventriculares de complexo estreito. Ela é geralmente reservada para taquicardias de complexo largo (como a taquicardia ventricular) ou situações específicas de arritmias atriais em pacientes com disfunção ventricular, após falha de outras terapias.\n\nAlternativa c) Incorreta. A adenosina é, de fato, a droga de primeira escolha para o tratamento farmacológico da TSV. No entanto, ela deve ser administrada apenas se as manobras vagais iniciais não forem bem-sucedidas. Como a questão solicita a conduta \"inicial\" em um paciente estável, a manobra vagal precede o uso de qualquer medicamento.\n\nAlternativa d) Incorreta. A cardioversão elétrica sincronizada é o tratamento de escolha para pacientes com taquiarritmias que apresentam sinais de instabilidade hemodinâmica (hipotensão, alteração do estado mental, sinais de choque, dor torácica isquêmica ou insuficiência cardíaca aguda). Como o paciente está estável (normotenso), a conduta deve ser conservadora e escalonada, iniciando pelas manobras vagais.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Taquiarritmias",
+      "Eletrocardiograma"
+    ],
+    "difficulty": 42.12401862807043,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f56e440be6e756f4eeab7eaa5acb14c418ac15a52950019530fc747e50adc991.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ce41758f-f018-47da-9eeb-dde8bbee555d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:11.351Z"
+  },
+  {
+    "id": "AJUDA_dedea130-b213-4b81-941f-eeeab0fb3917",
+    "originalId": "dedea130-b213-4b81-941f-eeeab0fb3917",
+    "statement": "Paciente de 23 anos de idade do sexo masculino procurou atendimento médico emergencial por acidente ofídico, porém não conseguiu identificar o animal quando questionado. O médico assistente sabe que a apresentação clínica é fundamental para direcionar a conduta terapêutica. Assinale a alternativa que descreve o quadro clínico de acidente elapídico, segundo o Manual de Diagnóstico e Tratamento de Acidentes por Animais Peçonhentos do Ministério da Saúde.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fraqueza muscular progressiva, com ptose palpebral, oftalmoplegia e a presença de fácies miastênica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Dor e edema no local da picada, de intensidade variável, com equimoses e sangramento no ponto da picada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Edema local importante, equimose e dor, porém sem alteração da coagulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome vagal com bradicardia, cólicas abdominais e diarreia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Insuficiência renal aguda, com necrose tubular geralmente de instalação nas primeiras 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O acidente elapídico é causado por serpentes do gênero Micrurus (corais-verdadeiras). O veneno possui ação predominantemente neurotóxica, atuando nos receptores de acetilcolina na junção neuromuscular. De acordo com o Manual do Ministério da Saúde, a análise das alternativas revela o seguinte:\n\nAlternativa a) Correta. A neurotoxicidade do veneno elapídico bloqueia a transmissão neuromuscular, levando a uma paralisia motora progressiva. Os sinais iniciais costumam ser a ptose palpebral bilateral e a oftalmoplegia (dificuldade de movimentação ocular), que compõem a chamada fácies miastênica ou de Rosenfeld. Pode evoluir para fraqueza de músculos respiratórios e insuficiência respiratória aguda. Importante notar que o acidente crotálico (cascavel) também pode apresentar essa fácies, mas a questão pede a descrição clínica compatível com o elapídico.\n\nAlternativa b) Incorreta. Essa descrição é característica do acidente botrópico (jararaca). O veneno de jararaca possui ação proteolítica, coagulante e hemorrágica, resultando em dor, edema, equimoses e sangramentos no local da picada, além de possíveis alterações sistêmicas da coagulação.\n\nAlternativa c) Incorreta. Edema local importante e dor são típicos de acidentes botrópicos ou laquéticos. O acidente elapídico é conhecido justamente por cursar com manifestações locais discretas ou ausentes; o paciente pode apresentar apenas uma leve parestesia ou dor local mínima, sem edema ou equimose significativos.\n\nAlternativa d) Incorreta. A síndrome vagal (bradicardia, hipotensão, cólicas abdominais e diarreia) é a marca registrada do acidente laquético (surucucu-pico-de-jaca). Este acidente combina a sintomatologia local do botrópico com esses sinais de estimulação parassimpática.\n\nAlternativa e) Incorreta. A insuficiência renal aguda é uma complicação sistêmica grave comum nos acidentes crotálicos (devido à rabdomiólise e mioglobinúria) e botrópicos graves. Embora possa ocorrer em situações críticas, não define o quadro clínico típico inicial do acidente elapídico descrito pelo Ministério da Saúde.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Animais Peçonhentos"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:11.351Z"
+  },
+  {
+    "id": "AJUDA_efe9cae6-5f83-46f1-bdb7-6500ea502559",
+    "originalId": "efe9cae6-5f83-46f1-bdb7-6500ea502559",
+    "statement": "Homem de 70 anos, com hemorragia digestiva alta por úlcera duodenal, tratada endoscopicamente há 10 dias, e hemoglobina atualmente estável, desenvolve início súbito de dispneia intensa, dor torácica pleurítica e taquicardia. A angiotomografia de tórax revela trombo extenso na artéria pulmonar principal direita, compatível com tromboembolismo pulmonar maciço, porém sem hipotensão ou sinais de choque.\nQual é a melhor conduta inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar varfarina oral com controle rigoroso de INR.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Instalar filtro de veia cava inferior temporário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar trombólise venosa imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever heparina de baixo peso molecular em dose reduzida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Apenas observar e reavaliar em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta um quadro clínico clássico de Tromboembolismo Pulmonar (TEP), caracterizado por dispneia súbita, dor pleurítica e taquicardia, confirmado por angiotomografia que demonstra trombo extenso. O ponto fundamental para a escolha da conduta e a classificação de gravidade é a análise das contraindicações. Embora o trombo seja descrito como extenso (anatomia), o paciente não apresenta hipotensão ou choque, o que o classifica como TEP de risco não alto (estável hemodinamicamente).\n\nAbaixo, a análise de cada alternativa:\n\nAlternativa a) Incorreta. A varfarina é um antagonista da vitamina K que leva de 3 a 5 dias para atingir o nível terapêutico (INR entre 2 e 3). Na fase aguda do TEP, ela nunca deve ser usada como monoterapia inicial, pois pode induzir um estado transitório de hipercoagulabilidade (devido à depleção das proteínas C e S), além de não oferecer a anticoagulação imediata necessária.\n\nAlternativa b) Incorreta. O filtro de veia cava inferior é reservado para situações específicas, como contraindicação absoluta à anticoagulação (ex: sangramento ativo grave, cirurgia intracraniana muito recente) ou falha da anticoagulação plena (novo TEP mesmo com anticoagulação adequada). Como a hemorragia digestiva do paciente ocorreu há 10 dias e ele já está estável, a anticoagulação pode ser tentada com cautela antes de se optar por um método invasivo.\n\nAlternativa c) Incorreta. A trombólise venosa (uso de fibrinolíticos como alteplase) é indicada exclusivamente para o TEP de alto risco, ou seja, pacientes com instabilidade hemodinâmica (PAS menor que 90 mmHg ou queda maior que 40 mmHg por mais de 15 minutos). O paciente em questão está estável. Além disso, o sangramento gastrointestinal recente (10 dias) é uma contraindicação relativa importante para a trombólise devido ao altíssimo risco de novo sangramento massivo.\n\nAlternativa d) Correta. A anticoagulação é a base do tratamento do TEP estável. A Heparina de Baixo Peso Molecular (HBPM), como a enoxaparina, é frequentemente a escolha inicial pela facilidade de administração e previsibilidade posológica. Em pacientes com risco aumentado de sangramento (como este, com úlcera duodenal recente há 10 dias), a literatura e algumas bancas de concursos sugerem o uso de doses mais cautelosas ou o ajuste rigoroso para evitar a recorrência da hemorragia digestiva, enquanto ainda se protege o paciente contra a progressão do trombo pulmonar.\n\nAlternativa e) Incorreta. O TEP é uma condição potencialmente fatal. Diante de um trombo extenso na artéria pulmonar principal, a conduta expectante (apenas observação) é contraindicada, pois o risco de um novo evento embólico ou de progressão para falência de ventrículo direito é elevado se não houver intervenção terapêutica imediata.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 77.42299283195487,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:11.351Z"
+  },
+  {
+    "id": "AJUDA_fdf5bfe0-9860-46a9-b0a9-ad0bf4d35f80",
+    "originalId": "fdf5bfe0-9860-46a9-b0a9-ad0bf4d35f80",
+    "statement": "Mulher de 25 anos vai à consulta na unidade básica de saúde (UBS) com dor articular há 4 meses, edema e vermelhidão nas articulações metacarpo falangeanas e interfalangeanas proximais de ambas as mãos e também em punhos e joelhos. Refere rigidez matinal de 2 horas, mal-estar generalizado e sensação de febre. Nega lesões cutâneas ou alopecia. Fez uso de ibuprofeno, com alívio parcial das dores. Exame físico: à palpação das articulações acometidas presença de dor, espessamento sinovial, sem deformidades. Os exames indicam velocidade de hemossedimentação de 35 mm/hora (valor de referência [VR]: < 20 mm/hora); proteína C reativa de 12 mg/dL (VR: < 6 mg/dL); e fator reumatoide negativo (referência: negativo). \n\nConsiderando o caso apresentado, assinale a alternativa que indica, respectivamente, o diagnóstico e o tratamento medicamentoso adequados.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Osteoartrite; uso de paracetamol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Artrite reumatoide; uso de metotrexato.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Esclerose sistêmica; uso de prednisona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lúpus eritematoso sistêmico; uso de cloroquina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nO quadro clínico descreve uma mulher jovem com poliartrite simétrica crônica (duração de 4 meses), acometendo pequenas articulações (metacarpofalangeanas e interfalangeanas proximais) e grandes articulações (punhos e joelhos). A presença de rigidez matinal prolongada (2 horas) e a elevação de marcadores de atividade inflamatória (VHS e PCR) confirmam a natureza inflamatória da doença.\n\nDiagnóstico:\nO diagnóstico principal é de Artrite Reumatoide (AR). Embora o Fator Reumatoide seja negativo, cerca de 20% a 30% dos pacientes com AR podem ser soronegativos, especialmente no início da doença. O padrão de acometimento (simétrico, mãos e punhos, poupando interfalangeanas distais) e o tempo de evolução (mais de 6 semanas) preenchem os critérios classificatórios para a doença.\n\nTratamento:\nUma vez estabelecido o diagnóstico de AR, o tratamento deve ser iniciado precocemente com Drogas Antirreumáticas Modificadoras do Curso da Doença (DMARDs), sendo o Metotrexato a droga de primeira escolha e padrão-ouro.\n\nAnálise das alternativas:\n\na) Incorreta. A osteoartrite é uma doença degenerativa que costuma acometer pessoas mais velhas, gera rigidez matinal curta (menos de 30 minutos) e não apresenta marcadores inflamatórios (VHS/PCR) elevados. Além disso, a osteoartrite tipicamente poupa as metacarpofalangeanas e o punho, preferindo as interfalangeanas distais.\n\nb) Correta. A descrição clínica é clássica para Artrite Reumatoide: poliartrite simétrica de pequenas e grandes articulações, rigidez matinal superior a 1 hora e marcadores inflamatórios elevados. O Metotrexato é o tratamento inicial preferencial para o controle da progressão da doença.\n\nc) Incorreta. A esclerose sistêmica se caracteriza clinicamente pelo espessamento da pele (esclerodermia), fenômeno de Raynaud e alterações em órgãos internos (esôfago, pulmão). O quadro de artrite isolado sem alterações cutâneas não direciona para este diagnóstico. Além disso, o uso de corticoides em doses elevadas deve ser cauteloso na esclerose sistêmica pelo risco de crise renal esclerodérmica.\n\nd) Incorreta. O Lúpus Eritematoso Sistêmico (LES) pode cursar com artrite simétrica, mas a paciente nega ativamente lesões cutâneas e alopecia, que são critérios comuns. Além disso, a presença de espessamento sinovial (sinovite persistente) e o tempo de rigidez matinal são mais marcantes na Artrite Reumatoide. Embora a cloroquina (ou hidroxicloroquina) seja usada no LES, a Artrite Reumatoide é o diagnóstico que melhor explica a sinovite descrita com marcadores inflamatórios elevados.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Artrite Reumatoide"
+    ],
+    "difficulty": 52.31314802996694,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:11.351Z"
+  },
+  {
+    "id": "AJUDA_0011946e-761e-49fe-ba75-0f932bbb99ea",
+    "originalId": "0011946e-761e-49fe-ba75-0f932bbb99ea",
+    "statement": "Mulher de 58 anos, em menopausa há 5 anos, nulípara, IMC: 32 kg/m², sem histórico prévio de terapia de reposição hormonal, queixa-se de sangramento vermelho vivo intermitente, em pequena quantidade, há cerca de 2 meses. Foi submetida a ultrassom transvaginal, que demonstrou eco endometrial de 6 mm. Diante do caso, assinale a alternativa que apresenta a conduta correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ácido tranexâmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir ultrassom após cessar sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dispositivo intrauterino com progesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Progesterona oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Histeroscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Resposta correta: letra E (histeroscopia).\n\nContexto: sangramento uterino na pós-menopausa (SPM) é câncer de endométrio até que se prove o contrário. Esta paciente tem vários fatores de risco: obesidade (IMC 32), nuliparidade e idade de 58 anos, além do sangramento persistente e recorrente há 2 meses.\n\nPonto central: o ponto de corte de eco endometrial ≤ 4 mm no ultrassom transvaginal tem alto valor preditivo negativo e permite conduta expectante no primeiro episódio de sangramento. Aqui o eco é de 6 mm, acima do limite. Portanto o endométrio é considerado espessado e exige investigação histológica. Além disso, sangramento recorrente ou persistente, mesmo com eco ≤ 4 mm, também indica investigação, e essa paciente tem fatores de risco.\n\nA investigação é feita por biópsia de endométrio (Pipelle ou curetagem) ou, preferencialmente, por histeroscopia com biópsia dirigida. A histeroscopia permite visualizar a cavidade e biopsiar lesões focais (pólipos, câncer), que a biópsia às cegas pode não detectar. Dentre as alternativas, é a única que investiga a causa.\n\nAnálise das alternativas:\n\na) Incorreta. O ácido tranexâmico é um antifibrinolítico usado para controle sintomático de sangramento uterino anormal, sobretudo em mulheres na menacme. Tratar o sintoma sem excluir neoplasia atrasa o diagnóstico.\n\nb) Incorreta. Repetir o ultrassom após o sangramento cessar não tem fundamento. O eco já está espessado (6 mm) e a ausência de sangramento não afasta malignidade. Seria uma conduta de espera inadequada.\n\nc) Incorreta. O DIU de levonorgestrel é terapia hormonal usada para hiperplasia sem atipia, ou como tratamento do sangramento uterino anormal depois de excluída malignidade. Não deve ser usado antes do diagnóstico.\n\nd) Incorreta. A progesterona oral tem a mesma limitação: tratar empiricamente sem diagnóstico histológico pode mascarar um carcinoma ou uma hiperplasia atípica.\n\ne) Correta. A histeroscopia com biópsia dirigida é a conduta adequada para esclarecer a causa do sangramento, que pode ser câncer de endométrio, hiperplasia, pólipo ou atrofia.\n\nResumo prático: na SPM, se o eco for ≤ 4 mm, a conduta pode ser expectante no primeiro episódio. Se o eco for > 4 mm, ou se o sangramento for persistente ou recorrente, deve-se realizar biópsia ou histeroscopia com biópsia.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:11.351Z"
+  },
+  {
+    "id": "AJUDA_00131a74-b53e-4c7b-9219-58558a31aaf4",
+    "originalId": "00131a74-b53e-4c7b-9219-58558a31aaf4",
+    "statement": "Adulto com urticária difusa, estridor e hipotensão após picada de inseto. Assinale a alternativa que apresenta a conduta MAIS adequada diante do caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adrenalina IM na coxa, posicionamento, O₂ e reavaliação para repetir se necessário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Adrenalina IV em bolus para todos os casos pela maior potência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar com anti-histamínico/corticoide e reservar a adrenalina para falha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nebulizar β2-agonista e observar; adrenalina apenas se parada cardiorrespiratória iminente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nO quadro clínico descrito — urticária difusa (pele), estridor (via aérea superior) e hipotensão (sistema cardiovascular) após um gatilho (picada de inseto) — define um diagnóstico de anafilaxia. A anafilaxia é uma emergência médica que requer intervenção imediata para evitar a progressão para o óbito.\n\nAlternativa (a): CORRETA. A adrenalina é a única medicação que reduz a mortalidade na anafilaxia e deve ser administrada assim que o diagnóstico for suspeitado. A via intramuscular (IM) no vasto lateral da coxa (face anterolateral da coxa) é a via de escolha devido à absorção rápida e ao perfil de segurança superior em comparação à via intravenosa ou subcutânea. O posicionamento do paciente (em decúbito dorsal com pernas elevadas para otimizar o retorno venoso, exceto se houver vômitos ou desconforto respiratório grave) e a oferta de oxigênio são medidas de suporte fundamentais. A reavaliação contínua é necessária, e a dose de adrenalina pode ser repetida a cada 5 a 15 minutos se não houver melhora clínica.\n\nAlternativa (b): INCORRETA. A adrenalina intravenosa (IV) em bolus apresenta um risco significativamente maior de efeitos adversos graves, como arritmias fatais, isquemia miocárdica e crise hipertensiva. Ela deve ser reservada para casos de choque refratário a múltiplas doses de adrenalina IM ou parada cardiorrespiratória, e idealmente deve ser administrada por médicos experientes, sob monitorização cardíaca e de forma diluída/titulada.\n\nAlternativa (c): INCORRETA. O uso de corticoides e anti-histamínicos como primeira linha é um erro comum e perigoso. Essas medicações são consideradas de segunda linha; elas não tratam os sintomas que ameaçam a vida (estridor e hipotensão) e demoram a agir. Retardar a administração de adrenalina para dar essas drogas aumenta drasticamente o risco de morte.\n\nAlternativa (d): INCORRETA. O beta-2-agonista nebulizado pode ser usado como adjuvante se houver broncoespasmo (sibilos), mas ele não trata o edema de laringe (causador do estridor) nem o colapso circulatório. Aguardar a iminência de uma parada cardiorrespiratória para administrar a adrenalina é uma conduta inadequada, pois o benefício da droga é máximo quando usada precocemente, antes que o quadro se torne irreversível.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Anafilaxia e Urticária",
+      "Choque"
+    ],
+    "difficulty": 44.62677585456006,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:11.351Z"
+  },
+  {
+    "id": "AJUDA_001f01d0-1894-461c-8867-a73e29a7fced",
+    "originalId": "001f01d0-1894-461c-8867-a73e29a7fced",
+    "statement": "Internado no hospital, um paciente de 10 anos de idade em tratamento quimioterápico com cateter venoso central de curta duração desenvolve quadro febril (temperatura axilar de 38,1ºC) sem sinais infecciosos aparentes. Havia recebido quinolona recentemente e tem história de internação recente por mais de 14 dias por abscesso anal. Seu hemograma revela: Hb de 9,0g/dL, Ht de 27%, leucócitos de 1.700/mm³ (neutrófilos de 400/mm³) e plaquetas de 110.000/mm³. Sobre a conduta imediata para o caso, assinale V (verdadeiro) ou F (falso) nas assertivas seguintes.\n(__) Coleta de hemoculturas de urgência (sangue periférico e do cateter central) e uroculturas, seguidas de administração de antibioticoterapia empírica com cefepime.\n(__) Pesquisa de foco infeccioso com tomografia computadorizada de tórax de alta definição e de abdome, ecocardiograma transesofágico e exame do líquor.\n(__) Coleta de hemoculturas de urgência (sangue periférico e do cateter central) e uroculturas, seguidas de administração de antibioticoterapia empírica com meropeném + vancomicina.\n(__) Administração de filgrastim; fator estimulador de colônias de granulócitos (G-CSF).\nA sequência correta é",
+    "options": [
+      {
+        "id": "A",
+        "text": "V – F – F – F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "F – V – V – F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V – V – F – V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F – F – V – F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "F – V – F – V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um paciente pediátrico com neutropenia febril (febre ≥ 38,3 °C ou ≥ 38,0 °C sustentada, associada a neutrófilos < 500/mm³). Trata-se de uma emergência médica que exige início imediato de antibioticoterapia empírica após a coleta de culturas.\n\nAnálise das assertivas:\n\nAssertiva 1 (Falsa): Embora o cefepime (cefalosporina de 4ª geração) seja uma opção clássica de monoterapia para neutropenia febril de baixo risco ou sem focos específicos, ele não é a melhor escolha imediata para este paciente. O histórico de uso recente de quinolona, internação prolongada e abscesso anal prévio aumenta o risco de patógenos resistentes (como bactérias produtoras de ESBL) e anaeróbios, exigindo uma cobertura mais ampla.\n\nAssertiva 2 (Falsa): A investigação inicial do paciente neutropênico febril deve ser direcionada pela clínica. Realizar rotineiramente tomografias de alta definição, ecocardiograma transesofágico e coleta de líquor em um paciente sem sinais focais específicos (como sinais meníngeos ou sopros novos) configura excesso de propedêutica. O foco inicial deve ser a estabilização e o início rápido dos antibióticos após culturas básicas.\n\nAssertiva 3 (Verdadeira): Esta é a conduta correta devido aos fatores de risco do paciente. A coleta de hemoculturas pareadas (veia periférica e através do cateter central) é obrigatória para avaliar infecção relacionada ao cateter. O uso de meropenem justifica-se pelo histórico de abscesso anal e uso prévio de quinolona (risco de Gram-negativos resistentes e anaeróbios). A vancomicina é adicionada precocemente neste caso devido à presença de cateter venoso central de curta duração e ao risco de colonização por Gram-positivos multirresistentes (como MRSA) em paciente com longa permanência hospitalar.\n\nAssertiva 4 (Falsa): O filgrastim (G-CSF) é um fator estimulador de colônias de granulócitos utilizado principalmente na profilaxia da neutropenia após a quimioterapia ou em casos selecionados de neutropenia febril com complicações graves (choque séptico, pneumonia, infecção fúngica invasiva). Ele não substitui a antibioticoterapia e não é considerado conduta inicial obrigatória para todos os casos de febre e neutropenia.\n\nA sequência correta é F - F - V - F, correspondendo à alternativa (d).",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Neutropenia Febril",
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:11.351Z"
+  },
+  {
+    "id": "AJUDA_00205546-3673-4da0-a0c2-7017f2a3bf70",
+    "originalId": "00205546-3673-4da0-a0c2-7017f2a3bf70",
+    "statement": "Qual agente etiológico mais comum até os 2 meses de idade para pneumonia comunitária?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Streptococcus pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mycobacterium tuberculosis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Chlamydia pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mycoplasma pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Chlamydia trachomatis.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A etiologia das pneumonias na infância é fortemente dependente da faixa etária, refletindo os patógenos aos quais a criança é exposta desde o nascimento. Para lactentes entre 1 e 3 meses de idade, a Chlamydia trachomatis assume um papel de destaque nos exames de residência e na prática clínica.\n\nAlternativa a) Incorreta. O Streptococcus pneumoniae (pneumococo) é o principal agente etiológico das pneumonias bacterianas em crianças após os 2 ou 3 meses de vida. Embora possa causar infecções em lactentes mais jovens, ele não é o agente mais característico ou o mais comum para o quadro específico de pneumonia nesta janela inicial de vida quando comparado à Chlamydia no contexto de pneumonia afebril.\n\nAlternativa b) Incorreta. O Mycobacterium tuberculosis é causa de pneumonia crônica ou quadros específicos de disseminação, mas raramente é o agente de uma pneumonia comunitária aguda em um lactente de até 2 meses. O diagnóstico depende de história de contato com adultos bacilíferos e evolução clínica lenta.\n\nAlternativa c) Incorreta. A Chlamydia pneumoniae é um agente causador de pneumonia atípica, mas sua incidência é maior em crianças em idade escolar, adolescentes e adultos. É um patógeno raro em bebês com menos de 2 meses.\n\nAlternativa d) Incorreta. O Mycoplasma pneumoniae é o principal agente de pneumonia atípica em crianças acima de 5 anos de idade. Em lactentes pequenos, sua ocorrência é mínima, não sendo a resposta correta para essa faixa etária.\n\nAlternativa e) Correta. A Chlamydia trachomatis é o agente etiológico clássico da Pneumonia Afebril do Lactente, que ocorre tipicamente entre a 2ª e a 12ª semana de vida (englobando o período de até 2 meses citado na questão). A transmissão é vertical, ocorrendo durante a passagem pelo canal de parto infectado. O quadro clínico é muito característico: o lactente apresenta tosse persistente em rajadas (tosse em staccato), taquipneia e, obrigatoriamente, ausência de febre. Além disso, há uma associação frequente com história de conjuntivite neonatal e presença de eosinofilia no hemograma.\n\nResumo epidemiológico por idade:\n- Até 1 mês (neonatos): Streptococcus agalactiae (Grupo B) e Gram-negativos entéricos (E. coli).\n- 1 a 3 meses: Chlamydia trachomatis (causa clássica afebril) e Vírus (Sincicial Respiratório).\n- Acima de 3 meses: Streptococcus pneumoniae (principal causa bacteriana).",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": 100,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:11.351Z"
+  },
+  {
+    "id": "AJUDA_002084f7-4566-477e-a98c-fc43a79a29ad",
+    "originalId": "002084f7-4566-477e-a98c-fc43a79a29ad",
+    "statement": "Você está em uma unidade de atenção primária de saúde atendendo um lactente de 12 meses de idade. O paciente vinha evoluindo bem, com cartão de vacina em dia e testes de triagem neonatal sem alterações. Há quatro meses iniciou diarreia, com eliminação de fezes volumosas semiliquidas ou pastosas 4 a 5 vezes ao dia, sem muco ou sangue, algumas vezes com resto alimentar. Concomitantemente, houve redução do ganho ponderal. Recebeu aleitamento materno até os seis meses de vida, e, a seguir, foram introduzidos alimentos em geral, incluindo leite de vaca e glúten. Resultados de exames: anemia ferropriva leve, hipoalbuminemia discreta, pesquisa de leucocitos nas fezes positivo. Baseando-se no caso descrito, é considerado ERRADA a alternativa:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de leucocitos nas fezes é um exame inespecífico e pode ser indicativo de ocorrência de processo inflamatório do intestino, podendo ser observada em várias afecções.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fezes volumosas e de aspecto mais claro sugerem acometimento de intestino delgado, enquanto a presença de muco ou sangue geralmente provém de afecções do cólon.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Marcadores bioquímicos podem auxiliar a avaliar o grau de desnutrição e a indicar o tipo de abordagem terapêutica e nutricional a ser adotada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O teste de retirada da proteína do leite de vaca e seus derivados da dieta, por quatro semanas, pode permitir o diagnóstico, sem necessidade do teste de provocação oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro de síndrome disabsortiva iniciado aos 8 meses de idade (quatro meses após a introdução alimentar), caracterizado por diarreia crônica, redução do ganho ponderal, anemia ferropriva e hipoalbuminemia. Os principais diagnósticos diferenciais para esta faixa etária e quadro clínico incluem a Doença Celíaca e a Alergia à Proteína do Leite de Vaca (APLV).\n\nPOR QUE A ALTERNATIVA (D) É A ERRADA?\n\nA alternativa afirma que o diagnóstico de APLV pode ser firmado apenas com a retirada do alérgeno, sem a necessidade do Teste de Provocação Oral (TPO). Na prática clínica e seguindo os consensos de gastroenterologia pediátrica, o TPO é o padrão-ouro para o diagnóstico de alergias alimentares. A melhora dos sintomas após a exclusão do leite de vaca sugere o diagnóstico, mas a confirmação exige a reintrodução orientada do alimento (provocação) para observar o retorno dos sintomas, exceto em casos de reações anafiláticas graves e imediatas (IgE mediadas), o que não é o caso do lactente em questão (quadro de diarreia crônica/má absorção). Além disso, o quadro descrito é muito sugestivo de Doença Celíaca, o que exigiria investigação diagnóstica específica (sorologia e biópsia) antes de qualquer exclusão dietética definitiva.\n\nANÁLISE DAS DEMAIS ALTERNATIVAS:\n\nAlternativa A (Correta): A pesquisa de leucócitos nas fezes é, de fato, um marcador inespecífico. Sua presença indica que há um processo inflamatório na mucosa intestinal, mas não define a causa. Pode estar presente em infecções bacterianas, doenças inflamatórias intestinais e até em alguns quadros de alergias alimentares severas que cursam com proctocolite ou enteropatia.\n\nAlternativa B (Correta): Esta é uma regra clássica da semiologia gastrointestinal. Fezes volumosas, com restos alimentares e gordura (esteatorreia), sem sangue ou muco, direcionam o raciocínio para patologias do intestino delgado (local de absorção de nutrientes). Já a presença de muco, sangue e tenesmo direciona para processos inflamatórios do cólon (colites).\n\nAlternativa C (Correta): A hipoalbuminemia mencionada no caso é um marcador bioquímico que reflete tanto a má absorção de proteínas quanto o estado inflamatório, auxiliando o médico a entender a gravidade da desnutrição secundária à patologia de base e a planejar o suporte nutricional necessário.\n\nGABARITO: D",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Diarreia",
+      "Doença Celíaca em Pediatria"
+    ],
+    "difficulty": 59.643319213497826,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:11.351Z"
+  }
+]

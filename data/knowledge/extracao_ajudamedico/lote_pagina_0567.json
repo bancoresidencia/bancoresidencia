@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_9ec0b72b-94c1-40dc-81f3-4f007b1d9360",
+    "originalId": "9ec0b72b-94c1-40dc-81f3-4f007b1d9360",
+    "statement": "Leia a descrição de 2 casos clínicos de crianças com cianose e responda à pergunta a seguir:\nCaso 1: recém-nascido, a termo, com 8 horas de vida, pulsos estão cheios, frequência cardíaca de 130 bpm, sopro contínuo mais audível no dorso, frequência respiratória de 56 ipm, ausculta respiratória sem ruídos adventícios.\nCaso 2: criança de 4 meses. A mãe refere que a criança sempre fica cianótica ao chorar, mas que desta vez está pior. Pulsos estão cheios, frequência cardíaca de 150 bpm, sopro sistólico em rebordo esternal esquerdo alto, frequência respiratória de 48 ipm, ausculta respiratória sem ruídos adventícios.\nComo se classifica a cianose de cada um dos casos apresentados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Caso 1: central. Caso 2: central.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Caso 1: periférica. Caso 2: central.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Caso 1: central. Caso 2: periférica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Caso 1: periférica. Caso 2: periférica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A cianose e classificada clinicamente em central e periferica:\n\nA cianose central ocorre por dessaturacao do sangue arterial sistemico (queda da PaO2) ou presenca de hemoglobinas anomalas, acometendo tanto a pele quanto as mucosas (lingua e labios). Suas causas mais comuns na faixa pediatrica sao as cardiopatias congenitas cianoticas (com shunt direita-esquerda) e doencas pulmonares graves.\n\nA cianose periferica decorre da lentificacao do fluxo sanguineo capilar com extracao tecidual excessiva de oxigenio, mantendo a saturacao arterial de oxigenio normal e poupando as mucosas. E comumente causada por frio (vasoconstricao) ou baixo debito cardiaco.\n\nNo Caso 1, temos um recem-nascido com taquipneia, pulmoes limpos e sopro continuo no dorso (sugestivo de canal arterial patente ou colaterais em vigencia de cardiopatia congenita canal-dependente). A hipoxemia e arterial sistemica, caracterizando cianose central.\n\nNo Caso 2, o lactente de 4 meses apresenta piora da cianose durante o choro associada a sopro sistolico em rebordo esternal esquerdo alto, quadro tipico da crise de hipoxia da Tetralogia de Fallot. O choro aumenta o shunt direita-esquerda, diminuindo a saturacao arterial sistemica, o que tambem caracteriza cianose central.\n\nAnalise das alternativas:\n\nAlternativa a: Esta correta, pois ambos os pacientes apresentam doencas cardiacas estruturais que promovem dessaturacao arterial sistemica de oxigenio, enquadrando-se na definicao de cianose central.\n\nAlternativa b: Esta incorreta, pois o Caso 1 nao e periferico; trata-se de um quadro cardiopulmonar com dessaturacao sistemica.\n\nAlternativa c: Esta incorreta, pois o Caso 2 e uma crise hipercianotica de origem cardiovascular central, nao periférica.\n\nAlternativa d: Esta incorreta, pois nenhum dos pacientes apresenta cianose decorrente apenas de estase sanguinea ou vasoconstricao periférica localizada.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:32.934Z"
+  },
+  {
+    "id": "AJUDA_9ed0a920-bdc3-41c4-b270-999ae3547426",
+    "originalId": "9ed0a920-bdc3-41c4-b270-999ae3547426",
+    "statement": "A principal indicação de drenagem torácica em trauma é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemotórax volumoso ou em expansão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pneumotórax hipertensivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Contusão pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fratura de costela.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A drenagem torácica (toracostomia com selo d'água) é um procedimento fundamental no manejo do trauma torácico, indicado para esvaziar a cavidade pleural de ar, sangue ou outros fluidos, permitindo a reexpansão pulmonar.\n\nAlternativa (a): Correta. O hemotórax, que é o acúmulo de sangue no espaço pleural, é uma das indicações mais clássicas para a drenagem. O dreno permite não apenas a retirada do sangue para que o pulmão volte a expandir, mas também a monitorização quantitativa da perda sanguínea. Hemotórax volumosos (acima de 1.500 mL na drenagem inicial) ou em expansão (débito contínuo de sangue) são critérios decisivos para indicar uma toracotomia de urgência.\n\nAlternativa (b): Incorreta. O pneumotórax hipertensivo é uma emergência médica de diagnóstico clínico e exige tratamento imediato. No entanto, a conduta prioritária e inicial não é a drenagem torácica em selo d'água, mas sim a descompressão imediata (toracostomia digital ou descompressão por agulha no quinto espaço intercostal, entre a linha axilar anterior e média). A drenagem torácica é realizada apenas após a manobra de alívio ter estabilizado o paciente.\n\nAlternativa (c): Incorreta. A contusão pulmonar é uma lesão direta do parênquima (tecido) pulmonar, causando edema e hemorragia alveolar. O tratamento é essencialmente de suporte, focado em boa oxigenação, fisioterapia respiratória, analgesia e controle cauteloso de fluidos. A drenagem só seria necessária se houvesse um pneumotórax ou hemotórax associado à contusão.\n\nAlternativa (d): Incorreta. A fratura de costela isolada, por si só, não é indicação de drenagem. O manejo principal é a analgesia potente para evitar que o paciente faça hipoventilação por dor, o que poderia levar a atelectasias e pneumonias. O dreno de tórax só entra em cena se a ponta da costela fraturada perfurar a pleura ou o pulmão, gerando um pneumotórax ou hemotórax secundário.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:32.934Z"
+  },
+  {
+    "id": "AJUDA_9ed12a13-f469-497a-93f6-7404ef028ba7",
+    "originalId": "9ed12a13-f469-497a-93f6-7404ef028ba7",
+    "statement": "Mulher de 66 anos de idade, residente em município onde está ocorrendo epidemia de dengue. é atendida em uma Unidade Básica de Saúde com quadro de febre, mal estar e cefaleia de início há três dias. Em uso de rivaroxabana há dois meses, devido a trombose venosa profunda em membro inferior. Ao exame físico, apresentava-se desidratada, com PA = 120x80mmHg, FC = 100bpm. Sem alterações à ausculta cardíaca e pulmonar. No hemograma foi observado hematócrito = 54,3% (Valor de Referência (VR) para mulheres = 35% a 45%) e plaquetas = 43.000células/mm³ (VR = 150.000 a 400.000células/mm³). Sobre o atendimento desta paciente dentro da Rede de Atenção à Saúde, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deverá ser solicitada internação hospitalar em leito de enfermaria.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Deverá ser solicitada internação hospitalar em leito de Unidade de Terapia Intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ela deverá ser acompanhada na UBS com agendamento de retorno diário, até 24 horas após o desaparecimento da febre, para avaliação clinica, realização de hemograma e dosagem de RNI para acompanhamento do estado da coagulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ela deverá ser acompanhada na UBS com agendamento de retorno para reavaliação clínica no dia de melhora da febre, e caso não haja defervescência, retornar no quinto dia da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro clínico compatível com dengue, em meio a uma epidemia. Para definir a conduta, devemos classificar o caso de acordo com o protocolo do Ministério da Saúde. \n\nOs pontos-chave para a classificação desta paciente são:\n1. Sinais de Alarme: A paciente apresenta hemoconcentração evidente (hematócrito de 54,3%, sendo o valor de referência máximo para mulheres de 45%). O aumento do hematócrito acima do valor basal ou significativamente acima do valor de referência é um sinal de alarme clássico (extravasamento plasmático).\n2. Comorbidades e Condições Especiais: Trata-se de uma idosa (66 anos) em uso de anticoagulante oral (rivaroxabana), o que aumenta consideravelmente o risco de complicações hemorrágicas.\n3. Estabilidade Hemodinâmica: A pressão arterial está normal (120x80 mmHg), o que afasta, no momento, o diagnóstico de choque (Grupo D).\n\nCom base na presença de sinal de alarme (hemoconcentração), a paciente é classificada como GRUPO C.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\nPacientes classificados no Grupo C (presença de pelo menos um sinal de alarme) obrigatoriamente devem ser internados em leito de enfermaria para hidratação venosa imediata e monitorização contínua por pelo menos 48 horas. A presença da anticoagulação com rivaroxabana reforça a necessidade de vigilância hospitalar rigorosa.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (b): A internação em Unidade de Terapia Intensiva (UTI) é reservada para pacientes do Grupo D, que apresentam sinais de choque, desconforto respiratório grave ou disfunção orgânica grave. Embora a paciente precise de internação, ela está hemodinamicamente estável no momento da consulta, permitindo o manejo inicial em enfermaria.\n\nAlternativa (c): O acompanhamento ambulatorial na Unidade Básica de Saúde (UBS) é indicado apenas para pacientes dos Grupos A e B. Além disso, a afirmação sobre a dosagem de RNI está tecnicamente incorreta para o caso: a rivaroxabana é um anticoagulante oral direto que não requer monitorização rotineira pelo RNI (o RNI é utilizado para monitorar a varfarina).\n\nAlternativa (d): Esta conduta é baseada no manejo de casos leves (Grupo A), sem sinais de alarme ou condições de risco. Ignora o fato de a paciente apresentar hemoconcentração (sinal de alarme) e estar anticoagulada, situações que impedem o manejo domiciliar sob risco de evolução rápida para o choque ou sangramentos graves.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Arboviroses",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:32.934Z"
+  },
+  {
+    "id": "AJUDA_9ed5eb2b-3671-4ce2-8011-50bf2fb792a3",
+    "originalId": "9ed5eb2b-3671-4ce2-8011-50bf2fb792a3",
+    "statement": "Paciente do sexo masculino, 3 anos, 14kg, é trazido pela mãe ao pronto socorro referindo que a criança se queimou com água fervente ao puxar o cabo de uma panela que estava no fogão, há 30 minutos. Ao exame físico, a paciente apresenta choro forte e fascies de dor, com áreas queimadas com formação de bolhas, muitas delas já estouradas, acometendo hemiface e hemicrânio à esquerda, ombro e braço esquerdos, dorso do tórax e região lombar. Sobre o atendimento inicial deste paciente, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Por se tratar de queimadura por escaldamento em criança com menos de 30kg e acima de 10% de superfície queimada, há indicação de internação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso precoce de colóides, principalmente nas primeiras 8 horas após a injúria, é contraindicado devido a maior incidência de derrame pleural, formação de ascite e aumento da pressão intra-abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Lavar a área queimada com água corrente ou soro em temperatura ambiente por cerca de 20 minutos, como medida inicial, potencializa uma evolução menos mórbida do caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O volume inicial a ser administrado para o paciente é aproximadamente de 1.100ml de Ringer Lactato nas primeiras 24 horas, contudo o débito urinário do paciente deve ser monitorado hora a hora e o volume infundido deve ser corrigido se houver necessidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta é uma questão clássica sobre o atendimento inicial ao paciente pediátrico queimado, abordando critérios de internação, primeiros socorros, reposição volêmica e o uso de coloides.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): A indicação de internação hospitalar para crianças segue critérios bem definidos. No caso de crianças (especialmente aquelas com menos de 30 kg), queimaduras de segundo grau (presença de bolhas) que ultrapassam 10 por cento da Superfície Corporal Queimada (SCQ) exigem ambiente hospitalar. Além disso, a localização em áreas nobres ou funcionais, como a face (hemiface e hemicrânio), reforça a necessidade de internação para manejo de vias aéreas, dor e curativos específicos.\n\nAlternativa B (Incorreta - Gabarito): Esta afirmação é considerada a incorreta porque o uso de coloides (como a albumina) não é terminantemente contraindicado nas primeiras horas, especialmente em pediatria. Embora a reposição inicial seja feita preferencialmente com cristaloides (Ringer lactato), muitos protocolos pediátricos modernos recomendam a introdução de coloides após as primeiras 8 a 12 horas da injúria se o paciente apresentar necessidade de volumes muito altos de cristaloides (fenômeno conhecido como fluid creep). O objetivo do coloide é justamente aumentar a pressão oncótica e reduzir o edema generalizado, e não o contrário. Além disso, as complicações citadas (ascite e derrame pleural) são mais frequentemente associadas ao excesso de cristaloides do que ao uso racional de coloides.\n\nAlternativa C (Correta): O resfriamento da área queimada com água corrente em temperatura ambiente (não gelada) por aproximadamente 20 minutos é a medida de primeiros socorros mais eficaz. Essa ação interrompe a progressão térmica do dano tecidual (o calor continua queimando por alguns minutos após o contato inicial), promove analgesia imediata e reduz a profundidade final da ferida, melhorando o prognóstico.\n\nAlternativa D (Correta): O cálculo do volume de ressuscitação em crianças pode variar conforme a fórmula utilizada. Se utilizarmos a fórmula de Parkland modificada ou a de Brooke (2 ml a 4 ml por kg por por cento de SCQ), o valor se aproxima do descrito. Calculando a SCQ aproximada: Hemiface/Hemicrânio (9 por cento) + Braço/Ombro (9 por cento) + Dorso/Região Lombar (18 por cento) = 36 por cento de SCQ. \nCálculo: 2 ml x 14 kg x 36 = 1.008 ml. O valor de 1.100 ml é uma estimativa aproximada aceitável para as primeiras 24 horas de reposição (além do volume de manutenção/Holliday-Segar, que deve ser somado em pediatria). O ponto mais importante da alternativa é a ressalva de que o débito urinário é o guia real da infusão, devendo-se manter entre 0,5 a 1,0 ml/kg/hora em crianças.\n\nResumo: A alternativa B está incorreta porque a medicina baseada em evidências e protocolos de grandes centros de queimados permitem e, por vezes, recomendam o uso de coloides para evitar o edema maciço causado pelo excesso de cristaloides, invalidando a afirmação de contraindicação absoluta pelos motivos expostos.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Queimaduras",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:32.934Z"
+  },
+  {
+    "id": "AJUDA_9edbc586-eb90-4eab-8fcf-34c1d79b14eb",
+    "originalId": "9edbc586-eb90-4eab-8fcf-34c1d79b14eb",
+    "statement": "No âmbito da Rede Nacional de Atenção Integral à Saúde do Trabalhador (Renast), os Centros de Referência em Saúde do Trabalhador (Cerest) têm com atribuições, EXCETO,",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar ações de Vigilância em Saúde do Trabalhador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fornecer apoio especializado e matriciamento de Vigilância em Saúde do Trabalhador para a Rede de Atenção à Saúde (RAS).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar ações de educação em saúde do trabalhador para os profissionais de saúde da Rede de Atenção à Saúde (RAS) e para a população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "articular ações intersetoriais de saúde do trabalhador no território.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "garantir a notificação de todos os casos de pessoas com doença relacionada ao trabalho em serviços de atenção básica da Rede de Atenção à Saúde (RAS) em até 24 horas da confirmação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver essa questão, é fundamental compreender o papel dos Centros de Referência em Saúde do Trabalhador (Cerest) dentro do Sistema Único de Saúde (SUS) e da Rede Nacional de Atenção Integral à Saúde do Trabalhador (Renast). Os Cerests atuam como polos irradiadores de conhecimento e suporte técnico especializado, não substituindo a rede assistencial, mas fortalecendo-a por meio de ações transversais.\n\nAlternativa a) Esta alternativa está correta em relação às funções do Cerest. A Vigilância em Saúde do Trabalhador (Visat) é uma das atribuições centrais dessas unidades, que realizam inspeções em ambientes de trabalho, investigam surtos e analisam processos produtivos que possam gerar riscos à saúde.\n\nAlternativa b) Esta alternativa está correta em relação às funções do Cerest. O matriciamento é a ferramenta de apoio técnico-pedagógico que o Cerest oferece às equipes da Rede de Atenção à Saúde (RAS), especialmente à Atenção Primária, para que os profissionais consigam identificar o nexo entre o trabalho e a doença e realizar o manejo adequado.\n\nAlternativa c) Esta alternativa está correta em relação às funções do Cerest. A educação permanente é essencial para capacitar os profissionais do SUS sobre as especificidades da saúde do trabalhador. Além disso, ações voltadas para a população e movimentos sociais (como sindicatos) visam à promoção da saúde e à prevenção de agravos.\n\nAlternativa d) Esta alternativa está correta em relação às funções do Cerest. A saúde do trabalhador exige diálogo entre diferentes setores, como Ministério do Trabalho, Previdência Social, Meio Ambiente e Ministério Público. O Cerest deve articular essas frentes no seu território de abrangência.\n\nAlternativa e) Esta alternativa é a exceção (a incorreta) e, portanto, o gabarito. Existem erros conceituais e normativos aqui. Primeiro, a responsabilidade pela notificação é do profissional de saúde ou do serviço que presta o atendimento inicial, e não uma \"garantia\" a ser dada pelo Cerest em nome de terceiros. Segundo, na legislação brasileira (Portaria de Consolidação nº 4/2017), nem toda doença relacionada ao trabalho exige notificação em até 24 horas. A notificação imediata (24 horas) é reservada para acidentes de trabalho graves, fatais ou que ocorram com crianças e adolescentes. A maioria das doenças ocupacionais segue o fluxo de notificação semanal. O Cerest auxilia no monitoramento dos dados, mas não tem como atribuição garantir o cumprimento desse prazo por todas as unidades da rede básica.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:32.934Z"
+  },
+  {
+    "id": "AJUDA_9ee1a3eb-d5ae-4ce5-8adb-265fcaf57455",
+    "originalId": "9ee1a3eb-d5ae-4ce5-8adb-265fcaf57455",
+    "statement": "Um paciente de 48 anos, tabagista de 60 anos-maço, na investigação de tosse por mais de 3 meses foi diagnosticado com mesotelioma pleural maligno, com pouca chance de cura pelo estado avançado. O principal fator de risco para esse tipo de tumor é",
+    "options": [
+      {
+        "id": "A",
+        "text": "trabalho em minas de carvão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "contato frequente com gás CFC (freon).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "radioterapia prévia de tórax ou de pescoço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tabagismo acima de 30 anos-maço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "exposição, ainda que remota no tempo, a asbestos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O mesotelioma pleural maligno é uma neoplasia agressiva que se origina nas células mesoteliais da pleura. A compreensão do seu principal fator etiológico é fundamental, pois ele difere dos outros cânceres de pulmão mais comuns.\n\nAlternativa a: Incorreta. O trabalho em minas de carvão é o fator de risco clássico para a pneumoconiose dos trabalhadores do carvão (antracose/pulmão negro). Embora possa haver um risco aumentado para o carcinoma broncogênico em mineradores, ele não é a causa primária do mesotelioma.\n\nAlternativa b: Incorreta. O gás CFC (clorofluorcarboneto), utilizado historicamente em sistemas de refrigeração e aerossóis, está relacionado à destruição da camada de ozônio, mas não possui associação epidemiológica ou fisiopatológica com o desenvolvimento de mesotelioma.\n\nAlternativa c: Incorreta. A radioterapia prévia na região do tórax ou pescoço (comum em tratamentos de Linfoma de Hodgkin ou câncer de mama) é reconhecida como um fator de risco para o mesotelioma, porém é responsável por uma parcela muito pequena dos casos clínicos. Não é o principal fator de risco quando comparado à exposição mineral.\n\nAlternativa d: Incorreta. Esta alternativa representa a principal \"pegadinha\" da questão. O paciente descrito é um tabagista pesado (60 anos-maço), o que aumenta drasticamente o risco de câncer de pulmão (carcinoma broncogênico). No entanto, diversos estudos comprovam que o tabagismo não é um fator de risco independente para o mesotelioma pleural. O cigarro não causa mesotelioma, embora potencialize o risco de câncer de pulmão em pacientes já expostos ao asbesto.\n\nAlternativa e: Correta. A exposição ao asbesto (também conhecido como amianto) é o principal fator de risco para o mesotelioma pleural maligno, estando relacionada a cerca de 80% dos casos documentados. A questão destaca corretamente que essa exposição pode ser \"remota no tempo\", o que é uma característica clínica típica da doença: o período de latência entre o primeiro contato com a fibra de asbesto e o diagnóstico do tumor costuma ser longo, variando geralmente entre 20 e 40 anos. Por isso, mesmo que o paciente não esteja mais exposto atualmente, o risco permanece devido à inalação prévia das fibras.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Pulmonares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:32.934Z"
+  },
+  {
+    "id": "AJUDA_9ee4b445-15be-42aa-abc3-ef4c81148fe5",
+    "originalId": "9ee4b445-15be-42aa-abc3-ef4c81148fe5",
+    "statement": "A cólera é causada pela bactéria Vibrio cholerae toxigênica dos sorogrupos O1 ou O139. O Vibrio cholerae O1 pode ser classificado em dois biotipos: Clássico e El Tor, que apresentam diferenças em relação às propriedades fenotípicas e genotípicas, patogenicidade e padrões de infecção e sobrevivência nos hospedeiros humanos. O uso de antibióticos é complementar ao tratamento e não substitui a administração de líquidos e solução de sais de reidratação oral ou de fluidos endovenosos (a reidratação é a base da terapia).\nDessa maneira, o antibiótico de primeira escolha, indicado pelo Ministério da Saúde, para tratamento da cólera é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "doxiciclina 2 mg/kg a 4 mg/kg, em dose única, por via oral;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "sulfametoxazol + trimetoprima 400/80 mg, 12/12h por 5 dias, por via oral;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "amoxicilina + clavulanato 875/125 mg, 12/12h por 7 dias;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "gentamicina 80 mg, por via oral, em dose única;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "cefepime 2 g, por via oral endovenosa, 8/8h por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O tratamento da cólera fundamenta-se na reposição volêmica rápida e adequada. O uso de antibióticos é indicado apenas em casos de desidratação moderada ou grave, com o objetivo de reduzir a duração da diarreia, o volume das perdas fecais e o tempo de excreção do *Vibrio cholerae*.\n\nAnálise das alternativas:\n\na) Correta. A doxiciclina é o antibiótico de primeira escolha recomendado pelo Ministério da Saúde para o tratamento da cólera em adultos e crianças. A dose única facilita a adesão ao tratamento e é eficaz na redução da carga bacteriana. Em adultos, a dose padrão costuma ser de 300 mg em dose única; para crianças, a recomendação varia de 2 a 4 mg/kg, também em dose única, por via oral.\n\nb) Incorreta. O sulfametoxazol e a trimetoprima (SMX-TMP) já foram muito utilizados no passado, mas atualmente não são a primeira escolha devido ao aumento global da resistência bacteriana do *Vibrio cholerae* a esta combinação. Além disso, o tempo de tratamento de 5 dias é menos vantajoso que a dose única da doxiciclina.\n\nc) Incorreta. A amoxicilina associada ao clavulanato é uma penicilina de amplo espectro com inibidor de beta-lactamase, utilizada principalmente em infecções respiratórias, de pele ou do trato urinário. Não possui indicação ou eficácia comprovada para o controle do *Vibrio cholerae* em protocolos epidemiológicos.\n\nd) Incorreta. A gentamicina é um aminoglicosídeo de uso exclusivamente parenteral (intravenoso ou intramuscular), pois não é absorvida pelo trato gastrointestinal. Portanto, a administração por via oral não teria efeito sistêmico e não é utilizada no manejo da cólera.\n\ne) Incorreta. O cefepime é uma cefalosporina de quarta geração de uso estritamente hospitalar e intravenoso, indicada para infecções graves, como sepse ou neutropenia febril. Seu uso para cólera é inadequado tanto pelo espectro desnecessário quanto pela via de administração e tempo de tratamento propostos.\n\nResumo: De acordo com o Guia de Vigilância em Saúde do Ministério da Saúde, a doxiciclina em dose única permanece como o esquema preferencial para o tratamento medicamentoso complementar da cólera. Alternativas como azitromicina ou ciprofloxacino podem ser consideradas em situações específicas de resistência ou contraindicações.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:32.934Z"
+  },
+  {
+    "id": "AJUDA_9ee7e047-9b2b-41a8-b0e5-c6644e64dd97",
+    "originalId": "9ee7e047-9b2b-41a8-b0e5-c6644e64dd97",
+    "statement": "Homem de 40 anos, com história de pirose retroesternal e regurgitação há anos, realiza endoscopia digestiva alta. Sem comorbidades conhecidas, sem história de tratamento cirúrgico ou medicamentoso. Exame clínico: IMC 36 kg/m². Sem outras alterações. Endoscopia: esofagite erosiva Los Angeles A. No esôfago distal, notam-se pregueados digitiformes sugestivos de Barrett (C2M3). Biópsia com metaplasia intestinal e sem sinais de displasia. Assinale a alternativa correta a respeito do caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O melhor tratamento envolve uso de inibidor do canal de potássio com procinético, visando a maior controle sintomático e regressão do Barrett.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se indicar fundoplicatura laparoscópica, com o objetivo de reduzir refluxo e eliminar o risco futuro de adenocarcinoma de esôfago.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O uso de agonistas de GLP-1 pode piorar o quadro esofágico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Deve-se programar derivação gástrica em Y-de-Roux (bypass gástrico), visando ao controle do refluxo e à redução ponderal como estratégia de primeira escolha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar ablação endoscópica por radiofrequência, seguida de manutenção com inibidor de bomba de próton, para prevenir progressão para adenocarcinoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso apresenta um paciente jovem, obeso (IMC 36 kg/m²), com Doença do Refluxo Gastroesofágico (DRGE) evidenciada por esofagite de Los Angeles A e esôfago de Barrett de segmento curto (C2M3) sem displasia.\n\nAlternativa a: Incorreta. Os inibidores de ácido competitivos de potássio (P-CABs), como a vonoprazana, são potentes supressores ácidos e auxiliam na cicatrização da esofagite, mas não há evidências de que promovam a regressão do epitélio de Barrett. O uso de procinéticos tem papel limitado e não altera a história natural da metaplasia intestinal.\n\nAlternativa b: Incorreta. Embora a fundoplicatura laparoscópica trate o refluxo, ela não elimina o risco de desenvolvimento de adenocarcinoma em pacientes que já possuem esôfago de Barrett. Além disso, em pacientes com obesidade grau II (IMC 36), a fundoplicatura apresenta maiores taxas de falha e recidiva em comparação ao bypass gástrico.\n\nAlternativa c: Correta. Os agonistas do receptor de GLP-1 (como a semaglutida), muito utilizados no tratamento da obesidade, possuem como efeito colateral o retardo do esvaziamento gástrico. Em pacientes com DRGE e Barrett, esse atraso no esvaziamento pode aumentar a pressão intragástrica e a exposição ácida do esôfago distal, agravando a esofagite e os sintomas de refluxo.\n\nAlternativa d: Incorreta. O bypass gástrico em Y de Roux é o procedimento cirúrgico de escolha para pacientes obesos com DRGE grave, pois promove perda ponderal e desvia o fluxo ácido/biliar. Entretanto, para um paciente com esofagite leve (grau A) e Barrett sem displasia que nunca realizou tratamento prévio, a estratégia de primeira escolha é o tratamento clínico com inibidores da bomba de prótons (IBPs) e mudanças no estilo de vida, reservando a cirurgia para casos refratários ou selecionados.\n\nAlternativa e: Incorreta. A ablação endoscópica por radiofrequência está indicada para pacientes com esôfago de Barrett que apresentam displasia de baixo ou alto grau. Para metaplasia intestinal sem sinais de displasia, a recomendação atual das diretrizes médicas é apenas o acompanhamento endoscópico periódico (vigilância) e o controle da acidez gástrica, não sendo indicada a ablação de rotina devido aos riscos do procedimento.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:32.934Z"
+  },
+  {
+    "id": "AJUDA_9ee80907-a36d-4351-a26e-ea345e99579c",
+    "originalId": "9ee80907-a36d-4351-a26e-ea345e99579c",
+    "statement": "Paciente de 35 anos, sexo feminino, previamente hígida, admitida no Pronto-Socorro com quadro de dor abdominal em epigastro e hipocôndrios há 4 dias, associada a episódios de vômito e inapetência. Na admissão, encontrava-se em regular estado geral, FC 126 bpm, PA 95 x 60 mmHg, FR 22, peso 60 kg. Palpação abdominal com distensão leve, dor em andar superior, pior em epigastro, sem sinais de irritação peritoneal, sem massas palpáveis. Ruídos hidroaéreos presentes, mas diminuídos. Descompressão brusca negativa, sinal de Giordano negativo, sinal de Murphy negativo. Foram realizados exames laboratoriais na chegada: Hb 14 g/dL, Ht 46%, leucócitos 15500 (sem desvio), ureia 90 mg/dL (Valor de Referência – VR 8 – 20), creatinina 1,9 md/dL (VR 0,7 – 1,3), TGO 125 U/L (VR 10–40), TGP 98 U/L (VR 10–40), bilirrubinas totais 1,2 mg/dL (VR 0,2 – 1,1), bilirrubina direta 1,0 mg/dL (0 – 0,3), amilase 245 U/L (VR 25 – 125), lipase 1250 U/L (VR 10 – 140), PCR 105 mg/dL. Assinale a alternativa que apresenta a melhor conduta para essa paciente, nesse momento",
+    "options": [
+      {
+        "id": "A",
+        "text": "Monitorização; jejum; ringer lactato - 500 mL EV, agora e de 6/6 h; dipirona 1g EV, de 6/6 h; ondansetrona - 4 mg EV, de 8/8 h; sondagem vesical de demora.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Monitorização; dieta parenteral; ceftriaxone e metronidazol EV; metoclopramida; morfina, se necessário; soro fisiológico 0,9% - 500 mL, de 12/12 h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Jejum; tomografia de abdome com contraste; meropenem EV; tramadol – 100 mg EV, de 8/8h; ondansetrona - 4 mg EV, de 8/8 h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internação em UTI; dieta leve hipogordurosa; ringer lactato – 500 mL EV, de 12/12 h; sondagem vesical de demora; angiotomografia de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nA paciente apresenta um quadro clássico de pancreatite aguda, definido pela presença de dor abdominal característica no andar superior e elevação da lipase acima de três vezes o valor de referência (1.250 U/L para um VR de 140 U/L). \n\nA gravidade inicial é sugerida pela instabilidade hemodinâmica (taquicardia de 126 bpm e PA limítrofe de 95x60 mmHg) e sinais de hemoconcentração e disfunção renal (hematócrito de 46%, ureia de 90 e creatinina de 1,9), o que indica uma desidratação importante e a necessidade de ressuscitação volêmica vigorosa.\n\nPOR QUE A ALTERNATIVA \"A\" ESTÁ CORRETA?\nEsta alternativa aborda os pilares do tratamento inicial da pancreatite aguda:\n1. Ressuscitação volêmica: O uso de Ringer lactato é preferível em relação ao soro fisiológico para reduzir a incidência de SIRS (Síndrome da Resposta Inflamatória Sistêmica). A dose proposta (500 mL imediatos seguidos de manutenção) visa restaurar a perfusão tecidual.\n2. Manejo de sintomas: Jejum inicial (devido aos vômitos e à dor), analgesia com dipirona e antiemético com ondansetrona.\n3. Monitorização: A sondagem vesical de demora é fundamental em pacientes com sinais de choque ou disfunção renal para o controle rigoroso do débito urinário, que é o melhor parâmetro para avaliar a eficácia da hidratação.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\nAlternativa B: A nutrição parenteral não é indicada de rotina; se o paciente não tolerar a via oral, a preferência é a via enteral. O uso de antibióticos (ceftriaxone e metronidazol) não deve ser feito de forma profilática na pancreatite aguda. Além disso, 500 mL de soro de 12/12h (1 litro/dia) é insuficiente para uma paciente com sinais de desidratação grave e choque.\n\nAlternativa C: A tomografia de abdome com contraste não deve ser realizada precocemente (antes de 48-72h do início da dor) na pancreatite aguda, pois pode não mostrar áreas de necrose e o contraste iodado pode agravar a lesão renal aguda presente. O uso de meropenem (antibiótico de amplo espectro) também é incorreto sem evidência de infecção.\n\nAlternativa D: Embora a monitorização intensiva pudesse ser discutida pelo estado hemodinâmico, a \"dieta leve\" é contraindicada para uma paciente que está vomitando e com dor intensa. A oferta de apenas 1 litro de Ringer lactato por dia (500 mL de 12/12h) é insuficiente para a ressuscitação volêmica necessária. A angiotomografia não é o exame de escolha para avaliação inicial da pancreatite.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:32.934Z"
+  },
+  {
+    "id": "AJUDA_9ee8344a-7fb3-4f3f-8467-e3e69b1a1036",
+    "originalId": "9ee8344a-7fb3-4f3f-8467-e3e69b1a1036",
+    "statement": "Um pré-escolar de 4 anos de idade compareceu a consulta no pronto atendimento apresentando sinais e sintomas caracterizados por febre elevada (Tax = 39 ºC), tosse seca intensa, cefaleia e prostração há três dias. No quarto dia de doença, a febre piorou, tornando-se mais elevada e apareceu exantema que se inicia atrás do pavilhão auricular e dissemina-se rapidamente para o pescoço e as extremidades dos membros, com característica morbiliforme. Ao exame físico, a criança se apresenta com aparência toxemiada, olhos hiperemiados, fotofobia, tosse extenuante, FC = 140 bpm, FR = 23 irpm, Tax = 39,8 ºC e SatO2 = 98%.\n\nO exantema morbiliforme é caracterizado",
+    "options": [
+      {
+        "id": "A",
+        "text": "por grandes áreas de petéquias difusas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "por máculas ou placas vermelhas na pele, com áreas de pele sã entre as lesões.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "pela aparência de lixa, difuso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "por ser vesicular confluente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — febre alta, tosse intensa, conjuntivite (olhos hiperemiados e fotofobia) e exantema de progressão craniocaudal iniciado atrás da orelha — é a apresentação clássica do sarampo. O termo \"morbiliforme\" deriva de \"morbilli\" (sarampo em latim) e é amplamente utilizado na semiologia dermatológica para descrever erupções que se assemelham às do sarampo.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Grandes áreas de petéquias difusas caracterizam um exantema purpúrico ou hemorrágico, comumente associado a doenças graves como meningococcemia, febre maculosa ou quadros de vasculite e plaquetopenia. Diferente do exantema morbiliforme, as petéquias não desaparecem à vitropressão.\n\nAlternativa b) Correta. O exantema morbiliforme é definido pela presença de máculas (manchas planas) e pápulas (lesões levemente elevadas) eritematosas que podem coalescer, formando placas. A característica fundamental para diferenciá-lo do exantema escarlatiniforme é a presença de áreas de pele sã (pele de aspecto normal) entre as lesões avermelhadas. No sarampo, essas lesões costumam ser discretas inicialmente e tornam-se confluentes à medida que a doença progride, mas sempre preservando ilhas de pele normal.\n\nAlternativa c) Incorreta. A aparência de \"lixa\" (pele áspera ao tato) é a característica patognomônica do exantema escarlatiniforme, típico da escarlatina (infecção pelo *Streptococcus pyogenes*). Nesse caso, o exantema é puntiforme, muito denso e sobre uma base intensamente eritematosa, geralmente sem áreas de pele sã entre as lesões.\n\nAlternativa d) Incorreta. Um exantema vesicular é caracterizado pela presença de vesículas (pequenas bolhas com conteúdo líquido claro), como ocorre na varicela (catapora). O exantema morbiliforme é maculopapular, ou seja, sólido e não apresenta coleções líquidas ou vesículas em sua evolução típica.\n\nGabarito: Alternativa (b).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:32.934Z"
+  }
+]

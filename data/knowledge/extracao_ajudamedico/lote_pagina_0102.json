@@ -1,0 +1,491 @@
+[
+  {
+    "id": "AJUDA_1b7842cd-7b94-4a44-bbf2-74f2ba04bf70",
+    "originalId": "1b7842cd-7b94-4a44-bbf2-74f2ba04bf70",
+    "statement": "A triagem neonatal para hipotireoidismo congênito é feita com a dosagem de TSH em papel filtro entre o 3º e o 5º dias de vida. Utilizando esse método, que diagnóstico de hipotireoidismo congênito, dentre os abaixo, pode deixar de ser triado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Agenesia de tireoide",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipotireoidismo transitório",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Disormonogênese",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipotireoidismo central",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O Programa Nacional de Triagem Neonatal, conhecido popularmente como Teste do Pezinho, utiliza, na maioria dos estados brasileiros, a dosagem isolada do TSH (Hormônio Estimulante da Tireoide) em papel-filtro para o rastreamento do hipotireoidismo congênito. A estratégia baseia-se no fato de que, em 95% dos casos, a patologia é de origem primária (na própria glândula tireoide). No hipotireoidismo primário, a falta de hormônios tireoidianos (T4 e T3) faz com que a hipófise aumente a produção de TSH por meio do mecanismo de feedback negativo. Portanto, o teste busca níveis elevados de TSH.\n\nAnálise das alternativas:\n\na) Incorreta. A agenesia de tireoide é a ausência completa da glândula. É uma forma de hipotireoidismo primário permanente. Como não há produção de T4, os níveis de TSH sobem drasticamente logo após o nascimento, sendo facilmente detectados pela triagem de rotina.\n\nb) Incorreta. O hipotireoidismo transitório pode ser causado por fatores como a passagem de anticorpos bloqueadores maternos ou a exposição ao excesso ou à deficiência de iodo. Mesmo sendo temporário, ele se manifesta como um defeito na glândula (primário), gerando elevação do TSH e sendo captado pelo teste.\n\nc) Incorreta. A disormonogênese ocorre quando a glândula tireoide está presente, mas possui defeitos enzimáticos que impedem a produção correta dos hormônios. Também é uma causa de hipotireoidismo primário, levando ao aumento compensatório do TSH, o que permite sua detecção no papel-filtro.\n\nd) Correta. O hipotireoidismo central decorre de falhas na hipófise (secundário) ou no hipotálamo (terciário). Nessas situações, o problema é justamente a falta de produção de TSH ou de seu estímulo (TRH). Como o recém-nascido com hipotireoidismo central apresenta níveis de TSH baixos ou inadequadamente normais, ele não será identificado em um protocolo de triagem que busca apenas TSH elevado. Para detectar esses casos, seria necessária a dosagem conjunta do T4 livre na triagem neonatal, prática que não é o padrão na saúde pública brasileira devido ao custo e à menor prevalência dessa forma da doença.\n\nGabarito: Letra (d).",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Hipotireoidismo Congênito"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:49.404Z"
+  },
+  {
+    "id": "AJUDA_1b7d1895-49da-4544-bd73-46cdd719b884",
+    "originalId": "1b7d1895-49da-4544-bd73-46cdd719b884",
+    "statement": "Mulher, 25 anos de idade, busca atendimento por atraso menstrual e teste de gravidez positivo. Sem doenças, refere ciclos menstruais prévios regulares, com variação entre 27 e 31 dias de intervalo. A data da última menstruação foi em 10/08/2025. Refere que foi vítima de violência sexual em 23/08/2025, mas não verbalizou por receio de ser punida pelo agressor conhecido. A relação não consensual ocorreu com penetração vaginal, sem uso de preservativo. Após o ocorrido, apresentou corrimento amarelado, que tratou por conta própria com clotrimazol em dose única. Manifesta desejo de interromper a gravidez. Assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Como a idade gestacional e o evento são compatíveis, a interrupção de gravidez pode ser realizada diante de relato circunstanciado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Diante de idade gestacional avançada, indicar suporte multiprofissional integral e iniciar pré-natal de alto risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar para que realize boletim de ocorrência para prosseguir com a interrupção de gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não há correlação direta entre a gravidez e o evento e, por isso, deve-se garantir assistência pré-natal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico e cronologia:\n\nA data da última menstruação (DUM) foi em 10/08/2025. Em uma paciente com ciclos menstruais regulares de 27 a 31 dias, a ovulação ocorre por volta do 14º dia do ciclo (janela fértil entre o 13º e o 17º dia). A violência sexual relatada ocorreu em 23/08/2025, exatamente no 14º dia após a DUM, demonstrando perfeita compatibilidade cronológica e nexo causal entre o evento e a gestação inicial.\n\nAnálise das alternativas:\n\nAlternativa a (Correta): O Código Penal Brasileiro (Artigo 128, inciso II) autoriza o aborto quando a gravidez resulta de estupro. Conforme as diretrizes do Ministério da Saúde, a palavra da mulher goza de presunção de veracidade. Para a realização do procedimento, exige-se o consentimento informado, o relato circunstanciado perante a equipe de saúde e a avaliação técnica multiprofissional. Havendo compatibilidade entre a idade gestacional e o evento, o procedimento é devidamente indicado e amparado por lei.\n\nAlternativa b (Incorreta): A idade gestacional é inicial (logo após o primeiro atraso menstrual) e não avançada. Além disso, diante do desejo expresso de interrupção e do enquadramento legal, a conduta deve focar no acolhimento e nos trâmites para o abortamento previsto em lei, e não na imposição de seguimento pré-natal.\n\nAlternativa c (Incorreta): O serviço de saúde não pode exigir boletim de ocorrência (B.O.), autorização judicial ou laudo do Instituto Médico Legal para a realização do aborto legal em casos de violência sexual. A exigência de tais documentos cria barreiras indevidas ao acesso à saúde e contraria as normas técnicas vigentes.\n\nAlternativa d (Incorreta): Há nexo causal e correlação direta evidentes entre a data do estupro desprotegido no período fértil e a gestação confirmada pelo atraso menstrual. Negar essa correlação ignora a fisiologia reprodutiva e viola o direito da paciente à interrupção gestacional prevista em lei.\n\nGabarito: Letra a.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:49.404Z"
+  },
+  {
+    "id": "AJUDA_1b98fcc7-f111-49b3-97d9-f4cf9dd5b73d",
+    "originalId": "1b98fcc7-f111-49b3-97d9-f4cf9dd5b73d",
+    "statement": "Um paciente de três anos de idade, previamente hígido, foi levado ao pronto atendimento por apresentar há dois dias diarreia líquida, com seis episódios por dia, e vômitos ocasionais. A mãe relatou que ele mantém aceitação moderada de líquidos. Ao exame, mostrou-se hidratado, com mucosas úmidas, sem alterações respiratórias, com FC = 110 bpm, FR = 26 irpm, SpO2 = 97%, e temperatura = 37,3 °C. Abdome sem dor à palpação. No contexto da diarreia aguda não complicada, a principal indicação de investigação laboratorial é para",
+    "options": [
+      {
+        "id": "A",
+        "text": "todas as crianças com mais de 24 horas de sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "os casos de diarreia líquida sem sangue.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "os casos de suspeita de desidratação moderada a grave ou disenteria.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "qualquer diarreia viral autolimitada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a conduta diagnóstica na Doença Diarreica Aguda (DDA) em pediatria. Na imensa maioria dos casos, a diarreia infantil é de etiologia viral, tem caráter autolimitado e o diagnóstico é estritamente clínico, não havendo necessidade de exames complementares. O foco do tratamento é a prevenção ou correção da desidratação. A investigação laboratorial fica reservada apenas para situações específicas nas quais os resultados podem mudar a conduta terapêutica ou sinalizar gravidade.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A maioria das diarreias agudas dura mais de 24 horas e, ainda assim, não requer exames. Estabelecer esse prazo como critério para investigação sobrecarregaria o sistema de saúde e submeteria a criança a procedimentos desnecessários, visto que o manejo inicial é baseado no estado de hidratação, e não no agente etiológico.\n\nAlternativa (b) Incorreta: A diarreia líquida sem sangue é a apresentação mais comum das infecções virais (como por rotavírus ou norovírus). Nesses casos, o tratamento é apenas suporte e reidratação oral, sendo a investigação laboratorial dispensável.\n\nAlternativa (c) Correta: Esta é a principal indicação. Casos de desidratação moderada a grave (Planos B ou C do Ministério da Saúde) podem exigir monitoramento de eletrólitos (sódio, potássio) e função renal, especialmente se houver necessidade de hidratação venosa. Já a presença de disenteria (sangue e muco nas fezes) sugere uma etiologia bacteriana invasiva, o que pode demandar a realização de coprocultura para guiar uma eventual antibioticoterapia, caso seja indicada.\n\nAlternativa (d) Incorreta: Se a diarreia é classificada como viral e autolimitada, a própria definição indica que o quadro se resolverá espontaneamente. Realizar exames nesses casos não altera o prognóstico nem a conduta médica, gerando custos e desconforto desnecessários para o paciente.\n\nEm resumo, para o paciente do caso, que se encontra hidratado e sem sinais de alerta, a conduta correta é o Plano A (tratamento domiciliar), sem necessidade de qualquer investigação laboratorial imediata.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:49.404Z"
+  },
+  {
+    "id": "AJUDA_1ba3a97b-b243-4263-8ef0-55c9b1d32951",
+    "originalId": "1ba3a97b-b243-4263-8ef0-55c9b1d32951",
+    "statement": "Paciente masculino, 45 anos, agricultor, morador de uma área rural no interior do Rio Grande do Sul. História Clínica: O paciente foi atendido em um hospital de campanha três semanas após uma enchente que devastou sua comunidade. Ele relata múltiplos problemas de saúde desde que foi deslocado para um abrigo temporário superlotado. Nos últimos sete dias, desenvolveu diarreia aquosa, associada a dores abdominais e vômitos. Além disso, descreve episódios de febre intermitente, cefaleia e dor retro-orbitária. O paciente também apresenta uma lesão puntiforme no pé direito, resultado de uma ferida causada por um pedaço de metal enferrujado durante a enchente. Relata, ainda, dores musculares e cãibras nos últimos dias. Sua esposa, que está no mesmo abrigo, desenvolveu sintomas respiratórios agudos. Ele expressa preocupação com a segurança das filhas adolescentes, temendo violência sexual no abrigo.\nExames Físicos: -PA: 90/60 mmHg -FC:105 bpm -Temperatura:38,4°C. Ao exame físico revela desidratação moderada, abdome doloroso à palpação difusa, lesão puntiforme com eritema e edema no pé direito, além de icterícia leve. História de Saúde: Paciente hipertenso, em uso irregular de medicamentos. Tem histórico de episódios anteriores de dengue, mas nunca apresentou hepatite ou outra doença infecciosa crônica.\n\nA exposição a áreas alagadas e de vegetação densa aumenta o risco de picadas de animais peçonhentos. Se este paciente apresentasse uma picada de cobra, qual seria o sinal clínico mais esperado no local da picada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eritema difuso e prurido leve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Necrose tecidual e dor intensa no local da picada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Formação de bolhas e coloração azulada ao redor da lesão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Paralisia muscular progressiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento sobre ofidismo (acidentes por picadas de cobras) no Brasil, especificamente em cenários de áreas rurais e alagamentos, que são frequentes na região Sul. No Brasil, o gênero Bothrops (jararaca, urutu, cotiara) é responsável por cerca de 90% dos acidentes ofídicos notificados.\n\nO veneno botrópico possui três ações principais: proteolítica (inflamatória aguda), coagulante e hemorrágica. A ação proteolítica é a que causa as manifestações locais mais marcantes.\n\nAnálise das alternativas:\n\na) Incorreta. Eritema difuso e prurido leve são sinais inespecíficos, mais comuns em picadas de insetos ou reações alérgicas leves. No acidente ofídico de importância clínica, a reação inflamatória local é muito mais exuberante e dolorosa.\n\nb) Correta. Como o acidente botrópico é o mais frequente em áreas rurais e de vegetação densa, espera-se encontrar sinais da ação proteolítica do veneno. Isso inclui dor intensa de início imediato, edema endurecido, calor, rubor e, em casos moderados a graves, a evolução para necrose tecidual decorrente da destruição celular e isquemia local.\n\nc) Incorreta. Embora a formação de bolhas (flictenas) possa ocorrer no acidente botrópico, a \"coloração azulada\" não é a descrição clássica ou mais esperada. A necrose e a dor intensa são sinais muito mais patognomônicos e frequentes para o diagnóstico clínico da gravidade local.\n\nd) Incorreta. A paralisia muscular progressiva (fácies miastênica de Rosenfeld) é característica de venenos neurotóxicos, como o do gênero Crotalus (cascavel) ou Micrurus (coral verdadeira). No entanto, esses acidentes são menos frequentes e, crucialmente, cursam com quase nenhuma manifestação inflamatória no local da picada, o que contradiz o esperado para a maioria dos acidentes em áreas de mata e alagados.\n\nEm resumo, diante da alta prevalência de acidentes por jararacas (Bothrops) no interior do Rio Grande do Sul, a presença de dor intensa e a potencial evolução para necrose tecidual no local da ferida são os sinais clínicos mais esperados.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Animais Peçonhentos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:49.404Z"
+  },
+  {
+    "id": "AJUDA_1bb0ef34-fc3e-49d0-8b30-e8387545e5de",
+    "originalId": "1bb0ef34-fc3e-49d0-8b30-e8387545e5de",
+    "statement": "Mulher de 85 anos de idade apresenta palpitações. Exame físico: PA: 80 × 50 mmHg; FC: 138 bpm; FR: 30 irpm; SatO2 92% em ar ambiente. ECG:\nO diagnóstico e a conduta, respectivamente, são",
+    "options": [
+      {
+        "id": "A",
+        "text": "fibrilação atrial; cardioversão elétrica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "flutter atrial; controle da frequência com amiodarona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "taquicardia atrial; cardioversão química com propafenona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "fibrilação atrial; cardioversão química com amiodarona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise Clínica: A paciente apresenta um quadro de taquiarritmia associado a sinais claros de instabilidade hemodinâmica, especificamente a hipotensão severa (PA 80 x 50 mmHg) e sinais de desconforto respiratório (FR 30 irpm e SatO2 92%). Segundo os protocolos de Suporte Avançado de Vida Cardiovascular (ACLS), a presença de instabilidade (hipotensão, alteração do estado mental, sinais de choque, dor torácica isquêmica ou insuficiência cardíaca aguda) em vigência de uma taquiarritmia indica a necessidade imediata de cardioversão elétrica sincronizada.\n\nAnálise do ECG: O eletrocardiograma apresenta um ritmo de complexo QRS estreito (supraventricular) com intervalos R-R completamente irregulares (ritmo \"irregularmente irregular\") e ausência de ondas P, que são substituídas por oscilações de baixa amplitude na linha de base (ondas f de fibrilação). Esse conjunto de achados é patognomônico de Fibrilação Atrial (FA).\n\nAnálise das alternativas:\n\na) Correta. O diagnóstico é de fibrilação atrial e, diante da instabilidade hemodinâmica (hipotensão arterial), o tratamento de escolha é a cardioversão elétrica sincronizada imediata para restabelecer o débito cardíaco.\n\nb) Incorreta. O traçado não apresenta as ondas F (maiúsculas) em aspecto de \"dentes de serra\" típicas do flutter atrial. Além disso, o controle de frequência com amiodarona não é a conduta inicial para pacientes instáveis.\n\nc) Incorreta. A taquicardia atrial costuma apresentar ritmo regular e ondas P com morfologia distinta da sinusal. A propafenona (cardioversão química) é utilizada apenas em pacientes estáveis e sem cardiopatia estrutural, não sendo adequada para este cenário de choque.\n\nd) Incorreta. Embora o diagnóstico de fibrilação atrial esteja correto, a cardioversão química com amiodarona é reservada para pacientes hemodinamicamente estáveis. Em pacientes com hipotensão, o atraso causado pela tentativa de reversão medicamentosa pode levar à parada cardiorrespiratória.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias",
+      "Eletrocardiograma",
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/a4e0e334c187cf55e9ce877922e250efd83cd354dc2a6bf0daad3cc40becd13f.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1bb0ef34-fc3e-49d0-8b30-e8387545e5de_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:49.784Z"
+  },
+  {
+    "id": "AJUDA_1bb5e214-3fc2-4dda-9c72-40c709bf2f8c",
+    "originalId": "1bb5e214-3fc2-4dda-9c72-40c709bf2f8c",
+    "statement": "Secundigesta, 40 semanas de gestação é admitida em trabalho de parto, com expulsão do feto após 4 horas da internação. Em relação ao manejo ativo do 3º período clínico do parto, de acordo com a Organização Mundial de Saúde (2018) e a Federação Brasileira das Associações de Ginecologia e Obstetrícia (2018), as recomendações sobre a via e o momento da administração de ocitocina para prevenção de hemorragia pós-parto (HPP) e o momento de realizar a tração controlada do cordão são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar 10 UI de ocitocina intramuscular somente nos casos de risco para a ocorrência de HPP e realizar a tração controlada do cordão nos casos de retenção placentária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não administrar 10 UI de ocitocina intramuscular ou intravenosa, aguardar o desprendimento e expulsão fisiológicos e realizar a tração controlada do cordão em todos os casos, além do contato pele a pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar 10 UI de ocitocina intramuscular ou intravenosa após o desprendimento do ombro posterior em todos os partos e tração controlada do cordão após os sinais de separação da placenta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não administrar 10 UI de ocitocina intramuscular ou endovenosa e não realizar a tração controlada do cordão. Aguardar o desprendimento e expulsão fisiológicos. Estes procedimentos não diminuem a incidência de HPP.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O terceiro período clínico do parto, também chamado de período de dequitação ou secundamento, inicia-se logo após a expulsão do feto e termina com a saída da placenta e das membranas. O manejo ativo desse estágio é a medida mais eficaz para prevenir a hemorragia pós-parto (HPP), que é uma das principais causas de morte materna no mundo.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A administração de ocitocina profilática deve ser universal, ou seja, realizada em todas as mulheres no terceiro período do parto, e não restrita apenas àquelas com fatores de risco identificados. Isso ocorre porque cerca de 50% das mulheres que apresentam HPP não possuíam fatores de risco prévios conhecidos.\n\nAlternativa b: Incorreta. A conduta expectante (aguardar o desprendimento fisiológico sem o uso de medicamentos) está associada a um maior volume de perda sanguínea e maior risco de complicações. O uso de ocitocina é o padrão-ouro na prevenção da atonia uterina. Embora o contato pele a pele seja uma prática essencial e recomendada, ele não substitui a necessidade do manejo farmacológico para prevenção de hemorragia.\n\nAlternativa c: Correta. As diretrizes da Organização Mundial da Saúde (OMS) e da Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) estabelecem que o manejo ativo consiste na administração de ocitocina (10 UI, por via intramuscular ou intravenosa lenta) logo após o nascimento do feto. O momento prático de referência é o desprendimento do ombro posterior ou até 1 minuto após o nascimento. A tração controlada do cordão deve ser realizada por profissional habilitado, aplicando pressão suprapúbica em sentido cranial (manobra de Brandt-Andrews) simultaneamente à tração do cordão, assim que houver sinais de descolamento placentário.\n\nAlternativa d: Incorreta. Esta alternativa contradiz todas as evidências científicas atuais. O manejo ativo reduz drasticamente a incidência de HPP em cerca de 60%, além de diminuir a necessidade de uterotônicos adicionais para tratamento e a necessidade de transfusão sanguínea quando comparado ao manejo expectante.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:49.784Z"
+  },
+  {
+    "id": "AJUDA_1bb64133-3595-4305-87cb-6f5f4697b47f",
+    "originalId": "1bb64133-3595-4305-87cb-6f5f4697b47f",
+    "statement": "Um homem de 26 anos se apresenta de ambulância após ser esfaqueado no pescoço. Os paramédicos estabeleceram um acesso intravenoso de grande calibre na extremidade superior direita do paciente no campo, e os fluidos estão sendo infundidos. Os sinais vitais incluem Pressão Arterial= 118/72 mmHg, Frequência Cardíaca= 115 bpm, Frequência Respiratória =24 irpm; Saturação de O2= 99%, com 6L de oxigênio via cânula nasal. Ao exame, o paciente está acordado e alerta. A ferida está na região cervical anterior esquerda, entre a cartilagem cricoide e o ângulo da mandíbula. Há sangramento ativo no local e um hematoma em expansão subjacente. O paciente diz que sua garganta está apertada e que ele não consegue engolir, e sua namorada diz que sua voz soa estranha. Além de aplicar pressão direta na ferida, qual é o melhor próximo passo no manejo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar angiografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar tomografia cervical com contraste endovenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar cricotirotomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar intubação orotraqueal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o manejo inicial do trauma cervical penetrante, seguindo a sistemática do ATLS (Advanced Trauma Life Support). O foco principal aqui é a prioridade do \"A\" (Vias Aéreas) do ABCDE do trauma.\n\nAnálise do quadro clínico:\nO paciente apresenta um ferimento penetrante na Zona II do pescoço (entre a cartilagem cricoide e o ângulo da mandíbula). Os sinais clínicos de alerta são claros: hematoma em expansão, sangramento ativo, disfagia (dificuldade de engolir) e disfonia (alteração na voz). Esses achados são sinais de presunção ou confirmação de lesão de via aérea ou de compressão extrínseca iminente. No trauma cervical, um hematoma em expansão pode rapidamente desviar a traqueia ou causar edema de glote, tornando a intubação impossível em poucos minutos.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A angiografia é um exame diagnóstico útil para avaliar lesões vasculares em pacientes estáveis. No entanto, diante de sinais de comprometimento da via aérea (hematoma em expansão e alteração na voz), a prioridade absoluta é garantir a patência da via respiratória antes de encaminhar o paciente para qualquer exame de imagem.\n\nAlternativa b) Incorreta. A angiotomografia de pescoço é atualmente o padrão-ouro para avaliação de trauma cervical penetrante em pacientes hemodinamicamente estáveis e sem indicação de intervenção imediata. Contudo, assim como a angiografia, ela não deve preceder o controle da via aérea em um paciente com sinais de obstrução iminente.\n\nAlternativa c) Incorreta. A cricotirotomia é uma via aérea cirúrgica de exceção. Ela deve ser realizada apenas em situações de \"não consigo intubar, não consigo ventilar\" ou quando há trauma maxilofacial grave que impeça a via orotraqueal. O primeiro passo para estabelecer uma via aérea definitiva no paciente alerta e com anatomia ainda preservada é a intubação orotraqueal.\n\nAlternativa d) Correta. O paciente apresenta sinais clínicos de que sua via aérea está em risco (hematoma em expansão, mudança na voz e sensação de aperto na garganta). A recomendação no trauma cervical é a proteção precoce da via aérea por meio da intubação orotraqueal antes que o edema ou o hematoma distorçam a anatomia laríngea, o que tornaria o procedimento muito mais difícil ou impossível posteriormente. Por isso, garantir uma via aérea definitiva é o melhor próximo passo.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Trauma",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:49.784Z"
+  },
+  {
+    "id": "AJUDA_1bbbf743-8aa7-47ee-94e6-929cff257183",
+    "originalId": "1bbbf743-8aa7-47ee-94e6-929cff257183",
+    "statement": "Puérpera, 30 anos de idade, internada em alojamento conjunto, por desproporção céfalo-pélvica, no 2º dia pós parto cesárea. Teve diabetes gestacional controlado com dieta, além de trombose venosa profunda 1 ano antes da gravidez, tendo feito uso de enoxaparina profilática durante a gestação, suspenso no parto. Logo depois do nascimento, não quis ver a criança, dizendo que estava muito cansada. No primeiro dia pós-parto, teve dificuldade na amamentação, permanecendo a maior parte do tempo no leito. No segundo dia pós-parto, apresentou-se com irritabilidade cada vez maior com o choro do recém-nascido, chegando a chutar o berço com a criança dentro, sob as vistas do marido e da enfermagem. Com o ocorrido, a criança foi afastada da mãe e encaminhada ao berçário. Em conversa reservada com a equipe, o marido revelou que a paciente passou a apresentar isolamento, alteração de sono, choro fácil e irritabilidade durante a gravidez. Qual é a principal hipótese diagnóstica nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Baby Blues.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Depressão psicótica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Depressão puerperal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno de personalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma puérpera no 2º dia pós-parto com antecedentes de sintomas depressivos iniciados ainda na gestação (isolamento, alteração de sono, choro fácil e irritabilidade). No pós-parto imediato, apresentou desinteresse pelo recém-nascido, evoluindo rapidamente para uma atitude de agressividade física direta (chutar o berço com a criança dentro). Esse cenário configura uma emergência psiquiátrica puerperal.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Baby Blues: Incorreta. Também chamado de disforia puerperal, é um quadro leve, transitório e muito comum (atinge até 80% das mulheres). Inicia-se nos primeiros dias após o parto, com labilidade emocional, choro fácil e ansiedade. A principal diferença é que, no Baby Blues, a mãe mantém o vínculo com o bebê, consegue cuidar da criança e não apresenta comportamento violento ou perda de juízo crítico. O caso em questão descreve agressividade física, o que exclui essa hipótese.\n\nb) Depressão psicótica: Correta. A paciente apresenta sintomas depressivos graves que culminaram em um comportamento psicótico ou de grave descontrole de impulsos (agressão ao berço). A psicose puerperal ou depressão com características psicóticas é uma condição grave que ocorre em cerca de 1 a 2 a cada 1.000 partos. Os sintomas incluem irritabilidade extrema, delírios, alucinações e, crucialmente, o risco de infanticídio ou maus-tratos, como demonstrado pelo ato de chutar o berço. O início precoce (2º dia) e a gravidade dos sintomas confirmam esta hipótese como a principal.\n\nc) Depressão puerperal: Incorreta. Embora a paciente preencha critérios para depressão, a alternativa (b) é mais específica e acurada para o caso. A depressão pós-parto \"clássica\" costuma ter um início mais insidioso (geralmente após a 2ª semana) e manifesta-se por tristeza profunda, anedonia e desânimo. Quando o quadro evolui com agressividade física contra o recém-nascido e desajuste grave logo nos primeiros dias, ele é classificado dentro do espectro psicótico/grave da doença mental puerperal.\n\nd) Transtorno de personalidade: Incorreta. Transtornos de personalidade referem-se a padrões crônicos e persistentes de comportamento que vêm desde a adolescência ou início da vida adulta. O caso relata uma mudança aguda de comportamento exacerbada pelo período gravídico-puerperal. Atribuir a agressão apenas à personalidade ignoraria a patologia psiquiátrica aguda e o risco imediato à vida do recém-nascido.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Psicopatologia",
+      "Transtornos do Humor"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:49.784Z"
+  },
+  {
+    "id": "AJUDA_1bc6b5a5-9178-4540-b94e-5ca71dcd0a47",
+    "originalId": "1bc6b5a5-9178-4540-b94e-5ca71dcd0a47",
+    "statement": "São princípios norteadores para a organização dos cuidados paliativos, EXCETO,",
+    "options": [
+      {
+        "id": "A",
+        "text": "início dos cuidados paliativos o mais precocemente possível, juntamente com o tratamento modificador da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "promoção do alívio da dor e de outros sintomas físicos, do sofrimento psicossocial, espiritual e existencial, incluindo o cuidado apropriado para familiares e cuidadores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "não aceitação da morte como um processo natural.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "aceitação da evolução natural da doença, não acelerando nem retardando a morte e repudiando as futilidades diagnósticas e terapêuticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "trabalho em equipe multiprofissional e interdisciplinar para abordar as necessidades do paciente e de seus familiares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão exige o conhecimento dos princípios fundamentais dos cuidados paliativos definidos pela Organização Mundial da Saúde (OMS) e pelas diretrizes de cuidados de fim de vida. O objetivo é identificar qual das alternativas NÃO representa um desses princípios.\n\nAnálise das alternativas:\n\nAlternativa a) Início dos cuidados paliativos o mais precocemente possível, juntamente com o tratamento modificador da doença.\nEsta alternativa está correta. O conceito moderno de cuidados paliativos abandonou a ideia de que eles só devem ser iniciados na fase final de vida. Eles devem ser integrados precocemente no curso de qualquer doença grave, progressiva e que ameace a vida, coexistindo com tratamentos que buscam a cura ou o controle da doença.\n\nAlternativa b) Promoção do alívio da dor e de outros sintomas físicos, do sofrimento psicossocial, espiritual e existencial, incluindo o cuidado apropriado para familiares e cuidadores.\nEsta alternativa está correta. O cuidado paliativo baseia-se no conceito de \"dor total\", que abrange não apenas o componente físico, mas também as dimensões psicológica, social e espiritual. Além disso, a unidade de cuidado é o binômio paciente-família, garantindo suporte também aos cuidadores.\n\nAlternativa c) Não aceitação da morte como um processo natural.\nEsta alternativa está incorreta e é o gabarito da questão (o \"exceto\"). Um dos pilares éticos e operacionais dos cuidados paliativos é justamente afirmar a vida e reconhecer a morte como um processo natural e inevitável de todos os seres vivos. O paliativismo não nega a morte, mas busca conferir dignidade ao processo de morrer.\n\nAlternativa d) Aceitação da evolução natural da doença, não acelerando nem retardando a morte e repudiando as futilidades diagnósticas e terapêuticas.\nEsta alternativa está correta. Este princípio define a prática da ortotanásia. Os cuidados paliativos posicionam-se contra a eutanásia (abreviação da vida) e contra a distanásia (prolongamento do processo de morte através de tratamentos inúteis que geram sofrimento, também chamada de obstinação terapêutica).\n\nAlternativa e) Trabalho em equipe multiprofissional e interdisciplinar para abordar as necessidades do paciente e de seus familiares.\nEsta alternativa está correta. Dada a multidimensionalidade do sofrimento humano, é impossível oferecer cuidados paliativos adequados sem uma equipe composta por médicos, enfermeiros, psicólogos, assistentes sociais, fisioterapeutas, entre outros profissionais que atuem de forma integrada e colaborativa.\n\nGabarito: Letra (c).",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:49.784Z"
+  },
+  {
+    "id": "AJUDA_1bc977c0-40a4-4d63-9bbd-573bfd2749ae",
+    "originalId": "1bc977c0-40a4-4d63-9bbd-573bfd2749ae",
+    "statement": "Com relação ao calendário vacinal das gestantes/puérperas/lactantes, podemos afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vacina influenza é recomendada anualmente, exceto no primeiro trimestre gestacional;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vacina hepatite B deverá ser realizada em gestantes não anteriormente vacinadas e suscetíveis a infecção;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A imunização contra a febre amarela deve ser postergada para o período de puerpério/lactação, pois o aleitamento não configura contraindicação para a vacinação de vírus vivo;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vacina mRNA COVID-19, durante o terceiro trimestre da gravidez, foi associada a fortes complicações maternas e neonatais, não sendo mais indicada nesse período.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das alternativas:\n\nLetra (a) Incorreta: A vacina contra a influenza é composta por vírus inativados e é recomendada para todas as gestantes em qualquer idade gestacional. Não existe restrição ao primeiro trimestre; pelo contrário, a vacinação deve ser priorizada assim que disponível, dado o maior risco de complicações respiratórias e internações em gestantes infectadas pelo vírus da gripe.\n\nLetra (b) Correta: A vacina contra a hepatite B faz parte do calendário oficial da gestante. Aquelas que não foram vacinadas previamente ou que não apresentam imunidade comprovada (anti-HBs negativo) devem receber o esquema de três doses. A vacina é segura, pois é produzida por engenharia genética (subunidade proteica), não contendo o vírus vivo.\n\nLetra (c) Incorreta: Embora a vacina contra a febre amarela seja geralmente evitada na gestação, ela possui uma contraindicação específica e importante durante a lactação. Em mulheres que amamentam bebês com menos de 6 meses, a vacina deve ser evitada devido ao risco de transmissão do vírus vacinal pelo leite materno, o que pode causar encefalite no lactente. Se a vacinação for estritamente necessária por risco epidemiológico, recomenda-se a suspensão do aleitamento materno por 10 a 15 dias.\n\nLetra (d) Incorreta: A vacinação contra a COVID-19, incluindo as vacinas de mRNA, é recomendada para gestantes em qualquer fase da gravidez. Estudos clínicos e dados de vida real demonstraram que a vacina é segura e não está associada a complicações maternas ou neonatais. Na verdade, a vacinação é uma estratégia crucial para prevenir formas graves da doença, que aumentam o risco de parto prematuro e morte materna.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Imunizações",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:49.784Z"
+  }
+]

@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_353c2e6e-194b-410e-9af4-b3f641ad0918",
+    "originalId": "353c2e6e-194b-410e-9af4-b3f641ad0918",
+    "statement": "Em nódulos tireoidianos, a indicação de punção aspirativa por agulha fina (PAAF) baseia-se principalmente em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Idade e sexo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Presença de dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Critérios ultrassonográficos e tamanho.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "História familiar de obesidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Níveis elevados de tireoglobulina sérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A decisão de realizar uma Punção Aspirativa por Agulha Fina (PAAF) em um nódulo tireoidiano é guiada pela probabilidade de malignidade, estimada através de exames de imagem, associada às dimensões da lesão.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Apesar de o sexo masculino e as faixas etárias extremas (jovens ou idosos) serem considerados fatores de risco epidemiológicos para malignidade, eles não são os critérios principais ou formais para a indicação do procedimento nos consensos médicos atuais, como os da American Thyroid Association (ATA) ou o sistema TI-RADS.\n\nAlternativa b: Incorreta. A dor não é um marcador de câncer de tireoide. Na verdade, a maioria dos carcinomas de tireoide é indolor e descoberta de forma incidental. A dor está mais relacionada a quadros inflamatórios, como tireoidites, ou a fenômenos de expansão rápida por hemorragia intranodular.\n\nAlternativa c: Correta. Esta é a base da conduta clínica moderna. O ultrassom avalia características de suspeição (como hipoecogenicidade, margens irregulares, presença de microcalcificações e formato mais alto do que largo). Cruzando esses achados (critérios ultrassonográficos) com o diâmetro do nódulo (tamanho), define-se a necessidade da PAAF. Por exemplo, nódulos puramente císticos raramente são puncionados, enquanto nódulos sólidos hipoecoicos são puncionados a partir de 1 cm ou 1,5 cm, dependendo da diretriz adotada.\n\nAlternativa d: Incorreta. A obesidade não é um fator determinante para a indicação de PAAF. O histórico familiar que poderia elevar o grau de suspeita seria o de câncer medular de tireoide, neoplasias endócrinas múltiplas ou carcinoma papilífero em parentes de primeiro grau, mas a obesidade em si não possui essa função diagnóstica.\n\nAlternativa e: Incorreta. A tireoglobulina sérica não deve ser utilizada para diagnosticar câncer de tireoide nem para indicar uma PAAF. Ela é um marcador de tecido tireoidiano total e pode estar elevada em diversas condições benignas, como bócio multinodular e doenças autoimunes. Sua utilidade clínica é restrita ao acompanhamento de pacientes já operados por câncer diferenciado de tireoide, servindo para detectar recidiva.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:35.202Z"
+  },
+  {
+    "id": "AJUDA_35404d34-ae2b-4742-950f-ab169cb87244",
+    "originalId": "35404d34-ae2b-4742-950f-ab169cb87244",
+    "statement": "Mulher, 25 anos de idade, procurou recentemente uma Unidade Básica de Saúde na cidade de São Paulo, debilitada fisicamente, com queixa de febre, especialmente à tarde, astenia e tosse. Não sabe precisar exatamente há quanto tempo. Ela não é moradora da região, diz não ter residência fixa e que trabalha nas ruas próximas à Unidade como profissional do sexo. Relata ter diagnóstico de soropositividade para o HIV.\n\nQuestão 45: Não sendo moradora da área de cobertura da Unidade, qual deve ser a conduta do serviço frente ao caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve ser encaminhada para Unidade de Saúde que desenvolve ações voltadas à população de rua (Consultório na Rua).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve ser orientada a procurar um serviço de pronto atendimento, pela importância clínica do caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve ser acolhida, coletar e aguardar resultados das sorologias para ser encaminhada para serviço especializado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve ser acolhida e avaliada imediatamente, pela importância clínica e epidemiológica do caso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A análise desta questão exige o conhecimento dos princípios fundamentais do Sistema Único de Saúde (SUS), especificamente das diretrizes da Política Nacional de Atenção Básica (PNAB) e do conceito de acolhimento.\n\nA paciente apresenta um quadro clínico de febre vespertina, astenia e tosse, sendo portadora de HIV e vivendo em situação de vulnerabilidade social (população de rua e profissional do sexo). Esse cenário sugere fortemente a suspeita de Tuberculose, uma condição de alta relevância clínica e epidemiológica, especialmente em pacientes imunossuprimidos.\n\nExplicação das alternativas:\n\na) Incorreta. Embora o Consultório na Rua seja um dispositivo estratégico para o cuidado dessa população, a territorialização não deve ser uma barreira ao acesso. Qualquer Unidade Básica de Saúde (UBS) deve ser porta de entrada e prestar o atendimento inicial. Encaminhar sem avaliar significa negar o acesso universal e postergar o cuidado de uma paciente grave.\n\nb) Incorreta. Orientar a procura por outro serviço sem realizar o acolhimento e a avaliação inicial é uma prática conhecida como \"empurroterapia\". A UBS tem plena capacidade de realizar a avaliação inicial e o manejo diagnóstico de quadros respiratórios, devendo assumir a responsabilidade sobre o caso naquele momento.\n\nc) Incorreta. A paciente já relatou o diagnóstico de HIV. Aguardar resultados de sorologias para então encaminhá-la gera um atraso inaceitável no manejo clínico. Além disso, a prioridade imediata é a investigação de Tuberculose (baciloscopia/TRM-TB) e a estabilização clínica, e não apenas o seguimento da sorologia em serviço especializado.\n\nd) Correta. Esta alternativa está alinhada com os princípios de Universalidade e Equidade do SUS. O acolhimento com classificação de risco deve ser imediato. A importância clínica reside no estado debilitado e na imunossupressão da paciente. A importância epidemiológica justifica-se pela suspeita de Tuberculose em uma pessoa em situação de rua, o que exige medidas rápidas de diagnóstico e controle para evitar a transmissão comunitária. No SUS, a responsabilidade sobre o cuidado imediato prevalece sobre as divisões geográficas de área de cobertura.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:35.202Z"
+  },
+  {
+    "id": "AJUDA_354fa260-cba0-4b7a-8315-91265d415e06",
+    "originalId": "354fa260-cba0-4b7a-8315-91265d415e06",
+    "statement": "O carcinoma gástrico hereditário difuso está relacionado à",
+    "options": [
+      {
+        "id": "A",
+        "text": "mutação CDH1.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "mutação BRCA1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "síndrome de Lynch.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "polipose adenomatosa familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O carcinoma gástrico hereditário difuso (HDGC) é uma síndrome de predisposição hereditária ao câncer, autossômica dominante, caracterizada pelo desenvolvimento precoce de câncer gástrico do tipo difuso (células em anel de sinete) e, em mulheres, um risco aumentado de carcinoma lobular de mama.\n\nAlternativa (a): Correta. A grande maioria dos casos de carcinoma gástrico hereditário difuso está associada a mutações germinativas no gene CDH1. Esse gene é responsável por codificar a proteína E-caderina, que atua na adesão entre as células epiteliais. A perda de função dessa proteína resulta na perda de coesão celular, o que explica o padrão de crescimento difuso e infiltrativo característico desse tumor.\n\nAlternativa (b): Incorreta. As mutações nos genes BRCA1 e BRCA2 estão classicamente relacionadas à Síndrome de Câncer de Mama e Ovário Hereditário. Embora portadores de mutação BRCA possam ter um risco levemente aumentado para outros tumores (como pâncreas e próstata), elas não são a causa do carcinoma gástrico hereditário difuso.\n\nAlternativa (c): Incorreta. A Síndrome de Lynch (câncer colorretal hereditário não poliposo) é causada por mutações em genes de reparo do DNA (MMR), como MLH1, MSH2, MSH6 e PMS2. Pacientes com Lynch têm, de fato, um risco aumentado para câncer gástrico, porém o subtipo histológico mais comum associado a essa síndrome é o tipo intestinal, e não o tipo difuso.\n\nAlternativa (d): Incorreta. A Polipose Adenomatosa Familiar (PAF) é causada por mutações no gene APC e se caracteriza pela presença de centenas a milhares de pólipos adenomatosos no cólon. No estômago, pacientes com PAF podem apresentar pólipos de glândulas fúndicas e um risco aumentado de adenocarcinoma gástrico (especialmente na variante GAPPS), mas a síndrome não é a base do carcinoma gástrico hereditário difuso propriamente dito.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:35.202Z"
+  },
+  {
+    "id": "AJUDA_355a8880-fbca-40d2-94b7-6036f8a79dd6",
+    "originalId": "355a8880-fbca-40d2-94b7-6036f8a79dd6",
+    "statement": "Uma mulher de 37 anos, obesa, tabagista, hipertensa e diabética, apresenta prurido vulvar e lesões pleomórficas em vulva. A biópsia revelou lesão intraepitelial escamosa de alto grau (HSIL) vulvar. O fator de risco para esta condição, identificado nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "diabetes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "obesidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tabagismo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "hipertensão",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A lesão intraepitelial escamosa de alto grau (HSIL) da vulva, anteriormente denominada Neoplasia Intraepitelial Vulvar (NIV) de tipo usual, ocorre predominantemente em mulheres jovens e está fortemente associada à infecção persistente por tipos oncogênicos do Papilomavírus Humano (HPV), especialmente o HPV 16. O caso descreve uma paciente com diversos fatores de risco metabólicos, mas a questão exige a identificação daquele que está especificamente ligado ao desenvolvimento da HSIL vulvar.\n\nAlternativa a) Incorreta. O diabetes mellitus pode causar prurido vulvar devido à predisposição para candidíase e outras infecções fúngicas decorrentes da hiperglicemia, mas não é considerado um fator etiológico ou de risco direto para o desenvolvimento da displasia escamosa (HSIL) vulvar.\n\nAlternativa b) Incorreta. A obesidade é um fator de risco bem estabelecido para neoplasias hormonodependentes, como o câncer de endométrio, devido à conversão periférica de andrógenos em estrógenos. No entanto, não possui associação direta com a patogênese das lesões vulvares induzidas pelo HPV.\n\nAlternativa c) Correta. O tabagismo é um dos principais cofatores para o surgimento de lesões precursoras e câncer de células escamosas no trato genital inferior (colo do útero, vagina e vulva). Os componentes carcinogênicos do tabaco são concentrados no epitélio genital e promovem uma imunossupressão local, prejudicando a função das células de Langerhans. Isso dificulta a eliminação natural do HPV pelo sistema imune, favorecendo a persistência viral e a progressão para lesões de alto grau.\n\nAlternativa d) Incorreta. A hipertensão arterial sistêmica não apresenta qualquer mecanismo fisiopatológico que a ligue ao desenvolvimento de neoplasias intraepiteliais. Sua presença no enunciado serve para descrever o perfil de comorbidades da paciente, mas não justifica a patologia vulvar apresentada.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doenças de Vulva e Vagina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:35.202Z"
+  },
+  {
+    "id": "AJUDA_355fbd6c-1500-4fe1-a1b4-b16784497cb1",
+    "originalId": "355fbd6c-1500-4fe1-a1b4-b16784497cb1",
+    "statement": "Kamila, 30 anos, G3PC2 idade gestacional de 37 semanas, deu entrada no pronto-socorro obstétrico com queixa de sangramento vaginal vermelho-vivo, sem outras queixas. Ao exame físico: PA = 110 x 70 mmHg, AU = 36 cm, BCF = 130 bpm, dinâmica uterina ausente, especular: sangramento vermelho-vivo exteriorizando-se pelo orifício externo do colo uterino. Baseando-se na principal hipótese diagnóstica, qual a conduta mais adequada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indução do trabalho de parto com misoprostol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Passagem de sonda de Foley no colo uterino e a interrupção do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indução do trabalho de parto com ocitocina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar cesárea para resolução da gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico é clássico de placenta prévia: sangramento vaginal de início súbito, indolor, de cor vermelho-vivo, sem hipertonia uterina (dinâmica ausente) e com vitalidade fetal preservada (BCF de 130 bpm). A paciente apresenta como fator de risco importante a presença de duas cesáreas prévias (G3PC2). Trata-se de uma gestação a termo (37 semanas) com sangramento ativo, cuja indicação é a interrupção da gestação pela via cesariana.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta: O misoprostol é formalmente contraindicado em pacientes com cicatriz uterina prévia (duas cesarianas) devido ao risco elevado de rotura uterina. Além disso, a indução de parto vaginal não é indicada no contexto de sangramento ativo por suspeita de placenta prévia.\n\nAlternativa B - Incorreta: A passagem de sonda de Foley no canal cervical é um método mecânico de maturação cervical. A manipulação do colo uterino e a inserção de sonda em uma paciente com suspeita de placenta prévia e sangramento ativo é extremamente perigosa, podendo acelerar o descolamento placentário e agravar a hemorragia.\n\nAlternativa C - Incorreta: A indução do parto com ocitocina não é segura diante de sangramento ativo por placenta prévia, pois o aumento da contratilidade pode intensificar o sangramento materno e comprometer a oxigenação fetal, além dos riscos associados à tentativa de indução em útero duplamente cicatrizado.\n\nAlternativa D - Correta: A paciente está com 37 semanas (a termo), apresenta sangramento ativo, suspeita clínica evidente de placenta prévia e histórico de duas cesáreas anteriores. A conduta definitiva e mais segura para o binômio materno-fetal é a interrupção imediata da gestação por meio de cesariana.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:35.202Z"
+  },
+  {
+    "id": "AJUDA_35621337-bc58-406a-993d-bb7179a188af",
+    "originalId": "35621337-bc58-406a-993d-bb7179a188af",
+    "statement": "Paciente do sexo feminino, 10 anos, é trazida ao hospital pelos familiares devido a extensa queimadura por incêndio no seu domicílio. Há relato de a paciente ter ficado presa em ambiente fechado durante o acidente. A paciente apresenta queimadura de face, tórax e abdome anterior, face anterior do ombro e braço esquerdo e ambas as pernas, circunferencialmente. Durante a avaliação da face, você observa queimadura das sobrancelhas e vibices nasais, além de hiperemia e edema de lábios, língua e hipofaringe. A paciente apresenta desconforto respiratório, sialorreia e dificuldade para deglutir. A paciente se encontra confusa, pouco cooperativa, queixando dor e náuseas, com FC: 110bpm, FR: 26irpm e P.A.: 100x50mmHg. Sobre as condutas iniciais para esta paciente, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os dados acima nos permitem afirmar que há grande risco para injúria inalatória do tipo I, cujas consequências podem ser potencializadas pela ressuscitação volêmica para esta paciente, podendo indicar avaliação com laringoscopia flexível seguida de provável aquisição de via aérea definitiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Caso a avaliação laboratorial deste paciente evidenciar significativa acidose metabólica e hiperlactatemia mesmo após a ressuscitação volêmica inicial, as condutas devem incluir dosagem de carboxihemoglobina, terapia com O2 a 100% e administração de hidroxicobalamina endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A melhor estratégia para reposição volêmica desta paciente é iniciar administração de solução salina via oral ou por sonda nasogástrica, seguida de cálculo do volume de hidratação para 24 horas segundo a fórmula consenso da Associação Americana de Queimados, infundido em cateter central, preferencialmente puncionado em área não queimada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Os dados acima nos permitem inferir que haverá indicação de administração precoce de coloides como parte da estratégia de ressuscitação volêmica desta paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO caso descreve uma paciente de 10 anos com grandes queimaduras e sinais de alerta para gravidade imediata: confinamento em ambiente fechado, sinais físicos de lesão por inalação (vibrissas queimadas e edema de orofaringe) e instabilidade hemodinâmica/neurológica (confusão e hipotensão relativa para a idade). O objetivo é identificar a alternativa incorreta sobre as condutas iniciais.\n\nALTERNATIVA A (CORRETA): A injúria inalatória do tipo I é a lesão térmica supraglótica. Os sinais de edema de lábios, língua e hipofaringe, associados à queima de pelos nasais (vibrissas), confirmam esse risco. A ressuscitação volêmica é obrigatória no grande queimado, mas o aporte de líquidos aumenta o edema generalizado, inclusive nas vias aéreas. Portanto, a avaliação por laringoscopia e a obtenção de via aérea definitiva (intubação) precoce são condutas adequadas para evitar a obstrução total por edema.\n\nALTERNATIVA B (CORRETA): Vítimas de incêndio em locais fechados estão expostas a gases tóxicos como monóxido de carbono e cianeto. Se o paciente apresenta acidose metabólica grave e hiperlactatemia que não melhoram com a reposição de líquidos, deve-se suspeitar fortemente de intoxicação por cianeto. O tratamento padrão inclui oxigênio a 100% e a administração de hidroxicobalamina (antídoto).\n\nALTERNATIVA C (INCORRETA/GABARITO): Esta é a alternativa incorreta por vários motivos. Primeiro, uma paciente com desconforto respiratório, sialorreia (dificuldade de manejar secreções), confusão mental e dor intensa tem contraindicação para hidratação via oral ou por sonda nasogástrica inicial, devido ao alto risco de broncoaspiração e presença frequente de íleo paralítico no grande queimado. Segundo, a via preferencial para ressuscitação volêmica é a intravenosa periférica em área não queimada; o cateter central não é a primeira escolha rotineira pelo risco de infecção. Terceiro, o cálculo de fluidos deve ser feito para guiar a terapia, mas a via oral é inadequada para a fase de ressuscitação do choque no grande queimado grave.\n\nALTERNATIVA D (CORRETA): Em queimaduras extensas, ocorre um aumento maciço da permeabilidade capilar. O uso de coloides (como a albumina) faz parte de muitas estratégias de ressuscitação (frequentemente após as primeiras 8 a 12 horas ou conforme protocolos específicos) para ajudar a manter a pressão oncótica intravascular e reduzir o volume total de cristaloides necessários, combatendo o chamado fluid creep (excesso de edema por excesso de cristaloide).\n\nResumo: A alternativa C está errada ao propor hidratação enteral (oral ou sonda) para uma paciente instável, com via aérea em risco e necessidade de ressuscitação volêmica vigorosa e imediata.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:35.202Z"
+  },
+  {
+    "id": "AJUDA_3565d7cd-123e-4cba-a883-2dfa3e6148c6",
+    "originalId": "3565d7cd-123e-4cba-a883-2dfa3e6148c6",
+    "statement": "Na classificação de Hinchey para diverticulite aguda, o abscesso pericolico corresponde a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estagio I",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estagio II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estagio III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estagio IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Estagio V",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Classificação de Hinchey é uma ferramenta essencial na prática médica para estratificar a gravidade da diverticulite aguda e orientar a conduta terapêutica. Ela se baseia na extensão do processo infeccioso e na presença de complicações como abscessos e peritonite.\n\nAlternativa a) Estágio I: Correta. No Estágio I de Hinchey, a infecção está localizada. Ele corresponde à presença de um abscesso pericólico ou mesentérico pequeno e confinado. Vale lembrar que, na classificação modificada, o Estágio I é subdividido em Ia (apenas inflamação e fleimão) e Ib (abscesso pericólico propriamente dito). Portanto, o abscesso pericólico é a definição clássica do Estágio I.\n\nAlternativa b) Estágio II: Incorreta. O Estágio II refere-se a abscessos maiores que não estão mais restritos à região do cólon acometido. São abscessos à distância, que podem ser pélvicos, retroperitoneais ou em outros pontos da cavidade abdominal, geralmente necessitando de drenagem percutânea se forem maiores que 3 a 4 cm.\n\nAlternativa c) Estágio III: Incorreta. Este estágio representa uma progressão grave da doença, caracterizada por peritonite purulenta generalizada. Isso ocorre quando um abscesso se rompe para a cavidade peritoneal, espalhando pus por todo o abdome, mas sem a presença de fezes. O tratamento aqui é cirúrgico de urgência.\n\nAlternativa d) Estágio IV: Incorreta. O Estágio IV é a forma mais severa da doença, correspondendo a peritonite fecal generalizada. Ocorre quando há uma perfuração livre da parede do cólon, permitindo o extravasamento de conteúdo fecal para a cavidade abdominal. É uma emergência cirúrgica de alta mortalidade.\n\nAlternativa e) Estágio V: Incorreta. A classificação de Hinchey, tanto na sua forma original quanto nas suas modificações consagradas (como a de Wasvary ou Kaiser), possui apenas quatro estágios. O Estágio V não existe nesta escala clínica.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:35.202Z"
+  },
+  {
+    "id": "AJUDA_356a8492-e339-48ba-9aa4-c1a069ed6b12",
+    "originalId": "356a8492-e339-48ba-9aa4-c1a069ed6b12",
+    "statement": "O planejamento reprodutivo diz respeito às ações e estratégias para se decidir de forma livre, informada e responsável, o desejo de ter filhos, quando e quantos. Ele se derivou de uma das grandes conquistas dentro da saúde da mulher que foi o surgimento dos métodos contraceptivos, especialmente os hormonais, o que deu à mulher o protagonismo na decisão em relação à sua história reprodutiva. Atualmente diversas são as opções contraceptivas, bem como pelo outro lado da história, grande evolução também se tem no tratamento da infertilidade ou na postergação da gravidez - espontânea ou por motivos de saúde. Dentre as opções em contracepção em nosso país se encontram os LARCS (Long-Acting Reversible Contraceptives - métodos de contracepção de longa ação). Pode-se afirmar, a respeito deles, que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mulheres com doenças cardiovasculares são proibidas de usar esse tipo de método.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O implante de etonogestrel tem duração de até 7 anos de uso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A principal ação do implante de etonogestrel é sua ação no muco cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A composição do DIU hormonal é de estrógenos e progestágenos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "São métodos com eficácia de uso típico muito próximo ao de uso perfeito.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda os métodos contraceptivos de longa ação, conhecidos como LARCs (*Long-Acting Reversible Contraceptives*), que incluem os dispositivos intrauterinos (DIU de cobre e DIU de levonorgestrel) e o implante subdérmico de etonogestrel.\n\nAlternativa a) Incorreta. Pelo contrário, os LARCs são frequentemente os métodos de escolha para mulheres com doenças cardiovasculares ou riscos tromboembólicos. O DIU de cobre não possui hormônios, e o DIU hormonal e o implante possuem apenas progestagênio em doses baixas, evitando o uso do estrogênio, que é o principal componente associado ao aumento do risco cardiovascular em contraceptivos.\n\nAlternativa b) Incorreta. O implante de etonogestrel (Implanon) tem duração aprovada em bula de 3 anos de uso. Embora existam estudos discutindo a extensão desse prazo, o período de 7 anos não condiz com a prática clínica ou com as recomendações oficiais para este método.\n\nAlternativa c) Incorreta. O principal mecanismo de ação do implante de etonogestrel é a inibição da ovulação (ação sistêmica no eixo hipotálamo-hipófise). Embora ele também promova o espessamento do muco cervical, essa é uma ação secundária. Vale lembrar que, no caso do DIU hormonal, a ação no muco e no endométrio é, de fato, o mecanismo principal.\n\nAlternativa d) Incorreta. O DIU hormonal (sistema intrauterino — SIU) é composto exclusivamente por um progestagênio, o levonorgestrel. Não existem dispositivos intrauterinos que contenham estrogênio em sua composição.\n\nAlternativa e) Correta. Esta é a característica mais marcante e vantajosa dos LARCs. Por serem métodos que não dependem da memória ou da disciplina da paciente (como tomar uma pílula diariamente ou aplicar uma injeção mensal), a taxa de falha no \"uso típico\" (vida real) é praticamente a mesma do \"uso perfeito\" (estudos laboratoriais). Isso os torna mais eficazes na saúde pública do que os métodos de curta duração.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:35.202Z"
+  },
+  {
+    "id": "AJUDA_356ccd2d-9a94-43c2-a36d-2002b78e95d1",
+    "originalId": "356ccd2d-9a94-43c2-a36d-2002b78e95d1",
+    "statement": "Quando se usa um método contraceptivo, deve-se avaliar também efeitos associados que beneficiem a mulher. A partir do exposto, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "os DIU com levonorgestrel reduzem o fluxo menstrual e frequentemente levam a amenorreia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o anel vaginal, à semelhança dos adesivos, tem segurança inferior aos comprimidos, mas ganha no índice de continuidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "os contraceptivos combinados injetáveis são bons, pois mantém o ciclo regularizado com uma dose mensal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "os injetáveis com progestogênios exclusivos ocasionam uma grande demora no retorno da fertilidade, mas não têm riscos de sangramentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "as pílulas só de progesterona alteram o muco cervical, mas não impedem a ovulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda as características clínicas, efeitos colaterais e benefícios não contraceptivos dos diversos métodos disponíveis. Vamos analisar cada alternativa para compreender a lógica da resposta correta.\n\nAlternativa A (Correta): O sistema intrauterino liberador de levonorgestrel (DIU-LNG) libera progestogênio localmente, o que promove uma potente atrofia do endométrio. Como consequência direta, há uma redução significativa do volume e da duração do fluxo menstrual. Após o primeiro ano de uso, uma parcela considerável das usuárias (cerca de 20% a 50%, dependendo do modelo e do tempo de uso) atinge a amenorreia, o que é frequentemente utilizado como tratamento para a menorragia e a dismenorreia.\n\nAlternativa B (Incorreta): O anel vaginal e os adesivos transdérmicos possuem eficácia (Índice de Pearl) e segurança farmacológica comparáveis às pílulas combinadas orais, não sendo inferiores. A principal diferença reside na via de administração e na comodidade posológica, o que pode favorecer a adesão em alguns perfis de pacientes, mas não se pode afirmar que a segurança clínica seja inferior.\n\nAlternativa C (Incorreta): Embora os contraceptivos injetáveis combinados mensais promovam um sangramento por privação regular, simulando o ciclo menstrual, eles não são necessariamente superiores aos métodos orais ou de longa duração. Além disso, o termo \"regularizar o ciclo\" é tecnicamente impreciso, pois o sangramento que ocorre é uma hemorragia por privação hormonal induzida pelo método, e não um ciclo fisiológico restaurado.\n\nAlternativa D (Incorreta): Os injetáveis de progestogênio isolado (como o acetato de medroxiprogesterona de depósito) realmente apresentam como característica um retorno mais tardio da fertilidade, que pode levar de 6 a 12 meses após a última dose. No entanto, a afirmação de que não têm riscos de sangramento está errada; pelo contrário, o efeito colateral mais comum desses métodos é o sangramento irregular ou spotting (escape), especialmente nos primeiros meses de uso, sendo esta uma das principais causas de descontinuação do método.\n\nAlternativa E (Incorreta): As pílulas de progestogênio isolado (minipílulas clássicas) agiam predominantemente na alteração do muco cervical e na atrofia endometrial, sem inibir a ovulação de forma consistente. Contudo, as pílulas de progestogênio isolado modernas (como o desogestrel de 75 mcg ou a drospirenona) atuam predominantemente através da inibição da ovulação, tornando a alternativa incorreta ao generalizar todas as pílulas deste grupo.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:35.202Z"
+  },
+  {
+    "id": "AJUDA_3571a844-25d8-4f95-ac8a-95e48e1fd38f",
+    "originalId": "3571a844-25d8-4f95-ac8a-95e48e1fd38f",
+    "statement": "O cálculo do MELD para avaliação da gravidade da cirrose leva em conta os seguintes parâmetros:",
+    "options": [
+      {
+        "id": "A",
+        "text": "RNI, bilirrubinas e gama GT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "creatinina, bilirrubinas e RNI.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "albumina, RNI e gama GT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "RNI, albumina e creatinina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O MELD (Model for End-Stage Liver Disease) é um sistema de pontuação numérica utilizado para prever a sobrevida de curto prazo (em 3 meses) de pacientes com doença hepática terminal, sendo o principal critério para a alocação de órgãos na fila de transplante de fígado.\n\nDiferentemente da classificação de Child-Pugh, que utiliza critérios subjetivos, como ascite e encefalopatia, o MELD baseia-se exclusivamente em variáveis laboratoriais objetivas. A fórmula clássica utiliza os seguintes parâmetros:\n\n1. Creatinina sérica: Reflete a função renal, que é um dos principais preditores de mortalidade em pacientes cirróticos (síndrome hepatorrenal).\n2. Bilirrubina total: Reflete a capacidade de excreção do fígado e o grau de colestase.\n3. RNI (Razão Normatizada Internacional): Reflete a função de síntese hepática, especificamente a produção de fatores de coagulação dependentes de vitamina K.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O RNI e a bilirrubina estão corretos, mas a gama-GT (GGT) não faz parte do escore MELD. A GGT é um marcador de colestase ou dano biliar, mas não é um preditor prognóstico validado para este modelo.\n\nAlternativa b) Correta. Apresenta os três componentes fundamentais da fórmula original do MELD: creatinina, bilirrubinas e RNI.\n\nAlternativa c) Incorreta. A albumina é um marcador de síntese proteica utilizado na classificação de Child-Pugh, mas não no MELD. A gama-GT também está incorreta.\n\nAlternativa d) Incorreta. O RNI e a creatinina fazem parte do escore, porém a albumina não compõe o cálculo do MELD.\n\nVale ressaltar que, em versões mais modernas (MELD-Na), o sódio também foi incorporado para aumentar a acurácia do escore, mas a tríade clássica cobrada em concursos permanece sendo a da alternativa (b).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:35.202Z"
+  }
+]

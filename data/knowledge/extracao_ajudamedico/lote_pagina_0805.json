@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_dff4feea-3726-46fe-8e5f-426acea2fc86",
+    "originalId": "dff4feea-3726-46fe-8e5f-426acea2fc86",
+    "statement": "Assinale a alternativa que apresenta duas vacinas obrigatórias para recém-nascido.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vacina BCG e vacina hepatite B.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Vacina BCG e vacina poliomielite inativada VIP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vacina hepatite A e primeira dose da vacina meningocócica C.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vacina febre amarela e vacina BCG.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Vacina covid-19 e vacina hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o Calendário Nacional de Vacinação da Criança, definido pelo Ministério da Saúde (PNI). Para o recém-nascido, o protocolo recomenda a aplicação de duas vacinas ainda na maternidade, idealmente nas primeiras 12 a 24 horas de vida.\n\nAlternativa a) Correta. A vacina BCG (dose única) e a vacina contra a hepatite B (primeira dose) são as únicas recomendadas para administração imediata ao nascimento. A BCG protege contra as formas graves da tuberculose (miliar e meníngea), enquanto a dose precoce da hepatite B visa, primordialmente, prevenir a transmissão vertical do vírus.\n\nAlternativa b) Incorreta. Embora a BCG seja feita ao nascimento, a vacina inativada contra a poliomielite (VIP) tem seu esquema iniciado apenas aos 2 meses de idade, conforme o calendário básico.\n\nAlternativa c) Incorreta. A vacina contra a hepatite A é administrada em dose única aos 15 meses de idade. Já a primeira dose da vacina meningocócica C conjugada é aplicada rotineiramente aos 3 meses de idade.\n\nAlternativa d) Incorreta. A vacina contra a febre amarela é indicada, no esquema de rotina nacional, a partir dos 9 meses de idade. Ela não é uma vacina do período neonatal.\n\nAlternativa e) Incorreta. A vacina contra a Covid-19 no calendário infantil do PNI inicia-se aos 6 meses de idade. Portanto, apenas a vacina contra a hepatite B, também citada nesta alternativa, é aplicada ao nascimento.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:52.787Z"
+  },
+  {
+    "id": "AJUDA_dff5976e-f60f-4288-977e-979c571eb6b2",
+    "originalId": "dff5976e-f60f-4288-977e-979c571eb6b2",
+    "statement": "Sobre a Doença Renal Crônica (DRC), analise as sentenças:\n\n1. A presença de albuminúria persistente (> 30 mg/24h) é um marcador de lesão renal, mesmo com taxa de filtração glomerular normal.\n2. A anemia na DRC é normocítica e normocrômica, causada principalmente pela deficiência de eritropoetina.\n3. O controle da hiperfosfatemia na DRC avançada envolve restrição dietética e uso de quelantes de fósforo.\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1-V, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "1-V, 2-F, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1-F, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1-F, 2-V, 3-F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da Sentença 1: Verdadeira. De acordo com as diretrizes internacionais (KDIGO), a Doença Renal Crônica (DRC) é definida por anormalidades na estrutura ou função renal persistentes por mais de três meses, com implicações para a saúde. A albuminúria persistente, definida como uma taxa de excreção de albumina igual ou superior a 30 mg em 24 horas, é o marcador mais precoce e sensível de lesão renal parenquimatosa. Portanto, um paciente pode ter uma Taxa de Filtração Glomerular (TFG) normal (acima de 90 mL/min/1,73m²) e ainda assim ser diagnosticado com DRC caso apresente albuminúria.\n\nAnalise da Sentença 2: Verdadeira. A anemia associada à DRC é classicamente do tipo normocítica e normocrômica (com índices hematimétricos de tamanho e cor das hemácias dentro da normalidade). Sua causa primordial é a deficiência de eritropoetina, um hormônio glicoproteico produzido pelas células intersticiais peritubulares renais. Com a perda da massa renal funcional, a produção de eritropoetina diminui, resultando em menor estímulo à eritropoese na medula óssea.\n\nAnalise da Sentença 3: Verdadeira. A hiperfosfatemia é uma complicação comum nos estágios avançados da DRC devido à incapacidade do rim em excretar adequadamente a carga diária de fósforo. O manejo terapêutico baseia-se em dois pilares principais: a restrição dietética (limitando alimentos ricos em fosfatos e aditivos químicos) e o uso de quelantes de fósforo. Os quelantes, como o carbonato de cálcio, acetato de cálcio ou sevelamer, devem ser ingeridos junto com as refeições para que se liguem ao fósforo presente no bolo alimentar, impedindo sua absorção pelo trato gastrointestinal.\n\nConclusão: Visto que todas as sentenças estão corretas e refletem os conhecimentos fundamentais sobre a fisiopatologia e o diagnóstico da DRC, a alternativa correta é a letra (a).",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Doença Renal Crônica (DRC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:52.787Z"
+  },
+  {
+    "id": "AJUDA_dffcac4e-b0dd-4645-9e7b-eed6b02221fa",
+    "originalId": "dffcac4e-b0dd-4645-9e7b-eed6b02221fa",
+    "statement": "Durante o puerpério imediato de um parto cesariano, uma paciente evoluiu com sinais de pré-eclâmpsia e foi transferida para o CTI. Ao admitir a paciente, o médico intensivista notou que, além da hipertensão arterial, a mesma estava bradipneica e bradicárdica. Assinale a alternativa que corresponde a melhor conduta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar tomografia de crânio e acionar a equipe de neurologia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Prescrever flumazenil para reversão do efeito da anestesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar dobutamina e solicitar ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Associar hidralazina endovenosa ao sulfato de magnésio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Suplementação de oxigênio e tomografia de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma paciente no puerpério imediato com diagnóstico de pré-eclâmpsia que apresenta uma tríade clínica clássica: hipertensão arterial, bradicardia e bradipneia (alteração do padrão respiratório). Esse conjunto de sinais é conhecido como Tríade de Cushing.\n\nA Tríade de Cushing é um sinal iminente e grave de hipertensão intracraniana (HIC) e possível herniação cerebral. Em pacientes com pré-eclâmpsia ou eclâmpsia, o risco de complicações neurológicas agudas, como o Acidente Vascular Cerebral (AVC) hemorrágico ou o edema cerebral grave (como na síndrome de encefalopatia posterior reversível – PRES), é elevado. Portanto, diante de sinais de alarme neurológico, a prioridade absoluta é a investigação de lesão intracraniana.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Correta. A presença da Tríade de Cushing (hipertensão, bradicardia e bradipneia) indica urgência neurológica. A tomografia de crânio é o exame de escolha inicial para identificar hemorragias ou sinais de edema cerebral, e o acionamento da neurologia/neurocirurgia é fundamental para o manejo da pressão intracraniana.\n\nb) Incorreta. O flumazenil é um antagonista de benzodiazepínicos. Embora a paciente tenha passado por uma cesariana, o quadro de hipertensão associado à bradicardia e bradipneia é específico para hipertensão intracraniana e não sugere sedação residual por drogas anestésicas comuns.\n\nc) Incorreta. A dobutamina é um inotrópico indicado em casos de choque cardiogênico ou insuficiência cardíaca descompensada. A bradicardia aqui não é de origem primariamente cardíaca, mas sim uma resposta autonômica ao aumento da pressão intracraniana (reflexo de Cushing).\n\nd) Incorreta. Embora o sulfato de magnésio seja o tratamento padrão para prevenção de crises convulsivas na pré-eclâmpsia e a hidralazina seja usada para controle hipertensivo, esses fármacos não tratam a causa-base da Tríade de Cushing. Além disso, a intoxicação por magnésio causa bradipneia e hiporreflexia, mas geralmente cursa com hipotensão, e não com a tríade hipertensiva clássica de Cushing.\n\ne) Incorreta. A suplementação de oxigênio é uma medida de suporte, mas a tomografia de tórax não tem indicação clínica no momento, já que os sinais vitais apontam para uma etiologia neurológica central e não para uma patologia pulmonar (como edema agudo de pulmão ou embolia).",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:52.787Z"
+  },
+  {
+    "id": "AJUDA_dffd68af-d090-4415-93e9-d8bada7d993d",
+    "originalId": "dffd68af-d090-4415-93e9-d8bada7d993d",
+    "statement": "Paciente, sexo feminino, gestante de 32 semanas, chega ao pronto-socorro com sangramento vaginal moderado e dor abdominal intensa. Após diagnóstico de descolamento prematuro de placenta, a conduta mais adequada para o caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar amniotomia e monitorar a paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar cesárea de emergência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administrar ocitocina para induzir o parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aguardar o parto vaginal espontâneo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O descolamento prematuro de placenta (DPP) caracteriza-se pela separação abrupta da placenta da parede uterina antes do nascimento do feto, em gestações acima de 20 semanas. Trata-se de uma emergência obstétrica associada a altas taxas de morbimortalidade materna e perinatal. No caso descrito, a paciente apresenta o quadro clássico: dor abdominal intensa (sugerindo hipertonia uterina), sangramento vaginal e uma idade gestacional de 32 semanas (feto viável).\n\nAnalise das alternativas:\n\nAlternativa (a) Incorreta: A amniotomia é uma medida importante no manejo do DPP, pois ajuda a reduzir a pressão intra-amniótica, melhora a hipertonia uterina e pode reduzir a infiltração de sangue no miométrio, além de acelerar o trabalho de parto. No entanto, em um cenário de DPP com feto vivo onde o parto não é iminente, a amniotomia isolada não é a conduta definitiva. A prioridade é a retirada imediata do feto para evitar a morte por hipóxia.\n\nAlternativa (b) Correta: Quando o feto está vivo e a gestação é viável (como no caso de 32 semanas), a conduta mais adequada perante um DPP agudo é a interrupção imediata da gestação pela via mais rápida. Na grande maioria das vezes, quando o parto não é iminente (ou seja, quando a paciente não está em fase expulsiva), a via mais rápida é a cesariana de emergência. Essa medida visa salvar a vida fetal e interromper o sangramento materno e a progressão do descolamento.\n\nAlternativa (c) Incorreta: A administração de ocitocina para induzir o parto em um quadro de DPP com dor intensa e sangramento moderado é contraindicada. O útero no DPP já costuma apresentar hipertonia (contratura sustentada), e a indução prolongaria o tempo de exposição do feto à hipóxia, além de aumentar o risco de complicações maternas como a coagulopatia e a atonia uterina pós-parto.\n\nAlternativa (d) Incorreta: O DPP é uma condição de urgência que não permite conduta expectante. Aguardar o parto espontâneo resultaria em um desfecho fatal para o feto e colocaria a vida da mãe em risco extremo devido ao choque hemorrágico e distúrbios de coagulação.\n\nEm resumo, o manejo do DPP depende da vitalidade fetal. Se o feto estiver vivo e o parto não for iminente, a cesariana é a via de escolha. Se o feto estiver morto, prioriza-se o parto vaginal com realização de amniotomia imediata para estabilização materna. Como o quadro sugere um feto vivo e viável, a alternativa (b) é a correta.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:52.787Z"
+  },
+  {
+    "id": "AJUDA_e014bb30-5c54-4c7b-af08-ce6a40cd4561",
+    "originalId": "e014bb30-5c54-4c7b-af08-ce6a40cd4561",
+    "statement": "Paciente submetido a apendicectomia por apendicite flegmonosa (sem perfuração, sem pus livre). A classificação da ferida operatória é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infectada (suja).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Limpa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Contaminada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Limpa-contaminada.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A classificação das feridas operatórias é baseada no potencial de contaminação e no risco de infecção do sítio cirúrgico. Veja a análise de cada alternativa:\n\nAlternativa (a) Incorreta. A classificação de ferida infectada ou suja é reservada para casos onde já existe infecção clínica evidente, presença de pus, vísceras perfuradas (como apendicite perfurada com peritonite purulenta ou fecaloide) ou feridas traumáticas antigas com tecido desvitalizado. O enunciado especifica que não há perfuração nem pus livre.\n\nAlternativa (b) Incorreta. Feridas limpas são aquelas em que não há penetração nos tratos digestivo, respiratório, genital ou urinário não infectados. São realizadas em condições assépticas, sem processo inflamatório local (ex: cirurgia cardíaca ou de mama). Como o apêndice faz parte do trato digestivo, sua remoção impede essa classificação.\n\nAlternativa (c) Incorreta. Feridas contaminadas incluem feridas traumáticas recentes, cirurgias com grande extravasamento de conteúdo gastrointestinal ou cirurgias em que se encontra inflamação aguda não purulenta. Embora a apendicite flegmonosa envolva inflamação, a prática pedagógica das provas de residência e a classificação do Ministério da Saúde consideram a apendicectomia sem perfuração como potencialmente contaminada.\n\nAlternativa (d) Correta. A ferida limpa-contaminada (ou potencialmente contaminada) ocorre quando o cirurgião entra em tratos colonizados (como o digestivo), mas de forma controlada e sem contaminação grosseira. No caso da apendicite flegmonosa, o órgão é removido com inflamação, mas sem que tenha ocorrido o extravasamento de pus ou fezes para a cavidade abdominal, enquadrando-se perfeitamente nesta categoria.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Cicatrização de Feridas",
+      "Apendicite Aguda"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:52.787Z"
+  },
+  {
+    "id": "AJUDA_e01cf81c-7a28-4bea-a971-56b61f9282c9",
+    "originalId": "e01cf81c-7a28-4bea-a971-56b61f9282c9",
+    "statement": "No rastreio do câncer de mama, o exame mais eficaz na redução da mortalidade por esse câncer é a",
+    "options": [
+      {
+        "id": "A",
+        "text": "ressonância magnética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tomossíntese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ultrassonografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "mamografia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O objetivo principal do rastreamento do câncer de mama é a detecção precoce de lesões em estágios iniciais, permitindo tratamentos menos agressivos e, fundamentalmente, a redução da mortalidade. Para que um exame seja considerado o padrão-ouro no rastreio populacional, ele deve possuir evidências científicas sólidas de que sua aplicação diminui o número de mortes pela doença.\n\nAlternativa a) Incorreta. A ressonância magnética apresenta a maior sensibilidade entre os métodos de imagem para detectar o câncer de mama. No entanto, possui menor especificidade e alto custo, o que gera um maior número de biópsias desnecessárias. Seu uso no rastreamento é restrito a pacientes de alto risco (como aquelas com mutações nos genes BRCA1/2 ou risco calculado superior a 20-25% ao longo da vida), não sendo o exame padrão para a redução de mortalidade na população geral.\n\nAlternativa b) Incorreta. A tomossíntese, também conhecida como mamografia 3D, é uma evolução tecnológica que melhora a taxa de detecção de câncer (especialmente em mamas densas) e reduz a taxa de reconvocações por falsos-positivos. Apesar de ser superior à mamografia convencional na detecção, ela ainda não substituiu a mamografia 2D como o exame de referência absoluta nas diretrizes de saúde pública para a redução de mortalidade populacional, embora venha ganhando espaço como método preferencial em alguns serviços privados.\n\nAlternativa c) Incorreta. A ultrassonografia é um excelente método complementar, especialmente para a avaliação de mamas densas em mulheres jovens ou para a caracterização de nódulos (diferenciando conteúdo sólido de cístico). Contudo, ela é examinador-dependente e possui baixa sensibilidade para a detecção de microcalcificações, que são sinais precoces importantes. Não existem estudos randomizados que comprovem a redução de mortalidade quando a ultrassonografia é utilizada isoladamente como rastreio.\n\nAlternativa d) Correta. A mamografia é o único exame que demonstrou, de forma consistente e através de múltiplos ensaios clínicos randomizados em larga escala, uma redução significativa na mortalidade por câncer de mama (em torno de 20% a 30% nas populações rastreadas). Devido à sua capacidade de detectar microcalcificações e nódulos ainda não palpáveis, ela permite o diagnóstico em fases onde a cura é altamente provável. Por isso, permanece como a base das estratégias de rastreamento populacional em todo o mundo.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:52.787Z"
+  },
+  {
+    "id": "AJUDA_e0248930-cb3c-4225-820e-2effc92ecfde",
+    "originalId": "e0248930-cb3c-4225-820e-2effc92ecfde",
+    "statement": "Para se estabelecer a relação entre a exposição a hipotético fator de risco para a ocorrência de determinada doença, foram selecionados dois grupos de pessoas com caraterísticas semelhantes (100 pessoas em cada grupo), sendo um grupo exposto ao fator de risco e o outro não exposto. Ao longo de um ano, foram registrados 10 casos da doença no primeiro grupo e 5 casos no segundo grupo. Esse modelo de investigação epidemiológica é denominado estudo de",
+    "options": [
+      {
+        "id": "A",
+        "text": "prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "corte transversal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "coorte.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ensaio clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Enunciado:\nO estudo descrito apresenta três características fundamentais: 1) A seleção dos participantes é feita com base na exposição (expostos vs. não expostos); 2) Há um acompanhamento temporal (ao longo de um ano); 3) O objetivo é observar o surgimento de novos casos (incidência) a partir de uma condição inicial de saúde. Esse desenho, que parte da causa em direção ao efeito, define classicamente um estudo de coorte.\n\nAlternativa A (Incorreta): Prevalência não é um tipo de desenho de estudo, mas sim uma medida de frequência que indica a proporção de indivíduos doentes em uma população em um dado momento. Embora estudos transversais sejam frequentemente chamados de estudos de prevalência, eles não realizam o acompanhamento temporal descrito na questão.\n\nAlternativa B (Incorreta): O estudo de corte transversal (ou seccional) realiza a coleta de dados de exposição e desfecho simultaneamente, em um único ponto no tempo, como se fosse uma fotografia. Ele não permite estabelecer uma relação de temporalidade ou calcular a incidência, pois não acompanha os indivíduos ao longo do tempo como ocorreu no exemplo.\n\nAlternativa C (Correta): O estudo de coorte é um modelo observacional e longitudinal. Ele começa com grupos de indivíduos inicialmente sem a doença, que são classificados de acordo com a exposição a um fator de risco e acompanhados no tempo para verificar quem desenvolve o desfecho. É o desenho ideal para calcular a incidência e estabelecer o risco relativo, exatamente como proposto no cenário da questão.\n\nAlternativa D (Incorreta): O estudo de caso-controle percorre o caminho inverso: ele parte do desfecho já estabelecido. Selecionam-se pessoas que já têm a doença (casos) e pessoas saudáveis (controles) e olha-se para trás (retrospectivamente) para investigar se houve exposição prévia a determinados fatores. No enunciado, o ponto de partida foi a exposição, e não a doença.\n\nAlternativa E (Incorreta): O ensaio clínico é um estudo experimental no qual o pesquisador tem controle sobre a exposição (intervenção), decidindo quem receberá determinado tratamento ou placebo. No caso descrito, trata-se de um fator de risco, o que sugere um estudo observacional, no qual o pesquisador apenas registra o que ocorre naturalmente com os grupos expostos. Além disso, por questões éticas, não se submetem pessoas a fatores de risco em ensaios clínicos.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:52.787Z"
+  },
+  {
+    "id": "AJUDA_e02f4d31-dfc8-4e41-9fda-828a4a0288d1",
+    "originalId": "e02f4d31-dfc8-4e41-9fda-828a4a0288d1",
+    "statement": "Frente à distocia de ombros detectada durante a fase expulsiva do parto, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a redução do diâmetro biacromial fetal por meio da adução dos ombros é a manobra mais eficaz.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a episiotomia médio-lateral direita está indicada, independente da manobra de liberação de ombro adotada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a sondagem vesical de alívio é mandatória antes da realização da manobra de compressão suprapúbica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a primeira manobra que deve ser tentada na posição de litotomia é levantar os membros inferiores em hiperflexão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "o tempo limite que antecede o aumento do risco de asfixia fetal é de 10 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A distocia de ombros é uma emergência obstétrica que ocorre quando o ombro anterior do feto fica impactado atrás da sínfise púbica materna após a saída da cabeça. A conduta deve ser imediata, seguindo protocolos sistematizados (como o ALARM ou HELPERR). Abaixo, a análise detalhada das alternativas:\n\nAlternativa a) Incorreta. A manobra que visa à adução dos ombros para reduzir o diâmetro biacromial é a Manobra de Rubin II (uma manobra interna). Embora eficaz para desimpactar o ombro, ela não é considerada a primeira escolha nem a \"mais eficaz\" isoladamente quando comparada à abordagem inicial menos invasiva.\n\nAlternativa b) Incorreta. A episiotomia não resolve a distocia de ombros, pois a obstrução é óssea (ombro fetal contra o púbis materno) e não de tecidos moles. Ela só deve ser realizada se o obstetra precisar de mais espaço vaginal para realizar as manobras internas, não sendo indicada de forma obrigatória em todos os casos.\n\nAlternativa c) Incorreta. Embora uma bexiga cheia possa dificultar o trajeto fetal, a sondagem vesical de alívio não é um passo mandatório nem prioritário. O foco inicial deve ser a execução imediata das manobras de desprendimento, pois o tempo é o fator mais crítico.\n\nAlternativa d) Correta. A manobra descrita é a Manobra de McRoberts. Ela é a primeira conduta recomendada na maioria dos protocolos mundiais devido à sua alta taxa de sucesso (sozinha resolve até 40% dos casos e, combinada com a pressão suprapúbica, até 90%) e baixo risco de trauma. A hiperflexão das coxas sobre o abdome materno retifica a lordose lombar, rotaciona a sínfise púbica superiormente e aplaina o promontório sacral, facilitando a passagem do ombro.\n\nAlternativa e) Incorreta. O tempo é extremamente curto. O risco de asfixia fetal grave e lesão neurológica irreversível aumenta significativamente após 5 a 7 minutos de impactação. Aguardar 10 minutos é um intervalo longo demais e está associado a resultados perinatais desastrosos.\n\nGabarito: Alternativa (d).",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Partograma e Distocias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:52.787Z"
+  },
+  {
+    "id": "AJUDA_e033faa8-d769-472b-b42b-ccb7ada9e3e0",
+    "originalId": "e033faa8-d769-472b-b42b-ccb7ada9e3e0",
+    "statement": "Um médico atendeu uma paciente de 45 anos de idade com diabete mellitus tipo 2 descompensada que relatou dificuldade em aderir ao plano terapêutico prescrito. Durante a consulta, a paciente mencionou sentir‑se sobrecarregada com as responsabilidades familiares e acreditava que o tratamento não lhe estava ajudando. O médico decidiu adotar o método clínico centrado na pessoa (MCCP). \n\nCom base nesse caso clínico hipotético e no método referido, assinale a opção que apresenta a abordagem correta para esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O médico deve enfatizar a necessidade de aderir rigorosamente ao plano terapêutico atual, reforçando a importância de seguir as orientações médicas, para evitar complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O médico deve explorar as preocupações, crenças e emoções da paciente sobre o tratamento e adaptar o plano terapêutico às suas necessidades e ao seu contexto de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O foco principal deve ser a doença, garantindo que a paciente compreenda os riscos do mau controle glicêmico e as complicações futuras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A consulta deve ser direcionada exclusivamente à resolução dos problemas médicos, pois questões emocionais podem ser abordadas posteriormente por outro profissional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A relação médico‑paciente deve ser fundamentada na autoridade do médico, que deve tomar decisões com base em evidências, mesmo que a paciente demonstre resistência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Método Clínico Centrado na Pessoa (MCCP) é uma abordagem que busca entender a saúde e a doença sob a ótica do paciente, integrando a patologia (doença) com a experiência subjetiva do indivíduo (adoecimento).\n\nAnálise das alternativas:\n\nAlternativa (b) - CORRETA: Esta opção reflete os pilares fundamentais do MCCP. O médico deve explorar o chamado SIFE: os Sentimentos da paciente (sentir-se sobrecarregada), suas Ideias (acreditar que o tratamento não ajuda), o impacto na sua Função (rotina familiar) e suas Expectativas. Ao adaptar o plano terapêutico ao contexto de vida e às necessidades da paciente, o médico estabelece um projeto comum de manejo, o que aumenta significativamente as chances de adesão ao tratamento em doenças crônicas como o diabetes.\n\nAlternativa (a) - INCORRETA: Esta abordagem é puramente diretiva e paternalista. O foco está na obediência da paciente às ordens médicas. Ignorar as causas subjetivas e sociais que levam à descompensação da doença geralmente resulta em falha terapêutica, pois não resolve o problema de base (a sobrecarga familiar e a falta de crença no tratamento).\n\nAlternativa (c) - INCORRETA: O foco exclusivo na doença, nos riscos e nas complicações futuras caracteriza o Modelo Biomédico Tradicional. No MCCP, o foco é a pessoa em sua totalidade. Compreender os riscos glicêmicos é importante, mas insuficiente se a paciente não tiver condições emocionais ou contextuais de realizar o autocuidado.\n\nAlternativa (d) - INCORRETA: O MCCP defende a integração entre saúde física e emocional. Separar esses aspectos ou delegar questões emocionais exclusivamente a outros profissionais fragmenta o cuidado. As emoções da paciente estão diretamente ligadas ao seu controle glicêmico, e o médico deve abordá-las para fortalecer a relação terapêutica.\n\nAlternativa (e) - INCORRETA: A relação no MCCP é baseada na parceria e no poder compartilhado, não na autoridade do médico. Tomar decisões de forma unilateral, ignorando a resistência da paciente, fere a autonomia da pessoa e compromete a aliança necessária para o sucesso do tratamento a longo prazo.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Medicina de Família e Comunidade",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:52.787Z"
+  },
+  {
+    "id": "AJUDA_e043dd03-283d-416b-9568-b7006321feee",
+    "originalId": "e043dd03-283d-416b-9568-b7006321feee",
+    "statement": "Recém-nascido a termo, feminino, adequado para idade gestacional, nascido de parto cesárea por desejo materno, bolsa integra, cultura vaginal e anal materna negativa para Streptococcus B. Após o nascimento, é mantido em alojamento conjunto, recebe alta hospitalar com 52 horas de vida em aleitamento moderno exclusivo, com perda ponderal em relação ao peso de nascimento de 6,8%. Com 10 dias de vida dá entrada no pronto-socorro infantil desidratado, hipoativo, pálido, pele fria, pulso fino, perfusão lentificada. Solicitados exames de admissão: Leucócitos: 15.808, Hemoglobina: 14,2 g/dL, Hematócrito: 43%, PCR: 0,3 mg/L (normal até 0,5 mg/L), Sódio: 121 meq/L, Potássio: 4,8 meq/L, Cálcio: 9,8 mg/dL, Magnésio: 1,8 meq/L e Gasometria: pH: 7,14, PCO2: 17 bicarbonato 7 pO2 130 BE 13. A hipótese diagnóstica mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sepse Neonatal precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipotireoidismo congênito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sepse neonatal tardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiperplasia adrenal congênita.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Desidratação por baixa ingesta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para entender essa questão, devemos analisar o quadro clínico de um recém-nascido de 10 dias que apresenta sinais de choque circulatório (hipoatividade, palidez, extremidades frias e má perfusão) associados a distúrbios metabólicos graves.\n\nAnálise do Quadro Clínico e Exames:\nO paciente apresenta uma acidose metabólica grave (pH 7,14 e bicarbonato 7) e uma hiponatremia severa (sódio 121 mEq/L). Embora o potássio de 4,8 mEq/L esteja dentro da normalidade para a faixa etária, a associação de choque, hiponatremia marcada e acidose em um lactente na segunda semana de vida é o cenário clássico da crise adrenal por Hiperplasia Adrenal Congênita (HAC).\n\nExplicação das alternativas:\n\na) Sepse Neonatal Precoce: Incorreta. A sepse precoce ocorre nas primeiras 48 a 72 horas de vida e geralmente está associada a fatores de risco maternos, como bolsa rota prolongada ou colonização por Streptococcus B. O paciente em questão tem 10 dias de vida, a bolsa estava íntegra e a cultura materna para Streptococcus foi negativa.\n\nb) Hipotireoidismo Congênito: Incorreta. O hipotireoidismo congênito costuma se manifestar de forma mais insidiosa, com icterícia prolongada, constipação, macroglossia e hérnia umbilical. Não costuma cursar com choque hipovolêmico agudo e hiponatremia grave aos 10 dias de vida.\n\nc) Sepse Neonatal Tardia: Incorreta. Embora a idade de 10 dias seja compatível com sepse tardia, os exames laboratoriais mostram Proteína C Reativa (PCR) normal (0,3 mg/L) e leucócitos normais para a idade. Além disso, a hiponatremia de 121 mEq/L é muito desproporcional para um quadro de sepse isolada, sugerindo fortemente uma perda primária de sal.\n\nd) Hiperplasia Adrenal Congênita (HAC): Correta. A forma clássica perdedora de sal (geralmente por deficiência da enzima 21-hidroxilase) manifesta-se tipicamente entre a 1ª e a 2ª semana de vida. A falta de mineralocorticoides leva à perda urinária de sódio, desidratação grave, choque e acidose. A hiponatremia é um marcador fundamental. Em meninas, pode haver virilização da genitália externa, mas a ausência dessa descrição no enunciado não exclui o diagnóstico clínico-laboratorial.\n\ne) Desidratação por baixa ingesta: Incorreta. A perda ponderal na alta (52 horas) era de 6,8%, o que é considerado fisiológico (até 10%). Na desidratação por baixa ingesta (falta de oferta de leite), o sódio costuma estar normal ou elevado (desidratação hipernatrêmica), e não tão baixo quanto 121 mEq/L. Um sódio de 121 indica perda real de sal, característica da deficiência de aldosterona na HAC.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Hiperplasia Adrenal Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:52.787Z"
+  }
+]

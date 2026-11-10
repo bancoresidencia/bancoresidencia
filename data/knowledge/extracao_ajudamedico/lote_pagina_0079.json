@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_14f2cb60-f05c-44f7-9cde-c79b16278da0",
+    "originalId": "14f2cb60-f05c-44f7-9cde-c79b16278da0",
+    "statement": "Qual dos objetivos abaixo é o mais provável de ser atingido com um estudo epidemiológico do tipo caso controle?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estimar a frequência de doenças raras na população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Avaliar a eficácia de programas de rastreamento populacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estimar a frequência de doenças crônicas na população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Avaliar a efetividade de uma vacina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O estudo de caso-controle é um desenho de pesquisa observacional, analítico e geralmente retrospectivo. Ele parte do desfecho (o indivíduo já doente) para investigar a exposição prévia a determinados fatores.\n\nAlternativa a: Incorreta. Embora o modelo de caso-controle seja o mais indicado para investigar os fatores de risco de doenças raras (pela facilidade de selecionar indivíduos que já possuem a condição), ele não serve para estimar a frequência (prevalência ou incidência) na população. Isso ocorre porque o pesquisador define arbitrariamente o número de casos e controles, o que não reflete a proporção real da doença na comunidade.\n\nAlternativa b: Incorreta. A avaliação da eficácia de intervenções ou programas de rastreamento populacional é melhor realizada por meio de ensaios clínicos randomizados ou estudos de coorte. A eficácia diz respeito ao desempenho de uma intervenção em condições ideais e controladas, o que foge ao escopo puramente observacional do caso-controle.\n\nAlternativa c: Incorreta. Para estimar a frequência de doenças na população, os desenhos de escolha são os estudos transversais (para medir a prevalência) ou estudos de coorte (para medir a incidência). O caso-controle, por sua natureza de seleção baseada no desfecho, impede o cálculo direto dessas medidas de frequência populacional.\n\nAlternativa d: Correta. O estudo de caso-controle é uma ferramenta clássica para avaliar a efetividade de vacinas após sua introdução na população (o chamado \"mundo real\"). O pesquisador identifica as pessoas que contraíram a doença contra a qual se vacina (casos) e as que não contraíram (controles), comparando o histórico vacinal de ambos os grupos. Através do cálculo da Odds Ratio (Razão de Chances), é possível determinar a efetividade da vacina na proteção contra o desfecho clínico.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:33.216Z"
+  },
+  {
+    "id": "AJUDA_14f33b5b-1376-4b9c-b9ca-52bddb93fb97",
+    "originalId": "14f33b5b-1376-4b9c-b9ca-52bddb93fb97",
+    "statement": "Mulher de 55 anos, sem história de doenças crônicas, procura atendimento por queixa de cefaleia persistente em ambos os lados do crânio, associada a alterações de visão (amaurose fugaz e diplopia), cansaço e artralgias. Relata dor em todo o couro cabeludo. Notou perda de peso (2 quilogramas em 2 meses). Nega fotofobia ou fonofobia, febre ou náuseas, e afirma que não acorda de madrugada por conta da cefaleia. Nega qualquer problema de ordem emocional. Ao exame, a paciente encontra-se afebril, com pupilas isocóricas e sem rigidez de nuca.\nQual é o tipo de cefaleia dessa paciente, e qual exame seria útil na sua investigação preliminar, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cefaleia primária (cefaleia tensional); nenhum exame é necessário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cefaleia secundária (hemorragia subaracnoideia); análise de líquor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cefaleia primária (migrânea); tomografia computadorizada de encéfalo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cefaleia secundária (arterite temporal); velocidade de hemossedimentação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA paciente apresenta uma cefaleia de início recente em idade madura (55 anos), o que, por si só, já é considerado um sinal de alerta (red flag) na prática clínica. O quadro é acompanhado por sintomas sistêmicos (perda de peso, cansaço e artralgias), dor no couro cabeludo e queixas visuais graves (amaurose fugaz e diplopia). Esse conjunto de achados é altamente sugestivo de uma vasculite sistêmica.\n\nDISTRIBUIÇÃO DAS ALTERNATIVAS\n\nAlternativa A - INCORRETA: A cefaleia tensional é uma condição primária e benigna. Embora possa ser bilateral, ela não justifica sintomas constitucionais como perda de peso, nem sinais neurológicos como amaurose ou dor no couro cabeludo. Além disso, a cefaleia tensional raramente se inicia aos 55 anos sem um histórico prévio de episódios semelhantes.\n\nAlternativa B - INCORRETA: A hemorragia subaracnoidea é uma emergência neurológica de instalação súbita e aguda, tipicamente descrita como a pior dor de cabeça da vida (cefaleia em trovoada). O relato da paciente descreve uma evolução persistente e subaguda de dois meses, associada a artralgias e emagrecimento, o que é incompatível com um evento hemorrágico agudo.\n\nAlternativa C - INCORRETA: A migrânea (enxaqueca) é uma cefaleia primária que tipicamente cursa com sintomas autonômicos como náuseas, fotofobia e fonofobia, sintomas que foram expressamente negados pela paciente. Além disso, o diagnóstico de migrânea é clínico, e a tomografia do encéfalo não é o exame de investigação para este caso, pois os sinais de alerta indicam uma patologia vascular inflamatória.\n\nAlternativa D - CORRETA: O diagnóstico é Arterite Temporal (também chamada de Arterite de Células Gigantes). Esta é uma vasculite de vasos de médio e grande calibre que acomete indivíduos acima de 50 anos. Os sinais clínicos clássicos presentes no caso são: cefaleia persistente, hipersensibilidade do couro cabeludo (dor ao pentear o cabelo ou tocar a região temporal) e alterações visuais por isquemia (amaurose fugaz e diplopia), que representam um risco real de cegueira irreversível. A presença de artralgia e cansaço sugere a associação com Polimialgia Reumática, condição frequentemente ligada à Arterite Temporal. O exame preliminar de escolha é a Velocidade de Hemossedimentação (VHS), que costuma estar marcadamente elevada (frequentemente acima de 50 mm na primeira hora), sendo um marcador de triagem altamente sensível para esta patologia.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vasculites",
+      "Cefaleias"
+    ],
+    "difficulty": 59.643319213497826,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:33.216Z"
+  },
+  {
+    "id": "AJUDA_14ff94e8-490e-4cd2-a6e9-f85795a0ddc0",
+    "originalId": "14ff94e8-490e-4cd2-a6e9-f85795a0ddc0",
+    "statement": "Em relação ao novo modelo de financiamento da Atenção Primária à Saúde (data), é correto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Há previsão de construção de aproximadamente 3.000 novas UBS, com verbas municipais e estaduais, sendo UBS maiores e com projetos arquitetônicos mais modernos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tem o objetivo de diminuir o cofinanciamento federal, com a finalidade de melhorar o acesso, a qualidade e a integralidade do cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O objetivo é priorizar a estratégia saúde da família, sem previsibilidade ou sustentabilidade dos incentivos financeiros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Será criado um novo indicador que combina o porte populacional e o índice de vulnerabilidade social dos municípios com o objetivo de promover uma distribuição financeira mais equitativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Aproximadamente 50% dos recursos previstos virão do componente qualidade que incentiva a melhoria contínua dos serviços provenientes de indicadores pactuados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o novo modelo de financiamento da Atenção Primária à Saúde (APS) no Brasil, instituído para aprimorar a distribuição de recursos e garantir a sustentabilidade do Sistema Único de Saúde (SUS). As mudanças mais recentes buscam corrigir distorções de modelos anteriores e focar na equidade.\n\nAlternativa (a) Incorreta: O modelo de financiamento da APS foca primordialmente no custeio, ou seja, no valor destinado à manutenção das equipes e dos serviços no dia a dia. Embora existam investimentos em infraestrutura e construção de Unidades Básicas de Saúde (como os previstos no PAC Seleções), estes não são o objeto central das regras de financiamento do custeio mensal. Além disso, a construção de UBS envolve recursos federais significativos, e não apenas verbas municipais e estaduais.\n\nAlternativa (b) Incorreta: O objetivo de qualquer reforma no financiamento do SUS deve ser o fortalecimento do sistema. Buscar a diminuição do cofinanciamento federal seria contraproducente para a melhoria do acesso e da qualidade. O novo modelo visa, na verdade, garantir um repasse federal mais robusto e previsível para que os municípios consigam manter e ampliar suas redes de cuidado.\n\nAlternativa (c) Incorreta: A Estratégia Saúde da Família (ESF) continua sendo o modelo prioritário e estruturante da APS. O erro da alternativa reside em afirmar que não há previsibilidade ou sustentabilidade. Pelo contrário, as novas normativas (como a Portaria GM/MS nº 3.493/2024) buscam dar maior segurança financeira aos gestores, garantindo repasses fixos que permitem o planejamento a longo prazo das ações de saúde.\n\nAlternativa (d) Correta: Este é um dos pontos centrais da atualização do modelo de financiamento. Para promover a equidade (tratar desigualmente os desiguais para atingir a igualdade), o cálculo dos repasses passou a considerar o porte populacional do município e critérios de vulnerabilidade socioeconômica. Municípios menores ou com população em situação de maior vulnerabilidade recebem incentivos financeiros diferenciados para compensar as dificuldades estruturais e as maiores necessidades de saúde dessas populações.\n\nAlternativa (e) Incorreta: Embora o componente de qualidade (pagamento por desempenho) seja uma parte importante do financiamento para incentivar a melhoria dos indicadores, ele não representa a metade (50%) dos recursos totais. A estrutura de financiamento é composta por diferentes blocos, sendo o componente fixo (baseado no número de equipes e população) essencial para garantir o funcionamento basal das unidades, independentemente do alcance das metas de desempenho.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:33.216Z"
+  },
+  {
+    "id": "AJUDA_1500d089-0538-41dd-8f82-6676f72f03cb",
+    "originalId": "1500d089-0538-41dd-8f82-6676f72f03cb",
+    "statement": "Mulher, 66 anos de idade, apresentou dor abdominal de início súbito e forte intensidade há 4 horas. Tem diabetes melito e tabagismo de 1 maço de cigarro por dia. Ao exame físico, encontra-se em regular estado geral, com FC de 100 bpm e PA de 100×70 mmHg, abdome tenso, doloroso difusamente à palpação, inclusive à percussão. \n• Exames laboratoriais: \nHb: 14,9 g/dL\nHt: 41%\nLeucócitos: 16.126/mm3\nPCR: 12 mg/L\nAmilase: 281 U/L\nLipase: 100 U/L\nFoi realizada a tomografia apresentada nas imagens a seguir: \n\nAssinale a alternativa que representa o achado operatório esperado nesta paciente.",
+    "options": [],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico de abdome agudo perfurativo: início súbito de dor de forte intensidade (dor em facada) e sinais evidentes de peritonite difusa (abdome tenso e dor à descompressão/percussão). A discreta elevação de amilase (281 U/L) ocorre frequentemente devido à absorção peritoneal do conteúdo gastroduodenal extravasado, sem configurar pancreatite aguda. \n\nAs imagens de tomografia computadorizada do abdome superior demonstram a presença de volumoso pneumoperitônio (gás livre acumulado anteriormente ao fígado e no espaço subfrênico), associado a espessamento parietal e densificação dos planos adiposos na topografia gastroduodenal, achados típicos de úlcera péptica perfurada.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. A imagem operatória ilustra uma vesícula biliar enfisematosa/gangrenosa (colecistite aguda gangrenosa). Embora seja uma condição grave comum em pacientes idosos e diabéticos, a colecistite aguda geralmente não cursa com pneumoperitônio volumoso e livre na cavidade como o observado na tomografia.\n\nAlternativa B - Correta. A imagem mostra uma perfuração arredondada, \"em saca-bocado\", em parede de víscera oca gastroduodenal, característica da úlcera péptica perfurada. Este é o achado operatório correspondente ao volumoso pneumoperitônio visto na tomografia e à apresentação clínica hiperaguda com peritonite difusa.\n\nAlternativa C - Incorreta. A imagem exibe um apêndice cecal edemaciado e supurado (apendicite aguda). A apendicite aguda apresenta curso clínico mais insidioso, tipicamente com dor migratória que se localiza na fossa ilíaca direita, raramente cursando com pneumoperitônio volumoso em andar superior do abdome logo nas primeiras horas.\n\nAlternativa D - Incorreta. A imagem demonstra alças de intestino delgado com necrose transmural decorrente de isquemia mesentérica aguda. Embora a paciente apresente fatores de risco cardiovasculares (idade, diabetes e tabagismo), a isquemia mesentérica precoce costuma apresentar dor desproporcional ao exame físico sem pneumoperitônio volumoso, achado este que só ocorreria em fases tardias por perfuração de alça inviável.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Perfurativo"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/db84486740d9899fad4a6fcd2407654a0384ea14c2c64058d4a27ef4bb405e65.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1500d089-0538-41dd-8f82-6676f72f03cb_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/c655583e556db3b7d954b7cfef746d71b02bdd7ef494530723f0ef8bcf1982e1.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1500d089-0538-41dd-8f82-6676f72f03cb_img_1.webp"
+      },
+      {
+        "order": 2,
+        "originalUrl": "https://files.ajudamedico.com/files/98b4dece0dd6b2a189d0714e3530222bffeadfb7c4621a7824c59caefcf940d3.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1500d089-0538-41dd-8f82-6676f72f03cb_img_2.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:34.628Z"
+  },
+  {
+    "id": "AJUDA_15010ca5-963d-45e5-a332-d6767bd88c39",
+    "originalId": "15010ca5-963d-45e5-a332-d6767bd88c39",
+    "statement": "As vacinas contra o HPV são compostas por partículas semelhantes ao vírus (VLPs - virus-like particles) produzidas por tecnologia recombinante. O mecanismo imunológico primário pelo qual essas vacinas conferem proteção contra a infecção por HPV envolve a produção de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anticorpos neutralizantes contra a proteína L1 do capsídeo viral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Linfócitos T citotóxicos contra proteínas oncogênicas E6 e E7.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Interferon tipo I com ação antiviral inespecífica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anticorpos contra DNA viral impedindo replicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "As vacinas contra o HPV disponíveis atualmente utilizam a tecnologia de Partículas Semelhantes ao Vírus (VLPs - Virus-Like Particles). Essas partículas são compostas pela proteína L1, que é a principal proteína estrutural do capsídeo (a camada externa) do HPV. Por serem produzidas por engenharia genética sem o DNA viral, as VLPs não são infecciosas, mas são capazes de mimetizar a estrutura externa do vírus e desencadear uma resposta imune potente.\n\nAlternativa A (Correta): O objetivo primário das vacinas profiláticas é gerar uma resposta imune humoral. Ao injetar as VLPs compostas pela proteína L1, o sistema imune produz altos títulos de anticorpos específicos denominados anticorpos neutralizantes. Quando o indivíduo vacinado entra em contato com o vírus real, esses anticorpos se ligam à proteína L1 da superfície viral, impedindo que o HPV se acople aos receptores das células epiteliais e bloqueando a entrada (infecção) do vírus na célula hospedeira.\n\nAlternativa B (Incorreta): As proteínas E6 e E7 são proteínas precoces (early) relacionadas à oncogênese, pois degradam proteínas supressoras de tumor (p53 e pRb). Embora sejam alvos para o desenvolvimento de vacinas terapêuticas (para quem já tem a lesão), elas não fazem parte da composição das vacinas profiláticas atuais, que visam prevenir a infecção inicial e não destruir células já transformadas via linfócitos T citotóxicos.\n\nAlternativa C (Incorreta): O interferon tipo I (como o interferon-alfa e beta) é um componente da imunidade inata e inespecífica. Ele é produzido naturalmente pelas células em resposta a uma invasão viral para limitar a replicação, mas não representa o mecanismo de memória imunológica específica e duradoura conferido pela vacina de HPV.\n\nAlternativa D (Incorreta): As vacinas de HPV são acelulares e não contêm DNA viral, consistindo apenas na casca proteica (capsídeo). Além disso, anticorpos agem tipicamente em alvos extracelulares ou de superfície. Impedir a replicação agindo diretamente no DNA seria uma função de fármacos antivirais ou mecanismos intracelulares, e não o mecanismo primário de uma vacina preventiva baseada em proteínas de superfície.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "Imunizações"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:34.628Z"
+  },
+  {
+    "id": "AJUDA_1502d5a2-a181-4149-b28e-906825e43103",
+    "originalId": "1502d5a2-a181-4149-b28e-906825e43103",
+    "statement": "Mulher, 52 anos de idade, lavadeira. Na consulta à Unidade de Saúde da Família, queixa-se de fogachos intensos e suores noturnos há cerca de 6 meses. As ondas de calor surgem várias vezes ao dia, são súbitas e duram cerca de 3 a 5 minutos. Tem dificuldades para dormir devido aos suores noturnos. Relata menopausa há 1 ano, quando surgiram os sintomas, desde então vêm se intensificando. Sem sangramento vaginal há mais de 12 meses e relata ressecamento vaginal. Última consulta ginecológica há 2 anos, quando os exames de rotina foram normais. Nega história familiar de câncer de mama ou de trombose e nunca fez reposição hormonal. A paciente também nega tabagismo e possui uma dieta regular. Exame físico sem alterações com PA: 125x78mmHg e IMC- 24kg/m². \n\nA situação que representa contraindicação absoluta para reposição hormonal é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença hepática ativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "História familiar de cardiopatia coronariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Osteoporose confirmada por densitometria óssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trombose venosa profunda prévia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda as contraindicações para a Terapia de Reposição Hormonal (TRH) em uma paciente no climatério com sintomas vasomotores intensos (fogachos e suores noturnos) e síndrome geniturinária (ressecamento vaginal). A paciente tem 52 anos e está na menopausa há um ano, período conhecido como janela de oportunidade para o início da terapia.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A doença hepática ativa e grave é, de fato, listada em diversas diretrizes (como as da FEBRASGO) como uma contraindicação absoluta à TRH, pois o fígado é o principal local de metabolização dos hormônios. No entanto, em provas de residência, o histórico de eventos tromboembólicos (alternativa d) é frequentemente priorizado como a resposta mais clássica, ou o examinador pode considerar que certas formas de doença hepática crônica estável permitiriam vias não orais em casos de extrema necessidade, enquanto o histórico de trombose é um impedimento mais rigoroso para o uso sistêmico.\n\nAlternativa (b) Incorreta: A história familiar de cardiopatia coronariana não contraindica a TRH. A contraindicação se aplica apenas se a própria paciente tiver história pessoal de doença coronariana estabelecida ou evento arterial agudo (como infarto ou AVC). Em mulheres saudáveis e no início da menopausa, a TRH pode ter, inclusive, um efeito cardioprotetor.\n\nAlternativa (c) Incorreta: A osteoporose confirmada não é uma contraindicação, mas sim uma das indicações clínicas para a terapia hormonal. O estrogênio reduz a atividade dos osteoclastos, diminuindo a reabsorção óssea e o risco de fraturas em mulheres na pós-menopausa.\n\nAlternativa (d) Correta: O histórico de Trombose Venosa Profunda (TVP) prévia ou atual, assim como o Tromboembolismo Pulmonar (TEP), constitui uma contraindicação absoluta e consensual para a TRH sistêmica. O uso de estrogênio, especialmente por via oral, aumenta a produção hepática de fatores de coagulação, elevando significativamente o risco de novos episódios trombóticos em pacientes que já apresentam essa predisposição ou histórico.\n\nResumo das principais contraindicações absolutas à TRH:\n1. Câncer de mama (atual ou prévio).\n2. Lesões precursoras do câncer de mama.\n3. Câncer de endométrio ou outros tumores estrogênio-dependentes.\n4. Sangramento vaginal de causa indeterminada.\n5. Tromboembolismo venoso atual ou prévio (TVP/TEP).\n6. Doença arterial coronariana ou cerebrovascular (ex.: infarto, AVC).\n7. Doença hepática ativa e grave.\n8. Porfiria.\n9. Lúpus eritematoso sistêmico com alto risco trombótico.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:34.628Z"
+  },
+  {
+    "id": "AJUDA_1504727a-ab02-41f4-9a35-cacb55a502f5",
+    "originalId": "1504727a-ab02-41f4-9a35-cacb55a502f5",
+    "statement": "O conceito de Prevenção Quaternária (P4), introduzido por Marc Jamoulle e muito relevante na Medicina de Família e Comunidade, define-se como a ação feita para:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Identificar pacientes em risco de doenças genéticas raras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Promover vacinação em massa em áreas de surto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Detectar e evitar o excesso de intervencionismo médico e a iatrogenia (danos desnecessários).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Reabilitar pacientes com doenças crônicas terminais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Fornecer cuidados paliativos exclusivos no ambiente hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O conceito de Prevenção Quaternária (P4) foi proposto pelo médico belga Marc Jamoulle na década de 1980 e posteriormente adotado pela Organização Mundial de Médicos de Família (WONCA). Diferente dos outros níveis de prevenção, a P4 não foca em uma doença específica, mas sim na relação entre o médico e o paciente, fundamentando-se no princípio bioético da não maleficência (*Primum non nocere*). O objetivo é identificar indivíduos em risco de medicalização excessiva e protegê-los de intervenções médicas desnecessárias ou potencialmente danosas.\n\nAnalise das alternativas:\n\nAlternativa (a) Incorreta. A identificação de riscos genéticos geralmente se enquadra na Prevenção Primária (quando se busca evitar o surgimento de uma condição) ou na Prevenção Secundária (rastreamento e diagnóstico precoce). A Prevenção Quaternária atuaria nesse cenário justamente para evitar a solicitação de testes genéticos desnecessários ou de difícil interpretação que pudessem causar ansiedade ou tratamentos inúteis ao paciente.\n\nAlternativa (b) Incorreta. A vacinação é o exemplo mais tradicional de Prevenção Primária. Ela atua sobre a população saudável com o intuito de evitar a incidência de doenças, diminuindo a probabilidade de que o agravo ocorra.\n\nAlternativa (c) Correta. Esta alternativa traz a definição precisa de Prevenção Quaternária. Ela consiste em um conjunto de medidas que visam evitar o excesso de intervencionismo (*overtreatment*), o excesso de diagnósticos (*overdiagnosis*) e a iatrogenia. Busca-se proteger o paciente de danos causados pelo próprio sistema de saúde, priorizando condutas que tenham benefício comprovado e evitando a transformação de pessoas saudáveis em doentes através da medicalização da vida.\n\nAlternativa (d) Incorreta. A reabilitação de pacientes com doenças já instaladas é o objetivo central da Prevenção Terciária. Esse nível de prevenção foca em reduzir as incapacidades, prevenir complicações de doenças crônicas e reintegrar o indivíduo à sociedade, visando a melhoria da qualidade de vida.\n\nAlternativa (e) Incorreta. Os cuidados paliativos podem ser oferecidos em qualquer nível de atenção (primária, secundária ou terciária) e em diversos ambientes (domiciliar, ambulatorial ou hospitalar). Embora a Prevenção Quaternária compartilhe valores com a paliação, como o combate à obstinação terapêutica (distanásia), a definição apresentada na alternativa está restrita e incorreta ao limitar o local de cuidado.\n\nGabarito: Alternativa (c).",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:34.628Z"
+  },
+  {
+    "id": "AJUDA_150db089-a769-4098-be32-8f286513af6d",
+    "originalId": "150db089-a769-4098-be32-8f286513af6d",
+    "statement": "Um paciente do sexo masculino procura atendimento médico para check-up de rotina. Ele não tem histórico de vacinação para hepatite B e nunca apresentou sintomas de infecções hepáticas. Ao realizar exames laboratoriais, o médico detecta que o paciente tem sorologia negativa para HBsAg, anti-HBc e anti-HBs. De acordo com o Protocolo Clínico e Diretrizes Terapêuticas para Hepatite B do Ministério da Saúde de 2023, assinale a alternativa que apresenta a melhor conduta para prevenir a infecção pelo vírus da hepatite B nesse paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar a vacina contra hepatite B em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar um esquema de três doses da vacina contra hepatite B.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administrar imunoglobulina contra hepatite B sem a vacina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repetir a sorologia em 6 meses antes de tomar qualquer medida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar tratamento antiviral para profilaxia pré-exposição.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A interpretação dos marcadores sorológicos é fundamental para determinar o status do paciente em relação ao vírus da hepatite B (HBV). No caso apresentado, temos o seguinte cenário:\n\n1. HBsAg negativo: Indica que não há infecção ativa (aguda ou crônica) no momento.\n2. Anti-HBc negativo: Indica que o paciente nunca teve contato com o vírus (ausência de infecção prévia).\n3. Anti-HBs negativo: Indica que o paciente não possui anticorpos protetores contra o vírus.\n\nDessa forma, o paciente é classificado como SUSCETÍVEL, pois não tem imunidade nem por infecção natural, nem por vacinação prévia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Uma dose única de vacina contra hepatite B não é suficiente para conferir imunidade duradoura e memória imunológica na imunização primária. O esquema completo é necessário para garantir a proteção adequada.\n\nAlternativa b) Correta. Segundo o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para Hepatite B de 2023 e as recomendações do Programa Nacional de Imunizações (PNI), a conduta para indivíduos suscetíveis é o início do esquema vacinal composto por três doses (administradas no intervalo de 0, 1 e 6 meses). Em adultos, a vacina utilizada é a recombinante.\n\nAlternativa c) Incorreta. A imunoglobulina humana anti-hepatite B (IGHAHB) é uma forma de imunização passiva, reservada para situações de profilaxia pós-exposição (como acidentes com material biológico, violência sexual ou recém-nascidos de mães HBsAg positivas) e não é indicada para a prevenção de rotina em pacientes assintomáticos.\n\nAlternativa d) Incorreta. Não existe indicação clínica para repetir a sorologia em 6 meses se o paciente está assintomático e seus exames atuais mostram que ele não possui proteção. A conduta imediata deve ser a proteção vacinal para evitar uma infecção futura.\n\nAlternativa e) Incorreta. O uso de antivirais como profilaxia pré-exposição (PrEP) é uma estratégia utilizada para outras infecções, como o HIV, mas não se aplica à hepatite B. Para o HBV, a vacinação é o método preventivo primário, altamente eficaz e seguro.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hepatites Virais"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:34.628Z"
+  },
+  {
+    "id": "AJUDA_1510e997-c5d8-4a16-b12b-ffdfd6c2dc62",
+    "originalId": "1510e997-c5d8-4a16-b12b-ffdfd6c2dc62",
+    "statement": "Benedito, 68 anos, homem cis, pescador, é atendido em ambulatório de Clínica Médica com queixa dedispneia progressiva, limitando atualmente atividades menos intensas do que as habituais. Temhistórico de HAS, DM2 há 5 anos. Refere diagnóstico de asma na infância, com internações e semseguimento. Nega tabagismo e etilismo. Nega internações recentes ou uso de antibiótico no último ano.Nega casos semelhantes na família. Exame físico apresenta ritmo cardíaco regular em 2 tempos combulhas cardíacas hipofonéticas sem sopros, murmúrio vesicular globalmente reduzido, com roncosesparsos, sem outras alterações. Abdome plano, sem achados patológicos, e membros inferiores semedema, mas com telangiectasias. Traz consigo o resultado de exame de espirometria que realizou nosúltimos 6 meses (abaixo).\nEspirometria:\n\nMarque a alternativa que indica o valor alterado no exame de Benedito que confirma o diagnósticode Doença pulmonar obstrutiva crônica (DPOC).",
+    "options": [
+      {
+        "id": "A",
+        "text": "DPOC-C",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "DPOC-P",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DPOC-A",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "DPOC-G",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "DPOC-I",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para confirmar o diagnóstico de Doença Pulmonar Obstrutiva Crônica (DPOC), a diretriz GOLD (Global Initiative for Chronic Obstructive Lung Disease) estabelece que é obrigatória a realização de espirometria demonstrando uma relação VEF1/CVF (Volume Expiratório Forçado no primeiro segundo / Capacidade Vital Forçada) menor que 0,70 ou 70 por cento após o uso de broncodilatador. Esse valor indica que a limitação ao fluxo aéreo é persistente e não totalmente reversível.\n\nAnálise dos dados da espirometria de Benedito:\nAo observar a tabela na imagem fornecida, a terceira linha apresenta o parâmetro VEF1/CVF (por cento). Na coluna Pós-BD (pós-broncodilatador), o valor registrado é de 57 por cento. Por ser inferior a 70 por cento, este é o dado que sela o diagnóstico de DPOC para o paciente. Clinicamente, o caso é compatível: homem de 68 anos com dispneia progressiva e murmúrio vesicular reduzido. Embora negue tabagismo, a profissão de pescador é frequentemente associada à exposição crônica à fumaça de biomassa (fogão a lenha), um importante fator de risco.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. DPOC-C estaria associada à CVF (primeira linha da tabela). A CVF de Benedito pós-BD é de 79 por cento do previsto. Embora esteja levemente reduzida, a redução da CVF isoladamente não é o critério utilizado para definir a obstrução crônica característica da DPOC.\n\nAlternativa b) Incorreta. DPOC-P poderia se referir ao VEF1 isolado (segunda linha da tabela). O VEF1 pós-BD de 60 por cento do previsto é fundamental para classificar a gravidade da obstrução (neste caso, GOLD 2 - moderada), mas o diagnóstico inicial depende sempre da relação VEF1/CVF abaixo do limite fixo.\n\nAlternativa c) Correta. DPOC-A indica o critério diagnóstico correto. O valor de 57 por cento na relação VEF1/CVF pós-broncodilatador é o parâmetro alterado que confirma a presença de obstrução fixa das vias aéreas, critério padrão-ouro para o diagnóstico de DPOC.\n\nAlternativa d) Incorreta. DPOC-G possivelmente refere-se à graduação ou ao estadiamento da doença (GOLD). O estadiamento da gravidade do fluxo aéreo só é realizado após a confirmação diagnóstica feita pela relação VEF1/CVF reduzida.\n\nAlternativa e) Incorreta. DPOC-I não corresponde a nenhum critério espirométrico ou valor na tabela que seja reconhecido internacionalmente para a confirmação diagnóstica desta patologia.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f51e0ab08c3c62c44d4105768e7cda0a3dfc8cc0fd087def2a340d11f23c39fe.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1510e997-c5d8-4a16-b12b-ffdfd6c2dc62_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:34.929Z"
+  },
+  {
+    "id": "AJUDA_151cef12-b539-40d9-b898-331defb0869d",
+    "originalId": "151cef12-b539-40d9-b898-331defb0869d",
+    "statement": "Paciente 20 anos, primigesta de 30 semanas, chega ao Pronto Atendimento da Maternidade, relatando saída de líquido claro vaginal, de início há poucas horas. Nota-se paciente corada, afebril, PA 110 mmHg x 50 mmHg, pulso de 84 BPM, frequência cardíaca fetal de 135 BPM, exame abdominal evidencia redução no líquido amniótico e dinâmica uterina sem contrações em 10 minutos. Ao exame especular nota-se vagina rósea, rugosa, colo com orifício externo puntiforme, e presença de pequena quantidade de líquido transparente coletado no fundo de saco posterior com pH elevado ao teste com papel de nitrazina. Toque colo grosso, amolecido, posteriorizado e impérvio. Com base nas informações acima, qual a hipótese diagnóstica e a conduta respectiva mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amniorrexe precoce, internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Amniorrexe prematura, liberação com orientação para retornar quando começarem as contrações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Amniorrexe prematura, internação para conduta expectante e exames maternos e fetais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Amniorrexe prematura, internação para indução do parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso:\n\nA paciente apresenta um quadro clínico compatível com Amniorrexe Prematura, definida como a ruptura das membranas ovulares antes do início do trabalho de parto. O diagnóstico é sustentado pelo relato de perda de líquido, pela confirmação visual no exame especular (acúmulo de líquido no fundo de saco posterior) e pelo teste de nitrazina positivo (o pH vaginal, normalmente ácido, torna-se básico na presença de líquido amniótico). Como a paciente está com 30 semanas de gestação, trata-se de uma Amniorrexe Prematura Pré-termo.\n\nAlternativa a) Incorreta. O termo amniorrexe precoce é reservado para os casos em que a ruptura das membranas ocorre após o início do trabalho de parto, geralmente durante a fase latente de dilatação. No caso descrito, a paciente não apresenta dinâmica uterina e o colo permanece impérvio, o que caracteriza a amniorrexe como prematura.\n\nAlternativa b) Incorreta. A conduta em casos de ruptura prematura de membranas em gestações pré-termo deve ser sempre hospitalar. A liberação da paciente para domicílio é contraindicada devido aos riscos de corioamnionite (infecção intramniótica), compressão de cordão umbilical e descolamento prematuro de placenta.\n\nAlternativa c) Correta. Esta alternativa define corretamente o diagnóstico e a conduta preconizada. Em gestações entre 24 e 34 semanas, na ausência de complicações como infecção materna ou sofrimento fetal, opta-se pela conduta expectante sob internação. O objetivo é ganhar tempo para a administração de corticoides (para maturação pulmonar fetal) e antibioticoterapia de latência, visando reduzir a morbimortalidade neonatal associada à prematuridade.\n\nAlternativa d) Incorreta. A indução do parto de imediato em uma gestação de 30 semanas só estaria indicada em situações de comprometimento da vitalidade fetal ou sinais de infecção (corioamnionite). Sem esses sinais, os riscos da prematuridade superam os riscos da manutenção da gestação sob vigilância rigorosa, por isso a conduta inicial não é a indução.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:09:34.929Z"
+  }
+]

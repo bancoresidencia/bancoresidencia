@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_74b00090-4b82-47fd-9091-e01a1f3da752",
+    "originalId": "74b00090-4b82-47fd-9091-e01a1f3da752",
+    "statement": "Mulher de 45 anos, G2P2, comparece ao ambulatório de ginecologia para avaliação de resultado de exame citopatológico realizado durante o rastreamento de rotina. O laudo citológico evidencia: “Lesão intraepitelial escamosa de alto grau (HSIL), não podendo excluir microinvasão ou carcinoma epidermoide invasor.” A paciente está assintomática, com exame especular mostrando colo de aspecto normal e orifício externo pérvio. De acordo com as diretrizes brasileiras, a conduta mais apropriada neste momento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar para colposcopia com biópsia dirigida conforme achado colposcópico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar conização diagnóstica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir a citologia em 6 meses para confirmar o resultado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar histerectomia total, pois há suspeita de invasão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar teste de HPV oncogênico antes de definir conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o manejo inicial de uma paciente com resultado citopatológico de Lesão Intraepitelial Escamosa de Alto Grau (HSIL). Segundo as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero (INCA), o manejo deve seguir passos diagnósticos rigorosos.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): O achado de HSIL na citologia, independentemente de haver suspeita de invasão no laudo ou do aspecto clínico do colo, exige o encaminhamento imediato para a colposcopia. A colposcopia permite a visualização detalhada da zona de transformação e das lesões, possibilitando a realização de biópsia dirigida das áreas mais suspeitas. Esse é o passo fundamental para confirmar o diagnóstico histopatológico antes de qualquer tratamento definitivo.\n\nAlternativa B (Incorreta): A conização diagnóstica imediata (ver e tratar) pode ser considerada em situações muito específicas de HSIL, mas a regra geral e a conduta preconizadas pelas diretrizes são a realização prévia da colposcopia com biópsia. Pular etapas para um procedimento cirúrgico sem avaliação colposcópica adequada não é a conduta inicial padrão, especialmente em um colo de aspecto normal.\n\nAlternativa C (Incorreta): Repetir a citologia em 6 meses é uma conduta de observação reservada para lesões de baixo grau (LSIL) em pacientes jovens ou citologias indeterminadas (como ASC-US). Diante de um HSIL, que é uma lesão precursora com alto potencial de progressão ou de já abrigar um carcinoma, o acompanhamento citológico é contraindicado; deve-se prosseguir imediatamente para a investigação diagnóstica.\n\nAlternativa D (Incorreta): A histerectomia total é um procedimento terapêutico, e não diagnóstico. Nunca deve ser indicada baseada apenas em um resultado de citologia, mesmo que haja suspeita de invasão. É indispensável a confirmação histopatológica (biópsia ou conização) para o estadiamento correto e a definição da extensão da cirurgia ou necessidade de radioterapia/quimioterapia.\n\nAlternativa E (Incorreta): O teste de HPV oncogênico é utilizado como ferramenta de triagem em casos de ASC-US ou como teste de rastreamento primário em alguns protocolos. Em uma paciente que já apresenta uma citologia de alto grau (HSIL), o teste de HPV não altera a conduta, pois a necessidade de colposcopia já está estabelecida pelo achado citológico.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:39.049Z"
+  },
+  {
+    "id": "AJUDA_74bcd4a8-37dc-401c-98f6-b45c374c061e",
+    "originalId": "74bcd4a8-37dc-401c-98f6-b45c374c061e",
+    "statement": "Homem, 38 anos, assintomático, procura atendimento por necessidade de relatório médico para a prática de atividade física. Nega uso de medicamentos. Nega tabagismo e etilismo. Exame físico: PA 140x90 mmHg. Eletrocardiograma normal. Solicitado monitorização ambulatorial da pressão arterial (MAPA), com resultado abaixo. Qual é o diagnóstico e a conduta apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipertensão arterial sistêmica; orientar dieta hipossódica e reavaliação dos níveis pressóricos em 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipertensão mascarada; iniciar bloqueador de canal de cálcio e incentivar quanto à realização de atividade física.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipertensão do avental branco; apto a praticar atividade física.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hipertensão do avental branco, apto a praticar atividade física e iniciar uso de medicamento anti-hipertensivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um homem de 38 anos com pressão arterial (PA) de 140x90 mmHg no consultório, o que caracteriza uma medida limítrofe/estágio 1. Para confirmar o diagnóstico, foi solicitada uma Monitorização Ambulatorial da Pressão Arterial (MAPA).\n\nAnálise da imagem (MAPA):\nAo observar o gráfico, nota-se que, no início do exame (das 10h às 11h), momento em que o aparelho é colocado pelo profissional de saúde, a pressão está elevada (PAS próxima de 140 mmHg e PAD em 100 mmHg). No entanto, em praticamente todo o restante do período de vigília (enquanto o paciente está acordado), os níveis pressóricos permanecem dentro da normalidade (abaixo de 135/85 mmHg). Durante o período de sono (das 23h às 6h), observa-se o descenso fisiológico, com a pressão mantendo-se em níveis baixos (abaixo de 120/70 mmHg). Portanto, a média pressórica de 24 horas e a média de vigília estão normais na MAPA.\n\nDiagnóstico:\nO fenômeno de pressão elevada no consultório (maior ou igual a 140/90 mmHg) com médias normais na MAPA (vigília abaixo de 135/85 mmHg e 24h abaixo de 130/80 mmHg) define a Hipertensão do Avental Branco (HAB).\n\nAnálise das alternativas:\n\na) Incorreta. Para o diagnóstico de Hipertensão Arterial Sistêmica (HAS) sustentada, as médias da MAPA deveriam estar elevadas. Como a monitorização mostrou níveis normais fora do consultório, não se trata de hipertensão verdadeira.\n\nb) Incorreta. A hipertensão mascarada ocorre quando o paciente apresenta PA normal no consultório (abaixo de 140/90 mmHg), mas apresenta PA elevada na MAPA ou em medidas domiciliares. O caso em questão é exatamente o oposto.\n\nc) Correta. O diagnóstico é de Hipertensão do Avental Branco, conforme os critérios citados. Por ser um paciente jovem, sem comorbidades, assintomático e com eletrocardiograma normal (sem sinais de sobrecarga cardíaca ou lesão de órgão-alvo), ele é considerado de baixo risco cardiovascular. Portanto, está apto para a prática de atividade física, devendo apenas manter acompanhamento médico para monitorar se haverá evolução para hipertensão sustentada no futuro.\n\nd) Incorreta. O diagnóstico de HAB está correto, mas a conduta farmacológica não é indicada inicialmente para pacientes com esse diagnóstico que não possuem lesões de órgãos-alvo ou alto risco cardiovascular. O manejo inicial baseia-se em mudanças no estilo de vida e acompanhamento clínico.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ed0cc0579cc1e6265580c7bb2e10d1f8035afed52750e1fbef5a44636a4f8a84.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_74bcd4a8-37dc-401c-98f6-b45c374c061e_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:39.463Z"
+  },
+  {
+    "id": "AJUDA_74bd960c-436a-4a09-a498-41a80342eda7",
+    "originalId": "74bd960c-436a-4a09-a498-41a80342eda7",
+    "statement": "Em um estudo, verificou-se que a incidência de pneumonia em crianças não vacinadas foi de 10%, e em crianças vacinadas foi de 2%. A medida de associação que representa o risco adicional de ocorrência da doença que pode ser atribuído à falta da vacina (exposição) é o(a):",
+    "options": [
+      {
+        "id": "A",
+        "text": "Risco Relativo (RR).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Razão de Chances (OR).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diferença de Risco (ou Risco Atribuível).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Número Necessário para Tratar (NNT).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise da Questão:\nA questão descreve um cenário epidemiológico onde temos dois grupos com incidências diferentes de pneumonia. O grupo exposto ao fator de risco (falta de vacina) apresenta incidência de 10%, enquanto o grupo não exposto (vacinado) apresenta incidência de 2%. O enunciado pede especificamente a medida que representa o risco adicional (o excesso de risco) que pode ser atribuído à falta da vacina.\n\nAlternativa a: Incorreta. O Risco Relativo (RR) é uma medida de razão obtida pela divisão da incidência entre expostos pela incidência entre não expostos (10% / 2% = 5). Ele indica quantas vezes o risco é maior em um grupo em comparação ao outro, mas não expressa o risco adicional em valores absolutos.\n\nAlternativa b: Incorreta. A Razão de Chances (Odds Ratio) é uma medida de associação que compara a chance de um evento ocorrer em um grupo com a chance de ocorrer em outro. É utilizada principalmente em estudos de caso-controle, onde não é possível calcular a incidência diretamente.\n\nAlternativa c: Correta. A Diferença de Risco (DR), também conhecida como Risco Atribuível (RA), é calculada pela subtração das incidências: Incidência nos expostos menos Incidência nos não expostos (10% - 2% = 8%). Esse valor representa exatamente o risco adicional de adoecer que é atribuído exclusivamente ao fator de exposição (neste caso, a falta da vacina). Se eliminarmos a exposição, esse é o risco que deixaria de existir.\n\nAlternativa d: Incorreta. A Prevalência é uma medida de frequência que indica a proporção de indivíduos que apresentam a doença em um determinado momento. Ela não mede a ocorrência de novos casos (incidência) nem serve como medida de associação para risco adicional.\n\nAlternativa e: Incorreta. O Número Necessário para Tratar (NNT) é uma medida de benefício clínico, calculada como o inverso da Redução do Risco Absoluto (1/RRA). Ele indica quantas pessoas precisam ser tratadas ou vacinadas para prevenir um caso da doença, não sendo o termo que define o risco adicional da exposição.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:39.463Z"
+  },
+  {
+    "id": "AJUDA_74bec40a-9a7d-46ba-92bb-3d599628c9f5",
+    "originalId": "74bec40a-9a7d-46ba-92bb-3d599628c9f5",
+    "statement": "Uma paciente de 65 anos, com hipertensão arterial e obesidade (IMC = 32), apresenta diagnóstico de COVID-19 confirmado por teste RT-PCR. Ela está no terceiro dia de sintomas, com febre, tosse seca e mialgia. A paciente não foi hospitalizada, e está sendo acompanhada em casa. O médico avalia a possibilidade de iniciar Nirmatrelvir/ritonavir. Com base nas diretrizes atuais do SUS, qual é a indicação apropriada para o uso dessa medicação nesse cenário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pacientes com COVID-19 em qualquer estágio da doença, independentemente de fatores de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pacientes com COVID-19 grave internados em UTI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pacientes ambulatoriais com COVID-19 leve a moderada e alto risco de progressão para formas graves.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pacientes assintomáticos após contato com casos confirmados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pacientes com menos de 50 anos, sem comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO caso clínico descreve uma paciente idosa (65 anos) com fatores de risco importantes para o agravamento da COVID-19 (obesidade e hipertensão), que se encontra no terceiro dia de sintomas leves a moderados e em acompanhamento ambulatorial. O nirmatrelvir associado ao ritonavir é um antiviral de ação direta que inibe a replicação do vírus SARS-CoV-2.\n\nA indicação da medicação, conforme as diretrizes do Ministério da Saúde e da CONITEC para o SUS, foca na redução do risco de hospitalização e óbito em grupos vulneráveis.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A medicação não deve ser usada em qualquer estágio da doença. Ela é eficaz apenas na fase inicial de replicação viral (até o 5º dia de sintomas). Além disso, devido ao custo e à logística, o uso é restrito a pacientes com fatores de risco para gravidade, não sendo indicado para a população geral sem comorbidades.\n\nAlternativa b) Incorreta. O nirmatrelvir/ritonavir não demonstrou benefício clínico em pacientes que já apresentam COVID-19 grave ou crítica com necessidade de hospitalização e oxigenoterapia suplementar. Nesses casos, a cascata inflamatória já é o principal problema, e o tratamento envolve corticoides e imunomoduladores.\n\nAlternativa c) Correta. Esta é a indicação precisa do medicamento. Ele deve ser utilizado em pacientes ambulatoriais (que não necessitam de oxigênio), com quadro leve a moderado, mas que possuam alto risco de evoluir para formas graves da doença. Os critérios do SUS incluem idade avançada (geralmente acima de 65 anos) e imunossupressão, visando evitar que esses pacientes sobrecarreguem o sistema hospitalar.\n\nAlternativa d) Incorreta. Não existe indicação de nirmatrelvir/ritonavir para profilaxia pós-exposição (prevenção após contato). O uso é estritamente terapêutico para casos confirmados e sintomáticos.\n\nAlternativa e) Incorreta. Pacientes com menos de 50 anos e sem comorbidades possuem baixo risco de evolução para óbito ou hospitalização pela COVID-19, especialmente no contexto de populações vacinadas. Portanto, não há recomendação para o uso desse antiviral nesse perfil de paciente.\n\nRESUMO:\nA alternativa C está correta porque o nirmatrelvir/ritonavir é uma estratégia de tratamento precoce (idealmente iniciada em até 5 dias do início dos sintomas) voltada especificamente para evitar a progressão da doença em indivíduos vulneráveis que ainda estão em fase ambulatorial. No SUS, a prioridade são idosos com mais de 65 anos e pacientes imunocomprometidos.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Covid-19"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:39.463Z"
+  },
+  {
+    "id": "AJUDA_74c2173b-7fd4-4437-8efe-cb2bb8873b68",
+    "originalId": "74c2173b-7fd4-4437-8efe-cb2bb8873b68",
+    "statement": "Paciente idoso de 76 anos, portador de miocardiopatia dilatada hipertensiva, com fração de ejeção do ventrículo esquerdo reduzida, está em uso de sacubitril/valsartana, empagliflozina, espironolactona e furosemida. Apresenta história no pronto atendimento de vômitos e diarreia há 18h, evoluindo com sonolência e oligúrico. Realizou os exames iniciais que apresentavam as seguintes alterações:\n\nCreatinina: 2,1 mg/dL (basal 1,0)\nNa⁺ urinário 45: mEq/L; FeNa: 2,1%\nUreia: 110 mg/dL; FeUreia: 27%\nDensidade urinária: 1.030\n\nQual é a hipótese diagnóstica associada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Necrose tubular aguda com FeNa > 2%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Azotemia pré-renal com FeUreia < 35%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Obstrução pós-renal com FeNa elevada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Azotemia pré-renal com FeNa < 1%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso apresenta um paciente idoso com insuficiência cardíaca de fração de ejeção reduzida em uso de diversas medicações, incluindo diuréticos (furosemida e espironolactona), que desenvolveu um quadro agudo de perda volêmica por vômitos e diarreia. O desafio principal da questão é diferenciar a Lesão Renal Aguda (LRA) pré-renal da Necrose Tubular Aguda (NTA) em um cenário onde o uso de diuréticos altera os parâmetros urinários clássicos.\n\nAnálise dos dados laboratoriais:\n1. Creatinina e Ureia: O aumento expressivo da ureia em relação à creatinina (relação > 40) é um forte indício de azotemia pré-renal.\n2. Densidade Urinária: O valor de 1.030 indica que o rim ainda consegue concentrar a urina, o que sugere integridade tubular (típico da fase pré-renal).\n3. Fração de Excreção de Sódio (FeNa): O valor de 2,1% costuma sugerir lesão intrínseca (NTA), pois o esperado na pré-renal seria < 1%. Entretanto, pacientes em uso de diuréticos de alça (como a furosemida) perdem sódio na urina mesmo estando desidratados, o que torna a FeNa um parâmetro pouco confiável e frequentemente elevado (> 1%).\n4. Fração de Excreção de Ureia (FeUreia): Em pacientes usando diuréticos, a FeUreia é o marcador mais fidedigno para identificar azotemia pré-renal. Um valor de FeUreia < 35% confirma a etiologia pré-renal, pois a reabsorção proximal de ureia é estimulada pela hipovolemia e não é bloqueada pelos diuréticos de alça.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a FeNa seja de 2,1%, o quadro clínico de perdas digestivas associado à densidade urinária elevada (1.030) e à baixa FeUreia (27%) aponta para uma etiologia pré-renal (funcional) e não para dano estrutural (NTA).\n\nb) Correta. O paciente apresenta azotemia pré-renal devido à desidratação por vômitos e diarreia. A FeUreia abaixo de 35% é o parâmetro de escolha para este diagnóstico em pacientes que fazem uso de diuréticos, uma vez que a FeNa perde sua acurácia nestes casos.\n\nc) Incorreta. Não há elementos na história clínica (como hiperplasia prostática, massas pélvicas ou dor em flanco) que sugiram obstrução do trato urinário. Além disso, os índices urinários de concentração preservada descartam a fase estabelecida de uma obstrução pós-renal.\n\nd) Incorreta. Apesar de ser uma azotemia pré-renal, a FeNa do paciente é de 2,1% (conforme fornecido no enunciado), e não < 1%. Isso ocorre justamente pelo uso prévio de furosemida, que força a natriurese.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:39.463Z"
+  },
+  {
+    "id": "AJUDA_74cd9588-9f08-41c6-b53c-59d7ad18c6b0",
+    "originalId": "74cd9588-9f08-41c6-b53c-59d7ad18c6b0",
+    "statement": "Paciente, G3P1A, gestação de 13 semanas, datada pela ecografia de 8 semanas, procura atendimento com queixa de sangramento vaginal há 3 dias, em pequena quantidade. A tipagem sanguínea anotada em seu cartão de pré-natal é A negativo. Ela desconhece a tipagem sanguínea de seu companheiro. Ao exame ginecológico, nota-se sangramento vaginal em moderada quantidade e colo uterino fechado. Solicitado teste de coombs indireto, com resultado positivo. \n\nDiante desse contexto, a conduta médica adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "alertar a paciente sobre a inviabilidade da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar imunoglobulina anti-RH, por via endovenosa, imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "repetir o exame de coombs indireto e solicitar tipagem sanguínea do parceiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "encaminhar ao pré-natal de alto risco e indicar monitoramento por aloimunização.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta uma gestação de 13 semanas com quadro de sangramento vaginal e colo uterino fechado, o que caracteriza clinicamente uma ameaça de abortamento. No entanto, o ponto fundamental da questão reside no manejo da incompatibilidade sanguínea. A paciente é Rh-negativa (A-negativa) e já apresenta um teste de Coombs indireto POSITIVO.\n\nO Coombs indireto positivo em uma gestante Rh-negativa significa que ela já está aloimunizada (ou isoimunizada), ou seja, seu sistema imunológico já produziu anticorpos contra o antígeno Rh (D) de uma gestação ou exposição anterior.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: O diagnóstico de ameaça de abortamento (sangramento com colo fechado) não define inviabilidade gestacional. Muitas gestações evoluem normalmente após episódios de sangramento inicial. Além disso, a aloimunização Rh não torna a gestação inviável de imediato, mas exige acompanhamento especializado para tratar possíveis complicações fetais, como a anemia hemolítica.\n\nAlternativa (b) INCORRETA: A imunoglobulina anti-Rh (anti-D) tem função profilática. Ela serve para evitar que a gestante se torne sensibilizada. Uma vez que o Coombs indireto já é positivo, a paciente já possui os anticorpos. Portanto, a administração da imunoglobulina é inócua (não traz benefício), pois não reverte a sensibilização já existente.\n\nAlternativa (c) INCORRETA: Solicitar a tipagem do parceiro é útil no início do pré-natal quando a gestante é Rh-negativa e o Coombs é negativo, para avaliar o risco de sensibilização. No caso em tela, a paciente já está sensibilizada (Coombs positivo). Repetir o exame agora não mudaria a conduta imediata de encaminhamento para o especialista.\n\nAlternativa (d) CORRETA: Pacientes gestantes com diagnóstico de aloimunização (Coombs indireto positivo) devem ser obrigatoriamente acompanhadas em serviço de pré-natal de alto risco. O objetivo é monitorar a saúde fetal, vigiando o surgimento de anemia fetal e hidropisia por meio de exames como a dopplervelocimetria da artéria cerebral média (ACM), que avalia o pico de velocidade sistólica para detectar precocemente a necessidade de intervenções, como a transfusão intrauterina.\n\nResumo da conduta: Coombs indireto negativo em paciente Rh-negativa com sangramento indica profilaxia com imunoglobulina. Coombs indireto positivo indica encaminhamento para pré-natal de alto risco para acompanhamento de aloimunização.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Pré-Natal",
+      "Aloimunização Materna e Doença Hemolítica Perinatal",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": 93.37411062940907,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:39.463Z"
+  },
+  {
+    "id": "AJUDA_74cfd883-a276-40c1-996b-5843631b50eb",
+    "originalId": "74cfd883-a276-40c1-996b-5843631b50eb",
+    "statement": "São fatores de risco para o acretismo placentário, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "História de cesariana em gestações anteriores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gestação múltipla.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Idade materna acima de 35 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "História de conização no passado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O acretismo placentário é uma condição em que ocorre uma aderência anormal da placenta ao miométrio, decorrente da ausência ou deficiência da decídua basal (camada de Nitabuch). Os fatores de risco estão geralmente associados a condições que causam danos ao endométrio ou cicatrizes na parede uterina.\n\nAlternativa (a) Incorreta: A história de cesariana em gestações anteriores é o principal e mais importante fator de risco para o acretismo placentário. Quanto maior o número de cesáreas prévias, maior a probabilidade de a placenta se implantar de forma anômala sobre a cicatriz, especialmente se houver placenta prévia concomitante.\n\nAlternativa (b) Incorreta: A gestação múltipla é considerada um fator de risco. Isso se deve a diversos fatores, incluindo a maior superfície de implantação placentária necessária para nutrir mais de um feto e a associação frequente com técnicas de reprodução assistida, que isoladamente também aumentam o risco de distúrbios de placentação.\n\nAlternativa (c) Incorreta: A idade materna avançada, geralmente definida como acima de 35 anos, é um fator de risco bem estabelecido. Com o avançar da idade, ocorrem alterações na vascularização uterina e maior probabilidade de danos cumulativos ao endométrio, o que predispõe a uma placentação inadequada.\n\nAlternativa (d) Correta (O EXCETO): A conização é um procedimento cirúrgico realizado no colo do útero para o tratamento de lesões pré-neoplásicas. Embora a conização esteja associada a desfechos obstétricos negativos, como a insuficiência istmocervical e o aumento do risco de parto prematuro, ela não altera a integridade da cavidade uterina ou do corpo do útero. Como o acretismo envolve a interface entre a placenta e o corpo uterino (endométrio/miométrio), a conização não é considerada um fator de risco para essa condição.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:39.463Z"
+  },
+  {
+    "id": "AJUDA_74dacfaf-8dc7-4966-8c94-ada1ab8cd31b",
+    "originalId": "74dacfaf-8dc7-4966-8c94-ada1ab8cd31b",
+    "statement": "As cefaleias primárias compreendem um grande número de entidades clínicas com sinais e sintomas característicos, que são base para o diagnóstico diferencial entre as mesmas. Levando-se em conta que a migrânea representa a principal causa de cefaleia que leva o paciente para consultas em ambientes ambulatoriais e de emergência, quais são os sintomas desse quadro clínico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dor tipo aperto, acompanhada de fotofobia ou fonofobia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dor tipo pulsátil, acompanhada de hiperemia conjuntival e lacrimejamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Intensidade leve, acompanhada de náuseas e vômitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Intensidade moderada a severa, piorando com esforços físicos habituais.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para responder corretamente a esta questão, devemos recorrer aos critérios diagnósticos da Classificação Internacional das Cefaleias (ICHD-3). A migrânea (ou enxaqueca) é uma cefaleia primária definida por características específicas de localização, qualidade, intensidade e sintomas associados.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A dor do tipo aperto ou pressão é a característica clássica da cefaleia do tipo tensional. Embora a fotofobia ou a fonofobia possam estar presentes na migrânea, a descrição da qualidade da dor nesta alternativa direciona o diagnóstico para o quadro tensional.\n\nAlternativa B: Incorreta. A dor do tipo pulsátil é comum na migrânea, porém os sintomas de hiperemia conjuntival (olho vermelho) e lacrimejamento são sinais autonômicos cranianos. Esses sinais são patognomônicos das cefaleias trigêmino-autonômicas, como a cefaleia em salvas (cluster headache), e não são critérios típicos para o diagnóstico de migrânea.\n\nAlternativa C: Incorreta. A migrânea é caracterizada por uma dor de intensidade moderada a grave, que geralmente incapacita o paciente de realizar suas funções diárias. A intensidade leve é típica da cefaleia do tipo tensional. Além disso, embora náuseas e vômitos sejam sintomas clássicos da migrânea, a intensidade da dor descrita invalida a alternativa.\n\nAlternativa D: Correta. De acordo com os critérios do ICHD-3, a migrânea deve apresentar pelo menos duas das seguintes características: localização unilateral, qualidade pulsátil, intensidade moderada a severa e agravamento por atividade física rotineira (como caminhar ou subir escadas). Portanto, a intensidade moderada a severa e a piora com esforços físicos habituais são sintomas fundamentais para o diagnóstico desse quadro clínico.\n\nResumo dos critérios diagnósticos da migrânea (sem aura):\n1. Crises que duram de 4 a 72 horas.\n2. Pelo menos duas características: unilateralidade, caráter pulsátil, intensidade moderada/severa, exacerbação por atividade física.\n3. Pelo menos um sintoma associado: náusea e/ou vômitos, ou fotofobia e fonofobia.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:39.463Z"
+  },
+  {
+    "id": "AJUDA_74eba23c-900b-4da3-8b19-41fac87d369b",
+    "originalId": "74eba23c-900b-4da3-8b19-41fac87d369b",
+    "statement": "Sobre a lipoproteína(a), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A dosagem de Lp(a) deve ser realizada apenas em pacientes com infarto agudo do miocárdio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Valores elevados de Lp(a) não têm associação com risco cardiovascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A Lp(a) é determinada geneticamente e não sofre redução significativa com estatinas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O tratamento de primeira escolha para redução da Lp(a) é o uso de fibratos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A Lp(a) elevada só tem impacto em pacientes com LDL-colesterol normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A lipoproteína(a), ou Lp(a), é uma partícula lipídica composta por uma molécula de LDL ligada a uma apoproteína(a) específica. Ela tem despertado grande interesse na cardiologia moderna por ser um fator de risco independente para doenças cardiovasculares. Abaixo, analisamos cada alternativa:\n\nAlternativa A: Incorreta. A dosagem da Lp(a) não deve ser restrita a pacientes que já infartaram. As diretrizes atuais (como as da Sociedade Brasileira de Cardiologia e da Sociedade Europeia de Cardiologia) recomendam a dosagem de Lp(a) pelo menos uma vez na vida em todos os adultos, especialmente naqueles com histórico familiar precoce de doença arterial coronariana, hipercolesterolemia familiar ou risco cardiovascular intermediário/alto para refinar a estratificação de risco.\n\nAlternativa B: Incorreta. Diversos estudos epidemiológicos e de randomização mendeliana confirmaram que níveis elevados de Lp(a) estão fortemente associados a um aumento do risco de infarto do miocárdio, acidente vascular cerebral (AVC) e estenose valvar aórtica calcificada. Ela possui propriedades pró-aterogênicas, pró-trombóticas e pró-inflamatórias.\n\nAlternativa C: Correta. Os níveis séricos de Lp(a) são determinados geneticamente em cerca de 70% a 90% pela variação no gene LPA. Diferentemente do LDL-colesterol, a Lp(a) é pouco influenciada por hábitos alimentares ou estilo de vida. Além disso, as estatinas, que são o padrão-ouro para reduzir o LDL, não reduzem os níveis de Lp(a); em alguns casos, podem até causar um leve aumento em seus níveis.\n\nAlternativa D: Incorreta. Os fibratos são medicamentos utilizados primordialmente para a redução de triglicerídeos e têm impacto insignificante ou nulo nos níveis de Lp(a). Atualmente, não há uma terapia medicamentosa amplamente disponível e específica para reduzir a Lp(a) com o objetivo principal de reduzir desfechos, embora os inibidores da PCSK9 consigam reduzi-la moderadamente (cerca de 20-30%) e novas terapias gênicas (RNA de interferência) estejam em fase avançada de estudo.\n\nAlternativa E: Incorreta. A Lp(a) elevada é um fator de risco independente. Isso significa que ela aumenta o risco cardiovascular tanto em pacientes com LDL-colesterol controlado quanto naqueles com LDL elevado. No entanto, o risco absoluto é significativamente maior quando ambos (Lp(a) e LDL) estão em níveis altos. Em pacientes com Lp(a) muito elevada, as diretrizes sugerem um controle ainda mais rigoroso dos outros fatores de risco modificáveis, especialmente o LDL-colesterol.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:39.463Z"
+  },
+  {
+    "id": "AJUDA_74ed981d-eca1-45dc-9c82-842c542530f9",
+    "originalId": "74ed981d-eca1-45dc-9c82-842c542530f9",
+    "statement": "Paciente de 49 anos procura atendimento médico relatando que, há 1 mês, não consegue dormir adequadamente por causa de intensas ondas de calor, o que a deixa cansada, irritada e deprimida. Relata dispareunia de penetração e vagina seca. Fez histerectomia e salpingooforectomia bilateral há 3 meses e exame anatomopatológico revelou: adenomiose, hidrossalpinge em ambas as tubas uterinas, cistos de endometriose em ovário direito e focos de endometriose no peritônio. Nega comorbidades. Nesse caso, a conduta mais indicada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "fitoterápicos, pelo histórico de adenomiose e endometriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "antidepressivos tricíclicos, já que a hormonioterapia é contraindicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estrogenioterapia exclusiva, uma vez que a paciente passou por histerectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tratamento hormonal estro-progestativo, considerando que a paciente apresentou quadro de endometriose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nPaciente de 49 anos em menopausa cirúrgica (histerectomia e salpingooforectomia bilateral há 3 meses) apresentando sintomas vasomotores intensos (ondas de calor, cansaço, irritabilidade) e síndrome geniturinária da menopausa (dispareunia e secura vaginal). O ponto determinante para a escolha da conduta é o achado anatomopatológico de endometriose peritoneal e ovariana.\n\nAlternativa a: Incorreta. Os fitoterápicos, como as isoflavonas de soja, possuem eficácia inferior à terapia hormonal (TH) no controle de sintomas vasomotores graves, especialmente em casos de menopausa cirúrgica, onde a queda hormonal é abrupta e os sintomas costumam ser mais severos. O histórico de endometriose e adenomiose não é indicação para fitoterapia em detrimento da TH.\n\nAlternativa b: Incorreta. Antidepressivos (como os inibidores seletivos da recaptação de serotonina ou tricíclicos) são opções de segunda linha, indicados apenas quando a terapia hormonal é contraindicada. A paciente não apresenta contraindicações absolutas à TH, como câncer de mama, doença arterial coronariana ou doença hepática grave.\n\nAlternativa c: Incorreta. Esta alternativa descreve a conduta padrão para pacientes histerectomizadas (estrogenioterapia isolada). No entanto, o histórico de endometriose constitui uma exceção importante. O uso de estrogênio isolado em mulheres com focos residuais de endometriose (especialmente focos peritoneais relatados no caso) pode reativar a doença, causar dor pélvica e, mais grave, aumentar o risco de transformação maligna desses focos para carcinoma endometrioide ou de células claras.\n\nAlternativa d: Correta. Em pacientes com antecedente de endometriose, a recomendação atual, mesmo após a realização de histerectomia, é a utilização da terapia hormonal combinada (estrogênio associado ao progestogênio). A adição do progestogênio serve para antagonizar o efeito proliferativo do estrogênio sobre possíveis focos remanescentes de endometriose, prevenindo a recidiva dos sintomas dolorosos e reduzindo o risco de cancerização desses tecidos extrauterinos. Por isso, a terapia estro-progestativa é a mais indicada para esta paciente.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Endometriose",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:39.463Z"
+  }
+]

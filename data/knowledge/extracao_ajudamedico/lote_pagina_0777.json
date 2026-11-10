@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_d8f8bccd-e560-40a8-9281-8f59527037d3",
+    "originalId": "d8f8bccd-e560-40a8-9281-8f59527037d3",
+    "statement": "Uma paciente de 70 anos, diabética e hipertensa estava realizando exames de pré operatório para colecistectomia por apresentar cálculo único de 2,6 cm na vesícula biliar. Antes de seu retorno ambulatorial para programação cirúrgica, dá entrada no Pronto Socorro com quadro de náuseas, vômitos, distensão abdominal e parada de eliminação de gases e fezes há 3 dias. Realizou tomografia computadorizada do abdome que mostrou sinais de obstrução intestinal, vesícula biliar com paredes espessadas e aerobilia. O local mais provável da obstrução é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ângulo hepático do cólon",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Íleo terminal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Jejuno proximal (ângulo de Treitz)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Segunda porção duodenal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico de íleo biliar, uma complicação rara da colelitíase. O processo ocorre quando um cálculo biliar volumoso (geralmente maior que 2 a 2,5 cm, como o da paciente de 2,6 cm) causa uma inflamação crônica que resulta na formação de uma fístula entre a vesícula biliar e uma alça intestinal adjacente, mais comumente o duodeno (fístula colecistoduodenal). O cálculo migra para o lúmen intestinal e progride até encontrar um ponto de estreitamento onde fica impactado, causando a obstrução.\n\nA tomografia computadorizada revelou a Tríade de Rigler, que consiste em: 1) sinais de obstrução do delgado; 2) aerobilia (ar nas vias biliares, indicando a comunicação anômala entre o intestino e a árvore biliar); 3) cálculo biliar ectópico (fora da vesícula).\n\nAnálise das alternativas:\n\na) Incorreta. O ângulo hepático do cólon é uma localização rara para a impactação. Para que isso ocorra, seria necessária uma fístula colecistocólica, o que é menos comum que a colecistoduodenal, e o calibre do cólon geralmente permite a passagem do cálculo, a menos que haja uma estenose prévia.\n\nb) Correta. O íleo terminal, especificamente próximo à válvula ileocecal, é o local mais frequente de obstrução no íleo biliar (ocorre em cerca de 60 a 70% dos casos). Isso se deve ao fato de ser a porção mais estreita do intestino delgado e possuir peristalse menos vigorosa, facilitando a impactação de cálculos grandes.\n\nc) Incorreta. O jejuno proximal possui um lúmen consideravelmente mais largo que o íleo terminal. Embora o cálculo passe por essa região, raramente fica impactado nela, a menos que existam bridas ou outras deformidades anatômicas.\n\nd) Incorreta. A impactação do cálculo na segunda porção duodenal ou no bulbo duodenal configura uma variante específica do íleo biliar chamada Síndrome de Bouveret. Nesses casos, o quadro é de obstrução gástrica alta (vômitos precoces e dor epigástrica), e não de obstrução intestinal baixa com distensão abdominal generalizada e parada de eliminação de gases e fezes por 3 dias, como relatado. Além disso, o íleo terminal permanece estatisticamente como o local de obstrução mais provável na patologia em questão.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:15.607Z"
+  },
+  {
+    "id": "AJUDA_d9002eae-d4b1-4d93-8e6d-e4b5f2df126d",
+    "originalId": "d9002eae-d4b1-4d93-8e6d-e4b5f2df126d",
+    "statement": "Mulher de 39 anos com enxaqueca episódica refere piora após mudança de emprego. Traz artigo da internet defendendo dieta muito restritiva “que curou 90% das crises”. Diz querer “tentar algo mais natural” e teme remédios preventivos. O passo mais alinhado ao método clínico centrado na pessoa, conforme Stewart, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esclarecer a baixa qualidade do artigo e propor teste terapêutico curto com betabloqueador, mantendo a dieta apenas como adjuvante se não atrapalhar adesão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orientar diário de cefaleia e adiar decisões, recomendando que suspenda a dieta até visita ao neurologista para evitar confusões na avaliação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Respeitar a preferência pela dieta e fornecer plano alimentar detalhado, reservando farmacoprofilaxia para caso haja falha terapêutica após 12 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Validar o interesse da paciente e integrar a revisão crítica do material trazido a uma conversa sobre opções baseadas em evidências, negociando papéis e critérios de sucesso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Priorizar educação sobre gatilhos e uso correto de triptanos, deixando a discussão sobre o material da internet para o retorno, a fim de otimizar o tempo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O Método Clínico Centrado na Pessoa (MCCP), sistematizado por Ian McWhinney e Moira Stewart, baseia-se em quatro componentes principais na prática clínica: 1. Explorar a saúde, a doença e a experiência da pessoa com a enfermidade (sentimentos, ideias, efeito no funcionamento e expectativas - SIFE); 2. Entender a pessoa como um todo (contexto individual e familiar); 3. Elaborar um plano conjunto de manejo (definir o problema, estabelecer metas e papéis); 4. Intensificar a relação entre a pessoa e o médico. A questão foca principalmente na negociação e na validação da experiência da paciente.\n\nAlternativa A - ESTÁ INCORRETA: Esta abordagem é centrada no médico e não na pessoa. Ao classificar sumariamente o artigo como de baixa qualidade e propor um teste terapêutico com betabloqueador (medicamento que a paciente já expressou medo de usar), o médico ignora as expectativas e os receios da paciente, falhando no componente de encontrar um terreno comum e na construção de um plano conjunto.\n\nAlternativa B - ESTÁ INCORRETA: Adiar decisões e pedir para suspender a dieta sem uma conversa prévia sobre o que aquilo significa para a paciente desconsidera a autonomia e o protagonismo dela em seu próprio cuidado. Além disso, encaminhar precocemente ao neurologista sem tentar resolver a demanda na atenção primária fragmenta o cuidado e não fortalece a relação médico-paciente.\n\nAlternativa C - ESTÁ INCORRETA: Embora o MCCP valorize a autonomia, o médico não deve abandonar as evidências científicas apenas para satisfazer a vontade da paciente. Fornecer um plano alimentar restritivo sem comprovação de eficácia pode ser prejudicial e foge da responsabilidade profissional de orientar práticas baseadas em ciência. O papel do médico é negociar, não apenas ceder.\n\nAlternativa D - ESTÁ CORRETA: Esta alternativa contempla perfeitamente os componentes do MCCP. Validar o interesse da paciente reconhece seus sentimentos e ideias (SIFE). Integrar a revisão crítica do material trazido com as evidências médicas é uma forma de educação em saúde que respeita a inteligência da paciente. Negociar papéis e critérios de sucesso (como definir em quanto tempo a dieta será testada e o que definirá se ela funcionou ou não) é a base do componente de Elaborar um Plano Conjunto de Manejo.\n\nAlternativa E - ESTÁ INCORRETA: Priorizar apenas o que o médico considera importante (gatilhos e triptanos) e ignorar o que a paciente trouxe para a consulta (a dieta e o medo de remédios) fere o princípio de explorar a experiência da pessoa. Ignorar a pauta da paciente para otimizar o tempo compromete a aliança terapêutica e a adesão ao tratamento proposto.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Cefaleias",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:15.607Z"
+  },
+  {
+    "id": "AJUDA_d90a743e-ae37-47f8-b227-648d20a38013",
+    "originalId": "d90a743e-ae37-47f8-b227-648d20a38013",
+    "statement": "Em relação à OME (otite média com efusão), assinale V (verdadeiro) ou F (falso) nas afirmativas seguintes.\n(__) É definida pela presença de fluido na orelha média, sem sinais ou sintomas de infecção aguda.\n(__) Os casos crônicos são definidos quando persistentes por mais de 3 meses.\n(__) O tratamento medicamentoso é feito com anti-histamínicos, descongestionantes e corticoides tópicos nasais.\n(__) Ocorre após um episódio de tonsilite no último mês.\nA sequência correta é",
+    "options": [
+      {
+        "id": "A",
+        "text": "V — V — F — F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "V — F — V — F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F — F — V — V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V — F — F — V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "F — V — F — V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Otite Média com Efusão (OME) é caracterizada pelo acúmulo de líquido na orelha média sem sinais de infecção aguda. Vamos analisar cada uma das afirmativas para justificar o gabarito:\n\n(V) É definida pela presença de fluido na orelha média, sem sinais ou sintomas de infecção aguda.\nEsta afirmativa está correta. A principal diferença entre a OME e a Otite Média Aguda (OMA) é a ausência de sinais flogísticos agudos, como dor (otalgia importante), febre ou hiperemia/abaulamento acentuado da membrana timpânica. Na OME, o líquido está presente, mas não há um processo infeccioso bacteriano supurativo em curso.\n\n(V) Os casos crônicos são definidos quando persistentes por mais de 3 meses.\nEsta afirmativa está correta. O critério temporal para definir a OME como crônica é a persistência da efusão por um período igual ou superior a 12 semanas (3 meses). Esse prazo é fundamental para a decisão terapêutica, pois muitos casos de efusão pós-otite aguda resolvem-se espontaneamente em até 90 dias.\n\n(F) O tratamento medicamentoso é feito com anti-histamínicos, descongestionantes e corticoides tópicos nasais.\nEsta afirmativa está incorreta. As principais diretrizes internacionais (como as da Academia Americana de Otorrinolaringologia) recomendam fortemente contra o uso de anti-histamínicos, descongestionantes e corticoides (nasais ou sistêmicos) para o tratamento da OME, pois os estudos clínicos não demonstraram eficácia na resolução da efusão. A conduta preconizada é a observação vigilante (watchful waiting) por 3 meses ou, em casos de falha ou perda auditiva significativa, a colocação de tubos de ventilação.\n\n(F) Ocorre após um episódio de tonsilite no último mês.\nEsta afirmativa está incorreta. A OME ocorre classicamente após um episódio de Otite Média Aguda (OMA), sendo uma evolução natural do processo inflamatório da orelha média ou devido à disfunção da tuba auditiva. Não existe uma associação direta ou obrigatória que ligue a OME especificamente à tonsilite (inflamação das amígdalas) no mês anterior.\n\nPortanto, a sequência correta é V — V — F — F, o que torna a alternativa (a) a correta.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:15.607Z"
+  },
+  {
+    "id": "AJUDA_d90b4d0a-e1df-4c07-999f-b40b24b88685",
+    "originalId": "d90b4d0a-e1df-4c07-999f-b40b24b88685",
+    "statement": "Paciente de 70 anos de idade, hipertenso e com arritmia, apresenta hérnia umbilical há 10 anos. Há 3 meses vem relatando incômodo e episódios de dor. Ao exame, apresenta hérnia umbilical de cerca de 2 cm. Nesse caso, a melhor estratégia para este paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "manter observação clínica e acompanhamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicação cirúrgica de herniorrafia com fechamento primário da falha da aponeurose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "correção aberta com colocação de tela intraperitoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "correção da hérnia aberta com colocação de tela pré-peritoneal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "reparo laparoscópico primário sem colocação de tela.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso: O paciente apresenta uma hérnia umbilical de 2 cm que se tornou sintomática (dor e incômodo) nos últimos três meses. Em pacientes adultos com hérnias umbilicais, a decisão cirúrgica baseia-se na presença de sintomas e no tamanho do defeito herniário.\n\nAlternativa a: Incorreta. A conduta de observação e acompanhamento (watchful waiting) é reservada para pacientes com hérnias assintomáticas ou com sintomas muito leves em que o risco cirúrgico se sobrepõe ao benefício. Como o paciente passou a ter dor, existe indicação de tratamento cirúrgico para prevenir complicações agudas, como o encarceramento ou o estrangulamento.\n\nAlternativa b: Incorreta. O fechamento primário (apenas com sutura, sem uso de tela) é aceitável apenas para defeitos muito pequenos, geralmente menores que 1 cm. Para hérnias umbilicais entre 1 cm e 4 cm, como é o caso deste paciente (2 cm), o uso de tela é fortemente recomendado pelas diretrizes mundiais (como as da Sociedade Europeia de Hérnia) por reduzir significativamente as taxas de recidiva.\n\nAlternativa c: Incorreta. Na cirurgia aberta, a colocação da tela em posição intraperitoneal (dentro da cavidade abdominal, em contato com as vísceras) deve ser evitada devido ao alto risco de formação de aderências firmes entre as alças intestinais e a tela, o que pode causar obstrução intestinal ou fístulas no futuro. Se a via for aberta, a tela deve ser posicionada fora da cavidade peritoneal.\n\nAlternativa d: Correta. Esta é a conduta ideal. O paciente tem indicação cirúrgica por ser sintomático. O uso da tela é necessário pelo tamanho do defeito (2 cm) para evitar que a hérnia volte. A posição pré-peritoneal (atrás da musculatura e na frente do peritônio) é uma das localizações mais seguras e eficazes, pois o peritônio atua como uma barreira natural entre a tela e os órgãos abdominais, diminuindo complicações e garantindo um reforço sólido à parede.\n\nAlternativa e: Incorreta. O reparo laparoscópico é uma opção viável, mas o erro da alternativa reside em propor o reparo \"sem colocação de tela\". O princípio fundamental do tratamento de hérnias de 2 cm, seja por via aberta ou laparoscópica, é o reforço com prótese (tela) para garantir resultados duradouros. Além disso, o reparo laparoscópico sem tela para uma hérnia desse tamanho não é o padrão-ouro.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:15.607Z"
+  },
+  {
+    "id": "AJUDA_d918286b-1236-44ff-bb6e-13b6fd48ce3c",
+    "originalId": "d918286b-1236-44ff-bb6e-13b6fd48ce3c",
+    "statement": "Enchentes, secas, ondas de calor, tempestades tropicais, incêndios florestais e aumento do nível do mar estão diretamente relacionados à escalada dos determinantes sociais da saúde. Esses fatores podem levar ao aumento de doenças cardiovasculares, entre outras.\nConsiderando a interferência desses fatores, assinale a alternativa correta com relação às ações de promoção da saúde.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A exposição à poluição do ar pode acarretar no aumento do risco para hipertensão, diabetes e dermatite atópica, portanto, indica-se fechar as janelas da residência nos horários de maior fluxo de carros a fim de reduzir a exposição aos poluentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "As plantações de milho para a produção de biocombustível configuram uma importante tendência no país uma vez que aumentam a oferta de empregos na economia verde e melhoram as condições de vida de pequenos e médios produtores rurais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A elevação da pressão arterial é um efeito comum das ondas de calor, por isso, é indicado aumentar as doses dos anti-hipertensivos, reforçar a hidratação e procurar fontes de sombra e refrigeração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As atividades de educação em saúde acerca do estresse climático são desaconselháveis nas escolas, devido ao risco de sofrimento emocional nas crianças e nos adolescentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Correta. A exposição crônica a poluentes atmosféricos, como o material particulado, está diretamente associada ao desenvolvimento de processos inflamatórios sistêmicos e estresse oxidativo. Esses mecanismos contribuem para o aumento da incidência de doenças cardiometabólicas (hipertensão arterial e diabetes mellitus) e patologias cutâneas, como a dermatite atópica. A recomendação de fechar janelas durante horários de pico de tráfego é uma medida de mitigação individual reconhecida para reduzir a infiltração de poluentes externos no ambiente doméstico, diminuindo a carga de exposição do indivíduo.\n\nAlternativa b: Incorreta. A produção em larga escala de monoculturas para biocombustíveis, como o milho, pode gerar efeitos adversos nos determinantes sociais da saúde. Frequentemente, essas práticas levam à concentração de terras, à redução da biodiversidade e à substituição de culturas alimentares básicas, o que pode comprometer a segurança alimentar e não necessariamente melhorar a vida do pequeno produtor rural, que costuma ser pressionado pelo avanço do agronegócio industrial.\n\nAlternativa c: Incorreta. Diferentemente do que afirma a alternativa, a exposição ao calor extremo causa vasodilatação periférica como mecanismo de termorregulação, o que tende a baixar a pressão arterial. Orientar o aumento da dose de anti-hipertensivos durante ondas de calor é clinicamente perigoso, pois eleva o risco de hipotensão severa, síncope e desidratação. O manejo correto envolve hidratação vigorosa e resfriamento corporal, mas ajustes medicamentosos devem ser feitos com cautela para evitar quedas pressóricas acentuadas.\n\nAlternativa d: Incorreta. As atividades de educação em saúde são pilares fundamentais da promoção da saúde. Ocultar informações sobre o estresse climático nas escolas sob o pretexto de evitar sofrimento emocional priva crianças e adolescentes da oportunidade de desenvolver resiliência e consciência crítica. A abordagem deve ser adaptada à faixa etária, visando ao empoderamento para o enfrentamento de crises ambientais, e não à omissão do tema.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Medidas de Saúde Coletiva",
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:15.607Z"
+  },
+  {
+    "id": "AJUDA_d91b2166-a05a-49f9-b5e4-01ea289c5c3f",
+    "originalId": "d91b2166-a05a-49f9-b5e4-01ea289c5c3f",
+    "statement": "A bronquiolite viral aguda (BVA) é uma infecção viral que acomete as vias aéreas de pequeno calibre dos lactentes. É uma das principais causas de morbimortalidade e internação hospitalar, dentre as afecções respiratórias no primeiro ano de vida.\nAcerca do diagnóstico da BVA, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a radiografia de tórax é necessária mesmo nos casos leves.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o hemograma é fundamental para descartar infecção bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "é feito com base na história clínica e no exame físico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a gasometria está indicada em todos os casos para comprovar hipóxia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o isolamento do vírus sincicial é fundamental.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A bronquiolite viral aguda (BVA) e o seu manejo são temas fundamentais na pediatria, e o ponto central para as provas é entender que o diagnóstico é eminentemente clínico. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A (Incorreta): A radiografia de tórax não é recomendada rotineiramente para o diagnóstico de BVA, especialmente em casos leves. O exame costuma mostrar achados inespecíficos, como hiperinsuflação pulmonar e áreas de atelectasia, que podem ser erroneamente interpretadas como pneumonia bacteriana, levando ao uso desnecessário de antibióticos. A imagem deve ser reservada para casos graves, dúvida diagnóstica ou evolução atípica (como suspeita de complicações).\n\nAlternativa B (Incorreta): O hemograma não é fundamental e não deve ser solicitado de rotina. Não há alterações específicas no sangue que confirmem a BVA ou que descartem com segurança uma infecção bacteriana secundária, que é incomum nesses pacientes. O foco deve ser a avaliação do esforço respiratório e do estado de hidratação do lactente.\n\nAlternativa C (Correta): Esta alternativa reflete o consenso das principais diretrizes nacionais e internacionais, como a Sociedade Brasileira de Pediatria (SBP) e a Academia Americana de Pediatria (AAP). O diagnóstico da BVA é clínico, baseado na história de um pródromo viral (coriza e tosse) seguido do primeiro episódio de sibilância e/ou estertores finos em crianças com menos de 2 anos, frequentemente acompanhado de sinais de desconforto respiratório.\n\nAlternativa D (Incorreta): A gasometria arterial é um exame invasivo e não é indicada em todos os casos. Seu uso deve ser restrito a pacientes com quadros graves, sinais de insuficiência respiratória ou necessidade de ventilação mecânica, para avaliar a ventilação (níveis de CO2) e o equilíbrio acidobásico. A monitorização da oxigenação na rotina hospitalar é feita de forma não invasiva através da oximetria de pulso.\n\nAlternativa E (Incorreta): Embora o Vírus Sincicial Respiratório (VSR) seja o agente mais comum, o seu isolamento ou identificação (por testes rápidos ou PCR) não é fundamental para o diagnóstico clínico ou para a definição da conduta terapêutica. A pesquisa viral é útil principalmente para fins epidemiológicos e para o isolamento de contato (coorte) de pacientes internados, visando evitar a transmissão cruzada no hospital.\n\nGabarito: Letra C.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:15.607Z"
+  },
+  {
+    "id": "AJUDA_d9251bf5-7b90-4c15-ab56-c0ad6556000b",
+    "originalId": "d9251bf5-7b90-4c15-ab56-c0ad6556000b",
+    "statement": "Uma paciente com diagnóstico recente de sífilis terciária apresenta sintomas neurológicos sugestivos de neurossífilis, incluindo cefaleia e alterações cognitivas. Qual é a terapêutica mais indicada para o tratamento de neurossífilis neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Azitromicina 2g via oral, dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ceftriaxona 1g via intramuscular uma vez ao dia por 10-14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Penicilina G benzatina 2,4 milhões de unidades intramuscular semanalmente por três semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Penicilina G cristalina 18-24 milhões de unidades/dia por via intravenosa, divididas em doses a cada 4 horas por 10-14 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A abordagem terapêutica da neurossífilis é um tema recorrente em provas de residência e exige conhecimento sobre a farmacocinética dos antibióticos, especificamente sobre a capacidade de atravessar a barreira hematoencefálica. O *Treponema pallidum*, quando atinge o sistema nervoso central, exige concentrações séricas e liquóricas elevadas e constantes de antibiótico, o que dita a escolha da via de administração e do tipo de penicilina.\n\nAnálise das alternativas:\n\na) Incorreta. A azitromicina não é o tratamento de escolha para nenhum estágio da sífilis na prática clínica atual, especialmente devido ao alto índice de resistência bacteriana do *Treponema pallidum* aos macrolídeos. Além disso, não possui penetração adequada no sistema nervoso central para tratar a neurossífilis.\n\nb) Incorreta. Embora a ceftriaxona possa ser utilizada como uma alternativa em casos de alergia à penicilina (em doses de 2 g IV ou IM por 10 a 14 dias), a dose de 1 g apresentada na alternativa é insuficiente. Além disso, a penicilina cristalina intravenosa permanece como o padrão-ouro e a primeira escolha absoluta para o tratamento da neurossífilis.\n\nc) Incorreta. Esta é uma armadilha comum. A penicilina G benzatina (Benzetacil) é excelente para o tratamento de sífilis primária, secundária e latente, pois mantém níveis terapêuticos no sangue por um longo período. No entanto, ela possui baixíssima penetração no líquido cefalorraquidiano (LCR), sendo incapaz de eliminar o treponema do sistema nervoso central. Este esquema de três doses semanais é o tratamento indicado para sífilis latente tardia ou sífilis terciária sem acometimento nervoso.\n\nd) Correta. A penicilina G cristalina (ou aquosa) é a única capaz de atingir as concentrações necessárias no LCR para o tratamento da neurossífilis. A dose recomendada é de 18 a 24 milhões de unidades por dia, administrada por via intravenosa. A divisão em doses a cada 4 horas (ou infusão contínua) é necessária devido à meia-vida curta da penicilina cristalina, garantindo a manutenção do nível terapêutico durante os 10 a 14 dias de tratamento recomendados pelos protocolos do Ministério da Saúde e do CDC.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:15.607Z"
+  },
+  {
+    "id": "AJUDA_d934307e-28ad-4272-92ad-7cdc1fb16787",
+    "originalId": "d934307e-28ad-4272-92ad-7cdc1fb16787",
+    "statement": "Durante o atendimento ambulatorial, José, de 68 anos, queixou-se de dor toracolombar de intensidade moderada, constante, iniciada há 3 semanas. Foi associada a dormência nas duas pernas, havendo piora da dor quando ele ficava muito tempo em pé e melhora quando se sentava ou se deitava. O paciente já estava em tratamento para diabetes mellitus há 10 anos, com elevação recente da dose de metformina para 2 g/dia. Segundo ele, a glicemia estava bem controlada, mas o tabagismo e o alcoolismo persistiam (75 maços x ano e 40 g de álcool por dia). Na anamnese dirigida, revelou-se constipação de início recente, sem mudança do volume ou consistência das fezes. Não houve qualquer outra queixa ou sintoma relatado. No exame físico, notam-se dor à palpação da musculatura paravertebral bilateralmente, bem como dor em queimação agravada em flexão de quadril e coxa. Sinais de Lasègue e Kernig positivos bilateralmente. O restante do exame físico não mostrou alterações.\nConsiderando o quadro exposto, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "uma conduta mais agressiva deve ser adotada, com investigação de tumores devido à idade e ao tabagismo, apesar de se tratar de uma dor lombar aguda;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a ressonância de coluna torácica e lombar é obrigatória devido à localização da dor, ao tempo de acometimento e aos sinais neurológicos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "radiografia de tórax, VHS, proteína C-reativa e hemograma devem ser solicitados, mas pode ser necessário solicitar também uma ressonância nuclear magnética (RNM) de coluna torácica e lombar se as medidas comportamentais e analgesia não melhorarem;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a dor lombar em pessoa acima de 50 anos deve ser sempre investigada, independentemente dos sintomas e sinais associados. O principal exame é a ressonância nuclear magnética (RNM) de coluna lombar com contraste venoso;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "os sinais de alarme associados a dor lombar subaguda ou crônica (respectivamente, 4 a 12 semanas e mais de 12 semanas) em indivíduos com mais de 50 anos são desnecessários para indicação de exame específico, pois todos esses pacientes devem ter exame de imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a propedêutica da dor lombar e a identificação de sinais de alerta (*red flags*). O paciente em questão apresenta diversos fatores que exigem cautela: idade superior a 50 anos, carga tabágica elevada (75 maços-ano), sintomas neurológicos (dormência e irritação radicular sugerida pelos sinais de Lasègue e Kernig) e dor de início recente.\n\nAlternativa a: Incorreta. Embora a investigação de neoplasia seja necessária devido à idade e ao tabagismo, o termo \"conduta mais agressiva\" é vago e não define os passos propedêuticos corretos. A dor de 3 semanas é, de fato, classificada como aguda (até 4 semanas), mas a investigação deve ser estruturada e não necessariamente agressiva no sentido de intervencionista.\n\nAlternativa b: Incorreta. A ressonância magnética (RNM) é o exame de maior sensibilidade para avaliar o canal vertebral, mas seu uso não é considerado obrigatório de imediato se não houver sinais de emergência neurológica franca, como a síndrome da cauda equina (perda de controle esfincteriano ou anestesia em sela) ou déficit motor progressivo grave.\n\nAlternativa c: Correta. Esta alternativa descreve a abordagem diagnóstica inicial recomendada para pacientes com sinais de alerta para causas secundárias (como câncer ou infecção). O hemograma, o VHS e a PCR são exames de triagem para processos inflamatórios, infecciosos ou neoplásicos (como o mieloma múltiplo). A radiografia de tórax é essencial para rastrear um possível sítio primário de câncer (pulmão), considerando a alta carga tabágica. A RNM de coluna é indicada caso o tratamento conservador (analgesia e orientações) falhe ou se houver progressão dos sintomas.\n\nAlternativa d: Incorreta. A investigação da dor lombar não deve ser universal e automática para todos acima de 50 anos sem considerar os sinais e sintomas associados. Além disso, o uso de contraste venoso na RNM não é a conduta de rotina para todos os casos iniciais, sendo reservado para suspeitas específicas de tumores ou infecções (discite/osteomielite).\n\nAlternativa e: Incorreta. Os sinais de alarme são as ferramentas mais importantes para decidir a necessidade de exames de imagem. Ignorá-los e solicitar exames para todos os pacientes nessa faixa etária levaria a um excesso de diagnósticos de alterações degenerativas normais do envelhecimento, que muitas vezes não são a causa da dor, gerando custos e ansiedade desnecessários.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Doenças da Coluna Vertebral"
+    ],
+    "difficulty": 70.23301147466316,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:15.607Z"
+  },
+  {
+    "id": "AJUDA_d939f3e1-5956-4f63-a05c-37558cb886b2",
+    "originalId": "d939f3e1-5956-4f63-a05c-37558cb886b2",
+    "statement": "Paciente do sexo masculino, 60 anos, dá entrada na emergência com quadro de precordialgia em aperto, de forte intensidade, associada a náuseas, diaforese e dispneia, iniciada há cerca de 1 hora. Comorbidades: hipertensão arterial, Diabetes Mellitus e obesidade grau II. Eletrocardiograma da admissão: taquicardia sinusal, Bloqueio de ramo esquerdo. Trouxe exames realizados há 2 meses, incluindo um eletrocardiograma, sem alterações. Qual a hipótese diagnóstica e a conduta mais coerente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Angina instável de alto risco; AAS, clopidogrel, enoxaparina, nitrato VO e morfina EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "IAM sem supra ST; AAS, clopidogrel, enoxaparina, metoprolol, nitrato VO e morfina EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IAM sem supra ST; AAS, clopidogrel, enoxaparina, metoprolol, nitrato VO, morfina EV e Alteplase EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "IAM com supra ST; AAS, clopidogrel, metoprolol, atorvastatina, nitrato VO e morfina EV, com acionamento imediato do serviço de hemodinâmica do hospital para realização de angioplastia primária.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Quadro Clínico:\nO paciente apresenta uma dor precordial típica (em aperto, forte intensidade, associada a sintomas autonômicos e dispneia) com início há 1 hora, o que configura uma síndrome coronariana aguda (SCA) em curso. Ele possui múltiplos fatores de risco cardiovascular (idade, sexo masculino, hipertensão, diabetes e obesidade).\n\nO ponto fundamental da questão está no eletrocardiograma (ECG): a presença de um Bloqueio de Ramo Esquerdo (BRE). O enunciado informa que o paciente tinha um ECG normal há dois meses, o que permite concluir que o BRE é novo (agudo). Pelas diretrizes da Sociedade Brasileira de Cardiologia e internacionais (AHA/ESC), um BRE novo ou presumivelmente novo, em um contexto clínico de dor isquêmica, deve ser manejado como um Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAM com supra ST).\n\nAnálise das Alternativas:\n\na) Incorreta. O diagnóstico não é de angina instável. A presença do BRE novo no contexto de dor típica eleva a classificação da patologia para a categoria de IAM com supra ST (equivalente), exigindo terapia de reperfusão imediata. Além disso, a conduta proposta foca apenas no tratamento medicamentoso básico, ignorando a necessidade de reperfusão.\n\nb) Incorreta. Como o BRE é novo e o paciente está sintomático, a classificação correta é de IAM com supra ST, e não IAM sem supra ST. O tratamento para IAM sem supra não prevê a reperfusão emergencial (angioplastia primária ou fibrinolítico) nas primeiras horas da mesma forma que o IAM com supra.\n\nc) Incorreta. Há um erro conceitual grave nesta alternativa. O Alteplase é um fibrinolítico indicado para o IAM com supra ST (ou BRE novo) quando a angioplastia não pode ser realizada em tempo hábil. Ele nunca deve ser utilizado no IAM sem supra ST, pois aumenta o risco de sangramento sem benefício de reperfusão nesse cenário específico.\n\nd) Correta. Esta é a alternativa que segue as diretrizes atuais. O quadro clínico associado ao BRE novo é considerado um \"equivalente de supra de ST\". A conduta envolve o tratamento medicamentoso inicial (antiagregantes plaquetários como AAS e Clopidogrel, estatina, controle da dor e da pressão) e, crucialmente, o acionamento imediato da hemodinâmica para realizar a angioplastia primária, que é o padrão-ouro para reabrir a artéria culpada no menor tempo possível (tempo porta-balão).\n\nResumo:\nDiante de um paciente com dor torácica aguda e ECG com Bloqueio de Ramo Esquerdo novo, o médico deve interpretar o caso como uma emergência isquêmica de parede anterior (território geralmente afetado no BRE) e buscar a reperfusão imediata do miocárdio.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:15.607Z"
+  },
+  {
+    "id": "AJUDA_d94a5615-2736-4328-bc85-eab401e312bb",
+    "originalId": "d94a5615-2736-4328-bc85-eab401e312bb",
+    "statement": "Pesquisadores de um hospital universitário desenharam um estudo para avaliar a associação entre o tabagismo e o risco de parto prematuro. Gestantes no primeiro trimestre foram incluídas e, após avaliação clínica e preenchimento de um formulário padronizado sobre hábitos de vida, foram classificadas como fumantes ou não fumantes. Durante o acompanhamento pré-natal, todas as participantes foram atendidas conforme seus protocolos clínicos, com visitas regulares e coleta de dados sistemática, até o desfecho da gestação. Ao final, os pesquisadores compararam a taxa de partos prematuros (<37 semanas) entre os dois grupos. Com base nessa descrição e considerando o delineamento do estudo, é correto afirmar que se trata de um:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estudo de caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estudo transversal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ensaio clínico controlado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estudo de coorte.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para identificar o delineamento de um estudo epidemiológico, deve-se observar a direção temporal da investigação e a presença ou ausência de intervenção por parte dos pesquisadores.\n\nNo caso descrito, os pesquisadores selecionaram mulheres no primeiro trimestre da gestação (indivíduos livres do desfecho de interesse no início), classificaram-nas de acordo com a presença ou ausência de uma exposição (fumantes e não fumantes) e as acompanharam prospectivamente ao longo do tempo (longitudinalidade) até a ocorrência ou não do desfecho (parto prematuro). Esse desenho, que parte da exposição em direção ao desfecho, caracteriza classicamente um estudo de coorte.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): O estudo de caso-controle parte do desfecho já estabelecido. O pesquisador selecionaria mulheres que tiveram parto prematuro (casos) e mulheres que tiveram parto a termo (controles) e olharia para o passado para avaliar a frequência do tabagismo entre os dois grupos.\n\nAlternativa B (Incorreta): O estudo transversal avalia a exposição e o desfecho simultaneamente em um único momento no tempo (como uma fotografia), sem seguimento temporal dos participantes. O enunciado descreve visitas regulares e acompanhamento até o desfecho da gestação, o que exclui o desenho transversal.\n\nAlternativa C (Incorreta): O ensaio clínico controlado é um estudo experimental no qual o pesquisador aloca ativamente a intervenção (por exemplo, administrar uma droga ou vacina). No estudo em questão, não houve intervenção; o tabagismo foi apenas observado como um hábito pré-existente das participantes, tratando-se de um estudo puramente observacional.\n\nAlternativa D (Correta): O estudo de coorte é um estudo observacional e longitudinal em que indivíduos sem o desfecho são classificados pelo status de exposição e seguidos no tempo para verificar a incidência da doença ou desfecho, permitindo o cálculo direto da incidência e do Risco Relativo (RR). O enunciado exemplifica com precisão esse desenho metodológico.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:15.607Z"
+  }
+]

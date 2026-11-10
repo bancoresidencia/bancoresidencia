@@ -1,0 +1,481 @@
+[
+  {
+    "id": "AJUDA_bf9ac420-97f5-414f-b275-3a4d9ce30661",
+    "originalId": "bf9ac420-97f5-414f-b275-3a4d9ce30661",
+    "statement": "Paciente de 68 anos, sexo feminino, apresenta quadro de icterícia progressiva, colúria e acolia, nos últimos 2 meses. Refere perda de peso de, aproximadamente, 5 kg no período. Ao exame físico, apresenta-se ictérica e, à palpação abdominal, revela abdome flácido, plano, sem sinais de peritonite. Os exames laboratoriais mostram bilirrubina direta de 12 g/dL, fosfatase alcalina de 1200 e gama-glutamil transferase de 2100. Realizou ultrassom de abdome, que revelou: acentuada dilatação de vias biliares intra-hepáticas; vesícula biliar murcha, sem cálculos e colédoco com diâmetro normal. Com base nos achados clínicos e radiológicos, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coledocolítiase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adenocarcinoma de papila duodenal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tumor de Klatskin.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Mirizzi.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta é uma questão clássica que exige o raciocínio anatômico baseado nos achados de imagem para localizar o nível da obstrução biliar.\n\nAnálise do quadro clínico:\nA paciente apresenta uma síndrome colestática clássica (icterícia, colúria e acolia) de caráter progressivo e associada a emagrecimento, o que levanta forte suspeita de neoplasia maligna. Os exames laboratoriais confirmam o padrão obstrutivo, com elevação acentuada de enzimas canaliculares (fosfatase alcalina e GGT) e de bilirrubina direta.\n\nAnálise da localização da obstrução (ultrassom):\nO ponto-chave da questão está no achado do ultrassom:\n1. Dilatação de vias biliares intra-hepáticas.\n2. Vesícula biliar murcha e colédoco de diâmetro normal.\n\nSe a vesícula está murcha e o colédoco não está dilatado, a obstrução deve estar localizada acima da inserção do ducto cístico, ou seja, no ducto hepático comum ou na confluência dos ductos hepáticos direito e esquerdo.\n\nAnálise das alternativas:\n\na) Incorreta. Na coledocolítiase, a obstrução ocorre no colédoco (via biliar extra-hepática). Portanto, o esperado seria encontrar o colédoco dilatado e, frequentemente, a vesícula biliar estaria preenchida ou com cálculos.\n\nb) Incorreta. O adenocarcinoma de papila duodenal é um tumor periampular. Por obstruir a porção distal do colédoco, ele causa dilatação de toda a árvore biliar, incluindo tanto as vias intra-hepáticas quanto as extra-hepáticas (colédoco dilatado) e a vesícula biliar (sinal de Courvoisier-Terrier).\n\nc) Correta. O tumor de Klatskin é um colangiocarcinoma hilar, localizado na confluência dos ductos hepáticos direito e esquerdo. Como a obstrução é alta (na região do hilo hepático), as vias biliares intra-hepáticas se dilatam, mas a bile não consegue descer para a vesícula ou para o colédoco. Por isso, a vesícula permanece murcha e o colédoco mantém seu calibre normal. O quadro de icterícia progressiva e perda de peso em uma paciente idosa é típico desta neoplasia.\n\nd) Incorreta. A síndrome de Mirizzi consiste na compressão extrínseca do ducto hepático comum por um cálculo impactado no ducto cístico ou no colo da vesícula biliar. Embora a localização da obstrução possa ser semelhante à do tumor de Klatskin, o enunciado afirma explicitamente que a vesícula biliar está sem cálculos, o que descarta essa hipótese, que é obrigatoriamente decorrente de colelitíase.\n\nConclusão:\nA combinação de icterícia obstrutiva maligna com dilatação exclusiva de vias intra-hepáticas aponta diretamente para o tumor de Klatskin.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:58.565Z"
+  },
+  {
+    "id": "AJUDA_bf9b4dae-09e2-48bd-a069-2b0c6fccb8b3",
+    "originalId": "bf9b4dae-09e2-48bd-a069-2b0c6fccb8b3",
+    "statement": "Pré-escolar, 6 anos de idade internado na unidade de internação pediátrica do Hospital, com diagnóstico de pneumonia adquirida na comunidade. Encontra-se hemodinamicamente estável em cateter nasal de baixo fluxo 1L/min. O raio X encontra-se ao lado. Qual o principal agente etiológico e o esquema preferencial de tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Staphylococcus aureus, Oxacilina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Staphylococcus aureus, Vancomicina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Streptococcus pneumoniae, Penicilina cristalina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Streptococcus pneumoniae, Ceftriaxona associado a oxacilina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA questão apresenta um pré-escolar de 6 anos com pneumonia adquirida na comunidade (PAC). A imagem de raio X de tórax é fundamental para a interpretação: observa-se uma grande opacidade homogênea no hemitórax esquerdo que oblitera o seio costofrênico e apresenta o sinal do menisco, o que caracteriza um derrame pleural parapneumônico. Apesar da extensão radiológica, o paciente encontra-se hemodinamicamente estável e com baixa demanda de oxigênio (1L/min em cateter nasal), o que sugere uma evolução típica.\n\nETIOLOGIA E TRATAMENTO\n\nO principal agente etiológico das pneumonias bacterianas e de suas complicações (como o derrame pleural) em todas as faixas etárias pediátricas, após o período neonatal, é o Streptococcus pneumoniae (pneumococo). Para pacientes que necessitam de internação hospitalar devido à necessidade de oxigenioterapia ou presença de derrame pleural, mas que estão clinicamente estáveis, o protocolo do Ministério da Saúde e da Sociedade Brasileira de Pediatria recomenda como tratamento de primeira escolha a Penicilina G Cristalina ou a Ampicilina.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. Embora o Staphylococcus aureus possa causar pneumonia com derrame pleural, ele é um agente muito menos frequente que o pneumococo em ambiente comunitário. A pneumonia estafilocócica costuma ser mais grave, com rápida progressão clínica e presença de pneumatoceles (bolhas de ar) no raio X.\n\nb) Incorreta. A Vancomicina é um antibiótico de reserva, indicado para casos de suspeita de Staphylococcus aureus resistente à meticilina (MRSA) ou em situações de choque séptico e falha terapêutica grave, não sendo a conduta inicial para este caso.\n\nc) Correta. O Streptococcus pneumoniae é o agente mais comum. A Penicilina Cristalina é o tratamento preferencial devido à sua excelente eficácia contra o pneumococo e boa penetração no espaço pleural.\n\nd) Incorreta. O uso de Ceftriaxone associado à Oxacilina é um esquema de amplo espectro indicado apenas para casos de extrema gravidade, suspeita de resistência bacteriana importante ou pacientes criticamente enfermos em Unidade de Terapia Intensiva, o que não condiz com a estabilidade do paciente descrito.\n\nGABARITO: Alternativa (c).",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/0db991c27a89eddc2e86ae74a254d23bd4e9a00084f1aa1f3f9d095cc70497a3.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_bf9b4dae-09e2-48bd-a069-2b0c6fccb8b3_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:59.245Z"
+  },
+  {
+    "id": "AJUDA_bfa71759-15fb-49b4-9c9e-d7a63f79e033",
+    "originalId": "bfa71759-15fb-49b4-9c9e-d7a63f79e033",
+    "statement": "O climatério é um período de transição na vida da mulher, caracterizado por alterações hormonais significativas, que antecedem e sucedem a menopausa. Durante essa fase, várias manifestações clínicas podem ocorrer, afetando a qualidade de vida. Sobre o climatério, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os fogachos e a sudorese noturna afetam cerca de 75% das mulheres na perimenopausa e podem persistir por 10 anos ou mais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A síndrome genitourinária da menopausa inclui atrofia vulvovaginal sintomática, afetando cerca de 10% das mulheres após a menopausa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A disfunções sexuais têm etiologia multifatorial e são incomuns em mulheres entre 50 e 60 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O aumento da massa óssea e a osteoporose são os principais fatores de risco para fraturas ósseas na pós-menopausa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) CORRETA: Os sintomas vasomotores, representados pelos fogachos (ondas de calor) e pela sudorese noturna, são as manifestações mais frequentes do climatério. Eles afetam entre 60% e 80% das mulheres (aproximadamente 75%, como citado). Embora a duração média desses sintomas seja de 2 a 5 anos, estudos epidemiológicos de longo prazo, como o estudo SWAN, demonstram que, em muitas mulheres, a duração mediana é de 7,4 anos e, em cerca de 10% a 15%, os sintomas podem persistir por 10 anos ou mais.\n\nAlternativa (b) INCORRETA: A Síndrome Genitourinária da Menopausa (SGM) é muito mais comum do que os 10% sugeridos. Estima-se que cerca de 50% das mulheres na pós-menopausa apresentem sintomas de atrofia vulvovaginal (secura, dispareunia e irritação) e sintomas urinários. Diferentemente dos sintomas vasomotores, que podem regredir com o tempo, a SGM é progressiva e tende a piorar sem o tratamento adequado.\n\nAlternativa (c) INCORRETA: As disfunções sexuais são muito comuns entre os 50 e 60 anos, justamente pela transição menopausal. A etiologia é multifatorial, incluindo a queda dos níveis de estrogênio (causando atrofia vaginal e dor na relação), a redução dos androgênios (impactando a libido) e fatores psicossociais e de relacionamento. Pesquisas indicam que mais de 40% das mulheres nessa faixa etária relatam algum grau de disfunção sexual.\n\nAlternativa (d) INCORRETA: O erro fundamental desta alternativa está no termo \"aumento da massa óssea\". Na pós-menopausa, ocorre justamente o contrário: a redução da massa óssea (osteopenia e osteoporose) devido à deficiência estrogênica, que leva a um desequilíbrio no remodelamento ósseo com predomínio da reabsorção pelos osteoclastos. Essa perda de densidade mineral óssea é o que aumenta o risco de fraturas por fragilidade.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:59.245Z"
+  },
+  {
+    "id": "AJUDA_bfa97932-bcf9-43a1-a58b-d2f6efe59293",
+    "originalId": "bfa97932-bcf9-43a1-a58b-d2f6efe59293",
+    "statement": "Criança de 4 anos é levada ao consultório com história de febre diária há 6 dias, com picos a cada 8 horas. Passou em atendimento médico há 2 dias, recebendo diagnóstico de amigdalite e prescrita amoxicilina, que já iniciou uso. Há 4 horas, notou aparecimento de rash cutâneo. Mãe está preocupada, pois acha que o antibiótico não está fazendo efeito, além de ter provocado alergia na criança. Na sua avaliação, você identifica que a criança possui placas em ambas as amígdalas e que estas se encontram aumentadas, apresenta ainda adenomegalias cervicais e discreto aumento de baço. O rash cutâneo é maculopapular e morbiliforme difuso, com predomínio no tronco. Os sinais vitais se encontram dentro da normalidade e o aspecto geral da criança é bom. Qual a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trocar o antibiótico para amoxicilina com clavulanato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever anti-histamínico e trocar o antibiótico para azitromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspender o antibiótico e orientar somente sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever anti-histamínico e orientar manter o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda um cenário clássico da pediatria e da infectologia: a mononucleose infecciosa, causada pelo vírus Epstein-Barr (EBV), e sua relação com o uso de aminopenicilinas.\n\nO quadro clínico da criança apresenta a tríade clássica da mononucleose: febre prolongada, faringite exsudativa (placas nas amígdalas) e linfadenopatia cervical. O detalhe fundamental que confirma a suspeita diagnóstica é a presença de esplenomegalia (aumento do baço), achado muito frequente na mononucleose e raramente encontrado em faringites bacterianas comuns (como as causadas pelo *Streptococcus pyogenes*).\n\nUm fenômeno muito característico dessa doença é o aparecimento de um exantema maculopapular morbiliforme após o início de antibióticos como a amoxicilina ou ampicilina. Isso ocorre em cerca de 70% a 90% dos pacientes com mononucleose que utilizam essas drogas. Não se trata de uma alergia verdadeira (hipersensibilidade mediada por IgE) ao antibiótico, mas sim de uma reação imunomediada específica desencadeada pela interação do vírus com a medicação.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O quadro não sugere uma infecção bacteriana resistente. Adicionar clavulanato não trataria o vírus Epstein-Barr e manteria a exposição à penicilina que está causando o rash.\n\nAlternativa b) Incorreta. A azitromicina é um macrolídeo indicado para amigdalites bacterianas em pacientes alérgicos à penicilina. Como a etiologia aqui é viral (mononucleose), o uso de qualquer antibiótico é desnecessário e ineficaz.\n\nAlternativa c) Correta. O diagnóstico é de mononucleose infecciosa. Por ser uma doença viral, o tratamento é de suporte, baseado no repouso, hidratação e uso de analgésicos/antitérmicos (sintomáticos). O antibiótico deve ser suspenso imediatamente, pois foi prescrito para uma suspeita bacteriana que não se confirmou e está causando o exantema.\n\nAlternativa d) Incorreta. Manter o tratamento com amoxicilina é contraindicado, pois a medicação não tem ação contra o vírus e é o agente causador da reação cutânea apresentada pela criança. O anti-histamínico pode ajudar no prurido, se houver, mas a suspensão da droga é a medida principal.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores",
+      "Doenças Exantemáticas",
+      "Hepatoesplenomegalias Infecciosas"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:59.245Z"
+  },
+  {
+    "id": "AJUDA_bfaa614b-5de9-4763-b808-d96f93dd4341",
+    "originalId": "bfaa614b-5de9-4763-b808-d96f93dd4341",
+    "statement": "A Lei nº 14.679/2023 alterou a Lei nº 8.080/1990, incluindo no art. 61 desta lei o inciso IV, que abrange a proteção integral dos direitos de crianças e adolescentes. A esse respeito, assinale a alternativa que melhor expressa a abrangência desse novo princípio.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estabelece a proteção integral dos direitos de crianças e adolescentes como fundamento da formação profissional na área da saúde e a atenção à identificação de maus-tratos, negligência e violência sexual como princípios do Sistema Único de Saúde (SUS).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estabelece a obrigatoriedade de notificação de casos suspeitos de maus-tratos apenas para profissionais de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Garante a prioridade no atendimento de saúde para crianças e adolescentes em detrimento de outros grupos populacionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prioriza o atendimento de crianças e adolescentes em unidades de saúde exclusivas, separadas dos atendimentos à população adulta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nA Lei nº 14.679/2023 representa uma atualização importante na Lei Orgânica da Saúde (Lei nº 8.080/1990), reforçando o papel do Sistema Único de Saúde (SUS) na rede de proteção social. A alteração foca na capacitação dos profissionais e na estruturação do atendimento para identificar precocemente situações de vulnerabilidade.\n\nAlternativa a) Correta. A nova redação legal estabelece que as ações e serviços de saúde do SUS devem ser organizados de forma a garantir a proteção integral dos direitos de crianças e adolescentes. O texto destaca especificamente a atenção à identificação de maus-tratos, negligência e violência sexual. Além disso, a lei determina que esse tema deve ser incluído como fundamento da formação e do exercício profissional de todos os trabalhadores da área da saúde, visando um olhar mais atento e qualificado para esses casos.\n\nAlternativa b) Incorreta. A obrigatoriedade de notificação de casos suspeitos ou confirmados de maus-tratos já está prevista no Estatuto da Criança e do Adolescente (ECA) e em normativas anteriores. A mudança trazida pela Lei nº 14.679/2023 é muito mais abrangente, elevando a proteção integral e a identificação de violência ao nível de princípio organizativo e base da formação profissional, não se limitando apenas ao ato da notificação.\n\nAlternativa c) Incorreta. Embora a Constituição Federal e o ECA estabeleçam o princípio da \"prioridade absoluta\" para crianças e adolescentes, a alteração específica da Lei nº 8.080/1990 em 2023 não foca em priorizar o atendimento em detrimento de outros grupos, mas sim em qualificar o atendimento para garantir a proteção contra a violência e a negligência.\n\nAlternativa d) Incorreta. O SUS preza pela universalidade e pela rede de atenção integral. Não há determinação na Lei nº 14.679/2023 para que o atendimento seja feito obrigatoriamente em unidades exclusivas ou separadas da população adulta como regra geral de princípio. O foco da lei é a qualidade técnica e ética do profissional em identificar sinais de abuso ou maus-tratos, independentemente do local de atendimento.\n\nResumo: A questão exige o conhecimento da atualização legislativa recente que insere a proteção de crianças e adolescentes contra a violência (maus-tratos, negligência e violência sexual) como um pilar tanto na organização dos serviços de saúde quanto na formação dos profissionais que atuam no SUS.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:59.246Z"
+  },
+  {
+    "id": "AJUDA_bfadb11b-d843-4645-a3fa-81c49a20efd3",
+    "originalId": "bfadb11b-d843-4645-a3fa-81c49a20efd3",
+    "statement": "Homem, 28 anos de idade, casado, comerciário, natural de Salvador e procedente do ABC paulista. Procurou atendimento em uma Unidade Básica de Saúde com queixa de aparecimento de manchas vermelhas nas palmas das mãos há duas semanas. Há uma semana, notou também o aparecimento de pequenos linfonodos no pescoço e de manchas no tronco e nos braços. Na anamnese, informou que é casado e que sua esposa está grávida no 3º mês de gestação. Diz que há três meses, durante uma viagem de trabalho, teve uma relação extraconjugal. Informa que usou preservativo, mas fez sexo oral na parceira sem proteção. Considerando o caso apresentado, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O quadro provável deste paciente é de sífilis primária, no qual a transmissibilidade é alta e já pode ter acarretado infecção na mãe e no concepto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O quadro provável deste paciente é de sífilis secundária, no qual a transmissibilidade é muito baixa, acarretando baixo risco à esposa e ao concepto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O quadro provável deste paciente é de sífilis secundária, no qual a transmissibilidade é alta e já pode ter acarretado infecção na mãe e no concepto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O quadro provável deste paciente é de sífilis terciária, no qual a transmissibilidade é alta e já pode ter acarretado infecção na mãe e no concepto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico do paciente é de sífilis secundária. O tempo decorrido desde a exposição (três meses) e a apresentação clínica são clássicos: o aparecimento de manchas vermelhas no tronco, braços e, especialmente, o acometimento das palmas das mãos (sifílides palmoplantares), acompanhado de linfonodopatia generalizada, marca a fase de disseminação sistêmica da bactéria *Treponema pallidum*.\n\nAnálise das alternativas:\n\na) Incorreta. A sífilis primária é caracterizada pelo cancro duro, uma úlcera única e indolor no local da inoculação (pênis, boca ou ânus), que geralmente surge entre 10 e 90 dias após o contágio. O paciente já apresenta erupções cutâneas disseminadas e linfonodopatia em outros sítios, o que define a transição para a fase secundária.\n\nb) Incorreta. Embora identifique corretamente a fase secundária, a alternativa afirma erroneamente que a transmissibilidade é baixa. Pelo contrário, as fases primária e secundária são as que apresentam as maiores taxas de transmissão, tanto sexual quanto vertical (para o feto), devido à alta carga bacteriana presente nas lesões e na corrente sanguínea.\n\nc) Correta. O quadro de roséola sifilítica e acometimento palmoplantar meses após a relação sexual desprotegida confirma a sífilis secundária. A transmissibilidade nesta fase é muito elevada. Como o paciente mantém vida sexual com a esposa gestante, o risco de contágio dela e a transmissão transplacentária para o feto (sífilis congênita) são preocupações imediatas, exigindo busca ativa, diagnóstico e tratamento rápido da parceira para prevenir desfechos adversos na gravidez.\n\nd) Incorreta. A sífilis terciária é uma fase tardia que ocorre anos ou décadas após a infecção inicial em pacientes não tratados. Ela se manifesta por meio de gomas sifilíticas (lesões destrutivas em pele e ossos), complicações cardiovasculares (como aneurisma da aorta) ou neurosífilis tardia. O tempo de evolução do paciente (meses) é incompatível com a fase terciária.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:59.246Z"
+  },
+  {
+    "id": "AJUDA_bfb68c87-6acc-49a5-9bef-2917dce576ae",
+    "originalId": "bfb68c87-6acc-49a5-9bef-2917dce576ae",
+    "statement": "Os cistos pancreáticos são achados cada vez mais frequentes. É crucial diferenciar pseudocistos inflamatórios de neoplasias císticas (cistoadenomas, IPMN). Analise as afirmativas a seguir sobre o manejo dessas lesões:\n\nI.O pseudocisto pancreático assintomático, menor que 6 cm e com parede madura, pode ser acompanhado clinicamente, pois apresenta taxa significativa de resolução espontânea.\nII.O cistoadenoma seroso (microcístico) tem aspecto de \"favo de mel\" na imagem e apresenta alto potencial de malignização, exigindo ressecção cirúrgica em todos os casos diagnosticados.\nIII.O cistoadenoma mucinoso ocorre predominantemente em mulheres de meia-idade, localiza-se no corpo/cauda e tem risco de transformação maligna, sendo a pancreatectomia distal indicada.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "II e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I e II apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I e III apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das Afirmativas:\n\nAfirmativa I: Correta. O pseudocisto pancreático é uma coleção líquida envolta por uma parede de tecido inflamatório e fibroso, sem revestimento epitelial, que geralmente surge após um episódio de pancreatite aguda ou trauma. Quando o pseudocisto é pequeno (menor do que 6 cm), o paciente está assintomático e não há complicações (como infecção ou compressão de órgãos vizinhos), a conduta conservadora é indicada. A taxa de resolução espontânea é significativa, e a maturação da parede (que leva cerca de 4 a 6 semanas) é um fator importante caso uma drenagem futura seja necessária.\n\nAfirmativa II: Incorreta. Embora o cistoadenoma seroso apresente o aspecto clássico de \"favo de mel\" ou \"esponja\" (devido aos múltiplos microcistos) e possa exibir uma cicatriz central calcificada, ele é uma neoplasia benigna com potencial de malignização extremamente baixo (quase zero). Por esse motivo, a ressecção cirúrgica não é indicada para todos os casos; a cirurgia é reservada apenas para pacientes sintomáticos, lesões muito grandes ou quando há dúvida diagnóstica com neoplasias mucinosas.\n\nAfirmativa III: Correta. O cistoadenoma mucinoso é classicamente descrito como a neoplasia da \"mãe\", pois ocorre quase exclusivamente em mulheres de meia-idade. Localiza-se preferencialmente no corpo e na cauda do pâncreas e não possui comunicação com o ducto pancreático principal. Diferente da lesão serosa, o cistoadenoma mucinoso é considerado uma lesão pré-maligna, com risco real de transformação em cistoadenocarcinoma. Por isso, a indicação terapêutica padrão é a ressecção cirúrgica (geralmente uma pancreatectomia distal).\n\nConclusão das Alternativas:\n\nComo apenas as afirmativas I e III estão corretas, a alternativa correta é a (c).\n\na) Incorreta. A afirmativa II está errada devido ao baixo potencial de malignidade do cistoadenoma seroso.\nb) Incorreta. A afirmativa II está errada, invalidando esta opção.\nc) Correta. Identifica corretamente que o manejo do pseudocisto pode ser expectante e que o cistoadenoma mucinoso exige cirurgia pelo risco de malignidade.\nd) Incorreta. A afirmativa II está errada, impossibilitando que todas as opções estejam corretas.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Neoplasias Pancreáticas",
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:59.246Z"
+  },
+  {
+    "id": "AJUDA_bfe20926-ae78-4a7a-abc0-7666ed1b3d42",
+    "originalId": "bfe20926-ae78-4a7a-abc0-7666ed1b3d42",
+    "statement": "Paciente com 85 anos apresentando episódios de sensação de entalar ao ingerir alimentos e dor torácica. Em algumas situações tem que \"tomar um gole de água para descer\" a comida. Em decorrência destes engasgos sua família o levou para consulta com médico em sua cidade. Lá realizou EDA (Endoscopia digestiva alta) cujo laudo foi apenas antrite leve. Também realizou um exame radiológico contrastado com esôfago em aspecto de \"saca rolhas\". Assinale, dentre ás alternativas abaixo, o diagnóstico provável para este caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acalasia idiopática",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Espasmo esofagiano difuso",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Esôfago em quebra nozes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "DIME (distúrbio inespecífico da motilidade esofagiana)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito apresenta um paciente idoso com queixas clássicas de um distúrbio de motilidade esofagiana: disfagia (sensação de entalo) e dor torácica. O ponto fundamental para a resolução da questão é o achado radiológico do esôfago com aspecto de saca-rolhas.\n\nAbaixo, a análise de cada alternativa:\n\na) Acalasia idiopática: A acalasia se caracteriza pela ausência de peristaltismo no corpo esofágico e pela falha no relaxamento do esfíncter esofagiano inferior. No estudo radiológico contrastado (esofagograma), o achado típico é a dilatação do corpo do esôfago com um afilamento distal em ponta de lápis ou bico de pássaro. Portanto, não condiz com o aspecto de saca-rolhas.\n\nb) Espasmo esofagiano difuso: Esta é a alternativa correta. O espasmo esofagiano difuso (EED) é um distúrbio da motilidade caracterizado por contrações simultâneas, não peristálticas e de grande amplitude. Essas contrações segmentares são responsáveis pela imagem radiológica clássica descrita como esôfago em saca-rolhas ou em contas de rosário. Os sintomas principais são justamente a dor torácica retrosternal, que pode simular infarto, e a disfagia funcional.\n\nc) Esôfago em quebra-nozes: Atualmente classificado dentro do espectro do esôfago em britadeira (jackhammer esophagus), este distúrbio apresenta contrações de altíssima pressão, porém mantendo a sequência peristáltica. Embora cause dor torácica e disfagia, o exame radiológico contrastado costuma ser normal ou mostrar alterações mínimas, não apresentando a deformidade em saca-rolhas. O diagnóstico é essencialmente manométrico.\n\nd) DIME (distúrbio inespecífico da motilidade esofagiana): Esta é uma categoria diagnóstica reservada para alterações motoras que não preenchem critérios para as doenças específicas. Como o achado do esôfago em saca-rolhas é patognomônico para o espasmo esofagiano difuso, não se deve classificar o caso como um distúrbio inespecífico.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Disfagia, Alterações Estruturais e Distúrbios de Motilidade do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:59.246Z"
+  },
+  {
+    "id": "AJUDA_bff105cf-5e41-4acf-b1b7-1bec8c642308",
+    "originalId": "bff105cf-5e41-4acf-b1b7-1bec8c642308",
+    "statement": "Durante estágio em maternidade de alto risco, um interno de medicina avaliou puérpera com grupo sanguíneo Rh negativo e recém-nascido Rh positivo, que recebeu imunoglobulina humana anti-Rh (D) no primeiro dia pós-parto. Ao ser questionado sobre os indicadores da ação efetiva da imunoglobulina na prevenção da isoimunização, utilizando o teste de Coombs indireto e Kleihauer, respondeu corretamente que os resultados dos testes são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "positivo / positivo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "negativo / positivo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "positivo / negativo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "negativo / negativo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender a questão, é necessário entender o mecanismo de ação da imunoglobulina humana anti-Rh (D) e o que cada teste laboratorial mencionado avalia no contexto da profilaxia da isoimunização Rh.\n\nA imunoglobulina anti-Rh (D) é administrada a mulheres Rh-negativas que deram à luz recém-nascidos Rh-positivos para neutralizar as hemácias fetais que possam ter passado para a circulação materna durante o parto. O objetivo é evitar que o sistema imunológico da mãe reconheça esses antígenos e inicie uma resposta imune primária (produção de anticorpos próprios).\n\n1. Teste de Coombs Indireto: Este teste detecta a presença de anticorpos anti-D circulantes no soro materno. Quando a puérpera recebe a imunoglobulina de forma profilática, estamos inserindo anticorpos exógenos em sua circulação. Portanto, se a dose foi adequada e a medicação foi administrada corretamente, espera-se que o Coombs Indireto seja POSITIVO nas primeiras horas ou dias após a aplicação. Isso reflete a presença da imunoglobulina circulante pronta para agir (positividade passiva).\n\n2. Teste de Kleihauer (ou Kleihauer-Betke): Este teste é utilizado para quantificar a presença de hemácias fetais (que contêm hemoglobina F, resistente ao ácido) na circulação materna. Uma ação efetiva da imunoglobulina significa que ela se ligou às hemácias fetais Rh-positivas e promoveu sua destruição/depuração da circulação materna. Dessa forma, o resultado esperado para indicar eficácia é NEGATIVO (ausência ou neutralização das hemácias fetais).\n\nAnálise das alternativas:\n\na) Incorreta. O teste de Kleihauer positivo indicaria que ainda existem hemácias fetais circulantes não neutralizadas na corrente sanguínea da mãe, o que sugeriria que a dose de imunoglobulina foi insuficiente para a magnitude da hemorragia feto-materna ocorrida.\n\nb) Incorreta. O Coombs indireto negativo logo após a administração indicaria que a imunoglobulina não está presente na circulação em níveis detectáveis. O Kleihauer positivo reforçaria a falha, mostrando a persistência das células fetais.\n\nc) Correta. O Coombs indireto POSITIVO demonstra que a imunoglobulina foi administrada e está circulando no sangue materno. O Kleihauer NEGATIVO demonstra que a imunoglobulina cumpriu seu papel de limpar as hemácias fetais da circulação da mãe.\n\nd) Incorreta. Se o Coombs indireto for negativo, não há evidência laboratorial de que a imunoglobulina anti-D esteja presente na circulação materna para exercer o efeito protetor.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:59.246Z"
+  },
+  {
+    "id": "AJUDA_bff4a350-8a2d-4d48-b4ec-0b8b3b370673",
+    "originalId": "bff4a350-8a2d-4d48-b4ec-0b8b3b370673",
+    "statement": "Uma senhora leucodérmica, de 65 anos, com queixa de pirose e em bom estado geral, sem outras afecções foi submetida à sua primeira endoscopia, que revelou esôfago e Barrett com extensão de 11 cm e displasia de alto grau. Nesse contexto, a conduta CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retirada endoscópica do tecido doente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tratamento com inibidor de prótons e endoscopia semestral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Operação de Nissen antirrefluxo por videocirurgia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Esofagectomia total e esofagogastroplastia",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta Esôfago de Barrett de segmento longo (11 cm) com diagnóstico de displasia de alto grau (DAG). A displasia de alto grau é considerada uma lesão pré-neoplásica imediata, com alto risco de progressão para adenocarcinoma ou de coexistência com câncer já invasivo não detectado nas biópsias iniciais. A extensão de 11 cm é um fator determinante para a escolha da conduta mais agressiva.\n\nAlternativa A - Incorreta: O tratamento endoscópico, que inclui a ressecção mucosa e a ablação (como a radiofrequência), é uma opção para casos de displasia de alto grau em segmentos curtos ou lesões focais. No entanto, em um segmento muito extenso de 11 cm, a erradicação endoscópica completa é tecnicamente difícil, exige muitas sessões e apresenta altas taxas de recorrência. Além disso, a grande extensão do segmento aumenta consideravelmente a chance de carcinoma invasor oculto, o que limita a segurança da técnica endoscópica isolada neste cenário específico.\n\nAlternativa B - Incorreta: Manter apenas o tratamento com inibidores de bomba de prótons e observação endoscópica é uma conduta inadequada para a displasia de alto grau. Devido ao alto potencial de malignização, a displasia de alto grau exige uma intervenção terapêutica (endoscópica ou cirúrgica) e não apenas vigilância, que seria reservada para casos de Barrett sem displasia ou com displasia de baixo grau.\n\nAlternativa C - Incorreta: A cirurgia de Nissen (fundoplicatura) é indicada para o controle da doença do refluxo gastroesofágico (causa do problema). Contudo, ela não trata a lesão já instalada no epitélio. A fundoplicatura não é capaz de reverter a displasia de alto grau nem de prevenir a evolução para câncer, uma vez que a alteração celular grave já está presente. O tratamento deve focar na remoção ou destruição do tecido displásico.\n\nAlternativa D - Correta: A esofagectomia total com reconstrução por esofagogastroplastia é o tratamento tradicionalmente considerado definitivo para pacientes com esôfago de Barrett de segmento longo e displasia de alto grau, especialmente quando a paciente apresenta bom estado geral. O principal motivo para a escolha da cirurgia radical em segmentos extensos (como 11 cm) é o risco elevado (estimado entre 30% a 40%) de haver um adenocarcinoma invasivo oculto que não foi detectado pelas biópsias da endoscopia. A cirurgia remove todo o epitélio de risco e permite o tratamento oncológico adequado.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": 93.37411062940907,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:42:59.246Z"
+  }
+]

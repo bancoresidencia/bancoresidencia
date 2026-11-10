@@ -1,0 +1,488 @@
+[
+  {
+    "id": "AJUDA_73bc40af-3fed-4956-a433-197375fcfc02",
+    "originalId": "73bc40af-3fed-4956-a433-197375fcfc02",
+    "statement": "Muito se comentou sobre as mudanças da nova Diretriz Brasileira de Hipertensão Arterial, lançada em 2025. Considere um paciente homem, 57 anos, diabético, tabagista, teve acidente vascular cerebral isquêmico há qautro anos e faz uso contínuo de AAS, Atorvastatina, Metformina e Gliclazida. Comparece em consulta de retorno na Unidade Básica de Saúde após seis meses. Paciente apresentava PA de 132 x 87 mmHg na primeira consulta, sendo orientado adequadamente sobre as medidas não farmacológicas para pré-hipertensão arterial. Hoje apresenta PA de 130 x 85 mmHg e refere ter seguido adequadamente todas as orientações da última consulta. Considerando a Diretriz Brasileira de Hipertensão Arterial de 2025, qual a conduta correta nesta consulta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento medicamentoso em terapia dupla com Losartana e Anlodipino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter orientações de medidas não medicamentosas, visto que paciente não apresenta PA ≥ 140x90 mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar tratamento medicamentoso em monoterapia com Losartana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar exame de MAPA (Monitoração Ambulatorial da Pressão Arterial) e agendar retorno em seis meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente de 57 anos é classificado como de alto risco cardiovascular por ser diabético, tabagista e estar em prevenção secundária após um AVC isquêmico. Suas medidas de pressão arterial (130 x 85 mmHg) enquadram-se na categoria de Pressão Arterial Elevada definida pela Diretriz Brasileira de Hipertensão Arterial de 2025 (níveis entre 120-139 mmHg de sistólica ou 70-89 mmHg de diastólica). Para pacientes nesta faixa que possuem alto risco cardiovascular, a recomendação é iniciar tratamento farmacológico caso as metas não sejam atingidas após um período de mudanças no estilo de vida.\n\nExplicação das alternativas:\n\nAlternativa (a) Incorreta: A terapia combinada (uso de dois medicamentos) é a conduta inicial padrão para a maioria dos hipertensos já no estágio 1 (PA maior ou igual a 140/90 mmHg) ou estágio 2. No caso deste paciente, embora ele seja de alto risco, os níveis de PA ainda estão na categoria de Pressão Elevada (abaixo de 140/90 mmHg). Nessa situação específica, a diretriz recomenda iniciar o tratamento com apenas um fármaco (monoterapia).\n\nAlternativa (b) Incorreta: Manter apenas as medidas não medicamentosas seria insuficiente para este paciente. Em indivíduos de baixo risco, a conduta inicial para Pressão Elevada é apenas a mudança de estilo de vida. No entanto, para pacientes de alto risco cardiovascular, se a pressão permanecer acima de 130/80 mmHg após o acompanhamento inicial (neste caso, seis meses), o tratamento medicamentoso deve ser obrigatoriamente iniciado para reduzir a chance de novos eventos cardiovasculares.\n\nAlternativa (c) Correta: De acordo com a Diretriz de 2025, pacientes com Pressão Arterial Elevada (120-139 / 70-89 mmHg) que possuem risco cardiovascular elevado devem iniciar tratamento medicamentoso se a PA não baixar de 130/80 mmHg com medidas não farmacológicas. A escolha por monoterapia é correta pelo nível de PA apresentado. O Losartana, sendo um bloqueador dos receptores de angiotensina (BRA), é uma excelente escolha inicial, especialmente para pacientes diabéticos e com histórico de AVC.\n\nAlternativa (d) Incorreta: O MAPA é uma ferramenta importante para diagnóstico, mas o paciente já tem medidas de consultório consistentes em duas consultas diferentes e um perfil de risco que já define a necessidade de intervenção. Postergar o início do tratamento por mais seis meses em um paciente pós-AVC e diabético com PA de 130/85 mmHg configuraria inércia clínica e aumento do risco de novos eventos.\n\nGabarito: Alternativa (c).",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:15.574Z"
+  },
+  {
+    "id": "AJUDA_73d2566c-cd6d-4e40-b214-cf7f06c2373b",
+    "originalId": "73d2566c-cd6d-4e40-b214-cf7f06c2373b",
+    "statement": "Uma mulher de 60 anos, tabagista, apresenta tosse persistente e perda de peso. A tomografia computadorizada de tórax revela lesão de 3 cm no lobo superior direito. Qual é o próximo passo para o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Radiografia de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Broncoscopia com biópsia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Lavado broncoalveolar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observação e controle de sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve uma paciente de 60 anos, tabagista, com sintomas constitucionais (perda de peso) e respiratórios (tosse persistente), além de um achado tomográfico de uma lesão de 3 cm no lobo superior direito. Esse cenário é altamente suspeito de neoplasia pulmonar maligna (carcinoma broncogênico). O principal objetivo agora é obter a confirmação histopatológica para definir o tipo celular e o tratamento.\n\nAlternativa (a) Incorreta: A radiografia de tórax é, geralmente, o exame inicial de triagem. No entanto, a paciente já possui uma tomografia computadorizada (TC), que é um exame muito mais sensível e detalhado. Solicitar uma radiografia após a TC não acrescenta informações diagnósticas e atrasa a investigação.\n\nAlternativa (b) Correta: Para lesões pulmonares suspeitas de malignidade, o próximo passo fundamental é a biópsia para diagnóstico citopatológico ou histopatológico. A broncoscopia é um método eficaz para acessar lesões no lobo superior e regiões centrais, permitindo a visualização direta e a coleta de material (biópsia) para análise, sendo o procedimento de escolha neste contexto.\n\nAlternativa (c) Incorreta: O lavado broncoalveolar (LBA) é uma técnica útil principalmente na investigação de doenças infecciosas (como tuberculose ou fungos) e doenças intersticiais. Embora a citologia do LBA possa, por vezes, identificar células neoplásicas, sua sensibilidade para o diagnóstico de câncer de pulmão é significativamente inferior à da biópsia tecidual direta.\n\nAlternativa (d) Incorreta: A observação e o controle de sintomas (conduta expectante) jamais devem ser adotados diante de uma lesão de 3 cm em uma paciente com múltiplos fatores de risco (idade, tabagismo e perda de peso). Essa conduta permitiria a progressão de uma possível neoplasia, reduzindo as chances de tratamento curativo e aumentando a morbimortalidade.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Neoplasias Pulmonares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:15.574Z"
+  },
+  {
+    "id": "AJUDA_73d49b82-e46d-481c-ace6-a79bcd73e39e",
+    "originalId": "73d49b82-e46d-481c-ace6-a79bcd73e39e",
+    "statement": "Mulher de 32 anos, sem doenças prévias, realizou seu terceiro exame de Papanicolau e, desta vez, foi identificada uma lesão intraepitelial escamosa de baixo grau (LIE-BG). A médica explicou que não havia sinais infecciosos e de atrofia, portanto, sem necessidade de tratamento imediato. A paciente ficou preocupada e consultou um outro médico. Com base nos conceitos de rastreamento e investigação diagnóstica, as condutas esperadas deste segundo médico, segundo as diretrizes brasileiras do Instituto Nacional do Câncer (INCA), devem ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar imediatamente a paciente para realizar colposcopia e posteriormente definir as estratégias para tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Interromper o rastreamento, pois a lesão de baixo grau já foi identificada, implicando em conduta cirúrgica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar rastreamento anual por meio de colposcopia e biopsias seriadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter o programa de rastreamento, realizando o próximo Papanicolau em 3 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Manter o programa de rastreamento, realizando o próximo Papanicolau em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver esta questão, é fundamental conhecer as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero, publicadas pelo INCA. O achado de Lesão Intraepitelial Escamosa de Baixo Grau (LIE-BG ou LSIL) reflete, na maioria das vezes, a manifestação citopatológica da infecção transitória pelo HPV, que apresenta altas taxas de regressão espontânea.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O encaminhamento imediato para colposcopia é indicado para lesões de alto grau (LIE-AG), presença de células atípicas onde não se pode excluir lesão de alto grau (ASC-H), adenocarcinoma in situ ou em casos de persistência de lesões de baixo grau em exames subsequentes. A conduta inicial para um primeiro achado de LIE-BG em mulheres com 25 anos ou mais é a repetição da citologia.\n\nAlternativa b) Incorreta. A identificação de uma lesão de baixo grau não é motivo para interromper o rastreamento nem indica conduta cirúrgica. Lesões de baixo grau têm grande probabilidade de regressão e não devem ser tratadas com métodos excisionais sem antes passar por uma investigação colposcópica e confirmação histopatológica de lesão de alto grau persistente.\n\nAlternativa c) Incorreta. O protocolo para LIE-BG não envolve rastreamento anual por colposcopia nem biópsias seriadas. A biópsia é um procedimento diagnóstico invasivo, indicado apenas quando há achados anormais na colposcopia. O acompanhamento inicial é citológico.\n\nAlternativa d) Incorreta. A repetição do Papanicolau em 3 anos diante de um resultado de LIE-BG é a conduta preconizada pelo INCA exclusivamente para mulheres com menos de 25 anos. Como a paciente da questão tem 32 anos, ela deve seguir o protocolo para a faixa etária de 25 anos ou mais.\n\nAlternativa e) Correta. De acordo com as diretrizes do INCA, para mulheres com 25 anos ou mais que apresentam resultado de LIE-BG pela primeira vez, a conduta correta é a repetição do exame citopatológico em 6 meses. Se o novo exame for negativo, deve-se repetir novamente em 6 meses. Após dois resultados negativos em intervalos de 6 meses, a paciente retorna ao rastreamento trienal. Se o resultado de 6 meses mantiver a lesão ou apresentar algo mais grave, a colposcopia deverá ser realizada.\n\nResumo da conduta para LIE-BG (LSIL) segundo a idade:\n- Mulheres com menos de 25 anos: Repetir citologia em 3 anos.\n- Mulheres com 25 anos ou mais: Repetir citologia em 6 meses.\n- Mulheres imunossuprimidas: Encaminhar diretamente para colposcopia, independentemente da idade.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:15.574Z"
+  },
+  {
+    "id": "AJUDA_73e6244d-1027-4627-af78-a6a86fc9f9fd",
+    "originalId": "73e6244d-1027-4627-af78-a6a86fc9f9fd",
+    "statement": "H., 29 anos, vem à consulta pré-concepcional queixando-se de que sentiu, na última semana de todos seus ciclos menstruais do ano anterior, irritabilidade, humor deprimido, insônia, letargia e dificuldade para concentração. Conta que esses sintomas melhoram depois do início da sua menstruação. A médica resolveu prescrever um inibidor seletivo da recaptação da serotonina, optando pela sertralina. Sobre essa medicação, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sua meia-vida é de 2 a 3 dias, enquanto a de seu metabólito varia entre 7 e 9 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Age inibindo a recaptação de serotonina mediante bloqueio de seu transportador. Essa ação ocorre tanto no axônio terminal pós-sináptico quanto na área somatodendrítica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Por apresentar alta afinidade a receptores adrenérgicos, colinérgicos, histaminérgicos ou diazepínicos, tem alta incidência de efeitos anticolinérgicos, sedativos ou cardiovasculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Boca seca, cefaleia, diarreia e disfunção sexual estão entre suas reações adversas mais comuns.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico da paciente descreve o Transtorno Disfórico Pré-Menstrual (TDPM), caracterizado por sintomas afetivos e somáticos graves na fase lútea, com remissão logo após o início da menstruação. O tratamento de primeira linha é feito com Inibidores Seletivos da Recaptação de Serotonina (ISRS), como a sertralina.\n\nAlternativa a: Incorreta. A meia-vida da sertralina é de aproximadamente 26 horas (cerca de 1 dia), e a de seu principal metabólito ativo, a desmetilsertralina, varia entre 62 e 104 horas (aproximadamente 2 a 4 dias). Os valores citados na alternativa (2-3 dias para a droga e 7-9 dias para o metabólito) são característicos da fluoxetina e da norfluoxetina.\n\nAlternativa b: Incorreta. O erro está na localização da ação. A sertralina bloqueia o transportador de serotonina (SERT) para impedir a recaptação do neurotransmissor. Essa ação ocorre no neurônio pré-sináptico (tanto no terminal axonal quanto na região somatodendrítica), e não no terminal pós-sináptico. Ao bloquear a recaptação, a medicação aumenta a disponibilidade de serotonina na fenda sináptica para atuar nos receptores do neurônio seguinte.\n\nAlternativa c: Incorreta. Os ISRS são conhecidos justamente por sua seletividade. Eles possuem afinidade muito baixa por receptores histaminérgicos (H1), colinérgicos (muscarínicos) e alfa-1-adrenérgicos. A descrição de alta afinidade por esses receptores e a consequente alta incidência de efeitos sedativos, boca seca, constipação e riscos cardiovasculares é característica dos antidepressivos tricíclicos.\n\nAlternativa d: Correta. Esta alternativa lista os efeitos colaterais clássicos dos ISRS. A diarreia é um efeito gastrointestinal particularmente comum com a sertralina devido à estimulação de receptores serotoninérgicos periféricos no intestino. A cefaleia e a boca seca também são relatadas com frequência. A disfunção sexual (redução de libido e anorgasmia) é um dos efeitos adversos mais persistentes e comuns dessa classe medicamentosa.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Síndrome Pré-Menstrual",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:15.574Z"
+  },
+  {
+    "id": "AJUDA_73e6ddc7-023c-48e5-a5a6-0d4a1bcb7530",
+    "originalId": "73e6ddc7-023c-48e5-a5a6-0d4a1bcb7530",
+    "statement": "Paciente com queixa de corrimento vaginal de odor fétido, que piora durante a menstruação. Ao exame observado corrimento abundante, branco acinzentado e com pequenas bolhas. Após adição de KOH a 10% sobre uma gota do conteúdo vaginal notou-se odor semelhante a peixe cru. Qual o provável agente etiológico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trichomonas vaginalis",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Candida albicans",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gardnerella vaginalis",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "E. coli",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "HPV",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO quadro clínico descrito aponta para um diagnóstico de Vaginose Bacteriana (VB). Os principais elementos que sustentam essa conclusão são o corrimento branco-acinzentado, o odor fétido que se acentua com o aumento do pH vaginal (neste caso, durante a menstruação, devido à alcalinidade do sangue) e o teste do KOH a 10% positivo (Whiff test ou teste das aminas), que libera o odor característico de peixe podre.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. O Trichomonas vaginalis é o agente da Tricomoníase. Embora possa apresentar teste das aminas positivo e bolhas no corrimento (descrito como bolhoso ou espumoso), a coloração típica na Tricomoníase é amarelo-esverdeada. Além disso, costuma cursar com sinais inflamatórios intensos, como o colo em aspecto de morango (colpite macular), o que não foi mencionado no enunciado.\n\nb) INCORRETA. A Candida albicans causa a Candidíase Vulvovaginal. O corrimento da candidíase é tipicamente branco, aderente e com aspecto de leite coalhado ou queijo tipo cottage. O pH vaginal permanece ácido (menor que 4,5), o teste do KOH é negativo e o sintoma predominante é o prurido intenso, não o odor fétido.\n\nc) CORRETA. A Gardnerella vaginalis é o principal marcador bacteriano da Vaginose Bacteriana. A VB não é uma infecção inflamatória propriamente dita, mas um desequilíbrio da flora vaginal (disbiose), com redução dos Lactobacilos e proliferação de bactérias anaeróbias. Os critérios de Amsel, utilizados para o diagnóstico, incluem: 1) Corrimento branco-acinzentado, homogêneo e fino; 2) pH vaginal maior que 4,5; 3) Teste das aminas positivo (odor de peixe após KOH); e 4) Presença de Clue Cells (células-alvo) na microscopia. O enunciado descreve exatamente os critérios clínicos e o agente etiológico clássico.\n\nd) INCORRETA. A E. coli é uma bactéria do trato gastrointestinal que pode causar infecções urinárias ou participar de quadros de vaginite aeróbica, mas não é a causa do quadro clássico de vaginose bacteriana com odor fétido e teste de KOH positivo descrito.\n\ne) INCORRETA. O HPV (Papilomavírus Humano) é um vírus associado ao surgimento de verrugas genitais (condilomas) e lesões precursoras do câncer de colo de útero. Ele não causa corrimento vaginal com odor fétido ou alterações no teste do KOH.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:15.574Z"
+  },
+  {
+    "id": "AJUDA_73fb0ecc-feac-461a-a3b1-3fa70cf0b56b",
+    "originalId": "73fb0ecc-feac-461a-a3b1-3fa70cf0b56b",
+    "statement": "Uma paciente de 36 anos de idade, tentando engravidar, sem histórico de doenças ginecológicas relevantes, queixa-se de menstruação abundante e dor pélvica intermitente. Ao exame físico, o útero está aumentado e sensível. Uma ultrassonografia transvaginal revela a presença de um leiomioma intramural de classificação FIGO 3, de 5cm, localizado na parede posterior do útero, com características sugestivas de degeneração. A paciente está interessada em discutir opções de tratamento, já que deseja manter a fertilidade. \n\nDe acordo com a classificação FIGO - Federação Internacional de Ginecologia e Obstetrícia - para leiomiomas uterinos, o termo FIGO 3, atribuída ao leiomioma desta paciente, significa:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O leiomioma está localizado inteiramente na camada subserosa do útero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O leiomioma é submucoso, com mais de 50% do volume invadindo a cavidade uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O leiomioma é intramural, sem contato com o endométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O leiomioma é intramural, em contato com o endométrio, mas sem invadir a cavidade uterina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A classificação FIGO para leiomiomas uterinos, parte integrante do sistema PALM-COEIN, é essencial para a prática ginecológica, pois padroniza a localização dos miomas, auxiliando na decisão terapêutica, especialmente em pacientes que desejam preservar a fertilidade. Ela organiza os miomas em categorias numéricas de 0 a 8.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Miomas localizados na camada subserosa são classificados como FIGO 5 (quando possuem 50% ou mais de seu volume no miométrio), FIGO 6 (quando menos de 50% do volume é intramural) ou FIGO 7 (quando são pediculados subserosos).\n\nAlternativa b: Incorreta. Um mioma submucoso com mais de 50% do seu volume visível na cavidade uterina (o que significa que menos de 50% de seu volume é intramural) é classificado como FIGO 1. Se ele fosse totalmente intracavitário e pediculado, seria FIGO 0.\n\nAlternativa c: Incorreta. O mioma puramente intramural, ou seja, aquele que não possui contato com o endométrio (camada interna) e nem com a serosa (camada externa), sendo totalmente cercado por miométrio, recebe a classificação FIGO 4.\n\nAlternativa d: Correta. O leiomioma FIGO 3 é definido como um nódulo que é 100% intramural, mas que, diferentemente do tipo 4, possui contato direto com o endométrio. Importante notar que, apesar do contato, ele não distorce ou invade a cavidade uterina. Essa proximidade com a mucosa ajuda a explicar sintomas de sangramento uterino anormal relatados pela paciente.\n\nResumo da classificação FIGO (0 a 4):\n- FIGO 0: Intracavitário pediculado.\n- FIGO 1: Submucoso com componente intramural menor que 50%.\n- FIGO 2: Submucoso com componente intramural maior ou igual a 50%.\n- FIGO 3: 100% intramural, mas em contato com o endométrio.\n- FIGO 4: Intramural puro (sem contato com serosa ou endométrio).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Miomatose Uterina"
+    ],
+    "difficulty": 33.113294339221014,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:15.574Z"
+  },
+  {
+    "id": "AJUDA_73fea6c1-5b84-404e-ae64-b5074bf16ffe",
+    "originalId": "73fea6c1-5b84-404e-ae64-b5074bf16ffe",
+    "statement": "Mulher, 28 anos de idade, previamente hígida, procura atendimento de urgência. Queixa-se de diarreia aquosa há 4 dias com febre baixa. Teve 6 episódios por dia, com cólicas intensas, náuseas e hiporexia. O seu filho de 4 anos de idade está com os mesmos sintomas. Sinais vitais com PA de 110×68 mmHg, FC de 94 bpm, FR de 18 irpm, SpO2 de 99%, temperatura de 37,1 °C. Ao exame clínico, apresenta regular estado geral, mucosas secas, peristalse aumentada, desconforto abdominal difuso.\n\n• Exames laboratoriais:\nHb: 13,7 g/dL\nLeucócitos: 15.890/mm3\nPlaquetas: 384 mil/mm3\nUr: 47 mg/dL\nCr: 1,18 mg/dL\nNa+: 128 mEq/L\nK+: 3,7 mEq/L\nHCO3-: 29 mEq/L\n\nAssinale a alternativa que apresenta um mecanismo fisiopatológico que faz parte do desenvolvimento da hiponatremia desta paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Secreção inapropriada de ADH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Liberação de peptídeo natriurético.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Elevação de aldosterona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Perda fecal de potássio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico e laboratorial é compatível com gastroenterite aguda infecciosa associada a desidratação (hipovolemia) e hiponatremia hipotônica hipovolêmica (sódio sérico de 128 mEq/L). \n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A secreção de hormônio antidiurético (ADH) está aumentada, porém essa resposta é fisiológica e apropriada, decorrente do estímulo hemodinâmico não osmótico da hipovolemia (barorreceptores). A secreção dita \"inapropriada\" (SIADH) é uma condição associada a pacientes euvolêmicos, sem estímulo de volemia ou osmolaridade para sua liberação.\n\nAlternativa B (Incorreta): Os peptídeos natriuréticos (como ANP e BNP) são liberados em situações de hipervolemia e sobrecarga das câmaras cardíacas, promovendo natriurese e diurese. Na vigência de hipovolemia e desidratação, sua secreção encontra-se suprimida.\n\nAlternativa C (Correta): A depleção do volume circulante efetivo secundária às perdas diarreicas estimula diretamente o Sistema Renina-Angiotensina-Aldosterona (SRAA). O aumento da secreção de aldosterona atua nos túbulos coletores renais promovendo a reabsorção de sódio e água na tentativa de restaurar o volume intravascular, além de aumentar a excreção de H+, contribuindo para a alcalose metabólica de contração evidenciada pelo bicarbonato de 29 mEq/L.\n\nAlternativa D (Incorreta): A perda de potássio nas fezes é comum em diarreias, mas não é o mecanismo gerador da hiponatremia. O distúrbio de sódio decorre primariamente das perdas gastrointestinais associadas ao estímulo neuro-hormonal de retenção hídrica induzido pela hipovolemia.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Diarreia",
+      "Distúrbios do Sódio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:15.574Z"
+  },
+  {
+    "id": "AJUDA_74046531-d7d7-4d1b-97f6-8ca02f3a971a",
+    "originalId": "74046531-d7d7-4d1b-97f6-8ca02f3a971a",
+    "statement": "Paciente de 60 anos, apresenta dor abdominal em hipocôndrio direito associada à febre nas últimas 12 horas. Durante o exame físico, encontra-se febril (38,7°C), ictérico (2+/4+) e com pressão arterial de 110/70 mmHg. A palpação do abdome revela dor à compressão em hipocôndrio direito, sem sinais de peritonite. Os exames laboratoriais mostram leucocitose com desvio à esquerda e elevação de bilirrubina direta e fosfatase alcalina. Uma ultrassonografia abdominal evidencia dilatação das vias biliares intra e extra-hepáticas, com presença de cálculo em via biliar principal. Dentre os itens abaixo, qual a melhor conduta terapêutica para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibioticoterapia e seguimento ambulatorial para programação cirúrgica de derivação biliodigestiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Antibioticoterapia e colangiopancreatografia retrógrada endoscópica para desobstrução da via biliar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia aberta de urgência para remoção do cálculo e drenagem biliar externa com dreno de Kher.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidratação venosa e antibioticoterapia para esfriar o processo e abordagem cirúrgica após 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta a clássica Tríade de Charcot, composta por dor abdominal em hipocôndrio direito, febre e icterícia. Esse conjunto de sinais e sintomas, associado aos achados laboratoriais (leucocitose e elevação de enzimas colestáticas) e ao exame de imagem (dilatação de via biliar com cálculo no colédoco), sela o diagnóstico de Colangite Aguda causada por coledocolitíase. A colangite é uma infecção bacteriana ascendente decorrente da obstrução do fluxo biliar, sendo considerada uma urgência médica.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. A antibioticoterapia é fundamental, mas o tratamento não termina nela. A colangite exige a desobstrução da via biliar de forma imediata ou precoce, dependendo da gravidade. O seguimento ambulatorial é contraindicado devido ao alto risco de evolução para sepse. Além disso, a derivação biliodigestiva é uma cirurgia de maior porte reservada para casos específicos (como dilatações císticas ou estenoses benignas/malignas complexas), não sendo a primeira escolha para um cálculo biliar simples.\n\nAlternativa b) Correta. Esta é a conduta padrão-ouro. O paciente deve ser internado, estabilizado com hidratação venosa e deve ser iniciado o uso de antibióticos de amplo espectro para cobrir germes gram-negativos e anaeróbios. Simultaneamente, deve-se realizar a descompressão biliar. A Colangiopancreatografia Retrógrada Endoscópica (CPRE) é o método preferencial por ser minimamente invasivo, permitindo a realização de papilotomia e a retirada do cálculo, resolvendo a obstrução e a fonte da infecção.\n\nAlternativa c) Incorreta. Embora a cirurgia aberta com drenagem biliar externa (dreno de Kehr) tenha sido muito utilizada no passado, hoje ela é considerada uma conduta de exceção. Devido à sua maior morbidade e mortalidade em pacientes agudamente enfermos, a cirurgia convencional só é indicada quando o acesso endoscópico (CPRE) ou o acesso percutâneo trans-hepático não estão disponíveis ou falham.\n\nAlternativa d) Incorreta. A estratégia de \"esfriar o processo\" para operar tardiamente (após 7 a 10 dias) é algumas vezes discutida na colecistite aguda (embora a tendência atual seja a cirurgia precoce), mas nunca na colangite. Na colangite, a persistência da obstrução mantém a via biliar sob alta pressão, favorecendo a passagem de bactérias e toxinas para a corrente sanguínea. Retardar a desobstrução pode levar o paciente ao choque séptico e à falência múltipla de órgãos (evoluindo da Tríade de Charcot para a Pêntade de Reynolds).",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Colecistite e Colangite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:15.574Z"
+  },
+  {
+    "id": "AJUDA_740591c0-4e26-4f7f-97cd-f55cc9b57454",
+    "originalId": "740591c0-4e26-4f7f-97cd-f55cc9b57454",
+    "statement": "Gestante, 39 semanas de gestação, em trabalho de parto, encontra-se em fase ativa. Durante a cardiotocografia, observa-se bradicardia fetal sustentada (FCF = 90 bpm) há mais de 10 minutos, não responsiva a medidas iniciais como mudança de decúbito materno, oxigênio e suspensão de ocitocina. Ao exame vaginal, colo dilatado em 6 cm, bolsa íntegra, apresentação cefálica alta. Com base no quadro clínico apresentado, tem-se que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a conduta adequada é manter a gestação sob observação, já que a dilatação cervical ainda é insuficiente para parto vaginal e não há indicação de intervenção imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o diagnóstico de sofrimento fetal agudo só pode ser confirmado por pH de sangue de couro cabeludo < 7,20, sendo este exame obrigatório antes de qualquer conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o sofrimento fetal agudo cursa tipicamente com taquicardia fetal isolada (> 160 bpm), sendo a bradicardia sustentada um achado inespecífico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a bradicardia fetal prolongada é sinal clássico de sofrimento fetal agudo e, diante da falha das medidas iniciais, indica resolução imediata da gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE CLÍNICA DO CASO\n\nO quadro descreve uma gestante em fase ativa de trabalho de parto apresentando um padrão de cardiotocografia classificado como Categoria III (ou padrão terminal/crítico), caracterizado por bradicardia fetal sustentada (FCF de 90 bpm por mais de 10 minutos). A bradicardia fetal prolongada, especialmente quando não responde às medidas de ressuscitação intrauterina, é um indicador fidedigno de hipóxia fetal grave e iminência de acidose metabólica, configurando sofrimento fetal agudo.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A conduta expectante ou observação é absolutamente contraindicada neste cenário. A bradicardia mantida por mais de 10 minutos indica que o feto esgotou sua reserva de oxigênio e seus mecanismos de compensação. Aguardar a evolução natural da dilatação cervical em um quadro de sofrimento fetal agudo resulta em alto risco de óbito fetal ou sequelas neurológicas graves (paralisia cerebral).\n\nAlternativa B (Incorreta): O pH do couro cabeludo fetal é uma ferramenta diagnóstica complementar para avaliar o bem-estar fetal em casos de padrões indeterminados. No entanto, em situações de bradicardia severa e sustentada, o diagnóstico clínico de sofrimento fetal já está estabelecido. Perder tempo tentando realizar uma coleta de pH retardaria a interrupção da gestação, o que é inaceitável em uma emergência obstétrica. Além disso, a apresentação fetal alta dificulta tecnicamente esse procedimento.\n\nAlternativa C (Incorreta): A taquicardia fetal (FCF acima de 160 bpm) pode ocorrer em estágios iniciais de hipóxia, mas também é comum em casos de febre materna, desidratação, uso de certas medicações ou prematuridade. Por outro lado, a bradicardia sustentada (abaixo de 110 bpm e, neste caso, 90 bpm) é um sinal clássico, grave e muito específico de sofrimento fetal agudo quando ocorre durante o trabalho de parto.\n\nAlternativa D (Correta): Esta alternativa descreve a conduta padrão em obstetrícia. Diante de uma bradicardia fetal prolongada que não reverte com as manobras iniciais de ressuscitação intrauterina (decúbito lateral esquerdo, oxigenoterapia, hidratação e suspensão de ocitocina), a interrupção da gestação deve ser imediata. Como a paciente apresenta apenas 6 cm de dilatação e a apresentação fetal está alta (não permitindo o uso de fórceps de alívio ou vácuo-extrator), a via de escolha para a resolução imediata é a cesariana de emergência.\n\nCONCLUSÃO\n\nO diagnóstico de sofrimento fetal agudo é clínico e baseado na monitorização da frequência cardíaca fetal. A persistência da bradicardia após as manobras iniciais impõe o parto imediato pela via mais rápida disponível, que, no contexto de uma dilatação incompleta e apresentação alta, é a via abdominal. Portanto, a alternativa D está correta.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Vitalidade Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:15.574Z"
+  },
+  {
+    "id": "AJUDA_74080d35-e317-4cec-a238-12e964010ba1",
+    "originalId": "74080d35-e317-4cec-a238-12e964010ba1",
+    "statement": "Homem, 43 anos de idade, possui antecedentes de diabetes melito tipo 2 e sobrepeso. Comparece em consulta para seguimento de controle glicêmico. Marido do paciente refere ronco esporádico em noites após ingestão de álcool e nega pausas respiratórias. Paciente nega sonolência diurna ou cefaleia. Foi realizada aferição de pressão arterial na triagem, que identificou valor de 148×92 mmHg. Qual deve ser o próximo passo na avaliação da pressão arterial em consultório?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar uma polissonografia tipo 1 (laboratório de sono).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar Monitorização Ambulatorial da Pressão Arterial (MAPA).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reavaliar medida de pressão arterial em consulta de retorno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Checar comprimento e largura do manguito utilizado na medição.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O objetivo desta questão é avaliar o conhecimento sobre a técnica correta de aferição da pressão arterial (PA) e os fatores que podem falsear seus resultados, com destaque para a adequação do equipamento ao biotipo do paciente.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Embora a apneia obstrutiva do sono seja uma causa importante de hipertensão secundária, o quadro clínico apresentado é de baixíssima probabilidade, já que o ronco é restrito ao uso de álcool e não há sintomas diurnos (como sonolência excessiva ou cefaleia matinal) nem pausas relatadas. Além disso, a investigação de causas secundárias não é o primeiro passo diante de uma medida isolada de PA.\n\nAlternativa b: Incorreta. A MAPA é um exame padrão para confirmação diagnóstica e afastamento de hipertensão do avental branco, porém não deve ser solicitada antes de o médico certificar-se de que a medida realizada em consultório foi tecnicamente válida.\n\nAlternativa c: Incorreta. Embora o diagnóstico de hipertensão comumente requeira medidas em mais de uma ocasião, simplesmente postergar a reavaliação para outra consulta sem antes conferir a fidedignidade da aferição atual constitui falha técnica. O próximo passo imediato no consultório deve ser verificar a técnica da medida.\n\nAlternativa d: Correta. Pacientes com sobrepeso ou obesidade costumam ter circunferência de braço aumentada. O uso de um manguito pequeno demais para o braço do paciente necessita de pressões maiores para ocluir a artéria braquial, resultando em superestimação da pressão arterial (falso positivo para hipertensão). As diretrizes recomendam que a largura do manguito cubra 40% da circunferência do braço e o comprimento da bolsa cubra pelo menos 80%. Assim, checar a adequação do manguito e repetir a aferição é o passo prioritário.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:15.574Z"
+  }
+]

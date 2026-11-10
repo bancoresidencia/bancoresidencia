@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_9e368bd9-e01e-4d1c-a499-9728ad266ac8",
+    "originalId": "9e368bd9-e01e-4d1c-a499-9728ad266ac8",
+    "statement": "Homem de 52 anos refere dispneia aos esforços. AP: HAS, DM2 e obesidade. Exame físico: estase jugular 2+/4+, crepitações pulmonares em bases bilateralmente e edema de membros inferiores sem sinais inflamatórios. Radiografia de tórax: congestão pulmonar grave. Ecocardiograma: aumento de átrio esquerdo, aumento da espessura da parede do ventrículo esquerdo e fração de ejeção de 55%.\nCom o objetivo de aumentar a sobrevida, a melhor conduta para esse paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "introduzir inibidor da enzima conversora da angiotensina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "introduzir espironolactona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "introduzir inibidor da SGLT2.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "tratar as comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta sinais clássicos de Insuficiência Cardíaca (IC), como dispneia aos esforços, estase jugular, crepitações pulmonares e edema de membros inferiores. O ecocardiograma revela uma fração de ejeção de 55%, o que classifica o quadro como Insuficiência Cardíaca com Fração de Ejeção Preservada (ICFEp), definida por fração de ejeção maior ou igual a 50%. Além disso, há evidências estruturais de disfunção, como o aumento do átrio esquerdo e a hipertrofia ventricular.\n\nExplicação das alternativas:\n\nAlternativa A (Incorreta): Os inibidores da enzima conversora da angiotensina (IECA) são fundamentais para reduzir a mortalidade na IC com fração de ejeção reduzida (ICFEr). No entanto, na ICFEp, grandes estudos clínicos (como o PEP-CHF) não conseguiram demonstrar um benefício claro na redução de mortalidade cardiovascular ou hospitalizações. Eles podem ser usados para o controle da hipertensão, mas não são a escolha principal para aumentar a sobrevida especificamente nesta condição.\n\nAlternativa B (Incorreta): A espironolactona, um antagonista do receptor mineralocorticoide, foi testada na ICFEp no estudo TOPCAT. Embora tenha sugerido uma redução nas hospitalizações em certas regiões geográficas e subgrupos, o estudo não atingiu seu desfecho primário de redução de morte cardiovascular na população geral do estudo de forma robusta o suficiente para ser a primeira escolha isolada visando à sobrevida.\n\nAlternativa C (Correta): Os inibidores do SGLT2 (como a empagliflozina e a dapagliflozina) revolucionaram o tratamento da ICFEp. Os estudos EMPEROR-Preserved e DELIVER demonstraram de forma inequívoca que esses fármacos reduzem o desfecho composto de morte cardiovascular e hospitalização por insuficiência cardíaca em pacientes com fração de ejeção preservada ou levemente reduzida, independentemente da presença de diabetes. Atualmente, esta é a classe de medicamentos com o maior nível de evidência para melhorar o prognóstico desses pacientes.\n\nAlternativa D (Incorreta): O controle de comorbidades como hipertensão, diabetes e obesidade é um pilar importante no manejo da ICFEp e ajuda no controle dos sintomas. Entretanto, o enunciado solicita a melhor conduta com o objetivo específico de aumentar a sobrevida. Com o advento dos iSGLT2, o tratamento medicamentoso direcionado passou a ter um impacto prognóstico superior ao manejo isolado de comorbidades.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:18.966Z"
+  },
+  {
+    "id": "AJUDA_9e381387-72a8-409e-b98f-2756e85cd2bd",
+    "originalId": "9e381387-72a8-409e-b98f-2756e85cd2bd",
+    "statement": "Como médico em uma UBS, você realiza uma visita domiciliar de um paciente de 69 anos, acamado por conta de quadro demencial, com trombose venosa profunda em membro inferior esquerdo, necessita de múltiplas visitas para orientação da família sobre os cuidados gerais, otimização de anticoagulação e controle do quadro álgico. Sendo assim, a melhor indicação de cuidado, neste caso, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "indicar internação hospitalar, possível indicação de leito de cuidados paliativos, para acolhimento da família e controle da dor do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicar internação hospitalar, observando a necessidade da anticoagulação plena e otimização da analgesia, de forma a ser abordado pela equipe multidisciplinar de forma intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Atenção Domiciliar 3 (AD3), realizada pelo programa Melhor em Casa, já que será necessária a participação da equipe multidisciplinar associada ao NASF.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "atenção Domiciliar 2 (AD2), realizada pelo Programa Melhor em Casa, indicando maior frequência das visitas e otimização da assistência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "atenção Domiciliar 1 (AD1), realizada pelo Programa Melhor em Casa, como suporte multiprofissional, para melhor acolher família e paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para gabaritar questões sobre Atenção Domiciliar (AD) no SUS, o candidato deve dominar os critérios de elegibilidade da Portaria nº 825/2016, que classifica a assistência em três níveis de complexidade (AD1, AD2 e AD3) dentro do Programa Melhor em Casa.\n\nAnálise do caso clínico: O paciente apresenta uma condição crônica agudizada (TVP em paciente demenciado) que exige cuidado moderadamente complexo (ajuste de anticoagulação e controle álgico) e alta frequência de visitas.\n\nAnálise das alternativas:\n\na) Incorreta. O objetivo da Atenção Domiciliar é justamente evitar a hospitalização desnecessária, que expõe o paciente idoso e demenciado a riscos maiores de infecção hospitalar e delirium. O controle de dor e a anticoagulação podem ser realizados com segurança no domicílio se houver suporte adequado.\n\nb) Incorreta. A internação para \"abordagem multidisciplinar\" é desnecessária se o município dispõe do Serviço de Atenção Domiciliar (SAD). O paciente está clinicamente estável para manejo domiciliar, permitindo que a equipe leve o suporte terapêutico até a residência.\n\nc) Incorreta. A AD3 é reservada para casos de altíssima complexidade. O principal critério que diferencia AD3 de AD2 é a necessidade de ventilação mecânica (invasiva ou não), procedimentos de diálise peritoneal ou uso de mais de uma medicação endovenosa contínua. O quadro do paciente não exige suporte tecnológico desse nível. Além disso, o suporte especializado é feito pela EMAD/EMAP e não pelo NASF.\n\nd) Correta. A AD2 é o nível de cuidado destinado a pacientes que possuem doenças agudizadas ou crônicas que necessitem de reabilitação e cuidados intensivos (pelo menos uma visita semanal da equipe). O acompanhamento de TVP (que exige exames laboratoriais e ajuste fino de dose) e o manejo de dor em paciente acamado são indicações clássicas de AD2, pois superam a capacidade operacional de uma equipe de Saúde da Família comum (UBS).\n\ne) Incorreta. A AD1 é de responsabilidade da Unidade Básica de Saúde (Equipe de Saúde da Família). É voltada para pacientes com doenças crônicas controladas, que necessitam de cuidados de menor frequência e sem necessidade de intervenções especializadas imediatas. O caso descrito possui complexidade terapêutica (TVP e anticoagulação) que demanda o suporte da EMAD (Equipe Multiprofissional de Atenção Domiciliar).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:18.966Z"
+  },
+  {
+    "id": "AJUDA_9e38818a-bba6-4b7f-a305-f6067e4a5d45",
+    "originalId": "9e38818a-bba6-4b7f-a305-f6067e4a5d45",
+    "statement": "Mulher de 40 anos, casada há 15 anos, trabalha como auxiliar administrativa e tem dois filhos adolescentes. Durante uma consulta na Unidade Básica de Saúde para tratar uma dor crônica nas costas, ela revela ao médico, entre divertida e constrangida, que o marido controla seu acesso ao próprio salário para que as contas fiquem sempre controladas. Ela gostaria de ter um cartão de crédito, mas o marido alega que isso poderá desregular a vida financeira da família. Questionada, ela expressa que se sente impotente e gostaria de mudar, mas não vê saída, pois depende financeiramente dele para o sustento da casa. Ressalta que não quer que os filhos saibam dessa situação, temendo que isso afete a relação deles com o pai. Considerando a situação apresentada, qual deve ser a conduta do médico de família da UBS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Explicar à paciente que o comportamento do marido caracteriza violência patrimonial e orientá-la sobre seus direitos e a possibilidade de buscar ajuda jurídica e apoio psicológico, oferecendo-se para desenvolver um plano de segurança financeira junto com a paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Reconhecer que o comportamento do marido é uma forma de violência patrimonial e encaminhá-la para um assistente social da UBS, que poderá envolver outros membros da equipe, como o psicólogo e a enfermeira, para discutir as implicações financeiras e emocionais da situação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sugerir que ela considere abrir uma conta bancária secreta ou procurar um advogado de confiança para garantir que ela tenha acesso ao seu dinheiro, sem a necessidade de envolver a equipe da UBS ou os filhos, preservando, assim, sua autonomia financeira e privacidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reconhecer a violência patrimonial e ponderar que questões financeiras são comuns em casamentos e que é possível resolver a situação com diálogo. O médico pode sugerir que o casal participe de um aconselhamento financeiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso:\nO relato da paciente descreve uma situação em que o cônjuge controla o acesso dela aos seus próprios rendimentos financeiros, gerando sentimentos de impotência e falta de autonomia. De acordo com a Lei Maria da Penha (Lei n. 11.340/2006), esse comportamento configura violência patrimonial, definida como qualquer conduta que subtraia ou controle bens, instrumentos de trabalho, documentos pessoais ou recursos econômicos da mulher. No contexto da Estratégia Saúde da Família, o médico deve estar apto a identificar, acolher e orientar a paciente de forma a garantir sua segurança e autonomia.\n\nAlternativa (a): Correta. Esta é a conduta mais completa e adequada. O médico identifica corretamente a violência patrimonial e atua na educação em saúde e direitos, informando a paciente sobre sua situação. O oferecimento de apoio psicológico e a elaboração de um plano de segurança financeira são passos essenciais para empoderar a mulher, permitindo que ela tome decisões informadas e seguras, respeitando seu tempo e privacidade.\n\nAlternativa (b): Incorreta. Embora a equipe multiprofissional (assistente social, psicólogo e enfermeiro) seja fundamental no suporte a vítimas de violência, a alternativa peca ao focar no encaminhamento como ação principal, \"terceirizando\" o acolhimento inicial que deve ser feito pelo médico que identificou a demanda. O plano de ação e a orientação sobre direitos devem começar no momento da revelação, fortalecendo o vínculo médico-paciente.\n\nAlternativa (c): Incorreta. Sugerir ações clandestinas, como abrir uma conta secreta, sem o devido suporte de uma rede de proteção ou um plano de segurança estruturado, pode ser perigoso. Se o agressor descobrir tais medidas sem que a mulher esteja amparada legal ou psicologicamente, a violência pode escalar para formas físicas ou psicológicas mais graves. A conduta deve ser institucional e baseada em direitos, não em estratégias de ocultamento improvisadas.\n\nAlternativa (d): Incorreta. Esta alternativa é inadequada por dois motivos principais. Primeiro, ela minimiza a violência ao tratá-la como uma \"questão financeira comum\" ou um problema de diálogo. Violência patrimonial é uma violação de direitos humanos e não um desentendimento doméstico. Segundo, o aconselhamento de casal é contraindicado em situações de violência doméstica, pois o desequilíbrio de poder entre as partes impede uma negociação justa e pode colocar a mulher em risco de represálias após as sessões.\n\nGabarito: Alternativa (a).",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:18.966Z"
+  },
+  {
+    "id": "AJUDA_9e42abd5-1729-4eab-80eb-0625c68be0f4",
+    "originalId": "9e42abd5-1729-4eab-80eb-0625c68be0f4",
+    "statement": "Mulher de 55 anos relata dor torácica intensa e dispneia súbita há 1 hora. Evolui com parada cardiorrespiratória em ritmo apresentado em ECG (conforme a imagem a seguir).\n\nApós chamar ajuda, a sequência de medidas no atendimento deve ser a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "compressões torácicas, administração de epinefrina, compressões torácicas e administração de epinefrina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "desfibrilação, compressões torácicas, desfibrilação e administração de epinefrina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "intubação orotraqueal, compressões torácicas, administração de epinefrina e compressões torácicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "desfibrilação, administração de amiodarona, compressões torácicas e administração de epinefrina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO ELETROCARDIOGRAMA E DIAGNÓSTICO\n\nA imagem do ECG apresentada exibe um ritmo caótico, com ondulações irregulares e ausência de complexos QRS ou ondas P e T definíveis. Este é o padrão clássico de uma Fibrilação Ventricular (FV). Clinicamente, a paciente apresenta uma parada cardiorrespiratória (PCR) em ritmo chocável, provavelmente decorrente de um evento coronariano agudo (dor torácica prévia).\n\nCONDUTA SEGUNDO O PROTOCOLO DE SUPORTE AVANÇADO DE VIDA (ACLS)\n\nPara ritmos chocáveis (Fibrilação Ventricular e Taquicardia Ventricular sem pulso), a sequência de prioridades é a seguinte:\n\n1. Desfibrilação: Assim que o desfibrilador estiver disponível, aplica-se o primeiro choque.\n2. RCP: Inicia-se imediatamente 2 minutos de manobras de reanimação (compressões e ventilações).\n3. Nova checagem e Desfibrilação: Se o ritmo persistir chocável após 2 minutos, aplica-se o segundo choque.\n4. Epinefrina: Após o segundo choque, durante a retomada das compressões, administra-se a primeira dose de epinefrina (1 mg), repetindo a cada 3 a 5 minutos.\n5. Amiodarona ou Lidocaína: São administradas apenas se o ritmo persistir após o terceiro choque.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Esta sequência (apenas compressões e epinefrina precoce) é o protocolo para ritmos não chocáveis, como Assistolia ou Atividade Elétrica Sem Pulso (AESP). Na FV, a desfibrilação é a medida que mais impacta a sobrevida.\n\nAlternativa b) Correta. Esta alternativa descreve corretamente a progressão do atendimento em ritmos chocáveis: desfibrilação inicial, seguida de ciclo de compressões, novo choque caso a arritmia persista e a administração de epinefrina após a segunda tentativa de desfibrilação.\n\nAlternativa c) Incorreta. A intubação orotraqueal é uma medida de via aérea avançada que não deve atrasar o início das compressões nem a desfibrilação. Atualmente, prioriza-se o suporte básico de alta qualidade e o tratamento elétrico antes de procedimentos invasivos de via aérea.\n\nAlternativa d) Incorreta. A amiodarona é um antiarrítmico indicado para FV/TVSP refratária. No protocolo atual, ela deve ser administrada somente após o terceiro choque, e não logo após a primeira desfibrilação. A epinefrina precede o uso de antiarrítmicos na sequência cronológica do atendimento.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Parada Cardiorrespiratória (PCR)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/8cca9a491e4bba4cf97fd30bfad186dd422142d4a16729d8c04c5fcda0f32d00.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_9e42abd5-1729-4eab-80eb-0625c68be0f4_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:19.351Z"
+  },
+  {
+    "id": "AJUDA_9e4982c9-cb6a-4ce5-83a9-03aef1b834e1",
+    "originalId": "9e4982c9-cb6a-4ce5-83a9-03aef1b834e1",
+    "statement": "Um homem de 55 anos, com doença renal do diabetes e em acompanhamento ambulatorial, relata seguir dieta com 1,6 g/kg de proteína por dia, orientado por seu treinador esportivo para manutenção de massa muscular. Traz exames laboratoriais: creatinina sérica: 2,9 mg/dL (VR 0,6–1,3), taxa de filtração glomerular: 25 mL/min/1,73 m2, albuminúria: 220 mg/g (VR <30), potássio sérico: 4,9 mEq/L (VR 3,5–5,0), bicarbonato sérico: 21 mEq/L (VR 22–28).\n\nQual conduta apresenta maior impacto na progressão da doença renal e no controle das complicações metabólicas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter a ingestão proteica conforme orientado pelo treinador físico como estratégia para preservar massa muscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reduzir a ingestão proteica pela metade e orientar dar preferência por alimentos proteicos de origem vegetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Reduzir em 5-10% a ingestão de proteínas em paralelo ao uso de inibidor de SGLT2 para neutralizar possíveis efeitos do excesso proteico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Priorizar a restrição de cálcio e sódio, preservando a possibilidade de a dieta ser hiperproteica ou normoproteica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Este é um caso de Doença Renal do Diabetes (DRD) em estágio avançado (estágio G4, com Taxa de Filtração Glomerular de 25 mL/min/1,73 m²). O ponto central da questão é o impacto da dieta na hemodinâmica renal e no equilíbrio metabólico.\n\nAnálise das alternativas:\n\na) Incorreta. Uma ingestão proteica de 1,6 g/kg/dia é considerada hiperproteica e é contraindicada para pacientes com Doença Renal Crônica (DRC) nos estágios 3 a 5. O excesso de proteínas causa vasodilatação da arteríola aferente, aumentando a pressão intraglomerular (hiperfiltração), o que acelera a perda de função renal e aumenta a albuminúria. Além disso, a carga ácida derivada das proteínas animais contribui para a acidose metabólica, já presente neste paciente (bicarbonato de 21 mEq/L).\n\nb) Correta. As diretrizes atuais (como KDIGO e KDOQI) recomendam uma restrição proteica para 0,6 a 0,8 g/kg/dia em pacientes com DRC nos estágios 3-5 não dialíticos para retardar a progressão da doença. Reduzir a ingestão pela metade (de 1,6 para 0,8 g/kg) coloca o paciente dentro do alvo terapêutico. A preferência por proteínas de origem vegetal é benéfica, pois estas possuem menor biodisponibilidade de fósforo, menor carga ácida e podem reduzir a pressão intraglomerular de forma mais eficaz do que a proteína animal, auxiliando no controle da acidose e da progressão da doença.\n\nc) Incorreta. Uma redução de apenas 5-10% na ingestão de proteínas manteria o paciente em uma dieta hiperproteica (aproximadamente 1,4 g/kg/dia), o que é lesivo ao rim. Embora os inibidores de SGLT2 tenham efeito nefroprotetor por reduzirem a pressão intraglomerular (via feedback tubuloglomerular), eles não são capazes de neutralizar o impacto hemodinâmico negativo de uma dieta com tamanha sobrecarga proteica.\n\nd) Incorreta. Embora a restrição de sódio seja fundamental para o controle da pressão arterial e da proteinúria, a restrição de cálcio não é uma prioridade universal e deve ser individualizada. O erro principal da alternativa é sugerir a preservação de uma dieta hiperproteica ou normoproteica para um paciente com TFG de 25 mL/min. O manejo dietético das proteínas é um dos pilares para evitar o acúmulo de toxinas urêmicas e controlar complicações como a acidose e o hiperparatireoidismo secundário.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença Renal Crônica (DRC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:19.351Z"
+  },
+  {
+    "id": "AJUDA_9e57bb31-f2b7-4078-bafb-a23e2dbecbcd",
+    "originalId": "9e57bb31-f2b7-4078-bafb-a23e2dbecbcd",
+    "statement": "Pedro nasceu com 35 semanas de gestação, peso ao nascer 1.950g, comprimento 46cm e perímetro cefálico 33 cm. De acordo com as curvas de crescimento intrauterino (Intergrowth- 21st), o peso de nascimento estava abaixo do P10. Quais os diagnósticos desta criança?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prematuridade, baixo peso ao nascer, retardo de crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prematuridade, baixo peso ao nascer, pequeno para Idade Gestacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prematuridade, muito baixo peso ao nascer, retardo de crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prematuridade, muito baixo peso ao nascer, pequeno para Idade Gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para classificar o recém-nascido Pedro, devemos observar três critérios fundamentais apresentados no enunciado:\n\n1. Idade Gestacional: É considerado prematuro todo recém-nascido com menos de 37 semanas de gestação. Como Pedro nasceu com 35 semanas, ele possui o diagnóstico de prematuridade.\n\n2. Faixa de Peso ao Nascer:\n- Baixo Peso ao Nascer: Peso inferior a 2.500g.\n- Muito Baixo Peso ao Nascer: Peso inferior a 1.500g.\n- Extremo Baixo Peso ao Nascer: Peso inferior a 1.000g.\nPedro nasceu com 1.950g; portanto, o diagnóstico correto é baixo peso ao nascer.\n\n3. Adequação do Peso para a Idade Gestacional: Esta classificação utiliza curvas de crescimento (como a Intergrowth-21st citada).\n- Pequeno para a Idade Gestacional (PIG): Peso abaixo do percentil 10.\n- Adequado para a Idade Gestacional (AIG): Peso entre o percentil 10 e o percentil 90.\n- Grande para a Idade Gestacional (GIG): Peso acima do percentil 90.\nO enunciado confirma que o peso estava abaixo do P10; logo, ele é Pequeno para a Idade Gestacional (PIG).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o termo retardo de crescimento (ou Restrição de Crescimento Intrauterino - RCIU) esteja relacionado, ele é um conceito clínico-obstétrico que indica que o feto sofreu algum insulto e não atingiu seu potencial de crescimento. Para a classificação estatística do recém-nascido com base em curvas de peso e idade gestacional, o termo correto é Pequeno para a Idade Gestacional (PIG).\n\nAlternativa b) Correta. Pedro é prematuro (35 semanas), apresenta baixo peso ao nascer (1.950g, que é menor que 2.500g e maior que 1.500g) e é Pequeno para a Idade Gestacional (peso abaixo do percentil 10).\n\nAlternativa c) Incorreta. Pedro não possui muito baixo peso ao nascer, pois seu peso (1.950g) é superior ao limite de 1.500g para esta classificação. Além disso, a alternativa utiliza o termo retardo de crescimento em vez da nomenclatura técnica PIG.\n\nAlternativa d) Incorreta. Apesar de acertar os termos prematuridade e PIG, a alternativa erra ao classificar o peso como muito baixo peso ao nascer, categoria reservada para bebês com menos de 1.500g.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Cuidados Neonatais",
+      "Diagnóstico Nutricional",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:19.351Z"
+  },
+  {
+    "id": "AJUDA_9e59e64e-d721-455d-b772-a35b883da8c4",
+    "originalId": "9e59e64e-d721-455d-b772-a35b883da8c4",
+    "statement": "Paciente de 65 anos de idade com diagnóstico de insuficiência cardíaca com fração de ejeção reduzida (FE 28%) secundária a miocardiopatia isquêmica. No momento está em uso de carvedilol 25mg, enalapril 10mg, espironolactona 25mg /dia e uso de diurético de alça conforme a necessidade. Mesmo otimizado clinicamente, permanece sintomático (NYHA 3) e foi recentemente interna do por descompensação. Ecocardio transtorácico demonstra dilatação ventricular esquerda, eletro cardiograma um QRS de 112 ms em ritmo sinusal. Função renal estável, creatinina 1,3mg/dl. Considerando evidências e recomendações atuais, a melhor próxima intervenção farmacológica que provavelmente reduzirá hospitalizações e mortali dade deste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender a espironolactona e iniciar ivabradina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Avaliar o uso de inotrópico, com infusão ambulato rial crônica para melhora dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trocar carvedilol por um betabloqueador cardios seletivo (bisoprolol) como primeira medida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Introduzir inibidor SGLT2 (por exemplo empaglifo zina) , e após estabilização clínica avaliar a troca de IECA por sacubitril/valsartana (ARNI).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Realizar a troca de enalapril e espironolactona, e iniciar vasodilatadores que reduzem pré e pós carga como hidralazina e monocordil.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O paciente em questão apresenta Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFEr), com fração de ejeção de 28%, classificado funcionalmente como NYHA III (sintomas aos pequenos esforços) e com histórico de internação recente. Ele já utiliza três dos pilares clássicos do tratamento: betabloqueador (carvedilol), IECA (enalapril) e antagonista do receptor mineralocorticoide (espironolactona). No entanto, o tratamento atual não está otimizado conforme as diretrizes mais recentes (Diretriz Brasileira de Insuficiência Cardíaca 2021 e atualizações internacionais).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A espironolactona é um medicamento fundamental que reduz a mortalidade na ICFEr e não deve ser suspensa, especialmente com a função renal estável (creatinina 1,3 mg/dl). A ivabradina poderia ser considerada se o paciente mantivesse frequência cardíaca acima de 70 bpm em ritmo sinusal após dose máxima de betabloqueador, mas ela não substitui os pilares básicos e tem evidência inferior ao benefício dos iSGLT2 e ARNI.\n\nAlternativa b: Incorreta. O uso de inotrópicos em regime ambulatorial ou crônico é reservado apenas para pacientes em estágio terminal (IC avançada, estágio D) como terapia de suporte, ponte para transplante ou cuidados paliativos. O uso crônico de inotrópicos aumenta o risco de arritmias e a mortalidade, não sendo a conduta para um paciente que ainda possui opções de otimização medicamentosa.\n\nAlternativa c: Incorreta. O carvedilol, o bisoprolol e o sucinato de metoprolol são os três betabloqueadores com evidência de redução de mortalidade na ICFEr. Não há superioridade comprovada de um sobre o outro que justifique a troca do carvedilol pelo bisoprolol como medida para reduzir hospitalizações e mortes neste contexto.\n\nAlternativa d: Correta. De acordo com as evidências atuais (estudos DAPA-HF e EMPEROR-Reduced), os inibidores do SGLT2 (como a empagliflozina) devem ser iniciados em todos os pacientes sintomáticos com ICFEr para reduzir o risco de morte cardiovascular e hospitalização, independentemente da presença de diabetes. Além disso, a troca do IECA (enalapril) pelo sacubitril/valsartana (ARNI) é recomendada para pacientes que permanecem sintomáticos apesar do tratamento triplo otimizado, conforme demonstrado no estudo PARADIGM-HF, por reduzir a mortalidade e as internações de forma mais eficaz que o enalapril.\n\nAlternativa e: Incorreta. A combinação de hidralazina com nitrato (Monocordil) é indicada principalmente para pacientes negros que permanecem sintomáticos apesar do tratamento pleno, ou para pacientes que possuem contraindicação formal ao uso de IECA/BRA/ARNI (como insuficiência renal avançada ou hipercalemia). Não há indicação de retirar a espironolactona para iniciar esses vasodilatadores neste paciente.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Cardiomiopatias",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:19.351Z"
+  },
+  {
+    "id": "AJUDA_9e626f36-d4a2-47f6-ac9c-78d6d6b250aa",
+    "originalId": "9e626f36-d4a2-47f6-ac9c-78d6d6b250aa",
+    "statement": "Paciente feminina, 45 anos, cabeleireira, apresenta queixas de dor e cansaço em membros inferiores, predominantemente no final do dia, que melhoram ao elevar as pernas. Também relata sensação de peso e queimação nas pernas. Ao exame físico, há varizes visíveis e tortuosas nas pernas e coxas, além de edema bilateral dos membros inferiores. Há também telangectasias na inspeção. Não há ulcerações, alterações pigmentares ou de textura da pele. Não há áreas de enduramento. A paciente tem hipertensão controlada com medicamentos, é tabagista e tem histórico familiar de varizes. Relata dificuldade em desempenhar suas atividades laborais devido ao desconforto nas pernas. Com base na classificação CEAP (Clinical-Etiology- -Anatomy-Pathophysiology) e no quadro clínico descrito, qual é a conduta terapêutica mais apropriada para essa paciente e qual é sua classificação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratamento cirúrgico das varizes de membros inferiores devido ao impacto na qualidade de vida e presença de edema. A prescrição de meias elásticas de compressão pode ser associada para controle dos sintomas. Essa paciente tem classificação C4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar anticoagulação plena devido ao risco de trombose venosa profunda, uma conduta indicada para pacientes como a descrita no enunciado. Essa paciente tem classificação C3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aplicação de escleroterapia nas telangectasias para alívio imediato dos sintomas, que é uma conduta apropriada para pacientes como a descrita no enunciado. Essa paciente tem classificação C3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tratamento cirúrgico das varizes de membros inferiores devido ao impacto na qualidade de vida e presença de edema. A prescrição de meias elásticas de compressão pode ser associada para controle dos sintomas. Essa paciente tem classificação C3.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico:\nA paciente apresenta veias varicosas e tortuosas, o que a enquadraria inicialmente em C2. No entanto, o exame físico revela a presença de edema bilateral nos membros inferiores. De acordo com a classificação CEAP, a presença de edema de origem venosa eleva a categoria clínica para C3. O enunciado ressalta a ausência de alterações de cor (pigmentação), textura (lipodermatoesclerose) ou ulcerações, o que exclui as classificações C4, C5 e C6. Portanto, a classificação clínica correta é C3.\n\nClassificação CEAP (Componente Clínico):\nC0: Sem sinais visíveis ou palpáveis de doença venosa.\nC1: Telangiectasias ou veias reticulares.\nC2: Veias varicosas (diâmetro maior que 3 mm).\nC3: Edema.\nC4a: Pigmentação ou eczema.\nC4b: Lipodermatoesclerose ou atrofia branca.\nC5: Úlcera venosa cicatrizada.\nC6: Úlcera venosa ativa.\n\nConduta terapêutica:\nPara uma paciente jovem, com sintomas importantes (dor, peso, queimação), impacto nas atividades laborais (cabeleireira que permanece muito tempo em pé) e já apresentando complicações como o edema (C3), o tratamento cirúrgico das varizes está indicado. O objetivo é eliminar os pontos de refluxo e as veias doentes. O uso de meias elásticas de compressão graduada é fundamental para o manejo do edema e controle sintomático, servindo como tratamento adjuvante ou conservador inicial.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Apesar de sugerir a conduta correta, o erro está na classificação. A paciente não possui C4, pois não apresenta as alterações de pele características (como dermatite de estase ou hiperpigmentação ocre).\n\nAlternativa b) Incorreta. A anticoagulação plena é indicada para o tratamento de eventos trombóticos agudos (trombose venosa profunda ou embolia pulmonar). A insuficiência venosa crônica é uma condição estrutural/funcional das veias e não tem indicação de anticoagulação como tratamento de base.\n\nAlternativa c) Incorreta. A escleroterapia de telangiectasias (vasinhos) trata apenas o componente C1. Ela não é o tratamento principal para varizes calibrosas e tortuosas nem para o edema (C3), que requerem abordagem do refluxo em veias maiores (safenas ou tributárias).\n\nAlternativa d) Correta. A classificação C3 está perfeitamente aplicada devido ao edema. O tratamento cirúrgico é a escolha para pacientes sintomáticos com varizes e edema que buscam melhora definitiva e funcional, sendo a compressão elástica uma aliada importante no tratamento global da paciente.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:19.351Z"
+  },
+  {
+    "id": "AJUDA_9e71ea87-5b61-4ec6-827d-b556a082898a",
+    "originalId": "9e71ea87-5b61-4ec6-827d-b556a082898a",
+    "statement": "A hanseníase continua sendo um importante desafio em saúde pública e endêmica em várias regiões do mundo, principalmente no Brasil. Sobre a doença, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a principal fonte de infecção pelo bacilo Mycobacterium leprae são tatus e macacos mangabeys.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o Mycobacterium leprae afeta primariamente os órgãos genitais, sendo a orquite a principal complicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "as manifestações clínicas e a patogenicidade estão relacionadas às reações hansênicas combatidas com antibióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a forma virchowiana ocorre em pessoas que não ativam adequadamente a imunidade celular específica contra o M. leprae.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "a hanseníase neural pura constitui-se numa apresentação clínica diagnosticada pela baciloscopia da linfa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nAlternativa a) Incorreta. Embora o tatu (Dasypus novemcinctus) e alguns primatas sejam reservatórios conhecidos na natureza, a principal fonte de infecção e transmissão do Mycobacterium leprae para o ser humano é o próprio ser humano doente, sem tratamento, que elimina o bacilo pelas vias aéreas superiores.\n\nAlternativa b) Incorreta. O M. leprae apresenta tropismo preferencial pela pele e pelos nervos periféricos. Embora a orquite possa ocorrer como complicação em casos avançados da forma virchowiana ou durante estados reacionais tipo 2, ela não é a manifestação primária nem a principal complicação da doença.\n\nAlternativa c) Incorreta. As reações hansênicas são episódios agudos de inflamação decorrentes de respostas imunológicas do hospedeiro aos antígenos do bacilo. O tratamento dessas reações não é feito com antibióticos, mas sim com medicamentos imunomoduladores e anti-inflamatórios, como a prednisona (reações tipo 1 e 2) e a talidomida (específica para a reação tipo 2/eritema nodoso hansênico). Os antibióticos (poliquimioterapia) tratam a infecção em si, e não o processo reacional agudo.\n\nAlternativa d) Correta. A hanseníase é uma doença cujo espectro clínico depende diretamente da resposta imune celular do hospedeiro. No polo virchowiano (multibacilar), há uma deficiência na imunidade celular específica contra o M. leprae (perfil Th2), o que impede a contenção da multiplicação bacilar, resultando em alta carga bacteriana e disseminação da doença. No polo oposto (tuberculoide), a imunidade celular é eficiente (perfil Th1), limitando a doença a poucos troncos nervosos ou lesões cutâneas.\n\nAlternativa e) Incorreta. A hanseníase neural pura caracteriza-se pelo comprometimento de troncos nervosos sem a presença de lesões cutâneas. Como geralmente se comporta como uma forma paucibacilar, a baciloscopia da linfa (coletada em lobos auriculares e cotovelos) costuma ser negativa. O diagnóstico é essencialmente clínico, apoiado por exames como a eletroneuromiografia e, em casos selecionados, a biópsia de nervo periférico.\n\nGabarito: Letra d.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Hanseníase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:19.351Z"
+  },
+  {
+    "id": "AJUDA_9e72a621-8f8e-4574-9e15-4e6a369e9301",
+    "originalId": "9e72a621-8f8e-4574-9e15-4e6a369e9301",
+    "statement": "Paciente em atendimento no ambulatório, sexo masculino, de 64 anos, portador de hipertensão arterial sistêmica e insuficiência cardíaca crônica, com ecocardiograma prévio mostrando disfunção sistólica moderada e hipertrofia concêntrica do ventrículo esquerdo. Paciente estava na sala de espera e evolui com dispneia súbita, ortopneia intensa, crepitações difusas em ambos os pulmões, PA 190×110 mmHg, SatO₂ 86% em ar ambiente, FC 118 bpm, sem dor torácica. ECG realizado na urgência sem alterações. Qual a conduta inicial PRIORITÁRIA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Furosemida 80 mg EV isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nitrato em altas doses + VNI (CPAP/BiPAP).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Morfina em altas doses e hidratação vigorosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Amiodarona EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um quadro clássico de Edema Agudo de Pulmão (EAP) de origem cardiogênica, classificado pelo perfil hemodinâmico como \"Quente e Úmido\". O principal gatilho neste caso é a crise hipertensiva (PA 190x110 mmHg), que gera um aumento súbito da pós-carga, dificultando o esvaziamento do ventrículo esquerdo e levando ao acúmulo de líquido nos pulmões (congestão). A saturação de 86% indica insuficiência respiratória iminente.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\n\nA conduta prioritária no EAP hipertensivo baseia-se em dois pilares: redução da pressão arterial (pós-carga) e suporte ventilatório. Os nitratos (como a nitroglicerina ou o nitroprussiato) agem rapidamente promovendo venodilatação (reduzindo o retorno venoso) e arteriolodilatação (facilitando o trabalho do coração). Já a Ventilação Não Invasiva (VNI), seja por CPAP ou BiPAP, é o padrão-ouro para esses casos, pois a pressão positiva recruta alvéolos colapsados, melhora a oxigenação, reduz o trabalho respiratório e ainda auxilia na redução do retorno venoso, acelerando a melhora clínica e reduzindo a taxa de intubação orotraqueal.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Furosemida 80 mg EV isolada: Embora os diuréticos de alça façam parte do tratamento para reduzir a sobrecarga hídrica, eles não devem ser utilizados de forma isolada em um paciente com hipoxemia grave e crise hipertensiva. O efeito vasodilatador inicial da furosemida é leve e demora mais que o dos nitratos. O foco imediato deve ser o controle da pressão e da ventilação.\n\nc) Morfina em altas doses e hidratação vigorosa: A morfina, antes muito utilizada, hoje é evitada ou usada com extrema cautela, pois está associada a uma maior necessidade de ventilação mecânica e à piora do prognóstico. A hidratação vigorosa é absolutamente contraindicada, pois aumentaria ainda mais a congestão pulmonar em um paciente que já está sobrecarregado de volume.\n\nd) Amiodarona EV: A amiodarona é um antiarrítmico. O paciente apresenta taquicardia (FC 118 bpm), mas esta é uma resposta fisiológica compensatória ao estresse respiratório e à hipóxia (taquicardia sinusal). Não há evidência de arritmia maligna que justifique o uso dessa medicação no momento inicial.\n\nRESUMO DA CONDUTA:\nNo Edema Agudo de Pulmão Hipertensivo, a prioridade é o \"MOV\" (Monitorização, Oxigênio/VNI e Veia), associado ao uso de vasodilatadores potentes para reduzir a carga sobre o coração. A alternativa (b) contempla exatamente essa estratégia de salvamento.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Ventilação não invasiva (VNI)",
+      "Insuficiência Cardíaca",
+      "Hipertensão Arterial Sistêmica",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:24:19.351Z"
+  }
+]

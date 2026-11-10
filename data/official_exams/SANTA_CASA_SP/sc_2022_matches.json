@@ -1,0 +1,702 @@
+[
+  {
+    "id": "22eec003-cec8-442f-88ab-75dc9ca77c99",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 65,
+    "score": 0.238,
+    "enunciado_snippet": "A atuação em emergência determina a necessidade criteriosa de conhecimento acerc"
+  },
+  {
+    "id": "a59573eb-0cf9-4faa-8775-8f8539b1734a",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 68,
+    "score": 0.75,
+    "enunciado_snippet": "Um paciente de 78 anos de idade, com antecedente de neoplasia de pulmão avançada"
+  },
+  {
+    "id": "466b28dd-24f7-42ee-9ed8-23b512dd9929",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 15,
+    "score": 0.167,
+    "enunciado_snippet": "Acerca da hemorragia digestiva alta por úlcera péptica, assinale a alternativa c"
+  },
+  {
+    "id": "b424f895-04f3-4ac3-8a0c-174d97dec0bb",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 63,
+    "score": 0.274,
+    "enunciado_snippet": "Não raramente são admitidos no pronto-socorro indivíduos com ingesta alcoólica a"
+  },
+  {
+    "id": "62a000d3-36ff-4eec-9ce6-4a5d583542cd",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 67,
+    "score": 0.808,
+    "enunciado_snippet": "Uma paciente de 32 anos de idade, com antecedente de doença de Graves, com trata"
+  },
+  {
+    "id": "582906a8-9b00-45b9-9359-3a7ee6badd99",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 10,
+    "score": 0.664,
+    "enunciado_snippet": "Uma paciente de 45 anos de idade, tabagista, sem outros antecedentes mórbidos, d"
+  },
+  {
+    "id": "5783e1ea-d103-4593-b13a-58a591c0a74d",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 69,
+    "score": 0.675,
+    "enunciado_snippet": "Um paciente de 23 anos de idade, sem antecedentes conhecidos, deu entrada no pro"
+  },
+  {
+    "id": "398d34a2-45d3-40e8-9160-2c20e450e327",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 72,
+    "score": 0.615,
+    "enunciado_snippet": "O ataque isquêmico transitório ocorre quando o episódio de disfunção neurológica"
+  },
+  {
+    "id": "fa85d554-0aae-4f87-b135-aa82e0d97b83",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 62,
+    "score": 0.424,
+    "enunciado_snippet": "Em uma unidade de emergência, uma paciente de dezoito anos de idade recebeu o di"
+  },
+  {
+    "id": "65382a22-ea4f-47e8-8bbb-751177a7f49f",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 61,
+    "score": 0.348,
+    "enunciado_snippet": "Na ocorrência de infarto agudo do miocárdio de parede inferior, a coexistência c"
+  },
+  {
+    "id": "2eabed5e-b2e0-4da1-b223-b232487ef992",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 70,
+    "score": 0.485,
+    "enunciado_snippet": "Cefaleias são queixas frequentes no departamento de emergência e, em sua avaliaç"
+  },
+  {
+    "id": "65425f2a-e82e-49eb-946b-a28c4d5b89ca",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 82,
+    "score": 0.336,
+    "enunciado_snippet": "Após atender cinco pacientes, o residente João estava com dúvidas em relação ao "
+  },
+  {
+    "id": "5b265bdd-56f1-4e2d-9330-90491bcf8d91",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 71,
+    "score": 0.63,
+    "enunciado_snippet": "Os efeitos adversos mais relatados na prática clínica durante o início do consum"
+  },
+  {
+    "id": "aeef5ef5-3f33-4dbd-8e30-e22f526e2fad",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 78,
+    "score": 0.687,
+    "enunciado_snippet": "Um paciente de 59 anos de idade foi à consulta, no ambulatório de clínica médica"
+  },
+  {
+    "id": "d62c927b-4546-4668-a8a5-06b1e10a3fdf",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 74,
+    "score": 0.471,
+    "enunciado_snippet": "A digitopressão e a vitropressão são utilizadas para diferenciar"
+  },
+  {
+    "id": "767ad65d-2c98-4fab-aa5b-3bad9ccd3bda",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 75,
+    "score": 0.435,
+    "enunciado_snippet": "O encontro de som maciço à percussão do espaço de Traube sugere"
+  },
+  {
+    "id": "84b9662d-58ec-4e6d-b165-5d405e597ada",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 64,
+    "score": 0.24,
+    "enunciado_snippet": "A habilidade para orientar e tratar a síndrome do coração pós-feriado na urgênci"
+  },
+  {
+    "id": "b238ff80-1fb4-42c8-8fcd-022badada303",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 100,
+    "score": 0.152,
+    "enunciado_snippet": "Acerca do registro em saúde orientado por problemas (ReSOAP) e do registro médic"
+  },
+  {
+    "id": "0848f76d-02c7-4ab8-87c7-237eff4ddcfa",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 17,
+    "score": 0.443,
+    "enunciado_snippet": "Um paciente de 24 anos de idade, HIV +, com CD4 200 e carga viral negativa, refe"
+  },
+  {
+    "id": "082587e9-e024-4930-a215-5cf76cdba62d",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 80,
+    "score": 0.139,
+    "enunciado_snippet": "As seguintes recomendações devem constar no receituário ao se prescrever levotir"
+  },
+  {
+    "id": "6214c133-614c-4de4-974a-664b2898ace3",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 76,
+    "score": 0.464,
+    "enunciado_snippet": "A complicação da biópsia renal percutânea mais observada na prática clínica é o("
+  },
+  {
+    "id": "d07b00e5-9cb4-42e1-9c70-dbe073225813",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 79,
+    "score": 0.462,
+    "enunciado_snippet": "Para um paciente soropositivo para o vírus da imunodeficiência humana (HIV), eti"
+  },
+  {
+    "id": "cf04f02d-ad02-45fb-8cb8-16d37790cef2",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 77,
+    "score": 0.419,
+    "enunciado_snippet": "O posicionamento correto do eletrodo para a derivação torácica V4 do eletrocardi"
+  },
+  {
+    "id": "35875eff-8d24-4d65-88a0-675ec8656473",
+    "file": "data/clinica_medica_final_questions.json",
+    "q_num": 73,
+    "score": 0.707,
+    "enunciado_snippet": "Um paciente compareceu ao ambulatório, relatando o consumo de sinvastatina 40 mg"
+  },
+  {
+    "id": "0404915a-5fe8-4767-a63e-c15ef8516b2e",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 4,
+    "score": 0.575,
+    "enunciado_snippet": "Um homem de 36 anos de idade foi ao pronto-socorro de um hospital secundário, re"
+  },
+  {
+    "id": "a9fc91f8-ca84-4af3-bb4f-722d7e0366be",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 16,
+    "score": 0.722,
+    "enunciado_snippet": "A respeito da cirurgia eletiva no megacólon chagásico, julgue os itens a seguir."
+  },
+  {
+    "id": "9eb92f22-2a41-4a5e-a373-26c6ad8641af",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 20,
+    "score": 0.535,
+    "enunciado_snippet": "Um paciente de 35 anos de idade deu entrada no pronto-socorro após ter sido víti"
+  },
+  {
+    "id": "de7b1305-4481-43fa-9d82-85793b0940b3",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 1,
+    "score": 0.577,
+    "enunciado_snippet": "Um paciente de 22 anos de idade foi levado ao pronto-socorro pelo resgate, por t"
+  },
+  {
+    "id": "bf150562-bc83-4fce-88c2-b48cab5c191c",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 7,
+    "score": 0.57,
+    "enunciado_snippet": "Um paciente de 24 anos de idade deu entrada no serviço de emergência por meios p"
+  },
+  {
+    "id": "03968650-fa74-4dc2-a280-ab7517e03a48",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 13,
+    "score": 0.438,
+    "enunciado_snippet": "Um paciente de trinta anos de idade deu entrada no pronto-socorro, após ter sido"
+  },
+  {
+    "id": "83783eb2-0ef8-41e0-beae-53aeca41c94f",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 5,
+    "score": 0.626,
+    "enunciado_snippet": "Um jovem de dezoito anos de idade deu entrada no serviço de emergência após ter "
+  },
+  {
+    "id": "713512e1-7ec8-416a-88ec-e395ee91d2f6",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 9,
+    "score": 0.582,
+    "enunciado_snippet": "Um homem de 23 anos de idade procurou atendimento médico de urgência após notar "
+  },
+  {
+    "id": "80a79745-aa47-4812-9596-f9d296288a02",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 2,
+    "score": 0.82,
+    "enunciado_snippet": "Uma paciente de 32 anos de idade, vítima de atropelamento por moto, foi levada a"
+  },
+  {
+    "id": "ee584f22-6208-4509-86f3-f98c1712ea60",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 12,
+    "score": 0.08,
+    "enunciado_snippet": "Assinale a alternativa correta quanto aos enxertos cutâneos."
+  },
+  {
+    "id": "e75e270e-a566-416b-8f0e-121e7de1a209",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 11,
+    "score": 0.54,
+    "enunciado_snippet": "Um homem de 35 anos de idade foi vítima de acidente automobilístico e encaminhad"
+  },
+  {
+    "id": "27821a30-2be3-428f-8fc6-343097f7090f",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 3,
+    "score": 0.635,
+    "enunciado_snippet": "Um paciente de 65 anos de idade, vítima de atropelamento por ônibus, encontra-se"
+  },
+  {
+    "id": "c763c252-c1cc-4d5b-a758-6de1a2c094d1",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 18,
+    "score": 0.901,
+    "enunciado_snippet": "Julgue os itens subsequentes. I. O tratamento cirúrgico é indicado para mulheres"
+  },
+  {
+    "id": "a47ec752-21d3-4d8f-a3ad-a4a5ba74623a",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 8,
+    "score": 0.492,
+    "enunciado_snippet": "Um homem de 26 anos de idade foi levado ao serviço de emergência pelo serviço pr"
+  },
+  {
+    "id": "b751edf4-dd75-41b9-ac68-e7baea269b19",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 6,
+    "score": 0.487,
+    "enunciado_snippet": "Uma mulher de 25 anos de idade, sem comorbidades, não tabagista, sem uso de anti"
+  },
+  {
+    "id": "562396ff-ccef-4e28-a6cd-7e087014e64f",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 19,
+    "score": 0.852,
+    "enunciado_snippet": "Um paciente de vinte anos de idade foi admitido no pronto-socorro após ter sido "
+  },
+  {
+    "id": "2b7f9fa3-917b-4cf5-978b-582906b90f13",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 66,
+    "score": 0.766,
+    "enunciado_snippet": "Um paciente foi admitido no pronto-socorro com quadro clínico de choque séptico "
+  },
+  {
+    "id": "44fa1255-203e-4544-a962-048d2a51edfc",
+    "file": "data/cirurgia_final_questions.json",
+    "q_num": 14,
+    "score": 0.853,
+    "enunciado_snippet": "Um paciente em pós-operatório de gastrectomia parcial, com reconstrução a Billro"
+  },
+  {
+    "id": "49a45458-0999-4d1c-8943-dfccaf88e995",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 29,
+    "score": 0.727,
+    "enunciado_snippet": "Uma paciente de doze anos de idade foi à consulta médica, acompanhada da mãe, re"
+  },
+  {
+    "id": "ea17b2e8-9d6c-402e-9d2f-fa811fe2ff17",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 39,
+    "score": 0.648,
+    "enunciado_snippet": "Um menino com dezoito meses de vida foi levado à consulta com queixa de febre al"
+  },
+  {
+    "id": "62c20945-ba3c-47dd-8849-a0d5c0532683",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 33,
+    "score": 0.52,
+    "enunciado_snippet": "Uma lactente com dois meses de vida, sem antecedentes mórbidos, foi levada ao pr"
+  },
+  {
+    "id": "ab377d96-4058-4f86-a70e-be56e113fb83",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 26,
+    "score": 0.84,
+    "enunciado_snippet": "Um paciente com nove meses de vida, previamente hígido, com história de tosse, c"
+  },
+  {
+    "id": "a20f397a-df9f-40d5-9b89-5056e6e54a3f",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 34,
+    "score": 0.553,
+    "enunciado_snippet": "Um menino de cinco anos de idade foi levado ao ambulatório com queixa de inchaço"
+  },
+  {
+    "id": "3dae2fb7-b00d-4fd0-89c3-868c3281c19a",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 38,
+    "score": 0.504,
+    "enunciado_snippet": "Uma menina de doze anos de idade, com diagnóstico de diabetes mellitus há três a"
+  },
+  {
+    "id": "ada9d00d-c86d-4968-beec-bf63364bbebd",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 21,
+    "score": 0.491,
+    "enunciado_snippet": "Um paciente de quatro anos de idade, com exacerbação de asma, foi levado ao serv"
+  },
+  {
+    "id": "2940c86d-b005-4912-be90-794fd6f746ca",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 35,
+    "score": 0.512,
+    "enunciado_snippet": "Um lactente com cinco meses de vida, em aleitamento materno exclusivo, tem histó"
+  },
+  {
+    "id": "6e00dd4f-3de8-484a-a5c7-3648cd17f2a5",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 36,
+    "score": 0.64,
+    "enunciado_snippet": "Um menino de dez anos de idade foi levado ao serviço de urgência com queixa de f"
+  },
+  {
+    "id": "11e8c020-837b-476f-9e2d-796ee6d25d1f",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 24,
+    "score": 0.612,
+    "enunciado_snippet": "Um paciente de um ano e dois meses de idade, 10 kg, com diarreia aguda há três d"
+  },
+  {
+    "id": "9383ab99-b3ad-400b-bede-4d45bffc007a",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 32,
+    "score": 0.483,
+    "enunciado_snippet": "Uma menina de sete anos de idade apresenta, desde os dois anos de idade, tosse p"
+  },
+  {
+    "id": "17bc3b49-5acb-4f34-b8e8-a3a4c879e2ee",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 28,
+    "score": 0.371,
+    "enunciado_snippet": "Durante a reanimação de um recém-nascido em sala de parto, deve-se realizar"
+  },
+  {
+    "id": "6c85b867-3471-4c07-8244-32ea30b76608",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 27,
+    "score": 0.763,
+    "enunciado_snippet": "Quanto ao teste de triagem neonatal, julgue os itens que se seguem. I. O Ministé"
+  },
+  {
+    "id": "c9b2b75d-a1d5-4f38-a0ed-430965606ff6",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 31,
+    "score": 0.515,
+    "enunciado_snippet": "Um menino de sete anos de idade, portador de anemia falciforme, foi levado ao se"
+  },
+  {
+    "id": "e75b4ca7-f294-45ad-a27f-f0dcb2057338",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 37,
+    "score": 0.586,
+    "enunciado_snippet": "Um menino de cinco anos de idade foi atropelado e sofreu traumatismo cranioencef"
+  },
+  {
+    "id": "b4f9ba1a-79c7-48fa-8aa4-45e2df8aad28",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 23,
+    "score": 0.726,
+    "enunciado_snippet": "Uma adolescente de catorze anos de idade foi à consulta de rotina sem queixas. R"
+  },
+  {
+    "id": "dda49136-cb49-4d1a-9d6e-40517dcb89a9",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 25,
+    "score": 0.632,
+    "enunciado_snippet": "Uma paciente de dois anos de idade foi levada ao serviço de emergência com histó"
+  },
+  {
+    "id": "a0885922-4ae2-48d6-9cc9-3ffc3c11471f",
+    "file": "data/pediatria_final_questions.json",
+    "q_num": 40,
+    "score": 0.426,
+    "enunciado_snippet": "Um menino de sete anos de idade foi levado ao pronto-socorro com história de feb"
+  },
+  {
+    "id": "b6cb1cd2-f48b-4d5e-bf79-cb1a5a1b5483",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 56,
+    "score": 0.53,
+    "enunciado_snippet": "Uma puérpera no décimo quarto dia pós-parto encontra-se com febre de 39 graus; s"
+  },
+  {
+    "id": "5ac7ac56-bd5a-4708-b2f6-18aa92a10538",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 47,
+    "score": 0.667,
+    "enunciado_snippet": "Ana Maria, de 56 anos de idade, G2P2A0, queixa-se de urgência miccional, noctúri"
+  },
+  {
+    "id": "9ed49cdb-a2e1-4b66-b623-aa19bb8e629d",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 44,
+    "score": 0.565,
+    "enunciado_snippet": "Uma paciente de sessenta anos de idade, G6P4A2, queixa-se de prurido vulvar há c"
+  },
+  {
+    "id": "8152455a-131b-4a39-b247-e50ba7fb8681",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 41,
+    "score": 0.67,
+    "enunciado_snippet": "Uma paciente nuligesta, com desejo reprodutivo, com ciclos hipermenorrágicos há "
+  },
+  {
+    "id": "ded54e15-f557-41fa-bbab-ca7ea372879b",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 50,
+    "score": 0.571,
+    "enunciado_snippet": "Para se dar o diagnóstico de menopausa, deve-se solicitar a dosagem hormonal de"
+  },
+  {
+    "id": "77df4680-d857-4215-b572-0defe8ce10b1",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 43,
+    "score": 0.288,
+    "enunciado_snippet": "Uma paciente na menopausa há três anos, com sintoma de sangramento vaginal, real"
+  },
+  {
+    "id": "9d963be0-33c8-41a6-80d9-81d4db4cbbae",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 49,
+    "score": 0.844,
+    "enunciado_snippet": "Um paciente apresenta espermograma com as seguintes características: volume – 3 "
+  },
+  {
+    "id": "5df368b9-5662-4d8b-8a38-30cfde7d7e02",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 46,
+    "score": 0.69,
+    "enunciado_snippet": "Uma das principais ações do FSH sobre as células da granulosa para a produção de"
+  },
+  {
+    "id": "f3228341-b9e3-4dc4-95c6-722f2da5e01f",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 42,
+    "score": 0.099,
+    "enunciado_snippet": "Em relação à miomectomia laparoscópica, assinale a alternativa correta."
+  },
+  {
+    "id": "e01a92a5-3b66-4f87-8e3e-a2fb64ae14ec",
+    "file": "data/ginecologia_final_questions.json",
+    "q_num": 45,
+    "score": 0.746,
+    "enunciado_snippet": "Uma paciente de 55 anos de idade foi submetida à colposcopia, por apresentar ASC"
+  },
+  {
+    "id": "88ea1ab3-edc2-499b-9ad8-34615c96cd9c",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 92,
+    "score": 0.239,
+    "enunciado_snippet": "A notificação compulsória de doenças e agravos alerta sobre a ocorrência de amea"
+  },
+  {
+    "id": "4ede6604-9551-43d7-a04e-6951b67dfbd8",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 91,
+    "score": 0.349,
+    "enunciado_snippet": "Os problemas de saúde não se distribuem uniformemente na população, no territóri"
+  },
+  {
+    "id": "b687da14-49ae-4c9b-8a76-6bd54c6de9f9",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 90,
+    "score": 0.364,
+    "enunciado_snippet": "O trabalho em equipe é fundamental para que a atenção primária seja resolutiva e"
+  },
+  {
+    "id": "b0a97930-7d26-482f-ae94-61b674db73be",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 84,
+    "score": 0.612,
+    "enunciado_snippet": "Um grupo de alunos gostaria de realizar dois estudos para avaliar se algum fator"
+  },
+  {
+    "id": "c528483f-2c5e-4912-bf2e-3cb455cc1eea",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 99,
+    "score": 0.096,
+    "enunciado_snippet": "A respeito da saúde mental na atenção primária à saúde, assinale a alternativa i"
+  },
+  {
+    "id": "ff5f6953-6f38-4045-bc92-3baabd4ad1f5",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 98,
+    "score": 0.326,
+    "enunciado_snippet": "Durante uma consulta de pré-natal, o médico de família da UBS observou uma alter"
+  },
+  {
+    "id": "6e326ba8-3f28-418e-b2e1-d388bfc00665",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 97,
+    "score": 1.0,
+    "enunciado_snippet": "No que se refere à abordagem de pessoas e familiares em luto na atenção primária"
+  },
+  {
+    "id": "ce4d5fbc-2478-4ced-88ec-32c030fcce3d",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 83,
+    "score": 0.628,
+    "enunciado_snippet": "Marcela, de 64 anos de idade, não costuma ir com frequência à unidade básica de "
+  },
+  {
+    "id": "4127c42c-84bc-4162-8574-0e69aa42e131",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 93,
+    "score": 0.626,
+    "enunciado_snippet": "O diagnóstico precoce é considerado como um dos principais fatores para o sucess"
+  },
+  {
+    "id": "c88088fe-c89a-4ace-9c7f-d49e9e5a93fe",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 96,
+    "score": 0.284,
+    "enunciado_snippet": "Um estudo de coorte foi realizado para definir os principais fatores de risco de"
+  },
+  {
+    "id": "ec6d70d6-50b5-4649-8b44-07292aa74a09",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 95,
+    "score": 0.228,
+    "enunciado_snippet": "A tabela a seguir expressa os números de eventos dos desfechos avaliados com qua"
+  },
+  {
+    "id": "1067445d-c00c-42df-a0ce-3684180e33f3",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 87,
+    "score": 0.654,
+    "enunciado_snippet": "Jéssica, de 23 anos de idade, foi ao pronto-socorro com medo de estar com um tum"
+  },
+  {
+    "id": "06490b36-de5a-4650-b570-d7e8bed41d33",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 30,
+    "score": 0.407,
+    "enunciado_snippet": "A dengue é a arbovirose mais frequente do mundo. O aumento crescente de casos na"
+  },
+  {
+    "id": "637b9e15-2933-4577-b96a-4f5e7916b3ce",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 86,
+    "score": 0.439,
+    "enunciado_snippet": "Pedro, de 36 anos de idade, faz seguimento na unidade básica de saúde há cerca d"
+  },
+  {
+    "id": "aaabb8a9-e229-4f90-81d5-01a92f5fcb4d",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 89,
+    "score": 0.563,
+    "enunciado_snippet": "Uma paciente de trinta anos de idade, que está no sétimo dia de puerpério, compa"
+  },
+  {
+    "id": "f45810ae-aee6-4798-8926-398d61e7a5d5",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 81,
+    "score": 0.149,
+    "enunciado_snippet": "Quanto aos grupos com melhor consonância com o conceito de educação permanente e"
+  },
+  {
+    "id": "cc1b86ca-43c1-4c8d-a75f-763c5746f4bf",
+    "file": "data/medicina_preventiva_final_questions.json",
+    "q_num": 85,
+    "score": 0.386,
+    "enunciado_snippet": "Na obra SobreVivente, de Ingrid Lunzkovzki, tem-se um retrato de pessoas que não"
+  },
+  {
+    "id": "59444aba-a98a-4fff-9010-43ea991346d2",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 57,
+    "score": 0.412,
+    "enunciado_snippet": "Uma gestante com início tardio de pré-natal e 26 semanas, no retorno em consulta"
+  },
+  {
+    "id": "55519b4c-f247-4c28-9242-81f8846192fb",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 48,
+    "score": 0.238,
+    "enunciado_snippet": "O tratamento de bacteriúria assintomática"
+  },
+  {
+    "id": "5f9c23d4-24e0-4ed0-9d86-4ce4d5b39d07",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 60,
+    "score": 0.621,
+    "enunciado_snippet": "Uma gestante de quarenta semanas, quartigesta, com três partos normais anteriore"
+  },
+  {
+    "id": "97c8570b-b633-4db7-8764-bda7238acdb7",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 52,
+    "score": 0.736,
+    "enunciado_snippet": "Uma mulher, com atraso menstrual de oito semanas, deu entrada no pronto-socorro "
+  },
+  {
+    "id": "6f751bc0-f819-4098-95fe-4cc68a0eefc9",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 58,
+    "score": 0.433,
+    "enunciado_snippet": "Uma tercigesta com doze semanas, um parto normal e um abortamento anterior apres"
+  },
+  {
+    "id": "e14267ac-2e08-4140-8ed0-3da92bfca6f3",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 55,
+    "score": 0.471,
+    "enunciado_snippet": "Uma primigesta com nove semanas de gestação iniciou acompanhamento em pré-natal "
+  },
+  {
+    "id": "b17ac7ab-e810-40af-90c5-61af5e93552e",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 54,
+    "score": 0.852,
+    "enunciado_snippet": "Uma secundigesta, com um parto normal anterior e idade gestacional de 36 semanas"
+  },
+  {
+    "id": "34fea544-abb3-4aaf-b961-6cc53063831a",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 53,
+    "score": 0.857,
+    "enunciado_snippet": "Uma primípara de 39 semanas e seis dias encontra-se no segundo período do trabal"
+  },
+  {
+    "id": "1a4c2182-311d-4864-8230-061290afb3dd",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 59,
+    "score": 0.581,
+    "enunciado_snippet": "Uma gestante de quarenta e uma semanas e três dias compareceu ao pronto-atendime"
+  },
+  {
+    "id": "ca214578-a68d-4822-b493-df8325db36c1",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 94,
+    "score": 0.416,
+    "enunciado_snippet": "Durante uma visita domiciliar realizada pela enfermagem, notou-se, na casa, a pr"
+  },
+  {
+    "id": "ca138a0d-98a4-4d87-80fa-567c5e642fba",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 88,
+    "score": 0.521,
+    "enunciado_snippet": "Magda, de trinta anos de idade, foi a uma unidade básica de saúde para consulta "
+  },
+  {
+    "id": "0ad840e6-709b-4b09-9736-0353b87b8b9c",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 22,
+    "score": 0.344,
+    "enunciado_snippet": "Uma gestante com quadro de febre há dois dias, tosse, coriza e anosmia deu entra"
+  },
+  {
+    "id": "8f199895-47eb-41ab-8699-96af646be332",
+    "file": "data/obstetricia_final_questions.json",
+    "q_num": 51,
+    "score": 1.0,
+    "enunciado_snippet": "Uma parturiente, quartigesta de 38 semanas e quatro dias, com um parto normal, u"
+  }
+]

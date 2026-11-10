@@ -1,0 +1,530 @@
+[
+  {
+    "id": "AJUDA_177f9c9b-f8ce-42f6-a221-4b067b6f9604",
+    "originalId": "177f9c9b-f8ce-42f6-a221-4b067b6f9604",
+    "statement": "O preenchimento da Declaração de Óbito (DO) é um ato médico de grande importância estatística e jurídica. Sobre a responsabilidade e o fluxo de emissão desse documento, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em caso de morte por causas externas (homicídio, suicídio ou acidente), a DO deve ser fornecida pelo médico assistente que prestou o último atendimento no hospital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Em mortes naturais ocorridas em domicílio, sem assistência médica prévia, a DO deverá ser obrigatoriamente emitida pelo serviço de verificação de óbitos (SVO), onde houver, ou pelo médico do serviço público de saúde local.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O médico está autorizado a cobrar honorários específicos para a emissão da DO, uma vez que se trata de um documento com fé pública e responsabilidade civil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "No óbito fetal, a emissão da DO é facultativa, independentemente do tempo de gestação ou peso do feto, devendo ser feita apenas se a família desejar realizar o sepultamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nos casos de morte natural em hospitais onde não há SVO, a DO deve ser assinada pelo médico do IML (Instituto Médico Legal) para garantir a isenção de crime.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (a) INCORRETA: Em mortes por causas externas, que incluem homicídios, suicídios e acidentes (mesmo que o óbito ocorra tempos depois do evento inicial no hospital), a competência para emitir a Declaração de Óbito (DO) é exclusiva do médico-legista do Instituto Médico Legal (IML). O médico-assistente ou plantonista não deve assinar a DO nesses casos, independentemente do tempo de internação.\n\nAlternativa (b) CORRETA: Esta alternativa reflete as normas do Conselho Federal de Medicina (Resolução 1.779/2005) e do Ministério da Saúde. Em óbitos por causas naturais (sem suspeita de violência) ocorridos em domicílio sem assistência médica, a prioridade de emissão é do Serviço de Verificação de Óbitos (SVO). Caso a localidade não disponha de SVO, a responsabilidade passa a ser do médico do serviço público de saúde local (como o da Estratégia Saúde da Família) ou, na falta deste, de qualquer médico da localidade.\n\nAlternativa (c) INCORRETA: A emissão da Declaração de Óbito é um ato médico gratuito e obrigatório, sendo considerada parte integrante da assistência prestada ao paciente. O médico está eticamente proibido de cobrar honorários específicos para o preenchimento deste formulário.\n\nAlternativa (d) INCORRETA: A emissão da DO no óbito fetal não é facultativa em todos os casos. Ela é obrigatória quando a gestação tiver duração igual ou superior a 20 semanas, OU quando o feto pesar 500 gramas ou mais, OU quando a estatura for de pelo menos 25 centímetros. Se o feto não atingir nenhum desses critérios, a DO só será emitida se a família desejar realizar o sepultamento.\n\nAlternativa (e) INCORRETA: O IML nunca deve ser acionado para óbitos por causas naturais, apenas para causas externas (violentas ou suspeitas). Em casos de morte natural em hospitais, a responsabilidade pela DO é do médico-assistente que acompanhava o paciente ou, na sua impossibilidade, do médico substituto ou plantonista da instituição. O fato de não haver SVO no hospital não transfere a responsabilidade para o IML se a morte for natural.\n\nGabarito: Alternativa (b).",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Sistemas de Informação em Saúde",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:43.500Z"
+  },
+  {
+    "id": "AJUDA_17855438-c3f1-4236-a684-2ac0b2da2eda",
+    "originalId": "17855438-c3f1-4236-a684-2ac0b2da2eda",
+    "statement": "Uma enfermeira gestante procura o pronto-socorro após exposição de material biológico (líquido amniótico) que atingiu sua mucosa oral e conjuntiva durante o auxílio a parto em período expulsivo, ocorrido há 2 dias. O feto era prematuro, neomorto, e o teste anti-HIV foi negativo. A gestante não realizou acompanhamento pré-natal e evadiu-se no dia seguinte ao parto. \nAssinale a alternativa que apresenta a conduta correta em relação à profilaxia pós-exposição ao HIV.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não indicação de realização de quimioprofilaxia tendo em vista o tempo decorrido da exposição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não há indicação de realização de quimioprofilaxia tendo em vista que a enfermeira se encontra gestante e há comprovação do teste anti-HIV negativo do natimorto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não indicação de realização de quimioprofilaxia tendo em vista que o material biológico não oferece risco",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Há indicação de quimioprofilaxia, porém como está gestante deverá ser em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Há indicação de quimioprofixia, pois é seguro para gestantes, e não se conhece a sorologia do paciente fonte.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO:\nO caso descreve um acidente ocupacional com exposição de mucosas (oral e conjuntival) a material biológico (líquido amniótico). Para decidir sobre a Profilaxia Pós-Exposição (PEP), devemos considerar três pilares: o tipo de material, o status da paciente-fonte e o tempo decorrido. O líquido amniótico é considerado um fluido com potencial de transmissão do HIV. O tempo de 48 horas (2 dias) está dentro do limite recomendado. A paciente-fonte (a mãe) tem status sorológico desconhecido, pois o teste do feto não substitui a sorologia materna e ela evadiu-se do hospital.\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\nAlternativa A: Incorreta. A PEP deve ser iniciada o mais precocemente possível, preferencialmente nas primeiras 2 horas após a exposição. No entanto, o protocolo do Ministério da Saúde e diretrizes internacionais estabelecem que a profilaxia pode e deve ser realizada se o atendimento ocorrer em até 72 horas após o acidente. Como se passaram 48 horas, a indicação permanece.\n\nAlternativa B: Incorreta. A gestação não contraindica o uso da PEP. Na verdade, se a profissional de saúde for infectada, a gestação aumenta a importância da profilaxia para evitar a transmissão vertical para o seu próprio bebê. Além disso, o resultado do teste no natimorto não é garantia do status da mãe, especialmente em um contexto de falta de pré-natal e possível janela imunológica ou carga viral materna. A mãe é a fonte da exposição.\n\nAlternativa C: Incorreta. De acordo com os protocolos de biossegurança, o líquido amniótico é classificado como material biológico com risco de transmissão do HIV, assim como o sangue, sêmen, secreções vaginais e fluidos de serosas (líquido pleural, pericárdico, peritoneal).\n\nAlternativa D: Incorreta. Não existe previsão de dose única para a quimioprofilaxia do HIV. O esquema terapêutico da PEP, independentemente de a paciente estar gestante ou não, deve ser mantido por 28 dias consecutivos para garantir a eficácia na interrupção da replicação viral inicial.\n\nAlternativa E: Correta. Esta alternativa sintetiza os critérios técnicos para a conduta: a PEP é indicada porque o status da paciente-fonte é desconhecido (ela evadiu-se e não tinha exames), o material é de risco e o tempo é oportuno (menos de 72 horas). Atualmente, os esquemas preferenciais (como Tenofovir + Lamivudina + Dolutegravir) são considerados seguros para uso em gestantes.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "HIV",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:43.500Z"
+  },
+  {
+    "id": "AJUDA_17900fda-3967-4937-a6d3-28a9a9c4b789",
+    "originalId": "17900fda-3967-4937-a6d3-28a9a9c4b789",
+    "statement": "Um homem de 60 anos comparece à consulta de acompanhamento. Ele tem histórico de hipertensão arterial e insuficiência cardíaca com fração de ejeção reduzida (FEVE = 35%). Usa atualmente enalapril e metoprolol. Há três meses, seu médico introduziu uma novo medicamento para melhorar o controle pressórico e reduzir os sintomas de congestão.\nDesde então, o paciente relata dor e aumento do volume mamário bilateral, que lhe causa constrangimento. Nega secreção pelo mamilo, alterações cutâneas ou dor em outras regiões. O exame físico mostra pressão arterial de 122/70 mmHg, frequência cardíaca de 66 bpm, melhora do edema de membros inferiores e testículos sem alterações.\nO mecanismo de ação do medicamento mais provavelmente responsável pelo efeito adverso descrito, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "antagonista do receptor de aldosterona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "antagonista do receptor de angiotensina II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "bloqueador beta-1 adrenérgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "inibidor do cotransportador sódio-glicose 2 (SGLT2).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "bloqueador do canal de cálcio tipo L.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO paciente apresenta Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFEr) e já fazia uso de dois pilares do tratamento: um Inibidor da Enzima Conversora de Angiotensina (Enalapril) e um Betabloqueador (Metoprolol). O médico introduziu uma terceira medicação para controle de sintomas congestivos e pressão arterial. O desenvolvimento de ginecomastia bilateral (dor e aumento mamário) após o início da nova droga é um efeito colateral clássico e muito frequente da Espironolactona.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) Correta: O medicamento em questão é a Espironolactona, um antagonista do receptor de aldosterona (mineralocorticoide). Ela é fundamental no tratamento da ICFEr (baseado em estudos como o RALES), mas, por possuir uma estrutura química semelhante à de hormônios esteroides, possui baixa seletividade. Ela acaba agindo também como um antiandrogênico, bloqueando os receptores de testosterona e aumentando a conversão periférica de andrógenos em estrógenos. Isso leva à ginecomastia e mastalgia em cerca de 10% dos pacientes homens. Uma alternativa para evitar esse efeito seria a Eplerenona, que é mais seletiva para o receptor de aldosterona.\n\nAlternativa (b) Incorreta: Os bloqueadores dos receptores de angiotensina II (BRAs), como a Losartana, não estão associados à ginecomastia. Além disso, o paciente já usava Enalapril, e a associação de IECA com BRA não é recomendada rotineiramente devido ao risco de insuficiência renal e hipercalemia.\n\nAlternativa (c) Incorreta: O Metoprolol é um betabloqueador seletivo beta-1 e o paciente já o utilizava previamente ao aparecimento dos sintomas mamários. Betabloqueadores podem estar relacionados à disfunção erétil, mas não são causas típicas de ginecomastia.\n\nAlternativa (d) Incorreta: Os inibidores do cotransportador sódio-glicose 2 (SGLT2), como a Dapagliflozina e a Empagliflozina, são medicações padrão-ouro no tratamento da ICFEr moderna. Seus principais efeitos colaterais são infecções genitais fúngicas e poliúria, sem qualquer relação com o tecido mamário ou eixos hormonais sexuais.\n\nAlternativa (e) Incorreta: Bloqueadores de canais de cálcio do tipo L (como a Anlodipina) são usados para hipertensão, mas não são drogas de primeira escolha para \"reduzir sintomas de congestão\" na insuficiência cardíaca. Além disso, bloqueadores de canais de cálcio não-diidropiridínicos (Verapamil e Diltiazem) são contraindicados na ICFEr por serem inotrópicos negativos. Embora existam relatos raros de ginecomastia com bloqueadores de canais de cálcio, eles não são a causa principal no contexto da terapia tripla da IC.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:43.500Z"
+  },
+  {
+    "id": "AJUDA_1792c4e5-09f9-4a14-903f-b3664752293e",
+    "originalId": "1792c4e5-09f9-4a14-903f-b3664752293e",
+    "statement": "Miomas ou leiomiomas são tumores genitais mais frequentes entre as mulheres, podendo ser encontrados em cerca de 70% delas, muitas vezes acidentalmente, em ultrassonografia de rotina. Sobre a abordagem dos miomas uterinos, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A embolização das artérias uterinas é um procedimento invasivo por cirurgia aberta, que poupa o útero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Como os análogos de GnRH têm efeito semelhante ao da menopausa, devem ser utilizados apenas em mulheres com mais de 45 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Na ablação por radiofrequência, o dano tecidual é grande, gerando desfechos ruins relacionados à possibilidade de gestação pós-procedimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Diante perfuração uterina com energia na miomectomia por histeroscopia, deve-se sempre realizar laparoscopia para avaliação de lesões de alças intestinais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Quando o volume uterino é maior do que 100 cc, está contraindicada a histerectomia minimamente invasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A (Incorreta): A embolização das artérias uterinas (EAU) não é um procedimento de cirurgia aberta. Trata-se de uma técnica de radiologia intervencionista, minimamente invasiva, realizada por meio de cateterismo (geralmente via artéria femoral ou radial). Embora o objetivo seja, de fato, poupar o útero, a classificação como \"cirurgia aberta\" torna a alternativa errada.\n\nAlternativa B (Incorreta): Os análogos do GnRH (como a leuprolida) induzem um estado de hipoestrogenismo temporário (pseudomenopausa), mas seu uso não é restrito a mulheres com mais de 45 anos. Eles são frequentemente indicados para mulheres mais jovens no pré-operatório de miomectomias para reduzir o volume dos miomas, diminuir a vascularização e corrigir anemias graves antes do procedimento cirúrgico.\n\nAlternativa C (Incorreta): A ablação por radiofrequência é uma técnica planejada para causar necrose coagulativa térmica focal no mioma, preservando ao máximo o tecido miometrial saudável adjacente. Embora os dados sobre gestação pós-radiofrequência ainda sejam menos robustos que os da miomectomia convencional, não se pode afirmar que o dano tecidual é generalizado ou que gera obrigatoriamente desfechos ruins. É uma técnica que visa justamente à preservação uterina com menor morbidade.\n\nAlternativa D (Correta): Esta é uma regra fundamental de segurança em videoendoscopia ginecológica. Durante uma miomectomia por histeroscopia, se ocorrer uma perfuração uterina enquanto o equipamento de energia (ressectoscópio) estiver acionado, há um risco altíssimo de lesão térmica inadvertida em órgãos pélvicos e abdominais, especialmente alças intestinais e bexiga. Como essas lesões podem não ser visíveis pelo orifício da perfuração e podem evoluir para peritonite química ou infecciosa em poucos dias, a realização de uma laparoscopia imediata é obrigatória para inspeção direta de toda a cavidade e exclusão de danos viscerais.\n\nAlternativa E (Incorreta): Um volume uterino de 100 cc (ou 100 cm³) é considerado pequeno, sendo apenas levemente superior ao volume de um útero normal (que varia entre 60 e 90 cc). A cirurgia minimamente invasiva (laparoscópica ou robótica) é perfeitamente factível e comumente indicada para volumes muito superiores a esse, chegando rotineiramente a úteros de 250-500 cc ou mais, dependendo da experiência da equipe cirúrgica. Portanto, 100 cc não é, de forma alguma, uma contraindicação.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:43.500Z"
+  },
+  {
+    "id": "AJUDA_179df550-828b-4289-9243-5f24de2f515e",
+    "originalId": "179df550-828b-4289-9243-5f24de2f515e",
+    "statement": "Paciente tem indicação de anticoagulação. Considerando o escore CHAD2DS2-VASc, é correto afirmar que o critério que contribui com 2 pontos para a pontuação final é",
+    "options": [
+      {
+        "id": "A",
+        "text": "idade ≥ 75 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "presença de insuficiência cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "presença de hipertensão arterial sistólica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "presença de diabetes melito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sexo feminino.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O escore CHA2DS2-VASc é utilizado para avaliar o risco de acidente vascular cerebral (AVC) em pacientes com fibrilação atrial e determinar a necessidade de anticoagulação. O próprio acrônimo ajuda a memorizar a pontuação, pois o número 2 posicionado após as letras A (Age) e S (Stroke) indica que esses critérios específicos valem 2 pontos cada, enquanto os demais valem 1 ponto.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): A idade igual ou superior a 75 anos é um dos critérios de maior peso no escore, conferindo 2 pontos ao cálculo final (representado pelo A2 no acrônimo). O outro critério que também pontua 2 é o antecedente de AVC, ataque isquêmico transitório (AIT) ou embolia sistêmica (representado pelo S2).\n\nAlternativa B (Incorreta): A insuficiência cardíaca congestiva ou a presença de disfunção ventricular esquerda moderada a grave contribui com apenas 1 ponto (letra C do acrônimo).\n\nAlternativa C (Incorreta): A presença de hipertensão arterial, independentemente de ser sistólica ou diastólica, contribui com apenas 1 ponto (letra H do acrônimo).\n\nAlternativa D (Incorreta): O diabetes melito é considerado um fator de risco que soma apenas 1 ponto à pontuação total (letra D do acrônimo).\n\nAlternativa E (Incorreta): O sexo feminino soma 1 ponto ao escore (letra Sc - Sex Category). Vale ressaltar que, isoladamente, o sexo feminino não pontua para fins de início de anticoagulação se for o único fator de risco presente.\n\nEm resumo, para o CHA2DS2-VASc, apenas Idade maior ou igual a 75 anos e Histórico de AVC/AIT/Embolia valem 2 pontos. Todos os outros critérios (Insuficiência Cardíaca, Hipertensão, Diabetes, Doença Vascular, Idade entre 65-74 anos e Sexo Feminino) valem 1 ponto cada.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:43.500Z"
+  },
+  {
+    "id": "AJUDA_179e5541-7d14-4e03-9f68-6774e7cf4911",
+    "originalId": "179e5541-7d14-4e03-9f68-6774e7cf4911",
+    "statement": "Mulher de 65 anos, com Doença Arterial Coronariana (DAC) e stent farmacológico implantado há 8 meses, em uso de aspirina e clopidogrel, necessita realizar uma cirurgia oftalmológica - vitrectomia que apresenta alto risco hemorrágico. Qual a recomendação da Sociedade Brasileira de Cardiologia quanto ao manejo antiplaquetário neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter dupla antiagregação em qualquer procedimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender aspirina e manter apenas o clopidogrel.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspender o clopidogrel e manter apenas a aspirina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Suspender ambos os antiplaquetários por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo da terapia antiplaquetária dupla (DAPT) no período perioperatório de pacientes com stents coronarianos. A paciente em questão possui um stent farmacológico (DES) implantado há 8 meses e será submetida a uma vitrectomia, uma cirurgia oftalmológica de segmento posterior classificada como de alto risco hemorrágico.\n\nSegundo as diretrizes da Sociedade Brasileira de Cardiologia (SBC), o manejo deve equilibrar o risco de trombose do stent (risco isquêmico) com o risco de sangramento cirúrgico. Como o stent foi implantado há mais de 6 meses, a paciente já ultrapassou o período de maior criticidade para trombose aguda do stent farmacológico (que são os primeiros 6 meses em casos eletivos).\n\nAlternativa a: Incorreta. A manutenção da dupla antiagregação (aspirina + clopidogrel) só deve ocorrer em procedimentos de baixo risco hemorrágico ou quando o risco de trombose do stent é altíssimo. Na vitrectomia, qualquer sangramento pode ser devastador para a visão (hemorragia vítrea ou expulsiva), contraindicando a manutenção da DAPT.\n\nAlternativa b: Incorreta. Quando é necessária a suspensão de um dos agentes para reduzir o risco de sangramento, a recomendação é suspender o bloqueador do receptor P2Y12 (clopidogrel) e manter a aspirina. A aspirina é o fármaco-base para a prevenção de eventos trombóticos e possui um perfil de segurança mais bem estabelecido no perioperatório do que o clopidogrel isolado.\n\nAlternativa c: Correta. Esta é a recomendação oficial da SBC. Para cirurgias de alto risco hemorrágico em pacientes com stent farmacológico com mais de 6 meses de implante, deve-se suspender o clopidogrel (idealmente 5 dias antes do procedimento) e manter a aspirina em dose baixa (100 mg) durante todo o período perioperatório. Isso protege o paciente contra a trombose do stent sem elevar excessivamente o risco de hemorragia grave.\n\nAlternativa d: Incorreta. A suspensão total da antiagregação (parar aspirina e clopidogrel) aumenta significativamente o risco de trombose do stent e infarto agudo do miocárdio no perioperatório, complicações que possuem alta mortalidade. A suspensão completa é reservada apenas para cirurgias com risco de sangramento catastrófico e incontrolável em cavidades fechadas, como certas neurocirurgias, o que não é a conduta padrão para este caso.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:43.500Z"
+  },
+  {
+    "id": "AJUDA_17a45fff-4af9-4fbc-b6e7-24e634513965",
+    "originalId": "17a45fff-4af9-4fbc-b6e7-24e634513965",
+    "statement": "Paciente, 19 anos de idade, procura atendimento relatando que nunca apresentou menstruação espontânea. A paciente apresenta desenvolvimento puberal dentro da normalidade. Com base nas possíveis causas de amenorreia primária, atribua V (verdadeiro) ou F (falso) às afirmativas a seguir. \n\n( ) A síndrome de Kallmann pode ser causa de amenorreia primária e se caracteriza como hipogonadismo hipergonadotrófico. \n( ) A síndrome de Rokitansky (agenesia mülleriana) é causa de amenorreia primária em pacientes com cariótipo 46, XX, desenvolvimento puberal normal e vagina curta. \n( ) A disgenesia gonadal pode se apresentar com amenorreia primária e níveis elevados de FSH e LH. \n( ) Se a paciente apresentar cariótipo 46, XY, estaremos diante da síndrome de Swyer. \n( ) Paciente com cariótipo 46, XY, apresentando ao exame físico ausência ou redução de pilificação, pode-se afirmar que o diagnóstico é a síndrome de insensibilidade completa aos andrógenos. \n\nAssinale a alternativa que contém, de cima para baixo, a sequência correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, V, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, V, F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, F, F, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, V, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "F, F, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é fundamental compreender a fisiologia do eixo hipotálamo-hipófise-gonadal e as malformações do trato reprodutivo. O caso descreve uma paciente de 19 anos com amenorreia primária e desenvolvimento puberal normal (o que indica que houve produção de estrogênio em níveis adequados para a telarca). \n\nAnálise das afirmativas:\n\n(F) A síndrome de Kallmann é uma causa de hipogonadismo HIPOgonadotrófico, e não hipergonadotrófico. Ela ocorre devido a uma falha na migração dos neurônios produtores de GnRH e dos neurônios olfatórios, resultando em baixos níveis de GnRH, FSH e LH, frequentemente associados a anosmia ou hiposmia.\n\n(V) A síndrome de Rokitansky (agenesia mülleriana) caracteriza-se pela ausência congênita do útero e dos dois terços superiores da vagina. Como os ovários são funcionais e derivados de outra linhagem embriológica, o cariótipo é 46,XX e o desenvolvimento dos caracteres sexuais secundários (mamas) é normal. O exame físico revela uma vagina curta ou em fundo cego.\n\n(V) A disgenesia gonadal (como na Síndrome de Turner ou disgenesia pura) envolve a falha no desenvolvimento dos ovários. Sem a produção de estrogênio e inibina pelos ovários, não ocorre o feedback negativo na hipófise, levando a níveis elevados de FSH e LH (hipogonadismo hipergonadotrófico). Embora a forma clássica de Turner não apresente desenvolvimento puberal, outras disgenesias ou mosaicismos podem permitir algum desenvolvimento antes da falência ovariana.\n\n(F) O cariótipo 46,XY em uma paciente com fenótipo feminino não é exclusivo da síndrome de Swyer. Essa característica também é encontrada na Síndrome de Insensibilidade Completa aos Andrógenos (Síndrome de Morris). A diferenciação entre as duas depende da presença de útero (presente em Swyer, ausente em Morris) e da avaliação dos pelos e das gônadas.\n\n(V) Na Síndrome de Insensibilidade Completa aos Andrógenos (SICA ou Morris), o paciente possui cariótipo 46,XY e testículos que produzem testosterona, porém os receptores androgênicos não funcionam. Como o desenvolvimento dos pelos axilares e pubianos depende da ação dos andrógenos, essas pacientes apresentam pilificação ausente ou muito escassa, o que é um marcador clínico importante para o diagnóstico.\n\nA sequência correta, portanto, é F - V - V - F - V, o que corresponde à alternativa (d).",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:43.500Z"
+  },
+  {
+    "id": "AJUDA_17a66f00-7b07-4467-a958-99c4718bf71e",
+    "originalId": "17a66f00-7b07-4467-a958-99c4718bf71e",
+    "statement": "Sobre os critérios utilizados no Brasil para definir prioridade na lista de transplante hepático, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A ordem de transplante é determinada principalmente pelo tempo de espera na fila, com MELD usado apenas como critério secundário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O MELD é calculado apenas com bilirrubina e INR, sem considerar creatinina ou sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pacientes com hepatocarcinoma (HCC) dentro dos critérios de Milão recebem prioridade absoluta, independentemente do MELD.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O sistema brasileiro utiliza o MELD/MELD-Na como critério principal, com prioridades especiais para situações como insuficiência hepática aguda, síndrome hepatopulmonar e HCC dentro dos critérios.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Pacientes com colangite esclerosante primária têm prioridade automática independentemente da gravidade clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender a lógica de alocação de órgãos para transplante hepático no Brasil, é fundamental entender a transição do critério cronológico (tempo de fila) para o critério de gravidade (estado clínico), que visa reduzir a mortalidade em lista de espera.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Historicamente, o tempo de espera era o critério principal, mas isso mudou em 2006. Atualmente, a prioridade é definida pela gravidade clínica. O tempo de fila funciona apenas como critério de desempate entre pacientes com a mesma pontuação de gravidade.\n\nAlternativa b) Incorreta. O cálculo do MELD (Model for End-Stage Liver Disease) clássico utiliza três exames laboratoriais: Bilirrubina total, INR e Creatinina. Mais recentemente, o Brasil incorporou o Sódio (MELD-Na) na fórmula, pois a hiponatremia é um marcador importante de prognóstico e complicações em cirróticos.\n\nAlternativa c) Incorreta. Embora o Hepatocarcinoma (HCC) dentro dos critérios de Milão seja uma \"Situação Especial\", ele não confere \"prioridade absoluta\" acima de qualquer outro paciente. O paciente recebe uma pontuação inicial pré-determinada (atualmente 20 pontos no Brasil) que progride ao longo do tempo, simulando uma gravidade equivalente à de um paciente cirrótico grave, mas ele ainda compete na lista com pacientes que possuem MELD natural elevado por insuficiência hepática. Além disso, casos de insuficiência hepática aguda grave (fulminante) possuem prioridade superior ao HCC.\n\nAlternativa d) Correta. Esta alternativa resume perfeitamente o sistema vigente. O pilar da alocação é o escore MELD/MELD-Na, que estima a mortalidade em 3 meses. Além dele, existem as \"Situações Especiais\" (como HCC nos critérios de Milão, Síndrome Hepatopulmonar e doenças metabólicas específicas) que garantem pontuações fixas para que esses pacientes consigam o transplante antes de apresentarem complicações fatais. Há também a \"Prioridade Máxima\" para casos de urgência, como a insuficiência hepática aguda grave (hepatite fulminante) e o não funcionamento primário do enxerto.\n\nAlternativa e) Incorreta. A Colangite Esclerosante Primária (CEP), por si só, não garante prioridade automática. O paciente com CEP será listado pelo seu valor de MELD. Caso ele apresente complicações específicas que o escore MELD não capta bem (como estenoses biliares recorrentes e refratárias com colangites de repetição), ele pode solicitar pontuação por situação especial, mas isso depende de análise técnica e preenchimento de critérios rigorosos, não sendo algo automático apenas pelo diagnóstico.\n\nGabarito: Letra (d).",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Transplante Hepático e Hepatite Fulminante"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:43.500Z"
+  },
+  {
+    "id": "AJUDA_17af6e5b-93e8-4ce4-9409-589b3de4f081",
+    "originalId": "17af6e5b-93e8-4ce4-9409-589b3de4f081",
+    "statement": "Em relação à prevenção do suicídio, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pessoas que falam sobre o suicídio não farão mal a si próprias, pois querem apenas chamar a atenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não devemos falar sobre o suicídio pois isso pode aumentar o risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A maioria das pessoas que está pensando em suicídio comunica seus pensamentos e intenções, dando sinais e fazendo comentários sobre “querer morrer”.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É proibido que a mídia aborde o suicídio, com a finalidade de estimular as pessoas que apresentam ideação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indivíduos com ideação suicida querem mesmo morrer, ou seja, estão decididos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nAlternativa A: INCORRETA. Este é um dos mitos mais difundidos e perigosos sobre o tema. A ideia de que quem fala sobre suicídio não o cometerá ou que está apenas tentando chamar a atenção é falsa. Na prática clínica, observamos que muitas pessoas que concretizam o ato deram sinais claros de suas intenções anteriormente. Toda ameaça ou expressão de desejo de morte deve ser levada a sério e avaliada criteriosamente pelo profissional de saúde.\n\nAlternativa B: INCORRETA. Abordar o assunto de forma técnica, acolhedora e sem julgamentos não aumenta o risco de suicídio. Pelo contrário, falar sobre o tema reduz o estigma, proporciona alívio emocional ao paciente e permite que o médico identifique o grau de risco para estabelecer um plano terapêutico adequado. O silêncio, muitas vezes, impede que a pessoa receba a ajuda necessária.\n\nAlternativa C: CORRETA. A maioria das pessoas em crise suicida comunica seu sofrimento e suas intenções, seja de forma verbal direta (comentários sobre querer desistir ou sumir) ou por meio de sinais comportamentais (despedidas, doação de pertences, isolamento súbito). A identificação desses sinais de alerta por familiares e profissionais de saúde é um pilar fundamental da prevenção.\n\nAlternativa D: INCORRETA. Não existe uma proibição para que a mídia aborde o suicídio. O que existe são recomendações e diretrizes da Organização Mundial da Saúde (OMS) e do Ministério da Saúde sobre como o tema deve ser reportado. A abordagem deve ser educativa, focada na prevenção e na divulgação de canais de ajuda, evitando o sensacionalismo, a glamourização do ato ou a descrição detalhada de métodos, para prevenir o efeito de contágio (Efeito Werther).\n\nAlternativa E: INCORRETA. Indivíduos com ideação suicida geralmente apresentam uma profunda ambivalência entre o desejo de morrer e o de viver. Na grande maioria dos casos, a pessoa não deseja necessariamente a morte, mas sim o fim de um sofrimento psíquico que ela percebe como intolerável e sem saída. A intervenção médica e psicológica atua justamente para fortalecer o desejo de vida e oferecer alternativas para lidar com a dor.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Psicopatologia",
+      "Transtornos do Humor",
+      "Psiquiatria Social e Reforma Psiquiátrica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:43.500Z"
+  },
+  {
+    "id": "AJUDA_17b3fe15-5cbe-4fc7-95cc-c29c7bb06316",
+    "originalId": "17b3fe15-5cbe-4fc7-95cc-c29c7bb06316",
+    "statement": "Criança de 4 anos com história de tosse seca, febre baixa e crepitações em ausculta pulmonar. Radiografia mostra infiltrado intersticial. O agente etiológico mais provável no quadro apresentado é o",
+    "options": [
+      {
+        "id": "A",
+        "text": "Streptococcus pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mycoplasma pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Haemophilus influenzae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adenovírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pseudomonas aeruginosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um quadro clássico de pneumonia atípica em uma criança de 4 anos. Os pontos-chave para o diagnóstico são o início subagudo com febre baixa, a presença de tosse seca e, fundamentalmente, o achado radiológico de infiltrado intersticial, que contrasta com a ausculta de crepitações (dissociação clínico-radiológica).\n\na) Streptococcus pneumoniae: Incorreta. O pneumococo é a causa mais comum de pneumonia bacteriana típica em todas as faixas etárias após o período neonatal. No entanto, seu quadro clínico é caracterizado por início súbito, febre alta, prostração e tosse produtiva. Radiologicamente, o padrão esperado é de consolidação lobar ou segmentar, e não infiltrado intersticial.\n\nb) Mycoplasma pneumoniae: Correta. É o principal agente das pneumonias atípicas. Embora seja mais prevalente em escolares (acima de 5 anos) e adolescentes, sua incidência tem sido cada vez mais reconhecida em pré-escolares. O Mycoplasma causa um quadro de evolução lenta, com febre moderada, tosse persistente (inicialmente seca) e um padrão radiológico intersticial que parece \"pior\" do que o estado clínico do paciente sugere.\n\nc) Haemophilus influenzae: Incorreta. Trata-se de um agente de pneumonia bacteriana típica. Assim como o pneumococo, costuma causar quadros de consolidação pulmonar. Além disso, sua incidência em crianças caiu drasticamente após a introdução da vacina conjugada no calendário vacinal de rotina.\n\nd) Adenovírus: Incorreta. Os vírus respiratórios são causas frequentes de infecções pulmonares em crianças pequenas e podem causar infiltrado intersticial. No entanto, o adenovírus especificamente costuma cursar com quadros respiratórios mais graves, febre alta e duradoura, podendo levar a complicações como a bronquiolite obliterante, o que diverge da descrição de febre baixa e quadro mais leve da questão. Em questões de prova, o padrão descrito aponta preferencialmente para o Mycoplasma.\n\ne) Pseudomonas aeruginosa: Incorreta. Este é um patógeno oportunista. Não causa pneumonia em crianças previamente saudáveis na comunidade. Sua presença está restrita a pacientes com fibrose cística, imunodeficiências, doença pulmonar crônica ou aqueles que estão em ventilação mecânica prolongada no ambiente hospitalar.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:43.500Z"
+  }
+]

@@ -1,0 +1,517 @@
+[
+  {
+    "id": "AJUDA_95b57ea6-39f3-4798-9ea6-e1b3c3695f25",
+    "originalId": "95b57ea6-39f3-4798-9ea6-e1b3c3695f25",
+    "statement": "Não é causa de amenorréia primária:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sindrome de Rokitansky-Kuster-Hauser.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de Asherman.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Turner.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Morris.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hímen imperfurado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, é fundamental diferenciar os conceitos de amenorreia primária e secundária. A amenorreia primária é a ausência de menarca (primeira menstruação) até os 13 anos de idade em pacientes sem caracteres sexuais secundários, ou até os 15 anos naquelas com desenvolvimento puberal normal. Já a amenorreia secundária é a ausência de menstruação por 3 a 6 meses em mulheres que já menstruavam anteriormente.\n\nAnálise das alternativas:\n\na) Síndrome de Rokitansky-Küster-Hauser: Também chamada de agenesia mülleriana, consiste na falha do desenvolvimento dos ductos de Müller. A paciente nasce sem útero, tubas uterinas e com os dois terços superiores da vagina encurtados ou ausentes. Como não há útero desde o nascimento, a paciente nunca terá a menarca, sendo uma causa clássica de amenorreia primária.\n\nb) Síndrome de Asherman: Esta síndrome se caracteriza pela formação de cicatrizes e aderências dentro da cavidade uterina (sinéquias), que obliteram o endométrio. Essas aderências geralmente ocorrem após traumas uterinos, como curetagens excessivas pós-aborto ou pós-parto, ou infecções graves, como a tuberculose endometrial. Como a paciente precisou passar por um evento prévio (como uma gravidez ou procedimento) para desenvolver as sinéquias, assume-se que ela já menstruava antes do dano endometrial. Portanto, a Síndrome de Asherman é uma causa de amenorreia secundária. Esta é a alternativa correta.\n\nc) Síndrome de Turner: É uma alteração citogenética caracterizada pela monossomia do cromossomo X (45,X). A ausência do segundo cromossomo sexual causa disgenesia gonadal, transformando os ovários em \"ovários em fita\", que não produzem hormônios sexuais suficientes para o desenvolvimento endometrial e posterior menstruação. É a causa mais frequente de amenorreia primária com hipogonadismo hipergonadotrófico.\n\nd) Síndrome de Morris: Conhecida como Síndrome de Insensibilidade aos Androgênios, ocorre em indivíduos com cariótipo 46,XY. Embora possuam testículos (geralmente intra-abdominais), há uma resistência periférica total à testosterona. Os testículos produzem o hormônio antimülleriano (HAM), o que impede o desenvolvimento do útero e das trompas. O fenótipo é feminino, mas a ausência de útero desde o nascimento resulta em amenorreia primária.\n\ne) Hímen imperfurado: É uma malformação anatômica na qual a membrana himenal não se rompe durante o desenvolvimento embrionário, obstruindo a saída do fluxo menstrual. A paciente apresenta desenvolvimento hormonal e uterino normais, mas o sangue fica retido na vagina (hematocolpos). Como a menstruação nunca é exteriorizada, configura-se um quadro de amenorreia primária obstrutiva (ou criptomenorreia).\n\nConclusão: A Síndrome de Asherman (alternativa B) é a única entre as opções que decorre de um evento adquirido que interrompe ciclos menstruais previamente existentes, sendo, portanto, uma causa de amenorreia secundária.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:46.508Z"
+  },
+  {
+    "id": "AJUDA_95b64f63-09d2-430a-bc54-0da51722648a",
+    "originalId": "95b64f63-09d2-430a-bc54-0da51722648a",
+    "statement": "Recém-nascido de 35 semanas de idade gestacional, apresenta desconforto respiratório logo após o nascimento. Ao exame, está cianótico +/4+, com murmúrio vesicular presente bilateralmente com roncos disseminados; sopro sistólico rude no foco aórtico; abdome globoso, distendido, flácido, RHA + e normais, ausência de orifício anal; apresenta escoliose e deformidade em perna e pé à direita. Qual é a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ultrassonografia de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ecocardiograma com doppler.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tomografia computadorizada de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Passagem de sonda nasogástrica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender essa questão, o primeiro passo é identificar a suspeita diagnóstica principal baseada no conjunto de malformações apresentadas pelo recém-nascido. O quadro clínico de escoliose (vertebral), ausência de orifício anal (anal), sopro cardíaco (cardíaco), desconforto respiratório (sugerindo fístula traqueoesofágica ou atresia de esôfago) e deformidade em membros (limb/membros) aponta diretamente para a Associação VACTERL.\n\nA Associação VACTERL é um acrônimo para um grupo de anomalias congênitas que ocorrem juntas com frequência:\nV - Vertebrais (escoliose, hemivértebras);\nA - Anais (imperfuração anal);\nC - Cardíacas (comunicação interventricular, sopros);\nT-E - Traqueoesofágicas (fístula traqueoesofágica ou atresia de esôfago);\nR - Renais;\nL - Limb (membros, como rádio ou pés).\n\nDiante de um recém-nascido com imperfuração anal e desconforto respiratório logo ao nascer, a prioridade absoluta é investigar a patência das vias aérea e digestiva superiores, especificamente a hipótese de atresia de esôfago, que faz parte do espectro VACTERL.\n\nAnálise das alternativas:\n\na) Incorreta. A ultrassonografia de abdome será importante posteriormente para avaliar anomalias renais (o \"R\" do VACTERL) ou para auxiliar na avaliação da distância do fundo de saco retal na malformação anorretal, mas não é a conduta inicial prioritária para um paciente com desconforto respiratório e suspeita de malformações múltiplas.\n\nb) Incorreta. O ecocardiograma é fundamental para detalhar o sopro sistólico e diagnosticar a cardiopatia congênita, mas, no manejo imediato do recém-nascido com desconforto respiratório e suspeita de atresia de esôfago, a estabilização e o diagnóstico da obstrução digestiva alta precedem o exame de imagem cardíaco.\n\nc) Incorreta. A tomografia computadorizada de tórax não é um exame de rotina inicial para recém-nascidos. Além da alta carga de radiação, o diagnóstico de atresia de esôfago ou fístulas pode ser sugerido de forma muito mais simples e rápida à beira do leito.\n\nd) Correta. A passagem de uma sonda nasogástrica (ou orogástrica) é o procedimento inicial, simples e rápido para triagem de atresia de esôfago. Se a sonda encontrar resistência e não progredir até o estômago, confirma-se a suspeita clínica de atresia. Além disso, a sonda ajuda na descompressão gástrica ou na drenagem de secreções em bolsas esofágicas cegas, prevenindo a aspiração salivar e facilitando o manejo do desconforto respiratório. É a conduta padrão em casos de suspeita de VACTERL ou malformações anorretais, pois estas frequentemente coexistem com atresia de esôfago.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil",
+      "Outros Distúrbios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:46.508Z"
+  },
+  {
+    "id": "AJUDA_95c5d266-8597-4a0f-aefc-bd010432e9d6",
+    "originalId": "95c5d266-8597-4a0f-aefc-bd010432e9d6",
+    "statement": "Mulher, 35 anos, procura pronto atendimento por palpitações, tremores, sudorese e sensação de falta de ar. Relata que episódios semelhantes ocorrem de forma súbita, duram cerca de 15 minutos e são acompanhados de medo intenso de “morrer ou enlouquecer”. Refere que desde o primeiro episódio, há 2 meses, passou a evitar lugares públicos por receio de novas crises. Exames laboratoriais (TSH, hemograma, eletrólitos, ECG) estão normais. O diagnóstico mais provável e a conduta inicial recomendada são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transtorno de ansiedade generalizada – iniciar benzodiazepínico em monoterapia de uso contínuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transtorno de pânico – iniciar tratamento com antidepressivo ISRS, podendo associar benzodiazepínico por curto prazo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Fobia social – encaminhar exclusivamente para terapia cognitivo-comportamental, sem indicação farmacológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipoglicemia recorrente – indicar dieta fracionada e evitar uso de ansiolíticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Transtorno obsessivo-compulsivo – iniciar tratamento com clomipramina como primeira escolha, independentemente do perfil clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve uma paciente com episódios súbitos e paroxísticos de ansiedade intensa, acompanhados de sintomas autonômicos exuberantes (palpitações, sudorese, tremores, dispneia) e sintomas cognitivos característicos (medo de morrer ou de enlouquecer). A duração breve (15 minutos) e o comportamento subsequente de evitar locais públicos por medo de novas crises (esquiva fóbica/agorafobia) são marcos diagnósticos fundamentais. A normalidade dos exames laboratoriais e do ECG afasta causas orgânicas imediatas, como disfunções tireoidianas, arritmias ou distúrbios hidroeletrolíticos.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): O Transtorno de Ansiedade Generalizada (TAG) caracteriza-se por uma ansiedade crônica, persistente e \"flutuante\", que dura a maior parte dos dias por pelo menos 6 meses, sobre diversos eventos ou atividades. Não se manifesta por ataques súbitos de pânico com medo de morte iminente. Além disso, o uso de benzodiazepínicos em monoterapia contínua não é o tratamento padrão-ouro devido ao risco de dependência e tolerância.\n\nAlternativa B (Correta): O diagnóstico é Transtorno de Pânico. Segundo o DSM-5, ele caracteriza-se por ataques de pânico recorrentes e inesperados, seguidos por pelo menos um mês de preocupação persistente com novos ataques ou mudanças desadaptativas no comportamento (como evitar lugares públicos). O tratamento de primeira linha são os antidepressivos Inibidores Seletivos da Recaptação de Serotonina (ISRS). Como os ISRS demoram de 2 a 4 semanas para iniciar o efeito terapêutico, o uso associado de benzodiazepínicos por curto prazo (2 a 4 semanas) pode ser recomendado para o controle sintomático agudo e para melhorar a adesão do paciente.\n\nAlternativa C (Incorreta): Na Fobia Social (Transtorno de Ansiedade Social), o medo central é o de ser julgado, humilhado ou avaliado negativamente em situações sociais. No caso clínico, a paciente evita lugares públicos não pelo julgamento alheio, mas pelo medo de ter uma crise de pânico e não conseguir socorro ou escape (agorafobia). Além disso, o tratamento farmacológico é frequentemente indicado em casos moderados a graves.\n\nAlternativa D (Incorreta): A hipoglicemia pode causar sintomas adrenérgicos (palpitação, tremor, sudorese), mas o quadro de medo de enlouquecer e a esquiva fóbica crônica são tipicamente psiquiátricos. Além disso, os exames laboratoriais normais descartam distúrbios metabólicos recorrentes como causa primária.\n\nAlternativa E (Incorreta): O Transtorno Obsessivo-Compulsivo (TOC) envolve a presença de obsessões (pensamentos intrusivos e persistentes) e/ou compulsões (comportamentos repetitivos para reduzir a ansiedade), que não estão presentes no relato. A clomipramina é um antidepressivo tricíclico eficaz no TOC e no pânico, mas não é a primeira escolha devido ao seu perfil de efeitos colaterais (anticolinérgicos, risco cardiovascular) quando comparada aos ISRS.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Transtornos de Ansiedade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:46.508Z"
+  },
+  {
+    "id": "AJUDA_95c5fcbd-1bbc-439a-babf-934af310f161",
+    "originalId": "95c5fcbd-1bbc-439a-babf-934af310f161",
+    "statement": "Considerando a Figura 2 abaixo, o diagnóstico mais provável e a conduta mais adequada são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retocele – cirurgia de Burch.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Retocele – cirurgia de colpocleise (Le Fort).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cisto de Bartholin – marsupialização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cistocele – encaminhar para centro especializado, se a paciente for sintomática.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da Imagem: A figura apresentada demonstra uma protrusão volumosa da parede vaginal anterior que se exterioriza pelo introito. Note que o meato uretral está localizado logo acima da massa, o que confirma tratar-se de uma herniação da bexiga para o canal vaginal, caracterizando uma cistocele.\n\nAlternativa (a) Incorreta: A retocele consiste no prolapso da parede vaginal posterior (herniação do reto), o que não condiz com a localização anterior da massa vista na imagem. Além disso, a cirurgia de Burch é uma técnica de colpossuspensão retropúbica indicada para o tratamento da incontinência urinária de esforço por hipermobilidade do colo vesical, e não para a correção de retocele.\n\nAlternativa (b) Incorreta: Como mencionado, a imagem não representa uma retocele. A cirurgia de Le Fort (colpocleise) é um procedimento obliterativo, ou seja, que fecha o canal vaginal. Ela é reservada para casos de prolapso uterino ou de cúpula em pacientes idosas, com comorbidades graves e que não pretendem ter mais atividade sexual com penetração.\n\nAlternativa (c) Incorreta: O cisto da glândula de Bartholin se manifesta como uma tumefação na região póstero-lateral do introito vaginal (geralmente às 4 ou 8 horas do relógio), sendo habitualmente unilateral. A imagem mostra uma protrusão central e superior, vinda da parede anterior, o que descarta essa hipótese.\n\nAlternativa (d) Correta: O diagnóstico visual é de cistocele (prolapso de parede anterior). A conduta em casos de distopias genitais depende do estadiamento (sistema POP-Q) e, principalmente, do impacto na qualidade de vida. Se a paciente apresenta sintomas como sensação de peso, bola na vagina ou disfunções urinárias, o encaminhamento para serviço especializado para discussão de tratamento cirúrgico (colporrafia anterior) ou uso de pessários é a conduta preconizada.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/78b8bab10e57f5a674caae4718d482d535aefe5f00310d6801e01d4a185adc6a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_95c5fcbd-1bbc-439a-babf-934af310f161_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:46.920Z"
+  },
+  {
+    "id": "AJUDA_95c7edc1-ead3-4401-853b-30e8a974b135",
+    "originalId": "95c7edc1-ead3-4401-853b-30e8a974b135",
+    "statement": "Em um atendimento na sala amarela da UPA, você acolhe um paciente do sexo masculino, 68 anos, tabagista com carga tabágica de 50 maços/ano, portador de DPOC GOLD D, em uso domiciliar de broncodilatadores de longa ação e corticosteroide inalatório. Segundo relato da acompanhante, há três dias apresenta piora progressiva da dispneia, tosse produtiva e aumento do volume e purulência do escarro. Evolui com rebaixamento do nível de consciência e sonolência. Ao exame físico: uso de musculatura acessória, FR 30 irpm, SpO₂ 84% em ar ambiente, ausculta com roncos e sibilos difusos. Gasometria arterial: pH 7,28; pCO₂ 68 mmHg; pO₂ 54 mmHg; HCO₃⁻ 30 mEq/L. Voce pede um Rx de urgência do paciente, representado abaixo:\n\nQual a MELHOR conduta ventilatória inicial neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intubação orotraqueal imediata e ventilação mecânica invasiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ventilação não invasiva (BiPAP) associada a oxigênio suplementar, titulando saturação entre 88% e 92%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Oxigenoterapia em alto fluxo com alvo de saturação acima de 98%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas broncodilatadores e corticoide sistêmico, sem suporte ventilatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um quadro de exacerbação aguda de DPOC, preenchendo os três critérios de Anthonisen: piora da dispneia, aumento do volume do escarro e aumento da purulência. A gasometria arterial revela uma insuficiência respiratória hipercápnica com acidose respiratória moderada a grave (pH 7,28 e pCO2 68 mmHg), além de hipoxemia (pO2 54 mmHg). O raio X de tórax associado demonstra sinais clássicos de DPOC e hiperinsuflação pulmonar, como a retificação das cúpulas diafragmáticas, aumento dos espaços intercostais e coração em gota.\n\nEmbora a Ventilação Não Invasiva (VNI) seja a primeira linha de tratamento para pacientes com DPOC e acidose respiratória, este paciente apresenta uma contraindicação absoluta: o rebaixamento do nível de consciência e sonolência. Pacientes que não conseguem proteger as vias aéreas, que estão sonolentos ou não cooperativos, não devem realizar VNI pelo alto risco de falha e broncoaspiração. Nestes casos, a via aérea definitiva deve ser estabelecida imediatamente.\n\nAlternativa a: Correta. A presença de alteração do nível de consciência em um paciente com falência respiratória e acidose é uma indicação clássica de intubação orotraqueal e ventilação mecânica invasiva.\n\nAlternativa b: Incorreta. Apesar de a VNI ser o tratamento de escolha inicial na maioria das exacerbações de DPOC com acidose, ela é contraindicada quando há rebaixamento do sensório, instabilidade hemodinâmica grave ou excesso de secreções sem capacidade de expectoração.\n\nAlternativa c: Incorreta. O uso de oxigênio em alto fluxo com alvos de saturação elevados (acima de 98%) é perigoso em pacientes com DPOC. Isso pode causar a depressão do drive respiratório (que nesses pacientes é dependente da hipoxemia), piorar a hipercapnia e levar à narcose pelo CO2. O alvo terapêutico correto seria entre 88% e 92%. Além disso, o oxigênio sozinho não trata a ventilação deficiente (hipercapnia).\n\nAlternativa d: Incorreta. O tratamento medicamentoso com broncodilatadores e corticoides é fundamental, porém, diante da gravidade do quadro clínico, da acidose e do comprometimento neurológico, o suporte ventilatório invasivo é a prioridade absoluta para estabilização do paciente.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Ventilação não invasiva (VNI)",
+      "Pneumologia Intensiva",
+      "Ventilação Mecânica",
+      "Intubação",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/298b4ed9b7e411b666cf9aa8860ca7f5d8a4eeb99cbef51c39733fe9fc28538e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_95c7edc1-ead3-4401-853b-30e8a974b135_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:47.309Z"
+  },
+  {
+    "id": "AJUDA_95c8f3d8-32aa-4c80-a480-8faf96e69631",
+    "originalId": "95c8f3d8-32aa-4c80-a480-8faf96e69631",
+    "statement": "A causa mais comum de hiponatremia euvolêmica na prática clínica, frequentemente associada a neoplasias ou doenças do sistema nervoso central, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insuficiência adrenal primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome da Secreção Inapropriada do Hormônio Antidiurético (SIADH).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Uso de diuréticos tiazídicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Polidipsia psicogênica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a classificação diagnóstica das hiponatremias baseada no estado volêmico do paciente, um tema frequente em provas de residência. Para responder corretamente, é necessário identificar a causa que se enquadra no perfil de euvolemia e que possua as associações clínicas mencionadas.\n\nAlternativa (b) - CORRETA: A Síndrome da Secreção Inapropriada do Hormônio Antidiurético (SIADH) é a principal causa de hiponatremia euvolêmica. Nela, ocorre uma secreção excessiva de ADH, independentemente da osmolaridade plasmática, levando à reabsorção excessiva de água livre nos túbulos coletores. O leve aumento do volume extracelular ativa mecanismos natriuréticos (como o peptídeo natriurético atrial), o que mantém o paciente clinicamente euvolêmico (sem edemas ou sinais de desidratação). Suas principais causas incluem neoplasias (especialmente o câncer de pulmão de pequenas células), doenças do sistema nervoso central (AVC, meningite, traumatismos) e pneumopatias.\n\nAlternativa (a) - INCORRETA: A insuficiência adrenal primária (doença de Addison) causa hiponatremia; porém, ela é tipicamente classificada como hipovolêmica. Isso ocorre porque a deficiência de mineralocorticoides (aldosterona) leva à perda urinária de sódio e água, resultando em depleção do volume extracelular.\n\nAlternativa (c) - INCORRETA: O uso de diuréticos tiazídicos é uma causa comum de hiponatremia, mas geralmente está associado a um estado de hipovolemia (ou hipovolemia leve/subclínica). Diferentemente dos diuréticos de alça, os tiazídicos agem no túbulo distal e não interferem no gradiente medular, permitindo que o ADH continue agindo e retendo água enquanto o sódio é espoliado.\n\nAlternativa (d) - INCORRETA: A polidipsia psicogênica é, de fato, uma causa de hiponatremia euvolêmica. Ela ocorre quando a ingestão de água excede a capacidade máxima de excreção renal (geralmente acima de 12 a 15 litros por dia). No entanto, não é a causa mais comum na prática clínica e não possui a associação clássica com neoplasias ou doenças do sistema nervoso central como a que ocorre na SIADH.\n\nEm resumo, a combinação de euvolemia clínica com histórico de neoplasia ou lesão neurológica deve sempre direcionar o raciocínio médico para a SIADH.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Distúrbios do Sódio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:47.309Z"
+  },
+  {
+    "id": "AJUDA_95c96802-c4da-4406-9e27-96504783df21",
+    "originalId": "95c96802-c4da-4406-9e27-96504783df21",
+    "statement": "J.P.G. é um menino de 10 anos que apresenta histórico de infecções respiratórias bacterianas frequentes desde os 3 anos de idade, incluindo sinusites, otites médias e dois episódios de pneumonia comunitária. Há cerca de 2 anos, mantém tratamento regular para asma (corticoide inalatório em baixas doses associado a broncodilatador de longa duração) e corticoide tópico nasal para os sintomas da rinite alérgica. Nos últimos 6 meses, apresentou episódios recorrentes de diarreia, com resultado positivo para o antígeno de Giardia lamblia. Ao exame físico, encontra-se no escore z de zero (IMC), sinais de infecção respiratória superior; à inspeção abdominal, leve distensão e aumento do ruído hidroaéreo, sem visceromegalias ou linfadenopatia visível. Carteira vacinal completa. Considerando as principais hipóteses etiológicas que justifiquem os sintomas de J.P.G, assinale a alternativa que apresenta apenas instrumentos laboratoriais relevantes para a investigação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemograma, imunofenotipagem, tomografia de seios da face.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dosagem de imunoglobulinas e sorologia para anticorpos polissacarídeos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sorologia para anticorpos proteicos, dosagem de IgE específica para aeroalérgenos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Espirometria, painel genético para deficiência de fagócitos, subpopulações de linfócitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nO paciente apresenta um quadro clínico sugestivo de Imunodeficiência Primária, especificamente um defeito na imunidade humoral (produção de anticorpos). Os principais indícios são as infecções respiratórias recorrentes por bactérias e, muito importante, a diarreia recorrente por Giardia lamblia. A Giardia é um marcador clássico de deficiência de IgA ou de Imunodeficiência Comum Variável (IDCV), pois a falta de anticorpos na mucosa intestinal facilita a colonização e infecção por esse protozoário. O fato de o paciente ter asma e rinite também é compatível, pois quadros de atopia e autoimunidade são frequentes em pacientes com IDCV.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\nPara investigar defeitos de anticorpos, o primeiro passo laboratorial é a dosagem das imunoglobulinas séricas (IgG, IgA e IgM). No entanto, alguns pacientes podem ter níveis normais de imunoglobulinas totais, mas não conseguirem produzir anticorpos específicos contra determinados antígenos. Como o menino tem o calendário vacinal completo, o passo seguinte é avaliar a resposta funcional do sistema imune. Isso é feito através da sorologia para anticorpos polissacarídeos (geralmente avaliando a resposta à vacina do Pneumococo). Se o paciente não tiver títulos protetores mesmo após a vacinação, confirma-se um defeito funcional na produção de anticorpos.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa a: O hemograma é um exame de triagem inicial e a imunofenotipagem (contagem de linfócitos B, T e NK) é útil para classificar o tipo de imunodeficiência. No entanto, a tomografia de seios da face é um exame de imagem que diagnostica a patologia instalada (sinusite), servindo para avaliar a gravidade da doença atual, mas não contribui para a investigação da etiologia imunológica subjacente.\n\nAlternativa c: Embora a sorologia para anticorpos proteicos (como antitétano ou antidifteria) seja parte da investigação funcional, a dosagem de IgE específica para aeroalérgenos serve apenas para o controle clínico das alergias (asma e rinite) e não para a investigação da causa das infecções bacterianas e da giardíase.\n\nAlternativa d: A espirometria avalia a função pulmonar devido à asma ou sequelas de pneumonias, mas não investiga a causa da imunodeficiência. O painel genético para deficiência de fagócitos seria indicado se o paciente apresentasse abscessos cutâneos ou profundos e infecções por bactérias catalase-positivas (como S. aureus), o que não é o quadro típico de infecção por Giardia. As subpopulações de linfócitos são importantes, mas a avaliação funcional de anticorpos (alternativa b) é mais direta para o quadro apresentado.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria",
+      "Diarreia",
+      "Pneumonia na Infância",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:47.309Z"
+  },
+  {
+    "id": "AJUDA_95cea54f-36b4-4fd2-8c3a-e0f238857e0c",
+    "originalId": "95cea54f-36b4-4fd2-8c3a-e0f238857e0c",
+    "statement": "Considere que na data de hoje você atende uma paciente de 30 anos que veio à consulta de pré-natal e está sem queixas. Ela não tem patologias e a gestação não foi planejada, porém ela está feliz com a gravidez. Antes da gravidez, estava bem e não apresentava nenhum sintoma, sejam sistêmicos ou vulvovaginais. A DUM foi 22/08/2025 e ela mostra os seguintes resultados que haviam faltado na consulta anterior:\n- Toxoplasmose IgG positivo com alta avidez\n- Teste Imunológico Treponêmico - reagente\n- Teste não Treponêmico - reagente\n- Citomegalovírus IgG negativo e IgM negativo\n- HBsAg negativo\n- Ac Anti HIV-1 e Anti HIV-2 negativos\nCom base nos resultados acima, qual a conduta a ser seguida, segundo Protocolo do Ministério da Saúde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratamento da Toxoplasmose com Espiramicina e repetir sorologias em 2-3 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar teste de Avidez para Toxoplasmose antes de iniciar tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir o Teste não Treponêmico (VDRL) antes de iniciar o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar Tonofivir a partir do 3 trimestre até o parto para Hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tratamento imediato com Penicilina Benzatina e Teste não Treponêmico mensalmente.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão exige o conhecimento dos protocolos do Ministério da Saúde para o rastreio de infecções durante o pré-natal, com foco principal em sífilis e toxoplasmose.\n\nAnálise dos resultados laboratoriais:\n\n1. Toxoplasmose: O resultado apresenta IgG positivo com alta avidez. A alta avidez, quando detectada no início da gestação (geralmente até a 16ª semana), indica que a infecção ocorreu há mais de 4 meses, ou seja, antes da gestação. Portanto, a paciente é considerada imune e não há risco de transmissão vertical, dispensando tratamento ou novos exames de avidez.\n\n2. Sífilis: A paciente apresenta dois testes reagentes (um treponêmico e um não treponêmico). De acordo com o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST), a presença de dois testes reagentes confirma o diagnóstico de sífilis. Em gestantes, o tratamento deve ser iniciado imediatamente para evitar a sífilis congênita.\n\n3. Outros exames: CMV (suscetível, sem infecção ativa), HBsAg negativo (sem hepatite B) e HIV negativo.\n\nAnálise das alternativas:\n\na) Incorreta. A toxoplasmose com alta avidez no primeiro trimestre indica infecção antiga e não requer tratamento com espiramicina. O foco do tratamento deve ser a sífilis confirmada.\n\nb) Incorreta. O teste de avidez já foi realizado e apresentou resultado de \"alta avidez\", o que encerra a investigação para infecção aguda por toxoplasmose nesta gestação.\n\nc) Incorreta. Não se deve aguardar a repetição de exames quando se tem dois testes reagentes para sífilis em uma gestante. O tratamento deve ser imediato para minimizar os riscos ao feto.\n\nd) Incorreta. O HBsAg é negativo, o que significa que a paciente não possui o vírus da hepatite B. O uso de tenofovir é indicado apenas em casos específicos de gestantes com hepatite B e alta carga viral.\n\ne) Correta. Diante da confirmação laboratorial de sífilis (dois testes reagentes), a conduta preconizada pelo Ministério da Saúde é o tratamento imediato com penicilina benzatina (droga de escolha e única capaz de tratar o feto). Além disso, o seguimento pós-tratamento em gestantes deve ser realizado com o teste não treponêmico (VDRL) mensalmente para garantir que a resposta terapêutica foi adequada e descartar reinfecção.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:47.309Z"
+  },
+  {
+    "id": "AJUDA_95d0321f-5201-44b5-90a8-4c412d2c925a",
+    "originalId": "95d0321f-5201-44b5-90a8-4c412d2c925a",
+    "statement": "Homem de 62 anos apresenta-se para uma consulta de rotina na UBS/Estratégia de Saúde da Família. O histórico é positivo para: hipertensão, há 5 anos, em uso regular de enalapril, 10 mg/dia; dislipidemia mista, em tratamento com rosuvastatina, 10 mg/dia. Não há antecedente pessoal de eventos cardiovasculares, tabagismo ou etilismo. Histórico familiar: pai com infarto agudo do miocárdio aos 58 anos. Ao exame físico: pressão arterial: 138 x 86 mmHg; frequência cardíaca: 78 bpm; peso: 95 kg; IMC: 31,1 kg/m²; circunferência abdominal: 108 cm; cardiopulmonar sem alteração; ausência de edema de membros inferiores. Exames séricos recentes: glicemia de jejum: 102 mg/dL; hemoglobina glicada (HbA1c): 5,9%; colesterol total: 195 mg/dL; HDL: 38 mg/dL; LDL: 121 mg/dL; triglicerídeos: 180 mg/dL; creatinina: 0,9 mg/dL (clearance > 60 mL/min/1.73m²); alanina aminotransferase: 43 U/L; aspartato aminotransferase: 38 U/L. O ultrassom Doppler demostra placas ateroscleróticas em carótidas < 50%.\n\nPara essa paciente, considerando as melhores evidências científicas, a conduta de maior relevância é",
+    "options": [
+      {
+        "id": "A",
+        "text": "intensificar a terapia hipolipemiante, aumentando a dose de rosuvastatina para 40 mg/dia, com o objetivo de atingir uma meta de LDL < 70 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "iniciar metformina, 850 mg, 3 vezes ao dia, visando à prevenção da progressão para diabetes mellitus, dado o IMC e o diagnóstico de pré-diabetes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar um agonista do receptor do peptídeo-1 semelhante ao glucagon como primeira escolha, devido aos seus benefícios na redução de peso e proteção contra eventos ateroscleróticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "intensificar a terapia anti-hipertensiva com a adição de anlodipino 5 mg/dia, visando a uma meta de PA < 120 x 70 mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "calcular o escore FIB-4 e iniciar pioglitazona para manuseio de esteato-hepatite metabólica e melhorar a sensibilidade à insulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O ponto central para resolver esta questão é a estratificação de risco cardiovascular do paciente. De acordo com a Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose (SBC), a presença de doença aterosclerótica subclínica (identificada neste caso por placas nas carótidas no Doppler, mesmo que menores que 50%) classifica automaticamente o paciente como de ALTO RISCO cardiovascular.\n\nAnálise das alternativas:\n\na) Correta. Como o paciente possui placas carotídeas, ele é classificado como de alto risco cardiovascular. Para essa categoria, a meta de LDL preconizada pelas diretrizes brasileiras é inferior a 70 mg/dL e uma redução de pelo menos 50% do valor basal. Atualmente, ele utiliza rosuvastatina 10 mg (estatina de moderada intensidade), e seu LDL é 121 mg/dL, o que está significativamente acima da meta. Portanto, intensificar para uma dose de alta intensidade (rosuvastatina 40 mg ou 20 mg) é a conduta prioritária e baseada em evidências para redução de eventos maiores.\n\nb) Incorreta. O paciente possui pré-diabetes (HbA1c 5,9% e glicemia 102 mg/dL), mas a metformina é indicada na prevenção do diabetes prioritariamente para pacientes com IMC acima de 35 kg/m², idade inferior a 60 anos ou mulheres com histórico de diabetes gestacional. Além disso, a dose de 850 mg três vezes ao dia é excessiva para um início de tratamento, e a intervenção no estilo de vida é a primeira escolha.\n\nc) Incorreta. Embora os agonistas do receptor de GLP-1 (como semaglutida ou liraglutida) tenham excelentes benefícios na redução de peso e proteção cardiovascular, eles são indicados formalmente em pacientes com diabetes tipo 2 estabelecido e alto risco CV ou obesidade. No contexto de uma prova de residência, diante de placas de carótida e LDL fora da meta, o manejo da dislipidemia com estatina de alta potência precede o uso dessas medicações para prevenção cardiovascular primária.\n\nd) Incorreta. A pressão arterial do paciente (138 x 86 mmHg) está acima da meta recomendada para pacientes de alto risco (que seria < 130 x 80 mmHg). No entanto, o objetivo de < 120 x 70 mmHg não é o padrão-ouro absoluto para este perfil clínico, e a intensificação do controle lipídico, dada a presença de placa, é considerada mais urgente e impactante conforme as opções apresentadas.\n\ne) Incorreta. O escore FIB-4 é utilizado para rastrear fibrose hepática em pacientes com doença hepática gordurosa não alcoólica (atualmente chamada de esteato-hepatite metabólica — MASH). Embora o paciente tenha obesidade e discreta elevação de transaminases, a pioglitazona não é a droga de escolha inicial aqui, especialmente pelo risco de ganho ponderal e edema, não sendo a conduta de \"maior relevância\" frente ao risco de infarto e AVC derivado das placas carotídeas.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Dislipidemia e Estratificação de Risco Cardiovascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:47.309Z"
+  },
+  {
+    "id": "AJUDA_95d14abf-28c1-4923-b224-e7e7b5849ad9",
+    "originalId": "95d14abf-28c1-4923-b224-e7e7b5849ad9",
+    "statement": "Pré-escolar, com 4 anos de idade, apresenta episódio súbito de asfixia associada a engasgo com alimento, que evolui em poucos minutos para perda da consciência e queda ao solo. Neste cenário, qual é a melhor conduta a ser adotada por adulto, presente no cenário descrito?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar manobras de reanimação cardiopulmonar pelas compressões (sem palpação de pulso).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aplicar manobra de Heimlich modificada (paciente em decúbito dorsal).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aplicar cinco golpes nas costas, alternado com cinco compressões sobre o tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aplicar manobra de Heimlich clássica elevando o tórax da criança.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CENÁRIO E DIRETRIZES:\n\nO caso descreve um pré-escolar de 4 anos com Obstrução de Vias Aéreas por Corpo Estranho (OVACE) grave, que evoluiu de um episódio súbito de asfixia para a perda de consciência (irresponsividade). Em situações de engasgo, a conduta varia drasticamente conforme a idade da vítima e o seu nível de consciência.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA:\n\nDe acordo com os protocolos da American Heart Association (AHA) e do PALS (Pediatric Advanced Life Support), quando uma vítima de engasgo perde a consciência na presença do socorrista, a manobra de Heimlich deve ser interrompida imediatamente e o paciente deve ser posicionado em decúbito dorsal em uma superfície rígida para o início da Reanimação Cardiopulmonar (RCP).\n\nA diretriz específica para este cenário determina que se deve iniciar a RCP pelas compressões torácicas. A recomendação de não realizar a palpação de pulso (em casos de colapso presenciado por engasgo) visa evitar o atraso nas manobras, uma vez que a causa do colapso é conhecida e a compressão torácica, além de manter a perfusão, é mais eficaz do que as manobras de Heimlich para gerar pressão intratorácica suficiente para expelir o corpo estranho em um paciente hipotônico. A única modificação no protocolo de RCP para OVACE é que, antes de cada tentativa de ventilação, o socorrista deve olhar o interior da boca e remover o objeto se ele estiver visível e for de fácil alcance, sem realizar varredura digital às cegas.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS:\n\nAlternativa (b): A manobra de Heimlich modificada (com o paciente deitado) caiu em desuso nos protocolos atuais de suporte de vida. Uma vez que o paciente está inconsciente, a prioridade absoluta passa a ser a RCP, que é superior na tentativa de desobstrução e no suporte hemodinâmico.\n\nAlternativa (c): A técnica de alternar cinco golpes nas costas e cinco compressões torácicas é a conduta padrão-ouro exclusiva para lactentes (crianças menores de 1 ano) que apresentam obstrução grave de via aérea e ainda estão conscientes. Para crianças acima de 1 ano, como o paciente de 4 anos da questão, utiliza-se a manobra de Heimlich (enquanto consciente) ou RCP (se inconsciente).\n\nAlternativa (d): A manobra de Heimlich clássica (compressões abdominais subdiafragmáticas) é indicada apenas para pacientes conscientes. Quando o paciente perde a consciência e cai ao solo, ele perde o tônus muscular necessário para que a manobra seja eficaz e segura, tornando a RCP a conduta obrigatória.\n\nRESUMO DA CONDUTA EM OVACE POR IDADE:\n\n1. Lactentes (menores de 1 ano): 5 batidas nas costas alternadas com 5 compressões torácicas. Se ficar inconsciente: RCP.\n2. Crianças (acima de 1 ano) e Adultos: Manobra de Heimlich (compressões abdominais). Se ficar inconsciente: RCP.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:19:47.309Z"
+  }
+]

@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_1b09e064-7197-45be-9dc2-78b2ae1e47df",
+    "originalId": "1b09e064-7197-45be-9dc2-78b2ae1e47df",
+    "statement": "Uma paciente de 73 anos, hipertensa e diabética, queixa-se de tontura e vertigem. Os sintomas são flutuantes, com vertigem rotacional, durando de alguns minutos até uma hora ou mais, às vezes acompanhados de náuseas ou vômitos. A paciente também refere zumbido, sensação de plenitude auricular e diminuição da audição. Sobre a condição clínica da paciente, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Há diminuição da produção da endolinfa no sistema vestibular, com hidropsia endolinfática associada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acomete igualmente ambos os sexos e frequentemente inicia após a quinta década de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Geralmente é esporádica, mas formas genéticas incomuns já foram descritas, sendo autossômicas dominantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quando a perda auditiva está completa, os ataques de vertigem podem continuar e, às vezes, tornam-se ainda mais graves.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO\n\nO quadro clínico apresentado pela paciente é clássico para a Doença de Ménière, também conhecida como Hidropsia Endolinfática. A tríade característica envolve vertigem episódica (com duração de 20 minutos a várias horas), perda auditiva neurossensorial flutuante, zumbido (*tinnitus*) e plenitude auricular (sensação de ouvido cheio).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. A fisiopatologia da Doença de Ménière consiste no aumento da pressão e do volume da endolinfa (hidropsia endolinfática) dentro do sistema membranoso do ouvido interno. Isso ocorre geralmente por uma falha na reabsorção desse líquido pelo saco endolinfático ou, menos frequentemente, por um aumento na sua produção. Portanto, há um excesso, e não uma diminuição, da endolinfa.\n\nAlternativa B: Correta. Estudos epidemiológicos demonstram que a Doença de Ménière não apresenta uma predileção significativa por sexo, afetando homens e mulheres de forma equilibrada. O início dos sintomas ocorre tipicamente na meia-idade, com o pico de incidência situando-se entre a quarta e a sexta década de vida (entre 40 e 60 anos), o que torna a afirmação sobre o início após a quinta década frequente e correta no contexto clínico.\n\nAlternativa C: Incorreta. A grande maioria dos casos diagnosticados é esporádica e de causa desconhecida (idiopática). Embora existam formas de Doença de Ménière familiar descritas na literatura, elas são raras (estimadas entre 5% e 15% dos casos) e apresentam padrões genéticos variados, não sendo a herança autossômica dominante o padrão de apresentação da maioria dos pacientes.\n\nAlternativa D: Incorreta. À medida que a doença progride e a perda auditiva se torna severa ou completa, o sistema vestibular também sofre danos degenerativos profundos. Isso leva a uma fase conhecida como *burnt-out* (esgotamento), na qual os ataques de vertigem rotacional aguda tendem a diminuir de frequência ou cessar completamente, uma vez que o labirinto afetado para de gerar os estímulos anormais que causavam as crises. O paciente pode manter um desequilíbrio residual, mas as crises agudas intensas não costumam continuar.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Otoneurologia, Vertigens e Audiologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:37.659Z"
+  },
+  {
+    "id": "AJUDA_1b0fb164-35e9-4be4-bdd3-09f25df1ed29",
+    "originalId": "1b0fb164-35e9-4be4-bdd3-09f25df1ed29",
+    "statement": "Menina de 8 anos de idade, foi para consulta de rotina na Unidade Básica de Saúde, um ano após última consulta. Ela não faz tratamento para nenhuma doença e não apresenta queixas. Ao exame físico, apresenta peso no P60, estatura no P25 e IMC p85. A média de três aferições de pressão arterial (PA) nessa consulta foi de 111 x 73 mmHg, e de 112 x 76 mmHg e 110 x 75 mmHg, em dois momentos diferentes subsequentes.\n\nQual o diagnóstico dessa paciente quanto à pressão arterial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Normotensão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pressão arterial elevada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipertensão arterial estadio 1.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hipertensão arterial estadio 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "É necessário MAPA de PA para o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para classificar a pressão arterial em pediatria (crianças de 1 a 13 anos), avaliam-se o sexo, a idade e o percentil de estatura da criança em tabelas padronizadas. \n\nAnálise dos dados da paciente e correlação com a tabela da imagem:\nA paciente é uma menina de 8 anos com estatura no percentil 25 (P25). Cruzando essas informações na tabela fornecida:\n- Percentil 90 (P90): 108 x 71 mmHg.\n- Percentil 95 (P95): 112 x 74 mmHg.\n- Percentil 95 mais 12 mmHg: 124 x 86 mmHg.\n\nA paciente apresentou médias pressóricas em 3 momentos distintos:\n- Momento 1: 111 x 73 mmHg (ambas acima do P90).\n- Momento 2: 112 x 76 mmHg (sistólica no P95 e diastólica acima do P95).\n- Momento 3: 110 x 75 mmHg (sistólica acima do P90 e diastólica acima do P95).\n\nCritérios de classificação segundo a Academia Americana de Pediatria e Sociedade Brasileira de Pediatria:\n- Normotensão: PA sistólica e diastólica menores que o P90.\n- Pressão arterial elevada: PA sistólica e/ou diastólica entre o P90 e menor que o P95.\n- Hipertensão arterial estágio 1: PA sistólica e/ou diastólica maior ou igual ao P95 até menor que o P95 mais 12 mmHg (ou 130/80 a 139/89 mmHg).\n- Hipertensão arterial estágio 2: PA sistólica e/ou diastólica maior ou igual ao P95 mais 12 mmHg (ou maior ou igual a 140/90 mmHg).\n\nComo a paciente apresentou níveis pressóricos diastólicos maiores ou iguais ao P95 (76 e 75 mmHg em relação ao corte de 74 mmHg) confirmados em 3 ocasiões distintas, mas sem ultrapassar o P95 mais 12 mmHg (124 x 86 mmHg), o diagnóstico é de Hipertensão Arterial Estágio 1.\n\nAnálise das alternativas:\n\na) Incorreta. Para ser normotensa, todas as medidas deveriam estar estritamente abaixo do percentil 90 (108 x 71 mmHg), o que não ocorreu.\n\nb) Incorreta. A pressão arterial elevada ocorre quando os valores situam-se entre o P90 e o P95. Como a pressão diastólica ultrapassou o P95 (74 mmHg) em aferições repetidas, o quadro já configura hipertensão arterial.\n\nc) Correta. A paciente apresenta pressão arterial sistólica e/ou diastólica repetidamente igual ou superior ao percentil 95 e inferior ao percentil 95 mais 12 mmHg em três ocasiões diferentes, preenchendo os critérios para hipertensão estágio 1.\n\nd) Incorreta. Para o estágio 2, a pressão arterial precisaria ser igual ou superior ao P95 mais 12 mmHg (ou seja, maior ou igual a 124 x 86 mmHg), valores consideravelmente superiores aos medidos na paciente.\n\ne) Incorreta. O diagnóstico clínico de hipertensão em crianças pode ser estabelecido no consultório por meio de três aferições alteradas em consultas distintas, exatamente como foi realizado. O MAPA é um exame complementar útil, mas não é estritamente obrigatório para firmar o diagnóstico inicial neste cenário.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial na Criança e no Adolescente"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/c6d0fbd74b4ddf2e0b3c15f7121341e0b9a7258263e79b2ccee633a121511926.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1b0fb164-35e9-4be4-bdd3-09f25df1ed29_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:38.280Z"
+  },
+  {
+    "id": "AJUDA_1b119f6c-4609-4ef3-8eac-4ef3dfca3360",
+    "originalId": "1b119f6c-4609-4ef3-8eac-4ef3dfca3360",
+    "statement": "Gestante, 39 semanas e 4 dias de gestação, deu entrada na maternidade pública do estado, com diagnóstico de Placenta Prévia Centro Total.\nAo exame: apresentação cefálica, feto alto e móvel, com sangramento vaginal fluído em moderada intensidade. Indicado cesariana segmentar de urgência. O feto foi retirado pela manobra tradicional, que é a manobra de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bracht.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Geppert.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Mauriceau modificada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Zavanelli.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um cenário de cesariana de urgência por placenta prévia centro-total, em que o feto se encontra em apresentação cefálica, porém alto e móvel. Em situações de cesariana em que o polo cefálico não está engajado ou há dificuldades de acesso (como a obstrução pela placenta), a técnica cirúrgica frequentemente utilizada para a retirada fetal é a extração pelo polo pélvico.\n\nAlternativa a) Bracht. Incorreta. A manobra de Bracht é uma técnica utilizada no parto pélvico por via vaginal. Ela consiste na elevação do corpo fetal (que já nasceu até o nível das escápulas) em direção ao abdome materno, facilitando o desprendimento da cabeça derradeira e dos braços sem tração excessiva.\n\nAlternativa b) Geppert. Correta. A manobra de Geppert é a manobra clássica descrita para a extração fetal durante a cesariana quando a apresentação está alta, móvel ou quando o acesso à cabeça é dificultado (como no caso da placenta prévia). O cirurgião introduz a mão na cavidade uterina, alcança um ou ambos os pés do feto e realiza a versão para apresentação pélvica seguida da extração.\n\nAlternativa c) Mauriceau modificada. Incorreta. A manobra de Mauriceau (ou Smellie-Veit) é empregada no parto pélvico vaginal para auxiliar no desprendimento da cabeça derradeira. Nela, o obstetra apoia o corpo do feto em seu antebraço e introduz os dedos na boca ou sobre a mandíbula do feto para manter a flexão da cabeça enquanto realiza a tração.\n\nAlternativa d) Zavanelli. Incorreta. A manobra de Zavanelli é uma medida de exceção e último recurso na distocia de ombros durante o parto vaginal. Consiste na reintrodução da cabeça fetal (que já foi exteriorizada) para o interior do canal de parto e do útero, seguida da realização imediata de uma cesariana de emergência.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Sagramento da Segunda Metade",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:38.280Z"
+  },
+  {
+    "id": "AJUDA_1b11dab7-e17b-4f4d-a107-1eb11b316b1e",
+    "originalId": "1b11dab7-e17b-4f4d-a107-1eb11b316b1e",
+    "statement": "Adolescente de 13 anos, sexo masculino, procura atendimento na Unidade Básica de Saúde (UBS) devido a manchas escurecidas nas dobras do pescoço, axilas e virilhas. Ao exame físico, índice de massa corporal está no Z escore entre +2 e +3 para a idade e sexo, relação da circunferência abdominal/estatura aumentada, com manchas hipercrômicas no pescoço, axilas e raiz da coxa, sem outros achados significativos.\nAlém de prescrever mudança de hábitos alimentares e aumento da atividade física, deve-se",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar biópsia das lesões e hemoglobina glicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar perfil lipídico e ultrassonografia de abdome.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "indicar corticoide tópico nas lesões e evitar exposição solar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "indicar antifúngico nas lesões e solicitar teste de tolerância oral à glicose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro de obesidade (definido pelo Z-escore entre +2 e +3) associado a sinais clínicos de resistência insulínica e adiposidade visceral (relação circunferência abdominal/estatura aumentada). A presença de acantose nigricans — caracterizada por manchas hipercrômicas e de aspecto aveludado em áreas de dobras, como pescoço, axilas e virilhas — é um marcador cutâneo clássico de hiperinsulinemia.\n\nDiante desse cenário em um adolescente, a prioridade clínica, além da mudança do estilo de vida, é o rastreamento de comorbidades metabólicas associadas à obesidade.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\n\nO perfil lipídico é fundamental para identificar dislipidemias, que frequentemente acompanham o excesso de peso e aumentam o risco cardiovascular. A ultrassonografia de abdome é o exame de escolha para o rastreamento inicial da Doença Hepática Gordurosa Não Alcoólica (DHGNA), também conhecida como esteatose hepática. A DHGNA é extremamente comum em adolescentes com obesidade central e resistência à insulina, sendo necessária sua investigação sistemática nesse grupo de risco.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): A acantose nigricans é um diagnóstico clínico e visual. A biópsia das lesões é desnecessária e não traz benefícios para o manejo do paciente. Embora a hemoglobina glicada possa ser solicitada para triagem de diabetes, o erro da alternativa reside na indicação da biópsia.\n\nAlternativa (c): O corticoide tópico não tem indicação no tratamento da acantose nigricans. Esta não é uma patologia inflamatória da pele, mas sim uma manifestação sistêmica do excesso de insulina circulante, que estimula a proliferação de queratinócitos e fibroblastos. A exposição solar também não é a causa das lesões.\n\nAlternativa (d): As lesões descritas não são compatíveis com infecções fúngicas (como as micoses de dobra ou intertrigos). O uso de antifúngicos seria ineficaz. O teste de tolerância oral à glicose pode ser indicado em casos específicos de alto risco para diabetes, mas a conduta dermatológica proposta está errada.\n\nRESUMO DIDÁTICO\n\nA conduta em adolescentes obesos com acantose nigricans deve focar no rastreio da Síndrome Metabólica. Isso inclui a avaliação de:\n1. Metabolismo glicídico (glicemia de jejum e/ou HbA1c).\n2. Perfil lipídico (colesterol total e frações, triglicerídeos).\n3. Função hepática e integridade do fígado (transaminases e ultrassonografia de abdome para avaliar esteatose).\n4. Pressão arterial.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Obesidade na Infância e na Adolescência"
+    ],
+    "difficulty": 63.268002093241414,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:38.280Z"
+  },
+  {
+    "id": "AJUDA_1b1925e9-ff54-4217-981f-30bdec0551d5",
+    "originalId": "1b1925e9-ff54-4217-981f-30bdec0551d5",
+    "statement": "Paciente do sexo feminino, 12 anos, com quadro de dor em cólica intermitente em hipocôndrio direito há 2 meses. Realizou ultrassom de abdome, que revelou vesícula biliar normodistendida, paredes com diâmetro normal, contendo múltiplos cálculos em seu interior. Dentre as condições listadas a seguir, aquela que mais provavelmente se relaciona com o diagnóstico de colelitíase nessa paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "puberdade precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "história familiar de colelitíase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hipercolesterolemia familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "anemia falciforme.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A colelitíase (pedra na vesícula) é uma condição relativamente rara na infância e no início da adolescência, quando comparada à população adulta. Quando presente em pacientes pediátricos, ela frequentemente está associada a doenças subjacentes, sendo as anemias hemolíticas a causa principal.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o estrogênio aumente a saturação de colesterol na bile e reduza a motilidade da vesícula biliar (o que explica a maior prevalência de cálculos em mulheres após a puberdade), a puberdade precoce não é a causa mais comum ou classicamente associada à colelitíase na infância em provas de residência.\n\nb) Incorreta. A história familiar é um fator de risco importante para o desenvolvimento de cálculos de colesterol em adultos, devido a componentes genéticos e hábitos compartilhados. Contudo, em uma paciente de 12 anos, a busca diagnóstica deve focar prioritariamente em causas sistêmicas ou hematológicas.\n\nc) Incorreta. Curiosamente, os níveis de colesterol no sangue não têm uma correlação direta e forte com a formação de cálculos biliares. A hipercolesterolemia familiar predispõe a doenças cardiovasculares precoces (aterosclerose), mas não é a principal etiologia para colelitíase em crianças.\n\nd) Correta. A anemia falciforme é a doença hematológica mais frequentemente associada à colelitíase na faixa pediátrica. Devido à hemólise crônica (destruição dos glóbulos vermelhos), há uma produção excessiva de bilirrubina indireta. Essa bilirrubina é conjugada no fígado e excretada na bile em grandes quantidades, onde pode se precipitar com o cálcio, formando cálculos de pigmento biliar (cálculos pretos). Estima-se que uma porcentagem significativa de pacientes com anemia falciforme desenvolverá cálculos biliares ainda na segunda década de vida.\n\nResumo do raciocínio: Diante de um quadro de colelitíase em criança ou adolescente, a primeira hipótese etiológica a ser pesquisada deve ser uma doença hemolítica, sendo a anemia falciforme a mais prevalente em nosso meio.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil",
+      "Anemias",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:38.280Z"
+  },
+  {
+    "id": "AJUDA_1b1acbcf-cd8c-4b52-b21f-298a4f80e3f5",
+    "originalId": "1b1acbcf-cd8c-4b52-b21f-298a4f80e3f5",
+    "statement": "Uma paciente estava com sangramento uterino anormal e compareceu ao hospital para ser submetida à ultrassonografia transvaginal e à histeroscopia ambulatorial. A paciente foi diagnosticada com a presença de um mioma submucoso tipo zero. Com base nessa situação hipotética, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "o mioma está localizado integralmente no miométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o mioma tem grande processo de degeneração hialina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o mioma tem 50% de seu volume na cavidade uterina e 50% no miométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "não poderá ser operada por histeroscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o mioma está localizado integralmente na cavidade uterina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender esta questão, é fundamental dominar a classificação da Federação Internacional de Ginecologia e Obstetrícia (FIGO) para os leiomiomas uterinos. Essa classificação é essencial na prática clínica porque orienta a conduta terapêutica, especialmente na indicação de cirurgias minimamente invasivas como a histeroscopia.\n\nO sistema FIGO classifica os miomas de 0 a 8, baseando-se na profundidade e localização do nódulo em relação às camadas do útero (mucosa, miométrio e serosa). Os miomas submucosos (aqueles que distorcem a cavidade endometrial) são os tipos 0, 1 e 2.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O mioma localizado integralmente no miométrio, sem contato com o endométrio ou a serosa, é classificado como FIGO 4 (intramural). O mioma tipo zero, por definição, é submucoso e proeminente para a cavidade.\n\nAlternativa b) Incorreta. A degeneração hialina é uma alteração histopatológica (substituição do tecido muscular por colágeno) que ocorre frequentemente em miomas devido ao crescimento rápido e suprimento sanguíneo inadequado. No entanto, a classificação numérica da FIGO (0 a 8) baseia-se exclusivamente na topografia e anatomia do tumor, e não nas suas alterações degenerativas.\n\nAlternativa c) Incorreta. Um mioma que possui componente intramural e intracavitário é classificado como tipo 1 (quando menos de 50% do volume está no miométrio) ou tipo 2 (quando 50% ou mais do volume está no miométrio). O tipo zero não possui componente intramural significativo.\n\nAlternativa d) Incorreta. O mioma tipo zero é justamente a indicação clássica e de \"padrão-ouro\" para a miomectomia por via histeroscópica. Por estar totalmente dentro da cavidade e ser geralmente pediculado, sua remoção cirúrgica por histeroscopia é tecnicamente mais simples e segura do que nos tipos 1 e 2.\n\nAlternativa e) Correta. O mioma submucoso tipo zero é definido como um nódulo exclusivamente intracavitário e pediculado. Ele não apresenta extensão para dentro do miométrio, estando localizado integralmente dentro da cavidade uterina, o que justifica ser o principal responsável por sintomas como o sangramento uterino anormal mencionado no caso.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:38.280Z"
+  },
+  {
+    "id": "AJUDA_1b1b4555-2b9a-4c30-b6f6-5bcae73910bf",
+    "originalId": "1b1b4555-2b9a-4c30-b6f6-5bcae73910bf",
+    "statement": "A Srª J.M.V., 80 anos, tabagista ativa (40 anos-maço), foi à Unidade Básica de Saúde buscando atendimento médico em decorrência de quadro de tosse produtiva com secreção amarelada, dispneia em repouso e chieira torácica iniciada há 4 dias. Apresentou quadro semelhante há cerca de 30 dias e fez uso de antibiótico, mas não se recorda do nome. Refere quadro crônico de tosse seca e dispneia aos esforços, mas com piora significativa desde o início do quadro atual. Ao exame físico encontrava-se consciente e orientada, em bom estado geral, eupneica, acianótica, afebril, corada, hidratada; FR 24 irpm; FC 96 bpm; PA 140x95 mmHg; SatO2 93% em ar ambiente; MV reduzido difusamente, com sibilos bilaterais. Qual o diagnóstico e a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumonia adquirida na comunidade; tratamento ambulatorial com azitromicina 500 mg/dia por 5 dias, prednisona 40 mg/dia por 5 dias e salbutamol inalatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença pulmonar obstrutiva crônica exacerbado; tratamento ambulatorial com levofloxacino 750 mg/dia por 5 dias, prednisona 40 mg/dia por 5 dias e salbutamol inalatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Doença pulmonar obstrutiva crônica exacerbado; tratamento hospitalar com Cefepime endovenoso 3 g/dia por 5 dias, prednisona via oral 40 mg/dia e salbutamol inalatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doença pulmonar obstrutiva crônica exacerbado; tratamento domiciliar com amoxicilina 1,5 g/dia por 7 dias, prednisona 40 mg/dia por 7 dias e salbutamol inalatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\nA paciente apresenta um perfil clássico de Doença Pulmonar Obstrutiva Crônica (DPOC): idosa, tabagista pesada (40 anos-maço) e com sintomas respiratórios crônicos (tosse e dispneia aos esforços). O quadro atual de 4 dias, caracterizado por aumento da dispneia (agora em repouso), presença de secreção amarelada (purulenta) e sibilância, define uma Exacerbação Aguda da DPOC. De acordo com os Critérios de Anthonisen, a presença de aumento da purulência do escarro associada ao aumento da dispneia e/ou volume de secreção indica a necessidade de antibioticoterapia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O quadro clínico e o exame físico (redução difusa do murmúrio vesicular e sibilos bilaterais) são mais sugestivos de uma exacerbação de doença crônica de base do que de uma consolidação pneumônica localizada. Além disso, a azitromicina como monoterapia não é a melhor escolha para uma paciente que utilizou antibiótico recentemente (há 30 dias), devido ao risco de resistência bacteriana.\n\nAlternativa b) Correta. O diagnóstico é de DPOC exacerbada. A conduta ambulatorial é adequada, pois a paciente está consciente, orientada e com saturação de oxigênio aceitável (93%). O uso de levofloxacino (uma quinolona respiratória) justifica-se pelo fato de a paciente ter feito uso de outro antibiótico há menos de 30 dias, o que aumenta o risco de falha terapêutica com esquemas de primeira linha (como macrolídeos ou amoxicilina isolada). O tempo de tratamento de 5 dias para corticoide e antibiótico está alinhado com as diretrizes atuais (GOLD) para reduzir o tempo de recuperação e o risco de recidiva.\n\nAlternativa c) Incorreta. Embora o diagnóstico esteja correto, a paciente não apresenta critérios de gravidade que obriguem a hospitalização ou o uso de antibióticos de amplo espectro por via endovenosa, como o Cefepime (indicado em casos de suspeita de Pseudomonas aeruginosa em pacientes com gravidade extrema ou múltiplas internações prévias). O tratamento pode ser realizado de forma segura no domicílio.\n\nAlternativa d) Incorreta. Apesar de o diagnóstico e a conduta domiciliar estarem corretos, a escolha da amoxicilina em dose de 1,5 g/dia pode ser insuficiente para uma paciente que utilizou antibiótico recentemente. Nessas situações, as diretrizes sugerem o uso de amoxicilina com clavulanato ou quinolonas respiratórias para cobrir possíveis germes resistentes ou produtores de beta-lactamase. O tempo de 7 dias de corticoide também foi superado pela evidência de que 5 dias são igualmente eficazes com menos efeitos colaterais.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:38.280Z"
+  },
+  {
+    "id": "AJUDA_1b1e8f4e-d747-45ba-b362-15580f0a264e",
+    "originalId": "1b1e8f4e-d747-45ba-b362-15580f0a264e",
+    "statement": "O carcinoma primário da tuba uterina é uma neoplasia rara, mas sua importância aumentou com a descoberta de que muitas neoplasias \"ovarianas\" de alto grau na verdade se originam na fímbria tubária. Sobre a patogênese e diagnóstico do câncer de tuba, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tipo histológico mais comum do câncer de tuba uterina é o carcinoma mucinoso, que apresenta evolução lenta e metástases precoces para o linfonodo de Virchow, diferentemente do padrão de disseminação peritoneal do câncer de ovário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A apresentação clínica clássica, embora rara, é a tríade de Latzko: dor pélvica intermitente, massa anexial palpável e descarga vaginal aquosa profusa (hidropsia tubária profluente) que alivia a dor após a saída do líquido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A lesão precursora denominada Carcinoma Seroso Intraepitelial da Tuba (Serous Tubal Intraepithelial Carcinoma − STIC), localizada na fímbria distal, é identificada com frequência em mulheres portadoras de mutações nos genes BRCA1 (Breast Cancer 1) e BRCA2 (Breast Cancer 2) submetidas à salpingo-ooforectomia profilática, o que sustenta a hipótese de que a tuba uterina seja a origem da maioria dos carcinomas serosos pélvicos de alto grau.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico de carcinoma tubário primário exige, segundo critérios clássicos, que o tumor envolva majoritariamente o ovário e o útero, com pequena extensão para a tuba, demonstrando a agressividade da disseminação contígua.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Gabarito: Alternativa (c)\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. O tipo histológico mais comum do carcinoma de tuba uterina não é o mucinoso, mas sim o carcinoma seroso (especialmente o de alto grau). Além disso, o padrão de disseminação é muito semelhante ao do câncer de ovário, ocorrendo principalmente por esfoliação de células neoplásicas na cavidade peritoneal e disseminação linfática para linfonodos pélvicos e para-aórticos, e não preferencialmente para o linfonodo de Virchow (supraclavicular esquerdo).\n\nAlternativa b) Incorreta. Embora a tríade clássica descrita (dor pélvica, massa anexial e descarga vaginal aquosa denominada hidropsia tubária profluente) seja um conceito teórico clássico da literatura, ela é extremamente rara na prática clínica, ocorrendo em menos de 15% dos casos. O enunciado da questão foca na mudança de paradigma da patogênese (origem fimbriária), o que torna a alternativa (c) a resposta mais completa e atualizada sobre o tema.\n\nAlternativa c) Correta. Esta alternativa descreve o modelo atual da carcinogênese pélvica. Estudos em peças de salpingo-ooforectomia profilática de pacientes com mutação nos genes BRCA1 e BRCA2 revelaram lesões precursoras (STIC) na fímbria distal da tuba. Isso sustenta a teoria de que a maioria dos carcinomas serosos de alto grau, antes classificados como ovarianos ou peritoneais primários, na verdade se originam no epitélio tubário.\n\nAlternativa d) Incorreta. Os critérios diagnósticos clássicos para o carcinoma tubário primário (Critérios de Hu, Taymor e Hertig) exigem exatamente o oposto: o tumor deve estar localizado na tuba uterina, as fímbrias podem estar envolvidas e o útero e os ovários devem estar macroscopicamente normais ou apresentar uma quantidade de tumor significativamente menor do que a encontrada na tuba. Se a maior parte da massa estiver no ovário, o tumor é classificado como de origem ovariana.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:38.280Z"
+  },
+  {
+    "id": "AJUDA_1b264167-a581-467d-a6e6-3ed56c556224",
+    "originalId": "1b264167-a581-467d-a6e6-3ed56c556224",
+    "statement": "Paciente de 30 anos apresenta dor pélvica crônica e dismenorreia intensa. A laparoscopia revela presença de implantes endometriais no peritônio. Qual é o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Miomatose uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adenomiose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Endometriose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Síndrome dos ovários policísticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma paciente em idade reprodutiva com o quadro clássico de dor pélvica crônica e dismenorreia (cólica menstrual) intensa. O achado definitivo para o diagnóstico foi a visualização direta por laparoscopia de implantes endometriais no peritônio.\n\nAnálise das alternativas:\n\na) Incorreta. A miomatose uterina consiste na presença de tumores benignos formados por tecido muscular liso do miométrio. Embora possa causar dor e aumento do volume uterino, sua manifestação clínica principal costuma ser o sangramento uterino anormal. Além disso, os miomas localizam-se no útero, e não como implantes disseminados no peritônio.\n\nb) Incorreta. A adenomiose é caracterizada pela presença de glândulas e estroma endometrial infiltrados no miométrio (parede muscular do útero). Apesar de também causar dismenorreia e dor pélvica, é uma doença confinada ao corpo uterino. O achado de implantes extrauterinos no peritônio exclui essa alternativa como diagnóstico principal.\n\nc) Correta. A endometriose é definida pela presença de tecido endometrial (glândula e estroma) fora da cavidade uterina. Os locais mais comuns de acometimento são o peritônio pélvico, ovários e ligamentos uterossacros. A tríade clínica de dismenorreia, dor pélvica crônica e infertilidade é muito sugestiva, e a laparoscopia com biópsia é considerada o padrão-ouro para o diagnóstico ao identificar visualmente os implantes.\n\nd) Incorreta. A Síndrome dos Ovários Policísticos (SOP) é um distúrbio endócrino caracterizado por anovulação crônica (irregularidade menstrual), hiperandrogenismo (clínico ou laboratorial) e morfologia de ovários policísticos à ultrassonografia. A SOP não causa implantes peritoneais nem costuma cursar com dismenorreia intensa, sendo frequentemente associada a períodos de amenorreia ou oligomenorreia.\n\nO diagnóstico de Endometriose é, portanto, a única opção que se correlaciona tanto com a sintomatologia clínica quanto com os achados cirúrgicos descritos.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:38.280Z"
+  },
+  {
+    "id": "AJUDA_1b278162-6b3d-4858-8399-8a0f25da5b31",
+    "originalId": "1b278162-6b3d-4858-8399-8a0f25da5b31",
+    "statement": "Mulher, 52 anos de idade, refere fogachos e sudorese noturna há 6 meses. Refere secura vaginal e dispareunia de penetração. É sobrevivente de câncer de mama, faz uso de anastrozol. Nega outras comorbidades. A conduta mais adequada, dentre as abaixo, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "Testosterona transdérmica e estriol vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Óleo de primolis oral e hidratante vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Progesterona transdérmica e lubrificante vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tibolona oral e estradiol vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Desvenlafaxina oral e promestrieno vaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A paciente em questão apresenta a síndrome climatérica (sintomas vasomotores e geniturinários) em um cenário de contraindicação absoluta à terapia de reposição hormonal sistêmica tradicional, devido ao antecedente de câncer de mama e ao uso atual de anastrozol (um inibidor da aromatase). O manejo deve focar em alternativas não hormonais para os fogachos e tratamentos tópicos de baixa absorção para a atrofia vaginal.\n\nAlternativa a: Incorreta. A testosterona transdérmica não tem indicação para o tratamento de sintomas vasomotores (fogachos). Além disso, em pacientes com câncer de mama, o uso de esteroides sistêmicos deve ser evitado, pois podem sofrer conversão periférica em estrogênios, o que é contraproducente, especialmente em quem usa inibidores da aromatase.\n\nAlternativa b: Incorreta. O óleo de prímula é frequentemente citado em terapias alternativas, porém estudos clínicos não demonstram eficácia superior ao placebo no controle de ondas de calor. O hidratante vaginal é uma boa opção não hormonal para a secura, mas a alternativa falha ao não oferecer uma solução eficaz para os sintomas sistêmicos (fogachos).\n\nAlternativa c: Incorreta. A progesterona isolada não é a primeira linha para tratamento de fogachos neste perfil de paciente. O lubrificante vaginal ajuda apenas no momento da relação sexual (alívio imediato da dispareunia), mas não trata a causa-base da atrofia vaginal nem restaura o epitélio.\n\nAlternativa d: Incorreta. A tibolona é um esteroide sintético que está formalmente contraindicada em pacientes com histórico de câncer de mama. O estudo LIBERATE demonstrou que o uso de tibolona nessas pacientes aumenta significativamente o risco de recorrência da neoplasia. O estradiol vaginal, embora tópico, tem maior potencial de absorção sistêmica que outras opções.\n\nAlternativa e: Correta. Esta é a conduta mais adequada. A desvenlafaxina é um inibidor da recaptação de serotonina e noradrenalina (ISRSN) que possui evidência robusta no controle de sintomas vasomotores em mulheres que não podem realizar reposição hormonal. Ela é segura para sobreviventes de câncer de mama. O promestrieno é um estrogênio tópico com absorção sistêmica mínima e não altera os níveis séricos de estradiol, sendo uma opção viável para o tratamento da síndrome geniturinária da menopausa (atrofia e dispareunia) quando os hidratantes vaginais não são suficientes, sempre com cautela e discussão com a oncologia.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:38.280Z"
+  }
+]

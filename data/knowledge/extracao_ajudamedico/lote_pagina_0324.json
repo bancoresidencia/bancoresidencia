@@ -1,0 +1,487 @@
+[
+  {
+    "id": "AJUDA_5946dcf2-33d1-49c1-8b7b-3fcbe20f3f3b",
+    "originalId": "5946dcf2-33d1-49c1-8b7b-3fcbe20f3f3b",
+    "statement": "A figura abaixo representa malformações uterinas que podem ser classificadas respectivamente como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "septado, didelfo e bicorno",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "unicorno, didelfo e bicorno",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "bicorno, septado e didelfo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "didelfo, bicorno e septado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "septado, bicorno e didelfo",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender as malformações uterinas (anomalias müllerianas) apresentadas na imagem, é fundamental observar tanto o contorno externo do fundo uterino quanto a divisão da cavidade endometrial e a presença de colos uterinos.\n\nAnálise das imagens:\n\nPrimeira figura (esquerda): Observa-se um útero com contorno externo normal (plano ou levemente convexo), porém com a cavidade endometrial dividida por uma parede central. Trata-se de um útero SEPTADO. Essa malformação ocorre devido à falha na reabsorção do septo central após a fusão dos ductos de Müller.\n\nSegunda figura (centro): Observa-se uma indentação profunda no fundo uterino (fundo fendido), que divide a parte superior do corpo uterino em dois \"cornos\", mas que convergem para um único colo uterino. Trata-se de um útero BICORNO. Esta condição resulta de uma fusão incompleta dos ductos de Müller na região superior.\n\nTerceira figura (direita): Observa-se a presença de dois corpos uterinos completamente separados, cada um com seu próprio colo uterino (duplicidade total). Trata-se de um útero DIDELFO. Esta malformação é causada pela falha total de fusão dos ductos de Müller.\n\nAnálise das alternativas:\n\na) Incorreta. Identifica corretamente o primeiro (septado), mas inverte a ordem do segundo (que é bicorno) e do terceiro (que é didelfo).\n\nb) Incorreta. O primeiro útero não é unicorno (o unicorno apresenta apenas metade do útero com uma única trompa, devido à falha de desenvolvimento de um dos ductos).\n\nc) Incorreta. Inicia classificando o primeiro como bicorno, o que está errado, pois o contorno externo do primeiro útero é preservado.\n\nd) Incorreta. Classifica o primeiro como didelfo, o que não corresponde à imagem, que mostra uma estrutura uterina única externamente.\n\ne) CORRETA. Segue exatamente a sequência anatômica demonstrada: Septado (divisão interna com fundo normal), Bicorno (fusão parcial com dois cornos e um colo) e Didelfo (falha total de fusão com dois corpos e dois colos).",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Anatomia e Embriologia do Trato Genital Feminino"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/19572d66e85e065b55977a0a4cf015c905b9ee22d219d79ad5c802559cc083cc.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5946dcf2-33d1-49c1-8b7b-3fcbe20f3f3b_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:09.143Z"
+  },
+  {
+    "id": "AJUDA_594b2556-1a52-4974-ad21-df8a171c4277",
+    "originalId": "594b2556-1a52-4974-ad21-df8a171c4277",
+    "statement": "Escolar, 8 anos, em tratamento de uma infecção urinária há 48 horas, é internada com febre, taquipneia e queda do estado geral. O Phoenix Sepsis Score (PSS) 2024, foi aplicado com resultado de 2 pontos, devido à disfunção respiratória e cardiovascular com pressão arterial média calculada (PAM) abaixo do esperado para a idade. O próximo passo no manejo dessa paciente deverá ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar o suporte ventilatório e manter a monitorização sem intervenções adicionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar cristaloides, antibióticos, e considerar vasopressores se não houver resposta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar ventilação não invasiva e prescrever antibiótico de amplo espectro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar corticosteroides em altas doses para combater a inflamação sistēmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prescrever cristaloides e monitorar a PAM antes de qualquer intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda os novos critérios de sepse pediátrica publicados em 2024, conhecidos como Phoenix Sepsis Score (PSS). Segundo o novo consenso internacional, a sepse em crianças é definida pela presença de uma infecção (suspeita ou confirmada) associada a uma pontuação no Phoenix Sepsis Score igual ou maior que 2 pontos. Essa pontuação indica uma disfunção orgânica que coloca a vida em risco.\n\nNo caso descrito, a paciente já possui o diagnóstico de sepse confirmado pelo escore (PSS = 2). Mais do que isso, a descrição aponta disfunção cardiovascular (pressão arterial média abaixo do esperado), o que caracteriza um quadro grave com necessidade de intervenção hemodinâmica e infecciosa imediata.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O suporte ventilatório é importante, mas a conduta é incompleta. Diante de uma criança com sepse e disfunção cardiovascular, manter apenas a monitorização sem intervir na volemia e na causa infecciosa permite a progressão para o choque irreversível e falência de múltiplos órgãos.\n\nAlternativa (b) Correta: Esta alternativa descreve os pilares do manejo inicial da sepse e do choque séptico em pediatria. O tratamento deve ser iniciado idealmente na primeira hora (bundle da primeira hora) e inclui: restaurar a perfusão tecidual com expansão volêmica (cristaloides), administrar ou ajustar a antibioticoterapia para combater o foco infeccioso e utilizar drogas vasoativas (vasopressores) caso a pressão arterial ou a perfusão não se normalizem após a reposição de fluidos.\n\nAlternativa (c) Incorreta: Embora a ventilação não invasiva possa ajudar na disfunção respiratória e o antibiótico seja obrigatório, esta opção falha ao não abordar a disfunção cardiovascular (hipotensão/queda da PAM). Sem a ressuscitação volêmica, o quadro hemodinâmico não será corrigido.\n\nAlternativa (d) Incorreta: O uso de corticosteroides em altas doses não faz parte do tratamento inicial da sepse. Corticosteroides (como a hidrocortisona em doses baixas) são reservados apenas para casos de choque séptico refratário ao uso de fluidos e doses altas de catecolaminas (vasopressores).\n\nAlternativa (e) Incorreta: Na sepse, o tempo é um fator determinante. Prescrever cristaloides e aguardar apenas a monitorização antes de outras intervenções (como o ajuste do antibiótico) atrasa o tratamento definitivo. O manejo deve ser multifatorial e simultâneo para reduzir a mortalidade.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Sepse",
+      "Emergências Pediátricas",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:09.144Z"
+  },
+  {
+    "id": "AJUDA_595a8873-d668-44b1-a18a-e835e46c1b7e",
+    "originalId": "595a8873-d668-44b1-a18a-e835e46c1b7e",
+    "statement": "Assinale a alternativa incorreta acerca das úlceras de pressão.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento é clínico, sem intervenção cirúrgica, desde que a ferida seja limpa meticulosamente, com água e sabão ou algum outro meio surfactante e que seja evitada pressão na área em questão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Úlceras de pressão são úlceras decorrentes de isquemia tecidual local provocadas pela alteração do reflexo de dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pacientes tetraplégicos, idosos com fraturas de colo de fêmur e pacientes criticamente doentes são os mais afetados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As úlceras de pressão podem se desenvolver em 24 horas ou levar até 5 dias para sua manifestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ao mesmo tempo em que as alterações cutâneas ocorrem, a úlcera no plano profundo pode ser muito mais extensa, uma vez que, quanto mais profundo for o tecido, mais intensos são os efeitos da pressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (a) INCORRETA (Gabarito): O erro da alternativa reside em afirmar que o tratamento é exclusivamente clínico e sem intervenção cirúrgica. Embora as úlceras de estágio inicial (I e II) possam ser tratadas de forma conservadora, as úlceras de pressão de estágios III e IV frequentemente exigem abordagem cirúrgica. Isso inclui o desbridamento de tecidos necróticos, tratamento de infecções profundas (como osteomielite) e, em muitos casos, a reconstrução com retalhos musculares ou musculocutâneos para cobertura da ferida e fornecimento de acolchoamento sobre as proeminências ósseas.\n\nAlternativa (b) CORRETA: A fisiopatologia das úlceras de pressão envolve a pressão externa prolongada sobre tecidos moles situados entre uma proeminência óssea e uma superfície dura. Essa pressão supera a pressão capilar média, levando à isquemia tecidual. Em indivíduos saudáveis, o desconforto causado pela isquemia gera um reflexo de dor que induz a mudança de posição; a ausência ou alteração desse reflexo (em pacientes com lesão medular ou sedados, por exemplo) é o fator determinante para a gênese da lesão.\n\nAlternativa (c) CORRETA: Estes grupos representam os perfis de maior risco. Pacientes tetraplégicos possuem perda de sensibilidade e mobilidade; idosos com fraturas de colo do fêmur sofrem imobilização aguda e muitas vezes apresentam fragilidade cutânea; e pacientes criticamente doentes em UTIs estão sujeitos à imobilização prolongada, instabilidade hemodinâmica e uso de drogas vasoativas, que comprometem a perfusão tecidual.\n\nAlternativa (d) CORRETA: O dano tecidual por pressão pode se iniciar em poucas horas (2 a 6 horas de pressão contínua já podem causar necrose muscular). No entanto, a manifestação clínica visível na pele pode levar dias para se tornar evidente, especialmente em casos de lesão tecidual profunda, onde o dano começa junto ao osso e \"caminha\" em direção à superfície.\n\nAlternativa (e) CORRETA: Este é o conceito do \"efeito iceberg\" ou \"cone de pressão\". A pressão é mais intensa nas camadas profundas, próximas à interface osso-tecido. Além disso, o tecido muscular é metabolicamente mais ativo e muito mais sensível à isquemia do que a pele. Portanto, quando surge uma pequena ferida na epiderme, é muito provável que o dano nos tecidos profundos (fáscia e músculo) seja significativamente mais extenso e grave.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:09.144Z"
+  },
+  {
+    "id": "AJUDA_5961f346-eb21-4eb8-a3a9-3378e9cc4d87",
+    "originalId": "5961f346-eb21-4eb8-a3a9-3378e9cc4d87",
+    "statement": "A idade gestacional do embrião e do feto pode ser verificada através da ultrassonografia. Sendo assim, assinale a alternativa que indica o gráfico que melhor representa o erro na avaliação da idade gestacional.",
+    "options": [],
+    "officialAnswer": "A",
+    "medicalExplanation": "A acurácia da ultrassonografia para datar a gestação é inversamente proporcional à idade gestacional. Isso significa que, quanto mais precoce é o exame, mais precisa é a estimativa da idade do feto. No primeiro trimestre, especialmente com a medida do Comprimento Cabeça-Nádegas (CCN), o crescimento embrionário é altamente uniforme, apresentando um erro de datação muito pequeno, geralmente entre 5 a 7 dias. \n\nConforme a gestação progride para o segundo e terceiro trimestres, a variabilidade biológica individual (determinada pela genética e por fatores placentários ou nutricionais) torna-se mais evidente. Por isso, as medidas biométricas (como diâmetro biparietal e comprimento do fêmur) passam a ter margens de erro progressivamente maiores, chegando a cerca de 10 a 14 dias no segundo trimestre e 21 dias ou mais no terceiro trimestre.\n\nAlternativa (a): Esta é a alternativa correta. O gráfico apresenta uma linha ascendente, o que demonstra uma correlação direta: à medida que a idade gestacional aumenta (eixo horizontal), o erro de datação também aumenta (eixo vertical). Este é o modelo que descreve corretamente a realidade clínica da ultrassonografia obstétrica.\n\nAlternativa (b): Incorreta. Este gráfico mostra o erro diminuindo conforme a gestação avança. Se isso fosse verdade, um ultrassom de terceiro trimestre seria mais confiável para datar a gravidez do que um de primeiro trimestre, o que é o oposto da prática médica.\n\nAlternativa (c): Incorreta. O gráfico sugere que o erro é constante (uma linha horizontal) durante toda a gestação. No entanto, sabemos que a precisão cai drasticamente conforme o feto cresce e as variações individuais de tamanho se acentuam.\n\nAlternativa (d): Incorreta. Este gráfico em curva sugere que o erro aumentaria até a metade da gestação e depois diminuiria conforme o parto se aproxima. Não há fundamentação biológica ou estatística que suporte essa redução de erro no final da gravidez.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Ultrassom em Obstetrícia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:09.144Z"
+  },
+  {
+    "id": "AJUDA_59630d96-c933-435a-bf0e-f48734305225",
+    "originalId": "59630d96-c933-435a-bf0e-f48734305225",
+    "statement": "A vacina contra a Hepatite B é uma das principais medidas de saúde pública para prevenir a infecção pelo seu vírus, que pode causar doenças hepáticas graves. Sobre a vacina contra a Hepatite B, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É ineficaz e não oferece proteção contra a infecção pelo vírus da Hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve ser administrada exclusivamente a crianças acima de um ano de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O esquema vacinal contra a Hepatite B consiste em duas doses, com um intervalo de seis meses entre elas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É composta por proteínas de superfície do vírus obtidas por meio da técnica de DNA recombinante.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (a) Incorreta: A vacina contra a Hepatite B é considerada uma das mais seguras e eficazes disponíveis. Quando o esquema vacinal completo é administrado corretamente, a taxa de soroconversão (produção de anticorpos protetores anti-HBs em níveis superiores a 10 mUI/mL) é superior a 95% em lactentes, crianças e adultos jovens.\n\nAlternativa (b) Incorreta: A vacina não deve ser administrada exclusivamente a crianças acima de um ano. Pelo contrário, a primeira dose deve ser aplicada preferencialmente nas primeiras 12 a 24 horas de vida do recém-nascido, ainda na maternidade. Essa estratégia é fundamental para prevenir a transmissão vertical (mãe-filho) e evitar que a criança se torne portadora crônica do vírus, risco que é muito mais elevado quando a infecção ocorre ao nascimento.\n\nAlternativa (c) Incorreta: O esquema vacinal padrão para indivíduos não vacinados (adolescentes e adultos) consiste em três doses, com intervalo de 0, 1 e 6 meses. No Calendário Nacional de Vacinação do Brasil, a criança recebe a dose ao nascer (vacina monovalente) e completa o esquema com a vacina pentavalente aos 2, 4 e 6 meses de idade, totalizando quatro doses.\n\nAlternativa (d) Correta: Esta alternativa descreve precisamente a tecnologia de fabricação da vacina. Ela é classificada como uma vacina de subunidade, produzida por engenharia genética (DNA recombinante). O gene que codifica o antígeno de superfície do vírus (HBsAg) é inserido em células de levedura (*Saccharomyces cerevisiae*), que passam a expressar e produzir a proteína HBsAg em larga escala. Essa proteína é então purificada e utilizada para estimular a resposta imunológica do paciente, sem que haja qualquer risco de infecção, pois não contém o vírus vivo ou o seu genoma completo.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Hepatites Virais",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:09.144Z"
+  },
+  {
+    "id": "AJUDA_596747c9-9db6-4a60-9c9e-6c60b2351243",
+    "originalId": "596747c9-9db6-4a60-9c9e-6c60b2351243",
+    "statement": "A correta correlação entre causa de diarreia e manifestação clínica está contida na seguinte alternativa:",
+    "options": [
+      {
+        "id": "A",
+        "text": "por Clostridium difficile, pode ocorrer em até seis meses pós-uso de antibióticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "por Norovírus, tem, em geral, de 3 a 5 dias de período de incubação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "por S. aureus, ocorre por ação direta da bactéria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "por Shigella sp, deve ser tratada preferencialmente, com metronidazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa A (Correta): A infecção por Clostridioides difficile (antigamente chamado de Clostridium) é a principal causa de diarreia nosocomial. O uso de antibióticos é o fator de risco mais importante, pois altera a microbiota intestinal normal, permitindo a proliferação da bactéria e a produção de toxinas. Embora a maioria dos casos ocorra durante ou logo após o uso do antimicrobiano, o risco permanece elevado por várias semanas, e a literatura médica reconhece que a manifestação clínica pode surgir tardiamente, em uma janela que se estende por até alguns meses após o término do tratamento.\n\nAlternativa B (Incorreta): O Norovírus é uma causa extremamente comum de gastroenterite viral, frequente em surtos em cruzeiros, escolas e hospitais. No entanto, seu período de incubação é curto, variando geralmente de 12 a 48 horas. Um período de 3 a 5 dias é mais característico de outros patógenos ou vírus com ciclos diferentes.\n\nAlternativa C (Incorreta): A diarreia causada pelo Staphylococcus aureus não ocorre por ação direta da bactéria no trato gastrointestinal, mas sim pela ingestão de enterotoxinas pré-formadas no alimento contaminado. Por ser uma intoxicação alimentar por toxina já presente, o quadro clínico costuma ser de início muito rápido (1 a 6 horas após a ingestão), cursando com vômitos intensos e diarreia.\n\nAlternativa D (Incorreta): A Shigella sp. é uma bactéria gram-negativa causadora de disenteria (diarreia com sangue, muco e pus). O tratamento, quando indicado (especialmente em casos graves ou para reduzir a transmissão), deve ser feito com antibióticos como ciprofloxacino ou azitromicina. O metronidazol é um agente voltado para bactérias anaeróbias e protozoários (como Giardia lamblia e Entamoeba histolytica), não tendo ação contra a Shigella.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:09.144Z"
+  },
+  {
+    "id": "AJUDA_596b1a22-caf7-40d6-976f-888d917796d9",
+    "originalId": "596b1a22-caf7-40d6-976f-888d917796d9",
+    "statement": "Mulher, 25 anos de idade, procura o pronto-socorro com queixa de lesão dolorosa na vulva, que apareceu há 2 dias. Ao exame, encontram-se úlceras confluentes de bordas irregulares no grande lábio direito, dolorosas ao toque, com fundo purulento, medindo cerca de 2 cm. Os linfonodos inguinais direitos encontram-se aumentados e dolorosos. O agente etiológico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Clamídia trachomatis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Herpes vírus 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Haemophilus ducreyi.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Treponema pallidum.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A análise desta questão exige o conhecimento das principais características clínicas das úlceras genitais, um tema recorrente em provas de residência. O quadro clínico descrito apresenta elementos fundamentais para o diagnóstico diferencial: lesão única ou confluente, extremamente dolorosa, com fundo purulento e bordas irregulares, acompanhada de linfonodopatia inguinal também dolorosa.\n\nAlternativa (a) Incorreta. A Clamídia trachomatis (sorotipos L1, L2 e L3) é o agente do linfogranuloma venéreo. Nesta patologia, a lesão inicial é uma pequena pápula ou úlcera fugaz e indolor, que frequentemente passa despercebida pela paciente. O quadro evolui posteriormente com uma linfonodopatia inguinal exuberante e dolorosa (bubão), que pode fistulizar por orifícios múltiplos (bico de regador). A descrição de uma úlcera grande, purulenta e dolorosa descarta essa opção.\n\nAlternativa (b) Incorreta. O herpes-vírus tipo 1 (e, mais comumente, o tipo 2 na região genital) causa lesões muito dolorosas, porém o padrão típico é de múltiplas pequenas vesículas agrupadas sobre base eritematosa, que se rompem formando exulcerações rasas e limpas, com aspecto \"em saca-bocado\". Embora possam confluir, a presença de uma úlcera de 2 cm com fundo purulento e bordas irregulares é muito mais característica do cancro mole.\n\nAlternativa (c) Correta. O Haemophilus ducreyi é o agente etiológico do cancro mole (também conhecido como cancroide). A descrição clássica da doença envolve úlceras múltiplas (devido à autoinoculação) ou confluentes, de bordas irregulares, com fundo necrótico/purulento e, crucialmente, muito dolorosas ao toque. Além disso, cerca de 50% dos casos apresentam linfonodopatia inguinal dolorosa e unilateral, que pode sofrer liquefação e drenagem por orifício único. Todos esses elementos estão presentes no caso clínico.\n\nAlternativa (d) Incorreta. O Treponema pallidum é o agente da sífilis. Na fase primária (cancro duro), a lesão é classicamente uma úlcera única, de bordas bem definidas e endurecidas, com fundo limpo e, o mais importante, indolor. A linfonodopatia associada à sífilis também costuma ser bilateral, endurecida e indolor, o que contradiz totalmente o quadro de dor e purulência relatado na questão.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:09.144Z"
+  },
+  {
+    "id": "AJUDA_596f06ac-38fc-4ea4-aad5-b3a298f2bdae",
+    "originalId": "596f06ac-38fc-4ea4-aad5-b3a298f2bdae",
+    "statement": "Homem de 78 anos, com doença pulmonar obstrutiva crônica (DPOC) avançada, em cuidados paliativos exclusivos, encontra-se em acompanhamento domiciliar pela Equipe de Saúde da Família. Apresenta dispneia intensa (escala de Borg 8/10) em repouso, com piora aos mínimos esforços, associada a náuseas e redução do apetite há cinco dias. Encontra-se lúcido e refere sensação de “falta de ar insuportável”. A família informa que o paciente não tolera a máscara de oxigênio e apresenta boca seca. Após ajuste da oxigenoterapia, medidas de posicionamento e outras intervenções não farmacológicas, a dispneia permaneceu refratária. Nesse contexto, qual é a conduta farmacológica mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar morfina por via oral ou subcutânea em baixa dose, em esquema regular com doses de resgate, associada às medidas não farmacológicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Prescrever broncodilatador inalatório de curta ação (salbutamol) em altas doses, associado à corticosteroide oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar midazolam por via sublingual para sedação paliativa imediata como tratamento de primeira linha da dispneia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar nebulização com solução salina hipertônica a 3% e manter oxigenoterapia contínua em alto fluxo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar furosemida intravenosa, considerando insuficiência cardíaca como causa presumida da dispneia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Resposta correta: letra (a).\n\nConceito central: dispneia refratária em paciente com DPOC avançado sob cuidados paliativos. Dispneia refratária é a que persiste apesar do tratamento otimizado da doença de base e das medidas não farmacológicas (ventilador/ventilação facial, posicionamento, reorganização do ambiente, técnicas respiratórias, ajuste de oxigênio). O tratamento farmacológico de primeira linha é a administração de opioides, sendo a morfina o mais estudado. Ela reduz a percepção central da dispneia, a resposta ventilatória à hipóxia e à hipercapnia e a ansiedade associada. Costuma-se iniciar com doses baixas (por exemplo, morfina VO 2,5 a 5 mg a cada 4 horas, ou 1 a 2,5 mg SC), em esquema regular com doses de resgate, e titular conforme resposta. Em idosos ou com disfunção renal, reduzir a dose e preferir intervalos maiores. Deve-se prescrever laxante profilático e considerar antiemético, pois náuseas e constipação são efeitos esperados. O paciente tem boca seca, então cuidados com a mucosa oral também são importantes. O medo de depressão respiratória com doses baixas em DPOC não é justificativa para evitar o uso, pois os dados mostram segurança quando bem titulada.\n\nAnálise das alternativas:\n\na) Correta. Corresponde ao tratamento padrão: opioide em baixa dose, regular, com resgates, associado às medidas não farmacológicas. A via oral ou subcutânea é adequada ao domicílio e ao paciente que não tolera máscara.\n\nb) Incorreta. Broncodilatadores e corticoide fazem parte do tratamento otimizado da DPOC e já deveriam ter sido ajustados antes de se considerar a dispneia refratária. Altas doses de salbutamol causam taquicardia, tremores e ansiedade, piorando o desconforto. Corticoide oral prolongado traz efeitos adversos sem benefício na dispneia refratária.\n\nc) Incorreta. O midazolam não é de primeira linha para dispneia. Benzodiazepínicos são adjuvantes, indicados quando há ansiedade ou pânico associado, ou se o opioide for insuficiente. A sedação paliativa é reservada a sintomas refratários e intoleráveis, após falha das demais medidas, e o paciente está lúcido e ainda não recebeu o tratamento de primeira linha.\n\nd) Incorreta. A nebulização com solução salina hipertônica pode ressecar vias aéreas e causar broncoespasmo, sem benefício na dispneia refratária. O oxigênio em alto fluxo não é útil em paciente não hipoxêmico ou que não tolera máscara, e em DPOC pode causar retenção de CO2. Já houve ajuste da oxigenoterapia.\n\ne) Incorreta. Não há dados que sugiram insuficiência cardíaca como causa. A causa é a DPOC avançada, e diurético intravenoso é inadequado no domicílio e pode causar desidratação, piorando a boca seca e o desconforto.\n\nPonto-chave: na dispneia refratária em cuidados paliativos, após as medidas não farmacológicas, use opioide em dose baixa e titulada; benzodiazepínicos são adjuvantes e sedação é último recurso.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:09.144Z"
+  },
+  {
+    "id": "AJUDA_597001e1-9257-4481-8747-524fd860f857",
+    "originalId": "597001e1-9257-4481-8747-524fd860f857",
+    "statement": "São fatores de risco para paciente com gonococcemia disseminada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Artrite reumatoide e osteoartrite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coinfecção com herpes vírus e clamídia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Atopia cutânea severa e psoríase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gestação e período menstrual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Idade e sexo masculino.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A infecção gonocócica disseminada ocorre em cerca de 0,5% a 3% dos pacientes infectados pela Neisseria gonorrhoeae. A disseminação hematogênica a partir de um sítio primário (uretra, colo uterino, faringe ou reto) leva a um quadro clínico caracterizado classicamente por febre, poliartralgia migratória, tenossinovite e lesões cutâneas.\n\nAlternativa (d) - CORRETA: A gestação e o período menstrual são fatores de risco clássicos para a disseminação da bactéria. Durante a menstruação, a perda da barreira endometrial e as alterações no pH vaginal facilitam o acesso do gonococo à corrente sanguínea. Na gestação, alterações hormonais e imunológicas, além de um aumento da vascularização pélvica, também favorecem a invasão sistêmica. Vale destacar que a deficiência de componentes terminais do sistema complemento (C5-C9) é outro fator de risco biológico importante.\n\nAlternativa (a) - INCORRETA: Embora pacientes com artrite reumatoide possam estar em uso de imunossupressores que aumentam o risco de infecções em geral, essas condições osteoarticulares crônicas não são listadas na literatura médica como fatores de risco específicos para o desenvolvimento de gonococcemia disseminada.\n\nAlternativa (b) - INCORRETA: A coinfecção com clamídia é extremamente comum em pacientes com gonorreia, sendo rotina o tratamento conjunto para ambos os agentes. No entanto, a presença de clamídia ou herpes-vírus não é um fator que, isoladamente, predispõe à disseminação hematogênica da Neisseria gonorrhoeae para órgãos distantes.\n\nAlternativa (c) - INCORRETA: Doenças dermatológicas como psoríase ou atopia severa podem comprometer a integridade da barreira cutânea, mas não possuem relação direta com a fisiopatologia da disseminação sistêmica do gonococo, que ocorre majoritariamente a partir de superfícies mucosas.\n\nAlternativa (e) - INCORRETA: A gonococcemia disseminada é significativamente mais frequente no sexo feminino do que no masculino. Estima-se que as mulheres tenham um risco maior devido à frequência de infecções genitais assintomáticas, que demoram a ser tratadas, e às variações fisiológicas do ciclo menstrual já mencionadas. A idade avançada também não é o perfil epidemiológico típico da doença, que atinge predominantemente jovens sexualmente ativos.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Artropatias Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:09.144Z"
+  },
+  {
+    "id": "AJUDA_59921833-1c8a-41cf-8fac-912ee3749752",
+    "originalId": "59921833-1c8a-41cf-8fac-912ee3749752",
+    "statement": "Um paciente de 52 anos de idade, pedreiro, compareceu à Unidade Básica de Saúde para reavaliação de hipertensão. Relatou boa adesão medicamentosa e ausência de sintomas. A PA média das últimas três consultas foi 128 mmHg x 82 mmHg. Informou ter histórico familiar de doença cardiovascular. IMC = 29 kg/m². Exames recentes mostraram glicemia de jejum = 94 mg/dL e função renal normal. Qual é a conduta mais apropriada nesse momento, segundo os princípios da atenção primária?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar a dose do anti-hipertensivo para reduzir ainda mais a PA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar estatina independentemente do perfil lipídico, em razão do risco familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar teste ergométrico de rotina para rastreio cardiovascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter o esquema atual, reforçando orientações de estilo de vida e programando o retorno.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da Questão:\n\nO caso clínico descreve um paciente hipertenso de 52 anos com excelente controle pressórico (PA média de 128 x 82 mmHg), boa adesão ao tratamento e ausência de lesões de órgãos-alvo aparentes (função renal normal e glicemia de jejum dentro da normalidade). O paciente apresenta sobrepeso (IMC 29 kg/m²) e histórico familiar cardiovascular, o que exige atenção, mas não mudança imediata na medicação diante dos níveis pressóricos atuais.\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): O objetivo terapêutico na hipertensão arterial, segundo a maioria das diretrizes nacionais e internacionais, é manter a PA abaixo de 140/90 mmHg (ou 130/80 mmHg em pacientes de alto risco). Como o paciente já apresenta níveis de 128/82 mmHg e está assintomático, aumentar a dose da medicação poderia resultar em efeitos colaterais ou episódios de hipotensão, sem benefício clínico adicional comprovado para este perfil de risco.\n\nAlternativa B (Incorreta): O início de estatinas deve ser baseado na estratificação de risco cardiovascular global (utilizando escores como o de Framingham ou o Escore de Risco Cardiovascular da SBC) e no perfil lipídico do paciente. Ter histórico familiar é um fator de risco, mas não autoriza a prescrição de estatina de forma empírica sem antes avaliar os níveis de LDL-colesterol e o risco calculado.\n\nAlternativa C (Incorreta): O teste ergométrico não é indicado como rastreio de rotina em pacientes assintomáticos, mesmo hipertensos, de acordo com os princípios da Atenção Primária e da Medicina Baseada em Evidências. O rastreio universal com testes de esforço em assintomáticos aumenta o número de resultados falsos-positivos, levando a exames invasivos desnecessários e iatrogenia (Prevenção Quaternária).\n\nAlternativa D (Correta): Esta é a conduta mais adequada. O paciente está com a pressão arterial controlada com o esquema atual. Como ele possui um IMC de 29 kg/m² (sobrepeso), o foco deve ser a manutenção do controle medicamentoso aliado ao reforço das medidas não farmacológicas, como dieta equilibrada e atividade física, visando a perda de peso e a redução do risco cardiovascular global. O acompanhamento longitudinal é a base do manejo na Atenção Primária.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:47:09.144Z"
+  }
+]

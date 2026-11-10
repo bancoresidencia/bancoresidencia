@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_4208a855-04d8-497c-8fb8-2c896d05fd60",
+    "originalId": "4208a855-04d8-497c-8fb8-2c896d05fd60",
+    "statement": "O instrumento de abordagem familiar que representa graficamente todos os sistemas envolvidos e relacionados com a família e o meio onde vivem, facilitando a visualização de áreas que podem ser exploradas para melhorar o sistema social de apoio por toda a equipe de saúde se chama:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ecomapa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Genograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apgar familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Escala de Coelho-Savassi.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda as ferramentas de abordagem familiar utilizadas na Atenção Primária à Saúde para compreender a dinâmica e o contexto de vida dos pacientes.\n\nAlternativa a) Ecomapa.\nEsta é a alternativa correta. O ecomapa é um diagrama que representa as relações da família com o ambiente externo, como redes de apoio social, serviços de saúde, escola, trabalho, vizinhança e grupos religiosos. Ele funciona como um mapa visual que identifica a presença ou ausência de recursos na comunidade e a qualidade dos vínculos (fortes, frágeis ou conflituosos) entre a família e esses sistemas, auxiliando a equipe de saúde a planejar intervenções baseadas no suporte social disponível.\n\nAlternativa b) Genograma.\nO genograma é uma representação gráfica da estrutura familiar interna e das relações entre os seus membros, geralmente abrangendo pelo menos três gerações. Diferentemente do ecomapa, o foco do genograma é a dinâmica intradomiciliar, os padrões hereditários de doenças e o histórico relacional dos parentes, e não a relação da família com o meio externo ou sistemas sociais de apoio.\n\nAlternativa c) Apgar familiar.\nO Apgar familiar não é uma representação gráfica, mas sim um questionário de cinco perguntas que avalia a funcionalidade da família sob a perspectiva de um de seus membros. Ele mede o grau de satisfação em relação a cinco domínios: Adaptação, Parceria, Crescimento, Afeto e Capacidade de resolver problemas (Resolutividade). É uma ferramenta de triagem para identificar disfunções familiares, mas não mapeia o sistema social externo.\n\nAlternativa d) Escala de Coelho-Savassi.\nA Escala de Coelho-Savassi é um instrumento utilizado para a classificação de risco familiar. Ela atribui pontuações baseadas em sentinelas de risco (como presença de doenças crônicas, condições socioeconômicas precárias e dependência química) para priorizar as visitas domiciliares e o acompanhamento das famílias mais vulneráveis pela Equipe de Saúde da Família. Não se trata de uma ferramenta gráfica de visualização de sistemas sociais.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:46.650Z"
+  },
+  {
+    "id": "AJUDA_42099848-b586-4cfe-8e16-8f3efc73f119",
+    "originalId": "42099848-b586-4cfe-8e16-8f3efc73f119",
+    "statement": "Agentes penitenciários de uma unidade prisional informaram à equipe de saúde sobre o aumento de queixas de prurido intenso e lesões cutâneas entre as pessoas privadas de liberdade. Cada cela, prevista para 35 pessoas, está com lotação de 75.\nAs ações prioritárias no manejo adequado dessa situação são",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar o isolamento imediato dos casos sintomáticos, iniciar tratamento individual conforme avaliação clínica, recomendar higienização de colchões e ampliar o fornecimento de sabão e escovas pessoais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "implementar bloqueio coletivo com tratamento simultâneo, notificar o surto ao serviço de vigilância em saúde, reorganizar fluxos com a administração prisional e planejar medidas educativas e estruturais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "preferir o tratamento tópico dos casos diagnosticados, com prescrição médica individualizada, e restringir o fornecimento de medicação aos casos confirmados, evitando exposição a medicamentos em massa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "reunir-se com a direção para discutir a viabilidade de transferência dos casos graves, focando a atuação em medidas educativas com folhetos informativos sobre problemas de pele mais frequentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O cenário descrito aponta claramente para um surto de escabiose (sarna), condição comum em ambientes de confinamento e superlotação como o sistema prisional. Com 75 pessoas em um espaço projetado para 35, o contato interpessoal é íntimo e constante, facilitando a transmissão do ácaro *Sarcoptes scabiei*.\n\nAlternativa A: Incorreta. Em um contexto de superlotação extrema, o isolamento dos sintomáticos é muitas vezes impossível do ponto de vista estrutural. Além disso, tratar apenas os casos individuais não interrompe a cadeia de transmissão, pois os indivíduos assintomáticos podem estar no período de incubação e continuarão transmitindo o parasita após o tratamento dos sintomáticos.\n\nAlternativa B: Correta. Esta alternativa descreve as diretrizes de saúde pública para o controle de surtos em comunidades fechadas. O bloqueio coletivo com tratamento simultâneo (geralmente com ivermectina oral e/ou permetrina tópica) é a medida mais eficaz para eliminar o reservatório do ácaro de uma vez só, evitando que as pessoas se reinfestem mutuamente. A notificação à vigilância e a articulação com a administração para medidas estruturais e educativas são fundamentais para o manejo epidemiológico e preventivo a longo prazo.\n\nAlternativa C: Incorreta. Restringir a medicação apenas aos casos confirmados e priorizar o tratamento individualizado é um erro técnico em situações de surto em massa. O manejo de escabiose em instituições exige o tratamento de todos os contatos diretos, independentemente da presença de sintomas, para evitar a recidiva do surto.\n\nAlternativa D: Incorreta. A transferência de casos graves não resolve o foco da infestação na unidade e pode até disseminar a doença para outras alas ou unidades. Medidas educativas como folhetos são complementares, mas totalmente insuficientes para conter um surto ativo em um ambiente com as condições de higiene e densidade populacional descritas.\n\nResumo do raciocínio: Em ambientes prisionais com superlotação, a abordagem deve ser populacional (saúde coletiva) e não apenas individual. O tratamento simultâneo de todos os residentes da cela ou ala é a intervenção padrão-ouro para o controle de escabiose nesses cenários.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": 49.0536269523325,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:46.651Z"
+  },
+  {
+    "id": "AJUDA_421249cf-be73-4cac-9569-91f3c57e380d",
+    "originalId": "421249cf-be73-4cac-9569-91f3c57e380d",
+    "statement": "A Vacina BCG é disponibilizada pelo Programa Nacional de Imunização do Ministério da Saúde. Segundo as orientações do Ministério, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "ela deve ser administrada em dose única, o mais precocemente possível, de preferência na primeira consulta da criança no ambulatório de pediatria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ela deve ser administrada em 3 doses, logo após o nascimento e com 3 e 6 meses de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a identificação da cicatriz vacinal não pode ser usada como comprovação de que a vacina foi aplicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "não há contraindicação da vacina para gestantes e pessoas imunodeprimidas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "em crianças nascidas com peso inferior a 2 kg, deve-se adiar a vacinação até que atinjam esse peso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A Vacina BCG (Bacillus Calmette-Guérin) é essencial na prevenção das formas graves de tuberculose, como a meníngea e a miliar. A análise das alternativas baseia-se nas normas do Programa Nacional de Imunizações (PNI) do Ministério da Saúde:\n\nAlternativa A (Incorreta): Embora a vacina seja de dose única e deva ser aplicada o mais precocemente possível, a recomendação é que a administração ocorra ainda na maternidade, preferencialmente nas primeiras 12 horas de vida. Adiar para a primeira consulta ambulatorial atrasaria desnecessariamente a proteção do recém-nascido.\n\nAlternativa B (Incorreta): O esquema vacinal da BCG no Brasil consiste em uma dose única. Não existe a recomendação de três doses ou reforços aos 3 e 6 meses de idade.\n\nAlternativa C (Incorreta): A presença da cicatriz vacinal é, sim, utilizada como uma forma de comprovação da aplicação da vacina. Vale lembrar que, desde 2019, o Ministério da Saúde não recomenda mais a revacinação de crianças que não desenvolveram a cicatriz após a primeira dose, desde que haja o registro da vacinação no cartão da criança.\n\nAlternativa D (Incorreta): A BCG é uma vacina de bactérias vivas atenuadas. Por essa razão, ela é contraindicada para gestantes e pessoas imunodeprimidas (como portadores de HIV com imunodeficiência grave ou indivíduos em uso de doses imunossupressoras de corticoides ou quimioterapia), devido ao risco de disseminação do bacilo.\n\nAlternativa E (Correta): Esta é uma norma técnica clássica do PNI. Recém-nascidos com peso inferior a 2.000 g (2 kg) devem ter a vacinação com a BCG adiada até que atinjam esse peso mínimo. Isso ocorre principalmente devido à escassez de tecido subcutâneo e à fragilidade da pele, o que dificulta a aplicação técnica da vacina, que deve ser estritamente intradérmica.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:46.651Z"
+  },
+  {
+    "id": "AJUDA_4213d910-3690-4813-8da2-3b8052a9edca",
+    "originalId": "4213d910-3690-4813-8da2-3b8052a9edca",
+    "statement": "Homem, 60 anos de idade, é transferido do PS para a unidade de terapia intensiva com insuficiência respiratória hipoxêmica, presumivelmente secundária a sepse de foco pulmonar. Exame físico inicial: Escala de Coma de Glasgow = 14, FC = 120 bpm, PA = 130/80 mmHg, FR = 25 irpm, SpO₂ = 88 % em máscara facial com reservatório. Diante desse quadro, decide-se pela intubação orotraqueal e início de ventilação mecânica invasiva. Qual é o ajuste inicial mais adequado do ventilador para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Modo ventilatório controlado a volume, volume corrente inicial de 6mL/kg de peso predito para altura, FiO2 de 100%, frequência respiratória de 20 irpm, PEEP de 8 cm H2O.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Modo ventilatório controlado a volume, volume corrente inicial de 8 mL/kg de peso real, FiO2 de 50%, frequência respiratória de 10 irpm, PEEP de 5 cm H2O.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Modo ventilatório controlado a volume, volume corrente inicial de 10 mL/kg de peso predito para altura, FiO2 de 50%, frequência respiratória de 20 irpm, PEEP de 8cm H2O.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Modo ventilatório controlado a volume, volume corrente inicial de 6 mL/kg de peso real, FiO2 de 100%, frequência respiratória de 10 irpm, PEEP de 5 cm H2O.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve um paciente com insuficiência respiratória hipoxêmica grave decorrente de sepse pulmonar, o que configura um cenário de alto risco para o desenvolvimento de Síndrome do Desconforto Respiratório Agudo (SDRA). Nesses casos, a ventilação mecânica deve seguir rigorosamente a estratégia de proteção pulmonar para evitar a Lesão Induzida pelo Ventilador (VILI).\n\nOs principais parâmetros para a ventilação protetora são:\n\n1. Volume Corrente (VC): Deve ser calculado com base no PESO PREDITO (baseado na altura e sexo do paciente) e não no peso real. Isso ocorre porque o volume pulmonar não aumenta com o ganho de gordura corporal. O alvo inicial é de 6 mL/kg de peso predito para evitar o volutrauma.\n\n2. Fração Inspirada de Oxigênio (FiO2): No ajuste inicial, logo após a intubação de um paciente hipoxêmico, utiliza-se FiO2 de 100%. Após a estabilização, esse valor deve ser reduzido progressivamente para o menor valor possível que mantenha uma saturação periférica de oxigênio (SpO2) segura (geralmente entre 92-96% ou 88-92% em casos graves de SDRA).\n\n3. Frequência Respiratória (FR): Deve ser ajustada para manter uma ventilação-minuto adequada, geralmente entre 12 e 20 incursões respiratórias por minuto (irpm). Em pacientes sépticos com provável acidose metabólica, frequências mais baixas (como 10 irpm) podem agravar a acidose por não permitirem a compensação respiratória.\n\n4. PEEP (Pressão Positiva Expiratória Final): Utilizada para manter os alvéolos abertos e melhorar a oxigenação. Valores iniciais entre 5 e 10 cmH2O são comuns para estabilização.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: Apresenta o ajuste clássico de proteção pulmonar. Utiliza o peso predito para o cálculo do volume, adota 6 mL/kg (volume protetor), garante oxigenação máxima inicial com FiO2 de 100% e mantém uma frequência respiratória e PEEP adequadas para o perfil do paciente.\n\nAlternativa (b) Incorreta: Comete dois erros fundamentais ao sugerir o uso do peso real e um volume corrente de 8 mL/kg, o que aumenta o risco de lesão alveolar. Além disso, a FiO2 de 50% é insuficiente para um paciente que já não estava saturando bem em máscara com reservatório, e a FR de 10 irpm é insuficiente para a demanda metabólica da sepse.\n\nAlternativa (c) Incorreta: O volume corrente de 10 mL/kg de peso predito é considerado excessivo para qualquer paciente em ventilação mecânica atual, especialmente naqueles com pneumonia/sepse, gerando alto risco de volutrauma. A FiO2 de 50% também é baixa para a estabilização inicial.\n\nAlternativa (d) Incorreta: Embora utilize 6 mL/kg, o cálculo é baseado erroneamente no peso real. A frequência respiratória de 10 irpm é considerada baixa para o manejo inicial de um paciente crítico e séptico, podendo gerar acúmulo de CO2 e piora da acidemia.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Síndrome do Desconforto Respiratório Agudo",
+      "Pneumologia Intensiva",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:46.651Z"
+  },
+  {
+    "id": "AJUDA_4218a4f2-eeae-4dc6-bd36-e4f12f09f42a",
+    "originalId": "4218a4f2-eeae-4dc6-bd36-e4f12f09f42a",
+    "statement": "O exame físico em pacientes que apresentem câncer gástrico avançado pode evidenciar o chamado nódulo de Virchow, traduzido clinicamente por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nódulo submentoniano à esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nódulo supraclavicular, particularmente à esquerda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Nódulo submentoniano à direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nódulo inguinal, particularmente à esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O nódulo de Virchow é um achado clássico no exame físico que sugere a presença de metástase de um tumor maligno intra-abdominal, sendo o câncer gástrico o exemplo mais comum na prática clínica e em provas de residência.\n\nAlternativa (a) Incorreta: O nódulo submentoniano drena estruturas da face e da cavidade oral, como o lábio inferior e o assoalho da boca. Ele não possui relação anatômica com a drenagem linfática proveniente do abdome pelo ducto torácico.\n\nAlternativa (b) Correta: O nódulo de Virchow é definido como uma linfonodomegalia na fossa supraclavicular esquerda. A explicação anatômica reside no fato de que o ducto torácico, que transporta a linfa de quase todo o corpo abaixo do diafragma (incluindo o estômago), desemboca no sistema venoso justamente no ângulo venoso entre a veia subclávia esquerda e a veia jugular interna esquerda. Células neoplásicas podem se disseminar por essa via e se alojar nos linfonodos dessa região. Quando esse nódulo é palpável, o achado também é referido como sinal de Troisier.\n\nAlternativa (c) Incorreta: Assim como explicado na alternativa (a), a localização submentoniana (seja à direita ou à esquerda) não corresponde ao sítio de drenagem terminal do ducto torácico, não sendo, portanto, o local do nódulo de Virchow.\n\nAlternativa (d) Incorreta: Os linfonodos inguinais drenam os membros inferiores, a genitália externa e a região anal. Embora neoplasias abdominais possam, raramente, atingir essa região em estágios muito avançados, o epônimo \"nódulo de Virchow\" é específico para a topografia supraclavicular esquerda. Outros sinais de disseminação do câncer gástrico incluem o nódulo da Irmã Maria José (umbilical), o nódulo de Irish (axilar esquerdo) e a prateleira de Blumer (metástase no fundo de saco retal).",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:46.651Z"
+  },
+  {
+    "id": "AJUDA_422cbe38-173a-4ca8-80a8-b7bc921ad04a",
+    "originalId": "422cbe38-173a-4ca8-80a8-b7bc921ad04a",
+    "statement": "Paciente 25 anos, sexo feminino, com história de asma desde a infância, em uso de broncodilatador com beta de longa duração e corticoide inalatório em associação. Procura o pronto-socorro com dispneia intensa, uso de musculatura acessória, fala entrecortada e SpO2 85% em ar ambiente. Ao exame físico apresentava pressão arterial 124 x 80 mmHg, frequência cardíaca 118 bpm, murmúrio vesicular presente com sibilos difusos na ausculta pulmonar.\nAssinale a alternativa que indica a conduta inicial correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar broncodilatador inalatório de curta ação associado a corticoide sistêmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Iniciar antibiótico de amplo espectro imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar apenas oxigênio suplementar e observar resposta clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar intubação orotraqueal de imediato em todos os casos de crise asmática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar betabloqueador para controle da taquicardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE CLÍNICA DO CASO\n\nA paciente apresenta uma crise de asma grave, caracterizada por dispneia intensa, uso de musculatura acessória, fala entrecortada e hipoxemia significativa (SpO2 85%). O tratamento de urgência deve focar na reversão rápida da obstrução das vias aéreas (broncoespasmo) e na redução da inflamação.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): Administrar broncodilatador inalatório de curta ação associado a corticoide sistêmico.\nEsta é a conduta preconizada pelos consensos nacionais e internacionais (como o GINA). O beta-2 agonista de curta ação (ex: salbutamol) promove a broncodilatação rápida, sendo a primeira linha no alívio dos sintomas. O corticoide sistêmico (oral ou intravenoso) é fundamental em crises graves para reduzir a inflamação da árvore brônquica e prevenir recidivas, levando algumas horas para iniciar seu efeito pleno. Em casos graves, também costuma-se associar o brometo de ipratrópio (antimuscarínico).\n\nAlternativa B (INCORRETA): Iniciar antibiótico de amplo espectro imediatamente.\nA maioria das crises de asma é desencadeada por infecções virais, exposição a alérgenos ou poluentes. O uso de antibióticos não está indicado de rotina, devendo ser reservado apenas se houver forte suspeita de infecção bacteriana secundária, como pneumonia (presença de febre persistente e infiltrado radiológico) ou sinusite bacteriana.\n\nAlternativa C (INCORRETA): Administrar apenas oxigênio suplementar e observar resposta clínica.\nEmbora a paciente precise de oxigênio para corrigir a hipoxemia (alvo de SpO2 entre 93-95%), o oxigênio isolado não trata a causa da crise (broncoespasmo e inflamação). Apenas observar uma paciente com sinais de gravidade sem instituir a terapia medicamentosa adequada coloca a vida da paciente em risco por insuficiência respiratória iminente.\n\nAlternativa D (INCORRETA): Realizar intubação orotraqueal de imediato em todos os casos de crise asmática.\nA intubação na asma é uma medida de exceção, reservada para casos de parada cardiorrespiratória, rebaixamento do nível de consciência ou falha total do tratamento medicamentoso agressivo com sinais de exaustão respiratória (como o \"tórax silencioso\"). A paciente do caso, apesar de grave, ainda apresenta murmúrio vesicular e sibilos, o que indica que ainda há passagem de ar e tempo para resposta ao tratamento clínico inicial.\n\nAlternativa E (INCORRETA): Indicar betabloqueador para controle da taquicardia.\nO uso de betabloqueadores é contraindicado na crise de asma, pois esses medicamentos podem agravar o broncoespasmo. A taquicardia da paciente (118 bpm) é uma resposta fisiológica à hipóxia, ao esforço respiratório e possivelmente ao uso prévio de broncodilatadores, devendo melhorar conforme a crise for revertida com o tratamento correto.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Asma",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:46.651Z"
+  },
+  {
+    "id": "AJUDA_422e47ce-c751-49b2-b613-65f753c67a86",
+    "originalId": "422e47ce-c751-49b2-b613-65f753c67a86",
+    "statement": "Homem de 55 anos, etilista e tabagista pesado, com disfagia progressiva para sólidos e perda ponderal importante. EDA mostra estenose vegetante no terço médio do esôfago, biópsia: carcinoma espinocelular. Em paciente potencialmente ressecável, qual é o tratamento cirúrgico padrão?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esofagectomia trans-hiatal sem toracotomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Esofagectomia subtotal com acesso toracoabdominal, com reconstrução gástrica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dilatação endoscópica seriada sem ressecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Radioterapia exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Gastrostomia definitiva para alimentação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO paciente apresenta um Carcinoma Espinocelular (CEC) localizado no terço médio do esôfago. Para casos de tumores esofágicos nesta localização que são considerados ressecáveis, o objetivo do tratamento cirúrgico é a remoção completa do órgão (esofagectomia subtotal) acompanhada de uma linfadenectomia regional adequada, habitualmente de dois campos (abdominal e mediastinal).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A: INCORRETA. A esofagectomia trans-hiatal, realizada através do hiato diafragmático sem a necessidade de toracotomia, é frequentemente utilizada para tumores do terço inferior ou da transição esofagogástrica em pacientes com alto risco cirúrgico. No entanto, para tumores do terço médio, essa técnica é considerada menos precisa do ponto de vista oncológico, pois não permite a dissecção linfonodal completa do mediastino médio e superior sob visão direta.\n\nAlternativa B: CORRETA. A esofagectomia subtotal com acesso transtorácico (ou toracoabdominal) é o tratamento cirúrgico padrão para o câncer de esôfago de terço médio em pacientes com bom status de performance. A abertura do tórax possibilita a mobilização segura do esôfago em relação a estruturas vitais (como a aorta e os brônquios) e permite uma linfadenectomia mediastinal sistemática, essencial para o estadiamento e controle da doença. O estômago, transformado em tubo gástrico, é o órgão de escolha para a reconstrução do trânsito alimentar.\n\nAlternativa C: INCORRETA. A dilatação endoscópica é um método estritamente paliativo, destinado a aliviar a disfagia em pacientes sem condições clínicas para cirurgia ou com doença metastática. Ela não remove a neoplasia e o tumor continuará a progredir.\n\nAlternativa D: INCORRETA. Embora o Carcinoma Espinocelular seja um tumor radiossensível, a radioterapia exclusiva é reservada principalmente para tumores localizados no esôfago cervical (onde a cirurgia seria extremamente mutilante) ou para pacientes com contraindicação clínica ao ato cirúrgico. Em pacientes potencialmente ressecáveis, a cirurgia oferece melhores taxas de controle local.\n\nAlternativa E: INCORRETA. A gastrostomia definitiva é um procedimento de suporte nutricional paliativo. Ela é indicada apenas quando o paciente possui obstrução completa e não há perspectiva de tratamento curativo ou paliativo menos invasivo (como próteses esofágicas). Não trata a doença de base.\n\nRESUMO DO CASO\n\nPara tumores de terço médio do esôfago, a conduta padrão é a esofagectomia subtotal com acesso torácico para garantir margens oncológicas e limpeza linfonodal adequada, utilizando o estômago como substituto para manter a via oral do paciente.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:46.651Z"
+  },
+  {
+    "id": "AJUDA_4238c61c-1068-4893-8656-343a3d4ffc25",
+    "originalId": "4238c61c-1068-4893-8656-343a3d4ffc25",
+    "statement": "O forame oval patente (FOP) pode estar relacionado a eventos isquêmicos cerebrais pelo mecanismo de tromboembolismo paradoxal. No entanto, aproximadamente 25% da população possui FOP. Quando presente, qual dessas opções sugere que o FOP seja um fator causal frente a um episódio de Acidente Vascular Cerebral (AVC) criptogênico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipertensão Arterial Sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tabagismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "História de AVC ou AIT (acidente isquêmico transitório) prévios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Imagem de AVC isquêmico cortical à tomografia de crânio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O Forame Oval Patente (FOP) é um achado extremamente comum, presente em cerca de 25% da população adulta. Por isso, quando um paciente apresenta um AVC e um FOP é descoberto, o grande desafio clínico é determinar se o FOP foi a causa (através de embolia paradoxal) ou se é apenas um achado incidental. Para auxiliar nessa distinção, utiliza-se o escore RoPE (Risk of Paradoxical Embolism), que pontua a probabilidade de o AVC ser atribuído ao FOP.\n\nAnálise das alternativas:\n\na) Incorreta. A presença de hipertensão arterial sistêmica é um fator de risco clássico para outras causas de AVC, como a doença de pequenos vasos (lacunares) ou aterosclerose de grandes artérias. No escore RoPE, a presença de hipertensão retira pontos, o que diminui a probabilidade de o FOP ser o culpado.\n\nb) Incorreta. Assim como a hipertensão, o tabagismo é um fator de risco cardiovascular tradicional. Sua presença sugere que o AVC possa ter ocorrido por mecanismos aterotrombóticos habituais, tornando o FOP um provável achado incidental (\"incidentaloma\").\n\nc) Incorreta. Curiosamente, no contexto do escore RoPE, a história prévia de AVC ou Ataque Isquêmico Transitório (AIT) não aumenta a pontuação para causalidade pelo FOP. Pelo contrário, a ausência de fatores de risco e de eventos prévios em pacientes jovens é o que mais pontua a favor de uma etiologia por embolia paradoxal.\n\nd) Correta. O mecanismo do AVC relacionado ao FOP é a embolia (um trombo que viaja da circulação venosa para a arterial). Êmbolos tendem a navegar pela circulação sistêmica e se alojar em ramos distais das artérias cerebrais, resultando tipicamente em infartos corticais, muitas vezes extensos ou múltiplos. Já infartos subcorticais pequenos (lacunares) são mais sugestivos de doença de pequenos vasos ligada a fatores como hipertensão e diabetes. Portanto, a presença de uma imagem de AVC isquêmico cortical reforça a suspeita de um fenômeno embólico originado no FOP.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Acidentes Vasculares Cerebrais",
+      "Valvopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:46.651Z"
+  },
+  {
+    "id": "AJUDA_423a5bdd-f25b-40f9-b2ce-57341d939e54",
+    "originalId": "423a5bdd-f25b-40f9-b2ce-57341d939e54",
+    "statement": "Menino, 2 anos, encaminhado para avaliação de fraturas de repetição, 6 fraturas em ossos longos durante esses 2 anos de vida. Apresenta escleras azuladas e baixa velocidade de crescimento. Encontra-se no Z-escore -2,2 DP de comprimento. Filho de pais não consanguíneos, mãe refere que teve algumas fraturas durante sua infância. A equipe médica suspeitou de osteogênese imperfeita ou maus tratos. Qual exame consegue afirmar a hipótese diagnóstica de osteogênese?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cariótipo 50 células.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sequenciamento de nova geração no gene COL1A1.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Perfil bioquímico (Cálcio, Fósforo, fosfatase alcalina e vitamina D).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dosagem de colágeno sérico e reposição via oral, se colágeno baixo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma criança com múltiplas fraturas de ossos longos, escleras azuladas, baixa estatura e história familiar positiva para fraturas na infância. Esse conjunto de achados é clássico da Osteogênese Imperfeita (OI), também conhecida como \"doença dos ossos de cristal\". A OI é uma desordem genética do tecido conjuntivo, caracterizada pela fragilidade óssea decorrente de defeitos na síntese ou na estrutura do colágeno tipo I.\n\nAnálise das alternativas:\n\na) Incorreta. O cariótipo é um exame que analisa a estrutura e o número de cromossomos (como na síndrome de Down ou de Turner). A Osteogênese Imperfeita é uma doença monogênica, causada por mutações pontuais ou pequenas deleções/inserções em genes específicos, que não são detectáveis por meio da visualização dos cromossomos no cariótipo.\n\nb) Correta. Cerca de 90% dos casos de Osteogênese Imperfeita são causados por mutações autossômicas dominantes nos genes COL1A1 ou COL1A2, que codificam as cadeias do colágeno tipo I. O sequenciamento de nova geração (NGS) é a técnica de escolha atualmente para identificar essas mutações, permitindo confirmar o diagnóstico genético, diferenciar de outras patologias e auxiliar no aconselhamento genético da família.\n\nc) Incorreta. O perfil bioquímico (cálcio, fósforo, fosfatase alcalina e vitamina D) costuma ser normal na Osteogênese Imperfeita. Esses exames são fundamentais para o diagnóstico diferencial com outras doenças osteometabólicas, como o raquitismo, mas não confirmam a hipótese de OI. No diagnóstico diferencial de maus-tratos, a normalidade desses exames ajuda a afastar causas metabólicas de fraturas, mas não define a patologia genética.\n\nd) Incorreta. Não existe a dosagem de \"colágeno sérico\" como exame diagnóstico padrão para essa condição. Além disso, a reposição de colágeno via oral não tem eficácia no tratamento da Osteogênese Imperfeita, uma vez que o problema é um defeito genético na produção da proteína pelo próprio organismo e não uma deficiência dietética. O tratamento medicamentoso padrão para aumentar a densidade óssea e reduzir fraturas na OI envolve o uso de bisfosfonatos.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral",
+      "Maus Tratos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:46.651Z"
+  },
+  {
+    "id": "AJUDA_42418dc4-255d-4fe7-b9e3-a827b1aff0bc",
+    "originalId": "42418dc4-255d-4fe7-b9e3-a827b1aff0bc",
+    "statement": "Mulher de 42 anos, que refere quadro de necessidade imperiosa de urinar sempre que tem “um pouquinho” de urina, vai muitas vezes ao banheiro durante o dia e durante a noite. Quando não consegue chegar muito rápido, perde urina em quantidade moderada. Nega incontinência urinária aos esforços, nega disúria. Isso interfere muito em seu sono, deixando-a cansada, desmotivada, atrapalha sua sexualidade e, enfim, compromete muito sua qualidade de vida. O quadro tem se acentuado ultimamente. Assinale a alternativa CORRETA na condução deste quadro:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A partir do estudo urodinâmico poderemos definir o diagnóstico e a conduta cirúrgica (ou não) a ser indicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso de sling suburetral aplicado em uretra média costuma ter excelentes resultados nesta situação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aparentemente é uma bexiga neurogênica e a aplicação de botox intravesical permite os melhores resultados, segundo estudos contemporâneos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A primeira linha de tratamento corresponde à terapia comportamental e fisioterapia que inclui o treinamento vesical e a fisioterapia do soalho pélvico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado é clássico da Síndrome da Bexiga Hiperativa, caracterizado por urgência miccional, polaciúria, noctúria e incontinência urinária de urgência (perda de urina precedida por urgência), sem queixas de perda aos esforços ou sinais de infecção urinária (disúria ausente). \n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O diagnóstico da bexiga hiperativa é essencialmente clínico. O estudo urodinâmico não é obrigatório no início da investigação, sendo reservado para casos refratários, dúvidas diagnósticas ou planejamento cirúrgico concomitante. Além disso, a conduta principal para a bexiga hiperativa é clínica, e não cirúrgica.\n\nAlternativa B: Incorreta. O sling de uretra média é o tratamento padrão-ouro para a Incontinência Urinária de Esforço. Na incontinência de urgência ou bexiga hiperativa, o sling não é indicado e pode inclusive piorar os sintomas irritativos ao criar um componente obstrutivo.\n\nAlternativa C: Incorreta. Não há dados na história que sugiram etiologia neurogênica (como lesão medular, esclerose múltipla ou neuropatia). Ademais, a aplicação de toxina botulínica intravesical é uma intervenção de terceira linha, indicada apenas após falha das medidas conservadoras e farmacológicas.\n\nAlternativa D: Correta. Conforme as diretrizes urológicas, a primeira linha de tratamento para a bexiga hiperativa consiste em intervenções comportamentais e fisioterapia. Isso inclui o treinamento vesical (micções programadas com aumento progressivo dos intervalos), adequação de hábitos de vida (redução de cafeína e controle da ingesta hídrica) e fisioterapia do assoalho pélvico com técnicas de biofeedback e inibição do detrusor. Os medicamentos (anticolinérgicos ou agonistas beta-3) entram como segunda linha de tratamento.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Incontinência Urinária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:33:46.651Z"
+  }
+]

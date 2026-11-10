@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_35c9a6fd-beb9-4a4f-a014-496355d31123",
+    "originalId": "35c9a6fd-beb9-4a4f-a014-496355d31123",
+    "statement": "Durante a investigação de um surto de Leishmaniose Visceral em uma área periurbana, um médico de saúde da família e um médico veterinário do NASF debatem o ciclo da doença. Eles observam a presença de hospedeiros vertebrados (humanos e cães) e do vetor invertebrado (o flebotomíneo). Indique a classificação correta da zoonose baseada no ciclo de manutenção do agente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Zoonose direta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ciclozoonose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Saprozoonose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Metazoonose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Anfixenose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A classificação das zoonoses de acordo com o ciclo biológico do agente etiológico baseia-se na necessidade de diferentes hospedeiros ou meios para que o parasita complete seu desenvolvimento. No caso da Leishmaniose Visceral, o ciclo envolve hospedeiros vertebrados e um vetor invertebrado.\n\nAlternativa a) Zoonose direta: Incorreta. Uma zoonose é classificada como direta quando o agente etiológico é transmitido de um hospedeiro vertebrado para outro através do contato direto, por fômites (objetos contaminados) ou por um vetor mecânico (que apenas transporta o agente sem que este realize transformações em seu organismo). Exemplos comuns são a Raiva e a Brucelose. Na Leishmaniose, o agente precisa realizar uma transformação biológica dentro do vetor.\n\nAlternativa b) Ciclozoonose: Incorreta. Esta classificação é utilizada quando o agente exige obrigatoriamente a participação de mais de uma espécie de hospedeiro vertebrado para completar o seu ciclo evolutivo, sem a necessidade de um hospedeiro invertebrado. O exemplo clássico é o complexo Teníase-Cisticercose, que envolve humanos e suínos ou bovinos.\n\nAlternativa c) Saprozoonose: Incorreta. Ocorre quando o ciclo do agente etiológico depende obrigatoriamente de um reservatório não animal, como o solo, matéria orgânica, plantas ou água, para que uma etapa do seu desenvolvimento seja concluída. Exemplos incluem o Tétano e diversas micoses sistêmicas. A Leishmaniose não depende do solo para o desenvolvimento do parasita Leishmania.\n\nAlternativa d) Metazoonose: Correta. As metazoonoses são doenças cujo agente etiológico necessita obrigatoriamente passar por um hospedeiro invertebrado (vetor) para completar uma etapa do seu ciclo biológico e se tornar infectante. Na Leishmaniose Visceral, o protozoário Leishmania infantum deve ser ingerido pelo flebotomíneo (vetor) e passar por transformações morfológicas no trato digestivo do inseto, evoluindo de amastigota para promastigota metacíclica, que é a forma capaz de infectar um novo vertebrado.\n\nAlternativa e) Anfixenose: Incorreta. Este termo refere-se à classificação das zoonoses quanto à direção da transmissão entre espécies. Uma anfixenose é uma doença que circula indiferentemente entre humanos e animais, podendo ser transmitida em ambos os sentidos. Não é uma categoria que descreve o ciclo de manutenção biológica do agente como as demais alternativas citadas.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Parasitoses",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:13.434Z"
+  },
+  {
+    "id": "AJUDA_35ca1984-b359-49ec-93d3-d61e8a8562a9",
+    "originalId": "35ca1984-b359-49ec-93d3-d61e8a8562a9",
+    "statement": "A distocia de ombro é uma emergência obstétrica que requer abordagem sistemática e coordenada para minimizar complicações neonatais e maternas. No manejo desta emergência obstétrica é importante que a equipe esteja preparada para a adequada condução do parto. Com base nessas informações, pode-se afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter a calma, e não criar alarde na equipe de assistência ao parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso de manobras de liberação (McRoberts e pressão suprapúbica) pouco contribuem e devem ser evitadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manobras como a rotação externa dos ombros, ou a entrega do braço anterior facilitam a passagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A preparação da equipe por meio de treinamentos e exercícios de simulação melhora o desempenho durante a ocorrência de distocia de ombro.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A distocia de ombro é uma das emergências mais temidas na obstetrícia, caracterizada pela impactação do ombro anterior fetal na sínfise púbica materna após a saída da cabeça. O manejo deve ser rápido, pois o tempo é crítico para evitar a asfixia neonatal e lesões do plexo braquial.\n\nAlternativa (a) Incorreta: Embora manter a calma seja uma recomendação geral para qualquer emergência, a afirmação de que não se deve criar alarde é clinicamente inadequada. O primeiro passo no protocolo de distocia de ombro (como no mnemônico ALARMER ou HELPERR) é justamente pedir ajuda (Ask for help). É essencial que toda a equipe (obstetras adicionais, anestesia e pediatria) seja alertada imediatamente sobre a gravidade da situação.\n\nAlternativa (b) Incorreta: Pelo contrário, a manobra de McRoberts (hiperflexão e abdução das coxas maternas) e a pressão suprapúbica (manobra de Rubin I) são as intervenções de primeira linha. Elas resolvem a grande maioria dos casos de distocia de ombro, pois alteram a angulação da pelve e deslocam o ombro fetal da sínfise púbica, respectivamente. Jamais devem ser evitadas.\n\nAlternativa (c) Incorreta: A manobra de desprendimento do braço refere-se especificamente ao braço POSTERIOR, e não ao anterior. O ombro anterior está preso atrás do osso púbico; tentar retirá-lo diretamente é ineficaz e perigoso. Ao retirar o braço posterior, reduz-se o diâmetro biacromial, facilitando o desprendimento. Além disso, as manobras rotacionais (como Woods e Rubin II) visam à rotação interna, e não externa, dos ombros para diâmetros oblíquos da pelve.\n\nAlternativa (d) Correta: Esta é a alternativa que melhor reflete as diretrizes modernas de segurança do paciente. Como a distocia de ombro é um evento súbito, imprevisível e de alta carga emocional, o treinamento da equipe por meio de simulação realística é a estratégia mais eficaz para garantir que as manobras sejam executadas na sequência correta e de forma coordenada, reduzindo o tempo de resolução e o risco de traumas neonatais e maternos.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Partograma e Distocias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:13.434Z"
+  },
+  {
+    "id": "AJUDA_35d4a08d-7277-453e-80ce-9d3894fc0a7f",
+    "originalId": "35d4a08d-7277-453e-80ce-9d3894fc0a7f",
+    "statement": "Paciente masculino, 45 anos, portador de pneumonia adquirida na comunidade com isolamento de Streptococcus pneumoniae resistente à penicilina (MIC >2μg/mL) em hemocultura, inicia tratamento com levofloxacino 750mg/dia. Após 72 horas, evolui com piora clínica e nova hemocultura evidencia aumento da MIC para levofloxacino de 0,5 para 4μg/mL. Na análise dos mecanismos moleculares de resistência às fluoroquinolonas e suas implicações terapêuticas, selecione a afirmativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A mutação isolada no gene parC da topoisomerase IV confere resistência de alto nível à levofloxacino por ser seu alvo primário em gram-positivos, mantendo sensibilidade à delafloxacino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O desenvolvimento de resistência durante terapia sugere seleção de subpopulação com mutação prévia em gyrA, sendo improvável mutação de novo em parC no período de 72 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A presença de bomba de efluxo PmrA aumenta a CIM em 4 vezes quando associada à mutação em parC, mantendo atividade bactericida da moxifloxacino pela maior afinidade à DNA girase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O mecanismo stepwise de resistência inicia com mutação em gyrA seguida de parC em gram-positivos, exigindo dupla mutação para CIM >4μg/mL em isolados selvagens.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A resistência por proteína Qnr plasmidial protege tanto a topoisomerase IV quanto a DNA girase, conferindo resistência cruzada a todas as quinolonas independente da geração.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para entender a resistência do Streptococcus pneumoniae às fluoroquinolonas, como o levofloxacino, é fundamental conhecer os alvos dessas drogas e como as mutações ocorrem. As quinolonas agem em duas enzimas essenciais para a síntese de DNA bacteriano: a DNA girase (composta pelas subunidades GyrA e GyrB) e a Topoisomerase IV (composta pelas subunidades ParC e ParE).\n\nAlternativa A: Incorreta. No S. pneumoniae (Gram-positivo), a Topoisomerase IV (gene parC) é, de fato, o alvo primário do levofloxacino. Entretanto, uma mutação isolada em parC confere apenas resistência de baixo nível, ou seja, um aumento pequeno na Concentração Inibitória Mínima (CIM). Para que ocorra resistência de alto nível, é necessária uma segunda mutação, geralmente na DNA girase (gyrA).\n\nAlternativa B: Incorreta. O desenvolvimento de resistência durante o tratamento (resistência emergente) é possível e ocorre justamente pela seleção de subpopulações que já possuem uma primeira mutação ou que a adquirem sob pressão seletiva do antibiótico. O período de 72 horas é perfeitamente compatível com a falha terapêutica e a detecção de uma nova população bacteriana com CIM elevada.\n\nAlternativa C: Incorreta. A bomba de efluxo PmrA é um mecanismo que retira o antibiótico de dentro da célula, contribuindo para o aumento da CIM. Contudo, o moxifloxacino não é imune a esse processo; embora ele tenha uma afinidade equilibrada pelos dois alvos enzimáticos, a presença de mutações nos genes parC e gyrA acaba afetando a eficácia de todas as quinolonas respiratórias de forma cruzada, especialmente quando a resistência é de alto nível.\n\nAlternativa D: Correta. Esta alternativa descreve o conceito fundamental da resistência às quinolonas no pneumococo: o mecanismo stepwise (em degraus ou passos). Para que o S. pneumoniae atinja uma CIM clinicamente significativa (como os 4 µg/mL citados no caso), ele geralmente precisa acumular mutações sucessivas em ambos os alvos (DNA girase e Topoisomerase IV). A primeira mutação eleva a CIM discretamente, e a segunda mutação dispara esse valor para níveis de resistência de alto nível. Embora a ordem das mutações (se parC ou gyrA primeiro) possa variar conforme a quinolona utilizada, a natureza cumulativa e a necessidade de dupla mutação para atingir CIM > 4 µg/mL são características marcantes desse processo.\n\nAlternativa E: Incorreta. O mecanismo de proteção das topoisomerases por proteínas Qnr mediadas por plasmídeos é clássico de bactérias Gram-negativas, como as enterobactérias (ex.: E. coli, Klebsiella). No caso do Streptococcus pneumoniae, o mecanismo de resistência predominante e clinicamente relevante é a mutação cromossômica nos genes que codificam as enzimas-alvo, e não a presença de plasmídeos Qnr.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Pneumonias Bacterianas",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:13.434Z"
+  },
+  {
+    "id": "AJUDA_35d769af-6e2a-435a-a1af-185f044beb2b",
+    "originalId": "35d769af-6e2a-435a-a1af-185f044beb2b",
+    "statement": "Sobre o tabagismo, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em 1989, 34,8% da população brasileira era tabagista. Em 2019 esse percentual caiu para 12,6%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O tabagismo está relacionado as seguintes cânceres: esôfago, pulmão, boca e tireoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A bupropiona é um antidepressivo que pode ser utilizado para auxiliar na cessação do tabagismo apenas nos casos em que o paciente apresentar transtorno depressivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A terapia de reposição de nicotina deve ser evitada já que mantém o paciente com vício de nicotina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): Esta alternativa apresenta dados epidemiológicos precisos sobre a prevalência do tabagismo no Brasil. O país é uma referência global no controle do tabaco devido a políticas públicas eficazes, como a proibição de propaganda e o aumento de impostos. Em 1989, a Pesquisa Nacional sobre Saúde e Nutrição (PNSN) registrou que 34,8% da população acima de 18 anos era fumante. Em 2019, a Pesquisa Nacional de Saúde (PNS) indicou que esse índice caiu para 12,6%, demonstrando uma redução significativa ao longo das décadas.\n\nAlternativa B (Incorreta): O tabagismo é, de fato, o principal fator de risco para os cânceres de pulmão, boca, esôfago, laringe, faringe, bexiga e pâncreas. No entanto, o câncer de tireoide não possui o tabagismo como um fator de risco estabelecido. Curiosamente, alguns estudos epidemiológicos sugerem até uma associação inversa (não protetora clinicamente, mas estatística) entre fumar e o risco de câncer de tireoide diferenciado, o que invalida a alternativa.\n\nAlternativa C (Incorreta): A bupropiona é um antidepressivo de primeira linha para o tratamento da cessação tabágica, mas seu uso não é restrito a pacientes com depressão. Ela atua na inibição da recaptação de dopamina e noradrenalina, ajudando a reduzir a fissura e os sintomas de abstinência em qualquer paciente tabagista com dependência moderada a grave, independentemente de comorbidades psiquiátricas.\n\nAlternativa D (Incorreta): A Terapia de Reposição de Nicotina (TRN), disponível em adesivos e gomas/pastilhas, é um pilar do tratamento farmacológico. Ao contrário do que afirma a alternativa, ela é recomendada justamente para fornecer ao paciente doses controladas de nicotina sem as mais de 4.700 substâncias tóxicas e cancerígenas presentes na fumaça do cigarro. A TRN reduz os sintomas físicos da síndrome de abstinência, dobrando as chances de sucesso na cessação quando comparada ao placebo.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Dependência Química",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:13.434Z"
+  },
+  {
+    "id": "AJUDA_35e45f08-3512-4084-8ca7-bd60ba587150",
+    "originalId": "35e45f08-3512-4084-8ca7-bd60ba587150",
+    "statement": "Mulher de 71 anos, portadora de DPOC muito avançado e hiperinsuflação dinâmica conhecida, está intubada por acidose hipercápnica aguda. No ventilador: auto-PEEP estimada em 8 cmH₂O, frequência respiratória 24 irpm, volume corrente 6 mL/kg, PEEP 5 cmH₂O, pressão de platô 22 cmH₂O e fluxo expiratório desacelerado, com evidente encurtamento do tempo expiratório. Observa-se assincronia com esforços ineficazes e queda transitória da pressão arterial durante a inspiração, sugerindo aprisionamento aéreo significativo.\nQual é a intervenção inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar o volume corrente para melhorar recrutamento de áreas colapsadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Elevar a PEEP até igualar totalmente a auto-PEEP medida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reduzir a frequência respiratória para prolongar o tempo expiratório e diminuir o aprisionamento aéreo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aumentar a fração inspirada de oxigênio para reduzir hipercapnia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar manobra de recrutamento alveolar com pressões elevadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um quadro clássico de Doença Pulmonar Obstrutiva Crônica (DPOC) exacerbada, com sinais claros de hiperinsuflação dinâmica e presença de auto-PEEP (8 cmH2O). O problema central aqui é a obstrução ao fluxo expiratório, que impede o esvaziamento pulmonar completo antes do início do próximo ciclo respiratório. A frequência respiratória de 24 irpm é considerada alta para um paciente com perfil obstrutivo, o que encurta o tempo expiratório e agrava o aprisionamento aéreo. Isso se manifesta clinicamente pela assincronia (esforços ineficazes) e pela repercussão hemodinâmica (queda da pressão arterial na inspiração por redução do retorno venoso).\n\nAnálise das alternativas:\n\na) Incorreta. Aumentar o volume corrente em um paciente que já sofre de hiperinsuflação dinâmica e aprisionamento aéreo seria contraproducente. Isso aumentaria a quantidade de ar a ser exalada em um tempo já curto, elevando as pressões intratorácicas e o risco de barotrauma, além de piorar a instabilidade hemodinâmica.\n\nb) Incorreta. Embora o ajuste da PEEP externa possa ser utilizado para facilitar o disparo do ventilador em pacientes com auto-PEEP (geralmente ajustada entre 75% a 80% da auto-PEEP), elevar a PEEP até igualar totalmente ou de forma isolada não resolve a causa base do aprisionamento aéreo. A prioridade inicial é esvaziar o pulmão, e não apenas compensar o gradiente de pressão para o disparo.\n\nc) Correta. Esta é a intervenção inicial mais eficaz. Ao reduzir a frequência respiratória, o tempo total do ciclo aumenta, permitindo que o tempo expiratório (Te) seja prolongado. Com mais tempo para exalar, o paciente consegue expelir o ar aprisionado, o que reduz a auto-PEEP, melhora a mecânica respiratória, resolve a assincronia de esforço ineficaz e diminui a compressão das estruturas vasculares intratorácicas, melhorando a pressão arterial.\n\nd) Incorreta. Aumentar a FiO2 melhora a oxigenação, mas não trata a hipercapnia nem o problema mecânico do aprisionamento aéreo. A hipercapnia em pacientes com DPOC sob ventilação mecânica deve ser manejada através da otimização da ventilação alveolar, respeitando o tempo expiratório.\n\ne) Incorreta. Manobras de recrutamento alveolar com pressões elevadas são indicadas para patologias com colapso alveolar (como a SRPA), e não para patologias obstrutivas. Na DPOC com hiperinsuflação, essa manobra é extremamente perigosa, podendo causar pneumotórax ou choque obstrutivo por aumento excessivo da pressão intratorácica.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Pneumologia Intensiva",
+      "Ventilação Mecânica",
+      "Intubação",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:13.434Z"
+  },
+  {
+    "id": "AJUDA_35e5c21d-afd9-4e19-b6b5-3d071a65e964",
+    "originalId": "35e5c21d-afd9-4e19-b6b5-3d071a65e964",
+    "statement": "Menino, 15 dias de vida, apresentou triagem neonatal positiva para deficiência de G6PD e foi convocado para repetição do exame. Na avaliação pediátrica, a mãe não tem queixas e o exame físico é normal. Qual é a conduta mais adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar a nova coleta e orientar o afastamento de desencadeantes de hemólise.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar análise molecular do gene G6PD e hemograma para fazer o aconselhamento genético.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Considerar resultado da primeira coleta como diagnóstico definitivo e afastar desencadeantes de crise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Considerar resultado falso positivo e suspender a nova coleta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O conceito fundamental desta questão envolve o manejo adequado de um resultado alterado na triagem neonatal (teste do pezinho) para a deficiência de G6PD (glicose-6-fosfato desidrogenase). A deficiência de G6PD é uma condição genética ligada ao cromossomo X que torna as hemácias suscetíveis ao estresse oxidativo, podendo levar à hemólise aguda.\n\nAlternativa (a) - Correta: Todo exame de triagem neonatal que apresenta alteração necessita de uma coleta de confirmação (contraprova), pois o teste inicial é sensível, mas pode apresentar falsos-positivos. No caso específico da G6PD, o risco de uma crise hemolítica grave existe desde o nascimento. Portanto, enquanto se aguarda a confirmação diagnóstica pela nova coleta (geralmente por métodos quantitativos), é fundamental orientar a família sobre a prevenção, afastando a criança de substâncias oxidantes que desencadeiam crises, como naftalina, fava e determinados medicamentos (como alguns antitérmicos e antibióticos).\n\nAlternativa (b) - Incorreta: A análise molecular não é o primeiro passo após uma triagem positiva. O diagnóstico confirmatório padrão-ouro é realizado por meio da dosagem quantitativa da atividade enzimática da G6PD. Além disso, o hemograma, em um paciente assintomático e sem crise hemolítica no momento, não auxilia no diagnóstico da deficiência enzimática propriamente dita.\n\nAlternativa (c) - Incorreta: Os testes de triagem neonatal são ferramentas de rastreio populacional e não devem ser considerados diagnósticos definitivos. Existem variáveis técnicas e biológicas que podem interferir no resultado inicial. É obrigatório realizar o teste confirmatório antes de selar o diagnóstico, embora as medidas preventivas devam ser iniciadas imediatamente por cautela.\n\nAlternativa (d) - Incorreta: Jamais se deve considerar um resultado de triagem alterado como falso-positivo sem a devida investigação e repetição do exame. A deficiência de G6PD é a enzimopatia mais comum do mundo e a omissão na investigação pode expor o recém-nascido a riscos de anemia hemolítica grave e icterícia neonatal acentuada.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Outros Distúrbios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:13.434Z"
+  },
+  {
+    "id": "AJUDA_35e9ef67-c2f4-4e9d-9e4f-ee342a9642b1",
+    "originalId": "35e9ef67-c2f4-4e9d-9e4f-ee342a9642b1",
+    "statement": "Um paciente de 70 anos, diabético tipo 2 e obeso, é admitido no pronto-socorro com dor abdominal intensa em hipocôndrio direito, febre (39°C), calafrios, leucocitose acentuada e sinal de Murphy positivo. A ultrassonografia de urgência revela vesícula biliar distendida, parede espessada e a presença de conteúdo ecogênico. O paciente é levado imediatamente ao centro cirúrgico para uma colecistectomia de urgência. Durante o procedimento, é confirmado o empiema, com drenagem de grande quantidade de pus do interior da vesícula biliar, mas sem perfuração ou contaminação grosseira do peritônio além do local da inflamação. A ferida operatória principal é fechada primariamente. De acordo com a classificação de feridas cirúrgicas do Centers for Disease Control and Prevention (CDC) e os critérios estabelecidos para a vigilância de infecções hospitalares no Brasil (Portaria GM/MS nº 2.616/98), em qual categoria a ferida cirúrgica deve ser classificada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ferida Limpa (Classe I)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ferida Limpa-Contaminada (Classe II)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ferida Contaminada (Classe III)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ferida Infectada (Classe IV)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Ferida Potencialmente Contaminada (classe IIIa)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso: \nO paciente apresenta um quadro clínico de colecistite aguda que evoluiu para empiema vesicular. O ponto fundamental para a classificação da ferida cirúrgica, conforme os critérios do Centers for Disease Control and Prevention (CDC) e da Portaria MS 2.616/98, é a condição do sítio cirúrgico no momento da operação.\n\nAlternativa a) Incorreta. Feridas limpas (Classe I) são aquelas realizadas em tecidos estéreis ou passíveis de descontaminação, na ausência de processo infeccioso ou inflamatório local e sem penetração nos tratos digestivo, respiratório, urinário ou genital.\n\nAlternativa b) Incorreta. Feridas limpas-contaminadas (Classe II) são aquelas em que há entrada nos tratos digestivo, respiratório ou urinário sob condições controladas e sem contaminação incomum. Um exemplo seria uma colecistectomia eletiva sem sinais de inflamação aguda.\n\nAlternativa c) Incorreta. Feridas contaminadas (Classe III) incluem feridas traumáticas acidentais recentes, cirurgias com falha técnica grosseira ou na presença de inflamação aguda não purulenta. Se o paciente tivesse apenas uma colecistite aguda com edema, sem a presença de pus, a classificação poderia ser esta.\n\nAlternativa d) Correta. Feridas infectadas ou sujas (Classe IV) são aquelas realizadas em tecidos com infecção clínica evidente, presença de secreção purulenta (pus), vísceras perfuradas ou feridas traumáticas antigas com tecido necrótico. No caso descrito, a presença confirmada de empiema (pus no interior da vesícula) caracteriza uma infecção preexistente no sítio cirúrgico, o que enquadra a ferida obrigatoriamente na Classe IV.\n\nAlternativa e) Incorreta. O termo \"potencialmente contaminada\" é um sinônimo para a Classe II (limpa-contaminada). Além disso, a subdivisão Classe IIIa não existe na classificação oficial adotada pelo Ministério da Saúde ou pelo CDC para vigilância de infecções de sítio cirúrgico.\n\nConclusão: \nA identificação de pus durante o ato operatório é o critério patognomônico para a classificação da ferida como Classe IV (infectada). Portanto, a alternativa D está correta.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Perioperatório",
+      "Colecistite e Colangite Aguda",
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:13.434Z"
+  },
+  {
+    "id": "AJUDA_35f3bbc4-d8e1-4b2e-ae9d-1d2a809f22f9",
+    "originalId": "35f3bbc4-d8e1-4b2e-ae9d-1d2a809f22f9",
+    "statement": "Mulher de 62 anos, em pós-menopausa há doze anos, assintomática, comparece à unidade básica de saúde (UBS) preocupada com osteoporose após assistir uma reportagem na televisão. Diante dessa demanda e considerando a idade da paciente, a conduta correta é avaliar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ressonância magnética de quadril",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "radiografia simples de quadril",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "níveis de cálcio e vitamina D",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "fatores de risco para fratura",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A conduta diante de uma paciente de 62 anos que solicita avaliação para osteoporose deve ser baseada nos critérios de rastreamento clínico. As principais diretrizes nacionais e internacionais recomendam o rastreamento universal com densitometria óssea para todas as mulheres a partir dos 65 anos. Para mulheres na pós-menopausa com idade inferior a 65 anos, a indicação de exames depende da presença de fatores de risco que aumentem a probabilidade de fraturas.\n\nAlternativa a) Incorreta: A ressonância magnética não é um exame de rastreamento ou diagnóstico para osteoporose. Ela é utilizada em casos específicos, como na investigação de fraturas de estresse, colapso vertebral agudo ou outras patologias ósseas, mas não para medir a densidade mineral óssea.\n\nAlternativa b) Incorreta: A radiografia simples não possui sensibilidade para o diagnóstico precoce de osteoporose. A perda de massa óssea só se torna visível ao raio X quando já ultrapassa cerca de 30% a 50% do total, sendo útil apenas para identificar fraturas já existentes.\n\nAlternativa c) Incorreta: Embora a vitamina D e o cálcio sejam essenciais para o metabolismo ósseo, a dosagem desses elementos não define o diagnóstico de osteoporose e não é o primeiro passo para o rastreamento em pacientes assintomáticas nesta faixa etária.\n\nAlternativa d) Correta: Para pacientes entre a menopausa e os 65 anos, a decisão de realizar a densitometria óssea deve ser individualizada. O médico deve avaliar fatores de risco como tabagismo, baixo peso corporal (IMC < 19), histórico familiar de fratura de quadril, uso crônico de corticoides, consumo excessivo de álcool e doenças que causem perda óssea secundária (como artrite reumatoide). Ferramentas como o FRAX podem auxiliar nessa decisão. Portanto, avaliar os fatores de risco é a conduta inicial correta antes de solicitar qualquer exame de imagem.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Metabolismo Ósseo e Mineral",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": 44.45939319046957,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:13.434Z"
+  },
+  {
+    "id": "AJUDA_35fb9d91-e5a8-4edc-9189-9b8305144731",
+    "originalId": "35fb9d91-e5a8-4edc-9189-9b8305144731",
+    "statement": "A correta correlação entre tumor e o respectivo marcador mais relacionado está contido na alternativa:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ovário/alfa-fetoproteína.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fígado/PSA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pulmão/CEA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "mama/CA 15-3.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "próstata/CA-125.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda a correlação entre marcadores tumorais e suas neoplasias de origem. Esses marcadores são substâncias, geralmente proteínas, produzidas pelas células tumorais ou pelo organismo em resposta à presença do câncer, sendo úteis principalmente no acompanhamento da resposta ao tratamento e na detecção de recidivas.\n\nAlternativa a) Incorreta. A alfa-fetoproteína (AFP) é o principal marcador relacionado ao carcinoma hepatocelular (fígado) e a certos tumores de células germinativas, como o tumor do seio endodérmico (ovário ou testículo). No entanto, o marcador mais comumente relacionado ao câncer de ovário (especificamente o tipo epitelial) é o CA-125.\n\nAlternativa b) Incorreta. O PSA (Antígeno Prostático Específico) é um marcador altamente específico para o tecido prostático, sendo fundamental no diagnóstico e seguimento do câncer de próstata. Para o fígado, o marcador de referência é a alfa-fetoproteína (AFP).\n\nAlternativa c) Incorreta. O CEA (Antígeno Carcinoembrionário) é um marcador clássico para tumores do trato gastrointestinal, com destaque para o câncer colorretal. Embora possa apresentar elevação em casos de câncer de pulmão (especialmente adenocarcinomas), não é o marcador de eleição ou o mais relacionado, de forma específica, a esse órgão em comparação com a associação da alternativa d.\n\nAlternativa d) Correta. O CA 15-3 é o marcador tumoral mais amplamente utilizado no acompanhamento clínico do câncer de mama. Ele é especialmente útil para monitorar a eficácia do tratamento em pacientes com doença metastática e para a detecção precoce de recorrências em pacientes previamente tratadas.\n\nAlternativa e) Incorreta. O CA-125 é o principal marcador para o câncer epitelial de ovário, não tendo relação com a próstata. Como citado anteriormente, o marcador da próstata é o PSA.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama",
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:13.434Z"
+  },
+  {
+    "id": "AJUDA_360523fc-c24d-4b9d-a572-074b535ac8a6",
+    "originalId": "360523fc-c24d-4b9d-a572-074b535ac8a6",
+    "statement": "A hipoglicemia neonatal é caracterizada pelos seguintes sinais e sintomas:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tremores e convulsões.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "tremores e hipertonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "taquipneia e hipertonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "choro forte e sucção débil.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A hipoglicemia neonatal ocorre quando os níveis de glicose plasmática estão insuficientes para suprir a demanda metabólica do recém-nascido. Como o cérebro depende quase exclusivamente da glicose como fonte de energia, a maioria dos sinais clínicos é de origem neurológica (neuroglicopenia) ou decorrente da resposta do sistema nervoso autônomo.\n\nAlternativa a: Esta é a alternativa correta. Os tremores (também conhecidos como jitters) são uma das manifestações mais comuns e precoces da hipoglicemia. As convulsões são sinais de neuroglicopenia grave e indicam que o sistema nervoso central está sofrendo por falta crítica de substrato energético.\n\nAlternativa b: Incorreta. Embora os tremores façam parte do quadro, a hipoglicemia neonatal manifesta-se tipicamente com hipotonia (o bebê apresenta-se \"mole\" ou com tônus muscular diminuído) e não com hipertonia.\n\nAlternativa c: Incorreta. A taquipneia (respiração acelerada) pode ocorrer como um sinal inespecífico de estresse neonatal ou em quadros de insuficiência respiratória associada, mas, como mencionado anteriormente, a hipertonia não é uma característica da hipoglicemia; o esperado é a hipotonia.\n\nAlternativa d: Incorreta. A sucção débil é um sinal clínico importante da hipoglicemia, refletindo a letargia e a fraqueza muscular do neonato. Entretanto, o choro do bebê hipoglicêmico não é forte. Ele costuma ser um choro fraco, gemente ou, em alguns casos, muito agudo e estridente.\n\nAlém dos sinais citados, o quadro clínico de hipoglicemia no recém-nascido pode incluir irritabilidade, letargia, apneia, cianose e palidez. É fundamental lembrar que muitos recém-nascidos podem ser assintomáticos, o que reforça a necessidade de monitorização glicêmica em bebês de risco (filhos de mães diabéticas, pequenos para a idade gestacional ou prematuros).",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Outros Distúrbios do Período Neonatal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:13.434Z"
+  }
+]

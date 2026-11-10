@@ -1,0 +1,966 @@
+{
+  "matched": [
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "06411b11-b035-4cf5-bbd0-c296090db64c",
+      "code": "USPHCFMUSP-2021-CIR-19777",
+      "q_num": 89,
+      "official_gabarito": "C",
+      "statement_preview": "Mulher de 32 anos de idade chega ao pronto atendimento com dor em flan"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "20886bb6-263c-4149-b285-9d176ad94f28",
+      "code": "USPHCFMUSP-2021-CIR-19778",
+      "q_num": 90,
+      "official_gabarito": "A",
+      "statement_preview": "Mulher de 62 anos de idade realizou um ultrassom de abdome superior no"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "2376d5a1-f0a5-4de8-b4d5-01392d4dadc3",
+      "code": "USPHCFMUSP-2021-CIR-19779",
+      "q_num": 74,
+      "official_gabarito": "D",
+      "statement_preview": "Homem de 49 anos de idade refere dor abdominal difusa há 4 dias com pi"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "325d292a-375f-4212-922b-553b129fb011",
+      "code": "USPHCFMUSP-2021-CIR-19780",
+      "q_num": 84,
+      "official_gabarito": "C",
+      "statement_preview": "Uma paciente mulher de 67 anos de idade é atendida no ambulatório da c"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "32ee7301-d554-4ae6-be38-31d816219e9a",
+      "code": "USPHCFMUSP-2021-CIR-19781",
+      "q_num": 88,
+      "official_gabarito": "B",
+      "statement_preview": "Paciente de 65 anos, sexo masculino, previamente hígido, foi acometido"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "38bccecc-6484-4d7d-9c43-4ed1cd8287be",
+      "code": "USPHCFMUSP-2021-CIR-19782",
+      "q_num": 73,
+      "official_gabarito": "C",
+      "statement_preview": "Homem de 59 anos de idade procura o Serviço de Emergência com dor abdo"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "4ec1806d-ca82-45d6-beca-d07f21a0c2fb",
+      "code": "USPHCFMUSP-2021-CIR-19783",
+      "q_num": 96,
+      "official_gabarito": "C",
+      "statement_preview": "Qual é o tempo ideal para a realização de fixação das fraturas intertr"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "5bb36355-712e-4d94-9b06-a6bc8cdb6b47",
+      "code": "USPHCFMUSP-2021-CIR-19784",
+      "q_num": 77,
+      "official_gabarito": "C",
+      "statement_preview": "Mulher de 37 anos de idade se jogou do 4o andar do prédio em que mora."
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "5fb994c2-0e7e-44bc-8236-b032dca66d5f",
+      "code": "USPHCFMUSP-2021-CIR-19785",
+      "q_num": 92,
+      "official_gabarito": "A",
+      "statement_preview": "Homem, 54 anos de idade, refere dor anal intensa durante as evacuações"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "6b5b189d-fd2e-4199-b22e-1bede1f84086",
+      "code": "USPHCFMUSP-2021-CIR-19786",
+      "q_num": 83,
+      "official_gabarito": "C",
+      "statement_preview": "Mulher, 54 anos de idade, refere quadro de dor e abaulamento na região"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "756379df-70a1-47c0-85d9-3a8f93a581e5",
+      "code": "USPHCFMUSP-2021-CIR-19787",
+      "q_num": 85,
+      "official_gabarito": "B",
+      "statement_preview": "Mulher de 42 anos de idade procura atendimento por nódulo em hemiface "
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "877eec7a-eac6-412b-afba-4628b65d2109",
+      "code": "USPHCFMUSP-2021-CIR-19788",
+      "q_num": 95,
+      "official_gabarito": "*",
+      "statement_preview": "Mulher de 28 anos de idade está no Pronto-Socorro com diagnóstico de p"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "8d26baf4-8b65-4fa5-906c-99325af34581",
+      "code": "USPHCFMUSP-2021-CIR-19789",
+      "q_num": 76,
+      "official_gabarito": "D",
+      "statement_preview": "Mulher de 23 anos de idade, caiu de motocicleta em via expressa. Chega"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "9cf0aa96-68c5-4221-a480-2297571b431c",
+      "code": "USPHCFMUSP-2021-CIR-19790",
+      "q_num": 81,
+      "official_gabarito": "D",
+      "statement_preview": "Homem de 31 anos de idade teve queda de andaime a 5 metros de altura. "
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "9eee50e3-486b-4eb3-a882-408f1dd17764",
+      "code": "USPHCFMUSP-2021-CIR-19791",
+      "q_num": 93,
+      "official_gabarito": "D",
+      "statement_preview": "Mulher de 56 anos de idade está em investigação de icterícia obstrutiv"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "a5fb3ac6-34ae-44df-80be-1f5b719905b1",
+      "code": "USPHCFMUSP-2021-CIR-19792",
+      "q_num": 94,
+      "official_gabarito": "C",
+      "statement_preview": "Homem de 62 anos de idade realizou a tomografia de abdome abaixo para "
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "bf60d664-e5a7-4a91-81a6-eb0f5a0d4f0d",
+      "code": "USPHCFMUSP-2021-CIR-19793",
+      "q_num": 91,
+      "official_gabarito": "B",
+      "statement_preview": "Mulher de 47 anos de idade realiza acompanhamento no Ambulatório Médic"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "dc6699af-34b5-4beb-8b02-5741cded8399",
+      "code": "USPHCFMUSP-2021-CIR-19794",
+      "q_num": 79,
+      "official_gabarito": "A",
+      "statement_preview": "Mulher de 33 anos de idade é encaminhada a hospital terciário devido a"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "e20dccc1-699c-47f9-8f95-0b959d83d493",
+      "code": "USPHCFMUSP-2021-CIR-19795",
+      "q_num": 86,
+      "official_gabarito": "D",
+      "statement_preview": "Homem de 65 anos de idade desenvolveu subitamente amaurose no olho esq"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "e55203f5-4b74-4360-9457-64d8f3a0b43e",
+      "code": "USPHCFMUSP-2021-CIR-19796",
+      "q_num": 82,
+      "official_gabarito": "A",
+      "statement_preview": "Homem de 39 anos de idade foi transferido para um hospital terciário p"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "ee30c743-0663-46bc-899a-73611a16bf4a",
+      "code": "USPHCFMUSP-2021-CIR-19797",
+      "q_num": 75,
+      "official_gabarito": "A",
+      "statement_preview": "Mulher de 73 anos de idade, está no 5o pós-operatório de gastrectomia "
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "f57f6b8c-8961-4bdd-933d-bfa941c82789",
+      "code": "USPHCFMUSP-2021-CIR-19798",
+      "q_num": 78,
+      "official_gabarito": "B",
+      "statement_preview": "Mulher de 39 anos de idade está internada devido a pancreatite aguda b"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "f7c9f129-99fe-46ca-9a41-88c7109389e7",
+      "code": "USPHCFMUSP-2021-CIR-19799",
+      "q_num": 80,
+      "official_gabarito": "B",
+      "statement_preview": "Mulher de 29 anos de idade foi admitida no Serviço de Emergência devid"
+    },
+    {
+      "file": "data\\cirurgia_final_questions.json",
+      "id": "f938c6ad-a3b5-47a1-99af-63825c48e5f7",
+      "code": "USPHCFMUSP-2021-CIR-19800",
+      "q_num": 87,
+      "official_gabarito": "A",
+      "statement_preview": "Neonato prematuro com idade gestacional de 30 semanas e peso de nascim"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "1335317c-ece1-481a-8b7e-ac8ec33807fd",
+      "code": "USPHCFMUSP-2021-CLM-35856",
+      "q_num": 14,
+      "official_gabarito": "C",
+      "statement_preview": "Homem de 68 anos de idade tem insuficiência cardíaca com fração de eje"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "1506756d-c0be-4b29-916e-0ff0dda5f2c9",
+      "code": "USPHCFMUSP-2021-CLM-35857",
+      "q_num": 14,
+      "official_gabarito": "C",
+      "statement_preview": "Homem de 68 anos de idade, aposentado, vem para consulta em ambulatóri"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "2414effd-d632-44d2-95f4-2c1127e43456",
+      "code": "USPHCFMUSP-2021-CLM-35858",
+      "q_num": 20,
+      "official_gabarito": "C",
+      "statement_preview": "Mulher de 58 anos de idade vem à unidade básica de saúde pois apresent"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "2f2771e3-9765-4fca-8688-29d43bf68780",
+      "code": "USPHCFMUSP-2021-CLM-35859",
+      "q_num": 20,
+      "official_gabarito": "C",
+      "statement_preview": "Homem de 72 anos de idade está internado em unidade de terapia intensi"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "4777a502-87f9-4a95-bca4-30b7f1b6c55e",
+      "code": "USPHCFMUSP-2021-CLM-35860",
+      "q_num": 6,
+      "official_gabarito": "C",
+      "statement_preview": "Um estudante de biologia de 24 anos de idade é trazido por sua mãe e s"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "53737b19-22c1-4159-ab9d-897a3f5592ba",
+      "code": "USPHCFMUSP-2021-CLM-35861",
+      "q_num": 20,
+      "official_gabarito": "C",
+      "statement_preview": "Homem de 72 anos de idade está internado em unidade de terapia intensi"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "5a394e1c-84f1-4778-bc07-f53bccfec57a",
+      "code": "USPHCFMUSP-2021-CLM-35862",
+      "q_num": 3,
+      "official_gabarito": "C",
+      "statement_preview": "Mulher de 50 anos de idade procura o ambulatório de clínica médica com"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "5b447925-ae01-43d2-8fd1-0934ea166a3a",
+      "code": "USPHCFMUSP-2021-CLM-35863",
+      "q_num": 7,
+      "official_gabarito": "B",
+      "statement_preview": "Mulher de 23 anos de idade vem ao Pronto-Socorro com cefaleia contínua"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "6a2871df-cdfb-435e-91ea-a0e6ea001e1a",
+      "code": "USPHCFMUSP-2021-CLM-35864",
+      "q_num": 14,
+      "official_gabarito": "C",
+      "statement_preview": "Homem de 68 anos de idade tem insuficiência cardíaca com fração de eje"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "769594b5-b428-4719-82c0-5d3702955e45",
+      "code": "USPHCFMUSP-2021-CLM-35865",
+      "q_num": 12,
+      "official_gabarito": "B",
+      "statement_preview": "Homem de 17 anos de idade procura o Pronto-Socorro por lesão em perna "
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "7afe39cc-c2af-4bd5-b515-3633c2129617",
+      "code": "USPHCFMUSP-2021-CLM-35866",
+      "q_num": 19,
+      "official_gabarito": "B",
+      "statement_preview": "Qual das valvopatias indicadas a seguir é compatível, quando ocorrida "
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "7df1a011-1a14-4620-818c-b57b55fc3d7f",
+      "code": "USPHCFMUSP-2021-CLM-35867",
+      "q_num": 5,
+      "official_gabarito": "*",
+      "statement_preview": "Homem de 24 anos de idade teve um quadro psicótico de início agudo há "
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "8f555d75-9eaf-4d0c-ae75-bc81fa7d50d8",
+      "code": "USPHCFMUSP-2021-CLM-35868",
+      "q_num": 20,
+      "official_gabarito": "C",
+      "statement_preview": "Homem de 72 anos de idade está internado em unidade de terapia intensi"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "986b4345-4961-491c-83a5-07b89b00ee30",
+      "code": "USPHCFMUSP-2021-CLM-35869",
+      "q_num": 1,
+      "official_gabarito": "B",
+      "statement_preview": "Homem de 60 anos de idade procura a unidade básica de saúde queixando-"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "9c3b3aba-cb49-4aff-87c4-f8ed47dd2199",
+      "code": "USPHCFMUSP-2021-CLM-35870",
+      "q_num": 9,
+      "official_gabarito": "C",
+      "statement_preview": "Mulher de 20 anos de idade está internada em um hospital terciário por"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "a44edbb5-edfe-41e6-b50f-8ebcada505d2",
+      "code": "USPHCFMUSP-2021-CLM-35871",
+      "q_num": 8,
+      "official_gabarito": "D",
+      "statement_preview": "Médico de 57 anos de idade veio trazido pela esposa à unidade básica d"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "c2d4fe2c-dee5-4e0a-a01b-17694cf79838",
+      "code": "USPHCFMUSP-2021-CLM-35872",
+      "q_num": 17,
+      "official_gabarito": "D",
+      "statement_preview": "Homem de 24 anos de idade, previamente hígido, é levado ao Pronto-Soco"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "c7e05d1d-cc6a-462a-bc69-2842a38d7f47",
+      "code": "USPHCFMUSP-2021-CLM-35873",
+      "q_num": 4,
+      "official_gabarito": "D",
+      "statement_preview": "A embriaguez patológica caracteriza-se por:"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "cab07b95-3e07-4af2-9a0f-54ee2d90dbbe",
+      "code": "USPHCFMUSP-2021-CLM-35874",
+      "q_num": 2,
+      "official_gabarito": "A",
+      "statement_preview": "Mulher de 27 anos de idade está em acompanhamento em ambulatório de se"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "d2200a94-6c07-40ef-bb14-268d205675f6",
+      "code": "USPHCFMUSP-2021-CLM-35875",
+      "q_num": 20,
+      "official_gabarito": "C",
+      "statement_preview": "Homem de 72 anos de idade está internado em unidade de terapia intensi"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "e09a8c16-4d2d-4a25-8be0-5c2c0808aa20",
+      "code": "USPHCFMUSP-2021-CLM-35876",
+      "q_num": 18,
+      "official_gabarito": "A",
+      "statement_preview": "Mulher de 66 anos de idade, tem antecedentes de obesidade grau 3 e ost"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "eb4240f5-aaeb-4476-9763-dfda05b8c746",
+      "code": "USPHCFMUSP-2021-CLM-35877",
+      "q_num": 11,
+      "official_gabarito": "A",
+      "statement_preview": "Homem de 47 anos de idade foi resgatado pelos bombeiros após colisão a"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "f71dc866-07cd-4e9c-b2ee-d6a1c216fe41",
+      "code": "USPHCFMUSP-2021-CLM-35878",
+      "q_num": 13,
+      "official_gabarito": "A",
+      "statement_preview": "Mulher de 28 anos de idade vem à unidade básica de saúde para acompanh"
+    },
+    {
+      "file": "data\\clinica_medica_final_questions.json",
+      "id": "fbe3d814-8c8f-474e-996a-0206de01764c",
+      "code": "USPHCFMUSP-2021-CLM-35879",
+      "q_num": 10,
+      "official_gabarito": "D",
+      "statement_preview": "Mulher de 65 anos de idade é atendida no ambulatório de clínica médica"
+    },
+    {
+      "file": "data\\ginecologia_final_questions.json",
+      "id": "3581f30a-20c5-4a04-b2f5-f0fb16f380f0",
+      "code": "USPHCFMUSP-2021-GIN-12399",
+      "q_num": 99,
+      "official_gabarito": "A",
+      "statement_preview": "Paciente, 23 anos, encontra-se em acompanhamento do ciclo menstrual pa"
+    },
+    {
+      "file": "data\\ginecologia_final_questions.json",
+      "id": "42105cd0-beff-4437-b8b7-9b7e9c12f563",
+      "code": "USPHCFMUSP-2021-GIN-12400",
+      "q_num": 102,
+      "official_gabarito": "D",
+      "statement_preview": "Paciente de 64 anos de idade vem ao ambulatório trazendo resultado de "
+    },
+    {
+      "file": "data\\ginecologia_final_questions.json",
+      "id": "9a8b109c-68e2-497a-adaf-2a0849f3aa0d",
+      "code": "USPHCFMUSP-2021-GIN-12401",
+      "q_num": 108,
+      "official_gabarito": "A",
+      "statement_preview": "Paciente de 40 anos de idade refere corrimento vaginal sanguinolento e"
+    },
+    {
+      "file": "data\\ginecologia_final_questions.json",
+      "id": "ae604459-b72a-4320-bd4e-7c062122b2bc",
+      "code": "USPHCFMUSP-2021-GIN-12402",
+      "q_num": 98,
+      "official_gabarito": "D",
+      "statement_preview": "Paciente de 20 anos é nuligesta e tem ciclos menstruais regulares. Faz"
+    },
+    {
+      "file": "data\\ginecologia_final_questions.json",
+      "id": "b5a5fbfc-188b-4b8c-b6ca-5ec2ada0b53c",
+      "code": "USPHCFMUSP-2021-GIN-12403",
+      "q_num": 106,
+      "official_gabarito": "A",
+      "statement_preview": "Paciente de 25 anos de idade vem ao Pronto-Socorro por dor aguda abdom"
+    },
+    {
+      "file": "data\\ginecologia_final_questions.json",
+      "id": "c966337d-c0c9-4ff5-a0d7-547782e7a45d",
+      "code": "USPHCFMUSP-2021-GIN-12404",
+      "q_num": 107,
+      "official_gabarito": "D",
+      "statement_preview": "Paciente 23 anos de idade teve diagnóstico de tumoração anexial e foi "
+    },
+    {
+      "file": "data\\ginecologia_final_questions.json",
+      "id": "dbba2472-2652-4e53-9f6e-99d5e7e505c9",
+      "code": "USPHCFMUSP-2021-GIN-12405",
+      "q_num": 100,
+      "official_gabarito": "B",
+      "statement_preview": "O gráfico abaixo apresenta a evolução da taxa de detecção de uma infec"
+    },
+    {
+      "file": "data\\ginecologia_final_questions.json",
+      "id": "e9e36e96-3cdd-4783-a3e0-16bebf37af19",
+      "code": "USPHCFMUSP-2021-GIN-12406",
+      "q_num": 103,
+      "official_gabarito": "A",
+      "statement_preview": "Mulher de 17 anos de idade vem ao ambulatório desejando utilizar métod"
+    },
+    {
+      "file": "data\\ginecologia_final_questions.json",
+      "id": "eacc06ad-45eb-4a94-ade1-a4d940249cfb",
+      "code": "USPHCFMUSP-2021-GIN-12407",
+      "q_num": 104,
+      "official_gabarito": "C",
+      "statement_preview": "Paciente de 45 anos de idade apresenta sangramento menstrual excessivo"
+    },
+    {
+      "file": "data\\ginecologia_final_questions.json",
+      "id": "f0011f4c-ea3b-4183-af39-343a1f001cf7",
+      "code": "USPHCFMUSP-2021-GIN-12408",
+      "q_num": 101,
+      "official_gabarito": "C",
+      "statement_preview": "Paciente 9 anos é trazida pela mãe em virtude do aparecimento de nódul"
+    },
+    {
+      "file": "data\\ginecologia_final_questions.json",
+      "id": "f29becca-1af0-4615-ac61-ae48a1f36d6d",
+      "code": "USPHCFMUSP-2021-GIN-12409",
+      "q_num": 97,
+      "official_gabarito": "C",
+      "statement_preview": "Paciente de 34 anos refere ausência de menstruação há 3 meses. Antes d"
+    },
+    {
+      "file": "data\\ginecologia_final_questions.json",
+      "id": "fb44facc-873c-4ca9-af11-50686b469c19",
+      "code": "USPHCFMUSP-2021-GIN-12410",
+      "q_num": 105,
+      "official_gabarito": "B",
+      "statement_preview": "Paciente de 32 anos de idade apresenta mutação BRCA 1 e BRCA 2. É nuli"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "10cc5186-929d-4c3a-bd64-546ca859ee1c",
+      "code": "USPHCFMUSP-2021-MPS-20643",
+      "q_num": 40,
+      "official_gabarito": "C",
+      "statement_preview": "Uma paciente HIV-positiva está em tratamento e tem um plano de saúde o"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "295966c0-2be4-497e-8e3d-c67fb25a7ee5",
+      "code": "USPHCFMUSP-2021-MPS-20644",
+      "q_num": 46,
+      "official_gabarito": "D",
+      "statement_preview": "O agente comunitário traz para a reunião da equipe de Saúde da Família"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "2fccb3d5-e532-4219-aacf-7cfc73f6d9ba",
+      "code": "USPHCFMUSP-2021-MPS-20645",
+      "q_num": 35,
+      "official_gabarito": "A",
+      "statement_preview": "No verão 2014-2015, observou-se no Brasil a emergência de um agente in"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "30a23863-3ca3-4048-aabb-a0614c3af1e7",
+      "code": "USPHCFMUSP-2021-MPS-20646",
+      "q_num": 44,
+      "official_gabarito": "A",
+      "statement_preview": "De acordo com as Diretrizes Curriculares Nacionais para o curso de med"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "34a957bd-bcc1-4ca1-ad0b-3a18b9c84692",
+      "code": "USPHCFMUSP-2021-MPS-20647",
+      "q_num": 27,
+      "official_gabarito": "B",
+      "statement_preview": "Uma das preocupações dos órgãos públicos da Saúde no enfrentamento da "
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "4498fcaf-ab11-4783-91be-1f5f7a25383e",
+      "code": "USPHCFMUSP-2021-MPS-20648",
+      "q_num": 48,
+      "official_gabarito": "A",
+      "statement_preview": "Qual dos procedimentos abaixo reduz a ocorrência de viés de seleção em"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "46cd8ecc-f9ce-4dab-9fae-cecfde25c891",
+      "code": "USPHCFMUSP-2021-MPS-20649",
+      "q_num": 30,
+      "official_gabarito": "D",
+      "statement_preview": "Com base nos dados da tabela a seguir, assinale a alternativa que repr"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "51a45a10-7fab-4b1f-bfff-f7e8fa549e39",
+      "code": "USPHCFMUSP-2021-MPS-20650",
+      "q_num": 33,
+      "official_gabarito": "B",
+      "statement_preview": "Você está atendendo a consulta de pré-natal de uma gestante de baixo r"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "51ecff0c-3d56-4ef3-9c3f-09538e2af9ef",
+      "code": "USPHCFMUSP-2021-MPS-20651",
+      "q_num": 34,
+      "official_gabarito": "D",
+      "statement_preview": "Você, médico de uma Unidade Básica de Saúde, recebe uma paciente de 30"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "586d0696-7f6e-423d-8315-9fb32745d90e",
+      "code": "USPHCFMUSP-2021-MPS-20652",
+      "q_num": 28,
+      "official_gabarito": "A",
+      "statement_preview": "Um estudo de coorte foi realizado no Brasil com o objetivo de investig"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "637a2c3f-9158-4171-b6d6-3ca79e1ca979",
+      "code": "USPHCFMUSP-2021-MPS-20653",
+      "q_num": 31,
+      "official_gabarito": "D",
+      "statement_preview": "A tabela a seguir apresenta os resultados de um estudo caso-controle q"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "6db01fbe-955d-48c0-aac5-caff9e033e7f",
+      "code": "USPHCFMUSP-2021-MPS-20654",
+      "q_num": 38,
+      "official_gabarito": "B",
+      "statement_preview": "A Vigilância Sanitária (VS) é uma das atividades exercidas pelo Sistem"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "90628a0b-9065-431b-8f55-cc050cbc67f5",
+      "code": "USPHCFMUSP-2021-MPS-20655",
+      "q_num": 36,
+      "official_gabarito": "B",
+      "statement_preview": "Em relação à infecção pelo vírus da hepatite B, assinale a alternativa"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "91f37333-d57e-4816-b5f5-65a639a48d41",
+      "code": "USPHCFMUSP-2021-MPS-20656",
+      "q_num": 39,
+      "official_gabarito": "A",
+      "statement_preview": "Sobre o financiamento do sistema de saúde brasileiro, assinale a alter"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "b1ee69e5-ba9b-41d9-aaab-667f5bed108a",
+      "code": "USPHCFMUSP-2021-MPS-20657",
+      "q_num": 41,
+      "official_gabarito": "B",
+      "statement_preview": "Um médico de uma equipe de Saúde da Família, notando o aumento do núme"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "c03758c3-ba62-4264-86d8-d27d9193e0ab",
+      "code": "USPHCFMUSP-2021-MPS-20658",
+      "q_num": 32,
+      "official_gabarito": "C",
+      "statement_preview": "Uma médica de família atende muitos casos de dependência química na Un"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "c81a21c5-a75e-4b76-a545-d6fe692f4d92",
+      "code": "USPHCFMUSP-2021-MPS-20659",
+      "q_num": 47,
+      "official_gabarito": "C",
+      "statement_preview": "A linha de cuidado da pessoa com sobrepeso e obesidade prevê:"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "d26f6b91-fde5-4786-bbd4-ddb5a6e352cf",
+      "code": "USPHCFMUSP-2021-MPS-20660",
+      "q_num": 42,
+      "official_gabarito": "D",
+      "statement_preview": "Mulher de 65 anos de idade, oriunda de região rural e vivendo em São P"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "d28d7823-6c8f-4a70-ad42-f687c55d1088",
+      "code": "USPHCFMUSP-2021-MPS-20661",
+      "q_num": 29,
+      "official_gabarito": "A",
+      "statement_preview": "A seleção do grupo controle ideal em estudos de casos e controles sobr"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "d62a5926-5562-4e85-a3f9-0642c54664fb",
+      "code": "USPHCFMUSP-2021-MPS-20662",
+      "q_num": 45,
+      "official_gabarito": "*",
+      "statement_preview": "Assinale qual dos indicadores abaixo é utilizado para avaliar o desemp"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "de718303-97ce-46b1-8dde-7ac263b29c74",
+      "code": "USPHCFMUSP-2021-MPS-20663",
+      "q_num": 37,
+      "official_gabarito": "C",
+      "statement_preview": "Quanto à ocorrência de hanseníase no Brasil, é correto afirmar que:"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "e34893ca-9713-4182-91d0-7de8dd7743d0",
+      "code": "USPHCFMUSP-2021-MPS-20664",
+      "q_num": 25,
+      "official_gabarito": "D",
+      "statement_preview": "Considere que um determinado teste diagnóstico, de uma infecção, está "
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "e505f483-8ebe-46e0-b75d-d61e447fc751",
+      "code": "USPHCFMUSP-2021-MPS-20665",
+      "q_num": 43,
+      "official_gabarito": "B",
+      "statement_preview": "Para que o sistema de saúde brasileiro se torne mais resolutivo, é fun"
+    },
+    {
+      "file": "data\\medicina_preventiva_final_questions.json",
+      "id": "f82caaf5-32de-4c0c-a41c-29474f0c5a75",
+      "code": "USPHCFMUSP-2021-MPS-20666",
+      "q_num": 26,
+      "official_gabarito": "C",
+      "statement_preview": "Em 2017, foi conduzido na cidade de Kampala, Uganda, um estudo envolve"
+    },
+    {
+      "file": "data\\obstetricia_final_questions.json",
+      "id": "078d5221-0ab1-4385-a954-015de3ec5cd0",
+      "code": "USPHCFMUSP-2021-OBS-13204",
+      "q_num": 119,
+      "official_gabarito": "C",
+      "statement_preview": "Gestante com 34 anos de idade procura pronto atendimento obstétrico co"
+    },
+    {
+      "file": "data\\obstetricia_final_questions.json",
+      "id": "172d4175-637e-4007-b122-22eb3592a552",
+      "code": "USPHCFMUSP-2021-OBS-13205",
+      "q_num": 116,
+      "official_gabarito": "C",
+      "statement_preview": "Gestante de 23 anos de idade está em sua primeira gestação. Iniciou o "
+    },
+    {
+      "file": "data\\obstetricia_final_questions.json",
+      "id": "41317902-1cf4-444d-afe0-c865698bdcb8",
+      "code": "USPHCFMUSP-2021-OBS-13206",
+      "q_num": 115,
+      "official_gabarito": "*",
+      "statement_preview": "Paciente secundigesta está em acompanhamento pré-natal. Teve um parto "
+    },
+    {
+      "file": "data\\obstetricia_final_questions.json",
+      "id": "9321e1a9-4daf-4a0f-bc90-04ea34c35747",
+      "code": "USPHCFMUSP-2021-OBS-13207",
+      "q_num": 110,
+      "official_gabarito": "C",
+      "statement_preview": "Gestante de 25 anos de idade, primigesta, com 33 semanas e 3 dias de g"
+    },
+    {
+      "file": "data\\obstetricia_final_questions.json",
+      "id": "947c43b1-2c27-4922-b48d-29ad74261166",
+      "code": "USPHCFMUSP-2021-OBS-13208",
+      "q_num": 112,
+      "official_gabarito": "A",
+      "statement_preview": "Paciente hígida foi submetida a maturação de colo com misoprostol e po"
+    },
+    {
+      "file": "data\\obstetricia_final_questions.json",
+      "id": "95d9ff46-0f2f-4cc8-a403-afbd4bf9d769",
+      "code": "USPHCFMUSP-2021-OBS-13209",
+      "q_num": 117,
+      "official_gabarito": "A",
+      "statement_preview": "Com base nas novas orientações de cuidados no parto, o que se pode diz"
+    },
+    {
+      "file": "data\\obstetricia_final_questions.json",
+      "id": "a27569a2-4665-49b8-93b2-78bf4a1b67e6",
+      "code": "USPHCFMUSP-2021-OBS-13210",
+      "q_num": 109,
+      "official_gabarito": "B",
+      "statement_preview": "Gestante de 32 anos de idade, secundigesta e primípara, vem para a pri"
+    },
+    {
+      "file": "data\\obstetricia_final_questions.json",
+      "id": "b71b9989-726b-44c9-aca3-4fe31ef60512",
+      "code": "USPHCFMUSP-2021-OBS-13211",
+      "q_num": 120,
+      "official_gabarito": "B",
+      "statement_preview": "A enfermeira aciona o médico plantonista para avaliar a paciente JMB, "
+    },
+    {
+      "file": "data\\obstetricia_final_questions.json",
+      "id": "c5658c6b-188e-4f11-b617-3a326309e09f",
+      "code": "USPHCFMUSP-2021-OBS-13212",
+      "q_num": 118,
+      "official_gabarito": "D",
+      "statement_preview": "Gestante de 43 anos de idade, casada, está em consulta pré-natal após "
+    },
+    {
+      "file": "data\\obstetricia_final_questions.json",
+      "id": "d56bc5ab-9e7a-4ab6-ac05-c57b03d619fc",
+      "code": "USPHCFMUSP-2021-OBS-13213",
+      "q_num": 112,
+      "official_gabarito": "A",
+      "statement_preview": "Primigesta de 21 anos de idade, com 38 semanas de gestação, iniciou tr"
+    },
+    {
+      "file": "data\\obstetricia_final_questions.json",
+      "id": "dcbd2adf-4127-4473-b004-8c1fa276296a",
+      "code": "USPHCFMUSP-2021-OBS-13214",
+      "q_num": 112,
+      "official_gabarito": "A",
+      "statement_preview": "Primigesta de 21 anos de idade, com 38 semanas de gestação, iniciou tr"
+    },
+    {
+      "file": "data\\obstetricia_final_questions.json",
+      "id": "ee836f70-bec9-4fb4-bb9d-78d20b51919f",
+      "code": "USPHCFMUSP-2021-OBS-13215",
+      "q_num": 110,
+      "official_gabarito": "C",
+      "statement_preview": "Paciente hígida foi submetida a maturação de colo com misoprostol e po"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "0fe7da43-913a-46fb-a02d-5f34934c82f2",
+      "code": "USPHCFMUSP-2021-PED-22417",
+      "q_num": 67,
+      "official_gabarito": "C",
+      "statement_preview": "Recém-nascido do sexo masculino, nascido de termo (37 semanas e 4 dias"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "4b56477b-af18-4d1d-a652-7cf03918ee69",
+      "code": "USPHCFMUSP-2021-PED-22418",
+      "q_num": 62,
+      "official_gabarito": "D",
+      "statement_preview": "Menino, 11 anos e 6 meses de idade, está em consulta ambulatorial de r"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "59b43cb4-70a8-4189-b724-dd748162077a",
+      "code": "USPHCFMUSP-2021-PED-22419",
+      "q_num": 71,
+      "official_gabarito": "A",
+      "statement_preview": "Recém-nascido do sexo feminino, nascida de 33 semanas de idade gestaci"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "59f855ff-1b7a-43fb-90d7-3afd4cf1b2d6",
+      "code": "USPHCFMUSP-2021-PED-22420",
+      "q_num": 55,
+      "official_gabarito": "C",
+      "statement_preview": "Menino, 3 meses de idade, com antecedente de Síndrome de Down, em segu"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "635b069d-73ba-43c2-ae77-b0e737a5a124",
+      "code": "USPHCFMUSP-2021-PED-22421",
+      "q_num": 69,
+      "official_gabarito": "B",
+      "statement_preview": "Recém-nascido (RN) do sexo feminino, nascido de termo, com peso adequa"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "78750ebd-7c84-44fc-aeab-0ef2523638cd",
+      "code": "USPHCFMUSP-2021-PED-22422",
+      "q_num": 65,
+      "official_gabarito": "B",
+      "statement_preview": "Menina, 3 meses de idade, está em consulta de puericultura. No exame c"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "7a9e8a59-2003-4c0e-9466-09837fe74d56",
+      "code": "USPHCFMUSP-2021-PED-22423",
+      "q_num": 56,
+      "official_gabarito": "B",
+      "statement_preview": "Menino, 10 meses de idade, é trazido ao serviço de emergência pela mãe"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "7b3173a8-61eb-4452-9c92-08f5959b5c59",
+      "code": "USPHCFMUSP-2021-PED-22424",
+      "q_num": 61,
+      "official_gabarito": "C",
+      "statement_preview": "Menina, 9 meses de idade, nascida a termo, com peso adequado para idad"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "8ae081d5-7108-40bf-9d5b-e8f9a9f125e0",
+      "code": "USPHCFMUSP-2021-PED-22425",
+      "q_num": 59,
+      "official_gabarito": "D",
+      "statement_preview": "Menina, 8 anos de idade, há dois dias iniciou quadro de dor intensa no"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "8bd6f058-8766-4282-978d-97b86f2cf9a7",
+      "code": "USPHCFMUSP-2021-PED-22426",
+      "q_num": 72,
+      "official_gabarito": "B",
+      "statement_preview": "Lactente do sexo feminino, 18 meses de idade, previamente hígida, cheg"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "8c72bfb3-ff84-4fe8-9cd0-c89ee51d6473",
+      "code": "USPHCFMUSP-2021-PED-22427",
+      "q_num": 57,
+      "official_gabarito": "D",
+      "statement_preview": "Menina, 7 meses de idade, previamente hígida, está internada em enferm"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "8e082d7a-460a-4993-9623-58f6ba473551",
+      "code": "USPHCFMUSP-2021-PED-22428",
+      "q_num": 54,
+      "official_gabarito": "D",
+      "statement_preview": "Menino, 6 anos de idade, com diagnóstico prévio de asma, dá entrada em"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "a0a55a66-0f39-4e92-8507-3fd7f2797dce",
+      "code": "USPHCFMUSP-2021-PED-22429",
+      "q_num": 58,
+      "official_gabarito": "A",
+      "statement_preview": "Menino, 7 anos de idade, previamente hígido, está internado em enferma"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "a27c2709-cf65-4f78-b863-5083a8208b4a",
+      "code": "USPHCFMUSP-2021-PED-22430",
+      "q_num": 70,
+      "official_gabarito": "C",
+      "statement_preview": "Recém-nascido (RN) do sexo masculino, 5 dias de vida, está internado e"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "a3835a66-21f6-4ca7-b991-16793aeadc8b",
+      "code": "USPHCFMUSP-2021-PED-22431",
+      "q_num": 66,
+      "official_gabarito": "D",
+      "statement_preview": "Recém-nascido do sexo masculino, com 15 dias de vida, está em consulta"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "ab1cb3b2-725f-40f1-ab15-181b6c6fe0a1",
+      "code": "USPHCFMUSP-2021-PED-22432",
+      "q_num": 52,
+      "official_gabarito": "B",
+      "statement_preview": "Menina, 5 anos de idade, previamente hígida, há 5 dias começou a apres"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "cbf8abe4-94ed-4ca0-93ed-8d991720dd18",
+      "code": "USPHCFMUSP-2021-PED-22433",
+      "q_num": 50,
+      "official_gabarito": "C",
+      "statement_preview": "Menina, 1 ano e 7 meses de idade, previamente hígida, deu entrada no p"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "d9e37420-7ee0-47d6-a357-0101994c7235",
+      "code": "USPHCFMUSP-2021-PED-22434",
+      "q_num": 60,
+      "official_gabarito": "B",
+      "statement_preview": "Menina, 3 anos de idade e 92 cm de estatura, está realizando a primeir"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "dc28f55e-4f4f-4360-bc95-e417608640a8",
+      "code": "USPHCFMUSP-2021-PED-22435",
+      "q_num": 51,
+      "official_gabarito": "D",
+      "statement_preview": "Menino, 1 mês de vida, nascido de termo, sem intercorrências no parto "
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "e8ca5b77-8552-4e2c-ba87-12ff6a9872e4",
+      "code": "USPHCFMUSP-2021-PED-22436",
+      "q_num": 68,
+      "official_gabarito": "A",
+      "statement_preview": "Recém-nascido (RN) do sexo feminino, termo tem peso adequado para a id"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "f286e516-78eb-4169-a52a-03b0dc2734e1",
+      "code": "USPHCFMUSP-2021-PED-22437",
+      "q_num": 49,
+      "official_gabarito": "B",
+      "statement_preview": "Menina, 1 ano de idade, com antecedente de prematuridade, epilepsia, h"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "f475b473-2a40-48e6-a8dc-5d5652dc8b11",
+      "code": "USPHCFMUSP-2021-PED-22438",
+      "q_num": 63,
+      "official_gabarito": "C",
+      "statement_preview": "Menina, 9 anos de idade, vem à consulta de rotina. O pai está preocupa"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "f809d965-9889-43c1-a628-a474230b426d",
+      "code": "USPHCFMUSP-2021-PED-22439",
+      "q_num": 64,
+      "official_gabarito": "A",
+      "statement_preview": "Menino, 4 anos de idade, comparece na Unidade Básica de Saúde para con"
+    },
+    {
+      "file": "data\\pediatria_final_questions.json",
+      "id": "f96873fa-3892-4e1e-82b0-ddc16f0e29db",
+      "code": "USPHCFMUSP-2021-PED-22440",
+      "q_num": 53,
+      "official_gabarito": "A",
+      "statement_preview": "Menina, 8 anos de idade, portadora de anemia falciforme, foi admitida "
+    }
+  ],
+  "unmatched_count": 0,
+  "total_db": 120
+}

@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_34b3c6c5-3609-4be0-a376-07557f94a5c9",
+    "originalId": "34b3c6c5-3609-4be0-a376-07557f94a5c9",
+    "statement": "Paciente do sexo masculino, 10 anos, é atendido na unidade básica de saúde com queixa de urina avermelhada há dois dias; nega febre, disúria ou queixas abdominais. Refere ter apresentado episódio de faringoamigdalite há aproximadamente 2 semanas, tratado ambulatorialmente. Ao exame físico, apresenta edema palpebral discreto (1+/4+) e pressão arterial de 130 x 85 mmHg, compatível com valores acima do percentil 95 para idade. Foram solicitados exames complementares, e o paciente permanece em acompanhamento na unidade.\n\nCom base na hipótese diagnóstica mais provável, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de hipocomplementemia (C3 e CH50 reduzidos) é achado patognomônico dessa glomerulopatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A biópsia renal revela, classicamente, depósitos de IgA no mesângio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A hematúria observada nesses casos é predominantemente formada por hemácias isomórficas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hematúria microscópica persistente pode durar até 18 meses, sem representar critério de mau prognóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta o quadro clássico de Síndrome Nefrítica, caracterizada pela tríade hematúria (urina avermelhada), edema e hipertensão arterial. O antecedente de faringoamigdalite há 2 semanas (período de latência adequado de 1 a 3 semanas) direciona o diagnóstico para a Glomerulonefrite Difusa Aguda (GNDA) Pós-Estreptocócica.\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): A queda do complemento (hipocomplementemia), especificamente da fração C3 e do CH50, ocorre em mais de 90 por cento dos casos de GNDA pós-estreptocócica. No entanto, esse achado não é patognomônico, pois outras condições também cursam com hipocomplementemia, como o Lúpus Eritematoso Sistêmico, a Glomerulonefrite Membranoproliferativa e a Endocardite Infecciosa. O que é característico da GNDA é o retorno aos níveis normais de C3 em até 8 semanas.\n\nAlternativa B (Incorreta): A presença de depósitos de IgA no mesângio é o achado clássico da Nefropatia por IgA (Doença de Berger), que é o principal diagnóstico diferencial. Na GNDA, a biópsia (raramente necessária) revelaria depósitos granulares de IgG e C3, além das famosas corcovas ou humps (depósitos subepiteliais) na microscopia eletrônica.\n\nAlternativa C (Incorreta): Como o sangramento tem origem nos glomérulos, as hemácias sofrem deformação ao atravessar a membrana basal glomerular e os túbulos renais. Portanto, a hematúria é predominantemente dismórfica (presença de acantócitos). Hemácias isomórficas são encontradas em sangramentos do trato urinário baixo (ureteres, bexiga ou uretra).\n\nAlternativa D (Correta): Esta alternativa descreve corretamente a evolução temporal da doença. Na GNDA pós-estreptocócica, o edema e a hipertensão costumam regredir em 1 a 2 semanas; a hematúria macroscópica desaparece em algumas semanas, mas a hematúria microscópica pode persistir por um período prolongado, de 12 a 18 meses (ou até 2 anos em alguns casos), sem que isso indique falha no tratamento ou evolução para insuficiência renal crônica. É apenas um marcador de cicatrização glomerular lenta.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:21.167Z"
+  },
+  {
+    "id": "AJUDA_34c4fccb-5b4b-4830-a8ee-6719db5b5297",
+    "originalId": "34c4fccb-5b4b-4830-a8ee-6719db5b5297",
+    "statement": "O componente anatômico que determina a gravidade clínica e o grau de cianose na Tetralogia de Fallot é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de hipertrofia ventricular direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tamanho da comunicação interventricular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O grau de obstrução da via de saída do ventrículo direito (estenose pulmonar).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O grau de dextroposição da aorta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Tetralogia de Fallot é a cardiopatia congênita cianótica mais comum após o primeiro ano de vida. Ela é composta por quatro elementos anatômicos: comunicação interventricular (CIV), dextroposição da aorta (aorta em cavaleiro), obstrução da via de saída do ventrículo direito (estenose pulmonar) e hipertrofia do ventrículo direito. A compreensão da fisiopatologia dessa doença é fundamental para entender o que define a gravidade do quadro.\n\nAnalise das alternativas:\n\nAlternativa (a) Incorreta: A hipertrofia ventricular direita é uma consequência e não a causa da gravidade. Ela ocorre de forma secundária à sobrecarga de pressão imposta ao ventrículo direito, que precisa vencer a resistência da estenose pulmonar e a pressão sistêmica (uma vez que as pressões dos dois ventrículos se equalizam devido à CIV).\n\nAlternativa (b) Incorreta: Na Tetralogia de Fallot, a comunicação interventricular é tipicamente grande e não restritiva. Isso significa que ela permite o livre fluxo de sangue entre os ventrículos, equalizando as pressões. Por ser quase sempre grande, o tamanho da CIV não é o fator variável que determina se o paciente será mais ou menos cianótico.\n\nAlternativa (c) Correta: O grau de obstrução da via de saída do ventrículo direito (estenose pulmonar) é o principal determinante da direção do fluxo sanguíneo através da CIV e, consequentemente, da gravidade clínica. Se a estenose for leve, a resistência para o sangue ir aos pulmões é menor que a resistência sistêmica, gerando um shunt esquerda-direita (Fallot acianótico ou \"rosa\"). Se a estenose for grave, o sangue encontra muita dificuldade para chegar aos pulmões e acaba desviado para a aorta através da CIV (shunt direita-esquerda), resultando em hipofluxo pulmonar e cianose acentuada.\n\nAlternativa (d) Incorreta: A dextroposição da aorta é um componente anatômico clássico (a aorta \"cavalga\" o septo interventricular), mas o grau de desalinhamento da aorta não dita a dinâmica do fluxo tanto quanto a resistência imposta pela estenose pulmonar.\n\nEm resumo, é a variação na gravidade da estenose pulmonar (que pode ser infundibular, valvar ou ambas) que define o prognóstico e as manifestações clínicas imediatas da criança com Tetralogia de Fallot.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:21.167Z"
+  },
+  {
+    "id": "AJUDA_34cea8ee-ebf2-411a-b429-624383083643",
+    "originalId": "34cea8ee-ebf2-411a-b429-624383083643",
+    "statement": "Durante uma hernioplastia incisional com conteúdo intestinal no saco herniário, a cirurgiã principal, chefe da equipe, solicita um instrumento para apreensão delicada de tecido intestinal, sem causar trauma nem perfuração. A instrumentadora, aluna do internato, oferece uma pinça de Kocher, mas a cirurgiã recusa.\n\nQual das seguintes pinças é a mais apropriada para atender a solicitação da cirurgiã?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pinça de Allis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pinça de Rochester.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pinça de Babcock.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pinça anatômica com dentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o conhecimento sobre instrumentais cirúrgicos básicos, especificamente a diferenciação entre pinças traumáticas e atraumáticas para manipulação de alças intestinais.\n\nAlternativa a: Incorreta. A pinça de Allis possui pequenos dentes em sua extremidade que, ao serem fechados, exercem uma pressão traumática. Ela é indicada para a preensão de tecidos resistentes (como fáscias e aponeuroses) ou tecidos que serão extirpados, pois pode causar isquemia e laceração em tecidos delicados, como o intestino.\n\nAlternativa b: Incorreta. A pinça de Rochester é um instrumental de hemostasia pesada. Ela é robusta, possui ranhuras transversais em toda a sua extensão funcional e é considerada uma pinça de esmagamento. Seu uso em alças intestinais causaria lesão por esmagamento permanente da parede do órgão.\n\nAlternativa c: Correta. A pinça de Babcock é o instrumental padrão para a preensão delicada de vísceras ocas e tecidos moles. Sua extremidade é larga, arredondada e fenestrada, não possuindo dentes. Esse design permite envolver e segurar a alça intestinal, distribuindo a pressão de forma uniforme e sem perfurar a serosa, garantindo uma preensão firme, porém atraumática.\n\nAlternativa d: Incorreta. A pinça anatômica com dentes (também chamada de pinça com dente de rato) é utilizada para a preensão de tecidos firmes, como a pele e a aponeurose. O uso de qualquer instrumental com dentes em uma alça intestinal é contraindicado devido ao alto risco de perfuração e contaminação do campo cirúrgico.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:21.167Z"
+  },
+  {
+    "id": "AJUDA_34cedd29-a949-4ac7-934e-ce07eb7cf1e0",
+    "originalId": "34cedd29-a949-4ac7-934e-ce07eb7cf1e0",
+    "statement": "Uma paciente de 78 anos, com histórico de Diabetes Mellitus tipo 2 (HbA1c atual 7,0%), Hipertensão Arterial Sistêmica, Insuficiência Cardíaca com Fração de Ejeção Reduzida (FE 35%) classe funcional II (NYHA) e Doença Renal Crônica estágio 3a (TFG 50 ml/min/1,73m²), comparece para consulta de seguimento. Ela faz uso de metformina 850 mg 2x/dia, insulina glargina 30 UI ao deitar, losartana 50 mg/dia, furosemida 40 mg/dia e espironolactona 12,5 mg/dia. A paciente relata que vem se sentindo mais fraca e cansada há duas semanas, com piora progressiva. Ao exame, encontra-se hipotensa (PA 95/60 mmHg) e com elevação de creatinina para 2,1 mg/dl (valor basal de 1,5 mg/dl). Considerando o cenário de multimorbidade e a piora clínica, qual é a intervenção farmacológica mais adequada e segura como PRIMEIRO passo no manejo desta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender a losartana para melhorar a perfusão renal e a pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumentar a dose da furosemida para melhorar o estado volêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspender a espironolactona devido ao risco de síndrome cardiorrenal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Reduzir a dose de insulina glargina para evitar hipoglicemias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trocar a metformina por uma gliptina por risco de acidose lática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve uma paciente idosa com múltiplas comorbidades (HFrEF, DM2, DRC) que apresenta um quadro de lesão renal aguda (LRA) — definida pelo aumento da creatinina de 1,5 para 2,1 mg/dL (aumento > 0,3 mg/dL) — associada a hipotensão arterial (95/60 mmHg). Este cenário caracteriza uma síndrome cardiorrenal, onde a disfunção de um órgão (coração ou rim) agrava a do outro.\n\nVeja a análise das alternativas:\n\na) Incorreta. Embora a suspensão de um BRA (losartana) possa ser considerada em casos de queda acentuada da função renal ou hipercalemia grave, a prioridade de suspensão em diretrizes de segurança (como as regras de \"sick day\") costuma recair sobre os antagonistas da aldosterona. Além disso, a manutenção da losartana, se a pressão permitir, é fundamental para o prognóstico da insuficiência cardíaca.\n\nb) Incorreta. Aumentar a dose de um diurético de alça (furosemida) em uma paciente que já está hipotensa e apresentando piora da função renal (LRA pré-renal ou por hipofluxo) agravaria a depleção de volume, reduzindo ainda mais a perfusão renal e piorando a lesão renal aguda.\n\nc) Correta. Os antagonistas do receptor mineralocorticoide (espironolactona) devem ser suspensos imediatamente se houver piora significativa da função renal (especialmente se a creatinina subir acima de 2,0 - 2,5 mg/dL) ou se houver risco de hipercalemia. Na vigência de uma lesão renal aguda, o risco de a paciente desenvolver hipercalemia fatal é muito alto, tornando a suspensão da espironolactona a medida de segurança mais urgente e adequada como primeiro passo.\n\nd) Incorreta. Embora o controle glicêmico deva ser monitorado em pacientes com DRC, a redução da glargina não resolve o problema agudo de hipotensão e disfunção renal. A fadiga relatada é mais provavelmente decorrente do baixo débito cardíaco ou da uremia/LRA do que de hipoglicemia neste contexto.\n\ne) Incorreta. A metformina deve ser suspensa ou ter sua dose ajustada quando a taxa de filtração glomerular (TFG) cai abaixo de 30 mL/min devido ao risco de acidose lática. Com uma creatinina de 2,1 mg/dL em uma mulher de 78 anos, a TFG estimada provavelmente está próxima ou abaixo desse limite. No entanto, a suspensão da espironolactona é considerada prioritária para evitar complicações eletrolíticas imediatas (arritmias por hipercalemia) no manejo da síndrome cardiorrenal aguda. Além disso, a troca por gliptina não é a conduta de \"primeiro passo\" para estabilização clínica.",
+    "exam": "UFRB",
+    "year": 2026,
+    "banca": "UFRB",
+    "uf": "BA",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35674e2a8fdd600c4528186d032722b2534d565f8659f6d532a9977d76ec6035.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2f3a30ed0fd307a6a4fadc82fa84bd78995407514592af81b25948bee1e5d79f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:21.167Z"
+  },
+  {
+    "id": "AJUDA_34dc3b20-5b42-4e0b-b443-d4d94851c8c3",
+    "originalId": "34dc3b20-5b42-4e0b-b443-d4d94851c8c3",
+    "statement": "Um teste para detecção de estenose carotídea utiliza níveis séricos de uma proteína inflamatória como marcador. Com o ponto de corte de 10 ng/mL, a sensibilidade é 95% e a especificidade, 60%. Ao elevar o ponto de corte para 20 ng/mL, espera-se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento de sensibilidade e aumento de falsos positivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução de sensibilidade e aumento de especificidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Redução de especificidade e aumento de sensibilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução tanto de sensibilidade quanto de especificidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Manutenção dos parâmetros, já que o ponto de corte não altera essas métricas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para entender essa questão, é fundamental compreender a relação inversa entre sensibilidade e especificidade em testes diagnósticos que utilizam variáveis contínuas (como níveis de proteínas).\n\nAo elevar o ponto de corte de 10 ng/mL para 20 ng/mL, você está tornando o critério para considerar um exame como positivo mais rigoroso ou restrito.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O aumento do ponto de corte torna o teste menos sensível, pois indivíduos doentes que possuem níveis da proteína entre 10 e 20 ng/mL passarão a ser classificados como negativos (falsos negativos). Além disso, um ponto de corte mais alto reduz os falsos positivos, e não os aumenta.\n\nAlternativa (b) Correta: Ao subir o nível de exigência para 20 ng/mL, o teste se torna mais específico, ou seja, ele terá maior capacidade de identificar corretamente os indivíduos saudáveis, diminuindo os falsos positivos. Por outro lado, ele perderá sensibilidade, pois deixará de detectar doentes que têm a proteína presente em níveis menores que o novo corte.\n\nAlternativa (c) Incorreta: Esta alternativa descreve o que aconteceria se o ponto de corte fosse reduzido (por exemplo, de 10 ng/mL para 5 ng/mL). Reduzir o corte aumenta a sensibilidade e reduz a especificidade.\n\nAlternativa (d) Incorreta: Sensibilidade e especificidade funcionam como uma balança em um mesmo teste. Quando você altera o ponto de corte, se uma métrica aumenta, a outra obrigatoriamente diminui. Elas não se reduzem simultaneamente nesse cenário.\n\nAlternativa (e) Incorreta: Os parâmetros de sensibilidade e especificidade são intrínsecos ao teste para um determinado ponto de corte. Se o ponto de corte é alterado, as métricas de desempenho do teste mudam necessariamente.\n\nResumo Didático:\nPonto de corte mais ALTO: Teste mais exigente/rigoroso. Aumenta a Especificidade (menos falsos positivos) e diminui a Sensibilidade (mais falsos negativos).\nPonto de corte mais BAIXO: Teste mais \"liberal\". Aumenta a Sensibilidade (menos falsos negativos) e diminui a Especificidade (mais falsos positivos).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:21.167Z"
+  },
+  {
+    "id": "AJUDA_34e72fe6-9fb6-4e66-9088-f033fa4ac467",
+    "originalId": "34e72fe6-9fb6-4e66-9088-f033fa4ac467",
+    "statement": "Homem de 58 anos, que era residente em território adscrito a uma Unidade de Saúde da Família, vinha sendo acompanhado, há alguns meses, por queixa de dor abdominal recorrente, constipação crônica, anemia normocítica persistente, parestesias e alterações da memória. Era casado, sem filhos, e trabalhava há mais de 20 anos em sua própria oficina de reciclagem de bateria automotiva. Em determinada ocasião, procurou atendimento em uma Unidade Básica de Saúde devido à exacerbação dos sintomas, com forte dor abdominal. O exame físico feito no momento revelou confusão mental e dor difusa à palpação do abdome. O paciente foi, então, encaminhado para o pronto-socorro; porém, nas primeiras 24 horas da internação, evoluiu com insuficiência renal, convulsão, coma e óbito, devido a uma provável intoxicação por chumbo.\n\nQual é o papel da atenção primária em saúde com relação à vigilância do caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Registrar no Sistema de Informação de Agravos de Notificação e comunicar à Vigilância em Saúde do Trabalhador.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Registrar no Sistema de Informação de Mortalidade e comunicar à Vigilância em Saúde do Trabalhador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Registrar no Sistema de Informação de Agravos de Notificação e no Sistema de Informação de Mortalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Registrar no Sistema de Informação de Agravos de Notificação e acionar a Vigilância Sanitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Resposta correta: alternativa A\n\nO caso descreve um homem com mais de 20 anos de exposição ocupacional ao chumbo (reciclagem de baterias automotivas). Ele apresenta o quadro clássico de saturnismo: cólica abdominal (cólica saturnina), constipação, anemia, neuropatia periférica (parestesias), alterações cognitivas e, na fase grave, encefalopatia com convulsão e coma, além de insuficiência renal. Trata-se, portanto, de uma intoxicação exógena relacionada ao trabalho.\n\nDois conceitos resolvem a questão:\n\n1) A intoxicação exógena integra a Lista Nacional de Notificação Compulsória (Portaria de Consolidação GM/MS nº 4/2017). Ela é notificada no SINAN pela ficha de intoxicação exógena, que tem campo específico para indicar a relação com o trabalho. Os agravos relacionados ao trabalho exigem, além da notificação, investigação do ambiente e do processo de trabalho. Essa atribuição é da Vigilância em Saúde do Trabalhador (VISAT), com apoio do CEREST. Ela busca identificar a fonte de exposição, outros expostos (o próprio ambiente da oficina e a família, já que ele era casado) e medidas de intervenção.\n\n2) A Atenção Primária, como responsável pelo território e pelo acompanhamento longitudinal do paciente, deve notificar o caso e acionar a VISAT. A notificação é dever de qualquer profissional de saúde que identifique o caso suspeito, e a Rede Nacional de Atenção Integral à Saúde do Trabalhador (RENAST) prevê a APS como porta de entrada dessas ações.\n\nAnálise das alternativas:\n\na) Correta. Notificar no SINAN (intoxicação exógena relacionada ao trabalho) e comunicar a VISAT é exatamente o papel da APS. Assim se desencadeiam a investigação do ambiente de trabalho e a busca de outros expostos.\n\nb) Incorreta. O registro no SIM depende da Declaração de Óbito. Ela é emitida pelo médico que atendeu o paciente no hospital ou, por se tratar de óbito suspeito de intoxicação (causa externa), pelo IML. Não cabe à APS esse registro. Além disso, a alternativa omite a notificação no SINAN, que é obrigatória.\n\nc) Incorreta. Também atribui à APS o registro no SIM, o que não é sua função. E deixa de comunicar a VISAT, etapa essencial por se tratar de agravo relacionado ao trabalho.\n\nd) Incorreta. A notificação no SINAN está certa, mas o setor acionado não é o adequado. A Vigilância Sanitária atua no controle de produtos, serviços e estabelecimentos de interesse à saúde. A investigação da relação saúde-trabalho, do processo produtivo e dos trabalhadores expostos é competência específica da Vigilância em Saúde do Trabalhador, que pode, se necessário, articular-se com a VISA.\n\nPonto-chave: diante de um agravo relacionado ao trabalho de notificação compulsória, a APS notifica no SINAN e comunica a Vigilância em Saúde do Trabalhador (VISAT/CEREST). O registro no SIM é feito a partir da Declaração de Óbito emitida no local do óbito ou pelo IML.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Atenção Primária à Saúde",
+      "Intoxicações Exógenas",
+      "Sistemas de Informação em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:21.167Z"
+  },
+  {
+    "id": "AJUDA_34e9748b-17ce-4476-9fc9-42ba3992fdfd",
+    "originalId": "34e9748b-17ce-4476-9fc9-42ba3992fdfd",
+    "statement": "O sarampo é uma doença viral potencialmente grave, que pode evoluir com agravamento do quadro e sequelas. \nExistem diversos estudos que relacionam a morbidade e mortalidade do sarampo à deficiência de vitamina:",
+    "options": [
+      {
+        "id": "A",
+        "text": "C",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "E",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "D",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O sarampo é uma doença exantemática febril aguda que promove uma rápida depleção dos estoques corporais de vitamina A. Essa vitamina, também conhecida como retinol, desempenha um papel vital na manutenção da integridade das superfícies epiteliais e na regulação da resposta imunológica. A deficiência de vitamina A é um fator de risco bem estabelecido para o desenvolvimento de formas graves de sarampo, estando associada a complicações oculares (como a ceratomalácia e a xeroftalmia), respiratórias e intestinais, além de um aumento significativo na mortalidade infantil.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A vitamina C é essencial para a cicatrização e defesa imunológica geral, mas não existe um protocolo clínico ou evidência epidemiológica que vincule especificamente sua deficiência ao aumento da mortalidade pelo vírus do sarampo.\n\nAlternativa B: Incorreta. A vitamina E possui funções antioxidantes importantes, mas sua carência não é o principal determinante biológico para o agravamento das manifestações clínicas ou do prognóstico do sarampo.\n\nAlternativa C: Incorreta. A vitamina D tem papel relevante na modulação imunológica, porém, no contexto clínico do sarampo, a vitamina A permanece como o micronutriente crítico cujos níveis baixos estão diretamente ligados ao óbito e a sequelas graves.\n\nAlternativa D: Correta. A Organização Mundial da Saúde (OMS) e o Ministério da Saúde recomendam a administração de vitamina A a todas as crianças com sarampo, independentemente do estado nutricional prévio. A suplementação reduz a duração da febre, a gravidade da diarreia e a incidência de pneumonia, diminuindo drasticamente a letalidade da doença. O esquema geralmente envolve duas doses administradas em dias consecutivos.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Deficiências Vitamínicas e Profilaxias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:21.167Z"
+  },
+  {
+    "id": "AJUDA_34ec0410-c81d-41c7-a9fe-8387b097c1bf",
+    "originalId": "34ec0410-c81d-41c7-a9fe-8387b097c1bf",
+    "statement": "Um paciente apresenta-se ao ambulatório com relato de estar recebendo mensagens codificadas através da televisão e do rádio, que o orientam sobre conspirações contra sua vida. Refere que essas mensagens são exclusivamente direcionadas a ele, sendo capaz de descodificá-las apenas através de sua inteligência especial. O paciente mantém crítica relativa à natureza da vivência, reconhecendo que outras pessoas não conseguem captar tais mensagens. Identifique o fenômeno psicopatológico que melhor caracteriza essa apresentação clínica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prosopagnosia, no qual o reconhecimento de faces humanas está prejudicado ou abolido e há incapacidade de reconhecer membros específicos de determinada classe semântica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Delírio sistematizado de perseguição com conteúdo místico-religioso, no qual o paciente apresenta estrutura lógica complexa mas sem nenhuma crítica sobre a vivência delirante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pseudoalucinação ou alucinose, caracterizada pela percepção do paciente da experiência alucinatória como estranha a sua pessoa, o sujeito é adequadamente crítico, reconhecendo seu caráter patológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Amnésia dissociativa, ou psicogênica, há perda de elementos mnêmicos seletivos. O indivíduo esquece, por exemplo, uma fase ou um evento de sua vida, mas consegue lembrar de tudo que ocorreu “ao seu redor”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Alucinação extracampina multimodal combinada com delírio não sistematizado, mantendo ausência completa de crítica e integração das vivências psicopatológicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um paciente com alterações da sensopercepção e do pensamento, mas com um detalhe fundamental para o diagnóstico psicopatológico: a preservação da crítica. O paciente reconhece que a experiência é estranha e que outras pessoas não captam tais mensagens.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A prosopagnosia é uma agnosia visual específica caracterizada pela incapacidade de reconhecer rostos previamente conhecidos ou de aprender novos rostos, apesar de a acuidade visual e o estado cognitivo global estarem preservados. Não possui relação com a percepção de mensagens ou ideias de conspiração.\n\nAlternativa b) Incorreta. O delírio é, por definição, uma crença falsa e inabalável que foge à realidade cultural do indivíduo e, crucialmente, é mantida com convicção absoluta, sem qualquer crítica. Como o enunciado afirma que o paciente mantém crítica relativa sobre a vivência, o fenômeno não pode ser classificado como um delírio propriamente dito.\n\nAlternativa c) Correta. A alucinose e a pseudoalucinação são termos que, em diversos contextos da psicopatologia clínica e em provas de residência, referem-se a fenômenos perceptivos nos quais o indivíduo mantém a capacidade de criticar a experiência. O sujeito percebe o fenômeno, mas consegue julgá-lo como algo estranho, patológico ou irreal, reconhecendo que se trata de uma alteração de sua própria mente ou percepção, e não de um fato compartilhado pela realidade externa.\n\nAlternativa d) Incorreta. A amnésia dissociativa é um transtorno da memória caracterizado pela incapacidade de recordar informações pessoais importantes, geralmente de natureza traumática ou estressante. O quadro apresentado pelo paciente é de natureza sensoperceptiva e interpretativa, não envolvendo perda de memória.\n\nAlternativa e) Incorreta. A alucinação extracampina é aquela percebida fora do campo sensorial fisiológico (por exemplo, ver alguém atrás de si quando os olhos estão voltados para a frente ou ouvir vozes vindas de outra cidade). Além disso, a alternativa afirma que haveria ausência completa de crítica, o que contradiz diretamente o enunciado da questão.\n\nPortanto, o elemento central para a resolução da questão é a presença de crítica por parte do paciente, o que direciona o diagnóstico para a alucinose ou pseudoalucinação.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Psicopatologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:21.167Z"
+  },
+  {
+    "id": "AJUDA_34f3e2d3-dc13-4812-acec-558042703ac7",
+    "originalId": "34f3e2d3-dc13-4812-acec-558042703ac7",
+    "statement": "Primigesta, 33 anos de idade, teve parto normal há 30 dias, sem intercorrências. Comparece na consulta solicitando anticoncepção. Antecedentes Pessoais: heterozigose para o Fator V de Leyden e endometriose profunda. Não apresenta antecedentes de trombose venosa profunda. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Métodos de barreira",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anticoncepcional hormonal combinado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DIU de cobre",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "DIU hormonal",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar as duas condições principais da paciente: a trombofilia hereditária (Fator V de Leiden em heterozigose) e a endometriose profunda, além do período de pós-parto (30 dias).\n\nAnálise do Fator V de Leiden e Contracepção:\nA presença de uma mutação trombogênica conhecida, como o Fator V de Leiden, mesmo em heterozigose e sem histórico de trombose, classifica os métodos que contêm estrogênio como Categoria 4 da Organização Mundial da Saúde (risco inaceitável à saúde). Isso ocorre pelo risco aumentado de fenômenos tromboembólicos. Métodos apenas com progestagênio ou métodos não hormonais são seguros (geralmente Categoria 2 ou 1).\n\nAnálise da Endometriose e Contracepção:\nA paciente possui endometriose profunda. O tratamento de escolha para o controle dos sintomas e da progressão da doença envolve a supressão hormonal, preferencialmente com progestagênios. O uso de métodos que aumentem o fluxo menstrual ou a cólica é contraproducente.\n\nAnálise das Alternativas:\n\na) Métodos de barreira: Embora sejam seguros do ponto de vista vascular (não oferecem risco de trombose), apresentam taxas de falha (índice de Pearl) mais altas em comparação aos métodos de longa duração. Além disso, não oferecem nenhum benefício terapêutico para a endometriose profunda da paciente.\n\nb) Anticoncepcional hormonal combinado: Incorreta. Como mencionado, o estrogênio é formalmente contraindicado para portadoras de mutações trombogênicas como o Fator V de Leiden (Categoria 4 da OMS), devido ao alto risco de trombose venosa profunda (TVP) e embolia pulmonar.\n\nc) DIU de cobre: Incorreta. Apesar de ser um método seguro para quem tem trombofilia (não possui hormônios), o DIU de cobre pode aumentar o volume do fluxo menstrual e a intensidade das cólicas (dismenorreia) em algumas mulheres. Para uma paciente com endometriose profunda, esse efeito colateral é indesejado, e o método não trata a patologia de base.\n\nd) DIU hormonal (Sistema Intrauterino de Levonorgestrel): Correta. É a melhor opção por dois motivos principais: primeiro, por conter apenas progestagênio, é seguro para pacientes com trombofilia (Categoria 2 da OMS - os benefícios superam os riscos). Segundo, o levonorgestrel liberado localmente promove a atrofia endometrial e é uma excelente terapia para o controle da dor e dos sintomas associados à endometriose profunda, sendo superior aos métodos não hormonais para esta paciente específica. O fato de ela estar com 30 dias de pós-parto permite a inserção segura do dispositivo (após 4 semanas do parto).",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Endometriose",
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:21.167Z"
+  },
+  {
+    "id": "AJUDA_34fbc9f3-7d94-421e-9a86-b79c07dc2a22",
+    "originalId": "34fbc9f3-7d94-421e-9a86-b79c07dc2a22",
+    "statement": "Uma criança de 8 anos é levada ao consultório pediátrico com queixas de hematuria e proteinúria leves. Os pais relatam que a criança teve uma infecção respiratória relacionada à faringite há cerca de duas semanas. No exame físico, a criança apresenta-se em bom estado geral, sem edema ou hipertensão arterial. Exames laboratoriais revelam a presença de hemácias dismórficas e cilindros eritrócitos nas amostras de urina. Qual é a doença renal mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nefrite lúpica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome nefrótica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença de Berger (nefropatia por IgA)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Glomerulonefrite pós-estreptocócica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA criança apresenta um quadro de hematúria glomerular, evidenciada pela presença de hemácias dismórficas e cilindros eritrocitários (ou hemáticos) no exame de urina. O antecedente de infecção de vias aéreas superiores há duas semanas sugere um gatilho infeccioso para uma glomerulopatia.\n\nAlternativa a: Incorreta. A nefrite lúpica é uma complicação do Lúpus Eritematoso Sistêmico (LES). Embora possa causar hematúria e proteinúria, o LES é uma doença multissistêmica que geralmente apresenta outros sintomas, como febre, artrite, rash cutâneo e alterações hematológicas. Além disso, é menos comum como causa primária de hematúria isolada em uma criança de 8 anos sem outras queixas sistêmicas.\n\nAlternativa b: Incorreta. A síndrome nefrótica define-se por proteinúria maciça (níveis nefróticos), hipoalbuminemia e edema generalizado. O enunciado especifica que a criança apresenta proteinúria leve e não tem edema, o que afasta essa hipótese. O achado de cilindros hemáticos aponta para uma síndrome nefrítica (inflamação do glomérulo), e não nefrótica.\n\nAlternativa c: Correta. A Doença de Berger, ou nefropatia por IgA, é a causa mais frequente de glomerulopatia primária no mundo. Ela se caracteriza por episódios de hematúria (que pode ser macroscópica ou microscópica) frequentemente desencadeados por infecções respiratórias. Embora o intervalo de duas semanas possa confundir com a GNPE, a nefropatia por IgA é o diagnóstico mais provável quando o paciente apresenta hematúria glomerular isolada, em bom estado geral e sem os sinais clássicos de sobrecarga de volume, como hipertensão arterial e edema.\n\nAlternativa d: Incorreta. A glomerulonefrite pós-estreptocócica (GNPE) ocorre tipicamente de 1 a 3 semanas após uma faringite estreptocócica. Contudo, na GNPE, o quadro clínico costuma ser mais exuberante, manifestando-se como uma síndrome nefrítica clássica, que inclui obrigatoriamente ou frequentemente edema e hipertensão arterial. A ausência desses sinais e o bom estado geral da criança tornam a Doença de Berger uma alternativa mais adequada para o quadro clínico de hematúria leve e isolada descrito.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:26:21.167Z"
+  }
+]

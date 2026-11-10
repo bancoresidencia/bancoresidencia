@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_dce28fb9-c057-4049-aa1d-37b18a37f373",
+    "originalId": "dce28fb9-c057-4049-aa1d-37b18a37f373",
+    "statement": "Recentemente, foi publicado em periódicos científicos, com acesso para a comunidade médica, o escore Phoenix para o diagnóstico de sepse. Em relação às recomendações desse escore, atribua V (verdadeiro) ou F (falso) às afirmativas a seguir.\n( ) Definição de SEPSE como disfunção orgânica potencialmente fatal, no contexto de uma infecção suspeita ou confirmada, operacionalizada por meio de uma pontuação no Escore de Sepse de Phoenix de, pelo menos, 2 pontos, quantificados em 4 categorias funcionais.\n( ) O diagnóstico de choque séptico é estabelecido em crianças com sepse que apresentam, pelo menos, 2 pontos no componente cardiovascular do Escore de Sepse de Phoenix, ou seja, hipotensão grave para a idade, lactato sanguíneo > 45 mg/dL (ou maior ou igual a 5 mmol/L), ou necessidade de medicação vasoativa.\n( ) A pontuação pode ser calculada na ausência de algumas variáveis, por exemplo, mesmo que o nível de lactato não seja medido e medicamentos vasoativos não sejam usados, uma pontuação cardiovascular ainda pode ser determinada usando a pressão arterial.\n( ) A disfunção respiratória de 1 ponto pode ser avaliada em qualquer paciente que receba oxigênio, cânula nasal de alto fluxo, pressão positiva não invasiva ou suporte respiratório invasivo (VPM), e inclui uma relação PaO2:FIO2 inferior a 200 e uma relação SpO2:FIO2 inferior a 220 em crianças que não estão recebendo VPM.\n( ) A pontuação da Escala de Coma de Glasgow mede o nível de consciência com base em resposta verbal, ocular e motora (variação de 3 a 15, com uma pontuação mais alta indicando melhor função neurológica), no entanto, esse subescore de disfunção neurológica não foi validado pragmaticamente em pacientes sedados.\nAssinale a alternativa que contém, de cima para baixo, a sequência correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, F, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, F, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "V, F, F, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, V, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "F, V, F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, precisamos focar na publicação de 2024 do JAMA: \"The Phoenix Criteria for Sepsis and Septic Shock in Children\", que atualizou as definições de sepse pediátrica após quase 20 anos dos critérios de Goldstein (2005).\n\nAnálise das Afirmativas:\n\n(V) Primeira afirmativa: O escore Phoenix define sepse como a presença de disfunção orgânica potencialmente fatal em crianças com infecção confirmada ou suspeita. O critério operacional é uma pontuação igual ou superior a 2 pontos no escore Phoenix. Diferente do SOFA adulto, o Phoenix avalia 4 sistemas: Respiratório, Cardiovascular, Coagulação e Neurológico. Esta afirmativa está perfeita.\n\n(V) Segunda afirmativa (Atenção: Houve um erro no gabarito oficial indicado pela banca ou na transcrição, mas vamos analisar tecnicamente): Segundo os critérios publicados, o Choque Séptico é definido como sepse com disfunção cardiovascular (pelo menos 2 pontos no sistema cardiovascular do Phoenix). Isso inclui: uso de pelo menos um vasoativo, lactato maior ou igual a 5 mmol/L (ou 45 mg/dL) ou hipotensão arterial grave para a idade. Portanto, tecnicamente, esta afirmação é Verdadeira. Nota: Se a alternativa correta é a (b), a banca considerou esta afirmativa como Falsa, o que gera uma inconsistência com a publicação original do JAMA 2024. Muitas vezes, bancas tentam confundir com os valores de conversão de lactato ou a terminologia \"pelo menos 2 pontos\".\n\n(V) Terceira afirmativa: O escore foi desenhado para ser pragmático e aplicável em cenários com poucos recursos. Assim, se uma variável não está disponível (como o lactato), ela é pontuada como zero ou avaliada por outros parâmetros disponíveis no mesmo sistema. No sistema cardiovascular, se você não tem o lactato, mas tem a pressão arterial ou uso de drogas vasoativas, você consegue pontuar a disfunção.\n\n(V) Quarta afirmativa: No critério respiratório, 1 ponto é atribuído se houver qualquer suporte respiratório (incluindo oxigênio suplementar simples, cânula de alto fluxo ou VNI). A relação PaO2/FiO2 < 400 ou SpO2/FiO2 < 292 são marcos. O texto cita PaO2:FiO2 < 200 e SpO2:FiO2 < 220; esses valores, dentro do componente respiratório, configuram uma disfunção mais grave (2 pontos). Se a afirmativa diz que o suporte em si já gera pontuação, está correto. Contudo, em algumas interpretações rigorosas de prova, se os valores numéricos não batem exatamente com a pontuação de 1 ponto (que seria <400 e <292), a banca pode considerar falsa.\n\n(F) Quinta afirmativa: O escore Phoenix incluiu, sim, a Escala de Coma de Glasgow (ECG) ou a pupila reativa como critérios neurológicos. A afirmativa está incorreta ao dizer que o subescore não foi validado ou que não pode ser usado de forma pragmática; os pesquisadores validaram o escore globalmente, incluindo pacientes sedados através de técnicas de imputação de dados ou considerando o estado pré-sedação, focando na aplicabilidade clínica real.\n\nConclusão do Gabarito B (V, F, V, V, F):\nPara que a alternativa (b) seja a resposta, a banca considerou que a segunda frase é FALSA (provavelmente por algum detalhe técnico de redação ou valor) e que a quarta frase é VERDADEIRA. É uma questão complexa que exige a leitura literal da tabela publicada na força-tarefa \"Society of Critical Care Medicine\" de 2024.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Sepse",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:59.837Z"
+  },
+  {
+    "id": "AJUDA_dce3bf05-65db-42dc-ac85-0be8c163c749",
+    "originalId": "dce3bf05-65db-42dc-ac85-0be8c163c749",
+    "statement": "Uma mulher de 18 anos de idade, sem antecedentes pessoais e familiares relevantes, dirigiu‑se ao pronto‑socorro de um hospital municipal com náusea, vômitos, diarreia líquida sem produtos patológicos, mialgia, sensação febril e astenia. Esse quadro teve início dois dias antes da admissão, com piora no dia atual, com sete episódios de fezes líquidas nas últimas 24 horas. A paciente relatou inapetência e dificuldade para ingerir líquidos e comprimidos. Ao exame físico: afebril; regular estado geral; levemente desidratada; bem perfundida e com extremidades quentes; abdome flácido; um pouco de dor à palpação profunda difusamente; sem sinais de peritonite; e sinais vitais marcando PA de 110 x 75 mmHg e FC de 87 bpm. Somente no quinto dia de internação, a paciente evoluiu com melhora clínica significativa. A equipe médica realizou alta hospitalar com ciprofloxacino via oral para completar sete dias em domicílio. Após duas semanas, a paciente retornou devido a um novo episódio diarreico, que teve início no dia anterior, com picos febris aferidos de 37,9°C. A mãe da paciente estava extremamente nervosa e exigiu uma tomografia de abdome. Os médicos do pronto-socorro, então, solicitaram uma tomografia computadorizada de abdome, que evidenciou sinais de processo inflamatório, predominando no intestino grosso. Com base nessa situação hipotética, assinale a conduta adequada, considerando esse quadro clínico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitação de colonoscopia devido à suspeita de retocolite ulcerativa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitação de colonoscopia devido à suspeita de doença de Crohn",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitação de pesquisa para C. Difficile e uso de metronidazol empírico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitação de pesquisa para C. Difficile e uso de vancomicina oral empírica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Solicitação de pesquisa para C. Difficile e uso de vancomicina endovenosa empírica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente em questão apresenta um quadro de diarreia aguda que surge duas semanas após o uso de antibioticoterapia de amplo espectro (ciprofloxacino). O uso prévio de antibióticos é o principal fator de risco para a infecção por Clostridioides difficile (antigamente chamado de Clostridium difficile). O quadro clínico atual, com febre e sinais de colite na tomografia computadorizada (processo inflamatório no intestino grosso), reforça essa suspeita diagnóstica. Diante de uma diarreia associada ao uso de antibióticos com sinais inflamatórios, a prioridade é investigar a presença do C. difficile e iniciar o tratamento adequado.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA alternativa (d) está correta pois a principal suspeita diagnóstica é a Colite Pseudomembranosa causada pelo C. difficile, desencadeada pelo uso prévio de ciprofloxacino. De acordo com as diretrizes atuais (como as da IDSA), o tratamento de primeira escolha para o primeiro episódio de infecção por C. difficile, ou mesmo para quadros clínicos muito sugestivos enquanto se aguarda o resultado dos exames, é a vancomicina por via oral. A via oral é obrigatória porque a vancomicina não é absorvida pelo trato gastrointestinal, atingindo altas concentrações diretamente no sítio da infecção (lúmen colônico).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a) e (b): Embora a Retocolite Ulcerativa e a Doença de Crohn sejam diagnósticos diferenciais para diarreia crônica ou recorrente em pacientes jovens, o contexto de uso recente de antibióticos torna a causa infecciosa (C. difficile) muito mais provável neste momento. A colonoscopia não é o exame inicial de escolha em um quadro agudo infeccioso suspeito, devido ao risco de complicações como a perfuração, devendo ser reservada caso a pesquisa de toxinas seja negativa ou o quadro não responda ao tratamento.\n\nAlternativa (c): O metronidazol já foi a droga de escolha para casos leves a moderados no passado. No entanto, estudos recentes demonstraram a superioridade da vancomicina oral em termos de taxa de cura e prevenção de recorrências. Atualmente, o metronidazol só é recomendado se a vancomicina ou a fidaxomicina não estiverem disponíveis.\n\nAlternativa (e): A vancomicina endovenosa é ineficaz para o tratamento da colite por C. difficile. A droga administrada por via venosa não atinge níveis terapêuticos dentro do intestino grosso para combater a bactéria. Portanto, a via deve ser obrigatoriamente oral (ou por sonda/enema em casos específicos de íleo paralítico).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Antibióticos"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:59.838Z"
+  },
+  {
+    "id": "AJUDA_dcf1b2ca-5442-48db-a284-400c3d51b44b",
+    "originalId": "dcf1b2ca-5442-48db-a284-400c3d51b44b",
+    "statement": "Adolescente, 15 anos de idade, primigesta, comparece ao pré-natal com 34 semanas de gravidez. Está bem, sem queixas. Refere boa movimentação fetal. Ao exame clínico, bom estado geral, corada, normotensa, abdome gravídico, altura uterina 26 cm, BCF presente e rítmico. Em ultrassonografia realizada, o peso fetal estimado foi de 1.870 g, percentil 7, feto normotônico, movimentos corpóreos e respiratórios presentes, índice de líquido amniótico 9 cm. Dopplervelocimetria de artéria umbilical e de artéria cerebral média, conforme imagens a seguir.\n\nNa ausência de trabalho de parto, a programação obstétrica recomendada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indução de parto imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Parto cesárea imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Parto com 37 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Parto com 40 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico\n\nA paciente apresenta uma gestação de 34 semanas com um feto cujo peso estimado está no percentil 7. Por definição, fetos com peso abaixo do percentil 10 para a idade gestacional são classificados como pequenos para a idade gestacional (PIG). O desafio principal é diferenciar o feto PIG constitucional (saudável, mas pequeno) daquele com restrição de crescimento fetal (RCF) por insuficiência placentária.\n\nPara essa diferenciação e definição de conduta, analisamos os exames complementares:\n\n1. Índice de Líquido Amniótico (ILA): O valor de 9 cm é considerado normal, o que afasta a suspeita de sofrimento fetal crônico por redistribuição de fluxo (que causaria oligodrâmnio).\n\n2. Doppler de Artéria Umbilical: A imagem mostra um índice de pulsatilidade (PI) de 1,05. Para 34 semanas, este valor está dentro da normalidade (abaixo do percentil 95), indicando que a resistência placentária não está aumentada.\n\n3. Doppler de Artéria Cerebral Média (ACM): A imagem mostra um PI de 2,16. Este é um valor alto, o que é o padrão normal para a ACM, indicando que o feto não apresenta o fenômeno de centralização (mecanismo de preservação cerebral no qual a resistência da ACM cai para aumentar o fluxo de sangue ao cérebro).\n\nConclusão diagnóstica: Trata-se de um feto pequeno para a idade gestacional (PIG) com Doppler normal e líquido amniótico normal. Nessas condições, o feto é classificado como tendo baixo risco de complicações perinatais imediatas, sendo provavelmente um feto constitucionalmente pequeno.\n\nAnálise das Alternativas\n\na) Incorreta. A indução imediata com 34 semanas seria indicada apenas em casos de interrupção necessária devido à gravidade do quadro (como pré-eclâmpsia grave ou Doppler com alteração importante), o que não é o caso. A prematuridade traria riscos desnecessários ao recém-nascido.\n\nb) Incorreta. Não há indicação de parto cesárea imediato. O feto apresenta boa vitalidade (movimentação presente, BCF rítmico, Doppler normal e normotônico). Além disso, a via de parto em casos de restrição deve ser decidida com base nas condições obstétricas e na tolerância fetal ao trabalho de parto.\n\nc) Incorreta. O parto com 37 semanas (termo precoce) costuma ser indicado para casos de restrição de crescimento fetal com Doppler alterado (como alteração de artérias uterinas ou peso abaixo do percentil 3, dependendo do protocolo adotado). Para um feto PIG com Doppler das artérias umbilical e cerebral média normais e ILA normal, não há benefício comprovado na antecipação para 37 semanas.\n\nd) Correta. De acordo com os protocolos mais recentes de obstetrícia (como o da FIGO e os consensos de medicina fetal), o feto PIG (peso entre os percentis 3 e 10) que mantém Doppler de artéria umbilical, cerebral média e relação cérebro-placentária normais, além de volume de líquido amniótico normal, pode aguardar o termo, com recomendação de interrupção por volta de 40 semanas se o parto não ocorrer espontaneamente. O seguimento deve ser feito com vigilância fetal periódica (Doppler e perfil biofísico).",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Vitalidade Fetal",
+      "Restrição de Crescimento Fetal e Óbito Fetal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/b949f7e0bbc2c9dd8ee5317bf375384fd237c0fbde50492f526474cff33df0af.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_dcf1b2ca-5442-48db-a284-400c3d51b44b_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/95527b5a47c19d92c81d5b68d73da9c3e1680eff9a617e4fb59755a0a14695b5.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_dcf1b2ca-5442-48db-a284-400c3d51b44b_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:00.855Z"
+  },
+  {
+    "id": "AJUDA_dcf68d0b-c97c-4cc8-820f-b7ad8cca9a81",
+    "originalId": "dcf68d0b-c97c-4cc8-820f-b7ad8cca9a81",
+    "statement": "O transporte de imunoglobulinas e albumina pelo trofoblasto faz-se por meio de",
+    "options": [
+      {
+        "id": "A",
+        "text": "difusão simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "difusão facilitada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "osmose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "transporte passivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "pinocitose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O tema central da questão é o transporte de macromoléculas através da barreira placentária, especificamente pelo trofoblasto.\n\nAlternativa a) Incorreta. A difusão simples é o movimento de moléculas pequenas, gases (como O2 e CO2) e substâncias lipossolúveis diretamente através da bicamada lipídica da membrana celular, sem gasto de energia e a favor de um gradiente de concentração. Proteínas como imunoglobulinas e albumina são grandes demais para passar por esse processo.\n\nAlternativa b) Incorreta. A difusão facilitada também ocorre a favor de um gradiente de concentração, mas depende de proteínas carreadoras ou canais de membrana, como ocorre com o transporte de glicose. As dimensões das imunoglobulinas e da albumina impedem que utilizem esses tipos de transportadores de membrana.\n\nAlternativa c) Incorreta. A osmose é o movimento específico do solvente (água) através de uma membrana semipermeável, do meio menos concentrado para o mais concentrado. Não é um mecanismo de transporte para solutos volumosos ou proteínas.\n\nAlternativa d) Incorreta. O transporte passivo é uma categoria que engloba a difusão simples, a difusão facilitada e a osmose. Como nenhum desses mecanismos é capaz de transportar macromoléculas como a IgG e a albumina, a alternativa é considerada incorreta no contexto da fisiologia placentária.\n\nAlternativa e) Correta. A pinocitose é um tipo de endocitose que permite à célula internalizar líquidos e grandes moléculas dissolvidas no fluido extracelular por meio da formação de vesículas. No trofoblasto, a albumina e as imunoglobulinas (especialmente a IgG) são capturadas pela membrana materna, englobadas em vesículas e transportadas através do citoplasma (processo conhecido como transcitose) para serem liberadas na circulação fetal. No caso da imunoglobulina G, esse processo é altamente eficiente porque é mediado por receptores específicos (receptores Fc neonatais - FcRn) que selecionam a IgG para o transporte vesicular.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Modificações Fisiológicas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:00.855Z"
+  },
+  {
+    "id": "AJUDA_dd095e2e-da3f-417e-90f4-1742c42843d5",
+    "originalId": "dd095e2e-da3f-417e-90f4-1742c42843d5",
+    "statement": "Recém-nascido a termo, masculino, Apgar 9/9, peso, comprimento e perímetro cefálico adequados para idade gestacional. Ultrassom morfológico com polidrâminio. Logo após o nascimento, evoluiu com salivação excessiva. Realizada aspiração da secreção com melhora da saturação, sem necessidade de oxigenioterapia. Ausência de sinais de desconforto respiratório; murmúrio vesicular presente bilateralmente com roncos de transmissão difusos; abdome escavado e extremidades bem perfundidas. Realizada passagem de sonda orogástrica com dificuldade na progressão após a introdução de 10 cm. Solicitada radiografia com contraste iodado (imagem a seguir).\nCom base no quadro clínico, trata-se de qual tipo de atresia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esofágica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Gástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Duodenal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Resposta correta: alternativa A (atresia esofágica).\n\nO quadro é clássico de atresia de esôfago:\n\n- Polidrâmnio na gestação, porque o feto não consegue deglutir o líquido amniótico.\n- Salivação excessiva logo após o nascimento. A saliva se acumula no coto esofágico proximal, que termina em fundo cego, e pode ser aspirada, o que explica a queda de saturação que melhora com aspiração e os roncos de transmissão.\n- Dificuldade de progressão da sonda orogástrica por volta de 10 cm da arcada. É o sinal diagnóstico mais importante à beira do leito, pois no RN a termo a sonda deveria avançar cerca de 17 a 20 cm até o estômago.\n\nNa radiografia, o contraste preenche uma bolsa em fundo cego no terço superior do tórax (projeção aproximada de T2-T3), sem passagem para o esôfago distal ou estômago. Isso confirma o coto esofágico proximal atrésico.\n\nO abdome escavado, com pouco ou nenhum gás intestinal, sugere ausência de fístula traqueoesofágica distal. Esse padrão corresponde à atresia isolada (tipo A de Gross), que é menos comum. O tipo mais frequente (tipo C, cerca de 85%) tem fístula distal e cursa com gás no abdome, às vezes até distensão.\n\nNa prática, o uso de contraste iodado é desaconselhado pelo risco de aspiração e pneumonite química. Em geral, basta uma radiografia com sonda radiopaca enrolada no coto ou a injeção de pequena quantidade de ar. Se houver contraste, deve ser em mínimo volume e aspirado logo em seguida.\n\nTambém é obrigatório investigar a associação VACTERL: anomalias vertebrais, anorretais, cardíacas, traqueoesofágicas, renais e de membros. O ecocardiograma é essencial antes da cirurgia.\n\nAnálise das alternativas:\n\nA) Esofágica – CORRETA. Reúne polidrâmnio, sialorreia precoce, sonda que não progride além de cerca de 10 cm e coto cego contrastado no tórax superior.\n\nB) Gástrica – INCORRETA. É raríssima (atresia pilórica). Causa vômitos não biliosos e distensão de andar superior, com sinal da \"bolha única\" gástrica. A sonda chegaria normalmente ao estômago, e não haveria sialorreia nem bolsa cega torácica.\n\nC) Duodenal – INCORRETA. Também cursa com polidrâmnio, mas manifesta-se com vômitos, geralmente biliosos, e distensão epigástrica. A radiografia mostra o sinal da \"dupla bolha\" e a sonda progride até o estômago, drenando grande volume. Associa-se à síndrome de Down.\n\nD) Intestinal – INCORRETA. Atresias jejunoileais causam vômitos biliosos, distensão abdominal (e não abdome escavado), múltiplos níveis hidroaéreos e falha na eliminação de mecônio. A passagem da sonda seria normal.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f8c3743106f93de778e4bafb444fe1d6e74156dfcef776bee2a2f273c9d6a5bc.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_dd095e2e-da3f-417e-90f4-1742c42843d5_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:01.178Z"
+  },
+  {
+    "id": "AJUDA_dd26d4b1-4b27-471d-a940-022bfbdb3a6f",
+    "originalId": "dd26d4b1-4b27-471d-a940-022bfbdb3a6f",
+    "statement": "Mulher de 42 anos é levada pelo irmão à Unidade de Pronto Atendimento (UPA) com fala alterada, lentificação, tontura e sonolência. Ela admite ter ingerido 30 comprimidos de clonazepam 2 miligramas há 20 minutos. Paciente evolui com hipotensão, rebaixamento do nível de consciência, sendo caracterizado coma e indicada a ventilação mecânica.\nQual medicação é indicada nessa situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "N-acetilcisteína.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Flumazenil.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Naloxona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Atropina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta um quadro clássico de intoxicação aguda por benzodiazepínicos (clonazepam). Os sinais principais são a depressão do nível de consciência (sonolência, lentificação, coma) e a depressão respiratória que exigiu suporte ventilatório. O foco da questão é identificar o antídoto específico para essa classe de fármacos.\n\nAlternativa A - Incorreta. A N-acetilcisteína é o antídoto indicado para a intoxicação por paracetamol (acetaminofeno). Ela atua restaurando os níveis de glutationa hepática, prevenindo a necrose do fígado causada pelo metabólito tóxico NAPQI. Não possui ação sobre os receptores do sistema nervoso central afetados pelo clonazepam.\n\nAlternativa B - Correta. O flumazenil é um antagonista competitivo de alta afinidade que atua nos receptores de benzodiazepínicos no sistema nervoso central. Ele é o medicamento de escolha para reverter a sedação profunda e a depressão respiratória induzidas por fármacos dessa classe, como o clonazepam. Na prática médica, seu uso deve ser cuidadoso em pacientes que fazem uso crônico de benzodiazepínicos, devido ao risco de desencadear síndrome de abstinência e crises convulsivas.\n\nAlternativa C - Incorreta. A naloxona é o antídoto utilizado para reverter os efeitos de opioides (como morfina, fentanil e heroína). Embora a intoxicação por opioides também cause coma e depressão respiratória, ela é tipicamente acompanhada de miose (pupilas puntiformes), característica que não foi descrita no caso clínico apresentado.\n\nAlternativa D - Incorreta. A atropina é um agente anticolinérgico. Sua principal indicação em toxicologia é no tratamento da síndrome colinérgica, comumente causada por inseticidas (organofosforados e carbamatos), que cursa com bradicardia, miose e excesso de secreções (sialorreia e broncorreia). Não tem utilidade na reversão de sedativos benzodiazepínicos.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Intoxicações Exógenas"
+    ],
+    "difficulty": 41.358293966692464,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:01.178Z"
+  },
+  {
+    "id": "AJUDA_dd275872-2400-44cb-af0e-c84c17daa32a",
+    "originalId": "dd275872-2400-44cb-af0e-c84c17daa32a",
+    "statement": "O estudo Hiperglicemia e Desfechos Adversos na Gestação (Hyperglycemia and Adverse Pregnancy Outcomes – HAPO) fundamentou os novos critérios diagnósticos da Associação Internacional dos Grupos de Estudo em Diabetes e Gravidez (International Association of the Diabetes and Pregnancy Study Groups – IADPSG), adotados por diversas diretrizes. A fisiopatologia da macrossomia fetal no diabetes mellitus gestacional (DMG) envolve mecanismos metabólicos específicos. Assinale a alternativa correta acerca da relação entre a glicemia materna e o crescimento fetal excessivo, conforme a Hipótese de Pedersen modificada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O DMG causa insuficiência placentária crônica desde o segundo trimestre, o que paradoxalmente leva à macrossomia devido ao mecanismo de \"poupança\" fetal, onde o feto desvia o fluxo sanguíneo para órgãos nobres e tecido adiposo em resposta à hipóxia leve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A insulina materna atravessa a barreira placentária livremente em casos de diabetes mellitus gestacional (DMG) descompensado, somando-se à insulina fetal e exercendo efeito direto nos receptores do fator de crescimento semelhante à insulina tipo 1 (IGF-1), o que promove o gigantismo fetal generalizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A glicose materna atravessa a placenta por transporte ativo, saturando os receptores fetais; o excesso de glicose é convertido diretamente em tecido ósseo, causando um crescimento simétrico de todos os segmentos corporais (macrossomia harmônica) sem aumento desproporcional de gordura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hiperglicemia materna difunde-se facilitadamente pela placenta, causando hiperglicemia fetal; o pâncreas fetal responde com hiperplasia das células beta e hiperinsulinemia; a insulina fetal age como hormônio de crescimento (fator anabólico), estimulando a lipogênese e o acúmulo de gordura visceral e nos ombros (macrossomia disarmônica).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "JUSTIFICATIVA DA ALTERNATIVA CORRETA (D):\n\nA alternativa descreve com precisão a Hipótese de Pedersen Modificada, que é o modelo fisiopatológico aceito para explicar o crescimento fetal excessivo no Diabetes Mellitus Gestacional (DMG). O mecanismo segue uma sequência lógica: a hiperglicemia materna gera um gradiente de concentração que faz com que a glicose atravesse a placenta por difusão facilitada. Uma vez na circulação fetal, essa glicose estimula o pâncreas do feto a produzir insulina em excesso (hiperinsulinemia). Como a insulina é o principal hormônio anabólico do período fetal, ela promove o crescimento de tecidos e o armazenamento de energia na forma de gordura e glicogênio. Esse crescimento é caracteristicamente desarmônico, com acúmulo preferencial de gordura nos ombros e abdome, o que aumenta o risco de distocia de espáduas durante o parto.\n\nANÁLISE DAS ALTERNATIVAS INCORRETAS:\n\nAlternativa (a): Está incorreta porque a insuficiência placentária crônica leva à Restrição de Crescimento Fetal (RCF) e não à macrossomia. O mecanismo de desvio de fluxo para órgãos nobres (centralização fetal) é uma resposta à hipóxia e à baixa oferta de nutrientes, cenário oposto ao encontrado no diabetes gestacional descompensado, onde há abundância de substrato energético.\n\nAlternativa (b): Está incorreta por afirmar que a insulina materna atravessa a placenta. Este é um erro clássico em provas de obstetrícia. A insulina é uma molécula de grande peso molecular e não cruza a barreira placentária. O feto é o único responsável pela produção da insulina que circula em seu próprio organismo; a hiperinsulinemia fetal é uma resposta direta à hiperglicemia que vem da mãe.\n\nAlternativa (c): Está incorreta por dois motivos técnicos. Primeiro, o transporte de glicose através da placenta não é ativo (com gasto de ATP), mas sim por difusão facilitada através de transportadores específicos (família GLUT). Segundo, a macrossomia no diabetes é tipicamente desarmônica, com aumento do tecido adiposo e visceromegalia, e não um crescimento ósseo simétrico. O perímetro abdominal fetal costuma ser proporcionalmente maior que o perímetro cefálico nesses casos.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:01.179Z"
+  },
+  {
+    "id": "AJUDA_dd2e83ab-f708-4aed-8a06-2752fed3db6a",
+    "originalId": "dd2e83ab-f708-4aed-8a06-2752fed3db6a",
+    "statement": "Paciente de 23 anos procurou a UPA com história de dispneia que se associou à dor intensa no hemitórax esquerdo enquanto estava jogando futebol com os seus amigos. Paciente longilíneo, francamente taquidispneico. Acianótico. Apresenta murmúrio vesicular abolido à esquerda, Frêmito toracovocal reduzido à esquerda e som timpânico à percussão do hemitórax esquerdo. Qual a principal hipótese diagnóstica para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumotórax.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Derrame pleural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Embolia pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico: O paciente apresenta um perfil clássico de pneumotórax espontâneo primário: homem, jovem, biotipo longilíneo (alto e magro) e início súbito de dor torácica e dispneia durante esforço físico. A semiologia é a chave para a confirmação diagnóstica neste cenário.\n\nAlternativa a: Incorreta. A pneumonia é um processo infeccioso que causa consolidação do tecido pulmonar. No exame físico da pneumonia, o frêmito toracovocal estaria aumentado (pois o som se propaga melhor em meios sólidos) e a percussão revelaria macicez ou submacicez, e não timpanismo. Além disso, o quadro costuma ser acompanhado de febre e tosse produtiva.\n\nAlternativa b: Correta. O pneumotórax caracteriza-se pela presença de ar no espaço pleural, o que leva ao colapso do pulmão. Os achados descritos compõem a síndrome de pneumotórax: 1) Murmúrio vesicular abolido (o ar não entra no pulmão colapsado); 2) Frêmito toracovocal reduzido ou abolido (o ar no espaço pleural atua como isolante, impedindo a transmissão da vibração das cordas vocais até a parede torácica); 3) Som timpânico à percussão (reflexo do excesso de ar no espaço pleural).\n\nAlternativa c: Incorreta. O derrame pleural é o acúmulo de líquido no espaço pleural. Assim como no pneumotórax, o murmúrio vesicular e o frêmito toracovocal estão reduzidos ou abolidos. No entanto, a percussão é o ponto de diferenciação fundamental: no derrame pleural, o som é maciço (presença de líquido), enquanto no pneumotórax o som é timpânico (presença de ar).\n\nAlternativa d: Incorreta. A embolia pulmonar (TEP) manifesta-se com dispneia e dor torácica súbitas, mas o exame físico do tórax costuma ser normal ou apresentar apenas taquipneia e taquicardia. O TEP não altera a sonoridade da percussão nem costuma abolir o murmúrio vesicular de forma tão franca e localizada como descrito no caso.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:01.179Z"
+  },
+  {
+    "id": "AJUDA_dd2f1e8d-9e42-4532-9e75-01b52d389723",
+    "originalId": "dd2f1e8d-9e42-4532-9e75-01b52d389723",
+    "statement": "A Atenção Primária à Saúde (APS) se desenvolve a partir de princípios nucleares e derivados que foram cunhados coletivamente e formalizados na Declaração de Alma-Ata de 1978. Assinale a alternativa que contenha os princípios DERIVADOS da APS:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Integralidade, longitudinalidade e competência cultural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acesso, orientação comunitária e competência cultural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Foco na família, orientação comunitária e competência cultural.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Coordenação do cuidado, competência cultural e integralidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender os atributos da Atenção Primária à Saúde (APS), utilizamos a sistematização proposta por Barbara Starfield, que é a referência mundial e brasileira sobre o tema. Ela divide os atributos em dois grupos: Essenciais e Derivados.\n\nOs Atributos Essenciais são:\n1. Acesso de Primeiro Contato: a unidade de saúde deve ser a porta de entrada preferencial e acessível para cada nova necessidade de saúde.\n2. Longitudinalidade: existência de um aporte regular de cuidados pela equipe e seu uso consistente ao longo do tempo, gerando vínculo.\n3. Integralidade (ou Abrangência): a unidade deve oferecer todos os serviços necessários para a população (prevenção, cura, reabilitação) e reconhecer os problemas biológicos, psicológicos e sociais.\n4. Coordenação do Cuidado: a capacidade de integrar o cuidado e as informações do paciente, mesmo quando este é atendido em outros pontos da rede de saúde.\n\nOs Atributos Derivados são:\n1. Orientação Familiar (Foco na Família): considera a família como o sujeito da atenção, entendendo o contexto familiar e suas dinâmicas no processo saúde-doença.\n2. Orientação Comunitária: reconhecimento das necessidades de saúde da comunidade por meio do contato direto e de dados epidemiológicos, visando o planejamento das ações.\n3. Competência Cultural: a capacidade da equipe de se adaptar e respeitar as características culturais, crenças e linguagens da população atendida para facilitar a relação terapêutica.\n\nAnálise das alternativas:\n\na) Incorreta. Integralidade e longitudinalidade são atributos essenciais da APS. Apenas a competência cultural é um atributo derivado.\n\nb) Incorreta. O acesso (primeiro contato) é um atributo essencial. Orientação comunitária e competência cultural são, de fato, derivadas, mas a presença do acesso invalida a alternativa como resposta exclusiva para derivados.\n\nc) Correta. Esta alternativa agrupa corretamente os três componentes que compõem os atributos derivados da APS: Foco na família, orientação comunitária e competência cultural.\n\nd) Incorreta. Coordenação do cuidado e integralidade são classificadas como atributos essenciais. Apenas a competência cultural pertence ao grupo dos derivados.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:01.179Z"
+  },
+  {
+    "id": "AJUDA_dd2f51ea-323f-493d-870a-360caa7e4294",
+    "originalId": "dd2f51ea-323f-493d-870a-360caa7e4294",
+    "statement": "Um homem de 42 anos foi admitido em uma Unidade de Terapia Intensiva (UTI) com história de provável intoxicação exógena. Ele havia sido encontrado desacordado em sua residência, com sialorreia intensa e broncoespasmo. Exame físico: FC 38 bpm; PA 116 x 64 mmHg; SatO2 83% em ar ambiente; escala de coma de Glasgow 3 e glicemia capilar 70 mg/dL. Optou-se por intubação orotraqueal e instalação de ventilação mecânica invasiva. Na UTI, o paciente apresentava: pupilas puntiformes; roncos e sibilos inspiratórios e expiratórios à ausculta pulmonar; secreção clara e abundante à aspiração de vias aéreas; grande quantidade de resíduo gástrico à sondagem gástrica; boa diurese por sonda vesical de demora e ausência de febre. Foi realizada lavagem gástrica, utilizando-se carvão ativado por 24 horas, e iniciou-se suporte com atropina intravenosa, em bomba de infusão contínua.\nQual foi o provável agente da intoxicação desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Organofosforado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Benzodiazepínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sulfonilureia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antidepressivo tricíclico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro é uma síndrome colinérgica, causada por inibição da acetilcolinesterase com acúmulo de acetilcolina nas sinapses muscarínicas, nicotínicas e no sistema nervoso central.\n\nAchados do caso compatíveis com essa síndrome:\n\nEfeitos muscarínicos, resumidos pelo mnemônico DUMBELS (diarreia, urina, miose, broncorreia/broncoespasmo/bradicardia, êmese, lacrimejamento, sialorreia):\n- sialorreia intensa;\n- broncoespasmo, com roncos e sibilos difusos;\n- broncorreia, com secreção clara e abundante à aspiração;\n- bradicardia acentuada (FC 38 bpm);\n- miose puntiforme;\n- boa diurese;\n- grande resíduo gástrico, refletindo hipersecreção gastrointestinal.\n\nEfeitos centrais:\n- rebaixamento grave do nível de consciência (Glasgow 3).\n\nTratamento coerente:\n- atropina em infusão contínua, que é o antídoto dos efeitos muscarínicos e é titulada até a secagem das secreções brônquicas, não pela frequência cardíaca ou pelas pupilas;\n- descontaminação gastrointestinal;\n- pralidoxima (oxima), que poderia ser associada.\n\nAnálise das alternativas:\n\na) Organofosforado – CORRETA. Os organofosforados (inseticidas, \"chumbinho\" junto com os carbamatos) inibem a acetilcolinesterase e produzem exatamente esse quadro: miose, sialorreia, broncorreia, broncoespasmo, bradicardia e coma. A resposta à atropina em altas doses confirma o raciocínio.\n\nb) Benzodiazepínico – INCORRETA. Causa sedação e coma, com sinais vitais geralmente preservados ou depressão respiratória leve. Não provoca sialorreia, broncorreia, broncoespasmo nem bradicardia importante. As pupilas costumam ser normais ou pouco alteradas. O antídoto é o flumazenil, não a atropina.\n\nc) Sulfonilureia – INCORRETA. O rebaixamento de consciência na intoxicação por sulfonilureia decorre de hipoglicemia grave e prolongada. Neste caso a glicemia era de 70 mg/dL, o que não justifica Glasgow 3. Também não há síndrome colinérgica. O tratamento envolve glicose e octreotide.\n\nd) Antidepressivo tricíclico – INCORRETA. Produz síndrome anticolinérgica, o oposto do caso: midríase, pele e mucosas secas, taquicardia, retenção urinária, íleo, hipertermia e convulsões. Somam-se a cardiotoxicidade por bloqueio dos canais de sódio (QRS alargado, arritmias) e a hipotensão. A atropina estaria contraindicada, e o tratamento é o bicarbonato de sódio.\n\nConclusão: a presença de miose, hipersecreção (sialorreia e broncorreia), broncoespasmo, bradicardia e coma, tratada com atropina, caracteriza a síndrome colinérgica por inibidor da acetilcolinesterase. O provável agente é um organofosforado.\n\nGabarito: letra A.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Intoxicações Exógenas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:00:01.179Z"
+  }
+]

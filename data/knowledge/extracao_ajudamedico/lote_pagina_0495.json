@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_8a6b6add-5c8b-4768-a493-e290ad4e1274",
+    "originalId": "8a6b6add-5c8b-4768-a493-e290ad4e1274",
+    "statement": "Menino de 8 anos com história de edema de face e em membros inferiores há três dias associado à diminuição do débito urinário e urina escurecida. Os pais negam problemas prévios de saúde, referindo apenas que há 1 mês, paciente fez uso de cefalexina para tratar uma infecção de pele no membro inferior direito. Ao exame físico, FC = 88 bpm, PA = 138 x 67 (99) mmHg, FR = 34 ipm, SatO2 = 89% em ar ambiente. Ausculta pulmonar diminuída em ambas as bases, com estertores crepitantes. Sinais de desconforto respiratório leve. Tendo em vista a principal hipótese diagnóstica, assinale a alternativa que contenha, respectivamente, a alteração laboratorial esperada e a conduta inicial adequada para esse paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antiesteptolisina O (ASLO) diminuída; restrição hidrossalina e furosemida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Albumina sérica diminuída; albumina e corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anticorpos antidesoxirribonuclease B (anti-DNase B) elevados; restrição hidrossalina e furosemida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Dismorfismo eritrocitário presente; albumina e corticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO paciente apresenta um quadro clássico de síndrome nefrítica, caracterizado pela tríade de edema, hipertensão arterial e hematúria (sugerida pela urina escurecida e oligúria). O histórico de infecção de pele (piodermite) tratada com cefalexina há um mês, respeitando o período de latência de 2 a 6 semanas, aponta diretamente para o diagnóstico de glomerulonefrite difusa aguda (GNDA) pós-estreptocócica. No exame físico, a presença de estertores crepitantes, taquipneia e queda de saturação indica uma complicação frequente da GNDA: a congestão volêmica (edema agudo de pulmão clínico).\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) Incorreta: Embora a conduta de restrição hidrossalina e o uso de furosemida estejam corretos para tratar a sobrecarga de volume, o laboratório está descrito de forma errada. Em uma GNDA, espera-se que os anticorpos contra o estreptococo estejam elevados (evidenciando infecção prévia), e não diminuídos. Além disso, a ASLO (antiestreptolisina O) é um marcador que se eleva preferencialmente após faringoamigdalites, sendo frequentemente negativa ou baixa em casos precedidos por infecção de pele.\n\nAlternativa (b) Incorreta: Esta alternativa descreve achados e condutas típicas da síndrome nefrótica (como a doença de lesão mínima), onde há hipoalbuminemia importante e necessidade de corticoterapia. Na GNDA (síndrome nefrítica), o edema não ocorre por queda da albumina, mas sim por redução da taxa de filtração glomerular e retenção de sódio e água. O corticoide não faz parte do tratamento inicial da GNDA pós-estreptocócica clássica.\n\nAlternativa (c) Correta: Esta é a alternativa que melhor correlaciona o diagnóstico e a gravidade do caso. O anticorpo anti-DNase B é o marcador mais sensível para comprovar infecção estreptocócica prévia quando a porta de entrada foi a pele (piodermite). Quanto à conduta, o paciente apresenta sinais claros de hipervolemia grave (congestão pulmonar e hipertensão), sendo mandatório o suporte com restrição de líquidos e sódio, além do uso de diuréticos de alça (furosemida) para reduzir a pré-carga e controlar a pressão arterial.\n\nAlternativa (d) Incorreta: O dismorfismo eritrocitário é um achado esperado no sedimento urinário, pois confirma que a hematúria tem origem no glomérulo. No entanto, a conduta proposta de \"albumina e corticoide\" está errada para este caso, sendo reservada para condições nefróticas ou glomerulopatias imunomediadas específicas, não sendo o tratamento da GNDA pós-estreptocócica.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial na Criança e no Adolescente",
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:26.035Z"
+  },
+  {
+    "id": "AJUDA_8a6d3bfa-c563-48cf-b9d1-a389f945011f",
+    "originalId": "8a6d3bfa-c563-48cf-b9d1-a389f945011f",
+    "statement": "Sobre o Valor Preditivo Positivo (VPP), analise as afirmações:\n\nI. Representa a probabilidade de um indivíduo ter a doença dado que o teste foi positivo.\nII. É diretamente influenciado pela prevalência da doença na população testada: quanto maior a prevalência, maior o VPP.\nIII. É uma característica intrínseca do teste, não variando com o cenário clínico.\n\nDessa forma, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a proposição I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a proposição II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as proposições I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Todas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das Proposições:\n\nProposição I: Correta. O Valor Preditivo Positivo (VPP) define a probabilidade pós-teste de doença. Ou seja, indica a chance de um paciente realmente ter a patologia quando o resultado do seu exame é positivo. Matematicamente, é a razão entre os verdadeiros positivos e o total de resultados positivos (verdadeiros positivos + falsos positivos).\n\nProposição II: Correta. Ao contrário da sensibilidade e da especificidade, os valores preditivos são dependentes da prevalência (probabilidade pré-teste). Em uma população na qual a doença é muito comum (alta prevalência), qualquer resultado positivo tem uma chance muito maior de ser um verdadeiro positivo, o que aumenta o VPP. Em populações nas quais a doença é rara, a chance de um resultado positivo ser um erro do teste (falso positivo) cresce, reduzindo o VPP.\n\nProposição III: Incorreta. As características intrínsecas de um teste diagnóstico, que teoricamente não mudam com o cenário clínico ou a prevalência, são a sensibilidade e a especificidade. O VPP é uma medida de desempenho clínico que oscila conforme o grupo testado.\n\nExplicação das Alternativas:\n\nAlternativa a) Incorreta. A proposição II também está correta, pois a relação direta entre prevalência e VPP é um conceito fundamental da epidemiologia clínica.\n\nAlternativa b) Incorreta. A proposição I também está correta, pois traz a definição exata de VPP.\n\nAlternativa c) Correta. Esta alternativa agrupa as duas únicas afirmações verdadeiras. O VPP é tanto a probabilidade de doença após um teste positivo quanto uma variável dependente da prevalência da doença no meio em que o teste é aplicado.\n\nAlternativa d) Incorreta. A proposição III invalida esta opção, uma vez que o VPP não é fixo; ele muda se aplicarmos o mesmo teste em um hospital de referência (alta prevalência) ou em um rastreamento populacional (baixa prevalência).",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:26.035Z"
+  },
+  {
+    "id": "AJUDA_8a6dfe22-61f8-4480-9595-95e5f916e927",
+    "originalId": "8a6dfe22-61f8-4480-9595-95e5f916e927",
+    "statement": "Gestante tabagista, com 40 anos de idade e gestação de 36 semanas, com 2 cesáreas prévias, busca atendimento na maternidade com sangramento vaginal indolor de coloração vermelho-viva, imotivado, com início súbito há 15 dias, reincidente desde então, de gravidade progressiva. Tem algumas discretas contrações uterinas quando o sangue jorra em quantidades maiores nos episódios hemorrágicos. O médico que a admitiu procedeu o toque vaginal que desencadeou hemorragia abundante. Com relação a essa situação clínica, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Considera-se choque moderado, ou Estágio II quando o Índice de choque se encontra entre 1,4 a 1,9, há sangramento contínuo, perda sanguínea entre 26 e 35% (1,5 a 2 L), PAS = 70 a 79 ou FC = 101 a 120 ou agitação/ sonolência ou perfusão comprometida (palidez, frieza e sudorese).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A hipotermia pode impactar negativamente na coagulação, uma vez que interfere na geração de trombina, na agregação plaquetária e na formação de trombos de fibrina, exacerbando a coagulopatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Está recomendada a infusão fixa de 2 L de cristaloides em bólus ao se diagnosticar sangramento, com a proporção de 3 L de fluido para cada litro de sangue perdido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A suspeita é de que seja uma situação de distopia placentária (placenta prévia) e este diagnóstico deve ser confirmado pela ultrassonografia transvaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nO quadro clínico é clássico de placenta prévia: gestante de 36 semanas, com fatores de risco importantes (idade avançada, tabagismo e 2 cesáreas anteriores), apresentando sangramento vaginal indolor, vermelho-vivo, espontâneo e recidivante. O toque vaginal é contraindicado na suspeita de inserção baixa ou placenta prévia, pois pode lacerar o tecido placentário e desencadear hemorragia volumosa, como ocorreu. A questão solicita a identificação da alternativa INCORRETA.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a: CORRETA. Os critérios descritos estão em conformidade com as diretrizes de hemorragia obstétrica (como a estratégia Zero Morte Materna por Hemorragia da OPAS/FEBRASGO). O Estágio II (choque moderado) é caracterizado por perda estimada de 26 a 35% do volume sanguíneo (1500 a 2000 mL), PAS entre 70 e 79 mmHg, FC entre 101 e 120 bpm e Índice de Choque entre 1,4 e 1,9, associados a sinais clínicos de má perfusão periférica.\n\nAlternativa b: CORRETA. A hipotermia é um componente crucial da tríade letal (acidose, hipotermia e coagulopatia). A queda da temperatura corporal inibe a atividade dos complexos enzimáticos da cascata de coagulação e a função plaquetária, agravando significativamente a perda de sangue e dificultando a hemostasia.\n\nAlternativa c: INCORRETA (GABARITO). A reposição agressiva com grandes volumes de cristaloides (como bólus de 2 L ou a regra empírica de 3:1) é uma conduta ultrapassada e formalmente desaconselhada nos protocolos atuais de controle de danos. A infusão excessiva de cristaloides causa coagulopatia dilucional, piora a acidose e a hipotermia, e aumenta a pressão hidrostática, deslocando coágulos recém-formados. Recomenda-se a ressuscitação volêmica guiada por metas com pequenas alíquotas de cristaloides (250 a 500 mL) e transfusão precoce de hemocomponentes.\n\nAlternativa d: CORRETA. O quadro clínico impõe a hipótese de placenta prévia. A ultrassonografia transvaginal é o método padrão-ouro para confirmação diagnóstica, sendo um procedimento seguro (o transdutor fica na vagina, a distância segura do orifício interno do colo) e superior à via transabdominal na visualização da relação entre a borda da placenta e o orifício interno do colo do útero.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:26.035Z"
+  },
+  {
+    "id": "AJUDA_8a76eb9a-9a86-4955-bf2c-58493894bd1d",
+    "originalId": "8a76eb9a-9a86-4955-bf2c-58493894bd1d",
+    "statement": "Paciente do sexo masculino, 7 anos, é admitido na UPA com história de edema iniciado há 2 dias, urina rosa e oligúria. Mãe relata peso habitual de 22kg.\nAo exame, paciente em REG, hidratação limítrofe, taquipneia, afebril, corado. Apresenta edema. Peso à admissão, 24,8Kg. Pressão arterial: 140X85mmHg. Pele: lesões crostosas em membros inferiores e diversas lesões cicatriciais.\nDiante da sua principal hipótese diagnóstica, qual tratamento melhor se adequa na abordagem inicial deste paciente, visando melhor desfecho do quadro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pulsoterapia, com Metilprednisolona 30mg/Kg/dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prednisona na dose de 2mg/Kg/dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Restrição hídrica (20ml/Kg/dia) e uso anti hipertensivo, sendo Captopril o mais indicado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antibioticoterapia com penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Restrição hídrica de 20ml/Kg/dia e dieta assódica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "DIAGNÓSTICO\n\nO quadro clínico descrito refere-se a uma criança de 7 anos com a tríade clássica da Síndrome Nefrítica: edema, hematúria (urina rosa) e hipertensão arterial (140x85 mmHg para a idade), acompanhada de oligúria. A presença de lesões crostosas e cicatriciais na pele sugere um quadro prévio de piodermite (impetigo). Diante desse cenário, a principal hipótese diagnóstica é a Glomerulonefrite Difusa Aguda (GNDA) pós-estreptocócica.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) INCORRETA. A pulsoterapia com Metilprednisolona é reservada para casos de glomerulonefrite rapidamente progressiva (caracterizada por perda acelerada da função renal) ou doenças autoimunes sistêmicas. A GNDA pós-estreptocócica é tipicamente autolimitada e não requer corticoterapia em altas doses no manejo inicial.\n\nAlternativa b) INCORRETA. A Prednisona em dose de 2 mg/kg/dia é o tratamento de escolha para a Síndrome Nefrótica idiopática (Doença por Lesão Mínima). O paciente apresenta uma Síndrome Nefrítica, na qual o uso de corticoides não traz benefício comprovado no desfecho clínico.\n\nAlternativa c) INCORRETA. Embora a restrição hídrica seja parte do tratamento, o Captopril (inibidor da ECA) não é a droga de primeira escolha nesta fase. A hipertensão na GNDA é dependente de volume (hipervolemia por retenção de sódio e água). Por isso, os diuréticos de alça (como a Furosemida) são preferíveis. Além disso, o uso de IECAs em pacientes oligúricos traz risco de hipercalemia e piora da taxa de filtração glomerular.\n\nAlternativa d) INCORRETA. A antibioticoterapia com Penicilina Benzatina tem como objetivo erradicar a cepa nefritogênica do estreptococo da pele ou orofaringe para evitar a disseminação para outras pessoas. No entanto, o antibiótico não trata a lesão glomerular já estabelecida, não diminui a hipertensão e não altera o curso clínico da doença renal no paciente.\n\nAlternativa e) CORRETA. O tratamento da GNDA pós-estreptocócica é essencialmente de suporte e visa o controle das complicações da sobrecarga hidrossalina (edema e hipertensão). Como o paciente apresenta ganho de peso (2,8 kg acima do habitual), edema e hipertensão, a medida inicial mais eficaz para garantir um melhor desfecho e evitar complicações como o edema agudo de pulmão e a encefalopatia hipertensiva é a restrição de líquidos (calculada para cobrir perdas insensíveis) e a dieta sem sal (assódica).\n\nGabarito: Alternativa (e).",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:26.035Z"
+  },
+  {
+    "id": "AJUDA_8a8ea732-57fe-4b38-babe-14eaaad3faf0",
+    "originalId": "8a8ea732-57fe-4b38-babe-14eaaad3faf0",
+    "statement": "Homem de 42 anos é atendido na Unidade Básica de Saúde com o relato que, nos últimos seis meses, vem sentindo episódios progressivos de formigamento e dormência espraiadas na borda lateral do antebraço e no 5º dedo da mão direita, sem o surgimento de manchas na pele. Ele é trabalhador da construção civil e não tem comorbidades. A sua esposa foi tratada de hanseníase multibacilar há dois anos. Ao exame dermatoneurológico: não são visualizadas lesões cutâneas maculares, pápulas ou infiltrações em nenhuma região do corpo; a palpação do nervo ulnar direito revela espessamento focal e discreta hipersensibilidade dolorosa local; o teste de sensibilidade tátil com estesiômetro (monofilamentos) demonstra perda da sensibilidade protetora na região hipotenar e no quinto dedo da mão direita (o paciente não percebe o toque do monofilamento de 2 g); a força muscular para a abdução do quinto dedo e para a extensão do punho encontra-se totalmente preservada. A baciloscopia direta por raspado intradérmico nos lóbulos auriculares e cotovelos é realizada, resultando em índice baciloscópico igual a zero. É correto afirmar, com relação a esse paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a aplicação do teste rápido imunocromatográfico para detecção de anticorpos IgG contra o antígeno PGL-1 possui indicação aprovada no Sistema Único de Saúde para a investigação de contatos na Atenção Primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a avaliação da sensibilidade cutânea na suspeita de hanseníase estabelece uma ordem cronológica de perda funcional em que a sensibilidade tátil é comprometida inicialmente, seguida pela perda das sensibilidades térmica e dolorosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o caso atende aos critérios para a definição clínica de hanseníase devido à presença de espessamento de nervo periférico associado a alterações sensitivas, mesmo diante de um resultado de baciloscopia negativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "o Sistema Único de Saúde preconiza a realização do teste molecular qualitativo de qPCR em amostras obtidas por raspado intradérmico para a triagem inicial de contatos no âmbito da atenção primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o teste de lepromina com leitura da reação tardia de Mitsuda aos 21 dias é indicado para confirmar a presença de infecção ativa pelo Mycobacterium leprae no paciente, correlacionando-se de forma direta com o nível de exposição ambiental ao bacilo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Resumo do caso: homem de 42 anos, contato domiciliar de paciente com hanseníase multibacilar, com 6 meses de parestesia e hipoestesia em território do nervo ulnar direito. Há espessamento focal e dor à palpação do nervo ulnar, perda da sensibilidade protetora (monofilamento de 2 g) e força preservada. Não há lesões cutâneas e a baciloscopia é negativa (IB = 0). Trata-se de hanseníase neural pura, forma paucibacilar, com alta probabilidade de ser do tipo tuberculoide ou do grupo indeterminado/neural.\n\nCritérios diagnósticos do Ministério da Saúde: o caso de hanseníase é a pessoa com um ou mais dos seguintes sinais cardinais, que exigem tratamento poliquimioterápico:\n1. Lesão de pele com alteração de sensibilidade.\n2. Acometimento de nervo periférico, com espessamento neural e alteração sensitiva, motora e/ou autonômica.\n3. Baciloscopia positiva.\n\nA baciloscopia é, portanto, apenas um dos critérios e não é obrigatória. Na forma neural pura ela costuma ser negativa.\n\nAnálise das alternativas:\n\na) Incorreta. O teste rápido anti-PGL-1 não é incorporado ao SUS para investigação de contatos na atenção primária. Ele tem baixa sensibilidade nas formas paucibacilares e não define diagnóstico. O diagnóstico é clínico (dermatoneurológico), e a avaliação de contatos é feita por exame clínico.\n\nb) Incorreta. A ordem cronológica de perda é inversa: primeiro se perde a sensibilidade térmica, depois a dolorosa e por último a tátil. Por isso o monofilamento detecta alterações já em fase mais avançada de comprometimento.\n\nc) Correta. Espessamento de nervo periférico associado a alteração sensitiva (e, neste caso, com história epidemiológica de contato) fecha o critério clínico de hanseníase, mesmo sem lesão cutânea e com baciloscopia negativa. Trata-se de hanseníase neural pura, que deve ser tratada. Pode-se complementar com eletroneuromiografia ou biópsia de nervo em casos duvidosos, mas isso não é indispensável aqui.\n\nd) Incorreta. O qPCR em raspado intradérmico não é preconizado para triagem inicial de contatos na atenção primária. Os métodos moleculares são reservados a situações específicas, como diagnóstico diferencial e casos duvidosos, em serviços de referência.\n\ne) Incorreta. O teste de Mitsuda (lepromina) não confirma infecção ativa nem se correlaciona com a exposição ambiental. Ele avalia a resposta imune celular do hospedeiro, tem valor prognóstico e de classificação (positivo no polo tuberculoide, negativo no virchowiano) e não é usado para diagnóstico. Também não é utilizado na rotina atual.\n\nConduta no caso: notificar, classificar operacionalmente como paucibacilar (neural pura, sem lesões e IB negativo), iniciar poliquimioterapia PB (rifampicina + dapsona por 6 meses), avaliar o grau de incapacidade física (perda de sensibilidade protetora = grau 1), orientar autocuidados, examinar os contatos e monitorar função neural e reações hansênicas.\n\nGabarito: letra C.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hanseníase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:26.035Z"
+  },
+  {
+    "id": "AJUDA_8a99a7a0-15e1-442d-9c52-e9385accfded",
+    "originalId": "8a99a7a0-15e1-442d-9c52-e9385accfded",
+    "statement": "Recém-nascida de termo, adequada para a idade gestacional. Pré-natal e parto vaginal sem intercorrências. Mãe primigesta, saudável, com 30 anos de idade. Com 12 horas de vida observa-se icterícia zona I/lI na RN. Neste momento a dosagem de bilirrubina indireta (BI) revelou 8 mg/dL. Iniciada fototerapia. Tipagem sanguínea materna O Rh negativo, coombs indireto (CI) negativo e do RN A Rh positivo, coombs direto (CD) negativo e eluato positivo. Com 20 horas de vida a BI estava em 10 mg/dL, repetida com 24 horas de vida e mantida em 11 mg/dL. Reticulócitos 11%. A causa para a alteração observada e a conduta devem ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença hemolítica não imune, manter fototerapia e solicitar curva de fragilidade osmótica da RN.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença hemolítica por incompatibilidade A-O, manter fototerapia, com controle sérico de bilirrubina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Doença hemolítica por incompatibilidade Rh, administrar imunoglobulina e realizar controle sérico de bilirrubina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doença hemolítica devida a grupos menores, solicitar a pesquisa do antígeno envolvido e realizar a exsanguineotransfusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\nA icterícia iniciada nas primeiras 24 horas de vida é sempre considerada patológica e exige investigação. No caso apresentado, a recém-nascida apresenta icterícia com 12 horas de vida, BI de 8 mg/dL e sinais de hemólise (reticulócitos de 11%). O cenário imuno-hematológico revela mãe O negativa com Coombs indireto negativo, e recém-nascido A positivo com Coombs direto negativo, mas eluato positivo.\n\nAlternativa A: Incorreta. A doença é de natureza imune, comprovada pelo eluato positivo, que demonstra a presença de anticorpos maternos aderidos às hemácias do recém-nascido. A pesquisa de fragilidade osmótica é utilizada para diagnosticar esferocitose hereditária, que é uma causa de hemólise não imune, não sendo a primeira suspeita diante da incompatibilidade sanguínea e do eluato positivo.\n\nAlternativa B: Correta. A incompatibilidade ABO ocorre tipicamente em mães do grupo O com filhos do grupo A ou B. Nessa patologia, o Coombs direto é frequentemente negativo ou fracamente positivo, pois as hemácias neonatais possuem menos sítios antigênicos A e B do que as hemácias adultas. O teste do eluato é muito mais sensível e, quando positivo, confirma a presença de anticorpos (anti-A, neste caso) ligados às células do bebê. O tratamento inicial para um nível de 11 mg/dL com 24 horas de vida em um contexto de hemólise é a fototerapia, acompanhada de monitorização dos níveis de bilirrubina.\n\nAlternativa C: Incorreta. Embora exista incompatibilidade de fator Rh (mãe negativa e RN positivo), a mãe tem Coombs indireto negativo, o que prova que ela não está sensibilizada e não produziu anticorpos anti-D. Portanto, a causa da hemólise não é o fator Rh. O uso de imunoglobulina venosa é reservado para casos de hemólise imune grave que não respondem à fototerapia intensiva ou que se aproximam do nível de exsanguineotransfusão.\n\nAlternativa D: Incorreta. A incompatibilidade por grupos menores (como Kell ou Duffy) é uma causa possível de doença hemolítica, mas a configuração mãe O e RN A com eluato positivo torna a incompatibilidade ABO a hipótese diagnóstica principal e mais comum. A exsanguineotransfusão é um procedimento de alto risco, indicado apenas em níveis muito mais elevados de bilirrubina ou quando há sinais de encefalopatia biliar, o que não se aplica a este caso.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Icterícia e Sepse Neonatal",
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:26.035Z"
+  },
+  {
+    "id": "AJUDA_8aa58b91-46b2-4c5d-b64f-51ade2cb0a92",
+    "originalId": "8aa58b91-46b2-4c5d-b64f-51ade2cb0a92",
+    "statement": "Paciente de 7 anos, com diagnóstico de transtorno do espectro autista (TEA) em nível I de suporte, sempre apresentou sintomas de hiperatividade. Os prejuízos no desempenho escolar vinham aumentando, principalmente após o ingresso no Ensino Fundamental, mesmo com terapia comportamental adequada. Com a hipótese de transtorno de déficit de atenção e hiperatividade (TDAH) como comorbidade, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Devido à comorbidade com o TEA, risperidona e aripiprazol são os fármacos de escolha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apesar da comorbidade com o TEA, neuroestimulantes (como o metilfenidato) continuam como primeira escolha.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Como não há um tratamento farmacológico específico para o TEA, deverá ser mantida somente a intervenção comportamental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "TEA e TDAH são diagnósticos mutuamente excludentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A alternativa correta é a (b).\n\nAnálise das alternativas:\n\nAlternativa (a): Incorreta. A risperidona e o aripiprazol são antipsicóticos de segunda geração. Embora sejam aprovados para o tratamento de comportamentos disruptivos, irritabilidade e agressividade no Transtorno do Espectro Autista (TEA), eles não são a primeira escolha para tratar os sintomas nucleares de desatenção e hiperatividade característicos do TDAH.\n\nAlternativa (b): Correta. O TDAH é uma das comorbidades mais comuns em crianças com TEA. Quando os sintomas de desatenção, hiperatividade ou impulsividade causam prejuízo funcional significativo (como o declínio no desempenho escolar mencionado no caso), os psicoestimulantes, como o metilfenidato, permanecem como o tratamento farmacológico de primeira escolha. Vale notar que crianças com TEA podem ter uma taxa de resposta ligeiramente menor ou mais efeitos colaterais com estimulantes do que a população geral, mas eles ainda são a recomendação inicial.\n\nAlternativa (c): Incorreta. É verdade que não existe uma medicação que trate os sintomas centrais do TEA (déficits de comunicação e interação social). No entanto, as comorbidades associadas (como TDAH, ansiedade ou distúrbios do sono) devem ser tratadas farmacologicamente quando a terapia comportamental isolada não é suficiente para garantir a qualidade de vida e o desenvolvimento da criança.\n\nAlternativa (d): Incorreta. Esta afirmação está desatualizada. No antigo manual diagnóstico (DSM-IV), o TEA e o TDAH eram considerados diagnósticos mutuamente excludentes. Entretanto, com a atualização para o DSM-5, passou a ser permitido e incentivado o diagnóstico de ambas as condições simultaneamente, caso o paciente preencha os critérios para ambas, reconhecendo a alta prevalência de coexistência entre esses transtornos do neurodesenvolvimento.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:26.035Z"
+  },
+  {
+    "id": "AJUDA_8aabea2d-64a9-4d2d-8b08-b4c5e6d77edd",
+    "originalId": "8aabea2d-64a9-4d2d-8b08-b4c5e6d77edd",
+    "statement": "Um pesquisador aplicou um teste diagnóstico numa população de 1.000 indivíduos. A sensibilidade e a especificidade do teste utilizado eram de 90%. A população da qual foram retirados os indivíduos tinha uma prevalência da doença X igual a 20%. Outro pesquisador utilizou o mesmo teste, mas agora numa população de 1.000 indivíduos, cuja prevalência da doença X era de 2%. Os valores preditivos positivos, respectivamente, nas duas populações são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "6,92% e 9,72%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "6,92% e 1,55%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "69,2% e 15,5%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "69,2% e 97,2%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, precisamos entender o conceito de Valor Preditivo Positivo (VPP) e como ele é influenciado pela prevalência de uma doença. O VPP representa a probabilidade de um indivíduo realmente ter a doença dado que o seu resultado no teste foi positivo.\n\nCONCEITOS FUNDAMENTAIS\nO VPP é calculado pela fórmula: Verdadeiros Positivos (VP) divididos pelo total de testes Positivos (Verdadeiros Positivos + Falsos Positivos). Diferentemente da sensibilidade e da especificidade, que são características intrínsecas do teste, os valores preditivos mudam conforme a prevalência da doença na população testada. Quando a prevalência cai, o VPP também cai.\n\nCÁLCULO PARA A PRIMEIRA POPULAÇÃO (Prevalência de 20%)\nTotal de indivíduos: 1.000\nIndivíduos com a doença: 20% de 1.000 = 200\nIndivíduos sem a doença: 80% de 1.000 = 800\n\n1. Verdadeiros Positivos (VP): O teste acerta 90% dos doentes (sensibilidade). 0,90 x 200 = 180.\n2. Falsos Positivos (FP): O teste erra em 10% dos não doentes (pois a especificidade é 90%, logo o erro é 100% menos 90%). 0,10 x 800 = 80.\n3. VPP = VP / (VP + FP) = 180 / (180 + 80) = 180 / 260 = 0,6923 ou 69,2%.\n\nCÁLCULO PARA A SEGUNDA POPULAÇÃO (Prevalência de 2%)\nTotal de indivíduos: 1.000\nIndivíduos com a doença: 2% de 1.000 = 20\nIndivíduos sem a doença: 98% de 1.000 = 980\n\n1. Verdadeiros Positivos (VP): O teste acerta 90% dos doentes. 0,90 x 20 = 18.\n2. Falsos Positivos (FP): O teste erra em 10% dos não doentes. 0,10 x 980 = 98.\n3. VPP = VP / (VP + FP) = 18 / (18 + 98) = 18 / 116 = 0,1551 ou 15,5%.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a: Incorreta. Os valores de 6,92% e 9,72% não correspondem à aplicação das fórmulas de valor preditivo. O primeiro valor está com a vírgula na posição errada (fator de 10) e o segundo não segue a lógica da queda da prevalência.\n\nAlternativa b: Incorreta. Assim como na alternativa anterior, os valores estão subestimados e não refletem a proporção correta entre doentes e resultados positivos do teste.\n\nAlternativa c: Correta. Conforme os cálculos demonstrados, o VPP da primeira população é de 69,2% e, ao reduzir a prevalência para 2%, o VPP cai drasticamente para 15,5%. Isso ocorre porque, em populações de baixa prevalência, o número absoluto de falsos positivos tende a superar o número de verdadeiros positivos, mesmo em testes com boa especificidade.\n\nAlternativa d: Incorreta. Embora o primeiro valor esteja correto (69,2%), o segundo valor (97,2%) é impossível. O VPP não aumenta quando a prevalência da doença diminui, mantendo-se a sensibilidade e a especificidade constantes. Para o VPP ser 97,2% com apenas 2% de prevalência, o teste precisaria ter uma especificidade extremamente próxima de 100%.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:26.035Z"
+  },
+  {
+    "id": "AJUDA_8ab9f455-25c6-4c54-b6b3-1b010181b6a9",
+    "originalId": "8ab9f455-25c6-4c54-b6b3-1b010181b6a9",
+    "statement": "Assinale a alternativa correta em relação à hipertensão arterial sistêmica (HAS).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente os pacientes com HAS crônica têm crises hipertensivas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A crise hipertensiva é sempre sintomática e por isso fácil de ser diagnosticada pela Atenção Primária da Saúde (APS) ou serviços de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A crise hipertensiva está associada a infarto do miocárdio, acidente vascular encefálico isquêmico ou hemorrágico e síndromes aórticas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Apenas medições repetidas da pressão arterial podem descartar a hipertensão do avental branco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a) Incorreta. Embora a maioria das crises ocorra em indivíduos com diagnóstico prévio de hipertensão arterial sistêmica (HAS), pacientes sem histórico de doença crônica também podem apresentar picos hipertensivos graves. Exemplos comuns incluem casos de eclâmpsia em gestantes previamente normotensas, glomerulonefrites agudas ou o uso de substâncias simpaticomiméticas, como a cocaína.\n\nAlternativa b) Incorreta. A crise hipertensiva nem sempre é sintomática. O conceito de urgência hipertensiva, por exemplo, envolve níveis pressóricos muito elevados sem que haja sintomas graves ou risco imediato de vida. Além disso, existe o fenômeno da \"pseudocrise hipertensiva\", em que o aumento da pressão é consequência de dor, ansiedade ou estresse físico, o que pode gerar confusão diagnóstica no ambiente de emergência ou na Atenção Primária.\n\nAlternativa c) Correta. Esta alternativa descreve o conceito de emergência hipertensiva. Trata-se de uma elevação brusca e severa da pressão arterial (geralmente acima de 180/120 mmHg) que resulta em lesão aguda de órgãos-alvo. Clinicamente, isso se manifesta como lesões neurológicas (AVC isquêmico ou hemorrágico), cardiovasculares (infarto agudo do miocárdio, edema agudo de pulmão) ou vasculares (síndromes aórticas agudas, como a dissecção de aorta).\n\nAlternativa d) Incorreta. O diagnóstico de hipertensão do avental branco ocorre quando o paciente apresenta níveis elevados de pressão no consultório, mas níveis normais em sua rotina diária. Apenas medições repetidas em consultório não são suficientes para descartá-la com precisão. O padrão-ouro para esse diagnóstico e exclusão é a realização de exames que monitorem a pressão fora do ambiente médico, especificamente a Monitorização Ambulatorial da Pressão Arterial (MAPA) ou a Monitorização Residencial da Pressão Arterial (MRPA).",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:26.036Z"
+  },
+  {
+    "id": "AJUDA_8ac0c815-1aac-4f86-8598-23a4221c3cdd",
+    "originalId": "8ac0c815-1aac-4f86-8598-23a4221c3cdd",
+    "statement": "No ano de 2025, foram confirmados casos de sarampo nas Américas, incluindo casos no Brasil. Uma das estratégias para diminuir o risco de propagação da doença é a instituição da chamada Dose Zero (DO) da vacina de sarampo, por meio da vacinação, com vacina com o componente sarampo para crianças de 6 meses a 11 meses e 29 dias de idade. A respeito da DO dessa vacina, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Por ser realizada a partir de vacina com vírus inativado, inexiste o risco de reações adversas relacionadas à replicação do vírus vacinal, como exantema ou comprometimento de sistema nervoso central (encefalite).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Para efeito de estratégia preventiva das ações de vacinação contra o sarampo no Brasil, essa dose deve ser considerada como bloqueio vacinal e é indicada em até 72 horas após a identificação do caso suspeito ou confirmado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O Departamento do Programa Nacional de Imunizações do Ministério da Saúde do Brasil indicou essa dose para todo o território brasileiro em 2025, independentemente da circulação do vírus ou do risco aumentado da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ela substitui uma das doses do calendário de rotina contra o sarampo do Programa Nacional de Imunizações brasileiro, sendo desnecessário fazer as duas doses dos 12 aos 15 meses de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ela não é incorporada ao esquema de vacina contra o sarampo de rotina, porque pode haver interferência dos anticorpos maternos transmitidos, via transplacentária, na resposta vacinal da criança, no primeiro ano de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda a estratégia da Dose Zero (D0) da vacina contra o sarampo, aplicada em crianças de 6 meses a 11 meses e 29 dias em cenários de surto ou circulação viral ativa.\n\nAlternativa A: Incorreta. A vacina contra o sarampo (contida na Tríplice Viral ou Tetra Viral) é composta por vírus vivos atenuados, e não vírus inativados. Por ser de vírus vivo, existe, sim, o risco de reações adversas relacionadas à replicação vacinal, como febre e exantema (geralmente entre o 5º e o 12º dia após a aplicação), embora complicações graves, como a encefalite, sejam extremamente raras.\n\nAlternativa B: Incorreta. Embora a vacinação de bloqueio seja uma estratégia importante, realizada em até 72 horas após o contato com um caso suspeito, a Dose Zero, conforme descrita no enunciado, refere-se a uma estratégia de intensificação vacinal para uma faixa etária específica em áreas com circulação do vírus. O objetivo da Dose Zero é proteger precocemente as crianças pequenas, que são mais vulneráveis a complicações, mas ela não se confunde estritamente com a logística de bloqueio de contatos imediatos.\n\nAlternativa C: Incorreta. A indicação da Dose Zero não é universal e permanente para todo o território nacional, independentemente da situação epidemiológica. Ela é uma ferramenta de saúde pública acionada pelo Programa Nacional de Imunizações (PNI) em resposta à circulação ativa do vírus do sarampo ou em situações de alto risco de propagação em determinadas regiões.\n\nAlternativa D: Incorreta. Esta é uma das pegadinhas mais comuns em provas. A Dose Zero nunca substitui as doses do calendário de rotina. A criança que recebe a Dose Zero aos 6 meses de idade ainda deve, obrigatoriamente, receber a dose de rotina aos 12 meses (Tríplice Viral) e a dose aos 15 meses (Tetra Viral), respeitando o intervalo mínimo de 30 dias entre a Dose Zero e a dose dos 12 meses.\n\nAlternativa E: Correta. Esta alternativa traz o fundamento imunológico para a vacinação de rotina ocorrer apenas a partir dos 12 meses. No primeiro ano de vida, a criança possui anticorpos maternos (IgG) que foram transferidos via transplacentária durante a gestação. Esses anticorpos podem neutralizar o vírus da vacina antes que o sistema imune da criança consiga gerar uma resposta de memória robusta. Por isso, a Dose Zero é considerada uma dose adicional de proteção temporária em surtos, mas não é contabilizada no esquema vacinal básico devido a essa possível interferência na soroconversão.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:26.036Z"
+  }
+]

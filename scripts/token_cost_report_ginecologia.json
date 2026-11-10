@@ -1,0 +1,99 @@
+{
+  "generatedAt": "2026-11-05T00:58:36.735Z",
+  "sampleSize": 1000,
+  "totalResolved": 12125,
+  "methodology": "4 chars/token (português médico técnico)",
+  "avgInputTokens": 1178,
+  "avgOutputTokens": 761,
+  "avgTotalTokens": 1939,
+  "medianInputTokens": 1166,
+  "medianOutputTokens": 743,
+  "p95InputTokens": 1350,
+  "p95OutputTokens": 972,
+  "minTotalTokens": 1599,
+  "maxTotalTokens": 2591,
+  "costPer100Questions": [
+    {
+      "modelId": "gemini-3-flash-preview",
+      "label": "Gemini 3 Flash Preview",
+      "tier": "Free Tier (quota only)",
+      "inputPricePer1M": 0,
+      "outputPricePer1M": 0,
+      "inputCostUSD": 0,
+      "outputCostUSD": 0,
+      "totalCostUSD": 0,
+      "totalCost1000USD": 0
+    },
+    {
+      "modelId": "gemini-3.5-flash-lite",
+      "label": "Gemini 3.5 Flash Lite",
+      "tier": "Paid (Low Cost)",
+      "inputPricePer1M": 0.019,
+      "outputPricePer1M": 0.038,
+      "inputCostUSD": 0.002239,
+      "outputCostUSD": 0.002891,
+      "totalCostUSD": 0.005131,
+      "totalCost1000USD": 0.051306
+    },
+    {
+      "modelId": "gemini-flash-lite-latest",
+      "label": "Gemini Flash Lite Latest",
+      "tier": "Paid (Low Cost)",
+      "inputPricePer1M": 0.019,
+      "outputPricePer1M": 0.038,
+      "inputCostUSD": 0.002239,
+      "outputCostUSD": 0.002891,
+      "totalCostUSD": 0.005131,
+      "totalCost1000USD": 0.051306
+    },
+    {
+      "modelId": "gemini-3.5-flash",
+      "label": "Gemini 3.5 Flash",
+      "tier": "Paid (Standard)",
+      "inputPricePer1M": 0.075,
+      "outputPricePer1M": 0.3,
+      "inputCostUSD": 0.008839,
+      "outputCostUSD": 0.022828,
+      "totalCostUSD": 0.031666,
+      "totalCost1000USD": 0.316662
+    },
+    {
+      "modelId": "gemini-3.6-flash",
+      "label": "Gemini 3.6 Flash",
+      "tier": "Paid (Standard+)",
+      "inputPricePer1M": 0.1,
+      "outputPricePer1M": 0.4,
+      "inputCostUSD": 0.011785,
+      "outputCostUSD": 0.030437,
+      "totalCostUSD": 0.042222,
+      "totalCost1000USD": 0.422216
+    }
+  ],
+  "projectionTotalGinecologia": [
+    {
+      "modelId": "gemini-3-flash-preview",
+      "label": "Gemini 3 Flash Preview",
+      "totalCostUSD": 0
+    },
+    {
+      "modelId": "gemini-3.5-flash-lite",
+      "label": "Gemini 3.5 Flash Lite",
+      "totalCostUSD": 0.6221
+    },
+    {
+      "modelId": "gemini-flash-lite-latest",
+      "label": "Gemini Flash Lite Latest",
+      "totalCostUSD": 0.6221
+    },
+    {
+      "modelId": "gemini-3.5-flash",
+      "label": "Gemini 3.5 Flash",
+      "totalCostUSD": 3.8395
+    },
+    {
+      "modelId": "gemini-3.6-flash",
+      "label": "Gemini 3.6 Flash",
+      "totalCostUSD": 5.1194
+    }
+  ]
+}

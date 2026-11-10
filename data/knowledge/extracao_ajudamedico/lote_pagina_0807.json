@@ -1,0 +1,488 @@
+[
+  {
+    "id": "AJUDA_e08e05af-7612-455f-97bc-8af4fefcfb1f",
+    "originalId": "e08e05af-7612-455f-97bc-8af4fefcfb1f",
+    "statement": "Menina de 4 meses, 6kg, vem à consulta de puericultura. Os pais não trazem nenhuma queixa clínica e, ao exame físico, você também não identifica nenhuma alteração. A mãe sofreu um acidente há cerca de 2 semanas e precisou ficar internada por alguns dias, já está bem, porém não tem conseguido mais amamentar sua filha. Os pais estão decididos que iniciarão fórmula infantil de primeiro semestre e pedem orientação quanto ao volume e preparo. Qual referência de gasto energético basal deve ser usada para este cálculo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "150 kcal/kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "25 kcal/kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "50 kcal/kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "100 kcal/kg.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O cálculo das necessidades energéticas em pediatria é essencial para orientar a prescrição de fórmulas infantis quando o aleitamento materno não é possível. No primeiro ano de vida, as demandas metabólicas são proporcionalmente muito mais altas do que as dos adultos, devido à rápida taxa de crescimento e ao desenvolvimento acelerado dos órgãos.\n\nPara lactentes no primeiro semestre de vida (0 a 6 meses), as principais referências de nutrologia pediátrica, como as diretrizes da Organização Mundial da Saúde (OMS) e o Tratado de Pediatria de Nelson, estabelecem que a necessidade energética diária gira em torno de 100 kcal/kg/dia (com variações aceitáveis entre 90 e 110 kcal/kg/dia). Esse valor é necessário para cobrir o gasto metabólico basal, a termogênese e, principalmente, o custo energético do depósito de novos tecidos (crescimento).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O valor de 150 kcal/kg/dia é muito elevado para um lactente eutrófico e saudável. Esse aporte calórico é geralmente reservado para situações de recuperação nutricional intensa (*catch-up growth*) em crianças com desnutrição grave ou com condições clínicas que aumentam drasticamente o metabolismo, como cardiopatias congênitas ou doenças pulmonares crônicas. É comum a confusão desse número com a recomendação de oferta hídrica (que costuma ser em torno de 150 mL/kg/dia), mas não com a de oferta calórica.\n\nAlternativa b: Incorreta. O valor de 25 kcal/kg/dia é extremamente baixo para um bebê. Esse patamar é mais próximo das necessidades de manutenção de um adulto ou de pacientes em repouso absoluto. Se aplicado a um lactente de 4 meses, resultaria em perda de peso e comprometimento do desenvolvimento.\n\nAlternativa c: Incorreta. O valor de 50 kcal/kg/dia representa apenas metade do necessário para esta faixa etária. Uma oferta calórica tão baixa não seria suficiente para sustentar as funções vitais básicas somadas ao crescimento acelerado esperado para um bebê de 6 kg.\n\nAlternativa d: Correta. Representa o consenso pediátrico e clínico para o gasto energético basal/necessidade diária de um lactente no primeiro semestre de vida. Utilizando esta referência de 100 kcal/kg para a paciente em questão, o médico planejará uma dieta de aproximadamente 600 kcal por dia. Como as fórmulas infantis de partida possuem densidade calórica padronizada (geralmente 0,67 kcal/mL), esse dado permite calcular o volume exato que os pais devem oferecer.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Tópicos em Pediatria",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:05.505Z"
+  },
+  {
+    "id": "AJUDA_e09f9e94-9e3c-4e06-946a-f2335ee2f5ff",
+    "originalId": "e09f9e94-9e3c-4e06-946a-f2335ee2f5ff",
+    "statement": "Uma mulher de 54 anos, sem antecedentes cardiovasculares, procura o pronto-socorro com queixa de palpitações há 18 horas acompanhadas de ortopneia e dispneia aos pequenos esforços. Apresenta pulso rápido e irregular, PA: 90 x 68 mmHg e estertores nas bases pulmonares. Antes de se tentar a reversão, elétrica ou medicamentosa da arritmia, é indicada a administração de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enoxaparina dose profilática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Clopidogrel.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rivaroxabana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "AAS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Clopidogrel + AAS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um quadro de arritmia (provável fibrilação atrial devido ao pulso rápido e irregular) com início há menos de 48 horas (18 horas de evolução). No entanto, ela apresenta sinais claros de instabilidade hemodinâmica e congestão pulmonar (hipotensão com PA de 90 x 68 mmHg, ortopneia e estertores nas bases), o que caracteriza uma emergência cardiovascular. \n\nDe acordo com as diretrizes da Sociedade Brasileira de Cardiologia e consensos internacionais, em casos de fibrilação atrial ou flutter atrial com instabilidade hemodinâmica, a cardioversão elétrica deve ser realizada de imediato. Contudo, as recomendações atuais preconizam que, sempre que possível, a anticoagulação deve ser iniciada antes ou imediatamente após o procedimento para minimizar o risco de fenômenos tromboembólicos decorrentes da reversão do ritmo.\n\nExplicação das alternativas:\n\na) Incorreta. A enoxaparina em dose profilática (geralmente 40 mg uma vez ao dia) é indicada para a prevenção de trombose venosa profunda em pacientes acamados. Para a prevenção de tromboembolismo na reversão de uma arritmia como a fibrilação atrial, é necessária a dose plena/terapêutica (1 mg/kg a cada 12 horas).\n\nb) Incorreta. O clopidogrel é um antiagregante plaquetário (inibidor do receptor P2Y12). Ele não possui ação anticoagulante e não tem indicação para a prevenção de eventos tromboembólicos de origem atrial em pacientes que serão submetidos à cardioversão.\n\nc) Correta. A rivaroxabana é um anticoagulante oral direto (DOAC) que atua como inibidor direto do fator Xa. Atualmente, os DOACs são considerados alternativas seguras e eficazes à heparina para pacientes que necessitam de anticoagulação antes da cardioversão, mesmo em cenários de urgência, desde que o paciente tenha condições de absorção oral e a cardioversão possa aguardar o tempo mínimo de ação da droga. Entre as opções listadas, é a única que oferece anticoagulação em dose terapêutica eficaz.\n\nd) Incorreta. O ácido acetilsalicílico (AAS) é um antiagregante plaquetário que inibe a ciclo-oxigenase 1 (COX-1). Assim como o clopidogrel, não é eficaz na prevenção de trombos formados no apêndice atrial esquerdo decorrentes da fibrilação atrial.\n\ne) Incorreta. A associação de AAS e clopidogrel (dupla antiagregação plaquetária) é utilizada em síndromes coronarianas agudas e após o implante de stents, mas não substitui a anticoagulação na fibrilação atrial para a prevenção de acidente vascular cerebral ou embolia sistêmica durante a cardioversão.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:05.505Z"
+  },
+  {
+    "id": "AJUDA_e0a5f3fb-eab2-498e-84bc-21a9d1d11d00",
+    "originalId": "e0a5f3fb-eab2-498e-84bc-21a9d1d11d00",
+    "statement": "Adolescente de 16 anos, assintomática, procura atendimento em uma Unidade de Saúde da Família, sozinha. Em consulta, informa que iniciou atividade sexual consentida com um colega da escola, de mesma idade, razão pela qual pede ao médico que coloque nela um implante contraceptivo de longa duração. Refere que seus pais têm ciência do namoro, mas não sabem que ela iniciou sua vida sexual.\nQual é a conduta adequada do médico nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar a paciente para o serviço ginecológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acionar o Conselho Tutelar da Criança e do Adolescente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Comunicar aos pais da paciente o desejo de anticoncepção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Atender ao pedido feito pela paciente quanto à anticoncepção.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O ponto central da questão é o direito da adolescente à privacidade, ao sigilo e à autonomia em saúde sexual e reprodutiva. O Estatuto da Criança e do Adolescente, o Código de Ética Médica (art. 74), o Ministério da Saúde, a Febrasgo e a Sociedade Brasileira de Pediatria garantem que o adolescente pode ser atendido sozinho. Esse atendimento inclui orientação e prescrição de métodos contraceptivos, desde que ele tenha capacidade de discernimento e não haja situação de risco.\n\nA paciente tem 16 anos e mantém relação consentida com parceiro da mesma idade. Não há violência sexual nem configuração de estupro de vulnerável, que se aplica a menores de 14 anos. Também não há indício de abuso ou exploração. Logo, não existe justa causa para quebrar o sigilo.\n\nOs LARCs (implante de etonogestrel e DIU) são considerados primeira linha para adolescentes pela OMS (critério de elegibilidade 1 para o implante) e pelas sociedades médicas. O motivo é a alta eficácia, já que não dependem da adesão diária. O implante está disponível no SUS e pode ser inserido na Atenção Primária por médico capacitado. A consulta também deve incluir:\n- orientação sobre dupla proteção, com uso de preservativo para prevenir ISTs;\n- oferta de testagem rápida para HIV, sífilis e hepatites;\n- verificação da vacinação contra HPV e hepatite B;\n- estímulo, sem imposição, ao diálogo com a família.\n\nAlternativa a) Incorreta. A anticoncepção, incluindo a inserção de implante, é atribuição da Atenção Primária. Encaminhar sem necessidade fragmenta o cuidado, atrasa o acesso ao método e aumenta o risco de gravidez não planejada.\n\nAlternativa b) Incorreta. O Conselho Tutelar é acionado em suspeita ou confirmação de violência, abuso, negligência ou violação de direitos. Atividade sexual consentida entre adolescentes de 16 anos não se enquadra nessas situações. Notificar seria quebra indevida de sigilo e afastaria a adolescente do serviço de saúde.\n\nAlternativa c) Incorreta. Comunicar aos pais sem o consentimento da paciente viola o sigilo médico, pois não há risco à vida ou à saúde dela que justifique a quebra. O médico pode incentivar que ela converse com a família, mas não pode condicionar o atendimento a isso nem revelar a informação por conta própria.\n\nAlternativa d) Correta. A adolescente tem discernimento, a relação é consentida e não há contraindicação. O médico deve respeitar sua autonomia e o sigilo, atender ao pedido de anticoncepção com o implante de longa duração e associar orientação sobre preservativo e prevenção de ISTs.\n\nGabarito: D.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Planejamento Familiar",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:05.506Z"
+  },
+  {
+    "id": "AJUDA_e0a8f3e4-cdd8-4e7e-a7d5-03882abc76df",
+    "originalId": "e0a8f3e4-cdd8-4e7e-a7d5-03882abc76df",
+    "statement": "Paciente feminina de 35 anos vem à consulta por queixa de fraqueza generalizada e “dor em todo o corpo”, de intensidade moderada, presente na maior parte dos dias há 6 meses. Relata que tem piora da dor ao tocar a região dolorida. Diz que a dor tem atrapalhado a qualidade do seu sono e perturbado sua qualidade de vida, pois não consegue mais realizar as atividades laborais de forma adequada. Ao exame apresenta dor bilateral à palpação das regiões occipitais, trapézio, lombar e trocantéricas e ausência de sinais inflamatórios articulares. Exames complementares demonstram velocidade de hemossedimentação normal, TSH 1,2 (0,3-4,5mUI/mL), creatinina 0,65 (0,3-1,3mg/dL), glicemia de jejum 75 (70-99mg/dL); fator reumatoide negativo. Qual é o diagnóstico mais provável dessa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Osteoartrite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Artrite soronegativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Espondiloartropatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fibromialgia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito é clássico para o diagnóstico de fibromialgia. A paciente apresenta os pilares fundamentais dessa síndrome: dor crônica generalizada, distúrbios do sono, impacto funcional e ausência de alterações laboratoriais ou inflamatórias que justifiquem os sintomas.\n\nAnálise das alternativas:\n\na) Osteoartrite: Incorreta. A osteoartrite é uma doença degenerativa das articulações que costuma afetar pontos específicos (como mãos, joelhos, quadris e coluna) e geralmente está associada a pacientes mais idosos. Ela causa dor mecânica localizada e, em casos avançados, deformidades ou crepitações. O caso em questão descreve uma dor difusa em tecidos moles, sem sinais de desgaste articular localizado ou rigidez característica.\n\nb) Artrite soronegativa: Incorreta. Este termo engloba um grupo de doenças inflamatórias que não apresentam o fator reumatoide positivo. No entanto, essas patologias (como a artrite psoriásica) cursam obrigatoriamente com sinais inflamatórios articulares (sinovite), como edema, calor e rubor, além de frequentemente elevarem as provas de atividade inflamatória (VHS e PCR). O exame físico da paciente revelou ausência de sinais inflamatórios e o VHS está normal.\n\nc) Espondiloartropatia: Incorreta. As espondiloartropatias, como a espondilite anquilosante, caracterizam-se principalmente por dor lombar de ritmo inflamatório (que melhora com o exercício e piora com o repouso), rigidez matinal prolongada e, muitas vezes, manifestações extra-articulares. A dor da paciente é generalizada e não apresenta o padrão inflamatório típico desse grupo de doenças, além de os exames laboratoriais estarem normais.\n\nd) Fibromialgia: Correta. O diagnóstico é essencialmente clínico. A paciente preenche os critérios atuais: dor generalizada (acima e abaixo da cintura, bilateral) por mais de 3 meses, associada a sintomas somáticos como fadiga e sono não reparador. A sensibilidade à palpação em pontos específicos (antigamente chamados de tender points, como occipital, trapézio e trocanter) reforça o diagnóstico. A normalidade dos exames laboratoriais (VHS, TSH, glicemia e função renal) é fundamental para excluir diagnósticos diferenciais como hipotireoidismo, polimialgia reumática ou neuropatias diabéticas.\n\nGabarito: Alternativa (d).",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Síndromes Dolorosas Crônicas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:05.506Z"
+  },
+  {
+    "id": "AJUDA_e0aad065-7e28-4de0-9f41-2ad7a2c19415",
+    "originalId": "e0aad065-7e28-4de0-9f41-2ad7a2c19415",
+    "statement": "Mulher, 67 anos de idade, apresenta dor e rigidez matinal maior que 1 hora nos ombros e quadris há três meses. Relata também perda ponderal de 3 kg e febre baixa não aferida. Em investigação diagnóstica, foram afastadas causas infecciosas e neoplasias. Além disso, os exames laboratoriais evidenciaram: anemia normocítica e normocrômica (Hb = 9,6 g/dL), provas inflamatórias elevadas (VHS = 75 mm/1ª hora e PCR = 63 mg/L), fator reumatoide e fator antinuclear negativos. A ultrassonografia de partes moles revelou bursite subacromial bilateral e tendinopatia e bursite glútea bilateral. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Osteoartrite de ombros e quadris",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Artrite reumatoide",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Artropatia microcristalina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Polimialgia reumática",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "DIAGNÓSTICO: POLIMIALGIA REUMÁTICA (PMR)\n\nANÁLISE DO QUADRO CLÍNICO:\nO caso apresenta uma paciente de 67 anos com dor e rigidez matinal prolongada (mais de 1 hora) localizadas nas cinturas escapular (ombros) e pélvica (quadris). Este é o cenário clássico da polimialgia reumática. A presença de marcadores inflamatórios elevados (VHS 75 mm e PCR 63 mg/L), anemia de doença crônica e a exclusão de neoplasias e infecções reforçam o diagnóstico. Outro ponto fundamental é o achado ultrassonográfico de bursite subacromial bilateral e bursite glútea, que são marcadores de imagem altamente sugestivos de PMR, segundo os critérios classificatórios EULAR/ACR 2012.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Osteoartrite de ombros e quadris: A osteoartrite é uma condição mecânico-degenerativa. Nela, a rigidez matinal costuma ser curta (geralmente menos de 30 minutos), a dor piora com o esforço e melhora com o repouso, e não há elevação significativa de provas inflamatórias (VHS e PCR), nem sintomas sistêmicos como febre e perda ponderal.\n\nb) Artrite reumatoide: Embora a artrite reumatoide possa começar em grandes articulações no idoso, ela tipicamente envolve pequenas articulações das mãos e pés de forma simétrica e erosiva. Na questão, o fator reumatoide e o FAN são negativos. Além disso, o padrão de imagem revelou bursites (inflamações em tecidos moles/anexos) e não sinovite articular franca, o que direciona para a PMR.\n\nc) Artropatia microcristalina: Condições como a gota ou a pseudogota manifestam-se geralmente como crises agudas de artrite, muitas vezes monoarticulares ou oligoarticulares (como no joelho ou hálux). Embora a pseudogota possa, em casos raros, mimetizar a PMR no idoso, a simetria das bursites e o quadro clínico de três meses com marcadores inflamatórios tão altos favorecem amplamente o diagnóstico de polimialgia reumática.\n\nd) Polimialgia reumática: Esta é a alternativa correta. A doença acomete obrigatoriamente indivíduos acima de 50 anos, manifestando-se com dor proximal simétrica e rigidez matinal superior a 45-60 minutos. A ausência de autoanticorpos (fator reumatoide e FAN) é o esperado na maioria dos casos. O achado ultrassonográfico de bursite subacromial bilateral e bursite glútea/trocantérica é extremamente característico e faz parte dos critérios diagnósticos atuais.\n\nGabarito: Letra (d).",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Vasculites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:05.506Z"
+  },
+  {
+    "id": "AJUDA_e0ac428d-9e90-4882-acf0-f6e968e029d6",
+    "originalId": "e0ac428d-9e90-4882-acf0-f6e968e029d6",
+    "statement": "A lei de Goodsall-Salmon é importante para localização de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "da doença de Crohn no delgado;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "do apêndice retrocecal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "das fístulas ano retais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "do carcinoma de reto;",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Lei de Goodsall-Salmon (ou regra de Goodsall) e uma diretriz anatomica classica da coloproctologia utilizada para prever o trajeto fistuloso e a localizacao do orificio interno de fistulas anorretais a partir da posicao do orificio externo na regiao perianal.\n\nAnalise das alternativas:\n\nAlternativa A - Incorreta: A doenca de Crohn no intestino delgado e avaliada e localizada por exames endoscopicos (como a colonoscopia com ileoscopia e capsula endoscopica) e exames de imagem (enterotomografia ou enteroressonancia). Embora a doenca de Crohn possa causar fistulas perianais complexas, a lei em si nao e usada para localizar lesoes no delgado.\n\nAlternativa B - Incorreta: A posicao do apendice cecal e uma variacao anatomica individual avaliada clinicamente e confirmada por exames de imagem (como ultrassonografia ou tomografia de abdome), sem qualquer relacao com a Lei de Goodsall-Salmon.\n\nAlternativa C - Correta: A regra divide a regiao perianal com uma linha imaginaria transversal ao orificio anal. Orificios externos posteriores a essa linha costumam ter trajeto curvo e confluir para a linha media posterior (posicao de 6 horas). Orificios externos anteriores tendem a seguir um trajeto radial e reto ate a cripta anal mais proxima. Ha uma excecao classica: orificios anteriores localizados a mais de 3 cm da borda anal geralmente tem trajeto curvo e abrem-se na linha media posterior, comportando-se como fistulas posteriores.\n\nAlternativa D - Incorreta: O carcinoma retal e diagnosticado e estagiado por exame proctologico (toque retal), endoscopia baixa e ressonancia magnetica de pelve. A regra nao tem aplicacao em oncologia.\n\nGabarito: Letra C.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:05.506Z"
+  },
+  {
+    "id": "AJUDA_e0b6cf90-5239-4946-89a3-281acb1cdbfa",
+    "originalId": "e0b6cf90-5239-4946-89a3-281acb1cdbfa",
+    "statement": "Atualmente, há um grande desafio que é conciliar o número de oferta de vagas da agenda do profissional do serviço de saúde com relação ao número de pacientes que comparecem ao serviço de saúde solicitando um atendimento, assim é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O modelo em que está estruturado o sistema de saúde influenciará na forma como se dará a gestão da clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Não dar resposta à demanda reprimida é adequado do ponto de vista da gestão da clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O grande objetivo da gestão da clínica é aumentar, para o médico, a demanda administrativa e diminuir a demanda assistencial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na abordagem individual, procura-se intervir nas pessoas de menor risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a (Correta): A gestão da clínica é o conjunto de tecnologias de microgestão destinadas a promover uma assistência segura e de qualidade. Ela não ocorre de forma isolada, mas depende diretamente do modelo de atenção à saúde vigente (seja ele um modelo fragmentado ou um modelo de Redes de Atenção à Saúde). A estrutura do sistema define como o fluxo de pacientes será organizado, como os recursos serão alocados e quais ferramentas de gestão (como diretrizes clínicas ou gestão de casos) serão prioritárias.\n\nAlternativa b (Incorreta): A demanda reprimida é o conjunto de necessidades de saúde da população que o serviço não consegue absorver, gerando filas de espera e agravamento de quadros clínicos. Do ponto de vista da gestão da clínica, o objetivo é justamente buscar estratégias para reduzir essa demanda, garantindo acesso oportuno e equidade. Não dar resposta à demanda reprimida é um sinal de falha na gestão e na organização da rede.\n\nAlternativa c (Incorreta): O objetivo da gestão da clínica é exatamente o oposto: busca-se qualificar a demanda assistencial e otimizar os processos para que o médico e a equipe de saúde possam focar na prática clínica baseada em evidências. Aumentar a demanda administrativa (burocracia) é um obstáculo à eficiência e à segurança do paciente, sendo algo que a boa gestão procura mitigar por meio da organização de fluxos e suporte tecnológico.\n\nAlternativa d (Incorreta): Na abordagem clínica individual, o raciocínio é geralmente pautado na estratificação de risco. A intervenção costuma ser mais intensiva justamente nas pessoas de maior risco ou que já apresentam patologias estabelecidas, visando evitar complicações e mortes evitáveis. Intervir prioritariamente em pessoas de menor risco seria uma aplicação ineficiente de recursos no contexto da gestão da clínica individual.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:05.506Z"
+  },
+  {
+    "id": "AJUDA_e0bac304-e247-46a5-b2e0-571e29e7d169",
+    "originalId": "e0bac304-e247-46a5-b2e0-571e29e7d169",
+    "statement": "Uma mulher de 72 anos, é levada pela filha ao ginecologista com queixa de prurido vulvar, dor e “ferida” na vulva. A filha refere que sua mãe não faz exame preventivo há mais de 5 anos. Ao exame, observa se hipocromia vulvar, atrofia e úlcera de aproximadamente 5 mm, com secreção serossanguinolenta, em região vestibular. Com relação a este caso clínico, avalie as afirmativas a seguir, a respeito do diagnóstico e da conduta médica adequada:\nI. A biópsia é o método de eleição para confirmar a suspeita de malignidade.\nII. O diagnóstico diferencial inclui condiloma plano, condiloma acuminado, neoplasia intraepitelial vulvar (NIV), nevos, líquen escleroso e dermatose seborreica.\nIII. As distrofias vulvares são de grande importância, devido ao potencial maligno por elas abrigado.\nIV. Doença de Paget está inclusa no diagnóstico diferencial.\n\nEstá CORRETO o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e II, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I, II e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I, III e IV, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente em questão apresenta 72 anos, idade em que a incidência de neoplasias vulvares aumenta significativamente. O quadro clínico de prurido crônico, hipocromia (perda da cor) e atrofia sugere fortemente o diagnóstico de líquen escleroso, uma dermatose crônica comum na pós-menopausa. No entanto, a presença de uma úlcera de 5 mm com secreção serossanguinolenta em uma região de distrofia é um sinal de alerta para o carcinoma espinocelular (CEC) de vulva, que muitas vezes surge sobre lesões de líquen escleroso preexistentes.\n\nANÁLISE DAS AFIRMATIVAS\n\nAfirmativa I: CORRETA. Diante de qualquer lesão vulvar suspeita, como uma úlcera que não cicatriza, nódulo ou área de espessamento em paciente idosa, a biópsia é o padrão-ouro. O procedimento é essencial para confirmar a malignidade ou identificar lesões precursoras, permitindo o planejamento terapêutico adequado. Geralmente, utiliza-se o punch de Keyes para a coleta do material.\n\nAfirmativa II: INCORRETA. O erro desta afirmativa reside na inclusão de diagnósticos que não condizem com o quadro clínico apresentado. O condiloma plano é uma manifestação da sífilis secundária, raramente apresentando-se como uma úlcera isolada em fundo atrófico em uma paciente de 72 anos. A dermatose seborreica vulvar costuma ser eritematosa e descamativa, sem causar ulceração ou atrofia hipocrômica severa. O foco do diferencial neste caso deve ser entre lesões pré-neoplásicas e neoplásicas.\n\nAfirmativa III: CORRETA. As chamadas distrofias vulvares, termo que engloba o líquen escleroso, possuem grande relevância clínica devido ao seu potencial de malignização. O líquen escleroso é o principal precursor do carcinoma espinocelular de vulva do \"tipo diferenciado\" (não relacionado ao HPV). Por isso, pacientes com essa condição devem ser monitoradas periodicamente e qualquer modificação na lesão (como a úlcera descrita) deve ser investigada.\n\nAfirmativa IV: CORRETA. A Doença de Paget vulvar é uma neoplasia intraepitelial que atinge predominantemente mulheres idosas. Ela se manifesta clinicamente como uma placa eritematosa, às vezes com áreas de erosão ou ulceração, e o sintoma principal é o prurido vulvar intenso e crônico. Pela similaridade clínica com outras lesões vulvares, deve sempre constar no rol de diagnósticos diferenciais de lesões suspeitas na senescência.\n\nCONCLUSÃO\n\nEstão corretas as afirmativas I, III e IV. Portanto, a alternativa correta é a letra (c).",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Doenças de Vulva e Vagina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:05.506Z"
+  },
+  {
+    "id": "AJUDA_e0c0449d-d906-4556-ac52-e85fa21c1760",
+    "originalId": "e0c0449d-d906-4556-ac52-e85fa21c1760",
+    "statement": "Com relação aos exames mamográficos no Brasil é CORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mulheres entre 40 e 49 anos podem realizar a mamografia no SUS, mesmo sem sinais ou sintomas da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A mamografia de rotina, realizada a cada cinco anos, é recomendada para mulheres na faixa de 50 a 74 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mulher de 38 anos com achado de nódulo suspeito não deve fazer mamografia, mas deve se submeter ao ultrassom de mamas por ter mamas densas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Para mulheres com 75 anos ou mais, a recomendação é não se fazer mais o rastreio, restringindo-se os exames somente se houver algum achado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A: Correta. Embora as diretrizes técnicas do Ministério da Saúde priorizem o rastreamento populacional na faixa dos 50 aos 69 anos a cada dois anos, a Lei Federal nº 11.664/2008 assegura por lei a realização da mamografia para todas as mulheres a partir dos 40 anos no Sistema Único de Saúde (SUS). Além disso, as principais sociedades de especialistas do Brasil (Colégio Brasileiro de Radiologia, Sociedade Brasileira de Mastologia e FEBRASGO) recomendam o rastreamento anual iniciando aos 40 anos. Logo, a paciente assintomática nessa faixa etária tem o direito de realizar o exame na rede pública.\n\nAlternativa B: Incorreta. A mamografia de rotina nunca é recomendada com intervalo de cinco anos. O Ministério da Saúde preconiza a periodicidade bienal (a cada dois anos) para a faixa dos 50 aos 69 anos, enquanto as sociedades médicas recomendam periodicidade anual dos 40 aos 74 anos.\n\nAlternativa C: Incorreta. Diante de um nódulo suspeito, trata-se de investigação diagnóstica e não de rastreamento. A partir dos 35 a 40 anos, a mamografia diagnóstica é perfeitamente aceita e necessária para pesquisar microcalcificações e distorções arquiteturais, mesmo em mamas densas, devendo ser complementada com a ultrassonografia mamária.\n\nAlternativa D: Incorreta. O rastreamento após os 75 anos não é expressamente contraindicado nem restrito a achados clínicos. As diretrizes médicas recomendam a individualização da conduta, orientando manter o rastreio enquanto a mulher tiver boas condições clínicas gerais e expectativa de vida superior a 7 a 10 anos.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:05.506Z"
+  },
+  {
+    "id": "AJUDA_e0c14af1-2394-407c-8234-a5d491628d3b",
+    "originalId": "e0c14af1-2394-407c-8234-a5d491628d3b",
+    "statement": "Homem, 28 anos de idade, vítima de atropelamento com trauma do membro inferior esquerdo. Após 7 dias de internação, observa-se lesão no membro acometido, sem solução de continuidade com meio externo. Ao exame físico, a escara cutânea está descolada da profundidade e apresenta grande hematoma subcutâneo, sem perfusão cutânea adequada, conforme imagem a seguir: \n\nAssinale a alternativa que apresenta o provável diagnóstico e a conduta cirúrgica mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fasceite necrotizante; Punção diagnóstica para colheita de material para cultura, curativo oclusivo simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fasceite necrotizante; Incisão, drenagem de hematoma, colheita de material para cultura e instalação de curativo por pressão negativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ferimento descolante oculto; Ressecção da pele desvitalizada, limpeza cirúrgica e realização de curativo por pressão negativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ferimento descolante oculto; Ressecção e enxertamento da pele descolada, enxertia da pele emagrecida sobre o leito cruento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clinico e a imagem apresentada sao classicos de um ferimento descolante oculto, tambem conhecido como lesao de degloving fechado ou lesao de Morel-Lavallee. Esse acometimento resulta de forcas de cisalhamento tangenciais (comuns em atropelamentos) que separam a pele e o tecido subcutaneo da fascia muscular subjacente, rompendo os vasos perfurantes. Na imagem, observa-se uma extensa area de necrose cutanea (escaras enegrecidas e desvitalizadas) decorrente da isquemia prolongada ao longo de 7 dias de evolucao.\n\nAlternativa a: Incorreta. O quadro tem etiologia traumatica e mecanica, nao infecciosa. A fasceite necrotizante e uma infeccao bacteriana aguda, invasiva e rapidamente progressiva, associada a sepse e toxemia sistemica. Alem disso, uma puncao e curativo simples sao medidas insuficientes para tratar uma necrose tecidual extensa.\n\nAlternativa b: Incorreta. O diagnostico de fasceite necrotizante esta errado. Embora o curativo por pressao negativa seja util, a causa base nao e um processo infeccioso primario, mas sim o cisalhamento traumatico dos tecidos moles.\n\nAlternativa c: Correta. Trata-se de um ferimento descolante oculto. Como a pele ja se encontra francamente desvitalizada e com necrose estabelecida (evidenciada pela escara enegrecida e ausencia de perfusao na foto), o tratamento mandatorio consiste no desbridamento amplo com resseccao de todo o tecido necrotico, limpeza cirurgica rigorosa e instalacao de terapia por pressao negativa (curativo a vacuo). Isso permite controlar o exsudato, diminuir o espaco morto e acelerar a granulacao para posterior reconstrucao tecidual.\n\nAlternativa d: Incorreta. Embora o diagnostico esteja correto, a conduta de emagrecer e enxertar a propria pele descolada (tecnica de Krasavitche) so pode ser executada na fase aguda e precoce do trauma, quando a pele descolada ainda mantem viabilidade biologica. Apos 7 dias, a pele visivel na imagem ja esta necrosada, sendo inviavel para uso como enxerto.\n\nGabarito: Letra c.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Plástica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/198e7934bfc73cbd757fcfd66dad4fd903e59cd3555c1a669f8f511506f99532.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e0c14af1-2394-407c-8234-a5d491628d3b_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:02:06.039Z"
+  }
+]

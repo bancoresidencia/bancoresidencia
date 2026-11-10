@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_05cb59b2-f35f-4ecd-8424-adedfa1d133b",
+    "originalId": "05cb59b2-f35f-4ecd-8424-adedfa1d133b",
+    "statement": "Paciente A.P.B., 28 anos, portadora de Lúpus eritematoso sistêmico, diagnosticado há 3 anos, dá entrada na Unidade de Emergência com quadro de hemiparesia direita e afasia, percebido hoje pela manhã, ao acordar. Faz uso de: prednisona 5 mg/dia; hidroxicloroquina 400 mg/dia; azatioprina 100 mg/dia; pantoprazol 20 mg/dia; colecalciferol 7.000 UI/semana. A tomografia computadorizada de crânio da admissão não apresentou alterações. No entanto, foi repetido o exame após 24 horas, que confirmou a hipótese diagnóstica de Acidente vascular cerebral isquêmico. Foram solicitados autoanticorpos, dentre eles o anticoagulante lúpico, anticardiolipina e antibeta2 glicoproteina1, todos positivos. \n\nQual o diagnóstico e o tratamento domiciliar mais indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lúpus Eritematoso sistêmico; aumento da dose de prednisona para 40 mg/dia e troca da azatioprina pelo micofenolato de sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome do Anticorpo Antifosfolipídeo (SAAF); AAS e atorvastatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome do Anticorpo Antifosfolipídeo (SAAF); apixabana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome do Anticorpo Antifosfolipídeo (SAAF); varfarina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico e Raciocínio Clínico:\nA paciente apresenta um quadro de lúpus eritematoso sistêmico (LES) e manifesta um evento isquêmico cerebral agudo (AVC isquêmico). A presença de tripla positividade para os anticorpos antifosfolipídeos (anticoagulante lúpico, anticardiolipina e anti-beta-2-glicoproteína I) em uma paciente com evento trombótico confirma o diagnóstico de Síndrome do Anticorpo Antifosfolipídeo (SAAF) secundária ao lúpus. Para pacientes que já apresentaram um evento trombótico (prevenção secundária), o tratamento envolve obrigatoriamente a anticoagulação plena.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A paciente de fato tem lúpus, mas o evento agudo descrito é uma complicação trombótica (SAAF). O ajuste da imunossupressão com aumento de prednisona e troca da azatioprina pelo micofenolato seria indicado para tratar uma atividade inflamatória grave da doença (como nefrite lúpica), mas não trata a causa da trombose nem previne novos eventos isquêmicos.\n\nAlternativa b) Incorreta. O diagnóstico de SAAF está correto. No entanto, o tratamento proposto (AAS e atorvastatina) é insuficiente para prevenção secundária em pacientes com SAAF e evento trombótico prévio. O AAS é um antiagregante plaquetário, e a SAAF exige anticoagulação oral plena para reduzir o risco de novos episódios.\n\nAlternativa c) Incorreta. O diagnóstico está correto, mas os anticoagulantes orais diretos (DOACs), como a apixabana, rivaroxabana e edoxabana, não são recomendados para pacientes com SAAF de alto risco, especialmente aqueles com tripla positividade de anticorpos. Estudos clínicos (como o TRAPS) demonstraram que os DOACs apresentam uma taxa de falha terapêutica e recorrência de eventos trombóticos significativamente maior do que a da varfarina nesses pacientes.\n\nAlternativa d) Correta. O diagnóstico é Síndrome do Anticorpo Antifosfolipídeo (SAAF). O tratamento de escolha para prevenção secundária de eventos trombóticos arteriais na SAAF, particularmente na presença de tripla positividade de anticorpos, é a anticoagulação com antagonistas da vitamina K, sendo a varfarina o medicamento padrão-ouro. O objetivo é manter o RNI (Razão Normatizada Internacional) na faixa terapêutica, geralmente entre 2,0 e 3,0.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:34.555Z"
+  },
+  {
+    "id": "AJUDA_05d2c015-d1b7-4d83-9e61-d21cf7915bb6",
+    "originalId": "05d2c015-d1b7-4d83-9e61-d21cf7915bb6",
+    "statement": "Um paciente de 70 anos de idade, diabético tipo 2 e tabagista, compareceu à consulta com queixa de dor em membro inferior esquerdo. O exame físico, mostrou FC = 88 bpm, FR = 18 irpm e SatO2 = 97%. Apresenta palidez e cianose no pé esquerdo, com pulsos femorais palpáveis e ausência de pulsos distais. \n\nConsiderando esse caso clínico, qual a principal conduta nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar antibiótico de amplo espectro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar para angioplastia urgente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar angiografia para avaliação de obstrução arterial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar exames de sangue e aguardar resposta clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO paciente apresenta um quadro clínico compatível com Doença Arterial Periférica (DAP) em estágio de isquemia crítica. Os fatores de risco são clássicos: idade avançada, diabetes mellitus e tabagismo. A presença de dor em repouso, associada à palidez, cianose e ausência de pulsos distais (com pulso femoral presente), indica uma obstrução arterial importante localizada abaixo do ligamento inguinal (infrainguinal). O objetivo principal nesse cenário é salvar o membro da amputação através da revascularização.\n\nAnálise das Alternativas:\n\nAlternativa (a) Incorreta: A introdução de antibióticos de amplo espectro seria justificada se houvesse sinais de infecção sobreposta, como erisipela, celulite ou uma úlcera infectada com sinais sistêmicos. Embora o pé diabético frequentemente envolva infecção, a queixa principal e os achados físicos deste caso são predominantemente isquêmicos. O tratamento da infecção sem a correção do fluxo sanguíneo não evitará a progressão da necrose.\n\nAlternativa (b) Incorreta: A angioplastia é uma modalidade de tratamento (revascularização endovascular). Embora possa ser o tratamento definitivo para este paciente, a decisão por angioplastia ou cirurgia de bypass depende do mapeamento prévio da anatomia das lesões. Não se encaminha diretamente para o tratamento sem o planejamento diagnóstico da obstrução.\n\nAlternativa (c) Correta: A angiografia (ou arteriografia) é o exame necessário para o planejamento terapêutico em pacientes com isquemia crítica. Ela permite localizar o ponto exato da oclusão, avaliar a extensão da doença e verificar a qualidade dos vasos distais (leito de deságue). Com essas informações, a equipe médica pode decidir se o paciente é candidato a uma angioplastia ou a uma cirurgia de revascularização aberta. Em contextos modernos, a angiotomografia ou a angiorressonância também poderiam ser usadas, mas a angiografia permanece fundamental para a intervenção.\n\nAlternativa (d) Incorreta: Solicitar exames de sangue para avaliação geral (função renal, glicemia, hemograma) é importante, porém a conduta de \"aguardar resposta clínica\" é errada e perigosa. A isquemia crítica é uma condição que não regride espontaneamente; sem intervenção para restaurar o fluxo arterial, o quadro evoluirá para gangrena e amputação do membro.\n\nConclusão: \n\nDiante de sinais de insuficiência arterial aguda ou crônica agudizada com risco de perda de membro, a conduta prioritária é a avaliação da anatomia vascular para programar a revascularização urgente, sendo a angiografia o procedimento indicado.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo Vascular",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:34.555Z"
+  },
+  {
+    "id": "AJUDA_05d49199-e5c2-4e8e-a062-d7dd9bdc7233",
+    "originalId": "05d49199-e5c2-4e8e-a062-d7dd9bdc7233",
+    "statement": "Pais de um menino de 10 anos levam a criança para avaliação médica em Unidade Básica de Saúde (UBS). Relatam que seu filho se dá bem com a família até que não lhe seja permitido fazer algo que deseja. Quando isso ocorre, ele fica irritado, impulsivamente agressivo e agitado por várias horas. Assim que se acalma ou consegue o que quer, fica feliz e agradável novamente. Os pais entendem que o filho parece agir deliberadamente para aborrecer os outros e nunca assume a culpa por seus próprios erros ou mau comportamento. Relatam ainda que ele discute com adultos ou figuras de autoridade e em várias situações não aceita as regras de boa convivência com os familiares.\nConsiderando o caso descrito, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transtorno afetivo bipolar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transtorno de oposição desafiante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Transtorno disruptivo da desregulação do humor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno do déficit de atenção e hiperatividade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um menino de 10 anos com um padrão persistente de comportamento que envolve humor irritável, comportamento questionador/desafiante e índole vingativa. Os pontos-chave são: desobediência a figuras de autoridade, recusa em seguir regras, deliberadamente aborrecer os outros, não assumir responsabilidade pelos erros (atribuindo a culpa a terceiros) e irritabilidade quando contrariado.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. O Transtorno Afetivo Bipolar (TAB) na infância é caracterizado por episódios distintos de alteração do humor (mania/hipomania e depressão). Embora a irritabilidade possa estar presente, o TAB envolve mudanças cíclicas no nível de energia, sono e pensamento, que não dependem necessariamente de um gatilho externo (como ser contrariado). No caso em questão, o comportamento é reativo e crônico, sem a ciclicidade típica do TAB.\n\nb) CORRETA. O Transtorno de Oposição Desafiante (TOD) é o diagnóstico mais provável. Segundo o DSM-5, o TOD se caracteriza por um padrão de humor colérico/irritável, comportamento desafiante/argumentativo ou índole vingativa que dura pelo menos seis meses. O paciente preenche vários critérios: discute com adultos, desafia regras, aborrece os outros deliberadamente e responsabiliza terceiros por seus erros. Um ponto fundamental para o diagnóstico de TOD é que os sintomas frequentemente surgem na interação com figuras de autoridade ou familiares.\n\nc) INCORRETA. O Transtorno Disruptivo da Desregulação do Humor (TDDH) também cursa com irritabilidade e explosões de temperamento. No entanto, a característica diferencial do TDDH é que a irritabilidade é crônica e grave, estando presente na maior parte do tempo, inclusive entre as explosões de raiva. No caso descrito, o menino fica \"feliz e agradável novamente\" assim que consegue o que quer, o que descaracteriza a irritabilidade persistente e o humor basal persistentemente negativo exigidos para o TDDH.\n\nd) INCORRETA. O Transtorno do Déficit de Atenção e Hiperatividade (TDAH) foca em sintomas de desatenção, desorganização e/ou hiperatividade e impulsividade motora. Embora crianças com TDAH possam ter dificuldades em seguir regras por distração ou impulsividade, elas não apresentam, primariamente, o componente de desafio deliberado, o desejo de aborrecer os outros ou a recusa sistemática em assumir culpas, que são a marca do comportamento opositor descrito no enunciado. O TDAH e o TOD são frequentemente comórbidos, mas a descrição clínica foca exclusivamente nos sintomas de oposição e desafio.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": 9.901369643200859,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:34.555Z"
+  },
+  {
+    "id": "AJUDA_05d71da3-ce5a-4191-8295-c0dd4358a92b",
+    "originalId": "05d71da3-ce5a-4191-8295-c0dd4358a92b",
+    "statement": "Você está de plantão na UPA e atende uma gestante de risco habitual, com 38 semanas de gestação, em trabalho de parto, ela está com 7cm de dilatação e bolsa rota, feto único, você toca o acrômio do feto. O BCF é de 140bpm e boa movimentação fetal. Você precisa transferir a paciente para maternidade de referência e para que o plantonista entenda a urgência do caso, é necessário que se descreva corretamente a posição do feto. Das alternativas abaixo qual descreve CORRETAMENTE a estática fetal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Situação Transversa e Apresentação Córmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Situação Longitudinal e Apresentação Cefálica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Situação Longitudinal e Apresentação Pélvica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Situação Córmica e Apresentação Transversa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Situação Pélvica e Apresentação Longitundinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é fundamental dominar os conceitos de estática fetal, especificamente os termos situação e apresentação.\n\nA situação refere-se à relação entre o maior eixo do feto e o maior eixo da cavidade uterina (eixo materno). \n- Longitudinal: os eixos coincidem (feto \"em pé\" ou de cabeça para baixo).\n- Transversa: os eixos são perpendiculares (feto \"atravessado\").\n- Oblíqua: os eixos se cruzam em ângulo.\n\nA apresentação refere-se à região fetal que ocupa a área do estreito superior da pelve e nela irá se insinuar.\n- Cefálica: a cabeça está voltada para o canal de parto.\n- Pélvica: as nádegas ou pés estão voltados para o canal de parto.\n- Córmica: o ombro (cormo) está voltado para o canal de parto.\n\nAnálise do caso clínico: O enunciado afirma que, ao realizar o toque vaginal, o médico tocou o acrômio do feto. O acrômio é o ponto de referência da apresentação de ombro, tecnicamente chamada de apresentação córmica. Para que o ombro seja a parte que se apresenta no estreito superior da pelve, o feto obrigatoriamente deve estar atravessado no útero, o que configura a situação transversa.\n\nAnálise das alternativas:\n\na) CORRETA. Como o acrômio foi palpado, a apresentação é denominada córmica. Para que o ombro se apresente no colo uterino, o eixo do feto deve estar perpendicular ao eixo materno, o que define a situação transversa. Essa condição impossibilita o parto vaginal e exige resolução por via cesariana.\n\nb) INCORRETA. Na situação longitudinal e apresentação cefálica, o examinador palparia as suturas e fontanelas do crânio fetal, e não o acrômio.\n\nc) INCORRETA. Na situação longitudinal e apresentação pélvica, o examinador palparia as nádegas (sulco interglúteo), o sacro ou os pés do feto.\n\nd) INCORRETA. Esta alternativa apresenta um erro de nomenclatura técnica, invertendo os conceitos. Córmica é uma apresentação, enquanto transversa é uma situação.\n\ne) INCORRETA. Novamente, há uma inversão de conceitos e erro de classificação. Pélvica é uma apresentação (que ocorre em situações longitudinais) e longitudinal é uma situação.\n\nPortanto, a descrição correta da estática fetal para o encaminhamento da paciente é situação transversa e apresentação córmica.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:34.555Z"
+  },
+  {
+    "id": "AJUDA_05df3ca2-5189-4949-b5a8-7cafbfdd1fc4",
+    "originalId": "05df3ca2-5189-4949-b5a8-7cafbfdd1fc4",
+    "statement": "Assinale a alternativa correta sobre o tratamento não medicamentoso com base no Protocolo Clínico e Diretrizes Terapêuticas do Tabagismo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inclui diferentes etapas que visam à conquista da vida sem tabaco, entre as quais estão as sessões de psicoterapia, o uso do cigarro eletrônico durante 2 meses e os encontros entre tabagistas em fase de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Inclui o aconselhamento estruturado com 4 sessões iniciais que abrangem entender por que se fuma e como isso afeta a saúde, os primeiros dias sem fumar, como vencer os obstáculos para permanecer sem fumar e os benefícios obtidos após parar de fumar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Entre os casos elegíveis para o tratamento sem o uso de medicamentos, estão aqueles que têm poucos sintomas de abstinência e consumo do primeiro cigarro do dia igual ou inferior a 1 hora após acordar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento do tabagismo pode ser realizado em qualquer nível de atenção do SUS, preferencialmente pela rede de serviços especializados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Incorreta. O Protocolo Clínico e Diretrizes Terapêuticas (PCDT) do Tabagismo não recomenda, em hipótese alguma, o uso de cigarros eletrônicos como ferramenta para a cessação do tabagismo. Além de não haver evidências de segurança e eficácia para esse fim, a comercialização e importação desses dispositivos são proibidas pela ANVISA no Brasil. A abordagem não medicamentosa baseia-se na Terapia Cognitivo-Comportamental (TCC), e não em psicoterapia genérica.\n\nAlternativa B: Correta. Esta alternativa descreve com precisão a estrutura da abordagem intensiva ou abordagem cognitivo-comportamental preconizada pelo Ministério da Saúde e pelo INCA. O protocolo padrão consiste em 4 sessões iniciais (semanais) com os temas: 1. Entender por que se fuma e como isso afeta a saúde; 2. Os primeiros dias sem fumar; 3. Como vencer os obstáculos para permanecer sem fumar; 4. Benefícios obtidos após parar de fumar. Após essas sessões, seguem-se encontros de manutenção (quinzenais e depois mensais).\n\nAlternativa C: Incorreta. De acordo com os critérios de dependência (Teste de Fagerström), fumantes que consomem o primeiro cigarro do dia nos primeiros 30 minutos após acordar são considerados dependentes pesados e têm indicação prioritária de tratamento medicamentoso associado à abordagem comportamental. Além disso, fumantes de mais de 20 cigarros por dia ou aqueles que já falharam apenas com a abordagem comportamental também devem receber medicação. O tratamento sem medicamentos é indicado para fumantes de menos de 10 cigarros por dia ou casos muito específicos, mas o limite de 1 hora citado na alternativa não é o critério de corte correto para alta dependência.\n\nAlternativa D: Incorreta. O tratamento do tabagismo deve ser realizado preferencialmente na Atenção Primária à Saúde (Unidades Básicas de Saúde - UBS), e não na rede de serviços especializados. A Atenção Primária é o nível de atenção ideal devido ao seu papel de coordenação do cuidado e maior proximidade com a população. Os serviços especializados (Centros de Referência) são reservados para casos de maior complexidade, como pacientes com múltiplas comorbidades psiquiátricas ou falhas repetidas em tratamentos anteriores.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Dependência Química",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:34.555Z"
+  },
+  {
+    "id": "AJUDA_05e60f57-fd8e-47e0-bc17-f62718376030",
+    "originalId": "05e60f57-fd8e-47e0-bc17-f62718376030",
+    "statement": "O BNP é um biomarcador amplamente utilizado na prática clínica para o diagnóstico e manejo da insuficiência cardíaca. Qual das seguintes afirmações sobre o uso do BNP é correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Níveis de BNP inferiores a 100 pg/mL praticamente excluem o diagnóstico de insuficiência cardíaca em pacientes com dispneia aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O BNP é um marcador exclusivo para insuficiência cardíaca, não sendo relevante em outras condições cardiovasculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Níveis elevados de BNP não têm correlação com a gravidade da insuficiência cardíaca ou com desfechos clínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O BNP deve ser utilizado isoladamente para o diagnóstico da insuficiência cardíaca, sem considerar outros exames clínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A dosagem de BNP é irrelevante para o acompanhamento da resposta ao tratamento em pacientes com insuficiência cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O BNP (Peptídeo Natriurético do Tipo B) é um hormônio sintetizado principalmente pelos miócitos ventriculares em resposta ao estiramento das fibras musculares e ao aumento da pressão intraventricular. Ele desempenha um papel fundamental no diagnóstico e manejo da Insuficiência Cardíaca (IC).\n\nAlternativa (a) - Correta: O BNP possui um elevadíssimo valor preditivo negativo. Em pacientes que chegam à emergência com dispneia aguda, níveis de BNP inferiores a 100 pg/mL tornam o diagnóstico de insuficiência cardíaca muito improvável (excluindo-o na grande maioria dos casos). Esse ponto de corte é amplamente validado por grandes estudos, como o Breathing Not Properly, para diferenciar causas cardíacas de causas pulmonares de falta de ar.\n\nAlternativa (b) - Incorreta: O BNP não é exclusivo da insuficiência cardíaca. Ele pode estar elevado em diversas outras condições, como insuficiência renal (pela redução do clearance), idade avançada, embolia pulmonar, fibrilação atrial, hipertensão pulmonar e sepse. Portanto, sua interpretação deve ser sempre contextualizada.\n\nAlternativa (c) - Incorreta: Existe uma correlação direta entre os níveis de BNP, a gravidade da doença e o prognóstico. Pacientes com níveis persistentemente elevados ou que não apresentam queda após o início do tratamento têm maior risco de reospitalização e morte. Ele é um excelente marcador de desfechos clínicos.\n\nAlternativa (d) - Incorreta: O BNP é um exame complementar e nunca deve substituir a avaliação clínica. O diagnóstico de insuficiência cardíaca é clínico, baseado nos critérios de Framingham ou Boston, associado a exames de imagem como o ecocardiograma. O BNP auxilia na dúvida diagnóstica, mas não deve ser utilizado isoladamente.\n\nAlternativa (e) - Incorreta: A monitorização dos níveis de BNP pode ser muito útil para avaliar a resposta ao tratamento. Uma queda significativa nos níveis do biomarcador durante a internação sugere que a terapia de compensação (como o uso de diuréticos e vasodilatadores) está sendo eficaz, auxiliando inclusive na decisão sobre a alta hospitalar.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:34.555Z"
+  },
+  {
+    "id": "AJUDA_05ed92ee-ea66-423d-8d1e-dafae76ab926",
+    "originalId": "05ed92ee-ea66-423d-8d1e-dafae76ab926",
+    "statement": "Gestante, 28 anos de idade, 24 semanas de gestação (bem datada com ecografia de primeiro trimestre), com antecedente de by-pass gástrico há 3 anos, comparece à consulta de pré-natal. Refere episódios ocasionais de hipoglicemia pós-prandial e apresenta IMC atual de 25 kg/m². Sobre esse caso, considere as afirmativas a seguir. \n\nI. O rastreamento de diabetes gestacional deve ser realizado através do teste oral de tolerância à glicose (TOTG) com 75 g. \nII. Pacientes com antecedente de cirurgia bariátrica têm maior risco de deficiências nutricionais, como ferro, vitamina B12, cálcio e vitamina D. \nIII. A cirurgia bariátrica disabsortiva está associada a um risco aumentado de restrição de crescimento fetal. \nIV. A colelitíase, obstruções intestinais e hérnias incisionais são complicações da cirurgia bariátrica durante a gestação. \n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS:\n\nAfirmativa I (Incorreta): O Teste Oral de Tolerância à Glicose (TOTG) com 75 g é contraindicado ou não recomendado para gestantes submetidas a cirurgias bariátricas disabsortivas ou mistas (como o bypass gástrico em Y de Roux). A rápida passagem do conteúdo gástrico para o intestino delgado (esvaziamento gástrico acelerado) pode desencadear a Síndrome de Dumping, caracterizada por mal-estar, náuseas, taquicardia e, crucialmente, hipoglicemia reativa pós-prandial, o que torna o exame pouco tolerado e os resultados pouco confiáveis. O rastreamento de diabetes gestacional nessas pacientes deve ser feito preferencialmente por meio do automonitoramento da glicemia capilar (perfil glicêmico) durante 7 a 14 dias ou, em alguns protocolos, pela hemoglobina glicada (embora esta tenha menor sensibilidade na gestação).\n\nAfirmativa II (Correta): As cirurgias bariátricas, especialmente as técnicas mistas (bypass), alteram a absorção de diversos nutrientes. A exclusão do duodeno e do jejuno proximal reduz a absorção de ferro, cálcio e vitamina D. Além disso, a redução da produção de ácido clorídrico e do fator intrínseco no estômago reduzido prejudica a absorção de vitamina B12. Por isso, o monitoramento laboratorial rigoroso e a suplementação vitamínica são fundamentais no pré-natal dessas pacientes.\n\nAfirmativa III (Correta): Embora a cirurgia bariátrica reduza riscos de complicações como macrossomia fetal e pré-eclâmpsia (devido ao controle do IMC e da resistência insulínica), ela está associada a um risco aumentado de o recém-nascido ser Pequeno para a Idade Gestacional (PIG) ou apresentar Restrição de Crescimento Fetal (RCF). Isso ocorre principalmente devido às deficiências nutricionais maternas e às alterações na absorção de nutrientes necessários para o desenvolvimento pleno do feto.\n\nAfirmativa IV (Correta): A gestação após cirurgia bariátrica impõe riscos cirúrgicos específicos. A perda de peso rápida predispõe à colelitíase (formação de cálculos biliares). Além disso, o aumento do útero gravídico e a alteração da pressão intra-abdominal elevam o risco de complicações mecânicas, como hérnias incisionais e, de forma mais grave, obstruções intestinais causadas por hérnias internas (como a hérnia de Petersen), que são emergências cirúrgicas potencialmente fatais se não diagnosticadas rapidamente.\n\nCONCLUSÃO:\n\nEstão corretas as afirmativas II, III e IV. Portanto, a alternativa correta é a letra (e).",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:34.555Z"
+  },
+  {
+    "id": "AJUDA_05f4f019-ea69-4648-aae4-4582252f7390",
+    "originalId": "05f4f019-ea69-4648-aae4-4582252f7390",
+    "statement": "Lactente de 3 meses é levado a uma Unidade Básica de Saúde por apresentar crises de tosse intensa há 15 dias, acentuando-se há 10 dias em crises sucessivas, com associação de vômitos. Durante as crises, apresenta cianose, hemorragia conjuntival, petéquias e rubor facial. Foi realizada imunização somente ao nascimento.\nQual exame deve ser realizado para confirmação da hipótese diagnóstica nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bacterioscopia pelo Gram em amostra de swab de nasofaringe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hemograma com contagem de plaquetas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reação em cadeia da polimerase em amostra de swab de nasofaringe.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sorologia para toxina em amostra de sangue.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Trata-se de um caso clássico de coqueluche (pertussis), causada pela Bordetella pertussis. Os elementos que sustentam a hipótese são:\n\n- Lactente jovem (3 meses), faixa etária de maior gravidade e mortalidade.\n- Tosse há 15 dias, evoluindo para crises paroxísticas sucessivas (fase paroxística).\n- Vômitos pós-tosse (emese pós-paroxística).\n- Cianose, rubor facial, petéquias e hemorragia conjuntival, que decorrem do aumento da pressão intratorácica e venosa durante os paroxismos.\n- Esquema vacinal incompleto: recebeu apenas as vacinas do nascimento (BCG e hepatite B). A primeira dose da vacina pentavalente (que contém o componente pertussis) é aplicada aos 2 meses, portanto o lactente não está protegido.\n\nEm lactentes pequenos, o guincho inspiratório típico pode estar ausente, e as crises de cianose e apneia podem predominar.\n\nConfirmação diagnóstica: segundo o Ministério da Saúde, os métodos laboratoriais de confirmação são a cultura e a PCR em tempo real, ambas em secreção de nasofaringe. A cultura é o padrão-ouro clássico, porém tem baixa sensibilidade, sobretudo após a fase catarral ou com uso prévio de antibiótico. A PCR é mais sensível e mais rápida, sendo o exame de escolha na prática. A coleta deve ser feita com swab de nasofaringe, idealmente antes de iniciar o antibiótico e em até cerca de 3 a 4 semanas do início da tosse.\n\nAnálise das alternativas:\n\na) Incorreta. A Bordetella pertussis é um cocobacilo Gram-negativo pequeno, de difícil visualização. A bacterioscopia não permite diferenciá-la de outros microrganismos da flora nasofaríngea. Não tem valor diagnóstico.\n\nb) Incorreta. O hemograma pode mostrar leucocitose com linfocitose absoluta importante (reação leucemoide linfocitária), achado sugestivo e com valor prognóstico (hiperleucocitose associa-se a maior gravidade e hipertensão pulmonar). As plaquetas também podem estar elevadas. Porém, é um exame inespecífico e não confirma o diagnóstico.\n\nc) Correta. A PCR em swab de nasofaringe detecta o DNA da B. pertussis com alta sensibilidade e especificidade. É o método de confirmação preconizado, juntamente com a cultura.\n\nd) Incorreta. A sorologia para anticorpos contra a toxina pertussis (anti-PT) não é útil em lactentes jovens. Eles podem ter anticorpos maternos transferidos pela placenta (inclusive pela vacinação dTpa na gestação), têm resposta imune própria limitada e a interpretação é confundida pela vacinação. Além disso, a sorologia não é método padronizado de confirmação na rotina da vigilância brasileira e tem maior aplicação em adolescentes e adultos com tosse prolongada.\n\nPonto prático: em lactentes menores de 6 meses com suspeita de coqueluche, considerar internação pelo risco de apneia. O tratamento de escolha é a azitromicina, que também é indicada como quimioprofilaxia para os contatos. A notificação é compulsória.\n\nResposta: alternativa C.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Coqueluche"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:34.555Z"
+  },
+  {
+    "id": "AJUDA_05f5f322-70f5-4806-8f56-59a0abdba99f",
+    "originalId": "05f5f322-70f5-4806-8f56-59a0abdba99f",
+    "statement": "Uma jovem vítima de acidente de moto, atendida pela equipe pré-hospitalar, é conduzida até a emergência de um hospital terciário para o atendimento inicial. O rolamento em bloco é uma parte fundamental no atendimento à vítima politraumatizada. Sobre ele, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Só deve ser realizado quando o paciente chega à emergência com os dispositivos prancha rígida e colar cervical e, atendido pela equipe pré-hospitalar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve ser realizado ao final da avaliação secundária, exceto quando se busca fonte de sangramento ativo no dorso",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deve ser realizado assim que o paciente chega no setor de emergência do hospital para que a prancha rígida seja retirada o mais rápido possível",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve ser realizado após a avaliação primária, depois que todas as lesões que pudessem levar risco à vida do paciente terem sido diagnosticadas e tratadas",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Incorreta. O rolamento em bloco e a avaliação do dorso são recomendados para pacientes com suspeita de lesão na coluna vertebral, independentemente de como foram transportados. Embora seja comum em pacientes imobilizados com prancha e colar, a técnica é o padrão para garantir a proteção da medula espinhal durante qualquer movimentação lateral do paciente politraumatizado.\n\nAlternativa b) Correta. Conforme os protocolos do ATLS (Advanced Trauma Life Support), a avaliação detalhada do dorso, realizada por meio do rolamento em bloco, é uma etapa da avaliação secundária. Nesse momento, busca-se por deformidades na coluna, equimoses ou ferimentos. No entanto, se houver suspeita de uma fonte de sangramento ativo (hemorragia externa grave) localizada no dorso, o rolamento deve ser antecipado para a fase C (Circulação) da avaliação primária, visando o controle imediato da perda sanguínea.\n\nAlternativa c) Incorreta. A prancha rígida deve, de fato, ser retirada o quanto antes para prevenir complicações como úlceras por pressão e desconforto. Entretanto, o momento dessa retirada deve respeitar a priorização do atendimento inicial (ABCDE). Realizar o rolamento assim que o paciente chega, sem antes garantir a permeabilidade das vias aéreas e a ventilação adequada, pode colocar a vida do paciente em risco.\n\nAlternativa d) Incorreta. Embora a avaliação sistemática do dorso ocorra após a avaliação primária, a alternativa deixa de mencionar a exceção crucial descrita na alternativa B. Se o dorso for o local de uma lesão que cause risco imediato de vida, como uma hemorragia exanguinante, ele deve ser avaliado e tratado ainda durante a fase primária (C). Portanto, a alternativa B é mais precisa e completa dentro da doutrina de atendimento ao trauma.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:34.555Z"
+  },
+  {
+    "id": "AJUDA_05f85c81-7e4e-48af-a8cc-728a708589be",
+    "originalId": "05f85c81-7e4e-48af-a8cc-728a708589be",
+    "statement": "Na avaliação da desnutrição infantil, quais são os principais indicadores antropométricos utilizados, e como cada um contribui para o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peso e altura apenas, sem comparação com referências de crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Peso para a idade, altura para a idade e índice de massa corporal, que indicam desnutrição aguda, crônica e obesidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Altura para a idade exclusivamente, desconsiderando o peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Medidas de perímetro cefálico e envergadura dos braços.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A avaliação nutricional da criança baseia-se na utilização de índices antropométricos comparados a padrões de referência, geralmente os da Organização Mundial da Saúde (OMS), para determinar se o crescimento está adequado para a idade e o sexo.\n\nAlternativa B (Correta): Esta alternativa apresenta os índices fundamentais utilizados na prática clínica. O índice Peso para a Idade (P/I) reflete o estado nutricional global, sendo muito sensível para detectar mudanças rápidas, mas não diferencia se o comprometimento é atual ou antigo. O índice Estatura para a Idade (E/I) é o melhor indicador de desnutrição crônica (stunting), pois o déficit de crescimento linear indica que a criança sofreu privações nutricionais ou doenças repetidas por um longo período. O Índice de Massa Corporal (IMC) para a idade, assim como o Peso para a Estatura, é utilizado para identificar a desnutrição aguda (emagrecimento acentuado ou wasting) e também é o principal marcador para o diagnóstico de sobrepeso e obesidade.\n\nAlternativa A (Incorreta): Medidas isoladas de peso e altura não possuem valor diagnóstico em pediatria. Para que o diagnóstico seja feito, essas medidas devem ser obrigatoriamente plotadas em curvas de crescimento (Escore-Z ou Percentis) que comparam a criança com uma população de referência saudável. Sem essa comparação, não é possível determinar se o crescimento está dentro da normalidade.\n\nAlternativa C (Incorreta): A altura para a idade avalia apenas o componente crônico do estado nutricional. Ignorar o peso impossibilita o diagnóstico da desnutrição aguda, que é caracterizada pela perda de massa corporal em relação à altura, condição que oferece risco imediato de vida e exige intervenção rápida.\n\nAlternativa D (Incorreta): O perímetro cefálico é um indicador de crescimento cranioencefálico, essencial nos primeiros dois anos de vida, mas não é um marcador primário de desnutrição. A envergadura dos braços é uma medida alternativa usada para estimar a estatura em pacientes que não podem ser medidos na posição vertical (como portadores de deficiências físicas ou deformidades de coluna), não sendo um indicador padrão para avaliação nutricional de rotina.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Desnutrição na Infância",
+      "Diagnóstico Nutricional"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:01:34.555Z"
+  }
+]

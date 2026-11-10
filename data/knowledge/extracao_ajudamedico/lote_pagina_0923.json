@@ -1,0 +1,145 @@
+[
+  {
+    "id": "AJUDA_25245b53-caea-492e-889a-4fac68dee761",
+    "originalId": "25245b53-caea-492e-889a-4fac68dee761",
+    "statement": "Um menino de 3 anos apresenta episódios recorrentes de sibilância e tosse seca, especialmente durante infecções virais. Os sintomas ocorrem cerca de 4 vezes por mês, inclusive à noite, e já houve duas idas ao pronto-socorro nos últimos 6 meses por dificuldade respiratória. A mãe relata que ele também tosse ao correr, rir ou chorar. Não há história familiar de asma ou alergias, e o exame físico está normal fora das crises. Após um ciclo terapêutico de 4 semanas com corticosteroide inalatório de baixa dose, houve melhora significativa dos sintomas. Segundo os critérios do GINA 2025 para crianças menores de 5 anos, qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter apenas broncodilatador de resgate, pois a ausência de história familiar torna improvável o diagnóstico de asma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar espirometria para confirmar asma antes de iniciar qualquer tratamento de manutenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar antibiótico profilático para prevenir infecções respiratórias virais recorrentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Confirmar o diagnóstico funcional de asma e manter corticosteroide inalatório de baixa dose como tratamento de manutenção.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O tema central desta questão é o diagnóstico e o manejo da asma em crianças com idade menor ou igual a 5 anos, de acordo com as diretrizes do GINA (Global Initiative for Asthma).\n\nNessa faixa etária, a confirmação diagnóstica é essencialmente clínica. Ela se baseia no padrão de sintomas característicos (sibilância e tosse recorrentes, sintomas noturnos, desencadeamento por riso, choro ou esforço) e na realização de um teste terapêutico com corticosteroide inalatório (CI) em dose baixa por 2 a 3 meses (ou melhora marcante em 4 semanas), associado a broncodilatador de curta ação para alívio. A resposta positiva ao tratamento com melhora clínica sustenta o diagnóstico de asma e indica a continuidade da terapia de manutenção.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Embora a atopia e a história familiar sejam fatores de risco que aumentam a probabilidade diagnóstica, sua ausência não afasta asma. A frequência elevada dos sintomas (4 vezes ao mês, despertares noturnos, idas à emergência e sintomas induzidos por esforço/emoções) exige terapia de controle e não apenas uso de resgate.\n\nAlternativa b: Incorreta. A espirometria não é realizada rotineiramente em crianças menores de 5 anos devido à incapacidade técnica de realizar as manobras expiratórias forçadas de forma adequada e reprodutível. O diagnóstico apoia-se na clínica e na prova terapêutica.\n\nAlternativa c: Incorreta. Não há qualquer evidência ou indicação de uso de antibioticoterapia profilática para quadros de sibilância recorrente associados a infecções virais ou asma.\n\nAlternativa d: Correta. O paciente preenche os critérios clínicos para alta probabilidade de asma e apresentou teste terapêutico positivo com melhora expressiva após 4 semanas de corticosteroide inalatório em baixa dose. A conduta correta, conforme o GINA, é firmar o diagnóstico clínico/funcional e manter o corticosteroide inalatório de baixa dose diário como tratamento de manutenção (controlador) para prevenir exacerbações e controlar os sintomas.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria",
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:20:03.694Z"
+  },
+  {
+    "id": "AJUDA_3c69e6a8-75f1-4074-9e0a-e6d49b1cca16",
+    "originalId": "3c69e6a8-75f1-4074-9e0a-e6d49b1cca16",
+    "statement": "Uma senhora leucodérmica, com 34 anos de idade, estava cozinhando, quando entornou uma grande panela de água fervendo sobre ela, queimando toda a parte anterior do tórax e do abdome, bem como os dois membros superiores completamente. Ela foi levada ao hospital para tratamento. Qual foi a extensão de sua queimadura?",
+    "options": [
+      {
+        "id": "A",
+        "text": "36%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "44%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "27%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "22%",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, aplicamos a Regra dos Nove de Wallace, que é o método padrão-ouro para estimativa da Superfície Corporal Queimada (SCQ) em pacientes adultos em ambientes de urgência e emergência.\n\nAnálise Anatômica do Enunciado:\n\n1. Tronco Anterior (Tórax e Abdome): De acordo com a Regra dos Nove, o tronco anterior completo corresponde a 18%. Essa área é frequentemente subdividida pedagogicamente em 9% para o tórax anterior e 9% para o abdome anterior. Como a paciente queimou ambos, somamos 18%.\n\n2. Membros Superiores: Cada membro superior (braço, antebraço e mão, frente e verso) corresponde a 9%. O enunciado afirma que \"os dois membros superiores\" foram queimados \"completamente\". Portanto, 9% (braço direito) + 9% (braço esquerdo) = 18%.\n\nCálculo Final: 18% (Tronco Anterior) + 18% (Membros Superiores) = 36%.\n\nAnálise das Alternativas:\n\nAlternativa a) 36%: Correta. Esta alternativa reflete a soma exata das áreas anatômicas descritas seguindo rigorosamente a Regra dos Nove (18% do tronco anterior somados aos 18% dos dois membros superiores completos).\n\nAlternativa b) 44%: Incorreta. Este valor não encontra respaldo técnico na soma das áreas citadas. Aproximaria-se deste valor apenas se incluíssemos áreas adicionais não mencionadas, como a cabeça (9%) ou períneo (1%).\n\nAlternativa c) 27%: Incorreta. Embora algumas fontes possam trazer este valor como gabarito por erro de interpretação, o cálculo médico oficial não sustenta essa cifra para o quadro descrito. Para chegar a 27%, seria necessário excluir o abdome da conta ou considerar apenas a face anterior dos braços, o que contradiz o termo \"completamente\" usado no texto.\n\nAlternativa d) 22%: Incorreta. Valor subestimado que não corresponde aos padrões diagnósticos de Wallace ou à tabela de Lund-Browder para uma paciente de 34 anos.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Queimaduras",
+      "Trauma"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:20:03.694Z"
+  },
+  {
+    "id": "AJUDA_748d5a90-ab96-42a3-972f-1d8051d4a311",
+    "originalId": "748d5a90-ab96-42a3-972f-1d8051d4a311",
+    "statement": "A doença do refluxo gastroesofágico (DRGE) é uma condição prevalente no Brasil, com implicações significativas na qualidade de vida dos pacientes e potencial para complicações. Sobre o diagnóstico e tratamento da DRGE, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A DRGE pode se apresentar de forma típica como pirose/queimação ácida retroesternal e/ou regurgitação e de forma atípica como disfagia, laringite por refluxo, tosse crônica e exacerbação de quadro asmático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nos pacientes com sintomas típicos, o diagnóstico inicial é essencialmente clínico. A endoscopia digestiva alta está indicada para pacientes com sintomas atípicos, sinais de alarme para malignidade ou fatores de risco para esôfago de Barret.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Há diferença significativa de resultados clínicos no tratamento da DRGE com os diferentes Inibidores de Bomba de Prótons (IBP) disponíveis no mercado. O esomeprazol e o dexlansoprazol apresentam resultados superiores aos demais IBPs no tratamento das esofagites erosivas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O tratamento cirúrgico da DRGE deve ser considerado em pacientes com hérnia hiatal sintomática maior de 5cm e nas esofagites severas grau C e D de Los Angeles.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A: Esta alternativa está correta. A Doença do Refluxo Gastroesofágico (DRGE) manifesta-se tipicamente através da pirose (sensação de queimação retroesternal) e da regurgitação ácida. Além disso, a doença pode apresentar manifestações extraesofágicas ou atípicas, como tosse crônica, pigarro, laringite posterior, exacerbação de asma brônquica e dor torácica não cardíaca. A disfagia, embora citada aqui como atípica, é frequentemente tratada como um sinal de alerta que merece investigação imediata.\n\nAlternativa B: Esta alternativa está correta. Em pacientes jovens (geralmente abaixo de 40 a 45 anos), com sintomas típicos e sem sinais de alarme, o diagnóstico pode ser presuntivo e o tratamento iniciado empiricamente. A Endoscopia Digestiva Alta (EDA) não é necessária para todos os pacientes, sendo reservada para aqueles com sinais de alarme (perda de peso, anemia, hemorragia digestiva, disfagia, odinofagia), pacientes com longa duração de sintomas (mais de 5 a 10 anos para rastrear o Esôfago de Barrett) ou que não respondem ao tratamento inicial.\n\nAlternativa C: Esta alternativa está INCORRETA e é o gabarito da questão. Na prática clínica e conforme as principais diretrizes, os Inibidores da Bomba de Prótons (IBPs), como omeprazol, lansoprazol, pantoprazol, rabeprazol e esomeprazol, são considerados equivalentes em termos de eficácia clínica para o controle dos sintomas e cicatrização da esofagite, quando utilizados em doses equipotentes. Embora existam pequenas diferenças farmacocinéticas e alguns estudos apontem discreta superioridade estatística do esomeprazol em casos de esofagite grave, não há uma diferença clínica significativa que justifique a afirmação de que uns sejam superiores aos outros de forma absoluta no manejo da DRGE.\n\nAlternativa D: Esta alternativa está correta. O tratamento cirúrgico (fundoplicatura) é indicado em situações específicas: pacientes que não desejam manter tratamento medicamentoso prolongado, pacientes com complicações como estenoses, grandes hérnias de hiato (geralmente acima de 5 cm) que causem sintomas mecânicos ou refluxo persistente, e casos de esofagite grave (graus C e D de Los Angeles) que não apresentam boa resposta ou controle com doses otimizadas de IBPs.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:20:03.694Z"
+  }
+]

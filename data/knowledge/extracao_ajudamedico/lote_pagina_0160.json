@@ -1,0 +1,514 @@
+[
+  {
+    "id": "AJUDA_2c5fdaf0-405c-4c0d-9b80-ee38660fbdc2",
+    "originalId": "2c5fdaf0-405c-4c0d-9b80-ee38660fbdc2",
+    "statement": "Acerca da fisiologia da contração uterina no trabalho de parto, assinale a alternativa que descreve o papel da ocitocina.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento direto da dilatação cervical sem participação miometrial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução da sensibilidade das fibras musculares ao cálcio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estimulação da contração miometrial por aumento da entrada de cálcio nas células uterinas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Inibição da produção de prostaglandinas associadas ao parto",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA ocitocina é um hormônio peptídico fundamental na fisiologia do parto, atuando como o principal agente estimulante da contratilidade uterina. Sua ação é mediada por receptores específicos cujas concentrações aumentam significativamente no miométrio ao final da gestação.\n\nAlternativa a: Incorreta. A dilatação cervical não é um efeito direto da ocitocina isolado da atividade muscular. A dilatação ocorre como consequência das contrações do corpo uterino (que puxam as fibras do colo para cima) e da pressão exercida pela apresentação fetal contra a cérvice. Embora a ocitocina ajude nesse processo, ela o faz via contração miometrial.\n\nAlternativa b: Incorreta. A ocitocina atua aumentando a disponibilidade e a utilização do cálcio pelas células musculares. Reduzir a sensibilidade ao cálcio ou sua concentração levaria ao relaxamento do útero, efeito contrário ao necessário para o trabalho de parto.\n\nAlternativa c: Correta. O mecanismo de ação da ocitocina envolve sua ligação a receptores acoplados à proteína G no miométrio. Essa ligação ativa a fosfolipase C, que gera o trifosfato de inositol (IP3). O IP3 promove a liberação de cálcio armazenado no retículo sarcoplasmático. Simultaneamente, a ocitocina promove a abertura de canais de cálcio na membrana celular, aumentando a entrada de cálcio extracelular. O aumento do cálcio citossólico permite a formação do complexo cálcio-calmodulina, que ativa a quinase da cadeia leve da miosina, resultando na contração muscular.\n\nAlternativa d: Incorreta. A ocitocina não inibe as prostaglandinas; pelo contrário, ela estimula a sua produção pela decídua e pelas membranas ovulares. As prostaglandinas (como a PGF2-alfa) potencializam o efeito contrátil e auxiliam na maturação do colo uterino, trabalhando em sinergia com a ocitocina.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:51.108Z"
+  },
+  {
+    "id": "AJUDA_2c62d819-b168-433c-8349-2069dc427e60",
+    "originalId": "2c62d819-b168-433c-8349-2069dc427e60",
+    "statement": "Recém-nascido, sexo masculino, idade gestacional de 38 semanas, parto vaginal, líquido amniótico claro. Ao nascimento, está hipoativo e não respira espontaneamente. É colocado em berço aquecido, secado e estimulado, sendo mantido padrão. São iniciados ventilação com pressão positiva e oxigênio em ar ambiente, e, após 30 segundos, apresenta frequência cardíaca de 80 bpm, SatO₂ pré-ductal 78%. O tórax expande-se adequadamente, e o posicionamento da máscara está adequado. Qual é o próximo passo mais adequado segundo as diretrizes de reanimação neonatal da Sociedade Brasileira de Pediatria (SBP)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter ventilação com ar ambiente por mais 30 segundos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumentar a fração inspirada de oxigênio para 100% e continuar a ventilação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar compressões torácicas em 3:1 imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar adrenalina endovenosa e manter a ventilação positiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nEstamos diante de um recém-nascido a termo (38 semanas) que apresenta apneia e hipoatividade ao nascimento. Após os passos iniciais (aquecer, secar e estimular), foi iniciada a Ventilação com Pressão Positiva (VPP) com ar ambiente (FiO2 21%), conforme preconizado pelas diretrizes da Sociedade Brasileira de Pediatria (SBP) para bebês com mais de 34 semanas. \n\nApós 30 segundos de VPP, o paciente mantém frequência cardíaca (FC) de 80 bpm. É importante notar que o enunciado afirma que a máscara está bem posicionada e o tórax expande adequadamente, o que indica que a técnica de ventilação é eficaz.\n\nPor que a alternativa (b) está correta?\n\nSegundo o fluxograma de reanimação neonatal da SBP (atualização de 2022), quando a FC permanece abaixo de 100 bpm após 30 segundos de VPP técnica e efetiva (com expansão torácica), o próximo passo é aumentar a concentração de oxigênio para 60% a 100% e continuar a ventilação. Somente se a FC cair abaixo de 60 bpm após uma ventilação adequada com oxigênio suplementar é que outras medidas, como massagem cardíaca, seriam consideradas. Portanto, o ajuste da fração inspirada de oxigênio (FiO2) é a conduta imediata indicada.\n\nAnálise das alternativas incorretas:\n\nAlternativa a) Manter a ventilação com ar ambiente por mais 30 segundos não é a conduta ideal, pois a FC não atingiu o valor de segurança (acima de 100 bpm). A persistência da bradicardia (80 bpm) após o ciclo inicial de 30 segundos exige a otimização da oferta de oxigênio para tentar estabilizar o ritmo cardíaco antes que o quadro evolua.\n\nAlternativa c) As compressões torácicas só devem ser iniciadas se a FC estiver abaixo de 60 bpm após a realização de 30 segundos de VPP eficaz com oxigênio suplementar (FiO2 de 60-100%), preferencialmente com o paciente já intubado. Como a FC do bebê é de 80 bpm e ele ainda não recebeu oxigênio suplementar, iniciar a massagem agora seria precoce e fora do protocolo.\n\nAlternativa d) A adrenalina é uma droga de uso tardio na reanimação. Ela é indicada apenas quando a FC permanece abaixo de 60 bpm após a realização de ventilação adequada com oxigênio a 100% associada a compressões torácicas coordenadas (técnica 3:1) por pelo menos 60 segundos. O paciente do caso ainda está em uma fase muito inicial da reanimação para o uso de medicações.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:51.108Z"
+  },
+  {
+    "id": "AJUDA_2c6852f9-081e-4771-972f-6783dff60415",
+    "originalId": "2c6852f9-081e-4771-972f-6783dff60415",
+    "statement": "Um novo teste diagnóstico para tuberculose pulmonar é desenvolvido. Para avaliar seu desempenho, ele é aplicado em duzentos pacientes com tuberculose confirmada (padrão-ouro) e em duzentos indivíduos saudáveis. O teste resultou positivo em 180 dos pacientes com tuberculose e em vinte dos indivíduos saudáveis.\nQual é a de sensibilidade desse novo teste?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "50%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "80%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "90%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "95%",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é fundamental compreender o conceito de sensibilidade e identificar corretamente os dados fornecidos no enunciado.\n\nA sensibilidade de um teste diagnóstico define a capacidade desse teste de identificar corretamente os indivíduos que realmente possuem a doença. Em termos matemáticos, a sensibilidade é a proporção de resultados positivos entre todos aqueles que têm a doença (confirmados pelo padrão-ouro).\n\nDados extraídos do enunciado:\n- Total de pacientes com tuberculose (doentes): 200\n- Pacientes doentes com teste positivo (Verdadeiros Positivos): 180\n- Total de indivíduos saudáveis (não doentes): 200\n- Indivíduos saudáveis com teste positivo (Falsos Positivos): 20\n\nCálculo da Sensibilidade:\nSensibilidade = (Verdadeiros Positivos) / (Total de Doentes)\nSensibilidade = 180 / 200\nSensibilidade = 0,90 ou 90%\n\nAnálise das alternativas:\n\na) 10% - Incorreta. Este valor representa a proporção de falsos negativos (pacientes que têm a doença, mas o teste falhou em detectar). Dos 200 doentes, 20 testaram negativo (200 - 180 = 20), o que equivale a 10%.\n\nb) 50% - Incorreta. Esse valor não tem correlação direta com os dados epidemiológicos apresentados na amostra.\n\nc) 80% - Incorreta. Este valor poderia ser confundido com a especificidade, caso o aluno considerasse apenas o número absoluto de saudáveis que testaram negativo (180), mas a conta de especificidade também resultaria em 90% (180 saudáveis negativos / 200 total de saudáveis).\n\nd) 90% - Correta. Como demonstrado no cálculo, o teste foi capaz de detectar a doença em 180 dos 200 indivíduos sabidamente doentes, resultando em 90% de sensibilidade.\n\ne) 95% - Incorreta. Valor que não corresponde à razão entre os verdadeiros positivos e o total de doentes da amostra descrita.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:51.108Z"
+  },
+  {
+    "id": "AJUDA_2c781463-d829-41cf-85a9-47de9d7393d1",
+    "originalId": "2c781463-d829-41cf-85a9-47de9d7393d1",
+    "statement": "Um menino com 8 anos de idade, sem relato de doenças crônicas ou alergias, encontra-se afebril com 3 lesões em membro superior direito, caracterizadas por pápulas arredondadas e firmes de 2 a 5 mm, da cor da pele, com superfícies brilhantes e umbilicação central. Sobre essa patologia, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o paciente necessita de tratamento imediatamente, com afastamento das atividades escolares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "seu crescimento é estimulado pelo Papiloma vírus (HPV).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "as lesões são autolimitadas e a necessidade de tratamento é controversa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a confirmação diagnóstica se dá por sorologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o tratamento medicamentoso é feito através do aciclovir oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO: O quadro clínico descrito (pápulas cor da pele, brilhantes e umbilicadas em uma criança) é patognomônico de molusco contagioso. Trata-se de uma infecção viral cutânea comum na infância, causada por um vírus da família Poxviridae (gênero Molluscipoxvirus).\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. O molusco contagioso é uma doença benigna. Não há necessidade de tratamento imediato e, de acordo com as principais diretrizes de saúde escolar, a criança não precisa ser afastada das atividades escolares. Recomenda-se apenas não compartilhar objetos de uso pessoal (como toalhas) e, se possível, cobrir as lesões com roupas para reduzir o risco de transmissão por contato direto.\n\nAlternativa b) Incorreta. O molusco contagioso é causado por um poxvírus. O papilomavírus humano (HPV) é o agente causador das verrugas virais (verruga vulgar, plana, plantar e condiloma), que apresentam características morfológicas diferentes, como a superfície rugosa (verrucosa) e ausência de umbilicação central.\n\nAlternativa c) Correta. Esta é a conduta preconizada na maioria dos casos em crianças. As lesões de molusco contagioso são autolimitadas e tendem a regredir espontaneamente em meses ou poucos anos (geralmente entre 6 a 18 meses). A necessidade de tratamento é controversa porque os procedimentos disponíveis (curetagem, crioterapia ou agentes químicos) podem ser dolorosos, causar cicatrizes ou gerar traumas psicológicos na criança, muitas vezes não justificando a intervenção em um quadro que se resolverá sozinho.\n\nAlternativa d) Incorreta. O diagnóstico do molusco contagioso é eminentemente clínico, baseado na inspeção visual das lesões (presença da umbilicação central). Não se utiliza sorologia para o diagnóstico. Em casos de dúvida diagnóstica muito específica, pode-se realizar a expressão da lesão para visualizar o \"corpo do molusco\" ou biópsia, que revelaria os corpúsculos de inclusão de Henderson-Paterson.\n\nAlternativa e) Incorreta. O aciclovir é um antiviral específico para o tratamento de infecções causadas por vírus da família Herpesviridae (como herpes simples e varicela-zóster), agindo na inibição da DNA-polimerase viral. Ele não possui eficácia contra o poxvírus causador do molusco contagioso. Não existe tratamento medicamentoso sistêmico padrão-ouro para o molusco em pacientes imunocompetentes.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:51.108Z"
+  },
+  {
+    "id": "AJUDA_2c7d70f1-b563-42f1-a820-33751633a11a",
+    "originalId": "2c7d70f1-b563-42f1-a820-33751633a11a",
+    "statement": "É CORRETO afirmar que, na interface saúde-meio ambiente em territórios adscritos da Atenção Primária à Saúde (APS):",
+    "options": [
+      {
+        "id": "A",
+        "text": "a vigilância ambiental atua desvinculada da Atenção Primária para evitar sobreposição de tarefas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o mapeamento de risco deve integrar dados sanitários, ambientais e sociais e orientar planos locais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a comunicação de risco deve restringir informações para não aumentar a demanda dos serviços.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o planejamento territorial dispensa determinantes ambientais para manter foco estritamente clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda a organização da Atenção Primária à Saúde (APS) e sua relação intrínseca com a Vigilância em Saúde e os determinantes ambientais.\n\nAlternativa (a) Incorreta: A vigilância ambiental não deve atuar desvinculada da Atenção Primária. Pelo contrário, as diretrizes do Sistema Único de Saúde (SUS) e da Política Nacional de Atenção Básica (PNAB) preconizam a integração entre a vigilância e a assistência. O território é o espaço comum de atuação de ambas, e o compartilhamento de informações é essencial para identificar problemas e intervir de forma oportuna.\n\nAlternativa (b) Correta: O mapeamento de risco é uma ferramenta fundamental da territorialização na APS. Ele deve ser obrigatoriamente multidimensional, integrando dados sanitários (doenças prevalentes), ambientais (saneamento, poluição, desastres naturais) e sociais (renda, escolaridade, vulnerabilidades). Essa integração permite que a equipe de saúde compreenda o perfil epidemiológico local e elabore planos de ação condizentes com as necessidades reais daquela comunidade.\n\nAlternativa (c) Incorreta: A comunicação de risco é uma estratégia de saúde pública que visa informar a população sobre perigos potenciais para que medidas preventivas sejam adotadas. Restringir informações é uma prática antiética e tecnicamente errada, pois impede a participação da comunidade no autocuidado e pode agravar surtos ou exposições ambientais por falta de orientação adequada.\n\nAlternativa (d) Incorreta: O planejamento territorial na APS não pode ser estritamente clínico. A APS trabalha com o modelo biopsicossocial e com os Determinantes Sociais da Saúde. Dispensar os determinantes ambientais (como qualidade da água, destino de resíduos e controle de vetores) tornaria as ações de saúde puramente reativas e ineficazes na prevenção de doenças relacionadas ao meio ambiente.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Vigilância em Saúde",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:51.108Z"
+  },
+  {
+    "id": "AJUDA_2c8aa2e4-36f8-490a-b92c-fb7c917da9d8",
+    "originalId": "2c8aa2e4-36f8-490a-b92c-fb7c917da9d8",
+    "statement": "O principal objetivo da monitorização fetal intraparto é",
+    "options": [
+      {
+        "id": "A",
+        "text": "melhorar o bem-estar materno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "diminuir o número de cesarianas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "melhorar a contratilidade uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "detecção precoce do sofrimento fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A monitorização fetal intraparto, realizada por meio da ausculta intermitente ou da cardiotocografia contínua, é uma ferramenta essencial na assistência ao parto. Seu papel fundamental é avaliar a resposta do feto ao estresse mecânico e hipóxico gerado pelas contrações uterinas.\n\nAlternativa (a) Incorreta. O foco central deste procedimento é a vitalidade do feto. O bem-estar materno é acompanhado por meio de outros parâmetros, como avaliação de sinais vitais, controle da dor e suporte psicológico, e não pela monitorização dos batimentos cardíacos fetais.\n\nAlternativa (b) Incorreta. Historicamente, esperava-se que a monitorização eletrônica reduzisse as intervenções, mas o que se observa na prática clínica e em estudos científicos é o oposto: a monitorização contínua está associada a um aumento nas taxas de cesarianas e partos instrumentais, devido à alta sensibilidade em detectar alterações que nem sempre evoluem para danos permanentes.\n\nAlternativa (c) Incorreta. A monitorização serve apenas para observar e registrar a dinâmica uterina (frequência e duração das contrações). Ela não possui efeito terapêutico sobre a contratilidade. Se houver necessidade de melhorar as contrações, utilizam-se métodos como a administração de ocitocina ou a amniotomia.\n\nAlternativa (d) Correta. Este é o objetivo principal e a razão de ser da monitorização. A finalidade é a detecção precoce de sinais sugestivos de hipóxia e acidose fetal (frequentemente denominados sofrimento fetal agudo). Ao identificar padrões anormais na frequência cardíaca fetal, a equipe médica pode adotar medidas de ressuscitação intrauterina ou decidir pela interrupção imediata da gestação, visando prevenir sequelas neurológicas graves ou a morte fetal.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Vitalidade Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:51.108Z"
+  },
+  {
+    "id": "AJUDA_2c8cccf1-3bbb-49fa-830b-f414ac08d7a2",
+    "originalId": "2c8cccf1-3bbb-49fa-830b-f414ac08d7a2",
+    "statement": "Primigesta de 24 anos chega à maternidade com queixa de cefaleia, febre e dores articulares leves há 5 dias. Relata que ontem houve piora da febre e surgimento de manchas pelo corpo, o que a fez procurar a emergência. O obstetra verifica o cartão do pré-natal e constata que ela está com 22 semanas de gestação e já realizou 3 consultas na unidade básica de saúde (UBS), sempre com sinais vitais normais e exames laboratoriais sem alterações. Ao exame físico, a paciente apresenta-se em bom estado geral, lúcida e orientada. Durante a análise clínica, foram obtidos os seguintes resultados:\n\nApós ouvir a história da paciente e examiná-la, o médico solicita um hemograma, cujo resultado é:\n\nNesse caso, qual a principal hipótese diagnóstica e a conduta a ser adotada pelo obstetra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dengue; internar imediatamente a paciente, iniciar hidratação venosa, dipirona endovenosa e realizar controle diário de plaquetas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Chikungunya; colocar a paciente em leito de observação clínica, iniciar hidratação venosa, dipirona e, após terminar, liberar retorno ao pré-natal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Zika; colocar a paciente em leito de observação clínica, iniciar hidratação venosa, dipirona endovenosa e realizar controle diário de plaquetas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Febre de Oropouche; internar imediatamente a paciente, iniciar transfusão de plaquetas, paracetamol por via oral e, após a transfusão, liberar retorno ao pré-natal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Quadro Clínico\n\nA paciente é uma gestante de 22 semanas que apresenta febre, cefaleia e dores articulares há 5 dias, com surgimento de exantema (manchas pelo corpo) há um dia. Na análise dos dados fornecidos, observamos pontos críticos:\n\n1. Sinais vitais (Imagem 1): A paciente apresenta febre (38,6 graus Celsius). A pressão arterial de 90x70 mmHg mostra uma pressão diferencial (pressão de pulso) de apenas 20 mmHg. Na dengue, uma pressão diferencial menor ou igual a 20 mmHg é um sinal de alerta para choque por extravasamento plasmático.\n\n2. Hemograma (Imagem 2): O resultado revela uma trombocitopenia grave, com apenas 28.000 plaquetas/mm³, valor muito abaixo do normal (150.000 a 450.000/mm³). O hematócrito de 38% e a hemoglobina de 11,2 g/dL estão dentro ou próximos da normalidade para o segundo trimestre de gestação.\n\nDiagnóstico e Conduta\n\nA principal hipótese é Dengue. Gestantes são consideradas grupo de risco e, diante de uma trombocitopenia tão expressiva (abaixo de 50.000/mm³) e sinais vitais limítrofes, a paciente deve ser classificada e tratada como um caso grave ou com sinais de alerta. A conduta imediata é a internação para hidratação venosa vigorosa e monitoramento contínuo.\n\nAnálise das Alternativas\n\nAlternativa a: Correta. A dengue é a arbovirose que mais frequentemente cursa com plaquetopenia severa e instabilidade hemodinâmica. Devido ao estado de gestante e ao nível crítico de plaquetas (28.000), a internação é obrigatória para hidratação endovenosa e controle laboratorial diário.\n\nAlternativa b: Incorreta. A febre de Chikungunya costuma apresentar dores articulares muito intensas e incapacitantes, o que diverge do relato de dores leves. Além disso, liberar uma gestante com plaquetopenia grave para o pré-natal básico é uma conduta de alto risco.\n\nAlternativa c: Incorreta. O Zika vírus geralmente causa febre baixa, exantema precocemente e conjuntivite. Não é característico do Zika causar uma queda tão acentuada de plaquetas como a observada nos exames da paciente.\n\nAlternativa d: Incorreta. Embora a Febre de Oropouche cause sintomas similares, a transfusão de plaquetas não é indicada de rotina para valores de 28.000/mm³ sem que haja sangramento ativo importante ou necessidade de cirurgia imediata. O foco do tratamento deve ser a hidratação e o suporte clínico.\n\nAssociação com as Imagens\n\nA Imagem 1 destaca a febre e a proximidade entre a pressão sistólica e diastólica. A Imagem 2 confirma a gravidade laboratorial através da contagem de plaquetas, justificando a escolha da alternativa a como a única conduta segura e adequada para o caso.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Arboviroses",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/6f1fd964fefde4fa0196dc200fa34b91eaad39fdc93aea5eb9d37724b7315880.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_2c8cccf1-3bbb-49fa-830b-f414ac08d7a2_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/1c5f162d09c9dc69c122cc6a0f684310747243a8a3cd22a0e68b7ad5d5b76b24.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_2c8cccf1-3bbb-49fa-830b-f414ac08d7a2_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:52.528Z"
+  },
+  {
+    "id": "AJUDA_2c92eb7b-4629-48e2-bcf9-ff573cee391b",
+    "originalId": "2c92eb7b-4629-48e2-bcf9-ff573cee391b",
+    "statement": "Considere as afirmativas abaixo sobre territorialização e adscrição na Atenção Primária à Saúde (APS) e assinale V para as que considerar verdadeiras ou F para as que considerar falsas.\n(__) A adscrição territorial sustenta o cuidado longitudinal e a gestão de risco.\n(__) Mapas de vulnerabilidade devem integrar dados sanitários, ambientais e sociais.\n(__) A atualização cadastral é acessória e pode ser suprimida sem perdas assistenciais.\n(__) A microterritorialização apoia planejamento, busca ativa e vigilância local.\nAssinale a alternativa com a sequência CORRETA de respostas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V – V – F – V",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "V – F – V – V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F – V – V – F",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V – V – V – F",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise detalhada das afirmativas:\n\n(V) A adscrição territorial sustenta o cuidado longitudinal e a gestão de risco.\nA afirmativa é verdadeira. A adscrição é o processo de vincular uma população específica a uma equipe de saúde e a um território delimitado. Esse vínculo é o pilar que permite o acompanhamento do paciente ao longo do tempo (longitudinalidade) e possibilita que a equipe conheça o perfil epidemiológico e as necessidades locais para realizar uma gestão de risco eficaz.\n\n(V) Mapas de vulnerabilidade devem integrar dados sanitários, ambientais e sociais.\nA afirmativa é verdadeira. A vulnerabilidade de uma população é multidimensional. Para que o planejamento em saúde seja eficiente, o mapa de vulnerabilidade deve ir além dos dados de doenças (sanitários), integrando informações sobre saneamento e moradia (ambientais) e fatores como renda, escolaridade e suporte familiar (sociais).\n\n(F) A atualização cadastral é acessória e pode ser suprimida sem perdas assistenciais.\nA afirmativa é falsa. O cadastro atualizado é a ferramenta básica de gestão e cuidado na Atenção Primária à Saúde (APS). Sem dados precisos, a equipe não consegue realizar busca ativa, monitorar pacientes com condições crônicas ou planejar ações preventivas adequadas. A falta de atualização compromete diretamente a continuidade e a qualidade da assistência.\n\n(V) A microterritorialização apoia planejamento, busca ativa e vigilância local.\nA afirmativa é verdadeira. A microterritorialização consiste na subdivisão do território em áreas menores (microáreas), geralmente sob a responsabilidade de um Agente Comunitário de Saúde (ACS). Essa proximidade permite identificar problemas de saúde em tempo real, facilitar o planejamento de intervenções localizadas e garantir a vigilância contínua daquela comunidade.\n\nAnálise das alternativas:\nCom base na análise, a sequência correta é V – V – F – V. \n\nA alternativa (a) é a correta, pois reflete exatamente a veracidade das diretrizes da Política Nacional de Atenção Básica (PNAB) e os conceitos fundamentais de territorialização.\nAs alternativas (b), (c) e (d) apresentam sequências incorretas ao classificar erroneamente a importância do cadastro ou a função da microterritorialização e da adscrição.\n\nGabarito: Alternativa (a).",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Princípios e Diretrizes do SUS",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:52.528Z"
+  },
+  {
+    "id": "AJUDA_2c958e5a-f3b9-48c5-bef8-af462dfc633a",
+    "originalId": "2c958e5a-f3b9-48c5-bef8-af462dfc633a",
+    "statement": "Em um dos atendimentos na UBS, a equipe de enfermagem percebe que uma idosa de 78 anos de idade, que mora com sua filha, diarista doméstica, de 45 anos, apresenta-se em condições de higiene pessoal inadequadas desde que teve um acidente vascular cerebral (AVC), há 2 meses, que a deixou com uma limitação para andar e falta de equilíbrio, tirando sua autonomia para atividades da vida cotidiana. Com relação ao exposto, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A equipe da UBS não tem relação com a situação de poucos recursos vivida por mãe e filha e deve simplesmente alertar a filha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A equipe da UBS deve investigar melhor a situação do cotidiano da usuária e, caso ela concorde, deve compartilhar com a filha a situação para uma solução.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Essa situação é de violência doméstica e deve ser notificada no Sistema de Informação de Agravos de Notificação (SINAN) no prazo de 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A equipe da UBS deve imediatamente conversar com a filha para que deixe uma vizinha incumbida pela higiene pessoal de sua mãe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trata-se de violência doméstica e deve ser notificada à polícia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO caso clínico descreve uma idosa com perda de autonomia funcional recente (dois meses após AVC) e sinais de higiene precária. Ela reside com a filha, que trabalha como diarista, o que sugere uma possível sobrecarga da cuidadora e vulnerabilidade socioeconômica. A questão avalia a competência da equipe de Atenção Primária em lidar com dilemas éticos, sociais e familiares.\n\nAlternativa A: Incorreta. A Estratégia Saúde da Família possui responsabilidade territorial e deve atuar sobre os determinantes sociais da saúde. Ignorar a situação de poucos recursos da família contraria os princípios de equidade e integralidade do SUS. A equipe deve ser parceira na busca de soluções, e não apenas uma fiscalizadora que transfere toda a responsabilidade para a família.\n\nAlternativa B: Correta. Esta é a conduta mais adequada dentro da clínica ampliada. É necessário realizar uma abordagem familiar e, possivelmente, uma visita domiciliar para entender a dinâmica da casa. A falta de higiene pode ser decorrente da falta de tempo da filha, da falta de conhecimento técnico para manejar uma paciente com sequelas motoras ou da falta de recursos financeiros. O compartilhamento da situação com a cuidadora deve ser feito com o consentimento da paciente, visando a construir um plano de cuidados conjunto.\n\nAlternativa C: Incorreta. Embora a negligência seja uma forma de violência contra o idoso, a notificação no SINAN deve ocorrer diante da suspeita fundamentada ou da confirmação de violência. No cenário apresentado, não há elementos suficientes para afirmar que existe uma omissão deliberada ou maus-tratos. Pode tratar-se de uma incapacidade de cuidar por sobrecarga social, o que exige suporte da rede de saúde e da assistência social antes de uma classificação punitiva ou notificatória imediata.\n\nAlternativa D: Incorreta. A conduta de delegar o cuidado a terceiros (vizinhos) de forma imediata é inadequada e antiética. A organização do cuidado domiciliar deve ser pactuada com a família e com a paciente, avaliando quem são as pessoas de confiança e a viabilidade dessa rede de apoio, sem imposições por parte da equipe de saúde.\n\nAlternativa E: Incorreta. O acionamento da força policial é uma medida de última instância para casos de crimes ou risco iminente à vida. A situação descrita sugere uma fragilidade social que deve ser abordada inicialmente pela equipe de saúde e, se necessário, pelo Centro de Referência de Assistência Social (CRAS) ou Centro de Referência Especializado de Assistência Social (CREAS), visando ao fortalecimento dos vínculos e à proteção da idosa.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:52.528Z"
+  },
+  {
+    "id": "AJUDA_2c977044-1e30-49bc-9a01-b5e5913e0f59",
+    "originalId": "2c977044-1e30-49bc-9a01-b5e5913e0f59",
+    "statement": "Paciente com diagnóstico de câncer de pulmão de pequenas células, chega ao pronto socorro apresentando confusão mental, náuseas, vômitos e fadiga intensa. Ao exame físico, nota-se edema generalizado. Exames laboratoriais revelam sódio sérico: 120 mEq/L. O diagnóstico mais provável para esse quadro é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insuficiência renal aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de lise tumoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Metástase cerebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipercalcemia maligna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hiponatremia por síndrome de secreção inapropriada de ADH (SIADH).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA questão descreve um paciente com Câncer de Pulmão de Pequenas Células (CPPC) que apresenta sintomas neurológicos (confusão mental) e gastrointestinais (náuseas e vômitos), associados a uma hiponatremia grave (Sódio = 120 mEq/L). O câncer de pulmão de pequenas células é amplamente conhecido na literatura médica por ser o tumor mais frequentemente associado a síndromes paraneoplásicas endócrinas.\n\nPOR QUE A ALTERNATIVA (E) ESTÁ CORRETA?\n\nA Síndrome de Secreção Inapropriada de Hormônio Antidiurético (SIADH) é uma complicação clássica do carcinoma de pequenas células do pulmão, ocorrendo em cerca de 7% a 16% dos pacientes. Nessa síndrome, o tumor secreta ADH de forma autônoma, o que leva à reabsorção excessiva de água livre nos túbulos coletores renais. O resultado é uma hiponatremia dilucional. Os sintomas de náuseas, vômitos e confusão mental são típicos da queda dos níveis de sódio, que causa edema cerebral. Embora a SIADH seja classicamente descrita como uma hiponatremia euvolêmica (sem edema clínico evidente), em provas de residência, a associação \"Câncer de Pulmão + Hiponatremia\" é o gatilho direto para o diagnóstico de SIADH.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Insuficiência renal aguda: Embora a falência renal possa causar edema e distúrbios hidroeletrolíticos, a hiponatremia isolada tão acentuada (120 mEq/L) com foco em um paciente com câncer de pulmão direciona especificamente para uma síndrome paraneoplásica, e não para uma falência renal primária, que apresentaria elevação de escórias nitrogenadas (ureia e creatinina).\n\nb) Síndrome de lise tumoral: Esta síndrome ocorre geralmente após o início do tratamento quimioterápico em tumores de alta rotatividade celular. Caracteriza-se por hipercalemia (potássio alto), hiperfosfatasemia, hiperuricemia e hipocalcemia, e não primariamente por hiponatremia.\n\nc) Metástase cerebral: Metástases podem causar confusão mental e outros sintomas neurológicos por efeito de massa ou edema perilesional, mas não justificam o achado laboratorial de sódio sérico em 120 mEq/L.\n\nd) Hipercalcemia maligna: É uma síndrome paraneoplásica comum (especialmente no carcinoma de células escamosas do pulmão), que também causa confusão mental, náuseas e vômitos. No entanto, o exame laboratorial fornecido mostra uma alteração no sódio (hiponatremia) e não no cálcio.\n\nCONCLUSÃO\n\nO quadro clínico de sintomas neurológicos e gastrointestinais em um paciente com câncer de pulmão de pequenas células, acompanhado de hiponatremia severa, é a descrição clássica da SIADH, tornando a alternativa (e) a correta.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Pulmonares",
+      "Distúrbios do Sódio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:21:52.528Z"
+  }
+]

@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_973bda7e-3a21-42fe-8097-0bca0ea7fa14",
+    "originalId": "973bda7e-3a21-42fe-8097-0bca0ea7fa14",
+    "statement": "Em uma revisão de registros clínicos, observa-se o seguinte SOAP feito durante atendimento em uma UBS a um paciente de 38 anos com dor abdominal:\n\nS: Dor abdominal difusa há 24h, piora após refeições, sem vômitos.\nO: Abdome flácido, dor à palpação em epigástrio “devido dispepsia funcional”, ruídos hidroaéreos presentes, sem sinais de abdome agudo.\nA: Dispepsia funcional.\nP: Orientada dieta leve, iniciado IBP por 4 semanas, retorno em 30 dias ou antes se piora.\n\nQual é a avaliação CORRETA sobre esse registro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O erro central está no item S, que não deveria incluir sintomas gastrointestinais sem confirmação laboratorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A etapa A está inadequada porque deve conter apenas hipóteses diagnósticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O registro apresenta erro estrutural, pois o trecho “devido dispepsia funcional” constitui interpretação diagnóstica e não deveria constar na seção Objetivo (O).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O item P está incorreto porque condutas não devem ser registradas no SOAP.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O registro SOAP (Subjetivo, Objetivo, Avaliação e Plano) é a base do Prontuário Orientado por Problemas e Evidências, muito utilizado na Atenção Primária à Saúde. Para responder a essa questão, devemos analisar a função de cada componente da sigla:\n\nS (Subjetivo): Contém o relato do paciente, o motivo da consulta, a história da doença atual e os sintomas descritos.\n\nO (Objetivo): Contém os dados do exame físico, sinais vitais e resultados de exames complementares. Deve ser puramente descritivo, relatando o que o examinador viu, ouviu, sentiu ou mediu.\n\nA (Avaliação): É o momento da análise clínica. Aqui o médico registra suas impressões diagnósticas, diagnósticos confirmados ou códigos de classificação (como o CIAP-2 ou CID-10).\n\nP (Plano): Engloba as condutas terapêuticas, solicitações de exames, prescrições, orientações ao paciente e agendamento de retorno.\n\nAnálise das alternativas:\n\na) Incorreta. O item S serve justamente para registrar os sintomas relatados pelo paciente, independentemente de confirmação laboratorial. A dor abdominal e a piora pós-prandial são elementos subjetivos fundamentais para a anamnese.\n\nb) Incorreta. A etapa A (Avaliação) serve para registrar tanto hipóteses diagnósticas quanto diagnósticos definidos. No caso, \"Dispepsia funcional\" foi a síntese diagnóstica do profissional, estando corretamente posicionada em A.\n\nc) Correta. Este é o erro clássico no registro do exame físico (Objetivo). Ao escrever “dor à palpação em epigástrio devido à dispepsia funcional”, o examinador inseriu um juízo de valor e uma interpretação diagnóstica dentro da descrição física. O item Objetivo deve conter apenas o que foi observado (ex.: dor à palpação em epigástrio). A interpretação dessa dor como sendo causada pela dispepsia funcional deve constar apenas na Avaliação.\n\nd) Incorreta. O item P (Plano) é o local correto para registrar todas as condutas tomadas, incluindo a dieta, a prescrição do IBP (Inibidor de Bomba de Prótons) e o agendamento do retorno. Sem o registro das condutas no item P, o prontuário estaria incompleto.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:18.957Z"
+  },
+  {
+    "id": "AJUDA_97404daf-c1da-4f67-a3a0-22a1c4ea3e5d",
+    "originalId": "97404daf-c1da-4f67-a3a0-22a1c4ea3e5d",
+    "statement": "A inflamação crônica é um pilar fundamental na carcinogênese de vários tumores, atuando em múltiplos níveis biológicos. Compreender seus mecanismos é crucial para o desenvolvimento de estratégias de quimioprevenção. Assinale a alternativa correta com base em conhecimentos fisiopatológicos.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A cirurgia bariátrica, ao promover a redução do tecido adiposo visceral, diminui a liberação de ácidos graxos livres e de citocinas pró-inflamatórias como o TNF-α. Isso mitiga a resistência à insulina e a hiperinsulinemia crônica, reduzindo o estado inflamatório sistêmico e, consequentemente, o risco de carcinogênese.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O uso prolongado de anti-inflamatórios não esteroidais (AINE) aumenta a atividade da COX-2, elevando os níveis de prostaglandinas pró-inflamatórias e, por esse mecanismo, promove a transformação maligna em mucosas cronicamente inflamadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A úlcera de Marjolin, uma complicação rara de feridas cutâneas crônicas, ocorre devido à formação de espécies reativas de oxigênio (ROS), bloqueando as vias de sinalização HIF-1 e PI3K/Akt, inibindo a angiogênese mediada pelo VEGF.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A peroxidação lipídica, resultante de uma dieta rica em gorduras, bloqueia a formação de aldeídos reativos, que têm efeito citoprotetor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Apesar de a inflamação promover a iniciação do câncer por meio de dano ao DNA, ela induz apoptose celular, reduzindo a promoção e a progressão tumorais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A: ESTÁ CORRETA. O tecido adiposo visceral é metabolicamente ativo e atua como um órgão endócrino e inflamatório. Em estados de obesidade, há um aumento na liberação de ácidos graxos livres e citocinas pró-inflamatórias, como o TNF-alfa e a IL-6, que induzem resistência periférica à insulina. A hiperinsulinemia compensatória resultante aumenta a biodisponibilidade de IGF-1 (fator de crescimento semelhante à insulina 1), que estimula a proliferação celular e inibe a apoptose, criando um ambiente favorável à carcinogênese. A cirurgia bariátrica, ao promover a perda de peso e reduzir esse tecido adiposo, reverte esses mecanismos, exercendo um efeito protetor contra vários tipos de câncer.\n\nAlternativa B: ESTÁ INCORRETA. Os anti-inflamatórios não esteroidais (AINEs) agem inibindo a atividade das enzimas ciclo-oxigenases (COX-1 e COX-2), e não aumentando sua atividade. A inibição da COX-2 é, inclusive, uma estratégia de quimioprevenção estudada para o câncer colorretal, pois reduz os níveis de prostaglandinas que normalmente estimulam a proliferação celular, a angiogênese e a sobrevivência de células mutadas.\n\nAlternativa C: ESTÁ INCORRETA. A úlcera de Marjolin refere-se à transformação maligna de feridas crônicas ou cicatrizes de queimaduras. Embora o estresse oxidativo e as espécies reativas de oxigênio (ROS) participem do processo, a carcinogênese depende da ativação de vias de sinalização pró-sobrevivência, como HIF-1 (fator induzível por hipóxia) e PI3K/Akt, além do estímulo ao VEGF (fator de crescimento endotelial vascular) para promover a angiogênese. A alternativa descreve incorretamente o bloqueio dessas vias.\n\nAlternativa D: ESTÁ INCORRETA. A peroxidação lipídica é o processo de degradação oxidativa dos lipídios da membrana celular. Esse processo gera aldeídos reativos, como o malonaldeído, que são genotóxicos e citotóxicos, pois podem formar adutos no DNA e causar mutações. Portanto, esses aldeídos não têm efeito citoprotetor; eles são agentes contribuintes para o dano celular e a transformação maligna.\n\nAlternativa E: ESTÁ INCORRETA. A inflamação crônica não reduz a progressão tumoral. Pelo contrário, além de contribuir para a iniciação (dano ao DNA), ela é um promotor fundamental da progressão do câncer. O microambiente inflamatório é rico em citocinas e fatores de crescimento que inibem a apoptose de células transformadas, estimulam a angiogênese e facilitam a transição epitélio-mesenquimal, processo crucial para a invasão e metástase.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:18.957Z"
+  },
+  {
+    "id": "AJUDA_97410eaa-b7d9-4776-a971-fa4aeaebaef2",
+    "originalId": "97410eaa-b7d9-4776-a971-fa4aeaebaef2",
+    "statement": "João, 45 anos, possui um plano de saúde privado há cinco anos, vinculado à empresa em que trabalha. Recentemente, foi indicada a realização de uma cirurgia. Ao se informar sobre como proceder para a realização da cirurgia, soube que seu plano não cobria o procedimento necessário. Indignado, João entrou em contato com a operadora do plano de saúde, que alegou que o procedimento estava fora da cobertura contratada, conforme as regras da saúde suplementar no Brasil. A recusa de acesso ao procedimento por parte da operadora, no caso deste paciente, considerando a regulamentação exercida pela Agência Nacional de Saúde (ANS) é",
+    "options": [
+      {
+        "id": "A",
+        "text": "ilegítima, pois os planos de saúde são obrigados a cobrir todos os procedimentos médicos, incluindo os que não estão previstos no rol de procedimentos da ANS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "legítima, pois o rol de procedimentos da ANS define a cobertura mínima obrigatória, sendo que operadoras podem oferecer ou não coberturas adicionais em contrato.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "legítima, porque os planos de saúde não são obrigados a cobrir atendimentos imprevistos de urgência ou emergência, mesmo que o paciente já tenha completado o período de carência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ilegítima, porque todos os procedimentos médicos, sejam eles eletivos ou emergenciais, após análise de pertinência, devem ser autorizados pela operadora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "legítima, porque a cobertura oferecida pelos planos de saúde no Brasil não depende das regras da ANS, mas exclusivamente das cláusulas do contrato firmado com o cliente que, no caso, não previa essa cobertura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o funcionamento da Saúde Suplementar no Brasil, especificamente a cobertura obrigatória das operadoras de planos de saúde, regulamentada pela Agência Nacional de Saúde Suplementar (ANS).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Os planos de saúde não são obrigados a cobrir todos os procedimentos médicos existentes. A obrigatoriedade de cobertura é pautada pelo Rol de Procedimentos e Eventos em Saúde da ANS, que é atualizado periodicamente. Procedimentos experimentais ou aqueles que não constam no rol e não possuem previsão contratual específica não precisam ser custeados pela operadora.\n\nAlternativa b) Correta. O Rol da ANS funciona como uma lista de cobertura mínima obrigatória que todos os planos de saúde (contratados após a Lei nº 9.656/1998) devem oferecer. As operadoras podem oferecer coberturas adicionais além desse rol, mas isso deve estar explicitamente detalhado no contrato. Se o procedimento não estiver no rol da ANS e não estiver previsto no contrato firmado pelo paciente, a recusa da operadora é considerada legítima.\n\nAlternativa c) Incorreta. Os planos de saúde são, sim, obrigados a cobrir atendimentos de urgência e emergência. O prazo máximo de carência para esses casos é de 24 horas após a contratação do plano. A recusa em situações de urgência/emergência, após cumprida a carência inicial, é ilegal, respeitando-se o segmento contratado (ambulatorial ou hospitalar).\n\nAlternativa d) Incorreta. Nem todo procedimento médico deve ser autorizado pela operadora. A autorização depende da análise de três critérios: se o paciente cumpriu os prazos de carência, se o procedimento consta no Rol da ANS (ou no contrato) e se há indicação clínica pertinente (pertinência técnica). Não existe uma obrigatoriedade cega de autorização para qualquer solicitação.\n\nAlternativa e) Incorreta. A cobertura dos planos de saúde depende diretamente das regras da ANS. Os contratos de saúde suplementar no Brasil são regulados pela Lei nº 9.656/1998 e pelas resoluções normativas da ANS. Um contrato não pode oferecer menos do que o mínimo estabelecido pela agência reguladora; portanto, a cobertura está intrinsecamente ligada às normas da ANS, e não apenas às cláusulas isoladas do contrato.\n\nGabarito: Alternativa (b).",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:18.957Z"
+  },
+  {
+    "id": "AJUDA_97466d60-1cf6-4fe9-beba-4813b6f1cacc",
+    "originalId": "97466d60-1cf6-4fe9-beba-4813b6f1cacc",
+    "statement": "A telessaúde é prevista na Lei nº 8.080/90.\nSobre essa modalidade de serviço, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "As medicações receitadas pela telessaúde não são consideradas para efeitos de dispensação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O profissional de saúde poderá optar pela telessaúde desde que não seja a primeira consulta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Todos os profissionais de saúde que optem pela telessaúde precisam ter inscrição secundária para exercer a profissão em outra jurisdição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O paciente pode se recusar e requerer atendimento presencial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O termo de consentimento livre e esclarecido do paciente é obrigatório apenas nos casos em que ele seja participante de pesquisa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A telessaúde foi incorporada à Lei 8.080/90 (Lei Orgânica da Saúde) pela Lei 14.510/2022, que inseriu o Título IV-A, definindo as diretrizes e princípios para essa modalidade no Brasil. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A: Incorreta. De acordo com a legislação e regulamentações vigentes, as receitas e pedidos de exames emitidos por meio de telessaúde são válidos em todo o território nacional, desde que contenham a assinatura eletrônica avançada ou qualificada do profissional. Portanto, as medicações receitadas devem ser aceitas para dispensação em farmácias.\n\nAlternativa B: Incorreta. A lei não restringe o uso da telessaúde apenas para consultas de retorno. O profissional de saúde possui autonomia para decidir, com base em evidências científicas e critérios clínicos, se a primeira consulta ou qualquer etapa do acompanhamento pode ser realizada de forma remota com segurança para o paciente.\n\nAlternativa C: Incorreta. O Artigo 26-H da Lei 8.080/90 estabelece explicitamente que é dispensada a inscrição secundária ou complementar do profissional de saúde que exerça a telessaúde em jurisdição diferente daquela em que possui sua inscrição principal. Isso facilita o atendimento interestadual sem burocracias adicionais nos conselhos regionais.\n\nAlternativa D: Correta. Este é um princípio fundamental previsto no Artigo 26-G da Lei 8.080/90. Ao paciente é garantido o direito de recusa ao atendimento na modalidade telessaúde, sendo dever do sistema de saúde garantir o atendimento presencial sempre que solicitado pelo paciente. A adesão à telessaúde deve ser voluntária e consensual.\n\nAlternativa E: Incorreta. O consentimento livre e esclarecido do paciente é um dos pilares para a realização de qualquer atendimento via telessaúde, não se restringindo a protocolos de pesquisa. O paciente deve ser informado sobre como funciona a modalidade, as limitações do exame físico a distância e como seus dados serão protegidos, independentemente da finalidade do atendimento.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:18.957Z"
+  },
+  {
+    "id": "AJUDA_9748e16d-16c9-40ee-b0da-4823b25f859c",
+    "originalId": "9748e16d-16c9-40ee-b0da-4823b25f859c",
+    "statement": "Um paciente de 45 anos, sem doenças prévias, desenvolveu enfermidade de instalação súbita e progressiva com quadro de náuseas, vômitos, diarreia e dor abdominal. Logo após, queixou-se de cefaleia, vertigem e tontura. Foi internado na emergência, onde foi iniciada hidratação venosa e administração de sintomáticos. Entretanto, 3 horas depois começou a apresentar visão turva, ptose palpebral, diplopia, disfagia, disartria, boca seca e fraqueza muscular simétrica, acometendo com maior intensidade os membros superiores, sem perda da sensibilidade. Notaram-se hipotensão sem taquicardia e retenção urinária. Cerca de 6 horas após a internação, evoluiu para paralisia flácida motora descendente, associada a comprometimento autonômico disseminado. Durante todo esse período, o paciente se manteve consciente. A fraqueza muscular descendente afetou os músculos do tronco e dos membros, levando a dispneia, insuficiência respiratória e tetraplegia flácida. Foi necessária a transferência do paciente para o CTI, com instalação de tubo orotraqueal e ventilação mecânica, além de rotinas terapêuticas para pacientes graves.\nO diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "meningite por Haemophilus influenzae;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "síndrome de Guillain-Barré;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "doença de Lyme;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "infecção pelo Clostridium botulinum;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "raiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta um quadro clínico clássico de botulismo alimentar, uma condição grave causada pela ação da toxina produzida pela bactéria *Clostridium botulinum*. Abaixo, a análise detalhada dos pontos-chave do caso e das alternativas:\n\nO diagnóstico é botulismo (letra d) devido à tríade clássica apresentada: paralisia motora simétrica e descendente, comprometimento de nervos cranianos (diplopia, ptose, disfagia, disartria) e disautonomia (boca seca, retenção urinária, hipotensão), tudo isso mantendo o paciente consciente e sem alterações sensitivas. O quadro inicial de náuseas, vômitos e diarreia é comum no botulismo alimentar, precedendo os sintomas neurológicos que surgem pela interrupção da liberação de acetilcolina na junção neuromuscular.\n\nAnálise das alternativas:\n\na) Incorreta. A meningite por *Haemophilus influenzae* manifesta-se tipicamente com febre alta, cefaleia intensa, rigidez de nuca e sinais de irritação meníngea (Kernig e Brudzinski). Não causa o padrão de paralisia flácida descendente com preservação da consciência descrito, e o líquor estaria alterado, o que não condiz com a fisiopatologia do caso.\n\nb) Incorreta. A Síndrome de Guillain-Barré (SGB) é o principal diagnóstico diferencial, porém a paralisia na SGB é tipicamente ascendente (começa nos membros inferiores e sobe) e muitas vezes é precedida por parestesias (alterações de sensibilidade), que estavam ausentes no paciente. Além disso, a progressão da SGB costuma ser mais lenta (dias) comparada à evolução fulminante de poucas horas vista no botulismo deste caso.\n\nc) Incorreta. A doença de Lyme, causada pela *Borrelia burgdorferi*, pode apresentar manifestações neurológicas (neuroborreliose), como a paralisia facial periférica (muitas vezes bilateral), mas estas ocorrem em uma fase mais tardia da doença, geralmente acompanhadas de histórico de eritema migratório, artrite ou bloqueios cardíacos, não evoluindo como uma paralisia flácida descendente aguda e grave.\n\nd) Correta. A infecção pelo *Clostridium botulinum* (ou mais precisamente a ingestão da toxina pré-formada) explica perfeitamente todos os achados:\n1. Sintomas gastrointestinais iniciais.\n2. Acometimento de nervos cranianos (visão turva, ptose, diplopia, disfagia).\n3. Paralisia motora flácida simétrica e descendente.\n4. Sinais de disautonomia (boca seca, retenção urinária e hipotensão sem taquicardia reflexa, indicando bloqueio autonômico).\n5. Preservação da consciência e da sensibilidade, pois a toxina atua apenas na porção motora e autonômica da junção neuromuscular.\n\ne) Incorreta. A raiva humana apresenta-se geralmente com uma fase prodrômica inespecífica seguida de encefalite (forma furiosa) com espasmos musculares, hidrofobia e aerofobia, ou pela forma paralítica (raiva \"muda\"). No entanto, a raiva costuma cursar com alteração do nível de consciência, febre e tem uma evolução clínica distinta, além de estar historicamente associada a acidentes com animais transmissores.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Raiva, Tétano, Mordedura e Arranhadura Animal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:18.957Z"
+  },
+  {
+    "id": "AJUDA_975774af-957d-4da4-a420-585aab277d10",
+    "originalId": "975774af-957d-4da4-a420-585aab277d10",
+    "statement": "Mulher, 26 anos de idade, procura atendimento na Unidade Básica de Saúde (UBS) por disúria e urgência miccional há 3 dias. Nega febre, nega corrimento vaginal, usa DIU de cobre há 2 anos. Não faz uso de medicação de uso contínuo e teve sintomas semelhantes há cerca de 1 ano e meio. Exame físico sem alterações. Assinale a alternativa que apresenta a conduta recomendada para o caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ciprofloxacino, após coleta de urina 1 e urocultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ceftriaxona, sem necessidade de coleta de exame.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sulfametoxazol/trimetoprima, após coleta de urina 1 e urocultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nitrofurantoína, sem necessidade de coleta de exame.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado é de cistite aguda não complicada em uma mulher jovem, não gestante e sem comorbidades. Os sintomas clássicos (disúria e urgência miccional) associados à ausência de sintomas de alarme (febre, dor lombar) ou ginecológicos (corrimento vaginal) autorizam o diagnóstico estritamente clínico e o início imediato de antibioticoterapia empírica, dispensando a coleta de EAS (urina 1) ou urocultura.\n\nAnálise das alternativas:\n\na) Incorreta. O ciprofloxacino (e outras fluoroquinolonas) não é recomendado como primeira linha para cistite não complicada devido ao perfil de efeitos adversos, risco de indução de resistência antimicrobiana e necessidade de ser poupado para infecções mais graves. Além disso, a solicitação prévia de exames de urina é desnecessária.\n\nb) Incorreta. A ceftriaxona é uma cefalosporina de terceira geração de administração parenteral, reservada para infecções do trato urinário complicadas, pielonefrite ou quadros que necessitam de internação hospitalar. Não é uma opção para cistite simples em regime ambulatorial.\n\nc) Incorreta. Embora o sulfametoxazol/trimetoprima seja uma opção aceitável em cenários onde a resistência local de Escherichia coli é inferior a 20%, a alternativa erra ao condicionar o início do tratamento à coleta de urina 1 e urocultura, que não são indicadas na abordagem inicial da cistite aguda não complicada.\n\nd) Correta. A nitrofurantoína (100 mg a cada 12 horas por 5 dias) é uma das medicações de primeira linha para cistite aguda não complicada, apresentando excelentes taxas de cura e baixo potencial para seleção de resistência bacteriana. Como o quadro é típico e a paciente não tem fatores de complicação, o tratamento empírico deve ser instituído sem necessidade de exames complementares.\n\nGabarito: Letra d.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "ITU - Infecção do Trato Urinário",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:18.957Z"
+  },
+  {
+    "id": "AJUDA_975df6ee-4a0c-4a7f-9f3e-ca1a353b6e7d",
+    "originalId": "975df6ee-4a0c-4a7f-9f3e-ca1a353b6e7d",
+    "statement": "Paciente de 7 anos, na quarta semana de tratamento quimioterápico para leucemia linfocítica aguda, é admitido em hospital terciário com história de febre há 12 horas (temperatura axilar de 39 graus Celsius), tosse e dispneia. Após 24 horas da admissão, segue febril, apesar de ter usado dipirona há 1 hora, e mantém diurese de 2 mililitros por quilograma por hora. Exame físico: hidratado; pálido; orientado no tempo e no espaço; frequência cardíaca de 130 batimentos por minuto; temperatura axilar de 39 graus Celsius; frequência respiratória de 36 incursões respiratórias por minuto; pressão arterial de 90 por 60 milímetros de mercúrio; boa perfusão periférica; murmúrio vesicular diminuído em base de hemitórax à direita, com crepitações; bulhas taquicárdicas; fígado a 4 centímetros do rebordo costal direito e 5 centímetros do apêndice xifoide; baço a 4 centímetros do rebordo costal esquerdo. Os exames laboratoriais evidenciam lactato aumentado, acidose metabólica e hemograma com leucocitose com desvio à esquerda.\nCom base no quadro descrito, o diagnóstico é",
+    "options": [
+      {
+        "id": "A",
+        "text": "sepse.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "choque séptico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "disfunção de múltiplos órgãos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "síndrome da resposta inflamatória sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é necessário aplicar os critérios de sepse e choque séptico em pediatria, que diferem em alguns pontos da definição utilizada em adultos (Sepsis-3).\n\nAnálise do quadro clínico:\nO paciente apresenta uma provável pneumonia (tosse, dispneia, crepitações e murmúrio diminuído) no contexto de uma imunossupressão (quimioterapia para leucemia). Ele manifesta sinais de Síndrome da Resposta Inflamatória Sistêmica (SIRS): febre (39°C), taquicardia (130 bpm), taquipneia (36 irpm) e leucocitose com desvio à esquerda.\n\nPor que a alternativa (b) é a correta?\nO choque séptico em pediatria é definido pela presença de sepse associada à disfunção cardiovascular. Diferentemente dos adultos, o diagnóstico de choque em crianças não exige a presença de hipotensão arterial, uma vez que a criança possui mecanismos compensatórios (como a taquicardia e a vasoconstrição) muito eficientes, mantendo a pressão arterial normal até estágios avançados (choque compensado). \nNesta questão, o diagnóstico de choque é confirmado pela evidência de hipoperfusão tecidual e disfunção celular, manifestadas pelo lactato aumentado e pela acidose metabólica. Segundo o Consenso Internacional de Sepse Pediátrica, a presença de acidose metabólica inexplicada ou lactato elevado em um paciente com sepse é critério para disfunção cardiovascular, caracterizando o choque séptico.\n\nAnálise das alternativas incorretas:\n\na) sepse: Embora o paciente tenha sepse (infecção suspeita + critérios de SIRS), o quadro já evoluiu com sinais de hipoperfusão tecidual (lactato alto e acidose). Quando há evidência de disfunção cardiovascular ou metabólica decorrente da infecção, o diagnóstico mais específico e grave é o de choque séptico.\n\nc) disfunção de múltiplos órgãos: Esta condição é definida pela falência simultânea de dois ou mais órgãos ou sistemas (como renal, hepático, hematológico, respiratório e neurológico). Embora o paciente apresente sinais respiratórios e metabólicos, o termo \"choque séptico\" descreve de forma mais precisa o estado fisiopatológico atual de hipoperfusão sistêmica que está gerando essas alterações.\n\nd) síndrome da resposta inflamatória sistêmica (SIRS): O paciente preenche critérios para SIRS (febre, taquicardia, taquipneia e leucocitose). No entanto, a SIRS é apenas uma descrição de um estado inflamatório que pode ocorrer por causas não infecciosas (como trauma ou pancreatite). Como há um foco infeccioso claro e evidência de falência circulatória/metabólica, o diagnóstico deve ser o de choque séptico, que é muito mais específico.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Choque em Pediatria"
+    ],
+    "difficulty": 91.41239599699381,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:18.957Z"
+  },
+  {
+    "id": "AJUDA_975fb043-4681-4016-8cf5-ef52fdd80837",
+    "originalId": "975fb043-4681-4016-8cf5-ef52fdd80837",
+    "statement": "Recém-nascido a termo, sexo masculino, parto cesáreo por sofrimento fetal agudo. Ao nascimento, está apneico, com FC 60bpm. Após os passos iniciais, inicia-se ventilação com pressão positiva (VPP) com balão autoinflável por 30 segundos. Avaliação mostra expansão torácica insuficiente. A equipe decide trocar para balão com peça em T e melhora a vedação e o posicionamento da cabeça. Após mais 30 segundos, a FC sobe para 100bpm, mas a respiração espontânea continua ausente. Considerando o caso descrito, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar massagem cardíaca até o retorno da respiração espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar adrenalina traqueal para estimular o centro respiratório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Intubar e manter ventilação até o estabelecimento da respiração eficaz.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Observar em berço aquecido, pois a FC já está adequada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve um cenário de reanimação neonatal em sala de parto, seguindo os protocolos da Sociedade Brasileira de Pediatria (SBP) e do Programa de Reanimação Neonatal (PRN). O recém-nascido apresentava bradicardia (FC 60 bpm) e apneia ao nascer. Após a correção da técnica de ventilação com pressão positiva (VPP), a frequência cardíaca subiu para 100 bpm, o que indica que a ventilação está sendo eficaz (o aumento da FC é o principal sinal de resposta positiva). Contudo, o paciente permanece em apneia.\n\nAnálise das alternativas:\n\na) Incorreta. A massagem cardíaca está indicada apenas quando a frequência cardíaca permanece abaixo de 60 bpm, mesmo após 30 segundos de ventilação com pressão positiva (VPP) eficaz, preferencialmente com via aérea avançada (intubação ou máscara laríngea). Como a FC do paciente subiu para 100 bpm, a massagem não deve ser iniciada.\n\nb) Incorreta. A adrenalina é uma medicação de resgate utilizada apenas em situações extremas, quando a FC permanece abaixo de 60 bpm após VPP e massagem cardíaca bem executadas. Ela não é utilizada para estimular o centro respiratório em casos de apneia primária ou secundária no recém-nascido.\n\nc) Correta. O paciente respondeu à manobra de ventilação com melhora da frequência cardíaca (atingiu o alvo de 100 bpm), mas ainda não estabeleceu movimentos respiratórios espontâneos. Nessas situações, a ventilação deve ser mantida. A intubação orotraqueal é a conduta mais adequada para garantir a via aérea, oferecer uma ventilação mais estável e segura, e permitir o transporte ou a observação do paciente até que ele recupere o esforço respiratório ou seja estabilizado em ambiente de terapia intensiva.\n\nd) Incorreta. Um recém-nascido em apneia não pode ser deixado apenas em observação, mesmo com a frequência cardíaca normalizada. Sem suporte ventilatório, a hipóxia retornará rapidamente, levando a uma nova queda da FC, acidose e possível óbito. O suporte ventilatório deve ser mantido até que o paciente apresente respiração espontânea rítmica e eficaz.\n\nResumo do raciocínio clínico: Na reanimação neonatal, se a FC é maior ou igual a 100 bpm, mas o RN permanece em apneia ou respiração irregular, deve-se manter a VPP. Se a necessidade de VPP se prolonga, a via aérea deve ser garantida por intubação traqueal.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Reanimação Neonatal",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:18.957Z"
+  },
+  {
+    "id": "AJUDA_9770cadc-536b-4028-be26-f7007f470876",
+    "originalId": "9770cadc-536b-4028-be26-f7007f470876",
+    "statement": "Com relação às doenças exantemáticas e sua etiologia, correlacione a doença com o seu agente etiológico:\n1 - Sarampo\n2 - Varicela\n3 - Escarlatina\n4 - Rubéola\n\n( ) Estreptococo Beta hemolítico\n( ) Togavirus\n( ) Herpes vírus\n( ) Paramixovirus",
+    "options": [
+      {
+        "id": "A",
+        "text": "3-4-2-1.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "1-2-3-4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "4-3-2-1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "3-4-1-2.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A resolução desta questão baseia-se na correta associação entre as doenças exantemáticas clássicas da infância e suas etiologias:\n\n1. Estreptococo Beta-hemolítico: Corresponde à Escarlatina (3). A escarlatina é uma doença bacteriana causada pelo Streptococcus pyogenes (estreptococo beta-hemolítico do grupo A), produtor de exotoxinas pirogênicas/eritrogênicas.\n\n2. Togavirus: Corresponde à Rubéola (4). O vírus da rubéola pertence à família Togaviridae (gênero Rubivirus).\n\n3. Herpes vírus: Corresponde à Varicela (2). A catapora é causada pelo vírus varicela-zóster (VZV), também classificado como herpes-vírus humano tipo 3 (HHV-3), pertencente à família Herpesviridae.\n\n4. Paramixovirus: Corresponde ao Sarampo (1). O agente causador do sarampo é um vírus de RNA da família Paramyxoviridae (gênero Morbillivirus).\n\nA sequência correta dos parênteses, de cima para baixo, é: 3 - 4 - 2 - 1.\n\nAnálise das alternativas:\n\na) 3-4-2-1. Correta. Apresenta a correlação exata de todos os agentes etiológicos com suas respectivas patologias.\n\nb) 1-2-3-4. Incorreta. Apenas replica a ordem numérica da primeira coluna, sem fazer a correlação microbiológica correta.\n\nc) 4-3-2-1. Incorreta. Associa erroneamente a rubéola ao estreptococo e a escarlatina ao togavírus.\n\nd) 3-4-1-2. Incorreta. Embora acerte a escarlatina e a rubéola, inverte a relação da varicela (que é um herpesvírus) com o sarampo (que é um paramixovírus).\n\nGabarito: Letra A.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:18.957Z"
+  },
+  {
+    "id": "AJUDA_977fed85-628f-4c1a-8582-196751518526",
+    "originalId": "977fed85-628f-4c1a-8582-196751518526",
+    "statement": "Em relação ao Método Clínico Centrado na Pessoa (MCCP) desenvolvido por Moira Stewart e colegas, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É dividido em 7 componentes de estudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O primeiro componente é “Explorando a saúde, a doença e a experiência com a doença”.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O segundo componente é “Elaborando um plano conjunto de manejo dos problemas”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O quinto componente é “Fortalecendo a relação entre a pessoa e o médico”.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nO Método Clínico Centrado na Pessoa (MCCP), sistematizado por Moira Stewart e colaboradores, é um modelo de atendimento que busca transpor o foco exclusivo na doença para focar na pessoa que adoece. Atualmente, o modelo mais utilizado e cobrado em provas é o da 3ª edição, que organiza o método em 4 componentes principais.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A: Incorreta. O método não é dividido em 7 componentes. Originalmente, o modelo de Stewart apresentava 6 componentes, mas as atualizações mais recentes consolidaram o método em apenas 4 componentes fundamentais para facilitar sua aplicação prática.\n\nAlternativa B: Correta. O primeiro componente é exatamente \"Explorando a saúde, a doença e a experiência com a doença\". Neste passo, o médico busca integrar a dimensão biológica (doença/disease) com a vivência subjetiva do indivíduo (experiência da doença/illness). Para explorar a experiência da doença, utiliza-se frequentemente o mnemônico SIFE:\n- Sentimentos (o que o paciente sente em relação ao problema);\n- Ideias (o que o paciente pensa que tem);\n- Função (como o problema afeta sua vida e rotina);\n- Expectativas (o que o paciente espera do médico e da consulta).\n\nAlternativa C: Incorreta. \"Elaborar um plano conjunto de manejo\" é, na verdade, o terceiro componente do método. O segundo componente é \"Entendendo a pessoa como um todo\", que envolve compreender o ciclo de vida do paciente e o contexto social e familiar em que ele está inserido. O terceiro componente (plano conjunto) foca na negociação entre médico e paciente para definir metas de tratamento e o papel de cada um.\n\nAlternativa D: Incorreta. No modelo atual de 4 componentes, \"Fortalecer/Intensificar a relação entre a pessoa e o médico\" é o quarto componente, e não o quinto. Este componente ressalta que a relação médico-paciente deve ser cultivada em todos os encontros, buscando a compaixão, a empatia e a construção de um vínculo de confiança que facilite o cuidado longitudinal. Mesmo se fosse considerado o modelo antigo de 6 componentes, o fortalecimento da relação ocuparia a quinta posição, mas o primeiro componente (descrito na alternativa B) continuaria sendo a base primordial do método e a alternativa mais clássica de resposta.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:18.957Z"
+  }
+]

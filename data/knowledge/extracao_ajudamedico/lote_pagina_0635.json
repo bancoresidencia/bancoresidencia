@@ -1,0 +1,513 @@
+[
+  {
+    "id": "AJUDA_b1897dd1-d16b-45bc-9f9f-57da9e244255",
+    "originalId": "b1897dd1-d16b-45bc-9f9f-57da9e244255",
+    "statement": "Paciente chega à emergência com história compatível com pneumonia adquirida na comunidade. Você aplica o CURB 65 e o PSI, que são escores de gravidade. O paciente passa a apresentar choque com necessidade de vasopressor, pois não respondeu a volume, mas ainda mantendo saturação acima de 94% com oxigênio a 2 litros por minuto por óculos nasal. O critério de pneumonia grave adquirida na comunidade baseia-se em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nos escores de gravidade, que são acurados para indicar o tratamento em UTI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na presença de choque com necessidade de vasopressor.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Na necessidade de oxigênio para manter saturação acima de 94%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na necessidade de ressuscitação com volume.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para definir a gravidade de uma Pneumonia Adquirida na Comunidade (PAC) e a necessidade de internação em Unidade de Terapia Intensiva (UTI), a literatura médica, especialmente as diretrizes da ATS/IDSA (American Thoracic Society / Infectious Diseases Society of America), utiliza critérios específicos divididos em Maiores e Menores.\n\nAlternativa (a) Incorreta. Os escores CURB-65 e PSI são excelentes ferramentas para predizer a mortalidade e auxiliar na decisão de tratar o paciente em casa ou no hospital. No entanto, eles não são os critérios ideais para definir a internação em UTI. Um paciente idoso pode ter um PSI alto apenas pela idade e comorbidades, sem estar criticamente enfermo no momento, enquanto um jovem pode ter um CURB-65 baixo e ainda assim precisar de suporte intensivo por insuficiência respiratória aguda.\n\nAlternativa (b) Correta. De acordo com os critérios da ATS/IDSA, a PAC é classificada como grave se o paciente apresentar pelo menos um critério maior ou três critérios menores. Os dois critérios maiores são: 1) Necessidade de ventilação mecânica invasiva e 2) Choque séptico com necessidade de vasopressores. Como o paciente do enunciado necessita de vasopressor, ele preenche o critério de PAC grave.\n\nAlternativa (c) Incorreta. A necessidade de oxigênio em baixo fluxo (2 litros por minuto) para manter uma saturação adequada é comum em quadros de pneumonia moderada. Para ser considerado um critério de gravidade (no caso, um critério menor), o paciente precisaria apresentar uma relação PaO2/FiO2 menor ou igual a 250, o que reflete uma hipoxemia muito mais severa do que a descrita.\n\nAlternativa (d) Incorreta. A hipotensão que requer ressuscitação volêmica vigorosa é considerada um critério menor de gravidade. No entanto, o enunciado descreve que o paciente não respondeu ao volume e passou a necessitar de vasopressores, o que caracteriza o choque séptico, elevando o status do paciente para o preenchimento de um critério maior de gravidade.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:53.386Z"
+  },
+  {
+    "id": "AJUDA_b1911085-aaee-4dd5-8191-83d19c03b6b0",
+    "originalId": "b1911085-aaee-4dd5-8191-83d19c03b6b0",
+    "statement": "Ao receber o resultado de uma biópsia que confirmou neoplasia gástrica avançada, um médico de família prepara-se para comunicar o diagnóstico ao paciente. Em consulta reservada, ele inicia a conversa buscando entender o que o paciente compreende sobre sua condição e quais preocupações tem naquele momento. No protocolo SPIKES, essa conduta se insere predominantemente em qual componente da abordagem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Preparação do ambiente para a notícia (Setting up).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Comunicação do diagnóstico e prognóstico (Knowledge).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Exploração da percepção do paciente (Perception).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Planejamento conjunto dos próximos passos (Strategy/Summary).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O protocolo SPIKES é um guia estruturado em seis etapas para auxiliar os profissionais de saúde na tarefa de comunicar notícias difíceis. Cada letra da sigla representa um passo fundamental para garantir que a informação seja transmitida de forma clara e empática.\n\nNo cenário descrito, a conduta do médico de buscar entender o que o paciente compreende sobre sua condição e quais são suas preocupações caracteriza especificamente o segundo passo do protocolo: a Percepção.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. A preparação do ambiente (Setting up) é o primeiro passo (S). Envolve aspectos logísticos e comportamentais, como garantir um local privativo, sentar-se ao lado do paciente, evitar interrupções por telefone e preparar-se mentalmente para o encontro. Embora o enunciado mencione uma \"consulta reservada\", a ação principal descrita não é a organização do espaço, mas sim o início do diálogo exploratório.\n\nAlternativa B - Incorreta. O conhecimento (Knowledge) é o quarto passo (K). Refere-se ao momento em que o médico de fato fornece as informações sobre o diagnóstico e o prognóstico. Esta etapa deve ser feita de forma gradual, em frases curtas e evitando jargões técnicos. No enunciado, o médico ainda não forneceu a notícia; ele está preparando o terreno para isso.\n\nAlternativa C - Correta. A percepção (Perception) é o segundo passo (P). O objetivo é aplicar o axioma \"antes de falar, escute\". O médico utiliza perguntas abertas para avaliar o quanto o paciente já entende sobre sua situação de saúde e qual o seu estado emocional. Isso permite ao médico alinhar a linguagem e corrigir possíveis interpretações equivocadas ou expectativas irreais antes de entregar a notícia difícil.\n\nAlternativa D - Incorreta. A estratégia e o resumo (Strategy/Summary) constituem o sexto e último passo (S). Esta fase ocorre somente após a notícia ter sido dada e as emoções do paciente terem sido acolhidas e validadas. Nela, o médico discute as opções de tratamento, define os próximos passos do cuidado e resume o que foi conversado para garantir que o paciente compreendeu o plano.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:53.386Z"
+  },
+  {
+    "id": "AJUDA_b1936073-8154-423d-a64b-228b368603b7",
+    "originalId": "b1936073-8154-423d-a64b-228b368603b7",
+    "statement": "Recém-nascido, 35 semanas de idade gestacional, permaneceu internado na UTI Neonatal por dez dias, onde recebeu antibiótico aminoglicosídeo.\nO exame de triagem auditiva mais indicado nessa situação é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "audiometria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "reflexo cócleo-palpebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "emissões otoacústicas evocadas transientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "potencial evocado auditivo de tronco encefálico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "impedanciometria.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O ponto central desta questão é identificar o protocolo correto para a Triagem Auditiva Neonatal Universal (TANU), popularmente conhecida como Teste da Orelhinha, em um recém-nascido com Indicadores de Risco para Deficiência Auditiva (IRDA).\n\nNo caso descrito, o paciente apresenta três indicadores importantes: prematuridade (35 semanas), internação em UTI Neonatal por mais de cinco dias e uso de medicação ototóxica (aminoglicosídeo).\n\nSegundo as diretrizes do Joint Committee on Infant Hearing (JCIH) e do Ministério da Saúde do Brasil, a escolha do exame de triagem deve seguir este critério:\n\n1. Recém-nascidos sem indicadores de risco: o exame inicial é a Emissão Otoacústica Evocada (EOA).\n2. Recém-nascidos com indicadores de risco (IRDA): o exame inicial deve ser o Potencial Evocado Auditivo de Tronco Encefálico (PEATE), também conhecido como BERA.\n\nExplicação das alternativas:\n\na) Incorreta. A audiometria é um exame comportamental que exige a colaboração ativa do paciente (levantar a mão ou apertar um botão ao ouvir o som). É impossível de ser realizada em um recém-nascido de forma fidedigna para triagem.\n\nb) Incorreta. O reflexo cócleo-palpebral é uma avaliação rudimentar em que se observa se o bebê pisca diante de um som súbito e intenso. Não possui sensibilidade nem especificidade para ser utilizado como método de triagem auditiva moderno.\n\nc) Incorreta. As emissões otoacústicas (EOA) avaliam apenas a integridade das células ciliadas externas da cóclea. Em bebês que passaram pela UTI Neonatal, existe um risco aumentado de neuropatia auditiva (perda retrococlear). Se fizermos apenas a EOA, esse bebê pode passar no teste (pois a cóclea pode estar normal), mas ter uma surdez de origem nervosa que não seria detectada.\n\nd) Correta. O PEATE avalia toda a via auditiva, desde a cóclea e o nervo auditivo até o tronco encefálico. Por ser mais completo e capaz de detectar neuropatias auditivas (frequentes em prematuros e crianças de UTI), é o padrão-ouro e o exame indicado para recém-nascidos com indicadores de risco.\n\ne) Incorreta. A impedanciometria avalia a complacência da membrana timpânica e o funcionamento da orelha média (presença de secreção ou problemas nos ossículos). Não é um teste de triagem para avaliar a capacidade auditiva ou a integridade neural do sistema auditivo no recém-nascido.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cuidados Neonatais",
+      "Otoneurologia, Vertigens e Audiologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:53.386Z"
+  },
+  {
+    "id": "AJUDA_b1b3400a-0162-4444-93e3-7708b877f5ca",
+    "originalId": "b1b3400a-0162-4444-93e3-7708b877f5ca",
+    "statement": "As malformações mullerianas são anormalidades congênitas do sistema reprodutor feminino.\nSobre essas malformações, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "são exclusivamente de origem genética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "são geralmente diagnosticadas antes da puberdade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "representam a principal causa de abortamentos espontâneos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "podem causar parto prematuro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "pacientes com útero didelfo são inférteis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "As malformações müllerianas decorrem de falhas na formação, fusão ou reabsorção do septo dos ductos paramesonéfricos durante o desenvolvimento embrionário do trato reprodutor feminino. Abaixo, segue a análise detalhada de cada alternativa:\n\nAlternativa a: Incorreta. A etiologia das malformações müllerianas é predominantemente multifatorial e, na maioria das vezes, esporádica. Embora algumas síndromes genéticas específicas possam cursar com tais anomalias, a maioria dos casos não apresenta um padrão de herança genética exclusivo ou definido, podendo sofrer influência de fatores ambientais e teratogênicos durante a vida intrauterina.\n\nAlternativa b: Incorreta. Como essas malformações não costumam afetar a genitália externa, elas raramente são detectadas na infância. O diagnóstico costuma ocorrer apenas após a puberdade, seja pela investigação de amenorreia primária ou dor pélvica cíclica (em casos de malformações obstrutivas que geram hematocolpos/hematometra), ou mais tardiamente, durante a propedêutica de infertilidade e perdas gestacionais.\n\nAlternativa c: Incorreta. Apesar de as malformações uterinas estarem fortemente associadas a perdas gestacionais de repetição, elas não são a principal causa de abortamentos espontâneos em geral. As anomalias cromossômicas (aneuploidias) representam a causa mais comum de abortamento, respondendo por mais de 50% dos casos no primeiro trimestre.\n\nAlternativa d: Correta. As malformações müllerianas, como o útero septado, bicorno, unicorno e didelfo, alteram a anatomia e a capacidade de distensão da cavidade uterina. Isso resulta em menor espaço para o desenvolvimento fetal e, frequentemente, está associado à insuficiência cervical. Esses fatores combinados elevam significativamente o risco de trabalho de parto prematuro, rotura prematura de membranas e apresentações fetais anômalas.\n\nAlternativa e: Incorreta. Pacientes com útero didelfo não são inféreis. Elas possuem dois cornos uterinos e dois colos independentes, ambos funcionalmente capazes de receber uma gestação. Embora apresentem um risco maior de complicações obstétricas (como aborto e prematuridade), a capacidade de conceber permanece preservada.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anatomia e Embriologia do Trato Genital Feminino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:53.386Z"
+  },
+  {
+    "id": "AJUDA_b1b46fdb-a504-4a09-a406-fa399b367ce6",
+    "originalId": "b1b46fdb-a504-4a09-a406-fa399b367ce6",
+    "statement": "M. A. F., GII PI 1C (há 3 anos) A0, idade gestacional de 24 semanas, vem à consulta de pré-natal com dúvidas em relação à vacinação. Gostaria de ter informações sobre as vacinas: hepatite B, tétano e dentre outras. Sorologias: HBsAg negativo; Anti Hbs negativo, rubéola IgM negativo, IgG negativo. Tipagem sanguínea A negativo. Parceiro: tipagem sanguínea B negativo.\nCom relação a esse caso, assinale a alternativa que representa a conduta correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vacina contra febre amarela tem contraindicação absoluta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vacina contra HPV pode ser administrada na gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Se a paciente recebeu a tríplice bacteriana acelular na gestação anterior, não há a necessidade de nova administração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se aguardar o período de puerpério para a administração da tríplice viral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A vacina contra hepatite B deve ser realizada no terceiro trimestre da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a: Incorreta. A vacina contra a febre amarela é composta por vírus vivos atenuados. Embora seja evitada na rotina de gestantes, sua contraindicação é relativa. Em situações de surtos, viagens para áreas de alto risco ou quando o benefício da proteção supera o risco potencial de infecção pelo vírus vacinal, a vacina pode ser administrada durante a gestação.\n\nAlternativa b: Incorreta. A vacina contra o HPV (Papilomavírus Humano) não deve ser administrada durante a gestação. Não há dados de segurança suficientes que recomendem seu uso nesse período. Se uma mulher engravidar durante o esquema vacinal, as doses restantes devem ser adiadas para o período pós-parto.\n\nAlternativa c: Incorreta. A vacina tríplice bacteriana acelular do tipo adulto (dTpa) deve ser administrada em todas as gestações, a partir da 20ª semana, independentemente de a paciente ter recebido a dose em gestações anteriores. O objetivo principal é a transferência passiva de anticorpos contra a coqueluche para o feto, protegendo o recém-nascido até que ele complete seu próprio esquema vacinal.\n\nAlternativa d: Correta. A paciente é suscetível à rubéola (IgG negativo). A vacina tríplice viral (que protege contra sarampo, caxumba e rubéola) é produzida com vírus vivos atenuados e é formalmente contraindicada durante a gestação devido ao risco teórico de transmissão viral ao feto. Por isso, a orientação correta é realizar a vacinação no puerpério para garantir a proteção futura da mulher.\n\nAlternativa e: Incorreta. A vacina contra a hepatite B é recomendada para gestantes que não possuem imunidade prévia (Anti-HBs negativo), como é o caso da paciente. Ela pode ser iniciada em qualquer trimestre da gestação, seguindo o esquema de três doses (0, 1 e 6 meses), não havendo necessidade de aguardar até o terceiro trimestre.\n\nObservação sobre a tipagem sanguínea: A questão informa que a gestante é A negativo e o parceiro é B negativo. Como ambos são Rh negativo, não há risco de isoimunização Rh, pois o feto será necessariamente Rh negativo. Esse dado funciona como um distrator em relação ao foco principal, que é a imunização.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:53.386Z"
+  },
+  {
+    "id": "AJUDA_b1b968a0-7de4-40b5-ba6f-ea928b8b1f97",
+    "originalId": "b1b968a0-7de4-40b5-ba6f-ea928b8b1f97",
+    "statement": "Criança, sexo masculino, 4 anos de idade, com antecedente de insuficiência renal crônica dialítica, portador de cateter de longa permanência, apresentou quadro de febre e tremores durante sessão de hemodiálise há 48 horas. Após estabilização inicial, foi internado em enfermaria de pediatria com prescrição de antibiótico parenteral. Ele está afebril há 24 horas, sem queixas, com sinais vitais dentro da normalidade. Ao exame físico, encontra-se em bom estado geral, descorado +/4+, hidratado, anictérico, afebril e eupneico. Ausculta pulmonar e cardíaca sem alterações, exame físico abdominal indolor, sem visceromegalias. A hemocultura central resultou positiva para Staphylococcus aureus, conforme tabela de antibiograma fornecida.\n\nNão foi coletada hemocultura periférica na admissão por dificuldade de acesso. Foi realizado ecocardiograma, sem achados de vegetação, e retirado cateter de longa permanência. Qual a melhor conduta para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter vancomicina parenteral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Alta hospitalar com sulfametoxazol trimetropina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspender antibioticoterapia e considerar contaminação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Descalonar para clindamicina oral, mantendo internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questao aborda o manejo de uma bacteremia relacionada a cateter por Staphylococcus aureus em paciente pediatrico com doenca renal cronica.\n\nAnalise do Antibiograma (Imagem):\nA tabela mostra o isolamento de Staphylococcus aureus resistente a oxacilina (Oxacilina maior ou igual a 4 R), o que o define como MRSA (Staphylococcus aureus resistente a meticilina/oxacilina). O laudo tambem indica sensibilidade a vancomicina (1 S), teicoplanina, daptomicina, clindamicina e sulfametoxazol-trimetoprima.\n\nAnalise das alternativas:\n\nAlternativa a (Correta): Manter vancomicina parenteral. Trata-se de bacteremia por MRSA. O Staphylococcus aureus e um patogeno altamente virulento, com grande capacidade de disseminacao metastatica (como osteomielite, embolia septica e endocardite). Mesmo com a remocao do cateter, paciente estavel e ecocardiograma sem vegetacoes, o tratamento da bacteremia por MRSA nao complicada exige curso completo de antibioticoterapia venosa bactericida com vancomicina por no minimo 14 dias a partir da primeira hemocultura de controle negativa.\n\nAlternativa b (Incorreta): Alta hospitalar com sulfametoxazol-trimetoprima. Embora haja sensibilidade in vitro, sulfametoxazol-trimetoprima por via oral nao e terapia de primeira linha para bacteremia por MRSA, alem de a transicao precoce para via oral nao ser recomendada para bacteremias estafilococicas em pacientes de alto risco (renal cronico dialitico).\n\nAlternativa c (Incorreta): Suspender antibioticoterapia e considerar contaminação. Diferente de estafilococos coagulase-negativos, o Staphylococcus aureus isolado em hemocultura (mesmo em apenas uma amostra ou via cateter) NUNCA deve ser considerado mero contaminante. Ele reflete infeccao verdadeira e exige tratamento adequado.\n\nAlternativa d (Incorreta): Descalonar para clindamicina oral, mantendo internação. A clindamicina por via oral nao e adequada para o tratamento definitivo de bacteremia por MRSA devido a sua acao bacteriostatica e alto risco de falha terapeutica e emergencia de resistencia. O padrao-ouro permanece sendo o tratamento parenteral com glicopeptideo (vancomicina).\n\nGabarito: Letra a.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Tópicos em Pediatria",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/b5d405bebf4bc443d61103d895d27acd063377d0b59a9762817cf76c5e5bcfa9.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b1b968a0-7de4-40b5-ba6f-ea928b8b1f97_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:53.940Z"
+  },
+  {
+    "id": "AJUDA_b1d1f85d-6971-4cb8-b804-affd6a6f38c4",
+    "originalId": "b1d1f85d-6971-4cb8-b804-affd6a6f38c4",
+    "statement": "Paciente de 58 anos, hipertenso há 15 anos em uso irregular de enalapril, comparece ao pronto-socorro referindo cefaleia intensa de início há 2 horas. À admissão, apresenta PA de 210/130 mmHg em ambos os membros superiores, confirmada após três aferições. Ao exame físico, encontra-se consciente, orientado, sem déficits neurológicos focais, ausculta cardiopulmonar sem alterações e sem sinais de edema periférico. Eletrocardiograma mostra ritmo sinusal sem alterações isquêmicas e radiografia de tórax com área cardíaca normal. Estabeleça o diagnóstico e o tratamento inicial adequado para esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Emergência hipertensiva; iniciar nitroprussiato de sódio intravenoso em unidade de terapia intensiva, visando redução de 25% da pressão arterial média em uma hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Urgência hipertensiva; iniciar captopril via oral em baixas doses, com tempo de pico de ação de 60 a 90 minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Emergência hipertensiva; administrar nifedipino de liberação rápida sublingual para redução imediata da pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Urgência hipertensiva; iniciar furosemida intravenosa como agente de primeira escolha para controle pressórico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Emergência hipertensiva; iniciar clonidina via oral com pico de ação em 30 a 60 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, é fundamental diferenciar os dois tipos principais de crise hipertensiva: a Emergência e a Urgência. A Emergência Hipertensiva ocorre quando há elevação acentuada da pressão arterial (geralmente sistólica maior ou igual a 180 mmHg e/ou diastólica maior ou igual a 120 mmHg), associada a uma lesão aguda e progressiva de órgão-alvo (como cérebro, coração, rins ou grandes vasos), apresentando risco iminente de morte. Já a Urgência Hipertensiva caracteriza-se por níveis pressóricos igualmente elevados, porém sem evidência de lesão aguda de órgão-alvo.\n\nNo caso clínico descrito, o paciente apresenta níveis pressóricos de 210/130 mmHg e cefaleia. Entretanto, o exame neurológico é normal (consciente, orientado, sem déficits), a ausculta cardiopulmonar não revela falência cardíaca, o eletrocardiograma não demonstra isquemia aguda e a radiografia de tórax é normal. A ausência de sintomas ou sinais de lesão aguda em órgãos vitais define o quadro como Urgência Hipertensiva. O objetivo terapêutico na urgência é reduzir a pressão arterial gradualmente em um período de 24 a 48 horas, utilizando medicamentos por via oral.\n\nAnálise das alternativas:\n\na) Incorreta. O diagnóstico de emergência hipertensiva está errado, pois não há lesão de órgão-alvo. O uso de nitroprussiato de sódio (vasodilatador potente de uso intravenoso) e o manejo em UTI são exclusivos para casos de emergência.\n\nb) Correta. O quadro é de urgência hipertensiva. O tratamento inicial deve ser feito com medicação por via oral, sendo o captopril uma das opções mais utilizadas devido ao seu início de ação relativamente rápido (em torno de 15 a 30 minutos) e pico de ação entre 60 e 90 minutos.\n\nc) Incorreta. Além do erro no diagnóstico, o uso de nifedipino de liberação rápida (curta duração) por via sublingual ou oral é formalmente contraindicado. Essa prática pode causar uma queda abrupta e imprevisível da pressão arterial, o que pode reduzir o fluxo sanguíneo cerebral e coronariano, provocando infartos ou acidentes vasculares isquêmicos.\n\nd) Incorreta. Embora identifique o quadro como urgência, o erro está na conduta. A furosemida intravenosa é um diurético de alça utilizado em emergências específicas (como edema agudo de pulmão). Em urgências hipertensivas, a via preferencial é a oral, e a furosemida não é a primeira escolha, a menos que haja sinais de sobrecarga de volume.\n\ne) Incorreta. A classificação como emergência hipertensiva está incorreta. A clonidina é um agonista alfa-2 central muito utilizado para tratar urgências hipertensivas por via oral, mas não é a conduta para emergências, que exigem medicação parenteral.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:53.941Z"
+  },
+  {
+    "id": "AJUDA_b1d2f623-fee7-411b-9fb9-c254c8930c0d",
+    "originalId": "b1d2f623-fee7-411b-9fb9-c254c8930c0d",
+    "statement": "Homem de 68 anos, com histórico de hipertensão arterial sistêmica, dislipidemia e diabetes mellitus tipo 2, comparece à consulta com queixa de desconforto retroesternal em aperto há aproximadamente seis meses. A dor, que dura de 5 a 10 minutos, é desencadeada por esforços moderados, como subir um lance de escada ou caminhar por dois quarteirões. Queixa-se de piora progressiva nas últimas semanas com episódios mais frequentes da dor, inclusive em repouso ou em situações de estresse, apresentando leve irradiação para o braço esquerdo. Relata que trabalha como caminhoneiro e não teve tempo de comparecer à unidade antes. Diante desse quadro clínico, a conduta apropriada para a investigação diagnóstica e estratificação de risco desse paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "encaminhá-lo ao cateterismo cardíaco, visando à confirmação diagnóstica de doença arterial coronariana, ao estudo da anatomia coronariana e à definição de uma possível estratégia de revascularização",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "otimizar a terapia medicamentosa com betabloqueador, nitratos de longa ação e inibidores da enzima conversora de angiotensina, com acompanhamento clínico trimestral, antes de considerar exames mais invasivos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar um teste ergométrico em esteira para avaliar a capacidade funcional e a presença de isquemia induzível, visto ser um exame de menor custo e invasividade para iniciar a investigação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar um eletrocardiograma de repouso e um ecocardiograma transtorácico para avaliar a função cardíaca e a presença de anomalias estruturais",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico: O paciente de 68 anos apresenta um quadro clássico de angina instável. Ele evoluiu de uma angina estável (dor aos esforços moderados há seis meses) para um padrão de piora progressiva, com aumento da frequência dos episódios e ocorrência de dor em repouso nas últimas semanas. Além da instabilidade clínica, o paciente possui alto risco cardiovascular devido à idade, hipertensão, diabetes e dislipidemia.\n\nAlternativa (a) Correta: Diante de uma angina instável, que se enquadra nas Síndromes Coronarianas Agudas, a conduta indicada para pacientes com sinais de alto risco ou sintomas progressivos é a estratificação invasiva precoce. O cateterismo cardíaco (cineangiocoronariografia) é o padrão-ouro para confirmar o diagnóstico de doença arterial coronariana, avaliar a anatomia das artérias e definir a melhor estratégia de revascularização (angioplastia ou cirurgia).\n\nAlternativa (b) Incorreta: A otimização medicamentosa isolada com acompanhamento trimestral é inadequada para este caso. Um paciente com sintomas de repouso e dor em crescendo corre alto risco de evolução para infarto agudo do miocárdio ou morte súbita. Aguardar três meses para uma reavaliação coloca a vida do paciente em risco severo.\n\nAlternativa (c) Incorreta: O teste ergométrico em esteira é formalmente contraindicado em pacientes com angina instável ou suspeita de síndrome coronariana aguda ativa. O esforço físico induzido pelo exame pode precipitar eventos isquêmicos graves, arritmias ou parada cardíaca. Este exame é reservado para a estratificação de pacientes estáveis.\n\nAlternativa (d) Incorreta: Embora o eletrocardiograma (ECG) e o ecocardiograma sejam exames complementares iniciais, eles são insuficientes para a conduta definitiva neste cenário. O ECG de repouso pode ser normal em muitos pacientes com angina instável e o ecocardiograma avalia apenas a função e a estrutura cardíaca, não sendo capaz de diagnosticar ou tratar a obstrução coronariana aguda que o quadro clínico sugere.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença Arterial Coronariana Estável (DAC Estável)",
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:53.941Z"
+  },
+  {
+    "id": "AJUDA_b1df0943-dbee-4059-a8db-62ba1749d25a",
+    "originalId": "b1df0943-dbee-4059-a8db-62ba1749d25a",
+    "statement": "Maria Clara, 29 anos de idade, G2P1A0, comparece ao pronto atendimento com sangramento vaginal escuro há 24 horas, sem eliminação de coágulos, associado a cólica leve em hipogástrio. Refere última menstruação há 9 semanas. No exame físico, o colo uterino está fechado e o útero apresenta tamanho compatível com a idade gestacional. Exames complementares: β-hCG = 85.000 mUI/mL; ultrassonografia transvaginal revela embrião único vivo com batimentos cardíacos presentes e discreto descolamento corioamniótico. \nCom base nesse caso hipotético, assinale a alternativa que indica a conduta inicial mais apropriada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação imediata para curetagem uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar uso de misoprostol para esvaziamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever repouso absoluto e antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientar repouso relativo, evitar relações sexuais e manter acompanhamento ultrassonográfico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Iniciar progesterona intramuscular por tempo indeterminado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve uma gestante de 9 semanas com quadro de ameaça de abortamento. Os critérios que definem esse diagnóstico são a presença de sangramento vaginal com o colo uterino fechado e a constatação de vitalidade embrionária (presença de batimentos cardíacos fetais) ao exame de ultrassonografia. O discreto descolamento corioamniótico é um achado comum nessas situações e, isoladamente, não altera a viabilidade da gestação no momento.\n\nAnálise das alternativas:\n\nAlternativa A: INCORRETA. A internação para curetagem é indicada apenas em casos de abortamento incompleto, retido ou inevitável, nos quais não há vitalidade embrionária ou há presença de restos ovulares. Realizar esse procedimento em um embrião vivo constitui iatrogenia grave.\n\nAlternativa B: INCORRETA. O misoprostol é um análogo da prostaglandina utilizado para promover o esvaziamento uterino em situações de perda gestacional confirmada (aborto retido ou incompleto). Não se utiliza medicação para esvaziamento em gestações viáveis.\n\nAlternativa C: INCORRETA. A literatura médica atual não recomenda o repouso absoluto, pois ele não demonstrou eficácia em prevenir a evolução para o abortamento e pode aumentar o risco de fenômenos tromboembólicos na gestante. A antibioticoterapia é reservada exclusivamente para casos de aborto séptico, nos quais há sinais claros de infecção.\n\nAlternativa D: CORRETA. Esta é a conduta padrão para a ameaça de abortamento. O repouso relativo (redução de atividades físicas extenuantes), a abstinência sexual (para evitar o contato do colo com as prostaglandinas do sêmen e o estímulo contrátil do orgasmo) e a reavaliação clínica e ultrassonográfica posterior são as orientações iniciais recomendadas.\n\nAlternativa E: INCORRETA. O uso de progesterona na ameaça de abortamento ainda é tema de debate, sendo geralmente reservado para pacientes com histórico de abortamento habitual ou insuficiência de corpo lúteo. A prescrição por tempo indeterminado e via intramuscular não faz parte da conduta inicial padrão e não possui evidência robusta para todos os casos de ameaça de aborto.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:53.941Z"
+  },
+  {
+    "id": "AJUDA_b1e09dfe-f038-4a7c-a150-d0862b9b2cfd",
+    "originalId": "b1e09dfe-f038-4a7c-a150-d0862b9b2cfd",
+    "statement": "O Manual de Seguimento do Prematuro da Sociedade Brasileira de Pediatria orienta que prematuros de muito baixo peso devem obter a suplementação de zinco. Em que dose?",
+    "options": [
+      {
+        "id": "A",
+        "text": "5mg/dia, desde o nascimento, até 12 meses de idade corrigida;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "10mg/dia, desde o nascimento, até seis meses de idade corrigida;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "10mg/dia, iniciados com 36 semanas de idade corrigida, e manutenção por 12 meses;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "5mg/dia, iniciados com 36 semanas de idade corrigida, e manutenção por seis meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O zinco é um elemento essencial para o crescimento linear e para a função imunológica, sendo particularmente crítico para recém-nascidos de muito baixo peso (aqueles com peso ao nascer inferior a 1.500g). De acordo com o Manual de Seguimento do Recém-Nascido Pré-termo da Sociedade Brasileira de Pediatria (SBP), as recomendações de suplementação são desenhadas para suprir as altas demandas metabólicas desse grupo após a estabilização inicial.\n\nAnálise das alternativas:\n\nAlternativa A - INCORRETA: Embora a dose de 5mg/dia esteja correta, a recomendação não prevê o início obrigatório desde o nascimento (período em que o aporte é feito via parenteral ou por fortificantes no leite) nem a extensão até os 12 meses de idade corrigida como regra geral de seguimento.\n\nAlternativa B - INCORRETA: A dose de 10mg/dia e o início desde o nascimento estão incorretos. Doses mais elevadas de zinco são reservadas para casos específicos de deficiência comprovada ou patologias de má absorção, não sendo a diretriz de suplementação profilática para prematuros de muito baixo peso.\n\nAlternativa C - INCORRETA: A idade de início (36 semanas) está correta de acordo com o cronograma de transição para o cuidado ambulatorial, mas a dose de 10mg/dia e o tempo de manutenção de 12 meses divergem do protocolo oficial da SBP.\n\nAlternativa D - CORRETA: Esta alternativa reflete exatamente o que consta no Manual da SBP. Para prematuros de muito baixo peso, a suplementação de zinco deve ser de 5mg/dia, iniciada no momento em que o lactente atinge 36 semanas de idade corrigida (fase que frequentemente coincide com a alta hospitalar ou preparo para ela) e mantida por um período de seis meses.\n\nResumo da recomendação SBP para Zinco (Muito Baixo Peso):\n- Dose: 5 mg/dia.\n- Início: 36 semanas de idade corrigida.\n- Manutenção: Por 6 meses.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:34:53.941Z"
+  }
+]

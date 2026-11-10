@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_7d8f3c55-69b1-4281-9d11-e18f2d3d4159",
+    "originalId": "7d8f3c55-69b1-4281-9d11-e18f2d3d4159",
+    "statement": "Uma mulher de 38 anos, com hipertensão controlada e história de câncer de mama tratado há seis anos, deseja método contraceptivo. Tem exame ginecológico normal e, atualmente, nenhum sinal de retorno da doença. Deve-se orientar que, devido à sua condição, o método indicado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "implante de etonorgestrel",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "injetável trimestral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DIU de cobre",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "anel vaginal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente em questão apresenta um fator determinante para a escolha do método contraceptivo: o antecedente de câncer de mama. Segundo os Critérios Médicos de Elegibilidade para Uso de Contraceptivos da Organização Mundial da Saúde (OMS), o câncer de mama é uma condição classificada como Categoria 4 para o uso de qualquer método hormonal (seja ele combinado ou apenas de progestagênio). Isso significa que o uso desses métodos representa um risco à saúde inaceitável, devido ao fato de o câncer de mama ser um tumor frequentemente sensível a hormônios, o que pode favorecer a recidiva da doença.\n\nAlternativa a) Incorreta. O implante de etonorgestrel é um método hormonal que libera progestagênio de forma contínua. Apesar de não conter estrogênio, o uso de progestagênios isolados também é contraindicado (Categoria 4) em pacientes com história atual ou passada de câncer de mama.\n\nAlternativa b) Incorreta. O injetável trimestral utiliza o acetato de medroxiprogesterona. Assim como o implante, trata-se de um método hormonal (progestagênio isolado) e é formalmente contraindicado para mulheres com histórico de neoplasia de mama pelo risco de estímulo a células tumorais remanescentes.\n\nAlternativa c) Correta. O DIU de cobre é um método não hormonal. Ele atua promovendo uma reação inflamatória estéril no endométrio que é citotóxica para os espermatozoides, sem liberar qualquer substância na corrente sanguínea que possa interagir com receptores hormonais mamários. Para pacientes com câncer de mama, o DIU de cobre é classificado como Categoria 1 (sem restrição ao uso), sendo a opção de escolha para garantir uma contracepção segura e eficaz.\n\nAlternativa d) Incorreta. O anel vaginal é um método contraceptivo combinado, ou seja, contém estrogênio e progestagênio. O estrogênio possui uma contraindicação ainda mais rigorosa em casos de tumores dependentes de hormônios. Além disso, a paciente é hipertensa e tem 38 anos; o uso de estrogênio em mulheres acima de 35 anos que possuem comorbidades cardiovasculares deve ser evitado, reforçando a inadequação deste método.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Mama",
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:57.900Z"
+  },
+  {
+    "id": "AJUDA_7d975db0-91ca-418c-94bb-2bbc5b2f81e4",
+    "originalId": "7d975db0-91ca-418c-94bb-2bbc5b2f81e4",
+    "statement": "Paciente, mulher cisgênero, 56 anos, em tratamento de câncer de mama metastático, para ossos, fígado e sistema nervoso central. está em acompanhamento na Unidade Básica de Saúde. Tem apresentado dor generalizada persistente, perda de apetite, tristeza frequente e sobrecarga importante para a filha, que é sua principal cuidadora. Durante consulta com a equipe de saúde da família, surge a discussão sobre a abordagem dos cuidados paliativos no âmbito da Atenção Primária a Saúde (APS). Com base na Política Nacional de Cuidados Paliativos, qual deve ser a conduta da equipe da APS nesse contexto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Caso a paciente precise ser visitada semanalmente, a equipe da atenção primária deve encaminhá-la para internação hospitalar para não sobrecarregar a equipe com visitas frequentes",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Promover cuidado integral, considerando aspectos físicos, sociais, psicológicos e espirituais da paciente, sem incluir a família e os cuidadores nesse momento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realização de plano de diretivas antecipadas sobre cuidados e tratamentos que devem ou não ser realizados com devido registro no prontuário da paciente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transferir a responsabilidade do cuidado para serviço especializado de oncologia, pois não há estrutura para assistência paliativa na atenção primária de saúde",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o papel da Atenção Primária à Saúde (APS) no manejo de pacientes em cuidados paliativos, fundamentado na Política Nacional de Cuidados Paliativos e nas diretrizes do SUS.\n\nAlternativa A: Incorreta. A necessidade de visitas domiciliares frequentes, mesmo que semanais, não é critério para internação hospitalar. Um dos pilares dos cuidados paliativos na APS é justamente a desospitalização e a manutenção do paciente no seu ambiente familiar e social, desde que haja suporte adequado. A internação deve ser indicada apenas para controle de sintomas de difícil manejo ou em situações de instabilidade que não possam ser resolvidas no domicílio.\n\nAlternativa B: Incorreta. Embora a alternativa mencione corretamente o cuidado integral (aspectos físicos, sociais, psicológicos e espirituais), ela peca ao excluir a família e os cuidadores. Em cuidados paliativos, a unidade de cuidado é composta pelo paciente e por sua família. Como o enunciado destaca a sobrecarga da filha, a equipe da APS deve obrigatoriamente incluí-la no plano de cuidados, oferecendo suporte emocional e orientações para mitigar essa sobrecarga.\n\nAlternativa C: Correta. A elaboração das diretivas antecipadas de vontade é uma conduta essencial e prioritária. Trata-se do registro dos desejos e preferências da paciente sobre tratamentos e intervenções que ela aceita ou recusa para o momento em que não puder mais responder por si. Na APS, devido ao vínculo longitudinal entre a equipe e a paciente, há um cenário ideal para essa discussão. O registro no prontuário garante a continuidade do cuidado e o respeito à autonomia da paciente em todos os níveis de atenção.\n\nAlternativa D: Incorreta. A APS não deve transferir a responsabilidade total para o serviço especializado. De acordo com a Política Nacional de Cuidados Paliativos, a APS é a porta de entrada e a coordenadora do cuidado. O modelo ideal é o cuidado compartilhado (matriciamento), onde a oncologia oferece suporte especializado enquanto a equipe da APS mantém o acompanhamento territorial e domiciliar, visto que possui maior proximidade com a realidade da paciente.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:57.900Z"
+  },
+  {
+    "id": "AJUDA_7d9bfdc1-3415-4fac-b813-9b0dbd20c20f",
+    "originalId": "7d9bfdc1-3415-4fac-b813-9b0dbd20c20f",
+    "statement": "Um paciente masculino, 35 anos, foi trazido pelo SAMU ao pronto-atendimento, sem acompanhante, encontrado em via pública intensamente agitado, persecutório, heteroagressivo, referindo estar sofrendo “ameaças” e “estarem vindo atrás dele” . Ao exame clínico apresenta-se taquicárdico, hipertenso, sudoreico com pupilas midriáticas. Não apresenta histórico prévio de psicose. Segundo as diretrizes de manejo de urgências psiquiátricas, qual psicofármaco e via de administração é mais indicada neste cenário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diazepam oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Haloperidol Intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Clorpromazina Intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Midazolam Intramuscular.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito aponta para uma emergência psiquiátrica com forte suspeita de intoxicação por substância simpatomimética (como cocaína ou anfetaminas). Os sinais cardinais que levam a essa conclusão são a agitação psicomotora intensa, sintomas persecutórios de início agudo e, crucialmente, os sinais autonômicos: taquicardia, hipertensão, sudorese e midríase (pupilas dilatadas).\n\nEm casos de agitação psicomotora associada a sinais de hiperatividade simpática, o tratamento de primeira escolha são os benzodiazepínicos. Eles atuam modulando os receptores GABA, o que ajuda a reduzir a descarga adrenérgica, controlando tanto a agitação quanto a pressão arterial e a frequência cardíaca.\n\nAnálise das alternativas:\n\na) Incorreta. O diazepam é um benzodiazepínico, porém a via oral é inadequada para um paciente intensamente agitado e heteroagressivo, pois exige colaboração e tem início de ação mais lento. Além disso, a via intramuscular (IM) do diazepam possui absorção errática e não é recomendada em emergências.\n\nb) Incorreta. O haloperidol é um antipsicótico típico muito utilizado em agitações psicomotoras. No entanto, em casos de suspeita de intoxicação por estimulantes (síndrome simpatomimética), os antipsicóticos devem ser evitados como primeira linha ou usados com extrema cautela, pois podem reduzir o limiar convulsivo e interferir na termorregulação, além de não tratarem a hiperatividade autonômica subjacente.\n\nc) Incorreta. A clorpromazina é um antipsicótico de baixa potência com forte efeito sedativo, mas possui importantes efeitos colaterais alfa-bloqueadores (risco de hipotensão grave) e também reduz significativamente o limiar convulsivo, sendo contraindicada em quadros de agitação por intoxicação por substâncias.\n\nd) Correta. O midazolam é um benzodiazepínico de ação curta com excelente absorção por via intramuscular. É a droga de escolha neste cenário por permitir um controle rápido da agitação e dos sintomas autonômicos (taquicardia e hipertensão), apresentando um perfil de segurança superior aos antipsicóticos em pacientes intoxicados por estimulantes.\n\nResumo do Manejo: Em pacientes com agitação e sinais de hiperatividade simpática (midríase, hipertensão e taquicardia), a prioridade é o uso de benzodiazepínicos por via parenteral (preferencialmente midazolam IM) para controle seguro do quadro.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Intoxicações Exógenas",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:57.900Z"
+  },
+  {
+    "id": "AJUDA_7dadcf16-6d71-435f-b19c-3f520e4c45d1",
+    "originalId": "7dadcf16-6d71-435f-b19c-3f520e4c45d1",
+    "statement": "Sobre territorialização em saúde e sua relação com a prática médica, analise com V (verdadeiro) ou F (falso) cada uma das afirmativas abaixo:\n\n( ) A territorialização em saúde implica que os profissionais compreendam o território como um espaço dinâmico e multifatorial, no qual determinantes sociais, econômicos, culturais e ambientais interagem para influenciar os padrões de adoecimento e o acesso aos serviços de saúde.\n( ) O conhecimento aprofundado do território permite ao médico identificar vulnerabilidades locais, orientar intervenções preventivas adaptadas às especificidades populacionais, considerando fatores demográficos, epidemiológicos e sociais.\n( ) A territorialização possibilita uma prática médica que enfatize à atenção individualizada, desvinculando-se da articulação com equipes multiprofissionais, ações coletivas e estratégias intersetoriais de promoção da saúde.\n( ) A territorialização em saúde propõe centralizar decisões e fluxos de cuidado em níveis de atenção de maior complexidade, priorizando os serviços especializados em articulação com a atenção primária e ações comunitárias.\n( ) Uma abordagem territorializada eficaz contribui para reduzir desigualdades em saúde, pois orienta a alocação de recursos, o planejamento de ações e a organização de serviços considerando o contexto sociodemográfico e as vulnerabilidades sociais da população local.\n\nAssinale assertiva que apresenta a resposta correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "VVFFV",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "VFVFV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "VVVFV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "VVFVV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "VVVFF",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A territorialização é um dos pilares fundamentais da Atenção Primária à Saúde (APS) no Brasil, servindo como ferramenta de planejamento e organização dos serviços. Abaixo, a análise detalhada de cada assertiva:\n\n(V) Verdadeira: O conceito moderno de território em saúde ultrapassa a barreira geográfica. Ele é entendido como um \"território-processo\", onde as relações sociais, a cultura, a economia e o meio ambiente (determinantes sociais) moldam diretamente como as pessoas adoecem e como elas conseguem utilizar o sistema de saúde.\n\n(V) Verdadeira: Para o médico da Estratégia Saúde da Família, o território é a base para o diagnóstico comunitário. Ao conhecer as condições de vida da população adscrita, o profissional consegue realizar uma medicina baseada em evidências locais, adaptando as ações de prevenção e promoção às reais necessidades epidemiológicas daquele grupo.\n\n(F) Falsa: A territorialização estimula o contrário do que afirma esta frase. Ela busca integrar a prática médica ao trabalho da equipe multiprofissional (enfermeiros, técnicos, agentes comunitários) e fortalecer ações coletivas e intersetoriais. O isolamento na prática individualizada e puramente biomédica é um modelo que a territorialização visa superar.\n\n(F) Falsa: A lógica da territorialização é baseada na descentralização e na capilaridade do sistema. O objetivo é que a Atenção Primária seja a porta de entrada preferencial e a coordenadora do cuidado, aproximando o serviço da comunidade, e não centralizando as decisões em níveis de maior complexidade (hospitais e especialidades).\n\n(V) Verdadeira: A territorialização é uma ferramenta para a aplicação do princípio da Equidade. Ao mapear as vulnerabilidades sociais e os riscos epidemiológicos de cada microárea, o gestor e a equipe podem direcionar mais recursos e atenção para as áreas mais carentes, combatendo as desigualdades em saúde.\n\nConclusão: A sequência correta é V - V - F - F - V, o que corresponde à alternativa (a).",
+    "exam": "UFRB",
+    "year": 2026,
+    "banca": "UFRB",
+    "uf": "BA",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35674e2a8fdd600c4528186d032722b2534d565f8659f6d532a9977d76ec6035.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2f3a30ed0fd307a6a4fadc82fa84bd78995407514592af81b25948bee1e5d79f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:57.900Z"
+  },
+  {
+    "id": "AJUDA_7db70dd0-e33e-41a7-b86c-0b0fa3752341",
+    "originalId": "7db70dd0-e33e-41a7-b86c-0b0fa3752341",
+    "statement": "Homem, 51 anos, retorna à consulta ambulatorial para resultado de exames após acidente vascular cerebral isquêmico há 1 mês, com boa evolução da fase aguda. Antecedente pessoal: cirurgia por úlcera gástrica hemorrágica há 2 anos. Hemoglobina = 13 g/dL, VCM = 73 fL, leucócitos = 9.000/µL (segmentados 76%, linfócitos 15%, monócitos 5%; eosinófilos 4%), plaquetas = 850.000/µL. Ferritina = 4 ng/mL. Exame físico: baço palpável a 2 cm do rebordo costal esquerdo. Qual o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Traço talassêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anemia ferropriva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trombofilia hereditária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trombocitemia essencial.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta um homem de 51 anos com uma contagem plaquetária muito elevada (850.000/uL), histórico de evento isquêmico arterial recente (AVC) e esplenomegalia ao exame físico. Esses três achados combinados são marcos das neoplasias mieloproliferativas crônicas.\n\nAlternativa (a) Incorreta: O traço talassêmico cursa com microcitose (VCM baixo), mas tipicamente apresenta ferritina normal ou elevada e contagem de hemácias normal ou aumentada (pseudopoliglobulia). Não justifica a trombocitose acentuada, a esplenomegalia nem o evento isquêmico.\n\nAlternativa (b) Incorreta: Embora o paciente apresente deficiência de ferro (ferritina de 4 ng/mL e microcitose), provavelmente secundária à cirurgia gástrica prévia, a ferropenia isolada não justifica o quadro completo. A deficiência de ferro pode causar trombocitose reativa, mas esta raramente ultrapassa 700.000-800.000/uL e não costuma cursar com esplenomegalia ou eventos trombóticos arteriais de grande porte, especialmente quando o nível de hemoglobina ainda está próximo da normalidade (Hb 13 g/dL).\n\nAlternativa (c) Incorreta: As trombofilias hereditárias (como Fator V de Leiden ou mutação da protrombina) estão mais associadas a fenômenos tromboembólicos venosos em pacientes mais jovens e não causam alterações na contagem de plaquetas ou esplenomegalia.\n\nAlternativa (d) Correta: A Trombocitemia Essencial (TE) é uma neoplasia mieloproliferativa caracterizada pela proliferação clonal de megacariócitos, resultando em trombocitose sustentada (acima de 450.000/uL). Clinicamente, manifesta-se com alto risco de eventos trombóticos (como o AVC relatado) e esplenomegalia (presente em uma parcela significativa dos casos). O diagnóstico é reforçado pela presença de esplenomegalia, que é um sinal de doença mieloproliferativa e não ocorre na trombocitose reativa por deficiência de ferro. Na prática, a deficiência de ferro deve ser corrigida para confirmar se a trombocitose persiste, mas, para fins de prova, a associação de trombocitose grave, esplenomegalia e trombose arterial é diagnóstica de TE.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Anemias",
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:57.900Z"
+  },
+  {
+    "id": "AJUDA_7db9e55f-51ec-4763-a97e-8a265d27e2c1",
+    "originalId": "7db9e55f-51ec-4763-a97e-8a265d27e2c1",
+    "statement": "Uma gestante de 27 anos, com 12 semanas de idade gestacional, apresenta sorologia positiva para toxoplasmose IgG e IgM. \nA conduta indicada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar teste de avidez de IgG; caso haja alta avidez, orientar que a infecção é passada e tranquilizar a gestante.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "solicitar teste de avidez de IgM; caso haja alta avidez, iniciar o tratamento com terapia tríplice.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar administração de espiramicina e repetir a sorologia em 3 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "manter seguimento pré-natal habitual.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O diagnóstico de toxoplasmose na gestação exige uma interpretação cuidadosa da sorologia. Quando uma gestante no primeiro trimestre (neste caso, com 12 semanas) apresenta IgG e IgM positivos, o objetivo principal é determinar se a infecção é aguda (ocorrida durante a gestação) ou crônica/pregressa (ocorrida antes da gestação, sem risco para o feto).\n\nAnálise das alternativas:\n\nAlternativa (a): CORRETA. O teste de avidez de IgG é a conduta de escolha para gestantes com menos de 16 semanas de idade gestacional que apresentam IgG e IgM reagentes. A avidez mede a força de ligação do anticorpo ao antígeno; anticorpos produzidos no início da infecção possuem baixa avidez, enquanto anticorpos de infecções antigas possuem alta avidez. Se o resultado demonstrar alta avidez, significa que a infecção ocorreu há pelo menos 4 meses, ou seja, antes da concepção, descartando o risco de transmissão vertical.\n\nAlternativa (b): INCORRETA. O teste de avidez é realizado exclusivamente para a imunoglobulina G (IgG), e não para a IgM. Além disso, a alta avidez indica infecção antiga e não justifica o início de tratamento, muito menos da terapia tríplice (sulfadiazina, pirimetamina e ácido folínico), que é reservada para casos de infecção fetal confirmada ou infecções agudas no terceiro trimestre.\n\nAlternativa (c): INCORRETA. A espiramicina é iniciada quando há forte suspeita ou confirmação de infecção aguda para reduzir a taxa de transmissão vertical. No entanto, como a paciente está no primeiro trimestre e já possui IgG positivo, o protocolo preconiza realizar primeiro o teste de avidez para confirmar se a infecção é realmente recente. Repetir a sorologia em 3 semanas sem o teste de avidez atrasaria a definição diagnóstica necessária.\n\nAlternativa (d): INCORRETA. A presença de um marcador de fase aguda (IgM positivo) em uma gestante não permite a manutenção do seguimento pré-natal habitual de baixo risco. É obrigatória a investigação complementar, pois, caso a infecção seja aguda, medidas terapêuticas e de acompanhamento morfológico fetal rigoroso deverão ser implementadas.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:57.900Z"
+  },
+  {
+    "id": "AJUDA_7dc7307d-40b8-47f7-93c1-f1556682e774",
+    "originalId": "7dc7307d-40b8-47f7-93c1-f1556682e774",
+    "statement": "Para preencher a Declaração de Óbito de um paciente com doença pulmonar obstrutiva crônica que evoluiu com óbito devido a uma insuficiência respiratória aguda causada por uma pneumonia, a causa básica, a causa antecedente e a causa imediata seriam, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "doença pulmonar obstrutiva crônica, pneumonia e insuficiência respiratória aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pneumonia, doença pulmonar obstrutiva crônica e insuficiência respiratória aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "doença pulmonar obstrutiva crônica, insuficiência respiratória aguda e pneumonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "insuficiência respiratória aguda, doença pulmonar obstrutiva crônica e pneumonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para a correta compreensão desta questão, é fundamental dominar os conceitos de preenchimento da Declaração de Óbito (DO) e a hierarquia das causas de morte, conforme as normas do Ministério da Saúde e da Organização Mundial da Saúde (OMS).\n\nA Declaração de Óbito é dividida, em sua Parte I, em linhas (a, b, c, d) que devem seguir uma ordem lógica e fisiopatológica, do evento terminal (causa imediata) até o evento desencadeante (causa básica).\n\n**Definições fundamentais:**\n\n1. **Causa Imediata (Linha A):** É a doença ou complicação que ocorreu por último e que levou diretamente ao óbito. É o mecanismo terminal. No caso descrito, o paciente parou de respirar devido a uma **insuficiência respiratória aguda**.\n\n2. **Causa Antecedente ou Intermediária (Linhas B e C):** São os estados mórbidos que produziram a causa imediata. Eles ligam a causa básica à causa imediata. No caso, a insuficiência respiratória foi provocada por uma **pneumonia**.\n\n3. **Causa Básica (Linha D ou última linha preenchida):** É a doença ou lesão que iniciou a cadeia de eventos patológicos que conduziram diretamente à morte. Aqui, a **Doença Pulmonar Obstrutiva Crônica (DPOC)** é a condição de base que predispôs o paciente a complicações respiratórias e à pneumonia.\n\n**Análise do Gabarito (Letra B):**\n\nA questão solicita a ordem específica: **Causa Básica, Causa Antecedente e Causa Imediata.**\n\nDe acordo com o gabarito oficial indicado (b):\n*   **Causa Básica:** Pneumonia.\n*   **Causa Antecedente:** Doença Pulmonar Obstrutiva Crônica (DPOC).\n*   **Causa Imediata:** Insuficiência respiratória aguda.\n\n**Por que a alternativa (b) é considerada a correta neste contexto?**\nEmbora em muitos cenários acadêmicos a DPOC seja listada como a causa básica definitiva (por ser a doença crônica subjacente), algumas bancas examinadoras adotam a lógica de que a **Pneumonia** foi a \"causa básica\" do evento agudo que motivou a internação e o óbito atual, tratando a **DPOC** como o \"antecedente\" clínico (história prévia do paciente) que fragilizou o sistema respiratório. Nesse raciocínio, a pneumonia inicia a sequência terminal e a DPOC é a condição que a antecede no tempo.\n\n**Análise das alternativas:**\n\n*   **a) Incorreta.** Segue a ordem: DPOC (básica), pneumonia (antecedente) e insuficiência respiratória (imediata). Embora seja a ordem fisiopatológica mais rigorosa segundo o Ministério da Saúde (onde a DPOC inicia toda a cadeia), não corresponde ao gabarito desta prova específica, que considerou a pneumonia como o gatilho principal do óbito.\n*   **b) Correta.** Define a pneumonia como a causa que desencadeou o processo fatal (básica do evento), a DPOC como o antecedente patológico e a insuficiência respiratória como o desfecho imediato.\n*   **c) Incorreta.** Coloca a insuficiência respiratória como causa antecedente, quando na verdade ela é sempre a causa imediata (o mecanismo final). Além disso, coloca a pneumonia por último, o que não possui lógica cronológica.\n*   **d) Incorreta.** Inicia com a insuficiência respiratória como causa básica. A insuficiência respiratória é um sintoma/mecanismo terminal e nunca deve ser considerada a causa básica em uma Declaração de Óbito.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Sistemas de Informação em Saúde",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:57.900Z"
+  },
+  {
+    "id": "AJUDA_7dd0657a-a7e9-4a90-bfba-e462cd09d8f4",
+    "originalId": "7dd0657a-a7e9-4a90-bfba-e462cd09d8f4",
+    "statement": "João, 12 anos, comparece à consulta pediátrica com queixa de cansaço aos esforços. Tem histórico familiar de diabetes tipo 2, hipertensão arterial e dislipidemia. Ao exame físico, apresenta circunferência abdominal no percentil 95 para idade e sexo, IMC no percentil 97, acantose nigricans em região cervical e pressão arterial de 132/86 mmHg (percentil >95 para idade, sexo e estatura). Os exames laboratoriais revelam: triglicérides = 160 mg/dL, HDL = 38 mg/dL, glicemia de jejum = 102 mg/dL, insulina de jejum = 22 µU/mL e HOMA-IR = 5,5. Com base nas diretrizes da SBP para obesidade infantil e nos critérios da International Diabetes Federation (IDF) para diagnóstico de síndrome metabólica em crianças ≥10 anos, qual é a conduta diagnóstica mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "João preenche critérios diagnósticos para síndrome metabólica, pois apresenta obesidade abdominal e pelo menos dois critérios adicionais: dislipidemia e hipertensão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "João apresenta resistência insulínica, mas não preenche critérios para síndrome metabólica, pois sua glicemia está abaixo de 110 mg/dl.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico de síndrome metabólica não pode ser feito, pois o IMC não é considerado critério pela IDF.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico de síndrome metabólica só pode ser estabelecido em adolescentes com idade ≥16 anos, segundo a SBP.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Segundo a International Diabetes Federation (IDF) e a Sociedade Brasileira de Pediatria (SBP), o diagnóstico de síndrome metabólica em crianças de 10 a 16 anos exige a presença de obesidade abdominal (circunferência abdominal maior ou igual ao percentil 90) associada a pelo menos dois dos quatro componentes adicionais:\n1. Triglicérides maior ou igual a 150 mg/dL.\n2. HDL-colesterol menor que 40 mg/dL.\n3. Pressão arterial sistólica maior ou igual a 130 mmHg ou diastólica maior ou igual a 85 mmHg.\n4. Glicemia de jejum maior ou igual a 100 mg/dL (ou diagnóstico prévio de diabetes tipo 2).\n\nAnálise do caso clínico:\nJoão tem 12 anos e apresenta circunferência abdominal no percentil 95 (critério obrigatório preenchido). Além disso, preenche todos os quatro critérios secundários: triglicérides de 160 mg/dL, HDL de 38 mg/dL, PA de 132/86 mmHg e glicemia de 102 mg/dL.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): O paciente cumpre o critério obrigatório de obesidade abdominal e apresenta múltiplos critérios adicionais (dislipidemia por hipertrigliceridemia e HDL baixo, hipertensão arterial e glicemia de jejum alterada), confirmando a síndrome metabólica.\n\nAlternativa B (Incorreta): O ponto de corte da glicemia de jejum nos critérios da IDF para crianças de 10 a 16 anos é 100 mg/dL (e não 110 mg/dL). Com 102 mg/dL, João pontua também neste quesito. Ademais, ele já preencheria a síndrome apenas pela presença dos critérios lipídicos e pressóricos.\n\nAlternativa C (Incorreta): Embora o IMC isolado não seja o critério central da IDF, foi fornecida a circunferência abdominal no percentil 95, parâmetro preconizado e suficiente para a definição da obesidade central.\n\nAlternativa D (Incorreta): A IDF e a SBP definem critérios para síndrome metabólica a partir dos 10 anos de idade. Abaixo dos 10 anos o diagnóstico não é formalizado, mas aos 12 anos ele é plenamente aplicável.\n\nGabarito: Letra A.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial na Criança e no Adolescente",
+      "Obesidade na Infância e na Adolescência",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:57.900Z"
+  },
+  {
+    "id": "AJUDA_7dd5dd48-bd52-4493-91f5-0d71d2779390",
+    "originalId": "7dd5dd48-bd52-4493-91f5-0d71d2779390",
+    "statement": "Um novo teste rápido para detecção de Dengue está sendo avaliado. A Sensibilidade do teste é definida como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A probabilidade de um indivíduo com resultado positivo ter, de fato, a doença (Valor Preditivo Positivo).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A probabilidade de um indivíduo com resultado negativo realmente não ter a doença (Valor Preditivo Negativo).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A probabilidade de o teste apresentar resultado positivo em indivíduos que realmente estão doentes (Verdadeiros Positivos).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A probabilidade de o teste apresentar resultado negativo em indivíduos que não estão doentes (Verdadeiros Negativos).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A capacidade do teste de distinguir corretamente entre doentes e não doentes (Acurácia).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender essa questão, é necessário revisar os conceitos fundamentais de validade de testes diagnósticos: sensibilidade, especificidade, valores preditivos e acurácia.\n\nAlternativa a: Incorreta. Esta alternativa descreve o Valor Preditivo Positivo (VPP). O VPP relaciona o resultado do teste com a probabilidade da doença, ou seja, foca no grupo que já recebeu o resultado positivo. Ele é fortemente influenciado pela prevalência da doença na população.\n\nAlternativa b: Incorreta. Esta é a definição de Valor Preditivo Negativo (VPN). O VPN indica a probabilidade de um indivíduo ser realmente saudável, dado que seu teste foi negativo. Assim como o VPP, também depende da prevalência da doença.\n\nAlternativa c: Correta. A sensibilidade é a capacidade de um teste identificar os verdadeiros positivos. Ela responde à seguinte pergunta: \"Se o paciente tem a doença, qual a probabilidade de o teste ser positivo?\". Testes com alta sensibilidade são ideais para triagem (screening), pois apresentam poucos resultados falsos negativos, minimizando o risco de deixar um doente sem diagnóstico.\n\nAlternativa d: Incorreta. Esta definição refere-se à especificidade. A especificidade é a capacidade do teste de identificar corretamente os indivíduos que não possuem a doença (verdadeiros negativos). Um teste altamente específico é útil para confirmar um diagnóstico, pois gera poucos resultados falsos positivos.\n\nAlternativa e: Incorreta. Esta é a definição de acurácia. A acurácia mede a proporção total de resultados corretos (verdadeiros positivos somados aos verdadeiros negativos) em relação ao total de testes realizados, representando a performance global do método diagnóstico.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:57.900Z"
+  },
+  {
+    "id": "AJUDA_7e0bfec2-579d-4854-b7a2-7507242c3f3a",
+    "originalId": "7e0bfec2-579d-4854-b7a2-7507242c3f3a",
+    "statement": "A esterilização de materiais cirúrgicos críticos termossensíveis exige métodos que garantam a eliminação de toda vida microbiana, incluindo esporos, sem danificar o instrumental. Considere um cenário onde se deve escolher o método para esterilizar endoscópios flexíveis e componentes óticos sensíveis. Assinale a opção que descreve corretamente o agente físico-químico e seu mecanismo de ação principal para este fim.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O glutaraldeído a 2%, que promove a alquilação de proteínas e ácidos nucleicos, necessitando de imersão por apenas 20 minutos para atingir o nível de esterilização completa (esporicida).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O óxido de etileno, que atua por oxidação direta da parede celular, sendo o método mais rápido disponível, com ciclo total inferior a 1 hora, ideal para uso imediato em urgências.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O plasma de peróxido de hidrogênio, que atua através da geração de radicais livres em baixa temperatura, sendo eficaz e atóxico, mas com limitações de penetração em lúmens muito longos e estreitos de celulose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O calor úmido sob pressão (autoclave), que desnatura proteínas e funde lipídeos de membrana, sendo o método de escolha para óticas devido à sua baixa agressividade térmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS:\n\nALTERNATIVA A: INCORRETA. O glutaraldeído a 2% é frequentemente utilizado para a desinfecção de alto nível, processo que ocorre em um tempo médio de 20 a 30 minutos. No entanto, a questão exige a esterilização (eliminação de esporos). Para que o glutaraldeído atue como esterilizante, o material deve permanecer imerso por um período muito longo, geralmente de 8 a 10 horas, o que torna a alternativa errada ao mencionar apenas 20 minutos.\n\nALTERNATIVA B: INCORRETA. Existem dois erros principais aqui. Primeiro, o mecanismo de ação do óxido de etileno é a alquilação, e não a oxidação direta. Segundo, o óxido de etileno é um processo demorado: além do tempo de exposição ao gás, os materiais exigem um longo período de aeração (que pode durar de 12 a 48 horas) para a remoção de resíduos tóxicos, não sendo um método rápido para urgências.\n\nALTERNATIVA C: CORRETA. O plasma de peróxido de hidrogênio é um método moderno de esterilização a baixa temperatura, ideal para materiais termossensíveis (que não suportam o calor). Ele atua criando uma nuvem de plasma que gera radicais livres, os quais atacam membranas e enzimas microbianas. É um método seguro para a equipe e para o meio ambiente, pois seus subprodutos finais são água e oxigênio. Suas limitações práticas são justamente a incompatibilidade com materiais de celulose (que absorvem o peróxido) e a dificuldade de difusão do plasma em lumens (canais internos) muito longos e estreitos.\n\nALTERNATIVA D: INCORRETA. A autoclave (calor úmido sob pressão) é o método padrão-ouro para esterilização devido à sua eficácia e baixo custo, porém ela opera em altas temperaturas (121 °C a 134 °C). Materiais termossensíveis, como endoscópios flexíveis e certos componentes ópticos, seriam danificados ou destruídos por esse nível de calor e umidade, tornando a autoclave contraindicada para esses casos específicos.\n\nGABARITO: LETRA C.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:57.900Z"
+  }
+]

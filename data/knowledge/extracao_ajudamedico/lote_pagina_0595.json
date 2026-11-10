@@ -1,0 +1,485 @@
+[
+  {
+    "id": "AJUDA_a64a5ea7-13cf-41cc-b142-969f7b8c0522",
+    "originalId": "a64a5ea7-13cf-41cc-b142-969f7b8c0522",
+    "statement": "A incidência da comunicação interventricular (CIV) é de 2,56 casos por 1.000 nascidos vivos. É a cardiopatia congênita mais frequente, correspondendo a 41,59% do total dessas enfermidades. \n\nCom base na CIV e nos conhecimentos médicos correlatos, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "É classificada como cardiopatia congênita que pode se manifestar com insuficiência cardíaca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A maioria dos lactentes necessitam de cirurgia para o fechamento da CIV, que deve ser realizada até o segundo mês de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As manifestações clínicas da doença são tardias, geralmente após o sexto mês de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É uma das cardiopatias congênitas cianóticas que se apresenta como cianose periférica ao exame físico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A comunicação interventricular (CIV) é a cardiopatia congênita mais comum ao nascimento. Trata-se de um defeito no septo que separa os ventrículos, permitindo a passagem de sangue do ventrículo esquerdo (maior pressão) para o ventrículo direito (menor pressão).\n\nAnálise das alternativas:\n\nAlternativa a) Correta. A CIV é classicamente uma cardiopatia acianótica de fluxo pulmonar aumentado. O desvio de sangue (shunt) da esquerda para a direita sobrecarrega as cavidades esquerdas e a circulação pulmonar. Em defeitos de moderado a grande volume, essa sobrecarga leva clinicamente à insuficiência cardíaca congestiva (ICC), caracterizada por taquipneia, sudorese às mamadas, baixo ganho ponderal e cansaço.\n\nAlternativa b) Incorreta. A grande maioria das CIVs é pequena e apresenta fechamento espontâneo (especialmente as do tipo perimembranoso e muscular) nos primeiros anos de vida, não necessitando de intervenção cirúrgica. Quando a cirurgia é indicada (em casos de defeitos grandes com repercussão importante e sem resposta ao tratamento clínico), ela costuma ser realizada entre os 3 e 12 meses de vida, e não obrigatoriamente até o segundo mês.\n\nAlternativa c) Incorreta. As manifestações clínicas de uma CIV importante costumam surgir entre a 4ª e a 8ª semana de vida (por volta do segundo mês). Isso ocorre porque, ao nascimento, a resistência vascular pulmonar ainda é alta, o que limita o shunt esquerda-direita. À medida que a resistência pulmonar cai fisiologicamente nas primeiras semanas de vida, o fluxo de sangue pelo defeito aumenta, levando ao aparecimento dos sintomas de insuficiência cardíaca. Portanto, o sexto mês é considerado tardio para o início dos sintomas habituais.\n\nAlternativa d) Incorreta. A CIV é uma cardiopatia acianótica. A cianose não faz parte do quadro clínico inicial. Ela só ocorreria em uma fase muito avançada e terminal da doença, chamada Síndrome de Eisenmenger, na qual a hipertensão pulmonar se torna tão grave que inverte o sentido do fluxo (da direita para a esquerda), o que não representa a apresentação clássica da patologia. Além disso, a cianose em cardiopatias congênitas é tipicamente central, e não apenas periférica.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:41.802Z"
+  },
+  {
+    "id": "AJUDA_a6628a40-5e15-4601-822b-92162a8bf40c",
+    "originalId": "a6628a40-5e15-4601-822b-92162a8bf40c",
+    "statement": "Mulher, 40 anos de idade, no quarto período de um parto cefálico espontâneo, apresenta sangramento vaginal intenso. Diagnosticada com pré-eclampsia, está em uso de metildopa 2g/ dia. Exame físico: PA 100 x 60 mmHg, FC 120bpm, útero 3cm acima da cicatriz umbilical e amolecido. Além da punção de 2 acessos calibrosos, infusão de cristaloides, qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Massagem uterina + ocitocina 10 UI intramuscular + misoprostol 800mcg via vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ácido tranexâmico 1g endovenoso + metilergometrina 0,2mg intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ácido tranexâmico 1g + ocitocina 40 UI endovenosa + misoprostol 800mcg via retal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tração controlada da placenta + ocitocina 10 UI intramuscular + acido tranexâmico 1g endovenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um quadro clássico de Hemorragia Pós-Parto (HPP) secundária à atonia uterina, que é a principal causa de sangramento excessivo após o parto (representando cerca de 80% dos casos). A paciente apresenta útero amolecido e acima da cicatriz umbilical, além de sinais de choque compensado (taquicardia de 120 bpm e PA no limite inferior). Um dado crucial é o diagnóstico de pré-eclâmpsia em uso de metildopa, o que restringe o uso de certas medicações.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a massagem uterina (Manobra de Hamilton) e a ocitocina façam parte do protocolo inicial, a via de administração preferencial do misoprostol na vigência de sangramento ativo é a retal. A via vaginal é prejudicada pelo fluxo de sangue, que pode \"lavar\" o comprimido e impedir sua absorção. Além disso, a dose de 10 UI de ocitocina via intramuscular é mais utilizada na prevenção (terceiro estágio), enquanto no tratamento da atonia instalada, doses maiores e por via endovenosa são preconizadas.\n\nb) Incorreta. O erro fatal desta alternativa é a indicação de metilergometrina. Este derivado do ergot é um potente vasoconstritor e possui contraindicação absoluta em pacientes com hipertensão arterial ou pré-eclâmpsia, como é o caso da paciente, devido ao risco de crise hipertensiva grave e acidente vascular cerebral.\n\nc) Correta. Esta alternativa contempla os pilares modernos do tratamento da atonia uterina. O ácido tranexâmico (1 g EV) deve ser administrado o mais precocemente possível (idealmente nas primeiras 3 horas) para reduzir a mortalidade por sangramento. A ocitocina em dose de ataque/manutenção (40 UI em infusão venosa) é a droga de primeira escolha para promover a contração uterina. O misoprostol (análogo da prostaglandina E1) na dose de 800 mcg por via retal é um excelente adjunto, com boa absorção e menos interferência do sangramento local. Note que esta alternativa evita o uso de derivados do ergot, respeitando a contraindicação pela pré-eclâmpsia.\n\nd) Incorreta. O enunciado informa que a paciente está no quarto período do parto (período de Greenberg), que compreende a primeira hora após a saída da placenta. Portanto, a tração controlada da placenta não faz sentido, pois o secundamento já ocorreu. Esta manobra é realizada no terceiro estágio do parto.\n\nEm resumo, diante de uma atonia uterina em paciente hipertensa, o tratamento deve envolver massagem uterina, ocitocina venosa, ácido tranexâmico e misoprostol (via retal), evitando-se rigorosamente a metilergometrina.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:41.802Z"
+  },
+  {
+    "id": "AJUDA_a66c297d-709a-45fa-99c3-0bb53cb95bee",
+    "originalId": "a66c297d-709a-45fa-99c3-0bb53cb95bee",
+    "statement": "Observe a figura a seguir sobre o teste imunocromatográfico AmniSure® para diagnóstico de amniorrexe prematura. Pode-se afirmar que, na realização deste teste, o tempo, em minutos, que swab vaginal deve ser inserido é de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "3",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "5",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O teste AmniSure é um método imunocromatográfico rápido e não invasivo utilizado para detectar a ruptura prematura de membranas ovulares (RPMO). Ele funciona identificando a presença da proteína alfa-microglobulina-1 placentária (PAMG-1) no conteúdo vaginal, uma proteína que está presente em altas concentrações no líquido amniótico e em concentrações mínimas nas secreções vaginais normais.\n\nDe acordo com o protocolo técnico do fabricante para a realização correta do exame, as etapas são rigorosas: o swab estéril deve ser inserido no fundo de saco vaginal (conforme demonstrado na primeira ilustração da figura, onde o swab alcança a região posterior da vagina) e deve permanecer lá por exatamente 1 minuto para a coleta adequada da amostra por absorção. \n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Três minutos não correspondem a nenhuma etapa específica da coleta primária do material no fundo vaginal.\n\nAlternativa b) Incorreta. Dois minutos é um tempo superior ao preconizado pelo protocolo operacional padrão, que define 1 minuto como suficiente para a saturação do swab.\n\nAlternativa c) Correta. O tempo de 1 minuto é o intervalo exato estabelecido para que o swab absorva a quantidade necessária de secreção vaginal. Após este minuto, o swab é retirado e colocado no tubo com solvente (segunda parte da imagem) por mais 1 minuto de agitação.\n\nAlternativa d) Incorreta. O tempo de 5 minutos (podendo chegar a 10 minutos) refere-se ao período de espera para a leitura final do resultado na tira reagente (última parte da imagem, mostrando os resultados negativo ou positivo) após a sua imersão no frasco, e não ao tempo de permanência do swab na vagina da paciente.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/bb0737851e858236c503c294567a1c535d6f8a541c090cba6249cc13e9885388.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_a66c297d-709a-45fa-99c3-0bb53cb95bee_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:42.514Z"
+  },
+  {
+    "id": "AJUDA_a672e1e4-6ca4-465f-8991-c615a4d4db3d",
+    "originalId": "a672e1e4-6ca4-465f-8991-c615a4d4db3d",
+    "statement": "Mulher de 21 anos de idade refere falta de ar, tremores, sudorese, palpitação, perda de peso e sensação de calor excessivo há oito meses. Exame físico: FC: 128 bpm; PA: 180 × 85 mmHg; proptose ocular bilateral com hiperemia conjuntival discreta e bócio difuso de moderado tamanho, indolor, com frêmito e sopro percebidos sobre a superfície tireoidiana. Exames laboratoriais: TSH: 0,001 mUI/L (VR: 0,4–4,0 mUI/L) e T4L: 4,3 ng/dL (VR: 0,7–1,4 ng/dL).\nO diagnóstico é",
+    "options": [
+      {
+        "id": "A",
+        "text": "tireoidite de Quervain.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tireotoxicose por doença de Graves.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "bócio multinodular tóxico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "tireotoxicose factícia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta um quadro clássico de tireotoxicose, caracterizado por sintomas adrenérgicos (taquicardia, tremores, palpitações), metabólicos (perda de peso, intolerância ao calor) e confirmação laboratorial (TSH suprimido e T4 livre elevado). O diagnóstico diferencial entre as causas de hipertireoidismo é feito principalmente pelos achados do exame físico.\n\nPor que a alternativa (b) está correta?\nA doença de Graves é a causa mais comum de hipertireoidismo em mulheres jovens. Ela é uma doença autoimune onde anticorpos (TRAb) estimulam o receptor de TSH, gerando bócio difuso e hipervascularização da glândula, o que justifica a presença de sopro e frêmito no exame físico. Além disso, a proptose ocular (exoftalmia) com hiperemia conjuntival é uma manifestação extratireoidiana patognomônica da doença de Graves, não sendo encontrada nas outras causas citadas.\n\nAnálise das alternativas incorretas:\n\na) Tireoidite de Quervain: É uma tireoidite subaguda de origem viral. Sua principal característica é a dor intensa na região da tireoide, frequentemente acompanhada de febre e aumento de provas inflamatórias (como o VHS). O caso descreve um bócio indolor e sinais de cronicidade (8 meses de evolução), o que afasta essa hipótese.\n\nc) Bócio multinodular tóxico: Esta condição é mais comum em pacientes idosos e se caracteriza pela presença de vários nódulos autônomos na tireoide. Ao exame físico, a glândula seria irregular e nodular, e não apresentaria os sinais oculares (proptose) específicos de Graves.\n\nd) Tireotoxicose factícia: É causada pela ingestão inadvertida ou proposital de hormônios tireoidianos. Nesses casos, o TSH suprimido levaria a uma atrofia ou redução do tamanho da glândula tireoide por falta de estímulo, e não a um bócio difuso com sopro e frêmito. Também não cursa com oftalmopatia.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:42.514Z"
+  },
+  {
+    "id": "AJUDA_a67c54f7-f250-4631-8a6a-fcdacf0d91c2",
+    "originalId": "a67c54f7-f250-4631-8a6a-fcdacf0d91c2",
+    "statement": "Homem de 30 anos, sem comorbidades prévias, procura Unidade Básica de Saúde devido à lesão pruriginosa em região da panturrilha direita, com 3 semanas de evolução. O exame físico mostra lesão anular de cerca de 3 cm de diâmetro, com bordas eritematosas, elevadas e descamativas, com clareamento central. \nQual medicamento deve ser prescrito para o tratamento dessa lesão?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cefalexina oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Clotrimazol tópico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hidrocortisona tópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ivermectina oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico: tinha do corpo (tinea corporis), uma dermatofitose superficial.\n\nRaciocínio clínico:\nA lesão anular, pruriginosa, com bordas eritematosas, elevadas e descamativas, clareamento central e evolução subaguda (semanas) é o quadro clássico da tinha do corpo. É causada por dermatófitos (Trichophyton, Microsporum, Epidermophyton), que crescem de forma centrífuga. Por isso a borda é ativa e o centro tende a clarear. O diagnóstico é essencialmente clínico e pode ser confirmado pelo exame micológico direto do raspado da borda com KOH, que mostra hifas septadas.\n\nTratamento:\nNa lesão única, pequena e localizada, o tratamento é tópico. Usa-se um imidazólico (clotrimazol, miconazol, cetoconazol) ou terbinafina, 1 a 2 vezes ao dia, por 2 a 4 semanas, mantendo-se 1 a 2 semanas após a resolução clínica. O tratamento sistêmico (terbinafina, itraconazol ou fluconazol oral) fica reservado para lesões extensas ou múltiplas, imunossuprimidos, falha do tratamento tópico ou acometimento de couro cabeludo, unhas ou folículos.\n\nAnálise das alternativas:\n\na) Cefalexina oral – Incorreta. É um antibiótico usado em infecções bacterianas de pele, como impetigo, erisipela e celulite. Essas infecções cursam com eritema, calor, dor, crostas melicéricas ou sinais sistêmicos, e não com lesão anular descamativa de borda ativa. Não tem ação sobre fungos.\n\nb) Clotrimazol tópico – Correta. Antifúngico imidazólico tópico, eficaz contra dermatófitos. É o tratamento de primeira linha para tinha do corpo localizada, como neste paciente imunocompetente com lesão única de 3 cm.\n\nc) Hidrocortisona tópica – Incorreta. Corticoide tópico isolado não trata a infecção e pode piorá-la. A imunossupressão local favorece a proliferação fúngica e modifica o aspecto da lesão, originando a chamada tinea incognita, o que dificulta o diagnóstico. O corticoide pode até aliviar o prurido transitoriamente, mas a lesão se expande.\n\nd) Ivermectina oral – Incorreta. É antiparasitário indicado para escabiose, pediculose, estrongiloidíase e larva migrans cutânea. A larva migrans produz lesão serpiginosa, linear e muito pruriginosa, e não placa anular com clareamento central. A ivermectina não tem atividade antifúngica.\n\nPonto-chave para a prova: lesão anular + borda ativa descamativa + clareamento central + prurido = tinha do corpo. Se for localizada, trata-se com antifúngico tópico; se for extensa, em imunossuprimido ou refratária, com antifúngico oral. Lembre-se dos diagnósticos diferenciais de lesão anular: eczema numular, pitiríase rósea (medalhão inicial), granuloma anular (sem descamação), psoríase e eritema migratório da doença de Lyme.\n\nGabarito: letra B.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:42.514Z"
+  },
+  {
+    "id": "AJUDA_a69c5a2c-03ac-4889-979c-bfd8c36fd500",
+    "originalId": "a69c5a2c-03ac-4889-979c-bfd8c36fd500",
+    "statement": "Paciente com adenocarcinoma gástrico com estadiamento cT4a cN1 M0 está em programação para realizar quimioterapia neoadjuvante com esquema FLOT-4. De acordo com o II Consenso Brasileiro em Câncer Gástrico, qual procedimento recomenda-se realizar antes do início da quimioterapia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cintilografia gástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PET-SCAN com Gálio-68.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Laparoscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Lavagem gástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o manejo diagnóstico e o estadiamento do adenocarcinoma gástrico localmente avançado (cT4a cN1 M0). Nesse cenário, o paciente possui indicação de tratamento multimodal, iniciando com quimioterapia neoadjuvante (esquema FLOT-4). \n\nO ponto central da pergunta é identificar o procedimento que deve preceder o início da quimioterapia para refinar o estadiamento e evitar tratamentos desnecessários ou equivocados.\n\nAlternativa (a) Incorreta: A cintilografia gástrica é um exame utilizado para avaliar o tempo de esvaziamento gástrico em casos de suspeita de gastroparesia ou distúrbios de motilidade. Ela não possui papel no estadiamento oncológico ou na definição de conduta para o câncer gástrico.\n\nAlternativa (b) Incorreta: O PET-SCAN com Gálio-68 é utilizado principalmente para o rastreio de tumores neuroendócrinos (Gálio-DOTATATE) ou câncer de próstata (Gálio-PSMA). No adenocarcinoma gástrico, o PET-CT convencional (com FDG-18) pode ser solicitado em casos selecionados para avaliar metástases a distância, mas não substitui a avaliação direta da cavidade abdominal e não é o exame padrão-ouro exigido antes da neoadjuvância pelo consenso.\n\nAlternativa (c) Correta: De acordo com o II Consenso Brasileiro em Câncer Gástrico, a laparoscopia de estadiamento é recomendada para todos os pacientes com tumores T3 ou T4, ou com presença de linfonodos comprometidos (N+), que não apresentam metástases evidentes nos exames de imagem convencionais (como a tomografia). A finalidade é identificar a carcinomatose peritoneal (presença de pequenos implantes no peritônio), que pode passar despercebida na tomografia em até 20-30% dos casos. Como o esquema FLOT é agressivo e visa uma cirurgia curativa posterior, é fundamental confirmar que o paciente é realmente M0 (sem metástases) antes de iniciar o protocolo. Frequentemente, a laparoscopia é acompanhada do lavado peritoneal para pesquisa de células neoplásicas.\n\nAlternativa (d) Incorreta: A lavagem gástrica é um procedimento de esvaziamento do conteúdo gástrico, geralmente indicado em situações de intoxicação exógena aguda ou para limpeza do estômago antes de uma endoscopia de urgência em pacientes com sangramento ativo. Não tem utilidade no estadiamento do câncer gástrico.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:42.514Z"
+  },
+  {
+    "id": "AJUDA_a6a4fcdb-cfe3-4f10-a92f-907ffdfbc07b",
+    "originalId": "a6a4fcdb-cfe3-4f10-a92f-907ffdfbc07b",
+    "statement": "Durante seu plantão em um hospital regional, você é chamado para avaliar João, 7 anos, internado há três dias por quadro de inchaço corporal e diminuição do volume urinário iniciado há cinco dias. No exame físico, a criança encontra-se pálida, com edema generalizado, frequência cardíaca de 120 bpm e pressão arterial de 120 × 80 mmHg (acima do percentil 95 para idade, sexo e estatura). Os resultados laboratoriais disponíveis são: Hemoglobina: 9,5 g/dL; leucócitos e plaquetas normais; ureia: 36 mg/dL; creatinina: 0,8 mg/dL; sódio: 134 mEq/L; potássio: 4,8 mEq/L. EAS: pH 6,0; densidade 1.020; hemoglobina +++; proteína ++; hemácias >100.000/mm³; leucócitos 20.000/mm³. Com base nesse quadro clínico-laboratorial, qual a hipótese diagnóstica principal e os exames complementares mais indicados para elucidar a etiologia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome nefrótica – proteinúria de 24 horas e Colesterol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome nefrítica – dismorfismo eritrocitário, PCR e p-ANCA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome nefrítica – ASLO e Complemento C3.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Síndrome nefrótica – proteinúria em amostra de urina isolada e biopsia renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico de João apresenta a tríade clássica da Síndrome Nefrítica: edema, hipertensão arterial (120 x 80 mmHg está acima do percentil 95 para sua idade) e hematúria importante (identificada no EAS como hemoglobina +++ e hemácias >100.000/mm³). Embora exista proteinúria (++), ela é de intensidade moderada (subnefrótica), e a presença marcante de hipertensão e hematúria aponta diretamente para um processo inflamatório glomerular agudo.\n\nNa faixa etária de 7 anos, a principal causa de Síndrome Nefrítica é a Glomerulonefrite Difusa Aguda (GNDA) pós-estreptocócica. O diagnóstico etiológico baseia-se na confirmação de uma infecção estreptocócica prévia (faringite ou piodermite) e na demonstração de consumo de complemento por via alternativa.\n\nAnálise das alternativas:\n\na) Incorreta. A síndrome nefrótica caracteriza-se fundamentalmente por proteinúria maciça, hipoalbuminemia e edema. Embora o paciente apresente edema, a hematúria franca e a hipertensão arterial são elementos que definem a síndrome nefrítica, tornando a hipótese nefrótica secundária.\n\nb) Incorreta. O diagnóstico sindrômico está correto, porém os exames sugeridos não são os mais indicados para o caso. O p-ANCA é utilizado na investigação de vasculites sistêmicas (como a poliangiite microscópica), que são causas raras de nefrite em crianças quando comparadas à GNDA. O dismorfismo eritrocitário confirmaria a origem glomerular da hematúria, mas não é o exame principal para definir a etiologia.\n\nc) Correta. A hipótese principal é Síndrome Nefrítica (especificamente a GNDA). Os exames padrão-ouro para iniciar a investigação etiológica em pediatria são o ASLO (Antiestreptolisina O), que comprova o contato prévio com o Streptococcus pyogenes, e a dosagem do Complemento C3, que se encontra reduzido em cerca de 90% dos pacientes com GNDA na fase aguda da doença.\n\nd) Incorreta. A clínica não é compatível com síndrome nefrótica pura. Além disso, a biópsia renal é um procedimento invasivo indicado apenas em casos atípicos (como complemento normal, insuficiência renal progressiva ou hematúria persistente por muito tempo), não sendo o exame de escolha inicial para um quadro sugestivo de GNDA.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:42.514Z"
+  },
+  {
+    "id": "AJUDA_a6a7558c-86e5-4a27-90ac-4ccd295df780",
+    "originalId": "a6a7558c-86e5-4a27-90ac-4ccd295df780",
+    "statement": "Um ensaio clínico randomizado mostrou redução da pressão arterial com uso de um inibidor cotransportador de sódio-glicose tipo 2 (SGLT-2), resultado semelhante ao obtido previamente com outro fármaco da mesma classe. Qual critério de Hill está sendo exemplificado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Plausibilidade biológica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Consistência",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Gradiente biológico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Especificidade",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Os critérios de Hill são utilizados para avaliar se a associação entre um fator e um desfecho é de fato causal.\n\nAlternativa (a) Incorreta. A plausibilidade biológica refere-se à existência de um mecanismo científico ou fisiológico conhecido que explique a relação causa-efeito. Embora existam explicações mecanísticas para a redução da pressão pelos inibidores de SGLT-2 (como natriurese e diurese osmótica), o foco do enunciado é a repetição de um resultado já observado em estudos anteriores, o que define outro critério.\n\nAlternativa (b) Correta. A consistência é demonstrada quando o mesmo resultado é obtido em diferentes estudos, realizados por pesquisadores distintos, em populações ou momentos diferentes. No caso da questão, o fato de um novo ensaio clínico com um fármaco da mesma classe apresentar um resultado semelhante ao obtido previamente por outro fármaco reforça a consistência daquela observação científica.\n\nAlternativa (c) Incorreta. O gradiente biológico é o critério relacionado à dose-resposta. Ele sugere que uma maior exposição ao fator (ou uma dose maior do medicamento) deve levar a um efeito proporcionalmente maior ou menor no desfecho. O enunciado não fornece dados sobre variação de doses.\n\nAlternativa (d) Incorreta. A especificidade ocorre quando uma causa específica leva a um efeito único e bem definido. É um critério cada vez menos valorizado, já que muitas doenças são multifatoriais e muitos medicamentos possuem efeitos pleiotrópicos (atuam em diversos sistemas simultaneamente). A questão trata da replicação de resultados, e não da exclusividade da ação do fármaco.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:42.514Z"
+  },
+  {
+    "id": "AJUDA_a6af3998-14c3-41a5-b7f0-c71776ace6a0",
+    "originalId": "a6af3998-14c3-41a5-b7f0-c71776ace6a0",
+    "statement": "A Política Nacional de Atenção Básica (PNAB) dá as orientações de organização da atenção primária a nível nacional. \nAlém dos princípios do SUS, a PNAB sinaliza como responsabilidade da atenção básica operacionalizar algumas diretrizes, entre elas:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a regionalização, a hierarquização e a democracia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a territorialização, centralização e a população adscrita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a longitudinalidade, o cuidado centrado na doença e a resolutividade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a resolutividade, a coordenação do cuidado e a participação da comunidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Política Nacional de Atenção Básica (PNAB), revisada pela última vez em 2017, estabelece as diretrizes e normas para a organização da Atenção Primária à Saúde (APS) no Brasil. É fundamental para o candidato diferenciar os princípios do SUS (Universalidade, Equidade e Integralidade) das diretrizes específicas da Atenção Básica. As diretrizes citadas pela PNAB incluem: Regionalização e Hierarquização, Territorialização, População Adscrita, Cuidado Centrado na Pessoa, Resolutividade, Longitudinalidade do Cuidado, Coordenação do Cuidado, Ordenação da Rede e Participação da Comunidade.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Embora a regionalização e a hierarquização sejam diretrizes da PNAB, a democracia não consta no rol de diretrizes operacionais da política. O termo correto relacionado ao envolvimento social é Participação da Comunidade.\n\nAlternativa B: Incorreta. A territorialização e a população adscrita são diretrizes fundamentais da APS. No entanto, a centralização está incorreta; a diretriz do SUS é a descentralização, que busca aproximar a gestão do cidadão. Na Atenção Básica, busca-se a capilaridade e a autonomia local, e não a centralização de poder ou processos.\n\nAlternativa C: Incorreta. A longitudinalidade e a resolutividade são diretrizes corretas. O erro reside no termo \"cuidado centrado na doença\". A PNAB preconiza o Cuidado Centrado na Pessoa, que foca na subjetividade, no contexto social e nas necessidades do indivíduo, e não apenas na patologia de forma isolada.\n\nAlternativa D: Correta. Esta alternativa agrupa três diretrizes explicitamente descritas na PNAB. A resolutividade refere-se à capacidade da equipe de identificar e resolver a maioria dos problemas de saúde da população. A coordenação do cuidado significa que a Atenção Básica deve organizar o fluxo do paciente pelos diversos pontos da Rede de Atenção à Saúde. A participação da comunidade reforça o controle social e a gestão participativa no território.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:42.514Z"
+  },
+  {
+    "id": "AJUDA_a6b0ab14-f34e-4338-a0cf-de3d8c1bceef",
+    "originalId": "a6b0ab14-f34e-4338-a0cf-de3d8c1bceef",
+    "statement": "Paciente, 28 anos de idade, sexo masculino, previamente hígido, vítima de colisão automobilística frontal de alta energia, é admitido na sala de trauma. À admissão: Glasgow 15, FR 26 irpm, FC 138 bpm, PA 84x50 mmHg, SpO2 93% com máscara de alto fluxo, pele fria, pálida e sudoreica FAST: líquido livre na topografia do espaço de Morrison. Radiografia de pelve: fratura instável em livro aberto com diástase da sínfise púbica de 5 cm. Ao reposicionamento da pelve com lençol, a PA sobe para 98x60 mmHg e a FC cai para 120 bpm. Após 15 minutos, o paciente apresenta nova queda de PA para 72x42 mmHg e rebaixamento do nível de consciência. Assinale a alternativa que apresenta, corretamente, a conduta para o caso descrito.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar laparotomia exploradora imediata, pois o FAST positivo indica hemorragia intra abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar transfusão maciça e encaminhar para angiografia com embolização pélvica, pois o sangramento arterial pélvico é a principal causa de choque nessa situação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar transfusão maciça, manter o lençol e encaminhar para fixação externa pélvica e laparotomia de controle de danos com empacotamento pélvico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Repetir o FAST e realizar sondagem vesical, pois pode ser apenas hematoma retroperitoneal autolimitado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tomografia de abdome e pelve com contraste, para localizar o ponto de sangramento antes de qualquer intervenção invasiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O paciente apresenta um quadro de choque hipovolêmico classe IV (hipotensão, taquicardia importante, palidez e rebaixamento do nível de consciência) decorrente de um trauma de alta energia. O diagnóstico é de trauma multissistêmico com dois focos principais de hemorragia: intra-abdominal (confirmado pelo FAST positivo no espaço de Morison) e pélvico (fratura em livro aberto com diástase de 5 cm). A instabilidade hemodinâmica persistente após manobras iniciais exige uma intervenção imediata de controle de danos.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a laparotomia seja necessária devido ao FAST positivo, realizar apenas esse procedimento é insuficiente e perigoso. Em fraturas pélvicas instáveis, a abertura do peritônio pode resultar na perda do efeito de tamponamento retroperitoneal, agravando o sangramento pélvico. O foco pélvico deve ser abordado conjuntamente.\n\nb) Incorreta. A angiografia com embolização é uma excelente opção para sangramentos arteriais pélvicos, porém é reservada para pacientes hemodinamicamente estáveis ou que apresentam estabilização transitória. Um paciente com PA 72x42 mmHg e FAST positivo para sangue abdominal deve seguir para o centro cirúrgico, não para a sala de hemodinâmica, sob risco de morte durante o transporte ou procedimento.\n\nc) Correta. Esta alternativa segue os princípios do controle de danos. A transfusão maciça é essencial para repor a volemia e tratar a coagulopatia. A manutenção do lençol e a posterior fixação externa estabilizam mecanicamente a bacia, reduzindo o volume pélvico e favorecendo o tamponamento. A laparotomia trata a hemorragia abdominal (FAST positivo) e o empacotamento (packing) pré-peritoneal ou pélvico aborda o sangramento venoso e ósseo da bacia, que é o mais comum nessas fraturas.\n\nd) Incorreta. Repetir o FAST em um paciente francamente instável é uma perda de tempo precioso. Além disso, a sondagem vesical deve ser feita com extrema cautela ou evitada em fraturas de pelve graves antes da avaliação da integridade da uretra (uretrografia retrógrada), devido ao risco de lesão uretral associada.\n\ne) Incorreta. Existe uma regra clássica no trauma: paciente hemodinamicamente instável não deve ser levado para a tomografia computadorizada. A TC é um exame demorado e exige que o paciente saia do ambiente monitorado da sala de trauma, o que pode ser fatal em casos de choque descompensado.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Trauma",
+      "Politrauma Ortopédico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:42.514Z"
+  }
+]

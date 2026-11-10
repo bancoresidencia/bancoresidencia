@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_55ff1878-0675-417b-96d9-7ce1185e6f7a",
+    "originalId": "55ff1878-0675-417b-96d9-7ce1185e6f7a",
+    "statement": "Sobre o conceito de parto humanizado, segundo as diretrizes da Organização Mundial da Saúde (OMS) e do Ministério da Saúde do Brasil, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O conceito de humanização está vinculado exclusivamente ao parto vaginal, não se aplicando a cesarianas eletivas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O protagonismo da mulher implica autonomia parcial nas decisões, desde que autorizadas pela equipe médica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O respeito às escolhas da gestante inclui direito à posição de parto desejada, desde que não haja contraindicações clínicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O parto humanizado restringe o uso de métodos farmacológicos para analgesia, priorizando o estímulo à dor fisiológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O parto humanizado pressupõe baixo risco obstétrico e está limitado ao ambiente domiciliar com equipe de parteiras treinadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) INCORRETA: A humanização não é um tipo de parto (vaginal ou cesárea), mas sim um modelo de assistência que preza pelo respeito aos direitos da mulher e pela aplicação de condutas baseadas em evidências científicas. Mesmo em uma cesariana, o cuidado pode e deve ser humanizado, garantindo o direito ao acompanhante, o contato pele a pele imediato com o recém-nascido e a explicação detalhada dos procedimentos.\n\nAlternativa (b) INCORRETA: O protagonismo da mulher é um dos pilares centrais da humanização. Isso implica autonomia e a tomada de decisão compartilhada entre a paciente e a equipe de saúde. A equipe não deve agir como uma autoridade que autoriza ou desautoriza, mas como um suporte técnico que informa e respeita a vontade da gestante, intervindo apenas quando houver necessidade clínica real.\n\nAlternativa (c) CORRETA: As diretrizes da OMS e do Ministério da Saúde recomendam que a mulher seja incentivada a adotar posições de sua preferência durante o trabalho de parto e o parto propriamente dito (posições verticalizadas, de lado, de quatro apoios, etc.). A posição de litotomia (deitada de costas com as pernas suspensas) não deve ser a regra, mas sim uma opção, sendo o desejo da mulher soberano desde que a situação clínica permita a segurança do binômio mãe-filho.\n\nAlternativa (d) INCORRETA: O parto humanizado não proíbe o uso de medicamentos. Embora priorize métodos não farmacológicos de alívio da dor (como massagens, banhos quentes e uso da bola suíça), a analgesia farmacológica (como a peridural) é um direito da mulher e deve ser disponibilizada caso ela a solicite e haja indicação. Humanizar não é sinônimo de sofrimento obrigatório.\n\nAlternativa (e) INCORRETA: O parto humanizado pode e deve ocorrer em qualquer cenário de assistência, seja ele domiciliar, em centros de parto normal ou em hospitais de alta complexidade. Além disso, a humanização é aplicável tanto em gestações de baixo risco quanto nas de alto risco, adaptando-se às necessidades de segurança de cada caso sem perder a essência do respeito à mulher.\n\nGABARITO: A alternativa correta é a letra (c).",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Assistência ao Parto",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:48.979Z"
+  },
+  {
+    "id": "AJUDA_5604d11c-614c-4ae6-99d9-98fa2276c9f5",
+    "originalId": "5604d11c-614c-4ae6-99d9-98fa2276c9f5",
+    "statement": "Menina, 5 anos de idade, portadora de doença neuromuscular, foi admitida com história de tosse e cansaço há 2 dias, sendo feito o diagnóstico de crise asmática. A radiografia de tórax, realizada na admissão, é apresentada a seguir (primeira foto): \n\nNo terceiro dia de internação em enfermaria, apresentou piora clínica com frequência respiratória de 44 ipm, frequência cardíaca de 138 bpm, PA de 88x68 mmHg, saturação de O2 de 88% em máscara de Venturi 50%, ausculta pulmonar diminuída em hemitórax direito, tiragens subcostal e intercostal, tempo de enchimento capilar de 2 segundos. Foi repetida a radiografia de tórax (segunda foto): \n\nBaseada no diagnóstico principal, a conduta indicada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Punção de alívio em segundo espaço intercostal direito, seguida de drenagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Toraconcentese diagnóstica à direita e drenagem a depender do resultado bioquímico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fisioterapia respiratória, ventilação não invasiva e medidas de higiene pulmonar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Antibioticoterapia com cobertura para patógenos nosocomiais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Este caso clínico apresenta uma criança de 5 anos com doença neuromuscular e uma crise de asma que evolui com piora clínica súbita. A análise das radiografias é fundamental para o diagnóstico.\n\nA primeira imagem, da admissão, mostra sinais de hiperinsuflação pulmonar (retificação das cúpulas diafragmáticas e aumento dos espaços intercostais), condizentes com a crise asmática.\n\nA segunda imagem, do terceiro dia, revela uma opacidade total do hemitórax direito (pulmão branco). O detalhe crucial é o desvio das estruturas do mediastino (traqueia e coração) para o mesmo lado da opacidade (ipsilateral). Esse achado é patognomônico de perda de volume pulmonar, ou seja, atelectasia. Em pacientes com doenças neuromusculares, a fraqueza da musculatura respiratória e a tosse ineficaz, somadas ao aumento de secreção da asma, predispõem à formação de tampões mucosos que obstruem brônquios principais, gerando atelectasias maciças.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A punção de alívio é indicada para o pneumotórax hipertensivo. No pneumotórax, a radiografia mostraria uma área de hipertransparência (preta) sem vasos e o desvio do mediastino seria para o lado oposto (contralateral) à lesão.\n\nAlternativa b) Incorreta. A toracentese é o procedimento para investigar ou drenar derrame pleural. Embora um derrame pleural extenso deixe o hemitórax opaco, ele costuma empurrar o mediastino para o lado oposto ou mantê-lo centralizado, mas nunca puxá-lo para o mesmo lado da opacidade como visto na imagem.\n\nAlternativa c) Correta. O diagnóstico principal da piora clínica é uma atelectasia maciça por tampão mucoso. Em pacientes neuromusculares, a conduta padrão para reexpandir o pulmão e eliminar secreções envolve fisioterapia respiratória intensiva (técnicas de higiene brônquica, como a tosse assistida ou uso de dispositivos de oscilação), ventilação não invasiva (VNI) para recrutamento alveolar e medidas de higiene pulmonar.\n\nAlternativa d) Incorreta. Embora uma infecção respiratória possa ter sido o gatilho para a descompensação da asma, o quadro agudo de insuficiência respiratória com imagem de pulmão colapsado exige intervenção mecânica/física imediata para reexpansão pulmonar, e não apenas o uso de antibióticos. Além disso, a imagem é de colapso, não de uma consolidação pneumônica típica.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria",
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/2d695c4f9eaad602f51dcf12e8afb71e90351ce2287d0b3e50a18d40902fb83a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5604d11c-614c-4ae6-99d9-98fa2276c9f5_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/7a759799306fd9b33e527b452e3e0ba51bb45b5569d31c88295990d887ab12df.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5604d11c-614c-4ae6-99d9-98fa2276c9f5_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:50.028Z"
+  },
+  {
+    "id": "AJUDA_5606d64d-5a6a-498c-b39c-3ac685501262",
+    "originalId": "5606d64d-5a6a-498c-b39c-3ac685501262",
+    "statement": "Mulher, 39 anos de idade, refere cólica em epigástrio e hipocôndrio direito com irradiação para dorso há 2 dias, que melhora com o uso de analgésicos e antiespasmódicos. Nega febre. Sem comorbidades. Ao exame físico, apresenta bom estado geral, corada, hidratada, ictérica +/++++, afebril; abdome distendido, flácido, doloroso em epigástrio e hipocôndrio direito sem sinais de peritonite.\n• Exames laboratoriais:\nHb: 11,5 g/dL\nLeucócitos: 9.500/mm3\nTGO/AST: 230 U/L\nTGP/ALT: 310 U/L\nFA: 430 U/l\nGGT: 352 U/L\nAmilase: 110 U/L\nLipase: 72 U/L\nBilirrubina total: 4,5 mg/dL\nPCR: 8 mg/L\n\nCom base no caso clínico descrito, assinale a alternativa que apresenta a principal hipótese diagnóstica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cólica biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colangite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coledocolitíase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Colecistite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A paciente apresenta dor abdominal típica de origem biliar (cólica em hipocôndrio direito e epigástrio com irradiação para o dorso) associada a icterícia e a um perfil laboratorial com elevação de bilirrubina total e enzimas canaliculares (Fosfatase Alcalina e GGT), além de discreto aumento de transaminases, padrão característico de obstrução biliar aguda. Os parâmetros inflamatórios (leucócitos e PCR) estão normais e a paciente está afebril, o que descarta um processo infeccioso ativo no momento.\n\nAnálise das alternativas:\n\na) Incorreta. A cólica biliar simples ocorre pela obstrução transitória do ducto cístico. Ela não cursa com icterícia nem com elevação importante de bilirrubinas ou enzimas canaliculares, pois o fluxo pelo ducto colédoco permanece desobstruído.\n\nb) Incorreta. A colangite aguda decorre da infecção bacteriana secundária à obstrução biliar, manifestando-se classicamente pela Tríade de Charcot (dor biliar, icterícia e febre com calafrios). Como a paciente está afebril, com leucograma normal e sem elevação expressiva de PCR, não há evidência de infecção instalada.\n\nc) Correta. A coledocolitíase é a presença de cálculo no colédoco. O cálculo obstrui a drenagem da via biliar principal, levando ao acúmulo de bile, icterícia e elevação de FA, GGT e bilirrubina direta, além de dor em hipocôndrio direito. A ausência de febre e leucocitose confirma que se trata de uma obstrução mecânica sem colangite associada até o momento.\n\nd) Incorreta. A colecistite aguda é a inflamação/infecção da vesícula biliar, caracterizada por dor persistente no hipocôndrio direito, sinal de Murphy positivo, febre e leucocitose. Tipicamente não cursa com icterícia evidente, a menos que haja complicação associada (como a Síndrome de Mirizzi ou coledocolitíase concomitante).",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:50.028Z"
+  },
+  {
+    "id": "AJUDA_560affd0-128e-4744-80ef-7ae9046a5325",
+    "originalId": "560affd0-128e-4744-80ef-7ae9046a5325",
+    "statement": "A avaliação de uma queixa relacionada com as mamas inclui anamnese e exame físico completos, frequentemente acompanhados de exames complementares de imagem e, em alguns casos, biópsia e exame de anatomia patológica. Assinale a alternativa correta em relação às doenças da mama.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os tumores filoides são os tumores benignos mais comuns da mama e raramente são bilaterais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O fibroadenoma está associado ao aumento do risco de câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A inversão adquirida da papila mamária não constitui uma indicação para investigação cuidadosa das mamas com exames de imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A doença de Mondor consiste em tromboflebite da veia axilar, que se manifesta como dor e eritema da mama e necessita de tratamento imediato com anticoagulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Descarga papilar unilateral sanguinolenta crônica constitui uma indicação para ressecção dos ductos acometidos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A alternativa correta é a (e). Abaixo, apresento a análise detalhada de cada opção:\n\nAlternativa a) Incorreta. Os tumores filoides são raros, representando menos de 1% de todos os tumores mamários. O tumor benigno mais comum da mama é o fibroadenoma. O tumor filoide assemelha-se ao fibroadenoma no exame físico e de imagem, porém possui um crescimento muito mais rápido e maior celularidade estromal, podendo inclusive ter comportamento maligno.\n\nAlternativa b) Incorreta. O fibroadenoma simples não é considerado um fator de risco significativo para o desenvolvimento de câncer de mama. Ele é uma lesão benigna resultante da proliferação de elementos epiteliais e estromais. Apenas fibroadenomas \"complexos\" (que apresentam cistos, adenose esclerosante ou calcificações epiteliais) apresentam um aumento muito discreto no risco relativo, mas, via de regra, para fins de prova, o fibroadenoma não é lesão precursora nem fator de risco.\n\nAlternativa c) Incorreta. A inversão papilar adquirida (recente) é um sinal de alerta importante. Ao contrário da inversão congênita, a inversão nova pode indicar a presença de um processo inflamatório ou, mais grave, um carcinoma subjacente que está tracionando os ductos lactíferos e retraindo a papila. Portanto, é indicação absoluta de investigação rigorosa com exames de imagem (mamografia e/ou ultrassonografia).\n\nAlternativa d) Incorreta. A Doença de Mondor é uma tromboflebite superficial das veias da parede torácica ou da mama (frequentemente a veia torácica epigástrica), e não da veia axilar (que é do sistema profundo). Manifesta-se como um cordão fibroso e doloroso à palpação. O tratamento é habitualmente conservador, com uso de anti-inflamatórios e compressas mornas, resolvendo-se espontaneamente em algumas semanas. Não há indicação de anticoagulação sistêmica.\n\nAlternativa e) Correta. A descarga papilar é considerada suspeita (ou patológica) quando é espontânea, unilateral, uniductal e de aspecto sanguinolento ou \"água de rocha\" (seroso). Nesses casos, mesmo que os exames de imagem sejam negativos, a conduta padrão é a exploração cirúrgica com ressecção dos ductos acometidos (microdectomia). O objetivo é tanto o diagnóstico definitivo (excluir carcinoma papilar ou ductal in situ) quanto o tratamento da causa mais comum, que é o papiloma intraductal benigno.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Doenças Benignas da Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:50.028Z"
+  },
+  {
+    "id": "AJUDA_560ca752-12f1-4a88-8d4b-b7bd5b2be2c9",
+    "originalId": "560ca752-12f1-4a88-8d4b-b7bd5b2be2c9",
+    "statement": "De acordo com a classificação de Barbara Starfield, amplamente utilizada pelo Ministério da Saúde para definir a qualidade da Atenção Primária à Saúde (APS), são denominados atributos derivados:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acesso de Primeiro Contato e Longitudinalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Integralidade e Coordenação do Cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acessibilidade e Equidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientação Familiar e Competência Cultural.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Escuta qualificada e Universalidade do Cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Barbara Starfield, uma das maiores referências mundiais em Atenção Primária à Saúde (APS), estruturou o cuidado primário em atributos que definem sua qualidade e resolutividade. Esses atributos são divididos em dois grandes grupos: os Essenciais e os Derivados.\n\nAtributos Essenciais:\n1. Acesso de Primeiro Contato (Acessibilidade): A unidade de saúde deve ser a porta de entrada preferencial e acessível sempre que houver uma nova necessidade de saúde.\n2. Longitudinalidade: Acompanhamento do paciente ao longo do tempo pela mesma equipe, estabelecendo um vínculo terapêutico duradouro.\n3. Integralidade: Capacidade da APS de abordar a maioria dos problemas de saúde e considerar o paciente como um todo, incluindo ações de prevenção, promoção, cura e reabilitação.\n4. Coordenação do Cuidado: Capacidade de integrar e sincronizar o cuidado em diferentes pontos da Rede de Atenção à Saúde, mantendo a continuidade do tratamento mesmo quando o paciente é referenciado.\n\nAtributos Derivados:\n1. Orientação Familiar: Considerar o contexto familiar e as dinâmicas de convivência na avaliação da saúde e no plano terapêutico.\n2. Orientação Comunitária: Reconhecer as necessidades de saúde da comunidade onde a unidade está inserida, utilizando dados epidemiológicos locais para o planejamento das ações.\n3. Competência Cultural: Adaptação dos serviços de saúde às características culturais, linguísticas e sociais específicas da população atendida para facilitar o vínculo e a adesão.\n\nAnálise das alternativas:\n\na) Incorreta. Acesso de Primeiro Contato e Longitudinalidade fazem parte do grupo de atributos essenciais.\n\nb) Incorreta. Integralidade e Coordenação do Cuidado são atributos essenciais.\n\nc) Incorreta. Acessibilidade é uma dimensão do Acesso de Primeiro Contato (essencial). Equidade é um princípio doutrinário do SUS, não um atributo de Starfield.\n\nd) Correta. A Orientação Familiar e a Competência Cultural são, conforme a classificação proposta por Starfield e adotada pelo Ministério da Saúde (por meio do Manual do Instrumento de Avaliação da Atenção Primária — PCATool), consideradas atributos derivados.\n\ne) Incorreta. Escuta qualificada é uma prática de acolhimento e humanização. Universalidade é um princípio doutrinário e ético do SUS. Nenhum dos dois integra a lista de atributos de Starfield.\n\nGabarito: Letra (d).",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:50.028Z"
+  },
+  {
+    "id": "AJUDA_5611d821-b0d3-42c6-9bf6-185766307c91",
+    "originalId": "5611d821-b0d3-42c6-9bf6-185766307c91",
+    "statement": "Homem de 67 anos, comparece para consulta de avaliação pré-operatória. Histórico de 12 anos de doença renal crônica em estágio terminal secundária a nefropatia diabética e hipertensiva, em hemodiálise. Faz uso regular de losartana, metoprolol, amlodipino, insulina e eritropoetina. Há 4 meses, suspendeu o uso de carbonato de cálcio e calcitriol devido à elevação do cálcio sérico. O paciente segue aderente às medicações e restrições dietéticas. Exames laboratoriais recentes: Cálcio sérico: 10.9 mg/dL (VR: 8,6 a 10,2); Fósforo sérico: 5.3 mg/dL (VR: 2,5 a 4,5); Albumina sérica: 3.7 g/dL (VR: 3,5 a 5,0); Hormônio paratireoideo intacto (PTHi): 780 pg/mL (VR: 10 a 65); Qual das seguintes alternativas é a causa mais provável da hipercalcemia desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperplasia das glândulas paratireoides.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Produção ectópica de hormônio paratireoideo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumento da ativação da vitamina D.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução da depuração do hormônio paratireoideo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve um paciente com Doença Renal Crônica (DRC) terminal em hemodiálise de longa data (12 anos) que desenvolveu hipercalcemia associada a hiperfosfatemia e níveis marcadamente elevados de paratormônio intacto (PTHi = 780 pg/mL), mesmo após a suspensão de carbonato de cálcio e calcitriol há 4 meses.\n\nTrata-se do clássico desenvolvimento de hiperparatireoidismo terciário. Na DRC, o estímulo crônico decorrente da retenção de fósforo, da deficiência de calcitriol e da hipocalcemia inicial gera hiperparatireoidismo secundário. Ao longo dos anos, as glândulas paratireoides sofrem hiperplasia progressiva e passam a ter secreção autônoma de PTH, perdendo a sensibilidade ao feedback negativo do cálcio, o que culmina em hipercalcemia sustentada.\n\nAnalise das alternativas:\n\nAlternativa a: Correta. A hiperplasia e nodularização das paratireoides, decorrentes de anos de estímulo na DRC, tornam a secreção de PTH autônoma e independente dos níveis séricos de cálcio (hiperparatireoidismo terciário), sendo a causa direta da hipercalcemia apresentada.\n\nAlternativa b: Incorreta. A produção ectópica de PTH verdadeiro é um fenômeno raríssimo. Em neoplasias malignas associadas a hipercalcemia, o mecanismo habitual é a produção de PTHrP (proteína relacionada ao PTH), situação na qual o PTH intacto encontra-se tipicamente suprimido.\n\nAlternativa c: Incorreta. Pacientes com DRC em estágio terminal apresentam perda substancial da atividade da enzima 1-alfa-hidroxilase renal, o que causa diminuição (e não aumento) da ativação da vitamina D. Além disso, o paciente não está mais em uso exógeno de calcitriol.\n\nAlternativa d: Incorreta. Embora o rim participe da depuração de fragmentos de PTH, a elevação acentuada de PTH intacto (780 pg/mL) e o quadro de hipercalcemia persistente decorrem primariamente da superprodução autônoma pelas paratireoides hiperplasiadas, e não de mera redução do clearance hormonal.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:50.028Z"
+  },
+  {
+    "id": "AJUDA_561a070c-8953-4f06-a330-59e14d87cc0a",
+    "originalId": "561a070c-8953-4f06-a330-59e14d87cc0a",
+    "statement": "Um recém-nascido de 48 horas de vida apresenta vômitos biliosos e grande distensão abdominal. Eliminou mecônio 16 horas após o nascimento. Rx abdominal: intensa distensão de alças. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Megacólon congênito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Atresia jejunal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Íleo meconial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obstrução duonenal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender o diagnóstico correto, é necessário analisar os três pilares do caso: o tipo de vômito, a magnitude da distensão abdominal e o tempo de eliminação do mecônio.\n\nO vômito bilioso indica que a obstrução está localizada obrigatoriamente abaixo da ampola de Vater (segunda porção do duodeno). A grande distensão abdominal e o achado radiológico de intensa distensão de alças apontam para uma obstrução situada no intestino delgado (jejuno ou íleo) ou no cólon. Se a obstrução fosse muito alta (estômago ou duodeno), a distensão seria mínima e localizada apenas na parte superior do abdome.\n\nAlternativa a) Incorreta. No megacólon congênito (doença de Hirschsprung), o sinal clínico mais precoce e característico é o atraso na eliminação do mecônio, geralmente ocorrendo após 24 a 48 horas de vida. Como o paciente do enunciado eliminou mecônio com 16 horas (dentro do prazo fisiológico), essa hipótese perde força, apesar de a distensão abdominal ser comum na doença.\n\nAlternativa b) Correta. A atresia jejunal é uma interrupção da luz intestinal que ocorre geralmente por um insulto vascular isquêmico durante o desenvolvimento fetal. Por estar localizada no jejuno, ela permite que o ar e os fluidos preencham várias alças de delgado antes do ponto de obstrução, o que explica a \"grande distensão abdominal\" e a \"intensa distensão de alças\" no raio X. Além disso, é possível que o recém-nascido elimine mecônio que já estava presente no intestino distal à atresia antes do nascimento.\n\nAlternativa c) Incorreta. O íleo meconial está fortemente associado à fibrose cística. Nele, o mecônio é extremamente viscoso e obstrui o íleo terminal. O quadro típico envolve a falha total em eliminar mecônio nas primeiras horas de vida. Radiologicamente, além da distensão, é comum observar o sinal de Neuhauser (aspecto de bolhas de sabão ou vidro moído), que não foi descrito.\n\nAlternativa d) Incorreta. Na obstrução duodenal, o sinal clássico no raio X é o da \"dupla bolha\" (distensão apenas do estômago e do duodeno proximal). Como a obstrução é muito alta, não há distensão de várias alças intestinais, e o abdome inferior costuma estar escavado ou sem gás, o que contradiz frontalmente a descrição de \"intensa distensão de alças\".",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil",
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:50.028Z"
+  },
+  {
+    "id": "AJUDA_561d90f9-3e7b-440b-ad91-7c5497277855",
+    "originalId": "561d90f9-3e7b-440b-ad91-7c5497277855",
+    "statement": "Em relação ao teste da oximetria de pulso para triagem de cardiopatias congênitas críticas no RN (teste do coraçãozinho), é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "deve ser realizado em todos os RNs com idade gestacional igual ou maior que 35 semanas, preferencialmente entre 24 e 48 horas de vida",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "deve-se realizar as medidas de oximetria em dois sítios: na mão esquerda (medida pré-ductal) e em um dos membros inferiores (medida pós-ductal)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "é considerado negativo quando a SpO2 é maior ou igual a 93% e a diferença entre as medidas pré ductal e pós-ductal é menor ou igual a 4%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "deve ser repetido por, no máximo, duas vezes, com intervalos de 12 horas entre as testagens, em caso de resultado duvidoso",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): Esta alternativa descreve exatamente o protocolo recomendado pela Sociedade Brasileira de Pediatria (SBP) e pelo Ministério da Saúde. O rastreio deve ser feito em recém-nascidos (RN) a termo ou pré-termo tardios (idade gestacional igual ou superior a 35 semanas), pois nestes a transição circulatória é mais previsível. O período entre 24 e 48 horas de vida é o ideal para minimizar resultados falsos-positivos causados pelas oscilações normais de saturação nas primeiras horas após o parto, garantindo que o diagnóstico seja feito antes da alta hospitalar.\n\nAlternativa B (Incorreta): O erro está na lateralidade do membro superior. A medida pré-ductal deve ser realizada obrigatoriamente no membro superior direito (mão direita). Isso ocorre porque a artéria subclávia direita nasce do tronco braquiocefálico, que emerge da aorta antes da inserção do canal arterial. A mão esquerda pode receber sangue pós-ductal em algumas configurações anatômicas, não sendo, portanto, o sítio padrão para medida pré-ductal. A medida pós-ductal deve ser feita em um dos membros inferiores (pés).\n\nAlternativa C (Incorreta): Os critérios para um teste negativo (normal) são: saturação de oxigênio (SpO2) maior ou igual a 95% em ambas as medidas (mão direita e pé) e uma diferença entre a medida pré-ductal e pós-ductal menor que 3%. Valores de saturação entre 90% e 94% ou diferença igual ou superior a 3% são considerados resultados duvidosos ou alterados.\n\nAlternativa D (Incorreta): Caso o primeiro teste apresente resultado alterado (SpO2 entre 90% e 94% ou diferença de pelo menos 3% entre os membros), o protocolo define que a medição deve ser repetida após 1 hora. Se o resultado permanecer alterado, repete-se mais uma vez após 1 hora (totalizando no máximo 3 aferições). Se após a terceira medida o resultado persistir alterado, o teste é considerado positivo, sendo necessária a realização de um ecocardiograma em até 24 horas. O intervalo de 12 horas mencionado na alternativa é excessivo e perigoso para uma suspeita de cardiopatia crítica.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:50.028Z"
+  },
+  {
+    "id": "AJUDA_56263873-6a9f-48fa-8628-8084422325fe",
+    "originalId": "56263873-6a9f-48fa-8628-8084422325fe",
+    "statement": "Na presença de positividade para anticorpos anti-Ro/SSA ou anti-La/SSB, há risco aumentado da seguinte condição:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipoplasia pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Espinha bífida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Bloqueio cardíaco congênito fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Lesão renal bilateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Gastrosquise.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a (c).\n\nCOMENTÁRIO:\n\nA questão aborda as repercussões fetais causadas pela passagem transplacentária de autoanticorpos maternos. Os anticorpos anti-Ro/SSA e anti-La/SSB, frequentemente encontrados em pacientes com Lúpus Eritematoso Sistêmico e Síndrome de Sjögren, são os principais marcadores do Lúpus Eritematoso Neonatal.\n\nEXPLICAÇÃO POR ALTERNATIVA:\n\na) Hipoplasia pulmonar: INCORRETA. A hipoplasia pulmonar é tipicamente secundária a situações que restringem o espaço torácico ou impedem a maturação pulmonar, como o oligoidrâmnio severo (falta de líquido amniótico) ou a hérnia diafragmática congênita. Não há relação fisiopatológica entre essa condição e os anticorpos anti-Ro ou anti-La.\n\nb) Espinha bífida: INCORRETA. Esta é uma malformação do tubo neural decorrente de falhas no seu fechamento durante as primeiras semanas de gestação. Seus principais fatores de risco são a deficiência de ácido fólico e a exposição a substâncias teratogênicas (como o ácido valproico), não possuindo ligação com a autoimunidade materna descrita.\n\nc) Bloqueio cardíaco congênito fetal: CORRETA. Os anticorpos anti-Ro/SSA e anti-La/SSB são da classe IgG e atravessam a placenta. No feto, eles podem se ligar às células do sistema de condução cardíaco, especialmente ao nó atrioventricular (AV), desencadeando um processo inflamatório (miocardite) seguido de fibrose. Esse dano é frequentemente irreversível, levando ao bloqueio cardíaco congênito total, que é a manifestação mais grave e permanente do lúpus neonatal.\n\nd) Lesão renal bilateral: INCORRETA. Embora o lúpus materno possa envolver os rins da própria paciente (nefrite lúpica), os anticorpos anti-Ro e anti-La não causam danos estruturais ou funcionais nos rins do feto. O lúpus neonatal afeta primordialmente o coração, a pele (lesões cutâneas fotossensíveis), o fígado e o sistema hematológico.\n\ne) Gastrosquise: INCORRETA. A gastrosquise é um defeito congênito na parede abdominal, geralmente à direita do cordão umbilical, que permite a herniação de alças intestinais. Sua causa está relacionada a eventos vasculares precoces na embriogênese e não possui qualquer associação com a presença de anticorpos anti-Ro ou anti-La.\n\nRESUMO DIDÁTICO:\nA presença de anti-Ro/SSA ou anti-La/SSB em gestantes exige o monitoramento rigoroso por meio de ecocardiografia fetal, visando detectar precocemente alterações na condução elétrica do coração do feto para intervenções possíveis antes que o bloqueio se torne completo e irreversível.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:50.028Z"
+  },
+  {
+    "id": "AJUDA_56286a41-2358-4298-8299-d30e0eac776c",
+    "originalId": "56286a41-2358-4298-8299-d30e0eac776c",
+    "statement": "Mulher de 18 anos, assintomática, em consulta de pré-natal, traz o seguinte hemograma: Hb 11,1 g/dL VCM=69 fL. Feita hipótese de anemia ferropriva, prescrito sulfato ferroso durante dois meses e solicitado novo exame que não mostrou diferença do anterior. Prosseguindo na investigação, foi realizada cinética de ferro que estava dentro dos valores de referência e Eletroforese de hemoglobina que também foi normal. A hipótese diagnóstica MAIS provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Beta-Talassemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anemia de Doença Crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alfa-Talassemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Anemia Falciforme",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta uma anemia microcítica leve (Hb 11,1 g/dL e VCM 69 fL), que não respondeu à reposição de ferro. O fato de a cinética de ferro estar normal descarta definitivamente a ferropenia. O ponto crucial para a resolução desta questão é a eletroforese de hemoglobina normal em um paciente com microcitose persistente e ferro normal.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Beta-Talassemia: Incorreta. No traço talassêmico beta (beta-talassemia menor), a eletroforese de hemoglobina tipicamente apresenta um aumento da hemoglobina A2 (geralmente acima de 3,5%) e, por vezes, um leve aumento da hemoglobina fetal. Como a eletroforese da paciente foi normal, essa hipótese é afastada.\n\nb) Anemia de Doença Crônica: Incorreta. Esta anemia costuma ser normocítica e normocrômica, podendo tornar-se microcítica em estágios avançados. No entanto, a cinética de ferro estaria alterada (ferro sérico baixo e ferritina elevada ou normal), e a paciente é descrita como assintomática, sem evidências de doenças inflamatórias ou infecciosas crônicas.\n\nc) Alfa-Talassemia: Correta. A alfa-talassemia é causada pela deleção de genes da cadeia alfa da hemoglobina. Nos adultos com traço alfa-talassêmico (perda de 1 ou 2 genes), a eletroforese de hemoglobina é caracteristicamente normal. Isso ocorre porque a redução na produção de cadeias alfa afeta proporcionalmente a síntese de todas as hemoglobinas adultas (A, A2 e fetal), não criando um pico anômalo ou alteração nas proporções que seja detectável pelo exame convencional. O diagnóstico de certeza geralmente exige testes de biologia molecular (DNA).\n\nd) Anemia Falciforme: Incorreta. A anemia falciforme (HbSS) manifesta-se com anemia hemolítica grave, geralmente normocítica ou macrocítica (pelo excesso de reticulócitos). Além disso, a eletroforese de hemoglobina obrigatoriamente revelaria a presença de hemoglobina S e a ausência de hemoglobina A. Mesmo o traço falciforme (HbAS), que é assintomático, apresentaria um pico de HbS na eletroforese.\n\nRESUMO DIAGNÓSTICO\nDiante de um paciente com microcitose importante, ferro normal e eletroforese de hemoglobina normal, a principal hipótese diagnóstica deve ser sempre a alfa-talassemia.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:50.028Z"
+  }
+]

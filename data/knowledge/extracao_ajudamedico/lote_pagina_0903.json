@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_fb0072d3-4df7-43ad-a7cc-e93d922612fe",
+    "originalId": "fb0072d3-4df7-43ad-a7cc-e93d922612fe",
+    "statement": "Homem, 72 anos de idade, portador de insuficiência cardíaca (IC) com fração de ejeção de ventrículo esquerdo (FEVE) de 25%, classe funcional NYHA III, está em acompanhamento ambulatorial com seu médico de família. Em uso de nebivolol e furosemida, em doses otimizadas. Relata dispneia aos esforços leves, fadiga persistente e episódios de ansiedade, tendo iniciado uso de escitalopram e trazodona após última internação. Teve duas hospitalizações no último ano por descompensação da IC. O paciente deambula e então comparece ao consultório. Refere também que a esposa é presente e tem ajudado no tratamento. Nesse momento, a conduta deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "intensificar o uso de diuréticos de alça e considerar a associação de tiazídicos para maior controle da congestão, associando encaminhamento para cuidados paliativos especializados conjuntos para o manejo de sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ponderar a suspensão do nebivolol para evitar polifarmácia, considerando que não é o beta bloqueador com maior evidência para remodelamento cardíaco, e propor suporte psicoterápico para ansiedade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "acrescentar sacubitril-valsartana e dapaglifozina ao tratamento cardíaco, propor realização de diretrizes antecipadas de vontade, associando precocemente cuidados paliativos para controle de sintomas e planejamento de cuidados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "criar rede de apoio e seguimento conjunto com cardiologista, além de início de antagonista de aldosterona, visto que a introdução desse fármaco modifica o curso da doença, podendo adiar discussões sobre cuidados paliativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo da Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFEr) e a integração precoce de cuidados paliativos em pacientes crônicos e sintomáticos.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o paciente tenha sintomas de dispneia, a intensificação de diuréticos de alça e a associação de tiazídicos são estratégias para congestão refratária. O ponto principal aqui é que o paciente ainda não está em uso da terapia quádrupla otimizada, que modifica a sobrevida. Além disso, o foco não deve ser apenas o manejo de sintomas congestivos, mas a introdução de drogas que mudam o desfecho da doença.\n\nb) Incorreta. O nebivolol é um dos quatro betabloqueadores com evidência robusta para o tratamento da insuficiência cardíaca (estudo SENIORS), sendo especialmente bem tolerado em pacientes idosos. Suspendê-lo seria um erro terapêutico que poderia levar à descompensação clínica. O suporte psicoterápico é válido, mas a suspensão da medicação cardíaca é contraindicada neste cenário.\n\nc) Correta. O paciente apresenta ICFEr (FEVE 25%) e permanece sintomático (NYHA III) apesar do uso de betabloqueador e diurético. As diretrizes atuais (brasileira, americana e europeia) recomendam a \"terapia quádrupla\" para reduzir a mortalidade e as hospitalizações: betabloqueador, sacubitril-valsartana (ou IECA/BRA), antagonista de mineralocorticoide e inibidores do SGLT2 (como a dapagliflozina). Além da otimização farmacológica, o histórico de duas internações no último ano e a baixa fração de ejeção indicam uma doença avançada com alto risco de mortalidade. Portanto, a introdução precoce de cuidados paliativos para o planejamento de cuidados e a elaboração de diretrizes antecipadas de vontade (DAV) são condutas fundamentais para garantir a autonomia do paciente e a qualidade de vida.\n\nd) Incorreta. Embora o início do antagonista da aldosterona (espironolactona) esteja indicado, a alternativa peca ao sugerir que isso deve \"adiar\" discussões sobre cuidados paliativos. Os cuidados paliativos devem ser integrados ao tratamento curativo/modificador da doença de forma compartilhada e precoce, e não apenas na fase final de vida. O paciente já apresenta marcadores de gravidade (NYHA III e hospitalizações recorrentes) que justificam essa discussão agora.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:05.011Z"
+  },
+  {
+    "id": "AJUDA_fb02768b-8264-4336-b8e4-4d108ae26e07",
+    "originalId": "fb02768b-8264-4336-b8e4-4d108ae26e07",
+    "statement": "Gestante, 22 anos de idade, secundigesta, previamente hígida, comparece no pronto-socorro em trabalho de parto em período expulsivo. A idade gestacional, pela data da última menstruação, é de 35 semanas. Evoluiu para parto vaginal 5 minutos após a admissão, bolsa rota no ato com líquido meconial. Ao nascer, o recém-nascido apresentava-se hipotônico e sem choro, sendo realizado clampeamento imediato do cordão umbilical. Realizados os passos da reanimação neonatal, que progrediram até a intubação orotraqueal e massagem cardíaca. Assinale a alternativa que apresenta a correlação adequada de compressões torácicas e ventilações durante a reanimação neonatal e a fração inspirada de oxigênio (FiO2) que deve ser utilizada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "3 compressões para 1 ventilação dessincronizada e FiO2 60%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3 compressões para 1 ventilação e FiO2 100%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "15 compressões para 2 ventilações e FiO2 100%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "30 compressões para 2 ventilações e FiO2 60%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o protocolo de reanimação neonatal da Sociedade Brasileira de Pediatria (SBP) e do ILCOR. No cenário descrito, o recém-nascido de 35 semanas (prematuro tardio) apresenta-se deprimido ao nascer e não responde às manobras iniciais e à ventilação, evoluindo para a necessidade de massagem cardíaca e intubação orotraqueal.\n\nDe acordo com as diretrizes de reanimação neonatal:\n\n1. Relação compressão/ventilação: Na sala de parto, a massagem cardíaca deve ser obrigatoriamente sincronizada com a ventilação. A proporção recomendada é de 3 compressões para 1 ventilação (3:1). O objetivo é realizar 120 eventos por minuto, sendo 90 compressões e 30 ventilações.\n\n2. Concentração de oxigênio (FiO2): Diferentemente da fase inicial da ventilação (que, em recém-nascidos maiores de 34 semanas, começa com ar ambiente a 21 por cento), no momento em que a frequência cardíaca está abaixo de 60 batimentos por minuto e a massagem cardíaca é iniciada, a fração inspirada de oxigênio (FiO2) deve ser elevada imediatamente para 100 por cento. Isso é feito para garantir a máxima oferta de oxigênio aos tecidos durante a falha circulatória.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A ventilação durante a massagem cardíaca neonatal deve ser obrigatoriamente sincronizada (um-dois-três-ventila... um-dois-três-ventila). Além disso, a FiO2 de 60 por cento é insuficiente conforme o protocolo, que exige 100 por cento neste estágio.\n\nAlternativa b) Correta. Reflete exatamente o protocolo da SBP: relação de 3:1 sincronizada e uso de oxigênio a 100 por cento assim que a massagem cardíaca é iniciada.\n\nAlternativa c) Incorreta. A relação 15:2 é utilizada no suporte avançado de vida pediátrico (PALS) para lactentes e crianças fora do período neonatal imediato quando há dois socorristas, mas não se aplica à reanimação em sala de parto.\n\nAlternativa d) Incorreta. A relação 30:2 é o padrão para reanimação de adultos ou em pediatria (PALS) quando há apenas um socorrista. A FiO2 de 60 por cento também está incorreta para o procedimento de massagem cardíaca neonatal.\n\nGabarito: Letra b.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:05.011Z"
+  },
+  {
+    "id": "AJUDA_fb04b802-4b4a-4a67-bfb8-c02285eca0b7",
+    "originalId": "fb04b802-4b4a-4a67-bfb8-c02285eca0b7",
+    "statement": "Paciente será submetido a procedimento cirúrgico. Durante a avaliação pré-operatória, encontrou-se um tempo de protrombina (TP) alterado. Sugere-se a presença, mais provavelmente, de",
+    "options": [
+      {
+        "id": "A",
+        "text": "uso de heparina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "deficiência de fator VII.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "deficiência de fator IX.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "deficiência de fibrinogênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "doença de Von Willebrand.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Tempo de Protrombina (TP) é o exame laboratorial que avalia a via extrínseca e a via comum da cascata de coagulação. Para responder corretamente a esta questão, é necessário correlacionar os fatores de coagulação com as vias que eles compõem.\n\nAlternativa a: Incorreta. O uso de heparina não fracionada altera predominantemente o Tempo de Tromboplastina Parcial Ativada (TTPA), pois sua ação principal, via antitrombina III, ocorre sobre os fatores da via intrínseca e comum (especialmente os fatores II e X). Já as heparinas de baixo peso molecular habitualmente não alteram o TP ou o TTPA em doses terapêuticas.\n\nAlternativa b: Correta. O Fator VII é o único fator que participa exclusivamente da via extrínseca. Portanto, um prolongamento isolado do Tempo de Protrombina (TP) é o achado clássico da deficiência de Fator VII. Vale lembrar que, como o Fator VII tem a meia-vida mais curta entre os fatores dependentes de vitamina K, o TP também é o primeiro exame a se alterar em casos de uso inicial de varfarina ou deficiência precoce de vitamina K.\n\nAlternativa c: Incorreta. O Fator IX faz parte da via intrínseca da coagulação. Sua deficiência é conhecida como hemofilia B e resulta em um TTPA prolongado, mantendo o TP dentro da normalidade.\n\nAlternativa d: Incorreta. O fibrinogênio (Fator I) é o componente final da via comum, onde as vias intrínseca e extrínseca convergem. Dessa forma, uma deficiência significativa de fibrinogênio causaria alteração tanto no TP quanto no TTPA, e não apenas no TP.\n\nAlternativa e: Incorreta. A doença de von Willebrand é um distúrbio da hemostasia primária (envolvendo a adesão das plaquetas ao endotélio). O TP não avalia a hemostasia primária, portanto permanece normal. O TTPA pode estar alargado em alguns pacientes porque o fator de von Willebrand é o carregador do Fator VIII na circulação, mas o TP não sofre interferência.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:05.011Z"
+  },
+  {
+    "id": "AJUDA_fb060cea-136c-42f2-90cd-8772c66e3fb0",
+    "originalId": "fb060cea-136c-42f2-90cd-8772c66e3fb0",
+    "statement": "Pré-escolar de 3 anos, feminina, está internada para investigação de anemia. Os exames laboratoriais solicitados inicialmente estão listados abaixo:\n\n• Hemograma: HGB 6,0 g/dL / VCM 84 fL / HCM 30 pg / leucócitos: 9.830 mm3 / plaquetas: 234.000 mm3\n• Ferritina: 87 microg/L\n• Reticulócitos: 8,5%\n• DHL: 780 U/L\n• Bilirrubinas totais: 4,3 mg/dL/ bilirrubina indireta: 3,7 mg/dL\n• Vitamina B12 e ácido fólico sérico: dentro da normalidade\n\nApenas com os dados acima, são todas possíveis causas da anemia desta criança as citadas abaixo, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "esferocitose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "anemia de Fanconi.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "anemia falciforme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "deficiência de G6PD.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "anemia hemolítica autoimune.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, o primeiro passo é realizar a análise sindrômica dos dados laboratoriais apresentados.\n\nA paciente apresenta uma anemia importante (Hb 6,0 g/dL) que é normocítica (VCM 84 fL) e normocrômica (HCM 30 pg). O ponto crucial da análise está nos marcadores de atividade medular e de hemólise:\n1. Reticulócitos elevados (8,5%): indicam que a anemia é regenerativa, ou seja, a medula óssea está saudável e respondendo à perda periférica de hemácias.\n2. DHL e bilirrubina indireta elevados: são marcadores clássicos de hemólise (destruição de hemácias).\n3. Ferritina, vitamina B12 e ácido fólico normais: excluem as causas mais comuns de anemias carenciais.\n\nPortanto, o quadro é de uma anemia hemolítica. Vamos analisar as alternativas:\n\na) Esferocitose: Correta. É uma anemia hemolítica hereditária causada por defeitos nas proteínas da membrana da hemácia. Cursa com reticulocitose e aumento de marcadores de hemólise, sendo compatível com o quadro.\n\nb) Anemia de Fanconi: Incorreta (Gabarito). A anemia de Fanconi é uma síndrome de falência medular congênita. Diferentemente do caso apresentado, ela se caracteriza por ser uma anemia hiporregenerativa (reticulócitos baixos), geralmente macrocítica (VCM elevado) e, com a progressão da doença, evolui para pancitopenia (queda também de leucócitos e plaquetas). O quadro de hemólise e regeneração medular descrito na questão exclui esse diagnóstico.\n\nc) Anemia falciforme: Correta. É uma hemoglobinopatia que causa hemólise crônica grave. Apresenta-se exatamente com esse padrão laboratorial de anemia regenerativa e aumento de bilirrubina indireta e DHL.\n\nd) Deficiência de G6PD: Correta. É uma enzimopatia que, especialmente durante crises hemolíticas (desencadeadas por infecções ou alimentos), gera um quadro de hemólise aguda com reticulocitose compensatória.\n\ne) Anemia hemolítica autoimune: Correta. É uma condição em que anticorpos destroem as hemácias. O laboratório é típico de hemólise (aumento de DHL, BI e reticulócitos), encaixando-se perfeitamente nos dados fornecidos.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:05.011Z"
+  },
+  {
+    "id": "AJUDA_fb065578-532c-438a-acf5-26b3a490cb17",
+    "originalId": "fb065578-532c-438a-acf5-26b3a490cb17",
+    "statement": "A Estratégia de Saúde da Família Ribeirinha (ESFR) tem como característica",
+    "options": [
+      {
+        "id": "A",
+        "text": "atender comunidades ou moradores ribeirinhos das bacias dos rios Amazonas e São Francisco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "atender moradores ribeirinhos de todos os rios do território brasileiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "exercer seus atendimentos em embarcações que possuam, no mínimo, consultórios, laboratório de análises clínicas, centro cirúrgico e centro de diagnósticos por imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "atender moradores ribeirinhos das bacias dos rios da Amazônia Legal e pantanal sul-matogrossense.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "atender urgências nas embarcações e transportar os pacientes para as unidades de saúde municipais de referência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Estratégia de Saúde da Família Ribeirinha (ESFR) e as Unidades Básicas de Saúde Fluviais (UBSF) são modalidades de organização da Atenção Básica criadas para atender populações que vivem em áreas de difícil acesso geográfico, onde o deslocamento ocorre predominantemente por rios. O entendimento desta questão baseia-se na Política Nacional de Atenção Básica (PNAB).\n\nAlternativa a: Incorreta. Embora a bacia do rio Amazonas seja o foco principal devido à sua extensão e isolamento de comunidades, a bacia do rio São Francisco não está incluída no escopo normativo federal que define os critérios de implantação e incentivos financeiros específicos para a ESFR.\n\nAlternativa b: Incorreta. A estratégia não é aplicada a todos os rios do Brasil. Ela é uma política direcionada para regiões com vazios assistenciais críticos e barreiras geográficas extremas, sendo restrita a recortes territoriais específicos definidos pelo Ministério da Saúde.\n\nAlternativa c: Incorreta. Esta alternativa descreve a estrutura de um navio-hospital ou unidade de saúde de alta complexidade. A ESFR foca na Atenção Primária. As Unidades Básicas de Saúde Fluviais devem possuir, obrigatoriamente, consultório médico, de enfermagem e odontológico, além de espaço para vacinação e farmácia. Centro cirúrgico e centros de diagnóstico por imagem complexos não fazem parte da estrutura padrão da Atenção Básica.\n\nAlternativa d: Correta. De acordo com a PNAB (Portaria de Consolidação nº 2/2017), as Equipes de Saúde da Família Ribeirinhas e as Unidades Básicas de Saúde Fluviais são destinadas especificamente para o atendimento das populações residentes em áreas de difícil acesso na Amazônia Legal e no Pantanal Sul-Matogrossense. Essas regiões possuem particularidades que justificam um financiamento e uma logística diferenciados.\n\nAlternativa e: Incorreta. A principal função da ESFR não é o atendimento de urgência ou apenas o transporte de pacientes. Como parte da Estratégia de Saúde da Família, sua missão é garantir a atenção integral, longitudinal e preventiva. Embora possa realizar primeiros atendimentos e estabilização, o foco é o pré-natal, a puericultura, o acompanhamento de doenças crônicas e a promoção da saúde na própria comunidade.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:05.011Z"
+  },
+  {
+    "id": "AJUDA_fb06a66c-e456-4cea-b896-3b088aefd286",
+    "originalId": "fb06a66c-e456-4cea-b896-3b088aefd286",
+    "statement": "Mulher, 37 anos de idade, sem comorbidades, foi submetida à ultrassonografia de abdome total durante investigação de infertilidade. O exame demonstrou vesícula biliar com dimensão e parede de espessura normais com múltiplos microcálculos. Após o resultado do exame, foram realizados os seguintes exames laboratoriais: \n\nFA: 84 U/L \nGGT: 90 U/L \nTGO/AST: 34 U/L \nTGP/ALT: 32 U/L \n\nCom relação à colelitíase nesta paciente, qual é a melhor conduta e a sua correta justificativa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Seguimento clínico, por estar assintomática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Seguimento clínico devido à ausência de comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colangiorressonância para planejar a conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colecistectomia devido à microlitíase e idade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta uma paciente jovem (37 anos) com diagnóstico incidental de colelitíase do tipo microlitíase (múltiplos microcálculos), sem sintomas biliares clássicos e com exames laboratoriais sem alterações significativas nas enzimas canaliculares e transaminases (apenas uma elevação isolada e discreta de GGT).\n\nA análise das alternativas fundamenta-se nos seguintes pontos:\n\nAlternativas (a) e (b) Incorretas: Embora a regra geral para colelitíase assintomática seja a observação (conduta expectante), existem exceções importantes. A presença de microcálculos (microlitíase) aumenta significativamente o risco de migração biliar, o que pode resultar em complicações graves como pancreatite aguda biliar e colangite, mesmo em pacientes sem sintomas prévios.\n\nAlternativa (c) Incorreta: A colangiorressonância seria indicada caso houvesse forte suspeita de coledocolitíase (como dilatação de vias biliares ou alteração importante de bilirrubinas e fosfatase alcalina). No caso, os exames laboratoriais estão praticamente normais e a conduta cirúrgica já se justifica pela presença dos microcálculos na vesícula biliar.\n\nAlternativa (d) Correta: A colecistectomia videolaparoscópica está indicada nesta paciente por dois motivos principais: \n1. Microlitíase: Cálculos pequenos (geralmente menores que 3 a 5 mm) possuem maior facilidade de passar pelo ducto cístico e impactar na ampola de Vater, sendo o principal fator de risco para pancreatite aguda biliar. \n2. Idade: Por ser uma paciente jovem, ela possui uma longa expectativa de vida, o que aumenta o risco cumulativo de desenvolver complicações biliares ao longo dos anos. No contexto de provas de residência, a combinação de paciente jovem e microlitíase é uma indicação clássica de cirurgia profilática para evitar eventos graves futuros.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:05.011Z"
+  },
+  {
+    "id": "AJUDA_fb06ec4b-905e-4a0d-8d30-8d4e95c1babd",
+    "originalId": "fb06ec4b-905e-4a0d-8d30-8d4e95c1babd",
+    "statement": "Aioros, 7 anos, vem acompanhado por sua avó que se revela preocupada. O paciente reside com a avó, o avô e seu irmão mais velho, de 20 anos, que foi diagnosticado com tuberculose há cerca de 3 semanas. O irmão está realizando tratamento. após diagnóstico, mas a avó gostaria de saber o que fazer com seu neto menor. Ao exame, paciente encontra-se assintomático, sem perda de peso e cartão vacinal completo com presença de cicatriz de BCG em seu braço. A melhor conduta nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar radiografia de tórax e realizar prova tuberculínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar BAAR e aguardar resultado para início de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar tomografia de tórax e manter criança afastada de suas atividades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar tratamento para tuberculose com rifampicina e isoniazida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Observar, sem necessidade de tratamento, tendo em vista que está assintomático.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda a conduta frente a uma criança que teve contato próximo com um caso de tuberculose (TB) pulmonar ativa. De acordo com as diretrizes do Ministério da Saúde e da Sociedade Brasileira de Pediatria, todo contato de paciente bacilífero deve ser criteriosamente investigado, independentemente da presença de sintomas, para descartar doença ativa ou identificar a infecção latente.\n\nAlternativa a) Correta. Em contatos assintomáticos, o primeiro passo fundamental é realizar a triagem para descartar a tuberculose-doença e verificar a presença de infecção latente pelo Mycobacterium tuberculosis (ILTB). A radiografia de tórax é necessária para excluir alterações de parênquima ou adenomegalias mediastinais que sugeririam doença ativa. A prova tuberculínica (PPD) ou o ensaio de liberação de interferon-gama (IGRA) servem para avaliar se o sistema imune da criança já teve contato com o bacilo.\n\nAlternativa b) Incorreta. A pesquisa de BAAR (baciloscopia) é um exame microbiológico indicado para pacientes sintomáticos respiratórios que conseguem expectorar ou que apresentam alterações radiográficas suspeitas. Como a criança está assintomática e tem 7 anos (idade em que a coleta de escarro é difícil e a doença costuma ser paucibacilar), este não é o exame inicial de triagem.\n\nAlternativa c) Incorreta. A tomografia de tórax é um exame de maior custo e radiação, reservado para casos em que a radiografia é duvidosa ou quando há necessidade de detalhar complicações. O isolamento ou afastamento das atividades não é indicado para contatos assintomáticos, uma vez que a criança ainda não possui diagnóstico de doença e, mesmo se tivesse, crianças raramente são transmissoras de tuberculose.\n\nAlternativa d) Incorreta. Não se inicia o esquema de tratamento para tuberculose ativa (rifampicina, isoniazida, pirazinamida e etambutol) em um paciente assintomático sem confirmação diagnóstica. Se a investigação apontar para infecção latente (PPD positivo e RX normal), o tratamento indicado seria a quimioprofilaxia (geralmente com isoniazida ou rifampicina isoladas), e não o tratamento medicamentoso combinado para a doença.\n\nAlternativa e) Incorreta. Apenas observar é uma conduta inadequada e negligente neste contexto. Contatos domiciliares, especialmente crianças, têm alto risco de progressão para formas graves de tuberculose se a infecção latente não for identificada e tratada precocemente. A investigação é mandatória para decidir sobre a necessidade de tratamento preventivo.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Tuberculose na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:05.011Z"
+  },
+  {
+    "id": "AJUDA_fb12acfe-8882-4737-9b44-e921085195a1",
+    "originalId": "fb12acfe-8882-4737-9b44-e921085195a1",
+    "statement": "Mulher, 62 anos, hipertensa, com queixa de tosse e febre. Na suspeita de pneumonia, qual dos seguintes fatores é considerado um indicador importante para a necessidade de internação em pacientes com pneumonia adquirida na comunidade? E qual é o patógeno mais frequente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Idade inferior a 65 anos, Chlamydia pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pontuação CURB 65 inferior a 2, Streptococcus pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Frequência respiratória superior a 30 incursões por minuto, Streptococcus pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Presença de tosse seca, Haemophilus influenzae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Diagnóstico somente com radiografia de tórax, Mycoplasma pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A pneumonia adquirida na comunidade (PAC) exige uma avaliação de gravidade para determinar se o paciente deve ser tratado em casa ou no hospital. O principal instrumento utilizado para essa decisão é o escore CURB-65, que avalia Confusão mental, Ureia (maior ou igual a 43 mg/dL), Frequência Respiratória (maior ou igual a 30 irpm), Pressão arterial (Sistólica menor que 90 mmHg ou Diastólica menor ou igual a 60 mmHg) e Idade (maior ou igual a 65 anos).\n\nAlternativa a: Está incorreta porque a idade inferior a 65 anos não é um fator de risco para internação, mas sim um fator de proteção no escore CURB-65. Além disso, a Chlamydia pneumoniae é um agente atípico e não é o mais frequente na PAC.\n\nAlternativa b: Está incorreta, pois uma pontuação inferior a 2 no CURB-65 (0 ou 1 ponto) indica que o paciente tem baixo risco de morte e, geralmente, pode receber tratamento ambulatorial. A internação hospitalar passa a ser considerada a partir de uma pontuação igual ou superior a 2.\n\nAlternativa c: Está correta. A frequência respiratória elevada, especificamente maior ou igual a 30 incursões por minuto, é um sinal de desconforto respiratório e um dos critérios objetivos do CURB-65 (o R do acrônimo) para indicar gravidade e necessidade de internação. O Streptococcus pneumoniae, também conhecido como pneumococo, é o agente etiológico mais comum da pneumonia em todos os grupos etários e níveis de gravidade.\n\nAlternativa d: Está incorreta, porque a tosse seca é uma característica clínica que pode sugerir agentes atípicos, mas não serve como indicador de necessidade de internação. O Haemophilus influenzae é um agente comum, especialmente em pacientes com doenças pulmonares prévias, mas não é o mais frequente na população geral.\n\nAlternativa e: Está incorreta, pois a radiografia é fundamental para o diagnóstico de pneumonia, mas a realização do exame por si só não define a necessidade de internação; o que define a gravidade são os critérios clínicos e laboratoriais. O Mycoplasma pneumoniae é o agente atípico mais comum, porém não é o patógeno mais frequente de forma global na comunidade.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:05.011Z"
+  },
+  {
+    "id": "AJUDA_fb1745ef-370e-4c48-b6f8-948cef32a764",
+    "originalId": "fb1745ef-370e-4c48-b6f8-948cef32a764",
+    "statement": "Paciente de 55 anos com diagnóstico de fibrilação atrial crônica é indicado para uso de anticoagulante oral. Qual exame de acompanhamento é necessário para ajustar a dose?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemograma completo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tempo de protrombina (TP/INR).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Eletrocardiograma (ECG).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Creatinina sérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O manejo da anticoagulação oral na fibrilação atrial crônica, especialmente quando se utilizam os antagonistas da vitamina K (como a varfarina), exige um monitoramento rigoroso devido à estreita janela terapêutica e à grande variabilidade individual de resposta ao fármaco.\n\nAlternativa a: Incorreta. O hemograma completo permite monitorar os níveis de hemoglobina e hematócrito para identificar possíveis sangramentos ou avaliar o nível de plaquetas, mas não fornece informações sobre a atividade da cascata de coagulação necessária para o ajuste fino da dosagem do anticoagulante.\n\nAlternativa b: Correta. O Tempo de Protrombina (TP), expresso por meio do RNI (Relação Normatizada Internacional), é o exame padrão para monitorar a terapia com varfarina. O RNI padroniza os resultados laboratoriais, permitindo que o médico ajuste a dose para manter o paciente dentro da faixa terapêutica ideal (geralmente entre 2,0 e 3,0 na fibrilação atrial), o que garante a proteção contra fenômenos tromboembólicos com o menor risco possível de sangramentos.\n\nAlternativa c: Incorreta. O eletrocardiograma (ECG) é o exame utilizado para o diagnóstico da fibrilação atrial e para o acompanhamento da frequência cardíaca e do ritmo, mas ele não tem capacidade de mensurar o nível de anticoagulação no sangue.\n\nAlternativa d: Incorreta. A creatinina sérica avalia a função renal. Embora seja fundamental para decidir a indicação e a posologia inicial dos novos anticoagulantes orais (DOACs, como apixabana ou rivaroxabana), esses medicamentos não requerem monitoramento laboratorial periódico para ajuste de dose. Na questão, o ajuste de dose baseado em exame de acompanhamento refere-se classicamente ao uso da varfarina monitorada pelo RNI.\n\nConclusão: O exame de escolha para o ajuste da dose de anticoagulante oral (antagonista da vitamina K) é o Tempo de Protrombina acompanhado do cálculo do RNI.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Hemostasia",
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:05.011Z"
+  },
+  {
+    "id": "AJUDA_fb191c3f-8c7f-40dc-8ae4-267be4694692",
+    "originalId": "fb191c3f-8c7f-40dc-8ae4-267be4694692",
+    "statement": "Mulher de 52 anos, no terceiro dia após bypass gástrico em Y de Roux, apresenta taquicardia de 132 bpm, febre de 38,3 °C, dor abdominal difusa e defesa à palpação. Exame laboratorial mostra lactato de 3,8 mmol/L. Tomografia com contraste não está disponível no momento. Qual deve ser a conduta inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar cirurgia imediata para identificar e tratar possível deiscência anastomótica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Manter jejum, iniciar antibióticos de amplo espectro e reavaliar após exames de imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tentar fechamento endoscópico da fístula com clipes ou prótese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar drenagem percutânea guiada por imagem e manter suporte clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Encaminhar à UTI para monitorização intensiva e testes diagnósticos adicionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA paciente encontra-se no terceiro dia de pós-operatório de bypass gástrico em Y de Roux, um período crítico para o surgimento de complicações agudas. O quadro clínico é clássico de uma deiscência anastomótica (fístula) com peritonite:\n1. Taquicardia importante (132 bpm): É frequentemente o sinal mais precoce e sensível de vazamento anastomótico em pacientes bariátricos.\n2. Febre e dor abdominal com defesa: Indicam irritação peritoneal e resposta inflamatória sistêmica.\n3. Lactato elevado (3,8 mmol/L): Sugere má perfusão tecidual e gravidade clínica (sepse).\n\nDiante de uma paciente com sinais claros de peritonite e instabilidade clínica no pós-operatório imediato de cirurgia bariátrica, a conduta deve ser agressiva. A ausência de tomografia não deve retardar o tratamento definitivo.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: A suspeita de fístula anastomótica com peritonite generalizada é uma emergência cirúrgica. A reoperação imediata (preferencialmente por laparoscopia, se disponível e se o cirurgião for habilitado, ou laparotomia) é necessária para identificar o local do vazamento, realizar o fechamento/reparo da deiscência, lavar a cavidade abdominal e posicionar drenos. O atraso na reintervenção aumenta drasticamente a mortalidade.\n\nAlternativa (b) INCORRETA: O tratamento conservador com jejum e antibióticos é reservado para casos de fístulas subclínicas ou coleções muito pequenas e bloqueadas em pacientes estáveis. No caso descrito, a paciente tem sinais de peritonite difusa e instabilidade, o que contraindica a espera por exames de imagem ou reavaliação tardia.\n\nAlternativa (c) INCORRETA: O tratamento endoscópico (clipes, stents ou cola) tem ganhado espaço, mas é indicado para pacientes estáveis e, geralmente, para fístulas diagnosticadas um pouco mais tardiamente ou de forma crônica. Na vigência de peritonite aguda e sepse, a prioridade é a limpeza da cavidade e o controle do foco infeccioso por via cirúrgica.\n\nAlternativa (d) INCORRETA: A drenagem percutânea é uma excelente opção para coleções localizadas e bem delimitadas (abscessos) em pacientes que não apresentam peritonite generalizada. A dor abdominal difusa e a defesa à palpação sugerem que o conteúdo gastroentérico está livre na cavidade, o que não pode ser resolvido apenas com um dreno percutâneo.\n\nAlternativa (e) INCORRETA: Embora a paciente se beneficie do suporte em UTI, o encaminhamento não deve ser a conduta principal ou isolada. A monitorização e os testes adicionais não resolvem a causa-base (o vazamento). A \"conduta inicial\" deve focar na resolução do problema mecânico e infeccioso, que é cirúrgico. Cada hora de atraso na reoperação em casos de deiscência aumenta o risco de óbito.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:17:05.011Z"
+  }
+]

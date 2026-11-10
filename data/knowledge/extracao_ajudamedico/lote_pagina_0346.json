@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_5fb450e0-76b4-4c61-b9ff-05587dae76e1",
+    "originalId": "5fb450e0-76b4-4c61-b9ff-05587dae76e1",
+    "statement": "Um jovem de 14 anos é encaminhado ao pronto atendimento com queixa de náuseas e intensa dor escrotal súbita de forte intensidade com início há 4 horas. Ao exame físico, apresenta elevação do testículo esquerdo que se encontra edemaciado e extremamente doloroso à palpação. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibioticoterapia oral, antieméticos e reavaliação em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ultrassonografia testicular com doppler.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Escrototomia exploradora de urgência com orquidopexia bilateral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tomografia computadorizada com contraste endovenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Escrototomia exploradora com orquiectomia unilateral após melhora do quadro álgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Diagnóstico: o quadro é de torção do cordão espermático (torção testicular). O paciente é adolescente, com dor escrotal súbita e intensa, de início há 4 horas, acompanhada de náuseas. O testículo está elevado, edemaciado e muito doloroso. Essa é a apresentação clássica, e o pico de incidência ocorre entre 12 e 16 anos.\n\nConceitos importantes:\n- A torção é uma emergência cirúrgica. A janela de salvamento é de cerca de 6 horas, com taxa de preservação próxima de 90 a 100%. Entre 12 e 24 horas, a taxa cai bastante.\n- O diagnóstico é clínico. Se a suspeita é alta, não se deve atrasar a cirurgia para exames de imagem.\n- Achados clássicos: testículo elevado e horizontalizado (sinal de Angell), ausência do reflexo cremastérico e sinal de Prehn negativo (a elevação do testículo não alivia a dor).\n- O tratamento é a exploração escrotal com destorção e orquidopexia do testículo viável. Se o testículo estiver inviável, faz-se orquiectomia. A fixação do testículo contralateral é sempre indicada, porque a malformação em \"badalo de sino\" (inserção alta da túnica vaginal) costuma ser bilateral.\n- A destorção manual pode ser tentada como medida temporária (rotação \"como abrir um livro\", de medial para lateral), mas não substitui a cirurgia.\n\nAnálise das alternativas:\n\na) Incorreta. Antibiótico e reavaliação em 48 horas seriam condutas para epididimite, que tem início mais gradual, ocorre em outra faixa etária ou em pacientes sexualmente ativos e costuma cursar com febre ou sintomas urinários. Atrasar o tratamento na torção leva à perda do testículo.\n\nb) Incorreta nesta situação. O Doppler é útil quando a suspeita é intermediária ou incerta, pois mostra fluxo diminuído ou ausente. Aqui o quadro é típico e está dentro da janela de salvamento, então a conduta é explorar cirurgicamente sem atraso. O exame só se justifica se não retardar o tratamento.\n\nc) Correta. A exploração escrotal de urgência permite destorcer o cordão e avaliar a viabilidade do testículo. A orquidopexia bilateral previne novo episódio e protege o testículo contralateral. É a conduta padrão.\n\nd) Incorreta. A tomografia com contraste não tem papel no diagnóstico da torção. Atrasa o tratamento, expõe o paciente à radiação e não é o exame indicado para esse quadro.\n\ne) Incorreta. Esperar a melhora da dor não faz sentido, porque a dor só cede com a destorção ou com a necrose. Além disso, a orquiectomia só é feita se o testículo estiver necrótico após a destorção, e não de forma sistemática.\n\nResposta: letra c.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:35.886Z"
+  },
+  {
+    "id": "AJUDA_5fb62a85-31fa-4419-9871-2f34078782da",
+    "originalId": "5fb62a85-31fa-4419-9871-2f34078782da",
+    "statement": "Em um estudo, o Número Necessário para Tratar (NNT) foi calculado como 12 para prevenção de AVC. Qual é a interpretação mais correta nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "12 pacientes precisam ser tratados para garantir que nenhum deles tenha um AVC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "12 pacientes precisam ser tratados para prevenir um AVC em um paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O tratamento é eficaz para prevenir AVC em 12% dos pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento reduzirá em 12% o risco de AVC para cada paciente tratado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Número Necessário para Tratar (NNT) é um dos conceitos mais importantes da medicina baseada em evidências. Ele quantifica o esforço terapêutico necessário para que um resultado clínico específico seja alcançado. Matematicamente, o NNT é o inverso da Redução do Risco Absoluto (NNT = 1 / RRA).\n\nAnálise das alternativas:\n\na) Incorreta. O NNT não oferece uma garantia de proteção total para o grupo tratado. Tratar 12 pacientes significa que, estatisticamente, um evento (o AVC) será evitado. Os outros 11 pacientes tratados podem não ter o AVC por outros motivos ou podem vir a ter o AVC mesmo com o tratamento.\n\nb) Correta. Esta é a definição clássica de NNT. O valor indica quantos pacientes precisam receber a intervenção, por um período determinado, para que um desfecho negativo adicional seja evitado em comparação ao grupo controle. Portanto, se o NNT é 12, precisamos tratar 12 pessoas para prevenir um caso de AVC.\n\nc) Incorreta. O NNT não é uma medida de porcentagem de eficácia direta. Para encontrar a porcentagem relacionada à eficácia (Redução do Risco Absoluto), dividiríamos 1 pelo NNT. No caso de um NNT de 12, a Redução do Risco Absoluto seria de aproximadamente 8,3% (1/12), e não 12%.\n\nd) Incorreta. O NNT é uma medida populacional/coletiva e não descreve a redução de risco individual para cada paciente de forma percentual. A redução do risco individual é expressa pela Redução do Risco Relativo (RRR) ou pela Redução do Risco Absoluto (RRA). Além disso, o valor 12 refere-se ao número de pessoas, não a uma taxa de 12% de redução.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:35.886Z"
+  },
+  {
+    "id": "AJUDA_5fb80715-130c-4a6d-aa8c-cd4dcf8f36aa",
+    "originalId": "5fb80715-130c-4a6d-aa8c-cd4dcf8f36aa",
+    "statement": "Em estudo caso-controle sobre câncer de pulmão, o odds ratio para tabagismo foi 4,0. Qual interpretação é adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quatro vezes maior risco absoluto",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quatro vezes mais chance de exposição",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Quatro vezes maior mortalidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quatro vezes maior prevalência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quatro vezes mais chance de desenvolver câncer entre expostos",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O Odds Ratio (OR), ou Razão de Chances, é a medida de associação fundamental dos estudos de caso-controle. Quando o OR é igual a 4,0, interpretamos que a chance de o evento ocorrer entre os expostos é quatro vezes maior do que entre os não expostos.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O risco absoluto (incidência) só pode ser determinado em estudos nos quais conhecemos o denominador populacional total ao longo do tempo, como nos estudos de coorte. No caso-controle, o pesquisador define previamente o número de casos e controles, o que impede o cálculo direto da incidência e, consequentemente, do risco absoluto.\n\nAlternativa b: Incorreta. Embora o cálculo do OR no estudo de caso-controle parta da análise da exposição (comparando a chance de exposição entre doentes e não doentes), a finalidade da medida é expressar a força da associação entre o fator de risco e o desenvolvimento da patologia em termos de chance de adoecimento.\n\nAlternativa c: Incorreta. Mortalidade refere-se especificamente ao desfecho óbito. O OR em questão mede a associação com o diagnóstico de câncer de pulmão. Para falar em mortalidade, o estudo precisaria ter sido desenhado para avaliar o evento morte como desfecho primário.\n\nAlternativa d: Incorreta. A prevalência é a medida de frequência típica de estudos transversais (seccionais), que observam a população em um único ponto no tempo. Estudos de caso-controle buscam a relação de causalidade entre exposições passadas e o status de doença atual.\n\nAlternativa e: Correta. Esta alternativa apresenta a interpretação clínica e epidemiológica padrão do Odds Ratio. Como o estudo de caso-controle não permite calcular o risco diretamente (o que seria o Risco Relativo), utilizamos a \"chance\". Assim, os expostos (tabagistas) possuem quatro vezes mais chance de desenvolver o desfecho (câncer) do que os não expostos.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:35.886Z"
+  },
+  {
+    "id": "AJUDA_5fb936c0-abcf-40f9-9dc3-d124f2122471",
+    "originalId": "5fb936c0-abcf-40f9-9dc3-d124f2122471",
+    "statement": "Paciente masculino, vítima de acidente automobilístico, é admitido na sala de emergência consciente, estável hemodinamicamente e com discreta dor abdominal. O FAST (Focused Assessment with Sonography for Trauma – Avaliação Focada com Sonografia para Trauma) demonstrou moderada quantidade de líquido peri-hepático e periesplênico. Diante desse achado, a conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar tomografia de abdome.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Prescrever analgesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar lavado peritoneal diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar laparotomia exploradora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O ponto fundamental para resolver esta questão é avaliar a estabilidade hemodinâmica do paciente no contexto de um trauma abdominal. De acordo com os protocolos do ATLS (Advanced Trauma Life Support), a conduta diagnóstica e terapêutica é guiada prioritariamente pelo estado circulatório do paciente.\n\nAnálise das alternativas:\n\na) Correta. O paciente está consciente e hemodinamicamente estável. Em pacientes estáveis que apresentam líquido livre no FAST (Focused Assessment with Sonography for Trauma), o próximo passo padrão é a realização de uma tomografia computadorizada (TC) de abdome com contraste. A TC é o padrão-ouro para avaliar a extensão das lesões em órgãos sólidos (fígado, baço, rins), graduar a gravidade da lesão e verificar a presença de sangramento ativo (blush arterial). Isso possibilita decidir entre o tratamento não operatório (conservador), que é frequente em pacientes estáveis, e a intervenção cirúrgica/angioembolização.\n\nb) Incorreta. A analgesia é uma medida de suporte necessária para o conforto do paciente, mas não define a conduta diagnóstica ou terapêutica diante de um achado de líquido livre (provável hemoperitônio) após um acidente automobilístico. O foco principal deve ser identificar a fonte do sangramento.\n\nc) Incorreta. O lavado peritoneal diagnóstico (LPD) é um procedimento invasivo utilizado principalmente em pacientes hemodinamicamente instáveis nos quais o FAST não está disponível ou resultou em dúvida diagnóstica. Como o paciente está estável e o FAST já confirmou a presença de líquido, a TC é preferível por fornecer informações anatômicas detalhadas que o LPD não consegue oferecer.\n\nd) Incorreta. A laparotomia exploradora imediata no trauma abdominal está indicada para pacientes com instabilidade hemodinâmica (choque que não responde à reposição volêmica inicial) e FAST positivo, ou na presença de sinais óbvios de peritonite, evisceração ou ferimentos penetrantes específicos. Como o paciente está estável, a cirurgia imediata pode ser evitada, permitindo uma avaliação mais criteriosa por imagem.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:35.886Z"
+  },
+  {
+    "id": "AJUDA_5fbb65c1-998e-448f-8d81-f7fb06cf3647",
+    "originalId": "5fbb65c1-998e-448f-8d81-f7fb06cf3647",
+    "statement": "Paciente, 45 anos de idade, sem antecedentes familiares de câncer de mama, realiza mamografia de rastreamento. O exame evidencia um nódulo ovalado, de margens circunscritas, densidade semelhante ao parênquima mamário, localizado no quadrante superolateral da mama esquerda, medindo 1,4 cm, sem microcalcificações ou distorção arquitetural. A ultrassonografia complementar mostra nódulo sólido, ovalado, de margens regulares, orientação paralela à pele e ecotextura homogênea, sem vascularização significativa ao Doppler. Com base no sistema BI-RADS e nos achados descritos, assinale a alternativa que apresenta, corretamente, a conduta mais apropriada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar ressonância magnética de mamas, para melhor caracterização (BI-RADS 0).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acompanhar anualmente, pois se trata de um achado benigno (BI-RADS 2).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir o exame em 6 meses, para controle evolutivo da lesão (BI-RADS 3).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indicar biópsia percutânea, pois se trata de um achado indeterminado (BI-RADS 4).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Encaminhar para biópsia imediata, pois o achado é suspeito de malignidade (BI-RADS 5).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso:\n\nA questão descreve um achado radiológico em uma paciente de 45 anos realizando rastreamento de rotina. As características descritas na mamografia (nódulo ovalado, margens circunscritas, densidade semelhante ao parênquima) e na ultrassonografia (nódulo sólido, ovalado, margens regulares, orientação paralela à pele, ecotextura homogênea e sem vascularização) são critérios clássicos de uma lesão provavelmente benigna. De acordo com o sistema BI-RADS, essas características conferem um risco de malignidade inferior a 2%.\n\nExplicação das alternativas:\n\na) Incorreta. O BI-RADS 0 indica um exame incompleto, onde há necessidade de avaliação adicional, como incidências mamográficas complementares ou comparação com exames anteriores. No caso em questão, a ultrassonografia já foi realizada como complemento e a lesão foi completamente caracterizada, permitindo uma classificação definitiva.\n\nb) Incorreta. O BI-RADS 2 é atribuído a achados comprovadamente benignos, como cistos simples, fibroadenomas calcificados (em pipoca), linfonodos intramamários ou implantes de silicone. Um nódulo sólido, ovalado e circunscrito identificado pela primeira vez em um exame de rastreamento deve ser classificado inicialmente como BI-RADS 3, e não 2, devido à necessidade de observar sua estabilidade temporal.\n\nc) Correta. Os achados descritos (nódulo oval, circunscrito, mais largo do que alto/paralelo à pele) preenchem os critérios para BI-RADS 3 (provavelmente benigno). A conduta padrão para essa categoria é o acompanhamento de curto prazo para garantir a estabilidade da lesão. O protocolo habitual consiste em repetir o exame da mama afetada em 6 meses e, se estável, repetir bilateralmente em 12, 24 e às vezes 36 meses antes de reclassificar para BI-RADS 2.\n\nd) Incorreta. O BI-RADS 4 é indicado para achados suspeitos de malignidade (risco entre 2% e 95%), que exigem biópsia. Isso incluiria nódulos com margens não circunscritas (indistintas, microlobuladas ou irregulares) ou orientação não paralela à pele (mais alto do que largo), o que não corresponde à descrição benigna do caso.\n\ne) Incorreta. O BI-RADS 5 é reservado para achados altamente sugestivos de malignidade (risco superior a 95%), como nódulos espiculados, densos, com microcalcificações pleomórficas ou distorção arquitetural importante. O quadro clínico da paciente é o oposto dessa classificação.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:35.886Z"
+  },
+  {
+    "id": "AJUDA_5fbfb513-d1d0-4d3a-947d-82616b75e8c2",
+    "originalId": "5fbfb513-d1d0-4d3a-947d-82616b75e8c2",
+    "statement": "Um jovem de 18 anos foi atendido em uma unidade básica de saúde com um quadro de segundo episódio de uretrite gonocócica em 3 meses. \nApós aconselhamento pela equipe, o tratamento instituído foi:",
+    "options": [
+      {
+        "id": "A",
+        "text": "doxiciclina 100 mg, 1 comprimido via oral, 12/12h por 30 dias;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ceftriaxona 1g, intramuscular, dose única;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ceftriaxona 500 mg, intramuscular, dose única + azitromicina 500 mg, 4 comprimidos via oral, dose única;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ciprofloxacino 500 mg, via oral, 12/12h por 7 dias;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "azitromicina 500 mg, via oral, por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A conduta diante de um quadro de uretrite masculina deve sempre considerar a alta probabilidade de coinfecção pelos dois principais agentes etiológicos: *Neisseria gonorrhoeae* (gonococo) e *Chlamydia trachomatis* (clamídia). Devido ao aumento global da resistência bacteriana, especialmente do gonococo, os protocolos atuais do Ministério da Saúde do Brasil e de organizações internacionais recomendam a terapia combinada (terapia dupla).\n\nAlternativa a: Incorreta. A doxiciclina é uma opção para o tratamento da clamídia (geralmente 100 mg de 12/12h por 7 dias), mas não é eficaz como monoterapia para o gonococo. O período de 30 dias é excessivo e não possui fundamentação para casos de uretrite aguda.\n\nAlternativa b: Incorreta. Embora a ceftriaxona seja o antibiótico de escolha para tratar o gonococo, a sua administração isolada (monoterapia) não é recomendada. Isso ocorre porque ela não trata a clamídia, que frequentemente coexiste na uretrite, e o uso isolado favorece o desenvolvimento de cepas de gonococo resistentes.\n\nAlternativa c: Correta. Esta é a alternativa que melhor reflete as recomendações do Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para Infecções Sexualmente Transmissíveis. A ceftriaxona (cefalosporina de 3ª geração) é o agente mais eficaz contra o gonococo, enquanto a azitromicina garante a cobertura para *Chlamydia trachomatis*. A associação dos dois fármacos é a estratégia preconizada para aumentar a eficácia do tratamento e reduzir a pressão seletiva para resistência. Embora o protocolo padrão cite 1 g de azitromicina, a combinação com ceftriaxona torna esta a única opção terapêutica adequada entre as listadas.\n\nAlternativa d: Incorreta. O ciprofloxacino e outras quinolonas não são mais indicados para o tratamento de uretrite gonocócica devido aos altos níveis de resistência da *Neisseria gonorrhoeae* a essa classe de medicamentos em território brasileiro.\n\nAlternativa e: Incorreta. A azitromicina em monoterapia não deve ser utilizada para o tratamento do gonococo. O uso isolado de macrolídeos por tempo prolongado (10 dias) não é o protocolo para uretrite e contribui severamente para a resistência bacteriana, além de não ser o tratamento de escolha para o quadro descrito.\n\nEm resumo, o manejo da uretrite deve ser sindrômico ou voltado para os dois agentes principais, utilizando Ceftriaxona 500 mg (IM) associada à Azitromicina 1 g (VO), ambos em dose única.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Urologia",
+      "Cervicites"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:35.886Z"
+  },
+  {
+    "id": "AJUDA_5fc8f5d2-2a74-45cf-ad88-19ca350a59d6",
+    "originalId": "5fc8f5d2-2a74-45cf-ad88-19ca350a59d6",
+    "statement": "Durante a consulta pré-natal, uma gestante com 28 semanas apresentava-se assintomática e com pressão arterial de 112 mmHg x 70 mmHg. O exame de urina mostrou ausência de proteinúria significativa. A avaliação clínica foi compatível com a evolução adequada da gestação. Considerando esse caso, assinale a alternativa que corresponde à conduta adequada acerca da monitorização da pressão arterial na gestação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aferição em todas as consultas com técnica padronizada para detecção precoce de hipertensão gestacional",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aferição apenas no primeiro e no terceiro trimestres da gestação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aferição com aparelho automático, sem necessidade de calibragem periódica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Monitorização domiciliar como método exclusivo para rastreamento de hipertensão gestacional",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda um pilar fundamental da assistência pré-natal: o rastreio das síndromes hipertensivas da gestação. A hipertensão arterial é uma das principais causas de morbimortalidade materna e perinatal no Brasil e no mundo, o que justifica o rigor em sua monitorização.\n\nAlternativa (a) CORRETA: De acordo com as diretrizes do Ministério da Saúde e da Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO), a pressão arterial deve ser aferida em todas as consultas de pré-natal. A técnica deve ser padronizada (paciente sentada, braço ao nível do coração, manguito de tamanho adequado e repouso prévio) para garantir a fidedignidade dos valores e permitir o diagnóstico precoce de condições como a pré-eclâmpsia ou a hipertensão gestacional, que costumam se manifestar após a 20ª semana de gravidez.\n\nAlternativa (b) INCORRETA: A restrição da aferição apenas ao primeiro e terceiro trimestres é perigosa e insuficiente. A maioria das síndromes hipertensivas próprias da gestação surge a partir do segundo trimestre (após 20 semanas). Deixar de aferir a pressão no segundo trimestre impediria o diagnóstico oportuno e o início de intervenções necessárias para evitar complicações graves, como a eclâmpsia.\n\nAlternativa (c) INCORRETA: Embora aparelhos automáticos validados para gestantes possam ser utilizados, a afirmação de que não necessitam de calibração periódica está errada. Todo equipamento de medição de pressão arterial, seja ele aneroide ou digital/automático, precisa passar por manutenção e calibração regulares para evitar erros sistemáticos que levem a subdiagnósticos ou tratamentos desnecessários.\n\nAlternativa (d) INCORRETA: A monitorização residencial da pressão arterial (MRPA) ou o autocuidado podem ser ferramentas auxiliares valiosas, especialmente em pacientes com suspeita de \"hipertensão do avental branco\" ou para controle de pacientes já hipertensas. No entanto, tais métodos nunca devem ser utilizados como forma exclusiva de rastreamento. A aferição em consultório, realizada por um profissional de saúde qualificado, permanece como o padrão-ouro para o rastreio populacional no pré-natal.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:35.886Z"
+  },
+  {
+    "id": "AJUDA_5fcfd14f-fd0c-45f9-a8b6-e775ab19cdbf",
+    "originalId": "5fcfd14f-fd0c-45f9-a8b6-e775ab19cdbf",
+    "statement": "Homem de 29 anos procura atendimento médico relatando palpitações ocasionais. Ao exame físico, a ausculta cardíaca revela ritmo regular, bulhas normofonéticas, com presença de estalido mesossistólico melhor audível no foco mitral, seguido por sopro sistólico suave de intensidade variável que se prolonga até a sístole tardia. Os achados auscultatórios tornam-se mais intensos e mais próximos de B1 quando o paciente realiza a manobra de Valsalva. Assinale a alternativa que apresenta a anormalidade cardíaca MAIS PROVÁVEL nesse paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comunicação interatrial tipo ostium secundum",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Comunicação interventricular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estenose aórtica subvalvar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prolapso da valva mitral",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um paciente jovem com palpitações e achados clássicos de ausculta cardíaca: um estalido mesossistólico seguido por um sopro sistólico tardio no foco mitral. Esses achados são patognomônicos do Prolapso da Valva Mitral (PVM). O estalido ocorre quando as cordoalhas tendíneas se esticam abruptamente durante o prolapso na sístole, e o sopro representa a regurgitação mitral decorrente desse prolapso.\n\nDINÂMICA DAS MANOBRAS\n\nA manobra de Valsalva reduz o retorno venoso e, consequentemente, diminui o volume do ventrículo esquerdo. Com um ventrículo menor, o prolapso ocorre mais precocemente na sístole, fazendo com que o estalido e o sopro se desloquem para mais perto da primeira bulha (B1) e se tornem mais longos/intensos. Esse comportamento dinâmico é característico do PVM e da Cardiomiopatia Hipertrófica, diferenciando-os de outras valvulopatias.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. A Comunicação Interatrial (CIA) tipo ostium secundum apresenta tipicamente um desdobramento fixo da segunda bulha (B2) e um sopro sistólico de ejeção no foco pulmonar (devido ao hiperfluxo pulmonar), não apresentando estalido mesossistólico ou sopro mitral tardio.\n\nb) Incorreta. A Comunicação Interventricular (CIV) manifesta-se tipicamente com um sopro holossistólico (em toda a sístole) e rude, melhor audível na borda esternal esquerda baixa, sem a presença de estalido sistólico médio.\n\nc) Incorreta. A Estenose Aórtica Subvalvar (como na cardiomiopatia hipertrófica) apresenta sopro sistólico ejetivo que também se intensifica com a manobra de Valsalva, porém não apresenta o estalido mesossistólico característico, e o sopro costuma ser melhor ouvido na borda esternal esquerda, e não tipicamente no foco mitral com característica tardia.\n\nd) Correta. O Prolapso da Valva Mitral é a principal causa de estalido mesossistólico seguido de sopro sistólico tardio. A descrição da manobra de Valsalva (antecipação dos achados em direção à B1) confirma o diagnóstico, pois a redução do volume ventricular facilita o abaulamento da valva em direção ao átrio esquerdo mais cedo durante a contração ventricular.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Semiologia Cardíaca",
+      "Valvopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:35.886Z"
+  },
+  {
+    "id": "AJUDA_5fea5d2d-9f01-471b-ac34-41abfbc6e831",
+    "originalId": "5fea5d2d-9f01-471b-ac34-41abfbc6e831",
+    "statement": "Com relação à síndrome pré-menstrual (SPM) e ao transtorno disfórico pré-menstrual (TDPM), assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diferenciam-se porque o quadro clínico da SPM surge de uma a duas semanas antes do início da menstruação e se reduz após. Na TDPM, ele permanece o tempo todo, com piora pré-menstrual;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os esteroides ovarianos chegam até o SNC, pois ambos atuam em diversos receptores e são importantes para cognição e emoção; existirá um predomínio de progesterona em relação ao estradiol no TDPM;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estudos mostraram que as concentrações hormonais de estrogênio e progesterona são diferentes entre pacientes com SPM e mulheres que não possuem esse transtorno;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "No TDPM, há sintomas psíquicos como crises de irritabilidade, impaciência, vontade de chorar frequente, ansiedade, tendências suicidas e homicidas, além de sintomas físicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Síndrome Pré-Menstrual (SPM) e o Transtorno Disfórico Pré-Menstrual (TDPM) representam um espectro de sintomas físicos e emocionais que ocorrem ciclicamente na fase lútea do ciclo menstrual. Segue a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. A característica definidora tanto da SPM quanto do TDPM é o seu caráter cíclico e a remissão dos sintomas após o início da menstruação. Para o diagnóstico, os sintomas devem estar presentes na fase lútea (uma a duas semanas antes da menstruação) e desaparecer ou diminuir drasticamente logo após o início do fluxo menstrual (fase folicular). Se os sintomas persistem durante todo o ciclo, com apenas uma piora no período pré-menstrual, o diagnóstico provável é de exacerbação pré-menstrual de outro transtorno psiquiátrico (como depressão maior ou transtorno de ansiedade), e não TDPM.\n\nAlternativa b) Incorreta. Embora os esteroides ovarianos e seus metabólitos de fato atuem no Sistema Nervoso Central, influenciando o humor e a cognição, a fisiopatologia do TDPM não é explicada por um predomínio de progesterona em relação ao estradiol. A teoria mais aceita atualmente foca na sensibilidade anormal do cérebro às oscilações hormonais e à forma como metabólitos da progesterona, como a alopregnanolona, interagem com os receptores GABA-A em mulheres suscetíveis.\n\nAlternativa c) Incorreta. Este é um conceito fundamental para provas: mulheres com SPM ou TDPM não apresentam níveis hormonais de estrogênio ou progesterona diferentes daqueles das mulheres que não sofrem dessas condições. Os estudos mostram que as concentrações hormonais circulantes são normais. O transtorno ocorre devido a uma resposta neurobiológica anormal a variações hormonais que são fisiologicamente normais.\n\nAlternativa d) Correta. O TDPM é considerado a forma grave e incapacitante da SPM, estando classificado no DSM-5 (Manual Diagnóstico e Estatístico de Transtornos Mentais) dentro do grupo dos transtornos depressivos. O quadro clínico é dominado por sintomas psíquicos intensos, como irritabilidade severa, raiva, labilidade emocional marcante (choro fácil), ansiedade e tensão. Em casos extremos, a desregulação emocional pode levar a comportamentos impulsivos, crises de pânico e ideação suicida. Além disso, os sintomas físicos (como mastalgia e distensão abdominal) também estão presentes e contribuem para o prejuízo funcional da paciente.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Síndrome Pré-Menstrual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:35.886Z"
+  },
+  {
+    "id": "AJUDA_5fed09c2-77e8-41cd-8796-eb4aac531475",
+    "originalId": "5fed09c2-77e8-41cd-8796-eb4aac531475",
+    "statement": "Considerando a trombose venosa profunda (TVP), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A combinação de eco-Doppler colorido negativa seguida de D-dímero negativo permite descartar com segurança a hipótese da TVP, com exceção dos pacientes com câncer e TVP recorrente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O risco de embolia pulmonar é maior quando a TVP está localizada abaixo da veia poplítea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A avaliação clínica é suficiente para diagnosticar TVP nos casos em que os fatores de risco estão presentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os fatores de riscos estão relacionados exclusivamente a fatores adquiridos, como idade avançada, câncer, procedimentos cirúrgicos, imobilização, uso de estrogênio, ciclo gravídico-puerperal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Empastamento da panturrilha associado aos sinais de Homans e da bandeira são patognomônico de TVP.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): Esta alternativa está correta, pois aborda a estratégia de exclusão diagnóstica da TVP. O eco-Doppler venoso é o padrão-ouro inicial para diagnóstico por imagem, e o D-dímero possui um alto valor preditivo negativo. Quando ambos resultam negativos, a probabilidade pós-teste de TVP torna-se extremamente baixa, permitindo descartar o quadro com segurança na maioria dos pacientes. No entanto, em subgrupos de alto risco, como pacientes com câncer ativo ou histórico de TVP recorrente, a acurácia desses exames pode ser menor ou a probabilidade pré-teste é tão alta que uma investigação mais rigorosa ou repetida pode ser necessária, validando a exceção mencionada.\n\nAlternativa B (Incorreta): O risco de embolia pulmonar (EP) é significativamente maior quando a trombose é proximal, ou seja, localizada na veia poplítea ou acima dela (veias femorais e ilíacas). As tromboses distais (abaixo da poplítea, nas veias da panturrilha) apresentam um risco consideravelmente menor de fragmentação e migração para a circulação pulmonar, embora ainda possam progredir para o segmento proximal se não tratadas.\n\nAlternativa C (Incorreta): A avaliação clínica isolada é insuficiente para o diagnóstico de TVP. Sinais e sintomas como edema, dor e eritema são inespecíficos e podem estar presentes em diversas outras condições, como celulite, ruptura de cisto de Baker ou lesões musculares. Estudos mostram que menos de 30% dos pacientes com suspeita clínica confirmam o diagnóstico após exames de imagem. Portanto, a clínica serve para estratificar o risco (através do Escore de Wells), mas a confirmação exige exames complementares.\n\nAlternativa D (Incorreta): Os fatores de risco para TVP são divididos em adquiridos e hereditários. A alternativa peca ao usar a palavra \"exclusivamente\". Além dos fatores adquiridos citados (cirurgia, imobilização, câncer), existem as trombofilias hereditárias, como o Fator V de Leiden, a mutação do gene da protrombina e as deficiências de proteínas C, S e antitrombina, que aumentam significativamente o risco de eventos tromboembólicos.\n\nAlternativa E (Incorreta): Não existem sinais patognomônicos para TVP. O sinal de Homans (dor na panturrilha à dorsiflexão passiva do pé), o sinal da bandeira (menor mobilidade da panturrilha quando comparada ao lado contralateral) e o empastamento muscular são clássicos, porém possuem baixa sensibilidade e baixa especificidade. Eles podem ser encontrados em diversas outras patologias do membro inferior, não garantindo o diagnóstico de trombose por si sós.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:35.886Z"
+  }
+]

@@ -1,0 +1,523 @@
+[
+  {
+    "id": "AJUDA_694a8844-8cce-4650-b92c-38a05a31fe09",
+    "originalId": "694a8844-8cce-4650-b92c-38a05a31fe09",
+    "statement": "Um paciente de 45 anos, tabagista, apresentava diabetes mellitus e dislipidemia, porém não era hipertenso. Foi atendido no pronto-socorro com quadro de edema agudo do pulmão hipertensivo. Apresentou melhora clínica e foi liberado com prescrição de losartana e hidroclorotiazida. \nA hipertensão ficou refratária ao tratamento e o paciente desenvolveu insuficiência renal aguda, que foi associada ao uso da losartana. No exame físico, foi detectado um sopro em linha mamilar esquerda na altura da cicatriz umbilical. O doppler de carótidas mostrou obstrução de 50% à direita e 40% à esquerda.\nA doença em questão é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "doença de Kawasaki;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "arterite de Takayasu;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hiperaldosteronismo primário;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "estenose de artéria renal;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "feocromocitoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO quadro descreve um paciente com múltiplos fatores de risco cardiovascular (tabagismo, diabetes e dislipidemia) e evidência de aterosclerose sistêmica (obstrução em carótidas) que apresenta uma hipertensão arterial secundária. Três pontos são fundamentais para o diagnóstico neste caso:\n\n1. Edema agudo de pulmão hipertensivo: Também conhecido como *flash pulmonary edema* ou Síndrome de Pickering, é uma manifestação clássica da estenose de artéria renal, especialmente quando bilateral.\n\n2. Insuficiência renal aguda após uso de Losartana: A Losartana é um bloqueador do receptor de angiotensina (BRA). Em pacientes com estenose de artéria renal bilateral (ou em rim único), a pressão de filtração glomerular é mantida pela vasoconstrição da arteríola eferente, mediada pela Angiotensina II. Ao bloquear essa ação, ocorre uma queda abrupta na taxa de filtração glomerular, resultando em insuficiência renal aguda. Este é um sinal patognomônico de doença renovascular bilateral.\n\n3. Exame físico: O sopro abdominal (na altura da cicatriz umbilical) indica fluxo turbulento, reforçando a suspeita de obstrução na artéria renal.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A Doença de Kawasaki é uma vasculite de médios vasos que afeta predominantemente crianças. Sua principal complicação são os aneurismas de artérias coronárias. Não condiz com a idade do paciente ou com a deterioração renal após uso de Losartana.\n\nb) Incorreta. A Arterite de Takayasu é uma vasculite de grandes vasos (aorta e seus ramos) que atinge principalmente mulheres jovens. Embora possa causar estenose de artéria renal, o perfil deste paciente (45 anos, tabagista, diabético e com doença carotídea) aponta para a etiologia aterosclerótica, e não inflamatória.\n\nc) Incorreta. O hiperaldosteronismo primário é uma causa de hipertensão secundária, geralmente associada à hipocalemia (potássio baixo). Não justifica o sopro abdominal, nem a insuficiência renal aguda induzida por BRA, nem o edema agudo de pulmão súbito.\n\nd) Correta. A estenose de artéria renal de origem aterosclerótica explica perfeitamente o perfil do paciente, a presença de sopro, a hipertensão de difícil controle e, crucialmente, a perda de função renal ao iniciar terapia que inibe o sistema renina-angiotensina-aldosterona.\n\ne) Incorreta. O feocromocitoma é um tumor produtor de catecolaminas que causa crises de hipertensão, cefaleia, sudorese e palpitações. Não apresenta relação direta com sopro abdominal ou com a piora da função renal associada especificamente ao uso de Losartana.\n\nGABARITO: Alternativa (d).",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:51.112Z"
+  },
+  {
+    "id": "AJUDA_694b7290-1ae1-419f-9ce8-9a277d49c9e1",
+    "originalId": "694b7290-1ae1-419f-9ce8-9a277d49c9e1",
+    "statement": "A Colecistite Aguda Aitiásica (sem cálculos) é uma forma grave de inflamação da vesícula biliar que ocorre em pacientes críticos. Sobre os fatores de risco e apresentação clínica, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ocorre tipicamente em pacientes internados em UTI, vítimas de trauma grave, queimaduras extensas, nutrição parenteral total prolongada ou sepse, sendo o diagnóstico difícil devido ao rebaixamento de consciência, devendo-se suspeitar em casos de febre ou sepse de origem obscura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "É mais comum em mulheres jovens, obesas e férteis (4 Fs), apresentando-se com dor biliar típica e icterícia flutuante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento de escolha é sempre conservador com antibióticos, pois o risco cirúrgico nesses pacientes é proibitivo e a doença é autolimitada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A etiologia principal é a infecção viral por Hepatite A, e o quadro clínico é indistinguível da hepatite viral aguda, com elevação maciça de transaminases.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise detalhada da questão sobre Colecistite Aguda Alitiásica (CAA):\n\nAlternativa A (Correta): Esta alternativa descreve perfeitamente o perfil epidemiológico e o desafio diagnóstico da CAA. Ela ocorre em cerca de 5% a 10% dos casos de colecistite aguda, incidindo majoritariamente em pacientes graves (UTI, grandes queimados, pós-operatórios de grandes cirurgias, trauma e uso de nutrição parenteral total). O mecanismo fisiopatológico envolve estase biliar e isquemia da parede da vesícula. Como esses pacientes costumam estar sedados, intubados ou com delirium, eles não referem a dor clássica no hipocôndrio direito. Assim, a suspeita clínica deve surgir diante de um quadro de febre ou sepse sem foco evidente.\n\nAlternativa B (Incorreta): O perfil de mulheres jovens, obesas, férteis e na faixa dos 40 anos (conhecido como os 4 Fs: Female, Fat, Fertile, Forty) é o fator de risco clássico para a colelitíase (formação de cálculos de colesterol) e, consequentemente, para a colecistite calculosa aguda. A icterícia flutuante é um sinal mais sugestivo de coledocolitíase, e não de colecistite alitiásica.\n\nAlternativa C (Incorreta): A colecistite alitiásica é uma condição extremamente agressiva, com alto risco de evolução para gangrena e perfuração vesicular (visto que o paciente já está em um estado de hipoperfusão sistêmica). O tratamento requer intervenção. Embora o risco cirúrgico seja alto, o tratamento de escolha para pacientes que não toleram a cirurgia (colecistectomia) é a colecistostomia percutânea guiada por imagem, e não apenas o tratamento conservador com antibióticos. A doença não é autolimitada e possui alta mortalidade se não tratada precocemente.\n\nAlternativa D (Incorreta): A principal etiologia da colecistite alitiásica está relacionada à estase e isquemia em pacientes críticos, e não à infecção por vírus da hepatite A. Embora algumas infecções virais possam causar edema de parede da vesícula, a CAA discutida em provas de residência refere-se ao quadro de inflamação aguda grave no paciente de UTI. Além disso, a elevação maciça de transaminases é característica de hepatite aguda ou isquêmica, não sendo o achado típico ou definidor da colecistite.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:51.113Z"
+  },
+  {
+    "id": "AJUDA_69565394-a7f2-4c2d-a968-bec3b8de44f0",
+    "originalId": "69565394-a7f2-4c2d-a968-bec3b8de44f0",
+    "statement": "A pré-eclâmpsia complicada com síndrome HELLP é caracterizada por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "trombocitopenia e convulsões maternas;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "disfunção hepática e elevação da glicemia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hemólise, disfunção hepática e trombocitopenia;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "convulsões maternas, hemólise e hiperglicemia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "diminuição dos reflexos profundos e hemólise.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A síndrome HELLP representa uma das formas mais graves de complicação do espectro da pré-eclâmpsia. O termo é um acrônimo derivado do inglês que descreve os seus três critérios diagnósticos laboratoriais fundamentais: H (Hemolysis - Hemólise), EL (Elevated Liver enzymes - Elevação de enzimas hepáticas) e LP (Low Platelets - Plaquetopenia ou Trombocitopenia).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A trombocitopenia é um componente da síndrome, porém as convulsões maternas são a característica definidora da eclâmpsia. Embora a síndrome HELLP e a eclâmpsia possam coexistir na mesma paciente, as convulsões não fazem parte da definição da síndrome HELLP.\n\nAlternativa b: Incorreta. A disfunção hepática está correta, mas a alteração glicêmica não faz parte dos critérios. Em casos de insuficiência hepática aguda grave ou no diagnóstico diferencial com esteatose aguda da gravidez, o que se observa é a hipoglicemia, e não a elevação da glicemia.\n\nAlternativa c: Correta. Esta opção elenca precisamente os três pilares da tríade diagnóstica: a hemólise microangiopática (caracterizada por aumento de LDH acima de 600 U/L, queda de haptoglobina, aumento de bilirrubina indireta e presença de esquizócitos no sangue periférico), a disfunção hepática (elevação de transaminases, habitualmente AST/TGO acima de 70 U/L) e a trombocitopenia (contagem de plaquetas inferior a 100.000/mm³).\n\nAlternativa d: Incorreta. Combina convulsões (eclâmpsia) e hiperglicemia, elementos que não compõem a definição da síndrome HELLP.\n\nAlternativa e: Incorreta. A diminuição dos reflexos osteotendinosos profundos (hiporreflexia) é um sinal clínico clássico de intoxicação por sulfato de magnésio, medicamento utilizado justamente para a prevenção de convulsões em pacientes com pré-eclâmpsia grave. A pré-eclâmpsia em si, devido à irritabilidade do sistema nervoso central, cursa tipicamente com hiperreflexia.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:51.113Z"
+  },
+  {
+    "id": "AJUDA_696a116e-9935-4931-85d5-05a9ee15cfff",
+    "originalId": "696a116e-9935-4931-85d5-05a9ee15cfff",
+    "statement": "Uma UBS começa a ser procurada por trabalhadores de uma empresa de porte médio que apresentam lombalgia importante. Ao conversar com esses trabalhadores, a equipe de saúde fica sabendo que eles carregam peças entre 25 a 50 quilos por, aproximadamente, 20 metros para posicioná-las e trabalhar nelas. Relatam que antes havia três carrinhos que transportavam as peças, o que os obrigava a carregá-las apenas para posicioná-las, mas eles quebraram um a um. Considerando o contexto, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A equipe de saúde deve enviar uma carta à empresa solicitando que ela confirme as informações dadas pelos trabalhadores, nominando-os para que a empresa saiba em que setores eles trabalham.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas o Ministério Público do Trabalho tem a competência para fiscalizar as condições de trabalho da empresa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Como a legislação do SUS não contempla atribuições do SUS nos ambientes de trabalho, a UBS deve apenas prestar assistência aos trabalhadores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A equipe deve encaminhar os trabalhadores a um ambulatório de especialidade e notificar a auditoria fiscal do trabalho, autoridade competente para investigar ambientes de trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A equipe deve prestar assistência aos trabalhadores e notificar a vigilância em saúde do trabalhador para investigar a empresa quanto às condições de trabalho.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A resolução desta questão exige o conhecimento das competências do Sistema Único de Saúde (SUS) no âmbito da Saúde do Trabalhador, conforme definidas pela Constituição Federal e pela Lei 8.080/90.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A equipe de saúde jamais deve enviar nomes de trabalhadores para a empresa, pois isso viola o sigilo profissional e expõe o trabalhador a riscos de retaliação ou demissão por parte do empregador. O canal de comunicação com a empresa para fins de fiscalização deve ser institucional, por meio dos órgãos de vigilância, preservando a identidade dos pacientes.\n\nAlternativa B: Incorreta. Embora o Ministério Público do Trabalho tenha um papel fundamental na defesa dos direitos coletivos, ele não é o único com competência para fiscalizar. A Vigilância em Saúde do Trabalhador (VISAT), inserida no SUS, possui autoridade legal para realizar inspeções e intervir em ambientes de trabalho que ofereçam riscos à saúde.\n\nAlternativa C: Incorreta. Esta alternativa contraria a legislação brasileira. A Constituição Federal (Artigo 200) e a Lei Orgânica da Saúde (Lei 8.080/90) estabelecem explicitamente que é competência do SUS a execução de ações de vigilância sanitária, epidemiológica e de saúde do trabalhador, incluindo a fiscalização de ambientes de trabalho.\n\nAlternativa D: Incorreta. Embora a Auditoria Fiscal do Trabalho (ligada ao Ministério do Trabalho e Emprego) seja uma autoridade competente, a conduta prioritária dentro da rede de saúde do SUS é acionar a Vigilância em Saúde do Trabalhador (VISAT) ou o Centro de Referência em Saúde do Trabalhador (CEREST). Além disso, nem todo caso de lombalgia exige encaminhamento imediato para uma especialidade; a Atenção Básica deve manejar o quadro clínico e investigar a causa ocupacional.\n\nAlternativa E: Correta. Esta alternativa descreve perfeitamente o papel da Atenção Básica em Saúde do Trabalhador. A equipe deve realizar a assistência clínica (diagnóstico e tratamento da lombalgia) e, simultaneamente, atuar na prevenção e promoção por meio da notificação à Vigilância em Saúde do Trabalhador (VISAT). A VISAT tem a atribuição de investigar o ambiente de trabalho (neste caso, o esforço físico excessivo por falta de equipamentos de transporte) e exigir as adequações necessárias para evitar que outros trabalhadores adoeçam.\n\nEm resumo, diante de um agravo relacionado ao trabalho, o médico deve: 1) Prestar assistência; 2) Notificar o agravo (nos sistemas de informação específicos); 3) Acionar a vigilância para intervenção na fonte do problema.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:51.113Z"
+  },
+  {
+    "id": "AJUDA_696dcb71-855d-45a6-bf3c-6ec8e538c2e1",
+    "originalId": "696dcb71-855d-45a6-bf3c-6ec8e538c2e1",
+    "statement": "Homem de 57 anos desenvolveu lesão por pressão sacral grau 4 após internação prolongada em unidade de terapia intensiva para tratamento de choque séptico. A lesão é bem delimitada, com presença de tecido desvitalizado no leito e dimensões de 18 x 12 cm. Quais as próximas condutas indicadas no tratamento deste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Treinamento de decúbito ventral, desbridamento cirúrgico, terapia por pressão negativa e rotação de retalhos locais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Treinamento de decúbito lateral, desbridamento cirúrgico, matriz dérmica acelular e enxerto de pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Treinamento de decúbito ventral, sulfadiazina de prata 1%, matriz dérmica acelular e enxerto de pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Treinamento de decúbito lateral, sulfadiazina de prata 1%, terapia por pressão negativa e rotação de retalhos locais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta uma lesão por pressão (LP) estágio 4 na região sacral. Este estágio é caracterizado por perda total da espessura dos tecidos, com exposição de fáscia, músculo ou osso. Lesões deste tamanho (18 x 12 cm) e profundidade, especialmente com tecido desvitalizado, exigem uma abordagem multidisciplinar e cirúrgica sistemática. Os pilares do tratamento são: alívio da pressão, desbridamento, controle bacteriano/exsudato e reconstrução definitiva.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nO treinamento de decúbito ventral é fundamental para eliminar completamente a pressão sobre a região sacral, permitindo a cicatrização e o sucesso de futuras intervenções. O desbridamento cirúrgico é a conduta de escolha para remover o tecido desvitalizado em lesões extensas e profundas, transformando uma ferida crônica em aguda. A terapia por pressão negativa (VAC) é uma excelente ferramenta para preparar o leito da ferida, pois reduz o edema, remove exsudato, estimula a angiogênese e a formação de tecido de granulação em cavidades. Por fim, a rotação de retalhos locais é o padrão-ouro para o fechamento de lesões sacrais estágio 4, pois fornece tecido vascularizado e coxim gorduroso/muscular para proteger as proeminências ósseas, oferecendo maior resistência a recidivas do que um simples enxerto.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa B: Embora o decúbito lateral ajude, o ventral é mais eficaz para isolar a área sacral. O erro principal reside na indicação de enxerto de pele. Enxertos de pele em áreas de proeminência óssea (como o sacro) costumam falhar por falta de acolchoamento e suprimento sanguíneo adequado, apresentando altíssimas taxas de recidiva em pacientes com lesão por pressão.\n\nAlternativa C: A sulfadiazina de prata é um agente antimicrobiano tópico mais utilizado em queimaduras e não substitui a necessidade de desbridamento cirúrgico em uma lesão estágio 4 com tecido desvitalizado. Além disso, como mencionado anteriormente, matriz dérmica seguida de enxerto de pele não é a conduta de eleição para cobertura de úlceras sacrais profundas devido à fragilidade do tecido resultante.\n\nAlternativa D: Apesar de citar a rotação de retalhos e a pressão negativa, o uso da sulfadiazina de prata 1% como conduta principal para lidar com o tecido desvitalizado está incorreto. Lesões bem delimitadas com tecido desvitalizado extenso requerem desbridamento mecânico/cirúrgico imediato para controle de possível foco infeccioso e limpeza do leito, sendo a conduta tópica isolada insuficiente.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Cicatrização de Feridas",
+      "Cirurgia Plástica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:51.113Z"
+  },
+  {
+    "id": "AJUDA_6980ac36-998a-4544-99a5-4e93c2e9aa5c",
+    "originalId": "6980ac36-998a-4544-99a5-4e93c2e9aa5c",
+    "statement": "Uma paciente de 44 anos e com diagnóstico de hepatite C, não tratada, desenvolveu quadro de porfiria. O tratamento instituído consistiu em antivirais de ação direta contra o HCV, hidroxicloroquina e flebotomias regulares. \nO tipo de porfiria em questão é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "porfiria aguda intermitente;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "protoporfiria eritropoiética;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "porfiria cutânea tardia;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "porfiria variegata;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "protoporfiria ligada ao X.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um caso clássico de porfiria cutânea tardia (PCT) em uma paciente com hepatite C. A PCT é a porfiria mais comum na prática clínica e possui uma forte associação com fatores que causam estresse oxidativo ou sobrecarga de ferro no fígado, sendo o vírus da hepatite C (HCV) um dos principais gatilhos ambientais.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A porfiria aguda intermitente (PAI) é uma porfiria hepática aguda que se manifesta clinicamente com crises de dor abdominal intensa, distúrbios psiquiátricos e neuropatia periférica. Diferentemente da PCT, a PAI não apresenta lesões cutâneas fotossensíveis e seu tratamento não envolve flebotomias ou hidroxicloroquina, mas sim a oferta de carboidratos e infusão de hematina.\n\nAlternativa (b) Incorreta. A protoporfiria eritropoiética (PPE) manifesta-se geralmente na infância com dor, queimação e edema imediatos após exposição solar, sem a formação de bolhas típicas da PCT. O defeito ocorre na enzima ferroquelatase e não há associação clássica com o vírus da hepatite C ou tratamento com flebotomias.\n\nAlternativa (c) Correta. A porfiria cutânea tardia (PCT) ocorre pela deficiência da enzima uroporfirinogênio descarboxilase (UROD) no fígado. Clinicamente, manifesta-se por fragilidade cutânea, bolhas, erosões e crostas em áreas expostas ao sol (como o dorso das mãos). O diagnóstico é fortemente sugerido pela tríade de associação com hepatite C, alcoolismo ou sobrecarga de ferro. O tratamento padrão envolve a redução do ferro hepático via flebotomias e o uso de antimaláricos (hidroxicloroquina) em doses baixas para solubilizar e excretar as porfirinas. O tratamento do HCV com antivirais de ação direta (DAAs) também auxilia na remissão do quadro.\n\nAlternativa (d) Incorreta. A porfiria variegata é considerada uma porfiria mista, pois pode apresentar tanto sintomas neuroviscerais agudos (como na PAI) quanto lesões cutâneas bolhosas (como na PCT). Embora as lesões de pele sejam semelhantes, a associação epidemiológica com hepatite C e a resposta específica ao esquema terapêutico citado direcionam o diagnóstico para a PCT.\n\nAlternativa (e) Incorreta. A protoporfiria ligada ao X é uma condição genética rara, bioquimicamente muito similar à protoporfiria eritropoiética. Ela causa fotossensibilidade dolorosa aguda desde a infância, sem relação com doenças hepáticas adquiridas ou o manejo terapêutico descrito no enunciado.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Hepatites Virais",
+      "Miscelânea"
+    ],
+    "difficulty": 94.85550240637237,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:51.113Z"
+  },
+  {
+    "id": "AJUDA_6981f232-6921-4841-a0a6-628b80df095f",
+    "originalId": "6981f232-6921-4841-a0a6-628b80df095f",
+    "statement": "No que diz respeito ao trauma cervical, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uma radiografia cervical lateral de qualidade deve incluir da primeira (C1) à sétima (C7) vértebra cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O choque neurogênico resulta da perda do tônus vasomotor e da inervação parassimpática do coração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O resultado da perda do tônus vasomotor resulta na vasoconstrição dos vasos sanguíneos e, consequentemente, na hipertensão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A paraplegia completa resulta de lesão ao nível da coluna cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quando a coluna vertebral é lesada, a principal preocupação deve ser a possibilidade de insuficiência respiratória.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa a: Incorreta. Para que uma radiografia cervical lateral seja considerada de qualidade técnica adequada no trauma, ela deve permitir a visualização desde a base do crânio (C1) até a transição cervicotorácica, incluindo obrigatoriamente a borda superior da primeira vértebra torácica (T1). A visualização apenas até C7 é considerada insuficiente, pois muitas lesões graves ocorrem justamente na junção C7-T1.\n\nAlternativa b: Incorreta. O choque neurogênico é causado pela perda do tônus simpático (vasomotor) e pela manutenção ou predomínio do tônus parassimpático (vagal) sobre o coração. Isso resulta na combinação de hipotensão e bradicardia. A alternativa afirma erroneamente que ocorre perda da inervação parassimpática.\n\nAlternativa c: Incorreta. A perda do tônus vasomotor gera vasodilatação periférica generalizada, o que reduz a resistência vascular e causa hipotensão arterial severa. A vasoconstrição e a hipertensão seriam os efeitos opostos ao que ocorre no choque neurogênico.\n\nAlternativa d: Incorreta. O termo correto para o comprometimento motor e sensitivo decorrente de lesão na coluna cervical é tetraplegia (ou quadriplegia), que afeta os quatro membros e o tronco. A paraplegia ocorre em lesões situadas abaixo do nível cervical, ou seja, na coluna torácica ou lombar, poupando os membros superiores.\n\nAlternativa e: Correta. Esta alternativa está alinhada com as prioridades do ATLS (Advanced Trauma Life Support). Em qualquer trauma de coluna vertebral, especialmente cervical, a maior preocupação imediata deve ser a manutenção da ventilação e oxigenação. Lesões cervicais altas (entre C3 e C5) podem paralisar o diafragma devido à lesão do nervo frênico, enquanto lesões em níveis inferiores comprometem os músculos intercostais e acessórios, levando à insuficiência respiratória aguda e risco de morte iminente.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:51.113Z"
+  },
+  {
+    "id": "AJUDA_698d0b03-d8a5-4b99-b72e-87a92343554e",
+    "originalId": "698d0b03-d8a5-4b99-b72e-87a92343554e",
+    "statement": "Durante a visita no alojamento conjunto, uma puérpera está se queixando que seu filho só fica no peito, chora a cada 2-3 horas e demora 15-20 minutos mamando, além de ainda não ter evacuado. Recém-nascido de 37 semanas, peso de nascimento de 3150g e completando 24h de vida no momento da sua visita. Quais as orientações para essa mãe:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As mamadas nessa fase serão assim mesmo e o aleitamento deve ser em livre demanda e podemos esperar até no máximo 48h de vida pela primeira evacuação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "As mamadas nessa fase serão assim mesmo e o aleitamento deve ser em livre demanda e devemos solicitar um Rx de abdômen para iniciar investigação pela ausência de mecônio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar que o intervalo entre as mamadas será esse mesmo nesta fase, mas o tempo de mamada deve ser menor para não o Rn \"chupetar\" o seio materno e solicitar Rx de abdômen para investigação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientar que o intervalo entre as mamadas será esse mesmo nesta fase e podemos esperar até no máximo 72h de vida pela primeira evacuação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o manejo clínico de um recém-nascido (RN) a termo nas primeiras 24 horas de vida, focando em dois pilares da neonatologia: o estabelecimento do aleitamento materno e o tempo fisiológico para a eliminação do mecônio.\n\nAnálise das alternativas:\n\nAlternativa (a) - Correta: O comportamento relatado pela mãe é absolutamente normal para um recém-nascido de 24 horas. O aleitamento deve ser realizado em livre demanda, o que significa que não se deve fixar horários ou duração das mamadas; o bebê deve mamar sempre que demonstrar sinais de fome. O intervalo de 2 a 3 horas e a duração de 15 a 20 minutos são compatíveis com a capacidade gástrica reduzida do RN e a necessidade de estímulo para a apojadura (descida do leite). Quanto à parte intestinal, a literatura pediátrica e as diretrizes da Sociedade Brasileira de Pediatria estabelecem que o prazo normal para a eliminação do mecônio (primeira evacuação) é de até 48 horas de vida. Como o bebê tem apenas 24 horas, a conduta correta é tranquilizar a mãe e aguardar.\n\nAlternativa (b) - Incorreta: Não há indicação de exames de imagem (Rx de abdômen) para um RN de 24 horas que ainda não evacuou, desde que ele esteja clinicamente estável, sem distensão abdominal importante ou vômitos. A investigação só é iniciada caso o prazo de 48 horas seja ultrapassado.\n\nAlternativa (c) - Incorreta: Orientar a redução do tempo de mamada para o bebê não \"chupetar\" o seio é uma conduta inadequada e prejudicial ao aleitamento. Nos primeiros dias, a sucção frequente e prolongada é essencial para estimular a produção de leite e garantir que o bebê receba o colostro. Além disso, como mencionado, o Rx de abdômen é desnecessário neste momento.\n\nAlternativa (d) - Incorreta: Embora a orientação sobre as mamadas esteja correta, o prazo de 72 horas para a primeira evacuação está errado. O limite fisiológico de segurança é de 48 horas. Aguardar até 72 horas sem intervenção ou investigação pode atrasar o diagnóstico de condições como a doença de Hirschsprung (megacólon agangliônico congênito) ou íleo meconial.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:51.113Z"
+  },
+  {
+    "id": "AJUDA_6991721d-476c-4840-abef-b3d86e58bbab",
+    "originalId": "6991721d-476c-4840-abef-b3d86e58bbab",
+    "statement": "Recém-nascido com 11 dias, sexo masculino, é levado à Unidade de Pronto Atendimento com história de 1 dia de febre e apatia, e há 1 hora ter iniciado com pausas respiratórias. Pais negam coriza, obstrução nasal e tosse. Nasceu com 39 semanas, parto normal, 3kg, Apgar 8/9, e recebeu alta hospitalar com 48 horas, em aleitamento materno exclusivo. Ao exame, RN está corado, acianótico, ictérico +/+4, hipoativo e reativo, apresentando pausas respiratórias de 15- 20 segundos. Fígado a 2 cm do rebordo costal direito. Olho direito com hiperemia conjuntival e secreção amarelada. A figura abaixo mostra os achados na pele. Restante do exame sem alterações.\n\nQual informação complementar fornecida pela mãe é mais relevante para definir a etiologia deste quadro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Relato de exantema no primeiro trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso de penicilina benzatina na gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Histórico vacinal materno incompleto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "História de lesões genitais na gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve um recém-nascido com 11 dias de vida apresentando sinais de infecção sistêmica grave (febre, apatia, pausas respiratórias/apneia) associados a acometimento ocular (conjuntivite) e hepático (hepatomegalia e icterícia).\n\nA imagem anexada é fundamental para o diagnóstico: evidencia um agrupamento de vesículas sobre base eritematosa (lesões herpetiformes em cacho). Esse achado, somado ao acometimento ocular e aos sinais sistêmicos no 11º dia de vida, é altamente sugestivo de Herpes Neonatal por Vírus Herpes Simples (HSV). A principal forma de contágio ocorre durante a passagem pelo canal de parto (transmissão intraparto/vertical).\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. O relato de exantema no primeiro trimestre sugere infecções congênitas do grupo TORCH (como rubéola ou citomegalovírus), que tipicamente se manifestam logo ao nascimento com malformações, microcefalia, restrição de crescimento e petéquias, e não com surgimento agudo de vesículas agrupadas na segunda semana de vida.\n\nAlternativa B - Incorreta. O uso de penicilina benzatina remete ao tratamento da sífilis materna. A sífilis congênita precoce pode cursar com hepatomegalia, icterícia e lesões de pele (como pênfigo palmoplantar e rinite sifilítica), mas não se apresenta com vesículas agrupadas em base eritematosa.\n\nAlternativa C - Incorreta. Embora o histórico vacinal materno seja importante para diversas infecções, não há vacina disponível para o vírus Herpes Simples (HSV). Além disso, a varicela neonatal costuma apresentar exantema pleomórfico e disseminado, diferindo do padrão localizado e agrupado visto na imagem.\n\nAlternativa D - Correta. A transmissão do HSV para o recém-nascido ocorre predominantemente durante o parto vaginal por contato direto com secreções genitais maternas infectadas. Portanto, a história de lesões genitais herpéticas (vesículas ou úlceras) na gestação ou periparto é o dado epidemiológico mais relevante para corroborar o diagnóstico de herpes neonatal.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas",
+      "Dermatoses Vesicobolhosas",
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/fd9447d188539348d9ac35e226d89ca0f7b00216456b03c760d434d0e418d869.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_6991721d-476c-4840-abef-b3d86e58bbab_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:51.515Z"
+  },
+  {
+    "id": "AJUDA_69917ad6-a2c6-4fbd-8247-e2b1c6a9d339",
+    "originalId": "69917ad6-a2c6-4fbd-8247-e2b1c6a9d339",
+    "statement": "Durante uma cirurgia vascular de grande porte, com clampagem aórtica infrarrenal prolongada, um paciente apresenta oligúria progressiva pós-operatória; a creatinina apresenta elevação de 0,9 para 2,1 mg/dL em 48 horas e hipercalemia leve (5,6 mEq/L). Não há evidência de hipovolemia clínica.\n\nQuais são o mecanismo provável da lesão renal e a melhor conduta técnica/cirúrgica para prevenção em pacientes futuros?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obstrução pós-renal por cateter vesical de demora mal posicionado — trocar cateter e redesenhar técnica anestésica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Glomerulonefrite pós-infecciosa — iniciar imunossupressor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nefropatia por contraste — evitar qualquer contraste; mudar para cirurgia sem imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Isquemia renal/reperfusão pela clampagem aórtica — reduzir tempo de clampeamento, uso de perfusão renal seletiva quando viável e otimizar perfusão intraoperatória.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Toxicidade medicamentosa por antibiótico administrado após cirurgia — suspender antibiótico e administrar carvão ativado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve uma Lesão Renal Aguda (LRA) intrínseca pós-operatória, caracterizada pelo aumento agudo da creatinina plasmática (mais que o dobro do valor basal em 48 horas), oligúria e hipercalemia, em um paciente submetido a cirurgia vascular com clampeamento aórtico prolongado e sem sinais de hipovolemia.\n\nO clampeamento da aorta, mesmo quando realizado em topografia infrarrenal, provoca aumento súbito da pós-carga e vasoconstrição reflexa da circulação renal mediada por fatores neuro-hormonais, reduzindo o fluxo sanguíneo renal em até 30% a 40%. O tempo prolongado de isquemia culmina em necrose tubular aguda (NTA), agravada no momento do desclampeamento pelo fenômeno de isquemia-reperfusão, com liberação de espécies reativas de oxigênio e mediadores inflamatórios.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Embora a obstrução do cateter vesical seja uma causa comum de oligúria pós-operatória (causa pós-renal), ela não se correlaciona diretamente com o estresse hemodinâmico do clampeamento aórtico prolongado e não justifica a alteração na técnica anestésica como proposta preventiva.\n\nAlternativa b: Incorreta. A glomerulonefrite pós-infecciosa é uma afecção imunomediada que surge classicamente de uma a três semanas após infecções estreptocócicas de orofaringe ou de pele, não tendo relação temporal nem fisiopatológica com o trauma cirúrgico vascular agudo.\n\nAlternativa c: Incorreta. A nefropatia induzida por contraste ocorre principalmente após procedimentos endovasculares e angiografias diagnósticas. No caso em questão, trata-se de cirurgia vascular aberta com clampeamento prolongado. Além disso, a conduta de proibir totalmente exames com contraste ou tentar cirurgias vasculares sem imagem não é uma prática viável nem adequada.\n\nAlternativa d: Correta. Descreve com precisão a fisiopatologia da lesão (isquemia-reperfusão decorrente do clampeamento aórtico) e aponta as principais medidas preventivas reconhecidas: redução do tempo cirúrgico de clampeamento, manutenção da estabilidade hemodinâmica com otimização da perfusão volêmica intraoperatória e, quando indicado em procedimentos mais extensos ou suprarrenais, estratégias de perfusão renal seletiva (ex.: soluções de preservação hipotérmicas).\n\nAlternativa e: Incorreta. A toxicidade renal por antibióticos (como aminoglicosídeos) costuma ter um curso insidioso, manifestando-se após vários dias de uso. O carvão ativado atua exclusivamente na adsorção gastrointestinal em intoxicações orais agudas, não tendo qualquer utilidade no tratamento de toxicidade por drogas administradas por via intravenosa no pós-operatório.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Vascular",
+      "Complicações Pós-Operatórias",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:51.515Z"
+  }
+]

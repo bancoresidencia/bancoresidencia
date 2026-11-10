@@ -1,0 +1,537 @@
+[
+  {
+    "id": "AJUDA_a4a6ba5e-1be3-4e59-ba7c-ce66772f7fa0",
+    "originalId": "a4a6ba5e-1be3-4e59-ba7c-ce66772f7fa0",
+    "statement": "Uma empresa fabricante de agrotóxicos desenvolveu suas atividades em uma cidade de porte médio durante aproximadamente 20 anos até 2020. Após denúncias feitas pelo sindicato de trabalhadores e pela associação de moradores de um dos condomínios próximo, foram realizadas investigações que revelaram contaminações do solo e do lençol freático por várias substâncias químicas, entre as quais organoclorados. Pretende-se identificar as repercussões sobre a saúde da população e dos trabalhadores da empresa decorrentes dessa exposição.\nAssinale a alternativa correta sobre o caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Um inquérito epidemiológico permitiria em curto espaço de tempo determinar quais doenças deveriam ser o foco de acompanhamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Um estudo de Coorte permitiria determinar o coeficiente de incidência de doenças e medidas diretas de risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Como a exposição a substâncias químicas teve início há mais de 20 anos, o único estudo com alto poder analítico seria caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Um estudo ecológico teria um alto poder analítico, mas teria como desvantagem um alto custo financeiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Enquanto as possíveis doenças decorrentes de cada substância química envolvida não forem determinadas de forma precisa, não será possível realizar qualquer estudo de utilidade para a saúde coletiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta. Um inquérito epidemiológico, também conhecido como estudo transversal, fornece uma fotografia momentânea da saúde da população (prevalência). Embora seja útil para descrever a situação atual, ele possui limitações para estabelecer relações de causa e efeito e não é o desenho ideal para acompanhar a evolução de doenças decorrentes de uma exposição crônica de longo prazo, como a relatada no caso.\n\nAlternativa b) Correta. O estudo de coorte é o desenho epidemiológico analítico que parte da exposição em busca do desfecho. No cenário descrito, temos grupos bem definidos de exposição (trabalhadores e moradores próximos). Ao acompanhar esses indivíduos ao longo do tempo, é possível calcular a incidência (casos novos) de doenças e determinar medidas diretas de risco, como o Risco Relativo. Dado que a exposição ocorre há 20 anos, pode-se realizar tanto uma coorte prospectiva quanto uma coorte histórica (retrospectiva).\n\nAlternativa c) Incorreta. O estudo de caso-controle é muito útil para doenças raras ou com longos períodos de latência, mas não é o único estudo com alto poder analítico. O estudo de coorte também possui elevado poder analítico e é preferível quando se quer avaliar múltiplos desfechos de uma única exposição conhecida, permitindo uma análise mais direta do risco.\n\nAlternativa d) Incorreta. O estudo ecológico baseia-se em dados populacionais agregados e não em dados individuais. Por esse motivo, ele possui baixo poder analítico para inferências individuais, fenômeno conhecido como falácia ecológica. Além disso, os estudos ecológicos são geralmente conhecidos pelo seu baixo custo e rapidez, e não por custos elevados.\n\nAlternativa e) Incorreta. Na saúde pública, o princípio da precaução e a vigilância epidemiológica orientam que a ação deve ocorrer mesmo diante de incertezas científicas absolutas. Os estudos epidemiológicos servem justamente para identificar as associações entre exposições químicas e doenças, sendo ferramentas essenciais para a saúde coletiva antes mesmo que todos os mecanismos fisiopatológicos sejam completamente desvendados.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:41.619Z"
+  },
+  {
+    "id": "AJUDA_a4b4a6f6-64e8-4322-b72d-fb6b62ce4c75",
+    "originalId": "a4b4a6f6-64e8-4322-b72d-fb6b62ce4c75",
+    "statement": "Multípara, G4P4, parto vaginal sem intercorrências há 30 minutos. Recém-nascido com peso de 4.100 gramas. Foram administradas 10 unidades de ocitocina intramuscular para profilaxia de hemorragia pós-parto. Logo após a dequitação observou se sangramento vaginal volumoso e útero hipotônico. Até o momento já foram realizados massagem uterina bimanual, ocitocina, ácido tranexâmico e 2.500 ml de soro fisiológico (SF 0,9%). No momento, útero hipotônico, pressão arterial 90 x 50 mmHg e frequência cardíaca: 128 batimentos por minuto. Índice de choque de 1,4. Qual manejo mais adequado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Misoprostol retal e 1000 ml de soro fisiológico 0,9%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pontos de B Lynch e 1000 ml de ringer lactato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Metilergometrina e dois concentrados de hemácias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Balão de tamponamento intrauterino e SF 0,9%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão apresenta um quadro clássico de hemorragia pós-parto (HPP) por atonia uterina em uma paciente com fatores de risco importantes: multiparidade e macrossomia fetal (4.100 g). O manejo inicial já foi instituído (massagem, ocitocina, ácido tranexâmico e cristaloides), mas a paciente permanece com o útero hipotônico e apresenta sinais de choque grave, evidenciados pelo Índice de Choque (IC) de 1,4.\n\nO Índice de Choque é calculado pela divisão da frequência cardíaca pela pressão arterial sistólica (128/90 = 1,4). Valores acima de 0,9 indicam perda volêmica significativa, e acima de 1,1 sugerem a necessidade de transfusão imediata e protocolo de hemorragia grave.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o misoprostol seja um uterotônico utilizado na HPP, a administração de mais 1.000 ml de soro fisiológico é inadequada. A paciente já recebeu 2.500 ml de cristaloides. A reposição volêmica excessiva com cristaloides em quadros de hemorragia grave leva à hemodiluição, hipotermia e piora da coagulopatia (tríade letal).\n\nb) Incorreta. A sutura de B-Lynch é uma medida cirúrgica de segunda linha, geralmente reservada para quando as medidas farmacológicas e o tamponamento falham, ou se a paciente já estiver em ambiente cirúrgico (como uma cesariana). Além disso, a reposição com Ringer lactato, embora superior ao soro fisiológico em grandes volumes, não substitui a necessidade de hemácias neste cenário de choque grave (IC 1,4).\n\nc) Correta. A metilergometrina é o uterotônico de escolha a ser adicionado após a falha da ocitocina (desde que não haja contraindicação como hipertensão ou pré-eclâmpsia, o que não ocorre aqui, pois a paciente está hipotensa). Quanto à reposição volêmica, como a paciente já recebeu volume expressivo de cristaloides e mantém sinais de choque grave, a prioridade absoluta é a reposição de componentes sanguíneos (concentrados de hemácias) para restaurar a capacidade de transporte de oxigênio e evitar a coagulopatia dilucional.\n\nd) Incorreta. O balão de tamponamento intrauterino é uma excelente opção para atonia refratária ao tratamento medicamentoso. No entanto, o erro da alternativa reside na manutenção da infusão de soro fisiológico (SF 0,9%). Diante de um choque hipovolêmico descompensado, a reposição deve ser feita com sangue e derivados, não mais com cristaloides isoladamente.\n\nResumo: O manejo da HPP segue uma sequência de passos (medicamentos -> tamponamento -> cirurgia). O uso da metilergometrina complementa a ocitocina no controle da atonia, e a instabilidade hemodinâmica grave (IC 1,4) após 2,5 L de cristaloides exige transfusão imediata.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:41.619Z"
+  },
+  {
+    "id": "AJUDA_a4d298ea-13a5-44a3-a3a7-1517f9e4030c",
+    "originalId": "a4d298ea-13a5-44a3-a3a7-1517f9e4030c",
+    "statement": "Homem, 30 anos de idade, queixa-se de abaulamento anal associado a dor intensa, contínua e sangramento vivo. A sintomatologia piora em todas as suas evacuações e ficou ainda mais intensa há duas semanas. O hábito evacuatório era de uma evacuação ao dia, fezes endurecidas, e passou a ser de uma vez por semana devido a piora da dor Relata ter uma “hemorroida/verruga” (sic), na borda anal, que parece ter aumentado com o tempo. Informa relações sexuais com parceiros do mesmo sexo, sem maiores detalhes. Ao exame físico, observou-se a seguinte lesão:\n\nCom base no relato do paciente e no exame físico apresentado, assinale a alternativa que indica o diagnóstico mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adenocarcinoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Carcinoma espinocelular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Condiloma acuminado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hemorroida interna grau IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso aborda um homem jovem, praticante de sexo com homens (HSH), que apresenta dor anal intensa e contínua, sangramento vivo e uma lesão em crescimento progressivo na margem anal. \n\nNa imagem do exame físico, observa-se uma massa volumosa, vegetante, exofítica, friável e com áreas de ulceração na região anal posterior. Esse aspecto é típico de uma lesão neoplásica maligna invasiva do canal e da borda anal.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O adenocarcinoma corresponde a uma minoria dos tumores anais, originando-se geralmente de glândulas da mucosa retal proximal à linha pectínea ou de fístulas crônicas. O carcinoma espinocelular é muito mais prevalente e diretamente associado aos fatores de risco descritos.\n\nAlternativa b: Correta. O carcinoma espinocelular (CEC) é o tipo histológico mais comum de neoplasia maligna anal (cerca de 80% a 85% dos casos). Tem como principal fator de risco a infecção pelo papilomavírus humano (HPV), especialmente em homens que fazem sexo com homens. A clínica de dor intensa e contínua (sugestiva de invasão esfincteriana), associada à lesão ulcerovegetante e friável vista na imagem, é característica do CEC anal.\n\nAlternativa c: Incorreta. Embora o paciente mencione uma verruga prévia, o condiloma acuminado típico consiste em lesões verrucosas benignas, papilomatosas (em aspecto de couve-flor), causadas por subtipos não oncogênicos de HPV (6 e 11), sem a ulceração, necrose, friabilidade e invasão tecidual franca demonstradas no caso.\n\nAlternativa d: Incorreta. As hemorroidas internas de quarto grau são prolapsos venosos permanentes e irredutíveis, recobertos por mucosa vascularizada íntegra ou edemaciada, não formando uma massa tumoral vegetante e ulcerada.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/9587f4009a585cb0efb9599c4ca5f6b2c3c473560b313b0e75ff62f2fb5787c6.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_a4d298ea-13a5-44a3-a3a7-1517f9e4030c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:42.197Z"
+  },
+  {
+    "id": "AJUDA_a4dda29a-ca9c-4cc4-a8a7-37e0e5f970a2",
+    "originalId": "a4dda29a-ca9c-4cc4-a8a7-37e0e5f970a2",
+    "statement": "Um médico atuante em medicina preventiva personalizada começa a divulgar um “teste salivar genético” de R$ 1.200,00, alegando que ele é capaz de detectar câncer colorretal em pessoas acima de 50 anos e que poderia substituir a colonoscopia recomendada pelas diretrizes. Um paciente de 58 anos, com perda de peso, alteração recente do hábito intestinal e história familiar positiva para câncer colorretal, realiza o teste e recebe um resultado positivo, que posteriormente é confirmado por colonoscopia e biópsia.\nConsiderando os princípios de epidemiologia clínica e desempenho de testes diagnósticos, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O resultado positivo nesse paciente demonstra que o teste tem alta especificidade, já que acertou um caso verdadeiro, o que valida sua incorporação nas diretrizes de rastreamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A probabilidade pré-teste elevada aumenta o valor preditivo positivo (VPP), de modo que um resultado positivo tende a ser verdadeiro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Se um teste apresenta acurácia elevada (>95%), isso garante que poderá substituir exames padrão-ouro independentemente da prevalência da doença na população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O valor preditivo positivo (VPP) do teste aumenta quando aplicado em populações de baixo risco, tornando-o ideal para substituir métodos invasivos em screening populacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Mesmo que o teste tenha alta sensibilidade e especificidade, seu valor preditivo negativo (VPN) será elevado nesse paciente devido à alta probabilidade pré-teste.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda os fundamentos da epidemiologia clínica, focando na relação entre a probabilidade pré-teste e os valores preditivos (positivo e negativo). Para resolvê-la, é fundamental compreender que o desempenho de um teste diagnóstico não depende apenas de suas características intrínsecas (sensibilidade e especificidade), mas também da prevalência da doença na população estudada.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A especificidade de um teste é a sua capacidade de identificar corretamente os indivíduos saudáveis (verdadeiros negativos). O fato de o teste ter \"acertado\" um caso positivo em um paciente sintomático não define a especificidade do exame e, muito menos, valida sua incorporação em diretrizes. Um único caso clínico (n=1) não gera evidência estatística para determinar parâmetros de acurácia.\n\nAlternativa b) Correta. O Valor Preditivo Positivo (VPP) indica a probabilidade de um indivíduo ter a doença dado que o teste foi positivo. O VPP é diretamente proporcional à prevalência da doença (ou probabilidade pré-teste). Como o paciente em questão apresenta sinais de alerta (perda de peso e alteração de hábito intestinal) e fator de risco importante (história familiar), sua probabilidade pré-teste é muito alta. Nessas condições, qualquer resultado positivo tem uma chance muito elevada de ser um verdadeiro positivo.\n\nAlternativa c) Incorreta. A acurácia é uma medida geral de acertos do teste, mas não é o único critério para substituir um padrão-ouro. A colonoscopia não é apenas um teste diagnóstico, mas também terapêutico (permite biópsias e retirada de pólipos). Além disso, a utilidade de um teste sempre dependerá da prevalência na população; em populações de baixíssima prevalência, mesmo testes com 95% de acurácia podem gerar muitos resultados falso-positivos.\n\nAlternativa d) Incorreta. Ocorre exatamente o contrário: o Valor Preditivo Positivo (VPP) diminui quando o teste é aplicado em populações de baixo risco (baixa prevalência). Isso acontece porque, em uma população onde a doença é rara, a maioria dos resultados positivos serão, na verdade, falso-positivos, mesmo que o teste tenha boa especificidade.\n\nAlternativa e) Incorreta. O Valor Preditivo Negativo (VPN) é inversamente proporcional à probabilidade pré-teste. Em um paciente com alta suspeição clínica (alta probabilidade pré-teste), um resultado negativo é menos confiável, pois o risco de ser um \"falso-negativo\" é maior. Portanto, o VPN seria baixo, e não elevado, nesta situação específica.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:42.197Z"
+  },
+  {
+    "id": "AJUDA_a4ddf6b9-6b29-4705-9739-3d055632dfc8",
+    "originalId": "a4ddf6b9-6b29-4705-9739-3d055632dfc8",
+    "statement": "Paciente, sexo feminino, 73 anos, previamente independente, apresenta início súbito de afasia e hemiparesia direita há 120 minutos. Antecedentes prévios: hipertensão arterial, dislipidemia mista, hiperuricemia e arritmia cardíaca. Medicações em uso: anlodipino 10 mg/dia, atenolol 25 mg/dia, atorvastatina 20 mg, alopurinol 100 mg/dia.\nAo exame físico: PA 168×96 mmHg, FC 80 bpm, ritmo cardíaco irregular. Déficit motor 2/5 em dimídio direito, afasia motora. NIHSS = 18.\nExames complementares:\nGlicemia capilar: 118 mg/dL.\nTomografia de crânio: sem hemorragia; angiotomografia: oclusão de M1 esquerda.\n\nConsiderando o antecedente de arritmia da paciente, visualizado no eletrocardiograma da paciente a seguir, qual é a melhor estratégia de profilaxia secundária após a fase aguda?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter apenas aspirina em dose baixa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar anticoagulação oral direta após exclusão de hemorragia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Indicar dupla antiagregação plaquetária indefinida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Utilizar apenas clopidogrel em monoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Manter apenas heparina subcutânea de baixo peso molecular por tempo indeterminado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente de 73 anos apresenta um quadro de Acidente Vascular Cerebral Isquêmico (AVCI) agudo, evidenciado pelo início súbito de déficit neurológico focal (afasia e hemiparesia) e Tomografia de Crânio sem sinais de hemorragia. O NIHSS de 18 e a oclusão do segmento M1 da artéria cerebral média indicam um evento grave e de grande vaso.\n\nO eletrocardiograma (ECG) apresentado é a peça-chave para definir a profilaxia secundária. Nele, observa-se um ritmo irregularmente irregular, com ausência de ondas P visíveis, que são substituídas por pequenas oscilações da linha de base (ondas f de fibrilação). Este achado confirma o diagnóstico de Fibrilação Atrial (FA). No contexto de um AVC, a FA classifica a etiologia como cardioembólica.\n\nAnálise das alternativas:\n\na) Incorreta. A aspirina é um antiagregante plaquetário. Embora seja útil em AVCs de etiologia aterosclerótica (grandes artérias) ou lacunares, a antiagregação é significativamente menos eficaz que a anticoagulação para prevenir novos fenômenos tromboembólicos em pacientes com fibrilação atrial.\n\nb) Correta. Para pacientes com fibrilação atrial não valvular e AVCI prévio, a anticoagulação oral é a estratégia de escolha para profilaxia secundária. Os Anticoagulantes Orais Diretos (DOACs), como a apixabana, rivaroxabana, dabigratrana ou edoxabana, são preferenciais em relação aos antagonistas da vitamina K (varfarina) por apresentarem menor risco de hemorragia intracraniana e maior facilidade de manejo. A decisão de iniciar deve ser feita após a exclusão de transformação hemorrágica por exame de imagem, geralmente seguindo a regra dos dias (1-3-6-12) conforme a gravidade do AVC.\n\nc) Incorreta. A dupla antiagregação plaquetária (DAPT), geralmente aspirina combinada ao clopidogrel, é indicada apenas por curto período (21 a 90 dias) em casos de AVCI menor (NIHSS até 3 ou 5) ou AIT de alto risco, ambos de origem não cardioembólica. Na FA, a DAPT aumenta o risco de sangramento sem oferecer a proteção necessária contra a formação de trombos no átrio esquerdo.\n\nd) Incorreta. O clopidogrel em monoterapia é uma alternativa para profilaxia secundária em AVCs de origem aterotrombótica, especialmente se o paciente tiver contraindicação ou intolerância à aspirina. Não possui papel na prevenção de eventos cardioembólicos por fibrilação atrial.\n\ne) Incorreta. A heparina de baixo peso molecular (HBPM) em dose profilática subcutânea é utilizada no ambiente hospitalar para prevenção de trombose venosa profunda (TVP). O uso de heparina plena por tempo indeterminado não é a conduta preconizada para profilaxia secundária ambulatorial de AVC, sendo substituída pela anticoagulação oral por ser mais segura e prática.\n\nConclusão: O achado de fibrilação atrial no ECG de um paciente com AVC isquêmico direciona a conduta para a anticoagulação oral definitiva, visando reduzir o alto risco de recorrência embólica.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Eletrocardiograma",
+      "Acidentes Vasculares Cerebrais",
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/bbcd48141674bf337875d22252bb120527e9d654f32d2da2c7642cfd89c68353.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_a4ddf6b9-6b29-4705-9739-3d055632dfc8_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:42.577Z"
+  },
+  {
+    "id": "AJUDA_a4de3f36-3f06-48a8-bbfc-f0b6eac3ea5f",
+    "originalId": "a4de3f36-3f06-48a8-bbfc-f0b6eac3ea5f",
+    "statement": "Considerando o consenso da International Association of Diabetes in Pregnancy Study Group (IADPSG), referendado pela Organização Mundial da Saúde (OMS), dentro de uma situação de viabilidade financeira e disponibilidade técnica total, para diagnóstico adequado das alterações glicêmicas durante a gravidez, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Overt Diabetes, ou diabetes Mellitus diagnosticado na gravidez, corresponde a situação em que a gestante apresenta na primeira consulta de pré-natal critérios de diagnóstico iguais àqueles pré-determinados para o diagnóstico de diabetes fora da gestação (Hemoglobina glicada ≥ 6,5%; glicemia de jejum ≥ 126mg/dL; ou glicemia em qualquer momento ≥ 200mg/dL).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Glicemia de jejum ≥ 92mg/ dL e ≤ 125mg/dL confirma o diagnóstico do diabetes Mellitus gestacional (DMG).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico do diabetes Mellitus gestacional (DMG) é firmado quando pelo menos um dos valores do TOTG com 75 g, realizado entre 24 e 28 semanas de idade gestacional, for ≥ a 92mg/dL no jejum, ≥ a 180mg/dL na primeira hora, ≥ a 153mg/dL e ≤ a 199 mg/dL na segunda hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O TOTG 75 g é preconizado para todas as gestantes, realizado idealmente entre 24 e 28 semanas de gravidez, quando os exames no início da gravidez foram considerados normais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Gestantes com glicemia de jejum acima de 126 mg/dL devem realizar o TOTG entre 24 e 28 semanas para confirmação do diagnóstico de Overt Diabetes.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda os critérios diagnósticos para alterações glicêmicas na gestação, de acordo com o IADPSG (International Association of Diabetes in Pregnancy Study Group) e a OMS. O objetivo é identificar a alternativa incorreta sobre o manejo e o diagnóstico de Diabetes Mellitus Gestacional (DMG) e Overt Diabetes (diabetes pré-existente diagnosticado na gestação).\n\nAlternativa A: Correta. O termo Overt Diabetes é utilizado para identificar gestantes que, logo na primeira consulta de pré-natal, apresentam níveis glicêmicos que já preencheriam os critérios de diagnóstico para diabetes fora do período gestacional. Os valores de corte são exatamente os citados: glicemia de jejum maior ou igual a 126 mg/dL, HbA1c maior ou igual a 6,5% ou glicemia aleatória maior ou igual a 200 mg/dL (na presença de sintomas).\n\nAlternativa B: Correta. De acordo com o consenso, se a glicemia de jejum realizada no primeiro trimestre (ou antes das 24 semanas) estiver entre 92 e 125 mg/dL, o diagnóstico de Diabetes Mellitus Gestacional (DMG) já está confirmado. Não é necessário realizar testes adicionais de sobrecarga nesse momento para fechar o diagnóstico.\n\nAlternativa C: Correta. O diagnóstico de DMG através do Teste Oral de Tolerância à Glicose (TOTG 75g), realizado entre 24 e 28 semanas, baseia-se em três valores de referência. Se apenas um deles estiver alterado, o diagnóstico é confirmado. Os valores são: jejum maior ou igual a 92 mg/dL; 1 hora maior ou igual a 180 mg/dL; 2 horas entre 153 e 199 mg/dL. Se o valor de 2 horas for maior ou igual a 200 mg/dL, a paciente é classificada como Overt Diabetes.\n\nAlternativa D: Correta. O rastreamento universal é preconizado para todas as gestantes que não tiveram diagnóstico de alteração glicêmica no início da gravidez. O TOTG 75g deve ser realizado, idealmente, na janela entre a 24ª e a 28ª semana de gestação, período em que os hormônios contrainsulínicos placentários (como o lactogênio placentário) atingem níveis que aumentam significativamente a resistência insulínica materna.\n\nAlternativa E: Incorreta (Gabarito). Esta alternativa está errada porque, se a gestante apresenta uma glicemia de jejum igual ou superior a 126 mg/dL, o diagnóstico de Overt Diabetes já está estabelecido. Nessas pacientes, é formalmente contraindicado realizar o TOTG 75g, pois a sobrecarga de glicose é desnecessária para o diagnóstico e pode expor a mãe e o feto a picos hiperglicêmicos perigosos. O diagnóstico é feito diretamente pelos exames de triagem inicial ou pela repetição da glicemia de jejum, nunca por teste de sobrecarga em quem já tem glicemia de jejum compatível com diabetes.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:42.578Z"
+  },
+  {
+    "id": "AJUDA_a4e33017-7cde-4975-9dbd-f7c3f0eb39de",
+    "originalId": "a4e33017-7cde-4975-9dbd-f7c3f0eb39de",
+    "statement": "Assinale a alternativa que apresenta a enfermidade psiquiátrica mais prevalente na comunidade geral.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esquizofrenia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transtornos do humor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtornos dissociativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtornos alimentares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Transtornos de ansiedade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para responder corretamente a essa questão, é necessário analisar a prevalência epidemiológica dos principais grupos de transtornos mentais na população geral, fundamentando-se em estudos como o Global Burden of Disease e as diretrizes da Organização Mundial da Saúde (OMS).\n\nAlternativa a) Incorreta. A esquizofrenia é um transtorno psicótico grave e crônico, porém sua prevalência é considerada baixa na comunidade geral, afetando aproximadamente 1 por cento da população ao longo da vida. Ela é menos frequente do que os transtornos de humor e de ansiedade.\n\nAlternativa b) Incorreta. Os transtornos do humor, que incluem a depressão maior e o transtorno afetivo bipolar, estão entre as condições mais comuns na prática clínica e são as principais causas de anos vividos com incapacidade. No entanto, em termos de prevalência absoluta (número de casos na população), eles são superados pelos transtornos de ansiedade. A depressão maior, isoladamente, tem uma prevalência ao longo da vida estimada entre 15 e 20 por cento.\n\nAlternativa c) Incorreta. Os transtornos dissociativos são condições caracterizadas por uma fragmentação das funções de consciência, memória e identidade. Embora o interesse clínico tenha crescido, sua prevalência na comunidade é significativamente menor do que a das patologias citadas nas outras alternativas.\n\nAlternativa d) Incorreta. Os transtornos alimentares, como a anorexia nervosa, bulimia e o transtorno da compulsão alimentar, possuem relevância clínica alta, mas a prevalência combinada na população geral é baixa, geralmente não ultrapassando a marca de 5 por cento na maioria dos estudos epidemiológicos.\n\nAlternativa e) Correta. Os transtornos de ansiedade formam o grupo de enfermidades psiquiátricas mais prevalentes na comunidade geral. Este grupo inclui o transtorno de ansiedade generalizada (TAG), as fobias específicas, o transtorno de ansiedade social e o transtorno de pânico. Estudos epidemiológicos robustos indicam que a prevalência combinada desses transtornos ao longo da vida pode atingir até 30 por cento da população, sendo a condição psiquiátrica número um em termos de frequência na população mundial.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Transtornos de Ansiedade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:42.578Z"
+  },
+  {
+    "id": "AJUDA_a4e7eb88-7e5a-42b4-afee-62fc0edc06dd",
+    "originalId": "a4e7eb88-7e5a-42b4-afee-62fc0edc06dd",
+    "statement": "Uma gestante de 32 anos, G3P2, 30 semanas, portadora de lúpus eritematoso sistêmico com nefrite lúpica ativa, chega ao pronto atendimento com PA 170/115 mmHg, dor torácica, dispneia e saturação 86%. ECG mostra S1Q3T3, e angiotomografia revela Tromboembolismo pulmonar (TEP) central. O laboratório mostra plaquetas 75.000, TGO/TGP elevadas, DHL aumentada e creatinina 2,5 mg/dL. Evolui com convulsão tônico-clônica. Considerando as definições do CID MM (WHO), a classificação de causas de morte materna e a conduta prioritária em um cenário de TEP massivo associado a possível síndrome HELLP sobreposta, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O caso configura causa obstétrica direta, pois TEP na gestação sempre é classificado como direto; a prioridade é interrupção imediata da gestação antes de qualquer tratamento para o TEP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A convulsão indica obrigatoriamente eclâmpsia e, portanto, o TEP não deve ser tratado até que o parto esteja concluído.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A associação de lúpus com pré-eclâmpsia/HELLP caracteriza exclusivamente causa indireta; assim, não é contabilizada na mortalidade materna obstétrica direta no sistema de vigilância epidemiológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A conduta definitiva deve ser trombólise plena imediatamente após a convulsão, mesmo sem estabilização materna, pois a gestação é contraindicação absoluta para trombólise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O caso representa uma causa obstétrica indireta (Lúpus / TEP) associada a uma complicação obstétrica direta (HELLP), ambas elevando o risco de morte; a prioridade é anticoagulação plena e suporte intensivo materno antes de decidir pelo parto.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda um cenário de extrema gravidade na obstetrícia, exigindo conhecimento sobre a classificação de mortalidade materna da Organização Mundial da Saúde (OMS), diagnóstico diferencial de convulsões na gestação e prioridades no manejo do Tromboembolismo Pulmonar (TEP) massivo.\n\nAlternativa a: Incorreta. Embora o TEP seja frequentemente classificado como causa direta, a afirmação de que ele sempre é classificado assim ignora situações em que é complicação secundária de patologias prévias. O erro principal, contudo, reside na conduta: em um TEP massivo com hipóxia grave (saturação de 86%), a interrupção imediata da gestação sem estabilização materna prévia é contraindicada, pois a paciente não suportaria o estresse cirúrgico ou anestésico, levando a um desfecho fatal na mesa de operação.\n\nAlternativa b: Incorreta. Nem toda convulsão na gestação é eclâmpsia. Nesta paciente, a convulsão pode ser decorrente de atividade do lúpus no sistema nervoso central (neurolúpus), hipóxia cerebral severa causada pelo TEP massivo ou até distúrbios metabólicos pela insuficiência renal (creatinina de 2,5). Além disso, o tratamento do TEP (suporte e anticoagulação) é a prioridade absoluta para a sobrevivência materna e não deve ser adiado.\n\nAlternativa c: Incorreta. A classificação de causa indireta refere-se a doenças preexistentes ou que se desenvolvem na gestação e são agravadas por ela (como o lúpus). No entanto, a pré-eclâmpsia e a síndrome HELLP são, por definição, causas obstétricas diretas, pois são complicações exclusivas do ciclo gravídico-puerperal. Ambas são contabilizadas nas estatísticas de mortalidade materna.\n\nAlternativa d: Incorreta. Esta alternativa apresenta uma contradição lógica ao afirmar que a conduta deve ser a trombólise, mas, ao mesmo tempo, diz que a gestação é uma contraindicação absoluta. Na realidade, a gestação é uma contraindicação relativa à trombólise. Em casos de TEP com instabilidade hemodinâmica (TEP massivo), a trombólise pode ser considerada, mas a estabilização ventilatória e hemodinâmica inicial é mandatória.\n\nAlternativa e: Correta. Esta alternativa reflete a melhor conduta clínica e a análise correta da complexidade do caso. O lúpus é uma causa indireta que aumenta o risco de fenômenos tromboembólicos. A síndrome HELLP (sugerida pelas plaquetas baixas, enzimas hepáticas e DHL elevados) é uma causa direta. Diante de um TEP central com comprometimento respiratório grave, a prioridade máxima é garantir a vida da mãe por meio de suporte intensivo (oxigenação, monitorização) e anticoagulação plena (geralmente com heparina não fracionada, que permite reversão rápida, se necessário). O parto deve ser planejado apenas após a estabilização do quadro crítico materno.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Síndromes Hipertensivas da Gestação",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:42.578Z"
+  },
+  {
+    "id": "AJUDA_a4edbc89-a208-41d3-bd44-8c11f8c0642f",
+    "originalId": "a4edbc89-a208-41d3-bd44-8c11f8c0642f",
+    "statement": "Paciente, 59 anos, com icterícia há 3 semanas acompanhada de colúria e acolia fecal. A tomografia computadorizada de abdome é mostrada abaixo. O diagnóstico que corresponde aos achados da tomografia deste paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presença de tumor hepático com metástases.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Extensa trombose venosa envolvendo veia porta, mesentérica superior e veia esplênica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Obstrução arterial mesentérica com infarto de alça intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coleção abdominal volumosa, com conteúdo purulento associada a peritonite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tumor de Klatskin (colangiocarcinoma).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico de icterícia, colúria e acolia fecal em um paciente de 59 anos é clássico de uma síndrome colestática obstrutiva. A evolução de três semanas e a faixa etária sugerem uma etiologia neoplásica como principal hipótese diagnóstica.\n\nAo analisar as imagens da tomografia computadorizada de abdômen, tanto nos cortes axiais quanto nas reconstruções coronais, observa-se uma acentuada dilatação das vias biliares intra-hepáticas. Essas estruturas aparecem como ramificações hipodensas (escuras) distribuídas pelo parênquima do fígado. O ponto crucial é que essa dilatação converge para o hilo hepático (região central onde os ductos hepáticos direito e esquerdo se unem), apresentando uma interrupção abrupta. Não se observa dilatação da via biliar extra-hepática (colédoco), o que caracteriza uma obstrução biliar alta.\n\nAnálise das alternativas:\n\na) Incorreta. Embora tumores hepáticos ou metástases possam causar icterícia se comprimirem ductos, a imagem não mostra múltiplas massas sólidas espalhadas pelo fígado. O achado principal é a dilatação sistêmica dos ductos biliares a partir de um ponto central no hilo.\n\nb) Incorreta. Uma trombose venosa portomesentérica apresentaria falhas de enchimento com contraste dentro dos vasos e, possivelmente, sinais de sofrimento intestinal ou hipertensão portal. Não é a causa primária de dilatação isolada das vias biliares intra-hepáticas com colestase obstrutiva clássica.\n\nc) Incorreta. A obstrução arterial mesentérica é uma condição aguda de abdômen vascular, manifestada por dor súbita e desproporcional ao exame físico, evoluindo com isquemia de alças. Não se apresenta com icterícia obstrutiva de três semanas e dilatação biliar.\n\nd) Incorreta. Não há sinais radiológicos de coleções purulentas volumosas ou pneumoperitônio nas imagens. O parênquima hepático e a cavidade abdominal não apresentam as características de um processo infeccioso/peritoneal difuso.\n\ne) Correta. O tumor de Klatskin é um colangiocarcinoma que se origina especificamente na bifurcação dos ductos hepáticos (hilo hepático). Ele é a causa mais comum de obstrução biliar hilar, resultando exatamente no que a tomografia mostra: dilatação importante dos ductos dentro do fígado e via biliar distal de calibre normal (abaixo da obstrução). O quadro clínico de icterícia obstrutiva progressiva é perfeitamente compatível com essa patologia.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f41d38b31a855043210f641f3f528d144312d1402d90c650e484d82cec6d2175.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_a4edbc89-a208-41d3-bd44-8c11f8c0642f_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:43.101Z"
+  },
+  {
+    "id": "AJUDA_a4ef90c7-1d6a-42fc-a609-f54de90ce391",
+    "originalId": "a4ef90c7-1d6a-42fc-a609-f54de90ce391",
+    "statement": "Situação-Problema: Menino, 12 anos de idade, vai à consulta pediátrica acompanhado dos pais e apresenta a seguinte queixa: “Meus amigos já cresceram e eu não”. A história mostra uma criança saudável, sem antecedentes de doenças crônicas. O pai refere ter sido o menor da turma e que “cresceu só no último ano do colégio”. Exame físico: altura no percentil 3, velocidade de crescimento de 4 cm/ano, Tanner I. Idade óssea atrasada em 2 anos. Sem dismorfismos.\n\nSobre as causas de baixa estatura em crianças, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A baixa estatura idiopática é uma condição rara no desenvolvimento infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A maioria dos casos de baixa estatura apresentará uma causa genética identificável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cerca de 5% das crianças com baixa estatura têm uma condição patológica definida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A deficiência de GH está presente entre 20 e 30% das crianças com baixa estatura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta o quadro clássico do Atraso Constitucional do Crescimento e da Puberdade (ACCP). Os principais dados que fundamentam essa hipótese são: história familiar positiva (pai amadureceu tardiamente), exame físico sem dismorfismos ou sinais sindrômicos, estágio puberal pré-púbere (Tanner I aos 12 anos) e idade óssea atrasada em relação à idade cronológica. O ACCP é considerado uma variante normal do crescimento, e não uma doença.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A baixa estatura idiopática e as variantes normais do crescimento (baixa estatura familiar e atraso constitucional) representam as causas mais frequentes nos consultórios de pediatria, correspondendo à vasta maioria dos atendimentos. Portanto, não é uma condição rara.\n\nAlternativa B (Incorreta): Embora a estatura final tenha forte herança poligênica, a maioria das crianças com baixa estatura não apresenta uma alteração genética monogênica ou sindrômica identificável pelos testes laboratoriais de rotina. A maior parte dos casos decorre de variações fisiológicas normais.\n\nAlternativa C (Correta): Epidemiologicamente, cerca de 80% a 95% das crianças avaliadas por queixa de baixa estatura apresentam variantes normais do desenvolvimento. Causas patológicas ou orgânicas definidas (como hipotireoidismo, doença celíaca, desnutrição, síndromes genéticas ou deficiência hormonal) são encontradas em apenas cerca de 5% dos casos.\n\nAlternativa D (Incorreta): A deficiência isolada de hormônio do crescimento (GH) é uma etiologia rara, com incidência estimada entre 1 para cada 4.000 a 10.000 nascidos vivos, representando menos de 1% a 2% da totalidade dos casos de baixa estatura.\n\nGabarito: Letra C.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Puberdade",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:27:43.101Z"
+  }
+]

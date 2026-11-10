@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_cb2f0f91-5aac-47f4-b22c-6a835590dbd4",
+    "originalId": "cb2f0f91-5aac-47f4-b22c-6a835590dbd4",
+    "statement": "Homem, 70 anos, apresenta-se com perda de peso significativa, fadiga e dispneia aos pequenos esforços. Relata dificuldade para se alimentar devido à falta de apetite e sensação de saciedade precoce. Antecedentes: doença pulmonar obstrutiva crônica grave e insuficiência cardíaca congestiva. Exame físico: perda de massa muscular e edema de membros inferiores. Exames laboratoriais: albumina sérica: 2,9 g/dL (VR: 3.4-5.0); hemoglobina: 12,0 g/dL; creatinina: 1,1 mg/dL; proteína C reativa (PCR): 0,8 mg/dL (VR: < 1,0); glicemia de jejum: 105 mg/dL. Qual intervenção nutricional é a mais apropriada para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar a ingestão de proteínas e calorias por refeições fracionadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Reduzir a ingestão de carboidratos para melhorar a glicemia de jejum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Implementar dieta hipossódica rigorosa para controlar o edema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Introduzir nutrição enteral suplementar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Este paciente de 70 anos apresenta um quadro clínico compatível com desnutrição proteico-calórica e provável caquexia associada a doenças crônicas (DPOC grave e insuficiência cardíaca). A perda de massa muscular, a queixa de saciedade precoce e a albumina baixa (2,9 g/dL) com PCR normal (0,8 mg/dL) indicam um estado de depleção nutricional crônica que exige intervenção imediata para melhorar o prognóstico e a capacidade funcional.\n\nAlternativa A (Correta): Esta é a conduta inicial e mais adequada. Pacientes com doenças crônicas graves frequentemente apresentam um estado hipermetabólico e necessitam de maior aporte de proteínas e calorias para tentar reverter ou estabilizar a perda de massa magra. Como o paciente relata saciedade precoce (comum na insuficiência cardíaca pela congestão visceral e na DPOC pela compressão do estômago pelo diafragma achatado), o fracionamento das refeições em volumes menores e mais frequentes permite que ele atinja as metas nutricionais sem desconforto.\n\nAlternativa B (Incorreta): A glicemia de jejum de 105 mg/dL está apenas levemente alterada (pré-diabetes) e não é a prioridade clínica neste cenário. Restringir carboidratos de forma desnecessária poderia resultar em um aporte calórico insuficiente, agravando a perda de peso e a fadiga.\n\nAlternativa C (Incorreta): Embora o controle do sódio seja importante na insuficiência cardíaca, uma dieta hipossódica rigorosa é frequentemente monótona e pouco palatável. Em um paciente que já sofre de falta de apetite e desnutrição, restrições excessivas podem levar à redução ainda maior da ingestão alimentar. O edema, neste caso, também pode estar sendo agravado pela baixa pressão oncótica decorrente da hipoalbuminemia.\n\nAlternativa D (Incorreta): A nutrição enteral suplementar é indicada apenas quando o paciente não consegue atingir pelo menos 60% a 70% de suas necessidades nutricionais pela via oral, mesmo após a otimização da dieta e o uso de suplementos orais industrializados. Pelos preceitos da terapia nutricional, deve-se sempre priorizar a via mais fisiológica e menos invasiva primeiro.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Saúde do Idoso",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:30.020Z"
+  },
+  {
+    "id": "AJUDA_cb2fae70-0bb4-4474-8ee4-31e062997fa1",
+    "originalId": "cb2fae70-0bb4-4474-8ee4-31e062997fa1",
+    "statement": "Lactente, sexo masculino, 2 meses e meio de idade, vem apresentando \"chieira\" intermitente nos últimos dias. Hoje está com dificuldade respiratória. Ao exame clínico, está acianótico, com dificuldade respiratória leve e saturação de oxigênio de 95% em ar ambiente. A ausculta revela sibilos esparsos e um sopro holossistólico ao longo da borda esternal esquerda. Abdome flácido, fígado palpado a 2cm do rebordo costal direito. Restante do exame sem alterações. O diagnóstico MAIS PROVÁVEL é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comunicação interventricular",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Forame oval patente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Persistência do canal arterial",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Eisenmenger",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão apresenta um caso clássico de cardiopatia congênita acianogênica com hiperfluxo pulmonar manifestando-se no lactente.\n\nAnálise do quadro clínico:\nO paciente tem 2 meses e meio de idade, época em que a resistência vascular pulmonar termina de cair significativamente após o nascimento. Isso permite que o sangue passe com maior facilidade do lado esquerdo para o lado direito do coração (shunt esquerda-direita). O resultado é o hiperfluxo pulmonar, que causa congestão (levando à \"chieira\" e dificuldade respiratória) e sinais de insuficiência cardíaca congestiva, como a hepatomegalia (fígado a 2 cm do rebordo costal). O dado semiológico crucial é o sopro holossistólico na borda esternal esquerda.\n\nExplicação das alternativas:\n\na) Comunicação interventricular (CIV): É a alternativa correta. A CIV é a cardiopatia congênita mais comum. O sopro típico é holossistólico (ou pansistólico), de alta frequência, melhor audível na borda esternal esquerda baixa. Como o shunt depende da queda da resistência pulmonar, os sintomas de cansaço e insuficiência cardíaca costumam surgir justamente entre a 4ª e a 8ª semana de vida, exatamente como descrito no caso.\n\nb) Forame oval patente: É uma condição muito comum e geralmente assintomática na infância. Não produz sopro cardíaco significativo nem causa insuficiência cardíaca ou hepatomegalia em um lactente desta idade. É apenas um orifício funcional que não se fechou completamente, sem gerar repercussão hemodinâmica de hiperfluxo.\n\nc) Persistência do canal arterial (PCA): Embora também cause hiperfluxo pulmonar e insuficiência cardíaca, o sopro característico da PCA é o sopro contínuo (em \"maquinaria\"), melhor audível na região infraclavicular esquerda e borda esternal esquerda superior, e não um sopro holossistólico ao longo da borda esternal. Além disso, costuma cursar com pulsos amplos (pediosos e radiais fáceis de palpar).\n\nd) Síndrome de Eisenmenger: Representa o estágio final e tardio de uma cardiopatia de hiperfluxo não tratada. Ocorre quando a pressão pulmonar se torna tão alta que ultrapassa a pressão sistêmica, invertendo o shunt para direita-esquerda. Isso causa cianose central e policitemia. Um lactente de 2 meses e meio é jovem demais para ter desenvolvido essa síndrome, e o enunciado afirma que o paciente está acianótico.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:30.020Z"
+  },
+  {
+    "id": "AJUDA_cb378b0c-7df4-4c98-94cc-b8b19ebd429f",
+    "originalId": "cb378b0c-7df4-4c98-94cc-b8b19ebd429f",
+    "statement": "Paciente feminina, de 23 anos, veio à Emergência na manhã de hoje em busca de orientação considerando o ocorrido há 2 dias. Relatou ter ido a uma festa com amigas, mas não recordava o que havia acontecido, a não ser que acordara, na manhã seguinte, sem roupas ao lado de um homem desconhecido. Assustada, foi embora para casa, onde se manteve escondida e em profundo sofrimento, sem compartilhar com ninguém a situação. Em relação ao caso, assinale a assertiva correta sobre o atendimento a ser prestado pela equipe multidisciplinar na Emergência.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A equipe assistencial acolhe a paciente e a orienta a procurar inicialmente a delegacia para fazer o boletim de ocorrência policial e submeter-se ao exame físico no Departamento Médico Legal, tendo em vista que ela não se lembra do que ocorreu. Na sequência, deve retornar ao hospital para receber novas orientações e realizar exames.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O médico assistente acolhe a paciente, solicita exames e prescreve o esquema de profilaxia para as Infecções Sexualmente Transmissíveis (ISTs) não virais, bem como fornece anticoncepção de emergência para uso imediato, mas informa que não há mais indicação para uso de antirretrovirais, pois já se passaram mais de 48 horas do ato de violência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O médico assistente acolhe a paciente, solicita exames e prescreve o esquema de profilaxia para as ISTs não virais e a anticoncepção de emergência e inicia a profilaxia para HIV, que deve ser utilizada por 28 dias ininterruptamente. Além disso, solicita avaliação do Serviço de Psiquiatria e do Serviço Social conforme plano de atendimento multidisciplinar a pacientes vítimas de violência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O médico assistente faz a solicitação de exames e prescreve todas as medicações do protocolo hospitalar para pacientes vítimas de violência sexual, bem como solicita avaliação do Serviço de Psiquiatria e do Serviço Social. Na alta, orienta a paciente sobre a importância do uso de preservativo por 6 meses e uso regular das medicações prescritas e agenda retorno ambulatorial. A notificação através do Sistema de Informação de Agravos de Notificação pode ou não ser realizada, de acordo com o desejo da paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A: INCORRETA. O atendimento médico a vítimas de violência sexual deve ser imediato e integral, não podendo ser condicionado à realização de boletim de ocorrência (BO) ou comparecimento ao Instituto Médico Legal (IML). O acesso à saúde é um direito garantido independentemente de providências policiais. A equipe de saúde deve realizar o exame físico e a coleta de vestígios (se houver consentimento e protocolo para tal), mas nunca retardar a assistência clínica enviando a paciente primeiro à delegacia.\n\nAlternativa B: INCORRETA. O erro desta alternativa está no prazo para a Profilaxia Pós-Exposição (PEP) ao HIV. O protocolo do Ministério da Saúde estabelece que a PEP deve ser iniciada o mais precocemente possível, idealmente nas primeiras 2 horas, tendo como limite máximo 72 horas após a exposição. Como o fato ocorreu há 2 dias (cerca de 48 horas), a paciente ainda está dentro da janela de eficácia para receber os antirretrovirais.\n\nAlternativa C: CORRETA. Esta alternativa apresenta a conduta completa e correta conforme as diretrizes atuais. Considerando que a paciente está no intervalo de 48 horas (dentro do limite de 72h para HIV e de 120h para anticoncepção de emergência), o manejo deve incluir: \n1. Profilaxia para ISTs não virais: Esquema para sífilis, gonorreia, clamídia e tricomoníase.\n2. Anticoncepção de emergência: Para evitar gravidez indesejada decorrente da violência.\n3. Profilaxia para HIV: Prescrição de antirretrovirais por 28 dias.\n4. Abordagem multidisciplinar: Avaliação da Psiquiatria/Psicologia e do Serviço Social é fundamental para o suporte emocional e garantia de direitos da vítima.\n\nAlternativa D: INCORRETA. O erro reside na afirmação de que a notificação no Sistema de Informação de Agravos de Notificação (SINAN) é facultativa. A notificação de casos de violência contra a mulher é compulsória (obrigatória) para todos os serviços de saúde, públicos ou privados, conforme a Lei 10.778/2003 e a Portaria de Consolidação nº 4/2017. Ela deve ser feita pelo profissional de saúde para fins epidemiológicos, independentemente do desejo da paciente de prestar queixa policial.\n\nRESUMO DOS PRAZOS E CONDUTAS NA VIOLÊNCIA SEXUAL:\n\n1. Profilaxia para HIV (PEP): Até 72 horas após a exposição (esquema por 28 dias).\n2. Anticoncepção de Emergência: Até 5 dias (120 horas), com maior eficácia se usada precocemente.\n3. Profilaxia para ISTs não virais: Deve ser realizada na admissão (Ceftriaxone, Azitromicina e Metronidazol).\n4. Profilaxia para Hepatite B: Vacina e Imunoglobulina (se não vacinada), até 14 dias.\n5. Notificação: Compulsória e imediata (em até 24 horas para o nível municipal).\n6. Aborto Legal: Garantido por lei em casos de gravidez resultante de estupro, sem necessidade de autorização judicial ou BO.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:30.020Z"
+  },
+  {
+    "id": "AJUDA_cb3e0c01-e99b-4f31-bf3c-293a3e8c4467",
+    "originalId": "cb3e0c01-e99b-4f31-bf3c-293a3e8c4467",
+    "statement": "O vírus sincicial respiratório (VSR) é uma causa frequente de infecções respiratórias em crianças, especialmente nos primeiros anos de vida. Considerando as características clínicas e epidemiológicas da infecção pelo VSR em pediatria, qual das seguintes afirmações está INCORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A infecção pelo VSR geralmente se manifesta com sintomas leves, como coriza, tosse e febre baixa, assemelhando-se a um resfriado comum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Em lactentes, a infecção pelo VSR pode evoluir para quadros mais graves, como bronquiolite e pneumonia, com necessidade de hospitalização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A transmissão do VSR ocorre principalmente por contato direto com secreções respiratórias infectadas, como saliva e muco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A maioria das crianças é infectada pelo VSR pelo menos uma vez até os 2 anos de idade, sendo a primoinfecção geralmente mais grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A infecção pelo VSR confere imunidade permanente, sendo incomum a reinfecção em crianças mais velhas e adultos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda o Vírus Sincicial Respiratório (VSR), o principal agente etiológico das infecções do trato respiratório inferior em lactentes. Vamos analisar cada uma das alternativas para identificar a afirmação incorreta.\n\nAlternativa a) Correta. Na maioria dos casos, especialmente em crianças maiores e adultos saudáveis, o VSR causa um quadro de infecção das vias aéreas superiores (IVAS). Os sintomas predominantes são coriza, tosse, congestão nasal e febre baixa, sendo o quadro clinicamente indistinguível de um resfriado comum causado por outros vírus, como o rinovírus.\n\nAlternativa b) Correta. O VSR é a causa mais comum de bronquiolite aguda e uma causa importante de pneumonia em lactentes, particularmente naqueles com menos de 6 meses de idade. Devido ao menor calibre das vias aéreas e à resposta inflamatória intensa, esses pacientes podem evoluir com desconforto respiratório, necessidade de oxigenoterapia e hospitalização.\n\nAlternativa c) Correta. A transmissão do VSR ocorre de forma muito eficiente por meio do contato direto com secreções respiratórias (saliva, muco) de pessoas infectadas ou pelo contato com superfícies contaminadas (fômites), onde o vírus pode sobreviver por várias horas. A inalação de gotículas expelidas por tosse ou espirro também é uma via de contágio.\n\nAlternativa d) Correta. Estudos epidemiológicos mostram que praticamente todas as crianças já tiveram pelo menos um episódio de infecção pelo VSR até completarem 2 anos de idade. A primeira infecção (primoinfecção) costuma ser a mais grave, com maior risco de acometimento do trato respiratório inferior.\n\nAlternativa e) Incorreta. Esta é a alternativa que deve ser assinalada. Diferentemente de doenças como a varicela ou o sarampo, a infecção pelo VSR não confere imunidade permanente. A resposta imune gerada é parcial e temporária, o que permite reinfecções frequentes ao longo da vida, inclusive na mesma estação sazonal. Em crianças maiores e adultos saudáveis, as reinfecções tendem a ser mais leves ou assintomáticas devido à memória imunológica residual, mas o indivíduo continua sendo um transmissor do vírus.\n\nGabarito: Letra (e).",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:30.020Z"
+  },
+  {
+    "id": "AJUDA_cb3e0d0b-8f12-47ad-a3aa-9496f28e438d",
+    "originalId": "cb3e0d0b-8f12-47ad-a3aa-9496f28e438d",
+    "statement": "As normas legais que regem o Sistema Único de Saúde (SUS) condicionam o acesso à assistência farmacêutica à observância de requisitos, dentre eles:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ter o medicamento sido prescrito por quaisquer profissionais de saúde, desde que registrados nos respectivos Conselhos Profissionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "estar o usuário assistido por ações e serviços de saúde públicos ou privados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estarem incluídos na RENAME (Relação Nacional de Medicamentos Essenciais) somente produtos com registro na Agência Nacional de Vigilância Sanitária (ANVISA).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "estar a prescrição em conformidade com a RENAME, excluídas as relações complementares estaduais ou municipais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) Incorreta: De acordo com o Decreto 7.508/2011, que regulamenta a Lei 8.080/1990, o acesso à assistência farmacêutica no SUS exige que a prescrição seja emitida por um profissional de saúde no exercício de suas funções dentro do âmbito do próprio SUS. Não basta que o profissional esteja registrado em seu conselho de classe; o atendimento que gerou a receita deve ter ocorrido em uma unidade ou serviço vinculado à rede pública de saúde.\n\nAlternativa (b) Incorreta: O texto legal estabelece que o usuário deve estar sendo assistido por ações e serviços de saúde do SUS para ter direito à assistência farmacêutica pública. O atendimento realizado exclusivamente na rede privada, sem vínculo com o sistema público, não garante, sob a ótica da legislação federal (Decreto 7.508/2011, Art. 28), o acesso gratuito aos medicamentos das farmácias do governo.\n\nAlternativa (c) Correta: Esta alternativa reflete o disposto na Lei 12.401/2011 e no Decreto 7.508/2011. A Relação Nacional de Medicamentos Essenciais (RENAME) compreende a seleção de medicamentos e insumos disponibilizados no SUS. Para que um produto seja incluído nessa lista e oferecido à população, é requisito fundamental que ele possua registro na Agência Nacional de Vigilância Sanitária (ANVISA), garantindo assim critérios mínimos de segurança, eficácia e qualidade.\n\nAlternativa (d) Incorreta: A assistência farmacêutica não se restringe apenas à RENAME nacional. A legislação prevê que estados e municípios podem (e devem) elaborar suas próprias listas complementares para atender às particularidades epidemiológicas locais. Estas são a REME (Relação Estadual de Medicamentos) e a REMUME (Relação Municipal de Medicamentos). Portanto, as relações complementares não são excluídas; elas integram o sistema de provisão de medicamentos de forma suplementar à lista nacional.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:30.020Z"
+  },
+  {
+    "id": "AJUDA_cb41213e-9de8-440b-bc0c-bdbb309f58b1",
+    "originalId": "cb41213e-9de8-440b-bc0c-bdbb309f58b1",
+    "statement": "Mulher de 28 anos, em idade fértil, apresenta dor súbita em fossa ilíaca direita e hipogástrio, associada a lipotimia. Ao exame: descorada, PA 90/60 mmHg, FC 110 bpm, com defesa abdominal e descompressão brusca positiva no baixo ventre. Beta-HCG urinário positivo. Assinale a alternativa correta sobre o diagnóstico e conduta imediata.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se realizar culdocentese para confirmar a presença de sangue na cavidade pélvica antes de indicar qualquer procedimento cirúrgico, para evitar laparoscopias brancas desnecessárias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de gravidez ectópica rota com hemoperitônio, sendo a salpingectomia laparoscópica (ou laparotômica, dependendo da estabilidade) indicada para controle da hemorragia, priorizando a estabilização hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A conduta expectante com metotrexato sistêmico está indicada, pois preserva a tuba uterina e a fertilidade futura, sendo o tratamento de escolha mesmo na vigência de instabilidade hemodinâmica leve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O quadro sugere apendicite aguda perfurada com peritonite generalizada, exigindo apendicectomia de urgência e lavagem exaustiva da cavidade, independentemente do resultado do teste de gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresenta uma tríade clássica: dor abdominal súbita, atraso menstrual (confirmado pelo beta-hCG positivo) e sinais claros de choque hipovolêmico (hipotensão, taquicardia, descoramento e lipotimia). Diante desses achados em uma mulher em idade fértil, o diagnóstico principal é gravidez ectópica rota com hemoperitônio.\n\nAlternativa a: Incorreta. A culdocentese, que consiste na punção do fundo de saco de Douglas para verificar a presença de sangue, é um método diagnóstico considerado obsoleto na prática médica atual. Em uma paciente com sinais francos de choque e irritação peritoneal, o diagnóstico é clínico e o tratamento cirúrgico não deve ser retardado para a realização de procedimentos invasivos diagnósticos, que foram substituídos pela ultrassonografia.\n\nAlternativa b: Correta. A paciente apresenta uma emergência hemorrágica por ruptura de gravidez ectópica. O tratamento padrão para casos de ruptura com instabilidade é a salpingectomia (retirada da tuba uterina afetada). O manejo deve focar simultaneamente na estabilização hemodinâmica (reposição volêmica e possivelmente transfusão) e na cirurgia de urgência para cessar a hemorragia. A via de acesso (laparotomia ou laparoscopia) depende da gravidade do choque e da experiência da equipe cirúrgica.\n\nAlternativa c: Incorreta. O metotrexato é uma opção de tratamento medicamentoso para gravidez ectópica, mas seu uso é restrito a pacientes estáveis hemodinamicamente, com gravidez ectópica íntegra (não rota), sem batimentos cardíacos embrionários e com níveis de beta-hCG preferencialmente abaixo de 5.000 mUI/mL. A instabilidade hemodinâmica é uma contraindicação absoluta ao metotrexato.\n\nAlternativa d: Incorreta. Embora a apendicite aguda seja um diferencial importante de dor na fossa ilíaca direita, o teste de gravidez positivo direciona fortemente para uma causa obstétrica. Além disso, a rápida evolução para choque com sinais de hemorragia interna é característica da gravidez ectópica rota, enquanto na apendicite o choque costuma ser séptico e de instalação mais tardia após a perfuração.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Abdome Agudo em Ginecologia",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:30.020Z"
+  },
+  {
+    "id": "AJUDA_cb509716-c8fb-450e-87dd-57ee138198a5",
+    "originalId": "cb509716-c8fb-450e-87dd-57ee138198a5",
+    "statement": "Homem, 65 anos, hipertenso, morador de Altinópolis, região nordeste do estado de São Paulo. Relata ter trabalhado por mais de 30 anos em lavouras de café. Refere lesões em mucosa oral e palato, acompanhadas de fraqueza e mal-estar há 4 meses. Há 1 mês notou surgimento de lesão no lábio. Queixa de tosse seca e dispneia progressiva há 2 meses. Nega febre. Perda ponderal de 5 kg no período. ELISA anti-HIV: negativo. Biópsia das lesões orais: presença de abundante infiltrado inflamatório misto, com visualização de estruturas leveduriformes na coloração de metenamina de prata de Grocott Gomori em meio ao infiltrado inflamatório. Imagens das lesões orais e da radiografia de tórax são disponibilizadas na figura a seguir:\n\nQual é a terapia indicada para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rifampicina + Isoniazida + Etambutol + Pirazinamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aciclovir.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Itraconazol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Doxiciclina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve um paciente idoso, trabalhador de lavoura de café em área endêmica, com a forma crônica (tipo adulto) de Paracoccidioidomicose (PCM). \n\nA associação clínica e imagiológica é clássica:\n- As imagens das lesões orais revelam a estomatite moriforme de Aguiar-Pupo, caracterizada por lesões ulceradas com pontilhado hemorrágico fino sobre fundo eritematoso em mucosa oral e lábios.\n- A radiografia de tórax evidencia infiltrado reticulonodular bilateral difuso, comumente poupando ápices e bases (padrão em \"asa de borboleta\").\n- A biópsia confirma a presença de fungos por meio de estruturas leveduriformes evidenciadas pela coloração de Grocott.\n\nAnálise das alternativas:\n\nAlternativa a (Incorreta): O esquema RIPE (Rifampicina, Isoniazida, Pirazinamida e Etambutol) é indicado para o tratamento da tuberculose pulmonar. Embora a tuberculose seja o principal diagnóstico diferencial e possa ser concomitante, a biópsia comprovou infecção fúngica, não bacteriana.\n\nAlternativa b (Incorreta): O aciclovir é um antiviral empregado no tratamento de infecções herpéticas (vírus herpes simples ou varicela-zóster), não apresentando nenhuma ação contra infecções fúngicas sistêmicas como a PCM.\n\nAlternativa c (Correta): O itraconazol (200 mg ao dia por 9 a 18 meses) é a terapia de primeira escolha para as formas leves a moderadas de paracoccidioidomicose, apresentando alta taxa de sucesso clínico e micológico com boa tolerabilidade. O uso de anfotericina B fica reservado para casos graves com instabilidade clínica ou má absorção intestinal.\n\nAlternativa d (Incorreta): A doxiciclina é um antibacteriano da classe das tetraciclinas, usado em infecções causadas por bactérias atípicas, rickettsias ou clamídias, sem atividade contra o fungo Paracoccidioides spp.\n\nGabarito: Letra c.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Micoses Invasivas",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f3bce022e990343d27f524340768d084175b0dd0397ed2d7a70cf0685dd7d3f6.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_cb509716-c8fb-450e-87dd-57ee138198a5_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:30.545Z"
+  },
+  {
+    "id": "AJUDA_cb552137-babc-4dce-b83c-7d2e588a0b74",
+    "originalId": "cb552137-babc-4dce-b83c-7d2e588a0b74",
+    "statement": "Mulher, 55 anos de idade, portadora de miocardiopatia dilatada idiopática. Eletrocardiograma com bloqueio de ramo esquerdo (QRS: 150 ms). Ecocardiograma mostra fração de ejeção do ventrículo esquerdo de 25%, insuficiência mitral moderada a importante e disfunção sistólica do ventrículo direito. A paciente faz uso regular de furosemida 120 mg/dia, hidroclorotiazida 12,5 mg/dia, enalapril 20 mg/dia, carvedilol 50 mg/dia, espironolactona 25 mg/dia e empagliflozina 10 mg/dia. Apesar disso, mantém classe funcional III. Frequência cardíaca de 60 bpm e pressão arterial de 110 x 60 mmHg.\n\nQual é a melhor conduta adicional nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Associar ivabradina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Associar digoxina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Associar hidralazina e mononitrato de isossorbida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Terapia de ressincronização cardíaca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Clipagem percutânea da valva mitral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico:\nEstamos diante de uma paciente de 55 anos com Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFER), apresentando Fração de Ejeção do Ventrículo Esquerdo (FEVE) de 25%. Ela já está em otimização terapêutica máxima com a \"quádrupla terapia\" (Enalapril, Carvedilol, Espironolactona e Empagliflozina), além de diuréticos de alça e tiazídicos. Apesar disso, permanece sintomática (Classe Funcional III da NYHA). O eletrocardiograma revela ritmo sinusal com Bloqueio de Ramo Esquerdo (BRE) e QRS de 150 ms.\n\nAnálise das alternativas:\n\na) Incorreta. A ivabradina é indicada para pacientes com ICFER (FEVE menor ou igual a 35%), em ritmo sinusal, que mantêm frequência cardíaca maior ou igual a 70 bpm a despeito da dose máxima tolerada de betabloqueador. Como a paciente apresenta frequência cardíaca de 60 bpm, a ivabradina está contraindicada.\n\nb) Incorreta. A digoxina pode ser utilizada para redução de hospitalizações e controle de sintomas em pacientes que permanecem sintomáticos apesar do tratamento otimizado. No entanto, ela não é a prioridade neste caso, pois existe uma indicação de terapia que comprovadamente reduz a mortalidade e promove remodelamento cardíaco reverso: a ressincronização.\n\nc) Incorreta. A associação de hidralazina e nitrato é indicada preferencialmente para pacientes autodeclarados negros que mantêm sintomas apesar do tratamento padrão, ou para pacientes que possuem contraindicação ao uso de IECA, BRA ou Sacubitril-Valsartana (como insuficiência renal avançada ou hiperpotassemia). Não é a melhor conduta para o perfil desta paciente.\n\nd) Correta. A Terapia de Ressincronização Cardíaca (TRC) tem indicação Classe I, Nível de Evidência A para pacientes com: ICFER (FEVE menor ou igual a 35%), em ritmo sinusal, com tratamento clínico otimizado, que permanecem sintomáticos (NYHA II a IV) e possuem Bloqueio de Ramo Esquerdo com QRS maior ou igual a 150 ms. A paciente preenche todos esses critérios. A TRC ajuda a corrigir a dissincronia ventricular causada pelo BRE, melhorando a eficiência cardíaca, a fração de ejeção e reduzindo a mortalidade.\n\ne) Incorreta. A clipagem percutânea da valva mitral (MitraClip) é considerada em casos selecionados de insuficiência mitral secundária importante que permanecem sintomáticos apesar do tratamento clínico. No entanto, em pacientes com indicação de ressincronização cardíaca, deve-se primeiro realizar a TRC e reavaliar o grau da insuficiência mitral após o remodelamento reverso, antes de indicar procedimentos invasivos na valva.\n\nGabarito: Letra (d).",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cardiomiopatias",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:30.545Z"
+  },
+  {
+    "id": "AJUDA_cb5cca41-e9cb-4785-9cd3-8146926f029c",
+    "originalId": "cb5cca41-e9cb-4785-9cd3-8146926f029c",
+    "statement": "Preparo pré-operatório: medidas clínicas, laboratoriais e nutricionais As diretrizes modernas de jejum pré-operatório, consubstanciadas nos protocolos ERAS (Enhanced Recovery After Surgery) e ACERTO, desafiam o dogma tradicional do \"nada pela boca após a meia-noite\". Considerando a resposta metabólica ao trauma e a fisiologia do esvaziamento gástrico em cirurgias eletivas sem contraindicações específicas (como obstrução ou gastroparesia grave), a conduta correta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A ingestão de líquidos claros contendo carboidratos (maltodextrina) até 2 horas antes da indução anestésica é recomendada para atenuar a resistência insulínica pós-operatória e o catabolismo proteico, devendo-se respeitar o jejum de 6 a 8 horas para sólidos e leite não humano.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A ingestão de líquidos é permitida até 4 horas antes da cirurgia, mas a adição de carboidratos deve ser evitada, pois aumenta a acidez gástrica e o volume residual, elevando o risco de pneumonite aspirativa (Síndrome de Mendelson).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Para pacientes com obesidade mórbida, a abreviação do jejum com líquidos claros é formalmente contraindicada em qualquer cenário, sendo obrigatório o jejum absoluto de 8 horas para qualquer ingestão devido ao risco inaceitável de broncoaspiração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O jejum prolongado tradicional (8 a 12 horas) deve ser mantido como padrão-ouro em cirurgias de grande porte, pois a depleção total do glicogênio hepático é necessária para prevenir a hiperglicemia de estresse durante o ato cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda a mudança de paradigma no preparo pré-operatório, fundamentada pelos protocolos ERAS (Enhanced Recovery After Surgery) e, no Brasil, pelo projeto ACERTO (Aceleração da Recuperação Total Pós-Operatória). O objetivo é reduzir a resposta metabólica e endócrina ao estresse cirúrgico.\n\nAnálise das alternativas:\n\nAlternativa A (CORRETA): Esta alternativa reflete fielmente as diretrizes atuais. A abreviação do jejum com líquidos claros (água, chás, sucos sem resíduos) e, especificamente, o uso de carboidratos (geralmente maltodextrina a 12,5%) até 2 horas antes da cirurgia traz benefícios comprovados. Essa prática altera o estado metabólico do paciente de \"jejum\" para \"alimentado\", o que reduz a resistência insulínica pós-operatória, preserva a massa magra (diminui o catabolismo proteico) e melhora o bem-estar subjetivo (menos ansiedade e sede). O prazo de 6 a 8 horas para sólidos e leite não humano é mantido por segurança quanto ao esvaziamento gástrico.\n\nAlternativa B (INCORRETA): O tempo de segurança para líquidos claros não é de 4 horas, mas sim de 2 horas. Além disso, a adição de carboidratos não é prejudicial; pelo contrário, é o componente principal da estratégia de abreviação do jejum para modular a resposta metabólica. Estudos demonstram que líquidos claros deixam o estômago rapidamente e não aumentam o risco de pneumonite aspirativa (Síndrome de Mendelson) em pacientes sem fatores de risco para estase gástrica.\n\nAlternativa C (INCORRETA): A obesidade mórbida isoladamente não é mais considerada uma contraindicação formal e absoluta para a abreviação do jejum com líquidos claros até 2 horas antes do procedimento. Embora esses pacientes exijam avaliação criteriosa, as diretrizes modernas permitem a abreviação do jejum em obesos, desde que não haja outros fatores complicadores graves, como refluxo gastroesofágico não controlado ou sinais de gastroparesia.\n\nAlternativa D (INCORRETA): O jejum prolongado de 8 a 12 horas (nada por boca após a meia-noite) é uma prática obsoleta para cirurgias eletivas. Diferente do que afirma a alternativa, o jejum prolongado aumenta a resistência insulínica e a hiperglicemia de estresse, além de promover a depleção de glicogênio hepático e a proteólise. O objetivo moderno é justamente o oposto: entrar na cirurgia em um estado metabólico mais favorável para acelerar a recuperação.\n\nResumo dos tempos recomendados (Protocolo ACERTO):\n- Líquidos claros com carboidratos: até 2 horas antes.\n- Leite materno: até 4 horas antes.\n- Leite não humano e fórmulas infantis: até 6 horas antes.\n- Refeição leve (sólidos): até 6 horas antes.\n- Refeição gordurosa ou carne: 8 horas antes.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Perioperatório",
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:30.545Z"
+  },
+  {
+    "id": "AJUDA_cb5f6334-5f82-4da2-bd58-807cec139cc4",
+    "originalId": "cb5f6334-5f82-4da2-bd58-807cec139cc4",
+    "statement": "Qual é o PRINCIPAL objetivo da cardiotocografia (CTG) anteparto, realizada no terceiro trimestre da gestação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliar a maturidade pulmonar fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Medir o volume de líquido amniótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Detectar anomalias congênitas estruturais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Avaliar o bem-estar fetal por meio da frequência cardíaca e sua relação com a contratilidade uterina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A cardiotocografia (CTG) anteparto é um método biofísico de avaliação da vitalidade fetal, sendo amplamente utilizada no terceiro trimestre para identificar fetos em risco de hipóxia ou acidemia.\n\nAnálise das alternativas:\n\na) Incorreta. A maturidade pulmonar fetal não é avaliada pela frequência cardíaca. Historicamente, essa avaliação era feita por testes bioquímicos no líquido amniótico (como a relação lecitina/esfingomielina). Atualmente, a maturidade é inferida pela idade gestacional ou prevenida com o uso de corticoides em ameaças de parto prematuro.\n\nb) Incorreta. A medição do volume de líquido amniótico é realizada exclusivamente por ultrassonografia, utilizando-se o Índice de Líquido Amniótico (ILA) ou a medida do Maior Bolsão Vertical (MBV). Embora o volume de líquido faça parte do Perfil Biofísico Fetal (PBF), a cardiotocografia isolada não consegue medi-lo.\n\nc) Incorreta. O diagnóstico de anomalias congênitas estruturais é o objetivo da ultrassonografia morfológica, realizada idealmente no segundo trimestre de gestação. A cardiotocografia é um exame funcional, não anatômico.\n\nd) Correta. O objetivo principal da CTG é avaliar o estado da oxigenação fetal no momento do exame. Ela monitora a frequência cardíaca fetal (FCF) e suas mudanças (acelerações ou desacelerações) em resposta aos movimentos fetais ou às contrações uterinas espontâneas. Uma CTG dita reativa indica que o sistema nervoso central do feto está íntegro e bem oxigenado.\n\nGabarito: Alternativa (d).",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Vitalidade Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:30.545Z"
+  }
+]

@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_a241446a-8ee0-47c6-877b-98ed1ad8ffba",
+    "originalId": "a241446a-8ee0-47c6-877b-98ed1ad8ffba",
+    "statement": "Ana, 25 anos, comparece ao consultório ginecológico queixando-se de corrimento vaginal que começou há cerca de duas semanas. Ela relata que, inicialmente, não se incomodou com o corrimento, mas agora está preocupada, pois notou que o odor piora após o coito e durante a menstruação. Ana descreve o corrimento como branco e homogêneo, mas sem coceira ou ardor. Exame físico: a mucosa vaginal não apresenta sinais de inflamação, como eritema ou edema, o corrimento é observado como branco-acinzentado e homogêneo, e apresenta um pH vaginal elevado. Sua condição é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vaginose bacteriana, com corrimento branco-acinzentado e odor desagradável, sem sinais inflamatórios.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Vaginose bacteriana com sinais inflamatórios, indicando uma possível vaginite mista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vaginite por tricomoníase, apresentando corrimento amarelo-esverdeado e odor fétido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vaginite candidiásica, caracterizada por corrimento espesso e prurido intenso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro clássico de Vaginose Bacteriana (VB). A VB é um desequilíbrio da flora vaginal (disbiose), caracterizado pela redução de Lactobacillus e proliferação de bactérias anaeróbias, especialmente a Gardnerella vaginalis. Diferente das vaginites, a VB não provoca uma resposta inflamatória na mucosa, o que explica a ausência de dor, coceira ou vermelhidão no exame físico.\n\nOs achados relatados preenchem os Critérios de Amsel, utilizados para o diagnóstico clínico da condição:\n1. Corrimento homogêneo, branco ou acinzentado.\n2. pH vaginal elevado (maior que 4,5).\n3. Odor característico (semelhante a peixe), que se acentua com o aumento do pH vaginal, como ocorre após o contato com o sêmen (que é alcalino) durante o coito ou com o sangue menstrual.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: CORRETA. Esta alternativa descreve com precisão o quadro de Vaginose Bacteriana. O corrimento é tipicamente branco-acinzentado e o odor desagradável é a principal queixa. A ausência de sinais inflamatórios (eritema ou edema) é o marcador fundamental que diferencia a vaginose das vaginites.\n\nAlternativa B: INCORRETA. A Vaginose Bacteriana define-se justamente pela ausência de sinais inflamatórios. A presença de inflamação sugeriria um diagnóstico diferencial ou uma infecção mista com agentes que causam vaginite (como fungos ou protozoários), o que contradiz o exame físico descrito na questão.\n\nAlternativa C: INCORRETA. A Tricomoníase é uma vaginite infecciosa e inflamatória. O corrimento costuma ser amarelo-esverdeado, bolhoso e acompanhado de sinais como o colo uterino com aspecto de framboesa (colpite focal) e irritação vulvovaginal. Embora o pH também seja elevado na tricomoníase, a falta de sinais inflamatórios no caso de Ana descarta essa opção.\n\nAlternativa D: INCORRETA. A Candidíase é caracterizada por intenso prurido (coceira) e sinais inflamatórios evidentes (edema e eritema). O corrimento é branco e grumoso (aspecto de leite coalhado), geralmente sem odor forte, e o pH vaginal costuma ser normal ou ácido (menor que 4,5), o que não condiz com os achados da paciente.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:23.299Z"
+  },
+  {
+    "id": "AJUDA_a2471b94-d3f4-4812-ad71-d2f4dd066f04",
+    "originalId": "a2471b94-d3f4-4812-ad71-d2f4dd066f04",
+    "statement": "A principal complicação da pancreatite aguda grave na primeira semana é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infecção pancreática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pseudoaneurisma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Choque hipovolêmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pseudocisto pancreático.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A pancreatite aguda é dividida em duas fases clínicas: a fase precoce (que compreende a primeira semana) e a fase tardia (após a primeira semana). Na fase precoce, a gravidade é determinada pela presença de falência orgânica, que é desencadeada pela Resposta Inflamatória Sistêmica (SIRS). O principal mecanismo fisiopatológico nesse período é o aumento da permeabilidade capilar e a liberação de mediadores inflamatórios, o que promove um intenso sequestro de líquidos para o terceiro espaço.\n\nAlternativa (a) Incorreta: A infecção pancreática, como a necrose infectada, é uma complicação que tipicamente ocorre na fase tardia da doença, geralmente após a segunda semana (entre o 10º e o 14º dia). Embora seja uma causa importante de mortalidade, não é a principal complicação da primeira semana.\n\nAlternativa (b) Incorreta: O pseudoaneurisma é uma complicação vascular rara que resulta da erosão de vasos sanguíneos (como a artéria esplênica) pelas enzimas pancreáticas. Trata-se de uma condição tardia, muitas vezes relacionada à pancreatite crônica ou à evolução prolongada de uma pancreatite aguda grave.\n\nAlternativa (c) Correta: O choque hipovolêmico é a principal complicação e a maior preocupação clínica nos primeiros sete dias de uma pancreatite aguda grave. A inflamação sistêmica causa um grande deslocamento de fluidos do compartimento intravascular para o interstício (terceiro espaço). Se não houver uma ressuscitação volêmica adequada, o paciente evolui com choque, instabilidade hemodinâmica e subsequente falência de múltiplos órgãos.\n\nAlternativa (d) Incorreta: O pseudocisto pancreático é uma coleção líquida peripancreática envolvida por uma parede de tecido fibroso ou de granulação. Por definição (Classificação de Atlanta), sua formação leva pelo menos 4 semanas a partir do início da pancreatite, o que o torna uma complicação tardia e não da fase inicial.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:23.299Z"
+  },
+  {
+    "id": "AJUDA_a24ac546-6aea-4f8f-9848-595ecd793e73",
+    "originalId": "a24ac546-6aea-4f8f-9848-595ecd793e73",
+    "statement": "Paciente 57 anos, com urgência miccional frequente e eventuais episódios de incontinência urinária de urgência iniciados 3 anos após a menopausa. Acorda 2 vezes a noite para urinar e houve muita piora da qualidade de vida laboral e afetiva. Nega doenças neurológicas prévias e cirurgias ginecológicas e urológicas prévias. G2C2, menopausa aos 51 anos sem terapia hormonal. Bom estado geral, IMC: 29,4 Kg/m2.Exame ginecológico: vagina lisa, pálida e sem conteúdo. Toque bi digital: força contrátil do assoalho pélvico normal. Urocultura negativa. O diagnóstico mais provável desta paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "divertículo uretral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "incontinência urinária mista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "síndrome da bexiga hiperativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "incontinência urinária contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "incontinência urinária de esforço.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nA paciente apresenta um quadro clínico clássico de Síndrome da Bexiga Hiperativa (SBH). Os principais achados são a urgência miccional (desejo súbito e imperioso de urinar, difícil de adiar), a incontinência urinária de urgência (perda involuntária de urina acompanhada ou precedida por urgência) e a nictúria (acordar duas ou mais vezes à noite para urinar). O fato de os sintomas terem se iniciado após a menopausa é comum, já que o hipoestrogenismo causa atrofia genital (confirmada no exame físico pela vagina lisa e pálida), o que reduz o limiar de sensibilidade vesical e contribui para os sintomas de urgência. A urocultura negativa é fundamental para excluir infecção do trato urinário, que é o principal diagnóstico diferencial.\n\nAnálise das Alternativas:\n\na) Incorreta. O divertículo uretral geralmente se manifesta pela tríade de disúria, dispareunia e gotejamento pós-miccional. Ao exame físico, muitas vezes é possível palpar uma massa na parede vaginal anterior, o que não foi relatado no caso.\n\nb) Incorreta. A incontinência urinária mista ocorre quando há associação de sintomas de incontinência de esforço (perda ao tossir, espirrar ou carregar peso) com sintomas de urgência. O relato da paciente foca exclusivamente nos sintomas de urgência e nictúria, sem queixas relacionadas ao esforço físico.\n\nc) Correta. A Síndrome da Bexiga Hiperativa é um diagnóstico clínico definido pela International Continence Society (ICS) como a presença de urgência miccional, geralmente acompanhada de frequência aumentada e nictúria, com ou sem incontinência urinária de urgência, na ausência de infecção urinária ou outras doenças metabólicas ou locais óbvias. O caso descreve exatamente esse conjunto de sintomas.\n\nd) Incorreta. A incontinência urinária contínua caracteriza-se pela perda constante de urina, sem relação com esforço ou urgência. Está frequentemente associada a fístulas geniturinárias (comuns após cirurgias ginecológicas, que a paciente nega) ou ureter ectópico.\n\ne) Incorreta. Na incontinência urinária de esforço, a perda ocorre devido ao aumento da pressão intra-abdominal (tosse, riso, exercício) e falha nos mecanismos de suporte uretral. A paciente não apresenta essas queixas e o toque vaginal mostrou força contrátil do assoalho pélvico normal.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Incontinência Urinária",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:23.299Z"
+  },
+  {
+    "id": "AJUDA_a24be2f9-0118-4a74-850a-6735db550e92",
+    "originalId": "a24be2f9-0118-4a74-850a-6735db550e92",
+    "statement": "Assinale a assertiva correta sobre a toxicidade dos compostos do tabaco na gestante e no feto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O transporte de aminoácidos pela placenta está aumentado nas fumantes, o que interfere na síntese proteica e contribui para o mau desenvolvimento da membrana amniocoriônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A nicotina causa vasoconstricção dos vasos do útero e da placenta, reduzindo o fluxo sanguíneo e a oferta de oxigênio e nutrientes para o feto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O aumento de abortamentos em fumantes pode ser explicado pelo aumento da síntese placentária de óxido nítrico, um potente constritor do miométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hemoglobina fetal tem uma ligação com o monóxido de carbono mais fraca do que a hemoglobina materna, resultando em níveis de carboxi-hemoglobina mais elevados na circulação fetal, responsáveis pela hipoxemia tecidual.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O tabagismo durante a gestação é uma das principais causas evitáveis de desfechos obstétricos e perinatais negativos. A compreensão da fisiopatologia dos compostos do tabaco é essencial para entender as complicações associadas.\n\nAlternativa (a) Incorreta: O tabagismo não aumenta, mas sim reduz o transporte ativo de aminoácidos pela placenta. A exposição aos componentes do cigarro prejudica os sistemas de transporte placentário, o que compromete a oferta de substratos para a síntese proteica fetal. Isso resulta em déficit de crescimento e pode fragilizar a constituição das membranas amniocoriônicas.\n\nAlternativa (b) Correta: Esta é a descrição clássica da ação da nicotina. A nicotina atravessa a placenta e atua como um potente agente simpatomimético, estimulando a liberação de catecolaminas. Isso provoca vasoconstrição nas artérias uterinas e nos vasos placentários, levando à hipoperfusão sistêmica do feto. A redução do fluxo sanguíneo diminui o aporte de oxigênio e nutrientes, sendo o mecanismo primário para a restrição de crescimento intrauterino (RCIU) e baixo peso ao nascer.\n\nAlternativa (c) Incorreta: O erro aqui é funcional e bioquímico. O óxido nítrico (NO) é um potente vasodilatador e um relaxante do miométrio, e não um constritor. O aumento de abortamentos em fumantes está relacionado a danos vasculares, estresse oxidativo, alterações na angiogênese placentária e possíveis anormalidades cromossômicas, mas não a uma suposta ação constritora do óxido nítrico.\n\nAlternativa (d) Incorreta: O monóxido de carbono (CO) tem uma afinidade pela hemoglobina muito superior à do oxigênio. No caso do feto, a hemoglobina fetal (HbF) apresenta uma afinidade pelo CO ainda maior do que a hemoglobina materna (HbA). Portanto, a ligação é mais forte, e não mais fraca. Isso faz com que os níveis de carboxi-hemoglobina no sangue fetal sejam significativamente mais elevados que os maternos, deslocando a curva de dissociação da hemoglobina para a esquerda e reduzindo a entrega de oxigênio aos tecidos fetais (hipóxia tecidual).",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:23.299Z"
+  },
+  {
+    "id": "AJUDA_a25a208f-f891-4b28-ae82-0398fa35b8f6",
+    "originalId": "a25a208f-f891-4b28-ae82-0398fa35b8f6",
+    "statement": "Mulher, 68 anos, refere dor em joelhos há 1 ano, com piora progressiva, localizada principalmente 7/10). A dor é acentuada durante ortostase e atividades físicas, melhorando parcialmente após uso de dipirona, com alívio parcial. É hipertensa, em tratamento com enalapril, mas refere que não controla bem a pressão arterial. Exame físico: BEG; IMC: 31,5 kg/m²; presença de calor e crepitação à movimentação em joelhos (figura abaixo). Qual é a alteração mais provável de ser encontrada em radiografia dos joelhos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esclerose óssea subcondral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Calcificações ligamentares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Erosões em saca bocado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Osteopenia justa articular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito — paciente idosa, com sobrepeso (IMC 31,5 kg/m²), dor mecânica nos joelhos (piora ao esforço e à ortostase) e presença de crepitação ao exame físico — é clássico para osteoartrite (ou osteoartrose) de joelhos, também chamada de gonartrose. A imagem apresentada corrobora o diagnóstico ao mostrar um desalinhamento em varo (genu varum) e aumento de volume articular, sinais de degeneração crônica da articulação.\n\nAs alterações radiográficas fundamentais na osteoartrite seguem o mnemônico \"RECO\": Redução do espaço articular (geralmente assimétrica), Esclerose subcondral, Cistos (geodes) subcondrais e Osteófitos.\n\nAnálise das alternativas:\n\na) CORRETA. A esclerose óssea subcondral é um dos sinais cardinais da osteoartrite na radiografia. Ela ocorre devido ao aumento da densidade óssea na região logo abaixo da cartilagem desgastada, como uma resposta do tecido ósseo ao estresse mecânico crônico e à perda da função amortecedora da cartilagem.\n\nb) INCORRETA. Calcificações ligamentares não são achados típicos da osteoartrite primária. Podem ser vistas em condições como a Hiperostose Esquelética Idiopática Difusa (DISH) ou após traumas ligamentares antigos, mas não definem o quadro de gonartrose descrito.\n\nc) INCORRETA. Erosões em \"saca-bocado\" são achados característicos da gota (artrite gotosa crônica tofácea). Na osteoartrite, o osso tende a ganhar densidade (esclerose) e formar protuberâncias (osteófitos), e não apresentar erosões marginais perfuradas.\n\nd) INCORRETA. A osteopenia justa-articular (ou periarticular) é um sinal radiográfico clássico de artropatias inflamatórias, especialmente a artrite reumatoide. Na osteoartrite, por ser uma doença de caráter degenerativo/mecânico, o que se observa é o oposto: um aumento da radiopacidade (esclerose) e não a rarefação óssea próxima à articulação.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Doenças do Osso e da Cartilagem"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ee0ee2a42dc18cd395ab6089878a60c709099ad6e03a0bcb0799356968f265fe.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_a25a208f-f891-4b28-ae82-0398fa35b8f6_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:23.777Z"
+  },
+  {
+    "id": "AJUDA_a25e3882-67e3-429a-9b57-d1b31c6ec1da",
+    "originalId": "a25e3882-67e3-429a-9b57-d1b31c6ec1da",
+    "statement": "Paciente tem quadro de neutropenia febril. Considerando esse quadro, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aincidência de infecções aumenta substancialmente quando a contagem de neutrófilos fica abaixo de 600 células/µL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pacientes entre o 5º e o 10º dia pós-quimioterapia estão sob maior risco de neutropenia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Recomendações atuais preconizam que a antibioticoterapia de amplo espectro deve ser iniciada dentro de 2 horas da apresentação na unidade hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A terapia empírica inicial mais recomendada é feita com ceftrixone.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Bacilos gram-negativos têm grande relevância na ocorrência, assim como cocos gram-positivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa a: Incorreta. O risco de infecção aumenta de forma significativa quando a contagem absoluta de neutrófilos (CAN) cai abaixo de 500 células/microlitro. O risco torna-se ainda mais grave (neutropenia profunda) quando a contagem é inferior a 100 células/microlitro. O valor de 600 células/microlitro citado não é o ponto de corte clássico para o aumento substancial da incidência de infecções.\n\nAlternativa b: Incorreta. O período de maior queda dos neutrófilos, chamado de nadir, depende do protocolo quimioterápico utilizado, mas geralmente ocorre entre o 7º e o 14º dia após a administração do tratamento. O intervalo entre o 5º e o 10º dia é muito restrito e não reflete a regra geral para a maioria dos pacientes sob risco.\n\nAlternativa c: Incorreta. A neutropenia febril é uma emergência médica. As diretrizes nacionais e internacionais (como as da IDSA) preconizam que a primeira dose da antibioticoterapia de amplo espectro deve ser administrada em até 60 minutos (1 hora) após a apresentação do paciente ao serviço de saúde. O prazo de 2 horas é considerado excessivo para o manejo adequado.\n\nAlternativa d: Incorreta. A ceftriaxona é uma cefalosporina de terceira geração que não possui cobertura contra Pseudomonas aeruginosa, um dos patógenos mais agressivos em pacientes neutropênicos. A terapia empírica inicial deve obrigatoriamente incluir um agente com ação antipseudomonal, como cefepime, piperacilina-tazobactam ou carbapenêmicos (imipenem ou meropenem).\n\nAlternativa e: Correta. Historicamente, os bacilos Gram-negativos eram os principais agentes isolados e causadores de maior mortalidade. Contudo, nas últimas décadas, os cocos Gram-positivos tornaram-se agentes muito frequentes devido ao uso disseminado de cateteres venosos centrais e à ocorrência de mucosite. Portanto, ambos os grupos de microrganismos possuem grande relevância clínica na etiologia da neutropenia febril.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Neutropenia Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:23.777Z"
+  },
+  {
+    "id": "AJUDA_a25f0271-ef41-4239-a8c5-ca504bc156f8",
+    "originalId": "a25f0271-ef41-4239-a8c5-ca504bc156f8",
+    "statement": "Homem de 68 anos, usuário crônico de AINE por osteoartrose, apresenta hematêmese volumosa. Submetido à endoscopia digestiva alta somente 24 horas após sangramento por transferência a outro serviço, evidenciando úlcera gástrica ativa, no corpo, com estigmas de sangramento recente, A1 de Sakita, Forrest IIc. Após estabilização clínica, qual conduta é obrigatória, independentemente, da evolução clínica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Erradicação empírica do Helicobacter pylori.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso contínuo de bloqueador H2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realização de biópsias da úlcera.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Cirurgia precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Suspensão isolada do AINE.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve um paciente idoso com hemorragia digestiva alta (HDA) causada por uma úlcera gástrica. A classificação de Sakita A1 indica que a úlcera está em fase ativa, e a classificação de Forrest IIc (base com hematina) aponta um baixo risco de ressangramento (cerca de 5 a 10%), o que geralmente permite o tratamento clínico após a estabilização. No entanto, o ponto crucial da questão não é o manejo do sangramento agudo, mas sim a conduta diagnóstica obrigatória diante de qualquer úlcera localizada no estômago.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nDiferentemente das úlceras duodenais, que são quase sempre benignas, as úlceras gástricas podem ocultar uma neoplasia (câncer gástrico). Mesmo que o paciente utilize anti-inflamatórios (AINEs), que são causas conhecidas de úlceras, a realização de biópsias das bordas da úlcera gástrica é mandatória para excluir malignidade. Além disso, é necessária a confirmação da cicatrização por meio de uma nova endoscopia após 6 a 8 semanas, com novas biópsias se a lesão persistir.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): A erradicação do H. pylori deve ser realizada se a bactéria for identificada, e não de forma empírica e sem diagnóstico prévio, especialmente em um cenário de úlcera com indicação de biópsia para exclusão de câncer.\n\nAlternativa (b): O tratamento de escolha para a cicatrização de úlceras pépticas e para a profilaxia em usuários de AINEs são os Inibidores de Bomba de Prótons (IBP), como o omeprazol, e não os bloqueadores H2 (como a ranitidina), que são menos eficazes. Além disso, o uso contínuo depende de uma avaliação de risco-benefício a longo prazo, não sendo a conduta \"obrigatória\" inicial antes do diagnóstico diferencial.\n\nAlternativa (d): A cirurgia precoce não está indicada. O paciente apresenta uma úlcera Forrest IIc, que tem baixo risco de recidiva hemorrágica e deve ser tratada clinicamente com IBP. A cirurgia é reservada para casos de hemorragia refratária ao tratamento endoscópico, perfuração ou obstrução.\n\nAlternativa (e): A suspensão do AINE é uma medida terapêutica importante para permitir a cicatrização e evitar recidivas, mas, isoladamente, não é a conduta obrigatória principal. A prioridade máxima em uma úlcera gástrica, do ponto de vista propedêutico, é garantir que a lesão não seja um câncer.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori",
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:23.777Z"
+  },
+  {
+    "id": "AJUDA_a26bdafa-4313-44d6-a0d8-4e6d9d6bc205",
+    "originalId": "a26bdafa-4313-44d6-a0d8-4e6d9d6bc205",
+    "statement": "Você está estudando fatores de risco para o desenvolvimento de pré-eclâmpsia, e um estudo indica que ter um histórico anterior dessa condição aumenta em oito vezes o risco de desenvolvê-la em uma gravidez subsequente, em comparação com pacientes sem esse histórico. A medida de efeito que está sendo apresentada nesse estudo é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Risco relativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Risco atribuível.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Risco absoluto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Risco atribuível na população.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão descreve uma comparação entre dois grupos distintos: mulheres com histórico de pré-eclâmpsia (grupo exposto) e mulheres sem esse histórico (grupo não exposto). Quando o enunciado afirma que o risco é oito vezes maior em um grupo em relação ao outro, ele está estabelecendo uma razão entre as incidências desses grupos.\n\nAlternativa (a) - Correta: O Risco Relativo (RR) é a medida de associação que quantifica quantas vezes a ocorrência de um desfecho é maior (ou menor) no grupo exposto em comparação ao grupo não exposto. Ele é obtido por meio da divisão da incidência do grupo exposto pela incidência do grupo não exposto. Portanto, ao dizer que o risco aumentou em oito vezes, estamos definindo que o RR é igual a 8.\n\nAlternativa (b) - Incorreta: O Risco Atribuível, também chamado de Diferença de Riscos, não é uma medida de razão, mas sim de subtração. Ele é calculado subtraindo-se a incidência nos não expostos da incidência nos expostos (Ie - Io). Essa medida indica o excesso de casos que ocorre exclusivamente devido à presença do fator de risco, sendo expressa em valores absolutos (por exemplo, 5 casos extras a cada 100 pessoas) e não como um multiplicador.\n\nAlternativa (c) - Incorreta: O Risco Absoluto é sinônimo de incidência. Ele representa a probabilidade de um evento ocorrer em um grupo específico durante um período de tempo (ex.: 10% das gestantes tiveram a condição). Ele não faz a comparação direta de magnitude entre dois grupos diferentes como solicitado no enunciado.\n\nAlternativa (d) - Incorreta: O Risco Atribuível na População (ou Fração Atribuível Populacional) mede o impacto de um fator de risco na população total e não apenas nos indivíduos expostos. Ele estima quanto da incidência da doença em toda a comunidade poderia ser evitada se o fator de risco fosse eliminado. Para seu cálculo, é necessário conhecer a prevalência do fator de risco na população, informação que não foi fornecida.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:23.777Z"
+  },
+  {
+    "id": "AJUDA_a271f59b-af79-43e1-8cef-d84798a1d834",
+    "originalId": "a271f59b-af79-43e1-8cef-d84798a1d834",
+    "statement": "As ações decorrentes das políticas e dos serviços de saúde incidem nos diversos momentos da história natural de uma determinada doença. De acordo com os níveis de prevenção segundo Leavell e Clark (1976), pode-se afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a prevenção primária compreende a aplicação de medidas de saúde que evitem o aparecimento de doenças, como a higiene corporal, a fluoretação da água e campanhas contra o uso de drogas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a imunização de crianças contra a poliomielite, sarampo e tétano é um exemplo de prevenção secundária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o encaminhamento a um especialista para diagnóstico e tratamento em âmbito hospitalar são ações de prevenção terciária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a prevenção quaternária envolve ações realizadas quando a doença já causou o dano, como a reabilitação e medidas de caráter psicossocial, para a reinserção do indivíduo na força de trabalho",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender esta questão, é fundamental recordar o modelo de História Natural da Doença proposto por Leavell e Clark em 1976, que divide as ações de saúde em três grandes níveis: primário, secundário e terciário.\n\nAlternativa (a): CORRETA. A prevenção primária ocorre no período de pré-patogênese, ou seja, antes de a doença se instalar no organismo. Ela se subdivide em Promoção da Saúde (medidas gerais como higiene corporal, educação sanitária e campanhas contra o uso de drogas) e Proteção Específica (medidas direcionadas a riscos específicos, como a fluoretação da água para prevenir a cárie dentária e o uso de preservativos).\n\nAlternativa (b): INCORRETA. A imunização (vacinação) é um exemplo clássico de Prevenção Primária, especificamente dentro do grupo de Proteção Específica. Ela visa evitar que a doença ocorra. A prevenção secundária foca em diagnóstico precoce e tratamento imediato de uma doença já existente, mas ainda em estágio inicial ou assintomático (como o rastreamento por exames).\n\nAlternativa (c): INCORRETA. O diagnóstico e o tratamento (seja em nível ambulatorial ou hospitalar) são componentes da Prevenção Secundária. O objetivo dessas ações é interromper o processo mórbido e evitar complicações ou sequelas. A prevenção terciária, por outro lado, foca na reabilitação do paciente.\n\nAlternativa (d): INCORRETA. A descrição apresentada (reabilitação e reinserção social e profissional) corresponde à Prevenção Terciária, que atua quando a doença já deixou sequelas ou incapacidades. Além disso, o conceito de Prevenção Quaternária não faz parte do modelo original de Leavell e Clark de 1976; ele foi introduzido posteriormente por Marc Jamoulle e refere-se à detecção de indivíduos em risco de intervenções médicas excessivas ou desnecessárias (iatrogenia).",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:23.777Z"
+  },
+  {
+    "id": "AJUDA_a2753805-8d11-48ac-aef4-cc9c9675b297",
+    "originalId": "a2753805-8d11-48ac-aef4-cc9c9675b297",
+    "statement": "Paciente, sexo feminino, 56 anos de idade, tem diagnóstico de lúpus eritematoso sistêmico com envolvimento cutâneo-articular-renal há 40 anos. Fez uso de pulso de metilprednisolona e ciclofosfamida. Atualmente em uso de hidroxidoroquina 400 mg/d e prednisona 5 mg/dia (faz uso desde o diagnóstico). É tabagista 36 anos/maço, nega exercício físico. Os resultados dos exames complementares mostram: Hemoglobina 12 g/dL, Creatinina 1,8 mg/dL, Taxa de Filtração Glomerular (TFG) 28 mL/min, 25(OH)vitamina D 20,0 ng/mL. Densitometria Óssea com T-score de -3,0 na coluna lombar. De acordo com o relato do caso e com os dados apresentados, qual é a recomendação para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cálcio e vitamina D.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cálcio, vitamina D e alendronato de sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cálcio, vitamina D e ácido zoledrônico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cálcio, vitamina D e denosumabe.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro de osteoporose estabelecida, evidenciada na Tabela 2 pelo T-score de -3,0 na coluna lombar (valores menores ou iguais a -2,5 definem osteoporose). Além disso, ela possui fatores de risco importantes: é tabagista, sedentária e faz uso crônico de corticoide (prednisona) há 40 anos, o que configura osteoporose induzida por glicocorticoide.\n\nO ponto crucial para a resolução da questão está na Tabela 1: a paciente apresenta creatinina de 1,8 mg/dL e uma Taxa de Filtração Glomerular (TFG) de 28 mL/min. Isso a classifica como portadora de Doença Renal Crônica estágio 4. Essa informação limita drasticamente a escolha da terapia medicamentosa.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Embora a reposição de cálcio e vitamina D seja fundamental (especialmente considerando que a Tabela 1 mostra uma vitamina D limítrofe de 20 ng/mL), ela isoladamente é insuficiente para uma paciente com T-score de -3,0 e uso crônico de corticoide. É necessário associar um agente antirreabsortivo para reduzir o risco de fraturas.\n\nAlternativa b) Incorreta. O alendronato de sódio é um bisfosfonato oral. Os bisfosfonatos são excretados pelos rins e seu uso é contraindicado em pacientes com insuficiência renal significativa, geralmente com TFG abaixo de 35 mL/min. Como a paciente tem TFG de 28 mL/min, o alendronato não deve ser prescrito pelo risco de toxicidade e falta de estudos de segurança nessa faixa.\n\nAlternativa c) Incorreta. O ácido zoledrônico é um bisfosfonato intravenoso potente. Assim como os bisfosfonatos orais, ele é contraindicado para pacientes com TFG abaixo de 35 mL/min devido ao risco de lesão renal aguda e acúmulo da droga. Portanto, a TFG de 28 mL/min contraindica esta opção.\n\nAlternativa d) Correta. O denosumabe é um anticorpo monoclonal humano (anti-RANKL) que inibe a reabsorção óssea. Diferente dos bisfosfonatos, o denosumabe não tem excreção renal, sendo metabolizado pelo sistema reticuloendotelial. Por essa razão, é o medicamento de escolha para o tratamento da osteoporose em pacientes com disfunção renal grave (TFG abaixo de 30 mL/min). A associação com cálcio e vitamina D é obrigatória para prevenir a hipocalcemia, um efeito colateral possível do denosumabe em pacientes renais crônicos.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Metabolismo Ósseo e Mineral",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/4212bc66bc04522235c6ac33dca7952c11294b648f94ddfc8933f195c62d02e4.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_a2753805-8d11-48ac-aef4-cc9c9675b297_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/dbfcd74c7f65072d9d0b1fe16cb99063d48432a1016b6229ca421cce8ce890eb.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_a2753805-8d11-48ac-aef4-cc9c9675b297_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:24.611Z"
+  }
+]

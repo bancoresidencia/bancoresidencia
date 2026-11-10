@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_8a3fae45-4e06-4700-89fa-bb1487738962",
+    "originalId": "8a3fae45-4e06-4700-89fa-bb1487738962",
+    "statement": "Um homem de 25 anos apresenta dor intensa, palidez e parestesia no antebraço direito após sofrer uma lesão por esmagamento. No exame, o antebraço está tenso, inchado e sensível à palpação. Qual é o próximo passo do tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fasciotomia de emergência;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tala gessada e observação;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ressonância nuclear magnética do antebraço;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aplicação de compressas frias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E CONDUTA NA SÍNDROME COMPARTIMENTAL AGUDA\n\nO quadro clínico descrito (dor intensa, parestesia, palidez e edema tenso após lesão por esmagamento) é patognomônico de Síndrome Compartimental Aguda. Esta condição ocorre quando a pressão dentro de um compartimento osteofascial fechado aumenta a ponto de comprometer a perfusão capilar, levando à isquemia de músculos e nervos. Trata-se de uma emergência médica em que o tempo de intervenção é crucial para a preservação do membro.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Fasciotomia de emergência: Está correta. O tratamento definitivo para a síndrome compartimental é a descompressão cirúrgica imediata através da abertura das fáscias que envolvem os compartimentos musculares (fasciotomia). Isso alivia a pressão interna, restaura a perfusão sanguínea e evita a necrose tecidual.\n\nAlternativa b) Tala gessada e observação: Está incorreta. A aplicação de qualquer imobilização externa ou bandagens compressivas é contraindicada, pois limita a expansão do membro e pode elevar ainda mais a pressão intracompartimental. A observação sem intervenção levaria a danos irreversíveis, como a contratura isquêmica de Volkmann.\n\nAlternativa c) Ressonância nuclear magnética do antebraço: Está incorreta. O diagnóstico da síndrome compartimental é eminentemente clínico. Solicitar exames de imagem complexos retarda desnecessariamente o tratamento cirúrgico. Em casos de dúvida, a conduta auxiliar seria a medição direta da pressão intracompartimental, e não a realização de exames de imagem.\n\nAlternativa d) Aplicação de compressas frias: Está incorreta. O resfriamento do membro pode causar vasoconstrição, o que reduz ainda mais o aporte sanguíneo para os tecidos que já estão sofrendo isquemia, agravando o quadro clínico do paciente.\n\nGABARITO: LETRA A.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Complicações do Trauma Ortopédico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:19.171Z"
+  },
+  {
+    "id": "AJUDA_8a3fec22-2b19-4ca8-aeae-295871e8ef56",
+    "originalId": "8a3fec22-2b19-4ca8-aeae-295871e8ef56",
+    "statement": "Menina de 2 meses de idade apresenta quadro de secreção no olho esquerdo (OE). A mãe refere que a lactente amanhece com os cílios grudados e, há 15 dias, notou a presença da secreção nesse olho. AP: Parto cesárea; 33 semanas de IG; lacrimejamento em OE desde o nascimento. Exame ocular: OE calmo; cílios grudados e com secreção ocular à expressão do saco lacrimal; olho direito sem alterações. Assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de conjuntivite neonatal, e o agente mais provável é Chlamydia trachomatis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O quadro é sugestivo de conjuntivite viral, e o tratamento deve ser com colírios lubrificantes e limpeza dos cílios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico mais provável é de obstrução congênita da via lacrimal, e a sondagem terapêutica está indicada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O quadro sugere glaucoma congênito, devido ao lacrimejamento ocular e à prematuridade da lactente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico de obstrução congênita do ducto nasolacrimal (OCDNL). Os pontos-chave para o diagnóstico são o lacrimejamento crônico (epífora) iniciado logo após o nascimento, a presença de secreção mucopurulenta que faz com que os cílios amanheçam grudados e, fundamentalmente, o fato de o olho estar calmo (branco, sem vermelhidão). A saída de secreção ao pressionar o saco lacrimal confirma que há estase de fluido no sistema de drenagem.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A conjuntivite neonatal por *Chlamydia trachomatis* manifesta-se tipicamente entre o 5º e o 14º dia de vida. Ela se apresenta com hiperemia conjuntival importante (olho vermelho), quemose (edema da conjuntiva) e secreção purulenta. No caso em questão, o olho está calmo e os sintomas persistem desde o nascimento, o que não condiz com um quadro infeccioso agudo neonatal.\n\nAlternativa (b) Incorreta: A conjuntivite viral é uma condição aguda, caracterizada por olho vermelho, lacrimejamento seroso e fotofobia. O histórico de lacrimejamento desde o nascimento em um bebê de 2 meses com olho branco direciona o diagnóstico para uma malformação ou obstrução anatômica, e não para uma infecção viral autolimitada.\n\nAlternativa (c) Correta: O diagnóstico é de obstrução congênita da via lacrimal, geralmente causada pela persistência de uma membrana na porção distal do ducto nasolacrimal (válvula de Hasner). O tratamento inicial costuma ser conservador, com a massagem de Crigler (pressão sobre o saco lacrimal para tentar romper a obstrução). Caso a obstrução persista após os 6 a 12 meses de idade, ou em casos específicos de falha do tratamento clínico, a sondagem das vias lacrimais é o procedimento cirúrgico terapêutico indicado.\n\nAlternativa (d) Incorreta: O glaucoma congênito é uma patologia grave que se manifesta com a tríade: lacrimejamento, fotofobia e blefaroespasmo (dificuldade em manter os olhos abertos). Ao exame físico, observa-se frequentemente a córnea turva (edema) e o aumento do tamanho do olho (buftalmia). O enunciado descreve um olho calmo e não menciona fotofobia ou alterações no tamanho do globo ocular, o que exclui essa hipótese.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndrome do Olho Vermelho"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:19.171Z"
+  },
+  {
+    "id": "AJUDA_8a403b09-4c2c-4f11-b1ae-fe05b4987019",
+    "originalId": "8a403b09-4c2c-4f11-b1ae-fe05b4987019",
+    "statement": "Mulher de 85 anos apresenta tumoração eritematosa de cerca de 1 cm de diâmetro, bordos perolados e presença de teleangiectasias há 1 ano na ponta nasal. Qual o diagnostico mais provável e a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Melanoma amelanótico; biópsia excisional com margem de 2 mm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Carcinoma espinocelular; crioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ceratoacantoma; biópsia incisional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Carcinoma basocelular; biópsia excisional com margem de 4 mm.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão descreve um quadro clínico clássico de Carcinoma Basocelular (CBC), que é a neoplasia maligna cutânea mais frequente em indivíduos idosos e com pele clara. As características fundamentais para o diagnóstico contidas no enunciado são o local fotoexposto (ponta nasal), o crescimento lento (1 ano), os bordos perolados (brilho característico) e a presença de telangiectasias na superfície.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O melanoma amelanótico é uma variante do melanoma que não produz melanina, apresentando-se como uma lesão avermelhada. No entanto, ele não possui o brilho perolado característico do CBC. Além disso, embora a biópsia excisional seja a conduta inicial para melanoma, a clínica descrita aponta diretamente para o CBC.\n\nAlternativa b) Incorreta. O Carcinoma Espinocelular (CEC) geralmente se manifesta como pápulas ou nódulos ceratósicos, muitas vezes ulcerados ou com crostas, sobre uma base de dano actínico. O aspecto perolado não é típico do CEC. A crioterapia não é o tratamento padrão para lesões tumorais invasivas de 1 cm, pois não permite a avaliação das margens cirúrgicas.\n\nAlternativa c) Incorreta. O ceratoacantoma é um tumor de crescimento muito rápido, atingindo seu tamanho máximo em poucas semanas, e apresenta uma cratera central preenchida por queratina. A evolução de 1 ano é lenta demais para esse diagnóstico. Além disso, a conduta de escolha costuma ser a exérese completa, dada a dificuldade de diferenciação histológica com o CEC.\n\nAlternativa d) Correta. O diagnóstico mais provável é o Carcinoma Basocelular devido à descrição clássica de nódulo eritematoso com bordos perolados e telangiectasias. A conduta padrão para um CBC primário bem delimitado é a biópsia excisional (exérese cirúrgica). A margem de segurança de 4 mm é a recomendação técnica consagrada para assegurar a retirada completa da lesão e minimizar o risco de recidiva. Em áreas nobres como o nariz, o controle de margens é essencial para o sucesso terapêutico.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:19.171Z"
+  },
+  {
+    "id": "AJUDA_8a41463e-6791-4e06-b71c-0a50051d359a",
+    "originalId": "8a41463e-6791-4e06-b71c-0a50051d359a",
+    "statement": "Durante auditoria em um centro cirúrgico, avaliou-se a adesão às Metas Internacionais de Segurança do Paciente no perioperatório. Qual das ações abaixo corresponde CORRETAMENTE a uma dessas metas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Priorizar a redução do tempo anestésico total, sendo este o objetivo central da meta de segurança cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Conferir identidade do paciente, procedimento e sítio cirúrgico antes da indução anestésica, como parte essencial da meta “cirurgia segura”.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Permitir que o checklist cirúrgico seja opcional em procedimentos considerados de baixo risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar profilaxia antimicrobiana em qualquer momento do perioperatório, sem relação temporal com a incisão cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Considerar dispensável a checagem de todos os membros da equipe, bastando a validação do cirurgião principal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO GERAL\n\nAs Metas Internacionais de Segurança do Paciente, estabelecidas pela Organização Mundial da Saúde (OMS), têm como objetivo promover melhorias específicas em áreas críticas da assistência à saúde. A Meta 4 trata especificamente da Cirurgia Segura, garantindo o local correto, o procedimento correto e o paciente correto. Para operacionalizar essa meta, utiliza-se o Checklist de Segurança Cirúrgica da OMS, dividido em três etapas: antes da indução anestésica (Sign In), antes da incisão cirúrgica (Time Out) e antes de o paciente sair da sala (Sign Out).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: INCORRETA. O objetivo central da meta de segurança cirúrgica é a redução de erros evitáveis, como cirurgias em locais errados ou no paciente errado, e a diminuição de complicações pós-operatórias. A redução do tempo anestésico total pode ser um indicador de eficiência, mas não é o foco ou o objetivo central das metas de segurança.\n\nAlternativa B: CORRETA. Esta ação corresponde à primeira etapa do checklist (Sign In). Antes da indução anestésica, deve-se confirmar formalmente com o paciente (quando possível) sua identidade, o sítio cirúrgico, o procedimento a ser realizado e se o consentimento foi assinado. Esta é uma barreira crítica para evitar erros de identificação e lateralidade.\n\nAlternativa C: INCORRETA. O checklist de segurança cirúrgica não é opcional. Ele deve ser aplicado de forma sistemática e padronizada em todos os procedimentos cirúrgicos, independentemente da complexidade ou do risco estimado, para garantir que nenhum passo essencial de segurança seja negligenciado.\n\nAlternativa D: INCORRETA. A profilaxia antimicrobiana tem uma relação temporal rigorosa com a incisão cirúrgica. Para que seja eficaz, o antibiótico deve estar presente no tecido em concentrações terapêuticas no momento da incisão. Geralmente, a recomendação é que a administração ocorra nos 60 minutos anteriores à incisão (ou 120 minutos para antibióticos de infusão lenta, como vancomicina).\n\nAlternativa E: INCORRETA. A checagem de segurança, especialmente durante o Time Out (pausa cirúrgica antes da incisão), deve envolver todos os membros da equipe: cirurgião, anestesiologista e equipe de enfermagem. A segurança baseia-se na verificação cruzada e na comunicação aberta entre todos os profissionais, e não apenas na validação de um único membro.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:19.171Z"
+  },
+  {
+    "id": "AJUDA_8a42b3f4-ae23-4217-a6bb-de070ae85029",
+    "originalId": "8a42b3f4-ae23-4217-a6bb-de070ae85029",
+    "statement": "Determinado médico de uma Unidade Básica de Saúde, durante reunião com equipe interprofissional, discute a ocorrência de cinco casos de hepatite A em crianças de uma ocupação habitacional sem rede de esgoto formal. O Conselho Local de Saúde e a Associação de Moradores relatam insegurança quanto à qualidade da água e dificuldade de adesão às medidas de higiene por falta de insumos. A análise epidemiológica indica que há um grande número de crianças na comunidade que não completaram o esquema vacinal e que a transmissão está ativa no território.\nAlém da vacinação, qual é a próxima ação adequada para essa comunidade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Instituir o isolamento das crianças acometidas e de seus familiares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Organizar mutirões de limpeza coordenados pela equipe de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acionar a Vigilância Sanitária com vistas à melhoria do tratamento da água.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever profilaxia medicamentosa com antivirais para todas as crianças.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A hepatite A é transmitida pela via fecal-oral, principalmente por água e alimentos contaminados e pelo contato pessoa a pessoa em ambientes com saneamento precário. O caso descreve uma ocupação sem rede de esgoto, com dúvida sobre a qualidade da água, falta de insumos de higiene, baixa cobertura vacinal e transmissão ativa. A vacinação de bloqueio protege os suscetíveis, mas não interrompe a fonte ambiental de contaminação. A próxima ação deve atuar sobre esse determinante, de forma intersetorial e com participação da comunidade, conforme os princípios da Atenção Primária e da Vigilância em Saúde.\n\nAlternativa a) Incorreta. Isolar crianças acometidas e familiares não é medida recomendada para controle comunitário da hepatite A. O período de maior transmissibilidade ocorre antes do surgimento dos sintomas, de modo que o isolamento tardio tem pouco impacto. Isolar familiares assintomáticos não tem respaldo técnico e é desproporcional e estigmatizante. O que se recomenda é afastar o doente da creche ou escola por cerca de uma semana após o início da icterícia, reforçar a higiene e vacinar os contactantes, e não isolar núcleos familiares.\n\nAlternativa b) Incorreta. Mutirões de limpeza podem ter algum valor educativo, mas não resolvem o problema central: a falta de esgotamento sanitário e a possível contaminação da água. Além disso, coordenar ações de limpeza urbana não é atribuição da equipe de saúde. Essa medida transfere à comunidade e à UBS uma responsabilidade que é do poder público em saneamento.\n\nAlternativa c) Correta. A suspeita de contaminação da água de consumo, em contexto de surto de doença de transmissão hídrica e fecal-oral, exige acionar a Vigilância Sanitária e Ambiental. O programa Vigiagua é o responsável por coletar e analisar amostras, identificar a fonte de contaminação e articular com os órgãos competentes as medidas de correção, como tratamento, cloração, fornecimento alternativo de água potável e saneamento. É a ação que atua sobre o determinante ambiental da transmissão. Também valoriza a intersetorialidade e o controle social trazido pelo Conselho Local e pela Associação de Moradores.\n\nAlternativa d) Incorreta. Não existe profilaxia antiviral para hepatite A. A profilaxia pós-exposição é feita com a vacina e, em situações específicas, com imunoglobulina humana, como em imunodeprimidos ou em quem tem contraindicação à vacina. O tratamento da hepatite A é apenas de suporte.\n\nPonto-chave: em surtos de doenças de transmissão fecal-oral associados a saneamento precário, além de vacinar os suscetíveis, a conduta essencial é acionar a vigilância sanitária e ambiental para controlar a fonte de infecção, especialmente a qualidade da água.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Hepatites Virais",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:19.171Z"
+  },
+  {
+    "id": "AJUDA_8a4db9ac-a9e1-430b-b90f-80424741c4ac",
+    "originalId": "8a4db9ac-a9e1-430b-b90f-80424741c4ac",
+    "statement": "Adolescente de 14 anos, em consulta de urgência, apresenta aumento de volume testicular à direita, indolor, sem sinais flogísticos, associado a febre, astenia, tosse esporádica. Em exame físico: palidez cutâneo-mucosa leve, afebril ao toque, presença de linfonodos em região de cadeia inguinal, epitroclear, cervical bilaterais < 1,5 cm. Para início de investigação, o exame mais adequado de direcionamento para elucidação do caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "ultrassonografia testicular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "alfa feto proteína.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hemograma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "sorologia-EBV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "desidrogenase lática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresenta um adolescente com aumento testicular indolor associado a sinais sistêmicos importantes: febre, astenia, tosse e palidez cutâneo-mucosa, além de linfonodopatia generalizada (incluindo a região epitroclear, que é um achado clínico frequentemente associado a patologias sistêmicas graves). Esse conjunto de sinais e sintomas em um paciente pediátrico/adolescente deve levantar imediatamente a suspeita de uma neoplasia hematológica, como a Leucemia Linfoide Aguda (LLA). É fundamental lembrar que o testículo é um \"sítio santuário\" para as células leucêmicas, podendo apresentar infiltração e aumento de volume mesmo quando não há dor ou sinais inflamatórios.\n\nAlternativa a) Incorreta. A ultrassonografia testicular é um exame excelente para diferenciar massas intratesticulares de extratesticulares e avaliar a vascularização. No entanto, diante de um paciente com palidez, febre e linfonodopatia generalizada, a prioridade é a investigação de uma doença sistêmica que explique todos os achados, e não apenas o achado local no escroto.\n\nAlternativa b) Incorreta. A alfa-fetoproteína é um marcador tumoral utilizado na investigação de tumores de células germinativas, como o tumor de saco vitelino. Embora o câncer de testículo seja um diferencial para massas testiculares em adolescentes, ele não costuma cursar com o quadro sistêmico descrito (palidez e linfonodopatia em múltiplas cadeias distantes).\n\nAlternativa c) Correta. O hemograma é o exame de escolha para iniciar a investigação por ser rápido, acessível e capaz de sugerir fortemente uma neoplasia hematológica (leucemia). Ele pode revelar anemia (justificando a palidez), plaquetopenia e alterações na linhagem branca (leucocitose, leucopenia ou presença de blastos no sangue periférico), confirmando a natureza sistêmica da doença que está infiltrando o testículo.\n\nAlternativa d) Incorreta. A mononucleose infecciosa, causada pelo vírus Epstein-Barr (EBV), pode causar febre e linfonodopatia. Entretanto, o acometimento testicular não é uma característica da doença, e a palidez progressiva associada a sintomas constitucionais em adolescentes deve sempre direcionar a investigação primeiramente para causas neoplásicas.\n\nAlternativa e) Incorreta. A desidrogenase lática (LDH) é um marcador de lise ou turnover celular aumentado, estando frequentemente elevada em linfomas, leucemias e tumores germinativos. Apesar de ser útil para avaliar o prognóstico e a carga tumoral, é um exame inespecífico que não define linhagem celular ou diagnóstico, sendo o hemograma muito mais esclarecedor como passo inicial.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:19.171Z"
+  },
+  {
+    "id": "AJUDA_8a4dde15-844f-445e-a02e-72cf3b69d55b",
+    "originalId": "8a4dde15-844f-445e-a02e-72cf3b69d55b",
+    "statement": "É de fundamental importância que o médico saiba quando a paciente possui uma contraindicação absoluta ao uso de contraceptivo (categoria 4). É correto afirmar de acordo com o U.S. Medical Eligibility Criteria for Contraceptive Use, 2024:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença cardíaca valvar é contraindicação absoluta para o uso de pílula combinada, mesmo que não complicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pacientes em uso de antiretrovirais possuem contra-indicação absoluta ao uso de contraceptivos combinados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pacientes com câncer de mama atual têm contraindicação absoluta ao dispositivo intrauterino com levonorgestrel.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Diabetes há mais de 20 anos constitui contraindicação absoluta ao uso de injetável trimestral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, devemos revisar os Critérios de Elegibilidade Médica para Uso de Contraceptivos (MEC), que classificam as condições em categorias de 1 a 4. A Categoria 4 representa um risco de saúde inaceitável, ou seja, uma contraindicação absoluta.\n\nAnálise das alternativas:\n\na) Incorreta. A doença cardíaca valvar só é classificada como Categoria 4 para o uso de anticoncepcionais combinados se for considerada complicada (por exemplo, associada a hipertensão pulmonar, risco de fibrilação atrial ou história de endocardite bacteriana). A doença valvar não complicada é classificada como Categoria 2 (os benefícios superam os riscos).\n\nb) Incorreta. O uso de grande parte dos antirretrovirais é classificado como Categoria 2 para o uso de contraceptivos combinados. Existem interações medicamentosas importantes, especialmente com inibidores da protease potencializados por ritonavir (que podem ser Categoria 3), mas o uso de antirretrovirais de forma genérica não constitui uma contraindicação absoluta.\n\nc) Correta. O câncer de mama atual é uma contraindicação absoluta (Categoria 4) para todos os métodos contraceptivos hormonais, incluindo o SIU de levonorgestrel. Como se trata de um tumor sensível a hormônios, o uso de qualquer progestágeno ou estrogênio é evitado para não estimular o crescimento ou a recorrência das células neoplásicas. Nesses casos, o método de escolha costuma ser o DIU de cobre.\n\nd) Incorreta. Para o injetável trimestral (método de progestágeno isolado), o diabetes mellitus presente há mais de 20 anos ou com complicações vasculares (nefropatia, retinopatia, neuropatia) é classificado como Categoria 3 (os riscos geralmente superam os benefícios). Para ser Categoria 4, a condição precisaria ser avaliada no contexto de métodos combinados, mas não para o progestágeno injetável isolado.\n\nEm resumo, a alternativa (c) é a única que descreve corretamente uma situação de Categoria 4 (contraindicação absoluta) de acordo com os critérios internacionais e do CDC/U.S. MEC.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Mama",
+      "Planejamento Familiar"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:19.171Z"
+  },
+  {
+    "id": "AJUDA_8a5f3dd9-c0be-418a-a5c9-168e12baeaec",
+    "originalId": "8a5f3dd9-c0be-418a-a5c9-168e12baeaec",
+    "statement": "Homem de 63 anos retorna para acompanhamento médico. Ele deseja ter certeza de que está fazendo tudo o que pode para se manter saudável. Ele não fuma cigarros e faz uso de 1 a 2 taças (175 mL) de vinho tinto por semana. Relata que segue uma dieta vegana e pratica exercícios físicos 4 dias por semana. Não há comorbidades conhecidas. Ao exame físico: pressão arterial: 120 x 68 mmHg; IMC: 28 kg/m². O valor recente da hemoglobina A1c é de 6,3%. Com base nas informações apresentadas, esse paciente apresenta o maior risco de desenvolver qual das seguintes condições?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença cardiovascular e doença renal crônica dialítica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença cardiovascular e neuropatia periférica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Doença renal crônica e comprometimento cognitivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retinopatia diabética e comprometimento cognitivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Retinopatia diabética e neuropatia periférica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ponto central para a resolução desta questão reside na interpretação dos dados clínicos e laboratoriais: o paciente apresenta um estado de pré-diabetes e segue uma dieta restritiva (vegana).\n\nO valor de hemoglobina glicada (HbA1c) de 6,3% classifica o paciente na faixa de pré-diabetes (definida entre 5,7% e 6,4%). Estudos epidemiológicos demonstram que o risco de complicações macrovasculares, especificamente a doença cardiovascular (como infarto agudo do miocárdio e acidente vascular cerebral), já está aumentado nessa fase, ocorrendo de forma contínua mesmo antes de o paciente atingir os critérios diagnósticos para diabetes mellitus (HbA1c maior ou igual a 6,5%).\n\nQuanto à dieta vegana, a ausência de ingestão de proteínas de origem animal é o principal fator de risco para a deficiência de vitamina B12 (cobalamina), uma vez que essa vitamina não é encontrada em alimentos de origem vegetal. A deficiência de B12 é uma causa clássica de neuropatia periférica e degeneração combinada subaguda da medula. Além disso, o próprio estado de pré-diabetes já pode estar associado a danos nervosos iniciais (neuropatia de pequenas fibras).\n\nAnálise das alternativas:\n\na) Incorreta. Embora o risco cardiovascular esteja presente no pré-diabetes, a doença renal crônica dialítica é uma complicação microvascular extrema e tardia, que geralmente requer anos de diabetes mellitus franco e mal controlado para se desenvolver.\n\nb) Correta. A alternativa contempla o risco macrovascular aumentado pelo pré-diabetes (doença cardiovascular) e o risco neurológico associado tanto à hiperglicemia intermediária quanto à potencial deficiência de vitamina B12 decorrente da dieta vegana (neuropatia periférica).\n\nc) Incorreta. O comprometimento cognitivo pode ocorrer em pacientes metabólicos, mas a doença renal crônica não é a complicação de maior risco ou mais provável para alguém que ainda está no estágio de pré-diabetes e não apresenta outras comorbidades, como hipertensão descontrolada.\n\nd) Incorreta. A retinopatia diabética é uma complicação microvascular que possui um \"limiar\" de aparecimento. Ela raramente é observada em pacientes com HbA1c abaixo de 6,5%. O risco de retinopatia torna-se clinicamente significativo apenas após o diagnóstico estabelecido de diabetes.\n\ne) Incorreta. Novamente, a retinopatia não é a complicação esperada para o nível de glicemia atual do paciente (6,3%). As complicações microvasculares (retina e rim) são muito mais sensíveis ao controle glicêmico rigoroso e ao diagnóstico de diabetes do que as complicações macrovasculares.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:19.171Z"
+  },
+  {
+    "id": "AJUDA_8a66b4b7-cacb-4039-9026-86cda55341b3",
+    "originalId": "8a66b4b7-cacb-4039-9026-86cda55341b3",
+    "statement": "A epidemiologia utiliza estudos observacionais e experimentais para investigar a distribuição e os determinantes de saúde e doença nas populações, empregando testes diagnósticos e estatísticos como ferramentas.\n\nClassifique como Verdadeiro (V) ou Falso (F):\n\n( ) Coortes medem incidência.\n( ) Estudos transversais estimam prevalência.\n( ) Caso-controle mede risco relativo diretamente.\n( ) Ensaio clínico é estudo experimental.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V – V – F – V",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "V – F – F – V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F – V – V – V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V – V – V – F",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "F – F – F – V",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para classificar as afirmativas, devemos analisar as propriedades fundamentais de cada desenho de estudo epidemiológico:\n\nAfirmativa 1: (Verdadeiro) O estudo de coorte é um delineamento observacional e longitudinal que acompanha um grupo de indivíduos (expostos e não expostos a determinado fator) ao longo do tempo para observar quem desenvolve a doença. Como ele observa o surgimento de casos novos, é o estudo de escolha para medir a incidência.\n\nAfirmativa 2: (Verdadeiro) O estudo transversal (ou seccional) realiza uma coleta de dados em um único ponto no tempo, como uma fotografia da população. Ele mede simultaneamente a exposição e a presença da doença, permitindo identificar a proporção de indivíduos doentes naquele momento, o que define a prevalência.\n\nAfirmativa 3: (Falso) No estudo de caso-controle, partimos de indivíduos que já apresentam o desfecho (casos) e comparamos com quem não apresenta (controles), olhando retrospectivamente para a exposição. Como o pesquisador seleciona arbitrariamente o número de doentes, não há como calcular a incidência real. Sem a incidência, não é possível calcular o Risco Relativo (RR) de forma direta. A medida de associação própria deste estudo é o Odds Ratio (OR), ou Razão de Chances.\n\nAfirmativa 4: (Verdadeiro) O ensaio clínico é o exemplo clássico de estudo experimental. Diferente dos estudos observacionais, aqui o pesquisador exerce uma intervenção direta (como administrar um medicamento ou realizar um procedimento) e controla as variáveis através da randomização, para avaliar o efeito dessa intervenção.\n\nAnálise das alternativas:\n\nA sequência correta das afirmativas é V - V - F - V.\n\nA alternativa A está correta por seguir exatamente essa sequência técnica.\nA alternativa B está incorreta porque nega que o estudo transversal estima a prevalência.\nA alternativa C está incorreta porque afirma que a coorte não mede incidência e que o caso-controle mediria o risco relativo diretamente.\nA alternativa D está incorreta porque afirma que o caso-controle mede risco relativo diretamente e que o ensaio clínico não seria experimental.\nA alternativa E está incorreta pois inverte a natureza da maioria dos estudos citados.\n\nGabarito: Letra A.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:19.171Z"
+  },
+  {
+    "id": "AJUDA_8a678834-52ba-484f-98c5-9d54f4143812",
+    "originalId": "8a678834-52ba-484f-98c5-9d54f4143812",
+    "statement": "Com relação à vertigem posicional paroxística benigna, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sua duração máxima, em média, é de 2 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nistagmo que a acompanha em 90% das vezes é horizontal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É a causa mais comum de vertigem episódica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Raramente ocorre fatigabilidade do nistagmo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A manobra de Epley é a mais utilizada para confirmação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A: INCORRETA. Os episódios de vertigem na VPPB são tipicamente fugazes, durando geralmente menos de 60 segundos (na grande maioria das vezes, entre 15 e 30 segundos). Uma duração média de 2 minutos é considerada longa para os critérios diagnósticos habituais da canalitíase.\n\nAlternativa B: INCORRETA. O canal semicircular posterior é o mais frequentemente afetado, ocorrendo em cerca de 85% a 90% dos casos. O nistagmo resultante do estímulo do canal posterior é vertical para cima (upbeat) e torcional. O nistagmo puramente horizontal é característico do acometimento do canal lateral, que representa apenas 5% a 15% dos casos.\n\nAlternativa C: CORRETA. A Vertigem Posicional Paroxística Benigna é a etiologia mais prevalente de vertigem de origem periférica. Ela se caracteriza por crises súbitas de vertigem desencadeadas por movimentos específicos da cabeça, sendo a principal causa de busca por atendimento médico devido à tontura episódica.\n\nAlternativa D: INCORRETA. A fatigabilidade é uma característica clínica essencial para o diagnóstico da VPPB de origem periférica. Isso significa que, se a manobra diagnóstica for repetida várias vezes seguidas, a intensidade do nistagmo e do sintoma de vertigem tende a diminuir progressivamente até desaparecer.\n\nAlternativa E: INCORRETA. É fundamental não confundir as manobras. A manobra de Dix-Hallpike é o padrão-ouro para a confirmação diagnóstica da VPPB de canal posterior. A manobra de Epley é uma manobra de reposicionamento de partículas, ou seja, é indicada para o tratamento (terapêutica) após o diagnóstico ter sido estabelecido.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Otoneurologia, Vertigens e Audiologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:19.171Z"
+  }
+]

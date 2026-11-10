@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_a1695364-6d63-4c22-b6bb-fdfd30459e18",
+    "originalId": "a1695364-6d63-4c22-b6bb-fdfd30459e18",
+    "statement": "O traumatismo abdominal fechado é uma das principais ocorrências atendidas pelas equipes de cirurgia em hospitais de referência. Qual é a PRINCIPAL causa de choque hipovolêmico em pacientes com trauma abdominal fechado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lesão intestinal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ruptura hepática",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ruptura esplênica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Fratura pélvica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "No contexto do trauma abdominal fechado, a identificação da fonte de sangramento é crucial para o manejo do choque hipovolêmico. A questão aborda a epidemiologia das lesões orgânicas nesse cenário.\n\nAlternativa (a) Incorreta: As lesões intestinais, que envolvem vísceras ocas, manifestam-se predominantemente por quadros de peritonite decorrentes do extravasamento de conteúdo entérico ou fecal para a cavidade abdominal. Embora possam apresentar sangramento associado a lesões do mesentério, raramente são a causa principal ou isolada de choque hipovolêmico rápido quando comparadas às lesões de órgãos sólidos.\n\nAlternativa (b) Incorreta: O fígado é o segundo órgão mais comumente lesionado no trauma abdominal fechado (sendo o primeiro no trauma penetrante). Devido às suas grandes dimensões e vascularização, pode causar hemorragias fatais, mas as estatísticas mundiais e os protocolos de trauma indicam que o baço ainda é o órgão mais frequentemente acometido no mecanismo contuso.\n\nAlternativa (c) Correta: O baço é o órgão intra-abdominal mais frequentemente lesionado em casos de trauma abdominal contuso, como em colisões automobilísticas e quedas de altura. Por ser um órgão extremamente vascularizado, friável e com uma cápsula delgada, sua ruptura resulta rapidamente em hemoperitônio volumoso, tornando-se a principal causa de choque hipovolêmico em pacientes vítimas de trauma abdominal fechado.\n\nAlternativa (d) Incorreta: As fraturas pélvicas são causas importantes de choque hipovolêmico devido ao potencial de sangramento massivo no espaço retroperitoneal, originado de plexos venosos ou ramos das artérias ilíacas. No entanto, elas são classificadas como trauma da pelve e, embora possam coexistir com o trauma abdominal, a frequência de choque por lesão de órgãos sólidos intra-abdominais, liderada pelo baço, é superior na prática clínica do trauma fechado.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T17:25:58.179Z"
+  },
+  {
+    "id": "AJUDA_a16b46a0-3858-4eca-a264-38458702b6a7",
+    "originalId": "a16b46a0-3858-4eca-a264-38458702b6a7",
+    "statement": "Lactente do sexo masculino, com 5 meses de idade, previamente saudável, é levado ao pronto-socorro após dois dias de evolução com aumento progressivo de esforço respiratório, tosse seca e febre baixa (37,8 ºC). Os pais relatam que ele tem ingerido menor volume de leite nas últimas 24 horas e está mais sonolento. Ao exame físico, a criança apresenta taquipneia (FR: 70 irpm), tiragem subcostal, batimento de asa de nariz e cianose perioral. A ausculta pulmonar revela sibilos e estertores difusos. Saturação periférica de oxigênio: 86% em ar ambiente. Gasometria arterial: pH: 7,25; PaCO₂: 58 mmHg; HCO₃⁻: 22 mmol/L. A radiografia de tórax mostra discreta hiperinsuflação pulmonar. Com base no caso descrito, qual a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento imediato com antibióticos de amplo espectro devido à suspeita de pneumonia bacteriana associada à insuficiência respiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar inalação com broncodilatadores de repetição, devido à presença de sibilos e um padrão gasométrico preocupante de hipercapnia causado pela constrição brônquica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar suporte com oxigenioterapia, que poderá ser com um cateter nasal de alto fluxo, pois a criança apresenta sinais claros de insuficiência respiratória.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Avaliar a presença refluxo gastroesofágico com aspiração secundária como causa principal do quadro clínico, com início de dieta por sonda nasogástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Correção da acidose metabólica e hidratação da criança associada à oxigenioterapia com máscara de Venturi.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um lactente de 5 meses com sinais clássicos de Bronquiolite Viral Aguda (BVA), provavelmente causada pelo Vírus Sincicial Respiratório (VSR). Os principais achados são o pródromo viral (tosse e febre baixa) evoluindo para desconforto respiratório (taquipneia, tiragens, batimento de asa de nariz), sibilância e estertores. O paciente apresenta critérios de gravidade: cianose, saturação de oxigênio de 86% e acidose respiratória (pH 7,25 e PaCO2 58 mmHg), configurando um quadro de insuficiência respiratória.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A Bronquiolite Viral Aguda tem etiologia predominantemente viral. O uso de antibióticos não está indicado de rotina, devendo ser reservado apenas para casos com forte suspeita de infecção bacteriana secundária (como otite média aguda ou pneumonia bacteriana confirmada), o que não é sugerido pelo raio-X (que mostra apenas hiperinsuflação) nem pela febre baixa.\n\nAlternativa b) Incorreta. As principais diretrizes nacionais (Sociedade Brasileira de Pediatria) e internacionais (Academia Americana de Pediatria) não recomendam o uso rotineiro de broncodilatadores (como o salbutamol) na bronquiolite. A fisiopatologia da doença é baseada no edema da mucosa, excesso de muco e necrose celular, e não no broncoespasmo. Estudos mostram que essas medicações não reduzem o tempo de internação ou a necessidade de oxigênio.\n\nAlternativa c) Correta. O paciente apresenta insuficiência respiratória clara (hipoxemia e hipercapnia). A conduta prioritária é o suporte ventilatório. O Cateter Nasal de Alto Fluxo (CNAF) é uma excelente opção nesses casos, pois fornece oxigênio aquecido e umidificado, além de gerar uma pressão positiva contínua nas vias aéreas (PEEP), o que ajuda a reduzir o esforço respiratório, melhora as trocas gasosas e pode evitar a intubação orotraqueal.\n\nAlternativa d) Incorreta. Embora o refluxo gastroesofágico possa causar sintomas respiratórios crônicos ou recorrentes, o quadro atual é agudo, febril e infeccioso, típico de bronquiolite. A dieta por sonda pode ser necessária se a criança não conseguir coordenar a mamada devido ao esforço respiratório, mas não é o foco do tratamento da causa principal.\n\nAlternativa e) Incorreta. A gasometria revela uma acidose respiratória (decorrente do acúmulo de CO2 pela fadiga e obstrução bronquiolar) e não uma acidose metabólica. O bicarbonato (HCO3) está normal, o que confirma que o problema é ventilatório. A máscara de Venturi fornece oxigênio, mas em casos de esforço respiratório grave e falha ventilatória, dispositivos que fornecem pressão positiva (como o alto fluxo ou CPAP) são mais eficazes que a oxigenoterapia convencional.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:25:58.179Z"
+  },
+  {
+    "id": "AJUDA_a174ff4c-54a9-4811-867b-0e438ffe03da",
+    "originalId": "a174ff4c-54a9-4811-867b-0e438ffe03da",
+    "statement": "S.B.V., 34 anos, primigesta, idade gestacional de 10 semanas, vem à segunda consulta de pré-natal com os seguintes resultados de exames laboratoriais: toxoplasmose IgG e IgM positivos, glicemia de jejum de 90 mg/dL.\n\nDe acordo com o resultado de sorologia para toxaplasmose, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se introduzir esquema tríplice (pirimetamina, sulfadiazina, ácido folínico) para tratamento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se introduzir sulfadiazina para profilaxia de infecção fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se repetir IgG para toxoplasmose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se solicitar teste de avidez de IgG para toxoplasmose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Conduta expectante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso:\n\nA paciente é uma gestante de 10 semanas (primeiro trimestre) com sorologia para toxoplasmose apresentando IgG e IgM reagentes. O grande desafio clínico nessa situação é determinar se a infecção é aguda (ocorrida durante a gestação) ou se o IgM é apenas um marcador residual de uma infecção antiga (o IgM pode permanecer positivo por meses ou até anos). Como a paciente está no primeiro trimestre, a diferenciação é crucial para definir a conduta.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): O esquema tríplice (sulfadiazina, pirimetamina e ácido folínico) é indicado para o tratamento da infecção fetal confirmada ou quando a infecção materna ocorre no terceiro trimestre. Além disso, a pirimetamina é contraindicada no primeiro trimestre devido ao seu potencial teratogênico (interfere no metabolismo do ácido fólico).\n\nAlternativa B (Incorreta): A sulfadiazina isolada não é utilizada para profilaxia de infecção fetal. Caso houvesse suspeita forte de infecção aguda no primeiro trimestre, a droga de escolha para reduzir o risco de transmissão vertical seria a espiramicina, que não atravessa a barreira placentária em concentrações terapêuticas para o feto, mas trata a placenta.\n\nAlternativa C (Incorreta): Repetir o IgG não traria informações adicionais que resolvessem o diagnóstico de infecção aguda versus crônica neste momento, uma vez que ele já está positivo. O que se busca é a datação da infecção.\n\nAlternativa D (Correta): O teste de avidez de IgG é o exame indicado para gestantes com IgG e IgM reagentes que se encontram no primeiro trimestre (preferencialmente até a 16ª semana). Uma alta avidez (geralmente > 60%) indica que a infecção ocorreu há pelo menos 4 meses, ou seja, antes da gestação, descartando o risco de transmissão vertical. Uma baixa avidez sugere infecção recente, exigindo início de tratamento e investigação fetal.\n\nAlternativa E (Incorreta): A conduta expectante é perigosa. Diante de um IgM positivo na gestação, é obrigatório prosseguir com a investigação para confirmar ou excluir a infecção aguda, visando prevenir as graves sequelas da toxoplasmose congênita.\n\nNota sobre a glicemia: O valor de 90 mg/dL está dentro da normalidade para o rastreio de diabetes mellitus gestacional no início da gravidez (referência inferior a 92 mg/dL).",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:25:58.179Z"
+  },
+  {
+    "id": "AJUDA_a17cba14-5947-49e3-b505-82dbdb6be066",
+    "originalId": "a17cba14-5947-49e3-b505-82dbdb6be066",
+    "statement": "Uma mulher de 45 anos, assintomática, procura o posto de saúde após ver um vídeo de um médico em uma rede social contendo uma lista de exames laboratoriais e de imagem que toda mulher deveria realizar. Ela deseja realizá-los “para ter certeza de que está tudo bem”. A médica da unidade, após anamnese e exame físico sem fatores de risco relevantes, orienta a paciente sobre riscos e benefícios da solicitação de exames desnecessários. Com base nos níveis de prevenção em saúde, a conduta da médica exemplifica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevenção primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prevenção secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prevenção terciária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prevenção quaternária.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda os níveis de prevenção em saúde, um tema fundamental na Medicina de Família e Comunidade e na Saúde Coletiva. O cenário descreve uma situação comum na prática clínica: a pressão por exames de rastreio sem indicação técnica (check-ups desnecessários).\n\nAnálise das alternativas:\n\na) Incorreta. A prevenção primária foca em evitar a ocorrência da doença, agindo sobre os fatores de risco ou causas antes que a patologia se instale. Exemplos clássicos são a vacinação, o incentivo à atividade física e o uso de preservativos. No caso, a paciente já está saudável e a conduta da médica não visa prevenir uma doença específica, mas sim evitar um dano causado pela própria medicina.\n\nb) Incorreta. A prevenção secundária consiste no diagnóstico precoce e tratamento imediato de doenças em indivíduos assintomáticos (rastreamento). Exemplos incluem a mamografia de rastreio na idade correta ou a coleta de citopatológico do colo uterino. A paciente deseja realizar prevenção secundária de forma indiscriminada, mas a conduta da médica de orientar contra exames desnecessários é o oposto disso.\n\nc) Incorreta. A prevenção terciária visa reduzir os prejuízos e complicações de uma doença já estabelecida, focando na reabilitação e na prevenção de incapacidades. Exemplos são a fisioterapia pós-AVC ou o controle rigoroso da glicemia para evitar neuropatia diabética. A paciente do caso é assintomática e não possui diagnósticos prévios mencionados.\n\nd) Correta. A prevenção quaternária é definida como a detecção de indivíduos em risco de intervenções médicas excessivas (overmedicalization), para protegê-los de novas invasões médicas inapropriadas e sugerir-lhes alternativas eticamente aceitáveis. Ao explicar os riscos de resultados falsos-positivos, sobrediagnósticos e tratamentos desnecessários decorrentes de exames sem evidência científica para aquele perfil, a médica está praticando a prevenção quaternária, evitando a iatrogenia (dano causado pela intervenção médica).\n\nEm resumo, enquanto a paciente busca exames que se enquadrariam na prevenção secundária, a conduta ética e técnica da médica ao filtrar essas solicitações desnecessárias caracteriza a prevenção quaternária.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:25:58.179Z"
+  },
+  {
+    "id": "AJUDA_a17d44c2-186d-4b7f-af8b-676089091a62",
+    "originalId": "a17d44c2-186d-4b7f-af8b-676089091a62",
+    "statement": "Paciente apresentou quadro de dor abdominal grave acompanhado de diarreia e hipotensão refratária. Foi admitido em terapia intensiva e tealizada estabilização clínica e colhidas culturas. Foi liberado resultado parcial de uma hemocultura com crescimento de duas amostras. Resultado de exames: Hemocultura sangue periférico Crescimento: Enterococo faccalis Antibiograma pendente demais resultados. Sobre o patógeno em questão, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de um coco gram negativo com provável sensibilidade as cefalosporinas de terceira geração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uma infecção de corrente sanguínea causado por bactéria habitualmente sensível à Ampicilina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Uma provável colonização por ser um coco Gram positivo comum em trato gastro intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O risco de se tratar de uma cepa resistente a Vancomicina é alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise da Questão: Enterococcus faecalis em Corrente Sanguínea\n\nO caso clínico descreve um paciente com sepse de provável foco abdominal (dor abdominal e hipotensão) com isolamento de Enterococcus faecalis em duas amostras de hemocultura. O Enterococcus é um habitante normal do trato gastrointestinal, mas, em situações de quebra de barreira ou translocação, pode causar infecções graves.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O Enterococcus faecalis é um coco Gram-positivo (organizado em pares ou cadeias curtas) e não Gram-negativo. Além disso, uma característica marcante do gênero Enterococcus é a resistência intrínseca a todas as cefalosporinas. Isso ocorre porque as proteínas de ligação à penicilina (PBPs) do enterococo possuem baixa afinidade por essa classe de antibióticos.\n\nAlternativa b) Correta. O Enterococcus faecalis é a espécie mais comum do gênero isolada em processos infecciosos humanos. Diferentemente do Enterococcus faecium (que frequentemente é resistente à ampicilina e à vancomicina), o E. faecalis mantém, na grande maioria dos casos, uma excelente sensibilidade à ampicilina (e à penicilina), sendo esta a droga de escolha para o tratamento quando a cepa é sensível.\n\nAlternativa c) Incorreta. Embora o Enterococcus faça parte da microbiota intestinal (comensal), o seu crescimento em duas amostras de hemocultura em um paciente com sintomas clínicos de sepse e dor abdominal jamais deve ser interpretado como colonização. O sangue é um sítio estéril, e o isolamento do patógeno nesse contexto confirma o diagnóstico de bacteremia/infecção de corrente sanguínea.\n\nAlternativa d) Incorreta. O risco de resistência à vancomicina (VRE) é significativamente maior no Enterococcus faecium. Embora existam cepas de E. faecalis resistentes à vancomicina, elas são muito menos frequentes na prática clínica habitual do que as cepas sensíveis. Portanto, não se pode afirmar que o risco de resistência à vancomicina para o E. faecalis seja \"alto\" de forma generalizada.\n\nResumo Pedagógico:\nAo se deparar com Enterococcus em provas, lembre-se de três regras fundamentais:\n1. E. faecalis: Geralmente sensível à ampicilina.\n2. E. faecium: Frequentemente resistente à ampicilina e com maior risco de ser VRE (resistente à vancomicina).\n3. Todo Enterococcus é intrinsecamente resistente às cefalosporinas.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Sepse",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T17:25:58.179Z"
+  },
+  {
+    "id": "AJUDA_a181d60d-5d92-4a29-98ae-296f2e0d121f",
+    "originalId": "a181d60d-5d92-4a29-98ae-296f2e0d121f",
+    "statement": "Mulher, 35 anos de idade, nuligesta, tenta engravidar há 2 anos. Nega comorbidades e queixas ginecológicas. Vida sexual ativa. Realizou investigação para infertilidade e trouxe exames na consulta de retorno: FSH: 3 mUI/mL (normal), Prolactina: 5 ng/mL (normal), TSH: 1,9 microUl/mL (normal), ultrassonografia endovaginal: útero 35 mL, espessura endometrial: 7mm, ovário direito aumentado às custas de cisto com margens regulares, ecotextura homogênea e hipoecogênica, com ecos internos difusos de baixa ecogenicidade com volume 39 mL, ovário esquerdo sem alterações, espessamento dos ligamentos útero-sacrais e lesão hipoecoica irregular no sigmoide medindo 7mm. O espermograma do parceiro estava dentro dos parâmetros da normalidade. A conduta mais adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "análogo de GnRH por 6 meses seguido de estimulação ovariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ooforoplastia e remoção de focos endometrióticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "colonoscopia com biópsia e anatomopatológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "fertilização in vitro com ovodoação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "inseminação intrauterina no próximo ciclo menstrual.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nA paciente de 35 anos apresenta um quadro de infertilidade primária há 2 anos. Os exames laboratoriais (FSH, prolactina e TSH) e o espermograma do parceiro estão normais, o que direciona a investigação para causas anatômicas ou ginecológicas específicas. A ultrassonografia transvaginal é a chave do diagnóstico: o ovário direito apresenta uma imagem característica de endometrioma (cisto com ecotextura homogênea, hipoecogênica e ecos internos difusos de baixa ecogenicidade, o aspecto em vidro fosco). Além disso, o espessamento dos ligamentos uterossacrais e a lesão no sigmoide confirmam o diagnóstico de endometriose profunda.\n\nExplicação das Alternativas:\n\nAlternativa (a) INCORRETA: O uso de análogos do GnRH por tempo prolongado (6 meses) promove um estado de hipoestrogenismo que pode reduzir sintomas dolorosos, mas não trata o componente anatômico da endometriose (como o endometrioma e as aderências) nem melhora as taxas de gravidez natural após a suspensão. Em uma paciente de 35 anos, postergar a tentativa de gestação por 6 meses com bloqueio hormonal não é a conduta inicial ideal.\n\nAlternativa (b) CORRETA: A conduta para infertilidade associada à endometriose com presença de endometrioma ovariano e focos de endometriose profunda envolve a abordagem cirúrgica, preferencialmente por laparoscopia. A ooforoplastia (retirada da cápsula do cisto ovariano) e a ressecção dos focos de endometriose profunda (incluindo ligamentos e, se necessário, a lesão intestinal) visam restaurar a anatomia pélvica, reduzir o estado inflamatório local e melhorar as chances de concepção espontânea ou o sucesso de técnicas de reprodução assistida.\n\nAlternativa (c) INCORRETA: A colonoscopia com biópsia tem pouca utilidade no diagnóstico da endometriose intestinal, pois a doença acomete o intestino da serosa em direção à mucosa (de fora para dentro). Na maioria dos casos, a mucosa está íntegra, o que resultaria em uma biópsia normal. O diagnóstico já foi sugerido pela ultrassonografia com preparo intestinal ou poderia ser complementado por uma ressonância magnética.\n\nAlternativa (d) INCORRETA: A ovodoação é indicada para pacientes com falência ovariana prematura ou reserva ovariana muito baixa. Apesar de a paciente ter 35 anos, o seu FSH de 3 mUI/mL sugere uma boa reserva ovariana, não havendo indicação para utilização de óvulos de doadora neste momento.\n\nAlternativa (e) INCORRETA: A inseminação intrauterina (IIU) é indicada para casos de infertilidade sem causa aparente, fator masculino leve ou problemas cervicais, desde que as tubas uterinas estejam pérvias. Na presença de endometriose moderada a grave (estágios III e IV), a IIU apresenta taxas de sucesso muito baixas devido à distorção anatômica e ao ambiente inflamatório pélvico.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Endometriose",
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:25:58.179Z"
+  },
+  {
+    "id": "AJUDA_a185cc6d-6701-40ff-b238-18eb6cb84aff",
+    "originalId": "a185cc6d-6701-40ff-b238-18eb6cb84aff",
+    "statement": "A Acanthosis nigricans é uma área de hiperpigmentação da pele cinza-amarronzada, aveludada, encontrada nas dobras da pele e atrás do pescoço e na axila. Ela é observada em pacientes portadoras de Síndrome Ovariana Metabólica Poliendócrina (SOMP). Assinale a alternativa que apresenta a causa desse sinal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperestrogenismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hiperandrogenismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipoandrogenismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiperprolactinemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hiperinsulinemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A resposta correta é a letra E (hiperinsulinemia). A acantose nigricans na síndrome dos ovários policísticos (aqui chamada de Síndrome Ovariana Metabólica Poliendócrina) é um marcador cutâneo de resistência insulínica.\n\nFisiopatologia: na SOP há resistência periférica à insulina, com hiperinsulinemia compensatória. Níveis elevados de insulina se ligam ao receptor de IGF-1 (e, em menor grau, ao receptor de insulina) em queratinócitos e fibroblastos dérmicos. Isso estimula a proliferação dessas células, causando papilomatose, hiperqueratose e hiperpigmentação. O resultado é a placa aveludada, acastanhada ou acinzentada, nas áreas de dobras, como pescoço, axilas, região inguinal e submamária.\n\nAnálise das alternativas:\n\na) Incorreta. O hiperestrogenismo pode ocorrer na SOP por conversão periférica de androgênios, mas não causa acantose nigricans. Seus efeitos são outros, como hiperplasia endometrial e sangramento uterino anormal.\n\nb) Incorreta, embora seja a mais tentadora. O hiperandrogenismo causa hirsutismo, acne e alopecia androgênica. Ele coexiste com a acantose, e a hiperinsulinemia contribui para ele, pois estimula a produção androgênica ovariana e reduz a SHBG. Mesmo assim, a causa direta da acantose é a insulina, não o androgênio. Por isso a acantose pode aparecer em obesos sem SOP e em diabéticos tipo 2.\n\nc) Incorreta. O hipoandrogenismo não faz parte da SOP e não causa acantose.\n\nd) Incorreta. A hiperprolactinemia causa galactorreia, amenorreia e hipogonadismo. Ela pode ser diagnóstico diferencial de anovulação, mas não se associa à acantose nigricans.\n\ne) Correta. A hiperinsulinemia é a causa do sinal.\n\nPonto de prova: acantose nigricans = resistência insulínica. Ela é vista em SOP, obesidade, diabetes tipo 2 e síndrome metabólica. Quando é extensa, de início súbito e com lesões atípicas (por exemplo, em mucosas), deve-se pensar em paraneoplasia, em especial adenocarcinoma gástrico. O tratamento envolve perda de peso e sensibilizadores de insulina, como a metformina.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes dos Ovários Policísticos",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:25:58.179Z"
+  },
+  {
+    "id": "AJUDA_a1890b3e-7e29-4f01-bb71-9e70c0c47811",
+    "originalId": "a1890b3e-7e29-4f01-bb71-9e70c0c47811",
+    "statement": "Mãe de menina de 11 meses, em consulta de puericultura, relata que não há queixas específicas no momento e refere que a criança está começando a trocar passos de maneira independente. Apresenta marcos do desenvolvimento anteriores a 11 meses dentro da normalidade e bom ganho pondero-estatural. Gestação e parto sem intercorrências.\nO reflexo primitivo usualmente presente nessa faixa etária é o",
+    "options": [
+      {
+        "id": "A",
+        "text": "reflexo plantar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "reflexo de Moro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "reflexo de procura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "reflexo tônico cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é fundamental conhecer o cronograma de integração (desaparecimento) dos reflexos primitivos. Esses reflexos são respostas motoras involuntárias mediadas pelo tronco encefálico e pela medula espinal que, com a maturação do sistema nervoso central e a corticalização do movimento, devem desaparecer para dar lugar aos movimentos voluntários e ao desenvolvimento motor adequado.\n\nA alternativa (a) está correta. O reflexo de preensão plantar é o reflexo primitivo que por mais tempo permanece presente no lactente. Ele consiste na flexão dos dedos do pé quando a região plantar (próxima à base dos dedos) é estimulada. Sua integração ocorre geralmente entre os 9 e 12 meses de vida, podendo se estender até os 15 meses em alguns casos, coincidindo justamente com o período em que a criança começa a sustentar o peso nas pernas e a iniciar a marcha independente. Como a paciente da questão tem 11 meses, este é o único reflexo da lista que ainda pode ser fisiologicamente encontrado.\n\nA alternativa (b) está incorreta. O reflexo de Moro é um dos primeiros a desaparecer. Ele é caracterizado pela abdução e extensão dos membros superiores, seguidas de adução (gesto de abraço) e choro, após um estímulo de queda súbita ou ruído forte. Ele deve estar integrado (desaparecido) entre o 3º e o 6º meses de vida. Sua persistência aos 11 meses seria um sinal de alerta para atraso no desenvolvimento neurológico.\n\nA alternativa (c) está incorreta. O reflexo de procura (também chamado de reflexo de busca ou de pontos cardeais) é essencial para a amamentação nos primeiros meses, fazendo com que o bebê vire a face em direção ao estímulo tátil na região perioral. Esse reflexo costuma desaparecer por volta do 3º ou 4º mês de idade.\n\nA alternativa (d) está incorreta. O reflexo tônico cervical assimétrico (também conhecido como posição de esgrimista) ocorre quando a rotação da cabeça para um lado provoca a extensão do braço do mesmo lado e a flexão do braço oposto. Este reflexo integra-se normalmente entre o 4º e o 6º meses de vida. Se ele persistisse até os 11 meses, a criança teria extrema dificuldade para rolar, sentar ou levar objetos à linha média com as duas mãos.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 74.2228561565159,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:25:58.179Z"
+  },
+  {
+    "id": "AJUDA_a193ae73-b1d5-4bec-8226-17ad5ef81d09",
+    "originalId": "a193ae73-b1d5-4bec-8226-17ad5ef81d09",
+    "statement": "Para fins de estadiamento, pode-se afirmar que é critério a ser avaliado em laudo histopatológico de peça de histerectomia por carcinoma de endométrio, segundo a Federação Internacional de Ginecologia e Obstetrícia (FIGO):",
+    "options": [
+      {
+        "id": "A",
+        "text": "ocorrência de invasão tumoral de mais de 50% da espessura miometrial",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "existência de embolização neoplásica vascular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tamanho da lesão tumoral em seu maior eixo/maior dimensão",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "presença de infiltração neoplásica perineural",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O estadiamento do carcinoma de endométrio é realizado de forma cirúrgico-patológica, seguindo as diretrizes da Federação Internacional de Ginecologia e Obstetrícia (FIGO). A classificação foca principalmente na extensão da doença e na profundidade da invasão nos tecidos adjacentes.\n\nAlternativa (a): Correta. A profundidade da invasão miometrial é um dos pilares do estadiamento FIGO para o Estádio I. O Estádio IA compreende tumores limitados ao endométrio ou que invadem menos de 50% da espessura do miométrio. O Estádio IB é definido especificamente pela invasão de 50% ou mais da espessura miometrial. Portanto, a avaliação da porcentagem de invasão no laudo histopatológico é essencial para classificar corretamente a paciente.\n\nAlternativa (b): Incorreta. A embolização neoplásica vascular (ou invasão linfovascular — ILV) é um fator prognóstico extremamente importante e deve constar no laudo histopatológico, pois influencia a indicação de tratamentos adjuvantes (como radioterapia ou quimioterapia). No entanto, na classificação clássica da FIGO (2009), ela não define a mudança de um estádio para outro. Embora a atualização da FIGO de 2023 tenha incorporado a ILV para subclassificar alguns estádios (como o Estádio IA3), a invasão miometrial superior a 50% permanece como o critério mais tradicional e universalmente cobrado em provas para definir o Estádio IB.\n\nAlternativa (c): Incorreta. Ao contrário do que ocorre no câncer de colo uterino ou no câncer de vulva, o tamanho absoluto da lesão tumoral (em centímetros ou maior dimensão) não é um critério utilizado para definir o estádio no carcinoma de endométrio. O que importa no endométrio é a profundidade da infiltração na parede uterina e a disseminação para outras estruturas.\n\nAlternativa (d): Incorreta. A infiltração perineural é um achado histopatológico que pode estar associado a um comportamento biológico mais agressivo em diversos tipos de câncer, mas não faz parte dos critérios de estadiamento da FIGO para o câncer de endométrio.\n\nResumindo, para a prova, memorize que o divisor de águas no Estádio I do câncer de endométrio é o limite de 50% de invasão do miométrio. Se invadiu metade ou mais, o estádio é IB.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Câncer do Corpo do Útero"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:25:58.179Z"
+  },
+  {
+    "id": "AJUDA_a1963b53-ba4b-4902-8a20-71bcaa5969d1",
+    "originalId": "a1963b53-ba4b-4902-8a20-71bcaa5969d1",
+    "statement": "Paciente, do sexo feminino, 56 anos de idade, IMC de 34 kg/m², queixa de dor em andar superior de abdome tipo cólica, que fez com que procurasse pronto atendimento, há 3 dias, onde foi realizada uma ultrassonografia de abdome, que mostrou litíase biliar (vários cálculos pequenos) e uma discreta dilatação das vias biliares. Com medo de que a dor voltasse, procurou um gastroenterologista, que solicitou alguns exames, cujos resultados são apresentados a seguir.\nHemograma = sem alterações significativas;\nAmilase = normal, lipase normal;\nGama GT = 800 U/L;\nFosfatase Alcalina = 650 U/L;\nBilirrubina Total = 3,6 mg/dL: direta = 2,4 mg/dL, indireta = 1,2 mg/dL;\nTGO (aspartato aminotransferase) = 56 U/L e TGP (alanina aminotransferase) = 102 U/L.\nAssinale a alternativa que apresenta, corretamente, a melhor conduta para essa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Derivação transparieto-hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colangio ressonância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colangiopancreatografia retrógada endoscópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tomografia computadorizada de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Videocoloecistetomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\n    Texto Original:\n    Para resolver esta questão, devemos analisar o quadro clínico e laboratorial à luz dos critérios de probabilidade para coledocolitíase (pedra no canal colédoco), baseando-se nas diretrizes da ASGE (American Society for Gastrointestinal Endoscopy).\n\nANÁLISE DO QUADRO CLÍNICO\nA paciente apresenta um perfil de alto risco para coledocolitíase devido aos seguintes achados:\n1. Ultrassonografia: Evidenciou múltiplos cálculos pequenos na vesícula (que migram facilmente) e dilatação das vias biliares.\n2. Padrão Bioquímico: Presença de padrão colestático acentuado. Elevada elevação de Gama-GT (800) e Fosfatase Alcalina (650), além de hiperbilirrubinemia direta (2,4 mg/dL).\n3. Bilirrubina Total: O valor de 3,6 mg/dL, associado à dilatação da via biliar na ultrassonografia, coloca a paciente no grupo de \"Alta Probabilidade\" para coledocolitíase (preditor muito forte).\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA: A derivação ou drenagem transparieto-hepática é um procedimento invasivo indicado geralmente em casos de obstrução biliar maligna ou quando a via endoscópica (CPRE) falhou e os ductos biliares intra-hepáticos estão muito dilatados. Não é a primeira linha para cálculos.\n\nb) INCORRETA: A Colangiorressonância (CPRM) é um excelente exame de imagem, porém é um método diagnóstico (não terapêutico). Ela é indicada para pacientes com \"Média Probabilidade\" de coledocolitíase. Como esta paciente já possui critérios de \"Alta Probabilidade\", o próximo passo deve ser um método que já resolva o problema.\n\nc) CORRETA: A Colangiopancreatografia Retrógrada Endoscópica (CPRE) é a conduta de escolha. De acordo com os critérios da ASGE, pacientes com alta probabilidade de coledocolitíase (presença de cálculo no colédoco ao USG, OU bilirrubina total > 4 mg/dL, OU bilirrubina entre 1,8 e 4 mg/dL + ducto biliar comum dilatado) devem ser encaminhados diretamente para a CPRE, que permite confirmar o diagnóstico e realizar a retirada do cálculo (papilotomia e extração).\n\nd) INCORRETA: A Tomografia Computadorizada de abdome tem baixa sensibilidade para identificar cálculos biliares em comparação à ultrassonografia e à colangiorressonância, não sendo o exame padrão para investigação de colestase litiásica.\n\ne) INCORRETA: A Videocolecistectomia (remoção da vesícula) será necessária no futuro próximo para evitar novos episódios (tratamento definitivo da colelitíase). No entanto, o problema imediato é a obstrução da via biliar principal (coledocolitíase). Operar a vesícula sem limpar o canal biliar antes (ou durante o ato cirúrgico, se houver expertise) resultaria em persistência da icterícia e risco de colangite no pós-operatório.\n\nCONCLUSÃO\nDada a alta probabilidade de cálculo no colédoco baseada nos exames laboratoriais e na ultrassonografia, a conduta mais eficiente e resolutiva é a CPRE (letra C).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:25:58.179Z"
+  }
+]

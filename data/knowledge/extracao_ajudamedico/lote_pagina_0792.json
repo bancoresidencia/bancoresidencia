@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_dc899b76-bf46-4dab-b9b4-c68c9cfdd4d1",
+    "originalId": "dc899b76-bf46-4dab-b9b4-c68c9cfdd4d1",
+    "statement": "Um adulto hígido de 28 anos de idade compareceu ao pronto atendimento devido a uma mordedura de um cão. O paciente compareceu ao hospital 8 horas após o acidente e informou que o animal era de seu vizinho. O homem não apresentou qualquer mudança clínica recente, estava sob vigilância em domicilio e não possuía comprovação vacinal. A ferida estava localizada na mão esquerda, e se mostrava profunda e com exposição de tecido subcutâneo.\nConsiderando o quadro clínico descrito, assinale a opção que apresenta a conduta adequada em relação ao antibiótico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar profilaxia com azitromicina, devido à lesão profunda em mão, independentemente de sinais de infecção",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar profilaxia com amoxicilina/clavulanato, devido à lesão profunda em mão, independentemente de sinais de infecção",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "iniciar profilaxia com cefalexina, devido à lesão profunda em mão, independentemente de sinais de infecção",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "indicar antibiótico apenas se houver sinais sistêmicos de infecção ou secreção purulenta local",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "iniciar profilaxia com metronidazol, devido à lesão profunda em mão, independentemente de sinais de infecção",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o manejo de uma mordedura canina em um paciente hígido. O ponto-chave para a resolução reside na localização e na profundidade da lesão, que definem a necessidade de antibioticoterapia profilática.\n\nPor que iniciar profilaxia com antibiótico?\n\nEmbora nem toda mordedura de animal exija antibióticos profiláticos, certas feridas apresentam alto risco de complicação infecciosa. Os critérios clássicos para indicar profilaxia (mesmo sem sinais de infecção) incluem:\n1. Feridas localizadas em mãos, pés, face ou genitais.\n2. Feridas profundas (punções) ou com exposição de tecidos profundos (como o tecido subcutâneo, no caso).\n3. Feridas que necessitam de sutura ou desbridamento cirúrgico.\n4. Pacientes imunocomprometidos.\n\nNo caso descrito, o paciente apresenta uma lesão profunda na mão esquerda. As mãos são áreas críticas devido à proximidade de estruturas nobres (tendões, nervos e articulações) e ao espaço anatômico reduzido, o que facilita a disseminação de infecções.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A azitromicina não é o antibiótico de primeira escolha para mordeduras de cães. Ela não oferece a cobertura ideal para os principais patógenos envolvidos, especialmente a Pasteurella multocida, que é uma bactéria gram-negativa altamente agressiva e comum na cavidade oral de cães e gatos.\n\nAlternativa b) Correta. A associação amoxicilina + clavulanato é o tratamento de escolha (padrão-ouro) para profilaxia e tratamento de mordeduras de animais. A amoxicilina cobre estreptococos e a Pasteurella multocida, enquanto o clavulanato garante a cobertura contra bactérias produtoras de beta-lactamase, como o Staphylococcus aureus e diversos anaeróbios da flora bucal.\n\nAlternativa c) Incorreta. Este é um erro comum na prática clínica. A cefalexina (cefalosporina de 1ª geração) é excelente para infecções de pele comuns (celulite e impetigo), mas é ineficaz contra a Pasteurella multocida. O uso isolado de cefalexina em mordeduras de animais resulta em altas taxas de falha terapêutica.\n\nAlternativa d) Incorreta. Se a ferida fosse superficial e em um local de baixo risco (como o tronco ou braço), a conduta de apenas observar poderia ser aceitável. No entanto, por se tratar de uma ferida profunda na mão, a indicação de profilaxia é mandatória para evitar complicações graves, como tenossinovite ou artrite séptica.\n\nAlternativa e) Incorreta. O metronidazol possui excelente ação contra bactérias anaeróbias, mas não possui cobertura contra bactérias aeróbias gram-positivas e gram-negativas (como a Pasteurella), que são as principais causadoras de infecção inicial em mordeduras.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Raiva, Tétano, Mordedura e Arranhadura Animal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:27.705Z"
+  },
+  {
+    "id": "AJUDA_dc947565-66f7-4b35-9954-535194937143",
+    "originalId": "dc947565-66f7-4b35-9954-535194937143",
+    "statement": "As aderências intestinais, comumente conhecidas como bridas, são faixas de tecido fibroso que se formam entre as alças intestinais ou entre o intestino e outras estruturas abdominais após cirurgias ou processos inflamatórios. Dessa forma, avalie as afirmações como verdadeiras (V) ou falsas (F).\n\nI. A principal causa de obstrução intestinal alta são as aderências intestinais (bridas), frequentemente formadas após cirurgias abdominais.\nII. O principal fator de risco para a formação de bridas é a cirurgia abdominal prévia, especialmente em procedimentos realizados no abdômen inferior, como apendicectomia e cirurgias ginecológicas.\nIII. O tratamento inicial para obstrução intestinal causada por bridas é geralmente conservador, com medidas de suporte e observação rigorosa, sendo que 41 a 73% dos casos podem se resolver sem necessidade de cirurgia.\n\nAssim, a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "F, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, V, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a fisiopatologia e o manejo da obstrução intestinal por bridas, um tema recorrente e fundamental na prática cirúrgica. Abaixo, a análise detalhada de cada item:\n\nAfirmação I: Verdadeira. As aderências intestinais (bridas) representam a causa mais comum de obstrução mecânica do intestino delgado (obstrução alta) em países desenvolvidos, sendo responsáveis por aproximadamente 60% a 75% dos casos. Elas superam outras causas importantes, como hérnias da parede abdominal e neoplasias.\n\nAfirmação II: Verdadeira. O principal fator etiológico para a formação de aderências é a manipulação cirúrgica prévia. Cirurgias realizadas no abdômen inferior e na pelve, como apendicectomias, cirurgias colorretais e procedimentos ginecológicos, possuem um potencial maior de gerar bridas que causem obstrução, devido à maior mobilidade e disposição das alças de intestino delgado nessa região.\n\nAfirmação III: Verdadeira. Em casos de obstrução intestinal por bridas sem sinais de complicações (como isquemia, perfuração ou peritonite), o protocolo inicial preconiza o tratamento conservador. Este consiste em jejum, descompressão gastrointestinal com sonda nasogástrica, hidratação venosa e correção de distúrbios eletrolíticos. Estudos demonstram que uma grande parcela dos pacientes (com taxas variando entre 40% e 80% na literatura especializada) apresenta resolução do quadro obstrutivo apenas com essas medidas, sem necessidade de intervenção cirúrgica imediata.\n\nConclusão: Como todas as afirmações são verdadeiras, a alternativa correta é a (c).",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:27.705Z"
+  },
+  {
+    "id": "AJUDA_dc9e57c2-7643-4548-90ea-78d2bf3a0c79",
+    "originalId": "dc9e57c2-7643-4548-90ea-78d2bf3a0c79",
+    "statement": "Paciente de 48 anos, com cirrose hepática por hepatite C, apresenta episódio de hematêmese volumosa. Levado a um hospital e após estabilização clínica com reposição volêmica e uso de drogas vasoativas, é realizada endoscopia digestiva alta, que confirma varizes esofágicas de grosso calibre com sinais de sangramento recente. O paciente já teve dois episódios prévios de sangramento varicoso nos últimos 6 meses, apesar de tratamento clínico otimizado. Qual das condutas abaixo representa a abordagem MAIS adequada para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter tratamento clínico com betabloqueadores e repetir ligadura elástica endoscópica a cada 2 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar derivação porto-sistêmica cirúrgico tipo Warren, indicada como primeira linha em todos os casos refratários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar desconexão ázigo-portal com esplenectomia, indicada preferencialmente em pacientes com hipertensão portal pré-hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Avaliar indicação de TIPS (derivação porto-sistêmica intra-hepática transjugular), reservada para casos refratários ao tratamento clínico e endoscópico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um paciente com cirrose hepática e hipertensão portal que apresenta sangramento por varizes esofágicas recorrente, mesmo em vigência de tratamento clínico otimizado (profilaxia secundária com betabloqueador e ligadura elástica). Quando a terapia combinada padrão falha, estamos diante de um quadro de sangramento varicoso refratário ou de alto risco de nova recidiva, o que exige a indicação de métodos de descompressão portal.\n\nAlternativa (a) Incorreta: A manutenção da ligadura elástica associada ao betabloqueador é a conduta padrão para a profilaxia secundária inicial. No entanto, o paciente já apresentou dois episódios de sangramento em apenas seis meses sob esse tratamento. Insistir exclusivamente nessa estratégia em um paciente que já demonstrou falha terapêutica aumenta significativamente o risco de um desfecho fatal.\n\nAlternativa (b) Incorreta: A derivação tipo Warren (esplenorrenal distal) é uma cirurgia de derivação portossistêmica seletiva. Embora seja eficaz na redução do sangramento, trata-se de um procedimento cirúrgico de grande porte, associado a alta morbimortalidade em pacientes cirróticos. Atualmente, as cirurgias derivativas não são mais consideradas primeira linha para casos refratários, tendo sido amplamente substituídas pelo TIPS, que é menos invasivo.\n\nAlternativa (c) Incorreta: A desconexão azigoportal associada à esplenectomia é uma técnica cirúrgica não derivativa. Sua principal indicação ocorre em pacientes com hipertensão portal de causa pré-hepática ou em casos de esquistossomose, onde a função hepática está preservada. Em um paciente cirrótico por hepatite C, o risco cirúrgico é proibitivo e a eficácia em longo prazo é inferior aos métodos que reduzem a pressão portal.\n\nAlternativa (d) Correta: O TIPS (Derivação Portossistêmica Intra-hepática Transjugular) é um procedimento realizado pela radiologia intervencionista que cria um \"shunt\" entre a veia porta e a veia hepática, reduzindo de forma imediata e significativa a pressão portal. É a conduta de escolha para pacientes que falham na profilaxia secundária convencional (betabloqueador + endoscopia) e também pode ser utilizado como \"TIPS precoce\" em pacientes de alto risco, conforme preconizado pelo Consenso de Baveno.\n\nResumo: Diante da falha do tratamento clínico e endoscópico na prevenção de novos episódios de sangramento varicoso em um paciente cirrótico, a indicação de TIPS é a conduta mais adequada para o controle da hipertensão portal.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:27.705Z"
+  },
+  {
+    "id": "AJUDA_dca39ee0-e27f-4ad6-af70-ce936c1e93ca",
+    "originalId": "dca39ee0-e27f-4ad6-af70-ce936c1e93ca",
+    "statement": "Menina de 6 anos estava brincando em parquinho ao ar livre, quando sentiu dor aguda em braço direito, com hiperemia e edema local. Após 15 minutos evoluiu com urticária em tronco, coriza, espirros e apresentou 2 episódios de vômito.\nQual é o tratamento inicial para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adrenalina intramuscular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Anti-histamínico via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Corticoide via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antiemético intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve uma criança de 6 anos que apresenta um quadro agudo e rapidamente progressivo após provável picada de inseto, com envolvimento de múltiplos sistemas: cutâneo (urticária), respiratório superior (coriza e espirros) e gastrointestinal (vômitos). O acometimento de dois ou mais órgãos ou sistemas após contato com alérgeno provável define o diagnóstico de anafilaxia, uma emergência médica que exige intervenção imediata.\n\nAlternativa a: Correta. A adrenalina (epinefrina) intramuscular é o tratamento de primeira escolha e a única medicação comprovadamente eficaz em reduzir a mortalidade na anafilaxia. Ela age rapidamente como antagonista fisiológico dos mediadores inflamatórios, promovendo vasoconstrição periférica, broncodilatação, redução do edema de mucosa e estabilização de mastócitos e basófilos. O local preferencial de aplicação é a face anterolateral da coxa (músculo vasto lateral).\n\nAlternativa b: Incorreta. Os anti-histamínicos atuam apenas como terapia adjuvante de segunda linha para alívio de sintomas cutâneos, como prurido e urticária. Eles têm início de ação lento, não revertem o choque nem a obstrução de vias aéreas e jamais devem postergar a aplicação de adrenalina.\n\nAlternativa c: Incorreta. Os corticosteroides demoram horas para alcançar seu efeito terapêutico pleno e não têm ação no manejo imediato do quadro agudo de anafilaxia, servindo apenas como adjuvantes tardios na tentativa de prevenir reações bifásicas.\n\nAlternativa d: Incorreta. Os vômitos são parte do acometimento sistêmico da anafilaxia. O tratamento sintomático isolado com antiemético não interrompe a cascata anafilática e atrasa a conduta prioritária, que é o uso da adrenalina.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Anafilaxia e Urticária",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:27.705Z"
+  },
+  {
+    "id": "AJUDA_dcae1230-801a-4ded-bce1-1b9bab38a989",
+    "originalId": "dcae1230-801a-4ded-bce1-1b9bab38a989",
+    "statement": "Como forma de aprimoramento da atenção primária à saúde, a abordagem familiar deve estar presente quando se tem como objetivo a observação da família e o sujeito inserido nesta e todo o seu contexto. Sobre o assunto, relacione as colunas e assinale a sequência correspondente.\n\n(1) Genograma.\n(2) Ecomapa.\n(3) Famílias monoparentais.\n(4) Famílias reconstituídas.\n\n( ) Trata-se de um mapa que identifica a rede social e de apoio de uma pessoa e/ou uma família, com o objetivo de demonstrar a relação de pessoas com o meio onde habitam.\n( ) São aquelas constituídas de apenas um dos membros do casal e que costumam apresentar problemas típicos a serem resolvidos, como elaboração de luto, manutenção do contato com a figura parental que não tem e fragilização das fronteiras entre as diferentes gerações.\n( ) Trata-se de um mapa visual, de leitura fácil e dinâmica, que fornece informações estruturais, funcionais e relacionais da família ao longo do tempo e facilita a compreensão e a elaboração de hipóteses. Permite demonstrar padrões de funcionamentos e repetições, facilitando a priorização de intervenções.\n( ) São aquelas constituídas por adultos que já tiveram um casamento anterior com filhos e que costumam apresentar características fundamentais, como sofrimento importante de todos os seus membros, laços que interferem na formação do novo casal, e como uma história familiar anterior.",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 - 3 - 1 - 4.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "1 - 3 - 2 - 4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "2 - 4 - 1 - 3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1 - 4 - 2 - 3.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "CONCEITOS FUNDAMENTAIS DA ABORDAGEM FAMILIAR\n\nPara resolver esta questão, é necessário dominar as ferramentas de avaliação familiar (Genograma e Ecomapa) e as novas configurações familiares descritas na literatura da Medicina de Família e Comunidade.\n\n1. ECOMAPA (2): É o instrumento que avalia o sistema extrafamiliar. Ele identifica as relações da família ou de um indivíduo com o meio social (trabalho, escola, igreja, serviços de saúde, vizinhança). Sua principal função é visualizar a rede de apoio social e as trocas de energia entre a família e o ambiente.\n\n2. FAMÍLIAS MONOPARENTAIS (3): São núcleos formados por apenas um dos pais e seus filhos. Os desafios típicos incluem o gerenciamento do luto (pela perda ou separação), a necessidade de manter o vínculo com o genitor ausente e o risco de \"parentificação\" dos filhos, onde a fronteira entre as gerações se torna tênue devido à sobrecarga do único cuidador.\n\n3. GENOGRAMA (1): É a representação gráfica da árvore genealógica, abrangendo idealmente três gerações. Ele fornece dados sobre a estrutura familiar, datas de eventos vitais, doenças prevalentes e a qualidade dos vínculos afetivos. É uma ferramenta dinâmica que ajuda o médico a identificar padrões de comportamento e saúde que se repetem ao longo do tempo.\n\n4. FAMÍLIAS RECONSTITUÍDAS (4): Também chamadas de famílias mosaicadas ou *blended families*, surgem quando um ou ambos os parceiros trazem filhos de relacionamentos anteriores para a nova união. A adaptação é complexa, pois envolve a integração de histórias familiares distintas e a gestão de vínculos com ex-parceiros que continuam exercendo funções parentais.\n\nASSOCIAÇÃO DAS COLUNAS:\n\n- A primeira lacuna refere-se à rede social e de apoio no meio onde habitam: (2) Ecomapa.\n- A segunda lacuna refere-se a núcleos com apenas um membro do casal e problemas de fronteiras geracionais: (3) Famílias monoparentais.\n- A terceira lacuna refere-se ao mapa visual de informações estruturais e funcionais ao longo do tempo: (1) Genograma.\n- A quarta lacuna refere-se a adultos com casamentos e filhos anteriores: (4) Famílias reconstituídas.\n\nA sequência correta é 2 - 3 - 1 - 4.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) 2 - 3 - 1 - 4. Alternativa correta. Apresenta a correspondência exata entre os termos e suas definições técnicas utilizadas na Atenção Primária.\n\nb) 1 - 3 - 2 - 4. Alternativa incorreta. Erra ao inverter as definições de Genograma e Ecomapa. O Genograma foca na estrutura interna e histórico familiar, enquanto o Ecomapa foca na relação com o meio externo.\n\nc) 2 - 4 - 1 - 3. Alternativa incorreta. Embora identifique corretamente o Ecomapa e o Genograma, inverte os conceitos de famílias monoparentais e reconstituídas.\n\nd) 1 - 4 - 2 - 3. Alternativa incorreta. Apresenta erro em todas as associações, trocando tanto as ferramentas de avaliação quanto os tipos de constituição familiar.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:27.705Z"
+  },
+  {
+    "id": "AJUDA_dcb0a6d1-5b28-450c-a331-265879c151b8",
+    "originalId": "dcb0a6d1-5b28-450c-a331-265879c151b8",
+    "statement": "Em relação a imunizações podemos afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "as vacinas conjugadas apresentam importante vantagem no controle das doenças por levar à proteção de rebanho: ao reduzirem o estado de portador sadio, por meio da imunidade de mucosa, protegem as pessoas não vacinadas à medida que as vacinadas deixam de transmitir a bactéria.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "vacinas de RNA mensageiro e de vetores virais não replicantes codificam proteína antigênica, estimulando resposta imune. Essas técnicas não são consideradas inócuas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "as vacinas de vírus vivos devem ser administradas de 14 a 30 dias antes da introdução e somente após seis meses do término da terapia imunodepressora com ciclosporina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "em acidente botrópico que apresente edema e equimose evidente é recomendada a aplicação de 12 unidades de soro antibotrópico pentavalente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a via de administração da vacina influenza trivalente, fragmentada e inativada, é obrigatória por via intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): Esta alternativa descreve perfeitamente o diferencial das vacinas conjugadas (como as vacinas contra o Haemophilus influenzae tipo b, pneumocócicas e meningocócicas). Ao contrário das vacinas de polissacarídeos puros, as conjugadas induzem uma resposta imune dependente de linfócitos T. Isso resulta não apenas em memória imunológica e maior produção de anticorpos IgG, mas também em imunidade de mucosa (IgA). Essa imunidade local reduz a colonização da nasofaringe (estado de portador sadio), diminuindo a circulação da bactéria na comunidade e protegendo indiretamente as pessoas não vacinadas, o que caracteriza a imunidade de rebanho.\n\nAlternativa B (Incorreta): As vacinas de RNA mensageiro (como a da Pfizer/BioNTech) e de vetores virais não replicantes (como a da AstraZeneca/Oxford) são tecnologias avançadas, amplamente estudadas e consideradas seguras (inócuas no sentido de não causarem a doença que visam prevenir). O termo \"não consideradas inócuas\" na questão sugere erroneamente que seriam perigosas ou inseguras para uso populacional, o que contraria as evidências científicas e as aprovações por órgãos regulatórios como a ANVISA.\n\nAlternativa C (Incorreta): De acordo com o Manual de Imunizações e as diretrizes da Sociedade Brasileira de Pediatria, vacinas de vírus vivos ou bactérias atenuadas devem ser administradas, idealmente, de 15 a 30 dias antes do início de terapias imunossupressoras. Após o término do tratamento com imunossupressores como a ciclosporina, o intervalo recomendado para a administração dessas vacinas é de, no mínimo, três meses, e não seis meses, para garantir que o sistema imunológico tenha se recuperado o suficiente para responder à vacina sem risco de replicação viral descontrolada.\n\nAlternativa D (Incorreta): No acidente botrópico, a classificação de gravidade define o número de ampolas de soro antibotrópico. O quadro descrito (edema e equimose evidentes, sem sinais de choque ou alteração sistêmica grave) é classificado como moderado. Para casos moderados, a recomendação é a administração de 4 a 8 ampolas de soro. A dose de 12 ampolas (ou unidades) é reservada para casos graves (com hemorragia grave, choque ou anúria). Além disso, o soro disponível no Brasil é tipicamente o soro antibotrópico pentavalente em ampolas, e não \"unidades\" no sentido de medida internacional.\n\nAlternativa E (Incorreta): Embora a via intramuscular (IM) seja a via preferencial e padrão para a vacina influenza inativada, ela não é \"obrigatória\". Em pacientes com distúrbios de coagulação graves ou trombocitopenia severa, nos quais o risco de hematoma muscular é muito alto, a via subcutânea (SC) pode ser utilizada, apesar de poder haver uma leve redução na imunogenicidade ou aumento de reações locais. Além disso, existem formulações específicas para via intradérmica em outros países, invalidando a obrigatoriedade absoluta da via IM.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:27.705Z"
+  },
+  {
+    "id": "AJUDA_dcba0810-7cc5-43f2-ae15-7c9b76ccd34d",
+    "originalId": "dcba0810-7cc5-43f2-ae15-7c9b76ccd34d",
+    "statement": "Uma gestante de 10 semanas iniciou consulta de pré-natal com exames solicitados por outro médico e retornou para avaliação.\n\nEssa mesma paciente realizou perfil glicêmico que constatou alteração de mais de 30% das medidas, sendo necessário tratamento adjuvante às medidas comportamentais. Acerca do tratamento, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se iniciar o tratamento com metformina para melhor controle glicêmico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se iniciar tratamento com insulina na dose de 0,5 UI/Kg/dia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O uso de hipoglicemiantes orais, como a glifozina, permite um melhor controle da diabetes na gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A semaglutida pode ser utilizada na gravidez e auxilia no controle de ganho de peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo farmacológico do diabetes na gestação. Quando uma gestante não atinge o controle glicêmico adequado apenas com dieta e atividade física (geralmente definido como mais de 30% das medidas alteradas no perfil glicêmico), a terapia medicamentosa deve ser iniciada.\n\nAlternativa a) Incorreta. Embora a metformina seja utilizada em alguns contextos específicos e aceita por certas diretrizes internacionais (como o NICE), a insulina permanece como o tratamento padrão-ouro e de primeira escolha na gestação, segundo a Sociedade Brasileira de Diabetes (SBD) e a FEBRASGO. A metformina atravessa a barreira placentária e seus efeitos de longo prazo na prole ainda geram debates, sendo reservada para casos selecionados em que há recusa ou impossibilidade de uso da insulina.\n\nAlternativa b) Correta. A insulina é o fármaco de escolha por ser segura, eficaz e por não atravessar a placenta. Em gestantes que necessitam de controle medicamentoso no primeiro trimestre ou início do segundo, a dose inicial geralmente varia entre 0,3 a 0,5 UI/kg/dia, sendo distribuída entre insulinas de ação basal (NPH) e ação rápida/ultrarrápida (Regular ou análogos) para cobrir as necessidades basais e pós-prandiais.\n\nAlternativa c) Incorreta. As gliflozinas (inibidores do SGLT2) são terminantemente contraindicadas na gestação. Não há dados de segurança em humanos e estudos em animais demonstraram riscos de toxicidade renal para o feto. O controle do diabetes na gravidez não deve ser feito com essa classe de medicação.\n\nAlternativa d) Incorreta. A semaglutida e outros análogos do GLP-1 são contraindicados durante a gestação. Devido ao risco potencial de toxicidade embrionária e malformações observado em estudos pré-clínicos, a recomendação é que essas medicações sejam suspensas, inclusive, meses antes da concepção planejada. O ganho de peso na gestação deve ser controlado com orientação nutricional, e não com análogos de GLP-1.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:27.705Z"
+  },
+  {
+    "id": "AJUDA_dcc12296-6bb3-401a-8108-3370578eab9a",
+    "originalId": "dcc12296-6bb3-401a-8108-3370578eab9a",
+    "statement": "Os ciclos de vida dos parasitas intestinais variam entre os diferentes grupos. Nos helmintos, estão presentes estágios como ovos, larvas e formas adultas, enquanto nos protozoários ocorrem trofozoítos, cistos ou oocistos. A forma de contágio e a localização no trato gastrointestinal também diferem entre os parasitas. Alguns helmintos possuem como principal via de infecção a penetração ativa das larvas pela pele do hospedeiro, especialmente através da pele íntegra. Considerando o contexto apresentado, assinale a alternativa que apresenta o parasita cuja infecção ocorre por penetração transcutânea.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enterobius vermicularis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hymenolepis nana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Giardia intestinalis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ancylostoma duodenale.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Ascaris lumbricoides.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é fundamental compreender os diferentes mecanismos de transmissão das parasitoses intestinais, focando especificamente na via de penetração transcutânea (pela pele).\n\nAlternativa (a) Incorreta: Enterobius vermicularis. A transmissão deste helminto, causador da oxiuríase, ocorre principalmente pela ingestão de ovos infectantes presentes em mãos, alimentos, água ou objetos contaminados (via fecal-oral). Também é comum a autoinfecção externa e a retroinfestação, mas o parasita não possui a capacidade de penetrar na pele íntegra para iniciar a infecção.\n\nAlternativa (b) Incorreta: Hymenolepis nana. Este é um pequeno cestódeo cuja infecção se dá predominantemente pela ingestão de ovos presentes no ambiente (ciclo direto) ou, menos comumente, pela ingestão de insetos hospedeiros intermediários que contenham a larva cisticercoide. Não há estágio de penetração ativa pela pele no ciclo deste parasita.\n\nAlternativa (c) Incorreta: Giardia intestinalis. A Giardia é um protozoário flagelado. Sua forma de transmissão é estritamente fecal-oral, ocorrendo pela ingestão de cistos maduros em água ou alimentos contaminados. Protozoários intestinais, em regra, não infectam o hospedeiro por via transcutânea.\n\nAlternativa (d) Correta: Ancylostoma duodenale. Este parasita, um dos agentes da ancilostomíase (amarelão), apresenta um ciclo em que os ovos são eliminados nas fezes e eclodem no solo. As larvas passam por estágios evolutivos até atingirem a forma filarioide (L3), que é a forma infectante. Estas larvas penetram ativamente na pele íntegra do hospedeiro (geralmente pelos pés em contato com solo contaminado), atingem a circulação venosa e realizam o ciclo pulmonar antes de se estabelecerem no intestino delgado.\n\nAlternativa (e) Incorreta: Ascaris lumbricoides. A infecção pelo Ascaris ocorre exclusivamente pela via oral, através da ingestão de ovos embrionados contendo a larva infectante. Embora as larvas realizem um complexo ciclo de migração tecidual (Ciclo de Loos) após a eclosão no trato digestivo, elas não entram no organismo através da pele.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Parasitoses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:27.705Z"
+  },
+  {
+    "id": "AJUDA_dccbc25a-8cb8-4fcc-a3dd-65bc2b52be84",
+    "originalId": "dccbc25a-8cb8-4fcc-a3dd-65bc2b52be84",
+    "statement": "Homem de 45 anos, etilista, com dor epigástrica intensa em faixa, vômitos e amilase sérica > 3x o limite superior. TC inicial mostra pancreatite intersticial sem coleções. No manejo inicial, qual a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jejum por pelo menos 7 dias, sem suporte nutricional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Antibioticoterapia profilática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar necrosectomia cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidratação com cristalóides, analgesia, antieméticos e dieta oral de acordo com aceitação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Introduzir nutrição parenteral total no primeiro dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito — dor epigástrica em faixa, vômitos e amilase elevada — é clássico para pancreatite aguda. A tomografia confirma uma pancreatite intersticial edematosa (forma leve na maioria dos casos), sem sinais de necrose ou coleções. O tratamento da pancreatite aguda foca no suporte clínico e na prevenção de complicações.\n\nAnálise das alternativas:\n\na) Incorreta. O jejum prolongado por 7 dias é uma conduta obsoleta. Estudos mostram que o jejum prolongado favorece a translocação bacteriana e a atrofia da mucosa intestinal, aumentando o risco de infecções. Atualmente, a recomendação é iniciar a dieta oral assim que o paciente apresentar melhora da dor e ausência de vômitos.\n\nb) Incorreta. Não existe indicação de antibioticoterapia profilática na pancreatite aguda, seja ela intersticial ou necrosante. O uso de antibióticos deve ser reservado para casos de infecção comprovada (como necrose infectada ou infecções extrapancreáticas).\n\nc) Incorreta. A necrosectomia é um procedimento cirúrgico indicado apenas para casos de necrose pancreática infectada, geralmente após algumas semanas de evolução. Como a TC do paciente mostra pancreatite intersticial (sem necrose), não há o que ser operado.\n\nd) Correta. Esta alternativa descreve o manejo padrão atual. A base do tratamento é a reposição volêmica com cristaloides (preferencialmente Ringer lactato), controle da dor com analgésicos e manejo dos vômitos. A dieta deve ser iniciada precocemente por via oral, conforme a aceitação do paciente, o que reduz o tempo de internação e as complicações.\n\ne) Incorreta. A nutrição parenteral total (NPT) só deve ser considerada se a via enteral for impossível por um longo período, pois a NPT está associada a maiores taxas de complicações infecciosas e metabólicas. Na pancreatite aguda, a preferência é sempre pela via oral ou enteral.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": 19.44858584014352,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:27.705Z"
+  },
+  {
+    "id": "AJUDA_dce05449-8598-4035-bc2d-fd03f29fbc45",
+    "originalId": "dce05449-8598-4035-bc2d-fd03f29fbc45",
+    "statement": "Na anamnese de criança com suspeita de abdômen agudo, são sinais de alerta, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dor abdominal súbita e recidivante que interrompe brincadeiras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dor abdominal acompanhada de febre e emagrecimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Vômitos persistentes, em jato, biliosos e concomitantes à dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Evacuações com características de melena ou presença de muco e sangue.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Tema:\nO diagnóstico de abdômen agudo na pediatria exige a diferenciação entre quadros funcionais (comuns e benignos) e quadros orgânicos/cirúrgicos. Os chamados sinais de alerta ou \"red flags\" são achados na anamnese e exame físico que sugerem uma etiologia grave, muitas vezes necessitando de intervenção imediata.\n\nAlternativa A (Sinal de Alerta): A dor que interrompe as atividades habituais da criança, como brincar ou dormir, é um forte indicativo de organicidade. Diferente da dor funcional, que muitas vezes ocorre em momentos de estresse ou busca de atenção sem impedir o lazer, a dor do abdômen agudo cirúrgico é incapacitante e de início súbito.\n\nAlternativa B (CORRETA - Não é sinal de abdômen agudo): Embora febre e emagrecimento sejam sinais de alerta para doenças orgânicas crônicas (como doença inflamatória intestinal, tuberculose peritoneal ou neoplasias), o emagrecimento não é uma característica do abdômen agudo. O abdômen agudo é definido por uma evolução rápida (horas ou poucos dias). O emagrecimento pressupõe um processo prolongado no tempo, o que descaracteriza a urgência imediata do quadro agudo, apesar de ainda ser um sinal clínico preocupante para outras patologias.\n\nAlternativa C (Sinal de Alerta): Vômitos biliosos em crianças são considerados uma emergência cirúrgica até que se prove o contrário, sugerindo obstrução intestinal baixa ou malformações como a má rotação intestinal com volvo. Vômitos em jato e persistentes também indicam gravidade e risco iminente de desidratação e distúrbios hidroeletrolíticos.\n\nAlternativa D (Sinal de Alerta): A presença de sangue nas fezes é um sinal clássico de gravidade. A melena sugere sangramento digestivo alto ou isquemia, enquanto fezes com muco e sangue (frequentemente descritas como em \"geleia de morango\") são o sinal patognomônico da intussuscepção intestinal, uma das principais causas de abdômen agudo obstrutivo em lactentes.\n\nResumo: A questão solicita o sinal que não se enquadra tipicamente no quadro de abdômen agudo. O emagrecimento (letra B) é o marcador de cronicidade que invalida a alternativa como sinal de alerta para uma patologia aguda de urgência.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Cirurgia Infantil",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:27.705Z"
+  }
+]

@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_d7183cb1-0621-4038-a56f-83d822b5817e",
+    "originalId": "d7183cb1-0621-4038-a56f-83d822b5817e",
+    "statement": "A vaginose bacteriana é a causa mais prevalente de corrimento vaginal com odor fétido entre mulheres em idade reprodutiva. Sobre este tema, analise as afirmações abaixo:\n\nI. Não é causada por um único agente específico, e sua presença aumenta o risco de aquisição de IST, além do risco de complicações em cirurgias ginecológicas e durante a gravidez.\nII. A presença de corrimento vaginal homogêneo, pH<4,5 e o teste de Whiff positivo confirmam o diagnóstico de vaginose bacteriana.\nIII. O tratamento comumente é feito com metronidazol via oral ou vaginal, mas outras opções eficazes incluem clindamicina e doxiciclina.\nIV. A recorrência após o tratamento é comum: 15% a 30% das mulheres apresentam vaginose sintomática 30 a 90 dias após o tratamento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as afirmativas I, II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas I, III e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas I e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmativas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise da Afirmativa I: Esta afirmativa está correta. A vaginose bacteriana (VB) não é uma infecção causada por um único patógeno, mas sim uma disbiose caracterizada pela substituição dos lactobacilos (flora normal) por uma proliferação polimicrobiana de bactérias anaeróbias, como Gardnerella vaginalis, Atopobium vaginae, Mobiluncus spp. e Prevotella. A presença da VB altera o ambiente vaginal e a integridade da mucosa, o que aumenta comprovadamente o risco de aquisição de Infecções Sexualmente Transmissíveis (IST), incluindo o HIV. Além disso, está associada a complicações como a doença inflamatória pélvica após procedimentos invasivos e resultados obstétricos adversos, como o parto prematuro.\n\nAnalise da Afirmativa II: Esta afirmativa está incorreta. Para o diagnóstico clínico da VB, utilizam-se os Critérios de Amsel, sendo necessária a presença de pelo menos três dos quatro seguintes itens: 1) corrimento branco-acinzentado, homogêneo e fino; 2) pH vaginal superior a 4,5 (o erro da afirmativa está em dizer que o pH é menor que 4,5); 3) teste do Whiff (teste das aminas) positivo; 4) presença de clue cells (células-alvo) na microscopia a fresco. Na VB, o pH torna-se mais básico/alcalino devido à redução dos lactobacilos produtores de ácido lático.\n\nAnalise da Afirmativa III: Esta afirmativa está incorreta. O tratamento de escolha para a vaginose bacteriana é realizado com Metronidazol (via oral ou vaginal) ou Clindamicina (via vaginal). A Doxiciclina, citada na questão, não tem eficácia documentada para o tratamento da VB e é tipicamente utilizada para tratar cervicites por Clamídia ou micoplasmas, não fazendo parte do protocolo de tratamento da vaginose.\n\nAnalise da Afirmativa IV: Esta afirmativa está correta. A alta taxa de recorrência é uma característica marcante da vaginose bacteriana. Estudos epidemiológicos demonstram que uma parcela significativa das mulheres, em torno de 30%, apresenta retorno dos sintomas nos primeiros três meses após completar o tratamento adequado, o que corrobora os dados apresentados na sentença.\n\nConclusão: Como as afirmativas I e IV são as únicas verdadeiras, a alternativa correta é a letra C.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:06.907Z"
+  },
+  {
+    "id": "AJUDA_d71b2a0f-d7a1-4df9-a9ae-5decd22609d4",
+    "originalId": "d71b2a0f-d7a1-4df9-a9ae-5decd22609d4",
+    "statement": "Um teste para identificação de uma doença (Covid-19), utilizado em uma Unidade de Saúde da Família, tem 98,0% de sensibilidade e 94,0% de especificidade para IgM. Qual das alternativas abaixo indica a interpretação correta destes dados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2,0% de resultado falso positivo para IgM.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "94,0% de resultado verdadeiro positivo para IgM.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "6,0% de resultado falso positivo para IgM.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "6,0% de resultado falso negativo para IgM.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, é fundamental compreender os conceitos de sensibilidade e especificidade e seus respectivos complementares, que representam as taxas de erro do teste diagnóstico.\n\nSensibilidade: é a capacidade do teste de identificar corretamente os indivíduos que possuem a doença (verdadeiros-positivos). O erro associado à sensibilidade é o falso-negativo (indivíduos doentes que o teste não detectou). A taxa de falso-negativo é calculada como 100% menos a sensibilidade.\n\nEspecificidade: é a capacidade do teste de identificar corretamente os indivíduos que não possuem a doença (verdadeiros-negativos). O erro associado à especificidade é o falso-positivo (indivíduos saudáveis que o teste aponta erroneamente como doentes). A taxa de falso-positivo é calculada como 100% menos a especificidade.\n\nAnálise dos dados da questão:\nSensibilidade = 98,0%. Logo, a taxa de falso-negativo é 100,0% - 98,0% = 2,0%.\nEspecificidade = 94,0%. Logo, a taxa de falso-positivo é 100,0% - 94,0% = 6,0%.\n\nAnálise das alternativas:\n\na) Incorreta. O valor de 2,0% corresponde à taxa de falso-negativo (complementar da sensibilidade), e não à de falso-positivo.\n\nb) Incorreta. O valor de 94,0% representa a taxa de verdadeiro-negativo (a própria especificidade). A taxa de verdadeiro-positivo é a sensibilidade, que, neste caso, é de 98,0%.\n\nc) Correta. A interpretação direta da especificidade de 94,0% nos diz que o teste acerta 94 em cada 100 pacientes saudáveis. Os outros 6 pacientes (6,0%) receberão um resultado erroneamente positivo, configurando a taxa de falso-positivo.\n\nd) Incorreta. Como visto nos cálculos acima, a taxa de falso-negativo é de 2,0% (100,0% - 98,0% de sensibilidade). O valor de 6,0% refere-se aos resultados falsos-positivos.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:06.907Z"
+  },
+  {
+    "id": "AJUDA_d71e4e3b-1569-44f2-b523-cea7ff019694",
+    "originalId": "d71e4e3b-1569-44f2-b523-cea7ff019694",
+    "statement": "Um homem de 58 anos, portador de diabetes mellitus tipo 2 há 18 anos, chega ao ambulatório relatando rigidez progressiva das mãos nos últimos 5 meses, dificultando abotoar camisas e manusear pequenos objetos. Refere uso irregular das medicações, HbA1c de 11% e história de neuropatia periférica sensitiva. No exame físico, ao ser solicitado que una as palmas das mãos em posição de prece, observa-se incapacidade de encostar completamente as superfícies das palmas e dos dedos, mantendo um espaço residual entre as mãos. Há pele espessada no dorso dos dedos. Reflexos presentes e sem déficit motor evidente. O diagnóstico mais provável, neste caso, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esclerose lateral amiotrófica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de Dupuytren.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Artropatia diabética da mão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Artrite reumatoide inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Neuropatia periférica diabética motora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "DIAGNÓSTICO E RACIOCÍNIO CLÍNICO:\n\nO caso descreve um paciente com Diabetes Mellitus tipo 2 de longa data (18 anos) e com péssimo controle metabólico (HbA1c de 11 por cento). O quadro de rigidez progressiva das mãos, dificuldade para tarefas motoras finas e o achado clássico no exame físico chamado sinal da prece (incapacidade de encostar as superfícies palmárias das mãos e dedos) são característicos da Artropatia Diabética da Mão, também conhecida como Queiroartropatia Diabética. Esta condição ocorre pela glicosilação não enzimática do colágeno, que leva ao espessamento da pele e endurecimento das cápsulas articulares e tendões.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A Esclerose Lateral Amiotrófica (ELA) é uma doença degenerativa do neurônio motor. Ela se manifestaria com fraqueza muscular progressiva, atrofia (amiotrofia), fasciculações e sinais de liberação piramidal (como hiperreflexia), o que não condiz com o relato de reflexos presentes e ausência de déficit motor evidente.\n\nb) Incorreta. A Síndrome de Dupuytren também é comum em diabéticos e causa a flexão fixa dos dedos, mas ela se caracteriza pela formação de nódulos e cordas fibrosas palpáveis na palma da mão que \"puxam\" os dedos para a flexão (especialmente o 4º e 5º dedos). O quadro descrito é de uma limitação global da extensão dos dedos e mãos (sinal da prece) e pele espessada, mais típico da queiroartropatia.\n\nc) Correta. A Artropatia Diabética da Mão é uma complicação musculoesquelética comum em pacientes com diabetes mal controlado de longa data. A fisiopatologia envolve o acúmulo de produtos finais de glicosilação avançada (AGEs) no colágeno, tornando a pele e as articulações rígidas. O sinal da prece é o marcador clínico clássico dessa patologia.\n\nd) Incorreta. A Artrite Reumatoide (AR) tipicamente apresenta sinovite (edema, calor e dor articular), rigidez matinal prolongada e acometimento inflamatório simétrico. O caso em questão descreve uma rigidez mecânica indolor, sem sinais de inflamação ativa e sem as deformidades articulares erosivas típicas da AR.\n\ne) Incorreta. A neuropatia periférica motora resultaria em fraqueza muscular e atrofia dos músculos intrínsecos da mão (como os interósseos e a eminência tenar/hipotenar), o que levaria a uma mão em garra ou fraqueza de preensão, mas não ao espessamento da pele e ao sinal da prece, que são alterações teciduais e articulares.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Manifestações Reumatológicas e Doenças Sistêmicas",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:06.907Z"
+  },
+  {
+    "id": "AJUDA_d71ef990-9cf8-4f7d-8db1-68c641f15eed",
+    "originalId": "d71ef990-9cf8-4f7d-8db1-68c641f15eed",
+    "statement": "A tuberculose é caracterizada como um problema de Saúde Pública, devido:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A não existir, ainda, medicação padronizada para seu tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A baixa incidência, porém com elevada vulnerabilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A dificuldades diagnósticas, em decorrência da sofisticação tecnológica dos exames de imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ao fato de atender a todos os critérios de priorização de um agravo com elevada magnitude, transcendência e vulnerabilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa (a) Incorreta. O tratamento da tuberculose é amplamente conhecido e padronizado mundialmente e no Brasil. O Ministério da Saúde estabelece protocolos rígidos, como o esquema básico RIPE (Rifampicina, Isoniazida, Pirazinamida e Etambutol), oferecido gratuitamente pelo SUS. Portanto, existe medicação padronizada e eficaz.\n\nAlternativa (b) Incorreta. A tuberculose apresenta alta incidência, e não baixa. O Brasil faz parte do grupo de países prioritários da Organização Mundial da Saúde (OMS) que concentram a maior carga da doença no mundo. Embora a vulnerabilidade social seja um fator determinante, a alta circulação do bacilo na população contradiz a afirmação de baixa incidência.\n\nAlternativa (c) Incorreta. O diagnóstico da tuberculose é baseado prioritariamente em exames bacteriológicos e moleculares, como a baciloscopia de escarro, a cultura e o Teste Rápido Molecular (TRM-TB). Embora o raio X de tórax seja uma ferramenta auxiliar importante, ele não é considerado de alta sofisticação tecnológica nem representa a principal dificuldade para o controle da doença. O desafio principal é a busca ativa de sintomáticos respiratórios e a adesão ao tratamento.\n\nAlternativa (d) Correta. A tuberculose é considerada um problema de saúde pública porque preenche os critérios epidemiológicos de priorização:\n1. Magnitude: Refere-se à alta frequência da doença (elevadas taxas de incidência e prevalência) e sua mortalidade.\n2. Transcendência: Refere-se ao impacto socioeconômico, à gravidade da doença e ao estigma social que ela carrega, afetando a capacidade produtiva e a qualidade de vida.\n3. Vulnerabilidade: Indica que a doença é passível de prevenção e controle por meio de intervenções de saúde pública, como o diagnóstico precoce, o tratamento adequado para interrupção da cadeia de transmissão e a vacinação BCG.\n\nA alternativa (d) resume com precisão os conceitos de vigilância epidemiológica aplicados à gestão de políticas públicas de saúde.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:06.907Z"
+  },
+  {
+    "id": "AJUDA_d71f7bcc-8659-4a15-acb4-bee19fc30582",
+    "originalId": "d71f7bcc-8659-4a15-acb4-bee19fc30582",
+    "statement": "O aleitamento materno é a melhor opção para a alimentação de lactentes, mas em situações em que ela não é possível, as fórmulas lácteas são alternativas para garantir o aporte nutricional adequado. Considerando as recomendações do Ministério da Saúde do Brasil sobre as fórmulas lácteas para lactentes, qual das seguintes afirmações está correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "As fórmulas infantis à base de leite de vaca integral são as mais indicadas para lactentes com menos de 6 meses de idade, por serem mais próximas da composição do leite materno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As fórmulas infantis à base de soja são indicadas para todos os lactentes que não podem ser amamentados, sendo a primeira escolha na impossibilidade do aleitamento materno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As fórmulas infantis devem ser preparadas com água fervida e devem ser oferecidas ao lactente em temperatura ambiente, evitando o aquecimento excessivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A adição de açúcar, mel ou outros adoçantes às fórmulas infantis é recomendada para melhorar a aceitação e o sabor, especialmente nos primeiros meses de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O uso de mamadeiras e bicos artificiais deve ser incentivado desde o nascimento, para facilitar a transição para a alimentação com fórmulas lácteas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa A (Incorreta): O leite de vaca integral e puro não é adequado para lactentes, especialmente para aqueles com menos de 6 meses. Ele possui uma concentração excessiva de proteínas e eletrólitos (causando sobrecarga renal) e baixos níveis de gorduras essenciais e ferro, o que pode levar à anemia e micro-hemorragias intestinais. As fórmulas infantis são, na verdade, leite de vaca modificado laboratorialmente para tentar se aproximar da composição do leite materno, mas o termo leite de vaca integral refere-se ao produto sem essas modificações necessárias.\n\nAlternativa B (Incorreta): As fórmulas à base de soja não são a primeira escolha para a substituição do leite materno. Elas são indicadas apenas em situações específicas, como na galactosemia ou por escolha de famílias vegetarianas estritas. Elas não devem ser usadas de rotina para lactentes saudáveis e são contraindicadas para prematuros e, em muitos casos, para lactentes com alergia à proteína do leite de vaca (APLV) menores de 6 meses, devido ao risco de sensibilidade cruzada.\n\nAlternativa C (Correta): De acordo com as normas de segurança alimentar e as recomendações do Ministério da Saúde, a água utilizada no preparo das fórmulas deve ser fervida para garantir a eliminação de microrganismos. A recomendação de oferecer a fórmula em temperatura ambiente visa evitar acidentes com queimaduras na mucosa oral do lactente, que podem ocorrer se o leite estiver muito quente ou se for aquecido de forma desigual (como no micro-ondas).\n\nAlternativa D (Incorreta): A adição de açúcar, mel ou qualquer outro edulcorante é terminantemente contraindicada para lactentes e crianças até os 2 anos de idade. O açúcar predispõe à obesidade, diabetes e cáries. Já o mel é proibido para menores de 1 ano devido ao risco de botulismo, já que o trato gastrointestinal do bebê ainda não consegue impedir a proliferação dos esporos da bactéria Clostridium botulinum.\n\nAlternativa E (Incorreta): O uso de mamadeiras, bicos e chupetas é desaconselhado pelo Ministério da Saúde e pela Organização Mundial da Saúde. Esses artefatos podem causar a confusão de bicos, prejudicando a pega correta no peito, além de estarem associados a um maior risco de infecções (otites e diarreias), problemas na dentição e alterações no desenvolvimento da fala e deglutição. Na impossibilidade da amamentação, o uso de copinhos ou colheres é preferível.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:06.907Z"
+  },
+  {
+    "id": "AJUDA_d722de99-2966-44ee-8637-1978d6efc61f",
+    "originalId": "d722de99-2966-44ee-8637-1978d6efc61f",
+    "statement": "Quanto ao rastreio de pré-eclâmpsia, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na avaliação dopplervelocimétrica, o aumento do índice de pulsatilidade da artéria oftálmica materna traduz o aumento da resistência vascular periférica materna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nas gestantes classificadas como de alto risco, recomenda-se administrar ácido acetilsalicílico 1,0 g/dia, preferencialmente à noite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O rastreio realizado, entre 11 e 13 semanas, por uma combinação de fatores maternos, índices biofísicos e dosagens bioquímicas, apresenta sensibilidade de 95% para pré-eclâmpsia pré-termo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A dosagem do fator de crescimento placentário se encontra aumentada entre 11 e 13 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) Incorreta: O estudo dopplervelocimétrico da artéria oftálmica materna é utilizado para avaliar a hemodinâmica central e o risco de encefalopatia hipertensiva. Nas gestantes que desenvolverão pré-eclâmpsia, observa-se uma diminuição do índice de pulsatilidade (IP) da artéria oftálmica, e não um aumento. Essa redução ocorre devido a uma hiperperfusão e vasodilatação no território cerebral em resposta à patologia. Além disso, o IP da artéria oftálmica reflete alterações da circulação central/cerebral e não é um marcador direto da resistência vascular periférica sistêmica.\n\nAlternativa (b) Incorreta: A recomendação para gestantes de alto risco é a administração de ácido acetilsalicílico (AAS) em doses baixas, que variam de 100 mg a 150 mg por dia, preferencialmente à noite, iniciando entre a 12ª e a 16ª semana de gestação. A dose de 1,0 g (1.000 mg) mencionada na alternativa está incorreta e é muito superior à dose profilática estabelecida pelos protocolos nacionais e internacionais.\n\nAlternativa (c) Correta: O rastreio combinado do primeiro trimestre (realizado entre 11 semanas e 13 semanas e 6 dias) é a estratégia mais eficaz atualmente. Ele utiliza o algoritmo da Fetal Medicine Foundation, que combina fatores de risco maternos (história clínica), pressão arterial média, Doppler das artérias uterinas (IP médio) e marcadores bioquímicos (fator de crescimento placentário – PlGF). Esse modelo apresenta uma sensibilidade próxima a 95% para a identificação da pré-eclâmpsia precoce (aquela que surge antes de 34 semanas) e uma alta taxa de detecção para a pré-eclâmpsia pré-termo (antes de 37 semanas).\n\nAlternativa (d) Incorreta: O fator de crescimento placentário (PlGF) é uma molécula pró-angiogênica produzida pela placenta. Na fisiopatologia da pré-eclâmpsia, ocorre uma invasão trofoblástica inadequada e disfunção placentária, o que leva a uma menor produção dessa substância. Portanto, no rastreio do primeiro trimestre das pacientes que desenvolverão a doença, a dosagem de PlGF encontra-se diminuída, e não aumentada.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:06.907Z"
+  },
+  {
+    "id": "AJUDA_d73db8b1-af75-4ddb-b6be-81d1b67591aa",
+    "originalId": "d73db8b1-af75-4ddb-b6be-81d1b67591aa",
+    "statement": "Paciente do sexo masculino de 59 anos, portador de hipertensão arterial sistêmica, dislipidemia mista, com história de dor torácica opressiva há 70 minutos e com sudorese chega ao pronto atendimento de um hospital terciário e realiza o eletrocardiograma de repouso a seguir em menos de 10 minutos:\n\nA conduta indicada neste caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "aguardar troponina para confirmar o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar heparina de baixo peso ou anticoagulante oral direto (NOAC) e transferir para trombólise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "administrar AAS mais inibidor P2Y12 e encaminhar para angioplastia primária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "administrar morfina, oxigênio, nitrato e AAS e observar resposta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "solicitar ecocardiograma com doppler colorido de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do quadro clínico e eletrocardiográfico:\nO paciente apresenta um quadro clássico de síndrome coronariana aguda: homem de 59 anos com fatores de risco cardiovascular (hipertensão e dislipidemia) e dor torácica típica (opressiva com sudorese) de início recente (70 minutos). O eletrocardiograma (ECG) é o ponto-chave da questão. Observa-se um supradesnivelamento do segmento ST de V1 a V6, além das derivações laterais altas (DI e aVL). Estamos diante de um Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAMCSST) de parede anterior extensa.\n\nAnálise das alternativas:\n\na) Incorreta. No IAMCSST, o diagnóstico é clínico e eletrocardiográfico. Não se deve aguardar o resultado de marcadores de necrose miocárdica (como a troponina) para iniciar o tratamento de reperfusão. O atraso na conduta aumenta a mortalidade e a perda de massa muscular cardíaca (\"tempo é músculo\").\n\nb) Incorreta. Os anticoagulantes orais diretos (NOACs), como a rivaroxabana ou apixabana, não têm papel no manejo agudo do infarto com supra de ST. Além disso, o paciente está em um hospital terciário, o que geralmente implica disponibilidade de hemodinâmica para angioplastia primária, que é superior à trombólise quando disponível em tempo hábil.\n\nc) Correta. Esta é a conduta padrão-ouro para o IAMCSST. O paciente deve receber dupla antiagregação plaquetária imediata (AAS associado a um inibidor do receptor P2Y12, como ticagrelor, prasugrel ou clopidogrel) e ser encaminhado o mais rápido possível para a estratégia de reperfusão preferencial, que é a angioplastia primária (cineangiocoronariografia de urgência).\n\nd) Incorreta. Embora façam parte do mnemônico clássico (MONA), essas medidas são adjuvantes. O oxigênio só é indicado se a saturação estiver abaixo de 90%, e o nitrato deve ser evitado se houver suspeita de infarto de ventrículo direito ou uso de inibidores da fosfodiesterase. O erro principal da alternativa é \"observar resposta\", pois o paciente necessita de intervenção imediata para abrir a artéria culpada, e não de conduta expectante.\n\ne) Incorreta. O ecocardiograma pode ser útil em casos de dúvida diagnóstica ou para avaliar complicações mecânicas, mas, no cenário de um ECG com supra de ST evidente e dor típica, solicitar o exame de imagem atrasaria desnecessariamente a reperfusão coronariana.\n\nResumo: Diante de um IAMCSST diagnosticado pelo ECG em hospital com suporte, a prioridade é a dupla antiagregação e a desobstrução arterial mecânica imediata (angioplastia).",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+      "Eletrocardiograma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/993c8bd42cd22f6f911c72ec240e051141aad514dcbcba7e27730b0153efbc48.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d73db8b1-af75-4ddb-b6be-81d1b67591aa_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:07.553Z"
+  },
+  {
+    "id": "AJUDA_d744f944-6932-464c-92e5-3256daa6d98b",
+    "originalId": "d744f944-6932-464c-92e5-3256daa6d98b",
+    "statement": "Primigesta, idade gestacional de 9 semanas, veio à primeira consulta de pré-natal já com resultado de glicemia de jejum colhida nesta gestação de 92 mg/dL. Com base nesse caso clínico, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se solicitar a hemoglobina glicada para complementação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se solicitar o teste oral de tolerância à glicose quando idade gestacional entre 24-28 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de diabetes pré-gestacional (“overt” diabetes).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de um quadro de resistência insulínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trata-se de diabetes gestacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA paciente é uma primigesta na 9ª semana de gestação (primeiro trimestre) apresentando uma glicemia de jejum de 92 mg/dL. Segundo as diretrizes da Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) e da Sociedade Brasileira de Diabetes (SBD), baseadas nos critérios do IADPSG, o rastreamento do diabetes deve ocorrer na primeira consulta de pré-natal.\n\nOs critérios de interpretação da glicemia de jejum no início da gravidez são:\n1. Glicemia de jejum menor que 92 mg/dL: Normal. A paciente deverá ser reavaliada entre 24 e 28 semanas com o Teste Oral de Tolerância à Glicose (TOTG 75g).\n2. Glicemia de jejum entre 92 e 125 mg/dL: Diagnóstico de Diabetes Mellitus Gestacional (DMG).\n3. Glicemia de jejum maior ou igual a 126 mg/dL: Diagnóstico de Diabetes Mellitus Pré-gestacional (também chamado de overt diabetes).\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A hemoglobina glicada (HbA1c) pode ser utilizada para o diagnóstico de diabetes pré-gestacional (se maior ou igual a 6,5%), mas não é necessária para complementar o diagnóstico de DMG quando a glicemia de jejum já atingiu o ponto de corte de 92 mg/dL.\n\nAlternativa b) Incorreta. O TOTG 75g realizado entre 24 e 28 semanas é o segundo passo do rastreamento, indicado apenas para gestantes que tiveram glicemia de jejum inicial normal (inferior a 92 mg/dL). Como a paciente já possui o diagnóstico de DMG pelo exame inicial, o teste de sobrecarga não deve ser realizado.\n\nAlternativa c) Incorreta. O diabetes pré-gestacional (overt diabetes) é caracterizado por níveis glicêmicos que já atingiriam os critérios de diabetes fora da gravidez (glicemia de jejum maior ou igual a 126 mg/dL ou HbA1c maior ou igual a 6,5%). O valor de 92 mg/dL é inferior a esse patamar.\n\nAlternativa d) Incorreta. Embora o diabetes gestacional envolva um aumento da resistência insulínica (fisiologicamente mediada por hormônios placentários como o lactogênio placentário), esta é uma descrição do mecanismo da doença e não o nome do diagnóstico clínico estabelecido pelos critérios de rastreamento.\n\nAlternativa e) Correta. Como a glicemia de jejum da paciente foi de exatamente 92 mg/dL no primeiro trimestre, ela se enquadra no critério diagnóstico para Diabetes Mellitus Gestacional.\n\nGABARITO: Alternativa (e).",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:07.553Z"
+  },
+  {
+    "id": "AJUDA_d7509818-d4fc-4876-88a2-ce691f94aca3",
+    "originalId": "d7509818-d4fc-4876-88a2-ce691f94aca3",
+    "statement": "Um menino de 4 anos, previamente saudável, apresenta febre alta (39,5 ºC), há 2 dias, acompanhada de tosse e prostração. Foi hospitalizado com diagnóstico de pneumonia bacteriana e iniciou o tratamento com antibiótico intravenoso. No segundo dia de internação, começou a ficar agitado, gritando e falando de forma desconexa, muito assustado, pois “via monstros no quarto” e apresentava dificuldade para manter atenção. Passou bastante inquieto a noite toda, por vezes, chutando a mãe que cuidava dele. Foram descartadas causas neurológicas com tomografia e exames laboratoriais. \nEm termos de diagnóstico psiquiátrico, as alterações comportamentais desse quadro clínico podem ser descritas como um caso de",
+    "options": [
+      {
+        "id": "A",
+        "text": "delirium.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "psicose infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "transtorno do espectro autista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "transtorno opositor desafiador.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito é um exemplo clássico de delirium, também conhecido como estado confusional agudo. A chave para a resolução desta questão reside na identificação de um início súbito (agudo) de alterações cognitivas e comportamentais em uma criança previamente saudável, desencadeado por uma condição médica sistêmica (pneumonia e febre alta).\n\nAbaixo, a análise detalhada de cada alternativa:\n\na) delirium. (Correta)\nO delirium é caracterizado por uma perturbação da atenção e da consciência que se desenvolve em um curto período de tempo (horas ou poucos dias) e tende a flutuar em intensidade ao longo do dia. No caso clínico, o menino apresenta os critérios diagnósticos principais: prejuízo da atenção, desorientação (falar de forma desconexa), alucinações visuais (\"vê monstros\"), agitação psicomotora e inversão do ciclo sono-vigília (inquietude noturna). Em pediatria, é muito comum que quadros infecciosos graves e febre alta precipitem o delirium, sendo o tratamento focado na resolução da causa-base (a pneumonia).\n\nb) psicose infantil. (Incorreta)\nEmbora a criança apresente sintomas psicóticos (alucinações e fala desconexa), o termo \"psicose infantil\" refere-se geralmente a transtornos mentais graves e crônicos. No cenário de uma doença aguda com febre, a causa orgânica (médica) deve ser sempre a primeira hipótese. O diagnóstico de um transtorno psicótico primário exigiria a exclusão de causas médicas diretas e uma observação prolongada, o que não se aplica a um quadro que surgiu subitamente durante uma internação por pneumonia.\n\nc) transtorno do espectro autista. (Incorreta)\nO Transtorno do Espectro Autista (TEA) é um transtorno do neurodesenvolvimento que se manifesta precocemente por déficits persistentes na comunicação social, na interação social e por padrões restritos e repetitivos de comportamento. Não é um quadro de início agudo e não cursa com alucinações ou desorientação súbita associada a processos infecciosos.\n\nd) transtorno opositor desafiador. (Incorreta)\nO Transtorno Opositor Desafiador (TOD) caracteriza-se por um padrão persistente de humor irritável, comportamento questionador, desafiante ou vingativo em relação a figuras de autoridade. É um diagnóstico da área da psiquiatria da infância e adolescência relacionado ao comportamento crônico e não a um episódio agudo de confusão mental e alucinações no contexto de uma hospitalização por doença clínica.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:07.553Z"
+  },
+  {
+    "id": "AJUDA_d7548b88-4cca-44fd-a45f-4f9723d04b0e",
+    "originalId": "d7548b88-4cca-44fd-a45f-4f9723d04b0e",
+    "statement": "De acordo com a Cartilha de Desenvolvimento Infantil da Sociedade Brasileira de Pediatria, assinale a opção que apresenta as habilidades esperadas para uma criança de 6 meses de vida.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acena “adeus” e “tchau”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Chama “mamã” ou “papá” ou outro nome especial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Caminha, segurando nos móveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pega as coisas entre o polegar e o indicador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Reveza‑se fazendo sons com o cuidador.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda os marcos do desenvolvimento neuropsicomotor infantil, especificamente baseando-se nas diretrizes da Sociedade Brasileira de Pediatria (SBP) para o primeiro ano de vida. Para resolvê-la, é fundamental diferenciar o que é esperado no primeiro semestre (ênfase em interação básica e controle de tronco) do que surge no final do primeiro ano (independência motora e comunicação gestual/verbal específica).\n\nAlternativa (e) - CORRETA: Aos 6 meses de idade, um marco crucial do desenvolvimento da linguagem e socialização é a interação recíproca. A criança começa a participar de \"diálogos\" rudimentares, em que o cuidador fala e ela responde com sons (vocalizações, balbucios), respeitando o tempo de troca. É o início do conceito de turno na comunicação. Outros marcos dessa idade incluem rolar, sentar-se com apoio (ou começando a sentar sem apoio) e transferir objetos de uma mão para a outra.\n\nAlternativa (a) - INCORRETA: Acenar e fazer gestos sociais como \"tchau\" são habilidades de comunicação não verbal que surgem mais tarde, geralmente por volta dos 9 meses de idade.\n\nAlternativa (b) - INCORRETA: A emissão de polissílabos vocais como \"mamá\" ou \"papá\", inicialmente de forma inespecífica (sem endereçar diretamente à pessoa), é esperada por volta dos 9 meses. Aos 12 meses, essa fala torna-se específica e direcionada.\n\nAlternativa (c) - INCORRETA: O desenvolvimento motor grosseiro de caminhar segurando-se nos móveis (também chamado de \"cruising\") é uma etapa preparatória para a marcha independente, ocorrendo tipicamente entre os 9 e 10 meses.\n\nAlternativa (d) - INCORRETA: A pinça completa (uso das polpas do polegar e do indicador para pegar objetos pequenos) é um refinamento da motricidade fina que se consolida aos 9 meses. Aos 6 meses, a preensão ainda é palmar ou palmar radial (utilizando o lado do polegar, mas não a ponta dos dedos em pinça).",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:56:07.553Z"
+  }
+]

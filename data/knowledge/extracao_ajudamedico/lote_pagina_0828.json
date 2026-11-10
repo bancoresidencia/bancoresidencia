@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_e6a6fd7c-be1f-4fa2-b60b-fbf814ad54f3",
+    "originalId": "e6a6fd7c-be1f-4fa2-b60b-fbf814ad54f3",
+    "statement": "Homem, de 40 anos de idade, encontra-se em terceiro dia de internação hospitalar por pancreatite aguda leve de etiologia biliar. Está com bom controle álgico, sem náuseas ou vômitos. O exame físico abdominal apresenta-se com ruídos hidroaéreos presentes e propulsivos. Após tentativa de reintrodução da dieta oral, o paciente evoluiu com náuseas e vômitos após se alimentar. Os exames laboratoriais não demonstraram alterações significativas e a tomografia computadorizada de abdome revelou presença de necrose em corpo do pâncreas (20%) e esteatonecrose, sem demais complicações. Qual é a conduta indicada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realização de necrosectomia cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Passagem de acesso venoso central para nutrição parenteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Passagem de sonda nasoenteral para nutrição enteral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realização de colecistectomia de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o manejo de um paciente com pancreatite aguda de origem biliar que apresenta falha na reintrodução da dieta oral. O ponto central para a resolução é entender a hierarquia da terapia nutricional e as indicações cirúrgicas na pancreatite.\n\nAnálise das alternativas:\n\na) Incorreta. A necrosectomia cirúrgica não é indicada neste momento. A necrose identificada na tomografia (20%) é considerada estéril (visto que o paciente está no 3º dia e sem sinais de sepse) e de pequena extensão. Intervenções cirúrgicas em áreas de necrose devem ser evitadas na fase precoce, sendo reservadas para casos de necrose infectada confirmada ou suspeita com deterioração clínica, preferencialmente após 4 semanas, quando a coleção está organizada (walled-off necrosis).\n\nb) Incorreta. A nutrição parenteral total (NPT) deve ser a última opção na pancreatite aguda. Ela está associada a maiores taxas de complicações infecciosas, atrofia da mucosa intestinal e maior tempo de internação. A NPT só é indicada quando a via enteral for impossível, contraindicada ou não suprir as necessidades calóricas do paciente após tentativas exaustivas.\n\nc) Correta. O paciente apresenta intolerância à dieta oral (náuseas e vômitos). Nestes casos, a conduta padrão é a passagem de uma sonda para início de nutrição enteral (nasoenteral ou nasojejunal). A nutrição enteral é fundamental para manter a integridade da barreira mucosa intestinal, reduzindo a translocação bacteriana e, consequentemente, o risco de infecção da necrose pancreática e de complicações sistêmicas. Estudos mostram que a via enteral é superior à parenteral em termos de segurança e prognóstico.\n\nd) Incorreta. Embora a pancreatite seja de etiologia biliar, a colecistectomia de urgência não é o tratamento para a intolerância alimentar. Na pancreatite biliar leve, a colecistectomia deve ser realizada na mesma internação, porém após a resolução do quadro inflamatório agudo (quando o paciente estiver assintomático e tolerando dieta). No cenário atual de vômitos e necrose, o foco deve ser o suporte nutricional antes do procedimento cirúrgico eletivo/programado.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:11.935Z"
+  },
+  {
+    "id": "AJUDA_e6a71280-9114-4946-be49-71ba50743c9a",
+    "originalId": "e6a71280-9114-4946-be49-71ba50743c9a",
+    "statement": "Sobre a estática fetal, assinale a alternativa verdadeira:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na apresentação cefálica fletida, o ponto de referência fetal é o bregma, sendo favorável ao parto vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na apresentação cefálica defletida de 2º grau ou fronte, a referência fetal é a glabela, sendo indicação absoluta de cesárea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "No assinclitismo posterior a sutura sagital do feto está próxima ao sacro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na variedade de posição córmica, a referência fetal é o sacro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Na apresentação cefálica defletida de 3º grau, o ponto de referência fetal é o lambda, sendo impossível o parto normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a estática fetal, é fundamental dominar os conceitos de atitude, apresentação e pontos de referência. Vamos analisar cada alternativa:\n\nAlternativa (a) Incorreta. Na apresentação cefálica fletida (também chamada de vértice ou occipital), o feto apresenta o menor diâmetro (suboccipitobregmático) e o ponto de referência é a fontanela posterior (lambda ou occipital). O bregma é o ponto de referência da deflexão de 1º grau.\n\nAlternativa (b) Correta. A apresentação de fronte (deflexão de 2º grau) ocorre quando a cabeça fetal está em uma posição intermediária entre a flexão e a deflexão total. O ponto de referência é a glabela (ou a raiz do nariz). Nessa situação, o diâmetro que tenta atravessar o canal de parto é o occipitomentoniano (cerca de 13,5 cm), que é superior aos diâmetros da pelve materna, tornando o parto vaginal impossível e configurando indicação absoluta de cesariana.\n\nAlternativa (c) Incorreta. O assinclitismo é a inclinação lateral da cabeça fetal. No assinclitismo posterior (obliquidade de Litzmann), a sutura sagital está mais próxima da sínfise púbica, pois o osso parietal posterior é o que primeiro desce para a pelve. Se a sutura sagital estivesse próxima ao sacro, teríamos o assinclitismo anterior (obliquidade de Nägele).\n\nAlternativa (d) Incorreta. A posição córmica refere-se à situação transversa. O ponto de referência fetal na apresentação córmica é o acrômio (escápula). O sacro é o ponto de referência das apresentações pélvicas.\n\nAlternativa (e) Incorreta. Na apresentação cefálica defletida de 3º grau (apresentação de face), o ponto de referência é o mento (queixo), e não o lambda. Diferente da fronte, o parto normal na apresentação de face é possível, desde que a variedade de posição seja mentoanterior (o queixo gira para a frente, permitindo a flexão da cabeça sob a sínfise púbica). O parto é impossível apenas na variedade mentoposterior.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:11.935Z"
+  },
+  {
+    "id": "AJUDA_e6c102ec-132a-4aec-9a3b-f5e04c76f422",
+    "originalId": "e6c102ec-132a-4aec-9a3b-f5e04c76f422",
+    "statement": "Homem, 48 anos de idade, morador de área livre, foi internado com quadro de uma semana de confusão mental e diarreia, evacuando fezes aquosas várias vezes ao dia com urgência. Ele estava confuso e desorientado em relação ao espaço e ao tempo. Relata ingerir aproximadamente 100 mL de destilado por dia. Exame físico: alerta, confuso, exame neurológico normal e sem nistagmo ou oftalmoplegia; dentes em mau estado de conservação; erupção cutânea eritematosa, simétrica e sem coceira, predominantemente na face, pescoço, mãos e antebraços, com algumas bolhas. Qual é a deficiência nutricional mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cioanocobalamina (B12)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Piridoxina (B6)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Niacina (B3)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tiamina (B1)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descrito é uma apresentação clássica de pelagra, uma doença causada pela deficiência de niacina (vitamina B3). A pelagra é tradicionalmente caracterizada pela tríade dos três Ds: Dermatite, Diarreia e Demência (ou confusão mental). \n\nNo caso apresentado, o paciente possui os três componentes:\n1. Diarreia: Relato de fezes aquosas e urgência.\n2. Demência/Confusão: Desorientação no tempo e no espaço.\n3. Dermatite: Erupção cutânea eritematosa, simétrica e fotossensível, localizada em áreas expostas ao sol (face, pescoço, mãos e antebraços). O envolvimento do pescoço é conhecido como colar de Casal.\n\nO histórico de etilismo crônico (100 mL de destilado/dia) e a situação de vulnerabilidade social (morador de área livre) são fatores de risco determinantes para deficiências nutricionais múltiplas, sendo a pelagra uma das mais marcantes nesse contexto.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Cianocobalamina (B12): Incorreta. A deficiência de B12 causa anemia megaloblástica e sintomas neurológicos, como a degeneração combinada subaguda da medula (perda de sensibilidade vibratória e propriocepção, parestesias e ataxia). Embora possa causar irritabilidade ou demência em estágios avançados, não apresenta a dermatite fotossensível característica descrita na questão.\n\nb) Piridoxina (B6): Incorreta. A deficiência de vitamina B6 pode causar anemia sideroblástica, neuropatia periférica e queilite angular. Embora possa haver alterações cutâneas, como a dermatite seborreica, elas não seguem o padrão simétrico e fotossensível da pelagra, nem costumam cursar com o quadro sistêmico de diarreia e confusão mental grave simultâneas.\n\nc) Niacina (B3): Correta. A deficiência de niacina resulta no quadro de pelagra. A descrição da erupção cutânea (eritematosa, simétrica, em áreas expostas) associada a sintomas gastrointestinais (diarreia) e neuropsiquiátricos (confusão mental) é o marcador diagnóstico clássico desta deficiência vitamínica.\n\nd) Tiamina (B1): Incorreta. A deficiência de tiamina em alcoólatras costuma levar à encefalopatia de Wernicke, que se manifesta pela tríade de confusão mental, ataxia e alterações oculares (nistagmo ou oftalmoplegia). O examinador foi cuidadoso ao informar que o exame neurológico era normal e que não havia nistagmo ou oftalmoplegia, justamente para afastar a hipótese de deficiência de B1.\n\nGABARITO: A alternativa correta é a letra (c).",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:11.935Z"
+  },
+  {
+    "id": "AJUDA_e6c23109-7eec-436a-8288-8f3432c37ce4",
+    "originalId": "e6c23109-7eec-436a-8288-8f3432c37ce4",
+    "statement": "Durante uma reunião do Conselho Municipal de Saúde, o secretário apresentou dados para justificar a priorização de recursos na APS. Entre os indicadores, constam: taxa de mortalidade infantil (15/1.000 NV), cobertura vacinal (92%), cobertura populacional estimada pelas equipes de Saúde da Família (68%), tempo médio de espera para consulta especializada (110 dias) e incidência de tuberculose (36/100.000 habitantes). Considerando o papel dos indicadores para monitorar o acesso e a continuidade do cuidado na APS, qual deles é mais diretamente aplicável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Taxa de mortalidade infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cobertura populacional estimada pelas equipes de ESF.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Taxa de incidência de tuberculose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tempo médio de espera para consulta especializada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão exige conhecimento sobre indicadores de saúde e sua relação com os atributos da Atenção Primária à Saúde (APS), especificamente o acesso (primeiro contato) e a continuidade do cuidado (longitudinalidade).\n\nAlternativa (a) Incorreta. A taxa de mortalidade infantil é um indicador de resultado ou impacto. Ela reflete as condições de vida, o saneamento e a qualidade geral da assistência à saúde de uma região. Embora uma APS eficiente ajude a reduzir esses números, esse indicador não mede diretamente se o paciente consegue entrar no sistema (acesso) ou se é acompanhado ao longo do tempo (continuidade).\n\nAlternativa (b) Correta. A cobertura populacional estimada pelas equipes de Saúde da Família (ESF) é um indicador de estrutura e processo que reflete a capacidade do sistema de oferecer uma \"porta de entrada\" para a população. No modelo brasileiro, a ESF é a estratégia prioritária para a organização da APS. Ter uma equipe de referência vinculada a um território é o primeiro passo para garantir o acesso universal e permitir que o vínculo entre profissional e paciente seja estabelecido, o que é a base da continuidade do cuidado.\n\nAlternativa (c) Incorreta. A incidência de tuberculose é um indicador epidemiológico. Ela monitora a carga da doença na população. Embora a APS tenha papel fundamental no diagnóstico e tratamento, o número de novos casos, isoladamente, está mais relacionado a fatores sociais e de transmissão do que propriamente à mensuração da continuidade do cuidado ou à facilidade de acesso ao serviço.\n\nAlternativa (d) Incorreta. O tempo médio de espera para consulta especializada é um indicador de acesso, porém voltado para a atenção secundária (especializada) e não especificamente para a APS. Além disso, ele foca em um ponto de estrangulamento do sistema que costuma ocorrer fora do âmbito da unidade básica de saúde.\n\nResumo: Para monitorar se a APS está cumprindo seu papel de porta de entrada e acompanhamento longitudinal, saber qual percentual da população está coberto por equipes de Saúde da Família é o dado mais direto e fidedigno entre as opções apresentadas.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:11.935Z"
+  },
+  {
+    "id": "AJUDA_e6c521dc-c61e-4186-af3a-14a7fd0b3242",
+    "originalId": "e6c521dc-c61e-4186-af3a-14a7fd0b3242",
+    "statement": "Paciente do sexo feminino, 38 anos, professora de educação física, apresenta dor no cotovelo direito há 4 meses. Relata piora da dor ao realizar movimentos de extensão do punho e ao levantar objetos. O exame físico revela sensibilidade sobre o epicôndilo lateral do cotovelo, sugerindo epicondilite lateral. \n\nA manobra adequada para confirmar o diagnóstico de epicondilite lateral nesse caso é a Manobra de",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cozen.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Phalen.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Finkelstein.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Thompson.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito — dor na face lateral do cotovelo que piora com a extensão do punho e sensibilidade no epicôndilo lateral — é clássico da epicondilite lateral, também conhecida como \"cotovelo de tenista\". Trata-se de uma tendinopatia que afeta principalmente a origem do músculo extensor radial curto do carpo.\n\nAnálise das alternativas:\n\na) Cozen: Alternativa correta. A manobra de Cozen é realizada com o cotovelo do paciente em flexão de 90 graus e o antebraço em pronação. O paciente é solicitado a realizar uma extensão do punho contra a resistência do examinador. O teste é considerado positivo se houver dor súbita no epicôndilo lateral, confirmando a inflamação ou degeneração no local.\n\nb) Phalen: Alternativa incorreta. O teste de Phalen consiste na flexão máxima de ambos os punhos, mantendo-os encostados pelo dorso por cerca de 60 segundos. É utilizado para diagnosticar a síndrome do túnel do carpo, avaliando a compressão do nervo mediano, sem relação direta com patologias do cotovelo.\n\nc) Finkelstein: Alternativa incorreta. Esta manobra é utilizada para o diagnóstico da tenossinovite de De Quervain. O paciente fecha a mão com o polegar fletido sob os demais dedos e o examinador realiza um desvio ulnar passivo do punho. A dor no primeiro compartimento extensor (estiloide do rádio) indica positividade.\n\nd) Thompson: Alternativa incorreta. O teste de Thompson é utilizado na ortopedia para avaliar a integridade do tendão de Aquiles (calcâneo). Com o paciente em decúbito ventral, o examinador comprime a musculatura da panturrilha; a ausência de flexão plantar reflexa indica ruptura total do tendão.\n\nPortanto, para um quadro de epicondilite lateral, a manobra diagnóstica de escolha entre as opções é a de Cozen. Além dela, outras manobras como o teste de Mill e o teste de Maudsley também poderiam ser aplicadas.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Doenças do Ombro e Cotovelo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:11.935Z"
+  },
+  {
+    "id": "AJUDA_e6c6b416-4a91-417a-9f85-d1719c3922cc",
+    "originalId": "e6c6b416-4a91-417a-9f85-d1719c3922cc",
+    "statement": "Em um paciente instável com trauma abdominal fechado, o exame inicial preferido é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tomografia computadorizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "FAST.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Radiografia de abdome agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Laparoscopia exploradora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Lavado peritoneal diagnóstico (LPD).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O manejo do trauma abdominal fechado segue protocolos bem estabelecidos, como o ATLS, priorizando a identificação rápida de fontes de sangramento interno em pacientes que não apresentam estabilidade clínica.\n\nAnálise das alternativas:\n\na) Tomografia computadorizada: Incorreta. Embora seja o padrão-ouro para avaliar lesões de órgãos sólidos, a tomografia exige que o paciente seja transportado para a sala de exames e permaneça imóvel. Por isso, é estritamente contraindicada para pacientes hemodinamicamente instáveis, devendo ser reservada apenas para pacientes estáveis.\n\nb) FAST (Focused Assessment with Sonography for Trauma): Correta. O FAST é o exame de escolha inicial para pacientes instáveis. Ele é realizado à beira do leito, de forma rápida e não invasiva, e permite identificar a presença de líquido livre (sangue) na cavidade peritoneal ou no saco pericárdico, direcionando o paciente imediatamente para a laparotomia se o resultado for positivo.\n\nc) Radiografia de abdome agudo: Incorreta. As radiografias simples de abdome possuem baixa sensibilidade para detectar hemoperitônio (sangue no abdome) e não auxiliam na conduta imediata do choque em pacientes com trauma fechado.\n\nd) Laparoscopia exploradora: Incorreta. A laparoscopia é um procedimento cirúrgico invasivo. Em pacientes instáveis com trauma fechado e suspeita de sangramento abdominal, a conduta cirúrgica de escolha é a laparotomia exploradora (via aberta), pois permite um controle de danos mais rápido e eficaz. A laparoscopia é mais utilizada em traumas penetrantes ou em pacientes estáveis para evitar laparotomias desnecessárias.\n\ne) Lavado peritoneal diagnóstico (LPD): Incorreta (como primeira opção preferida). O LPD é um exame válido para pacientes instáveis quando o FAST não está disponível ou é inconclusivo. No entanto, por ser um método invasivo e com risco de complicações, o FAST tornou-se o método de imagem preferencial e inicial na prática médica atual.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:11.935Z"
+  },
+  {
+    "id": "AJUDA_e6d31699-1e6a-483c-b20b-87ff27ae1457",
+    "originalId": "e6d31699-1e6a-483c-b20b-87ff27ae1457",
+    "statement": "Homem, de 38 anos de idade, pedreiro, procura a Unidade Básica de Saúde por dor na lombar “no centro das costas, embaixo”, há cerca de 8 meses. Dor em peso/fadiga, que piora ao final do dia e melhora com repouso, banho quente e analgésico comum que ele compra na farmácia. Refere formigamento ocasional em nádega direita “quando força muito”, mas nega perda de força ou queda do pé. Nega antecedentes pessoais ou familiares relevantes. Diz que “precisa fazer uma ressonância da coluna”, porque acha que pode estar com “bico de papagaio” e ter algo sério que o deixe \"travado\". Relata que está há 3 dias sem conseguir trabalhar por causa da dor e teme ser despedido: “Se eu travo, o patrão já arruma outro”.\n\nApós um mês, o paciente retorna em consulta médica e conta que perdeu o emprego por recorrência de faltas pela dor lombar, que só piora apesar do uso das medicações prescritas na última consulta. Desde então, além das dores, ele está apresentando insônia, falta de apetite e muito desânimo, a ponto de passar dias inteiros na cama. Ele chora na consulta, ao contar que a renda caiu e que não sabe “como vai pagar o aluguel do mês que vem”. Considerando o papel da Atenção Primária à Saúde e o impacto dos determinantes sociais de saúde no adoecimento, qual é a conduta adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar à ortopedia para avaliação cirúrgica da coluna, e à psiquiatria para avaliação da suspeita de depressão, pois o quadro com complexidade é incompatível com a abordagem na Atenção Primária à Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever novo ciclo de anti-inflamatório e emitir novo atestado médico para afastamento prolongado, a fim de tratar a dor lombar e permitir o retorno ao trabalho assim que possível.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever novo ciclo de anti-inflamatório e associar antidepressivo e benzodiazepínico para tratar os sintomas apresentados. Solicitar ressonância magnética da coluna lombar para excluir lesão estrutural grave e justificar aposentadoria por invalidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reconhecer que perda do emprego, insegurança financeira e risco de exclusão social estão contribuindo para agravar dor e humor. Abordar sofrimento psíquico e acionar recursos intersetoriais, além de manejo clínico da dor.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta um quadro inicial de dor lombar crônica, com características mecânico-posturais (piora ao esforço e melhora com repouso) e ausência de sinais de alerta (red flags), como febre, perda de peso, déficit motor progressivo ou anestesia em sela. No entanto, o caso evoluiu com importantes complicações psicossociais e econômicas, o que na medicina chamamos de bandeiras amarelas (yellow flags). O desemprego, a insegurança financeira e o risco de despejo funcionam como determinantes sociais que agravam a percepção da dor e desencadeiam sofrimento psíquico. Na Atenção Primária à Saúde (APS), o cuidado deve ser pautado no modelo biopsicossocial, abordando o indivíduo em sua totalidade.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA alternativa D está correta pois demonstra a aplicação do Método Clínico Centrado na Pessoa e a compreensão dos Determinantes Sociais de Saúde. O médico reconhece que o agravamento do quadro não é puramente biológico, mas sim influenciado pela perda do emprego e pela vulnerabilidade social. A conduta adequada envolve o manejo clínico da dor associado ao acolhimento do sofrimento mental e à articulação com a rede socioassistencial (recursos intersetoriais, como o CRAS), visando garantir a seguridade social do paciente.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nALTERNATIVA A: Está incorreta pois a Atenção Primária tem plena capacidade e competência para manejar casos de dor lombar mecânica e transtornos mentais comuns (como depressão e ansiedade). Não há critérios para encaminhamento cirúrgico ortopédico, já que não há sinais de compressão medular ou radiculopatia grave. Encaminhar o paciente para especialistas focalistas neste momento fragmentaria o cuidado e não resolveria os problemas sociais que são o estopim da crise atual.\n\nALTERNATIVA B: Está incorreta por ser insuficiente. Apenas prescrever anti-inflamatórios e emitir atestados ignora a dimensão psíquica e social do paciente. O uso prolongado de anti-inflamatórios não esteroidais (AINEs) traz riscos de efeitos colaterais (renais e gástricos) e não trata a depressão reativa que o paciente apresenta. Além disso, o isolamento em repouso prolongado é contraindicado na dor lombar crônica, pois favorece a cinesiofobia e a incapacidade funcional.\n\nALTERNATIVA C: Está incorreta por vários motivos técnicos. Primeiro, solicitar ressonância magnética em pacientes sem sinais de alerta é desencorajado, pois o exame costuma mostrar alterações degenerativas comuns à idade (como protrusões discais assintomáticas), o que aumenta a ansiedade do paciente e não muda a conduta. Segundo, o uso de benzodiazepínicos não é o tratamento de escolha para sintomas depressivos e pode causar dependência. Por fim, sugerir aposentadoria por invalidez para um paciente jovem de 38 anos com uma condição tratável é um erro de conduta, pois o objetivo deve ser a reabilitação e a reinserção social.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:11.935Z"
+  },
+  {
+    "id": "AJUDA_e6d94d1a-5780-4881-852e-b04a053ee93f",
+    "originalId": "e6d94d1a-5780-4881-852e-b04a053ee93f",
+    "statement": "Criança, sexo masculino, 4 anos de idade, alérgica a amendoim, comparece à unidade de emergência devido à ingestão acidental de um doce contendo o alérgeno há cerca de 40 minutos. Há 10 minutos, iniciou o surgimento de placas urticariformes por todo o corpo, sem outras queixas. Na avaliação inicial, paciente encontra-se em bom estado geral, corado, hidratado, ausculta cardíaca com 2BRNF sem sopros, FC de 102 bpm, PA de 88×54 mmHg, extremidades bem perfundidas, ausculta pulmonar com múrmurio vesicular presente, sem ruídos adventícios, FR de 24 irpm, SpO2 de 97% em ar ambiente. Abdome flácido, normotenso, indolor. A conduta indicada nesse momento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar adrenalina 1:1.000 por via intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alta hospitalar, com anti-histamínico e corticosteroide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Monitorização hospitalar e administrar anti-histamínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar medidas de eliminação com lavagem gástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve uma criança de 4 anos com reação alérgica aguda restrita à pele (urticária generalizada) após ingestão de amendoim, sem sinais de instabilidade hemodinâmica, desconforto respiratório ou sintomas gastrointestinais. Os sinais vitais estão normais para a faixa etária (a pressão arterial sistólica mínima esperada para 4 anos é de 78 mmHg, calculada pela fórmula 70 + [2 x idade], e a do paciente é 88 mmHg).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A adrenalina por via intramuscular é a primeira linha no tratamento da anafilaxia. O diagnóstico de anafilaxia exige o acometimento de dois ou mais sistemas (por exemplo, pele + respiratório, pele + gastrointestinal) ou comprometimento cardiovascular/respiratório isolado após exposição ao alérgeno. Como o paciente apresenta acometimento exclusivamente cutâneo e estabilidade clínica, a adrenalina não está indicada no momento.\n\nAlternativa b: Incorreta. A alta precoce é contraindicada. A reação iniciou há apenas 10 minutos e a alergia ao amendoim tem elevado potencial de gravidade, podendo evoluir para anafilaxia nas horas seguintes ou apresentar padrão bifásico. O paciente deve permanecer em observação.\n\nAlternativa c: Correta. O tratamento de uma reação alérgica cutânea isolada baseia-se no uso de anti-histamínicos para controle do prurido e das lesões de pele, associado à monitorização e observação clínica em ambiente hospitalar. Essa vigilância garante intervenção imediata com adrenalina caso o quadro evolua para anafilaxia.\n\nAlternativa d: Incorreta. A lavagem gástrica não tem papel no manejo de reações alérgicas alimentares. É um procedimento invasivo, com risco de complicações graves como laringoespasmo e broncoaspiração, e não impede a cascata imunológica já desencadeada.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Alergia Alimentar",
+      "Anafilaxia e Urticária",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:11.935Z"
+  },
+  {
+    "id": "AJUDA_e6d9e84d-7fe7-477c-b1d1-0df53a590c26",
+    "originalId": "e6d9e84d-7fe7-477c-b1d1-0df53a590c26",
+    "statement": "O Diabetes mellitus (DM) é caracterizada pela hiperglicemia persistente, decorrente da deficiência na produção de insulina ou na sua ação, ou em ambos os mecanismos. Sobre este distúrbio metabólico na gestação, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A circunferência abdominal fetal pela ultrassonografia igual ou superior ao percentil 75 para a idade gestacional é indicativo de crescimento fetal excessivo e é marcador indireto do hiperinsulinismo fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso de corticosteroides em gestantes com DM e o controle glicêmico inadequado podem provocar a piora do quadro materno e até mesmo levar à cetoacidose diabética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A prática de exercícios físicos regulares não é recomendada para gestantes diabéticas, pois a atividade física aumenta o consumo de glicose podendo causar uma hipoglicemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A macrossomia, caracterizada pelo peso fetal superior a 4 kg, é a principal complicação da hiperglicemia materna no segundo e no terceiro trimestre da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A contagem dos movimentos fetais está indicada para todas as gestantes com DM, devendo ser realizada diariamente a partir da 28ª semana, conforme recomendações vigentes de vigilância fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS:\n\nALTERNATIVA A (CORRETA): A circunferência abdominal (CA) fetal é considerada o parâmetro biométrico mais sensível para avaliar o crescimento fetal em gestações complicadas pelo diabetes. Como o excesso de glicose materna atravessa a placenta e estimula a produção de insulina pelo feto, ocorre um aumento do depósito de gordura subcutânea e do volume do fígado (visceromegalia). Uma CA igual ou superior ao percentil 75 é um marcador precoce de que o feto está sob efeito do hiperinsulinismo, alertando para o risco de macrossomia.\n\nALTERNATIVA B (CORRETA): Os corticosteroides (como betametasona ou dexametasona), utilizados para a maturação pulmonar fetal em casos de risco de parto prematuro, têm um potente efeito hiperglicemiante. Eles aumentam a resistência periférica à insulina e a produção de glicose pelo fígado. Em gestantes diabéticas, especialmente aquelas com controle inadequado ou tipo 1, esse uso pode precipitar quadros graves de descompensação metabólica, incluindo a cetoacidose diabética, exigindo monitoramento hospitalar e ajuste de doses de insulina.\n\nALTERNATIVA C (INCORRETA): Esta alternativa está incorreta porque a prática de exercícios físicos é, na verdade, uma recomendação fundamental no manejo do diabetes gestacional e pré-gestacional. A atividade física de intensidade leve a moderada aumenta a captação de glicose pelo músculo esquelético e melhora a sensibilidade à insulina, auxiliando no controle das glicemias capilares. Ela só deve ser evitada em pacientes com contraindicações obstétricas (como risco de parto prematuro, placenta prévia sangrante ou pré-eclâmpsia grave). Como a questão pede a alternativa incorreta, esta é a resposta.\n\nALTERNATIVA D (CORRETA): A macrossomia fetal, definida pela maioria dos consensos como peso fetal superior a 4.000 g, é a complicação clássica do diabetes na gestação. Ela ocorre principalmente no segundo e terceiro trimestres, período em que o anabolismo fetal é mais intenso e o feto responde à hiperglicemia materna com hiperinsulinismo, resultando em crescimento excessivo de tecidos moles e órgãos.\n\nALTERNATIVA E (CORRETA): A vigilância da vitalidade fetal é obrigatória no acompanhamento de gestantes diabéticas devido ao risco aumentado de óbito fetal intrauterino. O mobilograma (contagem de movimentos fetais) é o método de triagem clínica mais simples e acessível. As diretrizes recomendam que a gestante seja orientada a realizar essa contagem diariamente a partir da 28ª semana (início do terceiro trimestre), buscando identificar reduções na movimentação que possam sugerir hipóxia ou comprometimento fetal.\n\nGABARITO: C.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:11.935Z"
+  },
+  {
+    "id": "AJUDA_e6eaf579-beb8-42e6-b0d3-2ae75a3ff4b0",
+    "originalId": "e6eaf579-beb8-42e6-b0d3-2ae75a3ff4b0",
+    "statement": "Gestante de 28 anos, G2P1, 17 semanas de gestação, procura emergência obstétrica com quadro de sangramento transvaginal de pequena intensidade associado à cólica uterina. Ao exame especular, observa-se o colo uterino aparentemente fechado. A ultrassonografia evidenciou o concepto sem batimentos cardíacos, compatível com morte fetal. Hemodinâmica estável.\nA melhor conduta para esse caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "conduta expectante, pois há 90% de chance de absorção fetal espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "curetagem uterina de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aspiração manual intrauterina após amadurecimento cervical com misoprostol dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "indução medicamentosa com misoprostol até expulsão fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "microcesariana de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve uma gestante de 17 semanas com diagnóstico de óbito fetal (abortamento tardio, pois ocorre entre 12 e 20/22 semanas). A paciente está hemodinamicamente estável e possui colo uterino fechado. O ponto central para definir a conduta em abortamentos é a idade gestacional.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A conduta expectante pode ser adotada em abortamentos precoces e incompletos, mas não é a primeira escolha em um óbito fetal de 17 semanas. Não existe \"absorção fetal\" nessa idade gestacional, pois o feto já apresenta formação óssea e tecidos diferenciados. Além disso, a retenção prolongada do feto morto aumenta o risco de distúrbios de coagulação, como a Coagulação Intravascular Disseminada (CIVD).\n\nAlternativa b) Incorreta. A curetagem uterina como conduta inicial em gestações acima de 12 semanas é contraindicada devido ao elevado risco de complicações, como perfuração uterina, hemorragia e esvaziamento incompleto. O feto de 17 semanas possui volume e calcificação que impedem a retirada segura por curetagem sem antes haver a dilatação cervical e a expulsão fetal.\n\nAlternativa c) Incorreta. A Aspiração Manual Intrauterina (AMIU) é a técnica de escolha para o esvaziamento uterino em gestações de primeiro trimestre (até 12 semanas). Em uma gestação de 17 semanas, os segmentos fetais são grandes demais para passarem pelas cânulas de aspiração, tornando o procedimento tecnicamente inviável e perigoso como conduta primária.\n\nAlternativa d) Correta. Em gestações acima de 12 semanas com feto morto e colo fechado, a conduta padrão é a indução do esvaziamento uterino por meio de métodos farmacológicos. O misoprostol (análogo da prostaglandina E1) é utilizado para promover o amadurecimento cervical e desencadear contrações uterinas, levando à expulsão do feto. Após a expulsão fetal, se houver retenção placentária, pode-se proceder à revisão da cavidade uterina (curetagem ou aspiração).\n\nAlternativa e) Incorreta. A microcesariana (histerotomia abdominal) é um procedimento de exceção, reservado para casos em que a indução medicamentosa falha repetidamente ou quando há contraindicações absolutas ao parto vaginal, o que não é o caso da paciente, que está estável e sem histórico de múltiplas cirurgias uterinas que impeçam o uso de medicação.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:11.935Z"
+  }
+]

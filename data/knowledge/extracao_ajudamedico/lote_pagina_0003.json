@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_0023323f-725c-482d-9dcb-af0ed0896fbb",
+    "originalId": "0023323f-725c-482d-9dcb-af0ed0896fbb",
+    "statement": "Leia o caso a seguir.\n\nHomem de 26 anos, com obesidade de grau 3, procurou serviço de endocrinologia com queixa de diminuição da libido. Submetido a exame físico, apresentou ginecomastia bilateral associado a diminuição do volume testicular. Exames hormonais: Testosterona total: 144,0 ng/dl; SHBG: 22,0 nmol/L; Testosterona livre calculada 3,34 ng/dL; LH: 23 UI/L; Prolactina: 23 ng/mL.\n\nQual é o diagnostico desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome de Kallmann.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipogonadismo por tumor selar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Klinefelter.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hipogonadismo funcional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, o primeiro passo é classificar o hipogonadismo do paciente com base nos exames laboratoriais. O paciente apresenta testosterona total e livre baixas, o que confirma o estado de hipogonadismo. O dado crucial é o valor do LH (hormônio luteinizante), que está elevado (23 UI/L).\n\nQuando a testosterona está baixa e o LH está alto, estamos diante de um hipogonadismo hipergonadotrópico (ou primário), indicando que o problema está nos testículos, que não respondem ao estímulo da hipófise. Se o LH estivesse baixo ou normal, seria um hipogonadismo hipogonadotrópico (ou secundário/central).\n\nAnálise das alternativas:\n\na) Incorreta. A síndrome de Kallmann é uma causa de hipogonadismo hipogonadotrópico (secundário), onde há falha na produção de GnRH pelo hipotálamo, geralmente associada a anosmia ou hiposmia (perda de olfato). Laboratorialmente, o LH estaria baixo ou inadequadamente normal, o que contradiz o LH elevado de 23 UI/L deste paciente.\n\nb) Incorreta. Um tumor selar (como um adenoma de hipófise ou prolactinoma) causaria um hipogonadismo hipogonadotrópico (secundário). O tumor comprimiria as células produtoras de gonadotrofinas ou a haste hipofisária, resultando em LH e FSH baixos. Embora a prolactina esteja levemente aumentada (23 ng/mL), esse valor é muito baixo para sugerir um prolactinoma e pode ser decorrente apenas do uso de medicamentos ou do próprio estado de obesidade e hipogonadismo.\n\nc) Correta. A síndrome de Klinefelter (cariótipo 47, XXY) é a causa mais comum de hipogonadismo hipergonadotrópico primário em homens. O quadro clínico clássico inclui ginecomastia e, fundamentalmente, testículos de volume reduzido e endurecidos. Laboratorialmente, a falha testicular leva ao aumento compensatório das gonadotrofinas (LH e FSH elevados) na tentativa de estimular a produção de testosterona, exatamente como observado no caso.\n\nd) Incorreta. O hipogonadismo funcional relacionado à obesidade é tipicamente hipogonadotrópico (secundário) ou normogonadotrópico. Na obesidade, o excesso de tecido adiposo leva a uma maior conversão de testosterona em estradiol (aromatização), o que gera um feedback negativo no eixo hipotálamo-hipófise, reduzindo o LH. Portanto, a obesidade isolada não explicaria o LH elevado e a diminuição importante do volume testicular observada no exame físico.\n\nEm resumo, a presença de testosterona baixa com LH elevado (hipogonadismo primário) associada a testículos pequenos e ginecomastia direciona o diagnóstico para a síndrome de Klinefelter.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo"
+    ],
+    "difficulty": 100,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:32.938Z"
+  },
+  {
+    "id": "AJUDA_004a246d-1682-485c-9f1d-1f6dac788b55",
+    "originalId": "004a246d-1682-485c-9f1d-1f6dac788b55",
+    "statement": "A característica que justifica a escolha da técnica de lavagem nasal com baixo volume e alta pressão em crianças está relacionada a/à:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Melhoria da permeabilidade nasal pela remoção eficaz de secreções e partículas acumuladas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aumento da drenagem dos seios paranasais por pressão negativa induzida na cavidade nasal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Redução da produção de muco nasal por inibição direta das células caliciformes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alívio imediato da obstrução nasal por estimulação de receptores vasoconstritores locais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Substituição de tratamentos farmacológicos em casos de infecções respiratórias virais graves.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A lavagem nasal é uma prática fundamental no manejo de afecções das vias aéreas superiores, especialmente em pediatria. A escolha da técnica de baixo volume e alta pressão (geralmente realizada com seringas ou dispositivos de jato pulsátil) baseia-se primordialmente na fisiologia da limpeza mecânica da cavidade nasal.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. O objetivo central da lavagem nasal, independentemente da técnica, é a remoção mecânica do excesso de muco, crostas, alérgenos e mediadores inflamatórios. A aplicação de uma pressão maior (alta pressão), mesmo em volumes menores, auxilia no deslocamento de secreções mais espessas e aderidas à mucosa, o que resulta na melhora imediata da permeabilidade nasal e do conforto respiratório da criança.\n\nAlternativa b) Incorreta. A lavagem nasal não induz pressão negativa na cavidade nasal. Pelo contrário, ela utiliza pressão positiva para empurrar o soro e as secreções. A drenagem dos seios paranasais ocorre por arraste mecânico e redução da inflamação nos óstios de drenagem, e não por um mecanismo de vácuo ou pressão negativa.\n\nAlternativa c) Incorreta. A lavagem nasal é um procedimento físico e mecânico. Ela remove o muco já produzido e depositado, mas não possui ação farmacológica ou bioquímica direta para inibir as células caliciformes (responsáveis pela produção de muco). O controle da hiperplasia dessas células exigiria tratamentos anti-inflamatórios crônicos, como corticoides tópicos.\n\nAlternativa d) Incorreta. O alívio da obstrução ocorre pela remoção física da secreção e não pela estimulação de receptores vasoconstritores. Os fármacos que atuam nesses receptores são os descongestionantes (como a oximetazolina), cujo uso é restrito e deve ser evitado em crianças pequenas devido ao risco de efeitos colaterais sistêmicos e efeito rebote.\n\nAlternativa e) Incorreta. Embora a lavagem nasal seja um pilar no tratamento de infecções respiratórias virais, ela é considerada uma terapia de suporte ou adjuvante. Em casos de infecções graves ou complicações (como pneumonia ou insuficiência respiratória), ela não substitui intervenções farmacológicas necessárias, como oxigenoterapia, broncodilatadores ou antibióticos, quando indicados.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:32.938Z"
+  },
+  {
+    "id": "AJUDA_00557e54-0c59-42bf-8c88-5cead4ed4a29",
+    "originalId": "00557e54-0c59-42bf-8c88-5cead4ed4a29",
+    "statement": "Paciente refere dor intensa e \"cortante\" à evacuação, com sangue vivo no papel higiênico, há 4 meses. O exame revela plicoma sentinela e fissura na linha média posterior com exposição de fibras do esfíncter interno. Tratamento clínico falhou. A cirurgia indicada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esfincterotomia lateral interna.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Fissurectomia simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hemorroidectomia clássica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dilatação anal manual.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso: O quadro clínico descrito (dor intensa ao evacuar e sangramento vivo) associado aos achados do exame físico (plicoma sentinela e exposição de fibras do esfíncter interno) é patognomônico de fissura anal crônica. A presença do plicoma sentinela e a visualização das fibras musculares confirmam que a lesão não é mais aguda, ocorrendo há pelo menos 4 meses. Quando o manejo conservador (dieta, fibras, pomadas de nitrato ou bloqueadores de canal de cálcio) falha, a cirurgia é indicada.\n\nAlternativa (a) Correta: A esfincterotomia lateral interna é o tratamento padrão-ouro para a fissura anal crônica. A fisiopatologia da doença envolve a hipertonia (contratura excessiva) do esfíncter anal interno, o que causa isquemia da mucosa anal e impede a cicatrização. A cirurgia consiste na divisão controlada de uma porção desse músculo, reduzindo a pressão anal, melhorando a perfusão sanguínea e permitindo a cura definitiva da fissura em mais de 90 por cento dos casos.\n\nAlternativa (b) Incorreta: A fissurectomia simples consiste apenas na ressecção da fissura e dos tecidos adjacentes (como o plicoma). Embora possa ser feita em associação com a esfincterotomia, se realizada sozinha, ela não corrige o problema de base, que é a hipertonia esfincteriana. Por isso, apresenta taxas de recidiva muito mais altas que a alternativa A.\n\nAlternativa (c) Incorreta: A hemorroidectomia clássica é o tratamento para a doença hemorroidária (mamilos hemorroidários internos e externos). O plicoma sentinela mencionado no enunciado é apenas uma dobra de pele cicatricial decorrente da fissura crônica e não deve ser confundido com hemorroidas. O tratamento cirúrgico da fissura é diferente do tratamento da hemorroida.\n\nAlternativa (d) Incorreta: A dilatação anal manual foi uma técnica utilizada no passado, mas atualmente é contraindicada pela maioria das sociedades médicas. Por ser uma manobra cega e sem controle da força aplicada, frequentemente causa roturas musculares inadvertidas e danos permanentes ao aparelho esfincteriano, resultando em altos índices de incontinência fecal. A esfincterotomia lateral interna é muito mais segura e precisa.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:32.938Z"
+  },
+  {
+    "id": "AJUDA_005c46ef-6e74-4a06-b983-ae2d22ad3732",
+    "originalId": "005c46ef-6e74-4a06-b983-ae2d22ad3732",
+    "statement": "Trata-se de uma doença infecciosa causada pela bactéria Burkholderia pseudomalei. Encontrada contaminando solo e água, a bactéria se dissemina para humanos e animais através do contato direto com fonte contaminada e tem sido considerada um patógeno em potencial para armas biológicas. É doença de climas tropicais, especialmente do Sudeste Asiático, onde é endêmica, e casos esporádicos têm sido descritos nos EUA e em países das Américas Central e do Sul, inclusive no Brasil. Estamos falando de",
+    "options": [
+      {
+        "id": "A",
+        "text": "melioidose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "doença de Lyme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "doença de Fabry.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "síndrome de Alport.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão exige o conhecimento sobre uma doença infecciosa emergente e sua etiologia específica. O enunciado descreve as características clássicas da melioidose, permitindo a correta identificação do patógeno e do perfil epidemiológico.\n\nAlternativa A (Correta): A melioidose é causada pelo bacilo gram-negativo Burkholderia pseudomallei. Esta bactéria habita o solo e a água superficial em regiões tropicais. A transmissão ocorre por inoculação percutânea (contato com solo e água contaminados), ingestão ou inalação. No Brasil, o estado do Ceará é uma área conhecida por casos esporádicos e surtos. Devido à sua alta virulência, facilidade de disseminação laboratorial e potencial de gravidade (sepse), é classificada como um agente de bioterrorismo em potencial.\n\nAlternativa B (Incorreta): A doença de Lyme é causada por espiroquetas do complexo Borrelia burgdorferi. A transmissão não ocorre por contato direto com solo ou água, mas sim pela picada de carrapatos do gênero Ixodes. É uma condição comum no Hemisfério Norte (EUA e Europa), apresentando manifestações como o eritema crônico migratório, artrite e alterações neurológicas.\n\nAlternativa C (Incorreta): A doença de Fabry não é uma doença infecciosa. Trata-se de uma doença genética rara, de herança ligada ao cromossomo X, caracterizada pela deficiência da enzima alfa-galactosidase A. Isso leva ao acúmulo de glicoesfingolipídeos nos tecidos, resultando em dor em extremidades, lesões de pele (angioceratomas), insuficiência renal e problemas cardíacos.\n\nAlternativa D (Incorreta): A síndrome de Alport também é uma condição genética e não infecciosa. Ela é causada por mutações nos genes que codificam as cadeias do colágeno tipo IV, componente essencial das membranas basais. Clinicamente, manifesta-se por hematúria progressiva, perda auditiva sensorioneural e alterações oculares, evoluindo frequentemente para doença renal crônica terminal.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": 83.08917767174422,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:32.938Z"
+  },
+  {
+    "id": "AJUDA_0062e0de-1aa6-44e8-9220-3ec08aaaf2e5",
+    "originalId": "0062e0de-1aa6-44e8-9220-3ec08aaaf2e5",
+    "statement": "Um médico atende um paciente idoso com sinais evidentes de negligência familiar grave, incluindo malnutrição, falta de higiene e ausência de cuidados médicos. O paciente, consciente e orientado, pede ao médico que não comunique a situação a nenhuma outra pessoa ou instituição. De acordo com o Código de Ética Médica, qual é a conduta eticamente adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter absoluto sigilo, respeitando a autonomia do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Notificar a situação às autoridades competentes, mesmo sem consentimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Compartilhar a situação com os familiares para buscar uma solução conjunta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Registrar em prontuário, mas não tomar nenhuma atitude sem ordem judicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Encaminhar para avaliação psicológica e aguardar posicionamento do psicólogo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Comentário da questão:\n\nA questão aborda o dilema ético entre o dever de sigilo profissional e a proteção de indivíduos em situação de vulnerabilidade. O cerne da discussão está no conflito entre a autonomia do paciente e o dever legal do médico.\n\nDe acordo com o Código de Ética Médica (CEM), em seu Artigo 73, o médico é proibido de revelar segredo profissional, exceto em três situações específicas: motivo justo, dever legal ou autorização por escrito do paciente. No caso de idosos, o Estatuto do Idoso (Lei nº 10.741/2003), no Artigo 19, estabelece que os casos de suspeita ou confirmação de violência (que inclui a negligência) devem ser obrigatoriamente comunicados pelos serviços de saúde às autoridades competentes, como o Ministério Público, os conselhos do idoso ou as delegacias. Portanto, trata-se de um dever legal que se sobrepõe ao desejo de sigilo do paciente.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O princípio da autonomia não é absoluto. Quando o paciente está em situação de risco por negligência grave, o médico tem o dever de intervir para garantir a segurança e a integridade do idoso. O sigilo, neste caso, configuraria omissão de socorro e descumprimento de dever legal.\n\nAlternativa (b) Correta: Esta é a conduta adequada. A negligência familiar grave contra o idoso é considerada uma forma de violência. Havendo um dever legal de notificação compulsória, o médico deve comunicar o fato às autoridades (como o Conselho Municipal do Idoso ou o Ministério Público), mesmo contra a vontade do paciente, para que as medidas de proteção sejam tomadas.\n\nAlternativa (c) Incorreta: A negligência é descrita como sendo da própria família. Discutir o caso apenas com os familiares pode não resolver a situação e até colocar o paciente em maior risco. A notificação externa é necessária para que o Estado fiscalize e garanta os direitos do idoso.\n\nAlternativa (d) Incorreta: O registro em prontuário é obrigatório, mas a notificação compulsória em casos de violência contra o idoso independe de ordem judicial. O médico tem autonomia e obrigação legal de notificar os órgãos de proteção assim que identificar a situação.\n\nAlternativa (e) Incorreta: O suporte psicológico e multidisciplinar é importante para o tratamento do paciente, mas não substitui a responsabilidade ética e legal de notificar a negligência. O médico não pode transferir para outro profissional uma obrigação que é inerente à sua função diante de um caso de violência ou maus-tratos.\n\nGabarito: Letra (b).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Saúde do Idoso",
+      "Ética Médica"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:32.938Z"
+  },
+  {
+    "id": "AJUDA_00750287-501a-490d-b718-b2aeff1b39c4",
+    "originalId": "00750287-501a-490d-b718-b2aeff1b39c4",
+    "statement": "Homem 45 anos, IMC 29, crises de dor no hipocôndrio direito após refeições gordurosas. US: múltiplos cálculos < 1 cm, espessura da parede da vesícula de 3 mm, sem coleções. Em sua análise qual a melhor conduta definitiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aguardar complicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Litotripsia extracorpórea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dissolução medicamentosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dieta pobre em gordura 12 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Colecistectomia videolaparoscópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um quadro clássico de colelitíase sintomática, caracterizado por episódios de cólica biliar (dor no hipocôndrio direito desencadeada por refeições gordurosas). O exame de ultrassonografia confirma a presença de múltiplos cálculos e mostra que a parede da vesícula tem espessura normal (3 mm), o que indica a ausência de um processo inflamatório agudo (colecistite) no momento. Em pacientes sintomáticos, o tratamento definitivo é cirúrgico.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A conduta de observação ou \"aguardar complicação\" não é indicada para pacientes que já manifestaram sintomas. O risco de novas crises de dor e de evolução para complicações graves, como colecistite aguda, pancreatite biliar ou colangite, justifica a indicação cirúrgica imediata.\n\nAlternativa b: Incorreta. A litotripsia extracorpórea por ondas de choque (LEOC) possui indicações muito limitadas na via biliar, apresentando baixa eficácia e altas taxas de recorrência dos cálculos, uma vez que a vesícula doente permanece no local. Não é considerada um tratamento definitivo.\n\nAlternativa c: Incorreta. A dissolução medicamentosa com ácidos biliares (como o ácido ursodesoxicólico) é um processo muito lento, aplicável apenas a cálculos pequenos de colesterol e apresenta elevada taxa de recidiva após a suspensão da medicação. Não é a conduta de escolha para um paciente jovem e sintomático.\n\nAlternativa d: Incorreta. Embora a dieta pobre em gordura ajude a diminuir a frequência das crises de cólica biliar ao reduzir o estímulo para a contração da vesícula, ela não elimina os cálculos e não trata a patologia de base. Portanto, não é um tratamento definitivo.\n\nAlternativa e: Correta. A colecistectomia videolaparoscópica é o padrão-ouro para o tratamento da colelitíase sintomática. É um procedimento definitivo que remove a fonte dos cálculos, apresenta baixo índice de complicações, menor dor pós-operatória e permite um retorno rápido do paciente às suas atividades habituais.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:32.938Z"
+  },
+  {
+    "id": "AJUDA_0076dc8a-96f1-4f26-af08-6af364f4e58b",
+    "originalId": "0076dc8a-96f1-4f26-af08-6af364f4e58b",
+    "statement": "Depois de 10 dias de uma enchente ocorrida em uma pequena cidade, um dos voluntários no resgate de pessoas começou a apresentar febre, dor muscular na panturrilha, dor de cabeça, náuseas e vômitos. Seu estado geral está conservado. Procura imediatamente uma UBS e, após avaliação, o médico faz a hipótese diagnóstica de leptospirose. Assinale a alternativa correta sobre esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A quimioprofilaxia teria sido uma medida importante nesse caso, pois é altamente efetiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uma informação importante que o enunciado não fornece é se ele teria sido imunizado para prevenir leptospirose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nessa fase, pode-se confirmar a hipótese diagnóstica por meio de exame direto para identificar o agente bacteriano e por meio de cultura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Somente após a confirmação diagnóstica, o paciente deve ser submetido a tratamento com antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O paciente deve ser internado imediatamente, pois é provável que evolua com agravamento do quadro clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) Incorreta: A quimioprofilaxia, geralmente realizada com doxiciclina, tem eficácia limitada e indicações muito específicas, como para socorristas ou militares em missões de curtíssimo prazo em áreas de alto risco. Ela não é considerada altamente efetiva e não é recomendada de forma rotineira para a população geral em situações de enchentes.\n\nAlternativa (b) Incorreta: Não existe vacina contra leptospirose disponível para uso humano no calendário vacinal brasileiro. As vacinas existentes são voltadas para uso veterinário (em cães e gado), portanto, não há histórico vacinal a ser verificado no paciente.\n\nAlternativa (c) Correta: O paciente apresenta sintomas compatíveis com a fase precoce da doença, também chamada de fase leptospirêmica, que ocorre nos primeiros sete dias de sintomas. Nesse período, a bactéria está circulando no sangue, o que permite o diagnóstico por métodos diretos, como a visualização direta em microscopia de campo escuro, o isolamento em meios de cultura específicos (embora o crescimento seja lento) ou a detecção do DNA bacteriano via PCR. A sorologia (pesquisa de anticorpos), por outro lado, costuma tornar-se positiva apenas após o sétimo dia de doença.\n\nAlternativa (d) Incorreta: O tratamento com antibióticos deve ser iniciado imediatamente diante da suspeita clínica e epidemiológica. Aguardar a confirmação laboratorial, que pode levar dias ou semanas (especialmente no caso da sorologia e cultura), atrasa o cuidado e aumenta o risco de o paciente evoluir para a fase tardia (imune) ou para formas graves da doença.\n\nAlternativa (e) Incorreta: De acordo com o caso clínico, o estado geral do paciente está conservado e ele não apresenta sinais de alerta (como icterícia, alteração do volume urinário ou dificuldade respiratória). A maioria dos casos de leptospirose (cerca de 90%) é leve e anictérica, podendo ser tratada em regime ambulatorial na Unidade Básica de Saúde, com hidratação oral, antibiótico e monitoramento de sinais de gravidade.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Leptospirose"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:32.938Z"
+  },
+  {
+    "id": "AJUDA_007df880-bea5-419a-b106-5f8463cc91af",
+    "originalId": "007df880-bea5-419a-b106-5f8463cc91af",
+    "statement": "Sobre o ganho de peso insuficiente em crianças, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Caso não seja corrigido até os dois anos de idade, pode impactar na estatura e potencial intelectual na idade adulta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso da escala antropométrica Z-score é a recomendada para o diagnóstico preciso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A causa mais comum no período neonatal é a doença orgânica subjacente, demandando investigação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transtornos disabsortivos são menos comuns como causa do que a ingestão inadequada de calorias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O ganho de peso insuficiente, frequentemente referido na literatura médica como \"falha no desenvolvimento\" (failure to thrive), é um desafio clínico comum na pediatria. Para identificar a alternativa incorreta, devemos analisar a epidemiologia e os critérios diagnósticos dessa condição.\n\nAlternativa (a) (Correta): O período que abrange a gestação e os dois primeiros anos de vida, conhecido como os primeiros mil dias, é uma janela crítica de desenvolvimento. A desnutrição ou o ganho de peso insuficiente de forma crônica nesse intervalo pode levar ao comprometimento definitivo do crescimento linear (estatura) e prejuízos no neurodesenvolvimento, resultando em menor potencial intelectual e menor produtividade na vida adulta.\n\nAlternativa (b) (Correta): A Organização Mundial da Saúde (OMS) estabelece o uso do Z-score (escore-Z) como o parâmetro mais preciso e sensível para o diagnóstico e acompanhamento nutricional. Ele permite identificar quantos desvios-padrão a criança está distante da mediana da população de referência, sendo superior ao uso isolado de percentis para detectar variações sutis no estado nutricional.\n\nAlternativa (c) (Incorreta/Gabarito): Esta é a alternativa incorreta porque, estatisticamente, as causas não orgânicas (psicossociais e comportamentais) são muito mais comuns do que as doenças orgânicas, mesmo no período neonatal e na infância precoce. No neonato, as dificuldades na técnica de amamentação, a pega incorreta, o esvaziamento inadequado das mamas ou o preparo incorreto de fórmulas infantis são as causas predominantes. Embora doenças orgânicas (como cardiopatias ou erros inatos do metabolismo) devam ser investigadas se houver sinais de alerta, elas representam a minoria dos casos.\n\nAlternativa (d) (Correta): A ingestão inadequada de calorias é, de longe, a causa primária de baixo ganho ponderal. Transtornos disabsortivos, como doença celíaca, fibrose cística ou alergias alimentares graves, são causas orgânicas importantes, porém ocorrem com frequência significativamente menor do que o aporte calórico insuficiente (seja por oferta escassa, negligência ou erros alimentares).\n\nPortanto, a alternativa (c) está incorreta ao afirmar que a causa orgânica é a mais comum, quando, na verdade, os fatores ambientais e de manejo alimentar prevalecem.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Desnutrição na Infância",
+      "Diagnóstico Nutricional",
+      "Crescimento"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:32.938Z"
+  },
+  {
+    "id": "AJUDA_0083eea4-d426-4914-819b-b4bdf049750c",
+    "originalId": "0083eea4-d426-4914-819b-b4bdf049750c",
+    "statement": "Homem de 70 anos, tabagista, apresenta perda de peso e dor torácica. A tomografia revela massa no mediastino. Qual é a etiologia mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tuberculose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Neoplasia pulmonar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sarcoidose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pneumonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico: O paciente é um homem idoso (70 anos), tabagista crônico, apresentando sintomas constitucionais (perda de peso) e dor torácica. O achado de uma massa no mediastino em um paciente com esse perfil epidemiológico aponta fortemente para um processo maligno.\n\nAlternativa a: Incorreta. A tuberculose pode causar linfonodomegalia mediastinal e perda de peso, mas geralmente cursa com febre vespertina, sudorese noturna e alterações parenquimatosas pulmonares (como infiltrações ou cavernas). Em um paciente de 70 anos e tabagista, a probabilidade estatística de neoplasia supera a de tuberculose diante de uma massa mediastinal e dor torácica.\n\nAlternativa b: Correta. Esta é a etiologia mais provável. O tabagismo é o principal fator de risco para o câncer de pulmão (carcinoma broncogênico). A presença de perda de peso associada a uma massa expansiva no mediastino em um idoso é altamente sugestiva de neoplasia pulmonar, que pode se manifestar tanto por um tumor de localização central quanto por um envolvimento linfonodal maciço do mediastino (estadiamento N2 ou N3).\n\nAlternativa c: Incorreta. A sarcoidose é uma doença granulomatosa multissistêmica que costuma afetar pacientes mais jovens (geralmente entre 20 e 50 anos). O padrão radiológico clássico é de adenopatia hilar bilateral e simétrica, frequentemente associada a linfonodomegalia paratraqueal direita, e não costuma se apresentar como uma massa isolada em um paciente idoso e tabagista com perda ponderal significativa.\n\nAlternativa d: Incorreta. A pneumonia é um quadro infeccioso tipicamente agudo, manifestando-se com febre alta, tosse produtiva e dor pleurítica. Radiologicamente, caracteriza-se por consolidações com broncogramas aéreos localizados no parênquima pulmonar, e não como uma massa sólida mediastinal de caráter crônico e consuntivo.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Neoplasias Pulmonares"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:32.938Z"
+  },
+  {
+    "id": "AJUDA_00a70d92-aea6-46b9-9202-581c69368dbb",
+    "originalId": "00a70d92-aea6-46b9-9202-581c69368dbb",
+    "statement": "Uma paciente com histórico de tabagismo é diagnosticada com câncer de pulmão. Em qual nível de prevenção a cessação do tabagismo está incluída?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevenção primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prevenção secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prevenção terciária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prevenção quaternária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para responder a essa questão, é necessário analisar o momento clínico em que a intervenção é realizada. Os níveis de prevenção baseiam-se na história natural da doença e no estágio em que o paciente se encontra.\n\nAlternativa a) Incorreta. A prevenção primária atua antes do surgimento da doença, visando a remover fatores de risco ou causas para impedir que a patologia se desenvolva. Se a paciente fosse apenas tabagista e não tivesse a doença, a cessação do fumo seria prevenção primária. Como o câncer já foi diagnosticado, a ação ocorre em outro nível.\n\nAlternativa b) Incorreta. A prevenção secundária consiste no diagnóstico precoce e tratamento imediato de doenças que já estão presentes, mas geralmente em estágio assintomático ou inicial, como ocorre em exames de rastreamento. No caso descrito, o diagnóstico de câncer já está estabelecido.\n\nAlternativa c) Correta. A prevenção terciária é implementada quando a doença já está instalada e manifesta. Seu objetivo é reduzir o impacto negativo da doença, prevenir complicações e sequelas, evitar recidivas e promover a reabilitação. Para uma paciente com câncer de pulmão, parar de fumar é fundamental para aumentar a eficácia do tratamento (quimioterapia e radioterapia), reduzir riscos de complicações pós-operatórias e diminuir a chance de desenvolvimento de um segundo tumor primário. Portanto, é uma medida que visa a mitigar os danos de uma patologia já existente.\n\nAlternativa d) Incorreta. A prevenção quaternária envolve a identificação de pacientes em risco de excesso de medicalização, visando a protegê-los de intervenções médicas desnecessárias ou iatrogênicas. A recomendação de parar de fumar em um contexto oncológico é uma intervenção terapêutica necessária e baseada em evidências, não se enquadrando como excesso.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Neoplasias Pulmonares",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:32.938Z"
+  }
+]

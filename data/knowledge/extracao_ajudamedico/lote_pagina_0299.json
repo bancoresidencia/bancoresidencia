@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_52ee7ab4-6aa7-4897-a7ef-c7479eafb308",
+    "originalId": "52ee7ab4-6aa7-4897-a7ef-c7479eafb308",
+    "statement": "Homem de 27 anos procura o pronto-socorro com dor abdominal há 24 horas, iniciada em região periumbilical, migrando para fossa ilíaca direita, associada a náuseas, anorexia e febre baixa. Ao exame físico, apresenta dor à palpação profunda em fossa ilíaca direita e sinal de Blumberg positivo. Exames laboratoriais mostram leucocitose com desvio à esquerda. A respeito da apendicite aguda, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O sinal de Rovsing é caracterizado pela dor referida em fossa ilíaca direita à compressão da fossa ilíaca direita, sendo altamente específico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O ultrassom abdominal é exame de primeira escolha em adultos jovens do sexo masculino, por apresentar maior acurácia que a tomografia computadorizada (TC).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento cirúrgico preferencial é a apendicectomia, que pode ser realizada por via aberta ou laparoscópica, sendo esta última associada a menor taxa de complicações de ferida operatória.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Apendicite aguda retrocecal geralmente apresenta quadro clínico típico, com dor localizada precocemente em fossa ilíaca direita e sinais peritoneais intensos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A dor migratória de região periumbilical para fossa ilíaca direita é considerada achado tardio e pouco frequente da apendicite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise da Questão:\n\nA questão descreve um quadro clínico clássico de apendicite aguda em um homem jovem: dor migratória (cronologia de Murphy), anorexia, febre baixa, sinal de Blumberg positivo e leucocitose com desvio à esquerda.\n\nAlternativa a: Incorreta. O sinal de Rovsing é caracterizado pela dor referida na fossa ilíaca direita ao realizar a palpação ou compressão da fossa ilíaca esquerda. O mecanismo envolve o deslocamento de gases do cólon descendente e transverso em direção ao ceco, o que causa distensão do apêndice inflamado. A alternativa descreve erroneamente a compressão da própria fossa ilíaca direita.\n\nAlternativa b: Incorreta. Em adultos jovens do sexo masculino, o diagnóstico é predominantemente clínico. Quando há necessidade de exame de imagem por dúvida diagnóstica, a Tomografia Computadorizada (TC) é o exame de escolha por possuir acurácia superior ao ultrassom (maior sensibilidade e especificidade). O ultrassom é reservado como primeira escolha para crianças e gestantes, visando evitar a radiação.\n\nAlternativa c: Correta. A apendicectomia é o tratamento definitivo para a apendicite aguda. Ela pode ser realizada por via aberta ou laparoscópica. A via laparoscópica apresenta vantagens estabelecidas na literatura, como menor taxa de infecção de ferida operatória, menor dor no pós-operatório e recuperação mais rápida para as atividades do dia a dia.\n\nAlternativa d: Incorreta. A localização retrocecal do apêndice é uma das causas mais comuns de apresentações atípicas. Nessa posição, o apêndice inflamado está protegido pelo ceco, não irritando diretamente o peritônio parietal anterior. Isso resulta em sinais peritoneais (como o Blumberg) menos intensos ou ausentes, e a dor pode ser referida no flanco ou na região lombar.\n\nAlternativa e: Incorreta. A dor migratória é o sintoma mais clássico da apendicite aguda. Ela ocorre pela mudança do estímulo de fibras nervosas viscerais (dor periumbilical mal localizada) para fibras somáticas (dor localizada na fossa ilíaca direita quando o peritônio parietal é inflamado). Não é um achado tardio nem pouco frequente; pelo contrário, é um dos pilares do diagnóstico clínico inicial.\n\nGabarito: Alternativa C.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:04.154Z"
+  },
+  {
+    "id": "AJUDA_52eedc13-e641-4550-8ac4-b3ef4d6e7345",
+    "originalId": "52eedc13-e641-4550-8ac4-b3ef4d6e7345",
+    "statement": "Homem de 49 anos com cirrose alcoólica descompensada (ascite, encefalopatia). Nesse caso, qual marcador tem maior valor prognóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "TGO/TGP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bilirrubina total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Escore MELD-Na.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "GGT.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a avaliação prognóstica de um paciente com cirrose hepática descompensada, evidenciada pela presença de ascite e encefalopatia. Em pacientes nesse estágio, a identificação do risco de mortalidade é fundamental para o manejo clínico e para a priorização em listas de transplante.\n\nAlternativa a) TGO/TGP: Incorreta. As aminotransferases (AST e ALT) são marcadores de lesão hepatocitária ativa (necrose), sendo muito úteis no diagnóstico de hepatites agudas. Na cirrose avançada, devido à fibrose extensa e à redução da massa hepática funcional, essas enzimas podem estar apenas levemente aumentadas ou até normais, não servindo como indicadores de prognóstico ou sobrevida.\n\nAlternativa b) Bilirrubina total: Incorreta. Embora a bilirrubina seja um excelente marcador de função excretora do fígado e faça parte dos principais escores prognósticos, sua análise isolada é inferior aos escores compostos. Ela indica gravidade, mas sozinha não oferece a precisão necessária para prever mortalidade a curto prazo como os modelos multidimensionais.\n\nAlternativa c) Escore MELD-Na: Correta. O MELD (Model for End-Stage Liver Disease) é um sistema de pontuação numérica que utiliza a Creatinina, a Bilirrubina Total e o RNI para prever a mortalidade em três meses. A inclusão do Sódio (MELD-Na) refinou ainda mais esse potencial prognóstico, já que a hiponatremia é um marcador indireto de hipertensão portal grave e preditor de complicações como a síndrome hepatorrenal. Atualmente, é o principal critério utilizado mundialmente e no Brasil para a alocação de órgãos para transplante de fígado, sendo o marcador com maior valor prognóstico entre as opções apresentadas.\n\nAlternativa d) GGT: Incorreta. A Gama-Glutamiltransferase é uma enzima presente no epitélio biliar. Seu aumento está relacionado à colestase, indução por drogas ou consumo de álcool. Apesar de ser sensível para detectar doença hepatobiliar, a GGT não possui correlação direta com a reserva funcional do fígado ou com o risco de morte no paciente cirrótico.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:04.154Z"
+  },
+  {
+    "id": "AJUDA_52efeabe-617a-469c-a129-e0c24c32120c",
+    "originalId": "52efeabe-617a-469c-a129-e0c24c32120c",
+    "statement": "Homem de 28 anos, previamente hígido, se encontra internado em enfermaria de clínica médica em decorrência de dor em coluna toracolombar de início há cerca de 1 mês e meio, que apresentou piora progressiva nas últimas 3 semanas, evoluindo com fraqueza dos membros inferiores. Apresenta, ainda, espasmos musculares em membros inferiores, perda ponderal não quantificada, febre e sudorese noturna. Nega tabagismo, etilismo e uso de drogas ilícitas. Ao exame físico, observa-se força grau 0 em membros inferiores, não havendo alterações ao exame cardiovascular. Exame laboratorial evidencia aumento proeminente da velocidade de hemossedimentação e da proteína C reativa. Ressonância magnética da coluna vertebral evidencia irregularidades tanto da placa terminal, quanto da face anterior dos corpos vertebrais, com edema e realce da medula óssea envolvendo T12 e L1, gerando compressão da medula espinhal local, além da presença de coleções líquidas heterogêneas estendendo-se para o músculo psoas bilateralmente. Os achados do exame de imagem são compatíveis com espondilodiscite associada a abscessos paravertebrais. \nDiante do exposto, a provável hipótese etiológica do quadro e o tratamento indicado são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "mal de Pott; esquema RIPE por 6 a 9 meses e encaminhar para programação cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "infecção por Staphylococcus aureus; tratamento com vancomicina por pelo menos 2 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "bacteremia devido a endocardite infecciosa; tratamento com vancomicina por pelo menos 6 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "infecção por Klebsiella aerogenes; tratamento com ceftriaxona por pelo menos 14 dias, reavaliando indicação cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve um paciente jovem com um quadro de dor na coluna de evolução subaguda (um mês e meio) associado a sintomas constitucionais (perda ponderal, febre e sudorese noturna), conhecidos como sintomas B. A evolução para perda de força grau 0 (plegia) e a presença de espasmos sugerem uma síndrome de compressão medular.\n\nOs achados da ressonância magnética são fundamentais: espondilodiscite em transição toracolombar (T12-L1), com irregularidade da face anterior dos corpos vertebrais e formação de abscessos paravertebrais que se estendem para o músculo psoas bilateralmente.\n\nDIAGNÓSTICO E JUSTIFICATIVA\n\nO diagnóstico principal é o mal de Pott, que é a tuberculose da coluna vertebral. Essa etiologia é sugerida pela cronicidade dos sintomas, pelos achados sistêmicos (sudorese e perda de peso) e, patognomonicamente, pela presença do abscesso frio no músculo psoas. A transição toracolombar é o local mais acometido pela tuberculose vertebral.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Correta): O mal de Pott exige tratamento prolongado com o esquema RIPE (Rifampicina, Isoniazida, Pirazinamida e Etambutol). Embora o tratamento padrão da tuberculose pulmonar seja de 6 meses, em formas osteoarticulares, muitas diretrizes recomendam a extensão para 9 meses ou mais, dependendo da resposta clínica. A indicação cirúrgica é imperativa neste caso, pois há compressão medular com déficit neurológico grave (força grau 0), visando à descompressão e à estabilização da coluna.\n\nAlternativa B (Incorreta): O *Staphylococcus aureus* é a causa mais comum de espondilodiscite piogênica aguda, mas o quadro clínico de sintomas arrastados e abscessos de psoas bilaterais é muito mais típico da tuberculose. Além disso, o tratamento de uma infecção óssea nunca seria de apenas 2 semanas; infecções piogênicas da coluna exigem pelo menos 6 semanas de antibioticoterapia.\n\nAlternativa C (Incorreta): Embora a espondilodiscite possa ser uma complicação de endocardite infecciosa por disseminação hematogênica, o enunciado afirma explicitamente que o exame cardiovascular é normal. Além disso, a presença de abscessos de psoas volumosos e a evolução clínica apontam diretamente para o Bacilo de Koch (tuberculose).\n\nAlternativa D (Incorreta): A *Klebsiella aerogenes* não é um agente comum de espondilodiscite em pacientes jovens e hígidos (ocorre mais em idosos, diabéticos ou após procedimentos urológicos). O tempo de tratamento de 14 dias proposto na alternativa é insuficiente para erradicar uma infecção vertebral (osteomielite/discite).\n\nCONCLUSÃO\n\nA tríade de sintomas constitucionais, espondilodiscite crônica e abscesso de psoas em um paciente jovem deve sempre levar à suspeita de mal de Pott. A presença de déficit neurológico agudo ou progressivo (plegia) configura uma urgência cirúrgica para descompressão medular associada ao tratamento medicamentoso específico.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Oncologia Ortopédica e Osteomielite",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:04.154Z"
+  },
+  {
+    "id": "AJUDA_52f1aa71-5d4d-4a4b-bd84-e728d91f72db",
+    "originalId": "52f1aa71-5d4d-4a4b-bd84-e728d91f72db",
+    "statement": "Criança de 2 anos encaminhada ao matriciamento de pediatria, com história de ter apresentado há 7 dias uma crise tônico-clônica generalizada em vigência de temperatura axilar de 39,3 graus Celsius, duração de 2 minutos, sem recorrência em 24 horas. Naquela ocasião foi realizado exame físico e neurológico, compatível com infecção viral de vias aéreas superiores, sem outras alterações.\nA conduta adequada nesse caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar eletroencefalograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicar profilaxia com barbitúricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tranquilizar e orientar puericultura de rotina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "solicitar exames laboratoriais e de imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma crise febril simples em uma criança de 2 anos. Os critérios para essa classificação são: idade entre 6 meses e 5 anos, crise do tipo tônico-clônica generalizada, duração curta (menor de 15 minutos), ocorrência única em um período de 24 horas e ausência de infecção do sistema nervoso central ou insultos metabólicos. No caso em questão, a criança teve uma crise de 2 minutos, generalizada, sem recorrência e com exame neurológico normal, confirmando o diagnóstico de crise febril simples.\n\nAlternativa a) Incorreta. O eletroencefalograma (EEG) não é indicado na avaliação de uma crise febril simples. Ele não tem valor preditivo para a recorrência de novas crises febris nem para o desenvolvimento futuro de epilepsia, além de poder apresentar alterações inespecíficas que geram ansiedade desnecessária aos pais.\n\nAlternativa b) Incorreta. O uso de medicações profiláticas, como barbitúricos (fenobarbital) ou benzodiazepínicos, não é recomendado para crises febris simples. O prognóstico é excelente e os efeitos colaterais dessas medicações (como sonolência, irritabilidade e alterações cognitivas) superam largamente os possíveis benefícios.\n\nAlternativa c) Correta. A conduta na crise febril simples é baseada na orientação e tranquilização da família. Deve-se explicar a natureza benigna do evento, informar que a crise não causa lesão cerebral ou déficit intelectual e que o risco de desenvolver epilepsia no futuro é apenas discretamente superior ao da população geral. O seguimento deve ser mantido na puericultura de rotina.\n\nAlternativa d) Incorreta. Exames laboratoriais e de imagem (como tomografia ou ressonância) não são necessários quando a história clínica é clara e o exame neurológico está normal. Exames de imagem só seriam solicitados em casos de crises focais, sinais de hipertensão intracraniana ou déficit neurológico persistente após a crise, o que não ocorreu neste paciente.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Convulsão Febril"
+    ],
+    "difficulty": 49.0536269523325,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:04.154Z"
+  },
+  {
+    "id": "AJUDA_52f47762-9509-444d-96f8-ccae3ee5a9d4",
+    "originalId": "52f47762-9509-444d-96f8-ccae3ee5a9d4",
+    "statement": "O conhecimento sobre o sistema de saúde onde o médico atua é importante para adequado atendimento à população. Segundo a linha de Cuidado do Câncer de Mama 2024 da SMS de Curitiba é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O rastreamento do câncer de mama deve iniciar pelo exame clínico das mamas por apresentar benefício bem estabelecido, sendo obrigatório antes da mamografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mulheres com próteses ou implantes mamários há mais de 1 ano devem fazer o rastreamento do câncer de mama com ultrassonografia mamária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A mamografia de rastreamento expõe a mulher a alguns riscos, tais como resultados falso positivos ou falso-negativos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A Central de Teleatendimento Saúde Já Curitiba oferece agendamento de mamografia para mulheres de qualquer idade residentes em Curitiba.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas baseada na Linha de Cuidado do Câncer de Mama 2024 da Secretaria Municipal de Saúde (SMS) de Curitiba:\n\nAlternativa (a) Incorreta: Segundo as diretrizes atuais, tanto do Ministério da Saúde quanto da SMS de Curitiba, o rastreamento mamográfico não exige o exame clínico das mamas (ECM) como pré-requisito obrigatório. Embora o exame clínico faça parte da avaliação mamária, ele não possui evidência de benefício isolado na redução da mortalidade em mulheres assintomáticas quando comparado à mamografia. O foco do rastreamento populacional é a realização da mamografia bienal na faixa etária recomendada.\n\nAlternativa (b) Incorreta: A presença de próteses ou implantes mamários não substitui a mamografia pela ultrassonografia no rastreamento. Mulheres com implantes devem realizar a mamografia normalmente, utilizando técnicas específicas, como a manobra de Eklund, que permite a visualização do parênquima mamário ao afastar a prótese. A ultrassonografia é um exame complementar e não o método principal de rastreamento para esse grupo.\n\nAlternativa (c) Correta: Todo programa de rastreamento envolve um balanço entre benefícios e riscos. A Linha de Cuidado destaca que a mamografia pode gerar resultados falso-positivos (que levam à ansiedade e biópsias desnecessárias) e falso-negativos (que geram falsa segurança e atraso no diagnóstico). Além disso, existe o risco de sobrediagnóstico e sobretratamento (identificação de tumores que não evoluiriam clinicamente).\n\nAlternativa (d) Incorreta: O agendamento de mamografia por teleatendimento ou outros canais oficiais segue critérios rigorosos de idade e periodicidade baseados em evidências científicas. O rastreamento de rotina é indicado para mulheres de 50 a 69 anos, a cada dois anos. Portanto, o serviço não oferece o exame para mulheres de \"qualquer idade\", uma vez que o rastreamento fora da faixa etária recomendada aumenta significativamente os riscos sem comprovação de benefício na redução da mortalidade.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Mama",
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:04.154Z"
+  },
+  {
+    "id": "AJUDA_52f4b57b-b875-4576-bff8-76a21ce4d1bc",
+    "originalId": "52f4b57b-b875-4576-bff8-76a21ce4d1bc",
+    "statement": "Mulher, de 40 anos de idade, pertencente a uma comunidade indígena e residente em uma grande capital do Sudeste, retorna após viagem para visitar a família no interior do Pará. Há alguns meses, ela percebe “manchas claras” na face lateral da perna direita e relata que a área fica “dormente, como se estivesse anestesiada”. Ao exame físico, observam-se duas lesões hipocrômicas bem delimitadas, com redução da sensibilidade térmica e dolorosa.\n\nConsidere que o diagnóstico dessa paciente é considerado uma doença endêmica no estado do Pará, havendo grande quantidade de casos de incapacidade em pessoas diagnosticadas por ano. Supondo que o tratamento reduz em 50% o risco relativo de desenvolver incapacidade física grave em um ano, qual alternativa descreve corretamente a implicação prática para o cálculo do NNT (Número Necessário para Tratar) no Sudeste e no Pará?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No Pará, o NNT é maior, porque o risco é mais alto; então é preciso tratar mais gente para prevenir a incapacidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "No Sudeste, o NNT é menor, porque a prevalência de incapacidade é baixa e há menos pessoas em risco de desenvolver a doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No Sudeste, o NNT é maior, porque a prevalência é baixa e o mesmo tratamento evitará mais casos de incapacidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "No Pará, o NNT é menor, pois a prevalência da doença é maior e o mesmo tratamento evitará mais casos de incapacidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico e Contexto:\nO quadro clínico da paciente, com manchas hipocrômicas e perda de sensibilidade térmica e dolorosa (anestesia), em uma paciente proveniente de área endêmica (Pará), é patognomônico de hanseníase. A questão exige o conhecimento da relação entre prevalência/risco basal e o cálculo do NNT (Número Necessário para Tratar).\n\nConceitos de Bioestatística Aplicados:\n1. Risco Absoluto: É a incidência do desfecho (incapacidade) em um determinado grupo.\n2. RRA (Redução do Risco Absoluto): É a diferença entre o risco no grupo controle e o risco no grupo tratado.\n3. NNT (Número Necessário para Tratar): É o inverso da Redução do Risco Absoluto (1 / RRA). Ele indica quantos pacientes precisam ser tratados para que um desfecho negativo seja evitado.\n\nRelação com a Epidemiologia:\nO NNT é influenciado diretamente pelo risco basal da doença na população. Se a eficácia relativa do tratamento for a mesma (50% de redução do risco relativo), o benefício absoluto será maior onde a incidência da doença for maior. \n- Em locais com alto risco (Pará): A Redução do Risco Absoluto será alta, logo o NNT será BAIXO.\n- Em locais com baixo risco (Sudeste): A Redução do Risco Absoluto será baixa, logo o NNT será ALTO.\n\nAnálise das Alternativas:\n\na) Incorreta. No Pará, como o risco de incapacidade é mais alto, a redução absoluta causada pelo tratamento é maior. Isso resulta em um NNT menor, e não maior. Um NNT menor significa que a intervenção é mais \"eficiente\" (é necessário tratar menos pessoas para obter um benefício).\n\nb) Incorreta. No Sudeste, a prevalência e o risco são menores. Consequentemente, a redução absoluta do risco será pequena, o que torna o NNT maior, e não menor.\n\nc) Incorreta. Embora o NNT no Sudeste seja realmente maior devido à baixa prevalência, a conclusão da alternativa está errada. Um NNT maior significa que o mesmo tratamento evitará MENOS casos de incapacidade na população geral, pois há menos pessoas sob risco.\n\nd) Correta. Como o Pará possui maior prevalência da doença e maior risco de incapacidade (risco basal elevado), a aplicação de um tratamento com 50% de eficácia relativa gera uma Redução de Risco Absoluto (RRA) mais expressiva do que no Sudeste. Como o NNT é o inverso da RRA, um risco maior resulta em um NNT menor. Portanto, no Pará, evitam-se mais casos de incapacidade ao se tratar o mesmo número de pessoas.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:04.154Z"
+  },
+  {
+    "id": "AJUDA_52fac88d-52e5-4462-9655-31af018d99a7",
+    "originalId": "52fac88d-52e5-4462-9655-31af018d99a7",
+    "statement": "Mulher, 40 anos de idade, primípara, com desejo de gestar, apresentou sangramento vaginal intermitente por 2 meses. Na investigação, diagnosticou-se hiperplasia endometrial atípica. A conduta mais adequada, nesse caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "inserir DIU levonogestrel por, pelo menos, 6 meses e controle ultrassonográfico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "histerectomia total abdominal e salpingooforectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "histerectomia total abdominal e pesquisa linfonodo sentinela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ablação endometrial via histeroscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "medroxiprogesterona 150 mg mensal por 1 ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta uma paciente de 40 anos com hiperplasia endometrial atípica e desejo de preservação da fertilidade. A hiperplasia atípica (ou neoplasia intraepitelial endometrial) é uma lesão pré-neoplásica com alto risco de progressão para carcinoma endometrial ou presença oculta de câncer. O tratamento padrão-ouro é a histerectomia total; porém, em pacientes selecionadas com desejo reprodutivo, o tratamento conservador com progestagênios é uma opção válida e recomendada pelos protocolos atuais.\n\nAlternativa a: Esta é a conduta mais adequada. O sistema intrauterino liberador de levonorgestrel (DIU-LNG) é considerado o tratamento conservador de primeira linha para hiperplasia endometrial atípica em pacientes que desejam preservar a fertilidade. Ele oferece uma alta concentração local de progestagênio, promovendo a reversão da atipia e a atrofia endometrial. O período mínimo de 6 meses é necessário para avaliar a resposta histológica antes de permitir a tentativa de gestação.\n\nAlternativa b: Esta alternativa descreve o tratamento definitivo para a hiperplasia endometrial atípica. Entretanto, como a paciente manifestou explicitamente o desejo de gestar, a histerectomia total abdominal e a salpingo-oforectomia inviabilizariam seu objetivo reprodutivo, sendo reservadas para casos em que o tratamento conservador falha ou quando a prole já está completa.\n\nAlternativa c: A pesquisa de linfonodo sentinela faz parte do estadiamento cirúrgico em casos de câncer de endométrio confirmado por biópsia. Não é uma conduta indicada para o manejo de hiperplasias e, novamente, a histerectomia não atende ao desejo de gestação da paciente.\n\nAlternativa d: A ablação endometrial via histeroscópica é contraindicada na presença de hiperplasia com atipias. O procedimento destrói a camada basal do endométrio e provoca fibrose (sinéquias), o que impede futuras biópsias de controle para monitorar a possível progressão para câncer e inviabiliza a gestação desejada.\n\nAlternativa e: O uso de medroxiprogesterona 150 mg mensal assemelha-se ao esquema de contracepção injetável e não possui a potência ou a frequência necessária para o tratamento de uma lesão endometrial pré-maligna. O tratamento medicamentoso oral, quando indicado, exige doses altas e diárias de progestagênios (como o acetato de megestrol ou acetato de medroxiprogesterona oral) para ser eficaz na reversão da atipia.\n\nPortanto, diante da necessidade de tratar uma lesão precursora sem retirar o útero, o uso do DIU de levonorgestrel é a escolha mais correta e fundamentada.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Câncer do Corpo do Útero"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:04.154Z"
+  },
+  {
+    "id": "AJUDA_5302561f-1183-4141-9a10-6ccca270873f",
+    "originalId": "5302561f-1183-4141-9a10-6ccca270873f",
+    "statement": "Homem, 35 anos de idade, apresenta queixa de dor torácica ventilatório dependente há 6 horas. Realiza o eletrocardiograma a seguir:\n\nA próxima conduta nesse momento é",
+    "options": [
+      {
+        "id": "A",
+        "text": "colchicina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "prednisona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "imunossupressor, se biópsia miocárdica mostrar miocardite de células gigantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "AAS, clopidogrel, metoprolol e enoxaparina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "AAS, clopidogrel, metoprolol e angioplastia primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico de um homem jovem com dor torácica ventilatório-dependente (pleurítica) há apenas 6 horas, associado ao eletrocardiograma (ECG) apresentado, é o caso clássico de pericardite aguda.\n\nAnálise do ECG:\nO traçado mostra um supradesnivelamento do segmento ST com morfologia côncava (para cima) e difuso, ou seja, presente em quase todas as derivações (I, II, III, aVF e de V2 a V6), o que não respeita um território de artéria coronária específica. Além disso, observa-se o sinal mais específico da pericardite: o infradesnivelamento do segmento PR (visível em DII, V5 e V6) e o supradesnivelamento do PR na derivação aVR.\n\nExplicação das alternativas:\n\na) CORRETA. O tratamento padrão da pericardite aguda consiste no uso de anti-inflamatórios não esteroidais (AINEs), como o ibuprofeno ou a aspirina em doses altas, combinados à colchicina. A colchicina é recomendada por um período de 3 meses, pois sua adição ao tratamento de base aumenta a taxa de remissão e reduz significativamente o risco de recorrência (pericardite recorrente), que é a complicação mais comum.\n\nb) INCORRETA. Os corticosteroides, como a prednisona, são considerados medicamentos de segunda linha. Eles devem ser evitados na fase inicial da pericardite idiopática ou viral, pois seu uso precoce está fortemente associado ao aumento das taxas de recorrência da doença. Devem ser reservados apenas para casos de falha terapêutica aos AINEs, contraindicações formais a eles ou se a causa for uma doença autoimune sistêmica.\n\nc) INCORRETA. A biópsia miocárdica e o uso de imunossupressores são indicados para a miocardite de células gigantes. Essa é uma condição rara e extremamente grave que se manifesta com insuficiência cardíaca aguda grave, choque cardiogênico ou arritmias malignas, o que não corresponde ao quadro de dor pleurítica estável do paciente.\n\nd) INCORRETA. Este esquema (AAS, clopidogrel, metoprolol e enoxaparina) é o tratamento medicamentoso para síndromes coronarianas agudas sem supradesnivelamento do segmento ST. O ECG do paciente apresenta supra de ST, mas com características inflamatórias (pericardite) e não isquêmicas.\n\ne) INCORRETA. Esta conduta seria indicada para o infarto agudo do miocárdio com supra de ST (IAMCSST). No infarto, o supra-ST é tipicamente regional (localizado em derivações que olham para a mesma parede do coração), tem morfologia convexa (para baixo) e apresenta imagem em espelho (infra-ST nas derivações opostas), o que é o oposto do que vemos neste ECG difuso e côncavo. Além disso, a dor do infarto costuma ser opressiva e não ventilatório-dependente.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pericardiopatias"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/c55bc92013ced4c4a2d502a47281a8e700edab44800211d281f4ca9e26a8e998.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5302561f-1183-4141-9a10-6ccca270873f_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:04.714Z"
+  },
+  {
+    "id": "AJUDA_530d3e79-036d-489f-8e43-8c78543d15eb",
+    "originalId": "530d3e79-036d-489f-8e43-8c78543d15eb",
+    "statement": "Homem de 28 anos apresenta úlcera genital dolorosa há 5 dias. Relata febre e mal-estar geral antes do aparecimento da lesão. Exame físico: imagem. AP: múltiplas parcerias sexuais nos últimos meses sem uso de preservativos.\n\nEm face do exposto, a hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sífilis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "herpes genital.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "cancroide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "linfogranuloma venéreo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A hipótese diagnóstica principal para este caso é herpes genital. A análise baseia-se na correlação entre a história clínica e a morfologia das lesões apresentadas na imagem.\n\nAnálise das alternativas:\n\na) Incorreta. A sífilis primária manifesta-se tipicamente pelo cancro duro, que é uma úlcera única, com base limpa, bordas endurecidas e, fundamentalmente, indolor. O relato de dor intensa e a presença de múltiplas lesões na imagem tornam essa hipótese improvável.\n\nb) Correta. O herpes genital (geralmente causado pelo vírus herpes simples tipo 2) apresenta-se com um quadro de pródromos, como febre e mal-estar, seguidos pelo surgimento de pequenas vesículas agrupadas sobre base eritematosa. Essas vesículas rompem-se rapidamente, formando úlceras superficiais, policíclicas e muito dolorosas. A imagem exibe exatamente esse padrão de múltiplas pequenas úlceras agrupadas e superficiais.\n\nc) Incorreta. O cancroide, ou cancro mole, também causa úlceras genitais dolorosas, mas estas costumam ser mais profundas, com fundo purulento (sujo), bordas irregulares e friáveis ao toque. Além disso, é comum a associação com um bubão inguinal (linfonodomegalia dolorosa que pode fistulizar por um único orifício), o que difere das lesões rasas e agrupadas vistas na imagem.\n\nd) Incorreta. No linfogranuloma venéreo, a lesão ulcerosa inicial é pequena, efêmera e indolor, passando frequentemente despercebida pelo paciente. O destaque dessa patologia é a fase seguinte, caracterizada por uma linfadenopatia inguinal dolorosa e volumosa que pode fistulizar em múltiplos pontos (aspecto de \"bico de regador\").\n\nAssociação com a imagem:\nA fotografia revela múltiplas lesões ulceradas pequenas, de contornos arredondados/policíclicos e fundo eritematoso. Esse agrupamento é o aspecto clássico pós-rompimento das vesículas herpéticas, confirmando o diagnóstico de herpes genital em fase ulcerosa.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/32fdffa20caddcadf5210d8b4a846c667a1b27229b015c788cfb4af8cafb8df5.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_530d3e79-036d-489f-8e43-8c78543d15eb_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:05.213Z"
+  },
+  {
+    "id": "AJUDA_5318b1a5-3c3c-4692-8ade-8e16337a52a2",
+    "originalId": "5318b1a5-3c3c-4692-8ade-8e16337a52a2",
+    "statement": "O sistema Breast Imaging Reporting and Data System (BI-RADS) é uma ferramenta amplamente utilizada na avaliação de imagens mamárias, permitindo a categorização de achados e a padronização da comunicação entre os profissionais de saúde. De acordo com o BI-RADS 3, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lesões BI-RADS 3 não precisam de acompanhamento, pois são consideradas benignas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O acompanhamento de lesões BI-RADS 3 deve ser realizado a cada seis meses, durante dois anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "As lesões BI-RADS 3 têm risco de malignidade superior a 5%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lesões BI-RADS 3 sempre requerem biópsia imediata para confirmação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O sistema BI-RADS (Breast Imaging Reporting and Data System) categoriza os achados mamários para padronizar as condutas. A categoria 3 é definida como achados provavelmente benignos, com um risco de malignidade estimado em até 2 por cento.\n\nAnálise das alternativas:\n\nAlternativa a: Está incorreta porque os achados BI-RADS 3 requerem obrigatoriamente um acompanhamento diferenciado para confirmar a estabilidade da lesão. Apenas os achados BI-RADS 2 são considerados benignos e dispensam o controle em curto prazo, seguindo apenas o rastreio anual de rotina para a faixa etária.\n\nAlternativa b: Está correta. A conduta recomendada para o BI-RADS 3 é o controle radiológico em intervalos menores que o habitual para monitorar a estabilidade. O esquema clássico sugerido envolve o acompanhamento inicial em 6 meses, seguido por controle aos 12 e 24 meses. Se a lesão mantiver estabilidade morfológica e dimensional após 24 meses de seguimento, ela pode ser reclassificada para a categoria 2 (benigna).\n\nAlternativa c: Está incorreta. O risco de malignidade na categoria 3 é muito baixo, variando entre maior que 0 por cento e menor ou igual a 2 por cento. Riscos superiores a 2 por cento (indo até 95 por cento) enquadram o achado na categoria 4, que indica suspeição e necessidade de investigação.\n\nAlternativa d: Está incorreta. A principal característica do BI-RADS 3 é justamente permitir a observação para evitar biópsias desnecessárias em lesões com baixíssima probabilidade de câncer. A biópsia imediata é a conduta padrão para as categorias 4 e 5. No BI-RADS 3, a biópsia só é realizada em casos de exceção, como desejo da paciente, ansiedade extrema ou se a lesão apresentar evolução durante o seguimento.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Doenças Benignas da Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:05.213Z"
+  }
+]

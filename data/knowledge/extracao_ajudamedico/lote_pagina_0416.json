@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_740c56d7-f3cf-4898-8356-8fd7fe1715eb",
+    "originalId": "740c56d7-f3cf-4898-8356-8fd7fe1715eb",
+    "statement": "Pode-se afirmar, no contexto da avaliação da qualidade das evidências em saúde pelo sistema Grading of Recommendations Assessment, Development and Evaluation (GRADE), que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a aleatorização assegura a superioridade da evidência gerada pelos ensaios clínicos em relação aos estudos observacionais, independentemente da presença de fatores que possam aumentar a confiança nos resultados observados ou reduzir a qualidade da evidência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a qualidade da evidência é reduzida em situações nas quais os efeitos das intervenções são comparados indiretamente, por meio de uma terceira alternativa ou controle",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a opção pela avaliação da qualidade dos diferentes estudos individualmente ou da qualidade do conjunto dos estudos não interfere na avaliação do risco de viés em uma revisão sistemática",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "um valor elevado para o teste de inconsistência (I²) é critério suficiente para indicar a necessidade de redução do nível de evidência",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O sistema GRADE (Grading of Recommendations Assessment, Development and Evaluation) é a ferramenta mais utilizada mundialmente para avaliar a qualidade da evidência e a força das recomendações em saúde. Abaixo, analisamos cada alternativa:\n\nAlternativa a: Incorreta. No sistema GRADE, os ensaios clínicos aleatorizados iniciam com um nível de evidência alto e os estudos observacionais, com nível baixo. No entanto, essa classificação não é imutável. Um ensaio clínico pode ter sua qualidade rebaixada (por risco de viés, imprecisão, etc.), e um estudo observacional pode ter sua qualidade elevada (por exemplo, quando apresenta uma magnitude de efeito muito grande ou um gradiente dose-resposta). Portanto, a aleatorização não assegura superioridade independentemente desses fatores.\n\nAlternativa b: Correta. A evidência indireta (indirectness) é um dos cinco domínios utilizados para rebaixar a qualidade da evidência. Isso acontece quando não existem comparações diretas entre as intervenções de interesse (exemplo: existem os estudos do remédio A vs. placebo e do remédio B vs. placebo, mas quer-se saber A vs. B). Comparações indiretas aumentam a incerteza sobre o efeito real da intervenção, justificando a redução da confiança na evidência.\n\nAlternativa c: Incorreta. O GRADE não avalia apenas estudos individualmente, mas sim o conjunto da evidência para cada desfecho clínico específico. A avaliação do risco de viés em uma revisão sistemática é parte integrante desse processo e interfere diretamente na qualidade global da evidência. A transição da análise de estudos individuais para o conjunto dos estudos é o que define a confiança final no resultado.\n\nAlternativa d: Incorreta. O teste de inconsistência (I-quadrado) é um parâmetro importante para avaliar a heterogeneidade entre os estudos em uma metanálise. No entanto, um valor elevado não é um critério automático ou suficiente para reduzir o nível de evidência. O pesquisador deve avaliar se a variabilidade dos resultados pode ser explicada por subgrupos ou diferenças clínicas. Se a direção do efeito for a mesma e a magnitude for clinicamente similar, o rebaixamento pode não ser obrigatório.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:20.552Z"
+  },
+  {
+    "id": "AJUDA_74129038-c94c-4e04-8cc1-8af6c56a597e",
+    "originalId": "74129038-c94c-4e04-8cc1-8af6c56a597e",
+    "statement": "Assinale a alternativa que descreve corretamente o uso da tomografia computadorizada (TC) na avaliação de um paciente com trauma abdominal, segundo os princípios do ATLS.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A TC é o método diagnóstico de escolha para pacientes hemodinamicamente instáveis com suspeita de lesão abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A TC deve ser utilizada apenas para avaliar lesões de vísceras ocas, pois o FAST (avaliação focada com sonografia em trauma) e a LPD (lavagem peritoneal diagnóstica) são superiores para lesões de órgãos sólidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A TC é um procedimento demorado que deve ser usado somente em pacientes hemodinamicamente estáveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A TC pode ser realizada em qualquer paciente, desde que não atrase a transferência para o centro cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa correta: C\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Em pacientes hemodinamicamente instáveis com suspeita de trauma abdominal, a prioridade é identificar rapidamente a presença de líquido livre (sangue) na cavidade peritoneal para decidir a conduta cirúrgica imediata. Nesses casos, os métodos de escolha são o FAST (Focused Assessment with Sonography for Trauma) ou o LPD (Lavagem Peritoneal Diagnóstica), que podem ser realizados à beira do leito na sala de emergência. A TC exige que o paciente seja transportado para a sala de radiologia, o que é contraindicado para pacientes instáveis.\n\nAlternativa B: Incorreta. A TC é considerada o padrão-ouro justamente para a avaliação de lesões em órgãos sólidos (fígado, baço e rins), permitindo inclusive o estadiamento da gravidade da lesão. Além disso, ela avalia o retroperitônio, área que o FAST e o LPD não conseguem examinar adequadamente. O FAST e o LPD detectam a presença de fluido, mas não detalham a anatomia da lesão do órgão sólido tão bem quanto a TC.\n\nAlternativa C: Correta. Segundo os princípios do ATLS, a tomografia computadorizada é um exame que consome tempo devido à logística de transporte do paciente e ao tempo de execução e interpretação. Por ser realizado fora do ambiente monitorado da sala de trauma, seu uso é estritamente reservado para pacientes hemodinamicamente estáveis. Pacientes que apresentam oscilação pressórica ou choque não devem ser enviados para a tomografia, pois o risco de uma descompensação fatal longe da equipe de reanimação é alto.\n\nAlternativa D: Incorreta. A TC não pode ser realizada em qualquer paciente. A estabilidade hemodinâmica é um pré-requisito absoluto. Se um paciente necessita de transferência imediata para o centro cirúrgico devido à instabilidade e evidência de sangramento abdominal (identificado pelo FAST ou LPD), a realização da TC atrasaria o tratamento definitivo e aumentaria a mortalidade.\n\nResumo Didático:\nA decisão sobre qual exame de imagem solicitar no trauma abdominal baseia-se na estabilidade hemodinâmica do paciente.\n- Paciente INSTÁVEL: FAST ou LPD. Se positivos, segue para Laparotomia.\n- Paciente ESTÁVEL: Tomografia Computadorizada de abdome com contraste (Padrão-ouro para avaliar extensão das lesões e indicar tratamento conservador).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:20.552Z"
+  },
+  {
+    "id": "AJUDA_74177644-0b0f-45eb-88d4-e1fa246aafbf",
+    "originalId": "74177644-0b0f-45eb-88d4-e1fa246aafbf",
+    "statement": "Os estudos epidemiológicos do tipo caso-controle são especialmente indicados quando se deseja investigar doenças raras ou situações em que há limitação de tempo e recursos. Eles permitem testar hipóteses ao comparar indivíduos doentes (casos) com não doentes (controles), sendo sua principal medida de associação o odds ratio, que estima",
+    "options": [
+      {
+        "id": "A",
+        "text": "a força da associação entre uma exposição e um desfecho em estudos transversais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a razão de chances de exposição entre os grupos de casos e controles.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a prevalência da exposição na população de estudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o risco atribuível populacional da exposição em relação à doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a razão de incidência da doença entre expostos e não expostos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O estudo de caso-controle e um delineamento observacional, longitudinal e retrospectivo, que parte do desfecho (selecionam-se os casos, que sao os individuos com a doenca, e os controles, que sao individuos sem a doenca) e investiga a exposicao pregressa a determinados fatores. Como o pesquisador define a quantidade de casos e controles, nao e possivel calcular a incidencia da doenca na populacao, o que impede o calculo direto do Risco Relativo. Por essa razao, a medida de associacao classica utilizada no estudo de caso-controle e o Odds Ratio (OR), traduzido como Razao de Chances.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. A principal medida de associacao utilizada nos estudos transversais e a Razao de Prevalencia (RP). Embora o Odds Ratio possa ser pontualmente calculado em estudos seccionais (como Odds Ratio de Prevalencia), o enunciado trata especificamente da funcao do OR no contexto do estudo de caso-controle.\n\nAlternativa b: Correta. O Odds Ratio estima a razao entre a chance de os casos terem sido expostos ao fator de risco e a chance de os controles terem sido expostos. Trata-se da traducao literal e conceitual da medida de associacao propria do estudo de caso-controle.\n\nAlternativa c: Incorreta. A prevalencia da exposicao e uma medida de frequencia descritiva simples, e nao uma medida de associacao. O Odds Ratio avalia a relacao entre uma exposicao e um desfecho, e nao apenas a frequencia isolada da exposicao na amostra.\n\nAlternativa d: Incorreta. O Risco Atribuivel Populacional e uma medida de impacto que quantifica o excesso de incidencia da doenca na populacao que e atribuivel a exposicao. Seu calculo direto depende do conhecimento da taxa de incidencia da doenca na populacao geral e nos expostos, informacoes que os estudos de caso-controle nao fornecem.\n\nAlternativa e: Incorreta. A razao de incidencia entre expostos e nao expostos e a definicao do Risco Relativo (RR). O Risco Relativo e a medida de associacao classica dos estudos de coorte e ensaios clinicos, delineamentos que acompanham os participantes no tempo e permitem mensurar o surgimento de casos novos (incidencia).\n\nGabarito: Letra b.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:20.552Z"
+  },
+  {
+    "id": "AJUDA_74202301-bf4e-4c70-b0ff-278f84899bc7",
+    "originalId": "74202301-bf4e-4c70-b0ff-278f84899bc7",
+    "statement": "Paciente, sexo feminino, 60 anos de idade, vem à emergência queixando-se de extensa ferida na perna, que não cicatriza. Refere que a lesão, inicialmente, era pequena e que, há 4 meses, apresenta crescimento progressivo. Previamente, é hipertensa e refere tratamento para câncer de mama e episódio de trombose venosa no mesmo membro há cerca de 3 anos. Ao exame físico, foi detectada a presença de pulsos distais e úlcera de 5 cm de diâmetro, localizada no maléolo medial, de bordas irregulares com tecido de granulação e fibrina, pouco dolorosa ao toque.\nAcerca do caso descrito, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de lesão microangiopática relacionada à hipertensão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de lesão arterial relacionada à microangiopatia hipertensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de lesão neuropática relacionada à síndrome pós-trombótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de úlcera venosa relacionada à microangiopatia tumoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trata-se de úlcera venosa relacionada à síndrome pós-trombótica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CENÁRIO CLÍNICO\n\nPara resolver esta questão, devemos focar nos dados epidemiológicos e nas características semiológicas da úlcera. A paciente é uma mulher idosa com dois fatores de risco cruciais: hipertensão (risco cardiovascular) e um episódio prévio de Trombose Venosa Profunda (TVP) no mesmo membro há 3 anos.\n\nAs características da lesão são patognomônicas:\n1. Localização: Maléolo medial (região supramaleolar interna é o local clássico da insuficiência venosa).\n2. Aspecto: Bordas irregulares, presença de tecido de granulação e fibrina.\n3. Sintomatologia: Pouco dolorosa (diferente das úlceras arteriais, que são intensamente dolorosas).\n4. Exame físico: Pulsos distais presentes (afasta, inicialmente, doença arterial obstrutiva periférica significativa).\n\nO antecedente de TVP associado ao surgimento de uma úlcera maleolar fecha o diagnóstico de Síndrome Pós-Trombótica (SPT), que decorre da hipertensão venosa crônica por destruição das válvulas e/ou obstrução residual do lúmen venoso.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A lesão microangiopática relacionada à hipertensão (conhecida como Úlcera de Martorell) costuma localizar-se na face posterolateral da perna, é extremamente dolorosa e não tem relação direta com o histórico de trombose venosa.\n\nAlternativa B (Incorreta): Úlceras arteriais geralmente ocorrem em extremidades (dedos) ou pontos de pressão, apresentam bordas bem delimitadas (\"em saca-bocado\"), são muito dolorosas e acompanham ausência de pulsos distais. O enunciado afirma que os pulsos estão presentes.\n\nAlternativa C (Incorreta): As lesões neuropáticas são típicas do pé diabético, ocorrendo em pontos de pressão na planta do pé (mal perfurante plantar), geralmente indolores pela perda de sensibilidade. Embora a síndrome pós-trombótica cause úlceras, elas não são classificadas como \"neuropáticas\".\n\nAlternativa D (Incorreta): Embora a lesão seja uma úlcera venosa, o termo \"microangiopatia tumoral\" é clinicamente inadequado neste contexto. Não há evidência de que o câncer de mama prévio tenha relação direta com a fisiopatologia da úlcera atual.\n\nAlternativa E (Correta): Define perfeitamente o caso. A paciente apresenta uma úlcera venosa (pelas características de localização, bordas e dor leve) e a etiologia é a Síndrome Pós-Trombótica, uma complicação tardia e frequente em pacientes que sofreram trombose venosa profunda e desenvolveram insuficiência venosa crônica grave (CEAP C6).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:20.552Z"
+  },
+  {
+    "id": "AJUDA_7424d740-03d9-4363-bf37-753ef2de6df1",
+    "originalId": "7424d740-03d9-4363-bf37-753ef2de6df1",
+    "statement": "Em relação às modificações do organismo materno, em uma gestação sem comorbidade, deve-se observar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "há mais acréscimo de eritrócitos que de plasma no volume sanguíneo total de sangue.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "há uma diminuição da frequência respiratória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "há um aumento da resistência vascular periférica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "há uma tendência a hipoglicemia e cetonúria de jejum no início da gestação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. Na gestação, ocorre um aumento do volume sanguíneo total, porém o incremento do volume plasmático (cerca de 40 a 50 por cento) é significativamente maior do que o aumento da massa de eritrócitos (cerca de 20 a 30 por cento). Essa diferença proporcional causa uma hemodiluição, o que clinicamente conhecemos como anemia fisiológica da gravidez.\n\nAlternativa b: Incorreta. A frequência respiratória praticamente não se altera durante a gestação. O que ocorre é um aumento do volume corrente (quantidade de ar mobilizada em cada respiração), o que consequentemente aumenta a ventilação-minuto. Esse processo é estimulado pela progesterona, que sensibiliza o centro respiratório ao gás carbônico.\n\nAlternativa c: Incorreta. Há uma redução acentuada da resistência vascular periférica. Isso se deve aos efeitos relaxantes da progesterona na musculatura lisa dos vasos e à maior produção de substâncias vasodilatadoras, como o óxido nítrico. Essa queda da resistência é fundamental para acomodar o aumento do débito cardíaco e explica a redução dos níveis de pressão arterial observada principalmente nos dois primeiros trimestres.\n\nAlternativa d: Correta. No início da gestação, o organismo materno passa por um estado de anabolismo facilitado. O estrogênio e a progesterona estimulam a secreção de insulina e aumentam a sensibilidade periférica a esse hormônio. Como o feto consome glicose de forma contínua, a gestante tende a apresentar níveis glicêmicos menores em jejum. Além disso, a grávida atinge o estado de catabolismo mais rapidamente durante a privação alimentar (fenômeno do jejum acelerado), passando a oxidar lipídios precocemente, o que resulta na formação de corpos cetônicos e consequente cetonúria.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Modificações Fisiológicas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:20.552Z"
+  },
+  {
+    "id": "AJUDA_742be0dd-eeec-4d74-b9ce-40ffb6d9ece9",
+    "originalId": "742be0dd-eeec-4d74-b9ce-40ffb6d9ece9",
+    "statement": "Recém-nascido com 7 dias de vida, internado por sífilis congênita, vinha recebendo tratamento com penicilina G cristalina desde o primeiro dia. Os exames laboratoriais revelaram VDRL sérico de 1:2, VDRL no líquor 1:2, líquor com proteínas totais de 69 mg/dl, 35 leucócitos/mm³ e glicose de 60 mg/dl. O raio X de ossos longos estava normal. A enfermagem informou que não conseguia mais acesso vascular intravenoso periférico na criança. Segundo as diretrizes brasileiras para o manejo dessa condição, qual a conduta mais adequada para a finalização do tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar acesso venoso central e manter a penicilina cristalina até que se completem 10 dias de tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar acesso venoso central e manter a penicilina cristalina até que se completem 14 dias de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar alta hospitalar com prescrição de penicilina procaína intramuscular de 12/12 horas até que se completem 10 dias de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar alta hospitalar com prescrição de penicilina procaína intramuscular de 12/12 horas até que se completem 14 dias de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é fundamental identificar o diagnóstico de neurossífilis e conhecer as recomendações do Ministério da Saúde do Brasil para o tratamento da sífilis congênita.\n\nAnálise do caso clínico:\nO recém-nascido apresenta VDRL reagente no líquor (1:2). Na neonatologia, qualquer titulação de VDRL no líquor, independentemente do valor, confirma o diagnóstico de neurossífilis. Além disso, a celularidade está aumentada (35 leucócitos/mm³), o que reforça o comprometimento do sistema nervoso central.\n\nConduta e tempo de tratamento:\nDe acordo com as diretrizes brasileiras, casos de sífilis congênita com alteração liquórica (neurossífilis) devem ser tratados obrigatoriamente com Penicilina G Cristalina por via intravenosa (IV). O tempo total de tratamento para sífilis congênita é de 10 dias.\n\nAnálise das alternativas:\n\nAlternativa (a): CORRETA. Como há alteração no líquor, o tratamento de escolha é a Penicilina G Cristalina por via intravenosa. Se o acesso periférico foi perdido e não é mais possível obtê-lo, a obtenção de um acesso venoso central é necessária para garantir a conclusão do esquema terapêutico. O tempo total preconizado é de 10 dias.\n\nAlternativa (b): INCORRETA. Embora a via e a medicação estejam corretas para o quadro de neurossífilis, o tempo de tratamento estabelecido pelos protocolos nacionais e internacionais para sífilis congênita é de 10 dias, e não 14 dias.\n\nAlternativa (c): INCORRETA. A Penicilina G Procaína (via intramuscular) é uma alternativa de tratamento para a sífilis congênita apenas nos casos em que o líquor está normal e não há evidências de neurossífilis. Como o paciente apresenta VDRL positivo no líquor, a via intravenosa com Penicilina Cristalina é mandatória. Além disso, o tratamento não deve ser finalizado de forma ambulatorial antes de completar o ciclo necessário para o sistema nervoso central.\n\nAlternativa (d): INCORRETA. Esta alternativa apresenta dois erros: indica a Penicilina Procaína para um paciente com neurossífilis e estende o tempo de tratamento para 14 dias, o que não condiz com as diretrizes para o manejo neonatal da infecção.\n\nResumo: O achado de VDRL positivo no líquor define a necessidade de 10 dias de Penicilina Cristalina IV. A perda de acesso venoso periférico exige a obtenção de um novo acesso (central ou profundo) para que o tratamento não seja interrompido, uma vez que interrupções superiores a 24 horas obrigam o reinício de toda a contagem do tempo de tratamento.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:20.552Z"
+  },
+  {
+    "id": "AJUDA_742dc58a-9f67-42a7-9b43-637d5ff84314",
+    "originalId": "742dc58a-9f67-42a7-9b43-637d5ff84314",
+    "statement": "O estudo da vitalidade fetal ganhou grande impulso com advento da dopplervelocimetria. Nesse exame, avalia-se a velocidade de fluxo nas artérias umbilicais fetais (AUMB), na artéria cerebral média fetal (ACM) e no ducto venoso (DV). Diante da redução progressiva da oxigenação fetal, em qual sequência esses parâmetros se alteram?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AUMB, ACM, DV",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "DV, AUMB, ACM",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DV, ACM, AUMB",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "AUMB DV, ACM",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ACM, AUMB, DV",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "EXPLICAÇÃO DO PROCESSO FISIOPATOLÓGICO\n\nA avaliação da vitalidade fetal por meio da dopplervelocimetria segue uma lógica cronológica baseada na adaptação do feto à redução progressiva da oferta de oxigênio, geralmente decorrente de insuficiência placentária. Para acertar essa questão, é necessário compreender a ordem das respostas hemodinâmicas fetais:\n\n1. ARTÉRIA UMBILICAL (AUMB): É o primeiro parâmetro a se alterar. Ela reflete a resistência vascular da placenta. À medida que a placenta se deteriora, a resistência ao fluxo sanguíneo aumenta, dificultando a passagem de sangue do feto para a mãe. No Doppler, isso se manifesta inicialmente pelo aumento dos índices de pulsatilidade, podendo evoluir para a diástole zero (quando o fluxo para durante a diástole) e, em casos graves, diástole reversa.\n\n2. ARTÉRIA CEREBRAL MÉDIA (ACM): É o parâmetro intermediário e representa um mecanismo de compensação. Quando o feto detecta a queda na oxigenação (hipoxemia), ele redireciona o fluxo sanguíneo para órgãos vitais, como o cérebro, coração e glândulas adrenais. Para isso, ocorre uma vasodilatação na artéria cerebral média para facilitar a chegada de sangue oxigenado ao sistema nervoso central. Esse fenômeno é conhecido como centralização fetal ou efeito \"brain-sparing\". No Doppler, observa-se uma queda na resistência desse vaso.\n\n3. DUCTO VENOSO (DV): É o parâmetro tardio e um indicador de gravidade extrema. Ele reflete o estado hemodinâmico do coração fetal e o equilíbrio ácido-básico. Quando o ducto venoso apresenta alteração (especialmente a onda a zero ou reversa), significa que o feto está em acidose grave e apresenta falência das câmaras cardíacas direitas. É o último marcador a se alterar antes do óbito fetal iminente, sendo crucial para decidir o momento da interrupção da gravidez em fetos prematuros.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): Apresenta a sequência fisiopatológica exata: primeiro a resistência placentária (AUMB), seguida pela resposta compensatória de proteção cerebral (ACM) e, finalmente, a descompensação cardíaca e acidose (DV).\n\nAlternativa B (INCORRETA): O Ducto Venoso é um marcador de fase terminal e risco de óbito, não sendo o primeiro parâmetro a se alterar na hipóxia progressiva.\n\nAlternativa C (INCORRETA): Inverte totalmente a ordem lógica, sugerindo que o marcador de gravidade máxima (DV) ocorreria antes da resistência placentária (AUMB).\n\nAlternativa D (INCORRETA): Embora identifique corretamente a Artéria Umbilical como o início do processo, inverte a ordem final. A centralização (ACM) ocorre sistematicamente antes da alteração do Ducto Venoso.\n\nAlternativa E (INCORRETA): Sugere que a centralização cerebral (ACM) ocorreria antes da alteração na resistência umbilical. Na prática, a vasodilatação cerebral é uma resposta ao insulto que se inicia na placenta (AUMB).",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Vitalidade Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:20.552Z"
+  },
+  {
+    "id": "AJUDA_7438e809-34b1-41d9-8240-b6bcda65029f",
+    "originalId": "7438e809-34b1-41d9-8240-b6bcda65029f",
+    "statement": "Mulher, 81 anos, hipertensa, com diabetes melito tipo 2, dislipidemia e histórico de demência tipo Alzheimer. Não apresenta complicações decorrentes de doenças crônicas. Vive com sua filha, que afere a sua pressão arterial (PA) (Média de 100/60 mmHg) e a glicemia capilar (com médias que não passam os 80 mg/dL) diariamente, sendo a última hemoglobina (Hb) glicada de 6,0%. Em uso contínuo farmacológico de sinvastatina 20 mg, insulina NPH à noite, trazodona 100 mg, a cada 12 horas, mirtazapina 15 mg, furosemida 40 mg pela manhã, Losartana 50 mg de 12 em 12 horas e diazepam 5 mg, à noite. Eventualmente, quando está agitada, a filha oferece 01 comprimido de Quetiapina 50 mg; isso acontece pelo menos 3 vezes na semana. Filha vem à consulta na ESF, solicitando renovação de receituário com os medicamentos listados. A história descrita acima revela caso de polifarmácia com indicação de desprescrição de alguns medicamentos como prevenção quaternária. Quanto às etapas para efetuar o processo de desprescrição, assinale a alternativa que apresenta a sequência correta:\n\nA- Seguimento, apoio e documentação.\nB- Identificação dos medicamentos potencialmente inadequados.\nC- Obtenção da história completa dos medicamentos.\nD- Determinação dos fármacos a serem desprescritos e as prioridades.\nE- Planejamento e início.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A, B, C, D, E.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "C, B, D, E, A.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "E, A, C, B, D.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "C, E, A, D, B.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda um tema fundamental na Geriatria e na Medicina de Família e Comunidade: a desprescrição como estratégia de prevenção quaternária. Em pacientes idosos e frágeis, o acúmulo de medicamentos (polifarmácia) muitas vezes leva a efeitos adversos graves, como quedas, hipotensão e hipoglicemia, que são sugeridos no enunciado (PA 100/60 mmHg e glicemia de 80 mg/dL com HbA1c de 6,0% em uma idosa de 81 anos).\n\nPara realizar a desprescrição de forma segura e sistemática, utiliza-se um protocolo estruturado. A sequência lógica deve seguir a ordem de obtenção de dados, análise crítica, decisão terapêutica, execução e monitoramento.\n\nAnálise da sequência correta (C - B - D - E - A):\n\n1. (C) Obtenção da história completa dos medicamentos: é o primeiro passo essencial. Não se pode desprescrever sem conhecer todos os fármacos em uso, incluindo automedicação, suplementos e medicamentos \"se necessário\" (como a quetiapina e o diazepam citados).\n\n2. (B) Identificação dos medicamentos potencialmente inadequados (MPI): após listar as drogas, o médico utiliza critérios (como os Critérios de Beers ou STOPP/START) para identificar quais fármacos trazem mais riscos que benefícios para aquela paciente específica (ex.: benzodiazepínicos e antipsicóticos em idosos com Alzheimer).\n\n3. (D) Determinação dos fármacos a serem desprescritos e as prioridades: nem tudo pode ser retirado de uma vez. O médico deve priorizar aqueles com maior risco de dano imediato (como a insulina causando hipoglicemia ou o anti-hipertensivo causando hipotensão).\n\n4. (E) Planejamento e início: define-se como a retirada será feita. Muitos medicamentos exigem desmame gradual (*tapering*) para evitar síndromes de abstinência ou efeito rebote (como o diazepam e a trazodona).\n\n5. (A) Seguimento, apoio e documentação: o passo final é monitorar a paciente para observar a melhora clínica ou o surgimento de sintomas, oferecendo suporte à família e registrando os resultados no prontuário.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Apresenta o seguimento (A) como primeira etapa, o que é impossível antes de qualquer intervenção.\n\nAlternativa b) CORRETA. Segue o fluxo clínico lógico: Coleta de dados (C) -> Análise técnica (B) -> Tomada de decisão/Priorização (D) -> Intervenção/Ação (E) -> Monitoramento (A).\n\nAlternativa c) Incorreta. Inicia pelo planejamento e início (E) sem antes ter a história medicamentosa (C) ou identificar os riscos (B).\n\nAlternativa d) Incorreta. Embora comece corretamente pela história (C), pula para o planejamento (E) antes de identificar (B) e priorizar (D) o que deve ser retirado, além de terminar o processo na identificação, o que deixaria o paciente sem o devido monitoramento.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:20.552Z"
+  },
+  {
+    "id": "AJUDA_743d0876-d9b8-42b5-b658-4615bde9bb42",
+    "originalId": "743d0876-d9b8-42b5-b658-4615bde9bb42",
+    "statement": "Paciente de 32 anos, G3P3, consultou por vir apresentando desânimo e cansaço, tendo sido solicitados vários exames para investigação. Informou ter realizado laqueadura tubária há 3 anos e estarem regulares os ciclos menstruais. Referiu ainda ter amamentado o último filho até os 2 anos. Os resultados dos exames estavam normais, exceto a prolactina (PRL de 65 ng/ml; valor de referência: < 25 ng/ml). A ressonância magnética (RM) da hipófise foi compatível com microadenoma hipofisário de 4 mm. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acompanhar o aparecimento de sintomas e dosar PRL em 1 ano.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Acompanhar o aparecimento de sintomas e realizar RM em 1 ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever cabergolina (0,25 mg, 2 vezes/semana) e dosar PRL após 30 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever bromoergocriptina (2,5 mg, 3 vezes/dia) e dosar PRL após 30 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo do microadenoma hipofisário e da hiperprolactinemia. Para resolvê-la, é fundamental correlacionar os achados laboratoriais e de imagem com a clínica da paciente.\n\nAnálise do caso:\nA paciente apresenta uma hiperprolactinemia leve (65 ng/ml) e um microadenoma (lesão menor que 10 mm) de 4 mm identificado na ressonância magnética. O ponto crucial é que a paciente é assintomática do ponto de vista endócrino: seus ciclos menstruais são regulares e ela possui laqueadura tubária (não deseja gestar). O desânimo e cansaço são sintomas inespecíficos e, como os demais exames estavam normais, não podem ser diretamente atribuídos ao microadenoma de 4 mm, que raramente causa repercussões sistêmicas nessa magnitude.\n\nCritérios de Tratamento:\nO tratamento de microprolactinomas com agonistas dopaminérgicos (cabergolina ou bromoergocriptina) só está indicado se houver sintomas decorrentes do excesso de prolactina, como: infertilidade, galactorreia incômoda, irregularidade menstrual (amenorreia ou oligomenorreia) ou redução da libido/densidade mineral óssea. Pacientes assintomáticas com microadenoma e ciclos regulares não precisam de tratamento medicamentoso imediato.\n\nAnálise das alternativas:\n\na) Correta. Como a paciente é assintomática e o adenoma é pequeno (4 mm), a conduta conservadora é a mais indicada. O acompanhamento clínico para observar se surgirão sintomas (como galactorreia ou alteração no ciclo) e a dosagem periódica de prolactina são suficientes para monitorar a estabilidade do quadro.\n\nb) Incorreta. Embora o acompanhamento seja necessário, a prioridade inicial em casos assintomáticos é a vigilância clínica e bioquímica (dosagem de prolactina). A repetição da RM geralmente é reservada para casos onde há aumento progressivo da prolactina ou surgimento de sintomas neurológicos/visuais, o que é improvável em microadenomas tão pequenos.\n\nc) Incorreta. A cabergolina é o medicamento de escolha para o tratamento da hiperprolactinemia, mas não deve ser iniciada nesta paciente, pois ela não possui indicações clínicas para o tratamento (tem ciclos regulares e não deseja engravidar).\n\nd) Incorreta. A bromoergocriptina também é um agonista dopaminérgico utilizado no tratamento, porém, assim como a cabergolina, não está indicada para pacientes assintomáticas com microadenoma. Além disso, a posologia sugerida (3 vezes ao dia) costuma causar muitos efeitos colaterais, sendo a cabergolina preferível pela comodidade posológica e tolerância quando o tratamento é realmente necessário.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Hipófise"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:20.552Z"
+  },
+  {
+    "id": "AJUDA_743fb22b-a77d-495c-84e6-b8fb466d514d",
+    "originalId": "743fb22b-a77d-495c-84e6-b8fb466d514d",
+    "statement": "Mulher, 28 anos, obstipada crônica, sem comorbidades ou antecedentes familiares de doenças suspeitas, apresentou, subitamente, intensa dor na região anal, acompanhada de sangramento que tingiu a água do vaso sanitário, fazendo-a procurar serviço médico de urgência. Paciente encontrava-se estável hemodinamicamente. Foi realizado exame proctológico, que se evidenciou alterado à inspeção; o toque retal não foi realizado pelo alto grau de intensidade da dor referida pela paciente. Com base nas informações do enunciado, a causa mais provável do sangramento da paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "doença hemorroidária trombosada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "neoplasia de cólon necrosada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "angiodisplasia rota.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "diverticulose colônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão descreve um quadro clássico de urgência proctológica em uma paciente jovem, com histórico de obstipação crônica. Para chegar ao diagnóstico correto, devemos analisar os pilares: dor súbita e intensa, sangramento anal e impossibilidade de toque retal devido à dor.\n\nAnálise das alternativas:\n\na) Correta. A doença hemorroidária trombosada (trombose hemorroidária externa) manifesta-se tipicamente após esforço evacuatório (comum em obstipados). Ocorre a formação de um coágulo no interior dos vasos hemorroidários externos, gerando edema, distensão da pele e dor aguda, intensa e constante. A inspeção anal revela um nódulo arroxeado ou azulado, edemaciado e extremamente doloroso ao toque. O sangramento mencionado ocorre quando há necrose por pressão da pele sobre o trombo, levando à sua eliminação espontânea.\n\nb) Incorreta. A neoplasia de cólon é rara em pacientes de 28 anos sem antecedentes familiares. Além disso, o quadro clínico costuma ser insidioso, com alteração do hábito intestinal, perda de peso e sangramento crônico (anemia). Uma neoplasia necrosada poderia sangrar, mas não explicaria a dor anal súbita e intensa descrita, que é característica de patologias do canal anal e não do cólon.\n\nc) Incorreta. A angiodisplasia é uma malformação vascular que causa sangramento gastrointestinal baixo, geralmente indolor e autolimitado. É uma condição típica de pacientes idosos (acima de 60 anos) e não apresenta correlação com dor anal aguda ou alteração na inspeção proctológica.\n\nd) Incorreta. A doença diverticular é a principal causa de sangramento intestinal baixo volumoso em adultos, porém o sangramento diverticular é classicamente indolor. Assim como a angiodisplasia, acomete preferencialmente pacientes mais velhos e o sangue costuma ser misturado às fezes ou em coágulos, sem causar dor anal que impeça o toque retal.\n\nResumo do raciocínio:\nA tríade dor anal súbita + inspeção alterada (nódulo) + impossibilidade de toque retal por dor em paciente jovem e obstipada direciona o diagnóstico para patologia orificial aguda. Entre as opções, apenas a trombose hemorroidária justifica todos os achados. Outra hipótese comum seria a fissura anal aguda, mas esta geralmente apresenta sangramento em pequena quantidade (no papel higiênico) e não costuma gerar uma alteração visual tão evidente na inspeção externa quanto a trombose.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:20.552Z"
+  }
+]

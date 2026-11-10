@@ -1,0 +1,493 @@
+[
+  {
+    "id": "AJUDA_b3c3677e-a849-4172-b8d9-3764b557b2e0",
+    "originalId": "b3c3677e-a849-4172-b8d9-3764b557b2e0",
+    "statement": "Mulher de 52 anos é encaminhada ao centro cirúrgico para ser submetida a histerectomia total por laparoscopia. O procedimento inicia-se às 8 horas da manhã, sendo realizada indução anestésica (anestesia geral) com uso de midazolam, fentanil, rocurônio e propofol. A paciente é posicionada em decúbito dorsal e Trendelenburg, sendo realizada a incisão transumbilical e passagem de trocarte de 12 mm pela técnica de Hasson, com insuflação de CO2. Após a passagem dos trocartes e do manipulador uterino, a paciente evolui com bradicardia de 34 bpm e hipotensão arterial de 60 x 30 mmHg, sendo necessário interromper o procedimento para tratar o quadro. A principal hipótese explicativa para o ocorrido é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "choque anafilático a um dos agentes anestésicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "choque hemorrágico por acidente de punção com perfuração arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "resposta vagal consequente ao estímulo da insuflação do pneumoperitônio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "hipotensão arterial por hipovolemia devido ao intenso jejum pré-operatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda uma complicação comum e importante durante o início de procedimentos laparoscópicos. O ponto fundamental para a resolução é observar a relação temporal entre a ação realizada (insuflação de CO2 e manipulação uterina) e a resposta fisiológica da paciente (bradicardia e hipotensão).\n\nAlternativa a) Incorreta. Embora o choque anafilático aos agentes anestésicos possa ocorrer logo após a indução, ele geralmente se manifesta com taquicardia compensatória, além de sinais cutâneos (urticária, edema) e respiratórios (broncoespasmo). O quadro descrito é marcado por uma bradicardia severa (34 bpm) imediatamente após a insuflação do pneumoperitônio, o que sugere um mecanismo reflexo.\n\nAlternativa b) Incorreta. O choque hemorrágico decorrente de uma perfuração arterial por trocarte ou agulha de Veress apresentaria, classicamente, hipotensão acompanhada de taquicardia reflexa (como tentativa do organismo de manter o débito cardíaco). A presença de bradicardia extrema torna a hipótese de choque hipovolêmico por sangramento agudo muito improvável como causa primária.\n\nAlternativa c) Correta. A insuflação rápida do pneumoperitônio provoca o estiramento do peritônio parietal e a manipulação de vísceras pélvicas estimula fibras do nervo vago. Essa estimulação vagal desencadeia um reflexo parassimpático que resulta em bradicardia súbita, podendo evoluir para assistolia, e hipotensão arterial. Esta é a intercorrência hemodinâmica mais comum no início da laparoscopia. O tratamento imediato consiste na desinsuflação do inventário (retirada do gás), administração de anticolinérgicos (como atropina) e, se necessário, ajuste da velocidade de insuflação posterior.\n\nAlternativa d) Incorreta. O jejum pré-operatório pode causar uma leve hipovolemia, o que tornaria a paciente mais sensível aos efeitos vasodilatadores dos agentes anestésicos da indução (como o propofol). No entanto, a hipovolemia por jejum não explicaria uma bradicardia tão acentuada e súbita sincronizada exatamente com a insuflação do gás e a manipulação uterina.\n\nEm resumo, o quadro de bradicardia e hipotensão logo após a instalação do pneumoperitônio é a descrição clássica do reflexo vagal provocado pela distensão peritoneal.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:10.686Z"
+  },
+  {
+    "id": "AJUDA_b3cbab43-f182-4981-8821-1c5fe165cdd4",
+    "originalId": "b3cbab43-f182-4981-8821-1c5fe165cdd4",
+    "statement": "A respeito da fisiopatologia e dos fatores de risco para pancreatite aguda, analise as assertivas abaixo:\n\nI. A ingestão alcoólica é a segunda causa mais frequente de pancreatite aguda. O risco da doença é reduzido em indivíduos que consomem álcool e também são tabagistas, devido a um efeito anti-inflamatório do tabaco, também observado em outras doenças.\nII. A pancreatite aguda é a complicação mais comum após a realização de colangiopancreatografia retrógrada endoscópica (CPRE), ocorrendo com maior frequência em mulheres e, na maioria dos casos, tendo apresentação clínica branda.\nIII. A principal causa de pancreatite aguda no Ocidente é a litíase biliar. A população mais afetada por pancreatite aguda biliar são mulheres na faixa etária de 50 a 70 anos.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das assertivas:\n\nAssertiva I: Incorreta. A ingestão alcoólica é, de fato, a segunda causa mais frequente de pancreatite aguda (responsável por cerca de 30% dos casos). No entanto, o tabagismo não reduz o risco da doença. Pelo contrário, o fumo é um fator de risco independente que atua de forma sinérgica ao álcool, aumentando a incidência, a gravidade e a probabilidade de progressão para pancreatite crônica.\n\nAssertiva II: Correta. A pancreatite pós-CPRE é a complicação mais prevalente desse procedimento endoscópico, acometendo entre 3% e 10% dos pacientes em geral. O sexo feminino, idade jovem e suspeita de disfunção do esfíncter de Oddi são fatores de risco reconhecidos para o seu desenvolvimento. Na maioria absoluta dos casos (80% a 90%), o quadro clínico é leve e autolimitado.\n\nAssertiva III: Correta. A litíase biliar é a causa mais comum de pancreatite aguda no mundo ocidental (40% a 70% dos casos). Acomete predominantemente mulheres, acompanhando a epidemiologia da colelitíase, com maior incidência entre 50 e 70 anos de idade.\n\nAnálise das alternativas:\n\na) Incorreta. A assertiva I é falsa devido à afirmação sobre o efeito protetor do tabagismo.\nb) Incorreta. A assertiva I é falsa e a assertiva II é verdadeira.\nc) Correta. Apenas as assertivas II e III são verdadeiras.\nd) Incorreta. A assertiva I torna a alternativa errada.\n\nGabarito: Letra c.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:10.687Z"
+  },
+  {
+    "id": "AJUDA_b3cfe26b-d755-4b41-a9f0-80eafa27eb7d",
+    "originalId": "b3cfe26b-d755-4b41-a9f0-80eafa27eb7d",
+    "statement": "Homem de 64 anos, hipertenso, diabético e ex-tabagista, procura a emergência com dor torácica opressiva iniciada há uma hora, irradiada para o braço esquerdo e associada à sudorese. O eletrocardiograma evidencia supradesnivelamento do segmento ST em D2, D3 e aVF, compatível com infarto agudo do miocárdio com supradesnivelamento do segmento ST (IAMCSST). O hospital dispõe de serviço de hemodinâmica para realização de angioplastia primária. Segundo as recomendações atuais, qual medicamento deve ser administrado precocemente, na ausência de contraindicações a todos os pacientes com esse diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ácido acetilsalicílico (AAS).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Digoxina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Furosemida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Varfarina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Amiodarona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão apresenta um quadro clássico de Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAMCSST) de parede inferior (alterações em D2, D3 e aVF). Diante de uma Síndrome Coronariana Aguda (SCA), o objetivo terapêutico imediato é a estabilização da placa aterosclerótica e a interrupção do processo trombótico para restaurar o fluxo sanguíneo.\n\nAnálise das alternativas:\n\na) Ácido acetilsalicílico (AAS): CORRETA. O AAS é o antiagregante plaquetário de escolha e deve ser administrado a todos os pacientes com suspeita de SCA o mais rápido possível (preferencialmente mastigado para acelerar a absorção), a menos que haja contraindicação absoluta (como alergia grave). Ele reduz a mortalidade de forma isolada e é a base do tratamento anti-isquêmico, agindo na inibição irreversível da ciclo-oxigenase 1 (COX-1), impedindo a formação de tromboxano A2.\n\nb) Digoxina: INCORRETA. A digoxina é um digitálico utilizado para o controle da frequência cardíaca na fibrilação atrial ou no manejo da insuficiência cardíaca crônica com fração de ejeção reduzida. No cenário do infarto agudo, ela não tem indicação rotineira e pode aumentar o consumo de oxigênio pelo miocárdio, sendo potencialmente perigosa na fase aguda.\n\nc) Furosemida: INCORRETA. Trata-se de um diurético de alça indicado para casos de congestão pulmonar (insuficiência cardíaca descompensada). Não deve ser administrada de forma rotineira no IAM, especialmente em infartos de parede inferior, onde pode haver acometimento do ventrículo direito. Nesses casos, a redução da pré-carga causada pelo diurético pode levar à hipotensão severa e choque cardiogênico.\n\nd) Varfarina: INCORRETA. A varfarina é um anticoagulante oral antagonista da vitamina K, com início de ação lento (demora dias para atingir o efeito terapêutico). No manejo agudo do IAM, utilizamos anticoagulantes parenterais de ação imediata (como Heparina não fracionada ou Enoxaparina), e não anticoagulantes orais de longo prazo.\n\ne) Amiodarona: INCORRETA. É um antiarrítmico de classe III. Sua utilização no contexto do IAM é reservada apenas para o tratamento de arritmias ventriculares malignas (como taquicardia ventricular sustentada ou fibrilação ventricular) ou para controle de ritmo em certas supraventriculares, não sendo uma medicação de rotina para todos os pacientes.\n\nConclusão: O AAS é a medicação obrigatória, precoce e com maior impacto na sobrevida imediata entre as opções apresentadas.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:10.687Z"
+  },
+  {
+    "id": "AJUDA_b3d2401b-3b86-4b8c-a3bb-e95f3ba2eba1",
+    "originalId": "b3d2401b-3b86-4b8c-a3bb-e95f3ba2eba1",
+    "statement": "Lactente com 1 ano e dez meses apresenta quadro gripal há 24 horas. Ao exame físico, a criança está febril (39,3 °C) e apresenta exantema em tronco. Ela apresentou, há 30 minutos, crise tônico-clônica generalizada com duração de 30 segundos. Avó questiona sobre a necessidade de realização de tomografia computadorizada de crânio. No momento, não há quaisquer alterações ao exame neurológico. Há histórico de que o pai da criança apresentou quadro de convulsão febril na primeira infância. \nA orientação mais correta a ser dada à família é que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "deverá ser realizado exame de imagem caso ocorra novo quadro de febre alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "não há necessidade de realização de exame de imagem, apenas eletroencefalograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "não há necessidade de realização de exames complementares, por se tratar de quadro de convulsão febril simples.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "será realizada tomografia computadorizada de crânio com contraste e eletroencefalograma após o tratamento da infecção viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO quadro descrito é de uma crise febril simples em um lactente de 22 meses (1 ano e 10 meses). Os critérios que definem uma crise febril como simples são: duração menor que 15 minutos (no caso, 30 segundos), caráter generalizado (tonicoclônica generalizada), ausência de recorrência em 24 horas e recuperação rápida do nível de consciência sem déficits neurológicos focais (exame neurológico atual normal). O histórico familiar positivo é um fator de risco comum e reforça a natureza benigna do evento.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A ocorrência de um novo quadro de febre alta não é indicação para realização de exames de imagem (tomografia ou ressonância). A conduta em novos episódios febris deve focar no controle térmico e na investigação do foco infeccioso, não na investigação neurológica por imagem, a menos que surjam sinais de alerta ou a crise se torne complexa.\n\nAlternativa b) Incorreta. O eletroencefalograma (EEG) não está indicado na crise febril simples. Estudos demonstram que o EEG não é capaz de prever a recorrência de crises febris nem o desenvolvimento futuro de epilepsia nessas crianças. Portanto, sua realização não traz benefício clínico e pode gerar ansiedade desnecessária à família.\n\nAlternativa c) Correta. Por preencher todos os critérios de crise febril simples e apresentar exame neurológico normal, a criança não necessita de exames complementares como tomografia, EEG ou punção lombar. A prioridade deve ser a identificação e tratamento do foco da febre (neste caso, o quadro gripal) e a orientação aos pais sobre a benignidade do quadro.\n\nAlternativa d) Incorreta. Não há indicação de tomografia computadorizada de crânio, muito menos com contraste, para uma crise febril simples. Exames de imagem são reservados para casos de suspeita de trauma craniano, hipertensão intracraniana, presença de déficit neurológico focal ou crises febris complexas com caráter focal. O EEG também é dispensável conforme explicado anteriormente.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Convulsão Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:10.687Z"
+  },
+  {
+    "id": "AJUDA_b3d93a1b-6ada-4459-8b51-7b21c5065040",
+    "originalId": "b3d93a1b-6ada-4459-8b51-7b21c5065040",
+    "statement": "A Organização Mundial da Saúde (OMS) lançou em 1974 o Programa Expandido de Imunizações que acaba de completar 50 anos de existência. A figura abaixo, extraída de um artigo científico (Lancet 2024; 403: 2307-16) ilustra o impacto global acumulativo produzido por esse programa sobre desfechos de interesse em saúde pública. Considerando as informações apresentadas e seu conhecimento sobre imunização, assinale a alternativa que melhor as interpreta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comparativamente às demais vacinas, a vacinação contra poliomielite não impactou muito a sobrevida, mas promoveu ganho em anos de vida plenamente saudável ao prevenir sequelas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A prevenção de mortes pela vacinação contra o tétano deve-se, principalmente, à redução na incidência e letalidade do tétano neonatal devido à vacinação das gestantes, mas não do tétano acidental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A vacina tríplice viral não teve uma efetividade uniforme já que a proteção contra o sarampo foi muito superior à proteção observada contra caxumba e rubéola, sequer mencionadas na figura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vacinação contra a tuberculose (BCG) evitou muitas mortes, especialmente, de crianças na primeira infância, devido à elevada proteção conferida contra as formas meningoencefálica e pleural da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a: Correta. Ao observar a imagem, nota-se que no gráfico A (mortes evitadas), a cor verde, que representa a poliomielite, ocupa uma faixa extremamente estreita na base. No entanto, ao olhar para o gráfico C (anos de vida plenamente saudáveis ganhos), a área verde torna-se consideravelmente mais larga e visível. Essa diferença visual demonstra que, embora a poliomielite não seja uma doença com alta letalidade (causa poucas mortes diretas se comparada ao sarampo), ela possui uma alta morbidade. A vacinação, portanto, evita que indivíduos vivam décadas com sequelas motoras graves, resultando em um grande ganho de anos de vida saudáveis.\n\nAlternativa b: Incorreta. O erro da alternativa está em afirmar que a vacinação não impactou o tétano acidental. O Programa Expandido de Imunizações atua tanto na vacinação de gestantes para prevenir o tétano neonatal quanto na vacinação infantil (com a vacina pentavalente/DTP) e reforços em adultos, o que reduziu drasticamente a incidência de todas as formas de tétano, incluindo o acidental.\n\nAlternativa c: Incorreta. O sarampo aparece com maior destaque nos gráficos porque possui uma carga de doença (mortalidade e transmissibilidade) muito superior à da caxumba e da rubéola. A maior redução de desfechos negativos pelo componente sarampo não significa que a vacina seja menos efetiva contra os outros dois vírus; significa apenas que o benefício epidemiológico acumulado é mais visível para o sarampo devido à gravidade natural dessa doença.\n\nAlternativa d: Incorreta. A vacina BCG é amplamente conhecida por conferir proteção elevada contra as formas graves e disseminadas de tuberculose na infância, especificamente a forma meningoencefálica e a forma miliar. Ela apresenta proteção limitada ou nula contra a tuberculose pulmonar e a forma pleural, o que torna a afirmação sobre a proteção pleural medicamente incorreta.\n\nGabarito: Letra A.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/3a31a3582514dadcb59c1537546b1ab4a568ac7c9b4496185d1e42cc4635b2bd.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b3d93a1b-6ada-4459-8b51-7b21c5065040_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:11.093Z"
+  },
+  {
+    "id": "AJUDA_b3db7605-6c90-4d25-b8a2-0862d3ee5de8",
+    "originalId": "b3db7605-6c90-4d25-b8a2-0862d3ee5de8",
+    "statement": "Mulher de 25 anos, G1P0, comparece ao pronto atendimento referindo sangramento vaginal moderado há 2 dias, associado a cólicas em hipogástrio. Relata atraso menstrual de aproximadamente 9 semanas e teste de gravidez positivo há 3 semanas. Ao exame: paciente em bom estado geral, pressão arterial 110x70 mmHg, pulso 88 bpm. Ao exame especular, observa-se sangramento vaginal moderado com coágulos e restos ovulares no canal cervical. O colo encontra-se entreaberto. A ultrassonografia transvaginal evidencia útero contendo material ecogênico heterogêneo no interior da cavidade endometrial, sem saco gestacional identificado. O exame laboratorial mostra hemoglobina 11,5 g/dL e beta-hCG 8.000 mUI/mL. Com base nesses achados, qual é a conduta mais adequada neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expectante, com reavaliação clínica em 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Curetagem uterina instrumental com anestesia geral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Esvaziamento uterino por aspiração manual intrauterina (AMIU) sob anestesia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Internação e uso de ocitocina endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Antibióticoterapia e acompanhamento ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresentado é de um abortamento incompleto. Essa conclusão é baseada no relato de sangramento moderado, na presença de restos ovulares no canal cervical ao exame especular, no colo uterino entreaberto ao toque vaginal e na ultrassonografia demonstrando material heterogêneo dentro do útero (restos ovulares), sem a presença de saco gestacional íntegro.\n\nAlternativa a: Incorreta. A conduta expectante pode ser uma opção em casos selecionados de abortamento espontâneo muito inicial e clinicamente estável. No entanto, para uma paciente com sangramento moderado, restos ovulares já exteriorizados no canal cervical e útero com conteúdo, a conduta ativa de esvaziamento é a mais segura para evitar complicações como hemorragia persistente ou infecção.\n\nAlternativa b: Incorreta. Embora a curetagem uterina instrumental seja uma técnica válida para o esvaziamento uterino, ela é considerada mais invasiva que a AMIU. A curetagem está associada a maiores riscos de perfuração uterina, maior perda sanguínea e maior chance de formação de sinéquias uterinas (Síndrome de Asherman), além de geralmente exigir anestesia geral e ambiente de centro cirúrgico.\n\nAlternativa c: Correta. A Aspiração Manual Intrauterina (AMIU) é o padrão-ouro para o tratamento do abortamento incompleto em gestações com menos de 12 semanas (a paciente tem 9 semanas). É um procedimento mais rápido e seguro, apresentando menores taxas de complicações em comparação à curetagem instrumental. Pode ser realizado sob bloqueio paracervical e sedação, permitindo uma recuperação mais rápida da paciente.\n\nAlternativa d: Incorreta. O uso isolado de ocitocina endovenosa não é eficaz para promover o esvaziamento completo da cavidade uterina no primeiro trimestre. O útero possui poucos receptores para ocitocina nesta fase gestacional (9 semanas), tornando o método ineficiente para resolver um quadro de restos ovulares retidos.\n\nAlternativa e: Incorreta. A antibioticoterapia está indicada para casos de abortamento infectado (ou séptico), o que não é o caso desta paciente, que se apresenta em bom estado geral, com sinais vitais estáveis (normotensa e normocárdica) e sem sinais clínicos de infecção (como febre ou secreção fétida). O acompanhamento puramente ambulatorial sem o esvaziamento do útero seria inadequado diante do sangramento moderado.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:11.093Z"
+  },
+  {
+    "id": "AJUDA_b3de8098-1264-47cd-8e5b-d51a2beee854",
+    "originalId": "b3de8098-1264-47cd-8e5b-d51a2beee854",
+    "statement": "Menino, 8 meses, apresenta desconforto respiratório progressivo. Mãe relata que há 5 dias iniciou congestão nasal hialina acompanhada de tosse e febre não aferida. Nas últimas horas, evoluiu com piora do quadro. Exame físico: frequência respiratória (FR) = 58irpm; FC = 180bpm; saturação periférica de oxigênio (SpO2) = 90%; temperatura axilar = 37,5ºC; hipoativo; nível de consciência diminuído; hipocorado; acianótico; perfusão periférica = 4 segundos; sibilos expiratórios esparsos bilateralmente, roncos de transmissão, tempo expiratório prolongado, tiragem subcostal e batimento de aletas nasais. A conduta imediata que modifica o prognóstico desse paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "oxigenioterapia por máscara não reinalante (fluxo = 10L/min)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "indicar intubação orotraqueal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar nebulização com solução salina hipertônica 3%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "iniciar prova terapêutica com salbutamol inalatório",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico:\nTrata-se de um lactente de 8 meses com quadro sugestivo de Bronquiolite Viral Aguda (BVA), apresentando pródromos virais (congestão, tosse e febre) que evoluíram para desconforto respiratório baixo. O exame físico revela sinais de gravidade extrema: hipoxemia (SpO2 90%), esforço respiratório acentuado (tiragem, batimento de aletas nasais) e sinais claros de choque/má perfusão tecidual (tempo de enchimento capilar de 4 segundos, taquicardia importante e rebaixamento do nível de consciência). \n\nAlternativa (a) Correta:\nA conduta prioritária em qualquer paciente pediátrico com sinais de insuficiência respiratória e choque, conforme os protocolos de suporte avançado de vida (PALS), é a garantia da oxigenação. A oferta de oxigênio em alto fluxo através de máscara não reinalante com reservatório é a medida imediata que visa reverter a hipoxemia e melhorar a oferta de oxigênio aos tecidos (DO2), estabilizando o paciente e prevenindo a parada cardiorrespiratória. É a intervenção inicial que mais impacta o prognóstico imediato.\n\nAlternativa (b) Incorreta:\nA intubação orotraqueal (IOT) é um procedimento de via aérea definitiva que pode ser necessário caso o paciente não responda às medidas de suporte de oxigênio ou apresente apneia/exaustão respiratória. No entanto, ela não é o primeiro passo. Antes de qualquer tentativa de IOT, deve-se realizar a pré-oxigenação com oxigênio a 100% para aumentar a reserva funcional de oxigênio e garantir a segurança do procedimento. Portanto, a máscara de O2 precede a intubação.\n\nAlternativa (c) Incorreta:\nA solução salina hipertônica a 3% é uma medida terapêutica utilizada em alguns protocolos de bronquiolite para facilitar o clearance mucociliar e reduzir o tempo de internação em enfermarias. Ela não possui efeito imediato na estabilização hemodinâmica ou na correção de hipoxemia grave, sendo contraindicada como medida de emergência em pacientes instáveis.\n\nAlternativa (d) Incorreta:\nO uso de broncodilatadores como o salbutamol não é recomendado rotineiramente para o tratamento da bronquiolite viral aguda, pois a obstrução das vias aéreas decorre de edema, necrose celular e excesso de muco, e não de broncoespasmo muscular. Mesmo que houvesse dúvida diagnóstica com asma, a prioridade absoluta diante de um paciente com má perfusão e saturação de 90% continua sendo a oxigenação de alto fluxo antes de qualquer medicação inalatória.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:11.093Z"
+  },
+  {
+    "id": "AJUDA_b3f242d3-2446-4c28-a9e6-868df7bbea01",
+    "originalId": "b3f242d3-2446-4c28-a9e6-868df7bbea01",
+    "statement": "Paciente, sexo masculino, 45 anos de idade, vítima de trauma em colisão de moto com automóvel, deu entrada na urgência com instabilidade hemodinâmica, foi submetido à laparotomia exploradora de emergência, sendo identificado trauma esplênico grave e realizado esplenectomia total. O paciente apresentava também fratura exposta dos membros inferiores, sendo submetido à fixação externa das duas pernas pela ortopedia, para posterior fixação definitiva das fraturas em segundo tempo. O paciente evoluiu com melhora hemodinâmica e sem queixas no pós-operatório. Diante deste caso clínico:\n\nQuanto ao protocolo universal de segurança cirúrgica e o preparo do paciente, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O antibiótico profilático deve ser administrado no momento da incisão cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A lateralidade de procedimento cirúrgico deve ser estabelecida na sala da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A tricotomia deve ser feita na sala cirúrgica, com uso de lâmina estéril de bisturi.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A clorexidina alcoólica é mais eficaz que a solução de iodo povidine na prevenção de infecção.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a) Incorreta. A antibioticoprofilaxia deve ser administrada antes da incisão cirúrgica, e não no momento exato em que ela ocorre. O objetivo é que o antibiótico já tenha atingido níveis terapêuticos nos tecidos antes do primeiro contato com o ambiente. Geralmente, recomenda-se a administração entre 30 e 60 minutos antes da incisão (ou até 120 minutos para drogas como vancomicina ou fluoroquinolonas).\n\nAlternativa b) Incorreta. De acordo com o Protocolo de Cirurgia Segura da Organização Mundial da Saúde (OMS), a demarcação do sítio cirúrgico e a confirmação da lateralidade devem ser realizadas, preferencialmente, antes de o paciente entrar na sala de cirurgia. O ideal é que a marcação seja feita com o paciente ainda lúcido e participante do processo, para evitar erros de localização.\n\nAlternativa c) Incorreta. A tricotomia (remoção de pelos) não deve ser feita de rotina. Quando estritamente necessária por interferir na técnica cirúrgica, deve ser realizada imediatamente antes da cirurgia com o uso de tricotomizadores elétricos. O uso de lâminas de bisturi ou aparelhos de barbear é contraindicado, pois causa microlesões na pele que favorecem a colonização bacteriana e aumentam o risco de infecção do sítio cirúrgico.\n\nAlternativa d) Correta. A clorexidina alcoólica demonstrou superioridade em relação à iodopovidona (PVPI) na antissepsia da pele para a prevenção de infecções do sítio cirúrgico em diversas meta-análises e diretrizes internacionais (como as do CDC). Isso se deve ao fato de a clorexidina ter um início de ação rápido, maior efeito residual (permanece ativa por mais tempo na pele) e não ser inativada por sangue ou fluidos orgânicos de forma tão significativa quanto o iodo.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Perioperatório",
+      "Trauma",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:11.094Z"
+  },
+  {
+    "id": "AJUDA_b3f8d9eb-705a-46d4-9a57-74bb96b0b595",
+    "originalId": "b3f8d9eb-705a-46d4-9a57-74bb96b0b595",
+    "statement": "Qual a alteração na eletroencefalografia característica da síndrome de West?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Espícula-onda generalizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Espícula e multiespícula-onda generalizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipsarritmia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ondas agudas bifásicas seguidas de ondas lentas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Síndrome de West é uma encefalopatia epiléptica do lactente, ocorrendo geralmente entre os 3 e 12 meses de idade. Ela é definida classicamente por uma tríade clínica e eletrográfica: espasmos infantis (contrações musculares súbitas e breves), atraso ou regressão do desenvolvimento neuropsicomotor e um padrão específico no eletroencefalograma (EEG).\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. O padrão de espícula-onda generalizada, particularmente na frequência de 3 Hz, é o achado clássico da epilepsia de ausência. Embora a Síndrome de West envolva descargas generalizadas, elas são muito mais desorganizadas e de maior voltagem do que o padrão rítmico da ausência.\n\nAlternativa b) Incorreta. Complexos de espícula-onda lenta e multiespículas são frequentemente associados à Síndrome de Lennox-Gastaut, que é outra encefalopatia epiléptica grave, muitas vezes ocorrendo em crianças mais velhas. É comum que a Síndrome de West evolua para a Síndrome de Lennox-Gastaut, mas os padrões de EEG para fins de prova são distintos.\n\nAlternativa c) Correta. A hipsarritmia é o marcador eletroencefalográfico patognomônico da Síndrome de West no período de intercrise (entre os espasmos). Ela se caracteriza por uma desorganização completa da atividade elétrica cerebral, com ondas lentas de altíssima amplitude, pontas e ondas agudas que mudam de localização e duração a cada momento, sem qualquer sincronia entre os hemisférios. É o que chamamos de caos elétrico cerebral. Vale ressaltar que, durante o espasmo clínico, o EEG costuma mostrar uma atenuação súbita da voltagem, fenômeno conhecido como eletrodecremento.\n\nAlternativa d) Incorreta. Esta é uma descrição genérica de descargas epileptiformes que podem ocorrer em diversas formas de epilepsia focal ou generalizada, não possuindo a especificidade ou a desorganização necessária para caracterizar a hipsarritmia.\n\nDica para provas: Ao encontrar uma questão sobre Síndrome de West, foque na tríade: Espasmos + Regressão do Desenvolvimento + Hipsarritmia. O tratamento de escolha frequentemente envolve o uso de ACTH ou vigabatrina (especialmente se associada à esclerose tuberosa).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Epilepsias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:11.094Z"
+  },
+  {
+    "id": "AJUDA_b3f9aa2e-64c5-4c60-98db-6a63d931b79f",
+    "originalId": "b3f9aa2e-64c5-4c60-98db-6a63d931b79f",
+    "statement": "A fibrilação atrial na qual o médico e o paciente chegaram à decisão de não tentar o reestabelecimento do ritmo sinusal, independentemente do seu tempo de instalação, é denominada de",
+    "options": [
+      {
+        "id": "A",
+        "text": "fibrilação atrial persistente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fibrilação atrial persistente de longa duração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "fibrilação atrial permanente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "fibrilação atrial crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação da fibrilação atrial (FA) baseia-se na forma de apresentação, duração e na conduta terapêutica adotada. A questão aborda especificamente o cenário em que se decide não mais buscar o ritmo sinusal.\n\nAlternativa (a) Incorreta. A fibrilação atrial persistente é aquela que apresenta duração contínua superior a 7 dias. Nesse caso, a estratégia de controle de ritmo (tentar reverter para o ritmo sinusal) ainda pode ser considerada e aplicada pelo médico.\n\nAlternativa (b) Incorreta. A fibrilação atrial persistente de longa duração é definida quando a arritmia dura de forma contínua por um período igual ou superior a 12 meses, mas ainda existe a decisão clínica de tentar restaurar o ritmo normal através de intervenções como cardioversão ou ablação.\n\nAlternativa (c) Correta. A fibrilação atrial permanente não é definida apenas por um tempo cronológico, mas sim por um consenso entre médico e paciente. Ela ocorre quando se aceita a arritmia e decide-se interromper qualquer tentativa de restabelecimento e manutenção do ritmo sinusal. A partir desse ponto, o foco do tratamento passa a ser exclusivamente o controle da frequência cardíaca e a prevenção de fenômenos tromboembólicos. Se no futuro essa estratégia for revista, a arritmia pode ser reclassificada.\n\nAlternativa (d) Incorreta. O termo crônica era muito utilizado no passado, porém foi substituído nas diretrizes atuais por classificações mais precisas (paroxística, persistente, persistente de longa duração e permanente) para melhor orientar as condutas médicas baseadas em evidências.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:11.094Z"
+  }
+]

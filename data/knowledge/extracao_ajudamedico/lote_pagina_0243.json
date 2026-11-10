@@ -1,0 +1,482 @@
+[
+  {
+    "id": "AJUDA_43d82c15-6ee2-4f39-947d-e8109e17bde9",
+    "originalId": "43d82c15-6ee2-4f39-947d-e8109e17bde9",
+    "statement": "Lactente de 1 ano, em consulta com pediatra apresenta história prévia de 3 episódios de sibilância, com necessidade de procurar pronto atendimento e realizar beta 2 agonista de curta duração. Apresenta também tosse seca pela manhã quase diariamente e tosse desencadeada pelo choro. Investigação dos diversos aparelhos revelou regurgitações frequentes até o 7° mês de vida, com melhora espontânea, e pele ressecada, com lesões pruriginosas em superfícies extensoras e abdômen. Qual é o tratamento de primeira escolha para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Corticosteroide inalatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Inibidor de bomba de prótons.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Salbutamol nas crises.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antileucotrieno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO lactente de 1 ano apresenta um quadro de sibilância recorrente, definido por três ou mais episódios de sibilância. Além disso, apresenta sintomas persistentes entre as crises, como tosse matinal e tosse desencadeada por estímulos não virais (choro). A descrição das lesões de pele (ressecamento e prurido em superfícies extensoras) é clássica de dermatite atópica.\n\nAo aplicarmos o Índice Preditivo de Asma (IPA) modificado, observamos que o paciente possui um critério maior: o diagnóstico médico de dermatite atópica. A presença de sibilância recorrente associada a um critério maior confere a este lactente uma alta probabilidade de que seus sintomas sejam a manifestação inicial de asma atópica.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): De acordo com as diretrizes nacionais e internacionais (como o GINA), o tratamento de manutenção de primeira escolha para crianças com sibilância recorrente e alta probabilidade de asma é o uso de corticosteroide inalatório em doses baixas. O objetivo é controlar a inflamação crônica das vias aéreas, reduzir a frequência das crises e melhorar a qualidade de vida.\n\nAlternativa B (INCORRETA): Embora o paciente tenha tido história de regurgitações, o relato deixa claro que houve melhora espontânea aos 7 meses de vida, caracterizando o refluxo fisiológico do lactente (golfadas). Não há evidências atuais de doença do refluxo gastroesofágico que justifiquem o uso de inibidores de bomba de prótons como tratamento para o quadro respiratório.\n\nAlternativa C (INCORRETA): O salbutamol é um broncodilatador de curta ação indicado apenas para o alívio dos sintomas durante as crises agudas (resgate). O quadro do paciente, com sintomas frequentes e gatilhos claros, exige um tratamento de controle (manutenção) e não apenas medicação sintomática de curto prazo.\n\nAlternativa D (INCORRETA): Os antileucotrienos (como o montelucaste) são uma opção terapêutica para o controle da asma em crianças, mas são considerados medicamentos de segunda linha. Os corticosteroides inalatórios são superiores na redução das exacerbações e são a recomendação inicial preferencial.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:53.694Z"
+  },
+  {
+    "id": "AJUDA_43ee60b3-6307-4664-b3f1-8f1b22a5f078",
+    "originalId": "43ee60b3-6307-4664-b3f1-8f1b22a5f078",
+    "statement": "Analise o texto: \"Jeca Tatu era um pobre caboclo que morava no mato, numa casinha de sapé. Vivia na maior pobreza, em companhia da mulher, muito magra e feia e de vários filhinhos pálidos e tristes... Ele não é assim, ele está assim... Examinando-lhe o sangue assombra em pobreza...\" (Urupês Monteiro Lobato, 1914). Este personagem serviu como referência para a denominação de uma doença que após mais de um século, ainda atinge milhões de pessoas em todo o mundo e é considerado pela Organização Mundial da Saúde, como uma doença tropical negligenciada. Assinale a alternativa que apresenta CORRETAMENTE esta doença:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amebíase",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ancilostomíase",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ascaridíase",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estrongiloidíase",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda um marco da literatura e da saúde pública brasileira: o personagem Jeca Tatu, de Monteiro Lobato. A descrição de indivíduos pálidos, tristes e com sangue pobre remete diretamente à anemia ferropriva grave causada por parasitose intestinal.\n\nAlternativa a) Incorreta. A amebíase é causada pelo protozoário Entamoeba histolytica. Seu quadro clínico principal envolve dor abdominal e diarreia com muco e sangue (disenteria amébica). Embora seja uma doença negligenciada, não é a patologia que define a condição clínica e histórica de Jeca Tatu.\n\nAlternativa b) Correta. A ancilostomíase é a doença associada ao personagem. Ela é causada pelos helmintos Ancylostoma duodenale e Necator americanus. O ciclo biológico desses parasitas envolve a fixação na mucosa do intestino delgado, onde eles utilizam dentes ou placas cortantes para romper capilares e se alimentar do sangue do hospedeiro. Essa espoliação crônica de ferro leva a uma anemia ferropriva acentuada, o que explica a palidez extrema (historicamente chamada de amarelão) e o cansaço crônico do personagem. Monteiro Lobato utilizou essa figura para demonstrar que o problema do trabalhador rural não era a preguiça inata, mas sim uma doença evitável com saneamento e uso de calçados, já que a infecção ocorre pela penetração da larva na pele.\n\nAlternativa c) Incorreta. A ascaridíase, causada pelo Ascaris lumbricoides, é uma das helmintíases mais comuns do mundo. Embora possa causar quadros de desnutrição, dor abdominal e, em casos graves, obstrução intestinal (bolo de áscaris), ela não é a causa clássica da anemia profunda descrita literariamente como a \"pobreza do sangue\" de Jeca Tatu.\n\nAlternativa d) Incorreta. A estrongiloidíase é causada pelo Strongyloides stercoralis. É uma patologia relevante, especialmente pela sua capacidade de autoinfestação e gravidade em pacientes imunossuprimidos, mas não guarda a relação histórica e simbólica com o amarelão descrito na obra Urupês, de 1914.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Parasitoses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:53.694Z"
+  },
+  {
+    "id": "AJUDA_43eff57e-3f59-4f58-a184-2c460cbb508f",
+    "originalId": "43eff57e-3f59-4f58-a184-2c460cbb508f",
+    "statement": "Prevenção clínica é um tema que se discute há um certo tempo, houve uma mudança paradigmática de uma organização de prevenção de base cronológica para uma de base relacional, logo é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Devido visão relacional, definida por médicos e não centrada na doença, Bury, em 1988, levou a uma proposta de utilizar termo prevenção quaternária para definir os cuidados paliativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A redução de complicações, somada à reabilitação, por definição implicam na prevenção primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Continuidade e longitudinalidade são fundamentais para a prática da medicina de família e comunidade, assim, a prevenção é incorporada nos contatos diários.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prevenção primária foi cunhado no fim da década de 1940 por Leavell e Clark, cuja fundamentação teórica é antropologia médica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta e a justificativa para cada opção são apresentadas a seguir:\n\nAlternativa (a) Incorreta. O termo prevenção quaternária foi proposto por Marc Jamoulle em 1986 (e não por Bury em 1988). Além disso, a prevenção quaternária é definida como a detecção de indivíduos em risco de intervenções médicas excessivas para protegê-los de novas incursões médicas inapropriadas e sugerir alternativas eticamente aceitáveis. Embora tenha pontos de contato com os cuidados paliativos no que tange à não-maleficência, ela foca especificamente no combate à iatrogenia e ao sobrediagnóstico.\n\nAlternativa (b) Incorreta. A redução de complicações e a reabilitação são características da prevenção terciária. A prevenção primária atua antes que a doença ocorra, focando no controle de fatores de risco e causas associadas (como vacinação e mudança de hábitos de vida), visando diminuir a incidência da patologia.\n\nAlternativa (c) Correta. Esta alternativa reflete a mudança paradigmática mencionada no enunciado. Na Estratégia de Saúde da Família e na Medicina de Família e Comunidade, a prevenção deixa de ser uma lista de exames baseada estritamente na idade (cronológica) e passa a ser feita de forma oportuna e contínua. Aproveita-se o vínculo (relacional), a longitudinalidade e os diversos encontros clínicos para realizar ações preventivas personalizadas, integrando a prevenção ao cotidiano do cuidado.\n\nAlternativa (d) Incorreta. Hugh Leavell e E. Gurney Clark de fato consolidaram o modelo de História Natural da Doença e os níveis de prevenção nas décadas de 1940 e 1950. No entanto, a fundamentação teórica utilizada por eles foi a epidemiologia e o modelo biomédico da tríade ecológica (agente, hospedeiro e meio ambiente), e não a antropologia médica.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:53.694Z"
+  },
+  {
+    "id": "AJUDA_43f747b0-6483-4839-b5ed-c200e984ea3e",
+    "originalId": "43f747b0-6483-4839-b5ed-c200e984ea3e",
+    "statement": "Menstruações volumosas são uma das formas clínicas do sangramento uterino anormal, distúrbio com alta prevalência na população global, com impacto pessoal, social, profissional e público. Diante das possíveis causas, são reconhecidas todas a seguir, EXCETO",
+    "options": [
+      {
+        "id": "A",
+        "text": "doença de Von Wilebrand.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "leiomioma uterino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "uso de anticoagulante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "endometriose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para a resolução desta questão, devemos utilizar a classificação PALM-COEIN, padronizada pela Federação Internacional de Ginecologia e Obstetrícia (FIGO), que estratifica as causas de Sangramento Uterino Anormal (SUA) em estruturais e não estruturais. O enunciado solicita a alternativa que NÃO é uma causa reconhecida de menstruações volumosas.\n\nAlternativa A - Doença de von Willebrand: Esta alternativa está incorreta como resposta porque a doença de von Willebrand é a coagulopatia hereditária mais comum e está classificada no grupo C (Coagulopatias) do sistema PALM-COEIN. Ela é uma causa clássica de sangramento menstrual excessivo, especialmente em adolescentes ou mulheres com histórico de sangramento desde a menarca.\n\nAlternativa B - Leiomioma uterino: Esta alternativa está incorreta como resposta porque os leiomiomas são tumores benignos do miométrio, classificados no grupo L (Leiomiomas) do sistema PALM-COEIN. Eles são uma das causas estruturais mais frequentes de aumento do volume menstrual, devido ao aumento da superfície endometrial, distorção da cavidade uterina e alteração da contratilidade e vascularização local.\n\nAlternativa C - Uso de anticoagulante: Esta alternativa está incorreta como resposta porque o uso de medicamentos que interferem na cascata de coagulação, como os anticoagulantes orais, é classificado no grupo I (Iatrogenia) do sistema PALM-COEIN. Essas substâncias predispõem diretamente ao aumento do fluxo menstrual por dificultarem a hemostasia endometrial fisiológica.\n\nAlternativa D - Endometriose (Gabarito): Esta é a alternativa correta. A endometriose é definida pela presença de tecido endometrial fora da cavidade uterina. Embora compartilhe sintomas como dor pélvica e dismenorreia com outras patologias uterinas, a endometriose isolada não é causa direta de sangramento uterino volumoso. É comum a confusão com a adenomiose (presença de endométrio no miométrio), esta, sim, uma causa clássica de sangramento volumoso (grupo A do PALM-COEIN). Portanto, a endometriose é o \"intruso\" na lista de causas de hipermenorreia.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Endometriose",
+      "Miomatose Uterina"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:53.694Z"
+  },
+  {
+    "id": "AJUDA_43fa2ae8-0029-4062-a139-164f3f720570",
+    "originalId": "43fa2ae8-0029-4062-a139-164f3f720570",
+    "statement": "\"[...] em sua dimensão de política governamental, deve ser lembrada de fato como direito de todo cidadão ao acesso às esferas de atenção em saúde, desde as ações assistenciais em todos os níveis de complexidade (continuidade da assistência) até as ações preventivas e de promoção da saúde. Para isso requer uma rede de serviços (integração das ações) para viabilizar a, então, atenção integral. Ainda, considera-se também que a atenção integral ao ser humano supera a fragmentação das ações sobre os sujeitos que devem ser observados, respeitando suas dimensões biológicas, subjetivas e sociais\" (HUMANIZASUS, 4 ed. Brasília, 2008). O trecho acima, retirado do documento base para gestores e trabalhadores do SUS, relaciona-se a qual dos princípios do SUS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Universalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Integralidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Equidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Participação da comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O trecho apresentado descreve o princípio da Integralidade, um dos pilares doutrinários do Sistema Único de Saúde (SUS). A questão exige que o candidato identifique qual diretriz se refere ao atendimento completo, que abrange desde a promoção e prevenção até a cura e reabilitação, em todos os níveis de complexidade, além de enxergar o indivíduo de forma holística.\n\nAnálise das alternativas:\n\na) Universalidade: Incorreta. A universalidade refere-se à garantia de que todos os cidadãos, sem qualquer tipo de distinção ou discriminação, tenham direito de acesso aos serviços de saúde. Embora o texto cite o \"direito de todo cidadão ao acesso\", o foco central do enunciado está na abrangência e na qualidade desse cuidado (integralidade), e não apenas no fato de o sistema ser aberto a todos.\n\nb) Integralidade: Correta. Este princípio possui duas dimensões principais descritas no texto. A primeira é a dimensão do sistema/rede, que garante a continuidade da assistência em todos os níveis de complexidade (atenção primária, secundária e terciária) e a articulação entre ações preventivas e curativas. A segunda é a dimensão do indivíduo, que entende o ser humano como um todo indivisível, considerando suas necessidades biológicas, psicológicas e sociais, evitando a fragmentação do cuidado. O enunciado utiliza explicitamente o termo \"atenção integral\" para definir o conceito.\n\nc) Equidade: Incorreta. A equidade fundamenta-se em tratar desigualmente os desiguais para alcançar a justiça social. Significa oferecer mais recursos ou atenção a quem mais precisa, visando reduzir as disparidades em saúde. O texto não aborda a distribuição desigual de recursos com base em necessidades específicas, mas sim a totalidade da assistência.\n\nd) Participação da comunidade: Incorreta. Também conhecida como Controle Social, refere-se à garantia de que a população participe do processo de gestão do SUS por meio dos Conselhos e Conferências de Saúde. O texto foca na assistência e na organização dos serviços, não mencionando os mecanismos de participação popular ou controle social.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:53.694Z"
+  },
+  {
+    "id": "AJUDA_43fc191b-4b22-4a16-bb93-a445c079f0da",
+    "originalId": "43fc191b-4b22-4a16-bb93-a445c079f0da",
+    "statement": "De acordo com a classificação da atresia de esôfago segundo Gross, o tipo D é aquele que apresenta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estenose congênita do esôfago;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Atresia do esôfago sem fístula traqueo-esofágica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Atresia do esôfago com fístula traqueo-esofágica proximal e distal;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Atresia traqueo-esofágica com fístula distal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação de Gross é a mais utilizada mundialmente para descrever as variações anatômicas da atresia de esôfago e das fístulas traqueoesofágicas. Para responder a essa questão, é necessário memorizar a correlação entre a letra (tipo) e a anatomia correspondente:\n\nAlternativa a) Incorreta. A estenose congênita do esôfago refere-se a um estreitamento do lúmen esofágico, mas não a uma interrupção completa (atresia). Ela não faz parte da classificação de Gross para atresia de esôfago.\n\nAlternativa b) Incorreta. A atresia de esôfago sem fístula traqueoesofágica (conhecida como \"atresia pura\") corresponde ao Tipo A de Gross. É a segunda forma mais comum, caracterizada por um grande espaço entre os cotos esofágicos e ausência de ar no abdome ao raio X.\n\nAlternativa c) Correta. O Tipo D de Gross é uma forma rara de apresentação em que existe atresia (interrupção do esôfago) associada a duas fístulas: uma que comunica o coto proximal (superior) com a traqueia e outra que comunica o coto distal (inferior) com a traqueia.\n\nAlternativa d) Incorreta. A atresia de esôfago com fístula distal é o Tipo C de Gross. Esta é a forma mais frequente, ocorrendo em cerca de 85% a 90% dos casos clínicos. Nela, o coto superior é em fundo cego e o coto inferior comunica-se com a traqueia, geralmente próximo à carina.\n\nResumo da Classificação de Gross:\nTipo A: Atresia pura (sem fístula).\nTipo B: Atresia com fístula proximal.\nTipo C: Atresia com fístula distal (mais comum).\nTipo D: Atresia com fístula proximal e distal.\nTipo E: Fístula em H (fístula sem atresia).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:53.694Z"
+  },
+  {
+    "id": "AJUDA_43ffb936-4cad-4105-95e2-4a3136a0c8da",
+    "originalId": "43ffb936-4cad-4105-95e2-4a3136a0c8da",
+    "statement": "A primeira sorologia para sífilis de uma gestante de 23 anos de idade apresentou TPPA positivo e VDRL (venereal disease research laboratory) de 1/64, sendo adequadamente tratada na 12ª semana de gestação. Controles de VDRL revelaram queda dos níveis até 1/4 na 30ª semana de gestação. Com 39 semanas de gestação, evoluiu para parto vaginal, sem intercorrências. A sorologia materna para sífilis, na admissão para o parto, revelou VDRL de 1/32. No RN, o VDRL foi de 1/16 e TPPA (treponema pallidum particle agglutination) reagente. Esse recém-nascido deverá:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar hemograma e radiografia de ossos longos. Se houver alteração de ao menos um desses exames, colher líquor e iniciar tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar hemograma e radiografia de ossos longos, colher líquor e iniciar tratamento com penicilina cristalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Receber alta do berçário sem coleta de exames e realizar VDRL na Unidade Básica de Saúde aos 18 meses de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Receber alta do berçário sem coleta de exames e realizar VDRL na Unidade Básica de Saúde com 1, 2, 4 e 6 meses de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve uma gestante que, apesar de ter sido tratada precocemente (12ª semana) e ter apresentado queda inicial nos títulos de VDRL (de 1/64 para 1/4), apresentou uma elevação significativa no momento do parto (1/32). Um aumento de dois títulos ou mais (neste caso, subiu três diluições: 1/8, 1/16, 1/32) é critério para considerar a gestante como inadequadamente tratada (provável reinfecção ou falha de tratamento). \n\nNo recém-nascido (RN), o VDRL foi de 1/16. Ao comparar com o VDRL materno do parto (1/32), observamos que o título do RN não é maior ou igual a duas diluições acima do materno. Diante de uma mãe inadequadamente tratada, o manejo do RN deve seguir o protocolo do Ministério da Saúde para investigação de sífilis congênita.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) CORRETA: De acordo com as diretrizes vigentes (PCDT de Sífilis), quando a mãe é inadequadamente tratada e o RN apresenta exame físico normal e VDRL menor que o materno (ou não reagente), deve-se realizar a investigação laboratorial e radiológica. Esta investigação inclui hemograma e radiografia de ossos longos. Se houver qualquer alteração clínica ou laboratorial (hemograma ou raio X), a coleta de líquor (LCR) torna-se obrigatória para avaliar neurosífilis, e o tratamento deve ser iniciado com penicilina cristalina ou procaína por 10 dias. Se todos os exames (físico, hemograma e raio X) forem normais, o RN recebe penicilina benzatina em dose única e segue para acompanhamento.\n\nb) INCORRETA: Esta alternativa propõe a coleta de líquor e o início imediato de tratamento com penicilina cristalina para todos, sem estratificar o risco. A coleta de líquor e o tratamento por 10 dias só seriam a conduta inicial direta se o RN apresentasse alteração no exame físico ou se o VDRL do RN fosse pelo menos duas diluições maior que o materno (ex.: se o RN fosse 1/128). No cenário de exame físico normal e VDRL do RN menor que o da mãe, primeiro avaliam-se os exames complementares básicos (sangue e ossos).\n\nc) INCORRETA: Um RN de mãe inadequadamente tratada nunca deve receber alta sem investigação mínima. Além disso, o seguimento apenas aos 18 meses com VDRL é insuficiente e perigoso, pois a sífilis congênita pode causar danos graves e irreversíveis nos primeiros meses de vida. O teste treponêmico (como o TPPA mencionado na alternativa) é que costuma ser realizado após os 18 meses para confirmar o diagnóstico, pois antes disso pode haver transferência de anticorpos maternos (IgG).\n\nd) INCORRETA: Embora o seguimento ambulatorial com VDRL (geralmente nos meses 1, 3, 6, 12 e 18) faça parte do protocolo de acompanhamento, o RN de mãe inadequadamente tratada não pode receber alta do berçário sem a realização dos exames de triagem (hemograma e raio X) e, dependendo do caso, a administração de penicilina ainda na maternidade. A conduta não pode ser puramente expectante neste cenário.\n\nSÍNTESE DA CONDUTA NO RN (MÃE INADEQUADAMENTE TRATADA)\n\n1. Exame físico alterado ou VDRL do RN ≥ 2 diluições em relação ao materno: Investigação completa (incluindo líquor) e tratamento com penicilina cristalina/procaína por 10 dias.\n2. Exame físico normal e VDRL do RN < 2 diluições em relação ao materno: Realizar hemograma e raio X de ossos longos.\n3. Se hemograma ou raio X alterados: Coletar líquor e tratar por 10 dias.\n4. Se todos os exames normais: Penicilina benzatina (dose única) e seguimento ambulatorial.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:53.694Z"
+  },
+  {
+    "id": "AJUDA_44008cd3-5b97-4ddb-b6fa-25b3099f87bf",
+    "originalId": "44008cd3-5b97-4ddb-b6fa-25b3099f87bf",
+    "statement": "Paciente, 24 anos de idade, previamente hígida, busca atendimento médico com queixa de dor pélvica associada a corrimento vaginal de odor fétido, há 5 dias. Relata também dispareunia de profundidade e febre, nos últimos 2 dias. A paciente tem a vida sexual ativa, com múltiplos parceiros e não faz uso regular de preservativo. Ao exame físico, nota-se dor à palpação dos quadrantes inferiores, presença de secreção purulenta no orifício cervical e dor ao toque bimanual.\nEm relação a esse caso, considere as afirmativas a seguir.\n\nI. A citologia oncótica pode ser um método utilizado para a detecção de diversas infecções sexualmente transmissíveis.\nII. O tratamento da doença inflamatória pélvica (DIP) deve ser iniciado precocemente para evitar complicações, como infertilidade e abscessos tubo-ovarianos.\nIII. O quadro clínico apresentado é sugestivo de doença inflamatória pélvica (DIP), uma infecção sexualmente transmissível causada, comumente, pela Chlamydia trachomatis e Neisseria gonorrhoeae.\nIV. Pacientes que apresentam comportamento de risco devem ser testadas para HIV e sífilis, entre outras infecções sexualmente transmissíveis.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descrito apresenta uma paciente jovem com dor pélvica, febre, corrimento cervical purulento e dor à mobilização do colo uterino (toque bimanual). Este conjunto de sinais e sintomas configura o diagnóstico clínico de Doença Inflamatória Pélvica (DIP), uma síndrome clínica decorrente da ascensão de microrganismos do trato genital inferior para o trato genital superior.\n\nANÁLISE DAS AFIRMATIVAS\n\nAfirmativa I (Incorreta): A citologia oncótica (exame de Papanicolaou) tem como objetivo primordial o rastreamento de lesões precursoras do câncer de colo de útero. Embora possa eventualmente sugerir a presença de alguns agentes (como Trichomonas vaginalis ou fungos), ela não é considerada um método diagnóstico nem de rastreio para a maioria das ISTs, como Clamídia e Gonorreia. Para a detecção dessas infecções, os métodos de escolha são os testes de amplificação de ácidos nucleicos (NAAT).\n\nAfirmativa II (Correta): O tratamento da DIP deve ser empírico e imediato diante da suspeita clínica (presença de critérios maiores: dor infra-abdominal, dor à mobilização do colo e dor à palpação anexial). O retardo no início da antibioticoterapia aumenta significativamente o risco de sequelas a longo prazo, como a infertilidade por fator tubário, gravidez ectópica, dor pélvica crônica e a formação de abscessos tubo-ovarianos.\n\nAfirmativa III (Correta): O quadro é patognomônico de DIP. Os principais agentes etiológicos envolvidos são a Neisseria gonorrhoeae e a Chlamydia trachomatis, embora a flora possa ser polimicrobiana (incluindo anaeróbios e bactérias da flora vaginal). O comportamento de risco relatado (múltiplos parceiros e ausência de preservativo) corrobora essa etiologia.\n\nAfirmativa IV (Correta): De acordo com as diretrizes do Ministério da Saúde e protocolos internacionais, a presença de uma IST ou de comportamento de risco é indicação formal para o rastreio de outras infecções, como HIV, Sífilis e Hepatites B e C. As ISTs frequentemente coexistem devido aos mesmos fatores de risco de exposição.\n\nCONCLUSÃO\n\nEstão corretas as afirmativas II, III e IV. Portanto, a alternativa correta é a letra (e).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:53.694Z"
+  },
+  {
+    "id": "AJUDA_440132a2-ab3a-4524-8530-5960148f94e3",
+    "originalId": "440132a2-ab3a-4524-8530-5960148f94e3",
+    "statement": "Uma mulher de 25 anos e o irmão de 64 anos comparecem na UBS com teste ergométrico (TE) com sinais de isquemia induzida por esforço. Eles relatam recente morte do pai por doença coronariana aos 84 anos. A mulher nega sintomas cardiovasculares e informa que o exame foi solicitado porque ela desejava realizar atividade física. O irmão, que é diabético, hipertenso e tabagista, relata que vinha sentindo dor precordial retroesternal em aperto, que piorava com atividade física intensa e melhorava rapidamente quando reduzia o esforço. Diante dessa situação, o médico solicita uma cintilografia miocárdica com TE para ambos. Como o paciente usava betabloqueador e anlodipina em baixas doses, o médico pediu a suspensão das medicações três dias antes de realizar o exame. \n\nApós o exame complementar da mulher ter revelado isquemia, a paciente foi submetida a uma cineangiocoronariografia que mostrou única lesão de 10% no ramo diagonal da descendente anterior. Em relação a essa conduta e ao laudo, é correto afirmar que o último exame foi:",
+    "options": [
+      {
+        "id": "A",
+        "text": "bem solicitado e a paciente tem doença arterial coronariana",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "bem solicitado e a paciente tem pré-doença arterial coronariana",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "mal solicitado e a paciente não tem doença arterial coronariana",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "mal solicitado, pois a paciente teria doença arterial coronariana se tivesse dor precordial típica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A análise desta questão exige o conhecimento sobre a probabilidade pré-teste (PTP) de doença arterial coronariana (DAC) e as indicações corretas de exames de rastreio cardiovascular.\n\nA paciente em questão é uma mulher jovem (25 anos), totalmente assintomática e sem fatores de risco cardiovascular significativos. É importante notar que a morte do pai aos 84 anos não é considerada história familiar de DAC precoce (que seria definida como evento em parente de primeiro grau do sexo masculino antes dos 55 anos ou do sexo feminino antes dos 65 anos). Segundo os critérios de Diamond e Forrester, utilizados para estimar a probabilidade de doença coronariana, essa paciente possui uma probabilidade pré-teste muito baixa (menor que 5%).\n\nDe acordo com o Teorema de Bayes, quando um exame com especificidade imperfeita é aplicado em uma população com baixíssima prevalência da doença, a maioria dos resultados positivos será, na verdade, de falsos-positivos. Por esse motivo, as diretrizes da Sociedade Brasileira de Cardiologia e outras entidades internacionais contraindicam a realização de teste ergométrico ou exames de imagem de estresse para rastreamento de DAC em pacientes jovens, assintomáticos e de baixo risco, mesmo para liberação de atividade física.\n\nAo solicitar o cateterismo (cineangiocoronariografia), que é um exame invasivo e com riscos inerentes, para investigar exames de estresse alterados em uma paciente com esse perfil, o médico incorreu em um erro de conduta (cascata diagnóstica iatrogênica). O achado de uma lesão de 10% em um ramo diagonal é considerado uma irregularidade parietal não obstrutiva e não define doença arterial coronariana do ponto de vista clínico-patológico para justificar isquemia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O exame foi mal solicitado devido à baixíssima probabilidade pré-teste da paciente. Além disso, uma lesão de 10% não caracteriza DAC obstrutiva ou clinicamente relevante.\n\nAlternativa b) Incorreta. Não existe o diagnóstico clínico de pré-doença arterial coronariana que justifique a realização de exames invasivos ou que valide a conduta tomada.\n\nAlternativa c) Correta. A investigação foi mal indicada desde o princípio. O teste ergométrico não deveria ter sido solicitado para uma paciente assintomática de 25 anos. Os resultados positivos na cintilografia e no teste ergométrico foram falsos-positivos, e o cateterismo foi um procedimento desnecessário que confirmou a ausência de doença obstrutiva.\n\nAlternativa d) Incorreta. Embora a dor precordial típica aumentasse a probabilidade pré-teste de DAC, o cateterismo continuaria sendo considerado mal solicitado se o objetivo fosse apenas confirmar uma suspeita baseada em exames de rastreio mal indicados em uma paciente tão jovem. Além disso, o laudo de 10% de obstrução descarta DAC significativa independentemente dos sintomas.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença Arterial Coronariana Estável (DAC Estável)"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:53.694Z"
+  },
+  {
+    "id": "AJUDA_440b0e58-57b9-4f55-9fb8-7633fb50af91",
+    "originalId": "440b0e58-57b9-4f55-9fb8-7633fb50af91",
+    "statement": "Considerando o trecho a seguir, assinale a alternativa que preenche as lacunas abaixo corretamente.\n\nA ecografia obstétrica morfológica de 1º trimestre tem por objetivo principal o rastreio de ________________ e deve ser realizada entre ___________ semanas de gestação. Já a ecografia obstétrica morfológica de 2º trimestre tem por objetivo principal o rastreio de ________________ e deve ser realizada entre ___________ semanas de gestação.",
+    "options": [
+      {
+        "id": "A",
+        "text": "aneuploidias fetais | 11 e 13+6 | malformações fetais | 20 e 23",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "malformações cardíacas fetais | 8 e 11 | síndromes congênitas | 16 e 20",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "defeitos de fechamento do tubo neural | 11 e 14 | risco de pré-eclâmpsia | 18 e 20",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "incompetência istmo-cervical | 8 e 11 | malformações fetais | 16 e 26",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A ecografia morfológica de primeiro trimestre é um exame fundamental, realizado obrigatoriamente no intervalo entre 11 semanas e 13 semanas e 6 dias de gestação. O principal objetivo desta etapa é o rastreio de aneuploidias (alterações cromossômicas, sendo a mais comum a síndrome de Down), utilizando marcadores ultrassonográficos específicos, como a translucência nucal, a presença do osso nasal e o fluxo no ducto venoso.\n\nA ecografia morfológica de segundo trimestre é o exame detalhado da anatomia fetal. O período ideal para sua realização situa-se entre 20 e 24 semanas (o enunciado cita 20 a 23 semanas, o que está tecnicamente correto e dentro da janela de melhor visualização). Nesse estágio, a organogênese está concluída e o tamanho fetal, somado à quantidade de líquido amniótico, permite identificar a maioria das malformações estruturais nos diversos sistemas (nervoso, cardíaco, renal, esquelético, etc.).\n\nAnálise das alternativas:\n\nAlternativa a: CORRETA. Preenche as lacunas com os objetivos e prazos corretos, de acordo com os protocolos da Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) e da Fetal Medicine Foundation. No 1.º trimestre (11 a 13 semanas e 6 dias), foca-se em aneuploidias. No 2.º trimestre (20 a 23/24 semanas), foca-se em malformações.\n\nAlternativa b: INCORRETA. O período de 8 a 11 semanas é precoce demais para o rastreio morfológico, pois o feto ainda não atingiu o desenvolvimento necessário para a medida da translucência nucal (mínimo de 11 semanas).\n\nAlternativa c: INCORRETA. Embora o defeito de fechamento do tubo neural possa ser suspeitado no primeiro trimestre, sua confirmação diagnóstica é clássica do segundo trimestre. O risco de pré-eclâmpsia é avaliado pelo Doppler de artérias uterinas, mas não define o objetivo principal da ecografia \"morfológica\", que é o estudo da forma e estrutura fetal.\n\nAlternativa d: INCORRETA. A incompetência istmocervical é avaliada pela medida do colo uterino via transvaginal, não sendo o objetivo primário da ecografia morfológica fetal. Além disso, as janelas temporais propostas (8 a 11 e 16 a 26) estão em desacordo com os protocolos de rastreio citogenético e anatômico.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:53.694Z"
+  }
+]

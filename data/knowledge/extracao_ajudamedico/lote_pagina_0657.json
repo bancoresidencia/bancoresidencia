@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_b7a45b95-f380-4ce7-bceb-bdd88b246fc1",
+    "originalId": "b7a45b95-f380-4ce7-bceb-bdd88b246fc1",
+    "statement": "Lactente, sexo masculino, com 18 meses, previamen-te hígido, é levado à Unidade de Pronto Atendimento com quadro de diarreia, com fezes líquidas sem muco ou sangue. Além disso, apresenta vômitos e febre há 24 horas. Ao exame físico, o paciente está sonolento, hipotônico, com olhos fundos, mucosas secas e há ausência de lágrimas. O tempo de enchimento capilar é de mais de 4 segundos. Nesse caso, qual tratamen-to inicial deve ser ministrado, segundo o fluxograma mais recente do Ministério da Saúde, de 2023?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solução de reidratação oral de 50 a 100 mL/kg por via oral, por um período de 4 a 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solução de reidratação oral de 50 a 100 mL/kg por gastróclise, por um período de 4 a 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Soro fisiológico a 0,9% 30 mL/kg por via endovenosa em 30 minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Soro fisiológico a 0,9% 20 mL/kg por via endovenosa em 1 hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solução de Ringer-Lactato, 50 mL/kg por via endo-venosa em 1 hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente de 18 meses apresenta sinais clínicos graves: sonolência, hipotonia, olhos fundos e tempo de enchimento capilar (TEC) superior a 4 segundos. Esses achados caracterizam um quadro de desidratação grave ou choque hipovolêmico. De acordo com o fluxograma mais recente do Ministério da Saúde (2023), crianças com esses sinais devem ser tratadas imediatamente conforme o Plano C de reidratação venosa.\n\nPara crianças entre 1 e 5 anos de idade (exceto recém-nascidos), o Plano C é dividido em duas etapas de expansão:\n\n1. Primeira etapa (Expansão rápida): 30 mL/kg de soro fisiológico a 0,9 por cento, por via endovenosa, em 30 minutos.\n2. Segunda etapa (Manutenção e reposição): 70 mL/kg de soro fisiológico a 0,9 por cento ou Ringer-Lactato, por via endovenosa, em 2 horas e 30 minutos.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Esta alternativa descreve o Plano B, indicado para pacientes com desidratação moderada (que aceitam a via oral e não apresentam sinais de choque). O paciente em questão está sonolento e com TEC prolongado, o que contraindica a via oral inicial devido ao risco de aspiração e necessidade de expansão volêmica rápida.\n\nAlternativa B: Incorreta. A gastroclise (sonda nasogástrica) é uma etapa do Plano B, utilizada quando há falha na reidratação oral (vômitos persistentes ou recusa) ou quando o ganho de peso é inadequado após o início do tratamento oral. Não é a conduta inicial para casos de choque ou desidratação grave.\n\nAlternativa C: Correta. Esta alternativa descreve exatamente a primeira etapa (fase de expansão rápida) do Plano C para uma criança com mais de 1 ano de idade (o paciente tem 18 meses), conforme preconizado pelo Ministério da Saúde em 2023. O volume de 30 mL/kg em 30 minutos é o padrão para restaurar a perfusão tecidual nesse grupo etário.\n\nAlternativa D: Incorreta. Embora o volume de 20 mL/kg seja frequentemente citado em protocolos de emergência (como o PALS) para bolus de fluidos, o fluxograma específico do Ministério da Saúde de 2023 para manejo da desidratação estabelece 30 mL/kg em 30 minutos para a fase inicial em maiores de 1 ano.\n\nAlternativa E: Incorreta. Embora o Ringer-Lactato seja uma solução aceitável no Plano C, o volume de 50 mL/kg em 1 hora não corresponde às recomendações vigentes da fase de expansão inicial do Ministério da Saúde para esta faixa etária.\n\nGabarito: Alternativa C.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diarreia",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:16.342Z"
+  },
+  {
+    "id": "AJUDA_b7a61397-fe8f-4937-abd1-15cd4ca240ab",
+    "originalId": "b7a61397-fe8f-4937-abd1-15cd4ca240ab",
+    "statement": "Sobre as diretrizes organizativas do Sistema Único de Saúde (SUS), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A regionalização e a hierarquização são princípios do SUS que determinam a implementação dos serviços hospitalares nas regiões metropolitanas, priorizando os grandes centros urbanos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A descentralização administrativa no SUS é caracterizada pela transferência de responsabilidades exclusivamente para os municípios, excluindo os estados e a União.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A participação social é uma diretriz do SUS que se concretiza por meio de conselhos e conferências de saúde, permitindo o controle social na gestão do sistema.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A integralidade da atenção à saúde no SUS é restrita aos serviços preventivos, sem incluir ações de diagnóstico e tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A universalidade do acesso no SUS prevê atendimento prioritário para pessoas com baixa renda e grupos vulneráveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda as diretrizes e princípios fundamentais do Sistema Único de Saúde (SUS), estabelecidos pela Constituição Federal de 1988 e pelas Leis Orgânicas da Saúde (8.080/1990 e 8.142/1990).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A regionalização e a hierarquização são diretrizes que visam organizar os serviços de saúde em níveis de complexidade crescente (primário, secundário e terciário) dentro de uma área geográfica delimitada (Região de Saúde). O objetivo é descentralizar o atendimento para que ele ocorra o mais próximo possível da moradia do cidadão, e não priorizar ou concentrar os serviços apenas em grandes centros urbanos ou regiões metropolitanas.\n\nAlternativa b: Incorreta. A descentralização administrativa no SUS é definida como descentralização político-administrativa com direção única em cada esfera de governo. Isso significa que as responsabilidades são distribuídas entre a União, os Estados e os Municípios. Embora exista uma ênfase na municipalização (por ser a esfera mais próxima da população), os Estados e a União mantêm funções essenciais de coordenação, financiamento e regulação.\n\nAlternativa c: Correta. A participação da comunidade (ou participação social) é uma diretriz fundamental do SUS, consolidada pela Lei 8.142/1990. Ela é operacionalizada por meio dos Conselhos de Saúde (órgãos permanentes e deliberativos que atuam na fiscalização e controle da execução das políticas) e das Conferências de Saúde (que se reúnem a cada quatro anos para avaliar e propor diretrizes para o sistema).\n\nAlternativa d: Incorreta. A integralidade é o princípio que determina que o sistema deve oferecer um conjunto articulado de ações e serviços, tanto preventivos quanto curativos e reabilitadores. O atendimento deve considerar a pessoa como um todo, abrangendo todos os níveis de complexidade, incluindo diagnóstico e tratamento, e não apenas a prevenção.\n\nAlternativa e: Incorreta. A universalidade é o princípio finalístico que garante que a saúde é um direito de todos e dever do Estado, sem qualquer tipo de barreira ou discriminação (renda, raça, ocupação). A ideia de oferecer tratamento diferenciado ou prioritário para quem mais necessita (grupos vulneráveis) está associada ao princípio da equidade, que busca diminuir as desigualdades sociais.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:16.342Z"
+  },
+  {
+    "id": "AJUDA_b7b24013-23d5-4e1a-be18-ccc42928aeeb",
+    "originalId": "b7b24013-23d5-4e1a-be18-ccc42928aeeb",
+    "statement": "Menino de 2 anos e 4 meses, portador de trissomia do 21, vem para consulta de rotina. Havia perdido a consulta anterior e, por isso, estava há quase um ano sem acompanhamento. A mãe negava queixas, e a criança atingia os marcos de crescimento e desenvolvimento apropriados para a idade e para a trissomia 21. Alimentava-se de forma variada e fazia natação duas vezes na semana. Traz ecocardiograma com descrição de forame oval patente e demais parâmetros dentro da normalidade. Diante do diagnóstico e da puericultura direcionado ao paciente, sua conduta baseada na orientação da Sociedade Brasileira de Pediatria neste momento foi a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar investigação de doença celíaca.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Manter seguimento anual habitual sem solicitações de exames.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhamento para endocrinologista pelo risco de hipotireoidismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar seguimento com a cardiologia diante do diagnóstico de cardiopatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Orientar a família a procurar escolas específicas para crianças portadoras de doenças genéticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo de puericultura específico para crianças com Síndrome de Down (Trissomia 21), seguindo as diretrizes da Sociedade Brasileira de Pediatria (SBP).\n\nAnálise das alternativas:\n\na) Correta. De acordo com as diretrizes da SBP e do Ministério da Saúde, a triagem para doença celíaca em crianças com Síndrome de Down deve ser iniciada a partir dos 2 anos de idade, mesmo em pacientes assintomáticos. Isso se deve à prevalência significativamente maior da doença nessa população (cerca de 5% a 10%) em comparação com a população geral. O rastreio inicial é feito por meio de exames sorológicos, como o anticorpo antitransglutaminase tecidual (tTG-IgA) associado à dosagem de IgA sérica total.\n\nb) Incorreta. O seguimento de uma criança com Síndrome de Down não é o \"habitual\" das demais crianças. Existem protocolos específicos que exigem a solicitação de exames periódicos, como hemograma (risco de doenças hematológicas), função tireoidiana (risco de hipotireoidismo) e o próprio rastreio de doença celíaca.\n\nc) Incorreta. Embora o risco de hipotireoidismo seja muito elevado na Síndrome de Down, a triagem com TSH e T4 livre deve ser realizada anualmente pelo próprio pediatra na atenção primária. O encaminhamento para o endocrinologista só é indicado caso sejam detectadas alterações laboratoriais ou clínicas que justifiquem o acompanhamento especializado.\n\nd) Incorreta. O forame oval patente (FOP) é uma comunicação interatrial pequena que, se isolada e sem repercussão hemodinâmica (como descrito no caso: \"demais parâmetros dentro da normalidade\"), não é considerada uma cardiopatia congênita grave. Muitas vezes é encarada como um achado incidental que não exige seguimento contínuo com cardiologista pediátrico, podendo ser acompanhado pelo pediatra geral.\n\ne) Incorreta. A orientação médica e pedagógica moderna, amparada pela Lei Brasileira de Inclusão, defende que a criança com Síndrome de Down deve ser matriculada em escolas regulares. A inclusão escolar é fundamental para o desenvolvimento social, cognitivo e motor desses pacientes, evitando-se o isolamento em escolas \"específicas\", a menos que haja uma necessidade muito particular e severa de suporte que a escola regular não possa prover.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo",
+      "Doença Celíaca em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:16.342Z"
+  },
+  {
+    "id": "AJUDA_b7b289bd-0a4f-414c-8d56-c6433996b801",
+    "originalId": "b7b289bd-0a4f-414c-8d56-c6433996b801",
+    "statement": "José, 55 anos, hipertenso há 3 anos, em uso regular de medicação, vem para consulta de rotina apresentando PA = 130 x 80 mmHg. Após exame clínico, conclui-se que tem baixo risco cardiovascular.\nNesse caso, a conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "manter a medicação e reforçar a importância de manter a mudança de estilo de vida, pois a PA está dentro da meta;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "retirar a medicação e reforçar a importância de manter a mudança de estilo de vida, pois a PA está dentro da meta;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "modificar a medicação para que o organismo não crie tolerância às medicações atuais, embora a PA esteja dentro da meta;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "reforçar a mudança de estilo de vida, pois a PA está fora da meta;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "modificar a conduta medicamentosa, pois a PA está fora da meta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO paciente José, de 55 anos, possui diagnóstico de hipertensão arterial e está em tratamento medicamentoso. O exame clínico atual mostra uma pressão arterial (PA) de 130 x 80 mmHg e o paciente é classificado como de baixo risco cardiovascular. \n\nDe acordo com as Diretrizes Brasileiras de Hipertensão Arterial, o objetivo do tratamento é reduzir a morbidade e a mortalidade cardiovascular. Para pacientes com risco cardiovascular baixo ou moderado, a meta pressórica recomendada é atingir valores inferiores a 140 x 90 mmHg. Como a PA de José é 130 x 80 mmHg, ele encontra-se dentro da meta terapêutica estabelecida.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Uma vez que o alvo terapêutico foi alcançado (PA < 140/90 mmHg para baixo risco), a conduta médica correta é manter o esquema medicamentoso que se mostrou eficaz. Além disso, as mudanças de estilo de vida (como dieta equilibrada e atividade física) devem ser sempre reforçadas, pois potencializam o efeito dos fármacos e auxiliam no controle de outros fatores de risco.\n\nAlternativa b) Incorreta. A hipertensão arterial é uma doença crônica. A suspensão da medicação em um paciente que atingiu a meta geralmente resulta no retorno dos níveis pressóricos elevados, aumentando o risco de complicações cardiovasculares a longo prazo.\n\nAlternativa c) Incorreta. Não existe evidência científica que sustente a troca de classes de anti-hipertensivos apenas para evitar uma suposta \"tolerância\" do organismo. Se a medicação atual controla a pressão sem causar efeitos colaterais significativos, não há motivo clínico para a troca.\n\nAlternativa d) Incorreta. Esta alternativa está errada ao afirmar que a PA está fora da meta. Para um paciente de baixo risco cardiovascular, o valor de 130 x 80 mmHg é considerado um excelente controle pressórico.\n\nAlternativa e) Incorreta. Não há necessidade de modificar a conduta medicamentosa (seja aumentando a dose ou trocando a droga), pois o objetivo principal do tratamento já foi atingido com a medicação atual. Modificações desnecessárias poderiam causar hipotensão ou novos efeitos colaterais.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:16.342Z"
+  },
+  {
+    "id": "AJUDA_b7bee17a-dee7-4b64-8506-21ab2c9de4f3",
+    "originalId": "b7bee17a-dee7-4b64-8506-21ab2c9de4f3",
+    "statement": "Criança, 8 anos de idade, previamente hígida, apresenta febre alta há 3 dias, cefaleia, exantema, dor abdominal intensa e contínua. No exame físico, encontra-se em bom estado geral, hidratada, com pressão arterial normal, mas com prova do laço positiva. Hemograma revela: hematócrito 42% (valor basal conhecido: 35%), plaquetas 110.000/mm³, leucocitos 3.500/mm³. De acordo com o relato do caso clínico e, segundo as recomendações do Ministério da Saúde para o manejo de dengue, qual é o diagnóstico e a conduta indicados para esta criança?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dengue grupo D, pois trombocitopenia isolada já caracteriza esse diagnóstico pelo potencial de causar hemorragia com indicação de internação em UTI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dengue grupo C, extravasamento plasmático devido ao aumento de 20% do hematócrito, plaquetopenia e dor abdominal indicando a necessidade de internação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dengue grupo B, o tratamento de escolha em crianças é o uso precoce de paracetamol para controle da febre e prevenção de complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dengue grupo A, a prova do laço positiva tem baixa relevância diagnóstica e, isoladamente, é suficiente para confirmar este caso, não sendo necessariamente sinal de sangramento; sem necessidade de internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve uma criança com quadro clínico compatível com dengue. Para definir o manejo correto, devemos seguir o fluxograma de classificação de risco estabelecido pelo Ministério da Saúde.\n\nAnálise dos dados clínicos e laboratoriais:\n\n1. Sinais de Alarme: A paciente apresenta dor abdominal intensa e contínua. Segundo o protocolo do Ministério da Saúde, este é um dos principais sinais de alarme que indicam a progressão para formas mais graves da doença.\n\n2. Extravasamento Plasmático: O hematócrito basal da criança era de 35% e subiu para 42%. Ao calcularmos a variação (42 menos 35, dividido por 35), encontramos um aumento de exatamente 20%. Um aumento igual ou superior a 20% em relação ao valor basal é um critério laboratorial que confirma a hemoconcentração decorrente do extravasamento de plasma.\n\n3. Classificação: A presença de qualquer sinal de alarme classifica o paciente obrigatoriamente no Grupo C.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O Grupo D é reservado para casos com sinais de choque (como hipotensão, pulso fino, extremidades frias), desconforto respiratório grave ou disfunção grave de órgãos. A trombocitopenia (plaquetopenia) isolada, embora presente, não define o Grupo D nem indica, por si só, internação em UTI.\n\nAlternativa B: Correta. A dor abdominal intensa e contínua é um sinal de alarme clássico. O aumento de 20% no hematócrito em relação ao basal confirma o extravasamento plasmático. De acordo com o Ministério da Saúde, pacientes com sinais de alarme são classificados no Grupo C e requerem obrigatoriamente internação hospitalar para hidratação venosa e monitorização constante, visando prevenir a evolução para o choque.\n\nAlternativa C: Incorreta. O Grupo B inclui pacientes que apresentam sangramento de pele (como petéquias) ou prova do laço positiva, mas que NÃO apresentam sinais de alarme. Como esta criança possui dor abdominal (sinal de alarme), ela deve ser classificada no Grupo C. Além disso, o foco do tratamento no Grupo C não é apenas o controle da febre, mas a reposição volêmica vigorosa.\n\nAlternativa D: Incorreta. O Grupo A é destinado a pacientes com dengue sem sinais de alarme, sem sangramentos e sem condições de risco. A prova do laço positiva, isoladamente, já elevaria o paciente para o Grupo B, mas a presença da dor abdominal e da hemoconcentração confirma que se trata de um caso mais grave (Grupo C), que exige cuidados hospitalares.\n\nConclusão: A identificação de um sinal de alarme (dor abdominal) e a comprovação laboratorial de hemoconcentração (aumento de 20% no hematócrito) enquadram o paciente no Grupo C de manejo da dengue, exigindo internação hospitalar.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:16.342Z"
+  },
+  {
+    "id": "AJUDA_b7bf8e1e-86cb-4180-bbe5-b2b44f8e5df8",
+    "originalId": "b7bf8e1e-86cb-4180-bbe5-b2b44f8e5df8",
+    "statement": "Em relação à constipação intestinal, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O polietilenoglicol 3350 ou 4000 é o medicamento de primeira escolha para crianças com ou sem fecaloma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Para lactentes constipados e com fecaloma, deve ser feita a desimpactação com enema fosfatado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A associação com laxante peristáltico é contraindicada em crianças, devido ao risco aumentado de invaginação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O óleo mineral é contraindicado em lactentes, mas pode ser utilizado a partir dos 4 anos, mesmo em pacientes com doenças de base.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) - CORRETA: O polietilenoglicol (PEG) 3350 ou 4000, sem adição de eletrólitos, é atualmente considerado o padrão-ouro e a primeira escolha no tratamento da constipação intestinal funcional em pediatria. Sua recomendação abrange tanto a fase inicial de desimpactação (limpeza do fecaloma) quanto a terapia de manutenção a longo prazo. Ele é preferido por ser um laxante osmótico eficaz, seguro, com excelente palatabilidade e baixo índice de efeitos colaterais.\n\nAlternativa (b) - INCORRETA: O uso de enemas fosfatados é formalmente contraindicado em lactentes e crianças pequenas. A administração desse tipo de solução nessa faixa etária está associada a riscos elevados de toxicidade por fosfato, o que pode desencadear distúrbios hidroeletrolíticos fatais, como hiperfosfatemia extrema, hipocalcemia, hipernatremia e acidose metabólica. Em lactentes, a desimpactação deve ser feita preferencialmente com polietilenoglicol ou supositórios de glicerina.\n\nAlternativa (c) - INCORRETA: Os laxantes estimulantes ou peristálticos, como o bisacodil e o sene, não são contraindicados em pediatria. Eles são ferramentas terapêuticas úteis, geralmente indicadas como terapia de resgate ou de segunda linha quando o uso isolado de laxantes osmóticos não atinge o objetivo esperado. Não existe evidência científica que relacione o uso desses fármacos ao aumento do risco de invaginação intestinal.\n\nAlternativa (d) - INCORRETA: O óleo mineral é contraindicado em lactentes menores de um ano devido ao risco de aspiração pulmonar e consequente pneumonia lipoídica. Entretanto, ele também permanece contraindicado em crianças maiores e adultos que possuam doenças de base que predisponham à aspiração, como neuropatias, distúrbios de deglutição ou refluxo gastroesofágico grave. A alternativa está errada ao sugerir que o uso seria seguro mesmo em pacientes com doenças de base.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Constipação Intestinal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:16.342Z"
+  },
+  {
+    "id": "AJUDA_b7bfeede-89a4-40d1-8809-5946fcd2f8af",
+    "originalId": "b7bfeede-89a4-40d1-8809-5946fcd2f8af",
+    "statement": "Uma paciente de 24 anos, nuligesta, queixa-se de ciclos menstruais irregulares (frequência de 45 a 60 dias) há cerca de um ano. Nega outras comorbidades e não faz uso de medicações. Ao exame físico, apresenta Índice de Massa Corporal (IMC) de 27 e leve hirsutismo em linha alba. Exame ecográfico revela micropolicistose. \nDiante do quadro clínico e da fisiologia do ciclo menstrual, assinale a alternativa que apresenta a principal alteração hormonal esperada que justifica o quadro clínico dessa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução dos níveis de estrogênio total devido à falência ovariana prematura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Elevação persistente dos níveis de progesterona na fase folicular tardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alteração da secreção do GnRH, com maior liberação de LH em relação ao FSH.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Queda abrupta na produção de androgênios pelas células da teca ovariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hiperprolactinemia compensatória decorrente do aumento dos níveis de FSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta o tripé clássico da Síndrome dos Ovários Policísticos (SOP), conforme os Critérios de Rotterdam:\n1. Disfunção ovulatória (oligomenorreia/ciclos de 45 a 60 dias).\n2. Hiperandrogenismo clínico (hirsutismo em linha alba).\n3. Alteração morfológica ultrassonográfica (micropolicistose).\n\nO quadro é reforçado pelo sobrepeso (IMC 27), que frequentemente está associado à resistência insulínica, um pilar fisiopatológico da síndrome.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. A falência ovariana prematura (menopausa precoce) cursa com amenorreia secundária e níveis elevados de gonadotrofinas (FSH e LH), porém com níveis baixíssimos de estrogênio. Na SOP, a paciente geralmente apresenta níveis normais ou até elevados de estrogênio (devido à conversão periférica de androgênios), mas sem a oposição da progesterona.\n\nb) INCORRETA. A progesterona é produzida pelo corpo lúteo após a ovulação. Como a paciente apresenta ciclos anovulatórios ou oligo-ovulatórios, os níveis de progesterona permanecem baixos. Não há elevação de progesterona na fase folicular.\n\nc) CORRETA. A fisiopatologia da SOP envolve um aumento da frequência dos pulsos do hormônio liberador de gonadotrofina (GnRH) pelo hipotálamo. Essa alteração favorece a secreção hipofisária de LH em detrimento do FSH. O excesso de LH estimula as células da teca a produzirem mais androgênios, enquanto o FSH relativamente baixo prejudica a maturação folicular e a atividade da aromatase (que converteria androgênio em estrogênio no folículo), resultando em anovulação e hiperandrogenismo.\n\nd) INCORRETA. O quadro clínico de hirsutismo indica justamente o oposto: um excesso de produção de androgênios pelas células da teca estimuladas pelo LH, e não uma queda.\n\ne) INCORRETA. A hiperprolactinemia é uma causa diagnóstica diferencial de irregularidade menstrual, mas não é causada pelo aumento do FSH. Na verdade, na SOP, os níveis de FSH costumam estar na faixa inferior da normalidade ou baixos em relação ao LH. Além disso, a SOP e a hiperprolactinemia são patologias distintas.\n\nCONCLUSÃO\n\nA alternativa (c) descreve o desequilíbrio neuroendócrino central que sustenta o ambiente hiperandrogênico e anovulatório da SOP, sendo a resposta correta para justificar a fisiopatologia do caso apresentado.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:16.342Z"
+  },
+  {
+    "id": "AJUDA_b7cd8149-d803-4313-b44b-68737e8cc98c",
+    "originalId": "b7cd8149-d803-4313-b44b-68737e8cc98c",
+    "statement": "Paciente do sexo feminino, de 72 anos de idade, com história de hipertensão arterial, diabetes mellitus tipo 2, obesidade grau 2, fibrilação atrial crônica, lombalgia crônica por espondiloartrose e transtorno depressivo crônico. Faz uso regular de dipirona, losartana, insulinas NPH e regular, metformina, sertralina e varfarina, não fuma e ingere cerveja diariamente, mas não sabe precisar a quantidade, ao médico de família e comunidade (MFC). Paciente vem à Unidade de Saúde da Família, onde é seguida há 17 anos, para atendimento eventual. Durante consulta com o MFC informa que, há cerca de 3 meses, após a morte do esposo, vem apresentando, diariamente, tristeza, anedonia, insônia, perda de apetite, sentimento de menos valia, sem esperança de melhora no futuro. Nega sintomas psicóticos. Paciente está morando sozinha, tem apenas uma filha e a relação das duas sempre foi muito conflituosa, com piora nos últimos meses, devido a desentendimentos pela divisão da herança do esposo. Paciente reduziu suas atividades sociais de costume, perdendo contato com amigos e outros familiares. Ao ser questionada pelo MFC, responde que tem vontade de morrer, pois já não vê solução para sua vida. Revela que, há cerca de 20 anos, ingeriu vários medicamentos para tentar tirar a própria vida. Ela relata que pensa em tirar a própria vida tomando grande dosagens de seus medicamentos, de uma só vez. Paciente sente que suas forças para suportar a dor emocional estão se acabando. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar a paciente a um serviço de urgência, se ela estiver acompanhada por alguém de sua confiança e se houver o seu consentimento ou de seu acompanhante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar a paciente a um serviço de urgência, acompanhada por profissionais de saúde ou alguém de sua confiança, independente do consentimento da paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Utilizando-se do vínculo que possui com a paciente, otimizar o tratamento farmacológico da depressão, agendar retorno dentro de um a dois dias e solicitar avaliação da psicóloga da USF.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Preencher o formulário de encaminhamento e orientar a paciente a procurar o Centro de Atenção Psicossocial (CAPS) de referência para atendimento com psiquiatra e equipe multiprofissional, agendando retornos curtos na USF.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso apresenta uma paciente idosa (72 anos) com múltiplos fatores de risco para o suicídio: sexo feminino (tentativas mais frequentes), idade avançada (sucesso na tentativa é mais comum), presença de doenças crônicas e polifarmácia, depressão grave (anedonia, perda de apetite, desesperança), luto recente, isolamento social, conflito familiar e, fundamentalmente, histórico de tentativa prévia e planejamento atual estruturado (tomar grandes doses de seus medicamentos).\n\nEstamos diante de um quadro de alto risco de suicídio imediato. A presença de um plano detalhado, o acesso aos meios (medicamentos de uso contínuo) e a ausência de suporte social efetivo exigem uma intervenção protetiva imediata.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A: INCORRETA. Embora o encaminhamento ao serviço de urgência esteja correto, o erro reside em condicionar a conduta ao consentimento da paciente ou do acompanhante. Em situações de risco iminente de morte ou autoextermínio, o princípio da beneficência e a preservação da vida prevalecem sobre a autonomia. O médico tem o dever ético e legal de intervir para garantir a segurança da paciente, mesmo que ela recuse o encaminhamento no momento.\n\nAlternativa B: CORRETA. Esta é a conduta padrão para casos de alto risco de suicídio. A paciente apresenta ideação suicida ativa com planejamento e meios disponíveis. O encaminhamento para um serviço de urgência (ou hospitalar) deve ser feito de forma assistida, ou seja, acompanhada por profissionais de saúde (ambulância) ou familiares de confiança, para garantir que ela não tente algo no trajeto. A intervenção deve ser realizada independentemente do consentimento da paciente devido ao risco de vida iminente e ao comprometimento de seu discernimento pelo quadro depressivo grave.\n\nAlternativa C: INCORRETA. Esta conduta seria adequada para um risco baixo ou moderado, onde há ideação, mas sem plano estruturado ou meios imediatos. No caso em questão, apenas otimizar a medicação e agendar um retorno em 1 ou 2 dias é extremamente perigoso, pois a paciente já declarou a intenção de utilizar esses mesmos medicamentos para tirar a própria vida. A psicoterapia é fundamental, mas a prioridade imediata é a estabilização e a segurança em ambiente protegido.\n\nAlternativa D: INCORRETA. O CAPS (Centro de Atenção Psicossocial) é um serviço de acompanhamento ambulatorial intensivo, porém não é a porta de entrada para uma emergência psiquiátrica com risco de morte imediato. Orientar a paciente a procurar o CAPS por conta própria ou agendar retornos curtos na Unidade de Saúde da Família (USF) negligencia o perigo atual. A paciente pode não chegar ao CAPS ou tentar o suicídio antes do próximo agendamento.\n\nRESUMO DIDÁTICO\n\nA conduta médica em casos de suicídio é guiada pela estratificação de risco:\n\n1. Risco Baixo: Ideação vaga, sem plano, sem histórico. Conduta: Apoio, acompanhamento ambulatorial próximo e tratamento da causa-base.\n2. Risco Moderado: Ideação persistente, plano vago, mas com fatores de proteção. Conduta: Encaminhamento para especialista, rede de apoio vigilante e remoção de meios.\n3. Risco Alto: Plano estruturado, acesso aos meios, tentativa prévia, desesperança, falta de apoio. Conduta: Encaminhamento imediato para emergência ou internação psiquiátrica, obrigatoriamente assistida, mesmo contra a vontade do paciente (internação involuntária amparada por lei em casos de risco de vida).",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor",
+      "Saúde do Idoso",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:16.342Z"
+  },
+  {
+    "id": "AJUDA_b7d01e4e-ca1d-4ead-a351-b13f9e974eac",
+    "originalId": "b7d01e4e-ca1d-4ead-a351-b13f9e974eac",
+    "statement": "O paciente esplenectomizado deverá receber vacina com cobertura para germes encapsulados. São eles:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Staphylococcus aureus, Escherichia coli e Salmonela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Streptococcus pneumoniae, Haemophilus influenzae tipo b e Neisseria meningitidis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pneumococo, Escherichia coli e Klebsiella.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pneumococo, Salmonela e Klebsiella.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O baço desempenha um papel fundamental na imunidade, sendo o principal local de filtração de patógenos da corrente sanguínea. Sua função é especialmente crítica na remoção de bactérias encapsuladas. Esses microrganismos possuem uma cápsula polissacarídica que os protege da fagocitose direta, exigindo a opsonização (marcação por anticorpos e sistema complemento) para serem destruídos. Os macrófagos da zona marginal do baço são os especialistas em identificar e retirar esses agentes opsonizados da circulação.\n\nNa ausência do baço (asplenia anatômica por cirurgia ou funcional, como na anemia falciforme), o paciente fica vulnerável à Infecção Fulminante Pós-Esplenectomia (conhecida pela sigla OPSI — Overwhelming Post-Splenectomy Infection), uma condição de evolução rápida e alta mortalidade. Por esse motivo, o protocolo de imunização para esses pacientes deve cobrir obrigatoriamente os três principais patógenos encapsulados.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O Staphylococcus aureus não é um germe encapsulado clássico que dependa primordialmente do baço para sua depuração. A Salmonella pode causar complicações em pacientes com anemia falciforme (osteomielite), mas não é o foco principal da vacinação obrigatória pós-esplenectomia, conforme as diretrizes de imunização.\n\nAlternativa b) Correta. Esta alternativa lista a tríade clássica de bactérias encapsuladas que representam o maior risco para o paciente asplênico: Streptococcus pneumoniae (pneumococo), responsável pela maioria dos casos de sepse grave; Haemophilus influenzae tipo b (Hib); e Neisseria meningitidis (meningococo). A proteção vacinal contra esses três agentes é mandatória.\n\nAlternativa c) Incorreta. O pneumococo está correto; porém, Escherichia coli e Klebsiella, embora possam ter cápsulas, não são os alvos das vacinas específicas recomendadas rotineiramente para a prevenção da sepse fulminante pós-esplenectomia.\n\nAlternativa d) Incorreta. Semelhante à alternativa anterior, apenas o pneumococo está corretamente inserido no contexto de imunização profilática padrão para pacientes esplenectomizados. Salmonella e Klebsiella não fazem parte do esquema vacinal específico para essa condição.\n\nGabarito: Letra B.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:16.342Z"
+  },
+  {
+    "id": "AJUDA_b7d50ec0-9cab-47d0-95d3-69420427fd4c",
+    "originalId": "b7d50ec0-9cab-47d0-95d3-69420427fd4c",
+    "statement": "Uma gestante de 32 anos de idade, G1PO, com 31 semanas de gestação, apresentou PA = 152 mmHg x 98 mmHg em dois momentos distintos, sem proteinúria. Ao exame, verificou-se boa vitalidade fetal, sem sintomas. Exames laboratoriais e de imagem: hemograma e enzimas hepáticas normais; ácido úrico normal; doppler de artérias uterinas com incisura bilateral. Assinale a alternativa que indica a conduta ideal para essa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Controle ambulatorial com anti-hipertensivos e vigilância fetal seriada",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Internação imediata por risco iminente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso de sulfato de magnésio profilático até o parto",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realização de parto imediato",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente de 32 anos apresenta um quadro compatível com Hipertensão Gestacional. O diagnóstico é firmado pela presença de níveis pressóricos elevados (entre 140/90 e 159/109 mmHg) detectados após a 20ª semana de gestação em uma paciente previamente normotensa, sem a presença de proteinúria ou sinais de disfunção de órgãos-alvo (sintomas clínicos, alterações de enzimas hepáticas ou plaquetopenia). A presença de incisura bilateral nas artérias uterinas ao Doppler sinaliza uma falha na invasão trofoblástica e indica um risco aumentado para o desenvolvimento futuro de pré-eclâmpsia ou restrição de crescimento fetal, mas no momento não altera a classificação de gravidade ou a necessidade de parto imediato.\n\nAlternativa a) Correta. Por se tratar de uma gestação pré-termo (31 semanas) com hipertensão sem sinais de gravidade e vitalidade fetal preservada, a conduta é conservadora. O objetivo é prolongar a gestação para evitar as complicações da prematuridade, mantendo um controle rigoroso da pressão arterial e uma vigilância fetal seriada para detectar precocemente qualquer sinal de descompensação materna ou sofrimento fetal. O acompanhamento ambulatorial é seguro nestas condições.\n\nAlternativa b) Incorreta. A internação imediata por risco iminente é reservada para casos de pré-eclâmpsia grave, crise hipertensiva (pressão arterial maior ou igual a 160/110 mmHg) ou presença de sinais de iminência de eclâmpsia (cefaleia, alterações visuais, dor epigástrica). A paciente em questão está assintomática e com níveis pressóricos controlados abaixo do limite de gravidade.\n\nAlternativa c) Incorreta. O uso de sulfato de magnésio tem como indicação principal a prevenção e o tratamento de crises convulsivas na eclâmpsia. Ele deve ser utilizado apenas em casos de pré-eclâmpsia com sinais de gravidade. Não há indicação de seu uso em casos de hipertensão gestacional leve ou pré-eclâmpsia sem critérios de gravidade.\n\nAlternativa d) Incorreta. A interrupção da gestação com 31 semanas traria riscos severos de morbimortalidade neonatal devido à prematuridade extrema. O parto só seria indicado nesta idade gestacional se houvesse deterioração clínica materna (como síndrome HELLP ou eclâmpsia) ou sinais de perda de vitalidade fetal aguda, o que não é o caso, já que os exames laboratoriais estão normais e o feto apresenta boa vitalidade. Em casos de hipertensão gestacional leve, o parto é geralmente programado para as 37 semanas.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:16.342Z"
+  }
+]

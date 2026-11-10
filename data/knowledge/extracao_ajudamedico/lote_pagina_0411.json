@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_72384c66-c578-4105-9e21-b2fa75628363",
+    "originalId": "72384c66-c578-4105-9e21-b2fa75628363",
+    "statement": "Qual a idade recomendada para introdução de alimentos complementares em lactentes segundo diretrizes pediátricas atuais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "4 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "6 meses",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "9 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "12 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A idade recomendada para o início da introdução de alimentos complementares é aos 6 meses de vida. Essa diretriz é estabelecida pela Organização Mundial da Saúde (OMS), pelo Ministério da Saúde e pela Sociedade Brasileira de Pediatria (SBP). O objetivo é garantir o aleitamento materno exclusivo até os seis meses, período em que o leite humano supre integralmente as necessidades nutricionais e hídricas do lactente, e, a partir daí, iniciar a oferta de alimentos saudáveis, mantendo o leite materno até os 2 anos ou mais.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Aos 2 meses, o sistema digestório e a função renal são imaturos para processar alimentos diferentes do leite. A introdução precoce está associada ao aumento da morbimortalidade infantil, ao maior risco de diarreia, doenças respiratórias, alergias e ao prejuízo na absorção de nutrientes do leite materno.\n\nAlternativa b: Incorreta. Embora no passado algumas condutas considerassem os 4 meses para crianças não amamentadas ao seio, a recomendação atual de saúde pública e para fins de provas de residência é a marca dos 6 meses para todos os lactentes. Antecipar a introdução alimentar encurta o período de proteção imunológica conferido pelo leite materno e não traz benefícios nutricionais.\n\nAlternativa c: Correta. Aos 6 meses, o lactente atinge a maturidade fisiológica e neurológica necessária para a alimentação complementar. Nessa idade, o bebê geralmente apresenta sinais de prontidão, como o controle do tronco (conseguir sentar com o mínimo de apoio) e a diminuição do reflexo de protrusão da língua, o que facilita a deglutição de alimentos em consistência pastosa.\n\nAlternativa d: Incorreta. A introdução aos 9 meses é considerada tardia. A partir do sexto mês, as reservas de ferro do bebê começam a declinar e as necessidades de micronutrientes, especialmente ferro e zinco, aumentam. O leite materno isolado deixa de suprir a demanda energética total, o que pode levar a deficiências nutricionais e à anemia ferropriva, além de dificultar a aceitação de novos sabores e texturas.\n\nAlternativa e: Incorreta. Aos 12 meses, a criança já deve estar adaptada à dieta da família. Retardar o início da introdução alimentar até um ano de idade causaria graves prejuízos ao crescimento e desnutrição, além de comprometer o desenvolvimento das funções orofaciais e das habilidades motoras ligadas à alimentação.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:24.912Z"
+  },
+  {
+    "id": "AJUDA_72465e54-a2c8-44b1-944c-794a61d4f5be",
+    "originalId": "72465e54-a2c8-44b1-944c-794a61d4f5be",
+    "statement": "Dálton, 4 anos, há 5 dias voltou de uma viagem a uma fazenda com diarreia líquida. Evoluiu com redução do volume urinário, dor abdominal difusa e algum edema ocular. Hoje apresentou sangue em uma das evacuações e \"manchas avermelhadas\" não pruriginosas em nádegas e membros inferiores. No momento, apresenta-se em regular estado geral, prostrado e subfebril (temperatura: 37 °C). Pressão arterial 125 x 80 mmHg, FC 110 bpm, FR 24 ipm. Presença de petéquias e equimoses em membros inferiores e edema nas pernas e pés. Abdome doloroso à palpação difusa, sem massas palpáveis. Em relação à investigação laboratorial, espera-se encontrar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Testes de coagulação alterados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coprocultura positiva para Entamoeba histolytica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Presença de esquizócitos em sangue periférico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ASLO positiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das anteriores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico para a Síndrome Hemolítico-Urêmica (SHU), que é a causa mais comum de insuficiência renal aguda em crianças. O diagnóstico baseia-se na tríade: anemia hemolítica microangiopática, trombocitopenia e insuficiência renal aguda. O caso apresenta o pródromo típico de diarreia (frequentemente associada à bactéria E. coli produtora de toxina Shiga), seguido de oligúria (redução do volume urinário), edema, hipertensão (125 x 80 mmHg é elevado para 4 anos) e manifestações hemorrágicas (petéquias e equimoses) devido à queda das plaquetas.\n\nAnálise das alternativas:\n\na) Testes de coagulação alterados: Incorreto. Na SHU, tipicamente o Tempo de Protrombina (TP) e o Tempo de Tromboplastina Parcial Ativada (TTPa) estão normais. Isso ajuda a diferenciar a SHU da Coagulação Intravascular Disseminada (CIVD), onde os testes de coagulação estariam alargados. O problema na SHU é o consumo de plaquetas nos microtrombos, não uma deficiência dos fatores de coagulação.\n\nb) Coprocultura positiva para Entamoeba histolytica: Incorreto. Embora a amebíase possa causar diarreia com sangue (disenteria), ela não evolui com a tríade de hemólise, trombocitopenia e insuficiência renal aguda. O agente etiológico mais comum da SHU pós-diarreia é a Escherichia coli (principalmente o sorotipo O157:H7).\n\nc) Presença de esquizócitos em sangue periférico: Correto. Os esquizócitos são fragmentos de hemácias resultantes da destruição mecânica das células vermelhas ao passarem por microvasos parcialmente obstruídos por trombos de plaquetas e fibrina (hemólise microangiopática). Sua presença no esfregaço de sangue periférico é um achado fundamental para o diagnóstico de SHU.\n\nd) ASLO positiva: Incorreto. A antiestreptolisina O (ASLO) é um marcador de infecção recente por estreptococo do grupo A e é utilizada no diagnóstico da Glomerulonefrite Difusa Aguda (GNPE). Embora a GNPE também curse com hipertensão, edema e hematúria, ela não apresenta o pródromo de diarreia nem a anemia hemolítica com trombocitopenia características deste caso.\n\ne) Nenhuma das anteriores: Incorreto, pois a alternativa (c) descreve um achado laboratorial esperado para a patologia em questão.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Anemias",
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:24.912Z"
+  },
+  {
+    "id": "AJUDA_72513c6d-5af0-40c1-b0f7-16373f681296",
+    "originalId": "72513c6d-5af0-40c1-b0f7-16373f681296",
+    "statement": "Paciente gestante de 32 semanas chega ao pré natal com resultado de ultrassonografia mostrando peso fetal no percentil 2. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gravidez prolongada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "doença hemolítica Perinatal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "gestação normal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Crescimento Intrauterino Restrito",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Diabetes Gestacional",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO:\n\nO achado ultrassonográfico de um peso fetal estimado no percentil 2 às 32 semanas de gestação é um sinal clássico de desvio do crescimento fetal. Na prática obstétrica, utiliza-se o percentil 10 como ponto de corte para definir o feto Pequeno para a Idade Gestacional (PIG). No entanto, quando o peso encontra-se abaixo do percentil 3 (como é o caso do percentil 2 citado na questão), o risco de morbimortalidade perinatal aumenta significativamente, sendo um critério diagnóstico isolado muito forte para o Crescimento Intrauterino Restrito (CIUR).\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\nA) INCORRETA. A gravidez prolongada, também chamada de pós-termo, é aquela que atinge ou ultrapassa as 42 semanas de gestação. A paciente do caso está com apenas 32 semanas, caracterizando uma gestação pré-termo.\n\nB) INCORRETA. A doença hemolítica perinatal (geralmente por incompatibilidade Rh) manifesta-se tipicamente com anemia fetal, aumento da velocidade do pico sistólico na artéria cerebral média, hepatosplenomegalia e, em casos graves, hidropisia fetal (edema generalizado). Não tem como característica primária a redução isolada do percentil de peso para níveis tão baixos sem outros achados.\n\nC) INCORRETA. Uma gestação é considerada de crescimento normal quando o feto apresenta peso estimado entre o percentil 10 e o percentil 90 para a sua idade gestacional. O percentil 2 está significativamente abaixo da curva de normalidade.\n\nD) CORRETA. O Crescimento Intrauterino Restrito (CIUR) ocorre quando o feto não consegue atingir seu potencial genético de crescimento devido a fatores maternos, fetais ou, mais comumente, placentários. O diagnóstico é dado quando o peso fetal estimado está abaixo do percentil 10, associado a alterações no Doppler, ou, de forma diagnóstica direta, quando o peso está abaixo do percentil 3, como evidenciado no enunciado (percentil 2).\n\nE) INCORRETA. O diabetes gestacional está classicamente associado à macrossomia fetal (feto com peso acima do percentil 90 ou acima de 4.000 g), devido ao excesso de glicose materna que atravessa a placenta e gera hiperinsulinismo fetal (hormônio anabólico). Embora casos graves de diabetes com vasculopatia possam causar restrição, a associação padrão da doença em provas de residência é com o excesso de peso.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Restrição de Crescimento Fetal e Óbito Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:24.912Z"
+  },
+  {
+    "id": "AJUDA_7252e585-044a-49b7-b883-308e19d57243",
+    "originalId": "7252e585-044a-49b7-b883-308e19d57243",
+    "statement": "Um pesquisador tem como objetivo identificar a ocorrência de neoplasia maligna em pacientes diretamente expostos e contaminados no acidente com Césio-137, ocorrido em Goiânia em 1987, e compará-la com a ocorrência na população não exposta. Para isso, o estudo analisa os casos de neoplasia maligna diagnosticados no período entre 1988 e 2017. Qual o tipo de delineamento e a medida de frequência para esse estudo, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estudo de coorte e incidência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estudo ecológico e incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estudo transversal e prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estudo de casos e prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO ESTUDO\n\nO enunciado descreve uma pesquisa que seleciona dois grupos de indivíduos com base no status de exposição: um grupo exposto ao Césio-137 e um grupo não exposto (controle). Esses grupos são acompanhados ao longo de um período determinado (de 1988 a 2017) para observar o surgimento de um desfecho (neoplasia maligna).\n\nDELINEAMENTO: ESTUDO DE COORTE\n\nSempre que o pesquisador parte da causa (exposição) em direção ao efeito (doença) ao longo do tempo, estamos diante de um estudo de coorte. Este delineamento permite estabelecer uma sequência temporal clara entre o fator de risco e o surgimento da patologia, sendo ideal para avaliar a história natural de uma exposição rara, como o acidente radiológico citado. Mesmo que o pesquisador analise registros passados, o sentido da análise é longitudinal (da exposição para o desfecho), caracterizando uma coorte (que pode ser prospectiva ou retrospectiva/histórica).\n\nMEDIDA DE FREQUÊNCIA: INCIDÊNCIA\n\nA incidência refere-se ao número de casos novos que surgem em uma população inicialmente saudável (em relação ao desfecho estudado) durante um intervalo de tempo. Como o estudo monitora a ocorrência de neoplasias ao longo de quase 30 anos em pessoas que foram contaminadas, ele está contabilizando novos eventos, o que define a medida de incidência.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Correta): O estudo é de coorte porque acompanha grupos expostos e não expostos para observar o desfecho. A medida é a incidência porque contabiliza os casos novos diagnosticados no período de seguimento.\n\nAlternativa B (Incorreta): O estudo ecológico utiliza dados agregados de populações (como estatísticas de uma cidade inteira) e não dados individuais de pacientes específicos expostos, como ocorre no caso descrito.\n\nAlternativa C (Incorreta): O estudo transversal é pontual, como uma fotografia de um momento específico, não permitindo o acompanhamento ao longo dos anos (1988 a 2017). A prevalência é a medida típica do estudo transversal e indica quantos casos existem em um exato momento, não quantos casos novos surgiram no período.\n\nAlternativa D (Incorreta): O termo estudo de casos geralmente se refere a relatos descritivos de pacientes, sem grupo comparativo. Se a alternativa pretendia dizer caso-controle, também estaria incorreta, pois o caso-controle parte dos doentes (quem já tem neoplasia) para investigar o passado, enquanto o estudo proposto parte da exposição (Césio-137). A prevalência também não se aplica ao acompanhamento de novos casos.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:24.912Z"
+  },
+  {
+    "id": "AJUDA_72584461-5a00-4de5-93a5-475332db3fca",
+    "originalId": "72584461-5a00-4de5-93a5-475332db3fca",
+    "statement": "Gestante G4P2A1, com duas cesarianas prévias, 35 semanas e 4 dias, apresenta segundo episódio de sangramento vaginal indolor, moderado, hemodinamicamente estável. Ultrassonografia evidencia placenta prévia centro-total.\n\nConsiderando evidências atuais, a conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alta hospitalar com orientação de retorno em caso de novo sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Corticoterapia antenatal e programação de cesariana eletiva entre 36–37 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cesariana imediata devido ao risco iminente de acretismo placentário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indução do parto com ocitocina sob vigilância intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Amniocentese para maturidade pulmonar antes de decidir via de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO quadro descreve uma gestante com 35 semanas e 4 dias, apresentando placenta prévia centro-total e um segundo episódio de sangramento vaginal moderado, porém com estabilidade hemodinâmica. O histórico de duas cesarianas prévias é um fator de alerta importante, pois aumenta significativamente o risco de espectro de acretismo placentário.\n\nPOR QUE A ALTERNATIVA B ESTÁ CORRETA?\n\nEm casos de placenta prévia sem complicações agudas (sangramento controlado e estabilidade materna e fetal), a recomendação das principais diretrizes obstétricas é o parto planejado entre 36 semanas e 0 dias e 37 semanas e 6 dias. Como a paciente encontra-se com 35 semanas e 4 dias, a administração de corticoterapia antenatal (como a betametasona) é indicada para reduzir o risco de síndrome do desconforto respiratório e outras morbidades neonatais, uma vez que o parto ocorrerá no período pré-termo tardio. A programação da cesariana eletiva logo após completar a maturidade ou atingir as 36-37 semanas visa evitar que a paciente entre em trabalho de parto espontâneo ou apresente um novo episódio de sangramento grave.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa a: A alta hospitalar é contraindicada neste cenário. Trata-se de uma placenta prévia centro-total com episódios recorrentes de sangramento e proximidade do termo. O risco de uma hemorragia profusa e súbita é elevado, exigindo vigilância hospitalar ou interrupção programada em curto prazo.\n\nAlternativa c: A cesariana imediata estaria indicada apenas se houvesse instabilidade hemodinâmica materna, sangramento genital intenso/incoercível ou sinais de sofrimento fetal. Como a paciente está estável, prefere-se aguardar o tempo da corticoterapia e realizar um parto planejado, o que é mais seguro inclusive para o manejo de um possível acretismo placentário.\n\nAlternativa d: A placenta prévia centro-total é uma contraindicação absoluta ao parto vaginal. O uso de ocitocina para indução do parto causaria descolamento da placenta, hemorragia materna massiva e risco iminente de morte materna e fetal.\n\nAlternativa e: A realização de amniocentese para avaliar maturidade pulmonar caiu em desuso na obstetrícia moderna. Atualmente, a decisão do momento do parto baseia-se na idade gestacional e no quadro clínico. Se o parto é indicado antes das 37 semanas, faz-se o ciclo de corticoide sem a necessidade de testar a maturidade do líquido amniótico.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:24.912Z"
+  },
+  {
+    "id": "AJUDA_7258d9a2-c97b-446c-bd94-f38184d7cc5e",
+    "originalId": "7258d9a2-c97b-446c-bd94-f38184d7cc5e",
+    "statement": "A Síndrome de Fitz-Hugh-Curtis",
+    "options": [
+      {
+        "id": "A",
+        "text": "acomete, em média, 30% das pacientes com DIP (doença inflamatória pélvica) e está muito associada ao Mycoplasma hominis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "apresenta envolvimento leve do parênquima hepático, mas, em casos graves, pode evoluir para insuficiência do órgão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "traduz-se clinicamente por quadro de dor aguda em hipocôndrio direito, o que leva à confusão diagnóstica com colecistite aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "apresenta provas de função hepática alteradas essenciais para o diagnóstico e que costumam predizer a gravidade do quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Síndrome de Fitz-Hugh-Curtis (FHC) é uma complicação da Doença Inflamatória Pélvica (DIP) caracterizada por uma peri-hepatite crônica ou aguda. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A (Incorreta): A incidência da síndrome em pacientes com DIP é geralmente estimada entre 5% e 15%, sendo o valor de 30% considerado exagerado na literatura médica atual. Além disso, embora diversos patógenos possam estar envolvidos, os agentes etiológicos clássicos e mais frequentemente associados são a *Chlamydia trachomatis* e a *Neisseria gonorrhoeae*, e não o *Mycoplasma hominis*.\n\nAlternativa B (Incorreta): A fisiopatologia da síndrome envolve a inflamação da cápsula de Glisson (cápsula que reveste o fígado) e do peritônio parietal adjacente, mas não há acometimento do parênquima hepático propriamente dito. Por ser uma inflamação superficial, a arquitetura interna do fígado permanece preservada e, consequentemente, não há risco de evolução para insuficiência hepática.\n\nAlternativa C (Correta): Esta é a descrição clínica clássica. A paciente costuma apresentar dor intensa e súbita no hipocôndrio direito, que pode ser do tipo pleurítica (piora com a respiração profunda e tosse) e irradiar para o ombro direito. Devido à localização e ao caráter da dor, o quadro frequentemente mimetiza uma colecistite aguda, o que torna a síndrome um importante diagnóstico diferencial em mulheres jovens com dor abdominal superior.\n\nAlternativa D (Incorreta): Como a síndrome é uma peri-hepatite (inflamação da cápsula) e não uma hepatite (inflamação do parênquima), as provas de função hepática, como as transaminases (AST e ALT) e as bilirrubinas, costumam estar normais ou apenas com alterações mínimas e inespecíficas. Portanto, exames laboratoriais hepáticos não são ferramentas diagnósticas sensíveis nem servem para prever a gravidade dessa patologia. O diagnóstico definitivo é frequentemente sugerido pela clínica e confirmado por exames de imagem (como TC com contraste mostrando realce da cápsula hepática) ou visualização direta de aderências em \"corda de violino\" durante uma laparoscopia.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:24.912Z"
+  },
+  {
+    "id": "AJUDA_726a3ab7-6083-45e7-8d41-ca6cba54dc2b",
+    "originalId": "726a3ab7-6083-45e7-8d41-ca6cba54dc2b",
+    "statement": "Rafael, 4 anos, é levado ao ambulatório por apresentar baixo crescimento em relação às outras crianças da idade. A mãe relata que ele sempre foi “miudinho”, mas nos últimos meses percebeu que ele não está crescendo como esperado. A criança costuma fazer apenas duas refeições por dia, com dieta predominantemente baseada em carboidratos (arroz, macarrão, mingau) e baixa ingestão de proteínas. Não há história de diarreia persistente, vômitos ou doenças crônicas conhecidas. Vacinação incompleta. Frequenta creche. Exame físico: Peso: 12,0 kg (P3–5). Estatura: muito abaixo do esperado para idade (escore Z < –2,5 para estatura/idade). IMC na faixa normal. Cabelos finos, quebradiços. Unhas fracas. Apatia leve. Sem edemas. Sinais vitais normais. Achados complementares: Hemograma: anemia microcítica discreta. Albumina: normal. Parasitoses: pesquisa de ovos e parasitas negativa. Curva de crescimento: desaceleração da estatura desde os 2 anos, com manutenção do peso proporcionalmente mais baixo, porém estável. O pediatra considera diagnóstico de desnutrição crônica (nanismo nutricional).\n\nCom base no caso clínico, qual é o achado mais característico da desnutrição crônica em crianças?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Edema de membros inferiores e albumina baixa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumento agudo do consumo energético diário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diarreia persistente e vômitos recorrentes como achado obrigatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Perda de peso abrupta com emagrecimento acentuado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Redução persistente da estatura para idade (baixa estatura).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve Rafael, de 4 anos, com um quadro clássico de desnutrição crônica, também denominada nanismo nutricional ou stunting. Os pontos-chave para o diagnóstico são: a ingestão dietética inadequada de longa data (baixa proteína), a desaceleração do crescimento linear (estatura) iniciada aos 2 anos, o escore Z de estatura para idade inferior a -2,5 e a manutenção de um IMC normal. Diferentemente da desnutrição aguda, na qual há perda de peso rápida, na desnutrição crônica o organismo se adapta à carência de nutrientes, sacrificando o crescimento em altura para preservar a proporcionalidade corporal e as funções vitais.\n\nDISTRIBUIÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Edema de membros inferiores e hipoalbuminemia (albumina baixa) são achados característicos da desnutrição aguda grave do tipo Kwashiorkor. No Kwashiorkor, ocorre uma deficiência proteica intensa em relação à oferta calórica, levando à redução da pressão oncótica e ao consequente edema. No caso de Rafael, a albumina está normal e não há edema, o que afasta essa condição.\n\nAlternativa b) Incorreta. A desnutrição não se caracteriza pelo aumento agudo do consumo energético, mas sim por um balanço energético negativo (ingestão menor que a demanda) ou, em fases avançadas, por uma redução do metabolismo basal como mecanismo de adaptação para poupar energia.\n\nAlternativa c) Incorreta. Embora doenças gastrointestinais possam causar desnutrição secundária, a diarreia e os vômitos não são achados obrigatórios para o diagnóstico de desnutrição crônica. A causa de Rafael é primária, ligada à ingestão dietética pobre em nutrientes essenciais.\n\nAlternativa d) Incorreta. A perda de peso abrupta e o emagrecimento acentuado (consunção) definem a desnutrição aguda ou marasmo. Nesses casos, o indicador peso para estatura estaria significativamente alterado. Na desnutrição crônica, o peso costuma ser proporcional à estatura baixa, resultando em um IMC muitas vezes dentro da normalidade, como observado no paciente.\n\nAlternativa e) Correta. O achado patognomônico e definidor da desnutrição crônica é o comprometimento do crescimento linear, manifestado pela redução persistente da estatura para a idade. Quando a privação nutricional é prolongada, o corpo prioriza a manutenção da homeostase em detrimento do crescimento ósseo longitudinal. Portanto, o indicador estatura/idade (E/I) é o parâmetro mais sensível para identificar processos de desnutrição pregressos ou de longa duração.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Desnutrição na Infância"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:24.912Z"
+  },
+  {
+    "id": "AJUDA_726c8c9c-d978-4901-bad4-624cee3756c2",
+    "originalId": "726c8c9c-d978-4901-bad4-624cee3756c2",
+    "statement": "Durante ação comunitária, mulher de 42 anos, assintomática e sem fatores de risco relevantes, solicita “check-up completo”, incluindo marcadores tumorais, PSA e tomografia de tórax “para descobrir doenças silenciosas”. Qual é a melhor abordagem na APS segundo o princípio da prevenção quaternária?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar parte dos exames requeridos como estratégia de conciliação, mantendo os demais para avaliação em consultas subsequentes programadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Explicar riscos de testes sem indicação (falsos positivos, cascatas), reforçar promoção e ofertar apenas rastreamentos recomendados para idade e risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar à oncologia preventiva para definição especializada do escopo de exames, preservando vínculo e satisfação da usuária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Atender integralmente ao pedido em respeito à autonomia, revisando resultados em retorno na própria APS de forma compartilhada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Instituir rotina anual de exames laboratoriais, marcadores tumorais (PSA e CEA) e de imagem para detecção precoce de doenças.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda um cenário clássico na Atenção Primária à Saúde (APS): a demanda espontânea por exames de rastreio sem indicação clínica. O foco está no conceito de Prevenção Quaternária, que consiste na detecção de indivíduos em risco de medicalização excessiva para protegê-los de intervenções médicas desnecessárias e sugerir alternativas eticamente aceitáveis.\n\nAlternativa A: Incorreta. Solicitar exames desnecessários como forma de \"conciliação\" ou \"negociação\" fere o princípio da prevenção quaternária. Mesmo que o médico peça apenas uma parte, ele ainda submete a paciente a riscos de resultados falsos-positivos e procedimentos invasivos subsequentes para investigar achados incidentais sem relevância clínica.\n\nAlternativa B: Correta. Esta é a conduta que melhor define a prevenção quaternária e a Medicina Baseada em Evidências. O médico deve atuar como um filtro, protegendo a paciente da iatrogenia (dano causado pela intervenção médica). Exames como marcadores tumorais e tomografia em pacientes assintomáticas e sem risco têm baixíssimo valor preditivo positivo, gerando ansiedade e a \"cascata diagnóstica\" (uma investigação que leva a outra, aumentando o risco de complicações). Além disso, o PSA (Antígeno Prostático Específico) sequer tem indicação biológica para mulheres, reforçando que o pedido é inadequado. A abordagem correta é educar a paciente e realizar apenas os rastreios validados para a idade (como câncer de colo do útero e, dependendo da diretriz, mama).\n\nAlternativa C: Incorreta. O encaminhamento para um especialista focal para definir exames de rotina sobrecarrega o sistema de saúde, descaracteriza o papel do médico de família e comunidade e não resolve o problema da medicalização. Pelo contrário, pode reforçar na paciente a ideia de que ela realmente precisa de uma investigação exaustiva.\n\nAlternativa D: Incorreta. O princípio da autonomia do paciente não é absoluto e não obriga o médico a realizar condutas tecnicamente inadequadas ou potencialmente prejudiciais. O médico tem o dever ético de não causar dano (não maleficência). Aceitar o pedido integralmente ignora as evidências científicas e expõe a paciente a riscos desnecessários.\n\nAlternativa E: Incorreta. Esta alternativa propõe o oposto da prevenção quaternária. Instituir rotinas anuais de marcadores tumorais (como o CEA, que não serve para rastreio, mas para acompanhamento pós-tratamento) e exames de imagem em pacientes sem fatores de risco é uma prática de sobremedicalização que gera altos custos e muitos danos à saúde pública e individual.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:24.912Z"
+  },
+  {
+    "id": "AJUDA_72807f8e-642b-494f-8af3-455ca4550429",
+    "originalId": "72807f8e-642b-494f-8af3-455ca4550429",
+    "statement": "Um homem de 42 anos de idade apresentou febre alta, cefaleia intensa, icterícia e mialgia após o retorno de uma área rural. O médico suspeitou de leptospirose e iniciou o tratamento. No entanto, afirmou que só notificaria o caso se o exame laboratorial confirmasse a doença. Nesse contexto, qual é a conduta correta quanto à notificação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não notificar, pois a leptospirose só entra na lista de notificações laboratoriais confirmadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Notificar imediatamente, mesmo na suspeita clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Notificar apenas se houver surto na região.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Notificar apenas após internação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A conduta do médico na questão está incorreta sob a ótica da saúde pública e da vigilância epidemiológica. A leptospirose é uma doença de notificação compulsória em todo o território nacional, conforme estabelecido pela Lista Nacional de Notificação Compulsória de Doenças, Agravos e Eventos de Saúde Pública do Ministério da Saúde.\n\nO objetivo da notificação compulsória é permitir que os órgãos de vigilância identifiquem precocemente surtos, monitorem a circulação do agente etiológico e implementem medidas de controle ambiental e sanitário de forma ágil. Por esse motivo, a notificação deve ser realizada diante da simples suspeita clínica, não sendo necessário aguardar o resultado de exames laboratoriais, que muitas vezes podem demorar ou apresentar resultados falso-negativos nas fases iniciais da doença.\n\nAnálise das alternativas:\n\na) Incorreta. A leptospirose não exige confirmação laboratorial para ser notificada. A vigilância epidemiológica trabalha com a definição de \"caso suspeito\". Aguardar o laboratório retardaria as ações de investigação de campo e controle de roedores no local de provável infecção.\n\nb) Correta. Esta é a conduta preconizada. A suspeita clínica baseada em febre, cefaleia, mialgia (especialmente em panturrilhas) e história de exposição de risco (área rural, enchentes, contato com água ou lama contaminada) é suficiente para gerar a notificação imediata.\n\nc) Incorreta. A notificação deve ser feita para cada caso individual suspeito, independentemente de haver um surto ou não. Casos isolados são fundamentais para detectar o início de uma possível epidemia.\n\nd) Incorreta. A obrigatoriedade da notificação independe da gravidade do quadro clínico ou da necessidade de internação. Casos leves atendidos ambulatorialmente também devem ser reportados às autoridades de saúde.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Leptospirose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:24.912Z"
+  },
+  {
+    "id": "AJUDA_728cdf49-978e-467c-9170-efdb2e527989",
+    "originalId": "728cdf49-978e-467c-9170-efdb2e527989",
+    "statement": "Paciente feminina, 59 anos, vem em consulta de rotina. Refere estar bem, assintomática, apenas trouxe seus exames para avaliar. De história médica pregressa apresenta: diabetes melittus tipo 2, há 20 anos, artrose em mãos, cistocele grau 3 em aguardo cirúrgico, incontinência urinária mista. G4P2C0A2 (Gesta4, Parto2, Cesárea 0, Aborto 2), laqueada. Menopausa aos 50 anos. Dentre os exames que realizou, apresenta mamografia de 02/07/24 com BIRADS 1 bilateral e exame citopatológico de colo uterino 07/06/24 negativo para malignidade. Escolha a alternativa CORRETA em relação à conduta diante do resultado BIRADS apresentado na mamografia de rastreamento, de acordo com o Ministério da Saúde:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar outros exames complementares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orientar rastreamento normal em 2 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar mamografia em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Considerar biópsia investigativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão avalia o conhecimento sobre o rastreamento do câncer de mama e a conduta baseada na classificação BI-RADS, seguindo as normas do Ministério da Saúde. A paciente tem 59 anos e apresenta mamografia BI-RADS 1.\n\nA classificação BI-RADS 1 indica um exame negativo, ou seja, uma mamografia normal, sem achados dignos de nota. Para o Ministério da Saúde, o rastreamento mamográfico é indicado para mulheres entre 50 e 69 anos, com um intervalo de dois anos entre os exames.\n\nAlternativa a) Incorreta. Diante de um resultado normal (BI-RADS 1) em paciente assintomática, não há justificativa para solicitar exames complementares como ultrassonografia ou ressonância magnética.\n\nAlternativa b) Correta. Como o exame é normal e a paciente está na faixa etária de rastreamento (50 a 69 anos), a recomendação oficial do Ministério da Saúde é manter a rotina e repetir a mamografia em dois anos. Essa mesma conduta seria adotada caso o resultado fosse BI-RADS 2 (achados benignos).\n\nAlternativa c) Incorreta. O controle mamográfico em curto prazo (6 meses) é a conduta indicada para a categoria BI-RADS 3, que representa achados provavelmente benignos.\n\nAlternativa d) Incorreta. A investigação invasiva por biópsia é indicada para lesões classificadas como BI-RADS 4 (suspeita de malignidade) ou BI-RADS 5 (altamente sugestiva de malignidade).\n\nGabarito: Letra b.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Mama",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:00:24.912Z"
+  }
+]

@@ -1,0 +1,494 @@
+[
+  {
+    "id": "AJUDA_cdcc03d2-084e-4b2f-ba4c-ffb4723d9fa6",
+    "originalId": "cdcc03d2-084e-4b2f-ba4c-ffb4723d9fa6",
+    "statement": "Ao ensinar sobre a reidratação oral para crianças com diarreia, qual das seguintes orientações para agentes comunitários de saúde está CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar soluções de reidratação oral (SRO) específicas para a diarreia, seguindo as instruções de preparo e administração recomendadas pelas receitas caseiras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Instruir os pais a interromper a alimentação normal da criança até que a diarreia cesse completamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Recomendar o uso de sucos de frutas naturais ou bebidas esportivas como substituto para soluções farmacológicas de reidratação oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reconhecer sinais de alerta e orientar familiares para identifica-los: piora na diarreia (aumento da frequência e/ou do volume), vômitos repetidos, muita sede, recusa de alimentos, sangue nas fezes, diminuição da diurese.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. As Soluções de Reidratação Oral (SRO) distribuídas em envelopes possuem uma composição eletrolítica balanceada e osmolaridade padronizada pela Organização Mundial da Saúde (OMS). O preparo deve seguir rigorosamente as instruções da embalagem, geralmente diluindo o conteúdo em um litro de água filtrada ou fervida. As receitas caseiras (soro caseiro) são medidas alternativas para quando não há acesso aos envelopes de SRO e possuem proporções diferentes de sal e açúcar, não devendo ser confundidas com as instruções de administração das soluções farmacológicas.\n\nAlternativa b: Incorreta. A orientação atual em pediatria é manter a alimentação normal da criança durante os episódios de diarreia. O aleitamento materno deve ser mantido e até intensificado. A suspensão da alimentação pode levar à desnutrição e retardar a recuperação da mucosa intestinal, que necessita de nutrientes para sua regeneração.\n\nAlternativa c: Incorreta. Sucos de frutas, refrigerantes e bebidas esportivas são contraindicados para o tratamento da desidratação. Essas bebidas costumam apresentar alta osmolaridade devido ao elevado teor de açúcar, o que pode agravar a diarreia por um mecanismo osmótico (atraindo água para o lúmen intestinal). Além disso, possuem concentrações inadequadas de sódio e potássio para a reposição das perdas fecais.\n\nAlternativa d: Correta. No manejo da diarreia (Plano A), uma das funções mais importantes do Agente Comunitário de Saúde e dos profissionais de saúde é capacitar os cuidadores a identificar sinais de perigo. A presença de vômitos persistentes, sangue nas fezes, recusa alimentar, sede excessiva ou sinais de desidratação (como a redução da diurese) indica que a terapia domiciliar não é suficiente e que a criança precisa de avaliação médica imediata para possível mudança para o Plano B ou C de reidratação.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Diarreia",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:05.888Z"
+  },
+  {
+    "id": "AJUDA_cdd2fe03-08ac-41d2-b816-6e7767bf9135",
+    "originalId": "cdd2fe03-08ac-41d2-b816-6e7767bf9135",
+    "statement": "Um paciente de 59 anos de idade, cirrótico Child-Pugh B por hepatite alcoólica, apresentou hematêmese volumosa há uma hora. Ao exame, mostrou FC =115 bpm, FR = 20 irpm e saturação = 94%. Encontra-se afebril, com abdome flácido e sem ascite volumosa. Suspeita-se de sangramento varicoso. Considerando esse caso clínico, assinale a alternativa que corresponde à conduta inicial correta a ser adotada pelo profissional.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar eritromicina intravenosa como primeira medida terapêutica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar omeprazol em alta dose como intervenção principal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar reposição volêmica prudente associada à infusão de octreotida e antibioticoprofilaxia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indicar TIPS como primeira abordagem terapêutica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. A eritromicina intravenosa é um agente procinético que pode ser utilizado para esvaziar o conteúdo gástrico (sangue e coágulos) antes da realização da endoscopia digestiva alta, facilitando a visualização. No entanto, ela não é considerada a primeira medida terapêutica nem substitui as manobras de estabilização e o tratamento específico da hipertensão portal.\n\nAlternativa b: Incorreta. O uso de inibidores da bomba de prótons em altas doses, como o omeprazol, é a intervenção principal para o manejo de hemorragia digestiva alta não varicosa, especificamente na úlcera péptica. Em pacientes com cirrose e suspeita de sangramento por varizes, o tratamento farmacológico de escolha são as drogas vasoativas.\n\nAlternativa c: Correta. O manejo inicial do sangramento varicoso em pacientes cirróticos deve seguir protocolos rigorosos. A reposição volêmica deve ser cautelosa (prudente) para evitar o aumento excessivo da pressão portal, o que poderia agravar o sangramento. A introdução imediata de drogas vasoativas (como octreotida, somatostatina ou terlipressina) é essencial para reduzir o fluxo sanguíneo esplâncnico. Além disso, a antibioticoprofilaxia deve ser iniciada o mais precocemente possível, pois reduz o risco de infecções, o ressangramento e a mortalidade nesse perfil de paciente.\n\nAlternativa d: Incorreta. O TIPS (Shunt Portossistêmico Intra-hepático Transjugular) é uma medida de resgate para casos em que o controle por endoscopia e o tratamento medicamentoso falham, ou como terapia precoce em casos muito específicos de alto risco (Child-Pugh C ou B com sangramento ativo). Ele não é indicado como primeira abordagem terapêutica de um paciente que acaba de dar entrada no serviço de urgência.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:05.888Z"
+  },
+  {
+    "id": "AJUDA_cdd3bd8a-2693-40bc-93ae-60fb66892d64",
+    "originalId": "cdd3bd8a-2693-40bc-93ae-60fb66892d64",
+    "statement": "Um homem leucodérmico, com idade de 51 anos, previamente hígido e assintomático, procurou atendimento médico por causa de prurido intenso e progressivo em toda a superfície corpórea. Ele estava ictérico às custas de bilirrubina direta elevada. A endoscopia revelou um tumor vegetante na papila duodenal sem outras anormalidades. Feita colangiopancreatografia retrógrada com biópsia, diagnosticou-se adenocarcinoma de papila duodenal. O estudo de ressonância magnética não mostrou linfadenomegalia regional. Com base nesses dados, qual é a conduta ADEQUADA, nesse caso, entre os itens seguintes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a retirada do tumor por via endoscópica, com margens amplas livres, tendo em vista ser ele in situ sem metástases e acompanhamento clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gastroduodenopancreatectomia cefálica e colecistectomia em monobloco com linfonodos regionais, seguida de reconstrução do trânsito com jejuno.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Exérese do colédoco distal e segmento lateral do duodeno, incluindo a papila, seguida de derivação com jejuno em Y de Roux.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retirada da papila, junto com a mucosa duodenal e a parte transmural do colédoco distal, preservando o ducto pancreático, seguida por anastomose coledocoduodenal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um paciente de 51 anos com quadro de icterícia obstrutiva (bilirrubina direta elevada e prurido) decorrente de um adenocarcinoma de papila duodenal. O tumor da papila duodenal faz parte do grupo dos tumores periampulares. O estadiamento por ressonância magnética não indicou metástases ou linfadenopatia à distância, o que sugere uma lesão ressecável.\n\nAlternativa A: Incorreta. A ressecção endoscópica (papilectomia endoscópica) é reservada apenas para lesões benignas (adenomas) ou, em casos muito selecionados, para carcinomas in situ em pacientes sem condições cirúrgicas. O adenocarcinoma invasivo exige uma abordagem oncológica mais agressiva devido ao risco de invasão local e metástases linfonodais, que não podem ser tratadas adequadamente por via endoscópica.\n\nAlternativa B: Correta. O tratamento padrão-ouro para o adenocarcinoma da papila duodenal ressecável é a gastroduodenopancreatectomia cefálica, também conhecida como Cirurgia de Whipple. Este procedimento consiste na remoção em monobloco da cabeça do pâncreas, do duodeno, da porção distal do colédoco e da vesícula biliar, acompanhada de linfadenectomia regional. A reconstrução do trânsito é feita através de anastomoses com o jejuno (pancreatojejunostomia, hepaticojejunostomia e gastrojejunostomia). Esta é a única conduta que garante margens oncológicas e o esvaziamento linfonodal necessário para o tratamento curativo.\n\nAlternativa C: Incorreta. A exérese apenas do colédoco distal e de um segmento lateral do duodeno é uma técnica cirúrgica insuficiente para o tratamento de um câncer invasivo. Essa abordagem não permite o controle das margens pancreáticas nem a realização da linfadenectomia necessária para o estadiamento e tratamento oncológico adequado.\n\nAlternativa D: Incorreta. A papilectomia cirúrgica local (ressecção transmural da papila com reimplante dos ductos) é uma técnica limitada. Embora possa ser utilizada em tumores benignos maiores que não podem ser retirados por endoscopia, ela não é indicada para o adenocarcinoma de papila, pois apresenta altas taxas de recidiva local e não aborda os linfonodos regionais, que são fundamentais no tratamento desse tipo de neoplasia.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Vesícula e Vias Biliares",
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:05.888Z"
+  },
+  {
+    "id": "AJUDA_cde5af44-3fb1-4c7c-a485-85800fa036cf",
+    "originalId": "cde5af44-3fb1-4c7c-a485-85800fa036cf",
+    "statement": "Um menino de 4 anos é levado à emergência com quadro de fadiga progressiva, inapetência, taquipneia aos mínimos esforços e tosse seca há cerca de três semanas. Os pais relatam episódios frequentes de sudorese noturna, palidez cutânea e redução significativa da atividade lúdica habitual. Ao exame físico: frequência cardíaca de 138 bpm, bulhas cardíacas hipofonéticas, crepitações bibasais, hepatomegalia de 4 cm abaixo do rebordo costal e pulsos periféricos diminuídos. Saturação de oxigênio em ar ambiente: 94%. Radiografia de tórax revela aumento da área cardíaca com congestão vascular pulmonar. O ECG mostra ritmo sinusal, sobrecarga de câmaras esquerdas e inversão da onda T em derivações precordiais. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumonia viral com comprometimento pulmonar bilateral e repercussão sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Miocardite viral com disfunção ventricular esquerda e sinais de insuficiência cardíaca congestiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Asma moderada persistente com infecção respiratória e hipoxemia leve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Endocardite bacteriana subaguda com comprometimento valvar e congestão pulmonar secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico é de um pré-escolar apresentando sinais clássicos de insuficiência cardíaca congestiva (ICC) de instalação subaguda associada a baixo débito cardíaco. Os achados de taquidispneia aos esforços, tosse e crepitações bibasais indicam congestão pulmonar (falência de ventrículo esquerdo), enquanto a hepatomegalia decorre da congestão venosa sistêmica (falência de ventrículo direito). A palidez, taquicardia e pulsos periféricos diminuídos refletem o baixo débito cardíaco. A radiografia de tórax confirmando cardiomegalia e congestão pulmonar, somada ao ECG com sobrecarga de câmaras esquerdas e alterações de repolarização ventricular (inversão de onda T), aponta para um acometimento primário do miocárdio.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. Embora a pneumonia viral justifique taquipneia, tosse e estertores, ela não explica o conjunto de achados cardiogênicos, como a cardiomegalia, a hepatomegalia congestiva volumosa, os pulsos finos e as alterações no eletrocardiograma.\n\nAlternativa B - Correta. A miocardite viral é a principal causa de insuficiência cardíaca aguda e subaguda em crianças previamente hígidas. A inflamação miocárdica leva à dilatação das câmaras, queda da fração de ejeção, hipofonese de bulhas (por disfunção contrátil ou derrame pericárdico associado), congestão mista e alterações de repolarização no ECG.\n\nAlternativa C - Incorreta. A asma é uma doença inflamatória e obstrutiva das vias aéreas inferiores caracterizada tipicamente por sibilos e tempo expiratório prolongado, não cursando com cardiomegalia, hepatomegalia de estase ou sobrecarga de câmaras esquerdas no ECG.\n\nAlternativa D - Incorreta. A endocardite bacteriana subaguda geralmente decorre de cardiopatia estrutural prévia e cursa com febre persistente e surgimento ou alteração de sopros cardíacos decorrentes de lesão valvar. O quadro difuso e sem menção a sopros em uma criança previamente saudável é classicamente determinado por miocardite.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Cardiomiopatias",
+      "Insuficiência Cardíaca",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:05.888Z"
+  },
+  {
+    "id": "AJUDA_cde61f03-a963-4f8e-8a14-1fd51dd62f7e",
+    "originalId": "cde61f03-a963-4f8e-8a14-1fd51dd62f7e",
+    "statement": "O sistema de classificação PALM-COEIN, desenvolvido pela FIGO (Federação Internacional de Ginecologia e Obstetrícia), padroniza as etiologias do Sangramento Uterino Anormal (SUA) em componentes estruturais (PALM) e não estruturais (COEIN). Sobre a correta categorização das causas de sangramento neste sistema, registre V para verdadeiro e F para falso nas afirmativas a seguir.\n\n(__)A Coagulopatia (C) é uma causa classificada como não estrutural, sendo a Doença de von Willebrand uma das etiologias mais prevalentes em adolescentes com sangramento menstrual intenso desde a menarca.\n(__)A Adenomiose (A) é classificada como uma causa estrutural (PALM), caracterizada pela presença de glândulas e estroma endometrial no miométrio, cujo diagnóstico pode ser sugerido por critérios ultrassonográficos ou de ressonância magnética.\n(__)Os Pólipos endometriais (P) são classificados no grupo das causas não estruturais (COEIN), pois representam um crescimento funcional do endométrio que não altera a anatomia da cavidade uterina.\n(__)O Leiomioma (L) é subdividido em submucoso e outros, sendo que os leiomiomas subserosos são os principais responsáveis pelo sangramento uterino anormal devido à sua grande superfície de contato com o endométrio.\n\nAssinale a alternativa que apresenta a sequência correta, de cima para baixo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, F, F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "F, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O sistema PALM-COEIN foi criado pela FIGO para padronizar a nomenclatura das causas de Sangramento Uterino Anormal (SUA), dividindo-as em causas estruturais, que podem ser visualizadas por exames de imagem ou histopatologia (PALM: Pólipo, Adenomiose, Leiomioma, Malignidade/Hiperplasia), e causas não estruturais (COEIN: Coagulopatia, Disfunção Ovulatória, Endometrial, Iatrogênica, Não Classificada).\n\nAnálise das afirmativas:\n\n(V) A primeira afirmativa está correta. A Coagulopatia (letra C do acrônimo COEIN) é uma causa não estrutural. Entre as coagulopatias hereditárias, a Doença de von Willebrand é a mais comum e deve ser sempre suspeitada em adolescentes que apresentam sangramento menstrual intenso desde a menarca, uma vez que o sistema de coagulação é exigido logo nos primeiros ciclos.\n\n(V) A segunda afirmativa está correta. A Adenomiose (letra A do acrônimo PALM) é uma alteração estrutural definida pela invasão do miométrio por tecido endometrial (glândulas e estroma). O diagnóstico definitivo é histopatológico (após a retirada do útero), mas exames de imagem como a ultrassonografia transvaginal e a ressonância magnética possuem critérios bem estabelecidos que sugerem fortemente a doença.\n\n(F) A terceira afirmativa está incorreta. Os Pólipos (letra P do acrônimo PALM) são classificados como causas estruturais. Ao contrário do que diz a alternativa, eles representam projeções exofíticas que alteram, sim, a anatomia da cavidade uterina, podendo ser visualizados por ultrassonografia, histerossonografia ou histeroscopia.\n\n(F) A quarta afirmativa está incorreta. Embora o Leiomioma (letra L do PALM) seja subdividido pela FIGO em submucoso (Lsm) e outros (Lo), os leiomiomas subserosos são os que menos causam sangramento uterino anormal, pois se localizam na face externa do útero e não têm contato direto com o endométrio. Os principais responsáveis pelo sangramento são os leiomiomas submucosos, que distorcem a cavidade endometrial e aumentam a superfície de sangramento.\n\nPortanto, a sequência correta é V - V - F - F, o que corresponde à alternativa (a).",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:05.889Z"
+  },
+  {
+    "id": "AJUDA_cdeac8cd-639e-41b1-90d0-205ea35e8382",
+    "originalId": "cdeac8cd-639e-41b1-90d0-205ea35e8382",
+    "statement": "Na doença renal do diabetes, quais são os medicamentos indicados como medida de renoproteção?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inibidores do SGLT2, bloqueador do sistema renina-angiotensina e antagonista do receptor mineralocorticoide.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Bloqueador de canal de cálcio, sulfonilureia e bloqueador do sistema renina-angiotensina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Betabloqueador seletivo, diurético de alça e Inibidores do SGLT2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Agonista do GLP 1, agonista alfa 2 adrenérgico de ação central e diurético tiazídico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O tratamento da doença renal do diabetes (DRD) evoluiu significativamente, passando de uma abordagem focada apenas no controle glicêmico e pressórico para o uso de drogas que modificam a história natural da doença, atuando na hemodinâmica glomerular, na inflamação e na fibrose.\n\nALTERNATIVA A (CORRETA): Reúne os três pilares fundamentais da renoproteção moderna recomendados por diretrizes internacionais (como KDIGO e ADA). \n1. Bloqueadores do sistema renina-angiotensina (IECA ou BRA): São a primeira linha de tratamento, pois promovem a vasodilatação da arteríola eferente, reduzindo a pressão dentro do glomérulo e a albuminúria.\n2. Inibidores do SGLT2 (gliflozinas): Atuam no túbulo proximal, restaurando o feedback tubuloglomerular e reduzindo a hiperfiltração renal. Possuem benefícios comprovados na redução do declínio da taxa de filtração glomerular e necessidade de diálise.\n3. Antagonistas do receptor mineralocorticoide (como a finerenona): Agem bloqueando a superativação dos receptores mineralocorticoides, o que reduz o estresse oxidativo, a inflamação e a fibrose no tecido renal.\n\nALTERNATIVA B (INCORRETA): As sulfonilureias são agentes secretagogos de insulina que não possuem propriedades de renoproteção direta. Além disso, algumas sulfonilureias devem ser evitadas na doença renal avançada pelo alto risco de hipoglicemia. Bloqueadores de canal de cálcio são bons anti-hipertensivos, mas não substituem os IECAs/BRAs como primeira escolha para proteção renal.\n\nALTERNATIVA C (INCORRETA): Betabloqueadores e diuréticos de alça (como a furosemida) são medicamentos importantes para o manejo de complicações como hipertensão de difícil controle ou sobrecarga hídrica, mas não são classificados como agentes renoprotetores primários, pois não atuam diretamente nos mecanismos de lesão da doença renal diabética.\n\nALTERNATIVA D (INCORRETA): Embora os agonistas do GLP-1 tenham demonstrado benefícios importantes na redução de albuminúria e eventos cardiovasculares, a alternativa está incorreta ao incluir o agonista alfa-2 adrenérgico (como a clonidina) e o diurético tiazídico. A clonidina é uma droga de ação central sem papel na preservação da função renal, e os tiazídicos são adjuvantes no controle da pressão, sem efeito renoprotetor intrínseco específico para o paciente diabético.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:05.889Z"
+  },
+  {
+    "id": "AJUDA_cdef216b-bc09-4b27-9a85-ed45a34f7aa7",
+    "originalId": "cdef216b-bc09-4b27-9a85-ed45a34f7aa7",
+    "statement": "Um novo antibiótico está sendo avaliado para tratamento de traqueobronquite bacteriana, apresentando menor curso e maior comodidade posológica em relação ao tratamento padrão (comparador), que tem cerca de 90% de eficácia (desfecho “taxa de cura”). O grupo pesquisador desenhou um ensaio clínico randomizado e propôs que uma efetividade de 81% seja definida como “não inferior” (Risco Relativo de 0,9 como margem de não inferioridade). Com base nas informações e na análise da figura, assinale a assertiva correta sobre estudos de não inferioridade.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nesse cenário e desfecho, um tratamento será considerado superior (melhor) quando a estimativa de risco relativo, com seus intervalos de confiança, for < 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não inferioridade estará estabelecida quando a estimativa de risco e os intervalos de confiança tocarem a linha de nulidade (C, D).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não inferioridade não pode ser estabelecida se quaisquer resultados apresentarem intervalos de confiança abaixo da margem de não inferioridade, como no resultado E.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "De acordo com os parâmetros definidos pelo pesquisador, os resultados B, C e E podem ser aceitos como não inferiores ao tratamento comparador.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ESTUDOS DE NÃO INFERIORIDADE E INTERPRETAÇÃO DA MARGEM\n\nEm um ensaio clínico de não inferioridade, o objetivo principal não é mostrar que o novo tratamento é melhor, mas sim que ele não é significativamente pior que o tratamento padrão, dentro de um limite aceitável chamado margem de não inferioridade. Nesta questão, o desfecho avaliado é a taxa de cura (um evento favorável). Assim, um Risco Relativo (RR) maior que 1 indica que o novo tratamento é melhor, e um RR menor que 1 indica que ele é pior. A margem de não inferioridade foi fixada em 0,9.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a: Incorreta. Como o desfecho analisado é a cura, a superioridade só é demonstrada quando o Risco Relativo e todo o seu intervalo de confiança (IC) estão acima de 1 (RR maior que 1). Se o RR for menor que 1, o tratamento é matematicamente menos eficaz que o comparador, o que invalida a afirmação de superioridade.\n\nAlternativa b: Incorreta. A não inferioridade é estabelecida quando o limite inferior do intervalo de confiança não ultrapassa a margem predefinida (neste caso, 0,9). O fato de o intervalo tocar a linha de nulidade (RR igual a 1) indica apenas que não há diferença estatística de superioridade ou inferioridade absoluta entre as drogas, mas não define a não inferioridade em relação à margem. O cenário D, por exemplo, toca a nulidade, mas seu limite inferior cruza a margem de 0,9 para a esquerda, falhando em provar a não inferioridade.\n\nAlternativa c: Incorreta. O resultado E é o melhor cenário do gráfico: ele é superior ao tratamento padrão, pois seu RR e IC estão totalmente acima de 1. Todo tratamento superior é, por definição, não inferior. O erro da alternativa está em afirmar que o resultado E está abaixo da margem de não inferioridade, quando na imagem ele está posicionado bem acima (à direita) de 0,9 e de 1.\n\nAlternativa d: Correta. De acordo com os parâmetros do estudo, qualquer resultado cujo limite inferior do intervalo de confiança seja maior ou igual a 0,9 é aceito como não inferior. Observando a figura: o resultado B está entre 0,9 e 1; o resultado C cruza a nulidade, mas seu limite inferior é maior que 0,9; e o resultado E é superior (maior que 1). Como esses três cenários não cruzam a margem de 0,9 para o lado pior (esquerda), todos atendem ao critério de não inferioridade.\n\nASSOCIAÇÃO COM A IMAGEM\n\nA linha vertical posicionada em 0,9 na figura representa o limite de tolerância do pesquisador.\nCenário A: O ponto está na margem e o intervalo se estende para a esquerda (pior que a margem).\nCenários B e C: Estão à direita da margem de 0,9, mesmo que o ponto central seja menor que 1.\nCenário D: O intervalo é muito largo e cruza a margem de 0,9, sendo inconclusivo.\nCenário E: Está totalmente à direita de 1, indicando superioridade e, consequentemente, não inferioridade.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/6d3b4d4b9c44b9d767c7cce681cba43ef83e3f93a7775756433e859f9d8ed628.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_cdef216b-bc09-4b27-9a85-ed45a34f7aa7_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:06.496Z"
+  },
+  {
+    "id": "AJUDA_cdf06754-19bb-4756-9f98-52dba84f225c",
+    "originalId": "cdf06754-19bb-4756-9f98-52dba84f225c",
+    "statement": "Paciente masculino, de 34 anos, vítima de acidente automobilístico, apresentou hipotensão persistente embora tenha recebido adequada reposição volêmica. Radiografia abdominal evidenciou fratura pélvica em “livro aberto”. O FAST foi negativo. Que conduta imediata, dentre as abaixo, é a mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia exploradora",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fixação interna definitiva da pelve",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realização de tomografia computadorizada do abdômen",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estabilização com fixador externo ou lençol pélvico e packing retroperitoneal",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso descreve um paciente com trauma pélvico grave (fratura em \"livro aberto\") e instabilidade hemodinâmica persistente, mesmo após reposição volêmica. O dado crucial é o FAST negativo, que afasta o sangramento intraperitoneal como causa principal do choque, direcionando o foco para a região pélvica (retroperitoneal).\n\nAlternativa (a) Incorreta. A laparotomia exploradora estaria indicada se o FAST fosse positivo, evidenciando sangue na cavidade peritoneal. Em pacientes com fratura de pelve e FAST negativo, abrir o abdome pode ser perigoso, pois a abertura do peritônio retira o efeito de tamponamento natural exercido pelo retroperitônio, o que pode agravar o sangramento pélvico.\n\nAlternativa (b) Incorreta. A fixação interna definitiva é um procedimento cirúrgico ortopédico complexo e demorado. Ela é realizada apenas quando o paciente já está estabilizado e fora de perigo imediato de vida. No cenário de urgência com instabilidade hemodinâmica, a prioridade é o controle de danos.\n\nAlternativa (c) Incorreta. A tomografia computadorizada (TC) é um excelente exame para detalhar lesões pélvicas, mas jamais deve ser realizada em pacientes hemodinamicamente instáveis. O protocolo ATLS determina que o paciente instável deve ser estabilizado ou levado diretamente para intervenção (sala cirúrgica ou angioembolização), e não para a sala de radiologia.\n\nAlternativa (d) Correta. Esta é a conduta de \"controle de danos\" preconizada. A estabilização da pelve com lençol pélvico ou fixador externo tem como objetivo reduzir o volume da bacia, o que diminui o espaço para o sangramento e promove a estabilização mecânica dos coágulos. Como o paciente mantém hipotensão mesmo após a manobra inicial e o FAST é negativo, o packing retroperitoneal (ou pré-peritoneal) surge como uma medida cirúrgica heroica e eficaz para comprimir mecanicamente o plexo venoso e as superfícies ósseas sangrentas da pelve.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:06.496Z"
+  },
+  {
+    "id": "AJUDA_cdf5faf6-5d13-4dfa-bb62-39f31ad49760",
+    "originalId": "cdf5faf6-5d13-4dfa-bb62-39f31ad49760",
+    "statement": "Em rastreamento de acuidade visual realizado pela UBS no programa Saúde na Escola, identificou-se redução de acuidade visual em uma estudante de 12 anos. Ela foi encaminhada, pela UBS, à consulta no oftalmologista e retornou com a receita de óculos. Na UBS, foi feita a solicitação de óculos na ótica de referência vinculada ao programa Porto Olhar Alegre para o fornecimento gratuito de óculos para a escolar. Essa ação é exemplo de qual princípio do SUS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Equidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Universalidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Integralidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Descentralização",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender essa questão, devemos analisar o percurso da estudante dentro do sistema de saúde: ela passou pelo rastreamento (prevenção), pela consulta especializada (diagnóstico) e recebeu o tratamento/reabilitação (óculos). Essa continuidade do cuidado é a chave para a resposta.\n\nAlternativa (a) Incorreta: A Equidade diz respeito a tratar desigualmente os desiguais, direcionando mais recursos ou atenção para quem mais precisa, visando a diminuir as desigualdades sociais e de saúde. Embora o fornecimento gratuito de óculos possa ser visto como uma ação de equidade, o foco central da questão é a garantia de que a paciente percorreu todos os níveis de atenção necessários para resolver seu problema de saúde.\n\nAlternativa (b) Incorreta: A Universalidade é o princípio finalístico que garante que todos os cidadãos têm direito ao acesso às ações e aos serviços de saúde, sem qualquer tipo de discriminação. O enunciado foca no processo de assistência prestado e não apenas no direito de acesso ao sistema.\n\nAlternativa (c) Correta: A Integralidade é o princípio que considera a pessoa como um todo, atendendo a todas as suas necessidades. Ela se manifesta de duas formas principais: na articulação das ações de promoção, prevenção, cura e reabilitação, e na garantia de acesso a todos os níveis de complexidade do sistema (primário, secundário e terciário). No caso descrito, o SUS não apenas identificou o problema (na escola/UBS), mas garantiu o atendimento especializado e a resolução definitiva com a entrega dos óculos. Essa linha de cuidado completa exemplifica perfeitamente a integralidade.\n\nAlternativa (d) Incorreta: A Descentralização é um princípio organizativo que redistribui poder e responsabilidades entre os três níveis de governo (União, Estados e Municípios), com ênfase na municipalização dos serviços. Embora o programa citado seja municipal (Porto Olhar Alegre), a ação descrita pela trajetória da paciente não visa a ilustrar a divisão de gestão, mas sim à assistência integral à saúde.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:06.496Z"
+  },
+  {
+    "id": "AJUDA_cdf996ae-953d-435e-bfa4-9b18fa0a335e",
+    "originalId": "cdf996ae-953d-435e-bfa4-9b18fa0a335e",
+    "statement": "Um homem de 35 anos, morador de área urbana, é encaminhado pela Estratégia Saúde da Família (ESF) ao Centro de Atenção Psicossocial (CAPS II) após episódio de ansiedade intensa, caracterizado por palpitações, sudorese e tremores, em meio a conflitos familiares e no trabalho. Relata uso nocivo de álcool, mas nega dependência. Considerando a Política Nacional de Saúde Mental e a função do CAPS na rede de atenção psicossocial, a conduta mais adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "priorizar internação hospitalar para estabilização clínica, considerando o risco potencial de agravamento dos sintomas ansiosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar atendimento no CAPS, articulando ações da equipe multiprofissional e construindo um projeto terapêutico singular que envolva aspectos clínicos, psicossociais e de reinserção social.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "iniciar atendimento com psicoterapia individual e medicação ansiolítica, visando à estabilização imediata dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "direcionar o paciente para comunidade terapêutica, considerando seu histórico de uso de substâncias psicoativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "limitar a intervenção ao manejo da crise atual, orientando o paciente a procurar pronto-socorro psiquiátrico em novas situações semelhantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão avalia as diretrizes da Política Nacional de Saúde Mental e o papel do Centro de Atenção Psicossocial (CAPS) na Rede de Atenção Psicossocial (RAPS).\n\nAlternativa A - Incorreta. A Lei 10.216/2001 (Reforma Psiquiátrica) determina que a internação hospitalar deve ser indicada apenas como último recurso, quando todos os recursos extra-hospitalares se mostrarem insuficientes ou houver risco grave e iminente à vida. O paciente apresenta quadro de ansiedade reativa a estressores psicossociais, sendo perfeitamente manejável em nível territorial e comunitário.\n\nAlternativa B - Correta. A missão do CAPS é prestar atenção integral, contínua e de base comunitária. A conduta padrão envolve o acolhimento por equipe multiprofissional e a formulação do Projeto Terapêutico Singular (PTS), instrumento que articula demandas clínicas, apoio psicossocial, manejo do uso de substâncias e estratégias de suporte familiar e laboral.\n\nAlternativa C - Incorreta. Embora psicoterapia e farmacoterapia possam ser componentes do tratamento, restringir a abordagem a essas intervenções reflete um modelo ambulatorial biomédico tradicional, ignorando a complexidade do cuidado multiprofissional e a abordagem biopsicossocial preconizada pelo CAPS.\n\nAlternativa D - Incorreta. O paciente não preenche critérios de dependência química que justifiquem acolhimento residencial transitório, tendo relatado apenas uso nocivo. Ademais, o direcionamento a comunidades terapêuticas não é a conduta indicada para o manejo de transtornos de ansiedade na rede pública.\n\nAlternativa E - Incorreta. A atuação do CAPS não se limita ao alívio sintomático pontual. Orientar a busca por pronto-socorro psiquiátrico reforça a fragmentação do cuidado e o modelo hospitalocêntrico, enquanto a RAPS busca justamente o acompanhamento longitudinal no território para evitar idas desnecessárias à urgência.\n\nGabarito: Alternativa B.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Social e Reforma Psiquiátrica",
+      "Dependência Química",
+      "Transtornos de Ansiedade",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:06.496Z"
+  }
+]

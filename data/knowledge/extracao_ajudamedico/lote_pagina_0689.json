@@ -1,0 +1,513 @@
+[
+  {
+    "id": "AJUDA_c085614d-aa3c-46a5-a0ac-4697f6b71856",
+    "originalId": "c085614d-aa3c-46a5-a0ac-4697f6b71856",
+    "statement": "Assinale a alternativa INCORRETA abaixo. A Vigilância Epidemiológica em Saúde do Trabalhador (VESAT) é um conjunto de ações que proporcionam o conhecimento e a detecção de mudanças nos fatores determinantes e condicionantes da saúde individual e coletiva dos(as) trabalhadores(as), relacionados aos ambientes e processos de trabalho, com a finalidade de recomendar e adotar as medidas de prevenção e controle das doenças e dos agravos à saúde da população trabalhadora. Considerando a descrição acima, assinale a alternativa INCORRETA sobre as principais atribuições da VESAT:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Registro de Doenças e Agravos Relacionados ao Trabalho (Dart) nos sistemas de informação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Investigação epidemiológica de Doenças e Agravos Relacionados ao Trabalho (Dart)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realização da Análise de Situação de Saúde do Trabalhador e da Trabalhadora (ASSTT).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Remanejamento do ambiente de trabalho, a fim de manter a saúde do trabalhador assegurada.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender esta questão, é necessário diferenciar o papel da Vigilância Epidemiológica em Saúde do Trabalhador (VESAT) das ações de gestão administrativa ou de engenharia de segurança dentro das empresas. A VESAT é um braço da Vigilância em Saúde do Trabalhador (VISAT) focado na coleta, análise e interpretação de dados para subsidiar ações de prevenção.\n\nAnálise das alternativas:\n\na) Registro de Doenças e Agravos Relacionados ao Trabalho (DART) nos sistemas de informação: Esta alternativa está correta em relação às atribuições da VESAT. A alimentação de sistemas como o SINAN (Sistema de Informação de Agravos de Notificação) é a base da vigilância epidemiológica, permitindo quantificar e qualificar os problemas de saúde que atingem os trabalhadores.\n\nb) Investigação epidemiológica de Doenças e Agravos Relacionados ao Trabalho (DART): Esta alternativa está correta. Após a notificação ou suspeita, a VESAT deve investigar os casos para confirmar o nexo causal entre a doença/agravo e a atividade laboral, identificando se a exposição ocorreu de fato no ambiente de trabalho.\n\nc) Realização da Análise de Situação de Saúde do Trabalhador e da Trabalhadora (ASSTT): Esta alternativa está correta. A ASSTT é um diagnóstico populacional e territorial que utiliza dados epidemiológicos e socioeconômicos para identificar os perfis de adoecimento e morte dos trabalhadores de uma determinada região, orientando o planejamento das políticas públicas.\n\nd) Remanejamento do ambiente de trabalho, a fim de manter a saúde do trabalhador assegurada: Esta é a alternativa INCORRETA e, portanto, o gabarito. O remanejamento físico, a alteração de layout, a reforma de estruturas ou a gestão administrativa direta do ambiente de trabalho são responsabilidades do empregador, muitas vezes executadas pelos Serviços Especializados em Engenharia de Segurança e em Medicina do Trabalho (SESMT) da própria empresa. A VESAT recomenda intervenções e adota medidas de controle e fiscalização, mas não executa o remanejamento direto das instalações laborais.\n\nEm resumo, a VESAT atua na inteligência, no monitoramento e na recomendação baseada em dados, enquanto a modificação física direta do ambiente de trabalho (remanejamento) é uma ação operacional e administrativa da gestão das empresas ou das instituições.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:20.141Z"
+  },
+  {
+    "id": "AJUDA_c08c9d4a-0c58-4700-977b-b5fd21adcae5",
+    "originalId": "c08c9d4a-0c58-4700-977b-b5fd21adcae5",
+    "statement": "O escore clínico de infecção pulmonar, CPIS, permite a seleção de pacientes de baixo risco que podem precisar apenas de tratamento de curto prazo com antibióticos, além de ajudar a guiar na identificação de pacientes de maior gravidade e com possibilidade de pneumonia associada ao ventilador mecânico. Sobre o tratamento empírico da pneumonia associada ao serviço de saúde, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Para pacientes com fatores de risco para patógenos multi-resistentes, a monoterapia com tazobactem+piperacilina está indicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A ceftriaxona é um antibiótico indicado para pacientes com peneumonia sem fatores de risco para germes multi-resistentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deve-se evitar o uso de ciprofloxacina em pacientes com pneumonia associada à ventilação mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em pacientes portadores de doença renal crônica, o uso empírico da vancomicina para o tratamento de pneumonia nosocomial está contra indicado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O ertapenem é um tratamento adequado para pneumonia por pseudomonas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A abordagem terapêutica das pneumonias hospitalares (nosocomiais) e associadas à ventilação mecânica baseia-se primordialmente na estratificação de risco para patógenos multirresistentes (MDR).\n\nAlternativa (a) Incorreta: Pacientes com fatores de risco para germes multirresistentes (como uso prévio de antibióticos nos últimos 90 dias, choque séptico no momento da pneumonia, SDRA precedente ou tempo de internação prolongado) exigem terapia combinada. Geralmente, utilizam-se dois agentes com ação contra Pseudomonas aeruginosa de classes diferentes, mais um agente com cobertura para MRSA (Staphylococcus aureus resistente à meticilina). A monoterapia com piperacilina/tazobactam é reservada para casos sem esses riscos.\n\nAlternativa (b) Correta: Em pacientes com pneumonia hospitalar de início precoce (geralmente nos primeiros 4 a 5 dias de internação) e que não apresentam fatores de risco para patógenos multirresistentes, o tratamento pode ser feito com antibióticos de espectro mais estreito que cubram germes comunitários e gram-negativos não resistentes. A ceftriaxona é uma opção clássica e adequada para este perfil de paciente, cobrindo Streptococcus pneumoniae, Haemophilus influenzae e MSSA (S. aureus sensível à meticilina).\n\nAlternativa (c) Incorreta: A ciprofloxacina é uma quinolona com excelente atividade contra gram-negativos, incluindo a Pseudomonas aeruginosa. Ela é frequentemente utilizada como o segundo agente antipseudomônico em esquemas de terapia combinada para pneumonia associada à ventilação mecânica, não havendo recomendação de evitar seu uso, a menos que haja contraindicação específica do paciente ou alta taxa de resistência local.\n\nAlternativa (d) Incorreta: A doença renal crônica não contraindica o uso de vancomicina. No entanto, por ser uma droga nefrotóxica e de excreção renal, ela exige um ajuste rigoroso da dose de acordo com o clearance de creatinina e a monitorização dos níveis séricos (vancocinemia) para garantir a eficácia e evitar o agravamento da lesão renal.\n\nAlternativa (e) Incorreta: O ertapenem é um carbapenêmico que se diferencia do imipenem e do meropenem justamente por não possuir atividade contra Pseudomonas aeruginosa e Acinetobacter baumannii. Portanto, ele jamais deve ser utilizado se houver suspeita de infecção por Pseudomonas.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Ventilação Mecânica",
+      "Pneumonias Bacterianas",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:20.141Z"
+  },
+  {
+    "id": "AJUDA_c09d5e1c-5216-4516-aafc-af2686d5d412",
+    "originalId": "c09d5e1c-5216-4516-aafc-af2686d5d412",
+    "statement": "O primeiro sinal de puberdade em meninas e meninos, respectivamente, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Telarca e aumento do volume testicular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aparecimento de pêlos pubianos em ambos os sexos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Menarca e espermarca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aparecimento de pêlos axilares em ambos os sexos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A puberdade é o processo de transição entre a infância e a idade adulta, caracterizado pelo amadurecimento biológico e desenvolvimento dos caracteres sexuais secundários. O marco inicial da puberdade decorre da ativação do eixo hipotálamo-hipófise-gonadal.\n\nAlternativa A (Correta): Esta é a resposta correta de acordo com os estágios de Tanner. No sexo feminino, o primeiro sinal clínico da puberdade é a telarca, que corresponde ao aparecimento do broto mamário (Estágio M2 de Tanner), ocorrendo geralmente entre os 8 e 13 anos. No sexo masculino, o marco inicial é o aumento do volume testicular, definido por um volume igual ou superior a 4 ml ou um diâmetro maior que 2,5 cm (Estágio G2 de Tanner), ocorrendo habitualmente entre os 9 e 14 anos.\n\nAlternativa B (Incorreta): O aparecimento de pelos pubianos (pubarca) decorre principalmente da adrenarca (produção de andrógenos pela glândula adrenal). Embora a pubarca e a gonadarca (início da função das gônadas) ocorram em períodos próximos, a pubarca geralmente sucede à telarca nas meninas e ao aumento testicular nos meninos, não sendo o marcador cronológico inicial da puberdade central na maioria da população.\n\nAlternativa C (Incorreta): A menarca (primeira menstruação) e a espermarca (primeira ejaculação) são eventos tardios no desenvolvimento puberal. A menarca ocorre, em média, dois anos após a telarca, situando-se geralmente no estágio M4 de Tanner. A espermarca também ocorre após o desenvolvimento inicial dos testículos e pênis.\n\nAlternativa D (Incorreta): O aparecimento de pelos axilares é um evento secundário, associado à maturação da glândula adrenal (adrenarca), e costuma surgir após o início da pilosidade pubiana e dos marcos iniciais citados na alternativa A.\n\nEm resumo, para provas de residência, deve-se memorizar que a puberdade feminina começa com a telarca (M2) e a puberdade masculina começa com o aumento testicular ≥ 4 ml (G2).",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:20.141Z"
+  },
+  {
+    "id": "AJUDA_c0acf643-8284-48e3-9675-31b95776cf11",
+    "originalId": "c0acf643-8284-48e3-9675-31b95776cf11",
+    "statement": "Uma pessoa de 17 anos é avaliada por amenorreia primária. Apresenta desenvolvimento mamário normal, pelos pubianos presentes e ausência de vagina ao exame físico. Ultrassonografia pélvica revela ausência de útero. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome de Kallmann.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hiperplasia adrenal congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Mayer-Rokitansky-Küster-Hauser.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Morris.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Disgenesia gonadal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve uma paciente de 17 anos com amenorreia primária e caracteres sexuais secundários presentes (mamas e pelos pubianos). A presença de mamas indica ação estrogênica normal, o que sinaliza que o eixo hipotálamo-hipófise-ovariano é funcional. A presença de pelos pubianos indica que o corpo responde aos androgênios (seja de origem adrenal ou gonadal). O exame físico e a ultrassonografia revelam a ausência de estruturas derivadas dos ductos de Müller (útero e vagina). O principal desafio aqui é o diagnóstico diferencial entre as causas de ausência uterina em pacientes com mamas desenvolvidas.\n\nCOMENTÁRIOS SOBRE AS ALTERNATIVAS\n\nAlternativa a) INCORRETA. A Síndrome de Kallmann caracteriza-se por hipogonadismo hipogonadotrópico (falha na secreção de GnRH) associado a anosmia ou hiposmia. Como há deficiência de gonadotrofinas (FSH e LH), não ocorre a produção de estrogênios ovarianos, resultando em ausência de desenvolvimento mamário (infantilismo sexual), o que contraria o quadro descrito.\n\nAlternativa b) INCORRETA. A Hiperplasia Adrenal Congênita, especialmente em formas que causam virilização, pode levar a amenorreia e genitália ambígua ao nascimento. No entanto, essas pacientes possuem cariótipo 46,XX e apresentam útero e vagina normais, pois não há produção de hormônio antimülleriano. O problema costuma ser a virilização externa e não a ausência de órgãos internos.\n\nAlternativa c) CORRETA. A Síndrome de Mayer-Rokitansky-Küster-Hauser (agenesia mülleriana) é a causa mais provável. Trata-se de uma malformação onde os ductos de Müller não se desenvolvem, resultando em ausência de útero, tubas uterinas e dos dois terços superiores da vagina. O cariótipo é 46,XX e a função ovariana é normal, o que garante o desenvolvimento das mamas e a presença de pelos pubianos (ação dos androgênios adrenais), exatamente como relatado no caso.\n\nAlternativa d) INCORRETA. A Síndrome de Morris (Insensibilidade Completa aos Androgênios) é o principal diagnóstico diferencial. Nela, o indivíduo é 46,XY, possui testículos e produz hormônio antimülleriano (logo, não tem útero). Embora apresente desenvolvimento mamário (pela conversão periférica da testosterona em estrogênio), a característica marcante que a diferencia da Síndrome de Rokitansky é a ausência ou escassez de pelos pubianos e axilares, devido à resistência total dos receptores aos androgênios. Como a questão afirma que os pelos estão presentes, Morris é descartada.\n\nAlternativa e) INCORRETA. Na Disgenesia Gonadal (como na Síndrome de Turner 45,X ou disgenesia pura 46,XX), as gônadas não funcionam adequadamente (gônadas em fita). Sem estrogênio, a paciente não apresenta desenvolvimento mamário. Além disso, em casos de disgenesia, o útero geralmente está presente (embora possa ser pequeno/infantil), pois não há produção de hormônio antimülleriano.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:20.141Z"
+  },
+  {
+    "id": "AJUDA_c0b0ec4a-bdf1-4ece-a40c-0020fde6b219",
+    "originalId": "c0b0ec4a-bdf1-4ece-a40c-0020fde6b219",
+    "statement": "Um paciente de 58 anos buscou atendimento médico queixando-se de febre e dor em fossa ilíaca esquerda. Realizou tomografia, que mostrou sigmoide espessado com vários divertículos e presença de abscesso pericólico de 6 cm, restrito ao mesentério.\nA melhor conduta inicial para esse paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "antibioticoterapia oral ambulatorial;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "antibioticoterapia venosa exclusiva;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "antibioticoterapia venosa e drenagem percutânea;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "laparotomia com irrigação da cavidade abdominal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "laparotomia com procedimento de Hartmann.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico e tomográfico descrito aponta para uma diverticulite aguda complicada. A presença de um abscesso pericólico de 6 cm, restrito ao mesentério, classifica a doença, segundo a Classificação de Hinchey Modificada, como Hinchey Ib.\n\nA conduta baseia-se na estabilidade do paciente e, principalmente, no tamanho da coleção líquida:\n\nAlternativa a: Incorreta. A antibioticoterapia oral ambulatorial é reservada para casos de diverticulite não complicada (Hinchey 0 ou Ia), em pacientes sem sinais de alarme, com dor leve e que toleram a via oral. A presença de febre e um abscesso volumoso de 6 cm exige obrigatoriamente internação hospitalar.\n\nAlternativa b: Incorreta. Embora a antibioticoterapia venosa seja fundamental, o uso exclusivo de antibióticos costuma ser eficaz apenas para abscessos pequenos, geralmente menores que 3 ou 4 cm. Abscessos maiores que esse patamar apresentam uma alta taxa de falha no tratamento conservador isolado.\n\nAlternativa c: Correta. Para abscessos pericólicos ou pélvicos maiores que 3 a 4 cm (Hinchey Ib e II), a diretriz atual recomenda a associação de antibioticoterapia venosa com a drenagem percutânea (guiada por tomografia ou ultrassonografia). Essa conduta permite o controle do foco infeccioso de forma minimamente invasiva, transformando uma cirurgia de urgência (com alto risco de ostomia) em uma futura cirurgia eletiva, com maior chance de anastomose primária.\n\nAlternativa d: Incorreta. A laparotomia com irrigação da cavidade (lavagem laparoscópica ou aberta) é uma opção que pode ser considerada em casos de peritonite purulenta generalizada (Hinchey III). No caso da questão, o abscesso está bloqueado e restrito ao mesentério, não havendo peritonite generalizada que justifique tal abordagem.\n\nAlternativa e: Incorreta. O procedimento de Hartmann (ressecção do sigmoide, colostomia terminal e sepultamento do coto retal) é uma cirurgia de grande porte indicada para casos graves, como peritonite fecal (Hinchey IV) ou em pacientes com peritonite purulenta que apresentam instabilidade hemodinâmica. Seria uma conduta agressiva demais para um abscesso que pode ser resolvido com drenagem percutânea.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:20.141Z"
+  },
+  {
+    "id": "AJUDA_c0b8f32d-2856-49f9-815d-be0ff05cb769",
+    "originalId": "c0b8f32d-2856-49f9-815d-be0ff05cb769",
+    "statement": "Paciente de 22 anos, história de diarreia com muco e sangue oito vezes ao dia, há seis meses. Refere perda de 4 kg no período. Frente à suspeita de Doença Inflamatória Intestinal, podemos afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a presença de fístulas anorretais ao exame físico favorece a hipótese de retocolite ulcerativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o exame de calprotectina fecal, elevado duas vezes acima do valor normal, confirma o diagnóstico de Doença Inflamatória Intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o uso de corticosteroides via oral pode ser uma opção segura para tratamento de manutenção da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "os exames de anticorpos ASCA e pANCA apresentam baixa sensibilidade e especificidade, não sendo recomendados para diagnóstico na prática clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A: Incorreta. A presença de fístulas, especialmente as anorretais ou perianais, é uma característica marcante da Doença de Crohn, devido à sua natureza de inflamação transmural (que atinge todas as camadas da parede do intestino). Na Retocolite Ulcerativa, o processo inflamatório é restrito à mucosa e submucosa, o que não leva à formação de trajetos fistulosos.\n\nAlternativa B: Incorreta. A calprotectina fecal é um biomarcador de inflamação intestinal muito útil para triagem e monitoramento, mas não é específica para Doença Inflamatória Intestinal (DII). Ela pode estar elevada em infecções intestinais, neoplasias, uso de anti-inflamatórios não esteroidais e outras colites. O diagnóstico de DII requer a combinação de dados clínicos, exames de imagem, endoscopia com biópsias e histopatologia.\n\nAlternativa C: Incorreta. Os corticosteroides são potentes agentes para a indução da remissão em pacientes com crises moderadas a graves, mas nunca devem ser utilizados como terapia de manutenção. O uso prolongado está associado a efeitos colaterais graves (osteoporose, catarata, síndrome de Cushing, diabetes) e o fármaco não possui eficácia comprovada em prevenir recidivas a longo prazo. A manutenção deve ser feita com aminossalicilatos, imunomoduladores ou terapia biológica.\n\nAlternativa D: Correta. Os anticorpos ASCA (geralmente associados à Doença de Crohn) e pANCA (geralmente associados à Retocolite Ulcerativa) possuem baixa sensibilidade, o que significa que muitos pacientes com DII terão resultados negativos. Além disso, a especificidade não é alta o suficiente para substituir os exames padrão. Por esses motivos, os consensos atuais não recomendam seu uso rotineiro para o diagnóstico na prática clínica, reservando-os para casos específicos de colite indeterminada.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:20.141Z"
+  },
+  {
+    "id": "AJUDA_c0ba4edc-f5c6-482e-b736-2af86f1f6052",
+    "originalId": "c0ba4edc-f5c6-482e-b736-2af86f1f6052",
+    "statement": "Feminino, 35 anos, apresenta quadro de fadiga persistente, febre baixa intermitente e artrite em múltiplas articulações. Após investigação laboratorial, foram diagnosticados autoanticorpos anti-núcleo (ANA) positivos e anticorpos anti-DNA de cadeia dupla (anti-dsDNA) elevados, sendo estabelecido o diagnóstico de Lúpus Eritematoso Sistêmico (LES). A paciente está sob tratamento com imunossupressores, mas demonstra preocupação sobre a segurança da vacinação, especialmente em relação à gripe e ao HPV. Qual das seguintes opções representa a consideração mais adequada sobre a vacinação em pacientes com doenças autoimunes, como o Lúpus Eritematoso Sistêmico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vacinação em pacientes com doenças autoimunes é sempre contraindicada devido ao risco de exacerbação da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estudos indicam que a vacinação contra o HPV pode ser segura e benéfica para pacientes com LES, mas a vacinação deve ser cuidadosamente avaliada em cada caso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pacientes com doenças autoimunes não devem ser vacinados, pois a vacinação pode anular os efeitos dos imunossupressores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vacinação é desnecessária para pacientes autoimunes, pois já estão sob tratamento com medicamentos que protegem contra infecções.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Todas as vacinas são seguras para pacientes com doenças autoimunes, independentemente do tipo de tratamento imunossupressor.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO tema central da questão é a vacinação em pacientes imunocomprometidos por doenças autoimunes e tratamentos imunossupressores. Pacientes com Lúpus Eritematoso Sistêmico (LES) possuem maior vulnerabilidade a infecções devido à própria fisiopatologia da doença e ao uso de medicações que reduzem a resposta imune, tornando a imunização uma parte crucial do cuidado preventivo.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A vacinação não é universalmente contraindicada. Embora exista um receio teórico de que o estímulo imunológico da vacina possa causar um \"flare\" (exacerbação) da doença, estudos clínicos mostram que a maioria das vacinas inativadas não demonstra esse efeito de forma significativa. O risco de contrair uma infecção grave supera os riscos potenciais da vacinação na imensa maioria dos casos.\n\nAlternativa B (Correta): Esta alternativa está alinhada com as recomendações da Sociedade Brasileira de Reumatologia (SBR) e do EULAR. Especificamente sobre o HPV, mulheres com LES apresentam maior prevalência de infecção persistente pelo vírus e maiores taxas de lesões precursoras de câncer do colo do útero. A vacina contra o HPV mostrou-se segura e imunogênica em pacientes com lúpus. A avaliação individualizada é necessária para escolher o momento de menor atividade da doença, otimizando a eficácia da vacina.\n\nAlternativa C (Incorreta): Não há evidências de que a vacinação anule os efeitos dos imunossupressores. O que ocorre é uma preocupação inversa: o tratamento imunossupressor pode reduzir a resposta vacinal (o corpo produz menos anticorpos em resposta à vacina), mas isso não impede a vacinação, apenas reforça a necessidade de realizá-la, preferencialmente, em momentos de estabilidade clínica.\n\nAlternativa D (Incorreta): Os medicamentos imunossupressores não protegem contra infecções; eles agem controlando a resposta autoimune desregulada. Como efeito colateral, diminuem a capacidade do corpo de lutar contra patógenos externos (vírus e bactérias). Assim, a vacinação é uma estratégia vital para tentar compensar essa vulnerabilidade.\n\nAlternativa E (Incorreta): Esta afirmação é falsa. A segurança da vacina depende diretamente do seu tipo. Vacinas de agentes vivos atenuados (como Febre Amarela, Tríplice Viral e Varicela) são, em regra, contraindicadas para pacientes sob imunossupressão significativa (como o uso de prednisona em doses altas, micofenolato ou biológicos), devido ao risco de a vacina causar a própria doença que deveria prevenir.\n\nResumo para Provas:\n1. Vacinas Inativadas (Gripe, HPV, Pneumococo): Geralmente seguras e recomendadas para pacientes com doenças autoimunes.\n2. Vacinas de Agentes Vivos (Febre Amarela, BCG, Tríplice Viral): Contraindicadas se o paciente estiver em uso de imunossupressão moderada a grave.\n3. Momento Ideal: A vacinação deve ser planejada, preferencialmente, antes de iniciar tratamentos imunossupressores potentes ou quando a doença estiver em remissão/baixa atividade.\n\nGABARITO: Alternativa (b).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Imunizações",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:20.141Z"
+  },
+  {
+    "id": "AJUDA_c0c1a5e4-8b99-4c6d-ace9-9b196b1b73d6",
+    "originalId": "c0c1a5e4-8b99-4c6d-ace9-9b196b1b73d6",
+    "statement": "Uma paciente de 49 anos foi internada na enfermaria de clínica médica por quadro de síndrome consumptiva, ascite e fraqueza em membros inferiores. A paciente conta que tudo começou 1 ano antes com dormência nas pernas ascendendo até o meio da perna e posterior redução de força em membros inferiores. Naquela época, houve turvação visual e cefaleia. Com aproximadamente 4 meses de sintomas, sem limitação para trabalhar e realizar as tarefas da vida diária, a cefaleia e a turvação visual ficaram mais proeminentes. Segundo a paciente, foram realizados diversos exames (ressonância de crânio, coluna cervical e lombar), sem evidência de alterações. A pressão do liquor estava alta, motivando o uso de acetazolamida por 8 meses (até a internação). No dia da internação, pôde-se observar hepatoesplenomegalia, ascite de grande volume, déficit sensitivo-motor distal em membros inferiores com hiporreflexia, fenômeno de Raynaud, cistos em tireoide (ultrassom confirmando e uso prévio de levotiroxina) e lesões cutâneas hipercrômicas. Outros exames demonstraram lesões osteoescleróticas em esterno, derrame pleural e pericárdico e padrão de polirradiculoneuropatia desmielinizante crônica.\nA conduta adequada para o quadro é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "dosagem de fator reumatoide, fator antinuclear, anti-Scl-70, anticentrômero e pulsoterapia por provável doença do tecido conjuntivo indiferenciada ou sobreposição de lúpus com esclerodermia em evolução grave;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "dosagem de eletroforese de proteínas séricas e urinárias com imunofixação em busca de pico monoclonal;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "biópsia de gordura abdominal em busca de proteína amiloide;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "biópsia de peritônio se o gradiente soro-ascite for menor que 1,1;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "punção aspirativa de cisto tireoidiano.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico para a Síndrome de POEMS, uma desordem multissistêmica rara associada a uma discrasia de plasmócitos. O acrônimo POEMS refere-se a: Polineuropatia, Organomegalia, Endocrinopatia, Proteína Monoclonal e alterações de Pele (Skin).\n\nA paciente apresenta todos os componentes do acrônimo e outros achados associados:\n1. Polineuropatia: Déficit sensitivo-motor distal com padrão desmielinizante.\n2. Organomegalia: Hepatoesplenomegalia observada no exame físico.\n3. Endocrinopatia: Hipotireoidismo (uso de levotiroxina) e cistos tireoidianos.\n4. Proteína Monoclonal: É um critério obrigatório para o diagnóstico, que deve ser buscado ativamente.\n5. Skin (Pele): Lesões cutâneas hipercrômicas.\n6. Outros achados: Lesões osteoescleróticas (altamente sugestivas), ascite, derrame pleural/pericárdico (sobrecarga de volume) e papiledema (hipertensão intracraniana idiopática/pseudotumor cerebral manifestado por cefaleia e turvação visual).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o fenômeno de Raynaud e a ascite possam ocorrer em doenças do tecido conjuntivo (como esclerodermia ou lúpus), essas patologias não explicam as lesões osteoescleróticas nem o padrão específico de polirradiculoneuropatia desmielinizante associado a esse conjunto de sintomas multissistêmicos.\n\nAlternativa b) Correta. Para fechar o diagnóstico de Síndrome de POEMS, é obrigatória a demonstração de uma discrasia plasmocitária. A eletroforese de proteínas com imunofixação (tanto no sangue quanto na urina) é o passo fundamental para identificar a presença de uma proteína monoclonal (geralmente de cadeia leve lambda), que é um dos critérios maiores obrigatórios da doença.\n\nAlternativa c) Incorreta. A amiloidose sistêmica (AL) é um diagnóstico diferencial importante de polineuropatia e organomegalia. No entanto, a amiloidose geralmente causa lesões ósseas líticas (se houver associação com mieloma) e não osteoescleróticas. Além disso, a hipertensão intracraniana e as lesões cutâneas hipercrômicas são marcos da POEMS, não da amiloidose.\n\nAlternativa d) Incorreta. A biópsia de peritônio seria indicada na suspeita de carcinomatose peritoneal ou tuberculose peritoneal em casos de ascite com gradiente de albumina soro-ascite (GASA) baixo. Embora a paciente tenha ascite, essa é uma manifestação secundária da síndrome de extravasamento capilar ou infiltração da doença de base, e a biópsia não esclareceria o diagnóstico sistêmico.\n\nAlternativa e) Incorreta. A punção de cisto tireoidiano avaliaria uma patologia localizada na tireoide, mas não explicaria a síndrome consumptiva, a polineuropatia grave, as lesões ósseas e a organomegalia. A endocrinopatia é apenas uma parte de uma síndrome maior.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Mieloma Múltiplo",
+      "Doenças Neuromusculares"
+    ],
+    "difficulty": 88.03385697831388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:20.141Z"
+  },
+  {
+    "id": "AJUDA_c0d20b98-383a-419c-92c3-83adab6b22b2",
+    "originalId": "c0d20b98-383a-419c-92c3-83adab6b22b2",
+    "statement": "Um paciente é diagnosticado com pancreatite aguda e evolui com piora do quadro clínico. Identifique o marcador laboratorial cuja elevação está mais consistentemente associada a um prognóstico grave e a maior risco de complicações nesta condição:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amilase sérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lipase sérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Proteína C-reativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Desidrogenase lática (DHL).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Gama-glutamil transferase (GGT).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, é fundamental diferenciar os marcadores utilizados para o diagnóstico da pancreatite aguda daqueles utilizados para definir o prognóstico (gravidade) da doença. Enquanto as enzimas pancreáticas confirmam a inflamação, outros marcadores refletem a intensidade da resposta inflamatória sistêmica.\n\nAlternativa a) Amilase sérica: Incorreta. A amilase é um marcador clássico para o diagnóstico de pancreatite aguda, elevando-se precocemente no início do quadro. No entanto, o nível de elevação da amilase não tem correlação com a gravidade da doença. Um paciente com níveis extremamente altos pode ter uma evolução benigna, enquanto outro com níveis discretamente aumentados pode evoluir para a forma grave.\n\nAlternativa b) Lipase sérica: Incorreta. Assim como a amilase, a lipase é uma enzima utilizada para o diagnóstico, sendo mais específica e permanecendo elevada por mais tempo no sangue. Contudo, seus valores absolutos também não servem para predizer complicações ou a gravidade do quadro clínico.\n\nAlternativa c) Proteína C-reativa (PCR): Correta. A PCR é um reagente de fase aguda produzido pelo fígado sob estímulo de citocinas inflamatórias, como a interleucina-6. Na prática clínica, é considerada o marcador laboratorial isolado mais fidedigno para avaliar o prognóstico na pancreatite aguda. Valores superiores a 150 mg/L, medidos preferencialmente entre 48 e 72 horas após o início dos sintomas, indicam um alto risco de pancreatite grave e necrose pancreática.\n\nAlternativa d) Desidrogenase lática (DHL): Incorreta. A DHL é um marcador de dano celular e hemólise. Embora ela faça parte de escores diagnósticos de gravidade, como os Critérios de Ranson, ela é um marcador inespecífico e, isoladamente, não possui a mesma consistência e valor preditivo que a PCR para determinar o prognóstico grave ao longo da internação.\n\nAlternativa e) Gama-glutamil transferase (GGT): Incorreta. A GGT é um marcador de colestase e agressão biliar. Sua elevação é útil para identificar a etiologia da pancreatite (sugerindo origem biliar/obstrutiva), mas não fornece informações sobre a gravidade da inflamação pancreática ou o risco de complicações sistêmicas.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:20.141Z"
+  },
+  {
+    "id": "AJUDA_c0dc9651-207a-41f8-a4f3-94f45f09d836",
+    "originalId": "c0dc9651-207a-41f8-a4f3-94f45f09d836",
+    "statement": "De acordo com a Diretriz Brasileira de Dislipidemia e Prevenção da Aterosclerose (2025), qual das alternativas abaixo está CORRETA em relação ao manejo da dislipidemia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento medicamentoso deve ser iniciado em adultos com LDL-colesterol ≥ 100 mg/dL, independentemente do risco cardiovascular global.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A avaliação do risco cardiovascular global é recomendada apenas para indivíduos acima de 50 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em pacientes com risco cardiovascular muito alto, a meta de LDL-colesterol deve ser < 50 mg/dL, podendo-se considerar valores ainda menores se tolerados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O uso de estatinas é contraindicado em pacientes com insuficiência renal crônica estágio 3 ou superior.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. A decisão de iniciar o tratamento farmacológico não é determinada isoladamente por um valor fixo de LDL-colesterol. O manejo é guiado pela estratificação de risco cardiovascular global. Pacientes de baixo risco, por exemplo, possuem metas mais flexíveis (LDL menor que 130 mg/dL) e o tratamento inicial baseia-se em mudanças no estilo de vida.\n\nAlternativa b: Incorreta. A avaliação do perfil lipídico e a estratificação de risco devem começar precocemente, a partir dos 20 anos de idade em adultos jovens em geral, ou ainda mais cedo na infância e adolescência quando há histórico familiar de dislipidemia genética ou eventos cardiovasculares prematuros.\n\nAlternativa c: Correta. Em indivíduos de muito alto risco cardiovascular (como aqueles com doença aterosclerótica clinicamente manifesta), a diretriz estabelece a meta de LDL-colesterol menor que 50 mg/dL associada a uma redução de pelo menos 50% do valor basal. Reduções ainda maiores são seguras e trazem benefício cardiovascular adicional.\n\nAlternativa d: Incorreta. A doença renal crônica é uma condição de alto risco cardiovascular e o uso de estatinas não é contraindicado a partir do estágio 3. Na verdade, as estatinas (associadas ou não à ezetimiba) são recomendadas para prevenção de eventos ateroscleróticos nessa população, exigindo apenas ajustes de dose para determinadas moléculas em estágios mais avançados.\n\nGabarito definitivo: Letra c.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:43:20.141Z"
+  }
+]

@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_62de73bc-9a4b-4e5b-a4d9-f8f486e8d9ac",
+    "originalId": "62de73bc-9a4b-4e5b-a4d9-f8f486e8d9ac",
+    "statement": "Paciente de 25 anos, com dor abdominal há 24 horas, procura o pronto atendimento e, após investigação, recebe diagnóstico de apendicite e indicação de apendicectomia videolaparoscópica. Durante a colocação dos portais, o trocarte do quadrante inferior esquerdo deve ser colocado com cuidado para evitar a lesão da seguinte estrutura:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vasos hipogástricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vasos epigástricos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Nervo femoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Artéria femoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Artéria ilíaca esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O objetivo da questão é identificar a estrutura anatômica da parede abdominal que corre maior risco de lesão durante a inserção de trocartes acessórios nos quadrantes inferiores durante uma laparoscopia.\n\nAlternativa (a) Incorreta: Os vasos hipogástricos (ou vasos ilíacos internos) localizam-se profundamente na pelve, junto à parede pélvica posterior. Eles não estão em risco direto durante a passagem de um trocarte pela parede abdominal anterior no quadrante inferior esquerdo.\n\nAlternativa (b) Correta: Os vasos epigástricos inferiores (artéria e veias) originam-se dos vasos ilíacos externos e ascendem pela parede abdominal anterior, situando-se profundamente ao músculo reto abdominal ou em sua borda lateral. Eles são as estruturas mais frequentemente lesionadas na inserção de portais laterais se não houver cuidado com a transiluminação da parede ou visualização interna direta. A lesão desses vasos pode causar sangramento persistente para dentro da cavidade abdominal ou a formação de hematomas volumosos na parede.\n\nAlternativa (c) Incorreta: O nervo femoral origina-se do plexo lombar e segue um trajeto profundo, posterior ao músculo psoas maior, passando sob o ligamento inguinal para chegar à coxa. Não é uma estrutura da parede abdominal anterior atingida por trocartes.\n\nAlternativa (d) Incorreta: A artéria femoral é a continuação da artéria ilíaca externa após cruzar o ligamento inguinal. Ela se localiza na região da virilha e face anterior da coxa, abaixo da área de posicionamento habitual dos portais de laparoscopia abdominal.\n\nAlternativa (e) Incorreta: A artéria ilíaca esquerda é um vaso retroperitoneal profundo. Embora grandes vasos possam ser lesionados durante a inserção do primeiro trocarte (geralmente umbilical) realizada às cegas, os trocartes secundários (como o do quadrante inferior esquerdo) são colocados sob visão direta do laparoscópio. Nesse contexto, a estrutura da parede abdominal que exige maior cautela são os vasos epigástricos, e não os vasos ilíacos retroperitoneais.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:17.557Z"
+  },
+  {
+    "id": "AJUDA_62ef144d-e0a0-45aa-bcc1-e527fc00f277",
+    "originalId": "62ef144d-e0a0-45aa-bcc1-e527fc00f277",
+    "statement": "Um recém-nascido, aos cinco minutos de vida, apresenta choro vigoroso, frequência cardíaca de 110 batimentos por minuto, chora quando estimulado, tem movimentos ativos e a pele rosada. Sobre o caso, há as seguintes afirmativas:\n\nl. O choro vigoroso recebe 2 pontos na escala de Apgar.\nll. A frequência cardíaca de 110 batimentos por minuto recebe 2 pontos na escala de Apgar.\nlll. A resposta ao estímulo com choro recebe 1 ponto na escala de Apgar.\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, V, F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "F, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, devemos aplicar os critérios da Escala de Apgar, utilizada para avaliar a vitalidade do recém-nascido nos minutos 1 e 5 de vida. A escala analisa cinco parâmetros: Frequência Cardíaca, Esforço Respiratório, Tônus Muscular, Irritabilidade Reflexa e Cor da Pele. Cada parâmetro pode receber de 0 a 2 pontos.\n\nAnálise das afirmativas:\n\nAfirmativa I (Verdadeira): O esforço respiratório é avaliado pela qualidade do choro. Um choro vigoroso indica que o recém-nascido está respirando bem e de forma rítmica, o que confere a pontuação máxima de 2 pontos neste critério.\n\nAfirmativa II (Verdadeira): Na avaliação da frequência cardíaca, se o valor for superior a 100 batimentos por minuto (bpm), o recém-nascido recebe 2 pontos. Como o paciente apresenta 110 bpm, a pontuação atribuída é 2.\n\nAfirmativa III (Falsa): A irritabilidade reflexa avalia a resposta do bebê a estímulos (como a aspiração de vias aéreas ou o manuseio). Se o bebê responde com choro vigoroso, tosse ou espirro, ele recebe 2 pontos. A pontuação 1 é dada quando o bebê apresenta apenas uma careta ou reação discreta ao estímulo. Portanto, o choro como resposta ao estímulo vale 2 pontos, e não 1.\n\nAnálise das alternativas:\n\na) Incorreta. A afirmativa III é falsa, pois o choro ao estímulo pontua 2 na escala de irritabilidade reflexa.\nb) Incorreta. A afirmativa II é verdadeira (FC acima de 100 bpm vale 2 pontos) e a afirmativa III é falsa.\nc) Correta. Identifica corretamente que as duas primeiras proposições seguem os critérios de pontuação máxima (2 pontos) para respiração e frequência cardíaca, enquanto a terceira erra ao atribuir apenas 1 ponto para uma resposta reflexa vigorosa.\nd) Incorreta. As afirmativas I e II estão tecnicamente corretas conforme os manuais de neonatologia e reanimação neonatal.\n\nGabarito: Letra (c).",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:17.557Z"
+  },
+  {
+    "id": "AJUDA_62f5129a-ce1d-4f32-bd87-57f34f1769b4",
+    "originalId": "62f5129a-ce1d-4f32-bd87-57f34f1769b4",
+    "statement": "Mulher de 34 anos, com 4 filhos, desempregada, comparece a uma unidade básica de saúde (UBS) com queixa de atraso menstrual de um mês. Durante a consulta, a paciente relata que está muito aflita, por ter realizado um teste de gravidez cujo resultado foi positivo. Afirma que compareceu à consulta porque não deseja essa gravidez. Quando questionada, a paciente nega qualquer situação de violência sexual. Nesse caso, além de acolher e acalmar a paciente, a melhor abordagem a ser realizada pelo médico deve ser",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar o pré-natal regular, mencionando a possibilidade de entrega voluntária da criança para adoção após seu nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "desencorajar a realização de um aborto, apesar da paciente ter direito, enfatizando os riscos à saúde advindos do procedimento de abortamento, como hemorragia, infecção, perfuração uterina, infertilidade e morte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "assegurar o direito às informações clínicas e legais adequadas, garantir o sigilo e informar sobre sintomas que justifiquem a busca de atendimento médico em caso de realização de um aborto inseguro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "questionar abertamente sobre a intenção de abortar, sem julgamento, e informá-la que tem obrigação ética de fazer um boletim de ocorrência caso o aborto venha a ser realizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a conduta médica diante de uma gravidez indesejada e o manejo ético e clínico em situações de vulnerabilidade social e reprodutiva. O foco principal é o acolhimento, o sigilo profissional e a redução de danos.\n\nAlternativa (a) Incorreta: Embora a entrega voluntária para adoção seja uma opção legal prevista no Estatuto da Criança e do Adolescente (ECA), essa conduta foca exclusivamente na continuidade da gestação. Ao sugerir apenas o pré-natal e a adoção, o médico ignora o sofrimento imediato da paciente e falha em fornecer informações sobre seus direitos e sobre os riscos de procedimentos inseguros aos quais ela possa se submeter.\n\nAlternativa (b) Incorreta: O papel do médico não é \"desencorajar\" ou exercer julgamento moral sobre as decisões da paciente. Além disso, a afirmação de que a paciente \"tem direito\" ao aborto neste caso específico está incorreta perante a legislação brasileira atual, que permite a interrupção da gravidez apenas em três situações: estupro, risco de vida para a gestante ou anencefalia fetal. O uso do medo (elencando complicações) como estratégia de convencimento fere a autonomia e a relação médico-paciente.\n\nAlternativa (c) Correta: Esta alternativa reflete a postura ética e humanizada recomendada pelo Ministério da Saúde e pelo Código de Ética Médica. O médico deve fornecer informações baseadas em evidências, garantir o sigilo profissional (fundamental para que a paciente se sinta segura) e orientar sobre a redução de danos. Informar sobre sinais de alerta (hemorragia, febre, dor intensa) é essencial para que, caso a paciente opte por um aborto inseguro, ela saiba quando procurar assistência médica emergencial para evitar complicações graves ou óbito.\n\nAlternativa (d) Incorreta: O sigilo médico é um dever profissional e um direito do paciente. O Código de Ética Médica (Art. 73) proíbe o médico de revelar segredo profissional que possa expor o paciente a processo penal. Portanto, o médico não deve, em hipótese alguma, notificar a polícia ou registrar boletim de ocorrência caso a paciente realize um aborto. A quebra de sigilo nessas circunstâncias constitui infração ética e crime de violação de segredo profissional.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Planejamento Familiar",
+      "Ética Médica"
+    ],
+    "difficulty": 91.41239599699381,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:17.557Z"
+  },
+  {
+    "id": "AJUDA_62fa4034-5917-47f8-8972-2e09f7ee0658",
+    "originalId": "62fa4034-5917-47f8-8972-2e09f7ee0658",
+    "statement": "Assinale a alternativa que apresenta apenas informações corretas sobre o diabetes gestacional.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se a glicemia de jejum da primeira consulta for maior ou igual a 92 e menor que 126, é estabelecido o diagnóstico de diabetes gestacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Se a glicemia de jejum da primeira consulta for maior que 125, é estabelecido o diagnóstico de diabetes gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Um teste de tolerância à glicose deve ser oferecido a todas as gestantes obesas na primeira consulta de pré-natal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gestantes que apresentam glicosúria devem ser submetidas a um teste de tolerância à glicose, independentemente da idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda os critérios diagnósticos do Diabetes Mellitus Gestacional (DMG) e do Diabetes Mellitus diagnosticado na gestação (*Overt Diabetes*), baseando-se nas diretrizes atuais da Sociedade Brasileira de Diabetes e do Ministério da Saúde.\n\nAlternativa (a): CORRETA. O diagnóstico de Diabetes Gestacional é feito quando a glicemia de jejum, realizada preferencialmente na primeira consulta de pré-natal (antes de 24–28 semanas), apresenta valores entre 92 mg/dL e 125 mg/dL. Portanto, um valor maior ou igual a 92 e menor que 126 (ou seja, até 125) confirma o DMG.\n\nAlternativa (b): INCORRETA. Se a glicemia de jejum na primeira consulta for maior ou igual a 126 mg/dL, o diagnóstico não é de Diabetes Gestacional, mas sim de Diabetes Mellitus prévio à gestação ou *Overt Diabetes*. Nesse caso, a paciente já preenche critérios para diabetes fora do período gestacional.\n\nAlternativa (c): INCORRETA. A conduta inicial para todas as gestantes na primeira consulta de pré-natal é a solicitação da glicemia de jejum. O Teste Oral de Tolerância à Glicose (TOTG 75g) é o exame padrão-ouro para o rastreio universal entre a 24ª e a 28ª semana de gestação para aquelas pacientes que tiveram glicemia de jejum inicial normal (inferior a 92 mg/dL).\n\nAlternativa (d): INCORRETA. A glicosúria na gestação é um achado frequente e pouco específico, pois ocorre uma redução fisiológica do limiar renal para a glicose durante a gravidez. Embora possa alertar para a necessidade de investigação, o rastreamento do diabetes segue protocolos baseados na glicemia de jejum e no TOTG em momentos específicos (primeira consulta e entre 24–28 semanas), e não de forma aleatória em qualquer idade gestacional apenas pela presença de glicosúria isolada.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:17.557Z"
+  },
+  {
+    "id": "AJUDA_63097422-41a3-41e5-b8b8-06d3c44ecb7b",
+    "originalId": "63097422-41a3-41e5-b8b8-06d3c44ecb7b",
+    "statement": "A Classificação de POP-Q para estadiamento do Prolapso dos Órgãos Pélvicos é a maneira mais aceita para quantificar os prolapsos das paredes vaginais. Em uma paciente com prolapso da parede vaginal anterior, qual ponto de POP-Q é descrito como o de maior prolapso e por isso deverá ser considerado para o estadiamento desta parede vaginal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ap",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "B",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ba",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O sistema POP-Q (Pelvic Organ Prolapse Quantification) é o padrão-ouro para a quantificação do prolapso de órgãos pélvicos, utilizando pontos de referência anatômicos em relação ao hímen, que é considerado o ponto zero.\n\nPara a parede vaginal anterior, o sistema avalia dois pontos principais: Aa e Ba.\n\n- Ponto Aa: Localiza-se na linha média da parede vaginal anterior, a exatamente 3 cm proximais ao hímen. Sua amplitude varia de -3 (posição normal) a +3 cm (prolapso total). Por ser um ponto fixo em relação à distância do hímen, ele não representa necessariamente o ponto de maior descida.\n- Ponto Ba: Representa a posição mais distal (mais baixa ou de maior prolapso) de qualquer parte da parede vaginal anterior, situada entre o fundo de saco vaginal anterior (ou ponto C) e o ponto Aa. Em pacientes sem prolapso, o ponto Ba é -3. Quando há prolapso, é o ponto Ba que nos diz o quanto essa parede efetivamente desceu, sendo o valor de referência para o estadiamento dessa face vaginal.\n\nAnálise das alternativas:\n\na) Ap: Incorreta. O ponto Ap (p de posterior) refere-se à parede vaginal posterior, localizado a 3 cm proximais ao hímen na linha média da face posterior.\n\nb) Aa: Incorreta. Embora esteja na parede anterior, o ponto Aa é fixo (3 cm do hímen). O ponto que descreve o maior prolapso de toda a extensão dessa parede é o Ba.\n\nc) B: Incorreta. Na nomenclatura oficial do POP-Q, não existe o ponto \"B\" isolado. Os pontos são obrigatoriamente designados como Ba (anterior) ou Bp (posterior).\n\nd) A: Incorreta. Da mesma forma que a alternativa anterior, não existe ponto \"A\" isolado. A nomenclatura correta exige a especificação da parede: Aa (anterior) ou Ap (posterior).\n\ne) Ba: Correta. Por definição, o ponto Ba é o ponto de maior prolapso da parede vaginal anterior, sendo o parâmetro fundamental para o estadiamento deste compartimento.\n\nGabarito: Letra (e).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:17.557Z"
+  },
+  {
+    "id": "AJUDA_630dfb36-70d3-4b74-98f7-f946875d0632",
+    "originalId": "630dfb36-70d3-4b74-98f7-f946875d0632",
+    "statement": "Paciente vivendo com HIV/AIDS (PVHA), masculino, com 32 anos de idade, vem à consulta. Está assintomático, embora bastante ansioso. Refere fazer uso da mesma terapia antirretroviral (TARV), tenofovir/lamivudina/efavirenz, desde o início do seu tratamento em 2014. Traz exames feitos há 15 dias com linfócitos T CD4=600 células/mm³ e carga viral (CV) do HIV1=550 cópias/mL. O paciente perdeu os exames prévios, mas refere que sua CV sempre foi indetectável e ficou surpreso com os exames atuais. Sobre o caso descrito, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Está indicado manter a TARV e observar, pois essa CV caracteriza apenas um “blip”, ou seja, replicação transitória de vírus selvagens a partir dos reservatórios virais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Está indicado trocar a TARV na atual consulta devido à falha virológica observada, a qual é provavelmente secundária à baixa barreira genética dos medicamentos em uso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Está indicado pesquisar eventuais interações medicamentosas, avaliar se pode estar ocorrendo comprometimento da absorção dos antirretrovirais bem como solicitar uma segunda CV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Está indicado investigar a presença de infecções oportunistas associadas que possam estar contribuindo para a falha virológica observada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso apresenta um paciente estável, com bom nível de linfócitos T CD4 (600 células/mm³), que vinha mantendo carga viral (CV) indetectável e apresentou uma elevação pontual para 550 cópias/mL. De acordo com as diretrizes de manejo do HIV, a falha virológica não é diagnosticada com apenas um exame, mas sim pela persistência de carga viral detectável em duas medições consecutivas.\n\nAlternativa a: Incorreta. Embora a situação possa vir a ser confirmada posteriormente como um blip (uma viremia transitória que geralmente não ultrapassa 500 a 1.000 cópias/mL), o médico não deve apenas observar passivamente. É fundamental investigar ativamente fatores que possam ter causado essa elevação antes de rotular o evento, além de ser obrigatória a repetição do exame para confirmação.\n\nAlternativa b: Incorreta. A troca da terapia antirretroviral (TARV) é uma medida séria e não deve ser realizada com base em um único resultado de carga viral detectável em um paciente que estava previamente suprimido. A conduta precoce de troca pode levar ao descarte desnecessário de esquemas terapêuticos eficazes. A falha virológica precisa de confirmação laboratorial e avaliação de adesão.\n\nAlternativa c: Correta. Esta é a conduta preconizada pelos protocolos de manejo do HIV. Diante de uma carga viral detectável em um paciente que estava indetectável, o primeiro passo é realizar uma anamnese detalhada focada na adesão às doses, investigar o uso de outros medicamentos (como antiácidos ou anticonvulsivantes) que possam causar interações medicamentosas e reduzir a concentração dos antirretrovirais, ou verificar condições gastrintestinais que prejudiquem a absorção. Após esse manejo inicial, solicita-se uma nova carga viral (geralmente em 4 a 8 semanas) para diferenciar o \"blip\" da falha virológica persistente.\n\nAlternativa d: Incorreta. O paciente está assintomático e apresenta CD4 de 600 células/mm³, nível em que o sistema imunológico está preservado, tornando a presença de infecções oportunistas altamente improvável. Embora infecções comuns (como quadros virais respiratórios) ou vacinação recente possam causar elevações transitórias da carga viral, a investigação sistemática de infecções oportunistas não é a conduta indicada para este perfil clínico e laboratorial.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:17.557Z"
+  },
+  {
+    "id": "AJUDA_63113145-c48a-468b-82c0-a1f1a1fb3034",
+    "originalId": "63113145-c48a-468b-82c0-a1f1a1fb3034",
+    "statement": "Um estudo prospectivo analisou a obesidade, a dieta e os hábitos de exercício físico de indivíduos de uma universidade. Qual é o teste adequado para avaliar se o índice de massa corpórea médio é o mesmo para o consumo baixo e alto de gordura?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Análise de correlação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Teste Qui-quadrado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste t de Student",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Análise de variância (ANOVA)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, precisamos identificar a natureza das variáveis envolvidas e o objetivo do estudo. O enunciado solicita a comparação do Índice de Massa Corpórea (IMC) médio entre dois grupos específicos: consumo \"baixo\" e consumo \"alto\" de gordura.\n\nAnálise das Variáveis:\n1. Variável dependente (desfecho): IMC, que é uma variável quantitativa contínua (numérica).\n2. Variável independente (exposição): Consumo de gordura, que foi dividido em duas categorias (baixo e alto), sendo, portanto, uma variável qualitativa dicotômica.\n\nAnálise das Alternativas:\n\na) Análise de correlação: Incorreta. A correlação (como as de Pearson ou Spearman) é utilizada para avaliar a força e a direção da relação entre duas variáveis quantitativas contínuas (por exemplo, correlacionar o peso em quilos com a altura em centímetros). No caso da questão, temos um grupo categórico (baixo/alto) e não duas escalas numéricas puras.\n\nb) Teste Qui-quadrado: Incorreto. O teste do Qui-quadrado de Pearson é aplicado quando queremos comparar proporções entre variáveis categóricas (qualitativas). Por exemplo, seria usado para verificar se a proporção de \"obesos\" e \"não obesos\" difere entre os grupos de \"baixo\" e \"alto\" consumo de gordura. Como o enunciado pede para comparar a média do IMC (valor numérico), o Qui-quadrado não se aplica.\n\nc) Teste t de Student: Correto. Este é o teste estatístico clássico para comparar as médias de uma variável quantitativa entre dois grupos independentes. Como o estudo deseja saber se o IMC médio é o mesmo para quem consome pouca gordura em relação a quem consome muita (dois grupos), o teste t de Student é a escolha adequada, assumindo que os dados sigam uma distribuição normal.\n\nd) Análise de variância (ANOVA): Incorreta. A ANOVA também é utilizada para comparar médias de variáveis quantitativas, porém ela é indicada quando temos três ou mais grupos (por exemplo: consumo baixo, moderado e alto de gordura). Embora a ANOVA possa ser usada para dois grupos (resultando no mesmo valor de p que o teste t), o teste t de Student é a resposta mais específica e padrão para a comparação de apenas dois grupos.\n\nConclusão:\nSempre que a questão de prova citar \"comparação de médias\" entre \"dois grupos\", o Teste t de Student deve ser sua primeira opção. Se forem \"três ou mais grupos\", pense em ANOVA. Se for \"proporção ou porcentagem\", pense em Qui-quadrado.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:17.557Z"
+  },
+  {
+    "id": "AJUDA_63342c6c-af6e-475d-a535-d62843ddf41c",
+    "originalId": "63342c6c-af6e-475d-a535-d62843ddf41c",
+    "statement": "Homem, 53 anos de idade, passa em consulta de retorno ambulatorial. Ele conta que, há 6 meses, tem dor epigástrica em queimação de moderada intensidade, sem irradiação, que piora com alimentação, durando entre 1 a 2 horas. Nega regurgitação, pirose, globus e etilismo. O exame físico é normal. Hemograma completo, TGO/AST, TGP/ALT, FA, GGT, lipase e creatinina estão normais. Ultrassonografia de andar superior do abdome mostrou fígado, baço e vesícula biliar sem anormalidades. Endoscopia digestiva alta identificou uma mucosa enantematosa, a biópsia foi normal e o teste para H. pylori foi negativo. Ele já utilizou omeprazol por 12 semanas e não obteve melhora. Qual é a melhor opção terapêutica neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bupropiona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Amitriptilina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Esomeprazol contínuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidróxido de magnésio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve um paciente com dispepsia funcional, especificamente a Síndrome da Dor Epigástrica (SDE), de acordo com os critérios de Roma IV. Ele apresenta dor epigástrica crônica há 6 meses, com exames complementares (laboratoriais, ultrassonografia e endoscopia com biópsia) que descartam causas orgânicas e confirmam a ausência de infecção por *H. pylori*. O fato de o paciente não ter respondido a 12 semanas de omeprazol (um Inibidor de Bomba de Prótons - IBP) caracteriza o quadro como dispepsia funcional refratária ao tratamento inicial.\n\nAnálise das alternativas:\n\na) Bupropiona: Incorreta. É um antidepressivo utilizado principalmente no tratamento do tabagismo e do transtorno depressivo maior. Não possui evidência ou indicação formal no manejo da dispepsia funcional ou de distúrbios de sensibilidade visceral.\n\nb) Amitriptilina: Correta. Os antidepressivos tricíclicos (em doses baixas) são a terapia de segunda linha recomendada para a dispepsia funcional que não respondeu ao tratamento com IBP ou à erradicação do *H. pylori*. Eles atuam na modulação da hipersensibilidade visceral e nas vias de dor do eixo cérebro-intestino, sendo particularmente eficazes nos casos de Síndrome da Dor Epigástrica.\n\nc) Esomeprazol contínuo: Incorreta. O paciente já realizou um teste terapêutico prolongado (12 semanas) com omeprazol sem obter resposta. Manter o uso contínuo ou apenas trocar por outro IBP da mesma classe não é a conduta mais adequada quando a fisiopatologia da dor parece não estar relacionada à secreção ácida.\n\nd) Hidróxido de magnésio: Incorreta. É um antiácido de ação local e curta duração, indicado apenas para alívio sintomático temporário. Não é uma terapia de manutenção para dispepsia funcional e não trata a causa-base da dor crônica do paciente.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "TOC, Transtornos Somáticos, Dissociativos e do Estresse",
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:17.557Z"
+  },
+  {
+    "id": "AJUDA_633a6b14-e253-4be7-9efa-479888c3f846",
+    "originalId": "633a6b14-e253-4be7-9efa-479888c3f846",
+    "statement": "A Força Tarefa Americana para Serviços Preventivos (US Preventive Service Task Force) atualizou sua recomendação para rastreamento de câncer de mama em mulheres, sugerindo mamografias bienais a partir dos 40 anos de idade, ao invés dos 50 anos de idade. Considerando que a prevalência de câncer de mama é menor em mulheres jovens, qual é o impacto esperado desta nova Recomendação na performance do teste diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A sensibilidade da mamografia será maior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A especificidade da mamografia será menor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O valor preditivo positivo da mamografia será menor.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A razão de verossimilhança positiva será menor.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O ponto central desta questão é a relação entre a prevalência de uma doença em uma população e os indicadores de desempenho de um teste diagnóstico. Ao reduzir a idade de início do rastreamento de 50 para 40 anos, estamos incluindo uma população com menor prevalência de câncer de mama.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A sensibilidade representa a capacidade do teste de detectar a doença em quem realmente a possui. Ela é uma característica intrínseca do teste diagnóstico (no caso, a mamografia) e não varia conforme a prevalência da doença na população testada.\n\nAlternativa b) Incorreta. A especificidade representa a capacidade do teste de descartar a doença em quem é saudável. Assim como a sensibilidade, a especificidade é uma propriedade intrínseca do teste e não é afetada pela prevalência da doença.\n\nAlternativa c) Correta. O Valor Preditivo Positivo (VPP) é a probabilidade de um paciente com teste positivo realmente ter a doença. O VPP é diretamente influenciado pela prevalência: quanto menor a prevalência da doença na população, menor será o VPP do teste. Como a prevalência de câncer de mama é menor na faixa etária dos 40 anos em comparação à da faixa dos 50 anos, a probabilidade de um resultado positivo ser um verdadeiro-positivo diminui, aumentando proporcionalmente a taxa de falsos-positivos.\n\nAlternativa d) Incorreta. A Razão de Verossimilhança Positiva (RV+) é uma medida que relaciona a sensibilidade e a especificidade [Sensibilidade / (1 - Especificidade)]. Como essas duas propriedades são intrínsecas ao teste e não dependem da prevalência, a RV+ também permanece inalterada quando se muda a população rastreada.\n\nResumo dos conceitos:\n1. Sensibilidade, Especificidade e Razões de Verossimilhança: são propriedades intrínsecas do teste e não mudam com a prevalência.\n2. Valor Preditivo Positivo (VPP): é diretamente proporcional à prevalência (prevalência baixa = VPP baixo).\n3. Valor Preditivo Negativo (VPN): é inversamente proporcional à prevalência (prevalência baixa = VPN alto).",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama",
+      "Estatística Médica",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:17.557Z"
+  },
+  {
+    "id": "AJUDA_633cdae0-7e65-4a36-b0b5-939498e44561",
+    "originalId": "633cdae0-7e65-4a36-b0b5-939498e44561",
+    "statement": "Criança de 7 anos chega ao PS com Sat.O2 84% em ar ambiente, FR 50irpm, pulso paradoxal, tiragens importantes. Recebeu salbutamol contínuo por 1h + corticoide EV sem melhora. Qual será o próximo passo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sulfato de magnésio EV",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Antibiótico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Intubação imediata",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adicionar teofilina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nebulização com adrenalina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CENÁRIO CLÍNICO\n\nO paciente é uma criança de 7 anos apresentando uma crise de asma grave, caracterizada clinicamente por hipoxemia importante (SatO2 84%), taquipneia (50 irpm), uso de musculatura acessória (tiragens importantes) e sinal de gravidade extrema, que é o pulso paradoxal (queda da pressão arterial sistólica maior que 10 mmHg durante a inspiração).\n\nO quadro é definido como asma aguda grave ou estado de mal asmático, uma vez que não houve resposta clínica após a conduta inicial padrão (oxigênio, 1 hora de beta-2 agonista de curta duração contínuo e corticoide sistêmico). Diante da refratariedade inicial, é necessário escalonar o tratamento farmacológico antes de medidas invasivas.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Sulfato de magnésio EV (CORRETA): Esta é a conduta padrão recomendada pelos principais protocolos nacionais e internacionais (como o GINA e o PALS) para casos de asma grave que não respondem ao tratamento inicial. O magnésio atua bloqueando os canais de cálcio na musculatura lisa brônquica, promovendo broncodilatação e auxiliando na redução das taxas de internação hospitalar e da necessidade de ventilação mecânica.\n\nb) Antibiótico: Incorreta. As crises de asma são geralmente desencadeadas por infecções virais ou exposição a alérgenos. O uso de antibióticos não está indicado de rotina, devendo ser reservado apenas se houver evidência clara de infecção bacteriana secundária, como pneumonia documentada por imagem ou febre persistente com foco definido, o que não é descrito no caso.\n\nc) Intubação imediata: Incorreta. Embora o paciente esteja grave, a intubação na asma é um procedimento de exceção e alto risco, devido à hiperinsuflação dinâmica e ao risco de colapso cardiovascular e barotrauma (pneumotórax). Deve ser reservada para casos de parada respiratória iminente, rebaixamento do nível de consciência ou fadiga extrema que não respondeu a todas as terapias medicamentosas e à ventilação não invasiva. O sulfato de magnésio deve ser tentado antes.\n\nd) Adicionar teofilina: Incorreta. As metilxantinas (como teofilina ou aminofilina) são consideradas drogas de terceira linha no tratamento da asma aguda. Possuem uma janela terapêutica estreita e alto risco de toxicidade (arritmias, vômitos, convulsões), sendo menos eficazes e menos seguras que o sulfato de magnésio nesta fase do atendimento.\n\ne) Nebulização com adrenalina: Incorreta. A adrenalina inalada é utilizada no tratamento de obstruções das vias aéreas superiores, como a laringite estridulosa (crupe). Na asma, a obstrução é da via aérea inferior. Embora a adrenalina por via intramuscular ou subcutânea possa ser usada em situações de anafilaxia ou como último recurso na asma grave, a nebulização não é a via de escolha para essa patologia.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:17.557Z"
+  }
+]

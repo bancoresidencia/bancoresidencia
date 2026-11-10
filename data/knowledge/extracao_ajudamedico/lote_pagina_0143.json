@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_2755897c-f3e5-4cd5-9b7e-9627c3776740",
+    "originalId": "2755897c-f3e5-4cd5-9b7e-9627c3776740",
+    "statement": "A avaliação da gravidade da pancreatite aguda pode ser feita por diversos critérios. Sobre isso, há as seguintes afirmativas:\n\nI. A Proteína C Reativa (PCR) acima de 250mg/dl em 48 horas indica alto risco de necrose pancreática.\nII. O balanço hídrico diário é de significativa relevância para a avaliação da gravidade da pancreatite aguda.\nIII. Critérios como Sequential Organ Failure Assessment (SOFA), Marshall e Acute Physiology and Chronic Health Evalution (APACHE) II são utilizados para avaliar complicações sistêmicas.\n\nDessa forma, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das Afirmativas:\n\nAfirmativa I (Incorreta): A Proteína C-Reativa (PCR) é, de fato, um marcador inflamatório de fase aguda amplamente utilizado para prever a gravidade e a presença de necrose na pancreatite aguda. No entanto, o ponto de corte consagrado pela literatura e pelas principais diretrizes (como a de Atlanta e a da International Association of Pancreatology) é de 150 mg/L (ou 15 mg/dL) após 48 horas do início dos sintomas. O valor de 250 mg/dL mencionado na questão está incorreto tanto na magnitude quanto na unidade habitualmente utilizada como marcador de prognóstico.\n\nAfirmativa II (Correta): O balanço hídrico é fundamental no manejo da pancreatite aguda. A doença causa um intenso sequestro de líquidos para o terceiro espaço devido à resposta inflamatória sistêmica. Um balanço hídrico muito positivo nas primeiras 24-48 horas, ou a necessidade de volumes expressivos de ressuscitação para manter a estabilidade hemodinâmica e o débito urinário, são indicadores clínicos diretos de gravidade e maior risco de falência orgânica.\n\nAfirmativa III (Correta): A classificação de gravidade da pancreatite aguda (Classificação de Atlanta Revisada) baseia-se na presença de complicações locais ou falências orgânicas. O escore de Marshall Modificado é o sistema de pontuação recomendado para definir a falência de órgãos (respiratório, renal e cardiovascular). O APACHE II é um sistema de pontuação de fisiologia aguda utilizado em UTIs que, quando maior ou igual a 8, indica pancreatite grave. O SOFA também é validado para avaliar disfunções orgânicas em contextos críticos, incluindo a pancreatite.\n\nAnálise das Alternativas:\n\na) Correta. Como demonstrado, apenas as afirmativas II e III apresentam conceitos tecnicamente precisos sobre a avaliação de gravidade e monitorização do paciente com pancreatite aguda.\n\nb) Incorreta. Esta alternativa ignora a validade da afirmativa III, que descreve corretamente as ferramentas de escore de gravidade sistêmica.\n\nc) Incorreta. Esta alternativa ignora a importância clínica do balanço hídrico descrita na afirmativa II.\n\nd) Incorreta. Esta alternativa inclui a afirmativa I, que apresenta um valor de corte para a PCR totalmente fora dos padrões clínicos estabelecidos para a patologia.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:27.041Z"
+  },
+  {
+    "id": "AJUDA_275a5561-c6dd-48c6-aa90-b54bcb90dd52",
+    "originalId": "275a5561-c6dd-48c6-aa90-b54bcb90dd52",
+    "statement": "Durante atendimento no pronto-socorro, um paciente encontra-se com dor abdominal em quadrante superior direito, icterícia, relato de um episódio de febre alta, sem instabilidade hemodinâmica, interagindo com examinador. Esses achados são compatíveis com:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colelitíase e correspondem à tríade de Charcot.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colelitíase e correspondem à tríade de Beck.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coledocolitíase e correspondem à pêntade de Reynolds.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coledocolitíase e correspondem à tríade de Reynolds.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Coledocolitíase e correspondem à tríade de Charcot.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão descreve um quadro clínico clássico composto por três sinais fundamentais: dor abdominal no quadrante superior direito (hipocôndrio direito), icterícia e febre. Esse conjunto é conhecido na semiologia médica como tríade de Charcot, que é o achado patognomônico de colangite aguda (infecção das vias biliares). A causa mais comum de colangite é a obstrução do ducto colédoco por um cálculo, condição denominada coledocolitíase.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A colelitíase é a presença de cálculos apenas no interior da vesícula biliar. Embora a colelitíase seja o fator precursor, a tríade de Charcot manifesta-se quando há obstrução e infecção dos ductos biliares, o que caracteriza a colangite decorrente da coledocolitíase.\n\nAlternativa b: Incorreta. A tríade de Beck é composta por hipotensão, abafamento de bulhas cardíacas e turgência jugular, sendo o sinal clínico clássico do tamponamento cardíaco, não possuindo relação com o sistema biliar.\n\nAlternativa c: Incorreta. A pêntade de Reynolds é uma evolução grave da colangite. Ela é composta pela tríade de Charcot acrescida de hipotensão arterial (choque séptico) e alteração do nível de consciência (confusão mental). O enunciado deixa claro que o paciente está sem instabilidade hemodinâmica e interagindo com o examinador, o que exclui a pêntade.\n\nAlternativa d: Incorreta. Existe um erro conceitual nesta alternativa, pois o epônimo de Reynolds refere-se a uma pêntade (cinco elementos) e não a uma tríade. Além disso, conforme explicado, o paciente não apresenta os critérios de gravidade de Reynolds.\n\nAlternativa e: Correta. A combinação de febre, icterícia e dor no quadrante superior direito é a definição da tríade de Charcot. Esse quadro indica colangite aguda, que tem como principal etiologia a coledocolitíase (presença de cálculo no ducto biliar comum).\n\nGabarito: Letra (e).",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:27.041Z"
+  },
+  {
+    "id": "AJUDA_275d2622-fd42-4415-b30a-d56c1199c98c",
+    "originalId": "275d2622-fd42-4415-b30a-d56c1199c98c",
+    "statement": "Uma paciente de 27 anos de idade, em consulta de rotina, assintomática, realizou exame preventivo com o diagnóstico de ASCUS.\n\nA mencionada paciente foi submetida a uma biópsia de colo uterino, que demonstrou carcinoma escamoso com invasão de 4 mm. Qual é o estadiamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1A1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1A2",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1B1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1B2",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O estadiamento do câncer do colo do útero segue as diretrizes da Federação Internacional de Ginecologia e Obstetrícia (FIGO). O Estádio I refere-se ao carcinoma estritamente confinado ao colo uterino. Quando a lesão é identificada apenas microscopicamente (microinvasora), ela é classificada como Estádio IA.\n\nAbaixo, a análise detalhada das alternativas com base na profundidade da invasão estromal:\n\nAlternativa a) IA1 - Incorreta. O estádio IA1 é caracterizado por uma invasão estromal menor ou igual a 3 mm de profundidade. Como a biópsia da paciente revelou uma invasão de 4 mm, ela já não se enquadra nesta categoria.\n\nAlternativa b) IA2 - Correta. De acordo com a classificação FIGO, o estádio IA2 é definido por uma invasão estromal medida microscopicamente superior a 3 mm e menor ou igual a 5 mm de profundidade. Portanto, uma invasão de 4 mm está precisamente dentro deste intervalo.\n\nAlternativa c) IB1 - Incorreta. O estádio IB1 é atribuído a carcinomas invasivos com profundidade de invasão maior que 5 mm, mas com o maior diâmetro da lesão menor que 2 cm. A paciente em questão apresenta uma lesão com apenas 4 mm de profundidade, permanecendo no grupo IA.\n\nAlternativa d) IB2 - Incorreta. Este estádio é reservado para lesões com profundidade de invasão maior que 5 mm e cujo maior diâmetro clínico ou patológico esteja entre 2 cm e 4 cm.\n\nResumo dos critérios para Estádio IA (FIGO):\n- IA1: Invasão estromal <= 3 mm de profundidade.\n- IA2: Invasão estromal > 3 mm e <= 5 mm de profundidade.\n\nComo o caso apresenta 4 mm de invasão, o diagnóstico correto é IA2.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:27.041Z"
+  },
+  {
+    "id": "AJUDA_275fe5a5-712a-48d6-9bca-e407dc717530",
+    "originalId": "275fe5a5-712a-48d6-9bca-e407dc717530",
+    "statement": "Mulher de 24 anos, previamente hígida, dá entrada na unidade de emergência após familiares relatarem episódio de crise convulsiva tônico-clônica generalizada ocorrido há 40 minutos, com duração aproximada de 1 minuto e resolução espontânea. No momento da admissão, a paciente encontra-se sonolenta e responsiva ao chamado, sem movimentos estereotipados. Foram instituídos monitorização de sinais vitais, feita punção de acesso venoso e coleta de exames laboratoriais. Após 15 minutos, a paciente apresenta nova crise tônico-clônica generalizada, associada a nistagmo horizontal e liberação esfincteriana. Qual medicação deve ser feita prontamente por via intravenosa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fenobarbital",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fenitoína",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diazepam",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Valproato",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma paciente jovem que apresenta uma nova crise convulsiva tônico-clônica generalizada dentro da unidade de emergência. Diante de uma crise convulsiva em atividade, o protocolo de atendimento prioriza a estabilização da paciente e a interrupção imediata da atividade epiléptica para evitar o dano neuronal e complicações sistêmicas.\n\nDe acordo com as diretrizes nacionais e internacionais para o manejo de crises agudas e do estado de mal epiléptico, a primeira linha de tratamento consiste na administração de benzodiazepínicos por via intravenosa. Essas medicações possuem início de ação rápido e alta eficácia na cessação da crise.\n\nAlternativa a: Incorreta. O fenobarbital é um barbitúrico que atua como medicação de segunda ou terceira linha. Ele é reservado para casos de estado de mal epiléptico refratário, quando as medicações iniciais falharam. Seu uso inicial é evitado devido ao risco importante de depressão respiratória, hipotensão e sedação prolongada.\n\nAlternativa b: Incorreta. A fenitoína é uma medicação de segunda linha. Ela é indicada para a fase de controle, ou seja, para evitar que novas crises ocorram após a administração da primeira droga, ou se a crise não cessar com o benzodiazepínico. A fenitoína exige uma infusão lenta e possui um tempo de latência maior para atravessar a barreira hematoencefálica em comparação ao diazepam.\n\nAlternativa c: Correta. O diazepam intravenoso é o fármaco de escolha para ser administrado prontamente em uma crise convulsiva em curso. Por ser altamente lipossolúvel, ele atinge o sistema nervoso central rapidamente, agindo nos receptores GABA-A e interrompendo a descarga elétrica anormal de forma quase imediata.\n\nAlternativa d: Incorreta. O valproato de sódio, na sua forma intravenosa, é uma alternativa de segunda linha para o tratamento de crises que persistem após o uso de benzodiazepínicos, ou para a manutenção. Assim como a fenitoína, ele não é a droga de primeira escolha para a interrupção súbita de uma crise ativa na fase inicial do atendimento.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Epilepsias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:27.041Z"
+  },
+  {
+    "id": "AJUDA_2766bf60-9fab-422a-b6c8-5264aa9699b6",
+    "originalId": "2766bf60-9fab-422a-b6c8-5264aa9699b6",
+    "statement": "Após o início de tratamento antirretroviral (TARV) há 1 mês, um paciente com síndrome consumptiva, candidíase e diarreia crônica foi internado por outras manifestações. O grupo de residentes da clínica médica percebeu, durante os primeiros três dias de internação, febre vespertina, linfadenomegalias cervicais e axilares com fistulização e constipação intestinal com cólicas abdominais. Os exames demonstraram anemia e VHS e PCR elevados, bem como imagens reticulonodulares difusas e bilaterais em ambos os hemitóraces. As tomografias reforçaram os infiltrados reticulonodulares com linfadenomegalias mediastinais com centro necrótico, além de linfadenomegalias mesentéricas com espessamento de íleo distal. O paciente piorou clinicamente, apresentando-se prostrado e com hipoxemia no 4º dia de internação. A contagem de linfócitos CD4 no início do tratamento era de 45 células/mm³ e a PPD (prova tuberculínica anérgica) era 0 mm.\nDiante do exposto, a conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "suspender a TARV até finalizar a investigação para infecções intestinais relacionadas ao HIV;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "proceder à biópsia de linfonodo por provável diagnóstico de linfoma;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar tratamento empírico para tuberculose e micobactérias atípicas e prescrever procinéticos e laxativos;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar biópsia de linfonodo e coleta de escarro para análise de baciloscopia, teste rápido molecular para tuberculose e cultura para micobactéria; suspender a TARV e avaliar início de corticoide;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "manter a TARV e acrescentar corticoide até o final da investigação, devido a reação imune.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve um paciente com imunodeficiência avançada (CD4 de 45 células/mm³) que, após um mês de início da Terapia Antirretroviral (TARV), apresenta piora clínica exuberante. O surgimento de febre, linfadenomegalias com centro necrótico e fistulização, além de infiltrado reticulonodular pulmonar e espessamento de íleo distal, sugere fortemente Tuberculose (disseminada e ganglionar) que se manifestou após a recuperação da imunidade. Este fenômeno é conhecido como SIRI (Síndrome Inflamatória de Reconstituição Imune). A SIRI ocorre quando o sistema imunológico, ao recuperar sua função devido à TARV, passa a responder de forma exagerada e patológica a antígenos de patógenos presentes no organismo (vivos ou mortos). No caso relatado, a piora clínica com hipoxemia e prostração indica uma resposta inflamatória grave.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A suspensão da TARV geralmente não é recomendada no manejo da SIRI, exceto em casos excepcionais com risco de morte imediata por compressão de estruturas vitais (como em casos selecionados de neurocriptococose com hipertensão intracraniana incontrolável). Suspender a TARV permite que a carga viral do HIV volte a subir, prejudicando a recuperação imunológica a longo prazo.\n\nAlternativa B (Incorreta): Embora o linfoma seja uma neoplasia comum em pacientes com HIV, as características de febre vespertina, linfonodos com centro necrótico e fistulização, além do tempo de início após a TARV, apontam prioritariamente para uma micobacteriose (Tuberculose). A biópsia pode ser necessária para confirmação, mas a hipótese principal é SIRI por Tuberculose.\n\nAlternativa C (Incorreta): O tratamento para a causa base (tuberculose) deve sim ser iniciado após coleta de exames, mas a alternativa falha ao focar apenas em sintomáticos intestinais (procinéticos e laxativos). O paciente apresenta uma emergência inflamatória (hipoxemia e prostração) que exige a modulação da resposta imune, não apenas o manejo da constipação.\n\nAlternativa D (Incorreta): O erro principal desta alternativa é a orientação de suspender a TARV. A investigação com escarro e biópsia de linfonodo está correta do ponto de vista diagnóstico, mas a interrupção do tratamento antirretroviral não é a conduta preconizada na SIRI por tuberculose.\n\nAlternativa E (Correta): Esta é a conduta preconizada. Diante de um quadro de SIRI com gravidade (hipoxemia e piora do estado geral), deve-se manter a TARV para garantir o controle da replicação do HIV e associar o uso de corticosteroides (como a prednisona ou dexametasona). O corticoide atua reduzindo a cascata inflamatória exacerbada que está causando os danos orgânicos, permitindo que o paciente se estabilize enquanto o tratamento específico para a infecção oportunista (tuberculose) faça efeito.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "HIV",
+      "Tuberculose"
+    ],
+    "difficulty": 96.13256428306485,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:27.041Z"
+  },
+  {
+    "id": "AJUDA_2778b390-8063-4d2f-8642-8425c76756b4",
+    "originalId": "2778b390-8063-4d2f-8642-8425c76756b4",
+    "statement": "Sobre as hérnias de hiato, é INCORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Qualquer tipo de hérnia pode gerar sintomas clássicos de refluxo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A membrana frenoesofágica é uma continuação da fáscia endoabdominal que se ancora no esôfago.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As hérnias paraesofágicas podem estar associadas à doença do refluxo gastroesofágico (DRGE).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A pressão relativamente positiva dentro do tórax facilita a migração visceral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão exige o conhecimento da anatomia, da fisiologia e das manifestações clínicas das hérnias de hiato. Para identificar a alternativa incorreta, vamos analisar cada uma delas:\n\nAlternativa (a) CORRETA: De fato, qualquer tipo de hérnia de hiato pode se manifestar com sintomas de refluxo gastroesofágico. Embora a hérnia por deslizamento (Tipo I) seja a mais classicamente associada à Doença do Refluxo Gastroesofágico (DRGE) devido ao deslocamento da transição esofagogástrica para o tórax, as hérnias paraesofágicas (Tipos II, III e IV) também podem cursar com refluxo, especialmente as do tipo misto (Tipo III), que combinam elementos de deslizamento e paraesofágicos.\n\nAlternativa (b) CORRETA: A anatomia da região hiatal define que a membrana frenoesofágica é formada pela fusão da fáscia endoabdominal (principalmente a fáscia do diafragma) com a fáscia própria do esôfago. Essa membrana é fundamental para fixar o esôfago distal ao diafragma, e sua fraqueza ou ruptura é um fator determinante para o desenvolvimento de hérnias.\n\nAlternativa (c) CORRETA: Embora as hérnias paraesofágicas (Tipo II) sejam caracterizadas pela herniação do fundo gástrico mantendo a transição esofagogástrica em sua posição anatômica, na prática clínica, a maioria das hérnias paraesofágicas volumosas é do Tipo III (mistas). Nelas, há um componente de deslizamento associado, o que frequentemente resulta em sintomas de refluxo gastroesofágico, além dos sintomas compressivos ou obstrutivos.\n\nAlternativa (d) INCORRETA (Gabarito): Esta afirmação inverte a fisiologia pressórica do tronco. O tórax possui, fisiologicamente, uma pressão negativa (subatmosférica) em relação à pressão positiva do abdome. É justamente esse gradiente de pressão (pressão positiva abdominal empurrando contra a pressão negativa torácica) que atua como uma força mecânica constante, facilitando a migração das vísceras abdominais para dentro do tórax através de um hiato diafragmático alargado ou enfraquecido. Portanto, a pressão dentro do tórax é negativa, e não positiva.\n\nResumo do raciocínio: A alternativa D é a incorreta porque afirma que a pressão torácica é positiva, quando, na verdade, a pressão negativa intratorácica é o motor que \"aspira\" ou favorece a subida do estômago para o mediastino.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico",
+      "Disfagia, Alterações Estruturais e Distúrbios de Motilidade do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:27.041Z"
+  },
+  {
+    "id": "AJUDA_277d5767-25f0-4485-8bef-223eae80d889",
+    "originalId": "277d5767-25f0-4485-8bef-223eae80d889",
+    "statement": "Mulher de 38 anos, solteira, que refere instalação aguda de dor pélvica unilateral intensa, associada a náuseas e vômitos, se apresenta na maca em posição antálgica lateralizada. Ao exame ginecológico há abdome ‘em tábua’, dor difusa na palpação de abdome e uma massa dolorosa em topografia de anexo direito. A paciente refere vida sexual ativa, usa preservativo como contracepção e é nuligesta. Assinale a alternativa CORRETA entre as abaixo selecionadas a respeito dessa situação clínica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uma das possibilidades é a torção anexial que ocorre quando o ovário e a tuba uterina se torcem no eixo criado entre o ligamento infundíbulo pélvico e o ligamento útero-ovariano.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O quadro é compatível com processo infeccioso agudo anexial, mas ela deveria apresentar sintomas sistêmicos como febre, secreção vaginal purulenta e dor abdominal intensa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O hCG negativo exclui o diagnóstico de prenhez ectópica rota com uma sensibilidade de 92% e uma especificidade de 84%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A adenomiose entra como um dos diagnósticos diferenciais e, neste caso, a paciente deverá ser internada porque se trata de uma emergência cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de torção anexial: dor pélvica de início súbito, intensa e unilateral, acompanhada de sintomas autonômicos (náuseas e vômitos), posição antálgica e presença de massa anexial dolorosa com sinais de irritação peritoneal.\n\nAlternativa a (Correta): A torção anexial consiste na rotação do ovário, da tuba uterina ou de ambos sobre o seu eixo de sustentação vascular. Esse eixo é anatomicamente delimitado pelo ligamento infundíbulo-pélvico (ligamento suspensor do ovário, que contém os vasos gonadais) e pelo ligamento útero-ovariano (ligamento próprio do ovário). A torção obstrui inicialmente o retorno venoso e linfático, gerando edema e aumento de volume anexial, culminando com a oclusão arterial e consequente isquemia/necrose tecidual.\n\nAlternativa b (Incorreta): Os quadros infecciosos pélvicos agudos, como a Doença Inflamatória Pélvica (DIP) ou o abscesso tubo-ovariano, costumam ter evolução subaguda, acometimento predominantemente bilateral e relação com corrimento vaginal purulento e febre, diferindo do início hiperagudo e puramente mecânico visto na torção anexial.\n\nAlternativa c (Incorreta): Os testes de fração beta do hCG (seja na urina ou principalmente no soro) possuem sensibilidade extremamente alta, superior a 99%, para a detecção de gravidez ativa. Portanto, um resultado de beta-hCG negativo exclui a possibilidade de prenhez ectópica com segurança diagnóstica próxima de 100%, e não de apenas 92%.\n\nAlternativa d (Incorreta): A adenomiose é uma afecção benigna e crônica caracterizada pela presença de glândulas e estroma endometriais no interior do miométrio. Seu quadro clínico habitual envolve sangramento uterino anormal, dismenorreia secundária e aumento difuso do volume uterino, não se manifestando como massa anexial isolada nem configurando uma emergência cirúrgica.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo em Ginecologia",
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:27.041Z"
+  },
+  {
+    "id": "AJUDA_278108a0-9179-457e-b48d-928d2af90bdd",
+    "originalId": "278108a0-9179-457e-b48d-928d2af90bdd",
+    "statement": "Em relação ao tratamento farmacológico com psicoestimulantes no Transtorno de Déficit de Atenção e Hiperatividade (TDAH), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A interrupção do uso da medicação durante os fins de semana é recomendada para todos os pacientes com TDAH, a fim de minimizar efeitos adversos a longo prazo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento com estimulantes aumenta o risco de desenvolvimento de transtornos por uso de substâncias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Para crianças, a melhora dos sintomas com psicoestimulantes tende a ser restrita ao ambiente escolar, não havendo benefício significativo em outros contextos da vida da criança.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Além da redução dos sintomas de desatenção e hiperatividade, os psicoestimulantes repercutem positivamente sobre irritabilidade, autoestima, relações interpessoais e funcionamento cognitivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Gabarito: Letra d.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. As pausas na medicação durante os fins de semana ou férias escolares, conhecidas como drug holidays, não são indicadas universalmente para todos os pacientes. O TDAH causa prejuízos em múltiplas áreas da vida, incluindo o convívio familiar, esportes e relações sociais. Portanto, a decisão de suspender ou manter a medicação nos fins de semana deve ser individualizada, sendo reservada principalmente para avaliar a necessidade contínua do fármaco ou para mitigar efeitos adversos específicos, como desaceleração do crescimento pôndero-estatural.\n\nAlternativa b: Incorreta. Estudos epidemiológicos e ensaios clínicos consistentes demonstram que o tratamento adequado com psicoestimulantes reduz o risco de desenvolvimento de transtornos por uso de substâncias a longo prazo. Ao controlar a impulsividade e melhorar a funcionalidade global, o tratamento previne a automedicação com álcool ou outras drogas.\n\nAlternativa c: Incorreta. O TDAH é um transtorno pervasivo, ou seja, manifesta-se em múltiplos contextos. Embora o ambiente escolar evidencie mais as dificuldades de foco e rendimento, o benefício dos psicoestimulantes se estende ao ambiente doméstico, às atividades extracurriculares e às relações interpessoais com familiares e amigos.\n\nAlternativa d: Correta. Os psicoestimulantes (como metilfenidato e derivados anfetamínicos) atuam aumentando a disponibilidade de dopamina e noradrenalina no córtex pré-frontal. Esse mecanismo não apenas alivia a desatenção, a hiperatividade e a impulsividade, mas também aprimora o funcionamento executivo, reduz a desregulação emocional e a irritabilidade, melhora a dinâmica interpessoal e, consequentemente, eleva a autoestima do paciente ao diminuir o histórico de falhas e repreensões.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Psiquiatria Infantil",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:27.041Z"
+  },
+  {
+    "id": "AJUDA_27937ab1-c5ba-44f4-98c8-a6c03a6d8e45",
+    "originalId": "27937ab1-c5ba-44f4-98c8-a6c03a6d8e45",
+    "statement": "Paciente gestante com quadro de artrite reumatoide que faz uso de rituximab como forma de controle de sua doença durante a gestação sendo a última dose realizada 2 semanas antes no nascimento. O Rn nasce a termo, APGAR 9/10, Peso de nascimento 2500 gramas, parto normal. Com relação à vacina hepatite B e a vacina BCG, assinala a alternativa correta com relação as mesmas",
+    "options": [
+      {
+        "id": "A",
+        "text": "Contra-indicar a hepatite B e BCG",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dar a vacina hepatite B e adiar por 3 meses a BCG",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dar a vacina da hepatite B e adiar a BCG por 8 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dar a vacina hepatite B e contra-indicar a BCG por 12 meses",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O ponto central desta questão é o manejo vacinal de um recém-nascido exposto a medicamentos biológicos durante a gestação. O rituximabe é um anticorpo monoclonal que ataca a proteína CD20 nos linfócitos B, causando a sua depleção. Essa medicação atravessa a barreira placentária, especialmente no terceiro trimestre, podendo levar a uma imunossupressão prolongada no recém-nascido, com baixos níveis de células B por vários meses.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A vacina contra a hepatite B é uma vacina inativada (recombinante). Vacinas inativadas não apresentam risco de replicação e, por isso, não são contraindicadas em pacientes imunossuprimidos ou expostos a biológicos. Ela deve ser aplicada nas primeiras 12 horas de vida para prevenir a transmissão vertical do vírus.\n\nAlternativa b) Incorreta. Embora a conduta para a hepatite B esteja correta, o prazo de 3 meses é insuficiente para garantir a segurança da aplicação de uma vacina de agentes vivos, como a BCG, em um bebê exposto ao rituximabe. O efeito de depleção celular e o tempo para o clareamento da droga no lactente exigem um intervalo maior.\n\nAlternativa c) Incorreta. No caso de exposição a outros biológicos, como os anti-TNF (ex.: infliximabe), o adiamento de vacinas vivas costuma ser de pelo menos 6 meses. No entanto, para o rituximabe, o impacto no sistema imunológico é mais profundo e duradouro, tornando o período de 8 meses ainda incerto conforme os protocolos de segurança.\n\nAlternativa d) Correta. Esta alternativa reflete o consenso atual para exposição a biológicos depletores de células B. A vacina contra a hepatite B (inativada) é mantida normalmente ao nascimento. Já a vacina BCG, por ser composta por bacilos vivos atenuados, oferece risco de disseminação (becegeíte disseminada) em bebês com imunidade comprometida. Como o rituximabe foi administrado no final da gestação (2 semanas antes do parto), o recém-nascido nasce em um estado de imunossupressão. As recomendações da Sociedade Brasileira de Pediatria e do Ministério da Saúde orientam adiar as vacinas de agentes vivos (como BCG e rotavírus) por 12 meses em crianças expostas ao rituximabe intraútero, para garantir a plena recuperação do sistema imune e a eliminação do fármaco.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:27.041Z"
+  },
+  {
+    "id": "AJUDA_27946604-3096-4775-a68e-da197c07b60e",
+    "originalId": "27946604-3096-4775-a68e-da197c07b60e",
+    "statement": "Uma mulher de 78 anos, portadora de hipertensão controlada, apresenta colelitíase sintomática e foi indicada para colecistectomia eletiva. Relata fadiga aos mínimos esforços, histórico de duas quedas nos últimos 6 meses e perda de peso não intencional de 5 kg no último ano.\nNo exame físico:\n• IMC 20 kg/m2;\n• pressão arterial 128/70 mmHg;\n• FC 74 bpm;\n• ausculta cardíaca normal. A avaliação laboratorial está dentro da normalidade.\nPara essa paciente, a conduta mais adequada quanto à avaliação de risco cirúrgico é",
+    "options": [
+      {
+        "id": "A",
+        "text": "prosseguir com a cirurgia sem necessidade de avaliação adicional, pois não há doença cardíaca ativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cancelar a cirurgia, pois a fragilidade contra-indica qualquer procedimento eletivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "avaliar a fragilidade como fator de risco independente e considerar medidas de otimização pré-operatória, incluindo suporte nutricional e fisioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "solicitar teste ergométrico, pois pacientes idosos devem sempre ser submetidos a estratificação funcional antes da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "solicitar ecocardiograma de rotina para todos os pacientes idosos antes de qualquer cirurgia abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA questão aborda a avaliação perioperatória de uma paciente idosa com sinais clássicos da síndrome de fragilidade. Embora a hipertensão esteja controlada e não haja sinais de doença cardíaca descompensada, a presença de fadiga aos mínimos esforços, quedas recorrentes e perda de peso não intencional indica um estado de vulnerabilidade biológica que deve ser obrigatoriamente considerado antes de um procedimento cirúrgico.\n\nAlternativa A: Incorreta. Embora a ausência de doença cardíaca ativa (como angina instável ou insuficiência cardíaca descompensada) seja um dado positivo, a avaliação de risco no idoso não deve ser limitada ao sistema cardiovascular. Ignorar os sinais de fragilidade aumenta significativamente o risco de complicações pós-operatórias graves, como delirium, infecções, tempo de internação prolongado e perda de autonomia.\n\nAlternativa B: Incorreta. A fragilidade não é uma contraindicação absoluta para cirurgias eletivas. Ela funciona como um sinal de alerta para a necessidade de um cuidado multidisciplinar. O cancelamento seria inadequado, pois a colelitíase é sintomática e pode evoluir para complicações agudas (como colecistite ou colangite), que teriam um risco cirúrgico muito maior se operadas em caráter de urgência.\n\nAlternativa C: Correta. A fragilidade é um preditor independente de morbimortalidade no pós-operatório, muitas vezes mais relevante que a própria idade cronológica. A conduta adequada para pacientes que apresentam critérios de fragilidade (perda de peso, exaustão, fraqueza, lentidão e baixo nível de atividade física) é a realização de uma Avaliação Geriátrica Ampla (AGA). A otimização pré-operatória, também chamada de pré-habilitação, inclui suporte nutricional e exercícios físicos/fisioterapia para melhorar a reserva funcional e diminuir os riscos do procedimento.\n\nAlternativa D: Incorreta. Não existe recomendação de solicitar teste ergométrico de rotina apenas pela idade do paciente. Além disso, a paciente apresenta fadiga aos mínimos esforços e histórico de quedas, o que tornaria a realização de um esforço físico em esteira tecnicamente difícil e possivelmente inconclusiva para a estratificação de risco coronariano.\n\nAlternativa E: Incorreta. O ecocardiograma não deve ser solicitado de forma rotineira para todos os pacientes idosos ou para todos os pacientes que serão submetidos a cirurgias abdominais. Sua indicação no pré-operatório está restrita a casos de sopros cardíacos novos ou sintomáticos, dispneia de origem indeterminada ou pacientes com insuficiência cardíaca conhecida que apresentem mudança no status clínico.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Perioperatório",
+      "Saúde do Idoso"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:27.041Z"
+  }
+]

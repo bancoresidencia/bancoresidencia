@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_9c00e260-740b-4a55-b335-19cc10c217ab",
+    "originalId": "9c00e260-740b-4a55-b335-19cc10c217ab",
+    "statement": "Um paciente de 32 anos, vivendo com HIV, em uso regular de terapia antirretroviral, apresenta contagem de CD4 de 480 células/µL. Ele não possui registros de vacinas após a adolescência. Segundo o Programa Nacional de Imunizações (PNI) e recomendações específicas para adultos vivendo com HIV, qual é a conduta vacinal mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar apenas hepatite B e influenza anual, deixando as demais vacinas para acompanhamento futuro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar tríplice viral, hepatite B e influenza anual, mas adiar a vacinação pneumocócica até avaliação em centro de referência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar apenas vacinas inativadas (hepatite B, dT/dTpa, influenza), evitando qualquer vacina de vírus vivo por precaução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar esquema de hepatite B e pneumocócicas, mas não administrar tríplice viral em pessoas vivendo com HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar tríplice viral (duas doses), esquema completo para hepatite B (três doses), reforço de dT ou dTpa a cada 10 anos, vacinação anual contra influenza e esquema sequencial com vacinas pneumocócicas conjugada e polissacarídica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A conduta vacinal em pessoas vivendo com HIV (PVHIV) baseia-se na contagem de linfócitos T CD4+ e na necessidade de proteção ampliada devido ao maior risco de complicações por doenças infecciosas. No caso descrito, o paciente apresenta CD4 de 480 células/microlitro, o que indica uma competência imunológica suficiente para receber tanto vacinas inativadas quanto vacinas de vírus vivos atenuados.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Indicar apenas hepatite B e influenza é insuficiente. O paciente, sem registros vacinais desde a adolescência, precisa de reforço contra tétano e difteria (dT), proteção contra o sarampo, caxumba e rubéola (tríplice viral) e proteção contra o pneumococo, que é uma das principais causas de pneumonia e meningite nessa população.\n\nAlternativa b: Incorreta. A vacinação pneumocócica não deve ser adiada. PVHIV possuem indicação formal e prioritária para o esquema sequencial com a vacina pneumocócica conjugada (VPC13) e a polissacarídica (VPP23), visando reduzir o risco de doença pneumocócica invasiva.\n\nAlternativa c: Incorreta. O conceito de evitar qualquer vacina de vírus vivo por precaução em PVHIV está ultrapassado. As recomendações atuais do Ministério da Saúde permitem o uso de vacinas de vírus vivos, como a tríplice viral, desde que o paciente não apresente imunodeficiência grave. O limiar de segurança é uma contagem de CD4 maior ou igual a 200 células/microlitro.\n\nAlternativa d: Incorreta. A tríplice viral pode e deve ser administrada em PVHIV que possuam contagem de CD4 superior a 200 células/microlitro. A restrição absoluta a esta vacina privaria o paciente de proteção necessária contra o sarampo e a rubéola. Além disso, o esquema para hepatite B e pneumococo é necessário, mas não exclui as outras vacinas.\n\nAlternativa e: Correta. Esta alternativa descreve o manejo vacinal completo e adequado para um adulto com HIV e CD4 preservado (480 células/microlitro). O plano inclui:\n1. Tríplice viral: Permitida e indicada devido ao CD4 acima de 200.\n2. Hepatite B: Esquema completo é fundamental (em PVHIV, frequentemente se utiliza dose dobrada em 4 doses, mas a alternativa foca na necessidade do esquema completo de 3 doses).\n3. dT ou dTpa: Reforço a cada 10 anos é a norma para todos os adultos.\n4. Influenza: Vacinação anual recomendada para todas as PVHIV.\n5. Esquema sequencial pneumocócico: Uso da vacina conjugada seguida da polissacarídica para ampliar o espectro de proteção contra o *Streptococcus pneumoniae*.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "HIV",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:03.526Z"
+  },
+  {
+    "id": "AJUDA_9c0f52a5-2286-4e48-8666-c4206b479053",
+    "originalId": "9c0f52a5-2286-4e48-8666-c4206b479053",
+    "statement": "Gestante, 11 semanas de gestação, G1P0, apresenta vômitos persistentes há 3 semanas, incapacidade de manter dieta oral, perda de 6% do peso corporal pré-gestacional e sinais de desidratação. Exame físico: PA 90/60 mmHg, taquicardia 112 bpm, mucosas secas. Exames laboratoriais: hipocalemia, aumento discreto de transaminases e cetonuria positiva. Com base no quadro clínico apresentado, sabe-se que",
+    "options": [
+      {
+        "id": "A",
+        "text": "A condição está associada a níveis elevados de gonadotrofina coriônica (hCG), sendo mais frequente em gestações múltiplas e mola hidatiforme.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o diagnóstico exige a presença de vômitos intensos no 1º trimestre, associados a hipertensão e proteinúria, refletindo maior gravidade da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o tratamento de primeira linha deve incluir hidratação venosa, restrição hídrica e antibioticoterapia profilática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o uso de antieméticos está contraindicado, sendo a conduta apenas de suporte até a melhora espontâea do quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve uma gestante no primeiro trimestre com quadro de hiperemese gravídica. Os critérios diagnósticos estão presentes: vômitos persistentes, perda ponderal significativa (maior que 5 por cento do peso pré-gestacional), sinais de desidratação e alterações laboratoriais (cetonúria e hipocalemia).\n\nCOMENTÁRIOS SOBRE AS ALTERNATIVAS\n\nAlternativa (a) CORRETA: A fisiopatologia da hiperemese gravídica está intimamente ligada aos picos hormonais do primeiro trimestre, especialmente da gonadotrofina coriônica humana (hCG) e do estrogênio. Por esse motivo, condições que cursam com níveis muito elevados de hCG, como a gestação gemelar e a doença trofoblástica gestacional (mola hidatiforme), apresentam uma incidência significativamente maior desta patologia.\n\nAlternativa (b) INCORRETA: O diagnóstico de hiperemese gravídica baseia-se nos vômitos intensos, perda de peso e distúrbios hidroeletrolíticos/metabólicos. A presença de hipertensão e proteinúria define os quadros de pré-eclâmpsia, que costumam surgir após a 20ª semana de gestação, não fazendo parte do espectro clínico da hiperemese.\n\nAlternativa (c) INCORRETA: Embora a hidratação venosa seja um pilar do tratamento para corrigir a desidratação e os distúrbios eletrolíticos, a restrição hídrica é contraindicada, já que a paciente precisa repor volumes. Além disso, não há indicação de antibioticoterapia profilática para hiperemese gravídica, pois não se trata de uma doença infecciosa.\n\nAlternativa (d) INCORRETA: O uso de antieméticos é fundamental no manejo da hiperemese gravídica quando não há resposta às medidas dietéticas. Medicações como a piridoxina (vitamina B6), isolada ou associada à doxilamina, além de metoclopramida, ondansetrona e dimenidrinato, são seguras e indicadas para o controle dos sintomas e prevenção de complicações graves, como a Encefalopatia de Wernicke.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:03.526Z"
+  },
+  {
+    "id": "AJUDA_9c19113f-6e03-45fb-b37f-5f1faaa6bb54",
+    "originalId": "9c19113f-6e03-45fb-b37f-5f1faaa6bb54",
+    "statement": "Gestante de 32 anos, G2P1, idade gestacional de 18 semanas e 2 dias. Na consulta pré-natal refere corrimento e queimação vulvar. Refere ser o segundo episódio nesta gestação. Ao exame especular conteúdo branco grumoso, pH 4,0, microscopia com hidróxido de potássio (KOH) 10% mostrando pseudohifas.\nQual a conduta mais adequada para esta gestante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fluconazol 150mg via oral dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Miconazol creme vaginal 10 noites.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Nistatina creme vaginal 10 noites.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Óvulos vaginais de bicarbonato de sódio a 10% por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico e Raciocínio Clínico:\nO quadro clínico de corrimento branco grumoso, prurido/queimação vulvovaginal, pH vaginal ácido (4,0) e presença de pseudohifas ao exame a fresco com KOH 10% confirma o diagnóstico de candidíase vulvovaginal. O ponto central da questão é a conduta terapêutica específica para a paciente gestante, na qual a via de administração e a classe do antifúngico devem respeitar critérios estritos de segurança fetal e eficácia.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): O fluconazol por via oral em dose única é o tratamento de escolha para mulheres não gestantes. Durante a gravidez, os antifúngicos orais são contraindicados ou evitados devido ao risco aumentado de malformações congênitas e abortamento espontâneo. O tratamento na gestação deve ser sempre por via tópica/vaginal.\n\nAlternativa B (Correta): O tratamento padrão e de primeira escolha para candidíase vulvovaginal na gestação consiste no uso de derivados azólicos tópicos (como miconazol ou clotrimazol). Além disso, na gestante recomenda-se a utilização de esquemas mais prolongados (7 a 14 noites) para garantir maior eficácia e reduzir recidivas, tornando o miconazol creme vaginal por 10 noites a melhor conduta.\n\nAlternativa C (Incorreta): Embora a nistatina tópica seja segura e possa ser utilizada na gestação, os azólicos tópicos (como miconazol) demonstraram maior eficácia nas taxas de cura clínica e micológica, sendo, portanto, os agentes de primeira linha preferenciais em relação aos polienos.\n\nAlternativa D (Incorreta): O uso de bicarbonato de sódio tem como função alcalinizar o meio vaginal e é indicado no manejo da vaginose citolítica. Não possui ação antifúngica e não é eficaz no tratamento da candidíase.\n\nGabarito: Letra B.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Doenças de Vulva e Vagina",
+      "Vulvovaginites",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:03.526Z"
+  },
+  {
+    "id": "AJUDA_9c20baad-3380-46c4-8eec-859b772d6660",
+    "originalId": "9c20baad-3380-46c4-8eec-859b772d6660",
+    "statement": "É CORRETO afirmar que a Vigilância Sanitária (VISA), no controle de água e alimentos:",
+    "options": [
+      {
+        "id": "A",
+        "text": "limita-se à punição administrativa, sem interface com educação sanitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "atua apenas em produtos industrializados, sem alcance em serviços de alimentação artesanal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "integra vigilância ambiental e epidemiológica, articulando risco, inspeção e comunicação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "não executa análise laboratorial, delegando-a exclusivamente a serviços assistenciais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c).\n\nAnálise das alternativas:\n\na) Incorreta. A Vigilância Sanitária (VISA) não possui caráter estritamente punitivo. Embora tenha poder de polícia para aplicar sanções administrativas, uma de suas funções primordiais é a prevenção de riscos, o que envolve necessariamente a educação sanitária. A orientação de fornecedores, produtores e da população é parte estratégica para garantir a segurança no consumo de água e alimentos.\n\nb) Incorreta. O campo de atuação da VISA é abrangente e engloba todas as etapas da cadeia produtiva e de consumo. Isso inclui desde grandes indústrias até o comércio varejista e serviços de alimentação de pequeno porte, como restaurantes, lanchonetes e produções artesanais, visando proteger a saúde do consumidor em qualquer nível de fornecimento.\n\nc) Correta. A Vigilância Sanitária atua de forma integrada dentro do conceito de Vigilância em Saúde. No controle de água e alimentos, ela se articula com a Vigilância Ambiental (como no programa VIGIAGUA, que monitora a qualidade da água para consumo humano) e com a Vigilância Epidemiológica (fundamental na investigação e controle de surtos de Doenças Transmitidas por Alimentos - DTA). Essa atuação exige o gerenciamento de riscos, a realização de inspeções técnicas e a comunicação constante com a sociedade.\n\nd) Incorreta. A análise laboratorial é um dos pilares da Vigilância Sanitária para comprovar a conformidade de produtos e a potabilidade da água. O monitoramento é realizado por meio de uma rede de laboratórios oficiais, como os Laboratórios Centrais de Saúde Pública (LACENs), que integram a Rede Nacional de Laboratórios de Vigilância Sanitária (RNLVISA). Serviços assistenciais (hospitais e unidades de saúde) focam no cuidado ao paciente, e não no controle sanitário de produtos e água.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:03.526Z"
+  },
+  {
+    "id": "AJUDA_9c2142bc-b649-47b1-b9cc-7f740a674443",
+    "originalId": "9c2142bc-b649-47b1-b9cc-7f740a674443",
+    "statement": "Homem de 45 anos de idade apresenta perda ponderal de 6 kg em três meses, mialgia e episódios recorrentes de dor abdominal, fraqueza e parestesias em mãos e pés, com piora progressiva. AP: hepatite B; HAS. Exame físico: paresia em dorsoflexão do pé direito e perda da sensibilidade tátil e dolorosa no dorso do pé direito e na face lateral da perna esquerda. Exames laboratoriais: creatinina 1,8 mg/dL; sumário de urina sem alterações; ANCA negativo. Biópsia de nervo sural: inflamação transmural de artéria de médio calibre com necrose fibrinoide. O diagnóstico é",
+    "options": [
+      {
+        "id": "A",
+        "text": "poliarterite nodosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "granulomatose com poliangeíte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "poliangeíte microscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "arterite de células gigantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "crioglobulinemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve um quadro clássico de Poliarterite Nodosa (PAN), uma vasculite necrotizante sistêmica que acomete artérias de médio e pequeno calibre, poupando capilares e vênulas. \n\nOs elementos-chave para o diagnóstico são:\n1. Associação epidemiológica: antecedente de infecção pelo vírus da hepatite B (HBV), presente em parcela importante dos pacientes com PAN clássica.\n2. Acometimento neurológico: paresia e perda sensitiva assimétricas caracterizam a mononeurite múltipla, complicação neurológica típica das vasculites de médio calibre.\n3. Acometimento gastrointestinal e renal: episódios recorrentes de dor abdominal indicam isquemia mesentérica. A disfunção renal (creatinina 1,8 mg/dL) com sumário de urina inocente aponta para lesão isquêmica renovascular (estenoses/microaneurismas arteriais) e ausência de glomerulonefrite.\n4. Perfil laboratorial e histopatológico: ANCA negativo e biópsia de nervo sural demonstrando inflamação transmural de artéria de médio calibre com necrose fibrinoide, que fecha o diagnóstico de PAN.\n\nAnálise das alternativas:\n\na) Correta. A Poliarterite Nodosa caracteriza-se por inflamação transmural com necrose fibrinoide em artérias de médio calibre, forte associação com o vírus da hepatite B, acometimento renal sem glomerulite (urina normal), mononeurite múltipla e sorologia ANCA tipicamente negativa.\n\nb) Incorreta. A Granulomatose com Poliangeíte é uma vasculite de pequenos vasos caracterizada por acometimento do trato respiratório (sinusite crônica, nódulos ou cavitações pulmonares), glomerulonefrite com sedimento urinário ativo (hematúria e proteinúria) e positividade para c-ANCA (anti-PR3) na grande maioria dos casos.\n\nc) Incorreta. A Poliangeíte Microscópica é uma vasculite necrotizante de pequenos vasos que cursa frequentemente com glomerulonefrite rapidamente progressiva (sedimento urinário bastante alterado), acometimento pulmonar (hemorragia alveolar) e forte associação com p-ANCA (anti-MPO).\n\nd) Incorreta. A Arterite de Células Gigantes acomete artérias de grande calibre (como ramos da carótida) em indivíduos tipicamente acima de 50 anos, manifestando-se por cefaleia temporal, claudicação de mandíbula, alterações visuais e sintomas de polimialgia reumática, sem o padrão de mononeurite periférica por lesão de médios vasos.\n\ne) Incorreta. A Crioglobulinemia é uma vasculite de pequenos vasos associada predominantemente ao vírus da hepatite C (HCV), cursando com a tríade clássica de Meltzer (púrpura palpável, artralgia e fraqueza), além de consumo importante de complemento (C4 baixo) e frequente glomerulonefrite com sedimento urinário ativo.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vasculites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:03.526Z"
+  },
+  {
+    "id": "AJUDA_9c2a2516-9a40-4baf-b002-e466a40148cd",
+    "originalId": "9c2a2516-9a40-4baf-b002-e466a40148cd",
+    "statement": "Em relação ao acompanhamento do trabalho de parto, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a assistência ao parto deve ser realizada por enfermeiras obstétricas, obstetrizes, médicos de família com capacitação em obstetrícia ou médico obstetra",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "apesar de ser permitida a deambulação, o repouso no leito possui vantagens como encurtamento do trabalho de parto e redução do risco de cesariana",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "mulheres em trabalho de parto podem ingerir somente água, desde que não estejam sob o efeito de opioides nem apresentarem fatores de risco",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "internações precoces, na fase latente do parto, contribuem para prevenção de intervenções desnecessárias",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (CORRETA): A assistência ao parto de baixo risco deve ser pautada em um modelo multidisciplinar e colaborativo. As diretrizes nacionais (Ministério da Saúde) e internacionais (OMS) estabelecem que enfermeiras obstétricas, obstetrizes e médicos (obstetras ou médicos de família capacitados) possuem competência técnica para acompanhar o trabalho de parto e o parto normal, garantindo a segurança e a humanização do processo.\n\nAlternativa B (INCORRETA): O repouso no leito não oferece vantagens para o desfecho do parto. Pelo contrário, a deambulação e a adoção de posições verticais ou móveis durante o primeiro estágio do trabalho de parto estão associadas a uma redução na duração do parto e a uma menor necessidade de analgesia epidural, sem aumentar o risco de cesariana. O movimento auxilia no encaixe e na descida da apresentação fetal.\n\nAlternativa C (INCORRETA): As recomendações atuais permitem que mulheres em trabalho de parto de baixo risco ingiram não apenas água, mas também líquidos claros e alimentos leves (como sucos, chás e torradas). O objetivo é garantir o aporte calórico e evitar a desidratação e a cetose. A restrição severa de dieta é uma prática antiga que não se sustenta nas evidências atuais para pacientes sem alto risco anestésico.\n\nAlternativa D (INCORRETA): A internação hospitalar durante a fase latente do trabalho de parto está associada a um aumento significativo de intervenções desnecessárias, como o uso de ocitocina para acelerar o parto, a ruptura artificial das membranas (amniotomia) e maiores taxas de parto cirúrgico (cesariana). A recomendação padrão é que a internação ocorra no início da fase ativa (habitualmente a partir de 4 a 6 cm de dilatação com contrações rítmicas).",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:03.526Z"
+  },
+  {
+    "id": "AJUDA_9c3ef632-bd3f-4c6c-a5e8-c9240d140352",
+    "originalId": "9c3ef632-bd3f-4c6c-a5e8-c9240d140352",
+    "statement": "Mulher, 65 anos de idade, hipertensa, obesa e diabética, refere sangramento vaginal há 7 meses. Identificou-se espessamento endometrial = 9 mm à ultrassonografia. O resultado da biópsia do endométrio evidenciou adenocarcinoma endometrioide G1. Qual a conduta a seguir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histerectomia subtotal com salpingo-ooforectomia bilateral e coleta do lavado peritoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Histerectomia total com salpingectomia bilateral e coleta do lavado peritoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Histerectomia subtotal com salpingo-ooforectomia bilateral, linfadenectomia pélvica e periaórtica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Histerectomia total com salpingectomia bilateral, linfadenectomia pélvica e periaórtica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Histerectomia total com salpingo-ooforectomia bilateral e coleta do lavado peritoneal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente em questão apresenta o quadro clássico do câncer de endométrio tipo I: mulher na pós-menopausa com sangramento vaginal anormal e presença de fatores de risco como obesidade, diabetes e hipertensão (que compõem a síndrome metabólica, associada ao hiperestrogenismo periférico). O espessamento endometrial de 9 mm em mulheres na pós-menopausa é um sinal de alerta (o ponto de corte geralmente é de 4 a 5 mm), e a biópsia confirmou o Adenocarcinoma Endometrioide Grau 1 (G1), que é o tipo histológico mais comum e de melhor prognóstico.\n\nO tratamento para o câncer de endométrio é fundamentalmente cirúrgico, servindo tanto para o tratamento definitivo quanto para o estadiamento da doença.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. Em casos de câncer de endométrio, a histerectomia deve ser obrigatoriamente total (remoção do corpo e do colo uterino). A histerectomia subtotal é contraindicada, pois o câncer pode se estender ao colo do útero e sua permanência impede o tratamento adequado e o acompanhamento oncológico.\n\nAlternativa B: Incorreta. A alternativa propõe apenas a salpingectomia (retirada das trompas). No tratamento cirúrgico do câncer de endométrio, é necessária a salpingo-ooforectomia bilateral (retirada de trompas e ovários). A remoção dos ovários é indispensável devido ao risco de metástases microscópicas, tumores síncronos e pela necessidade de eliminar a fonte de estrogênio.\n\nAlternativa C: Incorreta. Repete o erro de propor uma histerectomia subtotal, o que não é aceitável em cirurgia oncológica para esta patologia.\n\nAlternativa D: Incorreta. Assim como a alternativa B, peca ao sugerir apenas a salpingectomia. Além disso, a linfadenectomia pélvica e periaórtica sistemática é um tema de debate para tumores G1 (baixo risco), sendo muitas vezes substituída pela pesquisa de linfonodo-sentinela ou omitida se não houver invasão miometrial profunda, mas a ausência da ooforectomia já invalida a opção.\n\nAlternativa E: Correta. Esta é a conduta padrão-ouro. O estadiamento cirúrgico inicial para o câncer de endométrio consiste na Histerectomia Total Extrafascial + Salpingo-ooforectomia Bilateral + Coleta de Lavado Peritoneal. É importante observar que, embora a classificação da FIGO de 2009 tenha retirado o lavado peritoneal dos critérios de estadiamento propriamente ditos, ele continua sendo uma etapa recomendada na técnica cirúrgica para avaliação de prognóstico e é frequentemente cobrado em concursos e provas de residência como parte do procedimento padrão.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Câncer do Corpo do Útero"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:03.526Z"
+  },
+  {
+    "id": "AJUDA_9c4023e4-4269-4ff1-afeb-d21cf532c0aa",
+    "originalId": "9c4023e4-4269-4ff1-afeb-d21cf532c0aa",
+    "statement": "O Diabetes Mellitus (DM) é uma doença crônica caracterizada pela hiperglicemia resultante de defeitos na secreção de insulina, na ação da insulina ou em ambos. Essa condição tem se tornado um dos maiores desafios de saúde pública global, afetando milhões de pessoas em todo o mundo. Dessa forma, avalie as afirmações como verdadeiras (V) ou falsas (F):\n\nI. A herança do DM tipo 1 é exclusivamente monogênica, com alta predisposição familiar, semelhante ao diabetes tipo 2.\nII. O anticorpo anti-insulina deve ser solicitado para todos os pacientes com DM tipo 1, independentemente de já estar em uso de insulina.\nIII. O DM tipo 1 é caracterizado pela destruição das células beta pancreáticas, levando a uma deficiência grave de insulina.\n\nA alternativa que contém a ordem CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS AFIRMAÇÕES:\n\nAfirmação I: Falsa. O diabetes mellitus tipo 1 (DM1) possui uma base genética complexa e poligênica (envolvendo múltiplos genes, com destaque para o sistema HLA), e não monogênica. Além disso, ao contrário do que muitos acreditam, a predisposição familiar e a herdabilidade são muito mais acentuadas no diabetes tipo 2 do que no tipo 1. O diabetes de herança exclusivamente monogênica é uma condição distinta, conhecida como MODY (Maturity-Onset Diabetes of the Young).\n\nAfirmação II: Falsa. O anticorpo anti-insulina (IAA) é um marcador de autoimunidade útil apenas no diagnóstico inicial de pacientes que ainda não iniciaram o tratamento. Uma vez que o paciente começa a utilizar insulina exógena (como medicamento), o corpo naturalmente produz anticorpos contra essa insulina aplicada. Portanto, em pacientes já em uso de insulina, o teste perde sua validade clínica, pois não é possível distinguir se a positividade é decorrente da doença autoimune ou da reação ao medicamento.\n\nAfirmação III: Verdadeira. Esta é a definição clássica da fisiopatologia do DM1. A doença surge a partir da destruição das células beta pancreáticas, geralmente por um processo imunomediado (autoimune). Como as células beta são as únicas produtoras de insulina no organismo, sua destruição leva a uma deficiência grave e absoluta desse hormônio, tornando o paciente dependente de insulina exógena para sobreviver.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A sequência correta é F, F, V. O erro está em considerar a afirmação II como verdadeira e a III como falsa.\nb) Incorreta. Os itens I e II são falsos, e o item III é verdadeiro.\nc) Correta. A sequência reflete exatamente a análise técnica: o DM1 não é monogênico (I-F), o anticorpo anti-insulina não deve ser solicitado em quem já usa insulina (II-F) e a fisiopatologia baseia-se na destruição das células beta (III-V).\nd) Incorreta. O item I é comprovadamente falso, o que invalida esta alternativa.\n\nGabarito: Letra (c).",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:03.526Z"
+  },
+  {
+    "id": "AJUDA_9c441ef1-8e6e-4dfb-9b27-e70231d5b210",
+    "originalId": "9c441ef1-8e6e-4dfb-9b27-e70231d5b210",
+    "statement": "Você está trabalhando em um hospital de referência e atende a paciente M, sexo feminino, 72 anos, diabética e hipertensa. Ela queixa-se de estar apresentando, há cerca de 30 minutos, dor precordial em aperto, irradiada para o dorso, acompanhada de vômitos e sudorese fria. Os principais achados do exame físico são: Frequência cardíaca: 116 bpm, PA 90x70, estertores subcreptantes em bases pulmonares e galope (B3). O ECG mostra infradesnivelamento do segmento ST de 2 mm e inversão de onda T de V2 a V6.\nQual a conduta apropriada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplicar uma ampola de Metoprolol, 5 mg, via endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar ao serviço de hemodinâmica para cineangiocoronariografia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar Alteplase endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deixar em observação na sala de emergência e aguardar resultado dos biomarcadores para conduta definitiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve uma paciente idosa, diabética e hipertensa, apresentando Síndrome Coronariana Aguda sem Supradesnivelamento do segmento ST (SCASSST), caracterizada pelo quadro clínico típico associado a infradesnivelamento de ST e inversão de onda T no eletrocardiograma. A presença de hipotensão (PA 90x70 mmHg), taquicardia (116 bpm) e sinais de insuficiência cardíaca esquerda (B3 e estertores pulmonares) classifica a paciente na categoria de muito alto risco (Killip II/instabilidade hemodinâmica).\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. Betabloqueadores, especialmente por via endovenosa, são formalmente contraindicados na vigência de instabilidade hemodinâmica, hipotensão arterial, bradicardia ou congestão pulmonar aguda, pois seu efeito inotrópico e cronotrópico negativo pode precipitar choque cardiogênico.\n\nAlternativa B - Correta. Pacientes com SCASSST que apresentam critérios de muito alto risco (como instabilidade hemodinâmica, choque cardiogênico, insuficiência cardíaca aguda, angina refratária ou arritmias ventriculares graves) têm indicação de estratégia invasiva imediata (cineangiocoronariografia em até 2 horas) para desobstrução e revascularização coronariana de urgência.\n\nAlternativa C - Incorreta. A trombólise química (como a alteplase) está contraindicada nas síndromes coronarianas sem supra de ST, pois não traz benefício clínico demonstrado e aumenta expressivamente o risco de sangramentos graves. Os fibrinolíticos são reservados exclusivamente para o infarto com supra de ST quando a angioplastia primária não estiver disponível no tempo adequado.\n\nAlternativa D - Incorreta. Diante de um paciente com síndrome coronariana aguda e instabilidade clínica/hemodinâmica, a conduta invasiva de emergência não deve ser adiada enquanto se aguarda o resultado de enzimas cardíacas (troponina). A prioridade absoluta é a intervenção imediata.\n\nGabarito: Letra B.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Choque",
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:03.526Z"
+  },
+  {
+    "id": "AJUDA_9c48411e-b98d-4821-9820-2fa2e6af24ce",
+    "originalId": "9c48411e-b98d-4821-9820-2fa2e6af24ce",
+    "statement": "O nível de CEA (antígeno carcinoembrionário) é especialmente útil no:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diagnóstico precoce do câncer gástrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estadiamento inicial do câncer de cólon.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Seguimento pós-operatório do câncer colorretal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Rastreamento populacional de CCR.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Diagnóstico diferencial entre pólipos hiperplásicos e adenomatosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Antígeno Carcinoembrionário (CEA) é uma glicoproteína associada à membrana celular, produzida normalmente por tecidos gastrointestinais fetais e em quantidades mínimas em adultos saudáveis. Na prática oncológica, ele atua como um marcador tumoral, mas sua aplicação possui limitações importantes que devem ser conhecidas para a resolução de questões de prova.\n\nAlternativa (a) Incorreta: O CEA apresenta baixa sensibilidade e especificidade para o diagnóstico precoce de qualquer neoplasia, incluindo o câncer gástrico. A maioria dos pacientes com câncer gástrico em estágio inicial terá níveis de CEA dentro da normalidade. Além disso, o marcador pode estar elevado em diversas outras condições, tanto malignas quanto benignas.\n\nAlternativa (b) Incorreta: O estadiamento inicial do câncer de cólon baseia-se fundamentalmente no sistema TNM (extensão do tumor, acometimento linfonodal e presença de metástases), utilizando exames de imagem como tomografia computadorizada e o exame anatomopatológico da peça cirúrgica. Embora um CEA pré-operatório muito elevado possa sugerir pior prognóstico ou presença de metástases ocultas, ele não define o estadiamento.\n\nAlternativa (c) Correta: Esta é a utilidade clínica mais consagrada do CEA. Em pacientes submetidos à cirurgia com intenção curativa para câncer colorretal, os níveis de CEA devem retornar ao normal em algumas semanas. A dosagem seriada desse marcador durante o acompanhamento (follow-up) é a ferramenta mais sensível para detectar precocemente a recorrência da doença. Um aumento progressivo dos níveis de CEA no pós-operatório frequentemente precede evidências radiológicas de recidiva tumoral em vários meses.\n\nAlternativa (d) Incorreta: O rastreamento (screening) populacional exige exames com alta sensibilidade e especificidade para detectar a doença em fases iniciais em pessoas assintomáticas. O CEA falha nesse papel, pois muitas doenças benignas (como tabagismo, DPOC, pancreatite e cirrose) podem elevá-lo, gerando falsos-positivos, enquanto muitos tumores iniciais não o elevam, gerando falsos-negativos. O rastreamento do câncer colorretal é feito preferencialmente por colonoscopia ou pesquisa de sangue oculto nas fezes.\n\nAlternativa (e) Incorreta: O CEA não possui resolução diagnóstica para diferenciar tipos de lesões precursoras. Pólipos (sejam hiperplásicos ou adenomatosos) geralmente não provocam elevação dos níveis séricos de CEA. A diferenciação entre esses pólipos é estritamente histopatológica, realizada após a biópsia ou polipectomia durante a colonoscopia.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:23:03.526Z"
+  }
+]

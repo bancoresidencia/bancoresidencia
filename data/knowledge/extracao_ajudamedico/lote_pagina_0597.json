@@ -1,0 +1,493 @@
+[
+  {
+    "id": "AJUDA_a6dcf1e0-0783-4080-8290-6c5d536e05fd",
+    "originalId": "a6dcf1e0-0783-4080-8290-6c5d536e05fd",
+    "statement": "De acordo com os critérios de elegibilidade da OMS (2015), o uso de métodos contraceptivos injetáveis mensais NÃO deve ser indicado em mulheres que fazem uso de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "rifampicina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "lamotrigina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "cetoconazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "zidovudina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão exige o conhecimento dos Critérios Médicos de Elegibilidade da OMS (2015) aplicados aos contraceptivos injetáveis mensais. Estes são métodos combinados, contendo estrogênio e progestagênio, e seguem regras de elegibilidade similares às das pílulas combinadas no que tange às interações medicamentosas.\n\nAlternativa a) Esta é a alternativa correta. A rifampicina (e a rifabutina) é um potente indutor enzimático do sistema citocromo P450 no fígado. Ela acelera o metabolismo dos hormônios contidos no injetável mensal, reduzindo sua concentração no sangue e, consequentemente, sua eficácia. Devido ao alto risco de falha contraceptiva e gravidez indesejada, a OMS classifica o uso de rifampicina com métodos combinados como Categoria 3 (os riscos geralmente superam os benefícios), o que significa que o método não deve ser indicado a menos que outros métodos não estejam disponíveis ou sejam inaceitáveis para a paciente.\n\nAlternativa b) Esta alternativa está incorreta no contexto da questão principal, embora a lamotrigina também receba classificação de Categoria 3 da OMS para métodos combinados. No entanto, o motivo da interação é diferente: os estrogênios presentes no contraceptivo é que reduzem os níveis séricos da lamotrigina, podendo levar ao descontrole de crises convulsivas. Em concursos médicos, quando se pergunta sobre medicamentos que prejudicam a eficácia do anticoncepcional, a rifampicina é o exemplo clássico e prioritário de indução enzimática.\n\nAlternativa c) Esta alternativa está incorreta. O cetoconazol é um antifúngico que não possui interação farmacológica significativa com os componentes dos injetáveis mensais de modo a contraindicar o seu uso. Para a OMS, o uso de antifúngicos desse grupo é considerado Categoria 1 (sem restrição ao uso do método).\n\nAlternativa d) Esta alternativa está incorreta. A zidovudina (AZT) é um antirretroviral pertencente à classe dos inibidores da transcriptase reversa análogos de nucleosídeos (ITRN). Medicamentos desta classe não interferem na eficácia dos métodos hormonais combinados e vice-versa. A classificação da OMS para esta associação é Categoria 1, permitindo o uso livre do método.\n\nPara revisão, as categorias de elegibilidade da OMS são:\nCategoria 1: Sem restrição de uso.\nCategoria 2: As vantagens superam os riscos.\nCategoria 3: Os riscos superam as vantagens (uso geralmente não recomendado).\nCategoria 4: Risco de saúde inaceitável (contraindicação absoluta).",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:54.974Z"
+  },
+  {
+    "id": "AJUDA_a6e0bfc2-2dad-45a6-89f9-ab36851af016",
+    "originalId": "a6e0bfc2-2dad-45a6-89f9-ab36851af016",
+    "statement": "Trabalhadores sazonais que residem em dois territórios solicitam vinculação a duas UBS para garantir acompanhamento. A conduta prevista pela PNAB, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "garantir vínculo único por usuário, sem possibilidade de cadastro em serviço adicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "permitir vinculação a mais de uma UBS/EAB quando necessário, assegurando continuidade do cuidado e acesso ampliado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "autorizar duplo vínculo apenas para gestantes em seguimento específico de pré-natal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "autorizar duplo vínculo exclusivamente para pessoas em cuidados paliativos domiciliares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "condicionar duplo vínculo à determinação judicial, conforme pactuação municipal extraordinária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Política Nacional de Atenção Básica (PNAB), revisada em 2017, estabelece diretrizes para a organização da Atenção Primária à Saúde (APS) no Brasil. Um dos desafios da gestão é lidar com a mobilidade populacional, garantindo que o cuidado não seja interrompido por questões burocráticas ou territoriais.\n\nAlternativa (a) Incorreta: Embora o ideal seja que o usuário tenha uma equipe de referência principal, a imposição de um vínculo único e rígido prejudicaria populações com alta mobilidade, como trabalhadores sazonais, ciganos ou nômades. Isso iria contra os princípios de acessibilidade e equidade do SUS.\n\nAlternativa (b) Correta: Esta alternativa reflete a diretriz da PNAB que prioriza a continuidade do cuidado e a universalidade do acesso. Para garantir que o trabalhador sazonal não fique desassistido ao se deslocar entre territórios por motivos laborais, a norma permite a vinculação a mais de uma Unidade Básica de Saúde (UBS) ou Equipe de Atenção Básica (EAB). O objetivo é facilitar o acompanhamento longitudinal, independentemente de onde o cidadão esteja em determinado período do ano.\n\nAlternativa (c) Incorreta: A permissão para o duplo vínculo não é uma exclusividade de gestantes. Ela se aplica a qualquer usuário que, por necessidade de deslocamento ou dinâmica de vida (como o trabalho sazonal), precise de assistência em diferentes territórios para manter seu tratamento ou acompanhamento preventivo.\n\nAlternativa (d) Incorreta: Pessoas em cuidados paliativos domiciliares possuem direitos específicos de assistência e prioridade, mas a regra de flexibilização do vínculo territorial em função da mobilidade geográfica é mais ampla e abrange o perfil dos trabalhadores mencionado na questão.\n\nAlternativa (e) Incorreta: A vinculação a mais de uma unidade é uma norma técnica e de gestão prevista na própria política nacional (PNAB). Não há necessidade de intervenção do Poder Judiciário ou de pactuações extraordinárias para que esse direito seja garantido ao trabalhador que reside temporariamente em diferentes territórios.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:54.974Z"
+  },
+  {
+    "id": "AJUDA_a6e830b9-04a9-4cc3-893d-6757b2d895d2",
+    "originalId": "a6e830b9-04a9-4cc3-893d-6757b2d895d2",
+    "statement": "Paciente do sexo feminino, de 56 anos, ASA II, iniciou com dor abdominal no hipocôndrio direito há 36 horas associada a náuseas. Ultrassonografia de abdome evidenciou vesícula distendida, paredes espessadas e cálculo único impactado no infundíbulo. Dentre as alternativas abaixo, assinale a MELHOR CONDUTA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibioticoterapia por 7-10 dias e colecistectomia tardia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colecistectomia laparoscópica precoce com equipe experiente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Colecistostomia percutânea, sob anestesia local e sedação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colangiopancreatografia retrograda endoscópica é obrigatória antes da cirurgia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta um quadro clínico e ultrassonográfico clássico de colecistite aguda calculosa: dor em hipocôndrio direito há 36 horas, vesícula biliar distendida, paredes espessadas e cálculo impactado no infundíbulo. Por ser uma paciente ASA II (com doença sistêmica leve e controlada), ela possui plenas condições cirúrgicas.\n\nAnálise das alternativas:\n\na) Incorreta. A estratégia de realizar antibioticoterapia isolada para \"esfriar\" a inflamação e realizar a colecistectomia tardia (após 6 a 12 semanas) era comum no passado. No entanto, evidências atuais e os Critérios de Tóquio (TG18) demonstram que a cirurgia precoce é superior, pois reduz o tempo de internação e os custos hospitalares, além de evitar falhas no tratamento conservador que podem levar a novas crises ou complicações antes da cirurgia programada.\n\nb) Correta. A colecistectomia laparoscópica precoce é o tratamento padrão-ouro para colecistite aguda. Ela deve ser realizada preferencialmente nas primeiras 72 horas do início dos sintomas, podendo ser estendida por até 7 dias. Como a paciente tem 36 horas de evolução e baixo risco cirúrgico (ASA II), esta é a conduta que oferece a melhor recuperação e a menor taxa de complicações a longo prazo.\n\nc) Incorreta. A colecistostomia percutânea é um procedimento de exceção. Ela é reservada apenas para pacientes extremamente graves, instáveis ou com múltiplas comorbidades (geralmente ASA III, IV ou V) que não suportariam uma anestesia geral ou o estresse cirúrgico de uma colecistectomia. Não é o caso da paciente em questão.\n\nd) Incorreta. A Colangiopancreatografia Retrógrada Endoscópica (CPRE) é um procedimento invasivo indicado para o tratamento de coledocolitíase (cálculo na via biliar principal). O enunciado descreve um cálculo impactado no infundíbulo da vesícula, e não há sinais de icterícia, dilatação de vias biliares ou alteração de enzimas hepáticas que sugiram a necessidade de exploração da via biliar ou realização de CPRE.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:54.974Z"
+  },
+  {
+    "id": "AJUDA_a6efc2dc-d745-43d2-950b-37281ff972b4",
+    "originalId": "a6efc2dc-d745-43d2-950b-37281ff972b4",
+    "statement": "Assinale a assertiva correta sobre a sífilis.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O rastreamento em profissionais do sexo e em pessoas que fazem uso abusivo de álcool e drogas é anual, conforme recomendação do Ministério da Saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A sífilis secundária manifesta-se com manchas no corpo não infectantes que desaparecem espontaneamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O tratamento da sífilis recente deve ser realizado com penicilina benzatina 2,4 milhões UI, por via intramuscular, em dose única.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Treponema pallidum não circula pelo sistema nervoso central antes de 1 ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A (Incorreta): De acordo com as diretrizes do Ministério da Saúde (PCDT de IST), o rastreamento de sífilis em populações-chave e de maior vulnerabilidade, o que inclui profissionais do sexo e pessoas que fazem uso abusivo de álcool e outras drogas, deve ser realizado semestralmente (a cada 6 meses), e não anualmente. O rastreamento anual é indicado para a população geral em situações de exposição de risco.\n\nAlternativa B (Incorreta): As lesões da sífilis secundária, como as roséolas e pápulas palmo-plantares, são altamente infectantes, pois possuem uma elevada carga de *Treponema pallidum*. Embora elas desapareçam espontaneamente após o período agudo, marcando a transição para a fase latente, a afirmação de que não são infectantes está clinicamente errada.\n\nAlternativa C (Correta): A sífilis recente é aquela com até um ano de evolução, englobando as fases primária, secundária e latente recente. O tratamento de escolha para esses casos é a penicilina G benzatina na dose de 2,4 milhões de UI, administrada por via intramuscular em dose única. Casos com mais de um ano de evolução ou de tempo indeterminado (sífilis tardia) exigem três doses semanais de 2,4 milhões de UI.\n\nAlternativa D (Incorreta): O *Treponema pallidum* tem a capacidade de invadir o sistema nervoso central (SNC) muito precocemente, logo após a infecção inicial, durante a fase de disseminação hematogênica. Portanto, a neurossífilis pode ocorrer em qualquer estágio da doença, inclusive na fase primária ou secundária, não havendo esse intervalo de um ano para a circulação no SNC.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:54.974Z"
+  },
+  {
+    "id": "AJUDA_a6ff0e9a-f503-4f59-9bce-4d1797c2cc93",
+    "originalId": "a6ff0e9a-f503-4f59-9bce-4d1797c2cc93",
+    "statement": "Uma paciente de 32 anos procura atendimento médico com queixa de dor e ardência ao urinar, aumento da frequência urinária e sensação de esvaziamento incompleto da bexiga, que começaram há 3 dias. Nega febre, corrimento vaginal ou dores abdominais. Diante do quadro clínico, qual é o tratamento mais indicado para essa paciente com infecção urinária não complicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metronidazol oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nitrofurantoína oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Doxiciclina oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Azitromicina oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Fluconazol oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um quadro clássico de cistite aguda, que é uma infecção do trato urinário (ITU) inferior não complicada. Os sintomas relatados — disúria (dor/ardência ao urinar), polaciúria (aumento da frequência) e a sensação de esvaziamento incompleto — são altamente sugestivos. A ausência de febre e dor lombar afasta o diagnóstico de pielonefrite (infecção alta), e a ausência de corrimento vaginal ajuda a excluir vulvovaginites ou cervicites, que poderiam ser diagnósticos diferenciais para a disúria. Em mulheres jovens e hígidas com esse quadro, o agente etiológico mais comum é a *Escherichia coli* (em cerca de 75 a 90% dos casos).\n\nJustificativa da alternativa correta:\n\nAlternativa (b) Nitrofurantoína oral: é considerada uma das drogas de primeira escolha para o tratamento de cistite aguda não complicada, de acordo com as principais diretrizes nacionais e internacionais (como as da Sociedade Brasileira de Infectologia e da IDSA). A nitrofurantoína apresenta alta concentração urinária, baixa resistência bacteriana da *E. coli* e baixo impacto na flora vaginal e intestinal. O esquema terapêutico habitual é de 100 mg de 6 em 6 horas (ou formulações de liberação prolongada de 12 em 12 horas) por 5 a 7 dias.\n\nAnálise das alternativas incorretas:\n\nAlternativa (a) Metronidazol oral: é um antimicrobiano com espectro voltado para bactérias anaeróbias e protozoários (como *Trichomonas vaginalis*). É utilizado no tratamento de vaginose bacteriana e tricomoníase, mas não possui atividade contra os uropatógenos Gram-negativos causadores da cistite.\n\nAlternativa (c) Doxiciclina oral: pertence à classe das tetraciclinas. Embora possa ser usada em infecções sexualmente transmissíveis (como uretrites por *Chlamydia trachomatis*), não é uma medicação de primeira linha para infecção urinária bacteriana comum e apresenta taxas de resistência superiores às das drogas de escolha.\n\nAlternativa (d) Azitromicina oral: é um macrolídeo indicado para infecções do trato respiratório e uretrites não gonocócicas (especialmente por clamídia). Não possui perfil farmacocinético adequado nem espectro de ação eficaz para o tratamento de rotina de infecções urinárias por enterobactérias.\n\nAlternativa (e) Fluconazol oral: é um medicamento antifúngico. Seria indicado apenas em casos de infecções urinárias causadas por fungos (como *Candida albicans*), o que é raro em pacientes jovens sem fatores de risco (como diabetes descompensado, imunossupressão ou uso prolongado de antibióticos e cateteres). O quadro clínico da paciente sugere fortemente uma etiologia bacteriana.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "ITU - Infecção do Trato Urinário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:54.974Z"
+  },
+  {
+    "id": "AJUDA_a70349e7-61a5-40e8-89c6-7004132079ec",
+    "originalId": "a70349e7-61a5-40e8-89c6-7004132079ec",
+    "statement": "Um Trabalhador da Área da Saúde (Enfermeiro) teve a sua Jornada de Trabalho Expirada as 18h, saindo em sua motocicleta em direção à sua residência, quando lembrou-se de realizar as compras do mês em um supermercado que estava inserido no trajeto, tendo gasto aproximadamente 90 minutos para realiza-las. Dando início ao retorno para sua residência, sofre um acidente, sendo projetado ao solo. apresentando diversas faturas de Membros Superiores, pergunto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não tenho elementos para caracterizar como Acidente de Trabalho",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Caracteriza-se como Acidente do Trabalho de acordo com a Legislação Vigente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Caracteriza-se como acidente de Trânsito de acordo com a Legislação Vigente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tanto pode ser caracterizado como Acidente de Trânsito ou do Trabalho",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o conceito de Acidente de Trajeto, que é uma modalidade equiparada ao acidente de trabalho pela legislação previdenciária brasileira (Lei nº 8.213/91). O ponto fundamental para a resolução é a análise do nexo causal entre o trabalho e o deslocamento.\n\nPara que um evento seja configurado como acidente de trajeto, ele deve ocorrer no percurso habitual entre a residência e o local de trabalho (ou vice-versa), dentro de um tempo compatível com a distância. Quando o trabalhador realiza um desvio de rota ou uma interrupção significativa por interesse estritamente pessoal, ocorre o rompimento do nexo causal. No caso descrito, o enfermeiro interrompeu seu retorno para casa por 90 minutos para realizar compras particulares, o que descaracteriza o trajeto protegido pela lei.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O enunciado fornece elementos suficientes para a análise técnica. A descrição do tempo de interrupção (90 minutos) e o motivo (compras do mês) permitem concluir que houve uma quebra do nexo entre o trabalho e o acidente.\n\nAlternativa b) Incorreta. De acordo com a jurisprudência previdenciária, interrupções ou desvios que não sejam de interesse do serviço ou que não sejam considerados necessidades triviais do percurso (como um abastecimento rápido de combustível) retiram a proteção legal do acidente de trabalho. Uma parada de uma hora e meia para compras é considerada um desvio de finalidade por interesse particular.\n\nAlternativa c) Correta. Como o nexo causal com o trabalho foi rompido pela parada prolongada para fins pessoais, o evento é classificado juridicamente apenas como um acidente de trânsito comum. O indivíduo não terá direito à emissão da Comunicação de Acidente de Trabalho (CAT) nem aos benefícios específicos de natureza acidentária junto ao INSS.\n\nAlternativa d) Incorreta. As classificações são excludentes para fins de direitos trabalhistas e previdenciários. Se houve o rompimento do nexo de trajeto pelo desvio de finalidade, o evento deixa de ser considerado acidente de trabalho, restando apenas a caracterização de acidente de trânsito (evento comum).",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:54.974Z"
+  },
+  {
+    "id": "AJUDA_a7034d43-700b-427d-9d33-608d3936e4e9",
+    "originalId": "a7034d43-700b-427d-9d33-608d3936e4e9",
+    "statement": "Considere as informações hipotéticas a seguir:\nA população da região administrativa A, estimada para 2024, foi de 1.600.000 habitantes, sendo 420.000 o número de mulheres entre 15 e 45 anos. Neste mesmo ano, houve 42.000 nascidos vivos e 630 nascidos mortos. Foram registrados 11.500 óbitos, sendo: 4.141 óbitos por doenças ligadas à gestação, parto e puerpério; 4.068 óbitos por doenças cardiovasculares; 1.160 óbitos por doenças infecciosas, das quais 488 por enterites e outras doenças diarreicas, e 1.968 óbitos de menores de 1 ano.\nSuponha que você vai realizar uma análise da situação de saúde desta região para apresentar em reunião no Conselho Municipal de Saúde. Os dados disponíveis permitem calcular os seguintes indicadores epidemiológicos, EXCETO,",
+    "options": [
+      {
+        "id": "A",
+        "text": "coeficiente geral de mortalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "razão de mortalidade maternal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "razão de mortalidade infantile.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "incidência de doenças infecciosas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "mortalidade específica por doenças cardiovasculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é fundamental diferenciar os conceitos de mortalidade (óbitos) e morbidade (doença/casos novos). O enunciado fornece dados demográficos (população total, mulheres em idade fértil) e dados de mortalidade (total de óbitos e causas específicas), além do número de nascidos vivos e mortos.\n\nAnálise das alternativas:\n\na) Coeficiente geral de mortalidade: Este indicador pode ser calculado dividindo-se o número total de óbitos (11.500) pela população total da região (1.600.000) e multiplicando por uma base de 1.000 ou 100.000 habitantes. Os dados necessários estão presentes no texto.\n\nb) Razão de mortalidade materna: Este indicador é calculado dividindo-se o número de óbitos por causas ligadas à gestação, parto e puerpério (4.141) pelo número de nascidos vivos (42.000) no mesmo período e local, multiplicando por 100.000. O enunciado fornece ambos os dados.\n\nc) Razão de mortalidade infantil: Também conhecida habitualmente como Coeficiente de Mortalidade Infantil, é calculada dividindo-se o número de óbitos de menores de 1 ano (1.968) pelo número de nascidos vivos (42.000) no mesmo período, multiplicando por 1.000. Ambos os dados estão disponíveis no texto.\n\nd) Incidência de doenças infecciosas: A incidência é um indicador de morbidade que mede o número de CASOS NOVOS de uma doença em uma população sob risco em um determinado período. O enunciado fornece apenas o número de ÓBITOS por doenças infecciosas (1.160), e não o número de pessoas que adoeceram. Sem o número de casos novos diagnosticados, é impossível calcular a incidência. Portanto, esta é a alternativa correta (o indicador que NÃO pode ser calculado).\n\ne) Mortalidade específica por doenças cardiovasculares: Este coeficiente é calculado dividindo-se o número de óbitos por doenças cardiovasculares (4.068) pela população total (1.600.000), multiplicando por uma base (ex: 100.000). Os dados para este cálculo estão presentes no enunciado.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:54.974Z"
+  },
+  {
+    "id": "AJUDA_a709d5a0-fb5a-4989-bc4c-de22b6ed32e3",
+    "originalId": "a709d5a0-fb5a-4989-bc4c-de22b6ed32e3",
+    "statement": "O principal objetivo da vigilância epidemiológica em saúde pública é",
+    "options": [
+      {
+        "id": "A",
+        "text": "diagnosticar doenças precocemente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "aumentar a cobertura vacinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "monitorar e controlar a disseminação de doenças.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "controlar o custo de tratamentos médicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Vigilância Epidemiológica é definida pela legislação brasileira (Lei 8.080/90) como um conjunto de ações que proporcionam o conhecimento, a detecção ou prevenção de qualquer mudança nos fatores determinantes e condicionantes de saúde individual ou coletiva, com a finalidade de recomendar e adotar as medidas de prevenção e controle das doenças ou agravos.\n\nAlternativa a) Incorreta. O diagnóstico precoce é um objetivo da prevenção secundária (rastreamento), focada no indivíduo para melhorar o prognóstico clínico. Embora a vigilância utilize dados diagnósticos, seu objetivo final ultrapassa o ato clínico, visando ao controle na coletividade.\n\nAlternativa b) Incorreta. Aumentar a cobertura vacinal é uma meta específica das ações de imunização e uma medida de controle. A vigilância epidemiológica monitora os dados de cobertura para identificar áreas de risco e orientar essas ações, mas o seu objetivo principal é mais abrangente do que apenas a vacinação.\n\nAlternativa c) Correta. Esta alternativa sintetiza a essência da vigilância epidemiológica: a coleta sistemática de dados para monitorar o comportamento de doenças na população e, a partir dessas informações, planejar e executar medidas de intervenção que visem ao controle, à redução da incidência ou à erradicação de agravos. É o conceito de informação para a ação.\n\nAlternativa d) Incorreta. O controle de custos é uma atribuição da gestão administrativa e da economia da saúde. Embora a vigilância possa gerar eficiência ao evitar surtos e epidemias onerosas, o foco técnico da vigilância epidemiológica é sanitário e biológico, não financeiro.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:54.974Z"
+  },
+  {
+    "id": "AJUDA_a70ac5f2-7197-4c8f-a3eb-a75eead83f1f",
+    "originalId": "a70ac5f2-7197-4c8f-a3eb-a75eead83f1f",
+    "statement": "De acordo com com a publicação do Ministério da Saúde intitulada “PLANO DE AÇÕES ESTRATÉGICAS PARA O ENFRENTAMENTO DAS DOENÇAS CRÔNICAS E AGRAVOS NÃO TRANSMISSÍVEIS NO BRASIL 2021-2030”, qual foi, em 2019, entre as causas externas, o principal grupo de causas de óbito no Brasil?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidentes de transporte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lesões autoprovocadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Agressões.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Quedas e afogamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão exige conhecimento sobre o perfil epidemiológico da mortalidade por causas externas no Brasil, utilizando como referência o Plano de Ações Estratégicas para o Enfrentamento das Doenças Crônicas e Agravos Não Transmissíveis (DANT) 2021-2030. As causas externas compreendem os acidentes e as violências.\n\nAlternativa a) Incorreta. Os acidentes de transporte representam uma das principais causas de mortalidade externa no país e são responsáveis por um elevado número de sequelas e internações. Contudo, em 2019, eles ocuparam a segunda posição em número de óbitos, ficando atrás das agressões. O plano aponta que houve uma redução progressiva nas taxas de mortalidade por acidentes de transporte terrestre em anos recentes, embora os números ainda sejam expressivos.\n\nAlternativa b) Incorreta. As lesões autoprovocadas (suicídios) são um grave problema de saúde pública e apresentam tendência de crescimento no Brasil. Apesar da relevância clínica e social, o número total de óbitos por essa causa em 2019 foi inferior ao registrado por agressões e por acidentes de transporte.\n\nAlternativa c) Correta. De acordo com o documento citado, em 2019, as agressões (homicídios) constituíram o principal grupo de causas de óbito entre as causas externas no Brasil. Esse dado reflete o impacto profundo da violência urbana e interpessoal na demografia do país, atingindo de forma desproporcional a população jovem, negra e do sexo masculino. O enfrentamento desse indicador é uma das prioridades das políticas de saúde e segurança pública integradas.\n\nAlternativa d) Incorreta. Quedas e afogamentos são causas importantes de morbimortalidade. As quedas têm maior impacto na população idosa, enquanto os afogamentos são causas frequentes de morte acidental em crianças. Entretanto, quando analisados os dados globais de mortalidade externa de 2019 no Brasil, esses eventos não superam o volume de mortes causadas por agressões.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:54.974Z"
+  },
+  {
+    "id": "AJUDA_a70f2e7a-4ac9-481f-8eb8-4db2afe53a9b",
+    "originalId": "a70f2e7a-4ac9-481f-8eb8-4db2afe53a9b",
+    "statement": "Criança com prótese valvar cardíaca irá realizar um procedimento dentário com manipulação gengival. A recomendação de profilaxia para endocardite infecciosa é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar Amoxicilina 50 mg/kg via oral 1 hora antes do procedimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Não há indicação de profilaxia antibiótica segundo as diretrizes atuais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar Clindamicina 20 mg/kg via oral após o procedimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar Penicilina Benzatina intramuscular 24 horas antes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Comentário do Especialista:\n\nA profilaxia para endocardite infecciosa (EI) é recomendada apenas para pacientes com condições cardíacas de alto risco que serão submetidos a procedimentos odontológicos que envolvam a manipulação de tecido gengival, região periapical dos dentes ou perfuração da mucosa oral.\n\nAlternativa (a): CORRETA. Segundo as diretrizes da American Heart Association (AHA) e da Sociedade Brasileira de Cardiologia (SBC), o esquema preferencial para crianças é a amoxicilina na dose de 50 mg/kg, por via oral, administrada de 30 a 60 minutos antes do procedimento. A amoxicilina é a droga de escolha devido à sua excelente absorção gastrointestinal e aos níveis séricos elevados e sustentados que proporciona.\n\nAlternativa (b): INCORRETA. Pacientes com próteses valvares cardíacas (sejam mecânicas ou biológicas) pertencem ao grupo de maior risco para complicações graves da endocardite. Portanto, a profilaxia é formalmente indicada quando há manipulação gengival. Outros grupos de risco incluem pacientes com endocardite prévia, certas cardiopatias congênitas cianóticas e transplantados cardíacos com valvulopatia.\n\nAlternativa (c): INCORRETA. Embora a clindamicina (na dose de 20 mg/kg) tenha sido utilizada por muito tempo como alternativa para pacientes alérgicos à penicilina, diretrizes internacionais recentes têm evitado sua recomendação devido ao risco de infecção por Clostridioides difficile. Além disso, a alternativa está errada ao sugerir a administração APÓS o procedimento; a profilaxia deve garantir o pico do antibiótico no sangue DURANTE a manipulação, devendo ser feita obrigatoriamente antes.\n\nAlternativa (d): INCORRETA. A penicilina benzatina é utilizada na profilaxia secundária da febre reumática para prevenir novas faringites por estreptococo do grupo A. Ela não possui o perfil farmacocinético adequado para a profilaxia de endocardite, pois sua absorção é muito lenta e não atinge a concentração inibitória necessária para bloquear a bacteremia transitória causada por um procedimento dentário.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Endocardite Bacteriana"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:54.974Z"
+  }
+]

@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_a2dd31b4-ed8b-4a86-a93f-057e28caf201",
+    "originalId": "a2dd31b4-ed8b-4a86-a93f-057e28caf201",
+    "statement": "Durante as inundações da região metropolitana de Porto Alegre, paciente masculino, de 70 anos, que havia ficado exposto à água por mais de 12 horas, apresentou parada cardiorrespiratória logo após ser resgatado. Foram iniciadas as manobras de ressuscitação conforme as recomendações da American Heart Association (AHA). Com base no caso, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipotermia é a causa mais provável da parada cardiorrespiratória, pois mesmo casos leves (estágio I) estão associados a instabilidade hemodinâmica e arritmias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A idade do paciente não está associada a aumento de risco de complicações da hipotermia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Devido à hipotermia, desfibrilação está contraindicada até o reaquecimento do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As manobras de reanimação não devem ser interrompidas até que o paciente seja reaquecido (> 32°C).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o manejo da parada cardiorrespiratória (PCR) em situações de hipotermia acidental, um cenário comum em resgates de inundações. O ponto central é entender como a temperatura corporal influencia a fisiologia da reanimação e o prognóstico do paciente.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A hipotermia pode, sim, ser a causa da PCR, mas a afirmação sobre o estágio I está errada. A hipotermia leve (Estágio I, temperatura central entre 32 °C e 35 °C) caracteriza-se por mecanismos compensatórios preservados, como tremores, taquicardia e vasoconstrição, sem a instabilidade hemodinâmica grave ou arritmias fatais que são típicas dos estágios moderado (Estágio II) e grave (Estágios III e IV).\n\nAlternativa (b) Incorreta. A idade avançada é um fator de risco significativo. Pacientes idosos apresentam menor reserva funcional, menor taxa metabólica basal, redução da gordura subcutânea e, frequentemente, comorbidades que prejudicam a termorregulação e a resposta ao estresse térmico, aumentando a gravidade das complicações.\n\nAlternativa (c) Incorreta. A desfibrilação não é contraindicada. As diretrizes da American Heart Association (AHA) recomendam que, se um ritmo chocável for identificado, deve-se tentar a desfibrilação. Caso o paciente não responda ao choque inicial, novas tentativas podem ser postergadas enquanto se foca no reaquecimento, mas não há proibição de realizar o procedimento logo de início.\n\nAlternativa (d) Correta. Esta alternativa reflete o princípio fundamental do manejo da hipotermia grave: “Ninguém está morto até que esteja quente e morto”. A hipotermia exerce um efeito neuroprotetor, reduzindo a demanda metabólica cerebral, o que pode permitir a recuperação neurológica mesmo após períodos prolongados de PCR. Portanto, os esforços de reanimação devem ser mantidos de forma agressiva, concomitantemente ao reaquecimento do paciente (geralmente até atingir um patamar entre 32 °C e 35 °C), antes de se considerar a interrupção das manobras por falha terapêutica.\n\nResumo do Caso: No contexto de exposição prolongada à água fria (como nas inundações mencionadas), o paciente de 70 anos deve ser tratado com protocolos de suporte avançado de vida em cardiologia (ACLS) adaptados para hipotermia, priorizando o reaquecimento ativo e a manutenção das manobras de ressuscitação por tempo estendido.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Trauma",
+      "Parada Cardiorrespiratória (PCR)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:56.484Z"
+  },
+  {
+    "id": "AJUDA_a2e76aaf-ee7f-48c4-940a-1f2fd9f71727",
+    "originalId": "a2e76aaf-ee7f-48c4-940a-1f2fd9f71727",
+    "statement": "Em um plantão em terapia intensiva, você é responsável por paciente do sexo masculino, 62 anos, com pneumonia adquirida na comunidade grave, internado em UTI. Apresenta hipotensão arterial, hipoxemia e necessidade de altas frações de oxigênio, já recebendo antibioticoterapia empírica ampla. Mantém instabilidade hemodinâmica e PCR aumentado. Pro-calcitonina aumentada. \nQual a conduta sobre o uso de corticoide nesse contexto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Contraindicado em qualquer situação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicado apenas se houver asma associada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pode ser considerado em casos de resposta inflamatória exacerbada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indicado para pacientes em terapia intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o manejo da Pneumonia Adquirida na Comunidade (PAC) grave em ambiente de terapia intensiva. O paciente descrito apresenta sinais de gravidade extrema, como instabilidade hemodinâmica e marcadores inflamatórios (Proteína C-Reativa e Procalcitonina) significativamente elevados, o que caracteriza uma resposta inflamatória sistêmica intensa.\n\nAnálise das alternativas:\n\nAlternativa a: Está incorreta. O uso de corticosteroides não é contraindicado em todas as situações de pneumonia. Evidências científicas robustas, incluindo diretrizes da ATS/IDSA e estudos recentes como o ensaio CAPE COD, demonstram que o uso de corticoide em doses moderadas pode reduzir a mortalidade e a necessidade de ventilação mecânica em pacientes com PAC grave.\n\nAlternativa b: Está incorreta. Embora o corticoide seja o tratamento padrão para crises de asma ou DPOC, seu uso na pneumonia grave não depende da presença dessas comorbidades. O objetivo do fármaco, neste contexto, é a modulação da cascata inflamatória e da tempestade de citocinas gerada pela infecção pulmonar grave.\n\nAlternativa c: Está correta. Esta é a alternativa que melhor reflete a prática clínica baseada em evidências. O uso de corticosteroides (como a hidrocortisona) deve ser considerado em pacientes com PAC grave que apresentam uma resposta inflamatória exacerbada. A presença de choque (instabilidade hemodinâmica) e a elevação expressiva de marcadores como o PCR e a Procalcitonina sustentam a decisão de utilizar o corticoide para mitigar o dano inflamatório sistêmico e pulmonar.\n\nAlternativa d: Está incorreta porque é excessivamente generalista. Nem todo paciente internado em UTI tem indicação de receber corticoide. A indicação na PAC grave é direcionada por critérios de gravidade clínica (como necessidade de suporte ventilatório ou vasopressor) e pelo perfil inflamatório, e não apenas pela localização física do paciente na unidade de terapia intensiva.\n\nEm resumo, a corticoterapia adjuvante na PAC grave tem como alvo pacientes com sinais de gravidade e inflamação sistêmica importante, visando reduzir a mortalidade e o tempo de suporte intensivo.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Sepse",
+      "Pneumologia Intensiva",
+      "Ventilação Mecânica",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:56.484Z"
+  },
+  {
+    "id": "AJUDA_a2eba38d-8bfb-477f-b8c6-c39a459e4a1c",
+    "originalId": "a2eba38d-8bfb-477f-b8c6-c39a459e4a1c",
+    "statement": "Paciente de 25 anos, com lesão vulvar multifocal, de coloração cinza, cuja superfície é áspera e acetobranca foi biopsiada e o laudo revelou: NIV II (LIEAG). O tratamento CORRETO será:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vulvectomia simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vulvectomia superficial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Exérese das lesões com margem de 3,0cm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Imiquimode a 5%.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo da Neoplasia Intraepitelial Vulvar de alto grau (NIV II / LIEAG ou HSIL vulvar) em uma paciente jovem de 25 anos com apresentação multifocal. O objetivo principal do tratamento nessas pacientes é a erradicação da lesão e a prevenção de progressão para carcinoma invasor, mantendo a anatomia, a função sexual e minimizando sequelas cosméticas e psicológicas.\n\nAlternativa A (Incorreta): A vulvectomia simples consiste na ressecção completa da pele e tecido subcutâneo vulvar. Trata-se de um procedimento mutilante e superdimensionado para uma lesão pré-invasora em uma mulher jovem.\n\nAlternativa B (Incorreta): A vulvectomia superficial (skinning vulvectomy) remove a pele vulvar preservando o subcutâneo. Embora preserve mais tecido do que a vulvectomia simples, ainda é um procedimento cirúrgico agressivo, associado a morbidade considerável, sendo reservado para casos refratários ou extensos em que abordagens mais conservadoras falharam.\n\nAlternativa C (Incorreta): A exérese ampla pode ser utilizada em lesões unifocais, mas a margem preconizada para lesões intraepiteliais (NIV de alto grau) é de 0,5 a 1,0 cm. Margens de 3,0 cm são excessivas e reservadas para o tratamento de carcinoma invasor com intenção de controle oncológico radical.\n\nAlternativa D (Correta): O Imiquimode a 5% em creme é um imunomodulador tópico que induz resposta imune local mediada por citocinas e interferon-alfa. É uma excelente opção terapêutica para pacientes jovens com lesões multifocais de NIV de alto grau, pois apresenta boas taxas de resposta e remissão, além de preservar a anatomia vulvar e a função psicossexual sem os riscos de deformidades cirúrgicas.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Doenças de Vulva e Vagina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:56.484Z"
+  },
+  {
+    "id": "AJUDA_a3000ac7-ff6a-43b7-930f-703a9cea7fb3",
+    "originalId": "a3000ac7-ff6a-43b7-930f-703a9cea7fb3",
+    "statement": "Assinale a alternativa que apresenta a principal ação da estratégia de saúde da família para a promoção da saúde comunitária.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realização de campanhas de vacinação em massa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tratamento de doenças em hospitais especializados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coordenação de exames laboratoriais de rotina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Identificação e monitoramento de fatores de risco individuais e coletivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Comentário da Questão:\n\nA Estratégia de Saúde da Família (ESF) é o modelo prioritário da Atenção Primária à Saúde (APS) no Brasil, fundamentado na territorialização e na atenção contínua. Seu objetivo central é deslocar o foco do tratamento da doença para a promoção da saúde e prevenção de agravos, atuando diretamente onde as pessoas vivem.\n\nAlternativa (a) Incorreta: Embora a vacinação seja uma ação essencial de prevenção primária e a ESF tenha um papel crucial na execução do Programa Nacional de Imunizações (PNI), as campanhas em massa são atividades pontuais e verticais. A promoção da saúde na ESF é um processo contínuo que vai além da imunização, envolvendo determinantes sociais e mudanças de hábitos.\n\nAlternativa (b) Incorreta: O tratamento em hospitais especializados caracteriza a atenção secundária ou terciária. A lógica da ESF é justamente inversa: busca resolver a grande maioria dos problemas de saúde na própria comunidade, reduzindo a necessidade de encaminhamentos hospitalares e evitando a fragmentação do cuidado.\n\nAlternativa (c) Incorreta: A coordenação de exames laboratoriais faz parte do suporte diagnóstico e do acompanhamento de doenças instaladas. No entanto, a promoção da saúde foca no fortalecimento da autonomia dos indivíduos e em intervenções antes que a patologia se manifeste, não se limitando à rotina de exames complementares.\n\nAlternativa (d) Correta: Esta é a base da vigilância em saúde e da atuação territorial da ESF. Para promover a saúde de uma comunidade, a equipe deve conhecer o perfil epidemiológico e social de sua área de abrangência. Identificar riscos (como falta de saneamento, sedentarismo, tabagismo ou vulnerabilidade social) e monitorar esses fatores tanto individualmente quanto coletivamente permite intervenções precoces e personalizadas, sendo esta a ação mais estratégica e abrangente da ESF.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:56.484Z"
+  },
+  {
+    "id": "AJUDA_a3023b7f-b4ed-4ea7-8467-ce6072901202",
+    "originalId": "a3023b7f-b4ed-4ea7-8467-ce6072901202",
+    "statement": "Mulher, 30 anos de idade, previamente hígida, é admitida no PS com dor torácica, expectoração amarelada e febre há cinco dias, apresentando hoje dispneia. Na triagem, foi constatado: PA = 85/40 mmHg, FC = 130 bpm, FR = 28 irpm e SpO2 =85%. A paciente foi levada à sala de emergência. Exames: gasometria arterial pH = 7,23, PaCO2 = 30 mmHg, PaO2 = 55 mmHg, bicarbonato = 16 mEq/L e lactato = 35 mg/L. De acordo com a Campanha de Sobrevivência à Sepse, qual é a alternativa correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Como há insuficiência respiratória, a expansão volêmica deve ser realizada com volumes menores que 30 mL/kg, a fim de se evitar congestão volêmica e piora da dispneia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Um vasopressor pode ser iniciado em veia periférica mesmo antes de completar a expansão volêmica, até que se obtenha um acesso venoso profundo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Como o paciente não tem choque séptico, devemos esperar os exames para confirmação da hipótese de infecção nas próximas 3 horas, antes de se iniciar antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Como se trata de foco pulmonar, não é necessária a coleta de hemoculturas dada a sua baixa positividade nesse cenário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta um quadro de sepse com provável foco pulmonar (dor torácica, febre, expectoração e hipoxemia), evoluindo com sinais de choque (hipotensão, taquicardia e hiperlactatemia).\n\nAlternativa A: Incorreta. As diretrizes da Campanha de Sobrevivência à Sepse (Surviving Sepsis Campaign – SSC) recomendam a administração de pelo menos 30 mL/kg de cristaloides nas primeiras 3 horas de ressuscitação para pacientes com hipotensão induzida pela sepse ou lactato elevado (maior ou igual a 4 mmol/L). Embora a monitorização cuidadosa seja necessária em pacientes com hipoxemia, a recomendação do volume inicial padrão permanece para garantir a perfusão tecidual.\n\nAlternativa B: Correta. De acordo com a atualização de 2021 da SSC, para evitar o atraso na reversão da hipotensão, é recomendado iniciar vasopressores (preferencialmente noradrenalina) via acesso venoso periférico se um acesso central não estiver prontamente disponível. O uso em veia periférica calibrosa e proximal é considerado seguro por períodos curtos até que se obtenha o acesso venoso profundo.\n\nAlternativa C: Incorreta. Na presença de choque séptico ou alta probabilidade de sepse, o início da antibioticoterapia deve ser imediato, idealmente na primeira hora após o reconhecimento. Aguardar resultados de exames para confirmar a infecção em um quadro clinicamente evidente posterga o tratamento e aumenta significativamente a mortalidade.\n\nAlternativa D: Incorreta. A coleta de hemoculturas (pelo menos dois pares de sítios diferentes) é obrigatória no protocolo de sepse e deve ser realizada preferencialmente antes do início do antibiótico, desde que isso não atrase a medicação. Mesmo no foco pulmonar, a identificação do agente na corrente sanguínea é crucial para o ajuste da terapia e descalonamento (de-escalonamento) do tratamento.\n\nGabarito: Alternativa (b).",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Sepse",
+      "Choque",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:56.484Z"
+  },
+  {
+    "id": "AJUDA_a3111076-1aec-454a-b902-b4f571f3569e",
+    "originalId": "a3111076-1aec-454a-b902-b4f571f3569e",
+    "statement": "Em relação ao transtorno de déficit de atenção/hiperatividade (TDAH) conforme o DSM-5, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Frequentemente, crianças e adolescentes com TDAH apresentam deficiências significativas na vida acadêmica e em situações sociais e interpessoais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "No passado, para ser realizado o diagnóstico de TDAH, a presença de sintomas aos 12 anos de idade era necessária. Atualmente, a idade diminuiu para 7 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anteriormente, havia três subtipos: desatento, hiperativo/impulsivo e combinado. Pelos critérios atuais, existem apenas dois subtipos: desatento e hiperativo/impulsivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pelos critérios diagnósticos atuais, não é possível realizar diagnóstico de TDAH em comorbidade com transtorno do espectro autista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise detalhada das alternativas:\n\nAlternativa A (Correta): O TDAH é caracterizado por um padrão persistente de desatenção e/ou hiperatividade-impulsividade que interfere no funcionamento ou no desenvolvimento do indivíduo. Para o diagnóstico, é fundamental que os sintomas causem prejuízos claros. Em crianças e adolescentes, esses impactos são frequentemente observados no baixo rendimento escolar (dificuldade de organização, erros por descuido) e em problemas de interação social, como dificuldade em seguir regras de convivência ou interromper os outros.\n\nAlternativa B (Incorreta): Ocorreu exatamente o oposto do que afirma a alternativa. No DSM-IV, os sintomas deveriam estar presentes antes dos 7 anos de idade. Com a atualização para o DSM-5, esse limite de idade foi ampliado para antes dos 12 anos. Essa mudança ocorreu porque muitas vezes o prejuízo só se torna evidente quando as demandas acadêmicas e sociais aumentam, o que pode acontecer após os 7 anos.\n\nAlternativa C (Incorreta): O DSM-5 não reduziu o número de categorias, mas mudou a nomenclatura e a compreensão delas. No DSM-IV, eram chamados de subtipos. No DSM-5, são chamados de apresentações: Apresentação combinada, Apresentação predominantemente desatenta e Apresentação predominantemente hiperativa/impulsiva. O termo apresentação é preferido porque reconhece que os sintomas podem mudar ao longo da vida do paciente (um indivíduo pode ser predominantemente hiperativo na infância e tornar-se desatento na vida adulta).\n\nAlternativa D (Incorreta): Esta é uma das mudanças mais importantes do DSM-5. No manual anterior (DSM-IV), o diagnóstico de Transtorno do Espectro Autista (TEA) era um critério de exclusão para o TDAH. Atualmente, o DSM-5 permite explicitamente o diagnóstico de comorbidade entre TDAH e TEA, reconhecendo que ambas as condições frequentemente coexistem no mesmo paciente.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:56.484Z"
+  },
+  {
+    "id": "AJUDA_a31ed3c8-6ac4-4fa9-a37c-e4f3d1377b6f",
+    "originalId": "a31ed3c8-6ac4-4fa9-a37c-e4f3d1377b6f",
+    "statement": "Mulher de 50 anos, alcoólatra, tem história de febre alta acompanhada de calafrios, perda de peso, náuseas, vômitos e dor abdominal em quadrante superior direito há alguns dias. Os sinais vitais estão mantidos. Os exames laboratoriais apresentam hemoglobina = 11g/dL, leucócitos = 18.000/mm3, plaquetas = 230.000/mm3, creatinina = 1,2mg/dL, ureia = 50mg/dL, bilirrubina total = 8,5mg/dL e fosfatase alcalina = 700U/L. A USG abdominal revela dilatação das vias biliares extra-hepáticas e cálculos em vesícula. Nesse caso, além do início de antibióticos, o diagnóstico e a melhor conduta terapêutica, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "colangite aguda / realizar CPRE com papilotomia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "colecistite aguda / realizar drenagem biliar externa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "colangite aguda / realizar colecistectomia via percutânea",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "colecistite aguda / realizar TC com contraste com papilotomia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta o quadro clássico da Tríade de Charcot: febre com calafrios, dor abdominal em hipocôndrio direito e icterícia (confirmada laboratorialmente pela bilirrubina total de 8,5 mg/dL). Os exames laboratoriais corroboram um processo infeccioso agudo (leucocitose de 18.000/mm³) e um padrão de colestase extra-hepática (elevação importante da fosfatase alcalina). O achado ultrassonográfico de dilatação das vias biliares extra-hepáticas associado a cálculos na vesícula aponta para uma obstrução do ducto colédoco, o que leva à estase biliar e consequente infecção, configurando o diagnóstico de colangite aguda.\n\nO tratamento da colangite aguda baseia-se na estabilização clínica, antibioticoterapia e, fundamentalmente, na descompressão das vias biliares. Como a paciente apresenta sinais vitais mantidos (colangite não grave ou grau I/II), a descompressão deve ser realizada preferencialmente por via endoscópica.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) CORRETA: O diagnóstico é de colangite aguda devido à presença da Tríade de Charcot e evidência de obstrução biliar. A CPRE (Colangiopancreatografia Retrógrada Endoscópica) com papilotomia é o padrão-ouro para o tratamento, pois permite a descompressão da via biliar, drenagem da bile purulenta e a retirada do cálculo obstrutor de forma minimamente invasiva.\n\nAlternativa b) INCORRETA: A colecistite aguda é a inflamação da vesícula biliar, geralmente por impacto de cálculo no ducto cístico. Embora cause dor e febre, tipicamente não cursa com icterícia acentuada nem com dilatação das vias biliares extra-hepáticas (colédoco), já que a obstrução está na vesícula e não no trajeto principal da bile para o duodeno. Além disso, a drenagem biliar externa é reservada para casos em que a via endoscópica falha ou não está disponível.\n\nAlternativa c) INCORRETA: Embora identifique corretamente a colangite aguda, a conduta proposta está errada. A colecistectomia (seja ela percutânea, que na verdade é uma colecistostomia, ou cirúrgica) trata a vesícula biliar, mas não resolve a obstrução do ducto colédoco, que é a causa da colangite. O foco inicial deve ser a limpeza da via biliar principal.\n\nAlternativa d) INCORRETA: O diagnóstico de colecistite aguda está incorreto pelos motivos já expostos (presença de icterícia e dilatação ductal). Além disso, a redação da conduta é tecnicamente incoerente, pois a papilotomia é um procedimento terapêutico realizado via endoscópica (CPRE) e não através de uma Tomografia Computadorizada (TC), que é apenas um método de imagem diagnóstico.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:56.484Z"
+  },
+  {
+    "id": "AJUDA_a3226310-a408-4d2b-80a6-ed83384ad04f",
+    "originalId": "a3226310-a408-4d2b-80a6-ed83384ad04f",
+    "statement": "Um rapaz de 20 anos queixa-se de tosse e hemoptise há 5 dias, evoluindo com dispneia aos mínimos esforços e ortopneia. Observa-se, na ausculta cardíaca, um sopro diastólico rude na região do ápice do coração. Qual é a provável valvopatia desse rapaz?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insuficiência mitral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Insuficiência aórtica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estenose tricúspide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estenose aórtica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Estenose mitral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descrito apresenta um paciente jovem com sintomas de congestão pulmonar grave (dispneia aos mínimos esforços e ortopneia) e hemoptise, associados a um achado específico na ausculta cardíaca: sopro diastólico rude no ápice (foco mitral).\n\nA análise das alternativas permite identificar a patologia:\n\na) Insuficiência mitral: Incorreta. A insuficiência mitral caracteriza-se por um sopro holossistólico (durante a sístole), de caráter aspirativo, que geralmente irradia para a axila. O sopro da questão é diastólico.\n\nb) Insuficiência aórtica: Incorreta. Embora a insuficiência aórtica apresente um sopro diastólico, ele é tipicamente aspirativo, de alta frequência e melhor ouvido no foco aórtico ou aórtico acessório (borda esternal esquerda), e não um sopro rude no ápice.\n\nc) Estenose tricúspide: Incorreta. O sopro da estenose tricúspide também é diastólico, porém é melhor auscultado na borda esternal esquerda inferior (foco tricúspide) e costuma aumentar de intensidade com a inspiração profunda (sinal de Rivero-Carvallo), o que não foi descrito.\n\nd) Estenose aórtica: Incorreta. A estenose aórtica manifesta-se com um sopro sistólico, do tipo crescendo-decrescendo (em diamante), melhor ouvido no foco aórtico com irradiação para as carótidas.\n\ne) Estenose mitral: Correta. Esta é a principal causa de sopro diastólico rude (ruflar diastólico) localizado no ápice cardíaco. A fisiopatologia explica os sintomas: a obstrução ao fluxo do átrio esquerdo para o ventrículo esquerdo aumenta a pressão no átrio esquerdo, que é transmitida retrogradamente para a circulação pulmonar. Isso causa congestão (dispneia e ortopneia) e pode levar à ruptura de pequenas veias brônquicas devido à hipertensão venocapilar pulmonar, resultando em hemoptise. Em pacientes jovens no Brasil, a etiologia reumática é a causa mais comum.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Valvopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:56.484Z"
+  },
+  {
+    "id": "AJUDA_a324f08f-7858-409a-9468-e37fb531457a",
+    "originalId": "a324f08f-7858-409a-9468-e37fb531457a",
+    "statement": "Menino, lactente de 5 meses, apresenta história de febre (TAX = 39°C) há cerca de 30 horas e sem nenhum outro sintoma. Ao exame físico, não apresentou qualquer alteração. O EAS revelou nitrito positivo e 20 a 30 leucócitos por campo. O hemograma completo mostrou leucocitose e neutrofilia. Nesse caso, a investigação diagnóstica deve considerar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "os sintomas apresentados e os resultados do EAS não sugerem infecção do trato urinário, devendo-se pesquisar otite como causa da febre",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a avaliação por imagem do trato urinário deve ser iniciada com ultrassonografia de rins e vias urinárias",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o EAS é suficiente para a confirmação diagnóstica, não sendo necessário realizar urinocultura",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a amostra de urina para cultura e antibiograma deve ser colhida utilizando saco coletor",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente é um lactente de 5 meses com febre sem sinais localizadores. O exame de urina (EAS) apresenta nitrito positivo e leucocitúria, o que eleva significativamente a suspeita de Infecção do Trato Urinário (ITU). Diante de um primeiro episódio de ITU febril em lactentes, as diretrizes pediátricas recomendam a investigação por imagem para descartar malformações anatômicas.\n\nAlternativa A (Incorreta): Os achados do EAS (nitrito positivo e leucócitos) são altamente sugestivos de ITU em um lactente com febre sem foco. O nitrito positivo tem alta especificidade. Além disso, o exame físico foi normal, o que torna a otite um diagnóstico menos provável do que a ITU neste momento.\n\nAlternativa B (Correta): De acordo com a Sociedade Brasileira de Pediatria e a Academia Americana de Pediatria, todo lactente que apresenta o primeiro episódio de ITU febril deve ser submetido a uma avaliação por imagem. A ultrassonografia de rins e vias urinárias é o exame inicial de escolha por ser não invasivo, não emitir radiação e ser capaz de detectar malformações congênitas, hidronefrose ou sinais de pielonefrite.\n\nAlternativa C (Incorreta): O EAS é um exame de triagem e presunção. O padrão-ouro para o diagnóstico definitivo de ITU é a urinocultura, que permite identificar o agente etiológico e determinar o perfil de sensibilidade aos antimicrobianos (antibiograma). Nunca se deve dispensar a cultura em casos de suspeita de ITU febril em lactentes.\n\nAlternativa D (Incorreta): O saco coletor apresenta altas taxas de contaminação por germes da região perineal. Embora possa ser usado para um EAS normal (ajudando a excluir ITU), um resultado positivo no saco coletor não é confiável para diagnóstico. Para a coleta de urina destinada à cultura em crianças sem controle esfincteriano, os métodos recomendados são o cateterismo vesical ou a punção suprapúbica.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:56.484Z"
+  },
+  {
+    "id": "AJUDA_a32d7094-fd68-48db-814e-5a9fa27cf816",
+    "originalId": "a32d7094-fd68-48db-814e-5a9fa27cf816",
+    "statement": "Joana leva seu filho Miguel, de 4 anos de idade, ao pronto atendimento devido quadro de dor em mão direita, associado a febre moderada há 48 horas. Ao exame, criança pálida (3/4+), regular estado geral, febril, com baço palpável a 4 cm do rebordo costal esquerdo, presença de dactilite em dedos de mão direita. Antecedentes pessoais: em uso de sulfato ferroso há 4 meses prescrito pelo médico do posto de saúde devido anemia. Vacinas atualizadas, teste do pezinho realizado porém sem resultado na caderneta da criança. Neste caso, o exame que deve ser solicitado para investigar a principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eletroforese de hemoglobina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hemocultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rx de mão direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fator reumatoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ASLO.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico de Miguel, de 4 anos, apresenta elementos clássicos que direcionam para o diagnóstico de anemia falciforme. A tríade de dactilite (conhecida como síndrome mão-pé), anemia importante (palidez 3/4+) e esplenomegalia (baço a 4 cm do rebordo costal) é altamente sugestiva de uma doença falciforme em uma criança pequena.\n\nA dactilite é frequentemente a primeira manifestação vaso-oclusiva da anemia falciforme, ocorrendo geralmente entre os 6 meses e 5 anos de idade. Além disso, o histórico de uso de sulfato ferroso por 4 meses sem melhora da anemia reforça que a causa não é ferropriva, mas sim uma anemia hemolítica crônica. O fato de o resultado do teste do pezinho não estar disponível é um dado importante, pois a doença falciforme é uma das patologias triadas no exame neonatal.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Eletroforese de hemoglobina: CORRETA. Este é o exame padrão-ouro para o diagnóstico das hemoglobinopatias, incluindo a anemia falciforme (HbSS) e suas variantes (como HbSC ou S-beta-talassemia). Ele permite identificar e quantificar os diferentes tipos de hemoglobina presentes no sangue do paciente, confirmando a presença da hemoglobina S.\n\nb) Hemocultura: INCORRETA. Embora crianças com anemia falciforme sejam suscetíveis a infecções graves e a hemocultura possa ser necessária para investigar o foco da febre, ela não é o exame para investigar a \"principal hipótese diagnóstica\" (a doença de base), mas sim uma complicação infecciosa secundária.\n\nc) Rx de mão direita: INCORRETA. No quadro de dactilite aguda, o raio X geralmente mostra apenas edema de partes moles nas primeiras semanas. Alterações ósseas, como reações periosteais, demoram a aparecer. O diagnóstico da dactilite é essencialmente clínico e o raio X não confirma a etiologia da doença.\n\nd) Fator reumatoide: INCORRETA. O fator reumatoide é utilizado na investigação de doenças reumatológicas, como a artrite idiopática juvenil. No entanto, o quadro de dactilite súbita associada a esplenomegalia e anemia grave em uma criança de 4 anos é muito mais característico de crise vaso-oclusiva na anemia falciforme do que de uma patologia reumatológica.\n\ne) ASLO: INCORRETA. A dosagem de antiestreptolisina O (ASLO) é utilizada para identificar infecção prévia por estreptococo beta-hemolítico do grupo A, auxiliando no diagnóstico de febre reumática ou glomerulonefrite pós-estreptocócica. Não há correlação entre este exame e o quadro de dactilite e esplenomegalia apresentado.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:26:56.484Z"
+  }
+]

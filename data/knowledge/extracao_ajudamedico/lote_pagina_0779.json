@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_d98f3d31-1c4c-4def-90ee-b82812a88d38",
+    "originalId": "d98f3d31-1c4c-4def-90ee-b82812a88d38",
+    "statement": "Uma mulher de 40 anos realiza uma mamografia de rastreio, que identifica um nódulo suspeito. Após biópsia, é diagnosticado um carcinoma in situ, e a paciente é encaminhada para tratamento cirúrgico imediato. O rastreio populacional através de exames em indivíduos assintomáticos visa o diagnóstico precoce e é um exemplo de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevenção Primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prevenção Secundária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prevenção Terciária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prevenção Quaternária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Promoção da saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda os níveis de prevenção em saúde, um tema fundamental na Medicina Preventiva e frequentemente cobrado em provas de residência. Para responder corretamente, devemos associar a intervenção descrita (rastreio de câncer) à fase de evolução da doença.\n\nAlternativa a) Incorreta. A prevenção primária ocorre no período pré-patogênico, ou seja, antes de a doença se instalar. Seu objetivo é remover causas e fatores de risco para reduzir a incidência da enfermidade. Exemplos clássicos incluem a vacinação, o uso de preservativos e a orientação para cessação do tabagismo. No caso da questão, a doença (carcinoma) já existe, apenas não manifestou sintomas ainda.\n\nAlternativa b) Correta. A prevenção secundária tem como foco o diagnóstico precoce e o tratamento imediato de uma doença já instalada, mas em sua fase assintomática (período patogênico inicial). O rastreamento populacional, como a mamografia para o câncer de mama ou o citopatológico para o câncer de colo do útero, é o exemplo clássico deste nível de prevenção. O objetivo é aumentar as chances de cura e reduzir a morbimortalidade.\n\nAlternativa c) Incorreta. A prevenção terciária atua quando a doença já é clinicamente manifesta e produziu danos. Seu foco é a reabilitação, a redução de incapacidades e a prevenção de complicações. Exemplos incluem a fisioterapia após um AVC ou o controle glicêmico rigoroso para evitar amputações em um paciente diabético com feridas.\n\nAlternativa d) Incorreta. A prevenção quaternária consiste na detecção de indivíduos em risco de medicalização excessiva para protegê-los de intervenções médicas desnecessárias ou potencialmente prejudiciais (iatrogenia). Baseia-se no princípio da não-maleficência, evitando o \"overdiagnosis\" e o \"overtreatment\".\n\nAlternativa e) Incorreta. A promoção da saúde refere-se a medidas amplas que visam aumentar o bem-estar e a saúde geral da população, não focando em uma doença específica. Envolve políticas públicas, saneamento básico, educação em saúde e estímulo a hábitos saudáveis, estando muito próxima do conceito de prevenção primária.\n\nResumo da lógica:\n- Prevenção Primária: Evita que a doença surja.\n- Prevenção Secundária: Detecta a doença já existente no início (Rastreamento).\n- Prevenção Terciária: Reabilita e reduz prejuízos da doença avançada.\n- Prevenção Quaternária: Evita danos causados pelo excesso de intervenção médica.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:28.419Z"
+  },
+  {
+    "id": "AJUDA_d9959802-943f-4aa8-b7e8-3c03561083fa",
+    "originalId": "d9959802-943f-4aa8-b7e8-3c03561083fa",
+    "statement": "Recém-nascido, sexo feminino, idade gestacional de 32 semanas, parto cesáreo de urgência devido a descolamento prematuro de placenta. Nasceu vigoroso, chorou e o cordão umbilical foi clampeado após 30 segundos. Recebeu APGAR 8/9 e o peso de nascimento foi de 1.950 gramas. Com aproximadamente 20 minutos de vida, iniciou desconforto respiratório, com frequência respiratória de 80 ipm, gemência e batimento de aletas nasais. O padrão radiológico é compatível com a seguinte hipótese diagnóstica do RN:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O padrão radiológico fisiológico é preservado, pois se trata de uma obstrução de vias aéreas superiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Congestão peri-hilar simétrica, espessamento de cisuras interlobares e hiperinsuflação pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infiltrado grosseiro, granular fino e irregular. Broncogramas aéreos, consolidação segmentar ou lobar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Infiltrado reticulogranular difuso (pulmão em vidro moído), além de broncograma aéreo e congestão pulmonar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Hiperinsuflação, achatamento do diafragma, aumento do espaço aéreo esternal com opacidade alveolar homogênea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão descreve um caso clássico de Síndrome do Desconforto Respiratório (SDR), também conhecida como Doença da Membrana Hialina. Os principais fatores de risco presentes são a prematuridade (32 semanas) e o parto cesáreo sem trabalho de parto prévio (devido ao descolamento de placenta). O início precoce dos sintomas (aos 20 minutos de vida), com gemência e batimento de aletas nasais, reforça esse diagnóstico.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O quadro clínico de taquipneia, gemência e retrações em um prematuro aponta para uma patologia do parênquima pulmonar, e não para uma obstrução de vias aéreas superiores (como atresia de coanas ou laringomalácia). Na SDR, o padrão radiológico é marcadamente alterado.\n\nAlternativa b: Incorreta. Esta descrição radiológica (congestão peri-hilar, líquido nas cisuras e hiperinsuflação) é característica da Taquipneia Transitória do Recém-Nascido (TTRN). A TTRN ocorre geralmente em recém-nascidos a termo ou pré-termos tardios, após cesarianas eletivas, devido ao retardo na reabsorção do líquido pulmonar fetal.\n\nAlternativa c: Incorreta. O infiltrado grosseiro, granular fino e irregular, associado a áreas de consolidação, é o padrão típico da Síndrome de Aspiração Meconial (SAM). A SAM acomete preferencialmente recém-nascidos a termo ou pós-termo que apresentaram sofrimento fetal e líquido amniótico meconial, o que não condiz com a idade gestacional de 32 semanas.\n\nAlternativa d: Correta. Esta é a descrição clássica da Doença da Membrana Hialina. A deficiência de surfactante leva ao colapso alveolar disseminado (microatelectasias). Radiologicamente, isso se traduz como um infiltrado reticulogranular difuso, com aspecto de vidro moído ou fosco. A presença de broncogramas aéreos ocorre porque os brônquios permanecem aerados em contraste com o parênquima pulmonar colapsado ao redor.\n\nAlternativa e: Incorreta. Hiperinsuflação e achatamento do diafragma indicam aprisionamento de ar. Na Doença da Membrana Hialina, o volume pulmonar está tipicamente reduzido (hipotransparência e pulmões pequenos) devido às atelectasias, e não aumentado. Além disso, a opacidade alveolar na SDR não costuma ser homogênea como em uma pneumonia lobar clássica, mas sim granular e difusa.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:28.419Z"
+  },
+  {
+    "id": "AJUDA_d9998afb-9164-42f2-9f78-eb30a822b163",
+    "originalId": "d9998afb-9164-42f2-9f78-eb30a822b163",
+    "statement": "A história do Sistema de Saúde no Brasil e a Reforma Sanitária Brasileira são marcos fundamentais para a estruturação do Sistema Único de Saúde (SUS) e para a promoção de políticas de saúde pública no país. Considerando os avanços e desafios ao longo desse processo, assinale com 'V' para as afirmativas verdadeiras e 'F' para as afirmativas falsas sobre os principais acontecimentos e princípios da reforma sanitária e a evolução do sistema de saúde no Brasil. \n\n( ) Anteriormente ao SUS, o beneficio de saúde era vinculado ao contrato de trabalho formal, tendo as características de seguro e não de direito de cidadania. \n( ) Nas décadas de 60 e 70, na esfera das políticas de saúde, o referencial da medicina comunitária se materializava em programas de extensão da cobertura de ações básicas, direcionados para a população excluída do sistema previdenciário. \n( ) A 8ª Conferência Nacional de Saúde (CNS), realizada em março de 1986, resultou da negociação entre o Ministério da Previdência e Assistência Social e o Ministério da Saúde, em virtude do impasse entre os dois ministérios quanto ao aprofundamento da Reforma Sanitária, especialmente a passagem do Inamps para o Ministério da Saúde. \n( ) Uma das diretrizes resultantes da 8ª CNS foi a constituição de um novo Conselho Nacional de Saúde composto por representantes de: ministérios da área social, governos estaduais e municipais e proprietários de instituições filantrópicas de saúde. Ao Conselho seriam conferidas atribuições de planejamento e financiamento de políticas públicas. \n\nAssinale a sequência CORRETA de respostas:",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, V, F",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "F, V, F, F",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, F, V, V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, V, F, V",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das afirmativas:\n\nPrimeira afirmativa: Verdadeira. Antes da Constituição de 1988 e da criação do SUS, o sistema de saúde brasileiro era dual e excludente. O acesso à assistência médica estatal era restrito aos trabalhadores com carteira assinada, que contribuíam para a previdência social (através do INAMPS). Quem não possuía vínculo formal de emprego era considerado \"indigente\" e dependia de instituições filantrópicas, como as Santas Casas de Misericórdia, ou de serviços públicos de saúde voltados apenas para o controle de epidemias. Portanto, a saúde era um seguro social e não um direito universal de cidadania.\n\nSegunda afirmativa: Verdadeira. Durante as décadas de 60 e 70, em meio ao regime militar, o modelo hegemônico era o médico-hospitalar privatista. No entanto, surgiram experiências de medicina comunitária influenciadas por modelos internacionais de atenção primária. O objetivo era estender a cobertura mínima de saúde para as populações rurais e periféricas que não estavam inseridas no sistema previdenciário formal. Programas como o PIASS (Programa de Interiorização das Ações de Saúde e Saneamento) são exemplos dessa tentativa de levar ações básicas a quem estava excluído do sistema.\n\nTerceira afirmativa: Verdadeira. A 8ª Conferência Nacional de Saúde, realizada em 1986, foi o divisor de águas da Reforma Sanitária. Ela ocorreu em um contexto de redemocratização e buscou resolver o conflito institucional entre o Ministério da Saúde (responsável pela saúde pública e saneamento) e o Ministério da Previdência e Assistência Social (que detinha os recursos e o INAMPS). A conferência consolidou a proposta de unificação do comando da saúde, defendendo que a assistência médica deveria sair da esfera previdenciária e passar para o Ministério da Saúde, formando um sistema único.\n\nQuarta afirmativa: Falsa. A 8ª CNS é reconhecida historicamente justamente por democratizar a discussão em saúde, estabelecendo a diretriz da participação social paritária. A afirmação está incorreta, pois descreve um conselho meramente burocrático e corporativista (governo e proprietários). Na realidade, a diretriz aprovada previa a participação majoritária de usuários da saúde e trabalhadores do setor, e não apenas de gestores e donos de hospitais. Além disso, as competências de planejamento e financiamento são funções do poder executivo (gestão), enquanto os conselhos têm caráter deliberativo e fiscalizador.\n\nConclusão: A sequência correta é V, V, V, F, o que valida a alternativa (a).",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "História do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:28.419Z"
+  },
+  {
+    "id": "AJUDA_d9a6fdb6-c7ef-4bf6-8c38-592b86cde4bd",
+    "originalId": "d9a6fdb6-c7ef-4bf6-8c38-592b86cde4bd",
+    "statement": "Mulher de 47 anos de idade foi submetida a setorectomia mais biópsia do linfonodo sentinela, devido a carcinoma ductal em mama esquerda, T2N0M0.\nUm dos tratamentos adjuvantes deve ser",
+    "options": [
+      {
+        "id": "A",
+        "text": "hormonioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "radioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "anticorpo monoclonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, o ponto fundamental é identificar o tipo de cirurgia realizada. A paciente foi submetida a uma setorectomia, que é uma modalidade de cirurgia conservadora da mama.\n\nAlternativa (c) - Correta: A radioterapia adjuvante é obrigatória em praticamente todos os casos de cirurgia conservadora da mama (como setorectomia ou quadrantectomia). O objetivo é eliminar focos microscópicos remanescentes de doença no tecido mamário preservado, reduzindo drasticamente as taxas de recidiva local. Estudos clássicos da oncologia demonstram que a combinação de cirurgia conservadora acompanhada de radioterapia apresenta sobrevida global equivalente à mastectomia radical. Portanto, para esta paciente, a radioterapia é o tratamento adjuvante indicado pelo protocolo-padrão.\n\nAlternativa (a) - Incorreta: A hormonioterapia (utilizando medicamentos como tamoxifeno ou inibidores da aromatase) só está indicada se o tumor expressar receptores hormonais (estrogênio ou progesterona) na análise de imuno-histoquímica. Como a questão não fornece o perfil biológico do tumor, não se pode afirmar que esse tratamento será necessariamente aplicado.\n\nAlternativa (b) - Incorreta: A indicação de quimioterapia adjuvante depende de múltiplos fatores, como o subtipo molecular (tumores triplo-negativos ou HER2-positivos costumam receber), o grau histológico e a idade da paciente. Embora o tamanho T2 (maior que 2 cm) possa pesar na decisão, a quimioterapia não é uma regra absoluta para todos os casos T2N0 sem o conhecimento da biologia tumoral.\n\nAlternativa (d) - Incorreta: O uso de anticorpos monoclonais, como o trastuzumabe, é reservado exclusivamente para tumores que apresentam hiperexpressão ou amplificação da proteína HER2. Sem essa informação diagnóstica, esta alternativa está incorreta.\n\nEm resumo, o que torna a radioterapia a resposta correta é o fato de ela ser o complemento terapêutico indispensável e obrigatório após a realização de uma cirurgia que preserva parte do parênquima mamário.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:28.419Z"
+  },
+  {
+    "id": "AJUDA_d9ae2d4a-a0d7-45e4-a322-817ac7eb55aa",
+    "originalId": "d9ae2d4a-a0d7-45e4-a322-817ac7eb55aa",
+    "statement": "Paciente feminina 63 anos, empresária, tem uma história clinica e um quadro sugestivo de diverticulite aguda. Não está séptica e não há falências orgânicas. Seu hemograma mostra Hb: 7,4 g/dL, leucocitose: 24.100 mm³, com desvio a esquerda e PCR: 303mg/L Foi submetida à tomografia de abdômen cujas imagens de interesse são mostradas a seguir Foi iniciado tratamento inicial com ceftriaxone e metronidazol EV. Com relação ao diagnóstico e melhor conduta no momento, é correto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O diagnóstico sugere uma diverticulite Hinchey I e a paciente deve ser internada para continuar o tratamento com antibióticos por uma semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se mesmo de uma diverticulite não complicada e o tratamento poderá ser concluído em regime ambulatorial após observação inicial por 48 hs.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de uma diverticulite complicada e o melhor tratamento é a sigmoidectomia a Hartmann após transfusão para correção da anemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não é possível afastar o diagnostico de neoplasia e a melhor opção, neste momento, é a colonoscopia para definição diagnóstica e de conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O diagnostico é uma provável diverticulite Hinchey II e a melhor conduta é a punção guiada por imagem e a observação da evolução.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A análise das imagens de tomografia computadorizada e o quadro clínico da paciente permitem concluir o seguinte:\n\nDiagnóstico por imagem: Nas imagens de tomografia, observa-se um espessamento das paredes do cólon sigmoide associado a uma coleção líquida com presença de gás, localizada na região pélvica, distante do foco inflamatório primário pericólico. A presença de um abscesso pélvico caracteriza a classificação de Hinchey II.\n\nAnálise das alternativas:\n\na) Incorreta. A classificação de Hinchey I refere-se a um abscesso pericólico ou flegmão pequeno e localizado. As imagens mostram uma coleção pélvica volumosa e mais distante, o que define Hinchey II.\n\nb) Incorreta. A diverticulite é considerada complicada pela presença do abscesso pélvico e pelos níveis elevadíssimos de PCR (303 mg/L) e leucocitose significativa. O tratamento ambulatorial é reservado para diverticulites não complicadas (Hinchey 0) em pacientes sem comorbidades graves.\n\nc) Incorreta. Embora seja uma diverticulite complicada, a paciente está hemodinamicamente estável, não apresenta sepse nem falências orgânicas. Nesses casos, a conduta inicial deve ser conservadora (antibioticoterapia e drenagem percutânea do abscesso) para evitar uma cirurgia de urgência (Hartmann), permitindo uma posterior ressecção eletiva com maior segurança e chance de anastomose primária.\n\nd) Incorreta. O diagnóstico diferencial com neoplasia de cólon é importante, porém a colonoscopia é absolutamente contraindicada na fase aguda da diverticulite devido ao alto risco de perfuração intestinal. O rastreio colonoscópico deve ser realizado de 4 a 6 semanas após a resolução do quadro agudo.\n\ne) Correta. O quadro clínico e as imagens de tomografia (coleção pélvica) são compatíveis com diverticulite Hinchey II. Em pacientes estáveis com abscessos pélvicos maiores que 3-4 cm, a conduta padrão-ouro é a drenagem percutânea guiada por imagem (ultrassonografia ou tomografia) associada à antibioticoterapia endovenosa e observação clínica rigorosa. Isso permite o controle do foco infeccioso sem a necessidade imediata de uma laparotomia.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/dacb5dbfc42bc29f12bd9a02f2374644da56ccf52e8647ddcf73b2eafa318064.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d9ae2d4a-a0d7-45e4-a322-817ac7eb55aa_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/6828c3c81622566202e36252b6162247192a45e1a9ef09f7acb058878509eab2.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_d9ae2d4a-a0d7-45e4-a322-817ac7eb55aa_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:29.331Z"
+  },
+  {
+    "id": "AJUDA_d9b57fa2-58d2-4526-a487-704d5bb58aa3",
+    "originalId": "d9b57fa2-58d2-4526-a487-704d5bb58aa3",
+    "statement": "Menino, de 10 meses de idade, é levado ao pronto-socorro por diarreia aquosa há 24 horas, com 5 episódios ao dia. O pai nega presença de sangue ou muco. O bebê está ativo, chorando com lágrimas. Apresenta mucosas úmidas, com turgor de pele preservado, sem sinais de choque. O pai refere recusa alimentar parcial, principalmente de sólidos, mas aceita líquidos. Nega vômitos. Qual é a classificação e qual é a conduta correta para este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sem desidratação. Líquidos caseiros ou sais de reidratação oral 50-100mL após cada episódio de diarreia e zinco 20mg/dia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Desidratação leve. Sais de reidratação oral 50mL/kg em 4 horas, oferta livre de outros líquidos e zinco 10mg/dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Desidratação moderada. Sais de reidratação oral no estabelecimento de saúde, 50-100mL/kg em 4 a 6 horas, com controle de diurese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desidratação grave. Soro fisiológico 0,9% 30mL/kg em 1 hora, depois administrar 70mL/kg em 3 horas, seguido de soro de manutenção basal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente é um lactente de 10 meses com quadro de diarreia aguda. Para definir a conduta, devemos aplicar os critérios de avaliação do estado de hidratação preconizados pelo Ministério da Saúde e pela Organização Mundial da Saúde (OMS).\n\nOs dados do exame físico mostram que a criança está ativa, chora com lágrimas, possui mucosas úmidas, turgor da pele preservado e aceita líquidos prontamente. Essas características indicam que não há sinais clínicos de desidratação. Portanto, o paciente deve ser classificado como Sem Desidratação e o tratamento indicado é o Plano A, realizado no domicílio.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: O paciente não apresenta sinais de desidratação. No Plano A, o objetivo é prevenir a desidratação e manter a nutrição. A conduta inclui o aumento da oferta de líquidos (líquidos caseiros ou sais de reidratação oral - SRO), manutenção da alimentação habitual e suplementação de zinco por 10 a 14 dias. Para crianças menores de 1 ano, a recomendação de SRO após cada evacuação diarreica é de 50 a 100 mL. Quanto ao zinco, a dose correta para crianças acima de 6 meses de idade é de 20 mg por dia (crianças abaixo de 6 meses recebem 10 mg/dia).\n\nAlternativa (b) INCORRETA: A classificação está errada, pois o paciente não apresenta sinais de desidratação (como irritabilidade, olhos fundos ou sinal da prega que desaparece lentamente). Além disso, a conduta de 50 mL/kg em 4 horas refere-se ao Plano B (terapia de reidratação oral supervisionada). A dose de zinco de 10 mg/dia é indicada apenas para lactentes menores de 6 meses.\n\nAlternativa (c) INCORRETA: Não há sinais de desidratação moderada no caso descrito. A conduta proposta (50-100 mL/kg em 4 a 6 horas) faz parte do Plano B, indicado para pacientes que já apresentam sinais clínicos de perda de fluidos, o que não ocorre com este bebê, que está ativo e com mucosas úmidas.\n\nAlternativa (d) INCORRETA: A alternativa descreve o Plano C, que é a terapia de reidratação parenteral (venosa). Essa conduta é reservada exclusivamente para casos de desidratação grave ou choque hipovolêmico, situações em que o paciente apresenta alteração do nível de consciência, incapacidade de beber, pulso débil ou sinais de perfusão periférica lentificada, o que contradiz totalmente o estado geral estável do paciente relatado na questão.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:29.331Z"
+  },
+  {
+    "id": "AJUDA_d9b656da-6048-4957-b902-73153b5a5b2d",
+    "originalId": "d9b656da-6048-4957-b902-73153b5a5b2d",
+    "statement": "As diretrizes do programa de reanimação neonatal da Sociedade Brasileira de Pediatria (SBP), apresentam alguns padrões de cuidado para a manutenção da normotermia do recém-nascido (RN) na sala de parto, que incluem:",
+    "options": [
+      {
+        "id": "A",
+        "text": "recomendar que se mantenha a temperatura axilar do RN entre 36 e 38ºC",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "levar o RN à mesa de reanimação envolto em campos aquecidos e posicionado sob fonte de calor radiante",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a utilização da touca plástica e do saco plástico em todos os nascimentos, independentemente da idade gestacional do RN",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pré-aquecer a sala de parto, com temperatura ambiente de 20 a 22ºC, controlando a circulação de pessoas para minimizar as correntes de ar",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Incorreta. Segundo as diretrizes da Sociedade Brasileira de Pediatria (SBP), a faixa de normotermia considerada ideal para o recém-nascido na sala de parto é de 36,5 a 37,5 graus Celsius. O limite de 38 graus indicado na alternativa já é considerado hipertermia, o que pode aumentar o consumo metabólico e de oxigênio do neonato.\n\nAlternativa B: Correta. Para os recém-nascidos que necessitam de intervenção na mesa de reanimação, o protocolo exige que o ambiente esteja preparado com fonte de calor radiante ligada previamente e que sejam utilizados campos aquecidos para a recepção do bebê. Isso minimiza as perdas de calor por radiação e condução, garantindo a estabilidade térmica durante os procedimentos.\n\nAlternativa C: Incorreta. A utilização de saco plástico (de polietileno) e touca é uma recomendação específica para recém-nascidos prematuros com idade gestacional inferior a 34 semanas. Para recém-nascidos a termo, os métodos-padrão de secagem e contato pele a pele (quando estáveis) ou campos aquecidos são os indicados.\n\nAlternativa D: Incorreta. A temperatura ambiente recomendada pela SBP e pela Organização Mundial da Saúde para a sala de parto e a sala de reanimação é de 23 a 26 graus Celsius. Manter a sala entre 20 e 22 graus submete o recém-nascido a um ambiente excessivamente frio, facilitando a perda de calor por convecção e aumentando o risco de morbidades associadas à hipotermia.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:29.331Z"
+  },
+  {
+    "id": "AJUDA_d9b68c05-adea-4950-8e85-ba9130587e1d",
+    "originalId": "d9b68c05-adea-4950-8e85-ba9130587e1d",
+    "statement": "Paciente de 64 anos, obesa, após esforço físico intenso apresenta dor lombar com irradiação para a região posterior de coxa direita, joelho, perna e planta do pé direito. Sente formigamentos e choques quando flexiona a coluna ou o quadril direito. A dor a impede de andar. Podemos afirmar que se trata de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lombalgia mecânica comum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estenose de canal lombar com claudicação neurogênica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Radiculopatia L4, provavelmente por hérnia discal L4-L5.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Radiculopatia S1, provavelmente por hérnia discal entre L5-S1.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é fundamental realizar a correlação entre a anatomia neurológica e os sintomas apresentados pela paciente. O quadro descreve uma dor radicular (ciatalgia) aguda surgida após esforço físico.\n\nAnálise das alternativas:\n\na) Incorreta. A lombalgia mecânica comum (ou não específica) caracteriza-se por dor localizada na região lombar, sem sinais de compressão nervosa. No caso descrito, a paciente apresenta uma dor que se irradia até a planta do pé, acompanhada de parestesias (formigamentos e choques), o que indica claramente o envolvimento de uma raiz nervosa (radiculopatia).\n\nb) Incorreta. A estenose de canal lombar é mais comum em pacientes idosos e se manifesta tipicamente pela claudicação neurogênica, onde o paciente sente dor e fraqueza nas pernas ao caminhar, que melhoram ao sentar ou inclinar o tronco para frente (sinal do carrinho de supermercado). Embora a paciente tenha 64 anos, o início súbito após esforço e a distribuição dermatomérica sugerem uma hérnia de disco aguda, e não um processo degenerativo crônico de estreitamento do canal.\n\nc) Incorreta. A radiculopatia de L4 geralmente causa dor e alteração de sensibilidade na face anterior da coxa e face medial da perna e do pé. O reflexo patelar costuma estar diminuído e pode haver fraqueza na extensão do joelho (quadríceps). O relato da paciente foca na região posterior e planta do pé, o que não condiz com L4.\n\nd) Correta. A raiz de S1 é responsável pela sensibilidade da região posterior da coxa, região posterior da perna (panturrilha), bordo lateral do pé e planta do pé. A dor e os choques descritos pela paciente seguem exatamente esse trajeto. Anatomicamente, uma hérnia de disco no nível L5-S1 é a causa mais comum de compressão da raiz de S1. Além disso, a piora da dor com a flexão da coluna ou do quadril (manobras que estiram o nervo ciático) corrobora o diagnóstico de radiculopatia S1.\n\nEm resumo, a topografia da dor (posterior e plantar) e o fator desencadeante (esforço físico) apontam para uma hérnia discal L5-S1 comprimindo a raiz de S1.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Doenças da Coluna Vertebral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:29.331Z"
+  },
+  {
+    "id": "AJUDA_d9c49b9a-7fb3-4983-b691-a7f6d366e9bf",
+    "originalId": "d9c49b9a-7fb3-4983-b691-a7f6d366e9bf",
+    "statement": "Assinale a alternativa correta quanto à associação entre o uso abusivo de álcool e de outras drogas, provocando dependência química e psicológica, e as condições e situações de trabalho.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Há intensificação do uso dessas substâncias para justificar as faltas ou para compensar a insatisfação no trabalho ou a impossibilidade de realizá-lo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Há início ou intensificação do uso dessas substâncias como recurso para enfrentar situações desagradáveis/difíceis, para compensar a insatisfação, para viabilizar o trabalho ou como forma de inclusão no grupo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Há início ou intensificação do uso dessas substâncias em trabalhadores expostos a produtos químicos, visando manter a performance propiciada pela inalação do produto utilizado no trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso abusivo dessas substâncias está fortemente relacionado a fatores genéticos e de personalidade, não sendo possível associá-lo ao trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Incorreta. O uso de substâncias psicoativas não é feito com o objetivo de justificar faltas ao trabalho. O absenteísmo (faltas) e o presenteísmo (estar presente, mas sem produtividade) são consequências negativas do abuso de substâncias e da dependência, e não a motivação que leva o indivíduo ao consumo.\n\nAlternativa b) Correta. Na perspectiva da Medicina do Trabalho, o uso de álcool e outras drogas pode atuar como uma estratégia de enfrentamento ou mecanismo de defesa. O trabalhador pode recorrer a essas substâncias para suportar condições de trabalho adversas, como jornadas exaustivas, estresse crônico, alta periculosidade ou cobranças excessivas. Além disso, o uso pode visar à facilitação da convivência social e à inclusão em grupos de colegas, ou ainda servir para anestesiar a insatisfação e o sofrimento psíquico decorrentes da organização do trabalho.\n\nAlternativa c) Incorreta. Não existe uma relação lógica ou técnica que sustente o uso de drogas para manter a performance propiciada pela inalação de produtos químicos do ambiente laboral. A exposição a solventes e outros agentes químicos pode causar danos ao sistema nervoso central, mas isso não motiva o consumo intencional de outras drogas para potencializar esse efeito tóxico de forma produtiva.\n\nAlternativa d) Incorreta. Embora existam componentes genéticos, neurobiológicos e de personalidade envolvidos na dependência química, o ambiente de trabalho é um fator ambiental e psicossocial determinante. Ignorar a influência do trabalho no desenvolvimento de transtornos mentais e de comportamento relacionados ao uso de substâncias contraria os princípios da Saúde do Trabalhador e da própria classificação de doenças relacionadas ao trabalho (como observado na Lista de Doenças Relacionadas ao Trabalho do Ministério da Saúde).",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras",
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:29.331Z"
+  },
+  {
+    "id": "AJUDA_d9d03619-d801-4a69-8b51-385de88c223b",
+    "originalId": "d9d03619-d801-4a69-8b51-385de88c223b",
+    "statement": "Homem, 60 anos, está em hemodiálise por HAS e DM tipo 2 mal controlados. Faltou a três sessões da terapia hemodialítica, retornando sete dias após com anasarca e dispneia. Durante a sessão, apresentou piora súbita da dispneia com turgência jugular a 90º, hipofonese de bulhas e PAS inaudível. Eletrocardiograma (ECG): infra desnível de segmento PR e supra desnível difuso do segmento ST. A principal hipótese diagnóstica e a forma mais adequada de prevenção da sua ocorrência é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tamponamento cardíaco / não usar heparina na diálise",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "infarto agudo do miocárdio / retirada lenta de volume",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tromboembolismo pulmonar / heparina subcutânea profilática",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "embolia aérea / uso de cata-bolhas no circuito",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve um paciente com doença renal crônica terminal que, após sete dias sem diálise, desenvolveu sinais de uremia e pericardite urêmica. A deterioração súbita durante a sessão de hemodiálise, caracterizada pela tríade de Beck (hipotensão/PAS inaudível, bulhas hipofonéticas e turgência jugular), é patognomônica de tamponamento cardíaco.\n\nAnálise das alternativas:\n\na) CORRETA: O eletrocardiograma (ECG) com infradesnível de PR e supradesnível de ST difuso (não respeitando territórios vasculares) é típico da fase inicial da pericardite. Em pacientes com pericardite urêmica, o uso de heparina durante a hemodiálise (necessária para evitar a coagulação do circuito) aumenta significativamente o risco de transformar um derrame pericárdico seroso em hemorrágico, levando ao tamponamento cardíaco agudo. Portanto, a prevenção em casos de suspeita de pericardite é realizar a \"diálise com heparina zero\" ou lavagens frequentes com soro fisiológico.\n\nb) INCORRETA: Embora o infarto agudo do miocárdio (IAM) seja uma causa frequente de morte em pacientes renais crônicos, o ECG descrito é clássico de pericardite. No IAM, o supradesnível de ST geralmente é localizado em uma parede específica. Além disso, bulhas hipofonéticas e turgência jugular súbita apontam para choque obstrutivo (tamponamento) e não primariamente cardiogênico por isquemia.\n\nc) INCORRETA: O tromboembolismo pulmonar (TEP) pode causar dispneia súbita, hipotensão e turgência jugular (por falência de ventrículo direito). No entanto, não justifica a hipofonese de bulhas nem as alterações eletrocardiográficas típicas de inflamação do pericárdio (infradesnível de PR e supradesnível de ST difuso).\n\nd) INCORRETA: A embolia aérea é uma complicação mecânica da hemodiálise que ocorre quando ar entra na circulação, podendo causar choque e hipóxia súbita. Embora o uso de cata-bolhas seja a forma de prevenção, a história clínica de uremia prévia combinada com os achados específicos do ECG e a hipofonese de bulhas direcionam o diagnóstico para o tamponamento por pericardite hemorrágica.\n\nConclusão: Diante de um paciente com insuficiência renal e sinais de pericardite ao ECG, deve-se evitar a anticoagulação sistêmica na diálise para prevenir o tamponamento cardíaco.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Pericardiopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:57:29.331Z"
+  }
+]

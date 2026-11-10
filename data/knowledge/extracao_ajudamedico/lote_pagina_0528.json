@@ -1,0 +1,514 @@
+[
+  {
+    "id": "AJUDA_935266fb-2bca-4589-8d52-c4bff47037f5",
+    "originalId": "935266fb-2bca-4589-8d52-c4bff47037f5",
+    "statement": "Após realizar a recepção de um recém-nascido do sexo masculino, nascido de uma mãe com 32 anos, primípara, após um pré-natal sem intercorrências, que foi termo (38 semanas e 5 dias), peso de nascimento de 3.400 g, com Apgar de primeiro minuto de 9, e quinto minuto de 10, o médico encaminhou para o alojamento conjunto. Cerca de 8 horas após o nascimento, a equipe de enfermagem informa que o bebê apresentou cansaço excessivo e cianose central intensa durante a mamada, sem melhora após posicionamento ou pausa para repouso. A oximetria de pulso revelou saturação de oxigênio de 75% no membro superior direito (pré-ductal) e 73% nos membros inferiores (pós-ductal). Exame físico revelou bulhas rítmicas normofonéticas, sem sopros evidentes, murmúrio vesicular bilateral preservado e frequência cardíaca de 160 bpm. A criança não apresenta tiragem, nem retração subdiafragmática.\nQual a sua conduta e a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar oxigenoterapia, pois trata-se, muito provavelmente de um desconforto respiratório transitório do RN.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar prostaglandina E1, pois trata-se, muito provavelmente, de um caso de transposição das grandes artérias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Instalar cateter de alto fluxo umedecido, pois pode ser um quadro de bronquiolite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar sildenafila, pois, possivelmente trata-se de hipertensão arterial pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não fazer nada e apenas observar por algumas horas, pois essa é uma reação normal da adaptação circulatória de recém-nascidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o diagnóstico diferencial de cianose neonatal precoce em um recém-nascido (RN) a termo, sem fatores de risco para infecção ou aspiração e com excelente vitalidade ao nascer. O ponto central é identificar uma cardiopatia congênita cianótica precocemente.\n\nAnálise do quadro clínico:\nO RN apresenta cianose central intensa e hipoxemia (saturação de O2 entre 73-75%) que não melhora com o repouso. Um dado fundamental é a ausência de desconforto respiratório importante (sem tiragens ou retrações), o que direciona o raciocínio para uma causa cardíaca, e não pulmonar (a chamada cianose pura ou com taquipneia sem esforço). Além disso, o exame físico cardíaco é normal, sem sopros, o que é muito característico da Transposição das Grandes Artérias (TGA), a cardiopatia cianótica mais comum no período neonatal imediato. Na TGA, as circulações sistêmica e pulmonar funcionam em paralelo, e a sobrevivência depende de comunicações entre elas (como o canal arterial).\n\nAnálise das alternativas:\n\na) Incorreta. O Desconforto Respiratório Transitório do RN (Taquipneia Transitória) geralmente ocorre em bebês nascidos por cesariana sem trabalho de parto e apresenta-se com sinais de esforço respiratório (retrações, batimentos de asa de nariz) e uma cianose leve que melhora rapidamente com baixas frações de oxigênio. O quadro descrito é de hipoxemia grave e sem sinais pulmonares.\n\nb) Correta. A principal hipótese é Transposição das Grandes Artérias (TGA). Como a mistura de sangue entre as circulações sistêmica e pulmonar é insuficiente, o fechamento fisiológico do canal arterial (que costuma ocorrer nas primeiras horas de vida) agrava a cianose. A conduta imediata para manter a patência do canal arterial e garantir a oxigenação sistêmica até a correção cirúrgica ou paliativa (atriosseptostomia) é a infusão de prostaglandina E1 (PGE1).\n\nc) Incorreta. A bronquiolite viral aguda é uma infecção de vias aéreas inferiores que raramente se manifesta em um RN com apenas 8 horas de vida. Além disso, o quadro clínico seria de obstrução brônquica (sibilos, esforço respiratório), o que não condiz com o relato.\n\nd) Incorreta. Embora a Hipertensão Pulmonar Persistente Neonatal (HPPN) cause cianose e hipoxemia, ela geralmente está associada a fatores de estresse perinatal (asfixia, aspiração de mecônio, sepse). Além disso, na HPPN costuma haver uma diferença significativa entre a saturação pré-ductal (mão direita) e pós-ductal (membros inferiores), o que não foi marcante neste caso (75% vs. 73%). A sildenafila é usada no tratamento da hipertensão pulmonar, mas a estabilização de uma possível cardiopatia ducto-dependente com prostaglandina é prioritária.\n\ne) Incorreta. Uma saturação de oxigênio de 75% em um RN com 8 horas de vida é um sinal de alerta crítico e nunca deve ser considerada normal ou apenas observada. A transição circulatória normal atinge saturações acima de 95% nos primeiros 10 a 15 minutos de vida. Estar com 75% indica hipoxemia grave que exige intervenção imediata para evitar danos orgânicos e óbito.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:29.495Z"
+  },
+  {
+    "id": "AJUDA_9359130a-d5d5-4b26-8202-07c539455cdb",
+    "originalId": "9359130a-d5d5-4b26-8202-07c539455cdb",
+    "statement": "Homem de 28 anos, estudante universitário, residente em zona urbana, comparece à Unidade Básica de Saúde (UBS) referindo aparecimento de lesão cutânea em região dorsal da mão, cerca de 1 mês após ter sofrido arranhadura de gato de rua. A lesão apresenta úlceras com presença de crostas além de nodulações próximas. Foi submetido à biópsia da lesão cutânea e cultura de material. Observou-se dermatite granulomatosa difusa, presença de corpos asteroides e material eosinofílico ao redor de células características.\nQual é a principal hipótese diagnóstica e o respectivo tratamento para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Furunculose; cefalexina por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Herpes-zoster; aciclovir por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Esporotricose; itraconazol por 120 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Paracoccidioidomicose; anfotericina B por 30 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO quadro apresenta um paciente com uma lesão ulcerada no dorso da mão e nodulações próximas que seguem um trajeto linear, caracterizando o chamado padrão de disseminação linfocutânea ou esporotricoide. O antecedente epidemiológico de arranhadura por gato de rua é o principal gatilho diagnóstico no Brasil para a esporotricose, especialmente em áreas urbanas onde a transmissão zoonótica pelo fungo Sporothrix brasiliensis é prevalente.\n\nHistopatologia e Imagem:\n\nA biópsia revelou dermatite granulomatosa e a presença de corpos asteroides. O corpo asteroide é um achado histológico clássico da esporotricose, representando o fenômeno de Splendore-Hoeppli (material eosinofílico composto por imunocomplexos ao redor da levedura). A imagem que acompanha a questão corrobora o diagnóstico ao mostrar uma lesão ulcerada central com crostas e a formação de nódulos satélites ascendentes.\n\nAnálise das Alternativas:\n\na) Incorreta. A furunculose é uma infecção bacteriana aguda do folículo piloso, geralmente causada por Staphylococcus aureus. Apresenta-se como nódulos inflamatórios, dolorosos e purulentos (carbúnculo), sem o padrão de disseminação linfática crônica ou os achados de corpos asteroides na histopatologia.\n\nb) Incorreta. O herpes-zoster é causado pela reativação do vírus varicela-zoster e se manifesta como vesículas sobre base eritematosa que seguem estritamente um dermátomo, cursando com dor neuropática. Não guarda relação com arranhadura de animais ou formação de granulomas com corpos asteroides.\n\nc) Correta. A esporotricose é a principal hipótese devido à combinação de: exposição a gato (zoonose), lesão ulcerada com nódulos linfangíticos e achado histopatológico de corpos asteroides. O tratamento de primeira escolha para as formas cutâneas é o antifúngico itraconazol, geralmente na dose de 100 a 200 mg/dia, mantido até a remissão completa das lesões (o que pode levar de 3 a 6 meses, justificando os 120 dias citados).\n\nd) Incorreta. A paracoccidioidomicose é uma micose sistêmica relacionada à atividade agrícola (inalação do fungo no solo). Embora possa ter manifestações cutâneas, o quadro típico envolve acometimento pulmonar e de mucosas (estomatite moriforme). A anfotericina B é uma droga de alta toxicidade reservada para casos graves e disseminados, não sendo a conduta inicial para uma lesão cutânea localizada em paciente imunocompetente.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Micoses Invasivas",
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": 25.508218987128668,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/3d10a110f5838a365a877fdbbdfb727e420d404bfa4f4484af3ba8adb605f0f9.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_9359130a-d5d5-4b26-8202-07c539455cdb_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:29.910Z"
+  },
+  {
+    "id": "AJUDA_935fea3c-9369-48ce-851e-15879fdaec94",
+    "originalId": "935fea3c-9369-48ce-851e-15879fdaec94",
+    "statement": "Um recém-nascido a termo, com 30 horas de vida, sem intercorrências no parto ou no período neonatal imediato, está prestes a receber alta hospitalar. Durante a triagem neonatal de rotina, foi realizado o Teste do Coraçãozinho com oximetria de pulso. Os resultados foram: saturação de oxigênio no membro superior direito de 97% e no membro inferior esquerdo de 93%. O bebê encontra-se em bom estado geral, ativo e corado. Com base nos achados do Teste do Coraçãozinho e nas diretrizes de triagem neonatal, qual é a conduta mais apropriada para o pediatra nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Liberar o recém-nascido para alta hospitalar, considerando que a diferença de saturação é mínima, e o bebê está em bom estado geral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar imediatamente um ecocardiograma para investigação de cardiopatia congênita crítica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir o teste da oximetria de pulso em 1 hora e, se a alteração persistir, considerar a solicitação de um ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar a administração de oxigênio suplementar e encaminhar o recém-nascido para unidade de terapia intensiva neonatal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar o Teste do Olhinho e o Teste da Orelhinha com urgência, pois a alteração da oximetria pode indicar outras síndromes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a triagem neonatal para cardiopatias congênitas críticas, popularmente conhecida como Teste do Coraçãozinho. Para resolvê-la, é fundamental conhecer o protocolo oficial estabelecido pela Sociedade Brasileira de Pediatria (SBP) e pelo Ministério da Saúde.\n\nO Teste do Coraçãozinho deve ser realizado em recém-nascidos a termo, entre 24 e 48 horas de vida, antes da alta hospitalar. A técnica consiste na aferição da oximetria de pulso no membro superior direito (pré-ductal) e em um dos membros inferiores (pós-ductal).\n\nOs critérios para interpretação são:\n1. Resultado Normal (Negativo): Saturação maior ou igual a 95% em ambas as medidas E diferença menor ou igual a 3% entre elas.\n2. Resultado Alterado: Saturação entre 90% e 94% OU diferença maior ou igual a 4% entre as medidas.\n3. Resultado Positivo (Cardiopatia Provável): Saturação menor que 90% em qualquer uma das medidas.\n\nNo caso clínico apresentado, o bebê tem saturação de 97% no membro superior direito e 93% no membro inferior esquerdo. Embora 97% seja normal, a medida de 93% está abaixo do limite (95%) e a diferença entre os membros é de 4%. Portanto, o teste é considerado alterado.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Não se pode dar alta hospitalar. Apesar de o bebê estar clinicamente bem, os parâmetros do teste não preenchem os critérios de normalidade (saturação abaixo de 95% em um membro e diferença de 4%). Ignorar o protocolo pode levar ao diagnóstico tardio de cardiopatias graves que se manifestam após o fechamento do canal arterial.\n\nAlternativa (b) Incorreta: O ecocardiograma imediato é indicado apenas se o teste for definitivamente positivo. Um primeiro teste com saturação entre 90-94% ou diferença de 4% exige repetição antes de partir para exames de imagem, conforme o fluxograma de triagem.\n\nAlternativa (c) Correta: De acordo com o protocolo, quando o teste inicial apresenta saturação entre 90% e 94% ou uma diferença entre os membros maior ou igual a 4%, a conduta correta é repetir a aferição em 1 hora. Se após duas repetições (totalizando três medidas com intervalo de 1 hora entre elas) o resultado persistir alterado, aí sim o teste é considerado positivo e o ecocardiograma deve ser realizado em até 24 horas.\n\nAlternativa (d) Incorreta: O recém-nascido está em bom estado geral e oxigenando acima de 90%. Não há indicação de oxigênio suplementar ou transferência para UTI neonatal apenas com base nesse primeiro resultado alterado do teste de triagem. A conduta é a observação e repetição do teste.\n\nAlternativa (e) Incorreta: O Teste do Olhinho e o Teste da Orelhinha fazem parte da triagem neonatal de rotina, mas não têm relação direta com a alteração hemodinâmica sugerida pelo Teste do Coraçãozinho. A prioridade diante de uma oximetria alterada é seguir o protocolo específico para investigação cardiovascular.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cuidados Neonatais",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:29.910Z"
+  },
+  {
+    "id": "AJUDA_93625b76-0681-4fe2-8f00-805dcb183a0f",
+    "originalId": "93625b76-0681-4fe2-8f00-805dcb183a0f",
+    "statement": "Em relação à estenose aórtica grave, é critério diagnóstico de gravidade:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Área valvar menor que 1,0 cm²",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Gradiente médio menor que 20 mmHg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Velocidade do jato menor que 3 m/s",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ausência de sintomas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Gradiente médio de 30 mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A estenose aórtica (EAo) é classificada em diferentes graus de gravidade com base em parâmetros hemodinâmicos e anatômicos obtidos, geralmente, por meio do ecocardiograma transtorácico. Segundo as principais diretrizes nacionais e internacionais, a definição de estenose aórtica grave baseia-se nos seguintes critérios: área valvar, gradiente pressórico médio e velocidade máxima do jato.\n\nAnálise das alternativas:\n\na) CORRETA. A área valvar aórtica (AVA) menor ou igual a 1,0 cm² (ou área indexada menor que 0,6 cm²/m²) é o critério anatômico clássico para definir a estenose aórtica como grave. Nesse ponto, a obstrução já é significativa o suficiente para gerar repercussões hemodinâmicas importantes no ventrículo esquerdo.\n\nb) INCORRETA. Um gradiente médio menor que 20 mmHg é indicativo de estenose aórtica leve. Para que a estenose seja considerada grave, o gradiente médio deve ser maior ou igual a 40 mmHg.\n\nc) INCORRETA. A velocidade máxima do jato (Vmax) na estenose aórtica grave deve ser maior ou igual a 4,0 m/s. Uma velocidade menor que 3,0 m/s é compatível com estenose leve (entre 2,0 e 2,9 m/s).\n\nd) INCORRETA. A presença ou ausência de sintomas não é um critério diagnóstico de gravidade hemodinâmica, mas sim um critério para indicação de intervenção e classificação clínica (Estágio C para assintomáticos e Estágio D para sintomáticos). Um paciente pode ter estenose aórtica grave e permanecer assintomático por um período.\n\ne) INCORRETA. Um gradiente médio de 30 mmHg situa-se na faixa de estenose aórtica moderada, que compreende valores entre 20 e 39 mmHg. Como mencionado, a gravidade é definida por valores a partir de 40 mmHg.\n\nResumo dos critérios de Estenose Aórtica Grave:\n1. Velocidade do jato (Vmax): maior ou igual a 4 m/s.\n2. Gradiente médio: maior ou igual a 40 mmHg.\n3. Área Valvar Aórtica (AVA): menor ou igual a 1,0 cm².",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Valvopatias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:29.910Z"
+  },
+  {
+    "id": "AJUDA_93730842-0753-4587-8c2a-5e57a056c425",
+    "originalId": "93730842-0753-4587-8c2a-5e57a056c425",
+    "statement": "Considerando que a cefaleia é um dos sintomas mais frequentes atendidos pelas equipes da atenção primária, assinale a alternativa correta acerca dos atendimentos.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A causa mais comum é a do tipo secundária, relacionada à crise hipertensiva arterial sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As cefaleias tipo migrânea (enxaqueca) é a segunda causa mais comum.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A terceira causa está associada a doenças intracranianas graves como tumores ou infecções cerebrais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O exame físico no caso de cefaleias agudas é irrelevante, pois o diagnóstico é essencialmente sintomatológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nas pacientes do sexo feminino, as crises de migrânea iniciam na puberdade, são mais intensas nas fases menstruais, e pioram muito na gravidez",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Incorreta. As causas mais prevalentes de cefaleia na atenção primária são as cefaleias primárias, especificamente a tensional e a migrânea. A hipertensão arterial sistêmica, embora muito comum na população, raramente é a causa direta de dor de cabeça, a menos que o paciente apresente níveis pressóricos extremamente elevados (crises hipertensivas reais), não sendo, portanto, a causa mais comum.\n\nAlternativa B: Correta. Estudos epidemiológicos indicam que a cefaleia do tipo tensional é a forma mais comum de cefaleia primária na população geral. A migrânea (enxaqueca) aparece logo em seguida como a segunda causa mais frequente de procura por atendimento médico devido à dor de cabeça.\n\nAlternativa C: Incorreta. Doenças intracranianas graves, como tumores ou infecções do sistema nervoso central, são consideradas \"red flags\" (sinais de alerta) e representam uma porcentagem muito baixa (geralmente menos de 1%) dos atendimentos por cefaleia na atenção primária. A terceira causa mais comum geralmente está associada a condições sistêmicas benignas, como infecções virais das vias aéreas superiores.\n\nAlternativa D: Incorreta. O exame físico é fundamental no atendimento de qualquer cefaleia. O objetivo principal é descartar sinais de perigo ou causas secundárias. A avaliação neurológica básica, a aferição da pressão arterial e a avaliação de sinais de irritação meníngea são etapas indispensáveis para garantir a segurança do diagnóstico clínico.\n\nAlternativa E: Incorreta. Embora a migrânea seja mais comum em mulheres e frequentemente apresente piora no período pré-menstrual ou menstrual devido à queda do estrogênio, a tendência durante a gravidez é de melhora importante dos sintomas. Devido à estabilização dos níveis hormonais, a maioria das pacientes experimenta alívio ou remissão das crises de enxaqueca, especialmente a partir do segundo trimestre gestacional.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Cefaleias",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:29.910Z"
+  },
+  {
+    "id": "AJUDA_93853992-4780-4be6-89eb-e8a2a493ab48",
+    "originalId": "93853992-4780-4be6-89eb-e8a2a493ab48",
+    "statement": "Casal procura o ambulatório de ginecologia para pedir opinião sobre os métodos contraceptivos. A mulher está no puerpério há um mês e ainda está amamentando. Qual das alternativas abaixo é uma contraindicação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anel vaginal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aleitamento-amenorreia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "DIU de levonogestrol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Camisinha",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Diafragma vaginal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A análise desta questão exige o conhecimento dos Critérios Médicos de Elegibilidade da Organização Mundial da Saúde (OMS) para o uso de métodos contraceptivos no período do puerpério e lactação. O ponto central aqui é identificar qual componente hormonal interfere negativamente na amamentação e na saúde da mulher logo após o parto.\n\nAlternativa (a) Anel vaginal: Esta é a alternativa correta, pois o anel vaginal é um método contraceptivo hormonal combinado, ou seja, contém estrogênio e progestagênio. O uso de estrogênios é contraindicado para mulheres que amamentam, especialmente antes de seis meses de pós-parto (sendo Categoria 4 da OMS — risco inaceitável à saúde — antes de seis semanas). O estrogênio pode diminuir a quantidade e a qualidade do leite materno, além de aumentar o risco de eventos tromboembólicos, que já é naturalmente elevado no puerpério.\n\nAlternativa (b) Aleitamento-amenorreia: Incorreta como contraindicação. O método da amenorreia lactacional (LAM) é uma forma válida de planejamento familiar, desde que a mulher cumpra três requisitos: amamentação exclusiva ou predominante, estar em amenorreia e estar nos primeiros seis meses após o parto. A paciente do caso enquadra-se nessas condições iniciais.\n\nAlternativa (c) DIU de levonorgestrel: Incorreta como contraindicação. Métodos que contêm apenas progestagênio, como o DIU de levonorgestrel, não interferem na produção de leite nem aumentam o risco de trombose. De acordo com os critérios de elegibilidade, o DIU (tanto o de cobre quanto o de levonorgestrel) pode ser inserido após 4 semanas do parto (Categoria 1), sendo uma opção segura para esta paciente que está há um mês (4 semanas) no puerpério.\n\nAlternativa (d) Camisinha: Incorreta como contraindicação. Os métodos de barreira, como o preservativo masculino ou feminino, são considerados Categoria 1 da OMS para qualquer momento do pós-parto, não possuindo contraindicações sistêmicas ou interferência na lactação.\n\nAlternativa (e) Diafragma vaginal: Incorreta como contraindicação médica absoluta. Embora a recomendação clínica seja aguardar cerca de 6 semanas após o parto para que a involução uterina e vaginal se complete (permitindo a medição correta do tamanho do dispositivo), ele não é contraindicado por razões hormonais ou de amamentação. Comparado ao anel vaginal, que possui contraindicação formal pelo componente estrogênico, o diafragma é uma opção segura após o ajuste físico.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Aleitamento Materno",
+      "Planejamento Familiar"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:29.910Z"
+  },
+  {
+    "id": "AJUDA_9388f79b-c7b7-467f-ab37-b249d4b57877",
+    "originalId": "9388f79b-c7b7-467f-ab37-b249d4b57877",
+    "statement": "Sobre a anatomia da parede abdominal e região inguinal, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o músculo transverso do abdome é o músculo mais profundo da parede abdominal anterolateral e sua aponeurose participa na formação da parede posterior da bainha do reto abdominal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o triângulo de Hesselbach é delimitado pelo ligamento inguinal, borda lateral do músculo oblíquo interno e vasos epigástricos superficiais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "os vasos femorais servem como referência anatômica para classificação das hérnias inguinais como diretas ou indiretas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "as fibras inferiores do músculo oblíquo externo formam o músculo cremaster no homem",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (CORRETA): O músculo transverso do abdome é, de fato, a camada mais profunda dentre os três músculos planos da parede anterolateral (oblíquo externo, oblíquo interno e transverso). Sua aponeurose, juntamente com a lâmina posterior da aponeurose do músculo oblíquo interno, compõe a parede posterior da bainha do músculo reto abdominal nos dois terços superiores do abdome (acima da linha arqueada).\n\nAlternativa B (INCORRETA): O triângulo de Hesselbach (ou triângulo inguinal) possui limites bem definidos que não correspondem aos citados. Os limites corretos são: lateralmente, os vasos epigástricos inferiores (e não superficiais); medialmente, a borda lateral do músculo reto abdominal (e não o músculo oblíquo interno); e, inferiormente, o ligamento inguinal. Este triângulo é a zona de fraqueza onde ocorrem as hérnias inguinais diretas.\n\nAlternativa C (INCORRETA): A referência anatômica fundamental para diferenciar as hérnias inguinais em diretas ou indiretas são os vasos epigástricos inferiores. As hérnias indiretas saem pelo anel inguinal profundo, localizando-se lateralmente aos vasos epigástricos inferiores. Já as hérnias diretas ocorrem através da fraqueza da parede posterior do canal inguinal, medialmente aos vasos epigástricos inferiores. Os vasos femorais servem de referência para a identificação de hérnias femorais, que ocorrem abaixo do ligamento inguinal.\n\nAlternativa D (INCORRETA): O músculo cremáster, que envolve o cordão espermático e o testículo, é derivado de fibras musculares e fáscias provenientes do músculo oblíquo interno (e ocasionalmente do músculo transverso do abdome), e não do músculo oblíquo externo. O músculo oblíquo externo contribui para a formação da fáscia espermática externa.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:29.910Z"
+  },
+  {
+    "id": "AJUDA_938c0470-0dec-4a68-8e97-5f4197ac002e",
+    "originalId": "938c0470-0dec-4a68-8e97-5f4197ac002e",
+    "statement": "Homem, 48 anos, trabalhador da construção civil, vem com queixa de abaulamento doloroso inguino-escrotal esquerdo associado a náuseas, vômitos e parada de eliminação de gases e fezes há 2 dias. Ao exame apresentava hérnia inguino-escrotal não redutível. Foi levado para cirurgia de emergência que identificou segmento de intestino delgado herniado, provocando obstrução intestinal, sem sinais de sofrimento vascular da alça. Após redução do conteúdo herniado foi possível identificar alargamento importante do anel inguinal e destruição da parede posterior, ambos corrigidos segundo a técnica de Lichtenstein. A respeito do caso, assinale a alternativa que indica corretamente o diagnóstico e a classificação de Nyhus da hérnia:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia mista estrangulada, Nyhus II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hérnia mista encarcerada, Nyhus IIIB.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hérnia indireta encarcerada, Nyhus IIIA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hérnia indireta estrangulada, Nyhus II.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta uma hérnia irredutível associada a sinais de obstrução intestinal (náuseas, vômitos e parada de eliminação de gases e fezes). Durante a cirurgia, a identificação de que a alça intestinal não apresentava sofrimento vascular (isquemia ou necrose) define a hérnia como ENCARCERADA. O termo estrangulada é reservado para casos onde há comprometimento do suprimento sanguíneo.\n\nQuanto à anatomia e classificação de Nyhus:\n1. O alargamento do anel inguinal interno indica um componente indireto.\n2. A destruição da parede posterior (fáscia transversalis) indica um componente direto.\n3. A presença de ambos os componentes caracteriza a hérnia como MISTA (também chamada de hérnia em pantalona).\n\nClassificação de Nyhus resumida:\n- Tipo I: Hérnia indireta com anel inguinal interno normal e parede posterior íntegra.\n- Tipo II: Hérnia indireta com anel inguinal interno dilatado e parede posterior íntegra.\n- Tipo III: Defeitos na parede posterior.\n- III A: Hérnia direta.\n- III B: Hérnia indireta com alargamento do anel e destruição da parede posterior (inclui hérnias mistas, inguinoescrotais e por deslizamento).\n- III C: Hérnia femoral.\n- Tipo IV: Hérnias recidivantes.\n\nPortanto, o diagnóstico é hérnia mista encarcerada, classificada como Nyhus IIIB.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) INCORRETA. A hérnia não é estrangulada, pois o enunciado especifica a ausência de sofrimento vascular. Além disso, Nyhus II exige que a parede posterior esteja íntegra, o que contradiz o achado cirúrgico de destruição da mesma.\n\nAlternativa b) CORRETA. A hérnia é encarcerada porque causou obstrução sem isquemia. É classificada como mista pelo comprometimento simultâneo do anel interno e da parede posterior. O estágio Nyhus IIIB é o correto para hérnias com defeito na parede posterior associado a componente indireto ou misto.\n\nAlternativa c) INCORRETA. Embora a hérnia seja de fato encarcerada, a classificação Nyhus IIIA é utilizada exclusivamente para hérnias DIRETAS puras. O caso em questão apresenta componente indireto (anel alargado e herniação inguinoescrotal).\n\nAlternativa d) INCORRETA. A alternativa erra em dois pontos: classifica como estrangulada (inexistente no caso) e utiliza Nyhus II, que não admite a destruição da parede posterior descrita na cirurgia.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:29.910Z"
+  },
+  {
+    "id": "AJUDA_938c63d7-6b25-4a88-9a51-162649cccc27",
+    "originalId": "938c63d7-6b25-4a88-9a51-162649cccc27",
+    "statement": "Mulher, 35 anos de idade, assintomática, em rastreamento mamográfico, apresenta mama densa, sem lesões suspeitas. Durante a consulta, pergunta ao médico sobre a anatomia normal da mama e sua correlação com exames de imagem. Com base na anatomia mamária, e para responder ao questionamento da paciente, o profissional relata que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a drenagem linfática da mama é predominantemente para os linfonodos supraclaviculares e paraesternais, sendo rara a drenagem axilar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a unidade ductolobular terminal (UDLT) é a principal estrutura funcional da mama e o local mais comum de origem dos carcinomas mamários.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "o ligamento de Cooper é uma estrutura vascular responsável pela irrigação da mama, formada por ramos da artéria torácica interna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "cada mama possui, em média, 5 a 7 ductos principais, que convergem para o mamilo, responsáveis pela drenagem do parênquima glandular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda conhecimentos fundamentais de anatomia e histologia mamária, correlacionando-os com a prática clínica e radiológica. Vamos analisar cada alternativa:\n\nAlternativa a) Incorreta. A drenagem linfática da mama é realizada predominantemente (cerca de 75% a 97%) pelos linfonodos axilares. A drenagem para a cadeia mamária interna (paraesternal) é secundária, e a drenagem para linfonodos supraclaviculares geralmente ocorre após a passagem pela axila ou em casos de doença avançada.\n\nAlternativa b) Correta. A Unidade Ductolobular Terminal (UDLT) é a unidade funcional e histológica básica da mama. Ela é composta pelo ducto terminal extralobular e pelo lóbulo (que contém os ácinos e o ducto terminal intralobular). É nesta estrutura que ocorre a maior parte da atividade metabólica e hormonal da mama, sendo também o local de origem da vasta maioria das lesões mamárias, incluindo cistos, fibroadenomas e a maior parte dos carcinomas (ductais e lobulares).\n\nAlternativa c) Incorreta. Os ligamentos de Cooper (ou ligamentos suspensores da mama) não são estruturas vasculares, mas sim septos de tecido conjuntivo fibroso. Eles se estendem da derme até a fáscia profunda do músculo peitoral, conferindo suporte estrutural e sustentação ao parênquima mamário. A irrigação arterial da mama é feita principalmente por ramos da artéria torácica interna e da artéria torácica lateral.\n\nAlternativa d) Incorreta. O parênquima mamário é organizado em lobos. Cada mama possui, em média, de 15 a 20 lobos glandulares, e cada um desses lobos é drenado por um ducto lactífero (ducto principal) independente que converge e se abre no mamilo. Portanto, o número de 5 a 7 ductos citado na alternativa está subestimado em relação à anatomia clássica.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:29.910Z"
+  },
+  {
+    "id": "AJUDA_938fb233-aa9e-4512-ac5a-ba9ec8f0c6a9",
+    "originalId": "938fb233-aa9e-4512-ac5a-ba9ec8f0c6a9",
+    "statement": "Paciente de 35 anos G2PV1, IG: 36 sem + 5 dias, com diagnóstico de com pré-eclâmpsia grave. Foi indicado o uso do sulfato de magnésio para a prevenção de convulsões (eclâmpsia). Sobre o manejo da intoxicação por sulfato de magnésio, qual achado clínico é o PRIMEIRO a alterar, indicando nível sérico tóxico, e qual é o antídoto IMEDIATO?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diminuição da frequência respiratória; Gluconato de Cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipotensão arterial; Gluconato de sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Perda do reflexo patelar; Gluconato de Cálcio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Oligúria; Gluconato de sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O sulfato de magnésio é a droga de escolha para a prevenção e o tratamento das crises convulsivas na eclâmpsia. Por ser uma substância com estreita margem terapêutica e excreção exclusivamente renal, o monitoramento clínico rigoroso é obrigatório para evitar a intoxicação.\n\nA sequência clínica da intoxicação pelo magnésio segue uma ordem previsível conforme o aumento dos níveis séricos:\n\n1. Perda do reflexo patelar: Ocorre quando os níveis séricos atingem entre 7 e 10 mEq/L. É o sinal clínico mais precoce e sensível.\n2. Depressão respiratória: Ocorre em níveis superiores a 10-12 mEq/L, devido ao bloqueio neuromuscular.\n3. Parada cardiorrespiratória: Ocorre em níveis acima de 25-30 mEq/L.\n\nO antídoto imediato para reverter a toxicidade neuromuscular e cardíaca do magnésio é o gluconato de cálcio a 10% (1 grama por via intravenosa).\n\nAnálise das alternativas:\n\na) Incorreta. Embora a diminuição da frequência respiratória seja um sinal grave de intoxicação, ela não é o primeiro achado. O reflexo patelar desaparece antes do comprometimento respiratório. O antídoto está correto.\n\nb) Incorreta. A hipotensão arterial não é o marcador clínico clássico de monitorização da intoxicação por magnésio. Além disso, o antídoto não é o gluconato de sódio, mas sim o de cálcio.\n\nc) Correta. A perda do reflexo patelar (abolição dos reflexos osteotendinosos) é o primeiro sinal de toxicidade, servindo como um alerta precoce para interromper a infusão antes que ocorra a depressão respiratória. O gluconato de cálcio é o antídoto correto, agindo por antagonismo direto nos canais de cálcio.\n\nd) Incorreta. A oligúria não é um sinal de intoxicação, mas sim um fator de risco para que ela ocorra. Como o magnésio é excretado pelos rins, se a paciente urina pouco (menos de 25-30 mL/h), o magnésio se acumula no sangue, levando à intoxicação. O antídoto citado também está incorreto.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:29.910Z"
+  }
+]

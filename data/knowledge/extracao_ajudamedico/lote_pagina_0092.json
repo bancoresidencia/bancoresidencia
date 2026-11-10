@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_1915d715-8641-43f9-a9aa-318d13ba48a3",
+    "originalId": "1915d715-8641-43f9-a9aa-318d13ba48a3",
+    "statement": "G., 68 anos, é moradora da região do Vale do Taquari, no Rio Grande do Sul. Durante o evento climático extremo de maio de 2024, sua cidade foi praticamente devastada pela enchente. Além de perder sua casa, a empresa onde trabalhava foi destruída e uma amiga foi arrastada pelas águas e não foi mais encontrada. Seu cachorro, que era como um filho para ela, também desapareceu. Ela e sua família permaneceram vários dias sem luz, água e qualquer meio de comunicação durante aquele período.\n\nDois meses após a tragédia, a paciente busca atendimento em uma Unidade Básica de Saúde (UBS). Conta que, desde que tudo ocorreu, tem se sentido, durante a maioria dos dias, muito triste, sem interesse por atividades antes prazerosas para ela, com uma capacidade diminuída para se concentrar, muito cansada e sentindo-se inútil. Conta, ainda, que ganhou peso (aumentou mais de 15% em relação ao seu peso anterior), sente-se muito sonolenta durante o dia, sensação de peso nas pernas e muito sensível à rejeição pelas outras pessoas. Diante desse quadro, o diagnóstico desta moradora vítima da enchente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transtorno Depressivo Maior com sintomas ansiosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transtorno Depressivo Maior com características melancólicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno Depressivo Maior com características atípicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transtorno Depressivo Maior com características mistas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma paciente de 68 anos que desenvolveu um quadro compatível com um Episódio Depressivo Maior após um estressor psicossocial grave (a catástrofe climática no Rio Grande do Sul, ilustrada pela imagem de devastação). Para identificar o subtipo ou especificador correto, devemos analisar os sintomas vegetativos e comportamentais apresentados.\n\na) Incorreta. O Transtorno Depressivo Maior com sintomas ansiosos (ou com \"especificador de angústia ansiosa\") exige a presença de pelo menos dois sintomas, como: sentir-se tenso, inquieto, ter dificuldade de concentração devido à preocupação, ter medo de que algo terrível aconteça ou sentir que pode perder o controle. Embora a paciente tenha dificuldade de concentração, o quadro é dominado por sintomas vegetativos \"invertidos\" e sensibilidade interpessoal, que apontam para outra classificação.\n\nb) Incorreta. As características melancólicas são marcadas por uma perda quase completa de prazer ou falta de reatividade a estímulos agradáveis, associadas a insônia terminal (acordar cedo demais), anorexia ou perda de peso significativa, culpa excessiva e lentificação psicomotora. A paciente apresenta o oposto: ganho de peso e excesso de sono.\n\nc) Correta. O Transtorno Depressivo Maior com características atípicas é definido no DSM-5 pela presença de reatividade do humor (o humor melhora em resposta a eventos positivos, o que é sugerido pelo contexto clínico de sensibilidade interpessoal) acompanhada de dois ou mais dos seguintes critérios: 1. Aumento do apetite ou ganho de peso (paciente ganhou > 15%); 2. Hipersonia (paciente sente-se muito sonolenta durante o dia); 3. Paralisia de chumbo (sensação de peso nos braços ou pernas); 4. Padrão duradouro de sensibilidade à rejeição interpessoal que resulta em prejuízo social ou ocupacional significativo. A paciente apresenta exatamente esse conjunto de sintomas.\n\nd) Incorreta. O especificador de \"características mistas\" é utilizado quando o paciente apresenta sintomas maníacos ou hipomaníacos durante o episódio depressivo (como loquacidade, fuga de ideias, grandiosidade ou redução da necessidade de sono), o que não é relatado no caso.\n\nA imagem aérea da devastação no Vale do Taquari contextualiza o gatilho ambiental para o transtorno. No entanto, o diagnóstico específico baseia-se na fenomenologia dos sintomas (ganho de peso, hipersonia e paralisia de chumbo), que classicamente definem o subtipo atípico.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Transtornos do Humor"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/3c11d9047280ed237ad6b12dc993be47afacd3e204c7673f356ebe36c668e0cb.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1915d715-8641-43f9-a9aa-318d13ba48a3_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:14.071Z"
+  },
+  {
+    "id": "AJUDA_19198933-f692-486e-9822-18a8d6b9c963",
+    "originalId": "19198933-f692-486e-9822-18a8d6b9c963",
+    "statement": "Mulher de 27 anos, sem história prévia de rastreamento, teve teste de DNA-HPV positivo para tipo 33. Segundo as Diretrizes Brasileiras e a SBOC 2025, qual é a conduta correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar diretamente para colposcopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir o teste em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar citologia reflexa no mesmo material.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Desconsiderar o resultado, pois está fora da faixa etária indicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A conduta para o rastreamento do câncer do colo do útero no Brasil está em fase de transição para a incorporação do teste de DNA-HPV como tecnologia de primeira linha, conforme as recomendações mais recentes da SBOC 2025 e as diretrizes do Ministério da Saúde. O rastreamento é indicado para mulheres entre 25 e 64 anos que já iniciaram atividade sexual.\n\nNeste caso, a paciente de 27 anos está na faixa etária correta e apresentou teste de DNA-HPV positivo para o tipo 33. O tipo 33 é classificado como HPV de alto risco oncogênico, mas não é o 16 nem o 18. O protocolo de manejo para testes de HPV positivos segue critérios específicos de triagem:\n\n1. Se o resultado for positivo para os tipos 16 ou 18: A paciente deve ser encaminhada diretamente para colposcopia, devido ao altíssimo risco de lesões de alto grau.\n2. Se o resultado for positivo para outros tipos de alto risco (incluindo o 33, 31, 45, 52, entre outros): É necessário realizar uma citologia reflexa no mesmo material para triagem.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O encaminhamento direto para colposcopia é reservado para os genótipos de maior risco (16 e 18). Para os demais tipos de alto risco, como o 33, a citologia reflexa deve ser feita primeiro para decidir se a paciente precisa de colposcopia imediata ou se pode ser reavaliada em um prazo maior.\n\nAlternativa (b) Incorreta: Não existe indicação de repetir o teste em 6 meses neste cenário. Se a citologia reflexa fosse realizada e resultasse normal, a paciente repetiria o teste de HPV em 12 meses, e não em 6 meses.\n\nAlternativa (c) Correta: Esta é a conduta preconizada pelas novas diretrizes. A citologia reflexa é a triagem necessária para genótipos de alto risco que não sejam o 16 ou 18. Se essa citologia mostrar qualquer alteração (desde ASC-US até lesões de alto grau), a paciente vai para colposcopia. Se for negativa, ela repete o teste de HPV em 12 meses.\n\nAlternativa (d) Incorreta: A faixa etária para início do rastreamento no Brasil é aos 25 anos. Como a paciente tem 27 anos, o exame foi solicitado corretamente e o resultado deve ser valorizado e conduzido conforme o protocolo.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:14.071Z"
+  },
+  {
+    "id": "AJUDA_191af51f-298e-46dd-b6f4-621b9f312792",
+    "originalId": "191af51f-298e-46dd-b6f4-621b9f312792",
+    "statement": "Com relação à classificação dos quadros de dengue adotada pelo Ministério da Saúde em nosso país e ao manejo do paciente pediátrico com suspeita dessa arbovirose, de acordo com as atuais recomendações, assinale a afirmativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de 5 petéquias em uma área de 2,5 cm x 2,5 cm após insuflação por 5 minutos na média da pressão arterial em uma criança de 5 anos caracteriza uma prova do laço positiva e classifica a criança como grupo C, havendo necessidade de hidratação parenteral enquanto aguarda exames laboratoriais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Crianças com sangramentos espontâneos em pele, mesmo sem sinais de alarme, devem ser classificadas como grupo B, sendo a coleta do hemograma obrigatória para avaliar hemoconcentração.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Crianças com dor abdominal intensa e vômitos, independentemente de apresentarem sangramentos, são consideradas no grupo C e necessitam de hidratação oral imediata, em um volume inicial de 130 mL/kg, e que somente se encerrará após constatação de que não está ocorrendo hemoconcentração no hemograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hidratação parenteral com solução isotônica, no volume de 10 mL/kg na primeira hora é a conduta nos quadros suspeitos de dengue com sinais de alarme e deve ser iniciada somente após os resultados do hematócrito e ultrassonografia abdominal, para não aumentar o risco ou a piora de derrames cavitários.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A classificação e o manejo da dengue em pediatria seguem protocolos específicos do Ministério da Saúde, baseados na presença de sinais de alarme, sinais de choque e condições clínicas especiais. Abaixo, analisamos cada alternativa:\n\nAlternativa (a) incorreta: Na pediatria, a prova do laço é considerada positiva quando surgem 10 ou mais petéquias em um quadrado de 2,5 cm por 2,5 cm (em adultos, o ponto de corte são 20 petéquias). Além disso, a prova do laço positiva isoladamente, sem outros sinais de gravidade, classifica o paciente no Grupo B, e não no Grupo C. O Grupo C é definido pela presença de sinais de alarme.\n\nAlternativa (b) correta: Pacientes que apresentam manifestações hemorrágicas espontâneas restritas à pele (como petéquias) ou prova do laço positiva, e que não possuem sinais de alarme ou choque, são classificados no Grupo B. Para esses casos, a realização do hemograma completo é obrigatória. O resultado do hematócrito é fundamental para identificar a hemoconcentração, que é um marcador de extravasamento plasmático, definindo se o paciente poderá seguir em observação ou se precisará de condutas mais agressivas.\n\nAlternativa (c) incorreta: Dor abdominal intensa (referida ou à palpação) e vômitos persistentes são considerados sinais de alarme, o que enquadra a criança no Grupo C. O protocolo para o Grupo C exige obrigatoriamente a hidratação por via intravenosa (parenteral) imediata, e não hidratação oral. O volume de 130 mL/kg/dia é uma estimativa para a hidratação basal e de reposição em grupos ambulatoriais, mas não é a conduta de urgência para sinais de alarme.\n\nAlternativa (d) incorreta: Embora o volume de 10 mL/kg de solução isotônica na primeira hora seja a conduta correta para o Grupo C (sinais de alarme), o erro da alternativa reside em afirmar que se deve aguardar resultados de exames para iniciar a hidratação. O tratamento da dengue deve ser precoce e baseado na clínica. A demora no início da hidratação enquanto se aguarda o hematócrito ou ultrassonografia aumenta drasticamente o risco de o paciente evoluir para choque e insuficiência multiorgânica.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:14.071Z"
+  },
+  {
+    "id": "AJUDA_191e6965-e081-4706-9515-5a5d9cdaf387",
+    "originalId": "191e6965-e081-4706-9515-5a5d9cdaf387",
+    "statement": "Uma Unidade Básica de Saúde em Goiás iniciou projeto-embrionário com um \"copiloto clínico\" de inteligência artificial generativa, hospedado em nuvem, para apoio à decisão clínica, Durante o atendimento de um homem de 52 anos de idade, com tosse crônica e perda ponderal, a ferramenta sugere hipóteses e links para artigos. Os termos de uso, da IA em questão, não mencionam contrato de proteção de dados com o prestador, como os acordos específicos para tratamento de dados e os acordos exigidos por leis estrangeiras de privacidade em saúde para parceiros que acessam dados de pacientes. Ademais, o prontuário permite exportar sumários do caso contendo identificadores. O médico pretende usar a ferramenta para revisar condutas ao final da consulta. Considerando os princípios éticos consagrados na prática médica, a Lei Geral de Proteção de Dados (LGPD) e as boas práticas reconhecidas para o uso de inteligência artificial em saúde, qual é a forma apropriada de uso dessa ferramenta específica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adotar as sugestões da ferramenta como protocolo local, seguindo o plano indicado por se tratar de solução corporativa integrada ao prontuário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender a interação com a ferramenta até existir norma federal específica, restringindo se a outras fontes e interrompendo o uso pelo tempo necessário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Usar a ferramenta para apoiar busca e síntese de evidências, validar criticamente e verificar fontes, com anonimização de dados e registro do raciocínio do clínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Exportar prontuário e exames com identificadores para a plataforma em nuvem do fornecedor, a fim de obter um plano detalhado e automatizar prescrição e atestado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nA questão aborda a interseção entre a prática clínica, o uso de novas tecnologias (Inteligência Artificial Generativa) e o marco legal de proteção de dados (LGPD) no Brasil. O ponto central é entender que, independentemente da tecnologia utilizada, o médico mantém a responsabilidade ética e legal pelo diagnóstico e conduta, devendo zelar pelo sigilo das informações do paciente.\n\nAlternativa A: Incorreta. Adotar as sugestões de uma IA como protocolo local de forma automática é um erro grave. A IA generativa pode apresentar alucinações (informações falsas ou imprecisas). Além disso, o fato de a ferramenta estar integrada ao prontuário não isenta o médico de realizar a análise crítica da evidência científica. O médico é o garantidor final da segurança do paciente.\n\nAlternativa B: Incorreta. Embora a regulamentação específica sobre IA na saúde ainda esteja em constante evolução, o uso de ferramentas de apoio à decisão não é proibido, desde que respeite as leis vigentes, como o Código de Ética Médica e a LGPD. Suspender o uso por completo impediria o benefício que a síntese de evidências pode trazer, desde que as precauções de privacidade sejam seguidas.\n\nAlternativa C: Correta. Esta alternativa descreve as boas práticas no uso de IA em saúde. Primeiro, a ferramenta deve ser usada como suporte para busca e síntese de evidências, e não como substituta do julgamento clínico. Segundo, é imperativo que o médico valide criticamente as informações e verifique as fontes citadas pela IA. Terceiro, diante da ausência de contratos específicos de proteção de dados (como mencionado no enunciado), a anonimização dos dados do paciente é obrigatória para cumprir a LGPD e o sigilo médico. Por fim, o registro do raciocínio clínico no prontuário garante a transparência e a responsabilidade profissional.\n\nAlternativa D: Incorreta. Exportar dados com identificadores (nome, CPF, RG) para uma nuvem sem garantias contratuais de proteção de dados e sem o consentimento específico do paciente viola diretamente a LGPD e o sigilo médico. Além disso, automatizar prescrições e atestados sem revisão humana direta compromete a segurança do paciente e a autonomia profissional, sendo uma prática condenada pelos conselhos de medicina.\n\nEm resumo, o uso de IA na medicina deve ser pautado pela supervisão humana constante, proteção rigorosa dos dados sensíveis do paciente e uso da ferramenta apenas como um auxílio complementar ao conhecimento médico.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:14.071Z"
+  },
+  {
+    "id": "AJUDA_192127a2-0eb1-486c-910f-32a94c951284",
+    "originalId": "192127a2-0eb1-486c-910f-32a94c951284",
+    "statement": "Um médico plantonista sofreu uma perfuração acidental com agulha contaminada durante a realização de um procedimento invasivo em um paciente no hospital. O supervisor imediato orientou que o acidente fosse registrado no prontuário do paciente e que o plantonista procurasse o serviço de saúde ocupacional do hospital. Com base na legislação brasileira sobre acidentes e Comunicação de Acidente de Trabalho (CAT), analise as afirmativas abaixo:\nI. O acidente sofrido pelo médico plantonista configura um Acidente de Trabalho típico.\nII. A perfuração com material biológico é considerada um Acidente de Trabalho com Exposição a Material Biológico, exigindo notificação compulsória, além da CAT.\nIII. A obrigação de emitir a CAT é, em primeiro lugar, do hospital, e o prazo para emissão é de até 1 (um) dia útil após a ocorrência.\nIV. Mesmo que o hospital não emita a CAT, o próprio acidentado, seus dependentes, a entidade sindical, o médico que o assistiu ou qualquer autoridade pública podem fazê-lo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "todas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "apenas três.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "apenas duas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "apenas uma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "nenhuma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS\n\nAfirmativa I: Está correta. O acidente de trabalho típico é aquele que ocorre pelo exercício do trabalho a serviço da empresa, provocando lesão corporal ou perturbação funcional. No caso relatado, o médico sofreu a perfuração enquanto realizava um procedimento profissional dentro do hospital, o que caracteriza perfeitamente o acidente típico.\n\nAfirmativa II: Está correta. Acidentes que envolvem exposição a material biológico potencialmente contaminado exigem uma dupla notificação no Brasil. A primeira é a CAT (Comunicação de Acidente de Trabalho), de caráter previdenciário e estatístico. A segunda é a Notificação Compulsória, que alimenta o SINAN (Sistema de Informação de Agravos de Notificação), essencial para o monitoramento epidemiológico e políticas de saúde pública.\n\nAfirmativa III: Está correta. Segundo a Lei número 8.213/1991, a empresa (no caso, o hospital) tem a obrigação legal de comunicar o acidente de trabalho à Previdência Social até o primeiro dia útil seguinte ao da ocorrência. Caso ocorra o falecimento do trabalhador, a comunicação deve ser imediata.\n\nAfirmativa IV: Está correta. Caso o empregador se recuse ou negligencie a emissão da CAT, a legislação brasileira garante que o documento possa ser emitido por outros agentes. O próprio médico acidentado, seus dependentes, o sindicato da categoria, o médico que prestou o atendimento ou autoridades públicas (como magistrados e promotores) possuem legitimidade para registrar a CAT, garantindo os direitos assistenciais do trabalhador.\n\nCONCLUSÃO\n\nComo todas as quatro afirmativas estão tecnicamente corretas e fundamentadas na legislação trabalhista e nas normas de vigilância em saúde brasileiras, a alternativa correta é a (a).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Vigilância em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:14.071Z"
+  },
+  {
+    "id": "AJUDA_1936d062-7905-494b-aa1c-64b330de8dbf",
+    "originalId": "1936d062-7905-494b-aa1c-64b330de8dbf",
+    "statement": "Mulher de 28 anos de idade apresenta dor súbita e edema em membro inferior esquerdo. Realizado o diagnóstico de trombose venosa profunda (TVP) e iniciada a anticoagulação terapêutica. A paciente nega comorbidades, gestação ou uso de medicamentos. AF: mãe com TEP aos 40 anos de idade. Nega uso atual de anticoncepcionais ou gestação. A conduta em relação à investigação etiológica é",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar a investigação após suspensão da anticoagulação oral, uma vez que esta interfere na avaliação da mutação do gene da protrombina e fator V de Leiden.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar a investigação após suspensão da anticoagulação oral, uma vez que esta interfere na avaliação da dosagem das proteínas C e S.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "solicitar pesquisa de anticoagulante lúpico nesse momento, uma vez que ele não sofre interferência da anticoagulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "iniciar investigação para trombofilias após o segundo evento trombótico, devido ao baixo risco de recorrência nessa paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "solicitar dosagem de homocisteína plasmática, pois é o fator de risco mais associado à trombose em jovens.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Analise do caso clinico:\n\nMulher jovem com quadro de tromboembolismo venoso nao provocado e historia familiar positiva de primeiro grau (mae com TEP antes dos 50 anos). O quadro preenche criterios para investigacao de trombofilias hereditarias e adquiridas, mas o momento ideal para a coleta dos exames laboratoriais deve ser respeitado para evitar resultados falso-positivos ou falso-negativos decorrentes da fase aguda da trombose ou do uso de anticoagulantes.\n\nAlternativa A - Incorreta. Os testes geneticos para pesquisa da mutacao do Fator V de Leiden e da mutacao G20210A do gene da protrombina utilizam tecnicas de biologia molecular (analise de DNA por PCR) e nao sofrem qualquer interferencia pelo uso de anticoagulantes ou pela presenca de trombose aguda, podendo ser realizados em qualquer momento.\n\nAlternativa B - Correta. As proteinas C e S sao anticoagulantes naturais dependentes de vitamina K. Durante a fase aguda da trombose ocorre consumo dessas proteinas, e o uso de anticoagulantes orais antagonistas da vitamina K reduz a sintese hepatica de ambas, levando a resultados falsamente baixos. Os anticoagulantes orais diretos tambem podem interferir nos ensaios funcionais. Portanto, a dosagem dessas proteinas deve ser realizada apos a suspensao da anticoagulacao (habitualmente aguardando-se de 2 a 4 semanas).\n\nAlternativa C - Incorreta. Os testes funcionais utilizados para a pesquisa do anticoagulante lupico sofrem interferencia direta de heparinas, varfarina e novos anticoagulantes orais, o que frequentemente gera resultados falso-positivos.\n\nAlternativa D - Incorreta. Em pacientes com menos de 50 anos, trombose venosa profunda nao provocada e historia familiar positiva em parente de primeiro grau, a investigacao e indicada logo apos o primeiro evento tromboembolico para orientar o tempo de tratamento e aconselhamento familiar.\n\nAlternativa E - Incorreta. A trombofilia hereditaria mais comumente associada a trombose em jovens e a mutacao do Fator V de Leiden. A hiperhomocisteinemia e apenas um fator de risco moderado e sua dosagem rotineira caiu em desuso, visto que a reposicao vitaminica nao altera o risco de recorrencia trombotica.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hemostasia",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:14.071Z"
+  },
+  {
+    "id": "AJUDA_1941238e-f198-4dd2-be35-5413a5e5c67d",
+    "originalId": "1941238e-f198-4dd2-be35-5413a5e5c67d",
+    "statement": "Mulher, 26 anos, apresenta quadro de fadiga, artralgias, rash malar fotossensível e úlceras orais recorrentes. Exames laboratoriais indicam anemia normocítica, leucopenia, plaquetopenia, creatinina sérica – 1,8 mg/dL, proteinúria – 2 g/24h. Sorologias: FAN positivo (1:640, padrão homogêneo), anti-DNA dupla-hélice positivo, complemento C3 e C4 reduzidos. Com base no quadro clínico e laboratorial apresentado, qual é a conduta mais adequada para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Confirmar diagnóstico de Lúpus Eritematoso Sistêmico (LES) ativo com nefrite lúpica provável e indicar pulsoterapia com corticosteroides em altas doses associada a imunossupressor.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Confirmar diagnóstico de LES cutâneo limitado e indicar apenas hidroxicloroquina, já que as manifestações são predominantemente cutâneas e articulares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tratar como LES inativo, apenas mantendo acompanhamento clínico e laboratorial, pois os títulos de anticorpos não têm relevância prognóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar apenas anticoagulação oral profilática, pois a principal complicação esperada é síndrome antifosfolípide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar antibioticoterapia de amplo espectro, já que as alterações hematológicas e renais são mais compatíveis com processo infeccioso associado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente é uma mulher jovem que apresenta um quadro clínico e laboratorial clássico de lúpus eritematoso sistêmico (LES). Ela preenche múltiplos critérios de classificação (EULAR/ACR): manifestações cutâneas (rash malar fotossensível), mucosas (úlceras orais), articulares (artralgias), hematológicas (anemia, leucopenia e plaquetopenia, caracterizando pancitopenia) e renais (creatinina de 1,8 mg/dL e proteinúria de 2 g/24h). Além disso, a imunologia é fortemente positiva, com FAN de alto título, anti-DNA de dupla hélice positivo e consumo de complemento (C3 e C4 reduzidos), o que indica atividade de doença, especialmente renal.\n\nExplicação das alternativas:\n\nAlternativa a) Correta. A paciente apresenta lúpus com atividade orgânica grave. A presença de proteinúria acima de 500 mg/24h e a elevação da creatinina indicam nefrite lúpica (provavelmente classes III ou IV). Nesses casos, a conduta padrão é a terapia de indução para evitar a perda definitiva da função renal, utilizando pulsoterapia com corticosteroides (geralmente metilprednisolona) associada a um agente imunossupressor de maior potência, como a ciclofosfamida ou o micofenolato de mofetila.\n\nAlternativa b) Incorreta. O diagnóstico não é de lúpus limitado à pele. A paciente apresenta manifestações sistêmicas graves, incluindo citopenias hematológicas e, principalmente, disfunção renal significativa. A hidroxicloroquina é um medicamento fundamental para todos os pacientes com LES, mas não é suficiente para tratar uma nefrite lúpica ou o quadro hematológico apresentado.\n\nAlternativa c) Incorreta. O quadro é de lúpus em franca atividade. O anti-DNA positivo e a queda de complemento (C3 e C4) são marcadores biológicos de atividade da doença, possuindo alta relevância prognóstica e indicando maior risco de dano renal iminente. O acompanhamento clínico apenas seria negligência diante da insuficiência renal aguda/subaguda instalada.\n\nAlternativa d) Incorreta. A anticoagulação é o tratamento para a síndrome antifosfolípide (SAF) em casos de trombose ou complicações gestacionais. Embora o LES e a SAF possam coexistir, não há relato de eventos trombóticos ou presença de anticorpos antifosfolípides no enunciado. O problema central da paciente é a inflamação sistêmica pelo lúpus e a nefrite, que exigem imunossupressão, e não anticoagulação.\n\nAlternativa e) Incorreta. Embora infecções possam cursar com alterações hematológicas e renais, o conjunto de sintomas (rash malar, úlceras, artralgia) somado aos anticorpos específicos (anti-DNA e FAN) e ao consumo de complemento confirma o diagnóstico de LES. Tratar apenas com antibióticos atrasaria o início do tratamento imunossupressor necessário para conter a agressão autoimune aos rins.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:14.071Z"
+  },
+  {
+    "id": "AJUDA_19439f87-2024-46f7-a529-a340c9b548ad",
+    "originalId": "19439f87-2024-46f7-a529-a340c9b548ad",
+    "statement": "Em relação ao sangramento uterino anormal em uma mulher na menacme, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sempre se deve descartar um caso de gravidez.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O encaminhamento para especialista deve ser feito se não houver resposta ao tratamento clínico otimizado por 3 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É irrelevante verificar o índice de massa corporal da paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A espessura endometrial, verificada por ecografia pélvica transvaginal, faz parte da investigação em qualquer fase do ciclo menstrual.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): Em mulheres em idade fértil (menacme), a gravidez e suas complicações (como abortamento, gravidez ectópica ou doença trofoblástica gestacional) são as causas mais comuns de irregularidade menstrual e sangramento inesperado. Portanto, a realização do teste de gravidez (beta-hCG) é o primeiro passo obrigatório em qualquer protocolo de investigação de sangramento uterino anormal para evitar erros diagnósticos e condutas inadequadas.\n\nAlternativa B (Incorreta): Não existe um consenso ou diretriz que estipule o prazo de 3 semanas de tratamento clínico como critério para encaminhamento ao especialista. O tratamento clínico do sangramento uterino anormal, muitas vezes baseado em hormônios ou anti-inflamatórios, geralmente requer um período de observação maior (frequentemente de 3 a 6 meses) para avaliar a eficácia. O encaminhamento é indicado em casos de suspeita de malignidade, necessidade de intervenção cirúrgica ou quando o médico da atenção primária esgotar as possibilidades terapêuticas.\n\nAlternativa C (Incorreta): O IMC é extremamente relevante na investigação ginecológica. A obesidade é um fator de risco clássico para o sangramento uterino anormal por causar anovulação crônica e aumentar a conversão periférica de androgênios em estrogênios no tecido adiposo. Esse estado de hiperestrogenismo relativo, sem a oposição da progesterona, pode levar à hiperplasia endometrial e ao câncer de endométrio.\n\nAlternativa D (Incorreta): A avaliação da espessura endometrial por ultrassonografia na menacme deve ser feita, preferencialmente, logo após a menstruação (fase proliferativa inicial), quando o endométrio está em sua espessura basal. Realizar o exame em qualquer fase do ciclo (como na fase secretora) pode gerar resultados falso-positivos para espessamento patológico, já que o endométrio cresce naturalmente ao longo do mês. Além disso, a medida isolada do endométrio tem baixo valor preditivo para malignidade em mulheres jovens, ao contrário do que ocorre na pós-menopausa.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:14.071Z"
+  },
+  {
+    "id": "AJUDA_19462fef-4b9a-49c2-add3-6d1f762a654f",
+    "originalId": "19462fef-4b9a-49c2-add3-6d1f762a654f",
+    "statement": "A Atenção Primária à Saúde (APS) é definida por um conjunto de atributos essenciais e derivados, sendo a base do ordenamento do SUS. Dentre os atributos essenciais da APS definidos pela PNAB, o que se refere à construção de uma relação duradoura e de confiança entre a equipe de saúde e o indivíduo, acompanhando-o ao longo de sua vida, é a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Primeiro Contato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Integralidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coordenação do Cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Longitudinalidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Competência Cultural.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para responder a essa questão, é necessário dominar os conceitos dos Atributos da Atenção Primária à Saúde (APS), que são os pilares orientadores da Política Nacional de Atenção Básica (PNAB). Esses atributos são divididos em essenciais e derivados.\n\nAlternativa a: Incorreta. O atributo de Primeiro Contato (ou Acesso) refere-se à APS ser a porta de entrada preferencial e acessível do sistema de saúde. Ele garante que o serviço seja o primeiro recurso procurado pelo indivíduo sempre que houver uma nova necessidade de saúde ou problema.\n\nAlternativa b: Incorreta. A Integralidade significa que a equipe de saúde deve reconhecer todas as necessidades de saúde da população, oferecendo serviços que abrangem a promoção, prevenção, cura e reabilitação, além de considerar o paciente em sua totalidade biopsicossocial, e não apenas uma parte do corpo ou uma doença isolada.\n\nAlternativa c: Incorreta. A Coordenação do Cuidado é a capacidade da equipe de APS de organizar e sincronizar as informações e o fluxo do paciente dentro da Rede de Atenção à Saúde. É o papel de \"maestro\", garantindo a continuidade do cuidado mesmo quando o paciente precisa ser referenciado para especialistas ou exames de maior complexidade.\n\nAlternativa d: Correta. A Longitudinalidade é o atributo que define o acompanhamento do indivíduo ao longo do tempo por uma mesma equipe ou profissional. Ela pressupõe a criação de um vínculo terapêutico e uma relação de confiança mútua entre o paciente e os profissionais, permitindo um conhecimento profundo do histórico de saúde e do contexto de vida da pessoa, independentemente da presença de doenças. É o foco no tempo e na relação duradoura.\n\nAlternativa e: Incorreta. A Competência Cultural é considerada um atributo derivado (e não essencial). Refere-se à capacidade da equipe de compreender, respeitar e adaptar o cuidado às características culturais, sociais e linguísticas da comunidade em que atua, facilitando a adesão e a eficácia do tratamento.\n\nGabarito: Alternativa d.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:14.071Z"
+  },
+  {
+    "id": "AJUDA_194eb76d-e056-42d9-b01c-5187dd3dce09",
+    "originalId": "194eb76d-e056-42d9-b01c-5187dd3dce09",
+    "statement": "Em lactentes com suspeita de meningite bacteriana, qual é a conduta inicial mais adequada antes do resultado do líquor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar antibióticos empíricos imediatamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aguardar o resultado da cultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar apenas tomografia de crânio antes de iniciar antibiotic.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar corticoide isolado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hidratação venosa exclusive.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa correta: A\n\nA meningite bacteriana em lactentes é uma emergência médica pediátrica que exige intervenção rápida. O atraso no início do tratamento está diretamente associado a um aumento na mortalidade e no risco de sequelas neurológicas permanentes, como surdez, atraso no desenvolvimento neuropsicomotor e convulsões.\n\nExplicação detalhada de cada alternativa:\n\nAlternativa (a): Correta. Diante da suspeita clínica de meningite, a prioridade absoluta é o início da antibioticoterapia empírica o mais rápido possível. Embora o ideal seja realizar a punção lombar para coleta do líquido cefalorraquidiano (LCR) antes da primeira dose, esse procedimento não deve atrasar o tratamento. Se houver contraindicação para a punção imediata ou demora na sua realização, o antibiótico deve ser administrado sem hesitação. A conduta é tratar antes mesmo de ter o resultado da análise do líquor.\n\nAlternativa (b): Incorreta. O resultado da cultura do líquor ou do sangue pode levar de 24 a 72 horas para ficar pronto. A meningite bacteriana é uma doença de progressão fulminante; aguardar esse tempo para iniciar o tratamento resultaria, invariavelmente, no óbito ou em danos cerebrais irreversíveis para o lactente.\n\nAlternativa (c): Incorreta. A tomografia de crânio não é necessária de rotina em todos os lactentes com suspeita de meningite. Ela é reservada para casos específicos, como sinais de localização neurológica, coma profundo ou sinais de hipertensão intracraniana grave. Mesmo quando a tomografia é necessária, ela não deve ser motivo para adiar a administração do antibiótico.\n\nAlternativa (d): Incorreta. O corticoide (geralmente a dexametasona) pode ser utilizado em situações específicas de meningite bacteriana (como na suspeita de Haemophilus influenzae tipo b ou Streptococcus pneumoniae) para reduzir a inflamação, mas deve ser administrado concomitantemente ou minutos antes da primeira dose do antibiótico. Jamais deve ser administrado de forma isolada, pois não possui ação contra o agente infeccioso.\n\nAlternativa (e): Incorreta. A hidratação venosa é uma medida de suporte importante para manter a estabilidade hemodinâmica e a perfusão cerebral, mas é uma medida adjuvante. Ela não trata a causa do quadro (a infecção bacteriana). O foco terapêutico central deve ser a eliminação do patógeno através de antimicrobianos.\n\nResumo didático: Na prática médica, a regra para meningite bacteriana é coletar o líquor e iniciar o antibiótico imediatamente a seguir. Se não for possível coletar o líquor rapidamente, inicia-se o antibiótico de qualquer forma. Nunca se espera o resultado dos exames para tratar.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:14.071Z"
+  }
+]

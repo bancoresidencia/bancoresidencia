@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_2974b581-420a-473c-988b-f72a0da81c02",
+    "originalId": "2974b581-420a-473c-988b-f72a0da81c02",
+    "statement": "No contexto de transplante hepático, qual das alternativas abaixo descreve CORRETAMENTE os Critérios de Milão para Carcinoma hepatocelular?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Um tumor ≤ 5 cm ou até três tumores, cada um ≤ 3 cm, sem invasão vascular nem metástases.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Um tumor ≤ 3 cm, sem satélites, independentemente de número.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Até cinco tumores, cada um ≤ 5 cm, sem metástase extra-hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Qualquer tumor ressecável R0 em fígado cirrótico Child A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tumor único ≤ 7 cm, sem invasão vascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Os Critérios de Milão foram estabelecidos em 1996 e continuam sendo a principal referência mundial para a indicação de transplante hepático em pacientes com carcinoma hepatocelular (CHC). O objetivo desses critérios é selecionar pacientes com doença localizada e de baixo volume, garantindo taxas de sobrevida a longo prazo superiores a 70%, semelhantes às de pacientes transplantados por doenças não malignas.\n\nAnálise das alternativas:\n\nAlternativa (a) CORRETA: Esta alternativa descreve com precisão os componentes dos Critérios de Milão. Para que um paciente seja elegível ao transplante por esta regra, ele deve apresentar:\n1. Lesão única com diâmetro máximo de até 5 cm; OU\n2. Até três lesões distintas, cada uma com diâmetro máximo de até 3 cm.\nAdicionalmente, é obrigatório que não haja invasão vascular (especialmente da veia porta) e que não existam metástases a distância (doença extra-hepática).\n\nAlternativa (b) INCORRETA: O limite para tumor único nos Critérios de Milão é de 5 cm, e não 3 cm. Além disso, o número de nódulos é um fator determinante; não se pode aceitar nódulos independentemente da quantidade.\n\nAlternativa (c) INCORRETA: Esta alternativa descreve critérios muito mais amplos do que os de Milão. Permitir até cinco tumores de 5 cm cada aumentaria drasticamente o risco de recorrência tumoral após o transplante, fugindo do conceito de doença inicial.\n\nAlternativa (d) INCORRETA: Esta descrição refere-se, em geral, a pacientes que são candidatos a ressecção cirúrgica (hepatectomia) e não necessariamente ao transplante. Pacientes Child A com boa reserva funcional e sem hipertensão portal são priorizados para a retirada do tumor via cirurgia convencional, reservando-se o transplante para casos onde a função hepática está comprometida ou quando há recidiva nos critérios de Milão.\n\nAlternativa (e) INCORRETA: Um tumor único de 7 cm excede o limite de 5 cm definido em Milão. Embora existam critérios expandidos, como os de San Francisco (UCSF), que permitem tumores únicos de até 6,5 cm, a questão pede especificamente a definição clássica de Milão.\n\nGabarito: Alternativa (a).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Transplante Hepático e Hepatite Fulminante",
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:16.249Z"
+  },
+  {
+    "id": "AJUDA_297cec91-5cf7-4676-aaba-eeeb1368d9c8",
+    "originalId": "297cec91-5cf7-4676-aaba-eeeb1368d9c8",
+    "statement": "Menina, três meses, foi trazida pela mãe ao ambulatório de puericultura para consulta de seguimento, após ter sido realizada a quimioprofilaxia primária para tuberculose. Exame físico: bom estado geral; assintomática; relação peso/idade, com escore = +1. Solicitou-se prova tuberculínica com resultado de 2mm. A conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "suspender quimioprofilaxia e fazer a vacina BCG",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "solicitar exame de radiografia do tórax",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "manter a quimioprofilaxia com isoniazida por mais 3 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "manter a quimioprofilaxia com rifampicina por mais 3 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o protocolo de manejo do recém-nascido exposto a um caso de tuberculose bacilífera (caso-fonte com baciloscopia positiva ou cultura positiva). De acordo com as normas do Ministério da Saúde, quando um bebê nasce em contato com um adulto infectado, a vacinação com BCG deve ser adiada e a quimioprofilaxia primária (Tratamento Preventivo da Tuberculose – TPT) deve ser iniciada imediatamente.\n\nApós três meses de quimioprofilaxia, é obrigatória a realização da Prova Tuberculínica (PT/PPD) para decidir o próximo passo.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. O ponto de corte para a Prova Tuberculínica em crianças que realizaram a quimioprofilaxia primária é de 5 mm. Como a paciente apresentou um resultado de 2 mm (não reagente), considera-se que não houve infecção pelo *Mycobacterium tuberculosis* durante o período de exposição. Assim, a conduta correta é interromper o medicamento (isoniazida ou rifampicina) e aplicar a vacina BCG, que havia sido postergada.\n\nAlternativa b) Incorreta. A radiografia de tórax é indicada se a criança apresentar sintomas (o que não é o caso, pois ela está assintomática) ou se a Prova Tuberculínica for reagente (maior ou igual a 5 mm), para descartar tuberculose-doença antes de prosseguir com o tratamento da infecção latente. Com PT de 2 mm e ausência de sintomas, o exame de imagem não é necessário.\n\nAlternativa c) Incorreta. A manutenção da quimioprofilaxia por mais três meses (totalizando seis meses de isoniazida) seria a conduta indicada caso a Prova Tuberculínica fosse reagente (maior ou igual a 5 mm). Nesse cenário, consideraríamos que a criança desenvolveu Infecção Latente por Tuberculose (ILTB).\n\nAlternativa d) Incorreta. Assim como na alternativa anterior, a extensão do tratamento só seria aplicada se houvesse evidência de infecção (PT maior ou igual a 5 mm). Se a PT for negativa, não há justificativa para manter o uso de rifampicina ou qualquer outro esquema profilático.\n\nResumo do protocolo para recém-nascidos expostos:\n1. Ao nascer: Não vacinar com BCG. Iniciar quimioprofilaxia (isoniazida por 3 meses ou rifampicina por 2 meses).\n2. Após o tempo inicial: Realizar Prova Tuberculínica (PT).\n3. PT menor que 5 mm: Interromper medicação e vacinar com BCG.\n4. PT maior ou igual a 5 mm: Continuar o tratamento preventivo da infecção latente (se isoniazida, por mais 3 meses; se rifampicina, completar o esquema conforme protocolo) e não vacinar com BCG.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Tuberculose na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:16.249Z"
+  },
+  {
+    "id": "AJUDA_297cf12f-d018-4b3f-9ac7-8667b83f4555",
+    "originalId": "297cf12f-d018-4b3f-9ac7-8667b83f4555",
+    "statement": "Um paciente apresenta-se ao pronto-socorro com dor precordial retroesternal em aperto há 45 minutos, acompanhada de diaforese profusa, náuseas e sensação de morte iminente. O sintoma foi desencadeado durante repouso, sem esforço físico prévio, e persiste apesar do repouso contínuo. O eletrocardiograma evidencia ondas T invertidas difusas com discreto infradesnivelamento do segmento ST. Identifique a classificação de síndrome coronariana aguda correspondente a este padrão de apresentação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Angina estável, pois a dor é desencadeada preferencialmente em repouso e desaparece após poucos minutos de inatividade contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Angina de Prinzmetal, ocorrendo tipicamente durante situações de repouso noturno ou matutino em pacientes jovens sem fatores de risco coronariano significativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infarto agudo do miocárdio com supradesnivelamento do segmento ST, caracterizado por alterações eletrocardiográficas difusas com ondas T invertidas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Angina variante, apresentando desconforto retroesternal não aliviado completamente pelo repouso ou nitratos, acompanhado de alterações eletrocardiográficas dinâmicas sugestivas de isquemia miocárdica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Infarto agudo do miocárdio sem supradesnivelamento do segmento ST, em que a dor persiste além de 30 minutos, pouco afetada pelo repouso ou nitratos, associado a infradesnivelamento de ST.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do caso clínico: O paciente apresenta um quadro clínico clássico de Síndrome Coronariana Aguda (SCA). A dor retroesternal em aperto, com duração prolongada (45 minutos), acompanhada de sintomas autonômicos (diaforese e náuseas) e sensação de morte iminente, é altamente sugestiva de isquemia miocárdica persistente ou infarto. O fato de a dor ter iniciado em repouso e persistir por tanto tempo é um sinal de alerta vermelho na cardiologia de emergência.\n\nAlternativa a) Incorreta: A angina estável é caracterizada por dor desencadeada por esforço físico ou estresse emocional, com padrão previsível e que é rapidamente aliviada pelo repouso ou uso de nitratos, geralmente durando menos de 10 a 20 minutos. No caso descrito, a dor ocorreu em repouso e é prolongada.\n\nAlternativa b) Incorreta: A angina de Prinzmetal (ou vasoespástica) ocorre tipicamente em repouso, muitas vezes em pacientes mais jovens e durante a madrugada ou início da manhã. No entanto, seu marcador eletrocardiográfico característico é o supradesnivelamento transitório do segmento ST, que reflete uma isquemia transmural reversível causada por espasmo coronariano, e não o infradesnivelamento ou a inversão de onda T persistentes.\n\nAlternativa c) Incorreta: Para a classificação de infarto agudo do miocárdio com supradesnivelamento do segmento ST (IAMCSST), o eletrocardiograma deve obrigatoriamente apresentar o supradesnivelamento do segmento ST (supra) em pelo menos duas derivações contíguas. O enunciado descreve explicitamente ondas T invertidas e infradesnivelamento de ST, o que exclui o diagnóstico de IAM com supra.\n\nAlternativa d) Incorreta: A angina variante é outro nome para a angina de Prinzmetal. Como mencionado anteriormente, embora ocorra em repouso, ela se manifesta com supradesnivelamento transitório de ST no eletrocardiograma durante o episódio de dor, o que não condiz com o padrão de infradesnivelamento e inversão de onda T descrito.\n\nAlternativa e) Correta: O quadro de dor isquêmica típica com duração superior a 20 ou 30 minutos, que não cede com repouso e está associado a alterações eletrocardiográficas como o infradesnivelamento do segmento ST e a inversão de onda T, define a Síndrome Coronariana Aguda sem supradesnivelamento do segmento ST (SCASSST). Dentro deste espectro, a persistência da dor e o padrão eletrocardiográfico são compatíveis com o diagnóstico de infarto agudo do miocárdio sem supradesnivelamento do segmento ST (IAMSSST). A confirmação definitiva entre angina instável e IAMSSST seria feita pela dosagem de biomarcadores de necrose miocárdica (como a troponina), mas clinicamente, conforme as opções dadas, esta é a classificação correta.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:16.249Z"
+  },
+  {
+    "id": "AJUDA_297e7344-5193-4240-870e-6dab20308085",
+    "originalId": "297e7344-5193-4240-870e-6dab20308085",
+    "statement": "O diagnóstico de pré-eclâmpsia ocorre com a PA ≥ 140 ou 90 mmHg aferida em duas ocasiões, com intervalo ≥ 4 horas, após a 20ª semana de gestação associada a relação proteinúria/creatininúria ≥ 0,3 ou ≥ 300 mg/24 horas ou ≥ 2+ em fita ou associada a disfunção de órgão-alvo. Assinale a alternativa que corresponde a uma disfunção de órgão-alvo presente no diagnóstico de pré-eclâmpsia:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Concentração de TGO ou TGP > 30UI/L.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Creatinina sérica > 0,9mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Plaquetas < 160.000/mm3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Descolamento prematuro de placenta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Presença de brida amniótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O diagnóstico de pré-eclâmpsia é firmado pela presença de hipertensão arterial (PA >= 140/90 mmHg) após a 20ª semana de gestação, associada à proteinúria ou, na ausência desta, a sinais de disfunção orgânica ou de órgão-alvo.\n\nAlternativa (a) Incorreta: Para ser considerada disfunção hepática na pré-eclâmpsia, os níveis de transaminases (TGO ou TGP) devem estar elevados em, no mínimo, duas vezes o valor do limite superior da normalidade. O valor de 30 UI/L é considerado dentro da faixa de normalidade na maioria dos laboratórios e não caracteriza lesão de órgão-alvo.\n\nAlternativa (b) Incorreta: A disfunção renal é definida por níveis de creatinina sérica superiores a 1,1 mg/dL ou pelo dobro do valor basal da paciente. O valor de 0,9 mg/dL é considerado normal, especialmente na gestação, período em que a taxa de filtração glomerular aumenta e a creatinina tende a ser mais baixa.\n\nAlternativa (c) Incorreta: A alteração hematológica que define disfunção de órgão-alvo na pré-eclâmpsia é a plaquetopenia, caracterizada por uma contagem de plaquetas inferior a 100.000/mm3. O valor de 160.000/mm3 está dentro dos limites da normalidade.\n\nAlternativa (d) Correta: O descolamento prematuro de placenta (DPP) é uma das manifestações de disfunção uteroplacentária decorrente da má adaptação circulatória e da vasculopatia hipertensiva da pré-eclâmpsia. Atualmente, as diretrizes nacionais e internacionais (como as da FEBRASGO) consideram que a hipertensão associada à disfunção uteroplacentária (que inclui DPP, restrição de crescimento fetal ou óbito fetal) permite o diagnóstico de pré-eclâmpsia, mesmo sem proteinúria.\n\nAlternativa (e) Incorreta: A brida amniótica é uma condição congênita resultante da ruptura prematura do âmnio, levando à formação de faixas fibrosas que podem envolver e constringir partes do feto. Trata-se de um evento mecânico/embriológico que não apresenta relação com a fisiopatologia da pré-eclâmpsia ou com danos causados pela hipertensão arterial.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 83.08917767174422,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:16.249Z"
+  },
+  {
+    "id": "AJUDA_2983a967-24ae-4c87-94bd-8abbd005c8e0",
+    "originalId": "2983a967-24ae-4c87-94bd-8abbd005c8e0",
+    "statement": "Quais são os critérios clínicos para diagnóstico de sepse neonatal, e qual é a importância de sua identificação precoce?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Febre, taquicardia e irritabilidade, com baixa importância clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipotermia, letargia e apneia, indicando necessidade de tratamento imediato devido ao risco de complicações graves.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tosse, febre e dor de garganta, indicando infecção leve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Úlceras na boca e diarreia, que sugerem doenças virais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A sepse neonatal é uma síndrome clínica caracterizada por uma resposta sistêmica a uma infecção, ocorrendo nos primeiros 28 dias de vida. Devido à imaturidade do sistema imunológico do recém-nascido, a progressão da doença é extremamente rápida, o que torna o diagnóstico clínico precoce a ferramenta mais importante para reduzir a mortalidade e as sequelas a longo prazo.\n\nAlternativa (a): Incorreta. Embora febre e taquicardia possam estar presentes, muitos recém-nascidos manifestam a sepse por meio da instabilidade térmica, incluindo a hipotermia. Além disso, a afirmação de que a identificação possui \"baixa importância clínica\" é um erro grave, visto que a sepse é uma das principais causas de morte no período neonatal.\n\nAlternativa (b): Correta. O quadro clínico da sepse neonatal é frequentemente inespecífico. Hipotermia (ou instabilidade térmica), letargia (diminuição da atividade e da sucção) e apneia (pausas respiratórias) são sinais clássicos de alerta. O diagnóstico e o início imediato da antibioticoterapia empírica são fundamentais para evitar a evolução para choque séptico, falência múltipla de órgãos e morte.\n\nAlternativa (c): Incorreta. Tosse e dor de garganta são sintomas localizados de infecções das vias aéreas superiores, comuns em crianças maiores. No neonato, a sepse se manifesta de forma sistêmica, com sinais de comprometimento do estado geral, e não como uma infecção leve localizada.\n\nAlternativa (d): Incorreta. Úlceras na boca e diarreia não são critérios diagnósticos para sepse. Embora a diarreia possa ocorrer em alguns quadros infecciosos, esses sintomas sugerem patologias virais específicas ou doenças gastrointestinais, não preenchendo os critérios de gravidade e asfixia sistêmica característicos da sepse neonatal.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:16.249Z"
+  },
+  {
+    "id": "AJUDA_298cd905-c5ce-438c-a1f5-504ed84bb7f1",
+    "originalId": "298cd905-c5ce-438c-a1f5-504ed84bb7f1",
+    "statement": "Na cirurgia de Whipple (pancreatoduodenectomia), quais estruturas são comumente removidas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cabeça do pâncreas, duodeno, vesícula biliar e uma parte do estômago.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Corpo e cauda do pâncreas, baço e duodeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vesícula biliar, fígado e parte do jejuno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cabeça e cauda do pâncreas, duodeno e vesícula biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A cirurgia de Whipple, tecnicamente chamada de pancreatoduodenectomia clássica, é o procedimento padrão para o tratamento de tumores localizados na região periampular, que engloba a cabeça do pâncreas, a ampola de Vater, o duodeno e a porção terminal do colédoco.\n\nAnálise das alternativas:\n\nAlternativa A: ESTÁ CORRETA. Na descrição clássica da técnica de Whipple, as estruturas removidas são a cabeça do pâncreas (e o processo uncinado), a totalidade do duodeno, a vesícula biliar, o ducto colédoco distal e o antro gástrico (parte distal do estômago). Embora exista uma variante que preserva o piloro (e, consequentemente, o estômago), a alternativa descreve corretamente os componentes da ressecção clássica exigida na questão.\n\nAlternativa B: ESTÁ INCORRETA. A retirada do corpo e da cauda do pâncreas, geralmente associada à remoção do baço, caracteriza a pancreatectomia distal. Este procedimento é indicado para lesões localizadas à esquerda dos vasos mesentéricos superiores, e não para tumores da cabeça pancreática.\n\nAlternativa C: ESTÁ INCORRETA. O fígado não é uma estrutura removida rotineiramente nesta cirurgia. O jejuno proximal pode ter um pequeno segmento ressecado para facilitar a reconstrução, mas o jejuno é fundamentalmente o órgão utilizado para realizar as novas conexões (anastomoses) com o pâncreas remanescente, o ducto biliar e o estômago.\n\nAlternativa D: ESTÁ INCORRETA. A cirurgia de Whipple preserva o corpo e a cauda do pâncreas. A remoção de todo o órgão (cabeça, corpo e cauda) é denominada pancreatectomia total, um procedimento que resulta em diabetes de difícil controle e insuficiência exócrina grave, sendo reservado para casos específicos em que não é possível garantir margens livres ou quando há multicentricidade tumoral.\n\nEm resumo, a alternativa A reflete fielmente as estruturas que compõem o bloco de ressecção da pancreatoduodenectomia clássica, visando o controle oncológico de doenças da transição pancreatobiliar.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:16.249Z"
+  },
+  {
+    "id": "AJUDA_298f9fe9-d8ef-4c6d-a29a-2961320cb130",
+    "originalId": "298f9fe9-d8ef-4c6d-a29a-2961320cb130",
+    "statement": "Sobre o esôfago de Barrett, é CORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ocorre devido à infecção por Helicobacter pylori no esôfago.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É uma condição benigna sem risco de malignidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É caracterizado pela presença de epitélio colunar especializado no esôfago.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É mais comum em mulheres jovens.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O esôfago de Barrett é uma complicação grave da Doença do Refluxo Gastroesofágico (DRGE) crônica, caracterizada por uma mudança na linhagem celular do órgão.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A infecção por Helicobacter pylori está associada a patologias como gastrite, úlcera péptica e adenocarcinoma gástrico, mas não é a causa do esôfago de Barrett. O fator etiológico principal do Barrett é a exposição prolongada da mucosa esofágica ao conteúdo gastroduodenal ácido e biliar. Curiosamente, em alguns estudos, a presença de H. pylori no estômago (causando gastrite atrófica) é citada como um possível fator \"protetor\" contra o refluxo grave, por reduzir a acidez do suco gástrico.\n\nAlternativa b) Incorreta. Embora o Barrett em si não seja um câncer, ele é uma condição pré-maligna bem estabelecida. O epitélio metaplásico pode evoluir para displasia de baixo grau, displasia de alto grau e, finalmente, para o adenocarcinoma de esôfago. Por esse motivo, pacientes diagnosticados necessitam de acompanhamento endoscópico regular com biópsias.\n\nAlternativa c) Correta. Esta alternativa traz a definição histopatológica da condição. O esôfago de Barrett ocorre quando o epitélio escamoso estratificado normal do esôfago é substituído por epitélio colunar simples com células caliciformes, processo denominado metaplasia intestinal. Esse novo epitélio, chamado de colunar especializado, é mais resistente à agressão ácida, mas carrega o risco de transformação maligna.\n\nAlternativa d) Incorreta. Epidemiologicamente, o esôfago de Barrett é mais prevalente em homens (proporção de cerca de 2:1 a 3:1 em relação às mulheres), brancos, com idade superior a 50 anos e que apresentam fatores de risco como obesidade central e história de refluxo gastroesofágico de longa data (geralmente mais de 5 a 10 anos de sintomas).",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico",
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:16.249Z"
+  },
+  {
+    "id": "AJUDA_299b52ac-2a75-4114-8fe0-39446663f15b",
+    "originalId": "299b52ac-2a75-4114-8fe0-39446663f15b",
+    "statement": "Paciente do sexo feminino, 28 anos, previamente saudável, apresenta história de febre alta, cefaleia intensa, náuseas e rigidez de nuca. Ao exame físico, revela dificuldade em flexionar o pescoço devido à dor e à resistência muscular, e ao flexionar a cabeça do paciente, os membros inferiores se flexionam involuntariamente. Ao tentar estender a perna do paciente com o joelho flexionado a 90 graus, há dor e resistência à extensão. A punção lombar mostra líquido cefalorraquidiano turvo com pleocitose linfocitária e aumento de proteínas. Qual é a causa mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Meningite bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Meningite viral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Meningite tuberculosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Meningite fúngica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Meningite por parasitas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise Clínica:\n\nA paciente apresenta uma síndrome meníngea clássica, evidenciada pela tríade de febre alta, cefaleia e rigidez de nuca. O exame físico descreve dois sinais fundamentais de irritação meníngea:\n\n1. Sinal de Brudzinski: Observado quando a flexão passiva do pescoço provoca a flexão involuntária dos membros inferiores.\n2. Sinal de Kernig: Caracterizado pela dor e resistência à extensão da perna quando o joelho e a coxa estão flexionados a 90 graus.\n\nAnálise do Líquido Cefalorraquidiano (LCR):\n\nO achado laboratorial determinante para a questão é a pleocitose linfocitária (predomínio de linfócitos no LCR).\n\nAlternativa (a) Incorreta: Na meningite bacteriana, o LCR é tipicamente turvo ou purulento, porém o diferencial citológico revela um predomínio de polimorfonucleares (neutrófilos) e não de linfócitos. Além disso, há geralmente uma queda acentuada nos níveis de glicose (hipoglicorraquia), o que não foi mencionado.\n\nAlternativa (b) Correta: A meningite viral é a causa mais frequente de meningite com pleocitose linfocitária em pacientes adultos jovens e previamente saudáveis. Embora o aspecto turvo seja mais comum em processos bacterianos, a questão utiliza a citologia (linfócitos) como o dado de maior peso para o diagnóstico etiológico. Em quadros agudos com predomínio de linfócitos, a etiologia viral é a principal hipótese.\n\nAlternativa (c) Incorreta: A meningite tuberculosa também apresenta pleocitose linfocitária e aumento de proteínas, mas sua evolução é caracteristicamente subaguda ou crônica, levando semanas para se desenvolver, diferindo do início súbito com febre alta descrito no caso.\n\nAlternativa (d) Incorreta: Meningites fúngicas (como por Cryptococcus) possuem curso clínico subagudo e são muito mais comuns em pacientes imunodeprimidos. Em uma paciente jovem e previamente saudável com quadro agudo, essa não é a causa mais provável.\n\nAlternativa (e) Incorreta: Meningites parasitárias são raras e, quando ocorrem (como na meningite eosinofílica), apresentam predomínio de eosinófilos no LCR, e não de linfócitos, além de estarem associadas a exposições epidemiológicas específicas.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:16.249Z"
+  },
+  {
+    "id": "AJUDA_29ae1a52-de51-40cd-91fb-16025a83a2de",
+    "originalId": "29ae1a52-de51-40cd-91fb-16025a83a2de",
+    "statement": "Qual droga está incorporada nos consensos de indução de remissão no tratamento da doença de Crohn?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anti-inflamatórios não hormonais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tiopurinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Corticosteroides.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Anti-folatos (Metotrexato).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A conduta no tratamento da Doença de Crohn é dividida em duas fases principais: a indução da remissão (tratar a crise aguda para tirar o paciente da atividade inflamatória) e a manutenção da remissão (evitar novas crises). A questão foca especificamente na indução.\n\nAlternativa (a) Incorreta. Os anti-inflamatórios não hormonais (AINEs) são, em geral, evitados em pacientes com Doença de Crohn. Eles podem desencadear crises ou agravar a inflamação intestinal através da inibição das prostaglandinas, que possuem papel protetor na mucosa do trato gastrointestinal.\n\nAlternativa (b) Incorreta. As tiopurinas (como a azatioprina e a 6-mercaptopurina) são medicamentos imunomoduladores. O grande limitador dessas drogas para a indução é o seu longo tempo de latência; elas demoram de 3 a 6 meses para atingir o efeito terapêutico pleno. Portanto, são excelentes para a manutenção da remissão, mas não para a indução rápida.\n\nAlternativa (c) Correta. Os corticosteroides (como prednisona, hidrocortisona ou budesonida) são os pilares clássicos para a indução da remissão na Doença de Crohn moderada a grave. Eles possuem ação anti-inflamatória potente e rápida, sendo eficazes para controlar os sintomas agudos. Vale ressaltar que os corticoides não devem ser utilizados para manutenção, devido aos seus graves efeitos colaterais a longo prazo e à falta de eficácia em manter a remissão sustentada.\n\nAlternativa (d) Incorreta. O metotrexato (antifolato) é uma alternativa para pacientes que não respondem ou não toleram as tiopurinas. Embora possa ser utilizado no cenário de indução em protocolos específicos (geralmente via intramuscular ou subcutânea), sua principal recomendação nos consensos é voltada para a manutenção da remissão em casos selecionados. Comparativamente, os corticosteroides são a resposta padrão e primária para a indução nos consensos mundiais.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:16.249Z"
+  },
+  {
+    "id": "AJUDA_29aff56d-a0cf-4307-9091-48c86a43dde5",
+    "originalId": "29aff56d-a0cf-4307-9091-48c86a43dde5",
+    "statement": "Um pesquisador deseja investigar a associação entre o uso prolongado de fones de ouvido e a perda auditiva precoce. Ele seleciona um grupo de 500 jovens com diagnóstico de perda auditiva e 500 jovens sem a patologia. Em seguida, aplica um questionário para investigar a exposição prévia aos fones de ouvido nos últimos 5 anos. Este desenho de estudo é classificado como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estudo de Coorte, pois parte da exposição para o desfecho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estudo Transversal, pois analisa a prevalência no momento atual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estudo de Caso-Controle, pois parte do desfecho (doentes) para investigar a exposição passada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ensaio Clínico Randomizado, por haver um grupo controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Estudo Ecológico, pois analisa o comportamento de grupos populacionais e não indivíduos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Enunciado:\nO ponto fundamental para classificar este estudo é observar o ponto de partida do pesquisador. Ele selecionou os participantes com base na presença ou ausência da doença (perda auditiva). Ao dividir os indivíduos em um grupo com a patologia (casos) e um grupo sem a patologia (controles) e, então, investigar retrospectivamente a exposição (uso de fones nos últimos cinco anos), o desenho caracteriza-se classicamente como caso-controle.\n\nExplicação das Alternativas:\n\nAlternativa (a) Incorreta: No estudo de coorte, o pesquisador parte da causa em direção ao efeito. Ele selecionaria jovens que usam fones (expostos) e jovens que não usam fones (não expostos), acompanhando-os ao longo do tempo para observar quem desenvolveria a perda auditiva no futuro. É um estudo prospectivo, ao contrário do que descreve o enunciado.\n\nAlternativa (b) Incorreta: O estudo transversal (ou seccional) realiza a medição da exposição e do desfecho simultaneamente, em um único momento, como uma fotografia da situação atual. Ele é útil para determinar a prevalência, mas o enunciado descreve uma busca ativa por informações do passado (últimos cinco anos), o que foge à característica transversal.\n\nAlternativa (c) Correta: O estudo de caso-controle inicia com o desfecho já estabelecido. O pesquisador identifica os doentes (500 jovens com perda auditiva) e os não doentes (500 jovens saudáveis) e olha para trás no tempo para verificar a frequência de exposição ao fator de risco em ambos os grupos. É o desenho mais eficiente e barato para investigar associações em condições já estabelecidas.\n\nAlternativa (d) Incorreta: O ensaio clínico randomizado é um estudo experimental e intervencionista. Nele, o pesquisador não apenas observa, mas intervém, sorteando quem será exposto a determinado fator ou tratamento. No cenário descrito, o pesquisador apenas aplicou questionários sobre um comportamento já existente dos jovens.\n\nAlternativa (e) Incorreta: O estudo ecológico analisa dados de grupos populacionais e agregados (como cidades, estados ou países), e não dados individuais. Como o pesquisador selecionou 1.000 indivíduos específicos e aplicou questionários individuais, trata-se de um estudo observacional individualizado, e não ecológico.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:20:16.249Z"
+  }
+]

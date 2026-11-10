@@ -1,0 +1,493 @@
+[
+  {
+    "id": "AJUDA_51a39b1e-d022-4fa0-9102-9cf7b7efa1f2",
+    "originalId": "51a39b1e-d022-4fa0-9102-9cf7b7efa1f2",
+    "statement": "Desde 15 de agosto de 2025, o Ministério da Saúde passou a oferecer, pelo SUS, o teste de biologia molecular (DNA-HPV) como método de rastreamento do câncer do colo do útero. É uma tecnologia que permite detecção mais precoce e pode trazer intervalos de rastreamento maiores, podendo chegar a até cinco anos após resultado negativo. A implementação será gradual e está prevista para ser concluída em todo o país até o final de 2026. \n\nLevando em consideração que nem todas as unidades básicas de saúde possuem ainda esse teste e você deverá fazer a coleta da colpocitologia oncótica (exame de Papanicolau), qual a rotina a ser seguida?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fazer o rastreamento anual com citologia oncótica para as pacientes entre 25 e 64 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar o rastreamento aos 25 anos, realizando coleta de citologia oncótica bianual, até os 65 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar aos 25 anos; citologia oncótica anual até 2 resultados negativos consecutivos e, então, a cada 3 anos até os 64 anos; interromper após 64 anos, se últimos exames estiverem adequados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar o rastreamento anual em qualquer faixa etária, desconsiderando as pacientes sem vida sexual ativa e/ou ainda não tiveram a sexarca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda as diretrizes brasileiras de rastreamento do câncer do colo do útero estabelecidas pelo Ministério da Saúde e pelo Instituto Nacional de Câncer (INCA). Mesmo com a transição gradual para o teste de biologia molecular (DNA-HPV), a rotina de coleta da colpocitologia oncótica (Papanicolau) segue critérios específicos baseados na história natural da doença e na eficácia do diagnóstico citológico.\n\nAlternativa (a) está incorreta. O rastreamento não deve ser realizado anualmente de forma permanente. A recomendação é que, após a obtenção de resultados negativos em dois exames anuais consecutivos, o intervalo entre as coletas seja ampliado para garantir a eficiência do programa de rastreio e evitar intervenções desnecessárias.\n\nAlternativa (b) está incorreta. O intervalo de dois anos (bienal) não faz parte do protocolo oficial brasileiro para a citologia. As diretrizes nacionais preconizam a mudança do intervalo anual diretamente para o intervalo trienal após os dois primeiros exames normais.\n\nAlternativa (c) está correta. Esta alternativa descreve precisamente a diretriz do Ministério da Saúde: o início do rastreamento é aos 25 anos para mulheres que já iniciaram a vida sexual. Os dois primeiros exames devem ser anuais e, se ambos forem negativos, os próximos passam a ser realizados a cada três anos. O rastreio é interrompido aos 64 anos em mulheres que apresentarem pelo menos dois exames negativos consecutivos nos últimos cinco anos. Para mulheres com mais de 64 anos que nunca realizaram o exame, devem-se realizar dois exames com intervalo de um a três anos antes de cessar o rastreamento.\n\nAlternativa (d) está incorreta. O rastreio não deve ser iniciado em qualquer faixa etária, respeitando-se o limite de 25 anos, pois o câncer cervical é raro antes dessa idade e o tratamento de lesões que regrediriam espontaneamente em jovens pode causar prejuízos, como a incompetência istmocervical. Além disso, a sexarca (início da vida sexual) é um pré-requisito obrigatório, visto que a infecção pelo HPV, agente causal do câncer do colo, é uma infecção sexualmente transmissível.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:28.858Z"
+  },
+  {
+    "id": "AJUDA_51abc0b3-d171-4ba7-ae33-5760b32dfa6a",
+    "originalId": "51abc0b3-d171-4ba7-ae33-5760b32dfa6a",
+    "statement": "Na reanimação cardiopulmonar da criança e do adolescente, são características das compressões torácicas de alta qualidade, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter frequência de 100-120 compressões por minuto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Comprimir com profundidade de 1/3 do diâmetro anteroposterior da caixa torácica: 4cm nos lactentes, 5cm nas crianças e, após a puberdade, 5cm e no máximo 6cm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Permitir o retorno total do tórax a cada compressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Minimizar interrupções das compressões torácicas. Quando necessário, não interromper por mais do que 20 segundos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda as diretrizes de Suporte Básico e Avançado de Vida Pediátrico (PALS/AHA) sobre as características de uma compressão torácica de alta qualidade. O objetivo é identificar a alternativa que apresenta uma informação incorreta (EXCETO).\n\nAlternativa (a): Correta. A frequência recomendada para as compressões torácicas, tanto em lactentes quanto em crianças e adultos, é de 100 a 120 compressões por minuto. Frequências abaixo de 100 são insuficientes para manter o débito cardíaco, e acima de 120 prejudicam o enchimento ventricular e a perfusão coronariana.\n\nAlternativa (b): Correta. A profundidade da compressão deve ser de, pelo menos, um terço do diâmetro anteroposterior do tórax. Traduzindo em medidas absolutas: cerca de 4 cm em lactentes (menos de 1 ano) e 5 cm em crianças (de 1 ano até a puberdade). Após a puberdade, seguem-se as diretrizes de adultos, com profundidade de 5 cm a, no máximo, 6 cm.\n\nAlternativa (c): Correta. É fundamental permitir o retorno total (recoil) do tórax após cada compressão, sem retirar as mãos da posição de massagem. Isso garante que o coração se encha adequadamente de sangue (diástole) antes da próxima compressão, otimizando a pressão de perfusão coronariana.\n\nAlternativa (d): Incorreta (Gabarito). Embora o objetivo seja realmente minimizar as interrupções, o tempo máximo permitido para pausas (como na verificação de ritmo ou troca de socorristas) é de 10 segundos, e não 20 segundos. Pausas prolongadas reduzem drasticamente a pressão de perfusão arterial e diminuem as chances de retorno à circulação espontânea. Por ser a afirmação falsa, esta é a resposta da questão.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:28.858Z"
+  },
+  {
+    "id": "AJUDA_51af9821-4932-4c31-814a-2ccb019371e0",
+    "originalId": "51af9821-4932-4c31-814a-2ccb019371e0",
+    "statement": "Em relação às características diagnósticas da candidíase, avalie as afirmativas abaixo:\nI- Teste das aminas positivo.\nII- O pH da vagina < 4,5.\nIII- Conteúdo vaginal com odor fétido.\nIV- Presença de irritação vulvar.\n\nSão corretas apenas",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "II e IV.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender o diagnóstico da candidíase vulvovaginal, é fundamental diferenciar suas características clínicas e laboratoriais de outras causas comuns de corrimento, como a vaginose bacteriana e a tricomoníase.\n\nAfirmativa I - Incorreta: O teste das aminas (*Whiff test*) é realizado pingando uma gota de hidróxido de potássio (KOH) a 10% sobre a secreção vaginal. O teste é considerado positivo quando há liberação de um odor fétido (semelhante a peixe podre), o que indica a presença de aminas voláteis. Esse achado é um dos critérios de Amsel para o diagnóstico de vaginose bacteriana. Na candidíase, o teste das aminas é tipicamente negativo.\n\nAfirmativa II - Correta: A manutenção da acidez vaginal é uma característica importante da candidíase. Enquanto a vaginose bacteriana e a tricomoníase elevam o pH vaginal para valores acima de 4,5, na candidíase o pH permanece dentro da faixa de normalidade, ou seja, menor que 4,5.\n\nAfirmativa III - Incorreta: O conteúdo vaginal na candidíase é classicamente descrito como branco, grumoso e com aspecto de leite coalhado (ou queijo *cottage*). Uma de suas características principais é ser inodoro. O odor fétido é um sintoma marcante da vaginose bacteriana e, por vezes, da tricomoníase, mas não da infecção por *Candida*.\n\nAfirmativa IV - Correta: A candidíase é uma vulvovaginite inflamatória. Por isso, a irritação vulvar é um dos sintomas mais prevalentes, manifestando-se através de prurido intenso (coceira), eritema (vermelhidão), edema (inchaço) e, por vezes, escoriações e ardor ao urinar.\n\nAnálise das Alternativas:\nComo apenas as afirmativas II e IV estão corretas, a alternativa que atende ao enunciado é a letra (d).",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:28.858Z"
+  },
+  {
+    "id": "AJUDA_51b6ecf4-5065-45d3-82bc-ca1fdca6d218",
+    "originalId": "51b6ecf4-5065-45d3-82bc-ca1fdca6d218",
+    "statement": "Criança do sexo masculino, de 8 anos e 3 meses de idade, foi trazida à Unidade de Saúde da Família pela mãe, para consulta de puericultura. Mãe não relatou queixas ativas. Ao ser questionada, durante a anamnese, mãe respondeu que percebeu odor forte nas axilas do filho que se iniciou há cerca de 2 meses, sendo necessário iniciar o uso de desodorante. Não surgiram queixas cardiorrespiratórias, genitourinárias ou gastrintestinais, durante o interrogatório dos diversos sistemas. Criança apresentava desenvolvimento neuropsicomotor adequado para a idade, alimentação, razoavelmente, dentro das orientações do Guia Alimentar para a População Brasileira do Ministério da Saúde, fazia atividade física regularmente e não passava mais que duas horas ao dia em uso de telas. Estava com a carteira de vacinação atualizada. Não tinha história de doenças prévias graves e histórico de saúde familiar sem informações relevantes. Ao exame físico, o peso e a altura da criança encontravam-se sobre o percentil 50, sem mudanças de percentil recentemente. Ao exame da genitália havia pelos mais grossos, enegrecidos e encaracolados ao redor da base do pênis e em pequena quantidade (ainda contáveis), testículo de cerca de 2 cm³ (medido com orquidômetro), pênis de tamanho e forma semelhantes à última consulta de rotina, realizada 6 meses antes. Não havia pelos em outras partes do corpo que chamassem a atenção e não havia acne na face. Sem achados alterados no restante do exame físico completo. O diagnóstico mais provável para este caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adrenarca precoce.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Puberdade fisiológica típica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Puberdade precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipertricose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar os sinais clínicos apresentados pelo paciente e correlacioná-los com os marcos do desenvolvimento puberal.\n\nO paciente é um menino de 8 anos e 3 meses. Os achados principais são: presença de odor axilar e de pelos pubianos (estágio P2 de Tanner), mas com testículos de 2 cm cúbicos (estágio G1 de Tanner) e sem aceleração da velocidade de crescimento (mantido no percentil 50).\n\nAnálise das alternativas:\n\na) Adrenarca precoce: Esta é a alternativa correta. A adrenarca é o aumento da produção de andrógenos pela glândula adrenal, que resulta em odor axilar, acne e pubarca (surgimento de pelos pubianos). No sexo masculino, a adrenarca é considerada precoce quando ocorre antes dos 9 anos de idade. O ponto fundamental para este diagnóstico no caso clínico é a dissociação entre os pelos pubianos e o volume testicular. O volume de 2 cm cúbicos indica que o eixo hipotálamo-hipófise-gonadal ainda não foi ativado (os testículos são pré-púberes). Portanto, os sinais de androgenização vêm exclusivamente da adrenal.\n\nb) Puberdade fisiológica típica: Incorreta. A puberdade normal no menino tem início entre os 9 e 14 anos de idade. O primeiro sinal clínico da puberdade masculina fisiológica é o aumento do volume testicular para 4 cm cúbicos ou mais. O paciente tem 8 anos e 3 meses (idade inferior à esperada) e seus testículos ainda medem 2 cm cúbicos.\n\nc) Puberdade precoce: Incorreta. A puberdade precoce no menino é definida pelo surgimento de caracteres sexuais secundários antes dos 9 anos. No entanto, para ser classificada como puberdade precoce central (verdadeira), obrigatoriamente deve haver o aumento do volume testicular (igual ou maior a 4 cm cúbicos), refletindo a ativação do eixo hormonal central, o que não ocorre neste paciente. Se fosse uma puberdade precoce periférica, haveria outros sinais, como aumento peniano importante ou aceleração do crescimento estatural, que também não foram relatados.\n\nd) Hipertricose: Incorreta. A hipertricose refere-se ao crescimento excessivo de pelos em qualquer parte do corpo, independentemente de estímulo androgênico, e não segue o padrão de distribuição sexual. O caso descreve claramente a pubarca (pelos na base do pênis) associada ao odor axilar, o que caracteriza uma maturação hormonal androgênica, e não apenas um excesso de pelos isolado.\n\nEm resumo, a presença de pelos pubianos e odor axilar antes dos 9 anos em meninos, mantendo testículos com volume pré-puberal (abaixo de 4 cm cúbicos), define o quadro de adrenarca precoce.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:28.858Z"
+  },
+  {
+    "id": "AJUDA_51b97d9b-1a19-4a2a-8321-c6007e216fd8",
+    "originalId": "51b97d9b-1a19-4a2a-8321-c6007e216fd8",
+    "statement": "O entrelaçamento fetal é mais comum quando os fetos se encontram na seguinte combinação de apresentação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Primeiro pélvico e segundo pélvico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Primeiro cefálico e segundo pélvico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Primeiro cefálico e segundo cefálico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Primeiro pélvico e segundo cefálico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Primeiro córmico e segundo córmico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O entrelaçamento fetal, também conhecido como colisão de mentos ou \"locked twins\", é uma complicação obstétrica rara, mas grave, que ocorre exclusivamente no parto vaginal de gestações gemelares.\n\nPara que o entrelaçamento ocorra, é necessário um cenário mecânico específico: o primeiro feto deve estar em apresentação pélvica, e o segundo, em apresentação cefálica. Durante o trabalho de parto, conforme o corpo do primeiro feto (pélvico) desce pelo canal de parto, seu queixo (mento) acaba se prendendo ou \"enganchando\" no queixo do segundo feto (cefálico), que está tentando entrar na bacia. Isso impede a progressão de ambos e torna o parto vaginal impossível, exigindo intervenção cirúrgica imediata.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Quando ambos os fetos estão em apresentação pélvica, o risco de entrelaçamento de mentos não existe, pois as cabeças são as últimas partes a descer e não há o encaixe simultâneo que gera o bloqueio.\n\nAlternativa b) Incorreta. Se o primeiro feto é cefálico, sua cabeça (a maior parte) já terá passado pelo canal de parto antes que o segundo feto (pélvico) comece a descer de forma a oferecer risco de obstrução cervical.\n\nAlternativa c) Incorreta. Dois fetos em apresentação cefálica costumam ter o desfecho de parto vaginal mais favorável, sem risco de colisão de queixos, pois as cabeças entram na bacia de forma sequencial.\n\nAlternativa d) Correta. Esta é a configuração clássica para o entrelaçamento. A cabeça do segundo gemelar (que está em apresentação cefálica) ocupa o espaço da bacia antes que a cabeça do primeiro gemelar (que está saindo em apresentação pélvica) consiga passar. Os queixos se travam acima do estreito superior da bacia.\n\nAlternativa e) Incorreta. Fetos em situação transversa (córmica) não conseguem progredir para o parto vaginal espontâneo. A indicação de cesariana é absoluta antes mesmo de se considerar qualquer tipo de entrelaçamento mecânico no canal de parto.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Gestação Múltipla"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:28.858Z"
+  },
+  {
+    "id": "AJUDA_51bc11d9-43e2-45d2-8ed9-57bcf3d5eedb",
+    "originalId": "51bc11d9-43e2-45d2-8ed9-57bcf3d5eedb",
+    "statement": "Com base nas recomendações do Programa Nacional de Imunizações (PNI) do Ministério da Saúde para gestantes, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vacina contra hepatite B é contraindicada durante a gestação, devendo ser adiada para o puerpério.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vacina influenza é indicada apenas para gestantes com comorbidades ou em surtos sazonais regionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A vacina contra COVID-19 está atualmente restrita ao terceiro trimestre, por risco teórico de malformações no período embrionário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vacina dTpa (tríplice acelular do adulto) deve ser aplicada em todas as gestações a partir de 20 semanas, independentemente do intervalo vacinal prévio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A vacina tríplice viral (sarampo, caxumba e rubéola) deve ser administrada preferencialmente no segundo trimestre, para reduzir o risco de síndrome da rubéola congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. A vacina contra a hepatite B não é contraindicada na gestação. Pelo contrário, o Programa Nacional de Imunizações (PNI) recomenda que toda gestante sem comprovação vacinal ou com esquema incompleto inicie ou complete as três doses. Por ser uma vacina de antígeno de superfície (inativada), não oferece riscos ao feto e é fundamental para prevenir a transmissão vertical.\n\nAlternativa b: Incorreta. A vacina contra a influenza é recomendada para todas as gestantes em qualquer idade gestacional. Elas fazem parte do grupo prioritário nas campanhas anuais de vacinação do Ministério da Saúde, pois apresentam maior risco de desenvolver complicações respiratórias graves e hospitalizações decorrentes da infecção pelo vírus da gripe.\n\nAlternativa c: Incorreta. A vacina contra a COVID-19 é recomendada para gestantes e puérperas em qualquer fase da gestação, não havendo restrição ao terceiro trimestre. Estudos robustos demonstraram a segurança das vacinas autorizadas (como as de RNA mensageiro ou inativadas), sem evidências de malformações ou riscos ao desenvolvimento embrionário.\n\nAlternativa d: Correta. Esta é a recomendação oficial do PNI. A vacina dTpa (difteria, tétano e coqueluche acelular) deve ser administrada a partir da 20ª semana de gestação em todas as gravidezes, independentemente de quando a mulher recebeu a dose anterior. O objetivo é induzir a produção de altos títulos de anticorpos contra a coqueluche na mãe, permitindo a transferência transplacentária para o feto, garantindo proteção passiva ao recém-nascido até que ele possa completar o esquema vacinal básico.\n\nAlternativa e: Incorreta. A vacina tríplice viral (sarampo, caxumba e rubéola) é composta por vírus vivos atenuados e, por isso, é formalmente contraindicada durante a gestação devido ao risco teórico de infecção fetal. Caso a mulher não seja imune, a vacinação deve ser realizada no puerpério ou planejada para o período pré-concepcional, com a recomendação de evitar a gravidez por 30 dias após a dose.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Imunizações",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:28.858Z"
+  },
+  {
+    "id": "AJUDA_51c9ab1d-f6a3-4578-8919-a97a57f6cc5f",
+    "originalId": "51c9ab1d-f6a3-4578-8919-a97a57f6cc5f",
+    "statement": "Em uma pesquisa de lúpus eritematoso sistêmico, com clínica sugestiva, o exame de FAN (fator antinúcleo) se torna importante. Quais dos padrões de FAN abaixo mais comumente se correlacionam com essa doença?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Padrão nuclear pontilhado fino denso (AC-2);",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Padrão centromérico (AC-3);",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Padrão nuclear homogêneo (AC-1);",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Padrão nucleolar pontilhado (AC-10).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O exame de FAN (Fator Antinúcleo), realizado por imunofluorescência indireta em células HEp-2, é o teste de triagem inicial para o Lúpus Eritematoso Sistêmico (LES). Embora apresente alta sensibilidade, sua especificidade depende do padrão de fluorescência observado, que reflete o tipo de autoanticorpo presente.\n\nAlternativa (c) - CORRETA: O padrão nuclear homogêneo (AC-1) é caracterizado pela coloração difusa e uniforme do núcleo das células em intérfase e da placa cromossômica nas células em divisão (metáfase). Este padrão está associado a anticorpos contra o DNA nativo (anti-dsDNA), histonas e nucleossomos. O anti-dsDNA é um marcador altamente específico para o LES e está relacionado à atividade da doença, especialmente à nefrite lúpica. Portanto, o padrão homogêneo é o que mais classicamente se correlaciona com o LES.\n\nAlternativa (a) - INCORRETA: O padrão nuclear pontilhado fino denso (AC-2) está associado ao anticorpo anti-DFS70. Na prática clínica, a presença isolada deste padrão é frequentemente utilizada para excluir doenças autoimunes sistêmicas, pois ele é comumente encontrado em indivíduos saudáveis ou em condições não autoimunes. Ele não é um marcador de Lúpus.\n\nAlternativa (b) - INCORRETA: O padrão centromérico (AC-3) apresenta pontos finos e múltiplos (geralmente de 46 a 92 pontos) distribuídos pelo núcleo e alinhados na placa cromossômica. Este padrão é altamente específico para a Esclerose Sistêmica Limitada (antigamente chamada de Síndrome CREST) e não é característico do Lúpus Eritematoso Sistêmico.\n\nAlternativa (d) - INCORRETA: O padrão nucleolar pontilhado (AC-10), assim como outros padrões nucleolares, indica a presença de anticorpos direcionados a componentes do nucléolo (como a RNA polimerase I, PM-Scl ou fibrilarina). Esses padrões são fortemente associados à Esclerose Sistêmica (Esclerodermia) e a miosites, mas não são os padrões típicos esperados no Lúpus.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:28.858Z"
+  },
+  {
+    "id": "AJUDA_51d067a4-4f73-4665-889b-9aac534289c5",
+    "originalId": "51d067a4-4f73-4665-889b-9aac534289c5",
+    "statement": "Lucas, 6 anos, é levado à pediatria com fadiga progressiva, palidez intensa e febre baixa intermitente nas últimas 3 semanas. A mãe relata manchas roxas pelo corpo e sangramentos nas gengivas após escovação dental. Ele refere dor óssea nos joelhos e cotovelos, sem traumatismos recentes. Ao exame físico: Estado geral: frágil, apático. Sinais vitais: FC 110 bpm, FR 22 irpm, PA 90/60 mmHg, temperatura 37,8°C. Pele: petéquias difusas, equimoses. Linfonodos: palpáveis, indolores, cervicais e inguinais. Fígado e baço: aumentados (hepatomegalia e esplenomegalia discretas). Exames laboratoriais: Hemograma: anemia (Hb 7,8 g/dL), leucocitose (WBC 45.000/mm³) com predomínio de blastos, plaquetopenia (35.000/mm³), Exame de medula ossea: >25% de blastos.\n\nConsiderando o caso clínico acima, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de anemia, plaquetopenia e leucocitose com blastos indica leucemia aguda, e o tratamento inicial deve incluir quimioterapia imediatamente em hospital especializado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico de leucemia pode ser feito por exames de imagem (tomografia ou ressonância) sem necessidade de medula óssea, pois é um exame muito invasivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pacientes com leucemia linfoblástica aguda devem receber apenas transfusões, sem quimioterapia, para normalizar os valores hematológicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A leucemia infantil geralmente não apresenta sintomas de sangramento ou dor óssea, sendo assintomática na maioria dos casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A leucemia aguda em crianças é uma doença benigna e autolimitada, sem necessidade de intervenção médica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta o quadro clássico de Leucemia Aguda, o câncer mais comum na infância. Os sinais de insuficiência medular como anemia (palidez, fadiga) e plaquetopenia (petéquias, sangramento gengival), associados à proliferação de células malignas (blastos no sangue, linfonodomegalia, hepatosplenomegalia e dor óssea), são característicos. O achado de mais de 25 por cento de blastos na medula óssea confirma o diagnóstico de leucemia.\n\nAlternativa (a) CORRETA: O quadro de bicitopenia (anemia e plaquetopenia) associado à leucocitose com presença de blastos define a suspeita de leucemia aguda. O tratamento é uma emergência médica e deve ser conduzido com protocolos de quimioterapia em centros especializados para buscar a cura e evitar complicações graves, como a síndrome de lise tumoral.\n\nAlternativa (b) INCORRETA: Embora exames de imagem possam auxiliar na avaliação de massas mediastinais ou outras complicações, o padrão-ouro e exame obrigatório para o diagnóstico de leucemia é a análise da medula óssea (mielograma), que permite a análise morfológica, imunofenotipagem e citogenética das células neoplásicas.\n\nAlternativa (c) INCORRETA: As transfusões são apenas medidas de suporte sintomático para corrigir a anemia e o risco de sangramento grave. A normalização definitiva dos valores hematológicos só ocorre com a eliminação das células malignas através da quimioterapia citotóxica.\n\nAlternativa (d) INCORRETA: A dor óssea é um dos sintomas mais comuns na leucemia pediátrica, ocorrendo pela expansão da cavidade medular pela proliferação excessiva de blastos. Sangramentos e hematomas também são manifestações frequentes devido à falência na produção de plaquetas.\n\nAlternativa (e) INCORRETA: A leucemia aguda é uma neoplasia maligna de rápida progressão. Sem intervenção médica imediata e intensiva, a condição é invariavelmente fatal, não possuindo caráter autolimitado ou benigno.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:28.858Z"
+  },
+  {
+    "id": "AJUDA_51d37c7f-3738-4ec2-ae3f-769a57627aa6",
+    "originalId": "51d37c7f-3738-4ec2-ae3f-769a57627aa6",
+    "statement": "Jovem de 15 anos, gestante de 10 semanas que apresenta imagem de nódulo sólido de 8,0 cm em anexo uterino à esquerda na ultrassonografia obstétrica inicial. Assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os tumores ovarianos são as neoplasias malignas do trato genital mais comuns nas adolescentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tumores epiteliais ovarianos borderline são neoplasias não invasivas que ocasionalmente têm disseminação intraperitoneal e têm características e comportamentos intermediários entre tumores ovarianos benignos e malignos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A ressonância magnética com contraste de gadolíneo é uma excelente ferramenta diagnóstica para avaliação das lesões anexiais na gravidez, pois permite o diagnóstico diferencial com endometrioma, edema ovariano e mioma subseroso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Os níveis séricos do CA 125 podem estar elevados durante o início da gestação e imediatamente após o parto, mas valores acima de 150 U/mL após a 15ª. semana de gestação devem ser interpretados como suspeitos de malignidade da lenão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a avaliação de massas anexiais na gestação e em adolescentes, solicitando a identificação da alternativa incorreta.\n\nAlternativa a: Está correta. Em crianças e adolescentes, os tumores de ovário (com predomínio dos tumores de células germinativas) constituem as neoplasias malignas do trato genital feminino mais frequentes, ao contrário da idade adulta, na qual predominam os carcinomas de colo de útero e de endométrio.\n\nAlternativa b: Está correta. Os tumores ovarianos borderline (ou de baixo potencial de malignidade) apresentam proliferação celular e atipias sem invasão estromal evidente. Possuem evolução clínica intermediária entre os tumores francamente benignos e os carcinomas malignos, podendo apresentar implantes peritoneais, em geral não invasivos.\n\nAlternativa c: Está incorreta (gabarito da questão). Embora a ressonância magnética seja uma excelente ferramenta para caracterização de massas pélvicas na gestação, o uso de contraste com gadolíneo é contraindicado durante a gravidez. O gadolíneo atravessa livremente a placenta, passa para a circulação fetal e é excretado para a cavidade amniótica, havendo risco de toxicidade fetal e neonatal. Na gestante, a ressonância magnética deve ser realizada sem contraste.\n\nAlternativa d: Está correta. Os níveis de CA 125 sofrem elevação fisiológica no primeiro trimestre da gestação (pela decidualização) e no pós-parto imediato. A partir da 15ª semana, seus valores tendem a declinar e se estabilizar. Valores persistentemente elevados acima de 150 U/mL no segundo e terceiro trimestres tornam a lesão suspeita para malignidade, devendo ser investigada com atenção.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:28.858Z"
+  },
+  {
+    "id": "AJUDA_51d9f19f-b923-4d21-a279-c50d375339b6",
+    "originalId": "51d9f19f-b923-4d21-a279-c50d375339b6",
+    "statement": "Mulher de 59 anos consulta-se com clínico geral por apresentar nódulo tireoidiano incidental em ultrassom de rotina. Está assintomática. No exame cervical, a tireoide está tópica, fibroelástica, de volume habitual. Nota-se, à palpação de lobo esquerdo, a presença de nódulo de consistência endurecida, medindo cerca de 2,5 cm, móvel e indolor. Ultrassonografia de tireoide: presença de nódulo sólido, hipoecoico, com halo incompleto, mais alto do que largo, com vascularização central e microcalcificações de permeio medindo 2,5 x 1,4 cm em 1/3 médio do lobo esquerdo.\n\nEm relação a esse caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de um carcinoma anaplásico, e a cirurgia deve ser indicada após estadiamento completo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A paciente apresenta doença de Basedow Graves, cuja abordagem terapêutica é conservadora de início com iodoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No caso relatado, faz-se necessária a realização de punção aspirativa com agulha fina (PAAF), devido ao volume e características do nódulo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pelas características apresentadas, está indicada a tireoidectomia total com esvaziamento linfonodal ipsilateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA paciente de 59 anos apresenta um nódulo tireoidiano de 2,5 cm com características ultrassonográficas de alta suspeição para malignidade. Os achados que acendem o alerta são: nódulo sólido, hipoecoico, mais alto do que largo (um dos sinais mais específicos para câncer de tireoide), presença de microcalcificações (sugestivas de carcinoma papilífero) e vascularização central. Segundo as principais diretrizes internacionais (como ATA e ACR TI-RADS), nódulos maiores que 1 cm com esses critérios de suspeição exigem investigação citológica.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA conduta padrão para um nódulo tireoidiano com características ultrassonográficas suspeitas e tamanho superior a 1 cm é a realização da Punção Aspirativa por Agulha Fina (PAAF). A PAAF permitirá a classificação citológica de acordo com o Sistema Bethesda, que orientará se a conduta será observação, repetição do exame ou cirurgia. No caso descrito, o nódulo tem 2,5 cm e múltiplos sinais de malignidade, tornando a punção o próximo passo indispensável.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): O carcinoma anaplásico é o tumor mais agressivo da tireoide. Ele costuma se apresentar como uma massa cervical de crescimento extremamente rápido (em semanas), geralmente fixa e causando sintomas compressivos graves, como rouquidão, dificuldade para engolir e respirar. O caso descreve um achado incidental e um nódulo móvel em paciente assintomática, o que é incompatível com a agressividade do tipo anaplásico.\n\nAlternativa (b): A Doença de Basedow-Graves é uma condição de hipertireoidismo autoimune que se manifesta clinicamente com sintomas de tireotoxicose (taquicardia, perda de peso, tremor), bócio difuso e, por vezes, oftalmopatia. A paciente em questão está assintomática e possui um nódulo focal suspeito, e não um bócio difuso tóxico. Além disso, a iodoterapia não é tratamento para nódulos isolados suspeitos de câncer.\n\nAlternativa (d): Indicar tireoidectomia total com esvaziamento linfonodal sem antes realizar uma PAAF é uma conduta precipitada. O tratamento cirúrgico e sua extensão (total vs. parcial) e a necessidade de esvaziamento cervical dependem da confirmação citológica da malignidade e do estadiamento clínico. A cirurgia é o tratamento definitivo, mas a investigação diagnóstica deve ser concluída antes da intervenção invasiva.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:42:28.858Z"
+  }
+]

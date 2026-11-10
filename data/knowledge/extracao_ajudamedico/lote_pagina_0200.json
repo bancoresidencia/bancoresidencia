@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_37bf91cc-8975-45b3-aab5-7aabbb6d439d",
+    "originalId": "37bf91cc-8975-45b3-aab5-7aabbb6d439d",
+    "statement": "Recém-nascido de mãe primigesta, nasceu de parto vaginal com 37sem de idade gestacional, peso de 2750g, Apgar 9/10. Mãe nega intercorrências na gestação. Com 48horas de vida, mãe observou icterícia no Rn e retornou a maternidade, sendo avaliado como ictérico Zona I de Kramer. Em aleitamento materno exclusivo, sem outras queixas. Qual a melhor conduta para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internar para melhor avaliação e fazer coleta seriada de bilirrubina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pesquisar sobre tipagem sanguínea dos pais e se não houver risco para incompatibilidade sanguínea entre mãe e filho, liberar Rn para seguimento ambulatorial, com retorno em 72h para reavaliação",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pedir US de abdômen para avaliar causas de colestase",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internar e iniciar fototerapia devido elevado risco de doença hemolítica grave",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pedir sorologias TORCHS para adequado diagnóstico diferencial",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o manejo da icterícia neonatal em um recém-nascido (RN) a termo (37 semanas), com 48 horas de vida, apresentando icterícia leve (Zona I de Kramer) e sem outros sinais de alerta.\n\nA icterícia que surge após as primeiras 24 horas de vida e se limita à Zona I de Kramer (cabeça e pescoço) geralmente está associada a níveis baixos de bilirrubina indireta (em torno de 4 a 6 mg/dL). Nesses casos, a conduta deve ser cautelosa, mas não necessariamente invasiva, focando na identificação de fatores de risco para hiperbilirrubinemia grave.\n\nAnálise das alternativas:\n\na) Incorreta. A internação para coleta seriada de bilirrubina é uma conduta excessiva para um RN com icterícia leve que surgiu após 24 h de vida, sem outros sintomas e com boa vitalidade. O manejo inicial pode ser ambulatorial se não houver fatores de risco maiores.\n\nb) Correta. Esta é a conduta mais adequada. A pesquisa da tipagem sanguínea materna e do RN (assim como o teste de Coombs direto) é fundamental para excluir a incompatibilidade ABO ou Rh, que são causas de doença hemolítica e podem levar a um aumento rápido da bilirrubina. Se o risco de hemólise for descartado e a icterícia for clinicamente leve (Zona I), o bebê pode ser acompanhado ambulatorialmente com reavaliação em curto prazo (72 h).\n\nc) Incorreta. A ultrassonografia de abdômen é utilizada para investigar colestase (aumento de bilirrubina direta), que geralmente se manifesta com fezes acólicas e urina escura, muitas vezes surgindo mais tardiamente (após a primeira semana de vida). O quadro descrito sugere hiperbilirrubinemia indireta.\n\nd) Incorreta. A indicação de fototerapia baseia-se em tabelas e nomogramas que consideram a idade gestacional, o peso e o nível de bilirrubina em relação às horas de vida. Um RN de 37 semanas com 48 horas de vida apresentando apenas Zona I de Kramer está muito abaixo do limiar de fototerapia, a menos que houvesse evidência de hemólise galopante.\n\ne) Incorreta. A investigação de TORCHS (toxoplasmose, rubéola, citomegalovírus, herpes e sífilis) é indicada em casos de icterícia precoce associada a outros sinais clínicos, como microcefalia, hepatoesplenomegalia, petéquias ou restrição de crescimento intrauterino, o que não é o caso deste paciente.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:03.412Z"
+  },
+  {
+    "id": "AJUDA_37ca095d-155a-482e-917f-6c5fe24c601b",
+    "originalId": "37ca095d-155a-482e-917f-6c5fe24c601b",
+    "statement": "Lactente de 8 meses apresenta lesões papulares eritematosas em tronco, axilas e regiões interdigitais, com escoriações, compatíveis com escabiose. A conduta terapêutica de primeira linha para esta faixa etária e a orientação epidemiológica correta são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ivermectina oral em dose única; tratar apenas contactantes sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Benzoato de benzila loção; isolar a criança por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Permetrina 5% loção em todo o corpo (exceto face); tratar todos os contactantes domiciliares simultaneamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Corticoide tópico de alta potência para alívio do prurido; tratar apenas a mãe.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A escabiose, ou sarna humana, é uma infestação parasitária causada pelo ácaro Sarcoptes scabiei. O diagnóstico é clínico, baseado no prurido intenso (que piora à noite) e na distribuição das lesões. Em lactentes, as lesões podem ser disseminadas, atingindo tronco, extremidades e, diferentemente dos adultos, podem acometer também a região palmo-plantar, cabeça e pescoço.\n\nAlternativa (a) Incorreta: A ivermectina oral não é a droga de primeira escolha para lactentes nesta faixa etária. Embora seu uso tenha sido expandido, as diretrizes tradicionais e a bula recomendam cautela ou contraindicam o uso em crianças com menos de 15 kg ou menores de 5 anos. Além disso, a orientação epidemiológica está errada: na escabiose, todos os contactantes domiciliares e sexuais devem ser tratados simultaneamente, mesmo que estejam assintomáticos, para evitar o ciclo de reinfestação.\n\nAlternativa (b) Incorreta: O benzoato de benzila é um agente escabicida, porém é muito irritante para a pele (causando dermatite de contato e sensação de queimação), sendo evitado em lactentes e crianças pequenas. Além disso, não há indicação de isolamento por 7 dias; a recomendação geral é que a criança possa retornar ao convívio social 24 horas após o término da primeira aplicação do tratamento.\n\nAlternativa (c) Correta: A permetrina 5% é considerada o tratamento de primeira linha (padrão-ouro) para a escabiose devido à sua alta eficácia (taxas de cura superiores a 90%) e excelente perfil de segurança, podendo ser utilizada em bebês a partir de 2 meses de idade. A aplicação deve ser feita do pescoço para baixo (em lactentes, às vezes estende-se ao couro cabeludo e face, evitando olhos e boca, conforme orientação específica, mas a alternativa traz a conduta geral clássica) e removida após 8 a 14 horas. A estratégia epidemiológica de tratar todos os moradores da casa ao mesmo tempo é o pilar para o controle da doença na comunidade.\n\nAlternativa (d) Incorreta: Corticoides tópicos podem ser usados como adjuvantes para reduzir o prurido e a inflamação, mas nunca como monoterapia, pois não possuem ação acaricida. O uso isolado de corticoide pode mascarar os sintomas e facilitar a proliferação do parasita. Tratar apenas a mãe é insuficiente, pois outros familiares podem estar colonizados e assintomáticos.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:03.412Z"
+  },
+  {
+    "id": "AJUDA_37d12f02-9239-4833-b40a-9f98b420ae6a",
+    "originalId": "37d12f02-9239-4833-b40a-9f98b420ae6a",
+    "statement": "Um trabalhador rural de 65 anos de idade com quadro demencial leve apresenta títulos séricos de VDRL de 1:16 e pesquisa de Anticorpo Antitreponêmico Fluorescente (FTA) positivo. O restante de sua avaliação é negativo, incluindo análise do LCR com proteína e glicose normais, menos de 6 leucócitos e VDRL no líquor negativo. Não há relato de tratamento prévio para sífilis ou alergia a antibióticos. O tratamento mais adequado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Penicilina G cristalina, 10 milhões de unidades, IV, durante 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Penicilina procaína, 600.000 unidades/dia, IM, durante 6 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Penicilina benzatina, 2,4 milhões de unidades, IM, uma vez por semana (3 doses).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ceftriaxona 2g/dia, IV dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Azitromicina 1g/dia, IV durante 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o raciocínio clínico necessário para diferenciar a Neurossífilis da Sífilis Latente Tardia em um paciente com sintomas neurológicos e sorologia positiva.\n\nO ponto principal é a interpretação do Líquido Cefalorraquidiano (LCR). Embora o paciente apresente um quadro demencial, os critérios laboratoriais para neurossífilis não foram preenchidos: o VDRL no líquor é negativo, a celularidade é normal (menos de 6 leucócitos) e as proteínas estão normais. Diante de um LCR sem alterações, os sintomas demenciais devem ser investigados para outras causas (como Alzheimer ou demência vascular), e a sífilis deve ser tratada conforme o seu estágio sorológico.\n\nComo não há tempo definido de infecção e não há evidência de comprometimento do sistema nervoso central pelo Treponema pallidum, o caso é classificado como Sífilis Latente Tardia ou de Duração Ignorada.\n\nAnálise das alternativas:\n\na) Incorreta. Este é o esquema para Neurossífilis. Embora o paciente tenha demência, o exame de líquor normal descarta o diagnóstico de neurossífilis. Além disso, a dose padrão seria de 18 a 24 milhões de UI/dia, divididas em doses a cada 4 horas.\n\nb) Incorreta. A penicilina procaína poderia ser usada em esquemas para sífilis latente ou como alternativa na neurossífilis (associada à probenecida), mas a dose de 600.000 UI por apenas 6 dias é subterapêutica e não consta em protocolos oficiais para nenhum estágio da doença.\n\nc) Correta. Seguindo as diretrizes do Ministério da Saúde e do CDC, para sífilis latente tardia, terciária (sem evidência de neurossífilis) ou de tempo de evolução desconhecido, o tratamento padrão é a Penicilina G Benzatina 2,4 milhões de UI, por via intramuscular, semanalmente, por 3 semanas (totalizando 7,2 milhões de UI).\n\nd) Incorreta. A ceftriaxona 2g por 10 a 14 dias pode ser uma alternativa para neurossífilis em casos selecionados, mas a dose única de 2g não é eficaz para o tratamento de sífilis latente tardia ou terciária.\n\ne) Incorreta. A azitromicina não é considerada droga de primeira ou segunda escolha devido aos altos índices de resistência do Treponema pallidum e à falta de evidências de superioridade ou equivalência à penicilina no tratamento da sífilis tardia.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:03.412Z"
+  },
+  {
+    "id": "AJUDA_37e34b1b-99bc-4b92-944c-0169f79a61b6",
+    "originalId": "37e34b1b-99bc-4b92-944c-0169f79a61b6",
+    "statement": "Durante a avaliação de uma paciente no puerpério imediato, observam-se sintomas abruptos de confusão mental, delírios, alucinações auditivas, agitação psicomotora e insônia grave iniciados dentro das primeiras 2 semanas após o parto. Qual é o principal transtorno psiquiátrico relacionado a esse quadro, conhecido como psicose puerperal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esquizofrenia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transtorno depressivo maior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno obsessivo-compulsivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno bipolar.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A psicose puerperal é uma das emergências psiquiátricas mais graves do período perinatal, caracterizada por início agudo, geralmente nas primeiras duas semanas após o parto, com labilidade do humor, delírios, alucinações, confusão mental (estado oniroide) e agitação. \n\nAnálise das alternativas:\n\na) Incorreta. A esquizofrenia é um transtorno psicótico crônico com curso insidioso e presença marcante de sintomas negativos e declínio cognitivo ao longo do tempo. O quadro agudo, polimórfico e confusional da psicose puerperal não representa uma manifestação típica de esquizofrenia.\n\nb) Incorreta. Embora a depressão pós-parto seja comum, a psicose puerperal clássica apresenta-se com sintomas maníacos ou mistos (agitação, insônia grave, labilidade afetiva extrema). Quadros depressivos unipolares com sintomas psicóticos geralmente envolvem delírios congruentes com o humor deprimido (como culpa ou ruína), diferindo da apresentação clínica descrita.\n\nc) Incorreta. O transtorno obsessivo-compulsivo no puerpério pode cursar com pensamentos intrusivos e assustadores em relação ao recém-nascido (ideação egodistônica), mas a paciente mantém o juízo crítico preservado e não apresenta delírios, alucinações ou perda do contato com a realidade.\n\nd) Correta. A literatura psiquiátrica atual considera a psicose puerperal como uma manifestação clínica do espectro do transtorno bipolar, geralmente correspondendo a um episódio de mania ou estado misto com características psicóticas desencadeado pelas alterações neuroendócrinas e privação de sono do pós-parto. Mulheres com histórico pessoal ou familiar de transtorno bipolar constituem o principal grupo de risco, com taxas de recorrência que chegam a 50% no período perinatal.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Transtornos do Humor",
+      "Transtornos Psicóticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:03.412Z"
+  },
+  {
+    "id": "AJUDA_37e3aa51-4077-4830-83f3-30e8fba3450d",
+    "originalId": "37e3aa51-4077-4830-83f3-30e8fba3450d",
+    "statement": "Recentemente, casos de personalidades públicas como o apresentador Fausto Silva (“Faustão”) geraram grande repercussão em torno da suposta “furada de fila” em transplantes no Brasil. Isso trouxe novamente ao debate como se organiza o acesso a órgãos e tecidos no Sistema Nacional de Transplantes (SNT). De acordo com a legislação brasileira e as diretrizes do Ministério da Saúde, qual das alternativas descreve CORRETAMENTE o funcionamento da fila de transplantes no país?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A prioridade é definida conforme critérios estaduais, podendo variar entre hospitais, e leva em conta disponibilidade de recursos locais além do tempo de espera do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A ordem de alocação pode ser flexibilizada em situações específicas, como em pessoas públicas ou em pacientes com possibilidade de custear o procedimento de forma privada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A lista é única, sob coordenação nacional do SNT, sendo a distribuição operacionalizada em nível estadual ou regional, obedecendo critérios de gravidade, compatibilidade e tempo de espera.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A lista funciona de modo cronológico, priorizando sempre quem se inscreveu primeiro de acordo compatibilidade imunológica, sem considerar parâmetros clínicos adicionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A gestão da fila é compartilhada entre estados e hospitais, com critérios próprios de cada serviço, havendo autonomia para ajustes conforme a capacidade instalada da rede.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c).\n\nExplicação detalhada:\n\nO Sistema Nacional de Transplantes (SNT), vinculado ao Ministério da Saúde, coordena a maior rede pública de transplantes do mundo, fundamentada na Lei 9.434/1997 e no Decreto 9.175/2017. O funcionamento da fila é baseado em diretrizes técnicas que visam à justiça, à equidade e à transparência.\n\nAlternativa (a) - Incorreta: Os critérios de prioridade são técnicos e nacionais, estabelecidos pelo Ministério da Saúde, e não variam segundo critérios estaduais ou de hospitais específicos. Embora a gestão operacional ocorra por meio das Centrais Estaduais de Transplantes, a norma que rege quem recebe o órgão é federal.\n\nAlternativa (b) - Incorreta: O sistema brasileiro é regido pelos princípios de equidade e universalidade do SUS. É ilegal e antiético qualquer tipo de privilégio baseado em status social, fama ou poder aquisitivo. Pacientes da rede pública e privada concorrem na mesma lista em igualdade de condições.\n\nAlternativa (c) - Correta: A lista é única, o que significa que todos os pacientes que necessitam de um transplante no Brasil estão inscritos no mesmo sistema informatizado, independentemente de estarem em hospitais públicos ou privados. A distribuição é feita de forma regionalizada para minimizar o tempo de isquemia fria do órgão, mas sempre respeitando critérios técnicos de compatibilidade (grupo sanguíneo, peso, altura, HLA), gravidade clínica (urgência) e, como critério de desempate, o tempo de espera.\n\nAlternativa (d) - Incorreta: O tempo de espera não é o único ou o principal critério. Parâmetros clínicos de gravidade são determinantes. Um paciente com insuficiência hepática fulminante ou em choque cardiogênico refratário, por exemplo, é priorizado (ganha \"status de urgência\") e passa à frente de outros pacientes que estão há mais tempo na fila, mas que apresentam quadro clínico estável.\n\nAlternativa (e) - Incorreta: Os hospitais não possuem autonomia para gerir a fila ou realizar ajustes conforme sua capacidade instalada. Eles são responsáveis por notificar potenciais doadores e cadastrar receptores, mas a seleção de quem receberá cada órgão disponível é feita exclusivamente pelo software do sistema estadual/nacional, seguindo os critérios técnicos preestabelecidos.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:03.412Z"
+  },
+  {
+    "id": "AJUDA_37e44d5f-5991-4e36-834c-234b1c87247a",
+    "originalId": "37e44d5f-5991-4e36-834c-234b1c87247a",
+    "statement": "Pode-se afirmar, em relação ao SUS, que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sua implantação não encontrou resistência por parte dos profissionais de saúde e da sociedade em geral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "se encontra plenamente implantado e consolidado, em consonância com a legislação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "resulta de um longo processo de decisões tecnocráticas e centralizadas pelo poder público federal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "contribui para difundir a noção de direito à saúde e a concepção ampliada de saúde, entendida em suas determinações sociais",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a) Incorreta. A implantação do SUS não foi um processo pacífico. Pelo contrário, enfrentou e ainda enfrenta forte resistência de diversos setores, incluindo parte do segmento médico vinculado ao setor privado, empresas de planos de saúde e grupos políticos que defendiam a manutenção do modelo anterior, que era excludente e centralizado na Previdência Social.\n\nAlternativa b) Incorreta. Dizer que o SUS está plenamente implantado e consolidado é um equívoco. Embora a legislação (Constituição de 1988 e Leis Orgânicas da Saúde) seja muito avançada, a prática ainda lida com desafios imensos. O sistema sofre com subfinanciamento crônico, problemas de gestão, falta de infraestrutura em diversas regiões e dificuldades na articulação da rede de atenção, sendo considerado um projeto em construção permanente.\n\nAlternativa c) Incorreta. O SUS é exatamente o oposto de um modelo tecnocrático e centralizado. Ele nasceu do Movimento da Reforma Sanitária, um movimento de base social, acadêmica e popular que lutou contra a ditadura militar e pela redemocratização do país. Além disso, o SUS tem como diretrizes a descentralização (municipalização) e a participação da comunidade por meio dos Conselhos e Conferências de Saúde.\n\nAlternativa d) Correta. Esta é a base doutrinária do SUS. O sistema foi o principal responsável por mudar o paradigma de saúde no Brasil. Antes, a saúde era vista apenas como ausência de doença. Com o SUS, passou-se a adotar o conceito ampliado de saúde, que entende que o bem-estar de um indivíduo depende de determinantes sociais, como moradia, saneamento, trabalho, renda, educação e lazer. Além disso, reafirmou a saúde como um direito fundamental de todo cidadão e um dever do Estado.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "História do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:03.412Z"
+  },
+  {
+    "id": "AJUDA_37e855fb-9c29-436d-ae39-b80d65fd1e53",
+    "originalId": "37e855fb-9c29-436d-ae39-b80d65fd1e53",
+    "statement": "Paciente, sexo masculino, 22 anos de idade, vítima de espancamento, é levado ao Pronto-Socorro cerca de 2 horas após o evento. Encontra-se pálido, sudorético, taquicárdico, FC 128 bpm, e com PA 90/58 mmHg, apresentando múltiplos hematomas em tórax e abdome, além de dor difusa. Está confuso, com tempo de enchimento capilar prolongado (4 segundos) e extremidades frias. Gasometria inicial revela pH 7,28, lactato 4,8 mmol/L, glicemia 178 mg/dL e potássio sérico de 3,2 mEq/L. Apresenta ainda temperatura de 35,6 °C e débito urinário reduzido (12 mL/h). Após reposição volêmica inicial com cristaloides e controle hemostático das lesões superficiais, o paciente evolui com melhora parcial dos sinais vitais: PA 110/70 mmHg, FC 104 bpm, extremidades mais aquecidas e diurese crescente para 0,7 mL/kg/h ao final de 4 horas. O lactato cai para 2,6 mmol/L e a temperatura se normaliza.\n\nIndique o hormônio que tem como principal efeito aumentar a reabsorção de sódio e água nos rins, contribuindo para a manutenção do volume intravascular durante o trauma:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hormônio anti-diurético (ADH).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cortisol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Renina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aldosterona.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANALISE DO CASO E CONTEXTO FISIOPATOLOGICO:\n\nO paciente apresenta choque hipovolemico decorrente de trauma contuso, o que deflagra a Resposta Endocrino-Metabolica ao Trauma (REMT). Esse processo ativa mecanismos neuroendocrinos com o objetivo de restaurar a perfusao tecidual e a volemia, destacando-se a ativacao do Sistema Renina-Angiotensina-Aldosterona (SRAA). A questao aborda o hormonio efetor responsavel pelo aumento da reabsorcao tubular de sodio acompanhado de agua.\n\nANALISE DAS ALTERNATIVAS:\n\nAlternativa A (Incorreta): O Hormonio Antidiuretico (ADH ou vasopressina) atua nos ductos coletores renais promovendo a insercao de canais de aquaporina-2, o que resulta na reabsorcao de agua livre (sem soluto). Ele nao promove a reabsorcao ativa de sodio.\n\nAlternativa B (Incorreta): O Cortisol e o principal glicocorticoide do estresse cirurgico/traumatico. Suas acoes primordiais sao metabolicas (estimulo a gliconeogenese, glicogenolise e proteolise) e imunomoduladoras, alem de aumentar a sensibilidade vascular as catecolaminas. Nao e o efetor primario da retencao hidrossalina.\n\nAlternativa C (Incorreta): A Renina nao e um hormonio efetor final, mas sim uma enzima liberada pelo aparelho justaglomerular renal. Ela cliva o angiotensinogenio em angiotensina I, iniciando a cascata do SRAA, sem acao direta sobre os transportadores tubulares de sodio.\n\nAlternativa D (Correta): A Aldosterona e o mineralocorticoide sintetizado na zona glomerulosa da supra-renal. Ela atua nos tubulos distais e ductos coletores estimulando os canais de sodio epiteliais (ENaC) e a bomba Na+/K+-ATPase, promovendo a reabsorcao ativa de sodio e a secrecao de potassio e protons. A agua segue o sodio por gradiente osmotico, expandindo o espaco intravascular. A queda do potassio serico (3,2 mEq/L) observada no caso clinico exemplifica a acao caliuretica desse hormonio.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Trauma",
+      "Choque",
+      "Adrenal"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:03.412Z"
+  },
+  {
+    "id": "AJUDA_37ebda29-0925-4770-bf3c-377fde4eb110",
+    "originalId": "37ebda29-0925-4770-bf3c-377fde4eb110",
+    "statement": "Assinale a alternativa correta a respeito do calendário nacional de vacinação infantil.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A primeira dose de vacina de febre amarela está prevista somente para quando a criança tiver 7 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uma das vacinas que a criança deverá tomar aos 5 anos de idade é a primeira dose de vacina pneumocócica 23-valente (Pneumo 23).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Uma das vacinas que a criança deverá tomar aos 5 anos de idade é a primeira dose da vacina rotavírus humano G1P1 [8] (atenuada) – (VRH).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uma das vacinas a serem tomadas pela criança aos 5 anos de idade é a primeira dose da vacina HPV Papilomavírus humano 6, 11, 16 e 18 (HPV4 – recombinante).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a: Incorreta. A vacina contra a febre amarela (atenuada) possui um esquema vacinal de duas doses para o público infantil: a primeira dose é administrada aos 9 meses de idade e a dose de reforço aos 4 anos de idade. Portanto, a previsão da primeira dose aos 7 anos de idade está em desacordo com as diretrizes do Programa Nacional de Imunizações (PNI).\n\nAlternativa b: Correta. Esta alternativa cobra um conhecimento específico sobre as variações do Calendário Nacional de Vacinação. Embora a vacina pneumocócica 23-valente (Pneumo 23) não seja de rotina para a população geral urbana aos 5 anos, ela está prevista no calendário oficial para a população indígena (uma dose aos 5 anos). Além disso, ela é indicada para crianças com condições clínicas especiais (por meio dos Centros de Referência para Imunobiológicos Especiais — CRIE). Como as demais alternativas apresentam erros cronológicos fundamentais, esta é a resposta correta.\n\nAlternativa c: Incorreta. A vacina rotavírus humano G1P[8] (VRH) deve ser administrada precocemente, em duas doses: aos 2 e 4 meses de idade. Existem limites de idade rigorosos para a aplicação desta vacina por causa do risco de intussuscepção intestinal: a primeira dose não pode ser administrada após os 3 meses e 15 dias, e a segunda dose não pode ser administrada após os 7 meses e 29 dias. Jamais seria iniciada aos 5 anos de idade.\n\nAlternativa d: Incorreta. A vacina contra o HPV (Papilomavírus Humano) é indicada no Brasil para meninas e meninos na faixa etária de 9 a 14 anos. Atualmente, o esquema adotado pelo Ministério da Saúde é de dose única. Aos 5 anos de idade, a criança ainda não atingiu a idade mínima recomendada para o início desta vacinação no calendário de rotina.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:03.412Z"
+  },
+  {
+    "id": "AJUDA_37ed2dc0-ec95-4e35-a0f0-8fac9a2d5634",
+    "originalId": "37ed2dc0-ec95-4e35-a0f0-8fac9a2d5634",
+    "statement": "Lactente de 2 anos de idade, previamente hígido, vai ao pronto atendimento com história de diarreia líquida há 2 dias, esverdeada, sem sangue, e volumosa. Hoje apresentou cerca de 7 evacuações. Apresentou 2 picos febris não aferidos. Está com dificuldade de ingerir alimentos devido à náusea e vômitos pós prandiais, conseguindo beber alguma quantidade de água em casa. Ao exame físico, apresenta irritabilidade alternada com sonolência, olhos fundos e sem lágrimas, boca seca, turgor da pele pastoso, pulsos periféricos filiformes e tempo de enchimento capilar maior que 4 segundos.\nDe acordo com as orientações mais recentes do Ministério da Saúde, além do antiemético, qual a conduta inicial correta para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Soro fisiológico 30 mL/kg endovenoso em 30 minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Soro fisiológico 30 mL/kg endovenoso em 1 hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Soro fisiológico 20 mL/kg endovenoso em 30 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Oferecer terapia de reidratação oral 100 mL/kg em 4 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar terapia de reidratação 100 mL/kg por gastróclise em 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico do quadro clínico:\nO paciente apresenta um quadro de desidratação grave com sinais de choque hipovolêmico (tempo de enchimento capilar maior que 4 segundos, pulsos filiformes, alteração do estado de consciência, boca seca, olhos fundos e turgor pastoso). \n\nConduta segundo o Ministério da Saúde (Plano C):\nPara pacientes com desidratação grave/choque secundário à diarreia aguda, a via indicada é a parenteral imediata (endovenosa ou intraóssea), dividida conforme a faixa etária:\n- Menores de 1 ano: 30 mL/kg em 1 hora, seguidos de 70 mL/kg em 5 horas.\n- Crianças de 1 ano ou mais (caso do paciente, que tem 2 anos): 30 mL/kg em 30 minutos, seguidos de 70 mL/kg em 2 horas e 30 minutos.\n\nAnálise das alternativas:\n\nAlternativa a: Correta. É a conduta exata preconizada pelo Ministério da Saúde para a fase inicial de expansão rápida no Plano C em crianças maiores de 1 ano de idade (30 mL/kg em 30 minutos).\n\nAlternativa b: Incorreta. A infusão de 30 mL/kg em 1 hora (60 minutos) é a recomendação para lactentes menores de 1 ano de idade.\n\nAlternativa c: Incorreta. O volume de 20 mL/kg em bólus é recomendado por diretrizes de suporte avançado de vida em pediatria (PALS) para choque em geral, mas a questão solicita especificamente a conduta do Ministério da Saúde para o manejo da diarreia (Plano C).\n\nAlternativa d: Incorreta. O uso de terapia de reidratação oral (Plano B) está contraindicado na presença de choque hipovolêmico, rebaixamento do nível de consciência e incapacidade de ingestão oral adequada.\n\nAlternativa e: Incorreta. A gastróclise é uma opção de resgate dentro do Plano B (para vômitos persistentes sem choque), não sendo indicada para a ressuscitação inicial de pacientes em choque hipovolêmico por desidratação grave, que necessitam de reposição volêmica endovenosa rápida.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diarreia",
+      "Emergências Pediátricas",
+      "Choque em Pediatria"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:03.412Z"
+  },
+  {
+    "id": "AJUDA_37f19882-d09e-4c84-9bad-c2d9c51da7be",
+    "originalId": "37f19882-d09e-4c84-9bad-c2d9c51da7be",
+    "statement": "Atraso menstrual de 12 semanas com queixa de sangramento vaginal, dores em hipogástrio e vômitos. Exame de Beta-hCG 278.000 UI/L e ultras som com útero volumoso e cistos tecaluteínicos bilaterais de 8 cm. Foi submetida a procedimento cirúrgico e o anátomo patológico revelou hidrop sia vilosa difusa e hiperplasia trofoblástica difusa com ausência de tecido fetal. O diagnóstico desta paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "mola invasora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "aborto hidrópico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "mola hidatiforme parcial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "mola hidatiforme completa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Coriocarcionoma Gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o diagnóstico diferencial das doenças trofoblásticas gestacionais, focando nos achados clínicos, laboratoriais e, principalmente, anatomopatológicos.\n\nAnálise do quadro clínico e laboratorial:\nA paciente apresenta sinais clássicos de uma gestação molar: sangramento vaginal, útero com volume superior ao esperado para a idade gestacional (12 semanas), vômitos intensos (hiperemese devido aos altos níveis de hCG) e beta-hCG muito elevado (278.000 UI/L). A presença de cistos tecaluteínicos bilaterais é uma consequência comum da estimulação ovariana excessiva pelos níveis altíssimos de hCG, sendo achados típicos da mola completa.\n\nAnálise do exame anatomopatológico:\nO laudo descreve três pontos fundamentais:\n1. Hidropisia vilosa difusa: Todas as vilosidades coriônicas estão edemaciadas.\n2. Hiperplasia trofoblástica difusa: Há proliferação excessiva das camadas do trofoblasto em toda a amostra.\n3. Ausência de tecido fetal: Não foram encontrados componentes embrionários ou fetais.\n\nEssa tríade anatomopatológica (alterações difusas + ausência de feto) é patognomônica da mola hidatiforme completa.\n\nExplicação das alternativas:\n\na) Mola invasora: Incorreta. A mola invasora é um diagnóstico clínico ou histopatológico definido pela invasão do miométrio por vilosidades hidrópicas. O enunciado foca na descrição das vilosidades e na ausência de feto após o procedimento de esvaziamento, o que caracteriza a mola completa antes de qualquer evidência de invasão tecidual profunda ou persistência pós-esvaziamento.\n\nb) Aborto hidrópico: Incorreta. No aborto hidrópico, ocorre um edema das vilosidades após a morte embrionária, porém não existe a hiperplasia trofoblástica característica das molas. Além disso, os níveis de beta-hCG no aborto costumam ser baixos ou estar em queda, ao contrário do valor extremamente alto visto neste caso.\n\nc) Mola hidatiforme parcial: Incorreta. Na mola parcial, a hidropisia e a hiperplasia trofoblástica são focais (atingem apenas parte das vilosidades) e, obrigatoriamente, existe a presença de tecido fetal ou embrionário (ou pelo menos sinais de sua existência, como hemácias fetais). O beta-hCG na mola parcial raramente atinge níveis tão elevados quanto na completa.\n\nd) Mola hidatiforme completa: Correta. É o diagnóstico que se encaixa perfeitamente na descrição. Apresenta-se com beta-hCG muito elevado, cistos tecaluteínicos, útero aumentado para a idade gestacional e, no exame anatomopatológico, revela o padrão difuso de hidropisia e hiperplasia sem qualquer sinal de tecido fetal.\n\ne) Coriocarcinoma gestacional: Incorreta. O coriocarcinoma é uma neoplasia maligna pura do trofoblasto. Histologicamente, ele se caracteriza por ninhos de citotrofoblasto e sinciciotrofoblasto com muita atipia, hemorragia e necrose, mas com uma característica fundamental: a ausência total de vilosidades coriônicas. Como o laudo descreveu hidropisia vilosa (presença de vilosidades), o diagnóstico de coriocarcinoma é excluído.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:03.412Z"
+  }
+]

@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_30ffd7da-5cf7-4ed2-a10b-09c7db767755",
+    "originalId": "30ffd7da-5cf7-4ed2-a10b-09c7db767755",
+    "statement": "Mulher de 46 anos, G3P3, procura o ambulatório de ginecologia para avaliação de risco oncológico. Tem mãe falecida por câncer de ovário aos 55 anos e uma irmã com câncer de mama diagnosticado aos 42 anos. Nunca usou contraceptivo hormonal, menarca aos 11 anos, menopausa ainda não instalada. Nega cirurgias prévias e não apresenta sintomas atuais. IMC: 27 kg/m². Exame físico normal. Qual a conduta mais adequada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laqueadura tubária como medida profilática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ooforectomia profilática bilateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Investigação de mutações germinativas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Rastreamento com ultrassonografia transvaginal e CA 125.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A paciente apresenta uma história familiar de alto risco para a Síndrome de Câncer de Mama e Ovário Hereditário (HBOC), caracterizada pela presença de dois parentes de primeiro grau acometidos: mãe com câncer de ovário e irmã com câncer de mama em idade jovem (aos 42 anos). Diante da alta suspeição de síndrome hereditária, a definição da conduta deve ser guiada pela identificação do risco genético real.\n\nAlternativa a (Incorreta): Embora a laqueadura ou a salpingectomia profilática possam conferir alguma redução de risco para carcinomas serosos de alto grau na população geral, essa medida isolada é insuficiente e inadequada como abordagem inicial em uma paciente com critérios clínicos para síndrome hereditária de câncer.\n\nAlternativa b (Incorreta): A salpingo-ooforectomia redutora de risco é a medida mais eficaz para prevenção do câncer de ovário em portadoras de mutações patogênicas nos genes BRCA1 e BRCA2. No entanto, por induzir menopausa cirúrgica precoce definitiva e apresentar riscos inerentes ao procedimento, ela só deve ser indicada após a confirmação laboratorial da presença de mutações genéticas.\n\nAlternativa c (Correta): É a conduta prioritária neste momento. A paciente preenche critérios formais para aconselhamento genético e investigação de mutações germinativas (painel de genes de predisposição hereditária, incluindo BRCA1 e BRCA2). O resultado determinará se há necessidade real de cirurgias profiláticas e guiará a periodicidade e a modalidade do rastreamento mamário.\n\nAlternativa d (Incorreta): O rastreamento populacional de câncer de ovário com dosagem de CA-125 e ultrassonografia transvaginal não é recomendado, pois não demonstrou impacto na redução de mortalidade e apresenta elevado índice de resultados falso-positivos, podendo levar a intervenções cirúrgicas desnecessárias. Mesmo em pacientes de alto risco, esses exames não substituem a investigação genética e a cirurgia redutora de risco quando indicada.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama",
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:31.794Z"
+  },
+  {
+    "id": "AJUDA_31017821-5c13-4032-bd2c-067ca2c08ef9",
+    "originalId": "31017821-5c13-4032-bd2c-067ca2c08ef9",
+    "statement": "Mulher de 44 anos é portadora de artrite reumatóide e usuária crônica de Prednisona 20 mg/dia, com boa adesão ao tratamento. Admitida com quadro de colecistite aguda com indicação cirúrgica.. Na tentativa de evitar insuficiência adrenal aguda, o anestesista administrou hidrocortisona endovenosa na indução anestésica. Quais sinais clínicos e laboratoriais levantariam a suspeita dessa complicação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipercalemia e hiperglicemia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipotensão arterial e hiponatremia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hipoglicemia e linfocitose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipocalemia e sonolência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Convulsão e hiper-reflexia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO TÉCNICO\n\nO caso clínico descreve uma paciente com uso crônico de corticoide em dose imunossupressora (20 mg/dia de prednisona), o que leva à supressão do eixo hipotálamo-hipófise-adrenal. Em situações de estresse agudo, como uma infecção (colecistite) e um procedimento cirúrgico, o corpo exige níveis elevados de cortisol que a adrenal suprimida não consegue produzir. Isso resulta na crise adrenal aguda, uma emergência médica.\n\nAnálise das alternativas:\n\na) Incorreta. A hipercalemia (aumento do potássio) é um achado possível, mas a alteração da glicemia na insuficiência adrenal é a hipoglicemia. O cortisol é um hormônio contrainsulínico; sua falta reduz a gliconeogênese e aumenta a sensibilidade à insulina, levando à queda dos níveis de açúcar no sangue.\n\nb) Correta. A hipotensão arterial é o sinal clínico mais importante e comum da crise adrenal, sendo frequentemente refratária à reposição de líquidos e dependente da reposição de corticoide para ser revertida. A hiponatremia (sódio baixo) ocorre devido à perda renal de sódio e à secreção de hormônio antidiurético (ADH) estimulada pela falta de cortisol.\n\nc) Incorreta. Apesar de a hipoglicemia ocorrer, a linfocitose não é um sinal de alerta primário ou específico para o diagnóstico de crise adrenal no ambiente cirúrgico. Os sinais hemodinâmicos e eletrolíticos são muito mais soberanos para a suspeição clínica.\n\nd) Incorreta. O erro está no termo hipocalemia. Na insuficiência adrenal, o esperado é a tendência à hipercalemia (potássio elevado), devido à menor excreção renal desse íon, especialmente se houver comprometimento concomitante da ação mineralocorticoide.\n\ne) Incorreta. Convulsão e hiper-reflexia não são manifestações clássicas da insuficiência adrenal aguda. O quadro típico envolve choque, prostração, dor abdominal, náuseas e febre, podendo evoluir para coma se não tratado, mas não tipicamente com hiper-reflexia.\n\nGabarito: Letra B.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório",
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:31.794Z"
+  },
+  {
+    "id": "AJUDA_310298ea-76af-4f7c-9c0c-690b68d60639",
+    "originalId": "310298ea-76af-4f7c-9c0c-690b68d60639",
+    "statement": "Dra. Clara, 35 anos, de etnia negra, médica residente de Medicina de Família e Comunidade, está realizando um estudo sobre o impacto da multimorbidade na qualidade de vida de mulheres climatéricas em uma comunidade de baixa renda. Ela debate se deve usar dados de autorrelato das pacientes via questionário ou dados de prontuários médicos da Unidade Básica de Saúde para sua pesquisa.\n\nQual é a principal vantagem dos dados de autorrelatos das pacientes em comparação com os dados de prontuários médicos para a avaliação da multimorbidade, considerando o objetivo da Dra. Clara de avaliar o impacto na qualidade de vida?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A maior precisão na classificação de doenças raras ou pouco reconhecidas, que podem não ser devidamente registradas nos prontuários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A menor sensibilidade a vieses de subdiagnóstico, pois os pacientes relatam todos os seus problemas de saúde sem omitir informações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A maior validade na identificação de condições crônicas já diagnosticadas e registradas formalmente, evitando viés de memória das pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A facilidade de coleta de grandes volumes de dados para análises epidemiológicas, especialmente em estudos populacionais abrangentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A capacidade de refletir o impacto real das doenças no nível do paciente individual, incluindo aspectos funcionais e subjetivos da experiência com a doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Essa questão aborda um tema central na metodologia de pesquisa em Atenção Primária e Saúde Coletiva: a escolha da fonte de dados para avaliar condições complexas como a multimorbidade e seu impacto no bem-estar.\n\nAnálise das alternativas:\n\na) Incorreta. Dados de prontuários costumam ser mais precisos para doenças raras ou tecnicamente complexas, pois contam com registros de exames complementares, biópsias e pareceres de especialistas. O paciente muitas vezes não sabe nomear ou classificar corretamente uma patologia rara apenas por autorrelato.\n\nb) Incorreta. O autorrelato é, na verdade, muito sensível a vieses. Pacientes podem esquecer diagnósticos (viés de memória) ou omitir informações por vergonha ou estigma (viés de informante). O prontuário, embora possa ter sub-registro, baseia-se em observações clínicas e diagnósticos formais.\n\nc) Incorreta. Esta alternativa descreve exatamente a vantagem dos prontuários médicos, e não do autorrelato. Os prontuários são melhores para identificar condições já diagnosticadas formalmente e são isentos do viés de memória da paciente.\n\nd) Incorreta. Embora questionários possam ser aplicados em larga escala, a facilidade de coleta de grandes volumes de dados hoje em dia está muito ligada ao uso de bases de dados secundárias (prontuários eletrônicos e sistemas de informação em saúde), que permitem análises populacionais robustas sem a necessidade de entrevistar cada indivíduo.\n\ne) Correta. Esta é a essência da pesquisa sobre qualidade de vida. O prontuário médico foca no diagnóstico e no tratamento (visão biomédica), mas frequentemente falha em captar como as doenças interagem na rotina do paciente. O autorrelato permite que a Dra. Clara entenda a percepção subjetiva da paciente, o grau de sofrimento, a limitação funcional e como a soma de várias doenças afeta o cotidiano daquela mulher climatérica. Para estudar \"impacto na qualidade de vida\", a voz do paciente é a fonte de dados mais fidedigna, pois reflete a experiência vivida da doença.\n\nGabarito: Alternativa (e).",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Climatério e Terapia Hormonal",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:31.794Z"
+  },
+  {
+    "id": "AJUDA_31071636-9c66-4a2f-8772-0033e89b2b9e",
+    "originalId": "31071636-9c66-4a2f-8772-0033e89b2b9e",
+    "statement": "Em um programa de residência de Medicina de Família e Comunidade, Dr. Gabriel, 28 anos, branco, residente de primeiro ano, atende Dona Efigênia, 85 anos, negra, viúva, aposentada com baixa renda e residente em um lar de idosos. Dona Efigênia tem demência moderada, diabetes, insuficiência renal crônica e úlceras de pressão. A família insiste em medidas agressivas para cada doença, seguindo diretrizes individuais, apesar do prognóstico reservado e do sofrimento de Dona Efigênia.\n\nNo contexto da multimorbidade, qual é a principal orientação que Dr. Gabriel deve considerar para o cuidado de Dona Efigênia, buscando a abordagem centrada no paciente e a prevenção quaternária?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Concentrar os esforços na prevenção de infecções e na cura das úlceras de pressão, pois são as condições que causam maior sofrimento direto e imediato à paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enfatizar a importância da relação paciente-médico e da continuidade dos cuidados gerais e dos medicamentos atuais, buscando compreender os objetivos da casa de repouso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Priorizar a reversão de desfechos biomédicos, como o controle glicêmico rigoroso e a função renal, visando prolongar a sobrevida da paciente, conforme as diretrizes para cada doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desenvolver um plano de cuidados que contemple a tomada de decisão compartilhada e prevenção de sobre medicalização, envolvendo a família e focando no que importa para a paciente, como conforto e qualidade de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Avaliar o nível de adesão aos cuidados previstos na diretriz de tratamento para cada um dos agravos identificados, identificando assim oportunidades para educação intensiva da rede de cuidadores de maneira que garanta que todos os cuidados previstos em tais diretrizes sejam devidamente executados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda um cenário clássico da Medicina de Família e Comunidade e da Geriatria: o manejo da multimorbidade em pacientes idosos e frágeis. O desafio central é equilibrar as diretrizes clínicas específicas para cada doença com o bem-estar global da paciente, evitando a iatrogenia e respeitando a autonomia e os valores da pessoa.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Focar exclusivamente em infecções e úlceras de pressão é uma visão fragmentada. Embora sejam problemas importantes, o cuidado integral exige olhar para a paciente como um todo. Além disso, medidas agressivas para \"cura\" em uma paciente com demência moderada e diversas comorbidades podem ser desproporcionais e gerar mais sofrimento sem ganho real em qualidade de vida.\n\nAlternativa b) Incorreta. Manter todos os medicamentos atuais e focar apenas nos objetivos da casa de repouso ignora o conceito de prevenção quaternária. Em pacientes com esse perfil, muitas vezes é necessário realizar a desprescrição (retirada de medicamentos que não trazem mais benefício ou que causam riscos) para evitar a polifarmácia e efeitos adversos.\n\nAlternativa c) Incorreta. O controle glicêmico rigoroso em idosos frágeis com demência é altamente perigoso, aumentando o risco de hipoglicemias graves, quedas e mortalidade. Seguir diretrizes de doenças isoladas em casos de multimorbidade é um erro comum que leva à sobremedicalização e piora dos desfechos clínicos. O foco deve mudar de desfechos biomédicos para desfechos centrados na pessoa.\n\nAlternativa d) Correta (Gabarito). Esta é a conduta que melhor exemplifica o Método Clínico Centrado na Pessoa e a Prevenção Quaternária. Em idosos com prognóstico reservado e multimorbidade, o plano de cuidados deve ser pactuado por meio da tomada de decisão compartilhada com a família (já que a paciente tem demência). O objetivo principal passa a ser o conforto, a funcionalidade e a qualidade de vida, protegendo a paciente de intervenções excessivas e desnecessárias (sobremedicalização) que causam mais danos do que benefícios.\n\nAlternativa e) Incorreta. Garantir a execução de todas as diretrizes para cada agravo é a receita para o desastre no contexto da multimorbidade. Isso geraria uma carga de tratamento insuportável para a paciente e para os cuidadores, além de aumentar drasticamente o risco de interações medicamentosas e iatrogenias. O cuidado na multimorbidade exige priorização e individualização, e não a soma cega de protocolos.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Saúde do Idoso",
+      "Ética Médica",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:31.794Z"
+  },
+  {
+    "id": "AJUDA_3107532d-6386-43da-ad24-7b6da7e2d158",
+    "originalId": "3107532d-6386-43da-ad24-7b6da7e2d158",
+    "statement": "Com relação ao rastreamento para displasia evolutiva do quadril na infância, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manobra de Barlow não é mais utilizada no rastreio de displasia do quadril.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico precoce antes dos 3 a 6 meses de idade não impacta na escolha de tratamentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gênero masculino é fator de risco para displasia de quadril.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A manobra de Ortolani provoca a redução do quadril.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Displasia Evolutiva do Quadril (DEQ) é uma condição fundamental na ortopedia pediátrica, cujo rastreamento deve ser realizado rotineiramente por meio do exame físico neonatal e da análise de fatores de risco.\n\nAlternativa a: Incorreta. As manobras de Barlow e Ortolani continuam sendo o padrão-ouro para o rastreamento clínico da DEQ em recém-nascidos. A manobra de Barlow é especificamente utilizada para identificar o quadril que está \"no lugar\", mas que é instável ou passível de luxação (manobra provocativa).\n\nAlternativa b: Incorreta. O diagnóstico precoce é o fator mais importante para o prognóstico da doença. Quando diagnosticada antes dos 6 meses, a DEQ geralmente é tratada de forma conservadora e não invasiva, frequentemente com o uso do suspensório de Pavlik. Diagnósticos após os 6 meses ou após o início da marcha geralmente exigem tratamentos mais agressivos, como reduções gessadas ou cirurgias.\n\nAlternativa c: Incorreta. O sexo feminino é um dos principais fatores de risco para a DEQ, sendo cerca de 4 a 6 vezes mais frequente em meninas do que em meninos. Isso se deve, em parte, à maior sensibilidade das recém-nascidas aos hormônios maternos (como a relaxina), que aumentam a frouxidão ligamentar.\n\nAlternativa d: Correta. A manobra de Ortolani é uma manobra de redução. Ela é realizada em pacientes que já apresentam o quadril luxado (fora da posição). Ao realizar a abdução das coxas e a elevação do grande trocânter, o examinador tenta reposicionar a cabeça do fêmur para dentro do acetábulo. Quando positiva, sente-se um \"clunk\" ou ressalto, que representa a entrada da cabeça femoral no local correto. Portanto, Barlow retira (tenta luxar) e Ortolani coloca (tenta reduzir).",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Quadril Pediátrico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:31.794Z"
+  },
+  {
+    "id": "AJUDA_3116e3f2-8a7e-4ede-9587-3335757697e7",
+    "originalId": "3116e3f2-8a7e-4ede-9587-3335757697e7",
+    "statement": "Paciente de 48 anos, portador de obesidade grau 3, sedentário e queixa de lombalgia crônica, em tratamento atual para hipertensão arterial em uso de losartana 50 mg, 2 x dia, e anlodipina 10 mg/dia. Durante a consulta ambulatorial, refere poliúria, polidipsia e perda de peso nos últimos meses. Exames complementares: glicemia de jejum = 288 mg/dL, HbA1c = 10,2%, HOMA IR = 4,9, LDL colesterol = 182 mg/dL, triglicerides = 175 mg/dL, creatinina = 1,2 mg/dL. Ausência de microalbuminúria e cetonúria em amostra isolada.\nQual a conduta ambulatorial inicial preconizada nas diretrizes brasileiras para a disglicemia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever apenas metformina e reavaliar em 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Utilizar sulfonilureia isolada como primeira linha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar apenas dieta e exercício, sem fármacos, por 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aguardar complicações para introduzir insulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar insulina basal associada a mudanças no estilo de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico apresenta um paciente de 48 anos com diabetes mellitus tipo 2 (DM2) recém-diagnosticado, manifestando sintomas clássicos de hiperglicemia e catabolismo, como poliúria, polidipsia e perda de peso. Os exames confirmam uma descompensação grave, com hemoglobina glicada (HbA1c) de 10,2% e glicemia de jejum de 288 mg/dL. O índice HOMA-IR de 4,9 indica uma elevada resistência à insulina, comum na obesidade grau 3.\n\nDe acordo com as diretrizes da Sociedade Brasileira de Diabetes (SBD) e da Associação Americana de Diabetes (ADA), a escolha terapêutica baseia-se no nível da HbA1c e na presença de sintomas. Em pacientes com HbA1c superior a 10% ou glicemia de jejum acima de 300 mg/dL, especialmente se houver sintomas de perda de peso e catabolismo (sugerindo falência ou exaustão pancreática temporária por glicotoxicidade), a conduta inicial recomendada é a insulinização.\n\nAlternativa a: Incorreta. A monoterapia com metformina é a primeira escolha para pacientes com HbA1c próxima ao alvo ou até 7,5%. Para um paciente com HbA1c de 10,2% e sintomas acentuados, a metformina isolada não possui potência suficiente para atingir o controle glicêmico necessário e não reverte prontamente o estado catabólico.\n\nAlternativa b: Incorreta. As sulfonilureias agem estimulando a secreção de insulina. Elas não são a primeira linha para pacientes com obesidade grau 3, pois um de seus principais efeitos colaterais é o ganho de peso. Além disso, em quadros de glicotoxicidade grave (HbA1c acima de 10%), o pâncreas muitas vezes não responde adequadamente aos secretagogos, sendo necessária a reposição direta de insulina. Observação: Embora o gabarito indicado nesta questão seja a letra b, esta resposta contraria as diretrizes atuais da Sociedade Brasileira de Diabetes para pacientes com sintomas catabólicos e HbA1c acima de 10%.\n\nAlternativa c: Incorreta. Mudanças no estilo de vida são essenciais em qualquer estágio do tratamento, mas, em um paciente com sintomas de perda de peso e glicemia tão elevada, o atraso no início da terapia farmacológica coloca o paciente em risco de complicações agudas e maior progressão da doença.\n\nAlternativa d: Incorreta. O objetivo principal do tratamento do diabetes é prevenir o surgimento de complicações micro e macrovasculares por meio do controle glicêmico precoce e intensivo (legado metabólico). Aguardar complicações para intervir é uma conduta tecnicamente inadequada e antiética.\n\nAlternativa e: Correta. Esta é a conduta preconizada pela Sociedade Brasileira de Diabetes para pacientes com HbA1c maior que 10% e presença de sintomas catabólicos (perda de peso). O uso de insulina basal ajuda a reduzir a glicotoxicidade rapidamente, permitindo que a função das células beta pancreáticas seja preservada ou recuperada. Após a estabilização do quadro, o esquema terapêutico pode ser reavaliado e possivelmente simplificado para drogas orais.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:31.794Z"
+  },
+  {
+    "id": "AJUDA_3121b23e-b1b8-46a1-9578-5b9d35b79a2f",
+    "originalId": "3121b23e-b1b8-46a1-9578-5b9d35b79a2f",
+    "statement": "O estágio de Tanner em que a menarca geralmente ocorre é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "M4.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "M2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "M3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "M5.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para responder a essa questão, é fundamental compreender a cronologia dos eventos da puberdade feminina, descrita pelos estágios de Marshall e Tanner. A puberdade em meninas geralmente se inicia com a telarca (surgimento do broto mamário) e termina com a maturidade sexual completa.\n\nA menarca, que é o marco da primeira menstruação, é um evento tardio na sequência puberal. Ela ocorre, em média, de dois a dois anos e meio após a telarca. Na grande maioria das adolescentes, a menarca acontece especificamente no estágio M4 de Tanner, após o pico da velocidade de crescimento (estirão).\n\nAnálise das alternativas:\n\nAlternativa a) M4: Esta é a resposta correta. No estágio M4, há o crescimento da mama e da aréola, com a aréola e a papila formando uma segunda saliência (montículo secundário) acima do contorno do corpo da mama. Estatisticamente, é nesse estágio que cerca de 60 a 90% das meninas apresentam a primeira menstruação. Nesse ponto, o pico do estirão de crescimento geralmente já ocorreu.\n\nAlternativa b) M2: Incorreta. O estágio M2 caracteriza-se pelo aparecimento do broto mamário (telarca), sendo o primeiro sinal visível da puberdade feminina sob influência estrogênica. A menarca ocorre significativamente após esse estágio inicial.\n\nAlternativa c) M3: Incorreta. No estágio M3, ocorre um aumento maior da mama e da aréola como um todo, mas ainda não há a separação de seus contornos. É o estágio em que geralmente ocorre o pico da velocidade de crescimento (estirão), mas a menarca costuma ocorrer na transição do estágio M3 para o M4 ou já plenamente no M4.\n\nAlternativa d) M5: Incorreta. O estágio M5 representa a configuração da mama adulta. Nele, a projeção da aréola desaparece, integrando-se ao contorno da mama, restando apenas a projeção da papila. Quando a adolescente atinge este estágio de maturação completa, a menarca já ocorreu há algum tempo.\n\nResumo dos estágios mamários (M) de Tanner:\nM1: Mama infantil, apenas elevação da papila.\nM2: Broto mamário; alargamento da aréola (Telarca).\nM3: Maior aumento da mama e aréola, sem separação de contornos.\nM4: Projeção da aréola e papila formando montículo secundário acima da mama (Época da Menarca).\nM5: Estágio adulto; a aréola recua para o contorno da mama.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:31.794Z"
+  },
+  {
+    "id": "AJUDA_31263b16-0630-405d-9832-1c7dc4c52ff1",
+    "originalId": "31263b16-0630-405d-9832-1c7dc4c52ff1",
+    "statement": "Gestante de 29 semanas e 2 dias apresenta, em consulta de pré-natal, ultrassom evidenciando bordo inferior da placenta a 3,2 cm do orifício interno do colo uterino. De acordo com a nova classificação de placenta com inserção anômala, trata-se de placenta",
+    "options": [
+      {
+        "id": "A",
+        "text": "de inserção normal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "baixa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "marginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A classificação atual das placentas de inserção anômala baseia-se na distância entre o bordo inferior da placenta e o orifício interno do colo (OIC) uterino, medida preferencialmente pela ultrassonografia transvaginal. Essa padronização visa simplificar a terminologia e orientar a conduta obstétrica.\n\nDe acordo com os consensos modernos (como os da FIGO e sociedades de ultrassonografia), as definições são:\n\n1. Placenta prévia: a placenta recobre o orifício interno do colo uterino.\n2. Placenta baixa: o bordo placentário localiza-se a uma distância menor que 2,0 cm (20 mm) do orifício interno do colo, mas sem recobri-lo.\n3. Inserção normal: o bordo placentário encontra-se a 2,0 cm ou mais de distância do orifício interno do colo.\n\nNo caso clínico descrito, a gestante apresenta o bordo inferior da placenta a 3,2 cm do orifício interno. Como esse valor é superior ao ponto de corte de 2,0 cm, a placenta é classificada como de inserção normal.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Como a distância aferida foi de 3,2 cm (maior que 2,0 cm), a placenta não é considerada de inserção anômala segundo a nova classificação, enquadrando-se como inserção normal.\n\nAlternativa b) Incorreta. A definição de placenta baixa é reservada para casos em que a borda placentária está a menos de 2,0 cm do orifício interno do colo, o que não ocorre no caso, já que a distância é de 3,2 cm.\n\nAlternativa c) Incorreta. Na placenta prévia, o tecido placentário sobrepõe o orifício interno do colo. Uma distância de 3,2 cm indica que o orifício está livre e desobstruído.\n\nAlternativa d) Incorreta. O termo marginal era utilizado na classificação antiga para descrever a placenta que atingia a borda do orifício interno sem recobri-lo. Na nomenclatura atual, essa situação seria classificada como placenta baixa. Com uma distância de 3,2 cm, a placenta está significativamente afastada da margem do orifício.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:31.794Z"
+  },
+  {
+    "id": "AJUDA_312c8ea4-4ce0-42da-b37f-2a0ae2736ee5",
+    "originalId": "312c8ea4-4ce0-42da-b37f-2a0ae2736ee5",
+    "statement": "Utilizando a “regra dos nove” para avaliar a área de superfície corpórea queimada (ASCQ) na criança, assinale a opção que corresponda à região das costas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "9%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "13%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "15%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "18%",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "27%",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Regra dos Nove (ou Regra de Wallace) é um método rápido e prático para estimar a Área de Superfície Corpórea Queimada (ASCQ). Embora a anatomia da criança apresente proporções diferentes da do adulto — com a cabeça proporcionalmente maior e os membros inferiores menores — a divisão do tronco permanece constante em ambos os grupos na aplicação dessa regra.\n\nO tronco totaliza 36% da superfície corporal, sendo subdividido em 18% para a face anterior (frente) e 18% para a face posterior (costas). Assim, ao isolar apenas a região das costas, o valor correspondente é 18%.\n\nAnálise das alternativas:\n\na) Incorreta. O valor de 9% é atribuído a cada um dos membros superiores (braços) tanto em adultos quanto em crianças. No adulto, a cabeça inteira também corresponde a 9%, mas na criança a cabeça ocupa uma área maior (18%).\n\nb) Incorreta. O valor aproximado de 13% a 14% é utilizado para cada membro inferior (perna) em lactentes e crianças pequenas na adaptação da regra, visto que as pernas são proporcionalmente menores nessa fase da vida.\n\nc) Incorreta. O percentual de 15% não é um valor padrão utilizado nas divisões anatômicas da Regra dos Nove para crianças ou adultos.\n\nd) Correta. Na sistematização da Regra dos Nove adaptada para pediatria, a distribuição é: Cabeça (18%), Tronco Anterior (18%), Tronco Posterior/Costas (18%), cada Membro Superior (9%) e cada Membro Inferior (14%). Portanto, a região das costas equivale a 18%.\n\ne) Incorreta. O valor de 27% não representa uma região isolada. Seria o resultado da soma de grandes áreas, como o tronco completo (36%) subtraindo-se uma parte, ou a soma de um membro inferior com um membro superior e parte do tronco, não sendo uma resposta técnica para a região das costas.\n\nResumo da Regra dos Nove na Criança:\n- Cabeça: 18%\n- Tronco Anterior: 18%\n- Tronco Posterior (Costas): 18%\n- Membro Superior Direito: 9%\n- Membro Superior Esquerdo: 9%\n- Membro Inferior Direito: 14%\n- Membro Inferior Esquerdo: 14%\n(Nota: Pequenas variações de 0,5% podem ocorrer dependendo da literatura para fechar o somatório em 100%, mas o tronco posterior é fixado em 18%).",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:31.794Z"
+  },
+  {
+    "id": "AJUDA_312e42cb-ea89-477a-8e5d-079dbf056d68",
+    "originalId": "312e42cb-ea89-477a-8e5d-079dbf056d68",
+    "statement": "Mulher de 52 anos apresenta febre de 38,5 ºC há 2 dias. AP: linfoma difuso de grandes células B, com 1º ciclo de quimioterapia há 8 dias. Exame físico: FC: 112 bpm, FR: 22 irpm, PA: 120 x 80 mmHg e desidratada +/4+.\nDeve-se",
+    "options": [
+      {
+        "id": "A",
+        "text": "monitorizar clinicamente, já que a paciente está estável; não é necessário coletar exames e pode-se dar alta com antibioticoterapia empírica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "coletar hemograma devido à possibilidade de neutropenia febril e, se confirmar o diagnóstico, introduzir antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar antibioticoterapia de amplo espectro com cobertura para Pseudomonas na admissão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "monitorizar clinicamente, já que a paciente está estável; não é necessário coletar exames e pode-se dar alta com uso de antitérmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda uma das emergências oncológicas mais importantes na prática médica: a Neutropenia Febril.\n\nAnálise do quadro clínico:\nA paciente possui um diagnóstico de linfoma e recebeu quimioterapia há 8 dias. Esse período (entre o 7º e o 14º dia após o ciclo) coincide com o \"nadir\" hematológico, momento em que a contagem de glóbulos brancos atinge seu nível mais baixo. A presença de febre (38,5 °C) em um paciente pós-quimioterapia deve ser tratada como neutropenia febril até que se prove o contrário. Trata-se de uma emergência médica devido ao alto risco de progressão rápida para choque séptico e óbito.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. A conduta de apenas monitorizar e dar alta com antibiótico empírico sem realizar exames é perigosa e tecnicamente errada. Pacientes com suspeita de neutropenia febril exigem avaliação laboratorial imediata (hemograma, culturas, provas de função renal e hepática) e estratificação de risco (como o escore MASCC) antes de qualquer decisão sobre tratamento ambulatorial.\n\nAlternativa b) Incorreta. Embora coletar o hemograma seja essencial para confirmar a neutropenia (neutrófilos abaixo de 500/mm³ ou tendência de queda), a regra de ouro na neutropenia febril é iniciar a antibioticoterapia precocemente, idealmente na primeira hora (a \"hora de ouro\"). Não se deve retardar a primeira dose do antibiótico aguardando o resultado do hemograma em um paciente com alta suspeição clínica.\n\nAlternativa c) Correta. Diante da suspeita de neutropenia febril, a conduta imediata é a coleta de culturas (sangue e urina) seguida pelo início imediato de antibioticoterapia de amplo espectro por via intravenosa. O esquema deve obrigatoriamente cobrir *Pseudomonas aeruginosa*, que é um patógeno associado à alta mortalidade nesses casos. Exemplos comuns de tratamento inicial incluem Cefepime, Piperacilina-Tazobactam ou Carbapenêmicos (Imipenem ou Meropenem).\n\nAlternativa d) Incorreta. Esta conduta ignora o risco de sepse grave. Tratar apenas com antitérmico um paciente oncológico febril no período de nadir da quimioterapia é negligenciar a principal causa de morte evitável nesses indivíduos.\n\nEm resumo: Febre em paciente pós-quimioterapia é igual a Antibiótico de Amplo Espectro (com cobertura para *Pseudomonas*) na admissão, sem esperar resultados laboratoriais se houver atraso na logística.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Neutropenia Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:31.794Z"
+  }
+]

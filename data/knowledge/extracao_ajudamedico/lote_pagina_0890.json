@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_f7135910-f6c8-4124-83fc-88c9bbf8b273",
+    "originalId": "f7135910-f6c8-4124-83fc-88c9bbf8b273",
+    "statement": "Paciente, 78 anos de idade, sexo masculino, queixa de dor contínua em fossa ilíaca à esquerda, há 2 dias, com piora progressiva associada a febre e calafrios, seguida por náuseas. Ao exame físico, observa-se queda do estado geral, febril, depletado com dor à palpação profunda da fossa ilíaca à esquerda com descompressão brusca positiva.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cólica renal ou pielonefrite esquerda e apendicite aguda em posição pélvica ou esquerda (apêndice longo ou situs inversus).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença inflamatória intestinal (retocolite ulcerativa ou doença de Crohn) em crise aguda e isquemia mesentérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diverticulite aguda complicada e isquemia mesentérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Diverticulite aguda complicada e perfuração de víscera oca por neoplasia de cólon.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Hérnia inguinal e perfuração de víscera oca por neoplasia de cólon.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente em questão é um idoso (78 anos) com quadro de dor aguda localizada na fossa ilíaca esquerda (FIE), associada a sinais de resposta inflamatória sistêmica (febre e calafrios) e sinais de irritação peritoneal (descompressão brusca positiva). Este cenário caracteriza um abdome agudo inflamatório ou perfurativo. Em pacientes idosos com dor no quadrante inferior esquerdo, os principais diagnósticos a serem considerados são a diverticulite aguda e as neoplasias cólicas complicadas.\n\nAnálise das alternativas:\n\na) Incorreta. A cólica renal geralmente apresenta dor em caráter de cólica, com irradiação para região lombar ou inguinal, e raramente causa irritação peritoneal franca, a menos que haja complicação infecciosa grave (pielonefrite), que costuma cursar com dor lombar e sinal de Giordano positivo. A apendicite à esquerda é uma condição rara, ocorrendo apenas em casos de situs inversus ou apêndice excessivamente longo que cruza a linha média, não sendo a primeira hipótese para um idoso com dor típica em FIE.\n\nb) Incorreta. Embora a Doença de Crohn e a Retocolite Ulcerativa possam causar dor abdominal e febre, essas patologias geralmente apresentam um histórico crônico de alteração do hábito intestinal, muco e sangue nas fezes. A isquemia mesentérica aguda costuma cursar com dor abdominal desproporcional ao exame físico inicial e, tipicamente, afeta a região periumbilical (território da artéria mesentérica superior), e não especificamente a fossa ilíaca esquerda.\n\nc) Incorreta. A diverticulite aguda complicada é uma hipótese diagnóstica correta e muito provável. No entanto, a isquemia mesentérica é menos provável como principal diferencial para uma dor tão localizada e com sinais de irritação peritoneal focal na FIE em comparação com a perfuração por neoplasia.\n\nd) Correta. Esta é a alternativa mais completa e provável. A diverticulite aguda é a principal causa de dor na fossa ilíaca esquerda no idoso, sendo frequentemente chamada de apendicite do lado esquerdo. A presença de descompressão brusca positiva indica que a diverticulite é complicada (presença de abscesso ou perfuração livre). O principal diagnóstico diferencial, obrigatório nessa faixa etária, é a neoplasia de cólon (adenocarcinoma de sigmoide) que pode perfurar ou sofrer necrose, simulando perfeitamente uma diverticulite aguda.\n\ne) Incorreta. O exame físico não descreve abaulamentos na região inguinal ou sinais de encarceramento herniário. Embora a perfuração por neoplasia seja um diferencial válido, a hérnia inguinal não justifica o quadro de dor profunda e descompressão positiva na fossa ilíaca esquerda sem achados locais na região da virilha.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Abdome Agudo Perfurativo",
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:49.564Z"
+  },
+  {
+    "id": "AJUDA_f71f0aba-89fd-4a0a-a4cc-811a53f3adc3",
+    "originalId": "f71f0aba-89fd-4a0a-a4cc-811a53f3adc3",
+    "statement": "Paciente de 43 anos com 3 filhos vivos foi submetida a colposcopia e biópsia de colo uterino por colpocitologia oncótica NIC 3. A biópsia revelou carcinoma epidermóide in situ. O exame ginecológico era normal e os paramétrios livres. Foi submetida a histerectomia total abdominal. O exame anatomopatológico revelou corpo uterino normal e colo com carcinoma epidermóide invasivo com mais de 5mm de profundidade. Pode-se concluir que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A conduta foi correta e a paciente deve ser considerada curada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A conduta foi correta e a paciente deve receber radioterapia pélvica adjuvante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A conduta foi inadequada, deveria ter sido feito cirurgia de Wertheim Meigs, visto que a biópsia da colposcopia já mostrava carcinoma “in situ”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A conduta foi inadequada, deveria ter sido feito conização de colo uterino para definição diagnóstica e melhor escolha terapêutica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A conduta foi inadequada, pois carcinoma epidermóide “in situ” tem ótima resposta ao tratamento radioterápico exclusivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Ponto central da questão: O manejo adequado de lesões precursoras do câncer do colo uterino e a importância do diagnóstico histopatológico completo antes de uma cirurgia definitiva.\n\nAnálise da situação clínica:\nA paciente apresentava uma citologia compatível com NIC 3 e uma biópsia (procedimento de amostragem) revelando carcinoma epidermoide in situ. O erro fundamental foi proceder diretamente para a histerectomia total abdominal baseando-se apenas em uma biópsia por fragmento. Em casos de NIC 3 ou carcinoma in situ, a conduta diagnóstica e terapêutica inicial deve ser a conização (ou cirurgia de alta frequência – CAF). A biópsia simples pode não representar a totalidade da lesão, escondendo focos de invasão, como ocorreu no caso (invasão > 5 mm).\n\nAlternativa (a) Incorreta: A conduta foi inadequada. O achado de carcinoma invasivo com mais de 5 mm de profundidade caracteriza, no mínimo, um estádio IB1. Para esse estádio, a histerectomia simples é insuficiente, pois não contempla a retirada dos paramétrios nem a linfadenectomia pélvica, fundamentais para o controle da doença. A paciente não pode ser considerada curada.\n\nAlternativa (b) Incorreta: Embora a paciente possa vir a precisar de tratamento complementar (como a radioterapia) devido ao achado de câncer invasivo em uma peça de cirurgia considerada incompleta para o estádio, a afirmação de que a conduta foi correta invalida a opção. O erro ocorreu no planejamento pré-operatório.\n\nAlternativa (c) Incorreta: A cirurgia de Wertheim-Meigs (histerectomia radical com linfadenectomia) é o tratamento para o câncer invasivo. Não se deve realizar uma cirurgia desse porte e com tal morbidade baseando-se apenas em um diagnóstico de carcinoma in situ. O passo intermediário obrigatório seria a conização para confirmar se havia ou não invasão.\n\nAlternativa (d) Correta: Esta é a resposta exata. A conização (biópsia excisional) é mandatória antes de qualquer decisão de histerectomia em casos de carcinoma in situ. Ela serve como diagnóstico definitivo, permitindo avaliar a profundidade da invasão, a extensão lateral e a presença de invasão angiolinfática. Se a conização tivesse sido feita, o diagnóstico de câncer invasivo > 5 mm teria sido estabelecido antes, e a paciente teria sido encaminhada diretamente para o tratamento correto (Wertheim-Meigs ou radioterapia/quimioterapia), evitando uma cirurgia insuficiente.\n\nAlternativa (e) Incorreta: O carcinoma in situ é uma lesão pré-invasiva e seu tratamento de escolha é cirúrgico (conização ou, em casos selecionados com prole definida, a histerectomia simples). A radioterapia é reservada para casos de carcinoma invasivo e não é o tratamento padrão para lesões in situ devido aos seus efeitos colaterais a longo prazo. Além disso, a conduta foi inadequada não por causa da resposta à radioterapia, mas pela falha no diagnóstico de invasão.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:49.564Z"
+  },
+  {
+    "id": "AJUDA_f729c00f-439a-4155-9641-9e4460498b7d",
+    "originalId": "f729c00f-439a-4155-9641-9e4460498b7d",
+    "statement": "Menina de 9 anos de idade com corrimento genital mucoide há 3 meses. Mãe relata que, há 12 meses, iniciou pubarca e telarca. Ao exame, pelos pubianos e mamas no estádio II de Tanner, clitóris e formação labial normais, introito vaginal sem corrimento.\nEm face do exposto, assinale a alternativa que representa o diagnóstico correto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Puberdade precoce central.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Puberdade precoce periférica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Telarca precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pubarca precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Puberdade fisiológica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA questão apresenta uma menina de 9 anos que iniciou o desenvolvimento de mamas (telarca) e pelos pubianos (pubarca) aos 8 anos de idade. No exame físico atual, ela se encontra no estágio II de Tanner (M2P2).\n\nO ponto principal para a resolução desta questão é o marco cronológico da puberdade feminina. Pelos critérios clínicos e consensos de endocrinologia pediátrica, a puberdade é considerada precoce em meninas quando os caracteres sexuais secundários surgem antes dos 8 anos de idade. Como a paciente iniciou o quadro aos 8 anos, ela está dentro da faixa considerada normal (fisiológica), que compreende o início entre os 8 e 13 anos de idade.\n\nO corrimento mucoide relatado (iniciado há 3 meses) é a chamada leucorreia fisiológica. Esse fenômeno ocorre devido à descamação e maturação do epitélio vaginal por ação do estrogênio produzido pelos ovários durante a puberdade. É um sinal de que o corpo está sob influência estrogênica normal e costuma preceder a menarca (primeira menstruação) em cerca de 6 a 12 meses.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Para o diagnóstico de puberdade precoce (central ou periférica), os sinais de desenvolvimento mamário ou de pelos deveriam ter aparecido antes dos 8 anos de idade. A paciente iniciou aos 8 anos, o que é o limite inferior da normalidade.\n\nAlternativa b) Incorreta. Além de a idade de início estar na faixa da normalidade, a puberdade precoce periférica costuma apresentar uma evolução asincrônica ou sinais de virilização (como clitoromegalia), o que foi expressamente descartado pelo exame físico da questão.\n\nAlternativa c) Incorreta. A telarca precoce é o desenvolvimento isolado de tecido mamário antes dos 8 anos de idade, sem outros sinais de puberdade. No caso descrito, a paciente já possui 9 anos e apresenta tanto telarca quanto pubarca, configurando o início da puberdade propriamente dita.\n\nAlternativa d) Incorreta. A pubarca precoce é definida como o aparecimento isolado de pelos pubianos, axilares ou odor axilar antes dos 8 anos em meninas, geralmente associada à adrenarca. A paciente iniciou o quadro na idade esperada.\n\nAlternativa e) Correta. O desenvolvimento puberal iniciado aos 8 anos e o estágio Tanner II aos 9 anos são marcos perfeitamente fisiológicos. O corrimento mucoide sem sinais inflamatórios é um achado esperado da estimulação estrogênica normal desta fase.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:49.564Z"
+  },
+  {
+    "id": "AJUDA_f731c8d4-64d8-4713-877d-947e0f1608c4",
+    "originalId": "f731c8d4-64d8-4713-877d-947e0f1608c4",
+    "statement": "Mulher, 18 anos de idade, G1P0A1, hígida, comparece a consulta médica de revisão pós abortamento, 30 dias após o esvaziamento uterino. Sem queixas e nega início de atividades sexuais. Traz resultado de anátomo patológico, indicando achados histopatológicos compatíveis com mola hidatiforme completa. Considerando o contexto clínico, assinale a conduta CORRETA neste momento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar o seguimento com dosagem de β-hCG plasmático e solicitar ultrassonografia endovaginal imediatamente para descartar doença invasora",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar o seguimento com dosagem de β-hCG plasmático e solicitar uma tomografia computadorizada de tórax e pelve para avaliar a extensão da doença",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar o seguimento com dosagem semanal de β-hCG plasmático quantitativo e prescrever imediatamente um método contraceptivo eficaz",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar radiografia de tórax para avaliar a presença de metástases pulmonares, dado o risco de evolução para neoplasia trofoblástica gestacional",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico de Mola Hidatiforme Completa exige um seguimento pós-molar rigoroso para detectar precocemente a evolução para Neoplasia Trofoblástica Gestacional (NTG), que ocorre em cerca de 15% a 20% dos casos de mola completa. O pilar desse acompanhamento é a vigilância bioquímica e a prevenção de uma nova gravidez.\n\nAlternativa a: Incorreta. O seguimento com β-hCG está correto, mas a solicitação de ultrassonografia endovaginal imediata não é a conduta de rotina para todas as pacientes assintomáticas. A ultrassonografia é indicada apenas se houver suspeita de esvaziamento incompleto, sangramento persistente ou se os níveis de β-hCG pararem de cair (platô) ou subirem.\n\nAlternativa b: Incorreta. Tomografias de tórax e pelve são exames de estadiamento utilizados apenas após o diagnóstico de Neoplasia Trofoblástica Gestacional (malignização). No momento atual, a paciente tem um diagnóstico de mola benigna em acompanhamento, tornando esses exames desnecessários e excessivos.\n\nAlternativa c: Correta. Esta alternativa descreve exatamente o protocolo de seguimento recomendado pela Federação Internacional de Ginecologia e Obstetrícia (FIGO) e pelas diretrizes brasileiras. A dosagem de β-hCG deve ser semanal até que se obtenham três valores negativos consecutivos. Depois, o acompanhamento segue mensal (geralmente por 6 meses para mola completa). A anticoncepção é fundamental e deve ser iniciada imediatamente, pois uma nova gestação elevaria o β-hCG e impediria o médico de saber se o aumento é pela gravidez ou pela persistência da doença (NTG).\n\nAlternativa d: Incorreta. A radiografia de tórax é o exame inicial para rastreio de metástases pulmonares na doença trofoblástica, mas sua indicação protocolar ocorre no momento do diagnóstico do esvaziamento (para fins de base) ou se houver diagnóstico de NTG pela curva de β-hCG. Solicitar apenas o raio X sem garantir o controle do hCG e a contracepção é uma conduta incompleta e inadequada para o seguimento padrão.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:49.564Z"
+  },
+  {
+    "id": "AJUDA_f7341197-68a8-4b94-b5b5-24cdefbe36b0",
+    "originalId": "f7341197-68a8-4b94-b5b5-24cdefbe36b0",
+    "statement": "Nuligesta, 30 anos, há 1 ano mantendo relações sexuais pênis-vagina cerca de 3 vezes por semana, sem uso de métodos contraceptivos e sem sucesso em engravidar. Ciclos menstruais a cada 30 a 32 dias, com 5 a 6 dias de duração e fluxo normal. Há 6 meses com dismenorréia moderada a intensa nos primeiros 2 a 3 dias do ciclo, com melhora parcial com anti-inflamatório não hormonal. Fez uso de contracepção hormonal combinada dos 15 aos 29 anos. Ao exame físico: IMC: 20,3 kg/m2; Ferriman: 2; cintura: 71 cm; PA:110x70 mmHg. Sem alterações ao exame ginecológico. Esposo de 28 anos, saudável, sem antecedentes importantes, hábitos ou uso de medicamentos. Esposo: espermograma sem alterações. Paciente: FSH: 6,3 mIU/mL. Histerossalpingografia sem anormalidades. Ultrassonografia transvaginal com útero sem anormalidades, ovário direito com volume de 6,8 cm3 e 12 folículos antrais e ovário esquerdo com volume de 5,8 cm3 e 6 folículos antrais. Ressonância pélvica sem anormalidades. Qual a melhor abordagem terapêutica para este caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estimulação ovariana e fertilização in vitro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Agonista do GnRH por 3 meses seguido de conduta expectante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indução da ovulação com gonadotrofinas para inseminação intrauterina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Videolaparoscopia cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Analise do caso:\n\nTrata-se de uma paciente jovem (30 anos) com infertilidade primaria ha 1 ano. A propedeutica basica demonstra:\n- Fator masculino normal (espermograma sem alteracoes);\n- Fator tubario normal (histerossalpingografia evidenciando permeabilidade tubaria bilateral);\n- Reserva ovariana preservada e ciclos ovulatorios (FSH de 6,3 mIU/mL, boa contagem de foliculos antrais e ciclos menstruais regulares);\n- Fator uterino e pelvico normais aos exames de imagem (ultrassonografia e ressonancia magnetica sem alteracoes).\n\nO quadro e compativel com Infertilidade Sem Causa Aparente (ISCA) ou endometriose estadio I/II (minima ou leve), que pode cursar com dismenorreia sem alteracoes em metodos de imagem convencionais. Em mulheres jovens (menos de 35 anos), com tempo de infertilidade relativamente curto, tubas pervias e semen normal, a abordagem inicial recomendada e a reproducao assistida de baixa complexidade: inducao da ovulacao associada a inseminacao intrauterina (IIU).\n\nAnalise das alternativas:\n\na) Incorreta. A fertilizacao in vitro (FIV) e um procedimento de alta complexidade indicado primariamente em situacoes como obstrucao tubaria bilateral, fator masculino grave, baixa reserva ovariana/idade materna avancada ou apos falha de tecnicas de baixa complexidade.\n\nb) Incorreta. O uso de agonistas do GnRH promove bloqueio do eixo hipotalamo-hipofise-ovario e anovulacao. A supressao hormonal isolada nao melhora as taxas de gestacao espontanea subsequentes na infertilidade e apenas adia a busca pela gravidez.\n\nc) Correta. A inducao da ovulacao (com gonadotrofinas ou indutores orais) combinada a inseminacao intrauterina e a terapia de primeira escolha para casais com ISCA ou endometriose minima/leve com tubas pervias, pois potencializa a ovulacao e aproxima os melhores espermatozoides do ovocito dentro da cavidade uterina.\n\nd) Incorreta. A videolaparoscopia de rotina nao e recomendada como primeira abordagem na infertilidade quando a ressonancia e a ultrassonografia sao normais e nao ha sintomas de dor incapacitante refrataria. Procedimentos cirurgicos invasivos devem ser evitados em prol do inicio do tratamento de reproducao assistida.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia",
+      "Endometriose",
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:49.564Z"
+  },
+  {
+    "id": "AJUDA_f75aee0c-f031-4545-8f60-e310318acec8",
+    "originalId": "f75aee0c-f031-4545-8f60-e310318acec8",
+    "statement": "Segundo o documento \"Panorama da violência letal e sexual contra crianças e adolescentes no Brasil (2021-2023), 2ª edição, 2024\", as mortes violentas contra crianças de até 9 anos cresceram no país: foram 520 vitimas de violência letal nesses três anos. O aumento foi mais sensível entre aqueles de até 4 anos, o que acende um alerta sobre os riscos a que estão submetidas as crianças na fase inicial de vida. Considerando o contexto apresentado, na abordagem de suspeita de violência contra crianças, deve ser observado que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "as fraturas espiraladas em diáfises em úmero e fêmur, em crianças que ainda não andam, decorrentes de torção e rotação forçada da extremidade sugerem maus-tratos, mesmo se isoladas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o mais importante diagnóstico diferencial de fraturas na infância deve ser realizado com a osteogênese imperfeita, cuja apresentação típica inclui fraturas de costela e fraturas múltiplas em vários estágios de cura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a combinação de hemorragia retiniana e subdural crônica indicam o diagnóstico provável de doença hemorrágica, portanto, uma vez que os cuidadores neguem história de trauma, a criança deve ser encaminhada para avaliação do hematologista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a investigação e a identificação do(a) agressor(a) são processos demorados, portanto a notificação deve ser postergada aguardando evidências conclusivas para evitar falsas denúncias e a possibilidade de revitimização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa A (Correta): Fraturas em ossos longos (como úmero e fêmur), especialmente as do tipo espiralado ou oblíquo, em crianças que ainda não possuem mobilidade própria (não andam ou não engatinham), são sinais clássicos de alerta para traumas não acidentais. O mecanismo de torção necessário para produzir tal lesão raramente ocorre de forma acidental nessa faixa etária, tornando a suspeita de maus-tratos mandatória, mesmo que a lesão seja isolada.\n\nAlternativa B (Incorreta): Embora a Osteogênese Imperfeita seja um diagnóstico diferencial importante, a descrição de fraturas de costelas e múltiplas fraturas em diferentes estágios de consolidação é, na verdade, altamente sugestiva de maus-tratos (trauma não acidental). As fraturas de costela, especificamente as posteriores, possuem altíssima especificidade para violência física infantil, pois exigem compressão torácica vigorosa.\n\nAlternativa C (Incorreta): A tríade composta por hemorragia retiniana, hematoma subdural e edema cerebral (muitas vezes com cuidadores negando trauma ou relatando traumas leves incompatíveis) é característica da Síndrome do Bebê Sacudido (Abusive Head Trauma). Embora distúrbios de coagulação devam ser descartados, a prioridade diagnóstica e de proteção à criança deve focar na suspeita de violência, e não apenas no encaminhamento hematológico isolado.\n\nAlternativa D (Incorreta): A notificação de suspeita de violência contra crianças e adolescentes é compulsória e deve ser realizada imediatamente diante da simples suspeita, conforme o Estatuto da Criança e do Adolescente (ECA) e normas do Ministério da Saúde. Não se deve aguardar confirmação diagnóstica ou identificação do agressor para notificar, pois o objetivo da notificação é a proteção da vítima e a interrupção do ciclo de violência.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Maus Tratos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:49.564Z"
+  },
+  {
+    "id": "AJUDA_f769149a-57b0-45e2-8aa3-15ec37a0c940",
+    "originalId": "f769149a-57b0-45e2-8aa3-15ec37a0c940",
+    "statement": "No que se refere à Linha de Cuidado à hepatite B no SUS, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "No contexto do Sistema Único de Saúde (SUS), a Linha de Cuidado pode ser definida como uma estratégia de organização do percurso preventivo centrada nas necessidades da população, garantindo um fluxo de cuidados preventivos primários e secundários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A elaboração, por parte apenas dos estados, de protocolos baseados em evidências para a regulação e o encaminhamento loco-regional do usuário com hepatite B, deve ser estimulada como importante ferramenta de orientação aos profissionais de saúde e gestores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estabelece a organização da Rede de Atenção à Saúde do SUS e aponta a Estratégia Saúde da Família como o principal modelo para a organização da APS, devendo ocupar a centralidade na ordenação das redes de atenção e na coordenação do cuidado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O Ministério da Saúde tem empenhado esforços de forma a superar a fragmentação das ofertas e fortalecer fluxos verticais entre Atenção Primária à Saúde (APS), Atenção Especializada e demais pontos da rede, a partir da valorização de um cuidado multiprofissional e compartilhado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c).\n\nAnálise detalhada das alternativas:\n\nAlternativa (a) Incorreta: A Linha de Cuidado (LC) não se limita ao percurso preventivo ou aos cuidados primários e secundários. Uma Linha de Cuidado no SUS é uma estratégia de gestão e assistência que engloba todo o contínuo do cuidado, indo desde a promoção da saúde e prevenção até o diagnóstico, o tratamento medicamentoso, o acompanhamento crônico e a reabilitação. O erro está em restringir a LC apenas à prevenção e aos níveis primário e secundário de atenção.\n\nAlternativa (b) Incorreta: A elaboração de protocolos e diretrizes não é uma competência exclusiva dos estados. No SUS, a gestão é tripartite. O Ministério da Saúde estabelece os Protocolos Clínicos e Diretrizes Terapêuticas (PCDT) em nível nacional, que servem de base para que estados e municípios organizem seus fluxos locorregionais. A palavra \"apenas\" invalida a alternativa, pois exclui a responsabilidade federal e municipal na coordenação e execução dessas políticas.\n\nAlternativa (c) Correta: Esta alternativa descreve a base do funcionamento das Redes de Atenção à Saúde (RAS). Para a hepatite B, assim como para outras condições crônicas, a Atenção Primária à Saúde (APS), por meio da Estratégia Saúde da Família, é a porta de entrada preferencial e o centro ordenador da rede. É na APS que se realiza a busca ativa, a vacinação, os testes rápidos e o acompanhamento longitudinal do paciente, coordenando o encaminhamento para a Atenção Especializada quando necessário.\n\nAlternativa (d) Incorreta: O esforço do Ministério da Saúde e do SUS é justamente para superar os fluxos verticais e a fragmentação do cuidado. Os modelos verticais são focados em programas isolados que não se comunicam. O objetivo atual é o fortalecimento das Redes de Atenção à Saúde (RAS), que pressupõem fluxos horizontais, integrados e um cuidado compartilhado entre os diferentes pontos de atenção (Primária, Especializada, Vigilância, etc.), visando à integralidade da assistência.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Hepatites Virais",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:49.564Z"
+  },
+  {
+    "id": "AJUDA_f775a7f3-0e53-4d8a-970d-7825c1f65e4a",
+    "originalId": "f775a7f3-0e53-4d8a-970d-7825c1f65e4a",
+    "statement": "Em uma unidade de pronto atendimento (UPA), dá entrada uma mulher de 68 anos, diabética, asmática, com osteopenia, doença arterial periférica, HAS, insuficiência renal (taxa de filtração glomerular = 25mL/min/1,73m2), em uso de metformina 2g/dia, glibenclamida 20mg/dia, AAS, cilostazol 100mg 2x/dia, enalapril 10mg 2x/dia, hidroclorotiazida 25mg/dia, sinvastatina 40mg à noite, fumarato de formoterol hidratado + budesonida 12/400 microgramas 2x/dia inalável, omeprazol 40mg/dia e bifosfanado. Ela se queixa de só conseguir dormir sentada, cansaço, inchaço nas pernas e na barriga e veias aumentadas no pescoço. Refere que tudo piorou após ter iniciado cilostazol. Diante desse quadro, é feita uma dose de furosemida venosa. Após a melhora da paciente, a liberação é realizada com a prescrição de carvedilol 3,125mg 2x/dia, espironolactona, furosemida 40mg pela manhã e mantidas as outras medicações. A paciente retorna no dia seguinte, na parte da manhã, com dispneia importante e sibilos, além de estar hipotensa. É realizado um eletrocardiograma (ECG) que revela alteração da condução e, após alguns minutos, a paciente vem a óbito. Em relação ao caso descrito, as drogas usadas que podem ter piorado a situação clínica da paciente, inclusive levando ao óbito, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "enalapril, bifosfonado, hidroclorotiazida e espironolactona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "bifosfonado, carvedilol, metformina e sinvastatina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "enalapril, hidroclorotiazida, cilostazol e sinvastatina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "metformina, cilostazol, carvedilol e espironolactona",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do quadro clínico:\n\nA paciente apresenta uma Insuficiência Cardíaca (IC) descompensada, caracterizada por dispneia de decúbito (dormir sentada), edema, ascite e turgência jugular. O quadro clínico e o desfecho fatal estão diretamente relacionados a erros na prescrição e no manejo de medicações diante das comorbidades da paciente (Asma, Insuficiência Renal Crônica Estágio 4 e IC).\n\nAnálise das drogas citadas na alternativa D:\n\n1. Cilostazol: É um inibidor da fosfodiesterase 3 utilizado para doença arterial periférica. Essa medicação é formalmente contraindicada em pacientes com qualquer grau de insuficiência cardíaca, pois aumenta a mortalidade por arritmias e piora a função ventricular. O próprio enunciado indica que a paciente piorou após o início dessa droga.\n\n2. Metformina: A paciente possui uma taxa de filtração glomerular de 25 mL/min/1,73m². O uso de metformina é contraindicado quando a filtração glomerular é inferior a 30 mL/min devido ao risco elevado de acidose lática, uma complicação metabólica grave e potencialmente fatal.\n\n3. Carvedilol: Trata-se de um betabloqueador não seletivo. Ele apresenta duas contraindicações no momento em que foi prescrito: primeiro, a paciente é asmática e o bloqueio de receptores beta-2 pode desencadear broncoespasmo grave (o que explica os sibilos e a dispneia importante no retorno); segundo, betabloqueadores não devem ser iniciados ou titulados em pacientes ainda instáveis ou com sinais de congestão, sob o risco de queda do débito cardíaco e hipotensão.\n\n4. Espironolactona: É um antagonista da aldosterona que poupa potássio. Seu uso é contraindicado em pacientes com insuficiência renal grave (filtração glomerular abaixo de 30 mL/min) devido ao altíssimo risco de hipercalemia fatal. A hipercalemia provoca distúrbios de condução cardíaca, visíveis no eletrocardiograma (ECG), e pode levar rapidamente à parada cardiorrespiratória.\n\nAnálise das demais alternativas:\n\nAlternativa A: Incorreta. Embora o enalapril e a espironolactona possam elevar o potássio, o bifosfonado e a hidroclorotiazida não explicam o quadro de broncoespasmo e o óbito agudo nesse contexto clínico de forma tão direta quanto as contraindicações da alternativa D.\n\nAlternativa B: Incorreta. O bifosfonado (usado para osteopenia) e a sinvastatina (estatina para dislipidemia) não possuem relação causal com a descompensação respiratória, hipotensão ou arritmia fatal descritas no caso.\n\nAlternativa C: Incorreta. A hidroclorotiazida e a sinvastatina não são drogas que, isoladamente ou em conjunto, justificariam o broncoespasmo (sibilos) ou a morte súbita por alteração de condução no ECG nesta paciente. O erro maior reside na combinação de drogas que agridem diretamente a função renal e pulmonar já comprometidas.\n\nConclusão:\n\nA alternativa D está correta porque identifica as drogas cujas contraindicações foram ignoradas: o Cilostazol (contraindicado na IC), a Metformina e a Espironolactona (contraindicadas pela função renal reduzida) e o Carvedilol (contraindicado na asma e na fase de descompensação aguda da IC).",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Asma",
+      "Doença Renal Crônica (DRC)",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:49.564Z"
+  },
+  {
+    "id": "AJUDA_f7762d35-29a2-42b2-9859-2cbac0a5d3b6",
+    "originalId": "f7762d35-29a2-42b2-9859-2cbac0a5d3b6",
+    "statement": "A sepse neonatal é causa importante de morte no período neonatal. Um fator que modifica a evolução clínica e previne a sepse precoce por estreptococos do grupo B (EGB) é a realização de antibiótico profilático intraparto. Os casos abaixo são recém-nascidos (RN) termo, cujas mães não receberam profilaxia antibiótica intraparto para EGB. Assinale a alternativa que apresenta uma situação na qual a profilaxia estaria indicada, conforme orientação da SBP.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gestante que apresentou infecção urinária por E. coli no terceiro trimestre, tratada por 6 dias e sem controle de cura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gestante submetida à cesariana fora do trabalho de parto, com bolsa íntegra, mas com cultura positiva para EGB na gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gestante com tempo de bolsa rota de 13 horas, sem outros sinais ou sintomas e sem cultura para EGB conhecida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gestante com bacteriúria assintomática por EGB no sétimo mês de gestação, que foi adequadamente tratada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Gestante com cultura negativa para EGB nesta gestação, mas que teve cultura positiva em gestação prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A profilaxia intraparto para o estreptococo do grupo B (EGB) segue critérios específicos para reduzir a incidência de sepse neonatal precoce. Vamos analisar cada alternativa com base nas recomendações da Sociedade Brasileira de Pediatria (SBP) e dos protocolos internacionais.\n\nAlternativa A: Incorreta. A indicação de profilaxia intraparto é específica para a prevenção da infecção pelo estreptococo do grupo B (*Streptococcus agalactiae*). Uma infecção urinária causada por outra bactéria, como a *E. coli*, não constitui indicação para este protocolo profilático específico.\n\nAlternativa B: Incorreta. A profilaxia não está indicada para gestantes submetidas à cesariana eletiva, ou seja, realizada fora do trabalho de parto e com membranas íntegras. Nestas condições, o risco de transmissão vertical do EGB é considerado desprezível, mesmo que a gestante tenha uma cultura positiva para a bactéria.\n\nAlternativa C: Incorreta. Em gestantes com cultura para EGB desconhecida, a profilaxia só deve ser realizada se houver fatores de risco intraparto. Os critérios são: febre materna (maior ou igual a 38 °C), parto pré-termo (abaixo de 37 semanas) ou tempo de bolsa rota igual ou superior a 18 horas. Como o tempo de ruptura das membranas na alternativa foi de 13 horas e não havia outros sintomas, a profilaxia não estaria indicada.\n\nAlternativa D: Correta. A detecção de bacteriúria por EGB em qualquer fase da gestação atual, independentemente da contagem de colônias ou de ter sido tratada anteriormente, é uma indicação formal de profilaxia antibiótica intraparto. A bacteriúria é interpretada como um sinal de colonização vaginal intensa, o que aumenta significativamente o risco de sepse neonatal precoce.\n\nAlternativa E: Incorreta. Uma cultura positiva para EGB em gestação anterior não é indicação de profilaxia na gestação atual, desde que o rastreio da gestação atual tenha sido negativo. No histórico obstétrico, a única situação que indica profilaxia automática em todas as gestações subsequentes é o nascimento anterior de um filho que apresentou doença invasiva (sepse, pneumonia ou meningite) por EGB.\n\nGabarito: Alternativa (d).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Cuidados Neonatais",
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:49.564Z"
+  },
+  {
+    "id": "AJUDA_f77c40e3-aa1c-44f3-99bb-955020ffd91a",
+    "originalId": "f77c40e3-aa1c-44f3-99bb-955020ffd91a",
+    "statement": "Sobre o forame oval e o ducto arterioso do coração do feto e do recém-nascido, considere as afirmativas a seguir. \nI. Na vida fetal, o fluxo de sangue pelo forame oval ocorre do átrio direito para o átrio esquerdo. \nII. Após o nascimento, o aumento da pressão no átrio direito é o responsável pelo fechamento do forame oval. \nIII. O principal mecanismo para o fechamento espontâneo do ducto arterioso após o nascimento é a redução da pressão na aorta. \nIV. Em casos de cardiopatia congênita, pode ser necessário a manutenção da perviedade do ducto arterioso após o nascimento até o momento da cirurgia.\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreendermos essa questão, precisamos revisar a fisiologia da transição da circulação fetal para a neonatal.\n\nAnálise das afirmativas:\n\nAfirmativa I (Correta): Na vida fetal, os pulmões estão colapsados e apresentam alta resistência vascular. O sangue oxigenado vindo da placenta pela veia umbilical chega ao átrio direito e, devido à alta pressão nas cavidades direitas e à anatomia da válvula da veia cava inferior, grande parte desse fluxo é direcionada através do forame oval para o átrio esquerdo. Esse mecanismo garante que o sangue mais oxigenado chegue à circulação sistêmica e ao cérebro.\n\nAfirmativa II (Incorreta): O fechamento do forame oval após o nascimento ocorre pelo mecanismo inverso ao descrito. Com a primeira respiração, a resistência vascular pulmonar cai drasticamente e o fluxo de sangue para os pulmões aumenta. Isso resulta em um maior retorno venoso para o átrio esquerdo, elevando a pressão nesta câmara. Quando a pressão no átrio esquerdo supera a do átrio direito, a lâmina do forame oval é pressionada contra o septo, fechando-o funcionalmente.\n\nAfirmativa III (Incorreta): O fechamento do ducto arterioso não é causado pela redução da pressão na aorta. Na verdade, os principais estímulos para o seu fechamento são o aumento da pressão parcial de oxigênio (PaO2) no sangue arterial após o início da respiração e a queda acentuada nos níveis de prostaglandinas circulantes (especialmente a PGE2), que antes eram mantidas em níveis altos pela placenta e pela baixa oxigenação fetal.\n\nAfirmativa IV (Correta): Em certas cardiopatias congênitas, conhecidas como canal-dependentes, a sobrevivência do recém-nascido depende da manutenção da perviedade do ducto arterioso. Exemplos incluem a transposição das grandes artérias (para permitir a mistura de sangue), a atresia pulmonar (para garantir fluxo sanguíneo aos pulmões) ou a síndrome da hipoplasia do coração esquerdo (para garantir fluxo sistêmico). Nesses casos, utiliza-se a infusão contínua de prostaglandina E1 para manter o ducto aberto até a intervenção cirúrgica.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A afirmativa II está errada, pois é o aumento da pressão no átrio esquerdo (e não no direito) que fecha o forame oval.\n\nAlternativa b) Correta. Apenas as afirmativas I e IV descrevem corretamente a fisiologia e a aplicação clínica da circulação fetal e neonatal.\n\nAlternativa c) Incorreta. A afirmativa III está errada, pois o fechamento do ducto arterioso é mediado por oxigênio e prostaglandinas, não pela pressão aórtica.\n\nAlternativa d) Incorreta. Contém as afirmativas II e III, que estão fisiologicamente incorretas.\n\nAlternativa e) Incorreta. Contém as afirmativas II e III, que estão incorretas conforme explicado anteriormente.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:49.564Z"
+  }
+]

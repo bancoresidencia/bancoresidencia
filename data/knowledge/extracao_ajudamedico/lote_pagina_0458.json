@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_814690ef-b7d8-4962-890c-078c7e2b1b22",
+    "originalId": "814690ef-b7d8-4962-890c-078c7e2b1b22",
+    "statement": "Associe as colunas a seguir, relacionando as vacinas com as formas de apresentação do componente antigênico de cada uma delas.\n1. BCG\n2. Vacina Oral Poliomielite (VOP)\n3. Covid monovalente\n4. Vacina Hepatite B\n5. Vacina DPT\n\n( ) Frações de vírus\n( ) RNA mensageiro\n( ) Vírus atenuado\n( ) Toxóide e bactéria inativada\n( ) Bacilos atenuados\n\nA alternativa que apresenta a sequência CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 – 4 – 3 – 2 – 5",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2 – 5 – 1 – 4 – 3",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "4 – 3 – 2 – 5 – 1",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "5 – 1 – 4 – 3 – 2",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é fundamental correlacionar cada imunizante com sua tecnologia de produção e composição antigênica. Vamos analisar cada item da primeira coluna para preencher a segunda:\n\n1. BCG (Bacilo Calmette-Guérin): É composta por bacilos vivos atenuados provenientes da *Mycobacterium bovis*. Portanto, relaciona-se com Bacilos atenuados.\n\n2. Vacina Oral Poliomielite (VOP): Conhecida como vacina Sabin, utiliza o poliovírus vivo, porém enfraquecido (atenuado), para induzir imunidade. Portanto, relaciona-se com Vírus atenuado.\n\n3. Covid monovalente: As principais vacinas monovalentes utilizadas no Programa Nacional de Imunizações (como a da Pfizer) utilizam a tecnologia de RNA mensageiro (mRNA), que instrui as células a produzirem a proteína S do vírus para gerar resposta imune. Portanto, relaciona-se com RNA mensageiro.\n\n4. Vacina Hepatite B: É uma vacina de subunidade, composta apenas por uma fração do vírus, especificamente o antígeno de superfície (HBsAg) produzido por tecnologia de DNA recombinante. Portanto, relaciona-se com Frações de vírus.\n\n5. Vacina DPT: Protege contra Difteria, Coqueluche (*Pertussis*) e Tétano. A difteria e o tétano são combatidos por toxoides (toxinas inativadas), enquanto o componente da coqueluche na DPT clássica é composto pela bactéria *Bordetella pertussis* inteira e inativada. Portanto, relaciona-se com Toxoide e bactéria inativada.\n\nSeguindo essa lógica, a sequência da segunda coluna, de cima para baixo, é: 4 - 3 - 2 - 5 - 1.\n\nAnálise das alternativas:\n\na) 1 – 4 – 3 – 2 – 5: Incorreta. Inverte a lógica ao colocar BCG como frações de vírus e DPT como bacilos atenuados.\n\nb) 2 – 5 – 1 – 4 – 3: Incorreta. Associa erroneamente a VOP a frações de vírus e a Covid a bacilos atenuados.\n\nc) 4 – 3 – 2 – 5 – 1: Correta. Apresenta a correlação exata conforme a tecnologia de cada vacina: Hepatite B (Frações), Covid (RNAm), VOP (Vírus atenuado), DPT (Toxoide/Bactéria inativada) e BCG (Bacilos atenuados).\n\nd) 5 – 1 – 4 – 3 – 2: Incorreta. Associa a DPT a frações de vírus e a VOP a bacilos atenuados, o que não corresponde à realidade biológica dos imunizantes.\n\nGabarito: Letra (c).",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:42.097Z"
+  },
+  {
+    "id": "AJUDA_81471826-9f69-4fc6-97d1-c663ec538b21",
+    "originalId": "81471826-9f69-4fc6-97d1-c663ec538b21",
+    "statement": "Homem, 65 anos, foi submetido à correção aberta de aneurisma roto da aorta abdominal infrarrenal com instabilidade hemodinâmica. Houve necessidade de clampeamento temporário de aorta supracelíaca e ligadura do óstio da artéria mesentérica inferior; com sucesso técnico. No pós-operatório, necessitou do uso de fármacos vasoativos para manutenção da pressão arterial, em redução progressiva. No 2º pós-operatório houve redução progressiva da ventilação mecânica até a extubação, porém com quadro de distensão abdominal, associada ao desconforto à palpação abdominal, sem sinais de irritação peritoneal e redução de ruídos hidroaéreos. Os exames laboratoriais revelaram Hb = 9,6 g/dL; leucócitos = 13.400, sendo 80% de neutrófilos; gasometria arterial: pH = 7,32, creatinina = 1,7. Diante do quadro, qual a conduta recomendada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verificar o posicionamento e a funcionalidade da sonda nasogástrica, uma vez que provavelmente trata-se de um íleo em pós-operatório de intervenção abdominal de grande porte, por não haver acidose significativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar tomografia computadorizada com contraste, pela possibilidade de isquemia intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar ultrassonografia de abdômen e pelve, pela possibilidade de abdômen agudo ou colecistite alitiásica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar retosigmoidoscopia, pela possibilidade de colite isquêmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Proceder à troca da sonda nasogástrica e programar laparotomia em 18 a 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de alto risco para colite isquêmica após a correção de um aneurisma de aorta abdominal (AAA) roto. Os principais fatores de risco presentes são: instabilidade hemodinâmica (choque), clampeamento supracelíaco (que interrompe temporariamente o fluxo para as artérias viscerais), ligadura da artéria mesentérica inferior (principal suprimento do cólon esquerdo e sigmoide) e o uso de drogas vasoativas (que causam vasoconstrição esplâncnica). No segundo dia de pós-operatório, a presença de distensão abdominal, dor à palpação, leucocitose e acidose metabólica leve reforça a suspeita dessa complicação, que ocorre em cerca de 15% a 30% dos casos de AAA roto.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Embora o íleo adinâmico seja comum após grandes cirurgias abdominais, os fatores de risco para isquemia são muito significativos neste caso. Ignorar a possibilidade de colite isquêmica diante de leucocitose, acidose e um histórico de choque e ligadura da artéria mesentérica inferior pode retardar um diagnóstico crítico. A conduta deve ser proativa para excluir isquemia.\n\nAlternativa b) Incorreta. A tomografia computadorizada com contraste pode mostrar espessamento da parede colônica ou pneumatose intestinal, mas não é o exame de escolha inicial nem o mais sensível para avaliar a viabilidade da mucosa do cólon em casos de colite isquêmica pós-operatória. Além disso, o paciente já apresenta creatinina elevada (1,7 mg/dL), o que exige cautela no uso de contraste iodado.\n\nAlternativa c) Incorreta. A ultrassonografia de abdômen tem baixa sensibilidade e especificidade para o diagnóstico de isquemia intestinal, sendo limitada pela distensão abdominal e pela presença de gases (meteorismo), comuns no pós-operatório. Embora possa diagnosticar colecistite alitiásica, esta não é a principal suspeita diagnóstica diante da fisiopatologia do caso.\n\nAlternativa d) Correta. A retossigmoidoscopia (ou colonoscopia flexível sem preparo e com insuflação mínima) é o padrão-ouro para o diagnóstico de colite isquêmica. Ela permite a visualização direta da mucosa para avaliar a presença de edema, hemorragia submucosa, palidez ou necrose francamente estabelecida. Como a região mais afetada costuma ser o sigmoide (devido à ligadura da artéria mesentérica inferior e à natureza de \"zona de transição\" vascular), a retossigmoidoscopia costuma ser suficiente para o diagnóstico inicial.\n\nAlternativa e) Incorreta. Programar uma laparotomia exploradora sem uma confirmação diagnóstica ou sinais de irritação peritoneal (peritonite) é uma conduta excessivamente agressiva e precoce. A conduta correta é realizar o exame endoscópico primeiro para graduar a isquemia. Se houver necrose transmural visualizada na endoscopia ou sinais de peritonite, aí sim a laparotomia estaria indicada imediatamente.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Abdome Agudo Vascular",
+      "Cirurgia Vascular",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:42.097Z"
+  },
+  {
+    "id": "AJUDA_814cd493-df04-412e-9641-551eef17b56b",
+    "originalId": "814cd493-df04-412e-9641-551eef17b56b",
+    "statement": "Na oclusão arterial aguda, frequentemente, o paciente é submetido a revascularização cirúrgica do membro acometido, e, no pós operatório, deve-se atentar ao quadro de isquemia, seguida de reperfusão.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não se observa reação do oxigênio molecular com a hipoxantina acumulada no tecido isquêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "São comuns formação de radicais livres do oxigênio, atração de leucócitos e lipoperoxidação de membranas celulares.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O radical superóxido reage com óxido nítrico, causando vasodilatação e inibição plaquetária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O íon ferro não participa da formação do radical hidroxila.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO tema central desta questão é a fisiopatologia da Síndrome de Isquemia-Reperfusão, um fenômeno que ocorre quando o fluxo sanguíneo é restaurado em um tecido que permaneceu isquêmico por um período prolongado. Embora a revascularização seja necessária, a chegada súbita de oxigênio e nutrientes pode desencadear uma cascata de danos celulares e sistêmicos.\n\nAnálise das alternativas:\n\na) Incorreta. Durante a isquemia, o ATP é degradado até hipoxantina, que se acumula no tecido. Simultaneamente, a enzima xantina desidrogenase é convertida em xantina oxidase. No momento da reperfusão, o oxigênio molecular (O2) que retorna ao tecido reage obrigatoriamente com a hipoxantina, mediado pela xantina oxidase, gerando radicais livres como o ânion superóxido. Portanto, essa reação é um dos pilares do dano por reperfusão.\n\nb) Correta. A restauração do fluxo de oxigênio para um ambiente metabolicamente alterado promove a formação em larga escala de espécies reativas de oxigênio (radicais livres). Esses radicais atacam os lipídios das membranas celulares (lipoperoxidação), destruindo a integridade da célula. Além disso, o processo inflamatório atrai e ativa leucócitos (especialmente neutrófilos), que liberam mais enzimas citotóxicas e radicais livres, amplificando a lesão tecidual.\n\nc) Incorreta. O radical superóxido de fato reage com o óxido nítrico (NO), mas o resultado é a formação de peroxinitrito, uma substância altamente reativa e citotóxica. Essa reação reduz a disponibilidade de óxido nítrico (que é um importante vasodilatador e inibidor de agregação plaquetária), resultando em vasoconstrição e prejuízo à microcirculação, e não o contrário.\n\nd) Incorreta. O íon ferro desempenha um papel fundamental na formação do radical hidroxila (o radical livre mais nocivo). Através da Reação de Fenton, o ferro (Fe2+) reage com o peróxido de hidrogênio (gerado na reperfusão) para produzir o radical hidroxila. Assim, o ferro é um catalisador essencial do estresse oxidativo na reperfusão.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:42.097Z"
+  },
+  {
+    "id": "AJUDA_8150d3c0-306b-4dab-a126-a02d4d8b3928",
+    "originalId": "8150d3c0-306b-4dab-a126-a02d4d8b3928",
+    "statement": "Mulher cis de 25 anos, nulípara, com ciclos menstruais irregulares, procura orientação contraceptiva. Ela relata que teve episódios de enxaqueca com aura nos últimos 6 meses em acompanhamento com neurologista.\nQual é a melhor opção contraceptiva para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dispositivo intrauterino liberador de levonorgestrel (DIU-LNG), pois não contém etinilestradiol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Mulheres com enxaqueca com aura não podem utilizar nenhum método contraceptivo hormonal, sendo o preservativo considerado o único método elegível para essa paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anel vaginal combinado (etinilestradiol + etonogestrel) por evitar a primeira passagem hepática e disponibilizar dose mínima de hormônios sistêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adesivo transdérmico contraceptivo (etinilestradiol + norelgestromina), pois seu progestágeno não é trombogênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO ponto central para a resolução desta questão é o diagnóstico de enxaqueca com aura. De acordo com os Critérios Médicos de Elegibilidade da Organização Mundial da Saúde (OMS), a presença de enxaqueca com aura em qualquer idade contraindica formalmente o uso de métodos contraceptivos combinados (que contêm estrogênio). Essa contraindicação é classificada como Categoria 4 (risco inaceitável à saúde), devido ao aumento significativo do risco de Acidente Vascular Cerebral (AVC) isquêmico nessas pacientes.\n\nALTERNATIVA A - CORRETA\nO Dispositivo Intrauterino liberador de Levonorgestrel (DIU-LNG) é um método que contém apenas progestagênio. Para pacientes com enxaqueca com aura, os métodos de progestagênio isolado são classificados como Categoria 2 pela OMS (os benefícios superam os riscos). Por não conter etinilestradiol (estrogênio), o DIU-LNG não aumenta o risco de eventos tromboembólicos ou neurovasculares, sendo uma opção segura, altamente eficaz e adequada para uma paciente nulípara com ciclos irregulares.\n\nALTERNATIVA B - INCORRETA\nA proibição do uso de hormônios para mulheres com enxaqueca com aura restringe-se aos métodos combinados (estrogênio + progestagênio). Pacientes com essa condição podem utilizar com segurança métodos hormonais compostos apenas por progestagênio (como o DIU-LNG, o implante subdérmico e a minipílula) ou métodos não hormonais (como o DIU de cobre). O preservativo é um método de barreira importante, mas não é a única opção disponível.\n\nALTERNATIVA C - INCORRETA\nO anel vaginal é um método contraceptivo combinado, pois contém etinilestradiol. Embora a via vaginal evite a primeira passagem hepática, o estrogênio atinge a circulação sistêmica e mantém o risco elevado de complicações isquêmicas em pacientes com enxaqueca com aura. Portanto, é classificado como Categoria 4 da OMS para este caso, independentemente da via de administração.\n\nALTERNATIVA D - INCORRETA\nO adesivo transdérmico também é um método combinado. Assim como no caso do anel vaginal e das pílulas combinadas, a via transdérmica não elimina o risco associado ao componente estrogênico (etinilestradiol) em pacientes que apresentam aura. A classificação da OMS para o adesivo nesta paciente também é Categoria 4 (uso proibido). A discussão sobre a trombogenicidade do progestagênio é irrelevante frente à contraindicação absoluta do estrogênio para esta patologia neurológica.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:42.097Z"
+  },
+  {
+    "id": "AJUDA_8157e4f0-da9a-44d5-a011-b318fc30434d",
+    "originalId": "8157e4f0-da9a-44d5-a011-b318fc30434d",
+    "statement": "A respeito de ferramentas de abordagem familiar, correlacione a COLUNA II com a COLUNA I.\n\nAssinale a sequência CORRETA de respostas em relação à COLUNA II.",
+    "options": [
+      {
+        "id": "A",
+        "text": "2- 4- 3- 1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "3- 4- 2- 1",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1- 3- 4- 2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "3- 2- 1- 4",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento das ferramentas de abordagem familiar utilizadas na Atenção Primária à Saúde para compreender a dinâmica, a estrutura e o contexto social dos pacientes.\n\nCORRELAÇÃO DOS ITENS\n\n(3) APGAR familiar: O primeiro parêntese refere-se à funcionalidade e satisfação familiar. O nome APGAR é um acrônimo para as dimensões avaliadas: Adaptação (Adaptation), Parceria (Partnership), Crescimento (Growth), Afeto (Affection) e Resolutividade (Resolve). É um questionário que mede a percepção do indivíduo sobre o funcionamento de sua família.\n\n(4) Ciclo vital: O segundo parêntese trata do desenvolvimento da família ao longo do tempo. O ciclo vital compreende as fases previsíveis que a maioria das famílias atravessa (como casamento, nascimento dos filhos, adolescência, ninho vazio e velhice). Cada fase possui crises intrínsecas e eventos marcantes que podem estar relacionados ao processo de adoecimento.\n\n(2) Ecomapa: O terceiro parêntese descreve a ferramenta que avalia os apoios sociais. O ecomapa é um diagrama que mostra a relação da família com o ambiente externo (igreja, escola, serviços de saúde, trabalho, amigos). Ele serve para identificar a força e a qualidade dos vínculos da família com sua rede de apoio social.\n\n(1) Genograma: O quarto parêntese refere-se à representação gráfica da estrutura familiar. O genograma detalha a composição da família de pelo menos três gerações, permitindo identificar padrões de comportamento, doenças hereditárias, tipos de vínculos (estreitos, conflituosos) e os papéis ocupados por cada membro.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) 2- 4- 3- 1: Incorreta. Atribui erroneamente o Ecomapa (2) à definição de funcionalidade familiar, que pertence ao APGAR.\n\nAlternativa b) 3- 4- 2- 1: Correta. Estabelece a sequência exata das definições conforme os conceitos da Medicina de Família e Comunidade: APGAR (funcionalidade), Ciclo Vital (eventos temporais), Ecomapa (rede externa) e Genograma (estrutura geracional).\n\nAlternativa c) 1- 3- 4- 2: Incorreta. Associa o Genograma (1) à funcionalidade e o APGAR (3) aos eventos temporais do ciclo vital, invertendo os conceitos fundamentais.\n\nAlternativa d) 3- 2- 1- 4: Incorreta. Embora acerte o primeiro item (APGAR), confunde a definição de Ecomapa com Ciclo Vital e de Genograma com a rede de vínculos externos.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/547fca4894984ffcd0d1496fd671ecf028b88aa3c82a92cc63052921bf6a12e3.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_8157e4f0-da9a-44d5-a011-b318fc30434d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:42.715Z"
+  },
+  {
+    "id": "AJUDA_815a0d23-eee4-4ec4-b877-4845eeec8e48",
+    "originalId": "815a0d23-eee4-4ec4-b877-4845eeec8e48",
+    "statement": "Paciente, 28 anos, G2P0A1, 6 semanas pela DUM, apresenta dor pélvica de leve intensidade e sangramento genital vinhoso. USG transvaginal: massa anexial esquerda de 2,5 cm de diâmetro médio, sem líquido livre em fundo de saco. β-hCG inicial: 3.200 mUI/mL. Opta-se por metotrexato dose única (50 mg/m2). No 4º dia: β-hCG 3.050 mUI/mL; no 7º dia: 2.750 mUI/mL. Paciente permanece assintomática. Assinale a alternativa que apresenta a conduta mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Conduta expectante com controle de β-hCG em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir dose de metotrexato.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Manter seguimento semanal do β-hCG até negativação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar salpingectomia laparoscópica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo farmacológico da gestação ectópica íntegra com metotrexato (MTX) e os critérios de seguimento baseados nos níveis de beta-hCG.\n\nA conduta de escolha para pacientes com gestação ectópica que preenchem critérios para tratamento clínico (estabilidade hemodinâmica, massa anexial pequena, beta-hCG em níveis moderados e ausência de atividade cardíaca embrionária) é o metotrexato. O protocolo de dose única exige a monitorização do beta-hCG nos dias 1 (dia da aplicação), 4 e 7.\n\nAnálise do caso:\n- Beta-hCG no dia 4: 3.050 mUI/mL.\n- Beta-hCG no dia 7: 2.750 mUI/mL.\n\nPara considerar que o tratamento está sendo efetivo e migrar para o seguimento semanal, é necessária uma queda maior ou igual a 15% nos níveis de beta-hCG entre o 4º e o 7º dia. \n\nCálculo da queda:\n- Diferença absoluta: 3.050 - 2.750 = 300.\n- Percentual de queda: (300 / 3.050) x 100 = aproximadamente 9,8%.\n\nComo a queda foi de apenas 9,8% (menor que os 15% preconizados), o protocolo define que o tratamento inicial falhou, sendo necessária uma nova intervenção.\n\nAnálise das alternativas:\n\na) Incorreta. A conduta expectante ou apenas a repetição em 48 horas não é adequada, pois o critério de sucesso do 7º dia não foi atingido. Insistir na conduta sem nova intervenção aumenta o risco de ruptura tubária.\n\nb) Correta. Diante de uma queda inferior a 15% entre o 4º e o 7º dia em uma paciente que permanece clinicamente estável e assintomática, a conduta protocolar é administrar uma segunda dose de metotrexato (50 mg/m²).\n\nc) Incorreta. O seguimento semanal até a negativação só é iniciado após a confirmação de uma queda satisfatória (igual ou superior a 15%) entre o D4 e o D7. No caso em questão, essa queda não ocorreu.\n\nd) Incorreta. Embora a cirurgia (salpingectomia ou salpingostomia) seja o tratamento definitivo, ela é reservada prioritariamente para casos de instabilidade hemodinâmica, sinais de ruptura (líquido livre na USG), falha de múltiplas doses de MTX ou desejo da paciente. Como a paciente está assintomática e estável, a repetição da dose do medicamento é a conduta preferencial antes de indicar um procedimento invasivo.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:42.715Z"
+  },
+  {
+    "id": "AJUDA_815a4fc8-b89c-42d3-9cd6-112270d1a254",
+    "originalId": "815a4fc8-b89c-42d3-9cd6-112270d1a254",
+    "statement": "A valorização dos diferentes sujeitos implicados no processo de produção de saúde é a base da Política Nacional de Humanização (PNH).\nA respeito da PNH, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Segundo a PNH, a organização dos serviços de saúde se dá a partir do saber das profissões.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quanto maior a autonomia e possibilidade de protagonismo dos sujeitos, maiores as chances de se implantar a PNH.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A PNH pressupõe a dissolução da divisão de papéis entre gestão, trabalhadores e usuários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A democratização do poder para os municípios diminui a importância do Ministério da Saúde no SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Os conselhos tripartites do SUS pressupõe a participação dos trabalhadores da saúde, dos usuários e dos proprietários de hospitais privados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Política Nacional de Humanização (PNH), também conhecida como HumanizaSUS, é uma política transversal que busca transformar as relações entre gestores, trabalhadores e usuários para qualificar a assistência e a gestão no Sistema Único de Saúde (SUS).\n\nAlternativa A: Incorreta. A PNH propõe justamente a superação do modelo centrado exclusivamente no saber técnico das profissões ou na hegemonia de determinadas categorias. O objetivo é a valorização da troca de saberes e a coprodução de saúde, integrando o conhecimento científico com a experiência e a subjetividade dos usuários e de todos os profissionais envolvidos no cuidado.\n\nAlternativa B: Correta. Esta alternativa baseia-se em um dos princípios fundamentais da PNH: o protagonismo, a autonomia e a corresponsabilidade dos sujeitos e coletivos. A política entende que a humanização só é possível quando os envolvidos deixam de ser objetos passivos de intervenção e passam a ser sujeitos ativos, com autonomia para influenciar os processos de saúde e a organização do trabalho.\n\nAlternativa C: Incorreta. A PNH não busca a dissolução dos papéis ou das responsabilidades de cada grupo. O que a política propõe é a transversalidade e a cogestão, ou seja, aumentar a comunicação e a interação entre gestão, trabalhadores e usuários. Cada grupo mantém suas funções, mas trabalha de forma integrada e democrática, rompendo com estruturas excessivamente hierarquizadas.\n\nAlternativa D: Incorreta. A descentralização do poder para os municípios é uma diretriz estruturante do SUS (prevista na Constituição e na Lei 8.080/90), mas isso não diminui a importância do Ministério da Saúde. O órgão federal continua com o papel fundamental de formulador de políticas nacionais, coordenador do sistema e principal financiador. Além disso, este tema refere-se à organização administrativa do SUS e não especificamente à essência da PNH.\n\nAlternativa E: Incorreta. As comissões tripartites (como a CIT - Comissão Intergestores Tripartite) são foros de pactuação compostos exclusivamente por gestores (representantes do Ministério da Saúde, dos estados e dos municípios). A participação de trabalhadores e usuários ocorre nos Conselhos de Saúde, que são as instâncias de controle social e possuem composição paritária (50 por cento de usuários, 25 por cento de trabalhadores de saúde e 25 por cento de gestores e prestadores de serviços).",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:42.715Z"
+  },
+  {
+    "id": "AJUDA_815c4541-19ab-4883-b0a9-552ea204a0c9",
+    "originalId": "815c4541-19ab-4883-b0a9-552ea204a0c9",
+    "statement": "A estratégia Consultório na Rua foi instituída pela Política Nacional de Atenção Básica, em 2011, visando ampliar o acesso da população em situação de rua aos serviços de saúde. Faz parte das atribuições das suas equipes técnicas",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar atendimentos médicos apenas em consultórios fixos, provendo meios para o encaminhamento dos pacientes em situação de rua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "oferecer atenção integral à saúde das pessoas em situação de rua, atuando de forma itinerante e em parceria com outras instituições de saúde e assistência social.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "focar exclusivamente na saúde mental, sem considerar outras necessidades de saúde da população em situação de rua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "atuar apenas durante o horário comercial, limitando o acesso das pessoas em situação de rua aos serviços de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "desenvolver ações de saúde apenas em áreas urbanas, sem qualquer possibilidade de flexibilização para atender habitantes de áreas rurais ou periurbanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A estratégia Consultório na Rua (CnR) foi instituída no âmbito da Política Nacional de Atenção Básica (PNAB) para enfrentar a vulnerabilidade da população em situação de rua. O objetivo central é levar a assistência de saúde até onde o cidadão está, garantindo os princípios de equidade e integralidade do SUS.\n\nAlternativa (a) está incorreta: O diferencial do Consultório na Rua é justamente o caráter itinerante. Embora as equipes estejam vinculadas a uma Unidade Básica de Saúde ou centro de referência, sua principal atribuição é realizar o cuidado in loco, nos territórios onde a população reside ou circula, e não se limitar a consultórios fixos.\n\nAlternativa (b) está correta: Esta alternativa sintetiza as diretrizes da PNAB. O Consultório na Rua deve garantir a atenção integral (abrangendo todas as necessidades de saúde), atuar de forma itinerante (utilizando veículos ou abordagens diretas na rua) e trabalhar de maneira intersetorial, articulando-se com a rede de saúde e com a assistência social (SUAS) para promover a reinserção social e a garantia de direitos.\n\nAlternativa (c) está incorreta: Embora as demandas de saúde mental e o cuidado aos usuários de álcool e outras drogas sejam frequentes e fundamentais nessa estratégia, o cuidado não é exclusivo. A equipe deve tratar de feridas, infecções, doenças crônicas, saúde da mulher, entre outros problemas clínicos, seguindo o princípio da integralidade.\n\nAlternativa (d) está incorreta: A PNAB prevê que o horário de funcionamento das equipes de Consultório na Rua deve ser flexível e adequado às rotinas da população assistida. Muitas vezes, o melhor momento para o vínculo e o atendimento ocorre em horários noturnos ou fins de semana, portanto, a atuação não se limita ao horário comercial padrão.\n\nAlternativa (e) está incorreta: Apesar de a população em situação de rua concentrar-se majoritariamente em grandes centros urbanos, as ações do SUS devem ser pautadas pela equidade e necessidade do território. Afirmar que não há \"qualquer possibilidade de flexibilização\" contraria a lógica da PNAB, que incentiva a adaptação das equipes às realidades locais, sejam elas urbanas, periurbanas ou em áreas de transição.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:42.715Z"
+  },
+  {
+    "id": "AJUDA_815f0050-a6a3-4df4-a38b-9d6eb9a342ce",
+    "originalId": "815f0050-a6a3-4df4-a38b-9d6eb9a342ce",
+    "statement": "Sobre o fio de polipropileno, estão corretas todas as alternativas, EXCETO,",
+    "options": [
+      {
+        "id": "A",
+        "text": "é um fio de grande resistência e baixo grau de lesão tecidual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicado para hernioplastias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "é um fio indicado para suturas vasculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "deve ser evitado em feridas com tecidos infectadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "é indicado nas anastomoses intestinais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O polipropileno (conhecido comercialmente como Prolene) é um fio de sutura sintético, monofilamentar e não absorvível. Suas propriedades físicas e químicas definem suas indicações clínicas na prática cirúrgica.\n\nAnálise das alternativas:\n\nAlternativa a: Esta afirmação está correta. Por ser um fio monofilamentar e extremamente inerte, ele apresenta um baixíssimo coeficiente de fricção, o que resulta em baixo trauma tecidual ao passar pelos tecidos. Além disso, possui alta resistência tênsil, que não se perde com o tempo, pois não é degradado pelo organismo.\n\nAlternativa b: Esta afirmação está correta. Devido à sua força permanente e baixa reatividade, o polipropileno é amplamente utilizado em hernioplastias, tanto para o fechamento de planos aponeuróticos quanto para a fixação de telas sintéticas.\n\nAlternativa c: Esta afirmação está correta. O polipropileno é o material de escolha (padrão-ouro) para suturas e anastomoses vasculares. Sua superfície lisa minimiza o dano ao endotélio vascular e reduz o risco de trombose na linha de sutura, além de permitir o ajuste da tensão da sutura com facilidade.\n\nAlternativa d: Esta afirmação está INCORRETA (e, portanto, é o gabarito da questão). Os fios monofilamentares, como o polipropileno e o nylon, são justamente os MAIS indicados na presença de infecção ou contaminação. Diferentemente dos fios multifilamentares (trançados), o monofilamento não possui espaços intersticiais (microscópicos) entre as fibras onde as bactérias poderiam se alojar e ficar protegidas da ação de macrófagos e antibióticos.\n\nAlternativa e: Esta afirmação está correta. Embora existam preferências por fios absorvíveis de longa duração (como o PDS), o polipropileno é perfeitamente indicado e muito utilizado em anastomoses intestinais, especialmente em técnicas de plano único, devido à sua segurança, baixa reação inflamatória e manutenção da força de fechamento.\n\nGabarito: Letra (d).",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:42.715Z"
+  },
+  {
+    "id": "AJUDA_81627fe8-370b-42ab-886d-46754d2f54f5",
+    "originalId": "81627fe8-370b-42ab-886d-46754d2f54f5",
+    "statement": "Um homem de 38 anos de idade é submetido a litotripsia para cálculos renais de oxalato de cálcio. Os valores de exames laboratoriais encontrados no dia da litotripsia foram: cálcio sérico de 10,8 mg/dl (8,5-10,2 mg/dl), fósforo de 3 mg/dl (2,5-4,5 mg/dl), cloreto de 102 mEq/l (95-105 mEq/l), creatinina de 1,2 mg/dl (0,4-1,30 mg/dl) e paratormônio intacto de 62 pg/ml (10-65 pg/ml). A imagem pré-operatória foi imprecisa para localizar as paratireoides. Qual das seguintes afirmações sobre a conduta do caso é verdadeira?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A paratiroidectomia é indicada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "É improvável que o hiperparatireoidismo primário contribua para a doença calculosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A observação clínica é a melhor conduta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Recomenda-se restrição dietética de cálcio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, o primeiro passo é estabelecer o diagnóstico bioquímico do paciente. Estamos diante de um homem jovem (38 anos) com quadro de nefrolitíase (cálculos de oxalato de cálcio) e exames laboratoriais que mostram cálcio sérico elevado (10,8 mg/dL) associado a um nível de paratormônio (PTH) de 62 pg/mL. Embora o PTH esteja dentro da faixa de normalidade do laboratório (10-65 pg/mL), ele está inadequadamente alto para um paciente com hipercalcemia. Em uma situação normal, o aumento do cálcio deveria suprimir o PTH para níveis mínimos. Essa combinação de cálcio alto com PTH \"normal-alto\" ou elevado confirma o diagnóstico de hiperparatireoidismo primário (HPP).\n\nAlternativa (a) Correta: A paratireoidectomia é o único tratamento definitivo para o HPP. Segundo os critérios internacionais (Consenso do NIH), a cirurgia está indicada em pacientes sintomáticos. A presença de nefrolitíase (cálculos renais) é uma manifestação clássica e uma indicação formal de cirurgia. Além disso, o paciente tem menos de 50 anos, o que também é um critério de indicação cirúrgica mesmo em casos assintomáticos. O fato de a imagem pré-operatória não ter localizado a glândula doente não contraindica a cirurgia; o diagnóstico do HPP é bioquímico, e a exploração cervical cirúrgica por um cirurgião experiente apresenta altas taxas de sucesso.\n\nAlternativa (b) Incorreta: O hiperparatireoidismo primário é uma das causas mais importantes de nefrolitíase recorrente. O excesso de PTH promove a reabsorção óssea e aumenta a absorção intestinal de cálcio (via vitamina D), o que eleva a carga de cálcio filtrada pelos rins (hipercalciúria), favorecendo a formação de cálculos de oxalato e fosfato de cálcio.\n\nAlternativa (c) Incorreta: A observação clínica ficaria reservada para pacientes com mais de 50 anos, assintomáticos, com níveis de cálcio apenas discretamente elevados e sem evidências de comprometimento renal (como cálculos ou queda da filtração glomerular) ou ósseo (osteoporose). Este paciente é jovem e já apresenta complicações da doença (litíase), portanto, a conduta expectante é inadequada.\n\nAlternativa (d) Incorreta: A restrição dietética de cálcio não é recomendada no hiperparatireoidismo primário. Restringir o cálcio pode levar a um aumento ainda maior dos níveis de PTH, piorando a reabsorção óssea. Além disso, a restrição de cálcio na dieta pode aumentar a absorção intestinal de oxalato, o que poderia, paradoxalmente, aumentar o risco de novos cálculos renais de oxalato de cálcio. O tratamento da causa-base (hiperparatireoidismo) é a prioridade.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral",
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:42.715Z"
+  }
+]

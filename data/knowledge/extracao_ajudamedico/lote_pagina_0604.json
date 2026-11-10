@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_a93b3ad9-d361-4001-86dc-686faad5ac77",
+    "originalId": "a93b3ad9-d361-4001-86dc-686faad5ac77",
+    "statement": "Você revisa um artigo que apresenta um caso raro de dengue grave com hemorragia subaracnóidea e linfohistiocitose hemofagocítica. Nele, um homem de 19 anos apresentou um histórico de 7 dias de febre e mialgia, seguido de dor de cabeça intensa e vômitos, e o seu exame inicial revelou febre alta, hepatoesplenomegalia e pancitopenia. Sobre o estudo de casos, analise as afirmativas e assinale a alternativa correta.\n\nI. O principal objetivo dos relatos de casos e das séries de casos é contribuir para definir etiologia e prognóstico. O artigo citado demonstra a associação entre dengue e aneurisma subaracnóide hemorrágico.\nII. O relato de casos permite que outros médicos identifiquem casos semelhantes ao relatado. Além disso, estimula a formulação de uma hipótese para desenvolver uma pesquisa com o tamanho de amostra necessário.\nIII. Em um relato de casos, descreve-se o curso clínico de uma amostra de casos prevalentes, não necessariamente representativa de casos incidentes.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a afirmativa I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a afirmativa II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas a afirmativa III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas as afirmativas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão avalia o conhecimento sobre a metodologia científica aplicada aos relatos e séries de casos, tipos de estudos fundamentais na literatura médica para a descrição de eventos raros ou novas apresentações de doenças.\n\nAnálise das afirmativas:\n\nAfirmativa I (Incorreta): Os relatos de casos e as séries de casos não são os desenhos de estudo adequados para definir etiologia (causalidade) ou prognóstico; para esses objetivos, são necessários estudos analíticos, como estudos de coorte ou ensaios clínicos controlados. Além disso, o enunciado menciona que o paciente apresentou uma hemorragia subaracnoidea (um evento clínico), e a afirmativa afirma erroneamente que o artigo demonstra uma associação com \"aneurisma subaracnoide hemorrágico\". Nem toda hemorragia subaracnoidea em pacientes com dengue decorre de um aneurisma; ela pode ser secundária a distúrbios de coagulação graves ou vasculite.\n\nAfirmativa II (Correta): Esta é uma das principais funções do relato de caso. Ao descrever detalhadamente uma apresentação clínica rara (como a linfo-histiocitose hemofagocítica associada à dengue), o autor permite que outros profissionais reconheçam o padrão em seus próprios pacientes. Esses estudos são considerados \"geradores de hipóteses\". A observação de um fenômeno em um relato de caso pode levar pesquisadores a desenharem estudos maiores e com maior rigor estatístico para validar as observações iniciais.\n\nAfirmativa III (Correta): Relatos e séries de casos descrevem o curso clínico de indivíduos que já apresentam a condição de interesse no momento da observação (casos prevalentes naquele serviço ou período). Como são baseados em amostras de conveniência e frequentemente tratam de apresentações atípicas, eles não refletem necessariamente a realidade dos casos incidentes (novos casos na população geral) nem possuem representatividade estatística para a população como um todo.\n\nConclusão:\nComo as afirmativas II e III estão corretas, a alternativa correta é a letra (d).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:07.505Z"
+  },
+  {
+    "id": "AJUDA_a93c579f-e573-4e99-a8b8-37170dfbb70f",
+    "originalId": "a93c579f-e573-4e99-a8b8-37170dfbb70f",
+    "statement": "Criança com 4 anos de idade apresentando dor nas pernas, apatia e febre com 30 dias de evolução. Exame físico: palidez cutânea ++/4+, Temp: 39oC, hipoativa, linfonodomegalias nas regiões cervicais e submandibulares bilaterais, hepatoesplenomegalia e petéquias generalizadas. Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Leucemia linfoblástica aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Anemia aplástica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Linfoma Burkitt.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Leucemia mieloblástica aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Púrpura trombocitopênica imunológica (PTI).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito apresenta uma criança de 4 anos com sinais claros de falência medular (anemia evidenciada pela palidez e plaquetopenia evidenciada pelas petéquias) associados a sinais de infiltração extramedular (linfonodomegalias e hepatoesplenomegalia). A presença de dor nas pernas sugere dor óssea por expansão da medula óssea por células neoplásicas. Esse conjunto de achados em um pré-escolar é altamente sugestivo de leucemia.\n\nAlternativa A: Correta. A Leucemia Linfoblástica Aguda (LLA) é a neoplasia maligna mais comum da infância, com pico de incidência entre os 2 e 5 anos de idade. A apresentação clássica envolve a tríade de febre, palidez e manifestações hemorrágicas (devido à substituição da medula normal por blastos), além de dores ósseas e organomegalias (fígado, baço e linfonodos). O caso clínico se encaixa perfeitamente neste diagnóstico.\n\nAlternativa B: Incorreta. A anemia aplástica causa pancitopenia (anemia, leucopenia e plaquetopenia), o que explicaria a palidez, febre e petéquias. No entanto, ela se caracteriza por uma medula óssea hipocelular, sem infiltração de tecidos. Portanto, a presença de linfonodomegalias e hepatoesplenomegalia descarta essa hipótese, pois esses achados indicam proliferação ou infiltração celular.\n\nAlternativa C: Incorreta. O Linfoma de Burkitt é um linfoma não Hodgkin de crescimento muito rápido. Embora possa cursar com sintomas sistêmicos, sua apresentação mais comum é como uma massa abdominal volumosa (forma esporádica) ou acometimento de mandíbula (forma endêmica). A LLA é uma causa muito mais provável para o quadro de falência medular difusa e dor óssea nessa faixa etária.\n\nAlternativa D: Incorreta. A Leucemia Mieloblástica Aguda (LMA) também pode cursar com falência medular e organomegalias. Contudo, na pediatria, a LLA é cerca de 3 a 4 vezes mais frequente que a LMA. Além disso, a dor óssea e o pico de incidência aos 4 anos são características muito mais marcantes da linhagem linfoide (LLA).\n\nAlternativa E: Incorreta. A Púrpura Trombocitopênica Imunológica (PTI) manifesta-se tipicamente com petéquias e equimoses em uma criança que, fora o sangramento cutâneo-mucoso, apresenta-se em bom estado geral. Na PTI não há febre persistente, não há anemia (a menos que haja sangramento vultoso), não há dor óssea e, fundamentalmente, não há hepatoesplenomegalia ou linfonodomegalias.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:07.505Z"
+  },
+  {
+    "id": "AJUDA_a941bdf0-3bfd-4fa9-af59-15b3964f99ea",
+    "originalId": "a941bdf0-3bfd-4fa9-af59-15b3964f99ea",
+    "statement": "Segundo a fetal medicine foundation, recentemente um novo parâmetro para predizer risco de pré-eclâmpsia foi adicionado no cálculo de risco do primeiro trimestre. \nAssinale a alternativa que representa esse parâmetro.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dopplervelocimetria da artéria oftálmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Diabetes gestacional",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gemelaridade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obesidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pico sistólico da artéria cerebral média.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO rastreamento de pré-eclâmpsia no primeiro trimestre (entre 11 e 13 semanas e 6 dias) é um dos pilares da medicina fetal moderna. O modelo tradicional da Fetal Medicine Foundation (FMF) utiliza uma combinação de fatores maternos (histórico, idade, IMC), pressão arterial média, Doppler das artérias uterinas e fatores bioquímicos, como o PLGF (fator de crescimento placentário). Recentemente, novos estudos buscaram marcadores que pudessem aumentar a acurácia ou facilitar o rastreio em locais com menos recursos.\n\nA alternativa (a) está correta. A dopplervelocimetria da artéria oftálmica surgiu como um parâmetro biofísico promissor. Como a artéria oftálmica é um ramo da carótida interna, ela reflete alterações na vasculatura cerebral materna. Em gestantes que desenvolverão pré-eclâmpsia, observa-se uma hiperperfusão e mudanças na resistência vascular periférica antes mesmo dos sintomas clínicos. Estudos da FMF demonstraram que a avaliação do Doppler dessa artéria (especialmente a razão entre o segundo e o primeiro pico sistólico) melhora o desempenho do cálculo de risco para pré-eclâmpsia pré-termo.\n\nA alternativa (b) está incorreta. Embora o diabetes gestacional e o diabetes preexistente sejam fatores de risco maternos conhecidos para diversas complicações, eles já faziam parte da anamnese e dos fatores de risco epidemiológicos. Não se trata de um \"novo parâmetro\" adicionado recentemente ao algoritmo de cálculo biofísico/bioquímico de primeira linha como marcador de predição.\n\nA alternativa (c) está incorreta. A gemelaridade é um fator de risco clássico e bem estabelecido para a pré-eclâmpsia devido à maior massa placentária e demanda hemodinâmica. Ela já é computada nos modelos de risco desde sua concepção inicial, não sendo a inovação técnica referida pela questão.\n\nA alternativa (d) está incorreta. A obesidade é avaliada por meio do Índice de Massa Corporal (IMC), que é um dos componentes fundamentais do histórico materno no cálculo da FMF desde as primeiras versões do software de predição.\n\nA alternativa (e) está incorreta. O pico sistólico da artéria cerebral média (ACM) é um parâmetro utilizado na avaliação do bem-estar fetal, especificamente para o diagnóstico de anemia fetal (como na isoimunização Rh). Ele não é utilizado como ferramenta de rastreamento para o risco materno de desenvolver pré-eclâmpsia.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Síndromes Hipertensivas da Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:07.505Z"
+  },
+  {
+    "id": "AJUDA_a955aab8-22b3-41ac-9847-95a7c027faf3",
+    "originalId": "a955aab8-22b3-41ac-9847-95a7c027faf3",
+    "statement": "Um teste foi desenvolvido para detectar tuberculose em 400 pacientes com diagnóstico de vírus da imunodeficiência humana (HIV). Dos 400 indivíduos, 160 realmente tinham tuberculose, mas apenas 120 deles testaram positivo. Entre os indivíduos que não tinham tuberculose, 60 testaram positivo. Com base nesses dados, assinale a alternativa que apresenta o percentual de sensibilidade, especificidade, valor preditivo positivo (VPP) e valor preditivo negativo (VPN) do teste, respectivamente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "67 / 82 / 75 / 75",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "75 / 75 / 67 / 82",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "75 / 80 / 75 / 80",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "80 / 70 / 60 / 90",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "85 / 85 / 80 / 90",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão de epidemiologia clínica, o primeiro passo é organizar os dados fornecidos em uma tabela de contingência 2x2.\n\nDados do problema:\nTotal de pacientes: 400\nPacientes com tuberculose (Doentes): 160\nPacientes sem tuberculose (Não doentes): 400 - 160 = 240\nVerdadeiros Positivos (VP): 120 (doentes com teste positivo)\nFalsos Negativos (FN): 160 - 120 = 40 (doentes com teste negativo)\nFalsos Positivos (FP): 60 (não doentes com teste positivo)\nVerdadeiros Negativos (VN): 240 - 60 = 180 (não doentes com teste negativo)\n\nEstrutura da Tabela:\n- Com doença: 120 Positivos / 40 Negativos (Total 160)\n- Sem doença: 60 Positivos / 180 Negativos (Total 240)\n- Totais por teste: 180 Positivos / 220 Negativos\n\nCálculos dos Parâmetros:\n\n1. Sensibilidade: É a capacidade do teste de identificar corretamente os doentes.\nFórmula: VP / (VP + FN)\nCálculo: 120 / 160 = 0,75 ou 75%.\n\n2. Especificidade: É a capacidade do teste de identificar corretamente os indivíduos saudáveis.\nFórmula: VN / (VN + FP)\nCálculo: 180 / 240 = 0,75 ou 75%.\n\n3. Valor Preditivo Positivo (VPP): É a probabilidade de um indivíduo com teste positivo realmente ter a doença.\nFórmula: VP / (VP + FP)\nCálculo: 120 / 180 = 0,666... (aproximadamente 67%).\n\n4. Valor Preditivo Negativo (VPN): É a probabilidade de um indivíduo com teste negativo realmente ser saudável.\nFórmula: VN / (VN + FN)\nCálculo: 180 / 220 = 0,818... (aproximadamente 82%).\n\nAnálise das Alternativas:\n\na) Incorreta. Esta alternativa inverte a ordem dos resultados ou confunde os conceitos, apresentando os valores de VPP e VPN nos primeiros campos destinados à sensibilidade e à especificidade.\n\nb) Correta. Apresenta exatamente os valores calculados na ordem solicitada: Sensibilidade (75), Especificidade (75), VPP (67) e VPN (82).\n\nc) Incorreta. Embora apresente a sensibilidade correta (75), os valores de especificidade (80), VPP (75) e VPN (80) não correspondem aos dados matemáticos da questão.\n\nd) Incorreta. Todos os valores citados estão em desacordo com os cálculos baseados na amostra de 400 pacientes e nas proporções de acerto do teste.\n\ne) Incorreta. Apresenta valores superestimados que não podem ser obtidos a partir da divisão dos dados fornecidos no enunciado.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:07.505Z"
+  },
+  {
+    "id": "AJUDA_a964e815-8804-45a1-a0d0-bec233f41df4",
+    "originalId": "a964e815-8804-45a1-a0d0-bec233f41df4",
+    "statement": "Mulher de 26 anos de idade, saudável, sem uso prévio de medicações, procurou atendimento por crises frequentes de ansiedade generalizada há vários meses, com sintomas diários de preocupação excessiva, insônia, irritabilidade, tensão muscular e dificuldade de concentração. Relatou episódios atuais, frequentes e intensos de ansiedade, com palpitações, sudorese e sensação de falta de controle, que a impedem de realizar atividades acadêmicas e sociais. Após avaliação psiquiátrica, foi indicado início de tratamento farmacológico.\n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta a conduta farmacológica mais adequada para essa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar uso continuo de clonazepam",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar uso de sertralina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar clonazepam e sertralina, com posterior desmame de benzodiazepínico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "iniciar clonazepam e amitriptilina, com posterior desmame de benzodiazepínico",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "iniciar clonazepam e canabidiol, com posterior desmame de benzodiazepínico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma paciente jovem com sintomas clássicos de Transtorno de Ansiedade Generalizada (TAG) e possíveis crises de pânico associadas, apresentando importante prejuízo funcional (acadêmico e social).\n\nA estratégia terapêutica padrão-ouro para esses transtornos envolve o uso de Inibidores Seletivos da Recaptação de Serotonina (ISRS), como a sertralina, como primeira linha para o tratamento de longo prazo. No entanto, os ISRS demoram cerca de 2 a 4 semanas para iniciarem seu efeito terapêutico e, no início do tratamento, podem causar um aumento paradoxal da ansiedade e agitação.\n\nPara pacientes com sintomas intensos e agudos, a conduta mais adequada é a associação de um benzodiazepínico (como o clonazepam) ao antidepressivo no início do tratamento. O benzodiazepínico oferece alívio imediato dos sintomas (efeito ponte) e melhora a adesão ao tratamento enquanto se aguarda o período de latência do ISRS. Após a estabilização com o antidepressivo, o benzodiazepínico deve ser retirado gradualmente (desmame) para evitar dependência e tolerância.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O uso contínuo e isolado de benzodiazepínicos não é recomendado. Eles tratam apenas os sintomas superficiais, não atuam na fisiopatologia do transtorno a longo prazo e possuem alto risco de dependência, tolerância e prejuízo cognitivo.\n\nAlternativa B: Incorreta. Embora a sertralina seja o tratamento de escolha a longo prazo, iniciá-la isoladamente em uma paciente com sintomas intensos e crises frequentes pode retardar o alívio do sofrimento ou até piorar os sintomas de ansiedade nos primeiros dias, levando à desistência do tratamento.\n\nAlternativa C: Correta. É a conduta mais completa para o quadro descrito. A sertralina tratará o transtorno de forma definitiva, enquanto o clonazepam controlará os sintomas agudos e a ansiedade inicial, sendo retirado assim que o antidepressivo atingir seu platô de ação.\n\nAlternativa D: Incorreta. A amitriptilina é um antidepressivo tricíclico. Embora eficaz, é considerada de segunda ou terceira linha para TAG e pânico devido ao seu perfil de efeitos colaterais (sedação, ganho de peso, efeitos anticolinérgicos e toxicidade cardíaca) quando comparada aos ISRS, que são mais seguros e melhor tolerados.\n\nAlternativa E: Incorreta. O canabidiol ainda não possui evidências científicas robustas e consensuais que o coloquem como tratamento de primeira linha em diretrizes clínicas para o Transtorno de Ansiedade Generalizada, especialmente quando comparado à eficácia comprovada dos ISRS.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Psicofarmacologia",
+      "Transtornos de Ansiedade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:07.505Z"
+  },
+  {
+    "id": "AJUDA_a967295a-29bc-4259-8179-9e72f717042e",
+    "originalId": "a967295a-29bc-4259-8179-9e72f717042e",
+    "statement": "Homem, de 42 anos de idade, procura o pronto atendimento por episódios de hematêmese há uma hora. Nega episódios prévios. Refere ingestão de um litro de destilado diariamente há 12 anos. Ao exame físico, encontra-se em regular estado geral,  escorado 2+/4+, FC 98bpm, PA 100x70mmHg, com extremidades quentes e bem perfundidas. Apresenta escala de coma de Glasgow 15. O abdome está ascítico, flácido, indolor e sem sinais de irritação peritoneal. O toque retal está normal. Os exames laboratoriais demonstraram Hb 8,6g/dL, sem demais alterações. Realizou endoscopia digestiva alta, com identificação de varizes de grosso calibre em fundo gástrico e presença de “red spots”. Não foram observadas outras alterações na endoscopia.\n\nQual é a terapia endoscópica recomendada para esse paciente neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Terapia combinada com adrenalina e hemoclipe",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Injeção de cianoacrilato",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ligadura elástica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coagulação com plasma de argônio",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um paciente com quadro de hemorragia digestiva alta varicosa. O histórico de etilismo pesado e a presença de ascite sugerem cirrose hepática com hipertensão portal. O ponto crucial da questão reside no achado da endoscopia digestiva alta: varizes de grosso calibre localizadas especificamente no fundo gástrico.\n\nA conduta terapêutica endoscópica varia significativamente conforme a localização das varizes (esofágicas ou gástricas).\n\nAnálise das alternativas:\n\na) Incorreta. A terapia combinada com injeção de adrenalina e uso de métodos mecânicos (como hemoclipes) ou térmicos é o padrão-ouro para o tratamento de úlceras pépticas com sinais de sangramento ativo ou vasos visíveis (Classificação de Forrest). Não possui indicação no tratamento de varizes decorrentes de hipertensão portal.\n\nb) Correta. A injeção de cianoacrilato (uma \"cola\" tecidual) é o tratamento de escolha para o manejo de varizes de fundo gástrico (classificadas como GOV2 ou IGV1 pela classificação de Sarin). Devido ao alto fluxo e ao calibre dessas varizes, a ligadura elástica apresenta altos índices de falha e de ressangramento precoce após a queda da escara. O cianoacrilato promove a obliteração imediata do vaso ao entrar em contato com o sangue.\n\nc) Incorreta. A ligadura elástica é a terapia de primeira escolha para varizes esofágicas e pode ser utilizada em varizes gástricas que são extensões das esofágicas pela pequena curvatura (GOV1). No entanto, para varizes localizadas no fundo gástrico (caso do paciente), ela é menos eficaz e tecnicamente mais difícil, sendo superada pela injeção de cianoacrilato conforme as principais diretrizes (Baveno VII e consensos brasileiros).\n\nd) Incorreta. A coagulação com plasma de argônio é um método de eletrocoagulação sem contato, indicado principalmente para lesões superficiais e difusas, como a ectasia vascular antral gástrica (estômago em melancia), proctite actínica ou angiodisplasias. Não tem papel no controle de sangramento de varizes calibrosas.\n\nResumo: Diante de varizes de fundo gástrico em paciente com sangramento ativo ou sinais de risco (red spots), a terapia endoscópica preferencial é a injeção de cianoacrilato. Se o método não estiver disponível ou falhar, deve-se considerar o TIPS (Shunt Portossistêmico Intra-hepático Transjugular) ou o balão de Sengstaken-Blakemore como ponte para terapia definitiva.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:07.505Z"
+  },
+  {
+    "id": "AJUDA_a96961c0-bd09-48aa-a88e-9da6f5d38979",
+    "originalId": "a96961c0-bd09-48aa-a88e-9da6f5d38979",
+    "statement": "T.D.J., 32 anos, GII PI 1C há 2 anos, idade gestacional de 22 semanas, residente na capital de São Paulo, vem à consulta de pré-natal referindo dúvidas com relação à vacinação. A médica constata ausência da vacina de febre amarela e da de gripe do ano corrente. Ainda, as sorologias demonstravam susceptibilidade à hepatite B, IgG e IgM negativos para rubéola. A paciente relata ter recebido vacina do tétano na gestação anterior. Com relação ao caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vacina tríplice bacteriana acelular (DTPa) deve ser administrada após as 32 semanas de idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A paciente deve tomar a vacina contra febre amarela, administrada em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não há necessidade de se administrar a DTPa, uma vez que a paciente a recebeu há menos de 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vacina contra hepatite B é contraindicada na gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A vacina tríplice viral há de ser administrada após o parto.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa a: Incorreta. A vacina tríplice bacteriana acelular (DTPa) deve ser administrada a partir da 20ª semana de gestação em todas as gestações. Não existe a obrigatoriedade de esperar até as 32 semanas; a recomendação é que seja feita o quanto antes (após a 20ª semana) para garantir o tempo adequado de produção de anticorpos maternos e sua passagem transplacentária para o feto.\n\nAlternativa b: Incorreta. A vacina contra a febre amarela utiliza vírus vivos atenuados e, por isso, é geralmente contraindicada durante a gestação. Ela só deve ser considerada em situações excepcionais de alto risco epidemiológico, onde o risco da doença supera o risco vacinal, o que não é o caso padrão descrito.\n\nAlternativa c: Incorreta. Diferentemente da vacina dupla adulta (dT), que tem validade de 10 anos (ou 5 em casos de ferimentos), a vacina DTPa deve ser administrada em toda e qualquer gestação, independentemente do histórico vacinal prévio da paciente ou do intervalo entre os partos. O objetivo é conferir imunidade passiva contra a coqueluche ao recém-nascido.\n\nAlternativa d: Incorreta. A vacina contra a hepatite B não é contraindicada. Por ser uma vacina de vírus inativado (recombinante), ela é segura e recomendada durante a gestação para todas as mulheres que apresentem sorologia negativa (suscetíveis), como é o caso da paciente T.D.J.\n\nAlternativa e: Correta. A vacina tríplice viral (sarampo, caxumba e rubéola) é composta por vírus vivos atenuados e seu uso é formalmente contraindicado durante a gravidez pelo risco teórico de infecção fetal. Como a paciente demonstrou ser suscetível (IgG e IgM negativos para rubéola), a conduta correta é realizar a imunização no período pós-parto imediato.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:07.505Z"
+  },
+  {
+    "id": "AJUDA_a96f2149-9b98-411e-b592-b0ca00ac2d9e",
+    "originalId": "a96f2149-9b98-411e-b592-b0ca00ac2d9e",
+    "statement": "Paciente de 28 anos, com diagnóstico de Dengue, retorna à Unidade de Saúde da Família no 4º dia de evolução. Relata que a febre cedeu nas últimas 12 horas (período de defervescência), mas sente-se mais \"prostrado\".\nDurante o exame físico direcionado para identificação de sinais de alarme (Grupo C), o achado clínico que indica aumento da permeabilidade vascular e exige hidratação venosa imediata é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hepatomegalia dolorosa palpável maior que 2 cm abaixo do rebordo costal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Prova do laço positiva com surgimento de petéquias no antebraço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Presença de exantema maculopapular pruriginoso em tronco e membros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiperemia conjuntival e dor intensa à movimentação ocular extrínseca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um paciente no 4º dia de evolução da dengue, momento que coincide com a fase de defervescência (queda da febre). Este é o período crítico da doença, no qual o aumento da permeabilidade vascular pode levar ao extravasamento plasmático e à progressão para formas graves. O objetivo do exame físico neste estágio é identificar os chamados sinais de alarme, que classificam o paciente no Grupo C e exigem hidratação venosa imediata.\n\nAlternativa (a) Correta: A hepatomegalia dolorosa, palpável a mais de 2 cm abaixo do rebordo costal, é um sinal de alarme oficialmente listado nos protocolos do Ministério da Saúde. Ela reflete o comprometimento hepático e está associada a uma maior probabilidade de evolução desfavorável. A presença de qualquer sinal de alarme (como dor abdominal intensa, vômitos persistentes, acúmulo de líquidos em cavidades ou letargia) indica que o paciente deve ser manejado no Grupo C, recebendo reposição volêmica por via intravenosa.\n\nAlternativa (b) Incorreta: A prova do laço positiva é um teste que avalia a fragilidade capilar e a tendência hemorrágica, mas não é considerada um sinal de alarme. Se o paciente apresentar a prova do laço positiva, mas não tiver nenhum sinal de alarme, ele é classificado no Grupo B. O manejo inicial do Grupo B envolve hidratação oral e observação clínica com exames laboratoriais, não sendo obrigatória a hidratação venosa imediata como no Grupo C.\n\nAlternativa (c) Incorreta: O exantema maculopapular, muitas vezes acompanhado de prurido, é uma manifestação clínica comum e benigna da dengue. Pode surgir precocemente ou no final do período febril. Embora ajude no diagnóstico sindrômico, não é um marcador de gravidade nem indica extravasamento de plasma para o terceiro espaço.\n\nAlternativa (d) Incorreta: A hiperemia conjuntival e a dor retro-ocular (dor à movimentação ocular) são sintomas clássicos da fase febril da dengue. Eles compõem o quadro clínico típico da doença sem sinais de alarme (dengue clássica). Esses achados não estão relacionados ao aumento da permeabilidade vascular ou ao choque hipovolêmico.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:07.505Z"
+  },
+  {
+    "id": "AJUDA_a970034a-e214-4809-9704-009929293fd6",
+    "originalId": "a970034a-e214-4809-9704-009929293fd6",
+    "statement": "PVRG, 72 anos, sexo masculino, é portador de volumosa hérnia inguinal à direita com episódios eventuais de dor em cólica. Relata que consegue reduzir o conteúdo herniário com manobras manuais, com alívio dos sintomas de cólicas. É tabagista. Outras comorbidades: diabetes, obesidade, hipertrofia prostática. Procurou um cirurgião e recebeu algumas orientações. Assinale a assertiva que apresenta uma orientação ERRADA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deverá ser utilizada tela para reduzir os riscos de recidiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deverá suspender o tabagismo por período mínimo de dois meses e fazer uma avaliação urológica (hipertrofia prostática) no período pré-operatório para reduzir os riscos de recidiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Já que consegue reduzir o conteúdo herniário com manobras manuais e tem várias comorbidades é mais seguro evitar a cirurgia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Deve tentar reduzir o peso e controlar o diabetes para prevenção de infecção do sítio cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Analise das alternativas:\n\nAlternativa a) Está correta. O uso de telas no reparo de hérnias inguinais (técnica de tensão zero, como a de Lichtenstein) é o padrão-ouro na cirurgia moderna. A tela fornece um reforço mecânico e estimula uma resposta fibrótica que fortalece a parede posterior do canal inguinal, reduzindo drasticamente as taxas de recidiva em comparação às técnicas que utilizam apenas suturas (com tensão).\n\nAlternativa b) Está correta. O tabagismo compromete a biologia do colágeno e a microcirculação, essenciais para uma cicatrização firme, o que aumenta o risco de a hérnia retornar. Já a hipertrofia prostática causa aumento crônico da pressão intra-abdominal devido ao esforço miccional. Esse aumento de pressão é um dos principais fatores mecânicos para a recidiva da hérnia e para o surgimento de complicações pós-operatórias, como retenção urinária aguda. Portanto, a cessação do tabagismo e a avaliação urológica são condutas pré-operatórias adequadas.\n\nAlternativa c) Esta é a alternativa ERRADA, sendo o gabarito da questão. O fato de a hérnia ser redutível não anula a indicação cirúrgica, especialmente em um paciente sintomático que apresenta episódios de dor em cólica. Em pacientes idosos e com comorbidades, a estratégia deve ser a otimização das doenças de base (controle do diabetes, perda de peso e tratamento da próstata) para a realização de uma cirurgia eletiva segura. Adiar indefinidamente ou evitar a cirurgia apenas por ser redutível expõe o paciente ao risco de encarceramento ou estrangulamento futuro. Uma cirurgia de urgência em um paciente idoso e pluripatológico carrega taxas de morbimortalidade muito superiores a uma cirurgia eletiva bem planejada.\n\nAlternativa d) Está correta. O diabetes mellitus descontrolado (hiperglicemia) prejudica a função dos neutrófilos e a cicatrização, enquanto a obesidade aumenta o espaço morto e dificulta a vascularização do tecido subcutâneo. Ambos são fatores de risco classicamente associados ao aumento de infecção do sítio cirúrgico. A otimização desses parâmetros no pré-operatório é fundamental para o sucesso do procedimento.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:07.505Z"
+  },
+  {
+    "id": "AJUDA_a974c321-2855-4401-adef-cb9a4a6a77f2",
+    "originalId": "a974c321-2855-4401-adef-cb9a4a6a77f2",
+    "statement": "Os defeitos de parede abdominal são afecções muito frequentes na prática cirúrgica. Um dos motivos da recomendação de tratamento cirúrgico é a prevenção de complicações. Assinale a alternativa CORRETA, relativa à complicação mais temida em uma hérnia estrangulada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obstrução intestinal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Necrose intestinal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dor intensa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inflamação local",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é fundamental diferenciar os conceitos de encarceramento e estrangulamento nas hérnias da parede abdominal. Uma hérnia é dita encarcerada quando o seu conteúdo não pode ser reduzido para dentro da cavidade abdominal. Já o estrangulamento ocorre quando o conteúdo herniado sofre um comprometimento do suprimento sanguíneo (isquemia).\n\nAlternativa a) Incorreta. A obstrução intestinal é uma manifestação clínica frequente em hérnias que contêm alças intestinais, ocorrendo devido ao bloqueio da passagem do conteúdo entérico. Embora seja uma condição séria, ela pode estar presente mesmo em casos de encarceramento simples. O termo \"mais temida\" refere-se à perda de viabilidade do tecido, que é o estágio seguinte e mais grave.\n\nAlternativa b) Correta. A necrose intestinal é a complicação mais temida porque representa o estágio final da isquemia prolongada. Quando o suprimento arterial e a drenagem venosa são interrompidos pelo anel herniário (estrangulamento), o tecido morre (necrose). Isso leva à translocação bacteriana, perfuração intestinal, peritonite e sepse, aumentando drasticamente a morbidade e a mortalidade do paciente, além de exigir uma cirurgia mais complexa com ressecção intestinal.\n\nAlternativa c) Incorreta. A dor intensa é um importante sinal de alerta clínico. Ela costuma indicar que uma hérnia previamente redutível ou apenas encarcerada evoluiu para o estrangulamento. Contudo, a dor é um sintoma do processo isquêmico e não a complicação patológica final em si.\n\nAlternativa d) Incorreta. A inflamação local decorre do sofrimento tecidual e da estase vascular. Embora contribua para o quadro clínico e dificulte a redução manual da hérnia, a inflamação isolada não carrega a mesma gravidade ou o risco de vida imediato que a necrose e a gangrena da alça intestinal.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T17:30:07.505Z"
+  }
+]

@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_0a3239cc-d834-441a-9dc2-bc5bc4ec7af6",
+    "originalId": "0a3239cc-d834-441a-9dc2-bc5bc4ec7af6",
+    "statement": "Jovem de 26 anos deseja iniciar o rastreamento do câncer de colo uterino. Acessou uma reportagem sobre a mudança recente da diretriz, a qual adverte que a jovem precisa fazer o teste de DNA-HPV de alto risco. A diretriz do rastreamento do câncer de colo uterino do Ministério da Saúde informa que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a nova faixa de rastreamento é de 20 a 60 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o teste de DNA-HPV deve ser feito junto com a colpocitologia oncótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "em caso de teste de DNA-HPV negativo,deve-se repetir o exame em 5 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "deve-se realizar colposcopia a cada 2 anos, independentemente do teste de DNA-HPV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "em caso de teste de DNA-HPV positivo, deve-se agendar biópsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. A faixa etária recomendada pelo Ministério da Saúde para o rastreamento do câncer do colo do útero permanece sendo de 25 a 64 anos para mulheres que já iniciaram a vida sexual. A nova diretriz de 2024, que incorpora o teste de DNA-HPV, não alterou essa faixa etária para iniciar aos 20 anos.\n\nAlternativa b: Incorreta. A estratégia adotada pelo Ministério da Saúde prevê o teste de DNA-HPV como rastreamento primário isolado. A colpocitologia oncótica (Papanicolaou) deixa de ser o exame inicial de rotina e passa a ser utilizada como um teste de triagem apenas para as mulheres que apresentarem resultado positivo para o DNA-HPV. O uso simultâneo dos dois exames para todas as pacientes (coteste) não é a recomendação da diretriz nacional.\n\nAlternativa c: Correta. Esta é a principal mudança operacional do novo protocolo. Devido à alta sensibilidade e ao elevado valor preditivo negativo do teste de DNA-HPV, o intervalo de segurança entre os exames de rastreamento foi estendido. Se o teste de DNA-HPV for negativo, a recomendação é que a paciente repita o exame após 5 anos, diferentemente do intervalo de 3 anos utilizado anteriormente para a citologia.\n\nAlternativa d: Incorreta. A colposcopia é um exame diagnóstico de segunda linha e não deve ser utilizada para rastreamento populacional. Ela é indicada apenas após a detecção de alterações nos testes de rastreamento (HPV positivo com triagem alterada ou citologia alterada).\n\nAlternativa e: Incorreta. O teste de DNA-HPV positivo indica a presença do vírus, mas não necessariamente a existência de uma lesão. Portanto, um resultado positivo exige uma etapa de triagem adicional (geralmente citologia ou genotipagem para os tipos 16 e 18). A biópsia é um procedimento realizado apenas durante a colposcopia, caso o médico identifique áreas suspeitas de lesões precursoras ou câncer.\n\nEm resumo, a nova diretriz do Ministério da Saúde (Portaria 1.247/2024) estabelece o teste de DNA-HPV como o método preferencial de rastreamento no SUS, com periodicidade de 5 anos para resultados negativos, mantendo a faixa etária de 25 a 64 anos.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:27.959Z"
+  },
+  {
+    "id": "AJUDA_0a3322f6-5421-4bde-acfc-012bc23fab1d",
+    "originalId": "0a3322f6-5421-4bde-acfc-012bc23fab1d",
+    "statement": "Durante a ressuscitação cardiopulmonar (RCP) de um paciente foi observado ritmo de fibrilação ventricular (FV). O paciente foi desfibrilado com carga máxima. Após isso, qual o próximo passo na sequência de reanimação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Checar pulso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Avaliar ritmo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Proceder a intubação orotraqueal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retornar as compressões imediatamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda a conduta imediata após a desfibrilação em um ritmo de fibrilação ventricular (FV), baseando-se nas diretrizes de Suporte Avançado de Vida Cardiovascular (ACLS).\n\nAlternativa a: Incorreta. A checagem de pulso não deve ser feita imediatamente após o choque. Ela só é indicada após o término do ciclo de 2 minutos de manobras de ressuscitação, e apenas se for observado um ritmo organizado (não chocável) no monitor cardíaco. Interromper a RCP para checar pulso agora reduziria drasticamente a pressão de perfusão coronariana.\n\nAlternativa b: Incorreta. A avaliação do ritmo elétrico no monitor só deve ocorrer após 2 minutos de RCP de alta qualidade. Analisar o ritmo imediatamente após a desfibrilação é improdutivo, pois o coração pode levar algum tempo para restabelecer uma atividade elétrica organizada e, mesmo que o faça, a função mecânica (pulso) pode demorar a retornar.\n\nAlternativa c: Incorreta. O manejo avançado da via aérea, como a intubação orotraqueal, pode ser realizado em qualquer momento da ressuscitação, desde que não gere interrupções prolongadas nas compressões. No entanto, ele nunca é o passo imediato prioritário após a entrega de um choque.\n\nAlternativa d: Correta. De acordo com os protocolos da American Heart Association (AHA), imediatamente após a aplicação do choque, deve-se retomar as compressões torácicas por 2 minutos (5 ciclos), sem checar ritmo ou pulso. O choque despolariza as células miocárdicas simultaneamente para interromper a FV, mas o coração precisa de suporte circulatório imediato através das compressões para manter o fluxo sanguíneo enquanto tenta recuperar uma contração espontânea e efetiva.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Parada Cardiorrespiratória (PCR)"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:27.959Z"
+  },
+  {
+    "id": "AJUDA_0a3734c6-9c69-40ba-8991-4c1f14e168de",
+    "originalId": "0a3734c6-9c69-40ba-8991-4c1f14e168de",
+    "statement": "Homem, 28 anos, vítima de acidente de motocicleta x poste, trazido ao PS com dor torácica esquerda e taquicardia (FC: 130 bpm). Ausência de lesões exsanguinantes. À chegada, foi diagnosticado com hemotórax esquerdo e realizada drenagem pleural (toracostomia) com retorno instantâneo de 1.600 mL de sangue no dreno. FAST negativo nos 4 focos abdominais; ausência de trauma pélvico e fraturas de extremidades. Permanece em choque hipovolêmico apesar de reposição inicial adequada.\n\nA conduta mais indicada nesse momento é",
+    "options": [
+      {
+        "id": "A",
+        "text": "manter drenagem por toracostomia e observação no setor de emergência por 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar toracotomia de emergência no centro cirúrgico para controle de hemorragia intratorácica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "realizar tomografia computadorizada de tórax antes de qualquer intervenção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "inserir segundo dreno torácico no mesmo hemotórax e aguardar retorno hemodinâmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O paciente apresenta um quadro clínico clássico de hemotórax maciço. Pelos critérios do ATLS (Advanced Trauma Life Support), o hemotórax maciço é definido pela drenagem imediata de 1.500 mL ou mais de sangue após a inserção do dreno de tórax, ou por uma drenagem contínua de 200 mL/hora nas primeiras 2 a 4 horas. No caso descrito, o retorno imediato foi de 1.600 mL, o que preenche o critério de gravidade. Além disso, o paciente permanece em choque hipovolêmico (taquicardia de 130 bpm e má resposta à reposição), indicando que a fonte do sangramento está ativa e requer controle cirúrgico.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A manutenção apenas da drenagem e da observação é contraindicada em casos de hemotórax maciço. O volume de sangue perdido indica uma lesão vascular ou parenquimatosa importante que dificilmente cessará sem intervenção cirúrgica direta. Aguardar 24 horas em um setor de emergência levaria o paciente a óbito por exsanguinação.\n\nAlternativa b) Correta. A toracotomia de emergência no centro cirúrgico é o tratamento de escolha para o hemotórax maciço, especialmente quando acompanhado de instabilidade hemodinâmica. O objetivo é realizar a hemostasia direta de vasos da parede torácica (como artérias intercostais ou mamária interna), lesões no parênquima pulmonar ou em grandes vasos mediastinais.\n\nAlternativa c) Incorreta. A tomografia computadorizada é um exame indicado apenas para pacientes hemodinamicamente estáveis. Em um paciente com choque hipovolêmico persistente e indicação clara de cirurgia, o transporte para a sala de radiologia é perigoso e retarda o tratamento definitivo, aumentando a mortalidade.\n\nAlternativa d) Incorreta. A inserção de um segundo dreno não trata a causa do sangramento. O problema não é a falha na drenagem do espaço pleural (visto que o primeiro dreno evacuou 1.600 mL com sucesso), mas sim a magnitude da lesão interna que exige reparo cirúrgico.\n\nPortanto, diante de um hemotórax com drenagem inicial superior a 1.500 mL e instabilidade hemodinâmica, a conduta imediata é a toracotomia.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": 44.45939319046957,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:27.959Z"
+  },
+  {
+    "id": "AJUDA_0a40332d-3850-4221-8966-aea4980fd25c",
+    "originalId": "0a40332d-3850-4221-8966-aea4980fd25c",
+    "statement": "Paciente do sexo masculino, melanodérmico, com idade de 74 anos, portador de diabetes melito e hipertensão arterial em controle clínico, realizou colonoscopia de controle, que encontrou cinco pólipos no sigmoide, tendo sido todos retirados e diagnosticados como adenomas tubulares de baixo grau. Qual é a conduta CORRETA nesse caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retirada endoscópica da mucosa nos locais de onde foram retirados os pólipos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sigmoidectomia por videocirurgia restrita ao segmento onde havia pólipos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir a colonoscopia após três anos para avaliação de todo o cólon.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar retossigmoidoscopia anual para controle de novos pólipos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda a conduta de seguimento (vigilância) após o achado de múltiplos pólipos em uma colonoscopia de rotina. O paciente em questão apresentou cinco adenomas tubulares de baixo grau, todos devidamente ressecados. Para definir o intervalo da próxima colonoscopia, as diretrizes internacionais e nacionais de rastreamento de câncer colorretal utilizam o número de pólipos, o tamanho e o tipo histológico.\n\nAnálise das alternativas:\n\na) Incorreta. A ressecção endoscópica da mucosa nos locais prévios não é necessária, pois os pólipos já foram retirados e o diagnóstico histológico confirmou serem adenomas tubulares de baixo grau. Não há indicação de nova intervenção local se a ressecção foi considerada completa durante o exame inicial e a histologia é benigna.\n\nb) Incorreta. A sigmoidectomia (tratamento cirúrgico) seria uma conduta excessiva e inadequada para pólipos adenomatosos de baixo grau que foram resolvidos por via endoscópica. A cirurgia é reservada para casos em que há neoplasia maligna invasiva ou quando os pólipos não podem ser retirados com segurança por endoscopia.\n\nc) Correta. Segundo as diretrizes da Sociedade Brasileira de Endoscopia Digestiva (SOBED) e de órgãos internacionais como a US Multi-Society Task Force (USMSTF), pacientes que apresentam de 3 a 10 adenomas tubulares (menores que 10 mm e com displasia de baixo grau) devem repetir a colonoscopia em 3 anos. Se o paciente tivesse apenas 1 ou 2 pequenos adenomas, o intervalo poderia ser de 5 a 10 anos. O achado de 5 adenomas coloca o paciente em um grupo de maior risco para o desenvolvimento de novas lesões, justificando o intervalo mais curto.\n\nd) Incorreta. A retossigmoidoscopia avalia apenas a porção distal do intestino grosso. Pacientes que já formaram múltiplos adenomas precisam de uma avaliação de todo o cólon, o que torna a colonoscopia o exame de escolha. Além disso, a periodicidade anual não é a recomendada para o perfil histológico de adenoma de baixo grau descrito no caso.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:27.959Z"
+  },
+  {
+    "id": "AJUDA_0a4f8a81-8167-4b48-b100-2e0ee265e9e6",
+    "originalId": "0a4f8a81-8167-4b48-b100-2e0ee265e9e6",
+    "statement": "No primeiro semestre de 2025, foi observado em Fortaleza um importante surto de bronquiolite viral aguda (BVA) em crianças menores de 2 anos, inclusive com grande gravidade e inúmeros desfechos negativos. Sobre a BVA, sabe-se que",
+    "options": [
+      {
+        "id": "A",
+        "text": "no decorrer de 2-3 dias há evolução para sintomatologia de acometimento de via aérea superior, com surgimento de tosse e taquipneia grave, porém não chega à dispneia, gemência ou batimento de aleta nasal e hipoxemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a história clínica da BVA é de um quadro de infecção de via aérea inferior, que se inicia após 4-6 dias de incubação, com coriza, espirro e obstrução nasal, além de tosse e desconforto respiratório grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o exame físico, na BVA, varia a cada minuto, uma vez que a obstrução pelos plugs no nível bronquiolar pode mobilizar-se com a tosse e até mesmo com o sono e a agitação do lactente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "em lactentes jovens ou com história de prematuridade, a BVA sempre se manifestar com pródromos, inclusive a apneia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nA Bronquiolite Viral Aguda (BVA) é o primeiro episódio de sibilância precedido por sintomas gripais em crianças menores de 2 anos, sendo o Vírus Sincicial Respiratório (VSR) o agente etiológico mais comum. A compreensão da sua evolução clínica é fundamental para o diagnóstico correto.\n\nAlternativa a: Incorreta. A questão inverte a cronologia e nega a gravidade. A BVA começa com sintomas de via aérea superior (coriza, obstrução nasal) e, após 2 a 3 dias, evolui com acometimento da via inferior. Diferente do que afirma a alternativa, nos casos graves é muito comum observar dispneia, gemência, batimento de aleta nasal e hipoxemia.\n\nAlternativa b: Incorreta. Embora a incubação do VSR dure de 2 a 8 dias, a história clínica clássica não se inicia diretamente como uma infecção de via aérea inferior. Existe um período prodrômico de via superior que precede o desconforto respiratório. A alternativa falha ao sugerir que a fase inferior ocorre simultaneamente aos primeiros sintomas de coriza e espirros de forma generalizada.\n\nAlternativa c: Correta. Esta é uma característica típica da BVA no exame físico. Como a doença causa inflamação, edema e formação de plugs (tampões) de muco e detritos celulares nos bronquíolos, esses tampões podem se deslocar com a tosse, com a mudança de decúbito ou durante a agitação do lactente. Isso faz com que a ausculta pulmonar e os sinais de obstrução variem significativamente em um curto espaço de tempo.\n\nAlternativa d: Incorreta. O erro reside no termo sempre. Em lactentes jovens e prematuros, a apneia pode ser a manifestação inicial ou até a única manifestação da doença, muitas vezes ocorrendo sem a presença prévia de pródromos catarris ou sinais clássicos de desconforto respiratório. Portanto, nem sempre haverá pródromos precedendo a apneia.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:27.959Z"
+  },
+  {
+    "id": "AJUDA_0a523bf9-f3d2-46ea-9820-22e9adda06f2",
+    "originalId": "0a523bf9-f3d2-46ea-9820-22e9adda06f2",
+    "statement": "Um lactente de 2 meses, sem internações prévias, apresenta quadro, há 4 dias, de coriza hialina e tosse. É levado à Emergência por apresentar piora da tosse e cansaço. A mãe nega febre e refere que o irmão mais velho está com resfriado. Ao exame físico, apresenta-se em regular estado geral, hidratado, corado, afebril, taquidispneico, com frequência respiratória de 67 irpm e uso de musculatura acessória. Apresenta roncos e sibilos difusos à ausculta pulmonar. O restante do exame físico é normal. Radiografia de tórax com sinais de hiperinsuflação, sem imagem de condensação e/ou atelectasia. Qual é o agente etiológico do quadro acima?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bordetella pertussis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Chlamydia trachomatis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mycoplasma pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vírus sincicial respiratório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Streptococcus pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito é clássico de Bronquiolite Viral Aguda (BVA). Trata-se de um lactente jovem (2 meses) que apresenta um pródromo catarral (coriza e tosse) seguido de sinais de obstrução de vias aéreas inferiores e desconforto respiratório (taquipneia, sibilância e uso de musculatura acessória). A radiografia com sinais de hiperinsuflação (aprisionamento de ar) corrobora o diagnóstico de doença obstrutiva.\n\nAnálise das alternativas:\n\na) Bordetella pertussis: É o agente da coqueluche. Embora possa causar tosse persistente e crises de cianose em lactentes pequenos, o quadro clínico típico evolui com tosse paroxística e guincho inspiratório, geralmente sem sibilância disseminada ou o padrão clássico de bronquiolite obstrutiva.\n\nb) Chlamydia trachomatis: Causa a pneumonia afebril do lactente. Ocorre geralmente entre a 2ª e a 12ª semana de vida. Caracteriza-se por tosse em \"staccato\", conjuntivite prévia ou concomitante e eosinofilia no hemograma. Não costuma cursar com sibilância intensa ou o quadro obstrutivo agudo descrito.\n\nc) Mycoplasma pneumoniae: É um agente comum de pneumonia atípica em crianças maiores (geralmente acima dos 5 anos) e adolescentes. É extremamente raro em um lactente de apenas 2 meses de idade.\n\nd) Vírus Sincicial Respiratório (VSR): Alternativa correta. O VSR é o principal agente etiológico da Bronquiolite Viral Aguda, sendo responsável por até 75% a 80% dos casos. O quadro de lactente com primeiro episódio de sibilância precedido por quadro gripal, em vigência de contato epidemiológico (irmão resfriado), é a descrição perfeita da infecção pelo VSR.\n\ne) Streptococcus pneumoniae: É o principal agente da pneumonia bacteriana típica. O quadro clínico esperado seria de febre alta, queda do estado geral (toxemia) e, na radiografia, presença de condensação lobar ou segmentar, o que não foi observado no caso, onde o paciente está afebril e com sinais de hiperinsuflação difusa.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:27.959Z"
+  },
+  {
+    "id": "AJUDA_0a5ab10a-88f4-4837-a760-c29f9fc770f6",
+    "originalId": "0a5ab10a-88f4-4837-a760-c29f9fc770f6",
+    "statement": "A síndrome de Patau é caracterizada por lábio leporino (geralmente na linha média) , dedos flexionados com polidactilia, hipotelorismo ocular, orelhas baixas e malformadas, crânio anormal e pequena holoprosencefalia, microftalmia, malformações cardíacas, rins hipoplásicos ou ausentes e anomalias viscerais e genitais. Essa síndrome acomete qual cromossomo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "8;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "12;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "13;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "18.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Síndrome de Patau é uma condição genética caracterizada pela trissomia do cromossomo 13. A descrição clínica apresentada é clássica para essa patologia, destacando-se as malformações de linha média e extremidades.\n\nAlternativa A: Incorreta. A alteração no cromossomo 8 refere-se à Síndrome de Warkany 2. É uma trissomia rara em nascidos vivos, cujos sinais clínicos incluem sulcos profundos nas palmas e plantas, anomalias de coluna e orelhas proeminentes, não correspondendo ao quadro de holoprosencefalia e polidactilia descritos.\n\nAlternativa B: Incorreta. A trissomia do cromossomo 12 costuma ser letal no útero. Uma variação é a Síndrome de Pallister-Killian (isocromossomo 12p em mosaico), que apresenta características como alopecia temporal e fronte proeminente, sem a correlação clássica com os achados da questão.\n\nAlternativa C: Correta. A Síndrome de Patau é definida pela presença de um cromossomo 13 adicional. O fenótipo clínico é marcado por defeitos graves no desenvolvimento do prosencéfalo (holoprosencefalia), microftalmia, lábio leporino e fenda palatina centrais, além de polidactilia pós-axial e malformações viscerais, exatamente como descritos no enunciado.\n\nAlternativa D: Incorreta. A trissomia do cromossomo 18 é a Síndrome de Edwards. Embora também apresente malformações múltiplas, seus sinais distintivos são a micrognatia, o occipital proeminente, os pés em cadeira de balanço (*rocker-bottom feet*) e a clássica postura das mãos com sobreposição de dedos (índice sobre o médio e mínimo sobre o anular), o que a diferencia da Síndrome de Patau.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:27.959Z"
+  },
+  {
+    "id": "AJUDA_0a5efa08-5fc5-468e-afc4-ceb399c6d7e2",
+    "originalId": "0a5efa08-5fc5-468e-afc4-ceb399c6d7e2",
+    "statement": "Mulher de 64 anos, diabética e obesa, procura pronto-socorro com dor abdominal difusa, febre, taquicardia e hipotensão. O exame físico mostra sinais de irritação peritoneal difusa. A tomografia computadorizada evidenciou diverticulite sigmoide classificada como Hinchey IV. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar apenas antibioticoterapia de amplo espectro, pois Hinchey IV pode evoluir com resolução espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar drenagem percutânea guiada por imagem como primeira linha, mesmo em peritonite difusa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar colonoscopia imediata antes da decisão cirúrgica, para confirmar a etiologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar laparoscopia diagnóstica sem ressecção, reservando cirurgia para falha clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar laparotomia de emergência com ressecção do segmento colônico afetado e procedimento de Hartmann, associada a antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nA paciente em questão apresenta um quadro de abdome agudo perfurativo complicado por choque séptico, evidenciado pela instabilidade hemodinâmica (taquicardia e hipotensão) e sinais de irritação peritoneal difusa. O diagnóstico tomográfico de diverticulite aguda Hinchey IV confirma a presença de peritonite fecal generalizada, uma condição de altíssima gravidade e mortalidade.\n\nCLASSIFICAÇÃO DE HINCHEY (MODIFICADA)\nHinchey I: Abscesso pericólico ou mesentérico localizado.\nHinchey II: Abscesso pélvico ou à distância (abdominal/retroperitoneal).\nHinchey III: Peritonite purulenta generalizada.\nHinchey IV: Peritonite fecal generalizada (perfuração livre do cólon com fezes na cavidade).\n\nPOR QUE A ALTERNATIVA E ESTÁ CORRETA?\nO tratamento da diverticulite Hinchey IV é cirúrgico e de emergência. O objetivo principal é o controle da fonte de infecção e a limpeza da cavidade peritoneal. Em pacientes instáveis, com comorbidades (diabetes e obesidade) e contaminação fecal franca, a conduta clássica e mais segura é a Cirurgia de Hartmann. Este procedimento consiste na ressecção do segmento colônico afetado (sigmoidectomia), fechamento do coto retal e confecção de uma colostomia terminal. Isso evita a realização de uma anastomose primária (ligação do intestino) em um ambiente de intensa inflamação e infecção, onde o risco de deiscência (abertura dos pontos) seria inaceitável.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: O tratamento conservador apenas com antibióticos é indicado para casos de diverticulite não complicada ou Hinchey I com abscessos muito pequenos. O Hinchey IV evolui invariavelmente para óbito sem intervenção cirúrgica imediata para remoção das fezes e do segmento perfurado.\n\nAlternativa B: A drenagem percutânea guiada por imagem é a primeira linha de tratamento para abscessos localizados volumosos (Hinchey II). Ela não possui indicação em casos de peritonite difusa, pois não consegue limpar toda a cavidade nem tratar a perfuração colônica.\n\nAlternativa C: A colonoscopia é formalmente contraindicada na fase aguda de uma diverticulite, especialmente se houver suspeita de perfuração. A insuflação de ar durante o exame pode aumentar a perfuração e agravar a contaminação peritoneal. O rastreio colônico deve ser feito de 6 a 8 semanas após a resolução do quadro agudo.\n\nAlternativa D: A laparoscopia diagnóstica ou terapêutica com apenas lavagem peritoneal e drenagem (sem ressecção) foi estudada para casos de Hinchey III (peritonite purulenta), mas ainda é controversa e apresenta taxas de falha. No Hinchey IV (peritonite fecal), a ressecção do segmento doente é obrigatória para interromper o extravasamento de fezes para a cavidade.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:27.959Z"
+  },
+  {
+    "id": "AJUDA_0a71aba7-d3c0-4b12-8b6c-bcf0b0641fc0",
+    "originalId": "0a71aba7-d3c0-4b12-8b6c-bcf0b0641fc0",
+    "statement": "Paciente, 36 anos, tabagista, com histórico de enxaqueca com aura, procura serviço de urgência por apresentar sangramento genital em grande quantidade há 5 dias. Ao exame especular observa-se sangramento exteriorizando-se pelo orifício externo do colo do útero. Realizado B-HCG que deu negativo. Foi realizado acesso venoso para reposição hipovolêmica com infusão de cristaloides e ácido tranexâmico venoso. Após estabilização do quadro, dentre as opções listadas abaixo, qual a melhor opção terapêutica para a paciente utilizar após a alta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Etinilestradiol 30mcg + levonorgestrel 150mcg, um comprimido, 3 vezes ao dia, até parar o sangramento. Após um comprimido ao dia por 4 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Etinilestradiol 20mcg + levonorgestrel 150mcg, um comprimido, 3 vezes ao dia, até parar o sangramento. Após um comprimido ao dia por 4 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Implante de etonogestrel.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Noretisterona 5 a 15 mg/dia até parar o sangramento. Após 5 a 10 mg/dia durante 3 a 6 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Acetato de medroxiprogesterona 150mg, IM, a cada 12 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta um quadro de Sangramento Uterino Anormal (SUA) agudo e grave, já tendo recebido o manejo inicial de estabilização (reposição volêmica e antifibrinolítico). O desafio da questão é selecionar a terapia de manutenção para evitar novos sangramentos, respeitando as comorbidades da paciente. Ela tem 36 anos, é tabagista e apresenta enxaqueca com aura. De acordo com os Critérios de Elegibilidade da Organização Mundial da Saúde (OMS), a enxaqueca com aura, em qualquer idade, é uma contraindicação absoluta (Categoria 4) ao uso de estrogênios, devido ao risco significativamente aumentado de Acidente Vascular Cerebral (AVC) isquêmico. Além disso, o tabagismo em mulheres acima de 35 anos também contraindica o uso de anticoncepcionais combinados.\n\nAlternativa a) Incorreta. Esta alternativa propõe o uso de um anticoncepcional oral combinado (Etinilestradiol + Levonorgestrel). Embora o esquema de múltiplos comprimidos ao dia seja uma opção para controlar sangramentos agudos em pacientes sem comorbidades, o uso de etinilestradiol (estrogênio) é formalmente contraindicado para esta paciente devido à enxaqueca com aura e ao perfil de risco cardiovascular (tabagista > 35 anos).\n\nAlternativa b) Incorreta. Assim como a alternativa \"a\", utiliza uma combinação de estrogênio e progestogênio. Mesmo com uma dose menor de etinilestradiol (20mcg), o risco de eventos tromboembólicos e AVC permanece inaceitável (Categoria 4 da OMS) para quem tem enxaqueca com aura.\n\nAlternativa c) Incorreta. O implante de etonogestrel é um método apenas com progestogênio e seria seguro para a paciente a longo prazo. No entanto, ele não é a conduta de escolha para o controle imediato do endométrio após um episódio de sangramento volumoso. O implante é um método contraceptivo de longa duração e pode, inclusive, causar sangramentos irregulares nos primeiros meses de uso, não sendo a ferramenta ideal para estabilizar o quadro hemorrágico atual.\n\nAlternativa d) Correta. A noretisterona é um progestogênio isolado. O uso de progestogênios em doses elevadas é uma excelente opção para estabilizar o endométrio e cessar o sangramento em pacientes que não podem utilizar estrogênios. Por não conter estrogênio, a noretisterona não aumenta o risco de AVC em pacientes com enxaqueca com aura, tornando-se a opção mais segura e eficaz para o tratamento de manutenção pós-alta neste caso.\n\nAlternativa e) Incorreta. O acetato de medroxiprogesterona de depósito (injetável trimestral) é um método de progestogênio isolado e seguro quanto aos critérios de elegibilidade. Contudo, ele não é a droga de escolha para o manejo agudo ou subagudo do sangramento uterino anormal. Sua farmacocinética não permite o ajuste de dose necessário para o controle do sangramento que acaba de ser estabilizado, além de estar associado a uma alta taxa de sangramento de escape (spotting) no início do uso, o que seria desfavorável para esta paciente.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": 74.2228561565159,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:27.959Z"
+  },
+  {
+    "id": "AJUDA_0a750d9a-d97c-4a3b-a7f4-f443869514c9",
+    "originalId": "0a750d9a-d97c-4a3b-a7f4-f443869514c9",
+    "statement": "A síndrome compartimental aguda caracteriza-se classicamente por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dor desproporcional, parestesia e pulsos ausentes tardiamente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ausência imediata de pulsos e necrose muscular precoce",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dor leve, edema e mobilidade preservada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiperemia e calor local",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Taquicardia secundária",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A síndrome compartimental aguda ocorre devido ao aumento da pressão intersticial dentro de um espaço osteofascial fechado, o que reduz a pressão de perfusão capilar, levando à isquemia de músculos e nervos. O diagnóstico é clínico e baseado nos sinais conhecidos como os 6 Ps: Pain (dor), Paresthesia (parestesia), Pallor (palidez), Pressure (pressão), Paralysis (paralisia) e Pulselessness (ausência de pulso).\n\nAlternativa (a) CORRETA: Esta alternativa descreve perfeitamente a evolução clínica. A dor desproporcional ao achado físico e que piora com o alongamento passivo é o sinal mais precoce e sensível. A parestesia indica que os nervos que atravessam o compartimento estão sofrendo isquemia. É crucial destacar que a ausência de pulsos é um achado tardio, pois a pressão do compartimento raramente supera a pressão sistólica arterial nas fases iniciais; quando o pulso desaparece, o dano tecidual geralmente já é irreversível.\n\nAlternativa (b) INCORRETA: A ausência imediata de pulsos é mais característica de uma oclusão arterial aguda (como uma embolia ou trauma vascular direto) do que da síndrome compartimental. Na síndrome compartimental, o fluxo macrovascular (grandes artérias) costuma ser preservado inicialmente, enquanto a microcirculação é comprometida.\n\nAlternativa (c) INCORRETA: A dor é intensa e de difícil controle, não sendo nunca classificada como leve. Além disso, a mobilidade é severamente prejudicada, e a dor ao movimento passivo é um dos testes diagnósticos mais importantes.\n\nAlternativa (d) INCORRETA: Hiperemia e calor local são sinais típicos de processos infecciosos ou inflamatórios, como celulite, erisipela ou trombose venosa profunda. Na síndrome compartimental, o membro pode tornar-se pálido e frio conforme a perfusão diminui.\n\nAlternativa (e) INCORRETA: A taquicardia é uma resposta sistêmica inespecífica à dor severa ou ao estresse. Embora possa estar presente, ela não caracteriza a síndrome nem auxilia no diagnóstico diferencial localizado do membro afetado.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Complicações do Trauma Ortopédico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:03:27.959Z"
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "AJUDA_1e9b18b4-9163-4361-99db-ee61657c36e1",
+    "originalId": "1e9b18b4-9163-4361-99db-ee61657c36e1",
+    "statement": "Paciente masculino, de 68 anos, com histórico de hipertensão arterial, diabetes melito e tabagismo, foi admitido na Emergência após início súbito (há 1 hora) de hemiparesia direita e afasia. Ao exame, apresentava NIHSS 12. Tomografia computadorizada de crânio não mostrou sinais de hemorragia. Angiotomografia revelou oclusão da artéria cerebral média à esquerda. O hospital dispunha de trombólise intravenosa e de equipe capacitada para realização de trombectomia mecânica. Qual a conduta a ser adotada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar trombólise intravenosa com alteplase, pois trombectomia não traz benefício adicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar trombectomia mecânica sem trombólise, pois NIHSS elevado já indica benefício.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar trombólise intravenosa com alteplase e encaminhar o paciente imediatamente para trombectomia mecânica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não realizar reperfusão; iniciar apenas administração de antiagregante plaquetário e aguardar a evolução clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro de Acidente Vascular Cerebral Isquêmico (AVCI) hiperagudo, com apenas 1 hora de evolução, o que o coloca dentro da janela terapêutica para intervenções de reperfusão. O NIHSS de 12 indica um déficit neurológico moderado a grave, e a angiotomografia confirmou uma oclusão de grande vaso (artéria cerebral média), que é o principal alvo para terapias endovasculares.\n\nPOR QUE A ALTERNATIVA C ESTÁ CORRETA?\n\nA conduta padrão para pacientes com oclusão de grandes vasos da circulação anterior que se apresentam em até 4,5 horas do início dos sintomas é a chamada terapia de ponte (*bridging therapy*). Esta estratégia consiste em iniciar imediatamente a trombólise intravenosa com alteplase (r-tPA) e, sem aguardar o resultado clínico da infusão, encaminhar o paciente para a trombectomia mecânica. A combinação das duas terapias aumenta as taxas de recanalização arterial e melhora significativamente o desfecho funcional do paciente em 90 dias.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nALTERNATIVA A: Está incorreta porque a trombectomia mecânica traz, comprovadamente, um benefício adicional imenso em relação à trombólise isolada em casos de oclusão de grandes vasos. A taxa de recanalização de uma artéria cerebral média apenas com alteplase é baixa, enquanto a trombectomia alcança sucesso técnico na maioria dos casos.\n\nALTERNATIVA B: Está incorreta porque, embora a trombectomia seja fundamental, as diretrizes atuais (AHA/ASA e Sociedade Brasileira de Doenças Cerebrovasculares) ainda recomendam a administração da alteplase antes do procedimento invasivo para pacientes elegíveis. A trombólise venosa pode iniciar o processo de recanalização ou facilitar a fragmentação do trombo antes mesmo do cateterismo.\n\nALTERNATIVA D: Está incorreta, pois a conduta conservadora (apenas antiagregação) em um paciente dentro da janela de reperfusão é contraindicada. A reperfusão imediata é a única terapia capaz de salvar a penumbra isquêmica e evitar sequelas graves. Além disso, em pacientes que recebem alteplase, o uso de antiagregantes plaquetários deve ser postergado por 24 horas para reduzir o risco de transformação hemorrágica.\n\nRESUMO DE CONDUTA NO AVCI COM OCLUSÃO DE GRANDE VASO:\n\n1. Tempo de sintomas inferior a 4,5 horas: Realizar trombólise intravenosa.\n2. Oclusão de grande vaso (carótida interna ou cerebral média M1) identificada em exame de imagem: Realizar trombectomia mecânica (geralmente até 6 horas, ou até 24 horas em casos selecionados por protocolo de imagem avançada).\n3. Disponibilidade de ambos: Realizar a terapia combinada (trombólise + trombectomia).",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:00.162Z"
+  },
+  {
+    "id": "AJUDA_1e9efe02-3600-4dc7-a5e7-8146db6eb921",
+    "originalId": "1e9efe02-3600-4dc7-a5e7-8146db6eb921",
+    "statement": "Paciente de 75 anos, hipertensa e diabética, submetia a colecistectomia de urgência por colecistite aguda complicada com empiema há 07 dias. Retorna ao Pronto Socorro após a alta hospitalar com quadro de febre, desconforto em hipocôndrio direito, sem icterícia. Após exames diagnósticos foi evidenciado lesão hipodensa sugestiva de abscesso hepático em seguimento VI, de 5x6cm, de aproximadamente 150ml, superficial. Diante do quadro, considerando estar em hospital terciário sem restrições propedêuticas, indique qual a melhor opção terapêutica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hepatectomia posterior direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Laparoscopia com drenagem do local do abscesso e antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Punção guiada por ultrassonografia ou tomografia e antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A conduta diante de um abscesso hepático piogênico, como o sugerido no caso (complicação pós-colecistite aguda com empiema), baseia-se na associação de antibioticoterapia sistêmica e controle do foco infeccioso, que, na maioria das vezes, envolve a drenagem da coleção.\n\nAlternativa a: Incorreta. A hepatectomia é uma ressecção cirúrgica de grande porte e alta morbidade. Ela não possui indicação como primeira linha para abscessos simples. É reservada para situações de exceção, como abscessos crônicos com destruição do parênquima, múltiplos abscessos restritos a um lobo que não respondem a terapias conservadoras ou quando há suspeita de malignidade associada.\n\nAlternativa b: Incorreta. Embora a drenagem cirúrgica (seja por laparoscopia ou laparotomia) seja eficaz, ela é considerada uma conduta de segunda linha em comparação à técnica percutânea. A abordagem cirúrgica é indicada preferencialmente quando há falha na drenagem percutânea, abscessos multiloculados com septos espessos, rotura do abscesso para a cavidade peritoneal ou necessidade de tratar outra patologia intra-abdominal simultaneamente.\n\nAlternativa c: Correta. A punção ou drenagem percutânea guiada por ultrassonografia (USG) ou tomografia computadorizada (TC), associada à antibioticoterapia, é o padrão-ouro para abscessos hepáticos piogênicos maiores que 3 a 5 cm. O abscesso da paciente possui 5 x 6 cm (volume considerável de 150 mL) e está localizado no segmento VI, que é superficial e de fácil acesso para procedimentos percutâneos. Esta opção oferece alta taxa de sucesso com menor invasividade e menor índice de complicações em relação à cirurgia.\n\nAlternativa d: Incorreta. O uso isolado de antibióticos pode ser considerado apenas para abscessos pequenos, geralmente menores que 3 cm, em pacientes estáveis e com boa resposta clínica inicial. Para uma coleção de 150 mL, a antibioticoterapia isolada apresenta alto risco de falha terapêutica, exigindo o esvaziamento da cavidade para garantir a cura e evitar a rotura do abscesso.\n\nRaciocínio clínico: Em um hospital terciário, o manejo de escolha para abscesso hepático piogênico solitário e acessível acima de 3 cm é a drenagem percutânea por imagem somada ao suporte antibiótico. A cirurgia fica reservada para casos complicados ou falha do método menos invasivo.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Vesícula e Vias Biliares",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:00.162Z"
+  },
+  {
+    "id": "AJUDA_1ea4251a-b80a-4ce6-aac0-97c60c32d220",
+    "originalId": "1ea4251a-b80a-4ce6-aac0-97c60c32d220",
+    "statement": "Gestante de 29 anos, G4P0A3, com 21 semanas gestacionais. Tem como antecedente três abortamentos com o mesmo parceiro, todos diagnosticados por ultrassonografia, com batimentos cardíacos e eliminação espontânea entre 7 e 9 semanas. Está assintomática e nega cirurgias prévias, tabagismo, etilismo, uso de drogas ilícitas ou traumas nas gestações anteriores. IMC: 24 kg/m2. Resultados dos exames: Ultrassonografias morfológicas de 1º e 2º trimestre dentro da normalidade (feto, útero e anexos). Cervicometria transvaginal: 29 mm. Pesquisa de anticorpos para síndrome antifosfolípide negativa. Glicemia de jejum: 88 mg/dl. TSH: 2,1 mUI/L. Sorologias pré-natais negativas. Qual é a conduta mais adequada para esta gestante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever ácido acetilsalicílico e enoxaparina profilática até a véspera do parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acompanhamento clínico regular com apoio psicológico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever progesterona micronizada vaginal noturna até 36 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Oferecer realização de cerclagem cervical com retirada dos pontos no termo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta história de abortamento recorrente (três perdas gestacionais prévias). A investigação laboratorial e ultrassonográfica apresentada na questão afastou as principais causas identificáveis:\n- Síndrome do Anticorpo Antifosfolípide (pesquisa de anticorpos negativa);\n- Causas endócrinas como diabetes e hipotireoidismo (glicemia e TSH normais);\n- Malformações uterinas (ultrassonografia normal);\n- Insuficiência istmocervical (histórico de perdas no primeiro trimestre, entre 7 e 9 semanas, e cervicometria atual normal de 29 mm).\n\nTrata-se, portanto, de um caso de abortamento recorrente idiopático (sem causa definida), o que ocorre em cerca de 50% dos casos.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O uso combinado de ácido acetilsalicílico e enoxaparina é o tratamento de escolha para a Síndrome Antifosfolípide (SAF). Como os anticorpos para SAF resultaram negativos, a anticoagulação ou antiagregação empírica não traz benefícios e agrega riscos de sangramento.\n\nAlternativa b: Correta. Para os casos de abortamento recorrente idiopático, a conduta recomendada pelas diretrizes obstétricas é o acompanhamento pré-natal regular, acolhimento e suporte emocional/psicológico contínuo (abordagem conhecida como Tender Loving Care). Mesmo sem terapia medicamentosa específica, o prognóstico de evolução favorável da gestação atual ultrapassa 70% a 80%.\n\nAlternativa c: Incorreta. A progesterona micronizada vaginal é indicada na prevenção de prematuridade em gestantes com colo uterino curto (medida menor que 25 mm entre 18 e 24 semanas) ou com histórico de parto prematuro espontâneo prévio. A paciente está com 21 semanas, assintomática e com colo uterino de 29 mm, não havendo indicação para essa medicação.\n\nAlternativa d: Incorreta. A cerclagem cervical está indicada para casos comprovados ou suspeitos de Insuficiência Istmocervical (IIC), caracterizada por perdas fetais do segundo trimestre com dilatação cervical indolor. As perdas anteriores da paciente ocorreram precocemente no primeiro trimestre (7 a 9 semanas) e a cervicometria atual é normal (29 mm), descartando falha anatômica do colo uterino.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Abortamento de Repetição",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:00.162Z"
+  },
+  {
+    "id": "AJUDA_1ead7e12-be9f-4409-a4a7-8b5aedd66efc",
+    "originalId": "1ead7e12-be9f-4409-a4a7-8b5aedd66efc",
+    "statement": "Gestante realiza ultrassonografia obstétrica, que evidencia uma medida do maior bolsão vertical do líquido amniótico de 12 cm.\nA condição que pode estar associada a esse quadro é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "insuficiência uteroplacentária;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "displasia tanatofórica no feto;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "agenesia renal bilateral fetal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "restrição de crescimento fetal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "gravidez com pós-datismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA questão apresenta uma gestante com medida do maior bolsão vertical (MBV) do líquido amniótico de 12 cm. Na prática obstétrica, os valores de referência para o MBV são:\n- Oligodrâmnio: menor que 2 cm.\n- Volume normal: entre 2 cm e 8 cm.\n- Polidrâmnio: maior que 8 cm.\n\nPortanto, o achado de 12 cm confirma o diagnóstico de polidrâmnio. A questão solicita identificar qual das condições listadas está associada ao excesso de líquido amniótico.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: A insuficiência uteroplacentária leva a uma restrição do aporte de oxigênio e nutrientes para o feto. Como mecanismo de adaptação, ocorre a centralização da circulação (redirecionamento do fluxo sanguíneo para órgãos vitais), o que reduz a perfusão renal fetal. Com menos sangue chegando aos rins, há menor produção de urina, resultando em oligodrâmnio, e não polidrâmnio.\n\nAlternativa (b) CORRETA: A displasia tanatofórica é uma displasia esquelética letal caracterizada por membros muito curtos e, crucialmente, uma cavidade torácica extremamente estreita e hipoplásica. Esse estreitamento torácico acentuado pode dificultar a deglutição fetal por compressão do esôfago ou por interferir na dinâmica da deglutição. Como a deglutição é a principal via de reabsorção do líquido amniótico no terceiro trimestre, sua redução leva ao acúmulo de líquido (polidrâmnio).\n\nAlternativa (c) INCORRETA: A agenesia renal bilateral é a ausência total de rins no feto. Como a urina fetal é a principal fonte de formação do líquido amniótico a partir da segunda metade da gestação, a ausência de produção urinária causa um quadro grave de oligodrâmnio severo (ou adrâmnio), frequentemente associado à sequência de Potter.\n\nAlternativa (d) INCORRETA: A restrição de crescimento fetal (RCF), especialmente a de origem placentária, compartilha a mesma fisiopatologia da insuficiência uteroplacentária citada na alternativa A. Ocorre desvio do débito cardíaco fetal para o cérebro e coração em detrimento dos rins, resultando em baixa produção de urina e oligodrâmnio.\n\nAlternativa (e) INCORRETA: A gravidez com pós-datismo (após 40 ou 42 semanas) está classicamente associada a uma redução fisiológica ou patológica do volume de líquido amniótico devido ao envelhecimento placentário e à queda na taxa de filtração glomerular fetal, sendo o oligodrâmnio um achado comum que indica a necessidade de vigilância rigorosa ou interrupção da gestação.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Alteração do Volume do Líquido Amniótico"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:00.162Z"
+  },
+  {
+    "id": "AJUDA_1eba1290-4a7c-414e-b3d7-f197059bd4ac",
+    "originalId": "1eba1290-4a7c-414e-b3d7-f197059bd4ac",
+    "statement": "Neonato prematuro de 33 semanas, com 9 dias de vida, vem apresentando distensão abdominal progressiva, resíduo bilioso na sonda orogástrica. Nas últimas 24h, com edema e hiperemia da parede abdominal. Realizou Rx de abdome agudo, que demonstrou extensa área de pneumatose intestinal, gás na veia porta, pequena lâmina de ar sobre o fígado. Baseando-se no quadro clínico de enterocolite necrosante deste neonato, qual dos achados tem indicação absoluta de intervenção cirúrgica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Edema e hiperemia da parede abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Extensa área de pneumatose intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pequena lâmina de ar sobre o fígado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Presença de gás na veia porta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a Enterocolite Necrosante (ECN), a emergência gastrointestinal mais comum no período neonatal, especialmente em prematuros. Para resolvê-la, é fundamental conhecer os Critérios de Bell modificados, que classificam a gravidade da doença e orientam a conduta (médica ou cirúrgica).\n\nA análise das alternativas revela o seguinte:\n\na) Incorreta. O edema e a hiperemia da parede abdominal (eritema) sugerem peritonite subjacente ou necrose de alça intestinal (estágio IIIB clínico). Embora sejam sinais clínicos muito preocupantes e que frequentemente levam à indicação cirúrgica por indicarem sofrimento de alça, na literatura clássica e nos protocolos de residência, eles são considerados sinais de alerta ou indicações relativas/clínicas, perdendo em \"absolutismo\" para a evidência radiológica de perfuração.\n\nb) Incorreta. A pneumatose intestinal (presença de gás na parede do intestino) é o achado radiológico patognomônico da ECN, classificando-a no estágio IIA (doença moderada). Por si só, a pneumatose indica tratamento clínico (jejum, sonda orogástrica e antibioticoterapia), e não cirurgia.\n\nc) Correta. A \"pequena lâmina de ar sobre o fígado\" em um Rx de abdome em decúbito dorsal é uma descrição clássica de pneumoperitônio. O ar livre na cavidade abdominal se desloca para a região anterior e superior, sobrepondo-se à imagem do fígado. O pneumoperitônio (estágio IIIB radiológico) indica perfuração intestinal e é a única indicação cirúrgica absoluta e consensual em todas as diretrizes de tratamento da enterocolite necrosante.\n\nd) Incorreta. O gás na veia porta é um sinal de progressão da doença (estágio IIB), indicando maior gravidade. No entanto, sua presença isolada não é indicação de cirurgia. Muitos neonatos com gás na veia porta respondem bem ao tratamento clínico intensivo, desde que não apresentem perfuração.\n\nResumo da indicação cirúrgica: Na ECN, o tratamento é prioritariamente clínico. A intervenção cirúrgica (laparotomia ou drenagem peritoneal) torna-se obrigatória (absoluta) diante da evidência de perfuração intestinal, manifestada radiologicamente pelo pneumoperitônio. Além da perfuração, outras indicações (muitas vezes consideradas relativas ou clínicas) incluem a deterioração clínica persistente apesar do tratamento médico, massa palpável ou alça fixa ao raio X.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:00.162Z"
+  },
+  {
+    "id": "AJUDA_1ebab1dd-f90e-4c33-b043-b3f6541b292c",
+    "originalId": "1ebab1dd-f90e-4c33-b043-b3f6541b292c",
+    "statement": "Parturiente de 39 semanas, 22 anos, é submetida à pelvimetria clínica. Observam-se uma pelve ovalada, com reduzido diâmetro anteroposterior do estreito superior, espinhas isquiáticas proeminentes e ângulo subpúbico com grande amplitude. A insinuação fetal foi observada no diâmetro transverso. O tipo mais provável de pelve é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ginecoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "androide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "antropoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "platipeloide.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para a resolução desta questão, é fundamental o conhecimento da classificação de Caldwell-Moloy para os tipos de bacia feminina, que considera o formato do estreito superior e suas implicações no mecanismo de parto.\n\nA alternativa (d) é a correta. A bacia platipeloide é caracterizada por ser uma bacia achatada no sentido anteroposterior. As principais características citadas no enunciado que confirmam este diagnóstico são o reduzido diâmetro anteroposterior do estreito superior e a insinuação fetal obrigatoriamente no diâmetro transverso, uma vez que não há espaço suficiente nos outros diâmetros para a passagem da cabeça fetal. O ângulo subpúbico na bacia platipeloide é tipicamente amplo (obtuso), o que também foi mencionado na questão.\n\nAlternativa (a) incorreta: A bacia ginecoide é o tipo mais comum e favorável ao parto. Ela apresenta um estreito superior arredondado, com os diâmetros anteroposterior e transverso bem equilibrados e proporcionais. O ângulo subpúbico é amplo (em torno de 90 graus), mas a insinuação fetal geralmente ocorre nos diâmetros oblíquos, e não no transverso de forma obrigatória como na platipeloide.\n\nAlternativa (b) incorreta: A bacia androide, ou masculina, tem o estreito superior em formato triangular (ou de coração). Embora apresente espinhas isquiáticas proeminentes e diâmetro anteroposterior reduzido, ela se diferencia drasticamente da descrição por possuir um ângulo subpúbico estreito (agudo) e paredes pélvicas convergentes, o que dificulta a progressão do parto.\n\nAlternativa (c) incorreta: A bacia antropoide possui um formato ovalado, porém no sentido vertical. Isso significa que o seu diâmetro anteroposterior é significativamente maior do que o diâmetro transverso. Devido a essa conformação, a insinuação fetal ocorre preferencialmente no diâmetro anteroposterior, frequentemente em variedades de posição occipitossacrais ou occipitopúbicas.\n\nPortanto, a combinação de bacia ovalada com achatamento anteroposterior, ângulo subpúbico largo e insinuação em diâmetro transverso define classicamente a bacia platipeloide.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:00.162Z"
+  },
+  {
+    "id": "AJUDA_1ebc6c9a-4435-4ff6-80ca-110754688bab",
+    "originalId": "1ebc6c9a-4435-4ff6-80ca-110754688bab",
+    "statement": "RN com 48 horas de vida é submetido ao teste do coraçãozinho com os seguintes resultados: MSD SatO2: 96%, MIE SatO2: 91%. Segundo as recomendações da Sociedade Brasileira de Pediatria (2022), deve-se considerar o resultado",
+    "options": [
+      {
+        "id": "A",
+        "text": "normal e dar alta hospitalar para o RN.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "alterado e dar alta hospitalar para o RN com encaminhamento para especialista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "alterado e fazer um ecocardiograma imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "alterado, e deve-se repetir o exame em uma hora. Se ainda alterado, realizar um ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O teste do coraçãozinho (triagem neonatal por oximetria de pulso) é uma ferramenta essencial para a detecção precoce de cardiopatias congênitas críticas. Segundo as diretrizes da Sociedade Brasileira de Pediatria (SBP), ele deve ser realizado em recém-nascidos (RN) clinicamente estáveis, com idade gestacional acima de 34 semanas, entre 24 e 48 horas de vida.\n\nAnálise dos dados do RN:\n- Saturação no membro superior direito (MSD): 96% (pré-ductal).\n- Saturação no membro inferior (MIE): 91% (pós-ductal).\n- Diferença entre as medidas: 5%.\n\nPara que o teste seja considerado NORMAL, o RN deve apresentar:\n1. Saturação maior ou igual a 95% em ambas as extremidades (MSD e um dos membros inferiores);\n2. Diferença menor ou igual a 3% entre as medidas dos membros superior e inferior.\n\nComo o RN apresenta uma saturação de 91% no membro inferior (abaixo de 95%) e uma diferença de 5% entre os membros (acima de 3%), o resultado é considerado alterado.\n\nAnálise das alternativas:\n\na) Incorreta. O resultado não é normal. O RN só poderia receber alta se os critérios de normalidade fossem atingidos (SatO2 maior ou igual a 95% e diferença menor ou igual a 3%).\n\nb) Incorreta. O RN com teste alterado não deve receber alta. Cardiopatias críticas podem levar ao choque ou óbito após o fechamento do canal arterial; por isso, a investigação deve ser concluída ainda no ambiente hospitalar.\n\nc) Incorreta. O ecocardiograma imediato é indicado quando a saturação é menor ou igual a 89% em qualquer um dos membros na primeira aferição. Para resultados entre 90% e 94% ou com diferença maior ou igual a 4%, o protocolo exige a repetição do exame.\n\nd) Correta. De acordo com o fluxograma da SBP, caso o primeiro exame seja alterado (SatO2 entre 90% e 94% ou diferença maior ou igual a 4%), deve-se repetir a aferição em 1 hora. Podem ser feitas até três aferições com intervalo de 1 hora. Se, após a terceira medida, o resultado persistir alterado, o teste é considerado positivo, e o ecocardiograma deve ser realizado em até 24 horas. No caso da questão, o valor de 91% e a diferença de 5% enquadram-se perfeitamente na necessidade de repetição em 1 hora.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cuidados Neonatais",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:00.162Z"
+  },
+  {
+    "id": "AJUDA_1ebec4c0-339b-4ab3-8cbb-8829f4b313ee",
+    "originalId": "1ebec4c0-339b-4ab3-8cbb-8829f4b313ee",
+    "statement": "Mulher, 84 anos de idade, comparece ao ambulatório acompanhada da filha, que relata o retorno de episódios de agitação nos últimos 5 dias, principalmente no fim da tarde. A paciente não tem dormido bem e, em um dos episódios, levantou-se da cama e retirou as roupas. Apresenta histórico de cinco quedas nos últimos 45 dias, palidez labial episódica durante os momentos de agitação e recusa ocasional em aferir a pressão arterial. Há 1 mês, iniciou o uso de quetiapina e dipirona. Qual é a hipótese diagnóstica principal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reação adversa a antipsicótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Descompensação de quadro demencial crônico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Delirium do tipo hiperativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transtorno do sono relacionado ao envelhecimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito aponta para uma alteração aguda do estado mental em uma paciente idosa, o que é a marca registrada do delirium.\n\nA alternativa (c) está correta porque a paciente apresenta um início agudo (há 5 dias) de flutuação do nível de consciência e do comportamento, com piora no fim da tarde (fenômeno conhecido como sundowning ou \"entardecer\"), inversão do ciclo sono-vigília e agitação psicomotora evidente (levantar-se, retirar as roupas e recusar exames). O delirium hiperativo é caracterizado justamente por esse estado de alerta aumentado, inquietação e agitação, sendo muito comum em idosos hospitalizados ou com alterações agudas de saúde. As quedas frequentes e o início de novas medicações há um mês são fatores de risco e possíveis gatilhos para o quadro.\n\nA alternativa (a) está incorreta porque, embora a quetiapina possa causar efeitos colaterais como hipotensão ortostática (contribuindo para as quedas), o quadro de agitação psicomotora súbita e flutuante é mais bem definido pela síndrome clínica do delirium. A medicação pode ser um fator precipitante do delirium, mas o diagnóstico da condição atual é a síndrome neuropsiquiátrica em si.\n\nA alternativa (b) está incorreta porque, apesar de pacientes com demência terem maior risco de delirium, a descrição foca na mudança aguda ocorrida nos últimos 5 dias. Uma descompensação de demência sem um fator intercorrente não costuma ser tão súbita. O termo correto para uma descompensação aguda com flutuação de consciência e agitação em um idoso é delirium (frequentemente sobreposto a uma demência prévia).\n\nA alternativa (d) está incorreta porque os transtornos do sono primários do envelhecimento não explicam a agitação psicomotora vespertina, a desorientação comportamental (retirar as roupas) nem o caráter agudo da mudança de comportamento. O prejuízo no sono aqui é um sintoma componente do delirium, e não a causa primária.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Coma e Alterações da Consciência",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:00.162Z"
+  },
+  {
+    "id": "AJUDA_1edd76bd-2821-4719-97e5-8fe3031ccd25",
+    "originalId": "1edd76bd-2821-4719-97e5-8fe3031ccd25",
+    "statement": "Paciente, 70 anos de idade, faz uso de amiodarona 200 mg para tratamento de taquicardia ventricular. Comparece à consulta de rotina com os seguintes exames: TSH 0,01 uIU/ml (VR 0,4 a 4,5), T4 livre 2,3 ng/dl (VR: 0,76 a 1,46 ng/dl), T3 90 ng/dl (VR 60 a 180 ng/dl). Dentre as disfunções tireoideanas induzidas por amiodarona, sabe-se que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O hipotireoidismo induzido por amiodarona é mais frequente em áreas com deficiência de iodo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A tireotoxicose tipo 2, induzida por amiodarona, resulta do aumento da síntese dos hormônios tireoideanos pelo tireócito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A amiodarona inibe a desidionase tipo 2, resultando em menores níveis de T3.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A cintilografia da tireoide convencional com pertecnetato ou radioiodo, é capaz de diferenciar entre tireotoxicose induzida por amiodarona tipo 1 de tireotoxicose tipo 2 na maioria dos casos, dispensando a realização de outros exames.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A amiodarona é um antiarrítmico rico em iodo (cerca de 37% de sua composição é iodo elementar) e possui diversos efeitos sobre a fisiologia tireoidiana, o que pode levar tanto ao hipotireoidismo quanto à tireotoxicose.\n\nAnálise das alternativas:\n\na) Incorreta. O hipotireoidismo induzido por amiodarona ocorre preferencialmente em áreas com suprimento de iodo suficiente (onde o excesso de iodo da droga bloqueia a síntese hormonal pelo efeito Wolff-Chaikoff). Já a tireotoxicose induzida por amiodarona (especialmente o tipo 1) é mais comum em áreas com deficiência de iodo, onde a tireoide se torna hiperfuncionante ao receber a carga excessiva de iodo (fenômeno de Jod-Basedow).\n\nb) Incorreta. A tireotoxicose tipo 2 é uma tireoidite destrutiva induzida pela toxicidade direta da droga sobre o epitélio folicular, resultando na liberação de hormônio pré-formado na circulação. O aumento da síntese hormonal (hipertireoidismo verdadeiro) é a característica da tireotoxicose tipo 1.\n\nc) Correta. A amiodarona inibe a atividade das enzimas desiodases tipo 1 (D1) e tipo 2 (D2), que são responsáveis pela conversão periférica de T4 em T3. Como consequência dessa inibição, observa-se frequentemente uma elevação nos níveis de T4 livre e uma redução nos níveis de T3, como demonstrado nos exames do paciente do caso clínico (T4 livre alto e T3 em nível normal/baixo).\n\nd) Incorreta. A cintilografia convencional costuma ser pouco útil nesses casos, pois a enorme carga de iodo da amiodarona satura a glândula, levando a uma captação baixa ou nula tanto no tipo 1 quanto no tipo 2, o que dificulta a diferenciação. O exame padrão-ouro para distinguir os dois tipos na prática clínica é a ultrassonografia com Doppler: o tipo 1 apresenta hiperfluxo parenquimatoso, enquanto o tipo 2 apresenta fluxo reduzido ou ausente. Além disso, a diferenciação raramente dispensa outros exames complementares e avaliação clínica rigorosa.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:00.162Z"
+  },
+  {
+    "id": "AJUDA_1edff5ee-b768-4bc4-8a55-32562a5fe64e",
+    "originalId": "1edff5ee-b768-4bc4-8a55-32562a5fe64e",
+    "statement": "Paciente de 29 anos, nuligesta, com forte desejo reprodutivo, é diagnosticada com carcinoma escamoso de colo uterino. Ressonância magnética pélvica evidenciou tumor de 1,5cm de diâmetro, ausência de linfadenomegalias suspeitas e distância do tumor ao orificio cervical interno maior que 1cm. Exame anatomopatológico após conização revelou lesão com 1,5cm de diâmetro, profundidade de invasão estromal de 4mm, margens radiais exiguas e ausência de invasão do espaço linfovascular. Considerando o perfil da paciente e as recomendações atuais para preservação da fertilidade, qual é a conduta MAIS ADEQUADA para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nova conização com ampliação de margens, sem abordagem linfonodal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quimioterapia neoadjuvante para redução do volume tumoral, seguida de conização",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Traquelectomia radical com linfadenectomia pélvica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Traquelectomia simples com a pesquisa de linfonodo sentinela ou linfadenectomia pélvica",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para definir a conduta mais adequada para esta paciente, o primeiro passo é realizar o estadiamento clínico e patológico. De acordo com a classificação FIGO (2018), uma lesão com profundidade de invasão estromal de 4 mm é classificada como estádio IA2 (invasão maior que 3 mm e menor ou igual a 5 mm). O fato de o tumor apresentar 1,5 cm de diâmetro, margens exíguas na conização prévia e a paciente possuir forte desejo reprodutivo direciona o tratamento para a preservação da fertilidade com segurança oncológica.\n\nAlternativa a) Incorreta. Embora a paciente precise de uma ampliação de margens devido ao resultado da conização anterior (margens exíguas), o estádio IA2 exige obrigatoriamente a avaliação dos linfonodos pélvicos. O risco de metástase linfonodal nesse estádio gira em torno de 1% a 5%, o que torna a conduta de não abordar os linfonodos tecnicamente incompleta e insegura.\n\nAlternativa b) Incorreta. A quimioterapia neoadjuvante é uma estratégia experimental e excepcional, considerada apenas para tumores maiores (geralmente acima de 2 cm) em pacientes que desejam preservar a fertilidade e que não seriam candidatas imediatas a uma traquelectomia. Não se aplica a este caso, no qual o tumor tem 1,5 cm e é passível de tratamento cirúrgico primário.\n\nAlternativa c) Incorreta. A traquelectomia radical envolve a retirada do colo uterino e dos paramétrios. Historicamente, era o padrão para o estádio IB1. No entanto, para tumores de baixo risco (tamanho menor que 2 cm, invasão estromal menor que 10 mm e ausência de invasão linfovascular), estudos recentes, como o SHAPE, demonstraram que a cirurgia radical não oferece vantagem de sobrevida em relação à cirurgia simples, mas aumenta significativamente as complicações e a morbidade reprodutiva.\n\nAlternativa d) Correta. A traquelectomia simples consiste na retirada do colo uterino (mantendo os paramétrios e o corpo do útero). É a conduta mais adequada para pacientes com estádio IA2 ou IB1 inicial que possuem critérios de baixo risco: lesão menor que 2 cm e ausência de invasão do espaço linfovascular (LVSI), como no caso descrito. A distância de 1 cm para o orifício cervical interno permite a execução técnica segura do procedimento. A avaliação linfonodal (por pesquisa de linfonodo sentinela ou linfadenectomia pélvica) é o componente obrigatório que garante a segurança oncológica da preservação uterina.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:15:00.162Z"
+  }
+]

@@ -1,0 +1,508 @@
+[
+  {
+    "id": "AJUDA_5f030510-c91b-4975-90e2-e45462bfeb15",
+    "originalId": "5f030510-c91b-4975-90e2-e45462bfeb15",
+    "statement": "Em relação à insuficiência cardíaca, pode-se afirmar que é possível se observar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "aumento no fluxo sanguíneo renal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "redução na secreção de renina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aumento da liberação de vasopressina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "redução na atividade do sistema nervoso simpático",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Na insuficiência cardíaca (IC), a redução do débito cardíaco e da pressão arterial é detectada por barorreceptores, que desencadeiam respostas neuro-hormonais compensatórias para tentar manter a homeostase circulatória.\n\nAlternativa A: Incorreta. O fluxo sanguíneo renal diminui na insuficiência cardíaca. Isso ocorre devido à redução do débito cardíaco e, principalmente, em função da vasoconstrição das arteríolas renais mediada pelo sistema nervoso simpático e pela angiotensina II, que priorizam o fluxo de sangue para órgãos como o cérebro e o coração.\n\nAlternativa B: Incorreta. Há um aumento na secreção de renina, e não uma redução. A menor perfusão renal e o estímulo adrenérgico sobre as células justaglomerulares ativam o sistema renina-angiotensina-aldosterona, visando promover a retenção de sódio e água para expandir o volume intravascular.\n\nAlternativa C: Correta. Na insuficiência cardíaca, observa-se o aumento da liberação de vasopressina (hormônio antidiurético - ADH). Esta liberação ocorre de forma não osmótica, sendo estimulada pela percepção de baixo volume circulante efetivo pelos barorreceptores. A vasopressina atua nos receptores V2 dos ductos coletores renais, aumentando a reabsorção de água livre, e nos receptores V1 da musculatura lisa vascular, promovendo vasoconstrição.\n\nAlternativa D: Incorreta. A atividade do sistema nervoso simpático está aumentada na IC. Trata-se de um dos principais mecanismos fisiopatológicos da doença, resultando em taquicardia, aumento da contratilidade miocárdica (em fases iniciais) e vasoconstrição periférica para sustentar a pressão arterial sistêmica.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:15.969Z"
+  },
+  {
+    "id": "AJUDA_5f0a4714-95c0-498c-8e75-5fbcebf889be",
+    "originalId": "5f0a4714-95c0-498c-8e75-5fbcebf889be",
+    "statement": "Mulher de 39 anos com história de doença tireoidiana não tratada apresenta febre alta, taquicardia (150 bpm), confusão, vômitos e icterícia. Laboratórios mostram T4 livre elevado. Qual a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar metimazol isoladamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar tireoidectomia de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar apenas propranolol e observar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar propiltiouracila (PTU) ou metimazol, beta-bloqueador para controle adrenérgico, corticosteroide e iodeto.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA paciente apresenta um quadro clássico de tempestade tireotóxica (ou crise tireotóxica), que é uma emergência médica de alta mortalidade. O diagnóstico é essencialmente clínico e baseado na exacerbação dos sintomas do hipertireoidismo. Os critérios presentes no caso são: febre alta, taquicardia severa (150 bpm), disfunção do sistema nervoso central (confusão mental) e disfunção gastrointestinal/hepática (vômitos e icterícia). Diante desse cenário, a conduta deve ser agressiva e imediata, visando bloquear a produção, a liberação e a ação periférica dos hormônios tireoidianos.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nO tratamento padrão-ouro da tempestade tireotóxica baseia-se em quatro pilares terapêuticos, exatamente como descrito nesta alternativa:\n\n1. Bloqueio da síntese de novos hormônios: Realizado com tionamidas (Propiltiouracil - PTU ou Metimazol). O PTU é frequentemente preferido em ambiente de terapia intensiva por possuir um efeito adicional de inibir a conversão periférica de T4 em T3.\n2. Controle adrenérgico: O uso de betabloqueadores (como o Propranolol) é vital para reduzir a frequência cardíaca, o gasto cardíaco e os tremores, além de também auxiliar na redução da conversão periférica de T4 em T3.\n3. Bloqueio da liberação hormonal: O uso de iodo (iodeto de potássio ou solução de Lugol) inibe a liberação de hormônios já sintetizados e armazenados na glândula (Efeito Wolff-Chaikoff). Importante: o iodo deve ser administrado pelo menos uma hora APÓS a primeira dose da tionamida para evitar que o iodo seja usado como substrato para produzir mais hormônio.\n4. Bloqueio da conversão periférica de T4 em T3: Os corticosteroides (como hidrocortisona ou dexametasona) inibem essa conversão e tratam uma possível insuficiência adrenal relativa que ocorre no estresse metabólico extremo da crise.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): O Metimazol isolado não trata a complexidade da crise. Ele bloqueia apenas a síntese, mas não impede a liberação do hormônio já estocado, não controla a tempestade adrenérgica (risco de arritmias e insuficiência cardíaca) e não atua na conversão periférica.\n\nAlternativa (b): A cirurgia (tireoidectomia) em um paciente com tireotoxicidade grave e descompensada é extremamente perigosa e associada a altíssima mortalidade. A cirurgia só é indicada em casos excepcionais após a estabilização do paciente ou quando o tratamento medicamentoso é impossível por alergias graves.\n\nAlternativa (c): O Propranolol isolado controla apenas os sintomas periféricos da toxicidade (frequência cardíaca). Sem o bloqueio da produção e liberação hormonal, a produção de T4 e T3 continuará sem controle, levando à progressão da falência múltipla de órgãos e óbito.\n\nGABARITO: Letra (d).",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:15.969Z"
+  },
+  {
+    "id": "AJUDA_5f10503d-8a02-491a-8428-d4f7537dc9ef",
+    "originalId": "5f10503d-8a02-491a-8428-d4f7537dc9ef",
+    "statement": "A Nefropatia Induzida por Contraste (NIC) é uma causa iatrogênica comum de Lesão Renal Aguda em ambiente hospitalar. A prevenção é a estratégia mais eficaz. Dentre as medidas preventivas listadas, qual possui a evidência mais robusta e é universalmente recomendada para pacientes de risco (ex: DRC prévia, diabéticos) que serão submetidos a exames contrastados?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Expansão volêmica intravenosa com solução salina isotônica (0,9%) ou bicarbonato de sódio antes e após o procedimento, para garantir alto fluxo tubular e diluição do contraste.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Administração de N-acetilcisteína (NAC) oral em altas doses, pois sua eficácia antioxidante é superior à hidratação isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspensão de estatinas e inibidores da ECA 48 horas antes do exame, pois estas drogas aumentam diretamente a toxicidade do contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uso de diuréticos de alça (furosemida) durante o exame para forçar a diurese e \"lavar\" o contraste do túbulo renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Gabarito: Alternativa (a).\n\nExplicação detalhada:\n\nA Nefropatia Induzida por Contraste (NIC) caracteriza-se por uma queda súbita da função renal após a administração de contraste iodado, sendo o terceiro principal motivo de insuficiência renal aguda em pacientes hospitalizados. A fisiopatologia envolve vasoconstrição renal, levando à hipóxia medular e à toxicidade citotóxica direta nas células tubulares.\n\nAlternativa A (Correta): A expansão volêmica intravenosa é considerada a intervenção mais eficaz e com maior nível de evidência para a prevenção da NIC em pacientes de risco. A hidratação adequada promove a expansão do volume extracelular, o que reduz a ativação do sistema renina-angiotensina-aldosterona, dilui a concentração do contraste na luz tubular e aumenta o fluxo urinário, acelerando a eliminação da substância e diminuindo seu tempo de contato com as células renais. O uso de solução salina isotônica (0,9%) ou bicarbonato de sódio 1,26% é a recomendação universal das diretrizes (como as da KDIGO).\n\nAlternativa B (Incorreta): A N-acetilcisteína (NAC) já foi amplamente utilizada devido às suas propriedades antioxidantes e vasodilatadoras. No entanto, grandes ensaios clínicos randomizados, como o estudo PRESERVE, demonstraram que a NAC não reduz a incidência de lesão renal aguda, mortalidade ou necessidade de diálise quando comparada ao placebo ou à hidratação isolada. Portanto, ela não possui evidência robusta nem é superior à hidratação.\n\nAlternativa C (Incorreta): Não há recomendação universal para a suspensão de estatinas; pelo contrário, alguns estudos sugerem que o uso de estatinas em altas doses antes do procedimento pode ter um efeito protetor (pleiotrópico) contra a lesão renal. Quanto aos inibidores da ECA (IECA) e bloqueadores dos receptores de angiotensina (BRA), sua suspensão é controversa. Embora alguns médicos optem por suspendê-los para evitar quedas na filtração glomerular durante o exame, eles não aumentam diretamente a toxicidade do contraste, e essa medida não supera a importância da hidratação.\n\nAlternativa D (Incorreta): O uso de diuréticos de alça, como a furosemida, é contraindicado para a prevenção da NIC. Em vez de proteger os rins, os diuréticos podem causar desidratação e depleção de volume, o que agrava a vasoconstrição renal e aumenta a toxicidade do contraste nos túbulos. O seu uso só deve ser considerado se o paciente apresentar sinais de sobrecarga de volume (edema agudo de pulmão) que impeçam a hidratação venosa necessária.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:15.969Z"
+  },
+  {
+    "id": "AJUDA_5f1638b7-b268-4145-b427-ea3382ecfe79",
+    "originalId": "5f1638b7-b268-4145-b427-ea3382ecfe79",
+    "statement": "Você é médico da Unidade Básica de Saúde (UBS) e acompanha há anos um paciente de 87 anos, portador de diabetes mellitus, hipertensão arterial sistêmica e doença pulmonar obstrutiva crônica avançada, em uso de oxigênio domiciliar. O paciente foi encontrado em óbito em seu domicílio por familiares, que procuram a UBS em busca de orientações sobre como proceder. De acordo com as normas vigentes do Ministério da Saúde, qual deve ser a conduta CORRETA em relação à Declaração de Óbito (DO)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O médico assistente deve examinar o corpo e elaborar a DO, descrevendo a cadeia de causas que levou ao óbito, sem necessidade de encaminhamento ao IML ou SVO por se tratar de morte natural em paciente com doenças conhecidas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O médico deve encaminhar o caso ao SVO, pois óbitos em domicílio exigem avaliação complementar para emissão da DO, mesmo quando existem comorbidades documentadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O encaminhamento ao IML deve ser considerado em todo óbito domiciliar, uma vez que a morte fora do hospital requer avaliação médico-legal antes do preenchimento da DO.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O médico da UBS pode elaborar a DO apenas com base no histórico clínico e prontuário do paciente, sendo indispensável o exame direto do corpo no momento do óbito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O preenchimento da DO não deve ser realizado pelo médico da UBS, cabendo ao cartório de registro civil formalizar o óbito a partir das informações fornecidas pelos familiares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda as normas para o preenchimento da Declaração de Óbito (DO) no Brasil, um tema frequente em provas de saúde pública e medicina legal. O foco aqui é a responsabilidade do médico assistente em casos de morte natural.\n\nAlternativa A (Correta): De acordo com o Conselho Federal de Medicina (CFM) e o Ministério da Saúde, em casos de morte natural (causada por doenças), a responsabilidade pela emissão da DO é do médico que vinha prestando assistência ao paciente. Como o paciente de 87 anos era acompanhado na UBS por doenças crônicas graves (diabetes, hipertensão e DPOC avançada) e faleceu em casa sem indícios de violência, o médico da UBS é o responsável legal por examinar o corpo, constatar o óbito e preencher a DO, indicando a sequência de eventos patológicos que levaram à morte. Não há necessidade de SVO, pois a causa é conhecida, nem de IML, pois não há suspeita de causa externa ou violência.\n\nAlternativa B (Incorreta): O Serviço de Verificação de Óbito (SVO) deve ser acionado apenas em casos de morte natural por causa desconhecida ou mal definida. No caso apresentado, o paciente possuía prontuário e acompanhamento de longa data, o que permite ao médico assistente determinar a provável causa básica e a cadeia de eventos do óbito sem necessidade de necropsia no SVO.\n\nAlternativa C (Incorreta): O Instituto Médico Legal (IML) destina-se exclusivamente a mortes por causas externas (violentas ou suspeitas), como acidentes, homicídios ou suicídios. O simples fato de o óbito ocorrer no domicílio não torna o caso uma indicação para o IML, desde que a morte seja claramente natural e sem sinais de criminalidade.\n\nAlternativa D (Incorreta): Embora o histórico clínico e o prontuário sejam fundamentais para estabelecer a causa da morte, é absolutamente indispensável que o médico faça o exame direto do corpo. O médico não pode emitir uma Declaração de Óbito sem ter constatado pessoalmente a morte e examinado o cadáver para descartar sinais de violência ou causas externas que exigiriam o encaminhamento ao IML.\n\nAlternativa E (Incorreta): A Declaração de Óbito é um documento estritamente médico. O Cartório de Registro Civil utiliza a DO (preenchida pelo médico) para emitir a Certidão de Óbito, que é um documento jurídico. O cartório não tem competência para formalizar o óbito ou definir causas médicas apenas com informações de familiares.\n\nEm resumo, o médico da UBS, na qualidade de médico assistente, tem o dever ético e legal de atestar o óbito de seus pacientes conhecidos em casos de morte natural no domicílio.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:15.969Z"
+  },
+  {
+    "id": "AJUDA_5f1fc41a-4e8c-4020-8ab2-152af55b408b",
+    "originalId": "5f1fc41a-4e8c-4020-8ab2-152af55b408b",
+    "statement": "As Redes de Atenção à Saúde (RAS) são determinantes para assegurar a integralidade do cuidado dos usuários do sistema de saúde, caracterizando uma atenção contínua, com a coordenação integrada entre os níveis de atenção e a centralização dos cuidados na atenção primária. Sobre as RAS, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A organização das RAS prioriza exclusivamente o cuidado às condições agudas, reduzindo a relevância das condições crônicas no planejamento da atenção à saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As RAS buscam substituir os sistemas fragmentados por sistemas integrados, promovendo uma atenção à saúde proativa e contínua, considerando a rede hospitalar como o ponto principal do cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O modelo de financiamento das RAS deve ser baseado exclusivamente no volume de recursos, sem levar em consideração a geração de valor para os usuários dos serviços de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nas RAS tem-se um cuidado pautado na atenção colaborativa realizada por equipes multiprofissionais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O modelo de gestão das RAS é caracterizado pela gestão por estruturas isoladas (gerência hospitalar, gerência da atenção básica, gerência dos ambulatórios especializados).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "As Redes de Atenção à Saúde (RAS) são organizações de serviços de saúde que buscam superar a fragmentação do cuidado no Sistema Único de Saúde (SUS). Elas visam garantir a integralidade por meio da articulação de diferentes pontos de atenção, tendo a Atenção Primária à Saúde (APS) como o centro comunicador e ordenador da rede.\n\nAlternativa a) Incorreta. As RAS foram planejadas justamente para equilibrar o cuidado. O modelo anterior era focado quase exclusivamente em condições agudas e eventos episódicos. As redes priorizam o manejo adequado tanto de condições agudas quanto, principalmente, de condições crônicas, que exigem acompanhamento contínuo e preventivo para evitar agudizações.\n\nAlternativa b) Incorreta. O erro desta alternativa está em considerar a rede hospitalar como o ponto principal. Nas RAS, o hospital é um componente de densidade tecnológica intermediária ou alta, mas o centro da rede e o coordenador do cuidado é a Atenção Primária à Saúde. O objetivo é que o paciente circule pela rede conforme sua necessidade, mas sempre retorne e seja monitorado pela sua unidade de referência na atenção básica.\n\nAlternativa c) Incorreta. O financiamento nas RAS deve ser estruturado para sustentar a lógica da rede, buscando a eficiência e a melhoria dos indicadores de saúde. Modelos modernos de gestão em saúde preconizam a remuneração baseada em valor e resultados (desfechos clínicos e satisfação do usuário), e não apenas no volume de procedimentos realizados de forma isolada.\n\nAlternativa d) Correta. A atenção colaborativa e o trabalho em equipes multiprofissionais são pilares das RAS. Como as necessidades de saúde da população são complexas, nenhum profissional ou nível de atenção isolado consegue resolvê-las integralmente. A colaboração entre médicos, enfermeiros, fisioterapeutas, psicólogos e outros profissionais, atuando de forma integrada nos diferentes pontos da rede, é o que garante a continuidade e a qualidade do cuidado.\n\nAlternativa e) Incorreta. A gestão por estruturas isoladas (gerências que não se comunicam) é a marca dos sistemas fragmentados. Nas RAS, a gestão deve ser integrada e sistêmica. Isso significa que deve haver governança única e mecanismos de coordenação que interliguem a atenção básica, os ambulatórios de especialidades e os hospitais, evitando que o paciente se perca no sistema.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:15.969Z"
+  },
+  {
+    "id": "AJUDA_5f213101-a16f-48e3-a4cb-3a9687ceb9bb",
+    "originalId": "5f213101-a16f-48e3-a4cb-3a9687ceb9bb",
+    "statement": "Paciente de 32 anos, nuligesta, deseja engravidar. Diagnóstico de carcinoma epidermoide do colo uterino, medindo 1,8 cm, restrito ao colo, sem invasão linfovascular, RM sem comprometimento parametrial ou linfonodal.\n\nA melhor opção terapêutica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histerectomia radical tipo C.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Traquelectomia radical com linfadenectomia pélvica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Radioterapia com braquiterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Conização simples com margens livres.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Quimioterapia neoadjuvante seguida de conização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Estadiamento e Contexto Clínico:\n\nA paciente apresenta um carcinoma epidermoide de colo uterino medindo 1,8 cm, restrito ao colo, sem invasão linfovascular (LVSI negativa) e sem evidências de comprometimento parametrial ou linfonodal em exames de imagem. Segundo a classificação da FIGO (2018), trata-se de um estágio IB1 (lesões maiores que 5 mm de profundidade e menores ou iguais a 2 cm em seu maior diâmetro). O fator determinante para a escolha da conduta é o desejo expresso da paciente de preservar a fertilidade (nuligesta, 32 anos).\n\nExplicação das Alternativas:\n\nAlternativa a) Incorreta. A histerectomia radical tipo C (cirurgia de Wertheim-Meigs) é o tratamento cirúrgico padrão para o estágio IB1. No entanto, ela envolve a retirada total do útero, o que impossibilita o desejo de gestação da paciente. Portanto, embora oncologicamente adequada para o estágio, não atende ao critério de preservação de fertilidade.\n\nAlternativa b) Correta. A traquelectomia radical com linfadenectomia pélvica é a conduta de eleição para pacientes em estágio inicial (IA2 a IB1 inicial, preferencialmente lesões menores que 2 cm) que desejam manter a capacidade reprodutiva. O procedimento remove o colo uterino, a parte superior da vagina e os paramétrios, preservando o corpo uterino e os ovários. A linfadenectomia pélvica é obrigatória para garantir a ausência de metástases linfonodais, que mudariam o estadiamento e a conduta.\n\nAlternativa c) Incorreta. A radioterapia associada à braquiterapia é uma alternativa à cirurgia em estágios iniciais ou o tratamento principal em casos avançados. Contudo, o tratamento radioterápico causa falência ovariana e fibrose uterina, sendo incompatível com o desejo de gravidez futura.\n\nAlternativa d) Incorreta. A conização simples (cirurgia de alta frequência ou faca) com margens livres é o tratamento conservador indicado apenas para o estágio IA1 (microinvasão menor que 3 mm de profundidade) sem invasão linfovascular. Para um tumor de 1,8 cm (estágio IB1), a conização simples não oferece a segurança oncológica necessária, pois não trata os paramétrios nem avalia os linfonodos pélvicos.\n\nAlternativa e) Incorreta. A quimioterapia neoadjuvante seguida de cirurgia conservadora (como conização ou traquelectomia simples) é uma abordagem considerada experimental. Ela costuma ser discutida apenas em protocolos de pesquisa para pacientes com tumores maiores que 2 cm que desejam preservar a fertilidade a todo custo. Para o caso em questão (tumor de 1,8 cm), a traquelectomia radical já é o tratamento padrão e validado.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:15.969Z"
+  },
+  {
+    "id": "AJUDA_5f53747a-23ed-49cf-9881-434f036fa68c",
+    "originalId": "5f53747a-23ed-49cf-9881-434f036fa68c",
+    "statement": "Homem, 70 anos de idade, com diagnóstico de miocardiopatia dilatada por doença de Chagas é admitido no PS por piora da dispneia, ortopneia, dispneia paroxística noturna, edema de membros inferiores bilateralmente até a região escrotal e ganho de peso. Exame físico: sonolência, PA = 90/50 mmHg, FC = 100 bpm em ritmo sinusal, FR = 30 rpm, SpO2 = 90% em ar ambiente, tempo de enchimento capilar = 4 s, ausculta cardíaca com presença de terceira bulha e sopro holossistólico de foco mitral 3+/6+, ausculta pulmonar reduzida em campos médio-inferiores bilateralmente. Qual é o perfil clínico-hemodinâmico da insuficiência cardíaca e a estratégia terapêutica inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Perfil C; furosemida e captopril",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Perfil B; furosemida e captopril",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Perfil B; furosemida, nitroprussiato de sódio e dobutamina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Perfil C; furosemida e dobutamina",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise Clínica do Caso:\n\nO paciente apresenta sinais claros de dois estados fisiopatológicos distintos na Insuficiência Cardíaca Descompensada:\n\n1. Congestão (Status Úmido): Evidenciada pela dispneia progressiva, ortopneia, dispneia paroxística noturna, ganho de peso, edema de membros inferiores até a região escrotal e achados na ausculta pulmonar (provável derrame pleural ou congestão grave).\n\n2. Má Perfusão Tecidual (Status Frio): Caracterizada pela hipotensão arterial (PA 90/50 mmHg), tempo de enchimento capilar lentificado (4 segundos, sendo o normal até 2 segundos) e alteração do nível de consciência (sonolência).\n\nClassificação Hemodinâmica:\n\nA combinação de sinais de congestão (Úmido) com sinais de má perfusão (Frio) define o Perfil C (Frio e Úmido).\n\nEstratégia Terapêutica:\n\nO Perfil C é o mais crítico e requer intervenção para restaurar a perfusão dos órgãos e, simultaneamente ou sequencialmente, tratar a congestão.\n\n- Dobutamina: É um agente inotrópico indicado para pacientes com baixo débito cardíaco e sinais de hipoperfusão. Sua função é aumentar a contratilidade miocárdica, melhorando o volume sistólico e a oferta de oxigênio aos tecidos.\n- Furosemida: Diurético de alça essencial para remover o excesso de fluido. No Perfil C, deve-se ter cautela para não reduzir excessivamente a pré-carga antes de melhorar o débito com o inotrópico, mas ela faz parte da estratégia para aliviar os sintomas congestivos.\n\nAnálise das alternativas:\n\na) Incorreta. Embora identifique o perfil C, o uso de Captopril (um inibidor da ECA) é contraindicado na fase inicial de um paciente hipotenso e hipoperfundido. Vasodilatadores e bloqueadores do sistema renina-angiotensina-aldosterona podem causar queda abrupta da pressão arterial e piorar o choque.\n\nb) Incorreta. O perfil B refere-se ao paciente Úmido e Quente (com boa perfusão). O paciente do caso está claramente mal perfundido (Frio). O Captopril também não seria indicado na vigência de hipotensão arterial.\n\nc) Incorreta. Além de errar o perfil (indica B em vez de C), esta alternativa sugere o Nitroprussiato de sódio. Este é um vasodilatador potente indicado para o Perfil B com hipertensão ou Perfil C com pressão arterial limite/elevada. Em um paciente com PA 90/50 mmHg, o nitroprussiato agravaria perigosamente a hipotensão.\n\nd) Correta. Identifica adequadamente o Perfil C (Frio e Úmido) e propõe a terapêutica correta para estabilização: suporte inotrópico com dobutamina para reverter a má perfusão e furosemida para tratar a sobrecarga de volume.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:15.969Z"
+  },
+  {
+    "id": "AJUDA_5f539414-1722-480c-ba0e-40dbd989afd8",
+    "originalId": "5f539414-1722-480c-ba0e-40dbd989afd8",
+    "statement": "Paciente de 10 anos, caiu do balanço há 5 dias, evoluindo com dor em joelho esquerdo e dificuldade para deambular. Há 1 dia, apresentou piora do estado geral, tosse e desconforto respiratório importante, além de rebaixamento do nível de consciência. Ao exame físico: Mau estado geral, FR: 50 ipm, retrações intercostais e subcostais, murmúrio vesicular reduzido bilateralmente, FC: 160 bpm, pressão arterial 70/20 mmHg, pulsos amplos, tempo de enchimento capilar menor que 1 segundo, extremidades quentes e avermelhadas. Presença de edema, calor local e hiperemia em joelho esquerdo. Não houve melhora do quadro após colocação de coxim abaixo de occipício, aspiração de vias aéreas inferiores, intubação com sequência rápida, administração de duas alíquotas de soro fisiológico e início da antibioticoterapia. Como próximo passo do tratamento, é recomendado iniciar droga endovenosa de infusão contínua. Qual droga deve ser iniciada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Epinefrina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dobutamina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Norepinefrina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Milrinona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descreve uma criança de 10 anos com um foco infeccioso provável no joelho esquerdo (sugerindo osteomielite ou artrite séptica após trauma) que evoluiu para um estado de choque séptico. A questão informa que, mesmo após a intubação, ventilação adequada e expansão volêmica com duas alíquotas de soro fisiológico, o paciente mantém sinais de choque e hipotensão arterial (70/20 mmHg).\n\nPara escolher a droga vasoativa correta em pediatria, devemos identificar se o choque é frio ou quente. Neste caso, os dados do exame físico são decisivos: o paciente apresenta pulsos amplos, tempo de enchimento capilar muito rápido (menor que 1 segundo) e extremidades quentes e avermelhadas. Esses achados caracterizam o choque quente (choque distributivo), onde o principal problema é a vasoplegia, ou seja, uma queda acentuada da resistência vascular sistêmica.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Epinefrina: Incorreta. A epinefrina (adrenalina) é a droga de primeira escolha no choque séptico pediátrico que se apresenta como choque frio (extremidades frias, pulsos finos e tempo de enchimento capilar lentificado). No choque quente, ela não é a primeira opção, embora possa ser considerada em etapas posteriores se houver disfunção miocárdica associada.\n\nb) Dobutamina: Incorreta. A dobutamina é um agente inotrópico que atua principalmente em receptores beta-1, mas também possui efeito beta-2, o que causa vasodilatação periférica. Em um paciente que já apresenta vasoplegia (choque quente) e hipotensão grave, a dobutamina pode piorar ainda mais a pressão arterial.\n\nc) Norepinefrina: Correta. No choque séptico quente, o objetivo terapêutico é restaurar o tônus vascular. A norepinefrina é a droga de escolha por possuir um potente efeito alfa-1 adrenérgico, promovendo vasoconstrição periférica e aumento da resistência vascular sistêmica. Isso ajuda a elevar a pressão arterial diastólica e a melhorar a perfusão dos órgãos.\n\nd) Milrinona: Incorreta. A milrinona é um inodilatador (aumenta a força de contração do coração e promove vasodilatação). Ela é utilizada em casos de choque cardiogênico ou choque frio com resistência vascular muito elevada, geralmente após a estabilização inicial. Seu uso é contraindicado em pacientes hipotensos e com sinais de choque distributivo (quente), pois agravaria a queda da pressão arterial.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Sepse",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:15.969Z"
+  },
+  {
+    "id": "AJUDA_5f5efe7c-2c06-4ff7-8c67-f2796e0b6570",
+    "originalId": "5f5efe7c-2c06-4ff7-8c67-f2796e0b6570",
+    "statement": "Adolescente de 17 anos, com menarca aos 12 anos, refere ciclos menstruais regulares, porém com fluxo intenso e cólicas de forte intensidade. Relata ter vida sexual há 1 ano, fazendo uso irregular de preservativo, e nega atraso menstrual, sangramento genital e dispareunia. Ao exame clínico, não apresenta anormalidades. Ultrassom pélvico realizado no 12° dia do ciclo revela massa anexial cística em topografia de ovário direito, com 4,8 cm no maior diâmetro, sem septações e sem debris em seu interior.\nAssinale a alternativa que apresenta o diagnóstico mais provável para o caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cisto folicular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Endometrioma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cistoadenoma mucinoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Abscesso tubo-ovariano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Gestação tubárea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve uma adolescente com ciclos regulares e exame físico normal, apresentando ao ultrassom (realizado no 12° dia do ciclo) uma imagem cística simples no ovário direito, com 4,8 cm de diâmetro, anecoica, sem septações e sem debris.\n\nAbaixo, a análise de cada alternativa:\n\na) Cisto folicular: Correta. É o cisto funcional mais frequente em mulheres em idade reprodutiva, decorrente da falha de ovulação de um folículo dominante. Caracteriza-se ultrassonograficamente como um cisto simples (unilocular, paredes finas, conteúdo líquido anecoico, sem septos ou debris), medindo classicamente entre 3 e 8 cm. O achado no 12° dia do ciclo (fase periovulatória) corrobora fortemente essa hipótese.\n\nb) Endometrioma: Incorreta. O endometrioma ovariano apresenta aspecto ultrassonográfico clássico de massa cística com ecos internos homogêneos de baixa amplitude, conferindo o aspecto de vidro fosco (debris hemáticos), o que contraria a descrição de ausência de debris.\n\nc) Cistoadenoma mucinoso: Incorreta. Trata-se de uma neoplasia benigna que costuma atingir grandes dimensões e se caracteriza tipicamente por ser multilocular, apresentando finos septos internos e conteúdo com ecogenicidade variável devido ao muco, diferente do cisto simples unilocular descrito.\n\nd) Abscesso tubo-ovariano: Incorreta. É uma complicação da Doença Inflamatória Pélvica, cursando com dor pélvica intensa, febre, corrimento purulento e dor à palpação/mobilização cervical. Ao ultrassom, apresenta-se como massa complexa, multiloculada, com paredes espessas e debris espessos.\n\ne) Gestação tubárea: Incorreta. Uma gestação ectópica cursa habitualmente com atraso menstrual, sangramento genital e beta-hCG positivo. Ultrassonograficamente, manifesta-se como massa anexial extraovariana complexa (sinal do anel tubário) e não como cisto simples intraovariano.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Dor Pélvica Crônica e Dismenorreia",
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": 21.76719548797244,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:15.969Z"
+  },
+  {
+    "id": "AJUDA_5f6ba57d-6c3f-40ec-a0e9-21516ff2d241",
+    "originalId": "5f6ba57d-6c3f-40ec-a0e9-21516ff2d241",
+    "statement": "Paciente de 30 anos deseja método contraceptivo, pois vai se casar em 2 meses. Nega gestação prévia, e faz uso de preservativo. Relata cefaleia frequente, que melhora com uso de analgésicos. Queixa de fluxo menstrual intenso, que a deixa fraca. Trouxe hemograma que indica Hb 10 e Ht 32. Não deseja medicação diária, pois é muito esquecida. Nesse caso, o melhor contraceptivo a ser indicado é o",
+    "options": [
+      {
+        "id": "A",
+        "text": "DIU de cobre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "injetável combinado mensal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "anel vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "adesivo hormonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "implante de Etonogestrel.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta três pontos fundamentais que direcionam a escolha do método contraceptivo:\n1. Anemia ferropriva secundária ao fluxo menstrual intenso (Hb 10 e Ht 32). O método ideal deve, preferencialmente, reduzir o volume de sangramento ou promover amenorreia.\n2. Queixa de esquecimento. Métodos que dependem da disciplina diária ou semanal da paciente não são recomendados.\n3. Cefaleia frequente. Embora não caracterizada como enxaqueca com aura, o uso de estrogênios deve ser avaliado com cautela em pacientes com cefaleias recorrentes.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. O DIU de cobre é um método de longa duração (LARC), o que atenderia à queixa de esquecimento. No entanto, o principal efeito colateral do DIU de cobre é justamente o aumento do fluxo menstrual e das cólicas (dismenorreia). Como a paciente já possui anemia moderada por fluxo intenso, este método é contraindicado, pois agravaria o quadro clínico.\n\nb) INCORRETA. O injetável combinado contém estrogênio e progestogênio. Além de necessitar de aplicação mensal (o que ainda exige disciplina da paciente), o componente estrogênico não é a primeira escolha para quem sofre de cefaleia frequente. Além disso, não é o método mais eficaz para induzir amenorreia e tratar a anemia em comparação aos métodos exclusivos de progestogênio.\n\nc) INCORRETA. O anel vaginal é um método combinado (estrogênio + progestogênio) de uso mensal (troca a cada 3 semanas). Assim como o injetável, possui estrogênio, o que pode piorar a cefaleia, e exige que a paciente se lembre das datas de retirada e inserção, não sendo a melhor opção para alguém muito esquecida.\n\nd) INCORRETA. O adesivo hormonal também é um método combinado. Exige trocas semanais, o que vai contra o perfil de \"muito esquecida\" da paciente. Além disso, possui as mesmas restrições em relação ao estrogênio e ao controle do fluxo menstrual intenso observado nas alternativas B e C.\n\ne) CORRETA. O implante de etonogestrel é um método de longa duração (LARC), com validade de 3 anos, o que resolve o problema do esquecimento. É um método composto apenas por progestogênio (sem estrogênio), sendo seguro para pacientes com cefaleia. Sua principal característica clínica é a redução significativa do fluxo menstrual, frequentemente levando à amenorreia, o que é o tratamento ideal para a anemia secundária à hipermenorreia apresentada pela paciente. É, atualmente, o método contraceptivo mais eficaz disponível.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:50:15.969Z"
+  }
+]

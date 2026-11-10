@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_53a1a6b9-2392-4c26-ad32-3c55721420b3",
+    "originalId": "53a1a6b9-2392-4c26-ad32-3c55721420b3",
+    "statement": "Assinale a alternativa, que baseado na epidemiologia indica as glomerulopatias primárias esperadas para cada um dos seguintes pacientes, respectivamente: 1) homem jovem com creatinina 2,0mg/dL e síndrome nefrótica; 2) homem idoso com creatinina discretamente elevada e síndrome nefrótica; 3) criança com síndrome nefrítica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "GESF, amiloidose e nefropatia por IgA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nefropatia por IgA, Glomerulonefrite Membranoproliferativa e Glomerulonefrite pós-estreptocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Glomerulopatia crescêntica, lesões mínimas e Glomerulonefrite Membranoproliferativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "GESF, nefropatia membranosa e Glomerulonefrite pós-estreptocócica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Nefropatia por IgA, nefropatia membranosa e lesões mínimas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar o perfil epidemiológico e a apresentação clínica de cada paciente descrito, relacionando-os com as glomerulopatias primárias mais frequentes.\n\nPaciente 1: Homem jovem com síndrome nefrótica e creatinina elevada (2,0 mg/dL). A Glomeruloesclerose Segmentar e Focal (GESF) é a causa mais comum de síndrome nefrótica primária em adultos no Brasil. Diferentemente da Doença de Lesões Mínimas, a GESF frequentemente apresenta algum grau de disfunção renal (elevação da creatinina) e hipertensão arterial já no momento do diagnóstico.\n\nPaciente 2: Homem idoso com síndrome nefrótica e creatinina discretamente elevada. A Nefropatia Membranosa é uma das principais causas de síndrome nefrótica em pacientes acima de 50-60 anos. Embora possa ser secundária a neoplasias ou lúpus, sua forma primária é muito prevalente nesta faixa etária.\n\nPaciente 3: Criança com síndrome nefrítica. A Glomerulonefrite Pós-Estreptocócica (GNPE) é o protótipo da síndrome nefrítica na infância. Caracteriza-se pelo início súbito de hematúria, edema e hipertensão arterial, geralmente após uma infecção de garganta ou de pele (piodermite).\n\nAnálise das alternativas:\n\na) Incorreta. A amiloidose, embora comum em idosos com síndrome nefrótica, é considerada uma doença sistêmica (secundária) e não uma glomerulopatia primária. Além disso, a nefropatia por IgA é mais associada a quadros de hematúria em adultos jovens do que à síndrome nefrítica clássica da infância.\n\nb) Incorreta. A nefropatia por IgA não é a causa típica de síndrome nefrótica com insuficiência renal em jovens; seu quadro clássico é de hematúria macroscópica recorrente. A Glomerulonefrite Membranoproliferativa é uma causa menos comum em idosos quando comparada à Nefropatia Membranosa.\n\nc) Incorreta. A glomerulopatia crescêntica é um achado histológico de glomerulonefrite rapidamente progressiva, não uma patologia primária específica neste contexto. A Doença de Lesões Mínimas é a principal causa de síndrome nefrótica em crianças, sendo muito rara em idosos.\n\nd) Correta. Esta alternativa correlaciona perfeitamente os perfis epidemiológicos: GESF no adulto jovem com perda de função renal; Nefropatia Membranosa como causa comum de síndrome nefrótica no idoso; e GNPE como a principal causa de síndrome nefrítica em crianças.\n\ne) Incorreta. A nefropatia por IgA não costuma abrir com síndrome nefrótica pura e creatinina elevada em jovens. A Doença de Lesões Mínimas causa síndrome nefrótica, e não síndrome nefrítica, como solicitado para o terceiro paciente.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:22.042Z"
+  },
+  {
+    "id": "AJUDA_53ac044f-d3c6-42c2-96a5-60fc7bace271",
+    "originalId": "53ac044f-d3c6-42c2-96a5-60fc7bace271",
+    "statement": "A Coqueluche é uma doença com elevada morbidade, especialmente nos primeiros meses de vida. O gráfico abaixo apresenta a situação epidemiológica e a relação da incidência da doença com a cobertura vacinal. O estado de São Paulo registrou 139 casos de coqueluche até a 23ª semana epidemiológica deste ano de 2024, encerrada em 8 de junho, representando alta de 768,7% na comparação ao mesmo período do ano passado, quando foram confirmados 16 registros. É correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A administração da vacina contra a coqueluche está indicada na gestante para que a mãe não seja vetor da doença ao recém-nascido, mas não confere proteção a ele através da passagem transplacentária de anticorpos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vacina tríplice bacteriana contém componentes da cápsula da bactéria da coqueluche, sendo indicada a crianças com menos de 7 anos de idade, mesmo para as que já tiveram coqueluche, uma vez que esta doença não confere proteção permanente frente a novas infecções.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O tratamento com cefalosporina de primeira geração na fase paroxística da doença abrevia o período de transmissibilidade, mas não demonstra efetividade em modificar o curso da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pessoas não imunizadas contra a coqueluche devem ser monitoradas durante 21 dias após o último contato próximo e duradouro com pessoa infectada, para aparecimento de sinais clínicos de coqueluche, enquanto para os vacinados este período encurta-se para 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A vacina da coqueluche está indicada, segundo o Programa Nacional de Imunização (PNI) aos 2, 4 e 6 meses de vida, com reforço após o primeiro ano (próximo dos 15 meses) e, a seguir, a cada 10 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A análise da questão exige conhecimento sobre a epidemiologia, o esquema vacinal e o manejo clínico da coqueluche, uma doença causada pela bactéria *Bordetella pertussis*. O gráfico apresentado demonstra a correlação inversa entre a cobertura vacinal e a incidência da doença: nos períodos em que a cobertura vacinal cai ou oscila, observam-se picos de incidência, como o aumento expressivo relatado em 2024.\n\nAlternativa A: Incorreta. A vacinação da gestante com a vacina dTpa (difteria, tétano e *pertussis* acelular) tem como objetivo principal a transferência transplacentária de anticorpos IgG da mãe para o feto. Isso garante ao recém-nascido uma proteção passiva nos primeiros meses de vida, período de maior vulnerabilidade e mortalidade, antes que ele complete seu próprio esquema vacinal primário.\n\nAlternativa B: Correta. A vacina tríplice bacteriana (DTP) utiliza componentes da bactéria (células inteiras na DTP ou fragmentos proteicos na dTpa). Ela é indicada para crianças menores de 7 anos. Um conceito fundamental em infectologia é que nem a infecção natural pela coqueluche, nem a vacinação, conferem imunidade permanente. A proteção decai ao longo do tempo (*waning immunity*); por isso, mesmo crianças que já tiveram a doença devem seguir o esquema de vacinação para reforçar a imunidade residual.\n\nAlternativa C: Incorreta. O tratamento de escolha para a coqueluche é feito com macrolídeos (azitromicina, claritromicina ou eritromicina). As cefalosporinas de primeira geração não possuem eficácia contra a *Bordetella pertussis*. O tratamento instituído na fase paroxística reduz a transmissibilidade da doença, mas geralmente não altera a evolução dos sintomas clínicos, que já estão estabelecidos pelo dano toxínico ao epitélio respiratório.\n\nAlternativa D: Incorreta. O período de monitoramento para contatos próximos de um caso confirmado de coqueluche é de 21 dias para todos, independentemente do status vacinal. Esse é o período máximo de incubação da doença. Não há diferenciação de tempo de vigilância baseada no histórico vacinal do contato para fins de vigilância epidemiológica.\n\nAlternativa E: Incorreta. Segundo o Programa Nacional de Imunizações (PNI), a proteção contra coqueluche é feita com a vacina pentavalente aos 2, 4 e 6 meses de vida. Os reforços são realizados com a vacina DTP aos 15 meses e aos 4 anos de idade. O reforço a cada 10 anos citado na alternativa refere-se à vacina dT (dupla adulta — difteria e tétano), que não contém o componente da coqueluche na rotina de adultos (exceto para gestantes e profissionais de saúde selecionados, que recebem a dTpa).",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações",
+      "Coqueluche"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/279611fa210368389e9d02e86f2fc6edf30701d5c58103431ffd315c89206f1d.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_53ac044f-d3c6-42c2-96a5-60fc7bace271_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:22.447Z"
+  },
+  {
+    "id": "AJUDA_53b326b8-8640-44e2-ba3e-e352bf050e3c",
+    "originalId": "53b326b8-8640-44e2-ba3e-e352bf050e3c",
+    "statement": "Joana é enfermeira em um município que está implementando Serviços Residenciais Terapêuticos (SRT) da Rede de Atenção Psicossocial (RAPS). Sobre os SRT, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cada SRT pode abrigar até 20 moradores, independentemente do tipo de diagnóstico, e não é exigida a presença de cuidadores em escala, sendo opcional a vinculação a equipes da RAPS",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O foco dos SRT é garantir moradia. Atividades de lazer, trabalho, educação, convívio social ou reabilitação psicossocial não são exigidas como parte do serviço",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os SRT são unidades hospitalares de saúde mental situadas dentro dos hospitais psiquiátricos, destinadas para pessoas com internação de longa permanência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os SRT Tipo I acolhem pessoas com transtorno mental em processo de desinstitucionalização, com autonomia razoável para retomar vida cotidiana",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Os Serviços Residenciais Terapêuticos (SRT) são dispositivos centrais na Rede de Atenção Psicossocial (RAPS) para o processo de desinstitucionalização no Brasil. Eles consistem em moradias inseridas no contexto urbano destinadas a pessoas com transtornos mentais que permaneceram internadas por dois anos ou mais em hospitais psiquiátricos ou hospitais de custódia.\n\nAlternativa a: Incorreta. A legislação vigente (Portaria nº 3.090/2011) estabelece limites específicos para o número de moradores a fim de preservar o caráter residencial do serviço. O SRT Tipo I pode abrigar até 8 moradores e o SRT Tipo II até 10 moradores. Além disso, a vinculação a uma equipe de referência da RAPS (obrigatoriamente um CAPS) é condição obrigatória para o funcionamento do serviço, e o suporte de cuidadores é exigido conforme a modalidade.\n\nAlternativa b: Incorreta. Embora garantam a moradia, o foco principal dos SRT é a reabilitação psicossocial. O serviço deve obrigatoriamente buscar a inserção do morador na rede social, incentivando atividades de lazer, trabalho, educação e o convívio comunitário. O objetivo é o resgate da cidadania e não apenas o fornecimento de um teto.\n\nAlternativa c: Incorreta. Os SRT são, por definição, unidades residenciais extra-hospitalares. Um de seus princípios fundamentais é estar situado no espaço urbano, fora do perímetro de hospitais, para romper definitivamente com a lógica de segregação e institucionalização dos antigos manicômios.\n\nAlternativa d: Correta. Esta alternativa define adequadamente o perfil do SRT Tipo I. Esse modelo é voltado para pessoas egressas de internações de longa permanência que apresentam um nível de autonomia que permite a retomada das atividades da vida cotidiana com suporte técnico da rede de saúde, mas sem a necessidade de monitoramento presencial 24 horas por dia, como ocorre no Tipo II.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Psiquiatria Social e Reforma Psiquiátrica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:22.447Z"
+  },
+  {
+    "id": "AJUDA_53b84c46-ee28-456a-86fb-bfa7020d485f",
+    "originalId": "53b84c46-ee28-456a-86fb-bfa7020d485f",
+    "statement": "Em paciente com ascite importante, edema de membros inferiores e dispneia aos esforços, o exame físico revela turgência jugular patológica em ortostatismo, fígado aumentado e doloroso à palpação e refluxo hepatojugular sustentado. Dentre os achados abaixo, o mais sugestivo de ascite de origem cardíaca é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Circulação colateral abdominal em “cabeça de medusa”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Esplenomegalia volumosa com hipersplenismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Refluxo hepatojugular sustentado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Eritema palmar e aracnídeos vasculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito apresenta sinais de congestão sistêmica que podem ser observados tanto na insuficiência cardíaca direita quanto na cirrose hepática com hipertensão portal. No entanto, o exame físico fornece pistas cruciais, como a turgência jugular patológica em ortostatismo e o refluxo hepatojugular, que direcionam o diagnóstico para uma etiologia cardíaca.\n\nAlternativa (c) - Correta: O refluxo hepatojugular sustentado é o achado mais sugestivo de ascite de origem cardíaca entre as opções. Este sinal clínico ocorre quando a pressão firme sobre o quadrante superior direito do abdome (fígado) aumenta o retorno venoso para o átrio direito. Em um coração saudável, esse volume extra é acomodado. Na insuficiência cardíaca direita, o ventrículo não consegue bombear esse volume adicional, resultando em um aumento persistente (por mais de 10 a 15 segundos) da distensão das veias jugulares. Na ascite de origem puramente hepática (cirrose), a pressão venosa central costuma ser normal ou baixa, e as jugulares não se mantêm distendidas sob compressão hepática.\n\nAlternativa (a) - Incorreta: A circulação colateral em cabeça de medusa é um sinal clássico de hipertensão portal. Ela resulta da repermeabilização da veia umbilical, desviando o fluxo sanguíneo da veia porta para as veias da parede abdominal em direção à veia cava superior. É um achado típico de cirrose e não de insuficiência cardíaca.\n\nAlternativa (b) - Incorreta: A esplenomegalia volumosa e o hipersplenismo (redução de plaquetas, leucócitos ou hemácias por sequestro esplênico) são complicações da hipertensão portal crônica, muito comuns na cirrose hepática ou na esquistossomose. Embora a congestão venosa sistêmica da insuficiência cardíaca possa causar uma esplenomegalia leve (baço congestivo), ela raramente é volumosa ou acompanhada de hipersplenismo significativo.\n\nAlternativa (d) - Incorreta: O eritema palmar e os aracnídeos vasculares (telangiectasias) são estigmas de insuficiência hepatocelular crônica. Eles ocorrem devido à incapacidade do fígado doente em metabolizar o estrogênio, levando a um estado de hiperestrogenismo relativo que causa essas alterações vasculares cutâneas. São sinais fortemente indicativos de doença hepática crônica (cirrose) e não de etiologia cardíaca.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:22.447Z"
+  },
+  {
+    "id": "AJUDA_53c08f60-da37-4b41-a78d-3f9b62be3caf",
+    "originalId": "53c08f60-da37-4b41-a78d-3f9b62be3caf",
+    "statement": "Na regulamentação do Sistema Único de Saúde - SUS (Lei nº 8.080/1990), há referência à oferta de serviços pela iniciativa privada. Assinale a assertiva correta sobre a participação complementar dos serviços privados no SUS.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A participação complementar desses serviços será formalizada mediante contrato ou convênio, observadas, a respeito, as normas de direito privado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os critérios e valores para a remuneração de serviços e os parâmetros de cobertura assistencial são estabelecidos pelas Sociedades Médicas de cada especialidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aos proprietários, administradores e dirigentes de entidades ou serviços contratados é vedado exercer cargo de chefia ou função de confiança no SUS.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "As Organizações da Sociedade Civil de Interesse Público (OSCIP) terão preferência para participar do SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a participação complementar da iniciativa privada no Sistema Único de Saúde (SUS), tema regido pelos Artigos 24, 25 e 26 da Lei n.º 8.080/1990. Para resolvê-la, é fundamental conhecer as regras de contratualização e as vedações impostas aos gestores.\n\nAnálise das alternativas:\n\na) Incorreta. Segundo o Artigo 24 da Lei 8.080/1990, a participação complementar é formalizada mediante contrato ou convênio, porém devem ser observadas as normas de DIREITO PÚBLICO, e não de direito privado. O Estado, ao contratar serviços de saúde, o faz sob o regime público para garantir a supremacia do interesse coletivo.\n\nb) Incorreta. De acordo com o Artigo 26, os critérios e valores para a remuneração de serviços e os parâmetros de cobertura assistencial são estabelecidos pela DIREÇÃO NACIONAL DO SUS, aprovados no Conselho Nacional de Saúde. As Sociedades Médicas podem ser consultadas, mas não possuem poder legal para estabelecer esses valores e parâmetros no âmbito do SUS.\n\nc) Correta. Esta alternativa reflete exatamente o que consta no Artigo 26, parágrafo 4º da referida lei. A proibição visa evitar conflitos de interesse, garantindo que quem gerencia o dinheiro público ou toma decisões administrativas no SUS não seja a mesma pessoa que lucra ou administra a entidade privada contratada pelo sistema. É uma norma de probidade administrativa.\n\nd) Incorreta. O Artigo 25 da Lei 8.080/1990 estabelece que, na participação complementar, as entidades FILANTRÓPICAS e as SEM FINS LUCRATIVOS terão preferência para participar do SUS. Embora as OSCIPs possam se enquadrar como sem fins lucrativos, a lei utiliza a nomenclatura genérica de entidades filantrópicas e sem fins lucrativos para definir essa prioridade.\n\nGabarito: Alternativa (c).",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:22.447Z"
+  },
+  {
+    "id": "AJUDA_53c9fe09-06c4-4487-a2fd-90ac15a1caac",
+    "originalId": "53c9fe09-06c4-4487-a2fd-90ac15a1caac",
+    "statement": "Menina de 10 anos de idade chega à Unidade de Pronto Atendimento acompanhada por sua mãe, apresentando dificuldade intensa para respirar, chiado no peito e sensação de aperto torácico, que piorou nas últimas 48 horas. Desde os 4 anos de idade, houve múltiplas internações por quadros semelhantes. Nos últimos meses, tem apresentado sintomas quase que diariamente, e despertares noturnos frequentes. Tem usado corticosteroide inalatório regularmente, além de medicamentos de resgate. Está ansiosa porque tem sido necessário se afastar de atividades físicas na escola, devido à falta de ar. Ao exame físico, observa-se desconforto respiratório, com FR: 40ipm, SatO2: 88% em ar ambiente, Temp: 36,6ºC; sibilos difusos à ausculta pulmonar e uso de musculatura acessória para respirar. \n\nConsiderando a situação descrita, indique o diagnóstico e a classificação da doença:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Crise Aguda Moderada; Asma não controlada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Crise Aguda Moderada; Asma parcialmente controlada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Crise Aguda Grave; Asma não controlada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Crise Aguda Grave; Asma parcialmente controlada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nPara resolver essa questão, devemos dividir o raciocínio em dois pilares: a classificação da exacerbação (crise aguda) e a avaliação do controle da asma (quadro crônico).\n\n1. Classificação da Crise Aguda:\nA paciente apresenta sinais claros de gravidade no exame físico. A frequência respiratória de 40 ipm (taquipneia importante para 10 anos), o uso de musculatura acessória e, principalmente, a saturação de oxigênio de 88% em ar ambiente classificam a crise como GRAVE. De acordo com as diretrizes da GINA (Global Initiative for Asthma) e da Sociedade Brasileira de Pneumologia e Tisiologia, uma saturação abaixo de 92% em crianças e adolescentes é um critério definidor de crise grave, exigindo intervenção imediata. Crises leves ou moderadas geralmente mantêm saturação entre 92% e 95%.\n\n2. Classificação do Controle da Asma:\nPara avaliar o controle, observamos os sintomas das últimas semanas baseados em quatro critérios:\n- Sintomas diurnos mais de duas vezes por semana? Sim (apresenta quase diariamente).\n- Despertares noturnos por asma? Sim (frequentes).\n- Uso de medicação de resgate mais de duas vezes por semana? Sim (implícito pelos sintomas diários).\n- Limitação de atividades físicas? Sim (afastada das atividades na escola).\n\nComo a paciente preenche todos os quatro critérios, a asma é classificada como NÃO CONTROLADA. Se preenchesse apenas 1 ou 2 critérios, seria parcialmente controlada. Se não preenchesse nenhum, seria controlada.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A crise não é moderada, pois a presença de saturação de 88% e o uso de musculatura acessória elevam a classificação para grave. Embora a classificação de asma \"não controlada\" esteja correta para o quadro crônico, o erro na classificação da crise invalida a opção.\n\nb) Incorreta. A crise é grave (SatO2 < 92% e esforço respiratório visível). Além disso, a asma não é apenas parcialmente controlada, pois a paciente apresenta todos os critérios de descontrole (sintomas diários, noturnos e limitação de atividade).\n\nc) CORRETA. A alternativa correlaciona adequadamente a Crise Aguda Grave (baseada na hipoxemia de 88% e sinais de desconforto respiratório) com o diagnóstico de Asma Não Controlada (baseado na frequência dos sintomas diurnos, noturnos e impacto na qualidade de vida/atividades físicas).\n\nd) Incorreta. Embora identifique corretamente a gravidade da crise (Grave), erra ao classificar o controle da doença. Para ser \"parcialmente controlada\", a paciente deveria apresentar apenas um ou dois dos critérios de descontrole, mas ela apresenta todos.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Asma em Pediatria",
+      "Asma",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:22.447Z"
+  },
+  {
+    "id": "AJUDA_53da7888-9e69-4466-8741-9ec60a41704c",
+    "originalId": "53da7888-9e69-4466-8741-9ec60a41704c",
+    "statement": "A Hiperplasia Adrenal Congênita (HAC) por deficiência da 21-hidroxilase é a causa mais comum de genitália ambígua em recém-nascidos XX. Analise as afirmativas sobre as formas clínicas e diagnóstico:\n\nI.A forma perdedora de sal (clássica) manifesta-se nas primeiras semanas de vida com crise adrenal (hiponatremia, hipercalemia, acidose, choque) e virilização da genitália externa em meninas, decorrente da deficiência de aldosterona e cortisol e excesso de andrógenos.\nII.A dosagem de 17-hidroxiprogesterona (17-OHP) no teste do pezinho é o método de triagem padrão, mas pode apresentar falso-positivos em prematuros e recém-nascidos sob estresse, exigindo confirmação com valores de referência ajustados para o peso.\nIII.A forma não clássica (tardia) cursa com genitália ambígua ao nascimento, mas sem desequilíbrio eletrolítico, manifestando-se na infância apenas com pubarca precoce e aceleração da idade óssea.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I e II apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A deficiência da enzima 21-hidroxilase é responsável por cerca de 90% a 95% dos casos de Hiperplasia Adrenal Congênita (HAC). Essa enzima é fundamental para as rotas de síntese do cortisol e da aldosterona. Quando ela está ausente ou funciona de forma insuficiente, há um acúmulo de precursores, especialmente a 17-hidroxiprogesterona (17-OHP), que são desviados para a produção de andrógenos adrenais.\n\nAnálise das afirmativas:\n\nAfirmativa I: Correta. A forma clássica perdedora de sal é a manifestação mais grave da doença, ocorrendo quando a atividade enzimática é quase nula. A falta de aldosterona impede a reabsorção de sódio e a secreção de potássio e hidrogênio nos túbulos renais, gerando hiponatremia, hipercalemia e acidose metabólica. A deficiência de cortisol agrava o quadro, levando ao choque e crises hipoglicêmicas. Em fetos do sexo feminino (XX), o excesso de andrógenos durante a vida intrauterina causa a masculinização da genitália externa (virilização), resultando em genitália ambígua.\n\nAfirmativa II: Correta. O teste do pezinho utiliza a dosagem da 17-hidroxiprogesterona (17-OHP) como marcador, pois ela se eleva significativamente antes do bloqueio enzimático. No entanto, recém-nascidos prematuros ou que estão sob estresse metabólico grave podem apresentar níveis elevados de 17-OHP sem ter a doença, o que gera falsos-positivos. Por isso, os laboratórios de triagem neonatal utilizam pontos de corte ajustados conforme o peso ao nascer e a idade gestacional para melhorar a precisão do diagnóstico.\n\nAfirmativa III: Incorreta. O erro desta afirmativa está em dizer que a forma não clássica apresenta genitália ambígua ao nascimento. A forma não clássica (tardia) é caracterizada por uma deficiência leve da enzima, suficiente para produzir níveis adequados de cortisol e aldosterona no período fetal. Portanto, as meninas nascem com genitália normal, sem virilização. Os sintomas aparecem apenas mais tarde, na infância ou adolescência, manifestando-se como pubarca precoce, acne, hirsutismo, aceleração da idade óssea e irregularidades menstruais.\n\nConclusão: Como apenas as afirmativas I e II estão corretas, a alternativa correta é a (d).\n\nGabarito: Alternativa (d).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Hiperplasia Adrenal Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:22.447Z"
+  },
+  {
+    "id": "AJUDA_53df2740-b141-4eb9-989f-44bb5e01af3c",
+    "originalId": "53df2740-b141-4eb9-989f-44bb5e01af3c",
+    "statement": "Uma criança de 4 anos apresenta nos últimos 3 meses episódios de irritabilidade, palidez, sudorese noturna, além de dor óssea intermitente, que acorda a criança à noite. No exame físico, há equimoses em membros inferiores sem história traumática. A mãe relata que a criança ficou “menos ativa” e perdeu peso nesse período. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A associação de dor óssea persistente, palidez e equimoses sem trauma é altamente sugestiva de doença linfoproliferativa maligna.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A dor óssea que desperta a criança à noite é geralmente compatível com dor de crescimento e não necessita investigação adicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A presença de irritabilidade e perda de peso isoladamente não indica câncer infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A palidez com equimoses recorrentes sugere anemia carencial e deve ser manejada inicialmente com suplementação empírica de ferro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Sudorese noturna em crianças pequenas é comum e não faz parte dos sinais de alerta para malignidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico apresentado descreve uma criança com sinais claros de falência medular, infiltração óssea e sintomas constitucionais. Em pediatria, a principal suspeita diante dessa combinação (dor óssea, palidez, equimoses e perda de peso) é a Leucemia Linfoide Aguda (LLA), que é a neoplasia mais comum nessa faixa etária.\n\nAlternativa (a): Correta. A tríade de sinais de insuficiência medular (palidez por anemia e equimoses por trombocitopenia) associada à dor óssea (causada pela expansão da medula pelos blastos) é altamente sugestiva de leucemia ou outras doenças linfoproliferativas. A dor que desperta a criança à noite e a perda de peso reforçam o caráter maligno do quadro.\n\nAlternativa (b): Incorreta. A dor de crescimento é tipicamente benigna, ocorre no fim do dia ou à noite, é bilateral, não causa claudicação e não é acompanhada de sintomas sistêmicos. Dor óssea persistente que acorda a criança ou que é acompanhada de palidez e manchas roxas é um sinal de alerta (\"red flag\") e exige investigação rigorosa, nunca sendo considerada normal.\n\nAlternativa (c): Incorreta. No contexto clínico de uma criança com múltiplas queixas, a irritabilidade e a perda de peso não podem ser desconsideradas. Elas compõem os sintomas constitucionais que frequentemente acompanham neoplasias malignas e processos inflamatórios graves.\n\nAlternativa (d): Incorreta. Embora a anemia carencial cause palidez, ela não justifica o aparecimento de equimoses (que sugerem baixa contagem de plaquetas) nem a dor óssea que desperta a criança. A suplementação empírica de ferro diante de sinais de infiltração medular é um erro grave que retarda o diagnóstico oncológico.\n\nAlternativa (e): Incorreta. A sudorese noturna, especialmente quando é intensa a ponto de molhar a roupa de cama, é um sintoma sistêmico importante. Ela faz parte dos sinais de alerta para doenças malignas, como linfomas e leucemias, refletindo a liberação de citocinas inflamatórias pelo processo neoplásico.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:22.447Z"
+  },
+  {
+    "id": "AJUDA_53fc2104-7ea2-461d-a37a-d432d6e941ba",
+    "originalId": "53fc2104-7ea2-461d-a37a-d432d6e941ba",
+    "statement": "A detecção precoce e o acompanhamento da sífilis na gestação são fundamentais para prevenir a transmissão vertical e as complicações materno-fetais. Em relação aos exames complementares para o diagnóstico e acompanhamento da sífilis em gestantes, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O rastreamento da sífilis na gestação com teste rápido deve ser realizado apenas no primeiro trimestre, uma vez que resultados posteriores não trazem benefícios significativos para o manejo da gestante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O teste FTA-Abs (Fluorescent Treponemal Antibody Absorption) é um teste treponêmico, e uma vez positivo permanece reagente por toda a vida, não sendo indicado para monitorar a resposta ao tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O teste rápido para sífilis, disponível no Sistema Único de Saúde (SUS), pode ser utilizado tanto para diagnóstico quanto para o acompanhamento da resposta ao tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O VDRL (Venereal Disease Research Laboratory) é um teste treponêmico que pode ser utilizado para confirmar o diagnostico de sífilis em gestantes com testes rápidos positivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Explicação detalhada da questão:\n\nAlternativa a) Incorreta. O rastreamento da sífilis na gestante não deve ser restrito ao primeiro trimestre. O Ministério da Saúde recomenda que os testes sejam realizados na primeira consulta de pré-natal (preferencialmente no primeiro trimestre), no início do terceiro trimestre (28ª semana), no momento do parto (ou em caso de abortamento/natimorto) e em situações de exposição de risco ou violência sexual. A detecção em qualquer fase da gestação é crucial para iniciar o tratamento e prevenir a sífilis congênita.\n\nAlternativa b) Correta. O FTA-Abs é um teste treponêmico, o que significa que ele detecta anticorpos específicos contra o Treponema pallidum. Na grande maioria dos indivíduos, uma vez que o teste treponêmico se torna reagente, ele assim permanece por toda a vida, fenômeno conhecido como \"cicatriz sorológica\". Por essa razão, ele é excelente para confirmar o diagnóstico, mas é inadequado para o acompanhamento da resposta ao tratamento ou para identificar novas infecções.\n\nAlternativa c) Incorreta. O teste rápido disponível no SUS é um teste treponêmico. Embora seja a ferramenta preferencial para agilizar o diagnóstico e o início imediato do tratamento em gestantes, ele não serve para o acompanhamento. Como permanece positivo mesmo após a cura, não permite distinguir uma infecção ativa de uma infecção passada e tratada. O acompanhamento da resposta terapêutica deve ser feito obrigatoriamente com testes não treponêmicos, como o VDRL.\n\nAlternativa d) Incorreta. O VDRL (Venereal Disease Research Laboratory) é classificado como um teste não treponêmico, e não treponêmico. Ele detecta anticorpos anticardiolipina e não é específico para o Treponema pallidum. No fluxograma diagnóstico, o VDRL é utilizado tanto para auxiliar no diagnóstico (quando realizado após um teste rápido positivo) quanto para o seguimento mensal da gestante, visando observar a queda dos títulos (ex.: de 1:32 para 1:8) que indica sucesso terapêutico.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:22.447Z"
+  },
+  {
+    "id": "AJUDA_53fd9b03-c314-411c-a9d4-822435073dd2",
+    "originalId": "53fd9b03-c314-411c-a9d4-822435073dd2",
+    "statement": "Homem, 22 anos de idade, vítima de colisão moto e auto, trazido pelo Corpo de Bombeiros ao Pronto Atendimento, apresentando trauma cranioencefálico, hemopneumotórax à D e deformidade em membro inferior direito e membro superior direito. Radiografias: fraturas fechadas da diáfise do fêmur D, do planalto tibial D, fratura-luxação bimaleolar do tornozelo D e do úmero distal D. Após estabilização clínica inicial na sala de emergência, qual é a conduta ortopédica mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Imobilização gessada e aguardar melhora clínica do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução e fixação interna das fraturas com hastes, placas e parafusos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fixação definitiva das fraturas e deformidades com método Ilizarov.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução e estabilização das fraturas com fixadores externos transarticulares.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um paciente jovem, vítima de trauma de alta energia (colisão moto x auto), caracterizado como um politraumatizado. Ele apresenta lesões sistêmicas graves (traumatismo cranioencefálico e hemopneumotórax) associadas a múltiplas fraturas instáveis no mesmo membro (fêmur, planalto tibial, tornozelo e úmero).\n\nNesse cenário, a estratégia ortopédica fundamental é o Controle de Danos Ortopédicos (Damage Control Orthopedics). O objetivo é estabilizar as fraturas de forma rápida e minimamente invasiva para evitar o chamado \"segundo hit\" (segundo golpe), que seria a resposta inflamatória sistêmica adicional causada por uma cirurgia longa e agressiva em um paciente ainda fisiologicamente instável ou limítrofe.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A imobilização gessada é insuficiente para fraturas de alta energia e instáveis, como as da diáfise do fêmur e do planalto tibial. O gesso não oferece estabilidade adequada para o manejo da dor, dificulta os cuidados de enfermagem, impede a avaliação adequada das partes moles (risco de síndrome compartimental) e não auxilia na prevenção de embolia gordurosa.\n\nAlternativa b) Incorreta. A redução e fixação interna definitiva (com placas, parafusos e hastes) no momento inicial é conhecida como Early Total Care. Embora seja o tratamento final, realizá-la na fase aguda em um paciente politraumatizado com TCE e lesão torácica aumenta significativamente o risco de complicações graves, como insuficiência respiratória (SDRA), falência de múltiplos órgãos e morte, devido ao longo tempo cirúrgico e sangramento adicional.\n\nAlternativa c) Incorreta. O método de Ilizarov (fixação externa circular) é uma técnica complexa, demorada e geralmente reservada para reconstruções ósseas, correções de deformidades ou casos específicos de fraturas expostas com perda óssea. Não é a conduta de escolha na urgência para estabilização rápida de um paciente politraumatizado.\n\nAlternativa d) Correta. A fixação externa transarticular é a base do Controle de Danos Ortopédicos. É um procedimento rápido, que causa pouco sangramento e pouco trauma cirúrgico adicional. Ela permite estabilizar as fraturas e as luxações, aliviar a dor, facilitar o manejo clínico no CTI, proteger as partes moles e prevenir complicações sistêmicas. Após a estabilização das funções vitais e melhora do quadro clínico (geralmente entre o 5º e o 10º dia), o paciente poderá ser submetido à conversão da fixação externa para a fixação interna definitiva com segurança.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Politrauma Ortopédico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:22.447Z"
+  }
+]

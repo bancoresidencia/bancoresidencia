@@ -1,0 +1,487 @@
+[
+  {
+    "id": "AJUDA_e8a4ca3b-0637-49c6-876d-77e7f0f1c5b8",
+    "originalId": "e8a4ca3b-0637-49c6-876d-77e7f0f1c5b8",
+    "statement": "Qual é a principal terapia neuroprotetora para os recém nascidos com encefalopatia hipóxico-isquêmica grave?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Criocirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Óxido nítrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipotermia terapêutica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Midazolan contínuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A encefalopatia hipóxico-isquêmica (EHI) é uma síndrome clínica de disfunção neurológica aguda decorrente de um insulto asfíxico no período perinatal. Essa condição desencadeia uma cascata de eventos bioquímicos que leva à morte celular em duas fases principais: a lesão primária (durante o insulto) e a lesão secundária (horas após a reperfusão). A estratégia terapêutica atual visa justamente mitigar os danos dessa segunda fase.\n\nAlternativa a: Incorreta. A criocirurgia é um procedimento cirúrgico que utiliza frio extremo para destruir tecidos doentes, como tumores, verrugas ou lesões pré-cancerosas. É uma técnica localizada e intervencionista que não possui qualquer aplicação no manejo sistêmico da asfixia neonatal ou na proteção cerebral global do recém-nascido.\n\nAlternativa b: Incorreta. O óxido nítrico inalatório é um potente vasodilatador pulmonar seletivo. Ele é indicado para o tratamento da hipertensão pulmonar persistente do recém-nascido (HPPN), visando melhorar a oxigenação sanguínea ao reduzir o shunt da direita para a esquerda nos pulmões. Embora possa ser usado em pacientes críticos que também sofreram asfixia, ele não atua diretamente como um mecanismo de neuroproteção para o parênquima cerebral.\n\nAlternativa c: Correta. A hipotermia terapêutica é o tratamento padrão-ouro e a principal terapia neuroprotetora para recém-nascidos com idade gestacional maior ou igual a 35 semanas que apresentam critérios clínicos de EHI moderada ou grave. O protocolo consiste na redução da temperatura corpórea central para 33,5 a 34,5 graus Celsius por um período de 72 horas, devendo ser iniciado preferencialmente nas primeiras 6 horas após o nascimento. Esse resfriamento reduz a taxa metabólica cerebral, diminui o acúmulo de aminoácidos excitatórios (como o glutamato), reduz a produção de radicais livres e inibe a apoptose (morte celular programada), demonstrando impacto real na redução de mortalidade e sequelas motoras e cognitivas a longo prazo.\n\nAlternativa d: Incorreta. O midazolam é um benzodiazepínico com propriedades sedativas, hipnóticas e anticonvulsivantes. Embora o controle de crises convulsivas seja uma etapa fundamental no suporte ao recém-nascido asfixiado, o midazolam não possui efeito neuroprotetor intrínseco. Ele atua apenas no controle de sintomas e na sedação, não impedindo a progressão das lesões bioquímicas causadas pela hipóxia e isquemia.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:33.107Z"
+  },
+  {
+    "id": "AJUDA_e8a583d3-1c3c-4ded-bb70-975e648d6324",
+    "originalId": "e8a583d3-1c3c-4ded-bb70-975e648d6324",
+    "statement": "Adolescente de 13 anos procura a unidade de saúde devido a sangramento vaginal irregular e volumoso há três meses, associado à fadiga. Relata menarca há um ano, ciclos irregulares e ausência de comorbidades. Ao exame, apresenta palidez cutaneomucosa (+/4+), frequência cardíaca (FC) = 100bpm e PA = 100x60mmHg. Considerando o sangramento uterino anormal na adolescência, é correto afirmar que o(a):",
+    "options": [
+      {
+        "id": "A",
+        "text": "dosagem de FSH, LH e progesterona são fundamentais para o diagnóstico de sangramento uterino anormal em adolescentes e mulheres na menacme",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "causa mais comum é estrutural, principalmente miomas e pólipos, devendo-se solicitar ultrassonografia transvaginal de imediato",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "uso de anticoncepcional oral combinado está contraindicado em adolescentes devido ao risco de efeitos colaterais graves",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "anovulação, decorrente da imaturidade do eixo hipotálamo-hipófise-ovário, é a principal etiologia nessa faixa etária",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nEsta questão aborda o Sangramento Uterino Anormal (SUA) na adolescência, um tema frequente em provas de residência que exige o conhecimento da fisiologia reprodutiva e da classificação PALM-COEIN da Federação Internacional de Ginecologia e Obstetrícia (FIGO).\n\nAlternativa a) Incorreta. A investigação inicial do sangramento uterino anormal em adolescentes não requer a dosagem rotineira de FSH, LH e progesterona. O diagnóstico é predominantemente clínico. Os exames laboratoriais iniciais mais importantes incluem o teste de gravidez (beta-hCG) para excluir gestação, hemograma para avaliar a gravidade da anemia e, em casos de sangramento volumoso desde a menarca, a triagem para coagulopatias (como a doença de von Willebrand).\n\nAlternativa b) Incorreta. Diferentemente das mulheres em idade reprodutiva avançada ou na perimenopausa, as causas estruturais (pólipos, adenomiose, leiomiomas e malignidade) são raras em adolescentes. Além disso, a ultrassonografia transvaginal não é indicada como exame de primeira linha para adolescentes, especialmente as que não iniciaram atividade sexual, sendo preferível a via pélvica/abdominal quando houver necessidade de avaliação de imagem.\n\nAlternativa c) Incorreta. Os anticoncepcionais orais combinados (AOC) são frequentemente utilizados como tratamento de primeira linha no manejo do SUA na adolescência. Eles auxiliam na regulação do ciclo, na redução do fluxo menstrual e no tratamento da anemia decorrente do sangramento. O risco de efeitos colaterais graves em adolescentes saudáveis é baixo, não havendo contraindicação absoluta apenas pela idade.\n\nAlternativa d) Correta. A principal etiologia do sangramento uterino anormal em adolescentes, nos primeiros anos após a menarca, é a disfunção ovulatória. Isso ocorre devido à imaturidade do eixo hipotálamo-hipófise-ovário, que falha em estabelecer o feedback positivo do estrogênio para promover o pico de LH. Sem ovulação, não há formação do corpo lúteo nem produção de progesterona. O endométrio fica exposto apenas ao estímulo estrogênico (estímulo persistente e sem oposição), tornando-se instável e descamando de forma irregular e intensa.\n\nResumo do caso: A paciente apresenta um quadro clássico de SUA por anovulação fisiológica da puberdade, já manifestando repercussão clínica (fadiga, palidez e taquicardia leve), o que indica a necessidade de intervenção terapêutica para controle do sangramento e correção da anemia.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:33.107Z"
+  },
+  {
+    "id": "AJUDA_e8abbd04-6723-4945-b2ac-6830456fe3d1",
+    "originalId": "e8abbd04-6723-4945-b2ac-6830456fe3d1",
+    "statement": "Sobre a fertilidade, avalie se as afirmativas são verdadeiras (V) ou falsas (F) e assinale a sequência correspondente.\n\n( ) O nível de FSH basal (obtido entre o segundo e o quarto dia do ciclo) é comumente usado como medida de reserva ovariana.\n( ) As ISTs podem ser lesivas às trompas, pois são, em sua maioria, insidiosas, pouco sintomáticas ou assintomáticas, sobretudo nas mulheres.\n( ) Cerca de 40% de todas as causas de infertilidade relacionam-se ao fator masculino.\n( ) A infertilidade é um problema com prevalência amplamente variável e com estimativa de acometer cerca de 15% dos casais em todo o mundo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V - V - F - V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "F - V - V - V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V - V - V - V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "V - F - V - F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise de cada afirmativa:\n\nPrimeira afirmativa (Verdadeira): O FSH (Hormônio Folículo-Estimulante) basal, dosado entre o segundo e o quarto dia do ciclo menstrual (fase folicular precoce), é um marcador clássico de reserva ovariana. Níveis elevados de FSH nesse período sugerem que os ovários possuem uma reserva diminuída, pois a hipófise precisa aumentar a secreção desse hormônio para tentar recrutar folículos que já não respondem adequadamente aos estímulos.\n\nSegunda afirmativa (Verdadeira): As Infecções Sexualmente Transmissíveis (ISTs), especialmente a clamídia e a gonorreia, são as principais causas de infertilidade por fator tuboperitoneal. Essas infecções frequentemente cursam de forma assintomática ou com sintomas leves, o que retarda o diagnóstico e permite que o processo inflamatório cause cicatrizes, aderências e obstrução das trompas de Falópio (salpingite crônica).\n\nTerceira afirmativa (Verdadeira): A infertilidade deve ser compreendida como um problema do casal. Estatisticamente, as causas de infertilidade são distribuídas em aproximadamente 40 por cento de fator feminino isolado, 40 por cento de fator masculino isolado e 20 por cento de fatores combinados ou sem causa aparente (ISCA). Portanto, o componente masculino tem papel fundamental na investigação inicial.\n\nQuarta afirmativa (Verdadeira): De acordo com a Organização Mundial da Saúde (OMS) e as principais sociedades de reprodução assistida, a prevalência da infertilidade atinge cerca de 10 a 15 por cento dos casais em idade reprodutiva ao redor do mundo. É considerada um problema de saúde pública global, com variações regionais dependendo de fatores ambientais, sociais e de saúde local.\n\nConclusão: Todas as afirmações estão corretas, o que valida a sequência V - V - V - V.\n\nAlternativa correta: Letra C.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:33.107Z"
+  },
+  {
+    "id": "AJUDA_e8ad3858-3e8a-475a-b869-c386fd18b711",
+    "originalId": "e8ad3858-3e8a-475a-b869-c386fd18b711",
+    "statement": "João, 2 anos de idade, é levado ao pronto-socorro pelos pais devido a febre alta (39,5°C) há 2 dias, associada à tosse produtiva e dificuldade respiratória. A mãe relata que ele apresenta respiração acelerada e movimentos de retração das costelas durante a inspiração. Ao exame físico, observa-se taquipneia (respiração: 52 irpm), tiragem subcostal e intercostal, além de cianose periférica discreta. Ausculta pulmonar revela estertores finos em base direita e sibilos dispersos. O histórico vacinal está incompleto: a criança recebeu apenas a primeira dose da vacina pneumocócica. Radiografia de tórax mostra consolidação lobar no lobo inferior direito.\n\nConsiderando o caso clínico acima, assinale a alternativa mais adequada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O quadro é compatível com pneumonia viral, portanto antibióticos não são indicados; o manejo é exclusivamente suporte clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A criança apresenta sinais de pneumonia grave e deve ser hospitalizada para antibioticoterapia endovenosa, oxigenoterapia e monitoramento clínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A presença de sibilos descarta pneumonia bacteriana, portanto a conduta imediata é broncodilatador inalatório apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vacinação incompleta não altera o risco de pneumonia pneumocócica grave em crianças menores de 2 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O tratamento domiciliar com antibióticos orais é suficiente, já que a criança não apresenta febre há mais de 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nJoão apresenta um quadro típico de pneumonia bacteriana grave. Os pontos-chave para o diagnóstico e a conduta são: idade (2 anos), taquipneia (52 irpm, sendo que para crianças de 1 a 5 anos o limite de normalidade é 40 irpm), sinais de esforço respiratório (tiragem subcostal e intercostal), hipoxemia sugerida pela cianose e imagem radiológica de consolidação lobar.\n\nAlternativa a: Incorreta. A presença de consolidação lobar na radiografia de tórax, associada a febre alta e prostração, é um forte indicativo de etiologia bacteriana, sendo o Streptococcus pneumoniae o principal agente. Pneumonias virais geralmente apresentam infiltrados intersticiais difusos e quadro clínico menos tóxico. O uso de antibióticos é obrigatório neste caso.\n\nAlternativa b: Correta. De acordo com as diretrizes da Organização Mundial da Saúde (OMS) e da Sociedade Brasileira de Pediatria, a presença de tiragem subcostal (esforço respiratório) em uma criança com pneumonia a classifica como pneumonia grave. A cianose, mesmo que discreta, indica comprometimento das trocas gasosas (hipoxemia). Tais achados exigem hospitalização imediata para oxigenoterapia, monitorização de sinais vitais e início de antibioticoterapia endovenosa.\n\nAlternativa c: Incorreta. O sibilo é um achado comum em infecções virais, mas ele não exclui a pneumonia bacteriana. Muitas crianças podem apresentar sibilos devido à inflamação das vias aéreas menores ou por terem hiper-reatividade brônquica preexistente exacerbada pela infecção bacteriana. O foco de consolidação lobar no raio X confirma o diagnóstico de pneumonia.\n\nAlternativa d: Incorreta. O histórico vacinal é fundamental na avaliação de risco. A vacina pneumocócica conjugada (10 ou 13-valente) é altamente eficaz na prevenção de formas invasivas e graves da doença. Uma criança de 2 anos com apenas uma dose está inadequadamente protegida, o que aumenta significativamente o risco de pneumonia bacteriana grave e suas complicações, como o empiema.\n\nAlternativa e: Incorreta. O tratamento domiciliar só é indicado para casos de pneumonia não grave (sem sinais de esforço respiratório, sem cianose e com capacidade de ingestão oral preservada). João apresenta critérios de gravidade que tornam o tratamento ambulatorial inseguro. Além disso, a questão afirma que a criança apresenta febre alta há 2 dias, contradizendo a premissa de ausência de febre da alternativa.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:33.107Z"
+  },
+  {
+    "id": "AJUDA_e8b2662f-52f7-41e4-a63b-2561e9c652a5",
+    "originalId": "e8b2662f-52f7-41e4-a63b-2561e9c652a5",
+    "statement": "Um recém-nascido prematuro tardio, de 35 semanas, apresentou taquipneia desde as primeiras horas de vida. Ao exame, apresentou FR = 70 irpm, FC = 150 bpm, SpO2 = 92% em ar ambiente, e retração subcostal leve. A radiografia mostrou hiperinsuflação pulmonar e linhas fluidas, sem infiltrados difusos. O diagnóstico provável é taquipneia transitória do recém-nascido (TTRN). Nesse caso, qual é a abordagem clínica mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intubação orotraqueal e ventilação mecânica imediata",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suporte ventilatório não invasivo com vigilância clínica até resolução espontânea",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Restrição hídrica rigorosa como terapia principal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administração de surfactante exógeno",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve um recém-nascido prematuro tardio com Taquipneia Transitória do Recém-Nascido (TTRN), uma condição causada pelo atraso na reabsorção do líquido pulmonar fetal. O quadro clínico e o achado radiológico de hiperinsuflação pulmonar com presença de líquido nas fissuras (linhas fluidas) são patognomônicos dessa patologia, que é geralmente benigna e autolimitada.\n\nAlternativa (a) Incorreta: A intubação orotraqueal e a ventilação mecânica invasiva são medidas de suporte avançado para casos de insuficiência respiratória grave ou falha em métodos não invasivos. O paciente em questão apresenta desconforto leve (retração subcostal leve) e saturação de 92% em ar ambiente, o que não justifica uma conduta tão agressiva.\n\nAlternativa (b) Correta: O tratamento da TTRN é eminentemente de suporte. Como a doença costuma regredir espontaneamente em 24 a 72 horas, à medida que o líquido é absorvido pelos linfáticos e capilares pulmonares, a conduta correta é oferecer oxigenoterapia (via cateter ou Hood) ou suporte ventilatório não invasivo (como o CPAP) para reduzir o trabalho respiratório, mantendo vigilância clínica constante até a resolução do quadro.\n\nAlternativa (c) Incorreta: Embora se deva evitar a sobrecarga hídrica, que poderia piorar o edema pulmonar, a restrição hídrica rigorosa não é considerada a terapia principal nem o foco do manejo da TTRN. O manejo hídrico deve ser cuidadoso e individualizado, visando à manutenção da estabilidade do RN.\n\nAlternativa (d) Incorreta: A administração de surfactante exógeno é o tratamento de escolha para a Síndrome do Desconforto Respiratório (SDR), também conhecida como Doença da Membrana Hialina. A SDR ocorre por deficiência de surfactante em prematuros, e sua imagem radiológica típica mostra pulmões hipoinsuflados com padrão de vidro fosco (infiltrado reticulogranular fino), o que é o oposto da hiperinsuflação vista na TTRN.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:33.107Z"
+  },
+  {
+    "id": "AJUDA_e8b900b0-96bb-478b-8a89-eff28d1313ee",
+    "originalId": "e8b900b0-96bb-478b-8a89-eff28d1313ee",
+    "statement": "O carcinoma de células renais (CCR) é o tipo mais comum de neoplasia renal no adulto. Para a maioria dos pacientes com doença metastática e CCR avançado/metastático, deve-se realizar nefrectomia citorredutora (NC) é paliativa e tratamentos sistêmicos são necessários. A NC para terapia local de CCR avançado/metastático deve ser realizada em pacientes:",
+    "options": [
+      {
+        "id": "A",
+        "text": "com oligometástases quando o tratamento local completo das metástases puder ser alcançado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "de alto risco de acordo com a classificação de risco de tumores renais do Memorial Sloan Kettering Cancer Center.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "de risco intermediário que tenham um tumor primário síncrono assintomático e necessitem de terapia sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "com um bom status performance que requerem terapia sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O carcinoma de células renais (CCR) metastático passou por grandes mudanças terapêuticas nos últimos anos, especialmente após os estudos CARMENA e SURTIME. A indicação de nefrectomia citorredutora (NC) deixou de ser universal para ser selecionada conforme o perfil de risco do paciente e a carga da doença.\n\nAlternativa (a): CORRETA. Em pacientes com doença oligometastática (poucas metástases) e de fácil acesso, a nefrectomia citorredutora associada ao tratamento local das metástases (seja por cirurgia, radiocirurgia ou ablação) é uma conduta recomendada. O objetivo nesses casos é atingir o estado de \"livre de doença\" ou retardar significativamente o início da terapia sistêmica, melhorando o prognóstico.\n\nAlternativa (b): INCORRETA. Pacientes classificados como de alto risco (ou risco desfavorável/poor risk) pelos critérios de Motzer (MSKCC) ou Heng (IMDC) não se beneficiam da nefrectomia citorredutora inicial. Nesses casos, a doença é biologicamente muito agressiva, e o paciente deve iniciar a terapia sistêmica precocemente, pois a cirurgia traria morbidade sem ganho de sobrevida.\n\nAlternativa (c): INCORRETA. O estudo CARMENA demonstrou que, para pacientes de risco intermediário ou alto com grande volume metastático que necessitam de terapia sistêmica imediata, a realização da NC upfront (antes do tratamento sistêmico) não é superior ao tratamento isolado com terapia-alvo. Portanto, para tumores primários assintomáticos que exigem terapia sistêmica, a tendência atual é não realizar a NC de imediato.\n\nAlternativa (d): INCORRETA. Embora ter um bom performance status (ECOG 0 ou 1) seja um pré-requisito técnico para realizar qualquer cirurgia de grande porte, ele isoladamente não indica a NC. Se o paciente tem um bom performance status, mas possui múltiplos fatores de risco (risco intermediário ou alto) e alta carga metastática, o início da terapia sistêmica (geralmente imunoterapia combinada) é priorizado em relação à cirurgia local.\n\nEm resumo, a nefrectomia citorredutora deve ser reservada hoje para pacientes de risco favorável, com baixa carga metastática ou oligometástases passíveis de tratamento local, ou para controle de sintomas incontroláveis no rim (como hemorragia).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:33.107Z"
+  },
+  {
+    "id": "AJUDA_e8bcc3ce-cef7-4a80-9c00-0cef5212c24b",
+    "originalId": "e8bcc3ce-cef7-4a80-9c00-0cef5212c24b",
+    "statement": "Lactente de 4 meses é levado ao serviço de emergência com história de vômitos, poliúria, episódios de fraqueza intensa e febre. Ao exame físico, apresenta-se com desidratação grave e déficit de crescimento significativo. Encontram-se, ainda, sinais radiológicos de osteopenia e raquitismo resistente à vitamina D.\nCom base na principal hipótese diagnóstica, o distúrbio ácido básico relacionado ao caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "alcalose respiratória hipoclorêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "acidose metabólica hiperclorêmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "alcalose respiratória hipocalêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "acidose metabólica hipercalêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — lactente com déficit de crescimento, poliúria, desidratação, vômitos e raquitismo resistente à vitamina D — é altamente sugestivo de uma tubulopatia, especificamente a Síndrome de Fanconi ou uma Acidose Tubular Renal (ATR).\n\nNa Síndrome de Fanconi, ocorre uma disfunção global do túbulo proximal, levando à perda urinária de bicarbonato, glicose, aminoácidos, fosfato e potássio. A perda de fosfato justifica o raquitismo e a osteopenia, enquanto a perda de bicarbonato e a incapacidade de acidificação urinária levam ao distúrbio ácido-básico característico das doenças tubulares renais.\n\nAnálise das alternativas:\n\na) Incorreta. A alcalose respiratória decorre da hiperventilação (queda do CO2), o que não condiz com a patologia renal apresentada. Além disso, a hipocloremia é geralmente associada a perdas gástricas (vômitos por estenose hipertrófica do piloro, por exemplo), resultando em alcalose metabólica, não respiratória.\n\nb) Correta. As Acidoses Tubulares Renais (ATRs) são causas clássicas de acidose metabólica com hiato aniônico (anion gap) normal. Para manter a eletroneutralidade do plasma diante da perda de bicarbonato ou retenção de H+, o organismo retém cloreto, resultando em uma acidose metabólica hiperclorêmica. Este é o achado laboratorial típico de crianças com falha de crescimento e raquitismo por causas renais.\n\nc) Incorreta. Embora pacientes com tubulopatias proximais ou distais possam apresentar hipocalemia (baixa de potássio) devido às perdas urinárias, o distúrbio primário é uma acidose metabólica, e não uma alcalose respiratória.\n\nd) Incorreta. Apesar de ser uma acidose metabólica, as formas de ATR que cursam com raquitismo e perda de crescimento (Tipos 1 e 2) estão associadas à hipocalemia ou normocalemia. A acidose metabólica hipercalêmica (ATR Tipo 4) está ligada ao hipoaldosteronismo e não costuma cursar com as alterações ósseas descritas no caso.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Túbulo-Interstício Renal",
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": 69.34132300538349,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:33.107Z"
+  },
+  {
+    "id": "AJUDA_e8d06318-90b5-431c-aaa7-ad893ee8e52f",
+    "originalId": "e8d06318-90b5-431c-aaa7-ad893ee8e52f",
+    "statement": "Criança de 18 meses, sexo feminino, foi trazida pelos pais à Unidade de Saúde da Família (USF) para consulta eventual. Os pais relataram ao médico de família e comunidade (MFC) que a criança, nove dias antes, havia iniciado o quadro de febre baixa, mal-estar, perda de apetite, coriza, tosse seca leve e hiperemia ocular. Cinco dias antes da consulta, o quadro clínico se intensificou, com aumento dos níveis da febre, piora da inapetência e começou a apresentar adinamia. Quatro dias antes da consulta, os pais perceberam lesões na boca (figura 1). Dois dias antes da consulta, surgiu rash maculopapular na face, que evoluiu para o tronco e os membros (demonstrado nas figuras 2 e 3). A criança estava aceitando líquidos, leite, mas diminuiu bem a ingestão de alimentos sólidos. Pais negaram dispneia ou chiado no peito. A tosse era seca e leve. Não teve vômitos ou alterações do hábito intestinal e urinárias. A criança não tinha doenças prévias e não fazia uso de medicamentos. Morava com os pais em uma área de alta vulnerabilidade econômico social. Os pais relataram que nem sempre tinham alimentos variados em casa, principalmente vegetais.\nAo exame físico, a criança estava um pouco apática, febril (temperatura de 38ºC), hidratada, eupneica, corada. Exame do aparelho respiratório, cardíaco, abdome e otoscopia sem alterações. As amigdalas estavam levemente hiperemiadas, mas sem edema ou placas de pus. Apresentava leve hiperemia conjuntival. O exame da boca demonstrou imagem descrita na figura 1 e rash cutâneo descrito nas figuras 2 e 3. \n\nQual a melhor conduta, além da prescrição de medicamentos sintomáticos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vitamina A.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cefalexina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidratação intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clinico apresentado e classico de sarampo, caracterizado pelo periodo prodromico com febre, tosse, coriza e conjuntivite (hiperemia ocular). A Figura 1 evidencia as manchas de Koplik, que sao pequenas lesoes puntiformes esbranquicadas na mucosa jugal, sinal patognomonico da doenca. As Figuras 2 e 3 ilustram o exantema maculopapular morbiliforme com distribuicao craniocaudal tipica.\n\nAnalise das alternativas:\n\na) Incorreta. O sarampo e uma doenca de etiologia viral (Morbilivirus). O uso de penicilina benzatina ou qualquer outro antibiotico nao esta indicado para o tratamento do quadro primario, sendo reservado apenas para infeccoes bacterianas secundarias comprovadas.\n\nb) Correta. A administracao de vitamina A e preconizada pela Organizacao Mundial da Saude (OMS) e pelo Ministerio da Saude para todas as criancas com diagnostico de sarampo. O virus depleta rapidamente os estoques corporais de vitamina A, e sua reposicao diminui expressivamente o risco de complicacoes graves, sequelas oculares (como cegueira) e mortalidade geral.\n\nc) Incorreta. A cefalexina e um antibiotico de primeira geracao e nao possui atuacao sobre infeccoes virais. O exame fisico da crianca afasta infeccoes bacterianas associadas (ausencia de focos pulmonares, amígdalas sem exsudato e otoscopia normal).\n\nd) Incorreta. Embora a manutencao da hidratacao oral seja importante, o exame fisico descreve a paciente como hidratada e aceitando liquidos. Nao ha indicacao de hidratacao intensiva (como expansao venosa), que se restringe a quadros de desidratacao grave ou choque.\n\nPortanto, a alternativa correta e a letra b.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Deficiências Vitamínicas e Profilaxias"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/83bbafef73c84aef894ca07a8d43258965e606e24d2ee85fbb987a95c61630e9.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e8d06318-90b5-431c-aaa7-ad893ee8e52f_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:33.628Z"
+  },
+  {
+    "id": "AJUDA_e8de2e89-f9dd-4163-a795-98bacb6e28d9",
+    "originalId": "e8de2e89-f9dd-4163-a795-98bacb6e28d9",
+    "statement": "Mulher de 59 anos, GIIIPIII, menopausada há 10 anos, apresenta sangramento vaginal há uma semana. É hipertensa e tem índice de massa corporal (IMC) de 32 kg/m². Ao exame ginecológico apresenta colo atrófico e útero levemente aumentado. A ultrassonografia transvaginal mostra espessamento endometrial de 15mm. Diante desse quadro, o médico deve:",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar histerectomia total com salpingooforectomia bilateral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "prescrever progestogênio oral por três meses e reavaliar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "repetir a ultrassonografia transvaginal em seis meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar histeroscopia com biópsia endometrial",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o manejo da hemorragia uterina anormal na pós-menopausa, um tema recorrente e fundamental na prática ginecológica.\n\nAnálise do Quadro Clínico:\nA paciente apresenta sangramento vaginal após dez anos de menopausa, o que é um sinal de alerta clássico para câncer de endométrio. Além disso, ela possui fatores de risco importantes: obesidade (IMC de 32 kg/m²) e hipertensão, que estão associados ao hiperestrogenismo periférico. O achado ultrassonográfico de um endométrio de 15 mm é altamente suspeito, visto que o ponto de corte para investigação em pacientes com sangramento na pós-menopausa é geralmente de 4 a 5 mm.\n\nExplicação das Alternativas:\n\nAlternativa (a) Incorreta: A histerectomia total com salpingo-oforectomia bilateral é um tratamento definitivo, geralmente indicado após a confirmação diagnóstica de neoplasia ou hiperplasia com atipias. Não se deve realizar uma cirurgia de grande porte sem antes possuir um diagnóstico histopatológico que justifique o procedimento e oriente a extensão da cirurgia (estadiamento).\n\nAlternativa (b) Incorreta: O uso de progestogênios pode ser o tratamento para certos tipos de hiperplasia endometrial sem atipias, mas prescrevê-los de forma empírica por três meses é um erro grave. Isso mascara o sintoma e retarda o diagnóstico de um possível carcinoma endometrial, que não seria tratado adequadamente apenas com hormônios.\n\nAlternativa (c) Incorreta: Diante de um sangramento na pós-menopausa com endométrio de 15 mm, a conduta deve ser imediata. Aguardar seis meses para repetir o exame coloca a vida da paciente em risco, permitindo a progressão de uma eventual doença maligna.\n\nAlternativa (d) Correta: Esta é a conduta padrão-ouro. Em pacientes com sangramento uterino na pós-menopausa e espessamento endometrial identificado na ultrassonografia, é obrigatória a avaliação histológica (biópsia). A histeroscopia é o melhor método, pois permite a visualização direta da cavidade uterina, a identificação de lesões focais (como pólipos ou áreas suspeitas) e a realização de biópsia dirigida, o que aumenta significativamente a acurácia diagnóstica em comparação à biópsia às cegas.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:33.629Z"
+  },
+  {
+    "id": "AJUDA_e8e2837a-1348-4bbf-8a50-4062d94bb2a1",
+    "originalId": "e8e2837a-1348-4bbf-8a50-4062d94bb2a1",
+    "statement": "Mulher, 52 anos de idade, lavadeira. Na consulta à Unidade de Saúde da Família, queixa-se de fogachos intensos e suores noturnos há cerca de 6 meses. As ondas de calor surgem várias vezes ao dia, são súbitas e duram cerca de 3 a 5 minutos. Tem dificuldades para dormir devido aos suores noturnos. Relata menopausa há 1 ano, quando surgiram os sintomas, desde então vêm se intensificando. Sem sangramento vaginal há mais de 12 meses e relata ressecamento vaginal. Última consulta ginecológica há 2 anos, quando os exames de rotina foram normais. Nega história familiar de câncer de mama ou de trombose e nunca fez reposição hormonal. A paciente também nega tabagismo e possui uma dieta regular. Exame físico sem alterações com PA: 125x78mmHg e IMC- 24kg/m². \n\nIndique o esquema de reposição hormonal preconizado para esta paciente, no Brasil:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estrogênio isolado via oral ou transdérmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estrogênio combinado com progestagênio, oral ou transdérmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Progestagênio isolado via oral, sem uso de estrogênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estrogênio combinado com testosterona, por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nEstamos diante de uma paciente de 52 anos, na pós-menopausa (amenorreia há mais de 12 meses), apresentando sintomas vasomotores intensos (fogachos e suores noturnos) e atrofia urogenital (ressecamento vaginal). Ela está dentro da chamada \"janela de oportunidade\" para o início da Terapia Hormonal (TH), que compreende mulheres com menos de 60 anos ou com menos de 10 anos de menopausa, desde que não apresentem contraindicações.\n\nO ponto crucial para definir o esquema de TH nesta questão é a presença do útero. Na prática médica e em provas de residência, se não for mencionado que a paciente realizou histerectomia, devemos considerar que ela possui o útero íntegro.\n\nExplicação das alternativas:\n\na) Incorreta. O estrogênio isolado é o tratamento de escolha para os sintomas vasomotores, porém só pode ser prescrito de forma isolada para mulheres que não possuem útero (histerectomizadas). O uso de estrogênio sem oposição em mulheres com útero aumenta drasticamente o risco de hiperplasia e câncer de endométrio.\n\nb) Correta. Como a paciente possui útero, é obrigatória a associação de um progestagênio ao estrogênio. O objetivo do progestagênio neste esquema é puramente a proteção endometrial, impedindo a proliferação excessiva causada pelo estrogênio. A via de administração pode ser tanto oral quanto transdérmica, uma vez que a paciente não apresenta contraindicações específicas (como hipertensão descontrolada, hipertrigliceridemia ou alto risco trombótico) que exijam obrigatoriamente a via não oral.\n\nc) Incorreta. O progestagênio isolado não é o tratamento padrão para sintomas climatéricos. Embora possa ter um efeito leve nos fogachos, ele não trata a atrofia vaginal e não é a conduta de primeira linha quando o objetivo é o alívio dos sintomas vasomotores intensos.\n\nd) Incorreta. A associação com testosterona não é recomendada para o tratamento de fogachos ou suores noturnos. O uso de androgênios na pós-menopausa é restrito a casos selecionados de transtorno do desejo sexual hipoativo, após avaliação rigorosa, e nunca substitui a necessidade do progestagênio para proteção uterina.\n\nResumo: Paciente com útero e sintomas de menopausa deve receber estrogênio (para tratar os sintomas) + progestagênio (para proteger o endométrio).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:33.629Z"
+  }
+]

@@ -1,0 +1,486 @@
+[
+  {
+    "id": "AJUDA_79e29b05-0247-4fcc-80b9-3562ad6d0d90",
+    "originalId": "79e29b05-0247-4fcc-80b9-3562ad6d0d90",
+    "statement": "KDIGO (The Kidney Disease Improving Global Outcomes) considera o seguinte parâmetro:",
+    "options": [
+      {
+        "id": "A",
+        "text": "relação ureia/creatinina > 40.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "redução do débito urinário < 1 mL/kg/hora por um período maior que 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "elevação absoluta da creatinina ≥ 0,3 mg/dL dentro de 48 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "FENa < 1%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação KDIGO (Kidney Disease: Improving Global Outcomes) é o padrão-ouro atual para a definição e o estadiamento da Lesão Renal Aguda (LRA). Para o diagnóstico de LRA, o KDIGO utiliza dois pilares principais: a variação da creatinina sérica e o volume do débito urinário.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A relação ureia/creatinina acima de 40 é um marcador clássico para sugerir etiologia pré-renal (devido ao aumento da reabsorção passiva de ureia nos túbulos proximais em estados de hipovolemia). Embora seja útil no raciocínio clínico para diferenciar a causa da lesão, ela não faz parte dos critérios diagnósticos ou de estadiamento propostos pelo KDIGO.\n\nAlternativa B (Incorreta): O critério de débito urinário estabelecido pelo KDIGO para o estágio 1 de Lesão Renal Aguda é uma redução para valores menores que 0,5 mL/kg/h por um período de pelo menos 6 horas. O valor de 1 mL/kg/h citado na alternativa está incorreto e superestimado em relação à definição oficial.\n\nAlternativa C (Correta): Esta alternativa apresenta exatamente um dos critérios definidores de Lesão Renal Aguda segundo o KDIGO. O diagnóstico de LRA é estabelecido quando ocorre um aumento absoluto da creatinina sérica maior ou igual a 0,3 mg/dL em um período de 48 horas, OU quando há um aumento de 1,5 vez ou mais em relação ao valor basal (conhecido ou presumido) nos últimos 7 dias.\n\nAlternativa D (Incorreta): A Fração de Excreção de Sódio (FENa) menor que 1% é um parâmetro laboratorial utilizado para auxiliar na diferenciação entre insuficiência renal pré-renal e necrose tubular aguda (NTA). Assim como a relação ureia/creatinina, é um dado complementar para investigação etiológica, mas não é um parâmetro definidor de LRA pelos critérios KDIGO.\n\nResumo dos critérios KDIGO para diagnóstico de LRA:\n1. Aumento da creatinina sérica maior ou igual a 0,3 mg/dL em 48 horas; ou\n2. Aumento da creatinina sérica para valor maior ou igual a 1,5 vez o valor basal nos últimos 7 dias; ou\n3. Débito urinário menor que 0,5 mL/kg/h por 6 horas.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:10.107Z"
+  },
+  {
+    "id": "AJUDA_79e6cb88-2edc-4d3d-b9a6-14e60fda7fa4",
+    "originalId": "79e6cb88-2edc-4d3d-b9a6-14e60fda7fa4",
+    "statement": "Um paciente de 68 anos apresenta elevação da creatinina de 0,9 para 1,3 mg/dL em 48 horas, com oligúria (débito urinário de 320 mL/24h). A análise laboratorial revela fração de excreção de sódio (FeNa) de 0,6%, sódio urinário de 18 mEq/L e osmolalidade urinária de 520 mOsm/kg. Este perfil laboratorial é mais compatível com:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nefrite intersticial aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Injúria renal aguda pré-renal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Necrose tubular aguda estabelecida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obstrução do trato urinário inferior.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige a diferenciação laboratorial entre as principais causas de injúria renal aguda (IRA). O quadro clínico apresenta um paciente com queda no débito urinário e elevação da creatinina, configurando IRA. O ponto central para a resposta reside nos índices urinários, que refletem a integridade ou o comprometimento da função tubular.\n\nA alternativa (b) está correta porque os exames laboratoriais apresentados são característicos de um estado de hipoperfusão renal, conhecido como IRA pré-renal. Nesse cenário, o parênquima renal está íntegro e os túbulos respondem fisiologicamente à redução do fluxo sanguíneo, tentando preservar volume e sódio. Os achados que confirmam isso são:\n1. Fração de excreção de sódio (FeNa) menor que 1% (no caso, 0,6%): indica que o rim está reabsorvendo sódio avidamente.\n2. Sódio urinário menor que 20 mEq/L (no caso, 18 mEq/L): também reflete a tentativa do corpo de poupar sódio e água.\n3. Osmolalidade urinária elevada (maior que 500 mOsm/kg): demonstra que a capacidade de concentração urinária pela medula renal e a ação do hormônio antidiurético (ADH) estão preservadas, gerando uma urina muito concentrada.\n\nA alternativa (a) está incorreta. A nefrite intersticial aguda é uma causa intrínseca de IRA. Nela, o processo inflamatório no interstício renal compromete a função tubular, o que geralmente resulta em uma FeNa maior que 1% e na incapacidade de concentrar a urina de forma eficaz. Além disso, o sedimento urinário costuma apresentar piúria e eosinofilúria.\n\nA alternativa (c) está incorreta. Na necrose tubular aguda (NTA) estabelecida, ocorre lesão das células tubulares. Com os túbulos lesados, o rim perde a capacidade de reabsorver sódio e de concentrar a urina. Portanto, na NTA, esperaríamos encontrar FeNa maior que 2%, sódio urinário acima de 40 mEq/L e uma osmolalidade urinária baixa (geralmente entre 250 e 350 mOsm/kg, semelhante à do plasma).\n\nA alternativa (d) está incorreta. A obstrução do trato urinário inferior (IRA pós-renal) inicialmente pode mimetizar um perfil pré-renal, mas rapidamente evolui para um perfil de lesão intrínseca devido ao aumento da pressão retrógrada nos túbulos, que prejudica a reabsorção de sódio e a concentração urinária. Na ausência de dados de imagem ou história de sintomas obstrutivos, o perfil laboratorial puramente funcional aponta para a causa pré-renal.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:10.107Z"
+  },
+  {
+    "id": "AJUDA_79f82b5a-8835-4bc9-a058-0d0574ac70c4",
+    "originalId": "79f82b5a-8835-4bc9-a058-0d0574ac70c4",
+    "statement": "Uma criança de 4 anos é trazida à emergência com febre baixa há 2 dias, coriza hialina, tosse seca e congestão nasal. No exame físico, encontra-se em bom estado geral, afebril no momento, sem exsudato, sem linfonodomegalias importantes. A mãe está preocupada porque aconteceram 3 episódios semelhantes este ano. Diante do quadro clínico, qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar hemograma e iniciar antibiótico (amoxicilina).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar cultura de orofaringe para afastar faringite estreptocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientações aos pais, tratamento sintomático e observação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Internação hospitalar para investigação de imunodeficiência .",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO quadro apresentado descreve uma criança de 4 anos com sintomas típicos de uma Infecção de Vias Aéreas Superiores (IVAS) de etiologia viral, o resfriado comum. Os achados de coriza hialina, tosse seca, congestão nasal e febre baixa, associados ao bom estado geral e ausência de sinais inflamatórios graves no exame físico (sem exsudato ou linfonodomegalias), são característicos dessa patologia. Sobre a recorrência mencionada pela mãe (3 episódios no ano), é importante destacar que crianças nessa faixa etária, especialmente as que frequentam escola ou creche, podem apresentar de 6 a 12 episódios de IVAS por ano, o que é considerado normal dentro do desenvolvimento do sistema imunológico.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. O uso de antibióticos como a amoxicilina é indicado apenas em casos de complicações bacterianas (como sinusite bacteriana aguda ou otite média aguda) ou em faringites estreptocócicas confirmadas. O quadro clínico é nitidamente viral. Solicitar hemograma para uma criança em bom estado geral com sintomas leves é desnecessário, pois o resultado não alteraria a conduta.\n\nAlternativa b) Incorreta. A faringite estreptocócica é pouco comum em crianças muito pequenas e geralmente se manifesta com febre alta, dor de garganta importante e exsudato purulento, mas classicamente cursa sem sintomas de resfriado (sem tosse e sem coriza). A presença de tosse e coriza aponta fortemente para etiologia viral, tornando a cultura de orofaringe desnecessária.\n\nAlternativa c) Correta. Esta é a conduta padrão para o resfriado comum. O tratamento é sintomático (hidratação, lavagem nasal com soro fisiológico e antitérmicos se necessário). A parte mais importante da consulta é a orientação aos pais, explicando a natureza viral da doença e tranquilizando-os de que a frequência dos episódios relatada é normal para a idade.\n\nAlternativa d) Incorreta. Não há qualquer indicação de imunodeficiência neste caso. Os sinais de alerta para imunodeficiências primárias incluem infecções graves (como duas ou mais pneumonias no último ano), otites de repetição frequentes, dificuldade de ganho de peso ou necessidade de antibióticos venosos. Três resfriados comuns por ano não justificam investigação e muito menos internação hospitalar.\n\nGABARITO: Alternativa (c).",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:10.107Z"
+  },
+  {
+    "id": "AJUDA_79fa8177-dae2-4a5e-82c6-e5693d42f601",
+    "originalId": "79fa8177-dae2-4a5e-82c6-e5693d42f601",
+    "statement": "São considerados benefícios não contraceptivos da anticoncepção hormonal combinada, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Melhora das queixas e diminuição do risco de afecções benignas como: dismenorreia, tensão pré-menstrual, cefaleia menstrual, miomatose uterina, endometriose, cistos ovarianos funcionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Redução nos riscos do desenvolvimento de vaginose bacteriana, vulvovaginites por fungos e tricomoníase por conta das modificações de pH vaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Redução no risco de câncer de endométrio, câncer de ovário e câncer colorretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Menor risco de doenças benignas da mama, como cistos mamários.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questao aborda os efeitos nao contraceptivos dos anticoncepcionais hormonais combinados (estrogenio + progestagenio), solicitando a alternativa que NAO representa um beneficio dessas medicacoes.\n\nAlternativa a: Incorreta. E um beneficio real. O bloqueio do eixo hipotalamo-hipofise-ovario inibe a ovulacao, prevenindo a formacao de cistos ovarianos funcionais. Alem disso, a presenca do progestagenio promove atrofia endometrial e menor sintese de prostaglandinas, o que alivia a dismenorreia, a dor pelvica associada a endometriose e reduz o sangramento em pacientes com miomatose. A estabilizacao hormonal tambem atenua a tensao pre-menstrual e a cefaleia catamenial.\n\nAlternativa b: Correta (gabarito - excecao). Os hormonios combinados nao conferem protecao contra vulvovaginites ou infeccoes sexualmente transmissiveis como a tricominiase. Pelo contrario, o estrogenio aumenta a deposicao de glicogenio no epitelio vaginal, o que pode facilitar a proliferacao de Candida albicans e predispor a candidiase vulvovaginal. A prevencao de infeccoes vaginais e ISTs e papel exclusivo dos metodos de barreira.\n\nAlternativa c: Incorreta. E um beneficio real. O uso de contraceptivos combinados reduz comprovadamente o risco de cancer de ovario (pelo repouso ovulatorio), cancer de endometrio (pela oposicao progestagenica constante a proliferacao endometrial) e cancer colorretal, com efeito protetor duradouro mesmo apos a suspensao do metodo.\n\nAlternativa d: Incorreta. E um beneficio real. Ha uma reducao significativa na incidencia de doencas benignas da mama, tais como cistos mamarios e fibroadenomas, diminuindo a necessidade de investigacoes invasivas e biopsias.\n\nPortanto, a alternativa que nao corresponde a um beneficio e a letra b.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:10.107Z"
+  },
+  {
+    "id": "AJUDA_7a007a44-e6dd-4b76-bd43-3c86e3d05f74",
+    "originalId": "7a007a44-e6dd-4b76-bd43-3c86e3d05f74",
+    "statement": "Uma senhora de 79 anos, recentemente viúva e vivendo isolada dos vizinhos e filhos, trouxe o tema da morte durante uma consulta no posto de saúde. Ela diz que não vê mais sentido em continuar viva, nada lhe satisfaz e tem vontade de chorar durante a maior parte do dia. Já está em tratamento para depressão, há 5 meses, mas ainda sem resposta satisfatória. Ela também relata que não consegue tirar da cabeça a ideia de tomar veneno ou se enforcar em casa, acreditando que isso seria um alívio para seu sofrimento. \nConsiderando a organização dos serviços na comunidade, qual seria a conduta apropriada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar para uma internação hospitalar imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dispensar a paciente e enviar um agente comunitário para acompanhar as suas atividades no dia a dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pedir para a paciente continuar o tratamento com o seu médico especialista em data oportuna de retorno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transferir a paciente para um serviço de emergência psiquiátrica para avaliação de uma possível internação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA paciente apresenta diversos fatores de risco elevadíssimos para o suicídio: idade avançada (idosos têm maior taxa de letalidade), viuvez recente, isolamento social, depressão grave resistente ao tratamento inicial e, principalmente, ideação suicida ativa com planejamento de métodos letais (veneno e enforcamento). Diante de um quadro de risco iminente de autoextermínio identificado na Atenção Primária, a prioridade absoluta é a segurança da paciente.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) Incorreta. Embora a internação possa ser o desfecho final, o fluxo correto no sistema de saúde, partindo de uma unidade básica, é o encaminhamento para um serviço de urgência/emergência. Lá, a paciente será estabilizada e avaliada por especialistas que decidirão pela internação hospitalar (em leito psiquiátrico ou hospital geral) ou outras estratégias de crise.\n\nAlternativa (b) Incorreta. Esta conduta é considerada negligência médica. Uma paciente com plano suicida estruturado jamais deve ser dispensada para casa, pois o risco de efetivação do ato é crítico. O acompanhamento pelo agente comunitário é uma estratégia de manutenção, não de manejo de crise aguda.\n\nAlternativa (c) Incorreta. Casos de ideação suicida com planejamento são emergências médicas. Orientar a paciente a aguardar uma consulta de rotina ou retorno agendado retarda o atendimento necessário e coloca a vida da idosa em risco imediato.\n\nAlternativa (d) Correta. Esta é a conduta preconizada pelas diretrizes de saúde mental. Diante do alto risco de suicídio detectado na rede básica, a paciente deve ser transferida para um serviço de emergência psiquiátrica. Esse serviço possui estrutura para observação, proteção, reavaliação medicamentosa e definição da necessidade de internação, garantindo que a paciente não fique desassistida no momento de maior vulnerabilidade.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:10.107Z"
+  },
+  {
+    "id": "AJUDA_7a0542e3-9693-4849-b99f-7fe551212a9d",
+    "originalId": "7a0542e3-9693-4849-b99f-7fe551212a9d",
+    "statement": "Adolescente de 12 anos de idade vítima de acidente por submersão é admitido na sala de emergência inconsciente, em apneia e sem pulso central. É iniciada massagem cardíaca imediatamente, posicionada a via aérea pela colocação de coxim sob o occipício, feita aspiração de vias aéreas superiores e fornecidas ventilações com bolsa-valva e máscara. A monitorização cardíaca mostra o seguinte (imagem de fibrilação ventricular): Assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar amiodarona 5 mg/kg EV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar desfibrilação com 2 J/kg",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administrar sulfato de magnésio 50 mg/kg EV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar cardioversão sincronizada com 1 J/kg",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresenta um adolescente em parada cardiorrespiratória (PCR) decorrente de submersão. A análise da imagem do monitor cardíaco revela uma taquicardia ventricular ou fibrilação ventricular. Como o enunciado confirma que o paciente está inconsciente e sem pulso central, estamos diante de um ritmo chocável (FV/TV sem pulso).\n\nAlternativa a) Incorreta. A amiodarona é um fármaco antiarrítmico indicado apenas em casos de FV ou TV sem pulso que persistem após choques sucessivos (ritmo refratário), sendo administrada geralmente após o terceiro choque. Não é a conduta inicial.\n\nAlternativa b) Correta. Seguindo o protocolo de Suporte Avançado de Vida em Pediatria (PALS), uma vez identificado um ritmo chocável em um paciente em parada cardiorrespiratória, a prioridade absoluta é a desfibrilação o mais rápido possível. A carga inicial recomendada para o primeiro choque na pediatria é de 2 J/kg.\n\nAlternativa c) Incorreta. O sulfato de magnésio é indicado especificamente para o tratamento de *torsades de pointes* (uma forma de taquicardia ventricular polimórfica) ou em casos de hipomagnesemia documentada. O traçado e o contexto sugerem uma abordagem inicial para FV/TV sem pulso padrão.\n\nAlternativa d) Incorreta. A cardioversão sincronizada é o procedimento realizado em pacientes com taquiarritmias que possuem pulso, porém apresentam sinais de instabilidade hemodinâmica. Para pacientes em PCR (sem pulso), deve-se utilizar a desfibrilação (choque não sincronizado), pois o aparelho não consegue identificar uma onda R para sincronizar o disparo devido à desorganização elétrica do coração.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Parada Cardiorrespiratória (PCR)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/fa4d156dacffe9b106fb25183449f459e397fe9b1faf7dfba2551744c34de986.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_7a0542e3-9693-4849-b99f-7fe551212a9d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:10.493Z"
+  },
+  {
+    "id": "AJUDA_7a107c04-09ad-4219-9859-205b0cfe239e",
+    "originalId": "7a107c04-09ad-4219-9859-205b0cfe239e",
+    "statement": "Paciente do sexo masculino, 48 anos, é atendido no pronto atendimento com quadro de dor epigástrica, tipo cólica, que migrou para a FID há cerca de 7 dias. Havia tido diagnóstico prévio de infecção do trato urinário e estava em tratamento domiciliar com antibióticos orais e sintomáticos, porém o quadro evoluiu com febre e vômitos e decidiu buscar uma nova reavaliação. No momento o paciente se encontra em BEG, febril (38°C), FR: 20irpm, FC: 80bpm. P.A.: 120x80mmHg. Seu abdome é plano, flácido, com abaulamento doloroso à palpação em FID. Sua avaliação laboratorial evidenciou leucograma com 16.000 e desvio à esquerda e PCR: 120mg/dl. Foi submetido a tomografia computadorizada que evidenciou apêndice cecal de paredes espessadas e perfurado, espessamento de ceco e coleção líquida adjacente de cerca de 6cm, bloqueada. Sobre o caso acima, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A conduta de escolha para o caso neste momento é a laparotomia exploradora imediata devido a risco iminente de peritonite e sepse grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Caso haja janela disponível para punção, o tratamento não operatório com drenagem guiada por ultrassom ou tomografia, associado a antibioticoterapia, pode ser bastante efetivo para o caso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Na hipótese de o tratamento conservador ser bem sucedido, não há indicação para abordagem cirúrgica eletiva posterior, uma vez que os índices de recorrência após abscesso são baixos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A laparoscopia é contraindicada para o caso, uma vez que provavelmente haverá indicação de colectomia direita em ambiente infectado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve um paciente de 48 anos com quadro de apendicite aguda de longa evolução (7 dias). O tempo de evolução superior a 5 dias, associado ao achado de massa palpável no exame físico e tomografia demonstrando coleção de 6 cm bloqueada, caracteriza o chamado plastrão ou abscesso apendicular. O paciente encontra-se hemodinamicamente estável (BEG, FC 80, PA 120x80), o que permite uma abordagem conservadora inicial.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. Em pacientes com mais de 5 dias de sintomas e sinais de bloqueio (plastrão ou abscesso), a cirurgia imediata é tecnicamente difícil devido à intensa inflamação e friabilidade dos tecidos. A tentativa de apendicectomia nesse cenário aumenta significativamente o risco de lesões iatrogênicas intestinais e a necessidade de colectomias direitas não planejadas. Como o paciente está estável, a conduta inicial não deve ser a laparotomia de urgência.\n\nAlternativa B: Correta. Para abscessos apendiculares maiores que 3 a 4 cm em pacientes estáveis, a conduta preferencial é o tratamento não operatório. Este consiste em antibioticoterapia de amplo espectro associada à drenagem percutânea (guiada por ultrassonografia ou tomografia), caso haja janela segura para o procedimento. Essa estratégia visa \"esfriar\" o processo inflamatório, tratando a infecção de forma menos invasiva e evitando uma cirurgia de grande porte em ambiente infectado.\n\nAlternativa C: Incorreta. Embora a apendicectomia de intervalo (realizada após 6 a 12 semanas) não seja mais obrigatória para todos os pacientes, ela deve ser fortemente considerada em pacientes acima de 40 anos, como no caso em questão. O objetivo é excluir a presença de neoplasia oculta de ceco ou de apêndice, que pode se manifestar clinicamente como uma apendicite complicada. Além disso, a taxa de recorrência da apendicite após tratamento conservador gira em torno de 10% a 25%, não sendo considerada desprezível.\n\nAlternativa D: Incorreta. A laparoscopia não é contraindicada. Caso o tratamento conservador falhasse e o paciente evoluísse com peritonite generalizada ou sepse, a abordagem cirúrgica seria necessária, e a via laparoscópica poderia ser utilizada por cirurgiões experientes. Além disso, o risco de colectomia direita é justamente um dos motivos para se tentar o tratamento clínico inicial, e não uma contraindicação à técnica de vídeo.\n\nRESUMO DA CONDUTA NO PLASTRÃO/ABSCESSO APENDICULAR:\n1. Paciente estável com abscesso > 3-4 cm: Antibiótico + Drenagem Percutânea.\n2. Paciente estável com abscesso pequeno (< 3 cm) ou plastrão sem coleção: Apenas antibiótico.\n3. Paciente instável ou com peritonite generalizada: Cirurgia de urgência.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:10.493Z"
+  },
+  {
+    "id": "AJUDA_7a13aea0-1167-4954-a929-df044646a616",
+    "originalId": "7a13aea0-1167-4954-a929-df044646a616",
+    "statement": "De acordo com os Critérios de Tóquio 2018, o exame de imagem considerado o padrão-ouro para o diagnóstico de colecistite aguda é a",
+    "options": [
+      {
+        "id": "A",
+        "text": "tomografia computadorizada (TC) de abdome com contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ressonância magnética do abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "colangiorressonância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "CPRE (colangiopancreatografia endoscópica retrógada).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ultrassonografia abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para o diagnóstico de colecistite aguda, os Critérios de Tóquio 2018 (TG18) estabelecem diretrizes claras sobre o papel dos exames de imagem, priorizando a acurácia aliada à disponibilidade e custo-benefício.\n\nAlternativa A: Incorreta. A tomografia computadorizada (TC) de abdome com contraste é um exame extremamente útil, especialmente para identificar complicações da colecistite (como gangrena, perfuração ou colecistite enfisematosa) e para o diagnóstico diferencial de outras causas de dor abdominal. No entanto, ela apresenta menor sensibilidade que a ultrassonografia para detectar cálculos biliares (especialmente os de colesterol) e envolve exposição à radiação ionizante.\n\nAlternativa B: Incorreta. A ressonância magnética (RM) possui alta sensibilidade e especificidade, muitas vezes superior à ultrassonografia. Contudo, devido ao seu alto custo, tempo de execução prolongado e menor disponibilidade nos serviços de urgência, não é considerada o padrão-ouro para o diagnóstico inicial na prática clínica recomendada pelo TG18.\n\nAlternativa C: Incorreta. A colangiorressonância é um exame específico para a avaliação da árvore biliar. Sua principal indicação é a detecção de coledocolitíase (cálculos nos ductos biliares) e não a avaliação primária da inflamação da parede da vesícula biliar.\n\nAlternativa D: Incorreta. A CPRE (colangiopancreatografia endoscópica retrógrada) é um procedimento invasivo com finalidade predominantemente terapêutica. Ela é utilizada para a retirada de cálculos do colédoco ou drenagem biliar, não possuindo papel no diagnóstico de colecistite aguda, além de carregar riscos de complicações como pancreatite.\n\nAlternativa E: Correta. De acordo com o TG18, a ultrassonografia abdominal é o exame de escolha inicial e o padrão-ouro para o diagnóstico de colecistite aguda. Ela apresenta uma sensibilidade em torno de 85% a 88% e especificidade de 80%. É um método rápido, de baixo custo, amplamente disponível e que não utiliza radiação. Os critérios ultrassonográficos diagnósticos incluem: presença de cálculos biliares ou barro biliar, espessamento da parede da vesícula biliar (maior ou igual a 4 mm), sinal de Murphy ultrassonográfico positivo (dor à compressão da vesícula com o transdutor), aumento do diâmetro da vesícula e presença de líquido pericolecístico.\n\nResumo: Embora outros exames possam ser necessários em casos duvidosos ou complicados, a ultrassonografia permanece como a ferramenta diagnóstica principal para a confirmação da colecistite aguda conforme os critérios internacionais vigentes.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Colecistite e Colangite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:10.493Z"
+  },
+  {
+    "id": "AJUDA_7a1a6d77-a92e-49e9-8725-118a9fbb9b5e",
+    "originalId": "7a1a6d77-a92e-49e9-8725-118a9fbb9b5e",
+    "statement": "Uma paciente de 28 anos apresenta queixa de corrimento vaginal branco-acinzentado, com odor fétido semelhante a peixe, especialmente após as relações sexuais. Ao exame microscópico, nota-se a presença de células clue (células epiteliais cobertas por bactérias). Qual é o diagnóstico mais provável e o tratamento de escolha para essa condição?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vaginose bacteriana – metronidazol 500 mg, duas vezes ao dia por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Vaginose bacteriana – Azitromicina 1g dose única por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tricomoníase – Azitromicina 1g, dose única por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tricomoníase – metronidazol 2g, dose única por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso clínico descreve uma paciente com sinais clássicos de Vaginose Bacteriana (VB). A Vaginose Bacteriana não é considerada uma infecção sexualmente transmissível (IST), mas sim uma disbiose da flora vaginal, em que há uma redução dos lactobacilos (que mantêm o pH ácido) e um supercrescimento de bactérias anaeróbias, principalmente a Gardnerella vaginalis.\n\nOs pontos-chave para o diagnóstico clínico e laboratorial presentes na questão são:\n1. Corrimento branco-acinzentado e homogêneo.\n2. Odor fétido (semelhante a peixe), que piora após o coito ou menstruação devido à alcalinização do meio vaginal.\n3. Presença de \"clue cells\" ou células-alvo na microscopia (células epiteliais com bordas mal definidas devido à aderência de inúmeras bactérias).\n\nEsses achados compõem os Critérios de Amsel, utilizados para o diagnóstico de VB.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: CORRETA. O diagnóstico é de Vaginose Bacteriana. O tratamento de escolha, conforme os protocolos do Ministério da Saúde e do CDC, é o Metronidazol 500 mg por via oral, de 12 em 12 horas, durante 7 dias. Outras opções incluiriam o uso de Metronidazol em gel vaginal por 5 dias ou Clindamicina.\n\nAlternativa B: INCORRETA. Embora o diagnóstico esteja correto, a Azitromicina não possui espectro de ação adequado contra os agentes anaeróbios da Vaginose Bacteriana. A Azitromicina 1 g em dose única é o tratamento de escolha para a infecção por Chlamydia trachomatis (Cervicite).\n\nAlternativa C: INCORRETA. O diagnóstico de Tricomoníase é afastado pela descrição das \"clue cells\" (típicas da VB) e do aspecto do corrimento. Na Tricomoníase, o corrimento costuma ser amarelo-esverdeado, bolhoso, acompanhado de irritação vulvar e presença de protozoários móveis na microscopia. Além disso, a Azitromicina não trata a Tricomoníase.\n\nAlternativa D: INCORRETA. A Tricomoníase não é o diagnóstico mais provável para este caso. Vale ressaltar que o Metronidazol 2 g em dose única é, de fato, o tratamento recomendado para a Tricomoníase, porém o quadro clínico de \"clue cells\" e odor de peixe sem sinais inflamatórios exuberantes define a Vaginose Bacteriana. No caso da VB, a dose de 2 g de Metronidazol apresenta taxas de cura inferiores e maiores índices de recorrência quando comparada ao esquema de 7 dias.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:10.493Z"
+  },
+  {
+    "id": "AJUDA_7a1def00-cb76-4197-8457-552fccc1d899",
+    "originalId": "7a1def00-cb76-4197-8457-552fccc1d899",
+    "statement": "Paciente masculino, de 44 anos, submetido a by-pass gástrico há 2 anos, foi internado por dor e distensão abdominal difusa, além de náuseas e vômitos biliosos. Exame físico revelou ruídos hidroaéreos diminuídos e defesa abdominal. Tomografia computadorizada evidenciou alça intestinal dilatada com mesentério torcido. Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obstrução por hérnia incisional",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Invaginação intestinal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hérnia interna",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Volvo gástrico",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito apresenta um paciente com histórico de bypass gástrico (cirurgia bariátrica) que evolui com sinais clássicos de obstrução intestinal (dor, distensão, náuseas e vômitos biliosos). O achado da tomografia computadorizada, evidenciando \"mesentério torcido\" (conhecido como sinal do redemoinho ou \"whirl sign\"), é patognomônico para torção de alças, frequentemente associada a hérnias internas nessa população.\n\nAlternativa (c) - CORRETA: A hérnia interna é uma das complicações tardias mais importantes e potencialmente graves do bypass gástrico em Y de Roux. Ela ocorre devido à criação de espaços ou defeitos mesentéricos durante a reconstrução do trânsito intestinal (como o espaço de Petersen, o defeito na enteroanastomose ou o defeito no mesocólon transverso). Com a perda ponderal acentuada, a gordura mesentérica diminui, facilitando a herniação das alças por esses espaços. O achado tomográfico de mesentério torcido confirma a torção do eixo vascular/mesentérico decorrente da herniação, exigindo intervenção cirúrgica imediata pelo risco de necrose intestinal.\n\nAlternativa (a) - INCORRETA: A hérnia incisional ocorre por um defeito na parede abdominal, geralmente na cicatriz cirúrgica prévia. Embora possa causar obstrução intestinal, a tomografia mostraria a alça saindo da cavidade abdominal através da musculatura, e não uma torção mesentérica interna. Além disso, o quadro de mesentério torcido é muito mais sugestivo de uma patologia intra-abdominal relacionada aos espaços criados na bariátrica.\n\nAlternativa (b) - INCORRETA: A invaginação ou intussuscepção intestinal (telescopagem de uma alça dentro da outra) pode ocorrer no pós-operatório de bypass gástrico, sendo geralmente retrógrada e ocorrendo na região da anastomose jejuno-jejunal. Contudo, a imagem tomográfica clássica da intussuscepção é o \"sinal do alvo\" ou \"imagem em casca de cebola\", e não a torção do mesentério descrita no enunciado.\n\nAlternativa (d) - INCORRETA: O volvo gástrico consiste na rotação do estômago sobre si mesmo. No paciente com bypass gástrico, a anatomia do estômago está significativamente alterada (dividida em um pequeno reservatório gástrico e o estômago excluso), o que torna o volvo gástrico convencional improvável. Além disso, o enunciado especifica a dilatação de alça intestinal e torção de mesentério, apontando para o intestino delgado e não para o estômago.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Cirurgia Bariátrica e Metabólica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:04:10.493Z"
+  }
+]

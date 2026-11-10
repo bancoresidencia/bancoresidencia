@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_f4fddb72-84ca-4b0a-82b9-574023da3a3b",
+    "originalId": "f4fddb72-84ca-4b0a-82b9-574023da3a3b",
+    "statement": "Um paciente de 65 anos, com histórico de diabetes e hipertensão, foi admitido na unidade de terapia intensiva (UTI) com diagnóstico de sepse de origem abdominal, proveniente de uma perfuração intestinal. Nos exames laboratoriais, observou-se um nível elevado de procalcitonin (PCT) e a presença de culturas positivas para Escherichia coli resistente a múltiplos fármacos. Durante a internação, o paciente apresentou piora clínica, sendo necessário ajustar a antibioticoterapia. A equipe decidiu utilizar PCT como guia para a duração da terapia antimicrobiana. Considerando a fisiopatologia da sepse e o papel da procalcitonina na orientação do tratamento, qual das alternativas a seguir representa a abordagem mais adequada na mudança da antibioticoterapia deste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prolongar o tratamento com antibióticos até que os níveis de procalcitonina voltem ao normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter a antibioticoterapia atual por um intervalo padrão de 14 dias, independentemente das mudanças clínicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Descontinuar o uso de antibióticos imediatamente após a normalização dos níveis de procalcitonina, sem considerar o estado clínico do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reduzir a duração da terapia antimicrobiana se os níveis de procalcitonina diminuírem, em conjunto com a melhora clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Iniciar um esquema de antibióticos mais agressivo independentemente do progresso clínico, devido à resistência observada nas culturas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA procalcitonina (PCT) é um biomarcador de fase aguda cuja produção é estimulada por toxinas bacterianas e citocinas inflamatórias (como IL-1 beta e TNF-alfa), sendo inibida pelo interferon-gama, típico de infecções virais. Na prática clínica da terapia intensiva, a PCT é utilizada principalmente como uma ferramenta para guiar a interrupção (e não necessariamente o início) da antibioticoterapia. O objetivo principal do uso da PCT é reduzir o tempo total de exposição aos antimicrobianos, o que diminui a toxicidade para o paciente, os custos hospitalares e a pressão seletiva para o surgimento de bactérias multirresistentes.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Esperar a normalização absoluta da procalcitonina para encerrar o tratamento pode levar ao uso desnecessário e prolongado de antibióticos. A maioria dos protocolos de \"stewardship\" recomenda a interrupção quando ocorre uma queda relativa significativa (geralmente acima de 80% a 90% em relação ao valor de pico) ou quando o valor atinge um limiar absoluto seguro (como abaixo de 0,5 ng/mL), sempre em conjunto com a melhora clínica.\n\nAlternativa b) Incorreta. A medicina moderna busca fugir de tempos de tratamento fixos e arbitrários, como os tradicionais 14 dias. Em casos de sepse abdominal onde houve controle adequado do foco (cirurgia para a perfuração), cursos curtos de antibióticos costumam ser tão eficazes quanto cursos longos, com a vantagem de causar menos efeitos adversos.\n\nAlternativa c) Incorreta. Esta alternativa falha ao sugerir a exclusão do estado clínico do paciente. Decisões terapêuticas não devem ser baseadas apenas em exames laboratoriais. Se a PCT baixar, mas o paciente ainda apresentar febre, instabilidade hemodinâmica ou novos sinais de infecção, a antibioticoterapia não deve ser descontinuada.\n\nAlternativa d) Correta. Esta alternativa descreve perfeitamente o papel da procalcitonina no manejo da sepse. A redução progressiva dos níveis de PCT indica que a carga bacteriana está sendo controlada e que a resposta inflamatória sistêmica está cedendo. Se essa tendência laboratorial for acompanhada de melhora nos sinais vitais e parâmetros clínicos, o médico pode reduzir com segurança a duração total da terapia, interrompendo o antibiótico mais cedo do que faria sem o auxílio do biomarcador.\n\nAlternativa e) Incorreta. O isolamento de uma bactéria resistente a múltiplos fármacos exige que o esquema seja adequado ao perfil de sensibilidade (antibiograma), mas não necessariamente \"mais agressivo\" se o esquema já instituído for eficaz. Além disso, a decisão de alterar o esquema deve sempre considerar o progresso clínico: se o paciente está melhorando, o esquema atual está funcionando, independentemente da resistência observada in vitro ou dos níveis isolados de procalcitonina.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Sepse",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:01.374Z"
+  },
+  {
+    "id": "AJUDA_f502e824-c036-4232-a5ef-b7a6ee958860",
+    "originalId": "f502e824-c036-4232-a5ef-b7a6ee958860",
+    "statement": "Quanto à profundidade das queimaduras, marque a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na queimadura de primeiro grau, ocorre lesão da epiderme formando bolhas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A queimadura de segundo grau danifica todas as camadas da pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Na queimadura de terceiro grau, o dano atinge órgãos abaixo da pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A queimadura de terceiro grau atravessa toda a pele.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Na queimadura de quarto grau, ocorre lesão de todas as camadas da pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa A: Incorreta. A queimadura de primeiro grau atinge apenas a camada mais superficial da pele, a epiderme. Clinicamente, ela se manifesta com eritema (vermelhidão) e dor, mas não apresenta bolhas. As bolhas, ou flictenas, são características das queimaduras de segundo grau.\n\nAlternativa B: Incorreta. A queimadura de segundo grau é classificada como de espessura parcial. Ela envolve a epiderme e uma porção variável da derme (podendo ser superficial ou profunda), mas não danifica todas as camadas da pele.\n\nAlternativa C: Incorreta. A queimadura que atinge tecidos e órgãos abaixo da pele, como fáscia muscular, músculos, tendões e ossos, é tecnicamente classificada como queimadura de quarto grau. A de terceiro grau limita-se ao comprometimento total da pele.\n\nAlternativa D: Correta. A queimadura de terceiro grau é denominada de espessura total. Isso significa que a lesão atravessa toda a epiderme e toda a derme, chegando até o tecido adiposo subcutâneo. Por destruir os receptores sensoriais e as terminações nervosas da derme, as áreas de terceiro grau são classicamente indolores.\n\nAlternativa E: Incorreta. Embora a queimadura de quarto grau envolva a pele, sua definição clínica e cirúrgica fundamental é a extensão da lesão para estruturas profundas além do tegumento (pele e subcutâneo). O conceito de lesão de todas as camadas da pele é a definição clássica da queimadura de terceiro grau.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:01.374Z"
+  },
+  {
+    "id": "AJUDA_f50422fa-33c0-40e1-bd24-a2f64ef122dd",
+    "originalId": "f50422fa-33c0-40e1-bd24-a2f64ef122dd",
+    "statement": "Paciente de 30 anos, compareceu para consulta ginecológica referindo “corrimento vaginal” com prurido, sem odor, principalmente no período pré menstrual desde a adolescência. A microscopia está representada na figura.\n\nQual o diagnóstico e a conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vaginite por cândida - nistatina creme vaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Vaginose bacteriana - metronidazol gel vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vaginite descamativa - clindamicina 2% creme vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vaginose citolítica - ducha vaginal com bicarbonato de sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta uma paciente com sintomas clássicos de vulvovaginite: prurido intenso e corrimento sem odor. O fato de os sintomas ocorrerem predominantemente no período pré-menstrual corrobora o diagnóstico, pois nessa fase há maior deposição de glicogênio na mucosa vaginal e queda do pH, fatores que favorecem o crescimento fúngico.\n\nA análise da imagem de microscopia é definitiva. Observam-se nitidamente estruturas filamentosas alongadas, conhecidas como hifas ou pseudo-hifas, além de estruturas arredondadas que representam os esporos (blastoconídios). Este achado é patognomônico da infecção por fungos do gênero *Candida*.\n\nAnálise das alternativas:\n\na) Correta. O quadro clínico de prurido e corrimento inodoro associado à presença de hifas e esporos na microscopia confirma a candidíase vulvovaginal. O tratamento pode ser feito com antifúngicos tópicos (como a nistatina ou derivados imidazólicos) ou sistêmicos (como o fluconazol).\n\nb) Incorreta. A vaginose bacteriana manifesta-se tipicamente com corrimento acinzentado e odor fétido (semelhante a peixe podre), que piora após o coito ou menstruação. Na microscopia, seriam observadas as *clue cells* (células-alvo ou células-guia) e ausência de hifas. O tratamento de escolha é o metronidazol.\n\nc) Incorreta. A vaginite descamativa é um quadro inflamatório crônico raro, caracterizado por corrimento purulento e dor na relação sexual. Na microscopia, observaríamos um grande aumento de células inflamatórias (leucócitos) e de células parabasais, mas não hifas fúngicas.\n\nd) Incorreta. A vaginose citolítica é o principal diagnóstico diferencial clínico da candidíase, pois também causa prurido e piora no período pré-menstrual. No entanto, a microscopia da vaginose citolítica revela citólise (células epiteliais rompidas com núcleos nus) e uma quantidade aumentada de lactobacilos, sem a presença de fungos. Embora o tratamento com bicarbonato de sódio esteja correto para a vaginose citolítica, a imagem confirma a presença de *Candida*, invalidando esta opção.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/8e89aac0d12d62cfbc1971cf2bad83dd83506b60b5ab83bdba460daef7aae499.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_f50422fa-33c0-40e1-bd24-a2f64ef122dd_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:01.890Z"
+  },
+  {
+    "id": "AJUDA_f5123b3f-82d5-4602-a4c8-665c0fae7e3e",
+    "originalId": "f5123b3f-82d5-4602-a4c8-665c0fae7e3e",
+    "statement": "O Método Clínico Centrado na Pessoa (MCCP) é uma abordagem que valoriza o entendimento integral do paciente e a construção conjunta de planos de cuidado, levando em consideração não apenas a doença, mas também as experiências pessoais e sociais associadas ao paciente, em suas diferentes fases de vida. Um dos princípios do MCCP é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "promover o cuidado aliado aos objetivos de saúde pública, como a redução da mortalidade infantil e a melhoria da saúde materna, a fim de melhorar a qualidade de vida",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "considerar uma abordagem ampla durante a consulta, abordando os sentimentos, as ideações e as expectativas do paciente, explorando a doença, a saúde e a experiência da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "incorporar uma visão integral do paciente que considere o bem-estar e a sustentabilidade, alinhando o cuidado ao desenvolvimento social e ambiental para promover uma vida saudável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "incentivar o paciente a seguir um acompanhamento multiprofissional semestral, assegurando a prevenção, a vacinação e o rastreamento de doenças de forma integrada ao seu cuidado pessoal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Método Clínico Centrado na Pessoa (MCCP) é uma ferramenta fundamental na Atenção Primária à Saúde, proposta principalmente por Stewart e colaboradores. Ele desloca o foco do médico e da doença (modelo biomédico) para o paciente e sua experiência de vida (modelo biopsicossocial). O método é estruturado em quatro componentes principais: 1. Explorar a saúde, a doença e a experiência da doença; 2. Entender a pessoa como um todo; 3. Elaborar um plano conjunto de manejo; e 4. Intensificar a relação entre a pessoa e o médico.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Embora a redução da mortalidade infantil e a melhoria da saúde materna sejam objetivos fundamentais da saúde pública e de políticas governamentais, eles não definem o Método Clínico Centrado na Pessoa. O MCCP é uma técnica de abordagem clínica individual, e não um conjunto de metas epidemiológicas macroestruturais.\n\nAlternativa (b) Correta. Esta alternativa descreve perfeitamente o primeiro componente do MCCP: Explorar a saúde, a doença e a experiência da doença. O método propõe que o médico avalie tanto a \"disease\" (o processo patológico biológico) quanto a \"illness\" (a experiência subjetiva do paciente). Para isso, utiliza-se a mnemônica SIFE: Sentimentos (o que o paciente sente em relação ao problema), Ideias (o que ele acha que tem), Função (como o problema afeta sua vida) e Expectativas (o que ele espera da consulta/médico).\n\nAlternativa (c) Incorreta. A visão de sustentabilidade, desenvolvimento social e ambiental está mais alinhada aos conceitos de Saúde Única (One Health) ou Determinantes Sociais de Saúde em uma perspectiva macro. O MCCP foca na subjetividade do indivíduo e no seu contexto pessoal e familiar imediato, e não em diretrizes de desenvolvimento ambiental.\n\nAlternativa (d) Incorreta. O MCCP não estabelece uma periodicidade rígida para consultas (como \"semestral\") nem se limita a garantir pacotes de rastreamento e vacinação. O acompanhamento e a frequência são pactuados no terceiro componente do método (Elaborar um plano conjunto), respeitando a autonomia, os desejos e as necessidades específicas de cada paciente, fugindo de protocolos impositivos e padronizados.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:01.890Z"
+  },
+  {
+    "id": "AJUDA_f5161de2-6f25-4c1f-b27b-7e0f7c5dddd0",
+    "originalId": "f5161de2-6f25-4c1f-b27b-7e0f7c5dddd0",
+    "statement": "Paciente, sexo masculino, 55 anos de idade, procura o ambulatório de cirurgia geral com queixa de ferida em perna direita há 4 meses após trauma contuso. O paciente relata que sofreu trauma contuso na região anterior da perna direita, que causou perda de pele. Nega dor ou outros sintomas no momento. Ao exame físico, bom estado geral; afebril; presença de ferida de cerca de 5x5cm na região ântero-lateral da perna direita, com perda da cobertura cutânea sem exposição óssea, sem sinais flogísticos, com leito avermelhado e algumas áreas esbranquiçadas, sem tecido necrótico. Diante desse caso clínico:\n\nDetermine em qual fase da cicatrização esta ferida se encontra neste momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inflamatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Proliferativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Maturação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Maturação tardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A cicatrização de feridas é um processo dinâmico e contínuo, didaticamente dividido em três fases principais: inflamatória, proliferativa e de maturação (ou remodelamento). No caso clínico apresentado, a descrição das características da ferida é fundamental para identificar o estágio atual.\n\nAlternativa a) Incorreta. A fase inflamatória ocorre imediatamente após a lesão e dura, em média, de 3 a 6 dias. É caracterizada por hemostasia e recrutamento de células de defesa (neutrófilos e macrófagos). Clinicamente, observam-se sinais flogísticos (dor, calor, rubor e edema) e, muitas vezes, a presença de exsudato ou tecidos desvitalizados. O paciente em questão não apresenta dor, sinais flogísticos ou necrose, o que indica que esta fase inicial já foi superada.\n\nAlternativa b) Correta. A fase proliferativa (ou de granulação) geralmente ocorre do 4º ao 24º dia, mas em feridas crônicas ou de grandes proporções, pode se estender. Seus pilares são a angiogênese, a fibroplasia e a reepitelização. O leito avermelhado mencionado no enunciado representa o tecido de granulação, rico em novos capilares sanguíneos (angiogênese). Já as áreas esbranquiçadas representam a migração de queratinócitos para a reepitelização da superfície. Portanto, a descrição física da ferida é patognomônica da fase proliferativa.\n\nAlternativa c) Incorreta. A fase de maturação ou remodelamento é a fase final, que começa após o fechamento completo da ferida. Nela, o colágeno tipo III é substituído pelo colágeno tipo I, e as fibras se reorganizam para aumentar a força tênsil da cicatriz. Como o paciente ainda possui uma ferida aberta com perda de cobertura cutânea e presença de tecido de granulação ativo, ele ainda não entrou na fase de maturação.\n\nAlternativa d) Incorreta. A maturação tardia refere-se ao estágio final de estabilização da cicatriz, que pode durar meses ou até anos após a lesão inicial. Nesse estágio, a cicatriz torna-se mais clara, plana e resistente. Não se aplica ao caso, pois o paciente ainda possui uma solução de continuidade na pele (ferida aberta).",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": 94.85550240637237,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:01.890Z"
+  },
+  {
+    "id": "AJUDA_f53af7cc-3e6f-4ce4-9797-f8739f7b9815",
+    "originalId": "f53af7cc-3e6f-4ce4-9797-f8739f7b9815",
+    "statement": "Você estava lendo um estudo sobre uma nova estatina que prometia redução do risco de infarto agudo do miocárdio (IAM). Você identifica no estudo que houve 15 casos de IAM em 1000 pessoas que usaram a estatina, enquanto que no grupo onde a estatina não foi usada a quantidade de IAM foi de 20 em 1000 pessoas. Considerando as informações acima, podemos concluir que o Número Necessário para Tratar (NNT) deste estudo foi de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "5",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "25",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "75",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "200",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, precisamos seguir três passos fundamentais da epidemiologia clínica: calcular a incidência em cada grupo, determinar a Redução do Risco Absoluto (RRA) e, por fim, calcular o Número Necessário para Tratar (NNT).\n\nO NNT representa quantos pacientes precisam receber o tratamento por um determinado período para que um desfecho negativo (neste caso, o infarto) seja evitado.\n\nPasso 1: Calcular a incidência (risco) em cada grupo.\nGrupo controle (sem estatina): 20 casos em 1.000 pessoas = 20/1.000 = 0,02 (ou 2%).\nGrupo experimental (com estatina): 15 casos em 1.000 pessoas = 15/1.000 = 0,015 (ou 1,5%).\n\nPasso 2: Calcular a Redução do Risco Absoluto (RRA).\nA RRA é a diferença aritmética simples entre os riscos dos dois grupos.\nRRA = Risco no controle menos Risco no tratamento\nRRA = 0,02 - 0,015 = 0,005 (ou 0,5%).\n\nPasso 3: Calcular o NNT.\nA fórmula do NNT é o inverso da Redução do Risco Absoluto.\nNNT = 1 / RRA\nNNT = 1 / 0,005 = 200.\n\nAnálise das alternativas:\n\na) Incorreta. O valor 5 é apenas a diferença bruta entre o número de eventos nos dois grupos (20 menos 15), sem considerar o tamanho da amostra ou a aplicação da fórmula do NNT.\n\nb) Incorreta. Este valor não possui correlação matemática com os dados apresentados de incidência ou redução de risco.\n\nc) Incorreta. Este valor não é obtido por meio do cálculo correto da RRA ou da aplicação da fórmula inversa necessária para o NNT.\n\nd) Correta. Como demonstrado no cálculo epidemiológico, dividindo 1 pela Redução do Risco Absoluto (0,005), chegamos ao resultado de 200. Isso significa que é necessário tratar 200 pacientes com essa nova estatina para evitar um infarto agudo do miocárdio.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:01.890Z"
+  },
+  {
+    "id": "AJUDA_f54bdeaf-6fe8-4707-8010-83505d3fdec2",
+    "originalId": "f54bdeaf-6fe8-4707-8010-83505d3fdec2",
+    "statement": "Homem, 55 anos, assintomático e sem antecedentes familiares, procura médico para rastreamento de câncer colorretal. Considerando as principais diretrizes brasileiras e internacionais, qual é a recomendação atual para início do rastreio na população geral?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A colonoscopia está indicada apenas se surgirem sintomas intestinais, não havendo recomendação de rastreamento para indivíduos assintomáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O rastreamento deve ser iniciado apenas aos 60 anos, pois antes dessa idade não há benefício comprovado em pacientes sem fatores de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O teste de sangue oculto nas fezes pode ser utilizado como método de rastreamento e deve ser iniciado aos 50 anos na população geral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A colonoscopia é o único método validado e deve ser realizada a cada 5 anos em todos os indivíduos de risco médio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O rastreamento deve ser iniciado aos 45 anos em indivíduos de risco médio, podendo ser feito com colonoscopia ou testes não invasivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O rastreamento do câncer colorretal (CCR) passou por atualizações importantes nos últimos anos. Tradicionalmente, o início era recomendado aos 50 anos para a população de risco médio (indivíduos assintomáticos e sem histórico familiar). No entanto, devido ao aumento da incidência de CCR em adultos mais jovens, as principais diretrizes internacionais (como a American Cancer Society e a USPSTF) e as diretrizes brasileiras (como as da Sociedade Brasileira de Coloproctologia e da SOBED) reduziram a idade de início para 45 anos.\n\nA seguir, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. O rastreamento, por definição, é realizado em indivíduos assintomáticos com o objetivo de identificar lesões precursoras (pólipos adenomatosos) ou câncer em estágio inicial. Se houver sintomas, o procedimento deixa de ser rastreio e passa a ser investigação diagnóstica.\n\nAlternativa b) Incorreta. Aos 60 anos, o benefício do rastreamento já é amplamente consolidado, mas iniciá-lo apenas nesta idade resultaria na perda de diagnósticos precoces em uma parcela significativa da população. O início deve ocorrer muito antes.\n\nAlternativa c) Incorreta. Embora o teste de sangue oculto nas fezes (preferencialmente o FIT — Teste Imunoquímico Fecal) seja um método válido de rastreamento anual, a idade de 50 anos mencionada nesta alternativa está em processo de substituição pela recomendação de 45 anos nas diretrizes mais atuais, o que torna a alternativa (e) mais precisa conforme as atualizações recentes.\n\nAlternativa d) Incorreta. A colonoscopia não é o único método validado; existem alternativas não invasivas, como a pesquisa de sangue oculto nas fezes (anual), a retossigmoidoscopia e a colonografia por tomografia. Além disso, para indivíduos de risco médio com exame normal, o intervalo recomendado de repetição da colonoscopia é de 10 anos, e não 5 anos.\n\nAlternativa e) Correta. Esta alternativa reflete a recomendação mais atual das sociedades médicas. O início aos 45 anos para a população geral (risco médio) visa reduzir a morbimortalidade pelo câncer colorretal. As diretrizes permitem que o rastreio seja feito tanto por métodos estruturais/visuais (como a colonoscopia) quanto por testes baseados em fezes (não invasivos), respeitando a preferência do paciente e a disponibilidade de recursos.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:01.890Z"
+  },
+  {
+    "id": "AJUDA_f55a1680-a6d2-4a3b-87ec-f604ab146beb",
+    "originalId": "f55a1680-a6d2-4a3b-87ec-f604ab146beb",
+    "statement": "A notificação de incidentes ocorridos na assistência ao paciente (eventos adversos) é uma das maneiras de identificar falhas. A partir da análise das situações notificadas, os serviços de saúde podem planejar sistemas de cuidados mais seguros. Assinale a assertiva correta sobre sistemas de notificação de incidentes.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O objetivo das notificações é identificar os profissionais envolvidos para promover seu treinamento e evitar que se envolvam em novos incidentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os incidentes notificados, por questões de privacidade institucional, não devem ser relatados aos pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mesmo um incidente que não atinge o paciente deve ser notificado (por exemplo: uma troca de medicamento que é percebida antes da administração, e o erro é evitado).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A notificação de incidentes ocorridos em uma instituição de saúde só pode ser feita por profissionais de saúde que ali trabalham.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os fundamentos da Segurança do Paciente e a gestão de riscos em ambientes de saúde, baseando-se nas diretrizes da Organização Mundial da Saúde (OMS) e do Programa Nacional de Segurança do Paciente (PNSP).\n\nAlternativa (a) Incorreta: O objetivo principal dos sistemas de notificação não é identificar ou punir indivíduos para treinamento isolado, mas sim analisar as falhas sistêmicas. A segurança do paciente moderna migrou da abordagem individual (quem errou?) para a abordagem sistêmica (por que o sistema permitiu que o erro ocorresse?). Focar apenas no profissional gera uma cultura punitiva que inibe as notificações.\n\nAlternativa (b) Incorreta: A transparência é um pilar ético fundamental. O conceito de Open Disclosure (revelação aberta) recomenda que os pacientes e seus familiares sejam informados de forma clara e honesta sobre incidentes ocorridos durante a assistência. O sigilo institucional não deve se sobrepor ao direito à informação do paciente.\n\nAlternativa (c) Correta: Na classificação de segurança do paciente, um incidente que tinha potencial para causar dano, mas que foi interceptado antes de atingir o paciente, é chamado de Near Miss (ou Quase Erro). A notificação desses eventos é valiosíssima para a gestão de riscos, pois permite identificar e corrigir falhas no processo antes que um paciente seja efetivamente prejudicado em uma próxima oportunidade.\n\nAlternativa (d) Incorreta: A notificação de incidentes não é uma exclusividade dos profissionais de saúde. Sistemas modernos de segurança incentivam que qualquer colaborador da instituição, bem como pacientes, familiares e acompanhantes, possam relatar falhas ou preocupações com a segurança, ampliando a rede de vigilância.\n\nGabarito: Letra (c).",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:01.890Z"
+  },
+  {
+    "id": "AJUDA_f55e5385-65db-498b-860c-1e24daf51af4",
+    "originalId": "f55e5385-65db-498b-860c-1e24daf51af4",
+    "statement": "Durante o exame físico de um paciente com lesão completa do ligamento cruzado anterior, o diagnóstico é dado pelo teste de",
+    "options": [
+      {
+        "id": "A",
+        "text": "Godfrey.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lachman.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apley.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Steiman.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O teste de Lachman é considerado o exame clínico mais sensível e fidedigno para diagnosticar a ruptura do ligamento cruzado anterior (LCA), sendo superior inclusive ao teste de gaveta anterior, especialmente em lesões agudas em que a defesa muscular pode interferir no exame. Ele é realizado com o paciente em decúbito dorsal e o joelho flexionado entre 20 e 30 graus. O examinador estabiliza o fêmur com uma mão e, com a outra, aplica uma força de translação anterior na tíbia proximal. O teste é positivo quando há um deslocamento anterior aumentado da tíbia em relação ao fêmur e uma sensação de interrupção \"suave\" ou ausente (falta de endpoint firme).\n\nAnálise das alternativas:\n\na) Incorreta. O teste de Godfrey é utilizado para avaliar a integridade do ligamento cruzado posterior (LCP). Com o paciente em decúbito dorsal e os quadris e joelhos flexionados a 90 graus, o examinador observa o perfil lateral do joelho. Se houver lesão do LCP, a gravidade fará com que a tíbia sofra uma queda posterior (posterior sag), alterando o contorno da tuberosidade anterior da tíbia.\n\nb) Correta. O teste de Lachman é o padrão-ouro clínico para a avaliação de lesão completa do ligamento cruzado anterior (LCA).\n\nc) Incorreta. O teste de Apley é indicado para a pesquisa de lesões meniscais. É realizado com o paciente em decúbito ventral e o joelho flexionado a 90 graus. O examinador aplica uma compressão axial sobre o pé enquanto rotaciona a tíbia; a dor nessa manobra sugere lesão meniscal. O teste também envolve uma fase de distração para avaliar componentes ligamentares colaterais.\n\nd) Incorreta. O teste de Steinmann (I e II) também é voltado para o diagnóstico de lesões nos meniscos. O teste de Steinmann I utiliza a rotação súbita da tíbia com o joelho em diferentes graus de flexão para provocar dor na interlinha articular. O Steinmann II observa o deslocamento da dor na interlinha conforme o joelho é flexionado e estendido (a dor meniscal tende a se deslocar para trás na flexão e para frente na extensão).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Doenças de Partes Moles"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:01.890Z"
+  },
+  {
+    "id": "AJUDA_f55fd3d7-567a-457b-8cc2-0d326e73fd07",
+    "originalId": "f55fd3d7-567a-457b-8cc2-0d326e73fd07",
+    "statement": "Sobre a dor, nos quadros de abdome agudo, assinale a opção incorreta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A dor peri-umbilical pode estar associada a quadro de apendicite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A dor na fossa ilíaca esquerda pode estar associada a quadro de torção de ovário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A dor na região posterior da base do hemitórax direito pode estar associada a cólica biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A dor súbita, em epigastro, com irradiação para o dorso pode estar presente nos quadros de apendicite aguda retrocecal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A dor súbita, intensa e difusa, pode estar presente nos quadros de abdome agudo hemorrágico por gravidez tubária rota.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa A: Esta alternativa está correta. A apendicite aguda classicamente inicia-se com uma dor visceral, imprecisa, na região periumbilical ou epigástrica. Isso ocorre devido à distensão do apêndice, cujas fibras nervosas aferentes acompanham os nervos simpáticos até os segmentos medulares T9 e T10. Somente após o envolvimento do peritônio parietal é que a dor migra e se localiza na fossa ilíaca direita.\n\nAlternativa B: Esta alternativa está correta. A torção de ovário é uma emergência ginecológica que causa dor aguda e localizada na fossa ilíaca correspondente ao anexo afetado (neste caso, à esquerda). A dor é decorrente da isquemia súbita do órgão após a torção de seu pedículo vascular.\n\nAlternativa C: Esta alternativa está correta. A cólica biliar e a colecistite aguda costumam apresentar dor no hipocôndrio direito que pode irradiar para a região escapular direita ou para a base do hemitórax direito (conhecido como sinal de Boas). Isso se deve à estimulação de ramos do nervo frênico ou nervos intercostais.\n\nAlternativa D: Esta alternativa está incorreta e é o gabarito da questão. A dor súbita em epigástrio com irradiação para o dorso (em faixa) é a descrição clássica da pancreatite aguda ou, em casos vasculares, da dissecção da aorta. A apendicite retrocecal costuma apresentar uma dor mais insidiosa que, pela posição anatômica do apêndice atrás do ceco, pode se manifestar no flanco direito ou na região lombar direita, muitas vezes com um sinal do psoas positivo e menos sinais de irritação peritoneal anterior.\n\nAlternativa E: Esta alternativa está correta. No abdome agudo hemorrágico por gravidez tubária rota, a ruptura da tuba uterina causa hemoperitônio súbito. O sangue livre na cavidade peritoneal é extremamente irritante ao peritônio, gerando dor súbita, intensa e que rapidamente se torna difusa por todo o abdome, podendo haver também dor referida no ombro (sinal de Kehr) devido à irritação do diafragma.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Abdome Agudo Hemorrágico",
+      "Apendicite Aguda"
+    ],
+    "difficulty": 30.403439903417993,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:01.890Z"
+  }
+]

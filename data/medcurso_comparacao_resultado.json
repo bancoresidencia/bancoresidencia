@@ -1,0 +1,98 @@
+{
+  "totalQuestoes": 1967,
+  "jaNaExtracao1": 3,
+  "jaNaExtracao2": 24,
+  "jaNaPlataforma": 112,
+  "novasParaPlataforma": 1855,
+  "porEspecialidade": {
+    "01 - Clínica Médica": {
+      "total": 970,
+      "naExtracao1": 2,
+      "naExtracao2": 9,
+      "naPlataforma": 56,
+      "novas": 914
+    },
+    "02 - Cirurgia": {
+      "total": 136,
+      "naExtracao1": 0,
+      "naExtracao2": 0,
+      "naPlataforma": 10,
+      "novas": 126
+    },
+    "03 - Ginecologia e Obstetrícia": {
+      "total": 669,
+      "naExtracao1": 1,
+      "naExtracao2": 15,
+      "naPlataforma": 31,
+      "novas": 638
+    },
+    "04 - Pediatria": {
+      "total": 73,
+      "naExtracao1": 0,
+      "naExtracao2": 0,
+      "naPlataforma": 4,
+      "novas": 69
+    },
+    "05 - Medicina Preventiva": {
+      "total": 119,
+      "naExtracao1": 0,
+      "naExtracao2": 0,
+      "naPlataforma": 11,
+      "novas": 108
+    }
+  },
+  "amostraNovas": [
+    {
+      "especialidade": "01 - Clínica Médica",
+      "banca": "HIAE",
+      "trecho": "Paciente masculino, 23 anos, assintomático, realiza testagem para HIV, sendo teste rápido positivo. Entre as opções a seguir, a melhor conduta para es"
+    },
+    {
+      "especialidade": "01 - Clínica Médica",
+      "banca": "UNICAMP",
+      "trecho": "id=\"q-382531\" data-search=\"{&quot;id&quot;: 382531, &quot;enunciado&quot;: {&quot;texto&quot;: &quot;Homem, 53a, comparece à unidade de emergência por"
+    },
+    {
+      "especialidade": "01 - Clínica Médica",
+      "banca": "HCPA",
+      "trecho": "id=\"q-352966\" data-search=\"{&quot;id&quot;: 352966, &quot;enunciado&quot;: {&quot;texto&quot;: &quot;Paciente masculino, de 42 anos, com diagnóstico r"
+    },
+    {
+      "especialidade": "01 - Clínica Médica",
+      "banca": "UFSC",
+      "trecho": "Assinale a alternativa CORRETA em relação à toxoplasmose cerebral em Pessoa Vivendo com HIV (PVHIV):"
+    },
+    {
+      "especialidade": "01 - Clínica Médica",
+      "banca": "UFF",
+      "trecho": "id=\"q-177404\" data-search=\"{&quot;id&quot;: 177404, &quot;enunciado&quot;: {&quot;texto&quot;: &quot;Paciente jovem, usuário de drogas endovenosas, é "
+    }
+  ],
+  "amostraCoincidentes": [
+    {
+      "especialidade": "01 - Clínica Médica",
+      "banca": "ENARE",
+      "trecho": "Questão 30 — 410782 ENARE 2026, Selecionada Mulher travesti de 28 anos, profissional do sexo, comparece à Unidade Básica de Saúde (UBS) em demanda esp"
+    },
+    {
+      "especialidade": "01 - Clínica Médica",
+      "banca": "ENARE",
+      "trecho": "Questão 49 — 410890 ENARE 2026, Selecionada Paciente feminina, 38 anos, procura atendimento em Unidade de Saúde queixando-se de tosse produtiva há mai"
+    },
+    {
+      "especialidade": "01 - Clínica Médica",
+      "banca": "ENARE",
+      "trecho": "Questão 2 — 377284 ENARE 2025, Selecionada Uma mulher de 42 anos, com história de \"reumatismo\" na infância, procura ambulatório com um quadro de cansa"
+    },
+    {
+      "especialidade": "01 - Clínica Médica",
+      "banca": "ENARE",
+      "trecho": "Questão 4 — 379039 ENARE 2025, Selecionada Um homem de 42 anos, portador do HIV diagnosticado há 3 anos, em uso de dolutegravir + lamivudina, em bom e"
+    },
+    {
+      "especialidade": "01 - Clínica Médica",
+      "banca": "ENARE",
+      "trecho": "Questão 22 — 305287 ENARE 2022, Selecionada Qual das seguintes taquiarritmias apresenta complexo QRS estreito e regular?"
+    }
+  ]
+}

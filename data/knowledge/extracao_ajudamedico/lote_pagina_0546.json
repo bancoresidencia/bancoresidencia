@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_99068107-91f4-4c9a-b71f-1fc3bc5adca4",
+    "originalId": "99068107-91f4-4c9a-b71f-1fc3bc5adca4",
+    "statement": "Em um estudo prospectivo avaliando eventos adversos de um novo medicamento, 15 dos participantes da pesquisa que receberam o medicamento apresentaram epigastralgia e 45 dos que receberam o medicamento não apresentaram tal sintoma. Dos 80 participantes que não tomaram o novo medicamento, apenas 2 apresentaram epigastralgia. Assinale a assertiva correta sobre o efeito adverso “epigastralgia” nesse estudo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Razão de Chances (odds ratio) do estudo é 25.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O Risco Relativo para apresentar eventos adversos com o novo medicamento é 10.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O Risco Absoluto de eventos adversos no grupo controle é 25%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O Risco Relativo de eventos adversos com o novo medicamento é 15/60.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para analisar os dados epidemiológicos do estudo prospectivo, primeiro organizamos as informações dos grupos em uma tabela:\n\nGrupo Medicamento (Expostos):\nCom epigastralgia: 15\nSem epigastralgia: 45\nTotal do grupo: 60\n\nGrupo Controle (Não expostos):\nCom epigastralgia: 2\nSem epigastralgia: 78 (80 participantes totais menos 2 que tiveram o sintoma)\nTotal do grupo: 80\n\nCálculos fundamentais:\nIncidência no grupo exposto (Ie) = 15 / 60 = 0,25 (ou 25%)\nIncidência no grupo controle (Ic) = 2 / 80 = 0,025 (ou 2,5%)\n\nAnálise das alternativas:\n\na) Incorreta. A Razão de Chances (Odds Ratio) é calculada pela razão entre as chances do evento nos dois grupos (a/b dividido por c/d). No cálculo: (15/45) / (2/78) = 0,333 / 0,0256 = 13. Outra forma de calcular é o produto cruzado: (15 x 78) / (45 x 2) = 1170 / 90 = 13. O valor correto é 13, não 25.\n\nb) Correta. O Risco Relativo (RR) é a razão entre a incidência dos expostos e a incidência dos não expostos. Utilizando os valores calculados acima: RR = Ie / Ic = 0,25 / 0,025 = 10. Isso indica que o grupo que recebeu o medicamento tem 10 vezes mais risco de apresentar epigastralgia.\n\nc) Incorreta. O Risco Absoluto de eventos adversos no grupo controle é a própria incidência desse grupo. Como demonstrado, 2 em cada 80 participantes tiveram o sintoma, o que resulta em 2,5% (0,025), e não 25%.\n\nd) Incorreta. O valor 15/60 corresponde ao Risco Absoluto (incidência) do grupo que recebeu o medicamento. O Risco Relativo não é uma fração isolada de um grupo, mas sim a comparação (divisão) entre os riscos dos dois grupos estudados.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:22.680Z"
+  },
+  {
+    "id": "AJUDA_99202b2d-7997-48b6-bb29-296c576a2195",
+    "originalId": "99202b2d-7997-48b6-bb29-296c576a2195",
+    "statement": "Na hemorragia pós-parto (HPP), quais são as quatro principais causas, conhecidas como os “4 Ts”, e como cada uma contribui para a condição?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tecido, Tônus, Trombina e Trauma; cada uma representa um fator que pode contribuir para a perda excessiva de sangue.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tônus, Trombina, Trauma e Transfusão; todos os fatores estão relacionados à coagulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trauma, Trombina, Tecido e Transfusão; indicam a necessidade de intervenção cirúrgica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tônus, Tecido, Trombo e Tireóide; cada fator está relacionado a complicações hormonais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A hemorragia pós-parto (HPP) é uma emergência obstétrica e sua abordagem é baseada na identificação rápida da causa por meio do mnemônico dos 4 Ts.\n\nAlternativa (a): Correta.\nEsta alternativa descreve exatamente os quatro pilares causais da hemorragia pós-parto:\n1. Tônus (Atonia Uterina): É a causa mais comum, responsável por cerca de 70% a 80% dos casos. Ocorre quando a musculatura uterina não se contrai adequadamente após o parto, falhando em comprimir os vasos sanguíneos no local onde a placenta estava inserida.\n2. Trauma: Envolve lesões no canal de parto, como lacerações de períneo, vagina e colo uterino, além de situações mais graves como ruptura uterina ou inversão uterina. Corresponde a aproximadamente 20% dos casos.\n3. Tecido: Refere-se à retenção de restos placentários, membranas ou coágulos que impedem a contração uterina eficaz. Representa cerca de 10% dos casos.\n4. Trombina: Refere-se a distúrbios de coagulação (coagulopatias), sejam eles hereditários ou adquiridos (como na pré-eclâmpsia grave ou descolamento prematuro de placenta). É a causa mais rara, ocorrendo em 1% ou menos das vezes.\n\nAlternativa (b): Incorreta.\nO termo Transfusão não é uma causa de hemorragia, mas sim uma medida de tratamento utilizada para repor o volume sanguíneo perdido e estabilizar a paciente.\n\nAlternativa (c): Incorreta.\nNovamente, Transfusão é uma intervenção terapêutica e não uma etiologia. Além disso, a alternativa afirma erroneamente que todos os fatores indicam cirurgia imediata. O tratamento inicial da atonia uterina (Tônus), por exemplo, é realizado com massagem uterina e medicamentos uterotônicos (como ocitocina).\n\nAlternativa (d): Incorreta.\nOs termos Trombo e Tireoide não fazem parte do mnemônico clássico. Embora disfunções tireoidianas possam afetar a saúde materna, elas não são listadas como causas diretas e imediatas de hemorragia pós-parto no protocolo de emergência.\n\nResumo do mnemônico para prática clínica:\nTônus = Atonia (Útero flácido).\nTecido = Restos (Placenta incompleta).\nTrauma = Lacerações (Canal de parto).\nTrombina = Coagulopatia (Sangue que não coagula).",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:22.680Z"
+  },
+  {
+    "id": "AJUDA_9928e721-4d2c-474b-9512-7eaa296ff3eb",
+    "originalId": "9928e721-4d2c-474b-9512-7eaa296ff3eb",
+    "statement": "Menina de 4 anos de idade, previamente hígida, vai ao pronto atendimento com história de febre de 38,7 ºC há 3 dias, com tosse produtiva. Fez uso de dipirona para febre e inalação com soro fisiológico em casa. Apresenta vacinação atualizada para a idade. Ao exame físico, está em regular estado geral, corada, hidratada, anictérica, acianótica, febril com T: 37,8 ºC. Respiração sem uso de musculatura acessória com FR: 42 ipm. Murmúrio vesicular presente com estertores finos em base direita. Abdome flácido, indolor e sem visceromegalias. Tempo de enchimento capilar de 2 segundos. PA: 80 x 45 mmHg. Sinais meníngeos ausentes. Demais dados do exame físico estão normais.\n\nQual conduta é a mais adequada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lavagem nasal e inalação com soro fisiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Amoxicicilina oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Claritromicina oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ceftriaxone IM.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Vancomicina endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve uma criança de 4 anos com tosse produtiva, febre, taquipneia (frequência respiratória de 42 ipm, sendo o limite superior de 40 ipm para a faixa de 1 a 5 anos de idade) e estertores finos focais na base direita, configurando o diagnóstico de Pneumonia Adquirida na Comunidade (PAC). Como a paciente não apresenta sinais de gravidade (sem tiragem, sem uso de musculatura acessória, hidratada e hemodinamicamente estável), o tratamento deve ser ambulatorial.\n\nAlternativa A - Incorreta. Medidas sintomáticas e de suporte isoladas são insuficientes para o tratamento da pneumonia bacteriana, que requer antibioticoterapia direcionada.\n\nAlternativa B - Correta. A amoxicilina por via oral é a terapia de primeira escolha para crianças com PAC não grave tratadas em regime ambulatorial, garantindo excelente cobertura contra o principal agente bacteriano nessa faixa etária, o Streptococcus pneumoniae (pneumococo).\n\nAlternativa C - Incorreta. A claritromicina é um macrolídeo indicado prioritariamente para pneumonias atípicas (como por Mycoplasma pneumoniae ou Chlamydia pneumoniae), mais comuns em escolares maiores e adolescentes, ou para pacientes com alergia comprovada a betalactâmicos.\n\nAlternativa D - Incorreta. O uso de ceftriaxone por via parenteral é reservado para pacientes com critérios de internação hospitalar, pneumonia grave, suspeita de complicações (como derrame pleural) ou intolerância à via oral.\n\nAlternativa E - Incorreta. A vancomicina é uma droga de uso hospitalar restrito para infecções graves, reservada para suspeita de Staphylococcus aureus resistente à meticilina (MRSA) ou quadros de sepse grave, não havendo indicação para o quadro não grave apresentado.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:22.680Z"
+  },
+  {
+    "id": "AJUDA_992b9ded-423d-430c-94fd-4905b82f557a",
+    "originalId": "992b9ded-423d-430c-94fd-4905b82f557a",
+    "statement": "Paciente vítima de explosão chega ao pronto atendimento com queimaduras de segundo grau nas porções anterior e posterior do tronco e porção anterior dos membros inferiores bilateralmente. Assinale a alternativa que contém a correta porcentagem de superfície corporal queimada segundo a regra contida no ATLS.",
+    "options": [
+      {
+        "id": "A",
+        "text": "18%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "27%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "36%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "45%",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "54%",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver essa questão, é necessário aplicar a Regra dos Nove (Regra de Wallace), que é o método padronizado pelo ATLS (Advanced Trauma Life Support) para a estimativa rápida da Superfície Corporal Queimada (SCQ) em pacientes adultos.\n\nA Regra dos Nove distribui os percentuais da seguinte forma:\n- Cabeça e pescoço: 9%\n- Membro superior direito: 9%\n- Membro superior esquerdo: 9%\n- Tronco anterior: 18%\n- Tronco posterior: 18%\n- Membro inferior direito: 18% (sendo 9% a face anterior e 9% a face posterior)\n- Membro inferior esquerdo: 18% (sendo 9% a face anterior e 9% a face posterior)\n- Períneo/Genitália: 1%\n\nCálculo baseado no enunciado:\n1. Tronco anterior: 18%\n2. Tronco posterior: 18%\n3. Porção anterior dos membros inferiores bilateralmente: 9% (membro inferior direito anterior) + 9% (membro inferior esquerdo anterior) = 18%\n\nSomando os valores: 18% + 18% + 18% = 54%.\n\nAnálise das alternativas:\n\nAlternativa a) 18%: Incorreta. Este valor corresponde a apenas uma das grandes áreas mencionadas (apenas o tronco anterior, por exemplo).\n\nAlternativa b) 27%: Incorreta. Este valor não contempla a soma correta das três porções de 18% identificadas no caso clínico.\n\nAlternativa c) 36%: Incorreta. Este valor corresponderia apenas à soma do tronco anterior e posterior, ignorando a queimadura nos membros inferiores.\n\nAlternativa d) 45%: Incorreta. Valor abaixo do total calculado pela soma das superfícies descritas no trauma.\n\nAlternativa e) 54%: Correta. Representa a soma exata do tronco total (36%) com a face anterior de ambos os membros inferiores (18%), totalizando os 54% de superfície corporal queimada.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:22.680Z"
+  },
+  {
+    "id": "AJUDA_99349af8-042a-4011-8431-0e91da96d9db",
+    "originalId": "99349af8-042a-4011-8431-0e91da96d9db",
+    "statement": "Sobre a intussuscepção intestinal na infância, analise as afirmativas abaixo\nI – A forma mais comum é a íleo-cólica.\nII – O ultrassom é o padrão ouro para diagnóstico.\nIII – O ápice da intussuscepção pode se exteriorizar pelo ânus, em casos negligenciados.\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "As afirmativas I e II estão corretas, a III está incorreta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As afirmativas I e III estão corretas, a II está incorreta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As afirmativas II e III estão corretas, a I está incorreta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As afirmativas I, II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "As afirmativas I, II e III estão incorretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das afirmativas:\n\nAfirmativa I: Correta. A intussuscepção intestinal ocorre quando um segmento proximal do intestino (intussusceptum) se invagina para dentro de um segmento distal (intussuscipiens). Na faixa etária pediátrica, a grande maioria dos casos (cerca de 80% a 90%) é do tipo ileocólica, na qual o íleo terminal penetra no cólon através da válvula ileocecal.\n\nAfirmativa II: Correta. A ultrassonografia de abdome é considerada o padrão-ouro para o diagnóstico inicial de intussuscepção na infância. Ela apresenta sensibilidade e especificidade próximas a 100% quando realizada por examinadores experientes. Os achados clássicos incluem o sinal do alvo (em cortes transversais) e o sinal do pseudorrim (em cortes longitudinais). Além de ser altamente acurada, a ultrassonografia tem a vantagem de não utilizar radiação ionizante.\n\nAfirmativa III: Correta. Embora seja uma apresentação rara e associada a casos diagnosticados tardiamente, o ápice do segmento invaginado pode progredir por toda a extensão do intestino grosso até exteriorizar-se pelo ânus. Clinicamente, essa situação pode ser confundida com um prolapso retal, sendo um sinal de negligência ou atraso grave no tratamento.\n\nConclusão das alternativas:\n\nComo as três afirmativas estão corretas, a alternativa (d) é a resposta certa.\n\na) Incorreta. A afirmativa III também está correta.\nb) Incorreta. A afirmativa II também está correta.\nc) Incorreta. A afirmativa I também está correta.\nd) Correta. Todas as afirmativas (I, II e III) são verdadeiras conforme a literatura pediátrica e cirúrgica.\ne) Incorreta. Todas as afirmativas são verdadeiras.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Infantil",
+      "Abdome Agudo Obstrutivo",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:22.680Z"
+  },
+  {
+    "id": "AJUDA_99369db5-604f-4205-8698-3586132d4e32",
+    "originalId": "99369db5-604f-4205-8698-3586132d4e32",
+    "statement": "Gestante de 32 anos de idade, secundigesta e primípara, vem para a primeira consulta de pré-natal com 8 semanas e 2 dias de gestação. Está preocupada, pois tem lúpus eritematoso sistêmico com acometimento cutâneo, articular e hematológico. Refere última crise há 7 meses e está em uso de hidroxicloroquina 400 mg e prednisona 10 mg por dia. Qual é a orientação com relação ao uso de hidroxicloroquina e da prednisona na fase inicial da gestação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve suspender hidroxicloroquina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve manter ambas as medicações.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Deve suspender os dois medicamentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve suspender a prednisona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO Lúpus Eritematoso Sistêmico (LES) é uma doença autoimune que exige controle rigoroso durante a gestação. A atividade da doença no momento da concepção e durante a gravidez é o principal determinante do desfecho gestacional. Pacientes com lúpus ativo ou que suspendem medicações necessárias têm maior risco de abortamento, pré-eclâmpsia, restrição de crescimento fetal e parto prematuro. Portanto, o princípio fundamental é manter a doença em remissão ou com a menor atividade possível.\n\nExplicação das alternativas:\n\na) Incorreta. A hidroxicloroquina é considerada o padrão-ouro no tratamento do lúpus durante a gravidez. Ela deve ser mantida em todas as pacientes gestantes, pois reduz a incidência de crises lúpicas (flares), ajuda no controle da atividade da doença e diminui o risco de complicações neonatais, como o bloqueio cardíaco congênito (especialmente em pacientes com anticorpos anti-Ro/SSA). Sua suspensão aumenta o risco de reativação da doença.\n\nb) Correta. Ambas as medicações são seguras e indicadas neste cenário. A hidroxicloroquina é segura para o feto (categoria B) e essencial para a mãe. A prednisona, em doses baixas ou moderadas (como os 10 mg utilizados pela paciente), também é segura. A maior parte da prednisona é inativada pela enzima placentária 11-beta-hidroxiesteroide desidrogenase tipo 2, o que resulta em uma exposição fetal mínima (menos de 10% da dose materna). Manter o esquema que está garantindo a estabilidade clínica da paciente há 7 meses é a conduta mais adequada.\n\nc) Incorreta. A suspensão de ambos os medicamentos é a conduta mais perigosa para a gestante e para o feto. Sem o controle farmacológico, a probabilidade de uma crise lúpica multissistêmica (cutânea, articular e hematológica, conforme o histórico da paciente) é altíssima, o que compromete gravemente a viabilidade da gestação e a saúde materna.\n\nd) Incorreta. Embora os médicos busquem sempre a menor dose eficaz de corticoides para minimizar efeitos colaterais (como diabetes gestacional e hipertensão), a suspensão abrupta ou inadequada da prednisona em uma paciente que apresenta estabilidade com 10 mg/dia pode precipitar uma recidiva da doença. A prioridade na fase inicial da gestação é garantir que a doença não se torne ativa. Se houver intenção de reduzir o corticoide, isso deve ser feito de forma muito lenta e criteriosa, mas nunca simplesmente suspendê-lo no início do pré-natal sob o risco de descompensação.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Doenças Autoimunes do Tecido Conjuntivo",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:22.680Z"
+  },
+  {
+    "id": "AJUDA_993bb9f3-95ad-47b8-927b-e78458867465",
+    "originalId": "993bb9f3-95ad-47b8-927b-e78458867465",
+    "statement": "Escolar, com 5 anos de idade, sexo feminino, é trazida ao Pronto-Socorro com histórico de diarreia sanguinolenta há três dias, que começou após uma viagem recente a uma fazenda. Os pais relatam que a criança está pálida, letárgica e urinando menos que o habitual. Ao exame físico, a criança apresenta-se com palidez, petéquias no tronco e nos membros, e sinais de desidratação leve. Os exames laboratoriais mostram anemia com padrão de hemólise, esquizócitos no sangue periférico, trombocitopenia e elevação dos níveis de creatinina.\nCom base nesse quadro clínico, assinale a alternativa que apresenta o diagnóstico mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Púrpura trombocitopênica idiopática (PTI).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome hemolítico-urêmica (SHU).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Nefrite intersticial aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Glomerulonefrite pós-infecciosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Doença de von Willebrand.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico da Síndrome Hemolítico-Urêmica (SHU), uma das principais causas de insuficiência renal aguda em crianças. O diagnóstico baseia-se na presença de uma tríade característica: anemia hemolítica microangiopática (com presença de esquizócitos), trombocitopenia (redução de plaquetas) e insuficiência renal aguda. O relato de diarreia sanguinolenta após viagem a uma fazenda sugere uma infecção por Escherichia coli produtora de toxina Shiga (STEC), frequentemente associada ao consumo de alimentos ou água contaminados em ambientes rurais.\n\nAnálise das alternativas:\n\na) Púrpura trombocitopênica idiopática (PTI): A PTI manifesta-se tipicamente com trombocitopenia isolada, sem anemia hemolítica ou disfunção renal. Geralmente ocorre após uma infecção viral das vias aéreas superiores e o paciente mantém um bom estado geral, o que diverge da letargia e da palidez intensa apresentadas pela criança.\n\nb) Síndrome hemolítico-urêmica (SHU): Alternativa correta. A tríade de anemia (palidez e esquizócitos), plaquetopenia (petéquias) e lesão renal (oligúria e aumento de creatinina), precedida por um pródromo de diarreia sanguinolenta, é o quadro patognomônico da SHU típica. Os esquizócitos são fragmentos de hemácias resultantes da destruição mecânica dessas células ao passarem por microtrombos nos vasos capilares renais.\n\nc) Nefrite intersticial aguda: É uma causa de insuficiência renal aguda frequentemente associada a reações de hipersensibilidade a medicamentos (como antibióticos e anti-inflamatórios). Pode apresentar febre, exantema e eosinofilia, mas não explica a anemia hemolítica microangiopática com esquizócitos nem a história prévia de diarreia sanguinolenta.\n\nd) Glomerulonefrite pós-infecciosa (GNPE): A GNPE costuma ocorrer após infecções por estreptococo (faringite ou piodermite). O quadro típico envolve hematúria (urina cor de chá ou cola), hipertensão e edema. Embora possa haver elevação de creatinina, ela não cursa com a tríade de hemólise microangiopática e plaquetopenia observada nesta questão.\n\ne) Doença de von Willebrand: É o distúrbio hemorrágico hereditário mais comum, decorrente de uma deficiência qualitativa ou quantitativa do fator de von Willebrand. Manifesta-se com sangramentos de mucosas (epistaxe, gengivorragia) e aumento do tempo de sangramento, mas não causa anemia hemolítica, esquizocitose ou insuficiência renal aguda.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Diarreia",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:22.680Z"
+  },
+  {
+    "id": "AJUDA_9940767a-44ab-4602-91a8-195e0c198d53",
+    "originalId": "9940767a-44ab-4602-91a8-195e0c198d53",
+    "statement": "Mulher de 20 anos procura Unidade de Pronto Atendimento devido a queixa de corrimento vaginal há 7 dias, associado a odor fétido e prurido leve. Refere início recente de dor pélvica hipogástrica, febre não aferida e dispareunia. O exame ginecológico mostra corrimento acinzentado, colo uterino doloroso à mobilização e dor à palpação anexial bilateral.\nQual é o tratamento medicamentoso nesse caso, considerando-se o diagnóstico provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metronidazol, ceftriaxona e doxiciclina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Fluconazol, azitromicina e clidamicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doxiciclina, ceftriaxona e gentamicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Miconazol, metronidazol e azitromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico provável: doença inflamatória pélvica (DIP) aguda leve a moderada, de manejo ambulatorial.\n\nA paciente é jovem e sexualmente ativa, com corrimento acinzentado e fétido, sugestivo de vaginose bacteriana associada, e evolui com dor pélvica, febre e dispareunia. O exame mostra os critérios mínimos de DIP: dor à mobilização do colo uterino e dor à palpação anexial. A febre é um critério adicional.\n\nA DIP é polimicrobiana. A etiologia principal é a Neisseria gonorrhoeae e a Chlamydia trachomatis, mas anaeróbios e germes da flora vaginal (como os da vaginose bacteriana) frequentemente participam. Por isso o tratamento deve cobrir esses três grupos.\n\nO esquema ambulatorial de primeira escolha, recomendado pelo Ministério da Saúde (PCDT-IST) e pelo CDC, é:\n- Ceftriaxona 500 mg IM, dose única, para cobrir o gonococo.\n- Doxiciclina 100 mg VO de 12/12h por 14 dias, para cobrir a clamídia.\n- Metronidazol 500 mg VO de 12/12h por 14 dias, para cobrir anaeróbios e a vaginose bacteriana associada.\n\nA paciente deve ser reavaliada em 48 a 72 horas. Se não houver melhora, está indicada a internação. As parcerias sexuais também devem ser tratadas.\n\nAnálise das alternativas:\n\na) Metronidazol, ceftriaxona e doxiciclina – CORRETA. É exatamente o esquema ambulatorial padrão para DIP, com cobertura de gonococo, clamídia e anaeróbios.\n\nb) Fluconazol, azitromicina e clindamicina – INCORRETA. O fluconazol trata candidíase, que não corresponde ao quadro: candidíase dá corrimento branco grumoso, sem odor fétido. O esquema também não tem cobertura adequada para o gonococo. A clindamicina aparece em esquemas hospitalares, mas associada à gentamicina, não neste formato.\n\nc) Doxiciclina, ceftriaxona e gentamicina – INCORRETA. A gentamicina não acrescenta cobertura anaeróbia, que é fundamental na DIP e especialmente relevante aqui pela vaginose associada. Ela é usada apenas em regime hospitalar, combinada à clindamicina.\n\nd) Miconazol, metronidazol e azitromicina – INCORRETA. O miconazol é um antifúngico tópico, sem indicação no caso. Falta cobertura para o gonococo, já que não há cefalosporina. A azitromicina isolada não substitui o esquema recomendado para DIP.\n\nResposta: alternativa A.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:22.680Z"
+  },
+  {
+    "id": "AJUDA_9943b711-74cd-4f7d-ab9e-4b9eb335f79e",
+    "originalId": "9943b711-74cd-4f7d-ab9e-4b9eb335f79e",
+    "statement": "A intoxicação por metanol pela ingestão de bebidas adulteradas causou grande alarde na população brasileira, em especial a do estado de São Paulo. Paralelamente à investigação da fonte dessa contaminação, houve uma grande companha de esclarecimentos à população pelo Ministério da Saúde e pela imprensa. Assinale a alternativa correta sobre esse tema.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O uso de etanol injetável como antídoto contra a intoxicação por metanol foi autorizado pela Anvisa, como parte dos procedimentos de enfrentamento ao surto de intoxicações pelo consumo de bebidas adulteradas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Um procedimento de emergência adotado foi a suspensão de comercialização de cachaça, uísque, vodca, vinho e cerveja.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico de intoxicação por metanol é simples, pois os sintomas são exuberantes: tontura, vômitos, dor abdominal e fraqueza.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O metanol está presente apenas nas bebidas alcoó licas adulteradas, e a intoxicação em quem o ingere ocorre devido à sua transformação em substâncias tóxicas como o formaldeído e propanol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A intoxicação por metanol é uma emergência médica grave que exige intervenção rápida para evitar sequelas permanentes, como a cegueira ou o óbito. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa A (Correta): O tratamento da intoxicação por metanol baseia-se na inibição da enzima álcool desidrogenase (ADH). O etanol possui uma afinidade pela ADH cerca de 10 a 20 vezes maior do que a do metanol. Ao se administrar etanol (seja por via oral ou por via injetável), \"ocupa-se\" a enzima, impedindo que o metanol seja metabolizado em seus subprodutos tóxicos. Devido ao surto de bebidas adulteradas no Brasil e à indisponibilidade de outros antídotos, como o fomepizol, em larga escala, a Anvisa autorizou o uso emergencial do etanol injetável para garantir o tratamento adequado nas unidades de saúde.\n\nAlternativa B (Incorreta): As medidas de vigilância sanitária em casos de surto por adulteração focam no recolhimento dos lotes específicos e das marcas sob suspeita de contaminação. Não houve uma proibição generalizada de todas as categorias de bebidas alcoólicas produzidas legalmente (como cervejas e vinhos), uma vez que o problema estava restrito a cadeias de produção clandestinas ou adulteradas.\n\nAlternativa C (Incorreta): O diagnóstico de intoxicação por metanol é considerado difícil e muitas vezes tardio. Os sintomas iniciais (tontura, náuseas, vômitos e dor abdominal) são inespecíficos e muito semelhantes aos da embriaguez comum por etanol. O quadro clínico clássico, que inclui distúrbios visuais (visão borrada ou em \"nevasca\") e acidose metabólica grave com gap aniônico elevado, costuma surgir apenas após um período de latência de 12 a 24 horas, quando os metabólitos tóxicos já foram produzidos.\n\nAlternativa D (Incorreta): Esta alternativa apresenta dois erros principais. Primeiro, o metanol não está presente apenas em bebidas adulteradas; ele é amplamente utilizado na indústria como solvente, combustível (comum no automobilismo) e em processos químicos. Segundo, o metanol é metabolizado em formaldeído e, posteriormente, em ácido fórmico. O ácido fórmico é o principal responsável pela toxicidade sistêmica e pela lesão do nervo óptico. O propanol mencionado na alternativa não é um metabólito do metanol.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Intoxicações Exógenas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:22.680Z"
+  },
+  {
+    "id": "AJUDA_9948bf3d-f54e-4edd-b3d0-1b5c60955499",
+    "originalId": "9948bf3d-f54e-4edd-b3d0-1b5c60955499",
+    "statement": "Médico residente, 32 anos de idade, procura atendimento psiquiátrico com quadro de choro frequente e isolamento no ambiente de trabalho. Relata que há cerca de três semanas vem apresentando humor deprimido na maior parte do dia, perda de interesse por atividades que antes lhe davam prazer, insônia inicial e despertares precoces, fadiga intensa mesmo ao despertar, dificuldade de concentração, e sentimento persistente de inutilidade, com ideação suicida passiva. Nega uso de substâncias psicoativas ou outras condições clínicas que justifiquem o quadro. Os sintomas estão causando prejuízo significativo em sua atuação profissional e em sua vida social. Diante do caso, baseado nos critérios diagnósticos do DSM-5 para o Transtorno Depressivo Maior (TDM), o diagnóstico de TDM é",
+    "options": [
+      {
+        "id": "A",
+        "text": "confirmado, pois o paciente apresenta, no mesmo período de duas semanas, cinco ou mais sintomas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "confirmado, pois o paciente apresenta episódio de hipomania.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "descartado, pois é necessário um período mínimo de quatro semanas para o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "descartado, pois a ideação suicida passiva não é considerada no critério A do DSM-5.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender a resolução desta questão, devemos aplicar rigorosamente os critérios diagnósticos do DSM-5 (Manual Diagnóstico e Estatístico de Transtornos Mentais) para o Transtorno Depressivo Maior (TDM).\n\nAnálise dos critérios do Criterion A do DSM-5 presentes no enunciado:\n\n1. Humor deprimido na maior parte do dia (Presente).\n2. Anedonia (perda de interesse ou prazer) (Presente).\n3. Alterações do sono (insônia inicial e despertar precoce) (Presente).\n4. Fadiga ou perda de energia quase todos os dias (Presente).\n5. Sentimentos de inutilidade ou culpa excessiva (Presente).\n6. Capacidade diminuída de pensar ou concentrar-se (Presente).\n7. Pensamentos recorrentes de morte ou ideação suicida (ideação passiva) (Presente).\n\nO paciente apresenta 7 sintomas, ultrapassando o mínimo de 5 exigidos, dentre os quais o humor deprimido e a anedonia estão incluídos (ao menos um desses dois é obrigatório). O tempo de evolução relatado é de três semanas, superando o critério temporal mínimo.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. O DSM-5 estabelece que, para o diagnóstico de TDM, o paciente deve apresentar pelo menos 5 dos 9 sintomas listados no Critério A, por um período mínimo de 2 semanas consecutivas, representando uma mudança em relação ao funcionamento anterior. O caso clínico cumpre todos esses requisitos.\n\nAlternativa b) Incorreta. A presença de um episódio de hipomania (ou mania) excluiria o diagnóstico de Transtorno Depressivo Maior, direcionando o diagnóstico para Transtorno Bipolar. O enunciado não descreve elevação de humor, grandiosidade ou taquipsiquismo.\n\nAlternativa c) Incorreta. O critério temporal exigido pelo DSM-5 para o episódio depressivo maior é de, no mínimo, 2 semanas, e não 4 semanas. Como o paciente apresenta sintomas há 3 semanas, ele já preenche este requisito.\n\nAlternativa d) Incorreta. A ideação suicida, seja ela passiva (desejo de morrer) ou ativa (planos e tentativas), faz parte do nono item do Critério A do DSM-5 e é considerada válida para a contagem sindrômica.\n\nAlternativa e) Incorreta. A alternativa A define corretamente a situação diagnóstica baseada nos critérios vigentes.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:22.680Z"
+  }
+]

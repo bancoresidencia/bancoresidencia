@@ -1,0 +1,528 @@
+[
+  {
+    "id": "AJUDA_89e677a0-ba98-4443-b59b-517bb64dab27",
+    "originalId": "89e677a0-ba98-4443-b59b-517bb64dab27",
+    "statement": "Mulher de 28 anos referindo corrimento vaginal esbranquiçado, sem odor, acompanhado de prurido intenso há 5 dias, sem outras queixas. Ao exame físico: corrimento branco abundante com grumos aderidos a parede. No exame a fresco do conteúdo vaginal observa-se hifas e esporos. Com base na causa mais provável, das alternativas abaixo pode-se optar como tratamento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metronidazol creme vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aciclovir 200 mg via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Clindamicina 2% creme vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Secnidazol 2g via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Butoconazol creme vaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "DIAGNÓSTICO CLÍNICO E LABORATORIAL:\n\nO quadro clínico descreve uma paciente com Candidíase Vulvovaginal. Os pontos-chave para o diagnóstico são:\n1. Sintomatologia: Prurido intenso é o sintoma cardinal.\n2. Aspecto do corrimento: Branco, em grumos (semelhante a leite coalhado ou queijo cottage), aderido às paredes vaginais e geralmente sem odor fétido.\n3. Exame a fresco: A presença de hifas (pseudohifas) e esporos (leveduras) confirma a etiologia fúngica (sendo a Candida albicans a causa em 80-90% dos casos). O pH vaginal na candidíase costuma estar normal (menor que 4,5).\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. O Metronidazol é um nitroimidazólico eficaz contra bactérias anaeróbias e protozoários. É o tratamento de escolha para Vaginose Bacteriana e Tricomoníase, mas não possui atividade antifúngica, sendo ineficaz contra a Candida.\n\nb) Incorreta. O Aciclovir é um antiviral indicado para o tratamento de Herpes Genital (HSV-1 e HSV-2). O quadro clínico de herpes envolve vesículas dolorosas que evoluem para úlceras, o que difere totalmente do corrimento grumoso apresentado.\n\nc) Incorreta. A Clindamicina é um antibiótico (lincosamida) utilizado como alternativa no tratamento da Vaginose Bacteriana. Seu uso inclusive é um fator de risco para o desenvolvimento de candidíase secundária, pois elimina a flora de lactobacilos protetores, permitindo o sobrecrescimento fúngico.\n\nd) Incorreta. O Secnidazol é um derivado nitroimidazólico de dose única, indicado para o tratamento de Tricomoníase e Vaginose Bacteriana. Assim como o metronidazol, não tem ação sobre fungos.\n\ne) Correta. O Butoconazol é um antifúngico azólico de uso tópico. Ele age inibindo a síntese de ergosterol na membrana celular do fungo, levando à sua destruição. É uma opção terapêutica eficaz e aprovada para a Candidíase Vulvovaginal, assim como o miconazol, clotrimazol, terconazol (via vaginal) ou o fluconazol (via oral).\n\nRESUMO PARA FIXAÇÃO:\nDiante de prurido + corrimento em grumos + presença de hifas no exame a fresco, o diagnóstico é Candidíase. O tratamento deve ser feito obrigatoriamente com um antifúngico (geralmente da classe dos azóis).",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:12.241Z"
+  },
+  {
+    "id": "AJUDA_89e67e59-e962-475e-9377-ba0c4533739e",
+    "originalId": "89e67e59-e962-475e-9377-ba0c4533739e",
+    "statement": "A presença dos pais durante toda a internação de seu filho, independentemente do setor em que está internado, contempla quais princípios da bioética?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Autonomia e justiça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Beneficência e não maleficência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Beneficência e justiça.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Autonomia e não maleficência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para entender essa questão, é necessário aplicar os quatro princípios fundamentais da Bioética Principialista: Beneficência, Não-maleficência, Autonomia e Justiça, no contexto específico da hospitalização infantil.\n\nA fundamentação para a alternativa correta (C) baseia-se nos seguintes pontos:\n\nPRINCÍPIO DA BENEFICÊNCIA: Este princípio determina que o profissional de saúde deve agir sempre visando ao maior benefício para o paciente. No caso da pediatria, a presença dos pais é clinicamente benéfica, pois reduz o estresse da hospitalização, diminui o trauma da separação, facilita a adesão ao tratamento e contribui para uma recuperação mais rápida e segura da criança.\n\nPRINCÍPIO DA JUSTIÇA: Relaciona-se à equidade e ao cumprimento dos direitos legais. No Brasil, a presença de acompanhante para crianças e adolescentes em tempo integral é um direito garantido pelo Estatuto da Criança e do Adolescente (ECA, Lei nº 8.069/90, Art. 12). Garantir que esse direito seja respeitado em qualquer setor (inclusive em UTIs e centros cirúrgicos) é uma forma de aplicar a justiça, assegurando que o direito legal seja cumprido de forma igualitária para todos os pacientes dessa faixa etária.\n\nAnálise das alternativas:\n\na) Autonomia e justiça: Incorreta. Embora a autonomia envolva o poder de decisão dos pais sobre os procedimentos realizados no filho, o foco da questão é a presença constante como um benefício terapêutico e um direito legal estabelecido. A beneficência é mais central nesse cenário do que a autonomia pura.\n\nb) Beneficência e não-maleficência: Incorreta. Embora a não-maleficência (não causar dano) esteja presente, pois a ausência dos pais causaria sofrimento psíquico, o enunciado destaca a presença em \"toda a internação\" e \"independentemente do setor\", o que remete diretamente à obrigatoriedade legal e ao direito garantido, características do princípio da Justiça.\n\nc) Beneficência e justiça: Correta. Une a promoção do bem-estar biopsicossocial da criança (Beneficência) com o cumprimento de um direito social e jurídico fundamental garantido por lei (Justiça).\n\nd) Autonomia e não-maleficência: Incorreta. Essa combinação não abrange o aspecto de dever legal (Justiça) e de promoção ativa de bem-estar clínico e emocional (Beneficência) que a presença dos pais representa no ambiente hospitalar.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:12.241Z"
+  },
+  {
+    "id": "AJUDA_89f988a1-703e-44ec-a84c-479360a45923",
+    "originalId": "89f988a1-703e-44ec-a84c-479360a45923",
+    "statement": "Um homem de 53 anos de idade era acometido por asma desde a infância e relata hipertensão há 10 anos. Na última prescrição, constavam os medicamentos anti‑hipertensivos de uso contínuo: hidroclorotiazida 25 mg uma vez por dia; losartana 50 mg duas vezes por dia; e anlodipina 2,5 mg uma vez por dia. A pressão arterial aferida por automonitoramento nos últimos três meses apresentava diversos valores acima de 140 x 90 mmHg, e, durante a consulta, a pressão arterial aferida foi de 155 x 95 mmHg. O médico orientou e repactuou a intensificação na mudança do estilo de vida e certificou‑se de que as medicações prescritas têm sido utilizadas adequadamente. \n\nCom base nesse caso clínico hipotético e em relação ao ajuste medicamentoso, a assinale a opção que apresenta a conduta adequada para o manejo da hipertensão.",
+    "options": [
+      {
+        "id": "A",
+        "text": "acrescentar espironolactona 25 mg uma vez por dia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "aumentar a dose da anlodipina para até 10 mg uma vez por dia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "acrescentar atenolol 50 mg duas vezes por dia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "acrescentar enalapril 20 mg uma vez por dia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "acrescentar metildopa 250 mg duas vezes por dia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\nO paciente apresenta hipertensão não controlada (155 x 95 mmHg em consultório e valores elevados no monitoramento residencial), apesar do uso de três classes de anti-hipertensivos: um diurético tiazídico (hidroclorotiazida), um bloqueador do receptor de angiotensina (losartana) e um bloqueador de canal de cálcio (anlodipina).\n\nPara o manejo adequado, antes de considerar a hipertensão como resistente e adicionar novos fármacos, as diretrizes recomendam a otimização das doses das medicações já prescritas até seus valores máximos recomendados ou tolerados.\n\nPOR QUE A ALTERNATIVA B ESTÁ CORRETA\nA dose de anlodipina que o paciente utiliza (2,5 mg) é considerada subótima. A dose terapêutica padrão para o controle pressórico varia de 5 mg a 10 mg ao dia. Como o paciente já está em terapia tripla, mas com doses baixas de um dos componentes, o passo farmacológico mais lógico e seguro é aumentar a dose da medicação atual antes de acrescentar uma quarta droga ao esquema. Isso simplifica a adesão e reduz o risco de interações medicamentosas desnecessárias.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\n\nA) A espironolactona é o quarto fármaco de escolha no tratamento da hipertensão arterial resistente. No entanto, a definição de hipertensão resistente exige que o paciente esteja em uso de três classes de medicamentos em doses otimizadas (geralmente um IECA ou BRA, um bloqueador de canal de cálcio e um diurético). Como a dose da anlodipina ainda não foi otimizada, não se pode classificar o caso como resistência real ainda.\n\nC) O atenolol é um betabloqueador. Existem dois motivos principais para evitá-lo aqui: primeiro, o paciente possui histórico de asma desde a infância, e betabloqueadores (mesmo os seletivos) podem induzir broncoespasmo. Segundo, betabloqueadores não são fármacos de primeira ou segunda linha para hipertensão essencial sem indicações específicas (como insuficiência cardíaca ou coronariopatia).\n\nD) O enalapril é um inibidor da ECA. O paciente já faz uso de losartana, que é um bloqueador dos receptores de angiotensina (BRA). O bloqueio duplo do sistema renina-angiotensina-aldosterona (combinar IECA + BRA) é formalmente contraindicado, pois não traz benefícios cardiovasculares adicionais e aumenta significativamente o risco de insuficiência renal aguda e hipercalemia (excesso de potássio no sangue).\n\nE) A metildopa é um agonista alfa-2 de ação central. Atualmente, seu uso é restrito quase exclusivamente ao manejo da hipertensão na gestação. Para um paciente do sexo masculino de 53 anos, existem opções muito mais eficazes e com menos efeitos colaterais (como sonolência e fadiga) antes de considerar esta medicação.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:12.241Z"
+  },
+  {
+    "id": "AJUDA_89fd2213-6e77-43e4-b3c4-7f2198db0972",
+    "originalId": "89fd2213-6e77-43e4-b3c4-7f2198db0972",
+    "statement": "Um paciente de 60 anos é atendido no pronto-socorro histórico de úlcera péptica e apresenta dor abdominal súbita sem sinais de peritonite. A radiografia de tórax mostra pequena quantidade de ar no hipocôndrio esquerdo. Paciente mantém estabilidade hemodinâmica O próximo passo no manejo deste paciente deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitação de endoscopia digestiva alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tomografia computadorizada abdominal com contraste EV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administração de antiácidos e observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cirurgia de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tratamento com inibidores de bomba de prótons.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito, com dor abdominal súbita em um paciente com histórico de úlcera péptica, é altamente sugestivo de perfuração de víscera oca. O achado de ar no hipocôndrio esquerdo na radiografia de tórax sugere pneumoperitônio, confirmando a suspeita de ar extraluminal.\n\nPor que a alternativa (b) é a correta:\nA Tomografia Computadorizada (TC) de abdome com contraste endovenoso é o exame de escolha (padrão-ouro) nesta situação. Ela apresenta sensibilidade superior a 95% para detectar pneumoperitônio, sendo capaz de identificar volumes mínimos de ar que a radiografia pode não mostrar claramente. Além disso, a TC ajuda a localizar o sítio exato da perfuração e a descartar diagnósticos diferenciais em pacientes que, apesar da suspeita, mantêm estabilidade hemodinâmica e ausência de peritonite franca.\n\nAnálise das alternativas incorretas:\n\na) Solicitação de endoscopia digestiva alta: Está contraindicada na suspeita de perfuração aguda. A insuflação de ar necessária para o exame pode aumentar o pneumoperitônio, causar pneumoperitônio hipertensivo e piorar o estado clínico do paciente ao extravasar conteúdo gástrico para a cavidade peritoneal.\n\nc) Administração de antiácidos e observação: Esta conduta é insuficiente e perigosa. Uma perfuração de víscera oca é uma emergência médica que pode evoluir rapidamente para sepse e choque. O manejo deve ser ativo para confirmar o diagnóstico e planejar a intervenção.\n\nd) Cirurgia de urgência: Embora a maioria das perfurações de úlcera péptica exija tratamento cirúrgico, o paciente em questão está estável e sem sinais de peritonite. Nesses casos, a confirmação diagnóstica por imagem (TC) é o passo imediato para guiar a conduta, permitindo inclusive avaliar se há indicação de tratamento conservador (protocolo de Taylor) ou cirurgia minimamente invasiva.\n\ne) Tratamento com inibidores de bomba de prótons: Os IBP fazem parte do tratamento de suporte e da terapia de longo prazo para úlcera péptica, mas não resolvem o problema agudo da perfuração e não são o próximo passo diagnóstico prioritário no pronto-socorro.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Perfurativo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:12.241Z"
+  },
+  {
+    "id": "AJUDA_89fd99f2-c947-4c18-9ea6-d6b7d037b1d3",
+    "originalId": "89fd99f2-c947-4c18-9ea6-d6b7d037b1d3",
+    "statement": "Mulher gestante de 29 anos, primigesta, previamente hígida, comparece ao ambulatório de pré-natal para avaliação dos exames solicitados na primeira consulta. Está assintomática no momento. Os resultados dos exames sorológicos realizados podem ser vistos a seguir:\n\nCom relação ao resultado das outras sorologias, qual recomendação deve ser dada à gestante?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Orientar sobre infecção atual por toxoplasmose, iniciar espiramicina e fornecer encaminhamento para medicina fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vacinar com a tríplice viral durante a gestação para garantir proteção contra a rubéola.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar imediatamente o tratamento para infecção primária de sífilis com penicilina benzatina intramuscular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vacinar contra hepatite B durante a gestação, caso ainda não vacinada, sendo o esquema completo composto por 3 doses.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA questão exige a interpretação do rastreamento infeccioso realizado na primeira consulta de pré-natal. Com base na alternativa correta (d), deduz-se que a gestante não apresenta infecções ativas no momento, mas encontra-se suscetível à hepatite B.\n\nAlternativa A: Incorreta. O início da espiramicina e o encaminhamento para a medicina fetal seriam indicados caso os exames sugerissem uma infecção aguda por toxoplasmose (como IgM reagente e IgG não reagente, ou ambos reagentes com baixa avidez em idade gestacional precoce). Como a alternativa D é a correta, os exames de toxoplasmose desta paciente provavelmente indicaram que ela é imune (IgG positivo) ou suscetível (IgG e IgM negativos), não havendo indicação de tratamento.\n\nAlternativa B: Incorreta. A vacina tríplice viral, que protege contra a rubéola, é composta por vírus vivos atenuados. Por esse motivo, ela é formalmente contraindicada durante a gestação devido ao risco teórico de transmissão do vírus vacinal ao feto. Se a gestante for suscetível à rubéola (IgG negativo), a orientação correta é vacinar apenas no puerpério.\n\nAlternativa C: Incorreta. O tratamento para sífilis com penicilina benzatina só deve ser realizado se houver evidência laboratorial de infecção por meio de testes treponêmicos ou não treponêmicos (VDRL) reagentes. Se os exames da paciente foram negativos, não há indicação terapêutica.\n\nAlternativa D: Correta. No pré-natal, o rastreamento da hepatite B é feito por meio do HBsAg. Se o resultado for negativo, deve-se avaliar se a paciente possui imunidade (Anti-HBs positivo). Caso a gestante seja HBsAg negativa e Anti-HBs negativa, ela é considerada suscetível. A vacinação contra a hepatite B é segura na gestação, pois é produzida por engenharia genética e não contém vírus vivo. O esquema completo deve ser realizado com três doses (0, 1 e 6 meses) para garantir a proteção da mãe e reduzir o risco de transmissão vertical em caso de exposição futura.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas na Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/53e2838b8a311a29572f9c780affdd31bc1436664c246dc04d90322e3735e3a4.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_89fd99f2-c947-4c18-9ea6-d6b7d037b1d3_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:12.713Z"
+  },
+  {
+    "id": "AJUDA_8a07381f-3411-44b2-ba55-b3cef708a78c",
+    "originalId": "8a07381f-3411-44b2-ba55-b3cef708a78c",
+    "statement": "Os principais modelos do processo saúde-doença incluem o biomédico, o processual ou história natural da doença, o sistêmico (todas as áreas interagem entre si). Outro modelo importante é o de determinação social, que é amplamente aceito por considerar fatores socioeconômicos, culturais e ambientais. O modelo de determinação social da saúde afirma que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O processo saúde-doença é determinado exclusivamente pelos fatores biológicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Condições de trabalho e moradia influenciam o processo saúde-doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O estilo de vida é o único determinante modificável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A assistência médica é o principal determinante da saúde populacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não há relação entre fatores socioeconômicos e morbimortalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda os modelos explicativos do processo saúde-doença, focando especificamente no modelo de Determinantes Sociais da Saúde (DSS). Esse modelo defende que a saúde de indivíduos e populações é moldada pelas condições em que as pessoas nascem, crescem, vivem, trabalham e envelhecem.\n\nAlternativa a: Incorreta. Esta afirmação define o Modelo Biomédico, que centra a discussão na patologia e na biologia individual, desconsiderando o contexto externo. O modelo de determinação social surge justamente para contrapor essa visão reducionista.\n\nAlternativa b: Correta. Condições de trabalho, moradia, saneamento básico e alimentação são exemplos clássicos de determinantes sociais. Eles exercem impacto direto na saúde, pois definem o grau de exposição a riscos e o acesso a recursos protetores de uma população.\n\nAlternativa c: Incorreta. O estilo de vida é apenas uma das camadas dos determinantes. Além dele, as condições macroestruturais (como políticas econômicas e sociais) e as redes comunitárias também são passíveis de modificação e exercem influência profunda no processo saúde-doença.\n\nAlternativa d: Incorreta. A assistência médica é um dos determinantes, mas não o principal para a saúde populacional. Historicamente, melhorias estruturais no saneamento, habitação e nutrição tiveram maior impacto na redução da mortalidade do que o avanço das tecnologias médicas curativas isoladas.\n\nAlternativa e: Incorreta. Existe uma correlação robusta e amplamente documentada entre fatores socioeconômicos e os indicadores de saúde. O modelo de determinação social busca justamente explicar e mitigar as iniquidades em saúde, onde menores níveis socioeconômicos estão associados a maiores taxas de morbimortalidade.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:12.713Z"
+  },
+  {
+    "id": "AJUDA_8a09b098-4b92-4ada-9796-aa9b7a1fc044",
+    "originalId": "8a09b098-4b92-4ada-9796-aa9b7a1fc044",
+    "statement": "Criança de 5 anos vem para atendimento em serviço de pediatria com a hipótese diagnóstica de transtorno do espectro autista. Segundo relato, ela não tem fala organizada compatível com a idade cronológica, nem aprendeu a escrever as letras ainda e tem dificuldade de acompanhar nas atividades de sala. Esse relato é verbal e, além dele, a genitora traz o encaminhamento do serviço de atenção básica com os dados de crescimento e marcos do desenvolvimento até o momento. Durante a avaliação, a criança contactua, mas nem sempre sustenta o olhar. Responde e respeita comandos, tira e veste a própria roupa e sabe contar de 1 a 20. Forma frases curtas, de 2 a 3 palavras, mas não desenvolve uma história. Tem tempo estimado de tela de 4 horas diárias desde bebê, quando era cuidado pela bisavó. Ficou brincando com um único brinquedo durante a entrevista com a mãe, mas conhecia os demais brinquedos apresentados. Possui avaliação auditiva, que descartou surdez.\nSua conduta inicial frente a esse quadro, além de orientar sobre o uso abusivo de telas, foi:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplicar o MChat para auxílio no diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar para neurologista infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar um laudo completo da escola.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Afastar a hipótese diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tratar o quadro com medicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA criança de 5 anos apresenta um atraso no desenvolvimento da linguagem (forma frases curtas e não narra histórias, o que seria esperado para a idade) e dificuldades escolares. No entanto, o quadro clínico mostra alguns sinais que não são típicos do autismo clássico: ela interage, obedece a comandos, tem autonomia nas atividades de vida diária (vestir-se) e conhece os brinquedos. Há também um fator ambiental crítico: o uso excessivo de telas (4 horas diárias), que pode mimetizar sintomas de atraso no desenvolvimento por privação sensorial e social.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nO diagnóstico de Transtorno do Espectro Autista (TEA) é clínico e baseia-se na observação de prejuízos na comunicação social e na presença de padrões restritivos e repetitivos de comportamento. Para fechar esse diagnóstico, é fundamental comprovar que esses sinais ocorrem em múltiplos contextos (casa, escola, lazer). Como a mãe relata dificuldades na escola, o laudo ou relatório escolar torna-se uma peça indispensável para o médico. Ele permite diferenciar se o comportamento da criança é uma dificuldade global de interação e adaptação ou se os atrasos são pontuais e decorrentes da falta de estímulo adequado no ambiente doméstico.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): O questionário M-Chat é uma ferramenta de rastreio (screening) validada especificamente para crianças entre 16 e 30 meses de idade. Para uma criança de 5 anos, o M-Chat não é o instrumento adequado para auxílio diagnóstico.\n\nAlternativa (b): O encaminhamento para o neurologista infantil pode ser necessário futuramente, mas a conduta inicial do médico que está atendendo deve ser a coleta de dados de todos os ambientes da criança para fundamentar sua suspeita ou o próprio encaminhamento. O pediatra deve coordenar essa investigação inicial.\n\nAlternativa (d): Afastar a hipótese diagnóstica seria um erro técnico, pois a criança apresenta um atraso de fala importante para a idade cronológica (frases de 2 a 3 palavras aos 5 anos). Mesmo que o uso de telas seja um fator agravante, é necessário investigar se há um transtorno subjacente antes de descartar qualquer hipótese.\n\nAlternativa (e): O tratamento medicamentoso não é a primeira linha para o TEA ou para atrasos de fala. Medicamentos são utilizados apenas para tratar sintomas-alvo específicos ou comorbidades (como agressividade grave ou distúrbios do sono), o que não é o caso descrito. O tratamento principal é multidisciplinar (fonoaudiologia, psicologia, terapia ocupacional).\n\nRESUMO DA CONDUTA\n\nEm crianças em idade escolar com suspeita de transtornos do neurodesenvolvimento, a avaliação do desempenho pedagógico e do comportamento social no ambiente escolar é passo obrigatório para o raciocínio clínico. Sem o relatório da escola, o diagnóstico torna-se incompleto por faltar a verificação de sintomas em múltiplos ambientes.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Psiquiatria Infantil",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:12.713Z"
+  },
+  {
+    "id": "AJUDA_8a1a3acc-d10a-4a07-93be-cbfe90fb33d5",
+    "originalId": "8a1a3acc-d10a-4a07-93be-cbfe90fb33d5",
+    "statement": "Paciente relata que há cerca de 60 dias apresentou úlcera única e indolor na vagina, que desapareceu espontaneamente. Informa também o aparecimento de lesões em forma de pápulas em região palmar, conforme a imagem a seguir. De acordo com esse caso, o diagnóstico e o tratamento adequados são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cancro duro, azitromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cancro mole, penicilina cristalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sífilis primária, penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sífilis secundária, penicilina benzatina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Sífilis secundária, penicilina cristalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nA paciente apresenta uma evolução patognomônica da infecção pelo Treponema pallidum. O relato de uma úlcera única e indolor na região genital (conhecida como cancro duro) que desapareceu espontaneamente marca a fase de sífilis primária. O tempo decorrido de aproximadamente 60 dias é o intervalo clássico para o surgimento das manifestações da sífilis secundária, que decorre da disseminação sistêmica da bactéria. A imagem corrobora este estágio ao mostrar lesões eritemato-papulosas nas palmas das mãos, denominadas sifílides palmoplantares, que são características cardinais desta fase.\n\nAnálise das Alternativas:\n\na) Incorreta. O termo \"cancro duro\" designa apenas a lesão inicial da sífilis primária, que a paciente relatou ter tido no passado, mas não é o diagnóstico do quadro atual (secundarismo). Além disso, a azitromicina não é o tratamento de primeira escolha devido ao risco de resistência e falha terapêutica; o padrão-ouro permanece sendo a penicilina.\n\nb) Incorreta. O cancro mole é uma infecção causada pela bactéria Haemophilus ducreyi, caracterizada por úlceras múltiplas, extremamente dolorosas e com exsudato purulento, o que difere totalmente do relato de úlcera indolor. A penicilina cristalina é a forma de administração endovenosa, não sendo indicada para este caso.\n\nc) Incorreta. A sífilis primária é a fase da úlcera genital (cancro). No momento da consulta, a paciente já apresenta sinais de disseminação sistêmica (lesões nas mãos), o que classifica a doença como sífilis secundária.\n\nd) Correta. O diagnóstico atual é de sífilis secundária, evidenciado pelas lesões cutâneas disseminadas após a remissão do cancro primário. De acordo com os protocolos do Ministério da Saúde e da Organização Mundial da Saúde, o tratamento de escolha para a sífilis secundária é a penicilina G benzatina, na dose de 2,4 milhões de UI, aplicada por via intramuscular em dose única.\n\ne) Incorreta. Embora o diagnóstico de sífilis secundária esteja correto, o tratamento com penicilina cristalina está errado para esta apresentação. A penicilina cristalina (venosa) é reservada exclusivamente para o tratamento da neurossífilis ou sífilis congênita, devido à sua capacidade de atravessar a barreira hematoencefálica em concentrações adequadas. No secundarismo sem comprometimento neurológico, utiliza-se a penicilina benzatina.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/75ea1fe723e2b02986e1321bf89f6ded445623a46222b4eeaeb77f2d22bb3c83.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_8a1a3acc-d10a-4a07-93be-cbfe90fb33d5_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:13.264Z"
+  },
+  {
+    "id": "AJUDA_8a21900a-8972-422f-a770-4c542d191f97",
+    "originalId": "8a21900a-8972-422f-a770-4c542d191f97",
+    "statement": "Uma mulher de 35 anos de idade, é admitida na unidade de terapia intensiva com taquicardia sinusal, taquipneia, hipotensão arterial e temperatura axilar de 39.5ºC após colecistectomia videolaparoscópica eletiva. No exame físico é notável a rigidez muscular generalizada. No eletro presença de ondas T pontiagudas, desaparecimento das ondas P, alargamento do QRS e raras extrassístoles ventriculares. O medicamento que deve ser administrado imediatamente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Noradrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Paracetamol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dantrolene.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hidrocotisona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aspirina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CENÁRIO CLÍNICO\n\nO caso descreve uma emergência anestésica clássica: a Hipertermia Maligna (HM). Trata-se de uma síndrome farmacogenética de herança autossômica dominante que ocorre em indivíduos suscetíveis quando expostos a agentes gatilhos, como anestésicos inalatórios halogenados ou o relaxante muscular succinilcolina.\n\nOs sinais clínicos fundamentais apresentados são:\n1. Rigidez muscular generalizada: Sinal patognomônico resultante da liberação descontrolada de cálcio do retículo sarcoplasmático para o citoplasma do músculo esquelético.\n2. Hipermetabolismo: Taquicardia, taquipneia e febre alta (39,5ºC) decorrentes da contração muscular sustentada e consumo excessivo de ATP.\n3. Alterações Eletrocardiográficas: As ondas T pontiagudas, desaparecimento de ondas P e alargamento do QRS indicam HIPERCALEMIA GRAVE. Na HM, a rabdomiólise aguda libera potássio e mioglobina na circulação, o que pode levar a arritmias fatais e parada cardíaca em poucos minutos.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Incorreta. A Noradrenalina é um vasopressor. Embora a paciente esteja hipotensa, a causa base é o choque metabólico e a toxicidade por potássio. O uso de vasopressores sem a reversão da causa base e sem o controle da hipercalemia pode precipitar arritmias ventriculares fatais (como descrito pelas extrassístoles no enunciado).\n\nb) Incorreta. O Paracetamol é um antipirético que atua no centro termorregulador do hipotálamo. Na Hipertermia Maligna, a febre não é um ajuste do \"termostato\" central, mas sim uma produção periférica maciça de calor pelo músculo. Portanto, antipiréticos comuns não têm eficácia neste quadro.\n\nc) Correta. O Dantrolene Sódico é a única medicação específica e salvadora de vidas na Hipertermia Maligna. Ele atua ligando-se aos receptores de rianodina (RyR1), inibindo a liberação excessiva de cálcio do retículo sarcoplasmático para o citoplasma. Isso interrompe o ciclo de contração muscular, normaliza o metabolismo e reduz a temperatura e a destruição muscular. Deve ser administrado o mais rápido possível na dose inicial de 2,5 mg/kg.\n\nd) Incorreta. A Hidrocortisona é um corticoide utilizado em casos de insuficiência adrenal ou como terapia adjuvante em choques sépticos específicos. Não possui qualquer mecanismo de ação sobre a homeostase do cálcio muscular ou sobre a fisiopatologia da HM.\n\ne) Incorreta. A Aspirina (ácido acetilsalicílico), assim como o paracetamol, é ineficaz para controlar a produção de calor de origem muscular e não atua na causa genética do transtorno. Além disso, poderia comprometer a coagulação no pós-operatório recente.\n\nDICA PARA A PROVA: Sempre que associar anestesia geral (ou pós-operatório imediato) com rigidez muscular e hipertermia, pense em Hipertermia Maligna. Se houver sinais de potássio alto no ECG (onda T em tenda), a gravidade é máxima e o Dantrolene é a resposta prioritária.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:13.264Z"
+  },
+  {
+    "id": "AJUDA_8a2364bf-7f7f-4488-8257-a56cf4ea0ac8",
+    "originalId": "8a2364bf-7f7f-4488-8257-a56cf4ea0ac8",
+    "statement": "Paciente com HIV (CD4 = 38) evolui com perda visual bilateral progressiva. Fundoscopia mostra lesões algodonosas e hemorragias em chama de vela. Sobre o caso, assinale a VERDADEIRA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É típico de retinite por Toxoplasma gondii.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento de escolha é o ganciclovir.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A profilaxia primária é indicada com TMP-SMX.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O agente mais provável é Candida albicans.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um paciente com imunossupressão grave (CD4 = 38 células/mm³) e um quadro de perda visual progressiva. Os achados de fundoscopia, que descrevem lesões exsudativas (algodonosas) associadas a hemorragias retinianas (em chama de vela), compõem o aspecto clássico de \"queijo com ketchup\" ou \"pizza de tomate\", patognomônico da retinite por citomegalovírus (CMV).\n\nAnálise das alternativas:\n\na) INCORRETA. A retinocoroidite por Toxoplasma gondii costuma apresentar-se como uma lesão focal esbranquiçada e necrosante, frequentemente associada a uma intensa inflamação do vítreo (vítreo em \"farol na neblina\"). Embora ocorra em pacientes com HIV, o padrão hemorrágico e a associação com CD4 abaixo de 50 favorecem fortemente o CMV.\n\nb) CORRETA. O tratamento de escolha para a retinite por CMV é o ganciclovir (nas formas intravenosa ou intravítrea) ou o valganciclovir (via oral). O objetivo é interromper a replicação viral e evitar a progressão para a cegueira total ou descolamento de retina.\n\nc) INCORRETA. A profilaxia primária com sulfametoxazol-trimetoprima (TMP-SMX) é indicada em pacientes com HIV para prevenir a pneumonia por Pneumocystis jirovecii (CD4 < 200) e a neurotoxoplasmose (CD4 < 100). Não existe profilaxia medicamentosa primária recomendada para o CMV; a melhor forma de prevenção é a restauração imune através da terapia antirretroviral (TARV).\n\nd) INCORRETA. A endoftalmite por Candida albicans geralmente ocorre em pacientes com candidemia (disseminação hematogênica), frequentemente associada ao uso de drogas injetáveis ou cateteres venosos centrais prolongados. O aspecto típico na fundoscopia são lesões esbranquiçadas e fofas que lembram \"bolas de algodão\" ou \"bolas de neve\" no vítreo, sem o componente hemorrágico característico do CMV.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:13:13.265Z"
+  }
+]

@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_c560e80b-8d25-418c-8248-af13d2346041",
+    "originalId": "c560e80b-8d25-418c-8248-af13d2346041",
+    "statement": "Uma mulher leucodérmica, com idade de 34 anos, sabidamente portadora de doença de Crohn, foi internada em enfermaria com múltiplas fístulas perianais e vários episódios de evacuação pastosa. Os exames laboratoriais revelaram hemoglobina em 9,3 g/dl, leucócitos em 12.300 / mcl, albumina em 2,4 g/dl. Nessa situação, qual é a MELHOR conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter o paciente em enfermaria e tratar as desordens clinicamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Internar a paciente rapidamente em setor de cuidados intensivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ressecar as fístulas perianais e drenar os abscessos indicados pela leucocitose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fazer colostomia para desviar o trânsito fecal e permitir o fechamento das fístulas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve uma paciente com doença de Crohn em fase de atividade, manifestada por sintomas intestinais (evacuações pastosas) e complicações perianais (fístulas múltiplas), apresentando repercussões sistêmicas como anemia (Hb 9,3 g/dL), leucocitose e hipoalbuminemia importante (2,4 g/dL), o que indica um estado de desnutrição e inflamação sistêmica.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: O tratamento da doença de Crohn perianal é complexo e deve priorizar a estabilização clínica. O manejo inicial em enfermaria envolve a otimização do estado nutricional, o tratamento da anemia e o controle da atividade inflamatória da doença com medicamentos (antibióticos como ciprofloxacino/metronidazol e, principalmente, terapia biológica com anti-TNF, como o infliximabe). A cirurgia em pacientes com tecidos intensamente inflamados e desnutridos possui altos índices de complicações e falhas de cicatrização.\n\nAlternativa (b) Incorreta: Embora os exames laboratoriais estejam alterados, não há evidências de instabilidade hemodinâmica, choque séptico ou insuficiência orgânica que justifiquem a transferência para uma Unidade de Terapia Intensiva (UTI). O quadro de anemia e hipoalbuminemia é crônico e decorrente da doença de base, podendo ser manejado em ambiente de enfermaria.\n\nAlternativa (c) Incorreta: A ressecção das fístulas (fistulectomia) é geralmente contraindicada na doença de Crohn em fase ativa, pois o risco de não cicatrização e de lesão esfincteriana (levando à incontinência fecal) é altíssimo. Além disso, a leucocitose isolada não é indicação absoluta de drenagem; esta seria indicada apenas se houvesse a confirmação de abscessos perianais por exame físico ou exames de imagem (como ressonância magnética ou ultrassom endoanal).\n\nAlternativa (d) Incorreta: A colostomia para derivação do trânsito fecal é considerada uma medida de exceção, reservada apenas para casos graves e refratários a todo o tratamento clínico e procedimentos menos invasivos (como a colocação de sedenhos). Não é a melhor conduta inicial para uma paciente que ainda não foi otimizada clinicamente.\n\nConclusão: O manejo conservador e clínico é a prioridade para preparar a paciente, controlar a inflamação e melhorar suas condições biológicas antes de qualquer intervenção cirúrgica definitiva.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:00.487Z"
+  },
+  {
+    "id": "AJUDA_c562f0e0-9eba-496e-bd73-e1697e063426",
+    "originalId": "c562f0e0-9eba-496e-bd73-e1697e063426",
+    "statement": "Paciente, 26 anos, vem à consulta ao ginecologista, em busca de indicação de contracepção. A paciente é nuligesta, apresenta ciclos menstruais regulares e os exames ginecológicos atualizados. Nos antecedentes pessoais, apresenta enxaqueca com áurea em acompanhamento com neurologista. De acordo com os critérios de elegibilidade da OMS, a melhor escolha de contracepção é",
+    "options": [
+      {
+        "id": "A",
+        "text": "contraceptivo oral combinado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "anel vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "contraceptivo injetável mensal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "adesivo combinado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "minipílula.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO ponto central desta questão é a presença de enxaqueca com aura em uma paciente que deseja iniciar contracepção. De acordo com os Critérios Médicos de Elegibilidade da Organização Mundial da Saúde (OMS), a presença de enxaqueca com aura, em qualquer idade, classifica o uso de anticoncepcionais hormonais combinados (aqueles que contêm estrogênio) como Categoria 4. A Categoria 4 representa um risco inaceitável à saúde, especificamente o aumento acentuado do risco de acidente vascular cerebral (AVC) isquêmico.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O contraceptivo oral combinado contém estrogênio. Em pacientes com enxaqueca com aura, o estrogênio potencializa o risco de eventos tromboembólicos arteriais, sendo formalmente contraindicado (Categoria 4).\n\nAlternativa b) Incorreta. O anel vaginal é um método hormonal combinado. Independentemente da via de administração (oral, vaginal ou transdérmica), a presença do componente estrogênico mantém a contraindicação Categoria 4 para este caso.\n\nAlternativa c) Incorreta. O contraceptivo injetável mensal é composto por um estrogênio e um progestogênio. Por conter estrogênio, também é classificado como Categoria 4 pela OMS para pacientes com aura migranosa.\n\nAlternativa d) Incorreta. O adesivo combinado libera etinilestradiol e progestogênio através da pele. Assim como as outras formas combinadas, é proscrito (Categoria 4) pelo risco cardiovascular aumentado na presença de enxaqueca com aura.\n\nAlternativa e) Correta. A minipílula é um método que utiliza apenas progestogênio isolado. Segundo os critérios da OMS, métodos de progestogênio isolado (orais, injetáveis trimestrais ou implantes) são classificados como Categoria 2 para pacientes com enxaqueca com aura. Isso significa que as vantagens do uso superam amplamente os riscos teóricos ou comprovados, tornando-a a escolha adequada entre as alternativas oferecidas.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:00.487Z"
+  },
+  {
+    "id": "AJUDA_c568dc52-24d5-43cf-b629-15f2fd2afe03",
+    "originalId": "c568dc52-24d5-43cf-b629-15f2fd2afe03",
+    "statement": "Paciente, em pós-operatório de abdominoplastia, teve o dreno de Hemovac retirado no quarto dia pós-operatório. No sétimo dia de pós-operatório, apresentou abaulamento importante da ferida operatória, com dor local e pontos na porção mais tensa da ferida querendo abrir. Procurou emergência para avaliação cirúrgica. Negava febre. No exame físico, o abdômen estava tenso na sua parede, orifícios do dreno de aspecto normal e ferida operatória abaulada com discreta hiperemia ao redor dos pontos mais tensos. O diagnóstico mais provável e a primeira conduta terapêutica mais adequada, nesse caso, consistem, respectivamente, em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "abscesso / antibioticoterapia venosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "linforreia / manutenção do uso da cinta compressiva",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hematoma / drenagem aberta com retirada dos pontos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "seroma residual / aspiração da coleção de maneira estéril",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma paciente no 7º dia de pós-operatório (PO) de abdominoplastia que, após a retirada do dreno no 4º dia PO, evoluiu com abaulamento e tensão na região abdominal. A abdominoplastia é uma cirurgia que envolve um grande descolamento de retalho cutâneo-adiposo, o que cria um extenso espaço morto. Quando o dreno é retirado e ainda há produção de fluido, ou quando a compressão não é eficaz, ocorre o acúmulo de líquido.\n\nDIAGNÓSTICO E CONDUTA\n\nO seroma é a complicação mais comum em abdominoplastias, caracterizando-se pelo acúmulo de fluido seroso (composto por linfa e plasma) no espaço morto entre o músculo e o panículo adiposo. O surgimento por volta do 7º dia é clássico. A ausência de febre e de sinais flogísticos intensos (como calor e rubor disseminado) direciona o diagnóstico para uma coleção não infecciosa. A hiperemia mencionada nos pontos é decorrente da tensão mecânica (estiramento da pele) e não de infecção. A conduta inicial correta é a aspiração percutânea da coleção com técnica estéril para aliviar a tensão e evitar a deiscência da ferida operatória.\n\nCOMENTÁRIOS SOBRE AS ALTERNATIVAS\n\nAlternativa a) Incorreta. O abscesso exigiria a presença de sinais sistêmicos, como febre (negada pela paciente), e sinais locais mais graves (pus, calor e dor intensa). Além disso, o tratamento de uma coleção infectada envolve obrigatoriamente a drenagem, e não apenas a antibioticoterapia isolada.\n\nAlternativa b) Incorreta. Linforreia refere-se à drenagem de linfa através de uma fístula ou orifício de drenagem para o meio externo. O caso descreve uma coleção fechada (abaulamento). A manutenção da cinta é importante, mas insuficiente como conduta terapêutica diante de uma coleção volumosa que ameaça a integridade da sutura.\n\nAlternativa c) Incorreta. O hematoma é uma complicação tipicamente precoce, ocorrendo geralmente nas primeiras 24 a 48 horas após a cirurgia, apresentando dor aguda e muitas vezes equimoses na pele. A drenagem aberta com retirada de pontos é um procedimento mais invasivo, indicado em casos de hematomas volumosos com coágulos ou coleções purulentas refratárias, não sendo a primeira escolha para seroma.\n\nAlternativa d) Correta. O seroma residual é a hipótese mais provável dado o tempo de evolução e o tipo de cirurgia. A aspiração por punção estéril é o tratamento padrão inicial, sendo eficaz para resolver a maioria dos casos, aliviando o desconforto e a tensão sobre a cicatriz.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Cirurgia Plástica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:00.487Z"
+  },
+  {
+    "id": "AJUDA_c56baf99-ae33-47bb-af9f-2de1a704dee8",
+    "originalId": "c56baf99-ae33-47bb-af9f-2de1a704dee8",
+    "statement": "Em relação à doença trofoblástica gestacional (DTG), assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pode ser definida como uma anomalia proliferativa que acomete as células que compõem o tecido trofoblástico placentário, citotrofoblasto e sinciciotrofoblasto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Todas as formas de apresentação têm em comum a presença sérica de um marcador tumoral biológico e específico, o fragmento beta da gonadotrofina coriônica humana (β-hCG).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os dois principais fatores de risco para DTG são a idade materna superior a 35 anos e a história prévia de DTG.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As formas neoplásicas são sempre resultado de formas benignas sem tratamento adequado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A: CORRETA. A Doença Trofoblástica Gestacional (DTG) caracteriza-se por uma proliferação anormal das células do trofoblasto (citotrofoblasto e sinciciotrofoblasto). Esse grupo de doenças inclui tanto formas benignas (mola hidatiforme completa e parcial) quanto formas malignas ou neoplásicas (mola invasora, coriocarcinoma, tumor trofoblástico do sítio placentário e tumor trofoblástico epitelioide).\n\nAlternativa B: CORRETA. O fragmento beta da gonadotrofina coriônica humana (beta-hCG) é produzido naturalmente pelas células do sinciciotrofoblasto. Na DTG, há uma superprodução desse hormônio proporcional à massa tumoral, tornando-o um marcador biológico extremamente sensível e específico tanto para o diagnóstico inicial quanto para o monitoramento pós-esvaziamento uterino e a resposta ao tratamento quimioterápico.\n\nAlternativa C: CORRETA. A literatura médica e os protocolos da FEBRASGO e da FIGO apontam que a idade materna avançada (especialmente acima de 35 a 40 anos) e o antecedente pessoal de gravidez molar são os dois fatores de risco mais significativos. O risco de recorrência para quem já teve uma mola é significativamente maior do que na população geral.\n\nAlternativa D: INCORRETA (Gabarito). Esta afirmação é falsa por dois motivos principais. Primeiro, a Neoplasia Trofoblástica Gestacional (NTG) pode surgir após qualquer tipo de evento gestacional, incluindo abortamentos, gestações ectópicas e até mesmo o parto a termo (normal), sem necessariamente passar por uma fase de mola hidatiforme prévia. Segundo, mesmo que uma mola hidatiforme seja tratada corretamente com o esvaziamento uterino, cerca de 15% a 20% das molas completas e 1% a 5% das molas parciais podem evoluir para formas malignas, independentemente da adequação do tratamento inicial. Portanto, a neoplasia não é \"sempre\" resultado de falta de tratamento da forma benigna.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:00.487Z"
+  },
+  {
+    "id": "AJUDA_c572790f-c152-4f45-b7d9-611492d0f483",
+    "originalId": "c572790f-c152-4f45-b7d9-611492d0f483",
+    "statement": "O.L.S., sexo masculino, 72 anos, referindo quadro de dor lombar e fraqueza progressiva em membros inferiores, evoluindo para impossibilidade de deambular nos últimos três dias. Ao exame físico, nota-se força muscular muito reduzida em membros inferiores, gerando movimento sem vencer a gravidade, e com nível sensitivo na altura de T11. A radiografia da coluna torácica evidencia múltiplas lesões osteoblásticas com erosão de pedículos vertebrais. Nesse caso, o exame que mais provavelmente auxiliará na investigação etiológica inicial é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Radiografia de tórax",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ultrassonografia de tireoide",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Antígeno prostático específico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Eletroforese de proteínas séricas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "alfa feto proteína",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente em questão apresenta uma síndrome de compressão medular, caracterizada clinicamente pela dor lombar, fraqueza muscular progressiva com perda da capacidade de deambular e nível sensitivo em T11. No contexto de um homem idoso (72 anos), a causa mais comum de compressão medular neoplásica são as metástases ósseas de tumores sólidos.\n\nO ponto-chave para a resolução desta questão reside na descrição radiológica: múltiplas lesões osteoblásticas e erosão de pedículos vertebrais. As metástases ósseas podem ser divididas em dois padrões principais: líticas (que destroem o osso, gerando áreas de menor densidade) e blásticas ou escleróticas (que estimulam a formação de osso novo e desorganizado, gerando áreas de maior densidade).\n\nPOR QUE A ALTERNATIVA C ESTÁ CORRETA\n\nNo sexo masculino, o câncer de próstata é o principal tumor primário responsável por metástases ósseas de padrão predominantemente osteoblástico. Diante de um achado radiológico de esclerose óssea e erosão de pedículos (o que sugere infiltração maligna) em um homem de 72 anos, a investigação do câncer de próstata através da dosagem do Antígeno Prostático Específico (PSA) é o passo inicial mais provável e com maior rendimento diagnóstico.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\n\nAlternativa A: Radiografia de tórax. Serve para investigar neoplasia de pulmão. Embora o câncer de pulmão seja uma causa frequente de metástase vertebral, suas lesões são tipicamente osteolíticas (destrutivas) e não osteoblásticas.\n\nAlternativa B: Ultrassonografia de tireoide. O câncer de tireoide pode causar metástases ósseas, mas estas costumam ser puramente osteolíticas e hipervascularizadas, além de ser uma etiologia menos prevalente que a próstata nesta faixa etária.\n\nAlternativa D: Eletroforese de proteínas séricas. Este exame é fundamental na investigação de Mieloma Múltiplo (presença de pico monoclonal). Contudo, o Mieloma apresenta-se radiologicamente com lesões osteolíticas clássicas (lesões em saca-bocado) e, nas fases iniciais, raramente acomete os pedículos vertebrais, o que contraria o achado da questão.\n\nAlternativa E: Alfafetoproteína. É o marcador utilizado para rastreio e acompanhamento de carcinoma hepatocelular e alguns tumores de células germinativas. Nenhuma dessas patologias é a causa clássica de lesões vertebrais blásticas em idosos.\n\nRESUMO PARA ESTUDO\n\n1. Lesões Osteoblásticas (Blásticas) no Homem: Pensar primariamente em Câncer de Próstata.\n2. Lesões Osteolíticas no Idoso: Pensar em Mieloma Múltiplo, Câncer de Pulmão ou Câncer de Rim.\n3. Compressão Medular em Idoso: É uma emergência médica que exige diagnóstico etiológico rápido para evitar sequelas motoras definitivas.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Urologia",
+      "Oncologia Ortopédica e Osteomielite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:00.487Z"
+  },
+  {
+    "id": "AJUDA_c57d0bd9-7d3d-4b83-89c1-1c880a6623d5",
+    "originalId": "c57d0bd9-7d3d-4b83-89c1-1c880a6623d5",
+    "statement": "O planejamento familiar vem sendo amplamente discutido em todo o mundo para garantir às mulheres e seus parceiros a decisão sobre sua vida reprodutiva; direito de escolha em ter ou não filhos, quantidade de filhos e espaçamento de tempo entre as gestações; acesso aos métodos contraceptivos e pleno exercício de sua sexualidade. Sobre os métodos contraceptivos modernos, e considerando suas descrições, associe os itens utilizando os códigos a seguir:\nI. Contraceptivos orais combinados\nII. Pílulas somente com progestagênio\nIII. Dispositivos intrauterinos (DIU)\nIV. Implantes subdérmicos\n( ) Bastões pequenos e flexíveis colocados sob a pele do braço; contém apenas progestagênio.\n( ) Torna o muco cervical espesso e previne ovulação, pode ser usado na amamentação, a tomada é diária sem pausa.\n( ) Contém estrogênio e progestagênio, inibem a ovulação > 99% com uso correto e consistente.\n( ) Dispositivo de plástico flexível, pequeno, inserido no útero.\nAssinale a alternativa que apresenta a sequência CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "IV - II - I - III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "II - III - I - V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IV - I - II - III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I - II - IV - III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "III - IV - II - I.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão exige o conhecimento das características técnicas e mecanismos de ação de diferentes métodos contraceptivos. Vamos analisar cada descrição para realizar a associação correta:\n\nPrimeira lacuna: (IV) Implantes subdérmicos. A descrição refere-se a bastões flexíveis inseridos no tecido subcutâneo do braço que liberam progestagênio de forma contínua. É um método de longa ação (LARC) com alta eficácia.\n\nSegunda lacuna: (II) Pílulas somente com progestagênio. Também conhecidas como minipílulas, elas agem principalmente tornando o muco cervical espesso e hostil aos espermatozoides. Por não conterem estrogênio, são a escolha ideal para mulheres que estão amamentando, já que o estrogênio pode interferir na produção de leite. O uso deve ser diário, sem intervalos entre as cartelas.\n\nTerceira lacuna: (I) Contraceptivos orais combinados. A característica definidora é a presença de dois hormônios: um estrogênio (geralmente etinilestradiol) e um progestagênio. Eles atuam inibindo o eixo hipotálamo-hipófise-gonadal, o que impede a ovulação.\n\nQuarta lacuna: (III) Dispositivos intrauterinos (DIU). A descrição foca na forma e localização do método: um dispositivo inserido na cavidade uterina. Existem modelos não hormonais (cobre) e hormonais (sistema intrauterino liberador de levonorgestrel).\n\nA associação correta resulta na sequência IV - II - I - III.\n\nAnálise das alternativas:\n\na) Correta. Apresenta exatamente a sequência identificada na análise das descrições.\n\nb) Incorreta. Inicia a sequência de forma errada e inclui um item V que sequer existe na lista de opções dada pela questão.\n\nc) Incorreta. Troca a ordem entre as pílulas combinadas e as de progestagênio isolado, invertendo os itens I e II.\n\nd) Incorreta. Atribui a descrição do implante subdérmico (bastão no braço) aos contraceptivos orais combinados, o que é um erro conceitual anatômico.\n\ne) Incorreta. Sugere que o DIU seria um bastão colocado sob a pele do braço, o que está incorreto.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:00.487Z"
+  },
+  {
+    "id": "AJUDA_c580e2d0-4d8d-4325-bdc2-8fea9c0f5773",
+    "originalId": "c580e2d0-4d8d-4325-bdc2-8fea9c0f5773",
+    "statement": "Em relação ao tempo padrão para a administração de um trombolítico endovenoso (alteplase), em um paciente com acidente vascular hemisférico isquêmico, em que o único recurso diagnóstico por imagem seja a tomografia de crânio convencional, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Até 3 horas do início dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Até 4 horas do início dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Até 4 horas e meia do início dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Até 6 horas do nício dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Até 10 horas do início dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Acidente Vascular Cerebral Isquêmico (AVCI) é uma emergência médica tempo-dependente. O principal tratamento na fase aguda, visando à recanalização do vaso obstruído, é a trombólise química com a administração de alteplase (rt-PA) endovenosa.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O limite de 3 horas foi o primeiro estabelecido pelo estudo NINDS na década de 90. Embora o benefício da droga seja maior quanto mais cedo for administrada, este não é mais o limite máximo padrão adotado pelas diretrizes atuais para a maioria dos pacientes.\n\nAlternativa B: Incorreta. O intervalo de 4 horas não é o tempo de corte estabelecido pelos grandes ensaios clínicos ou pelas diretrizes da Sociedade Brasileira de Doenças Cerebrovasculares e da American Heart Association (AHA).\n\nAlternativa C: Correta. A janela terapêutica padrão para o uso de alteplase endovenosa é de até 4,5 horas após o início dos sintomas (ou do momento em que o paciente foi visto bem pela última vez). Essa extensão de 3 para 4,5 horas foi consolidada pelo estudo ECASS III. Em locais onde o único recurso de imagem é a tomografia computadorizada (TC) de crânio convencional, o exame é utilizado fundamentalmente para excluir o Acidente Vascular Cerebral Hemorrágico (AVCH) e detectar sinais radiológicos precoces de isquemia extensa que poderiam contraindicar o procedimento.\n\nAlternativa D: Incorreta. A janela de 6 horas é classicamente associada ao tratamento de trombectomia mecânica (intervenção endovascular) para oclusões de grandes vasos. Para a alteplase endovenosa, esse tempo excede o limite de segurança e eficácia comprovado para uso baseado apenas em tomografia simples.\n\nAlternativa E: Incorreta. Um intervalo de 10 horas é considerado muito tardio para a administração de trombolítico endovenoso sem o auxílio de protocolos de imagem avançada (como perfusão por tomografia ou ressonância magnética) que identifiquem tecido cerebral ainda viável (penumbra). Com apenas a tomografia convencional, o risco de transformação hemorrágica é proibitivo nesse período.\n\nResumo didático:\nJanela padrão para alteplase EV (com TC simples): Até 4,5 horas.\nJanela para trombectomia mecânica: Geralmente até 6 horas (podendo chegar a 24 horas em casos selecionados por imagem avançada).",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:00.487Z"
+  },
+  {
+    "id": "AJUDA_c5852649-a45d-43af-9eda-0e3db1d73d4d",
+    "originalId": "c5852649-a45d-43af-9eda-0e3db1d73d4d",
+    "statement": "Gestante de 18 anos apresenta teste rápido para sífilis reagente na primeira consulta de pré natal. Relata tratamento prévio há 11 meses com dose única de penicilina benzatina 2.400.000UI, com queda de títulos de VDRL até 1/4 e elevação posterior para 1/32, sem sintomas. Médico classifica como sífilis latente tardia, notifica o caso e prescreve penicilina benzatina -2.400.000UI por semana por três semanas- sem solicitar VDRL basal ou para seguimento. Enfermeira sugere solicitar VDRL antes de notificar e tratar. Sobre a conduta, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A conduta adequada seria confirmar o diagnóstico com VDRL antes de notificar e iniciar o tratamento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O caso deve ser considerado como sífilis latente recente e tratado com dose única de penicilina benzatina 2.400.000 UI",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O manejo pode ser feito apenas com o teste treponêmico positivo, sem necessidade de VDRL basal nem de seguimento sorológico durante a gestação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento com três doses e a notificação foram apropriados, mas deveria ter sido solicitado VDRL basal e estabelecido acompanhamento mensal com o VDRL até o parto",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o manejo da sífilis na gestação, focando nos critérios de diagnóstico, tratamento e seguimento sorológico para evitar a sífilis congênita.\n\nAnálise das alternativas:\n\na) INCORRETA: Na gestação, a conduta diante de um teste treponêmico (como o teste rápido) reagente deve ser imediata. Não se deve aguardar o resultado do VDRL para iniciar o tratamento ou para notificar o caso, visando reduzir ao máximo o tempo de exposição fetal ao *Treponema pallidum*. O VDRL é solicitado simultaneamente para fins de seguimento e confirmação, mas não deve retardar a primeira dose de penicilina.\n\nb) INCORRETA: A sífilis latente recente é definida quando há documentação de teste não reagente no último ano. No caso descrito, a paciente já era reagente e apresentou um aumento significativo dos títulos (de 1/4 para 1/32, uma elevação de três diluições). Quando não se pode definir com precisão o tempo de evolução da nova infecção ou da falha terapêutica, a classificação correta é sífilis latente de duração ignorada (tardia), o que exige o tratamento com três doses de penicilina benzatina, e não dose única.\n\nc) INCORRETA: É impossível realizar o manejo adequado da sífilis na gestação sem o teste não treponêmico (VDRL). O teste treponêmico costuma permanecer reagente pelo resto da vida (cicatriz sorológica) e não serve para monitorar a resposta ao tratamento. O VDRL basal e o seguimento mensal são as únicas formas de garantir que o tratamento foi eficaz e que não houve reinfecção.\n\nd) CORRETA: A conduta terapêutica de três doses e a notificação estão corretas, pois o aumento dos títulos (de 1/4 para 1/32) comprova que a paciente apresenta uma infecção ativa (reinfecção ou falha). O erro na conduta médica foi a ausência do VDRL basal no momento da primeira dose (essencial para comparar a queda posterior) e a falta de programação do seguimento mensal, que é o protocolo padrão para todas as gestantes em tratamento de sífilis.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:00.487Z"
+  },
+  {
+    "id": "AJUDA_c58c4740-1693-4b26-8cf5-7a0f984e24b4",
+    "originalId": "c58c4740-1693-4b26-8cf5-7a0f984e24b4",
+    "statement": "Com relação à síndrome nefrótica idiopática da infância, qual é a alternativa CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas anormalidades histológicas mínimas estão visíveis à microscopia óptica;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A maioria dos casos ocorre com lesões glomerulares específicas relacionadas a alguma patologia de base;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Na eletroforese de proteínas, observam-se, frequentemente, hipoalbuminemia e hirpergamaglobulinemia;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sempre nessa patologia ocorre consumo de complemento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa CORRETA é a (a).\n\nA Síndrome Nefrótica Idiopática da infância é representada, em cerca de 80% a 90% dos casos, pela Doença de Lesões Mínimas (DLM). Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a): CORRETA. Recebe o nome de Doença de Lesões Mínimas justamente porque os glomérulos apresentam aspecto normal ou com alterações insignificantes quando analisados pela microscopia óptica (MO). A alteração característica dessa patologia, que é a fusão ou apagamento dos processos podocitários, só é visível através da microscopia eletrônica.\n\nAlternativa (b): INCORRETA. Por definição, a forma \"idiopática\" não possui uma causa-base ou patologia sistêmica subjacente identificada. Além disso, a maioria dos casos não apresenta lesões glomerulares específicas na avaliação inicial por microscopia comum, como explicado na alternativa anterior.\n\nAlternativa (c): INCORRETA. Na síndrome nefrótica, ocorre, de fato, a hipoalbuminemia (devido à perda maciça de albumina na urina). Entretanto, observa-se geralmente uma hipogamaglobulinemia, pois as imunoglobulinas (como a IgG) também são perdidas na urina. Na eletroforese de proteínas, o que costuma estar aumentado são as frações alfa-2 e betaglobulinas, devido ao aumento compensatório na síntese de lipoproteínas pelo fígado.\n\nAlternativa (d): INCORRETA. A Síndrome Nefrótica Idiopática (tanto a Doença de Lesões Mínimas quanto a Glomeruloesclerose Segmentar e Focal — GESF) cursa com níveis de complemento (C3 e C4) normais. A presença de consumo de complemento (hipocomplementemia) deve direcionar a investigação para outras glomerulopatias, como a glomerulonefrite pós-estreptocócica, nefrite lúpica ou glomerulonefrite membranoproliferativa.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:00.487Z"
+  },
+  {
+    "id": "AJUDA_c58e5458-7676-4461-aaba-0abb6b278bb4",
+    "originalId": "c58e5458-7676-4461-aaba-0abb6b278bb4",
+    "statement": "No fluxograma de abordagem do paciente com suspeita de apendicite, um paciente do sexo masculino com menos de 48 horas de sintomas, peritonite localizada e apresentação clínica clássica deve ser inicialmente submetido a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "apendicectomia laparoscópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "tomografia computadorizada com contraste oral e endovenoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ultrassonografia abdominal seriada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "observação clínica com antibioticoterapia empírica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "lavagem peritoneal diagnóstico e cultura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A apendicite aguda é a principal causa de abdome agudo cirúrgico no mundo. O diagnóstico é baseado na história clínica, exame físico e, quando necessário, exames complementares. No caso descrito, temos um paciente do sexo masculino, com tempo de evolução curto (menos de 48 horas), quadro clínico clássico e sinais de irritação peritoneal localizada.\n\nAnálise das alternativas:\n\nAlternativa (a) CORRETA: Em pacientes do sexo masculino com apresentação clínica clássica de apendicite aguda, o diagnóstico é eminentemente clínico. A presença de peritonite localizada reforça a necessidade de intervenção. Nesses casos, a indicação de cirurgia (apendicectomia) é a conduta imediata. A via laparoscópica é preferível por oferecer menor dor pós-operatória, retorno mais rápido às atividades e menores taxas de infecção de ferida operatória em comparação à via aberta.\n\nAlternativa (b) INCORRETA: A tomografia computadorizada (TC) é um excelente exame de imagem, com alta sensibilidade e especificidade. No entanto, ela é reservada para casos de dúvida diagnóstica, como em pacientes idosos, obesos, apresentações atípicas ou em mulheres em idade fértil (devido aos diagnósticos diferenciais ginecológicos). No homem com clínica clássica, a TC é dispensável e pode atrasar o tratamento definitivo.\n\nAlternativa (c) INCORRETA: A ultrassonografia abdominal é um exame útil, porém operador-dependente e com menor acurácia que a TC. A observação seriada com exames de imagem só seria indicada se houvesse incerteza diagnóstica inicial, o que não ocorre em um quadro clínico clássico com peritonite.\n\nAlternativa (d) INCORRETA: O tratamento não operatório (antibioticoterapia isolada) tem sido discutido na literatura para casos selecionados de apendicite não complicada, mas ainda não é o padrão-ouro inicial, especialmente em pacientes com sinais claros de peritonite localizada, que sugerem a necessidade de controle de foco cirúrgico.\n\nAlternativa (e) INCORRETA: O lavado peritoneal diagnóstico é um procedimento utilizado quase exclusivamente no trauma abdominal contuso para identificar hemoperitôneo em pacientes instáveis. Não tem qualquer papel no fluxograma de diagnóstico ou tratamento da apendicite aguda.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:00.487Z"
+  }
+]

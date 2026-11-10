@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_7762c9d1-4eaa-42c9-8eaa-c12d45cc7218",
+    "originalId": "7762c9d1-4eaa-42c9-8eaa-c12d45cc7218",
+    "statement": "Sobre a síndrome compartimental abdominal, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desenvolve-se quando a pressão intra-abdominal (PIA) é de 10 mmHg ou superior, associada a falência orgânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Como possíveis intervenções terapêuticas, prévias à laparotomia descompressiva podemos considerar dialise precoce, utilização de relaxantes neuromusculares e descompressão gástrica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Observa-se precocemente aumento da complacencia pulmonar e necessidade de pressões ventilatórias crescentes, o que impacta reduzindo a pressão intracraniana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ocorre diminuição da taxa de filtração glomerular consequente à disfunção cardíaca gerada pelo aumento do retorno venoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Comentário sobre a Síndrome Compartimental Abdominal (SCA):\n\nA Síndrome Compartimental Abdominal (SCA) é uma condição crítica definida pela presença de uma pressão intra-abdominal (PIA) sustentada acima de 20 mmHg, associada à disfunção ou falência de órgãos. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa (a) Incorreta: Segundo as diretrizes da Sociedade Mundial de Síndrome do Compartimento Abdominal (WSACS), a SCA é caracterizada por uma PIA superior a 20 mmHg junto com uma nova disfunção orgânica. Uma PIA de 10 mmHg é considerada dentro da normalidade ou no limite superior para pacientes críticos, não sendo suficiente para o diagnóstico da síndrome.\n\nAlternativa (b) Correta: O manejo da hipertensão intra-abdominal e da SCA é escalonado. Antes de proceder para a laparotomia descompressiva, que é uma medida extrema e invasiva, deve-se tentar intervenções médicas para reduzir a pressão. Isso inclui a descompressão do conteúdo luminal (sondas gástricas e retais), a drenagem de coleções ou ascite, a otimização da volemia (podendo envolver diálise para remoção de fluidos) e a melhora da complacência da parede abdominal através de sedação profunda e uso de bloqueadores neuromusculares (relaxantes).\n\nAlternativa (c) Incorreta: O aumento da pressão abdominal empurra o diafragma para cima, o que reduz a complacência pulmonar (o pulmão torna-se mais rígido) e exige pressões ventilatórias cada vez maiores para manter a oxigenação e ventilação. Além disso, a SCA provoca o aumento da pressão intracraniana (PIC), pois a pressão intratorácica elevada dificulta o retorno venoso do sistema nervoso central através das veias jugulares.\n\nAlternativa (d) Incorreta: Na SCA, ocorre uma diminuição da taxa de filtração glomerular por múltiplos fatores: compressão direta dos rins e de suas veias e redução do débito cardíaco. A redução do débito cardíaco acontece justamente porque a pressão elevada comprime a veia cava inferior, gerando uma diminuição do retorno venoso (pré-carga), e não um aumento. Além disso, há um aumento da pós-carga por compressão arterial sistêmica.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Trauma",
+      "Síndrome do Desconforto Respiratório Agudo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:03.196Z"
+  },
+  {
+    "id": "AJUDA_7767743a-be98-4f6b-8886-49dea0ec2406",
+    "originalId": "7767743a-be98-4f6b-8886-49dea0ec2406",
+    "statement": "Paciente masculino, 25 anos, vítima de queda de nível com fratura de arcos costais. Durante a realização do ultrassom point of care (POCUS), você faz o diagnóstico de pneumotórax através de qual alteração encontrada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Linhas B coalescentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "“Lung Point”.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Presença de pulso pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Linhas A que se repetem.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para o diagnóstico de pneumotórax através do ultrassom à beira do leito (POCUS), o examinador busca identificar a perda de contato entre as pleuras visceral e parietal. A sequência diagnóstica geralmente começa com a observação do deslizamento pleural (*lung sliding*); se ele estiver ausente, a suspeita aumenta, mas a confirmação definitiva depende de sinais mais específicos.\n\nA alternativa (a) está incorreta. As Linhas B são artefatos verticais que lembram caudas de cometa e surgem da pleura visceral quando há líquido no interstício pulmonar. A presença de qualquer Linha B no ponto examinado exclui o diagnóstico de pneumotórax, pois sua formação exige que as duas pleuras estejam em contato direto.\n\nA alternativa (b) está correta. O *Lung Point* (Ponto de Pulmão) é o sinal patognomônico do pneumotórax, com especificidade próxima a 100%. Ele representa o ponto exato da transição na parede torácica onde o pulmão, que está parcialmente colapsado, volta a encostar na pleura parietal durante a inspiração. No ultrassom, visualiza-se um ponto fixo onde, de um lado, há ausência de deslizamento e, do outro, percebe-se o pulmão surgindo com o deslizamento normal.\n\nA alternativa (c) está incorreta. O pulso pulmonar é a visualização das vibrações rítmicas do coração transmitidas à linha pleural. Ele é visível apenas se as pleuras estiverem em contato. Portanto, a presença do pulso pulmonar exclui a existência de ar no espaço pleural (pneumotórax) naquela região.\n\nA alternativa (d) está incorreta. As Linhas A são artefatos horizontais de reverberação da linha pleural, característicos de um pulmão bem aerado. Elas podem estar presentes tanto em um pulmão normal quanto no pneumotórax. Por serem comuns a ambas as situações, a repetição das Linhas A não confirma o diagnóstico, embora sua presença associada à ausência de deslizamento pleural reforce a suspeita clínica.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:03.196Z"
+  },
+  {
+    "id": "AJUDA_7775eefe-a3c6-4a69-8fbd-798a964365fd",
+    "originalId": "7775eefe-a3c6-4a69-8fbd-798a964365fd",
+    "statement": "Com relação às imunodeficiências combinadas, assinale a alternativa que corresponde à principal representante de defeitos combinados associados à trombocitopenia congênita, que cursa com infecções de repetição, eczema tipo atópico e trombocitopenia com plaquetas pequenas:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome de Wiscckott-Aldrich;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de Chediak-Higashi;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de DiGeorge;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doença de Bruton.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda uma imunodeficiência primária caracterizada por uma tríade clínica muito específica: infecções de repetição, eczema e trombocitopenia com plaquetas pequenas.\n\nAlternativa A: Correta. A Síndrome de Wiskott-Aldrich (SWA) é uma imunodeficiência combinada (afeta tanto a imunidade celular quanto a humoral) ligada ao cromossomo X. Ela ocorre devido a mutações no gene WASP, que codifica a proteína de mesmo nome, essencial para a polimerização da actina e organização do citoesqueleto em células hematopoiéticas. A característica laboratorial patognomônica é a microtrombocitopenia (plaquetas com volume reduzido), que causa sangramentos desde o período neonatal. O eczema atópico costuma ser grave e as infecções recorrentes surgem devido ao defeito progressivo na função de linfócitos T e B.\n\nAlternativa B: Incorreta. A Síndrome de Chédiak-Higashi é um defeito no tráfego de vesículas intracelulares (gene LYST). Suas marcas principais são o albinismo oculocutâneo parcial, a presença de grânulos gigantes nos neutrófilos e infecções piogênicas de repetição. Não apresenta microtrombocitopenia nem o eczema característico da SWA.\n\nAlternativa C: Incorreta. A Síndrome de DiGeorge é causada por uma microdeleção no cromossomo 22q11.2, resultando em defeitos no desenvolvimento da terceira e quarta bolsas faríngeas. O quadro clínico clássico envolve malformações cardíacas, hipocalcemia por hipoparatireoidismo e deficiência de células T devido à hipoplasia ou aplasia do timo. Não está associada a defeitos plaquetários.\n\nAlternativa D: Incorreta. A Doença de Bruton (agamaglobulinemia ligada ao X) é uma imunodeficiência humoral pura decorrente de uma falha na maturação dos linfócitos B (mutação na tirosina-quinase de Bruton - BTK). O paciente apresenta níveis muito baixos ou ausentes de todas as classes de imunoglobulinas e ausência de linfócitos B circulantes, manifestando infecções bacterianas recorrentes, mas sem alterações nas plaquetas ou eczema.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:03.196Z"
+  },
+  {
+    "id": "AJUDA_778e107b-5f9e-4324-964a-fb511b54fb29",
+    "originalId": "778e107b-5f9e-4324-964a-fb511b54fb29",
+    "statement": "Homem de 46 anos de idade apresenta dispneia aos esforços e edema em membros inferiores há um mês. Eletrocardiograma: taquicardia sinusal, sem outras alterações. Rx de tórax: cardiomegalia e congestão pulmonar bilateral. Ecocardiograma: hipocinesia difusa do ventrículo esquerdo com fração de ejeção de 34%. Após melhora dos sintomas posterior ao uso de furosemida, o paciente foi tratado com enalapril, carvedilol e espironolactona em dose plena. Antes da alta hospitalar, o paciente permanece com dispneia aos grandes esforços, FC: 87 bpm e PA: 100 × 70 mmHg.\n\nA próxima prescrição de medicação a ser feita, segundo a Diretriz da Sociedade Europeia de Cardiologia de 2023, é de",
+    "options": [
+      {
+        "id": "A",
+        "text": "ivabradina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "nitrato e hidralazina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "inibidores da SGLT2.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "digitálico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O paciente descrito apresenta um quadro de insuficiência cardíaca com fração de ejeção reduzida (ICFEr), definida por uma fração de ejeção de 34% (abaixo de 40%). De acordo com as atualizações das diretrizes da Sociedade Europeia de Cardiologia (ESC), o tratamento padrão-ouro para todos os pacientes com ICFEr, visando à redução de mortalidade e de hospitalizações, baseia-se nos chamados quatro pilares da terapia medicamentosa otimizada.\n\nEsses quatro pilares são:\n1. Inibidores da enzima conversora da angiotensina (IECA), ou bloqueadores dos receptores da angiotensina (BRA), ou, preferencialmente, inibidores da neprilisina e do receptor da angiotensina (ARNI).\n2. Betabloqueadores.\n3. Antagonistas do receptor mineralocorticoide (ARM).\n4. Inibidores do SGLT2 (iSGLT2).\n\nNo caso clínico, o paciente já está em uso de enalapril (IECA), carvedilol (betabloqueador) e espironolactona (ARM). Portanto, para completar a terapia fundamental de primeira linha, falta a introdução de um inibidor do SGLT2.\n\nExplicação das alternativas:\n\na) INCORRETA. A ivabradina é uma medicação de segunda linha. Ela é indicada para pacientes em ritmo sinusal, com fração de ejeção menor ou igual a 35% e frequência cardíaca persistente acima de 70 bpm (ou 75 bpm em algumas diretrizes), mesmo após o uso de betabloqueadores na dose máxima tolerada. Embora o paciente tenha 87 bpm, a prioridade absoluta é completar os quatro pilares fundamentais (adicionando o iSGLT2) antes de considerar drogas adjuntas como a ivabradina.\n\nb) INCORRETA. A combinação de hidralazina e nitrato é indicada principalmente para pacientes que não toleram IECA ou BRA (devido à insuficiência renal ou potássio elevado) ou como terapia adicional em pacientes negros que permanecem sintomáticos apesar do tratamento triplo clássico. Não é a conduta prioritária neste momento.\n\nc) CORRETA. Os inibidores do SGLT2 (como a dapagliflozina ou empagliflozina) devem ser prescritos para todos os pacientes com ICFEr, independentemente de terem ou não diabetes mellitus. Eles demonstraram reduzir significativamente a mortalidade cardiovascular e as internações por insuficiência cardíaca. Como o paciente já usa IECA, betabloqueador e ARM, o iSGLT2 é o próximo passo obrigatório para completar o tratamento farmacológico inicial.\n\nd) INCORRETA. O digitalis (digoxina) pode ser considerado em pacientes com ICFEr que permanecem sintomáticos apesar da terapia otimizada para reduzir hospitalizações, ou para controle de frequência na fibrilação atrial. No entanto, a digoxina não reduz a mortalidade e está posicionada muito atrás dos inibidores do SGLT2 no algoritmo de tratamento atual.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:03.196Z"
+  },
+  {
+    "id": "AJUDA_779da9e7-40c4-4c57-b55c-f318bb1f3313",
+    "originalId": "779da9e7-40c4-4c57-b55c-f318bb1f3313",
+    "statement": "Lactente de 58 dias, nascido a termo, previamente saudável, chega com febre de 38,6 graus há 6 horas. Está ativo, perfundido, sem sinais respiratórios ou neurológicos. Exame físico normal. A família mora a 2 horas do hospital. Ainda não foram coletados exames. Qual é a principal razão para investigação criteriosa nessa faixa etária?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A maioria dos casos nessa idade é causada por pneumonia bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A apresentação clínica pode ser pouco específica, e infecção bacteriana invasiva ou urinária pode ocorrer mesmo em lactente aparentemente bem.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A ausência de foco exclui infecção urinária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Exame físico normal permite alta sem exames em todos os lactentes menores de 2 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Febre abaixo de 39 graus tem menor relevância nessa idade para o diagnóstico de sepse.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Tema: Febre sem sinais de localização no lactente jovem (menor de 3 meses).\n\nLactentes com menos de 60 a 90 dias de vida apresentam imaturidade imunológica relativa e menor capacidade de limitar processos infecciosos, além de manifestarem sintomas de forma inespecífica e sutil, mesmo diante de quadros potencialmente graves.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. A maioria das infecções febris nessa faixa etária é de etiologia viral. A pneumonia bacteriana é uma possibilidade, mas não representa a causa mais comum, além de o paciente não apresentar queixas ou sinais respiratórios.\n\nAlternativa b: Correta. Devido a imaturidade clinica e imunologica, o lactente jovem pode apresentar infeccoes bacterianas graves (como infeccao urinaria, bacteremia oculta e meningite) apenas com febre isolada, mantendo-se em bom estado geral e com exame fisico normal nas fases iniciais. Por essa razAo, ha necessidade de estratificacao criteriosa e exames complementares.\n\nAlternativa c: Incorreta. A infeccao do trato urinario e a causa bacteriana mais frequente de febre sem sinais de localizacao nessa idade. A ausencia de achados focais no exame fisico e a regra, nao excluindo o diagnostico e tornando a coleta de urina essencial.\n\nAlternativa d: Incorreta. O exame fisico normal, isoladamente, nao autoriza a alta sem investigacao laboratorial em lactentes com menos de 60 dias. E mandatorio aplicar protocolos de estratificacao de risco que incluem exames laboratoriais basicos para definir se o manejo podera ser ambulatorial ou hospitalar.\n\nAlternativa e: Incorreta. Em menores de 3 meses, qualquer temperatura aferida igual ou superior a 38,0 graus e clinicamente significativa e exige avaliacao. Temperaturas abaixo de 39,0 graus nao afastam infeccao bacteriana invasiva ou sepse nessa faixa etaria.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Febre na Pediatria",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:03.196Z"
+  },
+  {
+    "id": "AJUDA_77a08e80-9b65-4ae9-b30f-6ea69919bf5c",
+    "originalId": "77a08e80-9b65-4ae9-b30f-6ea69919bf5c",
+    "statement": "Um homem de 28 anos busca a emergência queixando-se de febre e dor articular. Refere início do quadro há três dias, com febre de 39ºC, astenia e artralgia, inicialmente localizada em joelho direito, progredindo para punho e joelho esquerdos. Relata episódio de corrimento uretral autolimitado há duas semanas. Ao exame, apresenta dor, edema e eritema em joelho esquerdo, além de lesões pustulares em tronco e membros. Foi realizada artrocentese diagnóstica que evidenciou 30.000 leucócitos, com 95% de polimorfonucleares. Considerando o diagnóstico mais provável, a terapia inicial mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "prednisona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ceftriaxona",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "colchicina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "oxacilina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresenta um paciente jovem com febre, poliartralgia migratória que evoluiu para monoartrite do joelho, associada a lesões pustulares e antecedente de corrimento uretral há duas semanas. Esse conjunto de achados é clássico da Infecção Gonocócica Disseminada (IGD), causada pela bactéria Neisseria gonorrhoeae. A IGD manifesta-se frequentemente por meio de uma tríade característica: tenossinovite, dermatite (pústulas) e poliartralgia, ou pode se apresentar como uma artrite séptica purulenta localizada. O líquido sinovial com 30.000 leucócitos e predomínio de polimorfonucleares corrobora um processo infeccioso agudo, sendo que na infecção gonocócica os valores de leucócitos podem ser ligeiramente menores do que na artrite séptica estafilocócica tradicional.\n\nAlternativa a: Incorreta. A prednisona é um corticosteroide indicado para doenças de etiologia inflamatória ou autoimune, como a artrite reumatoide ou o lúpus eritematoso sistêmico. No caso apresentado, os sinais de infecção (febre, pústulas e história de uretrite) tornam o uso de corticoides isolados contraindicado, pois não tratariam a causa-base e poderiam mascarar ou agravar o quadro infeccioso.\n\nAlternativa b: Correta. A ceftriaxona, uma cefalosporina de terceira geração, é o tratamento de escolha para a infecção gonocócica disseminada. Devido aos altos índices de resistência da Neisseria gonorrhoeae a outros antibióticos (como as quinolonas e penicilinas), a ceftriaxona é a terapia inicial recomendada para garantir a eficácia contra o agente etiológico mais provável neste contexto clínico.\n\nAlternativa c: Incorreta. A colchicina é utilizada principalmente no manejo de crises de gota ou pseudogota (artropatias por depósito de cristais). Embora a contagem de leucócitos no líquido sinovial possa ser compatível com gota, a presença de febre alta, lesões de pele pustulares e o antecedente de corrimento uretral apontam diretamente para uma etiologia infecciosa por patógeno sexualmente transmissível.\n\nAlternativa d: Incorreta. A oxacilina é um antibiótico direcionado para cocos Gram-positivos, especialmente o Staphylococcus aureus sensível à meticilina. Embora o Staphylococcus aureus seja a causa mais comum de artrite séptica não gonocócica na população geral, ele raramente causa o padrão de poliartralgia migratória com lesões pustulares e uretrite prévia, que são manifestações típicas do gonococo em adultos jovens sexualmente ativos.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Artropatias Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:03.196Z"
+  },
+  {
+    "id": "AJUDA_77ad65e1-0aea-4416-8c4e-bc8d19d8a5a8",
+    "originalId": "77ad65e1-0aea-4416-8c4e-bc8d19d8a5a8",
+    "statement": "No contexto da atenção domiciliar vinculada à APS e considerando a normatização vigente no Brasil, analise as assertivas a seguir:\n\nI. O cuidado domiciliar pode ser indicado para indivíduos com limitações temporárias ou permanentes na mobilidade, visando promover reabilitação e manutenção da autonomia funcional no ambiente domiciliar.\nII. A internação domiciliar destina-se a pacientes com quadro clínico instável, que necessitem de suporte ventilatório avançado ou monitorização intensiva, substituindo o ambiente hospitalar.\nIII. O acompanhamento domiciliar é direcionado a pacientes que requerem intervenções periódicas ou paliativas, incluindo aqueles em tratamento crônico avançado ou com limitações para deslocamento até as unidades de saúde.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II, III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Atenção Domiciliar (AD) no Sistema Único de Saúde (SUS) é regulamentada pelas diretrizes do Serviço de Atenção Domiciliar (SAD / Programa Melhor em Casa) e dividida nas modalidades AD1 (sob responsabilidade das equipes de Atenção Primária/Saúde da Família), AD2 e AD3 (sob responsabilidade das Equipes Multiprofissionais de Atenção Domiciliar - EMAD/EMAP).\n\nAnálise das assertivas:\n\nAssertiva I está correta. A modalidade AD1 atende indivíduos com incapacidade funcional temporária ou permanente de deslocamento até a Unidade Básica de Saúde, mas com quadros clínicos controlados, focando em reabilitação, autocuidado e manutenção da autonomia no domicílio.\n\nAssertiva II está incorreta. A estabilidade clínica é pré-requisito indispensável para qualquer modalidade de atenção ou internação domiciliar. Pacientes com instabilidade hemodinâmica, necessidade de monitorização intensiva ou suporte ventilatório invasivo em fase crítica devem ser mantidos em ambiente hospitalar (como em leitos de UTI ou semi-intensivos), pois o domicílio não oferece suporte para quadros instáveis.\n\nAssertiva III está correta. O acompanhamento domiciliar engloba pacientes com condições crônicas agudizadas ou avançadas, necessidades de cuidados paliativos e procedimentos periódicos (como curativos complexos ou suporte nutricional), sempre associado à limitação para locomoção até o serviço de saúde.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta, pois a assertiva II está errada ao indicar a internação domiciliar para quadros clinicamente instáveis e que necessitam de cuidados intensivos.\n\nAlternativa b: Correta, pois apenas as assertivas I e III refletem adequadamente os objetivos e as indicações da atenção domiciliar na APS e no SAD.\n\nAlternativa c: Incorreta, pois a assertiva II está errada e a assertiva I é verdadeira.\n\nAlternativa d: Incorreta, pois a assertiva II está errada e foi incluído um item IV inexistente no enunciado da questão.\n\nGabarito: Letra b.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:03.196Z"
+  },
+  {
+    "id": "AJUDA_77bb35c9-370a-4c9c-b60c-4245f92d6c69",
+    "originalId": "77bb35c9-370a-4c9c-b60c-4245f92d6c69",
+    "statement": "M.J.S.S., sexo feminino, 3 anos, procura atendimento médico no Hospital Público Municipal com quadro de febre baixa, disúria e polaciúria, mantendo bom estado geral. Colhida urina de jato médio com técnica e higiene adequados e EAS com incontáveis piócitos. Cultura de urina também colhida. Foi diagnosticada com Infecção do Trato Urinário e optado por tratamento domiciliar.\n\nQual antibiótico não seria indicado para a paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cefuroxima",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cefaclor",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Amoxicilina + Clavulanato",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nitrofurantoína",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Sulfametoxazol+Trimetoprim",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve uma criança de 3 anos com Infecção do Trato Urinário (ITU) associada a febre, mesmo que baixa. Em pediatria, a presença de febre em uma criança com ITU deve ser encarada com cautela, pois frequentemente sinaliza o envolvimento do parênquima renal (pielonefrite). O tratamento medicamentoso deve, portanto, garantir concentrações terapêuticas não apenas na urina, mas também no tecido renal e na corrente sanguínea.\n\nAlternativa a) Cefuroxima: Está incorreta para o comando da questão porque é um antibiótico indicado. A cefuroxima é uma cefalosporina de segunda geração com excelente penetração tecidual e boa cobertura para os principais uropatógenos, como a E. coli, sendo uma opção segura para tratamento oral domiciliar.\n\nAlternativa b) Cefaclor: Está incorreta para o comando da questão porque é um antibiótico indicado. Trata-se de outra cefalosporina de segunda geração amplamente utilizada em pediatria para infecções urinárias, apresentando bons níveis séricos e teciduais.\n\nAlternativa c) Amoxicilina + Clavulanato: Está incorreta para o comando da questão porque é um antibiótico indicado. A adição do clavulanato expande o espectro da amoxicilina contra bactérias produtoras de betalactamase. É uma droga que atinge o parênquima renal e é eficaz no tratamento de ITUs febris.\n\nAlternativa d) Nitrofurantoína: É a alternativa correta (o antibiótico que não deve ser indicado). A nitrofurantoína é considerada um antisséptico urinário. Sua farmacocinética caracteriza-se por uma absorção rápida e excreção urinária imediata, o que gera ótimas concentrações na bexiga, mas níveis teciduais e séricos insignificantes. Por não atingir o parênquima renal, ela é ineficaz para tratar pielonefrites e não previne complicações sistêmicas ou cicatrizes renais em crianças com febre. Seu uso é restrito a cistites (infecções baixas afebris) ou profilaxia.\n\nAlternativa e) Sulfametoxazol + Trimetoprim: Está incorreta para o comando da questão porque, teoricamente, pode ser indicado. Embora existam altos índices de resistência bacteriana a essa droga em diversas regiões, ela é um antibiótico de ação sistêmica que atinge o tecido renal. Caso o padrão de sensibilidade local permita ou a cultura confirme a sensibilidade, ela pode ser utilizada no tratamento da ITU pediátrica.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:03.196Z"
+  },
+  {
+    "id": "AJUDA_77c00012-44b1-4b5c-b451-6aabe99454af",
+    "originalId": "77c00012-44b1-4b5c-b451-6aabe99454af",
+    "statement": "Os cuidados e procedimentos para pessoas com diabetes, nos diversos níveis de atenção à saúde do SUS, são múltiplos. Considerando essa informação, assinale a alternativa correta sobre o teste com o diapasão.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tem a finalidade de avaliar o sistema nervoso periférico e deve ser realizado em hospital por causa das eventuais complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de um teste com a finalidade de avaliar o sistema vascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tem a finalidade de avaliar a sensibilidade vibratória e pode ser realizado na atenção básica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de um teste de alta complexidade, realizado em hospitais, com a finalidade de testar a sensação de pressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pode ser realizado na atenção básica e consiste em encostar o diapasão no polegar direito.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO teste com o diapasão de 128 Hz é uma ferramenta fundamental no rastreamento da neuropatia diabética periférica, integrando o exame físico sistemático do pé diabético. O objetivo principal deste instrumento é avaliar a integridade das fibras nervosas grossas mielinizadas, responsáveis pela sensibilidade vibratória (palestesia).\n\nJUSTIFICATIVA DA ALTERNATIVA CORRETA\n\nAlternativa C: Esta alternativa está correta porque define com precisão a finalidade do teste (sensibilidade vibratória) e o local adequado para sua execução (atenção básica). De acordo com as diretrizes do Ministério da Saúde e da Sociedade Brasileira de Diabetes, a avaliação anual dos pés de pacientes com diabetes deve ser realizada preferencialmente na Unidade Básica de Saúde, utilizando ferramentas simples como o diapasão e o monofilamento.\n\nANÁLISE DAS ALTERNATIVAS INCORRETAS\n\nAlternativa A: Embora o teste avalie uma parte do sistema nervoso periférico, a afirmação está incorreta ao sugerir a necessidade de ambiente hospitalar. O teste é não invasivo, rápido e totalmente isento de complicações, sendo ideal para a prática ambulatorial e de atenção primária.\n\nAlternativa B: O diapasão avalia a função neurológica sensorial. A avaliação do sistema vascular no paciente diabético é realizada por meio da palpação de pulsos (pedioso e tibial posterior), verificação da temperatura cutânea, tempo de enchimento capilar e, quando indicado, o cálculo do Índice Tornozelo-Braquial (ITB).\n\nAlternativa D: O teste com diapasão é de baixa complexidade técnica e baixo custo. Além disso, a alternativa confunde as ferramentas: o que testa a sensação de pressão (sensibilidade pressórica ou protetora) é o monofilamento de Semmes-Weinstein de 10 g, enquanto o diapasão testa a vibração.\n\nAlternativa E: Apesar de poder ser realizado na atenção básica, a técnica correta de rastreio envolve aplicar o diapasão na face dorsal da falange distal do hálux (primeiro dedo do pé), bilateralmente. O polegar da mão pode até ser usado no início do exame apenas para que o paciente reconheça e entenda a sensação da vibração, mas o teste diagnóstico propriamente dito deve ser realizado nos pés.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:03.196Z"
+  },
+  {
+    "id": "AJUDA_77cdc38c-2dec-461d-b5ac-af09be96e15b",
+    "originalId": "77cdc38c-2dec-461d-b5ac-af09be96e15b",
+    "statement": "As causas monogênicas de obesidade são mais raras, mas devem ser lembradas como diagnóstico diferencial. Em que situações devemos pensar em investigar obesidade monogênica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obesidade associada à puberdade antecipada em meninas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Obesidade precoce e grave associada a atraso do desenvolvimento neuropsicomotor",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Obesidade de início tardio associada à alta estatura",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Associação com resistência à insulina, alta estatura e síndrome de ovários policísticos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Obesidade associada ao histórico familiar forte e alimentação com dieta rica em ultraprocessados desde a introdução alimentar",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A obesidade monogênica é uma forma rara de obesidade causada pela mutação de um único gene, geralmente envolvendo a via de sinalização da leptina-melanocortina no hipotálamo, que é responsável pelo controle da fome e da saciedade. Diferente da obesidade comum (poligênica), ela apresenta características clínicas marcantes que devem disparar a suspeita diagnóstica.\n\nAlternativa (a) INCORRETA: A obesidade comum (exógena ou poligênica) em meninas é frequentemente associada à puberdade antecipada, pois o excesso de tecido adiposo aumenta a conversão periférica de estrogênios e altera a pulsatilidade do GnRH. Em contrapartida, muitas formas de obesidade monogênica, como a deficiência congênita de leptina, estão associadas ao hipogonadismo hipogonadotrófico, resultando em ausência ou atraso de maturação sexual.\n\nAlternativa (b) CORRETA: Esta é a apresentação clássica que deve levantar a suspeita de causas genéticas. O início muito precoce (geralmente antes dos 5 anos de idade), a gravidade do quadro (desvio padrão do IMC muito elevado) e a presença de hiperfagia extrema (fome insaciável) são sinais de alerta. Quando há atraso no desenvolvimento neuropsicomotor ou outras malformações, suspeita-se de obesidade monogênica sindrômica, como na Síndrome de Prader-Willi ou na Síndrome de Bardet-Biedl.\n\nAlternativa (c) INCORRETA: A obesidade monogênica manifesta-se tipicamente na primeira infância. Um início tardio (na adolescência ou vida adulta) é característico da obesidade multifatorial relacionada ao estilo de vida. Embora algumas mutações (como no gene MC4R) possam cursar com aumento da velocidade de crescimento e alta estatura, o início tardio invalida a principal suspeita de causa monogênica.\n\nAlternativa (d) INCORRETA: Resistência à insulina, síndrome dos ovários policísticos (SOP) e alta estatura são achados comuns na obesidade poligênica. A SOP e a resistência insulínica são complicações metabólicas do excesso de adiposidade e do ambiente inflamatório crônico, não sendo marcadores específicos de defeitos em genes únicos da via da saciedade.\n\nAlternativa (e) INCORRETA: Esta alternativa descreve o cenário mais prevalente da obesidade na atualidade: a obesidade poligênica influenciada por um ambiente obesogênico. O histórico familiar forte reflete a herança de vários genes de pequeno efeito, enquanto a dieta rica em ultraprocessados desde a introdução alimentar aponta para o fator ambiental determinante, e não para uma falha genética pontual.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Obesidade na Infância e na Adolescência",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:03:03.196Z"
+  }
+]

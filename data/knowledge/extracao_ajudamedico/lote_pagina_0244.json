@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_440b3471-ff17-4b6f-838e-c3dbe2435c96",
+    "originalId": "440b3471-ff17-4b6f-838e-c3dbe2435c96",
+    "statement": "Jovem, usuário de álcool, há meses atendido no serviço de saúde pela equipe de saúde da família, sem sucesso na manutenção da abstinência alcóolica. Hoje, foi encontrado morto, pelo vizinho, na sala de sua casa, após 3 dias em estado de embriaguez. Diante disso, em relação ao preenchimento da Declaração de Óbito (DO), o médico de família e comunidade:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não deve preencher a DO, por ser uma obrigação exclusiva do médico legista;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Deve prontamente preencher a declaração de óbito, já que conhece a história do falecido;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não deve preencher a DO, já que o falecido se encontrava em estado vulnerável e o diagnóstico atual é desconhecido;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve preencher a DO mesmo que não foi chamado para examinar o corpo porque é médico daquela comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda as normas para o preenchimento da Declaração de Óbito (DO) no Brasil, especificamente em casos de morte suspeita ou por causas externas.\n\nO ponto central para resolver a questão é identificar a natureza do óbito. O paciente é jovem e foi encontrado morto após três dias de embriaguez. Essa situação caracteriza uma morte não natural ou com suspeita de causas externas (como intoxicação exógena aguda, quedas ou outras violências). Em casos de morte violenta ou suspeita, a competência para o preenchimento da DO é exclusiva do Instituto Médico Legal (IML), independentemente de o médico da família conhecer o histórico clínico do paciente.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Por se tratar de uma morte com forte suspeita de causa externa (intoxicação alcoólica ou possível acidente/violência associada), o corpo deve ser encaminhado ao Instituto Médico Legal. O médico assistente ou da Estratégia de Saúde da Família não deve assinar a DO nesses casos, sendo esta uma atribuição do médico legista após a necropsia.\n\nAlternativa b) Incorreta. O conhecimento prévio da história clínica (alcoolismo) não autoriza o médico a atestar o óbito em casos de morte suspeita. O preenchimento da DO por um médico que não seja legista nessas circunstâncias pode ocultar crimes ou acidentes, o que é vedado pelas normas do Conselho Federal de Medicina (CFM) e pela legislação vigente.\n\nAlternativa c) Incorreta. Embora o diagnóstico atual seja desconhecido, o motivo principal para não preencher a DO não é a vulnerabilidade do falecido, mas sim a natureza jurídica do óbito (suspeita de causa externa), que desloca a responsabilidade legal para o serviço de perícia oficial (IML).\n\nAlternativa d) Incorreta. Um médico nunca deve preencher uma DO sem ter examinado pessoalmente o corpo. Além disso, o fato de ser médico da comunidade não lhe confere autoridade para atestar óbitos que fujam da causa natural. Mortes suspeitas devem ser obrigatoriamente periciadas pelo IML.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:01.611Z"
+  },
+  {
+    "id": "AJUDA_4419bcaa-e120-430f-a245-6f9596ac9633",
+    "originalId": "4419bcaa-e120-430f-a245-6f9596ac9633",
+    "statement": "Uma cidade de médio porte no interior do Amazonas possui um quantitativo crescente de idosos com um aumento nos casos de diabetes entre seus habitantes. A maioria das UBS para acompanhamento e tratamento de diabetes está localizada no centro desta cidade, oferecendo consultas e exames em horários limitados... Já nos bairros da periferia, onde vivem muitos idosos de baixa renda, o acesso ao tratamento é limitado... O cenário gera uma desigualdade de acesso ao tratamento... Diante desse cenário, qual princípio do SUS o gestor de saúde deve considerar para garantir que idosos com diabetes, independentemente de onde vivem, tenham acesso igualitário a acompanhamento e tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Integralidade, para garantir que todos os serviços de saúde, como consultas e exames, estejam disponíveis para toda a população da cidade igualmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Eficiência, para que os recursos de saúde sejam aplicados de maneira a reduzir custos e otimizar o atendimento em todas as regiões da cidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Universalidade, para que todos os cidadãos, independentemente de onde moram, possam ter acesso aos mesmos serviços de saúde sem qualquer forma de discriminação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Equidade, para que a distribuição dos serviços de saúde leve em conta as necessidades específicas da comunidade em relação aos casos de diabetes, proporcionando a essa população maior atenção e recursos de saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para entender qual princípio do SUS deve ser aplicado, precisamos focar na palavra-chave do enunciado: desigualdade de acesso. O cenário descreve que, embora o serviço exista, ele não chega de forma justa a quem mais precisa (idosos de baixa renda na periferia), evidenciando uma barreira geográfica e socioeconômica.\n\nAnálise das alternativas:\n\na) Incorreta. A Integralidade refere-se à visão holística do paciente, garantindo ações que vão desde a prevenção até a reabilitação, em todos os níveis de complexidade (primário, secundário e terciário). Embora o gestor precise garantir os serviços, o foco do problema narrado é a barreira de acesso para uma população específica, e não a falta de um conjunto de ações de saúde.\n\nb) Incorreta. A Eficiência é um princípio da administração pública que busca a melhor utilização dos recursos públicos para obter os melhores resultados possíveis. Apesar de ser importante para a gestão, ela não é o princípio doutrinário do SUS voltado para a correção de disparidades sociais e de acesso.\n\nc) Incorreta. A Universalidade estabelece que a saúde é um direito de todos e dever do Estado, sem qualquer distinção. No entanto, a universalidade garante o direito ao acesso, mas não foca na estratégia de como distribuir os recursos para compensar as desigualdades. O enunciado pede o princípio que orienta a redução da desigualdade instalada.\n\nd) Correta. A Equidade é o princípio que reconhece que as pessoas são diferentes e possuem necessidades distintas. \"Tratar desigualmente os desiguais\" para alcançar a justiça social. No caso da cidade no Amazonas, aplicar a equidade significa priorizar recursos e serviços para a periferia e para os idosos com maior dificuldade de locomoção e menor renda, garantindo que eles tenham as mesmas oportunidades de tratamento que quem vive no centro. A equidade busca justamente diminuir as vulnerabilidades e desigualdades de acesso.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:01.611Z"
+  },
+  {
+    "id": "AJUDA_4425a32e-2dd5-44ef-b3e8-5dcf86959e6a",
+    "originalId": "4425a32e-2dd5-44ef-b3e8-5dcf86959e6a",
+    "statement": "Ana, 14 meses, é levada à unidade de saúde pelos pais devido a febre alta (39,2°C) iniciada há 4 dias, acompanhada de tosse persistente, coriza e conjuntivite. No terceiro dia de febre, surgiram pequenas manchas avermelhadas na face, que evoluíram para o tronco e membros. A criança não recebeu a dose de MMR (tríplice viral). Ao exame físico: Sinais vitais: FC 130 bpm, FR 28 irpm, PA 90/55 mmHg, temperatura 39°C, Conjuntivas hiperemiadas, mucosa oral com pequenas lesões esbranquiçadas na região bucal (manchas de Koplik), Manchas maculopapulares difusas no tronco e membros, Estado geral: alerta, mas irritável.\n\nCom base no caso clínico acima, assinale a alternativa mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A doença descrita é compatível com sarampo; deve-se notificar imediatamente, oferecer suporte clínico e vacinar contatos suscetíveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A criança está protegida contra sarampo, pois a doença é benigna; não há necessidade de vacinação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico de sarampo só pode ser confirmado após exame sorológico; até lá, não há necessidade de medidas de isolamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento específico com antivirais é obrigatório para todas as crianças com sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Como a criança apresenta lesões cutâneas, a administração da vacina MMR deve ser adiada por pelo menos 30 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise Clínica do Caso:\nO quadro clínico descrito é clássico de sarampo, uma doença exantemática viral aguda e altamente contagiosa. A paciente apresenta a tríade prodrômica característica (tosse, coriza e conjuntivite), febre alta e o sinal patognomônico da doença: as manchas de Koplik (pequenas lesões esbranquiçadas na mucosa oral, precedendo o exantema). O exantema é maculopapular com progressão cefalocaudal, surgindo após alguns dias de pródromo febril. A ausência da vacina MMR (Tríplice Viral), que deveria ter sido aplicada aos 12 meses, reforça a suspeita diagnóstica.\n\nAnálise das Alternativas:\n\nAlternativa A (Correta): O diagnóstico clínico é de sarampo. Por ser uma doença de alta transmissibilidade e com potencial de surtos, a notificação às autoridades de saúde deve ser imediata (em até 24 horas). O tratamento consiste em suporte clínico (hidratação, antitérmicos) e suplementação de vitamina A. O bloqueio vacinal (vacinação de contatos suscetíveis acima de 6 meses de idade) deve ser realizado em até 72 horas após a exposição para tentar prevenir a doença ou atenuar sua gravidade.\n\nAlternativa B (Incorreta): O sarampo não é uma doença benigna. Pode evoluir com complicações graves, como pneumonia (principal causa de morte em crianças), otite média aguda, encefalite e cegueira. A vacinação é a principal medida de prevenção e é fundamental para o controle da doença na população.\n\nAlternativa C (Incorreta): Embora a confirmação laboratorial (sorologia IgM/IgG ou PCR) seja necessária para o monitoramento epidemiológico, as medidas de controle de saúde pública (isolamento respiratório e bloqueio vacinal) devem ser iniciadas imediatamente diante da suspeita clínica, sem aguardar os resultados dos exames, devido ao alto risco de contágio.\n\nAlternativa D (Incorreta): Não existe tratamento antiviral específico para o vírus do sarampo. O manejo é baseado em medidas de suporte e, fundamentalmente, na administração de vitamina A, que reduz a morbidade e a mortalidade associadas à doença. Antibióticos são indicados apenas em caso de infecções bacterianas secundárias comprovadas.\n\nAlternativa E (Incorreta): A criança já está com a doença em curso, portanto, a vacinação neste momento não terá efeito terapêutico para ela. No entanto, o conceito de adiar a vacina por 30 dias devido a lesões cutâneas não se aplica como conduta padrão para o controle do surto. O foco deve ser o isolamento da paciente e a vacinação imediata dos contatos próximos que não possuem esquema vacinal completo. Além disso, a presença de febre aguda é uma contraindicação temporária geral para vacinas, devendo-se aguardar a melhora do quadro clínico.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:01.611Z"
+  },
+  {
+    "id": "AJUDA_44296ea4-027d-4abe-9017-3fa0226036b4",
+    "originalId": "44296ea4-027d-4abe-9017-3fa0226036b4",
+    "statement": "Paciente portador de obesidade grau I apresenta regurgitação recorrente e há mais de 6 meses faz uso em dose dobrada de inibidor de bomba de prótons. Realizou uma endoscopia digestiva alta (EDA), que mostrou gastrite enantematosa de grau moderado, com pesquisa de Helicobacter pylori negativa ao método de Giemsa. Apresenta hérnia de hiato por deslizamento de volume moderado. Ao optar-se pelo tratamento cirúrgico com fundoplicatura de Nissen (com válvula de 360 graus), é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Essa abordagem facilita o acesso ao baço e dificulta o acesso aos vasos gástricos curtos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A dissecção do pilar direito é realizada abrindo o pequeno omento e mobilizando até a membrana frenoesofágica esquerda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Após a mobilização do fundo gástrico, a reflexão peritoneal do hiato e a membrana frenoesofágica são incisadas anteriormente ao pilar esquerdo, evitando lesão do esôfago e do nervo vago posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A válvula criada a partir da face posterior do fundo gástrico é de uma extensão de 7-10cm, com 3 ou 4 pontos simples de fio absorvível.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a técnica cirúrgica da fundoplicatura de Nissen, indicada neste caso devido à Doença do Refluxo Gastroesofágico (DRGE) refratária ao tratamento clínico (uso de dose dobrada de IBP sem sucesso) e à presença de hérnia de hiato em paciente obeso.\n\nAlternativa (a) Incorreta: O objetivo da fundoplicatura não é acessar o baço. Na verdade, o baço é uma estrutura de risco que deve ser preservada durante o procedimento para evitar hemorragias. Além disso, a técnica frequentemente exige a ligadura dos vasos gástricos curtos para permitir uma mobilização adequada do fundo gástrico, criando uma válvula sem tensão (técnica de \"Floppy Nissen\"); portanto, o acesso a esses vasos é fundamental e não dificultado.\n\nAlternativa (b) Correta: Esta alternativa descreve corretamente a etapa inicial da dissecção do hiato por videolaparoscopia. O procedimento começa habitualmente com a abertura do pequeno omento na sua porção delgada (pars flaccida). Isso permite a identificação e exposição do pilar diafragmático direito. A partir daí, a dissecção prossegue superiormente, cruzando a linha média e progredindo para a esquerda, onde a membrana frenoesofágica é aberta para mobilizar o esôfago e o pilar esquerdo.\n\nAlternativa (c) Incorreta: A incisão da membrana frenoesofágica e da reflexão peritoneal deve ser ampla o suficiente para permitir a mobilização de pelo menos 3 a 4 cm de esôfago abdominal. O nervo vago posterior deve ser cuidadosamente identificado e mantido junto ao esôfago (dentro da válvula) para evitar sua lesão acidental. A descrição da incisão apenas \"anterior ao pilar esquerdo\" está incompleta e não define a técnica de isolamento do esôfago.\n\nAlternativa (d) Incorreta: Existem dois erros principais nesta alternativa. Primeiro, a extensão da válvula de Nissen deve ser curta, medindo entre 2 e 3 cm. Uma válvula de 7 a 10 cm causaria uma obstrução mecânica severa e disfagia persistente. Segundo, os pontos realizados na fundoplicatura e na hiatoplastia (fechamento dos pilares) devem ser feitos preferencialmente com fios inabsorvíveis (como poliéster ou polipropileno) para garantir a durabilidade da correção anatômica, e não fios absorvíveis.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:01.611Z"
+  },
+  {
+    "id": "AJUDA_442aecd7-20e7-44f9-95c0-fe89615b5228",
+    "originalId": "442aecd7-20e7-44f9-95c0-fe89615b5228",
+    "statement": "Criança de 5 anos com febre e dor de garganta é diagnosticada com faringite estreptocócica. Qual é o antibiótico de primeira linha indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amoxicilina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Azitromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cefalexina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Claritromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A faringite estreptocócica é causada pela bactéria *Streptococcus pyogenes* (estreptococo beta-hemolítico do grupo A). O tratamento antibiótico tem como objetivos principais a prevenção de complicações não supurativas, sendo a febre reumática a mais grave, além de reduzir o período de sintomas, prevenir complicações supurativas locais e diminuir a transmissibilidade da doença.\n\nAlternativa A: Correta. A amoxicilina é considerada o antibiótico de primeira linha para o tratamento da faringite estreptocócica na infância. Embora a penicilina V oral seja o padrão histórico, a amoxicilina é amplamente preferida na prática clínica pediátrica devido à sua eficácia comparável, melhor palatabilidade da suspensão oral e possibilidade de regimes posológicos mais simples (uma ou duas vezes ao dia). Importante destacar que o *S. pyogenes* mantém sensibilidade universal aos betalactâmicos.\n\nAlternativa B: Incorreta. A azitromicina pertence à classe dos macrolídeos. Ela é indicada apenas como droga de segunda linha, reservada especificamente para pacientes que possuem alergia grave (hipersensibilidade imediata/anafilaxia) à penicilina. O seu uso como primeira escolha não é recomendado devido às taxas crescentes de resistência bacteriana.\n\nAlternativa C: Incorreta. A cefalexina é uma cefalosporina de primeira geração. Embora seja eficaz contra o estreptococo, ela é recomendada como alternativa apenas para pacientes alérgicos à penicilina que não apresentam histórico de reações anafiláticas. Não é a droga de escolha inicial para a população geral.\n\nAlternativa D: Incorreta. A claritromicina, assim como a azitromicina, é um macrolídeo indicado somente em casos de contraindicação formal ao uso de betalactâmicos. Não deve ser utilizada como primeira linha devido ao perfil de resistência e maior custo em relação à amoxicilina.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:01.611Z"
+  },
+  {
+    "id": "AJUDA_4430f451-46cc-4a6c-afef-6f89a327f779",
+    "originalId": "4430f451-46cc-4a6c-afef-6f89a327f779",
+    "statement": "Homem de 62 anos, diabético, foi submetido a colecistectomia, seguida de colangiopancreatografia retrógrada endoscópica com retirada de cálculo em colédoco, há 3 semanas. Após alta, retorna à emergência hospitalar com queixa de febre, prostração e dor em hipocôndrio direito. Exames revelam: paciente febril; dor à palpação em hipocôndrio direito; hepatimetria de 4 cm do rebordo costal; ausência de dor à descompressão brusca. Os resultados do hemograma são apresentados a seguir.\n\n| Exame | Resultado | Valor de referência |\n|---|---|---|\n| Leucócitos | 18.000/mm³ | 4.450 a 10.950 /mm³ |\n| Bastonetes | 12% | 0,5 a 6,0 % |\n| Neutrófilos | 50% | 42,10 a 73,60 % |\n| Linfócitos | 20% | 19,50 a 47,30 % |\n| Basófilos | 3% | 0,20 a 1,20% |\n\nÉ indicada internação hospitalar, além de antibioticoterapia venosa. Realizada tomografia de abdome, apresentada na seguinte figura.\n\nTomografia de abdome superior\n\nConsiderando-se a principal hipótese diagnóstica e a evolução clínica descrita, qual é o manejo para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter tratamento clínico, ampliando o esquema de antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar sorologia para amebíase e associar antibiótico específico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Propor reabordagem cirúrgica e exploração de vias biliares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar para drenagem percutânea guiada por imagem.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico principal: abscesso hepático piogênico, provavelmente de origem biliar (colangite ascendente), após manipulação da via biliar por CPRE com retirada de cálculo.\n\nRaciocínio clínico\n\nO paciente reúne vários fatores de risco para abscesso hepático piogênico: idade acima de 60 anos, diabetes mellitus e manipulação recente da via biliar (colecistectomia seguida de CPRE com extração de cálculo coledociano). A via biliar é a principal porta de entrada desses abscessos, geralmente por bactérias entéricas (E. coli, Klebsiella, enterococos, anaeróbios).\n\nO quadro é típico: febre, prostração, dor em hipocôndrio direito e hepatomegalia (fígado palpável a 4 cm do rebordo costal). A ausência de descompressão brusca dolorosa afasta peritonite difusa. O hemograma mostra leucocitose (18.000/mm³) com desvio à esquerda (bastonetes 12%), compatível com infecção bacteriana.\n\nAnálise da imagem\n\nA tomografia de abdome superior mostra, no lobo hepático direito, uma lesão hipodensa, de contornos lobulados e irregulares, com septações internas e aspecto multiloculado (\"em cacho\"). Esse padrão é característico de abscesso piogênico. Trata-se de coleção única e volumosa, acessível por via percutânea.\n\nManejo\n\nO tratamento padrão do abscesso hepático piogênico combina antibioticoterapia venosa de amplo espectro com drenagem da coleção. Para abscessos maiores que cerca de 3 a 5 cm, a drenagem percutânea guiada por ultrassonografia ou TC é a primeira escolha. Ela permite controlar o foco, coletar material para cultura e tem menor morbidade que a cirurgia. Só a antibioticoterapia isolada é insuficiente para coleções desse tamanho.\n\nAnálise das alternativas\n\na) Incorreta. Antibiótico sozinho, mesmo com esquema ampliado, é reservado a abscessos pequenos (em geral menores que 3 cm) ou múltiplos microabscessos. Em uma coleção volumosa e septada, sem drenagem, o risco de falha terapêutica e ruptura é alto.\n\nb) Incorreta. O abscesso amebiano é mais comum em homens jovens, de áreas endêmicas, sem manipulação biliar. Costuma ser lesão única, de conteúdo homogêneo e sem septações. O contexto aqui (idoso, diabético, pós-CPRE, desvio à esquerda, lesão multiloculada) aponta para etiologia piogênica biliar. Além disso, a sorologia não resolveria o manejo do foco.\n\nc) Incorreta. A drenagem cirúrgica fica reservada para falha da drenagem percutânea, ruptura com peritonite, abscessos multiloculados complexos não drenáveis ou necessidade de tratar outra doença abdominal. A via biliar já foi desobstruída pela CPRE e não há sinais de peritonite. A reabordagem acarretaria morbidade desnecessária.\n\nd) Correta. A drenagem percutânea guiada por imagem, associada à antibioticoterapia venosa já iniciada, é o tratamento de escolha. É minimamente invasiva, eficaz na maioria dos casos e permite cultura do material para guiar o antibiótico.\n\nGabarito: D.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Hepatoesplenomegalias Infecciosas",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f6ee8b0b3de591d9e4ea1772fc61d95b378c3dbe28cadf7da98c7362db5f790e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_4430f451-46cc-4a6c-afef-6f89a327f779_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:02.065Z"
+  },
+  {
+    "id": "AJUDA_44348635-94bb-4976-ba5c-d1c8b5ae6e7d",
+    "originalId": "44348635-94bb-4976-ba5c-d1c8b5ae6e7d",
+    "statement": "Um dos indicadores em obstetrícia, além dos clássicos, como coeficiente de morte materna, mortalidade neonatal precoce, taxa de prematuridade etc., é a classificação de Robson (2001) para cesariana. A partir dessa classificação podem ser empreendidos esforços para a redução delas. O Ministério da Saúde inclusive utiliza Classificação de Risco Epidemiológico (Grupos de Robson) na plataforma integrada de vigilância em saúde. Assim, o controle do número de cesáreas e em que condições são feitas é uma parâmetro de qualidade assistencial em obstetrícia. A classificação de Robson agrupa as gestantes conforme suas características obstétricas. Com relação a esta classificação, qual alternativa é CORRETA quanto aos parâmetros utilizados por ela?",
+    "options": [
+      {
+        "id": "A",
+        "text": "História de gestação anterior com natimorto; Número de fetos; Idade Gestacional; Idade Materna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Complicações em Cesárea anterior; História anterior de recém-nascido natimorto; Hipertensão na Gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mal formação fetal; Idade gestacional; Número de fetos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Idade Gestacional; Mal formação fetal; Idade Materna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Paridade; Início do parto; Idade gestacional; Apresentação/Situação; Número de fetos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A Classificação de Robson, proposta em 2001 e recomendada pela Organização Mundial da Saúde (OMS) e pelo Ministério da Saúde, é uma ferramenta essencial para monitorar e comparar as taxas de cesariana entre diferentes instituições e ao longo do tempo. Ela permite agrupar todas as gestantes que ingressam para o parto em 10 grupos mutuamente exclusivos, baseando-se em características clínicas objetivas.\n\nPara realizar essa classificação, são utilizados cinco parâmetros fundamentais:\n\n1. Paridade: Se a mulher é nulípara (nunca pariu) ou multípara (já pariu anteriormente), incluindo se tem ou não cicatriz uterina prévia (cesárea anterior).\n2. Início do parto: Se o trabalho de parto foi espontâneo, induzido ou se foi realizada uma cesariana antes do início do trabalho de parto.\n3. Idade gestacional: Se a gestação é a termo (maior ou igual a 37 semanas) ou pré-termo (menor que 37 semanas).\n4. Apresentação e situação fetal: Se o feto está em apresentação cefálica, pélvica ou em situação transversa/oblíqua.\n5. Número de fetos: Se a gestação é única ou múltipla.\n\nAnálise das alternativas:\n\na) Incorreta. A história de natimorto anterior e a idade materna não são critérios da Classificação de Robson. Embora importantes clinicamente, o modelo de Robson foca em variáveis obstétricas do momento atual e na paridade simples.\n\nb) Incorreta. Complicações em cesáreas anteriores, história de natimorto e patologias como a hipertensão não entram na divisão dos 10 grupos de Robson. A classificação é puramente obstétrica e não baseada em comorbidades.\n\nc) Incorreta. Malformação fetal não é um parâmetro utilizado para definir os grupos de Robson.\n\nd) Incorreta. Novamente, malformação fetal e idade materna são citadas, mas nenhuma das duas faz parte dos critérios técnicos dessa classificação.\n\ne) Correta. Esta alternativa lista precisamente os pilares da classificação: Paridade (incluindo cesárea prévia), Início do parto (espontâneo, induzido ou cesárea fora de trabalho de parto), Idade gestacional (termo ou pré-termo), Apresentação/Situação (cefálico, pélvico ou transverso) e Número de fetos (único ou múltiplo). A combinação dessas cinco variáveis permite alocar qualquer gestante em um dos 10 grupos de Robson.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:02.065Z"
+  },
+  {
+    "id": "AJUDA_443c6ec2-5241-45b2-a574-f248caf1e741",
+    "originalId": "443c6ec2-5241-45b2-a574-f248caf1e741",
+    "statement": "Criança de 2 anos, 12 kg, há 4 dias com picos febris associados à mialgia intensa e cefaleia retro-orbital, vem à consulta de urgência, pois iniciou com manchas de pele, descritas ao exame físico como púrpuras petequiais em tronco e membros, associadas à epistaxe. Não tem sinais de hipoperfusão, está sonolenta e com recusa alimentar. Considerando o caso apresentado, analise as assertivas a seguir:\n\nI. Os sinais e sintomas são sugestivos de arbovirose tipo dengue já na fase crítica, por existir sangramento.\nII. O exame laboratorial de eleição nesse momento para confirmar sua hipótese diagnóstica é a verificação sérica do antígeno-NS1.\nIII. O aporte hídrico intravenoso de manutenção deve ter a vazão de 35 mL/h.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Quadro Clínico:\nA criança de 2 anos apresenta sintomas clássicos de dengue (febre, mialgia, cefaleia retro-orbital) e está no 4º dia de doença. A presença de manifestações hemorrágicas (petéquias e epistaxe) associadas a sinais de alerta fundamentais, como sonolência (alteração do estado mental) e recusa alimentar, classifica o caso como dengue com sinais de alerta, indicando que o paciente entrou na fase crítica da patologia.\n\nAnálise das Assertivas:\n\nAssertiva I: CORRETA. A fase crítica da dengue ocorre geralmente entre o 3º e o 7º dia do início dos sintomas, período marcado pela queda da febre (defervescência) e pelo risco de extravasamento plasmático. A presença de sangramentos e, principalmente, de sinais de alerta como a sonolência, confirma que o paciente está nesse estágio crítico, exigindo intervenção médica imediata para evitar a evolução para o choque.\n\nAssertiva II: CORRETA. O diagnóstico laboratorial da dengue na fase inicial de viremia, que compreende do 1º ao 5º dia de sintomas, é realizado preferencialmente pela detecção do antígeno viral NS1 ou por métodos moleculares (RT-PCR). Como a criança encontra-se no 4º dia de evolução, o NS1 é o exame de eleição. A sorologia para detecção de anticorpos IgM só costuma apresentar positividade após o 6º dia de doença.\n\nAssertiva III: INCORRETA. O cálculo da vazão de manutenção hídrica para uma criança de 12 kg é baseado na regra de Holliday-Segar. O volume total para 24 horas é calculado da seguinte forma: 100 mL/kg para os primeiros 10 kg (1000 mL) somados a 50 mL/kg para os 2 kg excedentes (100 mL), totalizando 1100 mL por dia. Para obter a vazão horária, divide-se 1100 mL por 24 horas, o que resulta em aproximadamente 45,8 mL/h. O valor de 35 mL/h sugerido está incorreto. Vale ressaltar que, devido aos sinais de alerta, a criança deve receber inicialmente uma fase de expansão rápida (10 mL/kg) conforme os protocolos de manejo do Ministério da Saúde.\n\nAnálise das Alternativas:\n\na) Correta: Identifica adequadamente que apenas as assertivas I e II estão tecnicamente corretas.\nb) Incorreta: Inclui a assertiva III, que possui erro no cálculo da taxa de infusão hídrica.\nc) Incorreta: Exclui a assertiva I, que define corretamente a fase clínica, e inclui a assertiva III, que está errada.\nd) Incorreta: Considera a assertiva III como correta, o que invalida a opção.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Arboviroses",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:02.065Z"
+  },
+  {
+    "id": "AJUDA_4443587a-b86b-4267-bdc1-66a1da696057",
+    "originalId": "4443587a-b86b-4267-bdc1-66a1da696057",
+    "statement": "Homem, 64 anos de idade, tentou suicídio com ferimento por arma branca no tórax. No atendimento inicial, o paciente encontrava-se com a faca introduzida na parede anterior do tórax, bastante agitado e com PA de 140x90 mmHg e FC de 110 bpm. Devido à agitação, optou-se pela intubação para transporte. Na admissão no Centro de Trauma encontrava-se: \n\nA: Intubado. Saturação de oxigênio de 97%. \nB: MV presentes e sem alterações. Inspeção torácica demonstrada na figura a seguir. \nC: PA de 130x80 mmHg; FC de 110 bpm; e-FAST negativo. \nD: Sedado com pupilas mióticas. Escala de coma de Glasgow 3. \nE: Sem outros achados além da lesão torácica. \n\nAssinale a alternativa que indica o próximo passo a ser realizado na condução do caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Retirada da faca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tomografia de tórax.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Toracotomia esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Janela pericárdica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso: O paciente apresenta um trauma penetrante por arma branca na região de transição cervicotorácica. O ponto crucial para a tomada de decisão é que o paciente encontra-se hemodinamicamente estável (PA 130/80 mmHg e saturação de 97%) e possui um e-FAST negativo. A imagem mostra a faca ainda inserida no corpo, o que exige conduta específica.\n\nAlternativa a) Incorreta. Objetos empalados jamais devem ser retirados no atendimento inicial ou de forma cega. O objeto pode estar comprimindo um grande vaso e atuando como um tampão mecânico. Sua retirada sem controle pode causar hemorragia maciça e fatal. A remoção só deve ocorrer em ambiente cirúrgico ou após planejamento detalhado.\n\nAlternativa b) Correta. Como o paciente apresenta estabilidade hemodinâmica, é possível e recomendável realizar exames de imagem complementares para avaliar a extensão da lesão. A tomografia de tórax (preferencialmente angiotomografia) é o melhor exame para identificar a trajetória da faca e sua relação anatômica com estruturas vitais, como grandes vasos, via aérea e esôfago. Isso permite planejar a cirurgia de forma segura.\n\nAlternativa c) Incorreta. A toracotomia de emergência ou reanimatória é indicada para pacientes que apresentam parada cardiorrespiratória traumática presenciada ou instabilidade hemodinâmica extrema e refratária a medidas iniciais. Não é o caso deste paciente, que mantém pressão arterial normal.\n\nAlternativa d) Incorreta. A janela pericárdica é um procedimento invasivo para diagnosticar lesão cardíaca (tamponamento). Embora o ferimento seja próximo à região precordial, o e-FAST foi negativo e o paciente está estável. Nesse cenário, a tomografia é superior por ser menos invasiva e fornecer uma avaliação global de todas as estruturas mediastinais e cervicais.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/16b2eca20ce4cdf66c303fbbe7fb228dbfadb588c84247cb5b7b2dad266f79bc.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_4443587a-b86b-4267-bdc1-66a1da696057_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:02.477Z"
+  },
+  {
+    "id": "AJUDA_4449628a-1d14-4f20-8c2d-ad0577f901b2",
+    "originalId": "4449628a-1d14-4f20-8c2d-ad0577f901b2",
+    "statement": "Considerando os enxertos de pele, sabe-se que",
+    "options": [
+      {
+        "id": "A",
+        "text": "o enxerto total apresenta maior taxa de pega inicial quando comparado ao enxerto parcial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o leito receptor ideal para um enxerto é tecido ósseo cortical sem periósteo, devido a sua baixa vascularização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o principal mecanismo de sobrevivência inicial do enxerto é a plasmática por embebição, seguida pela inosculação e revascularização.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "o enxerto parcial retrai menos após a cicatrização do que o enxerto total.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A compreensão dos processos de integração e das características dos enxertos de pele é fundamental na cirurgia plástica e dermatológica. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) Incorreta: Na verdade, o enxerto de pele parcial apresenta uma maior taxa de \"pega\" inicial (integração) quando comparado ao enxerto total. Isso ocorre porque o enxerto parcial é mais fino, possuindo uma espessura menor de derme, o que resulta em uma menor demanda metabólica. Assim, ele consegue sobreviver com mais facilidade nos primeiros dias, mesmo em leitos com vascularização menos exuberante.\n\nAlternativa (b) Incorreta: O leito receptor ideal para um enxerto deve ser obrigatoriamente vascularizado. O osso cortical desprovido de periósteo, assim como cartilagens sem pericôndrio ou tendões sem paratendão, são considerados leitos avasculares. Nesses casos, o enxerto não consegue realizar a troca de nutrientes e invariavelmente sofre necrose. O periósteo é o que garante a vascularização necessária para a integração do enxerto sobre o osso.\n\nAlternativa (c) Correta: Esta alternativa descreve perfeitamente as fases cronológicas da integração de um enxerto (a chamada \"pega\"). \n1. Imbebição plasmática: Ocorre nas primeiras 24 a 48 horas, período em que o enxerto sobrevive por difusão passiva de nutrientes vindos do leito receptor (o enxerto \"bebe\" o plasma). \n2. Inosculação: Ocorre entre 48 e 72 horas, caracterizada pelo alinhamento e conexão de capilares do leito com os capilares preexistentes do enxerto (uma espécie de \"beijo\" entre os vasos). \n3. Revascularização: É a fase final, na qual novos vasos crescem do leito para dentro do enxerto (angiogênese), restabelecendo a circulação definitiva.\n\nAlternativa (d) Incorreta: Existe uma confusão comum entre contração primária e secundária. O enxerto parcial retrai MAIS após a cicatrização (contração secundária) do que o enxerto total. A contração secundária é inversamente proporcional à quantidade de derme no enxerto; como o enxerto total tem mais derme, ele inibe melhor a contração dos miofibroblastos no leito da ferida, resultando em um melhor resultado estético e funcional a longo prazo. O enxerto total retrai mais apenas no momento em que é retirado do doador (contração primária), devido à maior quantidade de fibras elásticas na derme profunda.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Cirurgia Plástica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:02.477Z"
+  }
+]

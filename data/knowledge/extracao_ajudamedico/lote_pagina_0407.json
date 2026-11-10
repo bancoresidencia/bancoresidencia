@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_7123407d-5a8e-4ce8-819d-dab67bbdbadd",
+    "originalId": "7123407d-5a8e-4ce8-819d-dab67bbdbadd",
+    "statement": "Mulher, 47 anos, tem crises de broncoespasmo ao menos duas vezes por semana, em uso de Salbutamol spray esporádico, com alívio dos sintomas. Tem asma e é tabagista 30 anos-maço. Refere estar fumando mais, recentemente, por situação de estresse familiar. No exame físico, apresenta sibilos na ausculta pulmonar difusamente, leve esforço respiratório com retração de fúrcula discreta, Saturação em ar ambiente de 95%.\n\nQual a conduta, considerando-se redução de morbimortalidade na Atenção Primária à Saúde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Orientar quanto à necessidade de cessar tabagismo, iniciar ciclo de corticoide por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar aconselhamento terapêutico, com acompanhamento por pelo menos um ano, para cessar tabagismo, iniciar ciclo de corticoide por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar aconselhamento terapêutico, com acompanhamento por, pelo menos, um ano, para cessar tabagismo, iniciar corticoide por via inalatória.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar Bupropiona, manter tratamento com Salbutamol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso: \n\nA paciente apresenta um quadro de asma não controlada, caracterizada por sintomas recorrentes (duas vezes por semana) e necessidade de medicação de resgate (Salbutamol). Além disso, possui uma carga tabágica elevada (30 anos-maço), o que agrava a inflamação brônquica e aumenta significativamente o risco cardiovascular e de câncer. O desafio da questão é identificar as ações que comprovadamente reduzem a morbimortalidade no contexto da Atenção Primária.\n\nAlternativa (a) Incorreta: A simples orientação para cessar o tabagismo apresenta baixa taxa de sucesso quando comparada ao aconselhamento estruturado. Quanto ao corticoide, o uso por via oral é reservado para o manejo de crises agudas (exacerbações) por períodos curtos. O uso crônico ou recorrente de corticoide oral está associado à alta morbidade devido a efeitos colaterais como osteoporose, diabetes e hipertensão, não sendo a terapia de escolha para o controle da asma.\n\nAlternativa (b) Incorreta: Embora proponha o acompanhamento adequado para o tabagismo, esta alternativa peca ao indicar o corticoide por via oral. No tratamento de manutenção da asma, a via inalatória é obrigatória porque permite que a droga atue diretamente no foco da inflamação com doses mínimas e pouca absorção sistêmica, reduzindo riscos ao paciente.\n\nAlternativa (c) Correta: Esta é a conduta que melhor atende aos critérios de redução de morbimortalidade. O tabagismo é a principal causa de morte evitável no mundo; o aconselhamento terapêutico associado ao seguimento por pelo menos um ano é a estratégia mais eficaz para a cessação tabágica na rede básica. Em relação à asma, o início do corticoide inalatório é fundamental. As diretrizes internacionais (como o GINA) e nacionais estabelecem que o uso isolado de broncodilatadores de curta ação (Salbutamol) aumenta o risco de morte por asma. O corticoide inalatório é o único fármaco capaz de reduzir a inflamação das vias aéreas, prevenindo crises graves, hospitalizações e óbitos.\n\nAlternativa (d) Incorreta: A Bupropiona é um fármaco auxiliar no tratamento do tabagismo, mas não deve ser utilizada isoladamente sem o suporte do aconselhamento. O erro principal desta alternativa é manter o tratamento da asma apenas com Salbutamol. O uso de Salbutamol sem um corticoide inalatório de controle mascara a inflamação subjacente e eleva a chance de o paciente apresentar uma crise fatal.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Asma",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:57.308Z"
+  },
+  {
+    "id": "AJUDA_71366cb3-6fcc-4b85-8617-613d9cdb02d9",
+    "originalId": "71366cb3-6fcc-4b85-8617-613d9cdb02d9",
+    "statement": "Rita, 44 anos, trabalhadora doméstica, procura a UBS em uma sexta-feira, por demanda espontânea, por dor em região lombar há três meses, pior com esforços, sem irradiação. Já usou analgésicos por conta própria, com alívio parcial, e solicita encaminhamento para o ortopedista. No acolhimento, a enfermeira colhe história dirigida, verifica sinais de alerta (negativos) e agenda avaliação com a médica da equipe da UBS, para o início da semana seguinte, para definir plano terapêutico.\nCom base nos atributos da Atenção Primária à Saúde, assinale a alternativa que apresenta corretamente a interpretação mais adequada para a situação relatada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O atendimento no acolhimento indica que o acesso de primeiro contato foi respeitado, mesmo sem consulta médica imediata.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O agendamento para a semana seguinte caracteriza a longitudinalidade, pois garante seguimento contínuo do caso ao longo do tempo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A integralidade ficou prejudicada nesse caso, porque não houve atendimento médico ou manejo clínico da queixa no primeiro momento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A coordenação do cuidado foi falha por não ter sido feito o encaminhamento ao especialista indicado para o caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda os Atributos Essenciais da Atenção Primária à Saúde (APS), propostos por Barbara Starfield: Acesso de Primeiro Contato, Longitudinalidade, Integralidade e Coordenação do Cuidado. Vamos analisar cada alternativa para entender por que a letra (a) é a correta.\n\nAlternativa (a): Correta. O Acesso de Primeiro Contato (ou Acessibilidade) implica que a unidade de saúde seja a porta de entrada preferencial do usuário no sistema para cada nova necessidade. No caso relatado, Rita buscou a UBS por demanda espontânea e foi prontamente acolhida pela enfermagem. O acesso foi garantido pelo acolhimento e pela classificação de risco. Como a dor era crônica (três meses) e não apresentava sinais de alerta (red flags), não havia necessidade clínica de uma consulta médica imediata na sexta-feira, sendo adequado o agendamento para o início da semana seguinte.\n\nAlternativa (b): Incorreta. A Longitudinalidade refere-se à existência de um aporte regular de cuidados pela equipe de saúde e à construção de um vínculo terapêutico ao longo do tempo, independentemente da presença de doença. O simples agendamento de uma consulta para a semana seguinte é uma ação de organização de agenda e acesso, não sendo o que define, isoladamente, o atributo da longitudinalidade.\n\nAlternativa (c): Incorreta. A Integralidade significa que a equipe de APS deve reconhecer as diversas necessidades de saúde da população e ser capaz de oferecer (ou providenciar) os serviços necessários para atendê-las, indo além da cura de doenças. O fato de não ter ocorrido atendimento médico imediato não prejudica a integralidade, pois a paciente foi acolhida, teve seu risco avaliado (afastando sinais de gravidade) e foi inserida no fluxo de cuidado da unidade para a definição de um plano terapêutico completo em momento oportuno.\n\nAlternativa (d): Incorreta. A Coordenação do Cuidado é a capacidade da APS de integrar e sincronizar as informações e o cuidado, especialmente quando o paciente transita por diferentes níveis de atenção. No caso da dor lombar sem sinais de alerta, a conduta inicial preconizada é o manejo na própria APS. Encaminhar ao especialista precocemente, sem antes realizar o manejo clínico e a investigação inicial na atenção básica, vai contra os protocolos de resolutividade da APS e não configura falha na coordenação. Pelo contrário, coordenar o cuidado significa garantir que o especialista seja acionado apenas quando necessário.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:57.308Z"
+  },
+  {
+    "id": "AJUDA_7137a935-75a7-4c88-b02a-7bb26d9b74e2",
+    "originalId": "7137a935-75a7-4c88-b02a-7bb26d9b74e2",
+    "statement": "Menino de 6 anos apresenta febre baixa intermitente há 5 semanas, dor óssea noturna em membros inferiores, claudicação ocasional e fadiga progressiva. Foi tratado com antibiótico e anti-inflamatório sem melhora. Exame: palidez, equimoses esparsas, hepatoesplenomegalia discreta, sem artrite verdadeira. Hemograma: Hb 8,1 g/dL, leucócitos 3.200/mm³, neutrófilos 420/ mm³, plaquetas 38.000/mm³. DHL e ácido úrico elevados. O esfregaço periférico não mostra blastos evidentes.\nQual é a conduta mais apropriada diante da principal hipótese diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Com a exclusão da possibilidade de leucemia, pois não há blastos no sangue periférico, direcionar investigação para quadros infecciosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar prednisona por provável artrite idiopática juvenil, antes de investigação hematológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar com urgência para investigação hematológica com aspirado de medula óssea, imunofenotipagem e medidas iniciais para risco de lise tumoral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever ferro terapêutico e repetir hemograma em 60 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar tratamento para púrpura trombocitopênica imune.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Analise do quadro clinico:\n\nTrata-se de um menino de 6 anos que apresenta sinais claros de falencia medular (pancitopenia com anemia, neutropenia grave e plaquetopenia), infiltracao tecidual/medular (dor ossea noturna, claudicacao e hepatoesplenomegalia) e sinais de alto turnover celular (elevacao de DHL e acido urico). Esse conjunto de achados torna a Leucemia Linfoide Aguda (LLA) a principal hipotese diagnostica, sendo esta a neoplasia mais comum da faixa etaria pediatrica.\n\nAnalise das alternativas:\n\nAlternativa A (Incorreta): A ausencia de blastos no esfregaço de sangue periferico nao exclui o diagnostico de leucemia. Em muitos casos (denominados leucemias aleucemicas), as celulas neoplásicas ficam inicialmente confinadas ao compartimento medular. Descartar a neoplasia retardaria gravemente a abordagem de uma emergencia hematologica.\n\nAlternativa B (Incorreta): O uso de corticoterapia antes da realizacao do mielograma e contraindicado na suspeita de leucemia. A prednisona e citotoxica para os linfoblastos e pode mascarar o diagnostico citologico e imunofenotipico, alem de precipitar sindrome de lise tumoral sem suporte previo. A hipotese de Artrite Idiopatica Juvenil (AIJ) e afastada pela presenca de pancitopenia e ausencia de artrite verdadeira.\n\nAlternativa C (Correta): O aspirado de medula ossea (mielograma) associado a imunofenotipagem e o padrao-ouro para confirmar o diagnostico e classificar a linhagem leucemica. Alem disso, a presenca de niveis elevados de acido urico e DHL aponta para risco iminente de sindrome de lise tumoral, exigindo internacao, hiper-hidratacao venosa, controle metabolico e agentes hipouricemiantes.\n\nAlternativa D (Incorreta): O quadro nao e de anemia ferropriva isolada, mas de pancitopenia grave com neutropenia critica (neutrofilos menores que 500/mm³) e plaquetopenia severa. Aguardar 60 dias traria risco iminente de obito por sepse ou sangramentos graves no sistema nervoso central.\n\nAlternativa E (Incorreta): A Purpura Trombocitopenica Imune (PTI) cursa tipicamente com plaquetopenia isolada em uma crianca em bom estado geral. A presenca de anemia, neutropenia, dor ossea, febre prolongada e visceromegalia afasta esse diagnostico.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Leucemias",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:57.308Z"
+  },
+  {
+    "id": "AJUDA_714ced72-e03b-49f6-b0f4-440ac31b59a9",
+    "originalId": "714ced72-e03b-49f6-b0f4-440ac31b59a9",
+    "statement": "Sobre a escolha do momento de vacinar e as vacinas a serem administradas ao paciente oncológico, analise as afirmativas e assinale a alternativa correta.\n\nI. O ideal é que o esquema vacinal do paciente oncológico seja atualizado logo após o diagnóstico da neoplasia, antes da introdução da terapêutica imunossupressora.\nII. Se a sua condição clínica e imunológica permitir, o paciente pode receber vacinas vivas atenuadas até 4 semanas antes do início do tratamento.\nIII. Quanto às vacinas inativadas, podem ser administradas até 2 semanas pré-tratamento, não sendo recomendada a vacinação após esse período.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as afirmativas I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmativas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das afirmativas:\n\nAfirmativa I: Esta afirmativa está correta. O manejo vacinal do paciente oncológico deve ser priorizado assim que o diagnóstico é estabelecido. O objetivo é aproveitar a competência imunológica residual do paciente antes que ele seja submetido a tratamentos que causam linfopenia ou neutropenia (como quimioterapia e certas radioterapias), garantindo, assim, uma melhor soroconversão e proteção.\n\nAfirmativa II: Esta afirmativa está correta. As vacinas vivas atenuadas (como sarampo, caxumba, rubéola, varicela e febre amarela) contêm agentes infecciosos vivos que, embora enfraquecidos, podem causar doença em indivíduos imunossuprimidos. Por isso, as diretrizes da Sociedade Brasileira de Imunizações (SBIm) e manuais de oncologia recomendam um intervalo de segurança de, no mínimo, 4 semanas antes do início da terapia imunossupressora. Esse tempo é necessário para que o organismo processe a vacina e elimine o agente atenuado de forma segura.\n\nAfirmativa III: Esta afirmativa está correta. Para vacinas inativadas (como as de gripe, pneumocócicas e hepatites), o risco não é de causar a doença, mas sim de a vacina ser ineficaz. O sistema imunológico precisa de tempo para produzir anticorpos antes que a medula óssea e as células de defesa sejam atingidas pelo tratamento. O prazo ideal é de, pelo menos, 2 semanas antes da terapêutica. Se a vacinação ocorrer em um prazo inferior a 14 dias antes do início do tratamento, a resposta imunológica pode ser insuficiente; por isso, há a recomendação de respeitar esse intervalo.\n\nConclusão:\nComo as três afirmativas descrevem corretamente as recomendações de tempo e segurança para a imunização de pacientes que iniciarão tratamento oncológico, a alternativa correta é a letra (d), pois todas as afirmativas estão corretas.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:57.308Z"
+  },
+  {
+    "id": "AJUDA_714dad28-0dbe-4f3c-9d9a-4233ec3dce97",
+    "originalId": "714dad28-0dbe-4f3c-9d9a-4233ec3dce97",
+    "statement": "Liliane, 67 anos de idade, usuária de uma UBS, em avaliação da saúde de rotina, recebeu a categoria BI-RADS 2 como resultado de mamografia.\nA respeito do caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A paciente deve ser encaminhada a um serviço de mastologia para ser acompanhada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A paciente deve realizar outra mamografia em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A paciente deve seguir a rotina de rastreamento, com mamografia a cada 2 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A paciente deve ser encaminhada para avaliação em um serviço de oncologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A paciente deve prosseguir a investigação para eventual biópsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação BI-RADS (Breast Imaging-Reporting and Data System) é a ferramenta utilizada para padronizar os laudos de exames de imagem da mama e guiar a conduta médica baseada no risco de malignidade. No caso apresentado, a paciente de 67 anos apresenta um resultado BI-RADS 2.\n\nA categoria BI-RADS 2 refere-se a achados mamográficos definitivamente benignos. Isso inclui situações como fibroadenomas calcificados, cistos simples, calcificações vasculares ou linfonodos intramamários típicos. Para essa categoria, o risco de câncer é de 0%, não havendo necessidade de intervenções adicionais ou antecipação de exames.\n\nDe acordo com as diretrizes do Ministério da Saúde e do INCA, o rastreamento mamográfico para mulheres entre 50 e 69 anos deve ser realizado a cada dois anos. Como a paciente tem 67 anos e o exame é benigno, ela deve simplesmente manter o cronograma habitual.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O encaminhamento para o especialista (mastologista) é reservado para casos com suspeita de malignidade (BI-RADS 4 ou 5) ou quando há necessidade de seguimento específico para lesões provavelmente benignas (BI-RADS 3) que geram dúvida ou ansiedade na paciente, o que não ocorre no BI-RADS 2.\n\nAlternativa b) Incorreta. O controle em intervalo reduzido de 6 meses é a conduta padrão para a categoria BI-RADS 3 (achados provavelmente benignos, com risco de malignidade menor que 2%).\n\nAlternativa c) Correta. O achado BI-RADS 2 exige apenas a continuidade do rastreamento de rotina. Como a paciente está na faixa etária de 50 a 69 anos, a periodicidade recomendada no Brasil é bienal (a cada 2 anos).\n\nAlternativa d) Incorreta. O encaminhamento para a oncologia só ocorre após a confirmação histopatológica de neoplasia maligna ou em casos de altíssima suspeição clínica e radiológica que exijam abordagem oncológica imediata.\n\nAlternativa e) Incorreta. A biópsia é indicada para lesões classificadas como BI-RADS 4 (suspeitas) ou BI-RADS 5 (altamente sugestivas de malignidade). Achados BI-RADS 2 são benignos e não requerem investigação invasiva.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:57.308Z"
+  },
+  {
+    "id": "AJUDA_7156879d-f03a-45e2-bfce-3a41b4c4084b",
+    "originalId": "7156879d-f03a-45e2-bfce-3a41b4c4084b",
+    "statement": "Recém-nascida (RN) de 7 dias de vida, é levada à UBS para a primeira consulta pediátrica. Sua mãe foi diagnosticada com toxoplasmose aguda no terceiro trimestre da gestação e iniciou tratamento com espiramicina. O USG fetal identificou calcificações intracranianas. O exame físico da RN é normal, o USG transfontanelar não revelou novas lesões além das já detectadas e sua sorologia é IgG positivo e IgM negativo para toxoplasmose. Com base no protocolo de manejo de toxoplasmose congênita, qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar o tratamento com espiramicina e realizar exames mensais de acompanhamento até que a IgM se torne positiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não iniciar o tratamento neste momento, mas realizar acompanhamento mensal com exames físico, neurológico, sorologia e avaliação oftalmológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar o tratamento tríplice com pirimetamina, sulfadiazina e ácido folínico por 12 meses, independentemente de novos achados clínicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Repetir a sorologia e ultrassonografia transfontanelar em 15 dias antes de tomar qualquer decisão sobre o início do tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nA questão descreve um caso de toxoplasmose congênita confirmada por achados de imagem. O fato de a paciente apresentar calcificações intracranianas no ultrassom fetal e neonatal, somado à história de infecção aguda materna no terceiro trimestre, estabelece o diagnóstico de infecção congênita, independentemente de o resultado da sorologia IgM do recém-nascido ser negativo. É comum que recém-nascidos infectados no final da gestação ou cujas mães receberam tratamento não apresentem IgM ou IgA reagentes ao nascimento.\n\nAlternativa a: Incorreta. A espiramicina é uma medicação que não atravessa a barreira placentária de forma eficiente e não alcança o sistema nervoso central em níveis terapêuticos. Ela é usada na gestante para reduzir o risco de transmissão vertical quando o feto ainda não foi infectado. Para o recém-nascido com infecção confirmada, ela não possui eficácia. Além disso, não se deve aguardar a positivação da IgM para tratar.\n\nAlternativa b: Incorreta. O acompanhamento sem tratamento é contraindicado. A toxoplasmose congênita é uma doença de caráter progressivo. Mesmo que o exame físico inicial seja normal, a presença de calcificações indica que o parasita atingiu o sistema nervoso central. A falta de tratamento adequado resultaria em maior risco de lesões oculares (coriorretinite) e sequelas neurológicas futuras.\n\nAlternativa c: Correta. O tratamento de escolha para a toxoplasmose congênita, conforme o protocolo do Ministério da Saúde, consiste na associação de sulfadiazina, pirimetamina e ácido folínico (esquema tríplice). Esse tratamento deve ser mantido por 12 meses para garantir a erradicação das formas replicativas do parasita e minimizar danos. No caso apresentado, a evidência de lesão em órgão-alvo (calcificações cerebrais) torna o início da terapia obrigatório, mesmo com IgM negativo.\n\nAlternativa d: Incorreta. Não há justificativa para o adiamento do tratamento. A repetição de exames em 15 dias apenas retardaria a intervenção terapêutica em um paciente que já possui diagnóstico firmado por meio de exames de imagem associados à epidemiologia materna. O tempo é um fator crucial para prevenir a progressão das lesões.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:57.308Z"
+  },
+  {
+    "id": "AJUDA_715a5d8e-ad60-45e8-babf-9644d82f7d23",
+    "originalId": "715a5d8e-ad60-45e8-babf-9644d82f7d23",
+    "statement": "Mulher, 21 anos, com vida sexual ativa, sem comorbidades, deseja iniciar uso de anticoncepcional oral combinado (AOC). História familiar: mãe teve, aos 41 anos, trombose venosa profunda. Considerando o “Manual de Planejamento Familiar”, edição de 2022, da Organização Mundial de Saúde (OMS), pode-se afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "não há contraindicação para o uso do AOC (categoria 2)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "há contraindicação absoluta ao uso de AOC (categoria 4)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "há contraindicação relativa (categoria 3) e deve-se avaliar apenas uso de métodos de progesterona isolada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "há contraindicação relativa (categoria 3) e deve-se avaliar apenas uso de métodos não hormonais",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Organização Mundial da Saúde (OMS) estabelece os Critérios Médicos de Elegibilidade para o uso de métodos anticoncepcionais, classificando-os em quatro categorias para orientar a prática clínica:\n\nCategoria 1: Uma condição para a qual não há restrição ao uso do método.\nCategoria 2: Uma condição em que as vantagens de usar o método geralmente superam os riscos teóricos ou comprovados.\nCategoria 3: Uma condição em que os riscos teóricos ou comprovados geralmente superam as vantagens de usar o método.\nCategoria 4: Uma condição que representa um risco inaceitável à saúde se o método anticoncepcional for utilizado.\n\nDe acordo com o Manual de Planejamento Familiar da OMS (edição de 2022), a presença de história familiar de tromboembolismo venoso (TEV) em parente de primeiro grau (pais ou irmãos) influencia a elegibilidade para anticoncepcionais orais combinados (AOC) dependendo da idade em que o familiar apresentou o evento. Se o parente de primeiro grau teve o evento antes dos 45 anos de idade, a classificação para o uso de AOC é Categoria 2. Se o evento ocorreu aos 45 anos ou mais, a classificação é Categoria 1.\n\nNo caso clínico apresentado, a mãe da paciente teve trombose venosa profunda aos 41 anos. Como o evento ocorreu em parente de primeiro grau com menos de 45 anos, o uso de AOC pela paciente é classificado como Categoria 2.\n\nAlternativa a: Correta. Reflete exatamente o critério da OMS para história familiar de TEV em idade jovem (menos de 45 anos), permitindo o uso do método com cautela ou acompanhamento, pois os benefícios superam os riscos.\n\nAlternativa b: Incorreta. A Categoria 4 (contraindicação absoluta) é reservada para casos em que o risco é inaceitável, como história pessoal de TEV da própria paciente, presença de mutações trombofílicas conhecidas, tabagismo acima dos 35 anos ou enxaqueca com aura.\n\nAlternativa c: Incorreta. A história familiar de TEV antes dos 45 anos não atinge os critérios para a Categoria 3. Além disso, métodos de progesterona isolada (como minipílula, implante ou injeção trimestral) são geralmente Categoria 1 na presença de história familiar de trombose.\n\nAlternativa d: Incorreta. Além de errar a categoria (que é 2, não 3), não há justificativa para restringir a paciente apenas a métodos não hormonais. Métodos hormonais de progesterona isolada e os próprios AOCs podem ser considerados conforme os critérios de elegibilidade.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:57.308Z"
+  },
+  {
+    "id": "AJUDA_7170e10c-cf62-494e-ab5a-6b3a11158770",
+    "originalId": "7170e10c-cf62-494e-ab5a-6b3a11158770",
+    "statement": "Quando falamos do papel da Atenção Primária à Saúde, um dos principais objetivos é a prevenção em saúde e, considerando a Saúde Pública, a vacinação é uma das principais estratégias para redução de morbimortalidade de doenças infectocontagiosas, uma vez que oferece uma proteção individual e coletiva, além de reduzir o impacto socioeconômico relacionado ao aumento da incidência dessa doença (por exemplo: dias de trabalho ou capacidade laboral perdida). Ademais, na perspectiva da gestão em saúde, há um maior custo benefício na vacinação, em comparação aos custos de hospitalização e demandas em saúde associadas a ocorrência e complicação de quadros infecciosos. Essas informações são consideradas na definição do calendário vacinal nacional e ajustes, à medida que novas doenças ou epidemias se apresentam. Devido ao aumento da incidência e gravidade dos casos de dengue no Brasil, em 2024, houve a incorporação de vacina de dengue ao Programa Nacional de Imunização (PNI); enquanto, em 2025, apesar de campanhas já estabelecidas de vacinação para Influenza e Covid-19, houve um aumento no número de casos de Síndrome Gripal (SG) e Síndrome Respiratória Aguda Grave (SRAG) no estado do Paraná até a 40ª semana epidemiológica comparando os boletins de 2024 e 2025. Sobre esse contexto, considere as afirmativas a seguir. \n\nI. A vacina de dengue, atualmente disponibilizada pelo Ministério da Saúde, é de vírus vivo atenuado e contém os sorotipos 1, 2 e 3 de dengue. \nII. Diante da quantidade limitada de vacinas de dengue, a estratégia utilizada para a seleção da faixa etária vacinal foi a análise das hospitalizações por dengue, sendo selecionada a faixa etária de 10 a 14 anos como população alvo da vacinação. \nIII. Gestantes e puérperas são parte dos grupos prioritários de vacinação e, ao diagnóstico de gestação, todas as gestantes devem receber uma dose de vacina de Influenza e uma dose de vacina de Covid-19. \nIV. Crianças a partir de 6 meses de vida devem ser vacinadas para Influenza e Covid-19. E a vacina de Influenza deve ser realizada anualmente até os 6 anos de idade. \n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS:\n\nAfirmativa I (Incorreta): A vacina contra a dengue incorporada ao Programa Nacional de Imunizações (PNI) em 2024 é a Qdenga (TAK-003). Trata-se de uma vacina de vírus vivo atenuado, mas ela é tetravalente, ou seja, contém antígenos dos quatro sorotipos do vírus da dengue (1, 2, 3 e 4). A alternativa está incorreta ao omitir o sorotipo 4.\n\nAfirmativa II (Correta): Devido à capacidade limitada de fornecimento de doses pelo fabricante, o Ministério da Saúde precisou definir critérios de priorização. A faixa etária de 10 a 14 anos foi selecionada por concentrar o maior número de hospitalizações por dengue, dentro do intervalo etário para o qual a vacina é licenciada pela ANVISA (6 a 60 anos). Idosos, embora tenham alta mortalidade, não foram o alvo inicial dessa vacina específica devido à ausência de dados de segurança e eficácia robustos para essa população nos estudos clínicos originais.\n\nAfirmativa III (Correta): Gestantes e puérperas são grupos prioritários clássicos para a vacinação contra a influenza, pois apresentam maior risco de complicações, internações e óbito por Síndrome Respiratória Aguda Grave (SRAG). A vacina contra a influenza deve ser administrada em qualquer idade gestacional. Em relação à Covid-19, as recomendações vigentes do PNI incluíram as gestantes e puérperas no grupo prioritário para o esquema vacinal primário e doses de reforço anuais ou semestrais, dependendo da nota técnica vigente, visando à proteção materna e à transferência de anticorpos para o feto.\n\nAfirmativa IV (Correta): De acordo com o PNI, a vacina contra a influenza é recomendada anualmente para crianças na faixa etária de 6 meses a menores de 6 anos (5 anos, 11 meses e 29 dias). Já a vacinação contra a Covid-19 foi incorporada ao Calendário Nacional de Vacinação Infantil em 2024, sendo recomendada para todas as crianças a partir dos 6 meses de vida, com o objetivo de reduzir a carga da doença e complicações como a Síndrome Inflamatória Multissistêmica Pediátrica (SIM-P).\n\nCONCLUSÃO:\nComo as afirmativas II, III e IV estão corretas, a alternativa correta é a letra (e).",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:57.308Z"
+  },
+  {
+    "id": "AJUDA_717feb87-2fc6-42ab-9753-99d767f32e4f",
+    "originalId": "717feb87-2fc6-42ab-9753-99d767f32e4f",
+    "statement": "Sobre a utilização de fármacos com efeitos neuropsiquiátricos, assinale V (verdadeiro) ou F (falso) nas afirmativas seguintes. \n(__) O lítio é causa comum de hipotireoidismo e de hipoparatiroidismo.\n(__) Os inibidores da monoaminaoxidase (IMAO) são indicados para tratamento de pessoas com depressão maior unipolar e bipolar refratária e resistente a outros fármacos.\n(__) Quando comparadas as gerações de antipsicóticos, constata-se que enquanto os antipsicóticos de primeira geração têm maior potencial de causar sintomas extrapiramidais, os antipsicóticos de segunda geração têm maior potencial de causar discinesia tardia.\n(__) Os inibidores da recaptação seletiva de serotonina são indicados para ejaculação precoce, transtorno disfórico pré-menstrual e sintomas vasomotores relacionados ao climatério.\n(__) É indicado o uso de bicarbonato de sódio em pacientes com cardiotoxicidade por antidepressivo tricíclico. \nA sequência correta é",
+    "options": [
+      {
+        "id": "A",
+        "text": "v – v – v – f – f.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "v – f – f – v – f.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "v – f – v – v – f.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "f – v – f – v – v.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "f – v – f – f – v.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise detalhada das afirmativas:\n\nPrimeira afirmativa (Falsa): O lítio é, de fato, uma causa comum de hipotireoidismo (ele inibe a liberação dos hormônios tireoidianos). No entanto, o erro da alternativa está em afirmar que ele causa hipoparatireoidismo. Na verdade, o uso de lítio está associado ao hiperparatireoidismo, elevando os níveis de paratormônio (PTH) e, consequentemente, do cálcio sérico.\n\nSegunda afirmativa (Verdadeira): Os Inibidores da Monoaminaoxidase (IMAO) são fármacos potentes, mas devido ao perfil de efeitos colaterais e interações alimentares/medicamentosas graves (como a crise hipertensiva pela tiramina), costumam ser reservados para casos de depressão maior (unipolar ou bipolar) que não responderam a outras classes de antidepressivos, caracterizando quadros de depressão resistente ou refratária.\n\nTerceira afirmativa (Falsa): Os antipsicóticos de primeira geração (típicos), como o haloperidol, possuem um risco elevado de causar tanto sintomas extrapiramidais (agudos) quanto discinesia tardia (crônica), devido ao bloqueio dopaminérgico intenso. Os antipsicóticos de segunda geração (atípicos) apresentam, comparativamente, um menor potencial de causar discinesia tardia, sendo essa uma de suas principais vantagens terapêuticas.\n\nQuarta afirmativa (Verdadeira): Os Inibidores Seletivos da Recaptação de Serotonina (ISRS) possuem indicações que extrapolam a depressão e ansiedade. Eles são usados na ejaculação precoce (aproveitando o efeito colateral de retardo ejaculatório), no transtorno disfórico pré-menstrual (onde são primeira linha) e no tratamento de sintomas vasomotores (fogachos) do climatério, especialmente para pacientes com contraindicação à reposição hormonal.\n\nQuinta afirmativa (Verdadeira): A intoxicação por antidepressivos tricíclicos (como a amitriptilina) é grave e causa cardiotoxicidade através do bloqueio dos canais de sódio miocárdicos, o que leva ao alargamento do complexo QRS no ECG. O tratamento padrão é a administração de bicarbonato de sódio a 8,4%, que aumenta a concentração de sódio extracelular e alcaliniza o soro, diminuindo a afinidade da droga pelo canal de sódio.\n\nConclusão: A sequência correta é F – V – F – V – V.\n\nGabarito: Letra (d).",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:57.308Z"
+  },
+  {
+    "id": "AJUDA_71874cf5-1b82-4a41-8fc2-6d4a9bd40e78",
+    "originalId": "71874cf5-1b82-4a41-8fc2-6d4a9bd40e78",
+    "statement": "Gestante de 32 semanas, multípara, com histórico de duas cesarianas prévias, apresenta sangramento vaginal vermelho-vivo, indolor, de início súbito. Ultrassonografia evidencia placenta recobrindo totalmente o óstio cervical interno. A conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar toque vaginal para avaliar dilatação cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar cesariana imediata, independentemente da estabilidade materna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Conduta expectante hospitalar, se mãe e feto estiverem estáveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Amniotomia para acelerar a resolução do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar parto vaginal sob vigilância contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda uma das principais causas de sangramento na segunda metade da gestação: a placenta prévia. O quadro clínico descrito é clássico, apresentando sangramento vermelho-vivo, indolor, de início súbito e sem hipertonia uterina, em uma paciente com fatores de risco (multiparidade e cesarianas prévias). O diagnóstico é confirmado pela ultrassonografia, que mostra placenta prévia total (cobrindo o óstio cervical interno).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O toque vaginal é formalmente contraindicado em casos de suspeita ou confirmação de placenta prévia. O contato dos dedos com o tecido placentário altamente vascularizado pode causar um descolamento adicional e provocar uma hemorragia maciça, colocando em risco a vida da mãe e do feto. O exame especular deve ser preferido para avaliar a origem do sangramento.\n\nAlternativa b) Incorreta. A cesariana imediata só é indicada se houver instabilidade hemodinâmica materna grave ou sofrimento fetal agudo que não respondam às medidas de ressuscitação. Como a paciente tem 32 semanas (prematuridade) e o enunciado não cita instabilidade, a prioridade é a estabilização e a tentativa de prolongar a gestação.\n\nAlternativa c) Correta. Em gestações pré-termo (abaixo de 37 semanas), com sangramento moderado ou ausente e estabilidade hemodinâmica da mãe e do feto, a conduta de escolha é o manejo expectante em ambiente hospitalar. O objetivo é alcançar a maturidade fetal, utilizando frequentemente corticosteroides para maturação pulmonar e vigilância rigorosa. O parto será programado por volta de 36 a 37 semanas, ou antes, se o sangramento se tornar persistente ou houver comprometimento do bem-estar fetal.\n\nAlternativa d) Incorreta. A amniotomia (ruptura das membranas) é contraindicada na placenta prévia total. Para atingir as membranas, seria necessário atravessar o tecido placentário, o que causaria sangramento profuso imediato. A amniotomia só é considerada em casos selecionados de placenta prévia marginal ou lateral durante o trabalho de parto para tentar reduzir o sangramento através da compressão do bordo placentário pela apresentação fetal.\n\nAlternativa e) Incorreta. Na placenta prévia total, o parto vaginal é impossível e contraindicado, pois a placenta bloqueia completamente a passagem do feto. A via de parto obrigatória nesta situação é a cesariana. O parto vaginal só poderia ser considerado em alguns casos de placenta prévia marginal ou de inserção baixa, dependendo da distância entre a borda placentária e o óstio cervical interno.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:57.308Z"
+  }
+]

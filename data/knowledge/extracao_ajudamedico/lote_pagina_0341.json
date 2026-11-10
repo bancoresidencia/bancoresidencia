@@ -1,0 +1,525 @@
+[
+  {
+    "id": "AJUDA_5dfb679c-b9e1-4074-b967-f185a70f9abe",
+    "originalId": "5dfb679c-b9e1-4074-b967-f185a70f9abe",
+    "statement": "Paciente apresenta múltiplas queixas somáticas crônicas, exames repetidamente normais e preocupação excessiva com saúde, com prejuízo funcional, sem intenção consciente de enganar; identifique o grupo de transtornos mais compatível:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transtornos factícios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Transtornos somatomorfos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Simulação (malingering).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtornos dissociativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A alternativa correta é a letra (b).\n\nAnálise detalhada das alternativas:\n\na) Incorreta. Nos transtornos factícios, o indivíduo falsifica, induz ou agrava sintomas de forma consciente e deliberada. O objetivo é assumir o papel de doente para obter atenção ou cuidados médicos (ganho primário), sem que haja um benefício externo óbvio. Como a questão destaca que não há intenção consciente de enganar, essa alternativa é descartada.\n\nb) Correta. Os transtornos somatomorfos (termo utilizado na CID-10 e no DSM-IV, hoje englobados no espectro do Transtorno de Sintomas Somáticos no DSM-5) definem exatamente o quadro descrito. O paciente apresenta sintomas físicos reais e persistentes que causam sofrimento e prejuízo funcional, mas que não possuem uma base orgânica que os justifique após investigação médica. O ponto crucial para o diagnóstico é que a produção dos sintomas não é voluntária; o paciente realmente sente o que relata e acredita estar doente.\n\nc) Incorreta. A simulação (*malingering*) não é classificada como um transtorno psiquiátrico, mas como um comportamento focado em ganhos secundários claros e externos, como benefícios financeiros, dispensa de trabalho, obtenção de medicamentos ou fuga de responsabilidades legais. Na simulação, há intenção consciente e voluntária de enganar o examinador, o que contradiz o enunciado.\n\nd) Incorreta. Os transtornos dissociativos caracterizam-se por uma perda parcial ou completa da integração normal entre a memória, a consciência, a identidade e o controle dos movimentos corporais. Embora possam ocorrer sintomas físicos (como paralisias ou convulsões dissociativas), o foco principal desses transtornos é o fenômeno de desconexão psíquica, e não o padrão de múltiplas queixas somáticas crônicas com preocupação excessiva com a saúde.\n\nResumo para memorização:\n- Somatomorfo: Sintoma inconsciente e Ganho inconsciente.\n- Factício: Sintoma consciente e Ganho inconsciente (papel de doente).\n- Simulação: Sintoma consciente e Ganho consciente (dinheiro, evitar trabalho).",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "TOC, Transtornos Somáticos, Dissociativos e do Estresse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:32.260Z"
+  },
+  {
+    "id": "AJUDA_5e0af702-5ff5-4de7-aee9-8d8db1a2234b",
+    "originalId": "5e0af702-5ff5-4de7-aee9-8d8db1a2234b",
+    "statement": "Criança, sexo masculino, 7 anos de idade é portadora de miopia e usa lentes corretivas. Em mutirão executado por agentes comunitários de saúde treinados previamente, foi submetida ao teste de Snellen em sua escola, usando seus óculos. A mãe da criança procura a unidade básica de saúde solicitando encaminhamento ao oftalmologista após a aplicação do teste, com resultado mostrado na imagem a seguir: \n\nAssinale a alternativa que justifica, corretamente, o encaminhamento ao especialista.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O resultado obtido no olho direito está alterado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O resultado obtido foi diferente nos dois olhos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O teste foi realizado com uso das lentes corretivas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O teste foi realizado por profissional não habilitado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A triagem da acuidade visual em ambiente escolar através da escala de Snellen (ou tabela de \"E\" de Snellen) é uma ferramenta essencial de rastreamento. Em crianças a partir de 6 a 7 anos, a acuidade visual esperada é de no mínimo 0,8 (20/25) em cada olho, preferencialmente 1,0 (20/20). Quando a criança já é usuária de óculos, o teste deve ser realizado com as lentes corretivas para verificar a eficácia da prescrição atual.\n\nAnálise da imagem:\nA escala optométrica decimal indica que:\n- O olho direito (OD) atingiu a linha 0,7.\n- O olho esquerdo (OE) atingiu a linha 0,8.\n\nJustificativa das alternativas:\n\nAlternativa a (Correta): O resultado do olho direito (0,7) está abaixo do limite de normalidade esperado para uma criança de 7 anos (que deve ser de 0,8 a 1,0). Mesmo em uso de correção óptica, a visão não atingiu o patamar adequado, o que indica necessidade de ajuste refracional ou investigação de outras condições, justificando o encaminhamento ao oftalmologista.\n\nAlternativa b (Incorreta): A diferença de apenas uma linha entre os olhos (0,7 e 0,8) não é o critério isolado que define o encaminhamento. Geralmente, considera-se significativa uma assimetria de duas ou mais linhas na escala. O motivo real do encaminhamento é o valor absoluto do olho direito estar abaixo da normalidade.\n\nAlternativa c (Incorreta): O procedimento correto na triagem de pacientes que já utilizam óculos é justamente testá-los com as lentes corretivas, avaliando a acuidade visual corrigida. Fazer o teste com óculos é o protocolo padrão e não o motivo do encaminhamento.\n\nAlternativa d (Incorreta): Agentes comunitários de saúde e outros profissionais treinados são plenamente aptos a realizar testes de triagem visual em ações como as do Programa Saúde na Escola (PSE). O encaminhamento decorre do resultado visual alterado no olho direito, e não de qualquer inadequação de quem aplicou o teste.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios da Refração",
+      "Atenção Primária à Saúde",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ceb07b49e31e1494c698ec9b1196c76cf3b76a3a9bc1e0ec3df336bcca4e5f76.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_5e0af702-5ff5-4de7-aee9-8d8db1a2234b_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:32.692Z"
+  },
+  {
+    "id": "AJUDA_5e218b72-7582-4d07-a46b-5547513a85a8",
+    "originalId": "5e218b72-7582-4d07-a46b-5547513a85a8",
+    "statement": "Sobre a anatomia da região inguinal: a hérnia associada com o Triângulo de Hasselbach e o seu limite superolateral são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia indireta. Ligamento inguinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hérnia indireta. Vasos epigástricos inferiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hérnia direta. Ligamento inguinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hérnia direta. Borda lateral da bainha do reto abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hérnia direta. Vasos epigástricos inferiores.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver esta questão, é fundamental recordar a anatomia cirúrgica da região inguinal, especificamente os limites do Triângulo de Hesselbach e a classificação das hérnias inguinais.\n\nO Triângulo de Hesselbach é uma zona de fraqueza na parede posterior do canal inguinal (fáscia transversalis). Seus limites anatômicos são:\n\n1. Limite Medial: Borda lateral do músculo reto abdominal (ou bainha do reto).\n2. Limite Inferior: Ligamento inguinal (também conhecido como ligamento de Poupart).\n3. Limite Superolateral: Vasos epigástricos inferiores.\n\nA relevância clínica deste triângulo reside na distinção entre hérnias diretas e indiretas:\n\nHérnia Direta: É aquela que protrui diretamente através do assoalho do canal inguinal, ou seja, por dentro do Triângulo de Hesselbach. Ela ocorre medialmente aos vasos epigástricos inferiores.\n\nHérnia Indireta: É aquela que protrui pelo anel inguinal interno, lateralmente aos vasos epigástricos inferiores (portanto, fora do Triângulo de Hesselbach).\n\nAnálise das alternativas:\n\na) Incorreta. A hérnia indireta ocorre lateralmente ao triângulo. O ligamento inguinal é o limite inferior, e não o superolateral.\n\nb) Incorreta. Embora os vasos epigástricos inferiores sejam o limite superolateral do triângulo, a hérnia que se projeta através dele é a direta, não a indireta.\n\nc) Incorreta. A associação com a hérnia direta está correta, porém o ligamento inguinal representa o limite inferior (base) do triângulo.\n\nd) Incorreta. A associação com a hérnia direta está correta, mas a borda lateral do reto abdominal é o limite medial do triângulo, não o superolateral.\n\ne) Correta. A hérnia direta é a que ocorre no espaço delimitado pelo Triângulo de Hesselbach, e o limite superolateral desse espaço é formado pelos vasos epigástricos inferiores.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:32.692Z"
+  },
+  {
+    "id": "AJUDA_5e268ded-82c4-417d-9f86-ac7cd5ff0414",
+    "originalId": "5e268ded-82c4-417d-9f86-ac7cd5ff0414",
+    "statement": "Com relação ao tratamento cirúrgico das hemorroidas, após a ressecção delas, pode-se empregar a técnica de Milligan-Morgan, que consiste em",
+    "options": [
+      {
+        "id": "A",
+        "text": "ligadura dos ramos arteriais com ultrassom Doppler e, em seguida, fixação do excesso de mucosa, responsável pela exteriorização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fechamento da ferida cirúrgica em sutura contínua com fio absorvível, a fim de diminuir a dor pós-operatória e melhorar o aspecto estético.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "emprego de um Doppler que, durante a cirurgia, é inserido no canal anal do paciente para identificar o fluxo vascular; com uma agulha que passa pelo interior da veia hemorroidária (sem oferecer risco de lesão de tecidos), o cirurgião sutura a veia em um ponto específico, cessando a causa da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "uso de um grampeador circular, capaz de remover a submucosa e o excesso de mucosa próximo à linha pectínea (linha de sensibilidade do ânus).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "excisão cirúrgica dos mamilos hemorroidários com ligadura dos pedículos vasculares correspondentes, deixando a ferida operatória aberta.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O tratamento cirúrgico das hemorroidas é um tema frequente em provas e exige o conhecimento das principais técnicas excisionais e não excisionais. A técnica de Milligan-Morgan, descrita em 1937, é considerada o padrão-ouro das hemorroidectomias \"abertas\".\n\nAlternativa A: Incorreta. Esta descrição corresponde à Desarterialização Hemorroidária Transanal guiada por Doppler (técnica THD). Trata-se de um procedimento não excisional, no qual se busca interromper o fluxo arterial para os mamilos hemorroidários e realizar a fixação (mucopexia) do tecido prolapsado.\n\nAlternativa B: Incorreta. O fechamento da ferida cirúrgica com sutura contínua caracteriza a técnica de Ferguson, conhecida como hemorroidectomia \"fechada\". Ela foi desenvolvida para tentar reduzir o tempo de cicatrização e o desconforto, em oposição à técnica aberta.\n\nAlternativa C: Incorreta. Assim como a alternativa A, esta alternativa descreve detalhadamente o princípio do THD (Transanal Hemorrhoidal Dearterialization). A Milligan-Morgan é uma técnica de ressecção (excisão) e não apenas de ligadura vascular guiada por fluxo.\n\nAlternativa D: Incorreta. O uso de grampeador circular para remover um anel de mucosa e submucosa acima da linha pectínea define o PPH (Procedimento para Prolapso e Hemorroidas) ou Hemorroidopexia Grampeada. Nesta técnica, não há a remoção direta dos mamilos hemorroidários externos, mas sim o seu reposicionamento e a redução do fluxo sanguíneo.\n\nAlternativa E: Correta. A técnica de Milligan-Morgan consiste na excisão dos três mamilos hemorroidários principais. O cirurgião realiza a ligadura do pedículo vascular de cada mamilo e, ao final, as feridas cutâneo-mucosas são deixadas abertas para cicatrizar por segunda intenção. Essa característica de \"ferida aberta\" é o que a diferencia fundamentalmente da técnica de Ferguson. É uma técnica eficaz, porém associada a dor pós-operatória significativa devido às feridas abertas na região anodérmica.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:32.692Z"
+  },
+  {
+    "id": "AJUDA_5e271d44-d25c-4fa1-92a6-315142788a9b",
+    "originalId": "5e271d44-d25c-4fa1-92a6-315142788a9b",
+    "statement": "Um homem de 66 anos, previamente hígido, é submetido a uma ressonância magnética abdominal após queixa de desconforto epigástrico inespecífico. O exame revela cisto pancreático único, medindo 3,8 cm, localizado na cabeça do pâncreas, com nódulo mural realçado medindo 6 mm e dilatação do ducto pancreático principal com 1,2 cm de diâmetro. Não há icterícia clínica, linfadenopatia ou elevação de marcadores tumorais. Com base nos critérios atuais de estratificação de risco para neoplasia intraductal mucinosa papilífera (NIMP), qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicação de ressecção cirúrgica devido à presença de características de alto risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Punção guiada por ecoendoscopia para dosagem de amilase e CEA no líquido cístico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Abstenção de conduta, pois se trata de um achado incidental em paciente assintomático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Seguimento clínico e radiológico anual, devido ao baixo risco de transformação maligna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Observação com nova ressonância magnética em 6 meses, apenas se houver crescimento do cisto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo das Neoplasias Intraductais Mucinosas Papilíferas (NIMP ou IPMN), especificamente focando nos critérios de Fukuoka (Consenso Internacional), que são fundamentais para decidir entre a observação e a intervenção cirúrgica.\n\nPara estratificar o risco de malignidade em cistos pancreáticos, dividimos os achados em dois grupos principais: \"Estigmas de alto risco\" (high-risk stigmata) e \"Características preocupantes\" (worrisome features).\n\nNo caso apresentado, o paciente possui dois estigmas de alto risco (high-risk stigmata):\n1. Dilatação do ducto pancreático principal maior ou igual a 10 mm (o paciente apresenta 12 mm).\n2. Presença de nódulo mural realçado maior ou igual a 5 mm (o paciente apresenta 6 mm).\n\nDe acordo com as diretrizes, a presença de qualquer estigma de alto risco é indicação direta para avaliação cirúrgica e, na maioria das vezes, ressecção, desde que o paciente tenha condições clínicas para o procedimento.\n\nAnálise das alternativas:\n\na) Correta. A presença de um nódulo mural realçado de 6 mm e um ducto pancreático de 12 mm classifica o cisto como portador de estigmas de alto risco (high-risk stigmata), o que fundamenta a indicação de ressecção cirúrgica.\n\nb) Incorreta. A ecoendoscopia com punção (EUS-FNA) é geralmente indicada para cistos que apresentam apenas \"características preocupantes\" (como ducto entre 5-9 mm ou cisto maior que 3 cm sem outros sinais) para auxiliar na decisão. Quando já existem estigmas de alto risco claros na ressonância, a cirurgia já está indicada.\n\nc) Incorreta. Achados incidentais em pacientes assintomáticos não devem ser ignorados se apresentarem critérios de risco para malignidade. O tamanho do cisto e a dilatação ductal indicam um risco considerável de adenocarcinoma invasivo ou displasia de alto grau.\n\nd) Incorreta. O seguimento anual é reservado para cistos pequenos, sem nódulos e sem dilatação do ducto principal (baixo risco). As características descritas indicam uma lesão com alto potencial de malignização.\n\ne) Incorreta. A observação de curto prazo (6 meses) não é adequada para um paciente que já apresenta critérios diagnósticos para intervenção cirúrgica imediata, sob o risco de progressão da doença neoplásica.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:32.693Z"
+  },
+  {
+    "id": "AJUDA_5e2e6aa1-a3ad-4e7b-82ea-249c8757938d",
+    "originalId": "5e2e6aa1-a3ad-4e7b-82ea-249c8757938d",
+    "statement": "No hospital, você é chamado para um parecer no serviço de Obstetrícia. A paciente é uma gestante de 28 semanas, com dor abdominal difusa iniciada em epigástrio, migrando para hipocôndrio direito. Tem febre baixa e uma leucocitose moderada. Realiza-se uma USG, que mostra o apêndice aumentado de 10 mm, sem líquido livre.\nDiante desse caso, a sua conduta será indicar",
+    "options": [
+      {
+        "id": "A",
+        "text": "observação clínica até o parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "apendicectomia laparoscópica, com cuidados para evitar aumento da pressão intra-abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "radioterapia abdominal para controle inflamatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "apenas antibióticos até a regressão da dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "apendicectomia aberta obrigatória por laparotomia mediana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nA questão apresenta uma gestante de 28 semanas com quadro clínico e ultrassonográfico compatível com apendicite aguda. Dois pontos são cruciais aqui: a localização da dor no hipocôndrio direito (decorrente do deslocamento do apêndice pelo crescimento uterino) e a confirmação diagnóstica por imagem (apêndice de 10 mm). A apendicite é a emergência cirúrgica não obstétrica mais comum na gestação e requer intervenção imediata para evitar complicações como a perfuração, que eleva drasticamente o risco de perda fetal.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. A observação clínica em casos de apendicite confirmada na gestação é contraindicada. O retardo no tratamento cirúrgico aumenta o risco de peritonite, parto prematuro e óbito fetal.\n\nAlternativa b) Correta. A apendicectomia é o tratamento padrão. Atualmente, a via laparoscópica é considerada segura e preferencial em qualquer trimestre da gestação, desde que realizada por equipe experiente. Os cuidados citados (controle da pressão intra-abdominal, geralmente mantendo o pneumoperitônio entre 10 e 12 mmHg, e o posicionamento da paciente em decúbito lateral esquerdo) visam garantir a perfusão uteroplacentária e evitar a compressão da veia cava.\n\nAlternativa c) Incorreta. A radioterapia não possui indicação no tratamento de processos inflamatórios agudos como a apendicite. Além disso, a radiação ionizante é teratogênica, especialmente em altas doses.\n\nAlternativa d) Incorreta. Embora o tratamento conservador (apenas antibióticos) seja discutido em casos muito selecionados de apendicite não complicada em pacientes não gestantes, na gestação o risco de falha terapêutica e progressão para sepse ou perfuração torna a cirurgia a conduta mandatória.\n\nAlternativa e) Incorreta. A apendicectomia aberta não é obrigatória. A laparoscopia apresenta vantagens como menor dor pós-operatória, menor taxa de infecção de ferida e visualização mais ampla da cavidade. Além disso, se a opção fosse pela via aberta, a incisão geralmente seria sobre o ponto de maior dor (frequentemente adaptada à altura do fundo uterino) e não necessariamente uma laparotomia mediana.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:32.693Z"
+  },
+  {
+    "id": "AJUDA_5e358d90-7243-4313-86f6-465676c6a687",
+    "originalId": "5e358d90-7243-4313-86f6-465676c6a687",
+    "statement": "Homem, 36 anos de idade, em tratamento para o primeiro episódio depressivo com fluoxetina 20 mg de manhã. Após 12 semanas de tratamento nesta dose, refere melhora significativa dos sintomas, mas continua acordando mais cedo do que o habitual e ainda não tem energia para retomar as atividades físicas que praticava antes do início do quadro. Assinale a alternativa que apresenta a conduta mais adequada para a continuidade do tratamento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter a dose da fluoxetina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trocar fluoxetina por sertralina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar a dose da fluoxetina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Associar clonazepam para insônia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trocar o horário da fluoxetina para a noite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O objetivo principal do tratamento de um transtorno depressivo maior é a remissão completa dos sintomas e a recuperação funcional do paciente, não apenas a melhora parcial. Sintomas residuais, como a insônia terminal (acordar mais cedo) e a falta de energia (anestesia afetiva ou fadiga) descritas no caso, são os principais fatores de risco para a recidiva do quadro depressivo.\n\nAnálise das alternativas:\n\na) Incorreta. Manter a dose de 20 mg após 12 semanas de tratamento (tempo mais do que suficiente para observar o efeito pleno dessa dosagem) significaria aceitar uma remissão incompleta. Isso aumenta as chances de o paciente recair em breve ou cronificar os sintomas residuais.\n\nb) Incorreta. A troca de antidepressivo (switch) é uma estratégia indicada quando não há resposta inicial ou quando o paciente apresenta efeitos colaterais intoleráveis. Como o paciente apresentou \"melhora significativa\", ele é considerado um \"respondedor parcial\". Nesses casos, a otimização da dose da medicação atual é o passo anterior à troca de classe ou de fármaco.\n\nc) Correta. A fluoxetina tem uma dose terapêutica que varia de 20 mg a 80 mg/dia. O paciente está na dose mínima eficaz (20 mg) e apresenta resposta clínica positiva, porém incompleta. O aumento da dose para 40 mg (ou mais, conforme a evolução) é a conduta mais lógica e recomendada pelos protocolos (como o CANMAT e o algoritmo da APA) para buscar a remissão total dos sintomas.\n\nd) Incorreta. O clonazepam é um benzodiazepínico que pode auxiliar pontualmente na insônia, mas não trata a depressão nem a falta de energia. Pelo contrário, o uso crônico de benzodiazepínicos pode causar prejuízo cognitivo e sedação residual, não resolvendo a base fisiopatológica do transtorno do paciente.\n\ne) Incorreta. A fluoxetina é um dos Inibidores Seletivos da Recaptação de Serotonina (ISRS) com perfil mais ativador/estimulante. Por essa razão, deve ser administrada preferencialmente pela manhã. Alterar o horário para a noite poderia piorar a qualidade do sono e não resolveria a questão da falta de energia e da remissão incompleta.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Transtornos do Humor",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:32.693Z"
+  },
+  {
+    "id": "AJUDA_5e36f732-90fa-4602-bf8b-268d90a8d3a2",
+    "originalId": "5e36f732-90fa-4602-bf8b-268d90a8d3a2",
+    "statement": "Sobre nefrite lúpica, marque a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Biópsia renal deve ser realizado na nefrite lúpica desde que o FAN seja > 1:320.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tratamento recomendado das classes de I a VI deve ser metilprednisolona e ciclofosfamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Micofenolato mofetil é excelente droga para a fase de manutenção.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É uma forma de doença pauci-imune, pois a imunofluorescência é sempre negativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Os achados compatíveis com nefrite lúpica são protenúria > 1g/d ou hipocelularidade glomerular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c).\n\nAlternativa (a) Incorreta. A indicação de biópsia renal no Lúpus Eritematoso Sistêmico (LES) depende de evidências clínicas de dano renal e não do título do FAN. Os critérios principais são: proteinúria persistente maior ou igual a 0,5 g/24h (ou relação proteína/creatinina maior ou igual a 0,5), presença de sedimentos urinários ativos (hematúria dismórfica ou cilindros celulares) ou perda inexplicada de função renal. O FAN elevado confirma o diagnóstico da doença sistêmica, mas não dita a conduta invasiva renal.\n\nAlternativa (b) Incorreta. O tratamento da nefrite lúpica é individualizado conforme a classe histológica. As classes I (mesangial mínima) e II (mesangial proliferativa) geralmente não exigem imunossupressão agressiva. A classe VI (esclerosante avançada) representa cicatriz renal terminal, onde a imunossupressão não traz benefícios, focando-se no manejo da doença renal crônica. A combinação de corticoide e ciclofosfamida é reservada para as classes proliferativas (III e IV).\n\nAlternativa (c) Correta. O Micofenolato de Mofetila (MMF) é amplamente consolidado na literatura como uma droga de primeira linha tanto para a terapia de indução quanto para a fase de manutenção da nefrite lúpica (classes III, IV e V). Ele apresenta excelente perfil de eficácia na manutenção da remissão, sendo muitas vezes preferido em relação à azatioprina devido ao menor risco de recidivas em certos perfis de pacientes.\n\nAlternativa (d) Incorreta. A nefrite lúpica é o exemplo clássico de doença por deposição de imunocomplexos e não pauci-imune. Na imunofluorescência, ela apresenta o padrão chamado Full House, com positividade para IgG, IgM, IgA, C3 e C1q. O termo pauci-imune é reservado para as vasculites associadas ao ANCA (como a poliangiite microscópica), que apresentam imunofluorescência negativa ou com depósitos mínimos.\n\nAlternativa (e) Incorreta. Embora a proteinúria seja um achado fundamental, o critério diagnóstico clínico geralmente considera valores acima de 0,5 g/dia. Além disso, a nefrite lúpica caracteriza-se por hipercelularidade glomerular (proliferação de células mesangiais, endoteliais e presença de infiltrado inflamatório) nas formas ativas (classes III e IV), e não hipocelularidade.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Doenças Glomerulares",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:32.693Z"
+  },
+  {
+    "id": "AJUDA_5e398810-7500-4cf8-a4f0-63c1053ffc09",
+    "originalId": "5e398810-7500-4cf8-a4f0-63c1053ffc09",
+    "statement": "Pode-se afirmar sobre os desafios para implantação do SUS, em geral, e, especificamente, o processo de descentralização, que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "está relacionado a transferência da gestão de serviços públicos, principalmente para os municípios, sem responsabilidade com relação aos recursos financeiros e prestadores privados junto ao SUS",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "se revelou um equívoco, e medida prejudicial, já que envolve jogos de cooperação e competição, acordos, vetos e decisões conjuntas entre governos com interesses e projetos que se antagonizam na disputa política",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "envolve não apenas a transferência da gestão de serviços públicos, mas também de poder decisório, da responsabilidade sobre o conjunto de prestadores do SUS e de recursos financeiros, principalmente para os municípios",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "está relacionado a transferência da gestão de serviços públicos, principalmente para os estados, sem responsabilidade com relação aos recursos financeiros e prestadores privados junto ao SUS, que são coordenados e conduzidos pela sociedade civil",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nA descentralização é um dos princípios organizativos do Sistema Único de Saúde (SUS), fundamentada na diretriz constitucional de descentralização com comando único em cada esfera de governo. O objetivo central é aproximar a gestão da saúde da realidade local da população.\n\nAlternativa a: Incorreta. A descentralização não se limita à simples transferência da execução de serviços. Para que ela ocorra, o gestor municipal deve obrigatoriamente assumir a responsabilidade sobre o planejamento, a fiscalização dos prestadores privados contratados e a gestão direta dos recursos financeiros que são depositados no Fundo Municipal de Saúde. Não existe gestão de serviços sem a correspondente responsabilidade financeira e administrativa.\n\nAlternativa b: Incorreta. Embora o federalismo brasileiro apresente desafios reais de cooperação, competição e conflitos de interesses entre os entes federados (União, Estados e Municípios), a descentralização é uma diretriz constitucional obrigatória e um pilar da democratização da saúde. Na literatura de saúde coletiva, ela é vista como uma estratégia para aumentar a resolutividade e o controle social, e não como um equívoco ou medida prejudicial.\n\nAlternativa c: Correta. Esta alternativa descreve com precisão o processo de descentralização do SUS, muitas vezes chamado de municipalização. Para que o sistema funcione de forma descentralizada, o município deve ter autonomia. Isso envolve três pilares fundamentais: o poder de decisão política sobre as prioridades locais, a gestão administrativa sobre a rede de prestadores (próprios e contratados) e a gestão financeira direta dos recursos necessários para o custeio e investimento em saúde.\n\nAlternativa d: Incorreta. A diretriz de descentralização do SUS prioriza a municipalização, e não a estadualização. Além disso, a responsabilidade financeira é parte integrante da gestão pública em qualquer esfera. Por fim, a sociedade civil atua no SUS por meio do controle social (Conselhos e Conferências de Saúde), mas a coordenação, condução e execução técnica do sistema são atribuições legais dos gestores do Poder Executivo (Secretarias de Saúde).\n\nGabarito: Letra (c).",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Processos de Descentralização e Regionalização do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:32.693Z"
+  },
+  {
+    "id": "AJUDA_5e49790b-7211-4e05-ad1c-7fdec9112657",
+    "originalId": "5e49790b-7211-4e05-ad1c-7fdec9112657",
+    "statement": "A leucemia linfoide aguda (LLA) é a neoplasia maligna mais comum na infância. Qual dos seguintes achados clínicos NÃO é frequentemente encontrado em crianças com LLA na fase inicial da doença?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Palidez cutâneo-mucosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hepatoesplenomegalia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Petéquias e equimoses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Linfonodomegalia generalizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Dor abdominal intensa e persistente.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A Leucemia Linfoide Aguda (LLA) é o câncer mais frequente na infância e sua apresentação clínica reflete a substituição das células normais da medula óssea por blastos (insuficiência medular) e a infiltração de órgãos extramedulares.\n\nAlternativa a) Incorreta. A palidez cutâneo-mucosa é um dos achados mais comuns e precoces. Ela é consequência da anemia normocítica e normocrômica, que ocorre porque a medula óssea está sobrecarregada pela proliferação de blastos, impedindo a produção adequada de hemácias.\n\nAlternativa b) Incorreta. A hepatoesplenomegalia ocorre em cerca de 60% a 70% dos casos de LLA no momento do diagnóstico. O aumento do fígado e do baço é causado pela infiltração direta desses órgãos pelas células leucêmicas.\n\nAlternativa c) Incorreta. Petéquias, equimoses e sangramentos em mucosas são manifestações clínicas da plaquetopenia (redução do número de plaquetas). Assim como a anemia, a plaquetopenia decorre da substituição do tecido hematopoiético normal por células neoplásicas na medula óssea.\n\nAlternativa d) Incorreta. A linfonodomegalia (aumento de gânglios) é um achado clássico da LLA, sendo geralmente generalizada, indolor e de consistência firme. Os locais mais acometidos são as cadeias cervicais, axilares e inguinais.\n\nAlternativa e) Correta. Esta é a alternativa que apresenta um achado NÃO frequente na fase inicial. Embora a criança possa sentir um vago desconforto abdominal devido ao crescimento do fígado e do baço (visceromegalias), a dor abdominal intensa e persistente não é característica da LLA. Esse tipo de sintoma sugere outras patologias, como abdome agudo inflamatório ou obstrutivo, ou complicações raras e tardias da doença.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Leucemias",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:32.693Z"
+  }
+]

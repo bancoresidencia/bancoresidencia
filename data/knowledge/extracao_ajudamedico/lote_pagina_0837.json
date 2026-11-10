@@ -1,0 +1,539 @@
+[
+  {
+    "id": "AJUDA_e8e3bbda-d1e5-4824-80bc-4f472a21f709",
+    "originalId": "e8e3bbda-d1e5-4824-80bc-4f472a21f709",
+    "statement": "Sobre os marcadores tumorais, marque a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O CEA é utilizado como teste de rastreamento devido a sua alta sensibilidade nos estágios iniciais da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A alfafetoproteína sérica elevada só ocorre no caso de neoplasias malignas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O CA 19-9 é utilizado no monitoramento do tratamento do câncer de pâncreas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Após a ressecção de neoplasia de cólon o CEA encontra-se normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A alfafetoproteína está elevada exclusivamente nas neoplasias de estômago.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. O CEA (Antígeno Carcinoembrionário) não possui sensibilidade ou especificidade adequadas para ser utilizado como teste de rastreamento (screening) na população geral ou em estágios iniciais. Muitos pacientes com câncer colorretal inicial apresentam níveis normais de CEA. Sua principal função é o acompanhamento pós-operatório para detecção de recidiva e monitoramento de metástases.\n\nAlternativa b: Incorreta. A alfafetoproteína (AFP) pode estar elevada em diversas condições benignas, como na gestação, em processos de regeneração hepática (hepatites agudas e crônicas) e na cirrose hepática. Portanto, sua elevação não é sinônimo exclusivo de neoplasia maligna.\n\nAlternativa c: Correta. O CA 19-9 é o marcador tumoral de escolha para o adenocarcinoma de pâncreas. Embora não seja utilizado para diagnóstico inicial devido à baixa sensibilidade em tumores pequenos e à existência de indivíduos falso-negativos (aqueles com fenótipo Lewis a-b-), ele é excelente para monitorar a eficácia do tratamento quimioterápico e para identificar a recorrência da doença após a cirurgia.\n\nAlternativa d: Incorreta. Após a ressecção completa de uma neoplasia de cólon, espera-se que os níveis de CEA caiam progressivamente até a normalização. No entanto, a afirmação de que ele \"encontra-se normal\" de forma genérica é falsa, pois o marcador pode permanecer elevado se houver doença residual, metástases não diagnosticadas ou se o paciente for tabagista crônico (que naturalmente possui níveis de CEA mais altos).\n\nAlternativa e: Incorreta. A alfafetoproteína é o marcador clássico do Carcinoma Hepatocelular (fígado) e de Tumores de Células Germinativas (como os de testículo e ovário). Embora exista um subtipo raro de câncer de estômago que produz AFP (adenocarcinoma hepatoide), ela não é exclusiva dessa topografia.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Neoplasias Pancreáticas",
+      "Tumores Hepáticos",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:40.784Z"
+  },
+  {
+    "id": "AJUDA_e8f322d0-d313-4255-b445-19bea9de4c66",
+    "originalId": "e8f322d0-d313-4255-b445-19bea9de4c66",
+    "statement": "Analise o gráfico de floresta (forest plot) a seguir de uma metanálise comparando a efetividade de um fármaco antiemético contra placebo na profilaxia de náusea pós-operatória. [Imagem de um forest plot onde o diamante do resultado sumário está à esquerda da linha de nulidade 1.0, e o Estudo A cruza a linha 1.0]. Legenda: RR = razão de risco.\n\nPode-se afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "no estudo A, não se observou diferença de efetividade conclusiva entre o fármaco testado e o placebo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "do resultado da metanálise, estatisticamente significativo para um nível de significância de 5%, se conclui a não efetividade do fármaco testado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o estudo D foi conclusivo quanto a maior efetividade do fármaco testado em relação ao placebo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a medida-sumário da metanálise apresenta um intervalo de confiança 95% mais amplo que o encontrado em cada estudo individualmente",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender a questão, devemos analisar os elementos fundamentais de um gráfico de floresta (*forest plot*) em metanálises: a linha vertical de nulidade (que, no caso da Razão de Risco – RR, é 1,0), as linhas horizontais que representam os intervalos de confiança (IC) de cada estudo e o diamante, que representa o resultado combinado (medida-sumário).\n\nAnálise das alternativas:\n\na) Correta. No Estudo A, observa-se que a linha horizontal (intervalo de confiança) cruza a linha vertical de nulidade (1,0). Quando o intervalo de confiança toca ou cruza o valor 1,0 em uma razão de risco, o resultado não possui significância estatística. Portanto, o estudo isoladamente não permite concluir se há diferença real de efetividade entre o fármaco e o placebo.\n\nb) Incorreta. O diamante (resultado da metanálise) está posicionado inteiramente à esquerda da linha 1,0 e suas extremidades não a tocam. Isso indica que o resultado é estatisticamente significativo e favorece a intervenção. Como o objetivo do fármaco é a profilaxia de náusea (redução de risco), estar à esquerda do 1,0 permite concluir que o fármaco é efetivo, e não o contrário.\n\nc) Incorreta. Ao observar o Estudo D no gráfico, nota-se que sua linha horizontal também cruza a linha vertical de nulidade (1,0). Assim como o Estudo A, o Estudo D não apresentou resultado estatisticamente significativo, sendo, portanto, inconclusivo sobre a maior efetividade do fármaco.\n\nd) Incorreta. A medida-sumário (diamante) é o resultado do agrupamento de todos os estudos, o que aumenta o poder estatístico da análise. Visualmente, o diamante é horizontalmente mais estreito que a maioria das linhas dos estudos individuais, indicando um intervalo de confiança mais preciso (menos amplo), e não mais amplo.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/d03d89fc1874ade1bd6f42b2d66b78a2bbc2616b3b6eec0a3409ae9a463316e7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e8f322d0-d313-4255-b445-19bea9de4c66_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:41.479Z"
+  },
+  {
+    "id": "AJUDA_e8f85e52-6f03-4429-92f1-3c636c1de600",
+    "originalId": "e8f85e52-6f03-4429-92f1-3c636c1de600",
+    "statement": "Paciente 45 anos com hematêmese volumosa. História de cirrose e varizes esofágicas. Primeira conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar IBP EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar betabloqueador oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar octreotídeo EV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Colonoscopia urgente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o manejo agudo da hemorragia digestiva alta (HDA) por varizes esofágicas em um paciente cirrótico. Diante de uma hematêmese volumosa nesse perfil de paciente, a prioridade, após a estabilização hemodinâmica inicial (ABC), é o controle do sangramento portal por meio de medidas farmacológicas e endoscópicas.\n\nAlternativa (a) Incorreta: O inibidor de bomba de prótons (IBP) endovenoso é a terapia de escolha para HDA não varicosa, como a úlcera péptica. Embora seja frequentemente iniciado na suspeita inicial de HDA até que se confirme a causa pela endoscopia, em um paciente com diagnóstico conhecido de cirrose e varizes, a prioridade absoluta são as drogas que agem na pressão portal.\n\nAlternativa (b) Incorreta: Os betabloqueadores (como o propranolol) são indicados na profilaxia primária e secundária para evitar que as varizes sangrem ou ressangrem. No entanto, eles são terminantemente proibidos na fase aguda do sangramento, pois impedem a resposta taquicárdica compensatória à hipovolemia e podem agravar o choque.\n\nAlternativa (c) Correta: O octreotídeo (ou a terlipressina e a somatostatina) é um análogo da somatostatina que promove vasoconstrição esplâncnica, reduzindo o fluxo sanguíneo para o sistema porta e, consequentemente, diminuindo a pressão nas varizes esofágicas. As diretrizes internacionais (Consenso de Baveno) recomendam que as drogas vasoativas sejam iniciadas o mais precocemente possível, preferencialmente ainda na fase pré-hospitalar ou assim que o paciente chega à emergência, antes mesmo da realização da endoscopia.\n\nAlternativa (d) Incorreta: A hematêmese é o vômito com sangue, o que indica obrigatoriamente um sangramento acima do ângulo de Treitz (HDA). O exame de escolha para diagnóstico e tratamento é a endoscopia digestiva alta (EDA). A colonoscopia é utilizada para investigação de hemorragia digestiva baixa e não tem papel no manejo inicial desse paciente.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:41.479Z"
+  },
+  {
+    "id": "AJUDA_e8ff9737-ba09-457e-b466-a2f8fe88f17d",
+    "originalId": "e8ff9737-ba09-457e-b466-a2f8fe88f17d",
+    "statement": "Pré-escolar, sexo masculino, 4 anos, é levado pela mãe à consulta por atraso na linguagem e comportamento “diferente”. A mãe relata que ele não responde quando chamado pelo nome, evita contato visual, não aponta para objetos de interesse e prefere brincar sozinho. Passa longos períodos alinhando carrinhos e balança as mãos quando está animado. Aceita apenas 5 alimentos e apresenta crises intensas de irritação quando a rotina é alterada. Sentou aos 6 meses e andou aos 13 meses. Não há perda de habilidades previamente adquiridas. A gestação e o parto foram normais. O exame neurológico é normal. Sobre o diagnóstico de Transtorno do Espectro Autista (TEA) nesse caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O diagnóstico de TEA pode ser firmado clinicamente com base nos critérios do DSM-5 (déficits persistentes na comunicação social e padrões restritos e repetitivos de comportamento), sendo que a presença de atraso motor é um critério essencial para o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A ausência de apontar para compartilhar interesse aos 4 anos é um dos marcos preditivos mais precoces e específicos para TEA, e sua presença no caso fortalece a hipótese diagnóstica, devendo o pediatra solicitar avaliação multidisciplinar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O diagnóstico de TEA exige obrigatoriamente a confirmação por exame de neuroimagem (ressonância magnética de crânio) ou eletroencefalograma (EEG), sendo a avaliação clínica isolada insuficiente para firmar o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O quadro descrito é mais compatível com Transtorno de Linguagem (Transtorno do Desenvolvimento da Linguagem), pois o desenvolvimento motor normal e a ausência de perda de habilidades afastam o diagnóstico de TEA, que sempre cursa com regressão do desenvolvimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O diagnóstico de TEA requer, além dos critérios clínicos, a identificação de uma mutação genética específica (como variantes patogênicas nos genes SHANK3, MECP2 ou FMR1) por meio de sequenciamento de nova geração (painel de genes), sendo o diagnóstico clínico isolado considerado provisório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resumo do caso: menino de 4 anos com déficit de comunicação social (não responde ao nome, evita contato visual, não aponta para compartilhar interesse, brinca isolado) e padrões restritos e repetitivos (alinha carrinhos, estereotipia motora com flapping, seletividade alimentar, rigidez com rotinas). Os marcos motores são normais, não houve regressão e o exame neurológico é normal. O quadro é típico de TEA, e o diagnóstico é essencialmente clínico.\n\nConceitos-chave:\n- Critérios do DSM-5: (A) déficits persistentes na comunicação e interação social, em reciprocidade socioemocional, comunicação não verbal e desenvolvimento de relacionamentos; (B) pelo menos 2 de 4 padrões restritos e repetitivos: estereotipias, insistência em rotinas, interesses fixos e hiper ou hiporreatividade sensorial. Os sintomas devem estar presentes no início do desenvolvimento e causar prejuízo funcional, e não devem ser explicados por deficiência intelectual isolada.\n- A atenção compartilhada (apontar protodeclarativo, mostrar, seguir o olhar) é um dos marcos mais precoces e específicos de risco para TEA. Normalmente surge por volta de 12 a 14 meses. Sua ausência aos 4 anos reforça muito a hipótese.\n- Conduta: encaminhar para avaliação multidisciplinar (neuropediatria ou psiquiatria da infância, fonoaudiologia, terapia ocupacional, psicologia), incluir avaliação auditiva para excluir surdez e iniciar intervenção precoce sem esperar a confirmação formal.\n- Não há exame de imagem, EEG ou teste genético obrigatório. Eles são solicitados apenas em situações específicas, como crises epilépticas, dismorfismos, macrocefalia, regressão ou suspeita de síndrome genética. O teste genético (microarray, X frágil) pode ser indicado em casos selecionados, mas não é exigido para o diagnóstico.\n\nAnálise das alternativas:\n\na) Incorreta. A primeira parte, sobre o diagnóstico clínico pelo DSM-5, está correta, mas atraso motor não é critério diagnóstico. Os marcos motores podem ser normais, como neste caso.\n\nb) Correta. A ausência de apontar para compartilhar interesse é um marcador precoce e específico de TEA. Sua presença, somada aos demais achados, fortalece o diagnóstico e indica avaliação multidisciplinar.\n\nc) Incorreta. Ressonância magnética e EEG não são necessários para firmar o diagnóstico. São reservados para situações em que há indicação clínica específica, como epilepsia ou alterações neurológicas.\n\nd) Incorreta. O Transtorno de Linguagem isolado não explica os déficits sociais e os comportamentos restritos e repetitivos. A regressão ocorre em apenas cerca de 20 a 30% dos casos de TEA, portanto nem sempre está presente.\n\ne) Incorreta. Nenhuma mutação é necessária para o diagnóstico, que é clínico. Genes como SHANK3, MECP2 (síndrome de Rett) e FMR1 (X frágil) são associados a síndromes que podem se sobrepor ao TEA, mas a pesquisa genética é complementar, e o diagnóstico clínico não é \"provisório\" sem ela.\n\nGabarito: letra B.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Infantil",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:41.479Z"
+  },
+  {
+    "id": "AJUDA_e9055b0f-15d2-4843-ae6e-1f9545730a56",
+    "originalId": "e9055b0f-15d2-4843-ae6e-1f9545730a56",
+    "statement": "Uma gestante assintomática realizou um teste para toxoplasmose com resultado de IgM reagente isoladamente, após apresentar 2 testes anteriores negativos para IgM e IgG. Ela iniciou tratamento específico e após 3 semanas realizou novo teste, cujo resultado foi negativo para ambas imunoglobulinas. O que ocorreu nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Confusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Causalidade reversa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Erro tipo I.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Erro tipo II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Infecção aguda por toxoplasma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender essa questão, devemos analisar o cenário clínico e laboratorial sob a ótica da bioestatística aplicada ao diagnóstico.\n\nO caso descreve uma gestante que teve um resultado IgM reagente isolado. No entanto, após 3 semanas, um novo teste mostrou que tanto IgM quanto IgG eram negativos. Se houvesse uma infecção aguda real, esperaríamos que o IgM permanecesse positivo por mais tempo ou que ocorresse a soroconversão do IgG (o IgG se tornaria positivo). Como ambos voltaram a ser negativos, conclui-se que o primeiro resultado IgM reagente foi, na verdade, um falso-positivo.\n\nAnálise das alternativas:\n\na) Incorreta. O viés de confusão ocorre em estudos epidemiológicos quando uma variável externa está associada tanto à exposição quanto ao desfecho, distorcendo a relação entre eles. Não se aplica ao erro de um resultado isolado de teste diagnóstico.\n\nb) Incorreta. A causalidade reversa acontece quando, em um estudo, o que se acredita ser a causa é, na verdade, a consequência do desfecho (por exemplo, dizer que o sedentarismo causa dor nas costas quando, na verdade, as pessoas pararam de se exercitar porque já tinham dor). Não possui relação com erro laboratorial.\n\nc) Correta. O Erro Tipo I (ou erro alfa) ocorre quando rejeitamos a hipótese nula ($H_0$), embora ela seja verdadeira. No contexto de testes diagnósticos, a hipótese nula é que o paciente não tem a doença. Se o teste der positivo em um paciente saudável, estaremos rejeitando a $H_0$ erroneamente. Portanto, o Erro Tipo I é o equivalente estatístico ao resultado falso-positivo. Como a paciente não tinha a infecção (confirmado pelo teste posterior negativo), o IgM reagente inicial foi um Erro Tipo I.\n\nd) Incorreta. O Erro Tipo II (ou erro beta) ocorre quando aceitamos a hipótese nula, sendo ela falsa. Ou seja, o paciente tem a doença, mas o teste resulta negativo. É o equivalente ao falso-negativo. O caso descreve o oposto: um teste positivo em alguém saudável.\n\ne) Incorreta. Se fosse uma infecção aguda, após 3 semanas o perfil sorológico deveria mostrar IgG reagente (soroconversão) e, provavelmente, o IgM ainda estaria reagente. O desaparecimento de ambas as imunoglobulinas descarta a infecção ativa.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Estatística Médica",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:41.479Z"
+  },
+  {
+    "id": "AJUDA_e90aacfb-3fea-4f4a-b199-6d54d720de9b",
+    "originalId": "e90aacfb-3fea-4f4a-b199-6d54d720de9b",
+    "statement": "Paciente, 45 anos de idade, sexo feminino, vem ao pronto-socorro com dor abdominal aguda em faixa no andar superior do abdome e irradiação para o dorso há 8 horas. Anteriormente, já teve cólicas abdominais. Tem 4 filhos, faz uso de álcool socialmente e está com IMC de 34. Exame físico está normal, exceto pela dor, à palpação, no andar superior do abdome com descompressão brusca negativa. Os exames laboratoriais mostram alteração da amilase de 1.355 U/L e leucócitos no hemograma de 14.000 U/L. Assinale a alternativa que apresenta, corretamente, a hipótese diagnóstica e a conduta inicial para esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colecistite aguda – internar, jejum e USG de abdome superior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pancreatite aguda biliar - internar, jejum e USG de abdome.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pancreatite aguda alcoólica – internar, jejum e tomografia de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pancreatite crônica agudizada alcoólica – internar, jejum e tomografia de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Úlcera gástrica perfurada – internar, exame de imagem e operar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nA paciente apresenta um quadro clássico de pancreatite aguda, caracterizado por dor abdominal em faixa no andar superior com irradiação para o dorso. O diagnóstico é confirmado pelos critérios de Atlanta, que exigem dois dos três seguintes: dor característica, amilase ou lipase três vezes acima do valor de referência (aqui está em 1.355 U/L) e/ou exames de imagem compatíveis. \n\nA etiologia biliar é a principal suspeita devido ao perfil da paciente: sexo feminino, 45 anos, multípara (4 filhos) e obesa (IMC 34) – os clássicos \"Fs\" da litíase biliar (Female, Forty, Fat, Fertile). Além disso, ela relata cólicas abdominais prévias, sugerindo colelitíase. O uso de álcool é apenas social, o que torna a etiologia alcoólica menos provável.\n\nExplicação das Alternativas:\n\na) Incorreta. Embora a paciente tenha fatores de risco para colecistite, a descrição da dor em faixa e, principalmente, a elevação acentuada da amilase (mais de 10 vezes o valor normal) direcionam o diagnóstico para pancreatite aguda. Na colecistite, a dor costuma ser localizada no hipocôndrio direito com sinal de Murphy positivo, o que não foi relatado.\n\nb) Correta. O quadro clínico e laboratorial sela o diagnóstico de pancreatite aguda. A hipótese biliar é a mais provável pelo perfil epidemiológico e histórico de cólicas. A conduta inicial inclui internação, jejum para repouso pancreático, hidratação venosa, analgesia e a realização de ultrassonografia (USG) de abdome para confirmar a presença de cálculos na vesícula biliar ou colédoco, sendo este o exame de escolha inicial para definir a etiologia.\n\nc) Incorreta. O consumo social de álcool não é o principal fator de risco neste caso, em comparação aos fortes indícios de doença biliar. Além disso, a tomografia de abdome não deve ser realizada de rotina na admissão (nas primeiras 48-72 horas), a menos que haja dúvida diagnóstica ou falta de melhora clínica, pois as alterações inflamatórias e necróticas demoram a se consolidar na imagem.\n\nd) Incorreta. Não há elementos na história que sugiram cronicidade, como episódios recorrentes de pancreatite, esteatorreia (perda de gordura nas fezes), diabetes secundário ou calcificações pancreáticas. Além disso, a etiologia biliar prevalece sobre a alcoólica neste cenário.\n\ne) Incorreta. Uma úlcera perfurada apresentaria, obrigatoriamente, sinais de irritação peritoneal franca (abdome em tábua, descompressão brusca positiva em todo o abdome) e não costuma cursar com elevações tão específicas e vultosas da amilase. A conduta seria a radiografia de abdome para buscar pneumoperitônio e cirurgia de urgência, o que não condiz com o quadro de estabilidade e dor em faixa descrito.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:41.479Z"
+  },
+  {
+    "id": "AJUDA_e90c8c4c-eebd-4a84-8360-35f0282b0ad0",
+    "originalId": "e90c8c4c-eebd-4a84-8360-35f0282b0ad0",
+    "statement": "Um paciente de 62 anos de idade, previamente hipertenso, apresentava dor torácica típica já há 2 horas, irradiando para o braço esquerdo, associada à sudorese e às náuseas. No exame físico, apresentava‑se estável hemodinamicamente. O eletrocardiograma de admissão está disposto logo a seguir. O paciente chegou ao serviço médico às 19 horas, na troca de plantão, passando‑se, assim, 45 minutos sem reavaliação. O paciente estava em um hospital sem serviço de hemodinâmica, e o centro de referência mais próximo tinha um tempo estimado de recebimento do paciente em 80 minutos.\n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta a conduta adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "transferir o paciente imediatamente para o centro com hemodinâmica, sem realizar trombólise",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar trombólise imediatamente, em caso de não haver contraindicações, e transferir para o centro de referência para angiografia/angioplastia posteriormente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "manter tratamento clínico conservador, devido ao paciente estar hemodinamicamente estável",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "transferir para o centro de referência e realizar angioplastia eletiva após 24 horas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realizar trombólise e manter o paciente no hospital de origem, sem transferência, em caso de melhora clínica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um quadro clínico de Infarto Agudo do Miocárdio com Supradesnivelamento do Segmento ST (IAMCSST). O eletrocardiograma (ECG) confirma o diagnóstico ao demonstrar supradesnivelamento do segmento ST nas derivações inferiores (DII, DIII e aVF). \n\nO ponto central da questão é a escolha da estratégia de reperfusão. As diretrizes nacionais e internacionais estabelecem que, se o paciente estiver em um hospital sem serviço de hemodinâmica e o tempo estimado para a realização da angioplastia primária (contado a partir do diagnóstico) for superior a 120 minutos, a conduta preferencial é a trombólise química imediata (em até 30 minutos), seguida de transferência para um centro de referência.\n\nNo caso descrito, o paciente já aguardou 45 minutos e a transferência levaria mais 80 minutos. Somando esses tempos ao período necessário para preparar a sala de hemodinâmica e cruzar a lesão com o guia, o tempo total ultrapassaria significativamente a janela de 120 minutos para a angioplastia primária. Portanto, a estratégia farmacoinvasiva é a indicada.\n\nAnálise das Alternativas:\n\na) Incorreta. A transferência direta para angioplastia primária sem trombólise só seria a melhor opção se o tempo total até a abertura do vaso (balloon-time) fosse inferior a 120 minutos. Com o atraso de 45 minutos somado aos 80 minutos de deslocamento, o benefício da angioplastia primária sobre a fibrinólise se perde devido ao tempo de isquemia prolongado.\n\nb) Correta. Esta é a definição da estratégia farmacoinvasiva. Realiza-se a trombólise no local (pela impossibilidade de angioplastia rápida) e o paciente é transferido logo em seguida para um centro com hemodinâmica para realizar o cateterismo de rotina (entre 3 e 24 horas após a trombólise) ou de resgate (se a trombólise falhar).\n\nc) Incorreta. O IAMCSST é uma emergência médica que exige reperfusão imediata (mecânica ou química). A estabilidade hemodinâmica momentânea não autoriza o tratamento conservador, pois a artéria coronária está totalmente ocluída e o miocárdio está em sofrimento.\n\nd) Incorreta. A angioplastia após a trombólise não é considerada \"eletiva\" no contexto do infarto agudo. Ela deve ser realizada de forma sistemática nas primeiras 24 horas (idealmente entre 3 e 24 horas), mas o termo \"eletiva\" e o prazo sugerido descaracterizam a urgência da estratégia farmacoinvasiva.\n\ne) Incorreta. Todo paciente submetido à trombólise química por IAMCSST deve ser transferido para um centro com hemodinâmica para a realização de angiografia. Mesmo que haja critérios de reperfusão (melhora da dor e redução do supradesnivelamento), a transferência é mandatória para tratar a lesão residual e evitar a reoclusão do vaso.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ad609f22a6de119ac9a90dadb815d47543277a54d13440eb38327499fbec776c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e90c8c4c-eebd-4a84-8360-35f0282b0ad0_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:41.956Z"
+  },
+  {
+    "id": "AJUDA_e91b1aaa-15ac-45cc-9948-12704bbfe550",
+    "originalId": "e91b1aaa-15ac-45cc-9948-12704bbfe550",
+    "statement": "Mulher de 69 anos, transplantada renal há 7 anos, em uso de imunossupressores (ciclosporina, micofenolato de mofetila e prednisona), procura pronto-socorro com dor abdominal de forte intensidade iniciada há 1 dia, localizada inicialmente em flanco e fossa ilíaca esquerda, associada a náuseas, vômitos e diarreia. Ao exame, apresenta-se em regular estado geral, com abdome distendido, doloroso difusamente e ruídos hidroaéreos abolidos. Evolui com instabilidade hemodinâmica. A tomografia computadorizada evidenciou espessamento circunferencial subestenosante em íleo distal, densificação da gordura adjacente, distensão de alças a montante e liquido livre abdominal, sem coleções organizadas. A principal hipótese diagnóstica, dentre as abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença de Crohn.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Isquemia mesentérica não oclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Linfoma intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Enterocolite neutropênica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Gastroenterite viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda um quadro de abdome agudo em uma paciente imunossuprimida (transplantada renal em uso de ciclosporina, micofenolato e prednisona). O ponto-chave é reconhecer a gravidade clínica (instabilidade hemodinâmica, abdome distendido e silencioso) associada aos achados de imagem no íleo distal.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a Doença de Crohn possa cursar com espessamento do íleo distal e estenoses, é improvável que uma paciente de 69 anos apresente sua primeira manifestação de forma tão aguda e grave, evoluindo para choque hemodinâmico em 24 horas sem história prévia. O contexto de imunossupressão intensa direciona o raciocínio para causas infecciosas ou complicações da própria terapia.\n\nb) Incorreta. A isquemia mesentérica não oclusiva geralmente ocorre em pacientes com baixo débito cardíaco ou uso de vasopressores. Embora a paciente esteja instável agora, a dor começou no flanco e na fossa ilíaca esquerda com diarreia, e a imagem mostra um acometimento segmentar muito específico e inflamatório no íleo distal, o que é mais sugestivo de um processo inflamatório/infeccioso localizado do que de uma isquemia por baixo fluxo.\n\nc) Incorreta. O Linfoma Intestinal (especialmente a PTLD — Doença Linfoproliferativa Pós-Transplante) é uma complicação conhecida em transplantados. Contudo, o linfoma costuma ter um curso mais subagudo ou crônico, apresentando-se como massa, perda de peso ou obstrução progressiva, e não como um quadro inflamatório fulminante com instabilidade hemodinâmica súbita.\n\nd) Correta. A enterocolite neutropênica (também conhecida como tiflite, embora possa acometer o íleo distal e o cólon ascendente) é uma síndrome clínica caracterizada por inflamação transmural do intestino em pacientes imunossuprimidos. O micofenolato de mofetila, presente na prescrição da paciente, é uma droga mielotóxica que pode causar neutropenia importante e toxicidade gastrointestinal direta. O quadro clínico de dor abdominal, diarreia, febre (implícita pela gravidade) e o espessamento parietal no íleo distal/ceco na tomografia, associado ao choque, é a apresentação clássica dessa patologia, que exige diagnóstico precoce devido à alta letalidade.\n\ne) Incorreta. Uma gastroenterite viral comum não justificaria os achados tomográficos de espessamento subestenosante, densificação da gordura e, principalmente, a evolução para instabilidade hemodinâmica e abdome agudo obstrutivo/paralítico.\n\nAssociação com a Imagem:\nAs imagens de tomografia computadorizada (cortes coronais superiores e axiais inferiores) mostram claramente, dentro dos círculos brancos, uma alça de íleo distal com paredes marcadamente espessadas e edematosas (aspecto em alvo), reduzindo a luz intestinal (caráter subestenosante). Nota-se também a distensão de alças delgadas a montante (com níveis hidroaéreos e conteúdo líquido), indicando uma obstrução funcional ou mecânica decorrente do processo inflamatório. No corte axial inferior direito, observa-se o rim transplantado na fossa ilíaca, confirmando o contexto cirúrgico da paciente.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Neutropenia Febril"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/23551bcded3094513fb4bb9965eb1fa04b20ab7e1efb75fdc65135933dccf1c1.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e91b1aaa-15ac-45cc-9948-12704bbfe550_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:42.042Z"
+  },
+  {
+    "id": "AJUDA_e92098d6-1423-443e-b251-50b5fe059682",
+    "originalId": "e92098d6-1423-443e-b251-50b5fe059682",
+    "statement": "Menino com 2 anos de idade iniciou há 4 horas com episódios intermitentes de choro intenso, vômitos e evacuação com muco e sangue. No exame físico apresenta abdome distendido, doloroso à palpação e massa palpável em abdome à direita. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença de Hirschsprung.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diverticulite de Meckel.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apendicite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Intussuscepção intestinal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito é clássico e compõe a tríade típica da intussuscepção intestinal, também conhecida como invaginação intestinal. Abaixo, analiso as alternativas para justificar o diagnóstico:\n\nAlternativa (a) Incorreta: A doença de Hirschsprung (megacólon congênito) manifesta-se geralmente no período neonatal com atraso na eliminação de mecônio, constipação crônica e distensão abdominal. Embora possa complicar com enterocolite (causando diarreia sanguinolenta), não apresenta o padrão de dor em cólica intermitente nem a massa palpável característica descrita no caso.\n\nAlternativa (b) Incorreta: O divertículo de Meckel é a causa mais comum de sangramento gastrointestinal baixo indolor em crianças. Quando inflama (diverticulite), mimetiza uma apendicite aguda. Embora o divertículo possa servir como ponto de partida para uma intussuscepção, a descrição completa de dor intermitente, massa palpável e fezes em \"geleia de morango\" direciona o diagnóstico para a intussuscepção em si.\n\nAlternativa (c) Incorreta: A apendicite aguda é rara em crianças de 2 anos. O quadro costuma evoluir com dor abdominal contínua que migra para a fossa ilíaca direita, febre e anorexia. Não costuma apresentar eliminação de muco e sangue (fezes em \"geleia de morango\"), nem crises de choro intermitentes separadas por períodos de letargia ou normalidade.\n\nAlternativa (d) Correta: A intussuscepção intestinal é a causa mais comum de obstrução intestinal entre os 3 meses e os 6 anos de idade. O caso apresenta todos os elementos clássicos: 1) dor abdominal paroxística e intermitente (choro intenso); 2) vômitos; 3) fezes com muco e sangue (aspecto de \"geleia de morango\", decorrente da isquemia intestinal e produção de muco); e 4) massa palpável em formato de salsicha, geralmente no quadrante superior direito ou flanco direito. O início súbito (4 horas) reforça a natureza aguda da condição, na qual um segmento proximal do intestino se telescopa para dentro de um segmento distal.\n\nPortanto, o diagnóstico mais provável é intussuscepção intestinal.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Infantil",
+      "Abdome Agudo Obstrutivo",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:42.042Z"
+  },
+  {
+    "id": "AJUDA_e92200fc-0816-4844-8c8e-72dd55e3de71",
+    "originalId": "e92200fc-0816-4844-8c8e-72dd55e3de71",
+    "statement": "Um examinador realizou uma compressão da fossa ilíaca direita, com um paciente em decúbito dorsal. Ao mesmo tempo, o paciente era instruído a elevar o membro inferior direito estendido. Sinal positivo: o paciente referiu uma dor intensa durante a elevação da perna, indicando irritação peritoneal localizada. \nCom base nesse caso clínico hipotético, é correto afirmar que essa descrição semiológica, na avaliação de apendicite aguda, recebe o nome de",
+    "options": [
+      {
+        "id": "A",
+        "text": "sinal de Lapinsky.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "sinal de Blumberg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sinal Rovsing.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sinal de Giordano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "sinal de Gersuny.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a letra (a).\n\nO sinal descrito no enunciado é o sinal de Lapinski. Ele é pesquisado por meio da compressão da fossa ilíaca direita enquanto o paciente realiza a elevação do membro inferior direito estendido. O objetivo dessa manobra é comprimir o apêndice entre a mão do examinador (parede abdominal) e o músculo psoas em contração. A presença de dor intensa durante o movimento indica um processo inflamatório no apêndice cecal ou irritação peritoneal localizada naquela região.\n\nAnálise das alternativas:\n\na) Sinal de Lapinski: Correta. É a descrição exata da manobra solicitada pela questão, sendo um sinal semiológico clássico no diagnóstico de apendicite aguda.\n\nb) Sinal de Blumberg: Incorreta. O sinal de Blumberg é caracterizado pela dor à descompressão brusca do ponto de McBurney. Embora também indique irritação peritoneal e seja muito comum na apendicite, a técnica de execução é diferente da descrita no texto.\n\nc) Sinal de Rovsing: Incorreta. O sinal de Rovsing é a dor referida na fossa ilíaca direita quando o examinador realiza a compressão ou palpação profunda na fossa ilíaca esquerda (ou no cólon descendente). Isso ocorre pelo deslocamento de gases em direção ao ceco, distendendo a região inflamada.\n\nd) Sinal de Giordano: Incorreta. O sinal de Giordano é a dor provocada pela punho-percussão na região lombar (ângulo costovertebral). É um sinal clínico utilizado principalmente na suspeita de pielonefrite aguda, e não de apendicite.\n\ne) Sinal de Gersuny: Incorreta. Este sinal está relacionado à palpação de massas abdominais, especificamente fecalomas. O examinador sente uma sensação de \"crepitação\" ou descolamento da parede intestinal em relação à massa fecal ao pressionar e soltar suavemente o abdome. Não possui relação com o diagnóstico de apendicite aguda.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:06:42.042Z"
+  }
+]

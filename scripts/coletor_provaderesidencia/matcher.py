@@ -50,14 +50,14 @@ class BankMatcher:
                 print(f"Aviso ao carregar inventário de instituições: {e}")
         return []
 
-    def match_institution(self, raw_name):
+    def match_institution(self, raw_name, uf=None):
         if not raw_name:
             return None
         raw_clean = re.sub(r'[^a-zA-Z0-9]', '', raw_name).upper()
         if not raw_clean:
             return None
             
-        # Mapeamentos diretos conhecidos para precisão máxima
+        # Mapeamentos diretos conhecidos e curados para precisão máxima
         direct_map = {
             'ABC': 'Centro Universitário FMABC',
             'CERMAM': 'CERMAM - Comissão Estadual de Residência Médica do Amazonas',
@@ -67,6 +67,7 @@ class BankMatcher:
             'SUSSP': 'SUS-SP - Sistema Único de Saúde de São Paulo',
             'USP': 'USP/HCFMUSP - Hospital das Clínicas da FMUSP (SP)',
             'USP-RP': 'USP/HCRP - Hospital das Clínicas de Ribeirão Preto (SP)',
+            'USPRP': 'USP/HCRP - Hospital das Clínicas de Ribeirão Preto (SP)',
             'UNIFESP': 'UNIFESP/EPM - Universidade Federal de São Paulo - Escola Paulista de Medicina (SP)',
             'UNICAMP': 'UNICAMP/HC - Hospital de Clínicas da Unicamp - Campinas (SP)',
             'UEL': 'UEL - Hospital Universitário de Londrina (PR)',
@@ -91,15 +92,50 @@ class BankMatcher:
             'HIAE': 'HIAE/Einstein - Hospital Israelita Albert Einstein (SP)',
             'EINSTEIN': 'HIAE/Einstein - Hospital Israelita Albert Einstein (SP)',
             'INEP': 'INEP Revalida - Exame Nacional de Revalidação de Diplomas Médicos',
-            'REVALIDA': 'INEP Revalida - Exame Nacional de Revalidação de Diplomas Médicos'
+            'REVALIDA': 'INEP Revalida - Exame Nacional de Revalidação de Diplomas Médicos',
+            # Mapeamentos auditados e validados contra falsos-positivos
+            'UFC': 'SURCE / UFC/HUWC - Universidade Federal do Ceará (CE)',
+            'CRER': 'CRER - Centro de Reabilitação Dr. Henrique Santillo (GO)',
+            'HEA': 'FUNDHACRE/HEA - Fundação Hospital Estadual do Acre (AC)',
+            'ISA': 'ISA - Instituto Santo André (SP)',
+            'IO': 'IOG - Instituto de Olhos de Goiânia (GO)',
+            'UEVA': 'UniEVANGÉLICA / Hospital Evangélico Goiano - HEG (GO)',
+            'SEMAD': 'SMS-Rio / FJG / SEMAD - Residência Médica da Cidade do Rio de Janeiro (RJ)',
+            'HCV-PR': 'HCV - Hospital da Cruz Vermelha Brasileira (PR)',
+            'HCV': 'HCV - Hospital da Cruz Vermelha Brasileira (PR)',
+            'ICRS': 'IC-FUC - Instituto de Cardiologia do Rio Grande do Sul (RS)',
+            'IJF': 'IJF - Instituto Doutor José Frota (CE)',
+            'HMMG': 'HMU/HMMG - Hospital Municipal Maternidade de Guarulhos (SP)',
+            'HSJJ': 'HMSJ - Hospital Municipal São José de Joinville (SC)',
+            'APCC': 'APCC - Associação Piauiense de Combate ao Câncer / Hospital São Marcos (PI)',
+            'HA-AL': 'HA-AL - Hospital do Açúcar de Alagoas / Hospital Veredas (AL)',
+            'HTLF': 'HTLF - Hospital Geral Dr. Tarquínio Lopes Filho (MA)',
+            'HC-UFPR': 'UFPR/HC - Complexo Hospital de Clínicas da UFPR (PR)',
+            'HCG': 'UFG/HC - Hospital das Clínicas da UFG - Goiânia (GO)',
+            'SCMGO': 'Santa Casa de Goiânia (GO)',
+            'SMS-SJP': 'SMS São José dos Pinhais - Secretaria Municipal de Saúde (PR)',
+            'RMEAP': 'COREME-AP - Comissão Estadual de Residência Médica do Amapá (AP)',
+            'HNSG': 'HNSG - Hospital Nossa Senhora das Graças (PR)',
+            'PASTEUR': 'Hospital Pasteur - Rio de Janeiro (RJ)'
         }
 
-        if raw_name.upper().strip() in direct_map:
-            return direct_map[raw_name.upper().strip()]
+        raw_key = raw_name.upper().strip()
+        if raw_key in direct_map:
+            return direct_map[raw_key]
 
+        # Busca com validação de UF e prevenção de falso-positivo de substring curta
         for name in self.inventory:
+            # Se a UF informada for diferente da UF da instituição no inventário, ignora
+            if uf and '(' in name and ')' in name:
+                cand_uf = name.split('(')[-1].replace(')', '').strip().upper()
+                if len(cand_uf) == 2 and cand_uf != uf.upper().strip():
+                    continue
+
             name_clean = re.sub(r'[^a-zA-Z0-9]', '', name).upper()
-            if raw_clean == name_clean or raw_clean in name_clean or name_clean.startswith(raw_clean):
+            if raw_clean == name_clean:
+                return name
+            # Apenas permite startswith ou substring se a sigla tiver comprimento suficiente (>= 5 caracteres)
+            if len(raw_clean) >= 5 and (raw_clean in name_clean or name_clean.startswith(raw_clean)):
                 return name
         return None
 

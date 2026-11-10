@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_1cd2957f-5cdb-4381-af45-999d25ff991a",
+    "originalId": "1cd2957f-5cdb-4381-af45-999d25ff991a",
+    "statement": "Com os dados da questão 53 [Considere as informações hipotéticas a seguir: A população da região administrativa A, estimada para 2024, foi de 1.600.000 habitantes...], é possível calcular, EXCETO,",
+    "options": [
+      {
+        "id": "A",
+        "text": "a mortalidade proporcional por enterites e outras doenças diarreicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a letalidade por enterites e outras doenças diarreicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a mortalidade proporcional por doenças cardiovasculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a taxa de natalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a taxa de fecundidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, é necessário compreender os conceitos fundamentais dos indicadores de saúde e quais dados (numeradores e denominadores) são exigidos para cada cálculo. O enunciado refere-se a dados comuns em tabelas de indicadores demográficos e de mortalidade, que geralmente incluem a população total, o número de nascidos vivos, o total de óbitos e a distribuição desses óbitos por causas e faixas etárias.\n\nAlternativa a) Mortalidade proporcional por enterites e outras doenças diarreicas: Esta alternativa está incorreta como resposta porque este dado PODE ser calculado. A mortalidade proporcional é a relação entre o número de óbitos por uma causa específica e o total de óbitos da população. Se a questão 53 fornece o total de mortes e quantas delas foram por doenças diarreicas, o cálculo é possível.\n\nAlternativa b) Letalidade por enterites e outras doenças diarreicas: Esta é a alternativa CORRETA (o \"EXCETO\"). A letalidade mede a gravidade de uma doença, expressando o percentual de pessoas que morrem entre aquelas que contraíram a enfermidade. Para calculá-la, é obrigatório ter o número de óbitos pela doença (numerador) e o número total de CASOS ou doentes (denominador). Dados populacionais e de mortalidade geral, como os citados na questão, informam quem morreu, mas não informam quantas pessoas adoeceram e sobreviveram (incidência/prevalência). Sem o número de doentes, a letalidade não pode ser calculada.\n\nAlternativa c) Mortalidade proporcional por doenças cardiovasculares: Esta alternativa está incorreta como resposta porque este dado PODE ser calculado. Assim como na alternativa A, basta dividir o número de óbitos por causas cardiovasculares pelo total de óbitos ocorridos no período.\n\nAlternativa d) Taxa de natalidade: Esta alternativa está incorreta como resposta porque este dado PODE ser calculado. A taxa de natalidade é obtida dividindo-se o número de nascidos vivos pela população total (que o enunciado informa ser de 1.600.000 habitantes) e multiplicando o resultado por 1.000.\n\nAlternativa e) Taxa de fecundidade: Esta alternativa está incorreta como resposta porque este dado PODE ser calculado. A taxa de fecundidade é uma estimativa do número médio de filhos por mulher. Para o cálculo, utiliza-se o número de nascidos vivos dividido pela população de mulheres em idade fértil (geralmente entre 15 e 49 anos). Se a questão 53 fornece a estrutura demográfica da região A, o cálculo é perfeitamente exequível.\n\nResumo: O examinador exige que o candidato saiba a diferença técnica entre Coeficiente de Mortalidade (que usa a população exposta no denominador) e Coeficiente de Letalidade (que usa o número de doentes no denominador). Como a questão fornece dados de população e óbitos, mas não de morbidade (número de casos), a letalidade torna-se incalculável.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:53.285Z"
+  },
+  {
+    "id": "AJUDA_1cd63f0e-5267-44ae-ab0c-9bad12757aee",
+    "originalId": "1cd63f0e-5267-44ae-ab0c-9bad12757aee",
+    "statement": "Paciente de 44 anos apresenta dor epigástrica intensa, diarreia crônica e perda ponderal. Endoscopia mostra múltiplas úlceras duodenais distais. Dosagem sérica: gastrina = 1.500 pg/mL (VR < 150). Teste de secretina positivo (elevação paradoxal da gastrina). Uma TC de abdome sugere nódulo pancreático na cabeça.\nA conduta mais adequada, nesse caso, será",
+    "options": [
+      {
+        "id": "A",
+        "text": "ressecção cirúrgica do gastrinoma, após localização tumoral adequada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "apenas tratamento clínico com IBP em altas doses, sem investigação adicional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pancreatectomia total profilática, devido ao risco de múltiplos tumores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "radioterapia abdominal como tratamento de primeira escolha.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "colectomia subtotal, pois diarreia é o principal sintoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO caso clínico descreve um paciente com Síndrome de Zollinger-Ellison (SZE), causada por um gastrinoma (tumor neuroendócrino secretor de gastrina). Os elementos definidores são:\n1. Clínica: Úlceras pépticas refratárias e em locais atípicos (duodeno distal), diarreia crônica (pela inativação de enzimas pancreáticas pelo excesso de ácido) e perda de peso.\n2. Laboratório: Gastrina muito elevada (1.500 pg/mL, sendo que valores acima de 1.000 são altamente sugestivos) e teste da secretina positivo (em pacientes com gastrinoma, a secretina estimula paradoxalmente a liberação de gastrina pelas células tumorais).\n3. Imagem: Identificação de nódulo na cabeça do pâncreas, reforçando a localização do tumor primário.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Correta): O tratamento definitivo do gastrinoma esporádico (sem associação com a neoplasia endócrina múltipla tipo 1 — NEM-1) é a ressecção cirúrgica. O objetivo é a cura e a prevenção de metástases, já que cerca de 60% a 90% desses tumores são malignos. A localização pré-operatória e intraoperatória é fundamental para o sucesso do procedimento.\n\nAlternativa B (Incorreta): O tratamento com inibidores de bomba de prótons (IBP) em altas doses é fundamental para o controle dos sintomas e cicatrização das úlceras (manejo clínico), mas não deve ser a única conduta. O gastrinoma é um tumor com potencial de malignidade e deve ser retirado cirurgicamente sempre que possível.\n\nAlternativa C (Incorreta): A pancreatectomia total é uma cirurgia de altíssima morbidade e não é indicada de forma profilática ou inicial para um nódulo localizado. A cirurgia deve ser dirigida à lesão identificada (enucleação ou ressecções parciais) e à exploração do triângulo dos gastrinomas.\n\nAlternativa D (Incorreta): A radioterapia não é o tratamento de escolha para tumores neuroendócrinos pancreáticos. O tratamento padrão para doença localizada é cirúrgico. Em casos avançados, utilizam-se análogos da somatostatina, quimioterapia ou terapias-alvo, mas não a radioterapia como primeira linha.\n\nAlternativa E (Incorreta): A colectomia subtotal não possui qualquer indicação neste caso. A diarreia na SZE é de origem alta, causada pela hipersecreção de ácido gástrico que agride a mucosa do intestino delgado e inativa as enzimas digestivas, e não por uma patologia primária do cólon. O tratamento da causa-base (gastrinoma) resolve a diarreia.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Tumores Neuroendócrinos",
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:53.285Z"
+  },
+  {
+    "id": "AJUDA_1cdb6a64-005b-49b2-b3ae-f8b25b127c8b",
+    "originalId": "1cdb6a64-005b-49b2-b3ae-f8b25b127c8b",
+    "statement": "Ao nascimento, RN apresenta falo de 2,3 cm com fusão de saliências labioescrotais e gônadas impalpáveis. Qual é o diagnóstico de Anormalidade de Diferenciação Sexual (ADS) mais comum em RNs com genitália atípica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ADS XX ovotesticular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ADS XX hiperplasia adrenal congênita.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ADS XY hiperplasia adrenal congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ADS XY/X disgenesia gonadal mista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um recém-nascido com genitália atípica, caracterizada por um falo de 2,3 cm (compatível com clitoromegalia severa ou micropênis), fusão das pregas labioescrotais e gônadas não palpáveis. A ausência de gônadas palpáveis em um recém-nascido com virilização é um sinal clássico que aponta para um indivíduo geneticamente feminino (46,XX), uma vez que os testículos costumam descer para o canal inguinal ou bolsa escrotal, enquanto os ovários permanecem em posição intra-abdominal.\n\nAnálise das alternativas:\n\na) Incorreta. A ADS XX ovotesticular (antigamente denominada hermafroditismo verdadeiro) é uma condição rara em que o paciente apresenta tanto tecido ovariano quanto testicular (seja no mesmo órgão, o ovotestis, ou em gônadas separadas). Apesar de ser uma causa de genitália ambígua, sua prevalência é muito baixa na população geral.\n\nb) Correta. A Hiperplasia Adrenal Congênita (HAC) por deficiência da enzima 21-hidroxilase é a causa mais comum de Anormalidade de Diferenciação Sexual (ADS) no recém-nascido. Em indivíduos com cariótipo 46,XX, o excesso de andrógenos produzido pelas adrenais durante a vida intrauterina causa a virilização da genitália externa feminina (fusão labioescrotal e aumento do clitóris), sem alterar a formação das gônadas (ovários) e das estruturas müllerianas (útero e trompas). É considerada uma emergência médica devido ao risco de crise adrenal por perda de sal.\n\nc) Incorreta. A Hiperplasia Adrenal Congênita em indivíduos com cariótipo 46,XY não causa genitália atípica ao nascimento. Como esses pacientes já possuem testículos que produzem testosterona normalmente, o excesso de andrógenos da adrenal não altera a morfologia da genitália externa masculina, que se apresenta normal ao nascimento. Esses meninos costumam ser diagnosticados mais tarde por crise adrenal ou puberdade precoce.\n\nd) Incorreta. A Disgenesia Gonadal Mista (frequentemente associada ao mosaicismo 45,X/46,XY) é uma causa importante de ADS, sendo caracterizada pela presença de uma gônada disgenética de um lado e um testículo do outro. Embora seja uma causa comum de ambiguidade genital, ela é estatisticamente menos frequente que a Hiperplasia Adrenal Congênita 46,XX. Além disso, na disgenesia gonadal mista, é comum que pelo menos uma gônada seja palpável.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Hiperplasia Adrenal Congênita",
+      "Incongruência de Gênero"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:53.285Z"
+  },
+  {
+    "id": "AJUDA_1cea48de-9074-4ea9-aad1-70435a038944",
+    "originalId": "1cea48de-9074-4ea9-aad1-70435a038944",
+    "statement": "Menino de 8 anos apresenta quadro progressivo de cefaleia, vômitos e dificuldade de marcha há duas semanas. Exame físico: BEG, escala de coma de Glasgow: 14, marcha atáxica, dismetria e decomposição de movimentos bilateralmente, reflexos patelares em pêndulo. Ressonância magnética de encéfalo conforme a imagem a seguir.\n\nA hipótese diagnóstica correta é",
+    "options": [
+      {
+        "id": "A",
+        "text": "glioblastoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "neuroblastoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "astrocitoma pilocítico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "meningioma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A análise deste caso clínico deve focar na epidemiologia pediátrica, na localização anatômica da lesão e nos achados semiológicos.\n\nO paciente de 8 anos apresenta uma síndrome cerebelar clássica (marcha atáxica, dismetria, decomposição de movimentos e reflexos pendulares) associada a sinais de hipertensão intracraniana progressiva (cefaleia e vômitos). A ressonância magnética (RM) revela uma volumosa massa expansiva localizada na fossa posterior (cerebelo), comprimindo o quarto ventrículo, o que justifica a hidrocefalia obstrutiva e a sintomatologia apresentada.\n\nAnálise das alternativas:\n\na) INCORRETA. O glioblastoma multiforme é um tumor de alto grau (grau IV da OMS), extremamente agressivo, mas que acomete predominantemente adultos entre as 5ª e 6ª décadas de vida, localizando-se usualmente nos hemisférios cerebrais (supratentorial). Sua ocorrência na fossa posterior em crianças é muito rara.\n\nb) INCORRETA. O neuroblastoma é um dos tumores sólidos mais comuns da infância, porém ele se origina de células da crista neural do sistema nervoso simpático, sendo mais frequentemente encontrado na glândula adrenal ou na cadeia simpática abdominal/torácica. Ele não é um tumor primário do sistema nervoso central. O examinador pode ter tentado confundir o candidato com o meduloblastoma, que é um tumor neuroectodérmico primitivo comum nesta faixa etária e localização, mas \"neuroblastoma\" refere-se à doença extracraniana.\n\nc) CORRETA. O astrocitoma pilocítico (grau I da OMS) é o tumor primário do sistema nervoso central mais comum na infância. Sua localização preferencial é o cerebelo. O quadro clínico de evolução subaguda (duas semanas) com sinais cerebelares e hipertensão intracraniana é típico. Na imagem de RM, embora existam variações, é clássica a presença de uma lesão cística com um nódulo mural que capta contraste, ou uma massa sólida/cística heterogênea na fossa posterior, como demonstrado. É um tumor de crescimento lento e com excelente prognóstico após ressecção cirúrgica.\n\nd) INCORRETA. Meningiomas são tumores extra-axiais, geralmente benignos, que se originam das células meningoteliais da aracnoide. São tumores típicos de adultos, com maior incidência em mulheres. A ocorrência em crianças é rara e, quando acontece, geralmente está associada a síndromes genéticas como a Neurofibromatose tipo 2. Além disso, a imagem mostra uma massa nitidamente intra-axial no cerebelo.\n\nAssociação com a imagem: A RM de encéfalo mostra uma volumosa lesão expansiva na fossa posterior, ocupando grande parte do cerebelo e deslocando o tronco encefálico anteriormente. Essa localização é o \"ponto-chave\" para o diagnóstico de astrocitoma pilocítico em uma criança de 8 anos com ataxia.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tumores Intracranianos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/c8e8c8678900f7762034adacfba6e92e864470b0ba8ad44acaaeb983bdcd07f6.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1cea48de-9074-4ea9-aad1-70435a038944_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:53.694Z"
+  },
+  {
+    "id": "AJUDA_1d08a275-c5ad-4785-a564-3d9c447ffd25",
+    "originalId": "1d08a275-c5ad-4785-a564-3d9c447ffd25",
+    "statement": "No manejo da pré-eclâmpsia, qual é o mecanismo de ação do sulfato de magnésio e seu papel na prevenção de complicações?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vasodilatação periférica para reduzir a pressão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumento da diurese para reduzir o edema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Bloqueio da atividade neuromuscular para prevenir convulsões.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Redução da produção de angiotensina II.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O sulfato de magnésio é a droga de escolha para a prevenção e o tratamento das crises convulsivas na eclâmpsia. Seu papel principal é a neuroproteção materna através da estabilização da membrana neuronal.\n\nAlternativa a: Incorreta. O sulfato de magnésio promove uma vasodilatação periférica discreta, o que causa a sensação de calor (rubor facial) descrita pelas pacientes, mas esse efeito é insuficiente para o controle dos níveis pressóricos elevados. Para tratar a hipertensão arterial na pré-eclâmpsia grave, são utilizados anti-hipertensivos específicos como hidralazina, nifedipina ou labetalol.\n\nAlternativa b: Incorreta. O magnésio não atua como diurético e não reduz o edema. Na verdade, a boa função renal (diurese adequada) é um pré-requisito para o uso seguro da medicação, uma vez que ela é excretada quase exclusivamente pelos rins e pode se acumular em níveis tóxicos se houver oligúria.\n\nAlternativa c: Correta. O magnésio atua como um antagonista do cálcio. No sistema nervoso central, ele bloqueia os receptores NMDA, elevando o limiar para convulsões. Na periferia, ele atua na junção neuromuscular, inibindo a liberação de acetilcolina na fenda pré-sináptica e reduzindo a sensibilidade da placa motora terminal. Esse bloqueio da transmissão neuromuscular é o mecanismo fundamental para prevenir a atividade motora das convulsões.\n\nAlternativa d: Incorreta. O bloqueio da produção de angiotensina II é característico dos Inibidores da Enzima Conversora de Angiotensina (IECA), medicamentos que não são utilizados no manejo da pré-eclâmpsia e são contraindicados na gestação por serem teratogênicos. O magnésio não possui ação direta sobre o sistema renina-angiotensina-aldosterona.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:53.694Z"
+  },
+  {
+    "id": "AJUDA_1d0c1307-b9e5-4519-8363-e0620226692f",
+    "originalId": "1d0c1307-b9e5-4519-8363-e0620226692f",
+    "statement": "Recentemente, a vacina contra o vírus sincicial respiratório (VSR) foi incorporada ao SUS. Considerando essa informação, assinale a opção que apresenta a faixa gestacional recomendada para a administração da vacina materna contra o vírus sincicial respiratório, a fim de que haja proteção do recém‑nascido.",
+    "options": [
+      {
+        "id": "A",
+        "text": "entre 20‑24 semanas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "entre 24‑28 semanas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "entre 32‑36 semanas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "entre 36‑40 semanas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "em qualquer trimestre, sem janela preferencial",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O vírus sincicial respiratório (VSR) é a causa principal de infecções do trato respiratório inferior, como a bronquiolite e a pneumonia, em lactentes jovens. A vacina incorporada ao SUS é a vacina bivalente (Abrysvo), que utiliza a técnica de imunização passiva: a gestante é vacinada para produzir anticorpos (IgG) que atravessam a placenta e protegem o bebê nos primeiros meses de vida.\n\nAlternativa a: Incorreta. O período entre 20 e 24 semanas é considerado precoce. A transferência transplacentária de anticorpos maternos atinge seu pico de eficiência no terceiro trimestre da gestação. Além disso, os dados de segurança e eficácia para a proteção do neonato não dão suporte ao uso nesse intervalo.\n\nAlternativa b: Incorreta. Embora algumas diretrizes iniciais e bulas mencionem o uso a partir da 24ª semana, este não é o intervalo preferencial adotado em recomendações de segurança mais rigorosas para evitar potenciais desfechos adversos e garantir a máxima concentração de anticorpos ao nascimento.\n\nAlternativa c: Correta. A faixa entre 32 e 36 semanas de gestação é a recomendada. Esse intervalo específico foi selecionado para maximizar a transferência de anticorpos para o feto e, principalmente, por uma questão de segurança: nos estudos clínicos, observou-se uma sinalização numérica (embora sem significância estatística em todos os recortes) de aumento de partos prematuros quando a vacina era aplicada mais precocemente. Assim, para mitigar qualquer risco de prematuridade associado à vacina, órgãos reguladores (como a FDA, seguidos por protocolos nacionais) padronizaram a janela de 32 a 36 semanas.\n\nAlternativa d: Incorreta. Vacinar entre 36 e 40 semanas pode não oferecer tempo hábil para a resposta imunológica materna. O organismo da mulher precisa de cerca de 2 a 4 semanas após a aplicação para produzir níveis ideais de anticorpos e transferi-los de forma eficaz para o feto antes do parto.\n\nAlternativa e: Incorreta. A vacinação contra o VSR não deve ser feita em qualquer trimestre. Ela é restrita ao final do segundo ou, preferencialmente, ao terceiro trimestre, justamente para garantir que a proteção imunológica (anticorpos prontos) esteja disponível no momento do nascimento, o que não ocorreria se fosse administrada no primeiro trimestre.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Imunizações",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:53.694Z"
+  },
+  {
+    "id": "AJUDA_1d0f2bc6-bdf0-400a-ba2d-9a565106b123",
+    "originalId": "1d0f2bc6-bdf0-400a-ba2d-9a565106b123",
+    "statement": "Recém‑nascido, 12 dias de vida, em uso de fórmula láctea desde o nascimento por contraindicação ao aleitamento materno, apresenta fezes com sangue há 3 dias, irritabilidade após as mamadas e regurgitação frequente. Nasceu a termo e adequado para a idade gestacional. Exame físico sem alterações de pele, sem fissuras anais, abdome flácido, indolor e sem massas palpáveis. \n\nCom base nesse caso clínico hipotético e na principal hipótese diagnóstica, assinale a conduta adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve‑se introduzir fórmula de soja, já que representa a primeira linha de tratamento devido ao baixo potencial alergênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve‑se introduzir fórmula extensamente hidrolisada como primeira linha de tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A fórmula de aminoácidos é a primeira linha de tratamento nesses quadros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve‑se iniciar fórmula antirregurgitação e reorientar o preparo da fórmula láctea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar leite de vaca diluído em água na proporção 1:2 e observar se há melhora dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve um recém-nascido de 12 dias de vida que, após o início de fórmula láctea infantil (baseada em leite de vaca), apresenta sangue nas fezes (hematoquezia), irritabilidade após mamadas e regurgitação frequente. O exame físico é normal, sem fissuras ou sinais de abdome agudo. Esses sintomas são clássicos da Alergia à Proteína do Leite de Vaca (APLV), especificamente na forma de Proctocolite Alérgica, uma manifestação não mediada por IgE, comum nesta faixa etária.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: A fórmula de soja não deve ser utilizada em lactentes com menos de 6 meses de idade. Isso ocorre pelo risco de sensibilidade cruzada (a criança também desenvolver alergia à proteína da soja), além do alto teor de fitatos e isoflavonas, que podem interferir na absorção de nutrientes e ter efeitos estrogênicos.\n\nAlternativa (b) CORRETA: Para lactentes que não podem ser amamentados e apresentam sintomas de APLV leve a moderada (como hematoquezia isolada e regurgitação), a primeira linha de tratamento é a fórmula extensamente hidrolisada. Nessas fórmulas, as proteínas do leite de vaca são processadas para se tornarem peptídeos muito pequenos, o que elimina a capacidade de causar reação alérgica na grande maioria dos pacientes.\n\nAlternativa (c) INCORRETA: A fórmula de aminoácidos é a opção mais elementar e menos alergênica que existe. No entanto, ela é reservada como segunda linha para casos que não respondem à fórmula extensamente hidrolisada, ou como primeira linha apenas em situações graves, como anafilaxia, dificuldade de ganho de peso importante ou sintomas gastrointestinais severos que levem à desnutrição.\n\nAlternativa (d) INCORRETA: As fórmulas antirregurgitação (AR) são espessadas para diminuir os episódios de refluxo gastroesofágico fisiológico. Elas contêm a proteína do leite de vaca intacta, portanto, não tratam a causa do problema (a alergia) e não resolveriam o sangramento intestinal.\n\nAlternativa (e) INCORRETA: Oferecer leite de vaca diluído em água é uma conduta tecnicamente errada e perigosa. Além de manter o bebê exposto ao alérgeno que causa a inflamação intestinal, a diluição inadequada causa desnutrição e riscos de distúrbios eletrolíticos graves no recém-nascido.\n\nGABARITO: B",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Alergia Alimentar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:53.694Z"
+  },
+  {
+    "id": "AJUDA_1d22fd86-237f-4a42-a39b-d999864b5877",
+    "originalId": "1d22fd86-237f-4a42-a39b-d999864b5877",
+    "statement": "Mulher de 30 anos chega ao Centro de Atenção Psicossocial animada, inquieta e falante, andando de um lado para outro, cumprimentando todas as pessoas com sorrisos exagerados e fazendo comentários animados a respeito de coisas aleatórias, emendando os assuntos. O médico que costuma atendê-la percebe que ela está diferente, mais “elétrica” que seu habitual, sendo impossível interrompê-la.\nAs alterações psicopatológicas apresentadas por essa paciente incluem",
+    "options": [
+      {
+        "id": "A",
+        "text": "humor disfórico, esterotipias vocais e agitação psicomotora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "humor hipotímico, apragmatismo e afrouxamento de associações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "humor eutímico, fuga de ideias e avolia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "humor hipertímico, taquipsiquismo e taquilalia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A paciente apresenta um quadro típico de episódio maníaco ou hipomaníaco, provavelmente no contexto de transtorno bipolar acompanhado no CAPS. O raciocínio parte da descrição de três funções psíquicas: humor, curso do pensamento e linguagem/psicomotricidade.\n\nAchados do caso:\n- Animada, sorrisos exagerados, cumprimentando todos: humor elevado e expansivo (hipertimia), com aumento da sociabilidade.\n- Comentários sobre coisas aleatórias, emendando assuntos: aceleração do curso do pensamento (taquipsiquismo), com tendência à fuga de ideias.\n- Falante, impossível interrompê-la: aumento da velocidade e da quantidade da fala (taquilalia e logorreia), também chamada pressão de fala.\n- Inquieta, andando de um lado para outro: agitação psicomotora.\n\nAnálise das alternativas:\n\na) Incorreta.\n- Humor disfórico é um humor desagradável, irritável, tenso ou mal-humorado. A paciente está alegre, sorridente e expansiva, o que não corresponde à disforia.\n- Estereotipias vocais são repetições fixas, sem finalidade, de palavras, sons ou frases. São comuns em quadros catatônicos, autismo e deficiência intelectual, e não foram descritas no caso.\n- A agitação psicomotora está presente, mas os dois outros itens tornam a alternativa errada.\n\nb) Incorreta.\n- Humor hipotímico é o humor rebaixado, típico da depressão, o oposto do quadro.\n- Apragmatismo é a incapacidade de realizar ações com objetivo, comum na depressão grave e nos sintomas negativos da esquizofrenia.\n- Afrouxamento de associações é a perda da conexão lógica entre ideias, característica da esquizofrenia. Na mania, ao contrário, as ideias mantêm alguma ligação entre si (por assonância, contiguidade ou estímulos do ambiente).\n\nc) Incorreta.\n- Humor eutímico é o humor normal, e o próprio médico nota que ela está diferente do habitual.\n- A fuga de ideias pode até estar presente, já que ela emenda assuntos.\n- Avolia é a diminuição ou ausência de vontade e iniciativa. A paciente está, ao contrário, hiperativa e com a volição aumentada.\n\nd) Correta.\n- Humor hipertímico: humor elevado, expansivo, eufórico.\n- Taquipsiquismo: aceleração dos processos psíquicos e do curso do pensamento, evidenciada pela mudança rápida de assuntos.\n- Taquilalia: fala acelerada, com pressão para falar, tornando impossível interrompê-la.\n\nEsses três achados formam a tríade clássica da síndrome maníaca.\n\nPonto-chave para prova: a síndrome maníaca envolve elevação do humor (hipertimia/euforia, às vezes irritabilidade), taquipsiquismo (podendo chegar à fuga de ideias), taquilalia/logorreia, agitação psicomotora, distraibilidade, redução da necessidade de sono e ideias de grandeza. Diferencie bem:\n- fuga de ideias (mania), em que as ideias se sucedem rapidamente mas com algum vínculo entre si;\n- afrouxamento de associações (esquizofrenia), em que há perda da conexão lógica entre as ideias.\n\nGabarito: D.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Psicopatologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:53.694Z"
+  },
+  {
+    "id": "AJUDA_1d2a9a9a-dbc2-4533-8bc0-7e1ff5e3649e",
+    "originalId": "1d2a9a9a-dbc2-4533-8bc0-7e1ff5e3649e",
+    "statement": "Uma mãe vai ao pediatra do seu filho solicitar um atestado de aptidão para a prática de exercícios físicos para a criança, que não pôde ir à consulta porque tinha prova na escola, no mesmo horário\n\nO pediatra, ao fornecer o atestado a esta mãe, neste momento",
+    "options": [
+      {
+        "id": "A",
+        "text": "agiu corretamente, de acordo com o código de ética médica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cometeu uma ação criminosa, podendo ser preso",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "atuou conforme é preconizado pelo ECA (Estatuto da Criança e do Adolescente).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "feriu o princípio da isonomia, defendido pela SBP (Sociedade Brasileira de Pediatria).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O cerne desta questão reside na ética profissional e na legislação penal brasileira relacionadas à emissão de documentos médicos.\n\nA alternativa (a) está incorreta porque o Código de Ética Médica, em seu artigo 80, veda expressamente ao médico expedir documento médico sem ter examinado pessoalmente o paciente. Ao fornecer o atestado apenas com base no relato da mãe, sem a presença da criança, o pediatra viola uma norma ética fundamental.\n\nA alternativa (b) está correta e é o gabarito. Além da infração ética, a emissão de um atestado sem o exame do paciente configura o crime de Falsidade de Atestado Médico, previsto no artigo 302 do Código Penal Brasileiro. A legislação estabelece que dar atestado falso no exercício da profissão é crime sujeito a pena de detenção de um mês a um ano. Se o ato tiver finalidade lucrativa, a pena pode ser agravada com multa. Portanto, a ação é tipificada como crime.\n\nA alternativa (c) está incorreta. O Estatuto da Criança e do Adolescente (ECA) dispõe sobre a proteção integral à criança e ao adolescente. Fornecer um documento sem o devido exame clínico coloca a saúde da criança em risco, pois ela pode apresentar contraindicações para o exercício físico que não foram detectadas. Isso contraria o dever de cuidado e proteção preconizado pelo estatuto.\n\nA alternativa (d) está incorreta. O princípio da isonomia refere-se à igualdade de tratamento. Embora a Sociedade Brasileira de Pediatria (SBP) forneça diretrizes rigorosas sobre a importância do exame físico pré-participação esportiva, a infração cometida pelo médico não se define primariamente pela quebra de isonomia, mas sim pela ilegalidade do ato de atestar algo não verificado presencialmente (falsidade documental).\n\nEm resumo, o médico jamais deve emitir atestados de aptidão, sanidade ou qualquer outro documento clínico sem a avaliação direta do paciente, sob pena de sofrer sanções administrativas junto ao Conselho Regional de Medicina e sanções penais junto à justiça comum.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:53.694Z"
+  },
+  {
+    "id": "AJUDA_1d3f7a21-e79c-4d39-8cd0-06c4925540d9",
+    "originalId": "1d3f7a21-e79c-4d39-8cd0-06c4925540d9",
+    "statement": "À admissão hospitalar do paciente de 42 anos, homem trans, para correção cirúrgica de fratura de tíbia, após acidente automobilístico, é identificada glicemia capilar de 184 mg/dl. O paciente nega antecedente pessoal de hiperglicemia fora do hospital, assim como diabetes mellitus. Tem diagnóstico de asma controlada com uso diário de budesonida e formoterol inalatórios. Paciente nega outras doenças, está assintomático e demais sinais vitais encontram-se normais. Com base no Manejo da hiperglicemia hospitalar em pacientes não críticos da Diretriz Brasileira de Diabetes (2025), a conduta mais adequada seria, além do monitoramento da glicemia capilar (MGC), propor",
+    "options": [
+      {
+        "id": "A",
+        "text": "ausência de medidas adicionais ao paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "escala de correção de insulina de forma isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "insulinoterapia basal associada à escala de correção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "insulinoterapia basal-bolus e NPH adicional pela manhã.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "insulinoterapia basal-bolus associada à escala de correção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo da hiperglicemia hospitalar em pacientes não críticos, um tema frequente em provas e na prática clínica, fundamentado na Diretriz Brasileira de Diabetes (2025).\n\nA definição de hiperglicemia hospitalar é qualquer valor de glicose acima de 140 mg/dL. No caso clínico, o paciente apresenta uma glicemia de 184 mg/dL à admissão. No entanto, ele não possui diagnóstico prévio de diabetes mellitus (DM) e o aumento pode estar associado ao estresse do trauma (fratura de tíbia) e ao uso de corticoide inalatório (budesonida), embora este último tenha menor impacto sistêmico.\n\nDe acordo com as diretrizes atuais para pacientes não críticos:\n\n1. Pacientes com diagnóstico prévio de DM: Devem iniciar monitoramento e tratamento se a glicemia estiver > 140 mg/dL.\n2. Pacientes sem diagnóstico prévio de DM: Se a glicemia na admissão for > 140 mg/dL, a conduta inicial é o Monitoramento da Glicemia Capilar (MGC). O tratamento medicamentoso com insulina geralmente só é iniciado se houver persistência de valores acima de 180 mg/dL.\n\nComo o paciente teve apenas uma medida isolada de 184 mg/dL (muito próxima ao limite de intervenção de 180 mg/dL) e não tem histórico da doença, a conduta mais prudente e recomendada é apenas observar a tendência glicêmica através do monitoramento antes de prescrever qualquer esquema de insulina.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): É a conduta inicial para um paciente sem diagnóstico prévio de DM com hiperglicemia de estresse limítrofe. O monitoramento (MGC) permitirá identificar se os níveis retornarão ao normal após a estabilização do quadro agudo ou se permanecerão elevados, exigindo intervenção posterior.\n\nAlternativa B (Incorreta): O uso de escala de correção de insulina isolada (\"sliding scale\") é fortemente desencorajado pelas diretrizes modernas, pois não previne a hiperglicemia, apenas reage a ela, aumentando a variabilidade glicêmica. Além disso, ainda não há indicação de insulinoterapia para este paciente.\n\nAlternativa C (Incorreta): O esquema basal-plus (basal + correção) é indicado para pacientes com DM estáveis ou pacientes que persistem com glicemias elevadas, o que não é o caso de uma aferição única e inicial em paciente não diabético.\n\nAlternativa D (Incorreta): O esquema basal-bolus é o tratamento de escolha para pacientes com DM2 hospitalizados que estão se alimentando, mas é excessivamente agressivo para um paciente sem diagnóstico de DM com uma única glicemia de 184 mg/dL. O acréscimo de NPH matinal sem critérios claros aumentaria drasticamente o risco de hipoglicemia.\n\nAlternativa E (Incorreta): Semelhante às anteriores, a insulinoterapia completa (basal-bolus + correção) é reservada para pacientes com diabetes conhecido ou hiperglicemia persistente e significativa durante a internação. Aplicar este esquema na admissão de um paciente sem histórico de DM e com 184 mg/dL seria uma conduta iatrogênica.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Perioperatório",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:53.694Z"
+  }
+]

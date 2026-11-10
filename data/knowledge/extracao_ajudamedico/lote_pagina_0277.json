@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_4d14e478-540d-444c-97b3-0a092a29f40a",
+    "originalId": "4d14e478-540d-444c-97b3-0a092a29f40a",
+    "statement": "O documento oficial que alimenta o SINAN é o(a)",
+    "options": [
+      {
+        "id": "A",
+        "text": "declaração de óbito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "certidão de nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ficha de notificação/investigação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "relatório médico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "prontuário médico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O SINAN (Sistema de Informação de Agravos de Notificação) é a principal ferramenta da vigilância epidemiológica no Brasil. Ele tem como objetivo coletar, transmitir e disseminar dados gerados rotineiramente pelo sistema de vigilância, auxiliando no planejamento de saúde e na definição de prioridades de intervenção.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. A Declaração de Óbito (DO) é o documento padrão utilizado para coletar dados sobre a mortalidade no país. Ela alimenta o SIM (Sistema de Informações sobre Mortalidade), e não o SINAN.\n\nAlternativa b) Incorreta. A Certidão de Nascimento é um documento de registro civil. No contexto da saúde pública, o documento que registra os dados do nascimento é a DNV (Declaração de Nascido Vivo), que é responsável por alimentar o SINASC (Sistema de Informações sobre Nascidos Vivos).\n\nAlternativa c) Correta. A Ficha de Notificação/Investigação é o instrumento padronizado e obrigatório para o preenchimento de casos suspeitos ou confirmados de doenças e agravos que constam na Lista Nacional de Notificação Compulsória. É através do preenchimento e da digitação desses dados que o SINAN é alimentado em todos os níveis da Federação.\n\nAlternativa d) Incorreta. O Relatório Médico é um documento descritivo sobre o histórico clínico, diagnóstico e tratamento de um paciente específico, geralmente utilizado para fins de encaminhamento, perícia ou informação ao paciente/família, não possuindo a função de alimentar sistemas de vigilância epidemiológica.\n\nAlternativa e) Incorreta. O Prontuário Médico é o conjunto de documentos que registram toda a assistência prestada ao paciente na unidade de saúde. Ele é um documento legal e sigiloso que serve como fonte de informações para o preenchimento da Ficha de Notificação, mas não é o documento de alimentação direta do sistema de informação.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:01.669Z"
+  },
+  {
+    "id": "AJUDA_4d17e798-69c6-4dde-8405-0d3d60586f93",
+    "originalId": "4d17e798-69c6-4dde-8405-0d3d60586f93",
+    "statement": "Primigesta, 22 anos de idade, 11 semanas de gestação, apresenta sorologia para toxoplasmose com IgM e IgG reagentes. O teste de avidez para IgG mostra baixa avidez. Sobre o manejo da toxoplasmose na gestação e as características das drogas utilizadas, considere as afirmativas a seguir. \n\nI. A pirimetamina deve ser utilizada já no primeiro trimestre, pois é a droga mais eficaz contra o parasita e não apresenta risco ao embrião. \nII. A espiramicina é a droga de escolha no primeiro trimestre, pois reduz a transmissão placentária e trata a infecção fetal. \nIII. A espiramicina é utilizada principalmente para proteger o concepto da infecção materna ativa e não apresenta risco de teratogenicidade. \nIV. O esquema tríplice (pirimetamina + sulfadiazina + ácido folínico) deve ser reservado a partir do segundo trimestre, em razão do potencial teratogênico da pirimetamina. \n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente é uma primigesta no primeiro trimestre (11 semanas) com sorologia indicando infecção aguda recente (IgG e IgM reagentes com baixa avidez). O teste de baixa avidez, quando realizado antes de 16 semanas, confirma que a infecção ocorreu nos últimos meses, indicando infecção adquirida durante a gestação ou muito próxima ao seu início.\n\nAnálise das afirmativas:\n\nAfirmativa I (Incorreta): A pirimetamina é um antagonista do ácido fólico e possui potencial teratogênico. Por essa razão, seu uso é contraindicado no primeiro trimestre da gestação, período em que ocorre a organogênese fetal. Ela só deve ser introduzida a partir do segundo trimestre.\n\nAfirmativa II (Incorreta): A primeira parte da frase está correta: a espiramicina é a droga de escolha no primeiro trimestre para reduzir a taxa de transmissão vertical. No entanto, a segunda parte está incorreta. A espiramicina é uma molécula grande que não atravessa a barreira placentária em concentrações terapêuticas suficientes, portanto, ela não trata o feto já infectado; ela serve apenas para prevenir a transmissão da mãe para o concepto.\n\nAfirmativa III (Correta): A espiramicina é um macrolídeo que não apresenta riscos de malformações fetais (não é teratogênica). Sua principal função é realizar a profilaxia da transmissão vertical, tentando impedir que o parasita presente na circulação materna infecte a placenta e, consequentemente, o feto.\n\nAfirmativa IV (Correta): O esquema tríplice, que consiste na combinação de sulfadiazina, pirimetamina e ácido folínico, é o tratamento indicado quando há confirmação ou suspeita de infecção fetal. Esse esquema deve ser utilizado apenas a partir do segundo trimestre (após 14 a 16 semanas, dependendo do protocolo de serviço), justamente para evitar os efeitos teratogênicos da pirimetamina no primeiro trimestre.\n\nConclusão:\nEstão corretas as afirmativas III e IV. Portanto, a alternativa correta é a letra (c).",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:01.669Z"
+  },
+  {
+    "id": "AJUDA_4d1b805a-901d-4480-86d5-c74fda237f66",
+    "originalId": "4d1b805a-901d-4480-86d5-c74fda237f66",
+    "statement": "S. J., sexo masculino, 14 anos de idade, veio para consulta apresentando aumento bilateral do volume das mamas, com 3 cm de diâmetro. Relata que notou esta alteração desde os 13 anos de idade. Nega uso prolongado de medicamentos. Está preocupado com a persistência desta alteração, sentindo-se envergonhado ao retirar a blusa na frente dos colegas que fazem brincadeiras desagradáveis. Apresenta IMC entre Z-escore +2 e +3. De acordo com o relato, o diagnóstico e a conduta recomendada são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "pseudolipomastia ou lipomastia; orientar o emagrecimento devido à obesidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ginecomastia fisiológica; conduta expectante, pois é secundária ao desequilíbrio entre estrógenos e andrógenos próprios da adolescência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "ginecomastia persistente; investigar uso de drogas ilícitas ou outras causas do aumento das mamas por período prolongado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ginecomastia patológica; encaminhar para cirurgião, pois precisa ser corrigida e, assim, reduzir os danos psicossociais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente é um adolescente de 14 anos com aumento mamário bilateral de 3 cm de diâmetro, iniciado há um ano (aos 13 anos). O quadro é típico da ginecomastia puberal, uma condição extremamente comum que atinge até 65% dos meninos durante a puberdade, geralmente entre os 13 e 14 anos (estágios de Tanner G3 ou G4). O IMC elevado (o escore-Z entre +2 e +3 indica obesidade) pode sugerir um componente de gordura, mas a descrição de um diâmetro específico de 3 cm aponta para a presença de tecido glandular.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\n\nA ginecomastia fisiológica da puberdade ocorre devido a um desequilíbrio transitório na relação entre estrógenos e andrógenos. No início da puberdade, pode haver um aumento relativo dos níveis de estradiol em comparação à testosterona, ou uma maior sensibilidade do tecido mamário aos estrógenos circulantes. Como o quadro tem apenas um ano de evolução e o paciente está no pico da adolescência, a conduta correta é a conduta expectante (observação), pois a maioria dos casos regride espontaneamente em um período de 6 meses a 2 anos.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: A pseudolipomastia (ou lipomastia) é o acúmulo de apenas gordura na região mamária, sem a presença de tecido glandular retroareolar, comum em pacientes obesos. Embora o paciente tenha um IMC elevado, a ginecomastia fisiológica é o achado esperado para a faixa etária do desenvolvimento puberal. Além disso, a conduta principal na ginecomastia puberal não é apenas o emagrecimento, mas o acompanhamento da maturação hormonal.\n\nAlternativa C: A ginecomastia é considerada persistente quando dura mais de dois anos ou permanece após o término da puberdade (geralmente após os 17 anos). No caso relatado, a alteração existe há apenas um ano. Embora a investigação de drogas e medicamentos seja sempre importante na anamnese, o quadro é classicamente fisiológico pelo tempo de evolução e idade.\n\nAlternativa D: A ginecomastia patológica é suspeitada quando ocorre fora da puberdade, é unilateral, severa, dolorosa, de crescimento muito rápido ou acompanhada de outros sinais (como massas testiculares ou sinais de hipertireoidismo). A cirurgia (mastectomia redutora) só é indicada em casos de ginecomastia persistente (mais de 2 anos), após o fechamento das cartilagens de crescimento, ou quando o dano psicológico é severo e não há regressão com o tempo, o que não se aplica como conduta inicial para um quadro fisiológico recente.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:01.669Z"
+  },
+  {
+    "id": "AJUDA_4d30a2b3-822b-4a45-9557-12e68af25958",
+    "originalId": "4d30a2b3-822b-4a45-9557-12e68af25958",
+    "statement": "Paciente de 21 anos chega à unidade de emergência com sintomas sugestivos de sepse e doença inflamatória pélvica aguda. Não há histórico de alergias. Nesse momento, recomenda-se o uso",
+    "options": [
+      {
+        "id": "A",
+        "text": "apenas de ceftrixone e metronidazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "apenas de ceftrixone e doxiciclina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "de ceftrixone, doxiciclina e metronidazol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "de clindamicina, ampicilina e cefotaxime.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Doença Inflamatória Pélvica (DIP) é uma síndrome clínica de caráter polimicrobiano causada pela ascensão de microrganismos do trato genital inferior para o trato superior. Os principais patógenos envolvidos são a Neisseria gonorrhoeae e a Chlamydia trachomatis, mas o processo frequentemente envolve bactérias anaeróbias e aeróbias da flora vaginal. Quando a paciente apresenta critérios de gravidade, como a sepse mencionada no enunciado (classificada como Monif IV), o tratamento deve ser realizado em regime hospitalar com antibioticoterapia de amplo espectro por via parenteral.\n\nAlternativa a: Incorreta. A utilização apenas de ceftriaxona e metronidazol falha em cobrir a Chlamydia trachomatis. A clamídia é um agente intracelular obrigatório que exige o uso de doxiciclina para sua erradicação efetiva no tratamento da DIP.\n\nAlternativa b: Incorreta. O esquema ceftriaxona e doxiciclina cobre os dois principais agentes (gonococo e clamídia), porém, em casos graves, com sinais de infecção sistêmica, sepse ou abscesso, a cobertura para anaeróbios é fundamental. Pelos protocolos mais recentes, como os do CDC e do Ministério da Saúde, o metronidazol deve ser adicionado para garantir essa cobertura anaeróbia em pacientes que necessitam de internação.\n\nAlternativa c: Correta. Esta alternativa apresenta o esquema tríplice preconizado para o tratamento hospitalar da DIP. A ceftriaxona (cefalosporina de 3ª geração) atua contra o gonococo; a doxiciclina é eficaz contra a clamídia; e o metronidazol oferece a cobertura necessária contra germes anaeróbios, que são frequentes em quadros graves e em complicações como abscessos tubo-ovarianos.\n\nAlternativa d: Incorreta. Estes antibióticos não compõem o esquema de primeira escolha para DIP. O esquema alternativo padrão para tratamento parenteral, quando não se utiliza o regime com cefalosporinas de terceira geração, é a associação de clindamicina com gentamicina, visando cobrir gram-negativos e anaeróbios. A combinação sugerida na alternativa não possui respaldo nas diretrizes clínicas para esta patologia.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:01.669Z"
+  },
+  {
+    "id": "AJUDA_4d31ae97-d985-4483-a194-91123aa00cc2",
+    "originalId": "4d31ae97-d985-4483-a194-91123aa00cc2",
+    "statement": "Mulher de 25 anos apresenta artralgias, alopecia e úlceras orais recorrentes. Exames laboratoriais: FAN positivo (1:640, padrão pontilhado fino), anti-DNA nativo positivo, consumo de complemento (C3 e C4 baixos) e proteinúria de 1,5 g/24h. Qual a conduta inicial mais adequada para este quadro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hidroxicloroquina isoladamente como tratamento inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anti-inflamatórios não esteroidais em monoterapia para controle de artralgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Corticoterapia sistêmica associada a imunossupressor.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Rituximabe como primeira linha de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente de 25 anos apresenta um quadro clássico de Lúpus Eritematoso Sistêmico (LES). O diagnóstico é corroborado pela presença de critérios clínicos (alopecia, úlceras orais e artralgias) e laboratoriais (FAN 1:640, anti-DNA nativo positivo e consumo de complemento). O achado fundamental para definir a conduta é a proteinúria de 1,5 g/24h, que indica o acometimento renal (nefrite lúpica), uma manifestação grave da doença que exige tratamento agressivo para evitar a falência renal.\n\nPor que a alternativa (c) está correta:\n\nA presença de proteinúria significativa (acima de 0,5 g/24h), especialmente quando associada a marcadores de atividade imunológica (anti-DNA positivo e hipocomplementemia), aponta para uma nefrite lúpica ativa. O tratamento padrão para indução de remissão em manifestações orgânicas graves, como a nefrite, consiste obrigatoriamente na associação de corticoterapia sistêmica (geralmente em doses elevadas ou pulsoterapia com metilprednisolona) e um agente imunossupressor (como micofenolato de mofetila ou ciclofosfamida).\n\nAnálise das alternativas incorretas:\n\na) Hidroxicloroquina isoladamente como tratamento inicial: Embora a hidroxicloroquina seja indicada para todos os pacientes com LES por reduzir a mortalidade e o número de exacerbações, ela não é suficiente para controlar isoladamente uma manifestação grave como a nefrite lúpica. Ela deve ser usada de forma adjuvante ao tratamento principal.\n\nb) Anti-inflamatórios não esteroidais em monoterapia: Os AINEs servem apenas para o controle sintomático de dores articulares leves. No LES com envolvimento sistêmico e renal, eles nunca devem ser usados como monoterapia. Além disso, devem ser evitados em pacientes com proteinúria e suspeita de nefrite devido ao risco de nefrotoxicidade e redução da taxa de filtração glomerular.\n\nd) Rituximabe como primeira linha de tratamento: O rituximabe é um anticorpo monoclonal anti-CD20 reservado geralmente para casos de LES refratários ao tratamento convencional com corticoides e imunossupressores de primeira linha (como micofenolato e ciclofosfamida), não sendo a escolha inicial padrão na maioria dos protocolos.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Doenças Glomerulares",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Doenças Autoimunes do Tecido Conjuntivo"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:01.669Z"
+  },
+  {
+    "id": "AJUDA_4d34c49c-f280-4d30-afc6-893791245d72",
+    "originalId": "4d34c49c-f280-4d30-afc6-893791245d72",
+    "statement": "Milton teve o diagnóstico de monkeypox confirmado por meio de PCR positivo. Ele se enquadra no grupo de indivíduos com alto risco de desenvolver formas graves.\nSeu monitoramento deve acontecer:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a cada 2 dias;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a cada 3 dias;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a cada 7 dias;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a cada 15 dias;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "diariamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O monitoramento de pacientes com diagnóstico confirmado de Monkeypox (Mpox) segue protocolos rígidos de vigilância epidemiológica, especialmente para aqueles que pertencem a grupos de risco para formas graves, como imunossuprimidos, crianças, gestantes e pessoas com doenças de pele extensas ou dermatite atópica.\n\nAlternativa a: Incorreta. O intervalo de 48 horas (a cada 2 dias) não é o preconizado para pacientes de alto risco. A evolução para complicações, como infecções bacterianas secundárias, pneumonia ou encefalite, pode ocorrer rapidamente, exigindo vigilância mais estreita.\n\nAlternativa b: Incorreta. O intervalo de 3 dias é considerado muito longo para a fase aguda da doença em indivíduos vulneráveis, o que impediria a detecção precoce de sinais de alerta e a intervenção oportuna.\n\nAlternativa c: Incorreta. O monitoramento semanal (a cada 7 dias) é insuficiente para a fase de replicação viral e aparecimento de novas lesões em pacientes com risco de gravidade. Esse intervalo não permite uma resposta rápida a possíveis intercorrências clínicas.\n\nAlternativa d: Incorreta. Quinze dias é um período geralmente associado à reavaliação final para liberação do isolamento (após a queda de todas as crostas e reepitelização), não sendo adequado para o acompanhamento clínico preventivo e agudo.\n\nAlternativa e: Correta. De acordo com o Guia de Vigilância Epidemiológica e o Plano de Contingência do Ministério da Saúde, o monitoramento dos casos confirmados ou suspeitos de Mpox deve ser realizado diariamente. Esse acompanhamento pode ser feito por telemonitoramento ou de forma presencial e tem como objetivo avaliar a progressão das lesões cutâneas, o manejo da dor e, fundamentalmente, a identificação imediata de sinais de gravidade que demandem hospitalização ou o uso de antivirais específicos. Para o grupo de alto risco, essa periodicidade diária é a conduta padrão para garantir a segurança do paciente.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Vigilância em Saúde",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:01.669Z"
+  },
+  {
+    "id": "AJUDA_4d3b3e3a-7dc9-4103-af9a-2fc0943a43d6",
+    "originalId": "4d3b3e3a-7dc9-4103-af9a-2fc0943a43d6",
+    "statement": "Uma mãe que amamenta, exclusivamente, seu bebê de 4 meses relata dor intensa, vermelhidão e calor em um dos seios, sendo diagnosticada com mastite. Ela questiona o pediatra sobre a segurança de continuar amamentando. Sobre o aleitamento materno e suas contraindicações, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A mastite não é uma contraindicação para a amamentação, devendo-se encorajar a mãe a continuar amamentando ou ordenhando o seio afetado para evitar o ingurgitamento e a progressão para abscesso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O aleitamento materno exclusivo é recomendado até os 6 meses de idade, sendo desnecessária a introdução de água, chás ou sucos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A infecção materna pelo vírus da Imunodeficiência Humana (HIV) é uma contraindicação absoluta ao aleitamento materno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A mãe em uso de metronidazol para tratamento de infecção bacteriana deve suspender o aleitamento, pois o medicamento é excretado no leite em concentrações que podem ser prejudiciais ao lactente.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a) Esta afirmação está correta. A mastite não é uma contraindicação para a amamentação. O esvaziamento da mama, seja pela sucção do bebê ou por ordenha, é um dos pilares do tratamento, pois ajuda a reduzir a estase láctea, alivia a inflamação e previne a evolução para um abscesso mamário. O leite de uma mama com mastite não causa danos ao lactente.\n\nAlternativa b) Esta afirmação está correta. As diretrizes nacionais e internacionais (Ministério da Saúde, Sociedade Brasileira de Pediatria e OMS) recomendam o aleitamento materno exclusivo até os 6 meses de idade. O leite materno contém toda a água e os nutrientes necessários, tornando dispensável a oferta de quaisquer outros líquidos ou alimentos nesse período.\n\nAlternativa c) Esta afirmação está correta. No contexto brasileiro, a infecção pelo vírus HIV é uma contraindicação absoluta e definitiva para o aleitamento materno. O risco de transmissão do vírus pelo leite é significativo; portanto, a mãe deve ser orientada a utilizar fórmulas infantis e a realizar a inibição da lactação (mecânica ou farmacológica).\n\nAlternativa d) Esta afirmação está incorreta, sendo o gabarito da questão. O metronidazol é considerado um medicamento compatível com a amamentação. Embora seja excretado no leite materno, as doses absorvidas pelo bebê são baixas e geralmente não causam efeitos adversos. A suspensão do aleitamento não é recomendada para tratamentos convencionais com essa droga. Em casos específicos de doses únicas muito altas (como 2 g), pode-se considerar uma interrupção temporária de apenas 12 a 24 horas, mas nunca a suspensão total, por esta ser prejudicial.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:01.669Z"
+  },
+  {
+    "id": "AJUDA_4d3bb996-009f-437e-9ecc-94cb0190bd94",
+    "originalId": "4d3bb996-009f-437e-9ecc-94cb0190bd94",
+    "statement": "Mulher, 48 anos de idade, submeteu-se à histerectomia total abdominal por mioma uterino há 4 meses. Refere ter realizado conização por NIC 3 com margens livres há 8 anos. Segundo as Diretrizes Brasileiras para o rastreamento do câncer do colo do útero a conduta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Descontinuar o exame citológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar pesquisa vaginal de HPV 16.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar vaginoscopia anual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter o rastreio colpocitológico trienal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda as diretrizes de rastreamento do câncer do colo do útero em mulheres submetidas à histerectomia, um tema recorrente em provas de residência que exige atenção ao histórico patológico da paciente.\n\nAnálise da Questão:\nA paciente tem 48 anos e realizou uma histerectomia total (remoção do corpo e do colo uterino) por uma causa benigna (mioma). No entanto, ela possui um antecedente relevante: uma conização por NIC 3 (lesão precursora de alto grau) realizada há 8 anos, com margens livres.\n\nSegundo as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero (INCA/Ministério da Saúde):\n1. Mulheres submetidas à histerectomia total por lesões benignas, sem história prévia de lesões precursoras de alto grau (NIC 2 ou 3) ou câncer, podem ser excluídas do rastreamento, desde que apresentem exames anteriores normais.\n2. Mulheres com histórico de NIC 2 ou NIC 3 submetidas à histerectomia total devem manter o rastreio citológico da cúpula vaginal, pois apresentam um risco aumentado de desenvolver neoplasia intraepitelial vaginal (NIVA) ou recidiva da doença na cúpula.\n\nExplicação das Alternativas:\n\na) Incorreta. A descontinuação do exame citológico só é permitida em casos de histerectomia por patologia benigna em mulheres que nunca apresentaram lesões precursoras de alto grau (NIC 2 ou NIC 3) e que possuam exames de rastreio prévios normais. Como a paciente teve NIC 3, ela deve continuar o rastreio.\n\nb) Incorreta. A pesquisa de HPV 16 não é a conduta de rastreio de rotina preconizada pelas diretrizes brasileiras para o seguimento pós-histerectomia em pacientes com histórico de NIC 3. O método de escolha permanece a citologia (colpocitologia oncótica da cúpula vaginal).\n\nc) Incorreta. A vaginoscopia (colposcopia da vagina) não é um exame de rastreamento, mas sim um exame diagnóstico indicado quando há alterações na citologia da cúpula vaginal. Além disso, a periodicidade anual não é a recomendação de rotina para pacientes que já completaram o seguimento inicial pós-tratamento de NIC 3 com margens livres.\n\nd) Correta. Pacientes tratadas por NIC 2 ou 3 que foram submetidas à histerectomia total devem continuar o rastreio citológico da cúpula vaginal. Como ela já realizou a conização há 8 anos com margens livres, ela já passou pelo período de seguimento mais rigoroso inicial. Portanto, deve manter o rastreio citológico (agora da cúpula vaginal) a cada três anos, seguindo a periodicidade da rotina de rastreamento nacional, para monitorar o surgimento de lesões vaginais.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:01.669Z"
+  },
+  {
+    "id": "AJUDA_4d40990b-e5b4-4a77-86ed-6e47dddd11fe",
+    "originalId": "4d40990b-e5b4-4a77-86ed-6e47dddd11fe",
+    "statement": "Quanto ao manejo da colecistite aguda em paciente cirrótico Child C, assintomático após tratamento clínico, é MAIS adequado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colecistectomia laparoscópica eletiva em todos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter tratamento clínico indefinidamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Indicar colecistectomia aberta de urgência após estabilização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Considerar colecistostomia percutânea como tratamento definitivo ou ponte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar transplante hepático antes de qualquer intervenção biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A análise do manejo da colecistite aguda no paciente cirrótico deve levar em conta, primordialmente, a reserva funcional do fígado, avaliada pela classificação de Child-Pugh.\n\nALTERNATIVA A: INCORRETA. A colecistectomia eletiva, mesmo por via laparoscópica, é contraindicada para pacientes Child-Pugh C. A mortalidade perioperatória nesse grupo é extremamente elevada (podendo ultrapassar 80% em algumas estatísticas), devido à coagulopatia grave, hipertensão portal e alto risco de insuficiência renal e sepse no pós-operatório.\n\nALTERNATIVA B: CORRETA. Em pacientes com cirrose avançada (Child C), o risco cirúrgico é proibitivo. Se o paciente respondeu bem ao tratamento clínico inicial (antibioticoterapia e jejum) e encontra-se assintomático, a estratégia mais segura é a manutenção do tratamento conservador e observação clínica. O risco de uma nova crise de colecistite é considerado menor do que o risco de óbito caso o paciente seja submetido a uma cirurgia.\n\nALTERNATIVA C: INCORRETA. A via aberta é ainda mais agressiva para o paciente cirrótico, pois a incisão abdominal pode levar à drenagem persistente de ascite, desnutrição, infecção da ferida e maior dificuldade de controle de sangramento devido às varizes de parede e distúrbios de coagulação. A cirurgia de urgência em um paciente Child C é reservada apenas para complicações catastróficas, como peritonite biliar generalizada.\n\nALTERNATIVA D: INCORRETA. A colecistostomia percutânea é uma alternativa útil para drenar a vesícula em pacientes críticos que não apresentam melhora com antibióticos e que não possuem condições de serem operados. No entanto, o enunciado especifica que o paciente já está assintomático após o tratamento clínico. Portanto, no momento, não há indicação para este procedimento invasivo, nem como ponte, nem como tratamento definitivo.\n\nALTERNATIVA E: INCORRETA. Embora o paciente Child C seja, por definição, um candidato ao transplante hepático devido à gravidade da doença de base, o transplante não é indicado como um pré-requisito ou etapa para tratar uma colecistite que já foi estabilizada. O transplante é um procedimento de altíssima complexidade regulado por critérios específicos (como a pontuação MELD) e disponibilidade de órgãos. O manejo da vesícula em candidatos ao transplante deve ser o mais conservador possível.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:01.669Z"
+  },
+  {
+    "id": "AJUDA_4d5881d4-2a65-4b43-9dbe-35cd5769a08b",
+    "originalId": "4d5881d4-2a65-4b43-9dbe-35cd5769a08b",
+    "statement": "Paciente do sexo masculino, 58 anos, vem por quadro de hematêmese e melena há 2 horas. Acompanhante refere que esse é o segundo episódio de sangramento nos últimos 6 meses. Tem antecedente de consumo de destilados, diariamente, há 15 anos. À admissão, encontra-se confuso e agitado, pressão arterial de 80 x 60 mmHg, FC de 120 bpm, com tempo de enchimento capilar de 5 segundos. Paciente foi admitido na sala de emergência e, após monitorização, acesso venoso e expansão volêmica, evolui com novo episódio de hematêmese, que resultou em rebaixamento do nível de consciência, com necessidade de intubação orotraqueal. São complicações do procedimento que pode ser realizado pelo médico emergencista para controle do sangramento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "contaminação cruzada, febre, reação hemolítica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "necrose de asa de nariz, isquemia esofágica, perfuração de esôfago.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "encefalopatia hepática, hemobilia, insuficiência renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ulceração no esôfago, estenose esofágica, dor torácica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico\nO paciente apresenta um quadro clássico de hemorragia digestiva alta varicosa (HDA), sugerido pelo histórico de etilismo crônico e episódios recorrentes de sangramento. O cenário é de instabilidade hemodinâmica grave (choque hipovolêmico classe IV) e sangramento vultoso que não cessou após as medidas iniciais, levando ao rebaixamento do nível de consciência e à necessidade de proteção da via aérea.\n\nO procedimento mencionado, que pode ser realizado pelo médico emergencista à beira-leito para o controle temporário de um sangramento varicoso maciço e refratário, é a passagem do Balão de Sengstaken-Blakemore. Esse balão promove o tamponamento mecânico das varizes esofágicas e gástricas.\n\nAnálise das Alternativas\n\nAlternativa (a) Incorreta. Contaminação cruzada, febre e reação hemolítica são complicações clássicas relacionadas à hemotransfusão (transfusão de hemoderivados), que certamente faz parte do manejo do choque, mas não são complicações do procedimento de tamponamento por balão.\n\nAlternativa (b) Correta. O uso do Balão de Sengstaken-Blakemore é uma medida de salvamento, mas está associado a riscos graves. A necrose de asa do nariz ocorre pela pressão excessiva do tubo contra a narina se não houver proteção e fixação adequadas. A isquemia esofágica e a perfuração do esôfago decorrem da pressão excessiva exercida pelos balões (especialmente se o tempo de insuflação for prolongado, geralmente recomendado por, no máximo, 24 horas) ou pelo posicionamento incorreto do balão gástrico, que pode migrar para o esôfago e romper o órgão ao ser insuflado.\n\nAlternativa (c) Incorreta. Encefalopatia hepática e insuficiência renal (como a Síndrome Hepatorrenal) são complicações sistêmicas da cirrose e do sangramento digestivo volumoso (a digestão de sangue no lúmen intestinal aumenta a amônia). A hemobilia é uma causa rara de hemorragia digestiva alta relacionada a traumas ou procedimentos nas vias biliares, não sendo uma complicação do balão.\n\nAlternativa (d) Incorreta. Embora a ulceração esofágica e a dor torácica possam ocorrer pelo uso do balão, a estenose esofágica é uma complicação tardia e cicatricial, mais comumente associada à escleroterapia endoscópica ou à ingestão de substâncias cáusticas, não sendo uma complicação aguda do procedimento de emergência descrito.\n\nConclusão\nO gabarito correto é a letra (b), pois destaca as principais complicações mecânicas e isquêmicas decorrentes do tamponamento por balão esofágico, procedimento fundamental para o controle temporário de sangramentos exanguinantes no departamento de emergência.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:01.669Z"
+  }
+]

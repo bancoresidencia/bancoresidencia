@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_2e4231c6-36e4-4495-97c2-1ab37fe22176",
+    "originalId": "2e4231c6-36e4-4495-97c2-1ab37fe22176",
+    "statement": "Paciente de 30 anos, gestante com 20 semanas, apresentou queixa de dor e edema de membro inferior esquerdo. Após consulta teve diagnóstico de Trombose venosa profunda. Das opções abaixo, qual tratamento está contraindicado para esta paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Heparina EV até o final da gestação de forma exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enoxaparina Intravenosa até o final da gestação de forma exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repouso complementar a terapia anticoagulante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rivaroxabana 15mg a cada 12 horas por 21 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Enoxaparina com ponte para warfarina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O manejo da trombose venosa profunda (TVP) durante a gestação baseia-se na escolha de anticoagulantes que apresentem perfil de segurança para o feto. O principal critério é que a medicação tenha alto peso molecular para não atravessar a barreira placentária, evitando efeitos teratogênicos e complicações hemorrágicas fetais.\n\nAlternativa A: Incorreta. A heparina não fracionada (HNF) é segura para o uso gestacional, pois suas moléculas grandes não cruzam a placenta. Embora a administração exclusivamente intravenosa (EV) até o parto seja logisticamente difícil e raramente utilizada fora do ambiente hospitalar, o fármaco não é contraindicado do ponto de vista farmacológico.\n\nAlternativa B: Incorreta. A enoxaparina é uma heparina de baixo peso molecular (HBPM) e constitui a terapia de escolha (padrão-ouro) para o tratamento de TVP em gestantes. Sua segurança é bem documentada. Apesar de a via de administração usual ser a subcutânea, a substância em si é permitida durante toda a gravidez.\n\nAlternativa C: Incorreta. Antigamente, o repouso era prescrito de forma rotineira. Atualmente, as diretrizes recomendam a deambulação precoce assim que a anticoagulação terapêutica for estabelecida. Contudo, o repouso não configura uma contraindicação absoluta, sendo apenas uma conduta considerada ultrapassada em protocolos modernos.\n\nAlternativa D: Incorreta (considerando o foco da questão). A rivaroxabana é um anticoagulante oral direto (DOAC) e, de fato, é contraindicada na gestação por atravessar a placenta e pela ausência de estudos de segurança. No entanto, em provas de residência médica, a contraindicação mais clássica e gravemente associada a danos fetais conhecidos é o uso de antagonistas da vitamina K.\n\nAlternativa E: Correta (Gabarito). A varfarina é um antagonista da vitamina K que atravessa livremente a placenta. Seu uso é formalmente contraindicado na gestação, especialmente devido ao seu alto potencial teratogênico, podendo causar a síndrome fetal varfarínica (hipoplasia nasal, pontilhado epifisário, anomalias do sistema nervoso central) e riscos elevados de hemorragia intracraniana fetal e óbito. Portanto, o esquema de ponte para varfarina, embora comum na população geral, é terminantemente proibido para gestantes.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Hemostasia",
+      "Pré-Natal",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:02.871Z"
+  },
+  {
+    "id": "AJUDA_2e426d57-2307-4623-b42b-032a67fa631c",
+    "originalId": "2e426d57-2307-4623-b42b-032a67fa631c",
+    "statement": "Um homem de 72 anos de idade, portador de doença pulmonar obstrutiva crônica grave, em ventilação mecânica por exacerbação aguda, evolui com sonolência e confusão. A gasometria arterial revela pH=7,22, PaCO₂=72mmHg, HCO₃⁻=30mEq/L, Na⁺=138mEq/L, K⁺=5,8mEq/L. Com base na gasometria, a MELHOR classificação do distúrbio acidobásico (incluindo o padrão de compensação), é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alcalose metabólica com compensação respiratória incompleta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acidose respiratória aguda sobreposta a distúrbio metabólico compensado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acidose respiratória crônica parcialmente compensada pelos rins.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Acidose metabólica com hipercalemia secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para classificar o distúrbio ácido-básico, devemos analisar os parâmetros da gasometria arterial e o histórico clínico do paciente.\n\nAnálise dos dados:\n1. pH = 7,22: Indica acidemia (valor normal entre 7,35 e 7,45).\n2. PaCO2 = 72 mmHg: Indica hipercapnia acentuada (valor normal entre 35 e 45 mmHg). Como o aumento de CO2 (um ácido volátil) acompanha a queda do pH, o distúrbio primário é uma acidose respiratória.\n3. HCO3- = 30 mEq/L: Indica elevação do bicarbonato (valor normal entre 22 e 26 mEq/L). Esse aumento representa a tentativa de compensação renal para neutralizar a acidez.\n4. Histórico: O paciente tem DPOC grave, uma doença crônica que cursa com retenção crônica de CO2.\n\nClassificação e Compensação:\nNa acidose respiratória crônica, o rim retém bicarbonato para tentar normalizar o pH. O aumento esperado do bicarbonato é de aproximadamente 3,5 a 4 mEq/L para cada 10 mmHg de aumento na PaCO2. Com uma PaCO2 de 72 mmHg (32 mmHg acima do normal de 40), o HCO3- esperado seria de cerca de 35-36 mEq/L para uma compensação plena. Como o bicarbonato está em 30 mEq/L e o pH ainda está significativamente baixo (7,22), concluímos que a compensação renal está ocorrendo, mas ainda não é suficiente para normalizar o pH, caracterizando uma compensação parcial.\n\nAnálise das alternativas:\n\na) Incorreta. O pH de 7,22 indica acidose, e não alcalose. A alcalose metabólica apresentaria pH elevado e bicarbonato primariamente aumentado.\n\nb) Incorreta. O distúrbio metabólico (aumento do bicarbonato) é a resposta compensatória, não o distúrbio primário. Além disso, o quadro respiratório é a causa da descompensação atual.\n\nc) Correta. O paciente possui uma doença de base crônica (DPOC) que justifica a cronicidade da acidose respiratória. A elevação do bicarbonato para 30 mEq/L confirma que os rins estão atuando na tentativa de compensar o pH, porém o pH de 7,22 mostra que essa compensação é apenas parcial.\n\nd) Incorreta. O distúrbio não é uma acidose metabólica (onde o bicarbonato estaria baixo), mas sim respiratória. A hipercalemia (K+ = 5,8 mEq/L) é uma consequência comum da acidemia, pois o íon H+ entra nas células em troca da saída de K+ para o meio extracelular, mas isso não altera a classificação primária do distúrbio.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Análise da Gasometria Arterial",
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:02.871Z"
+  },
+  {
+    "id": "AJUDA_2e51183a-2e43-4a2b-8916-42fa7af26cc8",
+    "originalId": "2e51183a-2e43-4a2b-8916-42fa7af26cc8",
+    "statement": "Paciente de 25 anos, sem comorbidades, gestante de 8 semanas, na sua primeira consulta de pré natal relata ao seu obstetra estar preocupada com o risco de hipertensão gestacional, visto que sua mãe teve pré-eclâmpsia na gravidez de sua irmã. Para melhor avaliar o risco de desenvolvimento de pré-eclâmpsia durante a gravidez, seu obstetra utiliza uma combinação de parâmetros maternos, segundo o modelo de predição de desenvolvimento de pré-eclâmpsia da Fetal Medicine Foundation (FMF) e, após análise dos exames colhidos na 12ª semana de gravidez, opta por prescrever AAS, início imediato, devendo ela manter a medicação até 36 semanas. Sobre o algoritmo proposto pela FMF, referendado pela Federação Internacional de Ginecologia e Obstetrícia (FIGO), inclusive para uso no Brasil, podemos afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O algoritmo proposto inclui dosagem de homocisteína no plasma materno, colhido entre 11 e 13 semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A história da mãe da paciente não é fator significativo no cálculo do risco, segundo o algoritmo utilizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A velocidade da artéria cerebral média na dopplervelocimetria fetal no primeiro trimestre é fator determinante no cálculo de risco proposto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quando o risco calculado é superior a 1:100 a gestante é considerada de alto risco para desenvolvimento de pré-eclâmpsia, sendo indicado uso de AAS, conforme prescrito pelo obstetra.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Frente a resultado de alto risco para desenvolvimento de pré-eclâmpsia, a medicação de escolha a ser prescrita é a heparina de baixo peso molecular, sendo contraindicado o uso do AAS durante a gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A predição de pré-eclâmpsia no primeiro trimestre, baseada no modelo da Fetal Medicine Foundation (FMF) e validada pela Federação Internacional de Ginecologia e Obstetrícia (FIGO), é uma estratégia de rastreio combinado realizada entre 11 e 13 semanas e 6 dias de gestação. O modelo utiliza fatores maternos, pressão arterial média, índice de pulsatilidade das artérias uterinas e marcadores bioquímicos.\n\nAlternativa a: Incorreta. O algoritmo da FMF não inclui a dosagem de homocisteína plasmática. Os marcadores bioquímicos analisados para o cálculo de risco são o fator de crescimento placentário (PlGF) e, opcionalmente, a proteína plasmática A associada à gravidez (PAPP-A).\n\nAlternativa b: Incorreta. A história clínica materna é um componente fundamental do cálculo. Ter uma mãe ou irmã com histórico de pré-eclâmpsia é considerado um fator de risco familiar significativo que é processado pelo algoritmo para compor o risco final da gestante.\n\nAlternativa c: Incorreta. O parâmetro de dopplervelocimetria utilizado no cálculo de risco da FMF é o índice de pulsatilidade (IP) médio das artérias uterinas, que reflete a qualidade da invasão trofoblástica e a resistência vascular uteroplacentária. A avaliação da artéria cerebral média é utilizada em outras situações, como na suspeita de anemia fetal ou no acompanhamento de fetos com restrição de crescimento em idades gestacionais mais avançadas.\n\nAlternativa d: Correta. De acordo com as diretrizes da FMF e da FIGO, o ponto de corte estabelecido para definir o alto risco de desenvolvimento de pré-eclâmpsia (especialmente a pré-eclâmpsia pré-termo) é de 1:100. Quando o cálculo resulta em um risco igual ou superior a esse valor, está indicada a profilaxia com AAS em baixa dose (idealmente 150 mg ao dia, administrados à noite), iniciando-se antes de 16 semanas e mantendo-se até a 36ª semana de gestação.\n\nAlternativa e: Incorreta. O ácido acetilsalicílico (AAS) é o padrão-ouro para a prevenção de pré-eclâmpsia em pacientes de alto risco, sendo uma medicação segura e amplamente recomendada. A heparina de baixo peso molecular não é a droga de escolha para a prevenção universal de pré-eclâmpsia baseada no rastreio do primeiro trimestre, sendo reservada para condições específicas como a síndrome do anticorpo antifosfolípide (SAAF).",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:02.871Z"
+  },
+  {
+    "id": "AJUDA_2e6271b3-e440-44d1-946d-c62853778edc",
+    "originalId": "2e6271b3-e440-44d1-946d-c62853778edc",
+    "statement": "Mateus, 10 anos, apresenta-se com ganho de peso excessivo, apneia do sono e manifestações de puberdade precoce. Seus exames laboratoriais indicam níveis elevados de insulina, cortisol e leptina. A avaliação de imagem revelou aumento na quantidade de gordura visceral. A história familiar inclui diabetes tipo 2 e hipertensão precoce em seus avós paternos. A fisiopatologia mais provável que explica os achados em Mateus é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperatividade do eixo hipotálamo-hipófise-tireoide como resposta compensatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deficiência de antagonistas dos receptores de melanocortina, elevando a fome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Elevação de cortisol promovendo lipogênese e resistência central à leptina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Diminuição das catecolaminas devido à maior gliconeogênese.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Maior inibição das vias orexígenas cerebrais por exposição crónica à grelina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma criança com obesidade grave, evidências de gordura visceral e alterações metabólicas e endócrinas importantes, como resistência à insulina e puberdade precoce periférica (frequentemente associada à conversão periférica de androgênios em estrogênios no tecido adiposo).\n\nAlternativa (c): Correta. O paciente apresenta níveis elevados de cortisol e leptina. O cortisol em excesso é um potente estimulador da lipogênese, especialmente na região visceral, além de contribuir para a resistência insulínica. A leptina é o hormônio da saciedade produzido pelos adipócitos; em pacientes obesos, seus níveis estão altos porque há muita gordura, mas o indivíduo não para de comer devido à resistência central à leptina no hipotálamo. O cérebro não \"enxerga\" o sinal de saciedade, perpetuando o ganho de peso.\n\nAlternativa (a): Incorreta. A hiperatividade do eixo hipotálamo-hipófise-tireoide resultaria em hipertireoidismo. Clinicamente, isso se manifestaria com perda de peso, taquicardia e agitação, o que é o oposto do quadro de ganho de peso excessivo e apneia do sono apresentado.\n\nAlternativa (b): Incorreta. O sistema de melanocortinas regula o balanço energético. Os antagonistas dos receptores de melanocortina (como a proteína AgRP) são orexígenos, ou seja, estimulam a fome. Uma deficiência desses antagonistas levaria a uma sinalização de saciedade mais persistente, o que teoricamente reduziria o peso, e não causaria obesidade.\n\nAlternativa (d): Incorreta. Na obesidade e na síndrome metabólica, observa-se geralmente um aumento da atividade do sistema nervoso simpático e das catecolaminas, o que contribui para o desenvolvimento de hipertensão arterial precoce. Não há relação direta de diminuição de catecolaminas causada por maior gliconeogênese nesse contexto.\n\nAlternativa (e): Incorreta. A grelina é um hormônio produzido principalmente no estômago com função orexígena (estimula a fome). A exposição à grelina ativa as vias que aumentam a ingestão alimentar, não as inibe. Além disso, em pacientes com obesidade crônica, os níveis de grelina costumam estar paradoxalmente reduzidos como uma tentativa falha de compensação do organismo.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:02.871Z"
+  },
+  {
+    "id": "AJUDA_2e65864a-aa24-4a83-a207-760c84e47b5d",
+    "originalId": "2e65864a-aa24-4a83-a207-760c84e47b5d",
+    "statement": "Paciente diagnosticado com diverticulite, apresenta um abscesso pericólico confinado ao mesentério com 3 cm de diâmetro. De acordo com a classificação de Hinchey, o estágio da doença e o tratamento recomendado são, repectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estágio 0 - Suporte clínico e antibióticos. Sem necessidade de internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estágio Ib - Drenagem percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estágio Ia - Suporte clínico e antibióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estágio Ib - Suporte clínico e antibióticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para responder a essa questão, é fundamental dominar a Classificação de Hinchey (especificamente a versão modificada por Wasvary ou Kaiser) e as diretrizes de manejo da diverticulite aguda complicada.\n\nA Classificação de Hinchey divide a doença da seguinte forma:\n- Estágio 0: Diverticulite clínica leve (apenas inflamação da parede do cólon).\n- Estágio Ia: Inflamação pericólica e flegmão (sem abscesso).\n- Estágio Ib: Abscesso pericólico ou mesentérico localizado, próximo ao segmento inflamado.\n- Estágio II: Abscesso pélvico, abdominal ou retroperitoneal à distância.\n- Estágio III: Peritonite purulenta generalizada.\n- Estágio IV: Peritonite fecal (perfuração livre com saída de fezes).\n\nNo caso descrito, o paciente apresenta um abscesso pericólico confinado ao mesentério, o que o enquadra no Estágio Ib.\n\nQuanto ao tratamento para o estágio Ib:\nA conduta depende do tamanho do abscesso. A maioria dos consensos (como o da Sociedade Americana de Cirurgiões de Cólon e Reto – ASCRS) estabelece que abscessos pequenos, geralmente menores que 3 cm ou 4 cm, podem ser tratados com sucesso apenas com antibioticoterapia intravenosa e suporte clínico (repouso intestinal e hidratação). A drenagem percutânea fica reservada para abscessos maiores ou para casos que não respondem ao tratamento clínico inicial. Como o abscesso do paciente tem 3 cm, a conduta inicial é conservadora.\n\nAnálise das alternativas:\n\na) Incorreta. O estágio 0 é a diverticulite não complicada. A presença de um abscesso já torna a doença complicada, exigindo classificação superior e, na maioria das vezes, internação hospitalar para administração de antibióticos venosos.\n\nb) Incorreta. Embora o estágio Ib esteja correto para a descrição do abscesso pericólico, a drenagem percutânea é indicada preferencialmente para abscessos maiores (geralmente acima de 3 cm ou 4 cm, dependendo do protocolo adotado). Para uma coleção de 3 cm, o tratamento conservador é a primeira escolha.\n\nc) Incorreta. O estágio Ia corresponde ao flegmão pericólico, no qual há inflamação, mas ainda não houve a formação de uma coleção purulenta (abscesso) organizada.\n\nd) Correta. O estágio Ib reflete o abscesso pericólico ou mesentérico localizado. Devido ao tamanho de 3 cm, o tratamento preconizado é o suporte clínico associado à antibioticoterapia, apresentando altas taxas de resolução sem necessidade de intervenção invasiva imediata.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:02.871Z"
+  },
+  {
+    "id": "AJUDA_2e68b7b6-e50e-4ed2-a4f2-ece82819e5c0",
+    "originalId": "2e68b7b6-e50e-4ed2-a4f2-ece82819e5c0",
+    "statement": "Paciente vítima de colisão auto x ônibus é trazido pelos bombeiros à sala de trauma com colar cervical. À monitorização: frequência cardíaca de 140 bpm, pressão arterial de 80 x 40 mmHg, frequência respiratória de 36 ipm, saturação de oxigênio (com máscara de O₂) de 84%. Apresenta instabilidade pélvica, equimose na parede abdominal na projeção do cinto de segurança e fratura exposta de tornozelo esquerdo sem sangramento ativo. Qual a primeira conduta a ser tomada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "intubação orotraqueal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "tipagem sanguínea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "drenagem torácica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realização de ultrassom fast na sala de trauma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tomografia computadorizada de corpo inteiro com contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve um paciente politraumatizado grave, com sinais claros de instabilidade hemodinâmica (choque classe IV: FC 140 bpm e PA 80/40 mmHg) e insuficiência respiratória iminente (FR 36 ipm e saturação de 84% mesmo em uso de máscara de oxigênio). No atendimento ao trauma, seguimos rigorosamente a sistematização do ABCDE do ATLS (Advanced Trauma Life Support).\n\nA alternativa (a) está correta porque, conforme a priorização do ABCDE, as vias aéreas (A) e a ventilação (B) precedem a abordagem da circulação (C). Um paciente com saturação de oxigênio de 84% sob máscara e frequência respiratória de 36 ipm apresenta falha na oxigenação e ventilação. A intubação orotraqueal é necessária para garantir uma via aérea definitiva, fornecer oxigenação adequada e reduzir o trabalho respiratório, o que também auxilia no manejo do choque ao diminuir o consumo periférico de oxigênio pelos músculos respiratórios.\n\nA alternativa (b) está incorreta. A tipagem sanguínea e o início do protocolo de transfusão maciça são passos fundamentais no tratamento deste paciente, que apresenta sinais de choque hipovolêmico grave (provavelmente por sangramento abdominal ou pélvico). No entanto, isso faz parte do \"C\" (Circulação) e deve ser realizado após ou simultaneamente à estabilização das vias aéreas e ventilação. A questão pede a primeira conduta.\n\nA alternativa (c) está incorreta. A drenagem torácica seria indicada se houvesse sinais clínicos de pneumotórax hipertensivo ou hemotórax volumoso (como ausculta abolida, desvio de traqueia ou percussão alterada), o que não foi relatado. Embora o paciente tenha baixa saturação, a prioridade inicial em um quadro de hipóxia grave sem diagnóstico etiológico torácico definido é a proteção da via aérea e ventilação assistida.\n\nA alternativa (d) está incorreta. O ultrassom FAST é uma ferramenta excelente para identificar líquido livre na cavidade abdominal, na pelve ou no saco pericárdico, sendo parte essencial do \"C\". No entanto, o paciente apresenta uma emergência respiratória (A e B) que precisa ser resolvida antes ou enquanto a equipe prepara os exames de imagem à beira-leito.\n\nA alternativa (e) está incorreta. A tomografia computadorizada é formalmente contraindicada para pacientes com instabilidade hemodinâmica. O paciente tem PA 80/40 mmHg, o que indica que ele deve ser estabilizado na sala de trauma e, se necessário, levado diretamente ao centro cirúrgico ou à angiografia, mas nunca para a sala de tomografia, onde o monitoramento e a intervenção são limitados.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Trauma",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:02.871Z"
+  },
+  {
+    "id": "AJUDA_2e7ae2e3-8471-4017-bfd4-4b63caaf390a",
+    "originalId": "2e7ae2e3-8471-4017-bfd4-4b63caaf390a",
+    "statement": "Homem, 60 anos de idade, realizou endoscopia digestiva alta por melena sem repercussão hemodinâmica. O laudo apresenta lesão ulcerada bem delimitada de 8 mm na pequena curvatura do antro, com fundo recoberto por fibrina. A biópsia revelou gastrite crônica e presença de Helicobacter pylori. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nova endoscopia com biópsia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Eco-endoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Angiotomografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Claritromicina 500 mg e amoxicilina 1 g, de 12/12 horas, por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O ponto central desta questão é o manejo de uma úlcera gástrica em um paciente de 60 anos. Diferentemente das úlceras duodenais, que raramente são malignas, toda úlcera gástrica carrega um risco potencial de representar um adenocarcinoma gástrico ulcerado.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Diante de uma úlcera gástrica, a conduta mandatória é a realização de uma nova endoscopia digestiva alta (EDA) com biópsias após o tratamento farmacológico (geralmente em 8 a 12 semanas). Isso é necessário porque uma única sessão de biópsias pode apresentar falsos-negativos para neoplasia devido ao erro de amostragem. O objetivo da nova EDA é confirmar a cicatrização completa da lesão e realizar novas coletas de material caso a úlcera ainda esteja presente.\n\nAlternativa b) Incorreta. A ecoendoscopia (ultrassonografia endoscópica) é um exame excelente para avaliar a profundidade de invasão de tumores já confirmados (estadiamento T) ou para investigar lesões subepiteliais. Não é o exame de escolha inicial para o seguimento de uma úlcera gástrica comum.\n\nAlternativa c) Incorreta. A angiotomografia é utilizada principalmente em casos de hemorragia digestiva aguda e volumosa, onde a endoscopia não consegue identificar ou tratar o foco do sangramento, ou em suspeitas de isquemia mesentérica. O paciente está hemodinamicamente estável e já possui diagnóstico endoscópico, tornando o exame desnecessário neste momento.\n\nAlternativa d) Incorreta. Embora o tratamento do Helicobacter pylori seja necessário, a alternativa apresenta falhas. Primeiro, o tempo de tratamento para erradicação do H. pylori atualmente recomendado é de 14 dias, e não 7 dias. Segundo, e mais importante, apenas tratar a bactéria sem garantir o acompanhamento da cicatrização da úlcera gástrica é um erro grave, pois pode retardar o diagnóstico de um câncer gástrico. A prioridade na conduta de seguimento é a reavaliação endoscópica.\n\nResumo: Em qualquer paciente com úlcera gástrica, especialmente na faixa etária acima dos 45-50 anos ou com sinais de alarme, é obrigatório realizar o controle de cura com nova endoscopia e biópsias para excluir definitivamente a presença de malignidade.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori",
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:02.871Z"
+  },
+  {
+    "id": "AJUDA_2e7db69f-24ee-4f41-815a-0de59f3b2b19",
+    "originalId": "2e7db69f-24ee-4f41-815a-0de59f3b2b19",
+    "statement": "Homem, 66 anos de idade, é avaliado em consulta ambulatorial com queixa de prurido na glande, hiperemia local e aumento da produção de esmegma. Trata-se de paciente com antecedente de obesidade, dislipidemia, diabetes mellitus tipo 2, doença renal crônica, estágio 4 A2 filtração glomerular estimada de 28 mL/min/1,73m2 e relação albumina/creatinina em amostra isolada de urina de 200 mg/g (VR < 30 mg/g). Faz uso de metformina 850mg 3x/dia e dapagliflozin 10 mg/dia. Qual é a conduta mais adequada neste momento em relação ao tratamento do diabetes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A dapagliflozina deve ser suspensa devido à infecção urogenital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A metformina deve ser substituída devido ao risco de acidose lática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A metformina deve ser mantida para aumentar a atividade da enzima piruvato carboxilase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A dapagliflozina deve ser suspensa devido ao risco de cetoacidose euglicêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente é um idoso com diabetes mellitus tipo 2 e doença renal crônica (DRC) avançada, apresentando uma Taxa de Filtração Glomerular (TFG) de 28 mL/min/1,73 m² (Estágio 4). Ele apresenta sintomas de balanopostite (prurido, hiperemia e esmegma), uma complicação comum do uso de inibidores do SGLT2 (como a dapagliflozina) devido à glicosúria. No entanto, a questão foca na conduta mais adequada em relação ao tratamento do diabetes frente ao seu quadro clínico global.\n\nAlternativa (a) Incorreta: Embora os inibidores do SGLT2 (dapagliflozina) aumentem o risco de infecções fúngicas urogenitais, a conduta inicial para uma infecção leve/moderada como a balanopostite é o tratamento tópico com antifúngicos e medidas de higiene, sem necessidade obrigatória de suspensão da droga, especialmente considerando os benefícios de proteção renal e cardiovascular que essa classe oferece até TFGs próximas de 20-25 mL/min. A prioridade de intervenção neste caso é outra medicação.\n\nAlternativa (b) Correta: Esta é a conduta prioritária. A metformina é excretada pelos rins, e seu acúmulo em pacientes com disfunção renal grave aumenta significativamente o risco de acidose lática associada à metformina, uma condição com alta taxa de mortalidade. Segundo as diretrizes nacionais e internacionais (ADA, SBD, KDIGO), a metformina deve ter sua dose reduzida pela metade quando a TFG está entre 30 e 45 mL/min e deve ser formalmente suspensa ou contraindicada quando a TFG é inferior a 30 mL/min. Como o paciente apresenta TFG de 28 mL/min e está usando dose máxima (2550 mg/dia), a suspensão é urgente.\n\nAlternativa (c) Incorreta: A metformina deve ser suspensa, e não mantida, devido à insuficiência renal em estágio 4 (TFG < 30). Além disso, o mecanismo de ação descrito está incorreto; a metformina inibe a gliconeogênese hepática (via ativação da AMPK) e aumenta a sensibilidade periférica à insulina, não tendo como foco o aumento da atividade da piruvato carboxilase (que, na verdade, é uma enzima que promove a gliconeogênese).\n\nAlternativa (d) Incorreta: A cetoacidose euglicêmica é um efeito adverso raro e grave dos inibidores do SGLT2, geralmente desencadeado por situações de estresse intenso (cirurgias, infecções graves, jejum prolongado). O quadro de prurido e hiperemia na glande sugere uma infecção fúngica local simples, e não uma condição de estresse sistêmico que justifique a suspensão imediata da droga pelo risco de cetoacidose, especialmente quando comparado ao risco iminente de acidose lática pela metformina em um paciente com TFG < 30.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:02.871Z"
+  },
+  {
+    "id": "AJUDA_2e80b8c2-0ec2-489c-a3ca-dec0ff5a1da0",
+    "originalId": "2e80b8c2-0ec2-489c-a3ca-dec0ff5a1da0",
+    "statement": "Adolescente de 13 anos compareceu a uma Unidade Básica de Saúde para avaliação anual de saúde. Encontra-se assintomática. Ao exame físico, apresenta-se em bom estado geral, com PA e FC normais para a idade. A ausculta cardíaca mostra sopro sistólico de baixa intensidade (grau 1+/4+), audível no foco pulmonar, sem irradiação, com timbre suave, que diminui de intensidade quando em posição ortostática. Não há frêmito, nem outros ruídos cardíacos anormais. Quanto a antecedentes pessoais, não relata história de dispneia, dor torácica, síncope ou intolerância aos esforços. Não há antecedentes familiares de cardiopatia ou morte súbita.\nConsiderando-se os dados da paciente, o que sugere o diagnóstico de sopro cardíaco inocente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sopro sistólico de baixa intensidade, sem irradiação e com diminuição em posição ortostática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Sopro localizado em foco pulmonar sem irradiação, associado à ausência de sintomas respiratórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ausência de antecedentes familiares de cardiopatia congênita ou de morte súbita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Presença de PA e FC dentro da normalidade para a idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Os sopros inocentes (funcionais) são muito comuns na infância e adolescência e são reconhecidos pelas características semiológicas do próprio sopro. Os chamados \"7 S\" ajudam a lembrar:\n\n- Sensível às mudanças de posição: diminui ou desaparece ao ficar em pé.\n- Sistólico: nunca exclusivamente diastólico.\n- Suave: baixa intensidade, geralmente grau 1 a 2/6, sem frêmito.\n- Short: curto, sem ocupar toda a sístole.\n- Single: B2 com desdobramento fisiológico, sem cliques ou galope.\n- Small: pequena área de ausculta, sem irradiação.\n- Sem sintomas: paciente assintomático.\n\nNa questão, o sopro tem praticamente todas essas características. É sistólico, de baixa intensidade (1+/4+), suave, localizado em foco pulmonar, sem irradiação e diminui na posição ortostática. Também não há frêmito nem outros ruídos anormais. O quadro é compatível com sopro de ejeção pulmonar inocente, comum em adolescentes.\n\nAlternativa A (correta): reúne os atributos semiológicos que de fato sugerem sopro inocente: sistólico, baixa intensidade, sem irradiação e variação com a postura. A redução na posição ortostática é muito sugestiva. Ao ficar em pé, cai o retorno venoso e o fluxo pelas câmaras, o que atenua sopros de fluxo. Sopros patológicos, como estenoses e comunicações, tendem a não mudar com a posição. A exceção é a cardiomiopatia hipertrófica obstrutiva, cujo sopro aumenta em pé.\n\nAlternativa B (incorreta): o foco pulmonar sem irradiação é compatível com sopro inocente, mas não é específico. A comunicação interatrial e a estenose pulmonar leve também são auscultadas nesse foco. Além disso, a ausência de sintomas respiratórios não é critério para caracterizar o sopro. O sintoma relevante seria cardiovascular, como dispneia aos esforços, síncope, dor torácica ou intolerância ao exercício.\n\nAlternativa C (incorreta): a ausência de antecedentes familiares de cardiopatia ou morte súbita reduz o risco, mas não define o sopro como inocente. Muitas cardiopatias congênitas ocorrem sem história familiar. É um dado de contexto, não uma característica do sopro.\n\nAlternativa D (incorreta): pressão arterial e frequência cardíaca normais são inespecíficas. Ocorrem na maioria das cardiopatias congênitas leves, como CIA, CIV pequena e estenose pulmonar leve. Esses achados não diferenciam sopro inocente de patológico.\n\nMensagem final: o diagnóstico de sopro inocente é clínico e baseia-se nas características do próprio sopro, aliadas à ausência de sinais de alarme. São sinais de alarme: sopro diastólico, intensidade de 3/6 ou maior, frêmito, B2 anormal, cliques, sintomas, alterações de pulsos e sopro que aumenta em pé. Na presença de qualquer um deles, indica-se investigação com ecocardiograma.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Semiologia Cardíaca",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:02.871Z"
+  },
+  {
+    "id": "AJUDA_2e85574a-da7b-4915-8aa8-164d3cd98d24",
+    "originalId": "2e85574a-da7b-4915-8aa8-164d3cd98d24",
+    "statement": "Malformação congênita que mais frequentemente se associa à poliidrâmnia é a",
+    "options": [
+      {
+        "id": "A",
+        "text": "anencefalia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "espinha bífida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "atresia de esôfago.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "mielomeningocele.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A poli-hidrâmnia caracteriza-se pelo acúmulo excessivo de líquido amniótico, ocorrendo quando há um desequilíbrio entre a sua produção (principalmente pela urina fetal) e a sua remoção (principalmente pela deglutição fetal). Aproximadamente 50% dos casos de poli-hidrâmnia são idiopáticos, mas, quando associados a malformações, as anomalias do sistema nervoso central e do trato digestivo são as mais comuns.\n\nAlternativa a) Correta. A anencefalia é a malformação congênita que mais frequentemente se associa à poli-hidrâmnia. O excesso de líquido ocorre por dois motivos principais: primeiro, devido à ausência ou ao comprometimento severo dos centros nervosos que controlam o reflexo de deglutição, impedindo o feto de ingerir o líquido; segundo, pela transudação direta de fluidos através das membranas e do tecido nervoso exposto (área cerebrovasculosa) para a cavidade amniótica.\n\nAlternativa b) Incorreta. A espinha bífida é um defeito de fechamento do tubo neural, mas, por ocorrer geralmente em níveis inferiores da coluna, não costuma afetar o mecanismo de deglutição ou a regulação do líquido amniótico de forma tão direta ou frequente quanto a anencefalia.\n\nAlternativa c) Incorreta. A atresia de esôfago é, de fato, uma causa clássica de poli-hidrâmnia, uma vez que o obstáculo mecânico impede a passagem do líquido para o estômago e intestino, onde seria absorvido. No entanto, estatisticamente, a anencefalia apresenta uma frequência de associação com a poli-hidrâmnia ainda maior do que a atresia esofágica na prática obstétrica e nos dados epidemiológicos descritos nos principais tratados.\n\nAlternativa d) Incorreta. A mielomeningocele, assim como a espinha bífida, é uma forma de disrafismo espinhal. Embora seja uma malformação grave, ela não está rotineiramente associada à poli-hidrâmnia, a menos que haja outras anomalias associadas ou comprometimento neurológico central que afete a deglutição, o que não é o padrão da patologia.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Alteração do Volume do Líquido Amniótico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:02.871Z"
+  }
+]

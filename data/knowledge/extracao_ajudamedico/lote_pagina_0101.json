@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_1b361ade-835c-48e2-b1b8-fac48645b5f1",
+    "originalId": "1b361ade-835c-48e2-b1b8-fac48645b5f1",
+    "statement": "Quando uma doença põe a vida do paciente em risco, a comunicação empática é de suma importância. Um procedimento estruturado em sete etapas pode ser usado para transmitir notícias difíceis (Escala SPIKES). Qual das etapas abaixo NÃO faz parte desse procedimento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Empatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Preparação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Conhecimento sobre o problema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cogitação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Ambiente adequado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O protocolo SPIKES é uma ferramenta amplamente utilizada na medicina para a comunicação de notícias difíceis. Ele é composto por seis etapas estruturadas, representadas pelo acrônimo em inglês. Abaixo, detalho cada uma das etapas e a análise das alternativas:\n\nS (Setting up) - Preparação e Ambiente adequado: Esta etapa envolve o planejamento do encontro. O médico deve garantir um local privativo, evitar interrupções (como telefones ou bipes), sentar-se ao lado do paciente e manter contato visual. Portanto, as alternativas (b) Preparação e (e) Ambiente adequado são componentes fundamentais desta fase inicial.\n\nP (Perception) - Percepção: O objetivo é identificar o que o paciente já sabe ou percebe sobre sua condição clínica. Utilizam-se perguntas abertas para alinhar as informações.\n\nI (Invitation) - Convite: O médico deve perguntar ao paciente o quanto ele deseja saber sobre o diagnóstico ou prognóstico, respeitando o desejo de informação ou o silêncio de cada indivíduo.\n\nK (Knowledge) - Conhecimento: Refere-se à transmissão da notícia propriamente dita. Deve-se fornecer a informação em pequenos blocos, usando linguagem clara, acessível e evitando jargões técnicos. Por isso, a alternativa (c) Conhecimento sobre o problema está correta e faz parte do processo.\n\nE (Empathy) - Empatia: Esta etapa foca em identificar e acolher a emoção do paciente. O médico deve validar o sentimento expresso (seja choro, raiva ou silêncio) e oferecer suporte emocional. Assim, a alternativa (a) Empatia é parte integrante do protocolo.\n\nS (Strategy and Summary) - Estratégia e Resumo: Consiste em organizar os próximos passos do tratamento, compartilhar as decisões com o paciente e resumir o que foi discutido para garantir a compreensão.\n\nAnálise da alternativa incorreta:\nd) Cogitação: Esta alternativa é o gabarito pois a \"cogitação\" não pertence ao protocolo SPIKES. O termo \"cogitação\" (ou contemplação) é na verdade uma etapa do Modelo Transteórico de Prochaska e DiClemente, que estuda os estágios de mudança de comportamento do paciente (como a cessação do tabagismo), não tendo relação direta com as etapas de comunicação de más notícias.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:43.742Z"
+  },
+  {
+    "id": "AJUDA_1b3c7836-61b6-4d8e-ae64-4f01c7fda432",
+    "originalId": "1b3c7836-61b6-4d8e-ae64-4f01c7fda432",
+    "statement": "Sobre sopro cardíaco em crianças, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As causas prevalentes no período neonatal são em geral menos graves que nas crianças mais velhas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Todas as crianças, mesmo as que não tenham o achado, tem indicação de fazer oximetria de pulso como rastreio de cardiopatia congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sopros diastólicos ou que irradiam para dorso ou região cervical tendem a ser mais graves.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Eletrocardiograma e radiografia de tórax não devem ser solicitados para investigação de todos os sopros.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O objetivo desta questão é identificar a afirmação falsa sobre a avaliação de sopros cardíacos na faixa etária pediátrica.\n\nAlternativa A (Incorreta/Gabarito): Esta afirmação está incorreta porque o período neonatal é justamente a fase de maior alerta para cardiopatias congênitas críticas. Diferentemente das crianças maiores e adolescentes, em que a vasta maioria dos sopros é do tipo inocente (funcional), no recém-nascido, o sopro pode ser o primeiro sinal de malformações estruturais graves que dependem do fechamento ou da patência de estruturas da circulação fetal, como o canal arterial. Portanto, as causas no período neonatal tendem a ser potencialmente mais graves.\n\nAlternativa B (Correta): Refere-se ao Teste do Coraçãozinho (oximetria de pulso), que é um rastreio universal obrigatório para todos os recém-nascidos com idade gestacional superior a 35 semanas, antes da alta hospitalar (entre 24 e 48 horas de vida). O objetivo é detectar cardiopatias congênitas críticas que cursam com hipoxemia, mesmo antes do aparecimento de sintomas clínicos ou sopros audíveis.\n\nAlternativa C (Correta): Na semiologia cardiovascular pediátrica, os sopros inocentes são obrigatoriamente sistólicos, de baixa intensidade e geralmente não apresentam irradiações importantes. A presença de um sopro diastólico é sempre considerada patológica até que se prove o contrário. Da mesma forma, irradiações para o dorso (comuns na coarctação da aorta e na estenose pulmonar) ou para a região cervical (comuns na estenose aórtica) são sinais de alerta para cardiopatias estruturais.\n\nAlternativa D (Correta): A propedêutica armada (ECG e Radiografia de Tórax) não deve ser utilizada de forma indiscriminada. Se o sopro possui características claramente inocentes em uma criança com crescimento e desenvolvimento normais, sem sintomas e com pulsos periféricos normais, a conduta inicial pode ser apenas a observação clínica e o seguimento em consulta, sem a necessidade imediata de exames complementares. O uso racional de exames evita custos desnecessários e ansiedade familiar.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:43.742Z"
+  },
+  {
+    "id": "AJUDA_1b41088b-5b6d-45de-aed1-fad393c3ddf7",
+    "originalId": "1b41088b-5b6d-45de-aed1-fad393c3ddf7",
+    "statement": "Homem de 52 anos, etilista pesado, apresenta dor epigástrica recorrente há 3 anos, perda ponderal de 12 kg e múltiplas internações por exacerbações de pancreatite crônica. A TC mostra dilatação do ducto pancreático principal (9 mm), calcificações intraductais e aumento focal da cabeça pancreática, sem massa definida. O paciente faz uso regular de opioides, sem controle adequado da dor. Sobre os princípios de indicação cirúrgica na pancreatite crônica, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A cirurgia está indicada apenas quando há suspeita de malignidade, não sendo recomendada para controle de dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A presença de calcificações pancreáticas isoladas, sem dilatação ductal, é indicação absoluta de cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dor intratável associada a ducto pancreático dilatado é indicação clássica de cirurgia, sendo os procedimentos de drenagem ou ressecção escolhidos conforme o padrão anatômico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A cirurgia deve ser evitada em pacientes com aumento da cabeça pancreática, pois aumenta o risco de insuficiência endócrina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A presença de dependência de opioides contraindica cirurgia, pois reduz a chance de alívio da dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ESTRUTURAÇÃO DO RACIOCÍNIO CLÍNICO\n\nO caso descreve um paciente com Pancreatite Crônica (PC) avançada, apresentando a tríade clássica: dor abdominal crônica, perda ponderal e alterações morfológicas (calcificações e dilatação ductal). O ponto central da questão é a indicação cirúrgica e a escolha da técnica baseada na anatomia.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (Incorreta): A dor crônica intratável, que compromete a qualidade de vida e leva ao uso abusivo de opioides, é a principal indicação cirúrgica na pancreatite crônica. Embora a suspeita de malignidade também seja uma indicação, ela não é a única.\n\nAlternativa B (Incorreta): Calcificações isoladas (sinal de doença parenquimatosa) sem sintomas ou complicações não são indicação de cirurgia. A indicação baseia-se na clínica (dor, obstruções de órgãos adjacentes) e não apenas no achado radiológico de calcificação.\n\nAlternativa C (Correta): Esta alternativa resume os princípios cirúrgicos da PC. A dor refratária ao tratamento clínico é a indicação mais comum. A escolha da técnica depende da anatomia:\n1. Ducto dilatado (geralmente > 6-7 mm): Indica-se procedimentos de drenagem, como a Pancreatojejunostomia lateral em Y-de-Roux (Cirurgia de Partington-Rochelle/Puestow modificada).\n2. Doença inflamatória na cabeça do pâncreas com ducto fino: Indica-se ressecções (Whipple ou técnicas preservadoras de duodeno).\n3. Doença mista (Ducto dilatado + massa inflamatória na cabeça): Indicam-se as chamadas cirurgias híbridas, como a Cirurgia de Frey (escavação da cabeça do pâncreas + drenagem ductal). No caso do paciente (ducto de 9 mm e aumento da cabeça), a cirurgia de Frey seria uma excelente opção.\n\nAlternativa D (Incorreta): O aumento da cabeça pancreática (massa inflamatória) é, na verdade, uma indicação para técnicas específicas de ressecção ou híbridas, visando descomprimir não só o ducto pancreático, mas também o colédoco e o duodeno, que podem estar obstruídos. A cirurgia bem indicada visa preservar o máximo de parênquima funcional.\n\nAlternativa E (Incorreta): A dependência de opioides não contraindica a cirurgia; pelo contrário, é um marcador de que o tratamento clínico falhou e de que a intervenção cirúrgica deve ser considerada para interromper o ciclo da dor e o uso abusivo de narcóticos.\n\nSÍNTESE PARA PROVA:\nLembre-se da regra de ouro na cirurgia da pancreatite crônica: \"Ducto dilatado = Drenagem; Massa cefálica = Ressecção ou Frey\". A indicação soberana é a DOR que não cede ao tratamento clínico otimizado.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:43.742Z"
+  },
+  {
+    "id": "AJUDA_1b44dc62-3944-4f53-893e-7c9119df0fea",
+    "originalId": "1b44dc62-3944-4f53-893e-7c9119df0fea",
+    "statement": "Homem, 18 anos, vítima de trauma torácico fechado (colisão carro com ônibus). Apresenta fratura costal única (oitavo arco costal direito), tratado com drenagem pleural fechada por pneumotórax. Boa resolução e expansão pulmonar, dreno retirado após 24 horas, seguido de alta hospitalar. Retorna ao serviço de emergência após cinco dias da alta, com queixa de dor pleurítica e picos febris (não medidos). Radiografia de tórax com nível hidroaéreo à direita. Tomografia de tórax compatível com hemotórax coagulado. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dreno pleural calibroso (36F), utilizando o mesmo orifício da drenagem prévia e colocado em irrigação contínua e aspiração a vácuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Videotoracoscopia ou VATS (Video Assisted Thoracoscopic Surgery).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Toracotomia póstero lateral, com decorticação pulmonar e pleurectomia para controle de sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Toracocentese de alívio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um paciente com hemotórax coagulado após um trauma torácico. Inicialmente, ele teve um pneumotórax drenado, mas a retirada precoce do dreno ou a presença de sangue não detectada evoluiu para o acúmulo de coágulos no espaço pleural, sugerido pelos picos febris e pela dor pleurítica.\n\nAnálise das imagens:\nA radiografia de tórax revela uma opacidade na base direita com uma linha horizontal perfeita, caracterizando um nível hidroaéreo (presença simultânea de ar e líquido no espaço pleural). A tomografia computadorizada confirma que esse conteúdo não é líquido livre, apresentando-se como uma coleção heterogênea e densa, compatível com sangue coagulado (hemotórax retido).\n\nAlternativa a) Incorreta. A simples reintrodução de um dreno pleural, mesmo que calibroso (36F), não é capaz de remover sangue coagulado ou septações de fibrina. O dreno é eficaz para ar ou líquidos fluidos; coágulos sólidos obstruem o dreno e não são removidos por irrigação ou aspiração a vácuo de forma satisfatória neste estágio.\n\nAlternativa b) Correta. A videotoracoscopia (VATS) é considerada o padrão-ouro para o tratamento do hemotórax coagulado ou retido. O procedimento deve ser realizado preferencialmente de forma precoce (idealmente entre o 2º e o 7º dia da evolução). A VATS permite a evacuação direta dos coágulos, a quebra de loculações, a limpeza exaustiva da cavidade pleural sob visão direta e a reexpansão pulmonar completa, apresentando menor morbidade e recuperação mais rápida que a cirurgia aberta.\n\nAlternativa c) Incorreta. A toracotomia posterolateral com decorticação pulmonar é uma cirurgia de grande porte e invasiva. Ela é reservada para casos de empiema em fase crônica/organizada, na qual existe uma \"carapaça\" (peel) pleural espessa que impede a expansão do pulmão, ou quando a videotoracoscopia não é tecnicamente possível ou falha. Para um paciente jovem com apenas cinco dias de evolução pós-alta, a abordagem minimamente invasiva é a primeira escolha.\n\nAlternativa d) Incorreta. A toracocentese de alívio consiste na punção do espaço pleural com uma agulha ou cateter fino. É um procedimento útil para diagnóstico ou alívio temporário de grandes derrames líquidos, mas é totalmente ineficaz para drenar sangue coagulado e detritos sólidos. Além disso, não resolve a expansão pulmonar necessária para a cura do paciente.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/73a960d57ae130cd67b436f6af33825889f94e0a5a0dc1e54efc6b1a69b18bff.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1b44dc62-3944-4f53-893e-7c9119df0fea_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/e46e2f52bf5582ed3bb0a2e77d4cecfb601e28164babef96f83ae8b1e6a6de17.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1b44dc62-3944-4f53-893e-7c9119df0fea_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:44.140Z"
+  },
+  {
+    "id": "AJUDA_1b4c505b-4120-4fda-bffe-cad4b334cdf0",
+    "originalId": "1b4c505b-4120-4fda-bffe-cad4b334cdf0",
+    "statement": "Um paciente de 38 anos de idade, com diabetes tipo 1 há 12 anos, em seguimento ambulatorial, relatou dificuldades financeiras e, por isso, só dispunha de insulina NPH e insulina regular humana. Ele tinha histórico de hipoglicemias noturnas, especialmente entre 2h e 4h da manhã, com glicemias de jejum frequentemente <70 mg/ dl. O paciente realizava três refeições diárias em horários regulares, mas tinha dificuldade para realizar contagem de carboidratos. O paciente utilizava um esquema de três aplicações diárias: NPH e regular pela manhã; regular antes do jantar; e NPH ao se deitar. O paciente monitorizava glicemia capilar antes das refeições e ao acordar.\nAssinale a opção que representa a estratégia mais adequada para rastreamento de complicações microvasculares e macrovasculares nesse paciente, considerando limitações de acesso e recursos.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar exame oftalmológico anual com retinografia, dosagem anual de albuminúria/creatinina urinária, avaliação clínica anual de neuropatia, perfil lipídico e pressão arterial, além de reforçar controle glicêmico (HbA1c <7%), priorizando exames essenciais e educação em saúde, com abordagem multifatorial para risco cardiovascular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar apenas exame oftalmológico a cada dois anos e dosagem de creatinina sérica anual, sem necessidade de rastreamento de neuropatia ou avaliação do perfil lipídico, pois o controle glicêmico é suficiente para prevenir complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Priorizar rastreamento de complicações macrovasculares com ecocardiograma anual e teste ergométrico, dispensando avaliação de microvasculopatias em pacientes jovens com diabetes tipo 1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar exames laboratoriais completos semestralmente (retinografia, microalbuminúria, perfil lipídico, ECG, creatinina, TSH, PCR ultrassensível), independentemente de sintomas ou recursos, pois o rastreamento intensivo é obrigatório em todos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar apenas avaliação clínica anual dos pés e pressão arterial, pois exames laboratoriais e oftalmológicos não são custo‑efetivos em pacientes com bom controle glicêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o rastreamento de complicações crônicas em um paciente com Diabetes Mellitus tipo 1 (DM1) com 12 anos de evolução. De acordo com as principais diretrizes (Sociedade Brasileira de Diabetes e ADA), o rastreamento de complicações microvasculares no DM1 deve começar 5 anos após o diagnóstico e, a partir de então, ser realizado anualmente. \n\nAlternativa (a): CORRETA. Esta alternativa descreve o padrão-ouro de rastreamento anual recomendado para pacientes com DM1 de longa data. O exame oftalmológico (fundo de olho ou retinografia) busca detectar retinopatia precocemente; a dosagem de albuminúria e creatinina foca na detecção de doença renal do diabetes; e a avaliação clínica dos pés visa identificar neuropatia e risco de ulceração. O controle do perfil lipídico e da pressão arterial, somado à educação em saúde e à meta de HbA1c < 7%, compõe a abordagem multifatorial necessária para reduzir o risco de eventos macrovasculares (infarto e AVC).\n\nAlternativa (b): INCORRETA. O intervalo de dois anos para o exame oftalmológico só é aceitável em casos selecionados de pacientes com controle glicêmico excelente e exames prévios normais. O paciente em questão apresenta instabilidade (hipoglicemias frequentes). Além disso, é erro grave omitir o rastreamento de neuropatia e do perfil lipídico, que são fundamentais para a manutenção da saúde do paciente diabético.\n\nAlternativa (c): INCORRETA. Não há indicação de realizar ecocardiograma ou teste ergométrico anualmente em pacientes diabéticos assintomáticos, independentemente de serem jovens ou não. O rastreamento macrovascular inicial baseia-se no controle de fatores de risco (lipídios, pressão, tabagismo). Jamais se deve dispensar a avaliação de microvasculopatias, que são as complicações mais comuns no DM1.\n\nAlternativa (d): INCORRETA. O rastreamento semestral é excessivo para a maioria dos parâmetros citados, sobrecarregando o sistema de saúde sem evidência de benefício adicional sobre o rastreamento anual. Exames como PCR ultrassensível e TSH (embora o TSH possa ser pedido no DM1 por associação com outras doenças autoimunes) não fazem parte do rastreamento específico de complicações vasculares do diabetes com essa periodicidade.\n\nAlternativa (e): INCORRETA. Esta conduta é insuficiente e perigosa. Basear-se apenas na clínica dos pés e na pressão arterial ignora a detecção precoce de lesões na retina e nos rins, que muitas vezes são silenciosas até atingirem estágios avançados. O rastreamento laboratorial e oftalmológico é comprovadamente custo-efetivo para evitar cegueira e necessidade de diálise.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:44.140Z"
+  },
+  {
+    "id": "AJUDA_1b4dd1d3-b691-4807-9d7a-41cb6be7ea27",
+    "originalId": "1b4dd1d3-b691-4807-9d7a-41cb6be7ea27",
+    "statement": "O diagnóstico da Síndrome Antifosfolípide (SAF) é estabelecido quando há presença de um ou mais critérios clínicos associados a um ou mais critérios laboratoriais. Qual alternativa que não corresponde a um critério clínico ou laboratorial de SAF?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Um ou mais óbitos de fetos morfologicamente normais, documentado por ultrassonografia ou exame macroscópico direto, com dez ou mais semanas de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Um ou mais partos prematuros com neonato morfologicamente normal até 34 semanas de gestação consequente à pré-eclâmpsia grave, eclâmpsia ou insuficiência placentária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dois ou mais abortamentos espontâneos inexplicados antes de dez semanas de gestação, excluídas causas anatômicas ou hormonais maternas e alterações genéticas no casal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Anticoagulante lúpico presente no plasma em duas ou mais ocasiões com intervalo mínimo de 12 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Anticorpo anticardiolipina IgG e/ou IgM presente no soro ou no plasma em títulos moderados ou altos (> 40 GPL ou MPL, ou > percentil 99), em duas ou mais ocasiões, com intervalo mínimo de 12 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para o diagnóstico da Síndrome Antifosfolípide (SAF), utilizamos os critérios de Sydney (uma revisão dos critérios de Sapporo). O diagnóstico requer a presença de pelo menos um critério clínico e um critério laboratorial. Abaixo, analisamos cada alternativa com base nesses consensos internacionais:\n\nAlternativa (a) Correta: Este é um dos critérios clínicos obstétricos. A perda de um ou mais fetos morfologicamente normais (confirmados por ultrassom ou exame direto) com 10 ou mais semanas de gestação é considerada um evento definidor para a síndrome.\n\nAlternativa (b) Correta: Também faz parte dos critérios obstétricos. Define-se pela ocorrência de um ou mais partos prematuros de recém-nascidos morfologicamente normais, realizados antes da 34ª semana de gestação, devido a complicações placentárias graves, como pré-eclâmpsia grave, eclâmpsia ou insuficiência placentária.\n\nAlternativa (c) Incorreta (Gabarito): Esta alternativa está errada porque o critério oficial exige a ocorrência de TRÊS ou mais abortamentos espontâneos consecutivos e inexplicados antes da 10ª semana de gestação, após a exclusão de anomalias anatômicas, hormonais e genéticas. A alternativa cita apenas \"dois ou mais\", o que não preenche o critério de Sydney.\n\nAlternativa (d) Correta: É um dos três critérios laboratoriais possíveis. A presença do anticoagulante lúpico (AL) deve ser detectada no plasma em duas ou mais ocasiões, com um intervalo de pelo menos 12 semanas entre os exames, para garantir que a presença do anticorpo seja persistente e não transitória (causada por infecções, por exemplo).\n\nAlternativa (e) Correta: É outro critério laboratorial fundamental. Exige a presença de anticorpos anticardiolipina (aCL) da classe IgG e/ou IgM em títulos moderados a altos (maiores que 40 GPL ou MPL, ou acima do percentil 99). Assim como os outros testes laboratoriais, a presença deve ser confirmada após um intervalo mínimo de 12 semanas.\n\nResumo: O erro da alternativa (c) é quantitativo. Lembre-se da regra para os critérios obstétricos da SAF: 1 óbito fetal tardio (10 semanas ou mais), OU 1 parto prematuro por doença placentária (até a 34ª semana), OU 3 abortos precoces (antes de 10 semanas). Além disso, os exames laboratoriais (AL, anticardiolipina ou anti-beta2-glicoproteína I) sempre devem ser repetidos com intervalo de 12 semanas para confirmação.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": 88.03385697831388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:44.140Z"
+  },
+  {
+    "id": "AJUDA_1b522c04-6a6c-418a-ab63-c0b2b298f51f",
+    "originalId": "1b522c04-6a6c-418a-ab63-c0b2b298f51f",
+    "statement": "Foram avaliados pacientes com alterações na tomografia computadorizada de tórax (neoplasia pulmonar, abscesso de pulmão, doença granulomatosa) ou alterações tomográficas em sistema nervoso central (tumor primário ou metastático, abscesso encefálico) que preencheram critério diagnóstico para Síndrome da secreção inapropriada de hormônio antidiurético. O achado mais provável é",
+    "options": [
+      {
+        "id": "A",
+        "text": "pressão arterial sistólica < 100 mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sódio urinário inferior a 3 mEq/L.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sódio sérico superior a 155 mEq/L.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "osmolaridade urinária inapropriadamente aumentada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "aumento de osmolaridade plasmática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Síndrome da Secreção Inapropriada de Hormônio Antidiurético (SIADH) é uma causa comum de hiponatremia euvolêmica. Ela ocorre quando o hormônio antidiurético (ADH ou vasopressina) é liberado de forma contínua, independentemente da osmolaridade plasmática ou do volume circulante. As causas citadas no enunciado (neoplasias pulmonares, doenças do sistema nervoso central e infecções) são gatilhos clássicos para essa síndrome.\n\nAnálise das alternativas:\n\na) Incorreta. A SIADH é caracterizada pela euvolumia clínica. O excesso de ADH causa uma leve expansão do volume extracelular, mas não o suficiente para causar edema ou hipertensão, e certamente não cursa com hipotensão arterial (PAS < 100 mmHg). A hipotensão sugeriria uma hiponatremia hipovolêmica, o que excluiria o diagnóstico de SIADH.\n\nb) Incorreta. Na SIADH, o sódio urinário costuma estar elevado, geralmente acima de 40 mEq/L (e quase sempre acima de 20-30 mEq/L). Isso acontece porque a expansão volêmica inicial inibe o sistema renina-angiotensina-aldosterona e estimula a liberação de peptídeos natriuréticos, forçando a excreção de sódio pelos rins. Um sódio urinário muito baixo (como 3 mEq/L) seria indicativo de estados de depleção de volume ou estados edematosos (insuficiência cardíaca ou cirrose), nos quais o rim tenta poupar sódio ao máximo.\n\nc) Incorreta. A SIADH causa hiponatremia (sódio sérico baixo), geralmente inferior a 135 mEq/L, devido à retenção excessiva de água livre mediada pelo ADH, a qual dilui o sódio no sangue. Um sódio superior a 155 mEq/L caracteriza hipernatremia grave, o oposto do esperado nesta patologia.\n\nd) Correta. Esta é a característica fisiopatológica central da SIADH. Em condições normais, se a osmolaridade do sangue cai (hiponatremia), a secreção de ADH deve ser suprimida para que o rim elimine água diluída. Na SIADH, o ADH continua agindo nos túbulos coletores, promovendo a reabsorção de água e tornando a urina concentrada. Portanto, a osmolaridade urinária encontra-se inapropriadamente elevada (geralmente acima de 100 mOsm/kg e, muitas vezes, superior à osmolaridade plasmática) diante de uma hiponatremia.\n\ne) Incorreta. Na SIADH, ocorre uma retenção de água livre, o que leva à diluição dos solutos plasmáticos. Consequentemente, a osmolaridade plasmática estará diminuída (hipotonicidade), tipicamente abaixo de 275 mOsm/kg. O aumento da osmolaridade plasmática é visto em quadros de desidratação ou diabetes insipidus, não na SIADH.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios do Sódio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:44.140Z"
+  },
+  {
+    "id": "AJUDA_1b56d16e-f0f9-4a18-9727-b495c27cfe3b",
+    "originalId": "1b56d16e-f0f9-4a18-9727-b495c27cfe3b",
+    "statement": "Uma mulher vítima de violência sexual procura atendimento emergencial, mas não possui carteira vacinal e não se recorda de ter recebido vacina contra hepatite B anteriormente. Sobre a profilaxia pós-exposição ao vírus da hepatite B (VHB), qual das condutas a seguir está CORRETA, considerando a situação em que não se conhece o estado sorológico do agressor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar a imunoglobulina hiperimune nas primeiras 12 horas e programar a vacinação após 30 dias, quando já se conhecer o estado sorológico da paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar a primeira dose da vacina contra hepatite B e aguardar resultado dos marcadores sorológicos maternos para decidir sobre a administração da imunoglobulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar a primeira dose da vacina contra hepatite B e imunoglobulina hiperimune, preferencialmente nas primeiras 12 horas após a agressão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Postergar a vacinação para após o resultado dos marcadores sorológicos maternos, mas administrar a imunoglobulina hiperimune dentro das primeiras 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A abordagem de profilaxia pós-exposição (PEP) para o vírus da hepatite B (VHB) em vítimas de violência sexual é uma urgência médica. O objetivo é impedir a replicação viral antes que a infecção se estabeleça. De acordo com os protocolos do Ministério da Saúde e as diretrizes internacionais, quando a vítima tem esquema vacinal incompleto ou desconhecido e o agressor possui estado sorológico desconhecido ou é sabidamente HBsAg reativo, a conduta deve ser imediata.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A imunoglobulina deve ser administrada precocemente, mas a vacinação não deve ser postergada por 30 dias. A vacina deve ser iniciada simultaneamente (em sítios de aplicação diferentes) para garantir a proteção a longo prazo (imunização ativa), enquanto a imunoglobulina fornece anticorpos imediatos (imunização passiva).\n\nAlternativa b) Incorreta. Em casos de violência sexual, o risco de transmissão é considerado alto o suficiente para que não se aguarde o resultado de exames laboratoriais para iniciar a profilaxia. A conduta deve ser imediata para garantir a eficácia da imunoglobulina, que diminui consideravelmente após as primeiras 24-48 horas, embora possa ser feita em até 14 dias em casos de exposição sexual.\n\nAlternativa c) Correta. Esta é a conduta padrão-ouro. Diante de uma paciente com histórico vacinal desconhecido e agressor de sorologia desconhecida, deve-se realizar a profilaxia combinada: a primeira dose da vacina (seguindo o esquema de 0, 1 e 6 meses) e a Imunoglobulina Humana Anti-Hepatite B (IGHAHB). O período ideal de administração é nas primeiras 12 a 24 horas após a exposição para máxima eficácia.\n\nAlternativa d) Incorreta. Não se deve postergar a vacinação. O início da série vacinal junto com a imunoglobulina é a estratégia mais eficaz para prevenir a infecção crônica pelo VHB após uma exposição de alto risco. Aguardar resultados sorológicos atrasa o início da imunização ativa desnecessariamente.\n\nEm resumo, a combinação de vacina e imunoglobulina nas primeiras horas após a agressão oferece a melhor proteção possível, garantindo tanto a cobertura imediata por anticorpos pré-formados quanto o estímulo para que o próprio sistema imune da paciente desenvolva memória e proteção duradoura.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Assistência à Vítima de Violência Sexual"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:44.140Z"
+  },
+  {
+    "id": "AJUDA_1b5fa043-63ae-43a7-a93c-3b5d9c7cff97",
+    "originalId": "1b5fa043-63ae-43a7-a93c-3b5d9c7cff97",
+    "statement": "Uma paciente de 67 anos de idade, diabética há 10 anos, compareceu à consulta de rotina. Ela usa metformina 850 mg duas vezes ao dia e relatou episódios ocasionais de hipoglicemia leve no final da tarde. Os exames mostraram HbA1c = 6,3%, creatinina normal e IMC = 26 kg/m². Referiu que mora sozinha e tem dificuldade em manter alimentação regular. Qual deve ser a prioridade do médico de família nessa consulta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduzir a meta de HbAlc para < 6%, dada a idade e o tempo de doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Avaliar o risco de hipoglicemia, ajustar metas individuais e trabalhar planejamento alimentar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Suspender imediatamente a metformina por risco de hipoglicemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar insulina basal para melhor controle glicêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo do Diabetes Mellitus tipo 2 (DM2) em pacientes idosos, focando na individualização das metas terapêuticas e na segurança do paciente.\n\nAnálise do caso clínico:\nA paciente tem 67 anos e apresenta um controle glicêmico muito rigoroso (HbA1c de 6,3%). No entanto, ela relata episódios de hipoglicemia e possui fatores de risco social e comportamental, como morar sozinha e ter alimentação irregular. Em idosos, a hipoglicemia é extremamente perigosa, pois aumenta o risco de quedas, fraturas, arritmias cardíacas e declínio cognitivo.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Reduzir a meta de HbA1c para menos de 6% seria inadequado e perigoso. As diretrizes atuais (como as da Sociedade Brasileira de Diabetes e da ADA) recomendam metas menos rígidas para idosos, geralmente entre 7,0% e 8,0%, dependendo da fragilidade e das comorbidades. Um controle excessivamente estrito em uma paciente que já apresenta hipoglicemia aumenta o risco de morte.\n\nAlternativa (b) Correta: Esta é a conduta prioritária. O médico deve reconhecer que a meta atual está muito baixa para a realidade da paciente. Avaliar o risco de hipoglicemia é fundamental, visto que ela mora sozinha (risco de um evento grave sem socorro). Ajustar a meta para um patamar mais seguro e trabalhar o planejamento alimentar para compensar as irregularidades nas refeições são passos essenciais da Medicina de Família e Comunidade para garantir a segurança e a qualidade de vida.\n\nAlternativa (c) Incorreta: A metformina é o padrão-ouro no tratamento do DM2 e, isoladamente, possui um risco muito baixo de causar hipoglicemia, pois não estimula a secreção de insulina (é um sensibilizador). Embora a dose possa ser ajustada, a suspensão imediata e total não é a primeira conduta indicada antes de se avaliar os hábitos alimentares e a possibilidade de outras causas para os sintomas.\n\nAlternativa (d) Incorreta: Iniciar insulina basal seria contraproducente. A paciente já apresenta níveis de HbA1c baixos (6,3%) e episódios de hipoglicemia. A adição de insulina aumentaria drasticamente o risco de eventos hipoglicêmicos graves, indo contra a necessidade de flexibilização do tratamento observada no caso.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Medicina de Família e Comunidade",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:44.140Z"
+  },
+  {
+    "id": "AJUDA_1b64b694-ff99-4b8c-b5b8-ec548e3339ae",
+    "originalId": "1b64b694-ff99-4b8c-b5b8-ec548e3339ae",
+    "statement": "Homem de 58 anos procura atendimento devido a queixa de disfagia progressiva para alimentos sólidos iniciada há 6 meses, associada a perda de peso não intencional. Além disso, apresenta episódios frequentes de pirose e regurgitação, há vários anos, sem tratamento adequado. Endoscopia digestiva alta recente revela estenose esofágica no terço distal e sinais de esofagite crônica, com biópsias que não evidenciam malignidade. Nesse caso, a conduta inicial mais apropriada é indicar",
+    "options": [
+      {
+        "id": "A",
+        "text": "esofagectomia subtotal por via videolaparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "aplicação de toxina botulínica em esôfago distal via endoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "cirurgia de fundoplicatura imediata para correção do refluxo gastroesofágico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "dilatação endoscópica da estenose e prescrever inibidor de bomba de prótons.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um paciente com sintomas clássicos de Doença do Refluxo Gastroesofágico (DRGE) de longa data e sem tratamento, que evoluiu com disfagia progressiva e perda de peso. Os achados da endoscopia (estenose em terço distal e esofagite crônica) associados a biópsias negativas para malignidade direcionam o diagnóstico para Estenose Péptica do Esôfago, uma complicação cicatricial do refluxo crônico.\n\nAnálise das alternativas:\n\na) Incorreta. A esofagectomia é uma cirurgia de grande porte, indicada para casos de neoplasia maligna ou megaesôfago chagásico em estágio avançado (grau IV). Como as biópsias foram negativas para câncer e o quadro sugere uma complicação benigna da DRGE, essa conduta é excessivamente invasiva e desproporcional.\n\nb) Incorreta. A aplicação de toxina botulínica é uma opção terapêutica para a acalásia (distúrbio motor do esôfago), agindo no relaxamento do esfíncter esofágico inferior. Não tem indicação no tratamento de estenoses mecânicas cicatriciais, como a estenose péptica.\n\nc) Incorreta. Embora a fundoplicatura seja o tratamento cirúrgico para a DRGE, ela não deve ser a conduta inicial em um paciente com estenose esofágica manifesta. Primeiramente, é necessário tratar a complicação (estenose) e garantir a perviedade do órgão. Além disso, a cirurgia antirrefluxo em um esôfago estenosado e com prejuízo da motilidade pode agravar a disfagia se realizada antes da dilatação e estabilização do quadro.\n\nd) Correta. A conduta padrão para a estenose péptica consiste na dilatação endoscópica para alívio imediato da obstrução mecânica (melhora da disfagia), associada ao uso de inibidores de bomba de prótons (IBP) em doses otimizadas. O IBP é fundamental para tratar a esofagite subjacente, permitir a cicatrização da mucosa e, principalmente, reduzir a taxa de recorrência da estenose, diminuindo a necessidade de novas dilatações.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Doença do Refluxo Gastroesofágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:12:44.140Z"
+  }
+]

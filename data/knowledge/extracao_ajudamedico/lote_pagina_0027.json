@@ -1,0 +1,514 @@
+[
+  {
+    "id": "AJUDA_07034b38-5e12-4e84-ba50-246d5953b741",
+    "originalId": "07034b38-5e12-4e84-ba50-246d5953b741",
+    "statement": "Menina de 8 anos de idade, previamente sadia, chega à Unidade de Pronto Atendimento com história de fraqueza intensa, sede excessiva e aumento da frequência urinária há duas semanas. Há relato de perda de peso nesse período, embora se alimente normalmente. Nas últimas 24 horas, passou a apresentar dor abdominal, náuseas e vômitos frequentes. Ao exame está sonolenta, taquicárdica, com movimentos respiratórios rápidos e profundos e prega cutânea com retorno prolongado. Exames Laboratoriais: Glicemia: 480 mg/dL; Gasometria arterial: pH: 7,15; Bicarbonato: 10mEq/L; Anion gap: 22mEq/L; Cetonúria: (+++); Potássio sérico: 4,0mEq/L; Sódio sérico: 130mEq/L; Creatinina sérica: 1,0mg/dL. \n\nDe acordo com os dados clínicos do caso, indique a faixa etária mais comumente afetada pela doença responsável pela situação descrita:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Menores de 2 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Entre 5 e 14 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Entre 15 e 20 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adultos de 20 a 30 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico e Contexto Clínico:\n\nO quadro clínico descreve uma paciente de 8 anos com a tríade clássica do diabetes mellitus tipo 1 (DM1): polidipsia (sede excessiva), poliúria (aumento da frequência urinária) e perda de peso, apesar da polifagia. A evolução aguda com dor abdominal, vômitos, sonolência e o padrão respiratório de Kussmaul (movimentos rápidos e profundos), somada aos achados laboratoriais de hiperglicemia (480 mg/dL), acidose metabólica com ânion gap elevado (pH 7,15 e bicarbonato 10 mEq/L) e cetonúria (+++), confirma o diagnóstico de cetoacidose diabética (CAD). A CAD é frequentemente a manifestação inicial do DM1 em crianças e adolescentes.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. O diagnóstico de diabetes em menores de 2 anos é significativamente menos comum. Casos em lactentes muito jovens podem estar associados ao diabetes neonatal (causas genéticas) ou a formas muito precoces de autoimunidade, mas não representam a faixa etária de maior prevalência para o início do DM1.\n\nAlternativa b) Correta. O diabetes mellitus tipo 1 apresenta uma incidência bimodal, com dois picos principais: o primeiro ocorre entre os 4 e 7 anos de idade e o segundo entre os 10 e 14 anos (período peripuberal). Portanto, a faixa etária de 5 a 14 anos engloba os dois períodos de maior risco para o surgimento da doença na infância, sendo a resposta correta para a questão.\n\nAlternativa c) Incorreta. Embora o DM1 possa ser diagnosticado no final da adolescência e início da vida adulta, a taxa de incidência de novos casos começa a apresentar um declínio após a puberdade, sendo menos frequente do que na faixa escolar e pré-puberal.\n\nAlternativa d) Incorreta. Diagnósticos de DM1 entre os 20 e 30 anos são bem menos comuns do que na pediatria. Nessa faixa etária, aumentam as chances de diagnóstico de diabetes mellitus tipo 2 (especialmente se houver obesidade) ou LADA (diabetes autoimune latente do adulto), mas o pico clássico de incidência da forma infantojuvenil já foi ultrapassado.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Análise da Gasometria Arterial",
+      "Emergências Pediátricas",
+      "Distúrbios Ácido-Básicos",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": 30.403439903417993,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:00.003Z"
+  },
+  {
+    "id": "AJUDA_0715d75e-8b8d-4209-b5fd-58198c64ac99",
+    "originalId": "0715d75e-8b8d-4209-b5fd-58198c64ac99",
+    "statement": "Paciente, 58 anos de idade, sexo masculino, com histórico de hipertensão e uso de diurético tiazídico, apresenta quadro agudo de dor intensa, rubor, calor e edema em articulação metatarsofalângica do primeiro pododáctilo direito. Ao exame, observa-se limitação funcional importante e toque doloroso. Sobre o diagnóstico e manejo inicial da gota aguda, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A colchicina pode ser usada na fase aguda, preferencialmente, nas primeiras 12 a 24 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A confirmação diagnóstica exige sempre dosagem sérica de ácido úrico elevada no momento da crise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A análise do líquido sinovial pode mostrar cristais em forma de agulha com birrefringência positiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O tratamento de escolha, nas primeiras 24 a 48 horas da crise, é o alopurinol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O uso de corticosteroides intra-articulares está contraindicado nos pacientes hipertensos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve um quadro clássico de gota (artrite gotosa aguda), caracterizado por uma monoartrite súbita na primeira articulação metatarsofalângica (podagra) em um paciente com fatores de risco, como o sexo masculino, a idade e o uso de diurético tiazídico, que reduz a excreção renal de ácido úrico.\n\nAnálise das alternativas:\n\na) CORRETA. A colchicina é um dos pilares do tratamento da crise aguda de gota. Sua eficácia é significativamente maior quando administrada precocemente, idealmente nas primeiras 12 a 24 horas após o início dos sintomas. Ela atua inibindo a quimiotaxia dos neutrófilos e a formação do inflamassoma, reduzindo a resposta inflamatória aos cristais de urato monossódico.\n\nb) INCORRETA. A dosagem de ácido úrico sérico pode estar normal ou até baixa em cerca de 30% dos pacientes durante uma crise aguda de gota. Isso ocorre porque o ácido úrico pode se depositar na articulação ou ser excretado em maior quantidade devido ao aumento do cortisol endógeno durante o estresse inflamatório. Portanto, níveis normais de ácido úrico não excluem o diagnóstico de gota na fase aguda.\n\nc) INCORRETA. Os cristais de urato monossódico, característicos da gota, possuem forma de agulha e apresentam birrefringência fortemente NEGATIVA sob luz polarizada. A birrefringência positiva é característica dos cristais de pirofosfato de cálcio, encontrados na pseudogota.\n\nd) INCORRETA. O alopurinol é um agente hipouricemiante indicado para o tratamento crônico da gota e prevenção de novas crises. Ele não deve ser iniciado durante uma crise aguda, pois a queda brusca nos níveis de ácido úrico sérico pode mobilizar depósitos articulares e prolongar ou agravar a inflamação. Se o paciente já utilizava o alopurinol antes da crise, ele deve ser mantido, mas nunca iniciado na fase aguda.\n\ne) INCORRETA. O uso de corticosteroides intra-articulares é uma opção terapêutica eficaz e segura para crises de gota, especialmente em casos de monoartrite nos quais o uso de anti-inflamatórios não esteroidais (AINEs) ou colchicina seja contraindicado (como em pacientes com insuficiência renal). A hipertensão arterial não é uma contraindicação para a infiltração intra-articular, uma vez que a absorção sistêmica é mínima. Além disso, mesmo o uso sistêmico de curto prazo pode ser feito em hipertensos, desde que haja monitoramento.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Artrites Microcristalinas"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:00.003Z"
+  },
+  {
+    "id": "AJUDA_071c406f-4486-4825-880c-47f226798e9e",
+    "originalId": "071c406f-4486-4825-880c-47f226798e9e",
+    "statement": "Com base no Protocolo Clínico e Diretrizes Terapêuticas (PCDT) da leucemia mieloide crônica de crianças e adolescentes, o critério de inclusão para o tratamento com Inibidores de Tirosina-quinase (ITQ) em pacientes pediátricos com diagnóstico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Confirmado de leucemia mieloide crônica em fase crônica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "De leucemia mieloide crônica em fase acelerada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "De leucemia mieloide crônica em fase blástica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "De leucemia mieloide crônica sem necessidade de confirmação laboratorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Leucemia Mieloide Crônica (LMC) é uma neoplasia mieloproliferativa clonal caracterizada pela presença do cromossomo Filadélfia (Ph+), resultante da translocação t(9;22). Essa alteração genética cria o gene de fusão BCR-ABL1, que codifica uma proteína com atividade tirosina-quinase permanentemente ativa, levando à proliferação celular descontrolada. O tratamento de escolha para pacientes pediátricos baseia-se no uso de inibidores de tirosina-quinase (ITQs).\n\nAlternativa a: Está correta. De acordo com o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) do Ministério da Saúde para crianças e adolescentes, o critério de inclusão para o tratamento com ITQs é o diagnóstico confirmado de LMC em fase crônica. A fase crônica é o estágio em que a maioria dos pacientes é diagnosticada e no qual os ITQs, como o imatinibe, apresentam maior eficácia em alcançar respostas citogenéticas e moleculares profundas.\n\nAlternativa b: Está incorreta. A fase acelerada indica uma progressão da doença, caracterizada por um aumento no percentual de blastos (10-19%), basofilia ou novas alterações citogenéticas. Embora o ITQ seja utilizado nessa fase, muitas vezes em doses maiores ou de segunda geração, o critério padrão de inclusão inicial descrito no protocolo para o manejo básico foca na fase crônica.\n\nAlternativa c: Está incorreta. A fase blástica é o estágio mais avançado e grave, funcionando clinicamente como uma leucemia aguda (mais de 20% de blastos). O tratamento é muito mais complexo, exigindo quimioterapia intensiva associada ao ITQ e, geralmente, indicação de transplante de células-tronco hematopoiéticas, não sendo o critério de inclusão básico para o protocolo simplificado de ITQ.\n\nAlternativa d: Está incorreta. O diagnóstico de LMC exige obrigatoriamente a comprovação laboratorial da translocação t(9;22) por citogenética convencional ou da presença do gene BCR-ABL1 por métodos moleculares (FISH ou RT-PCR). Sem essa confirmação, não é permitida a inclusão do paciente no protocolo de tratamento com ITQs, dado o alto custo e a especificidade da droga para o alvo molecular.\n\nGabarito: Letra A.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:00.003Z"
+  },
+  {
+    "id": "AJUDA_07244fe7-1fe4-44b1-8569-54dbf0c516b2",
+    "originalId": "07244fe7-1fe4-44b1-8569-54dbf0c516b2",
+    "statement": "Paciente masculino, 45 anos, agricultor, morador de uma área rural no interior do Rio Grande do Sul. História Clínica: O paciente foi atendido em um hospital de campanha três semanas após uma enchente que devastou sua comunidade. Ele relata múltiplos problemas de saúde desde que foi deslocado para um abrigo temporário superlotado. Nos últimos sete dias, desenvolveu diarreia aquosa, associada a dores abdominais e vômitos. Além disso, descreve episódios de febre intermitente, cefaleia e dor retro-orbitária. O paciente também apresenta uma lesão puntiforme no pé direito, resultado de uma ferida causada por um pedaço de metal enferrujado durante a enchente. Relata, ainda, dores musculares e cãibras nos últimos dias. Sua esposa, que está no mesmo abrigo, desenvolveu sintomas respiratórios agudos. Ele expressa preocupação com a segurança das filhas adolescentes, temendo violência sexual no abrigo.\nExames Físicos: -PA: 90/60 mmHg -FC:105 bpm -Temperatura:38,4°C. Ao exame físico revela desidratação moderada, abdome doloroso à palpação difusa, lesão puntiforme com eritema e edema no pé direito, além de icterícia leve. História de Saúde: Paciente hipertenso, em uso irregular de medicamentos. Tem histórico de episódios anteriores de dengue, mas nunca apresentou hepatite ou outra doença infecciosa crônica.\n\nA icterícia leve no paciente levanta a suspeita de hepatite A. Qual das seguintes medidas é a mais adequada para o manejo inicial da hepatite A no contexto apresentado no texto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de antivirais específicos e internação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hidratação oral vigorosa e repouso, com controle sintomático.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Uso de antibióticos de amplo espectro e suplementação hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tratamento com corticoides para reduzir a inflamação hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A análise do caso clínico revela um paciente em um cenário de desastre natural (enchente), o que aumenta significativamente o risco de doenças de veiculação hídrica e alimentar devido à contaminação da água e à aglomeração em abrigos. A suspeita de Hepatite A é fundamentada pela icterícia, febre e sintomas gastrointestinais (diarreia e vômitos) após o contato com áreas alagadas.\n\nA Hepatite A é uma doença viral aguda, geralmente autolimitada, cuja transmissão ocorre pela via fecal-oral. Diferente de outras hepatites virais, ela não evolui para a cronicidade. O manejo clínico baseia-se exclusivamente no suporte e no controle dos sintomas, uma vez que não existe um tratamento antiviral específico disponível para o vírus da hepatite A (HAV).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Não existem medicamentos antivirais específicos para o tratamento da Hepatite A. Além disso, a internação hospitalar é reservada apenas para casos de insuficiência hepática aguda (hepatite fulminante), o que não é o quadro do paciente, que apresenta icterícia leve e estabilidade clínica relativa, apesar da desidratação.\n\nAlternativa (b) Correta. O tratamento da Hepatite A é de suporte. O repouso é recomendado conforme a tolerância do paciente, e a hidratação é fundamental, especialmente neste caso, em que o paciente apresenta perdas por diarreia e vômitos, além de sinais de desidratação moderada. O controle sintomático (para náuseas, vômitos e dor) deve ser feito evitando-se drogas potencialmente hepatotóxicas.\n\nAlternativa (c) Incorreta. Antibióticos são indicados para infecções bacterianas. Embora o paciente tenha uma lesão no pé e risco de leptospirose (outra doença comum em enchentes), a questão pede especificamente o manejo da suspeita de Hepatite A. O vírus não responde a antibióticos. \"Suplementação hepática\" não é uma conduta médica padronizada ou eficaz para hepatites agudas virais.\n\nAlternativa (d) Incorreta. O uso de corticoides não é indicado na fase aguda das hepatites virais. Eles não reduzem a inflamação de forma benéfica nesse contexto e podem retardar o clareamento viral, além de predispor a infecções secundárias, não tendo papel no manejo da Hepatite A típica.\n\nEm resumo, diante de um quadro de Hepatite A, a conduta é expectante e de suporte, focando em garantir a hidratação e o conforto do paciente enquanto o próprio sistema imunológico elimina o vírus.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Hepatites Virais"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:00.003Z"
+  },
+  {
+    "id": "AJUDA_072a59e0-2cdc-4c38-954f-5b56f3e7994f",
+    "originalId": "072a59e0-2cdc-4c38-954f-5b56f3e7994f",
+    "statement": "Lactente do sexo feminino, 3 meses de idade, é trazida ao pronto-socorro com queixa de tosse há 10 dias, que piorou nos últimos 3 dias. A mãe relata múltiplos episódios de tosse paroxística, seguidos de esforço respiratório intenso e cianose facial, com duração de 30 a 60 segundos. Não houve febre, mas a criança evoluiu com dificuldade alimentar e engasgos devido aos episódios frequentes de tosse. Antecedentes perinatais sem intercorrências, sendo a gestação a termo com parto vaginal. Ao exame físico, a paciente está ativa, porém apresenta taquipneia (FR: 60 irpm), cianose perioral intermitente e dessaturação durante um episódio de tosse observado (SpO₂: 88%). Ausculta pulmonar com murmúrio vesicular preservado, sem sibilos ou estertores. Exame cardiovascular sem alterações. Exames laboratoriais revelam hemoglobina de 10,2 g/dL, hematócrito de 32%, leucocitose com 18.500/mm³ (80% linfócitos).\nAssinale a alternativa correta sobre a doença mais provável dessa criança.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A doença é causada por um agente viral e já existe disponibilidade de imunização passiva para o micro-organismo causador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A doença é causada por um agente bacteriano e existe possibilidade de imunização passiva da mãe durante a gestação, visando à proteção do bebê ao nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A imunização ativa para essa doença deve ser realizada com uma vacina atenuada e deve ser administrada em 3 doses no esquema básico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A doença não é causada por um agente infeccioso, e a investigação com exames de imagem pode elucidar a causa desse quadro que a criança apresenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A realização de PCR em secreção de nasofaringe frequentemente identifica o agente causador dessa doença, e a conduta também envolve profilaxia de comunicantes.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO quadro clínico descrito é clássico de coqueluche (ou Síndrome Coqueluchoide), causada pela bactéria Bordetella pertussis. Os pontos-chave para o diagnóstico são: idade (lactente jovem), crises de tosse paroxística (em acessos) seguidas de cianose ou apneia, ausência de febre e exame físico pulmonar sem alterações significativas (murmúrio vesicular preservado e sem ruídos adventícios). O hemograma reforça a suspeita ao apresentar leucocitose importante com linfocitose absoluta, um achado característico dessa infecção bacteriana em lactentes.\n\nAnálise das Alternativas:\n\nAlternativa a: Incorreta. A coqueluche é causada por uma bactéria (Bordetella pertussis), não por um vírus. Além disso, não existe imunização passiva (administração de anticorpos prontos) de rotina como tratamento ou prevenção primária para essa doença.\n\nAlternativa b: Incorreta. Embora a doença seja bacteriana e a vacinação da gestante (com a vacina dTpa) seja recomendada a partir da 20ª semana de gestação para transferir anticorpos ao feto, essa estratégia é uma forma de imunização ativa da mãe (ela recebe o antígeno e produz anticorpos) que resulta em imunidade passiva para o bebê. A alternativa afirma erroneamente \"imunização passiva da mãe\".\n\nAlternativa c: Incorreta. A vacina contra a coqueluche (componente pertussis da vacina pentavalente ou dTpa) é uma vacina inativada (composta por fragmentos da bactéria ou a bactéria morta), e não atenuada. Embora o esquema básico seja de 3 doses (2, 4 e 6 meses), o erro está na classificação do tipo de vacina.\n\nAlternativa d: Incorreta. A doença tem etiologia infecciosa bacteriana bem definida. Exames de imagem, como a radiografia de tórax, costumam mostrar achados inespecíficos, como o \"coração felpudo\" (infiltrado perihilar que borra a silhueta cardíaca), mas não são o padrão-ouro para o diagnóstico nem elucidam a causa sozinhos.\n\nAlternativa e: Correta. O padrão-ouro para o diagnóstico laboratorial da coqueluche é a coleta de secreção de nasofaringe para realização de PCR (Reação em Cadeia da Polimerase), que possui alta sensibilidade, ou cultura. Além do tratamento do caso índice com macrolídeos (como azitromicina), a conduta de vigilância epidemiológica exige a quimioprofilaxia dos comunicantes próximos para interromper a cadeia de transmissão, especialmente em ambientes com outros lactentes ou gestantes.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Coqueluche"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:00.003Z"
+  },
+  {
+    "id": "AJUDA_072ef6a6-e748-43c6-b479-4bcd8e623109",
+    "originalId": "072ef6a6-e748-43c6-b479-4bcd8e623109",
+    "statement": "Paciente feminina, 64 anos veio ao pronto-socorro com quadro de dor abdominal intensa, em hipocôndrio direito, colúria, icterícia e febre de 38 – 39ºC há 8 dias. A dor é acompanhada de náuseas e vômitos após alimentação. O hábito intestinal é normal. Ao exame, encontra-se confusa, taquicárdica, com frequência cardíaca= 120 bpm, pressão arterial= 70 x 50 mmHg, febril (temperatura: 38,9°C), ictérica (3+/4) e com perfusão capilar periférica de 5s. A frequência respiratória é de 25 irpm e a oximetria, 90% em ar ambiente. O abdome está doloroso à palpação profunda em andar superior, sendo pior em hipocôndrio direito, mas sem descompressão dolorosa. Baseado nesse quadro clínico, qual a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colangite.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hepatite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pancreatite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colecistite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clinico apresentado e classico de colangite aguda grave, caracterizado pela presenca da Pentade de Reynolds. Essa pentade e composta pela Triade de Charcot (dor em hipocondrio direito, ictericia e febre), somada a dois sinais de choque septico: hipotensao/instabilidade hemodinamica e alteracao do nivel de consciencia (confusao mental). A paciente apresenta todos os cinco elementos: dor em hipocondrio direito, ictericia 3+/4+, febre de 38,9°C, hipotensao com ma perfusao periferica e confusao mental.\n\nAnalise das alternativas:\n\nAlternativa a: Correta. A colangite aguda e a infeccao bacteriana ascendente da arvore biliar decorrente de uma obstrucao, mais frequentemente por calculo no coledoco. Quando associada a choque e confusao mental (Pentade de Reynolds), trata-se de colangite aguda grave (supurativa), uma emergencia medica que requer reposicao volemica, antibioticoterapia e descompressao biliar urgente.\n\nAlternativa b: Incorreta. As hepatites agudas podem cursar com dor no hipocondrio direito, febre baixa e ictericia, mas nao se apresentam tipicamente com o quadro de sepse grave de foco biliar e instalacao rapida de instabilidade hemodinamica. A alteracao de consciencia por hepatite indicaria insuficiencia hepatica fulminante, que apresenta outros comemorativos clinico-laboratoriais e mecanismo fisiopatologico distinto.\n\nAlternativa c: Incorreta. A pancreatite aguda cursa classicamente com dor epigastrica em barra que irradia para o dorso e vomitos profusos. Embora formas graves possam evoluir com choque, a ictericia franca nao e um achado obrigatorio ou tipico do quadro inicial, a menos que haja coledocolitiase concomitante, mas o quadro global aponta primariamente para a infeccao das vias biliares.\n\nAlternativa d: Incorreta. A colecistite aguda e a inflamacao da vesicula biliar por obstrucao do ducto cistico, manifestando-se com dor em hipocondrio direito (Sinal de Murphy positivo) e febre. Como a via biliar principal permanece desobstruida na maioria dos casos, a ictericia nao costuma estar presente ou e muito discreta, nao preenchendo os criterios para a Pentade de Reynolds.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Colecistite e Colangite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:00.003Z"
+  },
+  {
+    "id": "AJUDA_0730fb9b-2bb5-44b1-aa9e-539c7612d661",
+    "originalId": "0730fb9b-2bb5-44b1-aa9e-539c7612d661",
+    "statement": "Principais efeitos colaterais em relação ao uso de nitroprussiato de sódio são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "náusea e vômitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fraqueza e cefaleia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tosse e rouquidão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aumento da pressão intraocular e zumbido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "bradicardia e taquicardia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O nitroprussiato de sódio é um potente vasodilatador de ação direta, agindo tanto no território arterial quanto no venoso. É amplamente utilizado em emergências hipertensivas devido ao seu início de ação imediato e curta duração. A compreensão de seus efeitos colaterais passa obrigatoriamente pela análise hemodinâmica e metabólica da droga.\n\nAlternativa a) Incorreta: Náuseas e vômitos são sintomas que podem ocorrer durante a administração do nitroprussiato, mas geralmente estão associados à redução excessivamente rápida da pressão arterial (hipotensão iatrogênica). Embora frequentes na prática clínica se a infusão não for bem titulada, não são classificados como os efeitos principais em termos de resposta fisiopatológica do sistema cardiovascular.\n\nAlternativa b) Incorreta: Fraqueza e cefaleia são sintomas inespecíficos que podem surgir com qualquer medicação que promova vasodilatação sistêmica ou redução da perfusão cerebral por queda da pressão arterial, não sendo a característica definidora para o nitroprussiato em questões de concurso.\n\nAlternativa c) Incorreta: Tosse é um efeito colateral clássico dos Inibidores da Enzima Conversora de Angiotensina (IECA), como o captopril e o enalapril, devido ao acúmulo de bradicinina. A rouquidão não possui associação descrita com o uso de nitroprussiato de sódio.\n\nAlternativa d) Incorreta: O nitroprussiato de sódio é conhecido por poder causar aumento da pressão intracraniana (devido à vasodilatação dos vasos cerebrais), o que exige cautela em pacientes com acidente vascular cerebral ou trauma. No entanto, o aumento da pressão intraocular e o zumbido não fazem parte do seu perfil de toxicidade ou efeitos adversos principais.\n\nAlternativa e) Correta: O uso do nitroprussiato de sódio provoca uma queda rápida da resistência vascular periférica. Como resposta compensatória fisiológica, o organismo ativa os barorreceptores, resultando em taquicardia reflexa para tentar manter o débito cardíaco. Por outro lado, em contextos de redução súbita da pré-carga e do volume sistólico (especialmente em pacientes hipovolêmicos), pode ocorrer a ativação do reflexo de Bezold-Jarisch, que culmina em bradicardia paradoxal e hipotensão profunda. Portanto, as oscilações de frequência cardíaca (taquicardia e, ocasionalmente, bradicardia) são repercussões hemodinâmicas fundamentais e esperadas durante o manejo desta droga. Vale lembrar também que, em casos de toxicidade por cianeto (metabólito da droga), podem ocorrer arritmias e instabilidade cardíaca adicional.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:00.003Z"
+  },
+  {
+    "id": "AJUDA_073b934a-9778-4920-80a4-7d19c6ac3ee3",
+    "originalId": "073b934a-9778-4920-80a4-7d19c6ac3ee3",
+    "statement": "Um paciente de 23 anos, homossexual masculino, procura atendimento em uma UBS relatando corrimento uretral purulento e disúria há 3 dias. Relata múltiplos parceiros sexuais nos últimos meses, sem uso regular de preservativo. \nNessa situação, a conduta mais adequada a ser tomada pela equipe de saúde é",
+    "options": [
+      {
+        "id": "A",
+        "text": "prescrever antibióticos e orientar sobre o uso de preservativo, restringindo a abordagem apenas aos aspectos biomédicos, evitando discussões sobre estigma ou sexualidade para não gerar constrangimento ao paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar imediatamente a investigação sorológica para Infecções Sexualmente Transmissíveis (IST) e notificar os parceiros sexuais do paciente antes de iniciar o tratamento, priorizando o controle epidemiológico da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "garantir tratamento sindrômico imediato para uretrite, solicitar exames complementares quando indicados, reforçar medidas de prevenção, oferecer aconselhamento sobre IST, acolhendo o paciente sem discriminação e respeitando sua orientação sexual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "oferecer suporte clínico inicial e propor o envolvimento da família como principal estratégia de apoio emocional, visando reduzir o risco de abandono do tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realizar a conduta médica indicada para uretrite e encaminhar o paciente ao serviço social, entendendo que as demandas relacionadas à sexualidade e ao enfrentamento do estigma devem ser trabalhadas prioritariamente por esse setor.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresentado é característico de uretrite (corrimento uretral purulento e disúria), situação em que o Ministério da Saúde preconiza a abordagem pelo Manejo Sindrômico das Infecções Sexualmente Transmissíveis (IST) na Atenção Primária à Saúde.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A abordagem meramente biomédica é insuficiente no cuidado em saúde sexual. O diálogo aberto sobre práticas sexuais, vulnerabilidades e estigma é fundamental para criar vínculo, promover a adesão ao tratamento e trabalhar a prevenção de novas infecções, não devendo ser evitado por receio infundado de constrangimento.\n\nAlternativa b: Incorreta. O tratamento sindrômico da descarga uretral deve ser iniciado imediatamente na consulta para alívio dos sintomas e quebra da cadeia de transmissão. A realização de testes e a notificação/convocação de parceiros são essenciais, mas nunca devem atrasar o início do tratamento farmacológico do paciente.\n\nAlternativa c: Correta. O manejo adequado reúne o tratamento farmacológico sindrômico e imediato (geralmente cobrindo Neisseria gonorrhoeae e Chlamydia trachomatis), a oferta de testes rápidos e sorologias (HIV, sífilis, hepatites virais), orientações sobre prevenção combinada e um acolhimento empático e livre de discriminação, respeitando a orientação sexual e a identidade do paciente.\n\nAlternativa d: Incorreta. O paciente é maior de idade e tem direito à confidencialidade e autonomia. Propor o envolvimento familiar para tratamento de uma IST viola o sigilo profissional, a privacidade do indivíduo e não condiz com a conduta médica prioritária.\n\nAlternativa e: Incorreta. O acolhimento das demandas de sexualidade, prevenção e desconstrução de estigmas faz parte do escopo da consulta médica e de enfermagem na Atenção Básica. O serviço social atua em situações de vulnerabilidade social específica, não devendo ser utilizado para terceirizar a comunicação sobre saúde sexual.\n\nGabarito: Alternativa c.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cervicites",
+      "Atenção Primária à Saúde",
+      "Sexualidade",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:00.003Z"
+  },
+  {
+    "id": "AJUDA_073e4239-8030-4a6c-989a-dd5d26fdcfe6",
+    "originalId": "073e4239-8030-4a6c-989a-dd5d26fdcfe6",
+    "statement": "Uma paciente de 63 anos apresenta emagrecimento de 12 kg em 3 meses, anorexia e plenitude pós-prandial precoce. Uma endoscopia digestiva alta mostra lesão vegetante e infiltrativa no antro gástrico. A biópsia caracteriza um adenocarcinoma gástrico. TC de abdome mostra ausência de metástases à distância e doença restrita ao estômago.\nA conduta cirúrgica mais apropriada para o caso será",
+    "options": [
+      {
+        "id": "A",
+        "text": "gastrectomia total com linfadenectomia D2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "gastrectomia subtotal distal com linfadenectomia D2.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "apenas gastrojejunostomia paliativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "radioterapia exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "endoscopia terapêutica com mucosectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nO caso descreve uma paciente com adenocarcinoma gástrico localizado no antro (porção distal do estômago), sem evidências de metástases a distância nos exames de estadiamento. O tratamento padrão para o câncer gástrico com intenção curativa baseia-se na ressecção cirúrgica com margens livres associada à linfadenectomia D2.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A gastrectomia total é indicada para tumores localizados no terço proximal (fundo ou cárdia) ou no corpo gástrico, e em casos de tumores do tipo difuso de Lauren que acometem grande extensão do órgão. Para tumores localizados no antro (distais), a gastrectomia subtotal é preferível por apresentar a mesma eficácia oncológica com menor morbidade pós-operatória e melhores resultados nutricionais.\n\nAlternativa b: Correta. Para lesões localizadas no antro gástrico, a gastrectomia subtotal distal é o procedimento de escolha, pois permite a ressecção do tumor com margem de segurança adequada (idealmente acima de 5 cm no tipo intestinal de Lauren). A linfadenectomia D2, que consiste na retirada dos linfonodos das cadeias N1 (perigástricos) e N2 (ao longo das artérias do tronco celíaco), é o padrão recomendado para o tratamento curativo devido ao melhor controle regional da doença e ao impacto na sobrevida.\n\nAlternativa c: Incorreta. A gastrojejunostomia é um procedimento estritamente paliativo, indicado apenas para pacientes com tumores irressecáveis ou metastáticos que apresentam obstrução pilórica. Como a TC de abdome não mostrou metástases e a doença parece restrita ao estômago, a conduta deve ser curativa (gastrectomia).\n\nAlternativa d: Incorreta. A radioterapia não é utilizada como modalidade terapêutica exclusiva com intenção curativa para o adenocarcinoma gástrico. O tratamento fundamental é a cirurgia. A radioterapia pode ser utilizada de forma adjuvante (após a cirurgia) em protocolos específicos de quimiorradioterapia, mas nunca isoladamente em substituição à ressecção.\n\nAlternativa e: Incorreta. A ressecção endoscópica (mucosectomia ou dissecção submucosa) é indicada apenas para o câncer gástrico precoce (restrito à mucosa), de tamanho pequeno, bem diferenciado e sem sinais de ulceração. A descrição de uma \"lesão vegetante e infiltrativa\" associada a uma perda ponderal significativa (12 kg) indica uma doença avançada, que exige tratamento cirúrgico radical.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:00.003Z"
+  },
+  {
+    "id": "AJUDA_07441174-a3ab-42a4-820e-e227cc1295f1",
+    "originalId": "07441174-a3ab-42a4-820e-e227cc1295f1",
+    "statement": "Uma paciente de 22 anos se apresenta no pronto-socorro com dor abdominal, de início insidioso, que começou na região do hipogástrio e irradiou-se para o quadrante inferior direito nas últimas 12 horas. Ela também relata náuseas, febre leve e anorexia. Diz estar fazendo tratamento para candidíase vaginal. Ao exame físico, há dor à palpação em fossa ilíaca direita, além de defesa muscular. Exame de sangue revela leucocitose acima de 15.000 mm³ O diagnóstico mais provável, dentre os abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ileite terminal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cisto roto de ovário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apendicite aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Salpingite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Gravidez ectópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descrito é clássico para apendicite aguda. A sequência de sintomas apresentada pela paciente de 22 anos é conhecida como a Cronologia de Murphy: a dor inicia-se de forma vaga na região periumbilical ou no hipogástrio (dor visceral) e, após algumas horas (no caso, 12 horas), localiza-se na fossa ilíaca direita (dor somática por irritação do peritônio parietal). A presença de anorexia (perda de apetite), náuseas, febre leve e leucocitose significativa (acima de 15.000/mm³) reforça o diagnóstico inflamatório/infeccioso agudo. A defesa muscular no quadrante inferior direito é um sinal de irritação peritoneal localizado.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA apendicite aguda é a causa mais comum de abdome agudo cirúrgico. A tríade de dor migratória, anorexia e leucocitose tem alto valor preditivo positivo. O fato de a paciente estar tratando uma candidíase vaginal funciona como um distrator na questão, tentando induzir o aluno a pensar em Doença Inflamatória Pélvica (DIP), mas a apresentação clínica da apendicite é muito mais condizente com o relato de migração da dor e defesa localizada.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Ileíte terminal: Geralmente está associada à Doença de Crohn. Embora possa causar dor na fossa ilíaca direita, costuma apresentar um quadro mais arrastado, com histórico de episódios anteriores, diarreia crônica ou perda de peso, e não costuma apresentar a migração clássica da dor da apendicite.\n\nb) Cisto roto de ovário: O início da dor no cisto roto costuma ser súbito e agudo, e não insidioso como descrito. Além disso, não costuma cursar com febre inicial ou leucocitose tão marcada, a menos que haja complicações como torção ou hemoperitônio volumoso.\n\nd) Salpingite: É um componente da Doença Inflamatória Pélvica (DIP). Embora cause dor pélvica e leucocitose, a dor geralmente é bilateral, associada a corrimento vaginal purulento (a candidíase causa corrimento grumoso, mas raramente evolui para salpingite) e dor à mobilização do colo uterino. A anorexia e a migração da dor do centro para a direita são incomuns na salpingite.\n\ne) Gravidez ectópica: Para este diagnóstico, seria esperado um histórico de atraso menstrual (amenorreia) e a dor costuma ser mais súbita em caso de ruptura. O quadro inflamatório com febre e leucocitose de 15.000/mm³ é mais sugestivo de um processo infeccioso como a apendicite do que de uma gestação ectópica íntegra ou rota inicial.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:02:00.003Z"
+  }
+]

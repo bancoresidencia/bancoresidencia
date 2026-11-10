@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_368c6193-59bc-44f0-8b10-30aa2e89546f",
+    "originalId": "368c6193-59bc-44f0-8b10-30aa2e89546f",
+    "statement": "Assinale a alternativa correta quanto à doença da imagem ao lado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Baciloscopia negativa exclui diagnóstico de doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sorologia anti-PGL1 negativa pode indicar doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Anatomopatológico com granuloma confirma a forma mais anérgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sorologia anti-PGL1 positiva confirma a doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A imagem ilustra lesões cutâneas hipocrômicas no dorso de um paciente sendo submetidas à avaliação de sensibilidade térmica por meio de um tubo de ensaio, exame propedêutico clássico para o diagnóstico de hanseníase.\n\nAlternativa A (Incorreta): A baciloscopia de raspado intradérmico possui baixa sensibilidade nas formas paucibacilares (indeterminada e tuberculoide), nas quais a carga bacilar é mínima. Dessa forma, um resultado negativo não afasta a presença de hanseníase, cujo diagnóstico é predominantemente clínico.\n\nAlternativa B (Correta): O teste sorológico anti-PGL1 detecta anticorpos contra o glicolipídeo fenólico 1 do Mycobacterium leprae. Como a produção desses anticorpos depende de alta carga bacilar, indivíduos com formas paucibacilares frequentemente apresentam sorologia anti-PGL1 negativa e, mesmo assim, são portadores da doença.\n\nAlternativa C (Incorreta): A presença de granulomas epitelioides bem organizados na biópsia traduz uma resposta imune celular competente, o que é típico do polo tuberculoide (polo hiperérgico). O polo anérgico corresponde à forma virchowiana, caracterizada pela ausência de imunidade celular eficaz e infiltrado de macrófagos vacuolizados repletos de bacilos (células de Virchow), sem formação de granulomas típicos.\n\nAlternativa D (Incorreta): A sorologia anti-PGL1 positiva reflete apenas a exposição ou infecção prévia pelo bacilo, sendo útil como marcador epidemiológico de risco ou para classificação operacional, mas não confirma isoladamente o diagnóstico de hanseníase sem a presença de sinais e sintomas clínicos compatíveis.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Hanseníase"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/1faed37785a5f84b55107deb37ee32070836d62195230325baf5f4c1d83a3ecc.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_368c6193-59bc-44f0-8b10-30aa2e89546f_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:37.143Z"
+  },
+  {
+    "id": "AJUDA_368ebdf6-b7f4-4de1-b1a1-ea3c0b78d639",
+    "originalId": "368ebdf6-b7f4-4de1-b1a1-ea3c0b78d639",
+    "statement": "Sobre as infecções bacterianas da pele, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A erisipela é uma infecção da derme de natureza predominantemente estafilocócica e tem, como fator desencadeante, a perda da barreira cutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Na escarlatina, um sinal característico é a presença de petéquias no palato, conhecido como sinal de Filatov.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O impetigo representa uma infecção de alta contagiosidade das camadas superficiais da pele.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O ectima, geralmente, provoca sintomas sistêmicos e bacteremia e, ao involuir, não deixa cicatriz.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O eritrasma é caracterizado por lesões com uma intensa atividade flogística e está localizado, preferencialmente, em áreas intertriginosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Abaixo está a análise detalhada de cada alternativa, abordando os conceitos de dermatologia infecciosa fundamentais para provas de residência:\n\nAlternativa A (Incorreta): A erisipela é, de fato, uma infecção da derme (especialmente derme superficial) com participação importante de vasos linfáticos, iniciada por quebra de barreira cutânea. No entanto, sua etiologia é predominantemente estreptocócica (Streptococcus pyogenes do grupo A de Lancefield) e não estafilocócica. O Staphylococcus aureus é o principal agente relacionado à celulite, que acomete tecidos mais profundos.\n\nAlternativa B (Incorreta): A alternativa confunde sinais clínicos. Na escarlatina, as petéquias no palato são comuns, mas o Sinal de Filatov corresponde à palidez perioral (ao redor da boca) que contrasta com o rubor das bochechas. Outro sinal famoso é o de Pastia (acentuação do exantema nas linhas de dobra, como axilas e cotovelos).\n\nAlternativa C (Correta): O impetigo é a infecção bacteriana superficial mais comum na infância. É altamente contagioso, podendo ser do tipo não bolhoso (caracterizado por crostas melicéricas) ou bolhoso (causado por toxinas esfoliativas do S. aureus). Por atingir apenas a epiderme, a camada mais superficial, geralmente não deixa cicatrizes.\n\nAlternativa D (Incorreta): O ectima é considerado uma forma profunda de impetigo que atravessa a epiderme e atinge a derme. Devido a essa profundidade, ele classicamente deixa cicatrizes após a cura. Embora possa causar dor local e sintomas inflamatórios, não é a causa mais comum de bacteremia sistêmica quando comparado a infecções mais profundas ou necrotizantes.\n\nAlternativa E (Incorreta): O eritrasma não é uma infecção caracterizada por intensa atividade flogística (dor, calor, rubor e edema). É uma infecção bacteriana superficial causada pela Corynebacterium minutissimum, apresentando-se como manchas acastanhadas, assintomáticas ou levemente pruriginosas, em áreas de dobra. O diagnóstico diferencial é feito com a Lâmpada de Wood, onde o eritrasma apresenta fluorescência vermelho-coral.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Piodermites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:37.143Z"
+  },
+  {
+    "id": "AJUDA_368f0742-5c22-47e3-87df-353ad9c26a7e",
+    "originalId": "368f0742-5c22-47e3-87df-353ad9c26a7e",
+    "statement": "Homem de 19 anos dá entrada no departamento de emergência após ser encontrado inconsciente em seu quarto. Familiares encontraram frascos vazios de uma medicação de uso contínuo pertencente à sua mãe ao lado do paciente. Ao exame físico: pressão arterial: 85 x 50 mmHg; frequência cardíaca: 55 bpm; frequência respiratória: 8 irpm; temperatura central: 34,2 ºC; SatO2 em ar ambiente: 88%; escala de Glasgow: 8 (ocular: 2; verbal: 2; motora: 4); pupilas isocóricas e reflexo fotomotor preservado, porém lentificadas; presença de bolhas subepidérmicas tensas e estéreis localizadas nas regiões de pressão (calcanhares e joelhos); restante do tegumento sem alterações, sem sudorese excessiva ou rubor. Gasometria arterial (em ar ambiente): pH: 7,24; PCO2: 62 mmHg; PO2: 65 mmHg; bicarbonato: 25 mEq/L. Exames séricos: ureia: 35 mg/dL; creatinina: 0,8 mg/dL; sódio: 140 mEq/L; potássio: 4,0 mEq/L; glicemia capilar: 98 mg/dL. Níveis plasmáticos de acetaminofeno e salicilato indetectáveis. Eletrocardiograma: bradicardia sinusal, sem alargamento do complexo QRS ou prolongamento do intervalo QTc. Considerando a etiologia mais provável para intoxicação aguda desse paciente, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a acidificação urinária necessita ser estabelecida nas primeiras horas de atendimento, visto que o medicamento causador do coma se comporta como uma base fraca, o que garantirá sua rápida excreção pelos néfrons de maneira otimizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a fisiopatologia da hipotensão e bradicardia decorre do bloqueio direto dos receptores colinérgicos no sistema nervoso central e periférico, desenhando o diagnóstico de uma manifestação anticolinérgica passível de tratamento com infusão de fisostigmina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a administração de múltiplas doses de carvão ativado aumenta expressivamente a depuração sistêmica deste fármaco nesse caso de toxicidade grave, constituindo uma abordagem terapêutica valiosa, desde que a via aérea do paciente esteja protegida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "o painel toxicológico urinário qualitativo determina o diagnóstico da substância depressora e possui alta correlação com a gravidade do quadro, devendo atuar como o principal exame balizador para guiar as dosagens dos antídotos em ambiente hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "flumazenil e naloxona são indicados como terapia específica para a classe de medicamento possivelmente responsável por esse coma, podendo reverter o rebaixamento do nível de consciência e evitar a intubação orotraqueal nesse cenário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro é de intoxicação por depressor do SNC, com coma, bradicardia, hipotensão, hipotermia e depressão respiratória. Há acidose respiratória (pH 7,24, PCO2 62, bicarbonato normal) e hipoxemia por hipoventilação. As bolhas tensas e estéreis em áreas de pressão (calcanhares e joelhos) são as \"bolhas dos barbitúricos\" (coma bullae). Não há sinais anticolinérgicos nem simpatomiméticos, e o ECG não mostra alargamento de QRS nem QTc longo, o que afasta antidepressivo tricíclico. Os níveis de acetaminofeno e salicilato estão indetectáveis. A etiologia mais provável é o barbitúrico, por exemplo o fenobarbital, medicação de uso contínuo da mãe (epilepsia). O fenobarbital é um ácido fraco, tem baixa ligação proteica, baixo volume de distribuição e eliminação renal e recirculação, o que o torna passível de eliminação aumentada.\n\nAnálise das alternativas:\n\na) Incorreta. O fenobarbital é ácido fraco, não base fraca. O que aumenta sua eliminação é a alcalinização urinária com bicarbonato (pH urinário de 7,5 a 8), que gera o aprisionamento iônico. Acidificar a urina diminuiria a excreção e é contraindicado.\n\nb) Incorreta. Não há síndrome anticolinérgica: o paciente tem bradicardia, sem taquicardia, e não há midríase, pele seca e ruborizada nem retenção urinária. Além disso, a fisostigmina é arriscada, podendo causar convulsões e assistolia. O quadro é de depressão do SNC por potencialização GABA-A.\n\nc) Correta. O carvão ativado em múltiplas doses interrompe a recirculação êntero-entérica e aumenta a depuração de fármacos de absorção lenta e baixa ligação proteica. Isso vale para fenobarbital, carbamazepina, teofilina, dapsona e quinina. Só é seguro se a via aérea estiver protegida (intubação, neste paciente com Glasgow 8) e sem íleo ou obstrução intestinal. Em casos graves, a hemodiálise também pode ser considerada.\n\nd) Incorreta. O painel toxicológico urinário qualitativo é um imunoensaio com falso-positivos e falso-negativos, que não se correlaciona com a gravidade nem orienta doses. O diagnóstico é clínico, e não existe antídoto específico para barbitúricos, apenas suporte.\n\ne) Incorreta. Flumazenil (benzodiazepínicos) e naloxona (opioides) não atuam sobre barbitúricos. O flumazenil pode até precipitar convulsões. O tratamento é suporte ventilatório, com intubação indicada aqui (Glasgow 8, hipercapnia e hipoxemia), suporte hemodinâmico, alcalinização urinária e carvão ativado.\n\nResposta: letra (c).",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Intoxicações Exógenas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:37.143Z"
+  },
+  {
+    "id": "AJUDA_36903213-a9f7-4f4e-87e1-bf69f55eccae",
+    "originalId": "36903213-a9f7-4f4e-87e1-bf69f55eccae",
+    "statement": "Entre as características associadas à utilização de cânula nasal de alto fluxo (CNAF) no paciente portador de bronquiolite viral aguda, qual destas NÃO é verdadeira?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fornecimento de mistura gasosa aquecida e umidificada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diminuição do trabalho respiratório e do espaço morto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Elevada pressão de distensão transmitida aos alvéolos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Menor necessidade de sedativos para ajuste da interface.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Cânula Nasal de Alto Fluxo (CNAF) é um método de suporte ventilatório não invasivo que tem ganhado destaque no tratamento da bronquiolite viral aguda por ser bem tolerado e eficaz. Abaixo, analisamos cada alternativa:\n\nAlternativa a: Está correta. Uma das características fundamentais da CNAF é a utilização de um sistema de aquecimento e umidificação ativa. Isso permite que fluxos elevados de gás (oxigênio e ar comprimido) sejam administrados sem causar ressecamento da mucosa, dor ou lesão do sistema mucociliar, mantendo o conforto do paciente.\n\nAlternativa b: Está correta. A CNAF promove a lavagem (washout) do gás carbônico acumulado no espaço morto anatômico da nasofaringe, substituindo-o por gás fresco. Além disso, ao fornecer um fluxo que muitas vezes iguala ou excede o pico de fluxo inspiratório do paciente, a CNAF diminui a necessidade de esforço muscular inspiratório, o que reduz significativamente o trabalho respiratório.\n\nAlternativa c: Esta é a alternativa incorreta e, portanto, o gabarito. Embora a CNAF gere um certo grau de pressão positiva nas vias aéreas (efeito PEEP-like), essa pressão é considerada baixa e variável. Por ser um sistema aberto (onde há escape de ar pela boca e pelas narinas), a CNAF não consegue manter uma elevada pressão de distensão alveolar de forma constante como ocorre no CPAP ou na ventilação mecânica convencional. A pressão gerada costuma ficar entre 2 a 5 cmH2O, dependendo do fluxo e do tamanho das cânulas.\n\nAlternativa d: Está correta. A interface da CNAF consiste em prongas nasais simples que não exigem um selo hermético ou fixações apertadas no rosto da criança, ao contrário das máscaras de ventilação não invasiva (VNI). Essa característica torna o dispositivo muito mais confortável e melhor tolerado por lactentes, reduzindo drasticamente a necessidade de uso de sedativos para que o paciente aceite a interface.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:37.143Z"
+  },
+  {
+    "id": "AJUDA_36976d40-9402-48f9-8f48-dffd50b7c99c",
+    "originalId": "36976d40-9402-48f9-8f48-dffd50b7c99c",
+    "statement": "O uso e o abuso de substâncias entre jovens é um problema de saúde pública. De forma crescente, adolescentes vêm utilizando uma ampla variedade de substâncias com efeitos nocivos sobre o seu desenvolvimento. Sobre esse tema, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uso de substância modelado pelos pais, conflito familiar, falta de supervisão parental e eventos estressantes de vida estão entre alguns dos fatores psicossociais de risco que medeiam o desenvolvimento de transtornos por uso de substâncias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O uso de álcool em adolescentes geralmente resulta nas mesmas sequelas observadas em adultos com uso crônico, como convulsões por abstinência, síndrome de Korsakoff, afasia de Wernicke ou cirrose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Os efeitos a curto prazo do ingrediente ativo da maconha, y-tetra-hidrocanabinol (THC), incluem, entre outros, prejuízo na memória e na aprendizagem, percepção distorcida, redução na capacidade de resolução de problemas, aumento da frequência cardíaca, ansiedade e ataques de pânico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Adolescentes que frequentam raves costumam usar drogas recreativas como MDMA. Este é um derivado da metanfetamina e é uma substância sintética com propriedades estimulantes e alucinógenas. Seu uso pode resultar em boca seca, aumento da frequência cardíaca, fadiga, espasmo muscular e hipertermia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Correta. Os fatores psicossociais desempenham um papel crucial na gênese do abuso de substâncias. O ambiente familiar, incluindo o exemplo dos pais (modelagem), a dinâmica de conflitos, a negligência ou baixa monitorização e a exposição a traumas ou estresse crônico são preditores bem estabelecidos na literatura médica para o risco de desenvolvimento de transtornos por uso de substâncias na adolescência.\n\nAlternativa b) Incorreta (Gabarito). Esta é a alternativa incorreta porque as sequelas crônicas citadas, como a cirrose hepática, a síndrome de Korsakoff e a encefalopatia de Wernicke, são complicações que geralmente exigem décadas de consumo abusivo e continuado de álcool para se manifestarem. No adolescente, o padrão de consumo costuma ser o \"binge drinking\" (beber em excesso em uma única ocasião). Embora o álcool prejudique o desenvolvimento cerebral e a neuroplasticidade nessa fase, as complicações clínicas imediatas estão mais ligadas a comportamentos de risco, acidentes, intoxicação aguda, violência e prejuízos cognitivos, e não a doenças degenerativas crônicas típicas do alcoolismo de longa data em adultos.\n\nAlternativa c) Correta. O delta-9-tetra-hidrocanabinol (THC) atua nos receptores canabinoides centrais e periféricos. No curto prazo, a intoxicação por maconha pode causar prejuízos na memória de trabalho, redução da atenção e da capacidade de julgamento. Além disso, os efeitos simpatomiméticos e as alterações na percepção podem levar a manifestações físicas, como taquicardia e quadros psiquiátricos agudos, incluindo ansiedade severa e ataques de pânico.\n\nAlternativa d) Correta. O MDMA (3,4-metilenodioximetanfetamina), conhecido como ecstasy, é um derivado anfetamínico com propriedades estimulantes e entactógenas/alucinógenas. Seu mecanismo de ação envolve a liberação maciça de serotonina, noradrenalina e dopamina. Os efeitos colaterais descritos, como xerostomia (boca seca), taquicardia, espasmos musculares (incluindo o trismo/bruxismo) e a hipertermia (que pode ser grave e fatal em ambientes de festas), são característicos do uso desta substância.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:37.143Z"
+  },
+  {
+    "id": "AJUDA_369c4b49-9261-45b7-93dd-ff2f3026247d",
+    "originalId": "369c4b49-9261-45b7-93dd-ff2f3026247d",
+    "statement": "Um homem de 58 anos, pedreiro, com exposição a tabaco por 35 maços-ano e exposição ocupacional a poeiras, relata dispneia progressiva há 2 anos e duas exacerbações nos últimos 12 meses, sendo uma com necessidade de corticoide sistêmico. Ao exame físico, apresenta tórax em barril, murmúrio vesicular globalmente diminuído e expiração prolongada. A espirometria pós-broncodilatador mostrou: VEF₁/CVF = 0,62; VEF₁ = 48% do previsto; DLCO reduzido. Na avaliação de sintomas e risco, apresenta mMRC = 3 e duas exacerbações no último ano, sendo uma grave. O paciente relata que usa LAMA isolado, mas mantém sintomas importantes. A conduta mais adequada segundo as recomendações GOLD 2024–2025, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "aumentar a dose do LAMA isolado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "manter LAMA e iniciar corticoterapia inalatória isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar associação LABA + LAMA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "iniciar LABA + LAMA + ICS (“terapia tripla”).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "solicitar TC de alta resolução antes de alterar a terapêutica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um quadro de Doença Pulmonar Obstrutiva Crônica (DPOC) confirmado pela espirometria (VEF1/CVF de 0,62, ou seja, menor que 0,70). A gravidade da obstrução, baseada no VEF1 de 48% do previsto, classifica-o como GOLD 3 (obstrução grave). Para a definição da conduta, as diretrizes GOLD 2024/2025 utilizam a classificação ABE. Como o paciente possui mMRC igual a 3 (muito sintomático) e teve duas exacerbações no último ano, sendo uma delas grave (necessitou de corticoide sistêmico/hospitalização), ele é classificado no Grupo E (Exacerbador). O paciente já está em uso de um LAMA (antimuscarínico de longa ação), porém mantém sintomas importantes e alto risco de novas exacerbações.\n\nAlternativa a) Incorreta. Na DPOC, os broncodilatadores de longa ação possuem doses fixas e padronizadas. Quando o paciente não atinge o controle dos sintomas ou continua exacerbando com monoterapia, a conduta recomendada não é aumentar a dose da mesma droga, mas sim realizar o escalonamento para a associação de diferentes classes de medicamentos (terapia combinada).\n\nAlternativa b) Incorreta. O uso de corticoide inalatório (ICS) isolado é contraindicado no tratamento da DPOC, pois não trata a broncoconstrição de forma eficaz e aumenta o risco de pneumonia. Além disso, a combinação de LAMA com ICS sem um LABA (beta-2 agonista de longa ação) associado não é uma terapia preconizada pelas diretrizes atuais.\n\nAlternativa c) Incorreta. A associação LABA + LAMA (dupla broncodilatação) é uma excelente opção para pacientes do Grupo E. No entanto, o paciente em questão já falhou com a monoterapia (LAMA), é muito sintomático (mMRC 3) e possui histórico de exacerbação grave. Nesses casos, a transição direta para a terapia tripla é frequentemente preferida para oferecer o máximo benefício clínico.\n\nAlternativa d) Correta. Segundo as atualizações GOLD 2024-2025, para pacientes do Grupo E que persistem com sintomas e exacerbações apesar do uso de um broncodilatador de longa ação, a terapia tripla (LABA + LAMA + ICS) é a conduta mais adequada. Esta associação demonstrou superioridade na redução de novas exacerbações e, o mais importante, na redução da mortalidade para este perfil específico de paciente (exacerbador grave e sintomático).\n\nAlternativa e) Incorreta. Embora a tomografia de alta resolução possa auxiliar na avaliação de fenótipos (como enfisema ou bronquiectasias), ela não é necessária para a tomada de decisão terapêutica imediata. O ajuste da medicação inalatória deve ser baseado na classificação clínica de sintomas e no risco de exacerbação, que já estão claramente definidos no enunciado.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:37.143Z"
+  },
+  {
+    "id": "AJUDA_36a9a591-781f-4cd6-97a4-9353b22ffe46",
+    "originalId": "36a9a591-781f-4cd6-97a4-9353b22ffe46",
+    "statement": "Homem de 58 anos, portador de cirrose hepática por hepatite C, é admitido no pronto-socorro após episódio de hematêmese volumosa iniciado há cerca de 1 hora. Refere história de ascite recorrente e edema de membros inferiores.\nExame físico:\n• Estado geral comprometido, sudorese fria.\n• PA: 82/48 mmHg\n• FC: 118 bpm\n• FR: 24 irpm\n• SatO₂: 92% em ar ambiente\n• Abdome distendido, com ascite moderada e circulação colateral abdominal.\n• Pele ictérica, sem sinais de encefalopatia no momento.\nCom base nesse quadro, qual deve ser a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar carvedilol parenteral devido à taquicardia, aproveitando seu efeito de redução da pressão portal para prevenir novos episódios de sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar endoscopia digestiva alta imediatamente, antes da estabilização clínica, para identificar e tratar a fonte do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar passagem de sonda nasogástrica e iniciar propranolol, considerando seu efeito na redução da pressão portal e prevenção secundária do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar antibioticoterapia profilática com norfloxacino associado a lactulona por via enteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Estabilizar clinicamente com reposição volêmica e iniciar octreotide em infusão contínua, visando controle do sangramento varicoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descreve um paciente com cirrose hepática apresentando uma urgência médica clássica: hemorragia digestiva alta (HDA) varicosa, manifestada por hematêmese volumosa e sinais claros de choque hipovolêmico (hipotensão, taquicardia, sudorese fria).\n\nAnálise da alternativa correta (E):\n\nA prioridade absoluta em qualquer paciente com sangramento digestivo e instabilidade hemodinâmica é a estabilização clínica (o \"ABC\" da reanimação). Isso inclui garantir vias aéreas, oxigenação e, crucialmente, a reposição volêmica cautelosa (geralmente com cristaloides) para restaurar a perfusão tecidual, sem exceder na oferta para não aumentar a pressão portal. Associado a isso, o início imediato de drogas vasoativas esplâncnicas, como o octreotide (ou terlipressina e somatostatina), é fundamental. Essas medicações promovem vasoconstrição da circulação portal, reduzindo o fluxo para as varizes e facilitando o controle do sangramento antes mesmo da endoscopia.\n\nAnálise das alternativas incorretas:\n\nAlternativa A: O carvedilol é um betabloqueador utilizado na profilaxia primária e secundária de varizes esofágicas. No entanto, ele é absolutamente contraindicado na fase aguda do sangramento. O paciente já está hipotenso e taquicárdico (mecanismo compensatório); o uso de um betabloqueador nesse momento agravaria o choque, impediria a resposta taquicárdica compensatória e levaria ao óbito.\n\nAlternativa B: Embora a endoscopia digestiva alta (EDA) seja o padrão-ouro para diagnóstico e tratamento (ligadura elástica ou escleroterapia), ela nunca deve ser realizada antes da estabilização hemodinâmica. Realizar o procedimento em um paciente em choque aumenta drasticamente o risco de aspiração, parada cardiorrespiratória e morte durante o exame. A recomendação é que a EDA seja feita nas primeiras 12 horas, após o paciente estar estável.\n\nAlternativa C: Assim como o carvedilol, o propranolol é um betabloqueador indicado apenas para profilaxia, sendo contraindicado no sangramento agudo e no estado de choque. Além disso, a passagem de sonda nasogástrica não é mais considerada uma prioridade ou rotina obrigatória, podendo causar desconforto e não alterando o prognóstico final.\n\nAlternativa D: A antibioticoterapia profilática é, de fato, obrigatória em cirróticos com HDA para reduzir a translocação bacteriana e a mortalidade. Contudo, o norfloxacino (via oral) não é a melhor escolha para um paciente instável e com sangramento ativo (geralmente prefere-se ceftriaxone venoso). Além disso, a lactulona é usada para tratar encefalopatia hepática, o que o paciente não apresenta no momento, e essa conduta ignora a necessidade vital de estabilização volêmica e controle do sangramento.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa",
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:37.143Z"
+  },
+  {
+    "id": "AJUDA_36aee036-2f55-43b5-9443-26133da947de",
+    "originalId": "36aee036-2f55-43b5-9443-26133da947de",
+    "statement": "Durante o exame neurológico de um paciente adulto, foram observados:\n• estrabismo divergente ao teste de motricidade ocular;\n• assimetria da mímica facial;\n• elevação assimétrica do palato mole à fonação.\nCom base nesses achados de nervos cranianos, avalie as afirmativas a seguir.\nI. A paralisia do III par craniano pode cursar com estrabismo divergente, podendo estar associada à ptose e à midríase.\nII. Na lesão central do VII par craniano, ocorre acometimento de toda a hemiface ipsilateral; já a lesão periférica tende a poupar os movimentos da musculatura frontal e o fechamento ocular.\nIII. O comprometimento dos nervos IX e X pode se manifestar por elevação assimétrica do palato e alteração da voz (disfonia).\nEstá correto o que se afirma em",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e II, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "I, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender a questão, vamos analisar cada uma das afirmativas com base na anatomia e semiologia dos nervos cranianos:\n\nAfirmativa I: Correta. O III par craniano (nervo oculomotor) é responsável pela inervação da maioria dos músculos extrínsecos do olho (reto medial, reto superior, reto inferior e oblíquo inferior), além do músculo elevador da pálpebra superior e das fibras parassimpáticas que realizam a constrição pupilar. Na sua paralisia, o músculo reto lateral (inervado pelo VI par) atua sem oposição, levando o globo ocular para fora (estrabismo divergente). A perda da função do elevador da pálpebra causa ptose palpebral e a perda das fibras parassimpáticas resulta em midríase (pupila dilatada).\n\nAfirmativa II: Incorreta. Os conceitos apresentados estão invertidos. Na lesão periférica do VII par (nervo facial), ocorre o acometimento de toda a hemiface ipsilateral à lesão, incluindo a testa (músculo frontal) e o fechamento do olho (músculo orbicular dos olhos). Na lesão central (supranuclear), como em casos de AVC, a musculatura da testa e a capacidade de fechar os olhos são preservadas. Isso ocorre porque a porção do núcleo do nervo facial que controla a parte superior da face recebe inervação motora de ambos os hemisférios cerebrais (inervação bilateral), enquanto a parte inferior recebe inervação apenas do hemisfério contralateral.\n\nAfirmativa III: Correta. O nervo glossofaríngeo (IX par) e o nervo vago (X par) atuam em conjunto na inervação motora do palato mole e da faringe. Uma lesão desses nervos impede a elevação simétrica do palato durante a fonação (o palato desvia-se para o lado sadio, conhecido como sinal de Vernet ou sinal da cortina). Além disso, o nervo vago inerva a laringe através do nervo laríngeo recorrente; portanto, sua lesão causa paralisia de prega vocal, resultando em voz anasalada ou rouquidão (disfonia).\n\nAnálise das alternativas:\nA alternativa (a) está incorreta porque a afirmativa II está errada.\nA alternativa (b) está incorreta porque a afirmativa II está errada.\nA alternativa (c) está correta, pois as afirmativas I e III estão tecnicamente perfeitas.\nA alternativa (d) está incorreta porque inclui a afirmativa II.\nA alternativa (e) está incorreta porque a afirmativa III também é verdadeira.\n\nGabarito: Letra (c).",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Anatomia, Fisiologia e Semiologia Neurológica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:37.143Z"
+  },
+  {
+    "id": "AJUDA_36af09b8-7514-4c5c-a693-d1b46c511a2f",
+    "originalId": "36af09b8-7514-4c5c-a693-d1b46c511a2f",
+    "statement": "Paciente de 24 anos apresenta corrimento vaginal e prurido. O exame microscópico revela tricomoníase. Qual é o tratamento indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antifúngico oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Metronidazol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Antibiótico tópico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antivirais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A tricomoníase é uma infecção sexualmente transmissível (IST) causada pelo protozoário flagelado *Trichomonas vaginalis*. O quadro clínico clássico envolve corrimento amarelo-esverdeado, bolhoso, com odor fétido e prurido, além de achados como o \"colo em framboesa\" na colposcopia.\n\nAlternativa (a) Incorreta: Os antifúngicos, como o fluconazol ou a nistatina, são indicados para o tratamento da candidíase vulvovaginal. A candidíase é causada por fungos, que possuem uma estrutura celular diferente dos protozoários, tornando os antifúngicos ineficazes contra o *Trichomonas*.\n\nAlternativa (b) Correta: O metronidazol é um medicamento da classe dos nitroimidazóis e representa o tratamento de escolha para a tricomoníase. Ele atua interferindo na síntese de DNA do patógeno. Os protocolos do Ministério da Saúde e do CDC recomendam o tratamento por via oral, preferencialmente em dose única de 2 g ou o regime de 500 mg de 12 em 12 horas por 7 dias. É imprescindível tratar o(s) parceiro(s) sexual(is) simultaneamente, mesmo que estejam assintomáticos, para evitar a reinfecção e quebrar a cadeia de transmissão.\n\nAlternativa (c) Incorreta: O tratamento tópico (cremes ou óvulos vaginais) não é recomendado como terapia de primeira linha para a tricomoníase. Isso ocorre porque o parasita pode se alojar em glândulas parauretrais (glândulas de Skene) e glândulas de Bartholin, locais onde o tratamento tópico não alcança níveis terapêuticos adequados para a cura definitiva, resultando em altas taxas de recidiva.\n\nAlternativa (d) Incorreta: Antivirais são medicamentos específicos para combater infecções causadas por vírus, como o herpes simples ou o HPV. Como a tricomoníase é causada por um protozoário (um organismo unicelular complexo), os antivirais não possuem qualquer mecanismo de ação contra este agente.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:37.143Z"
+  },
+  {
+    "id": "AJUDA_36b2f479-e8bc-4598-820b-d4e0c263f003",
+    "originalId": "36b2f479-e8bc-4598-820b-d4e0c263f003",
+    "statement": "De acordo com o checklist de cirurgia segura proposto pela Organização Mundial de Saúde (OMS), qual dos itens a seguir faz parte da etapa de time-out?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliação de via aérea difícil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Medição da PA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Contagem de compressas utilizadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Confirmação do procedimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O Checklist de Cirurgia Segura da Organização Mundial da Saúde (OMS) é estruturado em três momentos fundamentais: Sign-in (antes da indução anestésica), Time-out (antes da incisão cirúrgica) e Sign-out (antes de o paciente sair da sala de operação).\n\nAlternativa a: Incorreta. A avaliação de via aérea difícil e do risco de broncoaspiração é um item checado na etapa de Sign-in, permitindo que a equipe de anestesia esteja previamente preparada com materiais de via aérea avançada caso ocorram dificuldades na intubação.\n\nAlternativa b: Incorreta. A confirmação do funcionamento dos monitores (como oximetria de pulso e medição de pressão arterial) é realizada antes da indução anestésica, ou seja, na etapa de Sign-in.\n\nAlternativa c: Incorreta. A contagem de compressas, agulhas e instrumentais cirúrgicos faz parte da etapa de Sign-out, realizada ao final do procedimento antes de o paciente deixar a sala cirúrgica, para evitar a retenção inadvertida de corpos estranhos na cavidade cirúrgica.\n\nAlternativa d: Correta. O Time-out é uma pausa obrigatória realizada por toda a equipe imediatamente antes da incisão da pele. Nela, são confirmados verbalmente a identidade do paciente, o sítio cirúrgico correto e o procedimento que será realizado, além da verificação do antibiótico profilático, revisão de passos críticos e disponibilidade de exames de imagem.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Perioperatório",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:37.143Z"
+  }
+]

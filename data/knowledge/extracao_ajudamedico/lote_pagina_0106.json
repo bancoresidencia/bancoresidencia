@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_1c8db800-bfe1-45e8-8228-efd17f77381e",
+    "originalId": "1c8db800-bfe1-45e8-8228-efd17f77381e",
+    "statement": "Jovem está há 4 meses com quadro clínico de dor abdominal, episódios diários de diarreia sanguinolenta e com muco, perda de peso, tenesmo, febre intermitente, astenia e fadiga. À colonoscopia, apresenta mucosa inflamada, com acometimento simétrico, com úlceras, friável e recoberta de exsudato mucopurulento, com acometimento desde o canal anal se estendendo de forma contínua até o sigmoide, com clara demarcação com a mucosa normal do cólon descendente. A análise histopatológica apresenta distorção arquitetural difusa de criptas e infiltrado inflamatório transmucoso com plasmocitose basal. Com base no caso clínico descrito, a melhor hipótese diagnóstica e o respectivo tratamento adequado são",
+    "options": [
+      {
+        "id": "A",
+        "text": "doença de Crohn; azatioprina e corticoide sistêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "retocolite ulcerativa idiopática; aminossalicitato e corticoide sistêmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "febre paratifoide; cefalosporina de terceira geração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "colite pseudomembranosa; metronidazol oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "doença celíaca; dieta sem glúten por toda a vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A descrição clínica e os achados complementares apontam diretamente para o diagnóstico de Retocolite Ulcerativa Idiopática (RCU). Três pontos fundamentais no enunciado confirmam essa hipótese: o acometimento contínuo e simétrico a partir do reto (proctite ascendente), a clara demarcação entre a área afetada e a mucosa normal (característica marcante da RCU em oposição à Doença de Crohn) e o achado histopatológico de distorção de criptas com plasmocitose basal, que define uma inflamação intestinal crônica.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Na Doença de Crohn, o acometimento costuma ser descontínuo (lesões saltatórias), pode atingir qualquer parte do trato gastrointestinal (com preferência pelo íleo terminal) e frequentemente poupa o reto. A descrição de continuidade desde o canal anal é típica da RCU. Além disso, a histopatologia de Crohn poderia apresentar granulomas não caseificantes, o que não foi relatado.\n\nAlternativa b: Correta. Os sintomas de tenesmo e diarreia com sangue sugerem inflamação retal. A colonoscopia confirmou a continuidade e a simetria da lesão a partir do reto. O tratamento de indução para casos de atividade clínica moderada a grave utiliza corticoides sistêmicos para controle rápido da inflamação, associados aos aminossalicilatos (como a mesalazina ou sulfassalazina), que são fundamentais tanto na indução quanto na manutenção da remissão.\n\nAlternativa c: Incorreta. A febre paratifoide é uma infecção bacteriana sistêmica aguda causada pela Salmonella Paratyphi. O tempo de evolução de 4 meses e as alterações arquiteturais crônicas nas criptas intestinais são incompatíveis com um processo infeccioso agudo deste tipo.\n\nAlternativa d: Incorreta. A colite pseudomembranosa é causada pela toxina do Clostridioides difficile, geralmente associada ao uso prévio de antibióticos. O achado clássico na colonoscopia são as pseudomembranas (placas amareladas aderidas à mucosa) e não uma inflamação ulcerada contínua de longa duração com distorção de criptas.\n\nAlternativa e: Incorreta. A doença celíaca é uma enteropatia que afeta o intestino delgado devido à sensibilidade ao glúten. Ela se manifesta com atrofia de vilosidades e má absorção intestinal, não sendo causa de colite com sangramento retal, úlceras no sigmoide e tenesmo.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:45.172Z"
+  },
+  {
+    "id": "AJUDA_1c9434bb-0a97-4548-9a8a-e6dae20ff9cc",
+    "originalId": "1c9434bb-0a97-4548-9a8a-e6dae20ff9cc",
+    "statement": "Sobre o esôfago de Barrett, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ablação por radiofrequência (RFA) pode erradicar displasia de alto grau.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Esofagectomia está indicada diante do achado de adenocarcinoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso de crioterapia está associado a elevado risco de estenose esofágica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os pacientes possuem elevado risco absoluto de desenvolvimento de câncer.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O esôfago de Barrett é uma condição em que o epitélio escamoso normal do esôfago distal é substituído por epitélio colunar metaplásico (metaplasia intestinal), geralmente como consequência da doença do refluxo gastroesofágico crônica. Abaixo, analisamos cada alternativa:\n\nAlternativa A (Correta): A ablação por radiofrequência (RFA) é uma técnica endoscópica consagrada para o tratamento do esôfago de Barrett com displasia. Ela utiliza energia térmica para destruir o epitélio metaplásico e displásico, permitindo a regeneração do epitélio escamoso normal. É altamente eficaz na erradicação da displasia de alto grau, reduzindo significativamente o risco de progressão para o adenocarcinoma.\n\nAlternativa B (Incorreta): O achado de adenocarcinoma não é uma indicação absoluta e imediata de esofagectomia. Casos de adenocarcinoma precoce, restritos à camada mucosa (T1a), podem ser tratados de forma curativa por meio de técnicas endoscópicas, como a ressecção endoscópica da mucosa (EMR) ou a dissecção submucosa endoscópica (ESD). A esofagectomia é um procedimento de alta complexidade e morbidade, reservado para tumores que invadem a submucosa (T1b), casos com suspeita de comprometimento linfonodal ou quando o tratamento endoscópico não é viável.\n\nAlternativa C (Incorreta): A crioterapia é uma modalidade de ablação que utiliza gases frios (como nitrogênio líquido) para causar a descamação do tecido metaplásico. Embora qualquer procedimento ablativo no esôfago possa causar complicações, a crioterapia é conhecida por ter um perfil de segurança favorável, com um risco de estenose esofágica geralmente menor ou comparável ao da radiofrequência, não sendo caracterizada por um risco elevado de estenose na prática clínica atual.\n\nAlternativa D (Incorreta): Embora o esôfago de Barrett seja o principal precursor do adenocarcinoma esofágico e aumente o risco relativo de câncer, o risco absoluto de progressão é considerado baixo. Para pacientes com Barrett sem displasia, a taxa de progressão anual para câncer gira em torno de 0,1% a 0,5%. A maioria dos pacientes diagnosticados com esôfago de Barrett falecerá de outras causas antes de desenvolver neoplasia esofágica maligna.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:45.172Z"
+  },
+  {
+    "id": "AJUDA_1c9538e7-ab16-4d23-87da-783d1a58363f",
+    "originalId": "1c9538e7-ab16-4d23-87da-783d1a58363f",
+    "statement": "Com base na análise da radiografia reproduzida ao lado, realizada em incidência anteroposterior e em posição ortostática, é possível afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "foi realizada lobectomia pulmonar inferior direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "há um abscesso no pulmão direito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "há hidropneumotórax à direita.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "há uma consolidação na metade inferior do pulmão direito.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A análise da radiografia de tórax revela um achado clássico e fundamental para o diagnóstico: a presença de um nível hidroaéreo no hemitórax direito. Em uma radiografia realizada em posição ortostática (em pé), a gravidade faz com que o líquido se deposite na base e o ar suba, criando uma linha horizontal perfeitamente reta que separa a radiopacidade inferior (líquido) da radiotransparência superior (ar).\n\nAlternativa (a) Incorreta: Uma lobectomia pulmonar inferior direita resultaria em alterações volumétricas, como o desvio de estruturas mediastinais para o lado da cirurgia ou a elevação da cúpula diafragmática para compensar o espaço, mas não produziria esse nível hidroaéreo extenso que atravessa o hemitórax.\n\nAlternativa (b) Incorreta: Um abscesso pulmonar é uma lesão dentro do parênquima do pulmão. Embora também possa apresentar um nível hidroaéreo, ele geralmente é uma imagem cavitária delimitada por uma parede própria e envolta por um halo de consolidação inflamatória. Na imagem apresentada, o nível hidroaéreo se estende por toda a largura da caixa torácica, indicando que o conteúdo está livre no espaço pleural.\n\nAlternativa (c) Correta: O hidropneumotórax é a coexistência de ar (pneumotórax) e líquido (derrame pleural) dentro do espaço pleural. No raio X em ortostatismo, a interface entre o ar e o líquido perde a curvatura habitual do derrame pleural simples (sinal do menisco ou Curva de Damoiseau) e torna-se uma linha horizontal reta. Além disso, é possível observar enfisema subcutâneo à direita (presença de ar nos tecidos moles da parede torácica), o que frequentemente está associado a traumas ou procedimentos pleurais que causam hidropneumotórax.\n\nAlternativa (d) Incorreta: Uma consolidação (como na pneumonia) apresenta-se como uma opacidade heterogênea ou homogênea que preenche os espaços aéreos, muitas vezes com broncogramas aéreos. Ela não apresenta uma linha superior horizontal perfeita com ausência total de parênquima pulmonar (ar livre) acima dela, como observado no caso.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Derrame Pleural",
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/475b1b01a4e54f639725445fe5cc0c9a72bd55286d27fb16ff8d5ef90a8f52fe.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1c9538e7-ab16-4d23-87da-783d1a58363f_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:45.848Z"
+  },
+  {
+    "id": "AJUDA_1ca07b4c-f842-42d0-a89d-dbf85ded9e29",
+    "originalId": "1ca07b4c-f842-42d0-a89d-dbf85ded9e29",
+    "statement": "RN, 38 semanas de gestação, apresenta vômitos “biliosos” cerca de 12 horas após iniciar alimentação com leite materno. Exame físico: bom estado geral; afebril; discretamente desidratado; ictérico; abdome distendido, com peristalse aumentada e indolor à palpação. Radiografia simples de abdome a seguir. A principal hipótese diagnóstica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "atresia duodenal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "atresia jejunoileal",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "má rotação intestinal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "volvo intestinal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico e da imagem:\n\nO caso clínico descreve um recém-nascido a termo com vômitos biliosos e distensão abdominal. A presença de vômitos biliosos em um neonato é sempre um sinal de alerta para obstrução intestinal distal à ampola de Vater (segunda porção do duodeno). O fato de o abdome estar distendido corrobora a hipótese de uma obstrução mais baixa (no jejuno ou íleo), pois obstruções muito altas, como a duodenal, costumam apresentar abdome escavado ou apenas distensão epigástrica. A icterícia observada pode ser explicada pelo aumento da circulação entero-hepática de bilirrubina devido à estase intestinal.\n\nAnálise da radiografia:\n\nA imagem radiográfica mostra múltiplas alças intestinais dilatadas e a presença de vários níveis hidroaéreos distribuídos pelo abdome. Este padrão é característico de obstrução intestinal mecânica distal. Diferente de uma obstrução alta, onde veríamos apenas uma ou duas bolhas de gás, aqui vemos diversas áreas de distensão, o que aponta para o intestino delgado (jejuno ou íleo).\n\nAlternativa A - Atresia duodenal: Incorreta. Na atresia duodenal, o sinal radiológico clássico é o da dupla bolha (estômago e duodeno dilatados), com ausência de gás no restante do trato digestivo. Como a obstrução é muito proximal, o recém-nascido não costuma apresentar distensão abdominal generalizada.\n\nAlternativa B - Atresia jejunoileal: Correta. Esta é a principal causa de obstrução intestinal em recém-nascidos. Diferente da atresia duodenal, que é uma falha de recanalização, a atresia jejunoileal é geralmente causada por um acidente vascular isquêmico intrauterino. O quadro clínico de vômitos biliosos associado a uma distensão abdominal importante e o achado radiológico de múltiplas alças dilatadas com níveis hidroaéreos são típicos desta patologia.\n\nAlternativa C - Má rotação intestinal: Incorreta. A má rotação intestinal por si só pode ser assintomática. Ela se torna uma emergência quando evolui para volvo de intestino médio. Embora possa causar vômitos biliosos, o padrão radiológico de múltiplas alças dilatadas com níveis hidroaéreos bem definidos é mais sugestivo de uma obstrução fixa e completa como a atresia.\n\nAlternativa D - Volvo intestinal: Incorreta. O volvo é uma complicação da má rotação que leva à isquemia intestinal. Clinicamente, o recém-nascido apresenta uma rápida deterioração do estado geral, sinais de toxemia, dor abdominal intensa e instabilidade hemodinâmica. A questão descreve que o paciente está em bom estado geral, o que torna o volvo uma hipótese menos provável em comparação à atresia. Além disso, o raio X do volvo muitas vezes mostra um abdome com pouco gás (presença de ar apenas no estômago e pouco no duodeno).",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Cirurgia Infantil",
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/3bdee87b33421f5b4e64299c86a085774b20e1d191e4cbbfafb31b963aa9a6a5.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_1ca07b4c-f842-42d0-a89d-dbf85ded9e29_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:46.371Z"
+  },
+  {
+    "id": "AJUDA_1ca89f1b-11f7-423f-8ff9-8ee41f1db265",
+    "originalId": "1ca89f1b-11f7-423f-8ff9-8ee41f1db265",
+    "statement": "Sobre o diabetes melito, analise as assertivas a seguir:\n\nI. A taxa de glicação da fração A1c da hemoglobina A (HbA1c) é expressa em porcentagem e se relaciona com a média das glicemias diárias nas últimas 3 semanas.\nII. É recomendada a meta de HbA1c <7,0% para indivíduos com qualquer tipo de diabetes, para prevenção de complicações macrovasculares em longo prazo, desde que não incorra em hipoglicemias graves e frequentes, exceto em idosos.\nIII. Em idosos com diabetes melito, com objetivo de evitar hipoglicemia, uma meta de HbA1c <8,0% deve considerar quando houver status funcional comprometido, síndrome de fragilidade, presença de comorbidades que limitem a expectativa de vida e/ou alteração da função cognitiva.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise detalhada das assertivas:\n\nAssertiva I: INCORRETA. A hemoglobina glicada (HbA1c) reflete a média das glicemias de um período mais longo, geralmente entre 60 e 90 dias (2 a 3 meses), e não apenas das últimas 3 semanas. Isso ocorre porque a glicação é um processo irreversível que dura toda a vida útil da hemácia, que é de aproximadamente 120 dias. O exame que reflete a média glicêmica de um período mais curto (cerca de 2 a 3 semanas) é a frutosamina.\n\nAssertiva II: CORRETA. A meta-padrão de HbA1c para adultos não gestantes é de < 7,0%. O controle rigoroso visa reduzir complicações microvasculares (retinopatia, nefropatia) e, em longo prazo, também demonstra benefícios na redução de eventos macrovasculares (infarto, AVC), fenômeno conhecido como memória metabólica ou efeito legado. O tratamento deve ser sempre balanceado para evitar o risco de hipoglicemias graves, e as metas devem ser individualizadas, especialmente na população idosa.\n\nAssertiva III: CORRETA. No tratamento de idosos, o princípio da individualização é fundamental. Para idosos frágeis, com múltiplas comorbidades, expectativa de vida limitada ou comprometimento cognitivo/funcional, metas muito rígidas trazem mais riscos (quedas, síncopes e arritmias por hipoglicemia) do que benefícios. Nesses casos, as diretrizes da Sociedade Brasileira de Diabetes (SBD) e da American Diabetes Association (ADA) recomendam metas mais flexíveis, como HbA1c abaixo de 8,0% ou até 8,5%, priorizando a segurança e a qualidade de vida.\n\nConclusão: Como as assertivas II e III estão corretas, a alternativa certa é a letra (c).",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Saúde do Idoso",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:46.371Z"
+  },
+  {
+    "id": "AJUDA_1cbf5de4-08d9-40a9-bd0e-b3e7aaf9986d",
+    "originalId": "1cbf5de4-08d9-40a9-bd0e-b3e7aaf9986d",
+    "statement": "Uma gestante com 28 semanas tem o diagnóstico de infecção por parvovírus B19.\nA melhor maneira de avaliar a principal complicação fetal nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "realização do doppler da artéria cerebral média;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "avaliação ultrassonográfica da movimentação fetal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pesquisa de células fetais livres no sangue materno;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "medida menor do fundo uterino ao exame clínico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realização do teste de Coombs direto no sangue materno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A infecção pelo parvovírus B19 durante a gestação é uma condição preocupante devido ao tropismo do vírus pelas células progenitoras eritroides (precursoras das hemácias) na medula óssea fetal. Isso resulta na interrupção da eritropoiese, levando à principal complicação fetal dessa patologia: a anemia fetal grave. Se não monitorada, essa anemia pode evoluir para hidropisia fetal (ascite, derrame pleural, edema cutâneo) e óbito.\n\nExplicação das alternativas:\n\nAlternativa a) Correta. O Doppler da artéria cerebral média (ACM) é o padrão-ouro não invasivo para o rastreio e acompanhamento da anemia fetal. Em fetos anêmicos, ocorre uma diminuição da viscosidade sanguínea e uma resposta compensatória de preservação cerebral (shunting), o que aumenta a velocidade do fluxo sanguíneo. O parâmetro utilizado é o Pico de Velocidade Sistólica (PVS); valores acima de 1,5 múltiplo da mediana (MoM) para a idade gestacional indicam alto risco de anemia moderada a grave.\n\nAlternativa b) Incorreta. A contagem da movimentação fetal (mobilograma) é um método de avaliação do bem-estar fetal geral, mas é subjetivo e tardio. Alterações na movimentação só ocorrem em estados de comprometimento fetal avançado ou hipóxia grave, não sendo sensível o suficiente para detectar precocemente a anemia por parvovírus.\n\nAlternativa c) Incorreta. A pesquisa de células fetais livres no sangue materno é utilizada principalmente para triagem de anomalias genéticas (NIPT) ou para identificar hemorragia fetomaterna (como no teste de Kleihauer-Betke). Não possui papel no diagnóstico ou seguimento da anemia fetal infecciosa.\n\nAlternativa d) Incorreta. A medida do fundo uterino menor que o esperado sugere restrição de crescimento intrauterino ou oligodrâmnio. Na infecção por parvovírus, a complicação típica é a hidropisia, que frequentemente cursa com polidrâmnio e aumento do volume fetal devido ao edema, o que poderia, na verdade, aumentar a medida do fundo uterino.\n\nAlternativa e) Incorreta. O teste de Coombs direto é realizado no sangue do recém-nascido (ou fetal via cordocentese) para detectar anticorpos aderidos às hemácias em casos de anemia hemolítica imune (como na incompatibilidade Rh). No caso do parvovírus, a anemia é por aplasia medular (falta de produção) e não por destruição imunológica. Além disso, o teste de Coombs indireto é o que é realizado no sangue materno para pesquisa de anticorpos irregulares.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:46.371Z"
+  },
+  {
+    "id": "AJUDA_1cc21745-3718-41bc-8175-9cf1038752bd",
+    "originalId": "1cc21745-3718-41bc-8175-9cf1038752bd",
+    "statement": "Um homem de 58 anos de idade, tabagista e etilista crônico, apresenta hematêmese volumosa e melena há 12 horas. Está taquicárdico (FC=110bpm) e hipotenso (PA=90/60mmHg). Após estabilização inicial com acesso venoso calibroso, reposição volêmica e oxigenação, foi solicitada endoscopia digestiva alta de urgência que evidenciou úlcera duodenal com vaso visível não sangrante. Nesse caso, a conduta endoscópica MAIS indicada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Injeção de adrenalina diluída no leito da úlcera.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Injeção de adrenalina diluída, associada a tratamento térmico ou mecânico (ex.: clipe hemostático).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cauterização térmica isolada da lesão, sem injeção prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não realizar intervenção endoscópica, pois não há sangramento ativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo endoscópico da Hemorragia Digestiva Alta (HDA) não varicosa, especificamente originada por uma úlcera duodenal. Para resolvê-la, é fundamental conhecer a Classificação de Forrest, que estratifica o risco de ressangramento e orienta a conduta terapêutica.\n\nO achado endoscópico descrito como vaso visível não sangrante classifica a lesão como Forrest IIa. As lesões de alto risco para ressangramento são:\n- Forrest Ia: Sangramento arterial em jato.\n- Forrest Ib: Sangramento venoso/arterial difuso (em porejamento).\n- Forrest IIa: Vaso visível não sangrante.\n- Forrest IIb: Coágulo aderido à base da úlcera.\n\nPara as lesões Forrest Ia, Ib e IIa, o tratamento endoscópico é obrigatório, pois o risco de ressangramento sem intervenção chega a 40-50% nos casos de vaso visível.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A injeção isolada de adrenalina diluída (monoterapia) promove vasoconstrição e efeito mecânico de tamponamento, o que ajuda a limpar o campo e a diminuir o sangramento ativo momentaneamente. No entanto, estudos demonstram que a adrenalina isolada é inferior à terapia combinada, apresentando maiores taxas de recidiva hemorrágica. Ela não deve ser usada como tratamento único quando outros métodos estão disponíveis.\n\nAlternativa b) Correta. A terapia combinada é o padrão-ouro para o tratamento de úlceras com estigmas de alto risco (Forrest Ia, Ib e IIa). O uso da adrenalina facilita a visualização e o controle inicial, enquanto o segundo método (térmico, como a eletrocoagulação, ou mecânico, como o clipe) garante a obliteração definitiva do vaso. Essa associação reduz significativamente as taxas de ressangramento, a necessidade de cirurgia de urgência e a mortalidade.\n\nAlternativa c) Incorreta. Embora métodos térmicos ou mecânicos isolados sejam superiores à adrenalina isolada, a diretriz atual recomenda a associação de dois métodos para maximizar a eficácia do procedimento em lesões de alto risco. A injeção prévia de adrenalina frequentemente facilita a aplicação do clipe ou da termocoagulação por reduzir o sangramento ou o edema local.\n\nAlternativa d) Incorreta. O fato de não haver sangramento ativo no momento do exame (vaso visível não sangrante) não exclui a necessidade de intervenção. Pelo contrário, o Forrest IIa indica que o vaso está exposto e, a qualquer momento, o tampão plaquetário pode se desprender, causando uma nova hemorragia volumosa. Não intervir nesta lesão seria negligenciar um risco de 50% de ressangramento em poucas horas.\n\nEm resumo, diante de uma úlcera Forrest IIa em um paciente que apresentou instabilidade hemodinâmica, a conduta mais segura e recomendada é a terapia endoscópica combinada.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori",
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:46.371Z"
+  },
+  {
+    "id": "AJUDA_1ccd4b00-4ad1-4da2-8c92-47b5fbb853d0",
+    "originalId": "1ccd4b00-4ad1-4da2-8c92-47b5fbb853d0",
+    "statement": "Homem de 50 anos, pedreiro, foi atendido em ambulatório de especialidade, há 4 meses, com queixa de lombociatalgia e dificuldade de exercer atividades laborais. Realizou ressonância magnética da coluna lombar, que evidenciou hérnia discal no nível L4-L5. Antes da data do retorno para mostrar os resultados dos exames, apresentou perda de sensibilidade no períneo, anestesia em sela e incontinência urinária. Devido a esses novos sintomas, procurou uma Unidade de Pronto Atendimento.\nConsiderando-se o quadro clínico descrito, qual é a conduta adequada para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antecipar retorno ao ambulatório de especialidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar tratamento com corticoide epidural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internar com prescrição de analgésicos associado a relaxantes musculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar ao serviço de emergência para avaliar indicação cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Trata-se de síndrome da cauda equina (SCE), complicação de hérnia discal lombar volumosa, geralmente central, que comprime múltiplas raízes nervosas abaixo do cone medular.\n\nO paciente tem hérnia L4-L5 conhecida e evoluiu com sinais de alarme (\"red flags\"):\n- Anestesia em sela (perda de sensibilidade perineal, região S2-S5);\n- Incontinência urinária, por disfunção vesical neurogênica (retenção com incontinência por transbordamento é o mais comum);\n- Lombociatalgia prévia, frequentemente bilateral nesses casos.\n\nOutros achados possíveis são redução do tônus esfincteriano anal, disfunção sexual e déficit motor progressivo nos membros inferiores.\n\nA SCE é emergência neurocirúrgica. A conduta é:\n- Encaminhar imediatamente a serviço com neurocirurgia ou ortopedia de coluna;\n- Confirmar a compressão por ressonância magnética de urgência;\n- Realizar descompressão cirúrgica (discectomia/laminectomia) o mais precocemente possível, idealmente nas primeiras 48 horas, preferencialmente antes de 24 horas.\n\nO atraso na descompressão aumenta o risco de sequelas permanentes, como incontinência urinária e fecal, disfunção sexual e déficit sensitivo-motor. A Unidade de Pronto Atendimento não dispõe desses recursos, por isso o paciente deve ser transferido para um serviço de emergência.\n\nAnálise das alternativas:\n\na) Incorreta. Antecipar o retorno ambulatorial não é adequado. O quadro é emergencial, e qualquer espera, mesmo de poucos dias, compromete o prognóstico neurológico.\n\nb) Incorreta. A infiltração epidural com corticoide é opção para dor radicular persistente sem déficit neurológico grave. Ela não descomprime as raízes e não tem papel na SCE.\n\nc) Incorreta. Analgésicos e relaxantes musculares fazem parte do tratamento conservador da lombociatalgia sem sinais de alarme. Internar apenas para sintomáticos atrasa a descompressão, que é o único tratamento eficaz.\n\nd) Correta. Diante de suspeita de SCE, o paciente deve ser encaminhado com urgência ao serviço de emergência para avaliação do especialista e indicação de cirurgia descompressiva precoce.\n\nPonto-chave para prova: lombalgia ou hérnia discal acompanhada de anestesia em sela, disfunção esfincteriana ou déficit motor progressivo indica cirurgia de urgência. Não se deve optar por tratamento conservador nesses casos.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Doenças da Coluna Vertebral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:46.371Z"
+  },
+  {
+    "id": "AJUDA_1ccd5ffb-65d9-4677-be20-dc434fa5dc67",
+    "originalId": "1ccd5ffb-65d9-4677-be20-dc434fa5dc67",
+    "statement": "O art. 7º da Lei nº 8.080/1990, que trata da organização do Sistema Único de Saúde (SUS), estabelece princípios para as ações e serviços de saúde. \n\nDe acordo com o princípio da “participação da comunidade” (inciso VIII), assinale a alternativa que melhor o representa na prática.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Centralização das decisões relacionadas a políticas de saúde nos gestores governamentais, priorizando a eficiência administrativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Desenvolvimento de ações de saúde com base em evidências cientificas, sem considerar a percepção e as necessidades da população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Implementação de conselhos e conferências de saúde, que garantem espaços de discussão e participação da comunidade na formulação e no controle social das políticas de saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Priorização de atendimentos individuais e especializados, sem a necessidade de considerar as demandas e as características da comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO Artigo 7º da Lei nº 8.080/1990 estabelece as diretrizes e princípios do Sistema Único de Saúde (SUS). O inciso VIII destaca a Participação da Comunidade como um dos pilares fundamentais, garantindo que a sociedade civil tenha voz ativa na gestão da saúde pública. Esse princípio é o que chamamos de Controle Social.\n\nAnálise das Alternativas:\n\nAlternativa A: INCORRETA. A centralização de decisões é o oposto do que o SUS preconiza. O sistema é orientado pela descentralização político-administrativa, na qual o poder de decisão é compartilhado entre as esferas de governo (União, Estados e Municípios), sempre com a participação popular, e não apenas restrito a gestores governamentais em busca de eficiência isolada.\n\nAlternativa B: INCORRETA. Embora as evidências científicas sejam cruciais para a prática médica e para a gestão em saúde, o princípio da participação da comunidade exige obrigatoriamente que a percepção, a cultura e as necessidades locais da população sejam ouvidas e integradas ao planejamento das ações.\n\nAlternativa C: CORRETA. Esta alternativa descreve perfeitamente a operacionalização do princípio. A participação da comunidade foi detalhada pela Lei nº 8.142/1990, que instituiu os Conselhos de Saúde (órgãos permanentes e deliberativos em cada esfera de governo) e as Conferências de Saúde (que ocorrem a cada quatro anos). Esses espaços garantem que o cidadão participe da formulação de estratégias e da fiscalização dos gastos e ações em saúde.\n\nAlternativa D: INCORRETA. O SUS não prioriza apenas atendimentos individuais e especializados; ele foca na atenção integral e na promoção da saúde coletiva. Além disso, a premissa de não considerar as demandas da comunidade fere diretamente o princípio do inciso VIII, que exige justamente o envolvimento comunitário para que o sistema responda às necessidades reais da população.\n\nGabarito: Letra (c).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:46.371Z"
+  },
+  {
+    "id": "AJUDA_1cd0cccb-e95e-4ae2-9a0e-2f8286be6f46",
+    "originalId": "1cd0cccb-e95e-4ae2-9a0e-2f8286be6f46",
+    "statement": "Adolescente de 18 anos queixa-se de sentir, há uma semana, obstrução nasal à direita, secreção purulenta por essa fossa nasal e cefaleia. Exame fisico: febre alta, edema palpebral importante, perda visual, diminuição na motilidade ocular e sinais meníngeos.\nA suspeita diagnóstica correta é de",
+    "options": [
+      {
+        "id": "A",
+        "text": "trombose de seio cavernoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "celulite periorbital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "abscesso subperiosteal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "abscesso orbital.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão apresenta um quadro clínico de rinossinusite aguda que evoluiu com complicações graves. O paciente apresenta sinais de acometimento orbital (edema palpebral, perda visual e diminuição da motilidade ocular) associados a sinais de gravidade sistêmica e neurológica (febre alta e sinais meníngeos).\n\nAnálise das alternativas:\n\nAlternativa a) Trombose do seio cavernoso (Correta): Esta é a complicação intracraniana mais temida das infecções sinusais e orbitais. O seio cavernoso recebe a drenagem venosa da face e da órbita. A presença de oftalmoplegia (diminuição da motilidade ocular), perda visual e, crucialmente, sinais meníngeos e febre alta indica que a infecção ultrapassou os limites da órbita e atingiu o sistema nervoso central. A trombose do seio cavernoso frequentemente causa paralisia de nervos cranianos (III, IV, V1, V2 e VI) e irritação meníngea, o que justifica perfeitamente o quadro descrito.\n\nAlternativa b) Celulite periorbital: Também chamada de celulite pré-septal, é uma infecção limitada aos tecidos moles à frente do septo orbital. Nesses casos, o paciente apresenta edema e eritema palpebral, mas a motilidade ocular, a acuidade visual e os reflexos pupilares permanecem normais. Não há sinais meníngeos nem proptose.\n\nAlternativa c) Abscesso subperiosteal: Ocorre quando há acúmulo de pus entre a parede óssea da órbita (geralmente a lâmina papirácea) e a periórbita. Pode causar deslocamento do globo ocular (proptose) e limitação da motilidade, mas raramente evolui com sinais meníngeos ou perda visual súbita tão grave sem que haja progressão para complicações mais profundas ou intracranianas.\n\nAlternativa d) Abscesso orbital: Caracteriza-se por uma coleção purulenta dentro da gordura orbital (pós-septal). Causa proptose acentuada, dor à movimentação ocular, diminuição da motilidade e risco de perda visual por compressão do nervo óptico. No entanto, o diagnóstico de abscesso orbital isolado não justifica os sinais meníngeos apresentados pelo paciente, que indicam obrigatoriamente extensão intracraniana.\n\nEm resumo, a tríade de sintomas orbitais graves (oftalmoplegia e perda visual), somada a sinais de irritação meníngea e febre alta, direciona o diagnóstico para a trombose do seio cavernoso.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:13:46.371Z"
+  }
+]

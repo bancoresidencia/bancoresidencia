@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_b3fc8290-d869-45fd-af63-51aa232cae1c",
+    "originalId": "b3fc8290-d869-45fd-af63-51aa232cae1c",
+    "statement": "Recém-nascido, 36 horas de vida no alojamento conjunto, apresenta perda ponderal de 4% desde o nascimento e icterícia neonatal zona II de Kramer ao exame físico. Recebe seio materno em livre demanda. \n\nChecadas tipagens sanguíneas: \n- Mãe: A, Rh negativo e Coombs indireto negativo; \n- RN: B, Rh positivo e Coombs direto negativo. \n\nRealizada coleta de bilirrubina total e frações com 37 horas de vida devido à icterícia neonatal: \n- Bilirrubina total: 7 mg/dL \n- Bilirrubina indireta: 6,8 mg/dL \n- Bilirrubina direta: 0,2 mg/dL \n\nEm relação aos resultados de exames e a provável etiologia, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Icterícia neonatal fisiológica, por redução de glicuronil transferase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Icterícia neonatal fisiológica, por redução da circulação entero-hepática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doença hemolítica neonatal devido incompatibilidade ABO.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doença hemolítica neonatal devido incompatibilidade Rh.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO recém-nascido tem 36-37 horas de vida e apresenta icterícia na Zona II de Kramer (cabeça, pescoço e tronco até o umbigo), o que clinicamente sugere níveis de bilirrubina total entre 5 e 12 mg/dL. Os exames confirmam uma Bilirrubina Total (BT) de 7 mg/dL, com predomínio da fração indireta (BI: 6,8 mg/dL). \n\nAo avaliarmos o nomograma de Bhutani (ferramenta que define o risco de hiperbilirrubinemia significativa baseada na idade em horas), o valor de 7 mg/dL com 37 horas de vida posiciona o paciente na zona de baixo risco. Além disso, a perda ponderal de 4% é considerada normal para o segundo dia de vida.\n\nDISCUSSÃO DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): A icterícia fisiológica é a causa mais comum de icterícia no período neonatal. Ela ocorre devido a um desequilíbrio temporário entre a produção e a eliminação da bilirrubina. Um dos principais mecanismos é a imaturidade hepática, especificamente a atividade reduzida da enzima uridina difosfoglucuronosiltransferase (glicuronil transferase), responsável por conjugar a bilirrubina indireta em direta para que possa ser excretada. Como o recém-nascido é saudável, os níveis de bilirrubina estão em zona de baixo risco e os testes de hemólise são negativos, este é o diagnóstico mais provável.\n\nAlternativa B (INCORRETA): Embora a icterícia fisiológica também envolva o ciclo entero-hepático, o mecanismo correto é o AUMENTO da circulação entero-hepática, e não a sua redução. No recém-nascido, a baixa flora bacteriana intestinal e a presença da enzima beta-glucuronidase fazem com que a bilirrubina conjugada seja desconjugada no intestino e reabsorvida para o sangue, elevando os níveis de bilirrubina indireta.\n\nAlternativa C (INCORRETA): Existe incompatibilidade sanguínea ABO (Mãe A e RN B), porém o Coombs Direto é negativo e os níveis de bilirrubina são baixos para o tempo de vida. Na doença hemolítica por ABO, embora o Coombs possa ser negativo ou fracamente positivo em alguns casos, espera-se uma icterícia mais precoce (nas primeiras 24 horas) e níveis mais elevados de bilirrubina, o que não condiz com o quadro de baixo risco apresentado.\n\nAlternativa D (INCORRETA): Embora a mãe seja Rh negativo e o recém-nascido seja Rh positivo, a doença hemolítica por Rh é descartada pelos resultados dos exames imuno-hematológicos. O Coombs Indireto da mãe é negativo (indicando que ela não está sensibilizada) e o Coombs Direto do recém-nascido também é negativo (indicando que não há anticorpos maternos aderidos às hemácias do bebê causando hemólise). Para haver doença hemolítica por Rh, o Coombs Direto obrigatoriamente deveria ser positivo.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:18.703Z"
+  },
+  {
+    "id": "AJUDA_b40daa1d-3f7c-483d-a001-b89d48176699",
+    "originalId": "b40daa1d-3f7c-483d-a001-b89d48176699",
+    "statement": "Mulher de 62 anos de idade realizou uma ultrassonografia de abdome superior ao qual se evidenciou um pólipo em vesícula biliar de 1,5 cm, com fluxo sanguíneo detectado ao doppler. Não apresenta sintomas. Qual é a melhor conduta para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colecistectomia por via videolaparoscópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Colecistectomia por via aberta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir ultrassonografia de abdome superior em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repetir ultrassonografia de abdome superior em 12 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o manejo de pólipos da vesícula biliar, um tema frequente em provas de cirurgia geral e gastroenterologia. Para definir a conduta, devemos avaliar o tamanho do pólipo, a presença de sintomas e os fatores de risco para malignidade.\n\nO ponto central desta questão é o tamanho do pólipo: 1,5 cm. De acordo com as diretrizes das principais sociedades (como a Sociedade Europeia de Radiologia Gastrointestinal e Abdominal – ESGAR), pólipos da vesícula biliar com diâmetro igual ou superior a 10 mm (1 cm) possuem uma indicação formal de colecistectomia, mesmo em pacientes assintomáticos, devido ao risco elevado de transformação maligna ou por já representarem um carcinoma de vesícula precoce. Além disso, a presença de fluxo ao Doppler sugere que a lesão é vascularizada, o que reforça a natureza neoplásica (seja benigna ou maligna) em detrimento de um pseudopólipo de colesterol.\n\nAnálise das alternativas:\n\na) Correta. A colecistectomia por via videolaparoscópica é o tratamento de escolha para pólipos maiores que 1 cm. A via laparoscópica é o padrão-ouro por oferecer menor dor pós-operatória, recuperação mais rápida e excelentes resultados estéticos e funcionais, sendo segura mesmo quando há suspeita de pólipos neoplásicos.\n\nb) Incorreta. A via aberta (laparotomia) não é a conduta inicial padrão para pólipos de vesícula sem evidência clara de invasão de órgãos vizinhos ou metástases. Reservamos a via aberta para casos em que há contraindicação técnica para laparoscopia ou quando a suspeita de câncer avançado exige uma cirurgia oncológica de maior porte (como a colecistectomia radical), o que não é o caso descrito inicialmente.\n\nc) Incorreta. O acompanhamento ultrassonográfico (conduta expectante) é indicado apenas para pólipos menores que 10 mm que não apresentam fatores de risco. Para um pólipo de 15 mm, o risco de câncer é proibitivo para apenas observar; a cirurgia é mandatória.\n\nd) Incorreta. Segue a mesma lógica da alternativa C. Um intervalo de 12 meses seria perigoso para uma lesão desse tamanho, permitindo a progressão de uma possível neoplasia. Além disso, a idade da paciente (62 anos) já é considerada um fator de risco adicional para malignidade em pólipos da vesícula (geralmente, o corte de risco é idade acima de 50 ou 60 anos, dependendo da diretriz).",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:18.703Z"
+  },
+  {
+    "id": "AJUDA_b40dc256-f45f-4949-be4a-05444580b392",
+    "originalId": "b40dc256-f45f-4949-be4a-05444580b392",
+    "statement": "Homem de 67 anos, portador de diabetes tipo 2 e doença arterial crônica, chega à emergência com histórico de tratamento ambulatorial de pneumonia há 3 dias, apresentando-se com PAM 58 mmHg, FC 112 bpm e lactato de 32 mg/dL. Após 1 hora, já recebeu 15 mL/kg de ringer lactato, com redução do tempo de enchimento capilar de 7 para 4 segundos. O ultrassom POCUS mostra veia cava inferior com colapso < 50% e linhas B bilaterais nos pulmões. O paciente permanece com PAM 58 mmHg apesar da reposição inicial.\n\nConsiderando o manejo atual do choque séptico e as evidências sobre ressuscitação guiada por hemodinâmica e POCUS, qual deve ser a próxima conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Continuar expansão volêmica com cristaloide com alvo de 30 mL/kg em 3 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reavaliar lactato arterial para decisão de expansão volêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar infusão de albumina 20% para otimizar pré-carga.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar noradrenalina imediatamente e evitar mais fluidos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Aguardar resposta clínica de melhora da TEC e da PAM > 65mmHg, em seguida iniciar vasopressor.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o manejo avançado do choque séptico, integrando as recomendações do Surviving Sepsis Campaign com a avaliação dinâmica à beira-leito via POCUS (Point-of-Care Ultrasound).\n\nO paciente apresenta um quadro clínico de choque séptico (hipotensão e hiperlactatemia de origem infecciosa). Ele já recebeu uma carga inicial de 15 mL/kg de cristaloides. A avaliação por POCUS é o ponto-chave para a decisão: a presença de veia cava inferior (VCI) com colapsabilidade reduzida (inferior a 50%) e a identificação de múltiplas linhas B bilaterais nos pulmões indicam que o paciente atingiu seu limite de tolerância a fluidos. As linhas B representam edema intersticial, sinalizando que a oferta adicional de volume pode causar congestão pulmonar e piora da troca gasosa sem necessariamente melhorar o débito cardíaco.\n\nPortanto, a conduta correta é focar na restauração da pressão de perfusão através de vasopressores.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a recomendação clássica cite 30 mL/kg nas primeiras 3 horas, as diretrizes atuais enfatizam a individualização. No caso deste paciente, os achados de POCUS (linhas B e VCI pletórica) são sinais de alerta para interromper a expansão volêmica, pois o risco de edema agudo de pulmão supera o benefício de mais volume.\n\nb) Incorreta. A reavaliação do lactato é fundamental para monitorar a resposta ao tratamento, mas não é o parâmetro decisório para expansão volêmica quando já existem sinais claros de sobrecarga de fluidos ao ultrassom. A prioridade imediata é corrigir a PAM que está em níveis críticos (58 mmHg).\n\nc) Incorreta. A albumina pode ser considerada em pacientes que necessitam de grandes volumes de cristaloides, mas não deve ser iniciada quando há evidência de congestão pulmonar (linhas B). O problema aqui não é a pressão oncótica, mas sim a provável falha na resposta fluida e o risco de edema.\n\nd) Correta. Diante de uma PAM de 58 mmHg (abaixo do alvo de 65 mmHg) e sinais de intolerância a fluidos ao POCUS, a introdução precoce da noradrenalina é a conduta mais segura e eficaz. O início precoce do vasopressor ajuda a restaurar a pressão arterial média, melhora o recrutamento de volume estressado e evita o balanço hídrico excessivamente positivo, que está associado a maior mortalidade.\n\ne) Incorreta. Não se deve aguardar melhora clínica ou do tempo de enchimento capilar (TEC) para iniciar o vasopressor quando a PAM está persistentemente abaixo de 65 mmHg após a carga inicial de fluidos. O atraso no início da noradrenalina em pacientes com choque profundo aumenta o tempo de hipoperfusão tecidual.\n\nAssociação com as imagens:\nA imagem da esquerda mostra a Veia Cava Inferior (VCI) com calibre preservado e baixa variação respiratória, sugerindo pressões de enchimento de câmaras direitas elevadas. A imagem da direita mostra múltiplas linhas B confluentes (caudas de cometa), que são artefatos verticais que apagam as linhas A, confirmando a presença de síndrome intersticial por excesso de fluido nos pulmões. Ambos os achados contraindicam a continuação da expansão volêmica agressiva.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Sepse",
+      "Ventilação Mecânica",
+      "Choque",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/0bd99149b102c21088d956af6131b76fe79c3022367fad1582e3c2c83c335a3c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b40dc256-f45f-4949-be4a-05444580b392_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:19.195Z"
+  },
+  {
+    "id": "AJUDA_b4145bfa-9c7b-49c3-92c3-139a06d481c6",
+    "originalId": "b4145bfa-9c7b-49c3-92c3-139a06d481c6",
+    "statement": "Paciente de 45 anos apresenta lesão pigmentada irregular, 1,8 mm de espessura (Breslow) em região plantar. Não há linfonodomegalias palpáveis.\nDiante desse caso, a conduta cirúrgica indicada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "ressecção com margem de 1 cm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "radioterapia adjuvante do leito operatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ressecção com margem de 5 mm + observação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ressecção com margem de 3 cm obrigatória em todos os melanomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ressecção com margem de 2 cm + biópsia de linfonodo sentinela.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O caso clínico apresenta um paciente com melanoma cutâneo (pela descrição de lesão pigmentada irregular e medida de Breslow) de 1,8 mm de espessura, localizado na região plantar, sem linfonodos clinicamente alterados. O manejo do melanoma é guiado principalmente pela profundidade da invasão (Índice de Breslow).\n\nPara um melanoma com Breslow de 1,8 mm, as diretrizes atuais recomendam dois pilares fundamentais no tratamento cirúrgico:\n\n1. Margens de ressecção:\nAs margens são definidas conforme a espessura da lesão:\n- Melanoma in situ: 0,5 a 1,0 cm.\n- Breslow até 1,0 mm: 1,0 cm.\n- Breslow entre 1,01 mm e 2,0 mm: 1,0 a 2,0 cm. (Na prática de provas de residência, adota-se preferencialmente 2,0 cm para lesões acima de 1 mm).\n- Breslow maior que 2,0 mm: 2,0 cm.\n\n2. Avaliação linfonodal (Biópsia de Linfonodo Sentinela - BLS):\nA BLS é indicada para pacientes com exame físico de linfonodos normal (cN0), mas que possuem risco de micrometástases. Os critérios são:\n- Breslow maior que 1,0 mm.\n- Breslow entre 0,8 mm e 1,0 mm na presença de fatores de risco (especialmente ulceração ou alto índice mitótico).\nComo o paciente tem 1,8 mm, a biópsia de linfonodo sentinela deve ser realizada no mesmo tempo cirúrgico da ampliação de margem.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a margem de 1 cm possa estar dentro da faixa aceitável em alguns protocolos (1 a 2 cm), ela é considerada a margem mínima. Mais importante ainda, a alternativa está incompleta por não mencionar a biópsia de linfonodo sentinela, que é obrigatória neste caso.\n\nAlternativa b) Incorreta. A radioterapia adjuvante no leito operatório não é o tratamento padrão para melanoma primário. O tratamento de escolha é a ressecção cirúrgica com margens livres.\n\nAlternativa c) Incorreta. Margens de 5 mm são insuficientes para um melanoma invasivo de 1,8 mm. Além disso, a observação clínica dos linfonodos não é a conduta correta para um tumor com essa espessura; a avaliação deve ser feita pelo linfonodo sentinela.\n\nAlternativa d) Incorreta. Não existe margem obrigatória de 3 cm para todos os melanomas. Estudos clínicos demonstraram que margens de 2 cm são equivalentes a margens maiores em termos de sobrevida global e recorrência local para tumores de espessura intermediária, com menor morbidade cirúrgica.\n\nAlternativa e) Correta. Esta alternativa contempla a margem de segurança recomendada (2 cm para Breslow entre 1 e 2 mm) e associa a biópsia de linfonodo sentinela, procedimento padrão-ouro para o estadiamento linfonodal em pacientes com melanoma de espessura superior a 1,0 mm e ausência de linfonodomegalias palpáveis.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:19.195Z"
+  },
+  {
+    "id": "AJUDA_b418e936-d991-4ae4-b9a8-ca84309c0b43",
+    "originalId": "b418e936-d991-4ae4-b9a8-ca84309c0b43",
+    "statement": "Paciente, sexo masculino, 62 anos de idade, procurou atendimento em um pronto-socorro devido a tosse seca, febre não aferida e mal-estar geral, há 7 dias. Durante avaliação, houve deterioração do quadro clínico e o médico foi chamado para atendê-lo. O paciente apresentava-se taquicárdico, febril (temperatura 39 °C), hipotenso, taquidispneico, com extremidades frias e torporoso.\nCom base nessas informações, assinale a alternativa que apresenta, corretamente, a intervenção inicial mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dosar lactato arterial sérico e aguardar resultado para definição diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fazer expansão volêmica com fluidos cristaloides e observar se há melhora dos sinais vitais e da perfusão tecidual para, então, iniciar antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fornecer aporte de oxigênio, solicitar tomografia de crânio e considerar expansão volêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar monitorização, fornecer aporte de oxigênio, coletar culturas e marcador de perfusão tecidual e iniciar antibiótico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Iniciar antibiótico de amplo espectro devido ao quadro arrastado e à gravidade clínica, após coleta de culturas e marcadores inflamatórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um paciente idoso com sintomas respiratórios arrastados (7 dias) que evoluiu com instabilidade hemodinâmica severa (hipotensão, taquicardia) e sinais clínicos de hipoperfusão tecidual (extremidades frias e alteração do nível de consciência/torpor). Este cenário é compatível com o diagnóstico de Choque Séptico, provavelmente de foco pulmonar. Diante de uma emergência médica desse porte, o manejo deve seguir os protocolos de Sepse (como o Surviving Sepsis Campaign), que priorizam a estabilização imediata e o tratamento precoce da infecção.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. O lactato é um marcador crucial de perfusão tecidual, mas jamais se deve aguardar resultados laboratoriais para definir a conduta em um paciente instável. O tratamento deve ser iniciado com base na suspeita clínica imediata.\n\nAlternativa B: Incorreta. Embora a expansão volêmica com cristaloides faça parte do tratamento, o erro da alternativa reside em \"aguardar para, então, iniciar antibiótico\". Em casos de sepse e choque séptico, o antibiótico deve ser administrado o mais rápido possível, idealmente na primeira hora, pois cada hora de atraso aumenta significativamente a mortalidade.\n\nAlternativa C: Incorreta. Fornecer oxigênio e considerar expansão volêmica são passos corretos, mas a solicitação de tomografia de crânio não é a prioridade inicial para um paciente com foco infeccioso evidente e choque. O torpor, neste caso, é interpretado como uma disfunção orgânica decorrente da própria hipoperfusão sistêmica.\n\nAlternativa D: Correta. Esta alternativa descreve os passos fundamentais do \"pacote de primeira hora\" no manejo da sepse. A monitorização e o oxigênio garantem a estabilização hemodinâmica e respiratória inicial. A coleta de culturas e lactato (marcador de perfusão) deve ser feita rapidamente para guiar a terapia, mas sem retardar o início do antibiótico de amplo espectro, que é a intervenção que altera o desfecho clínico.\n\nAlternativa E: Incorreta. Embora mencione corretamente o antibiótico e as culturas, a alternativa é incompleta comparada à letra D. Ela ignora os passos críticos de suporte imediato à vida, como a monitorização, o fornecimento de oxigênio e a reposição volêmica, que são essenciais em um paciente que já apresenta sinais claros de choque.\n\nCONCLUSÃO\n\nO manejo da sepse exige agilidade. A alternativa D contempla tanto as medidas de suporte (monitorização e oxigênio) quanto as medidas diagnósticas (culturas e lactato) e terapêuticas (antibioticoterapia precoce), sendo a conduta inicial mais completa e adequada para o caso apresentado.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Sepse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:19.195Z"
+  },
+  {
+    "id": "AJUDA_b4195720-845e-4fd1-91ec-c2a096cf0556",
+    "originalId": "b4195720-845e-4fd1-91ec-c2a096cf0556",
+    "statement": "O Guia de Vigilância aborda diversos desfechos, incluindo a vigilância das coberturas vacinais. Nesse contexto, qual indicador é calculado a partir do número de últimas doses do esquema vacinal aplicadas em determinada faixa etária da população, em determinado local e período, dividido pela população da respectiva faixa etária e local, estimada pelo IBGE ou pela SVS para o último ano do período, multiplicado por 100?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cobertura de imunizados de cada população-alvo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cobertura de doses aplicadas de cada população-alvo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cobertura vacinal nas coortes de vacinados de cada população-alvo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Cobertura de imunizados nas coortes de vacinados de cada população-alvo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Este indicador é fundamental para a gestão do Programa Nacional de Imunizações (PNI) e para a Vigilância em Saúde no Brasil. Ele não mede apenas o ato isolado de vacinar, mas sim a conclusão de esquemas vacinais completos em grupos específicos.\n\nO cálculo descrito na questão utiliza o número de últimas doses (que representa o encerramento do esquema básico, como a terceira dose da Pentavalente ou a segunda dose da Tríplice Viral) e o relaciona com a população estimada pelo IBGE ou SVS.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. O termo \"imunizados\" refere-se a um estado biológico de proteção, que nem sempre é garantido apenas pela aplicação da vacina, embora seja o objetivo final. Os indicadores de vigilância baseiam-se em doses aplicadas e registradas; portanto, o termo correto é cobertura vacinal.\n\nAlternativa (b) Incorreta. A expressão \"doses aplicadas\" é genérica e pode se referir a qualquer dose (primeira, segunda ou reforços). O indicador específico solicitado no enunciado foca na última dose do esquema vacinal para caracterizar a cobertura vacinal completa de um determinado grupo.\n\nAlternativa (c) Correta. Esta é a nomenclatura oficial adotada pelo Guia de Vigilância em Saúde. O indicador de cobertura vacinal nas coortes de vacinados de cada população-alvo permite acompanhar se um grupo específico de pessoas (nascidos em determinado ano ou pertencentes a uma faixa etária específica) atingiu a meta de vacinação com o esquema completo. O uso do termo \"coortes\" é essencial na vigilância moderna para monitorar o histórico vacinal de grupos populacionais ao longo do tempo.\n\nAlternativa (d) Incorreta. Esta alternativa mistura o termo \"imunizados\", que é clinicamente impreciso para um indicador de cobertura administrativa, com a estrutura de coortes. Como explicado anteriormente, a vigilância monitora a aplicação das doses e não a resposta imunológica individual de cada cidadão.\n\nEm resumo, a alternativa (c) define com precisão o indicador que monitora a proporção da população que completou o esquema vacinal preconizado para sua idade ou grupo de risco.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Vigilância em Saúde",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:19.195Z"
+  },
+  {
+    "id": "AJUDA_b4262b0a-81f7-4a93-a2ef-e6cdbf097d52",
+    "originalId": "b4262b0a-81f7-4a93-a2ef-e6cdbf097d52",
+    "statement": "Mulher de 34 anos queixa-se de tristeza, desânimo, choro fácil e insônia inicial há dois meses, iniciados após desemprego. Refere também fadiga, ganho de peso, dificuldade de concentração e sentimentos de inutilidade, sem ideação suicida. Informa que faz uso de clonazepam 1 mg/noite por conta própria há um ano. Diante do quadro, a conduta mais adequada na Atenção Primária à Saúde é",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar o desmame do clonazepam com redução de 50% da dose na primeira semana e prescrever amitriptilina como primeira escolha, aproveitando seu perfil sedativo para o manejo da insônia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "prescrever fluoxetina e aumentar a dose do clonazepam nas primeiras quatro semanas para conter a piora inicial da insônia e reduzir riscos de efeitos adversos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "postergar a introdução de antidepressivo até a retirada total do benzodiazepínico, priorizando exclusivamente abordagens psicoterápicas e de suporte psicossocial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "diagnosticar transtorno de ansiedade generalizada isolado, pelo uso crônico do ansiolítico, e associar buspirona como estratégia de otimização terapêutica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "iniciar inibidor seletivo da recaptação de serotonina (ISRS), como a sertralina, orientar sobre o tempo de latência para o efeito clínico e planejar o desmame gradual do clonazepam após a estabilização do humor.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Resumo do caso: mulher de 34 anos com 2 meses de humor deprimido, anedonia/desânimo, insônia, fadiga, alteração de peso, déficit de concentração e sentimentos de inutilidade, sem ideação suicida. O quadro tem mais de 5 sintomas por mais de 2 semanas, com prejuízo funcional, o que configura episódio depressivo (provavelmente de intensidade leve a moderada), desencadeado por estressor (desemprego). Há também uso crônico de benzodiazepínico (clonazepam 1 mg/noite) sem prescrição, há 1 ano, o que sugere dependência ou uso inadequado.\n\nPrincípios da conduta na APS:\n- Tratar a depressão com antidepressivo de primeira linha, em geral um ISRS (sertralina, fluoxetina, escitalopram), associado a suporte psicossocial e psicoterapia.\n- Explicar a latência de 2 a 4 semanas para o início do efeito, além dos efeitos adversos iniciais.\n- Não retirar o benzodiazepínico de forma abrupta, pelo risco de abstinência, rebote de insônia e ansiedade. A retirada deve ser gradual (reduções de cerca de 10 a 25% da dose a cada 1 a 2 semanas ou mais), idealmente após a estabilização do quadro afetivo.\n\nAnálise das alternativas:\n\na) Incorreta. A redução de 50% na primeira semana é rápida demais e traz risco de abstinência, com piora da insônia e da ansiedade, em uma paciente deprimida. Além disso, a amitriptilina (tricíclico) não é primeira escolha, pois tem pior tolerabilidade, efeitos anticolinérgicos, cardiotoxicidade e toxicidade em overdose. O ganho de peso já presente na paciente também seria agravado. O perfil sedativo não justifica a escolha como primeira linha.\n\nb) Incorreta. Aumentar a dose do clonazepam perpetua a dependência e o uso inadequado, e não é recomendado. A insônia inicial por ISRS pode ser manejada com higiene do sono, orientação e ajuste de horário ou dose, sem escalonar o benzodiazepínico.\n\nc) Incorreta. Adiar o antidepressivo até a retirada total do benzodiazepínico deixa a depressão sem tratamento adequado, com risco de piora, e dificulta o próprio desmame, já que os sintomas depressivos e a insônia aumentam a chance de falha. Psicoterapia e suporte são úteis, mas não de forma exclusiva em um episódio com esse grau de sintomas.\n\nd) Incorreta. O quadro é predominantemente depressivo, e não de transtorno de ansiedade generalizada (TAG), que exige ansiedade e preocupação excessivas na maior parte dos dias por pelo menos 6 meses. O uso crônico de ansiolítico não define o diagnóstico. A buspirona tem início de ação lento e não trata a depressão nem previne abstinência de benzodiazepínico.\n\ne) Correta. O ISRS (sertralina) é primeira linha, seguro e bem tolerado na APS. Orientar sobre a latência melhora a adesão. O desmame gradual do clonazepam, após a estabilização do humor, reduz o risco de abstinência e de recaída. Essa conduta trata a causa principal e aborda o uso inadequado do benzodiazepínico de forma segura.\n\nPonto-chave: na depressão com uso crônico de benzodiazepínico, trata-se a depressão com ISRS e faz-se desmame lento e planejado do benzodiazepínico, nunca abrupto nem com aumento de dose.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor",
+      "Dependência Química",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:19.195Z"
+  },
+  {
+    "id": "AJUDA_b427a49d-a1e3-474a-8b6b-fbf911dcf6ad",
+    "originalId": "b427a49d-a1e3-474a-8b6b-fbf911dcf6ad",
+    "statement": "Os transtornos psiquiátricos no puerpério variam em gravidade e prognóstico. A diferenciação clínica entre \"Baby Blues\" (disforia pós-parto), Depressão Pós-Parto (DPP) e Psicose Puerperal é essencial para a conduta. Assinale a alternativa correta sobre as características e manejo dessas condições.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A presença de pensamentos infanticidas é exclusiva da Psicose Puerperal, nunca ocorrendo na Depressão Pós-Parto grave, o que serve como divisor absoluto entre as duas patologias para indicação de internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A Psicose Puerperal é um quadro leve de ansiedade associado à insônia, que raramente exige internação ou uso de antipsicóticos, respondendo bem à psicoterapia breve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O \"Baby Blues\" ocorre em 50 a 80% das puérperas, iniciando-se nos primeiros dias (3º - 4º dia) e remitindo espontaneamente em até 2 semanas, caracterizando-se por labilidade emocional e choro fácil, não exigindo tratamento farmacológico, apenas suporte.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A Depressão Pós-Parto difere do \"Blues\" apenas pela intensidade dos sintomas, devendo ser diagnosticada somente se os sintomas de tristeza persistirem por mais de 6 meses após o parto, sendo a Escala de Edimburgo inútil na fase aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender essa questão, é fundamental diferenciar as três principais patologias psiquiátricas do puerpério: o Baby Blues, a Depressão Pós-Parto (DPP) e a Psicose Puerperal.\n\nAnálise das alternativas:\n\na) Incorreta. Pensamentos de ferir a criança ou pensamentos infanticidas podem ocorrer tanto na Psicose Puerperal quanto na Depressão Pós-Parto grave. Na DPP grave, esses pensamentos costumam ser obsessivos e geram grande angústia na mãe (egodistônicos), enquanto na psicose eles geralmente estão associados a delírios ou alucinações (egossintônicos). Portanto, não é um divisor exclusivo nem absoluto.\n\nb) Incorreta. A Psicose Puerperal é a forma mais grave dos transtornos puerperais, sendo considerada uma emergência psiquiátrica. Caracteriza-se por perda do contato com a realidade, delírios, alucinações e alto risco de infanticídio e suicídio. O tratamento exige internação imediata, uso de antipsicóticos e estabilizadores de humor.\n\nc) Correta. O Baby Blues, ou disforia pós-parto, é um quadro fisiológico e transitório que atinge a grande maioria das mulheres (até 80%). Inicia-se precocemente, entre o 3º e o 4º dia após o parto, e tem curta duração, resolvendo-se espontaneamente em até duas semanas. Os sintomas principais são labilidade emocional, irritabilidade e choro fácil. Por ser autolimitado e não comprometer o vínculo com o bebê ou a funcionalidade da mãe, não requer fármacos, apenas suporte emocional e orientações.\n\nd) Incorreta. A Depressão Pós-Parto é um quadro clínico mais profundo que o Baby Blues e não se diferencia apenas pela intensidade, mas pela persistência e prejuízo funcional. O diagnóstico não exige 6 meses de espera; pelo DSM-5, os sintomas devem estar presentes por pelo menos duas semanas, com início geralmente nas primeiras 4 a 12 semanas após o parto. Além disso, a Escala de Edimburgo é a principal ferramenta de rastreio validada mundialmente para identificar o risco de DPP ainda na fase aguda.\n\nGabarito: Letra (c).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Psicopatologia",
+      "Transtornos do Humor"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:19.195Z"
+  },
+  {
+    "id": "AJUDA_b4282216-69f8-497d-89d3-d2c27e7f1959",
+    "originalId": "b4282216-69f8-497d-89d3-d2c27e7f1959",
+    "statement": "Um menino de 4 anos com diagnóstico de TDAH (transtorno do déficit de atenção com hiperatividade) é levado ao pronto-socorro pela avó materna devido a múltiplos hematomas em diferentes estágios de cicatrização visíveis em seu corpo. A avó relata que as lesões foram observadas quando ela ajudou o menino a trocar de roupa. Ela menciona que o neto vive com os pais, mas ela nota que ele tem estado mais retraído e evita contato físico nos últimos meses. Ao exame físico, notam-se vários hematomas (alguns arroxeados, outros amarelados) em várias partes do corpo, incluindo costas, braços e pernas. Paciente se mostra reservado, evitando contato visual e mantendo postura corporal defensiva. Com base no caso clínico descrito, qual é a conduta mais apropriada a ser tomada inicialmente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento psicológico e entrar em contato com a coordenação da escola que o paciente frequenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar notificação compulsória aos órgãos competentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Orientar a avó a respeito da importância de se conversar com os pais sobre o ocorrido, para entender como surgiram os hematomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar exames laboratoriais para investigação de possíveis distúrbios de coagulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresenta um caso clássico de suspeita de maus-tratos infantis. Os principais indicadores são: hematomas em diferentes estágios de evolução (policromatismo), sugerindo agressões repetidas ao longo do tempo; localização das lesões em áreas protegidas ou menos sujeitas a traumas acidentais (costas e braços); e alteração comportamental significativa (retraimento, postura defensiva e esquiva de contato físico).\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Embora o suporte psicológico seja fundamental no acompanhamento de longo prazo e a escola seja uma parceira na rede de proteção, essas não são as condutas iniciais prioritárias diante de uma suspeita de violência. A prioridade é garantir a segurança da criança por meio dos canais legais.\n\nAlternativa B: Correta. De acordo com o Estatuto da Criança e do Adolescente (ECA) e a Lei nº 13.010/2014 (Lei Menino Bernardo), a notificação de casos de suspeita ou confirmação de castigo físico, tratamento cruel ou degradante e de maus-tratos contra criança ou adolescente é obrigatória. O médico não precisa ter a prova do abuso; a simples suspeita fundamentada já obriga a notificação ao Conselho Tutelar ou à autoridade competente. No pronto-socorro, essa é a medida imediata para garantir a proteção do menor.\n\nAlternativa C: Incorreta. Orientar a avó a confrontar os pais é uma conduta perigosa. Se os pais forem os agressores, isso pode colocar a criança em risco ainda maior de retaliação, além de permitir que os responsáveis destruam evidências ou fujam. O médico deve acolher a acompanhante, mas a investigação dos fatos cabe aos órgãos de proteção e segurança.\n\nAlternativa D: Incorreta. A realização de exames laboratoriais (como coagulograma) pode ser indicada em casos de dúvida diagnóstica para descartar distúrbios de coagulação que justifiquem hematomas espontâneos. No entanto, o conjunto de achados deste caso (comportamento defensivo e estágios diferentes das lesões) torna a suspeita de abuso muito alta, fazendo da notificação a conduta ética e legal prioritária em relação à investigação orgânica secundária.\n\nEm resumo, diante da suspeita de violência infantil, o dever do médico é notificar o caso para que a rede de proteção possa agir, independentemente da confirmação diagnóstica definitiva no momento do atendimento inicial.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Maus Tratos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:19.195Z"
+  },
+  {
+    "id": "AJUDA_b42d5d90-df72-4146-946b-5d90313eda2f",
+    "originalId": "b42d5d90-df72-4146-946b-5d90313eda2f",
+    "statement": "O fator predisponente mais consistente para um descolamento prematuro de placenta (DPP) é a(o)",
+    "options": [
+      {
+        "id": "A",
+        "text": "hipertensão arterial materna.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "descompressão uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "paridade materna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "uso de ocitocina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O Descolamento Prematuro de Placenta (DPP) consiste na separação intempestiva da placenta implantada no corpo do útero antes da expulsão fetal, em gestações acima de 20 semanas. É uma das principais causas de sangramento de terceira etapa e apresenta elevada morbimortalidade.\n\nAlternativa a: Esta é a alternativa correta. A hipertensão arterial materna, englobando tanto a hipertensão arterial crônica quanto a pré-eclâmpsia, é o fator predisponente mais comum e consistentemente associado ao DPP. A fisiopatologia envolve alterações vasculares crônicas que levam à degeneração e necrose da decídua basal, resultando em hemorragia e clivagem da interface entre a placenta e o útero.\n\nAlternativa b: Esta alternativa está incorreta. A descompressão uterina súbita é um fator de risco mecânico bem conhecido, ocorrendo tipicamente na ruptura de membranas em casos de polidrâmnio ou após o nascimento do primeiro feto em gestações gemelares. Apesar de importante, é um evento agudo e muito menos frequente do que a etiologia vascular/hipertensiva.\n\nAlternativa c: Esta alternativa está incorreta. Embora a multiparidade seja frequentemente citada como um fator de risco epidemiológico para diversas patologias obstétricas, sua associação com o DPP é considerada fraca e pouco consistente quando comparada ao impacto direto das doenças hipertensivas na vasculatura placentária.\n\nAlternativa d: Esta alternativa está incorreta. O uso de ocitocina, quando mal manejado, pode levar à taquisistolia ou hipertonia uterina, o que teoricamente pode desencadear ou agravar um descolamento. No entanto, não é um fator predisponente primário ou consistente na população geral que apresenta DPP.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:36:19.195Z"
+  }
+]

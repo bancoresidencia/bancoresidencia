@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_7ccf97e2-5101-40fb-a836-34453820b81b",
+    "originalId": "7ccf97e2-5101-40fb-a836-34453820b81b",
+    "statement": "Um lactente de 10 meses de vida foi levado à consulta ambulatorial. A mãe referiu alimentação predominante com leite de vaca integral desde os quatro meses, bem como palidez progressiva. Ao exame, o paciente mostrava-se ativo, com palidez cutânea leve, sem sopros; FC = 124 bpm, FR = 30 irpm, SpO2 = 98%, e peso e estatura adequados. Hemograma mostrou Hb = 8,7 g/dL; VCM = 68 fL e RDW aumentado. Considerando o quadro apresentado, qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia ferropriva",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Anemia por doença crônica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anemia hemolítica hereditária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anemia megaloblástica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente é um lactente de 10 meses que apresenta fatores de risco clássicos e achados laboratoriais típicos de anemia ferropriva. O principal fator etiológico identificado é a introdução precoce de leite de vaca integral (aos 4 meses), que possui baixa biodisponibilidade de ferro e pode causar micro-hemorragias no trato gastrointestinal imaturo. Os exames laboratoriais revelam uma anemia (Hb 8,7 g/dL) do tipo microcítica (VCM 68 fL, abaixo do valor de referência para a idade) com aumento do RDW (anisocitose), que indica variação no tamanho das hemácias.\n\nAnálise das Alternativas:\n\na) Anemia ferropriva: Está correta. É a causa mais comum de anemia na infância. O quadro de palidez progressiva associado ao erro alimentar (leite de vaca) e ao hemograma com microcitose (baixo VCM) e anisocitose (RDW elevado) é o padrão-ouro para o diagnóstico presuntivo de deficiência de ferro. O RDW elevado é um dos primeiros marcadores a se alterar, diferenciando-a de outras anemias microcíticas, como as talassemias.\n\nb) Anemia por doença crônica: Está incorreta. Embora possa cursar com microcitose em estágios avançados, geralmente é uma anemia normocítica e normocrômica. Além disso, o caso não descreve processos inflamatórios, infecciosos ou neoplásicos subjacentes, e o RDW costuma estar normal nessa condição.\n\nc) Anemia hemolítica hereditária: Está incorreta. As anemias hemolíticas (como a esferocitose ou a anemia falciforme) costumam apresentar sinais de hemólise, como icterícia, esplenomegalia e reticulocitose (anemia regenerativa), com VCM normal ou aumentado. No caso da talassemia minor, que é microcítica, o RDW geralmente permanece dentro da normalidade e não há o fator de confusão alimentar tão evidente quanto na ferropenia.\n\nd) Anemia megaloblástica: Está incorreta. A anemia megaloblástica, decorrente da deficiência de vitamina B12 ou ácido fólico, caracteriza-se obrigatoriamente por ser uma anemia macrocítica, ou seja, com VCM elevado (hemácias grandes), o que contradiz o valor de 68 fL apresentado pelo paciente.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Aleitamento Materno",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:42.943Z"
+  },
+  {
+    "id": "AJUDA_7cd0cada-6c7a-48fb-8f93-18eac67e399d",
+    "originalId": "7cd0cada-6c7a-48fb-8f93-18eac67e399d",
+    "statement": "As equipes Multiprofissionais na Atenção Primária (eMulti) são compostas por profissionais de saúde de diferentes áreas de conhecimento que atuam de maneira complementar e integrada às demais equipes da Atenção Primária à Saúde (APS). Com relação às eMulti, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A teleconsulta ou atendimento remoto de pacientes não estão incorporados no processo de trabalho das eMulti.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As eMulti estão vinculadas à APS, mas também a unidades de pronto atendimento e ambulatórios de especialidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os médicos especialistas em cardiologia, dermatologia, endocrinologia, infectologia e psiquiatria podem compor as eMulti.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O financiamento e custeio das eMulti é responsabilidade exclusiva dos municípios (Prefeituras e Secretarias Municipais de Saúde).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "As Equipes Multiprofissionais na Atenção Primária (eMulti) foram instituídas pela Portaria GM/MS nº 635/2023, reformulando e substituindo a lógica dos antigos Núcleos de Apoio à Saúde da Família (NASF), com foco no suporte assistencial, matriciamento e ampliação do escopo da Atenção Primária à Saúde (APS).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O uso de recursos de Telessaúde (teleconsulta, teleinterconsulta e telediagnóstico) é expressamente previsto e incentivado nas eMulti como ferramenta para ampliar o acesso e a resolutividade do cuidado compartilhado.\n\nAlternativa b: Incorreta. As eMulti têm vinculação exclusiva às equipes da Atenção Primária à Saúde, como as Equipes de Saúde da Família (eSF) e Equipes de Atenção Primária (eAP). Elas não estão vinculadas a serviços de urgência/emergência (UPAs) ou ambulatórios de especialidades tradicionais.\n\nAlternativa c: Correta. Uma das novidades da regulamentação das eMulti é a inclusão formal de diversas especialidades médicas em sua composição (como cardiologia, dermatologia, endocrinologia, infectologia, psiquiatria, ginecologia/obstetrícia e pediatria), visando qualificar a retaguarda clínica e o matriciamento na APS.\n\nAlternativa d: Incorreta. O custeio das eMulti segue a lógica do cofinanciamento tripartite do SUS. O Ministério da Saúde realiza repasses federais mensais para os municípios que implantam e mantêm as equipes cadastradas e homologadas.\n\nGabarito: Alternativa c.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:42.943Z"
+  },
+  {
+    "id": "AJUDA_7cd93759-9139-4fb1-9240-49fa66aa604d",
+    "originalId": "7cd93759-9139-4fb1-9240-49fa66aa604d",
+    "statement": "Idoso com doença pulmonar obstrutiva crônica, diabetes e doença renal crônica, polifarmácia, em seguimento com múltiplas especialidades. O paciente tem consultas recorrentes na unidade de pronto atendimento (UPA). Para melhorar a coordenação de cuidado, a equipe da Atenção Primária à Saúde (APS) busca qualificar o atendimento do paciente com algumas estratégias. Diante desse contexto, é INCORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reuniões clínicas e plano terapêutico singular podem conciliar metas, revisar interações e alinhar responsabilidades com o paciente e a família.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Resumo clínico estruturado com contrarreferência efetiva e teleinterconsulta favorece continuidade e decisões compartilhadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhamento para um serviço de especialidades, com profissionais renomados e consultas sequenciais com os mesmos, sem retorno à APS, tende a melhorar a coordenação do cuidado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Conciliação medicamentosa periódica com monitoramento de desfechos melhora segurança e reduz eventos relacionados à polifarmácia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o papel da Atenção Primária à Saúde (APS) como coordenadora do cuidado e ordenadora da rede de atenção, especialmente em casos de pacientes complexos com múltiplas comorbidades. O objetivo é identificar a alternativa incorreta sobre como melhorar essa coordenação.\n\nAlternativa a) Esta afirmação está correta. O Plano Terapêutico Singular (PTS) é uma ferramenta fundamental na APS para casos complexos. Ele permite que a equipe multidisciplinar, junto com o paciente e a família, estabeleça metas comuns, organize as prioridades clínicas e alinhe as responsabilidades de cada envolvido, evitando condutas conflitantes vindas de diferentes especialistas.\n\nAlternativa b) Esta afirmação está correta. A coordenação do cuidado depende diretamente do fluxo de informações entre os níveis de atenção. O resumo clínico estruturado e a contrarreferência garantem que o médico da APS saiba o que foi conduzido pelo especialista, enquanto a teleinterconsulta permite uma discussão direta entre profissionais, facilitando a tomada de decisão compartilhada e a continuidade do tratamento sem fragmentação.\n\nAlternativa c) Esta é a alternativa incorreta e, portanto, o gabarito. O encaminhamento para especialistas sem o devido retorno (contrarreferência) e acompanhamento concomitante pela APS gera a fragmentação do cuidado. Na lógica das Redes de Atenção à Saúde, a APS deve ser o centro de comunicação e o \"maestro\" do cuidado. Quando o paciente perde o vínculo com a APS e transita apenas entre especialistas isolados, aumentam os riscos de exames duplicados, prescrições contraditórias e perda da visão integral do indivíduo. Profissionais renomados, de forma isolada, não garantem a coordenação do cuidado se não houver integração com a unidade de base.\n\nAlternativa d) Esta afirmação está correta. A conciliação medicamentosa é uma estratégia de segurança essencial para idosos com polifarmácia. Ela consiste na revisão detalhada de todos os fármacos utilizados (prescritos ou não), visando a identificar interações medicamentosas, duplicidades terapêuticas e ajustes de dose necessários para a condição renal e clínica do paciente, o que reduz eventos adversos e hospitalizações.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:42.943Z"
+  },
+  {
+    "id": "AJUDA_7cdbf7de-6279-4a3a-aa1b-93165c9b1dc4",
+    "originalId": "7cdbf7de-6279-4a3a-aa1b-93165c9b1dc4",
+    "statement": "Agente comunitária solicita, em reunião de equipe, uma consulta para o paciente Mauro, que é irmão da dona Maria, paciente restrita. A agente conta que Mauro, 55 anos, está sentindo dor no corpo, cansaço, perda de apetite e que tem emagrecido bastante. Nega sintomas respiratórios. Trabalha na construção civil há mais de 30 anos, tendo ficado um pouco mais de 2 anos afastado das obras, pois ficou preso por agressão à ex-mulher. Voltou a trabalhar há quase 2 meses, mas não tem conseguido trabalhar o dia todo. Os exames iniciais a serem solicitados pelo médico que atender Mauro, devem ser hemograma, glicemia, colesterol e frações e",
+    "options": [
+      {
+        "id": "A",
+        "text": "PPD, apenas, por não haver sintomas respiratórios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "testes rápidos para ISTs, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "testes rápidos para ISTs, realização de espirometria e ecocárdio para diagnóstico diferencial do cansaço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pela ausência de tosse e febre, não existe a indicação de realização de exames para diagnóstico diferencial de tuberculose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "testes rápidos para ISTs, coleta de escarro, Rx de tórax e PPD.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O caso clínico descreve o paciente Mauro, de 55 anos, que apresenta sintomas constitucionais importantes (fadiga, emagrecimento e anorexia). O ponto crucial da questão reside no histórico social do paciente: ele é egresso do sistema prisional, tendo ficado detido por dois anos.\n\nNo Brasil, o Ministério da Saúde define grupos de populações vulneráveis com maior risco de adoecimento por tuberculose (TB). Pessoas privadas de liberdade (ou com histórico recente de detenção) possuem um risco de contágio e desenvolvimento da doença muito superior ao da população geral. Nesses grupos de alto risco, a investigação de tuberculose deve ser iniciada mesmo na ausência de sintomas respiratórios clássicos, como a tosse, sempre que houver sintomas sistêmicos (emagrecimento, febre vespertina, sudorese noturna ou astenia). Além disso, a vulnerabilidade social e o tempo de reclusão impõem a necessidade de rastreio para infecções sexualmente transmissíveis (ISTs).\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O PPD (Teste Tuberculínico) avalia a infecção latente. No entanto, diante de sintomas sistêmicos (emagrecimento e dor no corpo) em um paciente de alto risco, é obrigatória a investigação de tuberculose ativa, o que exige exames de imagem e pesquisa direta do bacilo, e não apenas o PPD.\n\nAlternativa B: Incorreta. Embora o rastreio de ISTs seja indicado pela vulnerabilidade do paciente, a alternativa é incompleta por ignorar a forte suspeita epidemiológica de tuberculose, dada a história de encarceramento e a perda ponderal.\n\nAlternativa C: Incorreta. Espirometria e ecocardiograma são exames de segunda linha ou voltados para patologias crônicas específicas (como DPOC ou insuficiência cardíaca). Diante de um quadro de emagrecimento importante e histórico de prisão, o foco inicial deve ser em doenças infectocontagiosas (TB e HIV).\n\nAlternativa D: Incorreta. De acordo com os protocolos de vigilância epidemiológica, em populações de alta vulnerabilidade (moradores de rua, pessoas privadas de liberdade e imunossuprimidos), a ausência de tosse ou febre não exclui a necessidade de investigar tuberculose quando há outros sintomas sugestivos ou risco epidemiológico elevado.\n\nAlternativa E: Correta. Esta conduta é a mais completa e adequada ao protocolo do Ministério da Saúde. Os testes rápidos para ISTs (HIV, sífilis, hepatites B e C) rastreiam condições comuns em egressos do sistema prisional. A coleta de escarro (baciloscopia ou teste rápido molecular) e o raio X de tórax buscam diagnosticar a tuberculose ativa (forma pulmonar), enquanto o PPD auxilia na identificação de infecção latente ou suporte diagnóstico em casos paucibacilares. Mesmo sem tosse, o rastreio pulmonar é justificado pelo emagrecimento e histórico social.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:42.943Z"
+  },
+  {
+    "id": "AJUDA_7ced4aad-3ac0-41fa-9bff-000d35913dff",
+    "originalId": "7ced4aad-3ac0-41fa-9bff-000d35913dff",
+    "statement": "Paciente, 40 anos de idade, secundigesta com parto vaginal anterior, sem doenças, retorna em pré-natal com 24 semanas de gravidez e apresenta os exames a seguir:\n\nHb: 11,4 mg/dL\nHt: 34%\nGlicemia: 84 mg/dL\nTipagem sanguínea: A negativo.\nPesquisa anticorpos irregulares: positiva.\nToxoplasmose: IgG positivo e IgM negativo.\nRubéola: IgG negativo e IgM negativo.\nHepatite B: vacinada.\nHepatite C: negativo.\nHIV: negativo.\nVDRL: 1:2\nFTA-ABS: negativo.\nUrocultura: E. coli > 10⁶ UFC multi-sensível.\n\nUltrassonografia: feto único, vivo, apresentação pélvica com dorso à esquerda. Placenta posterior Grannum 0. Peso fetal estimado 780 g (p90). Observa-se ascite e derrame pleural laminar fetal. Doppler de artéria umbilical normal, pico sistólico de artéria cerebral média de 52 cm/s (mediana para 24 semanas = 30,7 cm/s). A hipótese diagnóstica para o achado ultrassonográfico é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Infecção congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cardiopatia fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Diabetes gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão apresenta um quadro clássico de isoimunização Rh evoluindo com gravidade fetal. Para chegar ao diagnóstico correto de anemia fetal, devemos analisar os dados clínicos, laboratoriais e ultrassonográficos de forma integrada.\n\nAnálise dos dados principais:\n1. Tipagem sanguínea e anticorpos: A paciente é A negativa e possui Pesquisa de Anticorpos Irregulares (PAI) positiva. Isso indica que ela está sensibilizada, ou seja, produz anticorpos que podem atravessar a placenta e destruir as hemácias fetais.\n2. Achados ultrassonográficos: A presença de ascite e derrame pleural caracteriza um quadro de hidropisia fetal (acúmulo de líquido em dois ou mais compartimentos fetais), que é uma complicação grave da anemia profunda.\n3. Doppler de Artéria Cerebral Média (ACM): Este é o ponto crucial. O pico sistólico da ACM é utilizado para rastrear anemia fetal. Quando o feto está anêmico, o sangue fica menos viscoso e o organismo prioriza a oxigenação cerebral (vasodilatação), o que aumenta a velocidade do fluxo sanguíneo. No caso, o valor medido foi de 52 cm/s, enquanto a mediana para a idade gestacional é de 30,7 cm/s. Ao calcularmos o múltiplo da mediana (MoM), temos 52 / 30,7 = 1,69 MoM. Valores acima de 1,5 MoM são diagnósticos de anemia fetal moderada a grave.\n\nAnálise das alternativas:\n\na) Correta. A combinação de mãe Rh negativa sensibilizada (PAI positivo), sinais de hidropisia (ascite e derrame pleural) e, principalmente, o aumento da velocidade do pico sistólico da artéria cerebral média acima de 1,5 MoM confirma a anemia fetal por eritroblastose fetal.\n\nb) Incorreta. Embora algumas infecções congênitas (como Parvovírus B19 ou Citomegalovírus) possam causar anemia e hidropisia, os exames laboratoriais da paciente descartam as principais (Toxoplasmose IgG+/IgM-, Rubéola negativa, Hepatites e HIV negativos). O VDRL 1:2 com FTA-ABS negativo indica um falso-positivo ou cicatriz sorológica não relacionada à sífilis ativa no momento. A sensibilização Rh é a causa mais provável diante do PAI positivo.\n\nc) Incorreta. Cardiopatias congênitas podem levar à hidropisia não imune por insuficiência cardíaca, mas não explicariam o aumento seletivo da velocidade na artéria cerebral média no padrão de 1,69 MoM, que é específico para a resposta hemodinâmica à anemia.\n\nd) Incorreta. A glicemia de jejum da paciente está normal (84 mg/dL). Embora o peso fetal esteja no percentil 90 (feto grande), o diabetes gestacional por si só não causa derrame pleural, ascite ou aumento do pico sistólico da artéria cerebral média. O crescimento fetal aumentado, neste caso, pode estar relacionado ao edema generalizado do feto anêmico e não ao excesso de glicose.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Ultrassom em Obstetrícia",
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:42.943Z"
+  },
+  {
+    "id": "AJUDA_7cf43e2d-e54b-4fa8-81e2-2b60fae300ae",
+    "originalId": "7cf43e2d-e54b-4fa8-81e2-2b60fae300ae",
+    "statement": "Um paciente de 25 anos, sexo masculino, apresenta-se ao pronto-socorro com queixa de dor torácica leve, que teve início há 1 hora. Ele relata que a dor é pontual, piora ao respirar profundamente e sem irradiação. Ao exame físico, revela dor à palpação na região anterior do tórax, ausência de alteração na ausculta pulmonar ou cardíaca. \nQual é a causa mais provável da dor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Infarto agudo do miocárdio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Broncopneumonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Refluxo gastroesofágico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Embolia pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Costocondrite.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO caso descreve um homem jovem com dor torácica localizada e de caráter pleurítico (piora com a inspiração). O dado mais importante para a resolução da questão é o achado no exame físico: a dor é reproduzida pela palpação da região anterior do tórax. Quando a dor torácica pode ser reproduzida pela palpação, a probabilidade de uma causa musculoesquelética aumenta significativamente, enquanto a probabilidade de causas viscerais graves (como infarto ou embolia) diminui.\n\nAnálise das Alternativas:\n\nAlternativa a: Incorreta. O infarto agudo do miocárdio em jovens de 25 anos é raro. Clinicamente, a dor isquêmica costuma ser opressiva (em aperto), retrosternal, podendo irradiar para o braço esquerdo ou pescoço, e não é influenciada pela palpação da parede torácica.\n\nAlternativa b: Incorreta. A broncopneumonia geralmente apresenta-se com quadro infeccioso associado, incluindo febre, prostração e tosse produtiva. No exame físico, esperam-se alterações na ausculta pulmonar, como a presença de estertores ou redução do murmúrio vesicular, o que foi negado no enunciado.\n\nAlternativa c: Incorreta. O refluxo gastroesofágico causa uma dor do tipo queimação (pirose), geralmente retrosternal ascendente, muitas vezes relacionada à alimentação ou ao decúbito, sem relação com a mecânica respiratória ou com a palpação da parede torácica.\n\nAlternativa d: Incorreta. A embolia pulmonar cursa com dor pleurítica e dispneia de início súbito. Embora a dor possa ser semelhante na respiração, a embolia não causa sensibilidade à palpação superficial do tórax. Além disso, habitualmente existem fatores de risco associados, como imobilização prolongada, cirurgias recentes ou neoplasias.\n\nAlternativa e: Correta. A costocondrite é uma síndrome dolorosa da parede torácica caracterizada por inflamação das cartilagens costais. É uma das causas mais comuns de dor torácica em pacientes jovens que procuram o pronto-socorro. O quadro clínico clássico é de dor localizada, muitas vezes pleurítica devido ao movimento da caixa torácica, cujo sinal patognomônico é a reprodução da dor pelo examinador ao pressionar as articulações costocondrais ou esternocostais. Como o paciente é jovem, não tem sinais sistêmicos e apresenta dor reproduzível à palpação, esta é a causa mais provável.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças de Partes Moles"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:42.943Z"
+  },
+  {
+    "id": "AJUDA_7d10e7af-464c-4053-9355-cd08173957bb",
+    "originalId": "7d10e7af-464c-4053-9355-cd08173957bb",
+    "statement": "Lactente, sexo feminino, acaba de completar de 15 meses de idade e é trazida para a Unidade Básica de Saúde para consulta de rotina quando o pediatra indica a realização das vacinas preconizadas para essa idade. De acordo com o Programa Nacional de Imunizações, que vacinas a criança deverá receber, considerando-se que recebeu todas as vacinas recomendadas até os doze meses de idade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reforço da anti-pneumocócica-10 valente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reforço da anti-meningococócica C.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Segunda dose da vacina para varicela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vacina contra a hepatite A.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Reforço da anti-meningocócica ACWY.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Essa questão exige o conhecimento do Calendário Nacional de Vacinação do Ministério da Saúde (PNI) para a faixa etária pediátrica. A criança em questão tem 15 meses e, de acordo com o enunciado, está com o esquema vacinal em dia até os 12 meses.\n\nAos 15 meses de idade, as vacinas preconizadas pelo PNI são:\n1. DTP (primeiro reforço);\n2. VOP - Vacina Oral Poliomielite (primeiro reforço);\n3. Hepatite A (dose única);\n4. Tetraviral (sarampo, caxumba, rubéola e varicela), que corresponde à segunda dose da tríplice viral e à primeira dose da varicela.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O reforço da vacina pneumocócica 10-valente é realizado aos 12 meses de idade. As doses anteriores ocorrem aos 2 e 4 meses de vida.\n\nAlternativa b) Incorreta. O reforço da vacina meningocócica C (conjugada) é administrado aos 12 meses de idade. O esquema primário ocorre aos 3 e 5 meses.\n\nAlternativa c) Incorreta. Aos 15 meses, a criança recebe a vacina tetraviral, que contém o componente da varicela, sendo considerada a primeira dose contra esta doença. A segunda dose da vacina varicela (monovalente) é administrada apenas aos 4 anos de idade.\n\nAlternativa d) Correta. A vacina contra a hepatite A é administrada em dose única aos 15 meses de idade, conforme o calendário oficial do PNI.\n\nAlternativa e) Incorreta. No PNI, a vacina meningocócica ACWY é destinada a adolescentes na faixa de 11 a 14 anos de idade. Para lactentes, o PNI disponibiliza apenas a meningocócica C. Embora a ACWY possa ser utilizada em calendários de clínicas privadas ou pela Sociedade Brasileira de Pediatria (SBP) em idades mais precoces, a questão pede especificamente o protocolo do Programa Nacional de Imunizações.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:42.943Z"
+  },
+  {
+    "id": "AJUDA_7d10ec16-f9b8-4014-bc0b-77392a7d5ee1",
+    "originalId": "7d10ec16-f9b8-4014-bc0b-77392a7d5ee1",
+    "statement": "Um teste rápido para triagem de infecção pelo HIV foi avaliado em uma população com suspeita clínica moderada, em contexto ambulatorial. O exame apresenta sensibilidade de 100% e especificidade de 98%. Considerando esses parâmetros e o papel do teste no raciocínio clínico e epidemiológico, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Todos os positivos têm HIV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nenhum paciente com HIV terá resultado negativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "2% dos doentes terão falso-negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todos os negativos estão livres da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão avalia a interpretação dos conceitos de Sensibilidade e Especificidade em testes diagnósticos:\n\nSensibilidade de 100%: significa que o teste identifica todos os indivíduos doentes. Portanto, a taxa de falso-negativos é de 0% (100% - 100%).\nEspecificidade de 98%: significa que o teste identifica corretamente 98% dos indivíduos sadios. Portanto, a taxa de falso-positivos entre os sadios é de 2% (100% - 98%).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Como a especificidade é de 98%, ocorrem 2% de resultados falso-positivos entre os indivíduos sem a doença. Logo, nem todas as pessoas com teste positivo são portadoras do HIV.\n\nAlternativa b: Correta. A sensibilidade de 100% traduz exatamente que o teste detecta a totalidade dos pacientes com a infecção, resultando em zero falso-negativos. Dessa forma, nenhum paciente portador de HIV apresentará resultado negativo.\n\nAlternativa c: Incorreta. A taxa de falso-negativos é de 0% (decorrente da sensibilidade de 100%). O valor de 2% corresponde aos falso-positivos entre as pessoas sadias (100% - especificidade de 98%).\n\nAlternativa d: Incorreta. Na prática clínica e no raciocínio epidemiológico, um teste negativo não assegura de forma absoluta que a pessoa está livre do vírus, pois fatores temporais e biológicos, como a janela imunológica, podem interferir no momento da coleta. A alternativa b é conceitualmente mais precisa por refletir a definição direta da sensibilidade informada.\n\nGabarito: Letra b.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "HIV",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:42.943Z"
+  },
+  {
+    "id": "AJUDA_7d11177e-76e7-4246-ad4c-3a7a82ae37eb",
+    "originalId": "7d11177e-76e7-4246-ad4c-3a7a82ae37eb",
+    "statement": "Um estudo foi realizado para avaliar a eficácia de uma nova vacina contra a gripe em uma população de idosos. Os participantes foram divididos aleatoriamente em dois grupos: um recebeu a vacina e o outro recebeu um placebo. Após um ano, a incidência de gripe foi comparada entre os dois grupos. O tipo de estudo epidemiológico utilizado foi:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estudo caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ensaio clínico randomizado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Estudo de coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estudo transversal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para identificar o tipo de estudo epidemiológico descrito, devemos analisar três características fundamentais presentes no enunciado: a natureza da exposição, a forma de alocação dos participantes e o acompanhamento temporal.\n\nA alternativa (a) está incorreta, pois o estudo caso-controle é um desenho observacional e retrospectivo. Ele inicia-se a partir de indivíduos que já apresentam o desfecho (casos) e os compara com indivíduos saudáveis (controles), buscando exposições passadas no prontuário ou na memória do paciente. No caso da questão, o estudo é prospectivo e envolve uma intervenção ativa.\n\nA alternativa (b) está correta. O ensaio clínico randomizado é um estudo experimental no qual o pesquisador interfere diretamente ao administrar uma substância (neste caso, a vacina). Os pilares desse desenho estão presentes no texto: a existência de um grupo-controle (placebo), a randomização (divisão aleatória dos participantes) para garantir que os grupos sejam comparáveis e o acompanhamento longitudinal para avaliar a incidência da doença, determinando a eficácia da intervenção.\n\nA alternativa (c) está incorreta. Apesar de o estudo de coorte também ser prospectivo e acompanhar grupos ao longo do tempo para observar a incidência de doenças, ele é um estudo observacional. No estudo de coorte, o pesquisador não intervém; ele apenas observa pessoas que já foram expostas a algo naturalmente ou por escolha própria. Não há o sorteio (randomização) de quem receberá a intervenção.\n\nA alternativa (d) está incorreta. O estudo transversal realiza uma análise em um único ponto no tempo, como uma fotografia instantânea. Ele é útil para medir a prevalência de uma condição em uma população, mas não consegue estabelecer uma sequência temporal de causa e efeito, nem acompanhar o surgimento de novos casos ao longo de um ano.\n\nPortanto, a presença de intervenção (vacina vs. placebo) associada à divisão aleatória (randomização) define o Ensaio Clínico Randomizado.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:42.943Z"
+  },
+  {
+    "id": "AJUDA_7d163231-757a-4872-b590-90d4605e7e30",
+    "originalId": "7d163231-757a-4872-b590-90d4605e7e30",
+    "statement": "O Diabetes tipo MODY (Maturity-Onset Diabetes of the Young) é uma forma monogênica de diabetes que pode ser confundida com DM1 ou DM2. Um adolescente de 15 anos, assintomático, apresenta hiperglicemia de jejum leve e persistente (110-125 mg/dL) detectada em exames de rotina. A HbA1c é de 6,2%. Ele não é obeso e não tem acantose. O pai e a avó paterna têm história de \"diabetes leve\" que não requer insulina. Os autoanticorpos (anti-GAD, anti-IA2) são negativos. Considerando as características clínicas, familiares e a fisiopatologia do diabetes monogênico tipo MODY, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O quadro é compatível com Diabetes Tipo 1 em fase de \"lua de mel\" (remissão parcial), devendo-se iniciar insulina em baixas doses para preservar a função residual das células beta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de MODY 3 (HNF1A), a forma mais comum, que cursa com glicosúria renal e risco elevado de complicações microvasculares, exigindo tratamento imediato com sulfonilureias em baixas doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A hipótese é de Diabetes Tipo 2 incipiente, devendo-se iniciar metformina, pois a ausência de obesidade não exclui a resistência insulínica em adolescentes com forte carga genética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O diagnóstico provável é MODY 2, causado por uma mutação no gene da Glucoquinase (GCK), que atua como o \"sensor de glicose\" da célula beta, elevando o ponto de ajuste (set point) para a secreção de insulina; o tratamento geralmente é apenas dietético, não sendo necessária medicação hipoglicemiante.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso:\nO paciente apresenta os critérios clássicos para a suspeita de diabetes tipo MODY (*Maturity-Onset Diabetes of the Young*): início da hiperglicemia antes dos 25 anos, história familiar consistente com herança autossômica dominante (três gerações afetadas), ausência de obesidade ou sinais de resistência insulínica (*acantose nigricans*) e autoanticorpos negativos (afastando etiologia autoimune).\n\nAlternativa a: Incorreta. O diabetes tipo 1 é caracterizado pela destruição autoimune das células beta. A negatividade dos autoanticorpos (anti-GAD e anti-IA2), somada à história familiar de diabetes leve que não requer insulina em múltiplas gerações, torna o diagnóstico de DM1 improvável, mesmo em fase de remissão parcial (lua de mel).\n\nAlternativa b: Incorreta. O MODY 3, causado por mutações no gene HNF1A, é uma forma comum de diabetes monogênico, mas apresenta características diferentes. Nele, a hiperglicemia costuma ser progressiva e mais acentuada, com risco significativo de complicações microvasculares a longo prazo. Embora apresente um baixo limiar renal para glicose (glicosúria), o quadro de hiperglicemia de jejum leve e estável descrito no enunciado é o selo clínico do MODY 2, e não do MODY 3.\n\nAlternativa c: Incorreta. Embora o diabetes tipo 2 esteja aumentando em jovens, ele está fortemente associado ao excesso de peso e a marcadores de resistência à insulina. O paciente em questão não é obeso e não apresenta acantose. A característica de hiperglicemia leve e persistente desde a juventude em uma linhagem familiar clara sugere fortemente uma causa monogênica.\n\nAlternativa d: Correta. O diagnóstico é de MODY 2, causado por uma mutação no gene da glicoquinase (GCK). A glicoquinase é a enzima responsável por catalisar a primeira etapa da glicólise na célula beta pancreática, atuando como o verdadeiro sensor de glicose do organismo. A mutação eleva o ponto de ajuste (*set point*) para a secreção de insulina; ou seja, o pâncreas só entende que deve liberar insulina quando a glicemia está em níveis mais altos que o normal. Isso resulta em uma hiperglicemia de jejum leve (geralmente entre 100 e 126 mg/dL) e uma HbA1c discretamente elevada, que permanecem estáveis por décadas. Como o risco de complicações microvasculares é comparável ao da população geral, o tratamento farmacológico raramente é necessário, sendo preconizado apenas o manejo dietético.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:05:42.943Z"
+  }
+]

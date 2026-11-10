@@ -1,0 +1,493 @@
+[
+  {
+    "id": "AJUDA_21f3b34b-846c-4294-9583-fd6544d243b2",
+    "originalId": "21f3b34b-846c-4294-9583-fd6544d243b2",
+    "statement": "Homem de 83 anos, acompanhado por uma equipe da estratégia de saúde da família na cidade do Rio de Janeiro, vai à consulta de rotina. Relata ser hipertenso e diabético e fazer uso regular de losartana, hidroclorotiazida, metformina e AAS. Esteve em consulta com médico particular por pressão familiar em outra cidade, quando visitava a filha, e foi prescrito um inibidor da bomba de prótons (IBP) para proteger o estômago do AAS, além de um polivitamínico para prevenção geral. O paciente relata dificuldade para tomar tantos comprimidos e que tem ficado constipado desde que começou a tomar as novas medicações. Está clinicamente estável e com exame físico normal. De acordo com os princípios dos níveis de prevenção na APS, a conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "substituir o IBP por outro protetor gástrico de menor risco, mantendo todos os outros medicamentos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "revisar todas as medicações em uso e considerar a suspensão do IBP, do AAS e do polivitamínico, mantendo apenas os outros fármacos",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "orientar a adesão rigorosa a todos os medicamentos, pois o paciente é idoso e tem maior necessidade de prevenção contra possíveis complicações",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "revisar todas as medicações em uso e considerar a suspensão do polivitamínico, prescrevendo medicação para constipação e mantendo os outros fármacos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda um conceito fundamental na Atenção Primária à Saúde (APS): a Prevenção Quaternária. O foco aqui é identificar o risco de sobremedicalização, proteger o paciente de intervenções desnecessárias e evitar a iatrogenia, especialmente em pacientes idosos com polifarmácia.\n\nAnálise do Caso Clínico:\nO paciente é um idoso de 83 anos em uso de seis medicamentos. Destes, a losartana, hidroclorotiazida e metformina tratam condições crônicas estabelecidas (hipertensão e diabetes). No entanto, o uso do AAS para prevenção primária (sem evento cardiovascular prévio relatado) em idosos acima de 70-80 anos é hoje contraindicado pela maioria das diretrizes internacionais devido ao elevado risco de sangramento, que supera o benefício cardiovascular. Consequentemente, o uso do IBP para proteger o estômago de um AAS que talvez nem devesse estar sendo usado torna-se redundante. O polivitamínico, por sua vez, não possui evidência científica de benefício para prevenção geral em pacientes sem deficiências específicas comprovadas.\n\nExplicação das Alternativas:\n\nAlternativa (a) Incorreta: Apenas substituir o IBP por outro protetor não resolve o problema central da polifarmácia e da prescrição desnecessária. O IBP pode causar efeitos colaterais como constipação, interferência na absorção de nutrientes e aumento do risco de infecções em idosos. Manter o AAS e o polivitamínico sem revisão mantém o paciente exposto a riscos desnecessários.\n\nAlternativa (b) Correta: Esta conduta aplica o princípio da prevenção quaternária através da desprescrição. Deve-se revisar a real indicação do AAS em um homem de 83 anos para prevenção primária; se o AAS for suspenso, a indicação do IBP (prescrito especificamente para \"proteção\") deixa de existir. O polivitamínico também deve ser questionado por falta de evidência e para diminuir a carga de comprimidos, respeitando a queixa do paciente e melhorando a adesão aos fármacos que são realmente essenciais (anti-hipertensivos e antidiabéticos).\n\nAlternativa (c) Incorreta: Orientar a adesão rigorosa a medicamentos desnecessários ou potencialmente prejudiciais é uma má prática clínica. No idoso, a redução de danos é prioritária. O excesso de medicamentos aumenta o risco de interações medicamentosas, quedas e eventos adversos, além de reduzir a qualidade de vida.\n\nAlternativa (d) Incorreta: Embora considere a suspensão do polivitamínico, esta alternativa sugere a prescrição de mais um medicamento (para constipação). Isso caracteriza a chamada cascata terapêutica, na qual um novo fármaco é prescrito para tratar o efeito colateral de outro (a constipação pode ser efeito do IBP ou do próprio excesso de fármacos). A conduta correta na APS é tentar remover a causa do sintoma antes de adicionar uma nova droga.",
+    "exam": "UERJ Pró-MFC",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2848bf5783b30b0c1fba581f598dbcfe53acec9d02ad0fe822e8b75ff94a09af.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1fe1d38991432c1ba94e1b082a01d8988e678063bbe27011fbf214b6200ccba7.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:39.902Z"
+  },
+  {
+    "id": "AJUDA_21fde9a0-223f-4e4e-a222-d3e6f0145b51",
+    "originalId": "21fde9a0-223f-4e4e-a222-d3e6f0145b51",
+    "statement": "Paciente com insuficiência renal crônica em hemodiálise apresenta parada cardiorrespiratória. O monitor mostra ritmo de assistolia. A gasometria revela potássio de 8,5 mEq/L. Além das manobras de reanimação cardiopulmonar, a medida medicamentosa prioritária para estabilização de membrana é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gluconato de cálcio intravenoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Bicarbonato de sódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Insulina regular com glicose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Poliestireno sulfonato de cálcio (Sorcal).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve uma emergência médica clássica: hipercalemia grave (potássio de 8,5 mEq/L) em um paciente com insuficiência renal crônica, culminando em parada cardiorrespiratória (PCR). Em situações de hipercalemia com repercussão eletrocardiográfica ou instabilidade, o objetivo imediato não é reduzir os níveis de potássio, mas sim proteger o coração.\n\nA alternativa (a) está correta. O gluconato de cálcio (ou o cloreto de cálcio) é a medida prioritária porque atua diretamente na estabilização da membrana dos cardiomiócitos. O cálcio antagoniza os efeitos tóxicos do potássio no potencial de membrana, reduzindo a excitabilidade celular e prevenindo arritmias fatais ou tratando a parada já instalada. Seu início de ação é imediato (1 a 3 minutos). É importante lembrar que o cálcio não altera a concentração plasmática de potássio; ele apenas \"blinda\" o coração temporariamente.\n\nA alternativa (b) está incorreta. O bicarbonato de sódio promove o deslocamento do potássio do meio extracelular para o intracelular (*shift* celular). Embora possa ser utilizado no manejo da hipercalemia, especialmente se houver acidose metabólica associada, ele não estabiliza a membrana cardíaca e tem eficácia lenta e variável na redução aguda do potássio, não sendo a prioridade imediata na PCR.\n\nA alternativa (c) está incorreta. A solução glicoinsulinada (insulina regular com glicose) é uma das medidas mais eficazes para reduzir os níveis séricos de potássio, promovendo a entrada do íon para dentro das células. No entanto, o início de ação ocorre em cerca de 15 a 30 minutos. Na vigência de uma parada cardiorrespiratória por hipercalemia, a estabilização da membrana com cálcio deve preceder ou ser concomitante a essa medida, pois o paciente precisa de proteção miocárdica imediata.\n\nA alternativa (d) está incorreta. O poliestireno sulfonato de cálcio (Sorcal) é uma resina de troca que atua no trato gastrointestinal para eliminar o potássio pelas fezes. Seu início de ação é muito lento (horas) e não tem qualquer papel no manejo agudo de uma parada cardiorrespiratória ou de uma hipercalemia com toxicidade cardíaca grave. Além disso, em pacientes em PCR, a via oral ou retal não é apropriada para o tratamento de emergência.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Distúrbios do Potássio",
+      "Parada Cardiorrespiratória (PCR)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:39.902Z"
+  },
+  {
+    "id": "AJUDA_21fe0ac3-6a95-4942-a951-064b1d34dd99",
+    "originalId": "21fe0ac3-6a95-4942-a951-064b1d34dd99",
+    "statement": "Durante plantão, médico é chamado para atendimento de paciente com 3 meses de idade. Observa-se que lactente está profundamente irritadiço, não sendo consolável. Seu acompanhante, a genitora, relata que, há cerca de 6 horas, a criança caiu de uma altura de cerca de 20 centímetros, e que não observou sintomas como vômitos, sonolência ou dificuldade respiratória. Ao exame físico, o médico notou sinais sugestivos de hemorragia retiniana. Acerca da abordagem da situação acima, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nos casos em que há suspeita de abusos, maus tratos ou negligência, a notificação é compulsória.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O médico deve fazer amplo diagnóstico diferencial antes de proceder à notificação, preservando os direitos da mãe e evitando falsa comunicação de crime.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O médico deve acionar imediatamente a força policial, bastando a confecção de boletim de ocorrência e o registro em prontuário para que o seu dever ético para o paciente esteja cumprido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Só se deve suspeitar de síndrome do bebê sacudido após a realização de exames de neuroimagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso apresenta um lactente de 3 meses com quadro de irritabilidade intensa e achado de hemorragia retiniana ao exame físico. A história relatada pela mãe (queda de apenas 20 centímetros) é incompatível com a gravidade dos achados clínicos. A presença de hemorragia retiniana em lactentes, associada ou não a hematoma subdural e edema cerebral, compõe a tríade clássica da Lesão Cerebral Traumática Abusiva, anteriormente conhecida como Síndrome do Bebê Sacudido. Diante de uma discrepância entre o mecanismo de trauma relatado e os achados físicos, a principal hipótese deve ser maus-tratos ou abuso infantil.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): De acordo com o Estatuto da Criança e do Adolescente (ECA) e normativas do Ministério da Saúde e do Conselho Federal de Medicina, a notificação de casos suspeitos ou confirmados de maus-tratos contra crianças e adolescentes é compulsória. Importante destacar que a lei exige apenas a suspeita fundamentada, e não a confirmação absoluta do crime, para que a notificação seja feita ao Conselho Tutelar ou autoridade competente. O objetivo é a proteção imediata da vítima.\n\nAlternativa B (INCORRETA): O médico não deve retardar a notificação aguardando um diagnóstico diferencial completo ou a exclusão de todas as outras causas. A proteção da criança é prioritária. A notificação de suspeita não é uma denúncia formal de crime com culpado constituído, mas um alerta para que os órgãos de proteção investiguem a segurança do ambiente em que a criança vive. Aguardar o fechamento do diagnóstico pode expor o lactente a novas agressões, possivelmente fatais.\n\nAlternativa C (INCORRETA): Embora casos de violência possam envolver a força policial, o fluxo assistencial e ético correto determina a notificação ao Conselho Tutelar da localidade. Além disso, o dever ético do médico não se resume apenas ao registro e comunicação; envolve garantir a estabilização clínica, a segurança do paciente (muitas vezes indicando a internação hospitalar para proteção e investigação) e o acolhimento necessário.\n\nAlternativa D (INCORRETA): A suspeita clínica deve ser imediata ao encontrar sinais de alerta, como a hemorragia retiniana ou a incompatibilidade da história clínica com o estado do paciente. Os exames de neuroimagem (como tomografia ou ressonância) são fundamentais para confirmar lesões intracranianas e documentar a extensão do dano, mas a suspeita diagnóstica e a conduta de proteção devem ser iniciadas assim que os sinais físicos sugestivos são detectados.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Segurança na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:39.902Z"
+  },
+  {
+    "id": "AJUDA_2202eaa8-c5db-40c6-9fb0-91e635f64a3f",
+    "originalId": "2202eaa8-c5db-40c6-9fb0-91e635f64a3f",
+    "statement": "Os testes diagnósticos são usados para avaliar o papel dos exames no diagnóstico de determinada condição de saúde na população. Considerando os exames para o diagnóstico de diabetes, é correto afirmar que o(a):",
+    "options": [
+      {
+        "id": "A",
+        "text": "teste oral de tolerância à glicose apresenta baixa sensibilidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "índice de resistência à insulina tem alto valor preditivo positivo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "frutosamina é útil para o diagnóstico precoce na gestação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hemoglobina glicada é o teste mais específico",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender a eficácia dos testes diagnósticos no Diabetes Mellitus, é fundamental analisar os conceitos de sensibilidade e especificidade de cada exame. Abaixo, detalho o porquê de cada alternativa estar correta ou incorreta:\n\nAlternativa A (Incorreta): O Teste Oral de Tolerância à Glicose (TOTG) é, na verdade, o exame com maior sensibilidade entre os testes diagnósticos habituais (glicemia de jejum, hemoglobina glicada e TOTG). Ele é capaz de identificar distúrbios no metabolismo da glicose mesmo quando os outros testes ainda apresentam resultados normais, sendo frequentemente utilizado para captar casos que a glicemia de jejum isolada deixaria passar.\n\nAlternativa B (Incorreta): O índice de resistência à insulina (como o HOMA-IR) é uma ferramenta utilizada principalmente em pesquisas clínicas ou para avaliar a fisiopatologia da síndrome metabólica, mas não possui papel no diagnóstico de Diabetes Mellitus. O diagnóstico da doença baseia-se nos níveis glicêmicos, e não na mensuração da resistência insulínica. Além disso, o Valor Preditivo Positivo (VPP) varia conforme a prevalência da condição na população estudada, não sendo uma característica intrínseca fixa do teste como a sensibilidade ou especificidade.\n\nAlternativa C (Incorreta): A frutosamina reflete o controle glicêmico de curto prazo (últimas 2 a 3 semanas), sendo útil em casos específicos em que a hemoglobina glicada não é confiável (como em anemias hemolíticas ou hemoglobinopatias). No entanto, ela não é indicada para o diagnóstico de diabetes, e muito menos para o diagnóstico precoce na gestação. O rastreio e diagnóstico do diabetes gestacional são realizados obrigatoriamente através da glicemia de jejum e do TOTG entre a 24ª e a 28ª semana de gestação.\n\nAlternativa D (Correta): A hemoglobina glicada (HbA1c), quando utilizada com o ponto de corte de 6,5% para diagnóstico, apresenta uma especificidade muito elevada (frequentemente superior a 95%). Isso significa que ela é excelente para confirmar o diagnóstico (poucos resultados falso-positivos). Em contrapartida, sua sensibilidade é considerada menor quando comparada ao TOTG, o que reforça que sua principal característica diagnóstica é justamente a alta especificidade. Portanto, a alternativa D está correta.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Testes Diagnósticos",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:39.902Z"
+  },
+  {
+    "id": "AJUDA_22097e2d-87ec-4c2c-9a69-ebacd41de1d8",
+    "originalId": "22097e2d-87ec-4c2c-9a69-ebacd41de1d8",
+    "statement": "Um lactente de sete meses de vida, previamente saudável, foi levado ao pronto atendimento por apresentar tosse há três dias, piora progressiva da respiração e queda da aceitação alimentar. Ao exame físico, o paciente mostrou-se alerta, porém cansado, FC = 156 bpm, FR = 58 irpm, Sp02 = 92%, temperatura = 37,6 °C. Ausculta pulmonar com sibilos difusos e tiragens intercostais leves. O profissional identificou padrão compatível com bronquiolite viral aguda. Qual alteração é mais frequentemente observada na fisiopatologia típica da bronquiolite viral aguda no lactente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipersecreção de muco com edema da via aérea pequena",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Obstrução das vias aéreas distais por debris inflamatórios e colapso alveolar",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Espasmo brônquico como mecanismo predominante",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "(0) Formação de granulomas bronquiolares",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente de sete meses apresenta o quadro clássico de bronquiolite viral aguda (BVA). Trata-se do primeiro episódio de sibilância em um lactente jovem, precedido por sintomas gripais e evoluindo com sinais de desconforto respiratório (taquipneia e tiragens) e queda na saturação de oxigênio. O principal agente etiológico é o Vírus Sincicial Respiratório (VSR).\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Embora o edema de via aérea e a produção de muco façam parte do processo inflamatório da bronquiolite, eles não são os elementos centrais ou mais específicos que explicam a gravidade da obstrução nesta patologia.\n\nAlternativa B: Correta. A fisiopatologia da bronquiolite viral aguda é caracterizada pela infecção do epitélio respiratório das pequenas vias aéreas, resultando em necrose celular e destruição dos cílios. Esse processo gera detritos (debris inflamatórios) que, em conjunto com o muco e a fibrina, formam tampões luminais. Como os bronquíolos dos lactentes são muito estreitos, esses tampões causam obstrução distal significativa. Quando a obstrução é total, ocorre a reabsorção do ar e o consequente colapso alveolar (atelectasia). Quando é parcial, ocorre aprisionamento de ar e hiperinsuflação pulmonar por um mecanismo de válvula.\n\nAlternativa C: Incorreta. O broncoespasmo (contração da musculatura lisa) é o mecanismo fisiopatológico predominante na asma. Na bronquiolite, a obstrução é predominantemente mecânica (edema, debris e muco). Além disso, lactentes jovens possuem musculatura lisa brônquica pouco desenvolvida, o que justifica a baixa resposta aos broncodilatadores nessa condição.\n\nAlternativa D: Incorreta. A formação de granulomas bronquiolares é um processo histopatológico associado a doenças inflamatórias crônicas, como a tuberculose ou a sarcoidose, ou a condições como a bronquiolite obliterante com pneumonia em organização (BOOP). Não é um achado da bronquiolite viral aguda, que é um processo infeccioso agudo e autolimitado.\n\nGabarito: Letra B.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:39.902Z"
+  },
+  {
+    "id": "AJUDA_220c895c-6988-41f9-b0dd-2fecd94fbbc4",
+    "originalId": "220c895c-6988-41f9-b0dd-2fecd94fbbc4",
+    "statement": "Homem de 44 anos, repositor de mercadorias em supermercado, procura a Unidade Básica de Saúde com queixa de dor lombar há duas semanas, iniciada após esforço físico no trabalho. Refere piora ao final do dia e melhora parcial com repouso e analgésicos comuns, sem irradiação para membros inferiores. Ao exame: dor à palpação paravertebral lombar, Lasègue negativo bilateralmente, com força, reflexos e sensibilidade preservados. Nega febre, perda ponderal, trauma, alterações esfincterianas ou outros sinais de alerta. Diante desse quadro, a conduta inicial mais adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar radiografia da coluna lombar para excluir alterações degenerativas relacionadas ao esforço ocupacional e instituir tratamento conservador após a análise dos exames.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "diagnosticar lombalgia mecânica inespecífica, orientar sobre o bom prognóstico, incentivar a manutenção das atividades habituais conforme a tolerância, associando medidas educativas e analgesia quando necessária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "prescrever anti-inflamatório não esteroidal e afastamento do trabalho por duas semanas, recomendando retorno às atividades apenas após resolução completa da dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "instituir tratamento analgésico e encaminhar o paciente para fisioterapia, adiando orientações quanto à manutenção das atividades até reavaliação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "encaminhar o paciente para avaliação ortopédica, considerando que a dor iniciou após esforço físico relacionado ao trabalho e pode caracterizar doença ocupacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resposta correta: letra B.\n\nResumo do caso: homem de 44 anos com dor lombar aguda/subaguda (duas semanas), de caráter mecânico (início após esforço, piora ao fim do dia, melhora com repouso), sem irradiação. O exame neurológico é normal, o Lasègue é negativo e não há sinais de alerta (red flags), como febre, perda ponderal, trauma, déficit neurológico ou alteração esfincteriana. Trata-se de lombalgia mecânica inespecífica, de baixo risco.\n\nConceito-chave: cerca de 90% das lombalgias são inespecíficas e têm bom prognóstico, com melhora na maioria dos casos em poucas semanas. As diretrizes (NICE, ACP, Ministério da Saúde) recomendam:\n- tranquilizar o paciente e explicar o bom prognóstico;\n- manter as atividades habituais conforme a tolerância, evitando repouso prolongado;\n- educação em saúde;\n- analgesia simples quando necessário (dipirona, paracetamol; AINE por curto período, se preciso);\n- não solicitar exames de imagem de rotina;\n- considerar medidas não farmacológicas, como exercício, calor local e terapia manual.\n\nAnálise das alternativas:\n\na) Incorreta. A radiografia não está indicada na ausência de red flags. Os achados degenerativos são comuns em assintomáticos e pouco correlacionam com sintomas. A imagem também não muda a conduta e expõe o paciente à radiação, além de poder gerar medicalização e ansiedade. Adiar o tratamento até o exame também é inadequado.\n\nb) Correta. Reúne o diagnóstico de lombalgia mecânica inespecífica, a tranquilização sobre o prognóstico, o estímulo a manter a atividade, a educação e a analgesia conforme necessário. É exatamente a conduta preconizada.\n\nc) Incorreta. O afastamento prolongado e a orientação de retornar só após resolução completa da dor contrariam as evidências. O repouso e o afastamento prolongados pioram o prognóstico e favorecem a cronificação e a incapacidade. O AINE isolado poderia ser usado, mas o restante da conduta está errado.\n\nd) Incorreta. A analgesia é adequada, mas adiar a orientação para manter as atividades é erro, pois essa orientação é central desde o início. A fisioterapia não é obrigatória na fase aguda inicial de um quadro de baixo risco e pode ser considerada se não houver melhora.\n\ne) Incorreta. Não há indicação de encaminhamento ao ortopedista: não há red flags nem déficit neurológico, e o manejo é na atenção primária. A relação com o trabalho não exige especialista de imediato. Pode-se considerar nexo ocupacional e emitir CAT, se pertinente, mas isso não muda a conduta clínica inicial.\n\nPonto de prova: lombalgia inespecífica sem sinais de alerta pede tranquilizar, manter-se ativo, analgesia e educação, sem imagem, sem repouso e sem encaminhamento. Se os sintomas persistirem por mais de 4 a 6 semanas, reavalie e considere fisioterapia e exercícios.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças da Coluna Vertebral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:39.902Z"
+  },
+  {
+    "id": "AJUDA_221b0ffd-1326-44ec-9a11-110dce1c611a",
+    "originalId": "221b0ffd-1326-44ec-9a11-110dce1c611a",
+    "statement": "Sobre a classificação de Laurén para o câncer gástrico, analise as sentenças:\n\n1. O tipo intestinal é mais comum em homens idosos e está associado a fatores ambientais e H. pylori.\n2. O tipo difuso ocorre mais em jovens, tem pior prognóstico e frequentemente apresenta células em anel de sinete.\n3. O tipo difuso apresenta estruturas glandulares bem formadas e disseminação hematogênica predominante.\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1-F, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1-V, 2-F, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1-V, 2-V, 3-F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "1-V, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise detalhada da questão sobre a classificação de Lauren para o adenocarcinoma gástrico:\n\nSentença 1: Verdadeira. O tipo intestinal é o subtipo histológico mais frequente em zonas de alta incidência de câncer gástrico. Ele se desenvolve a partir de lesões precursoras, como a metaplasia intestinal, em um processo conhecido como cascata de Correa. Esse processo é fortemente influenciado por fatores extrínsecos, como a dieta e a infecção crônica pela bactéria Helicobacter pylori. Epidemiologicamente, é mais comum no sexo masculino e em pacientes idosos.\n\nSentença 2: Verdadeira. O tipo difuso não possui uma relação clara com fatores ambientais ou lesões precursoras, sendo muitas vezes associado a fatores genéticos (como mutações no gene CDH1, que codifica a E-caderina). Ele acomete pacientes mais jovens em comparação ao tipo intestinal e apresenta um comportamento biológico mais agressivo, o que confere um pior prognóstico. Histologicamente, as células perdem a capacidade de adesão, infiltrando a parede gástrica individualmente; quando essas células acumulam muco citoplasmático que empurra o núcleo para a periferia, são chamadas de células em anel de sinete.\n\nSentença 3: Falsa. Esta sentença descreve as características do tipo intestinal, e não do tipo difuso. O tipo intestinal é que apresenta células organizadas em estruturas glandulares bem formadas. Quanto à disseminação, o tipo intestinal tem uma tendência maior para a via hematogênica (frequentemente para o fígado), enquanto o tipo difuso dissemina-se preferencialmente por via linfática e por contiguidade na cavidade peritoneal (carcinomatose).\n\nAnálise das alternativas:\n\na) Incorreta. A sentença 1 é verdadeira e a sentença 3 é falsa.\nb) Incorreta. A sentença 2 é verdadeira e a sentença 3 é falsa.\nc) Correta. Identifica adequadamente que as sentenças 1 e 2 são verdadeiras (V) e a sentença 3 é falsa (F).\nd) Incorreta. A sentença 3 é comprovadamente falsa ao atribuir formação glandular ao tipo difuso.\n\nGabarito: Alternativa (c).",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:39.902Z"
+  },
+  {
+    "id": "AJUDA_222056c9-a777-4043-ad11-50d584a84d3e",
+    "originalId": "222056c9-a777-4043-ad11-50d584a84d3e",
+    "statement": "Na Saúde Coletiva, diferentes teóricos contribuíram com abordagens teóricas específicas que influenciaram a compreensão do processo saúde-doença. Preencha corretamente as lacunas com os nomes dos autores associados às seguintes descrições:\n________ 1: Este autor é conhecido por abordar o habitus e os capitais (cultural, social, econômico e simbólico), evidenciando como as estruturas sociais influenciam o acesso à saúde e os determinantes sociais do adoecimento.\n________ 2: Este teórico propõe a análise das práticas de saúde como práticas sociais, destacando a interdisciplinaridade e a interação entre saberes biomédicos e sociais.\n________ 3: Este autor destaca a importância da abordagem crítica na Saúde Coletiva, enfatizando o papel das desigualdades estruturais e da determinação social da saúde no Brasil.\nAs lacunas são corretamente preenchidas, respectivamente, por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pierre Bourdieu, Schraiber e Paim.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Almeida Filho, Pierre Bourdieu e Nunes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pierre Bourdieu, Almeida Filho e Paim.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Schraiber, Paim e Nunes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nunes, Schraiber e Pierre Bourdieu.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é fundamental identificar os conceitos centrais de cada autor citado, que são referências fundamentais na construção do campo da Saúde Coletiva no Brasil e no mundo.\n\nAnálise das Lacunas:\n\nLacuna 1: Pierre Bourdieu. Sociólogo francês cuja obra é amplamente utilizada na Saúde Coletiva. Ele introduziu os conceitos de *habitus* (disposições internalizadas pelos indivíduos que guiam suas práticas) e de diferentes formas de capital (econômico, cultural, social e simbólico). Na saúde, esses conceitos explicam como a posição de um indivíduo na estrutura social determina seu acesso a serviços e sua exposição a riscos, indo além da biologia.\n\nLacuna 2: Lilia Blima Schraiber. Professora e pesquisadora brasileira, referência no estudo das práticas de saúde. Ela analisa o trabalho médico e a assistência à saúde como práticas sociais, inseridas em um contexto histórico e social. Sua obra destaca a importância da interação entre o saber técnico-biomédico e a dimensão social do cuidado.\n\nLacuna 3: Jairnilson Paim. É um dos principais teóricos da Reforma Sanitária Brasileira e da Saúde Coletiva. Paim defende a abordagem crítica, que entende a saúde não apenas como ausência de doença, mas como um processo determinado pelas condições sociais, econômicas e políticas de uma sociedade (Determinação Social da Saúde).\n\nAnálise das Alternativas:\n\nAlternativa (a) Correta: Pierre Bourdieu, Schraiber e Paim. Corresponde perfeitamente às descrições fornecidas nas lacunas 1, 2 e 3, respectivamente.\n\nAlternativa (b) Incorreta: Naomar Almeida Filho é conhecido por suas contribuições na epidemiologia crítica e na teoria da complexidade na saúde, não sendo o autor principal do conceito de *habitus* (que é de Bourdieu). Everardo Nunes é historiador das ciências sociais em saúde no Brasil, não sendo a descrição principal da lacuna 3.\n\nAlternativa (c) Incorreta: Embora cite Bourdieu e Paim corretamente para as lacunas 1 e 3, coloca Almeida Filho na lacuna 2. Como mencionado, Almeida Filho foca em modelos epidemiológicos e na ciência da saúde, enquanto Schraiber foca na análise das práticas sociais de saúde.\n\nAlternativa (d) Incorreta: Inverte a ordem dos autores. Schraiber não é a autora do conceito de *habitus* (lacuna 1), e Nunes não é o autor focado na determinação social crítica da saúde brasileira na mesma perspectiva que Paim (lacuna 3).\n\nAlternativa (e) Incorreta: Everardo Nunes (lacuna 1) foca na história e institucionalização da sociologia da saúde no Brasil, não no desenvolvimento original do conceito de capitais e *habitus*. Bourdieu (lacuna 3) é um sociólogo geral, enquanto a lacuna pede um autor focado na determinação social da saúde especificamente no cenário brasileiro, papel desempenhado por Paim.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:39.902Z"
+  },
+  {
+    "id": "AJUDA_22233222-6694-4d43-a7ae-15c65de432d0",
+    "originalId": "22233222-6694-4d43-a7ae-15c65de432d0",
+    "statement": "Paciente de 62 anos, com diagnóstico de hipertensão arterial e histórico de taquicardia supraventricular, inicia tratamento com um fármaco que também é utilizado para controle de tremores essenciais. A melhora do quadro hipertensivo se dá pela redução do débito cardíaco e da resistência vascular periférica.\nAssinale a alternativa que descreve o mecanismo de ação principal do propranolol:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inibição da enzima conversora de angiotensina, impedindo a formação de angiotensina II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Atuação como diurético de alça, aumentando a excreção de sódio e água nos túbulos renais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Antagonismo não seletivo dos receptores beta-adrenérgicos, bloqueando os efeitos da adrenalina e noradrenalina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Bloqueio dos canais de cálcio nas células musculares lisas dos vasos, resultando em vasodilatação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Estímulo de receptores alfa-2 adrenérgicos centrais, diminuindo o fluxo simpático para a periferia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise da Questão\n\nO enunciado descreve um fármaco capaz de tratar simultaneamente hipertensão arterial, taquicardia supraventricular e tremor essencial. Essas características são típicas do propranolol, um medicamento versátil na clínica médica.\n\nAlternativa a: Incorreta. A inibição da enzima conversora de angiotensina (ECA) é o mecanismo de ação dos medicamentos conhecidos como IECAs, como o enalapril e o captopril. Embora sejam drogas de primeira linha para hipertensão, elas não possuem indicação para o controle de tremores ou arritmias cardíacas.\n\nAlternativa b: Incorreta. Os diuréticos de alça, como a furosemida, atuam inibindo o transportador de sódio, potássio e cloro na alça de Henle, aumentando a excreção de água e eletrólitos. São usados principalmente em quadros de congestão (como na insuficiência cardíaca) e não para o manejo de arritmias supraventriculares ou tremor essencial.\n\nAlternativa c: Correta. O propranolol é um betabloqueador de primeira geração, classificado como não seletivo porque bloqueia tanto os receptores beta-1 quanto os beta-2 adrenérgicos. No coração (receptores beta-1), ele reduz a frequência cardíaca e a força de contração, diminuindo o débito cardíaco. Para a hipertensão, o uso crônico também leva a uma redução da resistência vascular periférica através de mecanismos como a diminuição da secreção de renina. O controle do tremor essencial ocorre pelo bloqueio de receptores beta periféricos nos músculos e possivelmente por ação no sistema nervoso central.\n\nAlternativa d: Incorreta. O bloqueio dos canais de cálcio é o mecanismo de ação de fármacos como anlodipino e nifedipino (di-hidropiridínicos), que causam vasodilatação, ou verapamil e diltiazem (não di-hidropiridínicos), que agem no coração. Embora o verapamil trate arritmias, nenhum bloqueador de canal de cálcio é eficaz no tratamento do tremor essencial.\n\nAlternativa e: Incorreta. O estímulo de receptores alfa-2 adrenérgicos centrais é o mecanismo de drogas como a clonidina e a metildopa. Esses fármacos agem no sistema nervoso central reduzindo a eferência simpática para a periferia, mas não são os medicamentos de escolha para o quadro clínico descrito, especialmente para o tremor essencial.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias",
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:39.902Z"
+  },
+  {
+    "id": "AJUDA_222ddc65-b951-4f45-a60e-79477dfc316a",
+    "originalId": "222ddc65-b951-4f45-a60e-79477dfc316a",
+    "statement": "A atenção à saúde da criança envolve diversas práticas e orientações para garantir seu desenvolvimento saudável. Dessa forma, avalie as seguintes afirmações como verdadeiras (V) ou falsas (F):\n\nI. A primeira consulta do recém-nascido deve ocorrer idealmente até o décimo quarto dia de vida.\nII. O Ministério da Saúde recomenda que sejam realizadas pelo menos doze consultas de rotina para crianças até o primeiro ano de vida.\nIII. A vacinação é uma parte essencial do cuidado com a saúde da criança.\n\nAssim, a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "F, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "V, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise detalhada das afirmações:\n\nAfirmação I: Falsa. De acordo com as diretrizes do Ministério da Saúde e da Sociedade Brasileira de Pediatria, a primeira consulta do recém-nascido deve ocorrer de forma precoce, idealmente na primeira semana de vida (entre o 3º e o 7º dia após o nascimento). Este atendimento inicial é crucial para estabelecer o vínculo com a família, avaliar a amamentação, verificar o resultado da triagem neonatal e monitorar possíveis riscos como a icterícia. O prazo de 14 dias mencionado na questão excede a recomendação oficial para o primeiro contato.\n\nAfirmação II: Falsa. O Ministério da Saúde estabelece um cronograma de consultas de puericultura no Caderno de Atenção Básica. Para o primeiro ano de vida, a recomendação é de 7 consultas de rotina, e não doze. O calendário preconizado ocorre nos seguintes períodos: 1ª semana, 1º mês, 2º mês, 4º mês, 6º mês, 9º mês e 12º mês. A partir do segundo ano de vida, as consultas passam a ser semestrais.\n\nAfirmação III: Verdadeira. A vacinação é considerada uma das ações mais custo-efetivas e essenciais na saúde da criança. O Programa Nacional de Imunizações (PNI) no Brasil é referência mundial, garantindo a proteção contra diversas doenças infectocontagiosas, reduzindo drasticamente as taxas de mortalidade e morbidade infantil.\n\nAnálise das alternativas:\n\nAlternativa a) F, F, V. Está correta, pois reflete exatamente as inconsistências técnicas das duas primeiras afirmações e a veracidade da terceira.\n\nAlternativa b) V, V, V. Incorreta, pois as afirmações I e II contrariam os protocolos de saúde pública vigentes no Brasil.\n\nAlternativa c) V, F, F. Incorreta, pois inverte a veracidade das afirmações I e III.\n\nAlternativa d) F, F, F. Incorreta, pois a afirmação III é inquestionavelmente verdadeira no contexto da saúde coletiva e pediátrica.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:16:39.902Z"
+  }
+]

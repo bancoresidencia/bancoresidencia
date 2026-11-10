@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_9644b30e-b876-49ac-b9e4-6e71f0500151",
+    "originalId": "9644b30e-b876-49ac-b9e4-6e71f0500151",
+    "statement": "Gestante de 12 semanas que apresentou sangramento importante e eliminou o material reproduzido na imagem abaixo: [Imagem de vesículas em 'cacho de uva'] Com relação a esse achado, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de um abortamento completo, situação clínica que o exame de ultrassonografia poderá confirmar, se a cavidade uterina estiver vazia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Corresponde à reação de Arias-Stella decorrente de uma prenhez ectópica íntegra, impõe-se o ultrassom transvaginal para localizar o saco ovular na tuba.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sugere ser uma anomalia proliferativa que acomete as células que compõem o tecido trofoblástico placentário, constituintes da vilosidade coriônica, bem como o extravilositário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Certamente a dosagem sérica quantitativa do fragmento beta da gonadotrofina coriônica humana (beta-hCG) já estará negativo, pois o material ovular foi eliminado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A eliminação de material com aspecto macroscópico de vesículas em \"cacho de uva\" é a apresentação clássica e patognomônica da Mola Hidatidiforme, uma forma de Doença Trofoblástica Gestacional (DTG). A imagem reflete a degeneração hidrópica das vilosidades coriônicas associada à proliferação anormal do trofoblasto.\n\nAlternativa A - Incorreta: Não se trata de um abortamento espontâneo habitual de uma gestação normal. O quadro clínico e o achado visual típico em cacho de uva caracterizam especificamente a mola hidatidiforme, que exige conduta e seguimento clínico-laboratorial distintos de um aborto comum.\n\nAlternativa B - Incorreta: O fenômeno de Arias-Stella é uma alteração microscópica/histopatológica das glândulas endometriais provocada pelo estímulo hormonal intenso da gestação (tópica ou ectópica), não correspondendo à eliminação macroscópica de vesículas.\n\nAlternativa C - Correta: A mola hidatidiforme consiste em uma anomalia proliferativa das células do trofoblasto placentário (citotrofoblasto e sinciciotrofoblasto vilositário e trofoblasto extravilositário). O edema do estroma dessas vilosidades hiperplásicas é o responsável pela formação das vesículas visíveis a olho nu.\n\nAlternativa D - Incorreta: Pela hipertrofia e proliferação acentuada do tecido trofoblástico, a produção de beta-hCG na mola é maciça, atingindo comumente títulos superiores a 100.000 mUI/mL. O hormônio não se torna negativo imediatamente após a eliminação ou esvaziamento uterino, exigindo monitorização semanal seriada para confirmar a regressão completa e descartar a evolução para Neoplasia Trofoblástica Gestacional.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:00.819Z"
+  },
+  {
+    "id": "AJUDA_9645976e-0784-4acc-bb28-9a793d8cadc0",
+    "originalId": "9645976e-0784-4acc-bb28-9a793d8cadc0",
+    "statement": "Um ensaio clínico sobre uma nova medicação para insuficiência cardíaca apresentou perda de 35% dos participantes durante o seguimento. Tal fato compromete principalmente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A validade externa do estudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A validade interna, pela possibilidade de viés de atrito.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O cálculo do risco relativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A significância estatística.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O cegamento dos avaliadores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O ponto central desta questão é o impacto das perdas de seguimento (dropouts) na integridade de um ensaio clínico. Quando uma proporção significativa de participantes abandona o estudo, a estrutura metodológica é seriamente abalada.\n\nAlternativa (a) Incorreta: A validade externa refere-se à capacidade de aplicar os resultados do estudo na população geral (generalização). Embora perdas extremas possam sugerir que a intervenção é difícil de ser tolerada na \"vida real\", o impacto primário e mais direto ocorre na qualidade dos dados internos do próprio experimento.\n\nAlternativa (b) Correta: A validade interna garante que o resultado observado é decorrente da intervenção e não de erros no desenho do estudo. Perdas de seguimento elevadas (geralmente acima de 20%) geram o chamado viés de atrito (ou viés de exclusão). Se os 35% que saíram do estudo o fizeram por motivos específicos (como efeitos colaterais graves ou falta de eficácia), os grupos que sobraram para a análise final não são mais comparáveis, destruindo o benefício da randomização inicial.\n\nAlternativa (c) Incorreta: O cálculo do risco relativo é uma operação matemática que ainda pode ser executada com os participantes restantes. O problema não é a impossibilidade de calcular, mas sim que o valor encontrado estará distorcido e não representará a realidade.\n\nAlternativa (d) Incorreta: A perda de participantes reduz o tamanho da amostra (poder estatístico), o que pode dificultar a obtenção de um valor de p significativo. No entanto, em epidemiologia, um erro sistemático (viés de atrito) é considerado uma falha mais grave do que a simples redução do poder estatístico, pois invalida a veracidade do dado obtido, independentemente do p-valor.\n\nAlternativa (e) Incorreta: O cegamento serve para evitar que o conhecimento sobre a medicação influencie a avaliação dos resultados. A perda de participantes não desfaz o cegamento original dos avaliadores, embora possa ocorrer de forma indireta se a perda for causada por um efeito colateral muito característico. O prejuízo direto da perda de 35% é, primordialmente, a quebra da comparabilidade entre os grupos.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:00.819Z"
+  },
+  {
+    "id": "AJUDA_964cd1c7-d059-4148-8e9a-f73ea8db5b13",
+    "originalId": "964cd1c7-d059-4148-8e9a-f73ea8db5b13",
+    "statement": "A taquipneia transitória do recém-nascido (TTRN) é uma condição benigna que ocorre em cerca de 1% a 2% de todos os nascimentos, acometendo RNT precoce e RNPT tardio que apresentam dificuldade respiratória logo após o nascimento e, em muitos dos casos, existe associação com realização de cesárea eletiva sem trabalho de parto prévio. Sobre este assunto, é correto afirmar, de forma mais assertiva, que",
+    "options": [
+      {
+        "id": "A",
+        "text": "a resolução clínica da TTRN ocorre em 3 a 5 dias e três fatores estão associados: atraso na absorção de líquido intra-alveolar fetal, deficiência leve de surfactante e pequeno grau de imaturidade pulmonar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a incidência de TTRN é diretamente proporcional à IG e afeta aproximadamente 70% dos RN entre 33 e 34 semanas, aproximadamente 25% entre 35 e 36 semanas e menos de 1% em RNT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "os fatores de risco maternos incluem parto antes da conclusão das 39 semanas de gestação, cesárea eletiva com trabalho de parto, diabetes tipo 2 e asma materna.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a absorção do líquido intra-alveolar feta inicia-se apenas durante o trabalho de parto e por mecanismos ainda pouco conhecidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA Taquipneia Transitória do Recém-Nascido (TTRN), também conhecida como Síndrome do Pulmão Úmido, é uma das causas mais comuns de desconforto respiratório no período neonatal imediato. A compreensão de sua fisiopatologia e fatores de risco é essencial para o diagnóstico diferencial com outras condições, como a Síndrome do Desconforto Respiratório (SDR).\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nA alternativa A é considerada a mais correta no contexto da questão, embora o tempo de resolução clássico descrito em muitos livros seja de 24 a 72 horas. No entanto, casos de TTRN podem se estender por até 3 a 5 dias (120 horas). Os três fatores citados resumem bem a etiologia: o atraso na reabsorção do líquido pulmonar fetal pelos canais de sódio (ENaC) é o mecanismo central; a deficiência leve ou inativação do surfactante ocorre porque o excesso de líquido e proteínas no alvéolo pode comprometer sua função; e o pequeno grau de imaturidade justifica a maior incidência em prematuros tardios (34 a 36 semanas) e recém-nascidos a termo precoces (37 a 38 semanas).\n\nPOR QUE A ALTERNATIVA (B) ESTÁ INCORRETA?\n\nA incidência da TTRN não é diretamente proporcional à idade gestacional (IG), mas sim inversamente proporcional (quanto menor a IG, maior o risco, dentro do espectro do RNPT tardio). Além disso, os valores estatísticos apresentados estão grosseiramente superestimados. A TTRN ocorre em cerca de 1% a 2% de todos os nascimentos. Uma incidência de 70% entre 33-34 semanas é irreal para essa patologia específica, aproximando-se mais do risco de membrana hialina (SDR) se não houver corticoide antenatal.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ INCORRETA?\n\nO erro principal desta alternativa reside na afirmação \"cesárea eletiva com trabalho de parto\". O principal fator de risco para a TTRN é justamente a cesariana eletiva SEM trabalho de parto prévio. É o início das contrações uterinas e as alterações hormonais do trabalho de parto (como o pico de catecolaminas e esteroides) que sinalizam ao pulmão do bebê para parar de secretar cloreto/líquido e passar a absorver sódio e água. Diabetes e asma materna são, de fato, fatores de risco, mas o erro sobre o trabalho de parto invalida a alternativa.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ INCORRETA?\n\nA afirmação está incorreta por dois motivos. Primeiro, a absorção do líquido pulmonar fetal não se inicia apenas durante o trabalho de parto; ela começa alguns dias antes do parto espontâneo, sob influência de mudanças hormonais. Segundo, os mecanismos são bem conhecidos e estudados: envolvem a ativação de canais epiteliais de sódio (ENaC) sensíveis à amilorida, que transportam o sódio para o interstício, gerando um gradiente osmótico que retira o líquido de dentro dos alvéolos para os vasos linfáticos e capilares pulmonares.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:00.819Z"
+  },
+  {
+    "id": "AJUDA_96535c96-5bab-446e-a19a-d53fc1afe552",
+    "originalId": "96535c96-5bab-446e-a19a-d53fc1afe552",
+    "statement": "A síndrome mão-pé-boca é uma doença viral comum na infância, caracterizada por lesões cutâneas e mucosas. Qual das seguintes alternativas NÃO descreve um achado típico da síndrome mão-pé-boca?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lesões vesiculares (pequenas bolhas) nas palmas das mãos e plantas dos pés.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lesões ulcerativas (aftas) na mucosa oral, especialmente na língua, gengiva e palato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Exantema maculopapular (manchas vermelhas e elevadas) no tronco e membros.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Febre alta persistente por mais de 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Mal-estar, inapetência e irritabilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A síndrome mão-pé-boca é uma enterovirose causada habitualmente pelo vírus Coxsackie A16 ou pelo enterovírus 71. O quadro clínico é geralmente autolimitado e possui manifestações bem definidas. Abaixo, analisamos cada alternativa:\n\nAlternativa a) Incorreta. As lesões vesiculares nas palmas das mãos e plantas dos pés são marcos patognomônicos da doença. Elas costumam ser pequenas, acinzentadas, com formato elíptico e cercadas por um halo eritematoso (vermelho).\n\nAlternativa b) Incorreta. O enantema oral é extremamente comum. Começa como pequenas vesículas que se rompem rapidamente, transformando-se em úlceras dolorosas (aftas). Elas podem ser encontradas na língua, gengiva, mucosa bucal e palato, dificultando a alimentação da criança.\n\nAlternativa c) Incorreta. Embora o nome da síndrome enfatize as extremidades, é frequente observar um exantema maculopapular em outras regiões, como nádegas, joelhos, cotovelos e, por vezes, de forma mais disseminada no tronco, especialmente em surtos causados por variantes genéticas específicas.\n\nAlternativa d) Correta (Gabarito). A febre na síndrome mão-pé-boca costuma ser o sintoma inicial (fase prodrômica), mas geralmente é de baixa a moderada intensidade e dura pouco tempo, entre 24 e 48 horas, raramente ultrapassando 3 a 5 dias. Uma febre alta e persistente por mais de 7 dias é um sinal de alerta para complicações (como envolvimento neurológico pelo enterovírus 71) ou indica que o diagnóstico pode ser outro (como a doença de Kawasaki). Portanto, não é um achado típico.\n\nAlternativa e) Incorreta. Sintomas sistêmicos inespecíficos, como mal-estar, inapetência (muitas vezes secundária à dor das lesões orais) e irritabilidade, são manifestações comuns na fase aguda da infecção viral em crianças.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:00.819Z"
+  },
+  {
+    "id": "AJUDA_9654c069-439b-4a7e-affb-797932b99c82",
+    "originalId": "9654c069-439b-4a7e-affb-797932b99c82",
+    "statement": "Na Caderneta de Saúde da Criança, há índices antropométricos e pontos de corte para classificação nutricional da criança, compartilhado com a família e os seus cuidadores.\n\nQual índice melhor indica o efeito cumulativo de situações adversas, e é mais sensível para aferir a qualidade de vida de uma população?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peso-para-idade (P/I).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estatura-para-idade (E/I).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Peso-para-estatura (P/E).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Índice de Massa Corporal (IMC)-para-idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Classificação de IMC em escores-z.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda os índices antropométricos utilizados para avaliar o estado nutricional infantil, exigindo o conhecimento sobre qual deles reflete condições crônicas e o histórico de saúde da criança.\n\nAlternativa a) Incorreta. O índice Peso-para-idade (P/I) reflete a massa corporal total da criança para sua idade. Embora seja útil para o monitoramento rotineiro e identifique precocemente o ganho ou a perda de peso, ele não permite distinguir se um baixo peso é decorrente de uma privação alimentar recente (aguda) ou de um problema antigo que já comprometeu a altura (crônico).\n\nAlternativa b) Correta. A Estatura-para-idade (E/I) é o índice que melhor expressa o crescimento linear. O crescimento em altura é um processo lento e que depende de condições favoráveis contínuas. Quando há um déficit neste índice (baixa estatura), entende-se que a criança sofreu agravos de saúde ou nutricionais de forma prolongada ou repetida ao longo do tempo. Por esse motivo, é o índice que melhor indica o efeito cumulativo de situações adversas e funciona como um excelente indicador de qualidade de vida e desenvolvimento socioeconômico de uma população.\n\nAlternativa c) Incorreta. O índice Peso-para-estatura (P/E) avalia se o peso da criança está adequado para a sua altura atual. Ele é o principal indicador de desnutrição aguda ou emaciação. Se uma criança para de comer ou fica doente, ela perde peso rapidamente, mas sua estatura demora a ser afetada. Portanto, este índice reflete o estado nutricional atual, e não o efeito cumulativo de longo prazo.\n\nAlternativa d) Incorreta. O IMC-para-idade tem aplicação semelhante ao Peso-para-estatura, sendo muito sensível para identificar magreza acentuada ou, principalmente, o excesso de peso (sobrepeso e obesidade). Ele reflete a harmonia da composição corporal no momento da avaliação, mas não é o marcador ideal para cronicidade ou histórico de privações.\n\nAlternativa e) Incorreta. O escore-z não é um índice antropométrico, mas sim uma medida estatística utilizada para classificar os índices (como P/I, E/I e IMC/I) em relação a uma população de referência. A alternativa confunde o método de classificação com o parâmetro biológico solicitado pela questão.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diagnóstico Nutricional"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:00.819Z"
+  },
+  {
+    "id": "AJUDA_9655b713-be33-407f-bac3-3b46e7c44b13",
+    "originalId": "9655b713-be33-407f-bac3-3b46e7c44b13",
+    "statement": "Durante um plantão em um Pronto-Atendimento Pediátrico, são atendidos dois irmãos, Lucas e Mateus, com quadros de diarreia aquosa, precedidas por vômitos, há 48 horas. Lucas é um lactente com 11 meses de idade, apresenta histórico de perdas maiores e está, ao exame físico, mais sonolento, com conjuntiva e mucosa oral secas, turgor pastoso e perfusão periférica de 4 segundos. Mateus, pré-escolar de 4 anos, não está mais vomitando e, no exame físico, apresenta-se em bom estado geral, com lágrimas presentes, saliva fluida e perfusão periférica de 1 segundo.\nDe acordo com as recomendações atuais do Ministério da Saúde, assinale a alternativa que apresenta uma adequada prescrição para essas crianças.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lucas deve receber, inicialmente, terapia de reidratação por via oral, durante um período entre 4 e 6 horas, e Mateus deve receber prescrição de zinco, 10 mg por dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lucas deve receber, inicialmente, terapia de reidratação por via oral, durante um período entre 4 e 6 horas, e Mateus deve receber prescrição de zinco, 20 mg por dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lucas deve receber, inicialmente, hidratação parenteral com soro fisiológico, 30 mL/kg em 30 minutos, e Mateus deve receber prescrição de zinco, 10 mg por dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lucas deve receber, inicialmente, hidratação parenteral com Ringer-lactato, 30 mL/kg em 1 hora, e Mateus deve receber prescrição de zinco, 10 mg por dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Lucas deve receber, inicialmente, hidratação parenteral com soro fisiológico, 30 mL/kg em 1 hora, e Mateus deve receber prescrição de zinco, 20 mg por dia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver essa questão, é necessário classificar o estado de hidratação de cada criança seguindo as diretrizes do Ministério da Saúde (AIDPI) e aplicar a conduta correta para cada caso.\n\nAnálise do caso Lucas:\nLucas tem 11 meses de idade e apresenta sinais clínicos graves: sonolência (alteração de consciência), turgor de pele pastoso e tempo de perfusão periférica de 4 segundos (muito acima do normal, que é de até 2 segundos). Esses sinais indicam desidratação grave ou choque, o que exige o Plano C de reidratação (via parenteral/venosa). De acordo com o Ministério da Saúde, a fase de expansão para menores de 1 ano deve ser feita em 6 horas, sendo a primeira etapa de 30 mL/kg em 1 hora e a segunda etapa de 70 mL/kg em 5 horas.\n\nAnálise do caso Mateus:\nMateus tem 4 anos e está em bom estado geral, com lágrimas presentes, saliva fluida e perfusão de 1 segundo. Ele não apresenta sinais de desidratação, sendo classificado no Plano A (tratamento domiciliar). No Plano A, deve-se aumentar a oferta de líquidos, manter a alimentação e prescrever zinco por 10 a 14 dias. A dose do zinco é de 10 mg/dia para menores de 6 meses e 20 mg/dia para crianças com 6 meses ou mais.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Lucas não pode receber terapia de reidratação oral inicial, pois seu estado é grave (Plano C), exigindo hidratação venosa. A dose de zinco para Mateus também está incorreta, pois ele deve receber 20 mg/dia por ter mais de 6 meses.\n\nAlternativa b) Incorreta. Novamente, Lucas necessita de hidratação parenteral (venosa), e não oral. A conduta para Mateus (20 mg de zinco) está correta isoladamente, mas a alternativa como um todo está errada.\n\nAlternativa c) Incorreta. O tempo de 30 minutos para a primeira fase de expansão (30 mL/kg) é reservado para crianças com 1 ano ou mais. Como Lucas tem 11 meses, o tempo correto é 1 hora. Além disso, a dose de zinco para Mateus deve ser de 20 mg.\n\nAlternativa d) Incorreta. Embora a prescrição para Lucas esteja correta (30 mL/kg em 1 hora), a dose de zinco para Mateus está errada. Ele tem 4 anos, logo a dose correta é 20 mg/dia.\n\nAlternativa e) Correta. Esta alternativa preenche todos os critérios: Lucas recebe hidratação parenteral com soro fisiológico na dose de 30 mL/kg em 1 hora (tempo correto para menores de 1 ano no Plano C) e Mateus recebe a dose correta de zinco para sua idade (20 mg/dia).",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diarreia",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:00.819Z"
+  },
+  {
+    "id": "AJUDA_9656ed1d-2d98-45b6-92a6-7c65d1d7f1cf",
+    "originalId": "9656ed1d-2d98-45b6-92a6-7c65d1d7f1cf",
+    "statement": "Paciente, 45 anos, com histórico de uso crônico de Anti-Inflamatórios Não Esteroides (AINEs), que apresenta dor epigástrica intensa piorando após as refeições e com endoscopia revelando uma úlcera gástrica. Nesse caso, o tratamento mais indicado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Omeprazol 20 mg de 12/12 horas por 14 dias, Amoxicilina 500 mg de 12/12 horas por 14 dias, Claritromicina 250 mg de 12/12 horas por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Omeprazol 20 mg de 12/12 horas por 14 dias, Metronidazol 500 mg de 12/12 horas por 14 dias, Claritromicina 500 mg de 12/12 horas por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Omeprazol 20 mg de 12/12 horas por 14 dias, Amoxicilina 1000 mg de 12/12 horas por 7 dias, Claritromicina 500 mg de 12/12 horas por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Omeprazol 20 mg de 12/12 horas por 14 dias, Amoxicilina 1000 mg de 12/12 horas por 14 dias, Claritromicina 500 mg de 12/12 horas por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o tratamento da doença ulcerosa péptica. Embora o enunciado mencione o uso de anti-inflamatórios (AINEs), a presença de uma úlcera gástrica exige, na prática clínica e em provas, a investigação e o tratamento de erradicação da bactéria Helicobacter pylori, que é o principal fator de risco para recidivas e complicações. As alternativas focam no esquema triplo clássico de erradicação.\n\nAnálise das alternativas:\n\na) Incorreta. As dosagens estão inadequadas. Para a erradicação do H. pylori, a dose preconizada de Amoxicilina é de 1000 mg (1 g) e a de Claritromicina é de 500 mg, ambas administradas de 12 em 12 horas. Doses menores aumentam o risco de falha terapêutica e resistência bacteriana.\n\nb) Incorreta. O Metronidazol não faz parte do esquema triplo de primeira linha padrão no Brasil. Ele costuma ser utilizado em esquemas de segunda linha ou em pacientes com alergia comprovada à penicilina (substituindo a Amoxicilina), o que não foi relatado no caso.\n\nc) Incorreta. Embora as dosagens das medicações estejam corretas, o tempo de tratamento de 7 dias caiu em desuso. Os consensos atuais (como o IV Consenso Brasileiro de Helicobacter pylori) recomendam a manutenção do tratamento por 14 dias para alcançar taxas de erradicação superiores a 80-90%.\n\nd) Correta. Esta alternativa apresenta o esquema triplo clássico padronizado: um Inibidor de Bomba de Prótons (Omeprazol 20 mg) associado a dois antibióticos (Amoxicilina 1000 mg e Claritromicina 500 mg). Todos devem ser administrados de 12 em 12 horas, preferencialmente antes das refeições, pelo período de 14 dias. Este é o tratamento de primeira escolha para pacientes diagnosticados com úlcera e infecção por H. pylori.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Doença Úlcerosa Péptica e Helicobacter Pylori"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:00.819Z"
+  },
+  {
+    "id": "AJUDA_965cf7f3-00f3-47a3-90df-3326c3457568",
+    "originalId": "965cf7f3-00f3-47a3-90df-3326c3457568",
+    "statement": "Mulher, 24 anos de idade, estudante universitária, vida sexual ativa. Desenvolveu febre (39°C), dor lombar direita, apesar de ter tomado nitrofurantoina por três dias, prescrita empiricamente pelo profissional do pronto-socorro devido à sintomas de cistite. Foi solicitado urocultura enquanto aguarda o resultado. Recomenda-se, para o tratamento empirico de pielonefrite aguda,",
+    "options": [
+      {
+        "id": "A",
+        "text": "aguardar o resultado da urocultura e mante a nitrofurantoina por via oral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "trocar a nitrofurantoina por amoxacilina/clavulonato 500/125 mg por via oral, 7dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar ciprofloxacin 500 mg de 12/12h, via oral por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "suspender nitrofurantoina e iniciar ceftriaxoral 2,0g endovenoso por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nA paciente apresenta um quadro clássico de progressão de uma infecção do trato urinário inferior (cistite) para uma infecção do trato urinário superior (pielonefrite aguda), caracterizada pelo surgimento de febre alta (39 °C) e dor lombar (sinal de Giordano positivo). O uso prévio de nitrofurantoína não impediu a progressão da doença porque este antibiótico, embora eficaz para cistite, possui baixa penetração no parênquima renal e não atinge níveis terapêuticos sistêmicos, sendo contraindicado para o tratamento de pielonefrite.\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. Não se deve aguardar o resultado da urocultura (que leva de 48 a 72 horas) para iniciar o tratamento em um paciente com febre e dor lombar, devido ao risco de sepse. Além disso, a manutenção da nitrofurantoína é um erro terapêutico grave, pois a droga não trata infecções no parênquima renal.\n\nAlternativa b) Incorreta. O uso de amoxicilina com clavulanato é considerado uma opção de segunda linha para pielonefrite. Sua eficácia é inferior à das quinolonas e, quando utilizada, as diretrizes costumam recomendar um tempo de tratamento mais prolongado (10 a 14 dias) em vez de 7 dias, além de apresentar maiores taxas de resistência bacteriana e recorrência.\n\nAlternativa c) Correta. As fluoroquinolonas, como o ciprofloxacino, são o tratamento de primeira escolha para a pielonefrite aguda não complicada em regime ambulatorial. Elas possuem excelente penetração no tecido renal e cobertura eficaz contra a Escherichia coli, o principal patógeno urinário. O esquema de 500 mg de 12/12 h por 7 dias é o padrão recomendado pelas principais diretrizes (IDSA e guias nacionais).\n\nAlternativa d) Incorreta. Embora a ceftriaxona seja um excelente antibiótico para pielonefrite, ela é administrada por via parenteral (EV ou IM). Reservamos o uso endovenoso por 7 dias ou mais para pacientes hospitalizados, com sinais de gravidade, instabilidade hemodinâmica ou que não toleram a via oral (vômitos). Para uma paciente jovem, sem comorbidades e com condições de tratamento ambulatorial, a via oral com quinolona é a conduta mais adequada. Além disso, o uso de ceftriaxona pode ser feito em dose única inicial (1 g) antes de migrar para o tratamento oral, mas não obrigatoriamente por 7 dias endovenosos neste contexto.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "ITU - Infecção do Trato Urinário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:00.819Z"
+  },
+  {
+    "id": "AJUDA_965e8d83-684e-4807-9492-919da815b184",
+    "originalId": "965e8d83-684e-4807-9492-919da815b184",
+    "statement": "Mulher, 36 anos de idade, HIV-positiva, com carga viral indetectável e CD4 = 830 células/mm³. Não teve alterações em duas citologias cervicovaginais oncológicas anteriores. Assinale a alternativa que apresenta a melhor estratégia de rastreio para câncer do colo do útero, para esta paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Citologia oncótico anual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Citologia e teste de HPV a cada 3 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colposcopia e citologia oncótica anual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Teste de HPV a cada 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O rastreamento do câncer do colo do útero em mulheres que vivem com HIV segue diretrizes específicas do Ministério da Saúde e do INCA, em razão do risco aumentado de persistência do HPV e progressão mais rápida para lesões pré-neoplásicas e invasoras. \n\nNessas pacientes, o rastreamento deve começar logo após o início da atividade sexual. A recomendação consiste em realizar a citologia oncótica (Papanicolau) a cada seis meses no primeiro ano de seguimento. Diante de dois exames consecutivos normais, o rastreamento passa a ser realizado anualmente, desde que a paciente mantenha níveis adequados de CD4 (acima de 200 células/mm³). Como a paciente já realizou dois exames anteriores sem alterações e apresenta CD4 de 830 células/mm³, ela deve manter o seguimento anual.\n\nAlternativa a: Correta. Conforme as diretrizes para mulheres imunocomprometidas, após duas citologias semestrais normais, o intervalo de rastreamento deve ser anual por tempo indeterminado, independentemente da carga viral ser indetectável.\n\nAlternativa b: Incorreta. O intervalo de 3 anos para a citologia aplica-se exclusivamente a mulheres imunocompetentes da população geral após dois exames anuais normais. Mulheres vivendo com HIV não devem ter o intervalo estendido para 3 anos.\n\nAlternativa c: Incorreta. A colposcopia é um método diagnóstico e não deve ser utilizada como método de rastreamento de rotina em pacientes assintomáticas e com citologias prévias normais. Está reservada para a investigação de alterações citológicas ou achados visuais suspeitos no exame físico.\n\nAlternativa d: Incorreta. A testagem para HPV a cada 5 anos é uma estratégia indicada para a população geral em diretrizes internacionais e protocolos de transição no Brasil. Para pacientes HIV-positivas, a vigilância necessita de intervalos mais curtos devido ao risco biológico de rápida progressão de lesões.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:00.819Z"
+  },
+  {
+    "id": "AJUDA_966af996-e059-4a93-8aa4-7acf813eac3c",
+    "originalId": "966af996-e059-4a93-8aa4-7acf813eac3c",
+    "statement": "Mulher, 19 anos, procura atendimento médico queixando-se de cólicas menstruais intensas desde a sua primeira menstruação, aos 12 anos. A dor é cíclica, iniciando-se um dia antes do fluxo menstrual e persistindo nos dois primeiros dias, com intensidade que a impede de frequentar a escola e realizar suas atividades diárias, não sendo progressiva. Nega dispareunia, sangramento uterino anormal ou outros sintomas ginecológicos. Ao exame físico, não são identificadas alterações. Considerando o caso clínico apresentado, assinale a alternativa que apresenta o diagnóstico mais provável e a conduta inicial mais adequada, respectivamente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dismenorreia secundária – solicitar ultrassonografia pélvica e prescrever analgésicos opioides.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dismenorreia primária – orientar medidas de higiene menstrual e prescrever anti-inflamatórios não esteroides (AINEs).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Endometriose – indicar laparoscopia diagnóstica e terapêutica e prescrever AINEs.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doença inflamatória pélvica – iniciar antibioticoterapia de amplo espectro e solicitar exames para pesquisa de clamídia e gonococo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nTrata-se de uma paciente jovem com quadro de cólica menstrual cíclica que se inicia imediatamente antes do fluxo e dura os primeiros dois dias, com início concomitante à menarca, não progressiva e com exame ginecológico estritamente normal, sem sintomas de alarme como dispareunia de profundidade ou sangramento uterino anormal. Esse quadro é típico da dismenorreia primária, cuja fisiopatologia decorre da produção excessiva de prostaglandinas (principalmente PGF2-alfa) pelo endométrio secretor, provocando hipercontratilidade miometrial e isquemia uterina transitória.\n\nAnálise das alternativas:\n\na) Incorreta. A dismenorreia secundária decorre de afecções estruturais ou patologias pélvicas subjacentes (como endometriose, miomas uterinos ou adenomiose), costuma surgir anos após a menarca, tende a ser progressiva e frequentemente se associa a alterações no exame físico. Além disso, opioides não constituem terapia de primeira linha para o manejo da dor menstrual.\n\nb) Correta. O diagnóstico é de dismenorreia primária devido à cronologia clássica (desde a menarca), ausência de alterações ao exame físico e caráter não progressivo. O tratamento de primeira escolha baseia-se no uso de anti-inflamatórios não esteroides (AINEs), que inibem a enzima ciclo-oxigenase (COX) e reduzem diretamente a síntese de prostaglandinas, aliados a orientações gerais e medidas de higiene menstrual.\n\nc) Incorreta. A endometriose é uma das principais causas de dismenorreia secundária, caracterizando-se tipicamente por dor progressiva que piora ao longo dos anos, dispareunia profunda, dor pélvica acíclica e, muitas vezes, nodularidades ou dor à palpação de ligamentos uterossacros ao exame físico. A laparoscopia é um método invasivo e não está indicada como abordagem inicial em casos com padrão clínico típico de dismenorreia primária.\n\nd) Incorreta. A doença inflamatória pélvica (DIP) é um processo infeccioso agudo do trato genital superior, que cursa classicamente com dor pélvica contínua (não cíclica), corrimento vaginal patológico, febre e dor intensa à mobilização do colo uterino e palpação anexial no exame físico, quadro incompatível com a história clínica descrita.\n\nGabarito oficial: Letra b.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:20:00.819Z"
+  }
+]

@@ -1,0 +1,528 @@
+[
+  {
+    "id": "AJUDA_627ac6a6-69d5-4b75-877c-045c971736d1",
+    "originalId": "627ac6a6-69d5-4b75-877c-045c971736d1",
+    "statement": "Mulher, 72 anos de idade, encontra-se no sexto pós-operatório de troca de valva mitral. Desde a operação não evacuou, e há dois dias não elimina gases. Nas últimas 24 horas, evoluiu com distensão e dor abdominal. Tem diabetes melito controlado e antecedente de apendicectomia por incisão de McBurney. Ao exame físico, encontra-se em regular estado geral, descorada, eupneica em ar ambiente; exame torácico com incisão de esternotomia sem sinais de complicação e dreno de mediastino com baixo débito; abdome: distendido, com ruídos diminuídos, timpânico, pouco doloroso à palpação difusa sem sinais de irritação peritoneal. \n\n• Exames laboratoriais: \nHb: 8,9 g/dL\nLeucócitos: 10.461/mm3\nCr: 2,5 mg/dL\nUr: 72 mg/dL\nPCR: 79 mg/L\nK+: 3,1 mEq/L\nNa+: 134 mEq/L\nFoi realizada tomografia, conforme imagens a seguir: \n\nAssinale a alternativa que apresenta o diagnóstico mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gastroparesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pseudo-obstrução cólica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Obstrução por bridas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Isquemia mesentérica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve uma paciente idosa no sexto pós-operatório de cirurgia cardíaca de grande porte que evolui com parada de eliminação de gases e fezes, distensão abdominal progressiva, ruídos diminuídos e dor discreta sem sinais de peritonite. Esse contexto, associado a fatores predisponentes como cirurgia extra-abdominal recente e hipocalemia (K+ de 3,1 mEq/L), é a apresentação clássica da pseudo-obstrução cólica aguda, também conhecida como Síndrome de Ogilvie.\n\nAs imagens de tomografia computadorizada (cortes axiais e reconstrução coronal) confirmam a hipótese ao evidenciarem dilatação acentuada de segmentos colônicos com níveis hidroaéreos, sem identificação de lesão obstrutiva mecânica intrínseca ou ponto de transição abrupto, caracterizando uma paralisia funcional da motilidade do cólon.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A gastroparesia consiste no retardo do esvaziamento gástrico, cursando predominantemente com náuseas, vômitos pós-prandiais e plenitude epigástrica, com estômago dilatado à imagem, e não com dilatação maciça do intestino grosso.\n\nAlternativa b: Correta. A pseudo-obstrução cólica aguda é caracterizada pela dilatação colônica maciça na ausência de obstrução mecânica intraluminal ou extrínseca. Decorre de um desbalanço no sistema nervoso autônomo entérico, sendo frequente em pacientes idosos, graves, em pós-operatório de cirurgias ortopédicas ou cardiotorácicas, e deflagrada por distúrbios metabólicos e hidroeletrolíticos (como a hipocalemia).\n\nAlternativa c: Incorreta. Embora a paciente tenha antecedente de apendicectomia, as bridas causam obstrução mecânica de intestino delgado, caracterizando-se por dilatação de alças delgadas com ponto de transição nítido e cólon desabado, padrão oposto ao observado na tomografia.\n\nAlternativa d: Incorreta. A isquemia mesentérica aguda costuma apresentar-se clinicamente com dor abdominal intensa e desproporcional ao exame físico, além de rápida deterioração clínica e sinais tomográficos como espessamento parietal, pneumatose intestinal, gás no sistema portal ou falhas de enchimento vascular, achados ausentes no caso.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório",
+      "Abdome Agudo Obstrutivo",
+      "Distúrbios do Potássio",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/75c39f3a95350504b0318737c8675c6f5b65259a43069d57c37c24da754338f1.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_627ac6a6-69d5-4b75-877c-045c971736d1_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/9f5aa9c233cb856815fae3b108166707d6dd4eb062a408023d51d5e33c8a0491.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_627ac6a6-69d5-4b75-877c-045c971736d1_img_1.webp"
+      },
+      {
+        "order": 2,
+        "originalUrl": "https://files.ajudamedico.com/files/65429091ba56e31ec443f2401672f2e826a72070c8c399ac81387b94ae4bee70.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_627ac6a6-69d5-4b75-877c-045c971736d1_img_2.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:10.230Z"
+  },
+  {
+    "id": "AJUDA_627d4f69-c128-47c1-8b61-67a5213d6d1b",
+    "originalId": "627d4f69-c128-47c1-8b61-67a5213d6d1b",
+    "statement": "Homem de 47 anos procura atendimento por apresentar episódios de sangramento retal intermitente e alteração recente do hábito intestinal. Refere tabagismo de longa data e consumo frequente de álcool. Possui como comorbidades hipertensão, dislipidemia e aumento da circunferência abdominal. Colonoscopia evidenciou lesão vegetante em sigmoide, confirmada por biópsia como adenocarcinoma colorretal.\n\nConsiderando os fatores de risco associados ao câncer colorretal e as modalidades terapêuticas atuais, é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "existe uma associação entre a síndrome metabólica e a mortalidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o tabagismo pode causar disbiose intestinal, contribuindo para a gênese tumoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a quimioterapia neoadjuvante é ineficaz para abordagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a cirurgia laparoscópica é inferior à cirurgia aberta em termos de recorrência local e sobrevida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o consumo de álcool carece de vínculos com a mortalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a: Esta é a alternativa correta. A síndrome metabólica é caracterizada por um conjunto de fatores que o paciente apresenta, como hipertensão, dislipidemia e obesidade abdominal (aumento da circunferência abdominal). Essa condição gera um estado de inflamação crônica de baixa intensidade e hiperinsulinemia, que favorecem a proliferação celular e a angiogênese. Estudos epidemiológicos robustos confirmam que a presença da síndrome metabólica está associada não apenas a um maior risco de desenvolver o câncer colorretal, mas também a taxas mais elevadas de mortalidade geral e específica pela doença.\n\nAlternativa b: Esta alternativa está incorreta. Embora o tabagismo seja um fator de risco documentado para o câncer colorretal, associando-se ao desenvolvimento de adenomas e tipos específicos de tumores (via de instabilidade de microssatélites), a explicação da gênese tumoral via disbiose intestinal induzida pelo fumo é uma hipótese em estudo e não o mecanismo fisiopatológico principal ou clássico estabelecido pela literatura acadêmica para provas de residência. A alternativa A apresenta uma relação epidemiológica muito mais consolidada.\n\nAlternativa c: Esta alternativa está incorreta. A terapia neoadjuvante é uma das pedras angulares do tratamento do câncer colorretal, especialmente no câncer de reto localmente avançado. No caso do cólon (como o sigmoide), a neoadjuvância pode ser considerada em casos selecionados para redução do estadiamento (downstaging) e melhora das taxas de ressecção. Afirmar que a modalidade é ineficaz contraria as diretrizes oncológicas atuais que buscam a individualização do tratamento.\n\nAlternativa d: Esta alternativa está incorreta. Grandes estudos multicêntricos e randomizados (como os estudos COST, COLOR e CLASICC) já comprovaram a não inferioridade da cirurgia laparoscópica em relação à cirurgia aberta no tratamento do câncer colorretal. Os desfechos de sobrevida global, sobrevida livre de doença e taxas de recorrência local são equivalentes, com a laparoscopia oferecendo vantagens no período pós-operatório imediato, como menor dor e recuperação mais rápida.\n\nAlternativa e: Esta alternativa está incorreta. O consumo de álcool é um fator de risco modificável bem estabelecido para o câncer colorretal. Existe uma relação direta entre a quantidade ingerida e o aumento do risco; o consumo pesado de álcool está associado a uma maior incidência da neoplasia e também a piores índices de sobrevida, possuindo, portanto, vínculos claros com a mortalidade.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:10.230Z"
+  },
+  {
+    "id": "AJUDA_62839cdd-dcce-4f1f-a5a0-21c1f878a9d0",
+    "originalId": "62839cdd-dcce-4f1f-a5a0-21c1f878a9d0",
+    "statement": "Considerando as últimas Diretrizes Brasileira de Dispositivos Cardíacos Eletrônicos Implantáveis – 2023, assinale a alternativa CORRETA para a recomendação de implante de marca-passo definitivo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pacientes com bradiarritmias noturnas, sem cardiopatia significativa, assintomáticos no período de vigília, com SAOS nos quais não foi realizado o tratamento específico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Paciente assintomático(a) e massagem do seio carotídeo com resposta cardioinibidora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pacientes assintomáticos com distúrbio da condução intraventricular isolado e condução AV 1:1 na ausência de outras indicações para implante de MP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em pacientes com bloqueio de ramo alternante, independentemente de sintomas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Paciente assintomático, com sintoma documentado e claramente não relacionado à bradicardia. paciente sintomático com bradicardia decorrente de causas reversíveis, incluindo-se fármacos não essenciais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para responder corretamente a esta questão, devemos considerar as recomendações da Diretriz Brasileira de Dispositivos Cardíacos Eletrônicos Implantáveis de 2023 sobre as indicações de marca-passo (MP) definitivo.\n\nAlternativa a) Incorreta. Em pacientes com bradiarritmias noturnas associadas à Síndrome da Apneia Obstrutiva do Sono (SAOS), a conduta inicial deve ser o tratamento da própria apneia (como o uso de CPAP). O implante de MP não é indicado se o paciente for assintomático durante a vigília e se o tratamento específico para a SAOS ainda não tiver sido realizado ou otimizado, pois a bradicardia costuma ser uma resposta fisiopatológica aos eventos respiratórios.\n\nAlternativa b) Incorreta. A hipersensibilidade do seio carotídeo com resposta cardioinibidora (pausa maior que 3 segundos na massagem) só tem indicação de marca-passo se o paciente for sabidamente sintomático, apresentando síncopes recorrentes. Em pacientes assintomáticos, o achado isolado de uma resposta cardioinibidora durante a manobra não justifica o implante do dispositivo.\n\nAlternativa c) Incorreta. Pacientes assintomáticos que apresentam apenas distúrbios de condução intraventricular (como bloqueio de ramo direito ou esquerdo isolados) e que mantêm a condução atrioventricular 1:1 não possuem indicação para implante de marca-passo. É necessário que existam outros critérios de gravidade ou sintomas associados para que a intervenção seja considerada.\n\nAlternativa d) Correta. O bloqueio de ramo alternante é caracterizado pela evidência eletrocardiográfica de bloqueio de ramo direito e bloqueio de ramo esquerdo em momentos diferentes, ou bloqueio de um ramo com alternância dos hemibloqueios no outro ramo. Esse achado é um sinal de doença avançada e difusa do sistema de condução infra-hisiano, com altíssimo risco de progressão súbita para bloqueio atrioventricular (BAV) total. Por isso, as diretrizes recomendam o implante de marca-passo definitivo de forma profilática, independentemente da presença de sintomas.\n\nAlternativa e) Incorreta. Esta alternativa descreve contraindicações (Classe III) para o implante de marca-passo. Se os sintomas documentados claramente não possuem relação com a bradicardia, ou se a bradicardia for causada por fatores reversíveis ou transitórios (como o efeito de medicamentos que podem ser suspensos, distúrbios hidroeletrolíticos ou hipotermia), o implante definitivo não deve ser realizado.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Bradiarritmias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:10.230Z"
+  },
+  {
+    "id": "AJUDA_62891aac-572b-49aa-b08e-3fcd3079b856",
+    "originalId": "62891aac-572b-49aa-b08e-3fcd3079b856",
+    "statement": "As fístulas são comunicações anormais entre superfícies epitelizadas, podendo se formar entre órgãos do mesmo sistema ou entre sistemas diferentes. Elas são frequentemente adquiridas, resultado de traumas, intervenções cirúrgicas ou condições patológicas subjacentes. Um dos mais comuns predisponentes ao desenvolvimento de fístulas adquiridas é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presença de hemorragia ativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença intestinal intrínseca, como a Doença de Crohn.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Infecções de pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Exposição a altas temperaturas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DEFINIÇÃO E CONTEXTO:\nUma fístula é definida como uma comunicação anormal entre duas superfícies epitelizadas, como entre dois órgãos ocos ou entre um órgão interno e a pele. Para que uma fístula se forme, geralmente é necessário um processo inflamatório ou isquêmico crônico que atravesse as camadas teciduais, permitindo a criação de um trajeto persistente.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A hemorragia ativa é uma intercorrência aguda decorrente da ruptura de vasos sanguíneos. Embora possa ocorrer simultaneamente a uma fístula (como na fístula aortoentérica), a hemorragia em si não é a causa ou o fator predisponente para a formação do trajeto epitelizado; ela é uma consequência de uma lesão vascular.\n\nAlternativa b) Correta. A Doença de Crohn é o exemplo clássico de doença intestinal intrínseca que predispõe à formação de fístulas. Isso ocorre porque a inflamação na Doença de Crohn é transmural, ou seja, acomete todas as camadas da parede intestinal (mucosa, submucosa, muscular e serosa). Essa inflamação profunda leva à formação de úlceras penetrantes que podem aderir a órgãos adjacentes ou à parede abdominal, criando trajetos fistulosos (enteroentéricos, enterovesicais, enterocutâneos ou perianais).\n\nAlternativa c) Incorreta. Infecções de pele isoladas e superficiais, como celulites ou impetigo, não costumam resultar em fístulas. Embora abscessos profundos (como os perianais) possam evoluir para fístulas, a alternativa é genérica e, comparativamente, as doenças inflamatórias intestinais são causas muito mais prevalentes e características de fístulas complexas na prática clínica e em provas de residência.\n\nAlternativa d) Incorreta. A exposição a altas temperaturas causa queimaduras térmicas e necrose tecidual. Embora uma queimadura grave possa destruir tecidos e gerar comunicações anômalas durante o processo de cicatrização ou perda de substância, isso não é considerado um fator predisponente comum ou típico para a formação de fístulas adquiridas no contexto médico geral.\n\nCONCLUSÃO:\nO conhecimento da natureza transmural da Doença de Crohn é fundamental para responder a essa questão, consolidando-a como o principal fator predisponente entre as opções apresentadas. Além da Doença de Crohn, outras causas comuns de fístulas incluem complicações cirúrgicas, diverticulite, neoplasias e radioterapia.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Doença Inflamatória Intestinal",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:10.230Z"
+  },
+  {
+    "id": "AJUDA_6292bd09-4c0f-4733-a539-981540adba2e",
+    "originalId": "6292bd09-4c0f-4733-a539-981540adba2e",
+    "statement": "Assinale a assertiva correta sobre distúrbios eletrolíticos moderados a graves no pós-operatório.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A reposição enteral ocorre de forma mais confiável e mais rápida do que a reposição intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Irrigação vesical contínua, íleo adinâmico e terapia nutricional parenteral são causas remotas desses distúrbios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Potássio pode ser pouco tolerado em reposição por via oral devido a náuseas, vômitos e dor abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Cálcio e magnésio podem ser pouco tolerados em reposição por via oral devido a náuseas e constipação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo e as causas dos distúrbios hidroeletrolíticos no período pós-operatório, exigindo conhecimento sobre a farmacologia dos eletrólitos e a fisiopatologia cirúrgica.\n\nAlternativa A: Incorreta. Em distúrbios moderados a graves, a reposição intravenosa (IV) é preferível por ser mais rápida e previsível. A via enteral depende da absorção intestinal, que pode estar prejudicada no pós-operatório devido ao íleo paralítico ou à manipulação cirúrgica. Além disso, a via IV permite um controle mais preciso da velocidade de infusão e da concentração plasmática.\n\nAlternativa B: Incorreta. Na verdade, estas são causas frequentes e importantes de distúrbios eletrolíticos, e não \"causas remotas\". A irrigação vesical contínua (comum em cirurgias urológicas como a RTU de próstata) pode levar à hiponatremia por diluição. O íleo adinâmico altera a reabsorção de líquidos e eletrólitos, e a Terapia Nutricional Parenteral (TNP) exige monitoramento rigoroso, pois pode causar diversas alterações metabólicas, incluindo a síndrome de realimentação (hipofosfatemia, hipocalemia e hipomagnesemia).\n\nAlternativa C: Correta. O potássio, especialmente na forma de cloreto de potássio (KCl) via oral, é conhecido por ser altamente irritante para a mucosa gastrointestinal. Seu uso pode provocar epigastralgia, náuseas, vômitos e, em casos mais graves, até ulcerações ou estenoses no trato digestivo. Por isso, em pacientes com intolerância gástrica ou distúrbios mais graves, opta-se frequentemente pela via intravenosa (respeitando-se os limites de concentração e velocidade de infusão).\n\nAlternativa D: Incorreta. Embora o cálcio possa causar constipação, o magnésio via oral é classicamente associado à diarreia, e não à constipação. O magnésio atua como um laxante osmótico, retendo água no lúmen intestinal. Portanto, a afirmação está incorreta ao atribuir constipação como um efeito comum da reposição de magnésio.\n\nEm resumo, a alternativa (C) está correta, pois destaca um efeito adverso clínico muito comum na prática médica: a intolerância gástrica à suplementação de potássio, o que muitas vezes limita seu uso por via oral no pós-operatório.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Perioperatório",
+      "Distúrbios do Potássio",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:10.230Z"
+  },
+  {
+    "id": "AJUDA_629549a4-352a-417c-8b19-2f457c77fffa",
+    "originalId": "629549a4-352a-417c-8b19-2f457c77fffa",
+    "statement": "Paciente masculino, de 65 anos, com doença pulmonar obstrutiva crônica (DPOC) avançada e câncer de pulmão de pequenas células recentemente diagnosticado, foi trazido à Emergência por ter apresentado uma crise convulsiva tônico-clônica generalizada. Em seu histórico, constavam perda de peso significativa, mal estar e fraqueza profunda nas últimas semanas. Ao exame físico, encontrava-se confuso, taquipneico, com frequência respiratória de 30 mpm. A tomografia computadorizada de crânio foi considerada normal. Os resultados dos exames laboratoriais iniciais encontram-se reproduzidos abaixo.\n\nQual a causa mais provável para a crise convulsiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encefalite límbica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome da secreção inapropriada de hormônio antidiurético (SIADH)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hipóxia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipercapnia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a causa da crise convulsiva neste paciente, devemos analisar a associação entre o diagnóstico de base e os resultados laboratoriais apresentados.\n\nAnálise das alternativas:\n\na) Incorreta. A encefalite límbica é uma síndrome paraneoplásica neurológica que pode ocorrer em pacientes com câncer de pulmão de pequenas células (SCLC) e pode causar convulsões. No entanto, diante de um distúrbio metabólico grave e evidente nos exames (hiponatremia severa), a causa metabólica torna-se a explicação mais provável e imediata para o evento agudo.\n\nb) Correta. O câncer de pulmão de pequenas células é a neoplasia mais comumente associada à Síndrome da Secreção Inapropriada de Hormônio Antidiurético (SIADH). A SIADH leva à retenção de água livre, resultando em hiponatremia dilucional. Conforme observado na tabela de exames, o sódio sérico do paciente é de 120 mEq/L (valor de referência: 135-145 mEq/L). Níveis de sódio abaixo de 125 mEq/L são frequentemente associados a manifestações neurológicas graves, como confusão mental, edema cerebral e crises convulsivas tônico-clônicas generalizadas, devido ao desequilíbrio osmótico no sistema nervoso central.\n\nc) Incorreta. A hipóxia pode causar crises convulsivas, porém, ao analisarmos a gasometria arterial fornecida na imagem, observa-se que a PO2 é de 85 mmHg. Este valor está dentro da faixa de normalidade (80-100 mmHg), descartando a hipóxia como causa.\n\nd) Incorreta. O paciente apresenta hipercapnia (PCO2 de 60 mmHg), o que é esperado para um quadro de DPOC avançada com acidose respiratória (pH 7,32). Embora a hipercapnia grave possa causar a \"narcose por CO2\" (alteração do nível de consciência, sonolência e coma), ela raramente é a causa primária de uma crise convulsiva tônico-clônica súbita, especialmente na presença de uma hiponatremia profunda de 120 mEq/L, que é um gatilho convulsivo clássico.\n\nResumo dos dados laboratoriais relevantes:\nO exame de sódio sérico (120 mEq/L) confirma a hiponatremia grave, que explica a clínica neurológica. A tomografia de crânio normal reforça que a causa é metabólica/sistêmica e não uma lesão estrutural (como metástases). A associação clássica entre câncer de pequenas células e SIADH direciona para a alternativa B.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Neoplasias Pulmonares",
+      "Coma e Alterações da Consciência",
+      "Distúrbios do Sódio"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/66b3092878697875ae1b2fe2084c31a90b5be65b5907f1ff2b119e7168582256.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_629549a4-352a-417c-8b19-2f457c77fffa_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:10.678Z"
+  },
+  {
+    "id": "AJUDA_62963668-01c4-4157-8d8a-53b6fd1d79b0",
+    "originalId": "62963668-01c4-4157-8d8a-53b6fd1d79b0",
+    "statement": "Leia o caso a seguir.\n\nMulher de 36 anos, diagnosticada com HIV há 3 meses, comparece à consulta de acompanhamento inicial. Encontra-se assintomática, em uso regular de terapia antirretroviral (TARV) com o esquema tenofovir + lamivudina + dolutegravir. Exames recentes mostram contagem de linfócitos T CD4+ de 420 células/mm³ e carga viral indetectável.\n\nNesse caso, qual conduta deve ser adotada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trocar TARV por terapia simplificada (lamivudina/dolutegravir).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar o teste de liberação de interferon-gama.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pedir densitometria óssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar profilaxia para tuberculose latente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo inicial e o rastreio de infecções oportunistas em uma paciente recém-diagnosticada com HIV, que já apresenta boa resposta virológica e imunológica ao tratamento antirretroviral (TARV).\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A simplificação da terapia antirretroviral para o esquema de dois fármacos (dolutegravir + lamivudina) é uma estratégia válida, mas possui critérios específicos. Segundo o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) do Brasil, o paciente deve ter pelo menos 6 meses de carga viral indetectável, não ter histórico de falha virológica e não possuir mutações de resistência conhecidas aos fármacos do esquema. Como a paciente foi diagnosticada e iniciou o tratamento há apenas 3 meses, ainda é cedo para essa troca.\n\nAlternativa B (Correta): O rastreio de tuberculose latente (ILTB) é mandatório para todas as pessoas vivendo com HIV (PVHIV) no momento do diagnóstico e deve ser repetido periodicamente. O teste de liberação de interferon-gama (IGRA) ou a prova tuberculínica (PPD) são as ferramentas utilizadas para esse fim. Como a paciente está assintomática e com CD4 acima de 350 células/mm³, o rastreio é a conduta imediata indicada para determinar a necessidade de tratamento preventivo, reduzindo o risco de progressão para tuberculose ativa.\n\nAlternativa C (Incorreta): A densitometria óssea não é um exame de rotina para uma mulher de 36 anos assintomática, mesmo com HIV. As diretrizes recomendam o rastreio de osteoporose em homens com 50 anos ou mais, mulheres na pós-menopausa ou em pacientes que apresentem fatores de risco significativos para perda de massa óssea (como uso prolongado de corticoides ou histórico de fraturas de fragilidade). O tenofovir (TDF) pode causar perda de densidade óssea, mas isso não justifica o exame preventivo nesta faixa etária sem outros fatores associados.\n\nAlternativa D (Incorreta): A profilaxia (tratamento) para tuberculose latente não deve ser iniciada de forma empírica sem antes realizar o teste de rastreio (PPD ou IGRA). A exceção ocorre em casos de contatos domiciliares ou próximos com pacientes bacilíferos, o que não foi mencionado no caso clínico. Primeiro confirma-se a infecção latente pelo teste diagnóstico e descarta-se tuberculose ativa (pela ausência de sintomas) para, então, iniciar o tratamento preventivo com isoniazida ou rifampicina.\n\nResumo: Em uma paciente com HIV estável, o próximo passo essencial na rotina de seguimento é o rastreio de infecções oportunistas latentes, sendo a tuberculose a principal prioridade no cenário epidemiológico brasileiro, utilizando o IGRA ou PPD.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "HIV",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:10.678Z"
+  },
+  {
+    "id": "AJUDA_62acbd13-3eed-4e70-9af0-662731d9c4e2",
+    "originalId": "62acbd13-3eed-4e70-9af0-662731d9c4e2",
+    "statement": "Na avaliação laboratorial de pacientes com trombose venosa profunda para o diagnóstico de trombofilia todos os exames a seguir podem ser realizados enquanto o paciente está usando heparina, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nível de proteína C",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nível de proteína S",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nível de antitrombina III",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Mutação do fator V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Anticorpos antifosfolipídeos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para dominar as questões sobre investigação de trombofilias, o ponto crucial é diferenciar quais exames sofrem interferência dos anticoagulantes e quais são influenciados pelo evento trombótico agudo.\n\nAlternativa a) Incorreta. A Proteína C é uma proteína anticoagulante natural sintetizada no fígado e sua produção depende da Vitamina K. O uso de heparina (seja a não fracionada ou a de baixo peso molecular) não altera os níveis plasmáticos da Proteína C. O medicamento que impede sua dosagem correta é a Varfarina, que inibe a síntese de fatores dependentes de vitamina K.\n\nAlternativa b) Incorreta. A Proteína S atua como um cofator para a Proteína C e também é dependente de Vitamina K. Assim como na alternativa anterior, seus níveis são afetados pelos anticoagulantes orais cumarínicos (Varfarina), mas não sofrem interferência direta do uso isolado de heparina.\n\nAlternativa c) Correta (Gabarito). A Antitrombina III é o alvo terapêutico da heparina. O mecanismo de ação da heparina consiste em se ligar à antitrombina para potencializar em mil vezes sua capacidade de inativar a trombina e o fator Xa. Durante esse processo, ocorre um consumo da proteína circulante. Portanto, dosar a antitrombina enquanto o paciente usa heparina resultará em níveis artificialmente baixos (falso-positivo para deficiência), invalidando o diagnóstico.\n\nAlternativa d) Incorreta. A pesquisa da Mutação do Fator V de Leiden é um teste de biologia molecular (análise de DNA). Como a estrutura genética do indivíduo não muda com o uso de medicamentos ou pela presença de um coágulo, este exame pode ser realizado em qualquer circunstância, inclusive na fase aguda da trombose ou sob qualquer anticoagulação.\n\nAlternativa e) Incorreta. Os anticorpos antifosfolipídeos (Anticardiolipina e Anti-beta2-glicoproteína I) são imunoglobulinas dosadas por métodos imunoquímicos (ELISA), que não sofrem interferência da heparina. Embora o teste de Anticoagulante Lúpico (que também faz parte do painel) seja um teste funcional que pode sofrer interferência técnica de anticoagulantes, a prioridade em provas de residência para interferência com heparina é sempre a Antitrombina III, devido ao seu mecanismo direto de consumo.\n\nResumo Tático para Provas:\n1. Heparina: Interfere na dosagem de Antitrombina III (causa consumo).\n2. Varfarina: Interfere na Proteína C, Proteína S e níveis de Antitrombina (pode elevar falsamente).\n3. Testes Genéticos: Nunca sofrem interferência (Fator V de Leiden e Mutação da Protrombina G20210A).\n4. Fase Aguda da Trombose: Pode reduzir níveis de Antitrombina, Proteína C e S pelo consumo no coágulo, devendo-se idealmente aguardar 4 a 6 semanas após o evento agudo para a triagem completa.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:10.678Z"
+  },
+  {
+    "id": "AJUDA_62c92add-323d-47db-9144-cf3127341047",
+    "originalId": "62c92add-323d-47db-9144-cf3127341047",
+    "statement": "Menino de 6 anos com febre persistente há 7 dias, rash cutâneo polimorfo, conjuntivite bilateral não purulenta, lábios secos e linfadenopatia cervical dolorosa. Ao exame físico, há edema em mãos e pés. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença de Kawasaki.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Febre Reumática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Escarlatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Eritema infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Mononucleose infecciosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O diagnóstico da doença de Kawasaki baseia-se em critérios clínicos bem estabelecidos. O paciente apresenta febre persistente (neste caso, por 7 dias, cumprindo o critério de pelo menos 5 dias) associada a quatro dos cinco critérios principais: 1. Conjuntivite bilateral não purulenta; 2. Alterações em extremidades (edema de mãos e pés); 3. Alterações em lábios e cavidade oral (lábios secos); 4. Exantema polimorfo; 5. Linfadenopatia cervical (geralmente unilateral e maior que 1,5 cm). O quadro clínico descrito é clássico, e a principal preocupação nessa patologia é o risco de formação de aneurismas de artérias coronárias.\n\nAnálise das alternativas:\n\na) Doença de Kawasaki: Esta é a alternativa correta. O paciente preenche os critérios diagnósticos clássicos descritos acima. A febre alta e prolongada é o marco inicial, e os sintomas de acompanhamento confirmam a vasculite de médios vasos.\n\nb) Febre Reumática: Incorreta. A febre reumática costuma se manifestar após uma faringoamigdalite estreptocócica. Seus critérios maiores (critérios de Jones) incluem cardite, poliartrite migratória, coreia de Sydenham, eritema marginado e nódulos subcutâneos. Não há associação típica com conjuntivite ou edema de extremidades.\n\nc) Escarlatina: Incorreta. Embora apresente febre, faringite e exantema (micropapular, aspecto de lixa), a escarlatina não cursa com conjuntivite. Além disso, apresenta sinais específicos como as linhas de Pastia e o sinal de Filatov, que não foram descritos.\n\nd) Eritema infeccioso: Incorreta. Causado pelo parvovírus B19, apresenta-se geralmente com o sinal da face esbofeteada, seguido por um exantema rendilhado no tronco e membros. A febre costuma ser baixa ou ausente no momento do exantema, e não há o envolvimento multissistêmico grave visto no Kawasaki.\n\ne) Mononucleose infecciosa: Incorreta. Caracteriza-se por febre, faringite exsudativa, linfadenopatia generalizada (comum em cadeia cervical posterior) e esplenomegalia. O exantema na mononucleose geralmente ocorre após o uso inadvertido de amoxicilina ou ampicilina. A conjuntivite e o edema de mãos e pés não são achados característicos.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:10.678Z"
+  },
+  {
+    "id": "AJUDA_62d4cdef-ceac-41f9-b47b-2fd86ca7cc99",
+    "originalId": "62d4cdef-ceac-41f9-b47b-2fd86ca7cc99",
+    "statement": "As doenças inflamatórias intestinais representam um desafio terapêutico para clínicos e cirurgiões, com diretrizes já bem estabelecidas na sua condução. Qual é a abordagem cirúrgica MAIS adequada para um paciente com colite ulcerativa refratária ao tratamento clínico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemicolectomia direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colectomia parcial com anastomose ileoanal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Proctocolectomia total com ileostomia definitiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tratamento clínico contínuo com corticoides.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Retocolite Ulcerativa (RCU) é uma doença inflamatória idiopática que se limita à mucosa do cólon e do reto, ocorrendo de forma contínua a partir do reto em direção proximal. Diferentemente da doença de Crohn, que pode afetar qualquer parte do trato gastrointestinal, a RCU é curável mediante a remoção cirúrgica de todo o cólon e do reto.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A hemicolectomia direita consiste na retirada apenas da metade direita do cólon. Como a RCU acomete obrigatoriamente o reto e se estende de forma contínua para o cólon esquerdo, esta cirurgia não trataria a zona de maior inflamação e deixaria doença residual ativa no paciente.\n\nAlternativa (b) Incorreta: Colectomias parciais não são indicadas no tratamento da RCU, pois a mucosa remanescente continuará apresentando a doença, mantendo o risco de sintomas graves, sangramento e desenvolvimento de câncer colorretal. Além disso, a anastomose ileoanal simples (sem reservatório) causaria uma diarreia severa e incontrolável.\n\nAlternativa (c) Correta: A proctocolectomia total envolve a remoção de todo o cólon e de todo o reto. Como a doença está restrita a esses órgãos, o procedimento é considerado a abordagem cirúrgica definitiva e curativa para as manifestações intestinais da RCU. A ileostomia definitiva (técnica de Brooke) é uma das opções de reconstrução do trânsito, sendo segura e eficaz para pacientes refratários ao tratamento clínico, especialmente quando não há condições para a confecção de um reservatório ileal.\n\nAlternativa (d) Incorreta: O enunciado especifica que o paciente é refratário ao tratamento clínico. Insistir no uso contínuo de corticoides é contraindicado, pois esses medicamentos servem apenas para indução da remissão (fase aguda) e não para manutenção, devido aos seus graves efeitos colaterais a longo prazo e à falha em alterar o curso natural da doença em pacientes refratários.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Doença Inflamatória Intestinal",
+      "Proctologia"
+    ],
+    "difficulty": 94.85550240637237,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:52:10.678Z"
+  }
+]

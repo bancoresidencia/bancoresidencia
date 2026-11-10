@@ -1,0 +1,519 @@
+[
+  {
+    "id": "AJUDA_26cebf5a-3b2f-45eb-bbae-649eb421aac0",
+    "originalId": "26cebf5a-3b2f-45eb-bbae-649eb421aac0",
+    "statement": "João, 11 anos, chega à UBS para consulta de rotina com a enfermeira Suely. A mãe de João quer saber sobre as vacinas que ele precisa receber. Suely deve",
+    "options": [
+      {
+        "id": "A",
+        "text": "indicar a vacina Dupla adulto (difteria e tétano) - dT, caso a última vacina desse tipo tenha ocorrido há 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicar a vacinação de HPV para João em dose única, caso ele ainda não tenha recebido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "explicar que a vacinação de HPV em crianças e adolescentes deve ser realizada somente em casos de vítimas de violência sexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "revisar o histórico vacinal e verificar se todas as vacinas recomendadas para a faixa etária foram administradas. Se houver doses em atraso deve-se reiniciar todos os esquemas vacinais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "indicar a realização de reforço de vacina ACWY somente se não tiver havido o reforço de 12 meses e 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa (a) Incorreta: A vacina dT (Dupla Adulto), que protege contra difteria e tétano, deve ter seu reforço administrado a cada 10 anos em condições de rotina. O intervalo é reduzido para 5 anos apenas em casos específicos de ferimentos propensos ao tétano. Como João tem 11 anos e a última dose provavelmente ocorreu aos 4 anos (reforço da DTP), ele ainda não completou o intervalo de 10 anos necessário para o reforço de rotina.\n\nAlternativa (b) Correta: De acordo com a atualização mais recente do Ministério da Saúde (Nota Técnica de 2024), o esquema vacinal contra o HPV foi simplificado para dose única para meninos e meninas de 9 a 14 anos de idade. Portanto, para João, que tem 11 anos e ainda não foi vacinado, a conduta correta é indicar a dose única da vacina HPV.\n\nAlternativa (c) Incorreta: A vacinação contra o HPV é uma estratégia de saúde pública universal para a faixa etária de 9 a 14 anos, visando a prevenção de cânceres e verrugas genitais. Embora vítimas de violência sexual e outros grupos imunossuprimidos tenham esquemas específicos, a vacina não é restrita a esses casos.\n\nAlternativa (d) Incorreta: Um princípio básico da imunização é que dose aplicada é dose contada. Caso o histórico vacinal esteja atrasado, o profissional deve apenas completar o esquema de onde parou, nunca reiniciar as séries vacinais já iniciadas.\n\nAlternativa (e) Incorreta: A vacina Meningocócica ACWY (Conjugada) é indicada pelo Programa Nacional de Imunizações (PNI) para adolescentes de 11 a 14 anos em dose única, independentemente de terem recebido doses ou reforços prévios de Meningocócica C ou ACWY durante a infância. O objetivo é ampliar a proteção contra outros sorogrupos e garantir imunidade durante a adolescência, fase de maior transmissibilidade da doença.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:01.641Z"
+  },
+  {
+    "id": "AJUDA_26d093e8-8901-4f64-bafb-3cd61c0c7e88",
+    "originalId": "26d093e8-8901-4f64-bafb-3cd61c0c7e88",
+    "statement": "João, 8 anos, apresenta febre alta, dor abdominal no quadrante superior direito e perda de peso recente. Há duas semanas, ele teve episódios de diarreia com muco e sangue, seguidos de melhora temporária. Durante o exame físico, observa-se hepatomegalia dolorosa à palpação. Exames laboratoriais demonstram aumento das transaminases e eosinofilia. A ultrassonografia abdominal revela um abscesso hepático de 4 cm. Qual a parasitose que pode estar relacionada ao quadro clínico descrito?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ascaris lumbricoides.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Entamoeba histolytica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ancylostoma duodenale.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Giardia lamblia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Taenia solium.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico para a amebíase hepática, uma complicação extraintestinal da infecção pela *Entamoeba histolytica*. A sequência de eventos — diarreia com muco e sangue (disenteria amebiana) seguida por dor no hipocôndrio direito, febre e imagem de abscesso hepático — aponta diretamente para esse diagnóstico.\n\nA alternativa (a) está incorreta. O *Ascaris lumbricoides* pode causar complicações biliares, como a coledocolitíase por migração do verme adulto para as vias biliares, o que poderia gerar uma colangite e, secundariamente, um abscesso piogênico. No entanto, ele não causa o quadro de disenteria prévia nem é o agente etiológico primário de abscessos hepáticos tropicais típicos.\n\nA alternativa (b) está correta. A *Entamoeba histolytica* é um protozoário que invade a mucosa do cólon, causando ulcerações e diarreia sanguinolenta. Através da circulação portal, o parasita pode atingir o fígado, onde causa necrose enzimática do parênquima, formando o abscesso amebiano. O conteúdo desse abscesso é classicamente descrito como \"pasta de anchovas\". É a principal causa de abscesso hepático de origem parasitária em áreas endêmicas.\n\nA alternativa (c) está incorreta. O *Ancylostoma duodenale* é um geo-helminto associado principalmente à anemia ferropriva por perda crônica de sangue no trato gastrointestinal e sintomas cutâneos (bicho geográfico). Ele não possui tropismo pelo parênquima hepático para formação de abscessos.\n\nA alternativa (d) está incorreta. A *Giardia lamblia* é um protozoário que habita o intestino delgado superior. Ela causa diarreia do tipo absortiva (esteatorreia), flatulência e dor abdominal, mas não é um organismo invasivo. Portanto, não causa disenteria (sangue/muco) nem abscessos em órgãos sólidos como o fígado.\n\nA alternativa (e) está incorreta. A *Taenia solium* pode causar teníase (verme adulto no intestino) ou cisticercose (larvas nos tecidos). A cisticercose afeta preferencialmente o sistema nervoso central (neurocisticercose) e os músculos. Não há associação entre a infecção por *Taenia* e a formação de abscessos hepáticos agudos com quadro de febre e dor abdominal.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Parasitoses"
+    ],
+    "difficulty": 72.92925448364754,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:01.641Z"
+  },
+  {
+    "id": "AJUDA_26dde268-1317-4883-be7f-19518c512253",
+    "originalId": "26dde268-1317-4883-be7f-19518c512253",
+    "statement": "O sangramento pós-menopausa é definido como qualquer sangramento uterino após confirmado o cessamento dos fluxos menstruais por um período de 12 meses consecutivos. Qual é a causa mais comum de sangramento pós-menopausa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Terapia de reposição hormonal com estrogênios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pólipos endometriais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Câncer de endométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hiperplasia do endométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Atrofia do endométrio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O sangramento pós-menopausa é definido como qualquer sangramento uterino após 12 meses de amenorreia em mulheres com idade compatível com o climatério. Diante deste quadro, o principal objetivo do médico é excluir a presença de câncer de endométrio, porém a etiologia mais comum é benigna.\n\nAlternativa a) Incorreta: A terapia de reposição hormonal (TRH) pode causar sangramentos, especialmente nos primeiros meses de adaptação ou em esquemas de estrogênio sem a oposição adequada de progesterona em mulheres com útero. No entanto, não é a causa mais frequente na população geral de mulheres na pós-menopausa.\n\nAlternativa b) Incorreta: Pólipos endometriais são crescimentos focais do endométrio e representam uma causa significativa de sangramento nessa fase da vida (presentes em cerca de 10 a 25 por cento dos casos). Apesar de comuns, perdem em prevalência para as causas atróficas.\n\nAlternativa c) Incorreta: O câncer de endométrio é a patologia que mais gera preocupação e deve ser sempre investigada por meio de ultrassonografia transvaginal (avaliando a espessura endometrial) ou biópsia. Contudo, estatisticamente, ele é a causa em apenas 1 a 10 por cento das pacientes com sangramento pós-menopausa.\n\nAlternativa d) Incorreta: A hiperplasia endometrial ocorre devido ao estímulo estrogênico contínuo sem a proteção da progesterona. É uma condição importante por ser precursora do câncer, mas sua incidência é inferior à da atrofia e à dos pólipos.\n\nAlternativa e) Correta: A atrofia do endométrio é a causa mais comum, respondendo por aproximadamente 60 a 80 por cento dos casos de sangramento pós-menopausa. Com a queda acentuada dos níveis de estrogênio após a menopausa, o endométrio torna-se extremamente fino e frágil (atrófico). Essa fragilidade do tecido epitelial e vascular predispõe à ruptura de pequenos vasos superficiais, resultando em sangramentos que, geralmente, são de pequena monta. A atrofia vaginal concomitante também pode contribuir para o sangramento genital nestas pacientes.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:01.641Z"
+  },
+  {
+    "id": "AJUDA_26e53446-4e28-4ae1-9256-87f830bced26",
+    "originalId": "26e53446-4e28-4ae1-9256-87f830bced26",
+    "statement": "Pré-escolar de 5 anos, com diagnóstico recente de síndrome nefrótica, está na terceira semana de uso de prednisolona 2mg/kg/dia com evolução favorável. Em consulta com o pediatra, é constatado que o cartão vacinal está desatualizado. Para a atualização do cartão, as vacinas que o pediatra deve indicar nesse momento são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hepatite A e varicela",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "febre amarela e influenza",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pentavalente e pneumocócica 10-valente",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "meningocócica conjugada quadrivalente e tetra viral",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O ponto central desta questão é identificar o estado imunológico do paciente e as restrições vacinais correspondentes. O pré-escolar de 5 anos está em tratamento para síndrome nefrótica com prednisolona na dose de 2 mg/kg/dia há três semanas. \n\nDe acordo com os critérios do Centro de Referência para Imunobiológicos Especiais (CRIE) e da Sociedade Brasileira de Imunizações (SBIm), o uso de corticosteroides em doses iguais ou superiores a 2 mg/kg/dia (ou acima de 20 mg/dia para crianças com mais de 10 kg) por um período superior a 14 dias configura imunossupressão terapêutica significativa.\n\nNesse estado de imunossupressão, as vacinas de vírus ou bactérias vivos atenuados são terminantemente contraindicadas devido ao risco de replicação do agente e desenvolvimento da doença vacinal. Por outro lado, vacinas inativadas, conjugadas ou de subunidades (agentes mortos ou apenas frações) podem ser administradas com segurança, embora a resposta imunológica possa ser menor do que em indivíduos imunocompetentes.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A vacina contra hepatite A é inativada e poderia ser aplicada. No entanto, a vacina contra varicela é composta por vírus vivos atenuados, sendo contraindicada para pacientes em corticoterapia nesta dosagem.\n\nAlternativa b: Incorreta. A vacina contra influenza é inativada e recomendada para este paciente, especialmente pelo risco aumentado de complicações infecciosas na síndrome nefrótica. Contudo, a vacina contra febre amarela é de vírus vivos atenuados e está contraindicada no momento.\n\nAlternativa c: Correta. Tanto a vacina pentavalente (que protege contra difteria, tétano, coqueluche, hepatite B e Haemophilus influenzae tipo b) quanto a vacina pneumocócica 10-valente são vacinas inativadas. Elas não contêm agentes vivos e, portanto, podem ser indicadas para a atualização do cartão vacinal sem oferecer risco de infecção vacinal ao paciente.\n\nAlternativa d: Incorreta. A vacina meningocócica conjugada é inativada e segura. Entretanto, a vacina tetraviral (que protege contra sarampo, caxumba, rubéola e varicela) é composta por vírus vivos atenuados, o que impede sua aplicação durante o tratamento imunossupressor.\n\nPortanto, em pacientes com síndrome nefrótica em fase ativa de tratamento com altas doses de corticoide, deve-se priorizar o uso de vacinas inativadas e adiar as vacinas de agentes vivos até pelo menos um mês após a suspensão da medicação ou redução para doses não imunossupressoras.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:01.641Z"
+  },
+  {
+    "id": "AJUDA_26e56a96-423d-409d-b180-97b8942c15f4",
+    "originalId": "26e56a96-423d-409d-b180-97b8942c15f4",
+    "statement": "Quais são as patologias envolvidas na Tríade de Saint?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia De Hiato Esofageano, Colelitíase, Doença Diverticular Dos Cólons;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hérnia De Hiato Esofageano, Polipose Intestinal, Úlcera Duodenal;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pancreatite Aguda, Retocolite Ulcerativa, Hiperesplenismo;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Úlcera Péptica, Colelitíase, Hérnia De Hiato Esogageano;",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Tríade de Saint é uma entidade clínica clássica caracterizada pela coexistência de três condições digestivas: hérnia de hiato esofágico, colelitíase e doença diverticular dos cólons (diverticulose cólica). Esse conceito é relevante na semiologia médica por representar uma exceção prática ao princípio da parcimônia (Navalha de Ockham), demonstrando que múltiplas afecções comuns e relacionadas a fatores de risco semelhantes (como idade avançada e dieta ocidental pobre em fibras) podem ocorrer simultaneamente no mesmo paciente.\n\nAnálise das alternativas:\n\nAlternativa a: Correta. Apresenta de forma precisa os três elementos que compõem a Tríade de Saint clássica: hérnia de hiato, colelitíase e doença diverticular dos cólons.\n\nAlternativa b: Incorreta. Embora inclua a hérnia de hiato, a polipose intestinal e a úlcera duodenal não pertencem à descrição da tríade.\n\nAlternativa c: Incorreta. Nenhuma das entidades mencionadas (pancreatite aguda, retocolite ulcerativa e hiperesplenismo) faz parte da Tríade de Saint.\n\nAlternativa d: Incorreta. Traz dois componentes verdadeiros (colelitíase e hérnia de hiato), mas introduz a úlcera péptica no lugar da doença diverticular dos cólons.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Divertículos Colônicos e Divertículo de Meckel",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:01.641Z"
+  },
+  {
+    "id": "AJUDA_26ec44e4-1c2b-4539-84d3-6530b6892ee4",
+    "originalId": "26ec44e4-1c2b-4539-84d3-6530b6892ee4",
+    "statement": "Criança com 4 anos é trazida à unidade de emergência pela mãe, em função de diarreia e febre há três dias. Mãe nega vômitos, sangue ou muco nas fezes, bem como quaisquer outros sintomas associados. Criança apresenta sede intensa, solicitando líquidos. Sua saturação de O2 é de 98%, o tempo de enchimento capilar de 1 segundo e as mucosas coradas e hidratadas. A criança segue urinando normalmente, sem alterações à ausculta pulmonar e cardíaca, além de ter pressão arterial normal. \nA conduta mais acertada para o caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "antiemético e antibiótico por via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "repositor de flora, soro de reidratação oral, zinco e antitérmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "hidratação intravenosa vigorosa devido à gravidade da desidratação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "antibiótico e hidratação intravenosa, procedendo a internação do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve uma criança de 4 anos com diarreia aguda e febre, sem sinais de gravidade ou complicações. Ao avaliar o estado de hidratação, observamos que, embora a criança apresente sede (um sinal precoce), ela mantém o tempo de enchimento capilar normal (1 segundo), mucosas hidratadas, diurese preservada e sinais vitais estáveis. De acordo com os protocolos do Ministério da Saúde e da Organização Mundial da Saúde (OMS), esta criança é classificada como sem desidratação clínica, devendo ser tratada inicialmente com o Plano A (tratamento domiciliar).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A mãe nega vômitos, logo não há indicação para o uso de antieméticos. Além disso, a ausência de sangue ou muco nas fezes (disenteria) e o bom estado geral da criança indicam uma provável etiologia viral ou bacteriana não invasiva, situações em que o uso de antibióticos não é recomendado e pode, inclusive, ser prejudicial.\n\nAlternativa b) Correta. Esta alternativa contempla as bases do manejo da diarreia aguda sem desidratação (Plano A). O soro de reidratação oral deve ser oferecido após cada evacuação líquida para prevenir a desidratação. O zinco é recomendado pela OMS para todas as crianças com diarreia aguda por reduzir a duração, a gravidade e a recorrência do episódio nos meses seguintes. O antitérmico é indicado para o manejo da febre relatada. O repositor de flora (probiótico) é frequentemente utilizado como adjuvante para reduzir o tempo dos sintomas.\n\nAlternativa c) Incorreta. A hidratação intravenosa vigorosa é reservada para o Plano C, indicado apenas em casos de desidratação grave ou choque hipovolêmico. A criança em questão está hidratada e aceita líquidos por via oral, sendo a via parenteral totalmente desnecessária e contraindicada neste momento.\n\nAlternativa d) Incorreta. Não há critérios para internação hospitalar, uma vez que a criança está clinicamente estável, sem desidratação e sem sinais de perigo (como letargia ou incapacidade de beber líquidos). O uso de antibiótico e hidratação venosa é inadequado para o quadro clínico apresentado.",
+    "exam": "IDOR",
+    "year": 2026,
+    "banca": "ECONRIO",
+    "uf": "DF",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d985859514cc0c29fccf22fd7357203f5d0479545de8965ecf6d594705f6f84.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8308ee75a8c70c2b5597b9727250f3e71cd86deb63696fadc4e11ce6b3600cf8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:01.641Z"
+  },
+  {
+    "id": "AJUDA_26eef626-dfef-4636-9083-4ff19910f6f7",
+    "originalId": "26eef626-dfef-4636-9083-4ff19910f6f7",
+    "statement": "Paciente de 28 anos de idade do sexo masculino, com peso de 80kg, altura 175cm. Sem doenças prévias. Sofreu acidente por queimaduras de 2º e de 3º grau em membros inferior e superior à esquerda, além da parte anterior do tronco. Utilizando a “regra dos nove” para aferir a área acometida, podemos afirmar que o paciente sofreu queimaduras em qual porcentagem da área corpórea?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em 18% da área corpórea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Em 27% da área corpórea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em 36% da área corpórea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em 45% da área corpórea.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Em 54% da área corpórea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, devemos aplicar a Regra dos Nove de Wallace, que é o método mais utilizado para estimar a extensão da superfície corporal queimada (SCQ) em adultos. Esta regra divide o corpo em áreas que representam 9% ou múltiplos de 9% da superfície total.\n\nA divisão anatômica padrão para adultos é a seguinte:\n- Cabeça e pescoço: 9% (sendo 4,5% anterior e 4,5% posterior).\n- Tronco anterior: 18% (composto por 9% do tórax e 9% do abdome).\n- Tronco posterior: 18% (composto por 9% da parte superior e 9% da parte inferior/lombar).\n- Membro superior (cada um): 9% (sendo 4,5% anterior e 4,5% posterior).\n- Membro inferior (cada um): 18% (sendo 9% anterior e 9% posterior).\n- Períneo/Genitália: 1%.\n\nAplicando os dados do enunciado ao paciente:\n1. Membro inferior esquerdo: 18%.\n2. Membro superior esquerdo: 9%.\n3. Parte anterior do tronco: 18%.\n\nAo somarmos as áreas atingidas (18 + 9 + 18), chegamos ao total de 45% da superfície corporal queimada. Note que a profundidade da queimadura (2º e 3º graus) é fundamental para o planejamento terapêutico e o cálculo de reposição volêmica, mas para o cálculo da extensão pela Regra dos Nove, o que importa é a área total acometida por lesões de espessura parcial ou total.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O valor de 18% corresponderia a apenas uma das partes citadas (tronco anterior ou um membro inferior), ignorando as demais áreas descritas no caso.\n\nAlternativa b) Incorreta. O valor de 27% seria a soma de apenas duas áreas, como o tronco anterior (18%) e o membro superior (9%), sem considerar o membro inferior.\n\nAlternativa c) Incorreta. 36% seria o resultado se considerássemos apenas o tronco anterior (18%) e o membro inferior (18%), deixando de fora o membro superior.\n\nAlternativa d) Correta. A soma exata das áreas anatômicas descritas (18% do tronco anterior + 9% do membro superior + 18% do membro inferior) resulta em 45%.\n\nAlternativa e) Incorreta. O valor de 54% superestima a área descrita no enunciado. Este valor seria alcançado, por exemplo, se o tronco estivesse queimado tanto na parte anterior quanto na posterior (36%) somado a um membro inferior (18%).",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:01.641Z"
+  },
+  {
+    "id": "AJUDA_26f06aa2-44cc-42b5-9b82-1c689a48a5aa",
+    "originalId": "26f06aa2-44cc-42b5-9b82-1c689a48a5aa",
+    "statement": "Paciente, 52 anos de idade, procura a ginecologista referindo ondas de calor intensas que estão impactando sua qualidade de vida. Nega histórico de câncer de mama ou tromboembolismo venoso, mas possui histórico familiar de doença cardiovascular. O exame físico é normal e os exames laboratoriais mostram níveis adequados de colesterol e glicose.\nEm relação a esse caso, considere as afirmativas a seguir.\n\nI. A TH (Terapia Hormonal) está contraindicada em mulheres com histórico familiar de doença cardiovascular.\nII. A TH pode melhorar a qualidade de vida das mulheres na menopausa e aliviar os sintomas vasomotores.\nIII. As pacientes com útero devem fazer uso da TH combinada (estrogênio + progestagênio) para reduzir o risco de hiperplasia endometrial e câncer de endométrio.\nIV. Para reduzir os riscos associados ao tratamento, a TH deve ser usada na menor dose e pelo menor tempo possível.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS:\n\nI. INCORRETA: O histórico familiar de doença cardiovascular não é uma contraindicação para a Terapia Hormonal (TH). As contraindicações absolutas relacionadas ao sistema cardiovascular são a doença cardiovascular estabelecida (como infarto prévio, angina ou AVC) e a presença de trombose venosa profunda ou embolia pulmonar atual ou prévia. Na verdade, quando iniciada precocemente (na chamada \"janela de oportunidade\", geralmente antes dos 60 anos ou menos de 10 anos de menopausa), a TH pode inclusive ter um efeito protetor cardiovascular.\n\nII. CORRETA: A principal indicação da TH são os sintomas vasomotores (fogachos e sudorese noturna) de intensidade moderada a grave que impactam a qualidade de vida. O tratamento é considerado o padrão-ouro para o alívio desses sintomas, refletindo diretamente no bem-estar, no sono e na disposição da paciente.\n\nIII. CORRETA: Em mulheres com útero preservado, a reposição de estrogênio isoladamente causa proliferação endometrial contínua, elevando significativamente o risco de hiperplasia e câncer de endométrio. A adição do progestagênio (de forma contínua ou cíclica) serve para antagonizar esse efeito, protegendo o endométrio. O estrogênio isolado só é permitido para pacientes histerectomizadas.\n\nIV. CORRETA: De acordo com os principais consensos nacionais (Febrasgo) e internacionais, a TH deve ser individualizada. A recomendação padrão para segurança clínica é utilizar a menor dose eficaz para o controle dos sintomas e manter o tratamento pelo tempo estritamente necessário para atingir os objetivos terapêuticos e garantir a qualidade de vida, reavaliando a continuidade anualmente.\n\nCONCLUSÃO:\n\nEstão corretas as afirmativas II, III e IV.\n\nA alternativa correta é a letra (e).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:01.641Z"
+  },
+  {
+    "id": "AJUDA_26faca4f-48c2-4f68-afcc-5600285be770",
+    "originalId": "26faca4f-48c2-4f68-afcc-5600285be770",
+    "statement": "O assinclitismo posterior é caracterizado por",
+    "options": [
+      {
+        "id": "A",
+        "text": "descida inicial do parietal posterior.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "descida inicial do parietal anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sutura sagital no diâmetro transverso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sutura sagital mais próxima do promontório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "lambda próxima do púbis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para entender o assinclitismo, devemos primeiro recordar o conceito de sinclitismo: ocorre quando a sutura sagital do feto está equidistante entre o promontório sacral e a sínfise púbica durante a descida no canal de parto. O assinclitismo é uma inclinação lateral da cabeça fetal, fazendo com que a sutura sagital se desvie para a frente ou para trás.\n\nAlternativa (a): Correta. No assinclitismo posterior, também conhecido como obliquidade de Litzmann, a cabeça fetal inclina-se lateralmente de forma que o osso parietal posterior (que está voltado para o sacro) desce primeiro e torna-se a parte apresentada. Para que isso ocorra, a sutura sagital é empurrada para a frente.\n\nAlternativa (b): Incorreta. A descida inicial do parietal anterior caracteriza o assinclitismo anterior, também chamado de obliquidade de Naegele. Nesse caso, o parietal que está voltado para o púbis desce primeiro, e a sutura sagital é deslocada para trás.\n\nAlternativa (c): Incorreta. A sutura sagital posicionada no diâmetro transverso da bacia descreve uma variedade de posição (como a occipito-transversa), o que é comum no início do mecanismo de parto. No entanto, o assinclitismo não se refere à rotação da sutura em relação aos diâmetros da bacia, mas sim à sua inclinação lateral em relação ao eixo central do canal de parto.\n\nAlternativa (d): Incorreta. Se a sutura sagital estiver mais próxima do promontório, significa que o parietal anterior teve mais espaço para descer, caracterizando o assinclitismo anterior (Naegele). No assinclitismo posterior (Litzmann), a sutura sagital aproxima-se da sínfise púbica.\n\nAlternativa (e): Incorreta. O lambda (fontanela posterior) próximo ao púbis indica uma variedade de posição occipito-púbica ou occipito-anterior. Isso descreve o grau de rotação e flexão da cabeça fetal, enquanto o assinclitismo descreve se a cabeça está \"torta\" lateralmente, pendendo para um dos ombros.\n\nResumo para memorização:\n- Assinclitismo Anterior (Naegele): Parietal anterior desce primeiro; sutura sagital perto do promontório.\n- Assinclitismo Posterior (Litzmann): Parietal posterior desce primeiro; sutura sagital perto do púbis.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:01.641Z"
+  },
+  {
+    "id": "AJUDA_26fc3b01-0e4a-44f2-a98b-d50ba16be227",
+    "originalId": "26fc3b01-0e4a-44f2-a98b-d50ba16be227",
+    "statement": "Paciente, 30 anos, após exame de rotina solicitado pelo cardiologista, teve diagnóstico de microcálculos na vesícula biliar há 3 anos, sem nenhuma crise. Deu entrada no PS de um grande hospital apresentando icterícia há 2 dias, febre com calafrio. Fez colangiorressonância que evidenciou diversos cálculos na vesícula biliar, espessamento da parede da vesícula e também um colédoco medindo 1,5 cm com 2 cálculos no seu interior.\n\nA conduta mais apropriada para este caso é a seguinte:",
+    "options": [
+      {
+        "id": "A",
+        "text": "CPRE urgência com papilotomia e retirada dos cálculos e colecistectomia na mesma internação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Colecistectomia convencional com colangiografia intraoperatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Antibioticoterapia de amplo espectro, internação em UTI e aguardar resposta sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colecistectomia convencional seguida de anastomose biliodigéstica hepáticojejunal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Antibioticoterapia, internação em UTI e colecistectomia na mesma internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito — icterícia, febre com calafrios e a presença de cálculos no colédoco (vias biliares) evidenciada pela colangiorressonância — configura um diagnóstico clássico de colangite aguda. A tríade de Charcot (dor abdominal, febre com calafrios e icterícia) é o marcador clínico dessa patologia, que é uma urgência médica devido ao risco de sepse biliar.\n\nAnálise das alternativas:\n\na) CORRETA. O tratamento da colangite aguda baseia-se em dois pilares: antibioticoterapia e descompressão das vias biliares. A CPRE (colangiopancreatografia retrógrada endoscópica) é o método de escolha para a descompressão biliar de urgência, pois permite a papilotomia e a retirada dos cálculos de forma minimamente invasiva. Após a resolução do quadro agudo e a limpeza do colédoco, a colecistectomia (retirada da vesícula) deve ser realizada ainda na mesma internação para evitar novos episódios de obstrução ou complicações.\n\nb) INCORRETA. A colecistectomia convencional com colangiografia intraoperatória até poderia tratar a colelitíase e identificar os cálculos no colédoco, mas, em um paciente com colangite aguda (quadro séptico/obstrutivo), a prioridade é a descompressão biliar por via endoscópica (CPRE), que apresenta menor morbidade imediata do que uma cirurgia aberta em vigência de infecção sistêmica.\n\nc) INCORRETA. Embora a antibioticoterapia e o suporte em UTI sejam fundamentais no manejo inicial, eles não tratam a causa mecânica da obstrução. Sem a descompressão da via biliar (drenagem), o foco infeccioso não é eliminado, e o paciente dificilmente apresentará melhora clínica apenas com medidas conservadoras.\n\nd) INCORRETA. A anastomose biliodigestiva (hepático-jejunal) é um procedimento de exceção, indicado geralmente em casos de dilatações císticas congênitas, estenoses cicatriciais complexas ou em situações em que não é possível a limpeza do colédoco por outros métodos. Para cálculos primários ou secundários do colédoco, a desobstrução por CPRE ou exploração biliar simples é preferível.\n\ne) INCORRETA. Assim como na alternativa C, esta opção falha ao não mencionar a descompressão das vias biliares. Realizar apenas a colecistectomia (retirada da vesícula) não resolve o problema dos cálculos que já estão obstruindo o colédoco e causando a colangite. O paciente permaneceria com a obstrução e a infecção biliar mesmo após a retirada da vesícula biliar.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:19:01.641Z"
+  }
+]

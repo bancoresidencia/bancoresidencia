@@ -1,0 +1,513 @@
+[
+  {
+    "id": "AJUDA_7f43683c-51bb-4dc0-a259-a8384ebf2a37",
+    "originalId": "7f43683c-51bb-4dc0-a259-a8384ebf2a37",
+    "statement": "A conduta correta na avaliação de uma gestante com ruptura prematura de membranas em idade gestacional a termo (≥ 37 semanas) é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Induzir o parto imediatamente, utilizando misoprostol ou ocitocina, devido ao aumento do risco de infecção se a gestante permanecer sob vigilância.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Fazer a indução do parto apenas se a gestante apresentar febre ou sinais de infecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever antibióticos imediatamente, independentemente da presença de sinais de infecção ou da vitalidade fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar apenas o acompanhamento clínico, sem intervenção, já que a maioria das gestações a termo evolui para trabalho de parto espontâneo nas primeiras 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Ruptura Prematura de Membranas Ovulares (RPMO) a termo, ou seja, a partir de 37 semanas de gestação, é uma situação clínica comum na prática obstétrica. O principal objetivo do manejo nessa idade gestacional é minimizar o risco de infecção ascendente (corioamnionite) e infecção neonatal, garantindo o melhor desfecho para o binômio mãe-feto.\n\nAlternativa A (Correta): De acordo com as principais diretrizes nacionais e internacionais (como o Ministério da Saúde e o ACOG), a conduta preferencial na RPMO a termo é a indução do parto. Estudos demonstram que a conduta ativa (indução) reduz significativamente o risco de corioamnionite e de internação em UTI neonatal quando comparada à conduta expectante, sem aumentar as taxas de cesariana. A escolha entre ocitocina e misoprostol dependerá das condições cervicais (Índice de Bishop).\n\nAlternativa B (Incorreta): Esperar o surgimento de febre ou sinais de infecção para intervir é uma conduta reativa e perigosa. O objetivo da assistência pré-natal e intraparto é justamente prevenir a infecção. Se a paciente já apresenta febre, taquicardia materna/fetal ou útero doloroso, o diagnóstico já é de corioamnionite, o que impõe a resolução imediata do parto sob antibioticoterapia terapêutica, e não apenas uma indução eletiva por ruptura de membranas.\n\nAlternativa C (Incorreta): O uso de antibióticos profiláticos para prolongar o período de latência é indicado na ruptura prematura de membranas pré-termo (abaixo de 37 semanas). Na gestação a termo, o uso de antibióticos não é rotineiro apenas pela ruptura em si, sendo reservado para a profilaxia de estreptococo do grupo B (GBS), caso a paciente tenha indicação (cultura positiva ou status desconhecido com mais de 18 horas de bolsa rota), ou em casos de infecção confirmada.\n\nAlternativa D (Incorreta): Embora seja verdade que cerca de 70% a 95% das gestantes a termo entrem em trabalho de parto espontâneo em até 24 a 48 horas, o acompanhamento clínico puramente expectante (aguardar o trabalho de parto espontâneo) está associado a um risco maior de infecções maternas e neonatais em comparação com a indução imediata. Portanto, a conduta ativa é a recomendação padrão para reduzir a morbidade infecciosa.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Rotura Prematura de Membranas (RPM)",
+      "Indução do Parto e Pós-Datismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:31.245Z"
+  },
+  {
+    "id": "AJUDA_7f4c1717-a79f-4be6-99ed-12f3ab79ea3e",
+    "originalId": "7f4c1717-a79f-4be6-99ed-12f3ab79ea3e",
+    "statement": "Mulher, de 55 anos de idade, procurou o pronto atendimento por dor em flanco esquerdo e fossa ilíaca esquerda há uma semana. Nega náuseas, vômitos ou febre. Refere última evacuação há dois dias, sem produtos patológicos. Ao exame físico, encontra-se em bom estado geral, afebril, com abdome globoso, flácido, doloroso à palpação de flanco esquerdo e fossa ilíaca esquerda, com presença de plastrão nessa região, sem sinais de irritação peritoneal. Os exames laboratoriais revelaram leucócitos em 17.300/mm³ e PCR de 58mg/dL. Realizou a tomografia de abdome ilustrada a seguir. Qual é o tratamento mais indicado para essa paciente neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibioticoterapia endovenosa e drenagem percutânea da coleção.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Antibioticoterapia via oral e retorno em 48 horas para reavaliação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Antibioticoterapia endovenosa e retossigmoidectomia a Hartmann.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Analgesia via oral e retorno em 48 horas para reavaliação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DA IMAGEM\nO quadro clínico de dor em fossa ilíaca esquerda associado a leucocitose (17.300/mm) e elevação de PCR sugere fortemente diverticulite aguda. A presença de um plastrão ao exame físico e a ausência de sinais de irritação peritoneal indicam uma complicação bloqueada/localizada. A tomografia de abdome apresentada confirma essa suspeita, demonstrando um espessamento das paredes do cólon sigmoide e a presença de uma coleção líquida com focos de gás no seu interior (abscesso) na região da fossa ilíaca esquerda. De acordo com a classificação de Hinchey modificada, este caso é classificado como Hinchey II (abscesso pélvico, retroperitoneal ou a distância).\n\nALTERNATIVA A (CORRETA)\nPara pacientes com diverticulite aguda complicada por abscesso volumoso (geralmente acima de 3 a 4 cm) ou abscessos distantes do foco original, como no Hinchey II, a conduta de escolha é a internação para antibioticoterapia endovenosa e realização de drenagem percutânea guiada por imagem (tomografia ou ultrassom). Essa estratégia visa controlar a infecção de forma minimamente invasiva, estabilizar a paciente e evitar uma cirurgia de urgência com necessidade de ostomia. A drenagem percutânea permite que, se uma cirurgia eletiva for necessária no futuro, ela possa ser feita em tempo único (com anastomose primária).\n\nALTERNATIVA B (INCORRETA)\nO tratamento ambulatorial com antibióticos via oral é reservado apenas para casos de diverticulite não complicada (Hinchey 0 ou Ia), em pacientes que toleram a via oral, estão hemodinamicamente estáveis e não possuem complicações na tomografia. A presença de um abscesso e leucocitose importante contraindica essa abordagem inicial.\n\nALTERNATIVA C (INCORRETA)\nA cirurgia de Hartmann (retossigmoidectomia com colostomia terminal e sepultamento do coto retal) é um procedimento de exceção, indicado principalmente em casos de peritonite difusa purulenta ou fecal (Hinchey III e IV) ou em pacientes com instabilidade hemodinâmica grave que não suportariam uma anastomose. Como a paciente apresenta um quadro bloqueado (plastrão) e estabilidade clínica, a drenagem e o tratamento conservador com antibióticos devem ser tentados primeiro.\n\nALTERNATIVA D (INCORRETA)\nA conduta de apenas analgesia e observação seria negligente frente a um quadro de diverticulite complicada com coleção purulenta. Sem o tratamento antibiótico e a drenagem do abscesso, a paciente corre o risco de progressão da infecção, sepse e rotura da coleção para a cavidade abdominal livre, agravando drasticamente o prognóstico.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/0c823ab344bee491c95bf63dcc54a148809330785b789ba8804af7f1939a853f.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_7f4c1717-a79f-4be6-99ed-12f3ab79ea3e_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:31.849Z"
+  },
+  {
+    "id": "AJUDA_7f51e240-d09d-465a-90a9-49256fc6ce7f",
+    "originalId": "7f51e240-d09d-465a-90a9-49256fc6ce7f",
+    "statement": "Um homem de 48 anos foi admitido no hospital com erupção cutânea generalizada, mal-estar geral e febre. Ele relatou ter iniciado recentemente alopurinol para controle de hiperuricemia. Nos últimos dias, ele notou o surgimento de uma erupção cutânea que começou no tronco e se espalhou para membros, região cervical e face. Além disso, queixava-se de náuseas e dor abdominal. No exame físico, foram observados erupção cutânea maculopapular generalizada, adenomegalia generalizada e edema em face, mãos e pés bilateralmente. Nos exames laboratoriais, foram encontradas leucocitose, eosinofilia e elevação das transaminases.\nA principal hipótese diagnóstica nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "eritema multiforme;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "urticária medicamentosa;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "síndrome de Stevens-Johnson (SSJ);",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "púrpura trombocitopênica idiopática (PTI);",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "síndrome de hipersensibilidade induzida por drogas (DRESS).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão descreve um quadro clínico clássico de uma reação adversa grave a medicamentos. O paciente apresenta uma combinação de manifestações cutâneas e sistêmicas após o uso de alopurinol, um dos principais fármacos associados a essa condição.\n\nAnálise das alternativas:\n\na) Incorreta. O eritema multiforme manifesta-se tipicamente com lesões em alvo (ou íris), acometendo frequentemente as extremidades e a mucosa oral. Costuma estar associado a infecções, especialmente pelo vírus *Herpes simplex*, e não costuma cursar com eosinofilia importante, edema facial ou comprometimento hepático sistêmico, como descrito no caso.\n\nb) Incorreta. A urticária medicamentosa caracteriza-se por pápulas eritematosas, edematosas e pruriginosas (urticas) que são evanescentes, ou seja, desaparecem em menos de 24 horas sem deixar cicatrizes. Não apresenta febre persistente, adenomegalia ou alteração de transaminases.\n\nc) Incorreta. A Síndrome de Stevens-Johnson (SSJ) é uma reação cutânea grave caracterizada por necrose da epiderme e descolamento da pele em menos de 10% da superfície corporal, com forte acometimento de mucosas (oral, ocular e genital). Embora o alopurinol possa causar SSJ, o quadro do paciente com edema facial, linfonodopatia generalizada e eosinofilia é muito mais sugestivo de DRESS.\n\nd) Incorreta. A púrpura trombocitopênica idiopática (PTI) é uma doença hematológica caracterizada pela destruição de plaquetas, manifestando-se clinicamente por petéquias, equimoses e sangramentos mucosos. Não cursa com erupção maculopapular, febre ou eosinofilia.\n\ne) Correta. A Síndrome de hipersensibilidade induzida por drogas (DRESS — *Drug Reaction with Eosinophilia and Systemic Symptoms*) é o diagnóstico principal. Os critérios diagnósticos presentes no caso são: 1. Uso de droga suspeita (alopurinol); 2. Erupção cutânea generalizada; 3. Febre e mal-estar; 4. Linfadenopatia (adenomegalia em mais de duas cadeias); 5. Edema facial (sinal clínico muito característico); 6. Envolvimento de órgãos internos (hepatite evidenciada pela elevação de transaminases, náuseas e dor abdominal); 7. Alterações hematológicas (leucocitose e eosinofilia). O período de latência prolongado (geralmente 2 a 8 semanas após o início da droga) também é típico desta síndrome.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Farmacodermias"
+    ],
+    "difficulty": 33.113294339221014,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:31.849Z"
+  },
+  {
+    "id": "AJUDA_7f526935-d772-4c56-a473-5d3295da539b",
+    "originalId": "7f526935-d772-4c56-a473-5d3295da539b",
+    "statement": "Após sofrer acidente automobilístico, homem, 50 anos, vem à consulta com a necessidade de realizar procedimento cirúrgico de retirada do baço. Está muito preocupado com o risco de apresentar um quadro infeccioso e solicita informações sobre possíveis complicações influenciosas tardias. Considerando o caso em questão, analise as assertivas a seguir:\n\nI. O micro-organismo mais frequentemente envolvido é o S. pneumoniae.\nII. O período de maior risco para desenvolvimento da sepse pós-esplenectomia é durante os primeiros 12 meses após a retirada do baço, sendo muito rara após esse período.\nIII. A mortalidade por sepse pós-esplenectomia é maior nos indivíduos que fizeram a esplenectomia por trauma do que naqueles que realizaram a operação por doenças hematológicas.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Item I: Esta afirmativa está correta. O baço é o principal órgão responsável pela filtragem de microrganismos da corrente sanguínea e pela produção de anticorpos (opsoninas) contra bactérias encapsuladas. O Streptococcus pneumoniae, também conhecido como pneumococo, é o agente mais comumente envolvido na sepse fulminante pós-esplenectomia (conhecida pela sigla OPSI), sendo responsável por mais de 50 por cento dos casos. Outros agentes importantes são o Haemophilus influenzae tipo b e a Neisseria meningitidis.\n\nAnálise do Item II: Esta afirmativa está incorreta. Embora o maior risco estatístico de sepse ocorra nos primeiros dois anos após a retirada do baço, a condição de asplenia (ausência de baço) confere um risco aumentado de infecções graves por bactérias encapsuladas que perdura por toda a vida. Não se pode considerar a ocorrência como muito rara após 12 meses, uma vez que casos fatais são descritos décadas após o procedimento cirúrgico. Por isso, a vacinação e a orientação ao paciente devem ser permanentes.\n\nAnálise do Item III: Esta afirmativa é considerada correta em provas de residência baseadas em consensos específicos de cirurgia. Existe uma diferença relevante entre incidência e mortalidade. Pacientes que retiram o baço por doenças hematológicas (como esferocitose ou púrpura) costumam ter uma incidência maior de episódios infecciosos. No entanto, a mortalidade costuma ser maior no grupo que realizou a cirurgia por trauma. Isso ocorre porque a esplenectomia por doença hematológica é eletiva, permitindo que o paciente seja vacinado cerca de duas semanas antes da operação, o que garante melhor resposta imunológica. No trauma, a cirurgia é de emergência e a vacinação é feita apenas no pós-operatório, muitas vezes com menor adesão ao seguimento médico.\n\nConclusão: Como as assertivas I e III estão corretas, a alternativa correta é a letra (d).",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:31.849Z"
+  },
+  {
+    "id": "AJUDA_7f6436f6-505d-47ca-8994-ee0cecccb198",
+    "originalId": "7f6436f6-505d-47ca-8994-ee0cecccb198",
+    "statement": "Em um pré-escolar (3 anos) com febre alta, tosse produtiva e leucocitose com desvio à esquerda, o achado radiológico de tórax mais sugestivo de pneumonia bacteriana típica (ex.: por Streptococcus pneumoniae) é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Padrão intersticial bilateral difuso com hiperinsuflação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Consolidação alveolar lobar ou segmentar bem definida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Opacidades peribronquiais bilaterais com atelectasias lineares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Derrame pleural volumoso unilateral sem consolidação parenquimatosa evidente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\nO paciente é um pré-escolar de 3 anos que apresenta febre alta, tosse produtiva e exames laboratoriais com leucocitose e desvio à esquerda. Esse conjunto de achados é altamente sugestivo de uma pneumonia bacteriana típica, cujo principal agente etiológico nessa faixa etária é o Streptococcus pneumoniae (pneumococo).\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. O padrão intersticial bilateral difuso associado à hiperinsuflação (sinais de aprisionamento de ar) é característico de infecções virais, como a bronquiolite viral aguda ou pneumonias virais. Esse padrão não condiz com o quadro de leucocitose com desvio à esquerda, que aponta para uma etiologia bacteriana clássica.\n\nAlternativa b) Correta. A consolidação alveolar lobar ou segmentar é o achado radiológico clássico da pneumonia bacteriana típica. Ela ocorre quando os alvéolos são preenchidos por exsudato inflamatório, impedindo a passagem de ar, mas mantendo a estrutura dos brônquios visível (broncograma aéreo). É a imagem típica esperada para uma infecção por Streptococcus pneumoniae.\n\nAlternativa c) Incorreta. Opacidades peribronquiais e atelectasias lineares ou laminares são achados frequentes em processos inflamatórios das vias aéreas, como as broncopneumonias (que podem ter caráter multifocal) ou quadros virais. Não representam a consolidação bem definida citada na questão como padrão-ouro de suspeita para pneumonia lobar típica.\n\nAlternativa d) Incorreta. O derrame pleural é a complicação mais comum da pneumonia bacteriana (derrame parapneumônico). No entanto, o enunciado busca o achado radiológico no parênquima que sugere a pneumonia em si. Um derrame pleural volumoso isolado, sem consolidação parenquimatosa evidente, é menos provável em um quadro inicial de pneumonia típica e exigiria o diagnóstico diferencial com outras patologias, como a tuberculose pleural.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Pneumonia na Infância",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:31.849Z"
+  },
+  {
+    "id": "AJUDA_7f6a4855-6539-49f0-923e-ff6b7f98998b",
+    "originalId": "7f6a4855-6539-49f0-923e-ff6b7f98998b",
+    "statement": "A tomografia computadorizada de abdome de um paciente em seguimento de pancreatite, realizada 5 semanas após o evento, evidenciou uma área circunscrita bem definida, arredondada, contendo líquido e restos pancreáticos necróticos localizado no corpo do pâncreas. Esse achado é compatível com:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pseudocisto pancreático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Neoplasia mucinosa intraductal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pancreatite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Necrose pancreática delimitada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Adenocarcinoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é fundamental dominar a Classificação de Atlanta Revisada (2012) para as coleções pancreáticas e peripancreáticas decorrentes da pancreatite aguda. O diagnóstico correto depende de dois fatores principais: o tempo de evolução e o conteúdo da coleção.\n\nAnálise do Enunciado:\nO paciente está na fase tardia da pancreatite (5 semanas após o início, ou seja, mais de 4 semanas). A tomografia mostra uma coleção bem delimitada (com parede formada) que contém líquido e, crucialmente, restos pancreáticos necróticos (conteúdo sólido/heterogêneo).\n\nExplicação das Alternativas:\n\na) Pseudocisto pancreático: Incorreta. Embora o pseudocisto ocorra após 4 semanas de evolução e possua uma parede bem definida, ele é composto exclusivamente por conteúdo líquido homogêneo, sem detritos sólidos ou necrose em seu interior. Ele se origina de uma pancreatite edematosa intersticial.\n\nb) Neoplasia mucinosa intraductal (IPMN): Incorreta. Trata-se de uma neoplasia cística produtora de mucina que se origina nos ductos pancreáticos. Não é uma complicação aguda de um quadro de pancreatite recente, apresentando características radiológicas distintas, como comunicação com o ducto pancreático principal.\n\nc) Pancreatite aguda: Incorreta. Este é o diagnóstico da doença sistêmica em si, mas a questão solicita a identificação específica do achado tomográfico (a complicação local).\n\nd) Necrose pancreática delimitada (Walled-off Necrosis – WON): Correta. Esta é a definição clássica para uma coleção que ocorre após 4 semanas de evolução de uma pancreatite necrotizante. Suas características são: parede bem definida e organizada, localização intra- ou extrapancreática e, fundamentalmente, a presença de conteúdo heterogêneo (líquido associado a restos necróticos/sólidos).\n\ne) Adenocarcinoma: Incorreta. O adenocarcinoma é um tumor sólido maligno do pâncreas. Ele não se apresenta como uma coleção circunscrita com restos necróticos e líquido surgindo agudamente 5 semanas após um episódio documentado de pancreatite aguda.\n\nResumo Didático:\nAté 4 semanas:\n- Conteúdo apenas líquido: Coleção Fluida Peripancreática Aguda.\n- Conteúdo com necrose: Coleção Necrótica Aguda (ANC).\n\nApós 4 semanas (coleções com parede definida):\n- Conteúdo apenas líquido: Pseudocisto.\n- Conteúdo com necrose: Necrose Pancreática Delimitada (Walled-off Necrosis – WON).",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:31.849Z"
+  },
+  {
+    "id": "AJUDA_7f6c1542-02f2-4b1d-a117-ac67053c5a3e",
+    "originalId": "7f6c1542-02f2-4b1d-a117-ac67053c5a3e",
+    "statement": "Mulher de 32 anos é diagnosticada com trombose venosa profunda proximal em membro inferior esquerdo, confirmada por ultrassonografia Doppler, sem fator desencadeante identificado. Refere duas perdas gestacionais consecutivas após a 10ª semana de gestação. A investigação para síndrome antifosfolípide, realizada fora da gestação e repetida após 12 semanas, demonstra anticoagulante lúpico positivo, anticardiolipina IgG em títulos altos e anti-β2-glicoproteína I IgG positivo, persistentes. Não apresenta neoplasia, insuficiência renal, hepatopatia ou contraindicação ao uso de antagonista da vitamina K.\nQual é a estratégia de anticoagulação mais adequada após o tratamento inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender a anticoagulação após 30 dias, pois se trata do primeiro episódio de trombose venosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter ácido acetilsalicílico em monoterapia como prevenção secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter anticoagulação prolongada com varfarina, visando INR entre 2,0 e 3,0.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Substituir a anticoagulação por rivaroxabana, por apresentar maior eficácia em pacientes com síndrome antifosfolípide triplo-positiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Suspender a anticoagulação e solicitar investigação de trombofilia hereditária antes de definir o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nEsta questão aborda o manejo terapêutico da Síndrome Antifosfolípide (SAF), uma doença autoimune trombofílica caracterizada por eventos trombóticos ou morbidade gestacional associados à presença persistente de anticorpos antifosfolípides.\n\nANÁLISE DO CASO CLÍNICO\nA paciente apresenta critérios clínicos (trombose venosa profunda e perdas gestacionais tardias) e critérios laboratoriais definitivos (tripla positividade: anticoagulante lúpico, anticardiolipina e anti-β2-glicoproteína I, confirmados após 12 semanas). O quadro caracteriza uma SAF com alto risco de recorrência trombótica.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) Incorreta: A SAF não é um fator desencadeante transitório (como cirurgia ou gesso), mas sim uma trombofilia adquirida de alto risco. Suspender a anticoagulação após o primeiro episódio de TVP em um paciente com SAF diagnosticada elevaria drasticamente o risco de novos eventos fatais ou graves.\n\nAlternativa (b) Incorreta: O ácido acetilsalicílico (AAS) é um antiagregante plaquetário. Embora possa ser usado como adjuvante ou em profilaxia primária em alguns casos específicos, ele é insuficiente para a prevenção secundária de eventos venosos na SAF, que exige obrigatoriamente a anticoagulação plena.\n\nAlternativa (c) Correta: Para pacientes com SAF e um primeiro episódio de trombose venosa, o tratamento padrão-ouro é a anticoagulação prolongada (muitas vezes vitalícia) com antagonistas da vitamina K (Varfarina), mantendo o alvo de INR (RNI) entre 2,0 e 3,0. Esta estratégia demonstrou ser a mais eficaz na prevenção de recorrências.\n\nAlternativa (d) Incorreta: Esta alternativa contém um erro importante de conduta atual. O uso de DOACs (como a rivaroxabana) é contraindicado ou não recomendado em pacientes \"triplo-positivos\". Estudos recentes (como o ensaio TRAPS) demonstraram que pacientes triplo-positivos apresentam maior taxa de eventos trombóticos arteriais e recorrências quando usam rivaroxabana em comparação com a varfarina.\n\nAlternativa (e) Incorreta: Não há indicação de suspender a anticoagulação para investigar trombofilias hereditárias. O diagnóstico de SAF já está firmado pelos critérios de Sydney e ele, por si só, já define a necessidade de anticoagulação prolongada. Além disso, a presença de uma trombofilia hereditária associada não mudaria a conduta de manter a varfarina no caso desta paciente.\n\nConclusão: Diante de uma paciente com SAF e fenômeno tromboembólico venoso, a varfarina com alvo de INR 2,0-3,0 permanece como a droga de escolha.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Hemostasia",
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:31.849Z"
+  },
+  {
+    "id": "AJUDA_7f6d20b1-8d45-4555-bebf-5c6bbdd609ab",
+    "originalId": "7f6d20b1-8d45-4555-bebf-5c6bbdd609ab",
+    "statement": "O escore de Wells é um modelo de predileção clínica amplamente utilizado para auxílio no diagnóstico de Trombose Venosa Profunda (TVP). Qual das alternativas abaixo apresenta um achado clínico que NÃO aumenta a suspeição de diagnóstico de TVP?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Edema de toda a extremidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Presença de celulite.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Veias colaterais superficiais não varicosas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Palpação dolorosa ao longo do trajeto de veias do sistema profundo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Escore de Wells para TVP é uma ferramenta de predição clínica que atribui pontos a achados de anamnese e exame físico para classificar a probabilidade de o paciente ter uma trombose venosa profunda. O escore é composto por nove critérios positivos (que somam 1 ponto cada) e um critério negativo (que subtrai 2 pontos).\n\nAlternativa (a) Incorreta: O edema de toda a extremidade inferior é um dos critérios clássicos do Escore de Wells. Quando presente, soma 1 ponto, aumentando a probabilidade clínica de TVP.\n\nAlternativa (b) Correta: A presença de um diagnóstico alternativo que seja pelo menos tão provável quanto a TVP (como é o caso da celulite, erisipela, rotura de cisto de Baker ou lesão muscular) é o único critério que subtrai pontos no Escore de Wells (-2 pontos). Portanto, a presença de celulite reduz a suspeição diagnóstica de TVP dentro deste modelo de predição.\n\nAlternativa (c) Incorreta: A presença de veias colaterais superficiais (que não sejam varizes preexistentes) sugere que o sangue está buscando rotas alternativas devido a uma obstrução no sistema venoso profundo. Este achado soma 1 ponto no escore, aumentando a suspeição.\n\nAlternativa (d) Incorreta: A sensibilidade ou dor à palpação localizada ao longo do trajeto do sistema venoso profundo (especialmente na região poplítea ou trajeto femoral) é um sinal inflamatório importante da TVP. Este achado soma 1 ponto no Escore de Wells, aumentando a suspeição diagnóstica.\n\nResumo dos critérios que somam 1 ponto no Wells:\n1. Câncer ativo.\n2. Paralisia, paresia ou imobilização recente de membros inferiores.\n3. Acamado por mais de 3 dias ou cirurgia de grande porte nas últimas 12 semanas.\n4. Dor/sensibilidade ao longo do sistema venoso profundo.\n5. Edema de toda a perna.\n6. Edema da panturrilha (> 3 cm em relação à outra).\n7. Edema depressível (cacifo) limitado à perna sintomática.\n8. Veias colaterais superficiais não varicosas.\n9. História prévia de TVP documentada.\n\nCritério que subtrai 2 pontos:\n1. Diagnóstico alternativo tão ou mais provável que TVP (como a celulite mencionada na questão).",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Cirurgia Vascular",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:31.849Z"
+  },
+  {
+    "id": "AJUDA_7f742043-e7a3-4edd-a598-339f188b4835",
+    "originalId": "7f742043-e7a3-4edd-a598-339f188b4835",
+    "statement": "Homem de 28 anos, vítima de agressão por arma branca, é trazido ao serviço de emergência. Na avaliação primária, mantém consciência (ECG = 15); pressão arterial 130/80 mmHg; FC 92 bpm; Sat. O2 96%, em ar ambiente; FR 18/min. Há um ferimento puntiforme, de aproximadamente 2,0 cm, na linha média anterior do pescoço, em nível cervical (aprox. região supraesternal, correspondente à zona II), com escape contínuo de ar visível no ferimento durante a respiração e início de enfisema subcutâneo cervical palpável. Refere rouquidão leve, sem sangramento externo ativo volumoso e sem sinais de hematoma expansivo. Colar cervical colocado; não há sinais claros de instabilidade hemodinâmica no momento.\n\nQual é a melhor conduta imediata a ser adotada nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aplicar curativo oclusivo (vedante) sobre o ferimento do pescoço e observar na sala de emergência, solicitando TC de pescoço e tórax antes de qualquer tentativa de via aérea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar intubação orotraqueal por via direta, com SRI (sequência rápida de intubação), na sala de emergência, sem intubação guiada por fibra/broncoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar diretamente para cricotireoidostomia cirúrgica de emergência, como primeira escolha de via aérea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deixar colar cervical, monitorizar e iniciar antibioticoprofilaxia; aguardar evolução clínica por 1–2 horas antes de decisões sobre via aérea ou realização de exames de imagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Garantir via aérea de forma controlada, em ambiente com equipe cirúrgica presente (preferencialmente intubação endotraqueal guiada por fibrobroncoscópica ou videolaringoscópio), com disponibilidade imediata para cricotireoidostomia/traqueostomia, se não for possível a intubação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro descreve um trauma cervical penetrante em Zona II com sinais inequívocos de lesão laringotraqueal, caracterizados pelo escape ativo de ar pelo ferimento e enfisema subcutâneo progressivo. Embora o paciente esteja consciente e hemodinamicamente estável no momento, lesões de via aérea podem evoluir rapidamente para obstrução completa por edema, hematoma ou perda anatômica. O objetivo primordial é garantir a via aérea de forma segura antes que ocorra deterioração.\n\nAlternativa A - Incorreta. A aplicação de curativo oclusivo em um ferimento cervical com escape gasoso represa o ar nos tecidos moles, acelerando o enfisema subcutâneo, o que pode causar compressão extrínseca da via aérea e pneumomediastino hipertensivo. Além disso, não se deve transportar o paciente instável do ponto de vista de via aérea para a tomografia sem antes assegurá-la.\n\nAlternativa B - Incorreta. A Sequência Rápida de Intubação com paralisia neuromuscular clássica elimina o tônus muscular que mantém a via aérea pérvia e cessa o drive respiratório espontâneo. Em lesões traqueais, a passagem às cegas ou sem visualização adequada pode criar um falso trajeto pelo ferimento, levando a um cenário catastrófico de impossibilidade de ventilação e intubação.\n\nAlternativa C - Incorreta. A cricotireoidostomia cirúrgica imediata está reservada para situações de via aérea de resgate em colapso agudo ou quando a intubação orotraqueal falhou. Como o paciente está estável e cooperativo, a abordagem inicial deve ser menos traumática e mais controlada. Ademais, lesões laringotraqueais baixas podem exigir traqueostomia formal abaixo da lesão, e não cricotireoidostomia.\n\nAlternativa D - Incorreta. A conduta expectante é contraindicada na presença de sinais duros de lesão de via aérea (borbulhamento/escape aéreo). Esperar 1 a 2 horas permite a progressão do edema tecidual e do enfisema, transformando uma via aérea acessível em uma situação de extremo risco de perda da via aérea.\n\nAlternativa E - Correta. Em pacientes estáveis com suspeita ou confirmação de lesão traqueal, a melhor conduta é o manejo em ambiente controlado (sala de cirurgia ou sala vermelha equipada), preferencialmente com intubação visualizada por broncoscopia flexível ou videolaringoscopia, permitindo ultrapassar a lesão sob visão direta sem causar falso trajeto. A presença da equipe cirúrgica a postos para realização imediata de cricotireoidostomia ou traqueostomia é mandatória caso haja falha ou colapso da via aérea.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:31.850Z"
+  },
+  {
+    "id": "AJUDA_7f7c97ac-fa96-4720-bcb3-0149392cf9f8",
+    "originalId": "7f7c97ac-fa96-4720-bcb3-0149392cf9f8",
+    "statement": "Criança, 3 anos de idade, é levada ao pronto-socorro com história de febre há 3 dias e tosse. A mãe relata que a criança está mais cansada, mas ainda brinca e aceita bem líquidos e alimentos. Ao exame físico, a criança está ativa, afebril (após antitérmico), com frequência respiratória de 45 ipm, sem sinais de esforço respiratório e saturação de oxigênio periférica de 97% em ar ambiente. À ausculta pulmonar, apresenta crepitações difusas. Assinale a alternativa que apresenta, corretamente, a conduta inicial mais apropriada para esse paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar broncodilatador inalatório e reavaliar o quadro respiratório antes de considerar o diagnóstico de pneumonia, devido à presença de taquipneia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar antibioticoterapia empírica com amoxicilina oral e orientar retorno em 48 a 72 horas, sem necessidade de exames complementares adicionais neste momento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar hemograma completo e dosagem de Proteína C Reativa (PCR) para avaliar a necessidade de internação hospitalar e iniciar antibioticoterapia apenas se os marcadores inflamatórios estiverem elevados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar radiografia de tórax para confirmação diagnóstica e diferenciar etiologia viral de bacteriana e, então, decidir sobre a antibioticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Indicar internação hospitalar devido às crepitações e iniciar ceftriaxona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo da pneumonia adquirida na comunidade (PAC) em pediatria, fundamentado nas diretrizes da Organização Mundial da Saúde (OMS) e da Sociedade Brasileira de Pediatria (SBP).\n\nO diagnóstico de pneumonia na infância é eminentemente clínico. Em uma criança com tosse e febre, a presença de taquipneia (aumento da frequência respiratória) é o sinal isolado de maior sensibilidade e especificidade para o diagnóstico. Para uma criança de 3 anos (faixa etária de 1 a 5 anos), a frequência respiratória é considerada elevada se estiver igual ou acima de 40 incursões por minuto (ipm). Como o paciente apresenta 45 ipm, o diagnóstico clínico é de pneumonia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O uso de broncodilatadores inalatórios é indicado em quadros de sibilância (chiado no peito), sugestivos de asma ou bronquiolite. O exame físico da criança descreve crepitações difusas e taquipneia, o que direciona para pneumonia. Adiar o tratamento da pneumonia para realizar um teste terapêutico com broncodilatador sem a presença de sibilos não é a conduta preconizada.\n\nAlternativa b) Correta. Por se tratar de uma pneumonia não grave (ausência de sinais de perigo como cianose, incapacidade de ingerir líquidos, gemência ou tiragem subcostal), o tratamento deve ser ambulatorial. A amoxicilina via oral é a primeira escolha devido à excelente cobertura contra o Streptococcus pneumoniae (principal agente bacteriano). O retorno para reavaliação em 48 a 72 horas é fundamental para garantir que houve resposta terapêutica. Em casos ambulatoriais típicos, exames de imagem e laboratoriais são dispensáveis.\n\nAlternativa c) Incorreta. Exames laboratoriais como hemograma e Proteína C Reativa (PCR) não são necessários para o diagnóstico de pneumonia ambulatorial e não devem ser usados como critério único para iniciar antibioticoterapia, que deve ser guiada pela clínica. Esses exames são geralmente reservados para pacientes que necessitam de internação ou que não respondem ao tratamento inicial.\n\nAlternativa d) Incorreta. A radiografia de tórax não é recomendada de rotina para crianças com quadro clínico de pneumonia leve tratadas ambulatorialmente. Além disso, o raio X possui baixa especificidade para diferenciar pneumonia viral de bacteriana em pediatria, não devendo atrasar o início do antibiótico quando há taquipneia.\n\nAlternativa e) Incorreta. A internação hospitalar e o uso de antibióticos intravenosos (como a ceftriaxona) estão reservados para casos de pneumonia grave ou muito grave, caracterizados por esforço respiratório importante (tiragem subcostal), hipoxemia (saturação abaixo de 92-94%), sinais de desidratação ou incapacidade de aceitar a medicação oral. O paciente em questão está ativo, com boa saturação e aceitando líquidos, o que permite o tratamento domiciliar.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:31.850Z"
+  }
+]

@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_104c720d-9e85-4fcd-a40d-fb821d384dc7",
+    "originalId": "104c720d-9e85-4fcd-a40d-fb821d384dc7",
+    "statement": "As medidas de morbidade são essenciais à prevenção e ao controle dos agravos à saúde/doença. Elas podem subsidiar o planejamento de ações específicas e monitorá-las, permitindo a sua correção em tempo hábil, além de avaliá-las ao final do período proposto. Nesse sentido, a medida de incidência é definida por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "casos novos de um agravo à saúde/doença em uma dada população em um determinado período de tempo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "totalidade de casos de um agravo à saúde/doença em um determinado local e período de tempo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "totalidade de casos em um ponto específico no tempo (dia ou mês).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "agravos à saúde que resultaram no óbito dos pacientes contabilizados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "agravos à saúde/doença entre os contatos - pessoas que convivem no trabalho ou domicílio - do primeiro caso identificado, denominado de caso índice.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A epidemiologia utiliza as medidas de morbidade para quantificar a ocorrência de doenças em uma população. As duas principais medidas são a incidência e a prevalência.\n\nAlternativa a: Correta. Esta é a definição exata de incidência. Ela quantifica a ocorrência de episódios novos de uma doença em uma população que estava livre da enfermidade (sob o risco de desenvolvê-la) durante um período de acompanhamento. A incidência indica o risco ou a probabilidade de um indivíduo tornar-se doente em um intervalo de tempo.\n\nAlternativa b: Incorreta. O termo totalidade de casos em um determinado local e período de tempo descreve a Prevalência de Período. Diferentemente da incidência, a prevalência não foca no surgimento da doença, mas sim no estoque total de doentes (casos novos somados aos casos antigos) em um intervalo temporal.\n\nAlternativa c: Incorreta. A totalidade de casos em um ponto específico do tempo (como em um dia específico) define a Prevalência Pontual ou Instantânea. É comparada a uma fotografia da situação de saúde da população naquele exato momento.\n\nAlternativa d: Incorreta. A contabilização de óbitos refere-se a indicadores de mortalidade (frequência de mortes na população) ou letalidade (proporção de mortes entre os doentes). A questão solicita uma medida de morbidade (adoecimento), não de mortalidade.\n\nAlternativa e: Incorreta. A descrição de casos que surgem entre contatos de um caso-índice define a Taxa de Ataque Secundária. Essa é uma medida de incidência específica, muito utilizada em investigações de surtos e doenças infectocontagiosas para avaliar o poder de transmissibilidade de um agente etiológico em grupos restritos.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:07:21.069Z"
+  },
+  {
+    "id": "AJUDA_1056fcc2-2438-4a89-8ee5-e66deece3b25",
+    "originalId": "1056fcc2-2438-4a89-8ee5-e66deece3b25",
+    "statement": "Homem de 32 anos, vítima de acidente motociclístico envolvendo colisão contra poste, com uso de capacete, é atendido no local do acidente por equipe avançada do SAMU. Está consciente e conversando, com sinais vitais estáveis. Apresenta escoriações no braço e no ombro esquerdos, ferimento corto-contuso de 3 cm em região clavicular esquerda, com exposição de fragmento ósseo pela ferida. Há ausência de flexão do punho e dos dedos da mão esquerda, com anestesia em região medial do antebraço. Pulsos palpáveis. É realizada a limpeza do ferimento clavicular.\nNessa situação, qual outra conduta deve ser realizada no local do acidente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Imobilizar com curativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Reduzir fratura da clavícula.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar tração do membro superior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alinhar com tala moldável.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Trata-se de um paciente com fratura exposta de clavícula esquerda associada a lesão do plexo braquial. A perda da flexão do punho e dos dedos e a anestesia na face medial do antebraço indicam comprometimento das raízes C8-T1 (tronco inferior ou fascículo medial). Isso é compatível com o mecanismo de alta energia e com a proximidade do plexo à clavícula. Os pulsos palpáveis tornam menos provável uma lesão arterial subclávia significativa.\n\nNo atendimento pré-hospitalar, após o ABCDE e a limpeza grosseira da ferida, a fratura exposta deve receber três cuidados: controle de sangramento, cobertura com curativo estéril e imobilização na posição encontrada ou de conforto. Não se deve tentar reduzir a fratura nem reintroduzir o fragmento ósseo. O objetivo é proteger a ferida, evitar contaminação adicional e não agravar as lesões neurovasculares. A redução e o tratamento definitivo ocorrem no hospital, com antibioticoprofilaxia, profilaxia antitetânica, desbridamento cirúrgico e avaliação do plexo.\n\na) Imobilizar com curativo – CORRETA. Cobrir a ferida com curativo estéril e imobilizar o membro reduz contaminação, dor e mobilização dos fragmentos. Para a clavícula, a imobilização prática é feita com tipoia ou enfaixamento que fixe o membro ao tórax. Essa é a conduta preconizada para fratura exposta no local do acidente.\n\nb) Reduzir fratura da clavícula – INCORRETA. Não se reduz fratura exposta no ambiente pré-hospitalar. Manobras de redução podem levar o fragmento contaminado para dentro da ferida e agravar a lesão do plexo braquial. Também podem lesar os vasos subclávios, que estão logo abaixo da clavícula. A redução é feita no centro cirúrgico, após desbridamento.\n\nc) Realizar tração do membro superior – INCORRETA. A tração do membro aumenta o estiramento do plexo braquial, que já está lesado, e pode piorar o déficit neurológico. Além disso, pode deslocar os fragmentos em direção às estruturas vasculares. Tração é usada em situações específicas, como fraturas de fêmur com tala de tração, e não nesta.\n\nd) Alinhar com tala moldável – INCORRETA. A clavícula não é passível de imobilização eficaz com tala moldável. Além disso, alinhar a fratura implica manipulá-la, o que não deve ser feito numa fratura exposta com lesão neurológica associada. A tala moldável é indicada para fraturas de ossos longos de extremidades, sem manobras agressivas em fraturas expostas.\n\nResposta: alternativa A.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Trauma Ortopédico",
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:07:21.070Z"
+  },
+  {
+    "id": "AJUDA_1057666b-77dc-412a-bdd6-10c2a12c58bb",
+    "originalId": "1057666b-77dc-412a-bdd6-10c2a12c58bb",
+    "statement": "A interpretação da Cardiotografia (CTG) anteparto requer critérios bem estabelecidos para avaliar a condição fetal, incluindo a variabilidade da Frequência Cardíaca Fetal (FCF) e a presença de acelerações e desacelerações.  Sobre o assunto, há as seguintes afirmativas:\n\nI. A variabilidade da FCF basal é considerada moderada quando a amplitude é de 6 a 25 bpm.\nII. Desacelerações tardias são caracterizadas por uma queda abrupta da FCF com nadir ≥ 15 bpm e duração ≥ 15 segundos.\nIII. A presença de acelerações transitórias da FCF é um indicador de reatividade fetal.\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "V, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "AFIRMATIVA I (VERDADEIRA): A variabilidade da frequência cardíaca fetal (FCF) refere-se às flutuações da linha de base, avaliadas em termos de amplitude. Ela é classificada como moderada quando a amplitude das oscilações varia entre 6 e 25 batimentos por minuto (bpm). Este é o padrão considerado normal e altamente preditivo de ausência de acidemia metabólica fetal no momento do exame.\n\nAFIRMATIVA II (FALSA): A descrição de queda abrupta (com tempo entre o início da queda e o nadir menor que 30 segundos) com amplitude de pelo menos 15 bpm e duração de 15 segundos ou mais define as DESACELERAÇÕES VARIÁVEIS (DIP III), geralmente associadas à compressão do cordão umbilical. As desacelerações TARDIAS (DIP II) são caracterizadas por uma queda gradual e lenta da FCF, cujo nadir ocorre após o pico da contração uterina, indicando reserva de oxigênio fetal reduzida (insuficiência uteroplacentária).\n\nAFIRMATIVA III (VERDADEIRA): Acelerações transitórias são aumentos abruptos da FCF acima da linha de base. Em gestações acima de 32 semanas, o critério é um aumento de 15 bpm por 15 segundos. Sua presença é o principal parâmetro para definir um traçado cardiotocográfico como reativo, indicando integridade do sistema nervoso autônomo fetal e bom estado de oxigenação.\n\nCONCLUSÃO: A sequência correta das afirmativas é Verdadeira, Falsa e Verdadeira.\n\nALTERNATIVA CORRETA: Letra (b).",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Vitalidade Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:07:21.070Z"
+  },
+  {
+    "id": "AJUDA_105ea598-e153-429c-9d50-711fdf530496",
+    "originalId": "105ea598-e153-429c-9d50-711fdf530496",
+    "statement": "Foi realizado um estudo transversal de base populacional na cidade de Pelotas, no sul do Brasil. Todos os indivíduos com idades entre 10 e 19 anos de idade que residiam nas moradias selecionadas foram convidados a participar do estudo. Para identificar depressão, foi aplicado o instrumento PHQ-9 (Patient Health Questionnaire – 9). Foram avaliados 359 adolescentes do sexo masculino e 384 do sexo feminino, dos quais 50 meninos e 76 meninas foram diagnosticados com depressão, conforme tabela a seguir:\n\nQue medida de ocorrência ou de associação está representada na última coluna da tabela?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prevalência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Risco Relativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Densidade de incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um estudo transversal de base populacional realizado em Pelotas. Esse tipo de delineamento epidemiológico funciona como uma fotografia de um momento específico, analisando a presença de uma condição de saúde (neste caso, a depressão) em uma população em um ponto determinado no tempo.\n\nAo analisar a tabela apresentada na imagem, a última coluna exibe valores percentuais. O cálculo realizado para chegar a esses números foi a divisão do número de casos positivos (coluna Depressão +) pelo total de indivíduos avaliados em cada grupo. Por exemplo, para o sexo masculino: 50 meninos doentes divididos pelo total de 359 meninos resultam em aproximadamente 13,9%. Para o sexo feminino: 76 meninas doentes divididas por 384 resultam em 19,8%. Essa relação entre o número de casos existentes e a população total em um corte temporal define a medida de prevalência.\n\nAlternativa a) Incorreta. A incidência mede o surgimento de novos casos em uma população inicialmente saudável ao longo de um período de acompanhamento. Como o estudo é transversal e não houve seguimento dos participantes no tempo, não é possível aferir a incidência.\n\nAlternativa b) Correta. A prevalência é a medida de ocorrência que indica a proporção de indivíduos que apresentam uma doença ou característica em um ponto específico no tempo. O cálculo (Casos / População Total) mostrado na última coluna da tabela corresponde exatamente a essa definição.\n\nAlternativa c) Incorreta. O risco relativo é uma medida de associação que compara a probabilidade de um evento ocorrer entre dois grupos (ex.: risco em mulheres dividido pelo risco em homens). A tabela apresenta dados de ocorrência dentro de cada grupo isoladamente, e não uma razão entre eles. Além disso, o risco relativo é tipicamente oriundo de estudos de coorte.\n\nAlternativa d) Incorreta. A densidade de incidência é uma medida que utiliza o tempo-atendimento (como pessoas-ano) no denominador. Ela exige o acompanhamento individualizado de cada participante para saber por quanto tempo cada um ficou sob risco antes de adoecer ou sair do estudo, o que não ocorre em levantamentos transversais.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/c26bece28cdf186a4d4d597be683a3f061d285fe89ebdee5bea8016582c69964.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_105ea598-e153-429c-9d50-711fdf530496_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:07:21.619Z"
+  },
+  {
+    "id": "AJUDA_105ec8f9-1df1-4f61-a6c0-76b235acca6b",
+    "originalId": "105ec8f9-1df1-4f61-a6c0-76b235acca6b",
+    "statement": "Paciente de 24 anos chega à unidade de saúde com quadro sugestivo de TEP. É correto afirmar que é fator de risco alto a identificação de",
+    "options": [
+      {
+        "id": "A",
+        "text": "gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "antecedente de trombose venosa profunda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "varizes em membros inferiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "uso de anticoncepcional oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder a essa questão, é necessário classificar os fatores de risco para o Tromboembolismo Venoso (TEV), que engloba a Trombose Venosa Profunda (TVP) e o Tromboembolismo Pulmonar (TEP). A literatura médica, baseada principalmente nas diretrizes da Sociedade Europeia de Cardiologia (ESC), categoriza esses fatores de acordo com a Razão de Chances (Odds Ratio – OR) de desencadearem um evento embólico.\n\nAlternativa (a) Incorreta: A gestação é classificada como um fator de risco fraco (OR inferior a 2). Embora a gravidez altere a dinâmica circulatória e a coagulação, o risco é significativamente menor quando comparado ao período de pós-parto (que é de risco moderado) ou a eventos prévios.\n\nAlternativa (b) Correta: O antecedente de tromboembolismo venoso (ter tido uma TVP ou um TEP anteriormente) é considerado um fator de risco alto/forte (OR superior a 10). Pacientes com histórico positivo têm uma propensão clínica e biológica muito elevada para novos eventos, situando-se no mesmo grupo de risco de grandes traumas, cirurgias ortopédicas de grande porte (quadril e joelho) e lesões medulares agudas.\n\nAlternativa (c) Incorreta: Varizes em membros inferiores são consideradas fatores de risco fracos (OR inferior a 2). Apesar de indicarem insuficiência venosa e propiciarem certa estase sanguínea, isoladamente não representam um risco alto para o desenvolvimento de TEP em pacientes jovens sem outras comorbidades.\n\nAlternativa (d) Incorreta: O uso de anticoncepcionais orais combinados (contendo estrogênio) é um fator de risco moderado (OR entre 2 e 9). Embora seja uma causa frequente de TEP em mulheres jovens, na classificação epidemiológica ele não atinge o critério de \"alto risco\" (OR maior que 10), que é reservado para situações de vulnerabilidade extrema do sistema de coagulação ou estase severa.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:07:21.619Z"
+  },
+  {
+    "id": "AJUDA_10643f50-29a1-4006-819d-00a808b06fa2",
+    "originalId": "10643f50-29a1-4006-819d-00a808b06fa2",
+    "statement": "Mulher, de 28 anos de idade, comparece ao ambulatório de clinica médica se queixando de nervosismo, palpitação, dificuldade para dormir, sensação de calor e sudorese excessivas e perda de 6 kg nos últimos 2 meses, apesar de ter notado um aumento no seu apetite. Não tem nenhuma comorbidade prévia e faz uso apenas de anticoncepcional oral (levonorgestrel 0,15 mg + etinilestradiol 0,03 mg). Adicionalmente, pratica musculação e corrida todos os dias da semana, fazendo suplementação de proteína (whey), creatina e BCCA. Ao exame, apresenta FC: 98 bpm, PA: 146 ×88 mmHg e tireoide de dimensões levemente aumentadas, heterogênea, fibroelástica, indolor à palpação e sem sopros à ausculta. Sem outras alterações. A cintilografia de tireoide evidenciou aumento heterogêneo na captação do radiomarcador, com múltiplas áreas de hipercaptação alternadas com áreas de hipocaptação na tireoide. Os exames laboratoriais evidenciaram:\n\n- TSH: < 0,01 mUI/L (Valor Normal: 0,4-4,0 mUI/L)\n- T4 Livre: 2,2 ng/dL (Valor Normal: 0,8-1,8 ng/dL)\n- T3: 225 ng/dL (Valor Normal: 80-200 ng/dL)\n\nO diagnóstico mais provável para o quadro apresentado pela paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tireoidite de Hashimoto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença de Graves.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Adenoma tóxico de tireoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Bócio multinodular tóxico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Hipertireoidismo factício.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nA paciente apresenta sinais e sintomas clássicos de tireotoxicose: perda de peso mesmo com aumento do apetite, palpitações, intolerância ao calor, sudorese excessiva e nervosismo. Os exames laboratoriais confirmam o estado de hipertireoidismo primário, caracterizado por TSH suprimido (< 0,01 mUI/L) e níveis elevados de T4 livre e T3. O diagnóstico diferencial entre as causas de hipertireoidismo é definido pelo padrão da cintilografia de tireoide.\n\nAlternativa a) Incorreta. A tireoidite de Hashimoto é tipicamente uma causa de hipotireoidismo. Existe uma variante chamada hashitoxicose, que é uma fase transitória de tireotoxicose causada pela destruição folicular e liberação de hormônios na circulação. Contudo, na cintilografia, a captação estaria baixa (pela destruição da glândula) ou apenas irregular, não apresentando o padrão de múltiplos focos de hipercaptação ativa.\n\nAlternativa b) Incorreta. Embora a doença de Graves seja a causa mais comum de hipertireoidismo em mulheres jovens, o padrão cintilográfico clássico dessa patologia é uma captação aumentada de forma difusa e homogênea por toda a glândula. O enunciado descreve uma captação heterogênea com múltiplas áreas de hipercaptação alternadas com áreas de hipocaptação, o que afasta Graves.\n\nAlternativa c) Incorreta. O adenoma tóxico (doença de Plummer) caracteriza-se pela presença de um único nódulo autônomo. Na cintilografia, observaríamos uma única área focal de hipercaptação (\"nódulo quente\"), com o restante do tecido tireoidiano apresentando captação suprimida ou ausente devido aos níveis baixos de TSH.\n\nAlternativa d) Correta. O bócio multinodular tóxico (BMT) é a segunda causa mais comum de hipertireoidismo e ocorre quando múltiplos nódulos em um bócio multinodular preexistente desenvolvem autonomia funcional. O achado na cintilografia é patognomônico: um aspecto heterogêneo ou \"em mosaico\", onde as áreas de hipercaptação correspondem aos nódulos autônomos e as áreas de hipocaptação correspondem ao parênquima glandular normal que está funcionalmente suprimido.\n\nAlternativa e) Incorreta. O hipertireoidismo factício decorre da ingestão exógena de hormônios tireoidianos. Nesses casos, como o hormônio vem de fora, a produção interna da glândula é totalmente inibida pelo TSH baixo. Portanto, a cintilografia de tireoide mostraria uma captação de radiomarcador muito baixa ou nula, diferente do aumento heterogêneo relatado.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:07:21.619Z"
+  },
+  {
+    "id": "AJUDA_106cd1d5-c89c-493e-9e12-25513d6a655a",
+    "originalId": "106cd1d5-c89c-493e-9e12-25513d6a655a",
+    "statement": "Homem de 67 anos, natural de Garanhuns (PE) e portador de doença renal crônica estágio 3, procura atendimento devido à dor súbita, intensa e inchaço no hálux direito, iniciados há 24 horas. O quadro começou durante a madrugada, após um jantar com carne vermelha, frutos do mar e consumo de cerveja artesanal. Relata que a dor piora até com o toque do lençol. No exame físico, a articulação metatarsofalangeana direita encontra-se quente, eritematosa, edemaciada e com limitação funcional marcada. Exames laboratoriais mostram ácido úrico 9,8 mg/dL, creatinina 1,9 mg/dL, VHS 35 mm/h e PCR 12 mg/L. Qual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Artrite séptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gota.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Artrite psoriásica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Condrocalcinose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Artrite reativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO: Gota (Artrite Gotosa Aguda)\n\nCOMENTÁRIO: O caso clínico descreve uma apresentação clássica de crise aguda de gota, também conhecida como podagra quando acomete a primeira articulação metatarsofalangeana. Diversos elementos corroboram esse diagnóstico:\n1. Perfil do paciente: Homem idoso com doença renal crônica (fator de risco crucial, pois a redução da taxa de filtração glomerular diminui a excreção de ácido úrico).\n2. Fatores desencadeantes: Consumo de carne vermelha, frutos do mar e cerveja artesanal. Alimentos ricos em purinas e o álcool (que aumenta a produção e compete na excreção renal de urato) são gatilhos típicos.\n3. Quadro clínico: Início súbito, geralmente noturno, com dor de intensidade extrema (sinal do lençol — alodinia) e sinais inflamatórios exuberantes.\n4. Laboratório: Hiperuricemia (9,8 mg/dL) e elevação de marcadores de fase aguda (VHS e PCR), comuns durante a crise.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Artrite séptica: É o principal diagnóstico diferencial de uma monoartrite aguda. Embora cause dor intensa e edema, geralmente é acompanhada de febre e o paciente não apresenta uma relação tão clara com gatilhos dietéticos. Na dúvida, a punção articular com análise do líquido sinovial é mandatória, mas a história clínica aqui é muito mais sugestiva de gota.\n\nb) Gota (CORRETA): O quadro de podagra (inflamação da base do grande artelho), associado a fatores de risco (insuficiência renal), gatilhos alimentares e hiperuricemia, fecha o diagnóstico clínico mais provável conforme os critérios de classificação (ACR/EULAR).\n\nc) Artrite psoriásica: Geralmente se manifesta como uma oligoartrite assimétrica ou dactilite (dedo em salsicha), frequentemente associada a lesões cutâneas de psoríase e alterações ungueais. O início súbito após excesso alimentar não é característico desta patologia.\n\nd) Condrocalcinose (Pseudogout): Causada pela deposição de cristais de pirofosfato de cálcio. Embora também cause monoartrite aguda em idosos, acomete preferencialmente grandes articulações, como joelhos e punhos. A relação com a dieta e os níveis elevados de ácido úrico direcionam o diagnóstico para gota.\n\ne) Artrite reativa: É uma espondiloartrite que surge após um quadro infeccioso (geralmente gastrointestinal ou geniturinário). Costuma cursar com entesites e acometer pacientes mais jovens, não guardando relação com o consumo de purinas ou doença renal crônica.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Artrites Microcristalinas"
+    ],
+    "difficulty": 27.874242430001843,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:07:21.619Z"
+  },
+  {
+    "id": "AJUDA_106d2c76-cd51-4446-8428-537d3b1cf454",
+    "originalId": "106d2c76-cd51-4446-8428-537d3b1cf454",
+    "statement": "Homem de 46 anos, previamente hígido, é admitido com dor em hipocôndrio direito há 24 horas, febre baixa e leucocitose. A ultrassonografia mostra vesícula distendida, parede espessada e cálculo impactado no infundíbulo. Indica-se colecistectomia laparoscópica. Durante a cirurgia, o cirurgião encontra inflamação moderada, com tecido fibroso denso no triângulo hepatocístico. Após cuidadosa dissecção, ele observa:\n- O triângulo hepatocístico está completamente limpo de gordura e tecido fibroso\n- Apenas duas estruturas parecem entrar na vesícula\n- O fundo da vesícula foi parcialmente descolado do leito hepático, expondo claramente a “ilha” da vesícula sustentada por duas estruturas\n\nQual é a interpretação CORRETA desse cenário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A visualização parcial do ducto hepático comum confirma a visão crítica de segurança.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A visão crítica de segurança foi adequadamente obtida, e é seguro proceder à clipagem e secção das estruturas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A visão crítica de segurança não pode ser obtida em colecistite aguda, e o cirurgião deve converter para cirurgia aberta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A visão crítica de segurança só é válida se o ducto hepático comum for completamente identificado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A visão crítica de segurança exige a identificação do triângulo de Calot clássico, incluindo a base do segmento 4.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda um dos pilares da segurança em cirurgia biliar: a Visão Crítica de Segurança (VCS), técnica introduzida por Steven Strasberg em 1995 para prevenir lesões iatrogênicas das vias biliares.\n\nPara que a Visão Crítica de Segurança seja considerada completa, três requisitos devem ser preenchidos:\n1. O triângulo hepatocístico (espaço delimitado pelo ducto cístico, artéria cística e borda inferior do fígado) deve estar livre de gordura e tecido fibroso.\n2. Apenas duas (e estritamente duas) estruturas devem ser vistas entrando na vesícula biliar: o ducto cístico e a artéria cística.\n3. O terço inferior da vesícula deve ser descolado de seu leito hepático (placa cística), criando a visualização de uma \"ilha\" conectada apenas pelas duas estruturas mencionadas.\n\nAnálise das alternativas:\n\nAlternativa A - INCORRETA: Na verdade, a recomendação da Visão Crítica de Segurança é justamente NÃO dissecar ou visualizar o ducto hepático comum ou o colédoco. A busca por essas estruturas aumenta o risco de lesão biliar por tração ou dissecção errônea. O foco deve ser exclusivamente o triângulo hepatocístico.\n\nAlternativa B - CORRETA: O enunciado descreve exatamente os três passos da técnica de Strasberg: triângulo limpo, identificação de apenas duas estruturas entrando no órgão e descolamento parcial do fundo/corpo da vesícula do leito hepático. Uma vez obtida essa configuração, o risco de confundir o ducto colédoco com o ducto cístico é virtualmente zero, permitindo a clipagem segura.\n\nAlternativa C - INCORRETA: Embora a inflamação na colecistite aguda dificulte a dissecção, a Visão Crítica pode e deve ser buscada. Se ela não for obtida após esforços técnicos, o cirurgião pode optar por estratégias de resgate (como colecistectomia subtotal ou conversão), mas não é uma regra que ela nunca possa ser obtida em casos agudos.\n\nAlternativa D - INCORRETA: Trata-se de um erro conceitual perigoso. A identificação do ducto hepático comum não faz parte dos critérios da VCS e não deve ser utilizada como parâmetro de segurança para a clipagem.\n\nAlternativa E - INCORRETA: Existe uma confusão comum entre Triângulo de Calot (limitado pela artéria cística, ducto cístico e ducto hepático comum) e Triângulo Hepatocístico (onde o limite superior é a borda do fígado). A VCS foca no triângulo hepatocístico. Além disso, a \"base do segmento 4\" não é um critério formal para a definição de Strasberg, embora a placa cística esteja em íntimo contato com ele.\n\nEm resumo, o cirurgião do caso seguiu rigorosamente os passos para mitigar o erro de interpretação anatômica, garantindo o isolamento do ducto e da artéria cística antes de qualquer ação irreversível.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:07:21.619Z"
+  },
+  {
+    "id": "AJUDA_106ea98b-206b-410e-bc61-6aef664793e9",
+    "originalId": "106ea98b-206b-410e-bc61-6aef664793e9",
+    "statement": "Paciente feminina, de 32 anos, procurou a UBS queixando-se de sensação de corpo estranho no olho, diplopia, lacrimejamento e borramento visual. Negou comorbidades. Considerando-se a hipótese diagnóstica mais provável, assinale a alternativa que contempla os achados de história e exame físico esperados.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ptose em repouso, fraqueza de extremidades e taquicardia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tabagismo, taquicardia e bócio",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dentes sépticos, quadro clínico prolongado e bom estado geral",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Proptose bilateral, cefaleia e vômitos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico: \nO caso descreve uma mulher jovem com sintomas oculares específicos: diplopia (visão dupla), lacrimejamento, sensação de corpo estranho e borramento visual. Este conjunto de sintomas, em uma paciente nesta faixa etária, é altamente sugestivo de Oftalmopatia de Graves, que é a manifestação extratireoidiana mais comum da Doença de Graves (hipertireoidismo autoimune).\n\nAlternativa (a) Incorreta: A ptose palpebral (queda da pálpebra) é característica de condições como a Miastenia Gravis. Na Oftalmopatia de Graves, ocorre o oposto: a retração palpebral, que confere à paciente um olhar de \"espanto\". Embora a taquicardia possa estar presente no hipertireoidismo, a ptose invalida a alternativa para este diagnóstico.\n\nAlternativa (b) Correta: O tabagismo é o principal fator de risco modificável para o desenvolvimento e o agravamento da oftalmopatia de Graves, aumentando significativamente a chance de progressão da doença ocular. A taquicardia e o bócio (aumento da glândula tireoide) são sinais clássicos de tireotoxicose/hipertireoidismo, que frequentemente coexistem com os achados oculares descritos.\n\nAlternativa (c) Incorreta: Dentes sépticos poderiam sugerir uma celulite orbitária ou trombose de seio cavernoso de origem odontogênica. No entanto, essas são condições agudas, graves e que geralmente evoluem com febre e comprometimento do estado geral, o que não condiz com a descrição da questão.\n\nAlternativa (d) Incorreta: Embora a proptose (olhos saltados) bilateral seja um achado clássico da Doença de Graves, a presença de cefaleia e vômitos direciona o raciocínio clínico para hipertensão intracraniana ou emergências neurológicas, não sendo sintomas típicos ou esperados na oftalmopatia endócrina isolada.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:07:21.619Z"
+  },
+  {
+    "id": "AJUDA_10714911-478d-4a50-abde-76e0adbfb58a",
+    "originalId": "10714911-478d-4a50-abde-76e0adbfb58a",
+    "statement": "Primigesta de 9 semanas e 2 dias retorna à consulta de pré-natal para mostrar os primeiros exames, sem queixas, e apresenta TSH de 4,8. A conduta correta é",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar anti-TPO.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "solicitar T4 livre, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "solicitar T4 livre e introduzir levotiroxina 1,0 mcg/kg/dia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "introduzir levotiroxina 2,0 mcg/kg/dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico e tratamento do hipotireoidismo na gestação visam prevenir desfechos obstétricos desfavoráveis, como aborto espontâneo e parto prematuro, além de garantir o desenvolvimento intelectual fetal. Segundo as diretrizes atuais da American Thyroid Association (ATA) e os consensos brasileiros, o valor de corte superior para o TSH no primeiro trimestre, na ausência de valores específicos do laboratório para a população local, é de 4,0 mUI/L.\n\nA paciente apresenta TSH de 4,8 mUI/L às 9 semanas de gestação, o que ultrapassa o limite da normalidade e indica a necessidade de intervenção.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A pesquisa do anticorpo antiperoxidase (anti-TPO) é geralmente indicada para auxiliar na decisão terapêutica quando o TSH está em uma zona cinzenta, entre 2,5 e 4,0 mUI/L. Quando o TSH já ultrapassa o limite de 4,0 mUI/L no primeiro trimestre, o tratamento com levotiroxina já é recomendado de forma mais direta para mitigar riscos gestacionais.\n\nAlternativa b: Incorreta. Solicitar apenas o T4 livre seria insuficiente. Embora ele seja necessário para diferenciar o hipotireoidismo subclínico (T4 livre normal) do clínico (T4 livre baixo), o valor do TSH já justifica o início do tratamento imediato, não cabendo apenas a observação laboratorial.\n\nAlternativa c: Correta. A conduta adequada é solicitar o T4 livre para a classificação diagnóstica e iniciar a reposição hormonal. No caso de hipotireoidismo subclínico detectado na gestação, a dose inicial de levotiroxina é mais baixa que no hipotireoidismo franco, sendo habitualmente recomendada a dose de 1,0 mcg/kg/dia.\n\nAlternativa d: Incorreta. A dose de 2,0 mcg/kg/dia é considerada excessiva para um início de tratamento de hipotireoidismo subclínico. Mesmo em casos de hipotireoidismo franco (clínico), a dose inicial média costuma ser de 1,6 mcg/kg/dia. O excesso de hormônio tireoidiano também pode trazer riscos, como arritmias e perda de massa óssea.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tireoide",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:07:21.619Z"
+  }
+]

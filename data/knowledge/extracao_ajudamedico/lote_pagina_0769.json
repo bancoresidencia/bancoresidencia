@@ -1,0 +1,493 @@
+[
+  {
+    "id": "AJUDA_d6b1884e-154e-43d4-952e-92e0f83721dc",
+    "originalId": "d6b1884e-154e-43d4-952e-92e0f83721dc",
+    "statement": "Sobre o uso prolongado de antibiótico profilático (por mais de 24h), é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reduz significativamente risco de infecção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É recomendado em cirurgias limpas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumenta resistência bacteriana sem benefício adicional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Deve ser sempre utilizado em idosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deve ser estendido por 7 dias em casos de implante de próteses ortopédicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Texto Original:\nO objetivo central da antibioticoprofilaxia cirúrgica é garantir que níveis terapêuticos do antimicrobiano estejam presentes no tecido durante todo o tempo em que a ferida operatória estiver aberta, prevenindo a colonização por germes que penetram no momento da incisão.\n\nALTERNATIVA A: Incorreta. Estudos clínicos consistentes demonstram que manter o antibiótico por períodos prolongados não reduz a incidência de infecção do sítio cirúrgico quando comparado ao esquema de dose única ou de curta duração (no máximo 24 horas). O fator crítico é a presença da droga no momento da agressão cirúrgica.\n\nALTERNATIVA B: Incorreta. Cirurgias limpas são aquelas realizadas em tecidos não infectados e que não abordam os tratos respiratório, digestório ou geniturinário. Em muitos desses casos, a profilaxia sequer é indicada. Quando há indicação (como no uso de próteses), ela deve seguir o protocolo de curta duração e não ser estendida sem necessidade.\n\nALTERNATIVA C: Correta. Esta alternativa reflete o consenso das principais diretrizes de segurança do paciente, como as da OMS e do CDC. O uso prolongado de antibióticos seleciona bactérias resistentes tanto no paciente quanto no ambiente hospitalar, além de aumentar os custos e o risco de efeitos colaterais (como toxicidade renal e colite pseudomembranosa por Clostridioides difficile), sem oferecer benefício adicional na prevenção de infecções.\n\nALTERNATIVA D: Incorreta. A idade avançada não é um critério isolado para prolongar o uso do antibiótico. Embora idosos possam ter maior fragilidade, a antibioticoprofilaxia deve seguir o protocolo baseado no tipo de procedimento realizado, focando na aplicação correta da dose pré-operatória.\n\nALTERNATIVA E: Incorreta. Mesmo em cirurgias de alta complexidade, como artroplastias ortopédicas com implante de próteses, as recomendações atuais limitam a profilaxia ao período máximo de 24 horas pós-operatórias. Não há embasamento científico para a manutenção por 7 dias, conduta que apenas aumenta o risco de complicações e resistência bacteriana.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:52.899Z"
+  },
+  {
+    "id": "AJUDA_d6ba2e79-d93c-45d5-a34d-08f9c20de6f6",
+    "originalId": "d6ba2e79-d93c-45d5-a34d-08f9c20de6f6",
+    "statement": "Considerando o teste de hipótese, analise as afirmativas abaixo e assinale a alternativa CORRETA.\n\nI. Um valor de p maior que 0,05 indica que o resultado é estatisticamente significativo.\nII. O erro tipo I ocorre quando rejeitamos a hipótese nula verdadeira.\nIII. O erro tipo II ocorre quando não rejeitamos a hipótese nula falsa.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as afirmativas I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmativas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para entender esta questão, precisamos revisar os conceitos fundamentais de bioestatística aplicados aos testes de hipótese: a hipótese nula (H0), que geralmente nega a existência de um efeito ou diferença, e a hipótese alternativa (H1), que afirma a existência de um efeito.\n\nAnálise da Afirmativa I: Incorreta. O valor de p (p-valor) indica a probabilidade de os resultados encontrados terem ocorrido meramente ao acaso, assumindo-se que a hipótese nula seja verdadeira. Na prática médica e científica, o ponto de corte (nível de significância) mais utilizado é 0,05 (5%). Para que um resultado seja considerado estatisticamente significativo, o valor de p deve ser MENOR que 0,05. Um valor de p maior que 0,05 sugere que não há evidência suficiente para descartar o acaso; portanto, o resultado não é estatisticamente significativo.\n\nAnálise da Afirmativa II: Correta. O Erro Tipo I, também chamado de erro alfa ou falso positivo, acontece quando o pesquisador rejeita a hipótese nula, concluindo que existe uma diferença entre grupos ou um efeito de um tratamento quando, na realidade, essa diferença não existe (a hipótese nula era verdadeira). É o erro de afirmar uma descoberta que é falsa.\n\nAnálise da Afirmativa III: Correta. O Erro Tipo II, também chamado de erro beta ou falso negativo, ocorre quando o pesquisador falha em rejeitar a hipótese nula, concluindo que não há diferença ou efeito quando, na verdade, essa diferença ou efeito existe (a hipótese nula era falsa). Geralmente, isso acontece em estudos com amostras pequenas, que não possuem poder estatístico suficiente para detectar a diferença real.\n\nAnálise das alternativas:\n\na) Incorreta, pois a afirmativa I está errada.\nb) Incorreta, pois a afirmativa I está errada.\nc) Correta, pois as definições de Erro Tipo I e Erro Tipo II apresentadas em II e III estão tecnicamente exatas.\nd) Incorreta, pois a afirmativa I está errada.\n\nGabarito: Letra (c).",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:52.899Z"
+  },
+  {
+    "id": "AJUDA_d6bcbf19-50ef-4ff8-8316-08789b17c330",
+    "originalId": "d6bcbf19-50ef-4ff8-8316-08789b17c330",
+    "statement": "Assim como campanhas publicitárias de vendas de produtos sofrem influência do tempo em que são concebidas, campanhas envolvendo a saúde coletiva também refletem vários aspectos do processo histórico. Leia algumas das mensagens escolhidas pelo Ministério da Saúde para tratar da prevenção de Aids durante alguns anos e assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em 1998, a mensagem “Se fosse seringa, você usava?” dirigida a pessoas dependentes de drogas injetáveis é considerada hoje estímulo à drogadição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Em 2000, a mensagem “Camisinha: a melhor amiga da estrada” é considerada preconceituosa em relação aos caminhoneiros, público preferencial da mensagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em 2019, a mensagem “HIV/Aids. Se a dúvida acaba, a vida continua” era dirigida aos jovens para influenciar a atitude e a percepção da importância da prevenção, teste e tratamento do HIV para evitar a Aids.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Em 2017, a mensagem “Tem camisinha na festa” era dirigida especificamente aos participantes da Parada Gay.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. A mensagem mencionada faz parte da estratégia de Redução de Danos. Na saúde coletiva, essa abordagem não é considerada um estímulo ao uso de drogas. Pelo contrário, é uma intervenção de saúde pública baseada em evidências que visa a diminuir os riscos de infecção por HIV e hepatites virais entre usuários de drogas injetáveis que, por diversos motivos, não conseguem interromper o uso no momento.\n\nAlternativa b: Incorreta. A campanha dirigida aos caminhoneiros em 2000 não é considerada preconceituosa. Ela foi fundamentada em dados epidemiológicos da época, que identificavam essa categoria profissional como um grupo de maior vulnerabilidade devido à mobilidade geográfica, longos períodos de afastamento do domicílio e dificuldade de acesso a serviços de saúde regulares.\n\nAlternativa c: Correta. Em 2019, o Ministério da Saúde lançou a campanha com o conceito de que o HIV não define o futuro de uma pessoa se houver diagnóstico e tratamento. O objetivo era estimular o público jovem, que apresenta crescimento proporcional de novos casos, a realizar o teste rápido. A premissa é que o fim da dúvida (diagnóstico) permite o início da terapia antirretroviral (TARV), garantindo que a vida siga com qualidade e que a carga viral se torne indetectável, o que também previne a transmissão.\n\nAlternativa d: Incorreta. A mensagem de 2017 citada foi o slogan da campanha nacional para o Carnaval daquele ano. O foco era o público jovem de maneira ampla, aproveitando o contexto de festividades populares para incentivar o uso do preservativo em relações casuais, não sendo uma ação exclusiva ou dirigida especificamente à Parada do Orgulho LGBTQIA+.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:52.899Z"
+  },
+  {
+    "id": "AJUDA_d6bceda4-0a0d-4758-8d9e-2dcdd6dd1d06",
+    "originalId": "d6bceda4-0a0d-4758-8d9e-2dcdd6dd1d06",
+    "statement": "Paciente sexo feminino, 40 anos, refere início de corrimento com coloração amarelada e odor desagradável há 1 semana associado a dispareunia profunda. Há 3 dias iniciou com dor em baixo ventre. Nega queixas urinárias e intestinais. Refere ciclos menstruais regulares. G2C2P0A0 (G: gestação, C: cesárea, P: parto, A: aborto), laqueadura. Viúva há 7 anos, refere relação sexual ativa com parceria fixa há 6 meses. Ao exame físico: dor a mobilização de colo uterino, dor a palpação de anexo esquerdo. Colo uterino visualizado com saída de secreção purulenta de orifício cervical externo. Teste KOH negativo. Diante da hipótese diagnóstica de doença inflamatória pélvica, faz-se necessário o tratamento da paciente e de sua parceria sexual. Qual esquema terapêutico é mais adequado para tratamento do parceiro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ceftriaxona + azitromicina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Ceftriaxona + doxiciclina + metronidazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ciprofloxacino + azitromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ciprofloxacino + amoxicilina + metronidazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso clínico: A paciente apresenta um quadro clássico de Doença Inflamatória Pélvica (DIP), caracterizado por dor abdominal infraumbilical, dor à mobilização do colo uterino, dor à palpação de anexos e secreção purulenta no orifício cervical (cervicite). O manejo da DIP exige obrigatoriamente o tratamento dos parceiros sexuais com quem a paciente teve contato nos últimos 60 dias, visando interromper a cadeia de transmissão e evitar a reinfecção da paciente.\n\nO objetivo do tratamento do parceiro é cobrir os principais agentes causadores de uretrites e cervicites, que são a Neisseria gonorrhoeae (gonococo) e a Chlamydia trachomatis (clamídia).\n\nAlternativa (a) Correta: Este é o esquema preconizado pelo Ministério da Saúde e por diretrizes internacionais para o tratamento empírico do parceiro de pacientes com DIP ou cervicite. A Ceftriaxona (500 mg, dose única, intramuscular) é o padrão-ouro para o gonococo, enquanto a Azitromicina (1 g, dose única, via oral) é eficaz contra a clamídia. A utilização de doses únicas é estratégica para garantir a adesão do parceiro, que muitas vezes é assintomático.\n\nAlternativa (b) Incorreta: Este esquema (Ceftriaxona + Doxiciclina + Metronidazol) é o tratamento ambulatorial padrão para a paciente que tem o diagnóstico de DIP. Para o parceiro, não há necessidade de cobertura para anaeróbios (Metronidazol), a menos que haja suspeita de tricomoníase. Além disso, a Doxiciclina exige uso por 7 dias, o que dificulta a adesão quando comparada à dose única de Azitromicina.\n\nAlternativa (c) Incorreta: O uso de quinolonas, como o Ciprofloxacino, não é mais recomendado como primeira linha para o tratamento da Neisseria gonorrhoeae devido aos elevados níveis de resistência bacteriana encontrados no Brasil e em diversos países.\n\nAlternativa (d) Incorreta: Conforme mencionado, o Ciprofloxacino apresenta altas taxas de resistência para o gonococo. A Amoxicilina não é eficaz para o tratamento de Chlamydia trachomatis ou gonococo neste contexto, e o Metronidazol não tem indicação de rotina para o parceiro na ausência de sinais de vaginites específicas na paciente.\n\nResumo: O tratamento do parceiro visa erradicar gonococo e clamídia. A alternativa (a) reflete as recomendações atuais de saúde pública para o manejo de contatos sexuais.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:52.899Z"
+  },
+  {
+    "id": "AJUDA_d6bf049d-d5fb-48ac-b3b6-77640e9a0f50",
+    "originalId": "d6bf049d-d5fb-48ac-b3b6-77640e9a0f50",
+    "statement": "Homem de 40 anos é levado a uma unidade de pronto atendimento após sofrer um acidente de trabalho enquanto utilizava uma máquina de esmerilhamento. Ele relata que um fragmento metálico de alta velocidade ultrapassou a proteção de seus óculos e atingiu seu olho direito. O paciente apresenta dor intensa no olho afetado, com perda parcial da visão e sensação de corpo estranho. O exame físico revela laceração na conjuntiva bulbar com extravasamento espontâneo de pequena quantidade de conteúdo gelatinoso pelo olho direito. Nesse momento, antes de encaminhar o paciente para o especialista, qual é a conduta adequada para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Irrigar o olho afetado com solução salina estéril, fazer penicilina cristalina via endovenosa e reavaliar o paciente após 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colocar escudo rígido sobre o olho afetado, iniciar fluoroquinolona endovenosa e verificar imunização antitetânica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aplicar colírio corticoide no olho afetado, colocar escudo rígido sobre ele e solicitar radiografia de órbita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aplicar colírio antibiótico no olho afetado, realizar curativo oclusivo e prescrever analgesia endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta sinais claros de trauma ocular aberto (perfuração do globo ocular). O mecanismo de trauma (fragmento metálico de alta velocidade) associado ao achado de extravasamento de conteúdo gelatinoso (humor vítreo) confirma a gravidade da lesão. O objetivo imediato é proteger a integridade do olho e prevenir infecções graves, como a endoftalmite, até que o cirurgião oftalmologista possa intervir.\n\nAlternativa a: Incorreta. A irrigação do olho é contraindicada em casos de suspeita de perfuração ocular, pois o fluxo de líquido pode empurrar contaminantes para o interior do globo ou causar a extrusão de mais conteúdo intraocular. Além disso, a penicilina cristalina não é a primeira escolha para cobertura empírica nesse tipo de trauma e o aguardo de 6 horas atrasa desnecessariamente o tratamento definitivo.\n\nAlternativa b: Correta. Esta é a conduta padrão-ouro no atendimento inicial. O escudo rígido (que deve se apoiar nos rebordos ósseos da órbita) protege o globo ocular de pressões externas acidentais, evitando que mais conteúdo interno seja expelido. O uso de antibióticos sistêmicos (como as fluoroquinolonas) é essencial, pois essas drogas possuem excelente penetração no humor vítreo e auxiliam na prevenção da endoftalmite. Por fim, como em qualquer trauma perfurante com material potencialmente contaminado, a profilaxia do tétano deve ser checada e realizada, se necessário.\n\nAlternativa c: Incorreta. Colírios de corticoide não devem ser utilizados na fase aguda de um trauma ocular aberto, pois podem inibir a resposta imune local, predispondo a infecções, e retardar o processo de cicatrização. Embora exames de imagem como a radiografia ou, preferencialmente, a tomografia de órbita sejam importantes para localizar o corpo estranho, a prioridade é a estabilização e proteção do globo.\n\nAlternativa d: Incorreta. O curativo oclusivo é o maior erro que se pode cometer em um trauma ocular aberto. Ao aplicar uma bandagem ou curativo que faça pressão sobre o olho, o examinador acaba \"espremendo\" o globo, o que força a saída de íris, lente e vítreo pela laceração, agravando o prognóstico visual. Colírios também devem ser evitados inicialmente para não introduzir substâncias não estéreis no interior do olho.\n\nResumo dos cuidados no trauma ocular aberto:\n1. Não palpar ou exercer qualquer pressão sobre o globo ocular.\n2. Não pingar colírios ou realizar irrigação.\n3. Colocar um escudo protetor rígido.\n4. Manter o paciente em jejum (preparação cirúrgica).\n5. Iniciar antibióticos de amplo espectro por via sistêmica.\n6. Atualizar vacina de tétano.\n7. Encaminhamento imediato para sutura de esclera/córnea por especialista.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Traumatismos Oculares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:52.899Z"
+  },
+  {
+    "id": "AJUDA_d6c1f309-de1d-4168-9ea3-43adb132ae3e",
+    "originalId": "d6c1f309-de1d-4168-9ea3-43adb132ae3e",
+    "statement": "Mulher de 69 anos, portadora de hipertensão arterial sistêmica e insuficiência cardíaca de fração ejeção normal, com diagnóstico de mielofibrose primária e necessidade de suporte transfusional semanal, procura o ambulatório de hematologia para transfusão de concentrado de hemácias. Após 30 minutos do início da infusão, a paciente apresenta febre de 38,4°C, dispneia e dessaturação. A radiografia de tórax evidencia infiltrado alveolar bilateral difuso. Não havia icterícia, dor abdominal, náuseas ou alteração da cor da urina. Nesse caso, a reação transfusional está mais provavelmente associada a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sepse bacteriana",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lesão pulmonar aguda",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sobrecarga circulatória",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reação hemolítica aguda",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "reação hipotensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda as complicações agudas da transfusão sanguínea, exigindo o diagnóstico diferencial entre as principais reações transfusionais.\n\nA paciente apresenta um quadro de insuficiência respiratória aguda (dispneia e dessaturação), acompanhado de febre (38,4 °C) e infiltrado alveolar bilateral na radiografia de tórax, surgindo 30 minutos após o início da transfusão. Esse conjunto de sinais e sintomas é clássico da Lesão Pulmonar Aguda Relacionada à Transfusão, conhecida pela sigla TRALI (Transfusion-Related Acute Lung Injury).\n\nAlternativa (a) Incorreta. A sepse bacteriana por contaminação da bolsa de sangue pode causar febre e choque, mas o quadro clínico seria marcado por uma instabilidade hemodinâmica mais grave e sistêmica. Embora possa evoluir com desconforto respiratório, o infiltrado pulmonar bilateral súbito associado à transfusão direciona o diagnóstico primariamente para TRALI.\n\nAlternativa (b) Correta. A TRALI é definida como uma lesão pulmonar aguda (edema pulmonar não cardiogênico) que ocorre durante ou até 6 horas após a transfusão. É causada por anticorpos presentes no plasma do doador que reagem com os leucócitos do receptor, levando à ativação de neutrófilos nos pulmões e dano endotelial capilar. Os critérios principais são hipoxemia de início agudo e infiltrado pulmonar bilateral ao raio X, frequentemente acompanhados de febre e hipotensão. A presença de febre é um divisor de águas importante para diferenciá-la da sobrecarga circulatória.\n\nAlternativa (c) Incorreta. A Sobrecarga Circulatória Associada à Transfusão (TACO) é um diagnóstico diferencial importante, especialmente em idosos com insuficiência cardíaca, como no caso desta paciente. No entanto, a TACO é um edema pulmonar cardiogênico (por excesso de volume). Diferente da TRALI, a TACO geralmente cursa com hipertensão arterial, ausência de febre e responde bem a diuréticos. A febre de 38,4 °C relatada na questão torna a TRALI muito mais provável que a TACO.\n\nAlternativa (d) Incorreta. A Reação Hemolítica Aguda ocorre por incompatibilidade ABO. Embora cause febre, o quadro costuma ser acompanhado de dor lombar, dor abdominal, hipotensão e sinais claros de hemólise intravascular, como icterícia e hemoglobinúria (urina escura). O enunciado nega explicitamente icterícia, dor abdominal e alteração na cor da urina, descartando essa hipótese.\n\nAlternativa (e) Incorreta. A reação hipotensiva é caracterizada por uma queda súbita e isolada da pressão arterial logo no início da transfusão, sem relação direta com infiltrados pulmonares ou febre, sendo mediada frequentemente por bradicininas (comum em pacientes em uso de inibidores da ECA). Não justifica os achados radiológicos e respiratórios descritos.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Medicina Transfusional"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:52.899Z"
+  },
+  {
+    "id": "AJUDA_d6c4013d-8c6c-46e0-89ac-403e4065fa1f",
+    "originalId": "d6c4013d-8c6c-46e0-89ac-403e4065fa1f",
+    "statement": "Homem de 68 anos, casado, pai de dois filhos adultos, encontra-se no domicílio devido à melhora relativa da progressão de sua doença de base, que é carcinoma espinocelular de laringe. Foi internado há uma semana com quadro de confusão mental, dispneia e ingesta oral reduzida a poucas colheres. O paciente encontrava-se muito ansioso e agitado, perguntando ao médico se estava morrendo. Considerando a comunicação no momento do processo saúde-doença do paciente, deve-se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "focar nos procedimentos médicos, dando atenção às preocupações do paciente só após estabilizá-lo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "responder às perguntas do paciente sobre o próprio prognóstico, de maneira direta e concisa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "comunicar o prognóstico vagamente para não fomentar a ansiedade do paciente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "explorar as emoções e preocupações do paciente, focando na qualidade de vida",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda a comunicação em Cuidados Paliativos e a abordagem bioética diante de um paciente com doença oncológica avançada e sintomas de terminalidade. O paciente apresenta sinais de fragilidade (carcinoma de laringe, dispneia, confusão mental e baixa ingesta) e manifesta uma angústia existencial explícita ao perguntar se está morrendo.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Priorizar procedimentos técnicos em detrimento da angústia do paciente é uma prática baseada no modelo biomédico tradicional que desconsidera a subjetividade humana. Em pacientes terminais ou em cuidados paliativos, o sofrimento emocional e espiritual é tão urgente quanto o físico. Ignorar a pergunta do paciente para focar apenas na estabilização clínica configura um distanciamento profissional inadequado.\n\nAlternativa (b) Incorreta. Embora a honestidade seja fundamental, responder de forma \"direta e concisa\" a uma pergunta com elevada carga emocional pode ser interpretado como frieza ou falta de empatia. Antes de fornecer dados prognósticos, o médico deve entender o que o paciente sabe, o que ele teme e o que ele deseja saber, seguindo protocolos de comunicação de más notícias, como o protocolo SPIKES.\n\nAlternativa (c) Incorreta. Ser vago sobre o prognóstico é uma forma de paternalismo médico. Essa atitude priva o paciente de sua autonomia, impedindo-o de tomar decisões sobre seus momentos finais, organizar questões familiares ou despedir-se. A falta de clareza muitas vezes aumenta a ansiedade do paciente, que percebe a gravidade da situação pelo ambiente, mas se sente isolado pelo silêncio da equipe.\n\nAlternativa (d) Correta. Esta é a conduta recomendada em Cuidados Paliativos. Quando um paciente pergunta se está morrendo, ele muitas vezes está expressando medo, dor ou necessidade de acolhimento. Explorar as emoções permite ao médico identificar o que realmente está afligindo o paciente (medo da dor, preocupação com os filhos, etc.). O foco na qualidade de vida substitui a busca por uma cura impossível, priorizando o conforto, a dignidade e o alívio dos sintomas físicos e psíquicos.\n\nEm resumo, a comunicação eficaz em situações de final de vida exige empatia, escuta ativa e a validação dos sentimentos do paciente, permitindo que ele se sinta compreendido e amparado em suas preocupações fundamentais.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Processo Saúde-Doença",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:52.899Z"
+  },
+  {
+    "id": "AJUDA_d6c79738-ab65-4ec8-a651-a9a20be85088",
+    "originalId": "d6c79738-ab65-4ec8-a651-a9a20be85088",
+    "statement": "Mulher, 56 anos de idade, atendida em uma Unidade Básica de Saúde, apresenta nódulo mamário e gânglio ipsilateral axilar palpáveis. O médico a encaminha para mamografia e o Setor de Regulação Municipal já tem fila de espera com 250 pacientes. Essa usuária é classificada como prioridade e, com base no Protocolo de Acesso, tem seu exame agendado em cinco dias. Qual o princípio doutrinário do SUS que garante a priorização desse agendamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Equidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Integralidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hierarquização",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Resolubilidade",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ESTUDO DE CASO E CONCEITOS DO SUS\n\nA questão apresenta um cenário de gestão de acesso na rede pública de saúde. Temos uma paciente com sinais clínicos de alerta para neoplasia de mama (nódulo palpável e linfonodomegalia axilar). Mesmo diante de uma fila de espera com 250 pessoas, ela é classificada como prioridade e consegue o exame em cinco dias. O cerne da pergunta é identificar qual princípio do Sistema Único de Saúde (SUS) fundamenta essa discriminação positiva.\n\nALTERNATIVA A - CORRETA: A Equidade é o princípio doutrinário que reconhece as desigualdades entre os indivíduos e determina que o sistema deve oferecer \"mais para quem mais precisa\". Diferente da igualdade literal (onde todos esperariam exatamente o mesmo tempo na fila, independentemente do quadro clínico), a equidade orienta a criação de protocolos de classificação de risco. No caso, a paciente tem uma necessidade de saúde mais urgente do que pacientes que estão na fila para rastreamento de rotina. Priorizá-la é aplicar a equidade para garantir o direito à saúde de forma justa.\n\nALTERNATIVA B - INCORRETA: A Integralidade é um princípio doutrinário que prega que o indivíduo deve ser visto como um todo, garantindo ações que vão desde a prevenção até a reabilitação, em todos os níveis de complexidade. Embora o encaminhamento para o exame faça parte do cuidado integral, a integralidade não é o princípio que define a ordem de prioridade em uma fila de espera baseada em risco.\n\nALTERNATIVA C - INCORRETA: A Hierarquização é um princípio organizativo (ou diretriz) do SUS. Ela estabelece que os serviços devem ser organizados em níveis de complexidade crescente, sendo a Atenção Primária a porta de entrada e o centro comunicador da rede. A paciente seguiu a hierarquia ao ser encaminhada da Unidade Básica para o exame de imagem, mas a antecipação do agendamento por gravidade é uma aplicação da equidade, não da hierarquia.\n\nALTERNATIVA D - INCORRETA: A Resolubilidade (ou resolutividade) é a capacidade do serviço de saúde de dar uma resposta positiva e resolutiva ao problema do usuário, seja no próprio local de atendimento ou através do encaminhamento responsável. Não se confunde com os critérios de priorização de vagas ou gestão de filas por risco clínico.\n\nDica para provas: Lembre-se de que os princípios doutrinários são a Universalidade, a Equidade e a Integralidade. Já a Hierarquização e a Resolubilidade são consideradas princípios organizativos ou diretrizes do sistema. Como a questão pede especificamente um princípio doutrinário, as alternativas C e D já poderiam ser descartadas de imediato.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:52.899Z"
+  },
+  {
+    "id": "AJUDA_d6c83e13-a3d4-49cc-915f-f3357ad63166",
+    "originalId": "d6c83e13-a3d4-49cc-915f-f3357ad63166",
+    "statement": "Em uma consulta de rotina, um paciente assintomático solicita um teste diagnóstico para uma doença rara, cuja prevalência na população geral é muito baixa (probabilidade pré-teste < 1%). O teste possui uma especificidade moderada (ex: 70%).\n\nConsiderando os conceitos de probabilidade pré-teste e área de indicação para um teste diagnóstico, qual a melhor justificativa para o médico desencorajar a realização do teste neste paciente assintomático?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O teste possui intrinsecamente baixa sensibilidade, o que significa que um grande número de casos positivos seria despercebido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A probabilidade pré-teste muito baixa aumentaria o risco significativo de resultados falso-negativos, mesmo com um teste positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O custo financeiro do teste torna sua aplicação inviável em pacientes sem sintomas claros ou indicação formal de rastreamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A especificidade moderada do teste levaria a um alto risco de resultados falso-positivos em uma população com tão baixa prevalência da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Testes diagnósticos são considerados úteis apenas para confirmar o diagnóstico em pacientes com elevada probabilidade pré-teste da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda um dos princípios fundamentais da epidemiologia clínica e da medicina baseada em evidências: a relação entre a prevalência de uma doença (probabilidade pré-teste) e o valor preditivo de um teste diagnóstico.\n\nQuando realizamos um teste em uma população, o significado de um resultado positivo depende diretamente da probabilidade de a doença existir antes mesmo da realização do exame. Em doenças raras (baixa prevalência), a maioria dos resultados positivos será, na verdade, falso-positiva, especialmente se a especificidade do teste não for próxima de 100%.\n\nAnálise das alternativas:\n\na) Incorreta. O enunciado não fornece informações sobre a sensibilidade do teste. Além disso, o problema principal em rastrear doenças raras em pacientes assintomáticos com testes de especificidade moderada não é a perda de casos (falso-negativos), mas sim o excesso de alarmes falsos (falso-positivos), que geram ansiedade e exames invasivos desnecessários.\n\nb) Incorreta. Uma probabilidade pré-teste muito baixa aumenta o risco de resultados falso-positivos, e não de falso-negativos. Resultados falso-negativos tornam-se uma preocupação maior quando a probabilidade pré-teste é muito elevada (o paciente tem tanta chance de ter a doença que um teste negativo pode ser um erro do exame).\n\nc) Incorreta. Embora o custo seja um fator relevante na gestão de saúde pública e na economia da saúde, a justificativa técnica e clínica primordial para desencorajar o teste, neste contexto epidemiológico, baseia-se na baixa performance diagnóstica (baixo Valor Preditivo Positivo) e no potencial dano ao paciente decorrente de investigações subsequentes desnecessárias.\n\nd) Correta. Esta é a justificativa técnica exata. A especificidade é a capacidade do teste de ser negativo nos indivíduos saudáveis. Se a especificidade é de 70%, significa que 30% das pessoas saudáveis terão um resultado falso-positivo. Como a doença é muito rara (menos de 1%), a esmagadora maioria da população testada é saudável. Portanto, 30% de um grupo muito grande (os saudáveis) resultará em um número de falso-positivos muito superior ao número de casos reais da doença (verdadeiro-positivos). Isso resulta em um Valor Preditivo Positivo (VPP) baixíssimo.\n\ne) Incorreta. Testes diagnósticos são mais úteis na chamada zona de incerteza, onde a probabilidade pré-teste é intermediária. Se a probabilidade for extremamente elevada, o diagnóstico muitas vezes já está firmado clinicamente e o teste serve apenas para confirmação ou documentação. O erro da alternativa é dizer que são úteis \"apenas\" nessas situações e ignorar que, em rastreamento, o problema é a baixa prevalência aliada à especificidade imperfeita.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Estatística Médica",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:52.899Z"
+  },
+  {
+    "id": "AJUDA_d6cc2876-24e5-4dbf-a4ca-5acc73f6cf4d",
+    "originalId": "d6cc2876-24e5-4dbf-a4ca-5acc73f6cf4d",
+    "statement": "Um paciente de 60 anos de idade apresentou dispneia progressiva aos esforços, ortopneia e edema de membros inferiores. O exame físico mostrou B3 presente e turgência jugular elevada. A radiografia de tórax evidenciou cardiomegalia difusa. Nesse caso, qual é o exame de escolha para avaliar com precisão as funções sistólica e diastólica do ventrículo esquerdo nesse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eletrocardiograma de repouso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ecocardiograma transtorácico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Radiografia de tórax",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tomografia computadorizada de tórax",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — composto por dispneia progressiva, ortopneia, edema de membros inferiores, presença de terceira bulha (B3) e turgência jugular — é uma apresentação clássica de Insuficiência Cardíaca (IC). A presença da B3 é um achado altamente específico de disfunção ventricular e sobrecarga de volume. Confirmada a suspeita clínica e evidenciada a cardiomegalia no raio X, o próximo passo fundamental é a avaliação funcional do coração.\n\nAlternativa (a) Incorreta: O eletrocardiograma de repouso é um exame inicial essencial na investigação de IC, pois pode sugerir etiologias (como infarto prévio, arritmias ou sobrecargas de câmaras). No entanto, ele não fornece informações diretas ou precisas sobre a fração de ejeção (função sistólica) nem sobre os parâmetros de relaxamento e enchimento ventricular (função diastólica).\n\nAlternativa (b) Correta: O ecocardiograma transtorácico é o exame de escolha e o padrão-ouro na rotina clínica para essa avaliação. Por meio do ultrassom e do Doppler, ele permite medir com precisão a fração de ejeção do ventrículo esquerdo (FEVE), avaliar a contratilidade segmentar, o tamanho das cavidades, a espessura das paredes e o funcionamento das válvulas. Além disso, é o principal método para graduar a função diastólica através da análise do fluxo mitral e do Doppler tecidual.\n\nAlternativa (c) Incorreta: A radiografia de tórax, embora já realizada e tendo mostrado cardiomegalia, é um exame de imagem estático. Ela é excelente para avaliar a congestão pulmonar (como linhas B de Kerley e derrame pleural) e o aumento global da silhueta cardíaca, mas é incapaz de distinguir se a disfunção é sistólica ou diastólica.\n\nAlternativa (d) Incorreta: A tomografia computadorizada de tórax é mais utilizada para avaliar o parênquima pulmonar, grandes vasos (como aorta e artérias pulmonares) ou massas mediastinais. Apesar de existirem protocolos de tomografia cardíaca, eles são focados principalmente em anatomia coronariana ou massas, não sendo o exame de escolha para avaliação rotineira das funções sistólica e diastólica devido ao custo, ao uso de radiação e contraste e à menor disponibilidade em comparação ao ecocardiograma.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:55:52.899Z"
+  }
+]

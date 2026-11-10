@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_44566b7f-ede4-49bf-8bec-01fe6a5d9d48",
+    "originalId": "44566b7f-ede4-49bf-8bec-01fe6a5d9d48",
+    "statement": "A técnica TAR (Transversus Abdominis Release) é usada no tratamento de hérnias ventrais complexas e grandes defeitos da parede abdominal. Em relação a esse procedimento, podemos afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "por promover uma liberação muscular ampla, ela dispensa o uso de tela de prolene.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "por usar o músculo transverso do abdome, ela está contraindicada para hérnias da linha média.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ela se restringe a uma separação anterior de componentes da bainha do reto abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ela é uma evolução da cirurgia da separação de componentes, com diminuição dos riscos de atrofia do reto e lesão nervosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "quando utilizada, a tela deve ser preferencialmente absorvível e aplicada logo abaixo da bainha anterior do reto abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A técnica de Transversus Abdominis Release (TAR) representa um marco na evolução do tratamento de hérnias complexas da parede abdominal. Abaixo, analisamos detalhadamente cada alternativa:\n\nAlternativa (a) Incorreta: Embora a técnica promova uma liberação muscular significativa, permitindo o fechamento da linha média com menos tensão, o uso de tela é obrigatório em hérnias ventrais complexas e grandes defeitos. A ausência de tela nesses casos está associada a taxas de recidiva inaceitavelmente altas. O material mais utilizado é o polipropileno (tela de Prolene) de grandes poros.\n\nAlternativa (b) Incorreta: Pelo contrário, a técnica TAR é indicada especificamente para grandes hérnias da linha média (hérnias incisionais gigantes ou defeitos complexos). O objetivo do procedimento é justamente ganhar complacência da parede abdominal para que a linha média possa ser reconstruída sem tensão excessiva.\n\nAlternativa (c) Incorreta: A TAR é uma técnica de separação POSTERIOR de componentes. A técnica de separação anterior é a de Ramirez, que consiste na incisão da aponeurose do músculo oblíquo externo. Na TAR, a liberação ocorre na região posterior, através da divisão do músculo transverso do abdome.\n\nAlternativa (d) Correta: Esta técnica é considerada uma evolução da separação de componentes clássica (Ramirez). Diferente da separação anterior, a TAR preserva os feixes neurovasculares que suprem o músculo reto abdominal, localizados entre os músculos oblíquo interno e transverso. Isso minimiza a atrofia muscular e preserva a funcionalidade da parede. Além disso, por não exigir grandes descolamentos de pele e tecido subcutâneo (necessários na técnica de Ramirez), reduz drasticamente as complicações de ferida operatória, como isquemia cutânea e seromas.\n\nAlternativa (e) Incorreta: Na técnica TAR, a tela deve ser preferencialmente permanente (não absorvível) e macroporosa para garantir a força tênsil necessária. Quanto ao posicionamento, ela é colocada no espaço retromuscular (pré-peritoneal), ou seja, atrás do músculo reto e atrás das fibras seccionadas do músculo transverso, e não abaixo da bainha anterior do reto.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:08.051Z"
+  },
+  {
+    "id": "AJUDA_4464344b-7c94-4890-bfc4-40e8099006f2",
+    "originalId": "4464344b-7c94-4890-bfc4-40e8099006f2",
+    "statement": "Sobre a escala de coma de Glasgow, na avaliação clínica e acompanhamento do nível de consciência do paciente, analise as assertivas a seguir:\n\nI. É utilizada tanto no coma traumático quanto no não traumático.\nII. Avalia quatro parâmetros: abertura ocular (com notas de 1 a 5), resposta verbal (com notas de 1 a 5), resposta motora (com notas de 0 a 4) e padrão respiratório (com notas de 0 a 1).\nIII. O melhor escore é 15 e o pior é 3 (que indica que o paciente está morto).\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da Assertiva I: Esta assertiva está correta. Embora a Escala de Coma de Glasgow tenha sido originalmente desenvolvida em 1974 por Teasdale e Jennett para avaliar pacientes com trauma cranioencefálico (TCE), sua simplicidade e reprodutibilidade fizeram com que seu uso fosse estendido para pacientes em coma de causas não traumáticas, como em casos de doenças vasculares cerebrais, encefalopatias metabólicas ou intoxicações. Ela é a ferramenta padrão-ouro para monitorar o nível de consciência e a evolução neurológica de pacientes críticos de forma geral.\n\nAnálise da Assertiva II: Esta assertiva está incorreta por apresentar múltiplos erros de pontuação e de componentes. A Escala de Coma de Glasgow clássica avalia três parâmetros, e não quatro. As pontuações corretas são: Abertura Ocular (notas de 1 a 4), Resposta Verbal (notas de 1 a 5) e Resposta Motora (notas de 1 a 6). O padrão respiratório não integra a pontuação da escala de Glasgow. Vale ressaltar que a nota mínima em qualquer um dos parâmetros é 1, nunca 0.\n\nAnálise da Assertiva III: Esta assertiva está incorreta. De fato, a pontuação máxima é 15 e a mínima é 3. No entanto, o escore 3 não significa que o paciente está morto. O valor 3 indica o nível mais profundo de coma, com total ausência de resposta aos estímulos testados. O diagnóstico de morte encefálica é um processo clínico-laboratorial rigoroso que exige a constatação de ausência de reflexos de tronco encefálico, teste de apneia positivo e exames complementares (como eletroencefalograma ou exames de fluxo sanguíneo cerebral), seguindo protocolos legais específicos. Um paciente com escore 3 pode, por exemplo, estar sob efeito de sedação profunda ou em coma metabólico reversível.\n\nConclusão: Apenas a assertiva I apresenta informações tecnicamente precisas de acordo com a literatura médica. Por esse motivo, a alternativa correta é a letra (a).",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Coma e Alterações da Consciência",
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:08.051Z"
+  },
+  {
+    "id": "AJUDA_446b8a5c-bb43-4673-8bc8-f3aebefb0b62",
+    "originalId": "446b8a5c-bb43-4673-8bc8-f3aebefb0b62",
+    "statement": "Menino, de 7 anos de idade, sofreu queda da própria altura na escola em colisão frontal com outro menino, da mesma idade e biotipo, com traumatismo craniano (TCE) na região posterior da cabeça. A criança evoluiu com dois episódios de vômito e cefaleia de intensidade progressiva após o TCE. Foi admitido no pronto atendimento apresentando-se em regular estado geral, descorado, hidratado, acianótico, anictérico, afebril, com escala de coma de Glasgow (ECG) 14 com fala confusa, pupilas isocóricas e fotorreagentes, desorientado e sem déficits neurológicos. Não há deformidades ou afundamentos cranianos. O restante do exame físico está normal.\n\nO paciente apresentou crise convulsiva tônico-clônica generalizada. Considerando o TCE prévio, quais são as condutas corretas para este caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de fenitoína endovenosa e manutenção do PaCO2 entre 35 e 40mmHg.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Administração de fenobarbital endovenoso e manutenção do PaCO2 entre 35 e 40mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administração de fenitoína endovenosa e manutenção do PaCO2 menor que 30mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administração de fenobarbital endovenoso e manutenção do PaCO2 maior que 45mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente é uma criança de 7 anos com traumatismo cranioencefálico (TCE) que apresenta sinais de alerta: cefaleia progressiva, vômitos e alteração do nível de consciência (Glasgow 14, confuso e desorientado). O quadro evolui com uma crise convulsiva tônico-clônica generalizada. Diante desse cenário, o manejo deve focar na estabilização neurológica e na prevenção de lesões secundárias.\n\nMANEJO FARMACOLÓGICO (ANTICONVULSIVANTES)\n\nNo contexto do TCE, as crises convulsivas podem ser classificadas como imediatas (nas primeiras 24 horas) ou precoces (até o 7º dia). O uso de anticonvulsivantes está indicado para tratar a crise aguda e como profilaxia para evitar novas crises precoces, que poderiam elevar a pressão intracraniana (PIC) e aumentar o consumo metabólico de oxigênio cerebral. A fenitoína (ou o levetiracetam, em serviços que o disponibilizam) é a droga de escolha clássica recomendada pelos protocolos de neurotrauma (como o Brain Trauma Foundation) para a prevenção de crises precoces no TCE. O fenobarbital não é a droga de primeira linha para esse fim em crianças maiores, sendo geralmente reservado para casos refratários ou neonatos.\n\nMANEJO VENTILATÓRIO (ALVO DE PaCO2)\n\nA manutenção dos níveis de dióxido de carbono no sangue arterial (PaCO2) é crítica no paciente neurocrítico:\n\n1. Normocapnia (PaCO2 entre 35 e 40 mmHg ou 35 e 45 mmHg): É o objetivo terapêutico. Mantém o fluxo sanguíneo cerebral estável sem comprometer a perfusão.\n2. Hipocapnia (PaCO2 < 35 mmHg): Ocorre na hiperventilação. O baixo nível de CO2 causa vasoconstrição cerebral, o que pode reduzir a pressão intracraniana, mas traz um risco elevado de isquemia cerebral por redução severa do fluxo sanguíneo. A hiperventilação agressiva (PaCO2 < 30 mmHg) é contraindicada, especialmente nas primeiras 24-48 horas.\n3. Hipercapnia (PaCO2 > 45 mmHg): Causa vasodilatação cerebral, o que aumenta o volume sanguíneo intracraniano e, consequentemente, a pressão intracraniana, podendo levar a herniações.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Correta. A fenitoína é o padrão para profilaxia e tratamento de crises precoces no TCE. A manutenção da PaCO2 entre 35 e 40 mmHg (normocapnia) garante o equilíbrio entre o fluxo sanguíneo cerebral e a pressão intracraniana, evitando isquemia ou hipertensão intracraniana iatrogênica.\n\nb) Incorreta. O fenobarbital não é o anticonvulsivante de primeira escolha para a profilaxia de crises pós-traumáticas nesta faixa etária e contexto.\n\nc) Incorreta. Embora a fenitoína esteja correta, manter a PaCO2 menor que 30 mmHg é perigoso, pois a vasoconstrição excessiva pode causar infarto cerebral isquêmico.\n\nd) Incorreta. O fenobarbital não é a primeira escolha e manter a PaCO2 maior que 45 mmHg causaria vasodilatação cerebral, piorando a hipertensão intracraniana em um paciente que já apresenta sinais de sofrimento neurológico.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Trauma",
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:08.051Z"
+  },
+  {
+    "id": "AJUDA_446f4a5c-bccc-4614-a6f2-6c6e33dabe87",
+    "originalId": "446f4a5c-bccc-4614-a6f2-6c6e33dabe87",
+    "statement": "Menino, 8 meses de idade, vem encaminhado pelo pediatra para avaliação especializada, devido ao fato de não ter encontrado o testículo direito em bolsa escrotal. Criança nascida a termo, sem problemas de saúde. Exame físico geral sem anormalidades. Testículo esquerdo está tópico e aparentemente normotrófico. A bolsa escrotal direita está vazia. Qual a medida mais adequada para condução deste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar ressonância magnética de abdome e pelve para pesquisa de gônadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Palpação do testículo no canal inguinal e tentar posicioná lo na bolsa escrotal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar a cirurgia o mais rápido possível para preservar a fertilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar ultrassom abdominal para pesquisa de gônadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um lactente de 8 meses com criptorquidia unilateral (testículo direito não descido). O ponto fundamental para a resolução da questão é o conhecimento da cronologia da descida testicular e o momento ideal para a intervenção.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) Incorreta: Exames de imagem sofisticados, como a ressonância magnética, não são indicados rotineiramente na avaliação da criptorquidia. Eles possuem baixa sensibilidade para localizar testículos intra-abdominais e, independentemente do resultado da imagem, a exploração cirúrgica será necessária. Portanto, a ressonância não altera a conduta clínica e onera o sistema de saúde.\n\nAlternativa (b) Incorreta: A palpação e a tentativa de posicionar o testículo na bolsa escrotal fazem parte do exame físico inicial para diferenciar o testículo não descido do testículo retrátil. O testículo retrátil é aquele que, apesar de estar fora da bolsa, pode ser trazido a ela e nela permanece sem tensão. No entanto, a questão já estabelece o diagnóstico e pergunta a conduta para um paciente de 8 meses. Nessa idade, se o testículo não está tópico, a simples manipulação não é o tratamento.\n\nAlternativa (c) Correta: O testículo completa sua descida para a bolsa escrotal, na maioria das vezes, até os 3 ou 4 meses de vida. Após os 6 meses de idade, a descida espontânea é considerada raríssima. As diretrizes atuais de urologia pediátrica recomendam que a cirurgia (orquidopexia) seja realizada idealmente entre os 6 e 12 meses de idade, e no máximo até os 18 meses. A intervenção precoce é crucial para preservar a fertilidade, pois a exposição prolongada do testículo à temperatura corporal mais elevada (intra-abdominal ou inguinal) causa danos progressivos às células germinativas e aumenta o risco futuro de neoplasia testicular.\n\nAlternativa (d) Incorreta: O uso do ultrassom na criptorquidia é um erro comum na prática médica. O ultrassom não tem sensibilidade para localizar de forma confiável um testículo não palpável (especialmente se for intra-abdominal) e não consegue confirmar a agenesia testicular. Assim como a ressonância, o ultrassom não deve ser solicitado, pois não substitui a exploração cirúrgica (seja por via aberta ou laparoscópica), que é o padrão-ouro tanto para o diagnóstico quanto para o tratamento.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Cirurgia Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:08.051Z"
+  },
+  {
+    "id": "AJUDA_447e234c-103a-4632-bc70-89b0d04ff943",
+    "originalId": "447e234c-103a-4632-bc70-89b0d04ff943",
+    "statement": "Dentre as diversas interpretações da expressão “atenção primária à saúde - APS”, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A APS definida na declaração de Alma-Ata visa garantir a integralidade e a participação social e assim atingir maior organização do sistema de promoção da saúde e também da atenção à saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A APS seletiva refere-se ao foco na disponibilidade de profissionais especializados em medicina de família e comunidade nos serviços ambulatoriais médicos de primeiro contato no sistema de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A APS abrangente ou integral refere-se ao ponto de entrada no sistema de saúde e ao local de cuidados de saúde para a maioria das pessoas na maior parte do tempo, sendo a concepção mais comum em países da Europa com sistemas universais públicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A APS entendida como filosofia que orienta processos emancipatórios pelo direito universal à saúde preconiza que se desenvolvam como principais ações em países em desenvolvimento o monitoramento do crescimento infantil, a reidratação oral, a amamentação, a imunização, a complementação alimentar, o planejamento familiar e a alfabetização de mulheres.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A APS conceituada em ser apenas o primeiro dos níveis de atenção no sistema de saúde tem como princípios fundamentais a necessidade de enfrentar os determinantes sociais de saúde, a acessibilidade e cobertura universais com base nas necessidades, a participação comunitária, a ação intersetorial e o uso eficiente de recursos e tecnologias apropriadas e com aceitabilidade social.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nEsta questão aborda as diferentes concepções de Atenção Primária à Saúde (APS) que evoluíram desde a Conferência de Alma-Ata até as interpretações contemporâneas. Para resolvê-la, é fundamental distinguir entre APS Seletiva, APS como Nível de Atenção e APS Integral/Abrangente.\n\nAlternativa (a) CORRETA: A Declaração de Alma-Ata (1978) definiu a APS não apenas como um primeiro contato, mas como uma estratégia central para a organização dos sistemas de saúde. Ela preconiza a integralidade (atendimento completo ao indivíduo), a participação social (comunidade envolvida nas decisões) e a articulação intersetorial para promover a saúde e organizar a rede de cuidados, visando à equidade.\n\nAlternativa (b) INCORRETA: O conceito de APS Seletiva não foca na especialização profissional (Medicina de Família), mas sim na oferta de um pacote restrito de intervenções de baixo custo e alto impacto para populações pobres em países em desenvolvimento. É uma visão minimalista que surgiu como contraproposta à abrangência de Alma-Ata, focando em doenças específicas em vez de sistemas universais.\n\nAlternativa (c) INCORRETA: A descrição feita nesta alternativa (ponto de entrada, local de cuidados para a maioria das pessoas na maior parte do tempo) refere-se à APS entendida como nível de atenção ou Atenção Primária (Primary Care), baseada nos atributos de Barbara Starfield. Já a APS Abrangente ou Integral é um conceito mais amplo que envolve a reorientação de todo o sistema de saúde e o enfrentamento dos determinantes sociais, indo além da função de \"porta de entrada\" assistencial.\n\nAlternativa (d) INCORRETA: A alternativa inverte os conceitos. O monitoramento do crescimento infantil, reidratação oral, amamentação, imunização, complementação alimentar, planejamento familiar e alfabetização feminina formam o conjunto de ações conhecido pela sigla GOBI-FFF. Essas ações são o pilar da APS Seletiva, e não de uma filosofia emancipatória ou do direito universal integral.\n\nAlternativa (e) INCORRETA: Existe uma contradição interna na alternativa. Se a APS é conceituada como \"apenas o primeiro dos níveis de atenção\" (visão funcional/programática), seus princípios focam na coordenação do fluxo e triagem. Os princípios citados na sequência (enfrentar determinantes sociais, ação intersetorial e participação comunitária) pertencem à concepção de APS Integral/Abrangente de Alma-Ata, que entende a APS como o eixo estruturante de todo o sistema, e não meramente um nível isolado.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:08.051Z"
+  },
+  {
+    "id": "AJUDA_44883198-f4a2-4533-bac6-ff68a53288e7",
+    "originalId": "44883198-f4a2-4533-bac6-ff68a53288e7",
+    "statement": "Em relação ao Transtorno do Espectro Autista (TEA), assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Por ser impossível o diagnóstico de TEA em lactentes entre os 18 e 24 meses, na prática, ele é realizado tardiamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O diagnóstico de TEA é clínico, reservando-se a utilização de teste complementar de biomarcador específico nos casos de dúvida diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Quando o lactente tem irmãos ou pais com TEA ou atraso nos marcos do desenvolvimento neuropsicomotor, especialmente nas áreas de comunicação, comportamento e socialização, torna-se mandatória a investigação diagnóstica de TEA.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Considerando a elevação progressiva da prevalência de TEA, a Sociedade Brasileira de Pediatria recomenda complementar a avaliação da Caderneta da Criança com a triagem específica para autismo em todas as crianças nas idades de 36 e 48 meses, por meio do M-CHAT-R/F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta. O diagnóstico de TEA não é impossível entre 18 e 24 meses; pelo contrário, essa é a faixa etária ideal para o rastreamento universal. A Sociedade Brasileira de Pediatria (SBP) e o Ministério da Saúde recomendam a aplicação de instrumentos de triagem justamente nesse período para permitir a intervenção precoce, que é fundamental para o melhor prognóstico da criança.\n\nAlternativa b) Incorreta. Embora o diagnóstico de TEA seja essencialmente clínico, baseado na observação do comportamento e no relato dos pais seguindo os critérios do DSM-5 ou CID-11, a afirmação está errada ao mencionar a existência de um biomarcador específico. Até o momento, não existem exames laboratoriais ou de imagem que funcionem como biomarcadores para o diagnóstico de autismo. Exames complementares podem ser solicitados apenas para investigar comorbidades ou diagnósticos diferenciais.\n\nAlternativa c) Correta. A presença de um histórico familiar positivo (pais ou irmãos com TEA) aumenta significativamente o risco de a criança também apresentar o transtorno, devido à forte base genética do TEA. Além disso, qualquer atraso nos marcos de desenvolvimento, especialmente na tríade que envolve comunicação, interação social e comportamento, em uma criança com fatores de risco, torna a investigação diagnóstica obrigatória e imediata, não devendo o médico adotar uma postura de espera.\n\nAlternativa d) Incorreta. A recomendação da Sociedade Brasileira de Pediatria e da Academia Americana de Pediatria é que a triagem específica com o questionário M-CHAT-R/F seja realizada em todas as crianças nas consultas de rotina entre os 18 e 24 meses de idade. As idades citadas na alternativa (36 e 48 meses) estão fora da janela recomendada para o rastreamento primário com essa ferramenta específica.\n\nGabarito: Letra (c).",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Psiquiatria Infantil",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:08.051Z"
+  },
+  {
+    "id": "AJUDA_448dcd14-f43b-4406-b7c1-745d16b2e2b8",
+    "originalId": "448dcd14-f43b-4406-b7c1-745d16b2e2b8",
+    "statement": "Criança, 12 meses de vida, é trazida pelos pais ao pronto-socorro pediátrico, com história de, há 5 dias, ter iniciado quadro de febre (duração de 3 dias) e, há 2 dias, ter iniciado aparecimento de lesões cutâneas em face, que progrediram para tronco, com algumas lesões em mucosa oral. No exame físico, a criança estava em bom estado geral, com lesões maculares, vesiculares e pustulares em face, tronco, com algumas máculas em braços e coxas. Também apresentava gânglios aumentados em cadeias cervicais e axilares e algumas vesículas em cavidade oral. O restante do exame físico é normal. A criança é previamente hígida, não possui comorbidade e o calendário vacinal do Programa Nacional de Imunizações (PNI) brasileiro estava atualizado.\nA respeito desse caso clínico, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "É muito pouco provável que se trate de caso de varicela, pois a criança está com o calendário vacinal em dia e já recebeu a vacina específica contra varicela do PNI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É possível fazer o diagnóstico clínico de varicela, e o tratamento indicado é o controle dos sintomas (antitérmico, anti-histamínico) e uso de antisséptico nas lesões para evitar infecções secundárias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O fato de apresentar polimorfismo regional, ou seja, lesões em diferentes estágios de evolução em um mesmo segmento do corpo, afasta a possibilidade do diagnóstico de varicela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Para fazer o diagnóstico de varicela e indicar tratamento sintomático, é necessário realizar a coleta de sorologia específica (sorologia para o vírus varicela zóster).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Para fazer o diagnóstico de varicela e indicar tratamento antiviral específico, é fundamental fazer a reação de cadeia de polimerase (PCR) para o vírus varicela zóster em líquido das vesículas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve uma criança de 12 meses com febre seguida de exantema polimórfico (máculas, vesículas e pústulas) com progressão centrífuga (face e tronco) e acometimento de mucosas e linfonodos. Essas são características clássicas da varicela (catapora).\n\nPOR QUE A ALTERNATIVA B ESTÁ CORRETA?\n\nO diagnóstico da varicela é eminentemente clínico, baseado na morfologia das lesões e no polimorfismo regional (presença de lesões em diferentes estágios evolutivos simultaneamente). Em crianças hígidas, sem comorbidades e fora do grupo de risco para complicações, o tratamento é puramente sintomático. O foco é o controle da febre (evitando-se o uso de aspirina pelo risco de Síndrome de Reye e anti-inflamatórios não esteroidais pelo risco de facilitar infecções bacterianas invasivas), alívio do prurido com anti-histamínicos e higiene rigorosa da pele com antissépticos para prevenir a complicação mais comum: a infecção bacteriana secundária (impetiginização).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: No Programa Nacional de Imunizações (PNI) brasileiro atual, a vacina contra varicela é administrada em duas doses: a primeira aos 15 meses (como parte da tetraviral) e a segunda aos 4 anos de idade. Como a criança tem apenas 12 meses, ela ainda não recebeu a dose prevista no calendário oficial, estando, portanto, suscetível à doença.\n\nAlternativa C: O polimorfismo regional é justamente a marca registrada da varicela. As lesões surgem em ondas (surtos), por isso é característico encontrar máculas, pápulas, vesículas e crostas na mesma região do corpo. O polimorfismo não afasta, mas sim confirma a suspeita diagnóstica.\n\nAlternativa D: Em casos típicos de varicela, a sorologia é desnecessária e não deve ser aguardada para instituir o manejo sintomático. Exames laboratoriais são reservados para casos atípicos, complicações ou situações epidemiológicas específicas.\n\nAlternativa E: O tratamento antiviral (Aciclovir) não é indicado de rotina para crianças hígidas menores de 12 anos. O diagnóstico continua sendo clínico, e a realização de PCR do líquido vesicular, embora altamente sensível e específica, é um recurso caro e geralmente restrito a ambiente de pesquisa ou casos graves/imunossuprimidos, não sendo fundamental para a condução deste caso.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:08.051Z"
+  },
+  {
+    "id": "AJUDA_4496c4c8-09b6-4d98-b6de-ae60c08f370b",
+    "originalId": "4496c4c8-09b6-4d98-b6de-ae60c08f370b",
+    "statement": "O seguimento ambulatorial do RN prematuro é uma extensão dos cuidados iniciados ainda na UTI neonatal. Em relação a esse acompanhamento, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O programa de seguimento do RN de risco se inicia ainda durante a internação hospitalar, antes da alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Um crescimento exagerado do perímetro cefálico nos primeiros meses de vida pode estar relacionado com pior prognóstico neurológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "RNs que apresentam maior catch-up nos primeiros anos terão maior risco de desenvolverem doença cardiovascular na adolescência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O calendário vacinal do prematuro é realizado de acordo com a sua idade corrigida.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O objetivo da questão é identificar a conduta incorreta no seguimento do recém-nascido (RN) pré-termo. \n\nAlternativa (a): Esta afirmação está correta. O programa de seguimento (*follow-up*) do prematuro é um processo contínuo que deve começar antes mesmo da alta hospitalar. Isso envolve o acolhimento da família, o treinamento para cuidados domiciliares e a organização da rede de referência para garantir que o bebê receba assistência multidisciplinar logo após sair da UTI.\n\nAlternativa (b): Esta afirmação está correta. Embora o crescimento compensatório (*catch-up*) seja desejado, um aumento súbito e exagerado do perímetro cefálico pode ser sinal de complicações neurológicas, como a hidrocefalia pós-hemorrágica. Por isso, o monitoramento rigoroso das curvas de crescimento é essencial para identificar precocemente desvios que indiquem pior prognóstico neurológico.\n\nAlternativa (c): Esta afirmação está correta. Existe um conceito bem estabelecido na pediatria sobre a programação metabólica. Prematuros ou bebês pequenos para a idade gestacional (PIG) que apresentam um ganho de peso e crescimento excessivamente rápido nos primeiros anos (*catch-up* intenso) possuem maior risco de desenvolver síndrome metabólica, resistência insulínica e doenças cardiovasculares no futuro.\n\nAlternativa (d): Esta afirmação está INCORRETA e, portanto, é o gabarito. O calendário vacinal do prematuro deve ser seguido de acordo com a idade cronológica (idade contada a partir do dia do nascimento) e não pela idade corrigida. A maturação do sistema imunológico para resposta às vacinas independe da idade gestacional. As únicas exceções pontuais são o peso mínimo de 2.000 g para a aplicação da BCG e esquemas específicos para a vacina contra a hepatite B e o anticorpo palivizumabe em casos selecionados. No geral, o bebê deve ser vacinado conforme os meses de vida contados a partir do nascimento.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Imunizações",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:08.051Z"
+  },
+  {
+    "id": "AJUDA_449bc3d4-44f6-45d8-8ca4-242b9c034fbf",
+    "originalId": "449bc3d4-44f6-45d8-8ca4-242b9c034fbf",
+    "statement": "Assinale a alternativa correta sobre a Atenção Primária da Saúde (APS).",
+    "options": [
+      {
+        "id": "A",
+        "text": "As equipes das UBS devem ser multidisciplinares e residirem no território de atuação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Possibilita o acesso universal e contínuo a serviços de saúde de qualidade e resolutivos, caracterizados como a porta de entrada única do sistema de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Caracteriza-se por um conjunto de ações de saúde, no âmbito individual e coletivo, que abrangem a promoção e a proteção da saúde, a prevenção de agravos, o diagnóstico, o tratamento, a reabilitação e a manutenção da saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Deve valorizar os diversos saberes e as diversas práticas na perspectiva de uma abordagem integral, desde que estejam validados em estudos e devidamente publicados em literatura científica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. Embora as equipes da Atenção Primária à Saúde (APS) sejam multidisciplinares, não existe a exigência legal de que todos os seus membros residam no território de atuação. A obrigatoriedade de residir na área em que atua é restrita ao cargo de Agente Comunitário de Saúde (ACS), conforme previsto na Lei nº 11.350/2006.\n\nAlternativa b: Incorreta. A APS é definida pela Política Nacional de Atenção Básica (PNAB) como a porta de entrada preferencial e o centro comunicador da Rede de Atenção à Saúde (RAS). O erro da alternativa está em afirmar que se trata da porta de entrada única, uma vez que o sistema de saúde brasileiro prevê outros pontos de acesso, como os serviços de urgência e emergência e centros de atenção psicossocial.\n\nAlternativa c: Correta. Esta alternativa traz a definição oficial de Atenção Básica contida na PNAB (Portaria de Consolidação nº 2/2017). A APS é o nível de atenção que desenvolve um conjunto de ações transversais, abrangendo tanto o indivíduo quanto a coletividade. Seu escopo de atuação é amplo e integral, englobando a promoção, a proteção, a prevenção de doenças, o diagnóstico precoce, o tratamento adequado, a reabilitação de sequelas e a manutenção da saúde.\n\nAlternativa d: Incorreta. O erro desta alternativa reside na limitação imposta pela parte final da frase. A APS valoriza a integralidade e a participação popular, o que inclui o respeito aos saberes tradicionais e às práticas culturais da comunidade. Embora a medicina baseada em evidências norteie as condutas clínicas, a diretriz de valorização de saberes no contexto do SUS não restringe a abordagem integral apenas a práticas com publicações em literatura científica, integrando inclusive as Práticas Integrativas e Complementares (PICs).",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:08.051Z"
+  },
+  {
+    "id": "AJUDA_449c776e-86d4-4309-a78b-2b1744a1d495",
+    "originalId": "449c776e-86d4-4309-a78b-2b1744a1d495",
+    "statement": "Paciente com quadro de colelitíase conhecida, evoluindo com dor em andar superior do abdome que cede com analgésicos orais, associada a vômitos volumosos sem outros sintomas sistêmicos. Ao exame é possível identificar icterícia 2+/4+ e colúria. A que complicação esse quadro se relaciona?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pancreatite aguda",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coledocolitíase",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hepatite aguda",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colangite",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Vesícula em porcelana",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um histórico de colelitíase (pedras na vesícula) e desenvolve um quadro de icterícia (coloração amarelada de pele e mucosas) e colúria (urina escura), o que caracteriza uma síndrome colestática. O fato de a dor ceder com analgésicos comuns e a ausência de sintomas sistêmicos, como febre ou instabilidade hemodinâmica, apontam para uma obstrução mecânica das vias biliares sem a presença de infecção ou inflamação grave estabelecida até o momento.\n\nAnálise das Alternativas:\n\na) Pancreatite aguda: Embora a pancreatite de origem biliar possa cursar com icterícia, o quadro clínico clássico envolve uma dor abdominal de forte intensidade, persistente, muitas vezes descrita em barra ou com irradiação para o dorso, que dificilmente cederia prontamente com analgésicos orais. Além disso, costuma cursar com sinais de resposta inflamatória sistêmica.\n\nb) Coledocolitíase: Esta é a alternativa correta. A coledocolitíase ocorre quando um cálculo migra da vesícula biliar para o ducto colédoco, obstruindo o fluxo da bile para o duodeno. Essa obstrução causa o acúmulo de bilirrubina direta no sangue, resultando em icterícia e colúria. A dor é do tipo cólica biliar, que pode ser intermitente e aliviada por analgésicos, e a ausência de febre diferencia este quadro da colangite.\n\nc) Hepatite aguda: As hepatites agudas podem causar icterícia e colúria, porém o mecanismo é a lesão direta dos hepatócitos (icterícia hepatocelular) e não a obstrução mecânica. Geralmente, pacientes com hepatite apresentam pródromos como mal-estar acentuado, náuseas, anorexia e fadiga, além de não possuírem uma relação direta tão imediata com histórico de colelitíase e dor tipo cólica.\n\nd) Colangite: A colangite é uma infecção bacteriana das vias biliares, geralmente secundária a uma obstrução. Para o diagnóstico clínico, baseamo-nos na Tríade de Charcot: dor abdominal, icterícia e FEBRE. Como o enunciado afirma explicitamente que o paciente não apresenta outros sintomas sistêmicos (como febre ou calafrios), o diagnóstico de colangite é menos provável que o de coledocolitíase simples.\n\ne) Vesícula em porcelana: Trata-se de uma calcificação da parede da vesícula biliar, decorrente de inflamação crônica. É frequentemente um achado de exame de imagem e está associada a um risco aumentado de adenocarcinoma de vesícula. Por si só, a vesícula em porcelana não causa icterícia ou colúria, a menos que haja uma complicação obstrutiva associada, como um cálculo no colédoco.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:08.051Z"
+  }
+]

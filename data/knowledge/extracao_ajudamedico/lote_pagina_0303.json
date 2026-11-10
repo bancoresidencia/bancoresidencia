@@ -1,0 +1,518 @@
+[
+  {
+    "id": "AJUDA_53fe095f-a906-44b8-ad96-ef4f5fc2bed5",
+    "originalId": "53fe095f-a906-44b8-ad96-ef4f5fc2bed5",
+    "statement": "Dispneia é definida pela American Thoracic Society como “uma experiência subjetiva de desconforto respiratório que consiste em sensações qualitativamente distintas que variam na intensidade. Sobre o uso de opioides para o controle da dispneia, cuidados paliativos, NÃO podemos afirmar que.",
+    "options": [
+      {
+        "id": "A",
+        "text": "São amplamente recomendados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ocasionam aumento na percepção central da dispneia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ocasionam redução na sensibilidade à hipercapnia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ocasionam redução no consumo de oxigênio e aumento da função cardiovascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Seu uso para tratamento da dispneia é em baixas doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O uso de opioides no manejo da dispneia em cuidados paliativos é uma prática consolidada e fundamentada em evidências científicas. O objetivo principal não é apenas tratar a causa subjacente, mas modular a percepção subjetiva do sofrimento respiratório. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Correta. Instituições de referência como a American Thoracic Society e a European Respiratory Society recomendam amplamente os opioides como a primeira linha de tratamento farmacológico para a dispneia refratária em pacientes com doenças avançadas e terminais.\n\nAlternativa b) Incorreta. Esta é a alternativa a ser assinalada, pois os opioides promovem a REDUÇÃO, e não o aumento, da percepção central da dispneia. Eles atuam nos receptores mu do sistema nervoso central, especificamente em áreas como o córtex insular e o cíngulo anterior, diminuindo a interpretação cerebral do sinal de falta de ar e a resposta emocional negativa associada a ele.\n\nAlternativa c) Correta. Um dos mecanismos de ação dos opioides é o embotamento da resposta ventilatória aos estímulos químicos. Eles reduzem a sensibilidade dos quimiorreceptores centrais (localizados no bulbo) e periféricos (corpos carotídeos) à hipercapnia (elevação do CO2) e à hipóxia, o que evita o aumento desproporcional do esforço respiratório.\n\nAlternativa d) Correta. Ao reduzir a taquipneia, o recrutamento de musculatura acessória e a ansiedade, os opioides promovem uma queda no consumo metabólico de oxigênio. Do ponto de vista cardiovascular, podem promover redução da pré-carga e da resistência vascular sistêmica, melhorando a eficiência do débito cardíaco, especialmente em pacientes com congestão pulmonar.\n\nAlternativa e) Correta. No tratamento da dispneia, preconiza-se o início com doses baixas de opioides (ex.: 2,5 a 5 mg de morfina por via oral em pacientes que nunca utilizaram a medicação). Essas doses são geralmente menores do que as necessárias para o manejo da dor aguda ou oncológica intensa, sendo tituladas gradualmente para garantir a segurança e minimizar o risco de sedação excessiva ou depressão respiratória clinicamente significativa.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Pneumologia Intensiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:54.347Z"
+  },
+  {
+    "id": "AJUDA_5404f8a0-93d9-4db9-b9fa-c2289a34747b",
+    "originalId": "5404f8a0-93d9-4db9-b9fa-c2289a34747b",
+    "statement": "Um adulto de meia-idade, previamente hígido, inicia quadro abrupto de febre, calafrios, tosse e dispneia, evoluindo com dor torácica e opacidade radiográfica focal. Estabeleça a conduta diagnóstica inicial mais adequada no manejo sindrômico desse caso, considerando etiologias usuais e achados cardinais:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Priorize diagnóstico de tuberculose pulmonar e solicite baciloscopia seriada como primeiro passo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Considere pneumonia adquirida na comunidade e estruture a avaliação clínica com confirmação radiográfica inicial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Presuma broncoespasmo alérgico e indique apenas broncodilatador de curta duração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipotetize hemorragia alveolar difusa e solicite lavado broncoalveolar como teste inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Classifique como pneumonia hospitalar e inicie cobertura para bacilos multirresistentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um paciente adulto previamente hígido com um quadro respiratório agudo (início abrupto de febre, calafrios, tosse e dispneia) e achado radiológico de opacidade focal. Este conjunto de sinais e sintomas é o protótipo da pneumonia adquirida na comunidade (PAC).\n\nAlternativa a: Incorreta. A tuberculose pulmonar manifesta-se tipicamente de forma subaguda ou crônica, com sintomas que perduram por semanas, como febre vespertina, sudorese noturna e perda de peso. O início abrupto com calafrios e febre alta relatado no caso é muito mais sugestivo de uma etiologia bacteriana aguda, como o Streptococcus pneumoniae.\n\nAlternativa b: Correta. A apresentação clínica de início súbito, sinais de infecção sistêmica (febre e calafrios) e sintomas respiratórios baixos (tosse, dispneia e dor torácica), somada à evidência radiológica de consolidação (opacidade focal), fecha o diagnóstico sindrômico de pneumonia adquirida na comunidade. A conduta inicial padrão é exatamente a avaliação clínica minuciosa combinada à confirmação radiográfica para iniciar o tratamento empírico adequado.\n\nAlternativa c: Incorreta. O broncoespasmo alérgico ou crise asmática cursa habitualmente com sibilância e dispneia, sem febre alta ou calafrios. Além disso, a radiografia no broncoespasmo costuma mostrar hiperinsuflação pulmonar ou estar normal, e não apresentar uma opacidade focal (consolidação).\n\nAlternativa d: Incorreta. A hemorragia alveolar difusa é uma condição grave que geralmente se apresenta com hemoptise, queda súbita da hemoglobina e infiltrados radiológicos bilaterais e difusos. O quadro de febre e calafrios com opacidade focal em paciente previamente hígido torna a pneumonia uma hipótese muito mais provável e frequente.\n\nAlternativa e: Incorreta. Para ser classificada como pneumonia hospitalar (nosocomial), o paciente deve desenvolver a infecção após 48 horas de internação hospitalar. O enunciado deixa claro que o paciente era previamente hígido e iniciou o quadro de forma súbita, o que caracteriza uma infecção de origem comunitária. O uso de cobertura para bacilos multirresistentes seria inadequado e excessivo neste cenário inicial.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:54.347Z"
+  },
+  {
+    "id": "AJUDA_540fbbcb-c604-406f-81c1-0cd20bfc19ff",
+    "originalId": "540fbbcb-c604-406f-81c1-0cd20bfc19ff",
+    "statement": "Paciente primigesta, com idade gestacional de 6 semanas, vem à Medicina Fetal para a realização do primeiro ultrassom da gestação. À imagem, identificados um saco gestacional com duas vesículas vitelínicas e 2 embriões. \n\nDe acordo com o caso, assinale a alternativa que apresenta as classificações corretas.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gestação gemelar dicoriônica e monozigótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gestação gemelar dicoriônica e dizigótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gestação gemelar dicoriônica e diamniótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gestação gemelar monocoriônica e monozigótica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Gestação gemelar monocoriônica e dizigótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é fundamental correlacionar os achados ultrassonográficos precoces com a classificação da gestação gemelar em relação à corionicidade (número de placentas) e à amnionicidade (número de sacos amnióticos), além de compreender a zigosidade.\n\nAnálise dos dados do enunciado:\nO ultrassom realizado precocemente (6 semanas) é o \"padrão-ouro\" para determinar a corionicidade. O achado de um único saco gestacional contendo dois embriões define que a gestação é monocoriônica (uma única placenta). A presença de duas vesículas vitelínicas sugere fortemente que a gestação é diamniótica (cada embrião em sua cavidade amniótica), embora o foco principal da questão seja a corionicidade e a zigosidade.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Para ser classificada como dicoriônica, o ultrassom deveria mostrar dois sacos gestacionais distintos. O enunciado afirma haver apenas um saco gestacional.\n\nAlternativa b) Incorreta. Gestação dicoriônica exige dois sacos gestacionais. Além disso, gestações dizigóticas (provenientes de dois óvulos e dois espermatozoides) são obrigatoriamente dicoriônicas e diamnióticas, o que não condiz com a imagem de um saco gestacional único.\n\nAlternativa c) Incorreta. Embora a presença de duas vesículas vitelínicas indique que a gestação é provavelmente diamniótica, a classificação \"dicoriônica\" está errada, pois foi visualizado apenas um saco gestacional.\n\nAlternativa d) Correta. A identificação de um único saco gestacional para dois embriões caracteriza a gestação como monocoriônica. Na espécie humana, quase a totalidade das gestações monocoriônicas é monozigótica (proveniente da divisão de um único ovo/zigoto entre o 4º e o 8º dia após a fecundação). Portanto, o diagnóstico é de gestação gemelar monocoriônica e monozigótica.\n\nAlternativa e) Incorreta. Gestações dizigóticas resultam sempre em placentas separadas (dicoriônicas), pois cada zigoto desenvolve seu próprio trofoblasto e membranas. Não existe gestação monocoriônica dizigótica em condições naturais humanas.\n\nDica prática: No primeiro trimestre, conte os sacos gestacionais. Um saco = monocoriônica. Dois sacos = dicoriônica. Se for monocoriônica, obrigatoriamente será monozigótica. Se for dicoriônica, pode ser monozigótica (divisão precoce antes do 3º dia) ou dizigótica.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Gestação Múltipla",
+      "Ultrassom em Obstetrícia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:54.347Z"
+  },
+  {
+    "id": "AJUDA_541147ac-36e6-4d55-a3be-1f31d2c7e38d",
+    "originalId": "541147ac-36e6-4d55-a3be-1f31d2c7e38d",
+    "statement": "A epidemiologia utiliza estudos observacionais e experimentais para investigar a distribuição e os determinantes de saúde e doença nas populações, empregando testes diagnósticos e estatísticos como ferramentas.\n\nSobre testes diagnósticos, assinale a correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar o ponto de corte sempre aumenta sensibilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Especificidade é a capacidade de identificar verdadeiros positivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Valor preditivo positivo depende da prevalência da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sensibilidade depende exclusivamente do teste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Um teste com alta especificidade descarta doença quando positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. Ao aumentar o ponto de corte de um teste (tornando o critério para um resultado ser considerado positivo mais rigoroso), a especificidade tende a aumentar, mas a sensibilidade diminui. Isso acontece porque, com um critério mais exigente, menos pessoas doentes conseguirão atingir o nível necessário para positivar o teste, gerando mais resultados falsos negativos.\n\nAlternativa b: Incorreta. A especificidade é a capacidade do teste de identificar corretamente os indivíduos verdadeiros negativos, ou seja, aqueles que não possuem a doença. A capacidade de identificar os verdadeiros positivos entre os doentes é a definição de sensibilidade.\n\nAlternativa c: Correta. Esta é uma característica fundamental dos testes diagnósticos. Enquanto a sensibilidade e a especificidade são consideradas propriedades intrínsecas do teste, os valores preditivos (positivo e negativo) são parâmetros extrínsecos. Isso significa que o Valor Preditivo Positivo (VPP) aumenta quando a prevalência da doença na população testada é maior.\n\nAlternativa d: Incorreta. Embora a sensibilidade e a especificidade sejam classicamente descritas como propriedades do teste que não mudam com a prevalência, elas não dependem exclusivamente do teste. Elas podem variar de acordo com o espectro clínico da doença na população (por exemplo, um teste pode ser mais sensível em pacientes com sintomas graves do que em pacientes em estágio inicial).\n\nAlternativa e: Incorreta. Um teste com alta especificidade é excelente para confirmar o diagnóstico quando o resultado é positivo, pois apresenta poucos resultados falsos positivos. Para descartar uma doença quando o resultado é negativo, o ideal é utilizar um teste com alta sensibilidade, que garante um baixo índice de resultados falsos negativos.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:54.347Z"
+  },
+  {
+    "id": "AJUDA_54133a1b-dc01-4427-8f78-5be39ab6a876",
+    "originalId": "54133a1b-dc01-4427-8f78-5be39ab6a876",
+    "statement": "Homem de 48 anos de idade é atendido em consulta de retorno. Ele tem antecedente de obesidade central, hipertensão arterial, dislipidemia e diabetes mellitus tipo 2, em uso de enalapril (40 mg/dia), anlodipino (10 mg/dia), metformina (2g/dia), dapagliflozina (10 mg/dia) e rosuvastatina (40 mg/dia). Nega etilismo, tabagismo ou uso de drogas. O histórico familiar de 1º grau é positivo para diabetes, infarto do miocárdio, cirrose hepática sem causa aparente e câncer de cólon. Os exames séricos atuais revelam hemograma completo normal, ferritina de 750 ng/mL (normal: até 300) e saturação de transferrina de 37% (valor de referência: < 45%). A ressonância magnética hepática estima a concentração de ferro hepático em 1,1 mg/g de peso seco, indicando ausência de deposição tecidual excessiva. Considerando a principal hipótese diagnóstica, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a elevação da ferritina no paciente atua como um reagente de fase aguda secundário ao quadro inflamatório crônico da síndrome metabólica, enquanto a saturação de transferrina inferior a 45% aponta confiavelmente para a inexistência de acúmulo excessivo de ferro no organismo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a realização do sequenciamento genético fornece dados valiosos sobre a suscetibilidade a desenvolver acúmulo de ferro no futuro, facilitando o aconselhamento adequado do paciente e a programação de um acompanhamento focado em eventuais alterações dos estoques corporais com o envelhecimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a associação de diabetes e hipertensão determina que a ferritina elevada seja uma consequência direta de intensa deposição de ferro no tecido hepático, tornando o teste genético uma ferramenta de menor relevância na abordagem diagnóstica de pacientes obesos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a biópsia do fígado torna-se a etapa importante na presente investigação clínica para quantificar o ferro tecidual com exatidão e determinar o defeito genético causador da elevação da ferritina observada nos exames bioquímicos do sangue do paciente atendido no ambulatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "o paciente precisa ser orientado a aderir a uma dieta com restrição de ferro, cortando o consumo de carnes vermelhas e de vitamina C, dado que a modificação dos hábitos alimentares figura como a principal medida profilática estrutural para normalizar a ferritina no sangue.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico principal: hiperferritinemia associada à síndrome metabólica, também chamada de síndrome de sobrecarga de ferro dismetabólica (DIOS). O paciente tem obesidade central, hipertensão, dislipidemia e diabetes tipo 2. Apresenta ferritina elevada (750), saturação de transferrina normal (37%) e concentração de ferro hepático normal na RM (1,1 mg/g, quando o normal é abaixo de aproximadamente 1,8 mg/g). Ou seja, não há sobrecarga real de ferro.\n\nRaciocínio:\n- A ferritina é proteína de fase aguda e marcador de inflamação e de dano hepatocelular. Na síndrome metabólica e na esteatose hepática (MASLD/NAFLD), ela costuma estar elevada sem aumento dos estoques de ferro.\n- Na hemocromatose hereditária (HFE, C282Y) e nas sobrecargas reais de ferro, a saturação de transferrina costuma ser alta (>45%). A saturação normal, associada à RM normal, afasta sobrecarga significativa.\n- A história familiar de cirrose sem causa aparente poderia sugerir hemocromatose, mas os exames atuais não sustentam essa hipótese. A cirrose familiar pode ser explicada por MASLD/MASH.\n- Conduta: tratar a síndrome metabólica (perda de peso, exercício, controle glicêmico e lipídico) e avaliar fibrose hepática. Não há indicação de flebotomia, de biópsia nem de restrição dietética de ferro.\n\nAnálise das alternativas:\n\na) Correta. A hiperferritinemia reflete inflamação crônica de baixo grau e esteatose, como reagente de fase aguda. A saturação de transferrina abaixo de 45% é um bom marcador de ausência de sobrecarga de ferro, e a RM confirma isso. Uma ressalva é que a saturação normal tem alto valor preditivo negativo, mas não é infalível. Aqui, porém, ela está concordante com a RM.\n\nb) Incorreta. O sequenciamento genético (HFE) é indicado quando há suspeita de sobrecarga hereditária, com saturação elevada ou ferro hepático aumentado. Com saturação normal e RM normal, não há indicação. Além disso, o teste não serve para prever acúmulo futuro nem para acompanhamento \"com o envelhecimento\" neste cenário.\n\nc) Incorreta. Diabetes e hipertensão não implicam deposição hepática de ferro. A ferritina elevada aqui não decorre de deposição intensa, como mostra a RM normal. O teste genético tem menor relevância, mas pelo motivo oposto ao afirmado, que é a ausência de sobrecarga.\n\nd) Incorreta. A biópsia hepática foi substituída pela RM para quantificar o ferro e é invasiva. Como a RM já excluiu sobrecarga, a biópsia não é necessária. Ela também não determina defeito genético.\n\ne) Incorreta. Não há sobrecarga de ferro para justificar dieta restritiva. Cortar carne vermelha e vitamina C não normaliza a ferritina nesse contexto e pode ser prejudicial. Mesmo na hemocromatose, a restrição dietética não é a medida principal, pois o tratamento é a flebotomia. Aqui, a medida estrutural é tratar a síndrome metabólica.\n\nResposta: letra A.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:54.347Z"
+  },
+  {
+    "id": "AJUDA_541870e9-1100-4dd5-a826-60c6013178ba",
+    "originalId": "541870e9-1100-4dd5-a826-60c6013178ba",
+    "statement": "Qual das seguintes afirmações descreve corretamente o Sinal de Fox e sua relevância no exame físico para diagnóstico diferencial em emergência?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Sinal de Fox é caracterizado por equimoses na região inguinal, indicando pancreatite aguda com possível complicação de hemorragia retroperitoneal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O Sinal de Fox é caracterizado por dor intensa à palpação do quadrante inferior direito do abdômen, sugerindo apendicite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O Sinal de Fox é identificado como uma alteração na pupila, indicando lesão cerebral ou aumento da pressão intracraniana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O Sinal de Fox é uma descoloração azulada ao redor do umbigo, associada a gravidez ectópica rota.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O Sinal de Fox é caracterizado por dor ao levantamento do braço contra resistência, sugerindo tendinite do manguito rotador.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) CORRETA: O Sinal de Fox consiste no aparecimento de equimoses (manchas roxas) localizadas na região do ligamento inguinal (virilha). Esse fenômeno ocorre devido ao acúmulo de sangue no espaço retroperitoneal, que migra por gravidade através das fáscias musculares até se tornar visível na superfície cutânea da região inguinal. É um achado clássico, embora pouco frequente, em casos de pancreatite aguda necro-hemorrágica, ruptura de aneurisma da aorta abdominal ou gravidez ectópica retroperitoneal. Sua presença é um indicativo de gravidade e sangramento importante.\n\nAlternativa (b) INCORRETA: A dor intensa à palpação do quadrante inferior direito, especificamente no Ponto de McBurney, é o achado clássico da apendicite aguda. O Sinal de Fox é um sinal visual de coloração da pele, e não um sinal de sensibilidade dolorosa à palpação.\n\nAlternativa (c) INCORRETA: Alterações pupilares, como a anisocoria (pupilas de tamanhos diferentes) ou a ausência de reflexo fotomotor, são utilizadas para avaliar lesões neurológicas, compressão de pares cranianos ou hipertensão intracraniana. O Sinal de Fox é um sinal abdominal/inguinal e não possui relação com o sistema nervoso central.\n\nAlternativa (d) INCORRETA: A descrição de descoloração azulada ao redor do umbigo corresponde ao Sinal de Cullen. Embora tanto o Sinal de Fox quanto o Sinal de Cullen possam estar presentes em condições similares (como pancreatite hemorrágica ou gravidez ectópica rota com hemoperitônio), eles se diferenciam pela localização anatômica: Cullen é periumbilical, Grey Turner é nos flancos e Fox é na região inguinal.\n\nAlternativa (e) INCORRETA: A dor ao levantamento do braço contra resistência é uma manobra do exame físico ortopédico, utilizada para identificar lesões no manguito rotador, como a tendinite do supraespinal. Não há qualquer correlação clínica entre manobras articulares e o Sinal de Fox.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Pancreatite Aguda e Crônica",
+      "Abdome Agudo Hemorrágico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:54.347Z"
+  },
+  {
+    "id": "AJUDA_541e307c-992a-44fd-a181-56d8dbb74129",
+    "originalId": "541e307c-992a-44fd-a181-56d8dbb74129",
+    "statement": "Paciente feminina, de 35 anos, com diagnóstico de diabetes melito tipo 1 desde os 15 anos, foi internada por cetoacidose. Em seu histórico, constavam episódios depressivos recorrentes, transtorno por uso de álcool moderado dos 22 aos 28 anos e mãe com transtorno por uso de benzodiazepínicos. Passou a queixar-se de dor crônica em queimação nos membros inferiores com padrão de polineuropatia, tendo solicitado medicação analgésica. Já havia utilizado morfina injetável em outras internações para alívio de suas dores. Em relação à prescrição de morfina injetável para a paciente, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Está indicada morfina injetável se necessário, pois já se demonstrou que houve alívio das dores da paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento pode ser realizado com morfina injetável de forma fixa para a dor crônica não oncológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A paciente não deve receber prescrição de opioides mesmo que apresente dor aguda, de forte intensidade, pelo alto risco de adição a opioides.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Independentemente do risco de adição a opioides, considerando o quadro clínico atual não há indicação de uso de morfina injetável fixa ou se necessário.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão exige o conhecimento sobre o manejo da dor crônica neuropática e os critérios para o uso racional de opioides, especialmente em pacientes com histórico de transtorno por uso de substâncias e comorbidades psiquiátricas.\n\nAnálise do quadro clínico:\nA paciente apresenta polineuropatia diabética, que é uma dor crônica de caráter neuropático. Além disso, possui fatores de risco importantes para o desenvolvimento de dependência (adicção): histórico pessoal de abuso de álcool, episódios depressivos recorrentes e histórico familiar de abuso de benzodiazepínicos.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. O alívio sintomático momentâneo não justifica a indicação de morfina injetável. O uso de opioides potentes por via parenteral no regime \"se necessário\" para dores crônicas é uma prática inadequada, pois favorece o fenômeno de busca pela droga e o desenvolvimento de dependência química, sem tratar a fisiopatologia da dor neuropática.\n\nAlternativa b) Incorreta. O tratamento da dor crônica não oncológica deve priorizar a via oral e medicações que modulem a dor neuropática, como anticonvulsivantes (gabapentina, pregabalina) ou antidepressivos (amitriptilina, duloxetina). O uso fixo de morfina injetável não tem indicação em quadros de dor crônica não oncológica, reservando-se opioides potentes apenas para casos refratários, por via oral, e após falha de outras terapias.\n\nAlternativa c) Incorreta. Embora o risco de adicção seja alto, não existe proibição absoluta de opioides em casos de dor aguda de forte intensidade (como um trauma grave ou pós-operatório imediato). Nesses casos, a analgesia deve ser garantida, porém com monitoramento estrito, uso de doses criteriosas e planejamento de desmame rápido. A proibição ética de tratar dor aguda intensa não é a conduta correta.\n\nAlternativa d) Correta. Esta alternativa é a mais adequada porque foca na indicação clínica. O tratamento padrão para a polineuropatia diabética não envolve o uso de morfina injetável, seja de forma fixa ou \"se necessário\". A morfina não é a primeira, nem a segunda linha de tratamento para dor neuropática crônica. Portanto, independentemente de a paciente ter ou não risco de adicção, a conduta de prescrever morfina injetável para este quadro clínico atual (dor neuropática crônica) está incorreta do ponto de vista técnico-científico.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:54.347Z"
+  },
+  {
+    "id": "AJUDA_542e9d30-6f56-4251-a4b3-b409c85801f0",
+    "originalId": "542e9d30-6f56-4251-a4b3-b409c85801f0",
+    "statement": "Quais são as principais células recrutadas no início da inflamação, essenciais para o combate a patógenos?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neutrófilos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Eosinófilos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Macrófagos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Linfócitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A resposta correta é a alternativa (a) Neutrófilos.\n\nNa fase inicial da inflamação aguda, a resposta celular é caracterizada pelo recrutamento rápido de leucócitos do sangue para o local da lesão ou infecção. Os neutrófilos são considerados as células de primeira linha de defesa ou \"primeiros respondedores\". Isso ocorre porque eles são os leucócitos mais abundantes na circulação e respondem mais rapidamente às moléculas de adesão e citocinas quimiotáticas, como a Interleucina-8 (IL-8), migrando para o tecido em questão de minutos a poucas horas (geralmente predominando nas primeiras 6 a 24 horas). Eles atuam através da fagocitose, liberação de enzimas lisossômicas e produção de espécies reativas de oxigênio.\n\nAnalise das alternativas:\n\na) Correta. Os neutrófilos são as principais células recrutadas no início da resposta inflamatória aguda devido à sua alta disponibilidade sistêmica e rapidez de migração tecidual diante de estímulos infecciosos ou necróticos.\n\nb) Incorreta. Os eosinófilos participam de processos inflamatórios específicos, como reações alérgicas e infecções por parasitas (helmintos). Eles não são as células predominantes no recrutamento inicial da inflamação aguda comum.\n\nc) Incorreta. Embora os macrófagos residentes no tecido sejam fundamentais para detectar o dano inicial e iniciar a sinalização, os monócitos circulantes (que se diferenciam em macrófagos no tecido) são recrutados de forma mais lenta que os neutrófilos. Eles costumam substituir os neutrófilos como tipo celular dominante após 24 a 48 horas do início do processo.\n\nd) Incorreta. Os linfócitos são células da imunidade adaptativa e são os componentes celulares característicos da inflamação crônica. O recrutamento e ativação de linfócitos levam dias, não sendo as células principais do início imediato da inflamação.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:54.347Z"
+  },
+  {
+    "id": "AJUDA_54309ce1-f944-4fb5-84c6-edb64ae3fea9",
+    "originalId": "54309ce1-f944-4fb5-84c6-edb64ae3fea9",
+    "statement": "Em relação aos Conselhos de Saúde, analise as assertivas a seguir:\n\nI. São instâncias deliberativas e permanentes do SUS em cada esfera de governo.\nII. Sua composição deve garantir paridade entre representantes do governo e da sociedade civil.\nIII. Têm como uma de suas atribuições aprovar o Plano Municipal de Saúde.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II, III e IV.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DAS ASSERTIVAS:\n\nItem I está correto. De acordo com a Lei Federal 8.142/1990, o Conselho de Saúde é um órgão colegiado de caráter permanente e deliberativo, atuando na formulação de estratégias e no controle da execução da política de saúde em cada esfera de governo (municipal, estadual e federal).\n\nItem II está correto. A composição dos Conselhos de Saúde segue a regra da paridade: 50% dos membros são representantes dos usuários (sociedade civil) e os outros 50% são distribuídos conjuntamente entre trabalhadores de saúde (25%) e representantes do governo e prestadores de serviços de saúde (25%), garantindo que a sociedade civil tenha representação equivalente à soma dos demais setores.\n\nItem III está correto. É competência do Conselho de Saúde deliberar, fiscalizar e aprovar os instrumentos de planejamento do SUS da sua respectiva esfera, o que inclui a aprovação do Plano de Saúde e dos respectivos Relatórios de Gestão.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a: Incorreta. A assertiva III também é verdadeira, tornando esta opção incompleta.\n\nAlternativa b: Incorreta. A assertiva II também é verdadeira, tornando esta opção incompleta.\n\nAlternativa c: Incorreta. A assertiva I também é verdadeira, tornando esta opção incompleta.\n\nAlternativa d: Correta. Todas as assertivas listadas no enunciado (I, II e III) são verdadeiras. A inclusão do algarismo IV na alternativa decorre de um erro de digitação/formatação comum de bancas examinadoras, mas que contempla integralmente todos os itens corretos da questão.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:54.347Z"
+  },
+  {
+    "id": "AJUDA_543138e4-3789-45d2-84c9-46efe8bdbda1",
+    "originalId": "543138e4-3789-45d2-84c9-46efe8bdbda1",
+    "statement": "Em relação a profilaxia da raiva humana, qual a melhor conduta em caso de adentramento de morcego?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Em caso de contato físico do animal com a pele humana verificar se existe lesão, no caso de ser profunda aplicar soro antirrábico e se for superficial aplicar a vacina antirrábica isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Em caso de dúvida quanto ao risco de exposição do paciente aplicar vacina e soro antirrábico humano considerando o tipo do animal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Caso exista a possibilidade, matar o animal e providenciar que seja imediatamente encaminhado ao laboratório para exame.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Isolar o animal em uma caixa, se possível, e observá-lo por 10 dias informando ao serviço de profilaxia da raiva caso ele venha a morrer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Morcego em área urbana são frugívoros (alimentarem-se de frutos) e não atacam humanos, sendo desnecessária a aplicação de vacina ou soro antirrábico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a conduta profilática em relação à raiva humana diante da exposição a morcegos. De acordo com as normas do Ministério da Saúde do Brasil, o morcego é considerado um animal de alto risco para a transmissão da raiva, independentemente da sua espécie ou hábito alimentar.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Em acidentes com morcegos, a conduta não depende da profundidade da lesão. Qualquer contato direto com morcegos é classificado como \"acidente grave\" pelo protocolo oficial. Devido ao tamanho diminuto dos dentes desses animais, as lesões podem ser imperceptíveis, mas ainda assim capazes de transmitir o vírus. Portanto, o esquema de profilaxia indicado é sempre a combinação de vacina e soro (ou imunoglobulina), sem distinção baseada na aparência da ferida.\n\nAlternativa b) Correta. Esta é a conduta preconizada frente à incerteza de exposição ou ao contato direto com morcegos (como encontrar um morcego no quarto ao acordar ou ter contato físico direto). Devido à gravidade da doença e ao risco inerente aos quirópteros, na dúvida quanto à exposição, o paciente deve receber o esquema completo para acidentes graves: vacina antirrábica e soro antirrábico humano (ou imunoglobulina).\n\nAlternativa c) Incorreta. Embora o diagnóstico laboratorial do animal seja importante para a vigilância epidemiológica, a prioridade médica absoluta é o início imediato da profilaxia no paciente. Além disso, a recomendação é que o animal seja capturado por profissionais capacitados e não morto de forma indiscriminada pelo leigo, o que poderia aumentar o risco de exposição acidental.\n\nAlternativa d) Incorreta. A observação por 10 dias é uma conduta restrita a cães e gatos domésticos que podem ser monitorados quanto a alterações de comportamento. Animais silvestres, incluindo morcegos, não devem ser submetidos à observação para fins de decisão profilática; se houve contato, a profilaxia deve ser iniciada imediatamente.\n\nAlternativa e) Incorreta. Existem diversas espécies de morcegos em áreas urbanas, incluindo insetívoros e frugívoros, mas todos podem ser portadores do vírus da raiva. Além disso, morcegos com comportamento atípico (voando de dia ou caídos no chão) são suspeitos de estarem doentes. Jamais se deve negligenciar um contato com morcego baseando-se no hábito alimentar da espécie.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Raiva, Tétano, Mordedura e Arranhadura Animal"
+    ],
+    "difficulty": 78.49768974421528,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:43:54.347Z"
+  }
+]

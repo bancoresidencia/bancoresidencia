@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_31cf9125-8da2-4923-9f56-ed2d1afc3037",
+    "originalId": "31cf9125-8da2-4923-9f56-ed2d1afc3037",
+    "statement": "O médico examina um recém-nascido (RN) a termo, saudável, nascido de parto vaginal, com 6 horas de vida, que ainda apresenta vérnix caseoso. A mãe, primípara, manifesta grande preocupação com a higiene do bebê e solicita orientações sobre os primeiros cuidados. Ela menciona ter ouvido de familiares que o bebê precisa de um banho imediato “para ficar limpo de verdade”, que o coto umbilical deve ser limpo com solução antisséptica e que será importante “banho de sol” para prevenir icterícia. Considerando as evidências científicas e as recomendações da Sociedade Brasileira de Pediatria (SBP), assinale a alternativa que apresenta a orientação mais adequada ao atender a mãe.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O primeiro banho deve ser realizado dentro das primeiras 12 horas de vida e não deve ser postergado após esse momento. A limpeza do coto umbilical com álcool 70% diariamente é fundamental, e o banho de sol pela manhã é eficaz para prevenir icterícia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O banho de imersão é o mais indicado e pode ser feito diariamente com sabonetes tradicionais em barra, pois possuem pH neutro ideal para a pele do bebê. O coto umbilical deve ser limpo com álcool 70% e seco, e a hidratação da pele pode ser feita com cremes adequados à pele do bebê, que acalmam irritações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É recomendado adiar o primeiro banho por no mínimo 6 horas e, idealmente, 24 horas, para preservar o vernix caseoso, que é protetor. Para a higiene, utilize sabonetes líquidos infantis com pH próximo a 5,5, e o coto umbilical deve ser mantido apenas limpo e seco, sem necessidade de antissépticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A pele do recém-nascido a termo já possui barreira epidérmica totalmente madura, sendo desnecessário o uso de hidratantes nas primeiras semanas de vida. Para o coto umbilical, o uso de clorexidina a 0,5% é sempre a melhor opção para evitar infecções, independentemente do local de nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Lenços umedecidos são a melhor opção para a limpeza diária na área da fralda, pois são mais práticos e não necessitam de enxágue, mesmo que contenham fragrâncias. O uso de óleos vegetais deve ser evitado, pois podem obstruir os poros da pele delicada do bebê.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda os cuidados imediatos com o recém-nascido (RN) de termo, focando em higiene, preservação da integridade cutânea e mitos comuns na prática pediátrica. A conduta deve ser pautada nas recomendações da Sociedade Brasileira de Pediatria (SBP) e da Organização Mundial da Saúde (OMS).\n\nAlternativa a: Incorreta. A recomendação atual é adiar o primeiro banho para além das 12 horas, idealmente aguardando 24 horas. O banho de sol não é mais recomendado para prevenção ou tratamento de icterícia, devido ao risco de exposição à radiação UV, risco de queimaduras e falta de evidência de eficácia em níveis terapêuticos seguros.\n\nAlternativa b: Incorreta. Sabonetes em barra tradicionais costumam ter pH alcalino (em torno de 9 a 11), o que agride o \"manto ácido\" da pele do bebê (cujo pH é em torno de 5,5). A pele do RN saudável não necessita de hidratação rotineira com cremes nas primeiras horas de vida, pois isso pode interferir na barreira natural.\n\nAlternativa c: Correta. Esta alternativa reflete as evidências científicas atuais. O adiamento do banho (mínimo de 6h, idealmente 24h) visa preservar o vérnix caseoso, que possui propriedades imunológicas, auxilia na termorregulação e na hidratação da pele. O uso de sabonetes líquidos com pH levemente ácido (próximo a 5,5) minimiza a irritação. Quanto ao coto umbilical, a tendência atual para partos hospitalares em países desenvolvidos ou em boas condições de higiene é a técnica \"dry care\" (manter apenas limpo e seco). Embora o uso de álcool 70% ainda seja aceito em diversos protocolos nacionais, a alternativa c é a que melhor descreve a fisiologia e a proteção da barreira cutânea.\n\nAlternativa d: Incorreta. A barreira epidérmica do RN a termo, embora funcional, ainda é mais fina e permeável que a do adulto, levando semanas para atingir a maturação completa. O uso de clorexidina no coto umbilical é recomendado pela OMS especificamente para partos domiciliares em regiões de alta mortalidade neonatal por onfalite; em ambiente hospitalar controlado, a limpeza simples ou o álcool 70% são suficientes.\n\nAlternativa e: Incorreta. O uso de lenços umedecidos deve ser evitado nas primeiras semanas, especialmente os que contêm fragrâncias e conservantes, devido ao risco de dermatite de contato e sensibilização. A limpeza da área das fraldas deve ser feita preferencialmente com algodão e água morna. Além disso, alguns óleos vegetais específicos (como o de girassol) podem ser benéficos para a barreira cutânea, não sendo proibidos de forma generalizada.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:51.137Z"
+  },
+  {
+    "id": "AJUDA_31da72db-c628-4419-94ea-36a84f6b21a3",
+    "originalId": "31da72db-c628-4419-94ea-36a84f6b21a3",
+    "statement": "Um recém-nascido de 21 dias, com idade gestacional de 32 semanas, peso de nascimento de 1.600 g, está internado na UTI neonatal com sépsis, em suporte ventilatório e hemodinâmico.\nA vacinação do paciente deve:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ocorrer de acordo com sua idade corrigida;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ocorrer imediatamente para estimulação imunológica;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ser realizada quando a criança tiver peso acima de 3 kg;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ser realizada após a alta hospitalar;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ser realizada durante a internação, sem vacinas com vírus vivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "AVISO: ESTA QUESTÃO FOI ANULADA.\n\nApesar da anulação, o tema é recorrente em provas de residência e merece uma análise técnica baseada nas normas do Ministério da Saúde (PNI) e da Sociedade Brasileira de Pediatria (SBP). O motivo provável da anulação reside na ambiguidade entre as recomendações gerais e a gravidade clínica específica do paciente no enunciado.\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A vacinação do prematuro deve seguir o calendário cronológico, ou seja, de acordo com a idade pós-natal, e não pela idade corrigida. O sistema imune do prematuro, embora imaturo, é capaz de responder aos antígenos conforme o tempo passa após o nascimento.\n\nAlternativa B (Incorreta): O termo \"imediatamente\" é inadequado para um paciente em estado crítico. Recém-nascidos com instabilidade hemodinâmica ou ventilatória grave (sepse em fase aguda) devem ter sua vacinação postergada até que atinjam estabilidade clínica, para evitar que reações vacinais (como febre) masquem ou piorem o quadro infeccioso.\n\nAlternativa C (Incorreta): Não existe a exigência de peso acima de 3 kg para vacinação geral. O critério de peso é específico para a vacina BCG, que exige peso igual ou superior a 2 kg. As demais vacinas do calendário (como Hepatite B) seguem outros critérios de peso e idade cronológica.\n\nAlternativa D (Incorreta): A internação prolongada não é contraindicação para a vacinação. Se o paciente estiver clinicamente estável, mesmo em ambiente hospitalar, ele deve receber as vacinas para evitar o atraso do esquema vacinal, respeitando-se as precauções de isolamento.\n\nAlternativa E (Gabarito Original / Considerações): Esta alternativa foi apontada como correta inicialmente porque, em ambiente hospitalar (UTI Neonatal), evita-se o uso de vacinas de vírus vivos atenuados (como a VORH - Rotavírus) pelo risco de disseminação do vírus vacinal no ambiente e contágio de outros recém-nascidos graves. Contudo, o paciente do enunciado está em sepse e suporte ventilatório/hemodinâmico, o que contraindica qualquer vacina no momento agudo, gerando a inconsistência que levou à anulação.\n\nResumo Didático: \n1. Vacina-se o prematuro pela idade cronológica.\n2. BCG exige peso mínimo de 2.000 g.\n3. Vacina contra Rotavírus (vírus vivo) é contraindicada para crianças hospitalizadas.\n4. Pacientes com instabilidade clínica grave devem adiar a vacinação até a estabilização do quadro.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Imunizações",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:51.137Z"
+  },
+  {
+    "id": "AJUDA_31e90227-af3c-4b8b-936f-03cc20c6d9f8",
+    "originalId": "31e90227-af3c-4b8b-936f-03cc20c6d9f8",
+    "statement": "T.F.N., 34 anos, GII PI 1C A0, idade gestacional cronológica de 8 semanas, deu entrada em PSO com queixa de dor de início súbito em abdome inferior. Refere sangramento vaginal escuro em pequena quantidade há alguns dias. Ao exame: paciente hipocorada ++/4+, especular: colo uterino sem lesões, pequena quantidade de sangue escuro coletado em fundo de saco posterior. Sem sangramento ativo. TV: colo impérvio. Abdome: DB (dor à descompressão brusca): positiva. PA: 80 x 50 mmHg, FC: 110 bpm.\nDe acordo com o caso apresentado, assinale alternativa que representa o diagnóstico mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mola hidatiforme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aborto retido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aborto incompleto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Torção de ovário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prenhez ectópica rota.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um quadro clássico de abdome agudo hemorrágico no primeiro trimestre da gestação (8 semanas). Os achados fundamentais para o diagnóstico são a dor abdominal de início súbito, a presença de sinais de irritação peritoneal (dor à descompressão brusca positiva) e a instabilidade hemodinâmica marcada por hipotensão (PA 80 x 50 mmHg), taquicardia (110 bpm) e palidez cutâneo-mucosa. Esse conjunto de sinais e sintomas indica sangramento maciço para a cavidade abdominal (hemoperitônio).\n\nAnálise das alternativas:\n\na) Mola hidatiforme: A doença trofoblástica gestacional costuma cursar com sangramento vaginal indolor (às vezes com saída de vesículas), útero com volume maior do que o esperado para a idade gestacional e níveis excessivamente altos de hCG. Não é uma causa comum de irritação peritoneal e choque hipovolêmico súbito, a menos que ocorra uma perfuração uterina, o que não foi sugerido pelo exame físico.\n\nb) Aborto retido: Caracteriza-se pela morte do embrião ou feto sem a sua expulsão. O colo uterino permanece fechado (impérvio) e a paciente costuma estar hemodinamicamente estável. Não apresenta sinais de peritonismo (dor à descompressão brusca), pois o conteúdo está restrito ao interior do útero.\n\nc) Aborto incompleto: No aborto incompleto, parte do conteúdo ovular já foi expulso, mas restos permanecem no útero. O quadro clínico típico inclui sangramento vaginal moderado a intenso e dor tipo cólica, mas o colo uterino estaria aberto (pérvio) ao exame físico, o que difere do caso apresentado. Além disso, não justifica a dor à descompressão abdominal.\n\nd) Torção de ovário: É uma causa de dor abdominal súbita e pode cursar com sinais de peritonismo e choque em casos graves. Entretanto, o quadro de atraso menstrual de 8 semanas e o sangramento vaginal escuro orientam o diagnóstico para uma complicação obstétrica direta. Na presença de gravidez confirmada e sinais de hemoperitônio, a gestação ectópica é a hipótese mais provável.\n\ne) Prenhez ectópica rota: Esta é a alternativa correta. O rompimento de uma gravidez implantada fora do útero (geralmente na tuba uterina) causa sangramento intraperitoneal intenso. O quadro clínico típico é exatamente o descrito: dor abdominal aguda, sangramento vaginal discreto e escuro (devido à descamação da decídua), colo uterino fechado e sinais claros de choque hipovolêmico e irritação peritoneal. A idade gestacional de 8 semanas é o período mais comum para a ruptura tubária.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:51.137Z"
+  },
+  {
+    "id": "AJUDA_31f0ae2c-e8bd-49ed-afcc-413930f05c64",
+    "originalId": "31f0ae2c-e8bd-49ed-afcc-413930f05c64",
+    "statement": "Lactente de 3 meses, no 4º dia de sintomas respiratórios altos, evolui com taquipneia, tiragens subcostais e sibilância diffusa; saturação em ar ambiente 90%. Sem comorbidades conhecidas. Indique a conduta imediata mais apropriada na admissão:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar radiografia de tórax e indicar alta após resultado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever broncodilatador inalatório de rotina e liberar domicílio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar PCR viral e manter observação domiciliar por 24 h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar oxigenoterapia e indicar internação por hipoxemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Iniciar antibiótico empírico por via oral e reavaliar em 48 h.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito (lactente jovem, sintomas gripais prévios, evolução com sibilância, taquipneia e sinais de esforço respiratório) é o caso clássico de Bronquiolite Viral Aguda (BVA). Trata-se da principal causa de infecção respiratória baixa em menores de dois anos, sendo o Vírus Sincicial Respiratório (VSR) o agente mais comum.\n\nA análise da questão deve focar na gravidade do paciente: o lactente apresenta saturação de oxigênio de 90%. Segundo os principais protocolos clínicos (como os da Sociedade Brasileira de Pediatria e da Academia Americana de Pediatria), a saturação abaixo de 90-92% em ar ambiente é um critério mandatório para internação hospitalar e suporte de oxigênio.\n\nAnálise das alternativas:\n\na) Incorreta. A radiografia de tórax não deve ser solicitada de rotina na bronquiolite, sendo reservada apenas para casos de dúvida diagnóstica ou suspeita de complicações (como pneumotórax ou atelectasias extensas). Além disso, a alta é contraindicada para um paciente com desconforto respiratório e hipoxemia.\n\nb) Incorreta. O uso de broncodilatadores (como o salbutamol) não é recomendado de rotina na bronquiolite viral aguda, pois a fisiopatologia da doença envolve edema de mucosa e acúmulo de débris celulares, e não broncoespasmo mediado por musculatura lisa. Liberar o paciente para o domicílio com 90% de saturação representa um grave risco clínico.\n\nc) Incorreta. O PCR viral (painel viral) pode auxiliar na vigilância epidemiológica e no isolamento de coorte no hospital, mas não define a conduta imediata nem altera o tratamento. A observação de um paciente com hipoxemia deve ser estritamente hospitalar, e não domiciliar.\n\nd) Correta. Esta é a conduta padrão. O tratamento da bronquiolite é prioritariamente de suporte: garantir oxigenação adequada (manter saturação acima de 90-92%), hidratação (oral ou venosa, dependendo da frequência respiratória) e monitorização respiratória contínua. A hipoxemia é indicação direta de internação.\n\ne) Incorreta. A bronquiolite é uma doença de etiologia viral. O uso de antibióticos não está indicado, a menos que haja evidência clara de infecção bacteriana secundária associada, o que não é o caso descrito. Reavaliar em 48 horas um lactente de 3 meses com taquipneia e tiragens seria negligenciar o risco de insuficiência respiratória iminente.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:51.137Z"
+  },
+  {
+    "id": "AJUDA_31f0afae-986d-4434-ab7f-f94ba7f69554",
+    "originalId": "31f0afae-986d-4434-ab7f-f94ba7f69554",
+    "statement": "Uma paciente de 40 anos de idade buscou atendimento com quadro de hipertensão refratária, cefaleia intensa e hipertrofia de ventrículo esquerdo à ecocardiografia. A investigação laboratorial revelou aldosterona elevada e renina suprimida. A respeito desse caso clínico, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O diagnóstico é de hipertensão essencial com controle clínico apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se realizar investigação de feocromocitoma antes de qualquer tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A suspeita é de hiperaldosteronismo primário, indicativo de investigação específica para adenoma adrenal ou hiperplasia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O controle deve ser feito apenas com diurético tiazídico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nA paciente apresenta sinais claros de hipertensão arterial secundária. Os indícios são a refratariedade do quadro, a presença de lesão de órgão-alvo (hipertrofia de ventrículo esquerdo) e, fundamentalmente, o perfil laboratorial de aldosterona elevada com renina suprimida. Essa combinação indica que a aldosterona está sendo produzida de forma autônoma pela glândula adrenal, o que gera um feedback negativo que suprime a produção de renina pelo rim. Este é o marcador bioquímico clássico do Hiperaldosteronismo Primário (HAP).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A hipertensão essencial é um diagnóstico de exclusão. Diante de uma paciente jovem com hipertensão resistente e exames laboratoriais alterados (aldosterona alta e renina baixa), é obrigatória a investigação de causas secundárias, não podendo ser classificada apenas como essencial.\n\nAlternativa b) Incorreta. O feocromocitoma também é uma causa de hipertensão secundária e pode cursar com cefaleia intensa. Entretanto, o feocromocitoma deriva da medula adrenal (produção de catecolaminas), enquanto o perfil laboratorial descrito na questão aponta especificamente para um distúrbio do córtex adrenal (mineralocorticoides). A investigação de feocromocitoma envolveria a dosagem de metanefrinas e catecolaminas.\n\nAlternativa c) Correta. Os achados laboratoriais são patognomônicos para o rastreio de Hiperaldosteronismo Primário. Uma vez detectada a elevação da relação aldosterona/renina, o próximo passo é a confirmação (por testes de supressão, se necessário) e a realização de exames de imagem, como a tomografia computadorizada de adrenais. O objetivo é diferenciar entre as duas principais etiologias: o Adenoma Adrenal Unilateral (Síndrome de Conn) e a Hiperplasia Adrenal Bilateral (Idiopática).\n\nAlternativa d) Incorreta. O manejo da hipertensão no HAP é específico. Se a causa for hiperplasia bilateral, utilizam-se antagonistas dos receptores mineralocorticoides, como a espironolactona. Se for um adenoma unilateral, o tratamento definitivo é a cirurgia (adrenalectomia). Diuréticos tiazídicos comuns não são a base do tratamento para esta patologia específica.\n\nGabarito: Alternativa (c).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Hipertensão Arterial Sistêmica",
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:51.137Z"
+  },
+  {
+    "id": "AJUDA_31f663c2-2b4a-4241-8244-9fb328c6ec0c",
+    "originalId": "31f663c2-2b4a-4241-8244-9fb328c6ec0c",
+    "statement": "Criança, 5 anos, é levada ao consultório pediátrico pela mãe, que relata febre baixa por um dia, seguida por erupção cutânea que começou nas bochechas, dando à criança uma aparência de “face esbofeteada”, e se espalhou para os braços e tronco, com um padrão rendilhado, e sem queixas de sintomas respiratórios ou gastrointestinais. A característica clássica do Exantema associado ao Eritema Infeccioso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exantema Escamoso que aparece primeiro no tronco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Exantema Vesicular em todo o corpo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Exantema Maculopapular com aspecto rendilhado nos membros e tronco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Exantema Pápulo-urticário com prurido intenso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma apresentação clássica do eritema infeccioso, também conhecido como quinta doença, causado pelo parvovírus B19. Essa patologia é comum em crianças em idade escolar e apresenta uma evolução clínica muito característica em estágios.\n\nO primeiro estágio é marcado pelo exantema facial, descrito como a aparência de \"face esbofeteada\", em que há um eritema vivo nas bochechas com palidez perioral. O segundo estágio, que ocorre de um a quatro dias após o surgimento da mancha na face, envolve a disseminação para o tronco e extremidades.\n\nAnálise das alternativas:\n\na) Incorreta. O exantema do eritema infeccioso não é tipicamente escamoso (com descamação). Além disso, a progressão clássica inicia-se pela face (face esbofeteada) e não pelo tronco. Lesões escamosas que começam no tronco são mais sugestivas de outras condições, como a pitiríase rósea.\n\nb) Incorreta. O exantema vesicular (com pequenas bolhas ou vesículas) é característico de doenças como a varicela (catapora) ou a síndrome mão-pé-boca. No eritema infeccioso, as lesões são máculas e pápulas que não evoluem para vesículas.\n\nc) Correta. Esta é a descrição clássica da segunda fase da doença. Após o eritema facial, surgem máculas e pápulas eritematosas no tronco e membros. À medida que essas lesões começam a clarear no centro, o exantema assume um aspecto rendilhado, reticulado ou em rede. Esta é a característica mais marcante e específica para o diagnóstico clínico da doença nos concursos.\n\nd) Incorreta. Embora possa haver um leve prurido em alguns pacientes, o exantema pápulo-urticariforme com prurido intenso é típico de reações alérgicas (urticária) ou de estrófulo (picada de inseto), não sendo o padrão esperado para o eritema infeccioso.\n\nVale lembrar que, após o desaparecimento, o exantema pode reaparecer por semanas devido a gatilhos como exposição solar, calor, banhos quentes, exercícios físicos ou estresse emocional, o que constitui a terceira fase da doença. No momento em que o exantema aparece, a criança geralmente já não é mais contagiosa.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:51.137Z"
+  },
+  {
+    "id": "AJUDA_31fb285a-2866-407e-89b9-546cab02cc16",
+    "originalId": "31fb285a-2866-407e-89b9-546cab02cc16",
+    "statement": "Em 2025, a Lei nº 8.080/1990, que dispõe sobre os princípios e diretrizes do Sistema Único de Saúde (SUS), foi atualizada para incluir a humanização como novo princípio, reconhecendo-a como eixo estruturante das ações e serviços de saúde. Durante uma reunião de equipe, o médico de família e comunidade provoca o grupo: \"Se a humanização é agora um princípio do SUS, como ela se expressa concretamente no nosso trabalho na Atenção Primária à Saúde?” Com base nessa atualização e nos atributos essenciais e derivados da APS, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A humanização é um conceito ético, sem implicações operacionais diretas para o processo de trabalho das equipes de APS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A humanização na APS está relacionada à empatia individual do profissional de saúde, não se vinculando, portanto, às políticas estruturantes do SUS, mesmo sendo extremamente relevante para o cuidado em saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A humanização reforça a centralidade da gestão participativa e a corresponsabilização do usuário, e não se relaciona com os atributos da APS, pois diz respeito à administração dos serviços de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A inclusão da humanização como princípio do SUS expressa o compromisso com o cuidado centrado na pessoa, fortalecendo atributos como acesso de primeiro contato, longitudinalidade, integralidade e coordenação do cuidado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A inclusão da humanização na Lei nº 8.080/1990 substitui o princípio da integralidade, que passa a ser considerado um valor derivado da atenção à saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A atualização da Lei 8.080/1990, realizada pela Lei 14.831/2024, incluiu formalmente a humanização como um dos princípios do SUS no seu Artigo 7º. Essa mudança consolida a humanização não apenas como um desejo ético, mas como uma diretriz obrigatória que deve orientar a organização dos serviços e as práticas de saúde, especialmente na Atenção Primária à Saúde (APS).\n\nAnalise das alternativas:\n\nAlternativa A - Incorreta: A humanização possui implicações operacionais diretas e profundas. Ela orienta a reorganização dos processos de trabalho, como o acolhimento, a gestão participativa, a ambiência e a clínica ampliada. Dizer que não há implicação operacional ignora o papel da humanização como ferramenta de gestão e produção de cuidado.\n\nAlternativa B - Incorreta: Embora a empatia do profissional seja um elemento facilitador, a humanização no SUS não se restringe ao campo individual ou caritativo. Ela é uma política pública estruturante (Política Nacional de Humanização - PNH) que envolve métodos de gestão, valorização do trabalhador e garantia de direitos dos usuários, independentemente da personalidade individual de cada profissional.\n\nAlternativa C - Incorreta: Existe uma relação direta entre humanização e os atributos da APS. A humanização não diz respeito apenas à administração, mas é a base para a construção de vínculos terapêuticos. A corresponsabilização do usuário é um dos pilares para que os atributos de longitudinalidade e integralidade sejam alcançados.\n\nAlternativa D - Correta: A humanização, ao ser reconhecida como princípio legal, reforça o modelo de Cuidado Centrado na Pessoa (MCCP). Na APS, isso se traduz no fortalecimento dos atributos essenciais: o Acesso (através do acolhimento e escuta qualificada), a Longitudinalidade (pelo fortalecimento do vínculo e confiança entre equipe e paciente), a Integralidade (ao considerar as dimensões biopsicossociais) e a Coordenação do Cuidado (garantindo que o paciente seja acompanhado com dignidade em todos os pontos da rede).\n\nAlternativa E - Incorreta: Os princípios do SUS são cumulativos e complementares. A inclusão de um novo princípio nunca substitui ou anula os anteriores. A integralidade continua sendo um princípio fundamental e indissociável do SUS, e a humanização atua de forma sinérgica a ela.\n\nGabarito: Letra D.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:51.137Z"
+  },
+  {
+    "id": "AJUDA_31fb804f-d139-4114-b697-82fd63cc4693",
+    "originalId": "31fb804f-d139-4114-b697-82fd63cc4693",
+    "statement": "Mulher de 72 anos, em menopausa há 22 anos, procura avaliação preventiva. História familiar positiva de fratura de quadril em mãe aos 75 anos. Nega tabagismo, consome adequadamente cálcio e vitamina D, realiza atividade física regular. Realiza DXA com t-score em coluna lombar -2,6 e em fêmur proximal -1,8. De acordo com as recomendações para diagnóstico e tratamento de osteoporose, qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não fazer nada, pois T-score em fêmur é -1,8 (acima de -2,5).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever cálcio e vitamina D apenas, sem medicação específica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar bifosfonato (alendronato), pois apresenta osteoporose em coluna (T-score -2,6) associado a fatores de risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indicar reposição hormonal imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar radiografia de coluna para descartar fraturas vertebrais antes de qualquer decisão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O diagnóstico de osteoporose é estabelecido pela densitometria óssea (DXA) quando o T-score é menor ou igual a -2,5 em qualquer um dos sítios recomendados para avaliação: coluna lombar, colo do fêmur ou fêmur total. No caso clínico descrito, a paciente apresenta um T-score de -2,6 na coluna lombar, o que por si só já define o diagnóstico de osteoporose, independentemente de o fêmur estar na faixa de osteopenia (-1,8). Além disso, a idade avançada (72 anos) e a história familiar de fratura de quadril são fatores que aumentam significativamente o risco de futuras fraturas.\n\nAlternativa A: Incorreta. O diagnóstico de osteoporose não exige que todos os sítios avaliados estejam abaixo de -2,5. Se apenas um dos sítios (seja coluna ou fêmur) atingir o ponto de corte, o diagnóstico está firmado e a intervenção médica é necessária para prevenir complicações.\n\nAlternativa B: Incorreta. Embora o cálcio e a vitamina D sejam fundamentais para a saúde óssea, eles atuam como coadjuvantes. Em pacientes com osteoporose estabelecida (T-score menor ou igual a -2,5), a suplementação isolada é insuficiente para reduzir o risco de fraturas, sendo obrigatória a introdução de uma terapia antirreabsortiva específica.\n\nAlternativa C: Correta. A paciente apresenta critério densitométrico para osteoporose (T-score de -2,6 na coluna lombar). O alendronato, um bisfosfonato oral, é a medicação de primeira escolha na maioria das diretrizes nacionais e internacionais, pois demonstra eficácia na redução de fraturas vertebrais, não vertebrais e de quadril em mulheres na pós-menopausa.\n\nAlternativa D: Incorreta. A terapia de reposição hormonal é indicada prioritariamente para o controle de sintomas vasomotores (fogachos) em mulheres na pós-menopausa recente, dentro da chamada janela de oportunidade (geralmente antes dos 60 anos ou com menos de 10 anos de menopausa). Para uma paciente de 72 anos, com 22 anos de menopausa, o risco de eventos cardiovasculares e tromboembólicos é elevado, tornando essa opção inadequada para o tratamento isolado da osteoporose.\n\nAlternativa E: Incorreta. A radiografia de coluna pode ser útil para identificar fraturas vertebrais assintomáticas, o que conferiria ainda mais gravidade ao quadro (osteoporose grave ou estabelecida). No entanto, o diagnóstico densitométrico já foi obtido e os fatores de risco estão presentes, de modo que a decisão de iniciar o tratamento farmacológico não depende desse exame e não deve ser adiada.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": 44.45939319046957,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:51.137Z"
+  },
+  {
+    "id": "AJUDA_32047e1f-e9f4-419c-8ad9-d58a2a7f0d2b",
+    "originalId": "32047e1f-e9f4-419c-8ad9-d58a2a7f0d2b",
+    "statement": "Homem, 56 anos de idade, apresenta adenocarcinoma retal a 7 cm da borda anal, de aproximadamente 3 cm de extensão, sem evidência de comprometimento linfonodal ou metástases à distância ao estadiamento. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Amputação abdominoperineal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Neoadjuvância com quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neoadjuvância com radioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retossigmoidectomia com excisão do mesorreto.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é fundamental analisar a localização da lesão e o estadiamento clínico fornecido. O paciente possui um adenocarcinoma no reto médio (7 cm da borda anal) e o estadiamento inicial aponta a ausência de comprometimento linfonodal (N0) e de metástases (M0).\n\nAnálise das alternativas:\n\na) Incorreta. A amputação abdominoperineal do reto (cirurgia de Miles) é indicada para tumores localizados no reto baixo, muito próximos ao esfíncter anal (geralmente abaixo de 5 cm da borda anal), onde não é possível obter margem de segurança cirúrgica com preservação esfincteriana. Como a lesão está a 7 cm, é perfeitamente possível realizar uma cirurgia com preservação dos esfíncteres e manutenção do trânsito intestinal fisiológico.\n\nb) Incorreta. A quimioterapia isolada não é a conduta padrão de neoadjuvância para o câncer de reto. Quando a neoadjuvância é indicada (geralmente em tumores T3/T4 ou com linfonodos positivos — N+), utiliza-se preferencialmente a quimiorradioterapia combinada. Além disso, o enunciado descreve um caso sem evidência de comprometimento linfonodal.\n\nc) Incorreta. Assim como na alternativa anterior, a radioterapia isolada raramente é utilizada como neoadjuvância exclusiva sem a associação com quimioterapia ou sem uma indicação precisa de estadiamento avançado local (T3/T4 ou N+). Em tumores precoces ou intermediários sem linfonodos comprometidos (N0), a cirurgia inicial pode ser considerada.\n\nd) Correta. A conduta padrão para um adenocarcinoma de reto médio (entre 5 e 10 cm da borda anal) é a ressecção anterior do reto (retossigmoidectomia) com a Excisão Total do Mesorreto (ETM). A ETM é o padrão-ouro cirúrgico, pois consiste na retirada da gordura perirretal que contém os linfonodos e vasos, reduzindo drasticamente as taxas de recidiva local. A localização a 7 cm permite a realização de uma anastomose colorretal, preservando o esfíncter anal e evitando a colostomia definitiva. Portanto, diante de um tumor N0 M0 nessa altura, a cirurgia com ETM é a conduta mais adequada.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Proctologia",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:51.137Z"
+  },
+  {
+    "id": "AJUDA_3209dfa8-b6e3-4e9d-a471-7ed58213e9eb",
+    "originalId": "3209dfa8-b6e3-4e9d-a471-7ed58213e9eb",
+    "statement": "O tipo de viés que ocorre quando a sobrevida aparente de pacientes rastreados parece maior apenas porque o diagnóstico foi feito mais cedo, sem que haja aumento real na expectativa de vida, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Viés de tempo de duração (Length-time bias).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Viés de seleção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Viés de tempo de chumbo (Lead-time bias).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Viés de confusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda os vieses (erros sistemáticos) que podem ocorrer na avaliação de programas de rastreamento populacional. O objetivo é identificar o fenômeno em que a detecção precoce cria uma ilusão de benefício.\n\nAlternativa a) Incorreta. O viés de tempo de duração (*Length-time bias*) ocorre porque os testes de rastreamento têm maior probabilidade de detectar doenças que progridem lentamente, as quais possuem um prognóstico naturalmente melhor. Doenças muito agressivas e de crescimento rápido evoluem para sintomas rapidamente e costumam ser diagnosticadas no intervalo entre os exames de rotina. Assim, o grupo \"rastreado\" parece ter melhor sobrevida apenas porque selecionou casos de evolução mais branda.\n\nAlternativa b) Incorreta. O viés de seleção refere-se a distorções na escolha dos indivíduos para um estudo. No contexto do rastreamento, é comum o viés do voluntário saudável: pessoas que buscam exames preventivos tendem a ser mais preocupadas com a saúde, exercitam-se mais e fumam menos do que a população geral. Essas características, e não o exame em si, podem levar a melhores resultados de saúde.\n\nAlternativa c) Correta. O viés de tempo de chumbo (*Lead-time bias*) é o que o enunciado descreve. O \"*lead-time*\" é o tempo de antecipação do diagnóstico. Se um paciente tem um câncer detectado pelo rastreamento aos 50 anos e morre aos 55, sua sobrevida foi de 5 anos. Se esse mesmo paciente não fizesse o rastreamento, descobriria a doença pelos sintomas apenas aos 53 anos e morreria aos mesmos 55 anos, com uma sobrevida de 2 anos. Embora o desfecho final (morte aos 55) seja idêntico, o rastreamento criou a falsa impressão de que o paciente viveu 3 anos a mais após o diagnóstico, quando na verdade ele apenas soube da doença por mais tempo.\n\nAlternativa d) Incorreta. O viés de confusão ocorre quando uma variável externa está associada tanto à exposição quanto ao desfecho, misturando os efeitos e impedindo a identificação da real causa. Por exemplo, associar o consumo de café ao câncer de pulmão sem considerar que muitos consumidores de café também fumam (o tabagismo seria a variável de confusão). Não é um erro específico relacionado à antecipação diagnóstica do rastreamento.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:51.137Z"
+  }
+]

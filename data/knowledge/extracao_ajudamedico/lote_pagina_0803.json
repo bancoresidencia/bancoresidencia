@@ -1,0 +1,489 @@
+[
+  {
+    "id": "AJUDA_df48dd9e-2e0a-401b-b5b5-eba511e59a84",
+    "originalId": "df48dd9e-2e0a-401b-b5b5-eba511e59a84",
+    "statement": "Assinale a assertiva correta sobre o sangramento uterino anormal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O sangramento uterino anormal por disfunção ovulatória (SUA-O) está associado a alterações do eixo hipotálamo-hipófise-ovário ou a endocrinopatias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O sangramento uterino anormal por adenomiose (SUA-A) é classificado como não estrutural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A investigação inicial do sangramento uterino anormal deve incluir dosagem de TSH, T4, FSH, LH e estradiol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A biópsia de endométrio está indicada para paciente em menacme que apresenta espessura endometrial com mais de 5 mm pela ultrassonografia transvaginal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender essa questão, devemos utilizar a classificação PALM-COEIN, estabelecida pela Federação Internacional de Ginecologia e Obstetrícia (FIGO), que padroniza as causas de Sangramento Uterino Anormal (SUA).\n\nAlternativa (a) Correta: O Sangramento Uterino Anormal por Disfunção Ovulatória (SUA-O) engloba os casos em que a paciente não ovula regularmente ou tem ciclos anovulatórios. Isso geralmente decorre de falhas na comunicação do eixo hipotálamo-hipófise-ovário, sendo comum nos extremos da vida reprodutiva (adolescência e perimenopausa). Além disso, endocrinopatias como a Síndrome dos Ovários Policísticos (SOP), hipotireoidismo, hipertireoidismo e hiperprolactinemia são causas frequentes de disfunção ovulatória.\n\nAlternativa (b) Incorreta: Na classificação PALM-COEIN, as causas são divididas em estruturais (PALM: Pólipo, Adenomiose, Leiomioma e Malignidade) e não estruturais (COEIN: Coagulopatia, Ovulatória, Endometrial, Iatrogênica e Não classificada). Portanto, a adenomiose (letra A do PALM) é classificada obrigatoriamente como uma alteração estrutural, pois envolve a presença de tecido endometrial no miométrio, identificável por exames de imagem ou exame histopatológico.\n\nAlternativa (c) Incorreta: A investigação inicial do SUA deve ser guiada pela história clínica e exame físico. O primeiro passo fundamental em mulheres em idade fértil é a exclusão de gravidez (Beta-hCG). Outros exames iniciais incluem hemograma (para avaliar anemia e plaquetas) e ultrassonografia transvaginal. A dosagem de TSH e T4 livre é indicada se houver suspeita clínica, mas a dosagem rotineira de FSH, LH e estradiol não faz parte do protocolo inicial para a maioria dos casos de SUA, sendo reservada para situações específicas, como suspeita de falência ovariana prematura ou transição menopausal.\n\nAlternativa (d) Incorreta: Na pós-menopausa, um endométrio com espessura superior a 4 ou 5 mm é, de fato, um sinal de alerta que exige investigação por biópsia ou histeroscopia. No entanto, na paciente em menacme (idade fértil), o endométrio sofre variações fisiológicas constantes durante o ciclo menstrual, podendo chegar a 14-16 mm na fase lútea sem que isso represente patologia. Nessa faixa etária, a biópsia está indicada prioritariamente em pacientes com mais de 45 anos, ou em pacientes mais jovens com fatores de risco para câncer de endométrio (como obesidade, SOP ou sangramento persistente sem resposta ao tratamento clínico), independentemente do valor absoluto da espessura ultrassonográfica.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:39.047Z"
+  },
+  {
+    "id": "AJUDA_df51819b-fb6f-4ccc-a916-d89c3ddf79b3",
+    "originalId": "df51819b-fb6f-4ccc-a916-d89c3ddf79b3",
+    "statement": "Mulher, 56 anos de idade, possui diagnóstico de artrite reumatoide há 10 anos, já tendo realizado diversos tipos de tratamento e, diante da refratariedade dos sintomas, irá iniciar uso de adalimumabe (anti-TNFα). Foi encaminhada para avaliação de profilaxia para tuberculose e não apresenta sintomas respiratórios. Radiografia de tórax representada na imagem. Qual é a conduta mais adequada neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar imediatamente tratamento preventivo para tuberculose com prescrição de 3HP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Liberar para o uso de adalimumabe, pois não é necessária a realização de tratamento preventivo para tuberculose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar tomografia de tórax para descartar tuberculose ativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar realização de prova tuberculínica ou IGRA, para posterior avaliação de indicação de tratamento preventivo para tuberculose.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o protocolo de rastreamento de Infecção Latente por Tuberculose (ILTB) em pacientes que iniciarão terapia com medicamentos biológicos, especificamente os inibidores do TNF-alfa (como o adalimumabe). Esses medicamentos aumentam significativamente o risco de reativação de focos latentes de Mycobacterium tuberculosis.\n\nAnálise da Imagem:\nA radiografia de tórax apresentada nas incidências em PA (póstero-anterior) e perfil encontra-se normal. Não há evidências de opacidades parenquimatosas, linfonodomegalias hilares, derrames pleurais ou, crucialmente, sinais de sequelas de tuberculose (como granulomas calcificados ou fibrose apical).\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. O tratamento preventivo da tuberculose (antigamente chamado de quimioprofilaxia) não deve ser iniciado de forma empírica apenas pelo uso do biológico. É necessário primeiro comprovar a infecção latente por meio de testes imunológicos, já que a radiografia de tórax é normal.\n\nAlternativa b) Incorreta. Liberar o uso do adalimumabe sem completar o rastreamento de ILTB é uma conduta insegura. O risco de reativação de tuberculose grave e disseminada em pacientes usando anti-TNF sem a devida profilaxia é elevado.\n\nAlternativa c) Incorreta. A tomografia de tórax não é o exame de escolha para rastreamento de ILTB em pacientes assintomáticos com radiografia de tórax normal. Ela seria reservada para casos em que a radiografia fosse duvidosa ou houvesse sintomas respiratórios sugestivos de doença ativa.\n\nAlternativa d) Correta. De acordo com os protocolos do Ministério da Saúde e das sociedades brasileiras de Reumatologia e Pneumologia, o rastreamento de ILTB consiste em: avaliação clínica (ausência de sintomas), radiografia de tórax e a realização de um teste imunológico, que pode ser a Prova Tuberculínica (PPD) ou o IGRA (Ensaio de Liberação de Interferon-gama). Como a paciente é assintomática e tem radiografia normal, o próximo passo indispensável é verificar a positividade de um desses testes. Se o PPD for maior ou igual a 5 mm (ponto de corte para imunossuprimidos ou candidatos a biológicos) ou o IGRA for positivo, o tratamento preventivo estará indicado antes ou simultaneamente ao início do adalimumabe.\n\nResumo da conduta: Diante de uma candidata ao uso de anti-TNF com radiografia de tórax normal e sem sintomas, deve-se realizar o PPD ou IGRA para definir a necessidade de tratamento preventivo.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Artrite Reumatoide",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f66b0c926a9c9e7a9baef6da6a3b37f1be4ae38b33a29aaed2eef5a9887983cf.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_df51819b-fb6f-4ccc-a916-d89c3ddf79b3_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:39.509Z"
+  },
+  {
+    "id": "AJUDA_df5475f8-fd25-4776-81b6-2dc8776c8bd3",
+    "originalId": "df5475f8-fd25-4776-81b6-2dc8776c8bd3",
+    "statement": "Mulher de 60 anos, com história pregressa de HAS, é internada com dispneia súbita, dor precordial de forte intensidade, associada à cianose e taquicardia. Apresenta extremidades frias e perfusão tecidual alterada. A PA é de 90x60mmHg, sem variação respiratória, e a FC de 128bpm, regular. Ao exame físico, a paciente está desconfortável, não consegue deitar a zero grau e apresenta turgência jugular a 45°. É passado um cateter de Swan-Ganz que mostra diminuição do débito cardíaco, pressão capilar pulmonar normal e aumento da resistência vascular periférica. O tipo de choque mais provável é por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "infarto agudo do miocárdio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "causa distributiva séptica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tamponamento cardíaco",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "embolia pulmonar",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve uma paciente em estado de choque obstrutivo. Os pontos-chave para o diagnóstico são o início súbito dos sintomas (dispneia e dor precordial), sinais de falência do ventrículo direito (turgência jugular) e, principalmente, os dados do cateter de Swan-Ganz. No choque obstrutivo por embolia pulmonar maciça, há uma obstrução ao fluxo sanguíneo nos pulmões, o que impede que o sangue chegue adequadamente ao lado esquerdo do coração. Isso resulta em débito cardíaco baixo, resistência vascular periférica aumentada (como mecanismo compensatório) e uma pressão capilar pulmonar (PCP) normal ou baixa, pois a PCP reflete a pressão no átrio esquerdo, que está \"vazio\" devido à obstrução anterior.\n\nAnálise das alternativas:\n\na) Infarto agudo do miocárdio: O choque cardiogênico secundário ao infarto do ventrículo esquerdo geralmente apresenta pressão capilar pulmonar (PCP) elevada, refletindo a congestão retrógrada para os pulmões. Embora um infarto isolado do ventrículo direito pudesse cursar com PCP normal, a tríade de dispneia súbita, cianose e dor precordial súbita em uma paciente com turgência jugular é muito mais sugestiva de embolia pulmonar.\n\nb) Causa distributiva séptica: O choque séptico é caracterizado por uma diminuição da resistência vascular periférica devido à vasodilatação sistêmica generalizada. Além disso, na fase inicial (choque hiperdinâmico), o débito cardíaco costuma estar aumentado, o que contraria os achados do cateter de Swan-Ganz apresentados no caso (baixo débito e resistência aumentada).\n\nc) Tamponamento cardíaco: Embora o tamponamento também cause choque obstrutivo e turgência jugular, ele apresenta características hemodinâmicas específicas que não condizem com a questão. No tamponamento, ocorre a \"equalização das pressões diastólicas\", o que elevaria a pressão capilar pulmonar. Além disso, o exame físico tipicamente revelaria o pulso paradoxal (variação respiratória na pressão arterial), que a questão explicitamente afirma estar ausente.\n\nd) Embolia pulmonar: Esta é a alternativa correta. A embolia pulmonar maciça causa um aumento súbito da pós-carga do ventrículo direito, levando à sua falência (cor pulmonale agudo). Isso explica a turgência jugular, a hipotensão e o baixo débito cardíaco. Como a obstrução ocorre nas artérias pulmonares (antes de chegar aos capilares pulmonares e ao átrio esquerdo), a pressão capilar pulmonar permanece normal ou baixa, validando os dados hemodinâmicos fornecidos.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Choque",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:39.510Z"
+  },
+  {
+    "id": "AJUDA_df56c6cd-2fc7-433b-ba1e-e13ebf069648",
+    "originalId": "df56c6cd-2fc7-433b-ba1e-e13ebf069648",
+    "statement": "“No Brasil, o programa de rastreamento organizado baseado na detecção de testes de DNA-HPV oncogênico implementado em Idaiatuba (SP) foi capaz de detectar proporcionalmente quatro vezes mais neoplasia intraepitelial cervical grau 2 ou mais grave (NIC2+) e 1,5 vezes mais cânceres na primeira rodada de rastreamento do que a citologia no período imediatamente anterior. Dos casos de doença invasiva, 87% foram detectados no estágio FIGO I, em oposição a 67% em estágios avançados detectados no período imediatamente anterior.” O fato de o teste de DNA-HPV ter identificado proporcionalmente quatro vezes mais casos comprovados de NIC2+ e 1,5 vez mais neoplasias de colo uterino, comparado ao período anterior com citologia, pode sugerir que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O teste de DNA-HPV tem menor especificidade do que a citologia, produzindo mais falso-positivos. Por isso, observou-se um aumento dos números de NIC2 positiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O teste de DNA-HPV tem maior sensibilidade, pois identifica corretamente mais pessoas que têm NIC2 ou câncer de colo uterino em comparação com a citologia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O teste de DNA-HPV tem menor valor preditivo negativo, pois encontra mais doenças entre as pessoas com teste negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O teste de DNA-HPV tem maior valor preditivo positivo, pois identifica mais pessoas com resultado negativo que realmente não têm a doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda os conceitos de epidemiologia clínica aplicados ao rastreamento do câncer de colo uterino. Para resolver o problema, é necessário compreender as definições de sensibilidade, especificidade e valores preditivos.\n\nA alternativa (a) está incorreta. A especificidade é a capacidade de um teste ser negativo naquelas pessoas que não possuem a doença. Um teste com menor especificidade gera mais resultados falso-positivos, ou seja, pessoas que testam positivo, mas não têm a lesão. No entanto, o enunciado destaca que o teste de DNA-HPV detectou mais casos comprovados de NIC2+ e câncer. O aumento de casos reais confirmados é reflexo da capacidade de detecção da doença, e não de erros de falso-positivo.\n\nA alternativa (b) está correta. A sensibilidade é a proporção de indivíduos com a doença que apresentam um resultado de teste positivo. Quando um novo método de rastreamento (DNA-HPV) consegue identificar proporcionalmente quatro vezes mais casos de NIC2+ e mais cânceres invasivos do que o método anterior (citologia), isso demonstra que o novo teste é mais sensível, ou seja, ele \"deixa passar\" menos doenças (menos falso-negativos). O fato de detectar mais cânceres em estágio inicial (FIGO I) também reforça essa maior sensibilidade diagnóstica precoce.\n\nA alternativa (c) está incorreta. O Valor Preditivo Negativo (VPN) é a probabilidade de uma pessoa não ter a doença quando o teste é negativo. Se o teste de DNA-HPV é mais sensível e detecta mais doenças, o seu VPN tende a ser maior, e não menor. Um VPN alto traz segurança de que, se o resultado for negativo, a paciente realmente não tem a lesão.\n\nA alternativa (d) está incorreta por dois motivos. Primeiro, a definição apresentada no texto da alternativa (identificar pessoas com resultado negativo que não têm a doença) refere-se ao Valor Preditivo Negativo, e não ao Valor Preditivo Positivo (VPP). Segundo, na prática clínica, o teste de DNA-HPV costuma ter um VPP menor do que a citologia para NIC2+, pois ele identifica muitas infecções virais transitórias que não progredirão para câncer. O que o enunciado descreve é o ganho em sensibilidade, que é a principal vantagem da introdução dos testes de biologia molecular no rastreamento.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:39.510Z"
+  },
+  {
+    "id": "AJUDA_df5f2641-3d60-40ec-8023-632cd7e7bdc0",
+    "originalId": "df5f2641-3d60-40ec-8023-632cd7e7bdc0",
+    "statement": "Criança de 13 anos trazida por pais, com quadro de ideação suicida, dizendo ter feito plano, mas sem tentativa concreta. Qual é a ação imediata mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hospitalização psiquiátrica involuntária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Falar com pais para ignorarem por enquanto, esperar ver se melhora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Avaliação do risco (acesso a meios, plano, suporte social), estabelecimento de contrato de segurança, encaminhamento urgente para psiquiatria.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Uso de benzodiazepínico para acalmar imediatamente no pronto-socorro e alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Essa questão aborda o manejo inicial de um paciente pediátrico com ideação suicida no cenário de urgência ou consulta ambulatorial. O foco está na estratificação de risco e na conduta imediata para garantir a segurança do paciente.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A hospitalização psiquiátrica, especialmente a involuntária, é uma medida de exceção. Ela é reservada para casos de risco iminente de autoagressão, ausência de suporte social ou quando outras medidas menos restritivas falharam. Antes de decidir pela internação, é imperativo realizar uma avaliação detalhada do risco. Internar diretamente sem essa análise pode ser desnecessário e traumático para o adolescente.\n\nAlternativa (b) Incorreta. Ideação suicida com plano estruturado nunca deve ser ignorada ou subestimada. Essa conduta configura negligência médica e aumenta drasticamente o risco de uma tentativa consumada, uma vez que o adolescente não recebeu o suporte necessário em um momento de crise.\n\nAlternativa (c) Correta. Esta alternativa descreve o protocolo padrão de manejo da crise suicida. A primeira ação deve ser sempre a estratificação do risco, investigando a letalidade do plano, a disponibilidade dos meios (como acesso a armas ou medicamentos) e a presença de rede de apoio (familiares presentes e vigilantes). O contrato de segurança, embora não substitua o tratamento, serve para pactuar com o paciente e a família as medidas de proteção imediata. O encaminhamento urgente para o especialista garante a continuidade do cuidado necessário para o tratamento da base psicopatológica.\n\nAlternativa (d) Incorreta. O uso de benzodiazepínicos pode ser indicado em casos específicos de agitação psicomotora ou ansiedade extrema, mas não trata a ideação suicida. Além disso, em alguns adolescentes, os benzodiazepínicos podem causar desinibição paradoxal, o que pode aumentar a impulsividade e o risco de uma tentativa de suicídio. Dar alta sem uma avaliação de risco criteriosa é um erro grave de conduta.\n\nEm resumo, o manejo da ideação suicida exige uma abordagem cautelosa que prioriza a segurança do paciente por meio da avaliação de risco e do fortalecimento da rede de apoio social e profissional.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:39.510Z"
+  },
+  {
+    "id": "AJUDA_df6e6c00-fb2f-4dd0-aa5e-5af665c0c980",
+    "originalId": "df6e6c00-fb2f-4dd0-aa5e-5af665c0c980",
+    "statement": "Mulher, 65 anos de idade, comparece à UBS para consulta de rotina. Refere dor lombar ocasional, sem outras queixas. Ao exame físico, apresenta leve cifose dorsal e sua estatura parece estar diminuída em 4cm em relação à altura da juventude.\n\nOs achados mais provavelmente encontrados numa radiografia de tórax desta paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presença de osteófitos e estreitamento do canal vertebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cifose torácica aumentada e presença de cistos ósseos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Calcificação da aorta abdominal e aumento do espaço intervertebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução da densidade óssea e fraturas por compressão vertebral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nO quadro clínico apresenta uma paciente de 65 anos com perda de estatura significativa (4 cm) e hipercifose dorsal. Em mulheres na pós-menopausa, esses achados são sinais clássicos de osteoporose. A perda de altura e a alteração da curvatura da coluna (cifose) ocorrem devido ao colapso dos corpos vertebrais, resultante da fragilidade óssea.\n\nAnálise das alternativas:\n\na) Incorreta. A presença de osteófitos (conhecidos popularmente como bicos de papagaio) e o estreitamento do canal vertebral são achados típicos da osteoartrose de coluna (espondilose). Embora comuns em idosos e causadores de dor lombar, eles não explicam a perda de estatura de 4 cm e a cifose progressiva de forma tão característica quanto as fraturas osteoporóticas.\n\nb) Incorreta. Embora a cifose torácica esteja realmente aumentada no quadro descrito, a presença de cistos ósseos não é um achado radiográfico da osteoporose primária. Cistos ósseos podem aparecer em outras patologias, como no hiperparatireoidismo (tumores marrons) ou em processos degenerativos geódicos da artrose, mas não são o padrão esperado aqui.\n\nc) Incorreta. A calcificação da aorta abdominal é um achado frequente em idosos devido à aterosclerose, mas é independente da patologia óssea vertebral. Além disso, em processos degenerativos ou por fragilidade óssea, o espaço intervertebral geralmente diminui ou permanece inalterado, e não aumenta.\n\nd) Correta. Este é o diagnóstico mais provável. A redução da densidade óssea (que pode ser percebida na radiografia como um aspecto mais radiolúcido do osso) e as fraturas por compressão vertebral (frequentemente em formato de cunha) são as causas diretas da redução da estatura e da cifose dorsal em pacientes com osteoporose. Muitas dessas fraturas são assintomáticas ou causam apenas dor leve/ocasional, exatamente como descrito no caso.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Doenças do Osso e da Cartilagem",
+      "Metabolismo Ósseo e Mineral",
+      "Saúde do Idoso"
+    ],
+    "difficulty": 78.49768974421528,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2fedcd5faa2c33c45f9df55d99d8ac863723f4632d5156d6f9a68fb7dc65452a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5c225ee11408c37b2158422653f16db551fd0c930cfc89cf8e116d9fde1087a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:39.510Z"
+  },
+  {
+    "id": "AJUDA_df80eec8-664f-4f94-b4a8-892cf6cd7e68",
+    "originalId": "df80eec8-664f-4f94-b4a8-892cf6cd7e68",
+    "statement": "Assinale a alternativa correta sobre a esperança de vida ao nascer.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de um indicador que não depende da qualidade de informações sobre mortalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de um indicador que sofre influência da estrutura etária da população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Expressa o número médio de anos que se esperaria que uma criança de 1 ano vivesse.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O aumento desse indicador sugere melhoria das condições de vida e de saúde da população.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A esperança de vida ao nascer é um dos indicadores de saúde mais importantes para avaliar o nível de desenvolvimento de uma região. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A (Incorreta): O cálculo da esperança de vida baseia-se diretamente nas taxas de mortalidade por idade. Se os dados sobre óbitos forem precários ou se houver subnotificação de mortes, o indicador será distorcido e não refletirá a realidade. Portanto, ele depende totalmente da qualidade da informação sobre mortalidade.\n\nAlternativa B (Incorreta): Esta é uma pegadinha comum em provas de medicina preventiva. A esperança de vida ao nascer é um indicador sintético calculado a partir de tábuas de vida, que utilizam taxas de mortalidade específicas para cada faixa etária. Por ser um indicador padronizado, ele não sofre influência da estrutura etária da população real (se a população tem mais idosos ou mais jovens), o que permite comparar o nível de saúde entre países com perfis demográficos completamente diferentes.\n\nAlternativa C (Incorreta): Por definição, a esperança de vida ao nascer expressa o número médio de anos que um recém-nascido (idade zero) esperaria viver se as taxas de mortalidade observadas no momento de seu nascimento se mantivessem constantes. A expectativa de vida pode ser calculada para qualquer idade (como ao 1 ano ou aos 60 anos), mas o indicador citado na questão refere-se especificamente ao nascimento.\n\nAlternativa D (Correta): Este indicador reflete as mudanças nas condições de saúde, nutrição, higiene, saneamento básico e avanços na assistência médica. O aumento da esperança de vida está historicamente ligado à redução da mortalidade infantil e ao controle de doenças infectocontagiosas. Dessa forma, quando esse número sobe, é um forte sinal de que houve melhoria nas condições gerais de vida e de saúde daquela população.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:39.510Z"
+  },
+  {
+    "id": "AJUDA_df83d4aa-1fac-46d4-b9d4-746935e3b658",
+    "originalId": "df83d4aa-1fac-46d4-b9d4-746935e3b658",
+    "statement": "Um paciente de 72 anos de idade compareceu à consulta com histórico de dispneia progressiva e fadiga há seis meses. Ao exame físico, revelou estertores crepitantes bibasais, baqueteamento digital e cianose discreta. Foram verificados FC = 88 bpm, FR = 22 irpm e SatO2 = 89%. Ele realizou tomografia de tórax, que evidenciou opacidades reticulares subpleurais bilaterais e faveolamento. Nesse caso, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fibrose pulmonar associada a doenças reumatológicas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fibrose pulmonar idiopática",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sarcoidose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pneumopatia associada à vasculopatia lúpica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nO quadro clínico descreve um paciente idoso com sintomas respiratórios crônicos e sinais físicos característicos, como o baqueteamento digital (também chamado de dedos em baqueta de tambor) e os estertores crepitantes. O achado tomográfico de faveolamento (*honeycombing*) associado a opacidades reticulares subpleurais e bilaterais é o marcador radiológico clássico do padrão de Pneumonia Intersticial Usual (UIP).\n\nAlternativa a: Incorreta. Doenças reumatológicas ou do tecido conjuntivo, como a artrite reumatoide e a esclerodermia, podem, sim, apresentar um padrão tomográfico de Pneumonia Intersticial Usual. No entanto, o enunciado não fornece nenhum dado clínico ou histórico de sintomas extrapulmonares, como dores articulares, fenômeno de Raynaud, fraqueza muscular ou alterações cutâneas, que direcionem para uma causa secundária. Na medicina, diante de um padrão de UIP sem causa aparente em um idoso, a principal hipótese deve ser a idiopática.\n\nAlternativa b: Correta. Esta alternativa descreve o diagnóstico mais provável para o caso. A Fibrose Pulmonar Idiopática (FPI) é uma forma específica de pneumonia intersticial fibrosante crônica e progressiva, de causa desconhecida, que ocorre predominantemente em adultos com mais de 60 anos. Os sinais clínicos de baqueteamento digital e estertores do tipo velcro são típicos. O diagnóstico de FPI é feito quando se identifica o padrão de UIP na tomografia de alta resolução (presença de faveolamento, reticulado periférico e ausência de achados inconsistentes) em um contexto clínico adequado, após excluir outras causas conhecidas de fibrose.\n\nAlternativa c: Incorreta. A sarcoidose é uma doença multissistêmica que afeta geralmente adultos mais jovens (abaixo dos 50 anos). Embora possa causar fibrose em estágios avançados (estágio IV), sua apresentação radiológica típica envolve linfonodomegalias hilares bilaterais e um padrão de micronódulos com distribuição perilinfática, acometendo preferencialmente as zonas pulmonares superiores e médias, o que é o oposto do padrão de predomínio basal e subpleural visto neste paciente.\n\nAlternativa d: Incorreta. O Lúpus Eritematoso Sistêmico (LES) afeta predominantemente mulheres em idade fértil. As manifestações pulmonares mais comuns do lúpus são a pleurite e o derrame pleural. A doença intersticial progressiva levando a um padrão de faveolamento é muito rara no LES quando comparada a outras doenças como a esclerodermia ou a artrite reumatoide. Além disso, o perfil epidemiológico do paciente no caso (homem, 72 anos) torna essa hipótese extremamente improvável.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:39.510Z"
+  },
+  {
+    "id": "AJUDA_df8a1a1b-2507-4755-b180-97813cde96e7",
+    "originalId": "df8a1a1b-2507-4755-b180-97813cde96e7",
+    "statement": "Sobre o uso de drenos na prática cirúrgica, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Drenos de sucção contínua são preferidos em cavidades contaminadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A principal função dos drenos é reduzir a tensão das suturas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os drenos devem permanecer no local até completa cicatrização da ferida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O dreno de Penrose é considerado um dreno aberto e funciona por capilaridade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O uso de drenos dispensa o rigor da técnica asséptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A: Incorreta. Drenos de sucção contínua (sistemas fechados) são amplamente utilizados para evitar infecções retrógradas, mas a afirmação de que são preferidos especificamente em cavidades contaminadas é imprecisa. Em cavidades com grande contaminação ou presença de detritos sólidos, sistemas de sucção podem obstruir-se facilmente. A escolha do dreno depende mais do objetivo da drenagem (profilática ou terapêutica) e do tipo de secreção esperada do que apenas do grau de contaminação.\n\nAlternativa B: Incorreta. A função principal dos drenos é a retirada de coleções líquidas (como sangue, soro, linfa ou pus) ou gasosas de um espaço ou cavidade, além de permitir o monitoramento de fístulas ou deiscências. A redução da tensão das suturas é uma função técnica das próprias suturas e do manuseio tecidual, e não do dreno.\n\nAlternativa C: Incorreta. Os drenos devem ser removidos o mais precocemente possível, assim que sua finalidade for cumprida (queda do débito de drenagem ou melhora clínica/radiológica). Manter um dreno até a completa cicatrização da ferida, que pode levar semanas, transforma o dispositivo em um corpo estranho desnecessário, aumentando significativamente o risco de infecção e complicações locais.\n\nAlternativa D: Correta. O dreno de Penrose é o exemplo clássico de dreno laminar e de sistema aberto. Ele é feito de látex e funciona principalmente pelo mecanismo de capilaridade, no qual o fluido drena pela superfície externa do látex em direção ao curativo. Também pode atuar por gravidade, dependendo do posicionamento.\n\nAlternativa E: Incorreta. O uso de drenos exige a manutenção rigorosa da técnica asséptica em todas as etapas: inserção, manipulação do sistema e trocas de curativos. Como o dreno estabelece uma comunicação direta entre o meio interno e o externo, ele serve como uma potencial via de entrada para patógenos, tornando a assepsia indispensável.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:39.510Z"
+  },
+  {
+    "id": "AJUDA_df99ae67-129d-455b-8299-e7700a45814a",
+    "originalId": "df99ae67-129d-455b-8299-e7700a45814a",
+    "statement": "Agricultor de 65 anos chega a uma Unidade Básica de Saúde com história de febre não aferida há 5 dias, tosse com expectoração purulenta, fraqueza e cansaço aos esforços. É tabagista e etilista. O exame físico mostra: paciente consciente e colaborativo; PA 100 x 70 mmHG; FC 84 bpm; FR 16 irpm; SpO2 96% em ar ambiente; sem esforço respiratório; ausculta pulmonar com estertores em base direita e sem outras alterações.\nQual é o manejo adequado para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar internação para antibioticoterapia parenteral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar ao pronto atendimento para radiografia de tórax prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever antibioticoterapia oral com reavaliação em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar exames laboratoriais para diagnóstico etiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Trata-se de pneumonia adquirida na comunidade (PAC) com diagnóstico clínico: febre há 5 dias, tosse com expectoração purulenta e estertores localizados em base direita. Na atenção primária, onde a radiografia nem sempre está disponível, o diagnóstico pode ser feito clinicamente, e a decisão sobre o local de tratamento se apoia em escores de gravidade.\n\nO mais prático é o CRB-65, que dispensa exames laboratoriais:\n- C (confusão mental): ausente, pois o paciente está consciente e colaborativo.\n- R (FR maior ou igual a 30 irpm): ausente (FR 16).\n- B (PAS menor que 90 ou PAD menor ou igual a 60 mmHg): ausente (PA 100 x 70).\n- 65 (idade maior ou igual a 65 anos): presente.\n\nO escore é 1. Com 0 a 1 ponto, o paciente tem baixo risco e pode ser tratado ambulatorialmente, desde que não haja outros fatores contrários. Esses fatores seriam hipoxemia (SpO2 menor que 92%), comorbidades descompensadas, acometimento multilobar, incapacidade de usar a via oral ou problemas sociais. Nenhum deles está presente: a SpO2 é de 96% em ar ambiente e não há esforço respiratório. Tabagismo e etilismo influenciam a escolha do antibiótico (cobertura mais ampla, por exemplo betalactâmico associado a macrolídeo, ou quinolona respiratória), mas não indicam internação isoladamente.\n\nAlternativa a) Incorreta. Internar para antibiótico parenteral seria indicado com CRB-65 maior ou igual a 2 ou com sinais de gravidade, como hipoxemia, instabilidade hemodinâmica ou confusão. Este paciente está estável e tem baixo risco, então a internação expõe a riscos e custos sem benefício.\n\nAlternativa b) Incorreta. A radiografia de tórax é recomendada quando disponível, mas não é obrigatória para iniciar o tratamento em paciente estável com quadro clínico típico. Encaminhá-lo ao pronto atendimento apenas para o exame atrasaria a antibioticoterapia, e esse atraso piora o prognóstico na PAC.\n\nAlternativa c) Correta. É a conduta para PAC de baixo risco: antibioticoterapia oral empírica e reavaliação em 48 a 72 horas para confirmar a resposta clínica, com queda da febre e melhora dos sintomas. O paciente deve ser orientado sobre sinais de alarme, como dispneia, confusão e piora do estado geral.\n\nAlternativa d) Incorreta. A investigação etiológica (cultura de escarro, hemoculturas, antígenos urinários) não é recomendada rotineiramente no tratamento ambulatorial da PAC. O tratamento é empírico, e esses exames ficam reservados para pacientes internados, casos graves ou falha terapêutica.\n\nResumo: PAC com CRB-65 igual a 1, estabilidade clínica e boa oxigenação deve ser tratada ambulatorialmente com antibiótico oral e reavaliação em 48 horas.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:39.510Z"
+  }
+]

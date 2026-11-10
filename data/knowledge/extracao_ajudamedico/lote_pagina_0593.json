@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AJUDA_a553880c-d999-4076-9f0a-31652f253706",
+    "originalId": "a553880c-d999-4076-9f0a-31652f253706",
+    "statement": "Lactente, sexo masculino, com 15 meses de idade, é atendido em pronto-socorro, com história de febre há dois dias. A mãe da criança relata que a temperatura máxima atingida foi de 38,5 °C. O exame físico não evidencia nenhuma alteração. A criança apresenta-se ativa e consegue ingerir líquidos normalmente. O médico solicita exame de urina, que evidencia: 15 piócitos por campo, nitrito (+) e estearase (+). Solicita também urocultura qualitativa e quantitativa com antibiograma, embora não haja antecedente de infecção do trato urinário. Considerando o quadro descrito, qual a conduta apropriada nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internar a criança, introduzir antibiótico endovenoso e solicitar uretrocistografia miccional após melhora dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internar a criança, introduzir antibiótico endovenoso e solicitar ultrassonografia de rins e vias urinárias imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever antibiótico por via oral, a ser administrado em casa, e solicitar uretrocistografia miccional após 48 horas após término do tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever antibiótico por via oral, a ser administrado em casa, e não solicitar nenhum exame de imagem após o término do tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prescrever antibiótico por via oral, a ser administrado em casa, e solicitar ultrassonografia de rins e vias urinárias após resultado da urocultura e término do tratamento",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Este caso clínico apresenta um lactente de 15 meses com Febre sem Sinal Localizatório (FSL). O exame de urina sugere fortemente uma Infecção do Trato Urinário (ITU) devido à presença de nitrito, esterase leucocitária e piúria.\n\nAnálise da conduta:\n\n1. Tratamento: Como a criança está em bom estado geral (ativa, ingerindo líquidos) e tem mais de 3 meses de vida, não há critérios de gravidade para internação hospitalar ou antibioticoterapia endovenosa. O tratamento pode ser realizado por via oral em domicílio.\n\n2. Investigação por imagem: Segundo as diretrizes da Sociedade Brasileira de Pediatria (SBP) e da Academia Americana de Pediatria (AAP), toda criança entre 2 e 24 meses com o primeiro episódio de ITU febril deve ser investigada com ultrassonografia (USG) de rins e vias urinárias. O objetivo é identificar malformações anatômicas ou sinais de obstrução.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. Não há indicação de internação nem de antibiótico endovenoso para um paciente estável de 15 meses que tolera a via oral. Além disso, a uretrocistografia miccional (UCM) não é o exame inicial de escolha, sendo reservada para casos de alteração na USG ou recorrência da infecção.\n\nAlternativa b) Incorreta. Novamente, a internação e o uso de via endovenosa são desnecessários neste quadro clínico. Embora a USG seja indicada, o estado clínico do paciente permite que o tratamento seja iniciado e o exame agendado ambulatorialmente.\n\nAlternativa c) Incorreta. O tratamento oral está correto, mas a uretrocistografia miccional (UCM) é um exame invasivo (requer sondagem vesical) e não deve ser o primeiro exame de imagem solicitado em um primeiro episódio de ITU sem outros fatores de risco.\n\nAlternativa d) Incorreta. O tratamento oral está correto, porém é obrigatória a realização de ao menos um exame de imagem (USG) em lactentes com febre e primeira ITU confirmada para descartar anomalias congênitas do trato urinário.\n\nAlternativa e) Correta. A conduta adequada é prescrever o antibiótico por via oral para tratamento domiciliar, dada a estabilidade clínica. A solicitação da ultrassonografia de rins e vias urinárias é o passo inicial correto na investigação radiológica desse paciente após a confirmação do diagnóstico pela urocultura.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:28.201Z"
+  },
+  {
+    "id": "AJUDA_a56a26ea-642c-4678-b5f2-0588c1213d03",
+    "originalId": "a56a26ea-642c-4678-b5f2-0588c1213d03",
+    "statement": "Paciente, sexo masculino, 68 anos de idade, portador de hipertensão arterial sistêmica, diabetes mellitus tipo 2 e DPOC leve, é avaliado ambulatorialmente para colectomia direita eletiva por adenocarcinoma de cólon. Nega dor torácica, mas refere dispneia aos grandes esforços (classe funcional II). Faz uso de losartana, metformina e tiotrópio. Não há história de doença coronariana prévia. ECG de repouso mostra extrassístoles supraventriculares isoladas.\n\nIndique a conduta mais adequada para o controle glicêmico no perioperatório:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender metformina 24 horas antes da cirurgia e reiniciar imediatamente após o término do procedimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter metformina até o dia da cirurgia e ajustar a dose de insulina conforme necessidade intraoperatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspender metformina uma semana antes da cirurgia devido ao risco de hipoglicemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender metformina no dia anterior à cirurgia e utilizar esquema de insulina regular em bomba ou em correção conforme glicemia capilar.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O objetivo do manejo do paciente diabético no perioperatório de cirurgias de médio e grande porte, como a colectomia, é manter o controle glicêmico adequado (geralmente entre 140 e 180 mg/dL) e evitar complicações metabólicas agudas, principalmente a hipoglicemia e a acidose lática associada à metformina.\n\nAlternativa a: Incorreta. A suspensão prévia está adequada, porém a metformina não deve ser reiniciada imediatamente após o término do procedimento. O medicamento só pode ser reintroduzido após a confirmação de estabilidade hemodinâmica, função renal preservada e tolerância à dieta oral, o que costuma demorar alguns dias em cirurgias abdominais de grande porte.\n\nAlternativa b: Incorreta. Manter a metformina até o dia de uma cirurgia de grande porte sob anestesia geral aumenta o risco de acidose lática perioperatória, sobretudo em caso de hipotensão, hipoperfusão tecidual ou necessidade de contraste iodado.\n\nAlternativa c: Incorreta. A metformina é uma biguanida que reduz a produção hepática de glicose e não estimula a secreção de insulina, logo, não tem potencial intrínseco de provocar hipoglicemia. Além disso, a suspensão por uma semana é um período excessivamente longo e desnecessário, o que favoreceria o descontrole glicêmico pré-operatório.\n\nAlternativa d: Correta. A conduta preconizada para cirurgias eletivas de médio e grande porte é suspender a metformina 24 a 48 horas antes da cirurgia (ou seja, no dia anterior ao procedimento) para prevenir a acidose lática. Durante o jejum e o estresse cirúrgico, o controle glicêmico deve ser realizado com insulina de ação rápida/regular, seja por meio de correção fracionada conforme a glicemia capilar ou por infusão contínua em bomba nos casos de maior instabilidade.\n\nPortanto, a alternativa correta é a letra d.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Perioperatório",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:28.201Z"
+  },
+  {
+    "id": "AJUDA_a582d815-a6ce-4678-bf7a-ea16bd587830",
+    "originalId": "a582d815-a6ce-4678-bf7a-ea16bd587830",
+    "statement": "Homem de 66 anos, ex-tabagista, apresenta diagnóstico de DPOC confirmado por espirometria. Encontra-se estável, sem exacerbações no último ano e utiliza broncodilatador de longa duração regularmente. Durante a consulta, pergunta qual medida reduz de forma comprovada o risco de novas exacerbações e infecções respiratórias.\nQual é a orientação mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar corticoterapia oral contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever antibiótico profilático continuamente para todos os pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspender o broncodilatador, por estar assintomático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter vacinação contra influenza e pneumococo, conforme as recomendações vigentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Iniciar mucolítico continuamente para todos os pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda as medidas de prevenção secundária e de redução de morbimortalidade na Doença Pulmonar Obstrutiva Crônica (DPOC). O foco é identificar intervenções com evidência científica robusta para evitar exacerbações e complicações infecciosas em um paciente clinicamente estável.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A corticoterapia oral contínua não é indicada no tratamento de manutenção da DPOC estável devido aos gravíssimos efeitos colaterais a longo prazo (osteoporose, diabetes, miopatia, catarata e supressão adrenal). O corticite oral é reservado apenas para o manejo de exacerbações agudas, por períodos curtos (geralmente 5 dias).\n\nAlternativa b) Incorreta. O uso de antibióticos profiláticos (como a azitromicina) é uma estratégia reservada exclusivamente para um fenótipo específico de pacientes: aqueles que mantêm exacerbações frequentes apesar da terapia tripla (LAMA + LABA + CI) otimizada. Não deve ser prescrito continuamente para \"todos os pacientes\", especialmente para este caso, que não apresenta exacerbações no último ano.\n\nAlternativa c) Incorreta. O tratamento da DPOC com broncodilatadores de longa duração tem como objetivo reduzir a hiperinsuflação pulmonar, melhorar a tolerância ao exercício e prevenir exacerbações. Mesmo que o paciente esteja assintomático, a suspensão da medicação de manutenção aumenta o risco de piora clínica e perda acelerada da função pulmonar.\n\nAlternativa d) Correta. A vacinação é uma das medidas com maior nível de evidência na redução de exacerbações e infecções respiratórias em pacientes com DPOC. A vacina contra a Influenza deve ser anual, e a vacina contra o Pneumococo (VPC13 e VPP23) deve seguir o calendário específico para pneumopatas crônicos. Além destas, as diretrizes atuais (como o GOLD) também recomendam vacinação contra Coqueluche (Tdap), COVID-19 e Herpes Zoster para esta população.\n\nAlternativa e) Incorreta. Embora o uso de certos mucolíticos/antioxidantes (como a N-acetilcisteína em altas doses) possa reduzir exacerbações em alguns pacientes com bronquite crônica, essa medida não é recomendada de rotina para \"todos os pacientes\". Ela é considerada uma terapia adjuvante e não substitui as medidas primordiais como cessação do tabagismo, vacinação e broncodilatadores.\n\nGabarito: Letra (d).",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:28.202Z"
+  },
+  {
+    "id": "AJUDA_a583955e-62d2-492e-aa0e-ab961ee4abab",
+    "originalId": "a583955e-62d2-492e-aa0e-ab961ee4abab",
+    "statement": "Mulher, 20 anos, previamente hígida, sexualmente ativa, procura a emergência com dor forte em baixo ventre iniciada há uma hora e vômitos. Refere ter tido sangramento vaginal intermitente há dois dias. É usuária de DIU de cobre há um ano e tabagista. Não sabe a data da última menstruação. Ao exame, regular estado geral, sudorética, PA – 70x40 mmHg, FC – 128 bpm, temperatura axilar de 36,5 °C. Apresenta dor à palpação em baixo ventre com descompressão brusca positiva em fossa ilíaca direita. Realizada ultrassonografia transvaginal, que evidenciou útero com DIU normoposicionado, massa heterogênea de 4,0 cm em topografia de anexo direito e presença de grande quantidade de líquido livre. Qual é a conduta imediata indicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ressuscitação volêmica e solicitação de β-hcg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ressuscitação volêmica e laparotomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Antibioticoterapia intravenosa e retirada do DIU.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Antibioticoterapia intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nA paciente apresenta um quadro de abdome agudo hemorrágico. Os principais pontos que sustentam essa hipótese são: idade fértil, vida sexual ativa, dor abdominal súbita, sangramento vaginal irregular, sinais evidentes de choque hipovolêmico (hipotensão severa de 70x40 mmHg e taquicardia de 128 bpm) e sinais de irritação peritoneal (descompressão brusca positiva). A ultrassonografia confirma a presença de massa anexial e grande quantidade de líquido livre (hemoperitônio). O uso de DIU, embora seja um excelente método anticoncepcivo, caso apresente falha e ocorra gravidez, esta terá maior risco de ser ectópica. O diagnóstico mais provável é de gravidez ectópica rota.\n\nExplicação das Alternativas:\n\na) Incorreta. Embora a ressuscitação volêmica seja fundamental, aguardar o resultado de um exame laboratorial, como o beta-hCG, em uma paciente com choque franco e sinais claros de hemoperitônio, retarda o tratamento definitivo e aumenta a mortalidade. O diagnóstico aqui é clínico e ultrassonográfico devido à instabilidade.\n\nb) Correta. Diante de uma paciente com choque hipovolêmico por abdome agudo hemorrágico, a conduta imediata consiste em duas frentes: estabilização hemodinâmica (ressuscitação volêmica com cristaloides e, se necessário, hemoderivados) e intervenção cirúrgica imediata para controle do sangramento. Em pacientes instáveis hemodinamicamente, a via preferencial é a laparotomia, que permite um acesso mais rápido e seguro para o controle da hemorragia.\n\nc) Incorreta. A videolaparoscopia é o padrão-ouro para o tratamento da gravidez ectópica em pacientes estáveis. No entanto, em pacientes com instabilidade hemodinâmica grave, o pneumoperitônio necessário para a laparoscopia pode reduzir ainda mais o retorno venoso e piorar o estado circulatório. Portanto, a laparotomia é a escolha mais segura para este caso específico.\n\nd) Incorreta. Esta conduta seria direcionada para um quadro infeccioso, como a doença inflamatória pélvica (DIP) ou abscesso tubo-ovariano. Entretanto, a instalação súbita, a presença de choque e o grande volume de líquido livre (sangue) direcionam o diagnóstico para hemorragia, não para sepse de foco ginecológico.\n\ne) Incorreta. A antibioticoterapia isolada não trata a causa-base (hemorragia por ruptura de órgão/anexo) nem a instabilidade hemodinâmica da paciente. O quadro é cirúrgico e não puramente infeccioso.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Abdome Agudo em Ginecologia",
+      "Abdome Agudo Hemorrágico",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:28.202Z"
+  },
+  {
+    "id": "AJUDA_a597ff77-b4d6-4ba9-95a7-baa764859eb7",
+    "originalId": "a597ff77-b4d6-4ba9-95a7-baa764859eb7",
+    "statement": "Assinale a alternativa correta em relação ao manejo pré-natal de gestante com tipagem sanguínea Rh negativo, aloimunizada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A pesquisa do Rh fetal no sangue materno, quando realizada a partir de 10 semanas de gestação, apresenta acurácia de cerca de 85%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diante de teste de Coombs indireto positivo, é necessária a pesquisa de anticorpos irregulares com identificação e determinação dos títulos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A vasodilatação cerebral fetal demonstrada no exame dopplervelocimétrico é marcador precoce de anemia moderada/grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A administração de imunoglobulina anti-D, no início do terceiro trimestre, diminui a chance de piora da sensibilização materna e de anemia fetal grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo da gestante com aloimunização Rh, um tema recorrente em provas de obstetrícia. Vamos analisar cada alternativa:\n\nAlternativa (a) Incorreta. A pesquisa do fator Rh fetal no sangue materno (por meio do estudo do DNA fetal livre no plasma materno) é um exame de alta tecnologia com acurácia superior a 99% quando realizado a partir da 10ª semana de gestação. O valor de 85% mencionado na alternativa está muito abaixo da precisão real do método, que é extremamente confiável para evitar procedimentos invasivos ou acompanhamentos desnecessários.\n\nAlternativa (b) Correta. Este é o passo fundamental após a detecção de um teste de Coombs indireto positivo. O Coombs indireto é um teste qualitativo de rastreio. Uma vez positivo, o laboratório deve realizar a identificação do anticorpo (painel de anticorpos irregulares) para confirmar se é um anticorpo capaz de causar doença hemolítica (como o anti-D, anti-Kell, anti-c) e a titulagem para quantificar a resposta imunológica. A titulagem é essencial para definir o prognóstico e o seguimento: para o anticorpo anti-D, títulos abaixo de 1:16 geralmente requerem apenas acompanhamento mensal, enquanto títulos iguais ou superiores a 1:16 (título crítico) exigem a avaliação de anemia fetal por Doppler.\n\nAlternativa (c) Incorreta. O marcador dopplervelocimétrico utilizado para o diagnóstico de anemia fetal não é a vasodilatação (comumente associada à centralização fetal por insuficiência placentária), mas sim o aumento do Pico de Velocidade Sistólica (PVS) da artéria cerebral média (ACM). Na anemia, o sangue fica menos viscoso e o débito cardíaco aumenta, fazendo com que o sangue passe em maior velocidade pelos vasos cerebrais. Valores de PVS acima de 1,5 múltiplo do valor mediano (MoM) para a idade gestacional são indicativos de anemia fetal grave.\n\nAlternativa (d) Incorreta. Esta alternativa apresenta um erro conceitual grave. A imunoglobulina anti-D é uma medida de profilaxia, indicada exclusivamente para gestantes Rh negativo que NÃO estão sensibilizadas (Coombs indireto negativo). Uma vez que a paciente já está aloimunizada (já possui anticorpos formados), a administração da imunoglobulina não tem nenhum benefício clínico, não reduz os títulos de anticorpos já existentes e não protege o feto contra a anemia. Portanto, é contraindicada em pacientes já sensibilizadas.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal",
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:28.202Z"
+  },
+  {
+    "id": "AJUDA_a59c0043-dbeb-4688-86e9-f608d76152de",
+    "originalId": "a59c0043-dbeb-4688-86e9-f608d76152de",
+    "statement": "“Quanto maiores os coeficientes de verossimilhança (likelihood ratios, LR+) e quanto menores os LR−, __________ a capacidade do teste de modificar a probabilidade pós-teste.”\nAssinale a alternativa que preenche CORRETAMENTE a lacuna.",
+    "options": [
+      {
+        "id": "A",
+        "text": "menor",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "maior",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "igual",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "irrelevante",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Razão de Verossimilhança ou Coeficiente de Verossimilhança (Likelihood Ratio – LR) é um dos parâmetros mais úteis na prática clínica para interpretar testes diagnósticos, pois ela relaciona a sensibilidade e a especificidade do teste para informar o quanto o resultado altera a probabilidade de uma doença (probabilidade pós-teste).\n\nO LR positivo (LR+) indica o quanto um resultado positivo aumenta a probabilidade da doença. Ele é calculado pela fórmula: Sensibilidade / (1 – Especificidade). Quanto maior o valor do LR+, maior será a probabilidade pós-teste. Valores de LR+ acima de 10 indicam que o teste é muito bom para confirmar um diagnóstico.\n\nO LR negativo (LR–) indica o quanto um resultado negativo reduz a probabilidade da doença. Ele é calculado pela fórmula: (1 – Sensibilidade) / Especificidade. Quanto menor o valor do LR– (quanto mais próximo de zero), maior é a queda na probabilidade pós-teste, o que torna o teste excelente para excluir uma doença. Valores de LR– abaixo de 0,1 são considerados ideais para exclusão.\n\nPortanto, se um teste possui um LR+ muito alto e um LR– muito baixo, ele tem uma grande capacidade de mudar a probabilidade pré-teste (aquela baseada apenas na clínica e na prevalência) para uma probabilidade pós-teste definitiva (seja para confirmar ou excluir).\n\nAnálise das alternativas:\n\na) Incorreta. Se o LR+ é alto e o LR– é baixo, o teste é muito potente. Um teste potente gera uma modificação grande na probabilidade, e não menor.\n\nb) Correta. A capacidade de um teste diagnóstico de modificar a probabilidade de uma doença é diretamente proporcional à magnitude do seu LR+ e inversamente proporcional ao valor do seu LR–. Ou seja, quanto mais distantes de 1 (um) os valores estiverem, maior será o impacto do teste na decisão clínica.\n\nc) Incorreta. Se a capacidade fosse igual, o teste não teria utilidade diagnóstica. Um teste que não modifica a probabilidade tem LR positivo e negativo iguais a 1.\n\nd) Incorreta. Os coeficientes de verossimilhança são fundamentais e centrais para a medicina baseada em evidências, sendo o principal parâmetro para quantificar a utilidade de um exame complementar.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Estatística Médica",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:28.202Z"
+  },
+  {
+    "id": "AJUDA_a5a740e7-e1f6-4fbc-84d9-d920e893791a",
+    "originalId": "a5a740e7-e1f6-4fbc-84d9-d920e893791a",
+    "statement": "Homem de 32 anos, portador de retocolite ulcerativa pancolônica há 4 anos, é admitido com quadro de dor abdominal difusa, febre baixa, 12 evacuações sanguinolentas/dia e PCR 96 mg/L. Foi iniciado tratamento com hidrocortisona intravenosa há 72 horas, sem melhora clínica significativa (mantém taquicardia, PCR elevada e 10 evacuações/dia). A equipe avalia a melhor conduta a seguir. Assinale a alternativa mais adequada segundo as diretrizes atuais:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter corticopoterapia por até 10 dias, pois a resposta tardia não aumenta complicações pós-operatórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar azatioprina imediatamente para reduzir a atividade inflamatória já na fase aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Introduzir infliximabe ou ciclosporina como terapia de resgate, e se não houver resposta em até 7 dias, indicar colectomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indicar colectomia subtotal com ileostomia imediatamente, pois ausência de resposta após 3 dias de corticoterapia IV é indicação formal de cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aguardar sinais específicos de complicação (megacólon tóxico, perfuração) antes de indicar intervenção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo da Colite Ulcerativa Grave (CUG), também conhecida como crise de retocolite ulcerativa grave. O paciente apresenta critérios clássicos de Truelove e Witts para gravidade: mais de 6 evacuações sanguinolentas ao dia associadas a sinais de toxicidade sistêmica (taquicardia, febre e PCR elevada).\n\nA conduta inicial padrão é a corticoterapia intravenosa. No entanto, cerca de 30% a 40% dos pacientes não respondem aos corticoides. A avaliação da resposta deve ser feita precocemente, geralmente entre o terceiro e o quinto dia de tratamento (critérios de Oxford/Travis). Se, após 72 horas, o paciente mantiver mais de 8 evacuações/dia ou PCR acima de 45 mg/L, a falha terapêutica está caracterizada e deve-se iniciar a terapia de resgate ou indicar cirurgia.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Manter a corticoterapia por períodos prolongados (como 10 dias) em pacientes não responsivos não traz benefícios e aumenta significativamente o risco de infecções oportunistas e complicações cirúrgicas futuras. A decisão sobre a falha do corticoide deve ser tomada em torno do terceiro dia.\n\nAlternativa b) Incorreta. A azatioprina é um imunomodulador utilizado para a manutenção da remissão na retocolite ulcerativa. Seu início de ação é lento, levando de 8 a 12 semanas para atingir o efeito terapêutico pleno. Portanto, ela não tem papel no tratamento da fase aguda de uma crise grave.\n\nAlternativa c) Correta. De acordo com as diretrizes atuais (como as da ECCO e ACG), diante da falha da corticoterapia intravenosa em 72 horas, as opções de terapia de resgate clínico são o infliximabe (anti-TNF) ou a ciclosporina. Se, após o início dessas medicações, o paciente não apresentar melhora em um intervalo de 5 a 7 dias, a colectomia deve ser indicada para evitar o aumento da mortalidade.\n\nAlternativa d) Incorreta. Embora a cirurgia seja uma opção válida na falha do corticoide, ela não é a única conduta imediata. Na ausência de complicações de urgência (como perfuração ou megacólon tóxico), deve-se oferecer ao paciente a tentativa de resgate clínico com infliximabe ou ciclosporina antes de proceder para a colectomia subtotal.\n\nAlternativa e) Incorreta. Aguardar complicações graves, como perfuração ou megacólon tóxico, para indicar a cirurgia é uma estratégia perigosa. A mortalidade cirúrgica é significativamente menor quando a colectomia é realizada de forma eletiva ou em regime de urgência programada, antes que o paciente evolua para um quadro de instabilidade hemodinâmica ou sepse por complicação abdominal.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:28.202Z"
+  },
+  {
+    "id": "AJUDA_a5b5dc8d-6717-4e2e-a2da-dd4c2ee155d2",
+    "originalId": "a5b5dc8d-6717-4e2e-a2da-dd4c2ee155d2",
+    "statement": "Um homem de 42 anos procura o pronto-socorro relatando aumento de volume na região umbilical há 2 anos, que se exterioriza mais ao tossir e desaparece ao repouso. Nos últimos dois dias, refere dor progressiva e náuseas, com o abaulamento endurecido, doloroso, irredutível e hiperemiado. Não há eliminação de gases ou fezes nas últimas 24 horas. Exames laboratoriais mostram leucocitose, e o exame físico confirma hérnia umbilical encarcerada. Considerando o caso, qual é a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observação clínica, hidratação e antibióticos empíricos, pois a maioria das hérnias umbilicais reduz espontaneamente, mesmo com dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicação de cirurgia de urgência com redução do conteúdo herniário e avaliação de viabilidade intestinal, com possível ressecção de alça isquêmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Redução manual e alta hospitalar, com orientação de retorno se houver febre ou sinais infecciosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Redução manual imediata e correção posterior eletiva da hérnia apenas após melhora clínica, pois a cirurgia em urgência aumenta complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um quadro clássico de hérnia umbilical que, após dois anos de evolução redutível, evoluiu para encarceramento e provável estrangulamento. Os sinais de alerta são: dor progressiva, náusea, abaulamento irredutível, endurecido e hiperemiado (sinal de sofrimento tecidual), além de parada de eliminação de gases e fezes (obstrução intestinal) e leucocitose (marcador inflamatório/infeccioso).\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): A observação clínica e a conduta expectante são contraindicadas em casos de hérnias complicadas. Hérnias com sinais de estrangulamento (dor, hiperemia, irredutibilidade) não se reduzem espontaneamente de forma segura e exigem intervenção imediata para evitar necrose extensa e sepse.\n\nAlternativa B (Correta): Diante de uma hérnia umbilical encarcerada com sinais sugestivos de isquemia (estrangulamento), a conduta de eleição é a cirurgia de urgência. O cirurgião deve abrir o saco herniário, reduzir o conteúdo e avaliar criteriosamente a viabilidade da alça intestinal (cor, peristalse e pulsatilidade dos vasos mesentéricos). Caso a alça esteja necrótica ou inviável, a ressecção segmentar (enterectomia) com anastomose é mandatária.\n\nAlternativa C (Incorreta): A redução manual (taxia) é formalmente contraindicada quando há sinais de estrangulamento ou isquemia, como a hiperemia cutânea e a leucocitose citadas. Reduzir uma alça intestinal já comprometida ou necrótica para dentro da cavidade abdominal pode causar peritonite generalizada e choque séptico, pois o segmento inviável continuará a sofrer ou poderá perfurar internamente.\n\nAlternativa D (Incorreta): Embora a cirurgia eletiva seja o ideal para hérnias simples, no contexto de complicação aguda com sinais de sofrimento vascular, a cirurgia não pode ser adiada. A tentativa de redução manual imediata é perigosa pelos mesmos motivos expostos na alternativa C. O tratamento deve ser cirúrgico e urgente para resolver a obstrução e tratar a possível isquemia.\n\nConclusão:\nO quadro de hérnia umbilical estrangulada é uma emergência cirúrgica. A presença de sinais flogísticos locais (hiperemia e dor intensa) associada à leucocitose e sinais de obstrução intestinal confirma a necessidade de laparotomia ou inguinotomia imediata para avaliação de viabilidade de alça.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:28.202Z"
+  },
+  {
+    "id": "AJUDA_a5bb3e83-c662-4347-b739-0d130116aed6",
+    "originalId": "a5bb3e83-c662-4347-b739-0d130116aed6",
+    "statement": "Homem, 38 anos, veio à consulta na UBS para avaliação de exames laboratoriais. Relatava história familiar de anemia com necessidade de tratamento. Hemograma completo: Hb: 15,7 g/dl (VR: 13,9 - 17,7 g/dl) VCM: 85 fl (VR: 80 - 95 fl); Glóbulos brancos: 8,8 x 10³/µL (VR: 3,79 - 10,3 x 10³/µL); Plaquetas: 230 x 10³/µL (VR: 166 - 389 x10³/µL); Estudo de hemoglobina: S=38% (VR: 0%); A:59% (VR: 95 - 98%); A2: 2,3% (VR: 2,0 - 3,3%).\nQual é a conduta mais adequada para o paciente neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hidroxiureia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aconselhamento genético.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Ultrassonografia de vasos cerebrais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Análise molecular dos genes da alfa globina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico do caso:\nO paciente apresenta hemograma normal (Hb 15,7 g/dL e VCM 85 fL) e estudo de hemoglobinas evidenciando HbA (59%) maior que HbS (38%). Esse padrão define o Traço Falciforme (genótipo HbAS), uma condição benigna na qual o indivíduo é um carreador assintomático da mutação, sem anemia ou manifestações de vaso-oclusão típicas da Doença Falciforme.\n\nAnálise das alternativas:\n\na) Incorreta. A hidroxiureia é uma medicação utilizada para aumentar a hemoglobina fetal e reduzir crises álgicas e eventos vaso-oclusivos em pacientes com Doença Falciforme (como HbSS). Não há indicação de tratamento medicamentoso para portadores de traço falciforme, pois eles não desenvolvem a doença.\n\nb) Correta. A principal abordagem clínica no traço falciforme é o aconselhamento genético e reprodutivo. O portador deve ser orientado de que pode transmitir o gene da hemoglobina S para seus descendentes e que, caso seu parceiro(a) também tenha o traço falciforme ou outra hemoglobinopatia (como beta-talassemia), existe o risco de 25% de terem filhos com Doença Falciforme.\n\nc) Incorreta. A ultrassonografia com Doppler transcraniano é uma ferramenta de triagem para risco de Acidente Vascular Cerebral (AVC), indicada para crianças entre 2 e 16 anos com Anemia Falciforme (HbSS). Não tem indicação no traço falciforme, condição que não confere risco aumentado de AVC vaso-oclusivo.\n\nd) Incorreta. O estudo molecular da alfa-globina é voltado para o diagnóstico de alfa-talassemia, que habitualmente se manifesta com microcitose e hipocromia desproporcionais à anemia e eletroforese normal. O paciente apresenta VCM normal e já possui diagnóstico firmado de traço falciforme.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:28.202Z"
+  },
+  {
+    "id": "AJUDA_a5c3b93e-8e5a-43c7-8e1c-36c4229348f1",
+    "originalId": "a5c3b93e-8e5a-43c7-8e1c-36c4229348f1",
+    "statement": "Situação-Problema: Menino, 12 anos de idade, vai à consulta pediátrica acompanhado dos pais e apresenta a seguinte queixa: “Meus amigos já cresceram e eu não”. A história mostra uma criança saudável, sem antecedentes de doenças crônicas. O pai refere ter sido o menor da turma e que “cresceu só no último ano do colégio”. Exame físico: altura no percentil 3, velocidade de crescimento de 4 cm/ano, Tanner I. Idade óssea atrasada em 2 anos. Sem dismorfismos.\n\nAnalise a evolução natural dessa condição e identifique a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O crescimento acelera tardiamente, com estatura final normal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O crescimento geralmente permanece comprometido na vida adulta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A estatura final é sempre menor que o percentil 3.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Há risco elevado de obesidade e dislipidemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico do caso:\nO quadro clínico é clássico de Retardo Constitucional do Crescimento e da Puberdade (RCCP), uma variante fisiológica do desenvolvimento. Os principais dados que confirmam essa hipótese são a idade de 12 anos em Tanner I, velocidade de crescimento no limite inferior da normalidade (4 cm/ano), idade óssea atrasada em 2 anos em relação à idade cronológica e história familiar positiva de maturação tardia (pai com crescimento tardio). Como a idade óssea está atrasada, as cartilagens de crescimento demoram mais para se fundir, permitindo que o paciente cresça por mais tempo e atinja o seu canal familiar.\n\nAnálise das alternativas:\n\nAlternativa a: Correta. No RCCP, a puberdade e o estirão de crescimento acontecem mais tarde em comparação aos pares etários. No entanto, devido ao atraso no fechamento das epífises ósseas, o indivíduo continua crescendo por um período mais prolongado, alcançando uma estatura final adulta normal e compatível com o seu potencial genético.\n\nAlternativa b: Incorreta. A estatura final comprometida na vida adulta é característica da Baixa Estatura Familiar (na qual a idade óssea é igual à cronológica) ou de causas patológicas (como deficiência de hormônio do crescimento ou doenças inflamatórias crônicas). No RCCP, o prognóstico estatural é favorável.\n\nAlternativa c: Incorreta. O posicionamento atual no percentil 3 é transitório. Com o estirão tardio e o fechamento epifisário postergado, a maioria dos pacientes apresenta recuperação do crescimento e atinge uma estatura final dentro da normalidade para a população e para a família.\n\nAlternativa d: Incorreta. Não existe relação fisiopatológica entre o RCCP e o desenvolvimento de obesidade, dislipidemia ou síndrome metabólica. Esse risco metabólico aumentado é bem documentado em crianças nascidas pequenas para a idade gestacional (PIG) com rápida recuperação ponderal pós-natal precoce.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Puberdade",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:28:28.202Z"
+  }
+]

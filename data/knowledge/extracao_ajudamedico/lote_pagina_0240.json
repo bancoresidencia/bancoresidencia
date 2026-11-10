@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_42ee2423-7f74-49e9-bb75-19234b5b131e",
+    "originalId": "42ee2423-7f74-49e9-bb75-19234b5b131e",
+    "statement": "Óbito hospitalar com múltiplas comorbidades e pneumonia recente; houve queda domiciliar na semana anterior sem lesões graves relatadas. Assinale a alternativa que apresenta a conduta MAIS adequada na Declaração de Óbito (DO).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicar todos os diagnósticos como causas básicas para ampliar a captação de dados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adotar apenas a pneumonia como causa básica, independentemente da sequência clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Priorizar o evento queda como causa básica sem avaliar nexo e contribuição clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Registrar causa básica após análise da cadeia causal, evitando mecanismos isolados.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o preenchimento da Declaração de Óbito (DO), um documento de extrema importância epidemiológica e jurídica. O principal desafio no preenchimento é a identificação da Causa Básica da morte, definida pela Organização Mundial da Saúde como a doença ou lesão que iniciou a cadeia de eventos patológicos que conduziram diretamente ao óbito.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A DO possui uma estrutura hierárquica. Na Parte I, deve-se registrar a sequência de eventos que levou à morte, culminando em apenas uma causa básica na última linha preenchida. Listar todos os diagnósticos como causas básicas gera confusão estatística e impede a identificação do evento iniciador real.\n\nAlternativa (b) Incorreta. A pneumonia é, frequentemente, uma causa terminal (causa direta ou intermediária), ocorrendo como consequência de uma doença debilitante subjacente ou de imobilidade prolongada. Adotá-la como causa básica sem analisar a sequência clínica pode mascarar a verdadeira doença que desencadeou o processo, como um AVC ou uma neoplasia.\n\nAlternativa (c) Incorreta. Embora causas externas (como quedas) devam ser priorizadas se forem o evento desencadeante, é fundamental avaliar o nexo causal. Além disso, se a queda for a causa direta ou contribuir diretamente para a morte (causa externa), o óbito passa a ser de competência do Instituto Médico Legal (IML) e não do médico assistente no hospital, independentemente do tempo decorrido.\n\nAlternativa (d) Correta. O preenchimento adequado exige que o médico faça um exercício de raciocínio clínico para reconstruir a cadeia de eventos. A causa básica é aquela que iniciou o processo. Deve-se evitar registrar apenas mecanismos terminais ou isolados (como parada cardiorrespiratória ou falência de múltiplos órgãos), que são consequências do óbito e não a causa em si. O objetivo é identificar a patologia que, se não existisse, o paciente não teria morrido naquele momento.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Vigilância em Saúde",
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:09.395Z"
+  },
+  {
+    "id": "AJUDA_42f3e43e-c2d5-4642-a947-f46b41b1a139",
+    "originalId": "42f3e43e-c2d5-4642-a947-f46b41b1a139",
+    "statement": "Gestante com 08 semanas de idade gestacional, comparece à consulta com os seguintes resultados de exame: 1- Sorologia para toxoplasmose IgM positiva e IgG positiva; 2- Teste de avidez para toxoplasmose com alta avidez. Diante destes exames a conduta inicial adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tratar com espiramicina até o fim da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tratar com sulfadiazina, pirimetamina, sulfadiazina e ácido folínico até o fim da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "iniciar sulfadiazina, pirimetamina, sulfadiazina e ácido folínico e solicitar amniocentese para pesquisa de toxoplasma no líquido amniótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar amniocentese para pesquisa de toxoplasma no líquido amniótico e decidir sobre tratamento após resultado de exame.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "explicar para a paciente que não há necessidade de tratamento pois a infecção é antiga e a paciente é imune.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda o rastreamento e o diagnóstico da toxoplasmose na gestação, um tema recorrente em provas de residência médica. Para resolvê-la, é fundamental interpretar corretamente o teste de avidez de IgG.\n\nAnálise do caso clínico:\nA gestante está na 8ª semana de idade gestacional (primeiro trimestre). Os exames mostram IgG positivo e IgM positivo. A presença de IgM positivo isoladamente poderia sugerir uma infecção aguda, mas o IgM pode persistir positivo por meses ou até anos (IgM residual). O teste de avidez é a ferramenta-chave aqui. Quando realizado antes de 12 a 16 semanas de gestação, um teste de alta avidez indica que a infecção ocorreu há, pelo menos, 3 a 4 meses.\n\nConclusão diagnóstica:\nComo a paciente está com 8 semanas e a avidez é alta, a infecção ocorreu obrigatoriamente antes da concepção. Infecções adquiridas antes da gestação em pacientes imunocompetentes não apresentam risco de transmissão vertical para o feto. Portanto, a paciente é considerada imune.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A espiramicina é indicada para profilaxia da transmissão vertical quando há suspeita ou confirmação de infecção aguda (baixa avidez ou soroconversão) no primeiro trimestre. Como a infecção é antiga, não há indicação de tratamento.\n\nAlternativa b) Incorreta. O esquema tríplice (sulfadiazina, pirimetamina e ácido folínico) é reservado para casos de infecção fetal confirmada (via amniocentese) ou quando a infecção materna aguda ocorre no terceiro trimestre. Não se aplica a infecções pré-gestacionais.\n\nAlternativa c) Incorreta. Além do esquema tríplice não estar indicado, a amniocentese para pesquisa de Toxoplasma gondii por PCR só deve ser realizada se houver confirmação de infecção materna aguda durante a gestação, o que foi descartado pela alta avidez.\n\nAlternativa d) Incorreta. A amniocentese é um procedimento invasivo e só é solicitada após 18 semanas de gestação se houver forte suspeita de infecção aguda materna ocorrida durante a gravidez. Neste caso, a alta avidez com 8 semanas exclui essa necessidade.\n\nAlternativa e) Correta. A alta avidez de IgG no primeiro trimestre (antes de 12-16 semanas) confirma que a infecção é crônica (ocorreu antes da gestação). Nessas condições, não há risco para o feto e nenhum tratamento ou propedêutica adicional é necessário.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:09.395Z"
+  },
+  {
+    "id": "AJUDA_42f783a4-8916-4d66-a284-d8f59e18291f",
+    "originalId": "42f783a4-8916-4d66-a284-d8f59e18291f",
+    "statement": "Analise as afirmativas a seguir sobre hiperplasia prostática benigna (HPB):\n\nI) A base do tratamento para sintomas de trato urinário inferior devido à HPB são os agentes bloqueadores dos receptores α1-adrenérgicos. Os efeitos adversos mais comuns desses medicamentos são tontura relacionada à ortostase, ejaculação retrógrada e rinorreia.\nII) O escore internacional de sintomas prostáticos (IPSS) vai de 7 a 35 pontos sendo: entre 0-10 pontos, sintomas leves; entre 11 e 20 pontos, sintomas moderados; entre 21 e 35 pontos, sintomas graves.\nIII) Em homens entre 60-69 anos, a prevalência de HPB é de cerca de 30%.\n\nPode-se afirmar que está(ão) correta(s) a(s) afirmativa(s):",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II e III",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "II",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ITEM I: ESTÁ CORRETO. Os alfa-bloqueadores (como a tansulosina, doxazosina e terazosina) são considerados a primeira linha de tratamento medicamentoso para os sintomas do trato urinário inferior (LUTS) secundários à hiperplasia prostática benigna. Eles agem relaxando a musculatura lisa do colo vesical e da próstata. Os efeitos colaterais citados são clássicos dessa classe: a hipotensão ortostática e a tontura ocorrem devido à vasodilatação periférica (mais comum em agentes não seletivos); a ejaculação retrógrada acontece pelo relaxamento do colo vesical; e a rinorreia (ou congestão nasal) ocorre devido à dilatação dos vasos da mucosa nasal.\n\nITEM II: ESTÁ INCORRETO. O Escore Internacional de Sintomas Prostáticos (IPSS) é composto por 7 perguntas sobre sintomas, cada uma pontuada de 0 a 5, totalizando uma escala de 0 a 35 pontos. A classificação correta da gravidade dos sintomas é a seguinte: \n- Sintomas leves: 0 a 7 pontos. \n- Sintomas moderados: 8 a 19 pontos. \n- Sintomas graves: 20 a 35 pontos. \nOs intervalos apresentados na afirmativa estão incorretos conforme as diretrizes urológicas (AUA/EAU).\n\nITEM III: ESTÁ INCORRETO. A prevalência da HPB está fortemente ligada ao envelhecimento, porém os valores citados estão subestimados. Estudos epidemiológicos e de autópsia demonstram que a prevalência histológica da HPB é de aproximadamente 50% em homens na faixa dos 60 anos, podendo chegar a 90% naqueles com mais de 85 anos. Portanto, afirmar que a prevalência é de apenas 30% para homens entre 60 e 69 anos não condiz com a realidade estatística da doença.\n\nGABARITO: ALTERNATIVA (C). Apenas a afirmativa I está correta.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:09.395Z"
+  },
+  {
+    "id": "AJUDA_42f8c19d-5232-4c55-8ddf-e53cad4871f3",
+    "originalId": "42f8c19d-5232-4c55-8ddf-e53cad4871f3",
+    "statement": "Uma mulher de 48 anos, obesa e com antecedente de dislipidemia, procura atendimento médico de urgência. Refere episódios recorrentes de dor em hipocôndrio direito após as refeições gordurosas, mas há 12 horas, percebeu piora da dor que agora se tornou contínua e mais intensa. Refere associação de náuseas e febre (38,9 ºC). Ao exame, apresenta dor à palpação profunda do hipocôndrio direito. Exames laboratoriais revelam leucocitose com desvio à esquerda e discreta elevação dos níveis de transaminases. Foi submetida a uma ultrassonografia de abdome que descreve: vesícula distendida com paredes espessadas, discreta quantidade de líquido perivesicular. Conteúdo interno de bile espessada com presença de imagens hiperecogênicas de até 10 mm, móveis às mudanças de decúbito e com formação de sombra acústica posterior. Foi ainda observada uma imagem com as mesmas características, imóvel na região infundibular. As vias biliares extra-hepáticas têm calibre preservado.\n\nCom base no quadro clínico, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O quadro sugere obstrução transitória do colédoco, sendo esperada resolução espontânea. Sugere-se conduta expectante, analgesia e antiespasmódicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A fisiopatologia dessa patologia decorra de infecção biliar primária que ocorre por via ascendente, sendo indicada antibioticoterapia como tratamento inicial e observação da evolução do quadro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A principal hipótese diagnóstica é a de colecistite aguda litiásica complicada com perfuração, devendo-se proceder com laparotomia aberta para colecistectomia e drenagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hipótese diagnóstica principal é a de colangiocarcinoma. Nos tumores de vesícula que acometem a região infundibular, os sintomas costumam ser mais precoces, melhorando o prognóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O quadro é compatível com colecistite aguda litiásica não complicada e deve ser indicada colecistectomia videolaparoscópica precoce, por apresentar morbimortalidade similar às observadas nas colecistectomias abertas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descrito é clássico de colecistite aguda litiásica. A paciente apresenta fatores de risco (mulher, 48 anos, obesa), história prévia de cólica biliar (dor após refeições gordurosas) e uma evolução atual de dor contínua há mais de 6 horas, acompanhada de febre e leucocitose com desvio à esquerda. Os achados ultrassonográficos confirmam o diagnóstico: vesícula distendida, paredes espessadas, líquido perivesicular e cálculo impactado no infundíbulo, com as vias biliares extra-hepáticas (colédoco) de calibre preservado.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A dor da cólica biliar simples (obstrução transitória) costuma durar menos de 6 horas e não cursa com febre ou leucocitose. O quadro de 12 horas de dor contínua, associado a sinais inflamatórios e achados ultrassonográficos de espessamento da parede, indica um processo inflamatório estabelecido (colecistite), e não apenas uma obstrução transitória.\n\nAlternativa B (Incorreta): A fisiopatologia da colecistite aguda litiásica inicia-se pela obstrução mecânica do ducto cístico ou do infundíbulo por um cálculo. Isso gera estase biliar, aumento da pressão intraluminal e isquemia da mucosa, desencadeando uma inflamação química inicial. A infecção bacteriana (via ascendente ou translocação) é, na maioria das vezes, um evento secundário ao processo obstrutivo e inflamatório, e não a causa primária.\n\nAlternativa C (Incorreta): Embora a ultrassonografia descreva \"discreta quantidade de líquido perivesicular\", este é um achado comum na inflamação da vesícula. A perfuração geralmente se manifesta com sinais de peritonite difusa ou abscesso volumoso localizado, o que tornaria o quadro muito mais grave. Além disso, a conduta preferencial na colecistite aguda, mesmo quando há complicações iniciais, tem migrado para a via videolaparoscópica em centros com expertise, e não obrigatoriamente para a laparotomia aberta de imediato.\n\nAlternativa D (Incorreta): O quadro é nitidamente agudo e inflamatório, compatível com doença calculosa biliar. O colangiocarcinoma é uma neoplasia das vias biliares que costuma cursar com icterícia obstrutiva progressiva, perda de peso e colestase, o que não condiz com a apresentação de dor aguda, febre e vesícula com cálculos descrita.\n\nAlternativa E (Correta): O diagnóstico é de colecistite aguda litiásica. De acordo com as diretrizes atuais (como o Guia de Tóquio - TG18), o tratamento padrão-ouro é a colecistectomia videolaparoscópica precoce (idealmente realizada em até 72 horas do início dos sintomas). Estudos demonstram que a cirurgia precoce por vídeo reduz o tempo de internação e os custos, apresentando taxas de morbimortalidade semelhantes às da cirurgia aberta, desde que respeitadas as condições clínicas do paciente e a técnica cirúrgica.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:09.395Z"
+  },
+  {
+    "id": "AJUDA_42ff6bc4-0817-4c88-90e9-e0f4e99b7d7a",
+    "originalId": "42ff6bc4-0817-4c88-90e9-e0f4e99b7d7a",
+    "statement": "Uma paciente de 45 anos, previamente saudável, percebeu um nódulo indolor na mama direita durante o autoexame. Na consulta, a paciente refere que o nódulo tem crescido progressivamente nos últimos dois meses. O exame físico revela um nódulo de aproximadamente 3 cm, fixo e irregular no quadrante superior externo da mama direita. Não há adenomegalias axilares palpáveis. A mamografia revela uma lesão espiculada com microcalcificações associadas. A biópsia do nódulo confirma carcinoma ductal invasivo. A próxima etapa mais indicada no manejo dessa paciente deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mastectomia radical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Terapia hormonal neoadjuvante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Exame de linfonodo sentinela.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Quimioterapia neoadjuvante seguida de mastectomia radical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Radioterapia adjuvante antes da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve uma paciente com diagnóstico de carcinoma ductal invasivo, apresentando uma lesão de 3 cm (estadiamento clínico T2) e, fundamentalmente, uma axila clinicamente negativa (ausência de adenomegalias palpáveis).\n\nNo manejo cirúrgico atual do câncer de mama, a avaliação do status axilar é um pilar fundamental para o estadiamento e planejamento terapêutico. Veja a análise das alternativas:\n\na) Mastectomia radical: Incorreta. O termo \"mastectomia radical\" remete a cirurgias agressivas que incluem a retirada dos músculos peitorais e o esvaziamento axilar completo (técnica de Halsted ou variações). Atualmente, para uma lesão de 3 cm, pode-se considerar a cirurgia conservadora (quadrantectomia) ou a mastectomia simples/poupante de pele, dependendo da relação tumor/mama. Além disso, o esvaziamento axilar radical não deve ser feito de rotina em pacientes com axila clinicamente negativa (N0) sem antes avaliar o linfonodo sentinela.\n\nb) Terapia hormonal neoadjuvante: Incorreta. A hormonioterapia neoadjuvante é geralmente reservada para pacientes idosas, com comorbidades que impeçam a cirurgia imediata ou em casos de tumores luminais muito volumosos em pós-menopausadas. A paciente tem 45 anos e uma lesão passível de tratamento cirúrgico inicial.\n\nc) Exame de linfonodo sentinela: Correta. Para pacientes com câncer de mama invasivo e axila clinicamente negativa (sem linfonodos suspeitos ao exame físico ou imagem), a biópsia do linfonodo sentinela é o padrão-ouro para o estadiamento axilar. Esse procedimento permite identificar se há metástases linfonodais com baixa morbidade, evitando as complicações de um esvaziamento axilar desnecessário (como o linfedema), caso o sentinela seja negativo.\n\nd) Quimioterapia neoadjuvante seguida de mastectomia radical: Incorreta. Embora a quimioterapia neoadjuvante possa ser indicada em subtipos biológicos específicos (como triplo-negativo ou HER2-positivo) ou para reduzir o tamanho do tumor e permitir cirurgia conservadora, a \"mastectomia radical\" com esvaziamento axilar sistemático não é a conduta padrão automática após a quimioterapia, especialmente se houver resposta axilar ou se a axila era inicialmente negativa.\n\ne) Radioterapia adjuvante antes da cirurgia: Incorreta. Existe uma confusão terminológica nesta alternativa. \"Adjuvante\" refere-se ao tratamento realizado após o tratamento principal (cirurgia). A radioterapia realizada antes da cirurgia seria chamada de neoadjuvante, o que não é a rotina no câncer de mama, exceto em casos muito específicos de tumores irressecáveis ou inflamatórios para controle local, o que não é o caso de um nódulo de 3 cm.\n\nPortanto, diante de um câncer de mama invasivo com axila clinicamente negativa, o próximo passo essencial no manejo cirúrgico é a avaliação do linfonodo sentinela.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:09.395Z"
+  },
+  {
+    "id": "AJUDA_431437d0-8011-4361-b064-36d5f4b49ff4",
+    "originalId": "431437d0-8011-4361-b064-36d5f4b49ff4",
+    "statement": "Um homem de 40 anos é diagnosticado com hipertensão renovascular. Qual é o exame de imagem de escolha para investigar a etiologia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Radiografia simples de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doppler de artérias renais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Cintilografia renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ultrassonografia abdominal simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A hipertensão renovascular é uma das principais causas de hipertensão arterial secundária, ocorrendo devido a uma obstrução parcial ou total das artérias renais, geralmente por aterosclerose ou displasia fibromuscular. Para investigar a etiologia e confirmar a suspeita clínica, são necessários exames que avaliem a anatomia e o fluxo das artérias renais.\n\nAlternativa A: Incorreta. A radiografia simples de abdome não possui resolução para visualizar estruturas vasculares ou o parênquima renal de forma detalhada. Ela é útil para identificar cálculos radiopacos ou pneumoperitônio, mas não tem papel na investigação de hipertensão arterial.\n\nAlternativa B: Correta. O Doppler de artérias renais é considerado o exame inicial de escolha (triagem) por ser um método não invasivo, de baixo custo, que não utiliza radiação ionizante nem contraste nefrotóxico. Ele permite avaliar tanto a anatomia das artérias quanto a velocidade e o padrão do fluxo sanguíneo (parâmetros hemodinâmicos), sendo altamente eficaz para detectar estenoses e guiar a conduta terapêutica.\n\nAlternativa C: Incorreta. A cintilografia renal (renograma com captopril) já foi muito utilizada no passado, mas perdeu espaço para os métodos de imagem vascular. Ela avalia a repercussão funcional da estenose, mas apresenta baixa sensibilidade em pacientes com insuficiência renal ou doença bilateral, além de não fornecer detalhes anatômicos precisos da artéria renal como o Doppler, a angiotomografia ou a angiorressonância.\n\nAlternativa D: Incorreta. A ultrassonografia abdominal simples permite apenas avaliar o tamanho dos rins e a presença de massas ou hidronefrose. Embora a assimetria renal (um rim diminuído em relação ao outro) seja um sinal indireto de estenose de artéria renal, a ultrassonografia simples, sem o recurso Doppler, não consegue visualizar os vasos nem medir a velocidade do fluxo sanguíneo, tornando-se insuficiente para o diagnóstico etiológico da hipertensão renovascular.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:09.395Z"
+  },
+  {
+    "id": "AJUDA_43180fa0-fd99-4f50-9f01-0ce438b437da",
+    "originalId": "43180fa0-fd99-4f50-9f01-0ce438b437da",
+    "statement": "Um médico observou à sua frente, no ponto de ônibus, durante o trajeto para seu plantão, que uma criança, de aproximadamente 5 anos, subitamente agachou-se, bastante pálida e sudorética, e desfaleceu. Em posse de sua máscara para ventilação boca-máscara, ele iniciou o primeiro atendimento à criança. Ela estava inconsciente, não apresentava movimentos torácicos e nem pulso carotídeo palpável. Solicitou, então, que alguém acionasse o Serviço de atendimento médico de urgência (SAMU) para que trouxesse um DEA (desfibrilador externo automático). Considerando a situação apresentada, qual das seguintes afirmativas é correta sobre a conduta a ser realizada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar compressões torácicas de forma contínua, realizando concomitantemente uma ventilação a cada 2 ou 3 segundos, caso apareça um segundo socorrista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar compressões torácicas e ventilação com a máscara, mantendo a relação de duas ventilações seguidas por 30 compressões.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar compressões torácicas em uma frequência mínima de 120 movimentos por minuto e máxima de 150 movimentos por minuto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar compressões torácicas com pelo menos 6 e, no máximo, 8 centímetros de profundidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Após chegada do DEA, e instalação das pás, manter as compressões torácicas e ventilação por, pelo menos, 2 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o Suporte Básico de Vida (SBV) em pediatria, seguindo as diretrizes da American Heart Association (AHA). Vamos analisar cada alternativa para entender a conduta correta:\n\nAlternativa a) Incorreta. As compressões contínuas com ventilações assíncronas só devem ser realizadas quando a criança possuir uma via aérea avançada estabelecida (como tubo endotraqueal ou máscara laríngea). No suporte básico com máscara de ventilação, as compressões e ventilações devem ser sincronizadas em ciclos. Além disso, a frequência de uma ventilação a cada 2 ou 3 segundos é preconizada para crianças em parada respiratória (com pulso presente) ou após a intubação.\n\nAlternativa b) Correta. De acordo com os protocolos de reanimação pediátrica, a relação compressão-ventilação depende do número de socorristas. Para um único socorrista atendendo uma criança (de 1 ano até a puberdade), a relação é de 30 compressões para 2 ventilações. Caso um segundo socorrista chegue e ajude no atendimento, a relação deve ser alterada para 15 compressões para 2 ventilações. Como o médico iniciou o atendimento sozinho, a proporção 30:2 está correta.\n\nAlternativa c) Incorreta. A frequência cardíaca recomendada para as compressões torácicas em qualquer idade, durante a RCP, é de 100 a 120 movimentos por minuto. O intervalo citado na alternativa (120 a 150) está acima do padrão recomendado pelas diretrizes internacionais.\n\nAlternativa d) Incorreta. Em pediatria, a profundidade das compressões deve ser de aproximadamente um terço do diâmetro anteroposterior do tórax. Em crianças de 5 anos, isso equivale a cerca de 5 centímetros (2 polegadas). A profundidade de 6 centímetros é o limite máximo recomendado para adultos, e o valor de 8 centímetros é excessivo e perigoso para qualquer faixa etária.\n\nAlternativa e) Incorreta. Assim que o DEA (Desfibrilador Externo Automático) estiver disponível, ele deve ser utilizado imediatamente. O aparelho deve ser ligado e as pás instaladas para que ocorra a análise do ritmo cardíaco o mais rápido possível. A recomendação de manter a RCP por 2 minutos ocorre após a análise do DEA (tenha ocorrido o choque ou não), e não como uma espera após a instalação das pás.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Parada Cardiorrespiratória (PCR)",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:09.395Z"
+  },
+  {
+    "id": "AJUDA_431eb2c3-367d-4663-8ef1-abc8171ddb06",
+    "originalId": "431eb2c3-367d-4663-8ef1-abc8171ddb06",
+    "statement": "A hemorragia pós-parto é uma das principais causas de mortalidade e morbidade materna no mundo. As medidas de prevenção da HPP devem ser incorporadas na rotina de todos os profissionais que assistem pacientes em trabalho de parto. Durante o manejo ativo do 3º período do trabalho de parto a conduta correta é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar tração controlada do cordão umbilical clampeado concomitantemente a manobra de Brandt-Andrews.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "realizar clampeamento tardio dos vasos umbilicais em recém-nascidos de alto risco para Policitemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ocitocina não deve ser utilizada rotineiramente pós-parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "clampeamento precoce universal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "indicar heparina profilática pós parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Hemorragia Pós-Parto (HPP) é a principal causa de morte materna evitável no mundo, sendo a atonia uterina responsável por cerca de 80% dos casos. O manejo ativo do terceiro período (fase de dequitação) é uma recomendação universal da OMS e do Ministério da Saúde para reduzir sistematicamente essa incidência.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): O manejo ativo fundamenta-se tecnicamente na administração de ocitocina profilática (10 UI IM), na tração controlada do cordão umbilical e na massagem uterina transabdominal pós-dequitação. A Manobra de Brandt-Andrews é a técnica de escolha para a tração controlada. Ela consiste em realizar uma pressão suprapúbica com uma das mãos (em direção cefálica), estabilizando o fundo uterino para evitar a inversão uterina, enquanto a outra mão exerce uma tração suave, firme e constante no cordão umbilical, facilitando a saída da placenta após o seu descolamento.\n\nAlternativa B (Incorreta): O clampeamento tardio ou oportuno do cordão (realizado entre 1 a 3 minutos após o nascimento) é a conduta padrão para beneficiar o recém-nascido nos estoques de ferro. A policitemia neonatal, embora discutida como risco teórico do clampeamento tardio, não é uma indicação de rotina para clampeamento imediato nem faz parte das manobras de prevenção de hemorragia materna, que é o foco da questão.\n\nAlternativa C (Incorreta): A administração de ocitocina é a medida isolada de maior impacto na prevenção da HPP por atonia uterina. Deve ser administrada de rotina em todos os partos (via vaginal ou cesariana) imediatamente após o nascimento do bebê, preferencialmente por via intramuscular.\n\nAlternativa D (Incorreta): O clampeamento precoce ou imediato não é mais a prática universal recomendada. As diretrizes atuais priorizam o clampeamento oportuno, exceto em situações específicas como necessidade de reanimação neonatal imediata, descolamento prematuro de placenta ou mães com HIV/HTLV com carga viral desconhecida ou alta.\n\nAlternativa E (Incorreta): A heparina é um anticoagulante. Seu uso no pós-parto está restrito à profilaxia de eventos tromboembólicos em pacientes de alto risco. No contexto de hemorragia pós-parto, o uso de anticoagulantes seria contraproducente, pois o objetivo é favorecer a hemostasia e a contração miometrial.\n\nResumo dos componentes do Manejo Ativo do 3º Período:\n1. Ocitocina: 10 UI IM de rotina.\n2. Tração controlada do cordão: Manobra de Brandt-Andrews para evitar inversão uterina.\n3. Massagem uterina: Monitoramento do tônus uterino (Globo de Segurança de Pinard) após a saída da placenta.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:09.395Z"
+  },
+  {
+    "id": "AJUDA_431ff342-87f0-43db-aafe-d4649d8b3e7a",
+    "originalId": "431ff342-87f0-43db-aafe-d4649d8b3e7a",
+    "statement": "Assinale a melhor conduta imediata para uma paciente de 72 anos, hipertensa e diabética, submetida a angioplastia coronária com stent há 1 mês, que foi admitida no Pronto Socorro após queda da própria altura, com Escala de Coma de Glasgow de 14, pupilas isocóricas e fotorreagentes, sem déficits motores ou sensitivos.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação em UTI, avaliação neurocirúrgica e observação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "RX de crânio e de coluna cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tomografia computadorizada de crânio e de coluna cervical.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Alta com orientações de sinais de alarme e retorno ao Pronto Socorro se necessário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo inicial do traumatismo cranioencefálico (TCE) em uma paciente idosa e com comorbidades importantes. O ponto central para a resolução é identificar os fatores de risco para lesões intracranianas graves, mesmo em traumas de baixa energia (queda da própria altura).\n\nA paciente possui 72 anos e foi submetida a uma angioplastia com stent há apenas um mês. Isso indica, obrigatoriamente, que ela está em uso de dupla antiagregação plaquetária (DAPT), geralmente ácido acetilsalicílico associado a um inibidor de P2Y12 (como clopidogrel ou ticagrelor). O uso de antiagregantes ou anticoagulantes em idosos que sofrem quedas aumenta drasticamente o risco de hemorragias intracranianas, como o hematoma subdural. Além disso, ela apresenta uma pontuação de 14 na Escala de Coma de Glasgow, o que caracteriza um TCE leve, porém com alteração do nível de consciência (o normal seria 15).\n\nAlternativa a) Incorreta. A internação em UTI e a avaliação neurocirúrgica são condutas posteriores ao diagnóstico. Não se indica conduta invasiva ou monitorização intensiva sem antes realizar um exame de imagem que justifique tais medidas ou que avalie a gravidade da lesão.\n\nAlternativa b) Incorreta. O raio X de crânio é um exame obsoleto na avaliação do trauma craniano agudo, pois não permite visualizar o parênquima cerebral ou identificar sangramentos. O padrão-ouro é a tomografia computadorizada.\n\nAlternativa c) Correta. Esta é a conduta imediata. A tomografia computadorizada (TC) de crânio é mandatória nesta paciente por três motivos principais baseados em protocolos internacionais (como o Canadian CT Head Rule): idade superior a 65 anos, Escala de Glasgow menor que 15 e uso de antiagregantes plaquetários. A TC de coluna cervical também é necessária, pois idosos têm maior risco de fraturas cervicais em quedas da própria altura, muitas vezes com poucos sintomas iniciais.\n\nAlternativa d) Incorreta. Dar alta para esta paciente seria um erro grave. Devido à idade, ao uso de antiagregantes e ao Glasgow de 14, ela apresenta alto risco de deterioração neurológica por sangramento intracraniano tardio ou progressivo. A investigação por imagem deve ser realizada antes de qualquer decisão sobre alta.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Trauma",
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:09.395Z"
+  },
+  {
+    "id": "AJUDA_43252df7-93fd-439c-abde-2689ec29c945",
+    "originalId": "43252df7-93fd-439c-abde-2689ec29c945",
+    "statement": "Mulher de 55 anos, obesa, com quadro de colestase hepática de início há alguns meses, apresenta resultado de USG mostrando ausência de dilatação de vias biliares ou cálculos na vesícula. A sorologia com anticorpo x mitocôndria é positiva. Os achados clínicos que melhor caracterizam esse diagnóstico principal são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hiperpigmentação, diabetes mellitus tipo 2 (DM2), hepatomegalia e miocardiopatia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "icterícia sem prurido, xantomas, hepatomegalia e aumento das parótidas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prurido sem icterícia, fadiga, aumento das parótidas e osteoporose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prurido com icterícia, fadiga, osteoporose e hiperpigmentação",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "DIAGNÓSTICO: Colangite Biliar Primária (CBP)\n\nA questão descreve uma mulher de meia-idade com quadro de colestase crônica, ultrassonografia de abdome normal (excluindo causas extra-hepáticas/obstrutivas) e presença do anticorpo antimitocôndria (AMA), que é altamente específico, sendo o marcador padrão-ouro para o diagnóstico de Colangite Biliar Primária.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) INCORRETA: Esta descrição é clássica da Hemocromatose Hereditária, também conhecida como \"diabetes bronzeado\". A hiperpigmentação e a hepatomegalia podem ocorrer na CBP, mas o diabetes mellitus tipo 2 e a miocardiopatia são achados típicos do acúmulo de ferro nos tecidos, e não da doença biliar autoimune.\n\nAlternativa (b) INCORRETA: Na CBP, o prurido costuma ser o sintoma inicial e mais marcante, frequentemente precedendo a icterícia em anos. Dizer \"icterícia sem prurido\" contraria a história natural da doença. O aumento das parótidas não é um achado característico da CBP, sendo mais comum no etilismo crônico ou na Síndrome de Sjögren (que pode estar associada, mas não define o quadro hepático).\n\nAlternativa (c) INCORRETA: Embora prurido, fadiga e osteoporose façam parte do espectro da CBP, o aumento das parótidas é um achado estranho ao quadro clínico principal da doença, o que invalida a alternativa como a melhor caracterização.\n\nAlternativa (d) CORRETA: Esta alternativa reúne os principais achados clínicos e complicações da CBP:\n1. Prurido e Fadiga: São os sintomas mais comuns e precoces. O prurido é tipicamente noturno e palmoplantar.\n2. Icterícia: Surge com a progressão da doença e destruição dos ductos biliares interlobulares.\n3. Osteoporose: É uma complicação frequente devido à má absorção de vitaminas lipossolúveis (como a Vitamina D) e a outros fatores metabólicos da colestase crônica.\n4. Hiperpigmentação: Ocorre em áreas expostas e de coçadura, sendo um achado cutâneo clássico da evolução da doença.\n\nConcluindo, a alternativa (d) apresenta a constelação de sintomas e sinais que melhor caracteriza a evolução clínica da Colangite Biliar Primária.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Hepatopatias Autoimunes"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:34:09.395Z"
+  }
+]

@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_f169b032-0b71-4ed2-9daa-a3fbdd8c56bf",
+    "originalId": "f169b032-0b71-4ed2-9daa-a3fbdd8c56bf",
+    "statement": "Paciente de 50 anos, com fluxo menstrual volumoso, dismenorreia e dor pélvica há um ano, presumivelmente por mioma, sendo essa a única alteração aos testes de rastreamento e exames diagnósticos pré-operatórios. Passará por histerectomia total laparoscópica, e seu médico destaca não ser possível a extração do órgão de forma íntegra, devido às suas grandes dimensões. Por isso, necessitará realizar fragmentação (morcelamento) do conjunto útero e nódulo tumoral de forma protegida, ou seja, com o produto de histerectomia dentro de um saco de contenção intra-abdominal, para que não haja espalhamento tecidual na superfície peritoneal e vísceras. Dessa forma, na eventualidade de um achado incidental de tumor maligno no pós-operatório, que era previamente suposto como mioma, espera-se não piorar estadiamento e prognóstico da paciente.\nQual é a neoplasia que justifica essa conduta cirúrgica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carcinoma espinocelular do colo uterino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adenocarcinoma do endométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sarcoma uterino.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Carcinoma seroso do ovário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda um tema crítico na ginecologia cirúrgica moderna: o risco de disseminação de neoplasias malignas ocultas durante a fragmentação (morcelamento) de úteros supostamente portadores de miomas benignos.\n\nAnálise das alternativas:\n\nAlternativa (c) - Correta: O sarcoma uterino, em especial o leiomiossarcoma, é o principal motivo para a adoção do morcelamento protegido (dentro de bolsas de contenção). Esses tumores são raros, mas extremamente agressivos, e muitas vezes não podem ser diferenciados dos leiomiomas benignos por exames de imagem, como ultrassonografia ou ressonância magnética. Se um sarcoma oculto for fragmentado livremente na cavidade abdominal, ocorre o espalhamento de células neoplásicas por toda a superfície peritoneal e vísceras. Esse evento causa o chamado *upstaging* iatrogênico, transformando uma doença que estava restrita ao útero (Estádio I) em uma doença disseminada (Estádio IV), o que reduz drasticamente as chances de cura e o tempo de sobrevida da paciente.\n\nAlternativa (a) - Incorreta: O carcinoma espinocelular do colo uterino é geralmente detectado por meio do rastreamento citopatológico (Papanicolaou) e do exame físico ginecológico (inspeção e colposcopia) no pré-operatório. Ele não costuma se apresentar como uma massa miometrial volumosa que mimetiza um mioma a ponto de ser o foco principal da preocupação com o morcelamento protegido do corpo uterino.\n\nAlternativa (b) - Incorreta: O adenocarcinoma do endométrio costuma causar sangramento uterino anormal, o que leva à investigação endometrial (biópsia ou curetagem) antes da indicação cirúrgica definitiva. Embora a fragmentação de qualquer câncer seja indesejada, o risco de encontrar um câncer de endométrio de forma totalmente incidental em uma cirurgia para \"mioma gigante\" é menor do que o risco epidemiológico e o impacto prognóstico devastador relacionado especificamente ao sarcoma oculto no miométrio.\n\nAlternativa (d) - Incorreta: O carcinoma seroso de ovário é uma neoplasia anexial. O planejamento cirúrgico para massas ovarianas suspeitas difere do tratamento para miomas, e a via preferencial geralmente não envolve a fragmentação do órgão. O enunciado foca especificamente na histerectomia por suposto mioma, o que direciona a patologia para a musculatura uterina (miométrio), local de origem dos sarcomas.\n\nEm resumo, a técnica de morcelamento em bolsa (*contained morcellation*) visa mitigar o risco de disseminação de um sarcoma uterino não diagnosticado previamente, preservando o prognóstico da paciente caso a malignidade seja confirmada pelo estudo anatomopatológico.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:39.528Z"
+  },
+  {
+    "id": "AJUDA_f16b30fe-a8ed-4b6c-adb8-678625ad7dd1",
+    "originalId": "f16b30fe-a8ed-4b6c-adb8-678625ad7dd1",
+    "statement": "Leia o caso clínico a seguir. \n\nO Sr. A.E.S tem 73 anos e trabalha em uma área rural. Durante atendimento, A.E.S relatou dormência em algumas partes dos braços e das pernas. Após a realização do exame laboratorial, A.E.S recebeu o diagnóstico de hanseníase e, em seguida ao diagnóstico inicial da doença, recebeu o tratamento da Poliquimioterapia (PQT). Além disso, foi realizado o acompanhamento de familiares e de outras pessoas que convivem com o paciente, a fim de identificar novos casos precocemente.\n\nAs condutas descritas nesse caso foram realizadas",
+    "options": [
+      {
+        "id": "A",
+        "text": "pelos serviços de especialidades dermatológicas da rede própria do SUS local e das unidades conveniadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pela Unidade Básica de Saúde, UBSF, pois essa é a porta de entrada para o tratamento da hanseníase no SUS.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "pelo Centro de Referência em atendimento a doenças infecciosas e tropicais, unidade estadual do SUS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pelo Hospital Municipal da cidade próxima, referência para todas as especialidades e necessidades médicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve um paciente com sintomas clássicos de hanseníase (dormência), que recebeu diagnóstico, tratamento com Poliquimioterapia (PQT) e teve seus contatos examinados. Essas ações compõem os pilares do controle da hanseníase no Brasil.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA?\n\nA hanseníase é uma doença de notificação compulsória e seu manejo é prioridade da Atenção Primária à Saúde (APS). De acordo com as diretrizes do Ministério da Saúde e o Programa Nacional de Controle da Hanseníase, a Unidade Básica de Saúde (UBS) ou a Unidade de Saúde da Família (UBSF) é a principal porta de entrada e a responsável pela execução das ações de vigilância, diagnóstico, tratamento e investigação de contatos. A descentralização do atendimento para a rede básica visa facilitar o acesso do paciente, garantir a adesão ao tratamento prolongado e realizar a busca ativa de casos na comunidade.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): Embora especialistas (dermatologistas) possam tratar a hanseníase, o SUS preconiza que o atendimento não seja restrito ou centralizado em especialidades. O objetivo é que qualquer médico ou enfermeiro da atenção básica esteja capacitado para diagnosticar e tratar casos rotineiros, reservando os especialistas para casos de dúvida diagnóstica ou complicações graves.\n\nAlternativa (c): Os Centros de Referência (estaduais ou regionais) existem no SUS, mas sua função é atuar como suporte para casos complexos, como resistência medicamentosa, reações hansênicas de difícil manejo ou necessidade de cirurgias reabilitadoras. O manejo inicial e o acompanhamento de contatos descritos no enunciado são atribuições típicas da atenção básica, não necessitando, a priori, de uma unidade de referência.\n\nAlternativa (d): O Hospital Municipal é uma unidade de atenção secundária ou terciária voltada para urgências, emergências e internações. A hanseníase é uma doença crônica de tratamento ambulatorial. O ambiente hospitalar não é o local adequado para o acompanhamento longitudinal e para a vigilância epidemiológica de contatos domiciliares.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Hanseníase",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:39.528Z"
+  },
+  {
+    "id": "AJUDA_f16b911b-7c11-424d-9c0e-4212c7f2a0a7",
+    "originalId": "f16b911b-7c11-424d-9c0e-4212c7f2a0a7",
+    "statement": "Menino de 10 meses é atendido em unidade básica de saúde (UBS) com história de febre alta iniciada há 4 dias (até 39 °C), com 3 picos por dia, inicialmente sem outros sintomas associados, evoluindo com exantema maculopapular em região cervical e tronco. Não apresentou febre nas últimas 18 horas. \n\nA respeito de possíveis diagnósticos diferenciais para o quadro apresentado, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O diagnóstico de síndrome mão-pé-boca é mais provável, ainda que não tenham sido observadas vesículas na pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A anamnese e o exame físico exigem descartar laboratorialmente o diagnóstico diferencial de sarampo, pois se trata de menor de 1 ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A anamnese e o exame físico são suficientes para o diagnóstico de exantema súbito, não havendo indicação de exames complementares.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A presença de febre alta torna um quadro bacteriano mais provável, o que, associado à presença do exantema, sugere o diagnóstico de escarlatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um lactente de 10 meses com febre alta isolada que, após a remissão da febre (crise), apresenta o surgimento de um exantema maculopapular iniciado no tronco e no pescoço. Este é o quadro patognomônico do exantema súbito (também conhecido como roséola infantil), causado principalmente pelo herpesvírus humano tipo 6 (HHV-6).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A síndrome mão-pé-boca, causada geralmente pelo vírus Coxsackie A16, manifesta-se com febre, estomatite (vesículas e úlceras orais) e exantema pápulo-vesicular localizado preferencialmente nas mãos, pés e região glútea. No caso descrito, o exantema é maculopapular, central (tronco e cervical) e surgiu especificamente após o desaparecimento da febre, o que não é o padrão da síndrome mão-pé-boca.\n\nAlternativa b) Incorreta. O sarampo apresenta um período prodrômico marcado por sintomas catarrais intensos (tosse, coriza, conjuntivite com fotofobia) e manchas de Koplik. No sarampo, o exantema surge no pico da febre e o estado geral da criança é bastante comprometido. No exantema súbito, a criança costuma estar em bom estado geral e a febre desaparece exatamente quando as manchas surgem. Embora o sarampo seja uma doença de notificação compulsória, o quadro clínico descrito é clássico de roséola, não justificando a investigação para sarampo neste contexto específico de \"febre que some para o exantema aparecer\".\n\nAlternativa c) Correta. O diagnóstico de exantema súbito é eminentemente clínico. A história de febre alta que dura de 3 a 5 dias e desaparece subitamente com o aparecimento concomitante do exantema maculopapular é suficiente para a confirmação diagnóstica em lactentes. Não há necessidade de exames complementares, como hemograma ou sorologias, pois o quadro é benigno e autolimitado.\n\nAlternativa d) Incorreta. A escarlatina é uma doença causada pela toxina do estreptococo beta-hemolítico do grupo A. Ela se manifesta com faringite estreptocócica (dor de garganta), língua em framboesa e um exantema micropapular (com aspecto de \"lixa\") que surge durante a febre, acentuando-se em áreas de dobras (sinal de Pastia) e com palidez perioral (sinal de Filatov). O quadro descrito de desaparecimento da febre antes do exantema e a idade do paciente (mais comum em escolares) afastam o diagnóstico de escarlatina.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Febre na Pediatria",
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:39.528Z"
+  },
+  {
+    "id": "AJUDA_f170b1a4-8f2c-435b-a3b4-9d39c5bb44c7",
+    "originalId": "f170b1a4-8f2c-435b-a3b4-9d39c5bb44c7",
+    "statement": "Lactente, 4 meses, vem ao pronto atendimento trazido pela mãe com queixa de hipoatividade e cianose importante com início do quadro há 4 horas. Mãe refere que tem cardiopatia congênita, faz seguimento e está aguardando cirurgia. Ao exame físico, paciente apresenta cianose importante saturação periférica de 67%, letárgico, taquidispneico, hipoativo. Na ausculta cardíaca, estava taquicárdico FC= 178 bpm, apresentava sopro sistólico discreto em foco pulmonar. CPP= MV + bilateral sem RA, TCS e TIC moderadas, pulsos periféricos presentes e simétricos em quatro membros, porém com cianose importante. Em relação ao caso, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paciente tem coarctação de aorta e com o fechamento do canal arterial, houve piora clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Paciente apresenta clínica de insuficiência cardíaca com diagnóstico provável CIA.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Quadro típico de miocardiopatia obstrutiva de ventrículo esquerdo causando baixo débito sistêmico pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de crise de hipoxemia que pode ocorrer com frequência nos pacientes com tetralogia de Fallot.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Crise de hipertensão pulmonar por cardiopatia de hiperfluxo que evoluiu para síndrome de Eisenmenger.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve um lactente de 4 meses com diagnóstico prévio de cardiopatia congênita que apresenta uma crise aguda de cianose (hipoxemia), caracterizada por queda acentuada da saturação (67%), letargia e taquidispneia. Um detalhe semiótico fundamental em crises de hipoxemia na Tetralogia de Fallot é que o sopro sistólico (causado pela estenose pulmonar) pode se tornar mais suave ou discreto durante a crise, pois o fluxo sanguíneo é desviado do ventrículo direito diretamente para a aorta através da comunicação interventricular (CIV), diminuindo a passagem de sangue pela artéria pulmonar.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA alternativa (d) é a correta porque descreve exatamente a crise de hipoxemia (ou crise hipercianótica), que é uma emergência pediátrica clássica da Tetralogia de Fallot. Essas crises ocorrem geralmente entre os 2 e 6 meses de vida, muitas vezes desencadeadas por choro, evacuação ou dor, que aumentam a obstrução da via de saída do ventrículo direito ou reduzem a resistência vascular sistêmica. O tratamento envolve manobras de genupeitoral (joelho-tórax), oxigenioterapia, sedação e, em alguns casos, uso de betabloqueadores ou expansão volêmica.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): A coarctação da aorta é uma cardiopatia acianótica (em sua forma clássica) que se manifesta por insuficiência cardíaca e choque cardiogênico no período neonatal imediato, quando o canal arterial se fecha. Além disso, a característica principal seria a diferença de pulsos e pressão entre membros superiores e inferiores, o que não foi relatado (os pulsos estavam simétricos).\n\nAlternativa (b): A Comunicação Interatrial (CIA) é uma cardiopatia de hiperfluxo pulmonar e habitualmente acianótica. Ela não causa crises agudas de cianose e letargia nessa faixa etária; a maioria das crianças com CIA é, inclusive, assintomática nos primeiros anos de vida.\n\nAlternativa (c): A miocardiopatia obstrutiva do ventrículo esquerdo causaria sintomas de baixo débito sistêmico (má perfusão, pulsos finos, palidez), mas não se manifesta tipicamente com cianose central isolada e grave como a descrita no caso. O problema principal aqui é a falta de oxigenação do sangue (shunt direita-esquerda), e não uma falha de ejeção sistêmica primária.\n\nAlternativa (e): A Síndrome de Eisenmenger é o estágio final de cardiopatias de hiperfluxo (como CIV ou persistência do canal arterial) que evoluem com hipertensão pulmonar fixa e inversão do shunt. No entanto, esse processo leva anos para se desenvolver, não ocorrendo em um lactente de apenas 4 meses de idade. Além disso, o quadro de Eisenmenger não se apresenta como uma crise súbita de cianose com melhora e piora, mas sim como uma cianose progressiva e crônica.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:39.528Z"
+  },
+  {
+    "id": "AJUDA_f1716532-4ba0-458f-b45a-6fe899b81fb8",
+    "originalId": "f1716532-4ba0-458f-b45a-6fe899b81fb8",
+    "statement": "Mulher, 84 anos, portadora de síndrome demencial fase moderada, apresentou queda no domicílio com fratura de fêmur e foi internada para correção cirúrgica. Após 12 horas do procedimento, evoluiu com confusão mental e agitação psicomotora de difícil controle, medidas não farmacológicas. Qual é a melhor conduta medicamentosa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Clonazepam.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quetiapina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Donepezila.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sertralina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\nO quadro clínico descreve uma paciente idosa com diagnóstico prévio de demência que apresenta um início agudo de confusão mental e agitação psicomotora 12 horas após um procedimento cirúrgico. Este cenário é típico de delirium (ou estado confusional agudo) sobreposto a um quadro demencial. Quando as medidas não farmacológicas (reorientação, controle de ruídos, presença de familiares) falham e a paciente apresenta agitação que coloca em risco sua segurança ou o tratamento, o uso de antipsicóticos em doses baixas é a conduta indicada.\n\nPOR QUE A ALTERNATIVA B ESTÁ CORRETA?\nA quetiapina é um antipsicótico atípico de segunda geração. No tratamento do delirium em idosos, especialmente naqueles que já possuem síndromes demenciais, a quetiapina é frequentemente utilizada devido ao seu perfil de segurança em relação a sintomas extrapiramidais (como tremores e rigidez), que são mais comuns com antipsicóticos típicos (como o haloperidol). Ela auxilia no controle da agitação psicomotora e na organização do pensamento de forma aguda.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\nA) Clonazepam: Os benzodiazepínicos devem ser evitados no manejo do delirium em idosos. Eles são fatores de risco para a própria confusão mental e podem causar efeito paradoxal, aumentando a agitação em vez de sedar. Além disso, aumentam o risco de quedas, depressão respiratória e broncoaspiração. Seu uso em delirium é restrito a casos de abstinência de álcool ou de benzodiazepínicos.\nC) Donepezila: É um inibidor da acetilcolinesterase indicado para o tratamento crônico da doença de Alzheimer. Sua função é melhorar a cognição a longo prazo, não possuindo eficácia ou indicação para o controle de crises agudas de agitação ou delirium.\nD) Sertralina: É um antidepressivo da classe dos inibidores seletivos da recaptação de serotonina. Medicamentos desta classe levam semanas para iniciar seu efeito terapêutico e não possuem ação sobre a agitação psicomotora aguda ou sintomas psicóticos do delirium.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório",
+      "Demências",
+      "Saúde do Idoso",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:39.528Z"
+  },
+  {
+    "id": "AJUDA_f17226d3-53fa-456a-9510-61bf26ba9443",
+    "originalId": "f17226d3-53fa-456a-9510-61bf26ba9443",
+    "statement": "Mulher de 72 anos foi atendida em hospital de médio porte. Relatava emagrecimento e dor abdominal com irradiação para região dorsal há 3 meses; há 1 mês a urina ficou mais escura, começou a apresentar prurido cutâneo intenso e icterícia em escleras. Ao exame físico, encontrava-se ictérica (três cruzes em quatro), emagrecida; exame do abdome com fígado palpável abaixo da borda costal direita, assim como uma massa bem definida, de consistência cística, não dolorosa em hipocôndrio direito.\nNesse caso, o mais adequado é solicitar",
+    "options": [
+      {
+        "id": "A",
+        "text": "ultrassonografia para avaliar colecistite crônica calculosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tomografia computadorizada para avaliar vias biliares e pâncreas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "colangiopancreatografia por ressonância para avaliar coledocolitíase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "biópsia percutânea com agulha da massa palpada para avaliar neoplasia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta uma síndrome colestática (icterícia, colúria e prurido) de caráter progressivo, associada a sintomas constitucionais (emagrecimento) e dor abdominal que irradia para o dorso. O achado físico fundamental é a massa de consistência cística e indolor palpável no hipocôndrio direito, que corresponde à vesícula biliar distendida. Este achado é conhecido como Sinal de Courvoisier-Terrier. De acordo com a Lei de Courvoisier, em um paciente ictérico, a presença de vesícula biliar palpável e indolor sugere que a obstrução do ducto biliar comum é causada por uma neoplasia (como câncer de cabeça de pâncreas ou tumor de ampola de Vater) e não por cálculos, já que na doença calculosa a vesícula costuma estar fibrosada e incapaz de se distender.\n\nAlternativa a: Incorreta. A colecistite crônica calculosa não costuma causar icterícia obstrutiva persistente nem emagrecimento acentuado. Além disso, em quadros de colelitíase crônica, a vesícula geralmente se torna atrofiada e fibrótica, o que impede que ela seja palpável ao exame físico, mesmo na presença de obstrução biliar.\n\nAlternativa b: Correta. Diante da principal suspeita diagnóstica (neoplasia periampular ou de cabeça de pâncreas), a tomografia computadorizada (TC) de abdome com contraste é o exame inicial mais adequado. A TC permite visualizar a massa pancreática, avaliar a dilatação dos ductos biliar e pancreático, identificar a causa da obstrução e, principalmente, realizar o estadiamento vascular (verificar o envolvimento de vasos como a artéria mesentérica superior e veia porta) para definir a conduta cirúrgica.\n\nAlternativa c: Incorreta. A colangiorressonância é um excelente exame para avaliar a anatomia das vias biliares e é muito sensível para detectar coledocolitíase (cálculos). No entanto, a apresentação clínica (idade avançada, emagrecimento e sinal de Courvoisier) aponta fortemente para malignidade, e a tomografia é superior para o estadiamento oncológico inicial e avaliação de ressecabilidade vascular em comparação à ressonância focada apenas em vias biliares.\n\nAlternativa d: Incorreta. A biópsia percutânea de uma massa abdominal com suspeita de neoplasia pancreática não deve ser realizada de rotina se a lesão for considerada ressecável pelos exames de imagem. Existe um risco real de disseminação de células tumorais no trajeto da agulha (seeding peritoneal). Se os exames de imagem sugerem neoplasia e o paciente tem condições clínicas, a conduta costuma ser a ressecção cirúrgica direta, reservando a biópsia para casos de doença avançada/metastática onde será necessária quimioterapia paliativa.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Vesícula e Vias Biliares",
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": 41.358293966692464,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:39.528Z"
+  },
+  {
+    "id": "AJUDA_f173122a-170f-482d-96ab-b2a879d52114",
+    "originalId": "f173122a-170f-482d-96ab-b2a879d52114",
+    "statement": "Gestante de 39 semanas é admitida com contrações uterinas. Durante a evolução do trabalho de parto, foi realizada a cardiotocografia representada na figura abaixo. De acordo com estes dados, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O padrão cardiotocográfico é compatível com insuficiência placentária decorrente de hipertensão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O padrão cardiotocográfico é compatível com DIPs precoces, decorrentes da compressão cefálica, no final do período expulsivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O padrão cardiotocográfico é compatível com a estase sanguínea no espaço interviloso que ocorre durante as contrações uterinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O padrão cardiotocográfico demonstra a ocorrência de compressão funicular e pode ser decorrente de prolapso de cordão.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para analisar esta questão, devemos observar as características das desacelerações na cardiotocografia (CTG) apresentada. O traçado mostra quedas na frequência cardíaca fetal (FCF) que possuem início, duração e profundidade variáveis em relação às contrações uterinas. Elas apresentam uma descida rápida e um retorno também rápido à linha de base, assumindo formatos que lembram as letras V, U ou W. Notavelmente, a própria imagem traz a legenda \"Padrão variável\".\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A insuficiência placentária, muito comum em gestantes com hipertensão arterial, manifesta-se tipicamente por meio de desacelerações tardias (conhecidas como DIP II). No DIP II, o ponto mais baixo da desaceleração (nadir) ocorre sempre após o pico da contração uterina (decalagem), apresentando uma recuperação lenta, o que difere do padrão visualizado na imagem.\n\nAlternativa b) Incorreta. As desacelerações precoces (DIP I) são causadas pela compressão da cabeça fetal (reflexo vagal). Elas são caracterizadas por serem síncronas com a contração uterina, ou seja, o início e o nadir da desaceleração coincidem com o início e o pico da contração (imagem em espelho). O traçado da questão mostra quedas muito mais profundas, abruptas e que não guardam essa relação de sincronia perfeita.\n\nAlternativa c) Incorreta. A redução da oferta de oxigênio decorrente da estase sanguínea no espaço interviloso durante a contração é o mecanismo fisiopatológico que explica as desacelerações tardias (DIP II). Como o traçado mostra um padrão variável e não tardio, esta alternativa está errada.\n\nAlternativa d) Correta. O padrão cardiotocográfico apresentado é o de desacelerações variáveis (também chamadas de DIP III ou umbilicais). A causa fisiopatológica dessas desacelerações é a compressão do cordão umbilical (compressão funicular). Essa compressão pode ser transitória e benigna (como em uma circular de cordão apertada momentaneamente) ou indicar situações graves, como o prolapso de cordão, onde o cordão é comprimido entre a apresentação fetal e o canal de parto. O formato da onda reflete as alterações de pressão nos vasos umbilicais e a resposta barrorreflexa do feto.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Vitalidade Fetal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/9eb9041377ddab47f48097ac2208bea34bf5b0288f2654e54050bd8dbd6cdc99.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_f173122a-170f-482d-96ab-b2a879d52114_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:39.946Z"
+  },
+  {
+    "id": "AJUDA_f173ba36-7ca1-431a-869a-9ee568753000",
+    "originalId": "f173ba36-7ca1-431a-869a-9ee568753000",
+    "statement": "A depressão é considerada uma doença de incidência alta, que atinge pessoas de todas as camadas sociais. Discute-se, pois, sobre os fatores biológicos, afetivos e ambientais que interagem em sua etiologia. Há hipóteses que relacionam mudanças hormonais com alteração do humor. \n\nAssinale a alternativa que apresenta o grupo mais atingido pela depressão.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Homens e mulheres de meia-idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Adolescentes e jovens adultos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mulheres.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Homens de negócios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Crianças.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE EPIDEMIOLÓGICA DA DEPRESSÃO\n\nA prevalência de transtornos depressivos é um dos temas mais consolidados na epidemiologia psiquiátrica. Estudos globais, incluindo dados da Organização Mundial da Saúde (OMS) e do DSM-5-TR, indicam que mulheres apresentam um risco aproximadamente duas vezes maior de desenvolver depressão ao longo da vida em comparação aos homens.\n\nALTERNATIVA A - INCORRETA: Embora a depressão seja comum na meia-idade devido a fatores como crises existenciais e mudanças de saúde, o fator gênero é um preditor epidemiológico mais forte do que a faixa etária isolada. A prevalência feminina é consistentemente superior à masculina em quase todas as idades após a puberdade.\n\nALTERNATIVA B - INCORRETA: A adolescência e o início da vida adulta são períodos de vulnerabilidade em que muitos transtornos mentais se manifestam pela primeira vez. No entanto, mesmo nesta fase, a disparidade de gênero já está estabelecida, com maior incidência em mulheres.\n\nALTERNATIVA C - CORRETA: Esta é a alternativa correta. A literatura médica aponta uma proporção de aproximadamente 2:1 entre mulheres e homens. As causas para essa prevalência elevada no grupo feminino são multifatoriais:\n1. Fatores Hormonais: Variações de estrogênio e progesterona (ciclo menstrual, pós-parto e perimenopausa) interagem com sistemas de neurotransmissores como a serotonina.\n2. Fatores Sociais: As mulheres estão mais expostas à sobrecarga de papéis (trabalho formal somado ao trabalho doméstico), menores salários e maiores taxas de violência doméstica e sexual.\n3. Diagnóstico: Mulheres tendem a expressar mais seus sentimentos e buscar ajuda profissional com maior frequência, o que pode contribuir para uma maior taxa de diagnósticos registrados.\n\nALTERNATIVA D - INCORRETA: Não há base estatística para afirmar que este grupo específico seja o mais atingido. Embora o estresse ocupacional e a pressão corporativa sejam fatores de risco ambientais, eles não superam a prevalência observada no gênero feminino como um todo.\n\nALTERNATIVA E - INCORRETA: A depressão em crianças tem uma prevalência significativamente menor do que em adolescentes e adultos. Além disso, antes da puberdade, a diferença na incidência entre meninos e meninas é praticamente inexistente.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:39.946Z"
+  },
+  {
+    "id": "AJUDA_f187150a-4e5c-440a-b9f3-a62199f1c1a5",
+    "originalId": "f187150a-4e5c-440a-b9f3-a62199f1c1a5",
+    "statement": "Um homem de 35 anos apresenta dispneia aos esforços e queixa-se de palpitações ocasionais. Ao exame, observa-se sopro sistólico em crescendo-decrescendo no foco mitral, irradiando para borda esternal esquerda. Durante a manobra de Valsalva (fase de esforço), o sopro aumenta claramente de intensidade. Qual das valvopatias abaixo é mais compatível com esta resposta ao Valsava?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estenose aórtica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Comunicação interatrial com hiperfluxo (sopro de ejeção).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Miocardiopatia Hipertrófica Obstrutiva (MHO).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Insuficiência mitral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Insuficiência tricúspide.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O ponto central para resolver esta questão é entender a dinâmica hemodinâmica das manobras que alteram o retorno venoso. A manobra de Valsalva (na fase de esforço) diminui o retorno venoso, reduzindo o volume de sangue dentro do ventrículo esquerdo.\n\nNa Miocardiopatia Hipertrófica Obstrutiva (MHO), a obstrução da via de saída do ventrículo esquerdo ocorre devido à proximidade do septo hipertrofiado com a valva mitral. Quando o volume ventricular diminui (como no Valsalva ou ao ficar de pé), o ventrículo \"murcha\", o que aproxima ainda mais o septo da valva mitral, piorando a obstrução e, consequentemente, aumentando a intensidade do sopro.\n\nAnálise das alternativas:\n\na) Incorreta. Na estenose aórtica, o sopro é sistólico em crescendo-decrescendo, mas a manobra de Valsalva, ao reduzir o débito cardíaco e o volume de sangue que passa pela valva, faz com que a intensidade do sopro diminua, e não aumente.\n\nb) Incorreta. O sopro na CIA é decorrente do hiperfluxo na valva pulmonar. Com a diminuição do retorno venoso sistêmico durante o Valsalva, o volume de sangue que chega ao lado direito do coração diminui, reduzindo a intensidade do sopro.\n\nc) Correta. A MHO é uma das poucas condições em que o sopro sistólico aumenta com a manobra de Valsalva. A redução do volume sistólico final e do pré-enchimento ventricular acentua o gradiente de obstrução na via de saída do ventrículo esquerdo, tornando o sopro mais audível.\n\nd) Incorreta. A insuficiência mitral típica gera um sopro holossistólico (e não em diamante/ejeção) que geralmente irradia para a axila. Com a manobra de Valsalva, a redução do enchimento ventricular e do volume sistólico tende a diminuir a intensidade deste sopro.\n\ne) Incorreta. A insuficiência tricúspide produz um sopro holossistólico que tipicamente aumenta de intensidade com a inspiração profunda (manobra de Rivero-Carvallo). No Valsalva, ocorre queda do retorno venoso para as cavidades direitas, o que reduz a intensidade do sopro.\n\nPortanto, diante de um sopro sistólico que aumenta com Valsalva em um paciente jovem, o diagnóstico principal a ser considerado é a Miocardiopatia Hipertrófica Obstrutiva. Outra condição que poderia apresentar comportamento semelhante (aumento ao Valsalva) é o Prolapso de Valva Mitral, mas este costuma apresentar um clique mesossistólico seguido de sopro telessistólico.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Cardiomiopatias",
+      "Semiologia Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:39.946Z"
+  },
+  {
+    "id": "AJUDA_f187682c-63c6-4ced-9f4d-695b98c9484a",
+    "originalId": "f187682c-63c6-4ced-9f4d-695b98c9484a",
+    "statement": "Uma das principais formas de acesso aos serviços de saúde no Brasil é o Sistema Único de Saúde (SUS), no qual o cuidado é ofertado através de diferentes níveis de atenção. Em termos de atenção primária, há a Estratégia Saúde da Família (ESF), que atua na prevenção e promoção de saúde por meio de ações constantes e permanentes, onde a família como um todo é o foco principal para atuação de um cuidado multiprofissional.\n\nSobre o tema acima, analise as afirmativas abaixo:\nI. O núcleo familiar é o elemento central do cuidado na prática profissional de saúde e entender as particularidades de cada membro permite que as equipes de saúde desenvolvam uma visão mais ampla do processo saúde-doença e, com isso, o planejamento e execução de ações que serão efetivas para promoção do bem-estar biopsicossocial de cada usuário.\nII. Para que as ações sejam desenvolvidas, primeiro é necessário que a ESF conheça o seu território. Para isso existe o processo de territorialização, desenvolvido a partir de técnicas específicas que irão permitir a elaboração de um diagnóstico situacional para que assim, a equipe multiprofissional tenha conhecimento da realidade de sua população, a fim de realizar intervenções em nível assistencial, de acordo com as particularidades apresentadas.\nIII. Com a finalidade de entender melhor as individualidades de cada família e seus membros, atualmente a ESF conta com ferramentas de abordagem familiar que direcionam os profissionais na identificação de problemas, fatores de risco e necessidades, permitindo, assim, sistematizar um plano de intervenções, como por exemplo, o genograma e o ecomapa.\nIV. Enquanto o ecomapa representa graficamente a estrutura familiar, incluindo relações de parentesco, características dos membros da família, como idade, gênero, e informações sobre saúde física e mental, o genograma, por sua vez, é uma representação visual das relações de uma família com o seu ambiente social.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "IV, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I e II, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I, II e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "II e III, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das afirmativas:\n\nAfirmativa I: Está correta. A Estratégia Saúde da Família (ESF) estabelece a família como o núcleo central da atenção. Ao deslocar o foco do indivíduo isolado para o seu contexto familiar, a equipe consegue compreender melhor as variáveis que interferem no processo saúde-doença, como hábitos de vida, dinâmicas relacionais e condições socioeconômicas. Isso possibilita um cuidado integral e biopsicossocial.\n\nAfirmativa II: Está correta. A territorialização é a etapa fundamental para o planejamento das ações em saúde na Atenção Primária. Não se trata apenas de delimitar uma área geográfica, mas de reconhecer o território-processo, identificando grupos de risco, equipamentos sociais e as necessidades específicas daquela população. O diagnóstico situacional derivado desse processo orienta as intervenções da equipe multiprofissional.\n\nAfirmativa III: Está correta. O uso de ferramentas de abordagem familiar é essencial para organizar o cuidado. O genograma e o ecomapa permitem que o profissional visualize, de forma rápida e sistematizada, a estrutura da família, os ciclos de vida, as doenças prevalentes no grupo e a qualidade das relações, auxiliando na criação de um Plano Terapêutico Singular (PTS).\n\nAfirmativa IV: Está incorreta. Houve uma inversão de conceitos nesta afirmativa. O Genograma é que representa graficamente a estrutura interna da família, as relações de parentesco, dados de saúde e geracionais. O Ecomapa, por outro lado, é a ferramenta que ilustra o relacionamento da família com o meio externo e sua rede de apoio social (trabalho, escola, igreja, serviços de saúde).\n\nConclusão: Estão corretas as afirmativas I, II e III. Portanto, a alternativa correta é a letra (c).",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:11:39.946Z"
+  }
+]

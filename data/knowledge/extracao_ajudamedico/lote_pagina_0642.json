@@ -1,0 +1,521 @@
+[
+  {
+    "id": "AJUDA_b3803d1a-130d-4aa1-abbe-734efa3580c9",
+    "originalId": "b3803d1a-130d-4aa1-abbe-734efa3580c9",
+    "statement": "Qual dos fármacos apresentados abaixo exerce interação medicamentosa com contraceptivos hormonais orais, reduzindo a sua eficácia contraceptiva?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doxiciclina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ácido valproico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ampicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tirzepatida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Metronidazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A: Incorreta. A Doxiciclina pertence à classe das tetraciclinas. Atualmente, consensos internacionais, como os do CDC (Centers for Disease Control and Prevention) e da OMS, indicam que antibióticos que não são indutores enzimáticos, como a doxiciclina, não reduzem a eficácia dos contraceptivos hormonais. A teoria de que eles alterariam a circulação entero-hepática de forma clinicamente relevante é hoje considerada desprovida de evidência para a maioria dos antibióticos, com exceção das rifamicinas (como a rifampicina).\n\nAlternativa B: Incorreta. O Ácido Valproico é um anticonvulsivante que atua principalmente como inibidor das enzimas do citocromo P450. Diferente de outros anticonvulsivantes, como a fenitoína, o fenobarbital e a carbamazepina, que são indutores enzimáticos e aceleram o metabolismo dos hormônios, o ácido valproico não reduz os níveis séricos dos contraceptivos.\n\nAlternativa C: Incorreta. A Ampicilina, assim como a doxiciclina, é um antibiótico que não possui capacidade de indução enzimática. Estudos clínicos modernos não demonstraram redução significativa nos níveis hormonais ou aumento do risco de gravidez em mulheres usando penicilinas concomitantemente com anticoncepcionais orais.\n\nAlternativa D: Correta. A Tirzepatida é um agonista dos receptores de GIP (peptídeo insulinotrópico dependente de glicose) e GLP-1 (peptídeo semelhante ao glucagon 1) utilizado no tratamento do diabetes tipo 2 e da obesidade. Um efeito farmacodinâmico central desta classe é o retardo significativo do esvaziamento gástrico. Esse atraso na motilidade gástrica pode reduzir a velocidade e a extensão da absorção de medicamentos orais. No caso dos contraceptivos hormonais orais, a tirzepatida pode reduzir a concentração máxima (Cmax) e a exposição total (AUC) dos hormônios, potencialmente comprometendo a eficácia contraceptiva. As recomendações atuais orientam que pacientes que utilizam anticoncepcionais orais devem mudar para um método não oral ou adicionar um método de barreira (como preservativo) por 4 semanas após o início do tratamento e por 4 semanas após cada escalonamento de dose da tirzepatida.\n\nAlternativa E: Incorreta. O Metronidazol não interfere na eficácia dos anticoncepcionais orais. Sua interação medicamentosa mais conhecida e clinicamente relevante na prática médica é com o consumo de álcool, devido ao efeito tipo dissulfiram (antabuse), não havendo interferência no metabolismo ou absorção dos hormônios esteroides presentes nos contraceptivos.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:39.068Z"
+  },
+  {
+    "id": "AJUDA_b380e01e-dd6e-49c6-bd1c-d5906e17f73a",
+    "originalId": "b380e01e-dd6e-49c6-bd1c-d5906e17f73a",
+    "statement": "A Sociedade Brasileira para Estudo da Dor (SBED), acompanhando a definição de 2020 da International Association for the Study of Pain (IASP), define dor como uma experiência sensitiva e emocional desagradável, associada, ou semelhante àquela associada, a uma lesão tecidual real ou potencial, sendo ela subjetiva e correspondendo àquilo que o paciente descreve. Sobre o tratamento da dor, assinale a alternativa que indica um opioide fraco:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Morfina simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Codeína.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Fentanil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Gabapentina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Naproxeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder a esta questão, é fundamental recordar a Escada Analgésica da Organização Mundial da Saúde (OMS), que orienta o tratamento farmacológico da dor de acordo com sua intensidade. Os opioides são divididos em dois grandes grupos: os fracos (indicados para dor moderada, no segundo degrau) e os fortes (indicados para dor intensa, no terceiro degrau).\n\nAlternativa a) Incorreta. A morfina é o protótipo dos opioides fortes. É utilizada no manejo de dores intensas e serve como padrão de comparação para a potência de outros opioides.\n\nAlternativa b) Correta. A codeína é classificada como um opioide fraco. Ela é uma pró-droga que, após ser metabolizada no fígado pela enzima CYP2D6, é convertida em morfina para exercer seu efeito analgésico. Junto com o tramadol, compõe o segundo degrau da escada analgésica da OMS, sendo indicada para dores de intensidade moderada.\n\nAlternativa c) Incorreta. O fentanil é um opioide sintético extremamente potente, cerca de 50 a 100 vezes mais forte que a morfina. Portanto, é classificado como um opioide forte, utilizado em ambientes cirúrgicos, UTIs ou por meio de adesivos transdérmicos para dor crônica intensa.\n\nAlternativa d) Incorreta. A gabapentina não pertence à classe dos opioides. Ela é um fármaco adjuvante, originalmente desenvolvido como anticonvulsivante, mas amplamente utilizado no tratamento da dor neuropática por sua ação nos canais de cálcio do sistema nervoso central.\n\nAlternativa e) Incorreta. O naproxeno é um anti-inflamatório não esteroidal (AINE). Ele é classificado como um analgésico não opioide e faz parte do primeiro degrau da escada analgésica da OMS, sendo indicado para dores leves a moderadas, especialmente aquelas com componente inflamatório.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:39.068Z"
+  },
+  {
+    "id": "AJUDA_b380f3ec-d9f2-4606-87e6-614bfdb4a899",
+    "originalId": "b380f3ec-d9f2-4606-87e6-614bfdb4a899",
+    "statement": "Em relação às estratégias de prevenção da lesão renal aguda no paciente cirrótico, considere as afirmativas a seguir.\n\nI. Uso de albumina na hemorragia varicosa.\nII. Uso de albumina na peritonite bacteriana espontânea.\nIII. Manter volemia quando uso de contraste iodado.\nIV. Suspensão de diuréticos na hemorragia varicosa.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise detalhada das afirmativas sobre a prevenção de Lesão Renal Aguda (LRA) no paciente cirrótico:\n\nAfirmativa I (Incorreta): O uso de albumina na hemorragia varicosa não é uma recomendação padrão para prevenção de LRA. No sangramento digestivo alto no cirrótico, a prioridade é a estabilização hemodinâmica com cristaloides (com parcimônia para evitar sobrecarga e ascite), transfusão de hemoderivados (alvo de hemoglobina entre 7 e 9 g/dL), uso de drogas vasoconstritoras esplâncnicas (terlipressina, somatostatina ou octreotide) e antibioticoterapia profilática. A albumina tem indicação precisa em outras situações, como na PBE e na paracentese de grande volume.\n\nAfirmativa II (Correta): A peritonite bacteriana espontânea (PBE) é um forte gatilho para a Síndrome Hepatorrenal. O uso de albumina humana (1,5g/kg no 1º dia e 1,0g/kg no 3º dia) é mandatório para expandir o volume arterial efetivo e reduzir a incidência de insuficiência renal e mortalidade, especialmente em pacientes com bilirrubina > 4mg/dL ou creatinina > 1mg/dL.\n\nAfirmativa III (Correta): Pacientes cirróticos possuem uma disfunção circulatória sistêmica (vasodilatação periférica e vasoconstrição renal). O uso de contraste iodado aumenta o risco de nefropatia. Manter a volemia adequada é a principal estratégia nefroprotetora para evitar o insulto isquêmico e tóxico adicional aos néfrons.\n\nAfirmativa IV (Correta): Diante de uma hemorragia varicosa, o paciente apresenta hipovolemia relativa ou absoluta. Manter diuréticos (espironolactona e furosemida) nesse cenário agrava a depleção de volume, reduz a perfusão renal e precipita a LRA. Portanto, a suspensão imediata é a conduta correta até a estabilização do quadro.\n\nConclusão: Como as afirmativas II, III e IV estão corretas, a alternativa correta é a letra (e).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Cirrose Hepática",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:39.068Z"
+  },
+  {
+    "id": "AJUDA_b38932c1-c617-4aef-80ad-b8beea36de52",
+    "originalId": "b38932c1-c617-4aef-80ad-b8beea36de52",
+    "statement": "Mulher, 25 anos de idade, procurou recentemente uma Unidade Básica de Saúde na cidade de São Paulo, debilitada fisicamente, com queixa de febre, especialmente à tarde, astenia e tosse. Não sabe precisar exatamente há quanto tempo. Ela não é moradora da região, diz não ter residência fixa e que trabalha nas ruas próximas à Unidade como profissional do sexo. Relata ter diagnóstico de soropositividade para o HIV.\n\nSob a perspectiva das análises de vulnerabilidade, chama a atenção na descrição do caso a",
+    "options": [
+      {
+        "id": "A",
+        "text": "vulnerabilidade programática, pois não há como fazer seguimento da paciente na sua condição de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "vulnerabilidade social, considerando sua atividade ocupacional e as condições em que vive.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "vulnerabilidade individual, pois o caso clínico é de debilidade física e sintomas de coinfecção por tuberculose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "vulnerabilidade individual, considerando seu estado clínico e sua atividade ocupacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é necessário dominar o conceito de vulnerabilidade proposto por José Ricardo Ayres, que é amplamente utilizado na Saúde Coletiva e em provas de Residência Médica. A vulnerabilidade é dividida em três dimensões interdependentes: individual, social e programática.\n\nAlternativa A: Incorreta. A vulnerabilidade programática refere-se à forma como as instituições de saúde e as políticas públicas respondem às necessidades do indivíduo. Ela envolve o acesso aos serviços, a qualidade do atendimento, a existência de protocolos e a capacitação da equipe. Afirmar que \"não há como fazer seguimento\" é um equívoco conceitual e assistencial; o desafio do seguimento, neste caso, deriva da condição social da paciente, e não necessariamente de uma falha prévia do serviço ou da política de saúde em si (embora a dificuldade de acesso possa vir a ser uma barreira programática).\n\nAlternativa B: Correta. A vulnerabilidade social diz respeito aos aspectos contextuais que determinam as oportunidades de acesso a bens e serviços. No caso clínico, a ausência de residência fixa (situação de rua) e a atividade ocupacional (profissional do sexo) são marcadores clássicos de exclusão social, precariedade econômica e estigma. Esses fatores limitam a capacidade de autocuidado e aumentam a exposição a riscos, sendo o ponto de maior destaque na descrição do caso para explicar sua condição atual.\n\nAlternativa C: Incorreta. A vulnerabilidade individual refere-se aos aspectos biológicos, comportamentais e ao grau de informação que a pessoa possui sobre sua saúde. Embora a debilidade física e a possível coinfecção TB-HIV sejam aspectos biológicos (individuais), o que \"chama a atenção\" no relato como causa raiz de sua debilitação e dificuldade de manejo são os determinantes sociais. Além disso, a tuberculose é uma doença intrinsecamente ligada à vulnerabilidade social (aglomeração, desnutrição, falta de moradia).\n\nAlternativa D: Incorreta. Como mencionado, a atividade ocupacional (trabalho sexual) e a falta de moradia são componentes da vulnerabilidade social, e não individual. A vulnerabilidade individual focaria mais na percepção de risco da paciente ou em sua capacidade cognitiva de aderir ao tratamento, o que não é o foco principal da descrição apresentada.\n\nEm resumo, a questão exige que o aluno identifique que as condições de vida (rua) e trabalho (prostituição) são os elementos estruturais que colocam a paciente em uma posição de fragilidade perante a sociedade e o sistema de saúde, caracterizando a vulnerabilidade social.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "HIV",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:39.068Z"
+  },
+  {
+    "id": "AJUDA_b38dadce-7363-44d4-8934-c77475ed7236",
+    "originalId": "b38dadce-7363-44d4-8934-c77475ed7236",
+    "statement": "Mulher de 55 anos, realiza avaliação de saúde e exames de rastreamento, apresentando os seguintes resultados: PA: 110 x 70 mmHg, IMC: 32 kg/m², Cintura Abdominal: 84 cm, colesterol total: 180 mg/dL, LDL-colesterol: 70 mg/dL, HDL-colesterol: 55 mg/dL, triglicérides: 100 mg/dL. Constatado risco cardiovascular em 10 anos menor do que 5%. O médico sugeriu iniciar um tratamento com estatinas para reduzir o LDL-colesterol e a paciente questionou se o tratamento era realmente necessário. Com base nos resultados laboratoriais e nos preceitos da prevenção quaternária, a conduta mais adequada no caso deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar imediatamente o tratamento com estatinas para prevenir complicações futuras.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Propor a realização de exames complementares, como teste ergométrico e dosagem de resistência à insulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar a paciente para um especialista em endocrinologia para sensibilizar a paciente para o tratamento medicamentoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Priorizar intervenções não farmacológicas, como ajustes na dieta e intensificação de atividades físicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Encaminhar a paciente para um especialista em cardiologia para sensibilizar a paciente para o tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A paciente apresenta um perfil lipídico excelente, com LDL-colesterol de 70 mg/dL e HDL-colesterol de 55 mg/dL, além de um risco cardiovascular global baixo (menor que 5% em 10 anos). O conceito de prevenção quaternária refere-se à detecção de indivíduos em risco de intervenções médicas excessivas (*overmedicalization*) e à proteção contra novos procedimentos médicos desnecessários ou iatrogenias. No caso clínico, o médico propõe uma intervenção que não trará benefício líquido à paciente, configurando um excesso.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Não há indicação formal para o uso de estatinas neste cenário. De acordo com as diretrizes da Sociedade Brasileira de Cardiologia e outras entidades internacionais, pacientes com baixo risco cardiovascular e LDL já em níveis ótimos (70 mg/dL) não possuem indicação para tratamento farmacológico preventivo.\n\nAlternativa b: Incorreta. O teste ergométrico não é indicado para rastreamento em pacientes assintomáticos de baixo risco cardiovascular. A dosagem de resistência à insulina, embora possa ser útil em alguns contextos de obesidade, não alteraria a conduta imediata para o manejo lipídico ou o risco cardiovascular da paciente de forma a justificar medicação.\n\nAlternativa c: Incorreta. O encaminhamento ao especialista com o objetivo de \"sensibilizar\" a paciente para um tratamento medicamentoso desnecessário fere o princípio da autonomia e da prevenção quaternária. A questão não é de resistência da paciente, mas de falta de indicação técnica para a droga.\n\nAlternativa d: Correta. Esta conduta respeita a prevenção quaternária. Embora os exames laboratoriais e a pressão arterial estejam normais, a paciente apresenta obesidade (IMC 32 kg/m²). O foco terapêutico deve ser a mudança do estilo de vida (MEV), com ajustes na dieta e intensificação de atividades físicas, visando à perda de peso e à manutenção da saúde metabólica, evitando a medicalização indevida de uma condição que, no momento, é de baixo risco cardiovascular.\n\nAlternativa e: Incorreta. Assim como na alternativa c, o encaminhamento ao cardiologista é desnecessário. O manejo do risco cardiovascular e da obesidade é competência da Atenção Primária, e o encaminhamento apenas para \"convencer\" a paciente de um tratamento incorreto seria um erro ético e clínico.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:39.068Z"
+  },
+  {
+    "id": "AJUDA_b38f7508-825d-4be6-bcde-d4884efc962f",
+    "originalId": "b38f7508-825d-4be6-bcde-d4884efc962f",
+    "statement": "F.G, homem de 64 anos, hipertenso controlado, procura atendimento médico por dor intensa em queimação no hemitórax direito há 3 dias, acompanhada do aparecimento de lesões vesiculares agrupadas sobre base eritematosa, restritas ao dermátomo torácico T6, sem ultrapassar a linha média. Refere dificuldade para dormir devido à dor. O médico de família diagnostica herpes-zóster agudo. Sobre o tratamento deste caso e prevenção geral dessa condição, sabe-se que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o uso de antivirais tópicos está indicado, pois pode reduzir a formação de novas lesões e a intensidade da dor, sendo mais efetivos quando iniciados até 72 horas após o surgimento do exantema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A neuralgia pós-herpética não deve ser negligenciada mediante seu potencial de forte intensidade, podendo ser manejada com opioides leves como primeira linha, reservando antidepressivos tricíclicos para casos crônicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O uso de corticosteroides sistêmicos são medicamentos de evidência para acometimentos oculares em pacientes idosos com dor intensa, preferencialmente em monoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A vacinação é medida preventiva eficaz, sendo a vacina recombinante não viral administrada por via intramuscular em duas doses, com intervalo de 2 a 6 meses, e apresentando maior eficácia que a vacina de vírus vivo atenuado.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito é clássico de herpes-zóster: dor neuropática em queimação seguida por lesões vesiculares que respeitam um dermátomo (neste caso, o dermátomo T6 à direita). O manejo correto envolve o tratamento da fase aguda e a prevenção de complicações e novos episódios.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. No herpes-zóster, o uso de antivirais tópicos (como cremes ou pomadas de aciclovir) não tem eficácia comprovada e não deve ser recomendado. O tratamento padrão para reduzir a formação de novas lesões e a duração da dor é o antiviral por via sistêmica (oral), como aciclovir, valaciclovir ou famciclovir, idealmente iniciado nas primeiras 72 horas após o surgimento do exantema.\n\nAlternativa b) Incorreta. A neuralgia pós-herpética é uma dor que persiste por mais de 90 dias após o aparecimento das lesões cutâneas. O tratamento de primeira linha para dor neuropática inclui os antidepressivos tricíclicos (como a amitriptilina) ou os gabapentinoides (gabapentina e pregabalina). Opioides, mesmo os leves como o tramadol, são considerados medicamentos de segunda ou terceira linha, reservados para resgate em dores refratárias, e não como primeira escolha.\n\nAlternativa c) Incorreta. O uso de corticosteroides sistêmicos pode ser considerado como terapia adjuvante para reduzir a dor aguda e acelerar a cicatrização em idosos com dor intensa ou em casos de paralisia de nervos cranianos. No entanto, eles nunca devem ser utilizados em monoterapia, pois a supressão imunológica local pode favorecer a replicação viral; devem estar sempre associados ao antiviral sistêmico. Além disso, o acometimento ocular (herpes-zóster oftálmico) requer avaliação oftalmológica especializada e tratamento antiviral vigoroso.\n\nAlternativa d) Correta. Atualmente, a prevenção do herpes-zóster é feita preferencialmente com a vacina recombinante inativada (Shingrix). Diferente da vacina de vírus vivo atenuado (Zostavax), a vacina recombinante é administrada por via intramuscular em duas doses, com intervalo de 2 a 6 meses. Ela apresenta eficácia superior a 90% na prevenção do zóster e da neuralgia pós-herpética em todas as faixas etárias acima de 50 anos, mantendo a proteção por mais tempo e podendo ser utilizada inclusive em pacientes imunossuprimidos.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:39.068Z"
+  },
+  {
+    "id": "AJUDA_b3984ce4-7676-4516-a256-1341efddfbf4",
+    "originalId": "b3984ce4-7676-4516-a256-1341efddfbf4",
+    "statement": "Um paciente de 3 anos, foi internado na unidade de terapia intensiva (UTI) Pediátrica, intubado e ventilando com parâmetros elevados, começa a apresentar queda de saturação e bradicardia. A Equipe de enfermagem chama a médica que está de plantão na UTI Pediátrica. Começam a ventilar manualmente o paciente com bolsa a 100%, obtendo melhora da cor, frequência cardíaca e saturação. A médica realiza aspiração do tubo sem saída de secreção significativa e a sonda passa sem dificuldade, checa o tamanho e posição de tubo orotraqueal (TOT) sem alteração e realiza ausculta respiratória evidenciando murmúrio reduzido em hemitórax direito, hipertimpânico a percussão e expansibilidade reduzida a direita. Qual foi a causa da piora súbita da criança?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deslocamento do TOT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Obstrução do TOT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pneumotórax a D.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Equipamento (respirador) não funcionante adequadamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Atelectasia a D.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nAo avaliar uma criança intubada que apresenta piora súbita (queda de saturação e bradicardia), o médico deve seguir sistematicamente o mnemônico D.O.P.E., que auxilia na identificação rápida das causas mais comuns: Deslocamento, Obstrução, Pneumotórax e Equipamento.\n\nA) DESLOCAMENTO DO TOT: Incorreta. A questão afirma explicitamente que a médica checou o tamanho e a posição do tubo orotraqueal e não encontrou alterações. Portanto, o deslocamento (como a extubação acidental ou a intubação seletiva) foi investigado e descartado pela equipe.\n\nB) OBSTRUÇÃO DO TOT: Incorreta. A obstrução por rolha de secreção ou acotovelamento do tubo foi descartada no momento em que a médica realizou a aspiração e a sonda passou sem dificuldade, sem saída de secreção significativa, indicando que a via aérea estava pérvia.\n\nC) PNEUMOTÓRAX À D (CORRETA): Esta é a alternativa correta. O paciente estava em ventilação mecânica com parâmetros elevados, o que é um fator de risco clássico para barotrauma. Os achados do exame físico são patognomônicos para pneumotórax no lado direito: redução da expansibilidade, murmúrio vesicular diminuído e, principalmente, o hipertimpanismo à percussão, que sinaliza a presença de ar entre a pleura e a parede torácica.\n\nD) EQUIPAMENTO (RESPIRADOR) NÃO FUNCIONANTE ADEQUADAMENTE: Incorreta. Embora a melhora clínica inicial com a ventilação manual possa ocorrer em falhas de equipamento, os achados específicos e assimétricos no exame físico pulmonar (hipertimpanismo e redução de murmúrio à direita) confirmam uma alteração anatômica no paciente (pneumotórax) e não apenas um problema técnico no ventilador.\n\nE) ATELECTASIA À D: Incorreta. A atelectasia consiste no colapso do parênquima pulmonar com perda de aeração. Embora também cause redução da expansibilidade e do murmúrio vesicular, a percussão de uma área com atelectasia resultaria em macicez (som \"surdo\") e não em hipertimpanismo (som \"oco\" ou de tambor). O hipertimpanismo é o dado clínico fundamental para diferenciar o pneumotórax da atelectasia.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Emergências Pediátricas",
+      "Ventilação Mecânica",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:39.068Z"
+  },
+  {
+    "id": "AJUDA_b3a8466c-727d-44c8-9808-ae81d135b5bf",
+    "originalId": "b3a8466c-727d-44c8-9808-ae81d135b5bf",
+    "statement": "Um paciente de 8 anos de idade é levado às pressas ao pronto atendimento devido à edema labial. Os pais relatam que estavam em um almoço de família quando notaram a alteração. Relatam que durante trajeto o paciente apresentou vários episódios de vômitos. Ao exame físico, você nota ausência de urticária, ausculta respiratória sem alterações e pressão normal para idade. Diante do caso e do tema, de acordo com a Sociedade Brasileira de Pediatria e a World Allergy Organization, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de um quadro de anafilaxia, devendo ser instituída terapia com adrenalina endovenosa. O corticoide e o antialérgico devem ser prescritos desde que não atrasem a administração da adrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de um provável quadro de reação alérgica grave, mas ainda não fecha critérios de anafilaxia, faltando o surgimento de envolvimento cutâneo e respiratório. Deve ser prescrito antialérgico e avaliar corticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de quadro de anafilaxia, devendo ser administrada adrenalina intramuscular imediatamente. Caso não haja resposta adequada à primeira dose, ela poderá ser repetida via intramuscular após 5 a 15 minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de quadro de reação alérgica moderada, e deve ser administrado anti-histamínico e corticoide sistêmico. Em caso de sintoma respiratório, administrar adrenalina inalatória na dose de 0,01 mg/kg de peso corporal. O paciente deve ser mantido em observação para avaliar resposta ao tratamento inicial por pelo menos 4 a 6 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso apresenta um paciente pediátrico de 8 anos com início agudo de sintomas após possível exposição a um alérgeno (durante o almoço). Ele apresenta envolvimento de dois sistemas: o mucocutâneo (edema labial) e o gastrointestinal (vômitos persistentes).\n\nDe acordo com os critérios da World Allergy Organization (WAO) e da Sociedade Brasileira de Pediatria (SBP), a anafilaxia é diagnosticada quando há o envolvimento agudo da pele ou mucosa associado a, pelo menos, um outro sistema (respiratório, cardiovascular ou gastrointestinal persistente). Portanto, o paciente em questão preenche critérios para anafilaxia, mesmo na ausência de urticária, hipotensão ou alterações respiratórias no momento.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Embora identifique corretamente o quadro como anafilaxia, a via de administração da adrenalina está errada. A primeira linha de tratamento é a via intramuscular (músculo vasto lateral da coxa). A via endovenosa é reservada para casos graves refratários, em ambiente de terapia intensiva e sob monitorização contínua, devido ao risco de arritmias e picos hipertensivos.\n\nAlternativa b) Incorreta. O quadro já fecha critérios para anafilaxia. Não é necessário o envolvimento respiratório ou cutâneo disseminado (como urticária) para o diagnóstico, bastando a associação de sintomas mucosos (edema labial) com sintomas gastrointestinais graves/persistentes (vômitos repetidos) após exposição a gatilho provável. Retardar a adrenalina esperando por sintomas respiratórios é um erro grave que aumenta a mortalidade.\n\nAlternativa c) Correta. Identifica a anafilaxia e indica o tratamento padrão-ouro: adrenalina por via intramuscular imediata. A dose recomendada é de 0,01 mg/kg (máximo de 0,3 mg em crianças e 0,5 mg em adultos). O intervalo de 5 a 15 minutos para repetição da dose, caso não haja melhora clínica, está em total conformidade com os protocolos internacionais e nacionais.\n\nAlternativa d) Incorreta. O termo \"reação moderada\" é impreciso aqui, pois o envolvimento multissistêmico define anafilaxia. O tratamento principal nunca deve ser apenas anti-histamínico e corticoide, pois essas medicações não tratam o colapso cardiovascular nem o edema de glote, apenas sintomas cutâneos e a fase tardia da reação. Além disso, a adrenalina inalatória não substitui a sistêmica (intramuscular) no tratamento da anafilaxia.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Alergia Alimentar",
+      "Anafilaxia e Urticária",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:39.068Z"
+  },
+  {
+    "id": "AJUDA_b3a97e73-181f-44c9-836a-47e743e9f1d1",
+    "originalId": "b3a97e73-181f-44c9-836a-47e743e9f1d1",
+    "statement": "Um indivíduo com cirrose hepática secundária a hepatite C crônica, com recente diagnóstico de carcinoma hepatocelular, foi consultar-se após a realização de exames complementares. O médico assistente notou anormalidade nos resultados que o fez suspeitar de síndrome paraneoplásica relacionada ao carcinoma hepatocelular. A anormalidade ocorre em 3% a 12% dos pacientes com carcinoma hepatocelular e é uma das síndromes paraneoplásicas mais conhecidas que complicam esse tumor é o(a)",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eritrocitose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hiperglicemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipocalcemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumento da excreção urinária de Ácido 5-Hidroxiindolacético.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Hiponatremia com queda da osmolalidade plasmática.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O carcinoma hepatocelular (CHC) é conhecido por sua capacidade de produzir diversas substâncias sistêmicas, resultando em síndromes paraneoplásicas. Entre as manifestações mais comuns e características, destacam-se a eritrocitose, a hipoglicemia, a hipercalcemia e a hipercolesterolemia.\n\nAlternativa (a) - CORRETA: A eritrocitose ocorre em cerca de 3% a 12% dos pacientes com CHC. Ela é causada pela produção ectópica de eritropoietina (EPO) pelas células tumorais ou, em alguns casos, pela compressão do tecido hepático normal, o que estimula a síntese dessa substância. Isso leva ao aumento da massa de glóbulos vermelhos no sangue, justificando a alternativa.\n\nAlternativa (b) - INCORRETA: O CHC está classicamente associado à hipoglicemia paraneoplásica, e não à hiperglicemia. A hipoglicemia ocorre por dois mecanismos: o Tipo A (em fases terminais, devido ao alto consumo de glicose pelo tumor e falência hepática) e o Tipo B (causado pela secreção de uma forma imatura de fator de crescimento semelhante à insulina, o IGF-2).\n\nAlternativa (c) - INCORRETA: A alteração metabólica do cálcio associada ao CHC é a hipercalcemia, e não a hipocalcemia. A hipercalcemia paraneoplásica no CHC geralmente decorre da secreção da proteína relacionada ao paratormônio (PTHrP), que mimetiza a ação do PTH, promovendo reabsorção óssea e aumento dos níveis séricos de cálcio.\n\nAlternativa (d) - INCORRETA: O aumento da excreção urinária de ácido 5-hidroxiindolacético (5-HIAA) é um marcador diagnóstico para a síndrome carcinoide, que ocorre em tumores neuroendócrinos produtores de serotonina. Não é uma manifestação típica ou esperada para o carcinoma hepatocelular.\n\nAlternativa (e) - INCORRETA: A hiponatremia com queda da osmolalidade plasmática sugere a Síndrome de Secreção Inapropriada de Hormônio Antidiurético (SIADH). Embora a SIADH possa ocorrer em diversos tipos de neoplasias (como o câncer de pulmão de pequenas células), ela não é considerada uma das síndromes paraneoplásicas clássicas ou frequentes do carcinoma hepatocelular na proporção estatística mencionada no enunciado.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Cirrose Hepática",
+      "Tumores Hepáticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:39.068Z"
+  },
+  {
+    "id": "AJUDA_b3c06253-a8fd-4a93-a00f-96dd006479e9",
+    "originalId": "b3c06253-a8fd-4a93-a00f-96dd006479e9",
+    "statement": "Assinale a alternativa que apresenta, correta e respectivamente, com o que estão relacionadas a classificação de Gratacós e a de Quintero.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gêmeos siameses e transfusão feto-fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Restrição seletiva de um dos gemelares e transfusão feto-fetal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Sequência policitemia-anemia fetal e transfusão feto-fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sequência policitemia-anemia fetal e discordância fetal entre gemelares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Transfusão feto-fetal e sequência policitemia-anemia fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Abaixo está uma explicação de uma questão de medicina gerada por uma IA.\n\n    Texto Original:\n    Para compreender esta questão, é fundamental dominar as complicações específicas das gestações gemelares monocoriônicas (aquelas que compartilham a mesma placenta). Essas gestações apresentam riscos aumentados devido às anastomoses vasculares placentárias, e as classificações citadas servem para estadiar os dois principais quadros clínicos desse cenário.\n\nANÁLISE DAS CLASSIFICAÇÕES:\n\n1. Classificação de Gratacós: É utilizada para estadiar a Restrição de Crescimento Fetal Seletiva (RCFS). Ocorre quando um dos fetos não recebe nutrição adequada devido à divisão desigual da massa placentária. O critério de Gratacós baseia-se primordialmente no padrão do Doppler da artéria umbilical do feto restrito:\n- Tipo I: Doppler com fluxo diastólico presente.\n- Tipo II: Doppler com fluxo diastólico ausente ou reverso persistente.\n- Tipo III: Doppler com fluxo diastólico cíclico (intermitente).\n\n2. Classificação de Quintero: É o sistema padrão ouro para o estadiamento da Síndrome de Transfusão Feto-Fetal (STFF), onde há um desequilíbrio no fluxo sanguíneo entre os fetos (doador e receptor).\n- Estágio I: Discordância de líquido amniótico (oligodramnia/polidramnia), mas bexiga do doador ainda visível.\n- Estágio II: Bexiga do doador não é visualizada ao ultrassom.\n- Estágio III: Alterações críticas no Doppler (artéria umbilical, ducto venoso ou veia umbilical).\n- Estágio IV: Hidropisia fetal (ascite, derrame pleural/pericárdico ou edema de pele).\n- Estágio V: Óbito de um ou ambos os fetos.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. Gêmeos siameses decorrem de uma divisão embrionária tardia (após o 13º dia), não sendo classificados por Gratacós. Quintero refere-se à transfusão feto-fetal, mas o primeiro item invalida a opção.\n\nb) Correta. Gratacós é a referência para a Restrição Seletiva de um dos gemelares e Quintero é a referência mundial para a Síndrome de Transfusão Feto-Fetal.\n\nc) Incorreta. A Sequência Policitemia-Anemia Fetal (TAPS) possui uma classificação própria baseada nos valores de pico de velocidade sistólica da artéria cerebral média, não sendo o foco da classificação de Gratacós.\n\nd) Incorreta. A Sequência Policitemia-Anemia Fetal não está relacionada a Gratacós. O termo \"discordância fetal\" é muito genérico, enquanto Quintero foca especificamente na fisiopatologia da transfusão feto-fetal.\n\ne) Incorreta. A alternativa inverte e troca os conceitos. Gratacós relaciona-se à restrição seletiva e Quintero à transfusão feto-fetal; a sequência TAPS é uma entidade clínica distinta.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Gestação Múltipla"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:39.068Z"
+  }
+]

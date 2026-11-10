@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_983e0e33-2090-4206-a3da-b8ed3a4a5e62",
+    "originalId": "983e0e33-2090-4206-a3da-b8ed3a4a5e62",
+    "statement": "Paciente com icterícia obstrutiva é diagnosticado com colangiocarcinoma. Qual é a abordagem mais indicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quimioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ressecção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Observação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Radioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nO colangiocarcinoma é uma neoplasia maligna que se origina no epitélio dos ductos biliares. Quando um paciente apresenta icterícia obstrutiva decorrente dessa patologia, o objetivo principal do tratamento, sempre que clinicamente possível, é a cura.\n\nAlternativa (a) Incorreta: A quimioterapia é uma modalidade terapêutica utilizada majoritariamente em casos de doença avançada (metastática ou irressecável) ou como terapia adjuvante (após a cirurgia) para tentar evitar a recidiva. Embora importante, ela não é a conduta definitiva de primeira linha se o tumor for passível de remoção.\n\nAlternativa (b) Correta: A ressecção cirúrgica é o único tratamento com potencial curativo para o colangiocarcinoma. A abordagem específica depende da localização do tumor: para colangiocarcinomas intra-hepáticos, realiza-se a hepatectomia; para os hilares (Tumor de Klatskin), a ressecção envolve as vias biliares e parte do parênquima hepático; e para os distais, geralmente é indicada a duodenopancreatectomia (cirurgia de Whipple). O sucesso depende de se obter margens cirúrgicas livres (R0).\n\nAlternativa (c) Incorreta: A observação é contraindicada. O colangiocarcinoma é um tumor agressivo, com prognóstico reservado e rápida progressão. A ausência de intervenção leva invariavelmente à evolução da obstrução biliar, falência hepática, infecções (colangite) e óbito.\n\nAlternativa (d) Incorreta: A radioterapia, isolada ou combinada com quimioterapia, pode ser utilizada em protocolos paliativos para controle local da doença ou em contexto de pesquisa como neoadjuvância em casos selecionados para transplante hepático. No entanto, ela não substitui a cirurgia como abordagem padrão-ouro para pacientes com doença ressecável.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:09.062Z"
+  },
+  {
+    "id": "AJUDA_98459cb3-671d-423c-9fe4-a196be17d461",
+    "originalId": "98459cb3-671d-423c-9fe4-a196be17d461",
+    "statement": "Um homem de 28 anos apresenta um ferimento por arma branca na região precordial. Ao exame, encontra-se pálido, FC: 128 bpm e PA: 90 x 40 mmHg com turgência jugular discreta e bulhas cardíacas hipofonéticas. A radiografia de tórax sugere hemotórax à esquerda. É realizado FAST, porém a avaliação do pericárdio é inconclusiva. Qual a conduta mais adequada para a investigação de possível lesão cardíaca?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar tomografia computadorizada de tórax com contraste antes de qualquer intervenção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Indicar janela pericárdica subxifoide para avaliação direta da presença de sangue no pericárdio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Proceder imediatamente à drenagem torácica isolada, pois o hemotórax exclui tamponamento cardíaco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar pericardiocentese diagnóstica como método definitivo de exclusão de lesão cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Observar clinicamente, pois a tríade de Beck completa é obrigatória para suspeita de tamponamento cardíaco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resposta correta: letra B.\n\nContexto clínico: trata-se de trauma penetrante em região precordial (a \"zona de perigo\" de Ziedler), em paciente com sinais de choque (palidez, taquicardia, hipotensão com pressão de pulso estreita), turgência jugular e bulhas hipofonéticas. Isso levanta forte suspeita de tamponamento cardíaco, embora o hemotórax à esquerda possa coexistir e explicar parte do choque. O FAST inconclusivo não exclui lesão cardíaca. Pode haver falso-negativo, por exemplo quando o hemotórax adjacente decomprime o pericárdio, ou por limitação técnica. Em paciente com instabilidade hemodinâmica e FAST duvidoso, a conduta é confirmar de forma rápida e invasiva, sem exames demorados.\n\nAnálise das alternativas:\n\na) Incorreta. A tomografia exige transporte e tempo e só é adequada para paciente hemodinamicamente estável. Em paciente instável com suspeita de lesão cardíaca, atrasar a intervenção aumenta a mortalidade.\n\nb) Correta. A janela pericárdica subxifoide é o método padrão para avaliar o pericárdio quando o FAST é inconclusivo e há suspeita de lesão cardíaca em paciente instável ou limítrofe. Ela é feita em centro cirúrgico, sob anestesia. Se houver sangue no pericárdio, realiza-se esternotomia ou toracotomia para reparar a lesão cardíaca. Também descomprime o tamponamento.\n\nc) Incorreta. A drenagem torácica provavelmente será necessária pelo hemotórax, mas o hemotórax não exclui tamponamento. Os dois podem coexistir, e tratar só o hemotórax deixaria uma lesão cardíaca sem diagnóstico.\n\nd) Incorreta. A pericardiocentese tem alta taxa de falso-negativo, porque o sangue coagulado no pericárdio pode não ser aspirado. Também há risco de lesão cardíaca iatrogênica. Não exclui lesão cardíaca. Pode ser usada apenas como medida temporizadora em situações extremas, nunca como método definitivo de exclusão.\n\ne) Incorreta. A tríade de Beck (hipotensão, turgência jugular e bulhas hipofonéticas) é pouco sensível e raramente está completa. Observar um paciente instável com trauma precordial penetrante é perigoso. O diagnóstico de tamponamento é clínico e por imagem, e não depende da tríade completa. Neste caso, aliás, os três elementos estão presentes.\n\nPontos-chave: trauma precordial penetrante com instabilidade e FAST inconclusivo indica janela pericárdica subxifoide, seguida de abordagem cirúrgica se houver hemopericárdio.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:09.062Z"
+  },
+  {
+    "id": "AJUDA_98571bbd-7b07-421c-ba2f-8c90e43b27f8",
+    "originalId": "98571bbd-7b07-421c-ba2f-8c90e43b27f8",
+    "statement": "R.T.B., 29 anos, primigesta, idade gestacional de 11 semanas, veio à segunda consulta de pré-natal com glicemia de jejum de 92 mg/dL. IMC de 24 kg/m², sorologia para toxoplasmose: IgG positivo e IgM positivo. Teste de avidez para IgG 90%. Nega comorbidades. Sobre o caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de diabetes gestacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de overt diabetes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de diabetes tipo II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deve-se solicitar TOTG (Teste Oral de Tolerância à Glicose) com idade gestacional de 24 – 28 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deve-se introduzir insulina com 2/3 da dose pela manhã.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA questão aborda o diagnóstico de diabetes na gestação em uma paciente no primeiro trimestre (11 semanas). De acordo com os critérios da Organização Mundial da Saúde (OMS), adotados pelo Ministério da Saúde e pela Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO), os valores da glicemia de jejum no início da gravidez definem a conduta:\n\n1. Glicemia de jejum menor que 92 mg/dL: Normal. A paciente deve ser reavaliada entre a 24ª e a 28ª semana com o Teste Oral de Tolerância à Glicose (TOTG).\n2. Glicemia de jejum entre 92 mg/dL e 125 mg/dL: Diagnóstico de Diabetes Mellitus Gestacional (DMG).\n3. Glicemia de jejum maior ou igual a 126 mg/dL: Diagnóstico de Diabetes Mellitus Pré-existente (Overt Diabetes).\n\nNo caso em questão, a paciente apresenta glicemia de 92 mg/dL, o que a enquadra no diagnóstico de Diabetes Gestacional. Sobre os dados de toxoplasmose (IgG e IgM positivos com avidez de 90% em IG precoce), eles indicam infecção antiga (ocorrida há mais de 4 meses), descartando infecção aguda na gestação, mas não influenciam no diagnóstico metabólico.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): A paciente apresenta uma glicemia de jejum no limite inferior para o diagnóstico de Diabetes Mellitus Gestacional (DMG), que é de 92 mg/dL no primeiro trimestre. Portanto, o diagnóstico está estabelecido.\n\nAlternativa B (INCORRETA): O termo overt diabetes refere-se ao diabetes diagnosticado na gestação, mas cujos níveis glicêmicos atingem os critérios de diagnóstico para diabetes fora da gestação (glicemia de jejum maior ou igual a 126 mg/dL). O valor de 92 mg/dL é insuficiente para essa classificação.\n\nAlternativa C (INCORRETA): O diabetes tipo 2, no contexto gestacional, seria classificado como overt diabetes. Como a glicemia é de 92 mg/dL, o diagnóstico correto é DMG, e não diabetes pré-gestacional tipo 2.\n\nAlternativa D (INCORRETA): O TOTG de 75 g realizado entre a 24ª e a 28ª semana de gestação é o rastreamento indicado para pacientes que apresentaram glicemia de jejum normal (menor que 92 mg/dL) no primeiro trimestre. Como esta paciente já possui o diagnóstico de DMG pela glicemia de jejum inicial, o TOTG é desnecessário e contraindicado.\n\nAlternativa E (INCORRETA): O tratamento inicial do Diabetes Gestacional é a terapia não farmacológica, composta por plano alimentar adequado e atividade física. A introdução de insulina (ou outros antidiabéticos) só é recomendada se os alvos glicêmicos não forem atingidos após 1 a 2 semanas de dieta e exercícios. Além disso, o esquema de doses citado é uma generalização que não se aplica como conduta imediata para este caso.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:09.062Z"
+  },
+  {
+    "id": "AJUDA_985a4c3c-fee5-4e61-aa17-f000f6fd2a63",
+    "originalId": "985a4c3c-fee5-4e61-aa17-f000f6fd2a63",
+    "statement": "Qual dos seguintes pacientes provavelmente se beneficiaria de uma cirurgia laparoscópica assistida por robô em comparação à tradicional para câncer colorretal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Homem de 75 anos internado com hemorragia digestiva baixa, com tumor de ceco hemorrágico descoberto na colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Homem de 60 anos com câncer retal baixo adjacente à próstata na ultrassonografia endoscópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Homem de 64 anos sem histórico médico significativo com massa no cólon descendente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Homem de 55 anos internado com obstipação e com tumor obstrutivo de sigmoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A cirurgia laparoscópica assistida por robô oferece suas maiores vantagens sobre a laparoscopia convencional em campos cirúrgicos estreitos, profundos e de anatomia complexa, como a pelve masculina. Os principais benefícios do robô são a visão tridimensional de alta definição, a estabilidade de imagem, a filtragem de tremores e as pinças com articulação distal (múltiplos graus de liberdade), permitindo dissecções precisas em espaços restritos.\n\nAlternativa A - Incorreta: Tumores do ceco são tratados com hemicolectomia direita. Como o procedimento é realizado na cavidade abdominal ampla, com dissecção direta e sem confinamento anatômico, a laparoscopia tradicional é padrão e altamente eficiente, sem benefício clínico adicional demonstrado com o uso do robô.\n\nAlternativa B - Correta: O câncer de reto baixo em homens representa o cenário clássico de benefício da plataforma robótica. A pelve masculina é estreita e profunda, impondo grande dificuldade técnica para instrumentos laparoscópicos retos e rígidos. A robótica facilita a dissecção precisa no espaço entre o reto e a próstata, otimizando a excisão total do mesorreto (ETM), garantindo margens cirúrgicas adequadas e permitindo melhor preservação dos nervos autonômicos pélvicos (funções urinária e sexual).\n\nAlternativa C - Incorreta: Lesões de cólon descendente demandam colectomia esquerda. Assim como no cólon direito, a cirurgia ocorre no abdome aberto, onde a laparoscopia convencional já entrega excelentes resultados oncológicos e funcionais, tornando o robô uma alternativa sem clara superioridade clínica.\n\nAlternativa D - Incorreta: Quadros de obstrução intestinal cursam com distensão de alças, o que reduz drasticamente o campo de visão e o espaço de trabalho, aumentando o risco de lesões iatrogênicas. Além disso, o tempo necessário para montagem e acoplamento do sistema robótico não é ideal em cenários de urgência obstrutiva.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Proctologia",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:09.062Z"
+  },
+  {
+    "id": "AJUDA_985cd154-9692-4221-bc83-2339381b61ef",
+    "originalId": "985cd154-9692-4221-bc83-2339381b61ef",
+    "statement": "Paciente de 48 anos, G2P2, sedentária e tabagista (20 cigarros/dia), veio à consulta queixando-se de suores noturnos frequentes e fortes que vinham prejudicando sua qualidade de vida, sono interrompido e irregularidade menstrual (atrasos intercalados com 2 menstruações ao mês, fluxo escasso), quadro iniciado há 5 meses. A data da última menstruação foi há 20 dias. Tinha histórico de câncer de mama (avó materna, aos 60 anos). Trouxe resultados de exames recentes: citopatológico do colo uterino normal, mamografia BI-RADS 2, ultrassonografia transvaginal sem particularidade e alguns exames laboratoriais solicitados na UBS (hemograma normal, colesterol de 240 mg/dl, triglicerídeos de 350 mg/dl, glicemia de 98 mg/dl). Informou adotar condom como método anticoncepcional. A conduta mais apropriada é prescrever",
+    "options": [
+      {
+        "id": "A",
+        "text": "fluoxetina devido ao risco aumentado de câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "progestagênio de segunda fase para promover regularidade menstrual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estrogênio por via não oral associado a progestagênio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "pílula contraceptiva hormonal combinada com estrogênio natural.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o manejo da transição menopausal (perimenopausa) em uma paciente com fatores de risco cardiovascular e sintomas vasomotores intensos.\n\nAnálise do quadro clínico:\nA paciente apresenta sintomas climatéricos clássicos (fogachos/suores noturnos e insônia) que impactam sua qualidade de vida, além de irregularidade menstrual. Aos 48 anos, com esses sintomas, o diagnóstico é de perimenopausa. O histórico familiar de câncer de mama (avó aos 60 anos) não é uma contraindicação para a Terapia Hormonal (TH), pois se trata de um caso esporádico e não de alto risco hereditário.\n\nFatores limitantes para a escolha da via:\n1. Tabagismo (20 cigarros/dia) e idade > 35 anos: Aumentam significativamente o risco de eventos tromboembólicos e cardiovasculares.\n2. Hipertrigliceridemia (350 mg/dl): O estrogênio por via oral sofre metabolismo de primeira passagem hepática, o que pode aumentar ainda mais os níveis de triglicerídeos. A via não oral (transdérmica ou percutânea) é neutra ou pode até reduzir os triglicerídeos.\n\nAnálise das alternativas:\n\na) Incorreta. A fluoxetina (um ISRS) pode ser utilizada para tratar fogachos em pacientes com contraindicação absoluta à Terapia Hormonal (como histórico pessoal de câncer de mama). No caso desta paciente, o histórico familiar (avó materna aos 60 anos) não contraindica a TH, e a TH é o tratamento mais eficaz para os sintomas apresentados.\n\nb) Incorreta. O progestagênio isolado na segunda fase do ciclo poderia ajudar na regularização do fluxo menstrual, mas não é o tratamento de escolha para os sintomas vasomotores (fogachos e suores noturnos) que estão prejudicando a qualidade de vida da paciente.\n\nc) Correta. Esta é a conduta ideal. O estrogênio é o tratamento padrão-ouro para sintomas vasomotores. A via não oral (adesivo ou gel) é obrigatória aqui por dois motivos principais: o tabagismo (menor risco de tromboembolismo em comparação à via oral) e a hipertrigliceridemia (evita o efeito do metabolismo hepático que elevaria ainda mais os triglicerídeos). Como a paciente possui útero, é indispensável associar o progestagênio para proteção endometrial, prevenindo a hiperplasia e o câncer de endométrio.\n\nd) Incorreta. O uso de pílulas anticoncepcionais combinadas (mesmo com estrogênio natural) é contraindicado para mulheres com mais de 35 anos que fumam mais de 15 cigarros por dia, devido ao risco inaceitável de infarto agudo do miocárdio e acidente vascular cerebral. Além disso, a via oral seria prejudicial para o quadro de hipertrigliceridemia.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:09.062Z"
+  },
+  {
+    "id": "AJUDA_986184ba-381a-4b04-83a9-dbd7482bc5ec",
+    "originalId": "986184ba-381a-4b04-83a9-dbd7482bc5ec",
+    "statement": "Um médico de família atende um paciente assintomático de 35 anos, sem fatores de risco cardiovascular, que solicita um \"check-up\" completo, incluindo teste ergométrico e dosagem de PSA. O médico, baseando-se em evidências científicas que demonstram que o rastreamento nessas condições pode gerar falsos-positivos, ansiedade e procedimentos invasivos desnecessários, opta por não solicitar os exames e explica os motivos ao paciente. Essa conduta médica exemplifica a aplicação do conceito de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prevenção primária, pois atua na fase pré-patogênica evitando o surgimento de fatores de risco através da educação em saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prevenção secundária, ao evitar a realização de exames diagnósticos precoces que não alterariam o prognóstico da doença em fase inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prevenção quaternária, que visa identificar e evitar intervenções médicas excessivas ou desnecessárias que possam causar danos iatrogênicos ao paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prevenção primordial, que foca na eliminação de padrões de vida sociais, econômicos e culturais que contribuem para elevar o risco de doenças.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa correta é a letra (c).\n\nA questão aborda os níveis de prevenção propostos na saúde pública e medicina de família, focando especificamente na proteção do paciente contra o excesso de intervenção médica.\n\nALTERNATIVA A - INCORRETA: A prevenção primária ocorre no período pré-patogênico e visa diminuir a incidência de uma doença através do controle de causas e fatores de risco. Exemplos comuns são a imunização (vacinas) e o incentivo a hábitos saudáveis. Embora o médico use a educação em saúde, o foco da conduta descrita não é evitar o surgimento de uma doença específica, mas sim evitar o dano causado pelo excesso de exames.\n\nALTERNATIVA B - INCORRETA: A prevenção secundária consiste no diagnóstico precoce e tratamento imediato de doenças que já estão presentes, mas em fase assintomática (rastreamento ou screening). O objetivo é melhorar o prognóstico. No caso relatado, o médico está justamente contraindicando um rastreamento (PSA e teste ergométrico) por entender que, para aquele perfil de paciente, os exames trariam mais riscos do que benefícios.\n\nALTERNATIVA C - CORRETA: A prevenção quaternária é o conjunto de medidas que visam identificar o paciente em risco de supermedicalização, protegê-lo de intervenções médicas excessivas ou desnecessárias e sugerir alternativas eticamente aceitáveis. O foco é o princípio da não maleficência (primum non nocere). Ao recusar exames que possuem alta taxa de falsos positivos em pacientes de baixo risco, o médico evita uma cascata diagnóstica que poderia levar a biópsias desnecessárias, ansiedade e outros danos iatrogênicos.\n\nALTERNATIVA D - INCORRETA: A prevenção primordial visa evitar o surgimento e o estabelecimento de padrões de vida sociais, econômicos e culturais que sabidamente contribuem para elevar o risco de doenças em uma população. Um exemplo seria a criação de leis antitabaco ou políticas de segurança alimentar. A conduta do médico no consultório é uma decisão clínica individualizada, não se enquadrando em políticas estruturais de prevenção primordial.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Processo Saúde-Doença",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:09.062Z"
+  },
+  {
+    "id": "AJUDA_98623e98-0658-40fc-9dec-ae0e26e58e0c",
+    "originalId": "98623e98-0658-40fc-9dec-ae0e26e58e0c",
+    "statement": "No que se refere aos Núcleos Ampliados de Saúde da Família e Atenção Básica (Nasf-AB) assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "São serviços com unidades físicas independentes ou especiais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Possuem livre acesso para atendimento individual ou coletivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Gerenciar o planejamento da rede de atenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "São formados por categorias de profissionais definidas pelo gestor estadual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Atuam de maneira complementar às equipes que atuam na atenção básica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender o Nasf-AB (Núcleos Ampliados de Saúde da Família e Atenção Básica) é fundamental internalizar que ele não funciona como um ambulatório de especialidades, mas como um suporte técnico-pedagógico e assistencial baseado no Apoio Matricial.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. O Nasf-AB não possui sede própria ou unidade física independente. Os profissionais utilizam o espaço das Unidades Básicas de Saúde (UBS) e o território das equipes de referência. O objetivo é justamente a integração física e funcional com a atenção básica.\n\nAlternativa B: Incorreta. Não existe livre acesso ou \"porta aberta\" para o Nasf. O atendimento é sempre referenciado. O fluxo correto é: o paciente é atendido pela equipe de referência (Saúde da Família), e esta equipe, ao identificar uma necessidade complexa, aciona o Nasf para uma discussão de caso, atendimento conjunto ou construção de um Projeto Terapêutico Singular (PTS).\n\nAlternativa C: Incorreta. Gerenciar o planejamento macro da Rede de Atenção à Saúde (RAS) é uma função administrativa das Secretarias de Saúde (gestão municipal e estadual). O Nasf atua na dimensão clínica e organizativa local, auxiliando a equipe de base a organizar o cuidado dentro do território, mas não detém o papel de gestor da rede.\n\nAlternativa D: Incorreta. A definição de quais categorias profissionais comporão o Nasf-AB (psicólogos, fisioterapeutas, assistentes sociais, nutricionistas, etc.) é de responsabilidade do gestor municipal. Essa escolha deve ser baseada nas demandas epidemiológicas e necessidades específicas da população daquele município, e não imposta pelo gestor estadual.\n\nAlternativa E: Correta. O Nasf-AB atua de forma complementar e compartilhada. Ele amplia o escopo de ações da Atenção Básica, oferecendo retaguarda especializada para aumentar a resolutividade local. O foco é evitar encaminhamentos desnecessários para o nível secundário, resolvendo casos complexos dentro da própria UBS através da interdisciplinaridade.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:09.062Z"
+  },
+  {
+    "id": "AJUDA_9864d911-e741-472f-8889-bfb775eb2777",
+    "originalId": "9864d911-e741-472f-8889-bfb775eb2777",
+    "statement": "Mônica, 29 anos, professora, vem para a consulta na unidade básica de saúde preocupada com seu sobrepeso. Diz que anda muito estressada, que os cuidados com o filho mais novo têm tomado muito seu tempo e que o marido não ajuda e anda bebendo demais. Sua sogra Maria foi morar com eles e dá muito trabalho em virtude do quadro depressivo, que não melhora. O sogro, Mário, faleceu aos 53 anos, e isso a preocupa em relação a Mário Luís, seu marido, que também fuma e bebe demais. Eles têm ainda um filho de 12 anos, que não dá trabalho nenhum. Considere o genograma a seguir.\nO genograma de Mônica mostra que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "existe um padrão repetitivo de comportamento e saúde entre Mário e Mário Luís;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "existe um relação conflituosa entre Mônica e Maria;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "existe uma relação conflituosa entre Mônica e Mário Luís;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Maria e Mário são divorciados;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Mário Luís é o indivíduo índice do genograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das Alternativas:\n\nAlternativa a: Correta. Ao comparar as informações descritas no genograma para Mário (o pai) e Mário Luís (o filho), observa-se a repetição exata das mesmas condições de saúde e hábitos de vida: ambos são descritos como etilistas, tabagistas e portadores de Hipertensão Arterial Sistêmica (HAS). O genograma é uma ferramenta essencial na Estratégia Saúde da Família justamente para identificar esses padrões multigeracionais de comportamento e patologias.\n\nAlternativa b: Incorreta. Embora o enunciado mencione que a sogra (Maria) \"dá muito trabalho\", essa relação conflituosa não foi transposta para o gráfico do genograma. Para representar conflito, seria necessário desenhar uma linha em ziguezague (ou serrilhada) conectando os dois círculos, o que não existe na imagem apresentada.\n\nAlternativa c: Incorreta. Assim como na alternativa anterior, o genograma utiliza apenas o símbolo padrão de casamento (duas linhas horizontais paralelas ligando o casal). Apesar do relato de estresse de Mônica com o comportamento do marido, não há o registro gráfico de relação conflituosa (linha em ziguezague) entre eles no desenho.\n\nAlternativa d: Incorreta. O gráfico mostra que Mário e Maria foram casados e a relação foi interrompida pelo falecimento de Mário, indicado pelo 'X' dentro do quadrado. O divórcio seria representado graficamente por dois traços paralelos inclinados cortando a linha de união do casal.\n\nAlternativa e: Incorreta. O indivíduo-índice (também chamado de probando ou caso-índice) é aquele que busca o atendimento ou em torno de quem o genograma é construído. Ele é identificado graficamente por um contorno duplo (círculo duplo para mulheres ou quadrado duplo para homens). No genograma apresentado, o círculo duplo corresponde a Mônica, de 29 anos, e não a Mário Luís.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/c98f0b317f98f6aa672c2e9d5bfe27da7a23f6cabf510687453322e0a3dba5b7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_9864d911-e741-472f-8889-bfb775eb2777_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:09.520Z"
+  },
+  {
+    "id": "AJUDA_986d81cb-2bb0-4882-b68f-ce124067728d",
+    "originalId": "986d81cb-2bb0-4882-b68f-ce124067728d",
+    "statement": "Em um laudo de colposcopia de uma mulher de 27 anos, aparece o termo “zona de transformação” e ela deseja saber o que isso significa. A explicação a ser dada é a de que corresponde a um achado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "fisiológico, de transformação de epitélio colunar em epitélio escamoso",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "fisiológico, de transformação de epitélio escamoso em epitélio colunar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "patológico, de transformação de epitélio colunar em epitélio escamoso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "patológico, de transformação de epitélio escamoso em epitélio colunar",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender a zona de transformação (ZT), é fundamental entender a histologia do colo do útero. O colo uterino possui dois tipos de revestimentos: o epitélio escamoso estratificado (que reveste a parte externa, ou ectocérvice) e o epitélio colunar simples ou glandular (que reveste o canal interno, ou endocérvice).\n\nA zona de transformação é a região localizada entre a junção escamocolunar (JEC) original e a nova JEC. Nessa área, ocorre um processo dinâmico chamado metaplasia escamosa, em que o epitélio colunar, ao ser exposto ao ambiente ácido da vagina e às flutuações hormonais, é gradualmente substituído por um epitélio escamoso mais resistente. Este é um fenômeno biológico normal e esperado em mulheres durante a vida reprodutiva; portanto, é um achado fisiológico.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Define com precisão que a zona de transformação é um achado fisiológico (normal) decorrente da substituição do epitélio colunar (glandular) pelo epitélio escamoso.\n\nAlternativa b) Incorreta. O erro está na direção da transformação. O processo de metaplasia ocorre do epitélio colunar para o escamoso, e não o inverso. O epitélio escamoso não se transforma em colunar na zona de transformação.\n\nAlternativa c) Incorreta. A zona de transformação não é uma patologia ou doença. Embora seja o local onde se originam a maioria das lesões pré-neoplásicas (NIC) e o câncer do colo do útero devido à alta atividade celular, a existência da zona de transformação em si faz parte da anatomia funcional normal do colo uterino.\n\nAlternativa d) Incorreta. Esta alternativa apresenta dois erros: classifica o achado como patológico e inverte o sentido da transformação epitelial (que deve ser de colunar para escamoso).",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:09.520Z"
+  },
+  {
+    "id": "AJUDA_987ddc65-b50d-4185-bc5c-488bc0213e67",
+    "originalId": "987ddc65-b50d-4185-bc5c-488bc0213e67",
+    "statement": "O Descolamento Prematuro de Placenta (DPP) é uma emergência obstétrica associada a elevado risco de óbito fetal e de coagulopatia materna. Sobre o manejo e as complicações, analise as sentenças a seguir e registre V, para Verdadeiro, e F, para Falso:\n\n(__) A apoplexia uterina, ou útero de Couvelaire, caracteriza-se por infiltração hemática do miométrio, podendo cursar com hipotonia ou atonia uterina no pós-parto; entretanto, a histerectomia não é mandatória em todos os casos, sendo possível adotar medidas conservadoras, como massagem uterina, uso de ocitócitos e sutura de B-Lynch, desde que haja estabilidade hemodinâmica.\n(__) A amniotomia deve ser realizada o mais precocemente possível no DPP, pois reduz a pressão intrauterina, diminui a liberação de tromboplastina para a circulação materna, reduzindo o risco de Coagulação Intravascular Disseminada (CIVD), e acelera o trabalho de parto, sendo indicada inclusive quando a via de parto planejada é a cesariana.\n(__) O diagnóstico de DPP é fundamentalmente ultrassonográfico, devendo-se aguardar a confirmação de hematoma retroplacentário por exame de imagem antes de indicar a interrupção da gestação, a fim de evitar intervenções desnecessárias.\n(__) Na presença de óbito fetal confirmado e mãe hemodinamicamente estável, o parto vaginal constitui a via preferencial, com monitorização rigorosa do perfil de coagulação, especialmente dos níveis de fibrinogênio, podendo-se induzir o parto com ocitocina ou misoprostol após a amniotomia.\n\nAssinale a alternativa que apresenta a sequência correta dos itens acima, de cima para baixo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "F, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "V, F, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS SENTENÇAS:\n\nPrimeira sentença (V): A apoplexia uteroplacentária, conhecida como Útero de Couvelaire, ocorre quando o sangue do hematoma retroplacentário infiltra as fibras do miométrio e atinge a serosa uterina. Isso compromete a contratilidade, levando à atonia uterina. Antigamente, o tratamento era quase exclusivamente a histerectomia, mas hoje prioriza-se o manejo conservador com massagem uterina manual (Manobra de Hamilton), ocitócicos (oxitocina, misoprostol, ergometrina), suturas compressivas (como a de B-Lynch) e, em casos específicos, ligadura de artérias hipogástricas ou uterinas. A histerectomia é reservada para casos de falha terapêutica e instabilidade grave.\n\nSegunda sentença (V): A amniotomia é uma conduta mandatória e precoce no Descolamento Prematuro de Placenta (DPP). Ela serve para três propósitos principais: 1) Diminuir a pressão intrauterina (causada pelo hematoma e pela hipertonia), o que reduz a compressão da veia cava e melhora o retorno venoso; 2) Reduzir a infiltração de tromboplastina na circulação materna, prevenindo ou minimizando a Coagulação Intravascular Disseminada (CIVD); 3) Facilitar e acelerar o trabalho de parto. Mesmo em casos com indicação de cesariana, a amniotomia deve ser realizada imediatamente para estabilizar a dinâmica uterina e reduzir as complicações coagulopáticas.\n\nTerceira sentença (F): O diagnóstico do Descolamento Prematuro de Placenta é essencialmente CLÍNICO. O quadro clássico envolve dor abdominal súbita, hipertonia uterina, sangramento vaginal escuro (em 80% dos casos) e sofrimento ou óbito fetal. A ultrassonografia tem baixa sensibilidade (cerca de 25% a 50%) para detectar o hematoma retroplacentário agudo, pois o coágulo pode ser isoecoico em relação à placenta. Portanto, nunca se deve aguardar a confirmação por imagem para intervir, pois o atraso aumenta drasticamente a morbimortalidade.\n\nQuarta sentença (V): Se o feto já estiver morto e a mãe apresentar estabilidade hemodinâmica, a via de parto preferencial é a vaginal. A cesariana, neste cenário de óbito, deve ser evitada devido ao alto risco de coagulopatia e sangramento incontrolável durante e após a cirurgia. O trabalho de parto costuma ser rápido devido à hipertonia uterina e à liberação de prostaglandinas pelo descolamento. Pode-se induzir ou conduzir com ocitocina ou misoprostol, sempre monitorando níveis de fibrinogênio e outros parâmetros de coagulação, pois o óbito fetal é um fator de risco importante para o consumo de fatores de coagulação.\n\nCONCLUSÃO:\nA sequência correta é Verdadeiro, Verdadeiro, Falso, Verdadeiro (V, V, F, V).\n\nAlternativa correta: Letra (c).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto",
+      "Sagramento da Segunda Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:21:09.520Z"
+  }
+]

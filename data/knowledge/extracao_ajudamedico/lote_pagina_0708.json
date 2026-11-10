@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_c60cfa82-f548-47a0-84c3-1375376f24b6",
+    "originalId": "c60cfa82-f548-47a0-84c3-1375376f24b6",
+    "statement": "Paciente de 73 anos, previamente independente para as atividades de vida diária, apresenta início súbito de afasia e hemiparesia direita há 120 minutos. Tem antecedentes de hipertensão arterial e arritmia cardíaca e faz uso das medicações anlodipino 10 mg/d e hidroclorotiazida 25 mg/d. Na entrada da sala de emergência, apresenta PA de 168 × 96 mmHg e glicemia de 118 mg/dL. Realizada a avaliação de nível de consciência, linguagem, força muscular, coordenação, sensibilidade e função dos olhos, resultando em um NIHSS 18.\nEncaminhada para angiotomografia de crânio, que não evidenciou hemorragia intraparenquimatosa e oclusão de M1 esquerda conforme o corte tomográfico a seguir:\n\nA conduta a partir da sala de emergência é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tenecteplase endovenoso periférico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "trombectomia mecânica associada à trombólise endovenosa (“bridging”).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "aspirina 300 mg e observar por 24 – 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "heparina plena endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "repetir nova tomografia de crânio em 6 horas para a tomada de decisão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\nEstamos diante de um paciente de 73 anos com Acidente Vascular Cerebral Isquêmico (AVCI) agudo, com tempo de evolução de 120 minutos (2 horas), o que o coloca dentro da janela terapêutica clássica para trombólise endovenosa (até 4,5 horas). O NIHSS de 18 indica um déficit neurológico grave. A angiotomografia de crânio, evidenciada na imagem pelas setas, demonstra uma interrupção abrupta do fluxo na artéria cerebral média esquerda em seu segmento M1, configurando uma oclusão de grande vaso (OGV).\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta: Embora o uso de fibrinolíticos (como a Tenecteplase ou Alteplase) seja indicado para este paciente por estar dentro da janela de 4,5 horas, a presença de uma oclusão de grande vaso (M1) torna a trombectomia mecânica obrigatória para maximizar as chances de recanalização e bom prognóstico funcional. Apenas a trombólise isolada tem baixa taxa de sucesso na recanalização de grandes vasos.\n\nAlternativa B - Correta: Esta é a conduta padrão-ouro (níveis de evidência 1A). Para pacientes com oclusão de grande vaso na circulação anterior identificada até 6 horas do início dos sintomas, a recomendação é realizar o tratamento combinado (\"bridging therapy\"): inicia-se o fibrinolítico endovenoso imediatamente e encaminha-se o paciente para a neurointervenção para realização da trombectomia mecânica.\n\nAlternativa C - Incorreta: O uso de aspirina é indicado para a prevenção secundária e deve ser iniciado geralmente após 24 horas da trombólise. No momento agudo (2 horas de evolução), a prioridade absoluta é a terapia de reperfusão (trombólise e/ou trombectomia). Adotar uma conduta conservadora (\"observar\") resultaria em sequelas graves e permanentes para o paciente.\n\nAlternativa D - Incorreta: Não há indicação de heparinização plena na fase aguda do AVCI. O uso de anticoagulantes nesse cenário não melhora o desfecho neurológico e aumenta significativamente o risco de transformação hemorrágica da área infartada.\n\nAlternativa E - Incorreta: No manejo do AVC, \"tempo é cérebro\". Aguardar 6 horas para repetir um exame de imagem faria com que o paciente perdesse a janela terapêutica tanto para a trombólise quanto para a trombectomia mecânica convencional, levando à morte neuronal irreversível em uma vasta área do hemisfério cerebral esquerdo.\n\nRelação com a imagem:\nAs imagens de angiotomografia mostram, à esquerda do observador (que corresponde ao lado direito do paciente), os ramos da artéria cerebral média normais. Já as setas apontam para o lado esquerdo do paciente, onde se observa a \"falha de enchimento\" ou \"stop\" vascular no segmento M1 da artéria cerebral média. Isso confirma a oclusão de grande vaso, que é o critério principal para a indicação da trombectomia mecânica associada ao fibrinolítico.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/818462a4886f809afe34030e108f575e39f57df1a6d5a0e48fe9599e2db4ea55.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c60cfa82-f548-47a0-84c3-1375376f24b6_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:19.356Z"
+  },
+  {
+    "id": "AJUDA_c618ae96-630a-4ca5-b504-15bd85eb5462",
+    "originalId": "c618ae96-630a-4ca5-b504-15bd85eb5462",
+    "statement": "A hebiatria é uma subespecialidade da pediatria, que atende os adolescentes, porém não existe um consenso entre o ECA (Estatuto da Criança e do Adolescente) e a OMS (Organização Mundial da Saúde) em relação à abrangência desta subespecialidade. Segundo a OMS, a adolescência abrange crianças entre quais idades?",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 e 19 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "12 e 16 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "12 e 18 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "16 e 21 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender essa questão, é fundamental diferenciar as definições cronológicas de adolescência adotadas por diferentes instituições, pois esse é um tema recorrente em provas de Pediatria e Medicina Preventiva.\n\nA Organização Mundial da Saúde (OMS) define a adolescência como o período da vida que compreende a faixa etária entre 10 e 19 anos, 11 meses e 29 dias. Essa definição é estritamente cronológica e visa a padronizar estudos epidemiológicos e políticas de saúde globais.\n\nAnálise das alternativas:\n\nAlternativa a) 10 e 19 anos.\nCORRETA. Esta é a definição oficial da OMS. Vale lembrar que a OMS ainda subdivide esse período em duas fases: a primeira adolescência (10 a 14 anos) e a segunda adolescência (15 a 19 anos). Além disso, a OMS utiliza o termo \"jovens\" para indivíduos entre 10 e 24 anos e \"juventude\" para a faixa entre 15 e 24 anos.\n\nAlternativa b) 12 e 16 anos.\nINCORRETA. Não há uma diretriz internacional ou nacional de relevância que utilize esse intervalo específico para definir a adolescência.\n\nAlternativa c) 12 e 18 anos.\nINCORRETA. Embora seja um intervalo muito conhecido no Brasil, esta é a definição adotada pelo Estatuto da Criança e do Adolescente (ECA). Para a legislação brasileira (Lei 8.069/1990), criança é a pessoa até 12 anos incompletos, e adolescente é aquela entre 12 e 18 anos de idade. A questão pede especificamente a definição da OMS, e não a do ECA.\n\nAlternativa d) 16 e 21 anos.\nINCORRETA. Esses marcos não correspondem à definição de adolescência pela OMS. O limite de 21 anos é por vezes associado ao conceito de \"adulto jovem\" em algumas sociedades ou ao limite de atendimento em certos serviços de hebiatria nos Estados Unidos (pela Academia Americana de Pediatria), mas não é o padrão da OMS.\n\nResumo para memorização:\nOMS: 10 a 19 anos.\nECA: 12 a 18 anos.\nSociedade Brasileira de Pediatria (SBP): Segue a OMS (10 a 19 anos) para o acompanhamento clínico.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:19.356Z"
+  },
+  {
+    "id": "AJUDA_c61aba21-0feb-4287-9801-1d6385de67d8",
+    "originalId": "c61aba21-0feb-4287-9801-1d6385de67d8",
+    "statement": "Um paciente de 45 anos de idade, hipertenso, em uso de medicação regular, apresenta quadro de tosse seca persistente há três semanas, com febre intermitente e emagrecimento progressivo. O exame físico mostrou, FC = 95 bpm, FR = 20 irpm, SatO2 = 94%, exame de fundo de olho sem alterações e linfonodomegalia cervical. \n\nCom base nesse caso clínico, qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tuberculose pulmonar",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Pneumonia bacteriana",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Infecção por HIV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Linfoma",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente em questão apresenta-se como um sintomático respiratório, definido por tosse que persiste por três semanas ou mais. O quadro é acompanhado de sintomas constitucionais importantes, como febre intermitente e emagrecimento progressivo, além de linfonodomegalia cervical ao exame físico. No contexto clínico e epidemiológico, essa combinação de fatores direciona fortemente para o diagnóstico de tuberculose.\n\nDISTRIBUIÇÃO DAS ALTERNATIVAS\n\nAlternativa A (Correta): A tuberculose pulmonar é a hipótese diagnóstica primária para qualquer paciente com tosse por três semanas ou mais, associada a sintomas consumptivos (perda de peso) e febre. A linfonodomegalia cervical é um achado frequente, podendo indicar a forma ganglionar da doença ou disseminação linfática a partir de um foco pulmonar. O quadro de evolução subaguda a crônica é o padrão clássico da infecção pelo *Mycobacterium tuberculosis*.\n\nAlternativa B (Incorreta): A pneumonia bacteriana típica manifesta-se de forma aguda, com evolução de poucos dias. Geralmente apresenta tosse produtiva, febre alta, calafrios e dor pleurítica. A perda ponderal progressiva e o curso de três semanas com linfonodomegalia cervical não são características esperadas para uma pneumonia lobar bacteriana comum.\n\nAlternativa C (Incorreta): A infecção pelo HIV é uma condição de imunossupressão que predispõe ao surgimento de diversas patologias, mas não é o diagnóstico da síndrome clínica apresentada. O paciente poderia ter HIV como fator de risco, mas a doença manifesta no momento (tosse, febre e perda de peso) aponta para uma infecção oportunista ou associada, sendo a tuberculose a principal delas. O enunciado pede o diagnóstico mais provável para o quadro descrito, e não a condição imunológica de base.\n\nAlternativa D (Incorreta): O linfoma é um importante diagnóstico diferencial, pois pode cursar com febre, perda de peso e linfonodomegalias (sintomas B). No entanto, em termos de probabilidade epidemiológica e apresentação clínica inicial com tosse persistente, a tuberculose deve ser sempre a primeira hipótese a ser investigada e excluída antes de se prosseguir para diagnósticos oncológicos mais complexos. Além disso, a tosse na tuberculose é um sintoma cardinal decorrente do comprometimento do parênquima pulmonar.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:19.356Z"
+  },
+  {
+    "id": "AJUDA_c623ca8f-58c5-4320-b3c7-1083e5730bab",
+    "originalId": "c623ca8f-58c5-4320-b3c7-1083e5730bab",
+    "statement": "Homem de 22 anos, vítima de atropelamento, foi levado pelo suporte avançado do SAMU a uma emergência terciária de trauma, onde chegou em prancha rígida, com colar cervical e com queixa de dor em andar inferior de abdome. Avaliação inicial: paciente consciente; contactante; descorado 2+/4+; FC 120 bpm; FR 24 irpm; PA 80 x 60 mmHg; abdome plano, normotenso, doloroso à palpação profunda em andar inferior; descompressão brusca negativa; bacia instável e hematoma em região escrotal. Foram realizadas: medidas de estabilização na sala de emergência; ultrassonografia FAST, cujo resultado foi negativo para líquido livre abdominal; e radiografia da pelve, conforme a seguinte figura. Após, foi aplicada cinta pélvica, o que resultou em estabilização mecânica do anel pélvico, com fechamento do quadril.\n\nNesse caso, mantendo-se um quadro de hipotensão, qual é a próxima conduta a ser realizada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Angiografia com embolização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Laparotomia exploradora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estabilização cirúrgica do quadril.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tomografia de abdome e pelve.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Trata-se de um politraumatizado jovem em choque hemorrágico classe III (FC 120 bpm, PA 80 x 60 mmHg, FR 24 irpm, descorado). O exame mostra bacia instável e hematoma escrotal. O FAST é negativo para líquido livre, o que afasta, com razoável segurança, hemorragia intraperitoneal significativa. A fonte mais provável do sangramento é, portanto, a fratura pélvica, com hemorragia retroperitoneal.\n\nAnálise da imagem: a radiografia anteroposterior da pelve mostra alargamento importante da sínfise púbica (diástase), com abertura do anel pélvico anterior e provável lesão da articulação sacroilíaca. É o padrão de compressão anteroposterior, a lesão em \"livro aberto\" (open book). Esse tipo de fratura aumenta muito o volume da pelve e rompe o plexo venoso pré-sacral e as superfícies ósseas esponjosas. Cerca de 80 a 90% do sangramento pélvico é de origem venosa ou óssea, e não arterial.\n\nA cinta pélvica fechou o anel e reduziu o volume pélvico, mas o paciente segue hipotenso. A cinta é apenas uma medida temporária. O passo seguinte é a estabilização mecânica definitiva do anel em centro cirúrgico, com fixador externo, geralmente associada ao tamponamento (packing) pré-peritoneal. Isso controla o sangramento venoso e ósseo, que predomina nesse padrão de lesão.\n\nAnálise das alternativas:\n\na) Angiografia com embolização: incorreta como próxima conduta neste contexto. A embolização trata apenas o sangramento arterial, minoria nas fraturas em livro aberto. Ela fica reservada para quando há extravasamento arterial de contraste (\"blush\") na tomografia ou quando a instabilidade persiste após fixação e tamponamento. Além disso, exige hemodinamista disponível e tempo, e levar um paciente instável para a sala de angiografia antes de controlar a fonte venosa é arriscado. Alguns protocolos aceitam a angioembolização como opção, mas, pela lógica da banca, a fixação mecânica vem antes.\n\nb) Laparotomia exploradora: incorreta. O FAST negativo e o abdome sem sinais de peritonite não indicam sangramento intraperitoneal. Abrir o peritônio pode ainda liberar o tamponamento do hematoma retroperitoneal pélvico e piorar a hemorragia.\n\nc) Estabilização cirúrgica do quadril: correta. A fixação externa do anel pélvico, idealmente com packing pré-peritoneal, reduz o volume pélvico de forma estável, aproxima as superfícies fraturadas e comprime os plexos venosos. É o controle de danos adequado para a hemorragia pélvica que persiste mesmo com a cinta.\n\nd) Tomografia de abdome e pelve: incorreta. Paciente hemodinamicamente instável não deve ir ao tomógrafo, como preconiza o ATLS (\"o túnel da morte\"). A tomografia só é indicada após estabilização hemodinâmica.\n\nResumo: em fratura pélvica em livro aberto com choque persistente após cinta pélvica e FAST negativo, deve-se controlar o sangramento predominantemente venoso com estabilização cirúrgica do anel pélvico (fixador externo, com ou sem packing pré-peritoneal). A angioembolização fica como complemento se a instabilidade persistir ou houver evidência de sangramento arterial.\n\nGabarito: C.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Trauma",
+      "Politrauma Ortopédico"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/30e90476c5cc870fc57906e67c6fc189f1ab7e0b027ebcb104a31e1c5b169509.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_c623ca8f-58c5-4320-b3c7-1083e5730bab_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:19.853Z"
+  },
+  {
+    "id": "AJUDA_c624a0f8-0d3a-4a12-a5c6-6c73f3c83f01",
+    "originalId": "c624a0f8-0d3a-4a12-a5c6-6c73f3c83f01",
+    "statement": "Em um estudo individuado seccional (de prevalência), foi encontrada uma razão de prevalência de 2,2 (com intervalo de confiança condizente). Isso significa que a prevalência do desfecho entre os expostos foi",
+    "options": [
+      {
+        "id": "A",
+        "text": "maior que a prevalência do desfecho entre os não expostos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "igual a prevalência do desfecho entre os não expostos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "menor que a prevalência do desfecho entre os não expostos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "igual ao risco de adoecer entre os não expostos, com significância estatística.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "CONCEITO INICIAL\n\nO estudo seccional, também chamado de transversal ou de prevalência, é um delineamento de pesquisa em que a exposição e o desfecho são analisados simultaneamente em uma população, em um único ponto no tempo. A principal medida de associação utilizada nesse tipo de estudo é a Razão de Prevalência (RP).\n\nRAZÃO DE PREVALÊNCIA (RP)\n\nA Razão de Prevalência é obtida por meio de uma divisão simples: a prevalência do desfecho no grupo exposto dividida pela prevalência do desfecho no grupo não exposto. \n\nPara interpretar o resultado, utilizamos o valor de referência 1,0 (valor de nulidade):\n\n- Se a RP for igual a 1,0: A prevalência é igual nos dois grupos.\n- Se a RP for maior que 1,0: A prevalência é maior no grupo exposto (sugere fator de risco).\n- Se a RP for menor que 1,0: A prevalência é menor no grupo exposto (sugere fator de proteção).\n\nANÁLISE DA QUESTÃO\n\nA questão informa que a Razão de Prevalência encontrada foi de 2,2. Como 2,2 é um valor maior que 1,0, conclui-se logicamente que o numerador da conta (expostos) é maior do que o denominador (não expostos). Ou seja, a prevalência do desfecho entre os expostos é maior do que entre os não expostos.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Correta): Conforme explicado, uma RP de 2,2 indica que a prevalência no grupo exposto é 2,2 vezes superior à prevalência no grupo não exposto.\n\nAlternativa B (Incorreta): Se a prevalência fosse igual, o resultado da divisão (RP) seria exatamente 1,0.\n\nAlternativa C (Incorreta): Para que a prevalência fosse menor nos expostos, o valor da RP deveria ser um número entre 0 e 1 (por exemplo, 0,5).\n\nAlternativa D (Incorreta): Esta opção apresenta dois erros. Primeiro, o termo \"risco de adoecer\" é tecnicamente reservado para a incidência (casos novos), que é medida em estudos de coorte, e não em estudos seccionais (que medem prevalência/casos existentes). Segundo, a RP de 2,2 indica que as medidas são diferentes entre os grupos, e não iguais.\n\nGABARITO: Letra A.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:19.853Z"
+  },
+  {
+    "id": "AJUDA_c628a0d9-6756-49da-b090-d5c582dfbb65",
+    "originalId": "c628a0d9-6756-49da-b090-d5c582dfbb65",
+    "statement": "Mulher de 25 anos refere prurido vulvar discreto, secreção vaginal bolhosa e colpite macular. À microscopia, a secreção demonstrou piócios e corpos ovalares móveis, com teste das aminas positivo e pH vaginal > 5. Assinale a alternativa que apresenta o diagnóstico correto.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gardnerella.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Candida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Treponema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trichomonas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Clamídia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A alternativa correta é a letra d (Trichomonas vaginalis). O quadro descrito é o de tricomoníase.\n\nPontos-chave do caso:\n- Secreção vaginal bolhosa (espumosa), amarelo-esverdeada, associada a prurido vulvar.\n- Colpite macular, também chamada de \"colo em framboesa\" ou \"colo em morango\". São pontilhados hemorrágicos no colo e na vagina, achado bastante específico, embora pouco sensível.\n- Microscopia a fresco com piócios (muitos leucócitos) e protozoários flagelados ovalares ou piriformes, móveis.\n- Teste das aminas (whiff test) positivo e pH vaginal > 5 (geralmente 5 a 6).\n\nAnálise das alternativas:\n\na) Incorreta. Gardnerella está associada à vaginose bacteriana. A secreção é acinzentada, homogênea e fétida, com pouca ou nenhuma inflamação. O pH é > 4,5 e o teste das aminas é positivo, mas há poucos leucócitos e presença de clue cells (células-alvo). Não há corpos móveis nem colpite macular. Esses achados de pH e aminas são os que podem confundir, pois também ocorrem na tricomoníase.\n\nb) Incorreta. A candidíase causa prurido intenso, secreção branca grumosa (\"leite coalhado\") e hiperemia vulvovaginal. O pH é normal (< 4,5) e o teste das aminas é negativo. A microscopia mostra hifas ou pseudo-hifas e esporos, não protozoários móveis.\n\nc) Incorreta. Treponema pallidum causa sífilis, cuja manifestação primária é o cancro duro, uma úlcera indolor. A manifestação secundária inclui condilomas planos e roséola. Não causa vaginite com secreção bolhosa, e o diagnóstico é por campo escuro ou sorologia.\n\nd) Correta. Trichomonas vaginalis é um protozoário flagelado, transmitido sexualmente, que causa vaginite com secreção espumosa, pH elevado, aminas positivas, piócios e parasitas móveis. O tratamento é metronidazol ou tinidazol por via oral, com tratamento do parceiro.\n\ne) Incorreta. Chlamydia trachomatis causa cervicite mucopurulenta, frequentemente assintomática, e é uma bactéria intracelular. Não é vista à microscopia a fresco como corpo móvel, e o diagnóstico é por NAAT/PCR. Não altera o pH nem o teste das aminas.\n\nResumo: secreção bolhosa, colpite macular, protozoário móvel, pH > 5 e aminas positivas indicam tricomoníase.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:19.853Z"
+  },
+  {
+    "id": "AJUDA_c62a99c5-989b-4b5a-a935-6c06f8461413",
+    "originalId": "c62a99c5-989b-4b5a-a935-6c06f8461413",
+    "statement": "Homem de 56 anos com linfoma difuso de grandes células em quimioterapia (ciclo R-CHOP há 7 dias) procura pronto-socorro com febre de início súbito (38,6 °C), calafrios e mialgia. Está hipotenso (PA: 92/58 mmHg), FC: 115 bpm, taquipneico. Exame: mucosas secas. Hemograma: leucócitos 300/mm³, neutrófilos absolutos 60/mm³; creatinina 1,9 mg/dL (pré-quimioterapia 0,9), bilirrubina normal. Ele recebeu ciprofloxacino profilático oral durante o período aplásico até 48 horas atrás. Não há foco evidente de infecção localizada. Qual a conduta imediata mais correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratar apenas com cefalexina oral por 5 dias, por ser neutropenia leve.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar antibioticoterapia empírica amplo espectro cobrindo pseudomonas imediatamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Aguardar resultados de hemoculturas e iniciar antibioticoterapia empírica dirigida somente se positiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender toda a quimioterapia e colocar paciente em isolamento reverso com prescrição de antibioticoterapia empírica amplo espectro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um quadro de neutropenia febril de alto risco. Os critérios são preenchidos pela presença de febre (temperatura axilar de 38,6 °C) associada a uma contagem absoluta de neutrófilos (CAN) de 60/mm³ (definição de neutropenia: CAN menor que 500/mm³). O quadro é agravado por sinais de instabilidade hemodinâmica (hipotensão: 92/58 mmHg e taquicardia: 115 bpm) e disfunção renal aguda (creatinina subiu de 0,9 para 1,9 mg/dL), caracterizando um estado de sepse ou choque séptico.\n\nPor que a alternativa (b) está correta:\n\nEm pacientes com neutropenia febril de alto risco ou instabilidade clínica, a conduta deve ser imediata. A prioridade é a estabilização hemodinâmica e o início da antibioticoterapia empírica de amplo espectro por via intravenosa, idealmente na primeira hora após a chegada ao pronto-socorro. O esquema escolhido deve obrigatoriamente ter cobertura contra bacilos gram-negativos, especialmente a Pseudomonas aeruginosa, devido à sua alta virulência e letalidade nesta população. Drogas como Cefepime, Piperacilina-Tazobactam ou carbapenêmicos (Meropenem ou Imipenem) são as escolhas iniciais recomendadas pelas diretrizes internacionais (IDSA).\n\nAnálise das alternativas incorretas:\n\nAlternativa (a): Incorreta. A cefalexina é uma cefalosporina de primeira geração com espectro limitado e sem ação contra Pseudomonas aeruginosa. Além disso, o paciente apresenta neutropenia grave (menor que 100/mm³) e sinais de choque, o que exige tratamento hospitalar venoso e não apenas terapia oral para \"neutropenia leve\".\n\nAlternativa (c): Incorreta. Embora a coleta de hemoculturas deva ser feita antes da primeira dose do antibiótico, jamais se deve aguardar o resultado (que demora de 24 a 72 horas) para iniciar o tratamento. Na neutropenia febril, o atraso na antibioticoterapia aumenta drasticamente a mortalidade. O tratamento é, por definição, empírico inicial.\n\nAlternativa (d): Incorreta. A quimioterapia já foi administrada há 7 dias; o paciente já se encontra no período de nadir (ponto de menor contagem celular). Não há como suspender o que já foi infundido e já causou o efeito mielossupressor. O isolamento protetor (reverso) é uma medida de suporte e higiene, mas a conduta médica imediata e salvadora de vidas é o combate à infecção e o suporte hemodinâmico, conforme descrito na alternativa B.",
+    "exam": "ICC prova II",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Neutropenia Febril"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/be2d29775f03e35c65e5447c6d57704207e04de5be6d989a77b58511c37717e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6c9f20cc935e80f1bb8cf9dae72e99c2b675d0cef83d8ad0d39648e346bc71be.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:19.853Z"
+  },
+  {
+    "id": "AJUDA_c634b42e-60bc-435b-ba41-707bfa39766c",
+    "originalId": "c634b42e-60bc-435b-ba41-707bfa39766c",
+    "statement": "Escolar de 9 anos de idade procurou serviço médico pediátrico com história de febre alta, acompanhada de artrite em tornozelo direito, de duração de 5 dias, e posteriormente, acometimento em tornozelo esquerdo com a mesma duração, seguindo para o joelho direto e punho esquerdo. Evoluiu após uma semana com quadro de fraqueza, indisposição, persistência da febre e envolvimento da articulação do joelho esquerdo, além de dispneia, hepatomegalia dolorosa e edema e membros inferiores.\n\nConsiderando as informações abaixo, qual o grupo de doenças que mais se aproximam ao diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anemia Falciforme, Lúpus Eritematoso Sistêmico, Artrite Reativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Escarlatina, Artrite Idiopática Juvenil (Doença de Still), Doença de Kawasaki.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Febre Reumática, Espondilite Anquilosante, Leucemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lupus Eritematoso Sistêmico, Talassemia e Miocardite viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Febre Reumática, Artrite Idiopática Juvenil (Doença de Still), Endocardite Bacteriana.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do caso clínico:\n\nO quadro clínico descreve um escolar de 9 anos com febre alta e uma artrite de característica migratória (acomete uma articulação e, conforme melhora, inicia-se em outra). Esse padrão de poliartrite migratória, que envolve grandes articulações como tornozelos, joelhos e punhos, é o sinal articular patognomônico da Febre Reumática Aguda. Além disso, a evolução para dispneia, hepatomegalia dolorosa e edema de membros inferiores indica um quadro de insuficiência cardíaca congestiva decorrente de uma pancardite (inflamação do miocárdio, endocárdio e pericárdio), que é a manifestação mais grave da doença. De acordo com os Critérios de Jones, o paciente apresenta dois critérios maiores: poliartrite e cardite.\n\nAnálise das alternativas:\n\na) Incorreta. A anemia falciforme causa crises vaso-oclusivas e dores ósseas, mas não poliartrite migratória. O lúpus pode causar artrite e cardite (serosite), mas a característica migratória da artrite é muito mais marcante na Febre Reumática. A artrite reativa sucede infecções e costuma ser persistente e assimétrica, não migratória e com falência cardíaca aguda.\n\nb) Incorreta. A escarlatina é uma infecção estreptocócica aguda com exantema, mas não causa o dano orgânico (coração e articulação) descrito. A Doença de Kawasaki causa febre e alteração cardíaca (coronariopatias), mas o quadro articular é diferente e o paciente costuma apresentar alterações em mucosas, mãos e pés (edema e descamação). A Doença de Still é um diferencial, mas a Febre Reumática é soberana pela descrição da migração articular.\n\nc) Incorreta. Embora contenha a Febre Reumática, a Espondilite Anquilosante é uma doença do esqueleto axial (coluna) e rara em crianças de 9 anos. A leucemia pode causar dor óssea e febre (simulando artrite), mas a cardite com hepatomegalia congestiva não faz parte de sua apresentação clássica.\n\nd) Incorreta. A talassemia é uma doença hematológica crônica. A miocardite viral pode causar insuficiência cardíaca súbita, mas não é precedida por poliartrite migratória em grandes articulações.\n\ne) Correta. Esta alternativa apresenta o diagnóstico principal e os dois diferenciais mais importantes para o caso. A Febre Reumática é a hipótese diagnóstica mais provável diante da poliartrite migratória associada à cardite. A Artrite Idiopática Juvenil (forma sistêmica ou Doença de Still) é o grande diagnóstico diferencial de febre crônica e artrite na infância. A Endocardite Bacteriana deve sempre ser considerada em pacientes com febre e sinais de comprometimento das válvulas cardíacas ou insuficiência cardíaca.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Endocardite Bacteriana",
+      "Artrite Idopática Juvenil (AIJ)",
+      "Febre Reumática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:19.853Z"
+  },
+  {
+    "id": "AJUDA_c6362142-16fc-4c64-9dcf-9fde7da61934",
+    "originalId": "c6362142-16fc-4c64-9dcf-9fde7da61934",
+    "statement": "Sobre a Síndrome Torácica Aguda (STA) na doença falciforme, analise as sentenças:\n\n1. É definida pelo surgimento de um novo infiltrado pulmonar na radiografia de tórax, associado a febre e sintomas respiratórios.\n2. É a principal causa de mortalidade em adolescentes e adultos com anemia falciforme.\n3. O tratamento inclui suporte ventilatório, analgesia, antibióticos e transfusão sanguínea se houver hipóxia grave.\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1-V, 2-F, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1-V, 2-V, 3-F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1-F, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1-V, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da Questão: Síndrome Torácica Aguda (STA) na Doença Falciforme\n\nSentença 1: É definida pelo surgimento de um novo infiltrado pulmonar na radiografia de tórax, associado à febre e a sintomas respiratórios.\nEsta afirmativa é verdadeira. A Síndrome Torácica Aguda é um diagnóstico clínico-radiológico. Os critérios diagnósticos clássicos exigem a presença de um novo infiltrado pulmonar (envolvendo pelo menos um segmento pulmonar completo) na radiografia de tórax, somado a pelo menos um dos seguintes achados: febre, dor torácica, taquipneia, tosse ou hipoxemia. É importante lembrar que, no início do quadro, a radiografia pode ser normal, devendo ser repetida se a suspeita persistir.\n\nSentença 2: É a principal causa de mortalidade em adolescentes e adultos com anemia falciforme.\nEsta afirmativa é verdadeira. Embora as infecções sejam a principal causa de morte em crianças pequenas com anemia falciforme (devido ao asplenismo funcional precoce), a STA assume o posto de principal causa de óbito e a segunda causa mais comum de hospitalização à medida que os pacientes atingem a adolescência e a vida adulta. A gravidade da STA e sua evolução rápida para insuficiência respiratória justificam esse dado epidemiológico.\n\nSentença 3: O tratamento inclui suporte ventilatório, analgesia, antibióticos e transfusão sanguínea se houver hipóxia grave.\nEsta afirmativa é verdadeira. O manejo da STA baseia-se em quatro pilares fundamentais: 1. Suporte respiratório: oxigênio suplementar para manter a saturação adequada e ventilação mecânica, se necessário. 2. Analgesia: controle rigoroso da dor (geralmente com opioides) para evitar a hipoventilação por dor, o que agravaria as atelectasias. 3. Antibioticoterapia: deve ser de amplo espectro, cobrindo germes comuns e atípicos (geralmente uma cefalosporina de terceira geração associada a um macrolídeo). 4. Hemoterapia: a transfusão de sangue (simples ou exsanguinotransfusão) está indicada em casos de hipóxia persistente, queda importante da hemoglobina ou sinais de gravidade clínica, visando reduzir a porcentagem de hemoglobina S e melhorar a oferta de oxigênio aos tecidos.\n\nConclusão:\nComo as três sentenças são corretas e verdadeiras, a alternativa que reflete essa análise é a letra (d).\n\nAnálise das alternativas:\na) Incorreta. A sentença 2 é verdadeira.\nb) Incorreta. A sentença 3 é verdadeira.\nc) Incorreta. A sentença 1 é verdadeira.\nd) Correta. Todas as sentenças (1, 2 e 3) são verdadeiras conforme a literatura médica atual sobre hemoglobinopatias.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:19.853Z"
+  },
+  {
+    "id": "AJUDA_c639cb95-d069-4a62-9a00-83b2352f962c",
+    "originalId": "c639cb95-d069-4a62-9a00-83b2352f962c",
+    "statement": "Paciente de 26 anos, internado pela equipe de hematologia, apresentava febre, perda de peso e astenia associadas a linfonodomegalia cervical posterior. Tomografias demonstraram conglomerados linfonodais em regiões cervical, mediastinal e retroperitoneal, sugestivos de doença linfoproliferativa. Foi solicitada avaliação da equipe de cirurgia geral para realização de biópsia ganglionar com objetivo de estabelecer o diagnóstico histopatológico. Na palpação, identificou-se linfonodo facilmente acessível em nível Vb à esquerda, sem sinais de contato ou envolvimento de estruturas vasculares importantes nos exames de imagem, sendo escolhido como primeira opção para biópsia excisional sob anestesia local. Considerando a localização do linfonodo, o cirurgião deve se atentar ao risco de lesão de qual estrutura nervosa?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nervo acessório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Gânglio estrelado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Nervo frênico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nervo hipoglosso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O nível V da cadeia linfonodal cervical corresponde ao trígono posterior do pescoço, limitado anteriormente pela borda posterior do músculo esternocleidomastoideo, posteriormente pela borda anterior do músculo trapézio e inferiormente pela clavícula. O nível V é subdividido em Va (superior) e Vb (inferior/supraclavicular). A realização de biópsia excisional nessa região exige extremo cuidado anatômico com as estruturas que cruzam esse espaço.\n\nAnálise das alternativas:\n\na) Nervo acessório: Correta. O nervo acessório (XI par craniano) cruza o trígono posterior do pescoço (nível V) em um trajeto relativamente superficial dentro do tecido adiposo subfascial, dirigindo-se ao músculo trapézio para fornecer sua inervação motora. Devido a essa localização superficial e à sua íntima relação com os linfonodos do nível V, é a estrutura nervosa com maior risco clássico de lesão iatrogênica durante biópsias excisionais nessa área. Sua lesão acarreta escápula alada, queda do ombro e limitação da abdução do braço acima de 90 graus.\n\nb) Gânglio estrelado: Incorreta. O gânglio cervicotorácico (estrelado) faz parte do tronco simpático cervical e localiza-se em plano muito profundo, anterior ao colo da primeira costela e ao processo transverso de C7, não sendo vulnerável em uma abordagem padrão de nível V.\n\nc) Nervo frênico: Incorreta. Embora o nervo frênico passe pela região cervical baixa, ele repousa sobre a face anterior do músculo escaleno anterior e é protegido pela lâmina pré-vertebral da fáscia cervical profunda, situando-se em um plano muito mais profundo e medial do que o trajeto superficial do nervo acessório.\n\nd) Nervo hipoglosso: Incorreta. O nervo hipoglosso (XII par craniano) localiza-se no terço superior do pescoço, relacionando-se com os trígonos carotídeo e submandibular (níveis I e II), sem qualquer proximidade com o nível Vb.\n\nPortanto, a alternativa correta é a letra a.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:46:19.853Z"
+  }
+]

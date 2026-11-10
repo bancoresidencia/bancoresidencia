@@ -1,0 +1,487 @@
+[
+  {
+    "id": "AJUDA_02fed343-9b54-4246-9559-3fd42db6bb16",
+    "originalId": "02fed343-9b54-4246-9559-3fd42db6bb16",
+    "statement": "A respeito das doenças anorretais, assinale verdadeiro (V) ou falso (F) e escolha a alternativa que representa a sequência CORRETA:\n\n( ) Está indicado tratamento cirúrgico para todos os casos de fissura anal.\n( ) Nos quadros de dor anal aguda deve-se considerar, no diagnóstico diferencial, as possibilidades de: abscesso perianal, trombose hemorroidária e fissura anal.\n( ) O principal mecanismo de formação dos abscessos anorretais é a obstrução criptoglandular anal.\n( ) A principal modalidade de tratamento para abscessos perianais é a antibioticoterapia venosa de amplo espectro. A drenagem cirúrgica pode ser postergada, sendo indicada nos casos que não respondem à abordagem inicial com antibióticos.\n( ) O sangramento hemorroidário se apresenta tipicamente como melena.\n( ) O condiloma acuminado ou verruga anal é uma infecção sexualmente transmissível causada pelo HPV.",
+    "options": [
+      {
+        "id": "A",
+        "text": "FVVFFV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "VVFVFV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "FVFFVV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "FVFFVF.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "( ) Falso. O tratamento inicial da fissura anal, especialmente na fase aguda, é conservador, baseado em dieta rica em fibras, alta ingestão hídrica, banhos de assento com água morna e uso de pomadas (nitratos ou bloqueadores de canais de cálcio). A cirurgia, geralmente a esfincterotomia interna lateral, é indicada apenas para casos crônicos que não respondem ao manejo clínico.\n\n( ) Verdadeiro. Essas são as três causas mais comuns de dor anal aguda na prática médica. O abscesso causa dor pulsátil e contínua; a trombose hemorroidária gera dor súbita e presença de nódulo sensível; e a fissura anal provoca dor lancinante durante e após a evacuação.\n\n( ) Verdadeiro. A teoria criptoglandular é a fisiopatologia mais aceita. Ela propõe que o abscesso se origina da obstrução e subsequente infecção das glândulas anais, que se localizam nas criptas de Morgagni, ao nível da linha pectínea.\n\n( ) Falso. O tratamento definitivo de um abscesso perianal é a drenagem cirúrgica imediata (\"Ubi pus, ibi evacua\"). O uso de antibióticos é complementar e reservado para casos específicos, como pacientes diabéticos, imunossuprimidos, com celulite extensa ou sinais de sepse. O antibiótico sozinho não cura o abscesso e a drenagem não deve ser postergada.\n\n( ) Falso. O sangramento hemorroidário é caracteristicamente de cor vermelho-vivo (sangue fresco), ocorrendo geralmente ao final da evacuação, podendo pingar no vaso ou sujar o papel higiênico (hematoquezia ou rectorragia). A melena (fezes escuras e fétidas) indica sangramento digestivo alto (acima do ângulo de Treitz).\n\n( ) Verdadeiro. O condiloma acuminado é causado pelo Papilomavírus Humano (HPV). É uma infecção sexualmente transmissível (IST) que se manifesta como lesões verrucosas na região perianal e no canal anal.\n\nConclusão da sequência: F - V - V - F - F - V.\nAlternativa correta: Letra (a).",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:34.302Z"
+  },
+  {
+    "id": "AJUDA_03052ef7-aec4-4bd0-9088-02152ff954da",
+    "originalId": "03052ef7-aec4-4bd0-9088-02152ff954da",
+    "statement": "Considere um determinado teste diagnóstico de uma infecção sendo utilizado em uma cidade onde sua prevalência é 10%. O que se espera dos valores preditivos positivo (VPP), negativo (VPN) e da especificidade (E) deste teste, se ele for aplicado em outra cidade onde a prevalência da infecção é 20%?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentará; diminuirá; será mantida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Diminuirá; aumentará; aumentará.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diminuirá; aumentará; será mantida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumentará; aumentará; diminuirá.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender esta questão, é necessário distinguir as propriedades intrínsecas de um teste daquelas que dependem da epidemiologia local (prevalência).\n\n1. ESPECIFICIDADE (E): A especificidade, assim como a sensibilidade, é uma característica intrínseca do teste. Ela mede a capacidade do método de identificar corretamente os indivíduos sadios. Independentemente de a prevalência da infecção ser 10% ou 20%, a capacidade técnica e o desempenho fixo do teste não mudam. Por isso, a especificidade SERÁ MANTIDA.\n\n2. VALOR PREDITIVO POSITIVO (VPP): O VPP indica a probabilidade de um paciente com teste positivo estar realmente doente. Quando a prevalência de uma doença aumenta em uma população, a probabilidade pré-teste aumenta. Isso significa que, proporcionalmente, haverá mais verdadeiros positivos do que falsos positivos. Portanto, o VPP AUMENTARÁ.\n\n3. VALOR PREDITIVO NEGATIVO (VPN): O VPN indica a probabilidade de um paciente com teste negativo estar realmente saudável. Com o aumento da prevalência, há mais pessoas doentes na população. Isso aumenta a chance de o teste apresentar resultados falsos negativos (doentes que testam negativo). Assim, a segurança de que um resultado negativo signifique ausência de doença diminui. Portanto, o VPN DIMINUIRÁ.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A) ESTÁ CORRETA. Reflete exatamente o comportamento matemático e epidemiológico: com o aumento da prevalência, o VPP aumenta, o VPN diminui e a especificidade permanece constante.\n\nAlternativa B) ESTÁ INCORRETA. O VPN diminui (e não aumenta) com o aumento da prevalência. Além disso, a especificidade é uma propriedade intrínseca e não aumenta em função da prevalência.\n\nAlternativa C) ESTÁ INCORRETA. O VPP aumenta com o aumento da prevalência (e não diminui). O VPN, por sua vez, diminui (e não aumenta).\n\nAlternativa D) ESTÁ INCORRETA. Embora o VPP realmente aumente, o VPN deveria diminuir (e não aumentar) e a especificidade deveria ser mantida (visto que não é afetada pela quantidade de doentes na população).\n\nDICA DE MEMORIZAÇÃO:\nO Valor Preditivo Positivo (VPP) sempre acompanha a prevalência: se a prevalência sobe, o VPP sobe.\nO Valor Preditivo Negativo (VPN) é o oposto: se a prevalência sobe, o VPN desce.\nSensibilidade e Especificidade são propriedades do teste e não mudam com a prevalência.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Estatística Médica",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:34.302Z"
+  },
+  {
+    "id": "AJUDA_0308a4e8-1a20-4201-bbfd-40c031327c9c",
+    "originalId": "0308a4e8-1a20-4201-bbfd-40c031327c9c",
+    "statement": "Homem, 52 anos de idade, etilista crônico (1 litro de cachaça/dia há 20 anos), é internado e tratado por quadro de pneumonia. Após 48 horas de internação, apresenta agitação psicomotora intensa, sudorese profusa, tremores grosseiros de extremidades, FC = 130 bpm, PA = 170/100 mmHg, alucinações visuais de insetos e desorientação no tempo e espaço. Qual o tratamento farmacológico inicial de escolha para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Haloperidol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diazepam",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Clozapina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Risperidona",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO paciente apresenta um quadro clássico de Delirium Tremens (DT), a forma mais grave da síndrome de abstinência do álcool. Os elementos diagnósticos presentes no enunciado são:\n1. Histórico de etilismo crônico pesado.\n2. Janela temporal: os sintomas iniciaram 48 horas após a internação (interrupção do consumo).\n3. Instabilidade autonômica: taquicardia (130 bpm), hipertensão (170/100 mmHg) e sudorese profusa.\n4. Alteração do sensório: desorientação temporoespacial e agitação.\n5. Alucinações visuais: presença de zoopsia (alucinação com insetos ou pequenos animais).\n\nO Delirium Tremens é uma emergência médica com risco de morte, decorrente da hiperexcitabilidade do sistema nervoso central após a retirada do álcool, que é um depressor do sistema nervoso central.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Haloperidol: Incorreta. Embora seja um potente antipsicótico, o haloperidol não deve ser utilizado como monoterapia inicial na abstinência alcoólica. Ele reduz o limiar convulsivo, aumentando o risco de crises epilépticas, que já é elevado nesses pacientes. Pode ser usado apenas como adjuvante em casos de agitação psicomotora ou alucinações refratárias ao uso de benzodiazepínicos.\n\nAlternativa b) Diazepam: Correta. Os benzodiazepínicos são o padrão-ouro para o tratamento da síndrome de abstinência do álcool e do Delirium Tremens. Eles agem nos receptores GABA-A, substituindo o efeito inibitório que o álcool exercia no cérebro. O diazepam, especificamente, é muito utilizado por ter uma meia-vida longa, o que proporciona um desmame mais suave e uma proteção mais prolongada contra convulsões e instabilidade autonômica. Em pacientes com cirrose grave ou insuficiência hepática, o lorazepam seria uma opção preferível por não possuir metabolismo hepático oxidativo, mas, de forma geral, o diazepam é a escolha inicial correta.\n\nAlternativa c) Clozapina: Incorreta. A clozapina é um antipsicótico atípico reservado para esquizofrenia refratária. É formalmente contraindicada neste cenário devido ao seu alto potencial de causar agranulocitose e por reduzir drasticamente o limiar convulsivo, o que poderia levar o paciente ao estado de mal epiléptico.\n\nAlternativa d) Risperidona: Incorreta. Assim como outros antipsicóticos, a risperidona não trata a causa fisiopatológica da abstinência (o desequilíbrio entre os sistemas GABAérgico e glutamatérgico) e não previne as complicações autonômicas ou convulsivas da síndrome de retirada.\n\nGABARITO: LETRA B.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:34.302Z"
+  },
+  {
+    "id": "AJUDA_030b2297-7a0e-432f-a0dc-3ac45b555ab7",
+    "originalId": "030b2297-7a0e-432f-a0dc-3ac45b555ab7",
+    "statement": "O trecho de frase “O dever do Estado de garantir a saúde consiste na formulação e execução de políticas econômicas e sociais que visem à redução de riscos de doenças e de outros agravos (...)” é parte integrante da",
+    "options": [
+      {
+        "id": "A",
+        "text": "Política Nacional de Promoção da Saúde (Brasil, 2017).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Declaração Universal dos Direitos Humanos (ONU, 1948).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Constituição da República Federativa do Brasil (Brasil, 1988).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lei nº 8.080, Lei Orgânica da Saúde (Brasil, 1990).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão exige o conhecimento da legislação fundamental do Sistema Único de Saúde (SUS) e a capacidade de diferenciar as redações da Constituição Federal daquelas presentes na Lei Orgânica da Saúde.\n\nAlternativa a: Incorreta. A Política Nacional de Promoção da Saúde (PNPS) estabelece diretrizes, objetivos e prioridades para as ações de promoção à saúde no Brasil. Embora seu conteúdo dialogue com a redução de riscos, ela é uma norma infralegal (portaria) e não a fonte desse texto jurídico estruturante sobre o dever do Estado.\n\nAlternativa b: Incorreta. A Declaração Universal dos Direitos Humanos, de 1948, em seu Artigo 25, reconhece a saúde como parte de um padrão de vida adequado. No entanto, sua redação é de âmbito internacional e genérica, não contendo os termos específicos da legislação brasileira, como a menção direta à formulação e execução de políticas para redução de agravos.\n\nAlternativa c: Incorreta. Esta alternativa é a principal \"pegadinha\". O Artigo 196 da Constituição Federal de 1988 afirma que a saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos. No entanto, o trecho específico que define que esse dever consiste na formulação e execução de políticas é o detalhamento trazido posteriormente pela legislação ordinária.\n\nAlternativa d: Correta. O trecho citado é a transcrição literal do Artigo 2º, Parágrafo 1º, da Lei nº 8.080/1990. Esta lei, conhecida como a Lei Orgânica da Saúde, regula em todo o território nacional as ações e serviços de saúde. Ela expande o conceito constitucional, especificando que a responsabilidade estatal se concretiza através da formulação e da execução de políticas econômicas e sociais.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:34.302Z"
+  },
+  {
+    "id": "AJUDA_0316b81c-c9f9-448b-af0f-8e722985a158",
+    "originalId": "0316b81c-c9f9-448b-af0f-8e722985a158",
+    "statement": "Sobre a hierarquia das evidências científicas, analise as sentenças:\n\n1. Revisões Sistemáticas com Metanálise de Ensaios Clínicos Randomizados ocupam o topo da pirâmide de evidência para questões terapêuticas.\n2. Estudos de Coorte fornecem evidências mais fortes do que Estudos de Caso-Controle.\n3. A opinião de especialistas é considerada um nível elevado de evidência, superior a séries de casos.\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1-V, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1-V, 2-V, 3-F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "1-F, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1-V, 2-F, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, é necessário revisar a pirâmide da Medicina Baseada em Evidências (MBE), que organiza os delineamentos de pesquisa de acordo com sua força para embasar decisões clínicas e seu potencial de viés.\n\nANÁLISE DAS SENTENÇAS:\n\n1. Verdadeira. As revisões sistemáticas com metanálise de ensaios clínicos randomizados são consideradas o \"padrão-ouro\" para questões terapêuticas. Elas ocupam o topo da pirâmide, pois reúnem e analisam estatisticamente múltiplos estudos de alta qualidade sobre o mesmo tema, reduzindo a incerteza e aumentando o poder estatístico dos achados em comparação a estudos isolados.\n\n2. Verdadeira. Na hierarquia dos estudos observacionais, o estudo de coorte é superior ao de caso-controle. Isso ocorre porque o estudo de coorte geralmente acompanha os indivíduos ao longo do tempo (prospectivo), partindo da exposição para o desfecho, o que permite calcular a incidência e estabelecer uma relação temporal mais clara. O estudo de caso-controle parte do desfecho e olha para o passado (retrospectivo), sendo mais sujeito a vieses de memória e de seleção.\n\n3. Falsa. A opinião de especialistas, embora útil na prática clínica na ausência de estudos, ocupa a base da pirâmide de evidências (nível mais baixo). Ela é considerada uma evidência frágil por ser subjetiva e passível de vieses individuais. Na hierarquia, as séries de casos estão acima da opinião de especialistas, pois já apresentam dados estruturados de observações clínicas reais.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A terceira sentença é falsa, pois a opinião de especialistas é o degrau mais baixo da evidência científica.\n\nb) Correta. Esta alternativa reflete exatamente a análise técnica: as sentenças 1 e 2 são preceitos fundamentais da MBE, e a sentença 3 está incorreta na classificação hierárquica.\n\nc) Incorreta. A primeira sentença é verdadeira; revisões sistemáticas de ensaios clínicos são, de fato, o topo da hierarquia para terapia.\n\nd) Incorreta. A segunda sentença é verdadeira (coorte é superior a caso-controle) e a terceira é falsa (opinião de especialistas é a base da pirâmide).",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:34.303Z"
+  },
+  {
+    "id": "AJUDA_031a0c60-bd5c-4b31-b9cf-b04c15c138aa",
+    "originalId": "031a0c60-bd5c-4b31-b9cf-b04c15c138aa",
+    "statement": "Mulher de 34 anos, assintomática, imunocompetente, útero in situ. Ingressou no programa primário de rastreio de câncer de colo uterino mediante análise de HPV-DNA do Ministério da Saúde. A amostra coletada veio positiva em painel estendido para HPV de alto risco não 16/18. A paciente não tem história prévia de lesões ou rastreios alterados.\nA melhor conduta é",
+    "options": [
+      {
+        "id": "A",
+        "text": "manter rastreamento de rotina com DNA de HPV, a cada 5 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar seguimento semestral com DNA de HPV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar citologia reflexa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "encaminhar para colposcopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "proceder à conização diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda as novas diretrizes e protocolos de rastreamento do câncer de colo uterino baseados no teste de DNA para HPV, que estão sendo integrados às recomendações do Ministério da Saúde. O ponto central é definir a conduta de triagem quando o teste primário é positivo para tipos de alto risco, mas não para os genótipos de maior potencial oncogênico (16 e 18).\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. O rastreamento a cada 5 anos com DNA de HPV é a conduta indicada para pacientes com resultado negativo no teste inicial. Como a paciente testou positivo para um painel de HPV de alto risco, ela não pode retornar à rotina sem antes passar por uma triagem para identificar a presença de lesões citológicas.\n\nAlternativa b) Incorreta. O seguimento semestral não é a conduta preconizada para a triagem inicial de um teste de HPV positivo. Os protocolos de repetição em curto prazo (geralmente 12 meses) só ocorrem após uma citologia de triagem negativa. Além disso, o objetivo inicial é definir se há necessidade de colposcopia imediata.\n\nAlternativa c) Correta. Nos protocolos de rastreamento primário com DNA de HPV, a estratégia de triagem depende do genótipo encontrado. Se o teste for positivo para HPV 16 ou 18, a paciente deve ser encaminhada diretamente para colposcopia. Se o teste for positivo para outros tipos de alto risco (o \"painel estendido\" citado na questão), a conduta correta é realizar a citologia reflexa. Se a citologia apresentar qualquer alteração (a partir de ASC-US), a paciente segue para colposcopia; se for negativa, a paciente repete o teste de DNA de HPV em 12 meses.\n\nAlternativa d) Incorreta. O encaminhamento direto para colposcopia estaria indicado se a paciente estivesse infectada pelos tipos 16 ou 18, que conferem um risco muito maior de lesão de alto grau imediata. Para os demais tipos de alto risco, a citologia serve como um filtro para evitar colposcopias desnecessárias, já que muitas dessas infecções são transitórias e não geram lesões precursoras.\n\nAlternativa e) Incorreta. A conização é um procedimento terapêutico ou diagnóstico avançado, indicado para casos de lesões histológicas de alto grau confirmadas ou suspeita de invasão. Jamais deve ser realizada apenas com base em um teste de rastreamento positivo, sem avaliação colposcópica e biópsia prévia.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": 63.268002093241414,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:34.303Z"
+  },
+  {
+    "id": "AJUDA_0324e913-3e86-4735-8916-90b2352ac2ca",
+    "originalId": "0324e913-3e86-4735-8916-90b2352ac2ca",
+    "statement": "Mulher, 26 anos de idade, apresenta verrugas genitais acinzentadas, aveludadas, de aspecto em couve-flor na vulva, com extensão de 2 cm há 3 meses. A conduta inicial é",
+    "options": [
+      {
+        "id": "A",
+        "text": "cauterizar as lesões.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "ressecção cirúrgica das lesões.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prescrever imiquimode oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "vacinar contra HPV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realizar vulvoscopia com biópsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso:\nA paciente apresenta um quadro clássico de condiloma acuminado, causado pela infecção pelo Papilomavírus Humano (HPV). A descrição de lesões acinzentadas, aveludadas e com aspecto em couve-flor (vegetante) na vulva é característica das verrugas genitais. Em lesões visíveis e típicas, o diagnóstico é eminentemente clínico e o tratamento visa à destruição das lesões.\n\nAlternativa (a) Correta: O objetivo do tratamento é a eliminação das verrugas visíveis. A cauterização, que pode ser química (como o uso de ácido tricloroacético – ATA) ou física (eletrocauterização ou crioterapia), é considerada uma conduta de primeira linha. Para lesões de 2 cm, a cauterização é eficaz, segura e comumente disponível na prática ambulatorial.\n\nAlternativa (b) Incorreta: A ressecção cirúrgica (exérese) é uma opção terapêutica, mas geralmente é reservada para lesões muito extensas, volumosas, casos de suspeita de malignidade ou quando há falha em tratamentos menos invasivos. Não é a primeira escolha para uma lesão única de 2 cm em uma paciente jovem.\n\nAlternativa (c) Incorreta: O erro desta alternativa é a via de administração. O imiquimode é um modificador da resposta imune muito utilizado no tratamento do HPV, porém sua apresentação é exclusivamente tópica (creme a 5%). Não existe imiquimode por via oral para o tratamento de verrugas genitais.\n\nAlternativa (d) Incorreta: A vacinação contra o HPV é uma estratégia de prevenção primária fundamental para evitar novas infecções pelos subtipos virais cobertos pelo imunizante. No entanto, a vacina não tem efeito terapêutico, ou seja, ela não trata e não elimina as lesões que já estão instaladas no organismo.\n\nAlternativa (e) Incorreta: O diagnóstico do condiloma acuminado é clínico. A vulvoscopia com biópsia não é necessária de rotina. Ela deve ser solicitada apenas em situações específicas, como: dúvida diagnóstica, lesões atípicas (pigmentadas, fixas ou ulceradas), suspeita de neoplasia intraepitelial vulvar (NIV), pacientes imunossuprimidas ou quando as lesões não respondem ao tratamento convencional.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Doenças de Vulva e Vagina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:34.303Z"
+  },
+  {
+    "id": "AJUDA_03277af2-c9a7-4f65-bb48-64698bd7575c",
+    "originalId": "03277af2-c9a7-4f65-bb48-64698bd7575c",
+    "statement": "Durante a resposta endócrina e metabólica ao trauma cirúrgico de grande porte, observa-se uma alteração profunda no metabolismo dos carboidratos, caracterizada por hiperglicemia de estresse. Assinale a alternativa correta que explica o mecanismo molecular e fisiológico predominante dessa alteração na \"fase de fluxo\" (flow phase).",
+    "options": [
+      {
+        "id": "A",
+        "text": "A resistência periférica à insulina decorre de defeitos na sinalização insulínica, com redução da translocação do GLUT-4 no músculo esquelético e no tecido adiposo, mediada por citocinas inflamatórias e hormônios contrarreguladores, priorizando a oferta de glicose a tecidos insulinoindependentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A hiperglicemia resulta principalmente do consumo aumentado de glicose por células inflamatórias ativadas, com queda transitória da glicemia sistêmica e necessidade de reposição exógena imediata para prevenir disfunção neurológica associada ao estresse cirúrgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A elevação do cortisol plasmático promove supressão da gliconeogênese hepática, desviando aminoácidos do músculo esquelético exclusivamente para a síntese de proteínas de fase aguda, com redução da produção endógena de glicose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O aumento da secreção pancreática de insulina compensa a resistência periférica induzida pelo trauma, mantendo a euglicemia na maioria dos pacientes não diabéticos, independentemente da intensidade da resposta inflamatória sistêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A resposta endócrina, metabólica e imunológica ao trauma (REMIT), especificamente na fase de fluxo (*flow phase*), caracteriza-se por um estado de hipermetabolismo e catabolismo intenso. A hiperglicemia de estresse é um marco dessa fase, sendo fundamental compreender sua fisiopatologia para o manejo do paciente cirúrgico.\n\nAlternativa A (Correta): Esta alternativa descreve com precisão o mecanismo da hiperglicemia de estresse. Durante o trauma de grande porte, o aumento de hormônios contrarreguladores (como cortisol, catecolaminas, glucagon e GH) e de citocinas pró-inflamatórias (como TNF-alfa e IL-6) promove a resistência periférica à ação da insulina. O principal mecanismo molecular envolve a interrupção da sinalização intracelular do receptor de insulina, o que impede a translocação dos transportadores GLUT-4 para a superfície das células do músculo esquelético e do tecido adiposo. Como esses tecidos são os maiores consumidores de glicose dependentes de insulina, sua captação diminui, permitindo que a glicose circulante seja redirecionada para tecidos insulino-independentes (como cérebro, hemácias e células inflamatórias no sítio da lesão), que utilizam outros transportadores, como GLUT-1, GLUT-2 e GLUT-3.\n\nAlternativa B (Incorreta): Embora células inflamatórias e tecidos em cicatrização aumentem o consumo de glicose, a resposta sistêmica ao trauma é de hiperglicemia e não de hipoglicemia. O fígado aumenta drasticamente a produção endógena de glicose (gliconeogênese e glicogenólise), superando a utilização periférica. Portanto, não ocorre queda transitória da glicemia sistêmica que justifique reposição exógena imediata por risco neurológico; pelo contrário, o desafio clínico costuma ser o controle dos níveis elevados de glicose.\n\nAlternativa C (Incorreta): O cortisol é um hormônio catabólico que estimula a gliconeogênese hepática, e não a suprime. Ele promove a proteólise no músculo esquelético para liberar aminoácidos (principalmente alanina e glutamina), que servem como substratos (esqueletos de carbono) para o fígado produzir nova glicose. Embora ocorra a síntese de proteínas de fase aguda, a produção endógena de glicose está aumentada, e não reduzida.\n\nAlternativa D (Incorreta): A secreção de insulina pode estar inicialmente inibida (por ação alfa-adrenérgica das catecolaminas) ou pode até estar elevada em termos absolutos na fase de fluxo, mas ela é funcionalmente insuficiente para vencer a resistência periférica instalada. Em traumas de grande porte, a resposta inflamatória e hormonal é tão intensa que a euglicemia raramente é mantida de forma espontânea, resultando no perfil típico de hiperglicemia de estresse, mesmo em pacientes que não possuem diagnóstico prévio de diabetes.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:34.303Z"
+  },
+  {
+    "id": "AJUDA_0329f437-9a64-4d79-a25a-c88775b82a60",
+    "originalId": "0329f437-9a64-4d79-a25a-c88775b82a60",
+    "statement": "Um paciente de 68 anos de idade buscou atendimento em razão de dor inguinal intensa e tumoração não redutível há 6 horas. Ao exame, apresentou FC = 108 bpm, FR = 20 irpm e saturação = 97%, sem sinais de peritonite. Diagnóstico: hérnia inguinal encarcerada. Considerando o caso clínico apresentado, assinale a alternativa que corresponde à correta conduta a ser adotada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar manobra de redução externa obrigatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Instituir antibioticoterapia isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Programar cirurgia eletiva após melhora da dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar hernioplastia de urgência.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico apresenta um paciente idoso com quadro de hérnia inguinal encarcerada, caracterizada por dor intensa e impossibilidade de redução manual há 6 horas. A presença de taquicardia (108 bpm) é um sinal importante que pode indicar dor severa ou resposta sistêmica a um processo de isquemia inicial, o que exige uma intervenção rápida.\n\nAlternativa a - Incorreta: A manobra de redução externa (conhecida como manobra de taxe) não é obrigatória. Na verdade, ela é contraindicada ou deve ser feita com extrema cautela quando há suspeita de estrangulamento ou quando o tempo de encarceramento é prolongado (como as 6 horas relatadas). O risco é realizar a redução de uma alça intestinal já necrótica para o interior da cavidade abdominal, o que levaria a uma peritonite generalizada e sepse.\n\nAlternativa b - Incorreta: O encarceramento herniário é um problema mecânico. Embora antibióticos possam ser utilizados como profilaxia ou em casos de complicação infecciosa associada, o tratamento isolado com medicação não resolve a obstrução ou a isquemia do conteúdo herniário.\n\nAlternativa c - Incorreta: A cirurgia eletiva é reservada para casos de hérnias redutíveis e sem sinais de complicação. Uma vez que a hérnia está encarcerada e o paciente apresenta sintomas agudos, a janela de oportunidade para tratamento eletivo foi perdida, tornando-se uma urgência médica para evitar a necrose tecidual.\n\nAlternativa d - Correta: A conduta correta perante uma hérnia inguinal encarcerada que não reduz e apresenta sinais de sofrimento (dor intensa e taquicardia) é a exploração cirúrgica de urgência. O objetivo da cirurgia é reduzir o conteúdo, avaliar a viabilidade da alça intestinal (se há necessidade de ressecção caso haja necrose) e realizar o reparo do defeito na parede abdominal (hernioplastia). O tempo de 6 horas de evolução reforça a necessidade de urgência para prevenir ou tratar o estrangulamento.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:34.303Z"
+  },
+  {
+    "id": "AJUDA_03370d08-bffe-4484-8eba-76f05954d979",
+    "originalId": "03370d08-bffe-4484-8eba-76f05954d979",
+    "statement": "Homem de 58 anos, no 2º dia de pós-operatório de hemicolectomia esquerda por neoplasia de cólon, apresenta distensão abdominal progressiva, náuseas e vômitos ocasionais. Refere não ter eliminado flatos ou fezes desde o procedimento. Exame físico: paciente em bom estado geral, lúcido, afebril; PA 120 x 80 mmHg; FC 78 bpm. Abdome: globoso, com timpanismo difuso, indolor à palpação, sem massas ou sinais de peritonite; ruídos hidroaéreos diminuídos. A radiografia simples de abdome em pé e deitado mostra distensão difusa de alças de delgado e cólon, sem níveis hidroaéreos.\nDiante do quadro clínico apresentado, a conduta recomendada nesse momento é",
+    "options": [
+      {
+        "id": "A",
+        "text": "indicar reintervenção cirúrgica e confecção de colostomia em alça.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "estimular deambulação precoce e considerar progressão de dieta conforme aceitação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "realizar descompressão colonoscópica e administrar neostigmina sob monitorização cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "iniciar nutrição parenteral total e antibioticoterapia de amplo espectro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro é de íleo paralítico pós-operatório (adinâmico), uma resposta esperada após cirurgias abdominais, sobretudo colorretais. No pós-operatório fisiológico, a motilidade retorna em tempos diferentes: intestino delgado em 0 a 24 horas, estômago em 24 a 48 horas e cólon em 48 a 72 horas. Ausência de flatos e fezes no 2º dia após hemicolectomia, portanto, ainda está dentro do esperado. O íleo passa a ser considerado prolongado quando persiste além de 3 a 5 dias.\n\nOs dados que apontam para íleo benigno são:\n- bom estado geral, afebril e hemodinamicamente estável;\n- abdome distendido e timpânico, porém indolor e sem peritonite;\n- ruídos hidroaéreos diminuídos, e não aumentados ou metálicos como na obstrução mecânica;\n- radiografia com distensão difusa e homogênea de delgado e cólon, sem níveis hidroaéreos e sem ponto de transição.\n\nEsse padrão afasta obstrução mecânica, pseudo-obstrução colônica (Ogilvie, em que predomina a dilatação do cólon, especialmente do ceco) e complicações como fístula de anastomose ou abscesso.\n\nA conduta é de suporte:\n- deambulação precoce;\n- progressão de dieta conforme tolerância, dentro dos protocolos ERAS;\n- redução de opioides, preferindo analgesia multimodal;\n- correção de distúrbios hidroeletrolíticos (potássio, magnésio, cálcio);\n- sonda nasogástrica apenas se houver vômitos persistentes ou distensão importante;\n- reavaliação seriada.\n\nAnálise das alternativas:\n\na) Incorreta. Não há indicação cirúrgica. O paciente não tem sinais de peritonite, sepse, isquemia ou deiscência de anastomose. Reoperar um íleo fisiológico expõe o paciente a riscos desnecessários. A colostomia em alça seria opção apenas em complicações como fístula anastomótica com repercussão clínica.\n\nb) Correta. Estimular a deambulação e progredir a dieta conforme aceitação são medidas centrais no manejo do íleo pós-operatório não complicado e aceleram o retorno do trânsito intestinal. A conduta é expectante e de suporte, com vigilância clínica.\n\nc) Incorreta. Neostigmina e descompressão colonoscópica são usadas na síndrome de Ogilvie (pseudo-obstrução colônica aguda). Essa síndrome se caracteriza por dilatação colônica acentuada, geralmente com ceco acima de 10 a 12 cm, e falha do tratamento conservador. Não é o caso: a distensão é difusa, envolvendo também o delgado, e o quadro tem apenas 2 dias. Além disso, a colonoscopia logo após uma anastomose colônica recente traz risco de lesão. A neostigmina tem efeitos adversos importantes, como bradicardia e broncoespasmo.\n\nd) Incorreta. A nutrição parenteral total é reservada para pacientes que não conseguirão usar a via enteral por período prolongado (em geral mais de 7 dias) ou para desnutridos graves. Antibióticos de amplo espectro não se justificam sem sinais de infecção: o paciente está afebril, estável e sem peritonite.\n\nResumo: no 2º dia de pós-operatório, distensão difusa sem dor, sem peritonite e sem níveis hidroaéreos indica íleo pós-operatório fisiológico. O tratamento é suporte com deambulação, progressão de dieta, menor uso de opioides e correção eletrolítica.\n\nGabarito: letra B.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T15:59:34.303Z"
+  }
+]

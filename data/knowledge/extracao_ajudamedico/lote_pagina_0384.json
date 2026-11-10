@@ -1,0 +1,526 @@
+[
+  {
+    "id": "AJUDA_6a489980-1c9a-4986-bbdb-627eb54da012",
+    "originalId": "6a489980-1c9a-4986-bbdb-627eb54da012",
+    "statement": "Paciente, 26 anos de idade, sexo masculino, previamente hígido, 3º dia de febre alta, mialgia intensa, cefaleia e dor retro-orbitária, exantema maculopapular discreto. Refere dois episódios de vômitos no dia, sem sangue. Sinais vitais: PA 110/70 mmHg, FC 96 bpm, SatO2 98% em ar ambiente. Exame físico: sem sangramentos, sem dor abdominal à palpação, sem hepatomegalia. Exames: plaquetas 140.000/mm³, hematócrito 44% (sem valor basal conhecido), NS1 reagente, IgM não reagente. Sobre esse caso, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Exantema maculopapular no início da febre é patognomônico de dengue, dispensando confirmação laboratorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "No 3º dia, a fase crítica já está sempre instalada, pois a permeabilidade capilar aumenta no pico febril, com maior risco de choque antes da defervescência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O achado de NS1 reagente com IgM não reagente no 3º dia é compatível com fase inicial da doença, sendo um padrão esperado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O NS1 costuma ser detectável desde o 1º dia de sintomas e mantém boa sensibilidade até o 5º dia; a IgM tende a negativar nesse período, sendo útil apenas após o 10º dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Trata-se de dengue com sinais de alarme, pois a presença de dois episódios de vômitos no mesmo dia caracteriza \"vômitos persistentes\".",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente apresenta um quadro típico de dengue na fase febril (febre, mialgia, cefaleia, dor retro-orbitária e exantema). Ele possui 26 anos, sem comorbidades e está hemodinamicamente estável (PA 110/70 mmHg e FC 96 bpm). Os exames mostram plaquetas e hematócrito dentro da normalidade para o perfil, com NS1 positivo, confirmando a etiologia viral precoce.\n\nAlternativa A: Incorreta. O exantema maculopapular é comum na dengue, mas não é patognomônico. Diversas outras arboviroses (como Zika e Chikungunya) e doenças exantemáticas virais podem apresentar o mesmo achado. A confirmação laboratorial é necessária para o manejo epidemiológico e diagnóstico diferencial.\n\nAlternativa B: Incorreta. A fase crítica da dengue não ocorre durante o pico febril, mas sim no momento da defervescência (queda da febre), que costuma acontecer entre o 3º e o 7º dia de sintomas. É na transição da fase febril para a fase crítica que o risco de extravasamento plasmático e choque aumenta.\n\nAlternativa C: Correta. Esta alternativa descreve perfeitamente a cinética dos marcadores laboratoriais da dengue. O NS1 é um antígeno viral que fica detectável precocemente, geralmente do 1º ao 5º dia de sintomas. Já a IgM (anticorpo de fase aguda) só começa a ser detectável, na maioria dos casos, a partir do 5º ou 6º dia. Portanto, encontrar NS1 reagente e IgM não reagente no 3º dia é o padrão laboratorial esperado para a fase inicial.\n\nAlternativa D: Incorreta. Embora a descrição do NS1 esteja correta, a afirmação sobre a IgM está errada. A IgM não \"negativa\" nesse período; ela ainda não positivou. A IgM torna-se detectável por volta do 5º dia e permanece positiva por várias semanas, sendo o principal marcador de infecção recente após a primeira semana de sintomas.\n\nAlternativa E: Incorreta. Dois episódios de vômitos em um dia, sem outros sinais associados, não caracterizam \"vômitos persistentes\" segundo os protocolos do Ministério da Saúde. Vômitos persistentes são aqueles que impedem a hidratação oral ou que ocorrem de forma frequente (geralmente três ou mais episódios em poucas horas). Sem sinais de alarme, o paciente seria classificado inicialmente como Grupo A ou B, dependendo da avaliação de riscos adicionais, mas não como dengue com sinais de alarme apenas por esse relato.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:30.096Z"
+  },
+  {
+    "id": "AJUDA_6a7325bb-99c7-418b-8922-4ce5cb734a3b",
+    "originalId": "6a7325bb-99c7-418b-8922-4ce5cb734a3b",
+    "statement": "Uma mulher de 55 anos, assintomática, sem histórico familiar de câncer de mama e sem outros fatores de risco, procura atendimento para realizar seu check-up anual. Sobre o rastreamento mamográfico no Brasil, segundo o protocolo do Ministério da Saúde, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Ministério da Saúde recomenda mamografia anual para todas as mulheres a partir dos 40 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O rastreamento mamográfico deve ser iniciado aos 50 anos, com periodicidade bienal, para mulheres de risco habitual.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Mulheres com histórico familiar de câncer de mama devem realizar mamografia de rastreamento anualmente, independentemente da idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O Ministério da Saúde recomenda rastreamento mamográfico para mulheres acima de 70 anos, mesmo aquelas saudáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A realização de mamografia de rastreamento deve ser feita somente em mulheres que apresentam sinais ou sintomas suspeitos de câncer de mama.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Incorreta: A recomendação de realizar a mamografia anualmente a partir dos 40 anos é defendida por sociedades de especialistas, como a Sociedade Brasileira de Mastologia (SBM), o Colégio Brasileiro de Radiologia (CBR) e a FEBRASGO. Contudo, o enunciado pede especificamente o protocolo do Ministério da Saúde, que adota critérios diferentes para o rastreamento populacional no SUS.\n\nAlternativa b) Correta: De acordo com as diretrizes do Ministério da Saúde e do INCA (Instituto Nacional de Câncer), o rastreamento mamográfico para mulheres de risco habitual deve ser realizado na faixa etária de 50 a 69 anos, com uma periodicidade bienal (a cada dois anos). Esta recomendação baseia-se no equilíbrio entre os benefícios (redução da mortalidade) e os riscos (falsos-positivos e sobrediagnóstico).\n\nAlternativa c) Incorreta: Mulheres com histórico familiar importante ou outros fatores de risco elevado compõem um grupo de risco aumentado e necessitam de acompanhamento individualizado, que geralmente começa mais cedo (aos 35 anos) e pode ter periodicidade anual. No entanto, a afirmação \"independentemente da idade\" é tecnicamente errada, e a questão foca no protocolo padrão para uma paciente que, conforme o enunciado, não possui fatores de risco.\n\nAlternativa d) Incorreta: O limite superior estabelecido pelo Ministério da Saúde para o rastreamento mamográfico de rotina é de 69 anos. Para mulheres acima de 70 anos, a mamografia não é recomendada como política de rastreamento populacional sistemático, devendo a decisão ser individualizada pelo médico assistente com base na expectativa de vida e condições de saúde da paciente.\n\nAlternativa e) Incorreta: O conceito de rastreamento (screening) consiste justamente na aplicação de exames em pessoas assintomáticas para identificar uma doença em estágio inicial. Quando uma mulher apresenta sinais ou sintomas suspeitos (como nódulo palpável), o exame indicado é a mamografia diagnóstica, e não o rastreamento. O objetivo do programa do Ministério da Saúde é detectar o câncer antes que ele se torne clinicamente manifesto.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:30.096Z"
+  },
+  {
+    "id": "AJUDA_6a74cbfd-ac6b-425c-85ac-0cd0e5f6d2d0",
+    "originalId": "6a74cbfd-ac6b-425c-85ac-0cd0e5f6d2d0",
+    "statement": "Durante o atendimento inicial de um paciente politraumatizado, observa-se enfisema subcutâneo extenso e desvio traqueal para a esquerda. A conduta imediata indicada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inserção de dreno torácico à esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Intubação orotraqueal e ventilação mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Punção descompressiva do hemitórax direito seguida de drenagem.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar radiografia de tórax antes de qualquer intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administração de volume intravenoso e oxigênio suplementar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão apresenta um quadro clínico clássico de pneumotórax hipertensivo no contexto de um paciente politraumatizado. Os sinais de enfisema subcutâneo e, principalmente, o desvio da traqueia para a esquerda indicam que há um acúmulo de ar sob pressão no hemitórax direito, empurrando as estruturas do mediastino para o lado oposto. O pneumotórax hipertensivo é uma emergência médica que causa choque obstrutivo por diminuir o retorno venoso ao coração, exigindo diagnóstico clínico e intervenção imediata.\n\nAnálise das alternativas:\n\na) Incorreta. O desvio da traqueia ocorre para o lado oposto ao do pneumotórax hipertensivo. Se a traqueia está desviada para a esquerda, a patologia está no lado direito. Drenar o lado esquerdo não resolveria o problema e poderia agravar o estado do paciente.\n\nb) Incorreta. A intubação orotraqueal e o início da ventilação mecânica com pressão positiva podem agravar rapidamente um pneumotórax hipertensivo ainda não drenado, levando à parada cardiorrespiratória por colapso circulatório. A descompressão deve preceder ou ser concomitante à abordagem da via aérea se o pneumotórax for a causa da instabilidade.\n\nc) Correta. Diante da suspeita clínica de pneumotórax hipertensivo (neste caso, à direita, devido ao desvio traqueal para a esquerda), a conduta imediata segundo o protocolo ATLS é a descompressão torácica. Esta pode ser feita inicialmente por punção com agulha (toracocentese de alívio) para transformar o pneumotórax hipertensivo em um pneumotórax simples, seguida obrigatoriamente pela drenagem torácica em selo d'água.\n\nd) Incorreta. O diagnóstico de pneumotórax hipertensivo é estritamente clínico. Não se deve aguardar exames de imagem, como a radiografia de tórax, para iniciar o tratamento, pois o tempo de espera pode ser fatal para o paciente.\n\ne) Incorreta. Embora o oxigênio suplementar e a reposição volêmica façam parte do atendimento inicial ao trauma (ABCDE), essas medidas isoladas não corrigem a causa-base da instabilidade hemodinâmica, que é a compressão mecânica do coração e grandes vasos pelo ar aprisionado. A descompressão é a prioridade absoluta.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Trauma",
+      "Ventilação Mecânica",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:30.096Z"
+  },
+  {
+    "id": "AJUDA_6a74d239-c899-4a47-9a36-850fd85f7533",
+    "originalId": "6a74d239-c899-4a47-9a36-850fd85f7533",
+    "statement": "Mulher de 58 anos, com diabetes mellitus tipo 2 e hipertensão arterial, é atendida por uma médica residente no ambulatório de um hospital-escola para acompanhamento de suas doenças crônicas. Ao ser questionada sobre como convive com essas condições, relata sentir-se culpada por não conseguir seguir a dieta devido à rotina de cuidados com os netos que moram com ela e manifesta receio de perder a visão e deixar de cuidar da família. Após explorar essas preocupações, a médica residente discute as opções terapêuticas e, em conjunto com a paciente, estabelece metas alimentares factíveis, compatíveis com sua realidade familiar e financeira. Considerando os componentes do Método Clínico Centrado na Pessoa (MCCP), essa conduta exemplifica",
+    "options": [
+      {
+        "id": "A",
+        "text": "a exploração da experiência do adoecimento, considerando sentimentos, ideias e expectativas da paciente, integrada à elaboração compartilhada de um plano de cuidados compatível com seu contexto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a compreensão da pessoa como um todo, dispensando a necessidade de relacionar o contexto familiar às estratégias terapêuticas propostas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a priorização da dimensão biomédica da doença, uma vez que o controle glicêmico é o principal fator para reduzir o receio de perda visual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o fortalecimento da relação médico-paciente por meio de uma condução diretiva, em que o profissional assume integralmente as decisões terapêuticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a estruturação de um terreno comum cujo principal objetivo é transferir à família a responsabilidade pelo manejo da doença crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão avalia o Método Clínico Centrado na Pessoa (MCCP), de Stewart et al., que tem quatro componentes:\n1. Explorar a doença (disease) e a experiência do adoecimento (illness), isto é, sentimentos, ideias, efeitos na função e expectativas.\n2. Entender a pessoa como um todo, incluindo ciclo de vida, família, contexto e rede de apoio.\n3. Elaborar um plano conjunto de manejo, com um terreno comum (problemas, metas e papéis).\n4. Intensificar a relação pessoa-profissional, com vínculo, empatia, continuidade e confiança. Outros componentes citados são a prevenção e promoção da saúde e o realismo.\n\nNo caso, a residente investigou a culpa da paciente (sentimento), o medo de perder a visão e de deixar de cuidar da família (ideia e expectativa) e o impacto da rotina com os netos. Depois, definiu com ela metas alimentares factíveis para sua realidade familiar e financeira. Isso combina exploração da experiência de adoecimento, compreensão do contexto e plano compartilhado.\n\nAnálise das alternativas:\n\na) Correta. Reúne a exploração dos sentimentos, ideias e expectativas com a construção conjunta do plano, adaptado ao contexto. É exatamente o que a médica fez.\n\nb) Incorreta. Compreender a pessoa como um todo exige relacionar o contexto familiar às estratégias terapêuticas. Foi isso que a residente fez ao considerar os netos e a situação financeira. Dispensar essa relação contradiz o método.\n\nc) Incorreta. O MCCP não prioriza a dimensão biomédica sobre a experiência da pessoa. Ele integra as duas. O controle glicêmico é importante, mas a conduta descrita foi centrada na vivência e nas metas pactuadas, não apenas na doença.\n\nd) Incorreta. Uma condução diretiva, com o profissional decidindo sozinho, é o oposto do MCCP. O método prevê compartilhamento de decisões e poder, e a paciente participou da definição das metas.\n\ne) Incorreta. O terreno comum é a construção de consenso entre profissional e paciente sobre problemas, metas e papéis. Seu objetivo não é transferir a responsabilidade para a família. A família é considerada no contexto, mas a paciente continua sendo protagonista do cuidado.\n\nPonto-chave: no MCCP, a conduta que explora ideias, sentimentos, funcionalidade e expectativas, considera o contexto e pactua o plano de forma conjunta corresponde à alternativa A.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:30.096Z"
+  },
+  {
+    "id": "AJUDA_6a802ec3-bba9-40a0-a530-5694503d69bd",
+    "originalId": "6a802ec3-bba9-40a0-a530-5694503d69bd",
+    "statement": "Em relação à suplementação de ferro, o Ministério da Saúde do Brasil recomenda que crianças alimentadas com leite materno:",
+    "options": [
+      {
+        "id": "A",
+        "text": "e, complementarmente, com leite de vaca devem receber suplementação a partir dos 2 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "e diagnosticadas com anemia hemolítica devem receber suplementação a partir dos 4 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "exclusivo ou em uso de fórmula infantil devem receber suplementação a partir dos 6 meses",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "exclusivo ou com leite de soja devem receber suplementação a partir dos 3 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda as diretrizes do Ministério da Saúde (MS) do Brasil para a prevenção da anemia ferropriva na infância. A recomendação do Ministério da Saúde difere ligeiramente das recomendações da Sociedade Brasileira de Pediatria (SBP), sendo fundamental que o candidato identifique qual órgão a questão está citando.\n\nSegundo o Ministério da Saúde, para crianças nascidas a termo (idade gestacional maior ou igual a 37 semanas) e com peso adequado ao nascer (maior ou igual a 2.500 g), a suplementação profilática de ferro deve ser iniciada aos 6 meses de idade, coincidindo com a introdução da alimentação complementar, e mantida até os 24 meses de vida.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O leite de vaca in natura não deve ser oferecido a crianças antes de um ano de idade. Além disso, o prazo de 2 meses citado não é o padrão para crianças nascidas a termo e com peso adequado segundo o Ministério da Saúde.\n\nAlternativa b) Incorreta. A anemia hemolítica não é uma indicação para suplementação profilática de ferro nos moldes do programa nacional; pelo contrário, pacientes com hemólise crônica podem desenvolver sobrecarga de ferro devido à lise das hemácias e à necessidade de transfusões. O prazo de 4 meses também não corresponde à diretriz do MS para o grupo geral.\n\nAlternativa c) Correta. Conforme as normas do Ministério da Saúde, o lactente que nasceu a termo e com peso superior a 2.500 g possui reservas de ferro suficientes para os primeiros meses de vida. Assim, independentemente de estar em aleitamento materno exclusivo ou em uso de fórmula infantil, a suplementação profilática com 1 mg de ferro elementar/kg/dia deve ser iniciada aos 6 meses de idade.\n\nAlternativa d) Incorreta. O uso de leite de soja não faz parte das recomendações rotineiras para lactentes nessa faixa etária, salvo em casos específicos de doenças metabólicas (como galactosemia) ou alergias muito específicas sob orientação nutricional rigorosa. O prazo de 3 meses também está incorreto para a conduta do Ministério da Saúde para crianças nascidas a termo.\n\nResumo da conduta do Ministério da Saúde:\n- Crianças a termo e com peso adequado (> 2.500 g): Iniciar aos 6 meses e manter até os 24 meses.\n- Crianças pré-termo ou com baixo peso (< 2.500 g): Iniciar aos 30 dias de vida.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Aleitamento Materno",
+      "Deficiências Vitamínicas e Profilaxias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:30.096Z"
+  },
+  {
+    "id": "AJUDA_6a818770-e37d-4d0b-a11e-f55bd381deac",
+    "originalId": "6a818770-e37d-4d0b-a11e-f55bd381deac",
+    "statement": "Escolar de 8 anos, sexo feminino, 28 kg, é trazida ao pronto-socorro com quadro de poliúria, polidipsia e perda ponderal há 2 semanas, associado a vômitos e dor abdominal há 12 horas. Ao exame: desidratação moderada, respiração irregular e hálito cetônico. Exames laboratoriais: Glicemia capilar: 486 mg/dL pH venoso: 7,08 Bicarbonato: 6 mEq/L Sódio sérico: 132 mEq/L Potássio sérico: 4,8 mEq/L Cetonúria: ++++ Inicia-se a reposição volêmica com soro fisiológico 0,9% (20 mL/kg na primeira hora). Após a primeira hora, a paciente permanece desidratada e a glicemia é 420 mg/dL. Sobre os aspectos da conduta terapêutica mais adequada nesse momento, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar insulinoterapia venosa contínua (0,1 U/kg/h) e manter soro fisiológico 0,9% para completar o déficit em 4–6 horas, pois a rápida correção da desidratação é prioritária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar insulinoterapia venosa contínua (0,1 U/kg/h) e administrar soro fisiológico 0,45% a 10 mL/kg/h. Quando a glicemia atingir 250–300 mg/dL, adicionar glicose a 5% ao soro para prevenir hipoglicemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar insulinoterapia subcutânea com insulina regular (0,3 U/kg) e manter hidratação venosa com soro glicosado a 5%, pois a glicemia elevada contraindica o uso de soro fisiológico após a primeira hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar bicarbonato de sódio a 8,4% (1 mEq/kg) antes de iniciar a insulina, pois o pH de 7,08 indica acidose grave, que deve ser corrigida imediatamente para evitar arritmias cardíacas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar insulinoterapia venosa contínua (0,05 U/kg/h) e realizar bolus intravenoso de insulina regular (0,1 U/kg) antes de iniciar a infusão contínua para acelerar a queda da glicemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resumo do caso: criança de 8 anos, 28 kg, com cetoacidose diabética (CAD) grave (pH 7,08, bicarbonato 6 mEq/L, glicemia 486 mg/dL), com desidratação moderada. Já recebeu a fase de expansão com SF 0,9% a 20 mL/kg na primeira hora e permanece desidratada. A glicemia caiu apenas pela diluição e pela expansão, o que é esperado.\n\nPrincípios da conduta após a expansão (protocolos ISPAD, SBP e SBD):\n- Iniciar insulina regular IV contínua a 0,05 a 0,1 U/kg/h, sem bolus, cerca de 1 hora após o início da hidratação.\n- Fazer a reposição do déficit hídrico de forma lenta e uniforme, em 24 a 48 horas, somando manutenção e déficit. Isso evita edema cerebral. A reposição rápida em 4 a 6 horas é inadequada.\n- Usar solução isotônica ou hipotônica (SF 0,45% a 0,9%), conforme o sódio corrigido. Aqui o sódio medido é 132 e o corrigido é cerca de 132 + 1,6 × (486 − 100)/100 ≈ 138 mEq/L, ou seja, normal. SF 0,45% é aceitável e é a solução adotada no gabarito.\n- Quando a glicemia chegar a 250 a 300 mg/dL, acrescentar glicose (SG 5% ou mais) à hidratação, sem suspender a insulina, que é necessária para resolver a cetose. Isso previne hipoglicemia e edema cerebral.\n- Repor potássio (40 mEq/L, cerca de 20 mEq/L de KCl e 20 de fosfato de potássio) assim que houver diurese e K abaixo de 5,5. Aqui o K é 4,8, então a reposição é indicada.\n- Bicarbonato não é indicado de rotina.\n\nAnálise das alternativas:\n\na) Incorreta. A insulina está correta, mas a correção rápida da desidratação em 4 a 6 horas aumenta o risco de edema cerebral. A reposição deve ser feita em 24 a 48 horas.\n\nb) Correta. Insulina IV contínua a 0,1 U/kg/h, hidratação com SF 0,45% em ritmo moderado e adição de glicose 5% quando a glicemia chegar a 250 a 300 mg/dL, mantendo a insulina para resolver a acidose. Segue o protocolo.\n\nc) Incorreta. Na CAD grave, a via subcutânea tem absorção errática por causa da hipoperfusão e não é indicada. Soro glicosado isolado, com glicemia de 420, não é adequado. A glicemia elevada não contraindica o SF 0,9%.\n\nd) Incorreta. O bicarbonato não é rotina. Só se considera em acidose gravíssima (pH abaixo de 6,9 a 7,0) com instabilidade hemodinâmica ou hipercalemia grave com risco de vida. Aqui o pH é 7,08, e o bicarbonato pode causar hipocalemia, acidose paradoxal do SNC e edema cerebral. A acidose se corrige com insulina e hidratação.\n\ne) Incorreta. O bolus de insulina é desaconselhado em crianças, pois aumenta o risco de hipocalemia, hipoglicemia e edema cerebral. Além disso, a queda glicêmica deve ser gradual, de 50 a 100 mg/dL por hora.\n\nResposta: letra B.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Emergências Pediátricas",
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:30.096Z"
+  },
+  {
+    "id": "AJUDA_6a894349-3029-459e-9a08-d36ab270bf6f",
+    "originalId": "6a894349-3029-459e-9a08-d36ab270bf6f",
+    "statement": "Considerando as atuais diretrizes brasileiras de dislipidemias, assinale a alternativa CORRETA para as metas recomendadas de acordo com o risco cardiovascular:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Meta de LDL-c (mg/dL) < 115 em indivíduo de baixo risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "% redução do LDL-c mínima de 30% em indivíduo de alto risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Meta de LDL-c (mg/dL) <50 em indivíduo de alto risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "% redução do LDL-c ≥ 50% em indivíduo de risco intermediário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Meta de colesterol não-HDL (mg/dL) <100 em indivíduo de risco extremo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para responder a essa questão, devemos utilizar como referência a Atualização da Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose da Sociedade Brasileira de Cardiologia (SBC).\n\nAlternativa a) Esta é a alternativa correta. De acordo com a diretriz brasileira (SBC), a meta de LDL-c para indivíduos classificados como de baixo risco cardiovascular é < 130 mg/dL. A alternativa indica uma meta de < 115 mg/dL; embora seja um valor mais rigoroso do que o limite exato da SBC, ele está contido dentro da meta de segurança e alinha-se a diretrizes internacionais (como a europeia ESC, que utiliza < 116 mg/dL para baixo risco). Comparada às demais alternativas, que possuem erros claros de valores e definições, esta é a opção correta.\n\nAlternativa b) Incorreta. Para indivíduos de alto risco cardiovascular, a recomendação das diretrizes é a utilização de estatinas de alta potência para alcançar uma redução mínima de 50% nos níveis de LDL-c em relação ao valor basal, e não de apenas 30%.\n\nAlternativa c) Incorreta. A meta de LDL-c < 50 mg/dL é aplicada aos indivíduos de risco muito alto (ou risco extremo). Para o grupo de alto risco, a meta estabelecida pela diretriz brasileira é de LDL-c < 70 mg/dL.\n\nAlternativa d) Incorreta. Para indivíduos de risco intermediário, a meta de LDL-c é < 100 mg/dL. A estratégia de redução percentual maior ou igual a 50% é direcionada aos pacientes de alto e muito alto risco. No risco intermediário, a redução percentual esperada costuma variar entre 30% e 50%.\n\nAlternativa e) Incorreta. A meta do colesterol não HDL (que representa a soma de todas as lipoproteínas aterogênicas) é calculada somando-se 30 mg/dL à meta estipulada para o LDL-c. No indivíduo de risco extremo ou muito alto, a meta de LDL-c é < 50 mg/dL, portanto, a meta de colesterol não HDL deve ser < 80 mg/dL (50 + 30). O valor de < 100 mg/dL seria a meta de não HDL para pacientes de alto risco (cuja meta de LDL-c é 70 mg/dL).",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:30.096Z"
+  },
+  {
+    "id": "AJUDA_6a8f8cc0-47b5-445d-ae6b-1f9142451f32",
+    "originalId": "6a8f8cc0-47b5-445d-ae6b-1f9142451f32",
+    "statement": "Menina, 4 anos de idade, é contato domiciliar da mãe recentemente diagnosticada com tuberculose pulmonar. A criança está assintomática e apresentou teste tuberculínico de 6 mm. O exame de RX de tórax da criança não apresentou anormalidades. Qual é a conduta mais adequada para essa criança?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar um novo teste tuberculínico em 3 meses e reavaliar a necessidade de tratamento profilático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não iniciar esquema terapêutico no momento e apenas monitorar a criança, já que está assintomática e com RX normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar esquema terapêutico completo para tuberculose ativa devido ao contato próximo e alto risco de doença instalada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar isoniazida por 6 meses ou rifampicina por 4 meses e realizar acompanhamento clínico regular.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o manejo de crianças que tiveram contato com adultos bacilíferos (com tuberculose pulmonar). O objetivo principal é diferenciar a tuberculose-doença da infecção latente por tuberculose (ILTB) e aplicar o protocolo correto do Ministério da Saúde.\n\nAnálise do caso:\n1. A criança tem 4 anos e é contato de um caso-índice (mãe).\n2. Ela está assintomática e o RX de tórax é normal, o que descarta, no momento, a tuberculose-doença.\n3. O teste tuberculínico (PT) é de 6 mm. Para contatos de pacientes com tuberculose, considera-se o teste positivo quando o resultado é igual ou superior a 5 mm.\n\nPortanto, o diagnóstico é de infecção latente por tuberculose (ILTB).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A repetição do teste tuberculínico após 8 a 12 semanas (aproximadamente 3 meses) é indicada apenas para contatos que apresentaram um primeiro teste não reator (menor que 5 mm), com o objetivo de verificar se houve a conversão tuberculínica. Como a criança já é reatora (6 mm), o diagnóstico de infecção latente já está confirmado, não havendo necessidade de repetir o exame.\n\nAlternativa b) Incorreta. Crianças pequenas (especialmente menores de 5 anos) que são contatos domiciliares e possuem teste tuberculínico positivo apresentam um risco muito elevado de progressão para formas graves de tuberculose (como a meningoencefalite e a forma miliar). O tratamento da ILTB é obrigatório nessas circunstâncias para prevenir o adoecimento.\n\nAlternativa c) Incorreta. O esquema terapêutico completo (geralmente o esquema básico RIPE: rifampicina, isoniazida, pirazinamida e etambutol) é reservado para casos de tuberculose ativa. Como a criança está totalmente assintomática e o RX é normal, ela não tem critérios para tuberculose-doença, e o uso de múltiplas drogas seria um tratamento excessivo e desnecessário.\n\nAlternativa d) Correta. O tratamento da infecção latente por tuberculose (ILTB) no Brasil é realizado preferencialmente com isoniazida (por 6 ou 9 meses) ou rifampicina (por 4 meses). A rifampicina é frequentemente uma excelente escolha para crianças menores de 10 anos devido ao menor tempo de tratamento e boa tolerância. O acompanhamento clínico mensal é necessário para monitorar a adesão e possíveis efeitos adversos.\n\nGabarito: Alternativa (d).",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Tuberculose",
+      "Tuberculose na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:30.096Z"
+  },
+  {
+    "id": "AJUDA_6a966a39-b513-43d6-8045-053a41a618a0",
+    "originalId": "6a966a39-b513-43d6-8045-053a41a618a0",
+    "statement": "Mulher, 38 anos, nuligesta com desejo reprodutivo, procura ambulatório de ginecologia com queixa de aumento do volume do fluxo menstrual há 6 meses. A ultrassonografia pélvica endovaginal evidenciou dois nódulos de mioma, sendo o maior em parede uterina anterior de 2 x 3 cm (FIGO 1) e o menor com 1,5 x 2 cm (FIGO 4). Assinale a melhor alternativa para o tratamento definitivo do quadro:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Curetagem uterina para remoção de leiomioma FIGO 4",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Anti-inflamatório e ácido tranexâmico para controle do sangramento",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Miomectomia do leiomioma FIGO 1 por histeroscopia cirúrgica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Propor tratamento com anticoncepcional combinado de uso contínuo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver essa questão, é fundamental correlacionar a classificação FIGO dos leiomiomas com a sintomatologia da paciente e seu desejo reprodutivo. A paciente apresenta sangramento uterino anormal e possui dois miomas: um FIGO 1 (submucoso, com componente intramural menor que 50%) e um FIGO 4 (intramural). O mioma submucoso (FIGO 1), mesmo sendo pequeno, é o principal responsável pelo aumento do fluxo menstrual, pois distorce a cavidade endometrial e dificulta a homeostase local.\n\nAnálise das alternativas:\n\na) Incorreta. A curetagem uterina não é um tratamento para leiomiomas. Ela é um procedimento diagnóstico (para avaliação endometrial) ou terapêutico temporário em casos de hemorragia aguda. Além disso, um mioma FIGO 4 é intramural e não pode ser alcançado ou removido por curetagem.\n\nb) Incorreta. O uso de anti-inflamatórios não esteroidais e ácido tranexâmico é uma conduta medicamentosa para o controle sintomático do fluxo menstrual. Embora possam reduzir o sangramento, não tratam a causa anatômica (os nódulos) e não são considerados tratamentos definitivos, especialmente em uma paciente com desejo reprodutivo que apresenta uma lesão cavitária.\n\nc) Correta. A miomectomia por histeroscopia cirúrgica é o padrão-ouro para o tratamento de miomas submucosos (FIGO 0, 1 e 2). Como o mioma FIGO 1 é o provável causador do sangramento e interfere na cavidade uterina (podendo prejudicar a fertilidade), sua remoção cirúrgica resolve o sintoma e preserva o útero para gestações futuras. O mioma FIGO 4, por ser pequeno e intramural, muitas vezes não requer intervenção imediata se não houver distorção da cavidade ou outros sintomas compressivos.\n\nd) Incorreta. O anticoncepcional combinado de uso contínuo é uma opção de tratamento clínico para o controle do sangramento. No entanto, a questão solicita o tratamento definitivo para o quadro e ressalta que a paciente tem desejo reprodutivo. O uso de anticoncepcional impede a gestação e apenas mascara o sintoma sem remover a patologia de base.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:30.096Z"
+  },
+  {
+    "id": "AJUDA_6a9a4011-c01d-4925-a5fb-edf3779676e8",
+    "originalId": "6a9a4011-c01d-4925-a5fb-edf3779676e8",
+    "statement": "Paciente de 58 anos, previamente hígido, apresenta episódio de hematêmese volumosa. Realizou endoscopia digestiva alta, conforme as imagens a seguir:\n\nO diagnóstico mais provável é",
+    "options": [
+      {
+        "id": "A",
+        "text": "leiomioma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "adenocarcinoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "GIST.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "linfoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "corpo estranho.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve um paciente de 58 anos com hematêmese volumosa e imagens de endoscopia digestiva alta que revelam uma lesão subepitelial (ou submucosa) gástrica. A característica marcante na imagem é uma massa arredondada, com mucosa sobrejacente íntegra, apresentando uma ulceração central puntiforme, aspecto classicamente descrito na literatura como sinal do vulcão.\n\nAnálise das alternativas:\n\na) Incorreta. O leiomioma é um tumor mesenquimal benigno que também se apresenta como lesão subepitelial. No entanto, ele é extremamente raro no estômago, sendo muito mais frequente no esôfago. A maioria das lesões estomacais que antigamente eram chamadas de leiomiomas são, na verdade, GISTs após a análise imuno-histoquímica.\n\nb) Incorreta. O adenocarcinoma gástrico tem origem na mucosa (epitelial) e geralmente se apresenta como uma lesão ulcerada de bordos irregulares e infiltrados, ou como uma massa vegetante e friável. A imagem mostra claramente uma lesão que nasce abaixo da mucosa, empurrando-a para o lúmen, o que não é o padrão típico do adenocarcinoma.\n\nc) Correta. O Tumor Estromal Gastrointestinal (GIST) é a neoplasia mesenquimal mais comum do trato digestivo, ocorrendo preferencialmente no estômago (60 a 70% dos casos). A imagem endoscópica é patognomônica: uma lesão expansiva subepitelial com uma cratera ou ulceração central. Essa ulceração ocorre pela isquemia da mucosa no ápice da lesão ou pelo crescimento do tumor, sendo a causa da hematêmese volumosa relatada no caso.\n\nd) Incorreta. O linfoma gástrico costuma se apresentar como um espessamento grosseiro das pregas gástricas, múltiplas nodularidades ou grandes úlceras superficiais e infiltrativas. Embora possa raramente mimetizar uma lesão subepitelial, não é a apresentação clássica da imagem em vulcão demonstrada.\n\ne) Incorreta. Um corpo estranho estaria livre na cavidade gástrica ou impactado na parede, mas não teria o aspecto de uma massa estruturada, vascularizada e coberta por mucosa gástrica normal como visto nas fotos.\n\nConclusão: Diante de uma lesão subepitelial gástrica com ulceração central em um paciente com sangramento digestivo alto, o GIST é a principal hipótese diagnóstica.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/728438648c6e8babcfbdd186befbfd3bb8dc324b3dedec9a28bba0bfc3a31011.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_6a9a4011-c01d-4925-a5fb-edf3779676e8_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:30.702Z"
+  }
+]

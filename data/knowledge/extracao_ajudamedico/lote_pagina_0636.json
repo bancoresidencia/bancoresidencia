@@ -1,0 +1,503 @@
+[
+  {
+    "id": "AJUDA_b1f318ff-af14-4d84-bda0-fbefcf6e5036",
+    "originalId": "b1f318ff-af14-4d84-bda0-fbefcf6e5036",
+    "statement": "Um lactente de 3 meses de vida, previamente hígido, foi levado pelos pais ao pronto atendimento por apresentar quadro de tosse seca e coriza há 8 dias, com piora nas últimas horas, evoluindo com cianose e vômitos. A criança foi mantida em observação no pronto atendimento e apresentou crise de tosse, com pletora facial, guincho e cianose. Com base nessa situação hipotética, assinale a alternativa que apresenta a principal hipótese diagnóstica, o principal agente etiológico e o medicamento adequado para o tratamento, respectivamente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "coqueluche, Bordetella parapertussis e azitromicina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "coqueluche, Bordetella pertussis e azitromicina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "bronquiolite viral aguda, vírus sincicial respiratório e prednisolona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "laringite aguda, vírus parainfluenza e dexametasona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "laringite aguda, adenovírus e adrenalina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico descreve um lactente de 3 meses com uma evolução clássica da coqueluche (também conhecida como tosse convulsa). A doença geralmente se divide em três fases: \n1. Fase catarral (1 a 2 semanas): Sintomas inespecíficos como coriza e tosse leve, como os 8 dias iniciais relatados. \n2. Fase paroxística: Caracterizada por crises de tosse súbitas e rápidas (paroxismos), que podem ser acompanhadas de pletora facial, guincho inspiratório (som produzido pela inspiração forçada contra a glote estreitada), cianose e vômitos após a tosse (vômitos pós-tussígenos). \n3. Fase de convalescença: Melhora gradual dos sintomas.\n\nEm lactentes jovens, a coqueluche é particularmente grave, podendo cursar com apneia e cianose, sendo necessária a internação para monitorização.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Embora a Bordetella parapertussis possa causar uma síndrome clínica semelhante à coqueluche, ela costuma ser mais leve e é responsável por uma minoria dos casos. O enunciado pede o \"principal\" agente etiológico, que é a Bordetella pertussis.\n\nAlternativa b) Correta. A descrição clínica de paroxismos de tosse, pletora, guincho, cianose e vômitos é patognomônica de coqueluche. O principal agente etiológico é a bactéria gram-negativa Bordetella pertussis. O tratamento de escolha para erradicar o agente da nasofaringe e interromper a cadeia de transmissão são os macrolídeos, sendo a azitromicina a droga de primeira linha (preferível em lactentes jovens pelo menor risco de estenose hipertrófica do piloro em comparação à eritromicina).\n\nAlternativa c) Incorreta. A bronquiolite viral aguda, causada principalmente pelo Vírus Sincicial Respiratório (VSR), manifesta-se com pródromos virais seguidos de taquipneia e sibilos (chiado no peito), e não com tosse paroxística e guincho. Além disso, o uso de prednisolona (corticoide) não é recomendado rotineiramente para bronquiolite.\n\nAlternativa d) Incorreta. A laringite aguda (crupe viral), causada majoritariamente pelo vírus parainfluenza, apresenta-se com tosse \"ladrante\" (tosse de cachorro), rouquidão e estridor inspiratório. Embora a dexametasona seja o tratamento correto para laringite, a clínica descrita no caso aponta para coqueluche.\n\nAlternativa e) Incorreta. Além de a clínica não ser de laringite, o adenovírus não é o principal agente desta condição. A adrenalina é utilizada apenas em casos de laringite com estridor em repouso (forma moderada a grave) e não é o tratamento para o quadro de tosse paroxística apresentado.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Coqueluche"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:00.474Z"
+  },
+  {
+    "id": "AJUDA_b1f4e6b6-4c07-4f6f-b21f-d4a4b835fc4b",
+    "originalId": "b1f4e6b6-4c07-4f6f-b21f-d4a4b835fc4b",
+    "statement": "A Eravaciclina é uma tetraciclina fluorociclina de nova geração. Seu espectro de ação se destaca por incluir atividade contra patógenos Gram negativos multirresistentes, mas ela não possui atividade contra:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enterobacterales produtoras de ESBL, KPC e AmpC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acinetobacter baumannii resistente a carbapenêmicos (CRAB).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Stenotrophomonas maltophilia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pseudomonas aeruginosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Texto Original:\nA Eravaciclina é um antibiótico da classe das fluorociclinas, sendo um derivado sintético da tetraciclina. Ela foi desenvolvida para ter uma afinidade maior pelo ribossomo bacteriano e para não ser afetada pelos principais mecanismos de resistência que inativam as tetraciclinas comuns, como as bombas de efluxo e as proteínas de proteção ribossômica.\n\nAlternativa (a) Incorreta: A Eravaciclina possui ampla atividade contra Enterobacterales, mantendo sua eficácia mesmo diante de cepas produtoras de ESBL (Extended-spectrum beta-lactamase), KPC (Klebsiella pneumoniae carbapenemase) e AmpC. Ela é considerada uma ferramenta importante no tratamento de infecções intra-abdominais complicadas causadas por esses microrganismos multirresistentes.\n\nAlternativa (b) Incorreta: O Acinetobacter baumannii, incluindo as cepas resistentes aos carbapenêmicos (CRAB), está dentro do espectro de ação da Eravaciclina. Estudos demonstram que ela possui Concentrações Inibitórias Mínimas (CIM) significativamente baixas para esse patógeno, muitas vezes sendo mais potente que a tigeciclina.\n\nAlternativa (c) Incorreta: A Stenotrophomonas maltophilia é um patógeno oportunista frequentemente resistente a múltiplos antibióticos, mas que costuma ser sensível às novas gerações de tetraciclinas e fluorociclinas, incluindo a Eravaciclina.\n\nAlternativa (d) Correta: Esta é a lacuna clássica no espectro de ação da Eravaciclina e de toda a família das tetraciclinas (incluindo a tigeciclina). A Pseudomonas aeruginosa possui resistência intrínseca a esses fármacos. O principal motivo é a presença de bombas de efluxo de múltiplas drogas (como o sistema MexAB-OprM) que expulsam o antibiótico do interior da bactéria de forma muito eficiente, impedindo que ele alcance o seu alvo (a subunidade 30S do ribossomo). Portanto, se o quadro clínico sugerir infecção por Pseudomonas, a Eravaciclina não deve ser utilizada.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:00.474Z"
+  },
+  {
+    "id": "AJUDA_b1f68d1b-5692-4e64-aabf-79805ea822ee",
+    "originalId": "b1f68d1b-5692-4e64-aabf-79805ea822ee",
+    "statement": "Escolar, sexo masculino, com 6 anos de idade é trazido ao médico com febre alta, dor de garganta intensa e dificuldade para engolir há dois dias. Os pais relatam que ele também se queixa de dor abdominal. Não há tosse ou coriza. No exame físico, observam-se hiperemia e exsudato purulento bilateralmente em amígdalas, linfadenopatia cervical anterior dolorosa. Sobre o diagnóstico mais provável, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diante dos sintomas e sinais dessa doença que a criança manifesta, o diagnóstico clínico apresenta alta sensibilidade e especificidade e não há necessidade de qualquer exame confirmatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento dessa doença pode ser realizado com antibioticoterapia com amoxicilina em dose única diária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O quadro clínico é compatível com uma doença viral que não está associada a complicações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nessa doença é comum hemograma apresentando neutrofilia com células atípicas e o achado clínico de hepatomegalia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado (febre alta, dor de garganta, exsudato purulento bilateral, adenopatia cervical anterior dolorosa e ausência de tosse ou coriza) em um escolar de 6 anos é altamente sugestivo de Faringoamigdalite Bacteriana Aguda, causada pelo Streptococcus pyogenes (Estreptococo do Grupo A). A dor abdominal mencionada é um sintoma comum em crianças com essa condição, muitas vezes associada à linfadenite mesentérica reacional.\n\nAlternativa A: Incorreta. Embora o paciente apresente uma pontuação alta nos critérios clínicos (como os de Centor ou McIsaac), o diagnóstico puramente clínico tem especificidade limitada, pois muitos vírus podem mimetizar esse quadro. As diretrizes atuais recomendam, sempre que disponível, a realização de exames confirmatórios, como o teste rápido de detecção de antígeno (TRDA) ou a cultura de orofaringe, para evitar o uso desnecessário de antibióticos.\n\nAlternativa B: Correta. A amoxicilina é considerada terapia de primeira linha para a faringite estreptocócica. Diretrizes internacionais e nacionais (como as da Sociedade Brasileira de Pediatria e da American Heart Association) validam o uso da amoxicilina em dose única diária (50 mg/kg/dia, com máximo de 1000 mg) por 10 dias, demonstrando eficácia semelhante aos regimes fracionados em duas ou três doses diárias, o que favorece a adesão ao tratamento.\n\nAlternativa C: Incorreta. O quadro descrito, especialmente pela ausência de sintomas virais (tosse e coriza) e presença de exsudato purulento e linfadenopatia anterior, aponta para etiologia bacteriana. Além disso, a faringite estreptocócica está associada a complicações graves, como abscesso periamigdaliano (supurativo) e febre reumática ou glomerulonefrite pós-estreptocócica (não supurativas).\n\nAlternativa D: Incorreta. Neutrofilia com células atípicas não é um achado padrão. A presença de linfocitose com atipia linfocitária e hepatomegalia (ou esplenomegalia) é característica da Mononucleose Infecciosa, causada pelo vírus Epstein-Barr. Embora a mononucleose possa cursar com faringite exsudativa, ela geralmente apresenta uma evolução mais arrastada e linfadenopatia generalizada ou em cadeia posterior.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:00.474Z"
+  },
+  {
+    "id": "AJUDA_b2035307-4133-4f7d-9745-f8ece7c9c749",
+    "originalId": "b2035307-4133-4f7d-9745-f8ece7c9c749",
+    "statement": "Ester, 2anos e 6 meses, foi encontrada “desmaiada” por sua mãe e com respiração irregular . A médica da urgência identificou ainda cianose, hiporreflexia e hipotensão. A mãe disse que ao lado da criança tinha uma cartela vazia de medicação que usava para dormir rotineiramente. Relacione o nome da toxíndrome e a provável medicação ingerida por Ester.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Narcótica; codeína",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Depressiva; benzodiazepínico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Extrapiramidal; haloperidol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anticolinérgica; atropina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Simpatomimética; anfetamina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO caso clínico descreve uma criança com rebaixamento do nível de consciência (desmaiada), depressão respiratória (respiração irregular e cianose), hipotensão e diminuição de reflexos (hiporreflexia). Esse conjunto de sinais e sintomas caracteriza a toxíndrome hipnótico-sedativa ou depressiva do Sistema Nervoso Central. O fato de haver uma cartela de medicação usada para dormir reforça a hipótese de ingestão de benzodiazepínicos, que são os fármacos mais comumente prescritos para distúrbios do sono e ansiedade.\n\nPOR QUE A ALTERNATIVA B ESTÁ CORRETA?\nA alternativa (b) identifica corretamente a toxíndrome depressiva. Os benzodiazepínicos agem potencializando o efeito do neurotransmissor GABA, resultando em sedação, diminuição da frequência respiratória, hipotensão leve a moderada e relaxamento muscular, o que explica a hiporreflexia encontrada em Ester.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa a: A toxíndrome narcótica (ou opioide), causada por substâncias como a codeína, também apresenta depressão respiratória e do nível de consciência. No entanto, sua marca registrada é a presença de miose puntiforme (pupilas muito contraídas), que não foi descrita no caso. Além disso, benzodiazepínicos são mais frequentemente referidos como medicação rotineira para dormir do que a codeína, que é um analgésico.\n\nAlternativa c: A toxíndrome extrapiramidal, associada ao haloperidol (antipsicótico), manifesta-se tipicamente através de alterações motoras, como distonias agudas (contrações musculares involuntárias), parkinsonismo ou acatisia. Não causa o quadro de depressão generalizada e hipotensão descrito na questão.\n\nAlternativa d: A toxíndrome anticolinérgica, causada pela atropina ou antidepressivos tricíclicos, apresenta sintomas opostos aos de Ester. O paciente costuma apresentar agitação, taquicardia, midríase (pupilas dilatadas), pele seca, rubor facial e hipertermia (o clássico mnemônico: louco como um coelho, vermelho como uma beterraba, seco como um osso).\n\nAlternativa e: A toxíndrome simpatomimética, causada por anfetaminas ou cocaína, gera um estado de hiperestimulação. Os sinais incluem hipertensão, taquicardia, agitação psicomotora, sudorese e midríase, o que é incompatível com o estado de desmaio e hipotensão da paciente.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Intoxicações Exógenas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:00.474Z"
+  },
+  {
+    "id": "AJUDA_b20bc860-f3ce-464f-b2f7-986ebf79129f",
+    "originalId": "b20bc860-f3ce-464f-b2f7-986ebf79129f",
+    "statement": "Leia o caso a seguir.\n\nMulher com 56 anos de idade, com fogachos com desconforto social, com antecedentes pessoais para câncer de mama, em uso de tamoxifeno. \n\nA terapêutica indicada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "a isoflavona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o fenolizetant.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a fluoxetina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a paroxetina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso:\nA paciente apresenta sintomas vasomotores intensos (fogachos) e possui antecedente de câncer de mama, o que contraindica o uso de terapia de reposição hormonal (TRH) convencional. Além disso, ela utiliza tamoxifeno, uma pró-droga que depende da enzima hepática CYP2D6 para ser metabolizada em endoxifeno, que é o seu metabólito ativo responsável pela ação antineoplásica.\n\nAlternativa a (Incorreta): As isoflavonas são fitoestrógenos. A evidência científica sobre sua eficácia no controle de sintomas vasomotores moderados a graves é limitada. Além disso, por apresentarem uma estrutura química semelhante ao estrógeno e agirem em seus receptores, sua segurança em pacientes com histórico de câncer de mama hormônio-dependente não é totalmente estabelecida, não sendo a escolha ideal neste cenário.\n\nAlternativa b (Correta): O fezolinetant é uma nova classe de medicamento não hormonal, atuando como um antagonista do receptor de neurocinina 3 (NK3). Ele atua diretamente nos neurônios KNDy no hipotálamo, que são responsáveis pelo controle termorregulador. Por não ser um hormônio e, fundamentalmente, por não interferir na via da enzima CYP2D6, ele é seguro e eficaz para tratar fogachos em pacientes com câncer de mama que utilizam tamoxifeno.\n\nAlternativa c (Incorreta): A fluoxetina é um inibidor seletivo da recaptação de serotonina que atua como um potente inibidor da enzima CYP2D6. O seu uso concomitante ao tamoxifeno reduz drasticamente os níveis de endoxifeno no sangue, podendo comprometer o sucesso do tratamento oncológico e aumentar o risco de recidiva da doença.\n\nAlternativa d (Incorreta): A paroxetina é o inibidor mais potente da CYP2D6 entre os antidepressivos. Assim como a fluoxetina, é formalmente contraindicada para pacientes em uso de tamoxifeno. Caso fosse necessário prescrever um antidepressivo para controle de fogachos nesta paciente, as opções preferenciais seriam a venlafaxina, desvenlafaxina ou escitalopram, que possuem efeito inibitório nulo ou fraco sobre a CYP2D6.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:00.474Z"
+  },
+  {
+    "id": "AJUDA_b20c0900-bc1e-481e-a74a-f5a7d33ca18d",
+    "originalId": "b20c0900-bc1e-481e-a74a-f5a7d33ca18d",
+    "statement": "A Doença Inflamatória Pélvica (DIP) é uma infecção do trato genital superior que pode ter consequências graves para a saúde reprodutiva da mulher, incluindo infertilidade e dor pélvica crônica. Sobre essa patologia, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mycobacterium tuberculosis é um patógeno sexualmente transmissível frequentemente envolvido na DIP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A infecção por Actinomyces israelii está associada a usuárias de dispositivos intrauterinos e é uma causa comum da DIP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vaginose bacteriana pode aumentar o risco de DIP em até duas vezes, mesmo que não seja um agente etiológico direto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A DIP é sempre causada por Chlamydia trachomatis e Neisseria gonorrhoeae.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a: Incorreta. O Mycobacterium tuberculosis é o agente causador da tuberculose genital. Embora ele possa afetar o trato genital superior, causando salpingite e infertilidade, ele não é um patógeno sexualmente transmissível frequente no contexto da Doença Inflamatória Pélvica (DIP) aguda. A tuberculose genital costuma ter uma evolução crônica e ocorre geralmente por disseminação hematogênica a partir de um foco pulmonar.\n\nAlternativa b: Incorreta. Existe uma associação clássica entre o Actinomyces israelii e usuárias de dispositivo intrauterino (DIU), especialmente em casos de uso prolongado. Contudo, o Actinomyces é uma causa rara de DIP, e não uma causa comum. Na prática clínica, o achado dessa bactéria em exames de rotina (Papanicolau) em pacientes assintomáticas nem sequer indica a necessidade de tratamento ou de remoção do DIU.\n\nAlternativa c: Correta. A vaginose bacteriana caracteriza-se por um desequilíbrio da flora vaginal, com redução drástica de lactobacilos e proliferação de bactérias anaeróbias. Essa condição altera o ambiente vaginal e cervical, facilitando a ascensão de microrganismos para o trato superior. Estudos demonstram que a vaginose bacteriana é um fator de risco independente que pode dobrar o risco de desenvolvimento de DIP, mesmo que as bactérias da vaginose não sejam as únicas responsáveis pelo quadro.\n\nAlternativa d: Incorreta. A Chlamydia trachomatis e a Neisseria gonorrhoeae são, de fato, os principais agentes iniciadores da DIP e devem sempre ser cobertos pelo tratamento empírico. No entanto, a DIP é classicamente uma infecção polimicrobiana. Em muitos casos, especialmente nos mais graves ou com formação de abscessos, encontram-se outros agentes como Mycoplasma genitalium, Gardnerella vaginalis, estreptococos e diversos anaeróbios. O termo sempre torna a alternativa incorreta.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Vulvovaginites",
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:00.474Z"
+  },
+  {
+    "id": "AJUDA_b20c2bd8-0d31-41ce-81cd-fbaddd0fff69",
+    "originalId": "b20c2bd8-0d31-41ce-81cd-fbaddd0fff69",
+    "statement": "Homem de 61 anos, com histórico de doença coronariana crônica (angioplastia com stent há 3 anos), hipertensão arterial controlada e síndrome metabólica, retorna para consulta de acompanhamento. Está em uso de rosuvastatina 40 mg/dia, aspirina 100 mg/dia e ramipril 5 mg/dia. Relata adesão adequada ao tratamento, sem efeitos adversos relevantes.\nExames laboratoriais recentes:\n• Colesterol total: 168 mg/dL\n• LDL-C: 68 mg/dL\n• HDL-C: 35 mg/dL\n• Triglicerídeos: 302 mg/dL\n• Glicemia de jejum: 104 mg/dL\n• HbA1c: 5,8%\n• Creatinina: 0,9 mg/Dl\nIMC: 29,2 kg/m². PA: 126/78 mmHg.\nQual deve ser a conduta mais adequada para otimizar o perfil lipídico desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar fibrato para correção dos triglicerídeos elevados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Associar ezetimibe ao tratamento já em curso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Trocar a estatina de alta potência por outra de perfil diferente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar suplementação de ômega-3 para redução dos triglicerídeos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Associar vitamina E em altas doses para melhorar o perfil metabólico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico\n\nO paciente em questão apresenta Doença Arterial Coronariana (DAC) manifesta, evidenciada pelo histórico de angioplastia com stent há 3 anos. De acordo com as diretrizes da Sociedade Brasileira de Cardiologia (SBC) e outras diretrizes internacionais (ESC/ACC), esse paciente é classificado como de Muito Alto Risco Cardiovascular.\n\nPara pacientes de Muito Alto Risco, a meta terapêutica de LDL-colesterol (LDL-C) é inferior a 50 mg/dL. O paciente já utiliza a dose máxima recomendada de uma estatina de alta potência (Rosuvastatina 40 mg/dia) e apresenta LDL-C de 68 mg/dL, ou seja, ainda acima da meta preconizada. Apesar de os triglicerídeos estarem elevados (302 mg/dL), a prioridade absoluta na prevenção secundária é o controle rigoroso do LDL-C.\n\nAnálise das Alternativas\n\na) Iniciar fibrato para correção dos triglicerídeos elevados.\nIncorreta. Embora os triglicerídeos estejam acima de 150 mg/dL, o tratamento de escolha inicial para hipertrigliceridemia leve a moderada (entre 150 e 499 mg/dL) é a otimização da terapia com estatinas e o controle do estilo de vida. O uso de fibratos é priorizado quando os triglicerídeos estão acima de 500 mg/dL (para prevenir pancreatite) ou quando a meta de LDL já foi atingida, mas o não HDL permanece elevado. Neste caso, o LDL ainda não está na meta. Além disso, a associação de estatina com fibrato exige cautela pelo risco de miopatia.\n\nb) Associar ezetimibe ao tratamento já em curso.\nCorreta. Esta é a conduta padrão. Quando um paciente de muito alto risco não atinge a meta de LDL < 50 mg/dL com a dose máxima tolerada de estatina de alta potência, o próximo passo recomendado pelas diretrizes é a associação de ezetimibe (10 mg/dia). O ezetimibe promove uma redução adicional de cerca de 18% a 20% nos níveis de LDL-C, o que seria suficiente para levar este paciente à meta.\n\nc) Trocar a estatina de alta potência por outra de perfil diferente.\nIncorreta. A Rosuvastatina 40 mg é, junto com a Atorvastatina 80 mg, o esquema mais potente disponível para redução de colesterol. Não há ganho terapêutico em trocar uma estatina de alta potência por outra quando o objetivo é uma redução adicional expressiva do LDL-C; a associação de fármacos com mecanismos diferentes (como o ezetimibe) é a estratégia indicada.\n\nd) Iniciar suplementação de ômega-3 para redução dos triglicerídeos.\nIncorreta. Embora o ômega-3 em doses elevadas possa ser considerado em pacientes com DAC e triglicerídeos persistentes (conforme o estudo REDUCE-IT), ele não é a prioridade antes de se atingir a meta de LDL-C de 50 mg/dL. O ezetimibe tem maior impacto na redução de desfechos cardiovasculares quando o LDL está fora da meta.\n\ne) Associar vitamina E em altas doses para melhorar o perfil metabólico.\nIncorreta. Não há evidências científicas que sustentem o uso de vitamina E para melhora do perfil lipídico ou redução de risco cardiovascular em pacientes com síndrome metabólica e coronariopatia. Estudos prévios até sugeriram aumento da mortalidade e de insuficiência cardíaca com o uso de altas doses de vitamina E.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:00.474Z"
+  },
+  {
+    "id": "AJUDA_b20ff359-6243-4072-b17b-9471e038b417",
+    "originalId": "b20ff359-6243-4072-b17b-9471e038b417",
+    "statement": "Mulher de 28 anos, com queixa de pica e fadiga, apresenta: Hb 9,5 g/dL, VCM 72 fL, RDW 18%, Ferritina 8 ng/mL e TIBC elevada. Qual achado laboratorial ajudaria a diferenciar este quadro de uma Talassemia Minor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O RDW estaria elevado na talassemia, ao contrário da anemia ferropriva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A ferritina na talassemia costuma estar normal ou elevada, enquanto o RDW é geralmente normal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A eletroforese de hemoglobina é o teste de triagem inicial preferível à ferritina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A presença de hipocromia exclui o diagnóstico de talassemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O ferro sérico estaria obrigatoriamente reduzido em ambos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\nA paciente apresenta um quadro clássico de anemia ferropriva, caracterizado por anemia microcítica (VCM 72 fL), hipocrômica, com estoques de ferro exauridos (ferritina 8 ng/mL) e grande variação no tamanho das hemácias (RDW 18%). O sintoma de pica (perversão do apetite) é muito sugestivo de deficiência de ferro. O desafio da questão é identificar as diferenças laboratoriais entre essa condição e a talassemia minor.\n\nAlternativa (a) Incorreta: O RDW (amplitude de distribuição dos eritrócitos) mede a variação de tamanho entre as hemácias (anisocitose). Na anemia ferropriva, o RDW costuma estar elevado, pois a produção de hemácias vai se tornando deficitária gradualmente. Já na talassemia minor, o defeito é genético e todas as hemácias são produzidas de forma igualmente pequena (microcitose homogênea), o que resulta em um RDW geralmente normal.\n\nAlternativa (b) Correta: Esta alternativa descreve perfeitamente os diferenciais. Na talassemia minor, não há deficiência de ferro; portanto, a ferritina (estoque de ferro) está normal ou até aumentada. O RDW na talassemia tende a ser normal pela uniformidade do tamanho das hemácias, enquanto na anemia ferropriva ele é tipicamente elevado. Outro dado útil, embora não citado, é que na talassemia o número total de hemácias costuma ser normal ou elevado (eritrocitose), apesar da anemia.\n\nAlternativa (c) Incorreta: Em uma investigação de anemia microcítica, a primeira conduta é avaliar o perfil de ferro (ferritina, ferro sérico, capacidade de ligação). A eletroforese de hemoglobina é o exame para diagnosticar hemoglobinopatias, mas não é o teste de triagem inicial preferível, uma vez que a deficiência de ferro é a causa mais comum de microcitose e deve ser descartada primeiro.\n\nAlternativa (d) Incorreta: A hipocromia não exclui a talassemia. Tanto a anemia ferropriva quanto as síndromes talassêmicas são anemias microcíticas e hipocrômicas. A hipocromia reflete a menor concentração de hemoglobina dentro da célula, o que ocorre em ambas as condições por diferentes mecanismos fisiopatológicos.\n\nAlternativa (e) Incorreta: O ferro sérico está obrigatoriamente baixo na anemia ferropriva. No entanto, na talassemia minor, o ferro sérico costuma estar normal ou aumentado, refletindo a disponibilidade adequada de ferro no organismo, que apenas não consegue ser incorporado corretamente devido à falha na síntese das cadeias de globina.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:00.474Z"
+  },
+  {
+    "id": "AJUDA_b22bd991-a83d-483d-a0ed-54cb5e52a1c4",
+    "originalId": "b22bd991-a83d-483d-a0ed-54cb5e52a1c4",
+    "statement": "Assinalar a alternativa que está associada a um maior risco de novo episódio de embolia pulmonar.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Grandes cirurgias e trauma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença inflamatória intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doenças autoimunes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Neoplasia ativa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para entender qual fator está associado ao maior risco de um novo episódio de embolia pulmonar (recorrência), devemos diferenciar os fatores de risco transitórios dos fatores de risco persistentes.\n\nAlternativa (a) Incorreta: Grandes cirurgias e traumas são considerados fatores de risco \"fortes\", porém são transitórios ou provocados. Uma vez que o paciente se recupera da cirurgia ou do trauma e retoma a mobilidade, o risco de um novo episódio cai significativamente. Em termos de recorrência a longo prazo, o risco é menor do que em condições crônicas.\n\nAlternativas (b) e (c) Incorretas: Doenças inflamatórias intestinais (como Crohn e retocolite ulcerativa) e doenças autoimunes (como lúpus eritematoso sistêmico) causam um estado inflamatório sistêmico que predispõe à trombose. Embora aumentem o risco basal de fenômenos tromboembólicos, a magnitude desse risco e a taxa de recorrência são geralmente inferiores ao risco imposto por uma neoplasia em atividade.\n\nAlternativa (d) Correta: A neoplasia ativa é um dos fatores de risco mais potentes e persistentes para o tromboembolismo venoso (TEV). O câncer promove um estado de hipercoagulabilidade contínuo por meio da liberação de substâncias pró-coagulantes (como o fator tecidual), interação com plaquetas e lesão endotelial direta ou por quimioterapia. Pacientes oncológicos têm um risco de recorrência de embolia pulmonar muito superior ao de pacientes com fatores transitórios, mesmo em uso de anticoagulação, sendo este o principal fator de risco persistente listado na questão.\n\nResumo didático: O risco de recorrência de embolia pulmonar é estratificado principalmente pela permanência do fator causal. Fatores cirúrgicos desaparecem com o tempo; a neoplasia permanece \"ativa\", mantendo o paciente em risco máximo constante de novos episódios.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:00.474Z"
+  },
+  {
+    "id": "AJUDA_b22f4b9e-2c11-4792-b433-dd0f68e3e7a5",
+    "originalId": "b22f4b9e-2c11-4792-b433-dd0f68e3e7a5",
+    "statement": "Mulher de 65 anos procura o gastroenterologista com queixas de astenia, prurido palmar e plantar e elevação de fosfatase alcalina (1005 UI/ml) e Gama GT (1200 UI/ml). As enzimas hepáticas TGO e TGP estão elevadas (300 e 250 UI/ml, respectivamente) e a bilirrubina total é de 6,0 mg/dl, às custas da bilirrubina direta. Apresenta plaquetopenia de 85.000/mm³, e a ultrassonografia de abdômen aponta alterações compatíveis com doença parenquimatosa crônica do fígado, sem dilatação das vias biliares intra e extra-hepáticas e vesícula biliar anecoica.\nA principal hipótese diagnóstica para o caso e o exame complementar a ser solicitado são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hepatite colestática autoimune; FAN e antimúsculo liso;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "colangite esclerosante primária; CPER e P-Anca;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "colangite biliar primária; anti-LKM1;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "colangite biliar primária; antimitocôndria;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "hepatite medicamentosa; FAN e antimúsculo liso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA paciente apresenta um perfil clássico de doença colestática crônica: mulher de 65 anos com prurido, astenia e icterícia às custas de bilirrubina direta. O laboratório confirma o padrão colestático pela elevação acentuada de fosfatase alcalina e gama-GT (muito acima do limite superior da normalidade em comparação às transaminases TGO/TGP). A presença de plaquetopenia (85.000) e os achados da ultrassonografia sugerem que a doença já se encontra em estágio avançado, com sinais de cirrose (doença parenquimatosa crônica) e hipertensão portal. O ponto crucial para o raciocínio é que a ultrassonografia não mostra dilatação de vias biliares, o que exclui causas obstrutivas extra-hepáticas (como cálculos ou tumores) e direciona o diagnóstico para uma doença das pequenas vias biliares intra-hepáticas.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. A hepatite autoimune clássica apresenta um padrão predominantemente hepatocelular (grandes aumentos de TGO e TGP), e não colestático como o deste caso. O FAN e o anticorpo antimúsculo liso são marcadores da hepatite autoimune tipo 1. Embora exista a síndrome de sobreposição (overlap), a hipótese isolada de CBP é muito mais provável pelo quadro laboratorial e epidemiológico.\n\nb) Incorreta. A colangite esclerosante primária (CEP) atinge preferencialmente homens e está muito associada à retocolite ulcerativa. Na CEP, as alterações ocorrem em ductos de grande e médio calibre, o que geralmente gera irregularidades ou dilatações visíveis em exames de imagem (aspecto em contas de rosário). A CPRE é um exame invasivo e não seria a primeira escolha diagnóstica aqui.\n\nc) Incorreta. O diagnóstico de colangite biliar primária (CBP) está correto para o quadro clínico, porém o anticorpo anti-LKM1 é o marcador da hepatite autoimune tipo 2, que acomete majoritariamente crianças e adultos jovens, não tendo relação com a CBP.\n\nd) Correta. A colangite biliar primária (CBP) é uma doença autoimune que causa destruição dos pequenos ductos biliares intra-hepáticos, afetando tipicamente mulheres de meia-idade ou idosas. O quadro de prurido, elevação expressiva de enzimas colestáticas e ausência de dilatação biliar no USG é a apresentação de livro da doença. O exame padrão-ouro para o diagnóstico é a pesquisa do anticorpo antimitocôndria, que é altamente sensível e específico (presente em mais de 95% dos casos).\n\ne) Incorreta. A hepatite medicamentosa pode causar colestase, mas os exames sugeridos (FAN e anticorpo antimúsculo liso) não são ferramentas diagnósticas para toxicidade por drogas, e sim para hepatite autoimune. Além disso, o quadro crônico com sinais de cirrose torna a CBP uma hipótese muito mais robusta.\n\nRESUMO:\nA principal hipótese diagnóstica é colangite biliar primária, e o exame a ser solicitado é o anticorpo antimitocôndria.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Hepatopatias Autoimunes"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:35:00.474Z"
+  }
+]

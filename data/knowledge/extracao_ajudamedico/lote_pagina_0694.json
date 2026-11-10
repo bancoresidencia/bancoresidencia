@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_c214d3a2-c5c1-4f6d-b138-8609318f6590",
+    "originalId": "c214d3a2-c5c1-4f6d-b138-8609318f6590",
+    "statement": "Paciente, sexo feminino, 80 anos, com história de queda recente, usa benzidiazepínico para insônia e anti-hipertensivos. O teste \"Timed Up and Go\" (TUG) está alterado (> 20 segundos). A intervenção prioritária para prevenção de novas quedas é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Revisão da polifarmácia e desprescrição gradual do benzodiazepínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Restrição ao leito para evitar acidentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrição de vitamina D em dose de ataque para todos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicação de bengala sem avaliação da marcha.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão trata da abordagem do idoso com risco de quedas, focando no manejo de fatores de risco modificáveis e na interpretação de testes funcionais.\n\nAnálise das alternativas:\n\nAlternativa (a) CORRETA: O envelhecimento, o histórico de quedas e o uso de substâncias psicoativas, como os benzodiazepínicos, formam um cenário de alto risco. O teste Timed Up and Go (TUG) acima de 20 segundos confirma que a paciente possui uma mobilidade significativamente comprometida e um alto risco de novos eventos. Segundo os Critérios de Beers, os benzodiazepínicos devem ser evitados em idosos devido ao risco de sedação, ataxia, declínio cognitivo e quedas. Portanto, a revisão da polifarmácia e o desmame gradual do benzodiazepínico são as intervenções prioritárias e com maior nível de evidência para a prevenção primária e secundária de quedas.\n\nAlternativa (b) INCORRETA: A restrição ao leito é uma conduta inadequada e perigosa no idoso. A imobilidade prolongada leva à perda acelerada de massa muscular (sarcopenia), ao descondicionamento cardiovascular, ao risco de tromboembolismo e à formação de lesões por pressão. Em vez de evitar acidentes, o repouso no leito fragiliza a paciente e aumenta o risco de quedas futuras ao tentar mobilizar-se.\n\nAlternativa (c) INCORRETA: A suplementação de vitamina D pode ser benéfica em idosos com deficiência comprovada ou alto risco de fraturas, mas não deve ser prescrita em dose de ataque de forma universal para todos os casos. Além disso, ela não substitui a necessidade de remover o principal agente causador do risco (o benzodiazepínico).\n\nAlternativa (d) INCORRETA: O uso de dispositivos auxiliares de marcha (bengalas, andadores) deve ser sempre precedido por uma avaliação técnica da marcha e do equilíbrio, preferencialmente com auxílio da fisioterapia. Prescrever um dispositivo sem o devido ajuste de altura e sem o treinamento de uso pode, na verdade, tornar-se um obstáculo e causar uma nova queda.\n\nAssociação com o Teste TUG: O Timed Up and Go mede o tempo que o paciente leva para levantar de uma cadeira, caminhar 3 metros, girar, voltar e sentar. Valores acima de 12 a 13 segundos já indicam risco aumentado; valores acima de 20 segundos indicam um déficit importante de mobilidade física, reforçando a necessidade de intervenção imediata nos fatores de risco, como as medicações em uso.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:19.807Z"
+  },
+  {
+    "id": "AJUDA_c2216d9d-b389-4d47-8e5e-d4ec6f912603",
+    "originalId": "c2216d9d-b389-4d47-8e5e-d4ec6f912603",
+    "statement": "Em relação ao carcinoma broncogênico, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O carcinoma de pequenas células é tipicamente cirúrgico em estágios iniciais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A lobectomia é o padrão-ouro para o tratamento de tumores não pequenas células ressecáveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O carcinoma escamoso é o tipo histológico menos associado ao tabagismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O estadiamento TNM é determinado apenas pela tomografia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A segmentectomia é sempre preferível à lobectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa A: Incorreta. O carcinoma de pequenas células (oat cell) caracteriza-se por um comportamento biológico muito agressivo e disseminação linfonodal ou hematogênica precoce. Por ser uma doença considerada sistêmica ao diagnóstico na grande maioria dos casos, o tratamento baseia-se em quimioterapia e radioterapia. A cirurgia é reservada apenas para casos raríssimos de nódulos solitários verdadeiramente localizados (T1-2N0).\n\nAlternativa B: Correta. Para pacientes com carcinoma de pulmão de não-pequenas-células (CPNPC) em estágios iniciais e com reserva funcional adequada, a lobectomia anatômica acompanhada de linfadenectomia mediastinal é o padrão-ouro. Essa conduta estabelece o melhor controle oncológico, com menores taxas de recorrência local e melhores índices de sobrevida quando comparada a ressecções menores (sublobares).\n\nAlternativa C: Incorreta. O carcinoma escamoso (ou epidermoide) e o carcinoma de pequenas células são os subtipos histológicos mais fortemente associados ao tabagismo. O adenocarcinoma é o tipo histológico mais comum em pacientes que nunca fumaram, embora também seja o mais frequente em fumantes na estatística global atual.\n\nAlternativa D: Incorreta. O estadiamento do câncer de pulmão é multimodal. Além da tomografia de tórax e abdome superior, utilizam-se frequentemente o PET-CT (para avaliação de metástases e linfonodos), a ressonância magnética de crânio (rastreio de metástases no sistema nervoso central) e métodos invasivos para confirmação linfonodal, como o EBUS (ultrassom endobrônquico) ou a mediastinoscopia.\n\nAlternativa E: Incorreta. A segmentectomia é uma ressecção sublobar indicada principalmente para pacientes que não possuem função pulmonar suficiente para tolerar uma lobectomia ou para casos muito específicos de tumores periféricos menores que 2 centímetros. Ela não é preferível à lobectomia como regra geral, pois esta última oferece uma margem de segurança oncológica superior na maioria dos cenários clínicos.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Neoplasias Pulmonares",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:19.807Z"
+  },
+  {
+    "id": "AJUDA_c225f861-3891-4089-9e58-c5f14d4d64f5",
+    "originalId": "c225f861-3891-4089-9e58-c5f14d4d64f5",
+    "statement": "Uma menina com 14 anos de idade é atendida pelo médico, enquanto a mãe a aguarda na sala de espera. A menina quer orientação (e pede sigilo), para uso de método contraceptivo, pois está namorando e tendo relações sexuais com um rapaz de 17 anos. Estão felizes e a menina apresenta plena capacidade de entendimento e de decisão acerca de sua saúde. O médico deve, além de deixar todas as decisões escritas em prontuário",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar que a menor retorne em alguns dias em uma consulta com alguém de sua confiança, com mais de 18 anos de idade, para ser o interlocutor responsável, a fim de evitar a quebra de sigilo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "comunicar aos responsáveis, de forma sigilosa, sem o conhecimento da adolescente, para que possam avaliar a situação e propor medidas para protegê-la.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "orientar sobre o risco de doenças e dar um prazo de alguns dias para a paciente revelar aos pais, caso contrário, o médico deverá quebrar o sigilo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "avisar à menor que devem revelar aos responsáveis imediatamente, pois, caso haja algum evento adverso, incluindo gravidez não planejada, o profissional estará sujeito a penalidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realizar as orientações e certificar-se de que houve entendimento por parte da adolescente mantendo o sigilo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Essa questão aborda um dos temas mais frequentes em provas de ética médica e medicina preventiva: o sigilo médico no atendimento ao adolescente. O ponto central para a resolução é avaliar a capacidade de discernimento da paciente e a inexistência de risco iminente à vida ou a terceiros.\n\nDe acordo com o Código de Ética Médica (Artigo 74) e as diretrizes do Conselho Federal de Medicina (Parecer CFM nº 15/2017), o médico é proibido de revelar segredo profissional referente a paciente menor de idade, desde que este tenha capacidade de discernimento (compreensão sobre seu estado e as consequências de suas decisões).\n\nAnálise das alternativas:\n\na) Incorreta. Exigir um interlocutor maior de 18 anos fere o direito da adolescente ao atendimento direto e individualizado. Se a paciente possui capacidade de entendimento, ela tem o direito de ser atendida sozinha e de ter suas decisões respeitadas.\n\nb) Incorreta. A quebra de sigilo sem o conhecimento da paciente e sem um motivo de \"justa causa\" (como risco de morte, abuso sexual ou crime) configura infração ética grave. O fato de a adolescente ter vida sexual ativa não é, por si só, motivo para quebra de sigilo.\n\nc) Incorreta. Não cabe ao médico estabelecer ultimatos para que a paciente revele fatos aos pais, a menos que a situação envolva riscos graves que a paciente não consiga gerenciar. No caso de contracepção, o sigilo deve ser mantido para garantir a adesão ao método e a confiança na relação médico-paciente.\n\nd) Incorreta. O médico não sofre penalidades por garantir o sigilo profissional; pelo contrário, ele é protegido por lei para mantê-lo. A alegação de \"evitar penalidades\" em caso de gravidez não planejada não tem sustentação jurídica ou ética, pois a gravidez não é um evento que justifique a quebra de sigilo compulsória.\n\ne) Correta. Como a questão afirma explicitamente que a paciente apresenta \"plena capacidade de entendimento e de decisão\", o médico deve respeitar sua autonomia. A conduta correta é fornecer todas as orientações sobre métodos contraceptivos e prevenção de Infecções Sexualmente Transmissíveis (ISTs), garantindo o direito à privacidade e mantendo o sigilo, conforme preconiza o Estatuto da Criança e do Adolescente (ECA) e o Código de Ética Médica.\n\nEm resumo, se o adolescente tem discernimento e não há risco de vida ou violência envolvida, o sigilo é um direito do paciente e um dever do médico. Tudo deve ser minuciosamente anotado no prontuário para respaldo do profissional.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar",
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:19.807Z"
+  },
+  {
+    "id": "AJUDA_c22f5ca6-3ced-4839-abe4-14c455fabcfc",
+    "originalId": "c22f5ca6-3ced-4839-abe4-14c455fabcfc",
+    "statement": "A pandemia de Covid-19 foi marcada por disseminação de tratamentos ineficazes e sem embasamento científico. A falta de conhecimento sobre medicina baseada em evidências foi uma das causas desse fenômeno. Ao analisar estudos, é primordial levar em consideração o desenho metodológico, conhecer as possibilidades e limitações de cada modelo.\nSobre esse tema, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Buscando a etiologia de doenças, estudos transversais e observacionais são os mais indicados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ensaio clínico randomizado é o desenho de estudo ideal para testar e aprovar tratamentos e intervenções em saúde, já para avaliação de prognóstico, estudos de coorte são adequados.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Os estudos de acurácia são ineficazes no contexto de avaliação diagnóstica, pois deixam de avaliar a sensibilidade e especificidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os estudos de caso-controle têm a capacidade de testar novas propostas de tratamento de saúde, e quando existe o cegamento dos grupos (tanto do caso quanto do controle), melhor a acurácia da evidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Revisões narrativas estão no topo da pirâmide de evidências científicas e devem ser utilizadas para atualizar guidelines de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para gabaritar questões sobre Medicina Baseada em Evidências (MBE), é fundamental compreender que existe um desenho de estudo ideal para cada tipo de pergunta clínica (terapia, diagnóstico, prognóstico ou etiologia).\n\nAlternativa (a) Incorreta. Estudos transversais analisam a exposição e o desfecho simultaneamente, o que impede o estabelecimento de uma relação de causalidade temporal (não sabemos o que veio primeiro). Para investigar a etiologia (causalidade), os desenhos de escolha são os estudos de Coorte (partem da exposição para o desfecho) ou Caso-Controle (partem do desfecho para a exposição retrospectiva).\n\nAlternativa (b) Correta. Esta alternativa define com precisão os padrões-ouro da hierarquia científica. O Ensaio Clínico Randomizado (ECR) é o melhor desenho para avaliar intervenções terapêuticas, pois a randomização minimiza vieses de seleção e confundimento. Já para avaliar o prognóstico (o curso natural de uma doença), o estudo de Coorte é o ideal, pois acompanha um grupo de pacientes desde o diagnóstico ao longo do tempo para observar os desfechos.\n\nAlternativa (c) Incorreta. Pelo contrário, os estudos de acurácia são exatamente os modelos desenhados para avaliar testes diagnósticos. É por meio deles que calculamos parâmetros fundamentais como sensibilidade, especificidade, valores preditivos e razões de verossimilhança, comparando o novo teste a um padrão-ouro (gold standard).\n\nAlternativa (d) Incorreta. Estudos de Caso-Controle são observacionais e retrospectivos; eles não servem para testar novos tratamentos, mas sim para avaliar fatores de risco ou associações, especialmente em doenças raras ou com longo período de latência. O termo \"cegamento\" é tipicamente aplicado a Ensaios Clínicos para evitar viés de aferição, e não define a estrutura básica de um Caso-Controle.\n\nAlternativa (e) Incorreta. No topo da pirâmide de evidências estão as Revisões Sistemáticas com Metanálise de ensaios clínicos randomizados. As revisões narrativas, embora úteis para uma visão geral teórica, possuem alta carga de subjetividade do autor e não seguem um método rigoroso de busca e seleção de evidências, não devendo ser a base principal para guidelines de tratamento.",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:19.807Z"
+  },
+  {
+    "id": "AJUDA_c234516b-e333-4534-898c-051ac8c0add2",
+    "originalId": "c234516b-e333-4534-898c-051ac8c0add2",
+    "statement": "Paciente masculino 30 anos apresenta recidiva de hernia inguinal indireta operada com colocação de tela de marlex há 01 ano ,qual a classificação segundo Nyhus?",
+    "options": [
+      {
+        "id": "A",
+        "text": "I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "III A",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "III B",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "IV",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A classificação de Nyhus é fundamental na cirurgia geral para categorizar as hérnias da região inguinal com base em sua anatomia e no estado da parede posterior. O ponto crucial para resolver esta questão é identificar que se trata de uma \"recidiva\" (recorrência) de uma cirurgia prévia.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. O Tipo I de Nyhus refere-se a hérnias inguinais indiretas nas quais o anel inguinal interno apresenta diâmetro e limites normais. É a forma mais comum em lactentes e crianças.\n\nAlternativa b) Incorreta. O Tipo II refere-se a hérnias inguinais indiretas em que o anel inguinal interno está dilatado, porém a parede posterior do canal inguinal (fáscia transversalis) permanece preservada e intacta.\n\nAlternativa c) Incorreta. O Tipo III A é a classificação para as hérnias inguinais diretas, que ocorrem devido a um defeito adquirido na parede posterior do canal inguinal, especificamente no triângulo de Hesselbach.\n\nAlternativa d) Incorreta. O Tipo III B refere-se a hérnias inguinais indiretas com grande dilatação do anel inguinal interno e destruição importante da parede posterior. Estão incluídas aqui as hérnias por deslizamento, hérnias mistas (em pantufa) e hérnias inguinoescrotais.\n\nAlternativa e) Correta. O Tipo IV da classificação de Nyhus é reservado exclusivamente para as hérnias recidivadas (recorrentes). Independentemente de a hérnia ser direta, indireta ou femoral no momento da recidiva, o simples fato de o paciente já ter sido operado previamente e apresentar um novo defeito no mesmo local a enquadra nesta categoria. O Tipo IV pode ser subdividido em:\n- IV A: Recidiva Direta;\n- IV B: Recidiva Indireta;\n- IV C: Recidiva Femoral;\n- IV D: Recidiva Mista.\nComo o enunciado cita uma recidiva de hérnia indireta, ela se enquadra perfeitamente no Tipo IV.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:19.807Z"
+  },
+  {
+    "id": "AJUDA_c2477506-a283-4948-9861-530df1617a1c",
+    "originalId": "c2477506-a283-4948-9861-530df1617a1c",
+    "statement": "Com incidência no nosso país superior a 10% de todas as gestações, a prematuridade se associa a piores desfechos neonatais, elevando sobremaneira o custo assistencial dos recém-nascidos e causando grande angústia em pais e familiares. Em relação à prematuridade, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "tem forte associação com a candidíase vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "os extremos da idade apresentam menor incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "história de parto prematuro anterior é um importante fator de risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "o índice de Bishop é um bom método de rastreamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A prematuridade é um dos grandes desafios da obstetrícia moderna. Para responder corretamente a esta questão, é necessário conhecer os principais fatores de risco e métodos de rastreamento. Segue a análise de cada alternativa:\n\nLetra a) Incorreta. Embora certas infecções genitais e urinárias (como a vaginose bacteriana e a pielonefrite) estejam fortemente ligadas ao trabalho de parto prematuro, a candidíase vaginal não possui essa associação. A infecção por fungos do gênero Candida é muito comum na gestação devido às mudanças hormonais e de pH, mas não costuma desencadear a cascata inflamatória necessária para provocar o parto antecipado.\n\nLetra b) Incorreta. Os extremos de idade materna (gestantes com menos de 18 anos ou com mais de 35-40 anos) estão associados a uma maior incidência de prematuridade, e não menor. Nas adolescentes, o risco costuma estar ligado a fatores socioeconômicos e imaturidade biológica; já nas mulheres de idade avançada, há maior prevalência de doenças crônicas (como hipertensão e diabetes) e maior uso de técnicas de reprodução assistida, que elevam o risco de partos prematuros.\n\nLetra c) Correta. O antecedente de parto prematuro espontâneo é considerado o principal fator de risco para a ocorrência de um novo parto prematuro. Mulheres que já tiveram um bebê prematuro apresentam um risco significativamente elevado de recorrência, o que motiva intervenções preventivas específicas em gestações posteriores, como o uso de progesterona micronizada natural.\n\nLetra d) Incorreta. O Índice de Bishop é uma escala utilizada para avaliar as condições do colo uterino e a probabilidade de sucesso em uma indução de parto, geralmente em gestações a termo. Ele não é um método de rastreamento para prematuridade. O padrão-ouro para o rastreamento da prematuridade em pacientes assintomáticas é a medida do comprimento do colo uterino pela ultrassonografia transvaginal, realizada rotineiramente entre a 18ª e a 24ª semana de gestação.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:19.807Z"
+  },
+  {
+    "id": "AJUDA_c25f2ffb-f425-477f-8c2e-5d46c94c5d47",
+    "originalId": "c25f2ffb-f425-477f-8c2e-5d46c94c5d47",
+    "statement": "A obesidade na gestação é considerada condição de risco. Há descrição de repercussões a curto e longo prazo para os filhos dessas pacientes. De forma geral, o Ministério da Saúde estabeleceu critérios para que a gestante obesa inicie (no primeiro trimestre) o pré-natal no risco habitual ou no alto risco. Qual afirmação é CORRETA quanto a esses critérios?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Todas as pacientes obesas independentemente do IMC deverão ser encaminhadas ao Pré-natal de alto risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pré natal de risco habitual: IMC até 30Kg/m2 sem comorbidades. Pré-natal de alto risco: IMC maior ou igual a 30Kg/m2 ou com comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pré natal de risco habitual: IMC até 35Kg/m2 com comorbidades. Pré-natal de alto risco: IMC maior ou igual a 35Kg/m2 ou com comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pré-natal de risco habitual: IMC até 39,9Kg/m2 sem comorbidades. Pré-natal de alto risco: IMC maior ou igual a 40Kg/m2 ou com comorbidades.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Todas as pacientes com IMC maior que 30 Kg/m2 deverão ser encaminhadas ao pré-natal de alto risco depois do segundo trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda os critérios de estratificação de risco gestacional baseados no Índice de Massa Corporal (IMC) e na presença de comorbidades, seguindo as diretrizes atuais do Ministério da Saúde. O objetivo é garantir que recursos de maior complexidade sejam direcionados a quem realmente apresenta maior risco de complicações.\n\nAlternativa a: Incorreta. Nem toda gestante obesa é automaticamente classificada como de alto risco. O sistema de saúde brasileiro preconiza que a atenção primária acompanhe gestantes com obesidade de graus I e II (IMC entre 30 e 39,9 kg/m²), desde que não existam outras doenças associadas, para não sobrecarregar os centros de referência.\n\nAlternativa b: Incorreta. Esta alternativa sugere que qualquer nível de obesidade (IMC maior ou igual a 30 kg/m²) exige pré-natal de alto risco. Isso contraria o protocolo do Ministério da Saúde, que permite o acompanhamento de risco habitual para obesas de graus I e II sem comorbidades.\n\nAlternativa c: Incorreta. O valor de corte de 35 kg/m² para encaminhamento não é o adotado oficialmente como critério isolado. Além disso, a alternativa afirma que o risco habitual aceitaria pacientes com comorbidades, o que é um erro conceitual grave, pois a presença de patologias associadas é um critério clássico para o alto risco.\n\nAlternativa d: Correta. Conforme as diretrizes do Ministério da Saúde (Manual de Gestação de Alto Risco), a gestante com obesidade de grau I ou II (IMC até 39,9 kg/m²) e que não apresenta outras patologias (sem comorbidades) pode e deve ser acompanhada no pré-natal de risco habitual. O encaminhamento para o pré-natal de alto risco está indicado quando o IMC é igual ou superior a 40 kg/m² (obesidade grau III ou mórbida) ou quando a obesidade, em qualquer grau, vem acompanhada de comorbidades, como hipertensão arterial ou diabetes.\n\nAlternativa e: Incorreta. O encaminhamento para o pré-natal de alto risco deve ocorrer, idealmente, logo no primeiro trimestre, assim que o fator de risco for identificado na primeira consulta, e não apenas após o segundo trimestre. Além disso, o IMC de 30 kg/m² isoladamente não é critério para alto risco.\n\nResumo dos critérios do Ministério da Saúde para obesidade:\n1. Risco Habitual: IMC entre 30 e 39,9 kg/m² (G1 e G2) sem comorbidades.\n2. Alto Risco: IMC maior ou igual a 40 kg/m² (G3) OU qualquer grau de obesidade com comorbidades associadas.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Obesidade e Síndrome Metabólica",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:19.807Z"
+  },
+  {
+    "id": "AJUDA_c26a8f59-33d7-47ea-832f-eadef1a4e543",
+    "originalId": "c26a8f59-33d7-47ea-832f-eadef1a4e543",
+    "statement": "O parâmetro ultrassonográfico mais preciso para determinar a idade gestacional no primeiro trimestre é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Comprimento Cabeça-Nádega (CCN).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Diâmetro Biparietal (DBP).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Comprimento do Fêmur (CF).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Circunferência Abdominal (CA).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nA datação precisa da gravidez é essencial para o manejo obstétrico adequado. No primeiro trimestre, a ultrassonografia é o método mais fidedigno para determinar a idade gestacional, superando a precisão da Data da Última Menstruação (DUM).\n\nAlternativa A (Correta): O Comprimento Cabeça-Nádega (CCN) é o parâmetro mais preciso para determinar a idade gestacional no primeiro trimestre, especificamente entre a 7ª e a 14ª semana de gestação. Nesse período, o crescimento embrionário/fetal é muito uniforme e pouco influenciado por variações individuais ou patológicas, o que confere ao exame uma margem de erro de apenas 3 a 5 dias. É o parâmetro utilizado para confirmar ou ajustar a idade gestacional em relação à DUM.\n\nAlternativa B (Incorreta): O Diâmetro Biparietal (DBP) consiste na medida da distância entre os ossos parietais do crânio. Ele começa a ter utilidade para a datação a partir do final do primeiro trimestre e início do segundo (após 12 a 14 semanas). Embora seja um parâmetro importante, sua acurácia para determinar a idade gestacional é inferior à do CCN.\n\nAlternativa C (Incorreta): O Comprimento do Fêmur (CF) é um parâmetro utilizado para avaliar o crescimento esquelético e compor o cálculo do peso fetal estimado no segundo e terceiro trimestres. Não é utilizado como parâmetro de escolha para datar a gestação no início da gravidez.\n\nAlternativa D (Incorreta): A Circunferência Abdominal (CA) é o parâmetro biométrico que apresenta a maior variabilidade, pois é diretamente influenciada pelo estado nutricional do feto (depósito de gordura e glicogênio hepático). Por esse motivo, é o parâmetro menos preciso para datar a gestação, sendo, no entanto, o melhor indicador para avaliar o crescimento fetal e diagnosticar condições como a restrição de crescimento ou a macrossomia no terceiro trimestre.\n\nGabarito: Letra A.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Ultrassom em Obstetrícia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:19.807Z"
+  },
+  {
+    "id": "AJUDA_c2793e5c-83fd-4b2a-97a8-bad63bc2ac47",
+    "originalId": "c2793e5c-83fd-4b2a-97a8-bad63bc2ac47",
+    "statement": "Mulher, de 35 anos de idade, encontra-se em sala cirúrgica para realização de colecistectomia videolaparoscópica por colelitíase sintomática. Para confecção do pneumoperitônio, o gás a ser utilizado e a pressão estabelecida no insuflador devem ser, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gás carbônico e 5mmHg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gás carbônico e 15mmHg",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Oxigênio e 5mmHg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Oxigênio e 25mmHg",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O pneumoperitônio é um passo fundamental na cirurgia videolaparoscópica, consistindo na insuflação de gás na cavidade abdominal para criar um espaço de trabalho que permita a visualização e a manipulação das vísceras.\n\nEscolha do Gás: O dióxido de carbono (CO2) é o gás de escolha universal para a videolaparoscopia por três motivos principais: 1) Alta solubilidade no sangue, o que minimiza o risco de embolia gasosa grave (caso o gás entre em um vaso, ele é rapidamente dissolvido e eliminado pelos pulmões); 2) Não é combustível, permitindo o uso seguro de eletrocautério e laser; 3) É incolor e de baixo custo. O uso de oxigênio ou ar comprimido é contraindicado pelo alto risco de combustão e de embolia gasosa fatal.\n\nPressão do Insuflador: A pressão intra-abdominal deve ser suficiente para garantir a exposição adequada dos órgãos, mas não tão alta que prejudique a hemodinâmica e a ventilação do paciente. O padrão estabelecido na prática cirúrgica para adultos é manter a pressão entre 12 e 15 mmHg.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o CO2 seja o gás correto, a pressão de 5 mmHg é insuficiente para manter a distensão abdominal necessária para a realização de uma colecistectomia, dificultando a visualização e aumentando o risco de lesões iatrogênicas por falta de espaço.\n\nb) Correta. O CO2 é o gás padrão e a pressão de 15 mmHg representa o limite superior usual de segurança, proporcionando um campo cirúrgico adequado com repercussões clínicas controláveis.\n\nc) Incorreta. O oxigênio apresenta alto risco de explosão em contato com o bisturi elétrico e baixa solubilidade sanguínea em comparação ao CO2. Além disso, a pressão de 5 mmHg é muito baixa para o procedimento.\n\nd) Incorreta. O uso de oxigênio é tecnicamente inadequado. Já a pressão de 25 mmHg é considerada excessiva e perigosa, podendo causar queda acentuada do retorno venoso, redução do débito cardíaco, aumento exagerado da pressão de pico nas vias aéreas e risco de síndrome compartimental abdominal.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:19.807Z"
+  },
+  {
+    "id": "AJUDA_c287348f-d7cf-472b-bc18-097ddbfac208",
+    "originalId": "c287348f-d7cf-472b-bc18-097ddbfac208",
+    "statement": "Gestante, 28 anos, G3 P2 (partos por via vaginal), sem comorbidades. Está em sua primeira consulta na Unidade Básica de Saúde, assintomática, relatando um atraso menstrual de 18 semanas. Foi realizado ultrassom endovaginal onde foi observado feto com idade gestacional compatível com 13 semanas e ausência de batimentos cardíacos. A melhor conduta para esta paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aguardar expulsão fetal espontaneamente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aspiração Manual Intrauterina (AMIU) e ocitocina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Curetagem uterina após expulsão fetal com misoprostol",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ocitocina por via endovenosa e curetagem uterina após expulsão fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA paciente apresenta um diagnóstico de abortamento retido tardio, uma vez que a idade gestacional confirmada pelo ultrassom é de 13 semanas. Na prática obstétrica, o limite de 12 semanas é fundamental para a escolha da conduta de esvaziamento uterino.\n\nALTERNATIVA A - INCORRETA\nA conduta expectante consiste em aguardar a expulsão espontânea do conteúdo uterino. Embora possa ser utilizada em abortamentos muito precoces ou incompletos, no caso de um abortamento retido de 13 semanas, essa escolha aumenta o risco de complicações como hemorragia intensa, infecção e, em casos de retenção por várias semanas, o risco de coagulação intravascular disseminada (CIVD).\n\nALTERNATIVA B - INCORRETA\nA Aspiração Manual Intrauterina (AMIU) é o método de escolha para o esvaziamento de gestações do primeiro trimestre, idealmente até as 12 semanas. Com 13 semanas, o feto já possui dimensões e componentes ósseos que tornam a aspiração direta tecnicamente difícil e perigosa, elevando o risco de perfuração uterina e esvaziamento incompleto se tentada sem preparo prévio ou expulsão fetal.\n\nALTERNATIVA C - CORRETA\nEsta é a conduta preconizada para abortamentos tardios (acima de 12 semanas). Devido ao tamanho fetal e ao volume uterino, a realização direta de procedimentos cirúrgicos é arriscada. O protocolo correto envolve a utilização de prostaglandinas (como o misoprostol) para promover o amolecimento do colo uterino e as contrações necessárias para a expulsão do feto. Como a placenta, nesta idade gestacional, raramente é expulsa de forma completa e espontânea junto com o feto, a realização de curetagem uterina ou revisão de cavidade após a expulsão é o passo final para garantir a limpeza completa do útero.\n\nALTERNATIVA D - INCORRETA\nA utilização de ocitocina para induzir o esvaziamento uterino no final do primeiro trimestre ou início do segundo é ineficaz. O miométrio possui baixa densidade de receptores para ocitocina nesse período gestacional, tornando o útero pouco responsivo ao fármaco. O misoprostol é o medicamento de escolha por atuar diretamente na maturação cervical e na contratilidade miometrial, independentemente da presença de receptores de ocitocina.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:44:19.807Z"
+  }
+]

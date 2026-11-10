@@ -1,0 +1,479 @@
+[
+  {
+    "id": "AJUDA_3825a2fd-3506-41ae-a070-d871e2c9a107",
+    "originalId": "3825a2fd-3506-41ae-a070-d871e2c9a107",
+    "statement": "Uma mulher de 58 anos apresenta dor lombar crônica após múltiplas cirurgias de coluna. Está em uso de oxicodona oral 40 mg/dia há 9 meses, e relata que inicialmente obteve bom alívio, mas agora apresenta aumento progressivo da dor difusa, incluindo nos membros superiores, com piora da sensibilidade dolorosa mesmo a estímulos leves. Ela está ansiosa e relata dificuldade para dormir por conta da dor. Ao exame físico: pressão arterial e frequência cardíaca normais, exame neurológico sem déficits focais, mas queixa-se de dor difusa no corpo com sensação de queimação aos mínimos estímulos, como trocar de roupa.\n\nQual é a conduta mais apropriada neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar a dose de oxicodona para contornar a provável tolerância ao opioide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter a dose de oxicodona e associar antidepressivo tricíclico como medicação adjuvante para controle da dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prescrever benzodiazepínico associado para reduzir a ansiedade relacionada à dor e trocar a oxicodona por morfina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Considerar redução da oxicodona e associar gabapentina para auxiliar o controle da dor.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito é clássico de Hiperalgesia Induzida por Opioide (HIO). A paciente apresenta um aumento da sensibilidade dolorosa e dor difusa (incluindo áreas não relacionadas à lesão original), com características de alodinia (dor a estímulos leves, como trocar de roupa) após o uso crônico e prolongado de oxicodona. Diferente da tolerância, em que a mesma dose perde o efeito, na HIO o próprio opioide torna o sistema nervoso mais sensível à dor.\n\nAnálise das alternativas:\n\na) Incorreta. Aumentar a dose de oxicodona é a conduta para casos de tolerância farmacológica. No entanto, na Hiperalgesia Induzida por Opioide, o aumento da dose agrava o quadro, intensificando a sensibilização central e a dor da paciente. O diagnóstico diferencial aqui é fundamental: a dor na HIO é frequentemente descrita como em queimação e mais difusa do que a dor original.\n\nb) Incorreta. Embora os antidepressivos tricíclicos sejam excelentes adjuvantes para dor crônica, manter a dose atual do opioide não resolve o problema de base da HIO. Para reverter o estado de hipersensibilidade, é necessária a redução do agente causador (o opioide).\n\nc) Incorreta. O uso de benzodiazepínicos associado a opioides é desaconselhado devido ao alto risco de depressão respiratória e sedação excessiva. Além disso, a troca por morfina (rotação de opioide) poderia ser uma estratégia em alguns contextos, mas não resolve a hiperalgesia se as doses não forem manejadas com o intuito de desmame ou redução significativa.\n\nd) Correta. A conduta padrão na Hiperalgesia Induzida por Opioide é a redução gradual (desmame) da dose do opioide. A associação de medicações que atuam na sensibilização central, como a gabapentina (um ligante da subunidade alfa-2-delta dos canais de cálcio), ajuda a modular a excitabilidade neuronal e auxilia no controle da dor neuropática e central durante esse processo de redução. O objetivo é \"resetar\" os receptores e as vias de processamento da dor da paciente.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Dolorosas Crônicas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:17.706Z"
+  },
+  {
+    "id": "AJUDA_383c9925-4146-42f7-bcaa-cf8e3a93512e",
+    "originalId": "383c9925-4146-42f7-bcaa-cf8e3a93512e",
+    "statement": "As lesões de trânsito são importante problema de saúde pública global, situando-se entre as dez principais causas de morte em países de baixa e média renda e a sexta causa de DALY (Disability Adjusted Life Years - Anos de vida perdidos ajustados por incapacidade). Sobre as lesões de trânsito no Brasil assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fatores humanos são preponderantes como causa das lesões de trânsito, sendo que as condições das vias de circulação, a visibilidade e os defeitos nos veículos contribuem em pequena proporção na ocorrência de acidentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Lesões no trânsito podem ser evitadas, para isso basta que todos, pedestres e motoristas sigam corretamente a legislação brasileira relacionada ao trânsito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Motoristas de automóveis e caminhões, motociclistas e ciclistas são as principais vítimas no trânsito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O perfil das vítimas fatais de motociclistas em lesões no trânsito é predominantemente do sexo masculino, isso porque as mulheres são mais prudentes no trânsito.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa a (Correta): Diversos estudos epidemiológicos e dados de órgãos de trânsito, como a Organização Mundial da Saúde (OMS), confirmam que o fator humano é a causa de aproximadamente 90% dos acidentes de trânsito. Esse fator engloba comportamentos como excesso de velocidade, condução sob efeito de álcool, distração (uso de celular) e imperícia. Embora a infraestrutura das vias e as falhas mecânicas nos veículos tenham um papel importante na segurança, elas contribuem com uma porcentagem significativamente menor como causa direta das ocorrências quando comparadas às falhas de conduta humana.\n\nAlternativa b (Incorreta): A afirmação é reducionista ao sugerir que basta o cumprimento da lei para evitar as lesões. A abordagem moderna de saúde pública utiliza o conceito de Sistemas Seguros, que reconhece que o ser humano é falível e que o sistema de trânsito deve ser projetado para perdoar esses erros. A prevenção depende de uma combinação de legislação, fiscalização, engenharia viária avançada, veículos mais seguros e atendimento médico de urgência eficaz, e não apenas da conduta individual.\n\nAlternativa c (Incorreta): Embora cite grupos importantes, a alternativa falha ao não mencionar os pedestres, que representam uma das parcelas mais vulneráveis e impactadas pela mortalidade no trânsito brasileiro. No contexto da saúde pública, a prioridade de proteção deve seguir a ordem de vulnerabilidade: pedestres, ciclistas e motociclistas (usuários vulneráveis), seguidos pelos veículos de maior porte.\n\nAlternativa d (Incorreta): É verdade que o perfil das vítimas fatais é predominantemente do sexo masculino e jovem. No entanto, a explicação de que isso ocorre exclusivamente porque as mulheres são mais prudentes é cientificamente frágil para uma questão de medicina. A maior mortalidade masculina está associada a fatores socioculturais complexos, maior exposição ao risco (maior número de homens trabalhando profissionalmente com motocicletas), maior prevalência de condução sob efeito de substâncias e padrões de comportamento de risco, e não apenas a um traço subjetivo de prudência.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:17.706Z"
+  },
+  {
+    "id": "AJUDA_38432c16-5608-407a-a332-6fe50ff2d5ca",
+    "originalId": "38432c16-5608-407a-a332-6fe50ff2d5ca",
+    "statement": "Os determinantes sociais, tais como Status Socioeconômico (SES), Índice de Vulnerabilidade Social (IVS) e Índice de Desenvolvimento Social (IDS), atuam sobre o risco e a mortalidade das doenças crônico-degenerativas na população. Assinale a assertiva correta sobre os determinantes sociais.",
+    "options": [
+      {
+        "id": "A",
+        "text": "SES baixo se relaciona a doença cardiovascular e aumenta o risco cardiovascular na mesma proporção que fatores de risco clássicos, como hipertensão arterial, diabetes melito, obesidade e tabagismo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Educação, etnia, situação de emprego e condições ambientais são os fatores que compõem o SES.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipertensão arterial, tabagismo, obesidade e hipercolesterolemia são os fatores de risco mais frequentes entre pessoas negras do que em outros grupos étnicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Baixa escolaridade, IVS alto e IDS baixo estão relacionados a aumento da frequência de demência de Alzheimer, doença cerebrovascular e doença de Parkinson.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nA questão aborda a importância dos determinantes sociais de saúde na epidemiologia e no prognóstico de doenças crônicas. O entendimento de que o contexto socioeconômico não é apenas um pano de fundo, mas um fator de risco direto e mensurável, é fundamental para a medicina moderna.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) CORRETA: Estudos epidemiológicos robustos, como o estudo PURE publicado no The Lancet, demonstram que o baixo Status Socioeconômico (SES) é um preditor independente de eventos cardiovasculares maiores e mortalidade. A magnitude desse risco é frequentemente comparável à de fatores tradicionais como tabagismo, dislipidemia e hipertensão. Isso ocorre porque o SES baixo modula o estresse crônico, o acesso a alimentos saudáveis e a capacidade de adesão terapêutica, impactando diretamente o desfecho clínico tanto quanto a biologia da doença.\n\nAlternativa (b) INCORRETA: Embora todos os itens citados sejam determinantes sociais de saúde, o Status Socioeconômico (SES) é classicamente definido por uma tríade específica: nível de escolaridade, renda e ocupação profissional. A etnia e as condições ambientais são variáveis que podem influenciar o SES ou fazer parte de índices de vulnerabilidade mais amplos (como o IVS), mas não compõem a definição estrita de SES.\n\nAlternativa (c) INCORRETA: Esta alternativa é uma generalização imprecisa. Embora a hipertensão arterial tenha maior prevalência e gravidade na população negra devido a uma combinação de fatores genéticos e socioestruturais, o tabagismo e a hipercolesterolemia não seguem obrigatoriamente esse padrão de maior frequência em relação a todos os outros grupos étnicos. A prevalência desses fatores varia significativamente conforme a região geográfica e o contexto cultural, não sendo uma regra epidemiológica universal para a etnia negra.\n\nAlternativa (d) INCORRETA: O erro aqui reside na inclusão da doença de Parkinson. Existe uma forte correlação documentada entre baixa escolaridade e baixos índices sociais com o aumento do risco de demência de Alzheimer e doenças cerebrovasculares (como o AVC), uma vez que a escolaridade contribui para a reserva cognitiva e o controle de fatores de risco vasculares. No entanto, para a doença de Parkinson, essa associação com determinantes sociais não é clara nem comprovada na literatura médica; o Parkinson possui uma etiologia mais ligada a fatores genéticos e exposições ambientais específicas (como agrotóxicos), sem uma relação direta estabelecida com o IDS ou IVS.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:17.706Z"
+  },
+  {
+    "id": "AJUDA_38470c4c-5733-400a-acaa-670b7354343a",
+    "originalId": "38470c4c-5733-400a-acaa-670b7354343a",
+    "statement": "Um motociclista foi trazido pelo SAMU, vítima de colisão com automóvel, tendo ocorrido ejeção e queda sobre o guidão. Encontra-se estável hemodinamicamente, com murmúrio vesicular abolido no hemitórax esquerdo, cuja expansibilidade está diminuída, e a saturação de O2 é de 89%, com Frequência Respiratória= 26 irpm. Observa-se crepitação no esterno. A respeito do quadro apresentado, qual a alternativa CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A drenagem pleural imediata não está indicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve-se realizar tomografia de imediato para pesquisar lesões associadas ao trauma de alta energia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A monitorização cardíaca não é primordial neste caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O paciente pode evoluir com insuficiência respiratória e arritmia cardíaca.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO caso descreve um trauma torácico contuso de alta energia (ejeção e impacto contra o guidão). O paciente apresenta sinais de comprometimento respiratório (saturação de 89%, taquipneia de 26 irpm, murmúrio abolido e expansibilidade diminuída à esquerda), sugerindo pneumotórax ou hemotórax. A crepitação esternal é um sinal patognomônico de fratura do esterno, o que indica que uma grande força foi aplicada diretamente sobre o mediastino e os pulmões.\n\nEXPLICAÇÃO DA ALTERNATIVA D (CORRETA)\nA fratura do esterno, indicada pela crepitação, é um marcador de gravidade no trauma torácico. O impacto necessário para fraturar o esterno pode causar lesões subjacentes, como a contusão miocárdica e a contusão pulmonar. A contusão pulmonar pode evoluir com piora da troca gasosa nas primeiras 24 a 48 horas, levando à insuficiência respiratória. Já a contusão miocárdica pode gerar instabilidade elétrica no coração, resultando em arritmias cardíacas que exigem monitorização e tratamento.\n\nEXPLICAÇÃO DA ALTERNATIVA A (INCORRETA)\nA afirmação de que a drenagem não está indicada está incorreta. O paciente apresenta sinais clínicos evidentes de comprometimento pleural (murmúrio abolido e expansibilidade diminuída) associados à hipóxia (89% de saturação). Em um cenário de trauma, na presença de pneumotórax ou hemotórax sintomático, a drenagem de tórax é o tratamento definitivo indicado após a avaliação inicial e confirmação por imagem (radiografia ou ultrassom FAST).\n\nEXPLICAÇÃO DA ALTERNATIVA B (INCORRETA)\nEmbora a tomografia seja o padrão-ouro para detalhar lesões torácicas, ela não deve ser realizada de imediato em um paciente com saturação de 89%. O protocolo de atendimento ao trauma (ATLS) prioriza a abordagem das etapas A (vias aéreas) e B (respiração) antes de exames complexos. Primeiro, deve-se garantir a oxigenação e realizar exames rápidos à beira do leito (como radiografia de tórax ou e-FAST). O deslocamento para a tomografia só é seguro após a estabilização respiratória inicial.\n\nEXPLICAÇÃO DA ALTERNATIVA C (INCORRETA)\nPelo contrário, a monitorização cardíaca é primordial e obrigatória. A suspeita de fratura esternal impõe o rastreio de lesão cardíaca contusa. O paciente deve ser monitorado continuamente com oximetria e eletrocardiograma (ECG) para detecção de arritmias, além de ser necessário realizar um ECG de 12 derivações e, se houver alterações, dosagem de marcadores de necrose miocárdica.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:17.706Z"
+  },
+  {
+    "id": "AJUDA_384bfaf0-3657-406f-be6b-95a6402c9082",
+    "originalId": "384bfaf0-3657-406f-be6b-95a6402c9082",
+    "statement": "Doença falciforme é enfermidade genética com a maior prevalência no Brasil. Jovens e adultos que não fizeram o Teste do Pezinho para detecção da doença podem realizar o rastreamento através de exame de sangue chamado eletroforese de hemoglobina, que é oferecido às gestantes e aos parceiros durante o pré-natal, e disponibilizado no SUS para toda a população. Sobre esse exame, associe as hemoglobinas (coluna da esquerda) aos significados de seus achados à eletroforese (coluna da direita).\n\n1 - Hb AA\n2 - Hb A2\n3 - Hb F\n4 - Hb AS\n5 - Hb SS, SC e SD\n\n( ) Níveis aumentados (> 3,5%) podem indicar talassemia beta menor.\n( ) A pessoa apresenta traço falcêmico.\n( ) Costuma representar 95-98% da hemoglobina total em adultos.\n\nA sequência numérica correta, de cima para baixo, da coluna da direita, é",
+    "options": [
+      {
+        "id": "A",
+        "text": "1 - 4 - 2",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2 - 4 - 1",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "2 - 5 - 3",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "3 - 5 - 2",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, é fundamental compreender a composição normal da hemoglobina no adulto e as alterações qualitativas e quantitativas detectadas na eletroforese de hemoglobina.\n\nAnálise das lacunas da coluna da direita:\n\nPrimeira lacuna: Níveis aumentados (> 3,5%) podem indicar talassemia beta menor.\nA hemoglobina A2 (Hb A2) é composta por duas cadeias alfa e duas cadeias delta. Em um adulto normal, ela representa uma pequena porcentagem da hemoglobina total, geralmente entre 2% e 3,5%. Na beta-talassemia minor (ou traço talassêmico beta), ocorre uma redução na síntese das cadeias beta da hemoglobina. Como mecanismo compensatório, o organismo aumenta a produção de cadeias delta, elevando os níveis de Hb A2 acima de 3,5%. Portanto, esta lacuna corresponde ao número 2 (Hb A2).\n\nSegunda lacuna: A pessoa apresenta traço falcêmico.\nO traço falcêmico é a condição de heterozigose para a hemoglobina S. Isso significa que o indivíduo herdou um gene para a hemoglobina A (normal) de um progenitor e um gene para a hemoglobina S (mutado) do outro. No exame de eletroforese, esse perfil é identificado como Hb AS. Diferente da anemia falciforme (Hb SS), o portador de traço falcêmico geralmente é assintomático. Portanto, esta lacuna corresponde ao número 4 (Hb AS).\n\nTerceira lacuna: Costuma representar 95-98% da hemoglobina total em adultos.\nA hemoglobina A (Hb AA), formada por duas cadeias alfa e duas cadeias beta, é a principal hemoglobina presente no ser humano após os seis meses de vida. Em condições de normalidade, ela deve compor a grande maioria do total de hemoglobinas no sangue periférico do adulto. Portanto, esta lacuna corresponde ao número 1 (Hb AA).\n\nAssociação correta e análise das alternativas:\n\nA sequência numérica correta é 2 - 4 - 1.\n\nAlternativa a) 1 - 4 - 2: Incorreta. Atribui à Hb AA (normal) a característica da talassemia e à Hb A2 a predominância no adulto.\n\nAlternativa b) 2 - 4 - 1: Correta. Segue a descrição técnica exata de cada componente de hemoglobina conforme os padrões de normalidade e patológicos.\n\nAlternativa c) 2 - 5 - 3: Incorreta. Embora a primeira lacuna esteja correta, a segunda confunde doença falciforme (Hb SS, SC, SD) com traço falcêmico, e a terceira sugere que a hemoglobina fetal (Hb F) é a predominante no adulto.\n\nAlternativa d) 3 - 5 - 2: Incorreta. Sugere que a hemoglobina fetal (Hb F) indica talassemia beta menor na primeira lacuna e que a Hb A2 é a predominante no adulto na terceira.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:17.706Z"
+  },
+  {
+    "id": "AJUDA_385c43e2-5e80-409f-bf52-a9d7a293cfa4",
+    "originalId": "385c43e2-5e80-409f-bf52-a9d7a293cfa4",
+    "statement": "Mulher de 52 anos, obesa, diabética, comparece ao pronto-atendimento queixando-se de febre alta e aparecimento de grande ferida dolorosa em região da vulva há 3 dias. Ao exame físico, observa-se a lesão abaixo: Sobre o diagnóstico e o tratamento desta condição, assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A fasceíte necrotizante do períneo, também chamada de gangrena de Fournier, corresponde a uma infecção monomicrobiana das partes moles do períneo causada por cepas multi-resistentes de Staphylococcus aureus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de uma infecção polimicrobiana causada por espécies anaeróbias (mais comumente Bacteroides e Clostridium) em combinação com enterobactérias (por exemplo, Escherichia coli, Klebsiella, Proteus).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Diabetes, obesidade, hipertensão arterial sistêmica e neoplasias malignas são considerados os principais fatores de risco associados e o tratamento depende da compensação clínica destas condições.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O desbridamento cirúrgico deve ser realizado idealmente em até 72 horas do diagnóstico, associado a antibioticoterapia de amplo espectro e terapias de curativo a vácuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — mulher, obesa, diabética, com febre alta e uma lesão vulvar extensamente necrótica observada na imagem — é patognomônico de Gangrena de Fournier, uma forma de fasciíte necrotizante que atinge a região perineal. A imagem mostra claramente a destruição tecidual, com áreas de necrose (escaras enegrecidas) que ultrapassam a pele e atingem tecidos profundos, características dessa emergência cirúrgica.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A Gangrena de Fournier é classicamente uma infecção polimicrobiana (Fasciíte Necrotizante Tipo I). A descrição de uma infecção monomicrobiana por *Staphylococcus aureus* ou *Streptococcus pyogenes* refere-se à Fasciíte Necrotizante Tipo II, que é menos comum na região perineal e geralmente associada a traumas em extremidades.\n\nAlternativa (b) Correta: A etiologia da condição é baseada na sinergia entre diferentes classes de microrganismos. Bactérias aeróbias Gram-negativas (como a *E. coli* e a *Klebsiella*) consomem o oxigênio do tecido, reduzindo o potencial de oxirredução local e permitindo a proliferação agressiva de bactérias anaeróbias (como *Bacteroides* e *Clostridium*). Essa combinação produz enzimas e toxinas que causam endarterite obliterante e trombose de pequenos vasos, levando à necrose isquêmica das fáscias e da gordura subcutânea.\n\nAlternativa (c) Incorreta: Embora os fatores de risco citados (diabetes, obesidade e neoplasias) estejam corretos e sejam fundamentais na fisiopatologia por comprometerem a imunidade e a microcirculação, a segunda parte da alternativa está errada. O tratamento não pode aguardar a \"compensação clínica\" dessas condições. Pelo contrário, a infecção descompensa o diabetes e a hemodinâmica da paciente, e o controle do foco infeccioso através de cirurgia imediata é o que permite a posterior estabilização clínica.\n\nAlternativa (d) Incorreta: O desbridamento cirúrgico deve ser realizado de forma emergencial, o mais rápido possível após o diagnóstico (idealmente em poucas horas). Aguardar 72 horas é inaceitável, pois a infecção progride em velocidade alarmante (vários centímetros por hora ao longo das fáscias), e o atraso cirúrgico é o fator que mais eleva a taxa de mortalidade. O curativo a vácuo é uma excelente terapia adjuvante, mas apenas após a limpeza cirúrgica completa e controle da fase aguda.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/1a52c0ede64efe5f959de64789f2200dd719421a49f074d843d522ceccb665a2.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_385c43e2-5e80-409f-bf52-a9d7a293cfa4_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:18.122Z"
+  },
+  {
+    "id": "AJUDA_385d7276-f6a6-419e-9322-f449392fbf29",
+    "originalId": "385d7276-f6a6-419e-9322-f449392fbf29",
+    "statement": "A mortalidade infantil é a terminologia para designar todos os óbitos de uma determinada população num período de tempo ocorridos em crianças",
+    "options": [
+      {
+        "id": "A",
+        "text": "nas quatro primeiras semanas de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "menores de um ano de idade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "de um a quatro anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "menores de cinco anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O conceito de mortalidade infantil e seus componentes é fundamental para a saúde coletiva e para provas de residência médica. A questão exige o conhecimento da definição técnica e cronológica estabelecida por organismos internacionais, como a Organização Mundial da Saúde (OMS), e pelo Ministério da Saúde.\n\nAlternativa A - Incorreta. O período que compreende as quatro primeiras semanas de vida (especificamente do nascimento até os 27 dias completos) define a mortalidade neonatal. A mortalidade neonatal é uma subdivisão da mortalidade infantil, mas não a define em sua totalidade.\n\nAlternativa B - Correta (Gabarito). A mortalidade infantil é definida como o óbito de crianças menores de um ano de idade (ou seja, de 0 a 364 dias de vida). Esse indicador é utilizado para calcular o Coeficiente de Mortalidade Infantil, que relaciona o número de óbitos nessa faixa etária para cada 1.000 nascidos vivos, sendo um dos principais termômetros das condições de vida, saneamento e assistência à saúde de uma população.\n\nAlternativa C - Incorreta. Óbitos que ocorrem entre um e quatro anos de idade fazem parte do componente pós-infantil da mortalidade na infância. Crianças nesta faixa etária já ultrapassaram o limite cronológico que define a mortalidade infantil.\n\nAlternativa D - Incorreta. O termo utilizado para designar óbitos em menores de cinco anos de idade é mortalidade na infância (ou mortalidade de menores de 5 anos). Embora a mortalidade infantil esteja inserida dentro desse grupo, os conceitos são distintos para fins estatísticos e epidemiológicos.\n\nEm resumo, a mortalidade infantil divide-se em neonatal (até 27 dias) e pós-neonatal (de 28 dias até menos de um ano), totalizando todos os óbitos de menores de um ano.",
+    "exam": "ICC prova I",
+    "year": 2026,
+    "banca": "Instituto Consulplan",
+    "uf": "CE",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57ff64ac3e364ab451f15c4699969e7e685c5084b3cb2672821fbb0209555d0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fe30c370cd0153c47609c4d0b8ca8f60e98c4ecde012efd5b890e35d3c9af975.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:18.122Z"
+  },
+  {
+    "id": "AJUDA_38620c38-8fa0-425a-94f9-eedc3d6507aa",
+    "originalId": "38620c38-8fa0-425a-94f9-eedc3d6507aa",
+    "statement": "Menino de 3 anos e 6 meses, previamente hígido, foi trazido pela mãe à UBS por febre de até 38º C e cansaço acima do habitual, quadro iniciado há cerca de 5 dias. Na noite anterior, relatou ter percebido manchas roxas em pernas e braços. Ao exame físico, a criança encontrava-se um pouco prostrada, com palidez cutaneomucosa, equimoses e petéquias nas faces interna e externa dos membros superiores e inferiores. O fígado era palpável 3 cm abaixo do rebordo costal direito. Demais aspectos do exame não revelaram particularidades. Considerando a principal hipótese diagnóstica, qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar sorologias para hepatite, enzimas hepáticas e perfil de coagulação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar hemograma, leucograma e contagem de plaquetas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar ultrassonografia abdominal, pesquisa de sangue oculto nas fezes e EQU.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar o caso para a assistente social por suspeita de maus-tratos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito apresenta uma criança de 3 anos e 6 meses com uma tríade clássica e preocupante na pediatria: sintomas constitucionais (febre e fadiga), sinais de falência medular (palidez sugerindo anemia e petéquias/equimoses sugerindo trombocitopenia) e infiltração extramedular (hepatomegalia). Diante desse cenário, a principal hipótese diagnóstica é uma neoplasia hematológica, sendo a Leucemia Linfoide Aguda (LLA) a mais comum nessa faixa etária.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o fígado esteja aumentado, o quadro de palidez e manchas roxas associado à febre direciona o raciocínio para uma patologia sistêmica da medula óssea. Hepatites virais agudas costumam cursar com icterícia e sintomas gastrointestinais, e não justificariam a palidez e a febre prolongada com manifestações hemorrágicas de forma tão característica quanto uma hemopatia.\n\nAlternativa b) Correta. O hemograma completo (que engloba a série vermelha, o leucograma e a contagem de plaquetas) é o exame inicial fundamental. Ele permitirá identificar a presença de anemia, trombocitopenia e alterações nos glóbulos brancos (como leucocitose ou leucopenia, além da possível presença de blastos no sangue periférico), confirmando a suspeita de infiltração medular e direcionando para o diagnóstico de leucemia.\n\nAlternativa c) Incorreta. A ultrassonografia abdominal poderia confirmar a hepatomegalia ou detectar esplenomegalia, mas não define a etiologia do quadro. A pesquisa de sangue oculto e o exame comum de urina (EQU) são exames inespecíficos que não auxiliam na investigação da principal hipótese diagnóstica (neoplasia hematológica) neste momento.\n\nAlternativa d) Incorreta. Embora manchas roxas em crianças devam sempre levantar a suspeita de maus-tratos no diagnóstico diferencial, a presença de febre há 5 dias, prostração, palidez importante e hepatomegalia são sinais clínicos claros de uma doença orgânica sistêmica. Encaminhar apenas para o serviço social sem realizar a investigação médica imediata atrasaria o diagnóstico de uma condição potencialmente fatal.\n\nPortanto, a conduta mais adequada e imediata diante da suspeita de insuficiência medular por infiltração neoplásica é a solicitação do hemograma completo.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Leucemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:18.122Z"
+  },
+  {
+    "id": "AJUDA_3866026d-36da-4d05-9d72-f4d98c6bedcb",
+    "originalId": "3866026d-36da-4d05-9d72-f4d98c6bedcb",
+    "statement": "A PORTARIA GM/MS Nº 3.493, DE 10 DE ABRIL DE 2024 altera a Portaria de Consolidação GM/MS nº 6, de 28 de setembro de 2017, para instituir nova metodologia de cofinanciamento federal do Piso de Atenção Primária à Saúde no âmbito do Sistema Único de Saúde (SUS). Constituem componentes do cofinanciamento federal de apoio à manutenção da Atenção Primária à Saúde (APS):",
+    "options": [
+      {
+        "id": "A",
+        "text": "Três componentes: Fixo para manutenção das equipes- eSF e eAP e recurso de implantação para eSF, eAP, eSB e eMulti; de vínculo e acompanhamento territorial para as eSF e Eap e de qualidade para as eSF, eAP, eSB e eMulti.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Três componentes: Capitação ponderada, pagamento por desempenho e incentivo para ações estratégicas para eSF, eAP, eSB e eMulti. E, mais recentemente, Per Capita de base Populacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Seis componentes: Fixo- manutenção das eSF e eAP e recurso de implantação para eSF, eAP, eSB e eMulti; de vínculo e acompanhamento territorial para as eSF e eAP; componente de qualidade para as eSF, eAP, eSB e eMulti; para implantação e manutenção de programas, serviços, profissionais e outras composições de equipes que atuam na APS; para Atenção à Saúde Bucal, e de Per capita de base populacional para ações no âmbito da APS.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Quatro componentes: Capitação ponderada, pagamento por desempenho e incentivo para ações estratégicas para eSF, eAP, eSB e eMulti. E, mais recentemente, Per Capita de base Populacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Portaria GM/MS nº 3.493, de 10 de abril de 2024, alterou significativamente a lógica de financiamento da Atenção Primária à Saúde (APS) no Brasil, substituindo o modelo anterior do programa Previne Brasil. A nova legislação estabelece que o cofinanciamento federal para o Piso de Atenção Primária à Saúde é composto por seis eixos ou componentes principais.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) Incorreta: A alternativa cita corretamente os componentes fixo, de vínculo/acompanhamento territorial e de qualidade. No entanto, o erro está em afirmar que constituem apenas três componentes. A nova portaria estabelece seis componentes no total, omitindo o financiamento para saúde bucal, para programas estratégicos e o componente per capita.\n\nAlternativa (b) Incorreta: Esta opção descreve a metodologia do modelo anterior (Portaria nº 2.979/2019), que utilizava os termos capitação ponderada e pagamento por desempenho. O novo modelo de 2024 extinguiu a capitação ponderada e reformulou a estrutura de repasses, não se limitando à descrição apresentada.\n\nAlternativa (c) Correta: Esta alternativa lista integralmente os seis componentes previstos no Artigo 7º da Portaria de Consolidação GM/MS nº 6/2017, conforme a redação dada pela Portaria 3.493/2024. São eles:\n1. Componente fixo: Destinado à manutenção das Equipes de Saúde da Família (eSF) e Equipes de Atenção Primária (eAP), além de recursos para implantação de novas equipes (eSF, eAP, eSB e eMulti).\n2. Componente de vínculo e acompanhamento territorial: Focado no incentivo para eSF e eAP.\n3. Componente de qualidade: Voltado para eSF, eAP, eSB e eMulti.\n4. Componente para implantação e manutenção de programas, serviços, profissionais e outras composições: Engloba o que antes eram as ações estratégicas.\n5. Componente para Atenção à Saúde Bucal (eSB).\n6. Componente per capita de base populacional: Recurso calculado com base na população total do município, e não apenas na população cadastrada.\n\nAlternativa (d) Incorreta: Assim como a alternativa (b), esta opção está desatualizada. Ela menciona quatro componentes, misturando a nomenclatura antiga (capitação ponderada e desempenho) com o novo componente per capita, o que não corresponde à organização sistemática de seis componentes definida pela nova legislação de 2024.\n\nPortanto, a alternativa (c) é a única que reflete fielmente a nova estrutura de financiamento da Atenção Primária no SUS.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:18.122Z"
+  },
+  {
+    "id": "AJUDA_386ba354-9afa-4162-b67d-e459d100351d",
+    "originalId": "386ba354-9afa-4162-b67d-e459d100351d",
+    "statement": "Um estudo clínico prospectivo, randomizado e multicêntrico:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É suficiente para definir uma questão clínica e deve ser imediatamente incorporado nos guidelines específicos e servir para pronta mudança universal de condutas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É a melhor ferramenta para estudos das doenças raras, para evitar que essas sejam tratadas apenas com base em relatos de casos ou opinião de especialistas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É menos difundido em cirurgia, por ser mais laborioso e custoso do que situações clínicas, além de diversos desafios práticos e metodológicos para sua realização no âmbito da cirurgia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tem valor quase nulo com meros de 1000 pacientes arrolados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A: Incorreta. Embora o ensaio clínico randomizado e multicêntrico seja o padrão-ouro para evidência, um único estudo raramente é suficiente para determinar uma mudança universal imediata de conduta. A prática baseada em evidências valoriza a reprodutibilidade dos resultados. Geralmente, as diretrizes (guidelines) exigem a confirmação por outros estudos ou revisões sistemáticas com metanálise antes de consolidar uma recomendação como verdade absoluta.\n\nAlternativa B: Incorreta. O ensaio clínico randomizado é justamente muito difícil de ser realizado em doenças raras, pois exige um grande número de participantes para atingir poder estatístico. Para doenças de baixa prevalência, as ferramentas mais práticas e utilizadas são os estudos de caso-controle, registros de pacientes e séries de casos, devido à dificuldade de recrutamento para um braço de intervenção prospectivo.\n\nAlternativa C: Correta. Na cirurgia, a realização de estudos randomizados e multicêntricos é proporcionalmente menor do que na clínica médica. Isso ocorre devido a diversos fatores: a dificuldade de padronizar uma intervenção que depende da habilidade individual de cada cirurgião (viés do operador), os desafios éticos e práticos em realizar o cegamento (como o uso de cirurgias simuladas ou sham surgery) e o alto custo logístico de acompanhar procedimentos invasivos em múltiplos centros.\n\nAlternativa D: Incorreta. Não existe um número mágico de pacientes, como 1.000, para validar um estudo. O tamanho da amostra é determinado por um cálculo estatístico prévio baseado na hipótese do estudo, na magnitude do efeito esperado e no poder estatístico desejado. Muitos ensaios clínicos com poucas centenas de pacientes possuem alto rigor metodológico e são capazes de demonstrar benefícios significativos de uma intervenção.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:28:18.122Z"
+  }
+]

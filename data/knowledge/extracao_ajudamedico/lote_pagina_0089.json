@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_1806dfe3-9d3a-4e87-a291-4792a0a9c291",
+    "originalId": "1806dfe3-9d3a-4e87-a291-4792a0a9c291",
+    "statement": "Leia o caso a seguir.\n\nHomem, 52 anos, comparece à unidade básica de saúde para avaliação de exames solicitados em um check-up de rotina. Refere ser ex-usuário de drogas injetáveis e ter recebido transfusão sanguínea na década de 1990. Está assintomático e sem doenças conhecidas. Os resultados laboratoriais mostram elevação discreta das transaminases e sorologia reagente para o anti-HCV.\n\nDiante do caso apresentado, qual conduta deve ser adotada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pedir a pesquisa de RNA do HCV.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Repetir a sorologia anti-HCV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar genotipagem viral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar tratamento empírico com antivirais de ação direta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "EXPLICAÇÃO DO CASO CLÍNICO\n\nO paciente apresenta um quadro epidemiológico clássico para hepatite C, com histórico de transfusão sanguínea antes de 1992 (período em que não havia testes de triagem rigorosos para esse vírus em bancos de sangue) e uso de drogas injetáveis. A sorologia anti-HCV reagente indica que o paciente teve contato com o vírus em algum momento da vida, gerando anticorpos. No entanto, o anti-HCV não diferencia uma infecção ativa (atual) de uma cura espontânea ou de uma cicatriz sorológica. Cerca de 20% a 30% dos indivíduos que se infectam com o HCV conseguem eliminar o vírus espontaneamente na fase aguda, mas permanecem com o anti-HCV positivo pelo resto da vida.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) Correta: Diante de um anti-HCV positivo, o protocolo clínico exige a confirmação da infecção ativa. O exame indicado para isso é a pesquisa do RNA do vírus (HCV-RNA) por métodos moleculares (como o PCR). Se o RNA for detectado, confirma-se que o vírus está presente e em replicação, caracterizando a hepatite C crônica e indicando a necessidade de avaliação para tratamento.\n\nAlternativa (b) Incorreta: Repetir a sorologia é uma conduta desnecessária. O anti-HCV funciona como um marcador de exposição definitiva. Se o teste já foi reagente e o paciente possui fatores de risco claros, o resultado é confiável quanto à exposição prévia, e a repetição não ajudará a diagnosticar se a doença está ativa no momento.\n\nAlternativa (c) Incorreta: A genotipagem viral é um exame utilizado para identificar o genótipo do vírus (1, 2, 3, etc.), o que auxiliava na escolha do esquema de antivirais. Contudo, ela só faz sentido se soubermos que o vírus está presente no sangue. Portanto, o HCV-RNA deve vir antes. Além disso, com os novos tratamentos pangenotípicos (que tratam todos os genótipos com a mesma eficácia), a genotipagem perdeu o papel de destaque que tinha anteriormente no início da investigação.\n\nAlternativa (d) Incorreta: Não existe tratamento empírico para hepatite C. Os antivirais de ação direta (DAAs) são medicamentos específicos e de alto custo, que devem ser prescritos apenas após a confirmação laboratorial da viremia (presença do RNA viral). Tratar um paciente apenas com base no anti-HCV seria um erro, pois ele pode fazer parte do grupo que se curou espontaneamente e não possui mais o vírus.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Hepatites Virais"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:55.772Z"
+  },
+  {
+    "id": "AJUDA_1807fbd3-e558-4394-b785-22d43741fbdd",
+    "originalId": "1807fbd3-e558-4394-b785-22d43741fbdd",
+    "statement": "Paciente masculino, 20 anos, história de acidente motociclistico em alta velocidade na rodovia, tendo sido ejetado por cerca de 5 metros, com traumatismo cranioencefálico e torácico. Apresenta-se confuso, dispneico, queixando-se de falta de ar. Ao exame físico, apresenta ausculta abolida em hemitórax esquerdo, distensão de veias do pescoço, com PA = 80X50mmHg, FC = 130 bpm, FR = 40 ipm e saturação de O2 de 75% com máscara de oxigênio a 12 litros por minuto. A conduta imediata durante o atendimento inicial deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Drenagem de tórax",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Descompressão torácica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Toracotomia exploradora",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Intubação orotraqueal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descrito é uma emergência médica clássica: o pneumotórax hipertensivo. O paciente apresenta a tríade diagnóstica fundamental: insuficiência respiratória grave (dispneia, taquipneia e saturação de 75%), sinais de choque obstrutivo (hipotensão, taquicardia e distensão venosa jugular) e exame físico torácico compatível (ausculta abolida unilateralmente).\n\nEm situações de trauma, a distensão das veias do pescoço associada à hipotensão e à ausência de sons respiratórios em um dos lados do tórax confirma o diagnóstico de pneumotórax hipertensivo. O aumento da pressão no espaço pleural desloca o mediastino, comprimindo as veias cavas e diminuindo o retorno venoso, o que leva ao choque e à morte rápida se não houver intervenção.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Drenagem de tórax): Incorreta. Embora a drenagem de tórax em selo d'água seja o tratamento definitivo para o pneumotórax, ela demanda tempo para preparação de material e técnica. Em um paciente com instabilidade hemodinâmica grave (PA 80 x 50 mmHg), a prioridade absoluta é o alívio imediato da pressão intratorácica. A drenagem deve ser realizada obrigatoriamente, mas logo após a manobra de descompressão imediata.\n\nAlternativa B (Descompressão torácica): Correta. De acordo com os protocolos do ATLS (Advanced Trauma Life Support), o pneumotórax hipertensivo é um diagnóstico clínico e não deve aguardar exames radiológicos. A conduta imediata é a descompressão torácica para transformar o pneumotórax hipertensivo em um pneumotórax simples. Isso pode ser feito via descompressão por agulha (preferencialmente no 5º espaço intercostal, na linha axilar anterior em adultos) ou por descompressão digital (toracostomia digital). Esta manobra salva a vida do paciente ao permitir o retorno do débito cardíaco.\n\nAlternativa C (Toracotomia exploradora): Incorreta. A toracotomia (abertura cirúrgica ampla do tórax) é indicada em situações específicas como hemotórax maciço, lesões de grandes vasos ou trauma cardíaco penetrante com parada cardiorrespiratória presenciada. Não é a conduta inicial para pneumotórax hipertensivo.\n\nAlternativa D (Intubação orotraqueal): Incorreta. Realizar a intubação orotraqueal e iniciar a ventilação por pressão positiva antes de descomprimir o tórax em um paciente com pneumotórax hipertensivo pode ser fatal. A pressão positiva enviada pelo ventilador ou pelo Ambu aumentará ainda mais a pressão no espaço pleural, agravando rapidamente o colapso cardiovascular e levando à parada cardiorrespiratória em atividade elétrica sem pulso (AESP). A descompressão deve sempre preceder a ventilação por pressão positiva neste cenário.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:55.772Z"
+  },
+  {
+    "id": "AJUDA_180a1be1-8fd5-404f-9f13-d545d60b3004",
+    "originalId": "180a1be1-8fd5-404f-9f13-d545d60b3004",
+    "statement": "Adolescente de 15 anos com fibrose cística comparece ao pronto-socorro com aumento da tosse produtiva, expectoração purulenta e febre iniciada há três dias. Ele relata piora da dispneia, e sua mãe, que o acompanha, observa que ele tem tido mais dificuldade para realizar suas atividades diárias. Ao exame físico, o paciente apresenta moderado desconforto respiratório, com taquipneia (frequência respiratória de 32 irpm), sibilos bilaterais e diminuição do murmúrio vesicular nas bases pulmonares. A saturação de oxigênio em ar ambiente é de 87%. \n\nConsiderando o quadro clínico apresentado, a abordagem inicial é",
+    "options": [
+      {
+        "id": "A",
+        "text": "internar o paciente; iniciar oxigenoterapia e antibioticoterapia de amplo espectro intravenosa; e solicitar cultura de escarro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "internar o paciente; iniciar corticoterapia sistêmica; e realizar drenagem postural imediata com fisioterapia respiratória intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar nebulização com broncodilatadores; prescrever antibioticoterapia oral domiciliar; e agendar acompanhamento em ambulatório especializado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar tomografia de tórax, gasometria arterial e exames séricos para avaliar melhor o grau de comprometimento pulmonar antes de iniciar tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Comentário do Especialista:\n\nEsta questão aborda o manejo de uma exacerbação pulmonar aguda em um paciente com fibrose cística (FC). O quadro clínico é de gravidade, caracterizado por insuficiência respiratória iminente (saturação de 87% em ar ambiente e frequência respiratória de 32 irpm) e sinais flogísticos de infecção (febre e escarro purulento).\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Esta é a conduta mais adequada frente aos sinais de gravidade. A hipoxemia (saturação < 90%) impõe a necessidade imediata de oxigenoterapia. A taquipneia acentuada e o desconforto respiratório moderado justificam a internação hospitalar para monitorização. O tratamento de escolha para exacerbações graves em pacientes com FC envolve antibioticoterapia de amplo espectro por via intravenosa, visando patógenos comuns como *Pseudomonas aeruginosa* e *Staphylococcus aureus*. A coleta de cultura de escarro é fundamental para o ajuste terapêutico baseado na sensibilidade bacteriana.\n\nAlternativa B (Incorreta): Embora a fisioterapia respiratória seja um pilar no tratamento da fibrose cística, a prioridade absoluta inicial em um paciente hipoxêmico e febril é a estabilização ventilatória com oxigênio e o combate à infecção com antibióticos. A corticoterapia sistêmica pode ser usada em casos específicos (como hiper-reatividade brônquica associada), mas não substitui a necessidade crítica de antibioticoterapia e oxigênio nesta apresentação.\n\nAlternativa C (Incorreta): O manejo domiciliar com antibióticos orais é reservado apenas para exacerbações leves, em pacientes sem sinais de desconforto respiratório e com saturação de oxigênio preservada. O paciente em questão apresenta critérios claros de internação devido à gravidade do comprometimento respiratório.\n\nAlternativa D (Incorreta): Embora exames de imagem e laboratoriais (como gasometria arterial e tomografia) sejam úteis para avaliar a extensão da doença, a conduta inicial não deve retardar o tratamento. Em situações de desconforto respiratório e hipoxemia, a estabilização do paciente (oxigênio) e o início da terapêutica empírica (antibióticos) devem ocorrer simultaneamente ou imediatamente após a avaliação clínica inicial. O diagnóstico de exacerbação na FC é eminentemente clínico.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Emergências Pediátricas",
+      "Fibrose Cística"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:55.772Z"
+  },
+  {
+    "id": "AJUDA_180b4ce2-8fb8-4176-a1f7-d08ad2db23d1",
+    "originalId": "180b4ce2-8fb8-4176-a1f7-d08ad2db23d1",
+    "statement": "Um homem de 58 anos de idade, hipertenso, buscou a emergência hospitalar apresentando dor torácica há 40 minutos, do tipo opressiva, irradiada para o braço esquerdo. A avaliação médica revelou PA = 128 mmHg x 78 mmHg, e o ECG mostrou supradesnivelamento de ST em DII, DIII e aVF. Com base nesse caso clínico, assinale a alternativa que apresenta a conduta imediata mais adequada para esse paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração intravenosa de betabloqueador como primeira medida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Liberação para investigação ambulatorial por boa estabilidade hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicação de reperfusão imediata por trombólise ou angioplastia primária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Administração de nitroglicerina sublingual sem necessidade de reperfusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso:\n\nO paciente apresenta um quadro clínico e eletrocardiográfico de Infarto Agudo do Miocárdio com Supradesnivelamento do segmento ST (IAMCSST). A dor torácica típica iniciada há 40 minutos, associada ao achado de supra de ST nas derivações DII, DIII e aVF, caracteriza um infarto de parede inferior em fase hiperaguda. Em casos de IAMCSST, a prioridade absoluta é a restauração do fluxo sanguíneo na artéria coronária obstruída.\n\nAlternativa a) Incorreta. O betabloqueador não é a medida de primeira linha no manejo agudo do infarto com supra de ST. Embora tenha papel no tratamento a longo prazo, seu uso intravenoso na fase aguda deve ser evitado, especialmente antes da estabilização clínica. No infarto de parede inferior, há um risco aumentado de bradicardia e bloqueios atrioventriculares, o que contraindica o uso agressivo dessa medicação inicialmente.\n\nAlternativa b) Incorreta. O IAMCSST é uma emergência médica de alta gravidade. A estabilidade hemodinâmica inicial (PA 128x78 mmHg) não garante segurança, pois o paciente corre risco iminente de arritmias letais, choque cardiogênico e morte. A investigação ambulatorial é absolutamente contraindicada neste momento.\n\nAlternativa c) Correta. Esta é a conduta padrão-ouro. Diante de um infarto com supra de ST dentro da janela terapêutica (menos de 12 horas de início dos sintomas), a prioridade é a reperfusão imediata. Isso deve ser feito preferencialmente por angioplastia primária (em até 90 a 120 minutos do contato médico) ou por trombólise química com fibrinolíticos, caso o serviço de hemodinâmica não esteja disponível no tempo adequado.\n\nAlternativa d) Incorreta. A nitroglicerina é um nitrato utilizado para o alívio da dor e controle da pressão arterial, mas não trata a obstrução arterial e não substitui a necessidade de reperfusão. Além disso, em infartos de parede inferior, o uso de nitratos exige cautela extrema ou deve ser evitado até que se descarte o acometimento do ventrículo direito, pois a redução da pré-carga pode causar queda severa do débito cardíaco e hipotensão grave.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:55.772Z"
+  },
+  {
+    "id": "AJUDA_1813a299-c198-44bc-971b-b05a58cc1a67",
+    "originalId": "1813a299-c198-44bc-971b-b05a58cc1a67",
+    "statement": "É considerado atraso do desenvolvimento neuropsicomotor para um lactente de 4 meses:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não engatinhar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não rolar no leito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não sustentar a cabeça.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não sentar sem apoio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não engatinhar",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, é fundamental conhecer os marcos do desenvolvimento neuropsicomotor (DNPM) estabelecidos por órgãos como a Sociedade Brasileira de Pediatria e o Ministério da Saúde. O desenvolvimento ocorre no sentido cefalocaudal e do simples para o complexo.\n\nAnálise das alternativas:\n\nAlternativas A e E: Incorretas. O engatinhar é um marco motor que ocorre geralmente entre o 8º e o 10º mês de vida. Algumas crianças, inclusive, pulam essa etapa e passam diretamente para a posição de pé e marcha, não sendo um critério de atraso aos 4 meses.\n\nAlternativa B: Incorreta. A habilidade de rolar (mudar da posição supina para a prona ou vice-versa) começa a se manifestar por volta dos 4 aos 6 meses. Embora alguns lactentes comecem aos 4 meses, sua ausência isolada nesta idade exata não é classificada como um atraso patológico imediato nos protocolos de triagem.\n\nAlternativa C: Correta. O sustento cefálico é um dos marcos mais precoces e obrigatórios. Espera-se que o lactente tenha o controle firme da cabeça entre o 2º e o 3º mês de vida. Se, aos 4 meses, a criança ainda não sustenta a cabeça (hipotonia cervical ou falta de controle motor), isso é considerado um sinal de alerta para atraso do desenvolvimento neuropsicomotor, exigindo investigação imediata.\n\nAlternativa D: Incorreta. Sentar sem apoio é um marco típico do 6º ao 7º mês de vida. Aos 4 meses, o lactente ainda não possui estabilidade de tronco suficiente para se manter sentado sem suporte.\n\nEm resumo, o sustento cefálico é a base para os marcos motores subsequentes. Como ele deve estar consolidado até os 3 meses, a sua ausência aos 4 meses define o atraso na questão apresentada.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:55.772Z"
+  },
+  {
+    "id": "AJUDA_18277944-097c-4602-8872-f5788cc9126b",
+    "originalId": "18277944-097c-4602-8872-f5788cc9126b",
+    "statement": "O tratamento da tuberculose pulmonar em crianças apresenta particularidades em relação ao tratamento em adultos. Considerando as diretrizes do Ministério da Saúde do Brasil, qual das seguintes afirmações sobre o tratamento da tuberculose pulmonar em crianças está INCORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O esquema básico de tratamento para crianças com tuberculose pulmonar sensível aos fármacos é composto por quatro medicamentos: rifampicina, isoniazida, pirazinamida e etambutol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A rifampicina, um dos medicamentos do esquema básico, pode causar coloração alaranjada da urina, suor e lágrimas, o que deve ser informado aos pais ou responsáveis pela criança.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A isoniazida, outro medicamento do esquema básico, pode causar neuropatia periférica como efeito adverso, sendo necessária a suplementação com piridoxina (vitamina B6) para prevenir essa complicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A duração do tratamento da tuberculose pulmonar em crianças é geralmente mais curta do que em adultos, variando de 4 a 6 meses, dependendo da forma clínica da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Em caso de tuberculose pulmonar resistente aos fármacos, o tratamento é mais complexo e prolongado, podendo envolver a combinação de diferentes medicamentos e a hospitalização da criança.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) - INCORRETA: Segundo as diretrizes do Ministério da Saúde do Brasil, o esquema básico para o tratamento da tuberculose pulmonar em crianças menores de 10 anos de idade é composto por apenas três medicamentos: Rifampicina (R), Isoniazida (H) e Pirazinamida (Z) durante a fase de ataque (2 meses). O Etambutol (E) é excluído dessa faixa etária devido ao risco de neurite óptica e à dificuldade de monitorar a acuidade visual e a visão de cores em crianças pequenas. O esquema de quatro fármacos (RHZE) é reservado para adultos e adolescentes a partir de 10 anos. Portanto, esta é a alternativa que deve ser marcada.\n\nAlternativa (b) - CORRETA: A Rifampicina tem como característica farmacológica a capacidade de tingir secreções corporais. É fundamental orientar os responsáveis de que a urina, o suor, as lágrimas e até a saliva podem adquirir uma cor alaranjada ou avermelhada. Isso é um efeito benigno e esperado, mas que causa grande susto se não for previamente avisado.\n\nAlternativa (c) - CORRETA: A Isoniazida interfere no metabolismo da piridoxina (vitamina B6), o que pode levar à neuropatia periférica (dormência, formigamento e dor nas extremidades). Embora não seja rotina para todas as crianças, a suplementação com piridoxina é recomendada em grupos de risco, como crianças desnutridas, infectadas pelo HIV ou em aleitamento materno cujas mães estejam em tratamento.\n\nAlternativa (d) - CORRETA: De acordo com as atualizações recentes do Ministério da Saúde e da Organização Mundial da Saúde (OMS), casos de tuberculose pulmonar não grave em crianças e adolescentes podem ser tratados com um regime encurtado de 4 meses. O tratamento padrão de 6 meses (2 meses de fase de ataque e 4 meses de fase de manutenção) continua sendo a regra para formas graves ou conforme avaliação clínica, validando a afirmação de que a duração varia de 4 a 6 meses.\n\nAlternativa (e) - CORRETA: O tratamento da tuberculose resistente (TB-DR) em pediatria é significativamente mais difícil. Ele exige o uso de drogas de segunda linha, que podem ser mais tóxicas, e o tempo de tratamento é estendido (podendo chegar a 18-24 meses em esquemas antigos ou 6-9 meses em esquemas mais novos e específicos). A complexidade do manejo e a necessidade de monitoramento rigoroso muitas vezes justificam o acompanhamento em centros de referência ou a hospitalização inicial.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Tuberculose",
+      "Tuberculose na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:55.772Z"
+  },
+  {
+    "id": "AJUDA_182836db-f565-4a51-8a36-c91fc5431f45",
+    "originalId": "182836db-f565-4a51-8a36-c91fc5431f45",
+    "statement": "OBSTETRÍCIA E GINECOLOGIA\n\nPaciente, 17 anos de idade, procura atendimento médico porque nunca menstruou. A paciente não tem histórico de vícios, dismorfismos ou alterações fenotípicas. Ao exame físico, observa-se que o IMC está dentro da normalidade, o desenvolvimento das mamas é adequado (Tanner 5) e não há pelos pubianos (Tanner 1).\nDiante desse quadro, considere as afirmativas a seguir.\n\nI. A principal causa de amenorreia primária, com desenvolvimento mamário normal, mas ausência de pelos pubianos, é a síndrome de insensibilidade androgênica.\nII. A ausência de pelos pubianos sugere um defeito na produção ou na ação dos andrógenos.\nIII. O tratamento dessa condição inclui a remoção das gônadas após a puberdade devido ao risco de malignização.\nIV. O cariótipo esperado para essa paciente seria 46 XY, indicando disgenesia gonadal.\n\nAssinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Somente as afirmativas I e II são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Somente as afirmativas I e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Somente as afirmativas III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Somente as afirmativas I, II e III são corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Somente as afirmativas II, III e IV são corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso apresenta uma adolescente com amenorreia primária e uma dissociação importante no desenvolvimento de caracteres sexuais secundários:\n1. Mamas Tanner 5 (Telarca adequada): Indica presença de estrogênio e de seus receptores.\n2. Pelos Tanner 1 (Ausência de pubarca): Indica falha na ação ou produção de andrógenos (testosterona/DHT).\n\nEssa combinação clássica (telarca presente + pubarca ausente) em quadros de amenorreia primária direciona o diagnóstico para a Síndrome de Insensibilidade Androgênica Completa (outrora chamada de Síndrome de Morris). Nesta condição, o indivíduo possui cariótipo 46,XY e testículos funcionais (que produzem testosterona e Hormônio Anti-Mülleriano - HAM), mas os receptores periféricos de andrógenos não funcionam. Como o HAM é produzido, não existem órgãos genitais internos femininos (útero e tubas); como o receptor de andrógeno é defeituoso, não há desenvolvimento de pelos ou genitália externa masculina; por fim, a testosterona é convertida perifericamente em estrogênio (aromatização), o que promove o desenvolvimento das mamas.\n\nANÁLISE DAS AFIRMATIVAS\n\nI. CORRETA: A Síndrome de Insensibilidade Androgênica (SIA) é, de fato, a principal causa diagnóstica quando há desenvolvimento mamário (estrogênio presente) com ausência total ou mínima de pelos pubianos (falha na ação androgênica). No diagnóstico diferencial de amenorreia primária com mamas presentes, a outra causa comum seria a Agenesia Mülleriana (Síndrome de Rokitansky), mas nesta última os pelos são normais, pois a ação da testosterona adrenal e o cariótipo (46,XX) estão preservados.\n\nII. CORRETA: A pubarca (surgimento de pelos) depende diretamente da presença de níveis adequados de andrógenos e, fundamentalmente, da sensibilidade dos receptores de andrógenos no folículo piloso. A ausência de pelos indica que o eixo androgênico está comprometido, seja por falta de produção (como em alguns defeitos enzimáticos raros) ou por resistência à sua ação (como na SIA).\n\nIII. CORRETA: Na SIA, as gônadas são testículos que geralmente se localizam no canal inguinal ou são intra-abdominais. Existe um risco aumentado de desenvolvimento de tumores germinativos (como o gonadoblastoma e disgerminoma). A recomendação é a gonadectomia profilática. No entanto, o procedimento deve ser realizado apenas após a puberdade completa, para permitir que a conversão natural da testosterona em estrogênio promova o crescimento ósseo e o desenvolvimento das mamas sem a necessidade de reposição hormonal exógena precoce. Após a cirurgia, a reposição estrogênica torna-se obrigatória para manter a saúde óssea.\n\nIV. INCORRETA: Embora o cariótipo esperado para a Síndrome de Insensibilidade Androgênica seja realmente 46,XY, a afirmativa erra ao classificar a condição como \"disgenesia gonadal\". Na SIA, os testículos são bem formados e funcionais (produzem hormônios); o defeito está no receptor. Na disgenesia gonadal (como na Síndrome de Swyer ou de Turner), as gônadas são malformadas (\"em fita\") e não produzem hormônios sexuais, o que levaria a uma ausência de mamas (infantilismo sexual), o que contradiz o exame físico da paciente (Tanner 5).\n\nCONCLUSÃO\n\nAs afirmativas I, II e III estão corretas, o que valida a alternativa (d).",
+    "exam": "UEL",
+    "year": 2025,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/96208eeea8719bd9f66e162c338bbbc3780a5342b2c61515ee12f044e3e23b5a.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5cf220c1a8309cd4cabfc64f246fd943f6dc7941b1a88a5b11ac826c88df6f54.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:55.772Z"
+  },
+  {
+    "id": "AJUDA_1833ecbe-2da1-4968-8afd-75ca80d79808",
+    "originalId": "1833ecbe-2da1-4968-8afd-75ca80d79808",
+    "statement": "Em relação ao transtorno de oposição desafiante, analise as assertivas a seguir:\n\nI. Caracteriza-se por padrão de humor raivoso e/ou irritável, de comportamento questionador e/ou desafiante ou índole vingativa, com duração de pelo menos 6 meses.\nII. Considerando que, em geral, os sintomas do transtorno são mais evidentes nas interações com adultos ou pares que o indivíduo conhece bem, eles podem não ficar tão evidentes no exame clínico.\nIII. A presença de sintomas do transtorno em múltiplos contextos é um indicativo de gravidade.\nIV. Os sintomas de humor raivoso e/ou irritável respondem pela maior parte do risco para transtorno da conduta.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas III e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I, II, III e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Transtorno de Oposição Desafiante (TOD) é caracterizado no DSM-5 por um padrão persistente de humor raivoso/irritável, comportamento questionador/desafiante ou índole vingativa, que deve durar pelo menos 6 meses e se manifestar na interação com pelo menos uma pessoa que não seja um irmão. Portanto, a assertiva I está correta.\n\nA assertiva II está correta, pois indivíduos com TOD frequentemente manifestam seus sintomas apenas com figuras familiares ou de autoridade com as quais convivem (como pais e professores), sendo muito comum que apresentem comportamento adaptado e preservado durante a avaliação clínica no consultório.\n\nA assertiva III está correta, já que o DSM-5 define a gravidade do TOD pelo número de ambientes em que os sintomas aparecem: leve quando ocorrem em apenas um ambiente (por exemplo, em casa), moderada em pelo menos dois ambientes e grave quando presentes em três ou mais ambientes.\n\nA assertiva IV está incorreta. Na psicopatologia do TOD, os sintomas de comportamento desafiante/questionador e índole vingativa são os principais preditores para a progressão para Transtorno da Conduta. Por outro lado, a dimensão de humor raivoso e irritável está associada prioritariamente ao risco futuro de transtornos afetivos e de ansiedade.\n\nAnálise das alternativas:\n\na) Incorreta. Desconsidera a assertiva III, que também é verdadeira de acordo com os critérios de gravidade do DSM-5.\n\nb) Incorreta. Desconsidera as assertivas I e II, que são verdadeiras, e considera a assertiva IV, que contém erro conceitual prognóstico.\n\nc) Correta. Identifica perfeitamente que as assertivas I, II e III são verdadeiras e que a assertiva IV é falsa.\n\nd) Incorreta. Inclui a assertiva IV, que está incorreta em relação aos fatores preditores de transtorno da conduta.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:55.772Z"
+  },
+  {
+    "id": "AJUDA_183400ef-18a0-4ecb-876c-92c8995eda13",
+    "originalId": "183400ef-18a0-4ecb-876c-92c8995eda13",
+    "statement": "Criança de 5 anos de idade é levada à unidade de saúde com queixa de prurido anal noturno persistente há 4 dias. A mãe relata que sua filha está mais irritada e não consegue dormir bem. Ao exame físico, não há alterações significativas, exceto por discreta vermelhidão perianal. Suspeitando do diagnóstico, o pediatra solicita o teste de Grahan, cujo resultado foi positivo.\n\nO diagnóstico mais provável e o respectivo tratamento de escolha para essa condição são os seguintes:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ascardíase – albendazol dose única, com repetição após 2 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Giardíase – metronidazol dose única, sem repetição do esquema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Enterobíase – albendazol dose única, com repetição após 2 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Teníase – nitazoxanida por 5 dias, sem repetição do esquema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Amebíase – metronidazol dose única, sem repetição do esquema.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve uma criança com prurido anal noturno, irritabilidade e distúrbios do sono. Esse é o quadro clássico da enterobíase (também conhecida como oxiuríase), causada pelo helminto *Enterobius vermicularis*. A fêmea do parasita migra para a região perianal durante a noite para depositar seus ovos, o que causa a coceira intensa. O diagnóstico é confirmado pelo teste de Graham (método da fita gomada), que identifica os ovos na região perianal, já que o exame parasitológico de fezes comum costuma ser negativo para essa patologia.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. A ascaridíase é causada pelo *Ascaris lumbricoides*. O quadro clínico costuma envolver dor abdominal, náuseas ou sintomas respiratórios (Síndrome de Loeffler). O diagnóstico é feito pelo exame parasitológico de fezes (EPF) convencional, e não pelo teste de Graham.\n\nb) Incorreta. A giardíase é causada pelo protozoário *Giardia lamblia*, que acomete o intestino delgado, gerando diarreia esteatorreica (fezes gordurosas), má absorção e dor abdominal. O tratamento de escolha para giardíase envolve metronidazol por 5 a 7 dias ou tinidazol/secnidazol em dose única.\n\nc) Correta. A enterobíase manifesta-se tipicamente com prurido anal noturno. O tratamento de escolha pode ser feito com albendazol (400 mg) ou mebendazol. A recomendação fundamental é a repetição da dose após 2 semanas. Isso ocorre porque os medicamentos matam os vermes adultos, mas não eliminam os ovos presentes no ambiente ou na região perianal. A repetição visa atingir os vermes que eclodiram dos ovos após o primeiro tratamento, fechando o ciclo biológico e evitando a reinfecção.\n\nd) Incorreta. A teníase (causada pela *Taenia solium* ou *saginata*) geralmente é diagnosticada pela visualização de proglotes nas fezes. O tratamento padrão é feito com praziquantel ou niclosamida em dose única. A nitazoxanida é um antiparasitário de amplo espectro, mas não é o esquema preferencial para teníase com essa posologia.\n\ne) Incorreta. A amebíase (*Entamoeba histolytica*) apresenta-se como colite amebiana (diarreia com muco e sangue) ou abscesso hepático. O metronidazol é utilizado para tratar as formas teciduais (invasivas), mas o esquema para amebíase não é de dose única (geralmente utiliza-se por 5 a 10 dias).\n\nGABARITO: Alternativa (c) – Enterobíase – albendazol dose única, com repetição após 2 semanas.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Parasitoses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:55.772Z"
+  },
+  {
+    "id": "AJUDA_184bf242-84a6-4fab-b667-6c8b7e3b626f",
+    "originalId": "184bf242-84a6-4fab-b667-6c8b7e3b626f",
+    "statement": "Um gestor de saúde está avaliando as atividades de sua equipe na Atenção Primária à Saúde (APS) e identifica a necessidade de intensificar as práticas de promoção da saúde e prevenção de doenças. Qual abordagem abaixo está em consonância com a proposta de Promoção e Vigilância em Saúde na Atenção Primária à Saúde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Implementar campanhas anuais de vacinação, sem considerar outras medidas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Focar no atendimento clínico individual, relegando ações coletivas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Integrar ações de promoção, prevenção, recuperação e reabilitação, considerando o indivíduo em seu contexto comunitário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Delegar todas as atividades de promoção e prevenção à equipe de enfermagem, desobrigando médicos de tais funções.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Gabarito: Alternativa (c)\n\nA questão aborda os fundamentos da Atenção Primária à Saúde (APS) no Brasil, fundamentada na Política Nacional de Atenção Básica (PNAB). O cerne da APS é a oferta de uma atenção integral, contínua e organizada, que ultrapassa o simples tratamento de patologias agudas.\n\nAnálise das alternativas:\n\na) Incorreta. A vacinação é uma estratégia vital de prevenção primária, mas a vigilância e a promoção da saúde na APS são muito mais amplas. Limitar as ações a campanhas anuais ignora o monitoramento contínuo de doenças crônicas, a vigilância epidemiológica territorial e as ações educativas permanentes necessárias para impactar a saúde da população.\n\nb) Incorreta. O modelo focado apenas no atendimento clínico individual é conhecido como modelo biomédico ou flexneriano. A APS propõe uma ruptura com essa visão, equilibrando a clínica individual com ações coletivas e intervenções sobre os determinantes sociais da saúde (saneamento, moradia, alimentação, lazer), que são fundamentais para a promoção da saúde.\n\nc) Correta. Esta alternativa define o princípio da Integralidade. A equipe de APS deve estar preparada para atuar em todos os níveis de cuidado: promovendo a saúde (estilo de vida, educação), prevenindo doenças (imunização, rastreio), recuperando a saúde (tratamento clínico) e reabilitando o paciente. Além disso, a abordagem deve ser centrada na pessoa, considerando seu contexto familiar, social e a comunidade onde ela vive (territorialização).\n\nd) Incorreta. O trabalho na APS é essencialmente multiprofissional e interdisciplinar. Atividades de promoção e prevenção não são exclusivas de uma categoria profissional. O médico, assim como o enfermeiro, o técnico de enfermagem e o agente comunitário de saúde, possui atribuições específicas e compartilhadas na educação em saúde e na prevenção de agravos, sendo vedada a delegação total dessas funções a apenas um membro da equipe.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Vigilância em Saúde",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:10:55.772Z"
+  }
+]

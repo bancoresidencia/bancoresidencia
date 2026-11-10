@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_7e18eca1-d370-4039-90b1-f215a5206274",
+    "originalId": "7e18eca1-d370-4039-90b1-f215a5206274",
+    "statement": "A utilização de múltiplos testes é uma prática clínica comum na busca do aprimoramento da acurácia diagnóstica. Mantida inalterada a probabilidade pré teste, comparativamente ao desempenho dos testes aplicados isoladamente, com a utilização de testes em paralelo, pode-se afirmar que se espera:",
+    "options": [
+      {
+        "id": "A",
+        "text": "o aumento da sensibilidade e do valor preditivo negativo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a redução da sensibilidade e o aumento do valor preditivo negativo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o aumento da especificidade e do valor preditivo positivo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a redução da especificidade e o aumento do valor preditivo positivo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Explicação:\n\nO conceito central desta questão envolve as estratégias de interpretação de múltiplos testes diagnósticos: testes em série e testes em paralelo. No uso de testes em paralelo, o paciente é considerado positivo se apresentar um resultado positivo em qualquer um dos exames realizados simultaneamente.\n\nAlternativa (a): Correta. Ao realizar testes em paralelo, o objetivo principal é ampliar a capacidade de detecção da doença, ou seja, não deixar passar nenhum caso. Como basta um dos testes ser positivo para o indivíduo ser classificado como doente, a sensibilidade global aumenta (menos doentes passam despercebidos). Consequentemente, se todos os resultados dos testes forem negativos, a segurança de que o paciente realmente não tem a doença é muito maior, o que eleva o Valor Preditivo Negativo (VPN).\n\nAlternativa (b): Incorreta. A utilização de testes em paralelo promove o aumento da sensibilidade, e não a sua redução. A redução da sensibilidade é uma característica observada nos testes realizados em série, nos quais o critério de positividade é mais rigoroso (o paciente precisa ser positivo em todos os exames para ser considerado doente).\n\nAlternativa (c): Incorreta. O aumento da especificidade e do Valor Preditivo Positivo (VPP) ocorre quando utilizamos testes em série, pois essa estratégia visa confirmar o diagnóstico e reduzir os falsos-positivos. Nos testes em paralelo, a especificidade na verdade diminui, pois há uma chance maior de um indivíduo saudável apresentar pelo menos um resultado alterado em um dos vários exames.\n\nAlternativa (d): Incorreta. Embora a especificidade realmente diminua em testes paralelos, o Valor Preditivo Positivo (VPP) também sofre redução. Isso acontece porque o aumento no número de resultados falsos-positivos (decorrente da queda da especificidade) diminui a probabilidade de que um teste positivo represente, de fato, a presença da doença.\n\nResumo para fixação:\n\nTestes em Paralelo: Aumentam a Sensibilidade e o Valor Preditivo Negativo. Diminuem a Especificidade e o Valor Preditivo Positivo. São úteis quando o objetivo é a triagem (screening).\n\nTestes em Série: Aumentam a Especificidade e o Valor Preditivo Positivo. Diminuem a Sensibilidade e o Valor Preditivo Negativo. São úteis quando o objetivo é a confirmação diagnóstica para evitar tratamentos desnecessários.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:05.241Z"
+  },
+  {
+    "id": "AJUDA_7e1c43bf-1777-4c3d-bdc4-b406a89f5fde",
+    "originalId": "7e1c43bf-1777-4c3d-bdc4-b406a89f5fde",
+    "statement": "Mulher, 35 anos, com diagnóstico prévio de artrite reumatoide, inicia quadro insidioso de tosse seca e fadiga. Exame físico: estertores em velcro bibasais. Tomografia computadorizada (TC) do tórax: fibrose com faveolamento e bronquiectasias de tração, principalmente em bases. A principal hipótese diagnóstica é pneumonia intersticial:",
+    "options": [
+      {
+        "id": "A",
+        "text": "não específica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "criptogênica em organização",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "linfocítica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "não usual",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda as manifestações pulmonares da artrite reumatoide (AR), especificamente a doença intersticial pulmonar. O quadro clínico de tosse seca, fadiga e estertores finos (tipo velcro) aponta para um processo fibrótico pulmonar. O segredo da questão está na interpretação dos achados da tomografia computadorizada (TC) de alta resolução.\n\nAlternativa a) Incorreta. A pneumonia intersticial não específica (NSIP) é, de fato, muito frequente em pacientes com doenças do tecido conjuntivo. No entanto, o padrão radiológico da NSIP costuma apresentar opacidades em vidro fosco predominantes e simétricas, muitas vezes com preservação da região subpleural imediata. O faveolamento (honeycombing), descrito no enunciado, é um achado raro ou ausente na NSIP.\n\nAlternativa b) Incorreta. A pneumonia em organização (antigamente chamada de BOOP) apresenta-se clinicamente de forma mais aguda ou subaguda e radiologicamente caracteriza-se por consolidações peribronquiais ou subpleurais, frequentemente migratórias. Não é um padrão de fibrose com faveolamento e bronquiectasias de tração.\n\nAlternativa c) Incorreta. A pneumonia intersticial linfocítica (LIP) é uma condição raramente associada à AR, sendo muito mais típica da síndrome de Sjögren. Na TC, a LIP manifesta-se classicamente com áreas de vidro fosco e cistos pulmonares profundos de paredes finas, e não com faveolamento basal.\n\nAlternativa d) Correta. A pneumonia intersticial não usual (UIP) é o padrão clássico da fibrose pulmonar idiopática, mas também ocorre frequentemente na artrite reumatoide. Os critérios tomográficos para o padrão UIP são: presença de faveolamento (honeycombing), bronquiectasias e bronquiolectasias de tração, com distribuição predominantemente basal e subpleural (periférica). O enunciado descreve exatamente esses achados (faveolamento e bronquiectasias de tração em bases), o que torna a pneumonia intersticial não usual a principal hipótese diagnóstica. Vale ressaltar que, na artrite reumatoide, o padrão UIP está associado a um pior prognóstico em comparação ao padrão NSIP.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Artrite Reumatoide",
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:05.241Z"
+  },
+  {
+    "id": "AJUDA_7e29ae63-3155-46de-b1ff-991ef080811c",
+    "originalId": "7e29ae63-3155-46de-b1ff-991ef080811c",
+    "statement": "Mylena, 42 anos, fuma 50 cigarros/dia desde os 16 anos. Seu Fagerström é igual a 10. Na escala de razões para fumar, declara que fuma para controlar o peso, para mediar situações de estresse e ansiedade e porque o cigarro é uma companhia. Diz que não consegue nem imaginar tentar parar de fumar e que, por isso, nunca tentou fazê-lo. Declara não se ver sem o cigarro. Recentemente, Mylena foi diagnosticada com neoplasia de pulmão.\nNesse caso, a abordagem a essa fumante deve considerar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "uso de vapers para iniciar o processo de mudança;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cessação do tabagismo sem uso de suporte farmacoterápico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "cessação do tabagismo com uso de reposição de nicotina apenas;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "entrevista motivacional, com o suporte comportamental e farmacoterápico necessário;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "prescrição de bupropiona para cessação do tabagismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão apresenta o caso de uma paciente com dependência gravíssima de nicotina (Fagerström 10) e em estágio de pré-contemplação (não considera parar de fumar), agravado por um diagnóstico recente de câncer de pulmão. A abordagem deve ser integral e baseada em evidências.\n\nAnálise das alternativas:\n\na) Incorreta. O uso de vapes (cigarros eletrônicos) não é recomendado como estratégia de cessação pelas diretrizes brasileiras (SBPT) e pela ANVISA. Além de manterem a dependência química da nicotina, os dispositivos eletrônicos de entrega de nicotina possuem riscos à saúde ainda em estudo e não demonstraram superioridade sobre as terapias farmacológicas convencionais.\n\nb) Incorreta. Pacientes com Fagerström elevado (maior ou igual a 5) ou que fumam mais de 20 cigarros ao dia têm indicação formal de suporte farmacológico. Tentar a cessação sem medicamentos em uma paciente com pontuação máxima (10) e com comorbidades psíquicas associadas (ansiedade e estresse) resulta em altíssimas taxas de insucesso e sofrimento por abstinência.\n\nc) Incorreta. Embora a Terapia de Reposição de Nicotina (TRN) seja um pilar do tratamento, em casos de dependência muito elevada, a combinação de terapias (como TRN de longa duração + TRN de curta duração, ou TRN + bupropiona) costuma ser mais eficaz. Além disso, focar apenas na parte química ignora o estágio motivacional e o forte componente comportamental da paciente.\n\nd) Correta. Esta é a abordagem padrão-ouro. Como a paciente está em fase de pré-contemplação, a Entrevista Motivacional é a técnica indicada para ajudá-la a identificar ambivalências e progredir para o estágio de contemplação. O suporte comportamental (Terapia Cognitivo-Comportamental) ajudará a lidar com os gatilhos (estresse, peso, solidão), e o suporte farmacoterápico é indispensável devido à gravidade da dependência física.\n\ne) Incorreta. A prescrição de bupropiona isoladamente é insuficiente. O tratamento do tabagismo não deve ser apenas medicamentoso, mas sim uma combinação de intervenção comportamental e farmacoterapia. Além disso, a estratégia inicial para alguém que \"não consegue se ver sem o cigarro\" deve passar obrigatoriamente pelo aconselhamento motivacional antes ou em conjunto com a prescrição.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:05.241Z"
+  },
+  {
+    "id": "AJUDA_7e2f6517-807f-4395-965b-9c131e77396c",
+    "originalId": "7e2f6517-807f-4395-965b-9c131e77396c",
+    "statement": "O médico de família e comunidade (MFC) observou que um paciente, de 50 anos, que ele havia referenciado para o cardiologista, por conta de uma hipertensão arterial de difícil controle, não retornou mais à Unidade de Saúde da Família (USF) para seguimento. Como não recebeu nenhuma contrarreferência do cardiologista, entrou em contato para saber sobre a condição de saúde do paciente. O cardiologista informou que o paciente estava bem e que, após a realização de exames, trocou algumas medicações anti-hipertensivas, com estabilização da pressão arterial. Comentou, ainda, que não havia contrarrefenciado o paciente à atenção primária à saúde (APS), pois entendia que o melhor manejo deste agravo é realizado pelo cardiologista. O MFC argumentou que o paciente poderia ser contrarreferenciado à APS e que eles poderiam compartilhar o cuidado dessa pessoa. Considerando a Política Nacional de Atenção Especializada do Sistema Único de Saúde, como pode ser classificada esta prática do cardiologista?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apoio matricial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Classificação de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Efeito velcro.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Gestão de caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a dinâmica de fluxo entre a Atenção Primária à Saúde (APS) e a Atenção Especializada no âmbito do Sistema Único de Saúde (SUS), focando especificamente em uma falha na coordenação do cuidado.\n\nO termo que define a prática descrita é o Efeito Velcro.\n\nAbaixo, a análise detalhada de cada alternativa:\n\na) Apoio matricial: Esta alternativa está incorreta. O apoio matricial (ou matriciamento) é uma metodologia de trabalho complementar à equipe de referência, que visa oferecer suporte técnico-pedagógico e clínico para aumentar a capacidade resolutiva da APS. É uma prática colaborativa e de compartilhamento de saberes, exatamente o oposto da conduta isolacionista adotada pelo cardiologista no caso.\n\nb) Classificação de risco: Esta alternativa está incorreta. A classificação de risco é uma ferramenta utilizada principalmente em portas de urgência e emergência ou na regulação de consultas e exames para priorizar o atendimento de pacientes com base na gravidade clínica e no potencial de complicação, e não no tempo de espera. Não se refere à retenção do paciente no serviço especializado.\n\nc) Efeito Velcro: Esta é a alternativa correta. O \"efeito velcro\" ocorre quando o médico especialista \"prende\" o paciente no nível secundário ou terciário de atenção, mesmo após a estabilização do quadro que motivou o encaminhamento. Nessa situação, o especialista assume o cuidado longitudinal que deveria ser da Atenção Primária, dificultando a contrarreferência e gerando filas desnecessárias na atenção especializada. É uma falha na lógica de redes de atenção à saúde, pois rompe com o princípio de que a APS deve ser a ordenadora do cuidado e o centro de comunicação da rede.\n\nd) Gestão de caso: Esta alternativa está incorreta. A gestão de caso é uma estratégia voltada para pacientes com condições complexas e alta vulnerabilidade, na qual um profissional (gerente de caso) coordena um plano de cuidado singular e multidisciplinar. Embora envolva a articulação entre níveis de atenção, o foco é a organização do cuidado personalizado e não a retenção indevida do paciente pelo especialista por acreditar que seu manejo é superior ao da APS.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:05.241Z"
+  },
+  {
+    "id": "AJUDA_7e34e9ac-36b4-4233-8801-2280f00a9f61",
+    "originalId": "7e34e9ac-36b4-4233-8801-2280f00a9f61",
+    "statement": "Homem de 74 anos, previamente hipertenso e dislipidêmico, comparece ao pronto-socorro por episódios recorrentes de tontura e fraqueza nos últimos dias. Hoje apresentou pré-síncope durante caminhada curta. Exame físico: PA: 118/66 mmHg, FC: 42 bpm. O ECG abaixo foi obtido na admissão. Qual é o diagnóstico mais provável desse traçado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bloqueio atrioventricular de 2º grau tipo Mobitz I.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Bloqueio atrioventricular de 2º grau tipo Mobitz II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Bloqueio atrioventricular de alto grau.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Bloqueio atrioventricular total (3º grau).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Bradicardia sinusal com pausas sinusais prolongadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do ECG e Diagnóstico:\n\nO traçado eletrocardiográfico revela um ritmo em que o intervalo PR (distância entre o início da onda P e o início do complexo QRS) aumenta progressivamente a cada batimento. Após três batimentos com intervalos PR sucessivamente mais longos, observa-se uma quarta onda P que não é seguida por um complexo QRS (onda P bloqueada). Após essa falha, o ciclo se reinicia com um intervalo PR mais curto. Esse comportamento é o sinal patognomônico do fenômeno de Wenckebach.\n\nAnálise das alternativas:\n\na) Correta. O Bloqueio Atrioventricular (BAV) de 2º grau tipo Mobitz I é caracterizado pelo prolongamento progressivo do intervalo PR até que uma onda P seja bloqueada. No traçado, a sequência mostra claramente essa evolução, o que explica a bradicardia (FC de 42 bpm) e os sintomas de baixo débito (tontura e pré-síncope) relatados pelo paciente de 74 anos.\n\nb) Incorreta. No BAV de 2º grau tipo Mobitz II, o bloqueio da onda P ocorre de forma súbita e inesperada. Diferente do Mobitz I, os intervalos PR dos batimentos que conduzem são constantes e fixos, sem o alongamento progressivo visto na imagem.\n\nc) Incorreta. O BAV de alto grau é definido quando duas ou mais ondas P consecutivas deixam de ser conduzidas aos ventrículos (proporção de condução 3:1 ou superior). No eletrocardiograma em questão, apenas uma onda P é bloqueada por vez, mantendo uma relação de condução 4:3 (quatro ondas P para três complexos QRS).\n\nd) Incorreta. No BAV de 3º grau (total), há uma dissociação completa entre átrios e ventrículos. As ondas P e os complexos QRS marcham de forma independente, com intervalos PP e RR regulares, mas sem qualquer relação fixa de intervalo PR. No traçado apresentado, existe uma relação clara e previsível entre a onda P e o QRS antes do bloqueio.\n\ne) Incorreta. Se houvesse uma pausa sinusal, observaríamos a ausência de ondas P durante o período de silêncio elétrico, pois o estímulo nem sequer seria gerado no nó sinusal. No ECG da questão, as ondas P aparecem regularmente, provando que o nó sinusal está funcionando; o problema reside na dificuldade de passagem do estímulo pelo nó atrioventricular.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Bradiarritmias",
+      "Eletrocardiograma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/7563654ffd43a9a4a291b66aa430c92b150873128c17687f845a24c99f3aaf6a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_7e34e9ac-36b4-4233-8801-2280f00a9f61_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:05.751Z"
+  },
+  {
+    "id": "AJUDA_7e3718b8-5b65-4eca-8d6a-7491483beda3",
+    "originalId": "7e3718b8-5b65-4eca-8d6a-7491483beda3",
+    "statement": "Uma criança de 10 anos é levada ao consultório pediátrico devido a preocupações com seu crescimento. Os pais relatam que o filho tem um crescimento mais lento em comparação aos colegas da escola, mas ele continua ativo e saudável, sem queixas significativas. Ao exame físico, a altura da criança está no percentil 10 para a idade, e o peso está no percentil 30. O histórico familiar revela que os pais também tiveram crescimento lento na infância, mas atingiram alturas normais durante a adolescência. Resultados laboratoriais, incluindo exames hormonais, estão dentro dos limites normais e a idade óssea é compatível com a idade cronológica. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deficiência de Hormônio do Crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Retardo Constitucional do Crescimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Turner.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Anemia Ferropriva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente é um menino de 10 anos com queixa de crescimento lento, porém com saúde preservada e exames laboratoriais normais. A altura no percentil 10 e o peso no percentil 30 indicam um crescimento proporcional e dentro da normalidade estatística (que compreende a faixa entre os percentis 3 e 97). O ponto fundamental para o diagnóstico reside na história familiar: os pais também tiveram crescimento lento na infância, mas recuperaram o ritmo na adolescência e atingiram estaturas finais normais. Esse padrão é o que chamamos popularmente de amadurecedores lentos.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. A deficiência de hormônio do crescimento (GH) costuma apresentar uma velocidade de crescimento nitidamente abaixo do normal para a idade, o que levaria a criança a cruzar percentis para baixo no gráfico. Além disso, haveria atraso significativo na idade óssea e níveis baixos de IGF-1 e IGFBP-3 nos exames laboratoriais. O caso descreve exames hormonais normais e uma criança saudável e ativa.\n\nAlternativa b) Correta. O Retardo Constitucional do Crescimento e da Puberdade (RCCP) é considerado uma variante da normalidade. É mais frequente em meninos e caracteriza-se por uma desaceleração do crescimento nos primeiros anos de vida, seguida por uma velocidade de crescimento normal, mas em um percentil mais baixo. A principal característica é o histórico familiar de pais que entraram na puberdade tardiamente e tiveram o estirão de crescimento depois dos colegas, mas que atingiram estaturas finais normais. Nota: Embora o RCCP apresente classicamente um atraso na idade óssea, o histórico dos pais e a normalidade dos exames tornam esta a única resposta plausível.\n\nAlternativa c) Incorreta. A Síndrome de Turner é uma condição genética (geralmente cariótipo 45,X) que afeta exclusivamente indivíduos do sexo feminino. Como o enunciado se refere ao paciente no gênero masculino (o filho), esta alternativa é tecnicamente impossível. Além disso, a síndrome costuma cursar com baixa estatura acentuada e estigmas físicos, como pescoço alado e tórax em escudo.\n\nAlternativa d) Incorreta. Doenças sistêmicas e carências nutricionais, como a anemia ferropriva, podem prejudicar o crescimento. No entanto, essas condições geralmente afetam o ganho de peso antes de comprometer a altura. O enunciado afirma que a criança é saudável, ativa e, crucialmente, que seus resultados laboratoriais estão normais, o que descarta anemias ou outras patologias crônicas.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:05.751Z"
+  },
+  {
+    "id": "AJUDA_7e427ebd-92bc-4829-a447-25389803ab04",
+    "originalId": "7e427ebd-92bc-4829-a447-25389803ab04",
+    "statement": "Paciente masculino, 45 anos, agricultor, morador de uma área rural no interior do Rio Grande do Sul. História Clínica: O paciente foi atendido em um hospital de campanha três semanas após uma enchente que devastou sua comunidade. Ele relata múltiplos problemas de saúde desde que foi deslocado para um abrigo temporário superlotado. Nos últimos sete dias, desenvolveu diarreia aquosa, associada a dores abdominais e vômitos. Além disso, descreve episódios de febre intermitente, cefaleia e dor retro-orbitária. O paciente também apresenta uma lesão puntiforme no pé direito, resultado de uma ferida causada por um pedaço de metal enferrujado durante a enchente. Relata, ainda, dores musculares e cãibras nos últimos dias. Sua esposa, que está no mesmo abrigo, desenvolveu sintomas respiratórios agudos. Ele expressa preocupação com a segurança das filhas adolescentes, temendo violência sexual no abrigo.\nExames Físicos: -PA: 90/60 mmHg -FC:105 bpm -Temperatura:38,4°C. Ao exame físico revela desidratação moderada, abdome doloroso à palpação difusa, lesão puntiforme com eritema e edema no pé direito, além de icterícia leve. História de Saúde: Paciente hipertenso, em uso irregular de medicamentos. Tem histórico de episódios anteriores de dengue, mas nunca apresentou hepatite ou outra doença infecciosa crônica.\n\nAlém dos problemas físicos, o paciente expressa preocupação com a segurança das filhas adolescentes e o risco de violência sexual no abrigo. Qual é a intervenção prioritária para lidar com esse problema de saúde pública em situações de desastres?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Separação dos abrigos por gênero e reforço da segurança no local.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Encaminhamento imediato das adolescentes para tratamento psicológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Treinamento dos profissionais de saúde para identificar sinais de abuso sexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Implementação de um sistema de vigilância comunitária no abrigo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Este caso clínico apresenta um cenário complexo de medicina de desastres, comum após grandes inundações. O paciente apresenta sinais sugestivos de leptospirose (icterícia, febre, mialgia, histórico de contato com enchente), gastroenterite aguda (diarreia e vômitos em abrigo superlotado) e risco de tétano (lesão por metal enferrujado). No entanto, o foco da pergunta é especificamente sobre a gestão da saúde pública e a segurança no abrigo em relação ao risco de violência sexual.\n\nEm situações de desastres naturais e deslocamentos populacionais em massa, a desorganização social, a falta de iluminação e a superlotação nos abrigos elevam drasticamente o risco de violência baseada em gênero. A proteção de grupos vulneráveis, como mulheres e adolescentes, torna-se uma prioridade de saúde pública.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. A intervenção prioritária e imediata em termos de gestão de abrigos é a modificação do ambiente para reduzir riscos. Isso inclui a separação de dormitórios e banheiros por gênero, além de garantir iluminação adequada e segurança física no local. Essas medidas são ações de prevenção primária fundamentais nos protocolos de assistência humanitária e medicina de desastres para mitigar a ocorrência de agressões sexuais.\n\nAlternativa b) Incorreta. O encaminhamento para tratamento psicológico é uma medida importante, porém secundária ou terciária. Ela foca no suporte emocional ou no tratamento após um trauma já ocorrido ou em curso. No contexto de gestão de um abrigo, o foco inicial deve ser a prevenção do evento por meio da segurança do ambiente.\n\nAlternativa c) Incorreta. O treinamento de profissionais de saúde para identificar sinais de abuso é essencial para o diagnóstico e o manejo de casos já ocorridos (notificação e profilaxias), mas não atua na causa-raiz do problema de segurança do abrigo nem impede que novas agressões aconteçam no ambiente imediato.\n\nAlternativa d) Incorreta. Embora a vigilância comunitária possa auxiliar, ela é menos robusta e menos prioritária do que a estruturação física do abrigo (separação por gênero) e o reforço da segurança institucional. Em situações de caos pós-desastre, medidas estruturais e organizacionais diretas são mais eficazes como primeira linha de defesa.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:05.751Z"
+  },
+  {
+    "id": "AJUDA_7e458425-d34e-4c49-83d9-5a86b28d3190",
+    "originalId": "7e458425-d34e-4c49-83d9-5a86b28d3190",
+    "statement": "Menino, 4 anos de idade, apresenta vômitos, cólicas e evacuações com sangue há 2 dias. Passou 10 dias em fazenda de gado, em visita aos avós. Após 5 dias do retorno para casa, iniciou quadro de diarreia aquosa, 3 a 5 evacuações ao dia, por 3 dias e evolui para o quadro atual. Ao exame está hidratado, descorado ++/4+, anictérico, FR = 110 bpm, FR = 24 mrm, Tec = 3 seg. e SatO2 95%. Ausculta cardíaca e pulmonar sem alterações, abdome doloroso à palpação, fígado e baço não palpáveis. Foi realizado hemograma com Hb 7,1 g/dL, Htc 23%, RDW 15, reticulócitos 10% e presença de esquizócitos no esfregaço. Leucócitos 11.000µ/L com distribuição (2-62-2-0-31-3), plaquetas 95.000/mm3, DHL = 380 U/L, Na = 130 mEq/L, K = 3 mEq/L, Ureia = 50 mg/dL e creatinina = 2 mg/dL.\nO diagnóstico pertinente ao quadro e a conduta indicada são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "disenteria por Campylobacter spp; hidratação oral e levofloxacina VO por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "disenteria por Shiguella spp; internação hospitalar e ceftriaxona IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "enterocolite aguda por Yersinia spp; hidratação oral e azitromicina VO por 5 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "diarreia aguda por Salmonella spp, complicada por infecção sistêmica; internação hospitalar, hidratação parenteral e ceftriaxona IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "infecção por E. coli enterohemorrágica, complicada por síndrome hemolítica urêmica; internação para suporte clínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clínico descreve um clássico caso de Síndrome Hemolítica Urêmica (SHU), que é a principal causa de insuficiência renal aguda em crianças. A identificação baseia-se na tríade característica presente nos exames do paciente:\n\n1. Anemia hemolítica microangiopática: observada pela hemoglobina baixa (7,1 g/dL), reticulócitos elevados (10%) e, fundamentalmente, pela presença de esquizócitos (fragmentos de hemácias) no esfregaço de sangue periférico.\n2. Plaquetopenia: contagem de 95.000/mm³.\n3. Lesão renal aguda: creatinina elevada (2 mg/dL) para a idade de 4 anos.\n\nA epidemiologia reforça o diagnóstico: o contato com gado (fazenda) é fator de risco para a infecção pela Escherichia coli produtora de toxina Shiga (STEC/EHEC). O quadro costuma iniciar com diarreia (muitas vezes sanguinolenta) que evolui para a SHU após alguns dias.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o Campylobacter possa causar disenteria, ele não explica a tríade de anemia com esquizócitos, plaquetopenia e insuficiência renal. Além disso, o uso de quinolonas (levofloxacina) não é a conduta de primeira linha para diarreias bacterianas comuns em crianças de 4 anos.\n\nb) Incorreta. A Shigella dysenteriae tipo 1 pode causar SHU, mas a história de contato com gado aponta preferencialmente para E. coli. Mais importante: o tratamento da SHU não foca no uso de ceftriaxona para a disenteria em si, mas sim no suporte clínico das complicações multissistêmicas. O uso de antibióticos na suspeita de SHU por E. coli é controverso e muitas vezes contraindicado, pois pode aumentar a liberação de toxinas.\n\nc) Incorreta. A Yersinia enterocolitica causa dor abdominal intensa (podendo simular apendicite) e diarreia, mas não justifica os achados hematológicos (esquizócitos e plaquetopenia) e a falência renal apresentados.\n\nd) Incorreta. A Salmonella pode causar quadros graves e sepse, mas a evolução com esquizócitos e insuficiência renal aguda isolada sem sinais claros de choque séptico direciona o diagnóstico para a microangiopatia trombótica da SHU, e não para uma infecção sistêmica comum por Salmonella.\n\ne) Correta. O quadro fecha perfeitamente com infecção por E. coli entero-hemorrágica (EHEC) complicada por Síndrome Hemolítica Urêmica. O histórico de fazenda de gado é o gatilho epidemiológico clássico. A conduta é a internação para suporte clínico rigoroso, incluindo controle hidroeletrolítico, manejo da hipertensão e da uremia, e suporte transfusional ou dialítico, se necessário. Antibióticos devem ser evitados nessa condição.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:05.751Z"
+  },
+  {
+    "id": "AJUDA_7e49eaaf-7019-4462-b828-a9c830a982d6",
+    "originalId": "7e49eaaf-7019-4462-b828-a9c830a982d6",
+    "statement": "Criança de quatro anos de idade é admitida no hospital com tosse produtiva e febre há cinco dias. Ao exame físico apresenta taquipneia, murmúrio vesicular abolido na base do pulmão esquerdo e saturação de oxigênio de 88% em ar ambiente. Realizada radiografia de tórax que identificou condensação em base esquerda e derrame pleural moderado. Em relação ao diagnóstico deste caso, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A criança com pneumonia e derrame pleural pode ser tratada com ampicilina, desde que esteja em boas condições clínicas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A ultrassonografia não está indicada por ser uma modalidade de imagem pouco sensível para avaliar o espaço pleural em crianças com pneumonia adquirida na comunidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A vacina pneumocócica 10-valente disponível no Programa Nacional de Imunizações contempla os principais sorotipos de pneumococos causadores de pneumonias na infância",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Está indicada a drenagem do derrame pleural por se tratar de criança menor de 5 anos e estar associado a pneumonia bacteriana",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Essa questão aborda o manejo da pneumonia adquirida na comunidade (PAC) complicada por derrame pleural na infância. Vamos analisar cada alternativa para compreender a lógica diagnóstica e terapêutica:\n\nAlternativa A (Correta): A ampicilina é considerada o tratamento de escolha para crianças hospitalizadas com pneumonia bacteriana não complicada e também para aquelas com derrame pleural parapneumônico em estágio inicial (simples), desde que o paciente apresente estabilidade clínica. O principal agente etiológico envolvido é o Streptococcus pneumoniae (pneumococo), que na maioria das regiões brasileiras ainda apresenta excelente sensibilidade à ampicilina e à penicilina cristalina. Se a criança estiver hemodinamicamente estável, o tratamento inicial focado no pneumococo é a conduta padrão recomendada pelas diretrizes nacionais e pela Sociedade Brasileira de Pediatria.\n\nAlternativa B (Incorreta): A ultrassonografia de tórax é, na verdade, um excelente exame para a avaliação do espaço pleural em crianças. Ela apresenta sensibilidade superior à radiografia convencional para detectar pequenas quantidades de líquido, além de ser fundamental para diferenciar derrame livre de derrame loculado (com presença de septações e fibrina) e orientar a necessidade de procedimentos como a toracocentese ou a drenagem.\n\nAlternativa C (Incorreta): Embora a vacina pneumocócica 10-valente (VPC10), presente no PNI, tenha reduzido drasticamente a incidência de pneumonia invasiva, ela não contempla todos os sorotipos causadores de complicações. Após a introdução da VPC10, observou-se um fenômeno de substituição de sorotipos, com destaque para o 19A e o 3 (que não estão na VPC10, mas estão na VPC13), que são frequentemente associados a casos mais graves e com formação de derrame pleural e empiema.\n\nAlternativa D (Incorreta): A drenagem de tórax não é indicada de forma automática apenas pela idade ou pela presença de pneumonia bacteriana. A indicação de drenagem pleural (colocação de dreno de selo d'água) depende de critérios específicos: derrame volumoso com compressão pulmonar e desvio de mediastino, presença de pus na toracocentese (empiema franco), pH do líquido pleural inferior a 7,2, glicose abaixo de 40-60 mg/dL ou presença de bactérias no Gram ou na cultura do líquido. Derrames moderados em pacientes estáveis podem ser inicialmente manejados apenas com antibioticoterapia sistêmica e observação clínica rigorosa.\n\nResumo do caso: A criança apresenta critérios de gravidade (saturação de 88% e esforço respiratório), o que justifica a internação e a oxigenoterapia. O achado de derrame pleural moderado em uma criança estável permite o início de antibioticoterapia venosa com ampicilina, sendo esta a conduta mais adequada entre as opções apresentadas.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Pneumonia na Infância"
+    ],
+    "difficulty": 93.37411062940907,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:05.751Z"
+  },
+  {
+    "id": "AJUDA_7e536708-7dd4-46a6-8c9f-c2f4b1dd2133",
+    "originalId": "7e536708-7dd4-46a6-8c9f-c2f4b1dd2133",
+    "statement": "Mulher de 52 anos, assintomática, comparece à consulta de rotina. Não possui histórico familiar relevante. Qual das condutas abaixo está de acordo com as recomendações atuais de rastreamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pesquisa anual de sangue oculto nas fezes a partir dos 30 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar endoscopia a cada 5 anos para pacientes acima de 40 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ressonância magnética de mamas a partir dos 50 anos em população geral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colonoscopia a cada 10 anos para rastreamento de câncer colorretal.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda as diretrizes de rastreamento oncológico para uma paciente de 52 anos, classificada como risco habitual (assintomática e sem histórico familiar).\n\nAlternativa (a) Incorreta. O rastreamento do câncer colorretal para a população de risco habitual não deve ser iniciado aos 30 anos. De acordo com as principais diretrizes, como as do Ministério da Saúde e do USPSTF, o início deve ocorrer entre os 45 e 50 anos de idade. Além disso, embora a pesquisa de sangue oculto seja um método válido, a idade proposta na alternativa está equivocada.\n\nAlternativa (b) Incorreta. A endoscopia digestiva alta (EDA) não é preconizada como um exame de rastreamento populacional de rotina para pacientes assintomáticos na população geral. Ela é solicitada com base em sintomas clínicos ou em populações de altíssimo risco para câncer gástrico em regiões endêmicas específicas, o que não se aplica ao caso descrito.\n\nAlternativa (c) Incorreta. A ressonância magnética (RM) de mamas não é o exame de escolha para o rastreamento da população geral. O exame padrão-ouro para o rastreamento do câncer de mama é a mamografia. A RM é reservada para mulheres de alto risco (como portadoras de mutações genéticas, como BRCA1/2, ou com risco calculado muito elevado), geralmente associada à mamografia, e não como método isolado para a população de risco habitual.\n\nAlternativa (d) Correta. A colonoscopia é considerada o padrão-ouro para o rastreamento do câncer colorretal por permitir a visualização direta do cólon e a retirada de lesões precursoras (pólipos). Para indivíduos de risco habitual, as diretrizes recomendam iniciar o rastreamento aos 45 ou 50 anos. Como a paciente tem 52 anos, ela está na faixa etária indicada. Caso o exame de colonoscopia esteja normal, o intervalo de repetição recomendado é a cada 10 anos.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Mama",
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": 55.80549204171814,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:05.751Z"
+  }
+]

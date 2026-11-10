@@ -1,0 +1,494 @@
+[
+  {
+    "id": "AJUDA_6d9a2d18-c883-4faf-bbc3-871f29525978",
+    "originalId": "6d9a2d18-c883-4faf-bbc3-871f29525978",
+    "statement": "Paciente, 75 anos, tabagista, apresenta dispneia, tosse produtiva e febre. Ao exame: confuso, FR 32 irpm, PA 85/55 mmHg e ureia 65 mg/dL. A conduta mais adequada baseada no escore CURB-65 é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratamento ambulatorial com amoxicilina e macrolídeo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Observação em pronto-socorro por 24 horas e reavaliação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internação em enfermaria com antibioticoterapia venosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internação em Unidade de Terapia Intensiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O escore CURB-65 e uma ferramenta classica para estratificacao de risco e definicao do local de tratamento na Pneumonia Adquirida na Comunidade (PAC). Cada um dos seguintes criterios pontua 1 ponto:\n\nC (Confusao mental aguda): presente no paciente (1 ponto).\nU (Ureia maior ou igual a 43 ou 50 mg/dL, a depender da referencia): paciente tem 65 mg/dL (1 ponto).\nR (Frequencia respiratoria maior ou igual a 30 irpm): paciente apresenta 32 irpm (1 ponto).\nB (Blood pressure / Pressao arterial com sistolica menor que 90 mmHg ou diastolica menor ou igual a 60 mmHg): paciente apresenta 85/55 mmHg (1 ponto).\n65 (Idade maior ou igual a 65 anos): paciente tem 75 anos (1 ponto).\n\nO paciente atinge 5 pontos no escore, que e a pontuacao maxima, correspondendo a pneumonia grave com taxa de mortalidade superior a 30%. Pontuacoes de 4 ou 5 indicam necessidade de internacao hospitalar imediata com forte indicacao de Unidade de Terapia Intensiva (UTI), especialmente pela presenca de instabilidade hemodinamica e insuficiencia respiratoria.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. O manejo ambulatorial e reservado para pacientes de baixo risco, com CURB-65 de 0 ou 1 ponto. Um paciente com 5 pontos apresenta alto risco de obito e instabilidade clinica, sendo o tratamento domiciliar absolutamente contraindicado.\n\nAlternativa b: Incorreta. A observacao em pronto-socorro pode ser considerada em pacientes com pontuacao intermediaria (CURB-65 de 2 pontos). Um paciente com hipotensao, confusao mental e taquipneia grave necessita de intervencao intensiva imediata, e nao de conduta expectante.\n\nAlternativa c: Incorreta. A enfermaria e indicada para pacientes com CURB-65 de 2 a 3 pontos sem criterios de gravidade extrema. Pacientes com 4 a 5 pontos e presenca de choque ou iminencia de falencia respiratoria exigem monitorizacao continua, drogas vasoativas e suporte ventilatorio avancado, recursos que a enfermaria nao comporta.\n\nAlternativa d: Correta. A pontuacao de 5 no CURB-65 define pneumonia grave com indicacao de tratamento em UTI. A associacao de hipotensao arterial, confusao mental e taquipneia acentuada reflete quadro de sepse com disfuncoes organicas que requer cuidados intensivos imediatos.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:08.651Z"
+  },
+  {
+    "id": "AJUDA_6da807b4-9991-4d8c-9fcc-943ff3fdeb2d",
+    "originalId": "6da807b4-9991-4d8c-9fcc-943ff3fdeb2d",
+    "statement": "São considerados achados clínicos sugestivos de síndrome coronariana aguda sem supradesnível de segmento ST, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dor torácica típica em repouso ou aos mínimos esforços.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dor torácica típica com duração de até 5 minutos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Dor torácica típica com padrão \"crescendo\".",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dor torácica típica, severa, iniciada nas últimas 2 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Síndrome Coronariana Aguda sem supradesnível do segmento ST (SCASST) engloba a Angina Instável e o Infarto Agudo do Miocárdio sem supradesnível de ST (IAMSSST). O diagnóstico clínico baseia-se na caracterização da dor torácica, que deve sugerir instabilidade hemodinâmica ou de placa aterosclerótica. A questão pede a alternativa que NÃO é um achado típico de síndrome aguda.\n\nAlternativa a) Incorreta. A dor em repouso ou aos mínimos esforços é um dos critérios clássicos da angina instável. Diferentemente da angina estável, na qual a dor surge em esforços previsíveis e cessa com o repouso, na síndrome aguda a dor ocorre mesmo quando a demanda miocárdica de oxigênio é baixa, indicando uma redução crítica na oferta de fluxo sanguíneo. Geralmente, episódios de dor em repouso que sugerem SCASST duram mais de 20 minutos.\n\nAlternativa b) Correta (Gabarito). Esta é a exceção. Dores torácicas típicas de curta duração (geralmente entre 2 e 5 minutos) que são desencadeadas pelo esforço e aliviadas rapidamente pelo repouso ou pelo uso de nitratos sublinguais são características da angina estável. Nas síndromes agudas, espera-se que a dor seja mais prolongada, persistente ou de início muito recente com grande intensidade.\n\nAlternativa c) Incorreta. O padrão \"crescendo\" refere-se à angina previamente estável que sofre uma mudança em suas características: as crises tornam-se mais frequentes, mais intensas, mais prolongadas ou passam a ser desencadeadas por esforços cada vez menores (limiar anginoso reduzido). Esse padrão é um sinal claro de instabilização da placa e define a angina instável.\n\nAlternativa d) Incorreta. A chamada \"Angina de início recente\" (angina de novo) é considerada uma forma de angina instável quando é grave (classe funcional III ou IV da Canadian Cardiovascular Society) e se iniciou em um período inferior a 2 meses. Como a alternativa cita o início nas últimas 2 semanas com caráter severo, ela se enquadra perfeitamente nos critérios clínicos de SCASST.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:08.651Z"
+  },
+  {
+    "id": "AJUDA_6daed276-1d6e-4048-8ac3-08f22584ddc5",
+    "originalId": "6daed276-1d6e-4048-8ac3-08f22584ddc5",
+    "statement": "Paciente, G3P1A1, com gestação de 13 semanas, datada pela ecografia de 8 semanas, procura pronto atendimento devido à queixa de sangramento vaginal iniciado há 3 dias, em pequena quantidade. A tipagem sanguínea anotada no cartão de pré-natal é A negativo. Ela desconhece a tipagem sanguínea de seu parceiro. O exame ginecológico mostra sangue escurecido em moderada quantidade na vagina e colo uterino fechado. É solicitado teste de coombs indireto, cujo resultado é positivo.\nQual a conduta nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alertar paciente sobre a inviabilidade da gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar imunoglobulina anti-RH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar tipagem sanguínea do parceiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar paciente ao pré-natal de alto risco.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Trata-se de gestante Rh negativo, com 13 semanas, apresentando ameaça de abortamento (sangramento vaginal com colo fechado) e Coombs indireto positivo. Esse resultado indica que ela já está aloimunizada, ou seja, já possui anticorpos anti-D circulantes. A sensibilização provavelmente ocorreu em gestação ou abortamento anterior (G3P1A1), possivelmente sem profilaxia adequada.\n\nDiante de uma gestante aloimunizada, a gestação passa a ter risco de doença hemolítica perinatal (anemia fetal, hidropsia, óbito). Por isso, ela precisa de seguimento especializado no pré-natal de alto risco. Esse seguimento inclui titulação seriada dos anticorpos e investigação do Rh fetal, que pode ser feita pela tipagem paterna ou pela pesquisa de DNA fetal livre no sangue materno. Quando os títulos atingem o valor crítico (geralmente 1:16 ou mais), passa-se à vigilância de anemia fetal pela dopplervelocimetria da artéria cerebral média.\n\nAnálise das alternativas:\n\na) Incorreta. O quadro é de ameaça de abortamento: sangramento discreto a moderado e colo fechado. Não há elementos que definam inviabilidade, e a questão não informa ultrassonografia mostrando ausência de batimentos ou gestação não evolutiva. O Coombs positivo também não determina inviabilidade. Ele indica risco fetal, que será acompanhado ao longo da gestação.\n\nb) Incorreta. A imunoglobulina anti-D serve para prevenir a sensibilização e só tem indicação em gestantes Rh negativo com Coombs indireto negativo. Nesse cenário, ela seria indicada inclusive diante do sangramento na ameaça de abortamento. Como a paciente já está sensibilizada, a imunoglobulina não traz benefício.\n\nc) Incorreta como conduta principal. A tipagem do parceiro pode ajudar: se ele for Rh negativo, o feto também será Rh negativo, desde que a paternidade seja certa. Ainda assim, é apenas uma etapa da investigação, que será conduzida no seguimento especializado. A conduta prioritária é o encaminhamento ao alto risco.\n\nd) Correta. Gestante aloimunizada (Coombs indireto positivo) tem gestação de alto risco e deve ser acompanhada em serviço especializado, com titulação de anticorpos e vigilância de anemia fetal.\n\nPonto-chave: Coombs indireto negativo em gestante Rh negativo leva à profilaxia com imunoglobulina anti-D quando indicada (sangramento, procedimentos invasivos, 28 semanas e pós-parto). Coombs indireto positivo significa paciente já sensibilizada, e a conduta é o pré-natal de alto risco, sem imunoglobulina.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:08.651Z"
+  },
+  {
+    "id": "AJUDA_6dafd084-c8c7-4212-a3d2-3a26e7c3d4f9",
+    "originalId": "6dafd084-c8c7-4212-a3d2-3a26e7c3d4f9",
+    "statement": "Ao apresentar dor pélvica e diagnóstico prévio de endometriose, uma mulher com queixa de infertilidade mostra resultado de RM evidenciando endometrioma de 7cm e espessamento de ligamentos uterossacros bilateralmente. Ela deseja realizar apenas tratamento clínico, não pretendendo se submeter à cirurgia. Considerando os problemas identificados, o tratamento clínico pode atuar no(a):",
+    "options": [
+      {
+        "id": "A",
+        "text": "controle da dor",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "aumento da fertilidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "diminuição do endometrioma",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "redução do espessamento ligamentar",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Essa questão aborda o manejo clínico da endometriose profunda e do endometrioma ovariano em uma paciente que deseja evitar a cirurgia, apesar de possuir queixas de infertilidade e dor.\n\nAlternativa (a): Correta. O tratamento clínico da endometriose, fundamentado no uso de hormônios (como progestágenos, anticoncepcionais combinados ou análogos do GnRH) e analgésicos, tem como principal objetivo o controle dos sintomas dolorosos. Esses medicamentos atuam na supressão do estímulo estrogênico sobre os focos de endometriose, reduzindo a inflamação e, consequentemente, a dor pélvica e a dismenorreia.\n\nAlternativa (b): Incorreta. O tratamento clínico medicamentoso não aumenta as taxas de fertilidade na endometriose. Na verdade, a maioria das terapias hormonais utilizadas são anovulatórias, impedindo a gestação durante o uso. Estudos demonstram que a supressão hormonal isolada não melhora a chance de gravidez espontânea após a interrupção do tratamento. Para pacientes com infertilidade e endometriose, as condutas indicadas são a cirurgia (para restaurar a anatomia pélvica) ou a reprodução assistida.\n\nAlternativa (c): Incorreta. Endometriomas, especialmente os volumosos como o de 7 cm descrito no caso, não regridem com tratamento medicamentoso. O conteúdo achocolatado e a cápsula do cisto não são reabsorvidos pela terapia hormonal. O tratamento padrão para endometriomas maiores que 3 a 4 cm, principalmente se sintomáticos, é a exérese cirúrgica (cistectomia).\n\nAlternativa (d): Incorreta. O espessamento dos ligamentos uterossacros caracteriza a endometriose profunda, que frequentemente envolve componentes fibróticos e cicatriciais. Embora a medicação possa reduzir o processo inflamatório e a dor no local, ela não é capaz de promover a regressão anatômica das lesões ou a redução do espessamento já estabelecido. O tratamento clínico foca na sintomatologia, não na cura anatômica da lesão infiltrativa.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:08.651Z"
+  },
+  {
+    "id": "AJUDA_6db40818-b846-47e6-9875-a147b497abe6",
+    "originalId": "6db40818-b846-47e6-9875-a147b497abe6",
+    "statement": "Assinale a alternativa que apresenta corretamente uma medida de prevenção primária de transtornos depressivos na população geral.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrição de medicamentos antidepressivos para a população diagnosticada com depressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fortalecimento das redes sociais da comunidade, com promoção de programas de atividade física e incentivo ao engajamento em atividades sociais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Criação de espaços de convivência isolados, com foco na reabilitação de indivíduos em tratamento e na prevenção de recaídas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Implementação de grupos de autoajuda para transtornos depressivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda os níveis de prevenção aplicados à saúde mental, especificamente sobre o transtorno depressivo. Para identificar a resposta correta, é necessário diferenciar os conceitos de prevenção primária, secundária e terciária:\n\n1. Prevenção Primária: Ocorre antes da manifestação da doença. Seu objetivo é remover causas e fatores de risco, além de fortalecer fatores protetores na população geral ou em grupos de risco, visando a diminuir a incidência do transtorno.\n2. Prevenção Secundária: Foca no diagnóstico precoce e no tratamento imediato para evitar a evolução do quadro.\n3. Prevenção Terciária: Atua em indivíduos que já possuem a doença crônica ou sequelas, visando à reabilitação, à redução de incapacidades e à prevenção de recaídas.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A prescrição de antidepressivos para pessoas já diagnosticadas é uma medida de tratamento clínico. No contexto da saúde coletiva, enquadra-se como prevenção secundária (tratamento precoce) ou terciária (manejo da doença estabelecida), mas nunca primária, pois a doença já está presente.\n\nAlternativa (b) Correta. Esta é uma medida clássica de prevenção primária. O fortalecimento de redes sociais, a prática de atividades físicas e o engajamento comunitário são fatores protetores que atuam na promoção da saúde e na redução do risco de surgimento de novos casos de depressão na população geral.\n\nAlternativa (c) Incorreta. A criação de espaços para reabilitação e prevenção de recaídas é uma ação de prevenção terciária. Além disso, a psiquiatria moderna e a reforma psiquiátrica preconizam a reintegração social, e não o isolamento, como estratégia terapêutica.\n\nAlternativa (d) Incorreta. Grupos de autoajuda para quem já possui o transtorno são estratégias de suporte social e reabilitação, classificando-se como prevenção terciária. O foco aqui é o manejo da condição existente e não a prevenção do seu surgimento inicial.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:08.651Z"
+  },
+  {
+    "id": "AJUDA_6dc29e79-4057-4eb5-b1fa-54910d2c3a90",
+    "originalId": "6dc29e79-4057-4eb5-b1fa-54910d2c3a90",
+    "statement": "Homem de 48 anos comparece à UBS para uma consulta de rotina. Relata um trabalho de alta demanda com rotina predominantemente sedentária e uma dieta com consumo frequente de alimentos processados e ultraprocessados. Refere consumo de 3 a 4 latas de cerveja durante os fins de semana. Nega tabagismo. Possui histórico familiar de pai com infarto agudo do miocárdio aos 55 anos. A pressão arterial, aferida em 3 ocasiões distintas durante a consulta, seguindo a técnica recomendada, apresenta média de 128 x 84 mmHg. IMC: 28,5 kg/m² e circunferência abdominal: 99 cm. Exames séricos recentes: colesterol total: 210 mg/dL; HDL: 42 mg/dL; triglicerídeos: 160 mg/dL; glicemia de jejum: 98 mg/dL.\nSegundo o exposto, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a pressão arterial do paciente é classificada como normal-limítrofe, sendo a conduta apropriada a reavaliação clínica e laboratorial em um período de 12 meses, sem necessidade de intervenções imediatas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o paciente deve ser classificado com hipertensão limítrofe, e a abordagem inicial deve ser focada em mudanças no estilo de vida, com reavaliação da resposta terapêutica em um prazo de 3 a 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o aconselhamento para a prática de atividade física deve incluir a recomendação de, no mínimo, 320 minutos semanais de exercícios aeróbicos de intensidade moderada, distribuídos na maioria dos dias da semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "é fundamental realizar a estratificação do risco cardiovascular global do paciente, utilizando ferramentas validadas, pois essa avaliação guará a intensidade das intervenções e as decisões terapêuticas subsequentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "recomenda-se a adoção de um padrão alimentar como a dieta DASH (Dietary Approaches to Stop Hypertension), associada à restrição do consumo de sódio para, no máximo, 4 gramas por dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente em questão tem 48 anos e apresenta diversos fatores de risco cardiovascular: sedentarismo, dieta inadequada, sobrepeso (IMC 28,5 kg/m²), circunferência abdominal aumentada (99 cm), histórico familiar de doença arterial coronariana precoce e uma pressão arterial (PA) que, embora não atinja os critérios para diagnóstico de hipertensão arterial sistêmica (HAS), situa-se na faixa de pré-hipertensão (121-139 / 81-89 mmHg). Além disso, possui alterações lipídicas limítrofes.\n\nAnálise das Alternativas:\n\nAlternativa (a) Incorreta: Segundo as Diretrizes Brasileiras de Hipertensão Arterial, uma PA de 128 x 84 mmHg é classificada como pré-hipertensão. Embora a reavaliação anual seja citada em alguns protocolos para pacientes de baixo risco, este paciente possui múltiplos fatores de risco metabólicos e familiares. Afirmar que não há necessidade de \"intervenções imediatas\" é um erro, pois mudanças no estilo de vida (MEV) devem ser iniciadas prontamente para prevenir a progressão para HAS e reduzir o risco cardiovascular.\n\nAlternativa (b) Incorreta: O termo técnico correto é \"pré-hipertensão\", e não \"hipertensão limítrofe\". Embora a conduta de focar em mudanças no estilo de vida e reavaliar em curto prazo (3 a 6 meses) esteja correta para o nível de pressão apresentado, a nomenclatura da classificação invalida a alternativa.\n\nAlternativa (c) Incorreta: As recomendações da Organização Mundial da Saúde (OMS) e das Sociedades Brasileiras de Cardiologia para adultos são de, no mínimo, 150 a 300 minutos de atividade física aeróbica de intensidade moderada por semana, ou 75 a 150 minutos de intensidade vigorosa. O valor de 320 minutos mencionado na alternativa não é o padrão estabelecido pelas diretrizes vigentes.\n\nAlternativa (d) Correta: Esta é a conduta fundamental. Diante de um paciente com fatores de risco somados (idade, histórico familiar, dislipidemia, sobrepeso e pré-hipertensão), a estratificação do risco cardiovascular global (usando escores como o de Framingham ou o Escore de Risco Global) é indispensável. É essa estratificação que definirá as metas terapêuticas para o LDL-colesterol e decidirá se o tratamento da PA ou da dislipidemia exigirá intervenção farmacológica precoce, caso as mudanças de estilo de vida não sejam suficientes.\n\nAlternativa (e) Incorreta: A dieta DASH é, de fato, recomendada. No entanto, o erro reside na quantidade de sódio. As diretrizes recomendam a restrição de sódio para menos de 2 gramas por dia (o que equivale a aproximadamente 5 gramas de sal de cozinha). A alternativa sugere 4 gramas de sódio, o que é o dobro do recomendado para o controle pressórico e a redução do risco cardiovascular.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular",
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:08.651Z"
+  },
+  {
+    "id": "AJUDA_6dca310f-4070-4855-8061-64d59458de55",
+    "originalId": "6dca310f-4070-4855-8061-64d59458de55",
+    "statement": "Os triptanos são medicamentos de grande indicação de uso em quadros agudos de enxaqueca. Tem sua contraindicação em casos de",
+    "options": [
+      {
+        "id": "A",
+        "text": "associação com vômitos e náusea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "presença de doença arterial prévia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "presença inicial de aura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "presença inicial de fotofobia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "presença inicial de fonofobia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Os triptanos são uma classe de medicamentos fundamentais no tratamento agudo da enxaqueca moderada a grave. Eles atuam como agonistas seletivos dos receptores de serotonina 5-HT1B e 5-HT1D. A ativação desses receptores promove a vasoconstrição de vasos sanguíneos cranianos e a inibição da liberação de neuropeptídeos pró-inflamatórios nas terminações nervosas do trigêmeo.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta: Náuseas e vômitos são sintomas acessórios extremamente comuns em crises de enxaqueca. A presença desses sintomas não contraindica o uso de triptanos. Na verdade, em pacientes com vômitos intensos, recomenda-se apenas a utilização de formas não orais do medicamento (como spray nasal ou injeção subcutânea) para garantir a eficácia terapêutica.\n\nAlternativa B - Correta: Devido ao seu mecanismo de ação que causa vasoconstrição, os triptanos podem agir não apenas nos vasos cranianos, mas também em outros leitos vasculares. Por isso, são formalmente contraindicados em pacientes com doença arterial coronariana (angina, histórico de infarto), doença vascular cerebral (histórico de AVC ou AIT), doença arterial periférica, doença isquêmica intestinal ou hipertensão arterial não controlada. O risco é de desencadear espasmos vasculares ou eventos isquêmicos agudos.\n\nAlternativa C - Incorreta: A aura típica (fenômenos visuais ou sensitivos transitórios) não contraindica o uso de triptanos. Embora o medicamento deva ser administrado preferencialmente no início da fase de dor (e não durante a aura isolada, por ser menos eficaz nesse momento), a sua presença não impede o tratamento. A exceção ocorre em tipos específicos e raros de aura, como na enxaqueca hemiplégica ou na enxaqueca com aura de tronco cerebral (basilar), onde os triptanos são evitados.\n\nAlternativa D - Incorreta: A fotofobia (hipersensibilidade à luz) é um sintoma clássico e um dos critérios diagnósticos da enxaqueca. Sua presença no início ou durante a crise é uma indicação para o tratamento abortivo, e não uma contraindicação.\n\nAlternativa E - Incorreta: A fonofobia (hipersensibilidade ao som), assim como a fotofobia, faz parte do quadro clínico esperado de uma crise de enxaqueca. Não há base farmacológica ou clínica que contraindique o uso de triptanos diante deste sintoma.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:08.651Z"
+  },
+  {
+    "id": "AJUDA_6dcc0fa4-bf05-4083-b46c-3eec16207adc",
+    "originalId": "6dcc0fa4-bf05-4083-b46c-3eec16207adc",
+    "statement": "Com base na Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose – 2025, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A dosagem da lipoproteína (a) é recomendada apenas para pacientes com doença cardiovascular aterosclerótica estabelecida, não devendo ser utilizada na estratificação do risco cardiovascular em indivíduos sem doença conhecida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "As estatinas permanecem como tratamento farmacológico de primeira linha para redução do LDL-colesterol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O colesterol não-HDL pode ser utilizado como meta terapêutica complementar, especialmente em pacientes com hipertrigliceridemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A intensidade do tratamento hipolipemiante deve ser definida de acordo com a categoria de risco cardiovascular do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A apolipoproteína B pode ser utilizada como marcador adicional da carga de lipoproteínas aterogênicas em situações clínicas específicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "QUESTÃO COMENTADA: DIRETRIZ BRASILEIRA DE DISLIPIDEMIAS (ATUALIZAÇÃO 2024/2025)\n\nEsta questão avalia o conhecimento sobre a estratificação de risco e metas terapêuticas no manejo das dislipidemias, focando nas recomendações mais recentes.\n\nAlternativa A (INCORRETA/GABARITO): Esta assertiva está incorreta porque a dosagem da lipoproteína (a) – Lp(a) – não é restrita a quem já possui doença cardiovascular estabelecida. As diretrizes recentes recomendam que a Lp(a) seja medida pelo menos uma vez na vida de todo indivíduo adulto para auxiliar no refinamento da estratificação de risco cardiovascular, especialmente naqueles de risco intermediário ou com história familiar precoce de eventos ateroscleróticos. Portando, ela é sim utilizada na estratificação de indivíduos sem doença conhecida.\n\nAlternativa B (CORRETA): As estatinas continuam sendo o padrão-ouro e a primeira linha de tratamento farmacológico para a redução do LDL-c. Elas possuem o maior corpo de evidências na redução de desfechos clínicos (infarto, AVC e morte cardiovascular) e são a base sobre a qual outras terapias, como ezetimiba ou inibidores da PCSK9, são adicionadas se necessário.\n\nAlternativa C (CORRETA): O colesterol não-HDL (calculado pela fórmula: Colesterol Total menos o HDL-c) representa a carga total de todas as lipoproteínas aterogênicas na circulação (LDL, VLDL, IDL). Ele é uma meta secundária fundamental, particularmente útil em pacientes com triglicérides elevados, diabetes ou obesidade, onde o cálculo do LDL pode ser menos preciso ou o risco estar subestimado.\n\nAlternativa D (CORRETA): Este é o princípio básico da diretriz. O tratamento não é baseado apenas no valor absoluto do colesterol, mas sim no Risco Cardiovascular Global do paciente (Baixo, Intermediário, Alto ou Muito Alto). Quanto maior o risco, mais baixas devem ser as metas de LDL-c e mais intensiva deve ser a terapia hipolipemiante.\n\nAlternativa E (CORRETA): A Apolipoproteína B (Apo B) é a principal proteína estrutural das partículas aterogênicas. Sua dosagem fornece uma estimativa direta do número de partículas circulantes. A diretriz recomenda seu uso como marcador adicional, especialmente quando há discordância entre os níveis de LDL-c e o risco clínico, como em pacientes com síndrome metabólica.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:08.651Z"
+  },
+  {
+    "id": "AJUDA_6ddef195-2dec-477c-9ade-12aa454cec60",
+    "originalId": "6ddef195-2dec-477c-9ade-12aa454cec60",
+    "statement": "Paciente de 14 anos, sexo feminino, acompanhada da mãe e refere história de há 15 dias ter iniciado tosse seca e esporádica, associada à rinorreia e febre baixa (não aferida). Refere que houve melhora dos sintomas, exceto da tosse, que há 2 dias passou a ser paroxística, súbita, incontrolável, com tossidas rápidas e curtas (cinco a dez), em uma única expiração associada a episódios de vômitos, após a tosse. Mãe nega que a adolescente tenha problemas de saúde prévios, nega alergias e refere vacinação atualizada. A adolescente reside com a mãe, pai e um irmão de 10 meses de idade. Nega sintomas em familiares e refere que todos estão com as vacinas atualizadas. Considerando que foi colhido exame apropriado e iniciado tratamento indicado para suspeita do caso sintomático, qual conduta é a mais indicada para os comunicantes deste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indicação de quimioprofilaxia para os três familiares.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Não há indicação de quimioprofilaxia para os familiares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicação de reforço de vacina para todos os familiares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicação de quimioprofilaxia apenas para a criança menor de 1 ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Diagnóstico e Contexto:\nO quadro clínico descrito é clássico de coqueluche (*pertussis*), causada pela bactéria *Bordetella pertussis*. A paciente apresenta inicialmente a fase catarral (sintomas gripais leves) que evoluiu para a fase paroxística, caracterizada por acessos de tosse súbitos e incontroláveis seguidos de vômitos (vômitos pós-tussígenos). Em adolescentes e adultos, o \"guincho\" inspiratório pode estar ausente, mas a tosse paroxística e os vômitos são fortes indicadores.\n\nConduta com Comunicantes:\nA coqueluche é altamente transmissível. O objetivo da quimioprofilaxia é interromper a cadeia de transmissão e proteger indivíduos vulneráveis, especialmente lactentes, que têm maior risco de complicações graves e óbito. De acordo com o Guia de Vigilância em Saúde do Ministério da Saúde, a quimioprofilaxia está indicada para todos os contatos próximos (domiciliares), independentemente do estado vacinal ou da idade, devido à perda da imunidade vacinal ao longo do tempo.\n\nAnálise das Alternativas:\n\na) Correta. A quimioprofilaxia deve ser estendida a todos os contatos domiciliares do caso índice (pai, mãe e irmão), independentemente de estarem sintomáticos ou vacinados. O medicamento de escolha costuma ser um macrolídeo (preferencialmente azitromicina). Esta medida visa eliminar o estado de portador e prevenir casos secundários, especialmente protegendo o irmão de 10 meses, que ainda não completou o esquema vacinal básico com os reforços necessários.\n\nb) Incorreta. A quimioprofilaxia é mandatória em contatos domiciliares para controle de surtos e proteção de grupos de risco. A alta taxa de ataque secundário da doença justifica a intervenção mesmo em pessoas assintomáticas.\n\nc) Incorreta. Embora a atualização vacinal seja importante em termos de saúde pública a longo prazo, ela não substitui a quimioprofilaxia imediata no bloqueio da transmissão de um caso ativo. A vacina demora a gerar resposta imunológica e não impede o estado de portador em curto prazo em uma situação de exposição direta.\n\nd) Incorreta. Embora o bebê de 10 meses seja o grupo de maior risco para gravidade, os pais também devem receber a quimioprofilaxia. Se apenas o bebê recebesse o tratamento e os pais fossem portadores assintomáticos da bactéria, eles poderiam continuar transmitindo o agente para a criança após o término do tratamento desta ou para outras pessoas da comunidade.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Coqueluche"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:08.651Z"
+  },
+  {
+    "id": "AJUDA_6de47830-0c8e-4517-a5b6-7a46c4ab08ef",
+    "originalId": "6de47830-0c8e-4517-a5b6-7a46c4ab08ef",
+    "statement": "Um paciente de 75 anos, portador de câncer pulmonar e que está bem clinicamente, normotenso, com boa função cardíaca, renal, adrenal, hepática e tireiodiana e que não está em uso de nenhuma medicação, inicia hiponatremia (valor do sódio sanguíneo atual: 116 mEq/L.\n\nÉ feita uma hipótese diagnóstica de síndrome da secreção inapropriada do hormônio antidiurético.\n\nQual das alternativas abaixo corresponde àquela que poderia confirmar esse diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O paciente deve estar hipovolêmico, com osmolalidade urinária maior que 100 mOsm/Kg e osmolalidade sanguínea elevada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O paciente deve estar euvolemico, com osmolalidade urinária maior que 100 mOsm/Kg e osmolalidade sérica diminuída.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O paciente deve estar hipervolêmico, com osmolalidase urinária menor que 100 mOsm/Kg e osmolalidade sérica diminuída.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O paciente pode estar hipo, normo ou hipervolêmico, mas sua osmolalidade urinária deve estar abaixo de 80 mOsm/kg e a osmolalidade plasmática diminuída.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Tema da questão: Critérios diagnósticos da Síndrome da Secreção Inapropriada do Hormônio Antidiurético (SIADH).\n\nO caso clínico descreve um paciente idoso com neoplasia pulmonar (associação clássica com SIADH por produção ectópica de ADH, frequentemente relacionada ao carcinoma de pequenas células), apresentando hiponatremia grave (Na = 116 mEq/L), sem uso de medicações e com funções tireoidiana, adrenal, renal e hepática preservadas. O diagnóstico de SIADH apoia-se na presença de hiponatremia hipotônica (osmolalidade sérica diminuída), urina inadequadamente concentrada (osmolalidade urinária maior que 100 mOsm/kg) e estado de euvolemia clínica (ausência de edema ou sinais de desidratação).\n\nAnálise das alternativas:\n\na) Incorreta. O paciente com SIADH apresenta-se clinicamente euvolêmico, e não hipovolêmico. Além disso, a SIADH causa hiponatremia hipotônica, o que significa que a osmolalidade sérica está diminuída, e não elevada.\n\nb) Correta. A alternativa preenche os critérios laboratoriais e clínicos fundamentais da SIADH: euvolemia clínica, osmolalidade sérica diminuída (decorrente da retenção de água livre que dilui o plasma) e osmolalidade urinária maior que 100 mOsm/kg (refletindo a ação inapropriada do ADH nos túbulos coletores renais, que impede a diluição máxima da urina).\n\nc) Incorreta. A presença de hipervolemia aponta para causas edematosas de hiponatremia, como insuficiência cardíaca, cirrose hepática ou síndrome nefrótica. Ademais, na SIADH a osmolalidade urinária encontra-se aumentada (maior que 100 mOsm/kg), e não diminuída.\n\nd) Incorreta. O estado volêmico na SIADH é estritamente euvolêmico. Uma osmolalidade urinária abaixo de 100 mOsm/kg (como os 80 mOsm/kg citados) demonstraria supressão adequada do ADH, achado típico de condições como polidipsia primária ou síndrome da potomania por cerveja, afastando o diagnóstico de SIADH.\n\nGabarito: Alternativa b.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Pulmonares",
+      "Distúrbios do Sódio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:58:08.651Z"
+  }
+]

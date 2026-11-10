@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_680975e7-3789-47a0-9d46-c7236a56ac51",
+    "originalId": "680975e7-3789-47a0-9d46-c7236a56ac51",
+    "statement": "Paciente de 1 ano é internada com história de dificuldade alimentar, mantendo alimentação predominantemente à base de leite materno. A mãe é adolescente, tem baixo nível educacional e faz dieta com pouca diversidade nutricional. Ao exame físico, a criança apresenta-se apática, pouco ativa, não senta sem apoio, não se sustenta em pé mesmo com suporte e emite apenas sons guturais, sem palavras inteligíveis. O peso revela escore Z < -2 para a idade. Os exames laboratoriais mostram hemoglobina = 6,2g/dL, hematócrito = 18%, VCM = 118fL e RDW aumentado. Além da desnutrição e do atraso no desenvolvimento, o diagnóstico mais provável é de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hipertireoidismo congênito não tratado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "anemia megalobástica por deficiência de B12",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "doença inflamatória intestinal de início precoce",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "doença celíaca com apresentação nutricional grave",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresenta um lactente de 1 ano com desnutrição (escore Z de peso < -2), atraso global do desenvolvimento neuropsicomotor (não senta, não fala, apatia) e uma anemia grave com perfil macrocítico, evidenciado pelo VCM significativamente elevado (118 fL) e RDW aumentado (anisocitose).\n\nA deficiência de vitamina B12 (cobalamina) em lactentes está frequentemente associada a mães com dietas muito restritas e pobres em proteínas animais (como vegetarianas ou com baixa diversidade nutricional, como a mãe adolescente do caso), que mantêm o aleitamento materno exclusivo ou predominante por tempo prolongado. Como a vitamina B12 é essencial para a síntese de DNA e para a formação e manutenção da bainha de mielina, sua carência leva à anemia megaloblástica e a manifestações neurológicas importantes, incluindo apatia, hipotonia e regressão ou atraso do desenvolvimento motor e da linguagem.\n\nAnálise das alternativas:\n\na) Incorreta. O hipertireoidismo congênito não é um diagnóstico comum nesta faixa etária e apresentaria sintomas de hipermetabolismo, como taquicardia e agitação, opostos à apatia descrita. O hipotireoidismo congênito (mais comum) poderia causar atraso no desenvolvimento, mas não justificaria a macrocitose acentuada nem a história nutricional específica relatada.\n\nb) Correta. A tríade de anemia macrocítica (VCM 118 fL), sintomas neurológicos (atraso de marcos do desenvolvimento e apatia) e contexto nutricional de risco (mãe com dieta precária e aleitamento predominante tardio) é patognomônica da deficiência de vitamina B12, que causa a anemia megaloblástica.\n\nc) Incorreta. A doença inflamatória intestinal de início precoce costuma se manifestar com diarreia crônica, frequentemente com sangue e muco, dor abdominal e déficit de crescimento. Embora possa causar anemia, esta costuma ser ferropriva (microcítica) ou de doença crônica, não explicando o atraso neuropsicomotor grave e a macrocitose de 118 fL.\n\nd) Incorreta. A doença celíaca causa má absorção e pode levar à desnutrição e anemia. No entanto, a anemia mais comum na doença celíaca é a ferropriva (microcítica). Embora a má absorção de folato possa causar macrocitose, o quadro de atraso neurológico tão evidente associado à dieta materna restrita aponta diretamente para a deficiência de B12 no lactente amamentado.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:24.062Z"
+  },
+  {
+    "id": "AJUDA_681a1992-767d-48ce-a4cc-780694c9e026",
+    "originalId": "681a1992-767d-48ce-a4cc-780694c9e026",
+    "statement": "O fator de risco externo mais relacionado à elevação na incidência do câncer de pâncreas é o(a):",
+    "options": [
+      {
+        "id": "A",
+        "text": "tabaco",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "açúcar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "álcool",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sílica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O câncer de pâncreas, em especial o adenocarcinoma ductal, possui uma etiologia multifatorial, envolvendo componentes genéticos e ambientais. A identificação do principal fator de risco externo é um tema recorrente em provas, pois foca na prevenção primária.\n\nAlternativa (a): Correta. O tabagismo é o fator de risco ambiental mais bem estabelecido e importante para o câncer de pâncreas. Estudos epidemiológicos demonstram que o uso de tabaco duplica o risco de desenvolvimento da neoplasia em comparação com não fumantes. Estima-se que cerca de 20% a 30% dos casos de câncer pancreático sejam atribuíveis ao hábito de fumar. A relação é dose-dependente, ou seja, quanto maior a carga tabágica, maior o risco.\n\nAlternativa (b): Incorreta. O consumo excessivo de açúcar não é listado como o principal fator de risco direto. Embora a obesidade e o diabetes mellitus tipo 2 sejam fatores de risco conhecidos para este câncer, e ambos possam estar relacionados a dietas ricas em açúcares, o tabaco permanece como o fator externo de maior impacto isolado.\n\nAlternativa (c): Incorreta. A associação entre álcool e câncer de pâncreas é considerada fraca ou inexistente na ausência de pancreatite crônica. O consumo pesado de álcool aumenta o risco de pancreatite crônica, que, por sua vez, é um fator predisponente para o câncer, mas o tabagismo apresenta uma correlação direta e muito mais robusta em termos de incidência populacional.\n\nAlternativa (d): Incorreta. A exposição à sílica está fortemente ligada ao desenvolvimento de doenças pulmonares ocupacionais (silicose) e ao câncer de pulmão. Não existe evidência científica sólida que a correlacione como um fator de risco primário para a elevação na incidência do câncer de pâncreas. Outras exposições ocupacionais, como a derivados do petróleo e pesticidas, são mais citadas, porém ainda inferiores ao tabaco.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:24.062Z"
+  },
+  {
+    "id": "AJUDA_68218729-0dcf-43b7-97ba-b998b940d9bb",
+    "originalId": "68218729-0dcf-43b7-97ba-b998b940d9bb",
+    "statement": "Uma Razão de Verossimilhança Positiva (RVP) de 1 significa que:\n\nI. O teste não altera a probabilidade pré-teste da doença.\nII. O teste é inútil para confirmar a presença da doença.\nIII. A sensibilidade e a especificidade do teste são iguais.\n\nQuais estão corretas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender esta questão, devemos primeiro entender o conceito de Razão de Verossimilhança Positiva (RVP). A RVP é a razão entre a probabilidade de um resultado positivo em pacientes doentes e a probabilidade de um resultado positivo em pacientes saudáveis. Matematicamente, ela é expressa pela fórmula: RVP = Sensibilidade / (1 - Especificidade).\n\nAnálise dos itens:\n\nItem I. Correto. Quando a RVP é igual a 1, significa que a probabilidade de encontrar um resultado positivo em quem tem a doença é exatamente a mesma que a de encontrar um resultado positivo em quem não tem a doença. Portanto, o resultado do teste não fornece nenhuma informação adicional que modifique a probabilidade que o médico já estimava antes de solicitar o exame (probabilidade pré-teste). Em termos nomogramáticos (Nomograma de Fagan), uma linha que passa por uma RV de 1 mantém a probabilidade inalterada.\n\nItem II. Correto. Um teste diagnóstico só é útil se for capaz de aumentar ou diminuir significativamente a probabilidade de uma doença. Se a RVP for 1, um resultado positivo não aumenta a certeza sobre o diagnóstico. Por isso, o teste torna-se inútil para confirmar a patologia, pois não discrimina quem está doente de quem está saudável.\n\nItem III. Incorreto. Para que a RVP seja igual a 1, a fórmula Sensibilidade / (1 - Especificidade) deve resultar em 1. Isso ocorre quando a Sensibilidade é igual a (1 - Especificidade). Reorganizando a equação, temos que Sensibilidade + Especificidade = 1 (ou 100%). Isso não significa que a Sensibilidade e a Especificidade sejam iguais entre si. Por exemplo, um teste com 70% de sensibilidade e 30% de especificidade teria uma RVP de 0,7 / (1 - 0,3) = 0,7 / 0,7 = 1. Note que 70% é diferente de 30%, mas a soma resulta em 100%.\n\nExplicação das alternativas:\n\na) Apenas I e II: Esta é a alternativa correta, conforme a análise acima.\nb) Apenas I e III: Incorreta, pois o item III é matematicamente falso.\nc) Apenas II e III: Incorreta, pois o item III está errado.\nd) I, II e III: Incorreta, pois o item III invalida a alternativa.\n\nGabarito: Letra (a).",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:24.062Z"
+  },
+  {
+    "id": "AJUDA_68223ecd-b67b-4e53-bd70-0780355e79de",
+    "originalId": "68223ecd-b67b-4e53-bd70-0780355e79de",
+    "statement": "Estima-se que o R0 (Basic Reproductive Number) de uma doença respiratória emergente, cuja transmissão se dá por meio de gotículas, é igual a 4. Há uma vacina contra essa doença, capaz de induzir soroconversão em 100% dos vacinados. Para que não ocorra uma epidemia, que porcentagem mínima da população deverá ser vacinada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "95% da população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "60% da população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "90% da população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "75% da população.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o conceito de Imunidade de Rebanho (ou Limiar de Imunidade Coletiva), que representa a porcentagem mínima de indivíduos que precisam estar imunes em uma população para que um patógeno pare de circular de forma epidêmica.\n\nO cálculo desse limiar é baseado no Número Básico de Reprodução (R0), que indica para quantas pessoas, em média, um único indivíduo infectado transmite a doença em uma população totalmente suscetível. A fórmula para encontrar o limiar de imunidade (I) é:\n\nI = 1 - (1 / R0)\n\nAplicando os dados fornecidos pela questão, onde o R0 é igual a 4:\n\nI = 1 - (1 / 4)\nI = 1 - 0,25\nI = 0,75\n\nComo o enunciado afirma que a vacina induz soroconversão em 100% dos vacinados (ou seja, a eficácia é total), a porcentagem da população a ser vacinada deve ser exatamente igual ao limiar de imunidade calculado. Convertendo 0,75 para porcentagem, temos 75%.\n\nAnálise das alternativas:\n\na) Incorreta. O valor de 95% seria necessário para doenças com R0 muito mais elevado, como o sarampo, cujo R0 costuma variar entre 12 e 18.\n\nb) Incorreta. Uma cobertura de 60% seria insuficiente. Com esse percentual, o número reprodutivo efetivo ainda seria superior a 1, o que permitiria a progressão da epidemia.\n\nc) Incorreta. A cobertura de 90% é excessiva para o R0 apresentado. Esse valor seria o alvo para uma doença com R0 igual a 10.\n\nd) Correta. De acordo com a fórmula de imunidade de rebanho, para um R0 de 4, a proteção de 75% da população é o ponto crítico para que cada caso primário gere, em média, menos de um caso secundário, interrompendo a disseminação epidêmica.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:24.062Z"
+  },
+  {
+    "id": "AJUDA_68279ede-440d-4458-92e4-4216a82a91fd",
+    "originalId": "68279ede-440d-4458-92e4-4216a82a91fd",
+    "statement": "Paciente de 72 anos é atendido no pronto-socorro com história de síncope. Refere episódios prévios de tonturas. É portador de cardiopatia chagásica. Ao exame físico encontra-se lúcido, normotenso, bradicárdico. O eletrocardiograma evidencia ondas P com frequência de 75 bpm e complexos QRS largos com frequência de 35 bpm, sem relação entre as ondas P e os complexos QRS. O intervalo PP é regular, assim como o intervalo RR. Identifique o tipo de bloqueio atrioventricular apresentado:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bloqueio atrioventricular de primeiro grau.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bloqueio atrioventricular de segundo grau Mobitz I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Bloqueio atrioventricular de segundo grau Mobitz II 2:1.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Bloqueio atrioventricular total com escape ventricular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Bloqueio sinoatrial tipo II.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Quadro Clínico:\n\nO paciente apresenta um quadro clássico de síncope associado à bradicardia em um contexto de cardiopatia chagásica, condição que frequentemente compromete o sistema de condução cardíaco. A análise do eletrocardiograma (ECG) é a chave para o diagnóstico:\n\n1. Frequência Atrial (Ondas P): 75 bpm.\n2. Frequência Ventricular (QRS): 35 bpm.\n3. Dissociação Atrioventricular: O enunciado afirma que não há relação entre as ondas P e os complexos QRS.\n4. Regularidade: Os intervalos PP e RR são regulares de forma independente.\n5. Morfologia do QRS: Complexos QRS largos indicam que o estímulo que despolariza os ventrículos nasce abaixo do feixe de His (escape ventricular), o que justifica a frequência cardíaca baixa (35 bpm).\n\nEsses achados definem o Bloqueio Atrioventricular Total (BAVT) ou de terceiro grau.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. No bloqueio de primeiro grau, todas as ondas P são conduzidas aos ventrículos, mas com um atraso (intervalo PR superior a 0,20 segundo). Não há dissociação e a frequência atrial é igual à ventricular.\n\nAlternativa b) Incorreta. O bloqueio de segundo grau Mobitz I (fenômeno de Wenckebach) caracteriza-se pelo aumento progressivo do intervalo PR até que uma onda P seja bloqueada. No caso descrito, não há qualquer relação entre P e QRS, e o ritmo ventricular é regular, o que descarta Mobitz I.\n\nAlternativa c) Incorreta. No bloqueio de segundo grau Mobitz II 2:1, haveria uma relação fixa de condução (para cada duas ondas P, uma seria conduzida). O enunciado é explícito ao dizer que não existe relação entre as ondas P e os complexos QRS, caracterizando a dissociação total.\n\nAlternativa d) Correta. O Bloqueio Atrioventricular Total (BAVT) ocorre quando nenhum estímulo atrial atinge os ventrículos. Como resultado, os átrios batem em seu próprio ritmo (comando do nó sinusal) e os ventrículos assumem um ritmo de escape (neste caso, ventricular, devido aos complexos QRS largos e frequência muito baixa). É o diagnóstico que preenche todos os critérios descritos: dissociação AV, intervalos PP e RR regulares e frequências distintas.\n\nAlternativa e) Incorreta. O bloqueio sinoatrial tipo II refere-se a uma falha na condução do estímulo do nó sinusal para o átrio, resultando em pausas que são múltiplos do intervalo PP normal. Não se manifesta com dissociação atrioventricular ou escape ventricular fixo com ondas P mantidas em frequência normal, como descrito no caso.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Bradiarritmias"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:24.062Z"
+  },
+  {
+    "id": "AJUDA_6831f9dd-64a9-4090-95dd-c878f47bcdb1",
+    "originalId": "6831f9dd-64a9-4090-95dd-c878f47bcdb1",
+    "statement": "Segundo os critérios de Duke para diagnóstico de endocardite infecciosa, são critérios maiores:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Febre > 38°C, embolização séptica e glomerulonefrite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Insuficiência cardíaca recente e distúrbio de condução novo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Duas hemoculturas positivas com germes típicos em ausência de foco primário e ecocardiograma positivo para endocardite com massa valvar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Nódulos de Osler, lesões de Janeway e fator reumatoide positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para diagnosticar a Endocardite Infecciosa (EI), a prática médica utiliza os Critérios de Duke Modificados, que são divididos em Critérios Maiores e Critérios Menores. O diagnóstico definitivo é estabelecido com a presença de 2 critérios maiores, ou 1 maior e 3 menores, ou 5 menores.\n\nAlternativa (a) Incorreta. Febre acima de 38°C, embolização séptica (um fenômeno vascular) e glomerulonefrite (um fenômeno imunológico) são todos classificados como critérios menores de Duke.\n\nAlternativa (b) Incorreta. A insuficiência cardíaca e novos distúrbios de condução (como um bloqueio atrioventricular decorrente de um abscesso de anel valvar) são complicações clínicas graves da endocardite, mas não fazem parte da definição de critérios maiores segundo a classificação de Duke.\n\nAlternativa (c) Correta. Esta alternativa descreve os dois eixos principais dos critérios maiores:\n1. Evidência microbiológica: Duas hemoculturas positivas para micro-organismos típicos de EI (como *Streptococcus viridans* ou *Staphylococcus aureus*) colhidas em momentos distintos.\n2. Evidência de envolvimento endocárdico: Achado ecocardiográfico positivo, que inclui a presença de massa intracardíaca oscilante (vegetação) em válvula ou estruturas de suporte, abscesso, nova deiscência parcial de prótese valvar ou nova regurgitação valvar.\n\nAlternativa (d) Incorreta. Nódulos de Osler e fator reumatoide positivo são classificados como fenômenos imunológicos, enquanto as lesões de Janeway são classificadas como fenômenos vasculares. Todos estes são considerados critérios menores.\n\nResumo dos Critérios de Duke:\n- Maiores: Hemoculturas positivas (com germes típicos e persistência) e Evidência de lesão endocárdica no ecocardiograma.\n- Menores: Predisposição (condição cardíaca prévia ou uso de drogas IV), Febre (>38°C), Fenômenos Vasculares (ex.: embolia arterial, lesões de Janeway), Fenômenos Imunológicos (ex.: glomerulonefrite, nódulos de Osler, fator reumatoide) e Evidência microbiológica que não preenche critério maior.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Endocardite Bacteriana"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:24.062Z"
+  },
+  {
+    "id": "AJUDA_683c983d-a79f-41ac-a8e6-10433155415e",
+    "originalId": "683c983d-a79f-41ac-a8e6-10433155415e",
+    "statement": "É um indicador utilizado na avaliação da eficiência de um sistema de vigilância epidemiológica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "flexibilidade",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "mobilidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "vulnerabilidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "transcendência",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para avaliar a eficiência e a qualidade de um sistema de vigilância epidemiológica, são utilizados atributos técnicos específicos que medem o desempenho da coleta, análise e processamento de dados.\n\nAlternativa A - Flexibilidade: CORRETA. A flexibilidade é um dos atributos clássicos de avaliação de sistemas de vigilância. Ela se refere à capacidade do sistema de se adaptar a novas necessidades de informação ou a mudanças nas condições operacionais (como o surgimento de uma nova variante de vírus ou alteração na definição de caso) sem exigir grandes investimentos de tempo, pessoal ou recursos financeiros extras. Outros atributos similares incluem simplicidade, aceitabilidade, sensibilidade e oportunidade.\n\nAlternativa B - Mobilidade: INCORRETA. Este termo não faz parte dos indicadores técnicos ou atributos qualitativos utilizados para avaliar o desempenho ou a eficiência de sistemas de vigilância epidemiológica nos manuais de saúde pública.\n\nAlternativa C - Vulnerabilidade: INCORRETA. A vulnerabilidade não é um indicador de eficiência do sistema de vigilância, mas sim um critério utilizado para a seleção de doenças e agravos que devem ser priorizados para notificação compulsória. Ela avalia se existem instrumentos de prevenção e controle disponíveis e eficazes para interromper a cadeia epidemiológica ou reduzir a morbimortalidade de um agravo.\n\nAlternativa D - Transcendência: INCORRETA. Assim como a vulnerabilidade, a transcendência é um critério de priorização de agravos para a lista de notificação. Ela mede a relevância de um problema de saúde com base em sua gravidade (taxas de letalidade, hospitalização e sequelas) e em seu impacto social e econômico na sociedade. Portanto, define o que deve ser vigiado, mas não mede a eficiência operacional do sistema em si.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:24.062Z"
+  },
+  {
+    "id": "AJUDA_68436187-69e4-4e8f-bf9b-e5a857adf98d",
+    "originalId": "68436187-69e4-4e8f-bf9b-e5a857adf98d",
+    "statement": "Um bebê de 6 meses apresenta taquicardia com QRS estreito e FC: 280 bpm. Perfusão preservada. A melhor conduta, nesse momento, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manobras vagais e, se refratário, adenosina IV rápido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Lidocaína.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Amiodarona IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cardioversão sincronizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Verapamil IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO paciente em questão é um lactente de 6 meses com Taquicardia Supraventricular (TSV). Os critérios que definem essa condição na pediatria são a frequência cardíaca elevada (geralmente acima de 220 bpm em lactentes e acima de 180 bpm em crianças maiores) associada a um complexo QRS estreito (menor que 0,09 segundos). Um ponto crucial do enunciado é que a perfusão está preservada, o que indica estabilidade hemodinâmica.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a: Correta. De acordo com o protocolo PALS (Pediatric Advanced Life Support), o manejo inicial da TSV em pacientes estáveis deve começar com manobras vagais. Em lactentes, a manobra mais comum é a aplicação de bolsa de gelo na face (ice-to-face) por 15 a 20 segundos. Caso a manobra não reverta a arritmia, a primeira escolha farmacológica é a Adenosina por via intravenosa ou intraóssea, administrada em bôlus rápido devido à sua meia-vida curtíssima.\n\nAlternativa b: Incorreta. A lidocaína é um antiarrítmico indicado para o tratamento de arritmias ventriculares (QRS largo), como a taquicardia ventricular, e não possui papel no manejo inicial da TSV de QRS estreito.\n\nAlternativa c: Incorreta. A Amiodarona pode ser utilizada em arritmias pediátricas, mas é reservada para casos refratários ou arritmias de complexo largo. Não é a droga de primeira escolha para TSV em paciente estável.\n\nAlternativa d: Incorreta. A cardioversão elétrica sincronizada é o tratamento de escolha para TSV apenas em pacientes com sinais de instabilidade hemodinâmica (choque, alteração de consciência, hipotensão). Como o enunciado afirma que a perfusão está preservada, opta-se primeiro pelas medidas conservadoras e farmacológicas.\n\nAlternativa e: Incorreta. O Verapamil (bloqueador de canal de cálcio) é terminantemente contraindicado em lactentes menores de 1 ano de idade. O uso nessa faixa etária pode causar hipotensão grave, colapso cardiovascular e assistolia, devido à imaturidade do miocárdio e da dependência do cálcio extracelular para a contração nessa fase.\n\nCONCLUSÃO\nDiante de uma TSV estável em lactente, a sequência correta é manobra vagal seguida de adenosina IV, respeitando-se as contraindicações de drogas como o verapamil para esta idade.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:24.062Z"
+  },
+  {
+    "id": "AJUDA_68447be4-2d73-4761-a1b3-10c48118b960",
+    "originalId": "68447be4-2d73-4761-a1b3-10c48118b960",
+    "statement": "Mulher de 48 anos chega ao pronto-socorro com febre alta, icterícia e dor em hipocôndrio direito. Na avaliação, apresenta pressão arterial (PA) 85 × 50 mmHg e confusão mental. Realizou exame físico doloroso em hipocôndrio direito, sem sinais peritoneais.\nDiante desse caso, a conduta prioritária será",
+    "options": [
+      {
+        "id": "A",
+        "text": "observação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "alta hospitalar após analgesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "radioterapia abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "apenas antibióticos orais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "reanimação hemodinâmica + antibióticos endovenosos e descompressão biliar urgente (CPRE).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do quadro clínico:\n\nA paciente apresenta os cinco elementos que compõem a Pêntade de Reynolds: febre alta, icterícia e dor abdominal (que formam a Tríade de Charcot), somados a hipotensão arterial (85 x 50 mmHg) e confusão mental. Esse cenário é patognomônico de colangite aguda grave ou supurativa. Trata-se de uma emergência médica em que a obstrução das vias biliares associada à infecção leva rapidamente ao choque séptico.\n\nPor que a alternativa E está correta:\n\nO tratamento da colangite aguda grave baseia-se em três pilares fundamentais:\n1. Reanimação hemodinâmica: Necessária para estabilizar a pressão arterial e garantir a perfusão tecidual através de fluidoterapia e, se necessário, aminas vasoativas.\n2. Antibioticoterapia endovenosa: Deve ser iniciada imediatamente com espectro para germes Gram-negativos e anaeróbios.\n3. Descompressão biliar urgente: É o tratamento definitivo. Como há pus sob pressão na via biliar, a descompressão é vital para cessar a bacteremia. A CPRE (Colangiopancreatografia Retrógrada Endoscópica) é o método de escolha por ser menos invasivo e altamente eficaz na drenagem.\n\nAnálise das alternativas incorretas:\n\nAlternativa a: Incorreta. A observação clínica é passiva e inadequada para uma paciente em choque séptico biliar. O atraso na intervenção eleva drasticamente a mortalidade.\n\nAlternativa b: Incorreta. Dar alta para uma paciente com Pêntade de Reynolds é um erro grave, pois ela apresenta risco iminente de morte e necessita de terapia intensiva.\n\nAlternativa c: Incorreta. A radioterapia é uma modalidade de tratamento oncológico crônico e não possui qualquer aplicação no manejo de urgência de uma infecção biliar aguda.\n\nAlternativa d: Incorreta. Antibióticos por via oral não atingem concentrações séricas rápidas o suficiente para tratar sepse biliar e não resolvem a causa-base, que é a obstrução mecânica da via biliar.\n\nGabarito: Letra E.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Colecistite e Colangite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:24.062Z"
+  },
+  {
+    "id": "AJUDA_68491d8f-f3ea-426d-94df-bdda283d1cad",
+    "originalId": "68491d8f-f3ea-426d-94df-bdda283d1cad",
+    "statement": "Homem de 36 anos sofreu ferimento por arma branca em zona II cervical, região ântero-lateral à esquerda. Apresenta instabilidade hemodinâmica por sangramento ativo, dispneia progressiva e enfisema subcutâneo cervical.\n\nAssinale a alternativa que contempla a abordagem correta para o paciente após avaliação inicial com estabelecimento de uma via aérea definitiva.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitação de angiotomografia de pescoço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Observação da evolução clínica com compressão local do ferimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Exploração cirúrgica da ferida cervical por cervicotomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realização de toracotomia por se tratar de ferimento em transição cervicotorácica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realização de endoscopia digestiva alta para melhor avaliação da lesão esofágica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um ferimento por arma branca na Zona II do pescoço (região entre a cartilagem cricoide e o ângulo da mandíbula). O quadro é marcado por sinais de presunção de lesão grave, conhecidos como sinais \"duros\" (hard signs), que incluem instabilidade hemodinâmica, sangramento ativo, dispneia progressiva e enfisema subcutâneo (sugerindo lesão de via aérea ou digestiva).\n\nAlternativa a) Incorreta. A angiotomografia de pescoço é o exame de escolha para a avaliação de pacientes estáveis hemodinamicamente que não apresentam sinais óbvios de lesão vascular ou aerodigestiva. No caso em questão, o paciente está instável e possui sinais de lesão grave, o que contraindica o deslocamento para o setor de radiologia e exige tratamento cirúrgico imediato.\n\nAlternativa b) Incorreta. A conduta expectante ou observação clínica é reservada apenas para ferimentos superficiais que não ultrapassam o músculo platisma ou para pacientes totalmente assintomáticos após triagem diagnóstica negativa. O paciente descrito apresenta sinais de choque e comprometimento respiratório, exigindo intervenção.\n\nAlternativa c) Correta. Segundo os protocolos de trauma (como o ATLS), pacientes com ferimentos penetrantes de pescoço que apresentam instabilidade hemodinâmica, hematoma em expansão, sangramento pulsátil, enfisema subcutâneo ou borbulhamento de ar pela ferida devem ser submetidos à exploração cirúrgica imediata. A cervicotomia é a via de acesso padrão para a Zona II.\n\nAlternativa d) Incorreta. A Zona II localiza-se na porção central do pescoço. A toracotomia seria considerada em ferimentos da Zona I (base do pescoço, abaixo da cricoide) se houvesse suspeita de lesão de grandes vasos intratorácicos ou sangramento maciço pelo dreno de tórax, o que não condiz com a localização anatômica descrita.\n\nAlternativa e) Incorreta. Embora o enfisema subcutâneo possa indicar lesão esofágica, a endoscopia é um exame complementar para pacientes estáveis. Diante da instabilidade hemodinâmica e do sangramento ativo, a prioridade é o controle cirúrgico da hemorragia e da via aérea; a avaliação esofágica pode ser feita durante a própria exploração cirúrgica.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:24.062Z"
+  }
+]

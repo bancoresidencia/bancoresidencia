@@ -1,0 +1,513 @@
+[
+  {
+    "id": "AJUDA_4d823eaf-9172-4f02-92a5-b074742ba974",
+    "originalId": "4d823eaf-9172-4f02-92a5-b074742ba974",
+    "statement": "Situação-Problema: Mulher, 46 anos de idade, G3P3 (três partos vaginais), procura ambulatório por sangramento uterino anormal há 12 meses. Tinha ciclos menstruais regulares anteriormente, mas vem com periodos menstruais mais frequentes este ano, com fluxo intenso nos últimos 6 ciclos (coágulos e troca de absorvente a cada 1 – 2 horas nos piores dias). Relata fadiga progressiva, palpitações e dois episódios de lipotimia nas últimas 2 semanas. Nega uso de ACO. Antecedentes: HAS controlada (losartana), IMC 32 Kg/m². Exame físico: pálida (++/4), PA 130/85 mmHg, FC 88 bpm; tireoide sem alterações. Abdome flácido, indolor, Exame ginecológico: colo sem lesões, útero discretamente aumentado à palpação bimanual, sem dor anexial. Laboratório: Hb 9,8 g/dL, Ht 30%, VCM 74 fL, ferritina 8 ng/mL, TSH 2,1 mUI/L, beta-hCG negativo. USG transvaginal (fase proliferativa tardia): endométrio difusamente espessado (14 mm); miométrio heterogêneo discreto; anexos sem alterações. Paciente refere desejo de manter útero e evitar internações.\n\nIndique a medida terapêutica adjuvante que pode ser iniciada concomitantemente à investigação diagnóstica desse caso:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Inserção de DIU medicado com levonorgestrel.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administração empírica de GnRH agonista por 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Terapia estrogênica isolada contínua.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suplementação de ferro.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nTrata-se de uma paciente de 46 anos com sangramento uterino anormal (SUA) e fatores de risco clássicos para patologia endometrial (idade maior que 45 anos e obesidade com IMC de 32 kg/m2). A ultrassonografia transvaginal evidencia endométrio espessado (14 mm), o que torna imperativa a investigação histopatológica (por biópsia endometrial ou histeroscopia diagnóstica com biópsia) para afastar hiperplasia ou neoplasia endometrial antes de se estabelecer qualquer tratamento hormonal definitivo. \n\nLaboratorialmente, a paciente apresenta anemia microcítica e hipocrômica por deficiência de ferro (Hb 9,8 g/dL, VCM 74 fL e ferritina 8 ng/mL), o que explica os sintomas sistêmicos de fadiga, palpitações e lipotimias. A questão solicita uma conduta adjuvante que possa ser instituída concomitantemente à investigação diagnóstica.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O sistema intrauterino liberador de levonorgestrel (DIU-LNG) é uma excelente opção para o controle do fluxo menstrual aumentado, porém a sua inserção é contraindicada na vigência de sangramento uterino anormal não esclarecido com suspeita de malignidade, devendo-se primeiro excluir câncer de endométrio.\n\nAlternativa b: Incorreta. Os análogos do GnRH geram bloqueio do eixo hipotálamo-hipófise-ovário e hipoestrogenismo acentuado. O seu uso empírico e prolongado não é indicado no manejo inicial do SUA sem causa definida, além de apresentar custo elevado, efeitos adversos importantes e poder retardar o diagnóstico histológico correto.\n\nAlternativa c: Incorreta. A terapia estrogênica isolada e contínua em mulheres com útero preservado é formalmente contraindicada. O estrogênio sem oposição progestagênica estimula a proliferação endometrial descontrolada, elevando o risco de hiperplasia e adenocarcinoma de endométrio, o que agravaria o quadro clínico da paciente.\n\nAlternativa d: Correta. A reposição de ferro (oral ou parenteral) é a medida terapêutica adjuvante indicada de imediato. Ela trata a anemia ferropriva sintomática decorrente da perda sanguínea crônica, melhora a capacidade funcional e a estabilidade clínica da paciente e não interfere nem atrasa a investigação diagnóstica necessária.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Anemias"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:13.752Z"
+  },
+  {
+    "id": "AJUDA_4d83fd54-1c39-47aa-aea3-9d53cf6426ca",
+    "originalId": "4d83fd54-1c39-47aa-aea3-9d53cf6426ca",
+    "statement": "Em investigação epidemiológica no município, avaliou-se situação relacionada a ocorrência de doenças e aspectos metodológicos. Sobre o cenário descrito, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apresenta conceito de razão de chances.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Corresponde à densidade de incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apresenta conceito de incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Refere-se à letalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Apresenta conceito de prevalência.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver essa questão, é fundamental diferenciar os conceitos de medidas de frequência e medidas de associação em epidemiologia.\n\nAlternativa A: Incorreta. A razão de chances, ou Odds Ratio, não é uma medida de ocorrência de doença, mas sim uma medida de associação. Ela é tipicamente utilizada em estudos de caso-controle para estimar a chance de um grupo ter sido exposto a determinado fator em comparação ao outro grupo.\n\nAlternativa B: Incorreta. A densidade de incidência é uma medida de frequência que expressa a velocidade com que novos casos surgem em uma população. O seu diferencial é que o denominador é composto pela soma dos períodos de tempo (tempo-pessoa) em que cada indivíduo esteve em risco de desenvolver a doença.\n\nAlternativa C: Incorreta. A incidência refere-se exclusivamente aos casos novos de uma doença que surgem em uma população em risco durante um intervalo de tempo definido. Ela é utilizada para medir o risco ou a probabilidade de uma pessoa saudável adoecer.\n\nAlternativa D: Incorreta. A letalidade é um indicador que mede a gravidade de uma patologia. Ela relaciona o número de mortes causadas por uma doença específica com o número total de pessoas que sofrem dessa doença, indicando a capacidade da enfermidade de levar ao óbito.\n\nAlternativa E: Correta. A prevalência é o indicador que descreve o número total de casos (casos novos somados aos casos antigos) existentes em uma determinada população em um momento específico ou em um curto período. Ela funciona como um retrato ou fotografia da situação de saúde local, sendo o conceito aplicado quando se avalia a situação epidemiológica geral e a carga de doenças de um município em uma investigação transversal.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:13.752Z"
+  },
+  {
+    "id": "AJUDA_4d85cd41-c392-44d6-b4e2-49079db83800",
+    "originalId": "4d85cd41-c392-44d6-b4e2-49079db83800",
+    "statement": "Homem de 84 anos, portador de DPOC grave (oxigenoterapia domiciliar), fração de ejeção de 30% e internado em UTI por choque séptico secundário a colecistite aguda calculosa. Exame físico: Murphy positivo, dor em hipocôndrio direito. TC: vesícula distendida com cálculos, espessamento parietal e coleções perivesiculares iniciais, sem sinais de perfuração livre. Em uso de antibiótico de amplo espectro e noradrenalina em dose moderada. Qual a conduta inicial mais apropriada neste contexto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colecistectomia laparoscópica imediata, para controle definitivo da fonte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colecistostomia percutânea, associada a antibiótico, com planejamento de colecistectomia definitiva quando otimizado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Antibióticoterapia exclusiva por 7–10 dias, sem drenagem inicial, visto que não há perfuração franca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Drenagem biliar endoscópica transmural (EUS–guiada) como primeira opção, por ser menos invasiva que o acesso percutâneo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Observação clínica em UTI por 24 horas para avaliar estabilidade antes de qualquer intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso apresenta um paciente idoso de 84 anos com múltiplas comorbidades graves (DPOC dependente de oxigênio e insuficiência cardíaca com fração de ejeção reduzida de 30%) em quadro de choque séptico de foco biliar. Segundo os critérios de Tóquio (TG18), este paciente é classificado como Colecistite Aguda Grau III (Grave), devido à disfunção orgânica (choque séptico com necessidade de noradrenalina).\n\nAlternativa (a) Incorreta: Embora a colecistectomia videolaparoscópica seja o tratamento definitivo padrão-ouro, a instabilidade hemodinâmica (uso de noradrenalina) e o altíssimo risco cirúrgico e anestésico (ASA IV) contraindicam a cirurgia imediata. O pneumoperitônio da laparoscopia e a anestesia geral poderiam ser fatais para um paciente com reserva cardíaca e pulmonar tão limitadas no momento agudo da sepse.\n\nAlternativa (b) Correta: A colecistostomia percutânea é o procedimento de escolha para pacientes com colecistite aguda grave (Grau III) que possuem contraindicações para a cirurgia imediata ou alto risco cirúrgico. Ela permite a drenagem do conteúdo infectado (controle do foco) de forma minimamente invasiva, geralmente sob anestesia local e sedação leve. Funciona como uma \"ponte\" para estabilização clínica, permitindo que a cirurgia definitiva seja realizada em um segundo momento, se as condições do paciente permitirem.\n\nAlternativa (c) Incorreta: O tratamento exclusivo com antibióticos em um cenário de choque séptico e coleções perivesiculares é insuficiente. O controle da fonte (*source control*) é mandatório no choque séptico. Sem a drenagem ou retirada da vesícula, a barreira física da inflamação impede que o antibiótico atinja concentrações terapêuticas adequadas dentro do órgão, mantendo o foco infeccioso ativo.\n\nAlternativa (d) Incorreta: A drenagem biliar transmural guiada por ecoendoscopia (EUS) é uma técnica avançada e promissora, porém ainda não é considerada a primeira opção na maioria dos protocolos mundiais, sendo reservada para centros de excelência ou casos onde o acesso percutâneo é inviável (ex.: ascite volumosa ou distúrbios de coagulação). O acesso percutâneo continua sendo o padrão para descompressão de emergência à beira do leito na UTI.\n\nAlternativa (e) Incorreta: A observação clínica é inadequada para um paciente em choque séptico. O atraso na intervenção para controle do foco infeccioso aumenta linearmente a mortalidade. A conduta deve ser ativa e imediata após o início da ressuscitação volêmica e antibioticoterapia.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:13.752Z"
+  },
+  {
+    "id": "AJUDA_4d8e807b-76d1-4fb2-b50e-a85e400ef1a9",
+    "originalId": "4d8e807b-76d1-4fb2-b50e-a85e400ef1a9",
+    "statement": "Em relação à pré-eclâmpsia (PE), analise as afirmativas e assinale a alternativa correta.\n\nI. Convulsões tônico-clônicas, focais ou multifocais, na ausência de outras causas como epilepsia, isquemia cerebral, hemorragia intracraniana ou uso de drogas ilícitas, representam complicação que pode ser evitada com uso de sulfato de magnésio.\nII. Para estabelecimento de diagnóstico, é sempre necessário evidência de proteinúria (acima de 300mg em urina de 24 horas ou índice proteinúria por creatinúria em amostra de urina superior a 0,3).\nIII. São sinais clínicos de intoxicação por sulfato de magnésio: ausência de reflexos tendinosos, movimentos respiratórios abaixo de 12 ventilações por minuto e diurese menor que 100mL em período de 4 horas.\nIV. Descolamento prematuro da placenta (DPP), coagulação intravascular disseminada (CIVD), insuficiência renal aguda, edema agudo do pulmão, pneumonia aspirativa e parada cardiorrespiratória são complicações possíveis de quadros de PE.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as afirmativas I e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas II e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas I, III e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmativas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Afirmativa I: Correta. A descrição refere-se à eclâmpsia, que é a ocorrência de crises convulsivas em pacientes com pré-eclâmpsia. O sulfato de magnésio é o padrão-ouro na prevenção (em casos de pré-eclâmpsia com sinais de gravidade) e no tratamento dessas convulsões, sendo superior a outros anticonvulsivantes, como a fenitoína ou os benzodiazepínicos.\n\nAfirmativa II: Incorreta. Atualmente, os principais consensos nacionais e internacionais (como os da FEBRASGO e ACOG) estabelecem que a proteinúria não é mais obrigatória para o diagnóstico de pré-eclâmpsia. Na ausência de proteinúria, o diagnóstico pode ser firmado se a paciente apresentar hipertensão de início recente (após 20 semanas de gestação) associada a disfunções orgânicas, como trombocitopenia, insuficiência renal, alteração da função hepática, edema agudo de pulmão ou sintomas visuais/cerebrais.\n\nAfirmativa III: Correta. O monitoramento da toxicidade pelo sulfato de magnésio é fundamental e baseia-se em parâmetros clínicos, já que o magnésio é excretado quase exclusivamente pelos rins. A perda do reflexo patelar (tendinoso) é o primeiro sinal de intoxicação. A depressão respiratória (frequência respiratória abaixo de 12-16 incursões por minuto) indica níveis tóxicos mais elevados. A monitorização da diurese é essencial porque, se houver oligúria (menos de 25 a 30 mL/h ou cerca de 100 mL em 4 horas), o risco de acúmulo da droga e consequente parada cardiorrespiratória aumenta significativamente.\n\nAfirmativa IV: Correta. A pré-eclâmpsia, especialmente em suas formas graves, é uma doença sistêmica que pode levar a múltiplas complicações catastróficas. O descolamento prematuro de placenta (DPP) é uma das principais causas de mortalidade perinatal e materna associada à hipertensão. A CIVD e a insuficiência renal são complicações hematológicas e metabólicas graves, enquanto o edema agudo de pulmão é uma das principais causas de admissão em UTI nessas pacientes. A pneumonia aspirativa e a parada cardiorrespiratória podem ocorrer como desdobramentos de crises convulsivas ou toxicidade medicamentosa.\n\nConclusão: Como as afirmativas I, III e IV estão corretas, a alternativa (c) é o gabarito da questão.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:13.752Z"
+  },
+  {
+    "id": "AJUDA_4d95bd1d-ea59-401d-8beb-1ab51853a9ad",
+    "originalId": "4d95bd1d-ea59-401d-8beb-1ab51853a9ad",
+    "statement": "Em relação aos pólipos colônicos, assinale a alternativa incorreta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pólipos adenomatosos e pólipos serrilhados representam os dois principais subtipos neoplásicos que servem como precursores diretos para a maioria dos câncer colorretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pólipos serrilhados são uma designação abrangente que inclui pólipos hiperplásicos, lesões serrilhadas sésseis e adenomas serrilhados tradicionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A principal distinção entre pólipos malignos e suas lesões precursoras benignas é sua localização no cólon.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Os pólipos adenomatosos podem ser divididos em tipos tubulares, tubulovilosos ou vilosos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "As lesões polipoides podem ser pediculadas, subpedunculadas ou sésseis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A alternativa incorreta é a letra C.\n\nJustificativa das alternativas:\n\nAlternativa C (Incorreta): A distinção entre um pólipo maligno e um pólipo benigno (adenoma) não tem relação com a localização anatômica da lesão no cólon (se está no cólon direito, esquerdo ou reto). O que define a malignidade de um pólipo é a análise histopatológica, caracterizada pela invasão de células neoplásicas através da camada muscular da mucosa, atingindo a submucosa.\n\nAlternativa A (Correta): A literatura médica estabelece que a maioria dos carcinomas colorretais deriva de duas linhagens principais de precursores neoplásicos: a via clássica adenoma-carcinoma (envolvendo pólipos adenomatosos) e a via serrilhada (envolvendo lesões serrilhadas).\n\nAlternativa B (Correta): O termo \"pólipos serrilhados\" é uma classificação histológica que agrupa diferentes tipos de lesões que compartilham o aspecto de \"dente de serra\" nas criptas epiteliais. Este grupo inclui os pólipos hiperplásicos (geralmente sem potencial maligno no cólon distal), as lesões serrilhadas sésseis (com potencial de malignização) e os adenomas serrilhados tradicionais.\n\nAlternativa D (Correta): Os adenomas convencionais são classificados histologicamente com base em sua arquitetura de crescimento. São chamados de tubulares quando possuem predominância de estruturas tubulares (mais comuns), vilosos quando apresentam projeções digitiformes (associados a maior risco de displasia de alto grau) ou tubulovilosos quando apresentam características mistas.\n\nAlternativa E (Correta): Esta alternativa descreve a morfologia macroscópica dos pólipos. Pólipos pediculados são aqueles que possuem uma haste (pedículo) ligando a cabeça do pólipo à parede do cólon. Pólipos sésseis são planos e possuem base larga, \"sentados\" diretamente na mucosa. Os subpediculados apresentam uma base de implantação intermediária, com um pedículo muito curto ou esboçado.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:13.752Z"
+  },
+  {
+    "id": "AJUDA_4d9adb42-4e03-45e3-ab47-cbdf52e4af0c",
+    "originalId": "4d9adb42-4e03-45e3-ab47-cbdf52e4af0c",
+    "statement": "Paciente de 24 anos, comparece a UBS pois vem apresentando quadro de dispneia leve aos esforços, faz uso de cigarro eletrônico, há três anos, com dose de 15 mg de nicotina em 3 a 4 dias, refere utilizar mais pela noite quando está ansioso, veio a consulta pois pretende parar de fumar. A terapêutica instituída, neste caso, deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "orientar diminuir a nicotina de 15 mg para 5 mg por sete dias, e progressivamente diminuir para 1,5 mg em vinte dias e depois 0,5 mg em trinta dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "indicar terapia cognitivo comportamental e bupropiona 150 mg, 1 vez ao dia por três dias, depois iniciar 150 mg 2x ao dia por 12 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "iniciar bupropiona 150 mg, duas vezes ao dia por quatro semanas, sendo reavaliado para iniciar a terapia cognitivo comportamental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "iniciar terapia cognitivo comportamental e em quatro a seis semanas, reavaliar para iniciar bupropiona 150 mg, 1 vez ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "acolher a demanda do paciente e indicar goma de mascar de nicotina ou adesivo de nicotina, reavalia-lo em quatro semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo do tabagismo relacionado ao uso de cigarros eletrônicos (Vaping), um tema de relevância crescente devido à alta prevalência entre jovens. O ponto central é entender que o tratamento para a dependência de nicotina, independentemente da via de entrega (combustão ou vaporização), segue as mesmas diretrizes do Ministério da Saúde e do INCA.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A \"desmame\" gradual da concentração de nicotina no próprio dispositivo eletrônico não é uma estratégia validada por diretrizes clínicas. O uso do cigarro eletrônico mantém o gatilho comportamental (gestual) e a exposição a solventes e metais pesados. O objetivo do tratamento é a cessação total e a substituição do hábito por métodos seguros.\n\nAlternativa b) Correta. Representa o padrão-ouro no tratamento da dependência de nicotina grave. A Terapia Cognitivo-Comportamental (TCC) é o pilar obrigatório. A Bupropiona é um antidepressivo que atua na redução da fissura e dos sintomas de abstinência. O esquema posológico está perfeito: 150 mg uma vez ao dia nos primeiros três dias (fase de adaptação) e 150 mg duas vezes ao dia (com intervalo mínimo de 8 horas entre as doses) a partir do quarto dia, mantendo por 12 semanas. O paciente do caso apresenta ansiedade e uso noturno, onde a bupropiona tem excelente indicação.\n\nAlternativa c) Incorreta. Inverter a ordem ou postergar a TCC é um erro metodológico. A abordagem comportamental deve sempre acompanhar ou preceder o início da medicação, pois é ela que fornece as ferramentas para o paciente lidar com gatilhos emocionais, como a ansiedade citada no relato.\n\nAlternativa d) Incorreta. Não há necessidade de aguardar quatro a seis semanas para iniciar a farmacoterapia em um paciente que demonstra dependência instalada e deseja parar. O tratamento combinado (TCC + Medicamento) oferece taxas de cura significativamente maiores do que a terapia isolada, devendo ser iniciado o quanto antes após a decisão do paciente.\n\nAlternativa e) Incorreta. Embora a Terapia de Reposição Nicotínica (goma ou adesivo) seja um tratamento de primeira linha, a alternativa peca por omitir a TCC, que é fundamental. Além disso, em pacientes que relatam ansiedade como gatilho principal, a Bupropiona costuma ser a escolha medicamentosa inicial mais estratégica para o controle do hábito.\n\nResumo Didático: No tratamento do tabagismo/vaping, lembre-se do binômio TCC + Farmacoterapia. A Bupropiona deve ser iniciada pelo menos 7 dias antes da \"data do stop\" (dia de parar de fumar), atingindo a dose plena (300 mg/dia) após o terceiro dia de uso, para que o paciente esteja devidamente medicado quando cessar o uso do dispositivo.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:13.752Z"
+  },
+  {
+    "id": "AJUDA_4d9ced33-1eae-4e8f-bbe5-22a883bee01d",
+    "originalId": "4d9ced33-1eae-4e8f-bbe5-22a883bee01d",
+    "statement": "Nuligesta de 32 anos veio à consulta por desejar engravidar. Relatou apresentar ciclos menstruais regulares e usar regularmente anticoncepcional oral. Ao toque vaginal, o útero estava aumentado de volume (compatível com 12 semanas). A ultrassonografia pélvica transvaginal revelou 3 miomas no útero: um intramural de 2 cm de diâmetro, outro subseroso de 3 cm e o terceiro submucoso de 0,8 cm. A conduta mais adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever análogo do GnRH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Liberar a paciente para gestar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar embolização da artéria uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar miomectomia histeroscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar miomectomia laparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Essa questão aborda a conduta diante de miomas uterinos em uma paciente que deseja engravidar. Para resolvê-la, é fundamental analisar a localização dos miomas, o tamanho do útero e, principalmente, o histórico reprodutivo da paciente.\n\nAnálise Clínica:\nA paciente tem 32 anos, é nuligesta e nunca tentou engravidar, pois usa anticoncepcional oral regularmente. Embora o útero esteja aumentado (12 semanas), os miomas descritos são pequenos (2 cm, 3 cm e 0,8 cm). O ponto-chave é que não há diagnóstico de infertilidade, uma vez que ela ainda não interrompeu o método contraceptivo para tentar a concepção.\n\nAnálise das Alternativas:\n\na) Incorreta. Os análogos do GnRH são utilizados temporariamente para reduzir o volume uterino e o tamanho dos miomas antes de uma cirurgia ou para controle de sangramento grave. Eles causam um estado de hipoestrogenismo (menopausa farmacológica), o que impediria a gestação imediata e não resolveria o problema de forma definitiva, pois os miomas voltam a crescer após a suspensão do uso.\n\nb) Correta. Esta é a conduta mais adequada porque a paciente ainda não tentou engravidar. Miomas subserosos (3 cm) e intramurais que não distorcem a cavidade endometrial (2 cm) geralmente não interferem na fertilidade. Embora o mioma submucoso (0,8 cm) possa estar associado a uma menor taxa de implantação e maior risco de abortamento, a conduta inicial para uma mulher jovem, sem histórico de infertilidade ou sintomas exuberantes (ela tem ciclos regulares sob uso de pílula), é permitir a tentativa de gestação espontânea. Caso surjam dificuldades ou complicações (como infertilidade ou abortamentos de repetição), a conduta seria revista.\n\nc) Incorreta. A embolização da artéria uterina é contraindicada para mulheres que ainda desejam gestar. Esse procedimento pode comprometer a reserva ovariana e a vascularização do miométrio e do endométrio, aumentando o risco de complicações gestacionais graves, como acretismo placentário e restrição de crescimento fetal.\n\nd) Incorreta. A miomectomia histeroscópica é o tratamento de escolha para miomas submucosos que causam sangramento uterino anormal ou que estão comprovadamente interferindo na fertilidade. No entanto, como a paciente ainda não tentou engravidar e o mioma é muito pequeno (menos de 1 cm), a conduta conservadora de liberar para gestar prevalece sobre a intervenção cirúrgica imediata neste cenário de prova.\n\ne) Incorreta. A miomectomia laparoscópica seria indicada para miomas intramurais ou subserosos volumosos e sintomáticos. No caso descrito, os miomas não são grandes o suficiente para justificar uma cirurgia abdominal antes mesmo de uma tentativa de concepção, especialmente pelo risco de formação de aderências pélvicas pós-operatórias que poderiam, estas sim, causar infertilidade tubária.\n\nResumo da Conduta:\nNa ausência de sintomas compressivos, dor ou sangramento refratário, e sem o diagnóstico de infertilidade (definido por um ano de tentativas sem sucesso), deve-se adotar a conduta expectante em relação aos miomas e orientar a paciente a interromper o anticoncepcional para tentar engravidar.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:13.752Z"
+  },
+  {
+    "id": "AJUDA_4d9e8cb3-d103-46c9-80bf-042fa2525e66",
+    "originalId": "4d9e8cb3-d103-46c9-80bf-042fa2525e66",
+    "statement": "Pouca atenção tem sido dispensada ao planejamento das gestações e devemos lembrar que quando se assiste uma mulher, especialmente portadora de doença crônica e em idade fértil, é papel do médico conversar e orientar quanto ao planejamento futuro das gestações. A esse respeito,",
+    "options": [
+      {
+        "id": "A",
+        "text": "deve ser indicado ácido fólico para todas as mulheres que pretendem engravidar ou que não estejam utilizando método contraceptivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "deve-se indicar vitamina A 25 000 UI para mulheres portadoras de cirurgia bariátrica em programação de gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "liberar gestação quando a Hb glicada for menor que 7% em pacientes diabéticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "em pacientes com hipotiroidismo, corrigir o TSH para < 5.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda o manejo pré-concepcional, etapa fundamental para reduzir riscos maternos e fetais, especialmente em mulheres com comorbidades. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) CORRETA: O ácido fólico deve ser iniciado pelo menos 30 dias antes da concepção e mantido durante o primeiro trimestre. A recomendação padrão é de 0,4 mg/dia para a população geral e doses maiores (4 a 5 mg/dia) para mulheres de alto risco (uso de anticonvulsivantes, antecedentes de defeitos do tubo neural em gestações anteriores ou obesidade). Como grande parte das gestações não é planejada, a orientação estende-se a todas as mulheres em idade fértil que não utilizam métodos contraceptivos eficazes, visando prevenir defeitos do tubo neural, que se fecha precocemente (até o 28º dia pós-concepção).\n\nAlternativa (b) INCORRETA: A vitamina A em altas doses é reconhecidamente teratogênica. O consumo de doses superiores a 10.000 UI por dia está associado a malformações fetais envolvendo o sistema nervoso central, coração e estruturas craniofaciais. Embora pacientes pós-cirurgia bariátrica precisem de monitorização nutricional e reposição vitamínica, a dose de 25.000 UI é considerada tóxica e contraindicada no período pré-concepcional e gestacional.\n\nAlternativa (c) INCORRETA: O controle glicêmico rigoroso é crucial antes da gestação para minimizar o risco de abortamento e malformações congênitas (como a Síndrome da Regressão Caudal). As diretrizes da Sociedade Brasileira de Diabetes e da ADA recomendam que a hemoglobina glicada (HbA1c) esteja o mais próxima possível do normal, idealmente abaixo de 6,0% ou 6,5%. Um valor de 7% ainda confere um risco elevado de complicações fetais e não é o alvo ideal para liberar a concepção.\n\nAlternativa (d) INCORRETA: Para mulheres com hipotireoidismo que planejam engravidar, o alvo do TSH é mais rígido do que para a população geral. Recomenda-se ajustar a dose da levotiroxina para manter o TSH abaixo de 2,5 mUI/L antes da concepção. Níveis de TSH próximos a 5 são considerados elevados para o início de uma gestação, podendo aumentar o risco de perda gestacional e comprometer o desenvolvimento neurocognitivo fetal.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:13.752Z"
+  },
+  {
+    "id": "AJUDA_4da707d9-21fc-4f7b-a9d2-af390654b478",
+    "originalId": "4da707d9-21fc-4f7b-a9d2-af390654b478",
+    "statement": "Mulher, 46 anos, com disfagia de início insidioso, inicialmente para sólidos, depois pastosos, fez exame radiológico contrastado de esôfago que mostrou dilatação esofágica sugestiva de megaesôfago. Classifique radiologicamente esta patologia segundo o grau de dilatação para o megaesôfago grau III.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dilatação entre 4 e 7 cm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dilatação entre 3 e 8 cm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Dilatação entre 7 e 10 cm.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Dilatação entre 5 e 9 cm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Acima de 10 cm.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A classificação radiológica do megaesôfago é fundamental para graduar a gravidade da acalasia e orientar a conduta terapêutica. A escala mais utilizada na prática médica brasileira é a Classificação de Rezende (também conhecida como Rezende-Mascarenhas), que avalia o diâmetro do corpo esofágico e as alterações na motilidade e morfologia observadas no exame contrastado (esofagograma).\n\nDe acordo com os critérios de Rezende:\n\nGrau I: O esôfago possui calibre normal (até 4 cm de diâmetro), apresentando apenas um pequeno atraso no esvaziamento do contraste.\nGrau II: O diâmetro varia entre 4 e 7 cm. Há presença de retenção de contraste e ondas terciárias frequentes (desordenadas).\nGrau III: O esôfago apresenta grande dilatação, com diâmetro entre 7 e 10 cm. Nota-se hipotonia da musculatura e nítida retenção do meio de contraste.\nGrau IV: O diâmetro é superior a 10 cm. O esôfago torna-se alongado e tortuoso, muitas vezes dobrando-se sobre o diafragma, recebendo o nome de dolicomegaesôfago.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O intervalo de 4 a 7 cm caracteriza o megaesôfago Grau II.\n\nAlternativa b) Incorreta. Esta faixa de 3 a 8 cm não corresponde a nenhum dos marcos estabelecidos pela classificação de Rezende.\n\nAlternativa c) Correta. Conforme a classificação técnica, o Grau III é definido precisamente pelo diâmetro entre 7 e 10 cm, indicando um estágio avançado de dilatação.\n\nAlternativa d) Incorreta. Os valores de 5 a 9 cm não são utilizados como parâmetros na graduação radiológica desta patologia.\n\nAlternativa e) Incorreta. Dilatações com diâmetro acima de 10 cm são classificadas como Grau IV, representando a fase de descompensação máxima do órgão.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Disfagia, Alterações Estruturais e Distúrbios de Motilidade do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:13.752Z"
+  },
+  {
+    "id": "AJUDA_4dc9d7fc-6db9-4fb1-a301-7397ecabc60f",
+    "originalId": "4dc9d7fc-6db9-4fb1-a301-7397ecabc60f",
+    "statement": "Uma mulher de 56 anos com diagnóstico de Diabetes Mellitus tipo II insulinodependente, em uso regular das medicações, foi realizar exames de rotina, sendo solicitado pelo médico assistente uma prova tuberculínica ou PPD. A paciente negou tosse ou perda de peso, ou contato com Tuberculose.\nI. Trata-se de uma conduta assertiva de investigação de tuberculose latente.\n\nPORQUE\n\nII. O DM aumenta o risco de reativação da infecção por Mycobacterium tuberculosis e se PPD >10 mm, deve-se excluir a doença em atividade e tratar tuberculose latente. \n\nA respeito das asserções acima, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "As asserções I e II são verdadeiras e a II é uma justificativa correta da I.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "As asserções I e II são verdadeiras, mas a II não é uma justificativa correta da I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A asserção I é uma proposição verdadeira e a II é uma proposição falsa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "As asserções I e II são proposições falsas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da Questão:\n\nA questão aborda o rastreio e manejo da Tuberculose Latente (ILTB) em pacientes com condições clínicas de risco, especificamente o Diabetes Mellitus (DM).\n\nAsserção I: Trata-se de uma conduta assertiva de investigação de tuberculose latente.\nEsta proposição é verdadeira. Pacientes com Diabetes Mellitus, especialmente os insulinodependentes ou com controle glicêmico inadequado, possuem um estado de imunossupressão relativa que aumenta o risco de progressão de uma infecção latente para a forma ativa da tuberculose. Por isso, as diretrizes do Ministério da Saúde do Brasil e organizações internacionais recomendam a triagem para ILTB em grupos de risco específicos, incluindo diabéticos.\n\nAsserção II: O DM aumenta o risco de reativação da infecção por Mycobacterium tuberculosis e se PPD > 10 mm, deve-se excluir a doença em atividade e tratar tuberculose latente.\nEsta proposição também é verdadeira. O Diabetes Mellitus compromete a imunidade celular, facilitando a multiplicação do bacilo. Quanto ao ponto de corte do PPD (Teste Tuberculínico), o valor de 10 mm é tradicionalmente utilizado para pacientes com condições de saúde que aumentam o risco de adoecimento, como o DM (embora diretrizes mais recentes possam considerar 5 mm em alguns contextos de imunossupressão grave, o valor de 10 mm permanece correto para o grupo citado em diversas referências e protocolos de prova). Antes de iniciar o tratamento da latência, é mandatório excluir a doença ativa através da avaliação clínica (ausência de sintomas) e, geralmente, exames de imagem, para evitar o tratamento monoterápico inadequado de uma tuberculose ativa.\n\nRelação entre as asserções:\nA asserção II justifica a asserção I. Realizamos a investigação (conduta assertiva) justamente porque o risco de reativação é maior nesse público e existe um protocolo claro de conduta caso o teste seja positivo.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Ambas as frases estão tecnicamente corretas e a segunda explica a razão pela qual o médico deve realizar a triagem na paciente diabética.\n\nAlternativa b) Incorreta. A segunda asserção fornece exatamente a justificativa epidemiológica e clínica para a realização da conduta descrita na primeira.\n\nAlternativa c) Incorreta. A asserção II não é falsa; o Diabetes é um fator de risco estabelecido e o manejo da ILTB segue o fluxograma de positividade do teste tuberculínico seguido da exclusão de doença ativa.\n\nAlternativa d) Incorreta. Ambas as proposições são fundamentadas nas diretrizes de controle da tuberculose. O rastreio em grupos de risco é uma ferramenta essencial de saúde pública para reduzir a incidência da doença.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Tuberculose",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:13.752Z"
+  }
+]

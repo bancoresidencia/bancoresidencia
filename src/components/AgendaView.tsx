@@ -33,6 +33,13 @@ import {
   TimelineFilter
 } from './dashboard/scheduleTypes';
 import {
+  loadUserScheduledTasks,
+  saveUserScheduledTask,
+  deleteUserScheduledTask,
+  clearAllUserScheduledTasks,
+  getUserScheduledTasksStorageKey
+} from '@/services/userScheduledTasksService';
+import {
   buildGoogleCalendarTemplateUrl,
   fetchTodayEventsFromGoogleApi,
   createEventInGoogleCalendarApi,
@@ -278,10 +285,18 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     };
   }, [todaySessions]);
 
-  // Sincronização entre abas do navegador via Storage Event
+  // Sincronização e carregamento de tarefas vinculadas à conta do aluno
   useEffect(() => {
+    let active = true;
+    loadUserScheduledTasks(user?.id).then((tasks) => {
+      if (active) {
+        setUserScheduledTasks(tasks);
+      }
+    });
+
     const handleStorageChange = (e: StorageEvent) => {
-      if (e.key === 'bancoresidencia_user_scheduled_tasks' && e.newValue) {
+      const userTasksKey = getUserScheduledTasksStorageKey(user?.id);
+      if ((e.key === userTasksKey || e.key === 'bancoresidencia_user_scheduled_tasks') && e.newValue) {
         try { setUserScheduledTasks(JSON.parse(e.newValue)); } catch { }
       }
       if (e.key === 'bancoresidencia_real_calendar_events' && e.newValue) {
@@ -292,8 +307,11 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       }
     };
     window.addEventListener('storage', handleStorageChange);
-    return () => window.removeEventListener('storage', handleStorageChange);
-  }, []);
+    return () => {
+      active = false;
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, [user?.id]);
 
   // Limpeza de descrições brutas do Google
   const cleanEventDescription = useCallback((desc?: string) => {
@@ -780,9 +798,9 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         };
       });
 
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
-      }
+      updated.forEach((t) => {
+        saveUserScheduledTask(t, user?.id).catch(() => {});
+      });
       return updated;
     });
 
@@ -814,12 +832,9 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       rationale: 'Obrigação / Tarefa de calendário adicionada.'
     };
 
-    setUserScheduledTasks((prev) => {
-      const updated = [...prev, newTask];
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
-      }
-      return updated;
+    setUserScheduledTasks((prev) => [...prev, newTask]);
+    saveUserScheduledTask(newTask, user?.id).catch((err) => {
+      console.warn('Erro ao salvar tarefa na conta do aluno:', err);
     });
 
     setTaskTitle('');
@@ -923,11 +938,10 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         setUserScheduledTasks(prev => {
           const prevIds = new Set(prev.map(p => p.id));
           const newItems = suggestionsToAdd.filter(s => !prevIds.has(s.id)).map(s => ({ ...s, isAiSuggested: true }));
-          const updated = [...prev, ...newItems];
-          if (typeof window !== 'undefined') {
-            localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
-          }
-          return updated;
+          newItems.forEach((item) => {
+            saveUserScheduledTask(item, user?.id).catch(() => {});
+          });
+          return [...prev, ...newItems];
         });
       }
     }
@@ -981,13 +995,11 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
   };
 
   const handleRemoveScheduledTask = (taskId: string) => {
-    setUserScheduledTasks((prev) => {
-      const updated = prev.filter(t => t.id !== taskId);
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
-      }
-      return updated;
+    setUserScheduledTasks((prev) => prev.filter(t => t.id !== taskId));
+    deleteUserScheduledTask(taskId, user?.id).catch((err) => {
+      console.warn('Erro ao remover tarefa remota:', err);
     });
+
     setExportedSlotIds(prev => {
       const next = { ...prev };
       delete next[taskId];
@@ -1001,8 +1013,10 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
   const handleClearUserScheduledTasks = () => {
     setUserScheduledTasks([]);
     setExportedSlotIds({});
+    clearAllUserScheduledTasks(user?.id).catch((err) => {
+      console.warn('Erro ao limpar tarefas remotas:', err);
+    });
     if (typeof window !== 'undefined') {
-      localStorage.removeItem('bancoresidencia_user_scheduled_tasks');
       localStorage.removeItem('bancoresidencia_exported_slots');
       localStorage.removeItem('bancoresidencia_batch_sync_completed');
     }
@@ -2181,11 +2195,10 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
             const newItems = tasks
               .filter(s => !prevIds.has(s.id))
               .map(s => ({ ...s, isAiSuggested: true }));
-            const updated = [...prev, ...newItems];
-            if (typeof window !== 'undefined') {
-              localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
-            }
-            return updated;
+            newItems.forEach((item) => {
+              saveUserScheduledTask(item, user?.id).catch(() => {});
+            });
+            return [...prev, ...newItems];
           });
           setCalendarSyncSuccessMsg(`${tasks.length} atividade(s) adicionada(s) ao cronograma!`);
         }}

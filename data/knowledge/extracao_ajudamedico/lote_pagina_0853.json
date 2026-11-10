@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_ecc07c35-95c3-492e-a30c-d4ee1ef85ad2",
+    "originalId": "ecc07c35-95c3-492e-a30c-d4ee1ef85ad2",
+    "statement": "Criança de 4 anos, no transoperatório de adenoidectomia, faz hipertermia de 41°C e apresenta baixo débito cardíaco. Imediatamente, é administrado dantrolene, pois inferiu-se corretamente que o gatilho foi:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Translocação bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infarto agudo do miocárdio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipertermia maligna pelo uso de succinilcolina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sangramento nasal, em decorrência de Coagulação Intravascular Disseminada (CIVD).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito — hipertermia súbita e grave (41 °C) associada à instabilidade hemodinâmica (baixo débito cardíaco) durante um procedimento cirúrgico sob anestesia — é a apresentação clássica da Hipertermia Maligna (HM). A confirmação diagnóstica implícita na questão é o uso do dantrolene, que é o único antídoto específico para essa condição.\n\nAlternativa A: Incorreta. A translocação bacteriana pode levar a quadros de sepse e febre; porém, o início costuma ser menos abrupto do que o observado na HM, e a temperatura raramente atinge níveis tão elevados instantaneamente no transoperatório. Além disso, o dantrolene não possui efeito sobre processos infecciosos.\n\nAlternativa B: Incorreta. O Infarto Agudo do Miocárdio (IAM) é extremamente raro em crianças de 4 anos sem cardiopatias congênitas graves ou doenças inflamatórias específicas (como a doença de Kawasaki). Embora possa causar baixo débito cardíaco, o IAM não justifica uma febre de 41 °C, nem seria tratado com dantrolene.\n\nAlternativa C: Correta. A Hipertermia Maligna é uma desordem farmacogenética do músculo esquelético. Quando indivíduos suscetíveis são expostos a agentes-gatilho, ocorre uma liberação desenfreada de cálcio do retículo sarcoplasmático, gerando um estado hipermetabólico intenso. Os principais gatilhos são os anestésicos inalatórios halogenados e o relaxante muscular despolarizante succinilcolina. O tratamento de escolha absoluto é a interrupção dos gatilhos, o resfriamento do paciente e a administração imediata de dantrolene sódico.\n\nAlternativa D: Incorreta. O sangramento nasal e a Coagulação Intravascular Disseminada (CIVD) podem ocorrer como complicações tardias e graves da Hipertermia Maligna não tratada, devido ao colapso metabólico e térmico. No entanto, eles não são o gatilho da crise, mas sim consequências do dano sistêmico. O foco da questão é o gatilho que levou ao uso do dantrolene.",
+    "exam": "AMRIGS",
+    "year": 2025,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/27101c38226b3d0722add5feda4fe451dce23661c102acc0cd75e7236b580ae3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/58314bd8f730a933b2c5204ca129e7110cb6fab356fdcd3a4655e9bf53568bf0.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:26.109Z"
+  },
+  {
+    "id": "AJUDA_ecc0bb88-3ef4-4287-a0c6-4c1afd8d1519",
+    "originalId": "ecc0bb88-3ef4-4287-a0c6-4c1afd8d1519",
+    "statement": "Homem de 52 anos, diabético tipo 2, apresenta febre baixa e dor em hipocôndrio direito há 10 dias, associadas à inapetência e perda ponderal de 4 kg. Nega icterícia, náuseas ou vômitos. Relata controle glicêmico irregular. \nExame físico: temperatura 38,1 °C, dor à palpação profunda em hipocôndrio direito, sem visceromegalias palpáveis.\nLaboratório: leucócitos 13.000/mm³, PCR 80 mg/L, TGO/TGP discretamente elevadas. Hemoculturas positivas para Klebsiella pneumoniae adquirida na comunidade. Ultrassonografia prévia de abdome sem colelitíase.\nQual complicação deve ser ativamente investigada nesse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Endocardite infecciosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Abscesso hepático piogênico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Trombose de veia porta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Peritonite bacteriana espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado é clássico para a suspeita de Abscesso Hepático Piogênico, especialmente considerando o perfil do paciente e o agente etiológico isolado.\n\nAnálise do caso clínico:\n\nO paciente é um homem de 52 anos, diabético com controle irregular, apresentando uma síndrome febril prolongada (10 dias), dor no hipocôndrio direito e perda ponderal. O diabetes mellitus é o principal fator de risco para o desenvolvimento de abscessos hepáticos por Klebsiella pneumoniae. A ausência de colelitíase no ultrassom afasta a colecistite aguda como causa primária, direcionando a investigação para o parênquima hepático.\n\nA presença de hemoculturas positivas para Klebsiella pneumoniae de origem comunitária, associada a sintomas abdominais em um paciente diabético, define a necessidade de investigar a \"Síndrome de Abscesso Hepático por Klebsiella\". Esta bactéria tem a capacidade de causar abscessos primários (sem doença biliar prévia) e pode apresentar um comportamento invasivo, com disseminação hematogênica.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a Klebsiella pneumoniae possa causar endocardite em casos de bacteremia, ela não é o foco principal a ser investigado diante de dor em hipocôndrio direito e alterações de enzimas hepáticas. A endocardite costuma ser uma complicação secundária ou estar associada a outros fatores de risco valvares, enquanto o fígado é o foco primário sugerido pelos sintomas.\n\nb) Correta. O abscesso hepático piogênico é a principal suspeita. A tríade de febre, dor em hipocôndrio direito e hepatomegalia (embora a visceromegalia possa não ser palpada inicialmente devido à localização do abscesso) em um paciente diabético com bacteremia por Klebsiella é altamente sugestiva. A investigação deve ser feita imediatamente com exames de imagem, como Tomografia Computadorizada de abdome, que possui maior sensibilidade que a ultrassonografia para pequenas coleções.\n\nc) Incorreta. A trombose de veia porta (pileflebite) pode ocorrer como uma complicação de infecções intra-abdominais graves, mas é menos comum que o abscesso propriamente dito. Embora deva ser considerada em quadros sépticos abdominais, o foco infeccioso no parênquima hepático (abscesso) é a investigação prioritária e mais provável dado o agente isolado.\n\nd) Incorreta. A Peritonite Bacteriana Espontânea (PBE) ocorre tipicamente em pacientes com cirrose hepática e ascite preexistente. O paciente do caso não apresenta sinais de hepatopatia crônica (estigmas periféricos) ou ascite ao exame físico, e a Klebsiella causadora de PBE geralmente está associada à translocação bacteriana em cirróticos, não sendo a principal hipótese para dor localizada em hipocôndrio direito num paciente sem ascite.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Sepse",
+      "Vesícula e Vias Biliares",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:26.109Z"
+  },
+  {
+    "id": "AJUDA_ecc5c168-a39f-4009-b0e8-88a27869ae34",
+    "originalId": "ecc5c168-a39f-4009-b0e8-88a27869ae34",
+    "statement": "Coqueluche é uma infecção aguda do trato respiratório causada pela bactéria Bordetella pertussis. A palavra coqueluche significa “tosse violenta”, expressão que descreve apropriadamente a característica mais consistente e proeminente da doença. \nO nome chinês para coqueluche é “tosse de 100 dias”, termo que descreve o curso clínico da doença com precisão. A identificação de B. pertussis foi relatada pela primeira vez por Bordet e Gengou em 1906.\nA classe de antibióticos mais adequada para tratamento dessa doença é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "fosfomicina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "quinolona;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tetraciclina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "beta-lactâmico;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "macrolídeo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A coqueluche é uma infecção respiratória aguda causada pela Bordetella pertussis, um cocobacilo Gram-negativo. O tratamento antibiótico tem dois objetivos fundamentais: eliminar a bactéria da nasofaringe, interrompendo a cadeia de transmissão, e, quando iniciado precocemente (preferencialmente na fase catarral), reduzir a gravidade e a duração do curso clínico.\n\nAlternativa a) Incorreta. A fosfomicina é um antibiótico utilizado quase exclusivamente para o tratamento de infecções do trato urinário inferior (cistites). Ela atua na inibição da síntese da parede celular bacteriana em uma etapa específica que não confere eficácia clínica contra a B. pertussis.\n\nAlternativa b) Incorreta. Embora as quinolonas possuam um espectro de ação que inclua diversos patógenos respiratórios, elas não são indicadas para o tratamento da coqueluche. Não existem evidências clínicas que sustentem seu uso como primeira linha ou alternativa padrão para este agente.\n\nAlternativa c) Incorreta. As tetraciclinas (como a doxiciclina) não são os fármacos de escolha para a coqueluche. Além disso, seu uso é evitado ou contraindicado em crianças menores de 8 anos (a população pediátrica é a mais afetada pela doença) devido ao risco de toxicidade óssea e pigmentação permanente do esmalte dentário.\n\nAlternativa d) Incorreta. Os beta-lactâmicos, classe que inclui penicilinas e cefalosporinas, são ineficazes no tratamento da coqueluche. A Bordetella pertussis apresenta resistência intrínseca ou resposta clínica muito pobre a esses fármacos in vivo, falhando em erradicar a bactéria da nasofaringe do paciente.\n\nAlternativa e) Correta. A classe dos macrolídeos representa o tratamento padrão-ouro para a coqueluche. As opções terapêuticas incluem a azitromicina, a claritromicina e a eritromicina. Atualmente, a azitromicina é a droga preferencial em todas as faixas etárias por permitir um tratamento mais curto, apresentar melhor adesão e menos efeitos colaterais gastrointestinais. Especificamente em lactentes menores de um mês de vida, a azitromicina é a única recomendada, pois o uso de eritromicina nesta faixa etária está associado ao risco aumentado de estenose hipertrófica do piloro. Nos casos de alergia ou intolerância aos macrolídeos, a alternativa de segunda linha é o sulfametoxazol-trimetoprima.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Coqueluche"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:26.109Z"
+  },
+  {
+    "id": "AJUDA_ecc614a3-5cda-4004-acc6-42b155971a4f",
+    "originalId": "ecc614a3-5cda-4004-acc6-42b155971a4f",
+    "statement": "Observe a imagem a seguir.\n\nA imagem acima corresponde a uma angiografia digital demonstrando o pré e pós procedimento de angioplastia de membro inferior esquerdo. Qual é a estrutura anatômica assinalada em seta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A. tibial posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tronco anterior ileolombar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A. interóssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tronco tibiofibular.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da Imagem e Contexto Anatômico:\n\nA angiografia demonstra a transição da região poplítea para os vasos infrapatelares (perna). Na anatomia arterial padrão, a artéria poplítea emite primeiro a artéria tibial anterior. O segmento remanescente, que segue um curto trajeto descendente antes de se dividir nas artérias tibial posterior e fibular (peroneira), é o tronco tibiofibular. A seta na imagem de pré-procedimento (à esquerda) aponta justamente para essa estrutura, que apresentava uma obstrução importante e foi tratada na imagem pós-procedimento (à direita), onde o fluxo sanguíneo aparece restabelecido.\n\nAnálise das alternativas:\n\na) A. tibial posterior: Incorreta. A artéria tibial posterior é um ramo que surge mais distalmente, originando-se da bifurcação final do tronco tibiofibular. Na imagem da direita, ela é o vaso que segue mais medialmente (à direita do observador) em direção ao maléolo medial.\n\nb) Tronco anterior iliolombar: Incorreta. A artéria iliolombar é um ramo da artéria ilíaca interna, localizada na região pélvica. Não possui qualquer relação anatômica com o território infrapatelar do membro inferior demonstrado no exame.\n\nc) A. interóssea: Incorreta. A nomenclatura \"artéria interóssea\" (anterior e posterior) é característica da anatomia do antebraço. Na perna, embora a artéria fibular e a tibial anterior passem próximas à membrana interóssea, os vasos principais são as tibiais e a fibular, e a estrutura de transição é denominada tronco tibiofibular.\n\nd) Tronco tibiofibular: Correta. Conforme a anatomia angiográfica, o tronco tibiofibular é o segmento arterial situado logo após a saída da artéria tibial anterior e que termina na bifurcação entre a artéria fibular e a artéria tibial posterior. É exatamente a estrutura indicada pela seta e que recebeu o tratamento de angioplastia.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/93ccc5b9565b559544a9984da1027619d69df68f0f362520d18f2e323e989c67.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ecc614a3-5cda-4004-acc6-42b155971a4f_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:26.627Z"
+  },
+  {
+    "id": "AJUDA_ecc7e936-f47d-40e7-b6ea-62fb13d1cebb",
+    "originalId": "ecc7e936-f47d-40e7-b6ea-62fb13d1cebb",
+    "statement": "Lactente, sexo feminino, com 18 meses, sexo feminino, sem doenças prévias, apresenta quadro febril de até 39,5 ºC, tosse e prostração, há dois dias. Há 1 dia apresenta-se letárgica e apresentou episódio de crise convulsiva tônico-clônica generalizada com duração de cerca de 5 minutos quando chegou ao pronto-socorro. Na sala de emergência, após administração de uma dose de diazepan, por via retal, houve cessação da crise convulsiva e foi possível obter um acesso venoso periférico. Na avaliação sistematizada em sala de emergência, a paciente apresentava os seguintes dados de exame físico e monitorização: A: via aérea pérvia. B: murmúrio vesicular presente sem ruídos adventícios, boa expansibilidade, FR: 48 ipm. C: FC 158 bpm, BRNF sem sopros, tempo perfusão periférica de 5 segundos, pulsos finos e PA 68 x 40 mmHg. D: alterna sonolência e chama pela mãe, abre os olhos quando chamada, e retira o membro ao toque e estímulo doloroso. Pupilas isofotorreagentes. Glicemia capilar de 70 mg/dL. E: sem anormalidades percebidas na exposição. A criança é rapidamente encaminhada à Unidade de Terapia Intensiva. Assinale a alternativa que apresenta a conduta mais apropriada e urgente nesse momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reverter os efeitos centrais do benzodiazepínico com flumazenil para melhorar o estado neurológico e, em seguida, iniciar expansão volêmica com solução salina a 0,9% em bolus de 20 mL/kg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar suporte ventilatório não invasivo devido à taquipneia, prescrever dexametasona para reduzir o edema cerebral após a convulsão e avaliar a necessidade de expansão volêmica com solução salina a 0,9% somente se a pressão arterial cair abaixo dos valores de choque compensado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar intubação orotraqueal imediata para proteção de via aérea devido à disfunção neurológica, iniciar vasopressores em infusão periférica contínua e aguardar os resultados dos exames laboratoriais antes de prescrever antimicrobianos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar bolus de solução salina 0,9%, 20 mL/kg em cerca de 30 minutos, administrar glicose, e iniciar antibioticoterapia empírica de amplo espectro somente após a coleta de hemoculturas e cultura de LCR para identificar o patógeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administrar bolus inicial de cristaloide balanceado de 20 mL/kg em 5–10 minutos, coletar hemoculturas e, sem aguardar seu resultado, iniciar antibioticoterapia empírica de amplo espectro por via endovenosa o mais rapidamente possível.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nA paciente de 18 meses apresenta um quadro clássico de choque séptico descompensado (ou hipotensivo). Os sinais que fundamentam esse diagnóstico são: taquicardia (FC 158 bpm), tempo de enchimento capilar prolongado (5 segundos), pulsos finos, alteração do nível de consciência (letargia/sonolência) e, crucialmente, hipotensão arterial (PA 68 x 40 mmHg). Para uma criança de 18 meses, uma pressão sistólica abaixo de 70-74 mmHg já caracteriza hipotensão. Além disso, a história de febre, tosse e crise convulsiva sugere um foco infeccioso (possivelmente pulmonar ou do sistema nervoso central).\n\nO manejo do choque séptico pediátrico baseia-se no reconhecimento precoce e na instituição imediata de expansão volêmica e antibioticoterapia.\n\nPOR QUE A ALTERNATIVA (E) ESTÁ CORRETA?\n\nEsta alternativa segue as diretrizes atuais do PALS (Pediatric Advanced Life Support) e da Surviving Sepsis Campaign International. Em pacientes com choque hipotensivo, a expansão volêmica deve ser rápida (20 mL/kg em 5 a 10 minutos) e não lenta. O uso de cristaloides balanceados é preferível em relação ao soro fisiológico 0,9% em volumes maiores para evitar acidose hiperclorêmica. A coleta de hemoculturas deve ser feita de forma ágil, mas a administração de antibióticos de amplo espectro deve ocorrer preferencialmente na primeira hora, sem nunca atrasar a medicação à espera de resultados ou de procedimentos como a punção lombar.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: O flumazenil é um antagonista de benzodiazepínicos, mas seu uso é contraindicado em pacientes com história de convulsão ou de etiologia convulsiva desconhecida, pois pode precipitar novas crises de difícil controle. Além disso, o foco principal deve ser a reversão do choque e o tratamento da infecção, não apenas o despertar da paciente.\n\nAlternativa B: O erro principal é aguardar a pressão cair \"abaixo dos valores de choque compensado\". A paciente já apresenta sinais claros de choque descompensado (hipotensão). Adiar a expansão volêmica nesse cenário aumenta drasticamente a mortalidade. A dexametasona não é o tratamento de primeira linha para o choque ou edema pós-crise convulsiva sem diagnóstico definido de meningite bacteriana específica (como por Haemophilus ou Pneumococo).\n\nAlternativa C: Embora a proteção de via aérea seja importante, a intubação orotraqueal em uma criança com choque grave pode causar colapso cardiovascular devido à pressão positiva e às drogas sedativas. A prioridade é a estabilização hemodinâmica com volume. Além disso, jamais se deve aguardar exames laboratoriais para iniciar a antibioticoterapia em um quadro de choque séptico.\n\nAlternativa D: O tempo de administração do bólus de solução salina (30 minutos) é considerado lento para um paciente em choque hipotensivo; nessa situação, o volume deve ser administrado \"em bólus\" (correndo o mais rápido possível). Outro erro grave é sugerir a coleta de LCR (líquido cefalorraquidiano) antes da estabilização. A punção lombar é absolutamente contraindicada em pacientes hemodinamicamente instáveis ou com sinais de hipertensão intracraniana.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Emergências Pediátricas",
+      "Choque em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:26.627Z"
+  },
+  {
+    "id": "AJUDA_ecccc87c-8e19-455c-85c6-7d8ee3610dda",
+    "originalId": "ecccc87c-8e19-455c-85c6-7d8ee3610dda",
+    "statement": "Durante uma ação de saúde em uma comunidade ribeirinha, você é chamado para avaliar uma criança de 11 meses que apresenta diarreia há dois dias e três episódios de vômitos desde a manhã. A mãe relata que o bebê tem mamado menos e não urina há cerca de 6 horas. Ao exame, a criança está irritada, com olhos fundos e prega cutânea que se desfaz lentamente (cerca de 6 segundos). Não há febre. \n\nPara prevenir futuros episódios de desidratação como o descrito no caso em crianças, a mais eficaz entre as seguintes medidas é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar dieta oral com introdução progressiva de alimentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter a amamentação exclusiva até pelo menos 4 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumentar a frequência das mamadas durante episódios de diarreia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar água de coco e Imolac Lactiol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente em questão é uma criança de 11 meses com sinais clínicos claros de desidratação (irritabilidade, olhos fundos, sinal da prega com retorno lento e oligúria). Embora o quadro atual exija uma intervenção terapêutica imediata (Plano B ou C de reidratação), o comando da questão foca na prevenção de futuros episódios de desidratação em crianças que apresentam diarreia.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A manutenção da dieta habitual é importante para evitar a desnutrição após um episódio diarreico, mas a introdução progressiva de alimentos não é a medida principal para prevenir a desidratação aguda. A criança de 11 meses já deve ter uma dieta complementar estabelecida.\n\nAlternativa b) Incorreta. Segundo a Organização Mundial da Saúde (OMS) e o Ministério da Saúde, a recomendação é de amamentação exclusiva até os 6 meses de idade, e não apenas até os 4 meses. Além disso, para prevenir a desidratação em episódios futuros de diarreia, a conduta ativa durante a doença é mais determinante do que o histórico prévio de amamentação exclusiva nos primeiros meses.\n\nAlternativa c) Correta. Esta é a base do Plano A de tratamento da diarreia (tratamento domiciliar para prevenir a desidratação). O leite materno é um fluido completo, que oferece hidratação adequada, sais minerais e anticorpos. Aumentar a frequência das mamadas garante que a criança receba um aporte hídrico maior para compensar as perdas nas fezes e nos vômitos, sendo a medida isolada mais eficaz para evitar que um quadro de diarreia evolua para desidratação clínica.\n\nAlternativa d) Incorreta. A água de coco não possui a composição ideal de eletrólitos e glicose recomendada para a reidratação padrão (embora possa ser usada no Plano A em domicílio, não é superior ao leite materno ou ao Soro de Reidratação Oral). Já o Imolac (lactitol) é um laxante osmótico utilizado para tratar constipação intestinal, sendo totalmente contraindicado em casos de diarreia, pois agravaria a perda de fluidos.\n\nResumo didático: Para a prevenção da desidratação em pediatria, o pilar fundamental é a oferta aumentada de líquidos, com destaque total para o aleitamento materno, que deve ser estimulado e oferecido em maior frequência sempre que a criança apresentar perdas aumentadas por diarreia ou vômitos.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:26.627Z"
+  },
+  {
+    "id": "AJUDA_ecdcf021-9cdd-4693-89b3-0df57409399e",
+    "originalId": "ecdcf021-9cdd-4693-89b3-0df57409399e",
+    "statement": "Mulher de 30 anos, com queixa de fadiga e ganho de peso de 4,5 kg em 5 meses, refere estar fazendo dieta hipocalórica, comendo menos fast-food e mais vegetais.\nIniciou academia recentemente, 1 hora, 3 vezes por semana. Porém, mesmo assim, continuou ganhando peso. Nunca fumou. Seu pai faleceu por infarto agudo do miocárdio aos 43 anos. Ao exame: FC = 62 bpm, PA = 130 x 90, sat 98% aa, ritmo cardíaco regular, sem alteração em palpação de região cervical. TSH = 22, T4L = 0,6, glicose = 85, colesterol total = 290, LDL = 181, HDL = 55, triglicérides = 270. Assinale a alternativa que apresenta a intervenção mais apropriada para o caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar à nutricionista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar fluoxetina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar sinvastatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar levotiroxina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente de 30 anos apresenta um quadro clássico de hipotireoidismo primário manifesto. Os achados clínicos incluem fadiga e ganho de peso, mesmo com a adoção de dieta hipocalórica e atividade física. Do ponto de vista laboratorial, o diagnóstico é confirmado pelo TSH elevado (22 mUI/L, sendo o valor de corte para tratamento imediato geralmente acima de 10 mUI/L) e pelo T4 livre baixo (0,6 ng/dL). \n\nOutro ponto crucial é a presença de dislipidemia (colesterol total, LDL e triglicerídeos aumentados). No hipotireoidismo, ocorre uma diminuição da atividade dos receptores de LDL e do catabolismo do colesterol, tornando a dislipidemia uma consequência secundária da deficiência hormonal.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA conduta mais apropriada é iniciar a levotiroxina. O tratamento do hipotireoidismo primário visa restaurar o estado de eutireoidismo. Ao normalizar os níveis de hormônios tireoidianos, o metabolismo basal aumenta, facilitando a perda de peso e combatendo a fadiga. Além disso, a correção do hipotireoidismo é o primeiro passo no manejo da dislipidemia secundária; na maioria das vezes, os níveis lipídicos normalizam ou melhoram drasticamente apenas com a levotiroxina, sem necessidade de estatinas em um primeiro momento.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): Embora o suporte nutricional seja importante, a paciente já relatou estar seguindo uma dieta adequada e praticando exercícios. O insucesso na perda de peso deve-se à questão hormonal (baixa taxa metabólica), que não será resolvida apenas com ajuste dietético.\n\nAlternativa (b): A fluoxetina é um antidepressivo inibidor seletivo da recaptação de serotonina. Não há indicação para o seu uso neste caso, pois a fadiga e o ganho de peso são sintomas de uma doença endócrina confirmada, e não de um transtorno depressivo ou alimentar primário.\n\nAlternativa (c): Iniciar sinvastatina agora seria prematuro. As diretrizes recomendam tratar o hipotireoidismo primeiro e reavaliar o perfil lipídico após a normalização do TSH. Iniciar uma estatina antes de corrigir a tireoide pode, inclusive, aumentar o risco de miopatia (efeito colateral das estatinas), que já é maior em pacientes com hipotireoidismo não tratado.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:26.627Z"
+  },
+  {
+    "id": "AJUDA_ece250ca-7f2f-4b81-92f9-7ea3a3e476ed",
+    "originalId": "ece250ca-7f2f-4b81-92f9-7ea3a3e476ed",
+    "statement": "A síndrome compartimental abdominal (SCA) é uma complicação devastadora em cirurgias de grande porte e trauma, definida por pressão intra-abdominal (PIA) sustentada > 20 mmHg associada a disfunção orgânica. Acerca do diagnóstico, fisiopatologia e tratamento desta entidade, registre V, para as afirmativas verdadeiras, e F, para as falsas:\n\n(__)A medida da pressão vesical é o padrão-ouro para estimar a PIA, devendo ser aferida com o paciente em posição supina completa, ao final da expiração e com a musculatura abdominal relaxada.\n(__)A oligúria na SCA é causada primariamente pela obstrução mecânica dos ureteres, não respondendo à melhora do débito cardíaco ou à reposição volêmica agressiva.\n(__)A descompressão cirúrgica (peritoniostomia) é o tratamento definitivo e deve ser indicada imediatamente em casos de PIA > 25 mmHg com nova falência orgânica refratária às medidas clínicas.\n(__)O bloqueio neuromuscular pode ser utilizado como medida terapêutica temporária para reduzir a PIA, ao diminuir o tônus da musculatura da parede abdominal, antes de indicar a cirurgia.\n\nApós análise, assinale a alternativa que apresenta a sequência correta dos itens acima, de cima para baixo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "F, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, V, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, F, V, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "V, F, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das assertivas:\n\nPrimeira afirmativa (Verdadeira): A aferição da pressão intra-abdominal (PIA) de forma indireta através da bexiga (método transvesical) é considerada o padrão-ouro pela World Society of the Abdominal Compartment Syndrome (WSACS). Para garantir a acurácia, o paciente deve estar em decúbito dorsal horizontal (supino), a medição deve ocorrer ao final da expiração, sem interferência da contração da musculatura abdominal e com o transdutor zerado na linha axilar média.\n\nSegunda afirmativa (Falsa): A oligúria na síndrome compartimental abdominal (SCA) é multifatorial e decorre principalmente da redução da pressão de perfusão renal. O aumento da PIA causa compressão direta do parênquima e das veias renais, além de reduzir o débito cardíaco e elevar a resistência vascular renal. A obstrução mecânica dos ureteres é um evento raro e não a causa primária da disfunção renal nesta patologia.\n\nTerceira afirmativa (Verdadeira): A descompressão abdominal cirúrgica (laparotomia descompressiva deixando a cavidade em peritoneostomia ou abdômen aberto) é o tratamento definitivo para a SCA. Ela está indicada quando as medidas clínicas conservadoras falham em reduzir a PIA e o paciente mantém ou agrava a disfunção orgânica, geralmente com valores de PIA superiores a 20 ou 25 mmHg associados a nova falência de órgãos.\n\nQuarta afirmativa (Verdadeira): O uso de bloqueadores neuromusculares é uma das estratégias clínicas iniciais para o manejo da hipertensão intra-abdominal. Ao promover o relaxamento da musculatura da parede abdominal, ocorre um aumento da complacência da cavidade, o que pode reduzir a pressão exercida sobre as vísceras e melhorar a perfusão, servindo como medida de suporte antes da decisão por cirurgia.\n\nConclusão: A sequência correta é V - F - V - V, o que corresponde à alternativa (c).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Trauma",
+      "Ventilação Mecânica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:26.627Z"
+  },
+  {
+    "id": "AJUDA_ece7c63f-9538-400d-b9d4-50a7d7488e93",
+    "originalId": "ece7c63f-9538-400d-b9d4-50a7d7488e93",
+    "statement": "Pode-se afirmar, sobre os modelos de atenção à saúde, que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a vigilância da saúde prevê o desenvolvimento de ações voltadas para o controle de causas, riscos e danos relacionados à saúde das populações",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "o modelo sanitarista preconiza o atendimento à demanda espontânea por assistência à saúde, baseando-se em procedimentos e serviços especializados",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o movimento da promoção da saúde caracteriza-se pela ênfase na organização dos serviços em torno de programas especiais dirigidos ao controle de agravos e riscos específicos, em detrimento dos determinantes mais gerais da situação de saúde",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o modelo médico privatista é organizado em torno da resolução de prioridades por meio da programação de ações de saúde definidas a partir de critérios epidemiológicos",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a): CORRETA. O modelo de Vigilância da Saúde é compreendido como uma forma de organizar as práticas de saúde que integra as ações de promoção, prevenção e assistência. Sua lógica baseia-se na intervenção sobre três níveis: as causas (determinantes sociais da saúde), os riscos (fatores que precedem o agravo) e os danos (a doença ou o óbito propriamente ditos). Ele busca transcender o atendimento clínico individual ao focar no território e na análise da situação de saúde da população.\n\nAlternativa (b): INCORRETA. O modelo sanitarista, também conhecido como campanhista, caracteriza-se pela organização de ações verticais e programas especiais focados em doenças específicas (como tuberculose ou hanseníase) e campanhas de vacinação. A descrição feita na alternativa — atendimento à demanda espontânea baseado em serviços especializados e procedimentos — refere-se, na verdade, ao Modelo Médico-Assistencial Privatista ou Biomédico, que é hospitalocêntrico e focado na doença individual.\n\nAlternativa (c): INCORRETA. A Promoção da Saúde é justamente o movimento que enfatiza os determinantes gerais da situação de saúde (educação, saneamento, renda, lazer, trabalho). Ela busca agir sobre as causas das causas. A descrição da alternativa, que menciona o foco em programas especiais para riscos específicos em detrimento dos determinantes gerais, define a Prevenção de Doenças ou o próprio Modelo Sanitarista, mas nunca a Promoção da Saúde.\n\nAlternativa (d): INCORRETA. O modelo médico privatista é centrado na assistência individual, no uso intensivo de tecnologia médica, na medicalização e na demanda espontânea (o paciente busca o médico quando já está doente). Ele não utiliza critérios epidemiológicos para planejar ações de saúde coletiva; o planejamento baseado em epidemiologia e prioridades populacionais é uma característica dos modelos de Vigilância da Saúde e de Programação em Saúde Pública.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:26.627Z"
+  },
+  {
+    "id": "AJUDA_ece9da13-88e1-4b06-b0e6-ef4b58f8dfee",
+    "originalId": "ece9da13-88e1-4b06-b0e6-ef4b58f8dfee",
+    "statement": "No que se refere ao diagnóstico clínico e laboratorial da hanseníase, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A baciloscopia é positiva na forma tuberculóide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A histopatologia com granulomas é observada na forma indeterminada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As lesões foveolares são observadas na forma tuberculóide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A pesquisa da sensibilidade tátil deve ser realizada antes da dolorosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "As globias são observadas na baciloscopia da forma virchowiana.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa A (Incorreta): A forma tuberculoide (TT) caracteriza-se por uma resposta imunológica celular (Th1) muito eficiente, que consegue conter a replicação do Mycobacterium leprae. Por ser uma forma paucibacilar, a carga de bacilos é extremamente baixa, resultando em baciloscopia invariavelmente negativa.\n\nAlternativa B (Incorreta): A forma indeterminada representa a fase inicial da doença. O achado histopatológico clássico é um infiltrado inflamatório mononuclear inespecífico em torno de anexos e nervos dérmicos. A presença de granulomas organizados é típica das formas polares (tuberculoide, com granuloma epitelioide; ou virchowiana, com granuloma macrofágico) e da forma dimorfa.\n\nAlternativa C (Incorreta): As lesões foveolares (com centro de \"pele sã\" e bordas internas nítidas, lembrando um queijo suíço) são patognomônicas da forma Dimorfo-Dimorfo (BB). Na forma tuberculoide, as lesões são geralmente placas de bordas externas muito bem definidas e elevadas.\n\nAlternativa D (Incorreta): A sequência fisiopatológica da perda de sensibilidade na hanseníase ocorre devido ao diâmetro das fibras nervosas acometidas. A ordem correta de perda é: 1) Sensibilidade Térmica; 2) Sensibilidade Dolorosa; 3) Sensibilidade Tátil. Portanto, a pesquisa da sensibilidade tátil deve ser realizada após a térmica e a dolorosa, e não antes.\n\nAlternativa E (Correta): Na forma Virchowiana (VV), a imunidade celular é ineficaz, permitindo a multiplicação bacilar intensa. Na baciloscopia desses pacientes, é comum observar o agrupamento de inúmeros bacilos em massas compactas aglutinadas por uma substância mucopolissacarídica (gleia), formando as chamadas globias. Esse é um achado clássico de formas multibacilares com alto índice baciloscópico.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Hanseníase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T18:09:26.627Z"
+  }
+]

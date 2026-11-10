@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AJUDA_ec93870e-e214-4b5e-8532-d15079e975fb",
+    "originalId": "ec93870e-e214-4b5e-8532-d15079e975fb",
+    "statement": "Com relação aos valores, princípios e atributos dos sistemas orientados pela Atenção Primária à Saúde, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O direito à saúde e o controle social são valores fundamentais para as políticas públicas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A coordenação do cuidado realizada pela Estratégia Saúde da Família é o princípio do sistema hierarquizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "As formas de contrato temporário do profissional de saúde com as prefeituras fortalecem a longitudinalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A equidade baseia-se no princípio de atender a todos sem distinção de raça.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) - Correta: O direito à saúde é um valor fundamental estabelecido tanto na Declaração de Alma-Ata quanto na Constituição Federal de 1988, que define a saúde como um direito de todos e dever do Estado. O controle social, operacionalizado no SUS por meio dos Conselhos e Conferências de Saúde (Lei 8.142/90), é um valor essencial que garante a participação da comunidade na formulação e fiscalização das políticas públicas, assegurando que o sistema atenda às necessidades reais da população.\n\nAlternativa (b) - Incorreta: A coordenação do cuidado é considerada um atributo essencial da Atenção Primária à Saúde, e não um princípio do sistema hierarquizado. Ela se refere à capacidade da APS de acompanhar o paciente e integrar as informações clínicas, independentemente do ponto da rede de atenção em que o indivíduo esteja (seja na atenção secundária ou terciária). A hierarquização é uma diretriz organizacional que organiza o sistema em níveis de complexidade crescente.\n\nAlternativa (c) - Incorreta: A longitudinalidade pressupõe a existência de um vínculo duradouro e de uma relação de confiança entre o profissional de saúde e o paciente ao longo do tempo. Formas de contrato temporário ou vínculos precários de trabalho tendem a gerar alta rotatividade de profissionais (turnover), o que rompe o vínculo com a comunidade e prejudica diretamente o acompanhamento longitudinal e a continuidade do cuidado.\n\nAlternativa (d) - Incorreta: A definição apresentada na alternativa refere-se ao conceito de igualdade ou universalidade. A equidade, por outro lado, consiste em tratar desigualmente os desiguais para reduzir as desigualdades sociais e de saúde. Ou seja, a equidade foca em oferecer mais recursos e atenção para quem mais precisa, reconhecendo as diferentes vulnerabilidades e necessidades de cada grupo ou indivíduo, em vez de dar a todos exatamente o mesmo atendimento.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:53.117Z"
+  },
+  {
+    "id": "AJUDA_ec945729-fca3-42f9-939c-b40c0c48f62f",
+    "originalId": "ec945729-fca3-42f9-939c-b40c0c48f62f",
+    "statement": "Leia o caso a seguir.\n\nApós curtir um dia inteiro de praia, à noite a paciente apresentava a pele bastante eritematosa e dolorosa em regiões dorsal, lombar, peito, barriga e em toda a extensão dos braços. \n\nNo atendimento na Unidade Básica de Saúde (UBS), a conduta adequada do profissional foi",
+    "options": [
+      {
+        "id": "A",
+        "text": "o encaminhamento para unidade de referência em queimadura, pois a área acometida corresponde a 36%, pela regra dos 9.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a analgesia, cuidados locais e orientações de que não seria levado em consideração a regra dos 9 para a queimadura de pele da paciente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a analgesia, internação na unidade básica de saúde, sem necessidade de encaminhamento para um centro de referência, pois a área acometida está menor que 20% pela regra dos 9.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "o encaminhamento para unidade de referência em queimadura, pois a área acometida corresponde a 54%, pela regra dos 9.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso: A paciente apresenta um quadro clássico de queimadura de primeiro grau (espessura superficial) após exposição solar. Os sinais clínicos relatados, como eritema (vermelhidão) e dor, sem a presença de bolhas ou flictenas, indicam que apenas a camada mais superficial da pele (epiderme) foi atingida.\n\nRegra dos Nove: A Regra de Wallace é utilizada para calcular a porcentagem da Superfície Corporal Queimada (SCQ). No entanto, para fins de classificação de gravidade, cálculo de reposição volêmica (Fórmula de Parkland) e critérios de transferência para centros de queimados, apenas as queimaduras de segundo grau (espessura parcial) e terceiro grau (espessura total) devem ser contabilizadas. Queimaduras de primeiro grau não entram nesse cálculo.\n\nAlternativa a: Incorreta. Queimaduras de primeiro grau não são incluídas na Regra dos Nove para definição de conduta hospitalar ou transferência. Além disso, o cálculo de 36% está matematicamente incompleto para as áreas descritas (tronco total e braços totalizariam 54%).\n\nAlternativa b: Correta. O tratamento para queimaduras de primeiro grau é sintomático, envolvendo analgesia e cuidados locais, como hidratação da pele e compressas frias. A conduta correta na UBS é orientar que, por ser uma lesão de primeiro grau (apenas eritema), a Regra dos Nove não é aplicada para definir gravidade ou necessidade de transferência.\n\nAlternativa c: Incorreta. Não há indicação de internação para queimaduras de primeiro grau, independentemente da extensão. O manejo é ambulatorial. Além disso, a afirmação de que a área é menor que 20% está incorreta, pois a soma das áreas citadas ultrapassa esse valor, embora o cálculo não deva ser realizado neste caso clínico.\n\nAlternativa d: Incorreta. Embora o cálculo de 54% esteja correto do ponto de vista anatômico (tronco anterior 18%, tronco posterior 18% e ambos os braços 18%), o encaminhamento para uma unidade de referência é desnecessário. O eritema solar não preenche critérios de transferência para centros de queimados, que exigem a presença de lesões de segundo ou terceiro graus em extensões significativas ou em áreas nobres.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:53.117Z"
+  },
+  {
+    "id": "AJUDA_ec9d2ad3-c50f-47b7-a357-4edc830f3575",
+    "originalId": "ec9d2ad3-c50f-47b7-a357-4edc830f3575",
+    "statement": "Paciente do sexo masculino, 72 anos, previamente hipertenso, chega à emergência com tosse produtiva, febre alta e dispneia há 3 dias. Ao exame físico: PA 86 x 54 mmHg, FC 112 bpm, FR 34 irpm, SatO2 86% em ar ambiente, Glasgow 13. Ausculta pulmonar: Estertores crepitantes difusos em terço médio basal à direita.\nExames complementares:\nUreia sérica = 56 mg/dL.\nHemograma: leucócitos 18.000/mm3, Hb 12,5 g/dL.\nRx de tórax a seguir:\n\nPelo escore CURB-65, qual a conduta preconizada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação em enfermaria com antibiótico VO.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internação em enfermaria com antibiótico EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alta com antibiótico oral e reavaliação ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internação em UTI com suporte intensivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Observação em pronto-socorro por 24h.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para definir a conduta em um quadro de Pneumonia Adquirida na Comunidade (PAC), o escore CURB-65 é uma das ferramentas mais utilizadas para estratificar a gravidade e o risco de mortalidade. Vamos analisar cada critério para este paciente:\n\nC (Confusão mental): O paciente apresenta Glasgow 13, o que caracteriza alteração do nível de consciência/confusão. (+1 ponto)\n\nU (Ureia): A ureia sérica de 56 mg/dL está acima do limite de 50 mg/dL. (+1 ponto)\n\nR (Frequência Respiratória): O paciente apresenta 34 irpm, o que é maior ou igual a 30 irpm. (+1 ponto)\n\nB (Pressão Arterial - Blood pressure): A PA de 86 x 54 mmHg atende ao critério de PAS menor que 90 mmHg ou PAD menor ou igual a 60 mmHg. (+1 ponto)\n\n65 (Idade): O paciente tem 72 anos, sendo maior ou igual a 65 anos. (+1 ponto)\n\nPontuação Total: 5 pontos.\n\nA interpretação do CURB-65 indica que pacientes com 0 ou 1 ponto podem ser tratados ambulatorialmente. Com 2 pontos, deve-se considerar a internação hospitalar (enfermaria). Com 3 ou mais pontos, a internação é obrigatória, e pontuações de 4 ou 5 indicam pneumonia grave com alto risco de morte, exigindo consideração imediata de internação em Unidade de Terapia Intensiva (UTI).\n\nAssociação com a imagem: O raio X de tórax demonstra uma opacidade homogênea (consolidação) no terço médio e na base do pulmão direito, com presença de broncogramas aéreos, o que confirma o diagnóstico clínico de pneumonia lobar.\n\nAnálise das alternativas:\n\na) Incorreta. A internação em enfermaria com antibiótico via oral é insuficiente para um paciente com pontuação máxima no escore de gravidade e instabilidade hemodinâmica/respiratória.\n\nb) Incorreta. Embora a internação e o antibiótico endovenoso sejam necessários, o nível de cuidado de uma enfermaria é inadequado para o risco de morte deste paciente (CURB-65 = 5).\n\nc) Incorreta. A alta hospitalar é contraindicada. O paciente apresenta sinais de choque (hipotensão), insuficiência respiratória (taquipneia e SatO2 86%) e confusão mental.\n\nd) Correta. Com uma pontuação de 5 no escore CURB-65, o paciente apresenta indicação formal de suporte intensivo em UTI devido à gravidade do quadro e ao alto risco de complicações e óbito.\n\ne) Incorreta. A observação em pronto-socorro retarda o início do suporte intensivo e da monitorização contínua necessária para um quadro de sepse de foco pulmonar grave.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/1e6d0dd005e8aa613314c5a0f4a017e9a931925122fb3ab5c964b5ef7233b6fe.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ec9d2ad3-c50f-47b7-a357-4edc830f3575_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:53.299Z"
+  },
+  {
+    "id": "AJUDA_ec9e476b-506c-4b1c-b7af-63a2694c7e14",
+    "originalId": "ec9e476b-506c-4b1c-b7af-63a2694c7e14",
+    "statement": "Um homem de 45 anos, sem comorbidades conhecidas e com antecedente de alergia a dipirona, foi submetido a uma colecistectomia laparoscópica. No primeiro dia de pós operatório, ele relata dor abdominal difusa com uma pontuação de 5/10 na escala de dor. A analgesia multimodal, incluindo paracetamol e cetoprofeno, não aliviou suficientemente a dor. O paciente apresenta dificuldade para respirar profundamente devido ao desconforto. Exames de imagem e outros testes descartaram quaisquer complicações cirúrgicas. A equipe médica agora busca otimizar o manejo da dor pós-operatória. Qual é o próximo passo mais apropriado no manejo da dor para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar a dose de paracetamol para maximizar seu efeito analgésico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar um opioide de ação curta, como tramadol, para controle adicional da dor.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administrar relaxantes musculares por via oral para reduzir o desconforto abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar morfina subcutânea, para controle adicional da dor.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo da dor pós-operatória em um paciente submetido a um procedimento comum, a colecistectomia laparoscópica. Para resolvê-la, devemos aplicar os conceitos da Escada Analgésica da Organização Mundial da Saúde (OMS), adaptada para a dor aguda.\n\nO paciente apresenta uma dor de intensidade moderada (escore 5/10) e já está em uso de analgesia de primeiro degrau (analgésicos simples, como o paracetamol, e anti-inflamatórios não esteroidais, como o cetoprofeno). Como ele possui alergia à dipirona, essa opção está descartada. Diante do insucesso da terapia inicial, o próximo passo lógico é a progressão para o segundo degrau da escada analgésica.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O paracetamol possui um efeito teto, o que significa que, após atingir a dose terapêutica máxima recomendada, aumentar a dose não resulta em maior alívio da dor, mas aumenta significativamente o risco de hepatotoxicidade. No caso, a dor moderada persistente indica a necessidade de adicionar uma nova classe de fármaco, não de sobrecarregar a via metabólica do paracetamol.\n\nAlternativa (b) Correta: De acordo com a escada analgésica da OMS, para dores de intensidade moderada (4 a 6 em 10) que não respondem a analgésicos simples e AINEs, a conduta indicada é a introdução de um opioide fraco. O tramadol é o exemplo clássico de opioide de ação curta/fraco utilizado nessa transição. Ele ajudará no controle da dor sem a necessidade imediata de opioides potentes, permitindo que o paciente respire melhor e se mobilize no pós-operatório.\n\nAlternativa (c) Incorreta: Os relaxantes musculares de ação central não são a terapia de escolha para a dor pós-operatória de cirurgias intra-abdominais. A dor nesse contexto provém principalmente da incisão cirúrgica, da manipulação visceral e da distensão peritoneal pelo CO2 (pneumoperitônio). Relaxantes musculares não possuem potência analgésica suficiente para tratar essa condição e não substituem os opioides no segundo degrau da analgesia.\n\nAlternativa (d) Incorreta: A morfina é considerada um opioide forte, pertencente ao terceiro degrau da escada analgésica, indicada para dores intensas (escore 7 a 10). Embora possa ser utilizada no pós-operatório, a prática recomendada é a escalada progressiva. Como o paciente apresenta dor moderada (5/10), o uso de um opioide fraco (como o tramadol) deve preceder o uso de opioides fortes, reservando a morfina para casos de dor refratária ou de maior intensidade. Além disso, a via subcutânea pode ter absorção variável dependendo da perfusão tecidual, sendo a via oral ou intravenosa preferível conforme a estabilidade clínica.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:53.299Z"
+  },
+  {
+    "id": "AJUDA_eca7bc10-dcb2-47bc-af0a-6064b4a80b6a",
+    "originalId": "eca7bc10-dcb2-47bc-af0a-6064b4a80b6a",
+    "statement": "Mulher de 61 anos, G2P2, menopausa há 11 anos, IMC: 34 kg/m2, hipertensa e diabética tipo 2, em uso de tamoxifeno há 3 anos por câncer de mama tratado, procura atendimento ambulatorial em Unidade Básica de Saúde por sangramento vaginal recorrente há cerca de 2 meses. Ao exame: sinais de atrofia vaginal, sem lesões cervicais visíveis. Hemoglobina: 12,6 g/dL, coagulograma normal. A ultrassonografia transvaginal mostra endométrio linear e homogêneo, espessura de 3,5 mm, sem líquido intracavitário, miomas intramurais pequenos sem deformidade evidente da cavidade. Qual é o próximo passo mais adequado na investigação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar biópsia endometrial ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Repetir a ultrassonografia transvaginal em 6 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar progestagênio cíclico por 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar ressonância magnética pélvica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso apresenta uma paciente de 61 anos na pós-menopausa com sangramento uterino anormal recorrente há 2 meses e múltiplos fatores de risco importantes para câncer de endométrio: obesidade (IMC 34 kg/m2), diabetes mellitus e, principalmente, o uso de tamoxifeno há 3 anos.\n\nO tamoxifeno é um modulador seletivo dos receptores de estrogênio (SERM) que atua como antagonista no tecido mamário, mas possui efeito agonista parcial no endométrio, elevando significativamente o risco de pólipos, hiperplasia e adenocarcinoma endometrial.\n\nEmbora a ultrassonografia transvaginal mostre um eco endometrial de 3,5 mm (abaixo do ponto de corte clássico de 4 a 5 mm para a pós-menopausa em mulheres assintomáticas), a presença de sangramento recorrente em uma paciente de alto risco exige investigação tecidual direta. O ultrassom pode ter acurácia reduzida em usuárias de tamoxifeno devido a alterações do estroma subendometrial, e a persistência dos sintomas torna obrigatória a avaliação histopatológica para excluir malignidade.\n\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Correta): A biópsia endometrial ambulatorial (como a biópsia por aspiração com cânula de Pipelle ou a histeroscopia com biópsia dirigida) é a conduta indicada. O sangramento pós-menopausa persistente ou recorrente em paciente de alto risco exige diagnóstico histológico confirmatório, independentemente da espessura endometrial observada ao ultrassom.\n\nAlternativa B (Incorreta): Adotar conduta expectante e repetir o ultrassom em 6 semanas apenas atrasaria o diagnóstico de uma eventual lesão maligna ou pré-maligna. A paciente já possui sangramento há 2 meses, o que indica necessidade de intervenção diagnóstica imediata.\n\nAlternativa C (Incorreta): A terapia hormonal com progestagênios é contraindicada antes de se obter um diagnóstico histopatológico definitivo que descarte câncer endometrial. Além disso, a administração empírica de hormônios é desaconselhada em pacientes com histórico de câncer de mama.\n\nAlternativa D (Incorreta): A ressonância magnética de pelve não é o exame de escolha para a avaliação inicial do sangramento pós-menopausa. Seu papel é reservado principalmente para o estadiamento locorregional após o diagnóstico histológico já ter sido estabelecido.\n\n\nCONCLUSÃO\n\nDiante de sangramento pós-menopausa recorrente em paciente usuária de tamoxifeno e com síndrome metabólica, o padrão-ouro e próximo passo mandatório é a obtenção de amostra endometrial para análise histopatológica.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:53.299Z"
+  },
+  {
+    "id": "AJUDA_ecaefa34-741d-4887-9500-bc0617994b18",
+    "originalId": "ecaefa34-741d-4887-9500-bc0617994b18",
+    "statement": "Escolar, sexo feminino, com 7 anos é trazida ao ambulatório pelos pais com queixa de “diarreia constante” há cerca de 6 meses. Os responsáveis relatam que a criança frequentemente evacua pequenas quantidades de fezes pastosas, com odor muito forte, aproximadamente 3 a 4 vezes ao dia, sendo a maioria dos episódios observada nas roupas íntimas. Relatam que antes do início dessa “diarreia”, a paciente frequentemente se queixava de dor abdominal esporádica e dificuldade para evacuar. Negam febre, emagrecimento ou mudança na dieta. No histórico alimentar, a família menciona baixa ingestão de fibras e de líquidos. Ao exame físico, a paciente apresenta bom estado geral, está corada e hidratada. Peso e estatura adequados para a idade. Abdome levemente distendido, com massa palpável em fossa ilíaca esquerda, móvel e indolor. Ausculta abdominal revela peristalse normal. Exame retal demonstra fezes ressecadas no canal anal. Com base no quadro apresentado e no diagnóstico mais provável, qual a conduta inicial mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar colonoscopia para investigação de doença inflamatória intestinal, visto o quadro de evacuações frequentes associadas a massa abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar dieta isenta de glúten devido à suspeita de doença celíaca, mesmo sem perda de peso significativa ou alterações específicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estabelecer o diagnóstico de constipação funcional, iniciar tratamento com laxantes osmóticos e plano educativo para intervenções na dieta e no hábito intestinal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever antibiótico e probióticos para tratar uma possível disbiose intestinal associada ao padrão de “diarreia crônica”.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar o tratamento com um antiparasitário de amplo espectro, com controle laboratorial com exame protoparasitológico de fezes após cerca de 15 dias da administração da medicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO quadro descrito é um exemplo clássico de constipação intestinal funcional na infância, apresentando-se com a chamada \"pseudodiarreia\" ou incontinência fecal por transbordamento (encoprese). A criança tem um histórico de dificuldade para evacuar e baixa ingestão de fibras e líquidos. O que os pais interpretam como diarreia é, na verdade, fezes amolecidas que passam ao redor de uma massa fecal endurecida e impactada (fecaloma), escapando de forma involuntária para as roupas íntimas.\n\nOs achados de exame físico corroboram essa hipótese: a massa palpável em fossa ilíaca esquerda corresponde ao acúmulo de fezes no cólon sigmoide, e o toque retal confirmando fezes ressecadas no canal anal sela o diagnóstico de impactação fecal.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. Não há sinais de alerta (red flags) para Doença Inflamatória Intestinal (DII), como perda de peso, febre, sangue nas fezes, anemia ou atraso no crescimento. A massa palpável é condizente com fezes (móvel e indolor), e a \"diarreia\" é explicada pela fisiopatologia da constipação crônica.\n\nAlternativa b) Incorreta. A doença celíaca costuma cursar com distensão abdominal e diarreia, mas geralmente apresenta déficit de crescimento e emagrecimento. Além disso, nunca se deve iniciar dieta isenta de glúten sem confirmação diagnóstica prévia (sorologia e, se necessário, biópsia), e o quadro clínico atual é soberano para constipação.\n\nAlternativa c) Correta. O diagnóstico é de constipação funcional conforme os Critérios de Roma IV. A conduta inicial adequada envolve o esvaziamento intestinal (desimpactação), seguido de manutenção com laxantes osmóticos (como o polietilenoglicol - PEG), orientação dietética para aumento de fibras e líquidos, e treinamento de hábito intestinal (pedir para a criança sentar no vaso após as refeições).\n\nAlternativa d) Incorreta. Não há indicação de antibioticoterapia, pois não há sinais de infecção ou supercrescimento bacteriano patológico que justifique o uso. O termo \"disbiose\" é frequentemente mal utilizado e o tratamento da causa base (constipação) é o que restaurará a microbiota normal.\n\nAlternativa e) Incorreta. Embora o parasitismo intestinal seja comum no Brasil, ele não explica a massa palpável em fossa ilíaca esquerda nem o achado de fezes ressecadas no toque retal. O quadro de escape fecal por transbordamento é uma complicação típica da constipação, não de verminoses.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Constipação Intestinal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:53.299Z"
+  },
+  {
+    "id": "AJUDA_ecb0020b-e3b2-45bb-8359-b802b59a4e0d",
+    "originalId": "ecb0020b-e3b2-45bb-8359-b802b59a4e0d",
+    "statement": "A doença trofoblástica gestacional é constituída pela mola hidatiforme e pela neoplasia trofoblástica gestacional. Assinale a alternativa CORRETA sobre esta doença:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A mola parcial tem cariótipo 46XX ou 46XY e todos os cromossomos são de origem paterna. A mola completa tem cariótipo triploide 69XXX, 69XXY ou 69XYY, sendo um cromossomo materno e dois paternos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A curetagem uterina é o método de escolha para esvaziamento uterino de mola hidatiforme.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Para o seguimento da mola hidatiforme pós-esvaziamento, é usado unicamente o marcador tumoral hCG (Gonadotrofina Coriônica Humana), cujos valores descendentes até a normalização configuram a remissão espontânea da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "As pacientes necessitam fazer anticoncepção rigorosa, que deve ser iniciada imediatamente após o esvaziamento uterino, sendo os dispositivos intrauterinos adequados durante o seguimento pós-molar devido sua alta eficácia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. A alternativa inverteu os conceitos genéticos das patologias. A mola completa é a que possui cariótipo diploide (geralmente 46,XX), sendo 100% de origem paterna (androgênese), resultante da fertilização de um óvulo \"vazio\" (sem material genético materno). A mola parcial é triploide (69,XXX, 69,XXY ou 69,XYY), originada da fertilização de um óvulo normal por dois espermatozoides (dispermia), contendo, portanto, um conjunto de cromossomos maternos e dois conjuntos paternos.\n\nAlternativa b: Incorreta. O método de escolha para o esvaziamento uterino na mola hidatiforme é a vácuo-aspiração (manual ou elétrica). A curetagem uterina cortante tradicional é evitada como primeira linha devido ao elevado risco de perfuração uterina e de sinéquias, uma vez que o miométrio está muito amolecido e o volume uterino costuma ser grande. A curetagem pode ser realizada de forma suave apenas ao final do procedimento de aspiração para garantir que a cavidade esteja vazia.\n\nAlternativa c: Correta. O seguimento pós-molar baseia-se fundamentalmente na monitorização dos níveis séricos de hCG. A queda progressiva desses valores até a sua normalização (negativação) é o critério que define a remissão espontânea da doença. O acompanhamento é feito semanalmente até a obtenção de três valores negativos consecutivos, seguido de acompanhamento mensal por seis meses (nos protocolos clássicos).\n\nAlternativa d: Incorreta. Embora a anticoncepção rigorosa seja mandatória para não confundir uma nova gestação com a persistência da doença (elevação do hCG), o dispositivo intrauterino (DIU) é contraindicado durante a fase de acompanhamento (enquanto o hCG não estiver negativo). O DIU apresenta risco aumentado de perfuração em um útero que pode estar fragilizado por uma mola invasora e pode causar sangramentos irregulares que confundem o diagnóstico de Neoplasia Trofoblástica Gestacional (NTG). A preferência é pelo uso de anticoncepcionais hormonais orais.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:53.299Z"
+  },
+  {
+    "id": "AJUDA_ecb303e9-4f02-40ba-8386-3aa275e56228",
+    "originalId": "ecb303e9-4f02-40ba-8386-3aa275e56228",
+    "statement": "Casal procura atendimento após 18 meses de tentativa de gestação sem sucesso. Mulher, 31 anos de idade, ciclos menstruais regulares de 28 dias, sem antecedentes de infecções pélvicas ou cirurgias. Homem, 34 anos de idade, sem comorbidades, sem uso de medicamentos ou drogas ilícitas. Exame ginecológico da paciente normal. Considerando a investigação inicial do casal infértil, qual procedimento deve ser adotado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar espermograma apenas após a exclusão de causas femininas de infertilidade, visto que a investigação deve priorizar inicialmente a mulher.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar a histerossalpingografia, é exame de primeira linha para investigação da cavidade uterina e tubas, e deve ser realizada antes mesmo da dosagem hormonal básica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Avaliar a ovulação por meio da dosagem de progesterona sérica na fase lútea, preferencialmente em torno do 21º dia do ciclo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Solicitar a dosagem de FSH e estradiol no 21º dia do ciclo menstrual para avaliação da reserva ovariana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A investigação da infertilidade conjugal deve ser iniciada após 12 meses de relações sexuais regulares sem o uso de métodos contraceptivos em casais nos quais a mulher tem menos de 35 anos. No caso apresentado, o casal tenta há 18 meses, o que justifica o início da propedêutica básica, focada na avaliação dos fatores masculino, ovulatório, tuboperitoneal e uterino.\n\nAlternativa a: Incorreta. A investigação da infertilidade deve ser sempre simultânea para o homem e para a mulher. O fator masculino é responsável por cerca de 40% a 50% dos casos de infertilidade (isolado ou associado ao fator feminino). O espermograma é um exame simples, não invasivo e de baixo custo, devendo ser solicitado já na primeira consulta.\n\nAlternativa b: Incorreta. A histerossalpingografia é, de fato, o exame padrão para avaliar a integridade das tubas uterinas e a cavidade uterina na investigação inicial. No entanto, não existe uma norma que obrigue sua realização antes das dosagens hormonais. Por ser um exame invasivo e que pode causar desconforto, muitas vezes é solicitado em conjunto ou após a confirmação de outros fatores mais simples, como a ovulação e a qualidade seminal.\n\nAlternativa c: Correta. A avaliação do fator ovulatório é um dos pilares da investigação inicial. Em mulheres com ciclos regulares, a dosagem de progesterona sérica deve ser realizada na fase lútea média, que ocorre aproximadamente sete dias antes da próxima menstruação prevista. Para um ciclo de 28 dias, o 21º dia é o momento ideal. Valores de progesterona acima de 3 ng/mL (preferencialmente acima de 10 ng/mL) confirmam que a paciente ovulou naquele ciclo.\n\nAlternativa d: Incorreta. O erro desta alternativa reside no dia da coleta. A avaliação da reserva ovariana por meio da dosagem de FSH e estradiol deve ser realizada obrigatoriamente no início do ciclo menstrual, entre o 2º e o 5º dia (fase folicular precoce). No 21º dia do ciclo, os níveis desses hormônios não servem para avaliar a reserva folicular, pois estão sob influência da dinâmica da fase lútea.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:53.299Z"
+  },
+  {
+    "id": "AJUDA_ecb537ca-fc35-4a48-b3ca-8e82980f3ac4",
+    "originalId": "ecb537ca-fc35-4a48-b3ca-8e82980f3ac4",
+    "statement": "Homem, 27 anos de idade, previamente hígido, foi vítima de acidente automobilístico com sangramentos. Apresenta, à avaliação, PA = 94/52 mmHg, oligúria, creatinina = 1,9 mg/dL (VR 0,7 a 1,3 mg;dL), ureia = 96 mg/dL (VR 20 a 50 mg/dL), K = 6,1 mEq/L (VR 3,5 a 5,1 mEq/L), densidade urinária = 1036 (VR 1005 a 1030), fração de excreção de ureia = 27% e urina I com presença de cilindros hialinos abundantes. Qual é o tratamento mais adequado neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diálise de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reposição de volume.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Droga inotrópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Furosemida intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente é um jovem, previamente hígido, vítima de trauma com sangramento (choque hemorrágico), que evoluiu com hipotensão (PA 94/52 mmHg) e queda do débito urinário (oligúria). Os exames laboratoriais confirmam uma Lesão Renal Aguda (LRA). O ponto central da questão é diferenciar se essa LRA é pré-renal (por falta de perfusão) ou intrínseca (por dano direto ao tecido renal, como a Necrose Tubular Aguda - NTA).\n\nOs dados que apontam para uma etiologia PRÉ-RENAL são:\n1. Densidade urinária elevada (1.036): Indica que o rim ainda consegue concentrar a urina para poupar água. Na NTA, a densidade costuma ser baixa (perto de 1.010).\n2. Fração de Excreção de Ureia (FE Ureia) de 27%: Valores abaixo de 35% são fortemente sugestivos de causa pré-renal, sendo um marcador útil especialmente se o paciente tivesse usado diuréticos (o que não é o caso, mas reforça o diagnóstico).\n3. Relação Ureia/Creatinina: O valor da ureia (96) é mais de 40 vezes o valor da creatinina (1,9). Relações maiores que 20-40 sugerem que a queda da filtração é por hipovolemia.\n4. Cilindros hialinos: São formados apenas por proteínas e comumente encontrados em estados de desidratação e causas pré-renais.\n\nPortanto, o rim está sofrendo por falta de sangue (perfusão), mas ainda mantém sua integridade funcional. O tratamento deve focar na restauração da hemodinâmica.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. A diálise de urgência é indicada em casos de emergências dialíticas refratárias ao tratamento clínico (o mnemônico AEIOU: Acidose, Eletrólitos como hipercalemia, Intoxicações, Overload/Congestão e Uremia grave). Embora o potássio (K = 6,1) esteja elevado, a conduta inicial em um paciente em choque hipovolêmico é a reposição de volume, o que costuma restabelecer o fluxo urinário e normalizar os eletrólitos.\n\nb) CORRETA. Esta é a conduta prioritária. O paciente apresenta sinais claros de choque hipovolêmico induzido por trauma/sangramento e uma função renal que responde à melhora da perfusão. A reposição de volume (cristaloides e, se necessário, hemoderivados conforme o protocolo de trauma) irá restaurar a pressão arterial e a filtração glomerular, revertendo a injúria renal pré-renal.\n\nc) INCORRETA. Drogas inotrópicas (como dobutamina) são indicadas quando há falência da bomba cardíaca (choque cardiogênico). No contexto de trauma com sangramento, o problema não é a força do coração, mas a falta de volume circulante. Usar inotrópicos sem volume adequado pode piorar o quadro.\n\nd) INCORRETA. O uso de diuréticos de alça (furosemida) em um paciente hipotenso e em choque hipovolêmico é contraindicado. Isso agravaria a depleção de volume, reduziria ainda mais a perfusão renal e poderia transformar uma lesão pré-renal reversível em uma necrose tubular aguda (lesão renal intrínseca) permanente.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Choque",
+      "Lesão Renal Aguda (LRA)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:53.299Z"
+  },
+  {
+    "id": "AJUDA_ecb5631d-7744-42ba-aaff-a197c3fa148e",
+    "originalId": "ecb5631d-7744-42ba-aaff-a197c3fa148e",
+    "statement": "Criança de 2 anos com febre, anorexia, apresentando vesículas nas mãos e nos pés e estomatite na cavidade oral. O agente etiológico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Herpes tipo I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Herpes tipo II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vírus da Varicela-zóster",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coxsackievírus",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Parvovirus B 19",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito — febre, anorexia, lesões ulcerativas na mucosa oral (estomatite) e vesículas localizadas especificamente nas mãos e nos pés — é a apresentação patognomônica da doença mão-pé-boca. Esta patologia é uma enterovirose comum na infância, especialmente em crianças menores de 5 anos.\n\nAlternativa a) Incorreta. O herpesvírus tipo 1 é o principal causador da gengivoestomatite herpética primária. Embora cause febre e lesões orais dolorosas que levam à anorexia, ele não apresenta o exantema vesicular característico nas extremidades (mãos e pés).\n\nAlternativa b) Incorreta. O herpes tipo 2 está tipicamente relacionado a infecções genitais e é uma causa rara de estomatite ou exantemas em crianças nessa faixa etária, não correspondendo à descrição da síndrome mão-pé-boca.\n\nAlternativa c) Incorreta. O vírus da varicela-zóster causa a varicela (catapora). O exantema da varicela é generalizado, centrípeto e caracteriza-se pelo polimorfismo regional (presença de pápulas, vesículas e crostas ao mesmo tempo), além de ser intensamente pruriginoso, o que difere da distribuição localizada descrita no caso.\n\nAlternativa d) Correta. O coxsackievírus, pertencente à família dos enterovírus (sendo o Coxsackie A16 o sorotipo mais frequente), é o principal agente etiológico da doença mão-pé-boca. A tríade de estomatite ulcerosa, vesículas em mãos e vesículas em pés é o marco diagnóstico desta infecção, que tem caráter autolimitado e tratamento de suporte.\n\nAlternativa e) Incorreta. O parvovírus B19 é o agente causador do eritema infeccioso (quinta doença). Manifesta-se classicamente pelo sinal da \"face esbofetada\" (eritema malar) seguido por um exantema rendilhado no tronco e membros. Não costuma cursar com vesículas ou estomatite.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:53.299Z"
+  }
+]

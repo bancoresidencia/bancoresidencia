@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_260cb7b7-46e8-44f8-ac2f-4ae18734fe2f",
+    "originalId": "260cb7b7-46e8-44f8-ac2f-4ae18734fe2f",
+    "statement": "Uma equipe de Saúde da Família, que atende uma área adscrita com elevada demanda espontânea de queixas agudas, implementou a metodologia do \"Acesso Avançado\". Após três meses, a equipe observa uma redução na demanda reprimida e no absenteísmo, porém nota que uma parcela considerável dos atendimentos de demanda espontânea, inicialmente acolhida, não evolui para um cuidado longitudinal, sendo resolvida de forma pontual, como em uma unidade de pronto-atendimento.\n\nConsiderando os atributos essenciais da APS e as ferramentas de gestão do acesso, qual a falha mais provável na aplicação do Acesso Avançado neste cenário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A equipe não reservou um percentual suficiente da agenda para a demanda espontânea, o que sobrecarregou o atendimento e impossibilitou a estruturação de um plano de cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A abordagem do acolhimento se concentrou na resolução da queixa imediata, falhando em utilizar a demanda espontânea como oportunidade para criar vínculo e iniciar o planejamento de um cuidado longitudinal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A metodologia do Acesso Avançado, por si só, é insuficiente para a gestão de demanda em áreas com alta prevalência de condições crônicas, requerendo a complementação com dias específicos para grupos programáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A equipe deveria ter incentivado o encaminhamento de casos agudos para outros pontos da Rede de Atenção à Saúde, como as Unidades de Pronto Atendimento (UPA), para não comprometer a capacidade de agendamento programado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Acesso Avançado baseia-se na premissa de \"fazer hoje o trabalho de hoje\", aumentando a disponibilidade de consultas no mesmo dia para reduzir o tempo de espera e o absenteísmo. No entanto, na Atenção Primária à Saúde (APS), a agilidade no acesso deve sempre dialogar com os atributos essenciais de integralidade e longitudinalidade, aproveitando qualquer contato como oportunidade de cuidado contínuo.\n\nAlternativa A - Incorreta. A redução da demanda reprimida e do absenteísmo demonstra que a reserva de vagas na agenda foi eficaz quantitativamente. O problema relatado não é de sobrecarga ou falta de vagas, mas sim qualitativo, relacionado ao conteúdo e à condução do encontro clínico.\n\nAlternativa B - Correta. Na APS, a consulta por demanda espontânea não deve se limitar a resolver a queixa aguda de forma isolada, como ocorre em uma unidade de pronto atendimento. A equipe deve usar o acolhimento e a consulta como uma oportunidade para estabelecer vínculo, avaliar o contexto do paciente, atualizar ações preventivas e traçar um plano de cuidado longitudinal, garantindo a continuidade do acompanhamento.\n\nAlternativa C - Incorreta. O Acesso Avançado é plenamente compatível e eficaz no manejo de condições crônicas. Reservar dias fixos e exclusivos para grupos programáticos (como o \"dia do hipertenso\") cria barreiras ao acesso, sendo uma prática que a gestão moderna da clínica na APS busca eliminar.\n\nAlternativa D - Incorreta. A APS deve funcionar como porta de entrada preferencial e resolver a grande maioria das demandas agudas da comunidade. Encaminhar casos agudos habituais para as UPAs fragmenta o cuidado, sobrecarrega a rede de urgência e enfraquece o papel da equipe de Saúde da Família.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:48.483Z"
+  },
+  {
+    "id": "AJUDA_2618fa92-23ea-4f0a-b165-8ef8e579b7cf",
+    "originalId": "2618fa92-23ea-4f0a-b165-8ef8e579b7cf",
+    "statement": "Durante uma laparotomia por outra causa, em paciente assintomático do ponto de vista biliar, em qual das situações abaixo está CORRETAMENTE indicada a realização de colecistectomia profilática?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paciente jovem, sem comorbidades, com cálculo único de 8 mm encontrado incidentalmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Paciente com anemia falciforme, com múltiplos cálculos pequenos, assintomático",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Paciente com cálculo único de 2 cm, assintomático, submetido à colectomia por câncer de cólon",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Paciente com pólipo de vesícula de 5 mm encontrado incidentalmente",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Paciente com cálculo de 1 cm, assintomático, submetido à hernioplastia inguinal eletiva laparoscópica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A indicação de colecistectomia em pacientes assintomáticos (achado incidental) é um tema recorrente em provas e exige que o candidato conheça as exceções à regra geral de \"observação clínica\". Em regra, não se opera vesícula assintomática, exceto quando há risco aumentado de complicações graves ou evolução para câncer de vesícula.\n\nAnálise das alternativas:\n\na) Incorreta. Cálculos menores que 3 cm em pacientes jovens e sem comorbidades não possuem indicação cirúrgica profilática. O risco de complicações da colelitíase ao longo da vida é baixo (cerca de 1 a 2% ao ano), sendo preferível observar o surgimento de sintomas.\n\nb) Correta (Gabarito). Pacientes com anemias hemolíticas hereditárias, como a anemia falciforme, têm indicação de colecistectomia profilática se apresentarem cálculos, mesmo que assintomáticos. Isso ocorre por dois motivos principais: 1) O risco elevado de formação de cálculos de bilirrubinato de cálcio devido à hemólise crônica; 2) A dificuldade diagnóstica, já que uma crise dolorosa abdominal decorrente da falcemia (crise vaso-oclusiva) pode ser indistinguível de uma colecystite aguda, retardando o tratamento adequado.\n\nc) Incorreta. A presença de câncer de cólon ou a realização de uma colectomia não são, isoladamente, indicações para colecistectomia profilática. O tamanho do cálculo (2 cm) também está abaixo do ponto de corte de 3 cm, que é o limite habitualmente utilizado para sugerir cirurgia profilática devido ao risco de neoplasia de vesícula.\n\nd) Incorreta. Pólipos de vesícula biliar têm indicação cirúrgica quando são maiores que 10 mm (1 cm), quando apresentam crescimento documentado em exames subsequentes, ou quando estão associados a cálculos biliares em pacientes acima de 50-60 anos. Um pólipo de 5 mm, isolado e incidental, requer apenas acompanhamento ultrassonográfico.\n\ne) Incorreta. A realização de uma hernioplastia inguinal não justifica a abordagem da vesícula biliar. Além disso, cálculos de 1 cm assintomáticos devem ser apenas observados. Adicionar um procedimento intra-abdominal (colecistectomia) a uma cirurgia de parede abdominal (hernioplastia) sem indicação clara aumenta desnecessariamente o tempo cirúrgico e o risco de infecção de sítio cirúrgico.\n\nResumo das principais indicações de colecistectomia profilática (assintomáticos):\n1. Vesícula em porcelana (risco de câncer).\n2. Cálculos maiores que 3 cm.\n3. Pólipos maiores que 1 cm (ou pólipos associados a cálculos).\n4. Anemias hemolíticas crônicas (como a anemia falciforme).\n5. Anomalias congênitas da junção pancreatobiliar.\n6. Pacientes que serão submetidos a cirurgia bariátrica ou transplantes (em protocolos específicos).",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:48.483Z"
+  },
+  {
+    "id": "AJUDA_2619cbbe-7526-4a83-b648-835366e6d4ea",
+    "originalId": "2619cbbe-7526-4a83-b648-835366e6d4ea",
+    "statement": "O Brasil enfrenta uma grave crise ambiental que reúne seca extrema, crise hídrica e redução da umidade, fenômenos potencializados pelas queimadas que pioram a qualidade do ar. Nesse contexto, assinale a alternativa que contempla medidas importantes para prevenir agravos à saúde de curto prazo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Instalação de fontes de água potável para que as pessoas possam se hidratar à vontade e pontos de nebulização.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Distribuição de protetores solares a toda a população e avaliação especializada de pneumologia a todas as crianças até os 10 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientação para que as pessoas façam exercícios físicos em área externa e para que fiquem distantes das queimadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Orientação para que os serviços de saúde notifiquem todos os casos de náuseas, vômitos e diarreias como decorrentes do calor e uso de máscaras cirúrgicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Distribuição de soro para hidratação oral a todas as famílias com bebês até 1 ano de idade e orientação para uso de protetor solar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda medidas de saúde pública diante de uma crise ambiental caracterizada por seca, baixa umidade e poluição decorrente de queimadas. O objetivo é identificar ações eficazes para mitigar agravos imediatos, como desidratação e complicações respiratórias.\n\nAnálise das alternativas:\n\nAlternativa (a): CORRETA. Em cenários de seca extrema e baixa umidade relativa do ar, o corpo perde água de forma mais acelerada pela transpiração e respiração. A oferta de água potável em pontos estratégicos facilita a hidratação contínua da população. Já os pontos de nebulização auxiliam na umidificação das vias aéreas superiores, reduzindo o impacto das partículas de fumaça e do ar seco, que agridem a mucosa respiratória e podem exacerbar quadros de asma e DPOC.\n\nAlternativa (b): INCORRETA. Embora o protetor solar seja importante para prevenir danos actínicos, ele não é a prioridade no contexto de fumaça e baixa umidade. Além disso, encaminhar todas as crianças de até 10 anos para avaliação especializada em pneumologia é uma medida tecnicamente inadequada e logisticamente inviável, pois sobrecarregaria o sistema sem necessidade clínica, já que o manejo inicial deve ocorrer na atenção primária.\n\nAlternativa (c): INCORRETA. A recomendação correta durante períodos de baixa umidade e má qualidade do ar é evitar exercícios físicos em áreas externas, especialmente entre as 10h e as 16h. O esforço físico aumenta a frequência respiratória, fazendo com que a pessoa inale uma quantidade maior de poluentes e partículas finas provenientes das queimadas.\n\nAlternativa (d): INCORRETA. Notificar todos os casos de náuseas, vômitos e diarreia obrigatoriamente como \"decorrentes do calor\" é um erro epidemiológico, pois ignora outras causas possíveis, como infecções virais ou bacterianas. Além disso, máscaras cirúrgicas não oferecem proteção adequada contra os materiais particulados finos da fumaça (PM2,5); para essa finalidade, seriam indicadas máscaras do tipo N95 ou PFF2.\n\nAlternativa (e): INCORRETA. A distribuição de soro de reidratação oral (SRO) é uma medida para tratamento de desidratação estabelecida, não uma medida preventiva geral para crises ambientais. Para bebês de até 6 meses, a recomendação prioritária é o aleitamento materno exclusivo, que já garante a hidratação. O foco exclusivo em protetor solar e SRO para bebês ignora as necessidades respiratórias e de hidratação do restante da população afetada.",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:48.483Z"
+  },
+  {
+    "id": "AJUDA_26479088-3124-4161-b264-d1ffa5d6161f",
+    "originalId": "26479088-3124-4161-b264-d1ffa5d6161f",
+    "statement": "Historicamente, a notificação compulsória tem sido a principal fonte da vigilância epidemiológica, a partir da qual, na maioria das vezes, se desencadeia o processo informação-decisão-ação. Notificação compulsória é definida como a comunicação da ocorrência de determinada doença ou agravo à saúde:",
+    "options": [
+      {
+        "id": "A",
+        "text": "feita à autoridade sanitária por profissionais de saúde ou qualquer cidadão, para fins de adoção de medidas de intervenção pertinentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "feita à autoridade sanitária, exclusivamente por profissionais de saúde, para fins de adoção de medidas de intervenção pertinentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "que resultem em óbito, feita à autoridade sanitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "de natureza infectocontagiosa, feita à autoridade sanitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "em situações de catástrofe natural, como forma de mensurar danos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A notificação compulsória é um instrumento fundamental da Vigilância Epidemiológica no Brasil, regida principalmente pela Lei nº 6.259/1975 e consolidada pela Portaria de Consolidação nº 4/2017 do Ministério da Saúde. O objetivo principal é permitir que a autoridade sanitária tome conhecimento imediato de eventos de saúde pública para planejar e executar medidas de controle e prevenção.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): De acordo com a legislação vigente, a notificação compulsória deve ser realizada por profissionais de saúde (médicos, enfermeiros, odontólogos, entre outros) no exercício da profissão, bem como pelos responsáveis por estabelecimentos de saúde públicos e privados. No entanto, a lei também estabelece que qualquer cidadão pode e deve comunicar à autoridade sanitária a ocorrência de uma doença ou agravo constante na lista oficial, visando à proteção da coletividade. Portanto, a definição abrange tanto o dever profissional quanto o direito/dever do cidadão.\n\nAlternativa B (Incorreta): O erro está no termo \"exclusivamente\". Embora os profissionais de saúde tenham a obrigatoriedade legal e ética de notificar, sob pena de sanções, a notificação não é restrita a eles. Instituições de ensino, responsáveis por creches ou qualquer indivíduo da comunidade podem realizar a notificação de um evento suspeito.\n\nAlternativa C (Incorreta): A notificação não se restringe a casos que resultam em óbito. A grande maioria das doenças de notificação compulsória deve ser informada logo na suspeita clínica, muito antes de qualquer desfecho fatal, justamente para que as medidas de bloqueio e interrupção da cadeia de transmissão sejam eficazes.\n\nAlternativa D (Incorreta): Embora as doenças infectocontagiosas (como tuberculose, hanseníase e sarampo) componham grande parte da lista, a notificação compulsória também abrange agravos de outras naturezas. Exemplos incluem acidentes de trabalho, violência doméstica e/ou sexual, intoxicações exógenas e acidentes por animais peçonhentos, que não são necessariamente doenças infecciosas.\n\nAlternativa E (Incorreta): Situações de catástrofes naturais podem gerar notificações de eventos de saúde pública de importância nacional, mas a definição de notificação compulsória é muito mais ampla e rotineira. Ela serve para o monitoramento contínuo de doenças endêmicas e epidêmicas no dia a dia do sistema de saúde, e não apenas para mensurar danos em desastres pontuais.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:48.483Z"
+  },
+  {
+    "id": "AJUDA_264f39a2-7f72-4e90-97dd-65969c33764b",
+    "originalId": "264f39a2-7f72-4e90-97dd-65969c33764b",
+    "statement": "Recém-nascido, termo, 37 semanas, em leito de alojamento conjunto, com 30 horas de vida, realizado teste do coraçãozinho: saturação membro superior 93%, saturação membro inferior 93%. Em relação ao teste do coraçãozinho é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Teste do coraçãozinho alterado, conduta intubação orotraqueal, oferecer FiO2 100% e encaminhar o paciente para UTI",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Teste do coraçãozinho alterado, conduta alta hospitalar com acompanhamento ambulatorial na cardiologia pediátrica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Teste do coraçãozinho duvidoso, conduta repetir teste após uma hora por até 2 vezes, caso permaneça alterado considerar positivo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Teste do coraçãozinho normal, conduta alta hospitalar",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Teste do Coraçãozinho (oximetria de pulso) é um exame de triagem neonatal fundamental para a detecção precoce de cardiopatias congênitas críticas. O protocolo oficial do Ministério da Saúde e da Sociedade Brasileira de Pediatria estabelece critérios claros para a interpretação dos resultados em recém-nascidos com mais de 24 horas de vida.\n\nPara que o teste seja considerado NORMAL (negativo), o recém-nascido deve apresentar saturação de oxigênio maior ou igual a 95% tanto no membro superior direito (pré-ductal) quanto em um dos membros inferiores (pós-ductal), com uma diferença menor ou igual a 3% entre as duas medidas.\n\nNo caso clínico apresentado, o recém-nascido possui 93% de saturação em ambos os membros. Como o valor está entre 90% e 94%, o teste é considerado alterado/duvidoso, exigindo uma conduta específica de reavaliação.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o teste esteja alterado, a saturação de 93% em um bebê estável não é indicação imediata de intubação orotraqueal ou oferta de oxigênio a 100%. O protocolo inicial para esse resultado é a repetição da oximetria, e não intervenções invasivas imediatas, a menos que haja desconforto respiratório grave associado.\n\nAlternativa b) Incorreta. Um teste do coraçãozinho alterado impede a alta hospitalar. O diagnóstico de cardiopatia crítica deve ser descartado por meio da repetição do teste ou da realização de um ecocardiograma antes que o paciente saia da maternidade.\n\nAlternativa c) Correta. De acordo com o fluxograma oficial, se a saturação estiver entre 90% e 94% (ou se houver diferença de 4% ou mais entre os membros), deve-se repetir a medição após uma hora. Se o resultado persistir alterado, repete-se mais uma vez após outra hora (totalizando até três medidas). Caso a alteração persista após a terceira medição, o teste é considerado positivo, sendo obrigatória a realização de um ecocardiograma em até 24 horas.\n\nAlternativa d) Incorreta. O teste não é normal. Como mencionado, para ser normal, a saturação precisaria ser de no mínimo 95%. Portanto, a alta hospitalar não pode ser concedida sem a investigação adicional proposta pelo protocolo.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Cuidados Neonatais",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:48.483Z"
+  },
+  {
+    "id": "AJUDA_2651d0aa-c2d2-4334-b081-61da9929e016",
+    "originalId": "2651d0aa-c2d2-4334-b081-61da9929e016",
+    "statement": "A Notificação Compulsória é um componente central da Vigilância Epidemiológica. Uma das seguintes condições é de Notificação Compulsória Imediata no nível municipal, exigindo ação rápida e prioritária do gestor:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tuberculose (qualquer forma).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Violência autoprovocada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hanseníase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acidente de Trabalho Grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Sífilis Adquirida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O tema abordado refere-se à Lista Nacional de Notificação Compulsória de doenças, agravos e eventos de saúde pública, regida atualmente pela Portaria de Consolidação nº 4/2017 e suas atualizações, como a Portaria GM/MS nº 217/2023. As notificações são divididas entre periodicidade semanal (até 7 dias) e imediata (até 24 horas para as autoridades de saúde).\n\nAlternativa a: Incorreta. A Tuberculose, em qualquer uma de suas formas, é um agravo de notificação compulsória semanal para os níveis municipal, estadual e federal. Por ser uma doença de evolução crônica, o sistema de vigilância foca no acompanhamento do tratamento e da cura, não exigindo resposta em 24 horas.\n\nAlternativa b: Correta. A violência autoprovocada, que abrange as tentativas de suicídio e atos de automutilação, é classificada como de notificação compulsória imediata (em até 24 horas) para a autoridade de saúde municipal. Essa agilidade é fundamental para que a rede de atenção psicossocial possa intervir rapidamente, oferecendo o suporte necessário e prevenindo a consumação do suicídio.\n\nAlternativa c: Incorreta. A Hanseníase é uma doença infectocontagiosa de curso crônico e progressão lenta. Assim como a tuberculose, sua notificação é obrigatória, porém de periodicidade semanal para todas as esferas de gestão.\n\nAlternativa d: Incorreta. De acordo com a lista nacional vigente, o Acidente de Trabalho Grave é de notificação compulsória semanal. É importante destacar que o Acidente de Trabalho Fatal (que resulta em óbito) é o que possui caráter de notificação imediata. Acidentes graves, que envolvem mutilações ou danos físicos severos sem óbito imediato, seguem o fluxo semanal.\n\nAlternativa e: Incorreta. A Sífilis, seja em sua forma adquirida, congênita ou em gestantes, é uma condição de notificação compulsória semanal. Embora seja um grave problema de saúde pública, o controle epidemiológico é realizado por meio do monitoramento semanal dos casos notificados.\n\nResumo: O candidato deve memorizar que a maioria das doenças crônicas e infecciosas comuns (Sífilis, TB, Hanseníase) é de periodicidade semanal, enquanto eventos de potencial epidêmico imediato ou de urgência social e psíquica, como a tentativa de suicídio (violência autoprovocada) e acidentes de trabalho fatais, exigem notificação em 24 horas.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:48.483Z"
+  },
+  {
+    "id": "AJUDA_2653c1f4-8ac2-4da8-945a-b51ceeee1f77",
+    "originalId": "2653c1f4-8ac2-4da8-945a-b51ceeee1f77",
+    "statement": "A presença de dor no quadrante inferior direito do abdômen, após a palpação do quadrante inferior esquerdo, é um sinal frequentemente presente em paciente com apendicite aguda. Trata-se do sinal de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "McBurney",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Blumberg",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rovsing",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Murphy",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O enunciado descreve uma manobra semiológica clássica utilizada no diagnóstico de apendicite aguda. Vamos analisar cada uma das alternativas para entender por que a letra (c) é a correta:\n\nAlternativa a) McBurney: Incorreta. McBurney refere-se, na verdade, a um ponto anatômico (Ponto de McBurney), localizado na união do terço externo com os dois terços internos de uma linha imaginária entre a espinha ilíaca anterossuperior direita e o umbigo. A dor à palpação profunda neste ponto é sugestiva de apendicite, mas não corresponde à manobra de palpar o lado esquerdo para gerar dor no lado direito.\n\nAlternativa b) Blumberg: Incorreta. O sinal de Blumberg é a dor à descompressão brusca no ponto de McBurney. Ele indica irritação peritoneal. Embora seja um sinal fundamental na apendicite aguda, ele é pesquisado diretamente no quadrante inferior direito, e não por meio da palpação do lado oposto.\n\nAlternativa c) Rovsing: Correta. O sinal de Rovsing ocorre quando a palpação profunda e contínua do quadrante inferior esquerdo (cólon descendente e sigmoide) provoca dor no quadrante inferior direito (fossa ilíaca direita). Isso acontece porque a manobra desloca os gases do cólon em direção retrógrada, distendendo o ceco e o apêndice inflamado, o que desperta a dor localizada.\n\nAlternativa d) Murphy: Incorreta. O sinal de Murphy é característico da colecistite aguda, não da apendicite. Ele é positivo quando o paciente interrompe subitamente a inspiração profunda durante a palpação do ponto cístico (no hipocôndrio direito), devido à dor causada pelo contato da vesícula biliar inflamada com a mão do examinador.\n\nPortanto, a descrição da questão corresponde exatamente ao sinal de Rovsing.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:48.483Z"
+  },
+  {
+    "id": "AJUDA_265bd0c0-83d1-4cc5-a41c-b5d733884919",
+    "originalId": "265bd0c0-83d1-4cc5-a41c-b5d733884919",
+    "statement": "Uma menina de 7 anos vem sendo acompanhada pelos pais devido à dificuldade de concentração em sala de aula, desatenção frequente, agitação e impulsividade. Os sintomas ocorrem em casa e na escola, desde os 5 anos. Qual é o diagnóstico mais provável, quais critérios você verificaria e qual seria o primeiro passo terapêutico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transtorno do Déficit de Atenção com Hiperatividade (TDAH); verificar critérios de DSM-5; iniciar estimulação comportamental e treino em sala de aula.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Transtorno de Conduta; verificar violência a direitos alheios; iniciar medicação antipsicótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno Opositivo Desafiador; verificar padrão de desafio à autoridade; iniciar terapia familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno de Ansiedade Generalizada; verificar preocupações excessivas; iniciar terapia cognitivo-comportamental.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A apresentação clínica é caracterizada pela tríade de desatenção, hiperatividade e impulsividade, com sintomas presentes em dois ou mais contextos (casa e escola) e início antes dos 12 anos. Esses são os pilares para o diagnóstico do Transtorno do Déficit de Atenção com Hiperatividade (TDAH).\n\nAlternativa a: Correta. O diagnóstico de TDAH é clínico e deve seguir os critérios estabelecidos pelo DSM-5 (Manual Diagnóstico e Estatístico de Transtornos Mentais). O tratamento inicial para crianças em idade escolar envolve uma abordagem multimodal, que inclui a psicoeducação de pais e professores, intervenções comportamentais e adaptações no ambiente de ensino para favorecer a concentração e o controle dos impulsos.\n\nAlternativa b: Incorreta. O Transtorno de Conduta envolve a violação persistente de direitos alheios e normas sociais, manifestada por comportamentos como agressão a pessoas, destruição de propriedade ou roubos, o que não foi descrito no caso. Além disso, o uso de antipsicóticos não é a conduta de primeira linha para os sintomas apresentados.\n\nAlternativa c: Incorreta. O Transtorno Opositivo Desafiador (TOD) é definido por um padrão de humor irritável, comportamento desafiador e hostilidade contra figuras de autoridade. Embora possa ocorrer em comorbidade com o TDAH, a queixa central da paciente foca na desatenção e na agitação motora, que são a base do diagnóstico de TDAH.\n\nAlternativa d: Incorreta. No Transtorno de Ansiedade Generalizada (TAG), a criança apresenta preocupações excessivas e persistentes. Embora a ansiedade possa causar inquietação, a desatenção nesse caso é secundária aos pensamentos intrusivos. O padrão crônico de impulsividade e agitação motora desde a primeira infância é característico de um transtorno do neurodesenvolvimento como o TDAH, e não de um quadro ansioso isolado.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:48.483Z"
+  },
+  {
+    "id": "AJUDA_26657318-135e-404e-870d-f802f6ebc15e",
+    "originalId": "26657318-135e-404e-870d-f802f6ebc15e",
+    "statement": "Um médico recém-integrado à Estratégia de Saúde da Família (ESF) se mostra surpreso com o foco da abordagem, que vai além do atendimento clínico. Ele questiona sobre os princípios básicos dessa estratégia. Qual das alternativas abaixo NÃO é um princípio da Estratégia de Saúde da Família?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enfoque na família como núcleo de cuidado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ações predominantemente curativas e individualizadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Intersetorialidade e promoção da qualidade de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Desenvolvimento de atividades em equipe multiprofissional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento das diretrizes da Política Nacional de Atenção Básica e dos fundamentos da Estratégia de Saúde da Família (ESF). A ESF representa uma mudança de paradigma em relação ao modelo médico tradicional, focando na organização da atenção primária.\n\nAlternativa a: Esta alternativa apresenta um princípio correto da ESF. A família é compreendida como o núcleo social primário e o foco central do cuidado. O atendimento deve considerar as dinâmicas familiares e o ambiente em que o indivíduo vive para que as intervenções sejam eficazes e contextualizadas, indo além da patologia isolada.\n\nAlternativa b: Esta é a alternativa que NÃO representa um princípio da ESF, sendo, portanto, o gabarito da questão. O modelo da ESF busca romper com o padrão focado exclusivamente em ações curativas e no atendimento individualizado isolado, que são características do modelo biomédico tradicional ou hospitalocêntrico. Na ESF, embora o tratamento exista, o foco deve ser a promoção da saúde, a prevenção de agravos e o acompanhamento longitudinal da população.\n\nAlternativa c: Esta alternativa apresenta um princípio correto. A intersetorialidade é a articulação do setor saúde com outros setores públicos, como educação, saneamento básico e assistência social. Essa união é fundamental para enfrentar os determinantes sociais da saúde e promover a qualidade de vida da comunidade atendida.\n\nAlternativa d: Esta alternativa apresenta um princípio correto. O desenvolvimento de atividades em equipe multiprofissional é a base operacional da ESF. A equipe mínima, composta por médico, enfermeiro, auxiliares/técnicos de enfermagem e agentes comunitários de saúde, trabalha de forma integrada para compartilhar saberes e oferecer uma assistência integral e mais resolutiva.",
+    "exam": "SMS",
+    "year": 2026,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4dca811e56c7cfd00fe8634f4c8def6fe05b79e8a394497fa4e141b345cc741e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f42f9cc22dfa808b79178a1ee3afc9dc62899a63aabe4b11b20f7d30f3c7446.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:48.483Z"
+  },
+  {
+    "id": "AJUDA_266b2f24-9439-401e-82f9-bef44c8fd6ef",
+    "originalId": "266b2f24-9439-401e-82f9-bef44c8fd6ef",
+    "statement": "Um menino de 5 anos de idade, previamente hígido, foi levado pelos pais ao pronto atendimento com suspeita de dengue. A criança apresentou quadro de febre, que teve início há 3 dias, associado à cefaleia e mialgia com exantema maculopapular difuso e pruriginoso há 24 horas. Foram negados sintomas gastrointestinais. O exame físico apresentou os seguintes dados: peso 17 kg; bom estado geral; anictérico; normocárdico; normotenso; sem sinais meníngeos; abdome indolor à palpação e sem visceromegalias; e pele e mucosa sem alterações. Com base nessa situação hipotética, a conduta a ser realizada é orientar",
+    "options": [
+      {
+        "id": "A",
+        "text": "repouso; prescrever hidratação oral com 130 ml/kg/dia de líquidos ingeridos, sendo 1/3 do volume com sais de reidratação oral; e ibuprofeno, se for necessário",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "repouso; prescrever hidratação oral com 130 ml/kg/dia de líquidos ingeridos, sendo 2/3 do volume com sais de reidratação oral; e paracetamol, se for necessário",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "repouso; prescrever hidratação oral com 100 ml/kg/dia de líquidos ingeridos, sendo 1/3 do volume com sais de reidratação oral; e paracetamol, se for necessário",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "repouso; prescrever hidratação oral com 100 ml/kg/dia de líquidos ingeridos, sendo 2/3 do volume com sais de reidratação oral; e paracetamol, se for necessário",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "repouso; prescrever hidratação oral com 80 ml/kg/dia de líquidos ingeridos, sendo 1/3 do volume com sais de reidratação oral; e ibuprofeno, se for necessário",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nO paciente é um menino de 5 anos (17 kg) com quadro clínico sugestivo de dengue (febre, cefaleia, mialgia e exantema). O exame físico mostra estabilidade hemodinâmica, bom estado geral e ausência de sinais de alarme, como dor abdominal intensa ou visceromegalias. De acordo com as diretrizes do Ministério da Saúde, essa criança é classificada no Grupo A (dengue sem sinais de alarme e sem condições especiais/grupos de risco).\n\nConduta para o Grupo A em Pediatria:\n\n1. Hidratação: O volume recomendado para crianças é de 100 ml/kg/dia.\n2. Composição: O volume total deve ser composto por 1/3 de Sais de Reidratação Oral (SRO) e 2/3 de outros líquidos caseiros (água, sucos de frutas, água de coco).\n3. Medicação: Deve-se utilizar analgésicos e antipiréticos como paracetamol ou dipirona. O uso de anti-inflamatórios não esteroidais (AINEs), como o ibuprofeno, é terminantemente contraindicado devido ao risco de complicações hemorrágicas e, em crianças, o risco de Síndrome de Reye associado ao uso de salicilatos.\n\nAnálise das Alternativas:\n\nAlternativa a) Incorreta. O volume de 130 ml/kg/dia está acima do recomendado pelo protocolo atual para o Grupo A. Além disso, o ibuprofeno é contraindicado em casos de suspeita de dengue pelo risco de sangramentos.\n\nAlternativa b) Incorreta. O volume de 130 ml/kg/dia está incorreto. A proporção de SRO sugerida (2/3) também está invertida em relação ao protocolo oficial, que preconiza 1/3 de SRO.\n\nAlternativa c) Correta. Esta alternativa segue rigorosamente o protocolo de manejo clínico de dengue do Ministério da Saúde para o Grupo A pediátrico: hidratação oral com 100 ml/kg/dia, sendo 1/3 deste volume com SRO, e uso de paracetamol para controle de sintomas.\n\nAlternativa d) Incorreta. Embora o volume total (100 ml/kg/dia) e a medicação estejam corretos, a proporção de sais de reidratação oral proposta (2/3) está em desacordo com a recomendação de 1/3 de SRO para este grupo.\n\nAlternativa e) Incorreta. O volume de 80 ml/kg/dia é inferior ao padrão de 100 ml/kg/dia estabelecido para crianças no Grupo A. O uso de ibuprofeno também invalida a alternativa, dado o risco hemorrágico.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:18:48.483Z"
+  }
+]

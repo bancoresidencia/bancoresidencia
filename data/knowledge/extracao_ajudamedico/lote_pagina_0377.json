@@ -1,0 +1,497 @@
+[
+  {
+    "id": "AJUDA_684ac25a-82b5-4ecb-8f85-36f8c87d138f",
+    "originalId": "684ac25a-82b5-4ecb-8f85-36f8c87d138f",
+    "statement": "Em relação ao paciente da questão anterior, ele retorna à UPA confuso, referindo sensação de dispneia, palpitações e sudorese profusa. Apresenta-se com FC 167 bpm, PA 75x40 mmHg, FR 25 ipm, Sat 91%, TEC 3 segundos. Realizado eletrocardiograma, com o seguinte resultado:\n\nEm relação ao diagnóstico acima, qual a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sedação leve e Cardioversão elétrica sincronizada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Manobra vagal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Adenosina e flush SF.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sedação, analgesia e desfibrilação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico:\n\nO paciente apresenta uma taquiarritmia, com frequência cardíaca de 167 bpm. O eletrocardiograma revela um ritmo regular, com complexos QRS estreitos (menores que 120ms ou 3 quadradinhos) e ausência de ondas P nítidas antes de cada QRS. Esse achado é característico de uma Taquicardia Supraventricular (TSV).\n\nO ponto fundamental para determinar a conduta em qualquer arritmia é a avaliação da estabilidade hemodinâmica. Segundo os protocolos de Suporte Avançado de Vida Cardiovascular (ACLS), os sinais de instabilidade são:\n1. Hipotensão arterial.\n2. Alteração aguda do estado mental (confusão, sonolência).\n3. Sinais de choque (como o tempo de enchimento capilar lentificado de 3 segundos e sudorese profusa).\n4. Dor torácica isquêmica.\n5. Insuficiência cardíaca aguda (dispneia e congestão).\n\nO paciente em questão apresenta os três primeiros sinais de forma clara (PA 75x40 mmHg, confusão mental e TEC de 3 segundos), além de queixar-se de dispneia. Portanto, trata-se de uma Taquiarritmia Instável.\n\nAnálise das alternativas:\n\na) Correta. Para qualquer paciente com taquiarritmia e sinais de instabilidade, a conduta imediata é a cardioversão elétrica sincronizada. Como o paciente está confuso, mas ainda acordado, a sedação leve é recomendada antes do procedimento para evitar a dor e o sofrimento causados pelo choque, desde que não retarde excessivamente a intervenção.\n\nb) Incorreta. A manobra vagal é uma conduta indicada para pacientes com taquicardia supraventricular de complexo estreito que estejam hemodinamicamente estáveis. No paciente instável, não se deve perder tempo com medidas de baixa eficácia.\n\nc) Incorreta. A adenosina é a droga de escolha para o tratamento de Taquicardia Supraventricular regular em pacientes estáveis. Em casos de instabilidade, a terapia elétrica (cardioversão) precede o uso de fármacos.\n\nd) Incorreta. Existe uma diferença técnica vital entre desfibrilação e cardioversão. A desfibrilação é um choque não sincronizado, indicado apenas para ritmos de parada cardiorrespiratória (Fibrilação Ventricular e Taquicardia Ventricular sem pulso). No paciente com pulso e ritmo organizado (como a TSV), o choque deve ser sincronizado com a onda R do eletrocardiograma para evitar que a descarga ocorra durante o período vulnerável da repolarização ventricular (onda T), o que poderia induzir uma fibrilação ventricular.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Taquiarritmias"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/6bca076040af6c795de7806119403b839610e6559d33d4e61eedc497dc0f791a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_684ac25a-82b5-4ecb-8f85-36f8c87d138f_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:29.995Z"
+  },
+  {
+    "id": "AJUDA_68504272-2798-47d5-a112-564f15f59ecd",
+    "originalId": "68504272-2798-47d5-a112-564f15f59ecd",
+    "statement": "Em relação ao atributo do acesso, qual é a melhor forma de realizar a gestão da clínica para organizar a agenda do médico de família e comunidade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "É recomendado que o médico não atenda menos que quatro pacientes por hora, para garantir assim o atributo do acesso, e que a atenção primária seja de fato a porta de entrada do sistema de saúde;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É recomendado que as consultas sejam divididas por linhas de cuidado, com períodos específicos reservados para cada uma delas, por exemplo: segunda de manhã, hipertensos; terça à tarde, gestantes, e assim por diante;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acesso avançado é uma forma de organizar a agenda baseando-se na premissa de “fazer o trabalho de hoje, hoje!”. Propõe que a demanda do paciente seja resolvida em até em torno de 48h. Para isso se recomenda que pelo menos 50% das vagas do dia sejam para demanda espontânea;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A melhor forma de organizar a agenda é por ordem de chegada, oferecendo marcação através de telefone e aplicativo, além de agendamento presencial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a organização da agenda na Estratégia Saúde da Família, focando no atributo essencial da Atenção Primária à Saúde (APS) denominado Acesso (ou Primeiro Contato). O objetivo é identificar o modelo que melhor concilia a demanda espontânea com o acompanhamento crônico.\n\nAlternativa A (Incorreta): Definir um número fixo e elevado de atendimentos por hora (como quatro ou mais) foca apenas em produtividade quantitativa e não garante a qualidade ou o atributo do acesso. O tempo de consulta deve ser flexível e centrado na pessoa, variando conforme a complexidade de cada caso. Impor metas rígidas de tempo pode prejudicar o vínculo e a resolutividade.\n\nAlternativa B (Incorreta): O modelo de agendas divididas rigidamente por grupos de patologias ou ciclos de vida (como o \"dia do hipertenso\" ou \"dia da gestante\") é considerado ultrapassado. Esse formato cria barreiras de acesso, pois se um paciente hipertenso tiver uma queixa na terça-feira, mas o dia dele for apenas na segunda-feira, ele acaba não sendo atendido ou sobrecarrega prontos-socorros. A agenda moderna deve ser polivalente e capaz de atender diferentes demandas em qualquer turno.\n\nAlternativa C (Correta): O Acesso Avançado (Advanced Access) é atualmente a estratégia mais recomendada para a gestão da clínica na Medicina de Família e Comunidade. O lema central é \"faça o trabalho de hoje, hoje\". O sistema busca reduzir o tempo de espera para consultas, idealmente resolvendo a demanda no mesmo dia ou em até 48 horas. Para isso, a agenda é reorganizada: deixa-se de agendar a maior parte das vagas com meses de antecedência e reserva-se uma parcela significativa (geralmente 50% ou mais) para a demanda espontânea do próprio dia, permitindo que o paciente consiga atendimento quando ele sente que precisa.\n\nAlternativa D (Incorreta): Organizar a agenda apenas por ordem de chegada gera filas físicas precoces, desigualdade no acesso e não permite a estratificação de risco. Embora oferecer múltiplos canais de agendamento (telefone, aplicativos) seja positivo, isso é apenas uma ferramenta de marcação e não uma metodologia de gestão da clínica como o Acesso Avançado. O modelo de \"ordem de chegada\" puro costuma ser ineficiente para o acompanhamento longitudinal dos pacientes.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:29.995Z"
+  },
+  {
+    "id": "AJUDA_685367b4-13fe-45f2-b333-20ce49db120d",
+    "originalId": "685367b4-13fe-45f2-b333-20ce49db120d",
+    "statement": "Paciente, 78 anos de idade, sexo masculino, com antecedentes de hipertensão arterial e diabetes tipo 2, é admitido com quadro de dor torácica retroesternal de forte intensidade iniciada há 4 horas, associada a sudorese profusa, dispneia e náuseas. Ao exame físico, apresenta-se com pressão arterial de 85x62 mmHg, frequência cardíaca de 115 bpm, tempo de enchimento capilar de 5 segundos e extremidades frias. O eletrocardiograma (ECG) realizado durante o atendimento é apresentado na imagem a seguir. A partir desse contexto clínico e eletrocardiográfico, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Devido à instabilidade hemodinâmica, classifica-se o paciente como Killip IV, devendo ser indicado o cateterismo cardíaco de urgência após receber dose de ataque de AAS 300 mg e clopidogrel 600 mg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A partir do quadro clínico e do ECG, o diagnóstico de síndrome coronariana aguda é o mais provável e o paciente deverá ser submetido à dose de ataque de AAS 300 mg e clopidogrel 300 mg, podendo ser encaminhado ao cateterismo cardíaco em até 24 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A principal hipótese diagnóstica é de síndrome coronariana aguda sem supradesnivelamento do segmento ST e, devido aos sinais de instabilidade hemodinâmica, o paciente deverá ser encaminhado ao cateterismo cardíaco o mais breve possível, podendo ser omitida a dose de ataque de inibidor do P2Y12 até que seja definida a anatomia coronariana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Caso não haja possibilidade de avaliação coronariana invasiva de urgência, o paciente poderá ser submetido a fibrinólise química com alteplase após dose de ataque de AAS 300 mg e ticagrelor 180 mg, uma vez que os novos inibidores do P2Y12 (ticagrelor e prasugrel) apresentam tempo de ação mais rápido e maior inibição plaquetária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O paciente apresenta quadro de síndrome coronariana aguda sem supradesnivelamento do segmento ST, devendo ser medicado com AAS 300 mg e clopidogrel 75 mg, sendo omitida a dose de ataque do P2Y12, devido à idade maior que 75 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta um quadro de dor torácica típica associada a sinais claros de má perfusão tecidual e choque (hipotensão, taquicardia, tempo de enchimento capilar prolongado e extremidades frias), o que o classifica como Killip IV (choque cardiogênico). O eletrocardiograma (ECG) revela infradesnivelamento difuso do segmento ST (visível em I, II, aVL e de V2 a V6) associado a um supradesnivelamento do segmento ST na derivação aVR. Esse padrão eletrocardiográfico, no contexto de instabilidade, é altamente sugestivo de lesão de tronco de artéria coronária esquerda ou doença triarterial grave.\n\nAnálise das Alternativas:\n\na) Incorreta. Embora o paciente seja Killip IV e o cateterismo de urgência esteja indicado, as diretrizes atuais de Síndrome Coronariana Aguda sem Supradesnivelamento do ST (SCASST) recomendam cautela com o pré-tratamento (uso de inibidores do P2Y12 antes de conhecer a anatomia coronariana). Em pacientes com padrão de tronco ou triarterial, há uma alta probabilidade de indicação de cirurgia de revascularização miocárdica (CRM) de urgência, e a dose de ataque de clopidogrel aumentaria significativamente o risco de sangramento cirúrgico ou adiaria o procedimento.\n\nb) Incorreta. O paciente apresenta critérios de \"muito alto risco\" devido à instabilidade hemodinâmica (choque cardiogênico). Nessas condições, a estratégia invasiva (cateterismo) deve ser imediata (em até 2 horas), e não em até 24 horas.\n\nc) Correta. O diagnóstico eletrocardiográfico é de SCASST (infra de ST difuso com supra de aVR, sem supra de ST clássico nas demais derivações). Diante da instabilidade hemodinâmica, o paciente deve ser levado ao cateterismo o mais rápido possível. A omissão da dose de ataque do inibidor do P2Y12 (como o clopidogrel, ticagrelor ou prasugrel) é uma conduta adequada até que se conheça a anatomia, justamente pelo alto risco de o paciente necessitar de cirurgia cardíaca de emergência, o que é sugerido pelo padrão de supra em aVR.\n\nd) Incorreta. A fibrinólise (trombolítico como a alteplase) é formalmente contraindicada na Síndrome Coronariana Aguda sem Supradesnivelamento do ST, pois não há evidência de benefício e aumenta o risco de hemorragias. A fibrinólise é reservada apenas para o Infarto com Supradesnivelamento de ST (IAMCSST) quando a angioplastia primária não puder ser realizada em tempo hábil. Além disso, o ticagrelor e o prasugrel não são recomendados em associação com trombolíticos nas doses de ataque habituais.\n\ne) Incorreta. A conduta de omitir ou ajustar a dose de ataque em idosos aplica-se principalmente ao uso de clopidogrel e prasugrel no contexto de fibrinólise no IAMCSST (onde, por exemplo, não se faz ataque de clopidogrel se o paciente tiver mais de 75 anos e for receber trombolítico). No caso em questão, o motivo principal para a omissão do P2Y12 é a necessidade de definir a anatomia coronariana antes de uma possível cirurgia, e não apenas a idade do paciente. Além disso, a dose de manutenção de 75 mg citada na alternativa não substitui a discussão sobre a estratégia invasiva imediata.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Eletrocardiograma",
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/4ed53d5ae3314cd7d917bef218feaca1fc5d353d8af65e1b55fc6641fadba6e8.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_685367b4-13fe-45f2-b333-20ce49db120d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:30.573Z"
+  },
+  {
+    "id": "AJUDA_6867c84f-bfc6-4b83-b45d-2b854df5e60b",
+    "originalId": "6867c84f-bfc6-4b83-b45d-2b854df5e60b",
+    "statement": "Gestante de 30 anos, G2P1, com gestação a termo e evolução considerada normal, encontra-se no segundo período de trabalho de parto, em posição vertical, com puxos espontâneos e coordenados. Relata desejo de parir nessa posição e sem analgesia. O feto está em apresentação cefálica fletida, variedade de posição occípito anterior esquerda, com progressão visível à medida que os puxos ocorrem. Após 90 minutos, o períneo distende, mas o nascimento ainda não ocorreu. Frequência cardíaca fetal normal e a parturiente está colaborativa.\nQual é a conduta mais adequada neste momento, segundo as diretrizes do Ministério da Saúde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Respeitar o tempo fisiológico do segundo período.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar episiotomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Instrumentalizar o parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deprimir fúrcula vaginal com os dedos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso apresenta uma gestante multípara no segundo período do trabalho de parto (período expulsivo), com 90 minutos de duração. O quadro clínico evidencia estabilidade materno-fetal: feto com frequência cardíaca normal, variedade de posição favorável (occípito anterior esquerda), puxos espontâneos e progressão contínua da apresentação com distensão perineal progressiva.\n\nDe acordo com as Diretrizes Nacionais de Assistência ao Parto Normal do Ministério da Saúde e da Organização Mundial da Saúde, o tempo do período expulsivo não deve ser avaliado de forma rígida ou isolada. Havendo progressão fetal evidente e bem-estar materno e fetal preservados, a conduta correta é respeitar o tempo fisiológico do parto.\n\nJUSTIFICATIVA DAS ALTERNATIVAS\n\nAlternativa A (Correta): A conduta adequada é manter o suporte e aguardar a evolução natural do nascimento. A intervenção sem indicação clínica aumenta o risco de morbidade perineal e neonatal. Como a descida continua ocorrendo e a vitalidade fetal está assegurada, respeita-se o tempo fisiológico.\n\nAlternativa B (Incorreta): A episiotomia de rotina é contraindicada. Trata-se de um procedimento cirúrgico que deve ter uso restrito a situações excepcionais, como suspeita de sofrimento fetal agudo necessitando de abreviação imediata do período expulsivo ou auxílio em parto instrumentalizado, situações ausentes no caso.\n\nAlternativa C (Incorreta): O parto instrumental (fórceps ou vácuo-extrator) é indicado apenas diante de parada de progressão, sofrimento fetal agudo ou exaustão materna. Como a apresentação progride a cada puxo e o feto está hígido, o uso de instrumentos não tem indicação e adiciona riscos desnecessários.\n\nAlternativa D (Incorreta): Manobras digitais para tracionar ou deprimir a fúrcula vaginal (\"dilatação digital\" do períneo) são proscritas. Essas intervenções geram dor, microtraumatismos na mucosa e aumentam o risco de lacerações perineais graves e infecções locais.\n\nGabarito: Letra A.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:30.573Z"
+  },
+  {
+    "id": "AJUDA_686ded39-a9be-4290-8f98-5bcf91d30f18",
+    "originalId": "686ded39-a9be-4290-8f98-5bcf91d30f18",
+    "statement": "Seguindo a nova orientação da Diretriz Brasileira de Hipertensão Arterial (2025), deve-se",
+    "options": [
+      {
+        "id": "A",
+        "text": "adotar medidas não medicamentosas nos pré-hipertensos como dieta DASH e prática regular de atividade física; após 12 meses, iniciar tratamento com anti-hipertensivos em pacientes com pressão arterial persistente entre 120-139/80-89 mmHg e alto risco cardiovascular (CV).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "incluir como medida não medicamentosa, resguardando pacientes em risco para hipercalemia – como renais crônicos –, a redução de consumo de sódio e aumento da ingestão de potássio (p.ex., através dos substitutos do sal tradicional, enriquecidos com potássio).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "objetivar a meta de PA < 130/80 mmHg para os pacientes em geral, adotando para a maioria dos idosos meta menos rigorosa. Neste grupo, ressalta-se que há preferência valores mais altos como meta, devido ao risco deste público apresentar baixa tolerância à redução pressórica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "medir inicialmente a pressão arterial nos dois braços, adotando o de maior valor para as medidas seguintes; realizar, com esfigmomanômetro automático ou semiautomático (técnica oscilométrica), no mínimo três medidas com intervalo de 1 minuto, registrando como valor final a última aferição.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS\n\nA) INCORRETA. De acordo com as atualizações mais recentes, para pacientes pré-hipertensos (PA entre 121-139 / 81-89 mmHg) que possuem alto risco cardiovascular ou doença cardiovascular estabelecida, o tratamento medicamentoso deve ser considerado se as metas não forem atingidas após 3 meses de intervenções no estilo de vida. O prazo de 12 meses citado na alternativa é excessivo para pacientes de alto risco.\n\nB) CORRETA. Esta é uma recomendação de destaque na nova diretriz, fundamentada em estudos recentes que demonstram o benefício da substituição do sal de cozinha comum por sais enriquecidos com potássio (como o cloreto de potássio). Essa medida auxilia na redução da pressão arterial e do risco de eventos cardiovasculares, como o AVC. A ressalva para pacientes com risco de hipercalemia (como renais crônicos estágio 4 e 5 ou usuários de medicamentos poupadores de potássio) é essencial para a prática clínica segura.\n\nC) INCORRETA. A nova diretriz unificou a meta pressórica para < 130/80 mmHg para a população geral, inclusive para idosos hígidos e independentes. A meta menos rigorosa (abaixo de 140/90 mmHg ou entre 130-139 mmHg de sistólica) é reservada apenas para idosos fragilizados ou com contraindicações específicas para o controle intensivo, e não para a \"maioria\" dos idosos.\n\nD) INCORRETA. Embora a orientação de medir em ambos os braços na primeira consulta e realizar três medidas esteja correta, o erro está na definição do valor final. A recomendação é que se realize a MÉDIA das duas últimas medidas para o registro oficial, descartando a primeira aferição caso haja grande discrepância, e não utilizar apenas a \"última\" medida de forma isolada.\n\nGABARITO: Letra (b).",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:30.573Z"
+  },
+  {
+    "id": "AJUDA_686e278c-af1a-4b13-94c5-3d3434ab634a",
+    "originalId": "686e278c-af1a-4b13-94c5-3d3434ab634a",
+    "statement": "O carcinoma medular de tireoide (CMT) difere dos carcinomas bem diferenciados (papilífero e folicular) em sua origem, marcadores e agressividade. Assinale a alternativa correta sobre o manejo cirúrgico e seguimento do CMT.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A lobectomia com istmectomia é suficiente para tumores menores que 1 cm, desde que a calcitonina sérica normalize no pós-operatório imediato e não haja mutação do proto-oncogene RET.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A tireoidectomia total com esvaziamento cervical central (nível VI) profilático é a conduta padrão, devido à alta incidência de metástases linfonodais ocultas e à ineficácia do iodo radioativo (RAI) no pós-operatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O rastreamento de feocromocitoma pré-operatório é desnecessário em casos esporádicos de CMT, sendo obrigatório apenas em pacientes com história familiar positiva de Neoplasia Endócrina Múltipla (NEM).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A terapia supressiva com levotiroxina (TSH < 0,1 mUI/L) é fundamental para evitar a recidiva tumoral, uma vez que as células C parafoliculares são dependentes de TSH para seu crescimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para entender o manejo do carcinoma medular de tireoide (CMT), é preciso lembrar que ele se origina das células C (parafoliculares), produtoras de calcitonina, e não das células foliculares. Isso muda completamente a lógica do tratamento em relação aos carcinomas papilífero e folicular.\n\nAlternativa A: Incorreta. Diferentemente do carcinoma papilífero de baixo risco, no qual a lobectomia pode ser considerada em casos selecionados, o CMT exige sempre a tireoidectomia total. O CMT apresenta uma alta taxa de multicentricidade (especialmente nos casos familiares) e é consideravelmente mais agressivo que os tumores bem diferenciados, não havendo espaço para cirurgias conservadoras como a lobectomia, independentemente do tamanho do tumor ou dos níveis de calcitonina.\n\nAlternativa B: Correta. Esta é a conduta padrão. O esvaziamento cervical central (nível VI) profilático é indicado porque o CMT tem uma propensão muito alta para metástases linfonodais precoces, muitas vezes ocultas (não vistas no ultrassom pré-operatório). Além disso, como o CMT se origina das células C, essas células não captam iodo. Portanto, a radioiodoterapia (RAI), que é um pilar no tratamento dos carcinomas papilífero e folicular, é totalmente ineficaz no CMT.\n\nAlternativa C: Incorreta. O rastreamento de feocromocitoma por meio da dosagem de metanefrinas e catecolaminas é OBRIGATÓRIO em todos os pacientes com CMT antes da cirurgia cervical. Cerca de 25% dos casos de CMT fazem parte da neoplasia endócrina múltipla tipo 2 (NEM 2). Mesmo que não haja história familiar, o caso pode ser uma mutação germinativa nova (de novo). Operar a tireoide de um paciente com feocromocitoma não diagnosticado pode desencadear uma crise hipertensiva fatal durante a indução anestésica ou o ato cirúrgico.\n\nAlternativa D: Incorreta. A terapia supressiva do TSH (manter o TSH muito baixo) é fundamental apenas nos carcinomas diferenciados (papilífero e folicular), pois suas células possuem receptores de TSH e dependem desse hormônio para crescer. As células C (parafoliculares), que dão origem ao CMT, não possuem receptores de TSH. Logo, o TSH não influencia o crescimento do CMT. No pós-operatório desses pacientes, o objetivo da levotiroxina é apenas a reposição hormonal para manter o paciente em eutireoidismo (TSH normal), e não a supressão.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:30.573Z"
+  },
+  {
+    "id": "AJUDA_6874a5ab-a7d9-4dff-9692-242f9d1227f5",
+    "originalId": "6874a5ab-a7d9-4dff-9692-242f9d1227f5",
+    "statement": "Idosa, 89 anos, confinada ao leito por sequela motora de AVE vem apresentando febre, tosse e coriza há 4 dias. Levada à Emergência testou positivo para Influenza A. TC de tórax evidencia 50% de infiltrado pulmonar em vidro fosco. Normotensa, taquipneica, saturação O2 de 88% em ar ambiente.\nQual conduta deverá ser tomada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internação, O2, ceftriaxona e claritromicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internação, dexametazona, remdesivir e moxifloxacina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Internação, suporte respiratório, linezolida e piperacilina tazobactam.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Internação, oseltamivir, suporte respiratório e sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A paciente idosa e acamada apresenta quadro de Síndrome Respiratória Aguda Grave (SRAG), caracterizada por sintomas respiratórios agudos associados a sinais de gravidade (taquipneia, saturação de oxigênio de 88% em ar ambiente e acometimento pulmonar significativo na tomografia). Com a confirmação laboratorial de Influenza A, a conduta prioritária envolve internação hospitalar para suporte ventilatório e início imediato do antiviral específico.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Propõe esquema antimicrobiano voltado para pneumonia bacteriana comunitária (ceftriaxona associada a claritromicina). Embora a coinfecção bacteriana possa ocorrer, a paciente tem infecção viral confirmada por Influenza A e a abordagem principal exige a introdução do antiviral específico, que foi omitido nesta opção.\n\nAlternativa b: Incorreta. O remdesivir e a dexametasona são fármacos indicados no tratamento de formas moderadas a graves de infecção por COVID-19, não constituindo a terapia de escolha para infecções por Influenza. A moxifloxacina também não é necessária como primeira linha sem comprovação de infecção bacteriana associada.\n\nAlternativa c: Incorreta. A combinação de piperacilina-tazobactam com linezolida visa à cobertura empírica de patógenos hospitalares multirresistentes, incluindo Pseudomonas aeruginosa e MRSA. Não há histórico recente de hospitalização ou fatores clínicos que justifiquem essa cobertura de amplo espectro na admissão de uma infecção viral comunitária, além de faltar o antiviral.\n\nAlternativa d: Correta. A paciente necessita de internação devido aos critérios de gravidade (hipoxemia e taquipneia). O oseltamivir é o antiviral de escolha para Influenza A (inibidor de neuraminidase), indicado para todos os casos de SRAG ou pacientes em grupos de alto risco, mesmo após 48 horas de início dos sintomas. O suporte respiratório é mandatário para correção da hipoxemia, aliado ao manejo sintomático.\n\nPortanto, a alternativa correta é a letra d.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Pneumologia Intensiva",
+      "Saúde do Idoso",
+      "Influenza"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:30.573Z"
+  },
+  {
+    "id": "AJUDA_68751dae-497a-4639-87e5-5accea06e56e",
+    "originalId": "68751dae-497a-4639-87e5-5accea06e56e",
+    "statement": "Homem de 72 anos, hipertenso e obeso (IMC 33), encontra-se internado por pneumonia comunitária, em uso de antibióticos endovenosos. Está restrito ao leito, mas sem contraindicações à anticoagulação. Qual é a medida farmacológica mais adequada para profilaxia de tromboembolismo venoso neste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rivaroxabana 15mg via oral ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enoxaparina 1 mg/kg subcutânea a cada 12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Enoxaparina 40 mg subcutânea uma vez ao dia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ácido acetilsalicílico 100 mg via oral ao dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta diversos fatores de risco que indicam a necessidade de profilaxia para Tromboembolismo Venoso (TEV). Seguindo modelos de estratificação de risco, como o Escore de Pádua, ele pontua por ter idade superior a 70 anos, doença infecciosa aguda (pneumonia), obesidade (IMC 33) e por estar restrito ao leito. Em pacientes clínicos hospitalizados com alto risco de eventos tromboembólicos e sem contraindicações hemorrágicas, a profilaxia farmacológica com heparinas é a conduta padrão.\n\nALTERNATIVAS\n\na) Rivaroxabana 15mg via oral ao dia.\nIncorreta. Os anticoagulantes orais diretos (DOACs), como a rivaroxabana, possuem indicação bem estabelecida para profilaxia em pós-operatórios de cirurgias ortopédicas de grande porte (quadril e joelho). No entanto, para o paciente clínico agudamente enfermo internado, as heparinas continuam sendo a primeira escolha recomendada pelas principais diretrizes. Além disso, a dose de 15 mg não é a dose padrão utilizada para profilaxia de rotina nesse contexto.\n\nb) Enoxaparina 1 mg/kg subcutânea a cada 12 horas.\nIncorreta. Esta dosagem caracteriza uma anticoagulação plena ou terapêutica. Ela é indicada para o tratamento de um TEV já diagnosticado (trombose venosa profunda ou embolia pulmonar) ou para quadros de síndrome coronariana aguda. Para fins de prevenção (profilaxia), utilizam-se doses significativamente menores para minimizar o risco de sangramento.\n\nc) Enoxaparina 40 mg subcutânea uma vez ao dia.\nCorreta. Esta é a medida farmacológica mais adequada. A enoxaparina é uma Heparina de Baixo Peso Molecular (HBPM) e a dose de 40 mg ao dia é o regime de escolha para profilaxia de TEV em pacientes clínicos com risco elevado, apresentando um perfil de segurança e eficácia superior ou equivalente à heparina não fracionada, com a conveniência de apenas uma aplicação diária.\n\nd) Ácido acetilsalicílico 100 mg via oral ao dia.\nIncorreta. O ácido acetilsalicílico (AAS) age como antiagregante plaquetário. Embora tenha papel fundamental na prevenção de doenças arteriais, ele é considerado muito inferior às heparinas na prevenção de fenômenos tromboembólicos venosos em pacientes clínicos internados. Portanto, não deve ser utilizado como estratégia isolada de profilaxia de TEV neste cenário.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Pneumonias Bacterianas",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:30.573Z"
+  },
+  {
+    "id": "AJUDA_6884ce13-48f7-42dd-9f86-26c9b3554d0a",
+    "originalId": "6884ce13-48f7-42dd-9f86-26c9b3554d0a",
+    "statement": "Num lactente de 10 meses de idade com baixa aceitação da alimentação complementar o hemograma revela hemoglobina de 9.2 g/dL, VCM de 65 fL, anisocitose e nivel de ferritina 9 ng/mL. É iniciado tratamento com ferro na dose de 4 mg/Kg/dia. Qual é o parâmetro considerado o indicador mais precoce de resposta a este tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ferritina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "RDW.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Contagem de reticulócitos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hemoglobina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão descreve um caso clássico de anemia ferropriva em um lactente, caracterizada por anemia hipocrômica e microcítica (VCM baixo), anisocitose e ferritina baixa (indicando esgotamento das reservas de ferro). Ao iniciar a reposição de ferro elementar, o corpo segue uma cronologia específica de recuperação laboratorial.\n\nO parâmetro considerado o indicador mais precoce de resposta ao tratamento com ferro é a contagem de reticulócitos. Os reticulócitos são hemácias jovens recém-lançadas na circulação pela medula óssea. Assim que o ferro se torna disponível, a medula retoma a produção celular rapidamente. O aumento desses reticulócitos (conhecido como crise reticulocitária) ocorre entre 3 e 5 dias após o início do tratamento, atingindo seu pico entre o 7º e o 10º dia.\n\nAnálise das alternativas:\n\na) Ferritina: Incorreta. A ferritina reflete os estoques de ferro do organismo. No tratamento da anemia ferropriva, o ferro é primeiramente utilizado para a síntese de hemoglobina. Somente após a normalização dos níveis de hemoglobina é que os estoques começam a ser repostos. Portanto, a ferritina é um dos últimos parâmetros a se normalizar, sendo o indicador utilizado para decidir o momento de interromper a suplementação (geralmente meses após o início).\n\nb) RDW: Incorreta. O RDW (Red Cell Distribution Width) mede a variação de tamanho entre as hemácias (anisocitose). No início do tratamento, o RDW pode até aumentar temporariamente, pois uma nova população de hemácias de tamanho normal passa a conviver com as hemácias microcíticas antigas. Ele levará meses para diminuir, conforme as células velhas forem substituídas pelas novas.\n\nc) Contagem de reticulócitos: Correta. Como explicado, é a primeira evidência laboratorial de que a medula óssea respondeu à oferta de ferro, ocorrendo já na primeira semana de tratamento.\n\nd) Hemoglobina: Incorreta. Embora a hemoglobina comece a subir logo após a crise reticulocitária, um aumento significativo (geralmente de 1 g/dL) costuma ser observado apenas após 2 a 4 semanas de tratamento. É um marcador de resposta sustentada, mas não é o mais precoce.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:30.573Z"
+  },
+  {
+    "id": "AJUDA_689401a9-262e-40ac-8691-130f10566617",
+    "originalId": "689401a9-262e-40ac-8691-130f10566617",
+    "statement": "Em relação ao aleitamento materno exclusivo em RN a termo, sabe-se que",
+    "options": [
+      {
+        "id": "A",
+        "text": "é contraindicado em mães infectadas por Hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pode ocorrer perda de peso de aproximadamente 7% nos primeiros 5 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "em caso de mastite materna, inicia-se imediatamente fórmula láctea para o RN.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "em caso de bebê ictérico em tratamento com fototerapia deve ser oferecido fórmula láctea para suplementação pelo risco de desidratação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Incorreta. A hepatite B não contraindica o aleitamento materno. O risco de transmissão vertical ocorre principalmente durante o parto, e não pelo leite. Para prevenir a transmissão, o recém-nascido de mãe portadora do vírus deve receber a vacina contra hepatite B e a imunoglobulina específica (HBIG) ainda nas primeiras 12 horas de vida. Uma vez realizadas essas medidas profiláticas, a amamentação é segura.\n\nAlternativa b) Correta. É considerado fisiológico que o recém-nascido a termo perca entre 5% e 10% do seu peso de nascimento nos primeiros dias de vida (geralmente até o 5º dia). Essa perda ocorre devido à eliminação de excesso de fluidos extracelulares, eliminação de mecônio e ao baixo volume inicial de colostro ingerido. A expectativa é que o bebê recupere o peso de nascimento por volta do 10º ao 15º dia de vida.\n\nAlternativa c) Incorreta. A mastite materna não é contraindicação para a amamentação. Pelo contrário, o esvaziamento frequente e eficaz da mama é parte essencial do tratamento para evitar a progressão do quadro e a formação de abscessos. O aleitamento deve ser mantido, inclusive na mama afetada. A interrupção só seria considerada em casos raros de abscesso mamário com drenagem de pus diretamente pelo mamilo, mantendo-se a amamentação na mama sã.\n\nAlternativa d) Incorreta. A fototerapia por si só não justifica o uso de fórmula láctea. O manejo da icterícia neonatal deve priorizar o aumento da frequência das mamadas ao seio materno (8 a 12 vezes ao dia) para garantir a hidratação e estimular a eliminação de bilirrubina pelas fezes. A suplementação com fórmula só é indicada se houver perda de peso excessiva (acima de 10%), sinais clínicos de desidratação ou baixa ingesta calórica comprovada.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:30.573Z"
+  }
+]

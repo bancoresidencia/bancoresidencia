@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_5e4c144b-811f-4cd0-99b8-bade78ba74d9",
+    "originalId": "5e4c144b-811f-4cd0-99b8-bade78ba74d9",
+    "statement": "Gestante de 30 anos, G2P1A0, é atendida em primeira consulta de pré-natal, com idade gestacional calculada em 10 semanas. Ela trabalha como assistente administrativa, é casada e tem bom suporte familiar. A gestação anterior resultou em um recém-nascido de 3.850 g, nascido de parto vaginal. Atualmente, queixa-se de náuseas moderadas ao longo do dia, sem vômitos, e pirose leve, principalmente após o almoço. Peso pré-gestacional: 75 kg; IMC: 27,5 kg/m². Ao exame físico: pressão arterial: 118 x 76 mmHg; frequência cardíaca: 84 bpm; a altura uterina é compatível com a idade gestacional e os batimentos cardiofetais estão presentes e rítmicos. Exames atuais: hemograma: normal; tipagem sanguínea: grupo A/ Rh positivo; glicemia de jejum: 95 mg/dL; VDRL, anti-HIV e HBsAg: não reagentes; toxoplasmose: IgG reagente e IgM não reagente. Exame de urina e urocultura: normais. Seu cartão de vacina mostra esquema primário completo para difteria e tétano (dT) na adolescência, com a última dose de reforço há 8 anos.\n\nNesse momento, a conduta de escolha é",
+    "options": [
+      {
+        "id": "A",
+        "text": "aconselhar a paciente sobre o manejo da náusea, recomendando refeições fracionadas em pequenos volumes e, se os sintomas persistirem, considerar o uso de pantoprazol como opção terapêutica segura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "agendar a próxima consulta de pré-natal para daqui a dois meses, visto que a gestação cursa sem intercorrências e a paciente já realizou os exames iniciais, sendo uma gestação de baixo risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estabelecer o diagnóstico de diabetes mellitus gestacional e iniciar imediatamente orientações de dieta e atividade física, com agendamento de monitoramento glicêmico capilar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "encaminhar a paciente para o pré-natal de alto risco devido à combinação de sobrepeso pré-gestacional e história de recém-nascido com peso elevado em gestação anterior, caracterizando risco aumentado para macrossomia fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realizar um teste oral de tolerância à glicose (75 g) entre a 24ª e 28ª semana gestacional, com ou sem hemoglobina glicada (HbA1c), para avaliar a presença ou não de diabetes mellitus gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente está na 10ª semana de gestação e apresenta uma glicemia de jejum de 95 mg/dL. De acordo com o Consenso Brasileiro de Diabetes e as diretrizes do Ministério da Saúde, o diagnóstico de Diabetes Mellitus Gestacional (DMG) é estabelecido quando a glicemia de jejum, realizada no início da gestação, apresenta valores entre 92 mg/dL e 125 mg/dL. Se o valor fosse igual ou superior a 126 mg/dL, o diagnóstico seria de Diabetes Mellitus pré-existente (Overt Diabetes). Como o valor encontrado foi 95 mg/dL, o diagnóstico de DMG já está firmado.\n\nAlternativa (a) Incorreta: O manejo inicial da náusea de fato envolve o fracionamento das refeições. No entanto, o pantoprazol não é a droga de escolha para o manejo de náuseas e vômitos na gestação; costuma-se iniciar com medidas dietéticas, piridoxina (vitamina B6) ou anti-hipertensivos específicos se necessário. Além disso, a alternativa ignora o achado patológico da glicemia de jejum, que é a prioridade clínica no momento.\n\nAlternativa (b) Incorreta: O calendário de consultas de pré-natal recomenda periodicidade mensal até a 28ª semana de gestação. Agendar para daqui a dois meses é um intervalo excessivo. Além disso, a presença de uma glicemia alterada (95 mg/dL) exige intervenção imediata e acompanhamento mais rigoroso, não permitindo classificar o seguimento como puramente de baixo risco sem intervenção.\n\nAlternativa (c) Correta: Como a glicemia de jejum foi de 95 mg/dL (dentro da faixa de 92 a 125 mg/dL), o diagnóstico de Diabetes Mellitus Gestacional está estabelecido. A conduta imediata é iniciar as mudanças de estilo de vida, que incluem orientação nutricional adequada e atividade física (se não houver contraindicações), além de instituir a monitorização glicêmica capilar para verificar se essas medidas são suficientes para manter a euglicemia.\n\nAlternativa (d) Incorreta: Ter sobrepeso (IMC 27,5) e antecedente de filho com peso elevado (3.850 g) são fatores de risco para diabetes gestacional e macrossomia, mas a conduta de escolha no momento não é o encaminhamento baseado apenas nesses fatores, e sim o tratamento do diagnóstico de DMG que já foi confirmado pelos exames laboratoriais apresentados.\n\nAlternativa (e) Incorreta: O Teste Oral de Tolerância à Glicose (TOTG 75g) entre a 24ª e 28ª semana é reservado para gestantes que apresentaram glicemia de jejum normal (menor que 92 mg/dL) no primeiro trimestre. Como esta paciente já possui uma glicemia de jejum alterada no início da gestação (95 mg/dL), ela já tem o diagnóstico de DMG, não havendo necessidade de aguardar ou realizar o TOTG para confirmação.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:38.163Z"
+  },
+  {
+    "id": "AJUDA_5e5c9fe6-e17d-4639-b4fc-50571158fea4",
+    "originalId": "5e5c9fe6-e17d-4639-b4fc-50571158fea4",
+    "statement": "Em relação ao acidente vascular cerebral (AVC) hiperagudo, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cirurgia de grande porte nos últimos três meses é contraindicação absoluta à trombólise intravenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A administração de rtPA antes do tratamento endovascular aumenta a taxa de complicações imediatas da trombectomia mecânica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Em pacientes não trombolisados e sem cardiopatia isquêmica, a pressão arterial deve ser mantida abaixo de 185/110mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A dissecção de artéria vertebral pode cursar com vertigem, vômitos proeminentes e cervicalgia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa A: Incorreta. Segundo as diretrizes da American Heart Association/American Stroke Association (AHA/ASA), a cirurgia de grande porte nos últimos 14 dias (2 semanas) é considerada uma contraindicação relativa, e não absoluta, para o uso do rtPA (trombolítico). O prazo de três meses mencionado na alternativa é excessivo e não se aplica a este critério específico.\n\nAlternativa B: Incorreta. O tratamento combinado, conhecido como terapia em ponte (bridging therapy), na qual se administra o rtPA intravenoso enquanto o paciente é preparado para a trombectomia mecânica, é o padrão-ouro para pacientes elegíveis com oclusão de grandes vasos. Estudos clínicos demonstraram que o uso prévio do trombolítico não aumenta as taxas de complicações imediatas da intervenção endovascular.\n\nAlternativa C: Incorreta. Para pacientes que não receberão trombólise química e que não possuem contraindicações ou emergências hipertensivas associadas (como infarto agudo do miocárdio ou edema agudo de pulmão), a conduta preconizada é a hipertensão permissiva. Nesses casos, a pressão arterial só deve ser reduzida se os níveis estiverem acima de 220/120 mmHg. O valor de 185/110 mmHg é o limite máximo para que o paciente possa iniciar a infusão do trombolítico.\n\nAlternativa D: Correta. A dissecção da artéria vertebral é uma das principais causas de acidente vascular cerebral em pacientes jovens. Clinicamente, ela se manifesta com dor na região cervical posterior ou nuca (cervicalgia), que pode preceder ou acompanhar os sintomas neurológicos de circulação posterior, como vertigem, vômitos proeminentes, ataxia e alterações de nervos cranianos, resultantes da isquemia no território vertebrobasilar (tronco encefálico e cerebelo).",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:38.163Z"
+  },
+  {
+    "id": "AJUDA_5e66c896-5f77-4cc4-b418-3b12b3e7f260",
+    "originalId": "5e66c896-5f77-4cc4-b418-3b12b3e7f260",
+    "statement": "Assinale a opção que representa medida de prevenção primária:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rastreamento do câncer colorretal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reabilitação após AVC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vacinação contra hepatite B.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Fisioterapia pós-fratura.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Teste do pezinho.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, é fundamental compreender os níveis de prevenção propostos por Leavell e Clark.\n\nAlternativa (a) Incorreta: O rastreamento (screening) do câncer colorretal é um exemplo de prevenção secundária. A prevenção secundária foca no diagnóstico precoce e no tratamento imediato de doenças que já estão presentes no indivíduo, mas que ainda estão em fase assintomática (fase pré-clínica), visando melhorar o prognóstico e reduzir a morbidade.\n\nAlternativa (b) Incorreta: A reabilitação após um Acidente Vascular Cerebral (AVC) é classificada como prevenção terciária. Este nível de prevenção atua quando a doença já causou danos, com o objetivo de reduzir as incapacidades, prevenir complicações e promover a reintegração do paciente à sociedade.\n\nAlternativa (c) Correta: A vacinação contra a hepatite B é uma medida de prevenção primária. A prevenção primária atua no período de pré-patogênese, ou seja, antes de a doença se instalar. Seu objetivo é reduzir a incidência da doença através do controle de fatores de risco ou, como no caso das vacinas, aumentando a resistência do hospedeiro contra agentes específicos.\n\nAlternativa (d) Incorreta: A fisioterapia após uma fratura também é uma medida de prevenção terciária. Assim como na alternativa (b), o objetivo aqui é a reabilitação de uma lesão já estabelecida para evitar sequelas permanentes e restaurar a função do membro afetado.\n\nAlternativa (e) Incorreta: O teste do pezinho é uma ação de rastreamento neonatal, portanto, configura-se como prevenção secundária. Ele busca detectar precocemente doenças genéticas, metabólicas ou endócrinas em recém-nascidos assintomáticos para que o tratamento seja iniciado o mais breve possível, evitando danos irreversíveis.\n\nResumo dos Níveis de Prevenção:\n- Primária: Evita que a doença ocorra (ex: vacinas, preservativos, hábitos saudáveis).\n- Secundária: Diagnóstico precoce e tratamento imediato (ex: rastreamentos, exames de rotina em assintomáticos).\n- Terciária: Reabilitação e redução de danos de doenças já manifestas (ex: fisioterapia, pós-infarto).\n- Quaternária: Prevenção de iatrogenias e intervenções médicas desnecessárias.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:38.163Z"
+  },
+  {
+    "id": "AJUDA_5e727026-1567-4a81-9396-c11452ebe09a",
+    "originalId": "5e727026-1567-4a81-9396-c11452ebe09a",
+    "statement": "Gestante com 33 semanas leva à consulta de pré-natal ultrassom que mostra placenta anterior com bordo placentário a 1,0 cm do orifício interno do colo. De acordo com a nomenclatura atual, trata-se de um caso de placenta",
+    "options": [
+      {
+        "id": "A",
+        "text": "baixa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "prévia marginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prévia lateral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "de inserção normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "prévia centro-parcial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A classificação contemporânea das anomalias de inserção placentária simplificou a nomenclatura com o objetivo de padronizar a conduta clínica e a via de parto. De acordo com os consensos atuais (como ISUOG, ACOG e FEBRASGO), a diferenciação feita por ultrassonografia transvaginal divide-se em:\n\n1. Placenta prévia: a placenta recobre o orifício interno do colo uterino (OIC).\n2. Placenta baixa: o bordo inferior da placenta está a menos de 2,0 cm de distância do OIC, mas sem recobri-lo.\n3. Inserção normal: o bordo inferior da placenta encontra-se a 2,0 cm ou mais de distância do OIC.\n\nTermos antigos como prévia total, parcial, marginal ou lateral caíram em desuso.\n\nAnálise das alternativas:\n\nAlternativa a (CORRETA): O exame descreve o bordo placentário a 1,0 cm do orifício interno do colo sem recobri-lo. Como a distância é inferior a 2,0 cm, trata-se da definição exata de placenta baixa.\n\nAlternativa b (INCORRETA): O termo \"placenta prévia marginal\" faz parte da nomenclatura antiga, usada quando o bordo apenas tangenciava o OIC. Atualmente, esse achado é classificado como placenta baixa.\n\nAlternativa c (INCORRETA): \"Prévia lateral\" é uma denominação obsoleta que indicava implantação no segmento inferior uterino sem tocar o colo. Não é utilizada na prática atual.\n\nAlternativa d (INCORRETA): A placenta é considerada de inserção normal somente quando a distância entre o bordo placentário e o OIC é igual ou superior a 2,0 cm. No caso clínico, a distância é de apenas 1,0 cm.\n\nAlternativa e (INCORRETA): \"Prévia centro-parcial\" é outra classificação antiga abandonada. Atualmente, se o tecido placentário sobrepõe o orifício interno em qualquer extensão, a denominação é unicamente placenta prévia.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sagramento da Segunda Metade",
+      "Ultrassom em Obstetrícia",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:38.163Z"
+  },
+  {
+    "id": "AJUDA_5e75cd08-ac15-4b70-913b-2509e59bb98a",
+    "originalId": "5e75cd08-ac15-4b70-913b-2509e59bb98a",
+    "statement": "Cláudio, 62 anos, comparece à unidade para acompanhamento semestral e renovação da receita de Losartana 50mg 2x dia. Ao passar pela triagem, apresenta as seguintes medidas antropométricas: P:79kg Alt: 168cm IMC: 28Kg/m² PA: 146x97mmHg Dextro: 146 mg/dl em jejum. Mariana, médica que o acompanha a cerca de 4 anos, se preocupa com a glicemia, visto que durante esses anos nunca apresentou alteração nos exames, apesar de ter histórico familiar de diabetes. Qual alternativa corresponde ao plano mais adequado para Mariana seguir?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Conversar sobre diabetes e explicar a doença para Cláudio, realizar orientações sobre mudança de estilo de vida, solicitar novo exame de glicemia em jejum e hemoglobina glicada ou teste oral de tolerância à glicose, e retornar assim que os resultados ficarem prontos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar orientações sobre mudança de estilo de vida, solicitar exames glicemia em jejum, hemoglobina glicada ou teste oral de tolerância à glicose e iniciar metformina 500mg 1x dia, até o retorno em 3 meses, quando irá realizar exames de controle glicêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Conversar sobre diabetes e explicar a doença para Cláudio, realizar orientações sobre mudança de estilo de vida, e agendar retorno em 6 meses para reavaliar com exames.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Conversar sobre diabetes e explicar a doença para Cláudio, iniciar metformina 500mg 1x dia, até o retorno em 3 meses, quando irá realizar exames de controle glicêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso:\n\nO paciente Cláudio apresenta fatores de risco importantes para o desenvolvimento de doenças metabólicas: idade (62 anos), sobrepeso (IMC 28 kg/m²), hipertensão arterial sistêmica e histórico familiar de diabetes. Na consulta atual, apresentou uma glicemia de jejum de 146 mg/dL. De acordo com as diretrizes da Sociedade Brasileira de Diabetes (SBD) e da American Diabetes Association (ADA), o diagnóstico de Diabetes Mellitus (DM) em pacientes assintomáticos não deve ser feito com base em um único exame alterado. São necessários dois exames alterados em ocasiões diferentes ou dois exames diferentes (ex.: Glicemia de Jejum e Hemoglobina Glicada) alterados na mesma coleta. Como Cláudio não apresenta sintomas de hiperglicemia franca, o valor de 146 mg/dL (acima do corte de 126 mg/dL) indica a necessidade de investigação, mas não autoriza o diagnóstico imediato nem o início de medicação.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Esta é a conduta padrão. O médico deve aproveitar a oportunidade para educar o paciente sobre a suspeita diagnóstica, orientar Mudanças de Estilo de Vida (MEV) — essenciais para o controle da glicemia e da pressão arterial, que também está elevada (146 x 97 mmHg) — e solicitar os exames confirmatórios. O retorno deve ser breve, assim que os resultados estiverem disponíveis, para fechar o diagnóstico e iniciar o tratamento, se necessário.\n\nAlternativa b) Incorreta. O erro está em iniciar a metformina antes de confirmar o diagnóstico de Diabetes Mellitus. Em pacientes assintomáticos, a confirmação laboratorial é mandatória antes da introdução de hipoglicemiantes. Além disso, o retorno em 3 meses é um prazo longo para um paciente que apresenta uma alteração glicêmica nova e níveis pressóricos fora da meta.\n\nAlternativa c) Incorreta. Embora a orientação de MEV esteja correta, o plano de retorno em 6 meses caracteriza inércia clínica. Um valor de glicemia de jejum de 146 mg/dL exige uma investigação diagnóstica imediata. Adiar essa avaliação por meio ano pode expor o paciente a riscos cardiovasculares e complicações microvasculares sem o tratamento adequado.\n\nAlternativa d) Incorreta. Assim como na alternativa B, o erro é a prescrição precoce de metformina sem a devida confirmação diagnóstica por meio de um segundo exame, conforme preconizam os protocolos nacionais e internacionais de manejo do diabetes. O tratamento farmacológico deve ser precedido pela certeza do diagnóstico ou pela classificação precisa de pré-diabetes em casos de alto risco.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:38.163Z"
+  },
+  {
+    "id": "AJUDA_5e7f288d-06e7-4047-8bd9-445b8b2c9ff3",
+    "originalId": "5e7f288d-06e7-4047-8bd9-445b8b2c9ff3",
+    "statement": "A hipoglicemia é um dos distúrbios metabólicos mais comuns em neonatos e uma preocupação significativa na prática pediátrica. Sobre a manutenção da glicemia neonatal e a prevenção da hipoglicemia, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A hipoglicemia neonatal é mais comum em neonatos que não são amamentados nos primeiros dias de vida, mas não está relacionada ao estresse do nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A amamentação precoce não tem impacto na manutenção dos níveis de glicose no recém-nascido, que dependem exclusivamente da mobilização do glicogênio hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A concentração de glicose sérica do neonato ao nascer é igual à da mãe e não sofre variações significativas nas primeiras horas de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O aumento do glucagon e da epinefrina após o nascimento ajuda a mobilizar o glicogênio hepático e a reduzir os níveis de insulina, contribuindo para a manutenção da glicemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda a fisiologia da transição metabólica neonatal, um tema essencial para a pediatria e neonatologia. Para compreender a regulação da glicemia no recém-nascido, é necessário entender como o organismo se adapta à interrupção do aporte contínuo de glicose via placenta.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Embora a ausência de amamentação precoce seja um fator de risco, o estresse do nascimento (como asfixia, hipotermia ou sepse) está diretamente relacionado à hipoglicemia. O estresse aumenta drasticamente o consumo periférico de glicose e acelera o esgotamento das reservas de glicogênio, sendo uma das principais causas de distúrbios metabólicos no período neonatal.\n\nAlternativa B: Incorreta. A amamentação precoce, preferencialmente na primeira hora de vida (a hora de ouro), tem um impacto fundamental na prevenção da hipoglicemia. Ela fornece substratos exógenos que complementam a produção endógena de glicose. A manutenção da glicemia não depende exclusivamente do glicogênio hepático; ela depende da integração entre a glicogenólise, a gliconeogênese e o aporte enteral.\n\nAlternativa C: Incorreta. A concentração de glicose fetal é cerca de 70% a 80% da concentração materna. Logo após o nascimento, com o clampeamento do cordão umbilical, ocorre uma queda fisiológica nos níveis de glicose, atingindo seu ponto mais baixo (nadir) entre 1 e 2 horas de vida. Após esse período, os níveis tendem a se estabilizar à medida que os mecanismos de contrarregulação entram em ação.\n\nAlternativa D: Correta. Esta alternativa descreve perfeitamente a adaptação fisiológica ao ambiente extrauterino. Após o nascimento, a queda nos níveis de glicose e o aumento do estresse fisiológico estimulam a liberação de hormônios contrarreguladores, especificamente o glucagon e as catecolaminas (epinefrina e norepinefrina). Esses hormônios promovem a glicogenólise hepática (quebra do glicogênio em glicose) e a lipólise, ao mesmo tempo em que suprimem a secreção de insulina. Esse rearranjo hormonal é o que garante a sobrevivência do neonato até que a alimentação seja estabelecida.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Outros Distúrbios do Período Neonatal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:38.163Z"
+  },
+  {
+    "id": "AJUDA_5e7f3c46-284b-4345-ab4a-811151a896f7",
+    "originalId": "5e7f3c46-284b-4345-ab4a-811151a896f7",
+    "statement": "Durante uma consulta de rotina na Unidade Básica de Saúde, menino de 2 anos é trazido pela mãe, que demonstra preocupação com o comportamento do filho. Ela relata que a criança não fala palavras com significado, raramente estabelece contato visual, não responde quando é chamada pelo nome e costuma alinhar brinquedos repetidamente, ficando irritada quando alguém os desorganiza. O exame físico é normal e o crescimento segue o percentil adequado para a idade. O desenvolvimento motor está preservado, mas observa-se dificuldade de interação social e ausência de gestos comunicativos espontâneos, como apontar ou acenar. Considerando essas informações e o papel da Atenção Primária à Saúde na detecção precoce de alterações do desenvolvimento infantil, qual instrumento disponível na Caderneta de Saúde da Criança (7ª edição) pode ser utilizado na avaliação deste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Denver II (Denver Developmental Screening Test II)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "M-CHAT-R (Modified Checklist for Autism in Toddlers – Revised)",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "CARS (Childhood Autism Rating Scale)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Bayley III (Bayley Scales of Infant and Toddler Development)",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\nO paciente de 2 anos apresenta sinais de alerta clássicos para o Transtorno do Espectro Autista (TEA). Os principais achados descritos são o déficit na comunicação social (ausência de fala com significado, contato visual pobre, não responder ao ser chamado e falta de gestos espontâneos como apontar) e a presença de comportamentos repetitivos e interesses restritos (alinhar brinquedos e inflexibilidade a mudanças). Na Atenção Primária à Saúde, o foco deve ser a detecção precoce utilizando ferramentas de triagem rápida.\n\nAnálise das alternativas:\n\na) Incorreta. O Denver II é um teste de triagem do desenvolvimento neuropsicomotor global que avalia quatro domínios: pessoal-social, motor fino-adaptativo, linguagem e motor grosso. Embora seja útil para monitorar o desenvolvimento geral, ele não é o instrumento específico indicado pela Caderneta de Saúde da Criança para o rastreamento direcionado ao autismo.\n\nb) Correta. O M-CHAT-R (Modified Checklist for Autism in Toddlers - Revised) é o instrumento de rastreio para autismo validado para crianças entre 16 e 30 meses de idade. Devido à sua importância para o diagnóstico e intervenção precoces, ele foi incorporado à Caderneta de Saúde da Criança do Ministério da Saúde. O questionário consiste em perguntas aos pais sobre o comportamento da criança e é a ferramenta oficial para triagem de TEA na Atenção Primária.\n\nc) Incorreta. A CARS (Childhood Autism Rating Scale) é uma escala utilizada por especialistas para auxiliar no diagnóstico e avaliar a gravidade do autismo. Não é uma ferramenta de triagem rápida de uso universal na rotina da Atenção Primária, nem está disponível na Caderneta de Saúde para preenchimento básico.\n\nd) Incorreta. A Bayley III é uma escala considerada padrão-ouro para avaliação detalhada do desenvolvimento infantil. No entanto, é um instrumento complexo, que exige aplicação por profissionais especializados, tempo prolongado de execução e kits específicos, não sendo utilizada como ferramenta de triagem na Caderneta de Saúde.\n\nGabarito: Alternativa (b).",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Psiquiatria Infantil",
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:38.163Z"
+  },
+  {
+    "id": "AJUDA_5e82a992-82ed-4784-88bd-83a70bcec61b",
+    "originalId": "5e82a992-82ed-4784-88bd-83a70bcec61b",
+    "statement": "Homem, 45 anos, etilista ativo, com cirrose hepática Child-Pugh C12 e ascite, é trazido ao pronto-socorro por sonolência e desorientação há 48 horas. Há antecedente de episódio semelhante há dois meses, na ocasião precipitado por constipação. Nega sangramento digestivo, febre ou uso de benzodiazepínicos. Exame: asterixis presente, sonolento porém desperta ao chamado, sem rigidez de nuca. Eletrólitos e hemograma sem alterações significativas; TC de crânio sem alterações agudas. Qual das seguintes alternativas está correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "testes psicométricos e eletroencefalograma não são usados rotineiramente para estabelecer a etiologia da encefalopatia hepática; o diagnóstico é clínico, após excluir causas alternativas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "pela sonolência com resposta a estímulos verbais, o quadro deve ser classificado como encefalopatia hepática grau 4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "paracentese diagnóstica não está indicada, pois o procedimento aumenta o risco de translocação bacteriana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "há forte correlação entre gravidade clínica da encefalopatia e níveis de amônia, especialmente quando superiores a 10 μmol/l.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "após resolução do episódio, não se recomenda profilaxia secundária com lactulose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "EXPLICAÇÃO:\n\nAlternativa A (CORRETA): O diagnóstico da encefalopatia hepática (EH) é fundamentalmente clínico, baseado na história clínica, presença de fatores precipitantes e achados do exame físico, como o asterixe (flapping). Por ser uma síndrome que pode ser mimetizada por diversas condições metabólicas ou estruturais, ela é considerada um diagnóstico de exclusão. Testes psicométricos são reservados principalmente para o diagnóstico da EH mínima (quadros subclínicos), e o eletroencefalograma, embora possa mostrar ondas trifásicas, é inespecífico e não é exigido para a propedêutica de rotina.\n\nAlternativa B (INCORRETA): A classificação de gravidade da EH segue os critérios de West Haven. O paciente que apresenta sonolência acentuada e desorientação, mas que ainda responde a estímulos verbais (desperta ao chamado), é classificado como Grau 3. O Grau 4 é definido pelo estado de coma, no qual não há resposta ao chamado.\n\nAlternativa C (INCORRETA): Em todo paciente cirrótico com ascite que apresenta piora clínica ou encefalopatia, a paracentese diagnóstica deve ser realizada obrigatoriamente na admissão. O objetivo é excluir a Peritonite Bacteriana Espontânea (PBE), que é um dos principais gatilhos para a EH e pode ocorrer sem dor abdominal ou febre. O procedimento é seguro e não está relacionado ao aumento da translocação bacteriana.\n\nAlternativa D (INCORRETA): Não existe uma correlação fidedigna entre os níveis séricos de amônia e o grau de comprometimento neurológico. Muitos pacientes cirróticos mantêm níveis elevados de amônia sem manifestar encefalopatia, enquanto outros podem estar em coma com níveis apenas discretamente alterados. Portanto, a dosagem de amônia não deve ser utilizada para diagnóstico, gradação de gravidade ou acompanhamento de resposta terapêutica.\n\nAlternativa E (INCORRETA): A profilaxia secundária é recomendada de forma contínua após o primeiro episódio de encefalopatia hepática manifesta. A lactulose é o agente de primeira escolha, agindo na redução da absorção intestinal de amônia. Em casos de recorrência, mesmo em uso de lactulose, a associação com rifaximina é indicada.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:38.163Z"
+  },
+  {
+    "id": "AJUDA_5e89dafb-c90a-45bd-bb6d-842eddba95c0",
+    "originalId": "5e89dafb-c90a-45bd-bb6d-842eddba95c0",
+    "statement": "Paciente de 32 anos de idade com queixa de icterícia há 2 semanas, além de alguns episódios de dor abdominal. Ao exame encontra-se ictérica ++/4+, em bom estado geral, com abdome plano, flácido, pouco doloroso em hipocôndrio direito. Murphy negativo. Realizou ultrassom que mostrou múltiplos cálculos na vesícula biliar além de dilatação de vias biliares intra e extra hepáticas, sem verificação de ponto de obstrução. Hemograma com 16.700 Leucócitos (normal até 10.000), bilirrubinas totais de 5,7 (normal até 1,0). Assinale a alternativa que apresenta a conduta mais indicada nesse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colangiografia por ressonância magnética",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colecistectomia videolaparoscópica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colangiopancreatografia retrógrada endoscópica",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ecoendoscopia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tomografia computadorizada de abdome total",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro de icterícia obstrutiva, sugerido pela elevação importante de bilirrubinas (5,7 mg/dL) e pela dilatação das vias biliares intra e extra-hepáticas ao ultrassom. A presença de cálculos na vesícula biliar (colelitíase) associada a essa dilatação sugere fortemente que um cálculo migrou para o colédoco (coledocolitíase). Além disso, a leucocitose (16.700) e a dor abdominal podem indicar uma complicação, como a colangite aguda, embora a paciente esteja em bom estado geral e sem febre descrita.\n\nPara definir a conduta, utilizamos os critérios de probabilidade de coledocolitíase (baseados em diretrizes como as da ASGE). Pacientes com bilirrubina total acima de 4,0 mg/dL e dilatação da via biliar principal no ultrassom são classificados como de alta probabilidade (risco alto) para coledocolitíase. Nesses casos, a conduta indicada é a realização de um procedimento que seja simultaneamente diagnóstico e terapêutico.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. A colangiorressonância é um excelente exame diagnóstico, mas não possui caráter terapêutico. Ela é indicada para pacientes com risco intermediário de coledocolitíase (quando há dúvida diagnóstica). Como esta paciente já possui critérios de alta probabilidade, deve-se prosseguir direto para o tratamento.\n\nb) Incorreta. A colecistectomia videolaparoscópica trata a causa-base (a vesícula com cálculos), mas não resolve a obstrução aguda da via biliar principal que está causando a icterícia de 5,7 mg/dL. O colédoco deve ser desobstruído antes ou durante o ato cirúrgico.\n\nc) Correta. A colangiopancreatografia retrógrada endoscópica (CPRE) é o procedimento de escolha para pacientes com alta probabilidade de coledocolitíase ou com sinais de colangite. Ela permite visualizar a via biliar, identificar o cálculo e realizar a papilotomia com remoção do cálculo, resolvendo a obstrução e prevenindo a piora do quadro infeccioso/inflamatório.\n\nd) Incorreta. A ecoendoscopia é o exame com maior sensibilidade para detectar pequenos cálculos na via biliar, porém, assim como a ressonância, é apenas diagnóstica. É reservada para casos de risco intermediário em que se deseja evitar os riscos de uma CPRE desnecessária.\n\ne) Incorreta. A tomografia computadorizada de abdome tem baixa sensibilidade para detectar cálculos biliares (muitos são radiotransparentes). Não é o exame de escolha para avaliação inicial de coledocolitíase e não oferece possibilidade terapêutica imediata para a obstrução biliar.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:38.163Z"
+  },
+  {
+    "id": "AJUDA_5e8bd07d-de6a-4e2f-aa56-1b2d2d0406dd",
+    "originalId": "5e8bd07d-de6a-4e2f-aa56-1b2d2d0406dd",
+    "statement": "Gestante G2P1, 39 semanas, durante palpação obstétrica pelas manobras de Leopold, apresenta: polo duro, regular e globoso no fundo uterino; superfícies irregulares e pequenas partes palpáveis bilateralmente, sem dorso definido; polo volumoso, duro e móvel sobre a sínfise púbica; e estrutura mole e volumosa ocupando o estreito superior, sem pés palpáveis. Assinale a alternativa que apresenta a interpretação mais provável.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apresentação cefálica defletida, dorso posterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apresentação cefálica fletida, dorso à esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apresentação pélvica completa, dorso anterior, atitude fletida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apresentação pélvica incompleta, dorso posterior, atitude fletida.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para a resolução desta questão, devemos analisar sistematicamente cada uma das quatro manobras de Leopold descritas no enunciado, que permitem identificar a situação, posição, apresentação e o grau de insinuação fetal.\n\nAnálise das Manobras de Leopold no caso:\n\n1. Primeira Manobra (Fundo Uterino): A questão relata polo duro, regular e globoso no fundo uterino. Essas são características clássicas da cabeça fetal. Se a cabeça está no fundo, a apresentação é pélvica.\n\n2. Segunda Manobra (Flancos): O enunciado descreve superfícies irregulares e pequenas partes palpáveis bilateralmente, sem dorso definido. Quando o dorso fetal está voltado para a frente (anterior) ou para os lados (esquerda/direita), palpamos uma superfície lisa e resistente em um dos lados. A presença de pequenas partes em ambos os lados e a dificuldade de definir o dorso indicam que o dorso está voltado para a coluna da mãe, ou seja, dorso posterior.\n\n3. Terceira e Quarta Manobras (Estreito Superior): É descrita uma estrutura mole e volumosa ocupando o estreito superior, sem pés palpáveis. A estrutura mole corresponde às nádegas (polo pélvico). A ausência de pés palpáveis junto às nádegas caracteriza a apresentação pélvica incompleta, modo de nádegas (onde as coxas estão flexionadas, mas as pernas estão estendidas à frente do tronco). Na apresentação pélvica completa, os pés estariam flexionados próximos às nádegas e seriam facilmente palpáveis.\n\nAnálise das Alternativas:\n\na) Incorreta. O polo duro e globoso no fundo uterino exclui a apresentação cefálica. Na apresentação cefálica, o polo cefálico seria palpado acima da sínfise púbica.\n\nb) Incorreta. Além de não ser apresentação cefálica, o dorso não está à esquerda. Se estivesse, o examinador sentiria uma resistência lisa e contínua no flanco esquerdo da mãe, o que não ocorre (partes pequenas bilaterais indicam dorso posterior).\n\nc) Incorreta. Embora identifique a apresentação pélvica, o dorso não é anterior. Além disso, a apresentação pélvica completa exigiria a palpação dos pés junto ao polo inferior (atitude de flexão das pernas sobre as coxas), o que é negado pelo enunciado (\"sem pés palpáveis\").\n\nd) Correta. A alternativa reflete todos os achados: apresentação pélvica (cabeça no fundo), incompleta (apenas nádegas no estreito superior, sem pés), dorso posterior (pequenas partes palpáveis bilateralmente) e atitude fletida (referente à flexão da cabeça fetal sobre o tórax).\n\nGabarito: Letra (d).",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:49:38.163Z"
+  }
+]

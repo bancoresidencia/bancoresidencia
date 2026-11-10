@@ -1,0 +1,493 @@
+[
+  {
+    "id": "AJUDA_e9927b0f-5964-4ffc-94f6-635b96d59916",
+    "originalId": "e9927b0f-5964-4ffc-94f6-635b96d59916",
+    "statement": "Paciente do sexo masculino, 55 anos, com diagnóstico de artrite reumatoide há 5 anos, faz uso de metotrexato e leflunomida, mas continua apresentando atividade de doença moderada a alta, com dores articulares e elevação dos marcadores inflamatórios.\n\nQual é a conduta terapêutica adequada para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender metotrexato e leflunomida, e iniciar golimumabe, pois esta droga é eficaz em monoterapia na artrite reumatoide resistente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Manter o metotrexato, suspender a leflunomida e iniciar golimumabe, um inibidor do TNF-alfa, para o controle adequado da artrite reumatoide.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Suspender metotrexato e leflunomida, e iniciar ciclosporina, pois esta droga imunossupressora é eficaz na artrite reumatoide resistente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter o metotrexato e iniciar azatioprina, pois é uma droga imunossupressora eficaz para controle da artrite reumatoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente apresenta artrite reumatoide (AR) de longa data (5 anos) com falha terapêutica ao esquema de MMCDsc (medicamentos modificadores do curso da doença sintéticos convencionais) combinados, que são o metotrexato (MTX) e a leflunomida. De acordo com os consensos nacionais (PCDT/Sociedade Brasileira de Reumatologia) e internacionais (EULAR/ACR), quando um paciente não atinge o alvo terapêutico (remissão ou baixa atividade) com o uso de pelo menos dois esquemas de MMCDsc, o próximo passo é a introdução de um MMCD biológico (MMCDbio) ou um MMCD sintético alvo-específico (MMCDsa — inibidores da JAK).\n\nAlternativa (a) Incorreta: Embora o golimumabe seja eficaz, a recomendação padrão é utilizá-lo em associação com o metotrexato, e não em monoterapia. A combinação de um anti-TNF com o MTX apresenta taxas de eficácia e sobrevida da droga superiores à monoterapia, além de reduzir a formação de anticorpos antidroga (neutralizantes).\n\nAlternativa (b) Correta: Esta é a conduta padrão-ouro para falha de tratamento sintético. O golimumabe é um anticorpo monoclonal humano inibidor do TNF-alfa. Ao manter o metotrexato e adicionar o biológico, aproveita-se o efeito sinérgico das drogas. A leflunomida geralmente é suspensa ao iniciar o biológico para minimizar o risco de toxicidade (principalmente hepática e hematológica) da tripla terapia, embora em casos muito selecionados possa ser mantida.\n\nAlternativa (c) Incorreta: A ciclosporina é um imunossupressor que caiu em desuso no tratamento da artrite reumatoide devido ao seu perfil de efeitos colaterais (nefrotoxicidade e hipertensão) e eficácia inferior aos agentes biológicos modernos. Ela não é a escolha preferencial para pacientes com atividade de doença moderada a alta que falharam ao MTX e à leflunomida.\n\nAlternativa (d) Incorreta: A azatioprina, assim como a ciclosporina, é considerada uma droga de \"segunda ou terceira linha\" entre os sintéticos e raramente é utilizada hoje em dia para o controle articular da AR, exceto em situações muito específicas ou manifestações extra-articulares. O passo terapêutico correto após falha de MTX e leflunomida é a progressão para terapia biológica, e não a troca por outro imunossupressor sintético menos eficaz para esse perfil de paciente.\n\nResumo Didático:\nNa artrite reumatoide, a escada terapêutica segue:\n1. MMCDsc (o metotrexato é a 1ª escolha).\n2. Falha após 3-6 meses: combinar MMCDsc ou trocar por outro sintético.\n3. Falha após o segundo esquema de sintéticos: adicionar MMCD biológico (ex.: anti-TNF como o golimumabe) ou inibidor da JAK, preferencialmente mantendo o metotrexato como base.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Artrite Reumatoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:01.078Z"
+  },
+  {
+    "id": "AJUDA_e9966455-fbc0-417a-9586-2ee1303a4c92",
+    "originalId": "e9966455-fbc0-417a-9586-2ee1303a4c92",
+    "statement": "Uma paciente de 58 anos de idade, compareceu ao atendimento com dor em fossa ilíaca esquerda, febre baixa e náuseas. Ao exame, mostrou FC = 88 bpm, FR = 18 irpm e saturação = 99%. A tomografia evidenciou diverticulite aguda não complicada (sem abscesso, fistula, pneumoperitônio ou obstrução). Quanto à melhor conduta para o caso apresentado, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Instituir tratamento clínico ambulatorial com antibióticos, quando indicados, e dieta adequada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar cirurgia imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Programar colectomia eletiva obrigatória após o primeiro episódio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar colonoscopia ainda durante a fase aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito — dor em fossa ilíaca esquerda, febre baixa e estabilidade hemodinâmica — associado ao achado tomográfico de diverticulite aguda não complicada caracteriza o que classicamente chamamos de Estágio 0 ou Ia de Hinchey (conforme a classificação modificada).\n\nAnálise das alternativas:\n\na) CORRETA. Para pacientes com diverticulite aguda não complicada, que estão hemodinamicamente estáveis, sem sinais de peritonite e capazes de tolerar dieta por via oral, o tratamento de escolha é o manejo ambulatorial. Este consiste em repouso relativo, dieta líquida ou leve e, quando indicados (especialmente em pacientes com comorbidades ou sinais inflamatórios mais evidentes), antibioticoterapia oral. Diretrizes recentes sugerem que, em casos muito selecionados e leves, o antibiótico pode até ser omitido, o que torna a redação \"quando indicados\" tecnicamente precisa.\n\nb) INCORRETA. A cirurgia de urgência (como a cirurgia de Hartmann ou anastomose primária com/sem estoma de proteção) é reservada para casos de diverticulite complicada com peritonite generalizada (Hinchey III e IV) ou em casos de falha do tratamento clínico e drenagem percutânea. Não há indicação cirúrgica imediata para um quadro não complicado e estável.\n\nc) INCORRETA. Antigamente, preconizava-se a colectomia eletiva após dois episódios de diverticulite ou mesmo após o primeiro em pacientes jovens. No entanto, a conduta atual é individualizada. A maioria dos pacientes não precisará de cirurgia após o primeiro episódio de diverticulite não complicada, e a decisão cirúrgica eletiva baseia-se na frequência das crises, na persistência de sintomas e no impacto na qualidade de vida do paciente.\n\nd) INCORRETA. A colonoscopia é formalmente contraindicada na fase aguda da diverticulite pelo risco elevado de perfuração iatrogênica da alça inflamada e fragilizada. O exame deve ser realizado de forma eletiva, geralmente de 4 a 6 semanas após a resolução completa dos sintomas, com o objetivo principal de excluir neoplasia colorretal oculta que possa ter mimetizado o quadro inflamatório.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:01.078Z"
+  },
+  {
+    "id": "AJUDA_e99a3848-30c8-4636-9ffd-63fa001a60fc",
+    "originalId": "e99a3848-30c8-4636-9ffd-63fa001a60fc",
+    "statement": "Médica de 32 anos foi contratada pelo Programa Mais Médicos para trabalhar na Unidade Básica de Saúde (UBS) no distrito sanitário especial indígena Yanomami na Amazônia, região endêmica para malária.\nConsiderando que a médica não tem morbidades ou problemas de saúde em tratamento, qual quimioprofilaxia está indicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Artesunato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doxiciclina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Primaquina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cloroquina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda a escolha da quimioprofilaxia para a malária em uma profissional que atuará em uma área endêmica na Amazônia (distrito Yanomami), onde há alta prevalência de *Plasmodium falciparum* e *Plasmodium vivax*, com conhecido padrão de resistência medicamentosa.\n\nAlternativa A: Incorreta. O artesunato é um derivado da artemisinina utilizado estritamente para o tratamento da malária, sendo a droga de escolha para casos graves e complicados (via intravenosa) ou como parte da terapia combinada (ACT) em casos leves. Não é utilizado como quimioprofilaxia devido à sua meia-vida curta e para evitar a indução de resistência a essa classe de medicamentos.\n\nAlternativa B: Correta. A doxiciclina é uma das opções recomendadas para quimioprofilaxia em áreas com presença de *Plasmodium falciparum* resistente à cloroquina, o que inclui a região amazônica. Ela deve ser iniciada um a dois dias antes da entrada na área endêmica, mantida diariamente durante toda a permanência e continuada por quatro semanas após a saída da região. É uma droga eficaz contra as formas eritrocitárias de todas as espécies de plasmódio.\n\nAlternativa C: Incorreta. Embora a primaquina possa ser utilizada em protocolos específicos de quimioprofilaxia (agindo contra formas hepáticas), ela não é a primeira escolha para profilaxia de rotina na Amazônia. Além disso, seu uso exige a testagem prévia da enzima glicose-6-fosfato desidrogenase (G6PD), pois pode causar hemólise grave em indivíduos deficientes. No Brasil, seu uso principal é no tratamento para a cura radical do *P. vivax*.\n\nAlternativa D: Incorreta. A cloroquina não é mais indicada para profilaxia na região amazônica brasileira devido à resistência generalizada do *Plasmodium falciparum* a esse fármaco. Utilizá-la como profilaxia deixaria a médica desprotegida contra a forma mais grave da doença (malária *falciparum*), embora a droga ainda seja utilizada no tratamento das formas sanguíneas do *P. vivax*.\n\nInformação adicional: Vale ressaltar que o Ministério da Saúde do Brasil, em geral, não recomenda a quimioprofilaxia sistemática para pessoas que residirão por longos períodos em áreas endêmicas, focando em medidas de proteção individual (repelentes, mosquiteiros) e diagnóstico precoce. No entanto, em contextos de provas de residência e seguindo protocolos internacionais para viajantes ou missões específicas em áreas de alto risco e resistência, a doxiciclina é a resposta tecnicamente correta entre as opções apresentadas.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Malária"
+    ],
+    "difficulty": 89.84378859546382,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:01.078Z"
+  },
+  {
+    "id": "AJUDA_e99bf179-a33f-4906-91d9-3433cf001543",
+    "originalId": "e99bf179-a33f-4906-91d9-3433cf001543",
+    "statement": "Nuligesta com histórico de doença inflamatória pélvica em acompanhamento há mais de 3 anos. Apresentou atraso menstrual de 6 semanas e hCG positivo. Ao efetuar exames de imagem, foi constatada gestação ectópica tubária à direita. Considerando as seguintes propostas terapêuticas, analise as afirmativas e assinale a alternativa CORRETA.\n\nI. Metotrexato: somente se hCG quantitativo abaixo de 3.500,00 UI/mL.\nII. Se há sinais de instabilidade hemodinâmica, cirúrgico sempre.\nIII. Laparoscopia: somente se massa anexial está abaixo de 3,5cm.\nIV. Metotrexato: somente se há estabilidade hemodinâmica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas as afirmativas I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas as afirmativas I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as afirmativas II e IV estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Todas as afirmativas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DAS AFIRMATIVAS:\n\nI. INCORRETA: O valor de hCG quantitativo é um critério importante para o sucesso do tratamento medicamentoso com metotrexato, porém o limite habitualmente utilizado na literatura e nos protocolos clínicos é de 5.000 UI/mL, e não 3.500 UI/mL. Além disso, o nível de hCG não é o único critério; a ausência de atividade cardíaca embrionária e o tamanho da massa anexial também são fundamentais. O termo \"somente\" torna a afirmação restritiva e incorreta conforme os protocolos mais aceitos.\n\nII. CORRETA: Em qualquer quadro de gestação ectópica, a instabilidade hemodinâmica (sinais de choque hipovolêmico, como taquicardia e hipotensão) é uma indicação absoluta de intervenção cirúrgica imediata. Nesses casos, a paciente geralmente apresenta ruptura tubária e hemoperitônio vultoso, o que impossibilita o tratamento clínico ou a conduta expectante.\n\nIII. INCORRETA: O limite de 3,5 cm (ou 4,0 cm em alguns protocolos) para a massa anexial é um critério utilizado para indicar o tratamento clínico com metotrexato, e não para limitar a via de acesso cirúrgico. A laparoscopia é a via de preferência para o tratamento cirúrgico da gestação ectópica em pacientes estáveis, independentemente do tamanho da massa, desde que haja viabilidade técnica e equipamento disponível.\n\nIV. CORRETA: O uso do metotrexato exige obrigatoriamente que a paciente esteja hemodinamicamente estável. Como o medicamento leva tempo para agir e o risco de ruptura tubária persiste durante o tratamento, pacientes instáveis devem ser operadas imediatamente. A estabilidade é um pré-requisito básico de segurança para o manejo medicamentoso.\n\nCONCLUSÃO:\n\nEstão corretas as afirmativas II e IV, o que valida a alternativa (c) como a resposta correta da questão. O tratamento da gestação ectópica deve sempre priorizar a segurança da paciente, reservando o tratamento medicamentoso para casos selecionados (estabilidade, hCG baixo, massa pequena e sem batimentos cardíacos fetais) e a cirurgia para casos de instabilidade ou falha/contraindicação ao metotrexato.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:01.078Z"
+  },
+  {
+    "id": "AJUDA_e9a61041-3404-4b16-a6a8-ff0f3340f0cf",
+    "originalId": "e9a61041-3404-4b16-a6a8-ff0f3340f0cf",
+    "statement": "Paciente do sexo feminino, 32 anos, procura atendimento médico devido à astenia. Relata que vem tratando anemia há mais de um ano, em uso de sulfato ferroso duas vezes ao dia. Além disso, foi recomendado que ela utilizasse anticoncepcional oral combinado para reduzir o fluxo menstrual. Contudo, no último mês os sintomas de indisposição pioraram. Quando questionada, relata que notou piora da dor no corpo e que atribuiu a piora do quadro de fibromialgia ao estresse por questões de trabalho, além de piora da qualidade do sono. Ao exame físico, encontra-se hipocorada, levemente ictérica, eupneica no repouso, há presença de contraturas em região escapular e paravertebral, presença de sinovite em 2ª metacarpofalangeana direita e ombro esquerdo, presença de dermatite em áreas de exposição solar. O hemograma mais atual encontra-se a seguir.\n\nEritrócitos: 3,8 x10⁶/mm³ (Ref: 4-6 x10⁶/mm³)\nHemoglobina: 10,9g/dl (Ref: 12-15g/dl)\nHematócrito: 32,7% (Ref: 36-42%)\nVCM: 89 fL (Ref: 80-100 fL)\nHCM: 28pg (Ref: 26-34pg)\nCHCM: 33% (Ref: 31,5- 36%)\nRDW: 16% (Ref: 11 a 15%)\n\nPara investigar melhor a anemia dessa paciente, devem ser priorizados os seguintes exames:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reticulócitos, ferro, ferritina e saturação de transferrina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Homocisteína, vitamina B12 e ácido fólico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reticulócitos, Bilirrubinas, DHL e haptoglobina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "TSH e T4 livre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Eletroforese de hemoglobina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, é fundamental correlacionar os achados clínicos com os dados laboratoriais fornecidos.\n\nAnálise Clínica:\nA paciente é uma mulher jovem com quadro de anemia crônica que não respondeu à reposição de ferro (sulfato ferroso) nem ao controle do fluxo menstrual. O exame físico revela sinais sistêmicos importantes: icterícia leve, sinovite (artrite) em mãos e ombro, e dermatite em áreas fotoexpostas. Esse conjunto de sinais (artrite + fotossensibilidade + anemia) é altamente sugestivo de lúpus eritematoso sistêmico (LES).\n\nAnálise Laboratorial:\nO hemograma mostra uma anemia normocítica (VCM 89) e normocrômica (HCM 28), com RDW levemente aumentado. A presença de icterícia associada a uma anemia que não responde ao ferro sugere um componente hemolítico. No contexto do LES, a anemia hemolítica autoimune é uma manifestação clássica.\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): Embora o perfil de ferro (ferro, ferritina, saturação) seja útil para avaliar anemia ferropriva ou de doença crônica, a paciente já usa ferro há um ano sem melhora e apresenta icterícia, o que direciona o raciocínio para hemólise, e não apenas carência nutricional.\n\nAlternativa B (Incorreta): A dosagem de vitamina B12 e ácido fólico é indicada na investigação de anemias macrocíticas (VCM elevado). O VCM da paciente está normal (89 fL).\n\nAlternativa C (Correta): Esta é a conduta prioritária. Diante da suspeita de hemólise (sugerida pela icterícia e anemia refratária), devemos solicitar os exames que compõem o painel de hemólise:\n1. Reticulócitos: Estarão aumentados (anemia regenerativa).\n2. Bilirrubinas: Haverá aumento da bilirrubina indireta devido à quebra dos eritrócitos.\n3. DHL (Desidrogenase Lática): Marcador de lise celular, estará elevado.\n4. Haptoglobina: Estará reduzida, pois ela se liga à hemoglobina livre liberada no plasma.\n\nAlternativa D (Incorreta): O rastreio da função tireoidiana investiga hipotireoidismo, que pode causar astenia, mas não explica a icterícia, a sinovite nem a dermatite.\n\nAlternativa E (Incorreta): A eletroforese de hemoglobina é utilizada para diagnosticar hemoglobinopatias (como anemia falciforme ou talassemias). Embora possam causar hemólise, a talassemia costuma ser microcítica e o quadro clínico de artrite e lesões cutâneas fotossensíveis aponta mais fortemente para uma doença autoimune como causa da hemólise.\n\nConclusão:\nA prioridade é confirmar se a anemia é de caráter hemolítico, justificando a alternativa C como o próximo passo diagnóstico correto para esta paciente.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:01.078Z"
+  },
+  {
+    "id": "AJUDA_e9a6bd65-b97c-410b-ab36-ac7f3a186339",
+    "originalId": "e9a6bd65-b97c-410b-ab36-ac7f3a186339",
+    "statement": "Paciente masculino, 32 anos, portador de Polipose Adenomatosa Familiar (PAF), com história familiar positiva e colectomia prévia, apresenta quadro de icterícia colestática, hipocolia e colúria. A colangiografia endoscópica com biópsia revelou adenoma tubuloviloso da papila duodenal maior, com displasia de baixo grau. Foi submetido à drenagem biliar, evoluindo com pancreatite aguda grave. A conduta mais adequada a médio prazo para este paciente, dentre as abaixo, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Imunoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pancreatoduodenectomia (cirurgia de Whipple).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Seguimento endoscópico rigoroso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Radioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Embolização arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o manejo de manifestações extracolônicas da Polipose Adenomatosa Familiar (PAF). Pacientes com PAF, após a colectomia, têm como uma das principais causas de morbimortalidade o desenvolvimento de adenomas e carcinomas duodenais, especialmente na região periampular.\n\nA análise da conduta baseia-se nos seguintes pontos:\n\n1. Natureza da Lesão: O diagnóstico histopatológico revelou um adenoma tubuloviloso com displasia de baixo grau. Trata-se de uma lesão benigna, embora com potencial de transformação maligna a longo prazo.\n\n2. Contexto Clínico: O paciente é jovem (32 anos) e acabou de enfrentar uma complicação grave (pancreatite aguda grave) decorrente de um procedimento endoscópico. Isso torna qualquer intervenção cirúrgica de grande porte, como a cirurgia de Whipple, extremamente arriscada no curto e médio prazo, devido ao processo inflamatório local e às possíveis aderências.\n\n3. Classificação de Spigelman: O manejo da polipose duodenal na PAF é frequentemente orientado por este escore, que avalia o número, tamanho, histologia e grau de displasia dos pólipos. Lesões com displasia de baixo grau, sem evidência de carcinoma invasor, favorecem uma estratégia preservadora.\n\nAnálise das alternativas:\n\na) Incorreta. A imunoterapia não possui indicação no tratamento de adenomas duodenais benignos ou no controle da PAF. Seu papel está restrito a casos específicos de neoplasias malignas avançadas com instabilidade de microssatélites.\n\nb) Incorreta. A pancreatoduodenectomia (cirurgia de Whipple) é um procedimento de alta morbidade. É reservada para casos de adenocarcinoma confirmado ou adenomas com displasia de alto grau que não podem ser ressecados por via endoscópica ou por ampulectomia cirúrgica local. Diante de uma displasia de baixo grau em um paciente que se recupera de pancreatite grave, essa conduta seria desproporcional.\n\nc) Correta. O seguimento endoscópico rigoroso é a conduta de escolha para adenomas duodenais na PAF com displasia de baixo grau. O objetivo é monitorar a progressão da lesão e realizar novas biópsias ou ressecções endoscópicas (papilectomia) quando o quadro inflamatório da pancreatite estiver resolvido, postergando ou evitando uma cirurgia radical.\n\nd) Incorreta. A radioterapia não é utilizada para o tratamento de lesões adenomatosas (pré-malignas) do trato gastrointestinal.\n\ne) Incorreta. A embolização arterial é um procedimento da radiologia intervencionista utilizado para controlar hemorragias agudas ou tratar certos tumores hipervascularizados, não tendo papel no tratamento definitivo de adenomas da papila duodenal.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:01.078Z"
+  },
+  {
+    "id": "AJUDA_e9b358a8-3de8-48ab-b5e9-a1f548dfd813",
+    "originalId": "e9b358a8-3de8-48ab-b5e9-a1f548dfd813",
+    "statement": "Quanto ao câncer gástrico, marque a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O etilismo e o tabagismo são fatores de risco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A principal método de tratamento curativo é ressecção com margens livres da lesão associada à ressecção dos linfonos locorregionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ocorre mais nas mulheres que nos homens, com pico na sétima década.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Os pólipos adenomatosos apresentam alto risco de desenvolver malignidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A infecção por Helicobacter pylori é um fator de risco para o câncer gástrico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A: Esta assertiva está correta. O tabagismo é um fator de risco bem estabelecido para o câncer gástrico, aumentando o risco tanto para tumores da cárdia quanto para os distais. O etilismo, especialmente quando o consumo é elevado, também é considerado um fator de risco relevante pela literatura médica e por órgãos de controle do câncer.\n\nAlternativa B: Esta assertiva está correta. O pilar do tratamento com intenção curativa para o adenocarcinoma gástrico é a ressecção cirúrgica (gastrectomia parcial ou total), visando a margens microscopicamente livres de tumor (ressecção R0). Esse procedimento deve vir acompanhado da linfadenectomia (remoção de linfonodos locorregionais), sendo a técnica D2 o padrão recomendado para garantir um estadiamento e controle regional adequados.\n\nAlternativa C: Esta assertiva está incorreta e é o gabarito da questão. Epidemiologicamente, o câncer gástrico é muito mais comum em homens do que em mulheres, apresentando uma proporção de aproximadamente 2 para 1. Embora a idade de incidência citada (sétima década) esteja correta para a maioria dos casos, a afirmação de que a doença ocorre mais em mulheres invalida a alternativa.\n\nAlternativa D: Esta assertiva está correta. Os pólipos gástricos do tipo adenomatoso são lesões neoplásicas benignas, mas que possuem um alto potencial de transformação maligna. Eles são considerados lesões pré-cancerígenas e sua identificação em exames de endoscopia exige a ressecção completa e o acompanhamento histopatológico.\n\nAlternativa E: Esta assertiva está correta. A infecção crônica pela bactéria *Helicobacter pylori* é o fator de risco mais importante para o tipo intestinal de câncer gástrico. A bactéria causa uma inflamação persistente na mucosa que pode desencadear a sequência de alterações conhecida como cascata de Correa: gastrite crônica, atrofia gástrica, metaplasia intestinal, displasia e, finalmente, o adenocarcinoma.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:01.078Z"
+  },
+  {
+    "id": "AJUDA_e9b38a0f-7eab-4d62-99d7-b08de41ef4bc",
+    "originalId": "e9b38a0f-7eab-4d62-99d7-b08de41ef4bc",
+    "statement": "Paciente do sexo masculino, 55 anos, fumante, sobrepeso (IMC 28), é internado para uma hemicolectomia esquerda laparoscópica por neoplasia de cólon, com pretensão de cura. É hipertenso compensado. Nega diabetes, cardiopatia e demais comorbidades. Nega história de sangramentos ou de distúrbios de coagulação na família. Sua hemoglobina é 12g/dl e seu perfil de coagulação (contagem de plaquetas, TAP, TTPA e INR) são normais. A respeito do risco operatório de tromboembolismo venoso (TEV) para este paciente, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O sexo masculino, a obesidade e a cirurgia abdominal laparoscópica por doença maligna, classificam este paciente como tendo altíssimo risco para TEV durante e após sua internação hospitalar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Já que as provas de coagulação estão normais e o paciente não faz uso de drogas antiagregantes plaquetárias, há indicação para encerramento da profilaxia no momento da alta do paciente para o domicílio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "De acordo com seu risco de TEV, há indicação do uso de heparina de baixo peso molecular associada a medidas de profilaxia mecânica como meias compressivas e dispositivos de compressão pneumática intermitente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Avaliação e controle de fatores como o controle do peso, interrupção do tabagismo, controle da pressão arterial, escolha de técnica cirúrgica adequada e estímulo à deambulação precoce, durante todo o período peri-operatório, diminuem o risco de TEV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, é fundamental avaliar o escore de risco para tromboembolismo venoso (TEV) no paciente cirúrgico, utilizando critérios como o Escore de Caprini. O paciente apresenta múltiplos fatores: idade (55 anos), sobrepeso (IMC 28), cirurgia abdominal de grande porte e a presença de neoplasia maligna ativa.\n\nAnálise das alternativas:\n\nA) Esta alternativa está correta. A presença de câncer (neoplasia maligna) associada a uma cirurgia de grande porte abdominal (mesmo que laparoscópica) e fatores como idade e sobrepeso classificam o paciente no grupo de alto/altíssimo risco. De acordo com o escore de Caprini, pacientes com pontuação igual ou superior a 5 são considerados de altíssimo risco para eventos tromboembólicos.\n\nB) Esta alternativa está INCORRETA (Gabarito). O fato de o perfil de coagulação (TAP, TTPA, plaquetas) estar normal não indica que o paciente esteja livre do risco de TEV; esses exames avaliam a via de coagulação para riscos de sangramento, não o estado de hipercoagulabilidade induzido pelo câncer e pela cirurgia. Além disso, em cirurgias oncológicas abdominais ou pélvicas de grande porte, as principais diretrizes mundiais (como ACCP e ASCO) recomendam a profilaxia estendida por até 28 dias (4 semanas), mantendo o uso da medicação mesmo após a alta hospitalar.\n\nC) Esta alternativa está correta. Para pacientes classificados como alto ou altíssimo risco, a conduta padrão-ouro é a profilaxia combinada: farmacológica (geralmente heparina de baixo peso molecular, como a enoxaparina) e mecânica (meias de compressão ou dispositivos de compressão pneumática intermitente), visando maximizar a proteção contra a estase venosa e a hipercoagulabilidade.\n\nD) Esta alternativa está correta. Medidas gerais e o controle de fatores de risco modificáveis são essenciais no período perioperatório. A interrupção do tabagismo melhora a microcirculação e a função pulmonar, enquanto a deambulação precoce é uma das medidas mais eficazes e simples para prevenir a estase sanguínea nos membros inferiores, reduzindo diretamente a incidência de trombose venosa profunda.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:01.078Z"
+  },
+  {
+    "id": "AJUDA_e9b410f0-79e4-4a19-a185-898fbe300f12",
+    "originalId": "e9b410f0-79e4-4a19-a185-898fbe300f12",
+    "statement": "Recém-nascido (RN) masculino, 40 horas de vida, foi submetido ao teste de triagem neonatal para cardiopatia congênita crítica (teste do coraçãozinho) que detectou oximetria de pulso em membro superior direito de 94% e em membro inferior direito de 89%. O teste foi repetido por 2 vezes, com intervalos de 1 hora, e os resultados foram mantidos. Assinale a alternativa que apresenta a melhor conduta inicial para o RN.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Alta hospitalar com encaminhamento ao cardiologista pediátrico para avaliação e repetição do teste em 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alta hospitalar com encaminhamento ao pediatra para acompanhamento em puericultura e repetição do teste em 30 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alta hospitalar e repetir o teste em 15 dias com orientações de retorno à maternidade em caso de taquicardia, taquipnéia ou cansaço às mamadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não liberar a alta hospitalar até o esclarecimento diagnóstico com a avaliação cardiológica e neonatal completas (exame clínico e ecocardiograma).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O teste de triagem neonatal para cardiopatia congênita crítica, conhecido como teste do coraçãozinho, deve ser realizado em todos os recém-nascidos (RN) com idade gestacional acima de 34 semanas, entre 24 e 48 horas de vida. O objetivo é identificar precocemente defeitos cardíacos que dependem do canal arterial, evitando que o bebê receba alta e sofra uma descompensação grave (como choque ou hipóxia acentuada) em domicílio após o fechamento fisiológico desse canal.\n\nPara interpretar o teste, utilizamos os seguintes critérios:\n1. Teste Negativo (Normal): Saturação maior ou igual a 95% em ambas as extremidades (membro superior direito e um membro inferior) e uma diferença menor ou igual a 3% entre as duas medidas.\n2. Teste Positivo: Saturação inferior a 89% em qualquer um dos membros.\n3. Teste Duvidoso: Saturação entre 90% e 94% em qualquer membro ou uma diferença entre os membros maior ou igual a 4%.\n\nNo caso descrito, o RN apresentou 94% no membro superior e 89% no inferior (diferença de 5%). Isso caracteriza um resultado alterado. Seguindo o protocolo, quando o resultado é duvidoso, o teste deve ser repetido em 1 hora. Se persistir alterado, repete-se o procedimento após mais 1 hora. Como o enunciado afirma que o teste foi repetido duas vezes com intervalos de 1 hora e o resultado se manteve, o teste é considerado POSITIVO.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Não se pode dar alta a um RN com teste do coraçãozinho positivo. O encaminhamento para reavaliação em 7 dias é perigoso, pois o canal arterial pode se fechar nesse período, levando a óbito ou complicações graves se houver uma cardiopatia crítica.\n\nAlternativa b: Incorreta. Acompanhamento em puericultura e repetição em 30 dias é uma conduta negligente diante de um rastreio positivo para cardiopatias graves, que exigem diagnóstico e intervenção imediatos.\n\nAlternativa c: Incorreta. Embora orientar sinais de alerta seja importante, isso não substitui a necessidade de investigação imediata. O teste positivo obriga à realização de exames complementares antes da alta.\n\nAlternativa d: Correta. Esta é a conduta padrão. Todo RN com teste do coraçãozinho positivo deve ser mantido na unidade hospitalar para avaliação clínica cuidadosa e realização compulsória de ecocardiograma, preferencialmente dentro de 24 horas, para confirmar ou descartar uma cardiopatia congênita crítica.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Cuidados Neonatais",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:01.078Z"
+  },
+  {
+    "id": "AJUDA_e9b890ea-2c49-402f-890d-06036d753a8b",
+    "originalId": "e9b890ea-2c49-402f-890d-06036d753a8b",
+    "statement": "Menino, 7 anos de idade, é trazido à UBS pela mãe com história de desobediência e agressividade em casa e na escola. Durante a consulta, ele revela sofrer agressões frequentes por parte do pai, inclusive com uso de objetos como cinto e chinelo. Exame fisico: bom estado geral, duas equimoses de 3 cm de diâmetro no dorso, sem outras alterações. A criança parece tranquila na consulta e colabora com o exame. Além de orientar a mãe sobre as consequências da violência, quais as condutas recomendadas para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Como as lesões são leves e a criança parece tranquila, não é necessário acompanhamento específico para a situação de violência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Comunicar a Delegacia local e o Ministério Público para proteção à criança e eventual destituição do poder familiar por violência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Reunir informações, avaliar a família, prosseguir com avaliação social e psicológica e comunicar o Conselho Tutelar da região de moradia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Orientar a criança quanto ao seu comportamento agressivo e acompanhar o caso individualmente mantendo sigilo do atendimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o manejo de casos de suspeita ou confirmação de violência contra a criança e o adolescente, um tema recorrente em provas de residência e de extrema importância na prática da Atenção Primária à Saúde. O cenário descreve uma criança com sinais físicos de agressão (equimoses) e relato direto de violência física punitiva por parte do pai.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. De acordo com o Estatuto da Criança e do Adolescente (ECA) e as diretrizes do Ministério da Saúde, a gravidade das lesões físicas não é o critério para a notificação. Havendo suspeita ou confirmação de maus-tratos, a comunicação aos órgãos competentes é obrigatória. Além disso, a violência doméstica gera impactos psicológicos e no desenvolvimento que exigem acompanhamento, independentemente de as marcas físicas serem leves.\n\nAlternativa b: Incorreta. Embora casos graves de violência possam chegar à esfera policial e judicial, a primeira instância de proteção e a medida administrativa prioritária no Brasil é a comunicação ao Conselho Tutelar. A destituição do poder familiar é uma medida extrema e excepcional, decidida apenas pelo Poder Judiciário após esgotadas outras possibilidades de intervenção e proteção à criança.\n\nAlternativa c: Correta. Esta alternativa descreve a conduta padrão recomendada. Diante de um caso de violência, o médico deve: 1) Aprofundar a anamnese para entender o contexto familiar; 2) Realizar a notificação obrigatória ao Conselho Tutelar da localidade (conforme o artigo 13 do ECA); 3) Articular uma rede de apoio que inclua assistentes sociais e psicólogos para avaliar a vulnerabilidade da criança e a dinâmica da família. O objetivo não é apenas punir, mas proteger a criança e oferecer suporte para interromper o ciclo de violência.\n\nAlternativa d: Incorreta. O sigilo médico não é absoluto e deve ser quebrado em situações de suspeita de maus-tratos contra crianças e adolescentes, conforme previsto no Código de Ética Médica e no ECA. Orientar apenas a criança sobre seu comportamento agressivo é uma conduta inadequada, pois transfere a culpa da violência para a vítima e ignora a responsabilidade do agressor e o dever de proteção do Estado e dos profissionais de saúde.\n\nResumo: Em casos de suspeita ou confirmação de maus-tratos infantis, a conduta médica envolve a notificação compulsória (notificação epidemiológica e comunicação ao Conselho Tutelar) e a abordagem multiprofissional para garantir a segurança e o suporte biopsicossocial do menor.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Maus Tratos",
+      "Segurança na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:07:01.078Z"
+  }
+]

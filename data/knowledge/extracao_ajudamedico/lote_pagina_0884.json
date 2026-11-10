@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_f560da03-6bd5-4035-9c4b-061c8b402313",
+    "originalId": "f560da03-6bd5-4035-9c4b-061c8b402313",
+    "statement": "Seu Antônio, 83 anos, foi à unidade de saúde próxima a sua residência acompanhado de sua filha e, após consulta, recebeu orientações para manter o chão de sua casa seco, sem tapetes ou panos, manter os caminhos de trânsito no lar sem obstáculos e com piso antiderrapante e usar calçados firmes, sem solados lisos. Essas medidas são recomendadas para promover",
+    "options": [
+      {
+        "id": "A",
+        "text": "prevenção primária com proteção específica, evitando quedas e fraturas do colo do fêmur.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "prevenção secundária, como redução dos danos da osteoporose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prevenção terciária, com otimização funcional no domicílio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prevenção quaternária, com redução da iatrogenia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "promoção da saúde como medidas gerais de prevenção primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda os níveis de prevenção em saúde, um tema fundamental na Medicina Preventiva e na Atenção Primária, baseando-se no modelo de Leavell e Clark. O foco é identificar em qual categoria se enquadram as intervenções de segurança domiciliar para um idoso.\n\nAnálise das alternativas:\n\na) Correta. A prevenção primária ocorre no período pré-patogênese, ou seja, antes de a doença ou de o agravo se manifestar, visando remover causas e fatores de risco. Ela se divide em: Promoção da Saúde (medidas gerais) e Proteção Específica (medidas contra um agravo determinado). No caso do Seu Antônio, as orientações de retirar tapetes, usar calçados firmes e instalar piso antiderrapante são ações diretas para evitar um evento específico: a queda e a consequente fratura do colo do fêmur. Portanto, é proteção específica dentro da prevenção primária.\n\nb) Incorreta. A prevenção secundária foca no diagnóstico precoce e no tratamento imediato de uma patologia já instalada, muitas vezes em fase assintomática, para evitar sua progressão. Exemplos seriam o rastreio de osteoporose via densitometria óssea ou exames de rastreamento de câncer. As medidas citadas no enunciado não buscam detectar doenças precocemente, mas evitar que o acidente ocorra.\n\nc) Incorreta. A prevenção terciária visa reduzir a incapacidade, realizar a reabilitação e prevenir complicações de uma doença já estabelecida e sintomática. Se o Seu Antônio já tivesse sofrido a queda e estivesse fazendo fisioterapia para voltar a andar, estaríamos falando de prevenção terciária.\n\nd) Incorreta. A prevenção quaternária consiste na detecção de indivíduos em risco de intervenções médicas excessivas (sobrediagnóstico e sobretratamento) e na proteção contra novas invasões médicas inapropriadas. O objetivo é evitar a iatrogenia. As orientações de segurança doméstica não envolvem medicalização excessiva ou procedimentos médicos desnecessários.\n\ne) Incorreta. Embora as medidas façam parte da prevenção primária, o termo Promoção da Saúde refere-se a medidas gerais que visam ao bem-estar e ao aumento da resistência do hospedeiro de forma inespecífica (como alimentação adequada, moradia digna e lazer). Quando a medida é direcionada para prevenir um agravo específico (quedas), o termo técnico correto dentro do modelo de Leavell e Clark é Proteção Específica.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:09.202Z"
+  },
+  {
+    "id": "AJUDA_f56315cb-c17e-4d7c-813e-7f88272bb321",
+    "originalId": "f56315cb-c17e-4d7c-813e-7f88272bb321",
+    "statement": "Mulher, 60 anos de idade, em amenorreia há quatro anos, foi recentemente diagnosticada com anemia e na investigação apresenta os seguintes exames: TSH = 1,97 mUI/mL (VR 0,45 a 4,5 mUI/mL), T4 livre = 0,3 ng/dL (VR 0,9 a 1,8 ng/dL), FSH = 4,0 mUI/mL (VR 3,6 a 16,6 mUI/mL), LH = 1,6 mUI/mL (VR 1,1 a 11,1 mUI/mL), cortisol = 6,6 mcg/dL (VR 5,0 a 25 mcg/dL), ACTH = 12,6 pg/mL (VR < 46 pg/mL), IGF-1 = 64 ng/mL (VR 83 a 241 ng/mL), prolactina = 80 ng/dL (VR 5 a 25 ng/dL). A ressonância magnética da sela túrcica evidenciou lesão hipofisária de 3,5 x 2,8 x 3,1 cm em região selar compatível com adenoma hipofisário. Qual é a alternativa mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "É possível excluir o diagnóstico de hipotiroidismo devido aos níveis normais de TSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Para a confirmação do diagnóstico de deficiência de GH é necessária a dosagem do GH basal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de pan-hipopituitarismo por apresentar deficiência de mais de um setor de hormônios adeno-hipofisários.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O nível elevado de prolactina descarta o diagnóstico de hipopituitarismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise clínica e laboratorial:\n\nA paciente apresenta um macroadenoma hipofisário volumoso (3,5 cm), o que justifica a compressão do tecido glandular normal e da haste hipofisária, levando a falhas na produção hormonal.\n\nExame laboratorial detalhado:\n\n1. Eixo tireotrófico: O T4 livre está baixo (0,3 ng/dL) com um TSH falsamente normal (1,97 mUI/mL). Em uma tireoide normal respondendo a uma falha periférica, o TSH deveria estar muito elevado. Esse padrão de T4 livre baixo com TSH normal ou baixo define o hipotireoidismo central.\n\n2. Eixo gonadotrófico: Uma mulher de 60 anos, em amenorreia há quatro anos, deveria apresentar níveis de FSH e LH significativamente elevados (padrão de menopausa). Níveis de FSH e LH baixos ou \"normais\" nessa faixa etária indicam hipogonadismo hipogonadotrófico (central).\n\n3. Eixo do GH: O IGF-1 está abaixo do valor de referência para a idade (64 ng/mL), o que aponta para a deficiência do hormônio do crescimento (GH).\n\n4. Prolactina: O valor de 80 ng/dL é um aumento moderado. Em tumores grandes como este, esse aumento ocorre geralmente pelo \"efeito haste\" (compressão da haste hipofisária pelo tumor, impedindo que a dopamina, que é o fator inibidor da prolactina, chegue à hipófise).\n\n5. Eixo adrenal: O cortisol de 6,6 mcg/dL está em uma zona limítrofe/baixa. Em conjunto com os outros achados e a presença de um volumoso tumor, sugere insuficiência adrenal secundária.\n\nAnálise das alternativas:\n\na) Incorreta. O hipotireoidismo central não pode ser excluído pelo TSH normal. Pelo contrário, a combinação de T4 livre baixo com TSH normal ou baixo é a característica fundamental dessa patologia de origem hipofisária.\n\nb) Incorreta. O GH tem secreção pulsátil e meia-vida muito curta, por isso a dosagem de GH basal não serve para diagnosticar deficiência. O diagnóstico é feito pela dosagem de IGF-1 (que reflete a produção de GH nas últimas 24 h) ou por testes de estímulo dinâmico.\n\nc) Correta. A paciente apresenta deficiência documentada de múltiplos eixos hormonais da adeno-hipófise (tireotrófico, gonadotrófico e somatotrófico), o que caracteriza o quadro de pan-hipopituitarismo.\n\nd) Incorreta. A hiperprolactinemia é um achado comum no hipopituitarismo causado por tumores selares. O efeito haste bloqueia o aporte de dopamina, elevando a prolactina, enquanto a compressão da glândula pelo tumor destrói as células que produzem os demais hormônios. Portanto, uma prolactina elevada não descarta o hipopituitarismo.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Hipófise"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:09.202Z"
+  },
+  {
+    "id": "AJUDA_f5637c8c-a440-41fc-ac86-5a526b47c33c",
+    "originalId": "f5637c8c-a440-41fc-ac86-5a526b47c33c",
+    "statement": "Homem, 65 anos de idade, apresenta sangramento na urina há 6 meses. Exame físico: BEG, FC 80 bpm, PA 120x80 mm Hg, T 36,5 °C, e abdômen indolor à palpação. Exames: Hb 12,3 d/dL, leucocitos 9.000 células/mm³, plaquetas 170.000/mm³, Na 144 mEq/L, K 4,0 mEq/L, U 30 mg/dL, C 1,2 mg/dL, TGO 30 U/L, TGP 40 U/L, FA 30 U/L, GGT 50 U/L. Ultrassonografia do abdômen: lesão polipoide da bexiga de 3 cm na parede lateral direita, com presença de fluxo ao estudo Doppler. Submeteu-se à ressecção transuretral da lesão vesical. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carcinoma espinocelular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Carcinoma urotelial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Adenocarcinoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Carcinoma de pequenas células.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado descreve um paciente masculino de 65 anos com hematúria indolor há 6 meses e achado ultrassonográfico de lesão polipoide na bexiga. Esse cenário é a apresentação clássica do câncer de bexiga, sendo a hematúria o sinal inicial em cerca de 80% a 90% dos casos.\n\nAlternativa a) Carcinoma espinocelular.\nIncorreta. Embora possa ocorrer na bexiga, o carcinoma espinocelular representa apenas cerca de 3% a 5% das neoplasias malignas vesicais. Geralmente está associado a processos de irritação crônica da mucosa, como infecção pelo *Schistosoma haematobium* (muito comum no Egito e partes da África), uso crônico de sondas vesicais de demora ou cálculos vesicais volumosos de longa data. O caso clínico não cita nenhum desses fatores de risco.\n\nAlternativa b) Carcinoma urotelial.\nCorreta. O carcinoma urotelial, anteriormente chamado de carcinoma de células de transição, é o tipo histológico mais comum de câncer de bexiga, sendo responsável por mais de 90% a 95% dos casos diagnosticados. Epidemiologicamente, é mais frequente em homens, brancos, idosos e tem o tabagismo como principal fator de risco. Diante de uma lesão expansiva na bexiga em um paciente com hematúria, este é sempre o diagnóstico mais provável e a hipótese principal a ser considerada.\n\nAlternativa c) Adenocarcinoma.\nIncorreta. O adenocarcinoma primário da bexiga é raro, correspondendo a menos de 2% dos tumores vesicais. Pode estar relacionado a remanescentes do uraco (localizados geralmente na cúpula vesical) ou a casos de extrofia vesical. Não há elementos na questão que sugiram essa histologia específica.\n\nAlternativa d) Carcinoma de pequenas células.\nIncorreta. Trata-se de um tipo histológico extremamente raro na bexiga (menos de 1% dos casos). É um tumor de origem neuroendócrina, muito agressivo e com alta taxa de metástases precoces, não sendo a principal suspeita para um quadro clínico inicial e tipicamente arrastado como o descrito.\n\nResumo do diagnóstico: A tríade de idade avançada, hematúria macroscópica indolor e lesão polipoide na ultrassonografia aponta diretamente para o carcinoma urotelial, que é a neoplasia maligna predominante do trato urinário. A conduta de Ressecção Transuretral (RTU) serve tanto para o diagnóstico histológico quanto para o estadiamento inicial da doença.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Urologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:09.202Z"
+  },
+  {
+    "id": "AJUDA_f567f7c1-e1a1-4c3b-8c2c-7fead167f3c7",
+    "originalId": "f567f7c1-e1a1-4c3b-8c2c-7fead167f3c7",
+    "statement": "A prematuridade é a principal causa de morbimortalidade neonatal, com riscos graves de complicações neonatais e incapacidade em longo prazo. Assim, identificar gestantes que apresentam maior risco para parto pré-termo espontâneo é estratégia importante para prevenção secundária.\nA respeito dessa investigação, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desnutrição materna, tabagismo e vaginose bacteriana não são fatores de risco para prematuridade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O valor de corte mais aceito para classificação de colo curto é o de 20 mm, e o rastreamento é feito para gestantes de alto risco para parto prematuro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A mensuração do colo uterino é realizada por via transabdominal e com a bexiga vazia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O “sinal do dedo de luva” é necessário e essencial para a classificação de colo curto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pacientes com colo < 25 mm e parto anterior com idade gestacional < 34 semanas tem indicação de cerclagem uterina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda as estratégias de rastreamento e prevenção do parto pré-termo, um dos temas mais prevalentes na obstetrícia moderna. Para respondê-la corretamente, é necessário conhecer os fatores de risco, a técnica de ultrassonografia cervical e as indicações de intervenções como a cerclagem.\n\nAlternativa A: Incorreta. A desnutrição materna, o tabagismo e a vaginose bacteriana são fatores de risco bem estabelecidos para a prematuridade. O tabagismo está associado à restrição de crescimento e à ruptura prematura de membranas; a desnutrição pode comprometer o suporte nutricional fetal; e a vaginose bacteriana provoca uma resposta inflamatória local que pode desencadear contrações uterinas e alterações cervicais precoces.\n\nAlternativa B: Incorreta. O valor de corte mais aceito universalmente para a definição de colo curto, visando à prevenção de parto prematuro, é de 25 mm (e não 20 mm). Além disso, a tendência atual recomendada por diversas sociedades médicas, incluindo a FEBRASGO, é o rastreamento universal (para todas as gestantes) durante o exame morfológico do segundo trimestre (entre 18 e 24 semanas), e não apenas para gestantes com antecedentes de risco.\n\nAlternativa C: Incorreta. Embora a recomendação de bexiga vazia esteja correta para evitar o alongamento artificial do colo, a via de escolha é a transvaginal. A mensuração transabdominal é considerada imprecisa devido à interferência da gordura abdominal, da posição fetal e da própria bexiga, que, se cheia, pressiona as paredes do colo dando uma falsa impressão de comprimento normal.\n\nAlternativa D: Incorreta. O sinal do dedo de luva (também conhecido como afunilamento ou herniação de membranas) é a abertura do orifício interno do colo com a protrusão das membranas. Apesar de ser um sinal de alerta importante para a insuficiência istmocervical, ele não é um critério obrigatório ou essencial para o diagnóstico de colo curto. O diagnóstico baseia-se exclusivamente na medida linear da porção funcional (fechada) do canal cervical.\n\nAlternativa E: Correta. Esta alternativa descreve a indicação da chamada cerclagem secundária ou cerclagem baseada no ultrassom. Pacientes com histórico de parto prematuro espontâneo anterior (geralmente antes de 34 semanas) que, na gestação atual, apresentam encurtamento do colo uterino (menor que 25 mm) antes de 24 semanas, possuem indicação formal de cerclagem para reduzir o risco de recorrência da prematuridade.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:09.202Z"
+  },
+  {
+    "id": "AJUDA_f56d28a9-b07c-4524-999a-00b6dd1c81fc",
+    "originalId": "f56d28a9-b07c-4524-999a-00b6dd1c81fc",
+    "statement": "Mulher de 22 anos, G1P0, procura a emergência com quadro de emagrecimento, sudorese intensa, palpitações, taquicardia e hipertensão arterial. Refere também sangramento transvaginal irregular há 3 semanas, de moderada intensidade.\nAo exame físico, apresenta tireoide sem aumento palpável e útero aumentado. Ultrassonografia obstétrica é compatível com a imagem a seguir:\n\nAssinale o mecanismo fisiopatológico mais provável para explicar os sintomas dessa paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Produção aumentada de T3 e T4 pela estimulação direta da hipófise.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Níveis elevados de gonadotrofina coriônica humana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Mutação germinativa do receptor de TSH, levando à hiperplasia tireoidiana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Formação de autoanticorpos estimuladores contra o receptor de TSH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Degeneração nodular tóxica da tireoide associada à gestação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO E DA IMAGEM\nA paciente de 22 anos apresenta sintomas clássicos de tireotoxicose: emagrecimento, sudorese, palpitações, taquicardia e hipertensão. O sangramento vaginal irregular e o útero aumentado sugerem uma complicação gestacional. A imagem de ultrassonografia obstétrica é patognomônica, revelando uma massa intrauterina com múltiplas áreas anecoicas de permeio, conferindo o aspecto de tempestade de neve ou favo de mel. Este achado é típico da Mola Hidatidiforme (Doença Trofoblástica Gestacional).\n\nO elo entre os sintomas tireoidianos e a gestação molar é o hormônio gonadotrofina coriônica humana (hCG). O hCG e o hormônio estimulador da tireoide (TSH) compartilham uma subunidade alfa idêntica e possuem subunidades beta com grande semelhança estrutural. Devido a essa analogia, em estados onde o hCG atinge níveis muito elevados (como na gravidez molar ou em gestações múltiplas), ele exerce uma atividade agonista fraca nos receptores de TSH na glândula tireoide, estimulando a produção e liberação de T3 e T4.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a: Incorreta. No quadro de hipertireoidismo, a hipófise encontra-se suprimida pelo feedback negativo dos hormônios tireoidianos (T3 e T4) elevados. Não há estimulação direta da hipófise para produzir esses hormônios; a estimulação ocorre diretamente na glândula tireoide via receptor de TSH, mas desencadeada pelo hCG.\n\nAlternativa b: Correta. Esta alternativa descreve precisamente o mecanismo fisiopatológico. Os níveis maciços de hCG produzidos pelo tecido trofoblástico doente estimulam os receptores de TSH na tireoide, resultando no quadro clínico de hipertireoidismo observado.\n\nAlternativa c: Incorreta. Mutações germinativas do receptor de TSH estão associadas ao hipertireoidismo familiar não autoimune. É uma condição genética hereditária que se manifesta habitualmente com bócio e não explica o achado de útero aumentado com imagem de mola hidatidiforme.\n\nAlternativa d: Incorreta. A formação de autoanticorpos estimuladores do receptor de TSH (TRAb) é o mecanismo da Doença de Graves. Embora a Doença de Graves seja a causa mais comum de hipertireoidismo em mulheres jovens, o caso clínico apresenta uma correlação direta com uma patologia uterina evidenciada pela ultrassonografia, o que direciona para a etiologia gestacional.\n\nAlternativa e: Incorreta. A degeneração nodular tóxica (Bócio Multinodular Tóxico ou Doença de Plummer) é uma causa de hipertireoidismo mais prevalente em pacientes idosos e com bócio de longa data. Não apresenta relação fisiopatológica com a gestação ou com a doença trofoblástica.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Tireoide",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ea38b0a02db02c7f4d094603e3d8afcc2bdba560768d713c617ad6da24318963.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_f56d28a9-b07c-4524-999a-00b6dd1c81fc_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:09.575Z"
+  },
+  {
+    "id": "AJUDA_f573c8e3-075e-4caf-be0f-f74472ed943e",
+    "originalId": "f573c8e3-075e-4caf-be0f-f74472ed943e",
+    "statement": "Paciente masculino, de 55 anos, previamente hígido, consultou por quadro de dor abdominal no hipocôndrio direito e icterícia. Informou ter retornado, há 2 semanas, de viagem pela Cordilheira dos Andes. Ao exame físico, encontrava-se afebril e com sinais vitais estáveis. Exames laboratoriais mostraram as seguintes alterações: AST de 167 UI/l, ALT de 142 UI/l e bilirrubina total de 4,5 mg/dl (bilirrubina direta de 3,9 mg/dl). Não se registrou alteração ao hemograma. À ultrassonografia abdominal, foram identificados cálculo de 2 cm no infundíbulo da vesícula biliar e parede da vesícula medindo 5 mm, além de dilatação do ducto biliar principal (1,2 cm). Qual a principal hipótese diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colecistite aguda, devido à obstrução do ducto cístico pelo cálculo biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome de Mirizzi, causada pela compressão do ducto hepático comum por um cálculo impactado junto ao ducto cístico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hepatite viral aguda, resultante de processo infeccioso contraído em viagem recente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hepatite aguda alcóolica, precipitada por abuso de bebidas destiladas em viagem recente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão apresenta um paciente com quadro de icterícia obstrutiva (predomínio de bilirrubina direta) e dor em hipocôndrio direito. Os achados fundamentais para o diagnóstico estão na ultrassonografia: um cálculo de grande dimensão (2 cm) impactado no infundíbulo da vesícula biliar e a dilatação do ducto biliar principal (1,2 cm), o que indica uma interrupção do fluxo biliar extra-hepático.\n\nAlternativa a) Incorreta. A colecistite aguda clássica ocorre pela obstrução do ducto cístico, levando à inflamação e ao espessamento da parede da vesícula. Embora o paciente apresente parede de 5 mm, a colecistite isolada não explica a icterícia significativa (bilirrubina total de 4,5 mg/dl) nem a dilatação do ducto biliar principal. A icterícia na colecistite aguda costuma ser leve e sem dilatação da via biliar principal, a menos que existam complicações.\n\nAlternativa b) Correta. A Síndrome de Mirizzi ocorre quando um cálculo impactado no infundíbulo da vesícula ou no ducto cístico exerce uma compressão mecânica extrínseca sobre o ducto hepático comum. Essa compressão, associada ao processo inflamatório local, obstrui a drenagem biliar, resultando em icterícia obstrutiva e dilatação das vias biliares acima do ponto de compressão. O quadro clínico de dor e icterícia, associado aos achados de imagem (cálculo no infundíbulo + dilatação ductal), é a descrição clássica desta síndrome.\n\nAlternativa c) Incorreta. Nas hepatites virais agudas, o dano é hepatocelular e não obstrutivo mecânico. Laboratorialmente, espera-se uma elevação acentuada das transaminases (AST e ALT), geralmente acima de 1.000 UI/l, o que não condiz com os valores de 167 e 142 UI/l apresentados. Além disso, a ultrassonografia não mostraria dilatação de vias biliares em hepatites virais.\n\nAlternativa d) Incorreta. A hepatite alcoólica pode cursar com dor abdominal e icterícia, e frequentemente apresenta a relação AST maior que ALT (como no caso). No entanto, os níveis de transaminases estão baixos para um quadro agudo grave e, o mais importante, a presença de dilatação da via biliar principal no exame de imagem aponta diretamente para uma etiologia obstrutiva mecânica, descartando o diagnóstico de doença puramente parenquimatosa.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:09.575Z"
+  },
+  {
+    "id": "AJUDA_f57a700f-bc28-40c9-99c1-df766900c625",
+    "originalId": "f57a700f-bc28-40c9-99c1-df766900c625",
+    "statement": "RN de 5 dias, apresenta febre alta, irritabilidade e dificuldade para se alimentar. No exame físico, observa-se hipotonia e fontanela tensa. A amamentação se reduziu e a criança demonstra cianose leve. O exame de líquor revela aspecto turvo, com pleocitose de 1500 células/mm³ predominantes polimorfonucleares, elevada proteína (150 mg/dL) e glicose baixa (30 mg/dL). Diante desse quadro, qual o esquema antimicrobiano indicado para o tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vancomicina e Ceftriaxona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vancomicina e Cefotaxima.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ampicilina e Vancomicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Meropenem e Piperacilina com Tazobactam.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ampicilina e Cefotaxima.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do Quadro Clínico:\nO paciente é um recém-nascido (RN) de 5 dias com sinais claros de sepse e meningite neonatal (febre, irritabilidade, dificuldade de sucção, fontanela tensa e hipotonia). O exame de líquor confirma o diagnóstico de meningite bacteriana, apresentando pleocitose com predomínio de polimorfonucleares, hiperproteinorraquia e hipoglicorraquia. No período neonatal (0 a 28 dias), os principais agentes etiológicos envolvidos são o Streptococcus agalactiae (Grupo B), a Escherichia coli (e outros Gram-negativos entéricos) e a Listeria monocytogenes.\n\nExplicação das Alternativas:\n\na) Incorreta. A Ceftriaxona é contraindicada no período neonatal, especialmente em RNs com menos de 28 dias. Ela compete com a bilirrubina pelos sítios de ligação na albumina, aumentando o risco de kernicterus (encefalopatia por bilirrubina), além de poder causar precipitação biliar (lama biliar). A Vancomicina não é a droga de primeira escolha para o tratamento empírico comunitário nesta faixa etária.\n\nb) Incorreta. Embora a Cefotaxima cubra bem Gram-negativos e o Estreptococo do Grupo B, este esquema carece da Ampicilina, que é fundamental para a cobertura da Listeria monocytogenes e do Enterococcus, patógenos importantes no primeiro mês de vida.\n\nc) Incorreta. A Ampicilina cobre Listeria e GBS, mas a Vancomicina não oferece a cobertura necessária para os bacilos Gram-negativos entéricos (como a E. coli), que são causas frequentes de meningite neonatal. Para isso, seria necessário associar um aminoglicosídeo (como Gentamicina) ou uma cefalosporina de terceira geração (como Cefotaxima).\n\nd) Incorreta. Este esquema utiliza antibióticos de espectro excessivamente amplo (carbapenêmico e penicilina com inibidor de betalactamase), geralmente reservados para infecções hospitalares graves, multirresistentes ou refratárias ao tratamento inicial. Não é a recomendação de primeira linha para meningite neonatal comunitária.\n\ne) Correta. Este é o esquema clássico para meningite bacteriana no período neonatal. A Ampicilina é incluída obrigatoriamente para cobrir Listeria monocytogenes e Enterococos. A Cefotaxima (uma cefalosporina de terceira geração) é o substituto ideal para a ceftriaxona no RN, pois oferece excelente penetração no sistema nervoso central e cobertura contra Gram-negativos e Estreptococos do Grupo B, sem os riscos de toxicidade biliar e kernicterus associados à ceftriaxona. Outra opção aceitável seria a associação de Ampicilina com Gentamicina.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Cuidados Neonatais",
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:09.575Z"
+  },
+  {
+    "id": "AJUDA_f57e0164-30f6-447a-b1a7-833a7a82815f",
+    "originalId": "f57e0164-30f6-447a-b1a7-833a7a82815f",
+    "statement": "A Organização Mundial de Saúde tem expressado preocupação com a assistência ao parto, e recomendado práticas úteis a serem estimuladas em todos os serviços que prestam auxílio à parturiente. Dentre essas práticas, destaca(m)-se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O monitoramento cuidadoso do progresso do trabalho de parto, por meio do uso do partograma e do concepto, através de ausculta intermitente dos batimentos cardíacos fetais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A correção da dinâmica uterina com a utilização de ocitocina e o monitoramento eletrônico da vitalidade fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A amniotomia precoce no primeiro estágio e a pressão no fundo uterino durante o segundo estágio do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A transferência rotineira da parturiente para outra sala e o uso da posição de litotomia, com ou sem estribos, no segundo estágio do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Essa questão aborda as diretrizes da Organização Mundial da Saúde (OMS) para uma experiência de parto positiva, focando na desmedicalização e na promoção de práticas baseadas em evidências científicas que garantam a segurança e o protagonismo da mulher.\n\nAlternativa A (Correta): O uso do partograma é uma ferramenta essencial recomendada pela OMS para acompanhar a evolução da dilatação cervical e a descida da apresentação fetal, permitindo a detecção precoce de distócias. Da mesma forma, a ausculta intermitente dos batimentos cardíacos fetais (BCF) é o padrão-ouro para o monitoramento da vitalidade fetal em gestações de baixo risco, pois apresenta a mesma eficácia que o monitoramento eletrônico contínuo na detecção de sofrimento fetal, mas com taxas significativamente menores de intervenções desnecessárias, como cesarianas e partos operatórios.\n\nAlternativa B (Incorreta): O uso rotineiro de ocitocina para acelerar o trabalho de parto (condução) e o monitoramento eletrônico fetal contínuo (cardiotocografia) em gestantes de baixo risco não são recomendados como práticas de rotina. A OMS alerta contra a intervenção excessiva em processos fisiológicos. A ocitocina deve ser reservada para casos de hipossistolia comprovada, e a monitorização eletrônica contínua é indicada apenas para gestações de alto risco ou quando surgem alterações na ausculta intermitente.\n\nAlternativa C (Incorreta): Ambas as práticas citadas são desaconselhadas. A amniotomia precoce (ruptura artificial das membranas) não deve ser feita de rotina, pois aumenta o risco de infecção e compressão do cordão umbilical sem benefícios claros no tempo de parto. Já a pressão no fundo uterino (Manobra de Kristeller) é uma prática considerada prejudicial e perigosa, associada a riscos graves como ruptura uterina, lesões do assoalho pélvico e trauma fetal.\n\nAlternativa D (Incorreta): A transferência rotineira da parturiente de uma sala de pré-parto para uma sala de parto no momento do expulsivo gera estresse desnecessário e interrompe o foco da mulher. A recomendação atual é que o parto ocorra em ambientes acolhedores onde a mulher permaneça no mesmo local (quartos PPP: Pré-parto, Parto e Puerpério). Além disso, a posição de litotomia (supina com pernas nos estribos) é desencorajada; a OMS recomenda que a mulher tenha liberdade de movimento e escolha a posição que lhe for mais confortável, incentivando posições verticalizadas que facilitam a descida fetal.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:09.575Z"
+  },
+  {
+    "id": "AJUDA_f580a558-034d-4fcb-9d40-162a8ef0e99f",
+    "originalId": "f580a558-034d-4fcb-9d40-162a8ef0e99f",
+    "statement": "O desenvolvimento infantil e a plasticidade cerebral são maiores nos primeiros anos de vida, período onde diversos fatores podem agir de forma positiva ou negativa. Assim, os programas voltados para o desenvolvimento na primeira infância, particularmente os primeiros 1000 dias, priorizando a saúde, nutrição e estimulação precoce, trazem grandes benefícios em termos de saúde pública e desenvolvimento global. Dentre os benefícios diretos da intervenção precoce encontram-se-se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a diminuição da prevalência de mortes por causas externas e por infecções.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o incremento na capacidade de aprendizagem e reprodutiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o aumento na estatura final e no desenvolvimento cognitivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a aquisição precoce das habilidades motoras e sensoriais.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do Tema:\nA questão aborda a importância dos primeiros 1000 dias de vida, que compreendem o período da gestação até os dois anos de idade. Este é o intervalo de maior plasticidade cerebral, no qual o sistema nervoso central apresenta sua maior capacidade de moldar-se em resposta a estímulos externos, nutrição e cuidados de saúde. As intervenções nesse período visam otimizar o potencial biológico e funcional da criança.\n\nAlternativa (a) Incorreta: Programas de saúde pública que melhoram a nutrição e o saneamento podem reduzir a mortalidade infantil por doenças infecciosas. No entanto, mortes por causas externas (como acidentes e violência) estão mais relacionadas a políticas de segurança e vigilância do que propriamente ao desenvolvimento neuropsicomotor e à plasticidade cerebral mencionados no enunciado.\n\nAlternativa (b) Incorreta: O incremento na capacidade de aprendizagem é um dos principais benefícios da estimulação precoce. Entretanto, não existe correlação direta entre as intervenções de desenvolvimento na primeira infância e o aumento da capacidade reprodutiva. O desenvolvimento dos sistemas reprodutores segue uma cronologia hormonal distinta, menos dependente da estimulação sensorial precoce.\n\nAlternativa (c) Incorreta: Embora o desenvolvimento cognitivo seja um benefício direto e esperado, o aumento na estatura final não é o foco direto da estimulação precoce e da plasticidade cerebral. A estatura final é multifatorial, dependendo fortemente da genética e de um suporte nutricional e hormonal contínuo ao longo de toda a infância e adolescência, não apenas dos primeiros 1000 dias.\n\nAlternativa (d) Correta: Esta alternativa identifica os benefícios mais diretos e imediatos da estimulação neuropsicomotora. Durante os primeiros anos, o cérebro está em fase de intensa mielinização e formação de sinapses. Intervenções que priorizam saúde, nutrição e estímulos adequados facilitam a aquisição das habilidades motoras (como sentar, andar e manipular objetos) e sensoriais (processamento de visão, audição e tato), que servem de base para funções executivas mais complexas no futuro.\n\nConclusão: A letra (d) está correta, pois a aquisição de marcos motores e sensoriais é o reflexo clínico direto da plasticidade cerebral e da resposta do organismo aos estímulos recebidos na janela crítica do desenvolvimento.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:09.575Z"
+  },
+  {
+    "id": "AJUDA_f5834530-295f-4a9f-8f43-0c25d2e16c66",
+    "originalId": "f5834530-295f-4a9f-8f43-0c25d2e16c66",
+    "statement": "Paciente masculino, 60 anos, portador de tumor de antro obstrutivo, apresentou oito episódios de vômitos nas últimas 12h, cursando com agitação, palidez cutânea, sudorese profusa. Não há registro de micção nas últimas 18h. Os sinais aferidos são FR 24ipm, saturação de O2 90%, FC=110bpm e PA 86x58mmHg. Os exames laboratoriais solicitados apresentam os seguintes resultados: leucócitos 13600/mm³ com 90% e segmentado; hemoglobina 10g/dl e hematócrito 29%; gasometria arterial com PH 7.29, PaCO2= 29mmHg, PaO2= 68mmHg, bicarbonato 16mEq/l. BE -7, SO2=92%. Diante do exposto, a conduta inicial mais adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "aplicar ringer com lactato 500ml EV em 2h.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "iniciar noradrenalina em BIC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar a reposição e usar bicarbonato de sódio 8,4% 60ml EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "efetuar o posicionamento de sonda nasogástrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "proceder à reposição de SF0,9% 1000ml EV em 1h.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta um quadro de obstrução de saída gástrica (tumor de antro) com vômitos incoercíveis. Clinicamente, ele está em choque hipovolêmico, evidenciado pela hipotensão (86 x 58 mmHg), taquicardia (110 bpm), agitação, palidez, sudorese e oligúria (18 h sem urinar).\n\nInterpretação da gasometria:\nEmbora vômitos gástricos costumem causar alcalose metabólica hipoclorêmica, este paciente apresenta acidose metabólica (pH 7,29 e bicarbonato 16 mEq/L). Isso ocorre porque o estado de choque é tão grave que a hipoperfusão tecidual gerou uma acidose lática secundária, que se sobrepôs à perda de ácido clorídrico pelo vômito. Além disso, há hipoxemia (PaO2 68 mmHg e SatO2 90%).\n\nAnálise das alternativas:\n\na) CORRETA. A prioridade absoluta é a reposição volêmica para tratar o choque. O Ringer com Lactato é considerado um cristaloide balanceado. Em situações de acidose metabólica instalada, ele é preferível ao Soro Fisiológico 0,9%, pois este último possui uma concentração suprafisiológica de cloro, o que pode agravar a acidose (acidose hiperclorêmica). Embora a velocidade descrita na alternativa (500 ml em 2 h) seja considerada lenta para um paciente em choque franco, entre as opções apresentadas, a escolha do fluido balanceado é o fator determinante para o gabarito.\n\nb) INCORRETA. A noradrenalina (vasopressor) é indicada no choque que não responde à reposição volêmica inicial ou em choques específicos (como o neurogênico ou séptico grave). Neste caso, o componente é claramente hipovolêmico/obstrutivo, sendo a reposição de fluidos a primeira medida.\n\nc) INCORRETA. O uso de bicarbonato de sódio é controverso e geralmente reservado para acidoses metabólicas graves com pH inferior a 7,1 ou em situações específicas (como falência renal ou intoxicações). Com um pH de 7,29, a conduta é tratar a causa-base (hipovolemia) para que o próprio organismo compense o distúrbio.\n\nd) INCORRETA. A passagem de sonda nasogástrica (SNG) é fundamental para descompressão gástrica e conforto do paciente com tumor obstrutivo. No entanto, diante de sinais de choque e instabilidade hemodinâmica, a estabilização circulatória e respiratória precede procedimentos de suporte local.\n\ne) INCORRETA. O Soro Fisiológico 0,9% (SF) é um cristaloide que pode ser usado na reanimação volêmica, mas devido ao seu alto teor de cloro (154 mEq/L), ele favorece o surgimento de acidose hiperclorêmica. Como o paciente já apresenta uma acidose metabólica importante, o Ringer com Lactato torna-se a opção mais fisiológica e adequada. Além disso, a alternativa A foi eleita como o gabarito oficial pela escolha do fluido.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:14:09.575Z"
+  }
+]

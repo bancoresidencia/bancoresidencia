@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_807c4e72-fcef-4c67-b6ef-e03975fe74c3",
+    "originalId": "807c4e72-fcef-4c67-b6ef-e03975fe74c3",
+    "statement": "Um jovem de 21 anos procura atendimento após sofrer agressão física em um evento festivo. Relata que foi insultado e golpeado após trocar carícias com seu namorado em público. Apresenta ferimento leve na face e solicita avaliação médica. Considerando a natureza da agressão, qual a conduta correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não realizar notificação, por se tratar de violência comunitária em adulto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Notificar compulsoriamente destacando a orientação sexual como dado epidemiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar a procurar delegacia e notificar apenas se houver consentimento formal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Notificar apenas se houver laudo de corpo de delito confirmando agressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Realizar notificação compulsória por violência interpessoal, registrando motivação LGBTfóbica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O tema central desta questão é a notificação compulsória de violência no sistema de saúde brasileiro. No Brasil, a violência interpessoal e autoprovocada é um evento de notificação obrigatória em todos os serviços de saúde, conforme estabelecido pela Portaria de Consolidação nº 4/2017 do Ministério da Saúde.\n\nAlternativa a: Incorreta. A violência interpessoal, independentemente de ocorrer no âmbito doméstico ou comunitário, deve ser notificada pelo profissional de saúde. Não existe exclusão por ser uma agressão contra adulto em ambiente público; a vigilância epidemiológica visa mapear todos os tipos de violência para fins de políticas públicas.\n\nAlternativa b: Incorreta. Embora a orientação sexual seja um dado epidemiológico relevante, a alternativa está incompleta e é menos precisa que a letra E. A conduta correta envolve a notificação do evento como violência interpessoal dentro do sistema de informação específico.\n\nAlternativa c: Incorreta. A notificação compulsória para fins de vigilância em saúde é um dever do profissional e uma ação de saúde pública, não dependendo do consentimento formal do paciente adulto lúcido para ser realizada no sistema de saúde. O que depende da vontade do paciente é a formalização da denúncia na delegacia de polícia, que é uma esfera jurídica distinta da notificação epidemiológica.\n\nAlternativa d: Incorreta. A notificação de violência em saúde deve ser feita diante da suspeita ou confirmação clínica. O profissional de saúde não deve aguardar investigações policiais ou laudos periciais (como o de corpo de delito) para cumprir seu papel de vigilância epidemiológica.\n\nAlternativa e: Correta. O caso descreve uma agressão física motivada por preconceito (homofobia/LGBTfobia). A conduta médica correta, além do atendimento clínico do ferimento, é realizar a notificação compulsória por violência interpessoal. Na ficha de notificação do SINAN (Sistema de Informação de Agravos de Notificação), existem campos específicos para registrar a motivação da violência, incluindo a LGBTfobia, o que é essencial para o monitoramento de crimes de ódio e proteção de minorias.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:23.416Z"
+  },
+  {
+    "id": "AJUDA_80872211-31f4-4320-ab99-efd861f4ccd1",
+    "originalId": "80872211-31f4-4320-ab99-efd861f4ccd1",
+    "statement": "Considerando o processo de crescimento físico na adolescência, em especial o estirão de crescimento puberal, quais são as características em cada sexo, as diferenças entre eles e o impacto deste processo na estatura final dos adolescentes?",
+    "options": [
+      {
+        "id": "A",
+        "text": "no sexo masculino geralmente se inicia e culmina em pico de velocidade de crescimento antes do feminino, resultando em uma estatura final média maior, devido a uma fase de crescimento mais prolongada e intensa impulsionada primariamente por androgênios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "no sexo feminino, embora de menor magnitude total em termos de ganho de altura, tende a ter uma duração mais prolongada do que o masculino, contribuindo para a maturação esquelética precoce e o fechamento epifisário mais gradual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ambos os sexos atingem o pico de velocidade de crescimento aproximadamente na mesma idade cronológica, mas no sexo masculino é de maior intensidade e duração, impulsionado, predominantemente por estrogênios e hormônio do crescimento o que explica a maior estatura final.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "no sexo feminino ocorre mais cedo, em média, 2 anos antes que no masculino, e é tipicamente de menor magnitude total de ganho em altura, mas com um pico de velocidade acentuado; o estirão masculino é mais tardio, de maior magnitude e duração, e a maior estatura final dos homens é atribuída não apenas ao estirão mais intenso, mas também a um período mais longo de crescimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A alternativa correta é a (d).\n\nExplicação detalhada:\n\nO crescimento físico na adolescência é marcado por mudanças significativas na velocidade e na magnitude do ganho estatural, apresentando diferenças cruciais entre os sexos que determinam a estatura final na vida adulta.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. No sexo masculino, o estirão ocorre mais tarde do que no feminino, e não antes. As meninas iniciam o estirão de crescimento, em média, dois anos antes dos meninos. Embora os androgênios tenham papel no crescimento masculino, o ganho de estatura final maior nos homens deve-se principalmente ao maior tempo de crescimento pré-puberal e a um pico de velocidade mais vigoroso.\n\nAlternativa b) Incorreta. O crescimento no sexo feminino não é mais prolongado. Pelo contrário, a maturação esquelética e o fechamento das epífises ocorrem de forma mais precoce e acelerada nas meninas devido à ação do estrogênio. O sexo masculino cresce por um período total maior, pois o estirão demora mais a começar, permitindo um ganho estatural adicional na fase de infância/pré-puberal.\n\nAlternativa c) Incorreta. A idade cronológica do pico de velocidade de crescimento é distinta: ocorre por volta dos 11,5 a 12 anos nas meninas e dos 13,5 a 14 anos nos meninos. Embora o Hormônio do Crescimento (GH) e o estrogênio (este último em ambos os sexos, inclusive na conversão da testosterona em homens para o fechamento epifisário) sejam fundamentais, a idade de início é o principal diferencial.\n\nAlternativa d) Correta. Esta alternativa descreve com exatidão a fisiologia do crescimento puberal. O estirão feminino é mais precoce (cerca de 2 anos antes do masculino) e menos intenso em termos de velocidade absoluta. Os meninos iniciam o estirão mais tarde (geralmente no estágio G3 ou G4 de Tanner), o que lhes garante cerca de dois anos extras de crescimento pré-puberal (fase em que se cresce cerca de 5 a 6 cm por ano). Somado a isso, o pico de velocidade de crescimento (PVC) dos meninos é mais alto (cerca de 9,5 cm/ano contra 8,3 cm/ano nas meninas). Portanto, a maior estatura final masculina resulta da combinação de uma fase pré-puberal mais longa e de um estirão mais intenso e duradouro.\n\nResumo dos marcos:\n- Sexo feminino: O pico de crescimento ocorre cedo, geralmente no estágio M2-M3 de Tanner, antecedendo a menarca.\n- Sexo masculino: O pico de crescimento é tardio, ocorrendo geralmente nos estágios G4 de Tanner.\n- Diferença de estatura final: A média de 13 cm de diferença entre homens e mulheres deve-se a aproximadamente 10 cm ganhos pelo maior tempo de crescimento pré-púbere nos meninos e 3 cm ganhos pela maior intensidade do estirão masculino.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Puberdade",
+      "Crescimento"
+    ],
+    "difficulty": 36.023878733231655,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:23.416Z"
+  },
+  {
+    "id": "AJUDA_808a1ba7-44b4-40ec-a692-b683f956907a",
+    "originalId": "808a1ba7-44b4-40ec-a692-b683f956907a",
+    "statement": "Paciente jovem de 22 anos, portador de diabetes mellitus tipo 1 há 6 anos, chega ao pronto-socorro com história de náuseas, vômitos e dor abdominal difusa há 12 horas. Refere poliúria nos últimos dias. Ao exame físico: PA: 94 x 60 mmHg; FC: 118 bpm; FR: 32 irpm (respiração de Kussmaul); temperatura axilar: 37,5 °C; com mucosas secas, pulsos periféricos filiformes.\nApresenta nos exames complementares iniciais: glicemia: 468 mg/dL; gasometria arterial com pH: 7,12 e HCO₃⁻: 9 mEq/L; sódio: 135 mEq/L; potássio: 3,1 mEq/L e cetonemia: positiva.\n\nQual é o diagnóstico associado a esse quadro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estado hiperosmolar hiperglicêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cetoacidose diabética.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pancreatite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sepse abdominal com acidose metabólica láctica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO: Cetoacidose Diabética (CAD).\n\nA questão apresenta um quadro clássico de cetoacidose diabética, uma complicação metabólica aguda grave, mais comum em pacientes com diabetes mellitus tipo 1 (DM1). O diagnóstico baseia-se na tríade: hiperglicemia, acidose metabólica com hiato aniônico aumentado e cetonemia/cetonúria.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Incorreta. O Estado Hiperosmolar Hiperglicêmico (EHH) é mais frequente no paciente com DM2. Caracteriza-se por glicemias muito elevadas (geralmente acima de 600 mg/dL), osmolaridade plasmática superior a 320 mOsm/kg e ausência de acidose metabólica significativa ou cetonemia importante. O paciente do caso apresenta acidose grave (pH 7,12) e cetonemia positiva, o que direciona para CAD.\n\nb) Correta. O paciente preenche todos os critérios diagnósticos para CAD:\n1. Glicemia > 250 mg/dL (na questão, 468 mg/dL).\n2. Acidose metabólica: pH < 7,30 ou bicarbonato < 18 mEq/L (na questão, pH 7,12 e HCO3 9).\n3. Cetonemia ou cetonúria positiva (cetonemia positiva no relato).\nAlém disso, apresenta sinais clínicos típicos como a respiração de Kussmaul (hiperventilação profunda para compensar a acidose) e dor abdominal, que é um sintoma comum na CAD devido à acidose e ao atraso no esvaziamento gástrico. Um ponto de atenção no manejo desse paciente seria o potássio de 3,1 mEq/L; apesar da acidose, o potássio corporal total está baixo, e a reposição deve ser iniciada antes da insulina para evitar arritmias.\n\nc) Incorreta. Embora a pancreatite aguda cause dor abdominal e náuseas, ela não justifica isoladamente a acidose metabólica grave com cetonemia e o padrão respiratório de Kussmaul em um paciente com DM1. Vale lembrar que a própria CAD pode cursar com aumento inespecífico de amilase e lipase.\n\nd) Incorreta. A sepse abdominal poderia causar acidose metabólica láctica e dor abdominal, mas a história de DM1, a poliúria precedente, a cetonemia positiva e o nível de glicemia apontam diretamente para uma descompensação glicêmica primária (CAD). A sepse pode ser o gatilho para a CAD, mas o diagnóstico do quadro metabólico apresentado é cetoacidose.\n\nGABARITO: LETRA B.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus Tipo 1"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:23.416Z"
+  },
+  {
+    "id": "AJUDA_8096e8f4-dbc2-4bce-b77b-2f56c8f58a4a",
+    "originalId": "8096e8f4-dbc2-4bce-b77b-2f56c8f58a4a",
+    "statement": "Paciente masculino, 26 anos, com história de uso frequente de anti-inflamatórios não esteroides, vem à emergência por melena iniciada há 4h. Ao exame físico da chegada, o abdome não estava distendido, a frequência cardíaca era de 98bpm e a pressão arterial de 135/69mmHg. Sobre o caso descrito, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não estão disponíveis escores para avaliação de desfechos clínicos como risco de ressangramento nos pacientes com hemorragia digestiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A endoscopia digestiva alta é o exame mais importante a ser realizado nesse caso e deve ser realizada dentro das primeiras 6h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Melena é sinal de sangramento digestivo baixo e tem várias causas prováveis, entre elas esofagite erosiva, gastrite erosiva, lacerações de Mallory-Weiss, úlcera péptica e varizes esofágicas (as duas últimas são as duas causas menos frequentes de sangramento).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A mensuração da frequência cardíaca e a da pressão arterial são importantes para a avaliação inicial do sangramento gastrointestinal. Em contraste, a hemoglobina pode não auxiliar na avaliação inicial por não apresentar usualmente queda imediata no sangramento agudo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta. Existem diversos escores validados e amplamente utilizados na prática clínica para avaliar o risco de desfechos em pacientes com hemorragia digestiva alta. Os principais são o Escore de Glasgow-Blatchford, utilizado na admissão para identificar pacientes de baixo risco que podem receber tratamento ambulatorial, e o Escore de Rockall, que avalia o risco de ressangramento e mortalidade incorporando achados endoscópicos.\n\nAlternativa b) Incorreta. Embora a endoscopia digestiva alta (EDA) seja o exame de escolha para o diagnóstico e tratamento, o prazo recomendado pela maioria dos consensos internacionais para a sua realização é dentro das primeiras 24 horas após a admissão. A realização em menos de 6 a 12 horas é geralmente reservada para casos de instabilidade hemodinâmica grave ou suspeita de sangramento por varizes esofágicas, o que não parece ser o caso do paciente, que apresenta estabilidade hemodinâmica (frequência cardíaca de 98 bpm e pressão arterial normal).\n\nAlternativa c) Incorreta. A melena (fezes negras, pastosas e fétidas) é um sinal clássico de hemorragia digestiva alta (HDA), ocorrendo devido à digestão do sangue pela microbiota intestinal e ação do ácido gástrico. Além disso, a afirmação de que a úlcera péptica é uma das causas menos frequentes está errada; a úlcera péptica é, na verdade, a causa mais comum de hemorragia digestiva alta em adultos no mundo todo.\n\nAlternativa d) Correta. Esta alternativa descreve corretamente a fisiopatologia do sangramento agudo. Na fase inicial de uma hemorragia, o paciente perde sangue total (plasma e células na mesma proporção), portanto, a concentração de hemoglobina e o hematócrito podem permanecer inalterados nos primeiros momentos. A queda desses níveis só ocorre após a hemodiluição, que acontece quando o organismo desloca fluido do espaço extravascular para o intravascular ou quando o paciente recebe reposição volêmica com cristaloides. Por isso, os parâmetros hemodinâmicos (frequência cardíaca e pressão arterial) são muito mais sensíveis e confiáveis para estimar a gravidade da perda volêmica imediata.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:23.416Z"
+  },
+  {
+    "id": "AJUDA_809c26fe-2dd0-4b3e-b769-84917e46604c",
+    "originalId": "809c26fe-2dd0-4b3e-b769-84917e46604c",
+    "statement": "Um paciente de 55 anos de idade, com história de hipertensão não controlada e obesidade, deu entrada no pronto-socorro com quadro de dor torácica em aperto, sudorese e dificuldade respiratória. Ao exame físico, apresentou FC = 110 bpm, FR = 22 irpm e SatO2 = 92%. \n\nQual é a conduta inicial mais indicada para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar medicação anti-hipertensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar AAS e clopidogrel e realizar eletrocardiograma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar exames laboratoriais e aguardar evolução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar para terapia de reabilitação cardiovascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso: O paciente apresenta um quadro clínico de alta probabilidade para Síndrome Coronariana Aguda (SCA), considerando a dor torácica em aperto associada a sudorese e a presença de fatores de risco importantes, como obesidade e hipertensão. No pronto-socorro, o manejo da dor torácica deve ser imediato para evitar danos miocárdicos irreversíveis.\n\nAlternativa a: Está incorreta. A prioridade não é o controle pressórico isolado. A hipertensão pode ser uma resposta fisiológica à dor e ao estresse agudo. O foco deve ser o diagnóstico e tratamento da possível isquemia ou infarto. Em alguns casos, baixar a pressão bruscamente sem conhecer a causa da dor pode até prejudicar a perfusão coronariana.\n\nAlternativa b: Está correta. De acordo com as diretrizes de cardiologia nacionais e internacionais, todo paciente com suspeita de SCA deve realizar um eletrocardiograma em até 10 minutos após a chegada ao serviço de saúde. O AAS (ácido acetilsalicílico) é a medicação de escolha inicial por reduzir comprovadamente a mortalidade. O clopidogrel é adicionado para compor a terapia antiplaquetária dupla, que é o padrão no manejo inicial de eventos coronarianos.\n\nAlternativa c: Está incorreta. Embora se deva solicitar exames laboratoriais, como os marcadores de necrose miocárdica (troponina), a conduta de aguardar a evolução é inadequada em situações de emergência. O tempo é um fator crítico no infarto (conceito de que tempo é músculo), e o tratamento deve ser iniciado imediatamente com base na suspeita clínica e nos achados do eletrocardiograma.\n\nAlternativa d: Está incorreta. A reabilitação cardiovascular é indicada apenas após a resolução da fase aguda do evento, visando à recuperação funcional e prevenção secundária em ambiente ambulatorial. Não existe indicação de reabilitação para um paciente que acaba de dar entrada no pronto-socorro com dor torácica ativa.\n\nO gabarito oficial é a letra b.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:23.416Z"
+  },
+  {
+    "id": "AJUDA_80a2243a-fa83-4556-beeb-c12c80fcb836",
+    "originalId": "80a2243a-fa83-4556-beeb-c12c80fcb836",
+    "statement": "Um menino com 7 anos de idade apresenta febre e tosse persistente há 18 dias. A radiografia de tórax evidenciou derrame pleural. Na ultrassonografia de tórax encontra-se derrame pleural estimado de 180 mL de líquido livre, que foi puncionado e enviado ao laboratório. O resultado da análise do líquido pleural foi: 122 células nucleadas, 78% de linfócitos, 20% de neutrófilos, glicose 45, pH 7,2 e desidrogenase lática (LDH) aumentada. A etiologia mais provável do derrame pleural nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Staphylococcus aureus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Mycoplasma pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Streptococcus pneumoniae.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mycobacterium tuberculosis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "vírus COVID-19.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro clínico apresenta um menino de 7 anos com sintomas respiratórios (febre e tosse) de caráter subagudo, com 18 dias de evolução. Os dados fundamentais para a resolução da questão estão na análise do líquido pleural: trata-se de um exsudato (LDH aumentado) com acentuada predominância de linfócitos (78%) e glicose consumida (45 mg/dL). O tempo de evolução prolongado somado ao perfil linfocítico do derrame pleural direciona o diagnóstico.\n\nALTERNATIVA A - INCORRETA: A pneumonia e o derrame pleural causados por Staphylococcus aureus costumam ter uma evolução aguda, fulminante e com sinais de gravidade importante (toxemia). O líquido pleural típico seria um empiema ou um derrame parapneumônico com predominância de neutrófilos (polimorfonucleares) e contagem celular muito mais elevada, o que não condiz com os 78% de linfócitos relatados.\n\nALTERNATIVA B - INCORRETA: O Mycoplasma pneumoniae causa pneumonia atípica e pode, em alguns casos, cursar com derrame pleural. No entanto, o derrame costuma ser de pequena monta e o quadro clínico, embora possa ser prolongado, não é a causa clássica de derrame pleural linfocítico com glicose baixa em crianças, sendo a tuberculose uma hipótese muito mais robusta para esse achado.\n\nALTERNATIVA C - INCORRETA: O Streptococcus pneumoniae (pneumococo) é o principal agente das pneumonias bacterianas na infância. O derrame pleural associado a ele é o parapneumônico típico, que se caracteriza por uma instalação aguda e predomínio de neutrófilos no líquido pleural. Dezoito dias de evolução sem tratamento adequado para pneumococo geralmente resultariam em melhora espontânea ou complicação para empiema franco, diferente do perfil linfocítico apresentado.\n\nALTERNATIVA D - CORRETA: O diagnóstico mais provável é a tuberculose pleural (causada pelo Mycobacterium tuberculosis). Esta condição é caracterizada por um quadro subagudo ou crônico de febre e tosse. O líquido pleural é classicamente um exsudato com predominância de linfócitos (quase sempre acima de 75%) e escassez de células mesoteliais. A glicose pode estar baixa ou no limite inferior da normalidade. No Brasil, a tuberculose deve ser a primeira hipótese diagnóstica em qualquer paciente com derrame pleural exsudativo de predomínio linfocítico e evolução superior a duas semanas.\n\nALTERNATIVA E - INCORRETA: A COVID-19 em pediatria manifesta-se predominantemente como síndrome gripal aguda ou, em casos graves, como pneumonia viral difusa ou Síndrome Inflamatória Multissistêmica Pediátrica (SIM-P). O derrame pleural isolado com características linfocíticas e evolução de 18 dias não é uma apresentação típica ou frequente desta infecção viral.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Derrame Pleural",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:23.416Z"
+  },
+  {
+    "id": "AJUDA_80c85890-501f-4f7b-8eb6-ca85d775800f",
+    "originalId": "80c85890-501f-4f7b-8eb6-ca85d775800f",
+    "statement": "Escolar, sete anos, previamente saudável, residente em área rural, é internado com relato materno de há quatro meses com febre intermitente, emagrecimento e adinamia. Exame físico: emagrecido, hipocorado ++/4+, anictérico, eupneico, perfusão capilar algo lentificada. ACV e AR sem alterações. Abdome: globoso, edema de parede, fígado: 8 cm do RCD, baço: 10 cm do RCE. Edema de MMII ++/4+. Exames laboratoriais de internação: pancitopenia, enzimas hepáticas elevadas, albumina diminuída, hiperglobulinemia, principalmente às custas da imunoglobulina G. É indicada antibioticoterapia por via venosa, uma vez que o paciente apresenta quadro febril com neutropenia grave. Sabe-se que a infecção bacteriana secundária é uma das causas de óbito nos quadros graves de leishmaniose visceral. Assim, o pediatra deve indicar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cefepime.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Clindamicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Vancomicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Metronidazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Amoxacilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A leishmaniose visceral causa uma intensa supressão da medula óssea, resultando em pancitopenia. Quando o paciente apresenta neutropenia grave (menos de 500 neutrófilos por mm³) e febre, estamos diante de uma emergência médica denominada neutropenia febril. Nesses casos, a principal preocupação é a sepse por bactérias Gram-negativas, com destaque para a *Pseudomonas aeruginosa*. O protocolo do Ministério da Saúde e as diretrizes pediátricas recomendam o início imediato de antibioticoterapia de amplo espectro por via venosa para cobrir esses patógenos.\n\nAlternativa a: Correta. O cefepime é uma cefalosporina de quarta geração. Ele é o antibiótico de escolha para o tratamento empírico da neutropenia febril porque possui excelente atividade contra uma vasta gama de bactérias Gram-positivas e, fundamentalmente, contra bacilos Gram-negativos, incluindo a *Pseudomonas aeruginosa*.\n\nAlternativa b: Incorreta. A clindamicina é eficaz contra bactérias anaeróbias e alguns Gram-positivos. No entanto, ela carece totalmente de cobertura contra os bacilos Gram-negativos aeróbios, que são os patógenos mais letais em pacientes neutropênicos em contexto de leishmaniose visceral.\n\nAlternativa c: Incorreta. A vancomicina é direcionada exclusivamente para bactérias Gram-positivas. Embora seja importante em casos específicos (como infecção de pele evidente ou choque séptico), ela nunca deve ser usada isoladamente na neutropenia febril, pois não cobre os microrganismos Gram-negativos que são a prioridade no tratamento.\n\nAlternativa d: Incorreta. O metronidazol é um antibiótico focado em bactérias anaeróbias. Ele não tem papel no tratamento empírico inicial da neutropenia febril na leishmaniose, a menos que haja uma suspeita muito específica de infecção intra-abdominal ou perianal associada, e mesmo assim, deveria estar acompanhado de um fármaco de largo espectro.\n\nAlternativa e: Incorreta. A amoxicilina é uma penicilina de espectro limitado. Ela não possui cobertura contra *Pseudomonas aeruginosa* e apresenta resistência de diversas enterobactérias. Em quadros graves de neutropenia, o uso de amoxicilina é insuficiente para garantir a sobrevivência do paciente frente a infecções secundárias.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Hepatoesplenomegalias Infecciosas",
+      "Neutropenia Febril",
+      "Antibióticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:23.416Z"
+  },
+  {
+    "id": "AJUDA_80e82e1b-9796-455e-9d2a-c09e0d33cc96",
+    "originalId": "80e82e1b-9796-455e-9d2a-c09e0d33cc96",
+    "statement": "Lactente de 2 meses, nascido a termo, sem intercorrências no parto, é levado à UBS para a primeira consulta de puericultura. A mãe apresenta a caderneta de vacinação, que mostra BCG e Hepatite B já realizadas na maternidade. De acordo com o Calendário Nacional de Vacinação do PNI (Ministério da Saúde), qual vacina contra a poliomielite deve ser administrada nessa consulta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vacina Oral contra a Poliomielite (VOP), com reforço aos 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vacina Inativada contra a Poliomielite (VIP), por via intramuscular, como primeira dose do esquema básico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Vacina Oral contra a Poliomielite (VOP) e Vacina Inativada (VIP) simultaneamente, na mesma consulta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nenhuma vacina contra a poliomielite está indicada aos 2 meses; o esquema tem início aos 4 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Vacina Oral contra a Poliomielite (VOP), em dose única aos 2 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Resposta correta: letra b.\n\nConceito central: no Calendário Nacional de Vacinação do PNI, o esquema básico contra a poliomielite usa a VIP (vacina inativada, intramuscular) aos 2, 4 e 6 meses. A VIP substituiu a VOP nas três primeiras doses do esquema básico (a substituição foi gradual a partir de 2012 e hoje é completa). A VOP (vacina oral bivalente, com vírus vivo atenuado dos tipos 1 e 3) permanece apenas nos reforços, aos 15 meses e aos 4 anos de idade. Há também campanhas de seguimento, conforme a estratégia de cada ano.\n\nPor que a VIP no esquema inicial? Ela elimina o risco de paralisia associada à vacina (poliomielite vacinal) e de poliovírus derivado da vacina, que a VOP pode causar, raramente, sobretudo na primeira dose. A VOP, por sua vez, é mantida nos reforços porque induz imunidade intestinal e interrompe a circulação do vírus selvagem.\n\nNa consulta dos 2 meses também são indicadas: pentavalente (DTP + Hib + hepatite B), pneumocócica 10-valente, rotavírus humano e, no calendário atual, meningocócica C (ou ACWY, conforme a faixa etária e a época). A BCG e a hepatite B ao nascer já foram feitas.\n\nAnálise das alternativas:\n\na) Incorreta. A primeira dose não é VOP. Além disso, o reforço da VOP é aos 15 meses e aos 4 anos, não aos 6 meses.\n\nb) Correta. VIP intramuscular aos 2 meses é a primeira dose do esquema básico, seguida de doses aos 4 e 6 meses.\n\nc) Incorreta. Não se faz esquema simultâneo VOP + VIP aos 2 meses. O esquema sequencial antigo (VIP e depois VOP) foi substituído pelo esquema só com VIP nas três primeiras doses.\n\nd) Incorreta. O esquema começa aos 2 meses, não aos 4.\n\ne) Incorreta. A VOP não é aplicada aos 2 meses, e a poliomielite exige várias doses, não dose única.\n\nResumo: VIP aos 2, 4 e 6 meses; reforços com VOP aos 15 meses e aos 4 anos.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:23.416Z"
+  },
+  {
+    "id": "AJUDA_80e8aa26-dee0-4261-a1f4-b8dea95ca516",
+    "originalId": "80e8aa26-dee0-4261-a1f4-b8dea95ca516",
+    "statement": "Mulher de 48 anos procura atendimento por episódios recorrentes de nefrolitíase nos últimos dois anos e constipação. Os exames mostram cálcio sérico total de 11,8 mg/dL, confirmado em segunda dosagem, albumina normal, creatinina de 0,8 mg/dL e fósforo de 2,3 mg/dL. Nega uso de suplementos de cálcio, vitamina D, lítio ou diuréticos tiazídicos.\nApós confirmar a hipercalcemia, qual é o exame laboratorial mais importante para iniciar a investigação etiológica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dosagem sérica de PTH intacto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Calcitonina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cintilografia das paratireoides.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Densitometria óssea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ultrassonografia cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E ABORDAGEM DA HIPERCALCEMIA\n\nO quadro clínico apresenta uma paciente de 48 anos com a tríade clássica de hipercalcemia: nefrolitíase (rins), constipação (sistema gastrointestinal) e níveis elevados de cálcio sérico (11,8 mg/dL). O fósforo baixo (2,3 mg/dL) reforça a suspeita metabólica. Diante de uma hipercalcemia confirmada, o algoritmo diagnóstico exige que determinemos se o processo é dependente ou independente do paratormônio (PTH).\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Correta. A dosagem do PTH intacto é o \"divisor de águas\" na investigação da hipercalcemia. Se o PTH estiver elevado ou inadequadamente normal (em vez de suprimido pelo cálcio alto), o diagnóstico direciona-se para o Hiperparatireoidismo Primário, que é a causa mais comum de hipercalcemia ambulatorial, especialmente em mulheres de meia-idade. Se o PTH estivesse suprimido, investigaríamos causas como malignidade, excesso de vitamina D ou doenças granulomatosas.\n\nb) Incorreta. A calcitonina é um marcador tumoral utilizado na investigação e seguimento do carcinoma medular da tireoide. Ela não possui papel no algoritmo inicial de investigação da hipercalcemia, pois sua influência direta nos níveis séricos de cálcio em adultos é clinicamente pouco relevante.\n\nc) Incorreta. A cintilografia das paratireoides (geralmente com Sestamibi) é um exame de localização e não de diagnóstico etiológico. Ela deve ser solicitada apenas após o diagnóstico laboratorial de hiperparatireoidismo primário estar firmado, com o objetivo de auxiliar o cirurgião a encontrar a glândula acometida (adenoma) no pré-operatório.\n\nd) Incorreta. A densitometria óssea é importante para avaliar as repercussões da doença (como a perda de massa óssea decorrente do PTH elevado) e auxilia na indicação cirúrgica, mas não esclarece a etiologia da hipercalcemia.\n\ne) Incorreta. Assim como a cintilografia, a ultrassonografia cervical é um exame de imagem para localização anatômica de possíveis adenomas de paratireoide. Solicitar exames de imagem antes de confirmar a etiologia laboratorial é um erro comum que pode levar a resultados falso-positivos, pois nódulos tireoidianos podem ser confundidos com paratireoides aumentadas.\n\nRESUMO: No manejo da hipercalcemia, o primeiro passo após a confirmação laboratorial é sempre medir o PTH para diferenciar entre causas paratireoide-dependentes e independentes.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:23.416Z"
+  },
+  {
+    "id": "AJUDA_80ef274d-8106-4d2b-b98a-634911220d26",
+    "originalId": "80ef274d-8106-4d2b-b98a-634911220d26",
+    "statement": "Em relação à terapia de reposição hormonal (TRH) na menopausa, está contraindicada em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sintomas vasomotores intensos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Osteoporose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "História de tromboembolismo venoso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Menopausa precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Terapia de Reposição Hormonal (TRH) é uma ferramenta fundamental no manejo da menopausa, mas exige uma avaliação criteriosa das indicações e contraindicações para garantir a segurança da paciente.\n\nAnálise das alternativas:\n\nAlternativa (a) Sintomas vasomotores intensos: Incorreta. Os sintomas vasomotores, conhecidos popularmente como fogachos ou ondas de calor, constituem a principal indicação para o início da TRH. A reposição estrogênica é o tratamento padrão-ouro para o alívio desses sintomas, melhorando significativamente a qualidade de vida da paciente.\n\nAlternativa (b) Osteoporose: Incorreta. A osteoporose é uma indicação clássica para a TRH. O estrogênio exerce um efeito protetor sobre a massa óssea ao inibir a atividade dos osteoclastos. A TRH é eficaz na prevenção da perda óssea e na redução do risco de fraturas em mulheres na pós-menopausa, especialmente naquelas que também apresentam sintomas climatéricos.\n\nAlternativa (c) História de tromboembolismo venoso: Correta. A história pessoal de tromboembolismo venoso (TEV), que inclui trombose venosa profunda (TVP) e embolia pulmonar (EP), é uma contraindicação absoluta ao uso da TRH sistêmica. O estrogênio, particularmente por via oral, aumenta a síntese hepática de fatores de coagulação e reduz os anticoagulantes naturais, elevando o risco de novos eventos trombóticos.\n\nAlternativa (d) Menopausa precoce: Incorreta. Também chamada de Insuficiência Ovariana Prematura (IOP), ocorre quando a falência ovariana acontece antes dos 40 anos. Nestes casos, a TRH é fortemente indicada (salvo contraindicações específicas) para mitigar os riscos aumentados de doenças cardiovasculares, osteoporose e declínio cognitivo, devendo ser mantida, em regra, até a idade média da menopausa natural (cerca de 50-51 anos).\n\nResumo das principais contraindicações absolutas da TRH:\n1. Câncer de mama (atual ou prévio).\n2. Lesões precursoras de câncer de mama.\n3. Câncer de endométrio.\n4. Sangramento vaginal de causa desconhecida.\n5. Doença tromboembólica venosa atual ou prévia.\n6. Doença coronariana ou cerebrovascular ativa ou pregressa.\n7. Doença hepática aguda ou grave.\n8. Porfiria.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:23.416Z"
+  }
+]

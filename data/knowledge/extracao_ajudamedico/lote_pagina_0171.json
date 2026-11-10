@@ -1,0 +1,517 @@
+[
+  {
+    "id": "AJUDA_2f5374f9-067e-4ea1-aec3-b0e461786839",
+    "originalId": "2f5374f9-067e-4ea1-aec3-b0e461786839",
+    "statement": "Homem de 49 anos, com diabetes mellitus tipo 2, em uso irregular de metformina e dapaglifozina, procura uma Unidade de Pronto Atendimento com queixa de poliúria, polidipsia, fadiga e visão turva há 3 dias. Ao exame físico, apresenta-se hemodinamicamente estável, discretamente desidratado, sem sinais de infecção, sem dor abdominal e sem náuseas ou vômitos. Glicemia capilar: 420 mg/dL. Glicemia plasmática confirmatória: 460 mg/dL. Foram realizados exames para avaliação do quadro clínico do paciente, cujos resultados são apresentados na seguinte tabela.\n\n| Exame | Resultado | Valor de referência |\n| :--- | :---: | :---: |\n| pH (gasometria arterial) | 7,36 | 7,35 a 7,45 |\n| Bicarbonato sérico (HCO3–) | 22 mEq/L | 22 a 26 mEq/L |\n| Osmolaridade plasmática | 292 mOsm/kg | 285 a 295 mOsm/kg |\n| Cetonemia | Ausente | Ausente |\n| Cetonúria | Ausente | Ausente |\n| Sódio | 147 mEq/L | 136 a 145 mEq/L |\n| Potássio | 3,6 mEq/L | 3,5 a 5,1 mEq/L |\n\nQual é o provável diagnóstico desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cetoacidose diabética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estado hiperosmolar hiperglicêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hiperglicemia não crítica de emergência metabólica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Acidose metabólica induzida por medicação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Trata-se de uma hiperglicemia importante (glicemia plasmática de 460 mg/dL), sintomática (poliúria, polidipsia, fadiga e visão turva), mas sem critérios de nenhuma emergência hiperglicêmica.\n\nO que os exames mostram:\n- pH de 7,36 e bicarbonato de 22 mEq/L: não há acidose metabólica.\n- Cetonemia e cetonúria ausentes: não há cetose significativa.\n- Osmolaridade de 292 mOsm/kg: normal, muito abaixo do limiar de hiperosmolaridade (mais de 300 a 320 mOsm/kg).\n- Sódio levemente elevado (147 mEq/L): compatível com desidratação leve por diurese osmótica.\n- Potássio de 3,6 mEq/L: normal.\n- Clínica: paciente estável, sem alteração do nível de consciência e sem dor abdominal, náuseas ou vômitos.\n\nEsse cenário corresponde à hiperglicemia sem descompensação metabólica aguda grave, geralmente secundária a má adesão ao tratamento. A conduta é hidratação, ajuste da terapia (frequentemente com início de insulina), investigação de fatores precipitantes e orientação.\n\nAnálise das alternativas:\n\na) Cetoacidose diabética: incorreta. Exige hiperglicemia (ou diabetes conhecido), cetonemia ou cetonúria significativas e acidose metabólica (pH abaixo de 7,30 e/ou bicarbonato abaixo de 18 mEq/L). O paciente não tem cetonas nem acidose.\nPonto importante: o uso de dapagliflozina (inibidor de SGLT2) aumenta o risco de cetoacidose euglicêmica, o que torna a investigação de cetonas obrigatória. Mas aqui ela foi negativa.\n\nb) Estado hiperosmolar hiperglicêmico: incorreta. Exige glicemia geralmente acima de 600 mg/dL, osmolaridade efetiva acima de 300 a 320 mOsm/kg, desidratação acentuada e, frequentemente, alteração do sensório. O paciente tem glicemia de 460 mg/dL, osmolaridade normal e está apenas discretamente desidratado e lúcido.\n\nc) Hiperglicemia não crítica de emergência metabólica: correta. É a hiperglicemia descompensada e sintomática, mas sem acidose, cetose ou hiperosmolaridade. Não preenche critérios de CAD nem de EHH e, portanto, não constitui emergência hiperglicêmica com risco iminente de vida.\n\nd) Acidose metabólica induzida por medicação: incorreta. Os medicamentos citados poderiam, em tese, causar acidose: a metformina, acidose lática (sobretudo na insuficiência renal ou hipóxia), e a dapagliflozina, cetoacidose euglicêmica. Porém o pH e o bicarbonato estão normais, ou seja, não há acidose.\n\nResposta: alternativa C.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:30.345Z"
+  },
+  {
+    "id": "AJUDA_2f54d1f9-166b-4460-a7a4-16dc0e9550d8",
+    "originalId": "2f54d1f9-166b-4460-a7a4-16dc0e9550d8",
+    "statement": "Menina de 2 anos e 6 meses é atendida em uma unidade básica de saúde (UBS). A mãe relata que a criança consome cerca de um litro de leite de vaca por dia e ingere pouca carne. O médico observa palidez cutaneomucosa e solicita exames. Os resultados são apresentados a seguir: \n\nO médico inicia tratamento com ferro elementar na dose de 2 mg/kg/dia. Após 3 meses, exames foram repetidos: \n\nCom relação ao tratamento e à conduta desse paciente é correto afirmar que a",
+    "options": [
+      {
+        "id": "A",
+        "text": "resposta é a esperada para o tratamento; devendo-se manter o tratamento atual por mais 3 meses e reavaliar laboratorialmente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "resposta à administração de ferro oral é resistente; deve se repor com ferro endovenoso e investigar a má absorção por doença celíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "falha terapêutica é sugestiva de outra causa da anemia microcítica; deve-se considerar hipótese de traço talassêmico e encaminhar a paciente para hematologista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "falha terapêutica deve-se a persistência de fatores de risco relacionados à alimentação e à subdose de ferro elementar; deve-se aumentar a dose e orientar a alimentação.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico apresenta uma criança de 2 anos e 6 meses com um quadro clássico de anemia ferropriva, evidenciado pela palidez, consumo excessivo de leite de vaca (um litro/dia) e baixa ingestão de carne. Os exames laboratoriais iniciais confirmam anemia microcítica (VCM 64 fL) com baixos estoques de ferro (ferritina 12 ng/mL) e presença de anisocitose.\n\nApós 3 meses de tratamento, observa-se que a hemoglobina subiu apenas de 9,0 g/dL para 9,2 g/dL, o que caracteriza uma falha terapêutica, já que o esperado seria um aumento de pelo menos 1,0 g/dL no primeiro mês de tratamento adequado.\n\nAnálise das alternativas:\n\na) Incorreta. A resposta não é a esperada. Em um tratamento eficaz para anemia ferropriva, espera-se a normalização dos níveis de hemoglobina em cerca de 2 meses. Um aumento de apenas 0,2 g/dL após 3 meses indica que o tratamento falhou.\n\nb) Incorreta. Antes de considerar a administração de ferro endovenoso ou investigar doenças absortivas como a doença celíaca, deve-se revisar a adesão ao tratamento, a dose prescrita e a correção dos erros alimentares. A dose utilizada foi insuficiente e os fatores dietéticos não foram corrigidos.\n\nc) Incorreta. Embora o traço talassêmico seja um diagnóstico diferencial de anemias microcíticas, a ferritina baixa (12 e 15 ng/mL) é patognomônica de deficiência de ferro. No traço talassêmico, a ferritina costuma ser normal ou elevada. Além disso, a história dietética é muito sugestiva de causa ferropriva.\n\nd) Correta. A dose terapêutica recomendada para o tratamento de anemia ferropriva na infância é de 3 a 6 mg/kg/dia de ferro elementar. O médico utilizou 2 mg/kg/dia, o que é considerado uma subdose para tratamento (esta dose é geralmente usada para profilaxia). Somado a isso, a manutenção do consumo de 1 litro de leite de vaca por dia prejudica a absorção do ferro e pode causar micro-hemorragias intestinais, perpetuando a anemia. Portanto, a conduta correta é ajustar a dose e orientar a dieta.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias",
+      "Anemias"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/dbe424b3ca658af6ed6a136cec82364829a7fd53aee6563a4494560f6c11435c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_2f54d1f9-166b-4460-a7a4-16dc0e9550d8_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/a412176a758dd27be6944b153cecaa57d7f7bd09a1c521298c6be9a8d4bfc24e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_2f54d1f9-166b-4460-a7a4-16dc0e9550d8_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:31.833Z"
+  },
+  {
+    "id": "AJUDA_2f56a37d-caec-4b56-8ef1-96fc474cf4e8",
+    "originalId": "2f56a37d-caec-4b56-8ef1-96fc474cf4e8",
+    "statement": "O quadro abaixo resume os resultados de um estudo epidemiológico sobre fratura de fêmur, considerando sexo e idade. Em relação à associação entre sexo e fratura de fêmur, a idade, com base nesses dados, é considerada uma variável:",
+    "options": [
+      {
+        "id": "A",
+        "text": "modificadora de efeito.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "de confusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "indutora de viés de aferição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "de indução estatística",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise dos dados da imagem:\n\nAo analisar a tabela fornecida, observamos o Risco Relativo (RR) que compara o risco de fratura de fêmur entre mulheres e homens. No dado global (Todas as idades), o RR é de 2,0. Entretanto, ao estratificar os dados por faixas etárias, os resultados mudam drasticamente: no grupo com menos de 50 anos, o RR é de 0,5 (o que indica um risco menor para mulheres nessa faixa); já no grupo com 50 anos ou mais, o RR salta para 8,0 (um risco muito mais elevado para mulheres).\n\nExplicação das alternativas:\n\nAlternativa a: Está correta. Uma variável é considerada modificadora de efeito (ou de interação) quando a magnitude da associação entre a exposição (sexo) e o desfecho (fratura) varia conforme os níveis dessa terceira variável (idade). Como o Risco Relativo apresentou valores totalmente diferentes nos dois estratos de idade (0,5 vs 8,0), fica demonstrado que a idade modifica o efeito do sexo sobre o risco de fraturas.\n\nAlternativa b: Está incorreta. Na variável de confusão, o fator de confusão distorce a relação entre exposição e desfecho. Se a idade fosse apenas uma variável de confusão, ao estratificarmos os dados, os Riscos Relativos encontrados em cada estrato (jovens e idosos) deveriam ser semelhantes entre si, embora diferentes do valor bruto inicial. Como os valores estratificados são muito divergentes entre si, o conceito correto é o de modificação de efeito.\n\nAlternativa c: Está incorreta. O viés de aferição ocorre quando há erros sistemáticos na coleta de dados, na entrevista ou na mensuração das variáveis do estudo. Os dados da tabela mostram uma variação real do risco epidemiológico nas subpopulações, e não uma falha técnica de medição ou registro.\n\nAlternativa d: Está incorreta. O termo indução estatística não faz parte da terminologia padrão da epidemiologia para descrever o fenômeno de alteração de medidas de associação em subgrupos. O comportamento observado na tabela, onde a idade altera a direção e a intensidade do risco, é classicamente definido como modificação de efeito.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/18c5de0c4a72bc7bb9097cbb5c8d9a8b5b0bcb44a91d4d440f9e4b7afd198ad7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_2f56a37d-caec-4b56-8ef1-96fc474cf4e8_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:32.219Z"
+  },
+  {
+    "id": "AJUDA_2f6717ff-824d-4112-8bf9-0c08a0090965",
+    "originalId": "2f6717ff-824d-4112-8bf9-0c08a0090965",
+    "statement": "Em um estudo de ensaio clínico, o que é \"intenção de tratar\" (ITT)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "É um princípio que analisa apenas os pacientes que completaram o tratamento ao longo do estudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "É um princípio que analisa todos os pacientes conforme o tratamento que realmente receberam.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É um princípio que analisa todos os pacientes conforme a alocação original, independentemente do tratamento recebido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "É um princípio que exclui pacientes que não aderiram ao tratamento, mas que foram acompanhados até o final do estudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A Intenção de Tratar (Intention-to-Treat - ITT) é um princípio fundamental na análise de ensaios clínicos randomizados. Seu objetivo principal é manter a integridade da randomização realizada no início do estudo. A regra de ouro da ITT é: uma vez randomizado, sempre analisado naquele grupo. Isso garante que o balanceamento de características entre os grupos, obtido pelo sorteio, seja preservado até o final da análise estatística.\n\nAlternativa a: Incorreta. Analisar apenas os pacientes que completaram o tratamento é o que chamamos de análise por protocolo (Per Protocol). Embora mostre o efeito da droga em condições ideais de adesão, essa abordagem introduz vieses significativos, pois os pacientes que abandonam o tratamento geralmente são diferentes daqueles que o completam (podem ter abandonado por efeitos colaterais ou gravidade da doença).\n\nAlternativa b: Incorreta. Esta é a chamada análise de tratamento recebido (As-Treated). Nela, se um paciente foi sorteado para o grupo placebo, mas acabou tomando o medicamento de intervenção por erro ou escolha própria, ele é analisado no grupo da intervenção. Isso quebra totalmente a randomização e transforma o ensaio clínico em um estudo observacional, perdendo a capacidade de estabelecer causalidade com segurança.\n\nAlternativa c: Correta. Esta é a definição exata de ITT. Independentemente do que aconteça após a randomização (não adesão, desistências, mudanças de grupo ou erros de administração), o paciente deve ser analisado dentro do grupo para o qual foi originalmente sorteado. Isso reflete melhor a realidade da prática clínica (efetividade) e minimiza o risco de que diferenças nos resultados sejam causadas por perdas seletivas de pacientes, em vez do tratamento em si.\n\nAlternativa d: Incorreta. O princípio da ITT proíbe a exclusão de pacientes que não aderiram ao tratamento. Se o paciente foi acompanhado até o final, seus dados devem ser computados no grupo original de alocação. Excluir os não aderentes distorce os resultados, pois a falta de adesão pode estar diretamente ligada à tolerância ou falta de efeito do tratamento testado.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:32.219Z"
+  },
+  {
+    "id": "AJUDA_2f685e50-fc71-4a66-9491-65ebb56ba4ce",
+    "originalId": "2f685e50-fc71-4a66-9491-65ebb56ba4ce",
+    "statement": "Sobre os leiomiomas do esôfago, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "São tumores da muscular própria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apresentam-se com ulceração na mucosa na endoscopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Lesões com características sugestivas na ecoendoscopia não necessitam de biópsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lesões características pequenas e assintomáticas podem ser acompanhadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O leiomioma é o tumor benigno mais comum do esôfago, originando-se de células musculares lisas. Abaixo, a análise detalhada de cada alternativa para justificar por que a letra (b) está incorreta:\n\nAlternativa (a) Correta: Os leiomiomas são neoplasias mesenquimais que se originam da camada muscular do esôfago. Na grande maioria das vezes, surgem da muscular própria (camada circular interna ou longitudinal externa), que corresponde à quarta camada na avaliação por ecoendoscopia. Menos frequentemente, podem se originar da muscular da mucosa (segunda camada).\n\nAlternativa (b) Incorreta (Gabarito): Esta é a afirmação falsa. Por ser um tumor intramural e submucoso, o leiomioma apresenta-se na endoscopia digestiva alta como um abaulamento da parede esofágica, de consistência firme e com mobilidade preservada. A característica fundamental é que a mucosa que recobre a lesão é íntegra, lisa e de aspecto normal. A presença de ulceração é atípica e deve levantar a suspeita de outras condições, como tumores malignos (carcinoma) ou tumores estromais gastrointestinais (GIST), embora estes últimos sejam raros no esôfago.\n\nAlternativa (c) Correta: Quando a ecoendoscopia revela características típicas — como uma lesão hipoecoica, homogênea, bem delimitada e originada da camada muscular — a biópsia é geralmente contraindicada. Isso ocorre por dois motivos: primeiro, a biópsia endoscópica comum dificilmente alcança o tumor por ele ser submucoso; segundo, a realização de biópsia profunda ou punção por agulha fina (FNA) pode gerar fibrose local e aderência entre o tumor e a mucosa, o que torna uma futura cirurgia de enucleação muito mais difícil e com maior risco de perfuração.\n\nAlternativa (d) Correta: O tratamento de escolha para leiomiomas grandes (geralmente acima de 5 cm) ou sintomáticos (causando disfagia ou dor) é a enucleação cirúrgica. No entanto, para lesões pequenas, incidentais e assintomáticas, a conduta conservadora com vigilância periódica por meio de exames de imagem ou endoscopia é perfeitamente aceitável e recomendada.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:32.219Z"
+  },
+  {
+    "id": "AJUDA_2f698ab3-bff9-4a3e-9951-e5fa911156af",
+    "originalId": "2f698ab3-bff9-4a3e-9951-e5fa911156af",
+    "statement": "Sobre bloqueio vacinal, assinale a questão incorreta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O bloqueio vacinal é uma ação definida pela Vigilância Epidemiológica, recomendada após a investigação de um caso suspeito ou confirmado de determinada doença imunoprevenível, com o objetivo de interromper a circulação ou a transmissão do agente infeccioso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve contemplar a busca de contatos nas localidades por onde o caso suspeito ou confirmado percorreu no período de transmissão da doença, com o propósito de interromper a cadeia de transmissão do agente etiológico, por meio da vacinação específica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O bloqueio vacinal é uma ação de campanha de vacinação indiscriminada seguindo as regras do calendário de vacinação ou as normas técnicas definidas pelo PNI.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Leva em consideração a vacinação ou não do contato do caso suspeito por depender da situação vacinal identificada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pode ser restrito a um grupo limitado de pessoas ou ser mais abrangente quanto à extensão territorial, de acordo com a situação epidemiológica, assumindo características de uma varredura (operação limpeza).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o conceito de bloqueio vacinal, uma ferramenta fundamental da Vigilância Epidemiológica para o controle de doenças imunopreveníveis. O objetivo é identificar a alternativa incorreta.\n\nAlternativa A: Correta. O bloqueio vacinal é, de fato, uma medida reativa desencadeada pela Vigilância Epidemiológica diante de um caso suspeito ou confirmado. Sua função primordial é criar um cordão sanitário de pessoas imunizadas ao redor do caso-índice para impedir que o patógeno continue circulando na comunidade.\n\nAlternativa B: Correta. A estratégia exige uma investigação minuciosa do deslocamento do paciente durante o seu período de transmissibilidade. Todos os contatos (familiares, colegas de trabalho, escola, etc.) nos locais por onde o paciente passou devem ser avaliados e, se necessário, vacinados para interromper a cadeia de transmissão.\n\nAlternativa C: Incorreta (Gabarito). Esta alternativa confunde bloqueio vacinal com campanhas de vacinação ou vacinação de rotina. O bloqueio vacinal NÃO é uma campanha indiscriminada. Enquanto as campanhas visam aumentar a cobertura populacional de forma ampla e programada, o bloqueio é uma ação seletiva, focal e emergencial, direcionada especificamente aos contatos de um caso para conter um possível surto. Ele não segue o calendário vacinal de rotina de forma passiva, mas sim protocolos específicos de pós-exposição.\n\nAlternativa D: Correta. No bloqueio vacinal, a conduta depende do histórico vacinal do contato. Se o contato já possuir comprovação de esquema vacinal completo e atualizado para aquela doença, ele pode não precisar de nova dose. A vacinação é direcionada prioritariamente aos suscetíveis ou àqueles com esquema incompleto identificados entre os contatos.\n\nAlternativa E: Correta. A magnitude do bloqueio varia conforme a doença e o cenário epidemiológico. Para doenças de alta transmissibilidade, como o sarampo, a ação pode ser ampliada para uma área geográfica maior (bairro ou cidade), recebendo o nome de varredura ou operação limpeza, visando garantir que ninguém naquelas proximidades permaneça suscetível.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:32.219Z"
+  },
+  {
+    "id": "AJUDA_2f6a4ebd-d72e-4997-9d44-22496ee783c8",
+    "originalId": "2f6a4ebd-d72e-4997-9d44-22496ee783c8",
+    "statement": "Homem, 58 anos de idade, procura atendimento por dispneia. A médica residente, que realizou o atendimento, observou a presença de um achado clínico que favoreceu, significativamente, a possibilidade de se tratar de um caso de insuficiência cardíaca. A partir da análise da tabela, assinale a alternativa que contém o achado clínico observado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hepatomegalia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Terceira bulha",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estertores",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Refluxo abdomino jugular",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão avalia a interpretação de parâmetros estatísticos aplicados à clínica médica, especificamente a Razão de Verossimilhança Positiva (LR+). A razão de verossimilhança positiva expressa quanto a probabilidade de uma doença aumenta quando o achado clínico está presente. Quanto maior o valor da LR+ (acima de 1), maior é o impacto do sinal clínico em confirmar ou favorecer o diagnóstico.\n\nAnálise das alternativas:\n\na) Incorreta. Embora a hepatomegalia apresente uma especificidade alta de 97%, sua razão de verossimilhança positiva é de apenas 1,07. Valores tão próximos a 1 não alteram de forma relevante a probabilidade do diagnóstico.\n\nb) Incorreta. A terceira bulha apresenta, na tabela apresentada, uma razão de verossimilhança positiva de 0,67. Um valor menor que 1 não favorece o diagnóstico de insuficiência cardíaca de acordo com os dados apresentados.\n\nc) Incorreta. Os estertores pulmonares apresentam razão de verossimilhança positiva de 1,26. Esse valor representa uma elevação mínima e pouco expressiva na probabilidade diagnóstica.\n\nd) Correta. O refluxo abdominojugular apresenta uma razão de verossimilhança positiva de 5,50. Na epidemiologia clínica, valores de LR+ entre 5 e 10 geram aumentos moderados a substanciais na probabilidade pós-teste da doença. Sendo o maior valor da tabela, é o achado que favorece com maior significância o diagnóstico de insuficiência cardíaca.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Estatística Médica",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/63c6f6d66672c2ddf02667a84129aa6bc077cb93b0e3c7ec8c122a5dcbbc535c.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_2f6a4ebd-d72e-4997-9d44-22496ee783c8_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:32.690Z"
+  },
+  {
+    "id": "AJUDA_2f7d3e0f-cad6-4508-b09c-b8d50f9cb963",
+    "originalId": "2f7d3e0f-cad6-4508-b09c-b8d50f9cb963",
+    "statement": "Assinale a alternativa correta em relação ao choque.",
+    "options": [
+      {
+        "id": "A",
+        "text": "No choque classe I há uma perda sanguínea aproximada de 20%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "No choque classe II há uma perda sanguínea aproximada de 20 a 35%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "No choque classe III há uma perda sanguínea aproximada de 30 a 40%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "No choque classe IV há uma perda sanguínea aproximada de 35 a 45%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "No choque classe V há uma perda sanguínea acima de 45%.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para responder a essa questão, devemos utilizar a classificação do choque hipovolêmico hemorrágico proposta pelo ATLS (Advanced Trauma Life Support), que divide a gravidade da hemorragia em quatro classes, baseando-se no percentual de perda de sangue e em parâmetros clínicos.\n\nAlternativa a: Incorreta. No choque classe I, a perda sanguínea é de até 15% do volume total. Uma perda de 20% já posiciona o paciente na classe II da classificação.\n\nAlternativa b: Incorreta. O choque classe II compreende uma perda volêmica que varia de 15% a 30%. O intervalo de 20% a 35% mencionado na alternativa não está em conformidade com as diretrizes do ATLS.\n\nAlternativa c: Correta. O choque classe III é definido por uma perda sanguínea estimada entre 30% e 40%. Clinicamente, este é o estágio em que a maioria dos pacientes apresenta queda na pressão arterial sistólica (hipotensão), taquicardia acentuada e alteração do nível de consciência, sendo frequentemente necessária a reposição com hemoderivados.\n\nAlternativa d: Incorreta. O choque classe IV é caracterizado por uma perda sanguínea superior a 40%. A alternativa estabelece um intervalo de 35% a 45%, o que diverge da definição técnica que utiliza o patamar fixo de mais de 40% para esta classe.\n\nAlternativa e: Incorreta. De acordo com a sistematização do trauma (ATLS), o choque hemorrágico é classificado em apenas quatro estágios (Classes I, II, III e IV). Portanto, a denominação \"Classe V\" não existe nessa classificação acadêmica e assistencial.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:32.690Z"
+  },
+  {
+    "id": "AJUDA_2f7d5acb-989c-476f-9ab9-19b47c4da0f9",
+    "originalId": "2f7d5acb-989c-476f-9ab9-19b47c4da0f9",
+    "statement": "Diversas condições médicas tais como cardiopatias, enxaquecas e quadros reumáticos apresentam comorbidade com transtornos depressivos. \nAssinale a classe de medicamentos indicada como primeira linha no tratamento da depressão maior unipolar.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antipsicóticos atípicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Benzodiazepínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estabilizadores de humor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inibidores seletivos da recaptação de serotonina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão solicita a identificação da classe medicamentosa considerada de primeira linha para o tratamento do Transtorno Depressivo Maior (TDM) unipolar, especialmente em contextos onde o paciente apresenta outras comorbidades médicas.\n\nAnálise das alternativas:\n\nAlternativa a) Antipsicóticos atípicos. Incorreta. Medicamentos como aripiprazol, quetiapina e risperidona são utilizados na depressão unipolar principalmente como terapia adjuvante (potencialização) quando não há resposta satisfatória ao antidepressivo inicial, ou em casos de depressão com sintomas psicóticos. Não são indicados como monoterapia de primeira linha para depressão unipolar sem psicose.\n\nAlternativa b) Benzodiazepínicos. Incorreta. Estes fármacos possuem ação ansiolítica e hipnótica, auxiliando no controle de sintomas como ansiedade e insônia. No entanto, eles não possuem efeito antidepressivo e não tratam a patologia de base. Além disso, o uso prolongado deve ser evitado devido ao risco de dependência, tolerância e prejuízo cognitivo.\n\nAlternativa c) Estabilizadores de humor. Incorreta. Esta classe (que inclui o lítio, valproato e carbamazepina) é a base do tratamento para o Transtorno Afetivo Bipolar. Na depressão unipolar, o lítio pode ser empregado como estratégia de potencialização em casos resistentes, mas não é a escolha inicial para o tratamento do quadro depressivo unipolar.\n\nAlternativa d) Inibidores seletivos da recaptação de serotonina (ISRS). Correta. Os ISRS (exemplos: sertralina, escitalopram, fluoxetina, paroxetina, citalopram) são o padrão-ouro de primeira linha para o tratamento da depressão maior. Eles são preferidos devido ao perfil de segurança favorável, melhor tolerabilidade (menos efeitos colaterais em comparação aos antidepressivos tricíclicos e IMAOs) e facilidade de ajuste posológico. No caso das comorbidades citadas no enunciado, como as cardiopatias, a sertralina e o escitalopram são frequentemente destacados por apresentarem menor risco de interações medicamentosas e maior segurança cardiovascular.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:32.690Z"
+  },
+  {
+    "id": "AJUDA_2f90eb10-6e88-4975-b297-fbf986c5c182",
+    "originalId": "2f90eb10-6e88-4975-b297-fbf986c5c182",
+    "statement": "Mulher 24 anos, dor em fossa ilíaca direita há 12 h, Temperatura 38 °C, leucócitos 14 000. US: apêndice 9 mm de diâmetro, não compressível. Escolha o melhor tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Antibiótico ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Laparoscopia diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apendicectomia videolaparoscópica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Tomografia de abdome antes de indicar cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve uma paciente de 24 anos com um quadro clássico de apendicite aguda. Os achados clínicos incluem dor localizada na fossa ilíaca direita com 12 horas de evolução, presença de febre (38 °C) e leucocitose (14.000). O exame de imagem (ultrassonografia) corrobora o diagnóstico ao demonstrar um apêndice com diâmetro de 9 mm (o normal é até 6 mm) e a ausência de compressibilidade, que é um sinal patognomônico de inflamação apendicular.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: INCORRETA. A colonoscopia não é um exame indicado para o diagnóstico de apendicite aguda. Além de não permitir a visualização direta da inflamação do apêndice na maioria dos casos, o procedimento é contraindicado em quadros inflamatórios agudos do abdome devido ao alto risco de perfuração intestinal pela insuflação de ar.\n\nAlternativa B: INCORRETA. O tratamento padrão-ouro para apendicite aguda continua sendo a cirurgia. Embora existam protocolos de tratamento conservador apenas com antibióticos em casos muito selecionados (apendicite não complicada), isso deve ser feito em ambiente hospitalar sob rigorosa vigilância. O tratamento ambulatorial (em casa) não é seguro para uma paciente com sinais sistêmicos de infecção, como febre e leucocitose.\n\nAlternativa C: INCORRETA. A laparoscopia diagnóstica é utilizada quando há dúvida sobre a causa da dor abdominal, especialmente em mulheres em idade fértil, onde o diagnóstico diferencial com patologias ginecológicas (como cisto de ovário ou gravidez ectópica) é frequente. No entanto, nesta questão, o diagnóstico já foi confirmado pelo ultrassom e pela clínica, portanto a conduta deve ser diretamente a cirurgia terapêutica.\n\nAlternativa D: CORRETA. Diante de um diagnóstico confirmado de apendicite aguda, a apendicectomia é o tratamento definitivo. A via videolaparoscópica é a escolha ideal, pois oferece menor dor pós-operatória, menor tempo de internação, retorno mais rápido às atividades e menor índice de infecção de ferida operatória em comparação à via aberta, além de permitir a revisão de toda a cavidade abdominal.\n\nAlternativa E: INCORRETA. A tomografia computadorizada é o exame com maior sensibilidade e especificidade para apendicite. Contudo, ela não deve ser solicitada se o diagnóstico já foi estabelecido por outros métodos (clínica + ultrassom positivo). Solicitar uma tomografia neste momento apenas retardaria o tratamento cirúrgico e exporia uma paciente jovem à radiação ionizante desnecessária.\n\nCONCLUSÃO\n\nA questão exige o reconhecimento de um quadro típico de apendicite aguda e a indicação do tratamento cirúrgico imediato. Uma vez que o diagnóstico já está firmado por meios clínicos e ultrassonográficos, a alternativa que propõe a remoção cirúrgica por via minimamente invasiva é a conduta mais correta e atual.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:32.690Z"
+  }
+]

@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_929a0e9c-0f2c-48a9-b65a-9c5ff750b774",
+    "originalId": "929a0e9c-0f2c-48a9-b65a-9c5ff750b774",
+    "statement": "Homem, 35 anos de idade, trabalhador da construção civil, procura a UBS com queixa de tosse produtiva há quatro semanas, associada à febre vespertina (não aferida), sudorese noturna e perda de 5 kg no período. Nega comorbidades, tabagismo ou uso de drogas ilícitas. Relata que um colega de trabalho foi recentemente diagnosticado e tratado para tuberculose. Ao exame físico, encontra-se emagrecido, hipocorado (+/4+), com murmúrio vesicular diminuído e estertores crepitantes em ápice pulmonar direito. A radiografia de tórax, solicitada na Unidade, mostra um infiltrado com cavitação em lobo superior direito. O paciente reside com sua esposa e dois filhos, um de 4 anos e outro de 8 anos.\n\nIndique o esquema de tratamento de primeira linha recomendado pelo Ministério da Saúde para esse paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rifampicina, isoniazida e pirazinamida por 6 meses, associado a etambutol nos 2 primeiros meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Rifampicina, isoniazida, pirazinamida e etambutol (RIPE) por 2 meses, seguido por rifampicina e isoniazida (RI) por 4 meses",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Rifampicina, isoniazida, pirazinamida e etambutol (RIPE) por 4 meses, seguido por rifampicina e isoniazida (RI) por 2 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Isoniazida, pirazinamida e etambutol por 4 meses, seguido por isoniazida e rifampicina por 2 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um homem adulto jovem com quadro clássico de tuberculose pulmonar ativa (tosse prolongada, sintomas constitucionais, história epidemiológica de contato e radiografia de tórax com cavitação em ápice). \n\nPara pacientes adultos e adolescentes a partir de 10 anos de idade com caso novo de tuberculose pulmonar, o Ministério da Saúde preconiza o Esquema Básico composto por duas fases, totalizando 6 meses de tratamento: a fase intensiva com quatro drogas (2 RIPE) e a fase de manutenção com duas drogas (4 RI).\n\nAnálise das alternativas:\n\na) Incorreta. A pirazinamida não é utilizada por 6 meses. No esquema básico, tanto a pirazinamida quanto o etambutol são empregados exclusivamente na fase intensiva (primeiros 2 meses).\n\nb) Correta. Corresponde exatamente ao Esquema Básico preconizado pelo Ministério da Saúde (2 RIPE / 4 RI): fase intensiva com Rifampicina, Isoniazida, Pirazinamida e Etambutol durante 2 meses, seguida por fase de manutenção com Rifampicina e Isoniazida durante 4 meses.\n\nc) Incorreta. A duração das fases está invertida. A fase intensiva (RIPE) tem duração de 2 meses e a fase de manutenção (RI) dura 4 meses.\n\nd) Incorreta. A rifampicina foi incorretamente omitida da fase inicial, além de os períodos de cada fase estarem com a duração invertida e em desacordo com as diretrizes do Ministério da Saúde.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Strix",
+    "uf": "BA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Tuberculose"
+    ],
+    "difficulty": 83.08917767174422,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/15a10c89e3b6d4d8ea907193017113d8954f4fce2aa7905a5cf23a6b414c900b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c767f1dedd43ecbccba903e0119814d9133bde12da1cc8b41b6cbb243af5ae7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:08.564Z"
+  },
+  {
+    "id": "AJUDA_929dc59b-990a-4ae2-bfac-c099217b9807",
+    "originalId": "929dc59b-990a-4ae2-bfac-c099217b9807",
+    "statement": "Uma paciente com 22 anos de idade, após o término de um relacionamento amoroso há 2 meses, iniciou sintomas de humor predominantemente triste ao longo do dia. Relata que não aprecia mais sair de casa para encontrar seus amigos. Apresenta insônia e sensação de cansaço diário, além de marcada dificuldade para se concentrar em tarefas do cotidiano. Pode-se afirmar que o diagnóstico mais provável seja:",
+    "options": [
+      {
+        "id": "A",
+        "text": "distimia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "transtorno de estresse agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "luto patológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "episódio depressivo maior.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "transtorno de pânico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito apresenta uma paciente de 22 anos com sintomas que perduram por dois meses, iniciados após um evento estressor (término de relacionamento). A análise deve ser feita com base nos critérios diagnósticos para transtornos de humor e de ansiedade.\n\nA paciente apresenta cinco sintomas cardinais: humor triste, anedonia (perda de interesse em atividades que antes eram prazerosas, como sair com amigos), insônia, fadiga (sensação de cansaço diário) e prejuízo cognitivo (dificuldade de concentração). De acordo com o DSM-5, a presença de pelo menos cinco desses sintomas, por um período mínimo de duas semanas, sendo um deles obrigatoriamente humor deprimido ou anedonia, define o diagnóstico de Episódio Depressivo Maior.\n\nAnálise das alternativas:\n\na) Incorreta. A distimia, hoje denominada Transtorno Depressivo Persistente, exige a presença de humor deprimido na maior parte do dia, na maioria dos dias, por um período mínimo de dois anos em adultos. O tempo de evolução da paciente (dois meses) é insuficiente para este diagnóstico.\n\nb) Incorreta. O Transtorno de Estresse Agudo ocorre após a exposição a um evento traumático extremo (ameaça de morte, ferimento grave ou violência sexual), o que não se aplica a um término de relacionamento convencional. Além disso, seus sintomas (intrusão, esquiva, dissociação) devem durar de três dias a, no máximo, um mês após o evento.\n\nc) Incorreta. O termo luto é classicamente reservado para a reação à morte de um ente querido. No DSM-5-TR, o Transtorno de Luto Prolongado é diagnosticado apenas quando os sintomas persistem por pelo menos 12 meses após a perda, com foco intenso na saudade do falecido. Embora términos de relacionamento gerem processos de luto simbólico, os critérios clínicos apresentados pela paciente fecham o diagnóstico de depressão.\n\nd) Correta. A paciente preenche os critérios temporais (dois meses, superando o mínimo de duas semanas) e sintomatológicos (cinco critérios, incluindo os dois principais: humor triste e anedonia) para o Episódio Depressivo Maior. É importante notar que estressores psicossociais, como perdas afetivas, são gatilhos comuns para episódios depressivos.\n\ne) Incorreta. O Transtorno de Pânico caracteriza-se por ataques de pânico inesperados e recorrentes, que são surtos abruptos de medo intenso acompanhados de sintomas físicos (taquicardia, sudorese, falta de ar). O relato da paciente é focado em sintomas depressivos e não em crises agudas de ansiedade ou medo de novos ataques.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Transtornos do Humor"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:08.564Z"
+  },
+  {
+    "id": "AJUDA_92a96f8d-7d4d-4b57-a22a-232258bfe852",
+    "originalId": "92a96f8d-7d4d-4b57-a22a-232258bfe852",
+    "statement": "Homem de 20 anos, passageiro contido no veículo, sofreu colisão auto x auto de baixa energia; deu entrada na emergência transportado pelo SAMU, sob protocolo (colar cervical, prancha e head-block, cobertor térmico e cintos de contenção), consciente, sem dor cervical, sem déficits neurológicos; ausência de intoxicação exógena e sem outras lesões dolorosas. Exame físico completo normal. Qual conduta deve ser adotada no que se refere à restrição dos movimentos da coluna cervical e à necessidade de estudo radiológico desta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter colar e solicitar radiografias simples da coluna cervical em 3 incidências na sala de emergência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Retirar o colar apenas se a ressonância nuclear magnética da coluna cervical for normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter colar cervical e solicitar TC de coluna cervical para o paciente, na avaliação primária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retirar o colar com base em critérios clínicos (sem dor, sem déficit, sem intoxicação, sem lesões distratoras) e não solicitar exames de imagem.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Realizar tomografia computadorizada da coluna cervical antes de indicar remoção do colar cervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A conduta correta é retirar o colar cervical com base em critérios clínicos, sem solicitar exames de imagem. É a alternativa (d).\n\nConceito central: o paciente de trauma consciente, estável e sem os fatores de risco abaixo pode ter a coluna cervical liberada clinicamente. Os dois instrumentos validados para isso são os critérios do NEXUS e a Regra Canadense da Coluna Cervical (Canadian C-Spine Rule). O ATLS adota essa abordagem.\n\nCritérios do NEXUS (todos devem estar presentes para dispensar imagem):\n- Ausência de dor ou sensibilidade na linha média posterior da coluna cervical.\n- Ausência de déficit neurológico focal.\n- Nível de consciência normal (Glasgow 15).\n- Ausência de intoxicação.\n- Ausência de lesão dolorosa distratora.\n\nAplicação ao caso:\n- O paciente está consciente e sem dor cervical.\n- Não tem déficit neurológico.\n- Não está intoxicado.\n- Não tem outras lesões dolorosas, e o exame físico foi normal.\n- O mecanismo foi de baixa energia (colisão auto x auto, com cinto de segurança). Pela Regra Canadense, isso é um mecanismo de baixo risco, o que permite avaliar a amplitude de movimento ativa. Ele tem 20 anos, ou seja, não tem idade de alto risco (65 anos ou mais).\n- Preenche, portanto, todos os critérios de baixo risco. Pode-se retirar o colar, checar a rotação ativa do pescoço (cerca de 45° para cada lado) e liberar sem imagem.\n\nAnálise das alternativas:\n\na) Incorreta. Manter o colar e pedir radiografias é desnecessário, pois o paciente é de baixo risco. Além disso, quando há indicação de imagem, a TC substituiu a radiografia simples, que tem sensibilidade inferior.\n\nb) Incorreta. A ressonância não é exame de rotina para liberar o colar. Ela é reservada a casos selecionados, como déficit neurológico ou suspeita de lesão ligamentar ou medular, e em alguns pacientes obnubilados. Não se justifica aqui.\n\nc) Incorreta. A TC na avaliação primária não é indicada. A avaliação primária prioriza ABCDE, e a imagem cervical só entra na avaliação secundária, e apenas se houver indicação. Neste caso não há.\n\nd) Correta. Paciente que cumpre todos os critérios clínicos de baixo risco tem o colar retirado sem imagem.\n\ne) Incorreta. A TC antes da retirada do colar seria indicada se houvesse dor, déficit, rebaixamento, intoxicação, lesão distratora ou alto risco pela Regra Canadense. Nenhum desses fatores está presente, então a TC exporia o paciente à radiação sem necessidade.\n\nPonto-chave para a prova: paciente de trauma alerta, sem dor, sem déficit, sem intoxicação e sem lesão distratora (NEXUS negativo) dispensa imagem e tem o colar retirado clinicamente. Se algum critério estiver alterado, o exame de escolha é a TC de coluna cervical, e não a radiografia.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:08.564Z"
+  },
+  {
+    "id": "AJUDA_92ae1db0-abfe-4887-84de-658a15f58132",
+    "originalId": "92ae1db0-abfe-4887-84de-658a15f58132",
+    "statement": "Homem, 27 anos, apresenta quadro de alteração da marcha, disartria, dismetria, tremor de extremidades, icterícia, hepatomegalia e elevação dos níveis séricos das transaminases hepáticas. Exame oftalmológico: \n\nA principal hipótese diagnóstica é doença de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Huntington",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Creutzfeldt-Jakob",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Whipple",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Wilson",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão descreve um quadro clássico da Doença de Wilson, uma patologia autossômica recessiva caracterizada pelo acúmulo tóxico de cobre nos tecidos, especialmente no fígado e no sistema nervoso central, devido a uma mutação no gene ATP7B.\n\nO paciente apresenta a tríade típica: acometimento hepático (icterícia, hepatomegalia e aumento de transaminases), acometimento neurológico (alteração da marcha, disartria, dismetria e tremor) e o achado oftalmológico visualizado na imagem, que é o anel de Kayser-Fleischer. Este anel resulta do depósito de cobre na membrana de Descemet, na periferia da córnea, aparecendo como uma coloração acastanhada ou dourada ao redor da íris. Sua presença é quase universal em pacientes com a forma neurológica da doença.\n\nAnálise das alternativas:\n\na) Incorreta. A Doença de Huntington é uma desordem neurodegenerativa hereditária caracterizada por movimentos coreicos (coreia), declínio cognitivo e alterações psiquiátricas graves. Embora cause distúrbios do movimento, ela não evolui com hepatopatia nem apresenta o anel de Kayser-Fleischer.\n\nb) Incorreta. A Doença de Creutzfeldt-Jakob é uma encefalopatia espongiforme rara causada por príons. O quadro clínico é marcado por uma demência rapidamente progressiva, ataxia e mioclonias, levando ao óbito em pouco tempo. Não apresenta envolvimento hepático nem os sinais oculares descritos.\n\nc) Incorreta. A Doença de Whipple é uma infecção sistêmica causada pela bactéria Tropheryma whipplei. Apesar de poder apresentar sintomas neurológicos raros, sua apresentação clássica envolve síndrome de má absorção intestinal, diarreia, perda de peso e artralgia, o que não condiz com o quadro de hepatopatia e depósito corneano de cobre.\n\nd) Correta. A Doença de Wilson deve ser sempre a principal hipótese em pacientes jovens com a combinação de doença hepática e distúrbios neurológicos extrapiramidais ou cerebelares. O anel de Kayser-Fleischer, demonstrado na imagem, é o sinal clínico confirmatório mais importante para o diagnóstico.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Distúrbios do Movimento",
+      "Hepatopatias Autoimunes"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/57cbdfda54d789c4fa30a5e5819bef5e4f3ddb204174d8c8794f44332e13b924.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_92ae1db0-abfe-4887-84de-658a15f58132_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:09.091Z"
+  },
+  {
+    "id": "AJUDA_92b52062-d136-4e34-985f-fe2be2f39be7",
+    "originalId": "92b52062-d136-4e34-985f-fe2be2f39be7",
+    "statement": "Lactente, sexo feminino, de 2 meses de idade, nascida a termo (39 semanas) com peso ao nascimento de 3.200 g, comparece à consulta de puericultura para acompanhamento. A mãe relata está exclusivamente em aleitamento materno, apresenta bom ganho de peso (peso atual 5.100 g) e está ativa, sem intercorrências. A história pré-natal foi adequada, a mãe realizou suplementação com sulfato ferroso durante a gestação, e não há antecedentes familiares ou pessoais importantes. O parto ocorreu sem intercorrências. Na consulta, a mãe questiona sobre o momento adequado para a profilaxia com ferro e como realizar essa suplementação de maneira eficaz para prevenir anemia. Com base no caso apresentado e nas recomendações atuais da Sociedade Brasileira de Pediatria (SBP) sobre profilaxia com ferro, qual é a conduta correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar suplementação de ferro imediatamente, na dose de 1 mg/kg/dia, até o início da alimentação complementar, independentemente de o aleitamento ser exclusivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Postergar a suplementação de ferro até 6 meses de idade, uma vez que a lactente está ganhando peso adequadamente e está em aleitamento materno exclusivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Iniciar suplementação de ferro aos 3 meses de vida, na dose de 1 mg/kg/dia, somente para lactentes em aleitamento materno exclusivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar a suplementação de ferro aos 3 meses, na dose de 2 mg/kg/dia, independentemente do regime alimentar da criança.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar a suplementação de ferro a partir dos 6 meses, a não ser que a alimentação complementar seja rica em alimentos fontes de ferro biodisponível.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda as recomendações da Sociedade Brasileira de Pediatria (SBP) para a suplementação profilática de ferro em lactentes, um tema recorrente em provas de pediatria. Para resolvê-la, é fundamental conhecer as atualizações mais recentes sobre o tema.\n\nO caso clínico descreve uma lactente de 2 meses, nascida a termo (39 semanas) e com peso adequado para a idade gestacional (3.200 g). Para crianças com esse perfil (nascidas a termo e com peso ao nascimento acima de 2.500 g), a SBP recomenda o seguinte esquema de profilaxia de anemia ferropriva:\n\nAlternativa a) Incorreta. A suplementação imediata ou aos 2 meses de vida não é indicada para lactentes nascidos a termo e com peso superior a 2.500 g. Esse início precoce poderia ser considerado em situações de risco muito específicas ou em protocolos antigos, mas não segue a recomendação atual para o perfil da paciente.\n\nAlternativa b) Correta. De acordo com o Consenso da SBP (atualizado em 2018 e reafirmado em documentos posteriores), lactentes nascidos a termo, com peso superior a 2.500 g, independentemente do tipo de aleitamento (exclusivo ou não), devem iniciar a suplementação de ferro elementar aos 6 meses de vida, mantendo-a até os 24 meses de idade. A dose recomendada é de 1 mg de ferro elementar por kg de peso ao dia.\n\nAlternativa c) Incorreta. A recomendação de iniciar aos 3 meses de vida era prevista em diretrizes anteriores para lactentes a termo. Atualmente, para crianças com peso de nascimento normal (> 2.500 g), o marco inicial foi deslocado para os 6 meses de vida. Além disso, a suplementação deve ser feita independentemente do regime alimentar (leite materno ou fórmulas).\n\nAlternativa d) Incorreta. O início da suplementação aos 3 meses não é o preconizado para esse caso. Além disso, a dose de 2 mg/kg/dia é indicada especificamente para prematuros ou recém-nascidos de baixo peso (entre 1.500 g e 2.500 g), começando geralmente aos 30 dias de vida, o que não se aplica a uma criança de 3.200 g.\n\nAlternativa e) Incorreta. Embora o início aos 6 meses esteja correto para esse caso, a SBP recomenda a suplementação universal dos 6 aos 24 meses. A justificativa é que, mesmo com uma alimentação complementar adequada, é difícil atingir as necessidades diárias de ferro nessa fase de crescimento acelerado, tornando a profilaxia medicamentosa necessária independentemente da qualidade da dieta.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Deficiências Vitamínicas e Profilaxias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:09.091Z"
+  },
+  {
+    "id": "AJUDA_92b6cb51-77f3-4f1f-9f6c-bd5613dc841c",
+    "originalId": "92b6cb51-77f3-4f1f-9f6c-bd5613dc841c",
+    "statement": "Mulher de 43 anos deu entrada em unidade de pronto atendimento com quadro de dor abdominal muito intensa, de início súbito há 30 minutos, inicialmente em epigástrio, irradiando-se para todo o abdome, associada a náuseas sem vômitos. Ao exame clínico, a paciente está em estabilidade hemodinâmica e, no exame abdominal, notam-se presença de abdome rígido (em tábua), ausência de ruídos hidroaéreos na ausculta, na percussão sinal de Jobert presente e descompressão brusca positiva em todo o abdome. O diagnóstico mais provável e a conduta indicada para esta paciente, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "peritonite primária e antibioticoterapia ampla + hidratação IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "trombose mesentérica e angiorressonância do tronco celíaco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hemorragia intracavitária e transfusão de hemocomponentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "abscesso hepático e tomografia computadorizada de abdome com triplo contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "perfuração de víscera oca e abordagem cirúrgica (laparotomia ou laparoscopia).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão apresenta um caso clássico de abdome agudo perfurativo. A análise deve focar nos sinais clínicos patognomônicos descritos para chegar ao diagnóstico correto.\n\nO quadro clínico de uma paciente com dor abdominal de início súbito, muito intensa, que rapidamente se torna difusa, associada a um abdome rígido (em tábua) e sinal de descompressão brusca positivo, indica uma peritonite generalizada. O detalhe crucial é o sinal de Jobert, que consiste no desaparecimento da macicez hepática à percussão, sendo substituída por timpanismo. Esse sinal é indicativo de pneumoperitônio (ar livre na cavidade abdominal), sugerindo fortemente a perfuração de uma víscera oca, sendo a úlcera péptica perfurada a causa mais comum com esse início súbito em epigástrio.\n\nAnálise das alternativas:\n\na) Incorreta. A peritonite primária (ou espontânea) geralmente ocorre em pacientes com ascite prévia (como cirróticos). O início costuma ser mais insidioso, não apresenta sinal de Jobert (pneumoperitônio) e o tratamento é predominantemente medicamentoso com antibióticos, não cirúrgico imediato.\n\nb) Incorreta. A trombose mesentérica (abdome agudo isquêmico) manifesta-se tipicamente com uma dor desproporcional ao exame físico inicial (dor intensa com abdome ainda compressível). Embora possa evoluir para perfuração em estágios tardios, o sinal de Jobert e a rigidez em tábua precoce direcionam o raciocínio para a perfuração primária. Além disso, diante de peritonite franca, a conduta é cirúrgica, e não apenas diagnóstica por imagem.\n\nc) Incorreta. A hemorragia intracavitária (abdome agudo hemorrágico) costuma apresentar sinais de choque hipovolêmico ou instabilidade hemodinâmica, o que não ocorre nesta paciente no momento. Além disso, o sangue livre na cavidade causa irritação peritoneal, mas não gera pneumoperitônio (sinal de Jobert).\n\nd) Incorreta. O abscesso hepático manifesta-se habitualmente com febre, dor no hipocôndrio direito e sintomas constitucionais ao longo de dias, e não com um quadro súbito de abdome em tábua e pneumoperitônio.\n\ne) Correta. A tríade de dor súbita, abdome em tábua e sinal de Jobert presente é a descrição típica da perfuração de víscera oca. O ar que escapa da víscera perfurada se aloja entre o fígado e o diafragma, causando o timpanismo à percussão (Jobert). A conduta para o abdome agudo perfurativo com peritonite generalizada é a abordagem cirúrgica de emergência para correção da lesão e lavagem da cavidade, seja por laparotomia ou laparoscopia.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Perfurativo"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:09.091Z"
+  },
+  {
+    "id": "AJUDA_92baa75a-bbcc-4a8f-93cd-b67e65a5ffca",
+    "originalId": "92baa75a-bbcc-4a8f-93cd-b67e65a5ffca",
+    "statement": "Considere as afirmativas abaixo sobre os Sistemas de Informação em Saúde e assinale V, para as que considerar verdadeiras, e F, para as que considerar falsas.\n\n(__) O SIM registra óbitos e respectivas causas, permitindo análises de mortalidade.\n(__) O SIH/SUS contempla autorizações de internação hospitalar do SUS; não cobre integralmente atendimentos ambulatoriais/APS.\n(__) O SINAN reúne agravos de notificação; não substitui o SIM para estatísticas de mortalidade.\n(__) O SIVEP-Gripe abrange SRAG por influenza/COVID-19, incluindo casos hospitalizados e óbitos\n\nAssinale a correlação CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V – F – V – V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V – V – F – V",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V – V – V – V",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "F – V – V – F",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise detalhada da questão sobre Sistemas de Informação em Saúde (SIS):\n\nAfirmativa 1: O SIM registra óbitos e respectivas causas, permitindo análises de mortalidade.\nVerdadeira. O SIM (Sistema de Informações sobre Mortalidade) é um dos sistemas mais antigos do Brasil, criado na década de 1970. Seu documento-base é a Declaração de Óbito (DO). Ele é a ferramenta oficial para coletar dados sobre a causa básica e as causas contribuintes de morte, sendo essencial para o cálculo de indicadores como a taxa de mortalidade infantil e materna.\n\nAfirmativa 2: O SIH/SUS contempla autorizações de internação hospitalar do SUS; não cobre integralmente atendimentos ambulatoriais/APS.\nVerdadeira. O SIH (Sistema de Informações Hospitalares) é alimentado pela AIH (Autorização de Internação Hospitalar). Ele foca no registro de internações para fins de faturamento e gestão clínica no ambiente hospitalar. Para os atendimentos que ocorrem fora da internação, utilizam-se outros sistemas: o SIA (Sistema de Informações Ambulatoriais) para procedimentos especializados e o e-SUS APS para os atendimentos na Atenção Primária.\n\nAfirmativa 3: O SINAN reúne agravos de notificação; não substitui o SIM para estatísticas de mortalidade.\nVerdadeira. O SINAN (Sistema de Informação de Agravos de Notificação) é utilizado para o registro de doenças e agravos que constam na Lista Nacional de Notificação Compulsória (como dengue, tuberculose e hanseníase). Embora o SINAN registre o desfecho do caso (se o paciente se curou ou faleceu), ele não substitui o SIM como fonte oficial de estatísticas de mortalidade do país. O SIM é o sistema jurídico e epidemiológico definitivo para o registro de óbitos.\n\nAfirmativa 4: O SIVEP-Gripe abrange SRAG por influenza/COVID-19, incluindo casos hospitalizados e óbitos.\nVerdadeira. O SIVEP-Gripe (Sistema de Vigilância Epidemiológica da Gripe) é o braço do SINAN voltado especificamente para a vigilância da Síndrome Respiratória Aguda Grave (SRAG). Ele registra todos os casos de SRAG que resultam em hospitalização ou óbito, independentemente do agente etiológico (influenza, COVID-19, vírus sincicial respiratório, entre outros).\n\nConclusão:\nTodas as afirmativas apresentadas estão corretas. Portanto, a sequência correta é V – V – V – V.\n\nGabarito: Alternativa (c).",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Sistemas de Informação em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:09.091Z"
+  },
+  {
+    "id": "AJUDA_92cdad96-0aa2-4e53-9fdb-b87ef7dc34cb",
+    "originalId": "92cdad96-0aa2-4e53-9fdb-b87ef7dc34cb",
+    "statement": "M.N.B, sexo masculino, 74 anos, apresenta queixas de perda de memória, astenia e parestesias em membros inferiores. Portador de dislipidemia em uso de Atorvastatina 10 mg/dia. Passado de gastrectomia subtotal há 10 anos. Exames laboratoriais revelam Hemoglobina 7,4 g/dL, Volume corpuscular médio (VCM) de 119 fL e hipersegmentação de neutrófilos. Assinale a alternativa que presenta, respectivamente, a causa mais provável dos sintomas e o tratamento mais apropriado para o paciente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deficiência de ácido fólico; administração enteral de ácido fólico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deficiência de cobalamina; administração enteral de vitamina B12.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deficiência de ferro; administração parenteral de sulfato ferroso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Deficiência de ferro; administração enteral de sulfato ferroso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Deficiência de cobalamina; administração parenteral de vitamina B12.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente apresenta um quadro clássico de anemia megaloblástica, caracterizada por anemia (Hemoglobina 7,4 g/dL) com Volume Corpuscular Médio (VCM) elevado (119 fL) e presença de neutrófilos hipersegmentados no sangue periférico. O diferencial mais importante aqui é entre a deficiência de vitamina B12 (cobalamina) e a de ácido fólico. \n\nTrês pontos fundamentais direcionam para a deficiência de vitamina B12:\n1. Sintomas neurológicos: A perda de memória e as parestesias são manifestações típicas da carência de B12, devido à desmielinização dos cordões posteriores e laterais da medula espinhal. A deficiência de ácido fólico não costuma cursar com alterações neurológicas.\n2. Antecedente cirúrgico: A gastrectomia subtotal ocorrida há 10 anos é o fator causal direto. A absorção da vitamina B12 depende do ácido clorídrico (para liberar a vitamina dos alimentos) e do fator intrínseco (produzido pelas células parietais do estômago) para sua absorção no íleo distal. Sem o estômago ou com sua área reduzida, a absorção fica gravemente comprometida.\n3. Tempo de evolução: Os estoques corporais de B12 são vastos e levam de 3 a 10 anos para se esgotarem após a interrupção da absorção, o que coincide perfeitamente com o histórico de 10 anos de pós-operatório do paciente.\n\nPOR QUE A ALTERNATIVA (E) ESTÁ CORRETA?\nA causa é a deficiência de cobalamina (vitamina B12), justificada pela clínica neurológica e pelo antecedente de gastrectomia. O tratamento deve ser feito preferencialmente por via parenteral (intramuscular), pois o paciente não possui a fisiologia gástrica necessária para absorver a vitamina via oral de forma eficaz (falta de fator intrínseco e acidez).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: Embora a deficiência de ácido fólico cause anemia macrocítica e hipersegmentação de neutrófilos, ela não justifica os sintomas neurológicos apresentados. Além disso, o histórico de gastrectomia aponta especificamente para o metabolismo da B12.\n\nAlternativa B: O diagnóstico da deficiência está correto, porém a via enteral (oral) não é a mais apropriada para um paciente gastrectomizado com sintomas neurológicos. Em casos de má absorção grave ou manifestações neurológicas, a reposição parenteral é mandatória para garantir a biodisponibilidade e a reversão dos sintomas.\n\nAlternativa C: A deficiência de ferro causa anemia microcítica (VCM baixo), e não macrocítica (VCM alto), como a observada neste paciente (119 fL).\n\nAlternativa D: Assim como na alternativa anterior, a deficiência de ferro não condiz com o achado laboratorial de macrocitose e hipersegmentação de neutrófilos. Além disso, o ferro não justifica a parestesia e a perda de memória.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:09.091Z"
+  },
+  {
+    "id": "AJUDA_92d4667a-5ba3-4070-a2f5-628dad8ff9d4",
+    "originalId": "92d4667a-5ba3-4070-a2f5-628dad8ff9d4",
+    "statement": "Nossa paciente, que sempre foi uma pessoa ativa e disposta, refere ter perdido a vontade de realizar as atividades que antes adorava. Há quase dois meses, deixou de sentir o habitual prazer antes desfrutado em suas aulas de jardinagem. Não sente mais nenhum interesse pelas suas práticas de ioga, tampouco sente prazer nas brincadeiras com o seu pet. Não se sente triste, nem de mau humor ou desanimada. Dorme muito tarde e acorda já na hora do almoço. Essas características são sugestivas de qual sintoma clínico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Anedonia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Disforia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Distimia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hipotimia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão descreve uma paciente que apresenta a perda da capacidade de sentir prazer ou interesse em atividades que anteriormente eram gratificantes, como jardinagem, ioga e brincar com seu animal de estimação. Esse quadro é a definição clássica de um sintoma psicopatológico específico.\n\nAlternativa a: Esta é a alternativa correta. A anedonia é definida como a incapacidade total ou parcial de sentir prazer em atividades que antes eram prazerosas para o indivíduo. É um dos sintomas cardinais dos episódios depressivos. O enunciado enfatiza que, apesar de a paciente relatar que não se sente triste (ausência de hipotimia), ela perdeu o interesse e o prazer habitual, o que caracteriza precisamente a anedonia.\n\nAlternativa b: Está incorreta. A disforia é um estado emocional de mal-estar geral, caracterizado por sentimentos de ansiedade, insatisfação, inquietação e, muitas vezes, irritabilidade ou humor reativo (\"pavio curto\"). A paciente do caso nega explicitamente estar de mau humor ou desanimada.\n\nAlternativa c: Está incorreta. A distimia (atualmente classificada como Transtorno Depressivo Persistente) não é um sintoma, mas sim um diagnóstico nosológico. Refere-se a um quadro depressivo crônico, de intensidade leve a moderada, que persiste por pelo menos dois anos. O enunciado solicita a identificação de um sintoma clínico específico em um quadro de dois meses de evolução.\n\nAlternativa d: Está incorreta. A hipotimia é a diminuição do tônus afetivo e da intensidade das emoções, manifestando-se clinicamente como tristeza, melancolia ou desânimo. Como a paciente afirma expressamente que não se sente triste nem desanimada, o termo não se aplica ao caso, que foca exclusivamente na perda do prazer (anedonia).",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Psicopatologia",
+      "Transtornos do Humor"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:09.091Z"
+  },
+  {
+    "id": "AJUDA_92d963dd-02c4-4b02-be60-c1a0d9c200ac",
+    "originalId": "92d963dd-02c4-4b02-be60-c1a0d9c200ac",
+    "statement": "A gastrectomia vertical, também conhecida como cirurgia de Sleeve, é uma técnica bariátrica que transforma o estômago em um tubo. Sobre o assunto, há as seguintes afirmativas:\n\nI. A gastrectomia vertical é considerada uma técnica cirúrgica puramente restritiva.\nII. A gastrectomia vertical não apresenta eficácia significativa no controle da hipertensão.\nIII. A capacidade do estômago após a gastrectomia vertical é de 80 a 100 mililitros.\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F, F, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "F, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das afirmativas:\n\nAfirmativa I (Falsa): Antigamente, a gastrectomia vertical era classificada como um procedimento puramente restritivo por reduzir o volume do reservatório gástrico. No entanto, o entendimento atual a define como uma cirurgia metabólica. A retirada do fundo gástrico provoca uma redução drástica nos níveis de grelina (hormônio da fome), e o esvaziamento gástrico mais rápido estimula precocemente a secreção de incretinas (como o GLP-1 e o PYY) no intestino delgado. Portanto, existem mecanismos hormonais e metabólicos envolvidos, não sendo apenas uma restrição física.\n\nAfirmativa II (Falsa): A gastrectomia vertical apresenta, sim, eficácia significativa no controle e até na remissão da hipertensão arterial sistêmica. A perda de peso sustentada, a melhora da sensibilidade à insulina e a redução da inflamação sistêmica pós-operatória contribuem diretamente para a melhora dos níveis pressóricos na maioria dos pacientes submetidos ao procedimento.\n\nAfirmativa III (Verdadeira): Na técnica de Sleeve, o cirurgião retira cerca de 75 a 80 por cento do estômago ao longo da grande curvatura, utilizando uma sonda de calibração (frouxa ou justa) para guiar o grampeamento. O resultado final é um estômago em formato de tubo (ou manga) com uma capacidade volumétrica reduzida, que geralmente se situa na faixa de 80 a 100 mililitros, embora possa variar levemente dependendo do calibre da sonda utilizada.\n\nAnálise das alternativas:\n\na) Incorreta. A afirmativa I é falsa pelos componentes metabólicos/hormonais citados.\n\nb) Incorreta. As afirmativas I e II são falsas.\n\nc) Incorreta. A afirmativa III é verdadeira, pois descreve corretamente a volumetria final do estômago operado.\n\nd) Correta. Esta alternativa correlaciona corretamente as afirmativas I e II como falsas e a afirmativa III como verdadeira.\n\nGabarito: Letra (d).",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Cirurgia Bariátrica e Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:18:09.091Z"
+  }
+]

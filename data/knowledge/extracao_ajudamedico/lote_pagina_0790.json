@@ -1,0 +1,486 @@
+[
+  {
+    "id": "AJUDA_dc041a6c-a30d-4462-8b13-b0ffdf1c7900",
+    "originalId": "dc041a6c-a30d-4462-8b13-b0ffdf1c7900",
+    "statement": "Paciente cirrótico com ascite volumosa apresenta febre, dor abdominal difusa e confusão mental. A paracentese diagnóstica revela líquido ascítico com 600 polimorfonucleares/mm³. A conduta terapêutica imediata é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar paracentese de alívio total com reposição de albumina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aguardar o resultado da cultura do líquido ascítico para iniciar antibióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar antibioticoterapia empírica com cefalosporina de terceira geração (ex: Cefotaxima ou Ceftriaxona).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Administrar diuréticos em altas doses para reduzir a ascite.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito apresenta a tríade clássica de Peritonite Bacteriana Espontânea (PBE): febre, dor abdominal e encefalopatia (confusão mental) em um paciente cirrótico com ascite. O critério diagnóstico padrão-ouro para PBE é a presença de mais de 250 polimorfonucleares (PMN) por mm³ no líquido ascítico, independentemente do resultado da cultura. No caso em questão, o paciente apresenta 600 PMN/mm³, confirmando o diagnóstico e exigindo intervenção imediata.\n\nAlternativa (a) Incorreta: A paracentese de alívio com reposição de albumina é uma medida para controle de sintomas em ascites volumosas ou tensas que causam desconforto respiratório ou dor. Embora o paciente tenha ascite volumosa, a prioridade absoluta diante de uma infecção aguda (PBE) é o início da antibioticoterapia para reduzir a mortalidade e prevenir complicações como a síndrome hepatorrenal.\n\nAlternativa (b) Incorreta: Jamais se deve aguardar o resultado da cultura para iniciar o tratamento da PBE. A cultura do líquido ascítico é frequentemente negativa (em até 40% dos casos) e o resultado demora de 48 a 72 horas. Como a PBE tem alta taxa de mortalidade se não tratada precocemente, o diagnóstico é baseado exclusivamente na contagem de neutrófilos (PMN > 250/mm³).\n\nAlternativa (c) Correta: A conduta imediata e correta é o início de antibioticoterapia empírica com cefalosporinas de terceira geração (cefotaxima ou ceftriaxona). Esses fármacos cobrem os agentes etiológicos mais comuns da PBE, que são as bactérias Gram-negativas de origem entérica, como a Escherichia coli e a Klebsiella pneumoniae. Além do antibiótico, as diretrizes também recomendam o uso de albumina intravenosa (1,5 g/kg no 1º dia e 1,0 g/kg no 3º dia) para prevenir a insuficiência renal, que é a principal causa de morte nesses pacientes.\n\nAlternativa (d) Incorreta: Diuréticos devem ser suspensos em pacientes com PBE, especialmente naqueles com sinais de confusão mental ou risco de insuficiência renal. O uso de diuréticos em altas doses pode agravar a desidratação, piorar a função renal e exacerbar a encefalopatia hepática durante um quadro infeccioso agudo. O manejo da ascite volumosa torna-se secundário ao tratamento da infecção.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:14.338Z"
+  },
+  {
+    "id": "AJUDA_dc0ce21c-c049-4954-97aa-495791ca6504",
+    "originalId": "dc0ce21c-c049-4954-97aa-495791ca6504",
+    "statement": "Mulher de 76 anos, hipertensa, iniciou hidroclorotiazida 25 mg/dia há três semanas. Procura a emergência por fraqueza, náuseas e sonolência leve, iniciadas há dois dias. Nega convulsões, perda da consciência, vômitos, diarreia ou insuficiência cardíaca. Ao exame físico, encontra-se orientada, hemodinamicamente estável, sem edema e sem sinais de desidratação. Os exames mostram: sódio sérico 124 mEq/L, potássio 3,2 mEq/L, glicemia 96 mg/dL, creatinina 0,8 mg/Dl e osmolaridade sérica reduzida. Qual é a conduta inicial mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter a hidroclorotiazida e aumentar a ingestão de sal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar solução salina hipertônica imediatamente, independentemente da intensidade dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Suspender a hidroclorotiazida, restringir água livre e monitorar a correção do sódio, evitando correção rápida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar furosemida, mantendo a hidroclorotiazida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Prescrever desmopressina para reduzir a diurese.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma paciente idosa com hiponatremia hipotônica (sódio 124 mEq/L e osmolaridade reduzida) e hipocalemia leve (potássio 3,2 mEq/L), iniciadas três semanas após a introdução de um diurético tiazídico (hidroclorotiazida). Clinicamente, ela apresenta sintomas neurológicos leves (sonolência e náuseas) e está euvolêmica (sem sinais de desidratação ou edema).\n\nA hiponatremia induzida por tiazídicos é uma complicação comum em idosos e ocorre tipicamente nas primeiras semanas de tratamento. O mecanismo envolve a perda de sódio e potássio na urina e, principalmente, a manutenção da capacidade de concentração urinária sob ação do ADH, o que leva à retenção de água livre. Como a paciente está estável e sem sintomas graves (convulsões ou coma), a correção deve ser gradual para evitar a Síndrome de Desmielinização Osmótica.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\nA conduta fundamental na hiponatremia secundária ao uso de tiazídicos é suspender a medicação causadora. Como a paciente está euvolêmica e com sintomas leves, a restrição de água livre auxilia o organismo a recuperar a osmolaridade plasmática de forma segura. O monitoramento rigoroso é essencial para garantir que a correção não ultrapasse os limites recomendados (geralmente 8 a 10 mEq/L em 24 horas).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a): Manter a hidroclorotiazida perpetuaria o mecanismo de perda de sódio e retenção de água. O aumento da ingestão de sal isoladamente é insuficiente se o fármaco continuar bloqueando a reabsorção de sódio no túbulo contorcido distal.\n\nAlternativa (b): A solução salina hipertônica (NaCl 3%) é indicada para casos de hiponatremia aguda e grave, com sintomas neurológicos severos (crises convulsivas, coma ou sinais de herniação cerebral). A paciente em questão está orientada e estável, o que contraindica o uso imediato de hipertônica pelo risco de correção excessivamente rápida.\n\nAlternativa (d): A furosemida é um diurético de alça. Embora possa ser usada em alguns protocolos de hiponatremia (associada a salina) para aumentar a excreção de água livre, manter a hidroclorotiazida é um erro terapêutico grave, pois ela é a causa direta do distúrbio metabólico.\n\nAlternativa (e): A desmopressina (DDAVP) é um análogo do ADH que retém água. Ela é utilizada em casos onde a correção do sódio está ocorrendo de forma perigosamente rápida (\"freio terapêutico\") para evitar a subida brusca da natremia. Não deve ser usada como prescrição inicial para tratar a hiponatremia em si, pois pioraria o quadro de diluição.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Distúrbios do Sódio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:14.339Z"
+  },
+  {
+    "id": "AJUDA_dc0d861b-ce8e-4d62-bc22-33d2ca5a6c82",
+    "originalId": "dc0d861b-ce8e-4d62-bc22-33d2ca5a6c82",
+    "statement": "Paciente de 55 anos de idade queixa-se de cefaleia, principalmente ao redor dos olhos, refere fotofobia, visão de halos e baixa acuidade visual em olho direito (OD) há um dia. Exame ocular: OD com hiperemia conjuntival, motilidade preservada e pupila em média midríase, não fotorreagente.\n\nO diagnóstico provável é",
+    "options": [
+      {
+        "id": "A",
+        "text": "neurite óptica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "esclerite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "uveíte anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "glaucoma agudo.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO quadro descrito apresenta um paciente na faixa etária de risco (55 anos) com sintomas e sinais clássicos de uma emergência oftalmológica. Os pontos fundamentais para o diagnóstico são a dor intensa (cefaleia e dor periocular), a baixa acuidade visual com visão de halos (que indica edema de córnea devido ao aumento súbito da pressão intraocular) e a pupila em média midríase fixa (não reativa à luz).\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) NEURITE ÓPTICA: A neurite costuma cursar com perda de visão e dor, mas a dor é tipicamente exacerbada pela movimentação ocular. Ao exame físico, o olho geralmente apresenta-se calmo, sem a hiperemia conjuntival descrita. Além disso, o achado pupilar característico é o defeito pupilar aferente relativo (pupila de Marcus Gunn) e não a midríase média fixa.\n\nb) ESCLERITE: A esclerite causa dor ocular profunda e intensa, acompanhada de hiperemia ocular que não cede com vasoconstritores tópicos. No entanto, não costuma causar a tríade de edema de córnea (halos), baixa acuidade visual severa e paralisia pupilar em midríase de forma aguda como relatado no caso.\n\nc) UVEÍTE ANTERIOR: Esta patologia também causa olho vermelho, dor e fotofobia. Contudo, a diferença crucial reside na pupila: na uveíte anterior, a pupila apresenta-se em miose (contraída) e muitas vezes irregular devido à formação de sinéquias (aderências da íris no cristalino). A visão de halos também não é um achado comum na uveíte, sendo mais específica do glaucoma agudo.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nd) GLAUCOMA AGUDO: O quadro é típico do fechamento angular agudo. O aumento abrupto da pressão intraocular (frequentemente acima de 40-50 mmHg) causa edema do epitélio corneano, o que leva à percepção de halos coloridos ao redor das luzes e embaçamento visual. A pressão elevada causa isquemia do músculo esfíncter da íris, resultando na pupila em média midríase e paralisada (sem resposta à luz). A congestão vascular gera a hiperemia conjuntival e a dor referida como cefaleia e dor periocular. É uma situação que requer intervenção imediata para reduzir a pressão e prevenir danos permanentes ao nervo óptico.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndrome do Olho Vermelho",
+      "Glaucoma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:14.339Z"
+  },
+  {
+    "id": "AJUDA_dc1117ce-5b5c-4b3f-80b7-c08374702f30",
+    "originalId": "dc1117ce-5b5c-4b3f-80b7-c08374702f30",
+    "statement": "Uma mulher de 30 anos no segundo trimestre apresenta-se à clínica de obstetrícia com dor aguda no flanco e náusea. Sua análise de urina é negativa para nitritos e demonstra 20 hemácias e 0 leucócitos por campo. A ultrassonografia demonstra um cálculo ureteral proximal de 5 mm. Qual é a opção de tratamento preferida para cálculos ureterais na gravidez?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Terapia expulsiva medicamentosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ureteroscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Nefrostomia percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A conduta inicial preferencial para o manejo da nefrolitíase e ureterolitíase não complicada na gravidez é o tratamento conservador, baseado em observação, hidratação e analgesia. Cerca de 70% a 80% dos cálculos ureterais em gestantes são eliminados espontaneamente, taxa favorecida por dimensões menores ou iguais a 5 mm e pelas alterações fisiológicas do trato urinário na gestação. O exame de urina afasta infecção bacteriana (nitritos negativos e ausência de leucocitúria), permitindo uma abordagem não invasiva segura.\n\nAlternativa A (Correta): A observação com controle de sintomas e hidratação é a terapia de primeira linha em gestantes com cálculo ureteral pequeno e sem critérios de gravidade (como urosepse, insuficiência renal aguda ou dor refratária). \n\nAlternativa B (Incorreta): A terapia expulsiva medicamentosa (TEM) com alfa-bloqueadores (como tansulosina) é amplamente utilizada na população geral, mas seu uso é restrito e não constitui primeira escolha na gestação devido a dados limitados sobre segurança fetal e risco de efeitos adversos hemodinâmicos maternos.\n\nAlternativa C (Incorreta): A ureteroscopia é o método cirúrgico de escolha quando o tratamento conservador falha ou há indicação de intervenção imediata, mas não deve ser realizada como primeira opção em um cálculo de 5 mm sem complicações.\n\nAlternativa D (Incorreta): A nefrostomia percutânea é uma alternativa de descompressão urinária de urgência, reservada para quadros de obstrução complicada com infecção grave (urosepse) ou falha de procedimentos retrógrados, não sendo indicada no manejo inicial deste caso.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:14.339Z"
+  },
+  {
+    "id": "AJUDA_dc152f2a-7d54-4ec1-82d5-50500574efd0",
+    "originalId": "dc152f2a-7d54-4ec1-82d5-50500574efd0",
+    "statement": "Sobre os erros em testes estatísticos, analise as sentenças:\n\n1. O Erro Tipo I (alfa) ocorre quando rejeitamos a hipótese nula sendo ela verdadeira (falso-positivo).\n2. O Erro Tipo II (beta) ocorre quando não rejeitamos a hipótese nula sendo ela falsa (falso-negativo).\n3. O Poder do estudo é a capacidade de detectar uma diferença quando ela realmente existe (1-beta).\n\nConsiderando-se as afirmativas como verdadeiras (V) ou falsas (F), a alternativa CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1-F, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "1-V, 2-F, 3-V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1-V, 2-V, 3-F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "1-V, 2-V, 3-V.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender esta questão, precisamos revisar os conceitos fundamentais de testes de hipóteses na bioestatística. Em qualquer estudo clínico, trabalhamos com a Hipótese Nula (H0), que geralmente afirma que não há diferença entre os grupos, e a Hipótese Alternativa (H1), que afirma que existe uma diferença.\n\nAnálise das sentenças:\n\n1. O Erro Tipo I (alfa) ocorre quando rejeitamos a hipótese nula, sendo ela verdadeira (falso-positivo): VERDADEIRA. O erro tipo I acontece quando o pesquisador conclui que existe uma diferença ou efeito (rejeita H0), mas, na realidade, essa diferença não existe. É o equivalente a um resultado \"falso-positivo\" em um teste diagnóstico: você diz que o paciente tem a doença (diferença) quando ele está saudável (sem diferença).\n\n2. O Erro Tipo II (beta) ocorre quando não rejeitamos a hipótese nula, sendo ela falsa (falso-negativo): VERDADEIRA. O erro tipo II acontece quando o estudo não consegue demonstrar uma diferença estatisticamente significativa, embora essa diferença realmente exista na natureza. É o \"falso-negativo\": o pesquisador afirma que não há diferença entre os tratamentos, mas na verdade existe.\n\n3. O Poder do estudo é a capacidade de detectar uma diferença quando ela realmente existe (1-beta): VERDADEIRA. O Poder Estatístico representa a probabilidade de o estudo encontrar um resultado positivo se o tratamento realmente funcionar. Matematicamente, ele é o complementar do Erro Tipo II (1 menos beta). Se o risco de cometer um erro falso-negativo (beta) é de 20%, o poder do estudo é de 80%.\n\nAnálise das alternativas:\n\nComo todas as sentenças (1, 2 e 3) são verdadeiras, a sequência correta é V, V, V.\n\na) Incorreta. Afirma que a sentença 1 é falsa, mas o Erro Tipo I é exatamente a rejeição de uma H0 verdadeira.\nb) Incorreta. Afirma que a sentença 2 é falsa, mas o Erro Tipo II é exatamente a não rejeição de uma H0 falsa.\nc) Incorreta. Afirma que a sentença 3 é falsa, mas o Poder do estudo é definido tecnicamente como 1-beta.\nd) CORRETA. Esta alternativa valida corretamente que as três afirmações estão de acordo com os conceitos clássicos de estatística inferencial.\n\nResumo para memorização:\n- Erro Alfa (I): Condenar um inocente (Dizer que há diferença sem haver).\n- Erro Beta (II): Absolver um culpado (Dizer que não há diferença existindo uma).\n- Poder (1-Beta): Capacidade de condenar quem é culpado (Achar a diferença que existe).",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:14.339Z"
+  },
+  {
+    "id": "AJUDA_dc155990-5aed-4fc1-ace1-2e289dfad2ee",
+    "originalId": "dc155990-5aed-4fc1-ace1-2e289dfad2ee",
+    "statement": "Um paciente apresenta espermograma com as seguintes características: volume - 3 ml; Concentração 12 M/mL; Motilidade (A+B): 40%; e morfologia estrita de Kruger de 1%. Com base nesse caso hipotético, é CORRETO afirmar que o laudo do exame é o de:\nReferência (OMS-2021) Concentração >= 16 M/mL // Motilidade (A+B) >= 30% // Normais (Kruger) >=4%.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Oligoastenoteratozoospermia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Oligoteratozoospermia;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Oligoasternozoospermia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Astenospermia",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para analisar o laudo do espermograma apresentado, devemos confrontar os valores do paciente com os critérios de normalidade da Organização Mundial da Saúde (OMS 2021), conforme fornecidos na própria questão.\n\nAnálise dos parâmetros do paciente:\n\n1. Volume (3 mL): Está dentro da normalidade (valor de referência OMS >= 1,4 mL).\n2. Concentração (12 M/mL): Está abaixo do valor de referência (>= 16 M/mL). A redução na concentração de espermatozoides é denominada OLIGOZOOSPERMIA.\n3. Motilidade Progressiva A+B (40%): Está acima do valor de referência (>= 30%). Portanto, a motilidade está NORMAL.\n4. Morfologia Estrita de Kruger (1%): Está abaixo do valor de referência (>= 4%). A presença de formas normais abaixo do limite é denominada TERATOZOOSPERMIA.\n\nAnálise das alternativas:\n\na) Incorreta. O termo \"asteno\" refere-se à diminuição da motilidade. Como o paciente apresenta 40% de motilidade (acima dos 30% de referência), ele não possui astenozoospermia.\n\nb) Correta. O paciente apresenta simultaneamente uma baixa concentração de espermatozoides (oligozoospermia) e uma baixa porcentagem de formas morfologicamente normais (teratozoospermia), definindo o quadro de oligoteratozoospermia.\n\nc) Incorreta. A alternativa indica alteração na motilidade (asteno), que está normal no paciente, e falha ao não mencionar a alteração morfológica (terato), que é o achado mais grave do exame (1%).\n\nd) Incorreta. Astenospermia refere-se apenas à motilidade alterada. Além de a motilidade estar normal, o termo isolado ignora as alterações de concentração e morfologia identificadas no exame.\n\nConclusão: O diagnóstico baseia-se na presença de oligozoospermia (concentração de 12 M/mL) e teratozoospermia (morfologia de 1%), com preservação da motilidade, resultando em Oligoteratozoospermia.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Infertilidade Conjugal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:14.339Z"
+  },
+  {
+    "id": "AJUDA_dc1c4201-fe04-47e6-89fc-5cff3b18d1b8",
+    "originalId": "dc1c4201-fe04-47e6-89fc-5cff3b18d1b8",
+    "statement": "Um paciente de 28 anos de idade procurou o pronto atendimento por dor abdominal iniciada há 18 horas em região periumbilical, migrando para fossa ilíaca direita. Referiu náuseas, hiporexia e febrícula. Ao exame físico, o paciente apresentava-se lúcido, com dor localizada em fossa ilíaca direita, sinal de Blumberg discretamente positivo; FC = 104 bpm, FR = 20 irpm, PA = 122 mmHg x 78 mmHg e temperatura = 37,8 °C. O hemograma leucócitos = 14.900/mm3 com neutrofilia, e a ultrassonografia evidenciou apêndice não compressível, com diâmetro de 8 mm e espessamento de parede. Assinale a alternativa que corresponde à principal alteração fisiopatológica responsável pela progressão da apendicite aguda.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Espasmo muscular liso da parede intestinal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumento da secreção biliar pelo intestino delgado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Alteração da motilidade cólica difusa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obstrução luminal com isquemia subsequente da parede apendicular",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO caso clínico descreve um paciente com o quadro clássico de apendicite aguda: dor periumbilical que migra para a fossa ilíaca direita (migração da dor de Kocher), náuseas, hiporexia, febrícula e sinal de Blumberg (descompressão dolorosa). Os exames laboratoriais confirmam leucocitose com desvio à esquerda, e a ultrassonografia demonstra sinais diretos de inflamação apendicular, como diâmetro superior a 6 mm e a não compressibilidade do órgão.\n\nFISIOPATOLOGIA DA APENDICITE AGUDA\nA fisiopatologia da apendicite aguda segue uma sequência bem definida de eventos. O evento inicial e fundamental é a obstrução da luz apendicular. Em adultos, a causa mais comum é a presença de um fecalito (apendicolito), enquanto, em crianças e jovens, a hiperplasia linfoide é o principal fator obstrutivo. Outras causas incluem parasitas (como o *Enterobius vermicularis*), restos alimentares e neoplasias.\n\nApós a obstrução, ocorre o seguinte ciclo:\n1. Acúmulo de secreção mucosa: O apêndice continua produzindo muco, mas a obstrução impede sua drenagem para o ceco.\n2. Distensão e aumento da pressão intraluminal: A pressão dentro do órgão sobe rapidamente.\n3. Comprometimento vascular: Inicialmente, ocorre obstrução da drenagem linfática e venosa (gerando edema e dor visceral). Com o aumento progressivo da pressão, a perfusão arterial é comprometida.\n4. Isquemia e necrose: A isquemia da parede leva à perda da integridade da mucosa e à invasão bacteriana, progredindo para gangrena e perfuração.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Incorreta. Embora possa haver espasmo reflexo em quadros inflamatórios abdominais, a fisiopatologia da apendicite não é centrada na musculatura lisa intestinal, mas sim na obstrução da luz e no consequente comprometimento vascular.\n\nb) Incorreta. A secreção biliar é lançada na segunda porção do duodeno e não possui relação com a gênese da apendicite aguda. Alterações na secreção biliar não influenciam a inflamação do apêndice cecal.\n\nc) Incorreta. Na fase tardia da apendicite, com peritonite instalada, pode ocorrer um íleo paralítico (diminuição da motilidade), mas a \"alteração da motilidade cólica difusa\" não é o mecanismo responsável pela progressão da doença em si.\n\nd) Correta. Esta alternativa descreve o mecanismo central da doença. A obstrução luminal (seja por fecalito, hiperplasia ou outros fatores) é o gatilho que desencadeia o aumento da pressão intraluminal, resultando em isquemia da parede e subsequente evolução para as fases supurativa, gangrenosa e perfurativa.\n\nGabarito: Letra (d).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:14.339Z"
+  },
+  {
+    "id": "AJUDA_dc1dee96-f47c-43ae-8311-1d134855c4bd",
+    "originalId": "dc1dee96-f47c-43ae-8311-1d134855c4bd",
+    "statement": "Os anticoncepcionais orais combinados (COCs) mudaram significativamente nos últimos cinquenta anos. Embora a maioria utilize o EE, as doses diminuíram de 50 µg para 30, 20 e 15 µg, e dois novos compostos utilizam estrógeno natural. A síntese de uma ampla variedade de progestagênios objetivou diminuir efeitos não contraceptivos como hirsutismo, acne, oleosidade da pele e do couro cabeludo ou retenção hídrica. \n\nEm relação aos COCs relatados abaixo, qual desses desempenha o maior efeito androgênico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Etinilestradiol + Acetato de clomardinona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Etinilestradiol + Gestodeno",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Etinilestradiol + Drospirenona",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Etinilestradiol + Acetato de ciproterona",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a questão, é fundamental classificar os progestagênios de acordo com sua origem química e sua interação com os receptores de androgênios. Os progestagênios podem ter ação androgênica (estimulam receptores de testosterona, podendo causar acne e oleosidade) ou ação antiandrogênica (bloqueiam esses receptores, tratando o excesso de pelos e acne).\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa (a) INCORRETA: O Acetato de clormadinona é um derivado da progesterona (grupo dos pregnanos). Ele possui uma ação antiandrogênica, sendo utilizado clinicamente para melhorar a pele e diminuir sintomas relacionados ao excesso de androgênios.\n\nAlternativa (b) CORRETA: O Gestodeno é um progestagênio de terceira geração, derivado da 19-nortestosterona (grupo dos gonanos). Por ser um derivado sintético da testosterona, ele mantém uma atividade androgênica residual. Embora essa atividade seja menor do que a observada em progestagênios de segunda geração (como o levonorgestrel), entre todas as opções apresentadas na questão, o Gestodeno é o único que possui efeito androgênico. Todas as outras opções são fármacos especificamente antiandrogênicos.\n\nAlternativa (c) INCORRETA: A Drospirenona é um progestagênio único, derivado da espironolactona. Ela possui propriedades antimineralocorticoides (reduz a retenção de líquidos) e propriedades antiandrogênicas potentes, sendo muito prescrita para pacientes com síndrome dos ovários policísticos ou queixas de acne.\n\nAlternativa (d) INCORRETA: O Acetato de ciproterona é considerado o progestagênio com o maior efeito antiandrogênico disponível na terapêutica. Ele compete diretamente com a di-hidrotestosterona (DHT) pelos receptores androgênicos, sendo o tratamento de escolha para casos moderados a graves de hirsutismo e acne virilizante.\n\nRESUMO:\nPara identificar a resposta correta, o estudante deve notar que as alternativas A, C e D descrevem progestagênios com perfil \"antiandrogênico\". O Gestodeno (Alternativa B) é o único progestagênio da lista derivado da testosterona que, por exclusão e por sua natureza química, desempenha o maior efeito androgênico comparativo.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:14.339Z"
+  },
+  {
+    "id": "AJUDA_dc1e6fad-fd85-4a6d-a375-b2cfa5a912e4",
+    "originalId": "dc1e6fad-fd85-4a6d-a375-b2cfa5a912e4",
+    "statement": "Marina, 18 meses, é levada à consulta de rotina pelos pais. Ela nasceu a termo, sem intercorrências, e teve o crescimento e desenvolvimento adequados. Ao revisar a caderneta vacinal, observa-se que ela recebeu todas as vacinas até 12 meses, mas não recebeu a dose de reforço da vacina tríplice viral (sarampo, caxumba e rubéola) e não completou o esquema da vacina pneumocócica conjugada (PCV10/13). Os pais relatam que Marina começou a frequentar a creche recentemente e que houve casos de sarampo confirmados na instituição. Não há sintomas presentes no momento. A pediatra precisa orientar sobre as medidas a serem tomadas.\n\nConsiderando o caso acima, assinale a alternativa mais adequada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Marina deve ser considerada protegida contra sarampo, caxumba e rubéola, pois recebeu todas as vacinas até 12 meses; não há necessidade de reforço.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vacinação pneumocócica é desnecessária, pois a criança está acima de 12 meses e não apresenta doenças crônicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Como Marina não apresenta sintomas, não há necessidade de nenhuma intervenção vacinal até o próximo ano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O reforço da tríplice viral só deve ser administrado após comprovação laboratorial de ausência de anticorpos contra sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A criança deve receber imediatamente a dose de reforço da tríplice viral e completar o esquema pneumocócico, de acordo com calendário vacinal, pois está em situação de risco aumentado por contato com casos confirmados.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A análise desta questão exige o conhecimento do Calendário Nacional de Vacinação do Ministério da Saúde (PNI) e das condutas frente a atrasos vacinais e situações de risco epidemiológico.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a primeira dose da vacina tríplice viral (administrada aos 12 meses) confira uma proteção inicial importante, ela não é suficiente para garantir a imunidade plena e duradoura. O Programa Nacional de Imunizações recomenda uma segunda dose (seja como tetraviral ou tríplice viral + varicela) aos 15 meses de idade para cobrir eventuais falhas primárias da primeira dose e consolidar a proteção.\n\nAlternativa b) Incorreta. A vacina pneumocócica 10-valente (ou 13-valente na rede privada) possui um esquema de duas doses (2 e 4 meses) e um reforço preferencialmente aos 12 meses, que pode ser aplicado até os 4 anos, 11 meses e 29 dias. Como Marina tem 18 meses e não completou o esquema, ela está com o calendário atrasado e deve receber a dose faltante para proteção contra doenças invasivas (meningite, pneumonia e sepse) e otite média aguda.\n\nAlternativa c) Incorreta. A ausência de sintomas não justifica o atraso vacinal. Pelo contrário, a vacinação é uma medida de prevenção primária. Em um cenário de exposição ao sarampo em ambiente de creche, a atualização vacinal torna-se uma prioridade imediata para bloquear a cadeia de transmissão e proteger a criança.\n\nAlternativa d) Incorreta. Não se solicita sorologia (comprovação laboratorial de anticorpos) para decidir sobre a vacinação de rotina ou de bloqueio na infância. A conduta é baseada exclusivamente no histórico vacinal documentado na caderneta e na idade da criança.\n\nAlternativa e) Correta. Marina está com 18 meses, portanto, já deveria ter recebido o reforço da vacina pneumocócica (previsto para os 12 meses) e a segunda dose da vacina para sarampo, caxumba e rubéola (prevista para os 15 meses). A situação de surto/casos confirmados na creche reforça a necessidade de intervenção imediata para garantir a proteção individual e coletiva. O médico deve sempre aproveitar a oportunidade de contato com o serviço de saúde para atualizar todas as vacinas em atraso.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:14.339Z"
+  },
+  {
+    "id": "AJUDA_dc25b560-14ad-4fcf-b3f0-f48e044cf078",
+    "originalId": "dc25b560-14ad-4fcf-b3f0-f48e044cf078",
+    "statement": "O câncer de ovário epitelial é frequentemente diagnosticado em estádios avançados devido à ausência de sintomas específicos iniciais. O estadiamento cirúrgico adequado é o pilar fundamental para o prognóstico e definição da terapia adjuvante. Assinale a alternativa que apresenta a descrição correta dos procedimentos obrigatórios para o estadiamento cirúrgico completo de um câncer de ovário aparentemente inicial.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A linfadenectomia pode ser omitida em tumores mucinosos ou se a paciente tiver mais de 70 anos, pois a disseminação linfática é rara nesses subtipos histológicos e a morbidade do procedimento não justifica sua realização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A biópsia de congelação intraoperatória que confirma malignidade autoriza o cirurgião a realizar apenas a remoção dos anexos afetados, devendo a paciente ser reoperada posteriormente para completar o estadiamento se a histologia final confirmar o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O estadiamento completo exige histerectomia total, salpingo-ooforectomia bilateral, omentectomia infracólica, lavada peritoneal (ou coleta de líquido ascítico), biópsias peritoneais múltiplas (incluindo goteiras paracólicas e cúpula diafragmática) e linfadenectomia pélvica e para-aórtica sistemática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A realização apenas da salpingo-ooforectomia bilateral e histerectomia é suficiente para o estadiamento, desde que a tomografia computadorizada pré-operatória não evidencie linfonodomegalias ou implantes peritoneais visíveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O câncer de ovário epitelial é conhecido por sua disseminação silenciosa, ocorrendo principalmente por via transcelômica (pelo peritônio), linfática e hematogênica. Por isso, o estadiamento é fundamentalmente cirúrgico, visando identificar focos de doença não visíveis macroscopicamente.\n\nAlternativa (a) Incorreta: A idade da paciente (acima de 70 anos) não é, por si só, uma contraindicação para o estadiamento completo ou para a linfadenectomia, devendo-se avaliar o risco cirúrgico individual (performance status). Quanto ao subtipo mucinoso, embora a disseminação linfática seja menos frequente em casos puramente expansivos, a linfadenectomia ainda compõe o protocolo de estadiamento completo do câncer epitelial. O erro principal é generalizar a omissão baseada apenas na idade e no tipo histológico em um protocolo de estadiamento padrão.\n\nAlternativa (b) Incorreta: A biópsia de congelação serve justamente para guiar a extensão da cirurgia no momento em que a paciente já está em mesa cirúrgica. Se confirmada a malignidade, o cirurgião deve proceder com o estadiamento completo imediato. Realizar apenas a anexectomia para reoperar a paciente posteriormente (restaging) expõe a mulher a novos riscos anestésicos e cirúrgicos desnecessários, além de poder atrasar o início do tratamento adjuvante.\n\nAlternativa (c) Correta: Esta alternativa descreve o padrão-ouro para o estadiamento cirúrgico do câncer de ovário, conforme preconizado pela FIGO (Federação Internacional de Ginecologia e Obstetrícia). O procedimento deve ser minucioso para detectar doença oculta: \n1. Lavado peritoneal ou coleta de ascite para citologia (avalia disseminação microscópica).\n2. Histerectomia total com salpingo-ooforectomia bilateral (tratamento do tumor primário e órgãos de risco).\n3. Omentectomia infracólica (local frequente de metástases).\n4. Biópsias múltiplas de peritônio, incluindo cúpulas diafragmáticas e goteiras paracólicas.\n5. Linfadenectomia pélvica e para-aórtica sistemática (até o nível das veias renais), pois o ovário drena diretamente para a região para-aórtica alta.\n\nAlternativa (d) Incorreta: O estadiamento do câncer de ovário é cirúrgico-patológico. Os exames de imagem, como a tomografia computadorizada, possuem baixa sensibilidade para detectar micrometástases, implantes peritoneais milimétricos ou linfonodos de tamanho normal que contenham células neoplásicas. Portanto, uma tomografia normal não autoriza a simplificação da cirurgia; o inventário da cavidade e as biópsias são obrigatórios independentemente dos achados radiológicos pré-operatórios.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:14.339Z"
+  }
+]

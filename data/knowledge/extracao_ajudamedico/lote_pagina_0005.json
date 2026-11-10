@@ -1,0 +1,492 @@
+[
+  {
+    "id": "AJUDA_00e94af7-c29d-4449-b43d-41218f991103",
+    "originalId": "00e94af7-c29d-4449-b43d-41218f991103",
+    "statement": "Mulher, 66 anos de idade, é atendida em consulta de rotina por diabetes tipo 2 e hipertensão arterial. Exame físico: PA = 140/96 mmHg. Exames laboratoriais: taxa de filtração glomerular estimada = 28 mL/min/1,73 m², proteinúria = 1,9 g/24h. Qual é a conduta mais apropriada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever inibidores da enzima conversão da angiotensina ou bloqueadores dos receptores da angiotensina II.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Evitar bloqueadores do sistema renina-angiotensina devido à função renal diminuída.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não iniciar drogas anti-hipertensivas uma vez que a pressão arterial está controlada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar bloqueador de canal de cálcio para diminuir proteinúria.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A paciente em questão apresenta um quadro de doença renal crônica (DRC) estágio 4 (ritmo de filtração glomerular entre 15 e 29 mL/min), associada a diabetes mellitus tipo 2, hipertensão arterial e proteinúria significativa (1,9 g/24h). O objetivo do tratamento é o controle pressórico e a nefroproteção para retardar a progressão da perda de função renal.\n\nAnálise das alternativas:\n\nAlternativa A (correta): Os inibidores da enzima conversora de angiotensina (iECA) ou os bloqueadores dos receptores de angiotensina II (BRA) são as drogas de primeira escolha para pacientes diabéticos com proteinúria. Eles promovem a dilatação da arteríola eferente glomerular, reduzindo a pressão intraglomerular e, consequentemente, a excreção de proteínas na urina. Esse efeito antiproteinúrico é fundamental para reduzir a velocidade de progressão da doença renal, mesmo em estágios avançados como o desta paciente.\n\nAlternativa B (incorreta): Ter uma taxa de filtração glomerular de 28 mL/min não é uma contraindicação absoluta para o uso de iECA ou BRA. Embora exijam monitoramento rigoroso do potássio sérico e da creatinina (aceita-se um aumento de até 30% na creatinina após o início), essas medicações são as que oferecem o maior benefício de proteção renal a longo prazo. A suspensão ou evitação só ocorre geralmente em casos de hipercalemia refratária ou queda abrupta e severa da função renal.\n\nAlternativa C (incorreta): A pressão arterial de 140/96 mmHg não está controlada. Para pacientes com doença renal crônica e proteinúria, as metas são mais rigorosas, geralmente abaixo de 130/80 mmHg, segundo as principais diretrizes (KDIGO). Portanto, há indicação clara de ajuste ou início de terapia farmacológica.\n\nAlternativa D (incorreta): Embora os bloqueadores de canal de cálcio (BCC) sejam excelentes anti-hipertensivos, eles não são a primeira linha para redução de proteinúria. Os BCC di-hidropiridínicos (como anlodipino) podem, inclusive, aumentar a pressão intraglomerular se usados isoladamente. Os iECA e BRA permanecem como o padrão-ouro para o manejo da proteinúria no diabetes.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Hipertensão Arterial Sistêmica",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 41.358293966692464,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:46.327Z"
+  },
+  {
+    "id": "AJUDA_00f06b78-bc12-43bc-a449-274097f56cc5",
+    "originalId": "00f06b78-bc12-43bc-a449-274097f56cc5",
+    "statement": "Com relação aos abscessos hepáticos, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento inicial dos abscessos amebianos hepáticos, na grande maioria dos casos, é cirúrgico, pela drenagem por via endoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alterações radiológicas estão presentes em 30-45% dos pacientes portadores de abscesso hepático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Atualmente, as infecções da árvore biliar são a causa mais comum de abscesso hepático.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A drenagem cirúrgica do abscesso piogênico deve ser a mais tardia possível, a fim de permitir antibioticoterapia ampla prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A maioria dos abscessos hepáticos envolve o lobo esquerdo, sendo esta topografia responsável por cerca de 75% dos casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa A: Incorreta. O tratamento inicial dos abscessos amebianos hepáticos é clínico, baseado no uso de amebicidas teciduais, como o metronidazol, que apresenta excelente taxa de cura. A drenagem (geralmente percutânea e não endoscópica) é reservada apenas para casos específicos, como abscessos volumosos com risco iminente de ruptura, ausência de resposta ao tratamento medicamentoso após 48 a 72 horas ou abscessos localizados no lobo esquerdo devido ao risco de ruptura para a cavidade pericárdica.\n\nAlternativa B: Incorreta. Os exames de imagem são extremamente sensíveis para o diagnóstico de abscesso hepático. A ultrassonografia e a tomografia computadorizada apresentam sensibilidade superior a 90%. O dado de 30-45% pode se referir a achados inespecíficos em radiografias simples de tórax (como derrame pleural ou elevação da cúpula diafragmática), mas não reflete a realidade das alterações radiológicas diagnósticas modernas.\n\nAlternativa C: Correta. Atualmente, a patologia do trato biliar (colangite calculosa ou neoplásica, colecistite aguda) é a causa mais comum de abscessos hepáticos piogênicos. No passado, a apendicite era a causa principal via pileflebite (tromboflebite séptica do sistema portal), mas o diagnóstico e o tratamento precoce das infecções intra-abdominais reduziram essa incidência, tornando a via biliar a origem predominante.\n\nAlternativa D: Incorreta. O tratamento do abscesso piogênico baseia-se no binômio antibioticoterapia e drenagem. A drenagem não deve ser retardada, pois a persistência da coleção purulenta dificulta a ação dos antibióticos e mantém o foco de sepse. Atualmente, a drenagem percutânea guiada por ultrassonografia ou tomografia é o método de escolha, sendo a drenagem cirúrgica reservada para casos de falha do método percutâneo ou abscessos múltiplos e multiloculados.\n\nAlternativa E: Incorreta. A grande maioria dos abscessos hepáticos (cerca de 75%) localiza-se no lobo direito do fígado. Isso ocorre tanto pelo maior volume de parênquima deste lobo quanto pela anatomia do fluxo sanguíneo portal, que tende a direcionar o sangue proveniente da veia mesentérica superior preferencialmente para o lobo direito.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:46.327Z"
+  },
+  {
+    "id": "AJUDA_00f6771d-b5ea-41e9-9dfd-d7966441b310",
+    "originalId": "00f6771d-b5ea-41e9-9dfd-d7966441b310",
+    "statement": "Paciente feminina, 42 anos, com histórico de asma desde a infância, é acompanhada regularmente na unidade básica de saúde. Ela faz uso de budesonida/formoterol em dose baixa como terapia de manutenção, utilizando a medicação duas vezes ao dia. Refere que nos últimos três meses tem tido três episódios de despertares noturnos por mês devido à falta de ar e sibilos, além de ter precisado usar seu inalador de alívio (salbutamol) quatro vezes por semana durante o dia. Relata que, apesar de seguir as orientações médicas e evitar os desencadeantes conhecidos, ainda sente limitação para realizar atividades físicas, como caminhar longas distâncias. Não teve exacerbações graves que necessitaram de atendimento de emergência nos últimos 12 meses. No entanto, sente que sua qualidade de vida está prejudicada pela doença. Com base nas diretrizes do GINA (Global Initiative for Asthma) 2023, qual é o ajuste terapêutico mais apropriado para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumentar a dose de budesonida/formoterol para uma dose média, mantendo o esquema de administração.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Acrescentar montelucaste à terapia atual e manter a dose baixa de budesonida/formoterol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trocar budesonida/formoterol por corticoide inalatório de dose alta em combinação com broncodilatador de longa duração (LABA).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manter a dose atual de budesonida/formoterol e aumentar a frequência de uso do salbutamol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, o primeiro passo é avaliar o nível de controle da asma da paciente seguindo os critérios da GINA (Global Initiative for Asthma) 2023. Nos últimos 3 meses, a paciente apresentou: \n\n1) Sintomas diurnos ou uso de medicação de alívio mais de duas vezes por semana (ela usa salbutamol 4 vezes/semana);\n2) Despertares noturnos por asma (3 vezes por mês);\n3) Limitação de atividades físicas. \n\nDe acordo com a GINA, a presença de 3 ou 4 desses critérios classifica a asma como NÃO CONTROLADA. Como a paciente já está na Etapa 3 (Step 3) do tratamento (uso de corticoide inalatório + LABA em dose baixa), a conduta diante do descontrole é progredir para a Etapa 4 (Step 4).\n\nAnálise das alternativas:\n\na) Correta. A conduta padrão na Etapa 4 para pacientes que não obtiveram controle na Etapa 3 com dose baixa de CI-LABA é o escalonamento para dose média de corticoide inalatório (CI), mantendo o LABA. Isso visa reduzir a inflamação das vias aéreas que está gerando os sintomas e a limitação física.\n\nb) Incorreta. O montelucaste (antagonista do receptor de leucotrienos) pode ser utilizado como terapia adjuvante, mas não é a escolha preferencial de primeira linha para o escalonamento da Etapa 3 para a Etapa 4. O aumento da dose do corticoide inalatório tem maior evidência na melhora do controle sintomático neste cenário.\n\nc) Incorreta. O uso de corticoide inalatório em dose alta associado a LABA caracteriza a Etapa 5 do tratamento. Esse ajuste seria precoce e excessivo para a paciente, que deve primeiro tentar o controle com a dose média (Etapa 4) antes de progredir para doses altas ou terapias biológicas.\n\nd) Incorreta. Aumentar a frequência de uso do salbutamol (broncodilatador de curta duração — SABA) é uma conduta perigosa. O uso excessivo de SABA (mais de 3 frascos por ano) está associado a um risco aumentado de exacerbações graves. O objetivo do ajuste terapêutico na asma é justamente tratar a inflamação de base para que o paciente dependa o mínimo possível da medicação de alívio.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Asma"
+    ],
+    "difficulty": 33.113294339221014,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:46.327Z"
+  },
+  {
+    "id": "AJUDA_0102a6eb-c7a3-456d-94cb-2d1faccdcd79",
+    "originalId": "0102a6eb-c7a3-456d-94cb-2d1faccdcd79",
+    "statement": "Um menino de 6 anos é levado à consulta médica com queixas de febre baixa, mal-estar geral e uma erupção cutânea que começou nas bochechas. A mãe relata que ele teve uma leve infecção respiratória há cerca de uma semana. Ao exame físico, observam-se lesões eritematosas bem delimitadas nas bochechas, descritas como \"face esbofeteada\", e uma erupção maculopapular que se espalha para o tronco e membros. Qual é o diagnóstico mais provável para essa criança?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Roséola infecciosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Eritema Infeccioso",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Exantema Súbito",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Rubéola",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um quadro clássico de eritema infeccioso, uma doença exantemática comum na infância, causada pelo parvovírus B19. A descrição da \"face esbofeteada\" é o sinal patognomônico que direciona o diagnóstico.\n\nAnálise das alternativas:\n\na) Roséola infecciosa: Incorreta. A roséola, também conhecida como exantema súbito, é causada pelos vírus herpes-humanos 6 e 7. Acomete geralmente lactentes (6 a 15 meses) e se caracteriza por febre alta que desaparece subitamente (em crise), seguida pelo surgimento de um exantema maculopapular rosado que começa no tronco. Não apresenta o sinal da face esbofeteada.\n\nb) Eritema Infeccioso: Correta. É a alternativa que melhor se encaixa na descrição. O quadro evolui tipicamente em três fases: 1) Fase da face esbofeteada (eritema malar bilateral poupando a região perioral); 2) Fase de disseminação (exantema maculopapular em tronco e extremidades que assume aspecto rendilhado ou reticulado à medida que clareia centralmente); 3) Fase de recidiva (o exantema pode reaparecer por semanas devido a estímulos como sol, calor ou exercício físico).\n\nc) Exantema Súbito: Incorreta. Como mencionado na alternativa (a), este é um sinônimo para roséola infecciosa. A principal diferença clínica reside na idade do paciente (geralmente menor de 6 anos) e na cronologia febre-exantema, em que o exantema surge apenas após a queda da febre.\n\nd) Rubéola: Incorreta. Embora a rubéola também apresente um exantema que começa na face e se espalha para o tronco, ela é acompanhada de forma característica por linfonodopatia retroauricular, occipital e cervical posterior. Além disso, o eritema malar não possui o aspecto delimitado de \"face esbofeteada\" visto no eritema infeccioso.\n\nO diagnóstico mais provável é o eritema infeccioso (letra B), pois a idade escolar do paciente e a descrição específica da lesão facial são marcas registradas da infecção pelo parvovírus B19.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": 35.75630827212737,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:46.327Z"
+  },
+  {
+    "id": "AJUDA_01045cb3-30b4-4813-bd51-be9695a60f10",
+    "originalId": "01045cb3-30b4-4813-bd51-be9695a60f10",
+    "statement": "Em relação à evolução natural da sífilis adquirida, qual das afirmações abaixo está CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "As lesões secundárias são pouco infectantes, não apresentam manifestações sistêmicas e raramente acometem mais de um órgão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A regressão espontânea do cancro duro após 1– 6 semanas indica resolução da infecção e menor risco de progressão para secundarismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A fase latente recente dura de 3 à 6 meses após o desaparecimento das lesões secundárias e é caracterizada por ausência completa de sororreatividade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A fase latente tardia é assintomática, pode perdurar por mais de 30 anos e seu término é marcado pelo surgimento da primeira manifestação terciária.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nPara responder corretamente a essa questão, é necessário conhecer as fases da história natural da sífilis (primária, secundária, latente e terciária). Vamos analisar cada alternativa:\n\nAlternativa A: INCORRETA. A sífilis secundária é a fase de maior disseminação do Treponema pallidum pelo organismo. As lesões cutâneo-mucosas (como os condilomas planos e as sifílides) são extremamente ricas em treponemas e, portanto, altamente infectantes. Além disso, o secundarismo é caracterizado por manifestações sistêmicas como febre, mal-estar, cefaleia, além de poliadenopatia generalizada, podendo acometer múltiplos órgãos, como fígado, rins e sistema nervoso central.\n\nAlternativa B: INCORRETA. O desaparecimento espontâneo do cancro duro (lesão primária) faz parte da evolução natural da doença e ocorre independentemente do tratamento. No entanto, isso não significa que a infecção foi resolvida. Pelo contrário, se não houver tratamento, a bactéria continua a se multiplicar e a se disseminar na corrente sanguínea, o que levará invariavelmente à fase secundária após um período de latência.\n\nAlternativa C: INCORRETA. A fase latente é definida justamente pela ausência de sinais e sintomas clínicos, mas com persistência da sororreatividade (testes treponêmicos e não treponêmicos positivos). Se não houvesse sororreatividade, não haveria diagnóstico de sífilis nessa fase. Quanto ao tempo, a fase latente recente é geralmente considerada o período de até um ano (ou dois anos, dependendo da literatura/diretriz adotada) após a infecção inicial.\n\nAlternativa D: CORRETA. A fase latente tardia ocorre após o primeiro ou segundo ano de infecção e é assintomática. Muitos indivíduos podem permanecer nessa fase pelo resto da vida, mas em cerca de 15% a 30% dos casos não tratados, a doença pode evoluir para a fase terciária após um longo período (que pode ultrapassar 30 anos). O surgimento de sinais clínicos de acometimento tecidual grave (gomas sifilíticas, sífilis cardiovascular ou neurossífilis tardia) marca o fim da latência e o início da sífilis terciária.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:46.327Z"
+  },
+  {
+    "id": "AJUDA_0105df49-c42b-4bb4-ad6c-82ff0cffd239",
+    "originalId": "0105df49-c42b-4bb4-ad6c-82ff0cffd239",
+    "statement": "O Planejamento Regional Integrado (PRI) é instrumento estratégico e obrigatório para a organização das Redes de Atenção à Saúde nas regiões de saúde do Brasil. Qual referencial embasa a elaboração e pactuação do PRI a ser realizada pelos entes federados do âmbito municipal, estadual e federal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Capacidade instalada de serviços de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Necessidades de saúde da população.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Emendas parlamentares federais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acesso da população à atenção especializada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O Planejamento Regional Integrado (PRI) é um processo fundamental para a consolidação das Redes de Atenção à Saúde (RAS) e para a governança regional do SUS. Ele visa identificar lacunas assistenciais e organizar a oferta de serviços de forma racional e equânime entre os municípios de uma mesma região de saúde.\n\nAlternativa a) Incorreta. A capacidade instalada refere-se à infraestrutura e aos serviços que já existem no território. Embora esses dados sejam fundamentais para compor o diagnóstico situacional da região, eles não servem como o referencial norteador do planejamento. O planejamento deve buscar superar as limitações da estrutura atual para alcançar o atendimento ideal.\n\nAlternativa b) Correta. Conforme estabelecido pelas diretrizes do SUS e pela Resolução CIT nº 37/2018, o planejamento no SUS deve ser ascendente e baseado na análise da situação de saúde. Portanto, as necessidades de saúde da população (perfil epidemiológico, demográfico e demandas sociais) constituem o referencial obrigatório para a elaboração e pactuação do PRI. O objetivo é que a rede seja desenhada para resolver os problemas reais de saúde daquela população específica.\n\nAlternativa c) Incorreta. As emendas parlamentares são mecanismos de transferência de recursos financeiros, muitas vezes vinculados a decisões políticas individuais de legisladores. O planejamento estratégico e técnico do SUS deve ser pautado por critérios técnicos, epidemiológicos e sanitários, e não pela disponibilidade ou direcionamento de emendas.\n\nAlternativa d) Incorreta. A organização da atenção especializada é, de fato, um dos grandes desafios trabalhados dentro do PRI, especialmente para superar vazios assistenciais. No entanto, o referencial do planejamento não se limita a um nível de atenção específico. O PRI deve considerar a integralidade do cuidado, abrangendo desde a Atenção Primária, que é a ordenadora da rede, até a alta complexidade.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Processos de Descentralização e Regionalização do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:46.327Z"
+  },
+  {
+    "id": "AJUDA_011d2921-56a1-4986-be14-ba16bd23548e",
+    "originalId": "011d2921-56a1-4986-be14-ba16bd23548e",
+    "statement": "Considerando o caso de criança de 2 anos com diarreia há 4 dias, avaliada há 2 dias como hidratação em nível A. Ela retorna com 2 episódios eméticos nas últimas 24h e manutenção da diarreia. Qual a conduta indicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se iniciar antiemético visando controle da desidratação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Reavaliar classificação, quadro clínico e otimizar hidratação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar à unidade hospitalar de referência devido a sinal de gravidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Metoclopramida 0,2mg/kg VO 8/8h + Loperamida 0,05mg/kg VO 8/8h + Zinco 20mg/d + hidratação VO 30ml/kg/d.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Metoclopramida 0,2mg/kg VO de 8/8h para vômitos e Metronidazol 5mg/kg VO 8/8h por 5 dias empiricamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso apresenta uma criança de 2 anos com quadro de diarreia aguda que, após avaliação inicial de estabilidade e classificação no Plano A, apresenta novos sintomas (vômitos). Em pediatria, diante de qualquer alteração no curso de uma doença diarreica ou no retorno do paciente à unidade de saúde, o passo fundamental e obrigatório é a reavaliação clínica minuciosa.\n\nAlternativa (a) Incorreta. O foco inicial não deve ser o uso de antieméticos. Dois episódios de vômitos em 24 horas não caracterizam, necessariamente, vômitos persistentes que impeçam a reidratação oral. Além disso, o tratamento da desidratação é feito prioritariamente com soluções de reidratação oral e ajuste de conduta após exame físico, e não apenas com o bloqueio de sintomas isolados.\n\nAlternativa (b) Correta. Esta é a conduta preconizada pelos protocolos do Ministério da Saúde e da estratégia AIDPI (Atenção Integrada às Doenças Prevalentes na Infância). Sempre que uma criança com diarreia retorna para reavaliação ou apresenta novos sintomas, o médico deve realizar um novo exame físico completo, buscar sinais de desidratação (como estado geral, olhos encovados, sinal da prega e sede) e reclassificar o paciente entre os Planos A, B ou C, ajustando a hidratação para a nova necessidade clínica.\n\nAlternativa (c) Incorreta. A ocorrência de dois episódios de vômitos em um intervalo de 24 horas, de forma isolada, não constitui um sinal de perigo ou critério de gravidade que exija encaminhamento imediato para hospital de referência. O manejo inicial e a reclassificação podem ser feitos na unidade básica de saúde ou pronto atendimento.\n\nAlternativa (d) Incorreta. Esta opção apresenta erros farmacológicos graves para a faixa pediátrica. A metoclopramida possui risco elevado de efeitos extrapiramidais em crianças. A loperamida é formalmente contraindicada em casos de diarreia aguda na infância devido ao risco de íleo paralítico, perfuração intestinal e megacólon tóxico. Além disso, o volume de hidratação mencionado não segue os cálculos recomendados para correção de desidratação.\n\nAlternativa (e) Incorreta. O uso de metronidazol de forma empírica não é indicado na diarreia aguda, sendo reservado para casos confirmados ou com forte suspeita clínica de amebíase ou giardíase. O tratamento da diarreia aguda comum é focado na reidratação e no uso de zinco, e não em antibioticoterapia ou antiparasitários de rotina. A metoclopramida também não é o antiemético de escolha na pediatria atual (dá-se preferência à ondansetrona quando indicada).",
+    "exam": "UFRB",
+    "year": 2026,
+    "banca": "UFRB",
+    "uf": "BA",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": 33.113294339221014,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35674e2a8fdd600c4528186d032722b2534d565f8659f6d532a9977d76ec6035.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2f3a30ed0fd307a6a4fadc82fa84bd78995407514592af81b25948bee1e5d79f.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:46.327Z"
+  },
+  {
+    "id": "AJUDA_013a34db-0916-43f3-af0a-8d7927ff7cd2",
+    "originalId": "013a34db-0916-43f3-af0a-8d7927ff7cd2",
+    "statement": "Mulher branca de 47 anos comparece a consulta médica na unidade básica de saúde (UBS) queixando-se da presença de lesão escurecida, assimétrica e de bordas irregulares em antebraço esquerdo. Relata que, nas últimas quatro semanas, a lesão tem aumentado de tamanho e se tornado pruriginosa, com episódio de pequeno sangramento local. \n\nConsiderando a situação apresentada, a principal hipótese diagnóstica da paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "melanoma.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "queratoacantoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "carcinoma basocelular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "carcinoma espinocelular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A hipótese diagnóstica principal para esta paciente é o melanoma. O quadro clínico fundamenta-se na regra do ABCDE, que é o padrão-ouro clínico para a identificação de lesões melanocíticas suspeitas de malignidade:\n\nA (Assimetria): A questão cita expressamente que a lesão é assimétrica. Na imagem, observa-se que as metades da lesão não coincidem.\nB (Bordas): As bordas são descritas como irregulares, apresentando contornos mal definidos e chanfraduras, o que é visível na foto.\nC (Cor): A lesão é descrita como escurecida. Na imagem anexa, nota-se a policromia (presença de várias cores), variando entre tons de marrom-claro, marrom-escuro, preto e áreas avermelhadas (eritematosas).\nD (Diâmetro/Dimensões): A paciente relata que a lesão tem aumentado de tamanho.\nE (Evolução): O relato de mudança rápida nas últimas quatro semanas, acompanhado de prurido (coceira) e sangramento, é um sinal de alerta clássico para o comportamento invasivo de um melanoma.\n\nAnálise das alternativas:\n\na) CORRETA. O melanoma maligno origina-se dos melanócitos e é a neoplasia cutânea mais agressiva devido ao seu alto potencial de metástase. A descrição de uma lesão pigmentada com assimetria, bordas irregulares e crescimento recente torna esta a hipótese obrigatória. O sangramento e o prurido indicam uma fase de evolução ativa da doença.\n\nb) INCORRETA. O queratoacantoma é um tumor de crescimento muito rápido, mas apresenta-se classicamente como um nódulo em forma de cratera ou vulcão, com um centro preenchido por um tampão de queratina. Não se manifesta como uma mancha plana, escura e assimétrica seguindo o padrão ABCDE.\n\nc) INCORRETA. O carcinoma basocelular (CBC) é o câncer de pele mais comum e está relacionado à exposição solar. Embora exista a variante pigmentada, o CBC tipicamente se apresenta como uma pápula perlácea, com brilho translúcido e vasos finos (telangiectasias) na superfície. A descrição detalhada de forte assimetria e bordas geográficas favorece amplamente o melanoma.\n\nd) INCORRETA. O carcinoma espinocelular (CEC) geralmente se manifesta como lesões ceratósicas (ásperas), crostosas ou ulceradas, muitas vezes sobre uma base de pele danificada pelo sol (ceratose actínica). Embora possa sangrar ao crescer, não é caracterizado primariamente por ser uma lesão pigmentada com os critérios específicos de assimetria e policromia descritos.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": 19.44858584014352,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/4657e9f2ac837982d9a1ebe171d9375f6e76136980d6ef92fc9f91614867ff0e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_013a34db-0916-43f3-af0a-8d7927ff7cd2_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:46.827Z"
+  },
+  {
+    "id": "AJUDA_0143cb20-e573-49ed-b527-0c1d860cdb59",
+    "originalId": "0143cb20-e573-49ed-b527-0c1d860cdb59",
+    "statement": "De acordo com os princípios do abdome agudo obstrutivo, os critérios que indicam necessidade urgente de abordagem cirúrgica à ultrassonografia abdominal incluem:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Presença de alças intestinais com diâmetro superior a 2 cm e peristalse aumentada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Líquido livre na cavidade abdominal, edema da parede intestinal > 4 mm e peristalse diminuída ou abolida em vigência de obstrução mecânica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Distensão gasosa difusa com níveis hidroaéreos múltiplos sem líquido livre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Espessamento parietal de até 3 mm com peristalse normal preservada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender a indicação cirúrgica no abdome agudo obstrutivo por meio da ultrassonografia, devemos buscar sinais que indiquem não apenas a interrupção do trânsito, mas o sofrimento tecidual (isquemia) e a falha dos mecanismos compensatórios.\n\nAlternativa (a): Incorreta. A presença de alças dilatadas (geralmente acima de 2,5 cm no delgado) e a peristalse aumentada (movimento de luta) são achados que confirmam o diagnóstico de obstrução mecânica em fase inicial. No entanto, não são critérios de urgência cirúrgica imediata, pois muitos desses casos podem ser manejados clinicamente de forma inicial, especialmente se forem causados por aderências (bridas).\n\nAlternativa (b): Correta. Estes são sinais de gravidade e sofrimento de alça. O líquido livre entre as alças (ascite) indica exsudação por sofrimento vascular. O edema de parede (espessamento superior a 3 ou 4 mm) reflete congestão venosa e isquemia iminente. A diminuição ou abolição da peristalse (aperistalse), no contexto de uma obstrução mecânica prévia, sugere que a alça atingiu a exaustão funcional ou necrose, exigindo abordagem cirúrgica urgente.\n\nAlternativa (c): Incorreta. Níveis hidroaéreos e distensão gasosa são sinais clássicos de obstrução intestinal, porém o gás é um limitador físico para a ultrassonografia (causa sombra acústica e dificulta a visualização). Além disso, a ausência de líquido livre é um sinal de bom prognóstico, não indicando urgência.\n\nAlternativa (d): Incorreta. O espessamento parietal de até 3 mm é considerado normal para o intestino delgado. A manutenção da peristalse normal indica que não há um quadro de obstrução grave ou sofrimento isquêmico que justifique uma intervenção cirúrgica de emergência baseada apenas nesses achados.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:46.827Z"
+  },
+  {
+    "id": "AJUDA_014b341b-2c32-495c-aeef-29becba890c5",
+    "originalId": "014b341b-2c32-495c-aeef-29becba890c5",
+    "statement": "Paciente de 47 anos, sexo feminino, atendida no ambulatório de cirurgia geral. A paciente havia sido submetida à cirurgia de tireoidectomia total há 60 dias, devido a um carcinoma folicular de tireoide, o qual estava restrito à glândula. No pós-operatório imediato, a paciente apresentou rouquidão, que não melhorou durante o acompanhamento ambulatorial nesses 60 dias.\nCom base no quadro clínico apresentado, qual foi o nervo lesionado durante a cirurgia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laríngeo recorrente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Glossofaríngeo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipoglosso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vago.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A tireoidectomia e a manipulação cirúrgica da glândula tireoide apresentam riscos anatômicos importantes devido à proximidade de estruturas nervosas vitais. O sintoma de rouquidão pós-operatória é um sinal clássico de lesão nervosa específica relacionada ao controle das pregas vocais.\n\nAlternativa (a) Laríngeo recorrente: Esta é a alternativa correta. O nervo laríngeo recorrente, ramo do nervo vago, caminha no sulco traqueoesofágico, passando muito próximo aos lobos da tireoide e aos vasos tireoideos inferiores. Ele é responsável pela inervação motora de quase todos os músculos intrínsecos da laringe (com exceção do músculo cricotireoideo). A lesão unilateral desse nervo resulta na paralisia da prega vocal ipsilateral, o que clinicamente se manifesta como rouquidão persistente, exatamente como descrito no caso clínico.\n\nAlternativa (b) Glossofaríngeo: Esta alternativa está incorreta. O nervo glossofaríngeo (IX par craniano) é responsável pela sensibilidade da faringe, pelo paladar no terço posterior da língua e pela inervação da glândula parótida. Ele está localizado em uma região anatômica muito superior ao sítio cirúrgico da tireoidectomia e sua lesão não provoca rouquidão.\n\nAlternativa (c) Hipoglosso: Esta alternativa está incorreta. O nervo hipoglosso (XII par craniano) fornece a inervação motora para os músculos da língua. Uma eventual lesão desse nervo causaria desvio da língua para o lado lesionado e dificuldade na fala articulada (disartria) ou deglutição, mas não alteração na qualidade vocal (rouquidão) por paralisia de pregas vocais.\n\nAlternativa (d) Vago: Esta alternativa está incorreta. Embora o nervo laríngeo recorrente seja um ramo do nervo vago (X par craniano), a lesão do tronco principal do vago no pescoço é muito menos comum em uma tireoidectomia convencional do que a lesão de seu ramo distal. Uma lesão alta do vago causaria não apenas a rouquidão, mas também disfunção do palato mole e da faringe (disfagia). Como a cirurgia foi focada na glândula tireoide, o nervo laríngeo recorrente é a estrutura especificamente vulnerável no campo operatório.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Tireoide",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": 19.245215755993797,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:46.827Z"
+  }
+]

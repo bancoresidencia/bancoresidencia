@@ -1,0 +1,524 @@
+[
+  {
+    "id": "AJUDA_307e98e7-0fc4-41a0-846f-a9f3917f7499",
+    "originalId": "307e98e7-0fc4-41a0-846f-a9f3917f7499",
+    "statement": "Paciente de 65 anos procura consultório ginecológico com queixa de “bola” na vagina. Durante o exame, foi realizado o POP-q que demonstrou o seguinte cenário:\n\n-3 | -3 | -10\n 5 |  4 |  10\n+3 | +4 | -\n\nDe acordo com o quadro acima, qual o estadiamento adequado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "PPA E I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "PApical E II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "PPP E III",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "PPA E IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "PPP E 0",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para resolver esta questão, é fundamental dominar a grade do sistema POP-Q (Pelvic Organ Prolapse Quantification), que é o padrão-ouro para descrever o suporte da parede vaginal. A grade apresentada de 3x3 representa pontos anatômicos específicos em centímetros.\n\nA configuração da questão é:\nAa: -3  | Ba: -3  | C: -10\ngh: 5   | pb: 4   | tvl: 10\nAp: +3  | Bp: +4  | D: -\n\nANÁLISE DOS PONTOS:\n1. Parede Anterior (Aa e Ba): Ambos estão em -3. Isso indica que a parede anterior está em sua posição anatômica normal (suspensa).\n2. Ápice (C e D): O ponto C (colo do útero ou cúpula) está em -10, e o comprimento vaginal total (tvl) é 10. Isso significa que o ápice está totalmente suspenso. O ponto D está ausente (-), sugerindo que a paciente é histerectomizada.\n3. Parede Posterior (Ap e Bp): Aqui encontramos a alteração. O ponto Ap está em +3 e o ponto Bp está em +4. Valores positivos indicam que o tecido ultrapassou o hímen (marco zero).\n\nESTADIAMENTO PELO PONTO MAIS AVANÇADO:\nO estadiamento do POP-Q é definido pelo ponto de maior prolapso:\n- Estágio 0: Sem prolapso. Pontos Aa, Ap, Ba, Bp estão em -3; C e D estão entre - (tvl) e - (tvl - 2).\n- Estágio I: O ponto mais avançado está a mais de 1 cm acima do hímen (valor < -1).\n- Estágio II: O ponto mais avançado está entre 1 cm acima e 1 cm abaixo do hímen (entre -1 e +1).\n- Estágio III: O ponto mais avançado está a mais de 1 cm abaixo do hímen, mas não é uma procidência total (valor > +1, mas menor que tvl - 2).\n- Estágio IV: Evasão completa ou procidência (valor > tvl - 2).\n\nNo caso, o ponto mais avançado é Bp (+4). Como +4 é maior que +1 e é menor que o valor de corte para estágio IV (que seria 10 - 2 = 8), classificamos como Estágio III. Como o defeito está nos pontos Ap e Bp, trata-se de um Prolapso de Parede Posterior (PPP).\n\nANÁLISE DAS ALTERNATIVAS:\n\n- Alternativa a) Incorreta. PPA refere-se à Parede Anterior. Os pontos anteriores (Aa e Ba) estão normais (-3). O estágio I também está incorreto, pois há pontos positivos significativos (+4).\n- Alternativa b) Incorreta. O erro está no compartimento (Apical) e no estágio. O ponto C está em -10 (normal), e o estágio II exigiria que o ponto mais avançado estivesse entre -1 e +1.\n- Alternativa c) CORRETA. O prolapso localiza-se na Parede Posterior (pontos Ap e Bp positivos) e é Estágio III porque o ponto de maior descida (+4) ultrapassou o plano do hímen em mais de 1 cm, mas não atingiu a eversão total da vagina.\n- Alternativa d) Incorreta. O compartimento afetado não é o anterior (PPA). Além disso, o Estágio IV exigiria que o prolapso estivesse quase no valor do tvl (próximo a 10).\n- Alternativa e) Incorreta. O Estágio 0 indica anatomia normal, o que contradiz os valores positivos (+3 e +4) encontrados no exame.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:25.578Z"
+  },
+  {
+    "id": "AJUDA_308235da-c0a5-4d1c-9b68-11ff4f674437",
+    "originalId": "308235da-c0a5-4d1c-9b68-11ff4f674437",
+    "statement": "O diagnóstico precoce da Displasia do Desenvolvimento do Quadril (DDQ) previne sequelas. Sobre as manobras semiológicas, registre V, para as afirmativas verdadeiras, e F, para as falsas:\n\n(__)A manobra de Ortolani reduz o quadril luxado, caracterizando-se por um estalido palpável (\"clunk\") quando a cabeça femoral entra no acetábulo durante a abdução da coxa.\n(__)A manobra de Barlow é provocativa, tentando luxar um quadril instável através da adução e pressão posterior da coxa; se positiva, indica que o quadril é luxável.\n(__)O sinal de Galeazzi (ou Allis) é útil em crianças maiores (3-6 meses) com luxação unilateral, evidenciando o desnivelamento dos joelhos quando fletidos, devido ao encurtamento aparente do fêmur no lado afetado.\n(__)A limitação da abdução do quadril é um sinal tardio, surgindo apenas após a marcha, e não tem valor diagnóstico no lactente.\n\nApós análise, assinale a alternativa que apresenta a sequência correta dos itens acima, de cima para baixo:",
+    "options": [
+      {
+        "id": "A",
+        "text": "F, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "V, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "F, F, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V, F, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ITEM 1: (VERDADEIRO) A manobra de Ortolani é a manobra de redução. Ela é realizada para colocar \"para dentro\" um quadril que já se encontra luxado (fora do acetábulo). O examinador realiza a abdução das coxas associada à anteriorização do grande trocânter. O teste é positivo quando se sente um \"clunk\" (ressalto), que representa a cabeça femoral retornando ao acetábulo.\n\nITEM 2: (VERDADEIRO) A manobra de Barlow é considerada provocativa ou de luxação. Ela serve para identificar o quadril que está \"dentro\", mas é instável (luxável). O examinador realiza a adução da coxa seguida de uma pressão posterior suave. Se a cabeça femoral sair do acetábulo, o quadril é considerado luxável e o teste é positivo.\n\nITEM 3: (VERDADEIRO) O sinal de Galeazzi (ou Allis) baseia-se no encurtamento aparente da coxa devido ao deslocamento superior e posterior da cabeça femoral no quadril luxado. Com a criança deitada, joelhos e quadris fletidos e pés alinhados, observa-se um desnível na altura dos joelhos. É um sinal clássico de luxação unilateral e ganha importância após os 3 meses de idade, quando os tecidos moles ficam mais tensos e as manobras de Ortolani e Barlow tornam-se menos sensíveis.\n\nITEM 4: (FALSO) A limitação da abdução do quadril é um dos sinais clínicos mais sensíveis e importantes para o diagnóstico da DDQ no lactente, podendo ser detectada muito antes da idade de marcha (geralmente a partir do segundo ou terceiro mês de vida). Ela ocorre devido ao encurtamento e contratura da musculatura adutora. Portanto, possui alto valor diagnóstico precoce.\n\nCONCLUSÃO: A análise dos itens define a sequência V - V - V - F, o que valida a alternativa (b) como correta.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Quadril Pediátrico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:25.578Z"
+  },
+  {
+    "id": "AJUDA_308b715c-e9db-42c2-ac4d-721bcf9ce417",
+    "originalId": "308b715c-e9db-42c2-ac4d-721bcf9ce417",
+    "statement": "A transição da infância à vida adulta, em que ocorrem diversos fenômenos sociais, culturais, econômicos e hormonais que iniciam a puberdade, ou seja, processo de alterações físicas que culminam na maturação física e sexual. Quanto ao crescimento e à puberdade na adolescência, assinale a alternativa correta. \n\nImagem 1: IMC\nImagem 2: Peso para idade",
+    "options": [
+      {
+        "id": "A",
+        "text": "A menarca ocorre, em média, de um ano a um ano e meio após a telarca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nos meninos, a espermarca geralmente ocorre em G4.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "De 50% a 75% da massa óssea do indivíduo adulto é adquirida na adolescência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O estirão puberal dos meninos é mais tardio e de menor magnitude que das meninas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A aceleração da velocidade de crescimento ocorre no Tanner dois, tanto para meninos quanto para meninas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda os marcos fisiológicos da puberdade e do crescimento somático na adolescência. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa (a) Incorreta: A menarca (primeira menstruação) ocorre, em média, cerca de 2 a 2,5 anos após a telarca (surgimento do broto mamário, estágio M2 de Tanner). O intervalo de apenas um ano é considerado curto demais para a evolução fisiológica habitual.\n\nAlternativa (b) Incorreta: Nos meninos, a espermarca (primeira liberação de espermatozoides na urina ou sêmen) ocorre geralmente no estágio G3 de Tanner, coincidindo frequentemente com o aumento do volume testicular entre 10 e 12 mL.\n\nAlternativa (c) Correta: A adolescência é um período crítico para a saúde esquelética. Estima-se que cerca de 40% a 60% (podendo chegar a 75%, dependendo da referência e do sítio ósseo analisado) de toda a massa óssea que o indivíduo terá na vida adulta seja depositada durante a puberdade. É o chamado \"pico de massa óssea\", fundamental para prevenir a osteoporose no futuro.\n\nAlternativa (d) Incorreta: Embora o estirão puberal masculino seja realmente mais tardio (ocorre no estágio G4, enquanto nas meninas ocorre no M2-M3), sua magnitude é maior. Meninos crescem, em média, de 28 a 30 cm no total do estirão, enquanto as meninas crescem cerca de 23 a 25 cm. Essa diferença de magnitude e o tempo adicional de crescimento pré-puberal explicam por que homens são, em média, mais altos que mulheres.\n\nAlternativa (e) Incorreta: A aceleração da velocidade de crescimento não é síncrona entre os sexos. Nas meninas, a aceleração é precoce, iniciando-se em Tanner 2 e atingindo o pico em Tanner 3. Já nos meninos, a aceleração é tardia, com o pico de velocidade de crescimento ocorrendo apenas no estágio G4 de Tanner.\n\nSobre as imagens: Os gráficos de IMC e Peso-para-Idade mostram pontos plotados para uma criança de 10 anos de idade. Em ambos os gráficos, o paciente encontra-se entre os escores-z +1 e +2. No gráfico de IMC, essa posição classifica o adolescente com sobrepeso. O estado nutricional é um fator que influencia diretamente a cronologia da puberdade, sendo que o excesso de peso está frequentemente associado à antecipação dos caracteres sexuais secundários, especialmente em meninas.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Puberdade",
+      "Crescimento"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/1aec6b432839534f809d04c258494b8bcf33f3463242209b42a2c7743a1a77ca.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_308b715c-e9db-42c2-ac4d-721bcf9ce417_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/e9b2c6fc0e772eb7e9403390ac64358db4a5be2e8e3b9ef33cf2fbb44c8afc9e.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_308b715c-e9db-42c2-ac4d-721bcf9ce417_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:26.391Z"
+  },
+  {
+    "id": "AJUDA_30bda5c3-033d-4ee7-8d7d-3161a0cd3430",
+    "originalId": "30bda5c3-033d-4ee7-8d7d-3161a0cd3430",
+    "statement": "Em um acompanhamento de trabalho de parto a ausculta de batimento fetal ocorreu conforme imagem a seguir:\n\nÉ correto afirmar que se trata de assistência a feto",
+    "options": [
+      {
+        "id": "A",
+        "text": "cefálico dorso esquerda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "cefálico dorso direita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "com dorso anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pélvico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para identificar a estática fetal através da ausculta, devemos analisar a localização dos pontos onde os batimentos cardiofetais (BCF) são mais audíveis. Na imagem apresentada, os pontos marcados com X situam-se na região infraumbilical (parte inferior do abdome) e estão claramente deslocados para o lado esquerdo da gestante.\n\nA localização dos batimentos na parte inferior do abdome é característica da apresentação cefálica, uma vez que o coração do feto está posicionado mais próximo à pelve. O fato de a ausculta ser mais nítida no lado esquerdo indica que o dorso (as costas) do feto está voltado para esse lado, pois o som cardíaco é melhor transmitido através do gradil costal e da escápula fetal.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. O posicionamento infraumbilical dos pontos de ausculta confirma a apresentação cefálica, e a lateralização para o lado esquerdo do abdome materno confirma que o dorso fetal está à esquerda.\n\nAlternativa b) Incorreta. Se o feto estivesse com o dorso à direita, a ausculta de maior nitidez seria realizada nos quadrantes direitos do abdome materno, o que não corresponde à imagem.\n\nAlternativa c) Incorreta. Embora o dorso possa estar em posição anterior, a imagem enfatiza especificamente a lateralização para o lado esquerdo. Na prática obstétrica, a descrição completa da posição (como cefálica, dorso à esquerda) é a resposta mais precisa para a representação gráfica mostrada.\n\nAlternativa d) Incorreta. Na apresentação pélvica, o polo cefálico do feto encontra-se no fundo uterino. Por esse motivo, o coração fetal fica em uma posição mais elevada, e a ausculta dos batimentos costuma ocorrer nos quadrantes superiores do abdome, acima da linha do umbigo (região supraumbilical).",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/dfbe91bdff134d37a850420a348f3c7ac9f0de9d4a91564add729c3dd98e471d.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_30bda5c3-033d-4ee7-8d7d-3161a0cd3430_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:26.799Z"
+  },
+  {
+    "id": "AJUDA_30c1e32d-f835-43f7-81d2-78eef11dd98b",
+    "originalId": "30c1e32d-f835-43f7-81d2-78eef11dd98b",
+    "statement": "Qual das associações abaixo caracteriza melhor o fenômeno da centralização no feto à dopplervelocimetria?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da relação sístole/diástole nas artérias uterinas e normalidade nas artérias umbilicais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumento da relação sístole/diástole nas uterinas e diminuição da relação sístole/diástole na artéria cerebral média.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diminuição da relação sístole/diástole nas umbilicais e diminuição da relação sístole/diástole na artéria cerebral média.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumento da relação sístole/diástole tanto nas umbilicais como na cerebral média.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aumento da relação sístole/diástole nas umbilicais e diminuição da relação sístole/diástole na cerebral média.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O fenômeno da centralização fetal, também conhecido como efeito de preservação cerebral (*brain-sparing effect*), é um mecanismo compensatório de adaptação do feto a situações de hipóxia crônica, geralmente decorrentes de uma insuficiência placentária. Quando o aporte de oxigênio e nutrientes está reduzido, o feto redistribui o seu fluxo sanguíneo para priorizar órgãos nobres, como o cérebro, o coração e as glândulas adrenais, em detrimento da circulação periférica (rins, pulmões e trato gastrointestinal).\n\nPara entender a dopplervelocimetria na centralização, devemos analisar dois vasos principais:\n\n1. Artéria Umbilical: reflete a resistência da placenta. Em casos de insuficiência placentária, a resistência aumenta, o que eleva a relação sístole/diástole (relação S/D) ou o índice de pulsatilidade (IP).\n2. Artéria Cerebral Média: em condições normais, é um vaso de alta resistência. Na centralização, ocorre uma vasodilatação cerebral para aumentar o fluxo sanguíneo para o cérebro, o que diminui a sua resistência e, consequentemente, diminui a relação sístole/diástole (relação S/D).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O aumento da relação sístole/diástole nas artérias uterinas indica uma falha na invasão trofoblástica (risco de pré-eclâmpsia ou restrição de crescimento), mas a centralização é definida pelo comportamento dos vasos fetais. Além disso, se as artérias umbilicais estiverem normais, não há diagnóstico de centralização.\n\nAlternativa b) Incorreta. Embora a diminuição da relação na artéria cerebral média faça parte do processo, a centralização exige a comparação com a artéria umbilical. As artérias uterinas avaliam o compartimento materno-placentário, não definindo, sozinhas, o fenômeno fetal.\n\nAlternativa c) Incorreta. Na centralização, a resistência nas artérias umbilicais aumenta (devido ao dano placentário) e não diminui. A diminuição da resistência ocorre na artéria cerebral média.\n\nAlternativa d) Incorreta. Na artéria cerebral média, ocorre vasodilatação, o que leva à redução da resistência e da relação sístole/diástole, e não ao seu aumento. O aumento da resistência na cerebral média é o padrão de normalidade para esse vaso.\n\nAlternativa e) Correta. Esta alternativa descreve exatamente o mecanismo de centralização: o aumento da resistência no compartimento placentário (elevando a relação S/D na artéria umbilical) associado à redução da resistência no compartimento cerebral (diminuindo a relação S/D na artéria cerebral média por vasodilatação). Atualmente, a forma mais sensível de diagnosticar esse quadro é por meio da Relação Cérebro-Placentária (RCP), que é o resultado da divisão dos índices da artéria cerebral média pelos da artéria umbilical. Quando essa relação está reduzida (menor que 1 ou abaixo do percentil 5 para a idade gestacional), confirma-se a centralização.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Vitalidade Fetal",
+      "Ultrassom em Obstetrícia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:26.799Z"
+  },
+  {
+    "id": "AJUDA_30e8063c-2c1c-492c-961e-ac62e4d7006c",
+    "originalId": "30e8063c-2c1c-492c-961e-ac62e4d7006c",
+    "statement": "Os locais no osso escafoide em que ocorre a maioria das fraturas são",
+    "options": [
+      {
+        "id": "A",
+        "text": "Terço proximal e terço médio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tubérculo e colo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colo e terço médio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Terço proximal e tubérculo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tubérculo e terço médio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O escafoide é o osso mais frequentemente fraturado entre os ossos do carpo, geralmente resultante de quedas com a mão espalmada e o punho em hiperextensão. Para fins didáticos e clínicos, o escafoide é dividido anatomicamente em três partes: polo proximal, cintura (também chamada de colo ou terço médio) e polo distal (onde se localiza o tubérculo).\n\nA alternativa (c) é a correta porque a região da cintura do escafoide, referida tecnicamente como colo ou terço médio, é o local onde ocorre a vasta maioria das lesões, concentrando aproximadamente 70% a 80% de todas as fraturas deste osso. O mecanismo de trauma gera um estresse mecânico máximo justamente nessa zona central estreita.\n\nA alternativa (a) está incorreta, pois, embora o terço médio seja o local mais comum, o polo proximal (terço proximal) é responsável por apenas cerca de 15% das fraturas. O polo proximal é clinicamente relevante devido ao risco de necrose avascular (já que a vascularização é retrógrada), mas não representa a maioria estatística das fraturas.\n\nA alternativa (b) está incorreta porque o tubérculo situa-se no polo distal. As fraturas do polo distal e do tubérculo são menos frequentes em adultos, correspondendo a cerca de 5% a 10% dos casos, sendo mais comuns na população pediátrica por avulsão.\n\nA alternativa (d) está incorreta porque associa as duas regiões com menor incidência epidemiológica (terço proximal e tubérculo) em comparação com a cintura/colo do osso.\n\nA alternativa (e) está incorreta porque, embora cite o terço médio (região de alta incidência), inclui o tubérculo, que é um local de ocorrência significativamente menor. A combinação de termos \"colo e terço médio\" na alternativa correta reforça a mesma região anatômica central (cintura), que é o foco principal das fraturas de escafoide.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Fraturas e Luxações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:26.799Z"
+  },
+  {
+    "id": "AJUDA_30fa6366-3e57-4ad9-b142-5f23a45a4480",
+    "originalId": "30fa6366-3e57-4ad9-b142-5f23a45a4480",
+    "statement": "Durante auditoria em uma Secretaria Municipal de Saúde, identificou-se que determinada UBS passou a restringir o atendimento de pessoas sem comprovante de residência da área adscrita. Visitantes, trabalhadores da região e pessoas em trânsito eram orientados a procurar a UBS do bairro de origem. Essa prática contraria diretamente qual princípio doutrinário do SUS, conforme a Lei 8.080/90?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Universalidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Equidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Integralidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Regionalização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda os princípios que regem o Sistema Único de Saúde (SUS), especificamente os princípios doutrinários contidos na Lei 8.080/90. No caso descrito, a Unidade Básica de Saúde (UBS) impôs uma barreira de acesso baseada na localização geográfica do usuário, o que é uma prática irregular.\n\nAlternativa (a) Correta: A Universalidade é o princípio doutrinário que estabelece que a saúde é um direito de todos os cidadãos e um dever do Estado. Isso significa que o acesso às ações e serviços de saúde deve ser garantido a qualquer pessoa, independentemente de raça, nacionalidade, profissão ou local de residência. Ao exigir comprovante de residência e negar atendimento a visitantes ou trabalhadores de outras regiões, a UBS está criando uma barreira de exclusão, ferindo o direito universal ao atendimento.\n\nAlternativa (b) Incorreta: A Equidade diz respeito a oferecer mais a quem mais precisa, tratando de forma desigual os desiguais para diminuir as disparidades. Embora o acesso seja o primeiro passo para a equidade, o foco deste princípio é o ajuste da atenção às necessidades específicas de cada grupo ou indivíduo, e não a garantia de entrada irrestrita ao sistema, que é o foco da universalidade.\n\nAlternativa (c) Incorreta: A Integralidade preconiza que o sistema deve considerar o indivíduo como um todo, oferecendo ações de promoção, prevenção, cura e reabilitação de forma articulada. A falha descrita na questão não é sobre a continuidade ou a completude do cuidado prestado, mas sim sobre a proibição do primeiro contato do usuário com o serviço de saúde.\n\nAlternativa (d) Incorreta: A Regionalização é um princípio organizativo (e não doutrinário) que orienta a descentralização dos serviços de saúde em áreas geográficas definidas para otimizar a gestão. Embora a Atenção Primária trabalhe com o conceito de território adscrito para fins de planejamento e acompanhamento longitudinal, isso não autoriza a unidade a negar atendimento de demanda espontânea ou urgência a pessoas que não residam naquela área específica.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:26.799Z"
+  },
+  {
+    "id": "AJUDA_30fc8269-1222-4efa-8070-e76581be2796",
+    "originalId": "30fc8269-1222-4efa-8070-e76581be2796",
+    "statement": "A Portaria GM/MS nº 3.493 de 2024 instituiu o novo modelo de financiamento federal da Atenção Primária à Saúde (APS) no Brasil. \nSobre as características e mudanças fundamentais desse modelo, em relação ao Previne Brasil, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O novo modelo manteve a mesma estrutura de incentivos financeiros, baseada no cadastramento nominal e em indicadores de desempenho clínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Um dos avanços do modelo é o Componente de Vínculo e Acompanhamento Territorial, que considera o número de pessoas cadastradas e atualizadas no sistema eletrônico da APS, aplicando um fator de ponderação que leva em conta a vulnerabilidade socioterritorial dos municípios.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O novo modelo abandona completamente a lógica de pagamento por desempenho e retorna a um financiamento fixo baseado no número estimado de habitantes de cada município, conforme dados do Instituto Brasileiro de Geografia e Estatística - IBGE.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O Componente de Qualidade do financiamento foi extinto, sendo substituído por um repasse fixo e único por equipe, independentemente do desempenho em indicadores de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DAS ALTERNATIVAS:\n\nA alternativa (a) está incorreta porque o novo modelo de financiamento trazido pela Portaria 3.493/2024 não é uma simples manutenção do Previne Brasil. Embora o cadastro nominal continue sendo importante, houve uma mudança estrutural nos componentes: o que era Capitação Ponderada tornou-se o Componente de Vínculo e Acompanhamento Territorial, e o Pagamento por Desempenho foi reformulado dentro do Componente de Qualidade.\n\nA alternativa (b) está correta. Esta é a principal inovação do modelo de 2024. O Componente de Vínculo e Acompanhamento Territorial substitui a antiga Capitação Ponderada. Ele foca na importância do cidadão estar vinculado a uma equipe e ao seu território. A grande mudança é o uso de fatores de ponderação baseados na vulnerabilidade socioterritorial (utilizando critérios como o Índice de Vulnerabilidade Social ou dados do IBGE), buscando promover maior equidade no repasse de recursos.\n\nA alternativa (c) está incorreta, pois o SUS não retornou ao modelo do antigo PAB Fixo (baseado apenas no número total de habitantes do município). O financiamento atual permanece misto e não abandonou a lógica de desempenho. Ele combina o vínculo territorial, a qualidade (desempenho), o provimento de profissionais e o fomento a políticas estratégicas.\n\nA alternativa (d) está incorreta porque o Componente de Qualidade permanece ativo. Ele não foi substituído por um repasse fixo e único. Esse componente continua atrelado ao cumprimento de metas e indicadores de saúde, com o objetivo de incentivar a melhoria assistencial das equipes de Saúde da Família e de Atenção Primária.\n\nA alternativa (e) está incorreta, visto que a alternativa (b) descreve corretamente uma das mudanças fundamentais da nova normativa.\n\nRESUMO PARA ESTUDO:\nA Portaria GM/MS 3.493 de 2024 reorganizou o financiamento da APS em quatro grandes eixos:\n1. Componente de Vínculo e Acompanhamento Territorial (foco em cadastro, vínculo e vulnerabilidade).\n2. Componente de Qualidade (foco em indicadores de desempenho).\n3. Componente de Provimento e Fixação de Profissionais (incentivo para áreas remotas).\n4. Componente de Políticas Estratégicas (incentivo para programas específicos como Saúde na Hora, Informatização, etc.).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Atenção Primária à Saúde",
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:26.799Z"
+  },
+  {
+    "id": "AJUDA_30fd51af-14d0-4785-b84b-e8ba9a8d3734",
+    "originalId": "30fd51af-14d0-4785-b84b-e8ba9a8d3734",
+    "statement": "Lactente, 3 meses e 20 dias, está com o calendário vacinal desatualizado (pendentes as vacinas de 2 e 3 meses) conforme o calendário do Programação Nacional de Imunização (PNI). É levado por sua mãe ao posto de saúde para atualização do calendário vacinal, mas, a mãe é informada que a criança não poderá receber a primeira dose da vacina contra o rotavírus por ter ultrapassado a idade limite para a administração dessa vacina. Diante do exposto, marque a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Esta conduta está correta, pois o limite de idade para a primeira dose da vacina contra o rotavírus é de 3 meses e 15 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Esta conduta está incorreta, pois o limite de idade para a primeira dose para vacina contra o rotavírus é de 3 meses e 29 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Esta conduta está incorreta, pois não há limite de idade para a vacina contra o rotavírus.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Esta conduta está correta, pois o limite de idade para a primeira dose da vacina contra o rotavírus é de 2 meses e 15 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A vacina oral de rotavírus humano (VORH), inserida no Programa Nacional de Imunizações (PNI), possui um esquema vacinal rigoroso quanto aos limites de idade para início e conclusão das doses. Isso ocorre devido ao risco teórico de invaginação intestinal (intussuscepção) caso a vacina seja administrada fora da janela de segurança biológica.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Correta. De acordo com as normas do PNI e do Ministério da Saúde, a primeira dose da vacina contra o rotavírus deve ser administrada, obrigatoriamente, entre 1 mês e 15 dias (limite inferior) e 3 meses e 15 dias (limite superior). Como o lactente do caso clínico tem 3 meses e 20 dias, ele já ultrapassou o prazo máximo permitido para iniciar o esquema vacinal. Portanto, a conduta da unidade de saúde de não aplicar a vacina está correta.\n\nAlternativa b) Incorreta. O prazo de 3 meses e 29 dias não corresponde a nenhum marco oficial para a primeira dose da vacina contra o rotavírus no calendário brasileiro. O limite máximo absoluto para a primeira dose é, de fato, 3 meses e 15 dias.\n\nAlternativa c) Incorreta. Diferentemente de outras vacinas do calendário infantil que podem ser aplicadas com atraso (como a pentavalente ou a VIP), a vacina contra o rotavírus possui limites de idade rígidos e \"improrrogáveis\". Se a criança perde o prazo da primeira dose, ela não poderá iniciar o esquema nem receber a segunda dose posteriormente.\n\nAlternativa d) Incorreta. Embora 2 meses seja a idade recomendada para a aplicação da primeira dose, o limite máximo para o atraso não é de 2 meses e 15 dias, mas sim de 3 meses e 15 dias.\n\nResumo dos prazos da vacina contra rotavírus (PNI):\n- 1ª dose: Recomendada aos 2 meses. Limite mínimo: 1 mês e 15 dias. Limite máximo: 3 meses e 15 dias.\n- 2ª dose: Recomendada aos 4 meses. Limite mínimo: 3 meses e 15 dias. Limite máximo: 7 meses e 29 dias.\n- O intervalo mínimo entre a primeira e a segunda dose deve ser de 30 dias.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:26.799Z"
+  },
+  {
+    "id": "AJUDA_30fefab8-c87e-42d1-8c87-26cf97f580c5",
+    "originalId": "30fefab8-c87e-42d1-8c87-26cf97f580c5",
+    "statement": "Menino de 4 anos é levado por sua mãe a uma unidade básica de saúde (UBS) para consulta. Ela refere que a criança apresenta, desde seu nascimento, uma tumoração no pescoço, cujo volume está aumentando. O exame físico releva tumoração arredondada de 1,5 cm de diâmetro, indolor, com pele íntegra, em linha média da região cervical anterior e móvel com o movimento de protrusão da língua. A mãe nega processos inflamatórios ou saída de secreção locais. \n\nConsiderando essa situação, assinale a alternativa que apresenta a principal hipótese diagnóstica.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cisto dermoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tireoide ectópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Higroma cístico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cisto tireoglosso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda uma das patologias cervicais congênitas mais comuns na pediatria. A chave para a resposta está na localização da lesão e no sinal clínico específico relatado no exame físico.\n\nALTERNATIVA A: INCORRETA. O cisto dermoide é um dos principais diagnósticos diferenciais de massas na linha média cervical em crianças. Ele é composto por restos epiteliais e anexos de pele. Entretanto, ao contrário do descrito no caso, o cisto dermoide não possui conexão com o osso hioide ou com a base da língua, o que significa que ele NÃO se movimenta durante a protrusão da língua.\n\nALTERNATIVA B: INCORRETA. A tireoide ectópica ocorre quando o tecido tireoidiano não completa sua descida embrionária até a posição pré-traqueal. Embora possa ser encontrada na linha média (frequentemente na base da língua), geralmente apresenta-se como uma massa sólida. É um diagnóstico diferencial importante porque, em muitos pacientes, a tireoide ectópica é o único tecido tireoidiano funcional presente. Contudo, a mobilidade clássica descrita com a língua é o sinal padrão-ouro para o cisto tireoglosso em provas de residência.\n\nALTERNATIVA C: INCORRETA. O higroma cístico (ou linfangioma) é uma malformação do sistema linfático. Sua apresentação típica é na região lateral do pescoço (triângulo cervical posterior) e não na linha média. Além disso, costuma ser uma massa multiloculada, de consistência amolecida e que transilumina ao exame físico, o que não corresponde à descrição da questão.\n\nALTERNATIVA D: CORRETA. O cisto do ducto tireoglosso é a malformação cervical congênita mais frequente. Ele se origina de remanescentes do ducto que conecta a glândula tireoide à base da língua (forame cego) durante o desenvolvimento embrionário. A descrição de uma tumoração arredondada, indolor, na linha média anterior do pescoço, que se eleva ou se move à protrusão da língua (ou à deglutição), é o sinal clínico patognomônico dessa condição. Isso ocorre porque o ducto tireoglosso tem uma relação íntima com o osso hioide e os músculos da base da língua. O tratamento é cirúrgico (Cirurgia de Sistrunk), que envolve a ressecção do cisto, do ducto e da porção central do osso hioide para evitar recidivas.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Cirurgia Infantil",
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:24:26.799Z"
+  }
+]

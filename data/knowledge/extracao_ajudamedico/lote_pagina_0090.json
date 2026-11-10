@@ -1,0 +1,522 @@
+[
+  {
+    "id": "AJUDA_1850d6da-b285-433f-8fc8-77fc66db9eab",
+    "originalId": "1850d6da-b285-433f-8fc8-77fc66db9eab",
+    "statement": "O desenvolvimento puberal de uma mulher, usualmente, segue uma sequência cronológica bem definida. Pode-se afirmar que a ordem de surgimento em uma puberdade fisiológica é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "telarca / menarca / pubarca",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pubarca / telarca / menarca",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "menarca / pubarca / telarca",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "telarca / pubarca / menarca",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O desenvolvimento puberal feminino é orquestrado pela ativação do eixo hipotálamo-hipófise-gonadal e pela produção de esteroides sexuais. A sequência cronológica clássica é um marco fundamental para a prática clínica na pediatria e ginecologia, permitindo a identificação de puberdade precoce ou atraso puberal.\n\nA sequência fisiológica esperada na maioria das meninas é:\n\n1. Telarca: O surgimento do broto mamário (Estágio B2 de Tanner). Geralmente é o primeiro sinal visível da puberdade, ocorrendo em média entre os 8 e 13 anos de idade, impulsionado pelo aumento do estrogênio.\n\n2. Pubarca: O surgimento dos pelos pubianos (Estágio P2 de Tanner). Decorre da adrenarca (produção de andrógenos pela glândula suprarrenal). Frequentemente ocorre logo após o início da telarca.\n\n3. Menarca: A primeira menstruação. É um evento tardio da puberdade, ocorrendo geralmente de 2 a 2,5 anos após a telarca, coincidindo com a fase de desaceleração do estirão de crescimento.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A menarca é o evento final do desenvolvimento puberal, não ocorrendo antes da pubarca em uma sequência fisiológica.\n\nAlternativa b) Incorreta. Embora a telarca e a pubarca possam ocorrer em intervalos próximos, a literatura clássica e os critérios de Tanner estabelecem a telarca como o evento inicial na sequência cronológica padrão feminina.\n\nAlternativa c) Incorreta. A menarca é um evento tardio. Se a menstruação ocorrer antes da telarca ou pubarca, o quadro é considerado patológico e requer investigação para causas de sangramento vaginal na infância ou puberdade precoce atípica.\n\nAlternativa d) Correta. Esta alternativa descreve exatamente a sequência clássica de maturação: primeiro o desenvolvimento das mamas (estrogênio), seguido pelos pelos pubianos (andrógenos) e finalizando com o primeiro ciclo menstrual (maturação do eixo e resposta endometrial).",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Puberdade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:00.778Z"
+  },
+  {
+    "id": "AJUDA_1855348b-9c3b-46fa-b839-0ea474f31db6",
+    "originalId": "1855348b-9c3b-46fa-b839-0ea474f31db6",
+    "statement": "Leia o trecho:\n“Um total de 583.960 casos de doenças tropicais negligenciadas (DTNs) foi detectado no quinquênio 2016-2020 no País, com média anual de 116.792, enquanto em 2015 foram registrados 152.894 casos. Deste total, 250.410 (42,9%) foram detectados em municípios de residência na Região Nordeste (em 2015, 70.846 – 46,3%), 138.875 (23,8%) na Norte (em 2015 31.999 – 20,9%), 110.740 (19,0%) na Sudeste (em 2015, 31.856 – 20,8%), 63.329 (10,8%) na Centro-Oeste (em 2015, 13.457 – 8,8%) e 20.606 (3,5%) na Sul (em 2015, 4.736 – 3,1%)”.\nFonte: Ministério da Saúde. Boletim Epidemiológico, Número Especial, 31 Jan. 2024.\n\nOs valores em porcentagem (%) representam que tipo de medida em informações sobre saúde?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Incidência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Distribuição proporcional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Letalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Mortalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO texto descreve a ocorrência de Doenças Tropicais Negligenciadas (DTNs) no Brasil, fornecendo o número absoluto de casos nacionais e, em seguida, detalhando quantos desses casos ocorreram em cada região geográfica. As porcentagens indicadas (como os 42,9% do Nordeste e 23,8% do Norte) são obtidas dividindo-se o número de casos específicos de cada região pelo número total de casos detectados no país. Esse tipo de cálculo define uma medida de proporção ou distribuição.\n\nAlternativa a: Incorreta. A incidência mede o risco de surgimento de novos casos em uma população em um determinado período. Para calcular a incidência, o denominador deve ser a população sob risco de adoecer, e não o número total de casos diagnosticados no país.\n\nAlternativa b: Correta. A distribuição proporcional é um indicador de saúde que expressa a importância relativa de um evento (ou subgrupo) em relação ao total de eventos da mesma natureza. No exemplo, as porcentagens mostram como o volume total de casos de DTNs se distribui espacialmente pelo território brasileiro. A soma das porcentagens de todas as regiões resulta em 100% do fenômeno observado (o total de casos no Brasil).\n\nAlternativa c: Incorreta. A prevalência avalia o número total de casos (novos e antigos) existentes em uma população em um ponto ou período no tempo. Assim como na incidência, o denominador padrão para taxas de prevalência seria a população residente em cada região, e não a fatia que aquela região representa no total de casos nacionais.\n\nAlternativa d: Incorreta. A letalidade avalia a gravidade de uma doença, calculando a proporção de mortes entre as pessoas que estão doentes (Óbitos / Casos). Como o texto não fornece dados sobre mortes, mas apenas sobre a detecção de casos, não se trata de letalidade.\n\nAlternativa e: Incorreta. A mortalidade relaciona o número de óbitos com a população total exposta ao risco. O denominador para o coeficiente de mortalidade é a população total da região estudada. O fragmento citado foca exclusivamente na morbidade (casos detectados) e não na mortalidade.\n\nGabarito: Letra (b).",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:00.778Z"
+  },
+  {
+    "id": "AJUDA_18567f39-7a2c-4fc0-b7dc-74b2857a7db1",
+    "originalId": "18567f39-7a2c-4fc0-b7dc-74b2857a7db1",
+    "statement": "Mulher de 42 anos, com artrite reumatoide moderada, retorna à Unidade Básica de Saúde (UBS) trazendo relatório do ambulatório de reumatologia, para onde havia sido encaminhada há seis meses. No documento, o especialista descreve o ajuste da terapia imunossupressora e solicita à equipe da Atenção Primária à Saúde (APS) o monitoramento laboratorial mensal da função hepática e hematológica, com retorno ao serviço especializado em um ano. Diante desse cenário, qual deve ser a conduta mais adequada do médico da UBS?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Assumir o acompanhamento longitudinal da paciente, solicitar os exames laboratoriais na rotina da UBS e utilizar as informações da contrarreferência para coordenar o cuidado em conjunto com a Atenção Especializada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar o monitoramento laboratorial solicitado e reavaliar a paciente mensalmente, ficando a UBS responsável por ajustar as doses das medicações imunossupressoras conforme os resultados dos exames.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar os exames laboratoriais mensalmente, orientando a paciente a retirar os resultados na UBS e levá-los diretamente ao guichê do ambulatório de especialidades para avaliação do reumatologista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acolher a paciente e realizar o monitoramento laboratorial proposto, desde que a UBS disponha de protocolo municipal instituído que autorize o manejo compartilhado de Medicamentos Modificadores do Curso da Doença (MMCD).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Agendar consultas trimestrais na UBS para renovação das receitas dos imunossupressores, postergando a solicitação dos exames laboratoriais para o mês que antecede o retorno ao especialista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Tema central: coordenação do cuidado e longitudinalidade na Atenção Primária à Saúde (APS), com referência e contrarreferência entre os níveis de atenção.\n\nConceitos-chave:\n- A APS tem como atributos a longitudinalidade, a coordenação do cuidado, a integralidade e o primeiro contato. A coordenação do cuidado é a articulação entre os serviços, com continuidade da atenção e integração das informações.\n- A APS é a ordenadora da rede e responsável pela paciente mesmo quando ela é acompanhada pelo especialista. A paciente não é \"devolvida\" nem \"transferida\": o cuidado é compartilhado.\n- A contrarreferência é a informação que o especialista envia à APS com diagnóstico, conduta e orientações de seguimento. Ela deve ser usada para planejar o cuidado.\n- Na artrite reumatoide, os MMCD sintéticos (metotrexato, leflunomida, sulfassalazina) exigem monitorização periódica de hemograma, transaminases e creatinina. Esse monitoramento é plenamente viável na APS, que também acompanha comorbidades, vacinação, rastreio de infecções, efeitos adversos e adesão.\n\nAnálise das alternativas:\n\na) Correta. Descreve a atuação ideal da APS: acompanhamento longitudinal, solicitação dos exames na rotina da UBS e uso da contrarreferência para coordenar o cuidado junto ao especialista. Isso atende à solicitação do reumatologista e preserva a responsabilidade compartilhada.\n\nb) Incorreta. O ajuste das doses dos imunossupressores é decisão do reumatologista. A UBS monitora, identifica toxicidade ou intercorrências e comunica o especialista, mas não assume sozinha a titulação desses fármacos, sobretudo com a paciente em reavaliação especializada.\n\nc) Incorreta. Levar os resultados ao guichê do ambulatório, sem consulta, caracteriza fragmentação do cuidado. Não há avaliação clínica, e o resultado pode não chegar ao especialista de forma adequada. A APS deve avaliar os exames e, havendo alterações, comunicar o especialista por contato direto, matriciamento ou nova referência.\n\nd) Incorreta. O manejo compartilhado de MMCD não depende de protocolo municipal formal. Condicionar o acolhimento e o monitoramento a essa exigência contraria os princípios da APS. A solicitação do especialista já é suficiente, e a paciente deve ser acolhida.\n\ne) Incorreta. Reduzir a atuação à renovação de receitas e adiar os exames para o mês anterior ao retorno contraria o pedido de monitoramento mensal. Isso expõe a paciente ao risco de toxicidade hepática e hematológica não detectada, como transaminite e citopenias.\n\nResumo: a APS coordena o cuidado, realiza o monitoramento solicitado, não altera sozinha a terapia imunossupressora e mantém comunicação com a atenção especializada. Gabarito: letra A.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:00.778Z"
+  },
+  {
+    "id": "AJUDA_18609860-ea72-4fcb-bc7d-2061ae37e3f9",
+    "originalId": "18609860-ea72-4fcb-bc7d-2061ae37e3f9",
+    "statement": "Homem de 45 anos, em investigação de quadro pulmonar, apresenta fraqueza, poliúria e constipação. Exames laboratoriais mostram:\n• Cálcio sérico: 12,5 mg/dL (VR: 8,5–10,5)\n• PTH: 9 pg/mL (VR: 15–65)\n• 25(OH) vitamina D: 35 ng/mL (VR: 30–100)\n• 1,25(OH)₂ vitamina D: 95 pg/mL (VR: 20–60)\nQual o mecanismo mais provável para a hipercalcemia nesse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Produção extrarrenal aumentada de 1,25(OH)₂ vitamina D pelos macrófagos ativados nas lesões granulomatosas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aumento da absorção intestinal de cálcio por intoxicação por Vitamina D.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipersecreção de PTH secundária à doença granulomatosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Produção aumentada de PTHrP (peptídeo relacionado ao PTH) pelas células inflamatórias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente apresenta hipercalcemia (cálcio = 12,5 mg/dL) com PTH suprimido (9 pg/mL), o que caracteriza uma hipercalcemia PTH-independente. O dado fundamental é a elevação da 1,25(OH)2 vitamina D (calcitriol) associada a uma investigação de doença pulmonar, com níveis normais de 25(OH) vitamina D (calcidiol). Esse cenário é clássico de doenças granulomatosas, como a sarcoidose.\n\nAlternativa (a): CORRETA. Em patologias granulomatosas, os macrófagos que compõem os granulomas possuem a enzima 1-alfa-hidroxilase. Diferentemente da enzima presente nos rins, a 1-alfa-hidroxilase dos macrófagos não é regulada pelo PTH ou pelos níveis de cálcio, agindo de forma autônoma. Isso leva a uma conversão excessiva e descontrolada de 25(OH) vitamina D em 1,25(OH)2 vitamina D (forma ativa), que, por sua vez, aumenta a absorção intestinal de cálcio, causando a hipercalcemia.\n\nAlternativa (b): INCORRETA. Na intoxicação por vitamina D (geralmente por ingestão excessiva de suplementos), o achado laboratorial característico é a elevação acentuada da 25(OH) vitamina D, frequentemente acima de 100 ou 150 ng/mL. No caso descrito, o nível de 25(OH) vitamina D está normal (35 ng/mL).\n\nAlternativa (c): INCORRETA. O PTH do paciente está suprimido (9 pg/mL), o que descarta o hiperparatireoidismo primário ou qualquer hipersecreção de PTH. Nas doenças granulomatosas, a hipercalcemia ocorre apesar da supressão das paratireoides.\n\nAlternativa (d): INCORRETA. O peptídeo relacionado ao PTH (PTHrP) é o principal mecanismo da hipercalcemia humoral da malignidade (comum em carcinomas de células escamosas). Embora o PTHrP cause supressão do PTH, ele geralmente não eleva os níveis de 1,25(OH)2 vitamina D; pelo contrário, o calcitriol costuma estar baixo ou normal nesses casos. A elevação nítida do calcitriol no exame direciona o diagnóstico para a atividade inflamatória macrofágica.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:00.778Z"
+  },
+  {
+    "id": "AJUDA_186c942a-b204-479a-a0f0-4f6a7c245203",
+    "originalId": "186c942a-b204-479a-a0f0-4f6a7c245203",
+    "statement": "Em um estudo de Coorte realizado para avaliar o risco de infarto agudo do miocárdio (IAM) em indivíduos sedentários, os pesquisadores encontraram um Risco Relativo (RR) de 2,5. A interpretação correta desse resultado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Indivíduos sedentários têm 2,5% de chance de ter um IAM.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O sedentarismo é um fator de proteção, reduzindo o risco em 2,5 vezes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indivíduos sedentários apresentam um risco 150% maior (ou 2,5 vezes maior) de desenvolver IAM do que os ativos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A incidência de IAM é a mesma entre expostos e não expostos, com erro amostral de 2,5.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O estudo é inválido, pois o Risco Relativo só pode ser calculado em estudos de Caso Controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "CONCEITO INICIAL SOBRE RISCO RELATIVO (RR)\n\nO Risco Relativo é uma medida de associação fundamental na epidemiologia, utilizada principalmente em estudos de Coorte e Ensaios Clínicos. Ele é calculado pela razão entre a incidência do desfecho (doença) no grupo exposto e a incidência no grupo não exposto. O valor de referência (neutralidade) é 1,0.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) INCORRETA. O valor 2,5 indica uma comparação entre dois grupos (razão) e não uma probabilidade absoluta ou frequência da doença na população. Dizer que a chance é de 2,5% seria uma medida de incidência ou prevalência absoluta, o que o dado de RR sozinho não permite afirmar.\n\nAlternativa b) INCORRETA. Para que um fator seja considerado de proteção, o Risco Relativo deve ser menor que 1,0 (ex: RR = 0,4). Como o RR encontrado foi de 2,5 (maior que 1,0), o sedentarismo é classificado como um fator de risco, indicando que a exposição aumenta a probabilidade do desfecho.\n\nAlternativa c) CORRETA. Um RR de 2,5 indica que o grupo exposto tem 2,5 vezes o risco do grupo não exposto. Para expressar isso em termos de aumento percentual de risco, utilizamos a fórmula: (RR - 1) x 100. Portanto, (2,5 - 1) x 100 = 1,5 x 100 = 150%. Isso significa que ser sedentário aumenta o risco de IAM em 150% em relação a quem não é sedentário.\n\nAlternativa d) INCORRETA. Se a incidência de IAM fosse a mesma entre expostos e não expostos, o Risco Relativo seria igual a 1,0. O número 2,5 não representa erro amostral, mas sim a magnitude da associação encontrada entre a exposição (sedentarismo) e o desfecho (IAM).\n\nAlternativa e) INCORRETA. O estudo de Coorte é justamente o desenho de estudo ideal para o cálculo do Risco Relativo, pois permite acompanhar os indivíduos ao longo do tempo e medir a incidência real do evento. Já o estudo de Caso-Controle, por ser retrospectivo e não medir incidência, utiliza preferencialmente o Odds Ratio (Razão de Chances).\n\nGABARITO: Letra C.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:00.778Z"
+  },
+  {
+    "id": "AJUDA_188b3083-267e-4da2-beb9-bfde7a275261",
+    "originalId": "188b3083-267e-4da2-beb9-bfde7a275261",
+    "statement": "O Coeficiente de Mortalidade Infantil é um dos principais indicadores das condições de vida e saúde de uma população. De acordo com o Ministério da Saúde e o Comitê de Prevenção do Óbito Infantil, a fórmula correta para o seu cálculo em um determinado local e ano é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "(Nº de óbitos em menores de 5 anos / Nº total de nascidos vivos) x 1.000.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "(Nº de óbitos em menores de 1 ano / População total) x 100.000.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "(Nº de óbitos em menores de 1 ano / Nº total de nascidos vivos) x 1.000.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "(Nº de óbitos maternos / Nº total de nascidos vivos) x 100.000.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "(Nº de óbitos em menores de 1 ano / Nº total de nascidos vivos) x 100.000.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O Coeficiente de Mortalidade Infantil (CMI) é um indicador fundamental em saúde pública, pois reflete não apenas a qualidade da assistência à saúde da gestante e da criança, mas também as condições socioeconômicas e de saneamento de uma região. Para o cálculo correto desse indicador, devemos considerar o número de óbitos em crianças menores de um ano em relação ao número de nascidos vivos no mesmo período e local.\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. Esta fórmula refere-se ao Coeficiente de Mortalidade na Infância (ou mortalidade em menores de 5 anos). Embora seja um indicador importante de sobrevivência infantil global, o Coeficiente de Mortalidade Infantil restringe-se especificamente ao primeiro ano de vida (menores de 365 dias).\n\nAlternativa b) Incorreta. O denominador de indicadores de mortalidade infantil deve ser o número de nascidos vivos, que representa a população real sob risco de morte naquela faixa etária, e não a população total. Além disso, o fator multiplicador padrão para a mortalidade infantil é 1.000, e não 100.000.\n\nAlternativa c) Correta. Esta alternativa apresenta a fórmula oficial preconizada pelo Ministério da Saúde: o número de óbitos de residentes com menos de um ano de idade, dividido pelo número de nascidos vivos residentes, multiplicado por 1.000. O resultado expressa o risco de um nascido vivo morrer antes de completar seu primeiro ano de vida.\n\nAlternativa d) Incorreta. Esta fórmula descreve a Razão de Mortalidade Materna. Nela, utiliza-se o número de óbitos por causas ligadas à gravidez, parto e puerpério no numerador e o multiplicador de 100.000. Não possui relação direta com o cálculo da mortalidade infantil.\n\nAlternativa e) Incorreta. Embora o numerador (óbitos em menores de 1 ano) e o denominador (nascidos vivos) estejam corretos para o indicador solicitado, o multiplicador utilizado na saúde pública para a mortalidade infantil é a base 1.000 (por mil nascidos vivos). O uso de 100.000 é reservado para outros indicadores, como a mortalidade materna ou coeficientes de mortalidade por causas específicas (como câncer ou doenças cardiovasculares).",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:00.778Z"
+  },
+  {
+    "id": "AJUDA_188b6425-507e-456c-8b6c-d98010376e0e",
+    "originalId": "188b6425-507e-456c-8b6c-d98010376e0e",
+    "statement": "Gestante de 39 anos, primigesta, hipertensa crônica, com gestação de 35 semanas, refere quadro de dor abdominal súbita, acompanhada de sangramento genital profuso, vermelho vivo, há 30 minutos. Ao exame clínico, apresenta-se descorada +/4+, hidratada e afebril, com P: 88; PA: 132 x 95 mmHg; AU: 37 cm; BCF 178; DU ausente e tônus uterino aumentado. Nega episódio anterior. Exame especular revela moderada quantidade de sangue vermelho vivo saindo pelo orifício externo do colo uterino. Esse quadro clínico sugere o diagnóstico de",
+    "options": [
+      {
+        "id": "A",
+        "text": "rotura de seio marginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "rotura de vasa prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "placenta prévia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "descolamento prematuro de placenta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "rotura uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de Descolamento Prematuro de Placenta (DPP), que constitui uma das principais causas de hemorragia da segunda metade da gestação e representa uma emergência obstétrica.\n\nAnálise das alternativas:\n\na) Incorreta. A rotura de seio marginal caracteriza-se por sangramento genital indolor, de menor volume, com tônus uterino normal e sem repercussões hemodinâmicas ou sofrimento fetal agudo associado.\n\nb) Incorreta. A rotura de vasa prévia ocorre tipicamente associada à amniorrexe (ruptura das membranas amnióticas). O sangue exteriorizado é de origem fetal, levando a uma rápida deterioração da vitalidade fetal, porém a gestante não apresenta dor abdominal ou hipertonia uterina.\n\nc) Incorreta. A placenta prévia manifesta-se tipicamente com sangramento vaginal indolor, vermelho-vivo, de início súbito e recidivante, mantendo tônus uterino normal e sem sofrimento fetal agudo nas fases iniciais.\n\nd) Correta. O descolamento prematuro de placenta apresenta como fatores de risco a hipertensão arterial crônica e a idade materna avançada. A tríade clássica é composta por dor abdominal súbita, sangramento genital e hipertonia uterina. A altura uterina aumentada para a idade gestacional (37 cm para 35 semanas) sugere a presença de hematoma retroplacentário, e a taquicardia fetal (BCF 178 bpm) indica sofrimento fetal agudo em resposta à hipóxia.\n\ne) Incorreta. A rotura uterina ocorre predominantemente durante o trabalho de parto em pacientes com cicatriz uterina prévia. Caracteriza-se por dor lancinante súbita seguida de atonia uterina, interrupção das contrações, subida da apresentação fetal e fácil palpação de partes fetais na cavidade abdominal, diferindo da hipertonia uterina observada no caso.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sagramento da Segunda Metade",
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:00.778Z"
+  },
+  {
+    "id": "AJUDA_188f1399-561a-4ab5-bff4-dd81424490f4",
+    "originalId": "188f1399-561a-4ab5-bff4-dd81424490f4",
+    "statement": "Um lactente de 12 meses de idade, nascido a termo com peso adequado para idade gestacional, vai à consulta de puericultura. A mãe refere que o filho tem bom apetite, que durante as refeições pinça os pedacinhos de alimentos do prato e leva à boca, acena balançando as mãos quando na despedida e fala “mama” para chamar a mãe e “papa” para chamar e o pai. Durante a consulta, o médico avalia que ele transfere conteúdo de um recipiente para outro, procura objetos escondidos de maneira lúdica, engatinha, fica em pé ao ser puxado pelos braços e dá passos com apoio. Está com bom ganho de peso e apresenta o restante do exame físico normal. A mãe está preocupada com o desenvolvimento do filho, referindo que as demais crianças da creche que ele frequenta já andam sem apoio e seu filho ainda não.\n\nQual a orientação mais adequada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar o lactente para a avaliação do neuropediatra.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar o lactente para a avaliação do ortopedista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar uso do andador duas a três vezes ao dia, sob vigilância de um adulto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Tranquilizar a mãe, pois o desenvolvimento está dentro do esperado para a idade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Solicitar ressonância magnética de crânio e coluna lombar com retorno mais breve.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um lactente de 12 meses com desenvolvimento neuropsicomotor perfeitamente adequado para a idade em todas as esferas avaliadas:\n\n- Motor fino e cognição: realiza pinça fina, transfere objetos de um recipiente para outro e busca objetos escondidos (noção de permanência do objeto).\n- Linguagem e social: fala \"mama\" e \"papa\" com significado e acena na despedida.\n- Motor grosseiro: engatinha, fica em pé com tração e dá passos com apoio. A aquisição da marcha independente (sem apoio) possui uma janela de normalidade que se estende habitualmente até os 15 a 18 meses de vida. Portanto, a ausência de marcha independente isolada aos 12 meses não configura atraso.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Não há qualquer evidência de atraso global do desenvolvimento, regressão de marcos ou sinais de alarme neurológicos que justifiquem o encaminhamento ao neuropediatra.\n\nAlternativa b: Incorreta. O exame físico geral e locomotor é normal, com tônus e força muscular preservados (a criança já sustenta o peso e anda com apoio), inexistindo indicação de avaliação ortopédica.\n\nAlternativa c: Incorreta. O andador infantil é formalmente contraindicado pela Sociedade Brasileira de Pediatria devido ao elevado risco de acidentes graves (quedas, traumatismo cranioencefálico, queimaduras) e por não promover o desenvolvimento motor, podendo inclusive alterar a biomecânica da marcha.\n\nAlternativa d: Correta. O lactente preenche todos os marcos esperados para o primeiro ano de vida e encontra-se dentro da janela fisiológica para a aquisição da marcha independente. A conduta médica adequada consiste em orientar e tranquilizar a mãe, mantendo o acompanhamento de puericultura de rotina.\n\nAlternativa e: Incorreta. A realização de ressonância magnética sob sedação é um procedimento desnecessário, invasivo e iatrogênico diante de uma criança saudável e com desenvolvimento adequado.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Desenvolvimento Neuropsicomotor (DNPM)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:00.778Z"
+  },
+  {
+    "id": "AJUDA_18a02f85-f8a7-4154-8f3e-7d6cc4c443a2",
+    "originalId": "18a02f85-f8a7-4154-8f3e-7d6cc4c443a2",
+    "statement": "Um paciente de 65 anos realiza uma colonoscopia de rastreamento após preparo intestinal domiciliar. Durante o procedimento, um pólipo séssil pequeno é ressecado no sigmoide. O exame é considerado tecnicamente difícil, necessitando de insuflações repetidas para uma visualização adequada. No entanto, não houve complicação notada durante o procedimento.\n\nApós o procedimento, o paciente relata dor abdominal leve e difusa. Uma tomografia computadorizada de abdome e pelve é solicitada e revela bolhas de ar livre intraperitoneal próximas ao cólon direito, mas sem líquido livre associado. O paciente permanece clinicamente estável, sem febre ou sinais de irritação peritoneal.\n\nQual é a conduta inicial mais apropriada para este caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se submeter o paciente a laparotomia exploradora imediata para rafia da perfuração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de uma síndrome pós-polipectomia e, portanto, não há necessidade de manter paciente hospitalizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve-se realizar colectomia parcial com colostomia para controle de danos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Manejo não cirúrgico com internação, jejum, antibioticoterapia de amplo espectro e observação rigorosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Deve-se repetir a colonoscopia para tentar identificar o ponto de perfuração e realizar clipagem endoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão descreve um caso de pneumoperitônio (ar livre na cavidade abdominal) após uma colonoscopia, que é uma complicação reconhecida do procedimento, ocorrendo geralmente por barotrauma (excesso de pressão durante a insuflação) ou microperfuração durante a ressecção de pólipos. O ponto fundamental para a resolução dessa questão é a estabilidade clínica do paciente.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A laparotomia exploradora imediata está indicada em casos de perfuração com instabilidade hemodinâmica, sinais claros de peritonite generalizada (abdome em tábua, descompressão brusca dolorosa) ou quando há evidência de extravasamento de grande quantidade de conteúdo fecal. No caso descrito, o paciente está clinicamente estável e sem sinais de irritação peritoneal, o que permite uma abordagem inicial menos invasiva.\n\nAlternativa (b) Incorreta: A síndrome pós-polipectomia ocorre devido a uma lesão térmica transmural da parede do cólon (queimadura), sem que haja perfuração completa. Embora possa cursar com dor, febre e leucocitose, a presença de ar livre intraperitoneal na tomografia indica que houve, de fato, uma comunicação entre a luz intestinal e a cavidade abdominal. Afirmar que não há necessidade de manter o paciente hospitalizado é incorreto e perigoso, dada a necessidade de monitorar a evolução do quadro.\n\nAlternativa (c) Incorreta: A colectomia parcial com colostomia é uma intervenção agressiva reservada para casos de contaminação peritoneal grave, necrose intestinal ou falha documentada de outras medidas. Seria uma conduta desproporcional para um paciente estável e sem líquido livre na cavidade.\n\nAlternativa (d) Correta: Este é o manejo preconizado para as chamadas \"perfurações seladas\" ou microperfurações em pacientes assintomáticos ou oligossintomáticos. Se o paciente não apresenta sinais de sepse ou peritonite, a conduta inicial é o tratamento conservador sob vigilância hospitalar rigorosa. O jejum reduz a pressão e o trânsito intestinal, enquanto a antibioticoterapia de amplo espectro trata a possível translocação bacteriana. Caso o paciente apresente piora clínica, a cirurgia é então indicada.\n\nAlternativa (e) Incorreta: Repetir a colonoscopia é contraindicado na suspeita de perfuração franca ou pneumoperitônio estabelecido. A insuflação de ar necessária para realizar o exame aumentaria a pressão dentro do cólon, podendo forçar a saída de mais ar e conteúdo intestinal para o abdome, agravando o quadro e podendo causar um pneumoperitônio hipertensivo. A clipagem endoscópica é uma opção quando a perfuração é identificada imediatamente durante o procedimento original, não como um novo exame em um paciente já com pneumoperitônio diagnosticado.\n\nResumo didático: No manejo de complicações pós-colonoscopia, a clínica soberana define a conduta. Paciente com ar livre, mas sem sinais de irritação peritoneal e estável, deve receber tratamento conservador inicial. Paciente com sinais de peritonite ou instabilidade deve ser submetido à cirurgia de urgência.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Perfurativo",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:00.778Z"
+  },
+  {
+    "id": "AJUDA_18a53933-fb42-4fda-b0d5-81e3ee7a347b",
+    "originalId": "18a53933-fb42-4fda-b0d5-81e3ee7a347b",
+    "statement": "Jorge, 60 anos, casado, tocador de tamborim na escola de samba, aos sábados, há 4 anos, trabalha em construção civil e obras públicas há 38 anos (principalmente como operador de britadeira). Refere que os EPIs são antigos e às vezes quebrados. Traz uma audiometria solicitada para investigar perda auditiva, pela qual conclui-se: \"Perda auditiva sensorioneural bilateral simétrica com perda global, mas mais intensa em frequências de 3, 4 e 6 kHz, com melhora relativa à frequência de 8 kHz\". A partir do resultado da audiometria é correto concluir pelo diagnóstico de",
+    "options": [
+      {
+        "id": "A",
+        "text": "perda auditiva não induzida por ruídos e deve-se solicitar exame de imagem, pois perdas auditivas sensorioneurais bilaterais simétricas tipicamente não estão relacionadas a doença ocupacional e devem ser investigadas com brevidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "presbiacusia, e deve-se propor tratamento adequado e orientar que a causa é essencialmente uma complicação da idade, recomendando repouso acústico aos fins de semana e uso mais intensivo de equipamentos de proteção individual no trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "perda auditiva induzida por ruído ocupacional, e deve-se propor tratamento adequado, notificar para o SINAN e elaborar RAAT, fornecendo cópia para Jorge poder levar ao CEREST e à empresa em que trabalha para emissão de CAT.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "perda auditiva induzida por ruído ocupacional, e deve-se propor tratamento adequado, notificar para o SINAN e elaborar CAT, orientando Jorge a ir à delegacia registrar a denúncia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "perda auditiva induzida por ruído não ocupacional, e deve-se propor tratamento adequado, orientar uso de protetores auriculares quando for tocar na escola de samba.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve Jorge, um trabalhador com 38 anos de exposição ocupacional a ruído de alta intensidade (britadeira) e uso inadequado de Equipamentos de Proteção Individual (EPIs). O resultado da audiometria apresenta o padrão clássico da Perda Auditiva Induzida por Ruído (PAIR): perda sensorioneural, bilateral, simétrica, com a característica \"gota\" ou entalhe nas frequências de 3, 4 ou 6 kHz e recuperação na frequência de 8 kHz.\n\nAnálise das alternativas:\n\na) Incorreta. A audiometria de Jorge é o exemplo típico de PAIR. Perdas sensorioneurais bilaterais e simétricas com entalhe em frequências agudas são a marca da exposição prolongada ao ruído ocupacional. Não há indicação inicial de exames de imagem, pois a história clínica e o exame subsidiário são concordantes com a patologia do trabalho.\n\nb) Incorreta. Embora Jorge tenha 60 anos, o que poderia sugerir presbiacusia (perda auditiva relacionada à idade), o padrão audiométrico da presbiacusia é geralmente uma queda descendente contínua nas frequências agudas, sem a recuperação em 8 kHz vista no entalhe da PAIR. Além disso, a história ocupacional de 38 anos com britadeiras é o fator determinante.\n\nc) Correta. O diagnóstico clínico e audiométrico é de Perda Auditiva Induzida por Ruído (PAIR) relacionada ao trabalho. A conduta médica correta envolve: propor reabilitação auditiva, se necessário; realizar a notificação compulsória no SINAN (Sistema de Informação de Agravos de Notificação), por se tratar de uma doença relacionada ao trabalho; e elaborar o Relatório de Atendimento ao Acidentado do Trabalho (RAAT). A emissão da CAT (Comunicação de Acidente de Trabalho) é responsabilidade primária da empresa, mas o médico deve fornecer os subsídios para que isso ocorra ou emiti-la caso a empresa se recuse.\n\nd) Incorreta. Apesar de o diagnóstico estar correto, a orientação de ir à delegacia registrar denúncia não faz parte do fluxo padrão de assistência e vigilância em saúde do trabalhador para casos de PAIR. O foco deve ser o acolhimento, a notificação nos sistemas de saúde e o encaminhamento para a rede de proteção social e previdenciária.\n\ne) Incorreta. A exposição ocupacional (38 anos como operador de britadeira) é tecnicamente muito mais significativa e agressiva do que a exposição recreativa (tocador de tamborim aos sábados). Classificar a perda como \"não ocupacional\" ignora o nexo causal evidente com o trabalho de Jorge.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:11:00.778Z"
+  }
+]

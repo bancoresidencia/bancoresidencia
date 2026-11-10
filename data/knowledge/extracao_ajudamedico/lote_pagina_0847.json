@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_eb39296a-0cda-45d6-b3e7-2dc9ec3a4015",
+    "originalId": "eb39296a-0cda-45d6-b3e7-2dc9ec3a4015",
+    "statement": "Beatriz, 3 anos de idade, foi levada ao Pronto Atendimento Infantil com relato de diarreia aquosa (4 episódios/d) há três dias, associada a dois picos febris no primeiro dia e vômitos (2x) no dia do atendimento. Mãe refere que criança está ativa, porém tem recusado alimentos sólidos (só toma leite), com ingesta hídrica satisfatória, mantendo boa diurese. Diante desse cenário clinico, qual seria a melhor abordagem terapêutica para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar hidratação venosa, antibioticoterapia empírica e antiparasitário",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar medicamentos antidiarreicos (antissecretores) para reduzir o número de evacuações e a criança não ter prejuízo no sono.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Indicar reidratação oral com solução de sais de reidratação oral (SRO), e administrar zinco uma vez ao dia, durante 10 a 14 dias (até os 6 meses de idade 10mg/dia e em maiores de 6 meses até os 5 anos de idade 20mg/dia) e considerar o uso de probióticos para auxiliar na restauração da microbiota intestinal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Indicar reidratação oral com solução de sais de reidratação oral (SRO), antibioticoterapia via oral e administrar zinco uma vez ao dia, durante 10 a 14 dias (até os 6 meses de idade 10mg/dia e em maiores de 6 meses até os 5 anos de idade 20mg/dia)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Manter apenas observação clínica, pois a criança apresenta bom estado geral e a diarreia aguda viral tem resolução espontânea, sem necessidade de medidas terapêuticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico: Beatriz apresenta um quadro de diarreia aguda aquosa, com vômitos e picos febris já resolvidos. O ponto crucial para a conduta é o estado de hidratação: a criança está ativa, com boa ingesta hídrica e diurese preservada, o que caracteriza um quadro sem desidratação. O tratamento deve seguir o preconizado pelo Ministério da Saúde e pela Organização Mundial da Saúde (OMS) para o manejo ambulatorial (Plano A).\n\nAlternativa (a) INCORRETA: A hidratação venosa é indicada apenas para casos de desidratação grave com choque ou falha da via oral (Plano C). Além disso, a antibioticoterapia empírica e o uso de antiparasitários não estão indicados para diarreia aquosa sem sinais de gravidade ou identificação de patógenos específicos, já que a maioria dos casos na infância é de etiologia viral.\n\nAlternativa (b) INCORRETA: Medicamentos antidiarreicos (como a loperamida) são contraindicados em pediatria. Eles podem causar efeitos adversos graves, como íleo paralítico e sedação, além de mascarar a perda de líquidos que ficam retidos na alça intestinal, dificultando a avaliação clínica da desidratação.\n\nAlternativa (c) CORRETA: Esta alternativa reflete as recomendações atuais. A terapia de reidratação oral (TRO) com SRO é a base do tratamento para prevenir a desidratação. O zinco é fundamental, pois reduz a duração, a gravidade e a recorrência de novos episódios de diarreia nos meses subsequentes. A dosagem está correta: 10 mg/dia para menores de 6 meses e 20 mg/dia para crianças entre 6 meses e 5 anos, por 10 a 14 dias. Os probióticos são adjuvantes aceitos para auxiliar na redução do tempo de diarreia e restauração da flora intestinal.\n\nAlternativa (d) INCORRETA: Embora a parte sobre o zinco e a reidratação oral esteja correta, a indicação de antibioticoterapia via oral é o erro da alternativa. Não se prescreve antibiótico para diarreia aquosa de forma rotineira. O uso de antibióticos em pediatria é reservado para casos de disenteria (sangue nas fezes) com comprometimento do estado geral, suspeita de cólera grave ou infecções extraintestinais comprovadas.\n\nAlternativa (e) INCORRETA: Apesar de a diarreia aguda viral ser autolimitada, a conduta passiva de \"apenas observação\" é inadequada. É essencial orientar a oferta de líquidos (SRO) após cada evacuação para prevenir a desidratação, manter a alimentação habitual e iniciar a suplementação de zinco, que é uma medida de saúde pública com impacto comprovado na redução da morbimortalidade infantil.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:18.504Z"
+  },
+  {
+    "id": "AJUDA_eb397761-792b-4b0b-8b51-e3552748b90c",
+    "originalId": "eb397761-792b-4b0b-8b51-e3552748b90c",
+    "statement": "Qual a melhor opção terapêutica para mulher com queixa de prurido vulvar e corrimento vaginal, cujo aspecto é cor branco acinzentado com bolhas finas e PH vaginal > 4,5:",
+    "options": [
+      {
+        "id": "A",
+        "text": "associação tópica de metronidazol e miconazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "fluconazol via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "secnidazol via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "nistatina vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "metronidazol via oral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\nO caso descreve uma paciente com corrimento branco-acinzentado, presença de bolhas finas e pH vaginal elevado (maior que 4,5). Essas características são clássicas da vaginose bacteriana (VB), a causa mais comum de corrimento vaginal em mulheres em idade reprodutiva. A VB ocorre devido ao desequilíbrio da flora vaginal, com redução de lactobacilos e proliferação de bactérias anaeróbias, principalmente a Gardnerella vaginalis. Embora as \"bolhas\" (aspecto bolhoso) possam por vezes confundir com tricomoníase, a coloração branco-acinzentada e o pH reforçam o diagnóstico de vaginose bacteriana. Vale lembrar que o metronidazol é eficaz tanto para vaginose quanto para tricomoníase.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. A associação de metronidazol (antibacteriano/antiprotozoário) e miconazol (antifúngico) é utilizada em tratamentos empíricos de vulvovaginites inespecíficas ou quando há suspeita de infecção mista (fungo + bactéria). No entanto, o quadro clínico é específico para vaginose bacteriana, não havendo necessidade clínica de associar um antifúngico.\n\nb) INCORRETA. O fluconazol é um antifúngico indicado para o tratamento da candidíase vaginal. A candidíase apresenta-se tipicamente com pH vaginal baixo (menor que 4,5), prurido intenso e corrimento branco aderido em placas (aspecto de leite coalhado), o que difere do quadro descrito.\n\nc) INCORRETA. O secnidazol é um derivado nitroimidazólico que pode ser utilizado para o tratamento da vaginose bacteriana em dose única. Contudo, os protocolos clínicos e as diretrizes (como as do Ministério da Saúde e do CDC) apontam o metronidazol como o padrão-ouro e a opção terapêutica preferencial de primeira linha pela sua eficácia consolidada.\n\nd) INCORRETA. A nistatina é um antifúngico de ação tópica, indicado exclusivamente para o tratamento de candidíase. Não possui atividade contra as bactérias anaeróbias causadoras da vaginose bacteriana.\n\ne) CORRETA. O metronidazol por via oral (500 mg, de 12 em 12 horas, por 7 dias) é o tratamento de escolha para a vaginose bacteriana. Ele atua eliminando o excesso de bactérias anaeróbias e permitindo a restauração da flora vaginal normal. A via oral apresenta alta eficácia e é a recomendação clássica para o manejo desta patologia.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:18.504Z"
+  },
+  {
+    "id": "AJUDA_eb4b236a-9e8b-4738-ac33-40f2e9ac219e",
+    "originalId": "eb4b236a-9e8b-4738-ac33-40f2e9ac219e",
+    "statement": "Um paciente de três anos de idade, previamente hígido, foi levado ao pronto atendimento por apresentar há dois dias diarreia líquida, com seis episódios por dia, e vômitos ocasionais. A mãe relatou que ele mantém aceitação moderada de líquidos. Ao exame físico, mostrou-se hidratado, com mucosas úmidas, sem alterações respiratórias, com FC = 110 bpm, FR = 26 irpm, SpO2 = 97%, e temperatura = 37,3 °C. Abdome sem dor à palpação. Considerando o quadro apresentado, qual é a principal medida terapêutica inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reposição venosa rápida com solução isotônica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Terapia de reidratação oral com solução padrão de sais",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Uso imediato de antibiótico para prevenção de disbiose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Uso de antidiarreicos para reduzir número de evacuações",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve uma criança de três anos com quadro de diarreia aguda e vômitos ocasionais, mas que se apresenta clinicamente hidratada (mucosas úmidas, sinais vitais dentro da normalidade para a idade e boa perfusão). Segundo as diretrizes da Organização Mundial da Saúde (OMS) e do Ministério da Saúde para o manejo da doença diarreica aguda, este paciente se enquadra no Plano A de tratamento.\n\nAlternativa A: Incorreta. A reposição venosa rápida com solução isotônica está indicada apenas no Plano C, destinado a pacientes com desidratação grave ou sinais de choque hipovolêmico. O paciente do enunciado está hidratado e mantém aceitação oral, o que contraindica a via parenteral como primeira escolha.\n\nAlternativa B: Correta. O Plano A é a conduta inicial para crianças com diarreia que não apresentam sinais de desidratação. O objetivo é prevenir a desidratação no domicílio por meio do aumento da oferta de líquidos, manutenção da alimentação habitual e uso da terapia de reidratação oral (TRO) com sais de reidratação após cada evacuação líquida. Além disso, recomenda-se a suplementação de zinco.\n\nAlternativa C: Incorreta. O uso de antibióticos não é indicado de forma rotineira na diarreia aguda pediátrica, que em sua maioria tem etiologia viral. O conceito de \"prevenção de disbiose\" com antibióticos é clinicamente equivocado, uma vez que esses medicamentos podem, na verdade, causar ou agravar o desequilíbrio da microbiota intestinal. Antibióticos são reservados para casos específicos, como disenteria (sangue nas fezes) com comprometimento do estado geral ou suspeita de cólera.\n\nAlternativa D: Incorreta. O uso de antidiarreicos (como a loperamida) é formalmente contraindicado em crianças. Essas substâncias inibem a motilidade intestinal, o que pode mascarar perdas volêmicas (retenção de líquido no lúmen intestinal), retardar a eliminação de agentes infecciosos e causar efeitos colaterais graves, como íleo paralítico e megacólon tóxico.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:18.504Z"
+  },
+  {
+    "id": "AJUDA_eb57d486-d625-4a9d-9160-bb302ba2f982",
+    "originalId": "eb57d486-d625-4a9d-9160-bb302ba2f982",
+    "statement": "Em relação à dose zero da vacina contra o sarampo para crianças menores de um ano de idade, conforme orientações do Ministério da Saúde, é correto afirmar que a dose zero",
+    "options": [
+      {
+        "id": "A",
+        "text": "deve ser iniciada aos quatro meses de vida, com a vacina dupla viral (sarampo + rubéola).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "é indicada entre 6 e 11 meses e 29 dias de vida, com a vacina tetra viral (sarampo, caxumba, rubéola e varicela).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "substitui a primeira dose do esquema vacinal de rotina aplicada aos 12 meses de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "é aplicada a partir de seis meses de vida, com a vacina dupla viral (sarampo + varicela).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "é indicada entre 6 meses e 11 meses e 29 dias de vida, preferencialmente com a vacina dupla viral (sarampo + rubéola) até 8 meses e 29 dias de vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A dose zero da vacina contra o sarampo foi uma estratégia implementada pelo Ministério da Saúde em resposta ao aumento de casos e surtos da doença no Brasil, visando proteger a população infantil mais vulnerável. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. A dose zero não deve ser iniciada aos quatro meses. A idade recomendada para essa dose adicional é a partir dos seis meses de vida. Antes dessa idade, a resposta imunológica da criança é prejudicada pela presença de anticorpos maternos.\n\nAlternativa b) Incorreta. Embora a faixa etária citada (6 a 11 meses e 29 dias) esteja correta para a dose zero, o imunizante indicado não é a vacina tetra viral. A vacina tetra viral (sarampo, caxumba, rubéola e varicela) é indicada apenas para crianças a partir dos 15 meses de vida.\n\nAlternativa c) Incorreta. A dose zero é uma dose extra e não substitui as doses do esquema vacinal de rotina. A criança que recebeu a dose zero deve obrigatoriamente manter o calendário padrão, recebendo a primeira dose da tríplice viral aos 12 meses e a segunda dose (preferencialmente tetra viral) aos 15 meses, respeitando um intervalo mínimo de 30 dias entre a dose zero e a dose de 12 meses.\n\nAlternativa d) Incorreta. A vacina dupla viral é composta por antígenos contra o sarampo e a rubéola. Não existe uma vacina dupla padrão composta por sarampo e varicela. Além disso, a varicela só é introduzida no calendário nacional a partir dos 15 meses.\n\nAlternativa e) Correta. Esta alternativa descreve corretamente a faixa etária para a aplicação da dose zero (entre 6 meses e 11 meses e 29 dias). O Ministério da Saúde orienta que essa dose seja realizada preferencialmente com a vacina tríplice viral, mas em contextos específicos de logística ou notas técnicas de surto, a dupla viral (sarampo e rubéola) pode ser utilizada, especialmente em crianças menores de 9 meses, para garantir a proteção contra os componentes de maior risco epidemiológico no momento.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:18.504Z"
+  },
+  {
+    "id": "AJUDA_eb5cd475-8f09-4d86-93fd-97cf4da83297",
+    "originalId": "eb5cd475-8f09-4d86-93fd-97cf4da83297",
+    "statement": "A fase crítica do desenvolvimento embrionário, na qual podem surgir diversas malformações congênitas quando o embrião é exposto a agentes teratogênicos (fármacos, infecções, radiações etc.) ocorre no período entre as semanas de",
+    "options": [
+      {
+        "id": "A",
+        "text": "1ª a 4ª.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "2ª a 12ª.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "4ª a 8ª.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "8ª a 12ª.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O conceito central para responder a esta questão é o de organogênese. Durante o desenvolvimento intrauterino, existem períodos de maior ou menor suscetibilidade aos agentes teratogênicos, que são substâncias ou condições capazes de produzir anomalias estruturais ou funcionais no embrião ou feto.\n\nO desenvolvimento é dividido em três etapas principais:\n\n1. Período Pré-embrionário (1ª e 2ª semanas): É a fase do \"tudo ou nada\". Se um agente teratogênico atua aqui, ou ele causa a morte do concepto (aborto espontâneo) ou o embrião se recupera totalmente sem sequelas, pois as células ainda são totipotentes.\n\n2. Período Embrionário (3ª a 8ª semanas): É a fase da organogênese. Aqui ocorre a diferenciação dos tecidos e a formação de todos os grandes sistemas orgânicos. É o período de sensibilidade máxima.\n\n3. Período Fetal (9ª semana ao nascimento): Caracteriza-se pelo crescimento e maturação funcional. A exposição a teratógenos nesta fase geralmente causa defeitos fisiológicos ou anomalias estruturais menores, mas não grandes malformações morfológicas.\n\nAnálise das alternativas:\n\nAlternativa (a) 1ª a 4ª: Está incorreta porque inclui as duas primeiras semanas (fase do tudo ou nada) e termina precocemente na 4ª semana, deixando de fora o restante do pico da organogênese, que se estende até a 8ª semana.\n\nAlternativa (b) 2ª a 12ª: Está incorreta por ser um intervalo muito amplo. Embora englobe o período crítico, ela inclui o início do período fetal (9ª a 12ª semana), em que o risco de malformações estruturais graves é significativamente menor do que na fase de formação básica dos órgãos.\n\nAlternativa (c) 4ª a 8ª: Está correta. Este intervalo representa o ápice da organogênese. Entre a 4ª e a 8ª semana de gestação, os brotos dos membros, o coração, o sistema nervoso central, os olhos e os ouvidos estão em pleno desenvolvimento morfogenético. Qualquer interferência externa (fármacos como a talidomida, infecções como a rubéola ou radiações) neste período específico resulta em malformações graves e características de cada sistema.\n\nAlternativa (d) 8ª a 12ª: Está incorreta. A partir da 8ª semana, o embrião passa a ser chamado de feto. A maioria dos órgãos já está formada em sua estrutura básica, entrando em fase de crescimento. O risco de indução de grandes defeitos anatômicos diminui drasticamente após a 8ª semana.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:18.504Z"
+  },
+  {
+    "id": "AJUDA_eb6959b2-0ecb-484c-a9f3-f0f674098fa8",
+    "originalId": "eb6959b2-0ecb-484c-a9f3-f0f674098fa8",
+    "statement": "Não é considerado fator de risco para trabalho de parto prematuro:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tabagismo e uso de álcool durante a gravidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infecção de trato urinário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipertensão gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Multiparidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Diabetes Mellitus.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, é fundamental identificar quais condições clínicas, comportamentais ou obstétricas estão associadas ao desencadeamento do trabalho de parto antes das 37 semanas de gestação e qual delas não possui essa correlação direta.\n\nAlternativa (a) Incorreta: O tabagismo e o consumo de álcool são fatores de risco comportamentais clássicos. O cigarro causa vasoconstrição uteroplacentária, hipóxia fetal e alterações na integridade das membranas amnióticas, aumentando o risco de ruptura prematura e prematuridade. O álcool, além de teratogênico, impacta negativamente o ambiente intrauterino.\n\nAlternativa (b) Incorreta: A infecção do trato urinário (ITU) é um dos principais gatilhos para o trabalho de parto prematuro. A presença de microrganismos e a resposta inflamatória do hospedeiro liberam citocinas e prostaglandinas. Essas substâncias estimulam a atividade contrátil do miométrio e podem amolecer o colo uterino, iniciando o processo de parto precocemente.\n\nAlternativa (c) Incorreta: As síndromes hipertensivas da gestação, incluindo a hipertensão gestacional e a pré-eclâmpsia, são causas importantes de prematuridade. Elas podem levar ao parto prematuro por via espontânea, devido à insuficiência placentária, ou por via iatrogênica (indicada pela equipe médica) quando a gravidade do quadro materno ou fetal exige a interrupção imediata da gravidez.\n\nAlternativa (d) Correta: A multiparidade (ter tido vários partos anteriormente) não é considerada, isoladamente, um fator de risco para o parto prematuro. Pelo contrário, em muitos contextos, a primiparidade (primeira gestação) apresenta riscos maiores para certas condições, como a pré-eclâmpsia. O que constitui um risco obstétrico importante é o antecedente de parto prematuro em gestações anteriores ou o curto intervalo entre os partos (intervalo interpartal menor que 18 meses), mas não a quantidade de partos a termo realizados pela paciente.\n\nAlternativa (e) Incorreta: O diabetes mellitus (seja gestacional ou preexistente) aumenta o risco de prematuridade por diversos mecanismos. O mau controle glicêmico pode causar polidrâmnio (excesso de líquido amniótico), que gera sobredistensão das fibras musculares do útero, facilitando o início de contrações precoces. Além disso, gestantes diabéticas têm maior predisposição a infecções e quadros hipertensivos, ambos fatores de risco para partos antes do tempo.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:18.504Z"
+  },
+  {
+    "id": "AJUDA_eb6d9e91-44f1-49b0-a603-3fa757a97d72",
+    "originalId": "eb6d9e91-44f1-49b0-a603-3fa757a97d72",
+    "statement": "Sobre as manifestações extraintestinais da Doença Inflamatória Intestinal (DII), é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A má absorção é uma manifestation comum na colite ulcerativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A artrite periférica é independente da atividade da DII.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A colangite esclerosante primária está associada à Doença de Crohn.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A espondilite anquilosante é mais comum em pacientes com antígeno HLA-B27.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa (a) INCORRETA: A colite ulcerativa (ou retocolite ulcerativa) é uma doença que se limita à mucosa do cólon e do reto. Como a absorção de nutrientes ocorre predominantemente no intestino delgado, a má absorção não é uma característica dessa patologia. A má absorção é comum na Doença de Crohn, que pode acometer o intestino delgado (especialmente o íleo terminal), interferindo na absorção de gorduras, vitamina B12 e outros nutrientes.\n\nAlternativa (b) INCORRETA: A artrite periférica é a manifestação extraintestinal mais comum da Doença Inflamatória Intestinal (DII). Ela é classicamente dividida em dois padrões: o Tipo 1 (pauciarticular, que afeta grandes articulações) e o Tipo 2 (poliarticular, que afeta pequenas articulações). O Tipo 1 está fortemente relacionado à atividade da doença intestinal; ou seja, quando o intestino inflama, a articulação também inflama. Embora o Tipo 2 possa ter um curso mais independente, a afirmação generalista de que a artrite periférica é independente da atividade está incorreta para fins de prova.\n\nAlternativa (c) INCORRETA: A Colangite Esclerosante Primária (CEP) é uma manifestação hepatobiliar intimamente ligada à Retocolite Ulcerativa (RCU), e não à Doença de Crohn. Aproximadamente 70% a 80% dos pacientes que sofrem de CEP apresentam RCU associada. Além disso, a CEP possui um curso clínico independente da atividade inflamatória do intestino.\n\nAlternativa (d) CORRETA: As manifestações axiais da DII incluem a sacroileíte e a espondilite anquilosante. Diferentemente da artrite periférica, o acometimento axial é independente da atividade intestinal (o paciente pode ter uma crise de dor nas costas mesmo com o intestino controlado). Existe uma forte correlação genética entre a espondilite anquilosante e a presença do antígeno de histocompatibilidade HLA-B27. Embora a prevalência do HLA-B27 nos casos de espondilite associada à DII seja menor do que na espondilite anquilosante idiopática, ela ainda é significativamente mais alta do que na população geral.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:18.504Z"
+  },
+  {
+    "id": "AJUDA_eb70c57e-a8fe-4e4a-b980-870ad47739fa",
+    "originalId": "eb70c57e-a8fe-4e4a-b980-870ad47739fa",
+    "statement": "Mulher, 66 anos de idade, com queixa de dispneia progressiva há um ano e tosse seca. Ex-tabagista 20 anos-maço. Sem outros antecedentes relevantes. Em espirometria, apresenta CVF de 68% do previsto e VEF1/CVF: 0,84. Tomografia de tórax mostra padrão de reticulado subpleural e basal, favo de mel e bronquiectasias de tração, sem vidro fosco significativo.\n\nA terapia deve ser iniciada com",
+    "options": [
+      {
+        "id": "A",
+        "text": "nintedanibe.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "micofenolato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pulsoterapia com metilprednisolona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prednisona 40 mg/dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tiotrópio + olodaterol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o diagnóstico e o manejo terapêutico de uma das principais doenças intersticiais pulmonares. Vamos analisar os achados para chegar ao diagnóstico correto:\n\n1. Análise Clínica e Funcional: Paciente idosa, ex-tabagista, com quadro crônico de dispneia e tosse seca. A espirometria revela um distúrbio ventilatório restritivo, caracterizado pela redução da Capacidade Vital Forçada (CVF 68%) com a relação VEF1/CVF preservada (0,84).\n\n2. Análise Radiológica: A tomografia de tórax descreve o padrão clássico de Pneumonia Intersticial Usual (UIP): reticulado subpleural e basal, presença de favo de mel (honeycombing) e bronquiectasias de tração, sem vidro fosco significativo. \n\n3. Diagnóstico: Diante de um padrão de UIP na tomografia, na ausência de causas secundárias (como colagenoses ou exposição ambiental), o diagnóstico é de Fibrose Pulmonar Idiopática (FPI).\n\nAnálise das alternativas:\n\na) Correta. O tratamento padrão para a Fibrose Pulmonar Idiopática (FPI) baseia-se no uso de drogas antifibróticas, como o nintedanibe ou a pirfenidona. Essas medicações têm como objetivo reduzir a taxa de declínio da função pulmonar (queda da CVF) ao longo do tempo.\n\nb) Incorreta. O micofenolato de mofetila é um imunossupressor utilizado em outras doenças intersticiais, principalmente naquelas associadas a doenças do tecido conjuntivo (como esclerose sistêmica) ou na pneumonite de hipersensibilidade crônica, mas não é a terapia de escolha para FPI.\n\nc) Incorreta. A pulsoterapia com metilprednisolona é reservada para exacerbações agudas de doenças intersticiais ou quadros inflamatórios graves. Na FPI estável, o uso de altas doses de corticoide não é indicado.\n\nd) Incorreta. Historicamente, usava-se prednisona para FPI, mas o estudo PANTHER-IPF demonstrou que a combinação de prednisona e azatioprina aumentava a mortalidade e o risco de hospitalização nesses pacientes. Portanto, o uso isolado ou combinado de corticoides deve ser evitado na FPI, a menos que haja uma exacerbação documentada.\n\ne) Incorreta. A combinação de tiotrópio e olodaterol (LAMA/LABA) é o tratamento de escolha para a Doença Pulmonar Obstrutiva Crônica (DPOC). Embora a paciente seja ex-tabagista, a espirometria e a tomografia confirmam uma doença restritiva/intersticial e não obstrutiva. O uso de broncodilatadores não trata a causa da fibrose.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:18.504Z"
+  },
+  {
+    "id": "AJUDA_eb786588-20e4-424c-b7fd-c23ab7f62307",
+    "originalId": "eb786588-20e4-424c-b7fd-c23ab7f62307",
+    "statement": "Assinale a opção correta, em relação ao condiloma acuminado.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vacinação nonavalente está contraindicada nos pacientes com antecedente de condiloma acuminado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Condiloma acuminado na região de glande tem que ser tratado com cirurgia e, posteriormente, com postectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Verrugas na região vaginal estão relacionadas aos tipos virais oncogênicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A depender da localização, condilomas podem ser tratados clinicamente com pomada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Condilomas na região da vagina, do ânus ou do pênis estão sempre relacionados à atividade sexual sem preservativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A alternativa correta é a letra D. Abaixo, a análise detalhada de cada opção:\n\nAlternativa A: Incorreta. A vacinação contra o HPV (seja a quadrivalente ou a nonavalente) não está contraindicada para pacientes que já tiveram condiloma acuminado. Embora a vacina não trate lesões preexistentes, ela é recomendada para prevenir a infecção por outros tipos de HPV presentes no imunizante aos quais o paciente ainda não foi exposto, além de auxiliar na redução de recorrências em alguns casos.\n\nAlternativa B: Incorreta. O tratamento do condiloma na glande não precisa ser obrigatoriamente cirúrgico nem seguido de postectomia. Existem diversas modalidades terapêuticas, incluindo cauterização química (ácido tricloroacético), crioterapia ou agentes tópicos. A cirurgia e a postectomia são reservadas para casos específicos, como lesões muito volumosas, falha em tratamentos conservadores ou quando o prepúcio dificulta o acesso e a higiene da área afetada.\n\nAlternativa C: Incorreta. A grande maioria dos condilomas acuminados (cerca de 90%) é causada pelos tipos 6 e 11 do HPV, que são de baixo potencial oncogênico. Os tipos virais oncogênicos (como o 16 e o 18) estão tipicamente associados a lesões intraepiteliais (displasias) e ao desenvolvimento de câncer (colo do útero, vagina, ânus), mas raramente se manifestam na forma de verrugas exofíticas clássicas.\n\nAlternativa D: Correta. O tratamento do condiloma acuminado é individualizado e depende de fatores como localização, número e tamanho das lesões. O uso de medicamentos tópicos (como o imiquimod, a podofilotoxina ou o ácido tricloroacético) é uma opção clínica padrão e eficaz para muitas apresentações da doença, permitindo o tratamento sem necessidade imediata de intervenção cirúrgica.\n\nAlternativa E: Incorreta. O uso do preservativo é fundamental para reduzir o risco de transmissão de ISTs, porém, no caso do HPV, ele não oferece proteção total (100%). Isso ocorre porque o vírus pode estar presente em áreas da pele não cobertas pelo preservativo, como a base do pênis, o escroto, a vulva ou a região perianal. Além disso, o termo \"sempre\" está incorreto, pois, embora rara, a transmissão pode ocorrer por outras vias (fômites ou transmissão vertical no parto).",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Doenças de Vulva e Vagina",
+      "Úlceras Genitais"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:18.504Z"
+  },
+  {
+    "id": "AJUDA_eb897108-0880-4267-bb4b-de6196b090ae",
+    "originalId": "eb897108-0880-4267-bb4b-de6196b090ae",
+    "statement": "A equipe de saúde de uma cidade estava analisando os indicadores de saúde locais para avaliar o impacto das ações de promoção da saúde e prevenção de doenças. Ao revisar os dados, a equipe observou uma alta taxa de incidência de doenças respiratórias em uma área urbana da cidade. Com base nessa situação hipotética, assinale a alternativa que apresenta o indicador recomendado para investigar a associação entre a alta taxa de doenças respiratórias e os possíveis fatores ambientais na região.",
+    "options": [
+      {
+        "id": "A",
+        "text": "taxa de mortalidade infantil",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "incidência de doenças transmissíveis",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "nível de poluição do ar na área urbana",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "número de consultas ambulatoriais realizadas por mês",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "taxa de natalidade na população geral",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DO PROFESSOR\n\nEsta questão aborda o tema de Indicadores de Saúde e Epidemiologia Ambiental, exigindo que o candidato identifique qual medida é mais adequada para investigar uma hipótese diagnóstica ambiental (causa) diante de um desfecho clínico (efeito).\n\nAnálise das alternativas:\n\na) Incorreta. A taxa de mortalidade infantil é um indicador sintético de saúde que reflete as condições de vida, saneamento básico, nutrição e assistência pré-natal e pediátrica. Embora altos índices de poluição possam influenciar a mortalidade infantil, este não é o indicador específico para investigar a associação direta com doenças respiratórias em uma área urbana geral.\n\nb) Incorreta. A incidência de doenças transmissíveis mede a frequência de novos casos de doenças causadas por agentes biológicos (vírus, bactérias, etc.). Embora muitas doenças respiratórias sejam transmissíveis, o enunciado solicita um indicador para investigar fatores ambientais. A incidência é o desfecho que já foi observado pela equipe, e não o fator de exposição a ser investigado.\n\nc) Correta. A poluição do ar é um dos principais determinantes ambientais para o desenvolvimento e agravamento de doenças respiratórias (como asma, DPOC e bronquites). Para investigar se a alta incidência dessas doenças está relacionada ao ambiente, é fundamental monitorar os níveis de poluentes atmosféricos (material particulado, dióxido de nitrogênio, ozônio) na região afetada. Este é o indicador de \"exposição\" necessário para estabelecer uma correlação epidemiológica.\n\nd) Incorreta. O número de consultas ambulatoriais é um indicador de produtividade ou de utilização de serviços de saúde. Ele reflete a demanda e o acesso da população ao sistema de saúde, mas não fornece informações sobre a causa etiológica ou os fatores ambientais responsáveis pelas doenças.\n\ne) Incorreta. A taxa de natalidade mede a frequência de nascimentos em uma população. Não possui relação direta com a investigação de agravos respiratórios ou fatores de risco ambientais.\n\nConclusão: Para realizar um estudo de associação epidemiológica entre o ambiente e a saúde respiratória, deve-se confrontar os dados de saúde (incidência das doenças) com dados de monitoramento ambiental (nível de poluição). Por isso, a alternativa (c) é a resposta correta.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:18.504Z"
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_df0ae0ad-917f-4ea4-b329-4063a272c4b7",
+    "originalId": "df0ae0ad-917f-4ea4-b329-4063a272c4b7",
+    "statement": "Primigesta, 17 anos, com 35 semanas de gestação, comparece à maternidade apresentando pressão arterial 140x90mmHg há sete dias e cefaleia persistente desde o dia anterior. Nega outras intercorrências na gravidez. Ao exame físico, PA 140x90mmHg, frequência cardíaca (FC) de 92bpm, saturação de oxigênio de 99%, altura uterina de 31cm, cardiotocografia reativa à movimentação fetal, com linha de base de 132bpm; feto cefálico com dorso à direita. Não foram identificadas contrações uterinas e o colo uterino está fechado. Propedeutica de HELLP sem alterações. Com base no quadro clínico apresentado, dentre as alternativas abaixo, a conduta MAIS APROPRIADA nesse momento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Internar para controle pressórico e realizar dopplervelocimetria fetal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internar para indução do parto e iniciar sulfato de magnésio",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever metildopa e encaminhar para o pré-natal de alto risco",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever nifedipina e realizar curva pressórica ambulatorial",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico e Raciocínio Clínico:\nA paciente é uma primigesta de 35 semanas que apresenta hipertensão (140 x 90 mmHg) associada a um sintoma neurológico importante: cefaleia persistente. Segundo os critérios diagnósticos atuais, a presença de hipertensão arterial após a 20ª semana de gestação acompanhada de sinais de gravidade (como cefaleia, distúrbios visuais, dor epigástrica ou alterações laboratoriais) define o quadro como Pré-eclâmpsia com Sinais de Gravidade.\n\nEm gestações com idade gestacional igual ou superior a 34 semanas, a conduta recomendada diante de uma pré-eclâmpsia com sinais de gravidade é a interrupção da gestação, uma vez que os riscos de manter a gravidez (como evolução para eclâmpsia, descolamento prematuro de placenta ou morte fetal) superam os riscos da prematuridade tardia.\n\nAnálise das Alternativas:\n\nAlternativa A - Incorreta: A conduta expectante para controle pressórico e avaliação fetal por dopplervelocimetria é reservada para casos de pré-eclâmpsia sem sinais de gravidade antes do termo ou, em centros especializados, para casos graves com menos de 34 semanas sob vigilância rigorosa. Com 35 semanas e sintomas neurológicos, a conduta deve ser a resolução.\n\nAlternativa B - Correta: Esta alternativa segue os protocolos da FEBRASGO e do Ministério da Saúde. A indução do parto é a via preferencial se as condições maternas e fetais permitirem (neste caso, o feto tem cardiotocografia reativa). O uso do sulfato de magnésio é obrigatório e fundamental para a profilaxia de crises convulsivas (eclâmpsia) em qualquer paciente que apresente pré-eclâmpsia com sinais de gravidade, especialmente sintomas premonitórios como a cefaleia.\n\nAlternativa C - Incorreta: O manejo ambulatorial é contraindicado para pacientes com sinais de gravidade. A metildopa é um medicamento utilizado para o controle crônico da pressão arterial, mas não trata a causa da pré-eclâmpsia nem previne as complicações agudas. O encaminhamento para pré-natal de alto risco sem internação imediata coloca a vida da mãe e do feto em risco.\n\nAlternativa D - Incorreta: A nifedipina (especialmente a de liberação imediata) é usada para o tratamento de crises hipertensivas agudas (PA maior ou igual a 160 x 110 mmHg), o que não é o caso atual da paciente (140 x 90 mmHg). Realizar curva pressórica ambulatorial é inadequado, pois a paciente já apresenta critérios para internação e resolução do parto.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:05.122Z"
+  },
+  {
+    "id": "AJUDA_df0d1902-6ffd-4952-bf92-4fa96cbd8487",
+    "originalId": "df0d1902-6ffd-4952-bf92-4fa96cbd8487",
+    "statement": "Mulher, 70 anos, DM tipo 2 e HAS, ambas com controle adequado. Hematoquezia há 3 meses. Refere emagrecimento não intencional de 10 kg, em 6 meses. Exames laboratoriais: Hb 10,9 g/dL, plaquetas 220 mil/uL, Cr 0,95mg/dL, INR 1,0, R 0,95, PCR 15,2 mg/dL, ferritina 40 ng/mL, saturação de transferrina 12%, albumina 3,5 g/dL. Exames de estadiamento negativo para metástases. Realizados os exames diagnósticos a seguir. Qual é o diagnóstico e como deve ser feita a condução dessa paciente no pré-operatório?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neoplasia de cólon. Realizar suplementação de ferro por via endovenosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Neoplasia de cólon. Realizar eritropoetina por via subcutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Neoplasia de canal anal. Realizar suplementação de ferro por via endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Neoplasia de canal anal. Realizar eritropoetina por via subcutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso:\n\nA paciente idosa apresenta um quadro de hematoquezia e emagrecimento, sintomas de alerta clássicos para neoplasia colorretal. As imagens apresentadas corroboram essa suspeita clínica. A colonoscopia revela uma volumosa lesão vegetante, friável e estenosante, que ocupa grande parte da luz intestinal. Já a ressonância magnética da pelve demonstra um importante espessamento parietal circunferencial em segmento intestinal baixo, compatível com o tumor sugerido.\n\nSobre os exames laboratoriais, a paciente apresenta anemia (Hb 10,9 g/dL) com perfil ferroprivo evidente. A saturação de transferrina está reduzida (12%) e a ferritina encontra-se em 40 ng/mL. É fundamental notar que a PCR está elevada (15,2 mg/dL), indicando um estado inflamatório. Em pacientes inflamados, a ferritina (que é uma proteína de fase aguda) pode estar falsamente normal. Nessas condições, um valor de ferritina inferior a 100 ng/mL confirma a deficiência de ferro.\n\nNo manejo pré-operatório, a otimização da hemoglobina (estratégia de Patient Blood Management) é essencial para reduzir a necessidade de transfusões de sangue no intra e no pós-operatório, que estão associadas a maiores taxas de infecção e a um pior prognóstico oncológico. O ferro por via endovenosa é a conduta preferencial, pois garante uma reposição mais rápida e eficaz, superando o bloqueio da absorção intestinal de ferro causado pela inflamação (mediada pela hepcidina).\n\nAlternativa a: Correta. O diagnóstico é compatível com neoplasia de cólon/reto e a conduta de escolha para corrigir a anemia ferropriva no pré-operatório imediato é o ferro endovenoso.\n\nAlternativa b: Incorreta. A eritropoetina não é o tratamento inicial para anemia ferropriva. Sua indicação é restrita a casos de anemia de doença crônica refratária ou a situações específicas onde a reposição isolada de ferro não é suficiente, o que não é o caso inicial aqui.\n\nAlternativa c: Incorreta. A neoplasia de canal anal geralmente se manifesta com dor anal, massa palpável ao toque retal ou sangramento vivo distal, e possui características histológicas e de imagem diferentes das apresentadas, que mostram uma lesão tipicamente colorretal.\n\nAlternativa d: Incorreta. Incorreta tanto no diagnóstico (canal anal) quanto na conduta para a anemia (eritropoetina como primeira linha).",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Perioperatório",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/9935421dce5d919ce1e8e9f6b7c8bccf14e05a5de5d9b493a5e60e794a42442d.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_df0d1902-6ffd-4952-bf92-4fa96cbd8487_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/d390bafab6ecd533b60361b82819bf25a12a561c6ccd2fab482d3d722992bbc7.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_df0d1902-6ffd-4952-bf92-4fa96cbd8487_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:06.174Z"
+  },
+  {
+    "id": "AJUDA_df0dd134-4703-4c97-9941-63ad0462cff1",
+    "originalId": "df0dd134-4703-4c97-9941-63ad0462cff1",
+    "statement": "O sangramento uterino anormal é um sinal presente em diversas patologias ginecológicas, trazendo muitas vezes prejuízos sociais, econômicos e emocionais a paciente. É uma causa de sangramento uterino anormal:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hipotireoidismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hiperprolactinemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Adenomiose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sinéquias uterinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Endometriose peritoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender o Sangramento Uterino Anormal (SUA), o padrão-ouro é a utilização do sistema de classificação PALM-COEIN, da Federação Internacional de Ginecologia e Obstetrícia (FIGO). Este sistema separa as causas em estruturais (PALM: Pólipo, Adenomiose, Leiomioma, Malignidade/hiperplasia) e não estruturais (COEIN: Coagulopatia, Disfunção Ovulatória, Endometrial, Iatrogênica, Não classificada).\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta). Embora distúrbios de tireoide possam causar irregularidade menstrual, o hipotireoidismo geralmente leva a quadros de anovulação crônica (letra O - Ovulatória). Contudo, em questões de prova que buscam uma patologia ginecológica específica e direta como causa de sangramento volumoso, as causas estruturais tendem a ser a prioridade.\n\nAlternativa B (Incorreta). A hiperprolactinemia inibe o eixo hipotálamo-hipófise-gonadal. O efeito clínico predominante é a redução do fluxo ou a ausência total dele (amenorreia ou oligomenorreia) e galactorreia, não sendo uma causa típica de sangramento uterino aumentado ou anormal no sentido de excesso hemorrágico.\n\nAlternativa C (Correta - Gabarito). A Adenomiose representa a letra A do acrônimo PALM. Ela ocorre quando o tecido endometrial se infiltra no miométrio. Clinicamente, a adenomiose é uma das causas mais comuns de sangramento uterino pesado e dismenorreia secundária em mulheres multíparas na quarta ou quinta década de vida. O aumento da superfície endometrial e a falha de contratilidade do miométrio doente justificam o sangramento.\n\nAlternativa D (Incorreta). As sinéquias uterinas (aderências dentro da cavidade do útero), comuns após curetagens repetidas ou infecções graves como a tuberculose genital, formam a Síndrome de Asherman. O quadro clínico esperado é a hipomenorreia (pouco sangue) ou a amenorreia, devido à substituição do endométrio funcional por tecido cicatricial.\n\nAlternativa E (Incorreta). Este é um erro frequente em provas. A endometriose peritoneal (focos de endométrio nos ovários, ligamentos ou peritônio) causa dor pélvica crônica, dismenorreia e infertilidade, mas não costuma causar sangramento uterino anormal, pois a cavidade uterina e o miométrio permanecem funcionalmente preservados. Apenas quando o tecido está no miométrio (adenomiose) é que o sangramento é um sintoma cardeal.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Adenomiose"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:06.174Z"
+  },
+  {
+    "id": "AJUDA_df1eb910-8b34-4a8f-ad54-ab9b9689647c",
+    "originalId": "df1eb910-8b34-4a8f-ad54-ab9b9689647c",
+    "statement": "São situações clínicas de urgência/emergência obstétrica que devem ser avaliadas em contexto hospitalar de acordo com o Manual de Gestação de Alto Risco 2022:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vômitos incoercíveis não responsivos ao tratamento e anemia grave (Hb <8,5 g/dl).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prurido gestacional e Suspeita de pielonefrite.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Idade gestacional de 40 semanas ou mais e sinais premonitórios de eclâmpsia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Crise hipertensiva e suspeita de trombose venosa superficial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento das diretrizes de encaminhamento e classificação de risco estabelecidas pelo Manual de Gestação de Alto Risco do Ministério da Saúde (2022). O manual lista situações específicas que demandam avaliação hospitalar imediata devido ao risco de morbimortalidade materna ou fetal.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A) INCORRETA. Embora os vômitos incoercíveis não responsivos ao tratamento domiciliar sejam um critério de urgência (risco de desidratação e distúrbios metabólicos), o valor de corte para anemia grave que justifica encaminhamento hospitalar imediato, segundo o Manual de 2022, é hemoglobina (Hb) abaixo de 7,0 g/dl. O valor de 8,5 g/dl citado na alternativa é considerado anemia moderada, devendo ser investigada e tratada no pré-natal, mas não configura urgência hospitalar isolada.\n\nAlternativa B) CORRETA. Ambas as condições estão listadas no Quadro de Urgências/Emergências do Manual de 2022. O prurido gestacional é uma urgência pela suspeita de Colestase Intra-hepática da Gestação, condição que aumenta significativamente o risco de óbito fetal súbito. A suspeita de pielonefrite é uma urgência pelo risco de evolução para sepse materna e desencadeamento de trabalho de parto prematuro, exigindo antibioticoterapia venosa inicial e monitorização.\n\nAlternativa C) INCORRETA. Os sinais premonitórios de eclâmpsia (como cefaleia intensa, turvação visual e dor epigástrica) são emergências gravíssimas. Entretanto, o critério de idade gestacional para encaminhamento hospitalar direto, conforme o manual, é de 41 semanas ou mais, visando à avaliação da vitalidade fetal e indução do parto, e não 40 semanas.\n\nAlternativa D) INCORRETA. A crise hipertensiva (níveis pressóricos iguais ou superiores a 160/110 mmHg) é uma emergência médica. Contudo, a suspeita que exige avaliação hospitalar urgente é a de Trombose Venosa Profunda (TVP), devido ao risco de tromboembolismo pulmonar. A trombose venosa superficial geralmente tem manejo ambulatorial e menor risco sistêmico imediato quando comparada à TVP.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Pré-Natal"
+    ],
+    "difficulty": 93.37411062940907,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:06.174Z"
+  },
+  {
+    "id": "AJUDA_df2eab54-41a2-4394-aa95-ee1d35541d4c",
+    "originalId": "df2eab54-41a2-4394-aa95-ee1d35541d4c",
+    "statement": "Paciente feminina, 43 anos, com história de 6 meses de dor epigástrica inespecífica, vômitos, saciedade precoce e perda ponderal. Apresenta diagnóstico de hipotireoidismo e nega cirurgias prévias, tabagismo ou etilismo. Refere que sua mãe é portadora de diabetes e o pai é falecido por tromboembolismo pulmonar. Realizou endoscopia digestiva alta com diagnóstico de adenocarcinoma gástrico bem diferenciado no antro gástrico. O estadiamento clínico não revela comprometimento linfonodal ou metástase à distância. Considerando o tratamento e os cuidados perioperatórios para a paciente do caso acima, assinale a afirmativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Deve-se preparar a paciente para gastrectomia total com linfadenectomia D2 em caráter curativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Para o estadiamento oncológico pré-operatório é mandatória a realização de PET-CT.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Há indicação de profilaxia farmacológica de tromboembolismo venoso profundo no pós operatório, a ser realizada de preferência com heparina de baixo peso molecular.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Na antibioticoprofilaxia deve-se incluir cobertura para germes anaeróbios.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. O tumor está localizado no antro gástrico, ou seja, na porção distal do estômago. Para lesões distais, a gastrectomia subtotal com linfadenectomia D2 é a conduta de escolha, pois oferece os mesmos resultados oncológicos que a gastrectomia total, mas com menores taxas de complicações nutricionais e melhor qualidade de vida no pós-operatório. A gastrectomia total é indicada para tumores proximais (corpo e fundo) ou em casos de tumores de padrão difuso que acometam grande parte do órgão.\n\nAlternativa b: Incorreta. O estadiamento padrão-ouro inicial para o câncer gástrico consiste em tomografias computadorizadas de tórax, abdome e pelve. O PET-CT não é considerado um exame mandatório ou de rotina no pré-operatório. Ele pode ser utilizado em situações específicas, como na suspeita de metástases ocultas que não foram confirmadas pelos exames de imagem convencionais, mas não faz parte do protocolo obrigatório de estadiamento inicial.\n\nAlternativa c: Correta. Pacientes com neoplasias malignas que serão submetidos a cirurgias de grande porte possuem um risco elevado para o desenvolvimento de tromboembolismo venoso (TEV). Isso se deve tanto ao estado inflamatório e de hipercoagulabilidade induzido pelo câncer quanto ao tempo de imobilização e à manipulação cirúrgica. Além disso, a paciente apresenta um fator de risco familiar (pai falecido por embolia). A profilaxia farmacológica, preferencialmente com Heparina de Baixo Peso Molecular (HBPM), é fundamental e deve ser mantida no período pós-operatório.\n\nAlternativa d: Incorreta. A cirurgia gástrica é considerada potencialmente contaminada, e a flora predominante no estômago e na porção proximal do intestino delgado é composta majoritariamente por germes Gram-positivos e Gram-negativos. Por isso, a antibioticoprofilaxia padrão costuma ser feita com cefalosporinas de primeira ou segunda geração (como a cefazolina). A cobertura específica para anaeróbios é obrigatória em cirurgias que envolvem o cólon ou o reto, onde esses germes são abundantes, o que não é o caso da gastrectomia.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Perioperatório",
+      "Neoplasias do Estômago e do Esôfago"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:06.174Z"
+  },
+  {
+    "id": "AJUDA_df391138-6ec3-4cae-a7e9-522e02a721d3",
+    "originalId": "df391138-6ec3-4cae-a7e9-522e02a721d3",
+    "statement": "Mulher, 72 anos, viúva, residente em zona urbana, frequenta a Unidade Básica de Saúde para acompanhamento de hipertensão arterial sistêmica e diabetes. A filha percebeu que ela está esquecendo compromissos recentes, repete perguntas, tem dificuldade para usar o celular ou para fazer operações bancárias que antes fazia sozinha, além de estar mais apática e com sono excessivo durante o dia; relata que a paciente anda \"mais lenta para pensar\" e que isso vem piorando nos últimos 6 a 8 meses. Qual das alternativas abaixo DESCREVE A MELHOR CONDUTA INICIAL da equipe de atenção primária para a paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Considerar que um rastreio cognitivo inicial negativo exclui a possibilidade de demência, não sendo necessário acompanhamento futuro na atenção primária",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar ao serviço especializado, não sendo necessário aplicar a bateria breve de rastreio cognitivo na atenção primária para agilizar o diagnóstico de demência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar anamnese detalhada, incluindo histórico familiar, sintomas cognitivos, funcionamento nas atividades de vida diária, e aplicar testes para rastreio cognitivo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tranquilizar a paciente e sua filha, orientando que é esperado alterações de memória e esquecimentos com a idade e prescrever estimulantes cognitivos, sem necessidade de exames complementares",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão apresenta o caso de uma idosa de 72 anos com queixas cognitivas (esquecimento, repetição), prejuízo funcional (dificuldade em tarefas que fazia sozinha, como usar celular e banco) e sintomas comportamentais (apatia). Este quadro sugere um possível Declínio Cognitivo Maior (Demência).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Um teste de rastreio negativo não exclui o diagnóstico de demência, especialmente em fases iniciais ou em pacientes com alta reserva cognitiva. Além disso, se há queixa da família e perda funcional, a investigação deve prosseguir. O acompanhamento na atenção primária é fundamental para qualquer paciente idoso com doenças crônicas.\n\nAlternativa b) Incorreta. A equipe de atenção primária deve realizar a avaliação inicial. Aplicar instrumentos de rastreio (como o Mini-Mental, o Teste do Relógio ou o MoCA) e avaliar a funcionalidade ajudam a documentar o declínio e permitem um encaminhamento mais qualificado, caso seja necessário, além de iniciar a exclusão de causas reversíveis.\n\nAlternativa c) Correta. Esta é a conduta padrão-ouro na atenção primária. Diante de uma suspeita de declínio cognitivo, o médico deve realizar uma anamnese detalhada para entender o tempo de evolução e o impacto no cotidiano (funcionalidade), investigar o histórico familiar e aplicar testes validados de rastreio cognitivo. É o primeiro passo para diferenciar o envelhecimento normal de um quadro demencial.\n\nAlternativa d) Incorreta. O quadro descrito (perda de autonomia e mudança de comportamento) não faz parte do envelhecimento normal (senescência), mas sim de um processo patológico (senilidade). Jamais se deve prescrever estimulantes ou qualquer medicação para demência sem um diagnóstico firmado e sem realizar exames complementares para afastar causas secundárias e reversíveis, como hipotireoidismo, deficiência de vitamina B12, depressão ou neurossífilis.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Demências",
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:06.174Z"
+  },
+  {
+    "id": "AJUDA_df3951c3-dfd6-4d20-8fd0-da2c824bc247",
+    "originalId": "df3951c3-dfd6-4d20-8fd0-da2c824bc247",
+    "statement": "Mulher, 63 anos de idade, refere secura vaginal intensa, que piorou progressivamente nos últimos anos. O desconforto tem prejudicado sua vida sexual, e não teve melhora com o uso de lubrificantes. Realizou avaliação ginecológica recente sem alterações. Refere ter usado tibolona dos 50 aos 58 anos de idade. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "laserterapia vulvar de baixa potência",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "estrogenioterapia vaginal com estriol",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "retornar a tibolona em baixa dose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "terapia estroprogestativa transdérmica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico e raciocínio clínico:\nA paciente de 63 anos apresenta um quadro clássico de Síndrome Geniturinária da Menopausa (SGM). A queda dos níveis de estrogênio após a menopausa leva à atrofia do epitélio vaginal, redução da vascularização e da lubrificação, resultando em dispareunia e secura. Quando o uso de lubrificantes e hidratantes vaginais não é suficiente para o alívio dos sintomas, a terapia hormonal local é a conduta padrão.\n\nAlternativa a: Incorreta. A laserterapia (como o laser de CO2 ou Erbium:YAG) é uma tecnologia que tem sido utilizada para melhorar o trofismo vaginal ao estimular a produção de colágeno. No entanto, ela ainda é considerada uma opção de segunda linha ou alternativa para pacientes que possuem contraindicações absolutas ao uso de estrogênio (como histórico de câncer de mama sensível a hormônios). O estrogênio tópico continua sendo o padrão-ouro e a primeira escolha em diretrizes clínicas.\n\nAlternativa b: Correta. O uso de estrogênio por via vaginal (seja na forma de estriol, promestrieno ou estradiol em doses ultrabaixas) é o tratamento farmacológico de primeira linha para a atrofia vulvovaginal moderada a grave. O estriol tópico age restaurando a integridade do epitélio e a flora vaginal com uma absorção sistêmica mínima, o que o torna seguro e eficaz para mulheres na pós-menopausa, mesmo aquelas com idade mais avançada.\n\nAlternativa c: Incorreta. A tibolona é uma terapia hormonal sistêmica que possui ação estrogênica, progestogênica e androgênica. Embora ajude nos sintomas de secura vaginal, não é a conduta mais adequada para sintomas puramente locais. Além disso, a paciente tem 63 anos e parou a terapia hormonal há 5 anos; iniciar terapia sistêmica após os 60 anos ou após 10 anos de menopausa aumenta os riscos cardiovasculares, ultrapassando a chamada janela de oportunidade.\n\nAlternativa d: Incorreta. A terapia estroprogestativa transdérmica é uma forma de terapia hormonal sistêmica. Sua principal indicação é o tratamento de sintomas vasomotores (fogachos) e prevenção de osteoporose em mulheres na pós-menopausa. Para o tratamento isolado de secura vaginal, a via vaginal é preferível por ser mais eficaz no tecido-alvo e apresentar menor risco de efeitos colaterais sistêmicos e tromboembólicos.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:06.174Z"
+  },
+  {
+    "id": "AJUDA_df3957ec-82ef-4db4-93f5-8506b399f141",
+    "originalId": "df3957ec-82ef-4db4-93f5-8506b399f141",
+    "statement": "Você atende um paciente que sofreu corte contuso em região da perna em uma barra de ferro acidentalmente. Após limpeza local, anestesia e sutura você o libera para casa com algumas orientações. Isso o faz lembrar no plantão sobre o processo de cicatrização de feridas, então discute com o outro colega plantonista sobre as etapas desse processo. Assim, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a fase proliferativa, que se inicia por volta do terceiro dia após a lesão, é caracterizada pela intensa atividade fagocitária dos macrófagos, que causam o desbridamento da ferida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a fase inflamatória é a fase inicial, dura cerca de 1 a 6 dias e é responsável pelo processo de hemostasia e quimiotaxia dos leucócitos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a fase de remodelação tem início por volta da segunda semana e apresenta intensa angiogênese e início da produção de colágeno tipo I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a fase de maturação caracteriza o final do processo da cicatrização, que pode durar cerca de um ano e é responsável pela substituição de colágeno tipo I em tipo III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "na fase de proliferação, as principais células presentes na ferida são os miofibroblastos que são responsáveis pelo processo de contração da ferida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO processo de cicatrização é um tema recorrente em provas de cirurgia e dermatologia, sendo dividido didaticamente em três fases principais: Inflamatória, Proliferativa e de Remodelação (ou Maturação). Vamos analisar cada alternativa para entender a correção da questão:\n\nAlternativa A - INCORRETA: A atividade fagocitária intensa realizada pelos macrófagos e neutrófilos, visando ao desbridamento de tecidos desvitalizados e ao controle bacteriano, é a marca da fase INFLAMATÓRIA, e não da fase proliferativa. A fase proliferativa é focada na formação do tecido de granulação e na reepitelização.\n\nAlternativa B - CORRETA: Esta alternativa define perfeitamente a fase inflamatória. Ela se inicia imediatamente após a lesão tecidual, durando em média de 1 a 6 dias. Seus primeiros eventos são a hemostasia (vasoconstrição inicial e cascata de coagulação), seguidos pela liberação de mediadores químicos que promovem a quimiotaxia (atração) de leucócitos para o sítio da ferida.\n\nAlternativa C - INCORRETA: A angiogênese (formação de novos vasos) e o início da produção de colágeno são eventos característicos da fase PROLIFERATIVA, que ocorre antes da fase de remodelação. Além disso, a fase de remodelação costuma ser considerada como tendo início por volta do 21º dia (terceira semana).\n\nAlternativa D - INCORRETA: Embora a fase de maturação/remodelação possa durar um ano ou mais e represente o final do processo, a troca de colágeno ocorre no sentido inverso: o colágeno tipo III (mais frágil e imaturo, produzido na fase de proliferação) é substituído pelo colágeno tipo I (mais resistente e organizado). A alternativa inverteu essa lógica.\n\nAlternativa E - INCORRETA: Na fase de proliferação, a célula protagonista é o FIBROBLASTO, responsável pela síntese da matriz extracelular e do colágeno. Os miofibroblastos são fibroblastos diferenciados que atuam especificamente na contração da ferida, mas não são as principais células ou as únicas responsáveis pela definição de toda a fase proliferativa.\n\nGABARITO: Alternativa B.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:06.174Z"
+  },
+  {
+    "id": "AJUDA_df412f0e-6bde-41e9-b038-3a25939d439d",
+    "originalId": "df412f0e-6bde-41e9-b038-3a25939d439d",
+    "statement": "Criança de 10 anos de idade é atendida em consulta de rotina com queixa de distensão abdominal, flatulência e diarreia volumosa frequente, com restos alimentares, sem muco ou sangue, há 4 meses. Pensando em tratar a etiologia parasitária mais provável, o médico deve prescrever:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Albendazol durante 5 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Metronidazol durante 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mebendazol durante 3 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Albendazol durante 3 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Praziquantel em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "IDENTIFICAÇÃO DO QUADRO CLÍNICO:\nA paciente apresenta uma síndrome disabsortiva clássica: diarreia crônica (4 meses), volumosa, com restos alimentares (sugerindo esteatorreia), flatulência e distensão abdominal, sem sinais de invasão (muco ou sangue). Em pediatria, esse quadro é altamente sugestivo de Giardíase (infecção por Giardia lamblia). O protozoário coloniza o intestino delgado superior, aderindo à mucosa e causando um \"tapete\" que impede a absorção de nutrientes.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) CORRETA. O Albendazol é um derivado benzimidazólico que, além de ser anti-helmíntico, é uma excelente opção para o tratamento da giardíase por apresentar menos efeitos colaterais que os nitroimidazóis. A posologia correta para tratar Giardia é de 400 mg/dia durante 5 dias.\n\nb) INCORRETA. Embora o Metronidazol seja um fármaco de primeira linha para protozoários, o esquema terapêutico padrão para giardíase é de 15 a 20 mg/kg/dia, divididos em duas ou três doses, por um período de 5 a 7 dias. O prazo de 10 dias sugerido pela alternativa torna o item incorreto.\n\nc) INCORRETA. O Mebendazol é um anti-helmíntico eficaz para nematoides (como Ascaris e Oxiúrus), mas não possui eficácia clínica recomendada para o tratamento da Giardia. Além disso, o esquema de 3 dias é voltado para helmintos.\n\nd) INCORRETA. O Albendazol por 3 dias é o esquema indicado para o tratamento de outros parasitas, como o Strongyloides stercoralis e a Hymenolepis nana. Para a erradicação da Giardia lamblia, o tempo de 3 dias é insuficiente, exigindo-se os 5 dias citados na alternativa A.\n\ne) INCORRETA. O Praziquantel é o medicamento de escolha para o tratamento de trematódeos (Schistosoma mansoni) e cestódeos (Taenia solium e saginata). Ele não possui atividade contra protozoários.\n\nDICA DE PROVA:\nA diferenciação do tempo de uso do Albendazol é um tema recorrente em provas:\n- Dose única: Ascaris lumbricoides, Enterobius vermicularis e Necator americanus/Ancylostoma duodenale.\n- 3 dias: Estrongiloidíase e Himenolepíase.\n- 5 dias: Giardíase.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Parasitoses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:06.174Z"
+  },
+  {
+    "id": "AJUDA_df462f2b-f426-4507-9b8f-363b9829b17f",
+    "originalId": "df462f2b-f426-4507-9b8f-363b9829b17f",
+    "statement": "Qual vacina não faz parte do calendário básico do PNI para crianças menores de 1 ano?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pentavalente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pneumocéaiva 10V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rotavírus",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Varicela.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda o Calendário Nacional de Vacinação da Criança, definido pelo Programa Nacional de Imunizações (PNI). Para respondê-la, é fundamental conhecer as idades recomendadas para cada imunizante no primeiro ano de vida.\n\nAlternativa A: Pentavalente.\nIncorreta. A vacina pentavalente, que garante proteção contra difteria, tétano, coqueluche, hepatite B e Haemophilus influenzae tipo b, faz parte do esquema básico do primeiro ano de vida. Ela é administrada em três doses: aos 2, 4 e 6 meses de idade.\n\nAlternativa B: Pneumocócica 10V.\nIncorreta. A vacina pneumocócica 10-valente (conjugada) é indicada para prevenir doenças invasivas e otite média aguda causadas pelo Streptococcus pneumoniae. No calendário do PNI, o esquema consiste em duas doses no primeiro ano de vida (aos 2 e 4 meses), com uma dose de reforço aos 12 meses.\n\nAlternativa C: Rotavírus.\nIncorreta. A vacina contra o rotavírus humano (G1P[8]) é administrada por via oral em duas doses no primeiro ano de vida. A primeira dose é aplicada aos 2 meses e a segunda dose aos 4 meses. Vale lembrar que esta vacina possui limites de idade rigorosos para aplicação (primeira dose até 3 meses e 15 dias; segunda dose até 7 meses e 29 dias).\n\nAlternativa D: Varicela.\nCorreta. No calendário básico do PNI, a vacina contra a varicela não é administrada em crianças menores de 1 ano. A imunização contra a varicela ocorre em dois momentos: a primeira dose aos 15 meses de idade (quando a criança recebe a vacina tetraviral, que combina sarampo, caxumba, rubéola e varicela) e a segunda dose aos 4 anos de idade (vacina varicela isolada). Portanto, ela está fora do cronograma voltado para menores de 12 meses.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T18:01:06.174Z"
+  }
+]

@@ -1,0 +1,505 @@
+[
+  {
+    "id": "AJUDA_3903bdec-87bf-49e9-ab83-f1719ac23756",
+    "originalId": "3903bdec-87bf-49e9-ab83-f1719ac23756",
+    "statement": "Com as limitações das medidas de controle atualmente disponíveis, as vacinas contra dengue vêm gerando grande interesse, não apenas entre os cientistas e profissionais de saúde, mas de toda a sociedade. Em relação às vacinas contra dengue, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A vacina CYD-TVD (Dengvaxia®) teve seu uso limitado por sua baixa eficácia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vacina TAK-003 (Qdenga®) pode ser usada por todos a partir de um ano de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A vacina candidata Butantan-DV não tem eficácia comprovada contra todos os sorotipos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não houve evidências do efeito de resposta imune exacerbada por anticorpos em nenhuma das vacinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. A principal limitação da vacina CYD-TDV (Dengvaxia) não foi meramente uma baixa eficácia, mas sim um problema crítico de segurança. Observou-se que indivíduos soronegativos (que nunca tiveram dengue antes da vacina) apresentavam um risco aumentado de desenvolver formas graves da doença ao serem infectados pelo vírus selvagem após a vacinação. Isso ocorre devido ao fenômeno de facilitação da infecção dependente de anticorpos (ADE). Por esse motivo, a vacina passou a ser indicada exclusivamente para pessoas que já tiveram pelo menos uma infecção prévia por dengue.\n\nAlternativa b: Incorreta. A vacina TAK-003 (Qdenga) é aprovada pela Anvisa para uso em indivíduos dos 4 aos 60 anos de idade. Ela não é autorizada para crianças a partir de um ano de idade, conforme afirmado na alternativa. Diferentemente da Dengvaxia, a Qdenga pode ser administrada tanto em indivíduos soronegativos quanto em soropositivos.\n\nAlternativa c: Correta. A vacina Butantan-DV é uma vacina tetravalente produzida com vírus vivos atenuados. Nos resultados de fase 3 publicados, a vacina demonstrou uma eficácia geral muito satisfatória (79,6%). No entanto, essa eficácia foi comprovada especificamente para os sorotipos 1 (DENV-1) e 2 (DENV-2). Como os sorotipos 3 (DENV-3) e 4 (DENV-4) não circularam de forma significativa durante o período de acompanhamento do estudo, não houve dados estatísticos suficientes para comprovar a eficácia da vacina contra esses dois sorotipos específicos.\n\nAlternativa d: Incorreta. Houve, sim, evidência do efeito de resposta imune exacerbada por anticorpos (ADE). Esse fenômeno foi justamente o que motivou a restrição de uso da vacina Dengvaxia (CYD-TDV). Nela, os anticorpos induzidos pela vacina em pessoas que nunca tiveram a doença podiam atuar facilitando a entrada do vírus nas células em uma infecção natural posterior, mimetizando o que ocorre em uma segunda infecção natural por sorotipo diferente, que é historicamente mais grave.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:01.035Z"
+  },
+  {
+    "id": "AJUDA_3908ec92-0028-4a02-b751-d28afa387451",
+    "originalId": "3908ec92-0028-4a02-b751-d28afa387451",
+    "statement": "Pré-escolar com 4 anos de idade, há 5 dias vem apresentando febre diária (38 a 40 °C) e persistente. No segundo dia de febre, apresentou língua em framboesa, linfadenite cervical unilateral (3 cm), prescrito dose única de penicilina benzatina. Hoje é atendido no pronto-socorro com persistência da febre. Ao exame físico, encontra-se hidratado, com hiperemia conjuntival bilateral não purulenta, exantema escarlatiniforme e edema em mãos e pés. Em face desse quadro clínico, o exame complementar e o tratamento indicados são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "sorologia para Epstein-Baar; corticoterapia via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "ecocardiograma; gamaglobulina via endovenosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "IgG e IgM para sarampo; vitamina A via endovenosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "reação em cadeia da polimerase para espiroquetas; doxiciclina via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ASLO; amoxacilina via oral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico para o diagnóstico de doença de Kawasaki. O paciente apresenta febre persistente por 5 dias, associada a cinco critérios diagnósticos principais: alterações na cavidade oral (língua em framboesa), linfadenopatia cervical unilateral maior que 1,5 cm, hiperemia conjuntival bilateral não purulenta, exantema cutâneo e alterações nas extremidades (edema de mãos e pés).\n\nA doença de Kawasaki é uma vasculite sistêmica primária que acomete vasos de médio calibre, sendo a principal causa de cardiopatia adquirida em crianças em países desenvolvidos. O maior risco dessa patologia é a formação de aneurismas nas artérias coronárias.\n\nAnálise das alternativas:\n\na) Incorreta. A mononucleose infecciosa (causada pelo vírus Epstein-Barr) pode cursar com febre e linfadenopatia, mas geralmente apresenta faringite exsudativa, esplenomegalia e não justifica o edema de mãos e pés ou a língua em framboesa. O tratamento com corticoides não é a conduta padrão para o quadro apresentado.\n\nb) Correta. Uma vez fechado o diagnóstico clínico de doença de Kawasaki, o exame complementar obrigatório é o ecocardiograma para avaliar a presença de dilatações ou aneurismas coronarianos. O tratamento padrão-ouro consiste na administração de imunoglobulina venosa (gamaglobulina) em dose alta (2 g/kg), preferencialmente até o décimo dia de doença, associada ao ácido acetilsalicílico (AAS), visando reduzir o risco de sequelas cardíacas.\n\nc) Incorreta. O sarampo apresenta febre e exantema, porém é acompanhado de sintomas catarrais intensos (tosse, coriza), manchas de Koplik na mucosa oral e a conjuntivite costuma ser exsudativa/purulenta. O quadro de edema de extremidades não é característico do sarampo.\n\nd) Incorreta. Doenças causadas por espiroquetas, como a leptospirose ou a doença de Lyme, possuem apresentações clínicas e contextos epidemiológicos diferentes. A leptospirose cursa com mialgia importante (especialmente em panturrilhas) e sufusão conjuntival, mas não preenche os critérios específicos de Kawasaki.\n\ne) Incorreta. A escarlatina foi a suspeita inicial do médico que prescreveu a penicilina, devido à língua em framboesa e ao exantema. No entanto, a escarlatina não causa conjuntivite nem edema de extremidades. O fato de a febre persistir mesmo após o uso de penicilina benzatina reforça que a etiologia não é a infecção pelo Streptococcus pyogenes. Além disso, o diagnóstico de Kawasaki é clínico e não depende da ASLO.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:01.035Z"
+  },
+  {
+    "id": "AJUDA_390e228f-59f2-41ce-bd9b-1487b80a498e",
+    "originalId": "390e228f-59f2-41ce-bd9b-1487b80a498e",
+    "statement": "O diagnóstico de hérnia incisional é realizado na maioria dos pacientes por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "RM de abdômen.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "US abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "laparoscopia diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "exame físico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "TC de abdômen.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O diagnóstico das hérnias incisionais fundamenta-se, primordialmente, na propedêutica clínica. Por definição, a hérnia incisional é a protrusão de conteúdo intra-abdominal através de uma cicatriz cirúrgica prévia, decorrente de uma falha na síntese ou na cicatrização dos tecidos da parede abdominal.\n\nAlternativa a: Incorreta. A ressonância magnética (RM) é um exame de alto custo, longa duração e baixa disponibilidade. Não há indicação para seu uso rotineiro no diagnóstico de hérnias, sendo reservada apenas para casos extremamente complexos em que outros métodos de imagem falharam.\n\nAlternativa b: Incorreta. A ultrassonografia (US) abdominal é um método operador-dependente que pode ser útil em casos de dúvida diagnóstica, especialmente em pacientes obesos nos quais a palpação é difícil. Contudo, não é necessária para a maioria dos pacientes, cujo diagnóstico é evidente ao exame clínico.\n\nAlternativa c: Incorreta. A laparoscopia diagnóstica é um procedimento cirúrgico invasivo que exige anestesia geral. Ela é utilizada para o tratamento (correção da hérnia) e não como ferramenta inicial de diagnóstico para uma patologia que pode ser identificada externamente.\n\nAlternativa d: Correta. O exame físico é o método diagnóstico de escolha e suficiente para a maioria dos pacientes. Através da inspeção e palpação da cicatriz cirúrgica, preferencialmente com o paciente realizando manobras que aumentem a pressão intra-abdominal (como a manobra de Valsalva ou tosse), o examinador consegue identificar a presença do abaulamento e, muitas vezes, delimitar o anel herniário.\n\nAlternativa e: Incorreta. A tomografia computadorizada (TC) de abdômen é o melhor exame de imagem para avaliar a anatomia da parede abdominal, o tamanho exato do defeito e o conteúdo do saco herniário, sendo fundamental para o planejamento cirúrgico de hérnias grandes ou complexas. Entretanto, o enunciado questiona como o diagnóstico é realizado na maioria dos pacientes, e a resposta permanece sendo o exame clínico inicial.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:01.035Z"
+  },
+  {
+    "id": "AJUDA_3918899e-e386-47e9-8eeb-f6bc30848c0b",
+    "originalId": "3918899e-e386-47e9-8eeb-f6bc30848c0b",
+    "statement": "Paciente de 62 anos portador de Diabetes Mellitus, Hipertensão Arterial Sistêmica e Doença Pulmonar Obstrutiva Crônica em uso de losartana 50mg 2x ao dia, hidroclorotiazida 25mg 1x ao dia, Metformina 1g 2x ao dia e Glibenclamida 5mg 1x ao dia, foi encontrado sonolento em seu quarto e levado ao hospital. Na admissão, encontrava se sonolento, mas atendia aos comandos, taquipneico, desidratado ++/4, acianótico, anictérico, PA 100x 70 mmHg, FC 90 bpm, ritmo cardíaco regular, ausculta pulmonar normal, exame físico do abdome normal e membros sem edema. Foram realizados os exames seguintes exames: hematócrito 45%, hemoglobina 13 g/dL, leucócitos 9.000 céls/mcL, diferenciais normais, plaquetas 200.000 ui/mcL, Glicose 90 mg/dL, Sodio 145 mEq/L, Potássio 4 mEq/L, Ureia 100 mg/dL, Creatinina 2 mg/dL, Cloro105 mEq/L, Magnesio 2mg/dL. Gasometria Arterial: pH 7,2, PCO2 45 mmHg, PO2 100 mmHg, Bicarbonato 10 mEq/L, lactato 5 mmol/L, SatO2 98%. Assinale a alternativa mais adequada em relação ao distúrbio ácido-básico encontrado e sua possível etiologia.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidose metabólica hiperclorêmica por injúria renal aguda sobreposta à doença renal crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acidemia, acidose mista e uso de metformina como etiologia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Acidose lática por sepse.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acidemia, acidose metabólica pura secundária à possível desidratação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Acidose respiratória por pneumonia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender esta questão, devemos realizar a análise sistemática da gasometria arterial e correlacionar com os dados clínicos do paciente.\n\n1. Análise do pH: O pH de 7,2 indica uma acidemia (pH normal entre 7,35 e 7,45).\n\n2. Componente Metabólico: O bicarbonato (HCO3) de 10 mEq/L está muito baixo (normal entre 22 e 26 mEq/L), o que caracteriza uma acidose metabólica.\n\n3. Componente Respiratório e Compensação: Em uma acidose metabólica, a resposta esperada é a hiperventilação para reduzir a PCO2. Utilizando a Fórmula de Winter para calcular a PCO2 esperada: (1,5 x Bicarbonato) + 8 (± 2).\nCálculo: (1,5 x 10) + 8 = 15 + 8 = 23.\nA PCO2 esperada deveria estar entre 21 e 25 mmHg. Como a PCO2 medida no paciente é de 45 mmHg, ela está muito acima do esperado. Isso significa que o paciente não está compensando o distúrbio e possui uma acidose respiratória associada. Portanto, o distúrbio é misto (acidose metabólica + acidose respiratória).\n\n4. Anion Gap e Etiologia: O Anion Gap (AG) é calculado pela fórmula: Sódio - (Cloro + Bicarbonato).\nCálculo: 145 - (105 + 10) = 145 - 115 = 30.\nO AG está elevado (normal até 12). O lactato de 5 mmol/L (elevado) explica parte desse AG. O paciente possui insuficiência renal aguda ou crônica agudizada (creatinina 2 e ureia 100) e faz uso de metformina. A acidose lática associada à metformina é uma complicação clássica em pacientes com disfunção renal, pois o fármaco deixa de ser excretado adequadamente.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O cloro está em 105 mEq/L (normal), e o Anion Gap está elevado (30). A acidose renal pura costuma ser hiperclorêmica com AG normal, mas aqui o AG elevado e o lactato apontam para outra etiologia. Além disso, a alternativa ignora o componente respiratório.\n\nAlternativa b) Correta. O pH define acidemia. O cálculo da PCO2 esperada confirma que o distúrbio é misto (metabólico + respiratório). O uso de metformina em um paciente com insuficiência renal e lactato elevado fecha o diagnóstico etiológico de acidose lática por metformina. O componente respiratório pode ser agravado pela DPOC prévia do paciente, que impede a compensação ventilatória adequada.\n\nAlternativa c) Incorreta. Embora o lactato esteja elevado, não há sinais clínicos ou laboratoriais de sepse, como febre ou leucocitose (leucócitos em 9.000). O contexto da metformina com falência renal é mais específico para o quadro.\n\nAlternativa d) Incorreta. O termo \"pura\" está errado. Como demonstrado pelo cálculo da Fórmula de Winter, a PCO2 está fora da faixa de compensação, caracterizando um distúrbio misto, e não uma acidose metabólica pura.\n\nAlternativa e) Incorreta. A ausculta pulmonar do paciente está normal e não há relato de febre ou tosse. Embora haja acidose respiratória (PCO2 elevada para o contexto), ela faz parte de um distúrbio misto em que a acidose metabólica é severa e predominante.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Análise da Gasometria Arterial",
+      "Distúrbios Ácido-Básicos",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:01.035Z"
+  },
+  {
+    "id": "AJUDA_391d20ce-d1b8-452d-9bfc-a3bd6bb1e988",
+    "originalId": "391d20ce-d1b8-452d-9bfc-a3bd6bb1e988",
+    "statement": "Mulher, 52 anos de idade, apresentou lesão cutânea hipercrômica em antebraço direito. Foi realizada biópsia excisional da lesão, com o seguinte anatomopatológico: \n\n• Melanoma cutâneo invasivo; \n• Tipo histológico: extensivo superficial; \n• Nível IV de Clark; \n• Breslow: 4,1 mm; \n• Ulceração: presente; \n• Índice mitótico: 3/mm²; \n• Invasão perineural: presente; \n• Margens cirúrgicas radiais: comprometidas; \n• Margens cirúrgicas profundas: livres. \n\nQuais são os fatores de maior impacto prognóstico no anatomopatológico do caso apresentado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Índice mitótico e tipo histológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Índice mitótico e invasão perineural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Breslow e margem radial comprometida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Breslow e ulceração.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda os critérios prognósticos do melanoma cutâneo, um dos tumores com maior potencial de metástase na dermatologia. Para responder corretamente, devemos nos basear na classificação da AJCC (American Joint Committee on Cancer), que padroniza o estadiamento e os fatores de risco.\n\nAnálise das alternativas:\n\na) Incorreta. Embora o índice mitótico (número de mitoses por mm²) tenha relevância biológica e já tenha feito parte dos critérios de estadiamento para melanomas finos, ele não supera a importância da espessura de Breslow. O tipo histológico (extensivo superficial, nodular, etc.) influencia o comportamento da lesão, mas não é o principal determinante da sobrevida quando comparado a medidas objetivas de profundidade.\n\nb) Incorreta. A invasão perineural é um fator de risco para recorrência local e pode indicar um comportamento mais agressivo, porém não é considerada um dos pilares fundamentais do estadiamento TNM do melanoma. Assim como o índice mitótico, é um dado complementar.\n\nc) Incorreta. A espessura de Breslow é, de fato, o fator isolado mais importante. No entanto, o comprometimento da margem radial indica que a biópsia foi incompleta (excisional, mas com margens comprometidas) e que será necessária uma ampliação cirúrgica. Margens comprometidas influenciam o manejo terapêutico imediato, mas o impacto no prognóstico global da doença (sobrevida) é definido pelas características biológicas do tumor (como a ulceração), e não apenas pelo status da margem na biópsia inicial.\n\nd) Correta. A espessura de Breslow (medida em milímetros da camada granulosa até a célula melânica mais profunda) e a presença de ulceração são os dois principais fatores anatomopatológicos que determinam o estadiamento T (tumor primário) no melanoma. No caso apresentado, um Breslow de 4,1 mm classifica a lesão como T4, e a presença de ulceração a classifica como T4b. Esses dois parâmetros são os que possuem maior correlação direta com o risco de metástase linfonodal e a sobrevida global do paciente.\n\nResumo didático:\nAo avaliar um laudo de melanoma, os olhos do médico devem buscar primeiro o Breslow (quanto mais profundo, pior) e a ulceração (sua presença sempre agrava o estadiamento). Outros fatores como nível de Clark, índice mitótico e invasão perineural são secundários ou ajudam a compor o perfil de agressividade, mas não definem o prognóstico de forma tão determinante quanto o Breslow e a ulceração.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Oncologia Cutânea (Câncer de Pele)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:01.035Z"
+  },
+  {
+    "id": "AJUDA_391e83af-ec6e-411a-a97c-4fecbbf64781",
+    "originalId": "391e83af-ec6e-411a-a97c-4fecbbf64781",
+    "statement": "Paciente masculino, 32 anos, apresentou queda \"a cavaleiro\" em um acidente na construção civil. Levado à sala de Emergência, queixa-se de dor intensa na bacia. Hemodinamicamente estável, feito uma radiografia de bacia na sala do Trauma, que constata abertura da sínfise púbica. Na fratura do anel pélvico associada a lesão do sistema urinário, qual estrutura é lesionada com maior frequência no sexo masculino, quando comparada com o feminino?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rim",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ureter",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uretra",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Bexiga",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um trauma de alta energia com um mecanismo clássico: a queda \"a cavaleiro\", que gera forças de compressão anteroposterior no anel pélvico, resultando na abertura da sínfise púbica (lesão em \"livro aberto\"). Em traumas de bacia, as lesões do sistema urinário inferior são as complicações viscerais mais frequentes.\n\nA seguir, a análise das alternativas:\n\na) Rim: Os rins estão localizados no espaço retroperitoneal alto, protegidos pelas costelas e pela musculatura lombar. Embora possam ser lesionados em traumas abdominais graves, não possuem uma relação anatômica direta com a sínfise púbica ou com o anel pélvico inferior. Portanto, a incidência de lesão renal não aumenta especificamente por causa de uma fratura de bacia, nem apresenta disparidade marcante entre os sexos nesse contexto.\n\nb) Ureter: O ureter é uma estrutura tubular flexível e protegida ao longo do retroperitônio. Lesões traumáticas de ureter em acidentes contusos são extremamente raras, ocorrendo mais comumente em traumas penetrantes (por arma de fogo ou branca) ou em procedimentos cirúrgicos (iatrogenia). Não é a estrutura mais afetada em fraturas de bacia.\n\nc) Uretra: Esta é a alternativa correta. A uretra masculina é longa (cerca de 20 cm) e possui segmentos fixos e móveis. Nas fraturas de bacia, especialmente com disjunção da sínfise púbica ou fratura dos ramos pubianos, ocorre um cisalhamento na transição entre a uretra membranosa (fixa no diafragma urogenital) e a uretra prostática. No sexo masculino, a uretra está intimamente ligada aos ossos da pelve através dos ligamentos puboprostáticos. No sexo feminino, a uretra é muito curta (cerca de 4 cm), possui maior mobilidade e não está fixada da mesma forma ao arcabouço ósseo, o que torna a lesão uretral feminina muito rara em comparação à masculina.\n\nd) Bexiga: A bexiga é frequentemente lesionada em fraturas de pelve, podendo sofrer ruptura extraperitoneal (mais comum, associada a espículas ósseas) ou intraperitoneal (por aumento súbito da pressão intravesical). Embora seja uma lesão comum em ambos os sexos no trauma pélvico, a diferença de incidência entre homens e mulheres não é tão desproporcional quanto a observada nas lesões de uretra. A anatomia masculina predispõe especificamente a uretra a danos graves durante o deslocamento dos ossos pélvicos.\n\nEm resumo, a uretra é a estrutura que apresenta a maior diferença de frequência de lesão entre os sexos em fraturas de anel pélvico, sendo significativamente mais vulnerável no homem devido à sua extensão e fixação anatômica.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Trauma Ortopédico",
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:01.035Z"
+  },
+  {
+    "id": "AJUDA_3927de29-9506-4d47-9d55-c9065da5f6e6",
+    "originalId": "3927de29-9506-4d47-9d55-c9065da5f6e6",
+    "statement": "A presença de lanugo em recém-nascidos indica que o recém-nascido:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Está acima do peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tem uma boa hidratação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve ter a coleta de suas bilirrubinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "É prematuro.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O lanugo é uma penugem fina, clara e macia que começa a recobrir o corpo do feto por volta da 13ª à 16ª semana de gestação. Sua função primordial é auxiliar na fixação do vérnix caseoso na pele, garantindo proteção contra o líquido amniótico e auxiliando na termorregulação intrauterina.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O lanugo é um marcador de maturidade gestacional e não de estado nutricional. O peso do recém-nascido é influenciado por fatores metabólicos, placentários e genéticos, enquanto o lanugo segue um cronograma biológico de desaparecimento conforme o avanço da idade gestacional.\n\nAlternativa b) Incorreta. A avaliação da hidratação no período neonatal baseia-se na perfusão periférica, umidade de mucosas, tensão da fontanela e turgor cutâneo. A presença de pelos finos não reflete o balanço hídrico do paciente.\n\nAlternativa c) Incorreta. A dosagem de bilirrubinas é solicitada quando há presença de icterícia clínica. Embora recém-nascidos prematuros tenham maior risco de icterícia neonatal devido à imaturidade enzimática do fígado, a presença de lanugo por si só não é uma indicação para coleta de exames laboratoriais.\n\nAlternativa d) Correta. O lanugo é mais abundante por volta da 28ª semana de gestação e começa a desaparecer gradualmente entre a 32ª e a 36ª semana. Por esse motivo, sua presença marcante no nascimento é um sinal clínico clássico de prematuridade. O lanugo é, inclusive, um dos parâmetros físicos avaliados em sistemas de pontuação para estimativa da idade gestacional, como o Novo Escore de Ballard e o Método de Capurro. Em recém-nascidos a termo, a pele costuma estar limpa ou apresentar apenas raros vestígios de pelos na região escapular.\n\nGabarito: Letra (d).",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:01.035Z"
+  },
+  {
+    "id": "AJUDA_392e08f0-19a9-44c7-9488-957763a610a7",
+    "originalId": "392e08f0-19a9-44c7-9488-957763a610a7",
+    "statement": "Mulher comparece na unidade básica de saúde (UBS) com seus dois filhos, um menino de 8 anos e uma menina de 13 anos, buscando orientações quanto à vacinação contra o HPV. \n\nDiante desse quadro, qual a orientação correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O menino e a menina podem receber dose única nessa visita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O menino e a menina podem receber a primeira dose nessa visita e agendar a segunda dose em 60 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A menina não deve ser vacinada e o menino poderá receber a primeira dose ao completar 11 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A menina pode ser vacinada em dose única nessa visita e não há indicação para que o filho seja vacinado agora.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Essa questão aborda as mudanças recentes no Calendário Nacional de Vacinação do Brasil em relação à vacina contra o HPV (Papilomavírus Humano). Em abril de 2024, o Ministério da Saúde atualizou a estratégia de vacinação, adotando o esquema de dose única.\n\nPara responder corretamente, é necessário conhecer os critérios atuais:\n1. Público-alvo: Meninos e meninas de 9 a 14 anos.\n2. Esquema vacinal: Dose única (substituindo o esquema anterior de duas doses).\n\nAnálise dos pacientes do caso:\n- Menina de 13 anos: Enquadra-se na faixa etária (9 a 14 anos) e deve receber a dose única.\n- Menino de 8 anos: Não se enquadra na faixa etária de rotina, que se inicia apenas aos 9 anos. Portanto, ele ainda não tem indicação vacinal no momento.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O menino possui 8 anos e a vacinação de rotina no Programa Nacional de Imunizações (PNI) começa aos 9 anos. Portanto, ele não pode ser vacinado nesta visita.\n\nAlternativa b) Incorreta. Além de o menino não ter idade para ser vacinado, o esquema atual não prevê mais a segunda dose após 60 dias para imunocompetentes nessa faixa etária; a recomendação atual é de dose única.\n\nAlternativa c) Incorreta. A menina de 13 anos deve, sim, ser vacinada, pois está dentro da faixa prioritária. Quanto ao menino, ele poderá iniciar o esquema ao completar 9 anos, e não aos 11 anos (11 anos era a idade inicial para meninos em protocolos mais antigos).\n\nAlternativa d) Correta. A menina está na faixa etária preconizada (9 a 14 anos) e, conforme a atualização de 2024, deve receber apenas uma dose (dose única). O menino, por ter 8 anos, ainda não atingiu a idade mínima de 9 anos para a vacinação de rotina pelo SUS.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Imunizações",
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:01.035Z"
+  },
+  {
+    "id": "AJUDA_3931eff4-8b94-47f6-b3c3-c4bf36db3275",
+    "originalId": "3931eff4-8b94-47f6-b3c3-c4bf36db3275",
+    "statement": "Recém-nascido, 48 horas de vida, nascido de parto vaginal, apresentando recusa alimentar, irritabilidade e hipotermia. A mãe apresentou febre de 39°C no período periparto. O exame físico revela taquipneia e cianose de extremidades. A avaliação laboratorial inicial mostra leucocitose com desvio à esquerda. A equipe médica suspeita de sepse neonatal. Dentre as opções abaixo, qual se enquadra como PRINCIPAL FATOR DE RISCO na definição do quadro como sepse neonatal de início precoce?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A febre materna no período periparto",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A leucocitose com desvio à esquerda",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A presença de recusa alimentar e irritabilidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A via de parto ter sido a vaginal",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A sepse neonatal de início precoce é aquela que se manifesta nas primeiras 48 a 72 horas de vida, sendo decorrente de microrganismos adquiridos no período anteparto ou intraparto (transmissão vertical). Para identificar corretamente a questão, é fundamental diferenciar o que é fator de risco, o que é sinal clínico e o que é achado laboratorial.\n\nAlternativa (a): Correta. A febre materna no período periparto (geralmente definida como temperatura axilar maior ou igual a 38 °C) é um dos critérios clássicos e mais importantes de risco para sepse neonatal precoce. A febre é um sinal cardinal de corioamnionite ou infecção intra-amniótica, indicando que o ambiente uterino pode estar contaminado, facilitando a infecção do feto por patógenos como o *Streptococcus agalactiae* (Grupo B) e a *Escherichia coli*.\n\nAlternativa (b): Incorreta. A leucocitose com desvio à esquerda é um achado laboratorial (marcador inflamatório). Ela ajuda a corroborar o diagnóstico de sepse quando o quadro já está em curso, mas não é um fator que predispõe o recém-nascido a desenvolver a infecção. Vale lembrar que o hemograma isolado tem baixo valor preditivo positivo para sepse neonatal.\n\nAlternativa (c): Incorreta. A recusa alimentar e a irritabilidade são sinais e sintomas clínicos de sepse no recém-nascido. Como os sintomas neonatais são frequentemente inespecíficos, essas alterações alertam o pediatra para a possibilidade de infecção, mas representam a manifestação da doença e não o seu fator de risco originário.\n\nAlternativa (d): Incorreta. O parto vaginal é uma via de nascimento fisiológica. Embora a transmissão vertical ocorra frequentemente durante a passagem pelo canal de parto, o parto vaginal por si só não é considerado fator de risco. O risco surge de condições patológicas associadas ao parto, como o trabalho de parto prematuro, a rotura prolongada de membranas (superior a 18 horas) ou a colonização materna por patógenos específicos sem a devida profilaxia.\n\nEm resumo, a febre materna é o gatilho epidemiológico que, somado aos sinais clínicos e laboratoriais apresentados pelo recém-nascido, define o alto risco e a necessidade de intervenção imediata para sepse neonatal precoce.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Icterícia e Sepse Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:01.035Z"
+  },
+  {
+    "id": "AJUDA_39355d2b-186f-4722-982e-73f903df2f26",
+    "originalId": "39355d2b-186f-4722-982e-73f903df2f26",
+    "statement": "Um trabalhador procura atendimento em uma Unidade de Saúde com ferimento corto-contuso na mão direita, após queda sobre cacos de vidro no trajeto para o trabalho. Relata exercer atividade sem registro em carteira. O ferimento foi suturado, e prescrito o tratamento necessário. \nConsiderando as normas de vigilância em saúde do trabalhador, a conduta em relação à notificação é",
+    "options": [
+      {
+        "id": "A",
+        "text": "não realizar a notificação no Sistema de Informação de Agravos de Notificação (SINAN), pois o acidente ocorreu fora do ambiente de trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "efetuar a notificação no SINAN como acidente de trabalho, independentemente de ter ocorrido no trajeto, da gravidade ou da ausência de vínculo formal, acionando a Vigilância em Saúde do Trabalhador.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "restringir-se ao registro em prontuário, já que trabalhadores sem carteira assinada não são contemplados pela vigilância.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "comunicar apenas à empresa, recomendando a regularização do vínculo antes da notificação, além de orientar o trabalhador a buscar ajuda no Ministério de Trabalho e Emprego.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "notificar somente acidentes graves, fatais ou envolvendo crianças e adolescentes, não sendo necessário neste caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O acidente de trajeto e a notificacao compulsoria no Sistema de Informacao de Agravos de Notificacao (SINAN) constituem temas fundamentais da Vigilancia em Saude do Trabalhador (VISAT) no SUS. A notificacao epidemiologica no ambito da saude publica independe da modalidade de vinculo empregaticio (formal ou informal), do local fisico da ocorrencia (abrangendo o percurso residencia-trabalho) ou da gravidade da lesao.\n\nAnalise das alternativas:\n\nAlternativa A (Incorreta): O evento ocorrido no trajeto entre a residencia e o trabalho (acidente in itinere) e legalmente equiparado ao acidente de trabalho. Havendo nexo com o deslocamento para a atividade laboral, existe indicacao formal de notificacao.\n\nAlternativa B (Correta): A notificacao no SINAN possui finalidade epidemiologica e de saude publica, regida pelo principio da universalidade do SUS. Deve ser preenchida para todo e qualquer trabalhador, independentemente da existencia de carteira assinada, da gravidade do ferimento ou de ter ocorrido no trajeto, permitindo o direcionamento de acoes pela Vigilancia em Saude do Trabalhador.\n\nAlternativa C (Incorreta): As diretrizes do SUS e da Rede Nacional de Atencao Integral a Saude do Trabalhador (RENAST) alcancam os trabalhadores informais. Restringir a conduta ao registro em prontuario impede a geracao de dados epidemiologicos e a adocao de medidas coletivas de prevencao.\n\nAlternativa D (Incorreta): A regularizacao trabalhista pertence a esfera juridica e administrativa, nao cabendo a equipe de saude atuar como intermediaria dessas questoes e nem condicionar a notificacao sanitaria a regularizacao do vinculo.\n\nAlternativa E (Incorreta): Embora acidentes graves, fatais e aqueles envolvendo criancas/adolescentes exijam notificacao e investigacao imediatas, as demais ocorrencias com nexo causal com o trabalho tambem sao passiveis de registro no sistema de saude, especialmente em trabalhadores informais que nao dispoem da via previdenciaria da Comunicacao de Acidente de Trabalho (CAT).",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Sistemas de Informação em Saúde",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:01.035Z"
+  }
+]

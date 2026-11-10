@@ -1,0 +1,496 @@
+[
+  {
+    "id": "AJUDA_39966d2e-adab-420e-8086-a090014cbad7",
+    "originalId": "39966d2e-adab-420e-8086-a090014cbad7",
+    "statement": "João tem 23 anos de idade e é usuário de uma UBS. Não apresenta quaisquer sintomas, mas, como estuda e trabalha, o tempo acaba sendo escasso para que possa se exercitar fisicamente de forma regular. Seu pai é diabético desde os 38 anos de idade. Com base na situação hipotética, é correto solicitar",
+    "options": [
+      {
+        "id": "A",
+        "text": "hemoglobina glicada, e João deve ser orientado a ter hábitos saudáveis, com encaminhamento para um endocrinologista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "glicemia de jejum, e João deve ser orientado quanto à importância de ter hábitos saudáveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "teste de tolerância à glicose com sobrecarga de 75 g em duas horas, e João deve receber orientações para perder peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "glicemia de jejum e teste de tolerância à glicose com sobrecarga de 75 g em duas horas, e João deve ser orientado a fortalecer a musculatura.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise da Questão\n\nA questão aborda o rastreamento de Diabetes Mellitus tipo 2 (DM2) em um paciente jovem, assintomático, mas com fatores de risco importantes: sedentarismo e história familiar de primeiro grau (pai diabético com diagnóstico precoce). De acordo com as diretrizes da Sociedade Brasileira de Diabetes (SBD) e da American Diabetes Association (ADA), o rastreamento deve ser considerado em adultos de qualquer idade que apresentem sobrepeso ou obesidade e que possuam pelo menos um fator de risco adicional. No contexto da Atenção Primária (UBS), a conduta deve focar na detecção precoce e na promoção da saúde.\n\nDistribuição das Alternativas\n\nAlternativa a) Incorreta. A hemoglobina glicada (HbA1c) é, de fato, um exame válido para o rastreamento e diagnóstico de diabetes. No entanto, o erro da alternativa reside na conduta de encaminhamento para o endocrinologista. João é um paciente jovem, assintomático e que está em sua primeira abordagem na UBS. O manejo de fatores de risco e o rastreamento de doenças crônicas não transmissíveis são competências fundamentais do médico generalista ou de família na Unidade Básica de Saúde, não havendo indicação de encaminhamento especializado neste momento.\n\nAlternativa b) Correta. A glicemia de jejum é o teste inicial de rastreamento mais comum, prático e de menor custo na rede pública. João apresenta fatores de risco (sedentarismo e hereditariedade), o que justifica a investigação laboratorial mesmo aos 23 anos. Além do exame, a orientação sobre hábitos saudáveis (dieta e atividade física) é a intervenção mais importante para a prevenção primária do diabetes e outras doenças metabólicas, agindo diretamente sobre o fator de risco modificável do paciente (falta de exercício).\n\nAlternativa c) Incorreta. O teste de tolerância à glicose (TOTG) com sobrecarga de 75g é um teste sensível e validado para o diagnóstico. Contudo, devido à sua complexidade logística (necessidade de duas coletas e tempo de espera do paciente na unidade), ele geralmente é reservado para casos em que a glicemia de jejum é inconclusiva (pré-diabetes) ou em situações específicas, como o rastreamento de diabetes gestacional. Além disso, a orientação de \"perder peso\" pode não ser adequada se o paciente tiver um Índice de Massa Corporal (IMC) normal, enquanto a orientação de \"hábitos saudáveis\" é universal.\n\nAlternativa d) Incorreta. Não existe recomendação para solicitar rotineiramente dois exames de rastreamento diferentes (glicemia e TOTG) de forma simultânea para um paciente assintomático na triagem inicial. Escolhe-se um dos métodos preconizados. A orientação de apenas \"fortalecer a musculatura\" é muito restrita; a recomendação de atividade física deve ser mais abrangente, incluindo exercícios aeróbicos e mudanças no estilo de vida global.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:15.674Z"
+  },
+  {
+    "id": "AJUDA_399795e6-2136-4ce9-9443-8fed77d07890",
+    "originalId": "399795e6-2136-4ce9-9443-8fed77d07890",
+    "statement": "Com relação à capnografia com forma de onda durante as manobras de RCP, é correto afirmar que valores inferiores a",
+    "options": [
+      {
+        "id": "A",
+        "text": "10 mmHg indicam a realização de compressões torácicas adequadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "20 mmHg se correlacionam a sinais de obstrução de via aérea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "10 mmHg se correlacionam a prognósticos menos favoráveis.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "15 mmHg indicam provável quadro de tamponamento cardíaco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A capnografia quantitativa com forma de onda é uma ferramenta essencial durante a Ressuscitação Cardiopulmonar (RCP), pois reflete o débito cardíaco gerado pelas compressões torácicas. O CO2 exalado (PetCO2) depende do transporte de dióxido de carbono dos tecidos para os pulmões, o que só ocorre se houver perfusão.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. Valores de PetCO2 inferiores a 10 mmHg indicam que as compressões torácicas podem estar sendo realizadas de forma ineficaz ou que o paciente apresenta um prognóstico muito reservado. Para considerar as compressões adequadas, o objetivo é manter a PetCO2 acima de 10 a 20 mmHg.\n\nAlternativa B: Incorreta. O valor de 20 mmHg durante a RCP é, na verdade, um indicador positivo de compressões de alta qualidade. Sinais de obstrução de via aérea na capnografia são identificados pela alteração na forma da onda (como o aspecto em \"barbatana de tubarão\" em casos de broncoespasmo ou obstrução parcial), e não por um valor numérico isolado de 20 mmHg.\n\nAlternativa C: Correta. De acordo com as diretrizes internacionais (AHA e ERC), se o valor da PetCO2 permanecer persistentemente abaixo de 10 mmHg após 20 minutos de RCP de alta qualidade, isso está fortemente correlacionado com a incapacidade de atingir o Retorno da Circulação Espontânea (RCE) e com prognósticos menos favoráveis. É um marcador de baixa perfusão sistêmica.\n\nAlternativa D: Incorreta. Não existe um valor específico de capnografia que indique tamponamento cardíaco. Embora causas obstrutivas de parada (como o tamponamento) reduzam o débito cardíaco e, consequentemente, a PetCO2, o valor de 15 mmHg é considerado um patamar aceitável durante as manobras, indicando que as compressões estão gerando algum grau de fluxo sanguíneo.\n\nEm resumo, a capnografia serve para monitorar a qualidade da RCP, identificar o retorno da circulação espontânea (quando há um aumento súbito e sustentado dos valores, geralmente para 35-45 mmHg) e auxiliar na decisão de interrupção dos esforços quando os valores permanecem criticamente baixos (menores que 10 mmHg), apesar de manobras otimizadas.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Parada Cardiorrespiratória (PCR)",
+      "Ventilação Mecânica",
+      "Intubação"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:15.674Z"
+  },
+  {
+    "id": "AJUDA_3997cdac-564a-401b-9bd8-611e6330f270",
+    "originalId": "3997cdac-564a-401b-9bd8-611e6330f270",
+    "statement": "Qual das opções abaixo combina corretamente o tipo de energia utilizada em histeroscopia cirúrgica com o meio de distensão apropriado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Energia monopolar com solução salina isotônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Energia bipolar com solução de glicina 1,5%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Energia bipolar com solução salina isotônica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Energia monopolar com dióxido de carbono.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender esta questão, é fundamental correlacionar a condutividade elétrica do meio de distensão com o tipo de energia utilizado no instrumental cirúrgico.\n\nAlternativa a) Incorreta. A energia monopolar exige um meio de distensão não eletrolítico, ou seja, que não conduza eletricidade, como a glicina a 1,5%, o sorbitol ou o manitol. A solução salina (soro fisiológico) é um meio eletrolítico e condutor; se utilizada com energia monopolar, a corrente elétrica se dispersaria pelo líquido em vez de se concentrar no tecido-alvo, o que impediria o corte e poderia causar queimaduras térmicas em outros locais da cavidade uterina.\n\nAlternativa b) Incorreta. Embora a energia bipolar possa funcionar em diferentes meios, sua principal vantagem técnica e clínica é justamente permitir o uso de meios eletrolíticos. A associação da energia bipolar com a glicina não é a escolha padrão, pois a glicina está relacionada a riscos de hiponatremia dilucional e síndrome de intoxicação hídrica, complicações que tentamos evitar ao optar pelo sistema bipolar.\n\nAlternativa c) Correta. Esta é a combinação padrão-ouro na histeroscopia cirúrgica atual. Na energia bipolar, a corrente elétrica circula apenas entre os dois polos do próprio eletrodo (alça cirúrgica). Isso permite que o cirurgião utilize a solução salina isotônica (soro fisiológico 0,9%) como meio de distensão. O uso do soro fisiológico é muito mais seguro para a paciente, pois, caso ocorra absorção sistêmica do líquido (intravasamento), o risco de distúrbios eletrolíticos graves, como a hiponatremia, é drasticamente reduzido.\n\nAlternativa d) Incorreta. O dióxido de carbono (CO2) é um meio gasoso utilizado exclusivamente em histeroscopias diagnósticas. Ele é contraindicado em histeroscopias cirúrgicas por dois motivos principais: o risco elevado de embolia gasosa (potencialmente fatal) e o fato de que o sangue e a fumaça gerados pelo uso de energia obscureceriam rapidamente a visão do cirurgião, já que não haveria o fluxo contínuo de limpeza que os meios líquidos proporcionam.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:15.674Z"
+  },
+  {
+    "id": "AJUDA_3998fca8-0ad1-4aad-aba2-94c21b5ff4e1",
+    "originalId": "3998fca8-0ad1-4aad-aba2-94c21b5ff4e1",
+    "statement": "A Constituição da República Federativa do Brasil, em seu artigo 199 e parágrafos, trata da assistência à saúde pela iniciativa privada. Assinale a alternativa que expressa corretamente a condição a ser observada nessa prestação de serviços.",
+    "options": [
+      {
+        "id": "A",
+        "text": "É vedada a destinação de recursos públicos para auxílios ou subvenções às instituições privadas com fins lucrativos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "As instituições privadas poderão participar do Sistema Único de Saúde de forma complementar, observada a equidade entre as entidades filantrópicas e as com fins lucrativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É permitida a participação direta ou indireta de empresas ou capitais estrangeiros na assistência à saúde no País, exceto nos casos previstos em lei.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "São permitidos a coleta, o processamento e a transfusão de sangue e seus derivados, com fins comerciais, exceto nos casos previstos em lei.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda as bases constitucionais da saúde no Brasil, especificamente o Artigo 199 da Constituição Federal de 1988, que regulamenta a atuação da iniciativa privada no setor.\n\nAlternativa a) Correta. Esta alternativa está em perfeita consonância com o parágrafo 2º do Artigo 199 da Constituição Federal. O texto constitucional proíbe expressamente que recursos públicos sejam destinados a auxílios ou subvenções para instituições privadas que possuam fins lucrativos. O objetivo é garantir que o dinheiro público financie o sistema público ou instituições que não visam ao lucro (filantrópicas).\n\nAlternativa b) Incorreta. Embora a participação privada no SUS seja complementar, o erro da alternativa reside na palavra equidade. O parágrafo 1º do Artigo 199 estabelece que, na integração ao SUS, deve haver preferência pelas entidades filantrópicas e pelas sem fins lucrativos. Portanto, não há igualdade de condições ou equidade entre uma empresa lucrativa e uma entidade filantrópica na hora de contratar com o SUS; a filantrópica tem prioridade.\n\nAlternativa c) Incorreta. O texto constitucional, no parágrafo 3º do Artigo 199, estabelece que é vedada (proibida) a participação direta ou indireta de empresas ou capitais estrangeiros na assistência à saúde no País, salvo nos casos previstos em lei. A alternativa inverteu a lógica da norma ao afirmar que é permitida como regra geral. Embora leis infraconstitucionais posteriores tenham ampliado as exceções, para a letra da Constituição, a proibição é a regra inicial.\n\nAlternativa d) Incorreta. De acordo com o parágrafo 4º do Artigo 199, a lei deve dispor sobre as condições e requisitos que facilitem a remoção de órgãos, tecidos e substâncias humanas para fins de transplante, pesquisa e tratamento, bem como a coleta, processamento e transfusão de sangue e seus derivados, sendo vedado todo tipo de comercialização. Assim, a comercialização de sangue é terminantemente proibida pela Constituição Brasileira, não havendo exceção para fins comerciais.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:15.674Z"
+  },
+  {
+    "id": "AJUDA_39a814e4-22b7-42fc-9730-64a6bef4530b",
+    "originalId": "39a814e4-22b7-42fc-9730-64a6bef4530b",
+    "statement": "Menina de 2 anos e 2 meses vem sendo acompanhada desde o primeiro ano de vida com medidas deitadas. Na consulta atual, a equipe decide iniciar a aferição em pé e calcular a velocidade no período. Qual é a conduta técnica correta para evitar erro sistemático na curva e na velocidade anual?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter somente a medida em pé e comparar diretamente com a medida deitada anterior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acrescentar 1,0 cm ao valor em pé e usar esse número na curva de forma definitiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar as duas aferições (deitada e em pé) na transição, aplicar o ajuste de 0,7 cm entre posições e comparar a velocidade usando o mesmo método nas medidas consecutivas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Priorizar estimar a velocidade pelo IMC e dispensar ajustes de posição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Repetir a medida apenas se a diferença ultrapassar 1,0 cm entre as aferições.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A transição da medição do comprimento (deitado) para a estatura (em pé) é um marco importante na puericultura, ocorrendo tipicamente aos 2 anos de idade. Tecnicamente, a estatura medida em pé é aproximadamente 0,7 cm menor que o comprimento medido deitado. Isso ocorre devido ao efeito da gravidade, à compressão dos discos intervertebrais e ao alinhamento postural na posição vertical.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Se o examinador comparar diretamente a medida atual (em pé) com a anterior (deitada) sem qualquer ajuste, ocorrerá um erro sistemático. Como a medida em pé é naturalmente menor, a velocidade de crescimento calculada para o período será falsamente reduzida, podendo sugerir um déficit de crescimento inexistente.\n\nAlternativa b: Incorreta. Embora o ajuste de valor seja uma prática comum para converter medidas entre gráficos diferentes, acrescentar 1,0 cm de forma definitiva é inadequado. A partir dos 2 anos, a criança deve ser acompanhada nos gráficos de estatura por idade (medida em pé). O ajuste serve para a comparação no momento da transição, não para uso perpétuo.\n\nAlternativa c: Correta. Esta é a conduta técnica recomendada para garantir a fidedignidade dos dados. Realizar as duas medidas no momento da transição permite ao examinador documentar a diferença. O valor de 0,7 cm é o ajuste padrão estabelecido pela Organização Mundial da Saúde (OMS) para compensar a mudança de posição. Para o cálculo preciso da velocidade de crescimento (cm/ano), é obrigatório comparar medidas obtidas pelo mesmo método ou aplicar a devida correção matemática.\n\nAlternativa d: Incorreta. O Índice de Massa Corporal (IMC) é uma ferramenta para avaliação do estado nutricional e relação entre peso e altura. Ele não substitui a medida da estatura e não é utilizado para calcular a velocidade de crescimento linear.\n\nAlternativa e: Incorreta. Uma diferença entre 0,7 cm e 1,0 cm entre a medida deitada e em pé é fisiologicamente esperada. Repetir a medida não eliminará essa variação, pois ela é intrínseca à mudança de técnica e de decúbito.\n\nGabarito: Alternativa (c).",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:15.674Z"
+  },
+  {
+    "id": "AJUDA_39ae2edf-603e-474c-88a1-dceda2f5fb86",
+    "originalId": "39ae2edf-603e-474c-88a1-dceda2f5fb86",
+    "statement": "Um paciente de 58 anos de idade, com histórico de doença pulmonar obstrutiva crônica (DPOC), foi levado ao pronto-socorro com dispneia intensa, tosse produtiva com expectoração purulenta e febre há dois dias. Ao exame físico, apresentou PA = 130 mmHg X 80 mmHg, FC = 112 bpm, FR = 26 irpm e SatO2 = 88% em ar ambiente. A ausculta pulmonar revelou murmúrio vesicular reduzido difusamente e roncos. Nesse caso clínico, após a suplementação de oxigênio, a principal conduta terapêutica consiste em",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar antibióticos empíricos e corticosteroides sistêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "administrar broncodilatadores de curta duração por via inalatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "instituir ventilação não invasiva (VNI) imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "combinar broncodilatadores, corticosteroides sistêmicos e antibióticos empíricos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão descreve um quadro clássico de exacerbação aguda de Doença Pulmonar Obstrutiva Crônica (DPOC). O paciente apresenta o \"tripé\" dos critérios de Anthonisen: aumento da dispneia, aumento do volume da expectoração e purulência do escarro, além de sinais de instabilidade respiratória (taquipneia e hipoxemia).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora o uso de antibióticos e corticoides seja indicado neste caso (devido à purulência do escarro e à gravidade dos sintomas), a conduta está incompleta. Os broncodilatadores de curta ação são a base do tratamento inicial para o alívio imediato da obstrução ao fluxo aéreo.\n\nAlternativa b) Incorreta. O uso isolado de broncodilatadores é insuficiente para um paciente com sinais de infecção (febre e escarro purulento) e necessidade de internação/observação por hipoxemia. O tratamento deve ser multifatorial para reduzir a inflamação e tratar a causa-base.\n\nAlternativa c) Incorreta. A Ventilação Não Invasiva (VNI) tem indicações precisas na exacerbação da DPOC, como acidose respiratória (pH menor que 7,35) ou desconforto respiratório grave que não responde à terapia inicial. No caso apresentado, a conduta medicamentosa deve ser instituída simultaneamente ou logo após a estabilização da oxigenação. Colocar a VNI como conduta principal isolada, sem o manejo farmacológico associado, torna a alternativa incompleta e menos prioritária que a abordagem terapêutica combinada.\n\nAlternativa d) Correta. Esta é a conduta padrão-ouro para exacerbações moderadas a graves de DPOC. A combinação envolve: \n1. Broncodilatadores de curta duração (beta-2-agonistas e/ou anticolinérgicos): para reduzir o broncoespasmo. \n2. Corticosteroides sistêmicos: para reduzir o tempo de recuperação, melhorar a função pulmonar (VEF1) e a oxigenação. \n3. Antibióticos empíricos: indicados pela presença de escarro purulento (sinal de infecção bacteriana) e pela gravidade do quadro clínico. \n\nPortanto, a abordagem conjunta dessas três classes farmacológicas é a estratégia mais eficaz para o manejo do paciente em questão.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:15.674Z"
+  },
+  {
+    "id": "AJUDA_39b0e2d6-62f4-4a22-84d1-7a781661fcbc",
+    "originalId": "39b0e2d6-62f4-4a22-84d1-7a781661fcbc",
+    "statement": "Um escolar com 5 anos é atendido em uma unidade básica de saúde com história de diarreia iniciada 2 dias antes. Houve aumento da frequência das evacuações há 24 horas, e o paciente apresentou um episódio de vômitos há 12 horas. Ao exame físico, mostrou-se intranquilo, chorando sem lágrimas, com a língua levemente seca.\nA conduta imediata é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "fazer hidratação oral com 75 mL/kg (sais de reidratação) em 4 horas; não medicar; observação no local;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "iniciar hidratação venosa com 10 mL/kg em 30 minutos; prescrever ondansetrona; transferir para unidade hospitalar;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "orientar quando à ingestão de líquidos; não usar medicamentos; dar alta com orientações sobre o retorno;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prescrever hidratação venosa com 70 mL/kg em 2,5 horas; usar antieméticos; manter naquela unidade de saúde;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "indicar hidratação oral com 20 mL/kg (sais de reidratação), usar ondansetrona; retornar para casa com orientação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo da desidratação em pediatria, um tema fundamental para provas de residência e prática clínica. O primeiro passo é classificar o estado de hidratação do paciente com base nos sinais clínicos apresentados.\n\nAnálise do quadro clínico:\nO paciente apresenta sinais de alerta: está intranquilo (irritado), chora sem lágrimas e tem a língua levemente seca. De acordo com o fluxograma do Ministério da Saúde e da Organização Mundial da Saúde (OMS), a presença de dois ou mais desses sinais classifica a criança no Plano B de hidratação (desidratação moderada ou \"alguma desidratação\").\n\nConduta no Plano B:\nA conduta recomendada é a Terapia de Reidratação Oral (TRO) na unidade de saúde. O volume de Soro de Reidratação Oral (SRO) deve ser de 50 a 100 mL/kg (utilizando-se frequentemente a média de 75 mL/kg) para ser administrado em um período de 4 horas, em pequenas quantidades e com frequência. Durante esse período, o paciente deve ser reavaliado continuamente. Se os sinais de desidratação desaparecerem, a criança passa para o Plano A e recebe alta.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. Esta alternativa descreve exatamente o Plano B: oferta de 75 mL/kg de SRO em 4 horas, sem necessidade inicial de medicações (visto que houve apenas um episódio de vômito há 12 horas e a aceitação oral é priorizada) e permanência na unidade para observação até a reidratação.\n\nAlternativa b) Incorreta. A hidratação venosa (fase de expansão rápida) é reservada para o Plano C (desidratação grave) ou para casos de falha na terapia oral (vômitos persistentes, íleo paralítico ou alteração do nível de consciência), o que não é o caso deste paciente.\n\nAlternativa c) Incorreta. Esta conduta corresponde ao Plano A, indicado para crianças com diarreia, mas sem sinais clínicos de desidratação. Como o escolar apresenta sinais claros de perda de fluidos (choro sem lágrima e irritabilidade), ele precisa de intervenção imediata na unidade.\n\nAlternativa d) Incorreta. Novamente, propõe a via venosa e o uso sistemático de antieméticos. O volume de 70 mL/kg em 2,5 horas é uma etapa específica da fase de manutenção/reposição no Plano C para crianças maiores, não sendo a conduta imediata para um quadro de desidratação moderada tratável por via oral.\n\nAlternativa e) Incorreta. O volume de 20 mL/kg é insuficiente para a reidratação no Plano B. Além disso, o paciente não deve retornar para casa imediatamente; ele deve permanecer em observação na unidade de saúde até que esteja clinicamente hidratado. O uso de ondansetrona pode ser considerado em casos de vômitos persistentes que dificultam a TRO, mas não é a medida isolada correta nem substitui o volume adequado de SRO.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Diarreia",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:15.674Z"
+  },
+  {
+    "id": "AJUDA_39b76c7d-8cae-4fbc-88c6-62335aaa1f1d",
+    "originalId": "39b76c7d-8cae-4fbc-88c6-62335aaa1f1d",
+    "statement": "Considerando a fração atribuível populacional (FAP), analise as afirmativas e assinale a alternativa correta\n\nI. A FAP descreve, em uma população, a fração da ocorrência de uma doença associada a um fator de risco específico\nII. A medida da FAP responde à seguinte pergunta: Qual a incidência da doença em uma população associada à\nprevalência de um fator de risco? \nIII. A FAP é obtida dividindo o risco atribuível na população pela incidência total da doença na população.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a afirmativa I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a afirmativa II está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas a afirmativa III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas as afirmativas I e III estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das Afirmativas:\n\nAfirmativa I: Correta. A Fração Atribuível Populacional (FAP) é um indicador epidemiológico que descreve a proporção de casos de uma doença em toda a população (expostos e não expostos) que pode ser atribuída a um fator de risco específico. Ela representa o impacto desse fator na saúde pública e indica o quanto da doença seria evitada se o fator de risco fosse eliminado.\n\nAfirmativa II: Incorreta. A FAP responde à pergunta sobre qual a proporção (ou fração) dos casos de uma doença na população que é devida ao fator de risco. A pergunta formulada na alternativa (\"Qual a incidência...\") refere-se ao Risco Atribuível Populacional (RAP), que é uma medida de diferença absoluta de taxas de incidência, e não uma proporção ou fração. A FAP é sempre expressa em termos percentuais ou fracionários.\n\nAfirmativa III: Correta. A fórmula da FAP consiste em dividir o Risco Atribuível na População (RAP) pela incidência total da doença na população. O RAP é calculado subtraindo a incidência nos não expostos da incidência total da população. Assim, FAP = (Incidência Total - Incidência nos Não Expostos) / Incidência Total.\n\nAnálise das Alternativas:\n\nAlternativa a: Incorreta, pois a afirmativa III também é verdadeira.\n\nAlternativa b: Incorreta, pois a afirmativa II está errada e as afirmativas I e III estão certas.\n\nAlternativa c: Incorreta, pois a afirmativa I também é verdadeira.\n\nAlternativa d: Correta. Esta alternativa identifica adequadamente que apenas as proposições I e III estão corretas de acordo com os conceitos de bioestatística e epidemiologia.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:15.674Z"
+  },
+  {
+    "id": "AJUDA_39bdef5b-9ab5-49cc-8c2c-42a33487dc7e",
+    "originalId": "39bdef5b-9ab5-49cc-8c2c-42a33487dc7e",
+    "statement": "Paciente de 68 anos, obeso (IMC: 34 kg/m2), diabético tipo II, internado há 48 horas após colecistectomia laparoscópica, convertida para aberta por inflamação severa. Na 2ª semana pós-operatória, apresenta febre de 39 ºC, FC: 115 bpm, PA: 95 x 58 mmHg, FR: 24 irpm e lactato sérico 3,2 mmol/L (valor de referência: 1,0 a 1,5 mmol/L). Os exames laboratoriais mostram leucócitos 18.000/mm3 e cultura de líquido biliar colhida no intraoperatório pendente. Exames de imagem negativos para coleções intracavitárias. O cirurgião indica controle clínico. Qual é a conduta inicial mais adequada diante da suspeita de sepse pós-operatória?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar antibioterapia empírica de amplo espectro após coleta de hemoculturas, manter reposição volêmica e monitorar lactato.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aguardar resultado da cultura do líquido biliar e iniciar antibiótico dirigido, somente se positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar somente expansão volêmica rápida; adiar antibiótico até estabilização hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender uso de qualquer antimicrobiano prévio e repetir exames laboratoriais em 12 horas antes de decidir sobre o melhor tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Transferir imediatamente para UTI, sem iniciar tratamento antimicrobiano, até avaliação por infectologista.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Resumo do caso: paciente idoso, obeso e diabético, no pós-operatório de cirurgia biliar complicada, com febre, taquicardia, taquipneia, hipotensão (PAM em torno de 70 mmHg), leucocitose e lactato elevado (3,2 mmol/L). Isso configura sepse com hipoperfusão tecidual, com risco de evoluir para choque séptico. O foco provável é abdominal ou de ferida operatória, mesmo sem coleção visível na imagem. Imagem negativa não exclui infecção, como colangite, bile infectada, infecção de sítio cirúrgico ou pneumonia. \"Controle clínico\" não significa esperar.\n\nPrincípio central: na sepse, o tratamento é uma emergência tempo-dependente. Segundo a Surviving Sepsis Campaign, deve-se:\n- Coletar culturas, incluindo hemoculturas, sem atrasar o antibiótico.\n- Iniciar antibiótico empírico de amplo espectro, idealmente em até 1 hora quando há choque ou alta probabilidade de sepse.\n- Fazer ressuscitação volêmica com cristaloide (cerca de 30 mL/kg se houver hipotensão ou hipoperfusão).\n- Reavaliar a perfusão e repetir o lactato.\n- Controlar o foco, se identificado.\n\nAnálise das alternativas:\n\na) Correta. Reúne as condutas centrais do pacote inicial da sepse: coleta de hemoculturas antes do antibiótico, antibioterapia empírica de amplo espectro (cobrindo gram-negativos, anaeróbios e enterococo, por exemplo piperacilina-tazobactam ou carbapenêmico, conforme a epidemiologia local), reposição volêmica e monitorização do lactato como marcador de perfusão e resposta.\n\nb) Incorreta. Esperar a cultura biliar para tratar só se for positiva atrasa o antibiótico, e cada hora de atraso aumenta a mortalidade. A cultura serve para descalonar ou ajustar o tratamento depois, não para decidir se trata.\n\nc) Incorreta. Antibiótico não deve ser adiado até a estabilização hemodinâmica. Ele é tão prioritário quanto a ressuscitação volêmica, e os dois devem ser feitos simultaneamente.\n\nd) Incorreta. Suspender antimicrobianos e esperar 12 horas expõe o paciente à progressão para choque séptico e disfunção orgânica. Além disso, o paciente já apresenta critérios claros de gravidade, então repetir exames antes de agir é inadequado.\n\ne) Incorreta. A transferência para UTI pode ser necessária, dada a hipotensão e o lactato elevado, mas não se justifica deixar o paciente sem antimicrobiano enquanto aguarda o infectologista. O tratamento não pode depender de parecer.\n\nPonto-chave para a prova: diante de suspeita de sepse, reconheça precocemente, colha culturas, dê antibiótico empírico de amplo espectro e cristaloide imediatamente, e monitore o lactato. Exame de imagem negativo e cultura pendente não justificam retardar o tratamento.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sepse",
+      "Antibióticos",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:15.674Z"
+  },
+  {
+    "id": "AJUDA_39bf4160-e4ca-44a9-8732-81648e7d9d9d",
+    "originalId": "39bf4160-e4ca-44a9-8732-81648e7d9d9d",
+    "statement": "Menino de 12 anos é levado por seus pais a um pronto-socorro porque se machucou, há 5 dias, com galho de árvore. Os pais relatam que demoraram a buscar atendimento para o filho por morarem em região de difícil acesso. Exame físico: ferimento corto-contuso na face lateral da perna direita, com aproximadamente 12 cm, irregular, com presença de contaminação grosseira da ferida. Os pais afirmam que o paciente tem histórico de atopias e que tomou as vacinas da infância até os 5 anos. O médico indica desbridamento cirúrgico, sob anestesia local infiltrativa, com 20 mL de lidocaína a 2% sem vasoconstritor. Durante o procedimento, o paciente começa a relatar formigamento nos lábios, gosto metálico na boca e zumbido. Em seguida, apresenta crise convulsiva tônico-clônica generalizada.\nQual é o diagnóstico provável do quadro apresentado no momento da cirurgia?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reação anafilática grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Toxicidade pelo anestésico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Paroxismo tetânico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sepse por infecção da ferida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Diagnóstico: intoxicação sistêmica por anestésico local (LAST – Local Anesthetic Systemic Toxicity) pela lidocaína.\n\nRaciocínio central\n\n1. A dose foi excessiva. Lidocaína a 2% contém 20 mg/mL, então 20 mL correspondem a 400 mg. A dose máxima da lidocaína sem vasoconstritor é de cerca de 4,5 mg/kg (teto de 300 mg no adulto). Com vasoconstritor, chega a cerca de 7 mg/kg (teto de 500 mg). Um menino de 12 anos pesa em torno de 40 kg, o que dá dose máxima aproximada de 180 mg. Ele recebeu mais que o dobro. A infiltração em ferida extensa, inflamada e muito vascularizada também acelera a absorção sistêmica.\n\n2. A sequência clínica é clássica. A toxicidade se manifesta primeiro no sistema nervoso central:\n- Fase inicial (excitatória): parestesia perioral e de língua, gosto metálico, zumbido, tontura, distúrbios visuais, agitação e tremores.\n- Em seguida: convulsões tônico-clônicas.\n- Com níveis mais altos: depressão do SNC, coma e parada respiratória.\n- Manifestações cardiovasculares, geralmente mais tardias: hipotensão, bradicardia, arritmias ventriculares e parada cardíaca.\n\nA relação temporal com a infiltração, durante o procedimento, confirma o diagnóstico.\n\nConduta\n\n- Interromper imediatamente a injeção e pedir ajuda.\n- Garantir via aérea e oxigenação a 100%, evitando hipóxia e acidose, que agravam a toxicidade.\n- Controlar a convulsão com benzodiazepínico.\n- Administrar emulsão lipídica a 20%, sobretudo se houver instabilidade cardiovascular ou convulsão refratária. A dose é de 1,5 mL/kg em bolus, seguida de infusão.\n- Em caso de parada, seguir o suporte avançado, com doses reduzidas de adrenalina (até 1 mcg/kg) e evitando lidocaína como antiarrítmico.\n\nAnálise das alternativas\n\na) Reação anafilática grave – INCORRETA. O histórico de atopia é um distrator. Anafilaxia a anestésicos do tipo amida, como a lidocaína, é raríssima. Ela se manifestaria com urticária, angioedema, broncoespasmo, estridor e hipotensão. Parestesia perioral, gosto metálico, zumbido e convulsão não fazem parte do quadro típico.\n\nb) Toxicidade pelo anestésico – CORRETA. A dose ultrapassou o limite para o peso e os sintomas neurológicos seguiram a progressão clássica, da excitação até a convulsão.\n\nc) Paroxismo tetânico – INCORRETA. É um distrator plausível, pois há ferida contaminada e vacinação incompleta (sem reforços após os 5 anos). Porém, o tétano costuma ter incubação média de 7 a 10 dias e começa com trismo, riso sardônico e rigidez muscular. Os espasmos tetânicos são contrações dolorosas com o paciente consciente, sem perda de consciência e sem pródromo sensitivo de gosto metálico e zumbido. Essa ferida exige, à parte, imunoglobulina antitetânica e vacina, mas isso não explica o evento intraoperatório.\n\nd) Sepse por infecção da ferida – INCORRETA. Não há febre, taquicardia, hipotensão ou alteração prévia do estado geral. Além disso, a sepse não causa início súbito de sintomas sensitivos periorais seguidos de convulsão logo após a infiltração anestésica.\n\nMensagem para a prova: sempre calcule a dose de anestésico local em mg/kg (1% = 10 mg/mL). Parestesia perioral, gosto metálico e zumbido indicam intoxicação por anestésico local até prova em contrário. O antídoto específico é a emulsão lipídica a 20%.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:29:15.674Z"
+  }
+]

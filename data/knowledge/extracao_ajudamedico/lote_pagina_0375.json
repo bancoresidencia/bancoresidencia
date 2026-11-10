@@ -1,0 +1,519 @@
+[
+  {
+    "id": "AJUDA_67b9fe16-ef11-4032-9a57-78621fbf6f1c",
+    "originalId": "67b9fe16-ef11-4032-9a57-78621fbf6f1c",
+    "statement": "Mulher, 42 anos de idade, assintomática, faz mamografia que mostrou microcalcificações agrupadas e pleomórficas no quadrante superior externo, com cerca de 1 cm de extensão. A biópsia por mamotomia foi compatível com carcinoma ductal in situ. Nesse momento, indica-se",
+    "options": [
+      {
+        "id": "A",
+        "text": "mastectomia simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "hormonioterapia neoadjuvante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "radioterapia exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "cirurgia conservadora e radioterapia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "setorectomia com biópsia de linfonodo sentinela.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO caso clínico descreve uma paciente de 42 anos com Carcinoma Ductal In Situ (CDIS) de pequena extensão (1 cm), localizado no quadrante superior externo da mama. O CDIS é uma lesão pré-invasiva, na qual as células malignas estão confinadas ao sistema ductal, sem ultrapassar a membrana basal. O objetivo principal do tratamento é o controle local para prevenir a progressão para carcinoma invasor.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a) INCORRETA: Embora a mastectomia simples seja uma opção terapêutica para o CDIS, ela é considerada um tratamento agressivo para uma lesão de apenas 1 cm. A mastectomia é reservada para casos de doença multicêntrica (em diferentes quadrantes), lesões extensas que não permitem bons resultados cosméticos com cirurgia conservadora ou quando a paciente possui contraindicações formais à radioterapia.\n\nAlternativa (b) INCORRETA: A hormonioterapia (como o Tamoxifeno) pode ser utilizada no CDIS apenas como terapia adjuvante (após a cirurgia) em pacientes com receptores hormonais positivos, visando reduzir o risco de recorrência ipsilateral ou de um novo tumor na mama contralateral. Não existe indicação de hormonioterapia neoadjuvante (antes da cirurgia) para o tratamento de carcinoma in situ.\n\nAlternativa (c) INCORRETA: A radioterapia nunca é utilizada como modalidade exclusiva de tratamento para o CDIS. O pilar do tratamento é a ressecção cirúrgica completa da lesão com margens livres. A radioterapia atua como um complemento para diminuir as taxas de recidiva local após a cirurgia preservadora.\n\nAlternativa (d) CORRETA: Para lesões únicas e pequenas (neste caso, 1 cm), a conduta padrão é a cirurgia conservadora (setorectomia ou quadrantectomia) com o objetivo de obter margens cirúrgicas livres, obrigatoriamente associada à radioterapia adjuvante. Diversos estudos clínicos demonstram que a adição da radioterapia após a cirurgia conservadora reduz o risco de recorrência local (tanto in situ quanto invasora) em cerca de 50%.\n\nAlternativa (e) INCORRETA: A setorectomia é o procedimento cirúrgico correto, mas a biópsia de linfonodo sentinela não deve ser realizada rotineiramente no CDIS. Por definição, o carcinoma in situ não tem capacidade de metastatizar para linfonodos. A pesquisa de linfonodo sentinela no CDIS é indicada apenas em situações específicas: quando se opta por mastectomia (pois a retirada da mama impede uma pesquisa futura caso o exame anatomopatológico final revele um componente invasor) ou se houver forte suspeita clínica/radiológica de microinvasão (lesões muito extensas, geralmente maiores que 4-5 cm).",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:16.074Z"
+  },
+  {
+    "id": "AJUDA_67cdac41-dc56-4456-80b6-00c940c8c837",
+    "originalId": "67cdac41-dc56-4456-80b6-00c940c8c837",
+    "statement": "Um lactente de 8 meses com diagnóstico prévio de Tetralogia de Fallot apresenta episódio súbito de cianose intensa, irritabilidade, taquipneia e queda da saturação para 68%, durante um episódio de choro prolongado. No exame físico: sopro sistólico em borda esternal esquerda e taquicardia. Marque a alternativa que tem a conduta terapêutica correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colocar a criança em posição supina, administrar diurético e oxigênio em alto fluxo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar morfina, aumentar retorno venoso com posição de joelhos ao tórax (posição genu-peitoral), oxigenioterapia e considerar betabloqueador.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Realizar ventilação não invasiva imediata e iniciar vasodilatadores pulmonares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar adrenalina em bolus para reverter o quadro de hipoperfusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Evitar intervenções imediatas, pois as crises hipercianóticas geralmente cessam espontaneamente em poucos minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um quadro clássico de crise hipercianótica (ou \"Tet spell\") em um lactente com Tetralogia de Fallot. Essa condição é uma emergência médica decorrente do aumento súbito do shunt (desvio de sangue) da direita para a esquerda através da comunicação interventricular (CIV), reduzindo drasticamente o fluxo sanguíneo pulmonar. Isso geralmente ocorre devido ao espasmo do infundíbulo pulmonar ou à queda da resistência vascular sistêmica (provocada por choro, dor ou evacuação).\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. A posição supina (deitado de costas) não auxilia na reversão da crise. O uso de diuréticos é contraindicado, pois a redução da pré-carga (volume de sangue que chega ao coração) pode agravar a obstrução da via de saída do ventrículo direito e piorar o shunt direita-esquerda.\n\nAlternativa (b) Correta. O tratamento visa aumentar a resistência vascular sistêmica e relaxar a musculatura infundibular. A posição de joelhos ao tórax (genu-peitoral) aumenta a resistência vascular sistêmica ao \"dobrar\" as artérias femorais, o que favorece o fluxo de sangue para os pulmões em vez da aorta. A morfina é fundamental para acalmar a criança, reduzir o drive respiratório e diminuir o tônus simpático. O oxigênio, embora tenha efeito limitado devido à obstrução mecânica, auxilia na redução da resistência vascular pulmonar. O betabloqueador (como o esmolol ou propranolol) é indicado para relaxar o espasmo infundibular.\n\nAlternativa (c) Incorreta. A ventilação não invasiva não é a conduta inicial prioritária. O foco deve ser a manipulação hemodinâmica e a sedação. Além disso, vasodilatadores pulmonares isolados não corrigem o problema principal, que é a queda da resistência sistêmica e o espasmo infundibular.\n\nAlternativa (d) Incorreta. A adrenalina aumenta a frequência cardíaca e a contratilidade miocárdica. Em pacientes com Fallot, o estímulo adrenérgico excessivo pode piorar o espasmo do infundíbulo pulmonar, agravando a obstrução ao fluxo sanguíneo para os pulmões e intensificando a crise.\n\nAlternativa (e) Incorreta. A crise hipercianótica é uma situação de risco de vida. Se não houver intervenção imediata, a hipóxia severa pode levar a síncope, convulsões, acidente vascular cerebral ou óbito. Nunca se deve adotar uma conduta expectante diante desse cenário.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:16.074Z"
+  },
+  {
+    "id": "AJUDA_67cf50be-fd33-4d2c-acfd-ed22f579aa59",
+    "originalId": "67cf50be-fd33-4d2c-acfd-ed22f579aa59",
+    "statement": "Recém-nascido a termo e adequado para a idade gestacional (39 semanas) apresenta hipotonia e apneia logo após o nascimento. Realizados clampeamento imediato do cordão umbilical e transferência para o berço aquecido. Após as manobras iniciais, verificou-se FC = 80 bpm e ausência de respiração espontânea; iniciada ventilação com pressão positiva (VPP) com máscara facial e balão autoinflável em ar ambiente. Após 30 segundos de VPP, constatou-se FC = 60 bpm e respiração irregular. Qual é a medida indicada neste caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ofertar O₂ suplementar à VPP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Corrigir o escape da máscara facial e repetir a VPP.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Proceder com a intubação traqueal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar massagem cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise da Questão:\n\nO caso descreve um recém-nascido a termo com depressão respiratória ao nascer. Após o início da ventilação com pressão positiva (VPP) com máscara e balão por 30 segundos, a frequência cardíaca (FC) caiu de 80 para 60 bpm e a respiração continua irregular. De acordo com as diretrizes de reanimação neonatal da Sociedade Brasileira de Pediatria (SBP) e do ILCOR, o passo mais importante quando a FC não sobe após a VPP inicial é garantir que a ventilação esteja sendo efetiva antes de progredir para manobras mais invasivas.\n\nAlternativa (a) Incorreta: Aumentar a concentração de oxigênio não é a prioridade se a ventilação não estiver sendo mecanicamente eficaz. O principal determinante do sucesso na reanimação neonatal é a expansão pulmonar adequada. Se houver falha na técnica de ventilação (como escape na máscara), o oxigênio suplementar não chegará aos alvéolos e a FC continuará a cair.\n\nAlternativa (b) Correta: Quando a FC permanece abaixo de 100 bpm após os primeiros 30 segundos de VPP, a primeira atitude do profissional deve ser verificar a técnica e realizar os passos corretivos da ventilação. Isso é comumente lembrado pelo acrônimo MR. SOPA (Máscara, Reposicionamento, Sucção, Open mouth/Boca aberta, Pressão, Alternativa de via aérea). Corrigir o escape da máscara é o primeiro passo desses ajustes para garantir que o volume de ar esteja de fato entrando nos pulmões do recém-nascido.\n\nAlternativa (c) Incorreta: A intubação traqueal pode vir a ser necessária caso os ajustes manuais na máscara não resolvam a situação ou se houver necessidade de VPP prolongada. No entanto, o protocolo exige que se tente corrigir a ventilação com máscara primeiro ou que se verifique a técnica antes de proceder para a via aérea avançada, a menos que a ventilação com máscara seja claramente impossível.\n\nAlternativa (d) Incorreta: A massagem cardíaca é indicada apenas quando a FC permanece abaixo de 60 bpm após pelo menos 30 segundos de VPP efetiva (geralmente realizada por meio de intubação traqueal para garantir a máxima eficiência). Iniciar a massagem sem garantir que os pulmões estão sendo ventilados é um erro grave, pois a causa da bradicardia no recém-nascido é quase sempre a hipóxia por falha respiratória. Primeiro ventila-se adequadamente; se a FC não subir, então massageia-se.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal",
+      "Cuidados Neonatais",
+      "Ventilação Mecânica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:16.074Z"
+  },
+  {
+    "id": "AJUDA_67d3fc59-6fee-4ec8-a6da-8665da7cb466",
+    "originalId": "67d3fc59-6fee-4ec8-a6da-8665da7cb466",
+    "statement": "De acordo com a Diretriz Brasileira de Hipertensão Arterial 2025, assinale a alternativa INCORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mudanças no estilo de vida são recomendadas para todos os pacientes com pressão arterial elevada ou hipertensão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A monitorização ambulatorial ou residencial da pressão arterial pode auxiliar na confirmação diagnóstica da hipertensão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A estratificação do risco cardiovascular deve considerar fatores de risco, lesão de órgão-alvo e doenças associadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A redução do consumo de sódio é uma das medidas não farmacológicas recomendadas para prevenção e tratamento da hipertensão arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O tratamento medicamentoso deve ser iniciado apenas após seis meses de medidas não farmacológicas, independentemente do estágio da hipertensão e do risco cardiovascular.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda as recomendações fundamentais das Diretrizes Brasileiras de Hipertensão (DBH), com foco nos critérios de início do tratamento medicamentoso e medidas não farmacológicas. Para identificar a alternativa incorreta, devemos analisar os critérios de estratificação de risco e os prazos terapêuticos.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): As mudanças no estilo de vida (MEV) constituem a base do tratamento e da prevenção primária. Elas são recomendadas universalmente, desde pacientes com pressão arterial elevada (pré-hipertensão) até aqueles em estágios avançados, independentemente do uso de medicamentos associados.\n\nAlternativa B (Correta): O diagnóstico de hipertensão arterial (HA) não deve se basear apenas em medidas de consultório. A Monitorização Ambulatorial da Pressão Arterial (MAPA) e a Monitorização Residencial da Pressão Arterial (MRPA) são ferramentas essenciais para excluir o efeito do avental branco, identificar a hipertensão mascarada e confirmar o diagnóstico em casos limítrofes.\n\nAlternativa C (Correta): A estratégia terapêutica na HA não depende apenas dos níveis pressóricos (estágios 1, 2 ou 3), mas do risco cardiovascular total. A presença de fatores de risco (como diabetes e dislipidemia), lesões de órgãos-alvo (como hipertrofia ventricular esquerda ou albuminúria) e doenças cardiovasculares ou renais pré-existentes define a urgência e a agressividade do tratamento.\n\nAlternativa D (Correta): A restrição da ingestão de sódio para menos de 2 gramas por dia (equivalente a 5g de sal de cozinha) é uma das intervenções não farmacológicas com maior evidência científica na redução dos níveis pressóricos e na diminuição da morbimortalidade cardiovascular.\n\nAlternativa E (Incorreta/Gabarito): Esta afirmação está errada por ser absoluta e generalista. Segundo a diretriz, o tratamento medicamentoso pode ser iniciado imediatamente em diversos cenários: 1) Pacientes com HA estágio 2 ou 3, independente do risco cardiovascular; 2) Pacientes com HA estágio 1 que apresentam risco cardiovascular alto ou lesão de órgão-alvo; 3) Pacientes com doença cardiovascular preexistente. O prazo de tentativa exclusiva com medidas não farmacológicas (que pode variar de 3 a 6 meses) é reservado geralmente para pacientes com HA estágio 1 de risco baixo ou moderado, e não para todos os casos.\n\nResumo do erro da alternativa E: O início do tratamento medicamentoso é individualizado e depende do estágio da hipertensão e do risco cardiovascular, não havendo a obrigatoriedade de aguardar seis meses em todos os pacientes.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:16.074Z"
+  },
+  {
+    "id": "AJUDA_67d79bef-667c-42a9-a37b-9c22ffca0be2",
+    "originalId": "67d79bef-667c-42a9-a37b-9c22ffca0be2",
+    "statement": "Assinale a alternativa que apresenta, corretamente, a causa mais comum de hematúria glomerular.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carcinoma de células renais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença de Berger (nefropatia da imunoglobulina A).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Glomerulonefrite pós-estreptocócica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome nefrótica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Síndrome de Goodpasture.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder corretamente a essa questão, é fundamental diferenciar as causas de hematúria glomerular (proveniente dos glomérulos) das causas não glomerulares (urológicas). A hematúria glomerular é caracterizada pela presença de dismorfismo eritrocitário (como os acantócitos) e, por vezes, cilindros hemáticos no sedimento urinário.\n\nAlternativa (a) Incorreta. O carcinoma de células renais é uma neoplasia maligna que pode causar hematúria macroscópica ou microscópica, porém, trata-se de uma causa não glomerular (extraglomerular). Nestes casos, as hemácias apresentam morfologia normal (isomórficas).\n\nAlternativa (b) Correta. A Doença de Berger, ou Nefropatia por IgA, é reconhecida mundialmente como a glomerulopatia primária mais comum. Ela se manifesta frequentemente por episódios de hematúria macroscópica recorrente, muitas vezes desencadeados por infecções de vias aéreas superiores, ou por hematúria microscópica persistente. Por ser a forma mais prevalente de inflamação glomerular, é a causa principal de hematúria de origem glomerular.\n\nAlternativa (c) Incorreta. A Glomerulonefrite Pós-Estreptocócica (GNPE) é uma causa importante de síndrome nefrítica e hematúria glomerular, especialmente na faixa etária pediátrica. No entanto, quando analisamos a população geral e a frequência global de doenças renais, a Doença de Berger supera a GNPE em prevalência.\n\nAlternativa (d) Incorreta. A síndrome nefrótica é um conjunto de sinais e sintomas definidos por proteinúria maciça (acima de 3,5g/24h em adultos), hipoalbuminemia, edema e dislipidemia. Embora algumas doenças que levam à síndrome nefrótica possam apresentar hematúria, a síndrome em si é uma manifestação clínica e não a causa da hematúria. Além disso, a hematúria é uma característica clássica da síndrome nefrítica, e não da nefrótica pura.\n\nAlternativa (e) Incorreta. A Síndrome de Goodpasture é uma doença autoimune rara, caracterizada pela presença de anticorpos antimembrana basal glomerular, afetando os capilares dos rins e dos pulmões (síndrome pulmão-rim). Devido à sua baixa incidência na população, não pode ser considerada a causa mais comum de hematúria glomerular.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:16.074Z"
+  },
+  {
+    "id": "AJUDA_67d8ed6e-86ee-40f9-b2f8-401e0844d1bd",
+    "originalId": "67d8ed6e-86ee-40f9-b2f8-401e0844d1bd",
+    "statement": "Homem, 81 anos, sofreu queda em casa e fraturou o colo do fêmur esquerdo há 3 dias, estando internado para correção cirúrgica. AP: HAS em uso de losartana. Exame físico: dor à mobilização do membro inferior E e equimose em face lateral da coxa; pequenos linfonodos cervicais e axilares (0,5-1 cm), móveis e indolores. Exames laboratoriais pré-operatórios: Hb = 12,9 g/dL; Ht = 39%; plaquetas = 262.000/mm³; leucócitos = 58.700/mm³ (contagem diferencial = 2.900 neutrófilos/mm³; 55.000 linfócitos/mm³; 450 eosinófilos/mm³; 350 monócitos/mm³); DHL = 310 U/L (VN 120-246); ácido úrico = 5,1 mg/dL; PCR = 1,1 mg/dL; Cr = 1,0 mg/dL; Ureia = 41 mg/dL. Assinale a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "trata-se de leucocitose reacional ao estresse metabólico da fratura; sem necessidade de abordagem adicional. prosseguir com a cirurgia como programado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "linfocitose reacional típica do idoso sob inflamação aguda; mediada por citocinas e autolimitada após a correção do fator desencadeante.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "o diagnóstico mais provável é de doença linfoproliferativa crônica (ex.: llc). a investigação pode ser feita na rotina, dado que o paciente estava assintomático, e não há contraindicação para prosseguir com a cirurgia proposta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "em idosos com fratura, leucocitose sugere infecção; coletar culturas, iniciar antibiótico empírico e adiar a cirurgia até normalização clínica e laboratorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "hiperleucocitose com risco iminente de leucostase; indicar leucoaférese e quimioterapia citorredutora de urgência, adiando indefinidamente a cirurgia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO paciente em questão é um idoso de 81 anos com um achado laboratorial incidental de leucocitose importante (58.700/mm³). Ao analisarmos o diferencial, observamos que essa leucocitose é às custas de uma linfocitose absoluta e acentuada (55.000 linfócitos/mm³), sem desvio à esquerda ou neutrofilia. O exame físico revela linfonodomegalias discretas e indolores. Esse quadro, em um paciente idoso e previamente assintomático do ponto de vista hematológico, é altamente sugestivo de Leucemia Linfocítica Crônica (LLC).\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA LLC é a leucemia mais comum em idosos e, frequentemente, o diagnóstico ocorre de forma incidental em exames de rotina ou pré-operatórios. O critério diagnóstico principal é a presença de linfocitose persistente (mais de 5.000 linfócitos B/mm³ no sangue periférico por mais de 3 meses, confirmada por imunofenotipagem). Como o paciente está estável (sem anemia grave ou plaquetopenia significativa), não apresenta sinais de lise tumoral (ácido úrico e creatinina normais) e a cirurgia de correção de fratura de fêmur é uma urgência ortopédica para reduzir a morbimortalidade no idoso, a investigação hematológica pode ser conduzida de forma ambulatorial após o procedimento cirúrgico.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\na) Incorreta. O estresse metabólico agudo (como uma fratura ou infarto) e a inflamação tipicamente causam leucocitose por neutrofilia (aumento de neutrófilos), muitas vezes com desvio à esquerda. Uma linfocitose dessa magnitude (55.000/mm³) nunca é considerada apenas reacional ao estresse traumático.\n\nb) Incorreta. Não existe o conceito de \"linfocitose reacional típica do idoso\" frente à inflamação aguda. Em processos infecciosos ou inflamatórios agudos, espera-se uma resposta neutrofílica. Linfocitose reacional pode ocorrer em algumas infecções virais (como mononucleose), mas não no contexto de trauma ortopédico.\n\nd) Incorreta. Embora a leucocitose possa sugerir infecção, o perfil aqui é de linfocitose crônica, e não neutrofilia infecciosa. Adiar a cirurgia de colo de fêmur em um idoso por conta de um achado hematológico incidental e estável aumenta drasticamente o risco de complicações como pneumonia, escaras e tromboembolismo.\n\ne) Incorreta. O risco de leucostase (estase sanguínea por excesso de leucócitos) é muito baixo na LLC, ocorrendo geralmente apenas quando os linfócitos ultrapassam 400.000-500.000/mm³. Diferente das leucemias agudas (onde os blastos são células grandes e rígidas), os linfócitos da LLC são pequenos e maduros, circulando facilmente pelos capilares. Não há indicação de leucoaférese ou quimioterapia de urgência neste caso.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Leucemias",
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:16.074Z"
+  },
+  {
+    "id": "AJUDA_67f0dc10-4238-4d46-9020-6d92c311ec33",
+    "originalId": "67f0dc10-4238-4d46-9020-6d92c311ec33",
+    "statement": "A Política Nacional de Atenção Básica do SUS, visando à sua expansão e consolidação, tem como estratégia prioritária",
+    "options": [
+      {
+        "id": "A",
+        "text": "a Saúde da Família.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "a rede de referência e contrarreferência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a democratização da gestão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a otimização dos gastos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "as parcerias público-privadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa correta é a (a).\n\nA Política Nacional de Atenção Básica (PNAB), regida pela Portaria de Consolidação nº 2/2017 (que incorporou a Portaria nº 2.436/2017), estabelece as diretrizes e normas para a organização da Atenção Primária no Brasil. O texto da PNAB é explícito ao definir que a Estratégia Saúde da Família (ESF) é a estratégia prioritária para a expansão e consolidação da Atenção Básica, visando à reorientação do modelo assistencial no Sistema Único de Saúde (SUS).\n\nAlternativa A (Correta): A Saúde da Família é o modelo preferencial para a estruturação da Atenção Básica. Ela foca no atendimento integral, contínuo e multiprofissional, baseando-se no território e no vínculo com as famílias, sendo a principal ferramenta para substituir o modelo de atendimento tradicional e centrado na doença.\n\nAlternativa B (Incorreta): A rede de referência e contrarreferência é um mecanismo de articulação entre os diferentes níveis de complexidade do sistema (primário, secundário e terciário). Embora essencial para a coordenação do cuidado, ela é uma diretriz de organização das Redes de Atenção à Saúde (RAS), e não a estratégia de expansão da Atenção Básica.\n\nAlternativa C (Incorreta): A democratização da gestão, que inclui a participação da comunidade e o controle social, é um princípio organizativo do SUS (Lei 8.142/90). É uma diretriz da PNAB, mas não é a estratégia técnico-operacional definida para a expansão do serviço.\n\nAlternativa D (Incorreta): A otimização dos gastos é um objetivo administrativo e de gestão de recursos públicos para garantir a sustentabilidade do sistema, mas não figura na legislação como a estratégia assistencial prioritária da política.\n\nAlternativa E (Incorreta): As parcerias público-privadas são modalidades de gestão e contratação de serviços. A PNAB foca no modelo técnico-assistencial, priorizando a organização das equipes multiprofissionais da Estratégia Saúde da Família, independentemente da natureza administrativa adotada pelo gestor local.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:16.074Z"
+  },
+  {
+    "id": "AJUDA_67f78b6e-9621-4b97-8f49-1d96524d0294",
+    "originalId": "67f78b6e-9621-4b97-8f49-1d96524d0294",
+    "statement": "Um homem de 55 anos sofre uma parada cardiorrespiratória durante esforço físico. Após o atendimento inicial, o eletrocardiograma mostra fibrilação ventricular como ritmo inicial. Qual é a causa cardíaca mais provável dessa parada cardiorrespiratória?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Miocardite viral, frequentemente associada a bloqueios cardíacos completos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Infarto agudo do miocárdio, levando a isquemia miocárdica severa e arritmias malignas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Taponamento cardíaco, causando colapso hemodinâmico por compressão do coração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dissecção aguda de aorta, resultando em tamponamento e colapso circulatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Síndrome do QT longo, predispondo à taquiarritmia polimórfica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A análise da questão foca na causa mais comum de morte súbita cardíaca em adultos e na interpretação do ritmo de parada cardiorrespiratória (PCR).\n\nO cenário descreve um homem de 55 anos que apresenta uma parada em ritmo de fibrilação ventricular (FV) durante esforço físico. Estatisticamente, em indivíduos com mais de 35 anos, a principal causa de morte súbita cardíaca é a Doença Arterial Coronariana (DAC).\n\nAlternativa a) Incorreta. A miocardite viral é uma inflamação do músculo cardíaco que pode, sim, gerar arritmias e morte súbita, porém ela é uma etiologia muito mais comum em crianças, adolescentes e adultos jovens. Além disso, o esforço físico como gatilho imediato em um paciente de 55 anos aponta fortemente para uma causa isquêmica.\n\nAlternativa b) Correta. O infarto agudo do miocárdio (IAM) é a causa soberana de morte súbita na faixa etária do paciente. O esforço físico aumenta a demanda miocárdica de oxigênio e pode causar a ruptura de uma placa aterosclerótica preexistente ou uma isquemia crítica. A falta de oxigenação no tecido cardíaco gera instabilidade elétrica nas membranas dos cardiomiócitos, servindo de gatilho para a fibrilação ventricular, que é o ritmo inicial mais frequentemente documentado nesses casos.\n\nAlternativa c) Incorreta. O tamponamento cardíaco é uma causa de choque obstrutivo. Quando leva à parada cardiorrespiratória, o mecanismo é mecânico (o coração não consegue se expandir para se encher de sangue), o que resulta tipicamente em Atividade Elétrica Sem Pulso (AESP), e não em um ritmo arritmogênico primário como a fibrilação ventricular.\n\nAlternativa d) Incorreta. A dissecção aguda de aorta é uma condição catastrófica, mas menos comum que o IAM. Ela pode causar parada por tamponamento cardíaco (ruptura para o saco pericárdico) ou choque hipovolêmico, situações que também costumam cursar com AESP ou assistolia, em vez de fibrilação ventricular primária.\n\nAlternativa e) Incorreta. A Síndrome do QT longo é uma canalopatia (doença dos canais iônicos) que predispõe a uma arritmia específica chamada Torsades de Pointes, que pode degenerar para fibrilação ventricular. No entanto, é uma causa genética ou induzida por drogas, sendo muito menos prevalente que a doença coronariana em um paciente de 55 anos durante atividade física.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+      "Parada Cardiorrespiratória (PCR)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:16.074Z"
+  },
+  {
+    "id": "AJUDA_67f84542-2474-4411-9d55-cbb5d47197aa",
+    "originalId": "67f84542-2474-4411-9d55-cbb5d47197aa",
+    "statement": "O mecanismo do parto envolve tempos e movimentos passivos do feto pelo canal de parto. O diagnóstico da variedade de posição e da altura da apresentação é essencial. Analise as assertivas a seguir:\n\nI. O assinclitismo posterior (de Litzmann) ocorre quando a sutura sagital está próxima à sínfise púbica e o parietal posterior é o que se apresenta no centro do canal de parto, facilitando a descida em bacias platipeloides, mas podendo causar distócia se acentuado.\nII. A rotação interna da cabeça fetal tem por objetivo adaptar o maior diâmetro da apresentação (occipitofrontal ou suboccipitobregmático) ao maior diâmetro do estreito inferior da pelve materna (anteroposterior), finalizando com a sutura sagital orientada no sentido anteroposterior (occipito-púbico ou sacro).\nIII. O Reflexo de Ferguson é desencadeado pela distensão do colo uterino e da porção superior da vagina pela apresentação fetal, estimulando a liberação pulsátil de ocitocina pela neuro-hipófise, o que intensifica as contrações e a dilatação.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I e II apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise da Assertiva I:\nO assinclitismo é a inclinação lateral da cabeça fetal, ocorrendo quando a sutura sagital não está centralizada entre o promontório sacral e a sínfise púbica. No assinclitismo posterior, conhecido como obliquidade de Litzmann, a sutura sagital se aproxima da sínfise púbica, o que resulta na descida primária do osso parietal posterior. Esse movimento é frequentemente uma manobra de adaptação em bacias platipeloides (achatadas), onde o diâmetro anteroposterior é reduzido. Embora possa ser um movimento fisiológico transitório para facilitar a passagem, o assinclitismo acentuado e persistente dificulta o descenso e pode levar à distocia de parto. A assertiva está correta.\n\nAnálise da Assertiva II:\nA rotação interna é um movimento fundamental do mecanismo de parto. O feto geralmente penetra no estreito superior da pelve em variedades de posição transversas ou oblíquas. Como o estreito inferior da pelve materna possui seu maior diâmetro no sentido anteroposterior, a cabeça fetal deve girar internamente para alinhar sua sutura sagital a esse diâmetro. Isso resulta em uma apresentação geralmente em occipitopúbica (mais comum) ou occipitosacra, permitindo que o diâmetro suboccipitobregmático (o menor diâmetro da cabeça fletida) se adapte à saída da pelve. A assertiva está correta.\n\nAnálise da Assertiva III:\nO Reflexo de Ferguson é um mecanismo de feedback positivo neuroendócrino. A distensão mecânica do colo uterino e do segmento inferior da vagina pela apresentação fetal estimula receptores sensoriais que enviam sinais ao hipotálamo. Isso provoca a liberação de ocitocina pela neuro-hipófise (lobo posterior da hipófise) de forma pulsátil. A ocitocina, por sua vez, aumenta a contratilidade do miométrio, o que empurra o feto contra o colo, gerando mais distensão e mantendo o ciclo de progressão do trabalho de parto e dilatação. A assertiva está correta.\n\nConclusão das Alternativas:\nComo as três assertivas (I, II e III) estão tecnicamente corretas e descrevem com precisão os fenômenos do mecanismo de parto e da fisiologia obstétrica, a alternativa correta é a letra (d).\n\na) Incorreta. Exclui a assertiva III, que descreve corretamente o Reflexo de Ferguson.\nb) Incorreta. Exclui a assertiva II, que descreve corretamente a rotação interna.\nc) Incorreta. Exclui a assertiva I, que descreve corretamente o assinclitismo posterior.\nd) Correta. Todas as afirmações são verdadeiras.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Mecanismo de Parto e Fases Clínicas do Parto",
+      "Bacia Obstétrica, Pelvimetria e Estática Fetal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:16.074Z"
+  },
+  {
+    "id": "AJUDA_6801ff39-c509-4e48-8cb8-625b31ec4795",
+    "originalId": "6801ff39-c509-4e48-8cb8-625b31ec4795",
+    "statement": "Paciente, sexo feminino, 35 anos, apresenta quadro súbito de dispneia e dor torácica pleurítica. Encontra-se taquicárdica e hipoxêmica. O escore de Wells indica alta probabilidade para Tromboembolismo Pulmonar (TEP). O exame diagnóstico de escolha é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Arteriografia pulmonar convencional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dosagem de D-dímero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ecocardiograma transtorácico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Angiotomografia computadorizada de artérias pulmonares.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o manejo diagnóstico do Tromboembolismo Pulmonar (TEP). A paciente apresenta alta probabilidade clínica segundo o Escore de Wells, o que direciona o raciocínio clínico diretamente para a necessidade de um exame confirmatório de imagem.\n\nAlternativa a: Incorreta. A arteriografia pulmonar convencional já foi considerada o padrão-ouro histórico para o diagnóstico de TEP por ser o método mais preciso. No entanto, por ser um procedimento invasivo, com maiores riscos de complicações e maior custo, ela foi substituída na prática clínica atual por métodos não invasivos. Hoje, sua indicação é restrita a casos em que os exames de imagem iniciais são inconclusivos ou quando se planeja uma intervenção terapêutica endovascular simultânea.\n\nAlternativa b: Incorreta. O D-dímero é um produto de degradação da fibrina com alto valor preditivo negativo. Isso significa que ele é excelente para excluir TEP em pacientes com probabilidade clínica baixa ou intermediária. Contudo, em pacientes com alta probabilidade clínica (como no caso descrito), o D-dímero não deve ser solicitado, pois mesmo um resultado negativo não seria suficiente para descartar o diagnóstico com segurança, sendo obrigatória a realização de um exame de imagem.\n\nAlternativa c: Incorreta. O ecocardiograma transtorácico é uma ferramenta importante na avaliação de pacientes com instabilidade hemodinâmica, pois pode mostrar sinais indiretos de TEP, como a disfunção do ventrículo direito. Entretanto, ele não é o exame de escolha para o diagnóstico definitivo em pacientes estáveis, pois não visualiza diretamente os trombos na maioria das vezes e possui sensibilidade limitada para esse fim.\n\nAlternativa d: Correta. A angiotomografia computadorizada (Angio-TC) de artérias pulmonares é atualmente o exame de escolha e o método de primeira linha para o diagnóstico de TEP. É um exame amplamente disponível, não invasivo, com alta sensibilidade e especificidade, permitindo a visualização direta de falhas de enchimento que caracterizam os trombos na circulação pulmonar. Em pacientes com alta probabilidade clínica pelo Escore de Wells, a Angio-TC é o próximo passo recomendado para confirmar a doença.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:55:16.074Z"
+  }
+]

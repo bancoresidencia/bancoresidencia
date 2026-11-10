@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_ac844d10-13af-4adc-a903-1a2cd6488ccf",
+    "originalId": "ac844d10-13af-4adc-a903-1a2cd6488ccf",
+    "statement": "Você é chamado ao pronto-socorro para avaliar um homem de 25 anos com queixa de dor abdominal iniciada nas 12 horas anteriores. Inicialmente, ele caracterizou a dor como um desconforto periumbilical, mas agora é aguda e se localiza no quadrante inferior direito. Ele refere elevação da temperatura para 38°C, anorexia e náuseas sem vômitos. O paciente nega diarreia, melena e hematoquezia. Seu histórico médico, histórico cirúrgico, histórico social e histórico familiar são todos normais. Ele não toma nenhum medicamento e não tem alergias. O exame físico é normal, exceto por sensibilidade focal à palpação, mais proeminente no Ponto de McBurney. Em relação ao uso de exames de imagem na apendicite aguda, qual das seguintes opções está correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A ultrassonografia é o exame de imagem mais específico disponível.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Imagens seletivas têm sido utilizadas para reduzir a taxa aceita de apendicectomia negativa para menos de 20%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Imagens confirmatórias não são necessárias em todos os casos para o diagnóstico de apendicite aguda antes do tratamento definitivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Para gestantes, a ressonância nuclear magnética não é recomendada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um homem jovem com apresentação clássica de apendicite aguda: dor periumbilical que migrou para a fossa ilíaca direita (cronologia de Murphy), febre baixa, anorexia e dor localizada no ponto de McBurney. \n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O exame de imagem com maior sensibilidade (95% a 100%) e maior especificidade (95% a 98%) para o diagnóstico de apendicite aguda em adultos é a tomografia computadorizada (TC) de abdome e pelve. A ultrassonografia é um método útil, principalmente em crianças e gestantes, mas apresenta menor sensibilidade e especificidade global por ser operador-dependente e limitada por gases intestinais e obesidade.\n\nAlternativa b: Incorreta. A taxa de apendicectomia negativa em torno de 15% a 20% era o padrão historicamente aceito quando o diagnóstico se baseava exclusivamente na avaliação clínica. O emprego moderno e criterioso dos métodos de imagem objetiva reduzir essa taxa para patamares significativamente menores, tipicamente abaixo de 3% a 5% em homens e abaixo de 10% em mulheres em idade fértil.\n\nAlternativa c: Correta. O diagnóstico de apendicite aguda é primordialmente clínico. Em homens jovens com apresentação clínica e laboratorial típica e de alta probabilidade, a indicação cirúrgica imediata pode ser realizada com segurança sem a obrigatoriedade de exames de imagem confirmatórios, evitando atrasos terapêuticos e custos adicionais.\n\nAlternativa d: Incorreta. Em gestantes com suspeita de apendicite aguda e ultrassonografia inicial não diagnóstica ou inconclusiva, a ressonância magnética (RM) é o exame de escolha subsequente. A RM é amplamente recomendada nessa população por apresentar alta acurácia diagnóstica sem emitir radiação ionizante, poupando o feto de riscos teratogênicos.\n\nGabarito: Alternativa c.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:47.479Z"
+  },
+  {
+    "id": "AJUDA_ac903234-59f8-428c-af59-8a464bd80544",
+    "originalId": "ac903234-59f8-428c-af59-8a464bd80544",
+    "statement": "Homem de 28 anos, dor em FID há 5 dias, febre baixa, anorexia. Ao exame: massa dolorosa palpável em FID, sem sinais de peritonite difusa. TC: plastrão apendicular, sem abscesso definido e sem gás. Paciente está hemodinamicamente estável.\nQual é a conduta mais adequada segundo as recomendações atuais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Laparotomia imediata para apendicectomia e liberação do plastrão",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Laparoscopia imediata para apendicectomia precoce",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Antibioticoterapia + observação clínica, com apendicectomia intervalar após 6–8 semanas",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Antibioticoterapia + drenagem percutânea de loja apendicular",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Alta com retorno ambulatorial em 48h",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso descreve um quadro clássico de apendicite aguda tardia (evolução de 5 dias) que evoluiu com a formação de um plastrão apendicular. O plastrão ocorre quando o omento e alças adjacentes bloqueiam o processo inflamatório, tentando conter a infecção.\n\nAnálise das Alternativas:\n\nAlternativa A (Incorreta): A laparotomia imediata em vigência de plastrão está associada a um alto risco de complicações. Devido ao intenso processo inflamatório e aderências firmes entre alças intestinais, a tentativa de dissecação geralmente resulta em sangramentos excessivos e, principalmente, em lesões iatrogênicas de alças (fístulas enterocutâneas), muitas vezes exigindo ressecções intestinais desnecessárias (como colectomias direitas).\n\nAlternativa B (Incorreta): Embora a laparoscopia seja o padrão-ouro na apendicite fase inicial, no plastrão tardio (acima de 3 a 5 dias), a dificuldade técnica e os riscos de lesão de órgãos adjacentes permanecem elevados, mesmo pela via minimamente invasiva. A conduta cirúrgica imediata não é a primeira escolha para pacientes estáveis com massa palpável.\n\nAlternativa C (Correta): Para pacientes hemodinamicamente estáveis com plastrão apendicular e sem sinais de peritonite generalizada, o tratamento conservador é a conduta de escolha. Ele consiste em antibioticoterapia de amplo espectro, hidratação e repouso intestinal. A apendicectomia intervalar (realizada após 6 a 8 semanas) é recomendada para evitar a recorrência da apendicite e permitir que o processo inflamatório regrida, tornando a cirurgia futura muito mais segura e tecnicamente simples.\n\nAlternativa D (Incorreta): A drenagem percutânea é indicada quando há um abscesso volumoso (geralmente > 3-4 cm) e bem definido na tomografia. A questão especifica que a TC mostra plastrão, mas SEM abscesso definido, logo, não há coleção passível de drenagem.\n\nAlternativa E (Incorreta): O plastrão apendicular é uma complicação grave que exige internação hospitalar para administração de antibióticos intravenosos e monitorização rigorosa. A alta precoce sem tratamento adequado pode levar à sepse ou rotura do plastrão com peritonite generalizada.\n\nResumo Didático:\nApendicite com menos de 3-4 dias: Cirurgia (Apendicectomia).\nApendicite com mais de 5 dias + Plastrão (Estável): Tratamento clínico (Antibiótico) + Apendicectomia tardia.\nApendicite com mais de 5 dias + Abscesso: Drenagem percutânea + Antibiótico + Apendicectomia tardia.\nApendicite + Peritonite difusa/Instabilidade: Cirurgia de urgência independente do tempo.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:47.479Z"
+  },
+  {
+    "id": "AJUDA_ac9049db-c190-46ca-9479-3560822d434e",
+    "originalId": "ac9049db-c190-46ca-9479-3560822d434e",
+    "statement": "Paciente de 25 anos com crise de asma chega à emergência. As condutas que devem ser adotadas são, EXCETO:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliar a gravidade da crise com verificação do pulso paradoxal e medida do pico de fluxo expiratório (PFE) ou do VEF1 além dos sinais vitais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar salbutamol 2 jatos a cada 30 minutos até que o PFE ou VEF1 aumente acima de 40% do valor predito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar 40 a 60mg de metilprednisolona EV se persistir broncoespasmo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar a primeira dose de antibiótico EV se o paciente referir escarro purulento.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Essa questão aborda o manejo inicial da crise de asma no ambiente de emergência. O objetivo é identificar qual conduta não é recomendada pelas diretrizes nacionais e internacionais (como o GINA).\n\nAlternativa (a): Correta. A avaliação inicial de um paciente com crise de asma deve sempre incluir a classificação da gravidade. Isso é feito por meio da avaliação clínica (sinais vitais, uso de musculatura acessória) e, sempre que possível, por medidas objetivas de função pulmonar. O Pico de Fluxo Expiratório (PFE) ou o Volume Expiratório Forçado no primeiro segundo (VEF1) ajudam a quantificar a obstrução. O pulso paradoxal (queda da pressão arterial sistólica maior que 10 a 12 mmHg durante a inspiração) é um sinal clássico de crise grave, indicando grande variação da pressão intratorácica.\n\nAlternativa (b): Correta. O uso de broncodilatadores de curta ação (beta-2-agonistas, como o salbutamol) é o pilar do tratamento da crise. A administração frequente no início do atendimento (a cada 20 ou 30 minutos) visa à reversão rápida da obstrução. O objetivo terapêutico inicial é justamente elevar o PFE ou VEF1 para níveis acima de 40 a 60 por cento do valor predito ou do melhor valor pessoal do paciente, indicando resposta ao tratamento.\n\nAlternativa (c): Correta. Os corticoides sistêmicos são fundamentais para tratar a inflamação das vias aéreas na crise de asma. Eles são indicados em crises moderadas a graves ou quando não há resposta imediata ao broncodilatador. A metilprednisolona por via endovenosa (EV) na dose de 40 a 60 mg é uma opção adequada para pacientes que chegam à emergência com sintomas persistentes ou graves.\n\nAlternativa (d): Incorreta (Gabarito). Esta é a conduta que NÃO deve ser adotada rotineiramente. A maioria das crises de asma é desencadeada por infecções virais ou por exposição a alérgenos, e não por bactérias. É importante ressaltar que a presença de escarro purulento na asma muitas vezes reflete a presença de eosinófilos e descamação celular, e não necessariamente infecção bacteriana. O uso de antibióticos só está indicado se houver evidência clara de infecção bacteriana concomitante, como febre persistente ou infiltrado na radiografia de tórax (pneumonia). Portanto, administrar antibiótico apenas pelo relato de escarro purulento é um erro de conduta.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Asma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:47.479Z"
+  },
+  {
+    "id": "AJUDA_ac95b616-4209-441b-879c-1c4e9328295e",
+    "originalId": "ac95b616-4209-441b-879c-1c4e9328295e",
+    "statement": "Menino de 8 anos, 25kg, está internado em serviço de urgência, pois sofreu fratura de úmero após queda de bicicleta. A chefe do plantão recomendou prescrever jejum com soro de manutenção 100% do Holliday, o proporcional para correr por 12 horas. A criança precisará de cirurgia amanhã pela manhã. Qual volume você deve prescrever para este período?",
+    "options": [
+      {
+        "id": "A",
+        "text": "250 ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "500 ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1600 ml.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "800 ml.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, é necessário aplicar a Regra de Holliday-Segar, que define o volume de hidratação de manutenção para pacientes pediátricos em um período de 24 horas com base no peso corporal.\n\nCalculando o volume para 24 horas (paciente de 25 kg):\n1. Para os primeiros 10 kg: 10 kg x 100 mL/kg = 1.000 mL.\n2. Para os próximos 10 kg (de 11 a 20 kg): 10 kg x 50 mL/kg = 500 mL.\n3. Para o peso que excede 20 kg (no caso, 5 kg excedentes): 5 kg x 20 mL/kg = 100 mL.\nSoma total para 24 horas: 1.000 + 500 + 100 = 1.600 mL.\n\nO comando da questão solicita o volume proporcional para correr por 12 horas. \nCálculo para 12 horas: 1.600 mL dividido por 2 = 800 mL.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O valor de 250 mL não possui correlação com o cálculo de manutenção basal para o peso e o tempo descritos.\n\nAlternativa b) Incorreta. 500 mL é um valor abaixo do necessário para 12 horas de manutenção em uma criança de 25 kg.\n\nAlternativa c) Incorreta. O valor de 1.600 mL representa a manutenção total para 24 horas. O erro aqui seria não atentar para o fato de que a prescrição deve cobrir apenas o período de 12 horas mencionado no enunciado.\n\nAlternativa d) Correta. Este valor corresponde exatamente à metade do volume diário (800 mL), atendendo corretamente à recomendação de hidratação de 100% de Holliday-Segar para o período de 12 horas.\n\nGabarito: Letra d.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Perioperatório",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:47.479Z"
+  },
+  {
+    "id": "AJUDA_ac9ad5b6-2c29-408c-9866-6c2a1e2b3bbc",
+    "originalId": "ac9ad5b6-2c29-408c-9866-6c2a1e2b3bbc",
+    "statement": "Mulher de 25 anos de idade refere apresentar nódulo identificado após palpação da região cervical por meio acaso. A paciente nega demais sintomas, nega comorbidades e uso de medicações. Exame físico: nódulo palpável de 2,0 cm em lobo tireoidiano esquerdo. Exame laboratorial: TSH: 0,01 mUI/L. Ultrassonografia de tireoide: nódulo em lobotireoidiano esquerdo de 2,5 cm de diâmetro TIRADS 4. A conduta deve ser",
+    "options": [
+      {
+        "id": "A",
+        "text": "dosagem de TRAB.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "dosagem de tireoglobulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "dosagem de calcitonina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "cintilografia com captação com iodo 131.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "punção aspirativa por agulha fina do nódulo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Tema da questao: Investigacao e manejo de nodulo tireoidiano com TSH suprimido.\n\nAnalise do caso:\nA paciente apresenta um nodulo de tireoide de 2,5 cm (TIRADS 4) acompanhado de TSH suprimido (0,01 mUI/L), o que caracteriza tireotoxicose/hipertireoidismo. No algoritmo de investigacao de nodulo tireoidiano, a dosagem de TSH e o primeiro passo laboratorial. Quando o TSH encontra-se baixo ou suprimido, a conduta obrigatoria antes de qualquer intervencao invasiva e a realizacao de cintilografia de tireoide. O objetivo e identificar se o nodulo e hiperfuncionante (nodulo \"quente\"), situacao em que o risco de malignidade e inferior a 1%, dispensando a realizacao de puncao aspirativa por agulha fina (PAAF).\n\nAnalise das alternativas:\n\nAlternativa a - Incorreta. O anticorpo antirreceptor de TSH (TRAb) e util no diagnostico de Doenca de Graves. No entanto, diante de um nodulo dominante palpavel e TSH baixo, a suspeita principal e de adenoma toxico (Doenca de Plummer), sendo a cintilografia o exame inicial de escolha para avaliar a funcao do nodulo.\n\nAlternativa b - Incorreta. A tireoglobulina nao e recomendada para o diagnostico ou rastreio de malignidade em nodulos tireoidianos, pois pode estar elevada em condicoes benignas, tireoidites e bocios. Sua utilidade restringe-se ao seguimento pos-operatorio de carcinoma diferenciado da tireoide.\n\nAlternativa c - Incorreta. A calcitonina e marcador tumoral para carcinoma medular de tireoide. Nao e indicada rotineiramente como conduta imediata frente a um nodulo associado a TSH suprimido.\n\nAlternativa d - Correta. A cintilografia (com Iodo-131 ou Tecnecio-99m) e o exame indicado para definir se o nodulo e hipercaptante (\"quente\") ou hipocaptante (\"frio\"). Se for quente, o nodulo e a causa do hipertireoidismo e nao necessita de biopsia; se for frio ou isocaptante, prossegue-se para a PAAF devido aos criterios ultrassonograficos de suspeita.\n\nAlternativa e - Incorreta. Indicar a PAAF antes da cintilografia e um erro frequente. Nodulos autonomos hiperfuncionantes podem apresentar citologia com atipias ou padrao folicular, simulando neoplasias e induzindo a tireoidectomias desnecessarias. A avaliacao funcional por cintilografia deve sempre preceder a puncao quando o TSH esta baixo.\n\nGabarito: Letra d.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Tireoide",
+      "Manejo dos Nódulos de Tireoide"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:47.479Z"
+  },
+  {
+    "id": "AJUDA_aca3d05e-3b7b-419c-b6df-34295f1d847b",
+    "originalId": "aca3d05e-3b7b-419c-b6df-34295f1d847b",
+    "statement": "Paciente de 40 anos, com história de diabetes melitus é admitido no pronto socorro com história de dor abdominal intensa, de início progressivo nas últimas horas, associado a náusea e evacuação com melena em pequena quantidade. Ao exame paciente com redução de ruídos hidro-aéreos, dor importante em abdome a palpação profunda, com abdome levemente distendido, flácido sem sinais de defesa abdominal. Afebril, taquicárdico e facies de sofrimento, vasos sublinguais murchos. Em relação a este caso, pode-se afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A distensão ainda em fase inicial pelo curto espaço de tempo fazem pensar em oclusão intestinal e a presença de melena leva ao diagnóstico mais provável de tumor de reto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Abdome agudo nesta faixa etária mais comum é inflamatório e a ecografia, apesar de menor especificidade que a tomografia já pode fazer o diagnóstico e definir tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Os vasos sublinguais murchos são sinais de falência cardíaca e a reposição liquida deve ser restrita e cuidadosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hipótese mais provável é de abdome agudo isquêmico e deve ser realizada uma angiotomografia para diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Este paciente tem uma HDB e deve ser encaminhado imediatamente a colonoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico: O paciente apresenta um quadro de dor abdominal intensa e desproporcional aos achados do exame físico (abdome flácido, sem sinais de irritação peritoneal), o que é um sinal clássico de isquemia mesentérica aguda. O diabetes mellitus é um fator de risco cardiovascular importante que corrobora essa hipótese. A presença de melena em pequena quantidade sugere sofrimento da mucosa intestinal com descamação e sangramento. Sinais como taquicardia e vasos sublinguais murchos indicam hipovolemia, comum em quadros abdominais graves devido ao sequestro de líquido para o terceiro espaço e desidratação.\n\nAlternativa a: Incorreta. Embora a distensão possa ocorrer na oclusão intestinal, o quadro de dor intensa e súbita, desproporcional ao exame físico, e a presença de diabetes direcionam para uma etiologia vascular (isquêmica). Além disso, o tumor de reto costuma cursar com hematoquezia (sangue vivo), tenesmo ou alteração do hábito intestinal crônico, e não com um quadro de dor aguda lancinante e melena.\n\nAlternativa b: Incorreta. O abdome agudo inflamatório (como apendicite) é comum, mas costuma apresentar sinais de irritação peritoneal (defesa e descompressão dolorosa) à medida que a dor progride. Além disso, a ecografia tem papel muito limitado na avaliação da isquemia mesentérica e de vasos abdominais, sendo a angiotomografia o exame de escolha.\n\nAlternativa c: Incorreta. Vasos sublinguais murchos são sinais clínicos de desidratação ou hipovolemia (baixo volume intravascular). Na falência cardíaca (insuficiência cardíaca), o que se observa é o oposto: sinais de congestão, como turgência jugular (vasos cheios e pulsáteis no pescoço). Em pacientes com hipovolemia e sinais de choque, a reposição volêmica deve ser imediata e não restrita.\n\nAlternativa d: Correta. A principal suspeita clínica diante de uma dor abdominal severa que não condiz com a flacidez do abdome ao exame físico, especialmente em pacientes com fatores de risco vasculares (diabetes), é o abdome agudo isquêmico. A melena é um achado que reforça a hipótese de necrose ou sofrimento da mucosa intestinal. A angiotomografia é, atualmente, o padrão-ouro para o diagnóstico rápido, permitindo avaliar a patência dos vasos mesentéricos e a viabilidade das alças intestinais.\n\nAlternativa e: Incorreta. Embora o paciente apresente melena (que é um sinal de hemorragia digestiva), a prioridade diagnóstica e terapêutica não é a colonoscopia. O quadro clínico é de um abdome agudo com sofrimento visceral. A colonoscopia é um exame de difícil realização na urgência, exige preparo de cólon e não diagnostica a causa principal da dor (isquemia arterial mesentérica). O sangramento aqui é um sintoma secundário à isquemia das alças.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Abdome Agudo Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:47.479Z"
+  },
+  {
+    "id": "AJUDA_acafc82a-91fc-4abe-b0c7-81f256cd3316",
+    "originalId": "acafc82a-91fc-4abe-b0c7-81f256cd3316",
+    "statement": "Homem de 60 anos, com diabetes mellitus tipo 2 há 8 anos, em uso de metformina. Mantém HbA1c em 8,2%, histórico de infarto agudo do miocárdio há 2 anos e proteinúria persistente. Qual a melhor escolha para associação ao tratamento, considerando benefício glicêmico e impacto em desfechos cardiovasculares?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Semaglutida, agonista do receptor de GLP-1 que reduz eventos cardiovasculares maiores e auxilia na perda de peso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Glibenclamida, sulfonilureia com potente efeito hipoglicemiante, mas sem benefício cardiovascular comprovado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sitagliptina, inibidor de DPP-4, que pode ser usado em pacientes com doença cardiovascular estabelecida, embora sem redução de desfechos maiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Insulina glargina, eficaz no controle glicêmico, mas sem evidência de impacto em eventos cardiovasculares ou progressão da nefropatia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão descreve um paciente de 60 anos com Diabetes Mellitus tipo 2 (DM2) e alto risco cardiovascular, evidenciado pelo infarto agudo do miocárdio prévio e pela presença de proteinúria (marcador de doença renal). Com uma HbA1c de 8,2%, o controle glicêmico está inadequado. Segundo as diretrizes atuais da Sociedade Brasileira de Diabetes (SBD) e da American Diabetes Association (ADA), em pacientes com doença cardiovascular aterosclerótica estabelecida, a escolha da terapia adjunta à metformina deve priorizar classes com benefício cardiovascular comprovado, especificamente os agonistas do receptor de GLP-1 (GLP-1 RA) ou os inibidores de SGLT2 (SGLT2i).\n\nAlternativa a: Esta é a alternativa correta. A semaglutida é um agonista do receptor de GLP-1. Esta classe é fortemente recomendada para pacientes com doença cardiovascular estabelecida porque demonstrou, em grandes estudos clínicos, a capacidade de reduzir o risco de eventos cardiovasculares maiores (MACE), como novo infarto, AVC ou morte cardiovascular. Além disso, a semaglutida possui alta potência na redução da HbA1c e auxilia na perda ponderal significativa, além de oferecer benefícios na redução da progressão da proteinúria.\n\nAlternativa b: Incorreta. A glibenclamida é uma sulfonilureia. Apesar de ser eficaz na redução da glicemia e ter baixo custo, ela não oferece proteção cardiovascular ou renal. Pelo contrário, está associada a riscos significativos de hipoglicemia e ganho de peso, sendo uma opção menos favorável para pacientes com perfil de risco cardiovascular elevado quando existem outras alternativas disponíveis.\n\nAlternativa c: Incorreta. A sitagliptina é um inibidor da DPP-4. Embora seja uma droga segura e bem tolerada do ponto de vista cardiovascular (neutralidade demonstrada em estudos como o TECOS), ela não oferece proteção adicional ou redução de eventos maiores como o infarto. Em pacientes que já sofreram um evento cardiovascular, as diretrizes orientam preferir medicamentos que tragam benefício superior à neutralidade.\n\nAlternativa d: Incorreta. A insulina glargina é uma ferramenta potente para o controle glicêmico, especialmente quando a HbA1c está distante da meta. No entanto, em termos de desfechos cardiovasculares, ela é considerada neutra (estudo ORIGIN). Ela não possui o mesmo papel de proteção contra a progressão da nefropatia diabética que os agonistas de GLP-1 ou os inibidores de SGLT2 proporcionam para pacientes com proteinúria.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Doença Renal Crônica (DRC)",
+      "Doença Arterial Coronariana Estável (DAC Estável)",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 24.257553998603505,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:47.479Z"
+  },
+  {
+    "id": "AJUDA_acb45278-a221-4f6e-b61e-d041035df01a",
+    "originalId": "acb45278-a221-4f6e-b61e-d041035df01a",
+    "statement": "Adolescente de 13 anos, sexo masculino, no quinto ano escolar, apresenta dificuldade de interação social e movimentos repetitivos. É muitas vezes inflexível e preza sempre pelas suas rotinas, ficando muito irritado quando precisa alterá-las. Os pais relatam que o paciente andou com dois anos, falou com três e fez tratamento fonoaudiológico até os nove anos. Há quatro meses, passou a apresentar emagrecimento de 3kg, anemia, e fezes ora normais, ora diarreicas com sangue. Nesse caso, o diagnóstico e sua complicação, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "distúrbio de hiperatividade déficit de atenção / doença celíaca",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "desordem do espectro autista / doença de Crohn",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "erro inato do metabolismo / colite ulcerativa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hipotireoidismo / gastroenterite eosinofílica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\n\nO paciente apresenta um conjunto de sinais e sintomas que definem o Transtorno do Espectro Autista (TEA): dificuldade de interação social, movimentos repetitivos (estereotipias), inflexibilidade cognitiva e forte apego a rotinas. Somam-se a isso os atrasos crônicos nos marcos do desenvolvimento, como a marcha aos 2 anos e a fala aos 3 anos, que são características fundamentais do histórico desses pacientes. Recentemente, o surgimento de emagrecimento, anemia e diarreia com sangue aponta para uma doença inflamatória intestinal. A literatura médica descreve uma associação frequente entre pacientes com TEA e o desenvolvimento de patologias gastrointestinais inflamatórias, sendo a Doença de Crohn uma das principais condições que justificam o quadro de sangramento, perda de peso e anemia.\n\nAlternativa a: Incorreta. O Transtorno de Déficit de Atenção e Hiperatividade (TDAH) se caracteriza prioritariamente por desatenção, inquietude e impulsividade, não explicando o isolamento social e os movimentos repetitivos. Já a doença celíaca, embora cause anemia e perda de peso por má absorção, não costuma se apresentar com diarreia francamente sanguinolenta.\n\nAlternativa b: Correta. O diagnóstico de Desordem do Espectro Autista (ou Transtorno do Espectro Autista) preenche todos os requisitos do desenvolvimento e comportamento citados no enunciado. A Doença de Crohn é uma doença inflamatória intestinal que explica perfeitamente o emagrecimento, a anemia ferropriva e a presença de sangue nas fezes.\n\nAlternativa c: Incorreta. Erros inatos do metabolismo geralmente apresentam sintomas sistêmicos mais graves, crises metabólicas agudas ou atrasos globais muito mais severos desde a primeira infância. Embora a colite ulcerativa pudesse explicar o quadro intestinal, o TEA é o diagnóstico correto para a parte neurocomportamental, e não o erro inato do metabolismo.\n\nAlternativa d: Incorreta. O hipotireoidismo pode causar letargia e atraso de crescimento, mas não mimetiza o perfil de rituais, estereotipias e prejuízo social do autismo. A gastroenterite eosinofílica é uma condição rara, geralmente associada a quadros alérgicos graves, e menos provável que a Doença de Crohn diante da gravidade do emagrecimento e do sangramento crônico relatados.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença Inflamatória Intestinal",
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:47.479Z"
+  },
+  {
+    "id": "AJUDA_acb61a0e-df2e-4e37-826b-0e6ba41cb91c",
+    "originalId": "acb61a0e-df2e-4e37-826b-0e6ba41cb91c",
+    "statement": "Escolar de 9 anos apresenta história de diarreia há um ano, com fezes amolecidas com sangue e muco, acompanhada de tenesmo. Refere também dor abdominal difusa, irritabilidade e astenia. Nega lesões orais e em região perianal. Ao exame físico, a criança apresenta déficit pondero estatural, está hipocorada +++/4 e com abdômen levemente distendido, sem visceromegalias ou massas. O hemograma evidencia anemia hipocrômica microcítica; PCR pouco elevada e dosagem de proteína sérica diminuída. Pesquisas de parasitas e agentes infecciosos foram negativas. No caso dessa criança, espera-se que a colonoscopia evidencie:",
+    "options": [
+      {
+        "id": "A",
+        "text": "lesões transmurais e granulomas no delgado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "inflamação contínua limitada à mucosa do reto e cólon",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "predominância de dor abdominal no quadrante superior direito",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "envolvimento do trato gastrointestinal desde a boca até o ânus",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito — diarreia crônica (um ano de evolução) com sangue, muco e tenesmo — é altamente sugestivo de Doença Inflamatória Intestinal (DII), especificamente a Retocolite Ulcerativa (RCU). O tenesmo indica inflamação retal, e a ausência de lesões orais ou perianais afasta as apresentações mais comuns da Doença de Crohn (DC). O déficit pôndero-estatural e a anemia hipocrômica microcítica refletem o caráter crônico e a gravidade da inflamação com perda sanguínea persistente.\n\nAlternativa (a) Incorreta: Lesões transmurais (que atravessam todas as camadas da parede intestinal) e a presença de granulomas não caseificantes são características histopatológicas da Doença de Crohn. Além disso, o acometimento do intestino delgado isolado é comum na DC, mas raro na RCU.\n\nAlternativa (b) Correta: Esta alternativa descreve o padrão clássico da Retocolite Ulcerativa. Na RCU, a inflamação é restrita à mucosa (e às vezes submucosa), sem atingir a serosa. O envolvimento é obrigatoriamente contínuo, iniciando-se sempre no reto e progredindo de forma ascendente pelo cólon, o que justifica clinicamente o tenesmo e a presença de muco e sangue nas fezes.\n\nAlternativa (c) Incorreta: A dor abdominal na RCU é geralmente difusa ou localizada nos quadrantes inferiores (especialmente o esquerdo). A dor no quadrante superior direito não é um achado típico das doenças inflamatórias intestinais, a menos que houvesse uma complicação hepatobiliar associada, como a Colangite Esclerosante Primária, o que não é sugerido pelo caso.\n\nAlternativa (d) Incorreta: O envolvimento descontínuo (\"lesões em salto\") de qualquer parte do trato gastrointestinal, da boca ao ânus, é a característica definidora da Doença de Crohn. Como o paciente nega lesões orais e perianais e apresenta sintomas puramente colônicos/retais (sangue e tenesmo), o diagnóstico de RCU é mais provável.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Doença Inflamatória Intestinal"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:47.479Z"
+  },
+  {
+    "id": "AJUDA_acb868e4-1545-44db-ba26-8687b667ae9a",
+    "originalId": "acb868e4-1545-44db-ba26-8687b667ae9a",
+    "statement": "É indicação de laparotomia exploradora nos ferimentos por arma branca em abdome, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Instabilidade hemodinâmica/hipotensão refratária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hematoma volumoso em flancos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Peritonite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Evisceração.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para responder a essa questão, é necessário conhecer os critérios clássicos de indicação de laparotomia imediata em pacientes vítimas de ferimentos por arma branca (FAB) no abdome. O manejo atual preconiza que nem todo ferimento requer cirurgia, mas alguns achados tornam a exploração obrigatória.\n\nAlternativa (a) Instabilidade hemodinâmica/hipotensão refratária: Esta é uma indicação absoluta de laparotomia. Se o paciente apresenta sinais de choque e não responde à ressuscitação inicial, assume-se que há uma hemorragia interna grave decorrente do ferimento, necessitando de controle cirúrgico imediato da fonte do sangramento.\n\nAlternativa (b) Hematoma volumoso em flancos: Esta é a alternativa CORRETA, pois representa a exceção. A presença de um hematoma em flancos, de forma isolada e em um paciente estável, não é indicação mandatória de laparotomia imediata. Nesses casos, se o paciente não tiver outros sinais de alerta, a conduta indicada é a realização de uma tomografia computadorizada (TC) de abdome e pelve para avaliar o espaço retroperitoneal e a gravidade de possíveis lesões em órgãos como rins ou grandes vasos, podendo-se optar pelo tratamento conservador em situações específicas.\n\nAlternativa (c) Peritonite: A presença de sinais de irritação peritoneal ao exame físico (como dor à descompressão súbita, defesa abdominal ou rigidez) indica que houve violação da cavidade com vazamento de conteúdo de vísceras ocas ou sangramento que irrita o peritônio. É uma indicação formal e indiscutível de cirurgia.\n\nAlternativa (d) Evisceração: A protrusão de órgãos ou tecidos intra-abdominais (como omento ou alças intestinais) através da ferida confirma que a parede abdominal foi totalmente transfixada. A evisceração está associada a uma alta incidência de lesões viscerais internas, sendo, portanto, uma indicação clássica de laparotomia exploradora na maioria dos protocolos de trauma.\n\nEm resumo, as indicações imediatas de laparotomia no ferimento por arma branca são: instabilidade hemodinâmica, sinais de peritonite e evisceração. O hematoma isolado exige investigação complementar, mas não cirurgia imediata mandatória.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:31:47.479Z"
+  }
+]

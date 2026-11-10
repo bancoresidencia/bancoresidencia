@@ -1,0 +1,1242 @@
+{
+  "focusSlug": "miomas-uterinos",
+  "specialty": "Ginecologia",
+  "theme": "Miomas e Patologias Anexiais",
+  "focus": "Miomas Uterinos",
+  "totalQuestions": 488,
+  "timeframeRange": "2017-2026",
+  "version": 1,
+  "donutSlices": [
+    {
+      "id": 1,
+      "name": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+      "shortName": "Cirurgia: Miomectomi...",
+      "percentage": 40.0,
+      "questionCount": 195,
+      "priority": "Crítica",
+      "color": "#3B82F6",
+      "trend": "alta",
+      "trendLabel": "🔥 Em Alta (2024-2026)",
+      "takeaway": "Foco de alta incidência nas provas da residência médica.",
+      "auditQuestionIds": [
+        "d0296e50-38f6-4df8-888c-285a13064804",
+        "ebed3bd8-a244-4a40-8b32-4caceba41fe7",
+        "3d998cc9-5ddd-49d0-a502-dbffe69f8bab",
+        "e4c30978-dc39-4a97-b036-b9d1f134cacc",
+        "b2853852-ec24-49be-9589-bf32321137e2",
+        "80be7dd7-38b3-4a79-ae72-c1db608d1695",
+        "e16d42ff-0901-469d-81ee-d63039be47d8",
+        "99038f63-c96a-4146-add4-2e4832a55707",
+        "d19e6313-8865-4503-adf9-0f6b36d23f50",
+        "b9c8b36a-bcd8-445d-8692-a525a5b54c99",
+        "f9a09547-2c9b-4408-b800-e24d44eb8c3a",
+        "cdcab494-4265-49cd-9d2f-86e776b56468",
+        "a3c19d08-0700-473a-a444-ca1fdf8a20eb",
+        "cd13c321-de85-4df4-8045-ffd1fa25fe52",
+        "27e0a091-d9e4-4445-be62-8142aa14c014",
+        "ad3036cd-ddd6-4ae5-8f87-039467360e03",
+        "5015ef7b-4682-4bc5-bb1e-03994ddee828",
+        "9decca34-fbbe-4b8c-b1ff-988804480784",
+        "2e996639-d6c3-401b-80a0-05b06bed9fca",
+        "f5888d1f-7a7d-4ca7-9877-3859831d1e75",
+        "6e637da5-50b6-46ac-8694-f009a1c3ec41",
+        "a7d956ba-71de-4ecb-9f59-cefe0e4a3883",
+        "b98dc6c3-b5b9-4af6-9838-0ec807e3f5f7",
+        "121aeee8-59d4-4a7a-8db1-b9e35deff541",
+        "5ef89d90-889c-4b11-a3dc-77cdc19030c8",
+        "6be31427-16b1-431e-b67b-c0ff8f62e83d",
+        "636396f1-69f5-4338-bd7d-cea6d2ac9262",
+        "d8663c0a-d925-4e9c-b9c1-304d1fcca7cd",
+        "3ec7e8be-43d0-4a22-9dd7-18b0fca87c0c",
+        "a54c098c-5b5b-4a3f-a6f4-6c6d38fac17f",
+        "12b2e5f6-9f6a-4e33-bd90-222f36b5559a",
+        "f1b59d1b-702f-4142-a1d6-c6c4c24f3a3e",
+        "0a948693-2243-44f9-9b25-4ea13b41c01b",
+        "c9ed02fb-dd7a-4a2b-b5f1-c8c1e2e7d92f",
+        "f5c2f1ac-3a77-4bea-9dcb-14ac334f02ab",
+        "38d1f56f-5764-4ec9-887a-737d002601d2",
+        "a78154a2-967d-4691-a9c0-8db4a35e103f",
+        "c72b93e0-727f-42f7-89d2-df728fb9def3",
+        "bf8b1085-be34-435e-ac07-297da628650d",
+        "8d82e078-e667-484c-bcea-f39850de6478",
+        "e6af7032-18a3-4434-b04c-2fb8fae32838",
+        "6cf51b86-ab5a-431b-a941-ee48b1b4cadd",
+        "f575d9cb-df77-4bf3-8fae-4f4875c4c4ab",
+        "b1f1f710-635d-4568-97c5-0d000864aafa",
+        "ef89ddc3-967e-48e0-a214-1d4230209362",
+        "0cc936c1-dc30-4134-a0b4-2aeff92c542a",
+        "4ce0e8bc-13eb-41c8-b8b9-4ae9a1afa961",
+        "7103ff0f-86e3-4fce-8d16-fc4ff5011028",
+        "546c876a-4bd3-4574-88aa-60e1aa8672a1",
+        "33d101d4-94fd-4953-b03c-dc2b1cc2219b",
+        "4e36daab-fad5-445d-992b-0bdac58ba691",
+        "7487d642-01e4-431a-8e16-4e9e36e6d085",
+        "a47a4118-3b45-4d41-88a0-d606fe3b88c3",
+        "f66c826a-cf72-40f3-98d4-df3b2b28800e",
+        "ea83a7e1-baae-4916-a867-b9c9bec8a86d",
+        "11c9f3e4-a409-4ce2-b7e9-cbbfafd6f4f7",
+        "20edebd5-eaa5-49c2-b528-2462034b1c69",
+        "64077726-f934-4294-b5d1-bd993823cfea",
+        "e0f3635c-78be-4a69-82eb-81357ad06294",
+        "50f0d30b-70df-404b-9001-d55185b4e8bb",
+        "223dc32f-beec-4543-8292-cbdf9b30661e",
+        "0cc5d960-97b3-49be-8ea7-4556bc36fcaa",
+        "79808304-9a09-429e-9a1a-0f6f433a2c42",
+        "64166970-4835-4c5b-a542-08db0568f101",
+        "1399aa13-1225-4607-9845-f68c86ed137d",
+        "61ea57d2-015a-46e3-b1b9-b167cbcab825",
+        "f53bc99b-6874-441f-bc1a-64d40dab22ef",
+        "e81e2148-b9f2-4a60-a475-9c69690cbb57",
+        "8db2079b-b37b-4e2d-94fe-9784e0d43a65",
+        "11534ffc-2255-49c7-94ea-3cabc90d890c",
+        "02a01034-0fb7-405a-9462-cbf1c064a5f0",
+        "5eefed53-c78a-442b-b99b-28d9823fa928",
+        "f356bb56-e6d4-48f3-a90f-e94de6d30f24",
+        "a5e07af1-135f-4886-b1f7-0e1f4100dcb5",
+        "f7e595a4-c625-4618-b95e-53dcbeda5ff8",
+        "ba6f2f8c-87b3-45d3-b409-df83f124a062",
+        "ac326994-995f-4274-b5cf-f0b85c4fb18d",
+        "3d4612de-d21d-4607-bb16-15406f1d5589",
+        "851646e5-afcd-4d0f-a073-7596e7b88eef",
+        "6d22dc79-3859-40b2-88fd-8409381f164f",
+        "aecebeef-11af-446d-af7d-284f93c52065",
+        "0f289a14-4850-44c8-a4ec-8c2b2a46efe3",
+        "8487684b-4797-4ad0-89f2-c253fece1e0d",
+        "1f27f2a7-c7df-44f6-aff8-255befc25c0e",
+        "395ec8d9-eb8a-48fe-bff5-4dc1b7439762",
+        "55781612-78fc-4934-a7d6-a6ea93c432c6",
+        "80f048d0-9980-453b-8d43-ea88ae0ac02c",
+        "a1174fb0-1824-42c8-b7a5-091948e9eed4",
+        "93c4a4be-faf5-4850-8a6f-c63943869aa6",
+        "029238a2-043f-4daa-aaa7-ebf78a4e23ed",
+        "32957d90-46f9-47e6-ad63-6538e9b0f74b",
+        "f1c7deee-d91d-4b4d-9379-384c223c1abe",
+        "8152455a-131b-4a39-b247-e50ba7fb8681",
+        "440912cc-7144-40b5-993f-57a636b5ca05",
+        "41fbf70b-75eb-4113-b003-b1e51a987748",
+        "16dad9f6-133a-4d4f-8f49-d78c8114bda4",
+        "926b534c-4f6a-4bfd-8df3-4d26d86a9169",
+        "e164a4c1-3e27-4cc1-91f1-826b6d673e7f",
+        "7476c2b4-340e-467c-90aa-065533a1bb9c",
+        "a0885f9f-6c25-4e63-bc8c-32adce55e721",
+        "253e4a5e-f85c-4b91-8dde-b26b3cf58153",
+        "eadc1fcb-1372-4e6e-b12e-4dc6ec70b8fb",
+        "6572cb02-9ccc-4495-bb37-8c7eec2527ee",
+        "9638279f-9438-40e4-a8d2-c5768a6a97db",
+        "987ad271-5023-406b-8750-bf734ccd60bf",
+        "f2e6ca23-cd27-4cf9-b78f-44c799b4ad37",
+        "0301b302-0def-4a6c-b920-bde8b64feb49",
+        "52658116-795b-4225-9f5a-2d6938f7aa15",
+        "9ff32172-e35d-4fbb-adee-2222e8cfa660",
+        "8efab52d-5244-4983-8fe0-85fc8eff1cfe",
+        "d0e536bb-e80d-4a71-adc2-05e13cd127cd",
+        "411c0494-a78b-462c-957a-e1554c79c7d2",
+        "c6e988c1-bfff-47f1-ade9-4a186c244886",
+        "cc9c1585-9324-4988-9089-158b725d9d44",
+        "382de27c-b0bd-43f6-b95e-ed0e3895a63e",
+        "552fc3b4-6b52-4e74-82a6-b9a176614d6a",
+        "f28c15bd-0aab-4af3-a813-9d9f2e6c7e0a",
+        "11059772-ef7f-4100-a8d4-0f7bcd516a2e",
+        "6a008bf2-824e-41e5-830e-525d24310c02",
+        "2bbb2f35-4780-442b-8a09-c7b4e42b8ad4",
+        "45e8141e-08af-4ef0-a8eb-9f9535229757",
+        "561d9c97-340c-4804-b262-955172bd7e93",
+        "a4d69dc3-2a5a-4807-81ee-58e5ab4a8bfd",
+        "5b899389-29ba-42c9-8a87-de29027b47b5",
+        "1acbc210-c1a0-4a41-a11b-67697b49811e",
+        "d339ab43-2ae9-4abd-b268-464e28713c02",
+        "a78c9fff-5bba-4bcb-9407-1856960a0bef",
+        "81bc52cc-ef3d-4fd9-a693-063f66b75d3f",
+        "67458f05-cbc3-4ebf-9234-0531c54208cb",
+        "6b71ecac-9185-42e5-a954-debb63c0bacd",
+        "36473946-2d15-4831-9f59-2f69fcf0bbec",
+        "7e2e942b-3ce5-49c8-95df-682b6a1d8e24",
+        "2c0f7468-6665-4c30-b080-3a36e8413376",
+        "f3228341-b9e3-4dc4-95c6-722f2da5e01f",
+        "11412b45-9d3a-4652-a02a-02ab30a04704",
+        "b728303d-e792-4b75-ade0-f03188c8de0a",
+        "994a8340-d89b-4188-b44a-4e5c3d9f5fde",
+        "d759a10f-7f28-404e-b1ed-4bb8df93a536",
+        "9333827d-de4b-4500-9b95-82077e0755d0",
+        "74fa39c2-e94e-4bab-a0e6-324856ecec60",
+        "1538d4bd-9425-4767-a2be-daf3c2321c53",
+        "e2eb2a7f-c243-4c9c-8004-2b72326a45b1",
+        "b9d37539-4ed4-4915-b930-dfc0f7f30901",
+        "7b61aaf1-a67d-4a3d-a942-d3147b542055",
+        "cee26b6e-ca4e-41cd-b3f9-4c31fc152393",
+        "e4c0f9e9-8a2f-4301-8da8-6fcf2386834e",
+        "267751f9-a5e8-4d72-ab13-d400a7bf8bab",
+        "2cc37b3c-99e9-47da-a83c-6613825c05a9",
+        "84459b22-08e3-44a9-943f-acb6be18417b",
+        "0afd70bc-45cd-45c9-82ce-85db64e5d8b8",
+        "1d43792f-4026-40e4-a461-faa888897a86",
+        "50256398-c3eb-4cab-95b2-e56e647c0ad0",
+        "98eacfa1-4f2e-46ef-88bf-5b561a708baa",
+        "460ec5f9-d589-4abc-8d1f-3aaacf961c86",
+        "5883e112-d8b7-47e3-9700-754da061e46d",
+        "d5aa5b30-a24f-406d-b41d-c876c8bff7ed",
+        "cb96f8c0-4a35-49e3-b236-55d203aa4aa1",
+        "16935ec5-0d28-4659-baec-3ab97a5fd3c6",
+        "c6487dcc-0175-4f14-854f-b7672dcec886",
+        "16df93ee-413e-45ba-820c-3486216434b9",
+        "fdfddad7-f62e-4a00-a0fd-f034d0b9fb7d",
+        "849cf581-d4a5-4538-9799-a4b5d25d927a",
+        "5c1ffae6-c562-40ff-a4da-f0309db87caa",
+        "a83218af-22ba-4064-9060-de3d58b3c2c1",
+        "57926509-cd5d-44a4-8069-618c209de184",
+        "561364e7-78e6-40bb-87f3-c6fd2fa23d5c",
+        "4bd15400-4fcd-4f4f-98cd-a45f86c34a31",
+        "2c112081-fb32-40e8-b879-590a44be9ba5",
+        "498d431f-0fd5-496b-8d6d-f2a055456815",
+        "475d4824-5b68-4a30-86f9-9df8bfd04d76",
+        "19ed8c95-4215-45d3-8462-1dba3e4dd244",
+        "1a7fa848-1b3e-4f3a-8dd0-2d43fa7c960c",
+        "acac0ec7-d975-4760-8ce1-07bcb48336b2",
+        "d0296e50-38f6-4df8-888c-285a13064804",
+        "b9c8b36a-bcd8-445d-8692-a525a5b54c99",
+        "a3c19d08-0700-473a-a444-ca1fdf8a20eb",
+        "121aeee8-59d4-4a7a-8db1-b9e35deff541",
+        "636396f1-69f5-4338-bd7d-cea6d2ac9262",
+        "c72b93e0-727f-42f7-89d2-df728fb9def3",
+        "6cf51b86-ab5a-431b-a941-ee48b1b4cadd",
+        "4e36daab-fad5-445d-992b-0bdac58ba691",
+        "a47a4118-3b45-4d41-88a0-d606fe3b88c3",
+        "20edebd5-eaa5-49c2-b528-2462034b1c69",
+        "79808304-9a09-429e-9a1a-0f6f433a2c42",
+        "8152455a-131b-4a39-b247-e50ba7fb8681",
+        "253e4a5e-f85c-4b91-8dde-b26b3cf58153",
+        "c6e988c1-bfff-47f1-ade9-4a186c244886",
+        "cc9c1585-9324-4988-9089-158b725d9d44",
+        "f28c15bd-0aab-4af3-a813-9d9f2e6c7e0a",
+        "36473946-2d15-4831-9f59-2f69fcf0bbec",
+        "f3228341-b9e3-4dc4-95c6-722f2da5e01f",
+        "b728303d-e792-4b75-ade0-f03188c8de0a",
+        "d5aa5b30-a24f-406d-b41d-c876c8bff7ed",
+        "16df93ee-413e-45ba-820c-3486216434b9",
+        "849cf581-d4a5-4538-9799-a4b5d25d927a"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Fatores de Risco & Profilaxia na Cesárea",
+      "shortName": "Fatores de Risco & P...",
+      "percentage": 37.9,
+      "questionCount": 185,
+      "priority": "Crítica",
+      "color": "#10B981",
+      "trend": "estavel",
+      "trendLabel": "🏛️ Clássico Estável",
+      "takeaway": "Foco de alta incidência nas provas da residência médica.",
+      "auditQuestionIds": [
+        "f8174f26-a9f6-48c4-8e68-0309760abd49",
+        "7fe129c2-b347-449d-8502-a4508219874b",
+        "6f7e3a51-cfa7-42fc-ab3e-c9c4145d7ae3",
+        "e3229449-435d-4d3a-a65a-0cfee55505f4",
+        "678dc145-a07a-478f-9c1f-dd921dc3d1f3",
+        "1398f5c1-5116-4751-9d8e-31c8d3a486a8",
+        "d049b35f-2cd3-4037-beac-5c302f0e0e51",
+        "935b10c4-63ff-480d-81a7-25f3fd940a80",
+        "e5a31cdc-5c40-4322-bedd-02d18d0522ba",
+        "fa37b5c0-7e63-4efc-9cc9-97555816bd98",
+        "42dafda4-d35f-4d6a-b83e-c0aeb508722f",
+        "69fc4d64-4afc-42d7-ace7-e2a1139dab0b",
+        "2c37b752-bfdb-439e-b307-7dcb9fb49405",
+        "492abc0c-6f2a-4512-9666-9d22d9fc2525",
+        "dc3cf0d9-f068-4ac0-bfc6-07fe227e1336",
+        "fff6e27d-3cb7-498f-b16c-0cadcdcdbcf3",
+        "79f9ad21-4148-43d1-a0f3-46d5c51144d3",
+        "65f1e3cd-dfe4-42b1-ad35-b35bfcf585db",
+        "06f8a825-0cc8-408a-8087-6d93a1e9a9cd",
+        "eb0f138e-3dad-431e-abd7-63b87cb55a45",
+        "b9e96ca4-b085-44fd-a673-84661f109f8f",
+        "e9582d6d-f739-43aa-86dc-ba17f1403b9e",
+        "10b81f8f-97c0-445f-bdfd-315cfdbc4de4",
+        "0e0a3a1f-4b0b-4ad8-97d8-a9ced9594697",
+        "12402106-15ca-4e2b-97ea-9f3b20dfd86b",
+        "b98c5be2-bbbf-4e6e-bf54-518e132b2655",
+        "fa20013f-377a-4119-a6b1-f5c3e19aaa22",
+        "d822a38c-37c9-4363-a70a-35c4ed145370",
+        "33a3aa50-a89b-4d77-8270-0341abdcce1a",
+        "cc17735d-045e-4476-a2c3-8de7c0e3f96c",
+        "d9fdf4a5-adad-47b1-a59a-99c326867574",
+        "4d3ca5ec-77fd-4c5f-a721-04f44b33841e",
+        "00b12371-a91c-447a-88fb-5976cad0b13a",
+        "87a7d648-1d07-4e20-8d1b-5f63999ac035",
+        "56d06f25-de01-4b57-ad5e-a058a566dc76",
+        "5a8014e9-708d-4567-a19d-1959d8b3ab32",
+        "3ba0a364-412b-4592-8a3b-f08b20cbe120",
+        "e9e56c4e-2607-4472-aba8-613589f0ef3a",
+        "2f015373-1cd6-46d9-8e14-9e66e7f8ab95",
+        "4c0abce9-53bb-44fa-9b24-b539859feff6",
+        "a35eae6b-1a4c-43eb-b488-2b0a645e6d8a",
+        "57c64c18-35ff-44f8-b36c-136575677ed1",
+        "cd6262a2-485b-44a9-b403-e44684139ade",
+        "eb46ed38-8b54-48d0-bb84-4f9e8c4644a8",
+        "4f968cca-53ed-424e-b787-13a982c33f70",
+        "fa2f4286-bc32-44dd-995a-a1cc45c8950c",
+        "0f3149a9-c357-455e-bb46-9ccfa325f3a4",
+        "6375a3e3-20c8-43c5-b681-759f51d4a58c",
+        "fb17501f-2cfd-44a8-9f1f-fa51e88f7fcf",
+        "64a2ff0d-52e6-46de-89f0-f04b1b3172c7",
+        "972817ca-d080-4388-8544-6c93b865f694",
+        "5d4b6ad4-5e56-4262-b096-4c2e433f1b11",
+        "6c47d3a7-1d77-487e-9625-f55a3a5857bf",
+        "70752583-befb-4348-aff8-65544e92348f",
+        "a7f1c4cb-415c-4660-a34c-4b973c62eb93",
+        "f6897edc-4bce-4160-9148-172498f7e6ef",
+        "a58f3dc5-59fa-45e4-b0f1-7f5f6410c931",
+        "651fbda8-ecc2-4ba7-9fd3-7bc669407fdb",
+        "08aa59ce-0845-4db9-aed1-02bf59019a7a",
+        "7c022aa7-614b-430f-a0cd-dd0017383227",
+        "d376e507-a755-4969-95d6-1a41321b0b03",
+        "8604aa35-2b2e-4d6c-a7a8-6310c4547eb0",
+        "2fed3d20-f36f-46c2-868d-6c635ed22bae",
+        "85fde778-0c88-4d2c-bc5a-46cb5f05e936",
+        "ffe2c2b6-1f9b-4d92-8001-2ffffe26d3e0",
+        "9ee42651-7dd0-4022-ae03-0f5b52d7bb02",
+        "02ee5918-e16a-4378-998f-f8e50116c08d",
+        "4a75ddbc-5f1c-4e38-a2e0-3e8f8504df36",
+        "84357b03-bba7-4c19-b5d5-7cc3ec3b5084",
+        "cd7f0332-5775-4245-af29-1bf45f78e3de",
+        "bc49b61c-4f81-4260-b17a-b7cfbcd33130",
+        "809d585e-14b0-4f35-914f-2b73c28f6b64",
+        "7c619c66-ab31-43ba-848a-51b4e136c130",
+        "a56b579d-3633-4b5f-9867-8481086dfe9c",
+        "214ce43b-706b-487f-9f55-c9ea9c2da5a5",
+        "df04f314-e15e-4100-8f49-ad242a3b22c0",
+        "af06e020-80f6-4900-a76b-dad5f7095539",
+        "599db4a1-2100-4790-bfe2-81978fc8775c",
+        "d5eb11d8-0872-4dc8-8d83-668de09f55a3",
+        "88bfe293-a43c-4240-be9a-86106e3ac9b2",
+        "4dff6595-28dc-4417-8b22-71da0f6888fb",
+        "e7f0e142-d6f0-4087-9cde-8c04a248ca9f",
+        "a3b65c61-9b4e-497a-8734-99969afe6096",
+        "89cc6741-4f4d-4276-a6a8-0698dce7a0bc",
+        "18add9ea-7632-40f3-b912-c53c8a9ca437",
+        "c561e070-906a-47f6-a862-794307cadf45",
+        "5f0dfdeb-b392-4c04-ab88-ad87218cf385",
+        "dd5360a9-3128-4e47-9f2f-e2533ce42f02",
+        "8d0ad504-71c0-404d-b27d-48e587348783",
+        "a1dd59f7-f5e2-4978-87bb-52cecf159a7a",
+        "5f808bbb-0f22-4b10-a6d2-60a18f9c2de6",
+        "95415027-be70-4ad6-8b50-2028aab2f875",
+        "a11cb656-36ad-4286-84ab-d2b7f05be599",
+        "90d77c4b-aa59-4faa-848c-87e0d94e2945",
+        "cdcd3cda-7e13-454e-ae7e-4d7b706fbc9e",
+        "f8d5af3d-3719-4d14-96b6-a11f9977a6ce",
+        "139a1b6b-414c-4c91-bf32-1966c9440137",
+        "2581099a-5737-4119-bf99-71be544e4367",
+        "6b949206-dcd7-4f55-aade-0b7535030bb6",
+        "d9e68407-85c3-470e-be1b-f5e8413f2445",
+        "8fb674f7-ef4e-419b-acab-27b666a41a0f",
+        "1df94766-f2c8-4741-84f0-8de402becd50",
+        "3d03e513-abdc-428e-b5a8-79f4e3e0c460",
+        "6dd43206-962a-4dca-b1d5-cbf838c35f67",
+        "62a11942-bb5f-4ae7-b278-1fa34ea2dee5",
+        "90549040-e550-4f4f-a975-8165baab6ffc",
+        "0433d031-ddc7-4e3f-b577-ebdbd4ce86bc",
+        "53dbb836-98d2-4310-85fd-ae7d4ef3dc28",
+        "4ae26bd6-ecae-4f2c-9f95-943c39e437ac",
+        "1cb550c0-fceb-45be-9adc-16928a62e20e",
+        "e1e29090-ab28-490e-a7ef-52e8af0226a3",
+        "f0041ceb-ef86-4cc8-a95b-b689afccc431",
+        "cb14ecab-c0b3-4add-838b-06895ad1acf2",
+        "d003d9ec-3647-452f-9098-79e5f0abc8d5",
+        "8a813855-a778-48cf-9cc5-ec5c5805a2d2",
+        "6d9a4b00-58c9-4402-8919-412a2b854ac5",
+        "e94e75b5-cc94-49b7-a0da-294054a4e17f",
+        "b63d5628-e1b1-4299-b803-6011a669209e",
+        "fb7b5468-46ec-4f4d-b476-eea6a94d8fbb",
+        "7a19b986-3175-47d0-9dce-93d1db2b6ad6",
+        "9ddc15d6-2e27-47c7-a33e-e6d1a71cbc6f",
+        "528e6408-3910-4840-9ec1-e6494e93ec45",
+        "7cbe7852-4eee-4f82-b5a2-50a59ac760c8",
+        "50a5dd4a-3f5f-4efd-9c1a-caf2e30d92e9",
+        "35696a7a-d726-4303-8b08-52d8b3cb3996",
+        "9f0ab05d-df2e-4056-b115-ad973adaf4a5",
+        "4e613513-a85d-4bad-b8f4-aafa6e64c878",
+        "eb47f970-1502-4705-a187-42df74cfa0a0",
+        "eb87a22a-b492-4e43-9699-76e41d8bef79",
+        "f1a41386-a848-4d1c-8e5f-a310ee1b4498",
+        "cf26cbd2-713f-44f3-8da7-10693b533c2f",
+        "9f2c0d07-dbb5-4174-ac23-ced00fd20060",
+        "7a0ec62f-5354-4535-bf7f-b0114d74e621",
+        "3154158e-8644-40c9-92a9-ae3b91b89031",
+        "94328cad-6acc-4464-a014-74d1462db249",
+        "0ac4683d-b97c-4f56-9d8d-3b6af31fb606",
+        "17e268da-dd93-4294-b1c3-df74f158ec91",
+        "4ab9c75c-79ee-471f-a41c-c95cdd1bce4b",
+        "02c95169-fce7-4733-89fd-bba6965b25b7",
+        "9da94777-7236-453d-8f76-c0b4e33b5fc1",
+        "2237ef9f-1f8b-4ec7-b4e8-50deb5c3cb41",
+        "3707f4bf-a29e-49b6-9bf1-6aed4b7e7b45",
+        "59cb9e67-849b-4563-99ff-31ac734c93e7",
+        "1f775c02-0d5e-4839-a73f-ca061d02690e",
+        "c82faa6f-382d-456e-bfff-0a9402b7eee2",
+        "b8dd0851-a744-4de9-8562-34fb53cc690a",
+        "8d3ac1f2-9b6b-4102-96ac-8ab52dede101",
+        "71a2bc9f-23f6-451c-87f8-2a0a50d552e5",
+        "63af43cb-03a9-44ab-bc4f-e5e39f3045c2",
+        "094f6e71-8edf-4177-a653-8283dfef6b8b",
+        "73ed1e08-1122-4fe5-9678-eb3e194deda3",
+        "d1942b8e-f7b1-402c-b9a1-b20ea06e574c",
+        "721578bc-5799-4ce1-a56b-ab695a77e499",
+        "18e0c46a-bd94-488e-b982-e2a1295f2faf",
+        "ef5b12c9-9961-4fa6-b46b-5dc8603ef4dc",
+        "58ceb07c-e566-4ec8-8e4f-ea290f170714",
+        "03eabc97-31e2-433a-896e-5aa204d89225",
+        "20bce743-e47d-47d7-9352-325a575f9ac4",
+        "83d9096f-39be-43ef-89de-4ccba020d3bd",
+        "c94dfa70-3b2d-4610-bbdc-5c5f9de9bcae",
+        "360961e4-c907-409b-8caf-4111f01ff4d3",
+        "d252fd0e-eb15-41b8-adf2-88999045143e",
+        "b33bc60a-3b67-4974-b621-ac1fe82f17ff",
+        "1028d65e-a913-4300-88f7-cda08fde0c95",
+        "8c4d5fed-cd55-4134-8301-652044d6459d",
+        "aba14687-75cc-448a-978c-4b6d12b063e5",
+        "ce51ad04-d859-4ae9-a5af-512ed0b86f0a",
+        "b9ef05f7-10c8-4c25-bba2-cf6bf53b0d99",
+        "98f5b539-0354-451e-b948-74ba4e12a46e",
+        "b4ddb7b3-7ce2-4c24-ba88-ff3970d9825c",
+        "84799473-6498-46f4-84ea-27875cd2dfda",
+        "db9e335a-c7d3-42db-813a-c524c6a4622b",
+        "cc040bd7-f3fd-44ed-a39f-19109b8c2f20",
+        "e5a31cdc-5c40-4322-bedd-02d18d0522ba",
+        "69fc4d64-4afc-42d7-ace7-e2a1139dab0b",
+        "d9fdf4a5-adad-47b1-a59a-99c326867574",
+        "57c64c18-35ff-44f8-b36c-136575677ed1",
+        "eb46ed38-8b54-48d0-bb84-4f9e8c4644a8",
+        "df04f314-e15e-4100-8f49-ad242a3b22c0",
+        "4dff6595-28dc-4417-8b22-71da0f6888fb",
+        "62a11942-bb5f-4ae7-b278-1fa34ea2dee5",
+        "e1e29090-ab28-490e-a7ef-52e8af0226a3",
+        "2237ef9f-1f8b-4ec7-b4e8-50deb5c3cb41",
+        "71a2bc9f-23f6-451c-87f8-2a0a50d552e5",
+        "98f5b539-0354-451e-b948-74ba4e12a46e"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Classificação FIGO, Epidemiologia e DDx Anexial",
+      "shortName": "Classificação FIGO, ...",
+      "percentage": 16.2,
+      "questionCount": 79,
+      "priority": "Alta",
+      "color": "#EC4899",
+      "trend": "alta",
+      "trendLabel": "🔥 Em Alta (2024-2026)",
+      "takeaway": "Foco de alta incidência nas provas da residência médica.",
+      "auditQuestionIds": [
+        "0d4bf150-da75-40d5-9f5f-1d02d8caf379",
+        "56eaedcd-2f61-4037-8f75-243dd94223cd",
+        "2e487071-2ff2-47f9-a085-e123fc952112",
+        "843d1639-2e2e-4f08-a38f-81886ee96d78",
+        "7df95c6b-87fb-4eb3-9b88-4f11760f13a3",
+        "f4f0d241-3b22-4b33-a532-876c3446dec3",
+        "5aeb52f7-4837-45bb-9fa0-db692ffcef20",
+        "bcf345d9-f08a-4835-afc0-26dd69a77064",
+        "bd3d5898-a76a-4ca4-9ae7-d12b45692a4d",
+        "e0f203b5-2eb8-497d-a518-0f99dcd88aa2",
+        "9dcac880-0247-441b-8d87-e4049a35f0e2",
+        "5c8def5e-a9c8-47a0-b01b-1d479e6f571e",
+        "dad0b81c-08cd-4c34-a410-05c381aeaafc",
+        "ed464306-9970-4721-b355-df49952595db",
+        "41169d9c-9deb-4d51-a2e7-41f775ca09a0",
+        "b06cb7b0-d28c-4e98-90f6-0995ce2c5ac1",
+        "3a55c4a1-767b-40d8-8570-f1cb3bc38407",
+        "1d916aaf-864b-4f1c-9d0a-e0af5d15aaff",
+        "8f8d1663-4bd3-48b4-9467-5c7ac7b551bf",
+        "53a18328-46b2-4c2e-b9fc-76596a96a72c",
+        "e14b108e-2978-4bdc-a2f2-99ba721dc618",
+        "207cbcc2-590f-4a74-830c-39329f630765",
+        "2ce73cfc-31fa-434c-af66-c309513715e8",
+        "de957239-b1f3-4c4e-bb20-da76e2e85b03",
+        "0ec499b0-1648-4939-b01d-0c1079f37801",
+        "a61ce86b-a90e-461e-b321-41bed72cbfa7",
+        "1fdd707a-fdee-4420-8627-11bcc0cc8b1b",
+        "a244d69a-8529-4702-88b8-3d22c64b9d28",
+        "e8b0de0c-386f-4c6b-a19b-339e9a0cfa64",
+        "887f5e6f-df80-4407-9e01-762224f086c7",
+        "efbf1d4a-fe76-4c7f-9c5d-f1755774854d",
+        "9ab06e4e-3a43-43a5-a255-03e2f96a02b2",
+        "e90476c1-7cc0-4d59-bf02-a6614bc2b101",
+        "4624aa53-e3b6-4601-a57c-06dc82dbaeee",
+        "1f4f478e-3553-4377-8acb-fd00c5ba46d6",
+        "03641ac6-171a-4686-b3c7-92d01a184ba8",
+        "a6cf7ffc-78f9-43bb-8803-ae587ae7a295",
+        "e328925a-9de3-49ee-a0dd-8e5bb1926663",
+        "15c6d7e1-2980-4696-80ee-f9394dcdb021",
+        "f1f8e466-de09-401b-8145-242561dd07e3",
+        "f65af175-546b-4fcc-8756-f7e2bf49e41a",
+        "06e8daea-2296-48a6-8a7d-3ae7e45bfc02",
+        "6503a3fa-e58e-4e0a-a2b4-c3ae7f66fda8",
+        "82a70696-857a-4a68-83f8-b2d6ef3f499b",
+        "518868b6-3242-412b-82e9-540b4d3df74b",
+        "9c58cc17-b680-4dd7-80f1-7fce4646de92",
+        "1a651377-998f-48ea-a33b-f50e912d81b1",
+        "9000c15e-0e3a-46f8-ad08-1ea07cfe4df5",
+        "d06b644c-af1a-456b-a63d-f3e2ab2bb36c",
+        "bb894db6-d8c7-438e-90f1-be6e8b3b9db5",
+        "2d7bca85-b12c-4efc-a137-63433906d16c",
+        "6a547b57-31fd-4583-aa23-197a3a2f9531",
+        "03d11feb-4006-4180-963f-d444b077f5cb",
+        "844509ce-d74b-4bdc-846e-cf08dc0a6d32",
+        "d8f71f84-e1f0-43a3-9a90-36e4acf83ae8",
+        "6ef80c96-7f69-46a4-8853-f801f01ccbbe",
+        "3c6f9a09-7aa7-4a31-abc6-17d60a999730",
+        "61e7b78a-5b89-4e2a-abab-be2a289ea781",
+        "8d7acc91-58bc-4c2b-8dd8-d76eb2161cea",
+        "adac99b9-8249-4a85-9fc5-647dfe3f7d3a",
+        "76e04d49-d2de-40e8-951c-4c1a63d60a64",
+        "f7ce0d11-0523-445f-8910-6e6c0b885c7c",
+        "41a96e12-dcd7-4d50-ba82-fe8bd250c873",
+        "7bc25110-f48a-4820-bd46-ee26d3416930",
+        "b51dff2c-53c8-46cf-b970-df2e5e463948",
+        "a4cb4da0-d7a2-4d14-b310-81fe8f83f13d",
+        "4628c134-c66d-4c3a-aab6-23dc0a73b948",
+        "a25a3080-da42-4ae8-8421-f84142e7a765",
+        "e91729af-ab29-4c47-a034-ab98c3fb647a",
+        "a177d337-5d68-41fc-878b-43075d626f9b",
+        "bbabe977-8dde-4515-af37-f5cd6c6f8c49",
+        "d7a4c97e-ebcb-4365-bbc0-e4024ac9095d",
+        "89f5bff5-845d-42d9-8dbf-0dc7d3e113d2",
+        "1e61b70d-cf25-4d08-aa06-47560b022d38",
+        "d04c01c0-74a2-412f-bcf0-73a00a7352ce",
+        "e14b108e-2978-4bdc-a2f2-99ba721dc618",
+        "e90476c1-7cc0-4d59-bf02-a6614bc2b101",
+        "bb894db6-d8c7-438e-90f1-be6e8b3b9db5",
+        "d04c01c0-74a2-412f-bcf0-73a00a7352ce"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Diagnóstico por Imagem",
+      "shortName": "Diagnóstico por Imagem",
+      "percentage": 3.3,
+      "questionCount": 16,
+      "priority": "Média",
+      "color": "#8B5CF6",
+      "trend": "estavel",
+      "trendLabel": "🏛️ Clássico Estável",
+      "takeaway": "Foco de alta incidência nas provas da residência médica.",
+      "auditQuestionIds": [
+        "31769bb1-3221-4f2c-8316-812356e3367e",
+        "33ef0204-c2ff-4455-a9d2-c2e145f7b4b9",
+        "24461b11-4f2f-40b4-8bef-7fe0ddff315b",
+        "4d202ca3-282c-4a6b-947f-29e5f3987672",
+        "77d5b517-ecb4-41af-8886-355861905940",
+        "2113087f-3ad8-4e9e-ab6d-02ec06150929",
+        "43a7e8d6-c98c-495a-8ca6-992a4b119a5e",
+        "10af8d2c-8d6b-4bf1-8fb0-a02156616760",
+        "b3422271-507a-48cc-b188-f5c8446f767f",
+        "523cff33-d92d-45b5-a068-7971707fdeab",
+        "bb7cb660-c717-41ec-a273-3a1c17633e34",
+        "8593466a-1eeb-473c-85f2-843a0c968608",
+        "fa8a8bc0-b0a1-4658-8d80-5aaf2d8ac5a5",
+        "2519f1a4-9ecc-4ec2-91f4-46fcc9125cf6",
+        "f3403bf7-430b-486f-80db-12d0d8012c02",
+        "16ddde32-17be-439c-8377-7b660e0d8c1a"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Miomas Uterinos",
+      "shortName": "Miomas Uterinos",
+      "percentage": 2.0,
+      "questionCount": 10,
+      "priority": "Média",
+      "color": "#F59E0B",
+      "trend": "queda",
+      "trendLabel": "📉 Em Queda",
+      "takeaway": "Foco de alta incidência nas provas da residência médica.",
+      "auditQuestionIds": [
+        "860c3374-c6d7-481b-ad69-8a3b510aec91",
+        "ed767f55-ac98-4a85-ad0c-70b76f1b874a",
+        "2a4cfe7f-9609-44fe-aaa7-65a1eaae1cd9",
+        "79bfe842-98ea-4c73-b1f8-5ebffccf04c2",
+        "370e57bd-179c-401c-9d18-b423aaaa66a3",
+        "ca9945d5-ce4b-4328-89c8-6a7a8bcaf447",
+        "7f8e49a6-f9ed-4449-b50c-1a64e6bf397d",
+        "b7e01063-f129-478d-9b08-96aaacc17f8a",
+        "60c7f30c-6779-4df7-9c6a-931d02cf077e",
+        "1406250b-5ecf-4d75-a548-3ca020b4931e"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Demais Critérios & Diagnósticos Menores",
+      "shortName": "Demais Aspectos",
+      "percentage": 0.6,
+      "questionCount": 3,
+      "priority": "Média",
+      "color": "#64748B",
+      "trend": "estavel",
+      "trendLabel": "🏛️ Tópicos Secundários",
+      "takeaway": "Aspectos conceituais e variantes de menor frequência em provas",
+      "auditQuestionIds": [
+        "0a17658c-52d1-40e3-80c9-0305b4d6e030",
+        "753ad17b-0e14-4b93-ad39-0a6d6e81b98f",
+        "0a17658c-52d1-40e3-80c9-0305b4d6e030"
+      ]
+    }
+  ],
+  "bancaBreakdown": {
+    "PSU-GO": {
+      "banca": "PSU-GO",
+      "totalQuestions": 6,
+      "topSubfocos": [
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 3,
+          "percentageInBanca": 50.0
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 2,
+          "percentageInBanca": 33.3
+        },
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 1,
+          "percentageInBanca": 16.7
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "UNIFESO/HCTCO": {
+      "banca": "UNIFESO/HCTCO",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 3,
+          "percentageInBanca": 60.0
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "UDI Hospital": {
+      "banca": "UDI Hospital",
+      "totalQuestions": 7,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 4,
+          "percentageInBanca": 57.1
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 2,
+          "percentageInBanca": 28.6
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 1,
+          "percentageInBanca": 14.3
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "Universidade do Estado do Pará": {
+      "banca": "Universidade do Estado do Pará",
+      "totalQuestions": 6,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 4,
+          "percentageInBanca": 66.7
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 2,
+          "percentageInBanca": 33.3
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "UNESP/HCFMB": {
+      "banca": "UNESP/HCFMB",
+      "totalQuestions": 9,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 5,
+          "percentageInBanca": 55.6
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 4,
+          "percentageInBanca": 44.4
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "IAMSPE/HSPE": {
+      "banca": "IAMSPE/HSPE",
+      "totalQuestions": 11,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 7,
+          "percentageInBanca": 63.6
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 3,
+          "percentageInBanca": 27.3
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 1,
+          "percentageInBanca": 9.1
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "USP/HCRP": {
+      "banca": "USP/HCRP",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 4,
+          "percentageInBanca": 80.0
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "UFMA/HU-UFMA": {
+      "banca": "UFMA/HU-UFMA",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 4,
+          "percentageInBanca": 80.0
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "SMS Volta Redonda": {
+      "banca": "SMS Volta Redonda",
+      "totalQuestions": 6,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 3,
+          "percentageInBanca": 50.0
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 2,
+          "percentageInBanca": 33.3
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 1,
+          "percentageInBanca": 16.7
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "UNIFESP/EPM": {
+      "banca": "UNIFESP/EPM",
+      "totalQuestions": 6,
+      "topSubfocos": [
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 4,
+          "percentageInBanca": 66.7
+        },
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 2,
+          "percentageInBanca": 33.3
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "Santa Casa de São Paulo": {
+      "banca": "Santa Casa de São Paulo",
+      "totalQuestions": 15,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 8,
+          "percentageInBanca": 53.3
+        },
+        {
+          "subfoco": "Abordagens Minimamente Invasivas",
+          "questionCount": 2,
+          "percentageInBanca": 13.3
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 2,
+          "percentageInBanca": 13.3
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "Centro Universitário do Espírito Santo": {
+      "banca": "Centro Universitário do Espírito Santo",
+      "totalQuestions": 6,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 3,
+          "percentageInBanca": 50.0
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 2,
+          "percentageInBanca": 33.3
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 1,
+          "percentageInBanca": 16.7
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "UFRGS/HCPA": {
+      "banca": "UFRGS/HCPA",
+      "totalQuestions": 7,
+      "topSubfocos": [
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 4,
+          "percentageInBanca": 57.1
+        },
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 2,
+          "percentageInBanca": 28.6
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 1,
+          "percentageInBanca": 14.3
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "UFRJ/HUCFF": {
+      "banca": "UFRJ/HUCFF",
+      "totalQuestions": 6,
+      "topSubfocos": [
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 3,
+          "percentageInBanca": 50.0
+        },
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 2,
+          "percentageInBanca": 33.3
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 1,
+          "percentageInBanca": 16.7
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "UFES/HUCAM": {
+      "banca": "UFES/HUCAM",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 3,
+          "percentageInBanca": 60.0
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 2,
+          "percentageInBanca": 40.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "SES-GO": {
+      "banca": "SES-GO",
+      "totalQuestions": 7,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 3,
+          "percentageInBanca": 42.9
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 2,
+          "percentageInBanca": 28.6
+        },
+        {
+          "subfoco": "Diagnóstico por Imagem",
+          "questionCount": 1,
+          "percentageInBanca": 14.3
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "UNICAMP/HC": {
+      "banca": "UNICAMP/HC",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 3,
+          "percentageInBanca": 60.0
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 2,
+          "percentageInBanca": 40.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "Santa Casa de Belo Horizonte (MG)": {
+      "banca": "Santa Casa de Belo Horizonte (MG)",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 4,
+          "percentageInBanca": 80.0
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "SES-DF": {
+      "banca": "SES-DF",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 4,
+          "percentageInBanca": 80.0
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "SES-RJ": {
+      "banca": "SES-RJ",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 3,
+          "percentageInBanca": 60.0
+        },
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "Centro Universitário FMABC": {
+      "banca": "Centro Universitário FMABC",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 4,
+          "percentageInBanca": 80.0
+        },
+        {
+          "subfoco": "Miomas Uterinos",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "CERMAM": {
+      "banca": "CERMAM",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 2,
+          "percentageInBanca": 40.0
+        },
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 2,
+          "percentageInBanca": 40.0
+        },
+        {
+          "subfoco": "Diagnóstico por Imagem",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "HU-FMJ": {
+      "banca": "HU-FMJ",
+      "totalQuestions": 7,
+      "topSubfocos": [
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 4,
+          "percentageInBanca": 57.1
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 2,
+          "percentageInBanca": 28.6
+        },
+        {
+          "subfoco": "Miomas Uterinos",
+          "questionCount": 1,
+          "percentageInBanca": 14.3
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "UERJ/HUPE": {
+      "banca": "UERJ/HUPE",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 3,
+          "percentageInBanca": 60.0
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 2,
+          "percentageInBanca": 40.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "SES-PE": {
+      "banca": "SES-PE",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 2,
+          "percentageInBanca": 40.0
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 2,
+          "percentageInBanca": 40.0
+        },
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "HM São José": {
+      "banca": "HM São José",
+      "totalQuestions": 6,
+      "topSubfocos": [
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 3,
+          "percentageInBanca": 50.0
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 2,
+          "percentageInBanca": 33.3
+        },
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 1,
+          "percentageInBanca": 16.7
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "SUS-BA": {
+      "banca": "SUS-BA",
+      "totalQuestions": 6,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 4,
+          "percentageInBanca": 66.7
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 2,
+          "percentageInBanca": 33.3
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "Santa Casa de São Carlos (SP)": {
+      "banca": "Santa Casa de São Carlos (SP)",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 3,
+          "percentageInBanca": 60.0
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 1,
+          "percentageInBanca": 20.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "Pontifícia Universidade Católica de São Paulo": {
+      "banca": "Pontifícia Universidade Católica de São Paulo",
+      "totalQuestions": 6,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 2,
+          "percentageInBanca": 33.3
+        },
+        {
+          "subfoco": "Classificação FIGO, Epidemiologia e DDx Anexial",
+          "questionCount": 2,
+          "percentageInBanca": 33.3
+        },
+        {
+          "subfoco": "Diagnóstico por Imagem",
+          "questionCount": 1,
+          "percentageInBanca": 16.7
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "Santa Casa de Maceió (AL)": {
+      "banca": "Santa Casa de Maceió (AL)",
+      "totalQuestions": 6,
+      "topSubfocos": [
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 3,
+          "percentageInBanca": 50.0
+        },
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 2,
+          "percentageInBanca": 33.3
+        },
+        {
+          "subfoco": "Diagnóstico por Imagem",
+          "questionCount": 1,
+          "percentageInBanca": 16.7
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "IFF/Fiocruz": {
+      "banca": "IFF/Fiocruz",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 3,
+          "percentageInBanca": 60.0
+        },
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 2,
+          "percentageInBanca": 40.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "UFMT Revalida": {
+      "banca": "UFMT Revalida",
+      "totalQuestions": 5,
+      "topSubfocos": [
+        {
+          "subfoco": "Miomas Uterinos",
+          "questionCount": 5,
+          "percentageInBanca": 100.0
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    },
+    "FUVEST": {
+      "banca": "FUVEST",
+      "totalQuestions": 6,
+      "topSubfocos": [
+        {
+          "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+          "questionCount": 4,
+          "percentageInBanca": 66.7
+        },
+        {
+          "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+          "questionCount": 2,
+          "percentageInBanca": 33.3
+        }
+      ],
+      "predominantDifficulty": "Médio"
+    }
+  },
+  "topTraps": [
+    {
+      "subfoco": "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva",
+      "trapTitle": "Distrator de Conduta Invertida",
+      "trapDescription": "Alternativas com condutas corretas na patologia porém indicadas em momento cronológico trocado."
+    }
+  ],
+  "needsRecalc": false,
+  "status": "certified",
+  "auditHash": "908f856d647ef473b146128d4ee013717b45397bb46c2f6c25df553267db6d7f",
+  "certifiedAt": "2026-11-03T15:17:13.828995+00:00"
+}

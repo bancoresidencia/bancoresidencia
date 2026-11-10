@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_85ecf729-a559-48af-90a8-5ebac517ceed",
+    "originalId": "85ecf729-a559-48af-90a8-5ebac517ceed",
+    "statement": "Homem de 62 anos vai a uma unidade de pronto atendimento (UPA) referindo cansaço e tontura ao se levantar há 2 semanas. Nega outras queixas, comorbidades ou cirurgias prévias, assim como o uso de medicamentos. Ao exame físico, apresenta-se corado, hidratado, lúcido e orientado em tempo e espaço; pressão arterial de 120 x 70 mmHg; frequência cardíaca de 45 bpm; saturação de O2 de 96% em ar ambiente; ritmo cardíaco regular, sem turgência jugular; murmúrio vesicular fisiológico, sem ruídos acessórios; e enchimento capilar de 2 segundos. Diante disso, o médico solicita um eletrocardiograma de 12 derivações:\n\nA partir desse quadro clínico e da interpretação do eletrocardiograma, a conduta adequada consiste em",
+    "options": [
+      {
+        "id": "A",
+        "text": "conceder alta médica e encaminhar o paciente ao ambulatório especializado de cardiologia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "monitorizar o paciente, solicitar marca-passo transcutâneo e aguardar avaliação do cardiologista.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "monitorizar o paciente, administrar atropina 1 mg (IV) e implantar marca-passo transcutâneo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "monitorizar o paciente, administrar atropina 1 mg (IV) e iniciar uso de dopamina 5 mcg/kg/min.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico e ECG\n\nO paciente de 62 anos apresenta um quadro de bradicardia sintomática (cansaço e tontura), porém, no momento do exame físico, encontra-se hemodinamicamente estável, com pressão arterial de 120 x 70 mmHg, lúcido, orientado e com boa perfusão periférica.\n\nAo analisarmos o eletrocardiograma (ECG), observamos que as ondas P são regulares entre si e os complexos QRS também são regulares entre si, mas não existe relação de condução entre eles. As ondas P aparecem em momentos variados (antes, dentro ou depois do QRS), o que caracteriza uma dissociação atrioventricular total. O diagnóstico eletrocardiográfico é de Bloqueio Atrioventricular de 3º Grau (BAVT), ou Bloqueio Atrioventricular Total.\n\nDiscussão das Alternativas\n\nAlternativa A: Incorreta. O BAVT é uma arritmia grave com alto risco de evolução para assistolia e morte súbita. Mesmo que o paciente esteja estável no momento, ele tem indicação formal de internação para o implante de um marcapasso definitivo. Dar alta médica a um paciente com bloqueio total é um erro grave de conduta.\n\nAlternativa B: Correta. Segundo os protocolos de suporte avançado de vida cardiovascular (ACLS), o manejo da bradicardia depende da estabilidade do paciente. Como o paciente está estável (PA normal, sem sinais de choque ou alteração de consciência), não há necessidade de intervenção imediata com drogas ou estimulação elétrica ativa. Entretanto, por ser um BAVT, a monitorização é obrigatória e o marcapasso transcutâneo deve ser solicitado para ficar disponível à beira do leito (em modo de espera ou \"standby\"), garantindo segurança caso o paciente se desestabilize enquanto aguarda a avaliação do cardiologista para o tratamento definitivo.\n\nAlternativa C: Incorreta. A administração de atropina 1 mg e o início da estimulação por marcapasso transcutâneo são indicados para bradicardias instáveis (pacientes com hipotensão, dor precordial isquêmica, insuficiência cardíaca aguda ou alteração súbita do nível de consciência). Como o paciente está estável, essas medidas seriam precoces e desnecessárias no momento. Além disso, a atropina costuma ter pouca ou nenhuma eficácia em bloqueios de alto grau (BAVT) situados abaixo do nó atrioventricular.\n\nAlternativa D: Incorreta. A dopamina é uma droga vasoativa utilizada como segunda linha no tratamento da bradicardia instável que não respondeu à atropina. Não há indicação de uso de drogas inotrópicas ou vasopressoras em um paciente com pressão arterial normal e sem sinais de má perfusão, como é o caso relatado.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Bradiarritmias",
+      "Eletrocardiograma"
+    ],
+    "difficulty": 53.07358149396255,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/4e9ec429c20a1a9627ea8981e0986d97ba12e44efab83ff13a581e3e222c91f9.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_85ecf729-a559-48af-90a8-5ebac517ceed_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:46.543Z"
+  },
+  {
+    "id": "AJUDA_85f16ebd-7038-402c-bf0e-979e5a502e4f",
+    "originalId": "85f16ebd-7038-402c-bf0e-979e5a502e4f",
+    "statement": "Em uma cidade de médio porte, a cobertura vacinal infantil para poliomielite caiu progressivamente nos últimos 6 anos, atingindo 78% no último levantamento, valor abaixo da meta preconizada pelo PNI. No mesmo período, houve aumento expressivo da recusa vacinal por parte dos responsáveis, motivada principalmente por desinformação disseminada em redes sociais. Diante desse cenário, a Secretaria Municipal de Saúde iniciou um plano de ação. Entre as medidas adotadas, estão:\n\n1. Capacitação das equipes de saúde da família para realizar busca ativa de crianças não vacinadas.\n2. Ampliação do horário de funcionamento das salas de vacinação para turno noturno e finais de semana.\n3. Intensificação de campanhas nas redes sociais com conteúdos elaborados por profissionais de saúde, combatendo fake news.\n4. Implantação de vacinação extramuros em creches, escolas e associações comunitárias.\n5. Adoção da estratégia “vacinação oportuna”, oferecendo qualquer imunização em atraso durante atendimentos de rotina, independente do motivo da consulta.\n\nApós três meses, apesar do esforço, a cobertura aumentou apenas para 80%, mantendo a cidade em situação de risco para reintrodução do poliovírus. \nConsiderando os princípios do Programa Nacional de Imunizações e estratégias comprovadamente eficazes para elevar a cobertura vacinal, qual ação adicional teria maior impacto real e imediato para reverter o risco epidemiológico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adotar vacinação exclusivamente domiciliar para toda a população infantil da cidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Criar uma campanha anual única, de grande mídia televisiva, alertando sobre riscos da poliomielite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Instituir penalidades administrativas para pais ou responsáveis que não levarem as crianças para vacinar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Oferecer incentivo financeiro direto às famílias que apresentarem o calendário vacinal completo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Intensificar o uso de microplanejamento local, com mapeamento nominal de faltosos, definição de metas por microárea e monitoramento semanal das coberturas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\nO cenário apresentado descreve uma situação de estagnação da cobertura vacinal (80%), ainda muito distante da meta de 95% preconizada pelo PNI para a poliomielite. Embora a Secretaria de Saúde tenha implementado ações importantes de acesso (horário estendido) e comunicação (combate a fake news), o risco epidemiológico persiste. Para resolver falhas vacinais localizadas e persistentes, a estratégia padrão-ouro recomendada pela Organização Pan-Americana da Saúde (OPAS) e atualmente priorizada pelo Ministério da Saúde é o Microplanejamento.\n\nPOR QUE A ALTERNATIVA (E) ESTÁ CORRETA\nO microplanejamento local é a ação com maior impacto real e imediato porque permite uma intervenção de precisão. Em vez de tratar a cidade como um bloco único, essa metodologia exige que as equipes analisem os dados de cada microárea. O mapeamento nominal identifica exatamente qual criança não foi vacinada e onde ela reside. Isso permite que a busca ativa e as ações extramuros sejam direcionadas cirurgicamente aos bolsões de não vacinados, combatendo as barreiras específicas de cada território de forma ágil, com definição de metas locais e monitoramento semanal rigoroso.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\nAlternativa (a): A vacinação exclusivamente domiciliar para toda a população é logisticamente inviável e extremamente custosa. A vacinação no domicílio deve ser uma ferramenta complementar para casos específicos de imobilidade ou difícil acesso, e não uma estratégia universal, que desmobilizaria as unidades de saúde.\n\nAlternativa (b): Campanhas de massa em televisão são estratégias macro que servem para sensibilização geral, mas possuem baixo impacto em grupos que já apresentam resistência por desinformação (fake news) ou que enfrentam barreiras geográficas locais. O problema descrito exige uma abordagem de \"território\", e não de \"mídia de massa\".\n\nAlternativa (c): A instituição de penalidades administrativas é uma medida coercitiva que pode gerar ainda mais resistência e desconfiança da população em relação às autoridades sanitárias. Epidemiologicamente, não garante a proteção imediata da criança e não resolve as falhas de organização do serviço.\n\nAlternativa (d): O incentivo financeiro direto não faz parte da lógica do PNI, que se baseia no direito à saúde. Além disso, não aborda a causa raiz citada no problema (desinformação) e não organiza a rede de saúde para realizar a busca ativa necessária para elevar os índices de cobertura.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Vigilância em Saúde",
+      "Medidas de Saúde Coletiva",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:46.543Z"
+  },
+  {
+    "id": "AJUDA_85f9a2f1-17e9-4f62-929c-3033cdb7de7f",
+    "originalId": "85f9a2f1-17e9-4f62-929c-3033cdb7de7f",
+    "statement": "Paciente de 65 anos, com histórico de fibrilação atrial e hipertensão arterial controlada, comparece à Unidade de Pronto-Atendimento relatando dor abdominal intensa, desproporcional às alterações do exame físico. O diagnóstico mais provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abdome agudo inflamatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Abdome agudo vascular isquêmico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Abdome agudo obstrutivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Abdome agudo perfurativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico e apresenta os elementos fundamentais para o diagnóstico de isquemia mesentérica aguda, principal representante do abdome agudo vascular. A alternativa correta é a (b).\n\nAnálise detalhada das alternativas:\n\na) Incorreta. O abdome agudo inflamatório, exemplificado pela apendicite ou colecistite, manifesta-se geralmente com dor localizada e sinais precoces de irritação peritoneal ao exame físico (como o sinal de Blumberg). No caso relatado, a \"dor desproporcional ao exame físico\" é a característica que afasta essa hipótese, pois nos quadros inflamatórios espera-se encontrar sensibilidade à palpação compatível com a queixa do paciente.\n\nb) Correta. A isquemia mesentérica aguda deve ser a primeira suspeita em pacientes idosos, com fatores de risco cardiovascular ou arritmias emboligênicas (como a fibrilação atrial mencionada), que apresentam dor abdominal súbita e de forte intensidade. A característica marcante é a dissociação clínico-física: o paciente refere dor lancinante, mas o abdome permanece flácido e sem sinais de peritonite nas fases iniciais. Isso ocorre porque a isquemia atinge inicialmente a mucosa intestinal, demorando a comprometer a serosa e gerar sinais flogísticos detectáveis na palpação.\n\nc) Incorreta. O abdome agudo obstrutivo apresenta-se tipicamente com dor abdominal em cólica, distensão abdominal visível, náuseas, vômitos e parada de eliminação de flatos e fezes. Ao exame físico, é comum encontrar ruídos hidroaéreos aumentados ou timpanismo aumentado à percussão, o que difere da descrição focada na dor desproporcional.\n\nd) Incorreta. O abdome agudo perfurativo cursa com dor de início súbito e \"em facada\", mas evolui rapidamente para um quadro de peritonite generalizada. O exame físico é muito rico, apresentando classicamente o \"abdome em tábua\" (rigidez muscular involuntária) e ausência de macicez hepática (sinal de Jobert), não havendo a desproporção citada no enunciado.\n\nEm resumo, a combinação de fibrilação atrial (fonte emboligênica) com dor abdominal intensa e exame físico abdominal normal/pobre é o binômio patognomônico para o Abdome Agudo Vascular Isquêmico em provas de residência.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Abdome Agudo Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:46.543Z"
+  },
+  {
+    "id": "AJUDA_860332a0-aa19-4e58-b3c1-4ca08dacf21e",
+    "originalId": "860332a0-aa19-4e58-b3c1-4ca08dacf21e",
+    "statement": "Homem de 36 anos procura pronto-socorro com dor lombar intensa, em cólica, irradiada para fossa ilíaca e região genital. A investigação diagnóstica confirma cálculo ureteral. Sobre a etiologia da nefrolitíase, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os cálculos de ácido úrico são os mais comuns, representando mais de 70% dos casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os cálculos de oxalato de cálcio são os mais frequentes, associados a hipercalciúria e hiperoxalúria.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Os cálculos de estruvita são mais comuns em homens jovens, relacionados ao hiperparatireoidismo primário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os cálculos de cistina representam cerca de 30% dos casos de nefrolitíase em adultos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Os cálculos de ácido úrico são radiopacos na radiografia simples de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a: Incorreta. Os cálculos de ácido úrico não são os mais comuns, representando apenas cerca de 5% a 10% dos casos de nefrolitíase. A maioria absoluta dos cálculos renais é composta por sais de cálcio.\n\nAlternativa b: Correta. Os cálculos de oxalato de cálcio são os mais frequentes na prática clínica, correspondendo a aproximadamente 70% a 80% de todos os casos. Eles estão frequentemente associados a distúrbios como a hipercalciúria (aumento do cálcio na urina), hiperoxalúria (aumento do oxalato) e hipocitratúria (redução do citrato, que é um inibidor da cristalização).\n\nAlternativa c: Incorreta. Os cálculos de estruvita (fosfato de amônio magnesiano), também conhecidos como cálculos de infecção ou coraliformes, são mais comuns em mulheres, pois estão diretamente relacionados a infecções urinárias recorrentes por bactérias produtoras de urease, como Proteus e Klebsiella. O hiperparatireoidismo primário está associado à formação de cálculos de fosfato de cálcio ou oxalato de cálcio, devido à hipercalcemia e hipercalciúria que provoca.\n\nAlternativa d: Incorreta. Os cálculos de cistina são raros, representando apenas cerca de 1% a 2% de todos os cálculos renais. Eles resultam de uma doença genética hereditária chamada cistinúria, que causa uma falha no transporte renal de aminoácidos dibásicos.\n\nAlternativa e: Incorreta. Os cálculos de ácido úrico puro são radiotransparentes, o que significa que não são visíveis na radiografia simples de abdome. Para identificá-los, são necessários exames como a ultrassonografia ou, preferencialmente, a tomografia computadorizada sem contraste. Eles só se tornam radiopacos se houver deposição secundária de cálcio sobre eles.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:46.543Z"
+  },
+  {
+    "id": "AJUDA_8606db6d-556c-4474-a5af-bf6988057548",
+    "originalId": "8606db6d-556c-4474-a5af-bf6988057548",
+    "statement": "Mulher de 23 anos, G3P3, sem comorbidades, procura atendimento em Unidade Básica de Saúde, manifestando forte desejo de ser submetida à laqueadura tubária.\nDe acordo com a lei de planejamento familiar, qual é a conduta inicial do profissional de saúde nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Informar que a situação da paciente está em desacordo com os critérios legais pertinentes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Orientar que é necessária a autorização do cônjuge para a realização do procedimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Oferecer à paciente informações a respeito de outros métodos anticoncepcionais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar a paciente para a realização do procedimento em questão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Gabarito: alternativa C.\n\nA esterilização voluntária no Brasil é regida pela Lei 9.263/1996 (Lei do Planejamento Familiar), alterada pela Lei 14.443/2022, em vigor desde março de 2023. Os critérios atuais são:\n\n1. Pessoa com capacidade civil plena e idade acima de 21 anos, ou com pelo menos 2 filhos vivos. Os critérios são alternativos, e não cumulativos.\n2. Prazo mínimo de 60 dias entre a manifestação da vontade e a cirurgia.\n3. Durante esse prazo, deve ser oferecido acesso ao serviço de regulação da fecundidade. Isso inclui aconselhamento por equipe multidisciplinar, com o objetivo de desencorajar a esterilização precoce e apresentar os métodos contraceptivos reversíveis.\n4. Registro da vontade em documento escrito e firmado, após informação sobre riscos, efeitos colaterais, dificuldade de reversão e opções de contracepção reversível.\n5. Não há mais exigência de consentimento do cônjuge.\n6. A laqueadura pode ser feita durante o parto, desde que observados o prazo de 60 dias e as condições médicas.\n\nA paciente tem 23 anos e 3 filhos, portanto preenche os critérios legais. Ainda assim, a conduta inicial não é o encaminhamento imediato. Primeiro deve haver aconselhamento sobre os demais métodos contraceptivos.\n\nAnálise das alternativas:\n\na) Incorreta. A paciente tem mais de 21 anos e mais de 2 filhos vivos. Bastaria um desses critérios para atender à lei.\n\nb) Incorreta. A exigência de autorização do cônjuge foi revogada pela Lei 14.443/2022. Mesmo antes da mudança, essa não seria a conduta inicial.\n\nc) Correta. A lei determina que, no período mínimo de 60 dias, seja oferecido aconselhamento com informações sobre métodos reversíveis, como DIU, implante e outros. O objetivo é desencorajar a esterilização precoce e garantir uma decisão livre e informada. Esse é o primeiro passo do atendimento.\n\nd) Incorreta. Encaminhar diretamente para a cirurgia ignora duas etapas obrigatórias: o aconselhamento prévio e o prazo mínimo de 60 dias entre a manifestação da vontade e o procedimento.\n\nPonto-chave: preencher os critérios de idade ou paridade não dispensa o aconselhamento sobre métodos reversíveis nem o intervalo de 60 dias.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Planejamento Familiar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:46.543Z"
+  },
+  {
+    "id": "AJUDA_8607c79f-8ce7-4f3f-b764-283ab2b67c98",
+    "originalId": "8607c79f-8ce7-4f3f-b764-283ab2b67c98",
+    "statement": "Mulher, 70 anos de idade, com hipertensão, osteoartrose e osteoporose em coluna lombar (T-score -2,9), realiza investigação laboratorial com os seguintes resultados: creatinina = 0,9 mg/dL (VR 0,6 a 1,1 mg/dL), TSH = 3,0 mUI/L (VR 0,44 a 5,4 mUI/L), PTH = 15 pg/mL (VR 22 a 84 pg/mL), cálcio total = 10,7 mg/dL (VR 8,6 a 10,3 mg/dL). Qual medicamento listado abaixo pode causar a alteração laboratorial observada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Denosumabe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Glicocorticoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diurético tiazídico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Cloroquina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender a questão, devemos primeiro analisar os exames laboratoriais da paciente: ela apresenta hipercalcemia (cálcio de 10,7 mg/dL, acima do valor de referência) e um PTH suprimido (15 pg/mL, abaixo do valor de referência). Esse padrão de hipercalcemia com PTH baixo indica uma causa não dependente das glândulas paratireoides. Como a paciente é hipertensa, o foco deve se voltar para medicações comuns no tratamento da hipertensão arterial que afetam o metabolismo do cálcio.\n\nAlternativa a) Denosumabe: Incorreta. O denosumabe é um anticorpo monoclonal que inibe o RANKL, bloqueando a maturação e a ação dos osteoclastos. Ao inibir a reabsorção óssea, ele tende a reduzir os níveis de cálcio no sangue. Portanto, o efeito esperado do denosumabe é a hipocalcemia, e não a hipercalcemia.\n\nAlternativa b) Glicocorticoide: Incorreta. O uso crônico de glicocorticoides está associado à redução da absorção intestinal de cálcio e ao aumento da sua excreção renal. Embora sejam causas importantes de osteoporose, os corticoides geralmente não causam hipercalcemia; pelo contrário, são por vezes utilizados no tratamento de certas formas de hipercalcemia (como na sarcoidose).\n\nAlternativa c) Diurético tiazídico: Correta. Os tiazídicos (como a hidroclorotiazida e a clortalidona), amplamente utilizados para tratar a hipertensão, agem no túbulo contorcido distal do rim aumentando a reabsorção de cálcio. Isso reduz a perda de cálcio na urina (hipocalciúria) e pode elevar os níveis de cálcio no sangue (hipercalcemia leve a moderada). Em resposta ao aumento do cálcio sérico, as glândulas paratireoides reduzem a produção de PTH por meio de feedback negativo, o que explica perfeitamente o quadro laboratorial da paciente.\n\nAlternativa d) Cloroquina: Incorreta. A cloroquina e a hidroxicloroquina não são causas de hipercalcemia. Em doenças granulomatosas (como a sarcoidose), que causam hipercalcemia pela produção excessiva de vitamina D ativa, esses medicamentos podem inclusive ajudar a baixar os níveis de cálcio por inibirem a enzima 1-alfa-hidroxilase.\n\nResumo: A combinação de hipertensão arterial e o padrão laboratorial de cálcio alto com PTH baixo aponta diretamente para o efeito dos diuréticos tiazídicos, que retêm cálcio no organismo.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Metabolismo Ósseo e Mineral",
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:46.543Z"
+  },
+  {
+    "id": "AJUDA_860f8f06-a056-4d6b-b556-e7144eb49797",
+    "originalId": "860f8f06-a056-4d6b-b556-e7144eb49797",
+    "statement": "Estudante de 17 anos comparece espontaneamente a uma Unidade Básica de Saúde com relato de tristeza e dificuldade de relacionamento com os pais. Refere que já pensou em “sumir” depois da última briga em casa, mas nega intenção ou planejamento suicida, afirmando que não quer morrer, “só queria que esse sentimento ruim passasse”. Segundo seu relato, perdeu interesse nas atividades do dia a dia e, nos últimos meses, passou a maior parte do tempo em seu quarto, mas tem mantido sono regular, apetite inalterado, bom desempenho escolar, além de funcionalidade preservada. Afirma não usar substâncias psicoativas e nega comportamentos autolesivos ou tentativas de suicídio anteriores.\n\nConsiderando o quadro apresentado e o manejo na atenção primária, a conduta inicial para esse paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "convocar seus responsáveis e encaminhá-lo ao Centro de Atenção Psicossocial infantojuvenil do território de referência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "prescrever inibidor de recaptação de serotonina e encaminhá-lo para acompanhamento em ambulatório de saúde mental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "propor o envolvimento da família no cuidado e iniciar acompanhamento multidisciplinar na Unidade Básica de Saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "explicar-lhe que a distimia faz parte da adolescência, orientá-lo a aguardar e sugerir que busque o serviço de emergência em caso de piora.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro é de um adolescente com sintomas depressivos leves. Há humor triste, perda de interesse e isolamento no quarto, com conflito familiar como desencadeante. Também há ideação passiva e inespecífica (\"sumir\"), sem intenção, sem plano, sem tentativas prévias, sem autolesão e sem uso de substâncias. Sono, apetite, desempenho escolar e funcionalidade estão preservados.\n\nPelo número reduzido de sintomas e pela ausência de prejuízo funcional, trata-se de depressão leve ou sintomas depressivos subclínicos. O risco de suicídio é baixo.\n\nSegundo diretrizes como NICE, OMS (mhGAP) e a organização da Rede de Atenção Psicossocial (RAPS), esses casos devem ser manejados na Atenção Primária. As abordagens recomendadas são:\n- psicoeducação;\n- escuta qualificada;\n- intervenções psicossociais (apoio psicológico, terapia breve, atividade física, higiene do sono);\n- envolvimento da família, sobretudo quando o conflito familiar é o fator central;\n- monitorização ativa (\"watchful waiting\" acompanhado);\n- apoio da equipe multiprofissional e do NASF/eMulti, com matriciamento em saúde mental se necessário.\n\nAnálise das alternativas:\n\na) Incorreta. O CAPSi é destinado a casos graves e persistentes: transtornos mentais severos, risco elevado de suicídio, uso problemático de substâncias ou grande prejuízo funcional. Encaminhar um quadro leve sobrecarrega a rede e desrespeita a lógica da RAPS, em que a APS é a ordenadora do cuidado. Envolver os responsáveis é adequado, mas o encaminhamento ao CAPSi não é.\n\nb) Incorreta. Antidepressivo não é tratamento de primeira linha para depressão leve em adolescentes. A primeira escolha são as intervenções psicossociais. ISRS (preferencialmente fluoxetina) ficam reservados a quadros moderados a graves ou sem resposta à psicoterapia, preferencialmente associados a ela. Em adolescentes, os ISRS ainda exigem cautela pelo alerta de aumento de ideação suicida no início do tratamento. O encaminhamento ao ambulatório especializado também é desnecessário neste momento.\n\nc) Correta. É o manejo preconizado para depressão leve na APS. O cuidado multidisciplinar acontece na própria UBS, com o médico de família, a enfermagem, a psicologia e a equipe eMulti. A família entra no cuidado porque o conflito com os pais é o principal estressor, e ela também ajuda a reconhecer sinais de piora. O acompanhamento longitudinal permite reavaliar periodicamente o risco suicida e a evolução dos sintomas. O sigilo deve ser respeitado, e a participação da família, combinada com o adolescente.\n\nd) Incorreta. Normalizar o sofrimento como \"parte da adolescência\" invalida a queixa e perde a oportunidade de intervir. Isso é especialmente grave diante de qualquer ideação de morte, mesmo passiva. Além disso, o termo distimia está mal empregado: distimia, ou transtorno depressivo persistente, exige no mínimo 1 ano de sintomas em adolescentes, critério que não foi descrito. Delegar o cuidado apenas à emergência em caso de piora fere os princípios de longitudinalidade e coordenação do cuidado da APS.\n\nResposta: alternativa C.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Transtornos do Humor",
+      "Atenção Primária à Saúde",
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:46.543Z"
+  },
+  {
+    "id": "AJUDA_8612c2de-e2a2-4e95-adea-7f4e0778136d",
+    "originalId": "8612c2de-e2a2-4e95-adea-7f4e0778136d",
+    "statement": "Homem de 77 anos, residente em instituição de longa permanência há dois anos, é avaliado em visita médica de rotina. Possui antecedentes de demência de Alzheimer em estágio moderado e hipertensão arterial sistêmica bem controlada. A carteira de vacinação pode ser vista a seguir:\n\nConsiderando que o ano atual é 2025, quais vacinas devem ser indicadas de acordo com o Programa Nacional de Imunizações do Idoso, além de Influenza e COVID-19?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumocócica 23-valente e tríplice viral atenuada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dupla bacteriana adulto, pneumocócica conjugada 13-valente e hepatite B.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hepatite B, pneumocócica conjugada 13-valente e varicela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dupla bacteriana adulto e pneumocócica 23-valente.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar o calendário de vacinação do idoso proposto pelo Programa Nacional de Imunizações (PNI) do Brasil, cruzando-o com os dados fornecidos pela imagem da carteira de vacinação do paciente em 2025.\n\nAnálise das vacinas necessárias:\n\n1. Dupla Bacteriana Adulto (dT): A proteção contra difteria e tétano exige um reforço a cada 10 anos. Conforme a imagem, a última dose do paciente foi em 2012. Como estamos em 2025, já se passaram 13 anos; portanto, o reforço está atrasado e deve ser aplicado.\n\n2. Vacina Pneumocócica 23-valente (VPP23): O PNI indica esta vacina para idosos a partir de 60 anos que vivem em instituições fechadas (como a instituição de longa permanência citada no enunciado). O esquema consiste em uma dose inicial seguida de um único reforço após 5 anos. Como o paciente recebeu a primeira dose em 2018 e já estamos em 2025 (intervalo de 7 anos), ele deve receber a segunda dose agora.\n\n3. Vacina Pneumocócica 13-valente (VPC13): Esta vacina não consta no calendário de rotina do PNI para idosos hígidos. Ela é disponibilizada apenas nos Centros de Referência para Imunobiológicos Especiais (CRIE) para pacientes com condições clínicas específicas de alto risco (como HIV, transplantados ou asplênicos), o que não é o caso relatado.\n\n4. Hepatite B: A imagem informa que o paciente recebeu 3 doses na infância. Para o PNI, o esquema de 3 doses é considerado completo para a vida toda, não sendo necessários reforços para a população geral.\n\n5. Tríplice Viral (Sarampo, Caxumba e Rubéola): De acordo com o PNI, essa vacina é administrada apenas em pessoas de até 59 anos de idade. Para indivíduos com mais de 60 anos, ela não é indicada rotineiramente.\n\n6. Varicela: Não faz parte do calendário vacinal do idoso no PNI.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. A indicação da VPP23 está correta, porém a tríplice viral não é recomendada para pacientes de 77 anos na rotina do PNI.\n\nAlternativa b: Incorreta. A dT está correta, mas a VPC13 não faz parte da rotina básica do PNI para idosos, e a vacinação contra Hepatite B já foi concluída na infância.\n\nAlternativa c: Incorreta. A Hepatite B já está completa, e as vacinas VPC13 e Varicela não são indicações de rotina para idosos no programa nacional.\n\nAlternativa d: Correta. Esta opção identifica corretamente as duas pendências do paciente baseadas nos intervalos de tempo: o reforço da dT (que deve ser feito a cada 10 anos, e o dele foi há 13 anos) e a segunda dose da VPP23 (indicada para institucionalizados 5 anos após a primeira dose, que ocorreu há 7 anos).",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Saúde do Idoso"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/12498345a195c18d9a59efbff50c9b767112fdc86b53554a06df45f3e6ee2b33.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_8612c2de-e2a2-4e95-adea-7f4e0778136d_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:47.033Z"
+  },
+  {
+    "id": "AJUDA_86146387-dd36-448d-9312-3c792303ee35",
+    "originalId": "86146387-dd36-448d-9312-3c792303ee35",
+    "statement": "Uma paciente de 34 anos de idade, professora de educação infantil, procurou o posto de saúde com tosse seca há cinco dias, coriza, leve dor de garganta e febre baixa nos primeiros dois dias, já resolvida; sem comorbidades, com ausculta pulmonar normal; sem dispneia. Ela se mostrava preocupada porque \"precisa melhorar logo para trabalhar\". Qual é a conduta mais indicada para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever antibiótico para acelerar a resolução dos sintomas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar radiografia de tórax para descartar pneumonia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Explicar o caráter viral do quadro, oferecer tratamento sintomático e planejar manejo compartilhado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever corticoide oral para reduzir o processo inflamatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um quadro clássico de infecção de vias aéreas superiores (IVAS), provavelmente de etiologia viral, popularmente conhecido como resfriado comum. Os sintomas de tosse, coriza, dor de garganta e febre baixa que já se resolveu, somados a uma ausculta pulmonar normal e ausência de dispneia, apontam para uma condição benigna e autolimitada.\n\nAlternativa a: Incorreta. Antibióticos são indicados para infecções de origem bacteriana. No caso de uma IVAS de provável etiologia viral, o uso de antimicrobianos não reduz o tempo de doença, não previne complicações e aumenta o risco de efeitos colaterais, além de contribuir para a resistência bacteriana.\n\nAlternativa b: Incorreta. A radiografia de tórax não deve ser solicitada de rotina em pacientes com sintomas gripais leves. A ausculta pulmonar normal e a ausência de sinais de gravidade (como taquipneia ou febre persistente) tornam o diagnóstico de pneumonia clinicamente improvável, dispensando o exame de imagem.\n\nAlternativa c: Correta. Esta é a conduta baseada em evidências e centrada na pessoa. O médico deve realizar a educação em saúde, explicando que o quadro é viral e autolimitado (cura espontânea). O tratamento deve ser focado no alívio dos sintomas (sintomáticos). O manejo compartilhado é fundamental para abordar a ansiedade da paciente em retornar ao trabalho, pactuando o tempo de recuperação e orientando sinais de alerta para um eventual retorno.\n\nAlternativa d: Incorreta. O uso de corticoides orais não tem indicação no tratamento do resfriado comum ou de quadros virais simples em pacientes sem comorbidades (como asma ou DPOC). Não há benefício comprovado na redução da tosse ou do processo inflamatório que justifique os riscos e efeitos adversos da medicação neste cenário.\n\nGabarito: Letra (c).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Infecções de Vias Aéreas Superiores",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/03459224ab24d899a78a1fbdc0377a18797d9f7fbfb4a8c81a84f598b6d8f5a1.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/55fdbdb12b16fa05bf424f442db1832fa98d169b1cf9b5349bd899a6385ee549.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:47.033Z"
+  },
+  {
+    "id": "AJUDA_861521bb-33d6-4ed0-b71f-dc634514dc95",
+    "originalId": "861521bb-33d6-4ed0-b71f-dc634514dc95",
+    "statement": "Em uma reunião do Conselho Municipal de Saúde, um conselheiro questiona a obrigatoriedade da vacinação infantil sob o argumento de que isso violaria o princípio da autonomia individual. Considerando a Constituição Federal e a legislação sanitária brasileira, a obrigatoriedade da vacinação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "É inconstitucional, por violar o direito à liberdade dos pais ou responsáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Só pode ser imposta em caso de estado de sítio ou calamidade pública.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "É legítima, desde que prevista em lei e recomendada por autoridades sanitárias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Depende de autorização judicial prévia para ser implementada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "É vedada pela Constituição, que garante a inviolabilidade da liberdade de consciência.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o conflito aparente entre a autonomia individual e o dever do Estado de proteger a saúde pública, especificamente no que tange à vacinação infantil no Brasil. A explicação segue a análise de cada alternativa baseada no ordenamento jurídico e no entendimento dos tribunais superiores:\n\nAlternativa A: Incorreta. O Supremo Tribunal Federal (STF) decidiu que a vacinação obrigatória é constitucional. O direito à liberdade dos pais não é absoluto e não pode se sobrepor ao direito à vida e à saúde da criança, que é tratada com prioridade absoluta pela Constituição Federal (Artigo 227).\n\nAlternativa B: Incorreta. A obrigatoriedade não é uma medida de exceção. Ela está fundamentada em leis ordinárias vigentes e no Programa Nacional de Imunizações (PNI), aplicando-se rotineiramente como política de saúde pública preventiva, independentemente de crises institucionais ou calamidades.\n\nAlternativa C: Correta. Este é o entendimento consolidado pelo STF (Tema 1103 de Repercussão Geral). A vacinação de crianças é obrigatória sempre que houver recomendação das autoridades sanitárias e previsão legal. O Estatuto da Criança e do Adolescente (ECA), em seu Artigo 14, parágrafo 1º, reforça expressamente que é obrigatória a vacinação das crianças nos casos recomendados pela autoridade sanitária.\n\nAlternativa D: Incorreta. A obrigatoriedade decorre diretamente da lei e das regulamentações do Ministério da Saúde. Não é necessária uma intervenção judicial prévia para que o Estado execute suas políticas de vacinação ou para que as unidades de saúde exijam o cumprimento do calendário vacinal. O Judiciário atua apenas se houver descumprimento ou conflitos específicos.\n\nAlternativa E: Incorreta. Embora a liberdade de consciência e crença seja garantida pela Constituição, o interesse coletivo e a proteção integral à saúde da criança prevalecem. O Estado tem o dever de assegurar que a criança não seja privada de cuidados essenciais à sua sobrevivência e desenvolvimento devido a escolhas particulares dos responsáveis que contrariem a ciência e a saúde pública.\n\nGabarito: Alternativa (c).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Marcos Legais do Sistema Único de Saúde",
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:10:47.033Z"
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AJUDA_2ef6dffb-6798-4925-b091-5ac92351965e",
+    "originalId": "2ef6dffb-6798-4925-b091-5ac92351965e",
+    "statement": "Criança, do sexo masculino, 4 anos de idade, com diagnóstico prévio de asma, está com uma crise de broncoespasmo atual na UBS. Enquanto você prescrevia a medicação, percebeu que o pai cheirava a cigarro. Após confirmar que o pai é tabagista, assinale a alternativa com a próxima pergunta que deve ser realizada, considerando a abordagem motivacional.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Você já pensou em parar de fumar?",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Você já pensou nos riscos de fumar?",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Você fuma quantos cigarros por dia?",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Você sabe que o tabagismo pode piorar a asma?",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A abordagem motivacional, fundamentada na Entrevista Motivacional, tem como objetivo principal identificar em qual estágio de mudança o indivíduo se encontra (Pré-contemplação, Contemplação, Preparação, Ação ou Manutenção) e estimulá-lo a avançar nesse processo de forma não confrontadora, empática e centrada na pessoa.\n\nAlternativa (a): Correta. Esta pergunta é o ponto de partida ideal para a abordagem motivacional. Ela busca identificar a prontidão do pai para a mudança sem julgamentos. Ao questionar se ele já pensou em parar, o médico permite que o paciente se autoavalie e expresse sua ambivalência. Se o pai responder que nunca pensou nisso, ele está em Pré-contemplação; se ele disser que já pensou, mas acha difícil, ele está em Contemplação. Essa informação é essencial para guiar os próximos passos da conversa.\n\nAlternativa (b): Incorreta. Focar nos riscos do cigarro é uma estratégia de aconselhamento diretivo tradicional que costuma ser pouco eficaz em estágios iniciais. Na abordagem motivacional, falar sobre riscos antes de entender a prontidão do paciente pode gerar resistência, negação e uma postura defensiva, dificultando o estabelecimento de um vínculo de confiança.\n\nAlternativa (c): Incorreta. Esta pergunta avalia a carga tabágica e o grau de dependência física, sendo puramente técnica e quantitativa. Embora faça parte da anamnese clínica de um paciente tabagista, ela não serve para avaliar a motivação ou o desejo de mudança, que é o foco da abordagem motivacional solicitada pela questão.\n\nAlternativa (d): Incorreta. Esta é uma pergunta fechada e retórica que carrega uma forte carga de julgamento e culpabilização. No contexto de uma criança em crise de asma, questionar o pai dessa forma pode soar como uma acusação, fazendo com que ele se sinta culpado pela doença do filho. O sentimento de culpa e o confronto são barreiras para a mudança de comportamento e contrariam os pilares da Entrevista Motivacional.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Dependência Química"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:22.412Z"
+  },
+  {
+    "id": "AJUDA_2ef7ffa5-437e-4f52-8f28-2274cfb3c371",
+    "originalId": "2ef7ffa5-437e-4f52-8f28-2274cfb3c371",
+    "statement": "Paciente de 20 anos de idade sofreu um acidente de moto e chegou ao Pronto socorro com sangramento ativo da perna esquerda logo abaixo do joelho. Ao exame, encontrava-se com Glasgow 13, pulso 132 bpm, PA: 80/50 mmHg, sangramento ativo de laceração da perna esquerda. A melhor conduta nesse caso é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "compressão imediata do sangramento com compressas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "certificar se a via aérea está pérvia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "reposição volêmica com 2.000 mL de Ringer lactato aquecido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "avaliar a oximetria de pulso e monitorização cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "verificar se o membro está alinhado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão descreve um paciente jovem, vítima de trauma de alta energia (acidente de moto), apresentando sinais clínicos claros de choque hipovolêmico Grau III ou IV (taquicardia de 132 bpm e hipotensão de 80/50 mmHg) decorrente de uma hemorragia externa ativa e visível na perna esquerda.\n\nA base para a resolução desta questão reside na atualização dos protocolos de atendimento ao trauma, como o ATLS 10ª edição e o PHTLS. Atualmente, a sequência de atendimento prioritário é definida pelo acrônimo XABCDE, onde o \"X\" representa a exsanguinação (hemorragia externa grave).\n\nAnálise das alternativas:\n\na) Alternativa correta. A compressão direta do local do sangramento é a medida inicial mais simples e eficaz para controlar uma hemorragia externa exsanguinante. No protocolo XABCDE, o controle de sangramentos externos maciços precede a abordagem das vias aéreas (A), pois a morte por choque hipovolêmico pode ocorrer de forma mais rápida do que por obstrução de via aérea ou hipóxia em muitos cenários de trauma.\n\nb) Alternativa incorreta. Embora a manutenção da via aérea pérvia seja o passo \"A\" do ABCDE tradicional, as diretrizes atuais priorizam o \"X\" (hemorragia externa grave). Como o paciente possui um sangramento ativo visível e sinais de choque, a prioridade zero é estancar esse sangramento antes de prosseguir para a avaliação da via aérea.\n\nc) Alternativa incorreta. A reposição volêmica faz parte do passo \"C\" (Circulação) do atendimento primário. No entanto, não se deve repor volume se a fonte do sangramento externo ainda não foi controlada (\"não se enche um balde furado\"). Além disso, o ATLS 10ª edição recomenda atualmente um bolus inicial de 1.000 mL de cristaloide aquecido para adultos, e não mais 2.000 mL, para evitar a coagulopatia dilucional e a sobrecarga volêmica.\n\nd) Alternativa incorreta. A oximetria de pulso e a monitorização cardíaca são exames auxiliares ao exame primário. Eles são importantes para o acompanhamento contínuo, mas não substituem nem devem preceder as manobras de intervenção imediata para salvar a vida, como o controle de hemorragia.\n\ne) Alternativa incorreta. O alinhamento de membros e o tratamento de fraturas são realizados em etapas posteriores (geralmente no \"E\" ou na avaliação secundária), a menos que a deformidade esteja causando comprometimento vascular distal grave. No cenário de instabilidade hemodinâmica por sangramento ativo, o foco é a compressão e a hemostasia, não o alinhamento ortopédico.",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Choque"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:22.412Z"
+  },
+  {
+    "id": "AJUDA_2f05dcd6-d275-4619-9ef3-5bbf6d38c479",
+    "originalId": "2f05dcd6-d275-4619-9ef3-5bbf6d38c479",
+    "statement": "Os transtornos depressivos são quadros prevalentes em serviços médicos ambulatoriais. Para estabelecer o diagnóstico de episódio depressivo maior, além da duração mínima de 2 semanas de história, é preciso que ao menos um dos dois sintomas principais esteja presente. Um desses sintomas principais é humor deprimido, e o outro é",
+    "options": [
+      {
+        "id": "A",
+        "text": "alteração de apetite ou peso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "sentimento de culpa e desvalia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "perda de interesse ou de prazer em atividades (anedonia).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "aumento da energia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para a caracterização de um Episódio Depressivo Maior, de acordo com os critérios diagnósticos do DSM-5 (Manual Diagnóstico e Estatístico de Transtornos Mentais), o paciente deve apresentar pelo menos cinco de nove sintomas possíveis durante um período mínimo de duas semanas. Contudo, existe uma regra hierárquica fundamental: pelo menos um dos sintomas presentes deve ser, obrigatoriamente, um dos dois sintomas chamados de cardinais ou principais.\n\nOs dois sintomas principais são:\n1. Humor deprimido na maior parte do dia, quase todos os dias.\n2. Acentuada diminuição do interesse ou prazer em todas ou quase todas as atividades (anedonia).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a alteração de apetite (redução ou aumento) e as variações significativas de peso sejam critérios diagnósticos válidos para compor o quadro depressivo, elas são consideradas sintomas acessórios. Ou seja, podem estar presentes, mas não substituem a necessidade de humor deprimido ou anedonia para a confirmação do diagnóstico.\n\nAlternativa b) Incorreta. Sentimentos de inutilidade, desvalia ou culpa excessiva e inapropriada são sintomas cognitivos frequentes na depressão. Eles fazem parte dos nove critérios diagnósticos listados pelo DSM-5, mas, assim como as alterações de peso, são classificados como sintomas secundários.\n\nAlternativa c) Correta. A anedonia, definida como a perda de interesse ou prazer em atividades que anteriormente eram gratificantes, é o segundo sintoma cardinal da depressão. Para fechar o diagnóstico de um episódio depressivo maior, o médico deve identificar obrigatoriamente o humor deprimido ou a anedonia (ou ambos).\n\nAlternativa d) Incorreta. O aumento da energia, muitas vezes acompanhado de euforia, irritabilidade e diminuição da necessidade de sono, é um sintoma característico de episódios de mania ou hipomania. Esses quadros definem o Transtorno Afetivo Bipolar e são o oposto clínico do que se espera em um episódio depressivo, onde predomina a fadiga ou a perda de energia (anergia).",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Transtornos do Humor"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:22.412Z"
+  },
+  {
+    "id": "AJUDA_2f168476-5684-408a-8254-4bb5df0c7820",
+    "originalId": "2f168476-5684-408a-8254-4bb5df0c7820",
+    "statement": "A Hemorragia Pós-Parto (HPP) é uma das principais causas de morbidade e mortalidade materna em todo o mundo. A prevenção da HPP deve ser iniciada durante o pré-natal e se estender ao parto, através de uma série de intervenções que visam identificar fatores de risco e implementar medidas preventivas eficazes. É essencial na prevenção da Hemorragia Pós-Parto durante o terceiro período do trabalho de parto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Clampeamento tardio do cordão umbilical apenas em partos normais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspensão de medicações anticoagulantes durante a fase de expulsão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso universal de ocitocina 10 UI intramuscular após o nascimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Massagem uterina somente após a saída da placenta.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A prevenção da Hemorragia Pós-Parto (HPP) é fundamentada no Manejo Ativo do Terceiro Período do Parto, um conjunto de intervenções recomendadas pela Organização Mundial da Saúde (OMS) e por diretrizes como as da FEBRASGO. O objetivo é garantir a contração uterina eficaz logo após a saída do feto, evitando a atonia uterina, que é a principal causa de HPP (responsável por cerca de 70% a 80% dos casos).\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O clampeamento tardio do cordão umbilical (realizado entre 1 e 3 minutos após o nascimento) é uma recomendação atual para beneficiar o recém-nascido, aumentando seus estoques de ferro. No entanto, essa prática não se restringe apenas aos partos normais (deve ser feita também em cesarianas, se o bebê estiver estável) e, embora faça parte do manejo do terceiro período, a medida mais crítica para prevenir a hemorragia materna é o uso de uterotônicos.\n\nAlternativa b: Incorreta. A suspensão de anticoagulantes é um manejo de risco que deve ser planejado previamente ao parto, dependendo da droga utilizada (como a transição de heparina de baixo peso molecular para heparina não fracionada ou suspensão temporária). Não é uma intervenção padrão ou essencial do terceiro período do trabalho de parto para a população geral, mas sim um cuidado específico para pacientes selecionadas.\n\nAlternativa c: Correta. Esta é a intervenção isolada mais importante para a prevenção da HPP. O manejo ativo do terceiro período preconiza o uso universal e profilático de 10 UI de ocitocina por via intramuscular (ou intravenosa, conforme protocolo local) em todas as mulheres, imediatamente após o nascimento do bebê. Essa prática reduz significativamente a incidência de atonia uterina e a necessidade de transfusões sanguíneas.\n\nAlternativa d: Incorreta. A massagem uterina rotineira não é mais considerada uma intervenção obrigatória para todas as mulheres se a ocitocina profilática tiver sido administrada, conforme evidências atuais. O que se recomenda é a palpação abdominal frequente para avaliar o tônus uterino. Além disso, a manobra de tração controlada do cordão umbilical é o que auxilia na saída da placenta, enquanto a massagem é mais utilizada de forma terapêutica quando já se identifica hipotonia.\n\nPortanto, o uso universal de ocitocina 10 UI intramuscular logo após o nascimento é a medida correta e essencial para a prevenção da Hemorragia Pós-Parto.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:22.412Z"
+  },
+  {
+    "id": "AJUDA_2f16cb24-a482-4033-927d-60ce3fb24841",
+    "originalId": "2f16cb24-a482-4033-927d-60ce3fb24841",
+    "statement": "Ainda considerando o caso descrito na questão anterior, em que consiste o tratamento a ser prescrito nesse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No momento, antibióticos e vacinação, após melhora do quadro agudo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Uso de antibióticos por via venosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "IOT imediata",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Oxigenoterapia, hidratação e medidas suporte",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Aspiração de vias aéreas superiores e lavagem nasal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descrito sugere um quadro de Bronquiolite Viral Aguda (BVA), que é a infecção das vias aéreas inferiores mais comum em lactentes, geralmente causada pelo Vírus Sincicial Respiratório (VSR). O manejo dessa patologia é amplamente discutido em concursos e residências, focando na ausência de terapias específicas e na importância do suporte clínico.\n\nAlternativa d (Correta): O tratamento da Bronquiolite Viral Aguda é fundamentalmente de suporte. Como se trata de uma infecção viral autolimitada, o objetivo é manter a estabilidade do paciente enquanto o corpo combate o vírus. Isso inclui a oxigenoterapia (indicada se a saturação de oxigênio estiver persistentemente abaixo de 90% a 92%), a manutenção do estado de hidratação (seja por via oral ou endovenosa, caso o lactente apresente desconforto respiratório que impeça a amamentação segura) e outras medidas de suporte, como a monitorização respiratória.\n\nAlternativas a e b (Incorretas): Por ser uma doença de etiologia viral, o uso de antibióticos não traz benefícios e não deve ser realizado de forma rotineira. A antibioticoterapia só seria considerada em casos de infecção bacteriana secundária comprovada (como pneumonia bacteriana ou otite média aguda), o que não é o padrão da doença. Além disso, a vacinação é uma medida de prevenção primária e não faz parte do tratamento do quadro agudo.\n\nAlternativa c (Incorreta): A Intubação Orotraqueal (IOT) imediata é uma medida extrema reservada para pacientes em insuficiência respiratória grave, exaustão muscular ou apneias persistentes que não respondem a medidas menos invasivas, como o uso de cateter de alto fluxo ou CPAP. Não é a conduta inicial nem a mais comum para a maioria dos casos internados.\n\nAlternativa e (Incorreta): Embora a lavagem nasal com soro fisiológico e a aspiração de vias aéreas superiores sejam fundamentais para desobstruir a via aérea do lactente (que é preferencialmente um respirador nasal), essa alternativa é considerada incompleta. Em um contexto de prova onde se pergunta pelo tratamento do caso, a tríade de oxigênio, hidratação e suporte (alternativa d) abrange melhor as necessidades clínicas do paciente com comprometimento do trato respiratório inferior.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:22.412Z"
+  },
+  {
+    "id": "AJUDA_2f228013-056f-40a5-b9f2-50eec2302293",
+    "originalId": "2f228013-056f-40a5-b9f2-50eec2302293",
+    "statement": "O recrudescimento dos casos de sífilis congênita tem sido objeto de grande preocupação para os serviços de saúde no Brasil. Pré-natal inadequado, despreparo do pré-natalista no reconhecimento e seguimento dos casos, dificuldades no acesso à penicilina e dificuldades na compreensão das potenciais gravidades do caso pela gestante estão entre os principais desafios enfrentados no combate à doença. Sobre a abordagem da sífilis congênita, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ceftriaxona é a droga de primeira escolha no tratamento da neurossífilis congênita.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nos casos de sífilis gestacional adequadamente tratada, com queda de pelo menos dois títulos de VDRL, internação com tratamento por 10 dias é necessária mesmo para recém-nascidos assintomáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Punção lombar pode ser dispensada nos casos em que o ultrassom transfontanela não apresentar alterações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Punção lombar é obrigatória nos casos de sífilis gestacional inadequadamente tratada, para afastar a hipótese de neurossífilis.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para compreender a abordagem da sífilis congênita, é fundamental seguir os protocolos do Ministério da Saúde do Brasil, que visam à investigação completa do recém-nascido sempre que houver falha no tratamento materno.\n\nAnálise das alternativas:\n\na) Incorreta. A droga de primeira escolha para o tratamento da neurossífilis congênita é a Penicilina G Cristalina, administrada por via intravenosa. A ceftriaxona é considerada uma alternativa em casos selecionados ou quando há indisponibilidade de penicilina, mas não ocupa o lugar de primeira escolha nos protocolos oficiais.\n\nb) Incorreta. Se a gestante foi adequadamente tratada (esquema correto para o estágio da doença, finalizado pelo menos 30 dias antes do parto e com queda documentada de títulos de VDRL) e o recém-nascido está assintomático, com exames laboratoriais normais e VDRL não reagente ou inferior ao da mãe, não há indicação de internação por 10 dias. Nesses casos, realiza-se apenas o acompanhamento clínico-laboratorial ou, se o acompanhamento não for garantido, uma dose única de Penicilina Benzatina.\n\nc) Incorreta. O ultrassom transfontanela e a punção lombar são exames que avaliam parâmetros distintos. O ultrassom busca alterações estruturais, enquanto a punção lombar é o único exame capaz de diagnosticar a neurossífilis por meio da análise de celularidade, bioquímica e VDRL no líquido cefalorraquidiano. Um ultrassom normal jamais substitui a necessidade de avaliar o líquor em casos suspeitos.\n\nd) Correta. De acordo com as diretrizes nacionais, se a gestante não foi tratada ou foi tratada de forma inadequada durante o pré-natal, o recém-nascido deve passar por uma investigação completa. Esta investigação inclui obrigatoriamente a punção lombar para análise do líquor, além de hemograma, radiografia de ossos longos e avaliação auditiva/visual. O objetivo é identificar o envolvimento do sistema nervoso central (neurossífilis), o que altera o manejo terapêutico e o prognóstico da criança. É considerada gestante inadequadamente tratada aquela que usou droga diferente da penicilina, não completou o esquema, iniciou o tratamento a menos de 30 dias do parto ou não apresentou queda dos títulos sorológicos.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:22.412Z"
+  },
+  {
+    "id": "AJUDA_2f26e238-c64e-403a-ab29-d0e42adeadc8",
+    "originalId": "2f26e238-c64e-403a-ab29-d0e42adeadc8",
+    "statement": "Adolescente do sexo feminino, 10 anos de idade, refere que há duas semanas tem apresentado dificuldades para escrever e para se alimentar (levar o alimento à boca). Queixa-se, ainda, de desequilíbrio ao andar, que piora quando fica nervoso. Nega febre, cefaleia ou perda de consciência. Antecedentes pessoais: quadro de febre, cansaço e dor em tornozelo esquerdo e ombro direito há dois meses. Exame físico: corado, hidratado, acianótico, irrequieto, consciente. Exame neurológico: reflexos e força muscular normais; articulações sem alterações, com movimentos assimétricos de face e de língua. Ressonância Magnética cerebral sem alterações.\n\nQual o diagnóstico mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neuropatia lúpica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Neurocisticercose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coreia Reumática.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tumor cerebral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Doença de Huntington.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico: O quadro descreve uma paciente de 10 anos com movimentos involuntários (coreia), evidenciados pela dificuldade em tarefas motoras finas (escrever e comer), desequilíbrio e movimentos assimétricos de face e língua que pioram com o estresse. O antecedente de febre e dor articular migratória (tornozelo e ombro) há dois meses é o dado patognomônico para o diagnóstico, fechando os critérios de Jones para Febre Reumática.\n\nAlternativa (a) Incorreta: Embora o Lúpus Eritematoso Sistêmico possa cursar com coreia e artrite, a idade da paciente e a descrição clássica de poliartrite migratória seguida de coreia isolada após um período de latência de alguns meses são características fundamentais da Febre Reumática. No Lúpus, seriam esperados outros achados sistêmicos ou laboratoriais específicos.\n\nAlternativa (b) Incorreta: A neurocisticercose manifesta-se tipicamente com crises epilépticas ou sinais de hipertensão intracraniana (cefaleia e vômitos). Além disso, a Ressonância Magnética (RM) obrigatoriamente apresentaria alterações, como cistos em diferentes estágios de evolução ou calcificações parenquimatosas.\n\nAlternativa (c) Correta: O diagnóstico é Coreia de Sydenham (ou Coreia Reumática), uma manifestação tardia da Febre Reumática e um dos critérios maiores de Jones. Ela surge após um período de latência (de 1 a 6 meses) em relação à infecção estreptocócica inicial. Caracteriza-se por movimentos involuntários e abruptos, hipotonia muscular e labilidade emocional. O fato de a RM ser normal é comum, pois a coreia reumática é um distúrbio funcional mediado por anticorpos nos gânglios da base, sem lesão estrutural macroscopicamente visível na imagem.\n\nAlternativa (d) Incorreta: Um tumor cerebral que causasse tal sintomatologia neurológica seria visível na Ressonância Magnética de crânio. Tumores costumam apresentar cefaleia persistente, sinais de focalidade neurológica progressiva e possível papiledema, o que não condiz com o relato.\n\nAlternativa (e) Incorreta: A Doença de Huntington é uma patologia neurodegenerativa hereditária de caráter progressivo. Na infância (forma juvenil), a doença é extremamente rara e costuma se apresentar com rigidez e declínio cognitivo (variante de Westphal), e não com coreia pura. Além disso, a história prévia de febre e artrite direciona o diagnóstico para uma causa inflamatória/infecciosa, e não genética.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Distúrbios do Movimento",
+      "Febre Reumática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:22.412Z"
+  },
+  {
+    "id": "AJUDA_2f278458-2c62-4400-ac6c-397d120f5ecf",
+    "originalId": "2f278458-2c62-4400-ac6c-397d120f5ecf",
+    "statement": "Estudante do sexo masculino de 17 anos de idade, iniciou no dia 30/07/2024 com um quadro de tosse, cefaleia, mialgia e no dia 04/08/2024 apresentou exantema em todo corpo. Havia viajado para a Inglaterra e retornado ao Brasil no dia 28/07/2024. Não frequentou escola após seu retorno. O exame de biologia molecular (RT-PCR) teve resultado detectável para vírus do sarampo. Havia recebido a última dose da vacina tríplice viral em 2012. Com relação a este caso é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A primeira medida a ser tomada é repetir o exame de biologia molecular, porque provavelmente deve se tratar de exame falso positivo, considerando o estado vacinal do adolescente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Devem ser considerados contatos do caso as pessoas que estiveram próximas ao adolescente quatro dias antes e quatro dias após o início do exantema.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Os passageiros dos mesmos voos que o paciente realizou não devem ser considerados como contatos, uma vez que durante o período da viagem ele estava assintomático.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Os contatos do adolescente devem ser monitorados pelo período de dois meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo epidemiológico de um caso confirmado de sarampo em um adolescente. Para resolver o problema, é necessário conhecer os critérios de transmissibilidade, diagnóstico e monitoramento da doença de acordo com os protocolos de vigilância epidemiológica.\n\nAlternativa (a) Incorreta. O RT-PCR é um exame de biologia molecular com altíssima especificidade e sensibilidade para o vírus do sarampo. Um resultado detectável confirma o diagnóstico, independentemente do histórico vacinal. Pessoas vacinadas podem eventualmente contrair a doença devido à falha vacinal primária ou secundária (perda de imunidade ao longo do tempo); portanto, não se deve descartar o caso nem repetir o exame sob suspeita de falso-positivo apenas por esse motivo.\n\nAlternativa (b) Correta. O período de transmissibilidade do vírus do sarampo compreende desde o início dos sintomas prodrômicos (febre, tosse, coriza e conjuntivite) até quatro dias após o aparecimento do exantema. Para fins de vigilância epidemiológica e bloqueio vacinal, considera-se o período crítico de contágio como os quatro dias que antecedem o surgimento das manchas na pele e os quatro dias subsequentes. No caso descrito, o exantema surgiu em 04/08; logo, o período de busca de contatos deve retroceder até 31/07.\n\nAlternativa (c) Incorreta. Embora o paciente tenha viajado no dia 28/07 e o exantema tenha aparecido no dia 04/08 (sete dias depois), a investigação de contatos em voos é rigorosa no sarampo devido ao alto poder de contágio do vírus por aerossóis. Além disso, a justificativa de que ele estava \"assintomático\" não exclui o risco, pois a transmissibilidade começa antes do exantema. Embora tecnicamente o voo estivesse um pouco fora da janela de quatro dias antes do exantema, a afirmativa peca pela justificativa técnica incorreta sobre a transmissibilidade.\n\nAlternativa (d) Incorreta. O período máximo de incubação do sarampo é de 21 dias (variando geralmente de 7 a 18 dias). Portanto, o monitoramento de contatos que não desenvolveram sintomas deve ser feito por até 30 dias após a última exposição ao caso-índice para garantir que não houve transmissão secundária. Dois meses é um período excessivo e sem respaldo nos protocolos de saúde pública.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Doenças Exantemáticas",
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:22.412Z"
+  },
+  {
+    "id": "AJUDA_2f3c3f1f-5656-449a-866a-54afac06066d",
+    "originalId": "2f3c3f1f-5656-449a-866a-54afac06066d",
+    "statement": "Um homem de 62 anos procura atendimento por apresentar dor ao evacuar e mudança no hábito intestinal, com episódios de constipação alternados com diarreia. Quando questionado sobre sangramento nas fezes, relata fezes escurecidas sempre, pois a dieta é à base de açaí. Refere alguns episódios de evacuação com odor fétido e relata notar sangue vivo no vaso sanitário, que atribui à hemorroida. O exame físico é inespecífico, mas o exame retal revela a presença de botão hemorroidário, grau II. Para investigar melhor a queixa do paciente, inicialmente deve-se solicitar",
+    "options": [
+      {
+        "id": "A",
+        "text": "TC de abdome total.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "pesquisa de sangue oculto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "colonoscopia com biópsia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "enema opaco com contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ultrassonografia abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente de 62 anos com sinais de alerta (*red flags*) para neoplasia colorretal: idade avançada, mudança do hábito intestinal (alternância entre constipação e diarreia) e sangramento retal. Embora o paciente atribua o sangue às hemorroidas e o aspecto das fezes à dieta, na prática médica, qualquer sangramento retal ou alteração de hábito em pacientes acima de 45-50 anos exige a exclusão de câncer colorretal, independentemente da presença de patologias benignas concomitantes, como as hemorroidas de grau II encontradas no exame físico.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A tomografia computadorizada de abdome é um excelente exame para o estadiamento de tumores já diagnosticados (avaliação de metástases ou invasão local) ou para avaliar complicações agudas. No entanto, não é o exame de escolha inicial para rastreamento ou diagnóstico de lesões intraluminais do cólon, pois possui menor sensibilidade para lesões pequenas e não permite a realização de biópsias.\n\nAlternativa b) Incorreta. A pesquisa de sangue oculto nas fezes é um método de rastreamento indicado para pacientes assintomáticos. No caso em questão, o paciente já apresenta sintomas claros e relato de sangue visível. Solicitar sangue oculto atrasaria o diagnóstico definitivo, pois um resultado negativo não excluiria a necessidade de uma investigação invasiva diante da suspeita clínica elevada.\n\nAlternativa c) Correta. A colonoscopia é o padrão-ouro para a investigação de sintomas colorretais e rastreamento de câncer. Ela permite a visualização direta de toda a mucosa do cólon e do reto, a identificação de pólipos ou massas e, fundamentalmente, a realização de biópsias para confirmação histopatológica. Diante da idade e da mudança do hábito intestinal, este é o primeiro exame a ser solicitado.\n\nAlternativa d) Incorreta. O enema opaco (radiografia com contraste baritado) foi muito utilizado no passado, mas perdeu espaço para a colonoscopia. É menos sensível para detectar lesões pequenas, não permite biópsias e apresenta maior taxa de resultados falso-negativos em comparação com os métodos endoscópicos.\n\nAlternativa e) Incorreta. A ultrassonografia abdominal tem utilidade limitada para a avaliação de vísceras ocas, como o intestino, devido à presença de gases que impedem a propagação das ondas sonoras. Ela não serve para o diagnóstico inicial de câncer colorretal ou para avaliar a mucosa intestinal.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Proctologia",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:22.412Z"
+  },
+  {
+    "id": "AJUDA_2f44d5ec-bc21-4209-9011-1f0033ba1b62",
+    "originalId": "2f44d5ec-bc21-4209-9011-1f0033ba1b62",
+    "statement": "Durante a assistência a uma parturiente de 29 anos, G2P1, cardiotocografia categoria I, a equipe obstétrica indica a episiotomia. A paciente recusa o procedimento após ser orientada sobre seus riscos e benefícios. A recusa é registrada no prontuário. No parto ocorre uma laceração perineal de terceiro grau, com extensão até o esfincter anal. Após 0 parto, familiares questionam a conduta da equipe, alegando que a lesão poderia ter sido evitada com a episiotomia. Com base nos princípios da bioética e na legislação brasileira vigente, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A episiotomia, por ser um procedimento de urgência obstétrica, não depende de consentimento da gestante e sua recusa não deve ser acatada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A recusa de intervenções padronizadas como a episiotomia deve ser formalizada em plano de parto escrito; na ausência desse documento, prevalece a decisão da equipe.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A conduta da equipe foi ética e legalmente adequada, pois respeitou a autonomia da gestante, prestou esclarecimentos prévios e registrou a recusa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A equipe médica poderá ser responsabilizada por negligência, já que a recusa do procedimento não isenta o profissional do dever de agir para prevenir lesões maternas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nEsta questão aborda o conflito entre o princípio da beneficência (fazer o que a equipe acredita ser o melhor para a saúde da paciente) e o princípio da autonomia (o direito da paciente de decidir sobre seu próprio corpo), dentro do contexto da bioética e do Código de Ética Médica (CEM) brasileiro.\n\nAlternativa (a) - INCORRETA: A episiotomia não é considerada um procedimento de urgência absoluta que dispense o consentimento. Atualmente, as evidências científicas e as recomendações da Organização Mundial da Saúde (OMS) e do Ministério da Saúde desencorajam a episiotomia de rotina. Mesmo que fosse indicada tecnicamente, o direito à recusa de procedimentos invasivos por parte de uma paciente lúcida e orientada deve ser respeitado, exceto em iminente risco de morte, o que não era o caso (cardiotocografia categoria I).\n\nAlternativa (b) - INCORRETA: O plano de parto é um instrumento importante, mas a manifestação de vontade da paciente pode ocorrer de forma verbal a qualquer momento durante a assistência. A ausência de um documento escrito prévio não autoriza a equipe a ignorar a vontade expressa da gestante no momento do parto. O registro detalhado em prontuário feito pela equipe supre a necessidade de formalização em plano de parto.\n\nAlternativa (c) - CORRETA: De acordo com o Código de Ética Médica, é direito da paciente decidir sobre procedimentos diagnósticos e terapêuticos a serem realizados. No caso descrito, a equipe agiu corretamente ao: 1) Propor a conduta baseada na indicação técnica; 2) Esclarecer os riscos e benefícios; 3) Respeitar a autonomia da paciente após a recusa informada; 4) Registrar todo o processo no prontuário. O registro em prontuário é o principal documento de defesa ética e legal do médico, comprovando que a paciente foi orientada e que sua autonomia foi respeitada.\n\nAlternativa (d) - INCORRETA: Não há negligência quando o médico deixa de realizar um procedimento por respeito à recusa expressa da paciente devidamente esclarecida. Negligência seria a omissão de socorro ou o descuido técnico. No cenário em questão, realizar a episiotomia contra a vontade da paciente poderia, inclusive, ser configurado como violência obstétrica ou lesão corporal, uma vez que a autonomia da paciente sobre seu corpo é soberana em situações que não envolvem risco de morte imediato e inevitável.\n\nGabarito: Letra (c).",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Ética Médica",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:23:22.412Z"
+  }
+]

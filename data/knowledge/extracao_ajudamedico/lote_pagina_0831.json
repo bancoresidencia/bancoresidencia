@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_e78da735-32ba-4ded-b411-96d49a0f8322",
+    "originalId": "e78da735-32ba-4ded-b411-96d49a0f8322",
+    "statement": "Pré-escolar de quatro anos, sexo masculino, apresenta febre acima de 38,5° há 6 dias, associado à queda do estado geral, palidez, eritema de boca e mãos com descamação. Ao exame físico, apresenta linfadenomegalia cervical anterior e occipital, cavidade oral com língua em framboesa, orofaringe hiperemiada sem exsudato. Apresenta carteira vacinal completa até a idade descrita. Qual o tratamento mais indicado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibioticoterapia ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Internação para exames e imunoglobulina intravenosa + aspirina",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Corticoide endovenoso na dose de 2mg/kg/dia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sintomáticos, exceto administração de aspirina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito aponta para o diagnóstico de doença de Kawasaki, uma vasculite sistêmica febril aguda que afeta preferencialmente crianças menores de cinco anos. O diagnóstico é clínico e se baseia na presença de febre persistente por pelo menos cinco dias, associada a quatro de cinco critérios principais: 1) alterações nas extremidades (eritema, edema ou descamação periungueal); 2) exantema polimorfo; 3) hiperemia conjuntival bilateral não purulenta; 4) alterações na boca e nos lábios (língua em framboesa, fissuras labiais, hiperemia de orofaringe); e 5) linfadenopatia cervical (geralmente unilateral e maior que 1,5 cm). O paciente apresenta febre por seis dias, descamação nas mãos, língua em framboesa e linfadenopatia, confirmando a patologia.\n\nAnálise das alternativas:\n\na) Incorreta. A doença de Kawasaki é uma vasculite imunomediada e não uma infecção bacteriana. Portanto, o uso de antibióticos não é indicado e não tem eficácia no controle da inflamação ou na prevenção de complicações vasculares.\n\nb) Correta. O tratamento da doença de Kawasaki deve ser iniciado o mais precocemente possível, preferencialmente até o décimo dia de febre, para prevenir a formação de aneurismas das artérias coronárias. O protocolo padrão envolve a internação hospitalar para realização de exames (como o ecocardiograma e marcadores de fase aguda) e a administração de imunoglobulina intravenosa (IGIV) em dose alta (2 g/kg), associada ao ácido acetilsalicílico (aspirina), que possui funções anti-inflamatória e antiagregante plaquetária neste contexto.\n\nc) Incorreta. Os corticosteroides não são a terapia de primeira linha isolada. Eles podem ser utilizados em casos específicos, como em pacientes que não respondem à primeira dose de imunoglobulina ou em protocolos para pacientes com alto risco de desenvolver aneurismas coronarianos, mas a base do tratamento inicial permanece sendo a IGIV associada à aspirina.\n\nd) Incorreta. O manejo apenas com sintomáticos não previne as complicações cardíacas graves, que ocorrem em cerca de 20% a 25% das crianças não tratadas adequadamente. Além disso, a alternativa exclui erroneamente a aspirina, que é peça fundamental no tratamento desta doença específica, apesar de ser evitada em outras doenças virais na infância devido ao risco de síndrome de Reye. Na doença de Kawasaki, o benefício da aspirina na prevenção de trombose coronariana supera esse risco.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Doença de Kawasaki"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:35.566Z"
+  },
+  {
+    "id": "AJUDA_e793e50b-d309-4bbd-b85f-6867e54746b3",
+    "originalId": "e793e50b-d309-4bbd-b85f-6867e54746b3",
+    "statement": "Paulo, 62 anos, foi levado ao médico por seu filho, Lucas, de 31 anos, devido a alterações de comportamento e dificuldade de executar tarefas que lhe eram habituais. Ele trabalhava com gestão de finanças e precisou ser realocado em outra função na empresa. Paulo é hipertenso, diabético e tabagista ativo (40 anos-maço). Na consulta, ele apresenta dificuldade para articular palavras e seu filho refere irritabilidade e oscilações de humor. Há seis meses, Paulo procurou atendimento médico por perda súbita de força em hemicorpo direito, que persistiu por poucas horas. Ele recebeu alta médica em menos de 12 horas após realizar tomografia de crânio sem alterações.\nQual dos exames abaixo seria capaz de trazer o diagnóstico etiológico responsável pelo quadro clínico de Paulo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mini Exame do Estado Mental (MEEM).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ressonância magnética de crânio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Análise do líquido cefalorraquidiano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dosagem de hormônio tireoestimulante (TSH).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um homem de 62 anos com múltiplos fatores de risco cardiovascular (hipertensão, diabetes e tabagismo) que apresenta declínio cognitivo e funcional (prejuízo no trabalho e em tarefas habituais), disartria, labilidade emocional e antecedente de déficit neurológico focal súbito e transitório há seis meses (compatível com ataque isquêmico transitório ou pequeno infarto). Esse quadro clínico é clássico de Demência Vascular (ou Comprometimento Cognitivo Vascular). O objetivo da questão é identificar o exame que define a etiologia desse quadro.\n\nAlternativa a: Incorreta. O Mini Exame do Estado Mental (MEEM) é uma ferramenta de triagem cognitiva. Ele ajuda no diagnóstico sindrômico ao quantificar o prejuízo cognitivo global, mas não determina a etiologia (a causa) do problema.\n\nAlternativa b: Correta. A ressonância magnética de crânio é o exame de neuroimagem de escolha para o diagnóstico etiológico da demência vascular. Ela possui sensibilidade muito superior à tomografia computadorizada para identificar infartos lacunares, lesões isquêmicas subcorticais, micro-hemorragias e doença da substância branca (leucoaraiose), correlacionando os achados anatômicos com a clínica do paciente.\n\nAlternativa c: Incorreta. A análise do líquido cefalorraquidiano é indicada na investigação de demências de rápida progressão, suspeitas de neuroinfecção (como neurossífilis ou HIV), encefalites autoimunes ou para pesquisa de biomarcadores de Doença de Alzheimer, não sendo o método de escolha para investigar lesão vascular.\n\nAlternativa d: Incorreta. A dosagem de TSH faz parte dos exames laboratoriais de triagem para afastar causas metabólicas potencialmente reversíveis de demência (como o hipotireoidismo). Trata-se de um exame de exclusão e não do teste etiológico confirmatório para o quadro vascular apresentado.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Demências",
+      "Acidentes Vasculares Cerebrais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:35.566Z"
+  },
+  {
+    "id": "AJUDA_e79dafd9-7179-496f-be9b-73c7d1c819dc",
+    "originalId": "e79dafd9-7179-496f-be9b-73c7d1c819dc",
+    "statement": "Durante consulta na Unidade Básica de Saúde, a mãe de um lactente de 3 meses de idade, sem comorbidades e com calendário vacinal em dia, relata que o filho recebeu a vacina BCG na maternidade. Segundo a mãe, a evolução inicial foi típica: formação de pápula, seguida por pústula e ulceração superficial no braço direito, com início da cicatrização por volta da sexta semana. Contudo, há cerca de 10 dias ela notou o aparecimento de um nódulo doloroso na axila direita, que aumentou progressivamente de tamanho e passou a drenar secreção amarelada espessa espontaneamente. O bebê não apresentou febre, perda de apetite ou irritabilidade. Ao exame físico, a criança está em bom estado geral, corada, eupneica, afebril e com peso e estatura adequados para a idade. O local da aplicação da BCG (região deltoide direita) apresenta pequena cicatriz em fase final de epitelização, sem sinais inflamatórios. Na axila direita, observa-se adenomegalia de aproximadamente 2,5cm, flutuante, hiperemiada, com orifício de drenagem espontânea de secreção purulenta, sem odor fétido. Não há linfonodos aumentados em outras cadeias, nem hepatoesplenomegalia. Considerando as diretrizes do Ministério da Saúde sobre as reações adversas à vacina BCG, qual é a conduta adequada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tratar com rifampicina por 3 meses e manter acompanhamento até resolução clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Realizar drenagem cirúrgica e prescrever antibiótico de amplo espectro por 10 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar para unidade de referência para investigação de imunodeficiência primária antes de qualquer tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Prescrever isoniazida profilática por 6 meses, considerando risco de disseminação do Mycobacterium bovis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve uma complicação da vacina BCG conhecida como linfadenite regional supurada. Para resolver essa questão, é fundamental diferenciar as reações esperadas das reações adversas que exigem intervenção medicamentosa, conforme as normas do Ministério da Saúde.\n\nAnálise da alternativa A (Correta):\nA criança apresenta uma adenomegalia axilar de 2,5 cm, com sinais de flutuação e drenagem de secreção purulenta (supuração). Segundo o Manual de Vigilância de Eventos Adversos Pós-Vacinação do Ministério da Saúde, a conduta para linfadenite regional supurada (ou linfadenite não supurada com diâmetro superior a 3 cm) é o tratamento medicamentoso. Embora a isoniazida seja frequentemente citada em manuais nacionais como a primeira escolha (na dose de 10 mg/kg/dia até a resolução), algumas referências e protocolos específicos de concursos adotam a rifampicina como alternativa eficaz para o tratamento dessas reações por um período determinado (geralmente até a cura clínica, em torno de 2 a 3 meses). O ponto central para acertar a questão é identificar que a lesão supurada exige tratamento farmacológico específico para micobactérias, e não apenas observação.\n\nAnálise da alternativa B (Incorreta):\nA drenagem cirúrgica ou incisão de linfonodos supurados decorrentes da vacina BCG é contraindicada. O procedimento cirúrgico nesses casos está associado a um alto risco de formação de fístulas de difícil cicatrização e drenagem crônica. Além disso, o uso de antibióticos de amplo espectro (como cefalexina ou amoxicilina-clavulanato) não tem eficácia contra o *Mycobacterium bovis*, que é o agente causador da reação.\n\nAnálise da alternativa C (Incorreta):\nA investigação de imunodeficiência primária (como a imunodeficiência combinada grave ou a doença granulomatosa crônica) deve ser considerada quando há disseminação do bacilo (BCGite), caracterizada por hepatoesplenomegalia, linfadenopatia generalizada ou lesões em outros órgãos. No caso descrito, a reação é estritamente localizada (regional), e o bebê apresenta bom estado geral e desenvolvimento adequado, o que torna a linfadenite uma reação adversa local isolada, sem necessidade imediata de triagem para imunodeficiências.\n\nAnálise da alternativa D (Incorreta):\nEmbora a isoniazida seja um medicamento utilizado no manejo de complicações da BCG, o termo \"isoniazida profilática\" está incorreto para este contexto. A profilaxia (ou tratamento da infecção latente) aplica-se ao bloqueio de contatos de pacientes com tuberculose. No caso de uma reação vacinal estabelecida com supuração, o que se institui é o tratamento do evento adverso. Além disso, o tempo de 6 meses é superior ao habitualmente recomendado para reações ganglionares localizadas, que costumam ser tratadas até a regressão clínica.\n\nAssociação com a prática:\nA evolução normal da vacina BCG (pápula, pústula, úlcera e cicatriz) ocorre no local da aplicação. Quando o linfonodo regional (axilar, supra ou infraclavicular) aumenta de tamanho, mas permanece com menos de 3 cm e sem sinais de supuração, a conduta é apenas observação. A partir do momento em que há flutuação ou drenagem (como no caso do enunciado), o tratamento medicamentoso torna-se obrigatório.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:35.566Z"
+  },
+  {
+    "id": "AJUDA_e7a13129-900d-45d1-a5b9-63400282ff1e",
+    "originalId": "e7a13129-900d-45d1-a5b9-63400282ff1e",
+    "statement": "90- Em um território rural com alta pressão assistencial e difícil acesso a exames laboratoriais, a equipe da APS adota protocolos baseados em abordagem sindrômica. Considerando os princípios da epidemiologia clínica, qual das alternativas representa a melhor justificativa para essa conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A abordagem sindrômica baseia-se na exclusão diagnóstica sistemática por meio de exames, mesmo em contextos com poucos recursos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O modelo sindrômico utiliza algoritmos clínicos baseados em sinais e sintomas prevalentes, permitindo intervenções precoces com base em alta sensibilidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Essa abordagem tem como foco principal o diagnóstico definitivo, sendo apropriada apenas em contextos hospitalares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em cenários de alta pressão assistencial, o uso de protocolos sindrômicos reduz a necessidade de interação com o paciente e substitui a anamnese detalhada por algoritmos padronizados.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Incorreta. A abordagem sindrômica é desenhada justamente para contextos em que o acesso a exames laboratoriais é restrito ou inexistente. Ela não se baseia na exclusão sistemática por meio de exames, mas sim na identificação de um conjunto de sinais e sintomas para iniciar o tratamento imediato, sem depender da confirmação laboratorial da etiologia.\n\nAlternativa b) Correta. Do ponto de vista da epidemiologia clínica, a abordagem sindrômica prioriza a alta sensibilidade. Isso significa que os algoritmos são construídos para captar o maior número possível de indivíduos doentes, mesmo que isso resulte em tratar alguns pacientes que não têm a doença específica (menor especificidade). Em cenários de difícil acesso e alta pressão, essa estratégia permite intervenções precoces, reduzindo complicações e a transmissão de doenças na comunidade, o que é fundamental para a saúde pública.\n\nAlternativa c) Incorreta. O foco da abordagem sindrômica é o manejo clínico e a resolução do problema de saúde com base na síndrome apresentada, e não o diagnóstico etiológico definitivo (fechado pelo agente causador). Além disso, essa abordagem é uma ferramenta clássica e extremamente apropriada para a Atenção Primária à Saúde (APS), especialmente em locais com poucos recursos, e não apenas para o contexto hospitalar.\n\nAlternativa d) Incorreta. Protocolos sindrômicos não visam substituir a interação médico-paciente nem dispensar a anamnese. Na verdade, a aplicação correta desses algoritmos exige uma anamnese e um exame físico direcionados e qualificados para que o profissional consiga classificar o paciente na síndrome correta. O objetivo é padronizar e agilizar a conduta terapêutica, garantindo resolutividade, e não mecanizar o atendimento ou negligenciar a história clínica.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Testes Diagnósticos",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:35.566Z"
+  },
+  {
+    "id": "AJUDA_e7a510d0-2f55-4e08-b6a3-fb62d0fc266f",
+    "originalId": "e7a510d0-2f55-4e08-b6a3-fb62d0fc266f",
+    "statement": "Após drenagem pleural por pneumotórax, o acompanhamento revela piora clínica e imagem sugerindo falha do dispositivo. Aponte a complicação mais frequentemente relatada no procedimento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lesão do feixe neurovascular intercostal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Fístula broncopleural tardia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Empiema pleural imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Posicionamento incorreto do dreno.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A drenagem pleural, embora seja um procedimento comum na prática médica, especialmente no manejo do pneumotórax, está associada a diversas complicações técnicas. Quando o enunciado menciona piora clínica e imagem sugerindo falha do dispositivo, ele direciona o raciocínio para um erro de execução ou posicionamento.\n\nAlternativa (a) Incorreta: A lesão do feixe neurovascular intercostal (artéria, veia e nervo) é uma complicação clássica, evitada ao realizar a inserção do dreno na borda superior da costela inferior. Embora seja um risco real que pode causar dor persistente ou hemotórax, as estatísticas mostram que não é a intercorrência mais frequente quando comparada a erros de posicionamento.\n\nAlternativa (b) Incorreta: A fístula broncopleural tardia é uma comunicação entre a árvore brônquica e o espaço pleural. Ela costuma ser decorrente de patologias pulmonares graves (como necroses por pneumonia ou neoplasias) ou complicações de grandes cirurgias torácicas, não sendo uma complicação comum ou diretamente esperada do ato técnico da drenagem pleural simples.\n\nAlternativa (c) Incorreta: O empiema pleural é uma complicação infecciosa que pode ocorrer após a drenagem (incidência em torno de 1 a 3%), mas raramente é imediato. O desenvolvimento de infecção requer tempo para colonização e proliferação bacteriana. Além disso, não é a complicação técnica mais relatada nos estudos de revisão de procedimentos.\n\nAlternativa (d) Correta: O posicionamento incorreto do dreno é a complicação mais frequentemente relatada em diversos estudos e revisões sobre drenagem torácica (podendo atingir índices de até 20-30% em alguns levantamentos). O dreno pode ficar em posição intraparenquimatosa, na fissura pulmonar, no espaço subcutâneo ou excessivamente introduzido. Essa falha explica diretamente a piora clínica do paciente e a imagem de falha do dispositivo, pois o dreno mal posicionado não consegue drenar efetivamente o ar ou líquido da cavidade pleural.\n\nEm resumo, o erro de posicionamento é o evento adverso dominante na prática clínica de urgência, sendo fundamental a confirmação radiológica após o procedimento para garantir a eficácia do tratamento.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:35.566Z"
+  },
+  {
+    "id": "AJUDA_e7aeb4f2-1705-469b-b184-51af1dd3482c",
+    "originalId": "e7aeb4f2-1705-469b-b184-51af1dd3482c",
+    "statement": "Homem, previamente hígido, 52 anos. Admitido na emergência com mal-estar e dor em FIE há 48h. Nega febre. Leucócitos 9.800. Realizou TC de abdome abaixo. Após parecer da cirurgia geral, qual o diagnóstico e a conduta que devemos implementar?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de uma apendicite não perfurada. Apendicectomia laparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Trata-se de uma diverticulite complicada com abscesso. Drenagem e antibiótico venoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de uma hérnia encarcerada inguinal esquerda. Inguinotomia de urgência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Trata-se de uma diverticulite leve. Dieta líquida e paracetamol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Trata-se de um cálculo ureteral esquerdo. Hidratação vigorosa e analgesia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\n\nO paciente apresenta um quadro clássico de dor em fossa ilíaca esquerda (FIE) há 48 horas, em uma faixa etária (52 anos) epidemiologicamente compatível com diverticulite aguda. A ausência de febre e a contagem de leucócitos normal (9.800) sugerem um processo inflamatório localizado e sem repercussão sistêmica grave.\n\nAchados na Tomografia de Abdome:\nA imagem de tomografia computadorizada axial mostra um espessamento das paredes do cólon sigmoide (localizado à esquerda) associado a um leve borramento da gordura pericólica (densificação da gordura). Não são observadas coleções purulentas (abscessos), gás extraluminal (perfuração livre) ou obstrução intestinal. Esses achados caracterizam uma diverticulite aguda não complicada, classificada como Hinchey 0 ou Ia.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A apendicite tipicamente se manifesta com dor na fossa ilíaca direita. Embora existam variações anatômicas (como apêndice longo ou situs inversus), a imagem de TC confirma que a alteração está no cólon descendente/sigmoide, à esquerda, e não no ceco.\n\nAlternativa B: Incorreta. A diverticulite complicada com abscesso (Hinchey Ib ou II) exigiria a visualização de uma coleção líquida com realce periférico ou gás na TC. Além disso, quadros complicados costumam cursar com febre e leucocitose significativa. A drenagem só é indicada para abscessos maiores que 3 a 4 cm.\n\nAlternativa C: Incorreta. Uma hérnia inguinal encarcerada apresentaria abaulamento na região do canal inguinal, dor localizada na região da virilha e, frequentemente, sinais de obstrução intestinal na TC, o que não é observado na imagem.\n\nAlternativa D: Correta. O quadro clínico e tomográfico é compatível com diverticulite aguda leve (não complicada). Segundo as diretrizes mais recentes, pacientes hígidos, sem sinais de sepse, com dor controlada e sem complicações na TC podem ser tratados de forma conservadora. O tratamento inclui dieta líquida ou leve para repouso intestinal e analgesia (como paracetamol ou dipirona). O uso de antibióticos para diverticulite não complicada em pacientes imunocompetentes é atualmente debatido e, em muitos casos, pode ser omitido.\n\nAlternativa E: Incorreta. Um cálculo ureteral causaria dor lombar com irradiação para a região inguinal (cólica nefrética), frequentemente associada a hematúria. Na TC, veríamos hidroureteronefrose ou a presença do cálculo radiopaco no trajeto do ureter, e não o espessamento do cólon com borramento da gordura.\n\nConclusão:\nA conduta clínica atual para diverticulite Hinchey 0 ou Ia em pacientes estáveis e sem comorbidades graves foca no manejo sintomático e ambulatorial, o que torna a alternativa D a correta.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Divertículos Colônicos e Divertículo de Meckel",
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/c80b82adf17f8ccbe20a67c09adfaba05d0ec9dbeecacdfad04dbc96b4025064.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e7aeb4f2-1705-469b-b184-51af1dd3482c_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:36.124Z"
+  },
+  {
+    "id": "AJUDA_e7b01bfb-97cf-492b-8d20-bb5937c9ad5d",
+    "originalId": "e7b01bfb-97cf-492b-8d20-bb5937c9ad5d",
+    "statement": "A tríade de Virchow refere-se a:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trombose venosa profunda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Choque séptico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Síndrome compartimental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Embolia pulmonar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A tríade de Virchow é um conceito clássico da patologia que descreve os três fatores primordiais que contribuem para a formação de trombos no sistema vascular, especificamente no sistema venoso. Os componentes da tríade são: 1. Estase venosa (redução da velocidade do fluxo sanguíneo), 2. Lesão endotelial (dano à parede interna do vaso) e 3. Hipercoagulabilidade (tendência aumentada do sangue de formar coágulos). A interação desses três elementos é o mecanismo fisiopatológico básico para o desenvolvimento da trombose venosa profunda.\n\nAnálise das alternativas:\n\na) Correta. A trombose venosa profunda (TVP) é a condição clínica diretamente originada pelos mecanismos descritos na tríade de Virchow. Quando um paciente apresenta imobilidade (estase), passa por uma cirurgia (lesão endotelial) ou possui uma condição genética/neoplásica (hipercoagulabilidade), o risco de desenvolver TVP aumenta significativamente conforme a descrição do modelo de Virchow.\n\nb) Incorreta. O choque séptico é uma condição de falência circulatória aguda decorrente de uma resposta inflamatória sistêmica grave a uma infecção. Sua fisiopatologia envolve vasodilatação generalizada, disfunção miocárdica e alteração da permeabilidade capilar, não sendo definida pela tríade de Virchow.\n\nc) Incorreta. A síndrome compartimental é uma emergência médica caracterizada pelo aumento da pressão dentro de um compartimento muscular fechado, o que leva à isquemia de nervos e músculos. É comumente causada por traumas, fraturas ou queimaduras, e não pelos mecanismos trombogênicos da tríade de Virchow.\n\nd) Incorreta. Embora a embolia pulmonar (EP) seja a complicação mais grave e frequente da trombose venosa profunda, ela não é a definição da tríade. A tríade de Virchow explica como o trombo se forma (trombogênese), enquanto a embolia pulmonar é o evento mecânico no qual esse trombo se desprende e obstrui a vasculatura pulmonar. Portanto, a associação primária da tríade é com a formação do trombo (TVP).",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Vascular",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:36.124Z"
+  },
+  {
+    "id": "AJUDA_e7b30f6a-cd04-47a6-ab0b-1179725b8682",
+    "originalId": "e7b30f6a-cd04-47a6-ab0b-1179725b8682",
+    "statement": "Mulher de 27 anos chega ao ambulatório de ginecologia com “caroço” na região inguinal direita que inchou e ficou inflamado e avermelhado. Revela ainda o aparecimento de secreção purulenta por vários furos no referido “caroço” e depois virou uma úlcera única e unilateral. \nAssinale a alternativa que indica o provável diagnóstico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Protossinfiloma",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cancro mole",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Linfogranuloma venéreo",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Úlcera mista de Rolle",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Tumor de Buschke-Lowenstein",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\nO enunciado descreve uma paciente com linfadenopatia inguinal inflamatória (conhecida como bubão) que evolui com drenagem de secreção purulenta por vários furos (fistulização múltipla ou aspecto em regador). Essa é a descrição clássica do Linfogranuloma Venéreo (LGV).\n\nAlternativa (a) Incorreta: O protossinfiloma refere-se ao cancro duro da sífilis primária. É uma úlcera única, indolor, de base limpa e bordas bem delimitadas. Embora possa haver linfonodomegalia satélite, ela é tipicamente indolor e não fistuliza com secreção purulenta.\n\nAlternativa (b) Incorreta: No cancro mole (causado pelo Haemophilus ducreyi), as úlceras são múltiplas e muito dolorosas. O bubão inguinal pode ocorrer em cerca de metade dos casos, mas a sua fistulização é caracteristicamente feita por um orifício único, e não por vários.\n\nAlternativa (c) Correta: O Linfogranuloma Venéreo é causado pelos sorotipos L1, L2 e L3 da Chlamydia trachomatis. A doença evolui em estágios, sendo o segundo estágio caracterizado pela síndrome inguinal. Nela, ocorre uma linfadenite dolorosa que evolui para a formação de abscessos que drenam por múltiplos orifícios (aspecto crivado ou sinal do regador), exatamente como descrito no relato da paciente.\n\nAlternativa (d) Incorreta: A úlcera mista de Rollet é a coexistência da sífilis primária e do cancro mole no mesmo paciente. O quadro clínico apresentaria características mistas das duas infecções (como uma úlcera que inicialmente parece mole e depois endurece), mas a descrição de múltiplos furos de drenagem no bubão é específica do LGV.\n\nAlternativa (e) Incorreta: O tumor de Buschke-Lowenstein é o condiloma acuminado gigante, uma forma rara e agressiva de infecção pelo HPV. Trata-se de uma lesão verrucosa, exofítica e volumosa, com aspecto de couve-flor, que não se manifesta como uma adenite aguda purulenta.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:36.124Z"
+  },
+  {
+    "id": "AJUDA_e7b375a9-f730-43c1-a248-7c91875f3a2e",
+    "originalId": "e7b375a9-f730-43c1-a248-7c91875f3a2e",
+    "statement": "A Síndrome de Guillain-Barré (SGB) é a causa mais comum de paralisia flácida aguda na infância pós-erradicação da pólio. Uma criança de 6 anos apresenta fraqueza muscular ascendente e simétrica, iniciada nas pernas há 3 dias, evoluindo com dificuldade para deambular. O exame neurológico revela arreflexia global. A análise do líquido cefalorraquidiano (LCR) é fundamental para o diagnóstico. Considerando as alterações típicas do líquor na Síndrome de Guillain-Barré, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O achado clássico no LCR é a dissociação albuminocitológica, caracterizada por hiperproteinorraquia (aumento de proteínas) com contagem de células (leucócitos) normal, refletindo a inflamação das raízes nervosas sem pleocitose infecciosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O LCR apresenta pleocitose linfomonocitária importante (> 50 células/mm³) e proteínas normais, indicando uma meningorradiculite viral ativa que requer isolamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O exame do líquor é invariavelmente normal na primeira semana de doença, sendo inútil para o diagnóstico, que deve basear-se exclusivamente na eletroneuromiografia mostrando bloqueio de condução.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A presença de bandas oligoclonais de IgG no líquor é o marcador diagnóstico específico, confirmando a natureza desmielinizante central da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A alternativa (a) está correta porque descreve o marco laboratorial clássico da Síndrome de Guillain-Barré (SGB): a dissociação albuminocitológica. Esse fenômeno ocorre devido ao processo inflamatório e de desmielinização das raízes nervosas (radiculite), que resulta no aumento das proteínas no líquido cefalorraquidiano (hiperproteinorraquia) por extravasamento através da barreira sangue-nervo. Por se tratar de uma condição autoimune periférica e não de uma infecção do sistema nervoso central, a celularidade (contagem de leucócitos) permanece normal ou apenas levemente aumentada, geralmente abaixo de 10 células/mm³.\n\nA alternativa (b) está incorreta. A presença de pleocitose linfomonocitária importante (acima de 50 células/mm³) é um critério de exclusão ou de alerta para diagnósticos diferenciais. Caso esse achado ocorra, deve-se investigar outras etiologias, como infecção pelo HIV, doença de Lyme, citomegalovírus, sarcoidose ou infiltração neoplásica das meninges (leucemia/linfoma).\n\nA alternativa (c) está incorreta. É verdade que o exame de líquor pode ser normal em cerca de 50% dos pacientes nos primeiros dias da doença (primeira semana). No entanto, dizer que ele é \"invariavelmente normal\" e \"inútil\" é um erro. O líquor é uma ferramenta diagnóstica fundamental para corroborar a suspeita clínica e excluir outras causas de paralisia aguda. Além disso, a eletroneuromiografia (ENMG) também costuma apresentar alterações típicas, como a redução da velocidade de condução ou bloqueios, com maior sensibilidade após a segunda semana de evolução, e não necessariamente no início do quadro.\n\nA alternativa (d) está incorreta. A presença de bandas oligoclonais de IgG no líquor é um marcador característico de doenças desmielinizantes do Sistema Nervoso Central (SNC), com destaque para a Esclerose Múltipla. A Síndrome de Guillain-Barré é uma patologia que afeta o Sistema Nervoso Periférico (SNP), e seu diagnóstico não depende desse marcador específico.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Doenças Neuromusculares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:36.124Z"
+  },
+  {
+    "id": "AJUDA_e7cd9fb8-b867-4a40-8702-099150b8e661",
+    "originalId": "e7cd9fb8-b867-4a40-8702-099150b8e661",
+    "statement": "Homem de 30 anos, consumo alcoólico moderado diário, saudável, procurou consultório neurológico com história de formigamento progressivo nos pés iniciado há cerca de um ano, evoluindo com fraqueza distal nos membros inferiores e formigamento nos membros superiores há cerca de 3 meses. Diante do exposto e exame neurológico foi feita hipótese diagnóstica de neuropatia periférica sensitivo-motora tóxico-carencial secundária ao alcoolismo. Como é esperado encontrar os reflexos do estiramento muscular (tendinosos ou profundos).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Abolidos nos membros inferiores.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Hipoativos nos membros superiores e hiperativos nos membros inferiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hiperativos nos membros superiores e hipoativos nos membros inferiores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Normais, visto que não há evidência de anormalidade do sistema nervoso central.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender a alteração dos reflexos nesta questão, é fundamental identificar o padrão da lesão neurológica apresentada. O enunciado descreve uma neuropatia periférica sensitivo-motora, que é uma patologia do Segundo Neurônio Motor (ou neurônio motor inferior).\n\nNas lesões do sistema nervoso periférico (nervos, raízes ou plexos), ocorre a interrupção do arco reflexo, que é composto pela via aferente (sensitiva), a sinapse na medula e a via eferente (motora). Quando qualquer componente deste arco é danificado, o resultado clínico esperado é a redução (hiporreflexia) ou a ausência total (arreflexia) dos reflexos profundos ou de estiramento muscular.\n\nAnálise das alternativas:\n\na) Correta. A neuropatia alcoólico-carencial é uma polineuropatia tipicamente de padrão axonal, simétrica e distal, que se inicia pelos membros inferiores (nervos mais longos). Com o comprometimento crônico das fibras nervosas, o arco reflexo é quebrado, levando à abolição dos reflexos, inicialmente nos pés (reflexo aquileu), podendo progredir proximalmente.\n\nb) Incorreta. A hiperatividade reflexa (hiperreflexia) é um sinal clássico de lesão do Primeiro Neurônio Motor (sistema nervoso central ou via piramidal). A neuropatia periférica, por ser uma lesão do sistema nervoso periférico, cursa obrigatoriamente com diminuição ou abolição de reflexos, nunca com hiperreflexia.\n\nc) Incorreta. Novamente, a presença de hiperreflexia nos membros superiores indicaria uma lesão central (como uma mielopatia cervical ou lesão encefálica), o que não condiz com o diagnóstico de polineuropatia periférica tóxico-carencial.\n\nd) Incorreta. Embora o enunciado afirme que não há evidência de anormalidade no sistema nervoso central, os reflexos profundos dependem da integridade do sistema nervoso periférico para serem executados. Se existe uma neuropatia periférica estabelecida com fraqueza e alteração de sensibilidade, os reflexos não estarão normais; eles estarão diminuídos ou ausentes.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Doenças Neuromusculares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:05:36.125Z"
+  }
+]

@@ -1,0 +1,491 @@
+[
+  {
+    "id": "AJUDA_7e5e6c78-ac2a-4fe3-91b6-bd93b49f4335",
+    "originalId": "7e5e6c78-ac2a-4fe3-91b6-bd93b49f4335",
+    "statement": "A hipercalemia grave (K+ > 6,5 mEq/L ou com alterações no ECG) é uma emergência frequente em pacientes anúricos em diálise. O tratamento definitivo é a hemodiálise, mas medidas temporárias de desvio (shift) e estabilização de membrana são necessárias enquanto se prepara a diálise. Qual medida é prioritária se houver alterações eletrocardiográficas (ondas T apiculadas, alargamento de QRS) e qual seu objetivo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administração de solução polarizante (Insulina regular + Glicose); o objetivo é a excreção renal de potássio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Nebulização com beta-2 agonista (Salbutamol) em alta dose; o objetivo é estabilizar a membrana cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administração de Gluconato de Cálcio ou Cloreto de Cálcio intravenoso; o objetivo é estabilizar a membrana dos cardiomiócitos, antagonizando o efeito do potássio, sem reduzir a concentração sérica de potássio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Administração de Resinas de troca iônica (Poliestirenossulfonato de cálcio); o objetivo é a ação imediata (minutos) na redução do potássio sérico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Comentário da Questão:\n\nO tratamento da hipercalemia grave (K+ > 6,5 mEq/L ou presença de alterações eletrocardiográficas) segue uma hierarquia de prioridades baseada no risco imediato de arritmias fatais e parada cardiorrespiratória. A estratégia é dividida em três pilares: estabilização da membrana miocárdica, desvio intracelular (shift) do potássio e remoção do potássio do organismo.\n\nAlternativa (a) Incorreta. A solução polarizante (insulina + glicose) é uma medida de desvio (shift), que promove a entrada de potássio para o meio intracelular ao estimular a bomba sódio-potássio-ATPase. Ela não promove a excreção renal e, embora fundamental, não é a primeira medida a ser tomada na presença de alterações no ECG, pois não protege o coração de forma imediata contra o limiar de excitabilidade alterado.\n\nAlternativa (b) Incorreta. Os beta-2-agonistas, como o salbutamol, também atuam promovendo o desvio intracelular do potássio. O erro da alternativa está na definição do objetivo: o salbutamol não estabiliza a membrana cardíaca; sua função é reduzir transitoriamente a concentração sérica de potássio. Além disso, em pacientes cardiopatas, deve ser usado com cautela devido ao risco de taquicardia.\n\nAlternativa (c) Correta. Esta é a medida prioritária em qualquer paciente com hipercalemia que apresente alterações eletrocardiográficas. O cálcio (gluconato ou cloreto) atua aumentando o limiar de potencial de ação das células miocárdicas, o que antagoniza os efeitos tóxicos do potássio no coração e reduz o risco de arritmias graves (como fibrilação ventricular). É importante ressaltar que o cálcio não reduz os níveis de potássio no sangue; ele apenas \"protege\" o coração enquanto outras medidas de redução são preparadas. Seu efeito é imediato (1 a 3 minutos), mas de curta duração (30 a 60 minutos).\n\nAlternativa (d) Incorreta. As resinas de troca iônica (como o poliestirenossulfonato de cálcio ou de sódio) atuam no trato gastrointestinal trocando cátions por potássio para posterior eliminação nas fezes. Elas não têm ação imediata; seu início de ação leva horas, o que as torna inadequadas como medida prioritária em uma emergência com instabilidade elétrica no ECG. Além disso, em pacientes anúricos, a eficácia é limitada, sendo a hemodiálise o método de escolha para a remoção definitiva.\n\nResumo do manejo na emergência:\n1. Estabilização de membrana: gluconato de cálcio 10% (se ECG alterado).\n2. Medidas de shift (redução temporária): insulina + glicose, beta-2-agonistas, bicarbonato de sódio (se acidose metabólica).\n3. Eliminação (tratamento definitivo): furosemida (se o paciente urinar), resinas de troca ou hemodiálise (padrão-ouro em anúricos/renais crônicos).",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Distúrbios do Potássio"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:12.959Z"
+  },
+  {
+    "id": "AJUDA_7e6b93bd-56ff-442c-884f-c5ac92f0a682",
+    "originalId": "7e6b93bd-56ff-442c-884f-c5ac92f0a682",
+    "statement": "Um paciente com 2 meses de vida, nascido de parto normal, sem intercorrências, com perímetro cefálico de 34cm ao nascimento, chega à emergência, trazido pela mãe, com um episódio de cianose e apatia. O perímetro cefálico agora mede 37cm. A RM revelou coleções subdurais subagudas, além dos focos hemorrágicos recentes. À fundoscopia, havia múltiplas áreas de hemorragia em labareda nas retinas. Sobre o caso clínico relatado, é CORRETO afirmar que os achados devem estar relacionados à:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome de moyamoya.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Síndrome do bebê sacudido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Síndrome de Aicardi-Goutières.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Síndrome de Loeys-Dietz.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nO quadro descreve um lactente de 2 meses que apresenta sinais de disfunção neurológica aguda (apatia e cianose). Os pontos-chave para o diagnóstico são os achados de imagem e de exame físico: coleções subdurais em diferentes estágios de evolução (subagudas e recentes) e hemorragias retinianas múltiplas.\n\nPor que a alternativa (b) está correta?\n\nA Síndrome do Bebê Sacudido (atualmente classificada dentro do espectro do Traumatismo Craniano Abusivo) é a principal causa de lesão intracraniana grave em lactentes. Ela é definida pela tríade clássica:\n1. Hematoma subdural: No caso, a RM mostra coleções de idades diferentes, o que sugere que a criança sofreu episódios de trauma em momentos distintos (abuso recorrente).\n2. Hemorragia retiniana: É o achado mais específico. Ocorre devido às forças de aceleração e desaceleração que rompem os vasos da retina.\n3. Encefalopatia: Manifestada pela apatia e episódios de cianose/apneia relatados.\n\nPor que as outras alternativas estão incorretas?\n\na) Síndrome de Moyamoya: É uma doença vascular oclusiva crônica que afeta as artérias do polígono de Willis. Causa episódios isquêmicos (AIT ou AVC) devido à estenose progressiva das carótidas internas. Não apresenta hematomas subdurais traumáticos nem hemorragias retinianas.\n\nc) Síndrome de Aicardi-Goutières: É uma doença genética inflamatória (interferonopatia) que afeta o cérebro e a pele. Caracteriza-se por calcificações cerebrais, atrofia e alterações na substância branca (leucodistrofia), mimetizando infecções congênitas. Não está associada a coleções hemorrágicas subdurais.\n\nd) Síndrome de Loeys-Dietz: É uma doença do tecido conjuntivo similar à Síndrome de Marfan. Os pacientes apresentam aneurismas arteriais, úvula bífida e hipertelorismo. Embora possa haver eventos hemorrágicos por ruptura de aneurismas, não é a causa da tríade de trauma apresentada, especialmente as hemorragias retinianas em labareda em um lactente.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Emergências Pediátricas",
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:12.959Z"
+  },
+  {
+    "id": "AJUDA_7e6c91ae-90df-4bb4-8ebf-be28b03662ee",
+    "originalId": "7e6c91ae-90df-4bb4-8ebf-be28b03662ee",
+    "statement": "Qual é o exame utilizado para o diagnóstico de endocardite infecciosa em crianças?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "VHS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Raio X de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O diagnóstico da endocardite infecciosa fundamenta-se nos Critérios de Duke Modificados, que combinam achados clínicos, microbiológicos e de imagem. A seguir, a análise de cada alternativa:\n\nAlternativa (a) Incorreta: O hemograma é um exame complementar inespecífico. Embora possa apresentar leucocitose com desvio à esquerda, anemia de doença crônica ou plaquetopenia, esses achados ocorrem em diversas outras patologias infecciosas e inflamatórias, não sendo capazes de firmar o diagnóstico de endocardite.\n\nAlternativa (b) Incorreta: A Velocidade de Hemossedimentação (VHS), assim como a Proteína C-Reativa (PCR), é um marcador de fase aguda. Ela indica a presença de um processo inflamatório sistêmico, mas carece de especificidade, podendo estar elevada em qualquer infecção, trauma ou doença autoimune.\n\nAlternativa (c) Incorreta: O Raio X de tórax não visualiza as estruturas internas do coração, como as válvulas. Ele é útil apenas para identificar complicações da endocardite, como sinais de insuficiência cardíaca (congestão venocapilar) ou a presença de embolia séptica pulmonar, mas não serve para o diagnóstico direto da infecção endocárdica.\n\nAlternativa (d) Correta: O ecocardiograma é o exame de eleição e um dos pilares do diagnóstico (Critério Maior de Duke). Ele permite a visualização direta de vegetações (massas intracardíacas oscilantes), abscessos miocárdicos, nova regurgitação valvar ou deiscência de prótese. Em crianças, o ecocardiograma transtorácico possui alta sensibilidade devido à excelente janela acústica nessa faixa etária, sendo a ferramenta de imagem fundamental para a confirmação diagnóstica.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Endocardite Bacteriana",
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:12.959Z"
+  },
+  {
+    "id": "AJUDA_7e7db32a-50b8-430b-a9bb-3b63efe8e6da",
+    "originalId": "7e7db32a-50b8-430b-a9bb-3b63efe8e6da",
+    "statement": "Mulher de 72 anos, previamente hígida, com menopausa aos 53 anos, obesa, solteira e nulípara, nunca fez reposição hormonal. Chega à Unidade de Pronto Atendimento (UPA) com sangramento vaginal há dois dias, hemodinamicamente estável. Nega sangramentos anteriores. Realizou exame especular, com os seguintes achados: mucosa vaginal sem alterações, colo uterino contendo lesão polipoide que se exteriorizava pelo orifício externo, ectocérvice sem alterações, anexos livres. À ultrassonografia transvaginal, útero contendo 3 nódulos, medindo respectivamente 2,5 centímetros, 3,5 centímetros e 1,5 centímetros em seus maiores diâmetros, sendo o primeiro e o segundo intramurais e o terceito submucoso. Endométrio medindo 8 milimentros de espessura. Colo uterino mostrando lesão polipoide no canal endocervical, medindo 1,5 centímetos em sua maior dimensão.\nQual é a principal hipótese diagnóstica?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiperplasia endometrial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Câncer de colo de útero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Leiomioma submucoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Endométrio atrófico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A paciente em questão apresenta um quadro clássico de sangramento uterino anormal na pós-menopausa. O ponto central para a elucidação do diagnóstico reside na combinação dos fatores de risco da paciente com os achados da ultrassonografia transvaginal.\n\nFatores de risco e espessura endometrial:\nA paciente possui 72 anos, é obesa, nulípara e teve menopausa tardia (53 anos). Todos esses são fatores de risco clássicos para o excesso de estrogênio sem oposição da progesterona, o que predispõe ao desenvolvimento de hiperplasia endometrial e câncer de endométrio. Na ultrassonografia, o endométrio mede 8 milímetros. Em mulheres na pós-menopausa que não utilizam reposição hormonal, o limite de normalidade para a espessura endometrial é de 4 a 5 milímetros. Qualquer valor acima disso, especialmente na presença de sangramento, exige investigação para afastar malignidade ou lesões precursoras.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. A hiperplasia endometrial é a principal hipótese diagnóstica devido ao espessamento endometrial (8 mm) em uma paciente com múltiplos fatores de risco para proliferação endometrial (obesidade e nuliparidade). O sangramento vaginal aos 72 anos é o sinal de alerta que obriga a investigação dessa camada uterina.\n\nAlternativa b) Incorreta. Embora o exame especular tenha mostrado uma lesão polipoide exteriorizando-se pelo orifício externo do colo, a ectocérvice (parte externa do colo) foi descrita como sem alterações. O câncer do colo do útero habitualmente se apresenta como uma lesão vegetante, friável ou ulcerada na ectocérvice. Além disso, o achado ultrassonográfico de endométrio espessado direciona a suspeita para o corpo uterino.\n\nAlternativa c) Incorreta. A ultrassonografia, de fato, identificou três nódulos compatíveis com leiomiomas, incluindo um submucoso de 1,5 cm. No entanto, os leiomiomas são tumores benignos dependentes de estrogênio que tendem a sofrer involução e calcificação após a menopausa. É muito pouco provável que um mioma comece a causar sintomas clínicos novos em uma paciente de 72 anos. O espessamento endometrial de 8 mm é um achado muito mais preocupante e relevante nesta faixa etária.\n\nAlternativa d) Incorreta. A atrofia endometrial é a causa mais comum de sangramento na pós-menopausa, resultante da fragilidade capilar em um endométrio muito fino. Contudo, para que o diagnóstico seja atrofia, a ultrassonografia deveria mostrar um endométrio obrigatoriamente fino, geralmente menor que 4 milímetros. O valor de 8 milímetros encontrado no exame da paciente exclui a hipótese de atrofia.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)"
+    ],
+    "difficulty": 56.25248684212478,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:12.959Z"
+  },
+  {
+    "id": "AJUDA_7e7e13e6-f8dd-410a-bcf3-954d40ccb6c7",
+    "originalId": "7e7e13e6-f8dd-410a-bcf3-954d40ccb6c7",
+    "statement": "Uma mulher de 72 anos, diabética e tabagista, comparece à consulta de rotina no ambulatório de clínica médica. Não apresenta sintomas. Traz resultados dos seguintes exames realizados na última consulta: cálcio = 9,2mg/dL, vitamina D total = 33ng/mL, densitometria óssea com t-score = -1,9 em cabeça de fêmur e -1,5 em vértebra e radiografia de coluna lombar evidenciando colapso de L3. A conduta que representa maior redução no risco de fraturas por fragilidade que deve ser tomada nesse momento é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "cessação de tabagismo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "reposição de vitamina D",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "prescrição de bisfosfonato",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "início de carbonato de cálcio",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O ponto fundamental para resolver esta questão é o diagnóstico clínico de osteoporose. Embora a densitometria óssea da paciente apresente valores na faixa de osteopenia (T-score entre -1,0 e -2,5), a presença de uma fratura por fragilidade comprovada por exame de imagem (colapso vertebral de L3) estabelece o diagnóstico de osteoporose, independentemente do resultado da densitometria. Em pacientes com osteoporose estabelecida, o tratamento farmacológico é mandatório para reduzir o risco de novos eventos.\n\nAlternativa a: Incorreta. O tabagismo é um fator de risco modificável importante para a perda de massa óssea. No entanto, em uma paciente que já sofreu uma fratura vertebral, a interrupção do fumo, embora recomendada para a saúde global, possui um impacto inferior na redução imediata do risco de novas fraturas quando comparada ao uso de medicações antirreabsortivas.\n\nAlternativa b: Incorreta. O nível de vitamina D da paciente é de 33 ng/mL. As diretrizes atuais recomendam manter níveis acima de 30 ng/mL em populações de alto risco, como idosos e portadores de osteoporose. Como a paciente já está dentro da meta, não há necessidade de reposição ou suplementação adicional visando à redução de risco de fraturas neste momento.\n\nAlternativa c: Correta. Os bisfosfonatos são a terapia de primeira escolha para o tratamento da osteoporose. Eles atuam inibindo a reabsorção óssea pelos osteoclastos, aumentando a densidade mineral e, comprovadamente, reduzindo de forma significativa o risco de novas fraturas vertebrais e de quadril em pacientes com diagnóstico de osteoporose clínica ou densitométrica.\n\nAlternativa d: Incorreta. O cálcio sérico da paciente está normal (9,2 mg/dL). A suplementação de cálcio deve ser considerada apenas se a ingestão dietética for insuficiente (geralmente abaixo de 1.200 mg/dia para idosos). Mesmo quando necessária, a suplementação de cálcio isolada é insuficiente para tratar a osteoporose com fratura prévia e não substitui a eficácia dos bisfosfonatos.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Metabolismo Ósseo e Mineral"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:12.959Z"
+  },
+  {
+    "id": "AJUDA_7e836fc1-cf7a-45a0-951d-90409160fbe3",
+    "originalId": "7e836fc1-cf7a-45a0-951d-90409160fbe3",
+    "statement": "A judicialização da saúde tem crescido significativamente no Brasil, impactando os orçamentos de estados e municipios. Em 14% dos estados e 11% dos municípios, as demandas judiciais drenaram entre 10% e 30% do orçamento destinado à saúde. Já em 5% dos municípios (aproximadamente 270 cidades), entre 30% e até 100% dos recursos de saúde foram consumidos por essas demandas judiciais. A maior parte das ações busca corrigir distorções no sistema de saúde, como o acesso a tratamentos que já foram incorporados ao rol da Agência Nacional de Saúde Suplementar (ANS) para o setor privado, mas que ainda não estão disponíveis no SUS. Além disso, muitas ações judiciais visam garantir novos tratamentos e indicações aprovados pela Agência Nacional de Vigilância Sanitária (Anvisa), mas que ainda não foram avaliados pela Comissão Nacional de Incorporação de Tecnologias no SUS (Conitec). São consequências da judicialização para a gestão de saúde pública no país:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Promove maior equidade no sistema de saúde, garantindo que pacientes de todo o país tenham acesso imediato a novos tratamentos aprovados pela Anvisa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A maioria das demandas judiciais garante acesso a tratamentos que já foram avaliados pela Conitec, mostrando que o sistema público de saúde falha em cumprir suas próprias regulamentações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Impacta diretamente a alocação de recursos nos estados e municípios, desbalanceando o investimento em outras áreas prioritárias de atendimento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O aumento das demandas judiciais para tratamentos de alto custo obriga os gestores públicos a priorizarem tecnologias e medicamentos inovadores, beneficiando toda a coletividade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Reduz a necessidade de avaliações técnicas adicionais, uma vez que as decisões judiciais garantem o acesso imediato a tratamentos novos aprovados pela Anvisa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a: Incorreta. A judicialização da saúde, em regra, compromete a equidade em vez de promovê-la. Ela privilegia o direito individual de pacientes que possuem acesso à justiça e assistência jurídica, muitas vezes em detrimento do direito coletivo. Ao garantir o acesso imediato a tratamentos de alto custo para um indivíduo, o sistema pode retirar recursos que seriam aplicados em políticas universais que beneficiariam uma parcela muito maior da população.\n\nAlternativa b: Incorreta. Embora existam ações para medicamentos já padronizados, o texto da questão enfatiza que grande parte das demandas envolve tecnologias aprovadas pela Anvisa, mas que ainda não passaram pelo crivo da Conitec ou não foram incorporadas ao SUS. O problema central apresentado é o descompasso entre o registro sanitário e a incorporação tecnológica no sistema público, e não apenas uma falha em cumprir regulamentações vigentes.\n\nAlternativa c: Correta. Esta alternativa reflete diretamente os dados apresentados no enunciado. A judicialização impõe gastos imprevistos e obrigatórios que não estavam no planejamento orçamentário dos entes federados. Quando um município precisa gastar até 100% do seu orçamento de saúde para atender ordens judiciais individuais, ele perde a capacidade de investir em atenção primária, vacinação, saneamento e manutenção de unidades básicas, desequilibrando toda a gestão da saúde pública local.\n\nAlternativa d: Incorreta. O atendimento a demandas judiciais individuais para tratamentos de alto custo raramente beneficia a coletividade. Pelo contrário, a necessidade de custear inovações tecnológicas caríssimas para poucos pacientes costuma drenar recursos de intervenções de saúde pública com maior impacto populacional e melhor relação custo-benefício, prejudicando o atendimento coletivo.\n\nAlternativa e: Incorreta. Decisões judiciais não substituem e não reduzem a necessidade de avaliações técnicas. A análise da Conitec é indispensável para garantir que uma tecnologia seja segura, eficaz e financeiramente viável para a realidade do país. A decisão judicial baseia-se no direito individual à saúde, mas não possui o rigor técnico-científico necessário para validar a incorporação de uma tecnologia de saúde em larga escala.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:12.959Z"
+  },
+  {
+    "id": "AJUDA_7e86faa3-0858-4c01-84d4-4ff307c05b97",
+    "originalId": "7e86faa3-0858-4c01-84d4-4ff307c05b97",
+    "statement": "Paciente com choque séptico mantém hipotensão refratária apesar de noradrenalina em dose alta. Lactato crescente. A equipe considera iniciar vasopressina. Em qual cenário abaixo o uso de vasopressina é mais justificado como estratégia de resgate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Paciente com débito urinário preservado, mas com PVC baixa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hipotensão associada a acidose metabólica leve (pH 7,32).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso de noradrenalina >= 0,3 µg/kg/min sem estabilização hemodinâmica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Necessidade de aumentar a frequência cardíaca para melhorar débito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Choque misto com componente cardiogênico predominante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda o manejo avançado do choque séptico, especificamente o momento de associar um segundo vasopressor à noradrenalina.\n\nDe acordo com as diretrizes da Surviving Sepsis Campaign (Campanha de Sobrevivência à Sepse), a noradrenalina é o vasopressor de primeira escolha. No entanto, quando as doses de noradrenalina se tornam elevadas sem que se atinja a meta de Pressão Arterial Média (PAM), a adição de vasopressina é recomendada tanto para auxiliar no alcance da meta pressórica quanto para permitir a redução da dose de noradrenalina (poupador de catecolaminas), reduzindo os efeitos colaterais adrenérgicos.\n\nAnálise das alternativas:\n\na) Incorreta. A PVC (Pressão Venosa Central) baixa sugere hipovolemia. Nesses casos, a prioridade é a otimização da ressuscitação volêmica ou a avaliação da responsividade a fluidos, e não necessariamente o início de um segundo vasopressor de resgate.\n\nb) Incorreta. Embora a vasopressina mantenha sua eficácia em meios acidóticos (diferente das catecolaminas), um pH de 7,32 representa uma acidose leve. O principal gatilho para a introdução da vasopressina no choque séptico é a dose refratária de noradrenalina, e não o nível de pH isoladamente.\n\nc) Correta. Este é o cenário clássico de indicação. As diretrizes internacionais sugerem a adição de vasopressina quando a dose de noradrenalina está na faixa de 0,25 a 0,5 µg/kg/min. O valor de 0,3 µg/kg/min é amplamente aceito na prática clínica e em protocolos como o limiar para iniciar a terapia combinada para evitar a toxicidade das catecolaminas e melhorar a perfusão.\n\nd) Incorreta. A vasopressina atua nos receptores V1 da musculatura lisa vascular, promovendo vasoconstrição. Ela não possui efeito cronotrópico positivo; pelo contrário, pode causar bradicardia reflexa devido ao aumento da pós-carga. Se o objetivo fosse aumentar a frequência cardíaca ou o débito cardíaco, o uso de inotrópicos (como dobutamina) ou adrenalina seria mais adequado.\n\ne) Incorreta. No choque cardiogênico, o coração já tem dificuldade de ejetar o sangue contra a resistência vascular. A vasopressina aumenta significativamente a pós-carga (resistência), o que pode reduzir ainda mais o débito cardíaco em um ventrículo insuficiente. No choque misto com predominância cardiogênica, o foco deve ser o suporte inotrópico.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Sepse"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:12.959Z"
+  },
+  {
+    "id": "AJUDA_7e88aa79-9a93-4ed1-9a25-ce2aed563735",
+    "originalId": "7e88aa79-9a93-4ed1-9a25-ce2aed563735",
+    "statement": "O uso de produtos com disruptores endócrinos pode gerar prejuízos à saúde das crianças e adolescentes, razão pela qual a Sociedade Brasileira de Pediatria (SBP) orienta evitar o seu uso. Porém, em casos específicos, se não for possível, recomenda-se fazê-lo com produtos próprios para a idade, atentando para a idade mínima de",
+    "options": [
+      {
+        "id": "A",
+        "text": "18 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "16 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "14 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "12 anos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda os disruptores endócrinos, substâncias químicas que interferem no sistema hormonal, podendo causar problemas como puberdade precoce, obesidade, distúrbios da tireoide e alterações no desenvolvimento reprodutivo. A Sociedade Brasileira de Pediatria (SBP) alerta constantemente sobre os riscos da exposição a esses agentes, presentes em plásticos (bisfenol A), pesticidas e diversos produtos de higiene e cosméticos (parabenos e ftalatos).\n\nAnálise das alternativas:\n\na) Incorreta. Aos 18 anos, o indivíduo atinge a maioridade civil. Embora a prudência com substâncias químicas deva ser mantida por toda a vida, as diretrizes da SBP focam na proteção durante as janelas de desenvolvimento biológico mais críticas, estabelecendo um limite inferior ao da vida adulta.\n\nb) Incorreta. A idade de 16 anos não é o marco estabelecido pela SBP para o início do uso desses produtos. As recomendações visam proteger a criança desde o período pré-natal e a primeira infância, mas o limite para o uso supervisionado e específico de certos produtos não é fixado nessa idade.\n\nc) Incorreta. Quatorze anos é uma idade em que o adolescente já está em pleno desenvolvimento puberal, mas os documentos técnicos da SBP que orientam o uso de produtos cosméticos ou de higiene que possam conter tais substâncias indicam um marco cronológico anterior.\n\nd) Correta. Segundo as diretrizes da Sociedade Brasileira de Pediatria, especialmente no que tange ao uso de cosméticos e produtos que possam conter disruptores endócrinos (como maquiagens, esmaltes ou produtos para cabelo), a orientação principal é evitar o uso. Caso seja extremamente necessário, deve-se optar por produtos específicos para a idade, respeitando a idade mínima de 12 anos. Esse marco coincide com o início da adolescência (conforme o ECA), período em que, embora o sistema endócrino ainda seja vulnerável, há uma recomendação de cautela rigorosa até essa transição.\n\nGabarito: Letra (d).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Tópicos em Pediatria",
+      "Segurança na Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:12.959Z"
+  },
+  {
+    "id": "AJUDA_7e8ebb1a-cd22-4fcd-97fa-717568e6317f",
+    "originalId": "7e8ebb1a-cd22-4fcd-97fa-717568e6317f",
+    "statement": "Paciente feminina, de 68 anos, histerectomizada, com fibrilação atrial crônica e má adesão à anticoagulação, veio à Emergência por dor abdominal intensa e difusa, quadro iniciado há 6 horas. Relatou que a dor surgira subitamente e permanecia forte, sendo desproporcional ao exame físico. Encontrava-se afebril, com pressão arterial de 110/70 mmHg e frequência cardíaca de 96 bpm. Exames laboratoriais iniciais indicaram leucócitos de 17.200/mm3 (com desvio à esquerda), hemoglobina de 13,2 g/dl, hematócrito de 38%, plaquetas de 230.000/mm3, PCR de 35 mg/l, amilase de 68 U/l e lipase de 51 U/l. Com base nos quadros clínico e laboratorial, qual a hipótese diagnóstica mais provável e qual a conduta adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pancreatite aguda - Repetir amilase/lipase em 6 horas e iniciar hidratação venosa intensiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Isquemia mesentérica aguda - Solicitar angiotomografia de abdômen e avaliar cirurgia de urgência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Gastroenterite viral - Manter hidratação oral e dieta leve com sintomáticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obstrução intestinal por bridas - Solicitar radiografia simples e manter observação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nA paciente apresenta um quadro clássico de Isquemia Mesentérica Aguda. Os principais pontos que levam a esse diagnóstico são: \n1. Fatores de risco: Idosa com fibrilação atrial (FA) e má adesão à anticoagulação, o que predispõe à formação de êmbolos que podem ocluir a artéria mesentérica superior. \n2. Quadro clínico: Dor abdominal de início súbito, de forte intensidade e, crucialmente, desproporcional ao exame físico (a paciente refere dor excruciante, mas o abdômen ainda se encontra inocente ou com poucas alterações à palpação inicial). \n3. Laboratório: Leucocitose com desvio à esquerda e aumento de PCR sugerem sofrimento tecidual e inflamação.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Pancreatite aguda - Incorreta. Embora a pancreatite cause dor intensa, as enzimas pancreáticas (amilase e lipase) estão normais no caso descrito. Além disso, a dor da pancreatite costuma ser em faixa no andar superior do abdômen e não apresenta a associação clássica com fibrilação atrial.\n\nb) Isquemia mesentérica aguda - Correta. O quadro de \"dor abdominal desproporcional ao exame físico\" em um paciente com fibrilação atrial não anticoagulada é a descrição de livro para isquemia mesentérica aguda de origem embólica. A conduta imediata diante da suspeita é a realização de uma angiotomografia de abdômen (padrão-ouro para diagnóstico) e a avaliação precoce da cirurgia para revascularização ou ressecção de alças necrosadas.\n\nc) Gastroenterite viral - Incorreta. A gastroenterite viral geralmente se manifesta com diarreia, vômitos, febre baixa e dor abdominal tipo cólica menos intensa. Não justificaria a gravidade do quadro, a leucocitose importante com desvio nem a dor súbita e intensa relatada.\n\nd) Obstrução intestinal por bridas - Incorreta. Embora a paciente seja histerectomizada (fator de risco para bridas), a dor da obstrução costuma ser em cólica e acompanhada de distensão abdominal, náuseas, vômitos e parada de eliminação de flatos e fezes. O sinal de \"dor desproporcional ao exame\" é muito mais específico para a etiologia isquêmica.\n\nGabarito: Alternativa (b).",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Abdome Agudo Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:12.959Z"
+  },
+  {
+    "id": "AJUDA_7e8ec20b-2276-4871-b48f-7558fb98a723",
+    "originalId": "7e8ec20b-2276-4871-b48f-7558fb98a723",
+    "statement": "Mulher de 68 anos, procura a Unidade de Saúde da Família (USF) em demanda espontânea e no acolhimento refere febre não aferida há 4 dias, associada à cefaleia, mialgia, artralgia, náuseas e diarreia. Nega vômito, dor abdominal. Não buscou atendimento antes, pois o esposo e o filho estão diagnosticados com dengue e acreditou que pudesse ser o mesmo. A técnica de enfermagem solicita supervisão da enfermeira que orienta a mesma a notificar dengue, realizar prova do laço e hematócrito em centrifuga e após os resultados solicita avaliação médica. A médica de família e comunidade examina a paciente e identifica que a mesma está em BEG, corada, hidratada, PA 136X79 mmHg, FC 96 bom, FR 16 ipm, auscultas cardíaca e respiratória sem alterações; Abdome: RHA +, normoativo, indolor, sem visceromegalias, Descompressão brusca (DB) ausente, membros sem edema, panturrilhas livres. Prova do laço positiva. Hematócrito: 49%. Qual a melhor conduta inicial para esta situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hidratação endovenosa na USF, 20ml/kg em 20 minutos com soro fisiológico 0,9%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hidratação oral na USF, 60 ml/Kg/dia, com 1/3 de sais de reidratação e 2/3 com outros líquidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hidratação oral domiciliar, 60ml/Kg/dia, com 1/3 de sais de reidratação e 2/3 com outros líquidos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hidratação endovenosa na USF, 10ml/kg em 1 hora com soro fisiológico 0,9%.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para resolver esta questão, devemos seguir o fluxograma de manejo clínico da dengue preconizado pelo Ministério da Saúde. \n\n1. Classificação de Risco: \nA paciente apresenta sintomas clássicos de dengue (febre, cefaleia, mialgia, artralgia, náuseas e diarreia) há 4 dias. No exame físico, ela não apresenta sinais de choque nem dor abdominal, mas tem dois critérios que a colocam inicialmente no Grupo B: idade avançada (68 anos) e prova do laço positiva.\n\n2. Avaliação Laboratorial e Reclassificação:\nO enunciado informa que o hematócrito (Ht) da paciente é de 49%. Para uma mulher idosa, esse valor é considerado elevado, indicando hemoconcentração (extravasamento plasmático). De acordo com o protocolo do Ministério da Saúde, a presença de sinais de alarme ou a evidência de hemoconcentração reclassifica a paciente para o Grupo C.\n\n3. Conduta para o Grupo C:\nO tratamento do Grupo C exige hidratação imediata por via intravenosa, obrigatoriamente em unidade de saúde (leito de observação), para evitar a progressão para o choque. O esquema inicial recomendado é de 10 mL/kg de soro fisiológico 0,9% na primeira hora.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: A hidratação de 20 mL/kg em 20 minutos é a conduta inicial para o Grupo D (pacientes com sinais de choque ou desconforto respiratório grave), o que não é o caso desta paciente, que está em bom estado geral (BEG) e com pressão arterial estável.\n\nAlternativa (b) Incorreta: A hidratação oral de 60 mL/kg/dia é indicada para pacientes dos Grupos A e B (sem sinais de hemoconcentração). Como a paciente apresenta hematócrito elevado (49%), ela necessita de intervenção intravenosa imediata (Grupo C).\n\nAlternativa (c) Incorreta: A hidratação domiciliar é restrita ao Grupo A. Esta paciente apresenta critérios de risco (idade e prova do laço) e evidência laboratorial de gravidade (hemoconcentração), exigindo observação hospitalar ou em unidade de saúde.\n\nAlternativa (d) Correta: Representa exatamente o protocolo de hidratação venosa imediata para pacientes classificados no Grupo C (10 mL/kg na primeira hora), visando estabilizar a volemia e reverter a hemoconcentração identificada no exame laboratorial.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Arboviroses",
+      "Saúde do Idoso",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:06:12.959Z"
+  }
+]

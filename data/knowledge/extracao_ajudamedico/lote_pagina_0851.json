@@ -1,0 +1,512 @@
+[
+  {
+    "id": "AJUDA_ec51c6fd-8789-40e2-8747-ff7862e15964",
+    "originalId": "ec51c6fd-8789-40e2-8747-ff7862e15964",
+    "statement": "O teste do coraçãozinho foi realizado em um recém-nascido a termo com 24 horas de vida e evidenciou saturação no membro superior direito de 96% e no membro inferior esquerdo de 95%.\nEsse resultado está",
+    "options": [
+      {
+        "id": "A",
+        "text": "alterado e deve ser repetido dentro de uma hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "dentro dos valores da normalidade.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "alterado e deve ser realizado um ecocardiograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "normal, mas, por ser exame de triagem, deve ser repetido em uma hora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "alterado e deve ser repetido em uma semana.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O teste do coraçãozinho, ou triagem por oximetria de pulso, é uma ferramenta fundamental para a detecção precoce de cardiopatias congênitas críticas em recém-nascidos. Para analisar o resultado, devemos aplicar os critérios estabelecidos pelo Ministério da Saúde e pela Sociedade Brasileira de Pediatria.\n\nO exame é considerado normal (negativo) quando:\n1. A saturação de oxigênio (SpO2) é igual ou superior a 95% tanto no membro superior direito (pré-ductal) quanto em um dos membros inferiores (pós-ductal);\n2. A diferença entre as medidas do membro superior direito e do membro inferior é igual ou inferior a 3%.\n\nNo caso apresentado:\n- Saturação no membro superior direito (MSD): 96% (dentro da normalidade, >= 95%).\n- Saturação no membro inferior esquerdo (MIE): 95% (dentro da normalidade, >= 95%).\n- Diferença entre os membros: 96% - 95% = 1% (dentro da normalidade, <= 3%).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O teste não está alterado. A conduta de repetir o exame em uma hora é reservada para casos em que a saturação está entre 90% e 94% ou quando a diferença entre os membros é igual ou superior a 4%.\n\nAlternativa b) Correta. Os valores obtidos preenchem todos os critérios de normalidade (saturações >= 95% e diferença <= 3%), dispensando novas intervenções ou repetições.\n\nAlternativa c) Incorreta. O ecocardiograma é indicado apenas se o teste permanecer alterado após duas reavaliações (com intervalo de uma hora entre elas) ou se, em qualquer medição, a saturação for inferior a 89%. Como o teste está normal, não há indicação de ecocardiograma.\n\nAlternativa d) Incorreta. Embora o teste seja de triagem, uma vez que o resultado é normal (negativo), ele não precisa ser repetido em uma hora. O protocolo de repetição aplica-se apenas a resultados inicialmente alterados.\n\nAlternativa e) Incorreta. Se o teste estivesse alterado, a repetição deveria ocorrer em uma hora, e não em uma semana. Cardiopatias críticas exigem diagnóstico e conduta imediatos, tornando a espera de uma semana perigosa e fora do protocolo.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Cuidados Neonatais"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:46.027Z"
+  },
+  {
+    "id": "AJUDA_ec54ad0d-cf41-4859-953f-d0814dbddb33",
+    "originalId": "ec54ad0d-cf41-4859-953f-d0814dbddb33",
+    "statement": "Mulher de 45 anos, previamente hígida, vem há 05 dias com dor no hipocôndrio direito. Ultrassom mostrou múltiplos cálculos em vesícula biliar a qual está com paredes espessadas. Apresenta ainda dilatação de vias biliares intra-hepáticas com colédoco de diâmetro normal. Tem leucocitose, colestase e elevação de transaminases nos exames laboratoriais. Sobre o quadro acima, qual assertiva está incorreta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trata-se de colecistite aguda segundo os critérios de Tokyo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A colestase pode ser decorrente da síndrome de Mirizzi.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não há indicação de CPRE visto que o colédoco não apresenta dilatação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "O tratamento ideal é a colecistectomia por videolaparoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A coledocolitíase deve ser afastada com a realização de uma colangiorressonância após tratamento inicial com antibióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve uma paciente com sinais de inflamação aguda na vesícula biliar (dor no hipocôndrio direito, leucocitose, paredes da vesícula espessadas e cálculos) associados a sinais de obstrução biliar (colestase, elevação de transaminases e dilatação de vias biliares intra-hepáticas). O dado crucial é que o colédoco possui diâmetro normal, enquanto as vias intra-hepáticas estão dilatadas. Esse padrão sugere uma obstrução alta (no nível do ducto hepático comum), o que é característico da Síndrome de Mirizzi, na qual um cálculo impactado no infundíbulo da vesícula ou no ducto cístico comprime extrinsecamente o ducto hepático comum.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Trata-se de colecistite aguda segundo os critérios de Tokyo: ESTÁ CORRETA. Os critérios de Tokyo (TG18) para colecistite aguda baseiam-se em: (A) Sinais de inflamação local (dor ou massa no hipocôndrio direito – presente); (B) Sinais de inflamação sistêmica (febre, PCR elevada ou leucocitose – presente); (C) Achados de imagem compatíveis (paredes espessadas, cálculos, líquido pericolecístico – presente). A paciente preenche os três critérios.\n\nb) A colestase pode ser decorrente da síndrome de Mirizzi: ESTÁ CORRETA. Conforme analisado, a dilatação das vias biliares intra-hepáticas com colédoco de calibre preservado é o sinal clássico de obstrução biliar extrínseca provocada por um cálculo biliar impactado, definindo a Síndrome de Mirizzi, que cursa com colestase (aumento de bilirrubinas e enzimas canaliculares).\n\nc) Não há indicação de CPRE, visto que o colédoco não apresenta dilatação: ESTÁ INCORRETA (GABARITO). A indicação de CPRE (Colangiopancreatografia Retrógrada Endoscópica) não depende exclusivamente da dilatação do colédoco, mas sim da evidência de obstrução biliar e da necessidade de intervenção (diagnóstica ou terapêutica). Na Síndrome de Mirizzi ou na suspeita de coledocolitíase com colestase importante, a CPRE pode ser indicada para realizar a drenagem biliar, confirmar a anatomia ou realizar a papilotomia, independentemente do diâmetro do colédoco distal.\n\nd) O tratamento ideal é a colecistectomia por videolaparoscopia: ESTÁ CORRETA. A colecistectomia (retirada da vesícula) é o tratamento definitivo para a colecistite aguda e para a Síndrome de Mirizzi. Embora a Síndrome de Mirizzi aumente o risco de lesão iatrogênica da via biliar e possa exigir conversão para cirurgia aberta, a via laparoscópica continua sendo a abordagem inicial preferencial em centros com experiência.\n\ne) A coledocolitíase deve ser afastada com a realização de uma colangiorressonância após tratamento inicial com antibióticos: ESTÁ CORRETA. Como a paciente apresenta colestase e o ultrassom é um exame de baixa sensibilidade para visualizar cálculos no colédoco (especialmente se ele não estiver dilatado), a colangiorressonância é o exame padrão-ouro não invasivo para avaliar toda a árvore biliar, confirmar a Síndrome de Mirizzi ou excluir cálculos pequenos no colédoco antes da cirurgia definitiva.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": 59.55652820248795,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:46.027Z"
+  },
+  {
+    "id": "AJUDA_ec567099-151e-4f3f-aed2-cf7704f9b16a",
+    "originalId": "ec567099-151e-4f3f-aed2-cf7704f9b16a",
+    "statement": "Um paciente de 60 anos, tabagista há mais de 30 anos e etilista crônico, apresenta uma lesão ulcerada indolor na cavidade oral, notada há aproximadamente 5 meses. Durante a avaliação clínica, observa se que o paciente também apresenta um nódulo endurecido e fixo no pescoço localizado em nível II à direita (figura). Com base no quadro clínico e considerando que a lesão primária está na cavidade oral, qual é o sítio mais provável de origem do tumor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mucosa jugal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Borda da língua.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Gengiva inferior.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Palato duro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve um paciente masculino de 60 anos com os principais fatores de risco para o Carcinoma Espinocelular (CEC) de cabeça e pescoço: tabagismo pesado e etilismo crônico. A presença de uma lesão ulcerada indolor com cinco meses de evolução na cavidade oral, associada a um linfonodo cervical endurecido e fixo, é um quadro clássico de neoplasia maligna com metástase regional.\n\nA imagem mostra uma seta apontando para uma massa na região cervical lateral superior, logo abaixo do ângulo da mandíbula e anteriormente ao músculo esternocleidomastoideo. Esta localização corresponde ao nível II (cadeia jugular alta), que é um dos principais sítios de drenagem linfática da cavidade oral.\n\nANÁLISE DAS ALTERNATIVAS\n\na) Mucosa jugal: Embora o CEC possa ocorrer na mucosa da bochecha, este não é o sítio mais frequente na cavidade oral. Geralmente, tumores nesta região estão associados a traumas crônicos ou hábitos específicos de mascar tabaco, sendo menos comuns que as lesões de língua.\n\nb) Borda da língua: Esta é a alternativa correta. A borda lateral da língua (junto com o assoalho da boca) é o local mais comum de surgimento do carcinoma espinocelular na cavidade oral. Devido à sua rica rede linfática, os tumores de língua apresentam uma alta taxa de metástases cervicais precoces, drenando preferencialmente para os níveis I, II e III. O perfil epidemiológico do paciente e a localização do linfonodo no nível II tornam a borda da língua o sítio primário mais provável.\n\nc) Gengiva inferior: O câncer de gengiva é menos frequente que o de língua. Quando ocorre, costuma apresentar invasão óssea precoce e a drenagem linfática inicial geralmente envolve o nível I (submandibular) antes de atingir o nível II.\n\nd) Palato duro: O palato duro é um dos sítios menos comuns para o carcinoma espinocelular relacionado ao tabaco e álcool. Quando ocorrem neoplasias nesta região, é frequente que sejam originadas de glândulas salivares menores. Além disso, a drenagem linfática do palato duro pode seguir caminhos diferentes, incluindo os linfonodos retrofaríngeos.\n\nCONCLUSÃO\n\nConsiderando a prevalência epidemiológica, o Carcinoma Espinocelular da borda lateral da língua é a principal hipótese diagnóstica para uma úlcera oral crônica em paciente tabagista e etilista, justificando a presença de metástase no nível ganglionar cervical II.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Benignas e Malignas"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f7d59961eea378d74b5e1150047be5ff249f722bbaf7fd14d130578fb16b38a4.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ec567099-151e-4f3f-aed2-cf7704f9b16a_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:46.604Z"
+  },
+  {
+    "id": "AJUDA_ec56db57-9c6a-4d46-b1f6-e1e9d40dfa23",
+    "originalId": "ec56db57-9c6a-4d46-b1f6-e1e9d40dfa23",
+    "statement": "Está sendo elaborado um projeto de pesquisa com o objetivo de avaliar o grau de satisfação de adolescentes e adultos quanto a sua compleição física. A metodologia inclui obtenção de dados antropométricos e entrevista com os participantes individualmente. De acordo com a Resolução CFM nº 2.217, de 27 de setembro de 2018, modificada pelas Resoluções CFM nº 2.222/2018 e 2.226/2019, do Código de Ética Médica, para a participação do adolescente nessa pesquisa, é necessário obter",
+    "options": [
+      {
+        "id": "A",
+        "text": "termo de consentimento livre e esclarecido autorizado somente pelos seus representantes legais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "termo de consentimento livre e esclarecido autorizado pelo adolescente, somente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "termo de consentimento livre e esclarecido autorizado pelo adolescente e pelos seus representantes legais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "termo de assentimento livre e esclarecido assinado pelo adolescente, somente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "termo de assentimento livre e esclarecido assinado pelo adolescente e o termo de consentimento livre e esclarecido autorizado pelos seus representantes legais.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O Código de Ética Médica e as normas de bioética em pesquisa com seres humanos (como a Resolução CNS nº 466/2012) estabelecem regras claras para a inclusão de participantes menores de idade e legalmente incapazes. O ponto fundamental é a diferenciação técnica entre consentimento e assentimento: o participante vulnerável ou menor expressa sua vontade por meio do Termo de Assentimento Livre e Esclarecido (TALE), enquanto seus responsáveis legais expressam a autorização jurídica formal por meio do Termo de Consentimento Livre e Esclarecido (TCLE).\n\nAnálise das alternativas:\n\nAlternativa A está incorreta, pois a obtenção exclusiva da anuência dos responsáveis legais desconsidera a autonomia progressiva do adolescente, que tem o direito de ser esclarecido e manifestar sua vontade de participar do estudo via Termo de Assentimento.\n\nAlternativa B está incorreta, pois o adolescente, sendo civilmente incapaz ou relativamente incapaz, não possui capacidade jurídica plena para autorizar sua participação em pesquisas científicas de forma isolada.\n\nAlternativa C está incorreta, pois comete um erro terminológico. O documento assinado pelo menor de idade é denominado Termo de Assentimento, e não de Consentimento. O consentimento cabe apenas aos participantes plenamente capazes ou aos representantes legais.\n\nAlternativa D está incorreta, pois a assinatura isolada do adolescente no Termo de Assentimento é insuficiente do ponto de vista legal e ético, sendo mandatória a anuência dos responsáveis por meio do consentimento.\n\nAlternativa E está correta, pois reflete exatamente a exigência ética e normativa: a participação do adolescente depende conjuntamente do seu assentimento (TALE), redigido em linguagem acessível e adequada à sua faixa etária, e do consentimento formal e esclarecido (TCLE) fornecido pelos seus representantes legais.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:46.608Z"
+  },
+  {
+    "id": "AJUDA_ec79b877-8b43-4358-9112-e8aa7ba04300",
+    "originalId": "ec79b877-8b43-4358-9112-e8aa7ba04300",
+    "statement": "A Infecção do Trato Urinário (ITU) é uma condição comum na pediatria, afetando crianças de todas as idades, desde recém-nascidos até adolescentes. Caracterizada pela presença de microrganismos patogênicos na urina, a ITU pode provocar sintomas como dor ao urinar, febre e irritabilidade. Assim, avalie as proposições:\n\nI. A Escherichia coli é a bactéria mais comum responsável pelas infecções do trato urinário em crianças, representando até 95% dos casos em meninas.\nII. O bacilo da tuberculose é o agente mais comum responsável por infecções do trato urinário em crianças.\nIII. O Proteus spp é frequentemente associado a quadros obstrutivos de infecções do trato urinário em crianças.\n\nEstá CORRETO o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas I e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apenas I.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Apenas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DAS PROPOSIÇÕES:\n\nPROPOSIÇÃO I (CORRETA): A *Escherichia coli* é o principal agente etiológico das infecções do trato urinário (ITU) em todas as faixas etárias pediátricas, com exceção de alguns períodos no recém-nascido. Nas meninas, devido à uretra mais curta e à proximidade com o ânus, a colonização por bactérias da flora intestinal (gram-negativas) é facilitada, e a *E. coli* chega a representar de 80% a 95% dos casos.\n\nPROPOSIÇÃO II (INCORRETA): O agente mais comum é a *Escherichia coli*. O bacilo da tuberculose (*Mycobacterium tuberculosis*) é uma causa rara de ITU na infância. A tuberculose geniturinária geralmente ocorre por disseminação hematogênica após uma infecção primária pulmonar e costuma apresentar-se como piúria estéril (presença de leucócitos na urina com cultura negativa para bactérias comuns).\n\nPROPOSIÇÃO III (CORRETA): O *Proteus* spp., especialmente o *Proteus mirabilis*, é conhecido por sua capacidade de produzir a enzima urease. Essa enzima quebra a ureia em amônia, o que aumenta o pH da urina (alcalinização). Esse processo favorece a precipitação de cristais de fosfato amoníaco magnesiano, levando à formação de cálculos de estruvita. Esses cálculos podem causar obstrução do fluxo urinário e servir como foco para infecções persistentes e de difícil tratamento.\n\nEXPLICAÇÃO DAS ALTERNATIVAS:\n\nAlternativa a) Apenas II: Incorreta. A proposição II está errada porque a tuberculose não é o agente mais comum.\n\nAlternativa b) Apenas I e III: Correta. Como demonstrado, a *E. coli* é o patógeno predominante (I) e o *Proteus* está classicamente associado à litíase e a quadros obstrutivos (III).\n\nAlternativa c) Apenas I: Incorreta. Embora a proposição I esteja correta, a alternativa está incompleta, pois a proposição III também é verdadeira.\n\nAlternativa d) Apenas II e III: Incorreta. A proposição II é falsa, o que invalida esta opção.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:46.608Z"
+  },
+  {
+    "id": "AJUDA_ec82e5ae-bdff-46f6-be38-bf12ed129526",
+    "originalId": "ec82e5ae-bdff-46f6-be38-bf12ed129526",
+    "statement": "O cuidado pós-operatório tradicionalmente ensinado tem sido cada vez mais questionado e as evidências têm mostrado que muitas condutas e práticas perioperatórias são obsoletas e não têm respaldo científico. São quase empíricas e transmitidas a novos cirurgiões há décadas sem devido questionamento. Assinale verdadeiro (V) ou falso (F) e escolha a alternativa que representa a sequência CORRETA a respeito dos cuidados perioperatórios, tendo como base os atuais estudos de medicina baseada em evidência:\n\n( ) A realimentação precoce após operações envolvendo ressecções e anastomoses intestinais deve ser estimulada e pode ser conduzida sem riscos adicionais e com potenciais benefícios aos pacientes como: alta mais precoce, menor incidência de complicações infecciosas e diminuição de custos.\n( ) O jejum total pré-operatório é muito importante e deve ser mantido por, no mínimo, 10 horas antes do procedimento, evitando assim os riscos de broncoaspiração na anestesia.\n( ) O uso de sondas nasogástricas, vesicais e drenos no leito cirúrgico são medidas importantes para o adequado controle de fístulas e balanço hídrico no pós-operatório, portanto, seu uso é fundamental e deve ser estimulado em todas as intervenções no trato gastrintestinal.\n( ) O preparo de cólon para cirurgias eletivas colorretais deve ser feito rotineiramente e é importante para a segurança da anastomose e diminuição do risco de infecção.\n( ) O repouso no leito é importante para a recuperação pós-operatória em cirurgias de grande porte. O paciente deve ser estimulado a permanecer deitado o maior tempo possível para melhorar a cicatrização, evitar hérnias abdominais e estimular o retorno do trânsito intestinal.",
+    "options": [
+      {
+        "id": "A",
+        "text": "FFFFF.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "FVVVF.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "VFFFF.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "VFVVF.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda as mudanças de paradigmas no cuidado perioperatório, consolidadas por protocolos como o ERAS (Enhanced Recovery After Surgery) e, no Brasil, o projeto ACERTO (Aceleração da Recuperação Total Pós-Operatória). Esses protocolos substituem condutas baseadas em tradição por práticas baseadas em evidências científicas.\n\nAnálise das assertivas:\n\n(V) A realimentação precoce após operações envolvendo ressecções e anastomoses intestinais deve ser estimulada: Verdadeiro. Estudos demonstram que o jejum pós-operatório prolongado é desnecessário e prejudicial. A dieta precoce (em até 24 horas) reduz o tempo de internação, as taxas de infecção e não aumenta o risco de deiscência de anastomoses, mesmo em cirurgias colorretais.\n\n(F) O jejum total pré-operatório deve ser mantido por, no mínimo, 10 horas antes do procedimento: Falso. O jejum prolongado aumenta a resistência insulínica e o estresse metabólico. As diretrizes modernas recomendam jejum de 8 horas para sólidos (refeição completa), 6 horas para refeições leves e permitem a ingestão de líquidos claros com carboidratos (como maltodextrina) até 2 horas antes da indução anestésica, o que melhora o bem-estar do paciente e a resposta orgânica ao trauma.\n\n(F) O uso de sondas nasogástricas, vesicais e drenos no leito cirúrgico é uma medida importante e seu uso deve ser estimulado: Falso. O uso rotineiro de sonda nasogástrica (SNG) e drenos está associado à maior incidência de complicações respiratórias, febre e atraso no retorno da função intestinal. A SNG e os drenos devem ser utilizados de forma seletiva e retirados o mais precocemente possível. A cateterização vesical também deve ser evitada ou retirada rapidamente para prevenir infecção urinária.\n\n(F) O preparo de cólon para cirurgias eletivas colorretais deve ser feito rotineiramente: Falso. Evidências atuais mostram que o preparo mecânico do cólon não reduz as taxas de deiscência de anastomose ou infecção de sítio cirúrgico em cirurgias eletivas. Além disso, pode causar desidratação e distúrbios hidroeletrolíticos no paciente idoso ou debilitado. Atualmente, o preparo é considerado opcional ou reservado para casos específicos (como a necessidade de palpação de pequenos tumores).\n\n(F) O repouso no leito é importante para a recuperação pós-operatória: Falso. A imobilização prolongada no leito é um dos principais fatores de risco para tromboembolismo venoso (TEV), pneumonia e perda de massa muscular (sarcopenia). A mobilização ultraprecoce (ainda no dia da cirurgia) é fundamental para reduzir complicações e estimular o retorno precoce do trânsito intestinal.\n\nConclusão:\nA sequência correta é V - F - F - F - F, o que corresponde à alternativa (c).",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Perioperatório",
+      "Temas Gerais em Cirurgia",
+      "Nutrição em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:46.608Z"
+  },
+  {
+    "id": "AJUDA_ec833f05-1cb1-4a66-b4b8-39281fefb82a",
+    "originalId": "ec833f05-1cb1-4a66-b4b8-39281fefb82a",
+    "statement": "O medicamento de escolha no tratamento de pediculose em um pré-escolar com 2 anos de idade, previamente saudável, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "peróxido de benzoila.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "albendazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tiabendazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "nitazoxamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "permetrina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A pediculose do couro cabeludo, causada pelo Pediculus humanus capitis, é uma infestação parasitária comum na infância. O tratamento visa à eliminação tanto dos parasitas adultos quanto das lêndeas (ovos).\n\nAnálise das alternativas:\n\na) Peróxido de benzoíla: Incorreta. Este medicamento possui propriedades queratolíticas e antibacterianas, sendo amplamente utilizado no tratamento da acne vulgar, não possuindo indicação para o tratamento de ectoparasitoses como a pediculose.\n\nb) Albendazol: Incorreta. É um anti-helmíntico de amplo espectro utilizado para tratar infestações por vermes intestinais (como ascaridíase e ancilostomíase). Embora existam estudos sobre o uso de doses altas de albendazol para pediculose resistente, ele não é, de forma alguma, o medicamento de escolha inicial.\n\nc) Tiabendazol: Incorreta. É um agente antifúngico e antiparasitário indicado principalmente para o tratamento da Larva Migrans Cutânea (bicho geográfico) e estrongiloidíase. Não é utilizado para o tratamento de piolhos.\n\nd) Nitazoxamida: Incorreta. Trata-se de um antiparasitário de amplo espectro indicado para protozoários e helmintos intestinais. Não apresenta eficácia comprovada como primeira linha para a pediculose capitis.\n\ne) Permetrina: Correta. A permetrina a 1% em loção ou xampu é considerada o tratamento de escolha (padrão-ouro) para a pediculose em crianças acima de 2 meses de idade. É um piretroide sintético que atua no sistema nervoso do inseto, causando paralisia e morte. Apresenta alta eficácia, baixa toxicidade humana e é de fácil aplicação. O protocolo geralmente recomenda uma aplicação inicial seguida de uma segunda aplicação após 7 a 10 dias para atingir os parasitas que eclodiram das lêndeas remanescentes.\n\nConclusão: Para um pré-escolar de 2 anos, a permetrina 1% é o tratamento de primeira linha devido ao seu excelente perfil de segurança e eficácia.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Dermatoses Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:46.608Z"
+  },
+  {
+    "id": "AJUDA_ec861df8-1082-4ea9-afc0-e3fcbcc8ca5e",
+    "originalId": "ec861df8-1082-4ea9-afc0-e3fcbcc8ca5e",
+    "statement": "Recém-nascido termo nasceu de parto cesáreo de urgência por prolapso de cordão e com líquido amniótico meconial. Apresentou-se hipotônico e sem movimentos respiratórios. Foi colocado sob fonte de calor radiante e secado. Foram iniciadas as manobras de reanimação e compressões torácicas, realizada intubação orotraqueal com ventilação com pressão positiva, havendo boa expansibilidade. Após 30 segundos de aplicação destas medidas, permaneceu sem resposta adequada. \nAssinale a alternativa que indica o próximo passo na assistência a essa criança.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar expansão com 10ml/kg de Solução fisiológica 0,9%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Administrar adrenalina via acesso venoso umbilical.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Manter procedimentos por 2 minutos e reavaliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar aspiração das vias aéreas devido ao mecônio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Administrar bicarbonato de sódio, já que a parada cardiorrespiratória foi prolongada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o algoritmo de reanimação neonatal da Sociedade Brasileira de Pediatria (SBP). O caso descreve um recém-nascido a termo que, após manobras iniciais e ventilação por pressão positiva (VPP) com intubação, não apresentou melhora da frequência cardíaca, evoluindo para a etapa de compressões torácicas sincronizadas com a ventilação.\n\nSegundo as diretrizes atuais, se, após 60 segundos de massagem cardíaca técnica e adequadamente realizada, em sincronia com a ventilação com oxigênio a 100%, a frequência cardíaca permanecer abaixo de 60 batimentos por minuto (bpm), o próximo passo é o uso de medicações.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A expansão volêmica com soro fisiológico a 0,9% está indicada na reanimação neonatal apenas quando há suspeita de hipovolemia (palidez cutânea, pulsos finos) ou quando o recém-nascido não responde adequadamente às outras manobras de reanimação, incluindo a adrenalina. Não é a primeira escolha medicamentosa no cenário de bradicardia persistente.\n\nAlternativa b) Correta. A adrenalina é a medicação de escolha quando a frequência cardíaca permanece inferior a 60 bpm após a ventilação e as compressões torácicas eficazes. A via preferencial é a venosa, através da cateterização de urgência da veia umbilical, devido à sua rapidez e eficácia na absorção. A via endotraqueal pode ser utilizada uma única vez enquanto o acesso venoso é providenciado, mas a via venosa é o padrão-ouro.\n\nAlternativa c) Incorreta. Na reanimação neonatal, o tempo é crítico. Aguardar 2 minutos sem intervir com medicações quando a frequência cardíaca está abaixo de 60 bpm após compressões efetivas aumenta significativamente o risco de óbito ou sequelas neurológicas graves. A reavaliação ocorre em intervalos menores (30 a 60 segundos).\n\nAlternativa d) Incorreta. De acordo com as diretrizes atuais da SBP e do ILCOR, a presença de mecônio, mesmo em recém-nascidos deprimidos, não justifica a aspiração traqueal de rotina. O foco principal deve ser a ventilação pulmonar. Como o paciente já está intubado e apresenta boa expansibilidade torácica, a via aérea está pérvia e a ventilação está sendo oferecida, não havendo indicação de nova aspiração neste momento crítico.\n\nAlternativa e) Incorreta. O uso de bicarbonato de sódio não é recomendado rotineiramente na reanimação neonatal imediata. Ele pode causar efeitos adversos como hipernatremia, hemorragia intracraniana e produção excessiva de CO₂, que pode piorar a acidose intracelular se a ventilação não for perfeita. Sua indicação é restrita a casos muito específicos de acidose metabólica prolongada e documentada que não responde a outras medidas.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Reanimação Neonatal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:46.608Z"
+  },
+  {
+    "id": "AJUDA_ec8c52da-4a67-4b88-912b-f35d4657d7f7",
+    "originalId": "ec8c52da-4a67-4b88-912b-f35d4657d7f7",
+    "statement": "A análise e a abordagem das pessoas que consultam com frequência na APS devem ser singulares e personalizadas. A recorrência frequente à consulta é um processo complexo associado a várias dimensões e a múltiplos fatores, muitos dos quais estão fora do controle do médico. Constituem Dimensões e fatores associados à procura frequente de consultas em medicina de família e comunidade:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pessoais: Sexo Masculino e idade jovem/economicamente ativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Família, problemas e acontecimentos vitais: casal em união estável com filhos pequenos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Doenças, problemas e situação de saúde: doenças agudas e autolimitadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Médicas e relação médico-pessoa: Atitude (paternalista versus capacitadora).",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Essa questão aborda o fenômeno da hiperfrequência (ou procura frequente) na Atenção Primária à Saúde (APS), um tema central na Medicina de Família e Comunidade. O fenômeno é multifatorial e envolve dimensões do paciente, do contexto social e do próprio sistema de saúde.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: Em termos de perfil demográfico, os estudos mostram que a procura frequente está mais associada ao sexo feminino e aos extremos de idade (crianças pequenas e idosos). Homens jovens e economicamente ativos são, historicamente, o grupo que menos procura a APS devido a barreiras de acesso, horários de trabalho e questões culturais de gênero.\n\nAlternativa (b) Incorreta: Embora o ciclo de vida familiar influencie a utilização dos serviços, a hiperfrequência está mais fortemente ligada a eventos vitais estressores, crises familiares, isolamento social, luto ou desemprego. Um casal em união estável com filhos pequenos pode ter consultas frequentes por conta das crianças, mas isso costuma ser parte da puericultura normativa, e não necessariamente o padrão de hiperfrequência complexa que a questão discute.\n\nAlternativa (c) Incorreta: Doenças agudas e autolimitadas geram consultas esporádicas. Os fatores de saúde que realmente impulsionam a procura frequente são as condições crônicas de saúde, a multimorbidade (presença de várias doenças simultâneas), transtornos mentais comuns (como ansiedade e depressão) e sintomas medicamente inexplicáveis (somatização).\n\nAlternativa (d) Correta: Esta alternativa identifica a dimensão do profissional e do sistema. A relação médico-pessoa é um fator determinante na frequência das consultas. Uma atitude paternalista do médico pode gerar dependência no paciente, fazendo com que ele retorne para decisões simples que ele mesmo poderia tomar. Por outro lado, uma atitude capacitadora (baseada no Método Clínico Centrado na Pessoa) busca a autonomia do indivíduo. Além disso, a forma como o médico maneja a incerteza e a organização da agenda também influenciam diretamente se o paciente se tornará um frequentador assíduo.\n\nPortanto, a alternativa (d) está correta ao apontar que a atitude médica é uma dimensão fundamental que pode estimular ou reduzir a recorrência de consultas.",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:46.608Z"
+  },
+  {
+    "id": "AJUDA_ec8f9741-d5ec-4d57-8d61-32686b203286",
+    "originalId": "ec8f9741-d5ec-4d57-8d61-32686b203286",
+    "statement": "Uma senhora de 54 anos procurou o atendimento médico por dor na região inguinofemoral esquerda com irradiação para o lábio maior do mesmo lado. Ao exame físico, percebeu-se uma protrusão local, porém o médico teve dúvida quanto ao diagnóstico e solicitou um exame ultrassonográfico. O ultrassonografista telefonou para o médico e disse-lhe que, de fato, era uma hérnia e era a mais frequentemente encontrada nessa região. Com base apenas nessas informações, dentre os itens seguintes, assinale qual era essa hérnia.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hérnia incisional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hérnia inguinal indireta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hérnia inguinal direta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hérnia femoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, o ponto fundamental é o conhecimento epidemiológico das hérnias da região inguinal e a correta interpretação do enunciado.\n\nAlternativa (a) Incorreta. A hérnia incisional ocorre obrigatoriamente sobre uma cicatriz cirúrgica prévia, decorrente de uma falha na síntese ou cicatrização de uma laparotomia anterior. O enunciado não menciona antecedentes cirúrgicos da paciente, o que torna essa hipótese improvável e, estatisticamente, ela não é a mais comum da região inguinofemoral.\n\nAlternativa (b) Correta. Este é o diagnóstico que segue a regra estatística da cirurgia geral: a hérnia inguinal indireta é o tipo mais comum de hérnia em ambos os sexos (homens e mulheres) e em todas as faixas etárias. No caso da mulher, a hérnia indireta atravessa o anel inguinal interno e percorre o canal inguinal acompanhando o ligamento redondo do útero, o que explica a sintomatologia de dor com irradiação para o lábio maior do mesmo lado. O comentário do ultrassonografista sobre ser a \"mais frequentemente encontrada\" é a chave para confirmar essa alternativa.\n\nAlternativa (c) Incorreta. A hérnia inguinal direta é aquela que se projeta através da musculatura enfraquecida da parede posterior do canal inguinal (triângulo de Hesselbach), medialmente aos vasos epigástricos inferiores. Embora seja comum em pacientes de meia-idade e idosos, sua incidência absoluta é menor do que a da hérnia inguinal indireta.\n\nAlternativa (d) Incorreta. Esta alternativa é uma \"pegadinha\" clássica em provas de residência. É um fato médico que a hérnia femoral é muito mais comum no sexo feminino do que no sexo masculino (devido à bacia mais larga e ao espaço femoral mais amplo nas mulheres). No entanto, mesmo sendo mais comum em mulheres do que em homens, a hérnia femoral NÃO é a mais comum nas mulheres; nesse grupo, a hérnia inguinal indireta ainda ocupa o primeiro lugar em frequência. Portanto, a afirmação do ultrassonografista invalida esta opção.",
+    "exam": "SCM-BH",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/88a2d818a47c45eafaf325467cad623a393d9a73b5a016ef2f8798bdb0796d91.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bb63b430b368cd6d7307f9d6266c48c8c0ef2c28865e8bc9cc55284f008e8bb5.pdf"
+    },
+    "collectedAt": "2026-10-24T18:08:46.608Z"
+  }
+]

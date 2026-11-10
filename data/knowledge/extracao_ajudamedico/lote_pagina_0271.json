@@ -1,0 +1,509 @@
+[
+  {
+    "id": "AJUDA_4b2fdc8e-bf22-46f4-bfed-1d507226661e",
+    "originalId": "4b2fdc8e-bf22-46f4-bfed-1d507226661e",
+    "statement": "Homem de 65 anos, previamente hígido, comparece à consulta preocupado com um achado visto incidentalmente em uma tomografia computadorizada de tórax, realizada para investigação de dor torácica atípica. É ex-tabagista com carga de 40 maços-ano, tendo interrompido o tabagismo há 10 anos. Sem outros antecedentes ou comorbidades relevantes. O exame evidenciou um nódulo pulmonar solitário sólido, medindo 7mm de diâmetro, localizado perifericamente e com margens regulares. Qual é a conduta adequada para o manejo desse nódulo pulmonar solitário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Repetir a tomografia computadorizada de tórax em 6 a 12 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar tomografia por emissão de pósitrons (PET-CT).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar biópsia transtorácica por agulha fina guiada por TC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Indicar ressecção cirúrgica imediata por videotoracoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A conduta diante de um achado incidental de nódulo pulmonar solitário (NPS) é pautada pelo risco de malignidade do paciente e pelas características do nódulo (tamanho, densidade e morfologia). Para a análise deste caso, utilizamos as diretrizes da Fleischner Society (2017), amplamente adotadas em concursos médicos.\n\nO paciente em questão apresenta alto risco para câncer de pulmão devido à idade (65 anos) e à carga tabágica significativa (40 maços-ano). O nódulo é sólido, pequeno (7 mm) e possui margens regulares.\n\nAnálise das alternativas:\n\nAlternativa (a): Correta. De acordo com os critérios da Fleischner Society para nódulos sólidos em pacientes de alto risco, nódulos solitários com tamanho entre 6 e 8 mm devem ser acompanhados com uma nova tomografia computadorizada de tórax em 6 a 12 meses. Caso o nódulo permaneça estável, uma segunda reavaliação entre 18 e 24 meses pode ser indicada.\n\nAlternativa (b): Incorreta. O PET-CT é uma ferramenta útil para avaliar a atividade metabólica de nódulos, mas sua acurácia é limitada em lesões menores que 8 a 10 mm. Por isso, as diretrizes sugerem o uso do PET-CT ou acompanhamento mais curto apenas para nódulos sólidos maiores que 8 mm.\n\nAlternativa (c): Incorreta. A biópsia transtorácica é um procedimento invasivo indicado para lesões com alta suspeição de malignidade ou quando é necessário diagnóstico histológico para planejamento terapêutico. Para um nódulo de 7 mm, o risco de complicações (como pneumotórax) e a chance de um resultado falso-negativo por erro de amostragem são altos, tornando o seguimento radiológico a opção preferencial.\n\nAlternativa (d): Incorreta. A ressecção cirúrgica, geralmente por videotoracoscopia, é reservada para casos em que a probabilidade de malignidade é muito alta ou quando há crescimento documentado durante o acompanhamento radiológico. Indicar cirurgia imediata para um nódulo de 7 mm com margens regulares seria uma conduta excessivamente agressiva e fora dos protocolos atuais.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Neoplasias Pulmonares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:53.810Z"
+  },
+  {
+    "id": "AJUDA_4b321986-8106-4282-9b59-391a16355761",
+    "originalId": "4b321986-8106-4282-9b59-391a16355761",
+    "statement": "Em um município do interior, uma Unidade Básica de Saúde (UBS) de área rural identifica aumento de casos de diarreia aguda em crianças menores de 5 anos, principalmente em famílias que vivem próximas a um rio que historicamente abastece a região. Ao investigar, constata que essas famílias não possuem acesso a saneamento básico adequado e utilizam a água do rio para consumo e higiene, sem tratamento prévio. Amostras de água coletadas em pontos de uso comum revelam a presença de coliformes fecais em níveis elevados. Diante desse quadro, a ação de vigilância ambiental mais imediata a ser tomada seria",
+    "options": [
+      {
+        "id": "A",
+        "text": "organizar, em caráter emergencial, a coleta de exames parasitológicos de fezes e avaliar a necessidade de tratamento antiparasitário coletivo na comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "registrar os casos de diarreia no Sistema de Informação de Agravos de Notificação (SINAN) e articular investigação para subsidiar a definição de medidas adicionais de controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "intensificar ações educativas sobre higiene das mãos, preparo seguro de alimentos e cuidados básicos de higiene doméstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "orientar a fervura da água utilizada para beber e cozinhar por, pelo menos, 5 a 10 minutos, como medida provisória até que soluções de saneamento sejam implementadas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "implementar a cloração de emergência nos pontos de coleta de água do rio.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico e epidemiológico descreve um surto de Doença Diarreica Aguda (DDA) associado ao consumo de água contaminada por coliformes fecais em uma comunidade rural desprovida de saneamento básico. A abordagem da Vigilância em Saúde Ambiental voltada para a qualidade da água para consumo humano (VIGIAGUA) exige intervenção imediata sobre o veículo de transmissão (a água) para cessar o surto.\n\nAlternativa A - Incorreta: Trata-se de uma conduta de caráter clínico e epidemiológico individual ou assistencial, não de vigilância ambiental. O tratamento antiparasitário em massa não é indicado para surtos de diarreia aguda indiferenciada e não impede que as pessoas continuem se reinfectando ao consumir água contaminada.\n\nAlternativa B - Incorreta: O registro e a notificação são medidas administrativas e de vigilância epidemiológica fundamentais para monitoramento, mas não constituem uma intervenção ambiental prática e imediata para interromper a via de contaminação e proteger a população naquele momento.\n\nAlternativa C - Incorreta: Embora as medidas de higiene pessoal e dos alimentos sejam importantes na atenção primária, elas são insuficientes de forma isolada quando a fonte primária de ingestão diária (a água do rio) está comprovadamente contaminada por coliformes fecais.\n\nAlternativa D - Correta: A fervura da água utilizada para ingestão e cocção de alimentos por período adequado (ferver ativamente) é a medida de desinfecção domiciliar mais acessível, rápida e eficaz para inativar bactérias, vírus e protozoários patogênicos. Trata-se da ação de vigilância ambiental de emergência preconizada para interromper o consumo de água imprópria até que soluções estruturais sejam implantadas.\n\nAlternativa E - Incorreta: A cloração direta em corpos d'água lóticos (rios e riachos com água corrente) é tecnicamente inviável e ineficaz, pois a correnteza impede a manutenção da concentração adequada de cloro e o tempo de contato necessário para a desinfecção. A cloração deve ser feita na água já captada em reservatórios ou recipientes domiciliares.\n\nPortanto, a alternativa correta é a D.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Vigilância em Saúde",
+      "Medidas de Saúde Coletiva",
+      "Diarreia",
+      "Atenção Primária à Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:53.810Z"
+  },
+  {
+    "id": "AJUDA_4b3880cd-97ff-4c91-9d25-5485f0d8cfe6",
+    "originalId": "4b3880cd-97ff-4c91-9d25-5485f0d8cfe6",
+    "statement": "Criança de 7 anos comparece à Unidade de Saúde com quadro de febre há três dias, dor abdominal leve e exantema petequial em tronco. Apresentou hoje um episódio de vomito. Realizado teste rápido para dengue com resultado positivo. Assinale a alternativa que descreve a MELHOR conduta a ser instituída neste momento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fazer hidratação oral e coleta de hemograma, avaliando o resultado assim que disponível.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Fazer hidratação oral e manter em observação por 48 horas na unidade de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fazer hidratação oral em casa e retornar à unidade de saúde no dia da melhora da febre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar hidratação venosa em leito de internação hospitalar com propedeutica laboratorial completa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo clínico da dengue em pediatria, fundamentado nas diretrizes do Ministério da Saúde. Para resolvê-la, é fundamental classificar corretamente o paciente em um dos grupos de estadiamento (A, B, C ou D).\n\nO paciente apresenta febre e petéquias no tronco. De acordo com o protocolo vigente, a presença de manifestações hemorrágicas espontâneas na pele (como petéquias) ou prova do laço positiva, na ausência de sinais de alarme, classifica o paciente obrigatoriamente no Grupo B.\n\nAnálise das alternativas:\n\na) Correta. O manejo do Grupo B exige a solicitação obrigatória de um hemograma completo. Enquanto o resultado do exame é aguardado, deve-se iniciar a hidratação oral imediata (reposição volêmica conforme o peso da criança). A conduta subsequente (internação ou acompanhamento ambulatorial) dependerá dos resultados laboratoriais, especificamente do hematócrito (para verificar hemoconcentração) e da contagem de plaquetas.\n\nb) Incorreta. A observação por 48 horas em unidade de saúde sem a realização de exames laboratoriais não é a conduta preconizada para o Grupo B. A observação em leito de transição é indicada para pacientes do Grupo C ou enquanto se aguarda o resultado dos exames do Grupo B para definir o destino do paciente.\n\nc) Incorreta. Esta conduta seria aplicada ao Grupo A (pacientes sem sinais de alarme, sem condições especiais e sem manifestações hemorrágicas). Como a criança apresenta petéquias, ela não pode ser enviada para casa sem a avaliação laboratorial prévia (hemograma), pois as petéquias indicam maior risco de evolução para formas graves.\n\nd) Incorreta. A hidratação venosa e a internação hospitalar são indicadas para os Grupos C (presença de sinais de alarme) e D (dengue grave/choque). Embora o paciente tenha apresentado um episódio de vômito e dor abdominal, o enunciado descreve a dor como leve e apenas um episódio isolado de vômito, o que não preenche os critérios de \"dor abdominal intensa e contínua\" ou \"vômitos persistentes\" que definiriam o Grupo C. Portanto, a hidratação venosa imediata seria precoce neste momento.\n\nResumo do Manejo para o Grupo B:\n1. Hidratação oral imediata.\n2. Solicitação obrigatória de Hemograma Completo.\n3. Avaliação do hematócrito: se houver hemoconcentração, o paciente é reclassificado para o Grupo C e deve receber hidratação venosa. Se o hematócrito estiver normal, pode-se considerar o seguimento ambulatorial com reavaliação diária.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b2d89b37aff8bbbc849dd12a5ff88cee3c602b7eb94c4e0ce8e62e6e804d11fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2264df430fcecc67e138cc91d683efc4a27144b1a95925f4f43969b0de6f25b3.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:53.810Z"
+  },
+  {
+    "id": "AJUDA_4b3a5482-97cb-4050-94a4-e54a2cf24f33",
+    "originalId": "4b3a5482-97cb-4050-94a4-e54a2cf24f33",
+    "statement": "Paciente, sexo feminino, 65 anos, com antecedente de diabetes mellitus 2, há mais de 20 anos, em tratamento médico irregular e sem controle das doenças de base. Deu entrada no hospital universitário com queixa de inapetência, astenia e sonolência, iniciados há 2 dias. O acompanhante relata que nas últimas 24h os sintomas pioraram e vêm evoluindo com náuseas e vômitos. Nega febre, diarreia, redução da excreção urinária, sintomas gripais ou quadro semelhante anteriormente. Acompanhante informa que o paciente está em uso apenas das medicações domiciliares: sinvastatina 20 mg/dia e metformina 1000 mg/dia. Na inspeção física: frequência cardíaca de 120 bpm, frequência respiratória de 25 rpm, saturação 96%, PA 120/80 mmHg, sem alteração em auscultas cardíacas e respiratória, dor a palpação profunda de epigástrio. Exames Complementares: HGT: 192 mg/dL ; hemoglobina: 11.2 g/dl ; hematócrito: 33% ; VCM: 88 fL; HCM: 28 pg ; leucócitos: 6710/mm³ ; eosinófilos: 300/mm³ ; segmentados: 3800/mm³; linfócitos totais: 2410/mm³; monócitos: 200/mm²; plaquetas: 170.000/mm³ ; creatinina: 4.1 mg/dL ; ureia: 104 mg/dL; sumário de urina sem alterações; gasometria arterial: pH 7.18 ; HCO3: 12 mmol/L ; PCO2: 22 mmHg ; lactato 6.3 mmol/L ; BE: - 2 mmol/L ; potássio: 5.9mmol/L; sódio: 138 mmol/L; cloro: 108 mmol/L; albumina sérica: 3.0 mg/dL. Sobre o caso, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A alcalose respiratória se deve à compensação pulmonar com liberação pO2 na tentativa de normalizar o PH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A acidose metabólica com ânion gap elevado se deve à produção de ácido lático secundário ao uso de metformina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A acidose lática por uso metformina ocorre em casos em que seu uso está inadequado: contraindicada em TFG < 45mL/min/1.73m2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reposição de bicarbonato não é uma alternativa apropriada para o caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso clínico descreve uma paciente idosa, portadora de diabetes mellitus tipo 2 com controle irregular, que apresenta sintomas inespecíficos (astenia, sonolência, náuseas e vômitos). O exame físico revela taquicardia (120 bpm) e taquipneia (25 rpm), sugerindo uma resposta compensatória a um distúrbio interno.\n\nOs exames laboratoriais são a chave para o diagnóstico:\n1. Insuficiência renal aguda ou crônica agudizada: creatinina de 4,1 mg/dL e ureia de 104 mg/dL.\n2. Acidose metabólica grave: pH 7,18 e bicarbonato (HCO3) de 12 mmol/L.\n3. Hiperlactatemia: lactato de 6,3 mmol/L (valor normal geralmente abaixo de 2,0).\n4. Hipercalemia: potássio de 5,9 mmol/L.\n\nA associação de uso de metformina, insuficiência renal grave e acidose lática configura o diagnóstico de Acidose Lática Associada à Metformina (MALA). A metformina é excretada pelos rins; quando há falência renal, o fármaco se acumula, inibindo a gliconeogênese hepática e favorecendo a conversão de piruvato em lactato.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nALTERNATIVA A (INCORRETA): A paciente apresenta uma acidose metabólica primária. A taquipneia (aumento da frequência respiratória) é um mecanismo de compensação pulmonar que visa reduzir os níveis de pCO2 (que está em 22 mmHg) para tentar elevar o pH sanguíneo. Esse processo ocorre pela eliminação (washout) de dióxido de carbono (CO2) e não por liberação de pO2. Além disso, o termo correto para a compensação de uma acidose metabólica não é \"alcalose respiratória\", mas sim \"resposta respiratória compensatória\".\n\nALTERNATIVA B (CORRETA): Para avaliar uma acidose metabólica, devemos calcular o ânion gap (AG), que representa os ânions não mensurados no plasma. A fórmula é: AG = sódio - (cloro + bicarbonato). Aplicando os valores da questão: AG = 138 - (108 + 12) = 138 - 120 = 18 mEq/L. O valor normal do AG varia entre 8 e 12 mEq/L. Portanto, a paciente possui uma acidose metabólica com ânion gap elevado, e o principal ácido responsável por esse aumento, neste cenário clínico, é o ácido lático, cujo acúmulo é secundário ao uso de metformina em vigência de falência renal.\n\nALTERNATIVA C (INCORRETA): De acordo com as diretrizes atuais (ADA e KDIGO), a metformina é contraindicada de forma absoluta apenas quando a taxa de filtração glomerular (TFG) é inferior a 30 mL/min/1,73 m². Na faixa entre 30 e 45 mL/min/1,73 m², o medicamento deve ter sua dose reduzida (geralmente para no máximo 1.000 mg/dia) e não deve ser iniciado em novos pacientes, mas o uso não é estritamente proibido se o paciente já estiver em tratamento estável e sob monitoramento. No caso da questão, a creatinina de 4,1 indica uma TFG muito abaixo de 30, o que justifica a toxicidade.\n\nALTERNATIVA D (INCORRETA): A reposição de bicarbonato de sódio é um tema debatido, mas em casos de acidose metabólica grave com pH abaixo de 7,1 ou 7,2, ela pode ser indicada como medida de suporte temporário para estabilização hemodinâmica e proteção contra arritmias enquanto se aguarda o tratamento definitivo (que, neste caso, é a hemodiálise para remoção da metformina e do lactato). Portanto, não se pode afirmar categoricamente que \"não é uma alternativa apropriada\". No contexto de pH 7,18, ela pode, sim, ser considerada.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Distúrbios Ácido-Básicos",
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:53.810Z"
+  },
+  {
+    "id": "AJUDA_4b43998f-4f9b-45dc-9e05-a76d6409867f",
+    "originalId": "4b43998f-4f9b-45dc-9e05-a76d6409867f",
+    "statement": "O cirurgião geral frequentemente é acionado para auxiliar no diagnóstico (biópsia) e estadiamento de linfomas. O conhecimento sobre o Linfoma de Hodgkin (LH) e Não-Hodgkin (LNH) é fundamental. Analise as afirmativas a seguir:\n\nI. A biópsia excisional de linfonodo íntegro é o padrão-ouro para o diagnóstico histopatológico de linfomas, devendo-se evitar a punção aspirativa por agulha fina (PAAF) como método único, pois esta não preserva a arquitetura nodal necessária para classificação.\nII. No estadiamento do Linfoma de Hodgkin, a laparotomia exploradora com esplenectomia (estadiamento cirúrgico) é atualmente mandatória em todos os pacientes para definir a necessidade de quimioterapia adjuvante.\nIII. Os sintomas B (febre > 38°C, sudorese noturna profusa e perda ponderal > 10% em 6 meses) são fatores prognósticos importantes e influenciam o estadiamento de Ann Arbor.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "II apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I e III apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das afirmativas:\n\nAfirmativa I (Correta): Para o diagnóstico preciso de linfomas, a análise da arquitetura tecidual é fundamental. O patologista precisa observar como as células neoplásicas se organizam no linfonodo (se de forma folicular, difusa ou infiltrando áreas específicas). A punção aspirativa por agulha fina (PAAF) fornece apenas material citológico (células soltas), o que é insuficiente para definir o subtipo histológico na imensa maioria das vezes. Portanto, a biópsia excisional, que retira o linfonodo inteiro, permanece como o padrão-ouro. Em casos selecionados em que a cirurgia é inviável, a biópsia por agulha grossa (Core Biopsy) pode ser utilizada, mas a PAAF isolada não é recomendada para o diagnóstico inicial.\n\nAfirmativa II (Incorreta): Historicamente, a laparotomia de estadiamento com esplenectomia era realizada para identificar doença oculta no abdome. No entanto, com o advento de métodos de imagem modernos e altamente sensíveis, como a tomografia computadorizada e, principalmente, o PET-CT, o estadiamento tornou-se essencialmente clínico-radiológico. Hoje, a conduta é conservadora em relação à cirurgia de estadiamento, que caiu em desuso e não é mais mandatória para os pacientes, uma vez que os protocolos de quimioterapia atuais são eficazes mesmo em doenças sistêmicas.\n\nAfirmativa III (Correta): Os sintomas B são critérios clássicos de gravidade e fazem parte do sistema de estadiamento de Ann Arbor. Eles são definidos como: febre inexplicada acima de 38 graus Celsius, sudorese noturna profusa (que obriga o paciente a trocar a roupa de cama) e perda ponderal não intencional superior a 10% do peso corporal nos últimos 6 meses. A presença desses sintomas é indicada pela letra B junto ao estágio (ex: IIB), enquanto sua ausência é indicada pela letra A (ex: IIA). Pacientes com sintomas B geralmente apresentam pior prognóstico e podem necessitar de esquemas terapêuticos mais intensos.\n\nConclusão: Como as afirmativas I e III estão corretas e a afirmativa II está incorreta, a alternativa correta é a letra (d).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Leucemias",
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:53.810Z"
+  },
+  {
+    "id": "AJUDA_4b46b4a1-b844-4da0-adf6-d84d4ead0dbd",
+    "originalId": "4b46b4a1-b844-4da0-adf6-d84d4ead0dbd",
+    "statement": "João, 10 anos, mora em Careiro Castanho e está há 12 dias com febre. Refere também, cefaleia, mialgia e dores abdominais. Previamente hígido sem histórico de doenças agudas ou crônicas. Fez exame de gota espessa que revelou diagnóstico de Plasmodium vivax 2+. Qual a melhor conduta neste caso, considerando que a criança apresenta G6PD normal:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cloroquina por 3 dias e Primaquina por 7 dias.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Cloroquina por 3 dias e Tafenoquina dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Artemeter + lumefantrina por 3 dias e Primaquina dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Artemeter + lumefantrina por 3 dias e Primaquina por 14 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico de febre prolongada, cefaleia e mialgia em paciente proveniente de área endêmica (Careiro Castanho, Amazonas), com gota espessa positiva para Plasmodium vivax direciona para o tratamento padrão de malária não complicada por essa espécie. O objetivo do tratamento no P. vivax é eliminar as formas sanguíneas (esquizontocida hemático) e as formas latentes no fígado (hipnozoitocida), evitando recaídas.\n\nAlternativa (a): Correta. Segundo o Guia de Tratamento de Malária do Ministério da Saúde, o esquema de primeira escolha para P. vivax em pacientes com mais de 6 meses de idade (e que não sejam gestantes) é a Cloroquina por 3 dias associada à Primaquina por 7 dias (0,5 mg/kg/dia). Como o enunciado informa que a criança possui dosagem de G6PD normal, o uso da Primaquina é seguro quanto ao risco de hemólise grave.\n\nAlternativa (b): Incorreta. A Tafenoquina é um medicamento recente incorporado ao SUS para o tratamento radical do P. vivax em dose única. No entanto, sua indicação atual é restrita a pacientes com idade igual ou superior a 16 anos. Como João tem apenas 10 anos, a Tafenoquina não pode ser utilizada. Além disso, o uso da Tafenoquina também exige a testagem de G6PD (que deve estar acima de 70% da atividade normal).\n\nAlternativa (c): Incorreta. A combinação de Artemeter + Lumefantrina é um derivado da artemisinina indicado para o tratamento de malária por Plasmodium falciparum, não sendo a primeira escolha para P. vivax no Brasil. A Primaquina em dose única é utilizada no tratamento do P. falciparum apenas como gametocitocida (para interromper a cadeia de transmissão), não sendo suficiente para eliminar hipnozoítos no P. vivax.\n\nAlternativa (d): Incorreta. Embora o esquema de Primaquina por 14 dias (0,25 mg/kg/dia) seja uma opção válida para o tratamento de P. vivax em casos específicos (como para reduzir a toxicidade gástrica ou em esquemas de regressão), a droga de escolha para as formas sanguíneas do P. vivax no Brasil continua sendo a Cloroquina, e não o Artemeter + Lumefantrina (reservado para o P. falciparum).",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Malária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:53.810Z"
+  },
+  {
+    "id": "AJUDA_4b5216c6-bd70-49f6-8989-ff3b1175162a",
+    "originalId": "4b5216c6-bd70-49f6-8989-ff3b1175162a",
+    "statement": "Primigesta 28 anos, pré-natal de risco usual, internada em trabalho de parto com gestação de termo. A evolução do trabalho de parto está demonstrada no partograma ao lado. Após realizar diagnóstico de parada secundária da descida, qual a etiologia e a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Distocia de rotação e fórceps de Kielland",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Desproporção cefalopélvica cesariana e operação",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Desproporção cefalopélvica e rotação manual da apresentação",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Distocia da variedade de posição e posição materna verticalizada",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Partograma:\n\nAo observarmos o gráfico superior, vemos que a dilatação cervical (representada pelos triângulos) atingiu 10 cm (dilatação total) no registro da hora 6. No entanto, a descida da apresentação fetal (representada pelos círculos) parou na estação -2 de De Lee. Essa parada se manteve inalterada nos registros das horas 7 e 8, configurando o diagnóstico de parada secundária da descida (quando a descida para por uma hora ou mais após a dilatação total).\n\nEtiologia e Conduta:\n\nO partograma mostra que a dinâmica uterina é adequada (4 a 5 contrações de forte intensidade em 10 minutos, conforme os quadrados preenchidos no gráfico inferior). Se existem contrações eficientes e a dilatação é total, mas a cabeça do bebê permanece alta (estação -2, ou seja, acima das espinhas isquiáticas) e não progride, o diagnóstico clínico é de desproporção cefalopélvica (DCP). Com a cabeça não encaixada e o diagnóstico de DCP, a via de parto deve ser a cesariana. Além disso, o partograma indica uma queda na frequência cardíaca fetal (FCF) no final do acompanhamento, sugerindo sofrimento fetal e reforçando a necessidade de interrupção imediata.\n\nAnálise das Alternativas:\n\na) Incorreta. A distocia de rotação ocorre quando o feto está em variedades de posição transversas ou posteriores. No entanto, o feto está na estação -2 de De Lee (cabeça alta e não engajada). O fórceps de Kielland é um instrumento de rotação que exige que o feto esteja em planos baixos (+2 ou mais) e devidamente engajado. Tentar um fórceps com a cabeça em -2 é contraindicado e perigoso.\n\nb) Correta. A parada da descida em plano alto (-2), mesmo com contrações vigorosas e dilatação completa, é o sinal clássico de desproporção cefalopélvica. A conduta adequada diante da impossibilidade de descida mecânica pelo canal de parto é a operação cesariana.\n\nc) Incorreta. A rotação manual da apresentação poderia ser tentada em casos de variedades de posição anômalas se o feto estivesse em planos baixos e não houvesse desproporção. Como a cabeça não desce do plano -2, a causa é óssea ou de volume (DCP), e a rotação não resolveria o problema.\n\nd) Incorreta. Mudanças de posição materna (como a verticalização) podem auxiliar em partos funcionais ou para corrigir distocias leves. Contudo, diante de uma parada secundária da descida em plano alto por duas horas com dinâmica uterina excelente, a verticalização não corrigirá a desproporção física entre a cabeça fetal e a bacia materna.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Partograma e Distocias"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/e88cb9f8057f65c5e7a3e4b6c75985a32c324eb320c4371b851c0069122e54e2.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_4b5216c6-bd70-49f6-8989-ff3b1175162a_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:54.273Z"
+  },
+  {
+    "id": "AJUDA_4b574743-a5ed-4a81-8b94-ab9c8b02fdf6",
+    "originalId": "4b574743-a5ed-4a81-8b94-ab9c8b02fdf6",
+    "statement": "Maria do Carmo, 68 anos de idade, G5P5, menopausada há 15 anos, apresenta queixa de sensação de “peso” e “bola” vaginal há 8 meses, com piora ao final do dia e aos esforços. Relata constipação e dificuldade para iniciar a micção, sem dor pélvica associada. No exame ginecológico, o sistema POP-Q evidencia: \nAa = +2 cm, Ba = +3 cm, C = +3 cm, Ap = 0 cm, Bp = 0 cm, D = –4 cm, hiato genital (HG) = 3 cm, corpo perineal (CP) = 2 cm e comprimento vaginal total (CVT) = 8 cm. \nConsiderando a classificação POP-Q, assinale a alternativa que indica o estadiamento e o compartimento principal do prolapso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estádio II, compartimento posterior",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estádio IV, prolapso total uterino",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estádio III, compartimento posterior",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estádio II, compartimento anterior",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Estádio III, compartimento anterior e apical",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para compreender esta questão, devemos analisar os valores fornecidos pelo sistema POP-Q (Pelvic Organ Prolapse Quantification), que utiliza o hímen como ponto de referência (zero). Valores negativos indicam pontos acima do hímen e valores positivos indicam pontos além (abaixo) do hímen.\n\nOs pontos descritos são:\n1. Compartimento Anterior: Aa e Ba. No caso, Aa = +2 e Ba = +3. Ambos estão além do hímen.\n2. Compartimento Apical: C (colo do útero) e D (fundo de saco de Douglas). No caso, C = +3 (além do hímen) e D = -4 (indicando que o útero está presente).\n3. Compartimento Posterior: Ap e Bp. No caso, Ap = 0 e Bp = 0, indicando que a parede posterior está exatamente no nível do hímen.\n4. CVT (Comprimento Vaginal Total): 8 cm.\n\nDeterminação do Estadiamento:\nO estágio é definido pelo ponto de maior prolapso (neste caso, +3 cm, observado nos pontos Ba e C).\n- Estágio 0: Sem prolapso.\n- Estágio I: O ponto mais distal está a mais de 1 cm acima do hímen (valor < -1).\n- Estágio II: O ponto mais distal está entre 1 cm acima e 1 cm abaixo do hímen (valor entre -1 e +1).\n- Estágio III: O ponto mais distal está a mais de 1 cm abaixo do hímen (valor > +1), mas não chega à eversão total. O limite para o estágio III é até o valor do CVT menos 2 cm.\n- Estágio IV: Eversão total. O ponto mais distal está em um valor igual ou maior que CVT - 2.\n\nCálculo para esta paciente:\nO ponto mais distal é +3.\nO limite para o Estágio IV seria CVT (8) - 2 = 6 cm.\nComo +3 é maior que +1 e menor que +6, o diagnóstico é Estágio III.\n\nAnálise das alternativas:\n\na) Incorreta. O estágio é III, pois o valor +3 ultrapassa o limite de +1 cm do estágio II. Além disso, o compartimento posterior está no nível 0, não sendo o principal.\n\nb) Incorreta. Para ser estágio IV, o ponto mais avançado deveria ser pelo menos +6 (CVT - 2). O valor encontrado foi +3.\n\nc) Incorreta. Embora o estágio III esteja correto, o compartimento posterior (Ap e Bp = 0) está menos projetado do que o anterior e o apical (+3).\n\nd) Incorreta. O estágio é III, uma vez que o ponto de maior prolapso (+3) está além de 1 cm do hímen.\n\ne) Correta. O estágio é III porque o ponto de maior prolapso (+3) está entre +1 e o valor de CVT - 2 (6 cm). Os compartimentos principais são o anterior (Ba = +3) e o apical (C = +3).",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Prolapso de Órgãos Pélvicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:54.273Z"
+  },
+  {
+    "id": "AJUDA_4b5dbcb7-0b24-4ee1-80c6-4b13201d752e",
+    "originalId": "4b5dbcb7-0b24-4ee1-80c6-4b13201d752e",
+    "statement": "Segundo as diretrizes mais recentes sobre dislipidemia, qual afirmação está CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O tratamento deve ser guiado exclusivamente pelo nível absoluto de LDL-colesterol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estatinas só são indicadas quando LDL >190 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A estratificação de risco cardiovascular é fundamental para definir metas de LDL.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pacientes de muito alto risco não se beneficiam de metas mais agressivas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O HDL-colesterol elevado elimina a necessidade de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nO tema central desta questão é a abordagem terapêutica das dislipidemias que, nas diretrizes atuais da Sociedade Brasileira de Cardiologia (SBC) e de sociedades internacionais (ESC/AHA), é centrada na estratificação de risco cardiovascular global do paciente.\n\nALTERNATIVA A (INCORRETA): O tratamento não é guiado apenas pelo valor isolado do LDL-c. A decisão terapêutica depende do risco cardiovascular global. Por exemplo, um nível de LDL de 130 mg/dL pode ser aceitável para um indivíduo de baixo risco, mas é considerado muito acima da meta para um paciente que já sofreu um infarto.\n\nALTERNATIVA B (INCORRETA): O valor de LDL superior a 190 mg/dL é uma indicação clássica para o início do uso de estatinas (muitas vezes sinalizando hipercolesterolemia familiar), mas está longe de ser a única. Pacientes de alto ou muito alto risco devem iniciar o tratamento com estatinas mesmo apresentando níveis de LDL muito menores, visando atingir metas rigorosas, como 70 mg/dL ou 50 mg/dL.\n\nALTERNATIVA C (CORRETA): Esta é a pedra angular das diretrizes de dislipidemia. A conduta (se será apenas mudança de estilo de vida ou associação com fármacos) e as metas terapêuticas (níveis de LDL e não HDL a serem alcançados) são determinadas pela classificação de risco do paciente (baixo, intermediário, alto ou muito alto risco). Para isso, utilizam-se ferramentas como o Escore de Risco Global ou a identificação de condições de risco equivalente, como diabetes ou doença arterial coronária.\n\nALTERNATIVA D (INCORRETA): É justamente o oposto. O conceito \"lower is better\" (quanto menor, melhor) aplica-se especialmente aos pacientes de muito alto risco. Estudos clínicos demonstram que metas mais agressivas de LDL (atualmente < 50 mg/dL para esse grupo) resultam em maior redução de eventos cardiovasculares maiores, como infarto e AVC.\n\nALTERNATIVA E (INCORRETA): Embora o HDL-colesterol elevado seja classicamente associado à proteção cardiovascular, ele não elimina a necessidade de tratar o LDL-c elevado. Além disso, tentativas farmacológicas de aumentar isoladamente o HDL não demonstraram redução de desfechos clínicos, mantendo o LDL como o alvo terapêutico primário.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Dislipidemia e Estratificação de Risco Cardiovascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:54.273Z"
+  },
+  {
+    "id": "AJUDA_4b75b2e7-1ce5-470b-a9aa-d1b111af1022",
+    "originalId": "4b75b2e7-1ce5-470b-a9aa-d1b111af1022",
+    "statement": "Paciente 60 anos, portadora de hipertensão arterial sistêmica em uso de enalapril, e dislipidemia em uso de rosuvastatina 20 mg, G2C2, menopausa aos 50 anos, fez uso de terapia hormonal por 5 anos, IMC = 30 kg/m² . Iniciou com sangramento vaginal há 3 dias. Ultrassom mostra endométrio de 8 mm. Qual seria a sua conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histerectomia vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Histerectomia por via laparoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir ultrassom transvaginal em 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Repetir ultrassom transvaginal em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Biópsia de endométrio em consultório com cureta de Novak.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\nEstamos diante de uma paciente de 60 anos, na pós-menopausa há 10 anos, que apresenta sangramento vaginal (sangramento pós-menopausa). No exame de ultrassonografia transvaginal, foi evidenciado um endométrio de 8 mm. Em mulheres na pós-menopausa que apresentam sangramento uterino anormal, o ponto de corte para a espessura endometrial é, geralmente, de 4 a 5 mm. Como esta paciente apresenta um endométrio de 8 mm associado a fatores de risco (obesidade e idade), a conduta obrigatória é a investigação histopatológica para afastar a possibilidade de hiperplasia endometrial ou câncer de endométrio.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A histerectomia vaginal é um procedimento cirúrgico definitivo. Não se indica cirurgia de grande porte sem antes possuir um diagnóstico histopatológico que justifique o procedimento, exceto em casos muito específicos de falha na coleta ou suspeita persistente.\n\nAlternativa b) Incorreta. Assim como na alternativa anterior, a histerectomia laparoscópica é um tratamento cirúrgico. O passo atual é o diagnóstico (investigação), e não o tratamento definitivo imediato.\n\nAlternativa c) Incorreta. Repetir o ultrassom em 3 meses é uma conduta expectante inadequada. Diante de um sangramento na pós-menopausa com endométrio espessado (8 mm), há necessidade imediata de biópsia para excluir malignidade. O atraso no diagnóstico pode comprometer o prognóstico da paciente.\n\nAlternativa d) Incorreta. Segue a mesma lógica da alternativa C. Aguardar 6 meses para repetir o exame em uma paciente sintomática com achado ultrassonográfico alterado é uma conduta perigosa e contrária aos protocolos médicos.\n\nAlternativa e) Correta. A biópsia de endométrio em consultório, utilizando instrumentos como a cureta de Novak ou a cânula de Pipelle, é o primeiro passo recomendado para a avaliação histológica do endométrio. É um procedimento de baixo custo, seguro e com boa acurácia para diagnosticar neoplasias endometriais. Caso a biópsia de consultório seja inconclusiva ou o sangramento persista, o próximo passo seria a histeroscopia com biópsia dirigida.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:38:54.273Z"
+  }
+]

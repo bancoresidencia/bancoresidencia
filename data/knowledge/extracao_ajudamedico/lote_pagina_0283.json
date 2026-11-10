@@ -1,0 +1,508 @@
+[
+  {
+    "id": "AJUDA_4e7c278d-b854-44f0-9087-edd62b5d580a",
+    "originalId": "4e7c278d-b854-44f0-9087-edd62b5d580a",
+    "statement": "Em torno da sexta à oitava semana é visualizado o aumento da coloração violácea da mucosa vaginal. Esse sinal é chamado de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sinal de Hunter.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sinal de Piskacek.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sinal de Kluge.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sinal de Haller.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Sinal de Osiander.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Essa questão aborda os sinais de probabilidade de gravidez, especificamente as alterações anatômicas e vasculares que ocorrem no trato genital feminino e nas mamas devido ao estímulo hormonal.\n\nA alternativa correta é a letra (c) Sinal de Kluge.\n\nO Sinal de Kluge consiste na coloração violácea da mucosa vaginal. Esse fenômeno ocorre devido ao aumento da vascularização e congestão venosa na região pélvica, provocada pelo aumento dos níveis de estrogênio durante a gestação. É muito comum que este sinal seja confundido ou citado junto ao Sinal de Chadwick (ou Jacquemier), que se refere à coloração violácea da vulva e do vestíbulo vaginal.\n\nAbaixo, a explicação de por que as demais alternativas estão incorretas:\n\na) Sinal de Hunter: Incorreto. Este é um sinal mamário. Refere-se ao surgimento da aréola secundária, que é uma pigmentação mais clara e menos delimitada ao redor da aréola primária, surgindo geralmente a partir da 20ª semana de gestação.\n\nb) Sinal de Piskacek: Incorreto. Este sinal refere-se a uma assimetria uterina à palpação. Ocorre devido à implantação do ovo em um dos cornos uterinos, fazendo com que um lado do útero pareça mais abaulado e macio que o outro.\n\nd) Sinal de Haller: Incorreto. Também é um sinal mamário. Conhecido como rede venosa de Haller, caracteriza-se pela maior visibilidade das veias superficiais das mamas devido ao aumento do fluxo sanguíneo e da vascularização local durante a gravidez.\n\ne) Sinal de Osiander: Incorreto. Este sinal é a percepção do pulso da artéria vaginal através do toque vaginal nos fundos de saco laterais. É decorrente do aumento do aporte sanguíneo para o útero e vagina.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Modificações Fisiológicas da Gestação"
+    ],
+    "difficulty": 75.81498129235388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:51.272Z"
+  },
+  {
+    "id": "AJUDA_4e7fcec6-5421-4a2b-a777-fb8f9c646d69",
+    "originalId": "4e7fcec6-5421-4a2b-a777-fb8f9c646d69",
+    "statement": "Os três parâmetros laboratoriais utilizados para calcular o escore MELD é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Albumina, Bilirrubina e Tempo de Protrombina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Bilirrubina, Creatinina e Razão Normalizada Internacional (RNI).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Bilirrubina, Encefalopatia e Ascite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sódio, Creatinina e Albumina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O escore MELD (Model for End-Stage Liver Disease) é um sistema de pontuação numérica utilizado para prever a sobrevida de pacientes com doença hepática crônica e para determinar a prioridade em filas de transplante de fígado. Sua principal característica é a utilização de parâmetros puramente laboratoriais e objetivos.\n\nAnálise das alternativas:\n\na) Incorreta. A albumina e o tempo de protrombina são componentes do escore de Child-Pugh. Embora a bilirrubina seja comum a ambos, a albumina não entra no cálculo do MELD.\n\nb) Correta. Os três parâmetros fundamentais que compõem a fórmula original do MELD são:\n1. Bilirrubina total: avalia a capacidade de excreção e a função hepática.\n2. Creatinina: avalia a função renal, sendo um marcador prognóstico crucial na cirrose (devido ao risco de síndrome hepatorrenal).\n3. RNI (Razão Normalizada Internacional): avalia a função de síntese do fígado por meio da via extrínseca da coagulação.\n\nc) Incorreta. Encefalopatia e ascite são critérios clínicos e subjetivos utilizados no escore de Child-Pugh. O MELD foi desenvolvido justamente para remover essa subjetividade do sistema de pontuação.\n\nd) Incorreta. O sódio foi adicionado em uma atualização mais recente do escore, chamada MELD-Na, para aumentar a acurácia da predição de mortalidade. Contudo, a albumina não faz parte de nenhuma das versões do MELD, sendo um parâmetro exclusivo do Child-Pugh.\n\nPortanto, a alternativa que apresenta os três componentes laboratoriais clássicos do MELD é a letra B.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Cirrose Hepática"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:51.272Z"
+  },
+  {
+    "id": "AJUDA_4e81937a-92a1-4fd5-96f6-5d90a0bcbb95",
+    "originalId": "4e81937a-92a1-4fd5-96f6-5d90a0bcbb95",
+    "statement": "Mulher, 34 anos, com síndrome de ovários policísticos, apresenta irregularidade menstrual e está tentando engravidar há 18 meses. Refere que mantem relações sexuais 3 vezes/semana; já otimizou dieta e atividade física. Histerossalpingografia: prova de Cotté positiva; sem alterações de morfologia tubária; sem falhas de enchimento uterinas. Marido realizou espermograma que não evidenciou alterações aparentes. Considerando o “Guideline Internacional Baseado em Evidências para Avaliação e Manejo de Síndrome dos Ovários Policísticos” de 2023, pode-se afirmar que a primeira opção terapêutica para indução da ovulação é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "gonadotrofinas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "letrozol",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "metformina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "fertilização in vitro",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso descreve uma paciente de 34 anos com diagnóstico de Síndrome dos Ovários Policísticos (SOP) e infertilidade por anovulação crônica. O rastreio básico de infertilidade foi realizado, descartando fator tubário (histerossalpingografia com prova de Cotte positiva e morfologia normal) e fator masculino (espermograma normal). Como a paciente já otimizou o estilo de vida, o próximo passo é a indução farmacológica da ovulação.\n\nAlternativa a) Incorreta. As gonadotrofinas são consideradas tratamentos de segunda linha para a indução da ovulação na SOP. Elas costumam ser indicadas quando há falha no tratamento com agentes orais (como o letrozol) ou como parte de protocolos de reprodução assistida de alta complexidade. Apresentam maior custo e maior risco de gestação múltipla e síndrome de hiperestimulação ovariana quando comparadas aos indutores orais.\n\nAlternativa b) Correta. De acordo com o Guideline Internacional Baseado em Evidências para Avaliação e Manejo da SOP de 2023, o letrozol (um inibidor da aromatase) é a primeira linha de tratamento farmacológico para a indução da ovulação em mulheres com SOP e infertilidade anovulatória que não possuem outros fatores de infertilidade. Estudos mostram que o letrozol é superior ao citrato de clomifeno, proporcionando maiores taxas de ovulação e de nascidos vivos.\n\nAlternativa c) Incorreta. A metformina pode ser utilizada para melhorar a sensibilidade à insulina e pode auxiliar na restauração da ciclicidade menstrual em algumas mulheres. No entanto, como agente isolado para indução da ovulação com o objetivo de gravidez, ela é menos eficaz que o letrozol. O guideline a posiciona como uma terapia adjuvante ou para casos específicos, mas não como a primeira escolha para indução.\n\nAlternativa d) Incorreta. A fertilização in vitro (FIV) é considerada uma terapia de terceira linha para pacientes com SOP. Ela é reservada para situações em que houve falha nos tratamentos de primeira linha (indutores orais) e segunda linha (gonadotrofinas ou drilling ovariano), ou quando existem outros fatores de infertilidade associados, como obstrução tubária ou fator masculino grave, o que foi descartado nos exames apresentados.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Infertilidade Conjugal",
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:51.272Z"
+  },
+  {
+    "id": "AJUDA_4e92bd81-74c1-4ce6-bafc-fabc49fab550",
+    "originalId": "4e92bd81-74c1-4ce6-bafc-fabc49fab550",
+    "statement": "Você está de plantão na emergência pediátrica de um Hospital Infantil e recebe um paciente, sexo masculino, 10 anos com história de vômitos e dor abdominal há 3 dias. Na avaliação sistemática você identifica uma criança extremamente desidratada, com a seguinte avaliação: FC: 110 bpm, FR: 48 irpm, Saturação O₂: 98% ar ambiente PA: 110 x 70mmHg, sem sinais de desconforto respiratório, pulsos amplos e simétricos. Glicemia capilar: 350 Sódio: 137 Cloro: 92 Gasometria venosa: pH: 6,9; pO2: 86; pCO2: 10; Bicarbonato de sódio: 2; BE: -30; Saturação Oz: 78% Qual distúrbio ácido básico presente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Acidose metabólica hiperclorêmica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Alcalose metabólica hiperclorêmica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acidose metabólica ânion gap aumentada e o AG é de 30",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Acidose metabólica de ânion gap aumentado e o AG é de 47",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para analisar o distúrbio ácido-básico deste paciente, devemos seguir uma sequência lógica baseada nos dados clínicos e laboratoriais fornecidos.\n\n1. Identificação do distúrbio primário: O pH de 6,9 indica uma acidemia grave (valor de referência: 7,35 a 7,45). Como o bicarbonato está muito baixo (2 mEq/L), confirmamos que o distúrbio primário é uma acidose metabólica. A pCO2 de 10 mmHg reflete a tentativa de compensação respiratória (hiperventilação), confirmada pela frequência respiratória de 48 irpm.\n\n2. Cálculo do Ânion Gap (AG): Para diferenciar as causas de acidose metabólica, calculamos o ânion gap, que representa os ânions não mensurados no plasma. A fórmula é: AG = Sódio - (Cloro + Bicarbonato).\nCálculo com os dados da questão: AG = 137 - (92 + 2) = 137 - 94 = 43.\n\n3. Interpretação clínica: O valor normal do AG situa-se entre 8 e 12 mEq/L. Um valor de 43 é considerado muito elevado. Cruzando os dados laboratoriais com a clínica (criança de 10 anos, dor abdominal, vômitos, desidratação grave e glicemia de 350 mg/dL), o diagnóstico é Cetoacidose Diabética (CAD). Na CAD, o AG aumenta devido ao acúmulo de cetoácidos (acetoacetato e beta-hidroxibutirato).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A acidose metabólica hiperclorêmica apresenta um ânion gap normal (entre 8 e 12). Nela, a perda de bicarbonato é compensada pelo aumento do cloro, o que não ocorre neste caso, onde o cloro está em 92 mEq/L (limite inferior da normalidade) e o AG está alto.\n\nAlternativa b) Incorreta. O termo alcalose refere-se a um pH elevado (acima de 7,45). O paciente apresenta pH de 6,9, configurando acidose extrema.\n\nAlternativa c) Incorreta. Embora a alternativa identifique corretamente que o ânion gap está aumentado, o valor de 30 está matematicamente incorreto com base nos dados fornecidos no enunciado (137 - 92 - 2 = 43).\n\nAlternativa d) Correta. Esta alternativa identifica o distúrbio como acidose metabólica de ânion gap aumentado. Embora o cálculo exato resulte em 43, esta é a opção que descreve corretamente a fisiopatologia do quadro clínico e aponta um valor de AG compatível com a gravidade da acidose por cetoácidos. Em provas de residência, variações numéricas pequenas podem ocorrer por arredondamentos ou erros de digitação no enunciado original, mas o conceito de ânion gap elevado é o ponto chave para a resposta.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Emergências Pediátricas",
+      "Distúrbios Ácido-Básicos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:51.272Z"
+  },
+  {
+    "id": "AJUDA_4e95d5e0-199f-4f0d-ae6a-6271876629a5",
+    "originalId": "4e95d5e0-199f-4f0d-ae6a-6271876629a5",
+    "statement": "Mulher de 27 anos, comparece à Unidade Básica de Saúde para checar resultado de exame citopatológico, sem queixas. Refere ciclos menstruais regulares, nega sangramento intermenstrual, dispareunia, sinusorragia e dor pélvica. Resultado de colpocitologia: Células escamosas atípicas de significado indeterminado, possivelmente não neoplásicas. De acordo com as diretrizes do INCA, qual a melhor conduta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Repetir citopatológico em 12 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar para colposcopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Repetir citopatológico em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colher novo exame citopatológico imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A questão aborda a conduta clínica diante de um resultado de exame citopatológico cervical (Papanicolaou) apresentando ASC-US (células escamosas atípicas de significado indeterminado, possivelmente não neoplásicas) em uma paciente de 27 anos. De acordo com as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero (INCA), a conduta para ASC-US é baseada estritamente na faixa etária da paciente, pois essa alteração tem baixo potencial de malignidade e alta taxa de regressão.\n\nAs recomendações para ASC-US são:\n- Mulheres com menos de 25 anos: repetir o exame em 3 anos (retorno à rotina).\n- Mulheres entre 25 e 29 anos: repetir o exame em 12 meses.\n- Mulheres com 30 anos ou mais: repetir o exame em 6 meses.\n\nAnálise das alternativas:\n\na) Correta. A paciente tem 27 anos, o que a enquadra na recomendação de repetição do exame citopatológico em 12 meses. Se o resultado da repetição for normal (dois exames seguidos negativos), ela retorna ao rastreamento trienal. Se houver persistência de ASC-US ou uma alteração mais grave no segundo exame, ela deve ser encaminhada para colposcopia.\n\nb) Incorreta. O encaminhamento imediato para colposcopia em caso de ASC-US só é indicado se a paciente for imunossuprimida ou HIV-positiva, ou se houver persistência da alteração em exames subsequentes. A colposcopia imediata é a conduta inicial para achados mais graves, como ASC-H (células atípicas, não podendo excluir lesão de alto grau) ou HSIL (lesão de alto grau).\n\nc) Incorreta. A repetição em 6 meses é a conduta preconizada para mulheres com 30 anos ou mais que apresentam resultado de ASC-US ou LSIL (lesão de baixo grau). Isso ocorre porque, após os 30 anos, a probabilidade de uma infecção por HPV ser persistente e evoluir para neoplasia é maior do que em mulheres mais jovens.\n\nd) Incorreta. A coleta de um novo exame imediatamente ou em curto prazo (como 30 dias) só é indicada quando a amostra é considerada insatisfatória para avaliação pelo laboratório (por exemplo, devido a excesso de sangue, inflamação intensa que impede a visão das células ou dessecação do material). No caso da questão, o exame foi satisfatório e forneceu um diagnóstico citológico definido.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:51.272Z"
+  },
+  {
+    "id": "AJUDA_4e9862dd-f679-4091-a751-1e1e020af468",
+    "originalId": "4e9862dd-f679-4091-a751-1e1e020af468",
+    "statement": "São formas de prevenção da toxoplasmose na gestação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não consumir carne crua e evitar contato com fezes de gatos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Não consumir peixe cru e evitar contato com fezes de gatos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não consumir carne crua e peixe cru.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não consumir peixe cru e evitar contato com fezes de cachorro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A toxoplasmose é uma infecção causada pelo protozoário intracelular *Toxoplasma gondii*. Para compreender as medidas de prevenção, é fundamental conhecer o ciclo de vida do parasita: os felídeos (como o gato) são os hospedeiros definitivos que eliminam oocistos no ambiente por meio das fezes, enquanto outros animais (como bois, porcos e aves) são hospedeiros intermediários que albergam cistos nos tecidos musculares.\n\nAlternativa (a): Esta é a alternativa correta. A prevenção primária na gestante baseia-se em interromper as principais vias de transmissão: a ingestão de carne crua ou mal cozida (que contém cistos teciduais) e a ingestão acidental de oocistos presentes no ambiente ou em fômites contaminados por fezes de gatos. Por isso, recomenda-se que a gestante consuma apenas carne bem-passada e evite manipular caixas de areia ou fezes de felinos.\n\nAlternativa (b): Incorreta. O peixe não é um hospedeiro intermediário típico para o *Toxoplasma gondii*. Embora o consumo de peixe cru possa estar associado a outras patologias (como a difilobotríase ou a listeriose), ele não faz parte das recomendações específicas de prevenção para a toxoplasmose.\n\nAlternativa (c): Incorreta. Novamente, o erro reside na inclusão do peixe cru como via de transmissão. Além disso, a alternativa é incompleta por não mencionar a importância de evitar o contato com as fezes do hospedeiro definitivo (gato), que é uma fonte ambiental significativa de infecção.\n\nAlternativa (d): Incorreta. Apresenta dois erros principais: primeiro, o peixe cru não é vetor da toxoplasmose; segundo, o cachorro não é o hospedeiro definitivo do parasita. Os cães não eliminam oocistos em suas fezes; portanto, o contato com dejetos de cães não representa risco direto de transmissão de toxoplasmose, ao contrário do contato com fezes de gatos.\n\nResumo das orientações de pré-natal: Além das citadas na alternativa correta, a gestante deve ser orientada a lavar bem frutas e verduras, usar luvas ao manipular terra/jardim, beber apenas água filtrada ou fervida e evitar o consumo de leite não pasteurizado.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Infecções Congênitas na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:51.272Z"
+  },
+  {
+    "id": "AJUDA_4e9a0c91-edc2-4d65-bc06-98ddfe3a5410",
+    "originalId": "4e9a0c91-edc2-4d65-bc06-98ddfe3a5410",
+    "statement": "Gestante de 40 semanas e 3 dias, G2P1, comparece ao pronto atendimento por redução da movimentação fetal nas últimas 12 horas. Ao exame: feto único em apresentação cefálica, BCF 140 bpm, movimentos fetais lentos à palpação. Toque vaginal: colo posterior, 1 cm de dilatação, 20% de apagamento, consistência firme e altura -2. Ultras sonografia obstétrica com líquido amniótico reduzido (ILA de 4,5 cm) e doppler normal. Considerando o caso clínico e os critérios obstétricos para indução do parto, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A indução está indicada e pode ser iniciada com misoprostol vaginal para preparo cervical.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A cesariana deve ser indicada de imediato devido à oligo-hidrâmnio e idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A presença de colo desfavorável impede qualquer tentativa de indução, mesmo com métodos mecânicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A indução está contraindicada devido ao colo desfavorável e à ausência de sofrimento fetal agudo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A conduta inicial deve ser repor volume com hidratação venosa e repetir a cardiotocografia após 12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso Clínico:\n\nTemos uma gestante no termo (40 semanas e 3 dias) que apresenta oligoidrâmnio (Índice de Líquido Amniótico — ILA de 4,5 cm, sendo o normal acima de 5 cm). O bem-estar fetal imediato parece preservado, dado o Doppler normal e o BCF de 140 bpm. O exame físico revela um colo do útero desfavorável para o parto imediato, com Índice de Bishop baixo (colo posterior, grosso, fechado e feto alto).\n\nExplicação das alternativas:\n\nAlternativa A (Correta): O oligoidrâmnio isolado no termo é uma indicação clássica de indução do parto para reduzir riscos de compressão do cordão e insuficiência placentária. Como o colo é desfavorável (Índice de Bishop baixo), o primeiro passo da indução é o preparo cervical. O misoprostol vaginal é o análogo de prostaglandina de escolha para amadurecer o colo e iniciar as contrações em pacientes sem cicatriz uterina prévia (o enunciado cita G2P1, sugerindo parto vaginal anterior).\n\nAlternativa B (Incorreta): O oligoidrâmnio, por si só, não é uma indicação de cesariana imediata. Se o Doppler está normal e não há sinais de sofrimento fetal agudo, a via vaginal por indução deve ser tentada prioritariamente. A cesariana seria reservada para casos de falha de indução ou alteração da vitalidade fetal durante o processo.\n\nAlternativa C (Incorreta): O colo desfavorável não impede a indução; na verdade, ele define a técnica a ser utilizada. Quando o colo não está pronto, utilizamos métodos de preparo cervical, que podem ser farmacológicos (como o misoprostol) ou mecânicos (como o cateter de Foley), justamente para tornar a indução possível e bem-sucedida.\n\nAlternativa D (Incorreta): A ausência de sofrimento fetal agudo no momento é o que permite a indução do parto com segurança. Se houvesse sofrimento fetal, a conduta seria a interrupção imediata, geralmente por cesariana. O oligoidrâmnio no termo é uma indicação relativa de indução, e o colo desfavorável é uma condição a ser tratada, não uma contraindicação.\n\nAlternativa E (Incorreta): A hidratação materna pode aumentar temporariamente o volume de líquido amniótico em alguns casos, mas não é a conduta definitiva para uma gestação de 40 semanas com diagnóstico de oligoidrâmnio. Postergar a conduta por 12 horas apenas para repetir exames aumenta o risco de complicações sem benefício comprovado, já que a indicação de interrupção pela IG e pelo ILA já está estabelecida.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Indução do Parto e Pós-Datismo",
+      "Vitalidade Fetal",
+      "Alteração do Volume do Líquido Amniótico"
+    ],
+    "difficulty": 67.9588492026123,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:51.272Z"
+  },
+  {
+    "id": "AJUDA_4e9abe4c-5299-4a7a-b4d4-16d49ef707e8",
+    "originalId": "4e9abe4c-5299-4a7a-b4d4-16d49ef707e8",
+    "statement": "Paciente de 67 anos, com DPOC e diabetes, internado por pneumonia comunitária. Após reposição volêmica, apresenta:\n• Frequência respiratória 30 irpm, confusão mental, PA 85/55 mmHg, persistindo hipotenso apesar dos 30 mL/kg de cristaloide.\n• Lactato sérico: 4,5 mmol/L.\n• Oximetria de pulso estável.\nConsidere o seguinte: o tempo para reavaliar fluidez tecidual e decidir sobre nova reposição tem opções. Qual abordagem está de acordo com as recomendações mais atuais?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Reavaliar a resposta clínica com capillary refill time (CRT) e testar uma manobra de elevação passiva das pernas (PLR) para guiar nova etapa de ressuscitação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Reavaliar apenas o lactato sérico após 2 horas; se não reduzir ≥ 20%, administrar mais 500 mL de cristaloide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Continuar com 30 mL/kg de cristaloide padrão e aguardar resposta hemodinâmica por SNG antes de nova intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Se lactato persistir elevado (>4 mmol/L), iniciar vasopressor imediatamente sem considerar avaliação dinâmica de fluidez.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "EXEGESE DA QUESTÃO\n\nO quadro clínico descreve um paciente com provável choque séptico de foco pulmonar. Ele permanece hipotenso e hiperlactatêmico (lactato 4,5 mmol/L) mesmo após a reposição volêmica inicial de 30 mL/kg. Segundo as diretrizes mais recentes da Surviving Sepsis Campaign e estudos importantes como o ANDROMEDA-SHOCK, a conduta agora deve focar na reavaliação da perfusão tecidual e na determinação da responsividade a fluidos através de métodos dinâmicos.\n\nAlternativa A: CORRETA. Esta alternativa reflete as recomendações atuais. O tempo de enchimento capilar (CRT) mostrou-se, no estudo ANDROMEDA-SHOCK, uma ferramenta clínica eficaz e rápida para guiar a ressuscitação, sendo inclusive superior ou comparável ao clearance de lactato em alguns desfechos. Além disso, o uso de medidas dinâmicas de responsividade a fluidos, como a Manobra de Elevação Passiva das Pernas (PLR), é fortemente recomendado para decidir se o paciente ainda se beneficiará de mais volume ou se o fluido será apenas prejudicial (causando sobrecarga).\n\nAlternativa B: INCORRETA. Embora a monitorização do lactato sérico seja importante para avaliar a resposta ao tratamento (clearance de lactato), basear a decisão de administrar mais 500 mL de cristaloide exclusivamente em um valor laboratorial, sem avaliar a responsividade hemodinâmica, aumenta o risco de balanço hídrico excessivamente positivo, o que está associado a maior mortalidade e tempo de ventilação mecânica.\n\nAlternativa C: INCORRETA. A recomendação de 30 mL/kg é para a ressuscitação inicial (nas primeiras 3 horas). Após essa fase, não se deve administrar fluido de forma \"padrão\" ou fixa. A menção ao uso de Sonda Nasogástrica (SNG) para aguardar resposta hemodinâmica não possui embasamento técnico para monitorização de choque ou perfusão tecidual.\n\nAlternativa D: INCORRETA. Embora o início precoce de vasopressores (como a noradrenalina) seja indicado quando a PAM permanece baixa após ou durante a expansão inicial, a alternativa está incorreta ao sugerir que se ignore a avaliação dinâmica de fluido-responsividade. A medicina moderna preconiza que, antes de cada nova etapa de infusão de volume, deve-se confirmar se o paciente é \"fluido-responsivo\" para evitar complicações de hiper-hidratação.",
+    "exam": "HPP",
+    "year": 2026,
+    "banca": "HPP",
+    "uf": "PR",
+    "tags": [
+      "Sepse",
+      "Choque",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": 42.5435877758155,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/6dcfb1944f510078728c4b4a1f5a8111eb645556cde2cb66998cde42350426a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/13dba17b93bfa2feeef28689bfc7270ac8ed1f48892bdf48364c93872c2d513f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:51.272Z"
+  },
+  {
+    "id": "AJUDA_4e9e27e3-6eea-4308-9a7b-f128c4dfd513",
+    "originalId": "4e9e27e3-6eea-4308-9a7b-f128c4dfd513",
+    "statement": "Paciente masculino, 65 anos, com obesidade grau III, apresenta dor anal intensa há 12 dias com secreção purulenta e odor fétido. Ao exame, lesões perianais ulceradas com secreção, leucócitos: 22.000/mm³, creatinina: 3, sódio: 128, potássio: 5,8. A tomografia apresenta alteração ressaltada abaixo: Com base no quadro clínico e imagem, das abaixo, a melhor conduta inicial, além da antibioticoterapia, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Desbridamento extenso.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Corticoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hartmann.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Exenteração.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Câmara hiperbárica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve um paciente idoso e obeso com sinais claros de uma infecção necrotizante de tecidos moles na região perineal, conhecida como Síndrome de Fournier. Os sintomas de dor intensa, secreção fétida e os exames laboratoriais alterados (leucocitose importante, insuficiência renal aguda e distúrbios hidroeletrolíticos) indicam sepse grave. A tomografia computadorizada é fundamental no diagnóstico, pois revela a presença de gás (enfisema de partes moles) na região perianal, evidenciado na imagem pelas áreas escuras (hipodensas) dentro dos tecidos inflamados, o que é patognomônico de infecção por germes anaeróbios ou formadores de gás em vigência de fascite necrotizante.\n\nAnálise das alternativas:\n\na) Desbridamento extenso: Alternativa correta. O tratamento da Síndrome de Fournier é uma emergência cirúrgica. O pilar terapêutico consiste no tripé: estabilização hemodinâmica, antibioticoterapia de amplo espectro e, fundamentalmente, o controle do foco infeccioso através do desbridamento cirúrgico radical e precoce de todo o tecido desvitalizado e necrótico. O atraso na intervenção cirúrgica aumenta drasticamente a mortalidade.\n\nb) Corticoterapia: Alternativa incorreta. O uso de corticoides não tem indicação no tratamento primário de infecções necrotizantes e poderia inclusive agravar o quadro ao deprimir a resposta imunológica e dificultar a cicatrização.\n\nc) Hartmann: Alternativa incorreta. A cirurgia de Hartmann (ressecção do retossigmoide com colostomia terminal) é indicada para patologias colorretais, como diverticulite perfurada ou tumores obstrutivos. Embora uma derivação intestinal (colostomia) possa ser necessária em casos selecionados de Fournier para evitar a contaminação fecal da ferida operatória, ela não substitui o desbridamento e não é a conduta inicial prioritária.\n\nd) Exenteração: Alternativa incorreta. A exenteração pélvica é um procedimento oncológico ultrarradical que envolve a remoção de órgãos pélvicos em casos de câncer avançado. Não possui aplicação no manejo de infecções necrotizantes agudas.\n\ne) Câmara hiperbárica: Alternativa incorreta. A oxigenoterapia hiperbárica é considerada uma terapia adjuvante, podendo auxiliar na cicatrização e no combate a bactérias anaeróbias. No entanto, ela nunca deve retardar ou substituir o desbridamento cirúrgico de urgência, que é a conduta que salva a vida do paciente.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/04196e5aee5e6505527656035cd1f07c1f15baeb14a695ef3fabb62d01a66af3.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_4e9e27e3-6eea-4308-9a7b-f128c4dfd513_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:51.754Z"
+  },
+  {
+    "id": "AJUDA_4ea0637b-6e4d-448e-9abb-7d3d95cd261e",
+    "originalId": "4ea0637b-6e4d-448e-9abb-7d3d95cd261e",
+    "statement": "Mulher de 44 anos, eumenorreica e sem sintomas climatéricos, pergunta ao ginecologista qual deve ser o primeiro sinal de alteração menstrual que a ajudará a perceber o início da transição menopausal.\nAssinale a alternativa mais adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento do fluxo menstrual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diminuição do fluxo menstrual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Amenorreia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encurtamento do período entre os ciclos menstruais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Atrasos menstruais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A transição menopausal (perimenopausa) é marcada pelo declínio progressivo da reserva folicular ovariana e pela redução da síntese de inibina B. Essa queda hormonal leva, por feedback negativo, a uma elevação precoce dos níveis de FSH, o que acelera o desenvolvimento folicular e encurta a fase folicular do ciclo ovariano. Dessa forma, conforme padronizado pelos critérios de STRAW+10, a primeira alteração clínica perceptível em uma mulher previamente eumenorreica é a redução da duração do ciclo menstrual.\n\nAnálise das alternativas:\n\nAlternativa A está incorreta. O aumento do volume do fluxo pode ocorrer ao longo do climatério devido a ciclos anovulatórios e à consequente proliferação endometrial sem oposição progestagênica, mas é uma manifestação posterior ao encurtamento inicial dos ciclos.\n\nAlternativa B está incorreta. A diminuição do volume de fluxo menstrual não é o sinal cardinal nem o evento inicial da transição ovariana.\n\nAlternativa C está incorreta. A amenorreia por 12 meses consecutivos define o diagnóstico retrospectivo da menopausa, sendo o evento final e não o marco inicial da transição menopausal.\n\nAlternativa D está correta. O encurtamento do intervalo entre os ciclos menstruais (fase de transição inicial ou estágio -2 de STRAW) é o primeiro sinal clínico perceptível, decorrente da aceleração da fase folicular mediada pelo aumento inicial do FSH.\n\nAlternativa E está incorreta. Os atrasos menstruais com ciclos mais longos (intervalos de 60 dias ou mais) são característicos da fase tardia da transição menopausal (estágio -1 de STRAW), quando a anovulação se torna frequente.\n\nGabarito: Letra D.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T16:40:51.754Z"
+  }
+]

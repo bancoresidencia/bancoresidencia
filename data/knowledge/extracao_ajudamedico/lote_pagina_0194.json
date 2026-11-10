@@ -1,0 +1,515 @@
+[
+  {
+    "id": "AJUDA_3609be03-e5a6-47dd-a690-02805ef910ee",
+    "originalId": "3609be03-e5a6-47dd-a690-02805ef910ee",
+    "statement": "O tratamento inicial para uma criança diagnosticada com tetralogia de Fallot é feito com",
+    "options": [
+      {
+        "id": "A",
+        "text": "diurético.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "adrenalina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "milrinone.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prostaglandina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "CONCEITO E FISIOPATOLOGIA\n\nA Tetralogia de Fallot é a cardiopatia congênita cianótica mais comum. Ela é definida por quatro alterações anatômicas: comunicação interventricular (CIV), estenose pulmonar (obstrução da via de saída do ventrículo direito), dextroposição da aorta (aorta \"cavalgando\" o septo interventricular) e hipertrofia do ventrículo direito. A gravidade dos sintomas depende fundamentalmente do grau de obstrução ao fluxo sanguíneo para os pulmões.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nMuitos recém-nascidos diagnosticados com Tetralogia de Fallot apresentam uma obstrução tão severa da via de saída do ventrículo direito que o fluxo sanguíneo pulmonar torna-se dependente da permanência do canal arterial (cardiopatia ducto-dependente). Nesses casos, o tratamento inicial de urgência é a administração de prostaglandina E1 (alprostadil) por via endovenosa. A prostaglandina atua mantendo o canal arterial aberto ou reabrindo-o, permitindo que o sangue oxigenado pela aorta chegue aos pulmões, garantindo a sobrevivência do paciente até que uma intervenção cirúrgica (paliativa ou definitiva) seja realizada.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a) diurético: Os diuréticos são utilizados para tratar estados de hiperfluxo pulmonar e congestão (insuficiência cardíaca). Na Tetralogia de Fallot, ocorre o oposto: há hipofluxo pulmonar. O uso de diuréticos reduziria a pré-carga (volume de sangue que chega ao coração), o que pode aumentar o gradiente de obstrução e piorar o shunt direita-esquerda, agravando severamente a cianose e a hipóxia.\n\nAlternativa (b) adrenalina: A adrenalina é uma droga vasoativa utilizada em situações de parada cardiorrespiratória ou choque anafilático/séptico grave. Ela aumenta a frequência cardíaca e o consumo de oxigênio pelo miocárdio, o que pode desencadear ou piorar as crises de hipóxia características do Fallot, não sendo o tratamento inicial indicado.\n\nAlternativa (c) milrinone: O milrinone é um inodilatador (aumenta a força de contração e dilata os vasos) geralmente reservado para o manejo do baixo débito cardíaco no pós-operatório de cirurgias cardíacas ou em casos específicos de insuficiência cardíaca descompensada. Não possui papel na estabilização inicial do recém-nascido cianótico com obstrução da via de saída do ventrículo direito.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Cardiopatias Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:20.220Z"
+  },
+  {
+    "id": "AJUDA_3609eafb-680f-4711-8f27-862a71129ab5",
+    "originalId": "3609eafb-680f-4711-8f27-862a71129ab5",
+    "statement": "Homem, 68 anos de idade, passa em consulta ambulatorial. Ele tem fadiga crônica e o exame clínico é normal. Durante investigação, detectou-se uma anormalidade na eletroforese de proteínas, conforme imagem apresentada a seguir:\n\nTabela de Fração Proteica:\n- Albumina: 4,12 g/dL (55,7%) - VR 3,5-4,85 (54%-60%)\n- Alfa-1 Globulinas: 0,27 g/dL (3,6%) - VR 0,22-0,43 (3,4%-5,3%)\n- Alfa-2 Globulinas: 0,67 g/dL (9,1%) - VR 0,55-1,08 (8,4%-13,3%)\n- Beta-1 Globulinas: 0,42 g/dL (5,7%) - VR 0,32-0,54 (4,9%-6,6%) \n- Beta-2 Globulinas: 0,29 g/dL (3,9%) - VR 0,24-0,54 (3,6%-6,6%)\n- Gama Globulinas: 0,39 g/dL (5,3%) - VR 0,74-1,75 (11,4%-21,6%)\n- Componente Monoclonal: 1,2 g/dL (16,8%)\n- Total: 7,40 g/dL - VR 6,5-8,1\n\nForam realizados exames de hemograma completo, creatinina, cálcio e radiografias ósseas que estavam normais. Com base nessas informações, assinale a alternativa que apresenta a conduta indicada neste momento.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Imunofixação e pesquisa de cadeias leves livres no sangue.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Biópsia de medula óssea e pesquisa por citogenética/FISH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Eletroforese de proteínas séricas a cada 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Cintilografia óssea ou tomografia de corpo inteiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso apresenta um paciente idoso assintomático com achado de componente monoclonal de 1,2 g/dL na eletroforese de proteínas séricas. A imagem do traçado eletroforético ilustra perfeitamente esse achado, evidenciando o pico normal de albumina a esquerda e um pico estreito e pontiagudo na regiao das gamaglobulinas a direita, caracteristico de producao monoclonal de imunoglobulinas. Os exames de triagem (hemograma, funcao renal, calcio e radiografias) estao normais, afastando no momento disfuncao de orgao-alvo (criterios CRAB), o que aponta para o diagnostico presuntivo de Gamopatia Monoclonal de Significado Indeterminado (GMSI). Diante desse achado, a conduta inicial consiste na investigacao diagnostica complementar para caracterizar o tipo e o risco da gamopatia.\n\nAlternativa A (Correta): Uma vez identificado o pico monoclonal na eletroforese, o passo subsequente obrigatorio e a realizacao da imunofixacao serica e/ou urinaria, a fim de identificar a classe da cadeia pesada (IgG, IgA ou IgM) e da cadeia leve (kappa ou lambda). Alem disso, a dosagem das cadeias leves livres sericas (relacao kappa/lambda) e indispensavel para a estratificacao de risco de progressao para mieloma multiplo, definindo a frequencia do acompanhamento.\n\nAlternativa B (Incorreta): A biopsia e o aspirado de medula ossea com citogenetica/FISH sao exames invasivos indicados na suspeita de mieloma multiplo sintomatico, mieloma indolente ou quando a investigacao serica inicial indica alto risco. Em pacientes com componente monoclonal baixo (menor que 1,5 g/dL) e sem alteracoes laboratoriais, deve-se primeiro concluir a avaliacao serica nao invasiva.\n\nAlternativa C (Incorreta): Embora o seguimento periodico faca parte do manejo da GMSI, ele nao deve ser adotado antes de se concluir a investigacao diagnostica inicial com a imunofixacao e as cadeias leves livres.\n\nAlternativa D (Incorreta): A cintilografia ossea nao tem papel na avaliacao de gamopatias monoclonais, pois detecta atividade osteoblastica, enquanto as lesoes do mieloma sao puramente osteoliticas. A tomografia de corpo inteiro com baixa dose de radiacao e o padrao-ouro atual de imagem, mas, como o paciente ja realizou radiografias normais e tem pico monoclonal baixo, a prioridade imediata e a caracterizacao laboratorial da proteina.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Mieloma Múltiplo"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/4946aa7d70ab670d81e5089d37e6f699c7c02d657ff5120fbcf93217552e0715.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3609eafb-680f-4711-8f27-862a71129ab5_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:20.743Z"
+  },
+  {
+    "id": "AJUDA_360ced46-308d-4fda-a34a-229996237ff8",
+    "originalId": "360ced46-308d-4fda-a34a-229996237ff8",
+    "statement": "Em um estudo de avaliação econômica em saúde, a introdução de uma nova terapia para insuficiência cardíaca crônica resultou em ganho de 2,1 QALYs por paciente em comparação ao tratamento convencional. Com base nesse achado, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O ganho de QALY sugere que a nova terapia tem menor custo total do que a terapia convencional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O QALY é uma medida que considera apenas o tempo de vida adicional proporcionado ao paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O ganho de QALY significa que a nova intervenção reduz os gastos totais do sistema de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O uso do QALY se aplica apenas à avaliação de intervenções não medicamentosas, como cirurgias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O QALY combina tempo de vida e qualidade de vida em uma métrica única para avaliar benefícios.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "CONCEITO DE QALY\nO QALY (Quality-Adjusted Life Year, ou Ano de Vida Ajustado pela Qualidade) é a métrica central nas análises de custo-utilidade em economia da saúde. Ele serve para quantificar o benefício de uma intervenção de saúde em uma única unidade de medida, facilitando a comparação entre diferentes tratamentos.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O ganho de QALY indica que a terapia é mais eficaz do ponto de vista do paciente (vive-se mais ou melhor), mas não traz informações sobre o custo financeiro. Uma nova terapia pode oferecer mais QALYs e ser significativamente mais cara que o tratamento convencional.\n\nAlternativa b) Incorreta. A medida que considera apenas o tempo de vida adicional é o \"Ano de Vida Ganho\" (Life Year). O QALY diferencia-se justamente por ponderar esse tempo pela qualidade de vida que o paciente experimenta. Por exemplo, dois anos de vida com saúde debilitada valem menos QALYs do que dois anos em saúde plena.\n\nAlternativa c) Incorreta. Ter um ganho de QALY não significa que o sistema de saúde gastará menos. Na verdade, a maioria das novas tecnologias que oferecem ganho de QALY aumenta os gastos totais. A decisão de incorporar a tecnologia depende de quanto o sistema está disposto a pagar por cada QALY ganho (limiar de custo-efetividade).\n\nAlternativa d) Incorreta. O uso do QALY é universal na economia da saúde. Ele é aplicado para avaliar qualquer tipo de intervenção, incluindo medicamentos (como no caso da insuficiência cardíaca), dispositivos médicos, procedimentos cirúrgicos, exames diagnósticos e programas de triagem.\n\nAlternativa e) Correta. Esta alternativa apresenta a definição técnica e exata da métrica. O QALY combina a quantidade de anos vividos com a qualidade de vida nesses anos (chamada de utilidade). O cálculo básico é o tempo de sobrevida multiplicado por um peso que varia de 0 (morte) a 1 (saúde perfeita). Assim, 1 QALY equivale a um ano de vida em saúde plena.\n\nGABARITO: Alternativa (e).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Medidas de Saúde Coletiva"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:20.743Z"
+  },
+  {
+    "id": "AJUDA_360f4fe1-1e9b-4730-921c-de9e77d1bf72",
+    "originalId": "360f4fe1-1e9b-4730-921c-de9e77d1bf72",
+    "statement": "Um paciente de 81 anos, com diagnóstico de doença pulmonar obstrutiva crônica e insuficiência cardíaca congestiva, é internado para tratamento de pneumonia. Após alguns dias de tratamento com antibióticos e repouso no leito, ele começa a apresentar distensão abdominal significativa, dor leve e náuseas, mas sem vômitos. Não apresenta sinais clínicos de peritonite aos exames físico e laboratorial. Radiografias do abdômen mostram dilatação importante dos cólons, principalmente no ceco e cólon ascendente, porém sem evidência de obstrução mecânica.\nDiante desse quadro clínico, o diagnóstico mais provável e a melhor abordagem inicial para o manejo desse paciente são, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "síndrome de Ogilvie e tratamento com neostigmina;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "colite pseudomembranosa e tratamento com metronidazol;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "obstrução intestinal por brida e tratamento com cirurgia exploratória;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "volvo de sigmoide e tratamento com sigmoidoscopia descompressiva;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "íleo paralítico e tratamento com reposição de eletrólitos e mobilização precoce.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "DIAGNÓSTICO E CONDUTA\n\nO quadro clínico descreve um paciente idoso, com múltiplas comorbidades e agudamente enfermo (pneumonia), que apresenta uma dilatação massiva do cólon sem evidência de obstrução mecânica (como tumores, volvos ou bridas). Esse cenário é clássico da Pseudo-obstrução Colônica Aguda, também conhecida como Síndrome de Ogilvie.\n\nPOR QUE A ALTERNATIVA A ESTÁ CORRETA\n\nA Síndrome de Ogilvie ocorre frequentemente em pacientes hospitalizados com doenças graves, distúrbios metabólicos ou após cirurgias. O tratamento inicial envolve medidas conservadoras, como jejum, descompressão gástrica, correção de eletrólitos e suspensão de drogas que reduzem a motilidade. No entanto, quando a dilatação do ceco é importante (geralmente acima de 10 a 12 cm) ou o paciente não apresenta melhora clínica com o manejo conservador inicial, a neostigmina é o tratamento farmacológico de escolha. Ela age inibindo a acetilcolinesterase, o que aumenta a disponibilidade de acetilcolina nas sinapses, estimulando o sistema parassimpático e promovendo a motilidade colônica.\n\nPOR QUE A ALTERNATIVA B ESTÁ INCORRETA\n\nA colite pseudomembranosa, causada pela toxina da bactéria Clostridioides difficile, manifesta-se tipicamente com diarreia profusa, febre, dor abdominal e leucocitose após o uso de antibióticos. Embora possa evoluir para megacólon tóxico, o quadro de distensão isolada sem sinais de peritonite e sem diarreia, em um contexto de paciente crítico, favorece o diagnóstico de pseudo-obstrução funcional (Ogilvie) e não de um processo infeccioso inflamatório do cólon.\n\nPOR QUE A ALTERNATIVA C ESTÁ INCORRETA\n\nA obstrução por bridas (aderências) é uma causa de obstrução mecânica, geralmente associada a antecedentes de cirurgias abdominais. O enunciado afirma explicitamente que não há evidência de obstrução mecânica nas radiografias, o que descarta essa hipótese. Além disso, a cirurgia exploratória só é indicada de imediato na presença de sinais de sofrimento de alça ou peritonite, o que o paciente não possui.\n\nPOR QUE A ALTERNATIVA D ESTÁ INCORRETA\n\nO volvo de sigmoide é uma torção do cólon sobre seu próprio eixo mesentérico, configurando uma obstrução mecânica. Radiografias mostrariam uma imagem característica em grão de café ou U invertido. Embora a sigmoidoscopia descompressiva seja de fato o tratamento para o volvo de sigmoide, a descrição radiográfica de dilatação predominante do cólon direito (ceco e ascendente) sem ponto de obstrução é típica de Ogilvie, e não de volvo.\n\nPOR QUE A ALTERNATIVA E ESTÁ INCORRETA\n\nO íleo paralítico (ou adinâmico) envolve a ausência de motilidade de todo o trato gastrointestinal, incluindo habitualmente o intestino delgado, sendo muito comum no pós-operatório imediato. A Síndrome de Ogilvie é considerada uma forma de íleo, porém localizada especificamente no cólon. Embora a reposição de eletrólitos e a mobilização façam parte do tratamento de suporte, a neostigmina é a conduta medicamentosa específica e mais eficaz para reverter a pseudo-obstrução colônica aguda quando a distensão é significativa e há risco de perfuração do ceco.",
+    "exam": "ENARE",
+    "year": 2025,
+    "banca": "FGV",
+    "uf": "DF",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/977526e02d755bcf262a7e1320128b8e31796301cc8e18d5d678a58228a4aa52.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6eb0ac9dffb62f0a40d2e19ee09a8f4f2720e25987fc00cf3f011d8d0374467f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:20.743Z"
+  },
+  {
+    "id": "AJUDA_361e1eb4-658d-44b9-8b7a-b6e4afc8ab11",
+    "originalId": "361e1eb4-658d-44b9-8b7a-b6e4afc8ab11",
+    "statement": "Segundo a teoria do Modelo de Crenças em Saúde, proposta por Rosenstock, Hochbaum e Becker, o principal fator que influencia a adoção de hábitos saudáveis e a prevenção de doenças é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A percepção individual da gravidade da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O incentivo e apoio dos profissionais de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O custo e a acessibilidade dos serviços de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A percepção individual da suscetibilidade à doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "O nível socioeconômico e de escolaridade do indivíduo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O Modelo de Crenças em Saúde (MCS) foi desenvolvido na década de 1950 e aprimorado por Rosenstock, Hochbaum e Becker para entender por que as pessoas não participavam de programas de prevenção e detecção de doenças. O modelo foca em como a percepção subjetiva do indivíduo dita seu comportamento de saúde.\n\nAlternativa A: Incorreta. A percepção da gravidade refere-se à avaliação do indivíduo sobre o quão sérias seriam as consequências de contrair a doença (tanto clínicas quanto sociais). Embora seja um componente do modelo, ela não é o fator determinante isolado, pois uma pessoa pode considerar uma doença grave, mas acreditar que não tem chance alguma de contraí-la.\n\nAlternativa B: Incorreta. O incentivo de profissionais de saúde é classificado no modelo como Gatilhos ou Estímulos para Ação (Cues to Action). São eventos ou orientações que disparam o comportamento, mas a base do modelo reside nas crenças internas e na percepção de risco do próprio indivíduo.\n\nAlternativa C: Incorreta. O custo, o esforço e a acessibilidade fazem parte das Barreiras Percebidas. Elas funcionam como uma análise de custo-benefício que o indivíduo faz antes de agir, mas não são o motor principal que gera a intenção original de adotar um hábito saudável.\n\nAlternativa D: Correta. A percepção de suscetibilidade é o pilar fundamental do modelo. Ela representa a crença subjetiva do indivíduo de que ele está em risco de adquirir uma doença ou condição médica. De acordo com a teoria de Rosenstock e Becker, o reconhecimento da vulnerabilidade pessoal é o primeiro e mais importante passo para que o indivíduo considere qualquer mudança de hábito ou medida preventiva. Se não houver a percepção de que se está em risco, as outras variáveis (como gravidade ou benefícios) perdem o sentido prático para o sujeito.\n\nAlternativa E: Incorreta. O nível socioeconômico e a escolaridade são considerados Variáveis Modificadoras. Elas influenciam indiretamente as percepções de suscetibilidade e gravidade, mas o modelo defende que o comportamento de saúde é determinado diretamente pelas crenças cognitivas (percepções), e não apenas pelo contexto social ou econômico do indivíduo.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:20.743Z"
+  },
+  {
+    "id": "AJUDA_3622ed8d-3fd0-4bb7-9da5-4a231b3a2fa5",
+    "originalId": "3622ed8d-3fd0-4bb7-9da5-4a231b3a2fa5",
+    "statement": "O sangramento uterino anormal (SUA) pode ser dividido como de causas estruturais (orgânicas), e de causas não-estruturais (funcionais), descritas pelo sistema PALM-COEIN. Residente atendendo no ambulatório de ginecologia recebe uma paciente de 50 anos com queixa de sangramento uterino fora de seu período menstrual e com volume maior do que o habitual. Ela não tem outras queixas, nega patologias ou uso de medicações e nega historia de câncer na família. Tem 3 filhos, possui vida sexual ativa e o parceiro fez vasectomia. Ao exame físico, é identificado ao exame especular um nódulo saindo pelo orifício externo do colo do útero, com sangramento ativo. O último citopatológico há 3 meses estava sem alterações. Uma ultrassonografia feita há 6 meses apresentava útero em AVF com ecotextura heterogênea e presença de nódulo compatível com mioma de 4 cm, classificação FIGO 0, útero com volume de 120 cm³, endométrio de 8 mm abaulado pelo mioma, ovários direto e esquerdo com 4cc. Qual a melhor conduta para esta paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histerectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Miomectomia via vaginal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Análogo do GnRH.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Embolização da artéria uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Terapia hormonal com progesterona de segunda fase.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente de 50 anos apresenta um quadro clássico de Sangramento Uterino Anormal (SUA) de causa estrutural. O dado-chave do exame físico é a presença de um nódulo saindo pelo orifício externo do colo do útero com sangramento ativo. Associando isso ao achado da ultrassonografia (mioma FIGO 0, que é o mioma submucoso totalmente intracavitário e pediculado), temos o diagnóstico de \"mioma parido\".\n\nPor que a alternativa (b) está correta?\nA conduta de eleição para o mioma submucoso pediculado que se exterioriza pelo canal cervical (mioma parido) é a miomectomia por via vaginal. O procedimento é considerado de baixa complexidade e consiste na apreensão do nódulo, seguida de torção do seu pedículo ou ressecção direta. É a abordagem mais resolutiva e menos invasiva para o sangramento ativo causado por essa topografia de mioma.\n\nPor que as outras alternativas estão incorretas?\n\na) Histerectomia: É uma cirurgia de grande porte e invasiva. Embora seja uma opção definitiva para miomatose em pacientes que não desejam mais gestar, o quadro atual é de uma lesão focal acessível por via vaginal. A miomectomia vaginal deve ser tentada primeiro por apresentar menor morbidade e rápida recuperação.\n\nc) Análogo do GnRH: Esses fármacos são utilizados temporariamente para reduzir o volume de miomas grandes ou para controle de anemia grave antes de uma cirurgia programada. Não são o tratamento definitivo, especialmente em um caso de mioma já exteriorizado e com sangramento ativo.\n\nd) Embolização da artéria uterina: É um procedimento de radiologia intervencionista indicado principalmente para miomas intramurais sintomáticos em pacientes que desejam preservar o útero. É contraindicada em miomas pediculados intracavitários (FIGO 0), pois o nódulo pode sofrer necrose dentro da cavidade, evoluindo para infecção grave (sepse) ou eliminação dolorosa de restos necróticos.\n\ne) Terapia hormonal com progesterona de segunda fase: Esta terapia é indicada para tratar o sangramento de origem funcional (disfunção ovulatória - o \"O\" do sistema PALM-COEIN). O caso da paciente é claramente uma causa orgânica/estrutural (Leiomioma - o \"L\"), que não responde clinicamente à reposição de progesterona.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:20.743Z"
+  },
+  {
+    "id": "AJUDA_3635064e-6992-4b57-9729-02e579208ff0",
+    "originalId": "3635064e-6992-4b57-9729-02e579208ff0",
+    "statement": "Paciente, 6 anos, apresenta quadro de infecção bacteriana pelo estreptococo do grupo A, com exantema, odinofagia e febre alta (38,4°C). A mãe notou o aparecimento de palidez em região perioral, como na imagem a seguir:\n\nEsse sinal é característico do quadro clínico da criança e é conhecido como:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sinal da Pastia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Sinal de Koplik.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sinal de Filatov.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sinal de Kawasaki.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito, caracterizado por faringoamigdalite estreptocócica (odinofagia e febre) associada a um exantema micropapular (com aspecto de lixa), é diagnóstico de escarlatina. Essa condição é causada pelas toxinas eritrogênicas do Streptococcus pyogenes (estreptococo do grupo A).\n\nNa escarlatina, dois sinais semiológicos são clássicos e frequentemente cobrados em provas: o sinal de Filatov e o sinal de Pastia. A imagem da questão mostra nitidamente a região perioral poupada pelo exantema, apresentando-se pálida em contraste com a face avermelhada (eritrose malar).\n\nAnálise das alternativas:\n\na) Sinal de Pastia: Incorreta. Embora também seja um sinal da escarlatina, o sinal de Pastia refere-se ao acentuamento do exantema nas áreas de dobras cutâneas (como axilas, cotovelos e região inguinal), formando linhas transversais petequiais que não desaparecem à digitopressão.\n\nb) Sinal de Koplik: Incorreta. Este é o sinal patognomônico do sarampo, e não da escarlatina. O sinal de Koplik manifesta-se como pequenos pontos brancos (semelhantes a grãos de areia) sobre uma base eritematosa na mucosa bucal, geralmente na altura dos molares, precedendo o exantema.\n\nc) Sinal de Filatov: Correta. É exatamente o que a imagem e o enunciado descrevem. Trata-se da palidez perioral que contrasta com a face intensamente eritematosa, sendo um achado clínico típico e marcante da escarlatina.\n\nd) Sinal de Kawasaki: Incorreta. Não existe um sinal específico com essa nomenclatura para descrever palidez perioral. A Doença de Kawasaki é uma vasculite que pode apresentar exantema e língua em framboesa (semelhante à escarlatina), mas seus critérios incluem conjuntivite não purulenta, alterações em extremidades (edema/descamação), linfonodomegalia cervical e alterações labiais.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/a2e8edae174ce775204c0b7c76f93edf17c01c7b23260d8b520f7c7a5b2a5f80.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_3635064e-6992-4b57-9729-02e579208ff0_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:21.141Z"
+  },
+  {
+    "id": "AJUDA_363afb28-e81c-440d-989d-af538abf7f74",
+    "originalId": "363afb28-e81c-440d-989d-af538abf7f74",
+    "statement": "Na videolaparoscopia a colocação dos portais de trabalho do cirurgião, considerando o alvo operatório, formam uma triangulação, cujo ângulo ideal entre eles, também chamado ângulo de manipulação, é de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "45°",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "60°",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "85°",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "90°",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O conceito fundamental para a ergonomia em cirurgia videolaparoscópica é a triangulação. Esse princípio estabelece que a câmera e os dois portais de trabalho do cirurgião devem ser posicionados de modo que as pontas dos instrumentos e a lente formem os vértices de um triângulo, tendo o alvo operatório como ponto de convergência. \n\nO ângulo de manipulação é aquele formado pelo encontro das duas pinças de trabalho no tecido-alvo. A literatura cirúrgica e os estudos ergonômicos definem os seguintes parâmetros para as alternativas apresentadas:\n\nAlternativa (a) 45 graus: Embora seja um ângulo comum e funcional em diversas cirurgias, ele é frequentemente considerado o limite inferior da zona de conforto. Ângulos menores que 45 graus podem levar ao chamado \"efeito de esgrima\", no qual os instrumentos colidem entre si, dificultando a movimentação.\n\nAlternativa (b) CORRETA: O ângulo de 60 graus é considerado o ideal para a manipulação. Estudos demonstram que esse valor oferece o melhor equilíbrio entre a força aplicada, a precisão do movimento e a percepção visual. Ele permite que o cirurgião realize manobras complexas, como suturas intracorpóreas, com o menor índice de fadiga muscular e a melhor coordenação motora.\n\nAlternativa (c) 85 graus: Este ângulo é considerado excessivamente aberto. À medida que o ângulo se afasta dos 60 graus em direção a valores maiores, a eficiência mecânica diminui, exigindo um esforço físico maior do cirurgião para realizar os mesmos movimentos.\n\nAlternativa (d) 90 graus: Um ângulo de 90 graus é geralmente o limite máximo aceitável na triangulação. Além de ser ergonomicamente mais cansativo, o posicionamento dos portais muito afastados um do outro pode dificultar o alcance de certas estruturas e prejudicar a visão de profundidade, já que a câmera costuma estar centralizada entre os portais.\n\nPortanto, para fins de prova e prática ergonômica, o ângulo de 60 graus é o padrão-ouro estabelecido para a manipulação videolaparoscópica.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:21.141Z"
+  },
+  {
+    "id": "AJUDA_36406043-0e95-472d-ab1b-0dc4fd7b1dff",
+    "originalId": "36406043-0e95-472d-ab1b-0dc4fd7b1dff",
+    "statement": "Uma mulher de 42 anos, assintomática, realiza ultrassonografia mamária como complemento à mamografia de rastreamento. O exame evidencia uma lesão oval, anecoica, de contornos bem definidos, paredes finas, com reforço acústico posterior, sem septações ou componentes sólidos, medindo 1,6 cm, localizada no quadrante superoexterno da mama esquerda. Não há vascularização ao Doppler.\n\nCom base nos achados ultrassonográficos, a conduta e a classificação BI-RADS mais adequadas são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Classificar como BI-RADS 3 e indicar controle ultrassonográfico em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Classificar como BI-RADS 2 e manter seguimento de rotina, sem necessidade de intervenção.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Classificar como BI-RADS 4A e indicar biópsia percutânea guiada por ultrassom.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Classificar como BI-RADS 3 e indicar punção aspirativa diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Classificar como BI-RADS 5 e encaminhar para tratamento cirúrgico imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A descrição detalhada no enunciado caracteriza perfeitamente um cisto simples de mama. Os critérios ultrassonográficos para essa definição são: lesão anecoica (preenchida por líquido, sem ecos internos), de contornos bem definidos, paredes finas, com reforço acústico posterior (característico da fácil passagem do som pelo meio líquido) e sem fluxo ao Doppler.\n\nSegundo o sistema BI-RADS (Breast Imaging-Reporting and Data System), cistos simples são considerados achados benignos e devem ser classificados como BI-RADS 2. Para achados nesta categoria, a conduta preconizada é a manutenção do rastreamento de rotina conforme a faixa etária da paciente, sem necessidade de antecipação de exames ou intervenções invasivas.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O BI-RADS 3 é utilizado para achados provavelmente benignos, que apresentam um risco de malignidade inferior a 2 por cento e exigem controle em intervalo menor (geralmente 6 meses). Cistos simples são achados definitivamente benignos e não se enquadram aqui.\n\nAlternativa b: Correta. O quadro clínico e radiológico é de um cisto simples, o que define a categoria BI-RADS 2 e autoriza a manutenção do seguimento habitual de rotina.\n\nAlternativa c: Incorreta. O BI-RADS 4A é atribuído a lesões com suspeita de malignidade, indicando a necessidade de biópsia. Não há nenhum elemento na descrição (como margens irregulares, ecos internos ou componente sólido) que justifique essa classificação.\n\nAlternativa d: Incorreta. A classificação BI-RADS 3 está incorreta para o caso. Além disso, a punção aspirativa por agulha fina (PAAF) em cistos simples só costuma ser realizada se o cisto for sintomático (provocar dor ou desconforto) ou para confirmação diagnóstica se houvesse características de cisto complexo, o que não é o caso de uma paciente assintomática com cisto simples.\n\nAlternativa e: Incorreta. O BI-RADS 5 é reservado para lesões altamente sugestivas de malignidade (risco maior que 95 por cento), apresentando características como nódulos espiculados e margens não circunscritas, o oposto de um cisto simples.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Doenças Benignas da Mama"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:21.141Z"
+  },
+  {
+    "id": "AJUDA_36449b14-2ddc-458f-ac85-fc2ea7fa8139",
+    "originalId": "36449b14-2ddc-458f-ac85-fc2ea7fa8139",
+    "statement": "Os gastos diretos em saúde, também chamados de out of pocket ou gastos catastróficos, referem-se aos valores que famílias e indivíduos desembolsam diretamente por serviços de saúde. Segundo a Pesquisa de Orçamento Familiar (POF), do IBGE, cada vez mais as famílias brasileiras dispensam um percentual maior de sua renda mensal com gastos diretos em saúde ao longo do tempo. A edição da POF de 2019 apontava que a saúde respondia por 8% das despesas totais das famílias. Antes, em 2003, respondia por 5,1%. Sobre os gastos out of pocket com saúde no Brasil, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os gastos de indivíduos e famílias com planos e seguros de saúde privados constituem o maior percentual dos gastos out of pocket.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O comprometimento proporcional da renda familiar com assistência à saúde no Brasil cresce na medida em que aumenta a renda familiar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Do gasto total com saúde no Brasil, mais da metade é constituída por gastos privados out of pocket.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A maior parcela de gastos out of pocket é com medicamentos, em proporção mais elevada nas classes com renda mais baixa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O financiamento da saúde no Brasil e os gastos diretos das famílias (out of pocket) são temas recorrentes na Saúde Coletiva e Medicina Preventiva, sendo analisados com base em dados de contas nacionais e na Pesquisa de Orçamentos Familiares (POF) do IBGE.\n\nAnálise das alternativas:\n\nAlternativa A - Incorreta. A maior fatia do desembolso direto das famílias brasileiras é destinada à compra de medicamentos, e não aos planos de saúde. Os gastos com planos privados têm maior representatividade nas faixas de renda mais alta, mas no cômputo geral da população brasileira, os remédios lideram os gastos diretos.\n\nAlternativa B - Incorreta. O gasto com saúde no Brasil tem caráter regressivo. Isso significa que, proporcionalmente à sua renda mensal, as famílias mais pobres comprometem uma fração muito maior do seu orçamento com despesas de saúde do que as famílias de maior renda, embora o valor absoluto desembolsado pelos mais ricos seja superior.\n\nAlternativa C - Incorreta. O gasto privado total com saúde no Brasil supera o gasto público (o privado gira em torno de 55% a 60% e o público 40% a 45%), mas esse gasto privado é dividido entre planos de saúde, coparticipações e desembolso direto. O gasto out of pocket isoladamente não representa mais da metade do gasto total em saúde do país.\n\nAlternativa D - Correta. Segundo os dados consolidados da POF/IBGE, os medicamentos representam o principal componente dos gastos out of pocket no Brasil. Esse peso proporcional é ainda mais evidente e dramático nas famílias de menor renda, que sofrem maior impacto financeiro pela necessidade de adquirir fármacos que não conseguem obter pela assistência farmacêutica do SUS.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Financiamento em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T16:27:21.141Z"
+  }
+]

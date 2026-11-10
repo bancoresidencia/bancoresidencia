@@ -1,0 +1,506 @@
+[
+  {
+    "id": "AJUDA_e4e56273-a708-4f79-827b-fc9b51fcd7a9",
+    "originalId": "e4e56273-a708-4f79-827b-fc9b51fcd7a9",
+    "statement": "Gestante dá à luz de parto vaginal, com 39 semanas e quatro dias. Está tratando tuberculose (forma pulmonar) há um mês, com escarro negativo há três semanas. A amamentação ao seio deverá ser realizada:",
+    "options": [
+      {
+        "id": "A",
+        "text": "utilizando máscara.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "após realizar a BCG.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "após o recém-nascido iniciar isoniazida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sem restrições.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "amamentação contraindicada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O ponto central para resolver esta questão é avaliar o potencial de transmissibilidade da tuberculose da mãe para o recém-nascido. A transmissão da tuberculose ocorre por via aérea (gotículas e aerossóis) e não pelo leite materno. \n\nDe acordo com o Ministério da Saúde, uma paciente com tuberculose pulmonar deixa de ser considerada infectante, em regra, após 15 dias de tratamento adequado, desde que haja melhora clínica. No caso clínico apresentado, a mãe já realiza o tratamento há um mês (30 dias) e apresenta escarro negativo (baciloscopia negativa) há três semanas. Portanto, ela é considerada não infectante.\n\nAnálise das alternativas:\n\na) Incorreta. O uso de máscara cirúrgica pela mãe durante a amamentação só é indicado se ela ainda for bacilífera (escarro positivo) ou se estiver nos primeiros 15 dias de tratamento. Como ela já realiza o tratamento há um mês e tem exames negativos, a máscara é desnecessária.\n\nb) Incorreta. A vacinação do recém-nascido com BCG não é condição para o início da amamentação. Inclusive, em casos de mães bacilíferas, a conduta com o recém-nascido é adiar a BCG e iniciar a quimioprofilaxia primária. No caso desta mãe não infectante, a BCG pode ser feita ao nascimento normalmente, mas não restringe o aleitamento.\n\nc) Incorreta. O início da isoniazida (ou rifampicina) como quimioprofilaxia no recém-nascido é indicado quando a mãe tem tuberculose ativa e é considerada contagiosa no momento do parto. Como a paciente está com escarro negativo há três semanas e em tratamento efetivo há um mês, ela não é mais contagiosa, o que retira a obrigatoriedade de esperar o início da medicação do bebê para amamentar.\n\nd) Correta. Como a mãe não é mais bacilífera (está em tratamento há 30 dias com escarro negativo), não há risco de transmissão respiratória para o bebê durante o contato próximo da amamentação. O aleitamento deve ser estimulado livremente.\n\ne) Incorreta. A tuberculose não é contraindicação para o aleitamento materno. Mesmo se a mãe fosse bacilífera, a recomendação seria amamentar com o uso de máscara e higiene rigorosa das mãos, visto que os benefícios do leite materno superam os riscos, que podem ser mitigados. A única exceção seria a presença de mastite tuberculosa (lesão direta na mama), o que não é o caso.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Aleitamento Materno",
+      "Tuberculose na Infância"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:04.600Z"
+  },
+  {
+    "id": "AJUDA_e4f2e1d2-a74a-44d0-a99e-0d6b3327ccef",
+    "originalId": "e4f2e1d2-a74a-44d0-a99e-0d6b3327ccef",
+    "statement": "Homem de 20 anos iniciou, há sete dias, quadro com coriza hialina, lacrimejamento, hiperemia conjuntival e tosse discreta. Os episódios de tosse pioraram de forma acentuada, principalmente durante a madrugada, estando atualmente no décimo quarto dia do início do quadro. O paciente nega febre. O exame laboratorial revela hemoglobina = 13g/dL, leucócitos = 25.000/mm³, sendo 60% de linfócitos, e plaquetas = 250.000/mm³. A caderneta de vacinação da infância está completa. A melhor conduta, nesse caso, deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "iniciar oseltamivir e codeína",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "iniciar macrolídeos e hidratação via oral",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "realizar aspirado de medula óssea (MO) e amoxicilina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar imunofenotipagem do sangue periférico e iniciar corticoide",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico para coqueluche (tosse comprida), causada pela bactéria Bordetella pertussis. O paciente apresenta as fases típicas da doença: a fase catarral inicial (coriza, lacrimejamento e tosse leve) seguida pela fase paroxística (piora acentuada da tosse, especialmente à noite). \n\nUm ponto fundamental para o diagnóstico nesta questão é o hemograma. A presença de uma leucocitose importante (25.000 leucócitos/mm³) com linfocitose absoluta (60%, resultando em 15.000 linfócitos/mm³) em um paciente com tosse e sem febre é um sinal patognomônico de coqueluche. A bactéria produz uma toxina que impede a migração dos linfócitos do sangue para os tecidos linfoides, gerando esse acúmulo na corrente sanguínea.\n\nMesmo com a vacinação completa na infância, a imunidade para coqueluche (tanto vacinal quanto natural) diminui com o passar dos anos, tornando adolescentes e adultos jovens suscetíveis novamente.\n\nAnálise das alternativas:\n\na) Incorreta. O oseltamivir é indicado para o tratamento de influenza (gripe). Embora a gripe cause sintomas respiratórios, ela costuma cursar com febre alta e mialgia, e o hemograma geralmente não apresenta essa linfocitose intensa. A codeína é um antitussígeno que não trata a causa-base e não é a prioridade no manejo da coqueluche.\n\nb) Correta. O tratamento de escolha para a coqueluche é feito com antibióticos da classe dos macrolídeos (como azitromicina ou claritromicina). O uso do antibiótico tem como principais objetivos reduzir a transmissibilidade do agente para contatos e, se iniciado precocemente, diminuir a duração e a gravidade dos sintomas. A hidratação é uma medida de suporte essencial.\n\nc) Incorreta. O aspirado de medula óssea é um procedimento invasivo utilizado para investigar doenças hematológicas, como leucemias. Embora o número de glóbulos brancos esteja elevado (reação leucemoide), o quadro clínico de tosse paroxística e a ausência de anemia ou plaquetopenia direcionam o diagnóstico para uma causa infecciosa, e não neoplásica. A amoxicilina não possui ação eficaz contra a Bordetella pertussis.\n\nd) Incorreta. A imunofenotipagem de sangue periférico é utilizada no diagnóstico de neoplasias hematológicas. Como mencionado, a linfocitose aqui é uma reação fisiológica à toxina da coqueluche. O uso de corticoides não é o tratamento de primeira linha para esta infecção bacteriana.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Coqueluche"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:04.600Z"
+  },
+  {
+    "id": "AJUDA_e504afe1-9ee7-4a6c-a65e-643eb179104d",
+    "originalId": "e504afe1-9ee7-4a6c-a65e-643eb179104d",
+    "statement": "O derrame pleural parapneumônico complicado e o empiema torácico requerem intervenção oportuna para prevenir encarceramento pulmonar e sepse. Considerando os critérios clínicos, radiológicos e laboratoriais para indicação de drenagem torácica em derrames pleurais associados à pneumonia, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O aspecto macroscópico turvo do líquido pleural, por si só, constitui critério suficiente para indicação imediata de decorticação pulmonar por videotoracoscopia, independentemente de parâmetros laboratoriais ou da presença de loculações.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Valores de pH do líquido pleural inferiores a 7,20, glicose abaixo de 60 mg/dL ou evidência microbiológica direta no líquido caracterizam derrame complicado e indicam drenagem torácica, sem considerar a resposta clínica ao tratamento antibiótico inicial.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A antibioticoterapia sistêmica isolada é suficiente para o tratamento do empiema em qualquer fase evolutiva, sendo a drenagem torácica reservada apenas para casos refratários ou com organização fibrótica avançada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Derrames pleurais livres com espessura significativa à radiografia de tórax em decúbito lateral podem indicar necessidade de drenagem, mesmo na ausência de critérios bioquímicos de complicação, quando associados a evolução clínica desfavorável ou falha terapêutica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a) Incorreta. O aspecto turvo do líquido pleural indica apenas uma alta concentração de células ou proteínas, mas não é sinônimo de empiema (que é definido por pus franco). Além disso, a decorticação pulmonar é um procedimento cirúrgico reservado para a fase organizada do derrame, quando há formação de uma carapaça fibrosa que impede a expansão pulmonar. O manejo inicial de um derrame complicado ou empiema é a drenagem torácica tubular fechada, e não a cirurgia de decorticação imediata.\n\nAlternativa b) Correta. Esta alternativa define com precisão os critérios para o derrame pleural parapneumônico complicado. A presença de um pH inferior a 7,20, níveis de glicose abaixo de 60 mg/dL ou a identificação direta de microrganismos (por meio da coloração de Gram ou cultura) indicam que a invasão bacteriana no espaço pleural é significativa. Nesses casos, a drenagem torácica deve ser realizada prontamente, pois o derrame dificilmente será reabsorvido apenas com o uso de antibióticos, independentemente da melhora clínica inicial momentânea do paciente.\n\nAlternativa c) Incorreta. O empiema torácico, caracterizado pela presença de pus macroscópico, exige obrigatoriamente a drenagem do espaço pleural (princípio ubi pus, ibi evacua). A antibioticoterapia isolada é incapaz de esterilizar adequadamente uma coleção purulenta volumosa e encistada, sendo a drenagem essencial para o controle da fonte de infecção e para evitar a progressão para sepse ou encarceramento pulmonar crônico.\n\nAlternativa d) Incorreta. A radiografia em decúbito lateral (incidência de Laurell) é utilizada para avaliar se o derrame pleural é livre e qual a sua magnitude. Uma lâmina de líquido superior a 10 mm indica a necessidade de realizar uma toracentese diagnóstica para análise bioquímica e microbiológica do líquido. No entanto, o achado radiológico isolado, mesmo em derrames volumosos, não é critério absoluto para drenagem; a decisão de instalar o dreno de tórax baseia-se fundamentalmente nos resultados laboratoriais do líquido pleural ou na presença de pus.",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Derrame Pleural"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:04.600Z"
+  },
+  {
+    "id": "AJUDA_e508a258-744f-4e42-a692-d7c674b36a28",
+    "originalId": "e508a258-744f-4e42-a692-d7c674b36a28",
+    "statement": "A Reforma Psiquiátrica brasileira propõe a desinstitucionalização como eixo central da política de saúde mental. Contudo, a efetivação desse modelo depende da superação de obstáculos estruturais, financeiros e culturais. Considerando todas as dimensões analisadas, a alternativa que descreve, de forma mais completa, os principais desafios que ainda comprometem a plena implementação da desinstitucionalização no Brasil é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a escassez de leitos em hospitais psiquiátricos e a falta de profissionais de saúde mental nas regiões Norte e Nordeste, sem mencionar a necessidade de adequação legislativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a resistência dos movimentos de usuários e familiares ao modelo comunitário, associada à ausência de protocolos clínicos padronizados para o CAPS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a insuficiência de recursos financeiros destinados aos serviços comunitários, a fragilidade da articulação entre CAPS e atenção básica (apoio matricial limitado), e a persistência de estigmas socioculturais que ainda favorecem a institucionalização.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "a inexistência de políticas públicas voltadas à prevenção de transtornos mentais e a exclusão total da participação de organizações não-governamentais na rede de cuidados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a predominância de abordagens biomédicas nos CAPS, que impede a inserção de terapias ocupacionais e artísticas, sem considerar a necessidade de monitoramento epidemiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda os desafios contemporâneos da Reforma Psiquiátrica brasileira, que busca substituir o modelo hospitalocêntrico (centrado em hospitais psiquiátricos) por uma Rede de Atenção Psicossocial (RAPS) de base comunitária e territorial.\n\nAlternativa a: Incorreta. A Reforma Psiquiátrica preconiza justamente a redução progressiva e programada dos leitos em hospitais psiquiátricos, priorizando o atendimento em serviços abertos. Além disso, o Brasil já possui uma base legislativa consolidada, principalmente pela Lei 10.216 de 2001, não sendo a falta de leis o entrave principal.\n\nAlternativa b: Incorreta. Historicamente, os movimentos de usuários e familiares foram os grandes impulsionadores da Reforma e do modelo comunitário, e não focos de resistência. Quanto aos protocolos, embora a padronização clínica seja sempre passível de melhorias, o maior problema reside na estrutura e no financiamento, e não na ausência de diretrizes técnicas para o funcionamento dos CAPS.\n\nAlternativa c: Correta. Esta alternativa identifica com precisão o tripé de dificuldades enfrentadas na saúde mental brasileira:\n1. Financeira: O subfinanciamento crônico do SUS limita a ampliação de serviços como os CAPS, as Residências Terapêuticas e as Unidades de Acolhimento.\n2. Estrutural/Organizacional: O Apoio Matricial, que deveria integrar a saúde mental à Atenção Primária (Estratégia Saúde da Família), muitas vezes não ocorre de forma efetiva, gerando isolamento dos serviços especializados e sobrecarga da rede.\n3. Cultural: O estigma social contra a loucura e a ideia de que o portador de transtorno mental deve ser segregado para tratamento ainda são barreiras potentes que dificultam a reintegração social plena.\n\nAlternativa d: Incorreta. O Brasil possui políticas públicas de prevenção e promoção em saúde mental integradas à atenção básica. Além disso, diversas organizações não governamentais participam ativamente da rede, seja na cogestão de serviços ou em projetos de geração de renda e reinserção social.\n\nAlternativa e: Incorreta. Embora a tensão entre o modelo biomédico e o modelo psicossocial exista, os CAPS são estruturalmente desenhados para serem multiprofissionais. As terapias ocupacionais, oficinas de arte e atividades de lazer são pilares fundamentais desses serviços e não estão impedidas de ocorrer. O desafio é a consolidação da rede, e não a proibição de práticas multidisciplinares.",
+    "exam": "UEPA",
+    "year": 2026,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Psiquiatria Social e Reforma Psiquiátrica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/00e49b58a7f8589bb2c65bc5048b54d008c6c5e21526ecb58f72aa871f59acfa.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e3b0ffe7987cf8c30d5b99ab3a81b6a923234b034639ae78d6ec0fca86496cec.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:04.600Z"
+  },
+  {
+    "id": "AJUDA_e50f3413-19c3-4d9d-b6e6-8c38be38bc64",
+    "originalId": "e50f3413-19c3-4d9d-b6e6-8c38be38bc64",
+    "statement": "Paciente, 27 anos, apresentou 2 quadros sincopais nos últimos 6 meses. O exame clínico é normal exceto por sopro sistólico discreto em área mitral. Tem o seguinte eletrocardiograma: \n\nO achado mais provável neste paciente será:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Insuficiência mitral reumática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cardiomiopatia hipertrófica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Doença de Kawasaki.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Comunicação interatrial com embolia paradoxal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Insuficiência coronariana com aortite luética.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Caso Clínico:\nO paciente é um adulto jovem de 27 anos com história de síncopes recorrentes e sopro sistólico. Esse conjunto de sintomas em um paciente jovem deve sempre levantar a suspeita de causas estruturais cardíacas ou arrítmicas, sendo a Cardiomiopatia Hipertrófica (CMH) uma das principais hipóteses.\n\nAnálise do Eletrocardiograma:\nO ECG apresentado é patognomônico quando associado ao quadro clínico. Observam-se os seguintes achados:\n1. Sinais de hipertrofia ventricular esquerda (HVE): Ondas R muito amplas em derivações precordiais esquerdas (V5-V6) e ondas S profundas em V1-V2. O índice de Sokolow-Lyon (S de V1 ou V2 + R de V5 ou V6) é claramente superior a 35 mm.\n2. Ondas Q patológicas: Presença de ondas Q profundas e estreitas (chamadas de ondas Q em punhal ou dagger-like Q waves) nas derivações laterais (I, aVL, V5, V6) e inferiores (II, III, aVF). Essas ondas Q não representam fibrose por infarto, mas sim a despolarização do septo interventricular acentuadamente hipertrofiado.\n\nAnálise das Alternativas:\n\na) Incorreta. A insuficiência mitral reumática geralmente se manifesta com sinais de sobrecarga atrial esquerda e ventricular esquerda no ECG, mas não apresenta as ondas Q profundas típicas de hipertrofia septal. Além disso, o quadro de síncope aos 27 anos é mais sugestivo de miocardiopatia ou arritmia primária.\n\nb) Correta. A Cardiomiopatia Hipertrófica é a principal causa de morte súbita em atletas e jovens. A hipertrofia do septo causa a obstrução dinâmica do fluxo de saída do ventrículo esquerdo, o que explica a síncope (especialmente ao esforço) e o sopro sistólico. O sopro da CMH pode ser confundido com o de insuficiência mitral devido ao movimento sistólico anterior (SAM) da válvula mitral, que gera regurgitação associada. O ECG com HVE e ondas Q profundas em \"punhal\" é o achado clássico desta patologia.\n\nc) Incorreta. A doença de Kawasaki é uma vasculite da infância que pode gerar aneurismas coronarianos e isquemia miocárdica precoce. Embora pudesse causar ondas Q por infarto prévio, estas seriam mais largas e não viriam acompanhadas do padrão típico de hipertrofia septal exuberante em um paciente com este sopro característico.\n\nd) Incorreta. A Comunicação Interatrial (CIA) geralmente apresenta sopro em área pulmonar (desdobramento fixo de segunda bulha) e sobrecarga de cavidades direitas no ECG (desvio do eixo para a direita e bloqueio de ramo direito), o que não condiz com a imagem. A embolia paradoxal causaria um evento isquêmico focal (AVC), não necessariamente quadros sincopais repetidos.\n\ne) Incorreta. A aortite luética (sífilis terciária) é rara atualmente e costuma afetar o óstio das coronárias ou causar insuficiência aórtica por dilatação da raiz da aorta. O sopro seria diastólico (da insuficiência aórtica) e o perfil epidemiológico e clínico do paciente não direciona para esta etiologia.\n\nConclusão:\nO quadro de um jovem com síncope, sopro sistólico e um ECG demonstrando hipertrofia ventricular esquerda com ondas Q septais proeminentes é o \"be-á-bá\" para o diagnóstico de Cardiomiopatia Hipertrófica.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Cardiomiopatias",
+      "Eletrocardiograma"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/aad5de05fbecd160858e52c717a02b00cf7c12982560e96df9adcf5ef543fdbd.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e50f3413-19c3-4d9d-b6e6-8c38be38bc64_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:05.071Z"
+  },
+  {
+    "id": "AJUDA_e516609b-89d6-4351-9eaa-0a7c941f84f2",
+    "originalId": "e516609b-89d6-4351-9eaa-0a7c941f84f2",
+    "statement": "A bacteriúria assintomática é definida por uma amostra de jato médio de urina mostrando crescimento bacteriano ≥ 100.000 unidades formadoras de colônia/mL em duas amostras consecutivas em mulheres e em uma única amostra em homens, ambos sem sintomas do trato urinário. A triagem ou tratamento da bacteriúria assintomática deve ocorrer nas seguintes condições:",
+    "options": [
+      {
+        "id": "A",
+        "text": "mulheres sem fatores de risco para infecção urinária ou pacientes com diabetes mellitus bem controlado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "mulheres na pós-menopausa ou pacientes idosos institucionalizados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pacientes com trato urinário inferior disfuncional e/ou reconstruído ou pacientes com transplantes renais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "mulheres grávidas ou paciente que vão se submeter a procedimentos urológicos que rompam a mucosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A bacteriúria assintomática (BA) consiste no isolamento de bactérias em amostra de urina de pacientes que não apresentam sintomas de infecção do trato urinário (ITU). Na maioria absoluta dos casos, a conduta correta é não tratar, visando evitar o surgimento de bactérias multirresistentes e efeitos colaterais desnecessários. As exceções a essa regra são muito específicas e frequentemente cobradas em provas de residência.\n\nAlternativa A: Está incorreta. Mulheres saudáveis sem fatores de risco não devem ser rastreadas ou tratadas para BA. Da mesma forma, pacientes diabéticos, mesmo que bem controlados, apresentam maior prevalência de colonização urinária, porém o tratamento da bacteriúria assintomática nesse grupo não previne episódios futuros de ITU sintomática nem protege a função renal.\n\nAlternativa B: Está incorreta. Tanto mulheres na pós-menopausa quanto idosos institucionalizados apresentam taxas elevadas de bacteriúria assintomática. Estudos robustos demonstram que o tratamento nesses pacientes não traz benefícios clínicos, não melhora a sobrevida e pode aumentar o risco de reinfecção por germes mais resistentes.\n\nAlternativa C: Está incorreta. Pacientes com trato urinário inferior disfuncional (como bexiga neurogênica) ou reconstruído costumam ter colonização crônica, e o tratamento só deve ser instituído se houver sintomas. Em relação ao transplante renal, as diretrizes internacionais mais recentes (como as da IDSA) recomendam contra o rastreio e tratamento da bacteriúria assintomática na maioria dos casos, especialmente após os primeiros dois meses do transplante.\n\nAlternativa D: Está correta. Atualmente, existem apenas duas recomendações universais e consensuais para a triagem e o tratamento da bacteriúria assintomática: 1) Gestantes: o tratamento é fundamental em qualquer fase da gravidez, pois reduz significativamente o risco de evolução para pielonefrite (que pode chegar a 30% dos casos não tratados) e diminui riscos obstétricos como parto prematuro e baixo peso ao nascer. 2) Pacientes que serão submetidos a procedimentos urológicos invasivos nos quais se prevê a ruptura da mucosa (como ressecção transuretral de próstata ou biópsia de próstata): o tratamento preventivo nesses casos evita a translocação bacteriana para a corrente sanguínea e o desenvolvimento de urossepse no perioperatório.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "ITU - Infecção do Trato Urinário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:05.071Z"
+  },
+  {
+    "id": "AJUDA_e51d7333-958a-42a7-a747-36b080f6ca04",
+    "originalId": "e51d7333-958a-42a7-a747-36b080f6ca04",
+    "statement": "Paciente de 55 anos com antecedente de adenocarcinoma de cólon sigmoide tratado há 4 anos com retossigmoidectomia, sem intercorrências, vem ao ambulatório com exame de seguimento que mostra apenas 2 lesões metastáticas, restritas ao segmento II e III do fígado, sem acometimento vascular. Qual é a melhor alternativa cirúrgica após tratamento quimioterápico sistêmico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quimioembolização portal seguida de hepatectomia esquerda ampliada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hepatectomia lateral esquerda com controle intraoperatório por ultrassom.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Quimioembolização portal seguida de hepatectomia direita ampliada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hepatectomia lateral direita com controle intraoperatório por ultrassom.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, é fundamental o conhecimento da anatomia segmentar hepática (classificação de Couinaud) e dos princípios de cirurgia oncológica de metástases colorretais.\n\nAnálise do quadro clínico:\nO paciente apresenta metástases hepáticas de um adenocarcinoma de cólon prévio. As lesões estão localizadas nos segmentos II e III. De acordo com a anatomia hepática, os segmentos II e III compõem o setor lateral esquerdo do fígado (localizados à esquerda do ligamento falciforme).\n\nExplicação das alternativas:\n\nAlternativa (a) Incorreta. A quimioembolização ou embolização de veia porta é indicada quando o remanescente hepático futuro (o que sobrará de fígado após a cirurgia) é considerado insuficiente em volume para manter as funções vitais. Como as lesões estão restritas aos segmentos II e III, uma hepatectomia lateral esquerda é uma ressecção conservadora que deixa a maior parte do parênquima hepático (segmentos I, IV, V, VI, VII e VIII) intacta, não havendo necessidade de embolização portal para hipertrofia do lobo contralateral. Além disso, a hepatectomia esquerda ampliada seria um procedimento desnecessário e excessivamente agressivo para o caso.\n\nAlternativa (b) Correta. A conduta padrão para lesões restritas aos segmentos II e III é a hepatectomia lateral esquerda (também chamada de bissegmentectomia II-III). O uso do ultrassom intraoperatório é uma ferramenta indispensável na cirurgia hepática moderna, pois permite confirmar a localização das lesões, avaliar a relação com vasos importantes e identificar outras possíveis lesões não vistas nos exames de imagem pré-operatórios, garantindo margens cirúrgicas adequadas.\n\nAlternativa (c) Incorreta. Esta alternativa propõe a retirada do lado direito do fígado (hepatectomia direita ampliada), que é justamente o lado saudável neste paciente. As lesões estão situadas no lado esquerdo (segmentos II e III).\n\nAlternativa (d) Incorreta. Semelhante à alternativa anterior, propõe a retirada do lado direito. Além do erro de lateralidade, o termo hepatectomia lateral direita não é a nomenclatura anatômica padrão para as ressecções à direita (geralmente utiliza-se hepatectomia direita ou setorectomias específicas).\n\nEm resumo, diante de metástases colorretais restritas aos segmentos II e III, a cirurgia indicada é a retirada desses segmentos específicos (hepatectomia lateral esquerda), sempre auxiliada pelo ultrassom intraoperatório para segurança oncológica.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Tumores Hepáticos",
+      "Polipose Intestinal e Câncer Colorretal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:05.071Z"
+  },
+  {
+    "id": "AJUDA_e526399e-f217-4714-880b-33d59f0d26c2",
+    "originalId": "e526399e-f217-4714-880b-33d59f0d26c2",
+    "statement": "Lactente de 12 meses com quatro episódios de sibilância desde os 8 meses, um deles com necessidade de hospitalização. Todos os episódios ocorreram após quadros respiratórios virais. Entre crises, permanece com sintomas respiratórios leves. Ao exame: eutrófico, eupneico, ausculta com roncos de transmissão, lesões eczematosas em fossas cubitais e poplíteas.\n\nCom base no GINA 2025 para menores de 5 anos, qual a conduta terapêutica correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Manter salbutamol inalatório sob demanda durante as crises.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Corticoide inalatório diariamente, associado a salbutamol sob demanda.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Tratamento de suporte exclusivo nas crises.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Associar corticoide oral a salbutamol por um período de 3 a 5 dias nas crises.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\nO paciente é um lactente de 12 meses (menor de 5 anos) que apresenta um padrão de sibilância recorrente (quatro episódios em quatro meses). Três pontos fundamentais no enunciado direcionam a conduta: a gravidade (história de hospitalização), a persistência (sintomas respiratórios leves entre as crises) e a presença de atopia (lesões eczematosas compatíveis com dermatite atópica).\n\nDe acordo com as recomendações do GINA 2025 para crianças de 5 anos ou menos, o tratamento de controle (etapa 2) deve ser iniciado se o padrão de sibilância sugerir diagnóstico de asma ou se os episódios forem frequentes ou graves.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Manter apenas o broncodilatador (salbutamol) sob demanda é a conduta para a Etapa 1. Ela é indicada para crianças com episódios de sibilância viral intermitente e sem sintomas no intervalo. O paciente em questão tem sintomas persistentes e fatores de risco para asma (eczema e hospitalização), exigindo terapia de controle.\n\nAlternativa b) Correta. Segundo o GINA, o uso diário de corticoide inalatório (CI) em baixa dose é a terapia de controle preferencial para crianças com sibilância recorrente que apresentam: 1) Episódios frequentes (três ou mais por ano); 2) Sintomas no intervalo entre as crises; ou 3) Episódios graves desencadeados por vírus. A presença de dermatite atópica reforça a probabilidade de asma e a boa resposta ao corticoide inalatório. O salbutamol permanece como medicação de resgate.\n\nAlternativa c) Incorreta. O tratamento de suporte é insuficiente para um paciente com sibilância recorrente, sintomas persistentes no intervalo e histórico de internação. Ignorar a necessidade de controle inflamatório aumenta o risco de novas hospitalizações e perda de função pulmonar.\n\nAlternativa d) Incorreta. O corticoide oral associado ao salbutamol é o tratamento indicado para a crise aguda de sibilância ou asma. No entanto, a questão pede a conduta terapêutica com base no perfil clínico global do lactente. O uso recorrente de corticoide oral sem um tratamento de manutenção adequado é uma falha terapêutica; o foco deve ser a prevenção com corticoide inalatório diário.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Asma em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:05.071Z"
+  },
+  {
+    "id": "AJUDA_e5316893-c50d-4636-8b0f-68cae1a19a8d",
+    "originalId": "e5316893-c50d-4636-8b0f-68cae1a19a8d",
+    "statement": "Mulher, 27 anos de idade, sem comorbidades, apresenta dor abdominal difusa que migra para fossa ilíaca direita há 24h. Exame físico: dor localizada em abdome inferior com defesa. Laboratório: leucocitose e PCR elevada. Tomografia de abdômen: inconclusiva. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ressonância nuclear magnética de pelve com gadolíneo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Antibioticoterapia empírica intravenosa e reavaliação clínica em 12h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Observação ambulatorial com novo exame de imagem em 24h.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Videolaparoscopia diagnóstica, com apendicectomia se não encontrar nenhuma outra doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso:\n\nEstamos diante de uma paciente jovem com quadro clínico altamente sugestivo de apendicite aguda, caracterizado por dor migratória para a fossa ilíaca direita, sinais de irritação peritoneal (defesa) e marcadores inflamatórios elevados (leucocitose e PCR). O principal desafio em mulheres nessa faixa etária são os diagnósticos diferenciais ginecológicos, como cisto de ovário roto, doença inflamatória pélvica ou gravidez ectópica. Quando a tomografia computadorizada é inconclusiva em um cenário de abdome agudo com sinais físicos claros, a conduta deve evoluir para a investigação invasiva.\n\nAlternativa (a) Incorreta: A ressonância magnética é um excelente exame de imagem, sendo a escolha preferencial em gestantes para evitar a radiação da tomografia. Contudo, em uma paciente não gestante que já realizou uma tomografia e apresenta sinais de defesa abdominal, aguardar uma RM apenas retardaria o tratamento definitivo. O gadolínio, especificamente, não é o contraste de escolha para a avaliação de apendicite aguda.\n\nAlternativa (b) Incorreta: Iniciar antibioticoterapia e apenas reavaliar em 12 horas é uma conduta arriscada em um abdome agudo com irritação peritoneal. Os antibióticos podem mascarar a evolução dos sintomas e retardar a intervenção cirúrgica necessária, favorecendo complicações como a perfuração do apêndice e peritonite generalizada.\n\nAlternativa (c) Incorreta: A observação ambulatorial jamais deve ser indicada para uma paciente com dor abdominal aguda associada a sinais de defesa e exames laboratoriais alterados. O quadro exige monitorização hospitalar e definição diagnóstica célere. Aguardar 24 horas fora do ambiente hospitalar coloca a paciente em risco de sepse e choque.\n\nAlternativa (d) Correta: A videolaparoscopia diagnóstica é considerada o padrão-ouro em mulheres jovens com dúvida diagnóstica no abdome agudo inflamatório. O procedimento permite a visualização direta tanto do apêndice quanto do útero e anexos, resolvendo o dilema entre causas cirúrgicas e ginecológicas. Se o apêndice estiver inflamado, a apendicectomia é realizada no mesmo ato. Se o apêndice parecer macroscopicamente normal, mas não houver outra doença que justifique a dor, a apendicectomia ainda assim é recomendada pela maioria dos protocolos, pois pode haver inflamação apenas na mucosa (fase inicial) não visível externamente.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:05.071Z"
+  },
+  {
+    "id": "AJUDA_e5370558-5a77-48fc-b360-e16227ad11f9",
+    "originalId": "e5370558-5a77-48fc-b360-e16227ad11f9",
+    "statement": "Paciente do sexo masculino, de 58 anos, tabagista, portador de hipertensão arterial sistêmica, apresenta-se ao pronto atendimento com história de dor torácica opressiva irradiando para braço esquerdo e mandíbula iniciada há 130 minutos, associada a sudorese fria e náuseas. Apresenta como sinais vitais iniciais: PA: 98 x 64 mmHg, FC: 92 bpm, SatO₂: 95% AA. Realizou o eletrocardiograma a seguir:\n\nQual é a abordagem terapêutica para esse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transferir para angioplastia primária, aceitando atraso > 120 min, e iniciar heparina, apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar trombólise imediata com alteplase, administrar heparina de baixo peso molecular, AAS e clopidogrel e, após estabilização, transferir para angiografia de rotina em 2–24h.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitar curva de marcadores de necrose miocárdica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar AAS, clopidogrel e anticoagulação subcutânea e observar evolução por 6–12h.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico e Eletrocardiograma:\nO paciente apresenta um quadro clássico de Síndrome Coronariana Aguda com Supra de ST (IAMCSST). O eletrocardiograma revela elevação do segmento ST nas derivações precordiais de V1 a V6, bem como nas derivações laterais altas I e aVL, caracterizando um infarto de parede anterior extensa. Nota-se também o fenômeno de imagem em espelho (infradesnivelamento de ST) nas derivações inferiores (III e aVF). Com 130 minutos de dor, o paciente está dentro da janela de ouro para reperfusão miocárdica.\n\nAlternativa (a) Incorreta: A diretriz preconiza que, se o tempo previsto para a realização da angioplastia primária for superior a 120 minutos desde o diagnóstico, a estratégia de escolha deve ser a trombólise química imediata. Aceitar um atraso superior a 120 minutos sem realizar a reperfusão química aumenta a perda de miocárdio e a mortalidade. Além disso, o tratamento exige dupla antiagregação plaquetária, e não apenas heparina.\n\nAlternativa (b) Correta: Esta alternativa descreve a estratégia farmacoinvasiva. Quando o serviço não possui hemodinâmica pronta para intervir em até 120 minutos, deve-se realizar a fibrinólise (trombolítico como alteplase) associada a AAS, clopidogrel e anticoagulação (como enoxaparina/heparina de baixo peso molecular). Após o sucesso da trombólise (estabilização), o paciente deve ser transferido para um centro com hemodinâmica para realizar o cateterismo de rotina em uma janela de 2 a 24 horas.\n\nAlternativa (c) Incorreta: No IAM com supra de ST, o diagnóstico é eletrocardiográfico e clínico. Não se deve aguardar o resultado de marcadores de necrose miocárdica (troponina) para iniciar o tratamento de reperfusão. O atraso para esperar exames laboratoriais é um erro grave que consome tempo precioso de músculo cardíaco viável.\n\nAlternativa (d) Incorreta: A conduta descrita (observação e medicações subcutâneas) é voltada para Síndromes Coronarianas Agudas SEM supra de ST. No caso de infarto COM supra de ST, a oclusão arterial é total e exige reperfusão imediata (mecânica ou química). A observação por 6 a 12 horas resultaria em necrose extensa e possível insuficiência cardíaca grave ou morte.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+      "Eletrocardiograma"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/75362611ea39ac2a0596d3388ed6c8b785d011183c6ef1d6101c68c11724320b.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_e5370558-5a77-48fc-b360-e16227ad11f9_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T18:04:05.728Z"
+  }
+]

@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_811d135f-7ac1-435a-8109-e72884d82d57",
+    "originalId": "811d135f-7ac1-435a-8109-e72884d82d57",
+    "statement": "Em um estudo randomizado, controlado, que investigou os efeitos da tração controlada do cordão umbilical na terceira fase do trabalho de parto sobre a hemorragia pós-parto, a redução do risco associada à intervenção foi não significante (RR = 0,95; IC95% = 0,79 a 1,15). Com base neste resultado, qual é a alternativa correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "O intervalo de confiança de 95% quantifica a imprecisão da amostra em estimar o parâmetro populacional do risco relativo de hemorragia pós-parto.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Se o tamanho da amostra do estudo fosse aumentado, a largura do intervalo de confiança de 95% aumentaria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Um intervalo de confiança de 99% para o risco relativo populacional seria mais estreito do que o intervalo de confiança de 95% apresentado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pode-se inferir que 95% das amostras do grupo de intervenção perderam entre 0,79 e 1,15 vezes mais sangue do que o grupo controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) Correta: O Intervalo de Confiança (IC) de 95% é uma medida de precisão estatística. Como as pesquisas médicas são realizadas em amostras e não na população total, o resultado obtido é apenas uma estimativa. O IC quantifica essa imprecisão amostral, indicando a faixa de valores dentro da qual o verdadeiro parâmetro da população (neste caso, o Risco Relativo real) provavelmente se encontra.\n\nAlternativa (b) Incorreta: Existe uma relação inversa entre o tamanho da amostra e a largura do intervalo de confiança. Quanto maior o número de pacientes incluídos no estudo, menor será o erro padrão e, consequentemente, mais estreito e preciso será o intervalo de confiança. Se aumentássemos a amostra, a largura do IC diminuiria.\n\nAlternativa (c) Incorreta: Para aumentar o nível de confiança de que o valor real está contido no intervalo (passar de 95% para 99%), precisamos de uma margem de segurança maior. Portanto, um IC de 99% será sempre mais largo (mais abrangente) do que um IC de 95% calculado sobre os mesmos dados.\n\nAlternativa (d) Incorreta: O intervalo de confiança não descreve a distribuição individual dos dados ou o que ocorre com 95% dos pacientes ou das amostras. Ele é uma inferência sobre o parâmetro populacional médio. Além disso, o Risco Relativo (RR) mede a probabilidade de um evento ocorrer (hemorragia sim ou não) e não a magnitude da perda sanguínea (volume em ml) de cada indivíduo.\n\nAnálise Adicional: O estudo citado mostrou um RR de 0,95 com IC 95% de 0,79 a 1,15. Como o intervalo cruza o valor 1,0 (que é o valor de nulidade para medidas de associação do tipo razão), conclui-se que o resultado não teve significância estatística, ou seja, não se pode afirmar que a intervenção reduziu o risco de hemorragia.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:34.357Z"
+  },
+  {
+    "id": "AJUDA_811e55c4-cf82-4245-9a63-d107276c953f",
+    "originalId": "811e55c4-cf82-4245-9a63-d107276c953f",
+    "statement": "A mãe de um lactente de quatro meses, em aleitamento materno exclusivo, procura orientação porque vai voltar a trabalhar em 15 dias. O ganho ponderal da criança está adequado e a produção de leite é boa. A mãe está disposta a ordenhar para oferecer seu próprio leite para a criança.\nQual a orientação quanto ao tempo máximo de armazenamento do leite materno ordenhado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "24 horas na geladeira, ou 3 semanas no congelador/freezer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "48 horas na geladeira, ou 4 semanas no congelador/freezer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "8 horas na geladeira, ou 1 semana no congelador/freezer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "12 horas na geladeira, ou 2 semanas no congelador/freezer.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O armazenamento correto do leite materno ordenhado e cru no domicílio segue as diretrizes do Ministério da Saúde, da Rede Brasileira de Bancos de Leite Humano (rBLH) e da Sociedade Brasileira de Pediatria (SBP). Essas normas visam garantir a segurança microbiológica e a manutenção das propriedades nutricionais e imunológicas do leite. As recomendações oficiais para o ambiente doméstico estabelecem:\n\n- Geladeira: até 12 horas (armazenado na primeira prateleira, nunca na porta, para evitar variações de temperatura).\n- Freezer ou congelador: até 15 dias (cerca de 2 semanas), mantido em recipiente de vidro com tampa plástica devidamente higienizado.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Os prazos de 24 horas na geladeira e 3 semanas no freezer ultrapassam as recomendações do Ministério da Saúde, aumentando o risco de proliferação bacteriana e degradação de fatores bioativos.\n\nAlternativa b: Incorreta. Prazos de 48 horas sob refrigeração e 4 semanas de congelamento são excessivos e contrariam os protocolos nacionais de conservação do leite ordenhado para uso domiciliar.\n\nAlternativa c: Incorreta. Embora 8 horas na geladeira esteja dentro do prazo de segurança (que é de até 12 horas), o tempo de 1 semana no congelador subestima a capacidade máxima recomendada, que se estende por até 15 dias (2 semanas).\n\nAlternativa d: Correta. Apresenta com exatidão os tempos máximos preconizados pelas diretrizes brasileiras: 12 horas sob refrigeração na geladeira e 15 dias (aproximadamente 2 semanas) em congelador ou freezer doméstico.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Aleitamento Materno"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:34.357Z"
+  },
+  {
+    "id": "AJUDA_811e62eb-c976-4d6d-93b6-e2ac28d38de5",
+    "originalId": "811e62eb-c976-4d6d-93b6-e2ac28d38de5",
+    "statement": "Homem de 33 anos, com diagnóstico recente de HIV/AIDS, com contagem de CD4+ de 82 céls/mm3, ainda não iniciou terapia antirretroviral e refere odinofagia intensa, que está dificultando a ingestão alimentar. No exame físico, a oroscopia não apresenta alterações. O tratamento empírico mais apropriado a ser iniciado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fluconazol",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aciclovir",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Omeprazol",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ganciclovir",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do caso: O paciente apresenta um quadro de imunossupressão grave (HIV com contagem de CD4 de 82 células/mm³) e queixa de odinofagia intensa (dor ao engolir). Em pacientes vivendo com HIV e baixa contagem de linfócitos CD4, a causa mais comum de esofagite é a infecção pela Candida albicans. Um ponto fundamental nesta questão é que a ausência de placas esbranquiçadas na oroscopia (candidíase oral) não exclui o diagnóstico de esofagite candidiásica. Diante de um paciente com HIV, CD4 baixo e odinofagia, a conduta inicial é o tratamento empírico para candidíase esofágica antes de realizar exames invasivos como a endoscopia.\n\nAlternativa a) Fluconazol: Correta. É o tratamento de escolha para a esofagite por Candida. Devido à alta prevalência dessa infecção em pacientes com CD4 abaixo de 100 e à boa resposta terapêutica, a recomendação é iniciar o tratamento empírico com fluconazol por 14 a 21 dias. Caso o paciente não apresente melhora clínica em 3 a 5 dias, deve-se proceder à investigação com Endoscopia Digestiva Alta (EDA).\n\nAlternativa b) Aciclovir: Incorreta. O aciclovir é indicado para o tratamento da esofagite causada pelo vírus Herpes Simplex (HSV). Embora o HSV seja uma causa de esofagite em imunossuprimidos, ele é menos comum que a Candida. O tratamento antiviral é geralmente considerado após a falha do fluconazol ou se houver lesões herpéticas visíveis na cavidade oral.\n\nAlternativa c) Omeprazol: Incorreta. O omeprazol é um inibidor de bomba de prótons indicado para o tratamento de doença do refluxo gastroesofágico e úlceras pépticas. Embora o refluxo possa causar esofagite, em um paciente com AIDS e CD4 < 100, a probabilidade de uma infecção oportunista é muito superior, tornando o tratamento empírico antifúngico a prioridade.\n\nAlternativa d) Ganciclovir: Incorreta. O ganciclovir é a droga de escolha para a esofagite por Citomegalovírus (CMV), que costuma ocorrer em pacientes com imunossupressão severa (CD4 geralmente abaixo de 50). Na endoscopia, o CMV costuma causar úlceras únicas, grandes e profundas. No entanto, o ganciclovir apresenta maior toxicidade e a candidíase continua sendo a causa estatisticamente mais provável, devendo ser tratada primeiro.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:34.357Z"
+  },
+  {
+    "id": "AJUDA_81220121-2f60-43ea-981c-1c83c9ab2105",
+    "originalId": "81220121-2f60-43ea-981c-1c83c9ab2105",
+    "statement": "Menino de 3 anos, febre baixa, tosse e taquipneia leve, sem sinais de gravidade, com boa aceitação de líquidos e sem alergias medicamentosas; ausculta com estertores localizados e FR dentro do ponto de corte para idade. Definir o esquema antibiótico de primeira linha no ambulatório:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever amoxicilina 50 mg/kg/dia em 8/8 h ou 12/12 h.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Indicar ceftriaxona intramuscular diária em domicílio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Introduzir amoxicilina/clavulanato como escolha inicial de rotina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar macrolídeo isolado para ampla cobertura empírica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Reservar antibioticoterapia e aguardar reavaliação sem fármaco.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descrito aponta para uma pneumonia adquirida na comunidade (PAC) em um paciente pediátrico de 3 anos. O diagnóstico é clínico, baseado na presença de febre, tosse e alteração na ausculta pulmonar (estertores localizados), mesmo que a frequência respiratória (FR) ainda esteja no limite da normalidade. Como o paciente apresenta boa aceitação oral e ausência de sinais de gravidade (como tiragem subcostal, batimento de asas do nariz ou cianose), o tratamento deve ser realizado em regime ambulatorial.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. A amoxicilina é o antibiótico de escolha e primeira linha para o tratamento ambulatorial da PAC em crianças acima de 2 meses de idade. Isso ocorre porque o principal agente etiológico bacteriano nessa faixa etária é o Streptococcus pneumoniae (pneumococo). A dose de 50 mg/kg/dia é a recomendação clássica do Ministério da Saúde para casos sem suspeita de resistência, podendo ser administrada a cada 8 ou 12 horas. Algumas diretrizes de sociedades de especialidades sugerem doses maiores (80-90 mg/kg/dia) em locais com alta prevalência de pneumococo com sensibilidade reduzida, mas a alternativa \"a\" reflete a conduta padrão básica em concursos.\n\nAlternativa b) Incorreta. A ceftriaxona intramuscular é uma opção para pacientes que não toleram a via oral ou em situações nas quais a adesão ao tratamento é duvidosa, mas não é a primeira linha para um quadro leve com boa aceitação de líquidos. Seu uso rotineiro em domicílio para casos simples contribui para o aumento da resistência bacteriana.\n\nAlternativa c) Incorreta. O uso de amoxicilina associada ao clavulanato não é indicado de rotina como primeira escolha. O clavulanato é adicionado para cobrir germes produtores de betalactamase (como Haemophilus influenzae e Moraxella catarrhalis). No entanto, o pneumococo (principal alvo) altera sua proteína de ligação à penicilina para resistir ao fármaco, e não por meio de betalactamases, tornando o clavulanato desnecessário na abordagem inicial simples.\n\nAlternativa d) Incorreta. Os macrolídeos (como azitromicina ou claritromicina) são indicados principalmente quando há suspeita de pneumonia por germes atípicos (Mycoplasma pneumoniae e Chlamydia pneumoniae). Essas infecções são mais comuns em crianças maiores de 5 anos e adolescentes. No pré-escolar de 3 anos com quadro típico (início súbito, febre, estertores localizados), deve-se priorizar a cobertura para o pneumococo com penicilinas.\n\nAlternativa e) Incorreta. Diante de uma criança com sinais clínicos de pneumonia bacteriana (ausculta com estertores localizados associada a quadro febril), a conduta correta é a introdução imediata de antibioticoterapia. Aguardar sem medicação aumenta o risco de complicações, como o derrame pleural. No caso de crianças muito pequenas com quadros puramente virais (bronquiolite), a conduta seria de suporte, mas os estertores localizados e a febre direcionam para a etiologia bacteriana neste cenário.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Pneumonia na Infância",
+      "Pneumonias Bacterianas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:34.357Z"
+  },
+  {
+    "id": "AJUDA_81243438-bd0e-48de-bb47-d450c49cef09",
+    "originalId": "81243438-bd0e-48de-bb47-d450c49cef09",
+    "statement": "A classificação de Hinchey refere-se à gravidade de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pancreatite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Diverticulite.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Apendicite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Colecistite.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Obstrução intestinal por volvo de sigmoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A classificação de Hinchey é uma ferramenta fundamental na cirurgia geral, utilizada para estratificar a gravidade da diverticulite aguda complicada. Ela se baseia na extensão do processo inflamatório e infeccioso na cavidade abdominal, sendo essencial para orientar a conduta terapêutica, seja ela clínica, percutânea ou cirúrgica.\n\nAlternativa (a) Incorreta. A gravidade da pancreatite aguda é avaliada por outros sistemas de pontuação e classificações, como os Critérios de Ranson, o escore APACHE II, a Classificação de Atlanta (que define pancreatite leve, moderadamente grave ou grave) e o Índice de Gravidade Tomográfica de Balthazar.\n\nAlternativa (b) Correta. A classificação de Hinchey (e suas versões modificadas) gradua a diverticulite aguda da seguinte forma:\nHinchey I: Abscesso pericólico ou flegmão (confinado ao mesocólon).\nHinchey II: Abscesso pélvico, intra-abdominal ou retroperitoneal à distância.\nHinchey III: Peritonite purulenta generalizada (presença de pus na cavidade, sem comunicação franca com o lúmen intestinal).\nHinchey IV: Peritonite fecal (perfuração livre com extravasamento de fezes para a cavidade abdominal).\n\nAlternativa (c) Incorreta. Para a apendicite aguda, embora existam classificações cirúrgicas baseadas no aspecto da peça (edematosa, fibrinopurulenta, gangrenosa ou perfurada) e escores diagnósticos como o de Alvarado, a escala de Hinchey não é utilizada.\n\nAlternativa (d) Incorreta. A gravidade da colecistite aguda é classicamente definida pelos Critérios de Tóquio (Tokyo Guidelines - TG13/TG18). Essa classificação divide a doença em Grau I (leve), Grau II (moderada, com marcadores inflamatórios elevados ou massa palpável) e Grau III (grave, com disfunção de órgãos).\n\nAlternativa (e) Incorreta. O volvo de sigmoide é uma causa de obstrução intestinal mecânica. Sua gravidade é avaliada pela presença ou ausência de isquemia colônica (necrose), gangrena ou perfuração intestinal, mas não possui relação com a classificação de Hinchey.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Diverticulite Aguda"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:34.357Z"
+  },
+  {
+    "id": "AJUDA_81262633-1d78-4fa8-81b7-05142d9bb7b0",
+    "originalId": "81262633-1d78-4fa8-81b7-05142d9bb7b0",
+    "statement": "Paciente masculino, 88 anos, portador de hipertensão e diabetes, com histórico de cateterismo e colocação de stent há 2 anos, em uso de anticoagulante oral, foi trazido pelo cuidador após queda da própria altura em casa. Não apresentou perda de consciência desde a queda até a chegada ao hospital. Ao exame físico, apresenta hematoma subgaleal frontal à esquerda, sem alterações no exame respiratório e sem dor abdominal. Qual deve ser a conduta inicial?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Observação do paciente internado por 48 horas para monitoramento de sinais neurológicos e verificar possível intervalo lúcido.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar tomografia computadorizada de crânio para avaliação de lesões intracranianas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar para ressonância magnética de crânio para melhor avaliação de possíveis hematomas subdurais crônicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar profilaxia de anticonvulsivante devido ao risco aumentado de convulsões pela queda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Observação ambulatorial, com orientação para retornar caso apresente sintomas neurológicos ou piora clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Texto Original:\nO caso apresenta um paciente idoso (88 anos) com traumatismo cranioencefálico (TCE) leve, porém com fatores de alto risco para complicações intracranianas. O ponto central da questão é identificar a indicação de exame de imagem em idosos e usuários de anticoagulantes após trauma.\n\nExplicação das alternativas:\n\na) Incorreta. A observação clínica é uma etapa importante, mas não deve preceder a realização de um exame de imagem em pacientes com alto risco de sangramento. O intervalo lúcido é clássico do hematoma epidural, mas em idosos anticoagulados o risco de hematoma subdural agudo ou contusões é muito elevado, exigindo diagnóstico imediato.\n\nb) Correta. Segundo os principais protocolos de trauma (como o ATLS e as regras de Toronto ou New Orleans), a realização de tomografia computadorizada (TC) de crânio é obrigatória em pacientes com idade superior a 65 anos que sofreram TCE, mesmo que o impacto pareça leve. O uso de anticoagulante oral potencializa drasticamente o risco de hemorragias intracranianas traumáticas, muitas vezes com apresentações clínicas inicialmente frustas ou assintomáticas. Portanto, a TC é a conduta inicial padrão-ouro.\n\nc) Incorreta. A ressonância magnética (RM) não é o exame de escolha na fase aguda do trauma. A TC é preferível por ser mais rápida, mais disponível nos prontos-socorros e apresentar excelente sensibilidade para detectar sangue agudo e fraturas ósseas. A RM ficaria reservada para casos de discordância entre o quadro clínico e a TC ou para avaliação de lesão axonal difusa posteriormente.\n\nd) Incorreta. Não existe indicação de profilaxia com anticonvulsivantes para pacientes com TCE leve sem evidência de crise convulsiva, lesão parenquimatosa específica ou afundamento de crânio. O uso rotineiro de fenitoína ou levetiracetam sem critérios específicos não previne a epilepsia pós-traumática a longo prazo.\n\ne) Incorreta. A alta com observação ambulatorial é contraindicada neste cenário. Devido à idade avançada e ao uso de anticoagulantes, o risco de sangramento intracraniano tardio ou de evolução rápida é alto. O paciente deve obrigatoriamente realizar a TC e ser monitorado. Liberar o paciente sem imagem neste contexto é considerado erro médico grave por negligência aos critérios de risco.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:34.357Z"
+  },
+  {
+    "id": "AJUDA_81295bf9-ff04-4e1d-b133-361c3cf734f3",
+    "originalId": "81295bf9-ff04-4e1d-b133-361c3cf734f3",
+    "statement": "Sobre a predição e o manejo do parto prematuro, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A terbutalina é o tocolítico preferencial no Brasil, devido ao menor risco de efeitos adversos cardiovasculares maternos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A corticoterapia antenatal está indicada de forma rotineira entre 24 e 34 semanas, com dexametasona semanal até o parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O uso de cerclagem cervical está indicado em toda gestante com colo uterino <25 mm, independentemente de história obstétrica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O atosiban é um inibidor da fosfodiesterase utilizado como primeira escolha para tocolise em casos de contrações com dilatação <2 cm.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A nifedipina pode ser usada como tocolítico em partos prematuros iminentes, mas está contraindicada na presença de cardiopatia materna.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Alternativa a: Incorreta. A terbutalina pertence à classe dos beta-agonistas. Ela é conhecida justamente pelo elevado risco de efeitos adversos cardiovasculares maternos, como taquicardia severa, palpitações, arritmias e, em casos mais graves, edema agudo de pulmão. Por esse perfil de segurança desfavorável, ela tem sido substituída pela nifedipina ou pelo atosiban como drogas de primeira escolha.\n\nAlternativa b: Incorreta. A corticoterapia antenatal é recomendada em ciclo único (duas doses de betametasona ou quatro doses de dexametasona). O uso rotineiro de doses semanais é contraindicado, pois está associado a riscos para o feto, como redução do crescimento intrauterino e do perímetro cefálico. Um segundo ciclo (ciclo de resgate) só deve ser considerado em situações muito específicas se o primeiro ciclo tiver ocorrido há mais de 7 a 14 dias e houver nova ameaça de parto prematuro.\n\nAlternativa c: Incorreta. A indicação de cerclagem não é universal para todos os colos curtos. Em gestantes sem antecedente de parto prematuro (achado incidental de colo menor que 25 mm no ultrassom), a conduta de escolha é o uso de progesterona vaginal. A cerclagem cervical é indicada para pacientes com história clássica de insuficiência istmocervical ou para aquelas com antecedente de parto prematuro espontâneo que apresentam encurtamento do colo na gestação atual.\n\nAlternativa d: Incorreta. O atosiban é um antagonista dos receptores da ocitocina, agindo ao bloquear a ligação desse hormônio no miométrio para reduzir as contrações. Ele não é um inibidor da fosfodiesterase. Além disso, embora seja eficaz, seu alto custo no Brasil faz com que a nifedipina seja frequentemente a primeira escolha em diversos protocolos institucionais, ficando o atosiban reservado para casos com contraindicações aos outros tocolíticos.\n\nAlternativa e: Correta. A nifedipina é um bloqueador de canais de cálcio que promove o relaxamento da musculatura uterina, sendo um tocolítico eficaz e de fácil administração. No entanto, por causar vasodilatação periférica, ela pode gerar hipotensão e taquicardia reflexa. Essas alterações hemodinâmicas podem ser perigosas em pacientes com cardiopatias (como estenose aórtica ou insuficiência cardíaca), tornando essa condição uma contraindicação ao seu uso.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:34.357Z"
+  },
+  {
+    "id": "AJUDA_8129ffe8-b463-4580-82a9-613542428a87",
+    "originalId": "8129ffe8-b463-4580-82a9-613542428a87",
+    "statement": "Mulher, 33 anos de idade, nulípara, deseja engravidar. Realizou cirurgia de alta frequencia no colo do útero. Anatomia patológica: neoplasia intraepitelial escamosa de alto grau extensa, com foco de invasão de 4mm, presença de êmbolos carcinomatosos em vasos linfáticos, margens livres para componente invasor e intraepitelial. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nova cirurgia de alta frequência e reavaliação em 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Liberar para gestação com cerclagem após 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Traquelectomia radical e linfadenectomia pélvica bilateral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Realizar cerclagem e liberar para gestação imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um carcinoma epidermoide de colo uterino em estádio inicial. De acordo com a classificação da FIGO (Federação Internacional de Ginecologia e Obstetrícia), um foco de invasão de 4 milímetros de profundidade caracteriza o estádio IA2 (invasão entre 3 mm e menos de 5 mm). O fato de haver invasão de vasos linfáticos (êmbolos carcinomatosos) aumenta consideravelmente o risco de metástases para os linfonodos pélvicos, mesmo em estádios iniciais. Como a paciente tem 33 anos, é nulípara e deseja engravidar, a conduta deve buscar a cura oncológica preservando a fertilidade.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A: Incorreta. Uma nova cirurgia de alta frequência (CAF) seria apenas uma nova conização. No estádio IA2, especialmente com a presença de invasão linfovascular, o tratamento local isolado é insuficiente. É necessário realizar a avaliação dos linfonodos pélvicos e uma ressecção mais ampliada (radicalidade), devido ao risco de disseminação parametrial e linfonodal.\n\nAlternativa B: Incorreta. Não se pode liberar uma paciente para gestação com a presença de um câncer invasivo de 4 mm e invasão linfovascular sem o tratamento cirúrgico radical adequado. A cerclagem é um procedimento complementar que será necessário no futuro, caso ela realize a traquelectomia, mas não substitui o tratamento oncológico necessário agora.\n\nAlternativa C: Correta. Esta é a conduta de escolha para pacientes no estádio IA2 que desejam preservar a fertilidade. A traquelectomia radical consiste na retirada do colo uterino e de parte do paramétrio, preservando o corpo do útero (e, portanto, a capacidade de gestar). A linfadenectomia pélvica bilateral é obrigatória devido ao risco de metástases linfonodais, que é potencializado pela presença de invasão de vasos linfáticos descrita na anatomia patológica.\n\nAlternativa D: Incorreta. Liberar para gestação imediatamente diante de um diagnóstico de carcinoma invasor com 4 mm de profundidade e êmbolos linfáticos representaria uma grave falha terapêutica, permitindo a progressão da doença maligna. O tratamento do câncer deve preceder qualquer tentativa de gestação.\n\nRESUMO DA CONDUTA\n\nPara o estádio IA2 com desejo de prole, o tratamento padrão é a traquelectomia radical associada à linfadenectomia pélvica. Se a paciente não tivesse desejo reprodutivo, a conduta seria a histerectomia radical (Tipo B) com linfadenectomia. A presença de invasão linfovascular é o divisor de águas que reforça a necessidade imperativa de avaliar os linfonodos pélvicos.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:34.357Z"
+  },
+  {
+    "id": "AJUDA_8130a73d-d6d7-43dc-a95d-30dec4e1133f",
+    "originalId": "8130a73d-d6d7-43dc-a95d-30dec4e1133f",
+    "statement": "Mulher de 52 anos, passado de doença pulmonar desconhecida quando mais jovem, vem apresentando, há alguns meses, episódios de tosse seca, associados a períodos de dispneia aos esforços. Tabagista com carga tabágica de 35 maços/ano e etilismo social. O exame físico mostra obesidade, IMC =34kg/m2 , taquipneia, murmúrio vesicular diminuído principalmente em bases, crepitações e alguns sibilos. A prova de função respiratória mostra capacidade vital forçada (CVF) = 2,00 (normal: 3,31), volume expiratório no primeiro segundo (VEF1s) = 1,70 (normal: 2,86) e, após o uso de broncodilatador, CVF= 2,10 e VEF1s = 1,74. Em relação ao caso apresentado, a melhor definição do tipo de distúrbio ventilatório e de uma doença a ele relacionada, respectivamente, são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Restritivo reversível / sarcoidose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Obstrutivo reversível / asma brônquica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Obstrutivo não reversível / enfisema pulmonar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obstrutivo reversível / doença pulmonar objetiva crônica associada ao tabagismo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Restritivo não reversível / pneumonia intersticial não específica",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO E DA ESPIROMETRIA\n\nPara identificar o distúrbio ventilatório, devemos seguir um roteiro sistemático de interpretação da prova de função respiratória (espirometria):\n\n1. Avaliação do Índice de Tiffeneau (VEF1/CVF):\nO primeiro passo é dividir o Volume Expiratório Forçado no primeiro segundo (VEF1) pela Capacidade Vital Forçada (CVF).\nCálculo: 1,70 / 2,00 = 0,85 (85%).\nComo o valor está acima de 0,70 (ou 70%), descartamos um distúrbio obstrutivo. Nos distúrbios obstrutivos, o paciente tem dificuldade em exalar o ar rapidamente, o que reduz o VEF1 proporcionalmente mais que a CVF, resultando em um índice baixo.\n\n2. Avaliação da Capacidade Vital Forçada (CVF):\nObservamos que a CVF da paciente é de 2,00, enquanto o normal esperado para ela seria 3,31.\nCálculo do percentual do previsto: (2,00 / 3,31) x 100 = 60,4%.\nValores de CVF abaixo de 80% do previsto, associados a um índice de Tiffeneau normal ou elevado, definem o Distúrbio Ventilatório Restritivo (DVR).\n\n3. Avaliação da Resposta ao Broncodilatador (BD):\nPara ser considerado um distúrbio reversível, deve haver um aumento de pelo menos 12% E 200 ml no VEF1 ou na CVF após o uso do medicamento.\nNo VEF1: passou de 1,70 para 1,74 (ganho de apenas 40 ml e 2,3%).\nNa CVF: passou de 2,00 para 2,10 (ganho de apenas 100 ml e 5%).\nPortanto, o distúrbio não é reversível.\n\nCORRELAÇÃO CLÍNICA\n\nA paciente apresenta tosse seca, dispneia aos esforços, taquipneia e crepitações (estertores em velcro) ao exame físico. Esse quadro é típico de doenças pulmonares intersticiais. A Pneumonia Intersticial Não Específica (PINE) é uma forma de doença intersticial que causa fibrose ou inflamação no parênquima pulmonar, levando à restrição (o pulmão fica \"rígido\" e pequeno) e não responde a broncodilatadores, pois o problema não é o calibre dos brônquios, mas sim o tecido pulmonar.\n\nANÁLISE DAS ALTERNATIVAS\n\na) INCORRETA. Embora a sarcoidose possa causar um padrão restritivo, o teste de broncodilatador foi negativo neste caso (não houve reversibilidade significativa nos parâmetros espirométricos). Além disso, as restrições por doenças do parênquima pulmonar raramente apresentam reversibilidade imediata ao broncodilatador.\n\nb) INCORRETA. O índice de Tiffeneau de 0,85 exclui o diagnóstico de asma brônquica (distúrbio obstrutivo), no qual esperaríamos uma relação VEF1/CVF menor que 0,70.\n\nc) INCORRETA. O enfisema pulmonar é uma forma de Doença Pulmonar Obstrutiva Crônica (DPOC). Como o índice de Tiffeneau da paciente é normal, o padrão não é obstrutivo.\n\nd) INCORRETA. Além de o padrão não ser obstrutivo, a DPOC clássica é caracterizada por uma obstrução que não é totalmente reversível, e a questão menciona um padrão restritivo.\n\ne) CORRETA. O padrão espirométrico é restritivo (Tiffeneau normal com CVF baixa), não houve resposta significativa ao broncodilatador (não reversível) e a Pneumonia Intersticial Não Específica justifica perfeitamente os achados clínicos de dispneia, tosse seca e crepitações.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:34.357Z"
+  },
+  {
+    "id": "AJUDA_8141c26e-6192-49ab-9c1e-fa20c4ad08eb",
+    "originalId": "8141c26e-6192-49ab-9c1e-fa20c4ad08eb",
+    "statement": "Paciente feminina, de 40 anos, consultou por vir apresentando episódios recorrentes de litíase renal, com eliminação frequente de cálculos. Referiu história de litíase renal na família. À avaliação metabólica, foi identificada hipercalciúria idiopática. Diante do quadro, assinale a alternativa que contempla outras medidas adequadas, além da hidratação, para prevenir novos cálculos renais.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Restrição severa de cálcio e sal na dieta",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suplementação de vitamina C e suplementação de cálcio oral (carbonato de cálcio e colecalciferol)",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aumento do consumo de proteínas animais e restrição do consumo de cálcio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Restrição de sal na dieta e uso de diurético tiazídico (clortalidona)",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DO PROFESSOR:\n\nO caso clínico descreve uma paciente com litíase renal de repetição e o diagnóstico metabólico de hipercalciúria idiopática. A hipercalciúria idiopática é a alteração metabólica mais comum em formadores de cálculos de cálcio. O objetivo do tratamento é reduzir a concentração de cálcio na urina para evitar a supersaturação e a cristalização.\n\nAlternativa A: Incorreta. Embora a restrição de sal (sódio) seja recomendada, a restrição severa de cálcio na dieta é contraindicada. Quando reduzimos o cálcio dietético, há um aumento na absorção intestinal de oxalato (que normalmente se liga ao cálcio no intestino para ser excretado nas fezes). Esse oxalato livre é absorvido, excretado na urina (hiperoxalúria) e acaba reagindo com o cálcio urinário, aumentando a formação de cálculos de oxalato de cálcio. Além disso, a restrição de cálcio aumenta o risco de osteopenia e osteoporose.\n\nAlternativa B: Incorreta. A suplementação de vitamina C deve ser evitada em pacientes com litíase, pois o ácido ascórbico é metabolizado em oxalato, podendo elevar a oxalúria. A suplementação de cálcio e vitamina D não é a medida preventiva padrão para hipercalciúria; o ideal é manter a ingestão de cálcio por meio de fontes dietéticas naturais.\n\nAlternativa C: Incorreta. O aumento do consumo de proteínas animais é prejudicial. A proteína animal gera uma carga ácida que estimula a reabsorção óssea (liberando cálcio) e reduz a excreção de citrato (um importante inibidor natural da formação de cálculos). A restrição de cálcio é incorreta pelos motivos já explicados na alternativa A.\n\nAlternativa D: Correta. Esta é a conduta padrão. A restrição de sal (sódio) é fundamental porque o sódio e o cálcio competem pela reabsorção renal; níveis altos de sódio na urina \"carregam\" o cálcio consigo, aumentando a calciúria. Os diuréticos tiazídicos, como a clortalidona ou a hidroclorotiazida, são as medicações de escolha, pois agem no túbulo distal promovendo a reabsorção de cálcio, o que reduz diretamente a quantidade de cálcio excretada na urina.\n\nGabarito: Letra D.",
+    "exam": "HCPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/cf434b16a83b2eab4aeba75424bbee79db652b6911768ffe01a32f1f9f036b35.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e232e53cd3323f055a5347e64591531d7ba307b121fa8964e6ffb635998b330.pdf"
+    },
+    "collectedAt": "2026-10-24T17:07:34.357Z"
+  }
+]

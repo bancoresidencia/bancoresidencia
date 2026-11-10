@@ -1,0 +1,495 @@
+[
+  {
+    "id": "AJUDA_75b6fc36-ef7d-4da4-b510-f0439a7967e5",
+    "originalId": "75b6fc36-ef7d-4da4-b510-f0439a7967e5",
+    "statement": "Paciente de 51 anos, tabagista, refere epigastralgia de moderada intensidade há 3 dias e com início súbito, associada a vômitos e a uma piora do estado geral. Apresenta-se com frequência cardíaca de 106bpm, PA 130/80mmHg, desidratação, leve distensão abdominal e presença de ruídos hidroaéreos aumentados. Exames laboratoriais com 19500 leucócitos e sem desvio à esquerda, lipase 750 e amilase 1150, TGO 290 e TGP 130, bilirrubinas sem alterações. Glicemia de 195 e DHL 225. Considerando o caso clínico descrito, qual é a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gastroenterite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Pancreatite aguda leve.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Diverticulite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pancreatite aguda grave.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do Quadro Clínico:\nO paciente apresenta um quadro clássico de dor abdominal em andar superior (epigastralgia) de início súbito, associada a vômitos e alterações laboratoriais significativas. O diagnóstico de pancreatite aguda é fechado quando o paciente preenche pelo menos dois de três critérios: dor abdominal típica, amilase ou lipase três vezes acima do valor de referência, e exames de imagem compatíveis. Neste caso, o paciente possui a dor típica e as enzimas muito elevadas (amilase 1150 e lipase 750), confirmando a pancreatite.\n\nAnalise das Alternativas:\n\nAlternativa a) Gastroenterite aguda: Incorreta. Embora a gastroenterite possa causar dor abdominal e vômitos, ela não justifica a elevação expressiva das enzimas pancreáticas (amilase e lipase). Além disso, a dor da gastroenterite costuma ser em cólica e geralmente vem acompanhada de diarreia, o que não foi relatado.\n\nAlternativa b) Pancreatite aguda leve: Correta. O diagnóstico é de pancreatite aguda. Para classificar a gravidade, observamos os Critérios de Ranson ou a Classificação de Atlanta. Pelos critérios de Ranson na admissão, o paciente pontua em: Leucócitos (19500, sendo o corte 16000) e TGO (290, sendo o corte 250). Ele não pontua em idade (51 anos, corte é 55), glicemia (195, corte é 200) ou DHL (225, corte é 350). Com apenas 2 pontos no Ranson, o prognóstico é favorável e a mortalidade é baixa. Clinicamente, o paciente está hemodinamicamente estável (PA 130/80 mmHg), sem sinais de falência orgânica imediata, o que caracteriza a forma leve da doença.\n\nAlternativa c) Diverticulite aguda: Incorreta. A diverticulite manifesta-se tipicamente com dor no quadrante inferior esquerdo do abdômen (fossa ilíaca esquerda) e alterações do hábito intestinal. Não há elevação de enzimas pancreáticas nessa patologia.\n\nAlternativa d) Pancreatite aguda grave: Incorreta. De acordo com a classificação de Atlanta, a pancreatite é considerada grave quando há falência orgânica persistente (por mais de 48 horas), como choque, insuficiência renal ou respiratória, ou presença de complicações locais (necrose extensa, abscesso). O paciente apresenta estabilidade pressórica e uma pontuação baixa nos critérios de gravidade (Ranson de 2), não preenchendo critérios para a forma grave no momento da avaliação.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:29.238Z"
+  },
+  {
+    "id": "AJUDA_75b96221-eb0b-47ba-ae1d-01781a85532a",
+    "originalId": "75b96221-eb0b-47ba-ae1d-01781a85532a",
+    "statement": "Um grupo de pesquisa buscou investigar se a infecção prévia pelo vírus Epstein-Barr (EBV) é um fator de risco para o desenvolvimento de Esclerose Múltipla (EM). Para isso, em 2022, os pesquisadores identificaram 500 prontuários de pacientes com diagnóstico recente de EM e 1.000 prontuários de pacientes da mesma região, do mesmo sexo e faixa etária, mas com outras doenças neurológicas não desmielinizantes. Eles, então, analisaram retrospectivamente, por meio de exames de sangue arquivados, a presença de anticorpos contra o EBV nos dois grupos, referentes a amostras coletadas 5 anos antes do início dos sintomas neurológicos. Assinale a alternativa que corresponde a esse tipo de estudo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estudo Ecológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estudo Transversal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ensaio Clínico Randomizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Estudo de Coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Estudo Caso-Controle.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise da Questão:\nO estudo descrito parte da seleção de indivíduos com base no status da doença: um grupo que possui o diagnóstico de interesse (Casos - 500 pacientes com Esclerose Múltipla) e um grupo comparável que não possui a doença (Controles - 1.000 pacientes com outras condições neurológicas). A partir dessa seleção, os pesquisadores investigaram retrospectivamente a presença de um fator de risco (anticorpos contra o vírus Epstein-Barr) por meio de amostras de sangue colhidas cinco anos antes do início dos sintomas. Essa estrutura de partir do desfecho (doença) em direção à exposição (fator de risco) caracteriza um Estudo Caso-Controle.\n\nAlternativa a) Incorreta. O Estudo Ecológico analisa dados agregados de populações ou grupos geográficos (como a incidência de uma doença em um país comparada ao consumo médio de um alimento), e não dados individuais. Na questão, a análise foi feita individualmente por meio de prontuários e exames específicos de cada paciente.\n\nAlternativa b) Incorreta. O Estudo Transversal (ou de prevalência) realiza uma medição única e simultânea da exposição e do desfecho em um determinado momento, como uma fotografia instantânea. Como o estudo em questão buscou informações de cinco anos atrás para estabelecer o que aconteceu antes da doença, ele possui um componente longitudinal retrospectivo que o transversal não possui.\n\nAlternativa c) Incorreta. O Ensaio Clínico Randomizado é um estudo experimental no qual o pesquisador interfere diretamente, sorteando quem receberá uma intervenção (medicamento, vacina ou procedimento) e acompanhando os resultados. O relato descreve um estudo observacional, no qual os pesquisadores apenas coletaram dados da realidade sem intervir nela.\n\nAlternativa d) Incorreta. No Estudo de Coorte, o ponto de partida é a exposição (ex: selecionar pessoas com e sem o vírus EBV e acompanhá-las por anos para ver quem desenvolve Esclerose Múltipla). Embora o estudo tenha usado exames antigos, os pesquisadores selecionaram os participantes em 2022 com base no fato de eles já terem a doença (casos) ou não (controles), o que inverte a lógica da coorte.\n\nAlternativa e) Correta. O Estudo Caso-Controle é observacional, longitudinal e retrospectivo. Ele começa pela identificação de indivíduos que já apresentam a doença (casos) e os compara com indivíduos saudáveis ou com outras doenças (controles), buscando no passado a exposição a possíveis fatores de risco. É o desenho mais eficiente e comum para estudar doenças crônicas ou com longo período de incubação/latência, exatamente como descrito no enunciado.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Doenças Desmielinizantes e Encefalites Autoimunes",
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:29.238Z"
+  },
+  {
+    "id": "AJUDA_75bcfefb-2255-44d1-b305-2f5d828622b0",
+    "originalId": "75bcfefb-2255-44d1-b305-2f5d828622b0",
+    "statement": "Lactente de 9 meses com quadro de diarreia aguda há três dias, acompanhada de vômitos pontuais e febre baixa. Ao exame físico, a criança apresenta sinais de desidratação, com mucosas secas, olhos fundos, irritabilidade e diminuição da elasticidade da pele. Restante do exame: FC = 148 bpm, PA = 100 x 55 (74) mmHg, pulsos cheios, presença de lágrimas, fontanela anterior normotensa. Com base nas diretrizes do Ministério da Saúde para manejo da desidratação na criança com diarreia, qual é a conduta inicial mais apropriada para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar terapia de reidratação oral e monitorar a resposta clínica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Solicitar exames laboratoriais para avaliar eletrólitos e função renal antes de iniciar qualquer intervenção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar reidratação intravenosa imediatamente com soro fisiológico ou ringer lactato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar reidratação intravenosa com soro glicosado 5% e soro fisiológico em partes iguais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, o primeiro passo é classificar o estado de hidratação do lactente seguindo as normas do Ministério da Saúde (Manual da AIDPI). A criança apresenta sinais de desidratação (irritabilidade, olhos fundos, mucosas secas e sinal da prega com retorno lento), porém não apresenta sinais de gravidade ou choque (está irritável e não letárgica, tem pulsos cheios, pressão arterial normal e presença de lágrimas). \n\nEssa apresentação clínica enquadra o paciente no Plano B de tratamento da desidratação.\n\nExplicação das alternativas:\n\nAlternativa a) Correta. O Plano B do Ministério da Saúde é indicado para crianças com sinais de desidratação, mas que não estão em choque. O tratamento consiste na Terapia de Reidratação Oral (TRO) supervisionada na unidade de saúde, utilizando o Soro de Reidratação Oral (SRO) em doses de 50 a 100 mL/kg em um período de 4 a 6 horas, com reavaliação contínua.\n\nAlternativa b) Incorreta. Em quadros de diarreia aguda com desidratação leve a moderada, o diagnóstico é clínico. A solicitação de exames laboratoriais (eletrólitos e função renal) não deve retardar o início da reidratação e é reservada para casos de desidratação grave (Plano C), evolução atípica ou suspeita de distúrbios hidroeletrolíticos graves.\n\nAlternativa c) Incorreta. A reidratação intravenosa (Plano C) está indicada apenas quando há sinais de desidratação grave (como letargia, incapacidade de beber líquidos, pulsos débeis ou ausentes) ou quando a reidratação oral falha (vômitos persistentes e incoercíveis, íleo paralítico ou perda fecal maior que a ingestão). O paciente em questão tem estabilidade hemodinâmica (PA normal e pulsos cheios), o que contraindica o uso imediato da via parenteral.\n\nAlternativa d) Incorreta. Além de a via intravenosa não ser a indicação inicial para este caso, a composição descrita (soro glicosado 5% e soro fisiológico em partes iguais) não segue os protocolos atuais de expansão volêmica. Para a expansão rápida no Plano C, utiliza-se Soro Fisiológico 0,9% ou Ringer Lactato. O uso de soro hipotônico (como a mistura com glicosado) na fase de expansão pode levar a distúrbios eletrolíticos perigosos, como a hiponatremia aguda.",
+    "exam": "HIAE",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diarreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5178e7d5854c0bc93c21685f6a09015171bcbf965f26c07929fb7a2842e4e679.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8566c98aebac3d8f263b81ba8c0a8e5bad281d6c488f4fe8b00414c0fce6c685.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:29.238Z"
+  },
+  {
+    "id": "AJUDA_75bfc114-f0c3-42de-9c24-374981d4efc5",
+    "originalId": "75bfc114-f0c3-42de-9c24-374981d4efc5",
+    "statement": "Homem, 35 anos, vítima de 2 ferimentos por arma de fogo em região abdominal, admitido em choque hipovolêmico no pronto atendimento de hospital secundário. Exame físico: Pressão Arterial de 60 x 20 mmHg, intensa palidez, gemente, desorientado e com extremidades frias. Na inspeção do abdome observa se 2 ferimentos perfurantes em parede abdominal, sendo um em hipocondrio esquerdo e outro em flanco esquerdo. Na ausência de recursos de imagem o paciente será submetido a laparotomia exploradora de urgência. Qual a melhor incisão para acessar a cavidade abdominal?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transversa supraumbilical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Paramediana esquerda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Mediana supraumbilical.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Subcostal esquerda (Kocher).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO:\n\nO paciente apresenta um quadro de trauma abdominal penetrante por arma de fogo com sinais de choque hipovolêmico grave (hipotensão severa, desorientação e extremidades frias). Em situações de emergência traumatológica, especialmente quando há instabilidade hemodinâmica, o cirurgião precisa de um acesso à cavidade abdominal que seja rápido, proporcione ampla visualização de todos os órgãos e permita a extensão da incisão, caso necessário.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nA incisão mediana supraumbilical (podendo ser estendida para infraumbilical, caracterizando a laparotomia xifopúbica) é o acesso de escolha no trauma abdominal. Suas principais vantagens são:\n1. Rapidez: A abertura através da linha alba é rápida e atravessa poucas camadas vasculares, minimizando o sangramento da parede abdominal.\n2. Exposição: Permite o acesso imediato a todos os quadrantes abdominais, grandes vasos e espaço retroperitoneal.\n3. Versatilidade: Se as lesões encontradas exigirem, a incisão pode ser facilmente estendida para o tórax (toracofrenolaparotomia ou esternotomia) ou para a pelve sem a necessidade de mudar a posição do paciente.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (a) Transversa supraumbilical: Embora possa ser usada em cirurgias eletivas ou em crianças, no trauma ela é contraindicada. É uma incisão mais demorada para ser realizada e fechada, e limita drasticamente o acesso aos órgãos localizados nos quadrantes inferiores e no retroperitônio.\n\nAlternativa (b) Paramediana esquerda: Esta técnica envolve a abertura da bainha do músculo reto abdominal. É um procedimento muito mais lento e trabalhoso do que a incisão mediana, além de dificultar uma extensão rápida da incisão caso o cirurgião encontre sangramentos em outros locais distantes do quadrante superior esquerdo.\n\nAlternativa (d) Subcostal esquerda (Kocher): Esta incisão é excelente para cirurgias eletivas de baço ou estômago, mas é totalmente inadequada para o trauma. Como o trajeto de um projétil de arma de fogo é imprevisível e pode causar lesões em múltiplos órgãos distantes do orifício de entrada, uma incisão localizada impediria a exploração completa da cavidade abdominal, podendo levar ao óbito por lesões não diagnosticadas.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:29.238Z"
+  },
+  {
+    "id": "AJUDA_75c5c611-8838-4ae2-a683-9725252fed19",
+    "originalId": "75c5c611-8838-4ae2-a683-9725252fed19",
+    "statement": "A participação popular é um dos pilares do Sistema Único de Saúde (SUS), fundamental para o controle social e a construção de políticas de saúde adequadas às necessidades locais. Em uma unidade de Estratégia de Saúde da Família (ESF), situada em uma comunidade quilombola rural, o envolvimento dos cidadãos pode ser um fator decisivo para a melhoria do atendimento e a promoção da saúde. Com base nisso, qual das alternativas abaixo representa uma forma correta de participação popular no SUS e seu impacto em uma comunidade quilombola?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os cidadãos da comunidade devem apenas apresentar suas queixas diretamente aos gestores municipais, sem envolvimento com conselhos locais de saúde, pois esses conselhos são pouco influentes nas decisões sobre os serviços de saúde;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A comunidade quilombola pode participar ativamente do SUS por meio de conselhos locais de saúde, que discutem demandas específicas, fiscalizam a qualidade dos serviços prestados e colaboram com a formulação de políticas públicas;",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A participação popular é restrita aos profissionais de saúde da unidade ESF que atuam como intermediários entre a comunidade e os gestores, enquanto os cidadãos apenas recebem as orientações;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A população da comunidade quilombola deve enfocar exclusivamente a adesão às campanhas de saúde pública, como a vacinação, sem necessidade de participar das decisões ou do monitoramento dos serviços de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "EXPLICAÇÃO:\n\nEsta questão aborda o princípio da Participação Popular no Sistema Único de Saúde (SUS), também conhecido como Controle Social, que é um dos pilares organizativos do sistema, regulamentado principalmente pela Lei nº 8.142/1990.\n\nAlternativa a) Incorreta. O controle social não deve ser realizado de forma isolada ou apenas por meio de queixas diretas aos gestores. A legislação brasileira instituiu os Conselhos de Saúde e as Conferências de Saúde como instâncias oficiais e deliberativas. Afirmar que os conselhos são pouco influentes é um erro conceitual, pois eles têm o poder legal de influenciar as decisões e fiscalizar a movimentação financeira e a execução das políticas de saúde.\n\nAlternativa b) Correta. A participação popular é exercida de forma plena por meio dos Conselhos de Saúde. Em comunidades tradicionais, como a quilombola, essa participação é essencial para garantir a Equidade, permitindo que as especificidades culturais, sociais e territoriais sejam levadas em conta na formulação de políticas públicas. Os conselhos atuam tanto na discussão de demandas quanto na fiscalização e monitoramento das unidades de Estratégia de Saúde da Família (ESF).\n\nAlternativa c) Incorreta. A participação popular não é intermediada ou restrita aos profissionais de saúde. De acordo com o princípio da paridade estabelecido na Lei nº 8.142/1990, os Conselhos de Saúde devem ser compostos por 50% de representantes dos usuários (comunidade). Os profissionais de saúde ocupam apenas 25% das vagas, enquanto os outros 25% são destinados a gestores e prestadores de serviços. A comunidade deve ter voz direta e ativa.\n\nAlternativa d) Incorreta. A adesão a campanhas de saúde e vacinação faz parte do cuidado individual e coletivo, mas não caracteriza o conceito de Controle Social. A participação popular no SUS vai além de ser um receptor de orientações; ela pressupõe o envolvimento político na gestão, no planejamento, na fiscalização das verbas e na avaliação dos resultados dos serviços de saúde prestados àquela comunidade.\n\nGabarito: Letra (b).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:29.238Z"
+  },
+  {
+    "id": "AJUDA_75c7e4c8-8273-414c-bd7c-ae12fbbad285",
+    "originalId": "75c7e4c8-8273-414c-bd7c-ae12fbbad285",
+    "statement": "As Infecções Sexualmente Transmissíveis (IST) podem se manifestar por meio de lesões, corrimentos, entre outros possíveis sintomas, como dor pélvica, disúria, lesões de pele e o aumento de linfonodos. A respeito do assunto, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sífilis primária pode atingir e ter repercussão no sistema nervoso central.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O corrimento vaginal é um sintoma muito comum e suas causas são sempre consideradas ISTs.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Condilomas anogenitais são comuns em infecções por clamídia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Para interromper a transmissão dessas infecções e evitar a reinfecção, é fundamental que os parceiros também sejam testados e tratados.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Incorreta. A sífilis primária é caracterizada clinicamente pelo surgimento do cancro duro, uma úlcera única e indolor no local de entrada da bactéria, geralmente acompanhada de linfonodopatia regional. Embora o Treponema pallidum possa ser disseminado por via hematogênica precocemente, as repercussões clínicas e o acometimento estrutural do sistema nervoso central (neurosífilis) são manifestações características das fases secundária, latente ou terciária, e não definem o quadro de sífilis primária.\n\nAlternativa b) Incorreta. O corrimento vaginal é uma queixa extremamente frequente na ginecologia, porém nem todas as suas causas são Infecções Sexualmente Transmissíveis. A vaginose bacteriana, causada pelo desequilíbrio da flora vaginal (predomínio de Gardnerella vaginalis), e a candidíase vulvovaginal são exemplos de condições que causam corrimento e não são classificadas como ISTs.\n\nAlternativa c) Incorreta. Os condilomas anogenitais, conhecidos popularmente como verrugas genitais, são causados pela infecção pelo Papilomavírus Humano (HPV), especialmente os subtipos 6 e 11. A infecção por clamídia (Chlamydia trachomatis) manifesta-se tipicamente como uretrite, cervicite ou, em sorotipos específicos, como linfogranuloma venéreo, mas não causa condilomas.\n\nAlternativa d) Correta. Este é um princípio fundamental no controle epidemiológico e clínico das ISTs. O tratamento do paciente índice isoladamente é insuficiente se houver manutenção do contato com parceiros infectados e não tratados, o que leva à reinfecção (efeito \"pingue-pongue\"). A convocação, testagem e tratamento dos parceiros são pilares para interromper a cadeia de transmissão na comunidade e garantir a cura sustentada do paciente.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Cervicites",
+      "Vulvovaginites"
+    ],
+    "difficulty": 21.76719548797244,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:29.238Z"
+  },
+  {
+    "id": "AJUDA_75c9d092-a4df-4d6f-a8fc-ca2929f1fba9",
+    "originalId": "75c9d092-a4df-4d6f-a8fc-ca2929f1fba9",
+    "statement": "Paciente com 46 anos que apresenta sangramento uterino anormal, em decorrência de leiomiomatose uterina, foi indicada à histerectomia. Durante a execução dos exames pré-operatórios, o resultado de colpocitologia oncótica revelou LIEAG (lesão intraepitelial de alto grau). Submetida à colposcopia, detectou-se área com achados colposcópicos maiores. A biópsia dirigida para esse local revelou carcinoma in situ. Frente a essa situação, qual é a abordagem CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Histerectomia tipo Piver 3 (cirurgia de Wertheim-Meigs), pois é portadora de câncer de colo de útero;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Histerectomia total abdominal, já que há lesão neoplásica maligna no colo e miomatose uterina;",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Traquelectomia radical com linfadenectomia pélvica por amostragem (linfonodo sentinela);",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Exérese de zona de transformação, com delimitação prévia através de teste de Schiller no intraoperatório.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O ponto central desta questão é o manejo de lesões precursoras do câncer do colo do útero em pacientes que já possuem indicação cirúrgica por patologia benigna (leiomiomatose).\n\nO diagnóstico de carcinoma *in situ* (NIC III) por meio de biópsia dirigida por colposcopia não exclui totalmente a possibilidade de carcinoma invasor em outras áreas do colo não biopsiadas. Antes de realizar uma histerectomia por doença benigna, é mandatório excluir a presença de câncer invasor, pois, caso ele exista, a cirurgia indicada seria radical (com margens e linfadenectomia), e não uma histerectomia simples.\n\nAnálise das alternativas:\n\na) Incorreta. A histerectomia tipo Piver 3 (Wertheim-Meigs) é uma cirurgia radical indicada para o tratamento de câncer do colo do útero invasor (estadiamentos iniciais como IB1). O carcinoma *in situ* é uma lesão pré-invasiva (estágio 0). Realizar uma cirurgia de tamanha morbidade sem a confirmação de invasão seria um supertratamento.\n\nb) Incorreta. Embora a paciente tenha indicação de histerectomia total abdominal devido à leiomiomatose, realizar o procedimento diretamente na presença de um carcinoma *in situ* é um erro de conduta. A biópsia é apenas uma amostragem. Se a peça cirúrgica da histerectomia revelar, posteriormente, um câncer invasor, a paciente terá sido submetida a uma cirurgia incompleta (subtratada), o que compromete o prognóstico e dificulta a abordagem complementar.\n\nc) Incorreta. A traquelectomia radical com linfadenectomia é uma técnica de preservação da fertilidade para pacientes com câncer de colo invasivo em estágios muito iniciais que desejam engravidar. A paciente tem 46 anos, prole provavelmente constituída e possui leiomiomatose sintomática, não havendo indicação para preservação uterina.\n\nd) Correta. A exérese da zona de transformação (EZT) ou conização é o procedimento de escolha nesta situação. Ela possui dois objetivos: tratar a lesão de alto grau e, principalmente, fornecer uma peça cirúrgica completa para o estudo histopatológico minucioso. Esse estudo é o único capaz de excluir com segurança a invasão estromal (câncer invasor). Após o resultado do cone confirmar que se trata apenas de carcinoma *in situ*, a paciente poderá realizar a histerectomia para tratar sua leiomiomatose com total segurança oncológica. O teste de Schiller no intraoperatório ajuda a delimitar as margens da lesão para garantir a retirada de toda a área suspeita.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Câncer de Colo Uterino",
+      "Miomatose Uterina"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e986ce0938f52d4169136a4886e633798536a57e6b7bc304ca583b3c24ee2206.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/37cf1ee058637cb47fa9e728132e8f18d728ae35260b970cf6178ac6771da50b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:29.238Z"
+  },
+  {
+    "id": "AJUDA_75d3f6a8-82ab-4d43-b39b-0837da59b370",
+    "originalId": "75d3f6a8-82ab-4d43-b39b-0837da59b370",
+    "statement": "Um paciente de 58 anos, portador de câncer colorretal, foi submetido a uma cirurgia de ressecção de parte do intestino grosso. Durante o procedimento, devido à extensão do tumor e à necessidade de preservar outras estruturas abdominais, foi realizada uma colostomia em alça. Após a cirurgia, o paciente se queixa de dificuldades para lidar com a bolsa de colostomia e manifesta dúvidas sobre os cuidados necessários para evitar complicações, como infecções ou irritações cutâneas. Ele também relata sentir-se inseguro quanto à possibilidade de retorno à função intestinal normal no futuro. O anatomopatológico revelou tratar-se de um adenocarcinoma moderadamente invasivo T3N1MO. A principal orientação que deve ser dada ao paciente para evitar complicações relacionadas à colostomia deve ser:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não é necessário consultar um profissional especializado em estomaterapia, pois os cuidados com a colostomia são simples e não exigem acompanhamento especializado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lavar a área ao redor do estoma apenas com água e sabão neutro, evitando o uso de produtos agressivos à pele.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Trocar a bolsa de colostomia apenas quando estiver completamente cheia, para economizar material.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Usar qualquer tipo de creme ou loção ao redor do estoma, sem se preocupar com a composição dos produtos",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Evitar a manipulação do estoma e deixar a área sempre coberta, para evitar o contato com o ambiente externo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do contexto clínico:\nO paciente em questão foi submetido a uma ressecção colorretal com confecção de colostomia em alça devido a um adenocarcinoma T3N1M0 (Estádio III). O manejo adequado do estoma é fundamental para evitar complicações como a dermatite periestomal, que é a principal causa de dor e dificuldade de adesão das bolsas coletoras. A orientação deve focar na manutenção da integridade da pele ao redor do estoma.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. O acompanhamento por um profissional especializado em estomaterapia é altamente recomendado. Esse profissional auxilia na escolha do melhor dispositivo, ensina técnicas de autocuidado, ajuda na demarcação do estoma no pré-operatório e previne complicações que poderiam levar a reinternações ou procedimentos adicionais.\n\nAlternativa b) Correta. Esta é a conduta padrão de cuidado. A pele periestomal deve ser mantida limpa e íntegra para permitir a aderência da placa da bolsa coletora. O uso de sabão neutro e água é suficiente. Deve-se evitar o uso de substâncias como álcool, éter ou produtos perfumados, que podem ressecar a pele, causar irritação química ou impedir a colagem adequada do dispositivo.\n\nAlternativa c) Incorreta. A recomendação técnica é que a bolsa seja esvaziada quando atingir cerca de um terço a metade de sua capacidade. Esperar que a bolsa fique completamente cheia aumenta o peso sobre a placa adesiva, favorecendo descolamentos prematuros, vazamentos de fezes para a pele e possíveis acidentes por ruptura.\n\nAlternativa d) Incorreta. Produtos como cremes, loções ou pomadas comuns não devem ser aplicados na pele ao redor do estoma. A maioria desses produtos contém óleos em sua composição, o que impede que a barreira protetora da bolsa coletora grude na pele, resultando em vazamentos constantes de efluente fecal e subsequente maceração da pele.\n\nAlternativa e) Incorreta. O isolamento do estoma ou o excesso de coberturas desnecessárias dificulta a higienização e a vigilância. O paciente deve ser treinado para manipular o estoma de forma correta e higiênica, desenvolvendo autonomia para o autocuidado. A área fica naturalmente \"protegida\" pelo uso do sistema de bolsa, mas a inspeção visual frequente da mucosa (que deve estar avermelhada e úmida) e da pele adjacente é necessária para identificar precocemente sinais de isquemia, retração ou infecção.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:29.238Z"
+  },
+  {
+    "id": "AJUDA_75d6bf81-d341-45b3-bf67-d66e1e3ef1cf",
+    "originalId": "75d6bf81-d341-45b3-bf67-d66e1e3ef1cf",
+    "statement": "A Epifisiólise da Cabeça Femoral (ECF) é uma patologia ortopédica classicamente associada à obesidade na adolescência, decorrente de fatores mecânicos e hormonais. Um adolescente de 13 anos, com Índice de Massa Corporal (IMC) acima do percentil 95, queixa-se de dor na face medial da coxa e no joelho direito há 3 semanas, com claudicação antálgica. O exame físico do quadril revela limitação da rotação interna. A fisiopatologia e a conduta imediata diante da suspeita clínica exigem precisão para evitar necrose avascular. Com base nas informações apresentadas sobre a epifisiólise da cabeça femoral na adolescência, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O deslocamento ocorre na zona hipertrófica da placa fisária, enfraquecida pelo estirão puberal e sobrecarregada pelo excesso de peso, exigindo a retirada imediata de carga e fixação cirúrgica in situ para prevenir a progressão do deslizamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O quadro decorre da necrose avascular idiopática da cabeça femoral (Doença de Legg-Calvé-Perthes), cujo tratamento na adolescência é conservador, visando apenas ao alívio da dor, uma vez que a reossificação é espontânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Trata-se de uma apofisite de tração na tuberosidade da tíbia (Osgood-Schlatter), comum em adolescentes obesos, devendo ser tratada com fisioterapia e redução da atividade física de impacto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A patologia é causada pela inflamação transitória da sinóvia (sinovite), sendo autolimitada e tratada com repouso e anti-inflamatórios não esteroidais, sem necessidade de intervenção cirúrgica na fase aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve um adolescente de 13 anos, obeso, com quadro de dor referida na coxa e no joelho (muito comum na patologia do quadril em crianças) e claudicação há 3 semanas. O achado físico patognomônico é a limitação da rotação interna e, frequentemente, o sinal de Drehmann (o quadril realiza rotação externa obrigatória durante a flexão passiva). Este cenário é a apresentação clássica da Epifisiólise da Cabeça Femoral (ECF).\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nA ECF consiste no deslizamento do colo femoral em relação à epífise, que permanece no acetábulo. Esse deslizamento ocorre especificamente na zona hipertrófica da placa fisária (camada de células volumosas e com menos matriz extracelular), que está fragilizada por influências hormonais do estirão puberal e submetida a estresse mecânico excessivo pela obesidade. A conduta deve ser imediata: suspensão de carga (uso de muletas ou cadeira de rodas) para evitar o agravamento do deslizamento e estabilização cirúrgica, geralmente com fixação in situ (parafuso único), para prevenir complicações graves como a necrose avascular da cabeça femoral e a condrólise.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (b): A Doença de Legg-Calvé-Perthes é a necrose avascular idiopática da cabeça femoral, mas acomete tipicamente crianças mais novas (entre 4 e 8 anos) e não está associada à obesidade. Além disso, o tratamento na adolescência raramente é apenas conservador devido ao pior prognóstico nessa faixa etária.\n\nAlternativa (c): A Doença de Osgood-Schlatter é uma apofisite de tração na tuberosidade anterior da tíbia. Embora ocorra em adolescentes, a dor é localizada estritamente na região anterior do joelho (abaixo da patela), com edema local e dor à palpação da tuberosidade, sem qualquer relação com a limitação da mobilidade do quadril descrita no enunciado.\n\nAlternativa (d): A sinovite transitória do quadril é a causa mais comum de dor no quadril na infância, mas ocorre geralmente após infecções virais das vias aéreas superiores e em crianças entre 3 e 8 anos. É um quadro agudo e autolimitado. No caso descrito, o perfil epidemiológico (adolescente obeso) e a duração dos sintomas (3 semanas) direcionam fortemente para a epifisiólise, que exige intervenção cirúrgica, e não apenas repouso.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Quadril Pediátrico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:29.238Z"
+  },
+  {
+    "id": "AJUDA_75e56afa-b31c-437f-bfe9-32c1e75cda8e",
+    "originalId": "75e56afa-b31c-437f-bfe9-32c1e75cda8e",
+    "statement": "Qual (ais) dos sinais e sintomas cognitivos abaixo pode(m) fazer parte do diagnóstico depressão pós-parto?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dificuldade de concentração e tomada de decisões",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Choro incontrolável",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Ansiedade e preocupação excessiva",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vontade de machucar o bebê",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Fadiga extrema e cansaço constante",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, é fundamental prestar atenção ao comando, que pede especificamente sinais e sintomas cognitivos da depressão pós-parto. Na semiologia psiquiátrica, os sintomas são divididos em diferentes domínios, como afetivos, somáticos (ou neurovegetativos) e cognitivos.\n\nAlternativa A: Correta. A dificuldade de concentração, a diminuição da capacidade de pensar e a indecisão (dificuldade em tomar decisões) são sintomas clássicos do domínio cognitivo em episódios depressivos, conforme os critérios do DSM-5 e da CID-11. No contexto do pós-parto, esses sintomas podem prejudicar significativamente a capacidade da mãe de organizar os cuidados com o recém-nascido.\n\nAlternativa B: Incorreta. O choro incontrolável é classificado como um sintoma afetivo ou emocional. Ele reflete a labilidade emocional e a tristeza profunda, mas não faz parte das funções cognitivas de processamento de informação ou de execução.\n\nAlternativa C: Incorreta. A ansiedade e a preocupação excessiva são sintomas da esfera afetiva e psicológica. Embora frequentemente associadas à depressão pós-parto (a comorbidade com transtornos de ansiedade é comum), elas não são definidas como déficits cognitivos.\n\nAlternativa D: Incorreta. A vontade ou os pensamentos de machucar o bebê (ideação intrusiva ou impulsos) entram na categoria de alteração do conteúdo do pensamento ou do controle dos impulsos. Embora sejam graves e necessitem de intervenção imediata, não são classificados tecnicamente como sintomas cognitivos básicos, como a atenção ou o raciocínio.\n\nAlternativa E: Incorreta. Fadiga extrema e cansaço constante são sintomas somáticos ou neurovegetativos. São extremamente comuns no puerpério devido à privação de sono e à demanda física, mas não pertencem ao grupo de funções cognitivas.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Psicopatologia",
+      "Transtornos do Humor"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ad90f0d44380f48216a022b8ca8d39684443c3a71807af18d4743cf3e8d96df6.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fc821819e564bef9d74fa27ddbda5f37dfb4a4b2c1c0a63131c4789148a6b01f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:29.238Z"
+  }
+]

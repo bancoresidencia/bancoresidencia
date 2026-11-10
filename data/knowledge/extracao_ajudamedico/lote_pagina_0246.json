@@ -1,0 +1,493 @@
+[
+  {
+    "id": "AJUDA_44b112f7-6d03-4dc7-b9f3-be8e4646efd3",
+    "originalId": "44b112f7-6d03-4dc7-b9f3-be8e4646efd3",
+    "statement": "A Síndrome Alcoólica Fetal (SAF) representa o extremo mais grave do Espectro de Desordens Fetais Alcoólicas (FASD). O diagnóstico é clínico e baseia-se em uma tríade de achados, além da confirmação ou forte suspeita de exposição materna ao álcool. Registre V para as afirmativas verdadeiras e F para as falsas sobre os critérios diagnósticos.\n\n(__) As características faciais dismórficas cardinais incluem fendas palpebrais curtas, filtro nasal plano (apagado) e lábio superior fino (vermelhão do lábio hipoplásico).\n(__) O comprometimento do crescimento deve ser documentado, manifestando-se como peso e/ou estatura abaixo do percentil 10, podendo ocorrer no período pré-natal, pós-natal ou em ambos.\n(__) O envolvimento do sistema nervoso central é obrigatório, podendo manifestar-se como microcefalia (perímetro cefálico < percentil 10), anomalias estruturais cerebrais ou déficits cognitivos/comportamentais significativos.\n(__) A presença de cardiopatia congênita, especificamente a comunicação interventricular (CIV), é um critério obrigatório para o diagnóstico de SAF completa, diferenciando-a das formas parciais.\n\nAssinale a alternativa que apresenta a sequência correta, de cima para baixo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, V, F, F.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "V, F, V, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "F, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "V, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DA PRIMEIRA AFIRMATIVA (VERDADEIRA):\nAs características faciais dismórficas são os sinais mais específicos da Síndrome Alcoólica Fetal (SAF). Elas resultam da exposição ao álcool durante o desenvolvimento da linha média da face no primeiro trimestre de gestação. A tríade clássica descrita é exatamente a apresentada: fendas palpebrais curtas (medidas do canto interno ao externo do olho), filtro nasal liso ou plano (a depressão entre o nariz e o lábio superior) e lábio superior fino (hipoplasia do vermelhão do lábio).\n\nANÁLISE DA SEGUNDA AFIRMATIVA (VERDADEIRA):\nO retardo de crescimento é um dos pilares diagnósticos da SAF. O critério estabelecido é que o peso e/ou a estatura estejam abaixo do percentil 10 para a idade e sexo, utilizando curvas de crescimento adequadas. Esse déficit pode ser observado logo ao nascimento (pré-natal) ou ser documentado durante o acompanhamento da criança (pós-natal).\n\nANÁLISE DA TERCEIRA AFIRMATIVA (FALSA):\nEmbora as alterações do sistema nervoso central (SNC) façam parte do quadro clínico da SAF, esta afirmativa é considerada falsa em avaliações médicas devido ao critério de microcefalia utilizado. Na pediatria clássica e na maioria das diretrizes diagnósticas, a microcefalia é definida por um perímetro cefálico abaixo do percentil 3 (ou menor que 2 desvios-padrão abaixo da média), e não abaixo do percentil 10. O percentil 10 é o ponto de corte para peso e altura, mas para o perímetro cefálico, utiliza-se um critério mais rigoroso para definir microcefalia.\n\nANÁLISE DA QUARTA AFIRMATIVA (FALSA):\nA presença de malformações congênitas, como a comunicação interventricular (CIV), anomalias renais, auditivas ou esqueléticas, pode ocorrer no Espectro de Desordens Fetais Alcoólicas (FASD), sendo classificadas como Defeitos Congênitos Relacionados ao Álcool (ARBD). No entanto, essas malformações NÃO são critérios obrigatórios para o diagnóstico de SAF completa. O diagnóstico de SAF completa exige a tríade de dismorfismo facial, restrição de crescimento e anormalidades do SNC.\n\nCONCLUSÃO:\nConsiderando que as duas primeiras afirmativas são verdadeiras e as duas últimas são falsas, a sequência correta é V, V, F, F.\n\nAlternativa correta: Letra (a).",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:13.394Z"
+  },
+  {
+    "id": "AJUDA_44b55109-4b1a-4887-8ac8-5ff785c5108c",
+    "originalId": "44b55109-4b1a-4887-8ac8-5ff785c5108c",
+    "statement": "Homem de 67 anos, procura atendimento com queixa de dor nas pernas. Relata que sempre teve dor ao final do dia, contudo, há 4 meses vem notando dor ao caminhar, que o obriga a parar por alguns minutos antes de prosseguir no seu caminho para trabalho. Tabagista desde os 15 anos. Nega hipertensão ou diabetes. Ao exame físico, notam-se veias varicosas em ambos os membros inferiores, presença de dermatite ocre bilateral, edema discreto bilateral. Pulsos pediosos e tibiais não palpáveis. Sinal de Bancroft e Homans negativos. Com base no quadro clínico, qual é a melhor conduta para tratar a causa da dor deste paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Prescrever anticoagulante oral em dose plena.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Prescrever um analgésico para a dor e orientar repouso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Iniciar Cilostazol, estatina, orientar exercício e cessar tabagismo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar vasotônico, orientar exercício físico e meia elástica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta um quadro clínico clássico de Doença Arterial Obstrutiva Periférica (DAOP). Embora o exame físico revele sinais de Insuficiência Venosa Crônica (veias varicosas, dermatite ocre e edema leve), a queixa principal de dor ao caminhar que obriga a interrupção da marcha (claudicação intermitente) é um sintoma tipicamente arterial. A confirmação diagnóstica no exame físico é dada pela ausência de pulsos distais (pediosos e tibiais posteriores). O tabagismo é o principal fator de risco para essa condição. O objetivo do tratamento deve ser a melhora da distância de caminhada e a redução do risco cardiovascular global.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) INCORRETA. A anticoagulação oral em dose plena é indicada para o tratamento de eventos trombóticos agudos, como a Trombose Venosa Profunda (TVP) ou embolias sistêmicas. O paciente não apresenta sinais de TVP aguda (sinais de Bancroft e Homans negativos) e a anticoagulação não é o tratamento padrão para a claudicação intermitente na DAOP crônica.\n\nb) INCORRETA. O repouso é contraindicado para pacientes com claudicação intermitente. O estímulo à caminhada é fundamental para promover a angiogênese e o desenvolvimento de circulação colateral, melhorando a perfusão muscular. O uso isolado de analgésicos não trata a causa subjacente da isquemia muscular induzida pelo exercício.\n\nc) CORRETA. Esta alternativa apresenta o manejo padrão-ouro para a DAOP sintomática. O cilostazol é um inibidor da fosfodiesterase III que promove vasodilatação e inibe a agregação plaquetária, sendo a principal medicação para aumentar a distância percorrida sem dor. A estatina é essencial para todos os pacientes com DAOP, visando à estabilização de placas ateroscleróticas e à redução da mortalidade cardiovascular. A cessação do tabagismo é a medida mais importante para interromper a progressão da doença, e o exercício físico programado é a terapia não farmacológica mais eficaz.\n\nd) INCORRETA. O uso de vasotônicos e meia elástica seria o tratamento direcionado para a Insuficiência Venosa Crônica, que o paciente também possui. No entanto, o tratamento da dor arterial é prioritário neste caso. Além disso, existe uma contraindicação relativa ao uso de meias elásticas de compressão em pacientes com doença arterial associada (especialmente se o Índice Tornozelo-Braquial for menor que 0,5), pois a compressão externa pode agravar a isquemia tecidual e levar ao aparecimento de feridas arteriais.\n\nGABARITO: A alternativa correta é a letra (c).",
+    "exam": "CESUPA",
+    "year": 2025,
+    "banca": "CESUPA",
+    "uf": "PA",
+    "tags": [
+      "Abdome Agudo Vascular",
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26e89663996c876e21a0cfd3a3971d7a6949e4104f53370e61ac4239907eb364.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce6333f125a8005d6a1648b2186b76877569e35c2b0890d4386da4af6cf6b459.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:13.394Z"
+  },
+  {
+    "id": "AJUDA_44b6b342-0d73-4423-a2a7-64836662c53b",
+    "originalId": "44b6b342-0d73-4423-a2a7-64836662c53b",
+    "statement": "Assinale a assertiva correta sobre a contracepção.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Durante o puerpério e a amamentação, a contracepção de emergência (1,5 mg de levonorgestrel, em dose única, usado em caso de falha da contracepção usual) está contraindicada, mesmo para pacientes sem comorbidades.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os contraceptivos orais contendo apenas progestágenos não inibem a ovulação e apresentam efeitos sobre o muco cervical e a receptividade do endométrio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anticoncepção hormonal combinada está contraindicada para pacientes com enxaqueca com aura, de qualquer idade, sendo os métodos não hormonais e o anel vaginal alternativas recomendadas para esses casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Quando uma usuária de DIU de cobre é diagnosticada com doença inflamatória pélvica (DIP), deve-se tratar a DIP com antibióticos apropriados, não havendo necessidade de remover o DIU se a paciente deseja continuar com seu uso.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ALTERNATIVA (A) INCORRETA: A anticoncepção de emergência com levonorgestrel (1,5 mg) não é contraindicada durante o puerpério ou a amamentação. De acordo com os Critérios Médicos de Elegibilidade da Organização Mundial da Saúde (OMS), o levonorgestrel isolado é classificado como Categoria 1 para mulheres que amamentam, o que significa que não há restrição ao seu uso. Embora pequenas quantidades do hormônio possam ser excretadas no leite materno, não há evidências de efeitos adversos na saúde do lactente ou na produção de leite.\n\nALTERNATIVA (B) INCORRETA: Esta assertiva está errada ao afirmar que os progestágenos isolados não inibem a ovulação. Enquanto as minipílulas tradicionais de baixa dosagem (como a noretisterona) agem predominantemente tornando o muco cervical hostil, as pílulas de progestágeno isolado mais modernas, como o desogestrel (75 mcg), inibem a ovulação em cerca de 97% a 99% dos ciclos. Além disso, o acetato de medroxiprogesterona de depósito (injetável trimestral) e o implante de etonogestrel também são métodos de progestágeno isolado que têm a inibição da ovulação como mecanismo principal.\n\nALTERNATIVA (C) INCORRETA: A enxaqueca com aura é uma contraindicação absoluta (Categoria 4 da OMS) para o uso de qualquer método anticoncepcional hormonal combinado, devido ao risco significativamente aumentado de acidente vascular cerebral (AVC) isquêmico nessas pacientes. O erro da alternativa reside em recomendar o anel vaginal. O anel vaginal é um método combinado (contém estrogênio e progestágeno), possuindo, portanto, as mesmas contraindicações e riscos vasculares que as pílulas orais combinadas. Nesses casos, as opções adequadas seriam métodos não hormonais ou métodos contendo apenas progestágeno.\n\nALTERNATIVA (D) CORRETA: Segundo os critérios de elegibilidade da OMS e os protocolos do CDC, o diagnóstico de doença inflamatória pélvica (DIP) em uma usuária de DIU (seja de cobre ou de levonorgestrel) requer o início imediato da antibioticoterapia adequada. Não há necessidade de remoção sistemática do DIU. A retirada do dispositivo só deve ser considerada se a paciente não apresentar melhora clínica evidente após 48 a 72 horas de tratamento antibiótico ou se for o desejo da própria paciente após aconselhamento. Além disso, a paciente deve ser testada para infecções sexualmente transmissíveis e seus parceiros devem ser tratados.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Planejamento Familiar",
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:13.394Z"
+  },
+  {
+    "id": "AJUDA_44b9aab6-a8b1-4159-a2a1-7dfc65d83439",
+    "originalId": "44b9aab6-a8b1-4159-a2a1-7dfc65d83439",
+    "statement": "Homem, 72 anos, tabagista. Advogado aposentado. Refere dispneia progressiva grau 3 do Medical Research Council (mMRC3), associado à tosse seca há 4 anos. Exame físico: BEG, corado, cianótico, com baqueteamento digital. FR: 28 ipm. Sat O2: 86% em ar ambiente. Com essas imagens observadas na Radiografia de Tórax e na Tomografia de Tórax.\n\nAssinale o ruído adventício mais provável encontrado na ausculta respiratória desse paciente.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estertores grossos difusos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Estertores finos difusos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Estertores fibróticos ou em velcro bilaterais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Roncos e sibilos difusos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve um homem idoso, tabagista, com quadro crônico e progressivo de dispneia e tosse seca, acompanhado de baqueteamento digital e hipoxemia. As imagens associadas são características de doença pulmonar intersticial fibrosante, com padrão de Pneumonia Intersticial Usual (UIP), altamente sugestivo de Fibrose Pulmonar Idiopática. \n\nA radiografia de tórax evidencia infiltrado reticular bilateral com predomínio em bases e periferia. A tomografia de tórax de alta resolução (TCAR) confirma esse achado ao mostrar faveolamento subpleural (múltiplas camadas de cistos agrupados), bronquiectasias de tração e espessamento de septos interlobulares.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Estertores grossos ocorrem pela presença de secreção móvel em vias aéreas de médio e grande calibre, alterando-se com a tosse. São comuns em bronquiectasias infectadas, bronquites e congestão pulmonar, não sendo o achado característico da fibrose intersticial.\n\nAlternativa b: Incorreta. Embora o ruído da fibrose seja mecanicamente um tipo de estertor fino gerado pela abertura súbita de alvéolos e bronquíolos colapsados, o termo semiológico específico e consagrado para a doença intersticial é estertores em velcro ou fibróticos. Além disso, a distribuição clássica na fibrose pulmonar idiopática inicia-se e predomina em bases, e não de forma difusa.\n\nAlternativa c: Correta. Os estertores fibróticos ou em velcro bilaterais são estertores finos teleinspiratórios, de alta frequência, secos e não modificáveis pela tosse ou postura. O som é caracteristicamente comparado ao descolamento de uma fita de velcro, sendo o achado semiológico mais típico das pneumopatias intersticiais fibrosantes.\n\nAlternativa d: Incorreta. Roncos e sibilos são sons contínuos que refletem obstrução e redução do calibre das vias condutoras por broncoespasmo, secreção ou edema de mucosa, sendo clássicos de doenças obstrutivas como asma e DPOC, e não de doenças restritivas intersticiais.\n\nGabarito: Alternativa c.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/f2dc1729089ea7bc12c17bc008abf441dac00453c93981707b5a5daf8f9ad939.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_44b9aab6-a8b1-4159-a2a1-7dfc65d83439_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:13.869Z"
+  },
+  {
+    "id": "AJUDA_44c36d3d-ce86-4a80-99ed-68cb9796d9df",
+    "originalId": "44c36d3d-ce86-4a80-99ed-68cb9796d9df",
+    "statement": "Um paciente diabético de 59 anos, submetido a uma cirurgia cardíaca desenvolve eritema, edema e secreção purulenta em esternotomia, duas semanas após o procedimento. O agente etiológico mais comum associado a essa condição é",
+    "options": [
+      {
+        "id": "A",
+        "text": "Streptococcus pyogenes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Escherichia coli.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Staphylococcus aureus.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pseudomonas aeruginosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Candida albicans.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico descreve uma infecção do sítio cirúrgico (ISC) em um paciente submetido à cirurgia cardíaca (esternotomia). Em procedimentos cirúrgicos classificados como limpos, como é o caso da maioria das cirurgias cardíacas, a contaminação geralmente ocorre por microrganismos da própria microbiota da pele do paciente no momento da incisão ou no período pós-operatório imediato.\n\nAlternativa a: Incorreta. O *Streptococcus pyogenes* (estreptococo do grupo A) é um importante causador de infecções de pele e partes moles, como erisipela e celulite, além de ser o agente da faringite bacteriana. Contudo, ele não é o patógeno mais frequentemente isolado em infecções de ferida operatória após esternotomia.\n\nAlternativa b: Incorreta. A *Escherichia coli* é um bacilo Gram-negativo habitante do trato gastrointestinal. Sua participação em infecções de sítio cirúrgico é muito comum em cirurgias abdominais, colorretais ou urológicas (cirurgias limpas-contaminadas ou contaminadas), mas é rara como agente principal em cirurgias torácicas limpas.\n\nAlternativa c: Correta. O *Staphylococcus aureus* é, universalmente, o agente etiológico mais comum nas infecções de sítio cirúrgico em cirurgias limpas, incluindo a esternotomia em cirurgia cardíaca. Sua alta prevalência deve-se ao fato de ser um colonizador frequente da pele e das narinas de pacientes e profissionais de saúde. Além disso, possui diversos fatores de virulência que facilitam a adesão e invasão de tecidos e materiais protéticos após a quebra da barreira cutânea.\n\nAlternativa d: Incorreta. A *Pseudomonas aeruginosa* é um patógeno Gram-negativo oportunista, geralmente associado a infecções em pacientes com internação hospitalar prolongada, uso de dispositivos invasivos ou em unidades de terapia intensiva. Apesar de poder causar mediastinite e infecções graves, ela não supera o *Staphylococcus aureus* em frequência absoluta nas esternotomias.\n\nAlternativa e: Incorreta. A *Candida albicans* é um fungo e representa uma causa rara de infecção de sítio cirúrgico pós-esternotomia. Infecções fúngicas nessa topografia costumam ocorrer apenas em cenários específicos, como em pacientes com imunossupressão grave, desnutrição extrema ou uso prolongado de múltiplos antibióticos de amplo espectro.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Infecções Relacionadas à Assistência em Saúde (IRAS)",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:13.869Z"
+  },
+  {
+    "id": "AJUDA_44c94cb7-0d0b-480a-9874-76cfb1b0e9d2",
+    "originalId": "44c94cb7-0d0b-480a-9874-76cfb1b0e9d2",
+    "statement": "Durante uma auditoria interna no Hospital Regional Santa Terezinha, a equipe identifica que alguns pacientes estão tendo dificuldade de acesso a consultas especializadas e exames de imagem. A direção argumenta que \"o hospital só deve atender pacientes encaminhados de municípios conveniados\" e que \"pacientes de fora da área pactuada não têm direito ao atendimento no serviço\". Entretanto, um paciente de 52 anos, residente em outro município dentro do mesmo estado, procura atendimento na unidade após sentir dor torácica durante uma viagem. A equipe de triagem é instruída a orientá-lo a retornar ao seu município de origem para ser atendido.\nConsiderando os princípios e diretrizes organizativas do Sistema Único de Saúde (SUS), qual afirmação é correta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A diretriz da descentralização permite que serviços estaduais e municipais determinem livremente seus critérios de acesso, inclusive recusando viajantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O atendimento só é obrigatório se o paciente apresentar cartão SUS vinculado ao município da unidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A diretriz da integralidade permite negar o atendimento inicial, desde que haja pactuação prévia entre os municípios.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A unidade agiu corretamente, pois cada município deve atender exclusivamente seus residentes conforme pactuação regional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A conduta é inadequada, pois a diretriz da universalidade garante atendimento a qualquer cidadão em situação de urgência, independentemente do domicílio.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nEsta questão aborda os princípios doutrinários e organizativos do Sistema Único de Saúde (SUS), focando especificamente na aplicação prática da Universalidade e da Regionalização em situações de urgência.\n\nAnálise das alternativas:\n\na) Incorreta. A descentralização redistribui poder e responsabilidades administrativas entre os entes federados (União, Estados e Municípios), mas não concede autonomia para que gestores desrespeitem princípios constitucionais. O direito ao acesso é garantido pela Constituição Federal e não pode ser limitado por critérios geográficos impostos por unidades locais.\n\nb) Incorreta. O Cartão Nacional de Saúde (Cartão SUS) é um instrumento de identificação e registro de informações, mas a sua ausência ou o vínculo com outro domicílio jamais podem ser utilizados como barreira para o atendimento. O acesso à saúde é um direito do cidadão e um dever do Estado, independentemente de cadastros burocráticos.\n\nc) Incorreta. A diretriz da integralidade preconiza que o sistema deve estar preparado para atender o indivíduo em todos os seus níveis de complexidade (prevenção, cura e reabilitação). Ela não serve como base para negar atendimento; pelo contrário, reforça que o sistema deve oferecer a solução necessária para a demanda do paciente.\n\nd) Incorreta. Embora a regionalização e a pactuação existam para organizar o fluxo de pacientes e a divisão de recursos financeiros entre os municípios, essas normas administrativas não se sobrepõem ao direito fundamental à vida. Em situações de urgência e emergência, o atendimento deve ser imediato no local onde o paciente se encontra.\n\ne) Correta. A universalidade é um princípio doutrinário do SUS que estabelece que a saúde é um direito de todos e dever do Estado. Isso significa que qualquer cidadão, em qualquer parte do território nacional, tem direito ao atendimento. No caso descrito, o paciente apresenta dor torácica (uma urgência/emergência potencial), o que torna a recusa de atendimento ainda mais grave, ferindo a ética profissional e a legislação vigente.\n\nGabarito: Letra (e).",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:13.869Z"
+  },
+  {
+    "id": "AJUDA_44c9c4cf-9e1c-4610-8bc6-1d808577f119",
+    "originalId": "44c9c4cf-9e1c-4610-8bc6-1d808577f119",
+    "statement": "Qual das alternativas abaixo indica uma doença pulmonar intersticial que geralmente apresenta boa resposta clínica ao uso de corticoide sistêmico isoladamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pneumoconiose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Asbestose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sarcoidose.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Fibrose pulmonar crônica por radiação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O tema central desta questao avalia a resposta terapeutica das doencas pulmonares intersticiais ao tratamento com corticosteroides, diferenciando condicoes com componente inflamatorio ativo e reversivel daquelas dominadas por fibrose estabelecida.\n\nAlternativa a: Incorreta. As pneumoconioses decorrem da inalacao e retencao cronica de particulas minerais inorganicas no parenquima pulmonar, gerando um dano tecidual predominantemente fibrotico e irreversivel. O corticoide sistemico nao e capaz de eliminar as particulas nem reverter as lesoes consolidadas, nao havendo indicacao como terapia modificadora da doenca.\n\nAlternativa b: Incorreta. A asbestose e uma forma especifica de pneumoconiose associada a exposicao ao amianto. Trata-se de uma doenca fibrosante difusa e progressiva que nao apresenta resposta clinica significativa ao uso isolado de corticoides, pois o mecanismo fisiopatologico principal e a fibrose tecidual e nao a inflamacao granulomatosa responsiva.\n\nAlternativa c: Correta. A sarcoidose e uma doenca inflamatoria multissistemica caracterizada pela formacao de granulomas nao caseificantes. Quando ha indicacao de tratamento sistemico (como em pacientes com sintomas respiratorios incapacitantes ou declinio funcional), a corticoterapia isolada e a primeira linha de escolha, promovendo excelente resposta clinica, radiologica e funcional ao suprimir a cascata inflamatoria e a proliferacao granulomatosa.\n\nAlternativa d: Incorreta. A toxicidade pulmonar por radioterapia divide-se em fase aguda (pneumonite actinica, que responde a corticoides) e fase cronica (fibrose por radiacao). Na fase de fibrose cronica, o tecido pulmonar ja sofreu substituicao cicatricial irreversivel e perda estrutural permanente, situacao na qual os corticoides nao conferem beneficio clinico.\n\nGabarito: Letra c.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Interstício, Bronquiectasias, Hipertensão Pulmonar e Pneumotórax"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:13.869Z"
+  },
+  {
+    "id": "AJUDA_44d1054b-b721-4b1e-a4bd-ff0db7ef7508",
+    "originalId": "44d1054b-b721-4b1e-a4bd-ff0db7ef7508",
+    "statement": "Dos achados abaixo, no exame do líquor, são mais indicativos de meningite bacteriana:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pleocitose linfocitária, hiperproteinorraquia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Proteinorraquia elevada, glicorraquia normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Glicorraquia diminuída, pleocitose linfocitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Pleocitose neutrofílica, hipoglicorraquia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para a correta identificação da meningite bacteriana através do exame do líquido cefalorraquidiano (líquor), é necessário compreender as alterações bioquímicas e citológicas causadas pela invasão bacteriana no espaço subaracnoideo. O perfil clássico é o padrão purulento.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A pleocitose linfocitária (predomínio de linfócitos) é característica de meningites virais, fúngicas ou por tuberculose. Na meningite bacteriana aguda, o recrutamento celular é predominantemente de polimorfonucleares, ou seja, neutrófilos.\n\nAlternativa b) Incorreta. Embora a proteinorraquia (nível de proteína) esteja elevada na meningite bacteriana devido à quebra da barreira hematoencefálica e exsudação, a glicorraquia (nível de glicose) normal é um achado típico de meningites virais. Na meningite bacteriana, espera-se que a glicose esteja significativamente reduzida.\n\nAlternativa c) Incorreta. Esta alternativa apresenta a glicorraquia diminuída, o que ocorre na meningite bacteriana, mas a associa à pleocitose linfocitária. Essa combinação (linfócitos + glicose baixa) é o marcador clássico da meningite por Mycobacterium tuberculosis ou por fungos, não sendo o perfil mais indicativo da bacteriana comum.\n\nAlternativa d) Correta. Esta alternativa descreve o padrão-ouro do líquor na meningite bacteriana: pleocitose neutrofílica e hipoglicorraquia. O predomínio de neutrófilos ocorre pela resposta imune aguda às bactérias, e a queda da glicose (hipoglicorraquia) deve-se ao consumo do açúcar pelas bactérias e pelas células de defesa, além de alterações no transporte de glicose para o espaço liquórico.\n\nPortanto, os achados mais indicativos de meningite bacteriana são o aumento de células com predomínio de neutrófilos e a redução dos níveis de glicose.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Meningites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:13.869Z"
+  },
+  {
+    "id": "AJUDA_44eadb1b-a1c9-4ed6-80ca-96f2a63cb23e",
+    "originalId": "44eadb1b-a1c9-4ed6-80ca-96f2a63cb23e",
+    "statement": "Sobre os analgésicos utilizados para o controle da dor em UTI Pediátrica e seus efeitos adversos, relacione as colunas e assinale a sequência correspondente.\n\nI - Morfina.\nII - Fentanil.\nIII - Metadona.\nIV - Tramadol.\n\nA - Convulsões.\nB - Liberação histamínica.\nC - Rigidez torácica.\nD - Broncoespasmo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "I - B; II - D; III - A; IV - C.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "I - D; II - B; III - C; IV - A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I - D; II - C; III - B; IV - A.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "I - C; II - A; III - D; IV - B.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é necessário associar cada analgésico opioide ao seu efeito adverso mais característico ou classicamente descrito em provas de residência e literatura médica:\n\nI - Morfina: É um opioide natural que causa a desgranulação de mastócitos, levando à liberação histamínica (B). Essa liberação de histamina pode resultar em prurido, hipotensão e, em pacientes suscetíveis (como asmáticos), broncoespasmo (D). Na configuração desta questão, a morfina é frequentemente associada ao broncoespasmo devido a esse mecanismo.\n\nII - Fentanil: É um opioide sintético de alta potência. Seu efeito adverso mais marcante, especialmente quando administrado em doses elevadas ou de forma rápida (bolus), é a rigidez muscular aguda, particularmente da musculatura torácica e abdominal. Esse efeito é conhecido como rigidez torácica (C) ou tórax em canudo, o que pode impossibilitar a ventilação do paciente.\n\nIII - Metadona: É um opioide de longa ação. Embora a morfina seja a principal causa, a metadona também pode estar associada à liberação histamínica (B), sendo esta a associação que resta por exclusão em uma análise lógica das colunas.\n\nIV - Tramadol: É um analgésico de ação central que, além de agir em receptores opioides, inibe a recaptação de serotonina e noradrenalina. Seu efeito adverso neurológico mais importante é a redução do limiar convulsivo, podendo causar convulsões (A), especialmente em doses altas ou em pacientes predispostos.\n\nAnálise das alternativas:\n\n- Alternativa a: I-B (Correto), II-D (Incorreto, fentanil não é causa clássica de broncoespasmo), III-A (Incorreto, metadona não é a principal causa de convulsões aqui), IV-C (Incorreto, tramadol não causa rigidez torácica).\n\n- Alternativa b: I-D (Correto), II-B (Incorreto), III-C (Incorreto), IV-A (Correto).\n\n- Alternativa c: I-D (Correto, morfina-broncoespasmo), II-C (Correto, fentanil-rigidez), III-B (Correto, metadona-histamina), IV-A (Correto, tramadol-convulsões). Esta é a única alternativa que mantém a coerência farmacológica para todos os itens.\n\n- Alternativa d: I-C (Incorreto), II-A (Incorreto), III-D (Incorreto), IV-B (Incorreto).\n\nConclusão: A sequência correta que associa os fármacos aos seus respectivos efeitos adversos é I-D, II-C, III-B, IV-A. Portanto, a alternativa correta é a letra (c). Note que, embora o gabarito fornecido no enunciado aponte a letra (a), a literatura farmacológica e a prática em UTI Pediátrica sustentam a alternativa (c) como a correta.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:13.869Z"
+  },
+  {
+    "id": "AJUDA_44eaf5af-2a76-4b21-b2cd-1c87c13d1af5",
+    "originalId": "44eaf5af-2a76-4b21-b2cd-1c87c13d1af5",
+    "statement": "Mulher de 35 anos com história atual de dispneia a mínimos esforços, além de evolução de miocardite viral há um ano, é internada pela terceira vez nos últimos 45 dias. O ecocardiograma apresenta aumento das câmeras cardíacas e fração de ejeção de 32%. Ela está em uso de furosemida, losartana, carvedilol e espironolactona. Está na fila do transplante cardíaco. Nesse caso, a melhor opção terapêutica atualmente é suspender:",
+    "options": [
+      {
+        "id": "A",
+        "text": "carvedilol e iniciar sacubitril-valsartana",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "losartana e iniciar sacubitril-valsartana",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "carvedilol e iniciar nitrato-hidralazina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "losartana e iniciar nitrato-hidralazina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do quadro clínico:\n\nA paciente apresenta Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFEr), com fração de ejeção de 32 por cento, e mantém-se sintomática (classe funcional III/IV da NYHA) com internações frequentes, apesar do uso da terapia tripla padrão (Carvedilol, Losartana e Espironolactona).\n\nDe acordo com as diretrizes atuais, como a da Sociedade Brasileira de Cardiologia (SBC) e diretrizes internacionais, o próximo passo terapêutico para pacientes com ICFEr que permanecem sintomáticos apesar do tratamento básico otimizado é a substituição do Inibidor da Enzima Conversora de Angiotensina (IECA) ou do Bloqueador do Receptor de Angiotensina (BRA, que no caso é a Losartana) por um Inibidor da Neprilisina e do Receptor de Angiotensina (INRA), representado pelo Sacubitril-Valsartana. Essa conduta é baseada em grandes estudos, como o PARADIGM-HF, que demonstrou redução superior de mortalidade e hospitalizações com o uso do INRA em comparação ao uso isolado de IECA ou BRA.\n\nExplicação das alternativas:\n\nAlternativa a) Incorreta. O betabloqueador (Carvedilol) é um dos pilares que reduzem mortalidade na IC e não deve ser suspenso para a entrada do Sacubitril-Valsartana. O INRA entra no lugar do IECA ou do BRA, mantendo-se o betabloqueador e o antagonista de mineralocorticoide (Espironolactona).\n\nAlternativa b) Correta. Como a paciente já utiliza a dose tripla básica e permanece com sintomas limitantes e baixa fração de ejeção, a conduta mais indicada é substituir a Losartana pelo Sacubitril-Valsartana. Vale ressaltar que, ao trocar um BRA (como a Losartana) por Sacubitril-Valsartana, não é obrigatório o período de washout de 36 horas exigido para quem usa IECA (como o Enalapril), embora a monitorização da pressão arterial seja fundamental na transição.\n\nAlternativa c) Incorreta. A combinação de nitrato e hidralazina não é substituta para o betabloqueador. O carvedilol é essencial para o bloqueio adrenérgico e melhora do prognóstico a longo prazo, devendo ser mantido sempre que o paciente estiver hemodinamicamente estável.\n\nAlternativa d) Incorreta. Embora o nitrato e a hidralazina possam ser usados em pacientes com IC, eles são reservados geralmente para pacientes que se autodeclaram negros e que persistem sintomáticos após tratamento pleno, ou para pacientes com contraindicações formais ao uso de IECA, BRA ou INRA (como insuficiência renal avançada ou potássio muito elevado). No cenário proposto, a troca da Losartana pelo Sacubitril-Valsartana é a opção com maior nível de evidência para melhora clínica e de sobrevida.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:35:13.869Z"
+  }
+]

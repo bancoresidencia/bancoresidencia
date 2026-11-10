@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_834eaa95-764b-4d1f-beff-6f89d86bceda",
+    "originalId": "834eaa95-764b-4d1f-beff-6f89d86bceda",
+    "statement": "Homem, 55 anos, comparece no pronto-socorro com quadro de dor abdominal, vômitos, icterícia, febre, colúria e oligúria com início há 3 dias. Portador de hipertensão arterial sistêmica e hipertrigliceridemia e em uso de omelsartana e rosuvastatina. Apresenta antecedente de prostatectomia radical robótica há 2 anos. Ao exame físico, apresentou temperatura 38,2 °C, ictérico ++/4+, FC de 110 ipm, PA de 130 x 75 mmHg, Sat. O₂ de 94% em ar ambiente. Exames laboratoriais: Hb = 13,5 g/dL; Plaquetas = 160.000/mm³; Leucograma = 15.500/mm³; Bilirrubina total = 6,0 mg/dL; Bilirrubina direta = 4,5 mg/dL; TGO/AST = 120 U/L; TGP/ALT = 110 U/L; GGT = 350 U/L; K⁺ = 3,0 mEq/L; Cr = 2,2 mg/dL; Ur = 80 mg/dL. A ultrassonografia abdominal demonstrou vesícula biliar normodistendida, com paredes espessadas e cálculos até 10 mm, sem líquido perivesicular, presença de dilatação de vias biliares intra e extra-hepáticas, com hepatocolédoco de 10 mm associado a cálculos de até 8 mm em seu interior. Qual o diagnóstico e o grau pelos critérios de Tóquio?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Colangite aguda leve (grau I).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colangite aguda moderada (grau II).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Colangite aguda grave (grau III).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Ausência de colangite aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das anteriores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente com a clássica Tríade de Charcot: dor abdominal, icterícia e febre. Os exames laboratoriais confirmam o quadro de colestase (bilirrubina total de 6,0 mg/dL com predomínio da fração direta e GGT elevada) e a resposta inflamatória sistêmica (leucocitose de 15.500/mm³). A ultrassonografia de abdômen fecha o diagnóstico ao demonstrar a presença de cálculos no colédoco (coledocolitíase) e a consequente dilatação das vias biliares.\n\nPara classificar a gravidade da colangite aguda, utilizamos os Critérios de Tóquio (TG18), que dividem a doença em três graus:\n\nGrau III (Grave): Definido pela presença de disfunção em pelo menos um de seis órgãos ou sistemas:\n1. Cardiovascular: necessidade de aminas vasopressoras.\n2. Neurológico: alteração do nível de consciência.\n3. Respiratório: relação PaO2/FiO2 menor que 300.\n4. Renal: creatinina maior que 2,0 mg/dL ou oligúria.\n5. Hepático: RNI maior que 1,5.\n6. Hematológico: plaquetas menores que 100.000/mm³.\n\nNo caso descrito, o paciente apresenta creatinina de 2,2 mg/dL e relato de oligúria, o que preenche o critério de disfunção renal, classificando a colangite como Grau III (Grave).\n\nAnálise das alternativas:\n\na) Incorreta. A classificação Grau I (leve) é reservada para pacientes que não preenchem critérios de gravidade nem critérios de moderada intensidade. A presença de disfunção renal (Cr 2,2) eleva a gravidade diretamente para o Grau III.\n\nb) Incorreta. Para ser Grau II (moderada), o paciente deveria apresentar pelo menos dois dos seguintes critérios: leucocitose importante (> 12.000 ou < 4.000), febre alta (≥ 39 °C), idade ≥ 75 anos, bilirrubina total ≥ 5 mg/dL ou hipoalbuminemia. O paciente até possui alguns desses achados (leucocitose e bilirrubina de 6,0), porém a existência de disfunção orgânica (renal) prioriza a classificação como Grau III.\n\nc) Correta. O diagnóstico é colangite aguda e o grau é III (grave) devido à disfunção renal aguda evidenciada pela creatinina acima de 2,0 mg/dL e pelo quadro de oligúria.\n\nd) Incorreta. O diagnóstico de colangite está bem estabelecido pela presença de inflamação sistêmica (febre e leucocitose), colestase (icterícia e exames laboratoriais) e evidência de obstrução biliar por cálculos na imagem.\n\ne) Incorreta. A alternativa C está correta e fundamentada nos consensos internacionais vigentes.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Colecistite e Colangite Aguda",
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:02.747Z"
+  },
+  {
+    "id": "AJUDA_83521845-49b9-43de-87dd-b8d432416e5d",
+    "originalId": "83521845-49b9-43de-87dd-b8d432416e5d",
+    "statement": "A imunoglobulina anti-Rh deve ser administrada nas primeiras 72 horas pós-parto, em casos de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "RN Rh (+), mãe Rh(-) Coombs indireto com anti D positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "RN Rh (+), mãe Rh (-) Coombs indireto com anti D negativo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "RN Rh (-), mãe Rh(+) Coombs indireto com anti D positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "RN Rh (-), mãe Rh(+) Coombs indireto com anti D negativo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A administração da imunoglobulina anti-Rh (Anti-D) tem como objetivo realizar a imunoprofilaxia da isoimunização Rh, evitando que a mãe desenvolva anticorpos contra o sangue do feto em gestações futuras. Para que a aplicação seja indicada no pós-parto, é obrigatório que três critérios sejam preenchidos simultaneamente: a mãe deve ser Rh negativo, a mãe não deve estar previamente sensibilizada (ou seja, o Teste de Coombs Indireto deve ser negativo) e o recém-nascido (RN) deve ser Rh positivo.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. Se a mãe apresenta o teste de Coombs indireto positivo com anti-D, significa que ela já foi sensibilizada em uma gestação ou transfusão anterior e já produz seus próprios anticorpos. A imunoglobulina é uma medida preventiva e não tem efeito terapêutico após a sensibilização já ter ocorrido.\n\nAlternativa (b) Correta. Este é o cenário de indicação clássica da profilaxia. A mãe é Rh negativo e ainda não produziu anticorpos (Coombs indireto negativo), estando suscetível à sensibilização. Como o RN é Rh positivo, existe o risco de hemácias fetais terem passado para a circulação materna durante o parto. A imunoglobulina administrada em até 72 horas irá destruir essas hemácias fetais antes que o sistema imunológico materno as identifique e comece a produzir anticorpos próprios.\n\nAlternativa (c) Incorreta. Mães Rh positivo não possuem indicação de receber a imunoglobulina anti-D, pois elas já têm o antígeno D em suas hemácias e, portanto, são imunotolerantes a ele. Além disso, um RN Rh negativo não possui o antígeno capaz de causar sensibilização.\n\nAlternativa (d) Incorreta. Assim como na alternativa anterior, mães Rh positivo não precisam de profilaxia contra o fator Rh. Se o RN também é Rh negativo, não há qualquer exposição ao antígeno D, não havendo risco de isoimunização.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Aloimunização Materna e Doença Hemolítica Perinatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:02.747Z"
+  },
+  {
+    "id": "AJUDA_83521ab7-66c8-46a7-89ab-4ca51bbbc397",
+    "originalId": "83521ab7-66c8-46a7-89ab-4ca51bbbc397",
+    "statement": "Foi realizado um estudo que consistiu na revisão de histórias clínicas de 240 pacientes com diagnóstico de meningite bacteriana aguda, admitidos em hospital terciário. A taxa de letalidade foi de 20%. Após a análise multivariada, concluiu-se que rebaixamento do nível de consciência foi a única variável associada ao óbito durante a internação. O desenho do estudo é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ensaio clínico randomizado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Série de casos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Coorte prospectivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Ecológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão descreve um estudo baseado na análise de prontuários (revisão de histórias clínicas) de um grupo específico de 240 pacientes que compartilham uma mesma condição: o diagnóstico de meningite bacteriana aguda. O objetivo foi descrever a evolução clínica, a taxa de letalidade e identificar variáveis associadas ao óbito dentro deste grupo.\n\nAnálise das alternativas:\n\na) Incorreta. O ensaio clínico randomizado é um estudo experimental e prospectivo, no qual os participantes são distribuídos aleatoriamente para receber ou não uma intervenção (como um novo medicamento ou procedimento). O enunciado descreve um estudo observacional e retrospectivo baseado em registros médicos já existentes.\n\nb) Correta. Uma série de casos é um desenho de estudo descritivo que analisa um grupo de indivíduos com uma doença ou condição específica em comum. Nesse caso, foram analisados 240 pacientes com a mesma patologia. Como o estudo descreve as características e o desfecho desse grupo sem utilizar um grupo-controle (pessoas sem a doença) para comparação externa, ele se classifica como uma série de casos.\n\nc) Incorreta. O estudo de caso-controle parte do desfecho já ocorrido (compara doentes versus não doentes) para buscar retrospectivamente exposições prévias. Embora o estudo em questão utilize prontuários, ele não selecionou um grupo de \"controles\" (pessoas sem meningite) para realizar a comparação de riscos, focando exclusivamente no grupo de doentes.\n\nd) Incorreta. Uma coorte prospectiva acompanha indivíduos ao longo do tempo, partindo de uma exposição para observar quem desenvolverá o desfecho no futuro. O estudo citado é retrospectivo (revisão de histórias clínicas de pacientes já admitidos) e não acompanha indivíduos saudáveis expostos a fatores de risco.\n\ne) Incorreta. O estudo ecológico utiliza dados agregados de populações ou grupos geográficos (como estatísticas de cidades, estados ou países) como unidade de análise, e não dados individuais. A questão foca em dados individuais de 240 pacientes específicos, o que descaracteriza o desenho ecológico.",
+    "exam": "Hospital adventista Silvestre",
+    "year": 2026,
+    "banca": "Hospital adventista Silvestre",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e873929b040dea0a4ab1563bb89edc59f2865d673124fd2ae15b8db520b45e24.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a2eced745d291f16c6d2b103c07785627829ec37a2e245382a1efffbcc8999e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:02.747Z"
+  },
+  {
+    "id": "AJUDA_8353448a-3a61-41e8-a28f-df2c652d2bfd",
+    "originalId": "8353448a-3a61-41e8-a28f-df2c652d2bfd",
+    "statement": "A doença inflamatória pélvica (DIP) é uma condição ginecológica importante, frequentemente associada a complicações reprodutivas. Sobre esse tema, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A DIP é causada exclusivamente pelos micro-organismos Neisseria gonorrhoeae e Chlamydia trachomatis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dor em abdome inferior, sensibilidade à mobilização cervical e secreção vaginal anormal/purulenta são sinais clínicos que orientam o diagnóstico presuntivo de DIP.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O tratamento deve ser realizado apenas em ambiente hospitalar, com antibióticos endovenosos e internação obrigatória.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O impacto na fertilidade na DIP é desconsiderado por ser doença autolimitada e sem sequelas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A presença de abscesso tubo-ovariano contraindica o uso de antibióticos e requer obrigatoriamente abordagem cirúrgica imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Doença Inflamatória Pélvica (DIP) é uma síndrome clínica decorrente da ascensão de microrganismos do trato genital inferior para o trato genital superior. A análise das alternativas revela o seguinte:\n\nAlternativa a) Incorreta. Embora a Neisseria gonorrhoeae e a Chlamydia trachomatis sejam os principais agentes iniciadores, a DIP é uma infecção polimicrobiana. Ela frequentemente envolve a microbiota vaginal, incluindo anaeróbios, Gardnerella vaginalis, estreptococos e bacilos gram-negativos entéricos.\n\nAlternativa b) Correta. O diagnóstico da DIP é predominantemente clínico para evitar atrasos no tratamento e sequelas futuras. Segundo os critérios de Hager (adotados pelo Ministério da Saúde e CDC), a presença de dor no abdome inferior associada à dor à mobilização do colo uterino ou à dor à palpação anexial são critérios mínimos para o diagnóstico presuntivo. A presença de secreção vaginal ou endocervical purulenta reforça a suspeita clínica.\n\nAlternativa c) Incorreta. O tratamento da DIP pode ser realizado de forma ambulatorial em casos leves e moderados (Estágios I e II de Monif), utilizando antibioticoterapia oral e intramuscular. A internação é indicada apenas em casos graves (Monif III ou IV), gestantes, pacientes que não toleram via oral, ausência de resposta ao tratamento ambulatorial ou quando há suspeita de urgência cirúrgica.\n\nAlternativa d) Incorreta. A DIP é uma das principais causas de infertilidade por fator tubário, dor pélvica crônica e gravidez ectópica. O potencial de sequelas é alto e aumenta a cada novo episódio da doença, não sendo considerada uma condição autolimitada e sem impacto reprodutivo.\n\nAlternativa e) Incorreta. A presença de abscesso tubo-ovariano (Monif III) indica tratamento hospitalar com antibioticoterapia parenteral de amplo espectro. O uso de antibióticos é fundamental e obrigatório. A abordagem cirúrgica não é a primeira escolha para todos os casos, sendo reservada para situações de ruptura do abscesso (emergência), falha do tratamento clínico após 48-72 horas ou necessidade de drenagem de coleções volumosas.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Doença Inflamatória Pélvica (DIP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:02.747Z"
+  },
+  {
+    "id": "AJUDA_83567024-ed9a-4ec8-90c1-0873651adc98",
+    "originalId": "83567024-ed9a-4ec8-90c1-0873651adc98",
+    "statement": "Criança de 9 anos chega à Unidade Básica de Saúde (UBS) com o diagnóstico de transtorno de déficit de atenção e hiperatividade há 2 anos. Faz uso de metilfenidato há pelo menos 1 ano. O pai informa que, desde o início do uso, apresentou grande melhora na escola e solicita que o uso seja estendido por mais tempo.\nQuais estratégias de monitoramento referentes ao uso dessa medicação devem ser utilizadas?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar seguimento em conjunto com neuropediatra para acompanhar aumento de peso e possível dislipidemia associada ao uso crônico do medicamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Acompanhar com testes psicodinâmicos parâmetros de atenção e desempenho escolar, a fim de avaliar a efetividade da estimulação farmacológica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coletar hemograma e hormônios tireoidianos anuais e eventualmente prescrever antipsicóticos para combate dos efeitos colaterais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Agendar consultas periódicas para verificação da estatura, peso e pressão arterial, com nova avaliação para retirada após 1 ano.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O uso do metilfenidato, um estimulante do sistema nervoso central, exige um acompanhamento clínico rigoroso, especialmente em crianças em fase de crescimento. A alternativa (d) está correta porque aborda os principais pontos de segurança e eficácia no manejo a longo prazo do TDAH.\n\nAlternativa (d) CORRETA: O metilfenidato pode causar efeitos adversos como redução do apetite e retardo na velocidade de crescimento, o que torna obrigatório o monitoramento periódico do peso e da estatura por meio de curvas de crescimento. Além disso, por ser um simpatomimético, pode elevar a frequência cardíaca e a pressão arterial, exigindo monitoramento cardiovascular. A recomendação de reavaliar a necessidade da medicação periodicamente (geralmente a cada ano) serve para verificar se os sintomas ainda persistem com intensidade que justifique o tratamento farmacológico e para permitir períodos de \"washout\" ou férias terapêuticas, se indicados.\n\nAlternativa (a) INCORRETA: Diferentemente do que afirma a alternativa, o uso de psicoestimulantes como o metilfenidato está associado à perda de peso (hiporexia) e não ao ganho de peso. Além disso, o medicamento não possui relação direta com o desenvolvimento de dislipidemia, não sendo este um parâmetro de monitoramento de rotina.\n\nAlternativa (b) INCORRETA: O monitoramento da eficácia do tratamento é feito prioritariamente de forma clínica, por meio de escalas validadas (como o SNAP-IV), relatos de pais e professores e observação do comportamento. Testes psicodinâmicos não são ferramentas adequadas ou padrão-ouro para avaliar o desempenho escolar ou a efetividade da estimulação farmacológica no TDAH.\n\nAlternativa (c) INCORRETA: Não há indicação clínica baseada em evidências para a coleta rotineira de hemograma ou dosagem de hormônios tireoidianos para pacientes em uso isolado de metilfenidato, pois a droga não possui toxicidade hematológica ou tireoidiana comum. O uso de antipsicóticos para combater efeitos colaterais de estimulantes não é uma prática recomendada; se os efeitos colaterais forem graves, deve-se ajustar a dose ou trocar a medicação.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Psiquiatria Infantil",
+      "Psicofarmacologia"
+    ],
+    "difficulty": 70.23301147466316,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:02.747Z"
+  },
+  {
+    "id": "AJUDA_8359074e-e5e8-42f8-9d81-153c6bd8346d",
+    "originalId": "8359074e-e5e8-42f8-9d81-153c6bd8346d",
+    "statement": "Quanto ao manejo sindrômico das úlceras genitais, o Ministério da Saúde orienta que",
+    "options": [
+      {
+        "id": "A",
+        "text": "se há úlcera genital, deve ser solicitada a sorologia para HSV tipo 1 e 2.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "se a lesão não tem vesículas e duração menor que 4 semanas, devem ser tratados sífilis e cancro mole.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "se a lesão tem vesículas e duração superior a 4 semanas, deve-se fazer a biópsia e tratar donovanose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "se a lesão for única e dolorosa, deve ser tratada como cancro duro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O manejo sindrômico das úlceras genitais, preconizado pelo Ministério da Saúde, visa ao tratamento imediato das infecções sexualmente transmissíveis (ISTs) mais prováveis, sem depender de exames laboratoriais complexos que retardariam o início da terapia. A base do fluxograma é a presença ou ausência de vesículas e o tempo de evolução da lesão.\n\nAlternativa (a) Incorreta. O diagnóstico de herpes no manejo sindrômico é clínico, baseado na presença de vesículas agrupadas sobre base eritematosa. A solicitação de sorologias para HSV tipos 1 e 2 não faz parte da rotina do manejo inicial das úlceras, pois as sorologias não distinguem infecção atual de infecção pregressa de forma eficaz para a conduta aguda. O foco é o tratamento e a solicitação de testes para sífilis, HIV e hepatites B e C.\n\nAlternativa (b) Correta. Este é o passo fundamental do fluxograma oficial. Se o paciente apresenta úlcera genital sem a presença de vesículas e a lesão tem menos de 4 semanas de duração, as principais suspeitas são sífilis (cancro duro) e cancro mole. Como a diferenciação clínica entre ambas pode ser difícil e imprecisa, o Ministério da Saúde recomenda o tratamento simultâneo para ambas: penicilina benzatina (para sífilis) e azitromicina (para cancro mole).\n\nAlternativa (c) Incorreta. Se a lesão apresenta vesículas, o tratamento de escolha é para herpes simples (aciclovir). A investigação para donovanose e a realização de biópsia são indicadas para úlceras que persistem por mais de 4 semanas (úlceras crônicas), independentemente de terem começado com vesículas ou não. Além disso, a donovanose caracteriza-se clinicamente por úlceras indolores, de crescimento lento e fundo granulomatoso vermelho-vivo, e não por lesões vesiculosas.\n\nAlternativa (d) Incorreta. Existe uma confusão de conceitos aqui. O cancro duro (sífilis primária) é classicamente uma lesão única, de base endurecida e INDOLOR. Uma lesão dolorosa é mais característica do cancro mole ou do herpes. No manejo sindrômico, se a lesão é dolorosa e não possui vesículas, ela será tratada tanto para sífilis quanto para cancro mole, mas a descrição \"única e dolorosa\" não define o tratamento isolado como cancro duro.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:02.747Z"
+  },
+  {
+    "id": "AJUDA_8363f797-57e9-4f98-84f2-7cf8b84ed3eb",
+    "originalId": "8363f797-57e9-4f98-84f2-7cf8b84ed3eb",
+    "statement": "Em relação ao manejo da pancreatite aguda segundo as atualizações mais recentes das diretrizes internacionais (IAP/APA, AGA, WSES), qual das alternativas abaixo está CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A realização precoce de CPRE (primeiras 24h) é indicada rotineiramente em todos os pacientes com pancreatite aguda biliar, independentemente da presença de colangite ou obstrução persistente da via biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O início precoce da nutrição enteral (por via oral ou sonda nasojejunal, conforme tolerância), preferencialmente dentro das primeiras 24–48 horas, está associado a menor risco de infecção e complicações em comparação ao jejum prolongado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O uso de antibióticos profiláticos em pacientes com pancreatite aguda grave comprovadamente reduz mortalidade e é recomendado sistematicamente nas diretrizes atuais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A reposição volêmica agressiva nas primeiras 24 horas com solução salina isotônica mostrou-se superior à hidratação guiada por metas individualizadas, reduzindo complicações respiratórias e necessidade de UTI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A necrosectomia pancreática deve ser realizada precocemente (dentro da primeira semana) em pacientes com necrose infectada documentada, pois há benefício em reduzir sepse e complicações sistêmicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO E DAS ALTERNATIVAS:\n\nAlternativa A (INCORRETA): A CPRE (Colangiopancreatografia Retrógrada Endoscópica) precoce não deve ser realizada de forma rotineira em todos os pacientes com pancreatite aguda biliar. De acordo com as diretrizes internacionais, a CPRE de urgência (dentro das primeiras 24 a 48 horas) está indicada apenas se houver colangite aguda associada ou evidência de obstrução biliar persistente (como icterícia progressiva ou cálculo encravado na papila). Se houver apenas colelitíase ou coledocolitíase que já passou espontaneamente, a CPRE não traz benefícios e pode aumentar as complicações.\n\nAlternativa B (CORRETA): Esta alternativa reflete a mudança de paradigma no tratamento da pancreatite aguda. Atualmente, o repouso digestivo prolongado é contraindicado. A nutrição enteral precoce (pela boca ou por sonda) iniciada nas primeiras 24 a 48 horas é fundamental para manter a integridade da barreira mucosa intestinal. Isso reduz a translocação bacteriana do intestino para o pâncreas, diminuindo significativamente o risco de infecção da necrose, falência de órgãos e mortalidade.\n\nAlternativa C (INCORRETA): O uso de antibióticos profiláticos é terminantemente desencorajado pelas principais diretrizes (IAP/APA, AGA e WSES), independentemente da gravidade da pancreatite ou da extensão da necrose (quando estéril). O uso de antibióticos deve ser reservado exclusivamente para casos de infecção comprovada ou suspeita clínica forte de necrose infectada ou infecções extrapancreáticas (como pneumonia ou infecção urinária).\n\nAlternativa D (INCORRETA): Estudos recentes, como o ensaio clínico WATERFALL, demonstraram que a hidratação agressiva e liberal nas primeiras 24 horas aumenta o risco de sobrecarga volêmica, complicações respiratórias e necessidade de UTI, sem trazer benefícios na prevenção de insuficiência renal ou necrose. A recomendação atual é a hidratação moderada guiada por metas (goal-directed therapy), avaliando parâmetros clínicos e laboratoriais para evitar tanto a hipovolemia quanto o excesso de fluidos.\n\nAlternativa E (INCORRETA): A intervenção cirúrgica na necrose pancreática (necrosectomia) deve ser evitada ao máximo na fase precoce. Se for necessária intervenção em caso de necrose infectada, deve-se postergar o procedimento por pelo menos 4 semanas, tempo necessário para que a necrose se torne organizada e delimitada (formação da Walled-off Necrosis - WON). Intervenções na primeira semana são associadas a altas taxas de hemorragia e mortalidade. O manejo inicial deve ser preferencialmente clínico ou por drenagem minimamente invasiva (step-up approach).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:02.747Z"
+  },
+  {
+    "id": "AJUDA_836ab2f8-daaa-4dba-8a37-583f15495b75",
+    "originalId": "836ab2f8-daaa-4dba-8a37-583f15495b75",
+    "statement": "Homem, 68 anos, obeso (IMC 37), com insuficiência renal crônica em diálise peritoneal, foi submetido a artroplastia total de joelho. Evoluiu com infecção periprotética em 3 semanas. Qual dos fatores abaixo não é considerado de risco para infecção periprotética nesta situação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Obesidade grau II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Doença renal crônica em diálise",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia prolongada com necessidade de transfusão intraoperatória",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sexo masculino",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questao avalia os fatores de risco para infeccao periprotetica (IPP) em artroplastias de grandes articulacoes, solicitando a alternativa que nao representa um fator de risco estabelecido.\n\nAlternativa a: Incorreta. A obesidade (especialmente com IMC maior ou igual a 35 kg/m2) e um fator de risco classico e independente para IPP. O excesso de tecido adiposo possui menor perfusao sanguinea tecidual, predispoe a formacao de seromas e hematomas, aumenta a tensao na ferida operatoria e dificulta a cicatrizacao, facilitando a invasao bacteriana.\n\nAlternativa b: Incorreta. A doenca renal cronica terminal em dialise e um importante fator de risco sistemico. A uremia prejudica a funcao dos neutrofilos e a imunidade celular, alem de os procedimentos dialiticos frequentes aumentarem a ocorrencia de bacteremias transitorias que podem colonizar o implante ortopedico.\n\nAlternativa c: Incorreta. O tempo cirurgico prolongado eleva o tempo de exposicao dos tecidos a contaminantes e diminui os niveis teciduais do antibiotico profilatico. A transfusao sanguinea peroperatoria induz a imunomodulacao relacionada a transfusao (efeito TRIM), que deprime a resposta imunologica do receptor e eleva o risco de infeccao de sitio cirurgico.\n\nAlternativa d: Correta. O sexo masculino nao e classificado como fator de risco independente ou determinante para infeccao periprotetica, ao contrario de condicoes sistemicas imunossupressoras (como DRC e obesidade) e complicacoes do ato cirurgico (cirurgia prolongada e transfusao). Por isso, e a alternativa que atende ao enunciado.",
+    "exam": "Hospital Dr Adolfo Bezerra de Menezes",
+    "year": 2026,
+    "banca": "Hospital Dr Adolfo Bezerra de Menezes",
+    "uf": "SP",
+    "tags": [
+      "Miscelânea Ortopédica",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b928ee29cf429a93f0a4559117b8984310a30c006ccbbe1556cd0ad8f62bda2b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1ee131758f77f966da9411feeb5213d17fb99951ac69ef8bfff8b99bbcb773a8.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:02.747Z"
+  },
+  {
+    "id": "AJUDA_836ceacf-791f-483b-a3ca-74f590a8113b",
+    "originalId": "836ceacf-791f-483b-a3ca-74f590a8113b",
+    "statement": "Mulher de 38 anos, previamente hígida, apresenta dor súbita em hipocôndrio direito com irradiação para dorso, associada a náuseas, sem febre, icterícia ou vômitos persistentes. Ultrassonografia na urgência evidencia vesícula com múltiplos cálculos, sem sinais ultrassonográficos de colecistite aguda (sem espessamento de parede, líquido pericolecístico ou sinal de Murphy ultrassonográfico positivo). Exames laboratoriais com hemograma, transaminases, amilase e lipase normais. Após analgesia inicial com dipirona EV, a paciente persiste com dor intensa. Com base nas melhores evidências disponíveis, qual é a conduta analgésica inicial mais apropriada para esse quadro?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar antiespasmódico isolado (escopolamina) como medicação de primeira escolha para alívio da dor biliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar AINES como primeira linha, pois reduzem dor, inflamação e risco de progressão para colecistite, podendo associar opioides se refratário.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Evitar AINES pelo risco de espasmo do esfíncter de Oddi, devendo-se priorizar opioides em todos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar antibiótico profilático (ceftriaxona + metronidazol) e programar colecistectomia eletiva, pois dor biliar isolada já é indicação de terapia antimicrobiana.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Manter observação clínica sem analgesia específica, já que cálculos assintomáticos são tratados apenas com cirurgia eletiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico apresentado descreve um episódio típico de cólica biliar, caracterizado por dor aguda em hipocôndrio direito após gatilho alimentar, sem evidências de inflamação (ausência de febre, leucocitose e sinais ultrassonográficos de colecistite). Em pacientes com dor persistente, a escolha da analgesia deve ser guiada por evidências que considerem tanto o alívio sintomático quanto a prevenção de complicações.\n\nAlternativa A: Incorreta. Embora o uso de antiespasmódicos como a escopolamina seja comum na prática clínica diária, as evidências científicas, incluindo revisões da Cochrane, demonstram que eles são menos eficazes que os anti-inflamatórios não esteroidais (AINEs) no controle da dor biliar e na prevenção de recidivas da dor no curto prazo.\n\nAlternativa B: Correta. Os AINEs são a primeira linha de tratamento para a cólica biliar. A fisiopatologia da dor biliar envolve a liberação de prostaglandinas devido à distensão da vesícula e obstrução do ducto cístico. Os AINEs bloqueiam essa síntese, reduzindo a pressão intravesicular e o edema da mucosa. Além de serem mais eficazes no alívio da dor do que antiespasmódicos e opioides, o uso de AINEs reduz significativamente o risco de progressão da cólica biliar para colecistite aguda. Opioides podem ser utilizados como resgate caso a dor seja refratária.\n\nAlternativa C: Incorreta. O receio de espasmo do esfíncter de Oddi é historicamente associado ao uso de morfina (embora com pouca relevância clínica comprovada), e não aos AINEs. Os AINEs são seguros e recomendados como terapia preferencial, não havendo justificativa para evitá-los por esse motivo.\n\nAlternativa D: Incorreta. A antibioticoterapia é indicada para quadros de colecistite aguda, colangite ou outras infecções. A paciente em questão apresenta exames laboratoriais normais e ultrassonografia sem sinais de inflamação ou espessamento da parede da vesícula, o que caracteriza apenas colelitíase sintomática (cólica biliar), sem indicação de antibióticos.\n\nAlternativa E: Incorreta. Manter um paciente com dor intensa em observação sem analgesia é uma conduta inadequada. Além disso, a afirmação de que os cálculos são assintomáticos está errada, pois a paciente buscou atendimento justamente por apresentar sintomas agudos (dor e náuseas) relacionados à litíase biliar.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PB",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/54aca4e301483e8bda0d48a8f6ee6f87da75565b55c8d52077481fefa0a78a81.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e69012faef7dc58c8cfc5ff1f28b1f9194d78824d6cd36c9810dd0bf82184c8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:02.747Z"
+  },
+  {
+    "id": "AJUDA_8371ba63-4b12-4b72-bbdc-da8650c41125",
+    "originalId": "8371ba63-4b12-4b72-bbdc-da8650c41125",
+    "statement": "Criança de 4 anos, com histórico de equimoses após pequenos traumas, desde o primeiro ano de vida, apresenta dor intensa e inchaço no quadríceps direito após queda leve. A mãe relata que frequentemente apresenta sangramentos nas gengivas ao escovar os dentes e já teve episódios de sangramento nasal. Exames laboratoriais: TTPa prolongado, com fator VIII bem reduzido (1%). O diagnóstico mais provável e o manejo adequado devem ser, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hemofilia A grave - iniciar profilaxia continua com fator VIII.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Doença de von Willebrand - iniciar desmopressina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hemofilia A moderada - iniciar reposição episódica de fator VIII em crises.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Hemofilia B - solicitar dosagem de fator IX e aguardar resultado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Púrpura trombocitopênica trombótica - iniciar plasmaférese.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO quadro descreve uma criança do sexo masculino com manifestações hemorrágicas desde o primeiro ano de vida. Os sintomas incluem sangramentos cutâneo-mucosos (equimoses, gengivorragia e epistaxe) e, mais importante, um sangramento em partes moles (quadríceps) após trauma leve, o que sugere um distúrbio da hemostasia secundária (coagulação).\n\nOs exames laboratoriais revelam um prolongamento do Tempo de Tromboplastina Parcial Ativado (TTPa), o que aponta para uma deficiência na via intrínseca da cascata de coagulação (Fatores VIII, IX, XI ou XII). A confirmação diagnóstica é dada pela dosagem do Fator VIII, que está em 1%.\n\nCLASSIFICAÇÃO DA HEMOFILIA A\nA gravidade da Hemofilia A é determinada pelo nível de atividade do Fator VIII:\n- Grave: < 1% de atividade.\n- Moderada: entre 1% e 5% de atividade.\n- Leve: entre 5% e 40% de atividade.\n\nEmbora o valor de 1% esteja no limite entre grave e moderada, o quadro clínico de sangramentos precoces e hematoma muscular após trauma leve é característico do fenótipo grave.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (Correta): O diagnóstico é Hemofilia A (deficiência de Fator VIII). Com um nível de 1% e manifestações clínicas significativas, a criança é classificada como tendo hemofilia grave. O manejo padrão-ouro atual, recomendado pela Federação Mundial de Hemofilia e pelo Ministério da Saúde, é a profilaxia contínua (reposição regular do fator) para prevenir sangramentos espontâneos e, principalmente, evitar a artropatia hemofílica (lesão articular crônica).\n\nAlternativa B (Incorreta): A Doença de von Willebrand (DVW) é o distúrbio hemorrágico hereditário mais comum e pode cursar com redução do Fator VIII (pois o fator de von Willebrand é o carregador do Fator VIII no plasma). No entanto, a DVW costuma apresentar sangramentos predominantemente mucosos e o TTPa pode estar normal ou pouco alterado. Além disso, a desmopressina (DDAVP) não seria o tratamento de escolha para um sangramento muscular importante com nível de Fator VIII tão baixo.\n\nAlternativa C (Incorreta): Como mencionado, o nível de 1% associado à clínica de sangramentos frequentes e precoces direciona para a classificação grave. Mais importante que a classificação é a conduta: a reposição episódica (apenas no momento da crise) é considerada ultrapassada para crianças com este perfil, sendo a profilaxia contínua a estratégia que garante melhor qualidade de vida e prevenção de sequelas.\n\nAlternativa D (Incorreta): A Hemofilia B é causada pela deficiência do Fator IX. O enunciado afirma explicitamente que o Fator VIII está reduzido, o que define a Hemofilia A. Não há indicação de aguardar dosagem de Fator IX quando a deficiência de Fator VIII já explica o quadro e o TTPa prolongado.\n\nAlternativa E (Incorreta): A Púrpura Trombocitopênica Trombótica (PTT) é uma microangiopatia trombótica grave caracterizada por anemia hemolítica microangiopática, trombocitopenia grave, febre, alterações neurológicas e disfunção renal. Não apresenta relação com deficiência isolada de Fator VIII ou prolongamento isolado do TTPa por deficiência de fator de coagulação.",
+    "exam": "Sírio Libanês",
+    "year": 2025,
+    "banca": "FCC",
+    "uf": "SP",
+    "tags": [
+      "Hemostasia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7b9550e978e0e4bfa3fcccc9a7693500f0888f139efe5421ba16e1db2e7e0da3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2ae5231fcbd83f2aa1122d192576d6cb7377977f3d5bb7f5da57bcf3ee8f211e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:09:02.747Z"
+  }
+]

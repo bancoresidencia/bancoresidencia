@@ -1,0 +1,500 @@
+[
+  {
+    "id": "AJUDA_ce8c1b25-829d-4ac7-8ed6-1bd6d23b072c",
+    "originalId": "ce8c1b25-829d-4ac7-8ed6-1bd6d23b072c",
+    "statement": "Na intubação orotraqueal no adulto de 70 kg, assinale a opção que corresponda à sequência correta dos eventos que devem ser realizados.",
+    "options": [
+      {
+        "id": "A",
+        "text": "oxigenação até, pelo menos, 85% de saturação, pressão sobre a cartilagem cricoide, administração de succinilcolina 100 mg, administração de etomidato 0,3 mg/kg, intubação por via orotraqueal e insuflação do cuff",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "oxigenar até obter 100% de saturação, pressão sobre a cartilagem cricoide, administração de succinilcolina 100 mg, administração de etomidato 0,3 mg/kg, insuflação do cuff e intubação por via orotraqueal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "oxigenar até obter 100% de saturação, pressão sobre a cartilagem cricoide, administração de etomidato 0,3 mg/kg, administração de succinilcolina 100 mg, intubação por via orotraqueal, insuflação do cuff",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "oxigenação até pelo menos 85% de saturação, administração de succinilcolina 100 mg, administração de etomidato 0,5 mg/kg, pressão sobre a cartilagem cricoide, intubação por via orotraqueal e insuflação do cuff",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "oxigenar até obter 100% de saturação, administração de etomidato 0,5 mg/kg, administração de succinilcolina 100 mg, pressão sobre a cartilagem cricoide, intubação por via orotraqueal, insuflação do cuff",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda a Sequência Rápida de Intubação (SRI) no adulto, um procedimento crítico que exige ordem e dosagens precisas para garantir a segurança do paciente e o sucesso da via aérea.\n\nAlternativa a: Incorreta. A pré-oxigenação deve buscar o valor máximo possível, idealmente 100%, para aumentar o tempo de apneia segura e evitar a dessaturação rápida. Além disso, a administração de succinilcolina (bloqueador neuromuscular) antes do etomidato (sedativo) é um erro grave; o paciente deve ser sedado antes de ser paralisado para evitar o despertar em estado de paralisia, o que causa sofrimento extremo.\n\nAlternativa b: Incorreta. Assim como a anterior, esta alternativa inverte a ordem das drogas, colocando o relaxante muscular antes do sedativo. Outro erro conceitual é a ordem dos eventos finais: a insuflação do cuff (balonete) só pode ocorrer após a passagem do tubo pela traqueia, e não antes.\n\nAlternativa c: Correta. Esta alternativa descreve a sequência clássica e as doses recomendadas para um paciente de 70 kg. A pré-oxigenação a 100% visa a desnitrogenação pulmonar. A pressão sobre a cartilagem cricoide (manobra de Sellick) é realizada para ocluir o esôfago e prevenir a aspiração de conteúdo gástrico durante a indução. A dose de etomidato de 0,3 mg/kg é o padrão para indução (70 kg x 0,3 = 21 mg). A succinilcolina em dose de 100 mg é adequada, correspondendo a aproximadamente 1,4 mg/kg (dentro da faixa de 1,0 a 1,5 mg/kg). A sequência termina com a intubação e subsequente insuflação do balonete para vedação da via aérea.\n\nAlternativa d: Incorreta. Apresenta três erros principais: a meta de saturação de 85% é insuficiente e perigosa; a succinilcolina é administrada antes do etomidato; e a dose de etomidato de 0,5 mg/kg é superior à recomendação habitual de indução (0,2 a 0,3 mg/kg).\n\nAlternativa e: Incorreta. Embora a ordem de sedativo seguido de paralisante esteja correta, a dose de etomidato de 0,5 mg/kg é elevada para a prática clínica padrão. Além disso, a alternativa C segue a cronologia mais rigorosa da Sequência Rápida de Intubação ao posicionar a proteção da via aérea (pressão cricoide) logo após a pré-oxigenação, preparando o campo para a administração das drogas.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Ventilação Mecânica",
+      "Intubação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:29.851Z"
+  },
+  {
+    "id": "AJUDA_ce9075a7-e339-45c9-9e34-178a3cf2dbe7",
+    "originalId": "ce9075a7-e339-45c9-9e34-178a3cf2dbe7",
+    "statement": "Homem de 70 anos apresenta sangramento retal intenso e hipotensão. A colonoscopia revela um divertículo sangrante. Qual é a conduta inicial mais indicada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ressecção de segmento intestinal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colonoscopia terapêutica com hemostasia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Administração de antibióticos profiláticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Observação clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico descreve um paciente idoso com hemorragia digestiva baixa (HDB) grave, manifestada por sangramento retal intenso e instabilidade hemodinâmica (hipotensão). A doença diverticular é a principal causa de sangramento intestinal baixo massivo em pacientes idosos.\n\nAlternativa a) Incorreta. A cirurgia de ressecção segmentar (colectomia) é considerada uma medida de exceção. Ela é indicada apenas em casos de sangramento persistente ou recidivante grave em que as terapias menos invasivas (endoscópica ou radiológica) falharam, ou quando o paciente apresenta instabilidade hemodinâmica refratária sem localização precisa do sangramento. Como o foco foi identificado, tenta-se primeiro o tratamento local.\n\nAlternativa b) Correta. A colonoscopia, além de ser um excelente método diagnóstico, permite a intervenção terapêutica imediata quando o foco do sangramento é identificado. As técnicas de hemostasia endoscópica incluem o uso de clipes metálicos (método mecânico), termocoagulação ou injeção de adrenalina. Essa abordagem é a conduta inicial de escolha por ser menos invasiva e apresentar altas taxas de sucesso no controle da hemorragia aguda.\n\nAlternativa c) Incorreta. O uso de antibióticos está indicado na diverticulite aguda, que é a inflamação ou infecção dos divertículos. O sangramento diverticular, por outro lado, é um evento vascular causado pela erosão de uma arteríola (vasa recta) no interior do divertículo, não havendo componente infeccioso que justifique a antibioticoterapia profilática.\n\nAlternativa d) Incorreta. A observação clínica pode ser adotada em pacientes estáveis cujo sangramento cessou espontaneamente (o que ocorre em cerca de 75% a 80% dos casos). No entanto, este paciente apresenta hipotensão e o foco do sangramento foi ativamente visualizado durante a colonoscopia. Nessas circunstâncias, a intervenção é necessária para estabilizar o quadro e prevenir o ressangramento, que é comum se a lesão não for tratada.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Hemorragia Digestiva Baixa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:29.862Z"
+  },
+  {
+    "id": "AJUDA_ce93d80e-2c63-49de-9814-9205c159755c",
+    "originalId": "ce93d80e-2c63-49de-9814-9205c159755c",
+    "statement": "Em caso de gestações gemelares, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gestações dicoriônicas e diamnióticas são gestações dizigóticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Gestações monocoriônicas e diamnióticas são decorrentes de divisão até o quarto dia após a fecundação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A incidência da monozigótica é fixa e ao acaso, e independe de fatores familiares ou medicamentosos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A síndrome de transfusão feto-fetal ocorre mais frequentemente nas gestações dicoriônicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "O uso de indutores de ovulação aumenta a probabilidade de gestações monozigóticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a) Incorreta. Gestações dicoriônicas e diamnióticas podem ser tanto dizigóticas quanto monozigóticas. Quando a divisão do ovo em uma gestação monozigótica ocorre de forma muito precoce, entre o primeiro e o terceiro dia após a fecundação (fase de mórula), cada feto desenvolverá seu próprio córion e seu próprio âmnio, resultando em uma configuração dicoriônica e diamniótica. Já as gestações dizigóticas são sempre dicoriônicas e diamnióticas.\n\nAlternativa b) Incorreta. A cronologia da divisão embrionária determina a corionicidade e a amnionidade. A divisão que ocorre até o terceiro ou quarto dia após a fecundação resulta em gestações dicoriônicas e diamnióticas. Para que a gestação seja monocoriônica e diamniótica, a divisão deve ocorrer entre o quarto e o oitavo dia após a fecundação, durante a fase de blastocisto.\n\nAlternativa c) Correta. A incidência de gestações monozigóticas (gêmeos idênticos) é universalmente constante, ocorrendo em aproximadamente 3,5 a 4 por 1.000 nascimentos. Diferentemente das gestações dizigóticas, que sofrem influência da etnia, idade materna, paridade e histórico familiar, a gemelaridade monozigótica é considerada um evento biológico aleatório, não sendo afetada por esses fatores ou pelo uso de medicamentos.\n\nAlternativa d) Incorreta. A Síndrome de Transfusão Feto-Fetal (STFF) é uma complicação exclusiva de gestações monocoriônicas. Ela ocorre devido à presença de anastomoses vasculares na placenta compartilhada, que permitem a passagem desequilibrada de sangue de um feto (doador) para o outro (receptor). Em gestações dicoriônicas, as placentas são funcionalmente independentes, o que impede a ocorrência dessa síndrome.\n\nAlternativa e) Incorreta. O uso de indutores de ovulação e técnicas de reprodução assistida aumenta a probabilidade de gestações múltiplas, porém esse aumento se dá majoritariamente à custa de gestações dizigóticas (gêmeos fraternos), devido à maturação e liberação de múltiplos folículos ovarianos no mesmo ciclo. A taxa de monozigóticos permanece estável e independente desses indutores conforme o padrão biológico clássico.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Gestação Múltipla"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:29.862Z"
+  },
+  {
+    "id": "AJUDA_ce9451a5-c004-4263-b8a3-098dd079750b",
+    "originalId": "ce9451a5-c004-4263-b8a3-098dd079750b",
+    "statement": "Uma paciente apresenta candidíase vaginal recorrente. Qual é o tratamento de manutenção recomendado para reduzir as recorrências?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antifúngico tópico diário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Antifúngico oral semanal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Antibiótico profilático mensal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Lavagem vaginal frequente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Definição e Contexto:\nA candidíase vaginal recorrente é definida pela ocorrência de quatro ou mais episódios sintomáticos em um período de 12 meses. O manejo clínico dessa condição é dividido em duas etapas: o tratamento do episódio agudo (indução) e a terapia de manutenção, que visa a prevenir novas recidivas.\n\nAnálise das alternativas:\n\na) Incorreta. O uso de antifúngicos tópicos (cremes ou óvulos) é eficaz para tratar episódios isolados ou a fase de indução. No entanto, o uso diário para manutenção é inviável devido ao desconforto, à baixa adesão da paciente e à falta de evidência superior ao esquema oral semanal.\n\nb) Correta. O esquema de manutenção padrão-ouro, recomendado por diretrizes como as da FEBRASGO e do CDC, é o uso de fluconazol 150 mg por via oral, uma vez por semana, durante 6 meses. Este regime é eficaz em manter a remissão dos sintomas na grande maioria das pacientes durante o período de tratamento.\n\nc) Incorreta. Antibióticos são utilizados para tratar infecções bacterianas, não fúngicas. Além disso, o uso de antibióticos é um fator de risco clássico para a candidíase, pois eles reduzem a população de lactobacilos na flora vaginal, o que permite o sobrecrescimento de fungos do gênero Candida.\n\nd) Incorreta. A lavagem vaginal (duchas vaginais) deve ser desencorajada. Essa prática altera o pH vaginal e remove a microbiota protetora, o que desequilibra o ambiente local e aumenta o risco de diversas infecções, incluindo a própria candidíase e a vaginose bacteriana.\n\nConclusão:\nA alternativa (b) está correta porque a terapia supressiva prolongada com antifúngico oral semanal é a estratégia farmacológica com melhor evidência científica para o controle da candidíase recorrente.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:29.863Z"
+  },
+  {
+    "id": "AJUDA_ce95580a-f7f8-4eab-bb61-2772ac14c6d2",
+    "originalId": "ce95580a-f7f8-4eab-bb61-2772ac14c6d2",
+    "statement": "Paciente do sexo feminino, 72 anos, com diagnóstico de insuficiência cardíaca com fração de ejeção do ventrículo esquerdo reduzida secundária à miocardiopatia isquêmica. Dá entrada na Unidade de Emergência com quadro de dispneia em repouso, ortopneia, tosse seca, dispneia paroxística noturna e edema de membros inferiores há 7 dias, intensificado hoje. Ao exame físico, encontrava-se consciente e orientada, mas ansiosa, sudoréica, com FR 32 irpm, FC 120 bpm; PA 160x90 mmHg, SatO2 78% em ar ambiente, com crepitações em 2/3 inferiores, bilateralmente. \n\nAssinale a alternativa com o diagnóstico e tratamento imediato indicados para o caso acima.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Síndrome coronariana aguda; AAS, clopidogrel, heparina não fracionada, morfina, estatina, oxigênio, metoprolol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Edema agudo dos pulmões; intubação orotraqueal e ventilação mecânica, furosemida, nitroglicerina, morfina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Edema agudo dos pulmões; ventilação não-invasiva, nitroglicerina, furosemida e morfina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tromboembolismo pulmonar; ventilação mecânica não-invasiva e enoxaparina 1 mg/kg a cada 12 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito é clássico de Insuficiência Cardíaca Aguda Descompensada, especificamente o Edema Agudo de Pulmão (EAP). A paciente apresenta sinais claros de congestão sistêmica (edema de membros inferiores) e, principalmente, congestão pulmonar grave, evidenciada pela dispneia em repouso, ortopneia, taquipneia (32 irpm), baixa saturação de oxigênio (78%) e estertores crepitantes bilaterais. O fato de a pressão arterial estar elevada (160 x 90 mmHg) caracteriza o perfil hemodinâmico como \"quente e úmido\", sugerindo que a hipertensão pode ser tanto a causa quanto o agravante do quadro.\n\nAlternativa (c): Correta. O tratamento imediato do Edema Agudo de Pulmão hipertensivo foca na melhora da oxigenação e na redução rápida das pressões de enchimento ventricular. A Ventilação Não Invasiva (VNI), com pressão positiva (CPAP ou BiPAP), é o padrão-ouro inicial, pois recruta alvéolos, melhora a troca gasosa e reduz o retorno venoso e a pós-carga, diminuindo a necessidade de intubação. A nitroglicerina é o vasodilatador de escolha por reduzir a pré e a pós-carga rapidamente. A furosemida é essencial para a remoção do excesso de fluido. A morfina, embora tenha perdido espaço em diretrizes recentes devido a potenciais efeitos adversos, ainda é classicamente citada em provas por sua ação ansiolítica e venodilatadora leve.\n\nAlternativa (a): Incorreta. Embora a miocardiopatia isquêmica seja a base da insuficiência cardíaca desta paciente, o diagnóstico principal do momento é o EAP. O erro mais grave desta alternativa é a administração de metoprolol (betabloqueador). Os betabloqueadores são contraindicados na fase de descompensação aguda com sinais de congestão (paciente \"úmido\"), pois possuem efeito inotrópico negativo e podem levar ao choque cardiogênico ou piora súbita do edema.\n\nAlternativa (b): Incorreta. A falha aqui reside na indicação imediata de intubação orotraqueal e ventilação mecânica invasiva. A paciente está consciente e orientada, o que permite e favorece a tentativa inicial de VNI. A intubação é reservada para casos em que há contraindicação ou falha da VNI, ou se a paciente apresentasse rebaixamento do nível de consciência e incapacidade de proteção de via aérea.\n\nAlternativa (d): Incorreta. O Tromboembolismo Pulmonar (TEP) é um diagnóstico diferencial importante em quadros de dispneia súbita e hipoxemia, porém, no TEP, o exame físico pulmonar costuma ser limpo (sem ruídos adventícios). A presença de estertores crepitantes em 2/3 das bases pulmonares, somada ao histórico de insuficiência cardíaca, ortopneia e edema prévio, aponta diretamente para o Edema Agudo de Pulmão por falha ventricular esquerda, e não por obstrução embólica da artéria pulmonar. Além disso, a VNI não é o tratamento padrão para TEP.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Ventilação não invasiva (VNI)",
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:29.863Z"
+  },
+  {
+    "id": "AJUDA_cea6b25e-7b96-41ec-a680-eecd7066b75f",
+    "originalId": "cea6b25e-7b96-41ec-a680-eecd7066b75f",
+    "statement": "Homem, de 42 anos de idade, procura o pronto atendimento por episódios de hematêmese há uma hora. Nega episódios prévios. Refere ingestão de um litro de destilado diariamente há 12 anos. Ao exame físico, encontra-se em regular estado geral,  escorado 2+/4+, FC 98bpm, PA 100x70mmHg, com extremidades quentes e bem perfundidas. Apresenta escala de coma de Glasgow 15. O abdome está ascítico, flácido, indolor e sem sinais de irritação peritoneal. O toque retal está normal. Os exames laboratoriais demonstraram Hb 8,6g/dL, sem demais alterações. Realizou endoscopia digestiva alta, com identificação de varizes de grosso calibre em fundo gástrico e presença de “red spots”. Não foram observadas outras alterações na endoscopia.\n\nO tratamento endoscópico realizado foi efetivo, de forma que o paciente permaneceu hemodinamicamente estável ao final do\nexame. Quais são as medicações indicadas para diminuir o risco de complicações hemorrágicas e infecciosas neste momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Terlipressina, ciprofloxacina, omeprazol e ácido tranexâmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Terlipressina, ciprofloxacina e omeprazol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Terlipressina, ciprofloxacina e ácido tranexâmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Terlipressina e ciprofloxacina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo farmacológico imediato de um paciente cirrótico com Hemorragia Digestiva Alta (HDA) por varizes esofagogástricas. O quadro clínico descreve um paciente com consumo crônico de álcool, estigmas de hipertensão portal (ascite) e endoscopia revelando varizes de fundo gástrico com sinais de risco (\"red spots\").\n\nPara o tratamento da HDA varicosa, as diretrizes internacionais (como o Consenso de Baveno) e nacionais recomendam três pilares medicamentosos fundamentais:\n\n1. Drogas vasoativas: A terlipressina (ou somatostatina/octreotida) é essencial para reduzir a pressão portal e o fluxo sanguíneo nas varizes, facilitando o controle da hemorragia e reduzindo o risco de ressangramento precoce. Deve ser iniciada o mais rápido possível, preferencialmente antes mesmo da endoscopia.\n\n2. Antibioticoprofilaxia: Todo paciente cirrótico com hemorragia digestiva deve receber antibióticos (como ciprofloxacina ou ceftriaxona). A profilaxia reduz a incidência de infecções (como a peritonite bacteriana espontânea), o risco de ressangramento e a mortalidade.\n\n3. Inibidores de bomba de prótons (IBP): Embora a causa do sangramento seja varicosa e não uma úlcera péptica, o omeprazol é indicado para prevenir sangramentos decorrentes de úlceras iatrogênicas que se formam após o tratamento endoscópico (seja por ligadura elástica ou escleroterapia) e para proteger a mucosa gástrica em um paciente criticamente enfermo.\n\nAnálise das alternativas:\n\na) Incorreta. O ácido tranexâmico não possui evidência de benefício na redução de mortalidade ou ressangramento na hemorragia digestiva varicosa e não faz parte dos protocolos padrão para esta condição.\n\nb) Correta. Contempla a tríade terapêutica recomendada para o manejo agudo: droga vasoativa (terlipressina) para controle pressórico portal, antibiótico (ciprofloxacina) para profilaxia infecciosa e IBP (omeprazol) para proteção de mucosa e auxílio na cicatrização pós-procedimento endoscópico.\n\nc) Incorreta. Inclui o ácido tranexâmico, que não é indicado, e exclui o omeprazol, que é importante no suporte pós-endoscópico.\n\nd) Incorreta. Embora a terlipressina e a ciprofloxacina sejam os pilares que mais impactam na sobrevida imediata, a alternativa (b) é considerada mais completa no contexto de um paciente que acabou de realizar tratamento endoscópico e necessita de proteção contra úlceras de estresse ou iatrogênicas.",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Alta Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:29.863Z"
+  },
+  {
+    "id": "AJUDA_cea9a14d-aa06-48b8-b2fe-afacbc51e97d",
+    "originalId": "cea9a14d-aa06-48b8-b2fe-afacbc51e97d",
+    "statement": "Lactente, 4 meses de vida, previamente hígido, é trazido ao pronto-socorro com história de rinorreia hialina e tosse seca há 3 dias, evoluindo com febre baixa. Nas últimas 24 horas, a mãe relata que ele se tornou mais irritadiço e “cansado para respirar”, recusando o seio materno após poucos minutos de sucção. Ao exame físico, apresenta tiragem subcostal e intercostal moderada, com frequência respiratória de 65 ipm. A oximetria de pulso em ar ambiente é de 87%. A ausculta pulmonar revela sibilos expiratórios difusos e finos estertores crepitantes inspiratórios. Assinale a alternativa que apresenta, correta e respectivamente, o quadro clínico característico e a melhor conduta para esse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bronquiolite Viral Aguda e a conduta prioritária é a suplementação de oxigênio por cânula nasal, para manter a saturação alvo (≥ 90%), associada à desobstrução nasal com soro fisiológico, para facilitar a alimentação e a respiração.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Crise asmática do lactente e a conduta indicada é realizar um teste terapêutico com 3 ciclos de salbutamol inalatório e corticoide sistêmico, reavaliando a resposta clínica para definir a necessidade de internação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Insuficiência cardíaca descompensada e a sibilância (“asma cardíaca”) e os estertores justificam a administração de furosemida intravenosa e a solicitação de um ecocardiograma de urgência para avaliar a função ventricular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Laringotraqueíte Viral Aguda (Crupe) e a prioridade é a administração de nebulização com epinefrina racêmica e uma dose de dexametasona oral para tratar o edema subglótico, causa principal da sibilância nessa condição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pneumonia bacteriana e a solicitação de radiografia de tórax, para confirmar a presença de consolidação ou infiltrado intersticial, e iniciar antibioticoterapia empírica com ampicilina intravenosa devido à gravidade do quadro respiratório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve um lactente de 4 meses com um quadro clássico de Bronquiolite Viral Aguda (BVA). A BVA é definida como o primeiro episódio de sibilância em crianças menores de 2 anos, precedido por sintomas gripais (rinorreia, tosse e febre baixa). O exame físico revela sinais de desconforto respiratório (tiragens e taquipneia de 65 ipm) e hipoxemia (saturação de 87%), o que indica a necessidade de assistência hospitalar.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): O diagnóstico é de Bronquiolite Viral Aguda. O tratamento da BVA é essencialmente de suporte, uma vez que não há evidências de que broncodilatadores, corticoides ou antibióticos mudem o curso da doença na maioria dos casos. A suplementação de oxigênio é obrigatória para pacientes com saturação abaixo de 90-92% (neste caso, 87%). A desobstrução nasal com soro fisiológico é fundamental, pois lactentes jovens são respiradores nasais preferenciais e a obstrução por secreção dificulta tanto a mecânica respiratória quanto a amamentação.\n\nAlternativa B (INCORRETA): Embora o paciente apresente sibilância, este é o primeiro episódio em um lactente de 4 meses após pródromos virais, o que caracteriza BVA e não asma. As diretrizes nacionais e internacionais (como a da Academia Americana de Pediatria e da Sociedade Brasileira de Pediatria) não recomendam o uso rotineiro de salbutamol ou corticoide sistêmico para o tratamento do primeiro episódio de bronquiolite, pois não demonstraram eficácia em reduzir a taxa de internação ou o tempo de hospitalização.\n\nAlternativa C (INCORRETA): A insuficiência cardíaca pode cursar com taquipneia e dificuldade alimentar, mas o quadro de início agudo precedido por rinorreia e febre baixa é típico de infecção viral respiratória. A sibilância e os estertores crepitantes, no contexto de sintomas gripais prévios, direcionam o diagnóstico para a inflamação dos bronquíolos, e não para congestão passiva por falência miocárdica.\n\nAlternativa D (INCORRETA): A laringotraqueíte viral aguda (crupe) atinge as vias aéreas superiores (região subglótica). Clinicamente, manifesta-se com tosse metálica (tosse de cachorro), rouquidão e estridor inspiratório. O quadro descrito na questão apresenta sibilância expiratória e estertores, que são sinais de acometimento de vias aéreas inferiores (bronquíolos e alvéolos). A adrenalina nebulizada e a dexametasona são o tratamento de escolha para o crupe, mas não para a bronquiolite.\n\nAlternativa E (INCORRETA): A pneumonia bacteriana deve ser considerada em lactentes com febre alta persistente e toxemia. No entanto, a presença de sibilância difusa e pródromos virais sugere fortemente BVA. A radiografia de tórax não deve ser solicitada de rotina na bronquiolite típica, sendo reservada para casos de dúvida diagnóstica, instabilidade grave ou suspeita de complicações (como pneumotórax). O tratamento inicial da BVA não envolve antibioticoterapia.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Bronquiolite"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:29.863Z"
+  },
+  {
+    "id": "AJUDA_ceab0552-3b27-49a6-b4bd-dde78316e556",
+    "originalId": "ceab0552-3b27-49a6-b4bd-dde78316e556",
+    "statement": "A denominação hiperplasia adrenal congênita (HAC), engloba um conjunto de síndromes transmitidas de forma autossômica recessiva que se caracterizam por diferentes deficiências enzimáticas na síntese dos esteroides. Dessa forma, qual é a enzima recorrente, e qual hormônio é quantificado para fins diagnósticos, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Enzima: 17 α-hidroxilase; hormônio dosado: 17-OH-Pregnenolona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Enzima: 17 ß-hidroxilase; hormônio dosado: 17-OH-Progesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Enzima: 21 ß-hidroxilase; hormônio dosado: Progesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Enzima: 21 α-hidroxilase; hormônio dosado: a 17-OH-Progesterona.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Hiperplasia Adrenal Congênita (HAC) refere-se a um grupo de doenças genéticas em que há um bloqueio em etapas da síntese do cortisol no córtex da adrenal. Para responder a essa questão, é fundamental identificar a deficiência enzimática mais prevalente e o marcador laboratorial que se acumula em decorrência desse bloqueio.\n\nAnálise das alternativas:\n\nA) Incorreta. A deficiência da 17-alfa-hidroxilase é uma forma rara de HAC. Ela se caracteriza clinicamente por hipertensão arterial (devido ao excesso de mineralocorticoides) e hipogonadismo (ausência de puberdade), uma vez que essa enzima é necessária para a produção de androgênios e estrogênios. Não é a enzima recorrente (mais comum) na prática clínica.\n\nB) Incorreta. Não existe a enzima \"17-beta-hidroxilase\" no contexto das formas clássicas de HAC. Existe a 17-beta-hidroxiesteroide desidrogenase, que atua na conversão periférica de hormônios sexuais, mas sua deficiência não causa o quadro clássico de hiperplasia adrenal congênita com alteração do cortisol. Além disso, embora a 17-OH-progesterona seja o hormônio dosado, a nomenclatura da enzima está errada.\n\nC) Incorreta. Embora o termo \"21-hidroxilase\" esteja correto quanto à enzima, o hormônio utilizado para o diagnóstico não é a progesterona isolada. Na deficiência de 21-hidroxilase, ocorre um acúmulo específico de 17-hidroxiprogesterona (17-OHP). A progesterona pode até estar elevada, mas não é o marcador padrão-ouro e específico para o diagnóstico e rastreio neonatal.\n\nD) Correta. A deficiência da enzima 21-hidroxilase (também denominada 21-alfa-hidroxilase) é a causa mais comum de HAC, sendo responsável por mais de 90% a 95% dos casos. Essa enzima é responsável por converter a 17-hidroxiprogesterona em 11-desoxicortisol. Quando há deficiência, a 17-hidroxiprogesterona não é convertida, acumulando-se na corrente sanguínea. Por isso, a dosagem da 17-OH-progesterona é o exame fundamental para o diagnóstico, sendo inclusive o marcador utilizado no Teste do Pezinho (triagem neonatal). O excesso desse precursor é desviado para a via de produção de androgênios, o que explica a virilização comum nesses quadros.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Hiperplasia Adrenal Congênita",
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:29.863Z"
+  },
+  {
+    "id": "AJUDA_ceb4744b-565d-4df1-a3fb-d0b3d03e9519",
+    "originalId": "ceb4744b-565d-4df1-a3fb-d0b3d03e9519",
+    "statement": "Todas as estruturas abaixo podem ser visualizadas quando o laringoscópio estiver na posição ideal para a introdução da cânula traqueal, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Língua",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Epiglote",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cordas vocais",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Glote",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Esôfago se houver intubação incorreta",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O objetivo da laringoscopia direta para a intubação orotraqueal é o alinhamento dos eixos oral, faríngeo e laríngeo, permitindo que o médico visualize a abertura da via aérea de forma direta. O sucesso do procedimento depende da identificação correta dos marcos anatômicos.\n\nAlternativa a) Língua: Esta estrutura é visualizada obrigatoriamente durante o início do procedimento. A técnica correta envolve a introdução da lâmina do laringoscópio pelo lado direito da boca, varrendo a língua para a esquerda para abrir espaço visual e permitir o avanço do instrumento até a região da epiglote.\n\nAlternativa b) Epiglote: É o principal ponto de referência para o anestesiologista ou emergencista. Na laringoscopia com lâmina curva (Macintosh), a ponta da lâmina é inserida na valécula para elevar a epiglote indiretamente. Na lâmina reta (Miller), a epiglote é elevada diretamente pela lâmina. Em ambos os casos, ela está presente no campo de visão ideal.\n\nAlternativa c) Cordas vocais: São as estruturas que o médico busca visualizar para garantir a passagem segura da cânula traqueal. Elas aparecem como duas bandas esbranquiçadas e brilhantes que delimitam a entrada da traqueia. A confirmação visual da passagem do tubo entre as cordas vocais é o padrão-ouro para confirmar o posicionamento correto.\n\nAlternativa d) Glote: A glote é o espaço compreendido entre as cordas vocais. Em uma laringoscopia de boa qualidade (classificada como Grau 1 na escala de Cormack-Lehane), a glote é vista em sua totalidade, permitindo a introdução precisa da cânula.\n\nAlternativa e) Esôfago se houver intubação incorreta: Esta é a alternativa correta (o exceto) porque o esôfago situa-se posteriormente à laringe. Na posição ideal de laringoscopia, o foco de visão está direcionado para a parte anterior do pescoço, onde se encontra a glote. Se o esôfago estiver visível no centro do campo de visão, a lâmina do laringoscópio provavelmente foi introduzida de forma excessivamente profunda ou o ângulo de visão está incorreto, fugindo da definição de posição ideal para intubação traqueal. A visualização do esôfago sugere uma falha no posicionamento ou na identificação das estruturas da via aérea.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Intubação"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:29.863Z"
+  },
+  {
+    "id": "AJUDA_cebaaf74-23d1-42a6-95a7-4c4280261380",
+    "originalId": "cebaaf74-23d1-42a6-95a7-4c4280261380",
+    "statement": "Paciente com quadro clínico e diagnóstico definido de abortamento de primeiro trimestre. Pergunta ao médico se pode ser submetida à técnica de esvaziamento uterino somente com aspiração manual intrauterina (AMIU) em vez de uma curetagem simples. Considerando a resposta a ser dada e a explicação que a justifica, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sim, pois, independentemente da idade gestacional, todos os abortamentos de primeiro trimestre podem ser manejados com AMIU.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Não. Pode ser realizado somente se a gestação estiver abaixo de 10 semanas (e não todo o primeiro trimestre), pelo risco de sangramento elevado quando acima dessa idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sim, mas somente se a gestação for menor do que 12 semanas, pelo risco de perfuração uterina com partes ósseas após essa idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Não, pois a técnica de AMIU é reservada apenas para pacientes com suspeita de doença trofoblástica gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A técnica de esvaziamento uterino por Aspiração Manual Intrauterina (AMIU) é considerada o padrão-ouro para o tratamento do abortamento de primeiro trimestre, sendo preferível à curetagem simples por apresentar menores taxas de complicações, como perfuração uterina e sinéquias (Síndrome de Asherman), além de menor tempo hospitalar e, muitas vezes, dispensar anestesia geral. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. Embora o primeiro trimestre tecnicamente se estenda até 12 ou 13 semanas e 6 dias, o uso da AMIU não é recomendado \"independentemente da idade gestacional\" dentro desse período. Existe um limite técnico relacionado ao volume do conteúdo uterino e ao diâmetro das cânulas que torna o procedimento seguro apenas até um determinado ponto.\n\nAlternativa b) Incorreta. O limite de 10 semanas é excessivamente restritivo. Tanto a Organização Mundial da Saúde (OMS) quanto o Ministério da Saúde do Brasil e a FEBRASGO orientam que a AMIU pode ser realizada com segurança em gestações de até 12 semanas.\n\nAlternativa c) Correta. Esta é a alternativa que descreve a prática clínica recomendada. A AMIU é indicada para gestações com idade gestacional de até 12 semanas. Após esse período, o feto começa a apresentar centros de ossificação significativos. Tentar aspirar partes ósseas através das cânulas de AMIU aumenta drasticamente o risco de oclusão do instrumento, esvaziamento incompleto e, principalmente, perfuração da parede uterina pelos fragmentos ósseos durante a manipulação, além de o volume uterino poder exceder a capacidade de vácuo da seringa (60 ml).\n\nAlternativa d) Incorreta. A AMIU não é reservada apenas para a doença trofoblástica gestacional (mola hidatiforme). Ela é a técnica de escolha para o manejo do abortamento incompleto, retido, inevitável ou infectado em ambiente hospitalar, desde que respeitado o limite da idade gestacional. No caso específico da mola, a aspiração é preferível à curetagem pelo menor risco de perfuração em um útero geralmente mais amolecido e friável, mas seu uso é universal na obstetrícia de primeiro trimestre.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:51:29.863Z"
+  }
+]

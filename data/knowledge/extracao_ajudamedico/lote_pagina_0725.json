@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_ca8e2553-e6c2-46e1-9d79-3ac96d109bf5",
+    "originalId": "ca8e2553-e6c2-46e1-9d79-3ac96d109bf5",
+    "statement": "A classificação de Rutherford é utilizada para avaliar a gravidade da doença arterial obstrutiva periférica (DAOP) e divide-se em duas classificações, avaliando separadamente isquemia crônica ameaçadora de membro (ICAM) e isquemia de membro aguda (IMA). Ao se considerar a ICAM, o que caracteriza a classificação Rutherford estágio 3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Claudicação severa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Dor de repouso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lesão trófica pequena.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Necrose extensa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Classificação de Rutherford é uma ferramenta fundamental na propedêutica vascular para estratificar a gravidade da Doença Arterial Obstrutiva Periférica (DAOP) crônica. Ela organiza a apresentação clínica do paciente em categorias que progridem conforme a gravidade da insuficiência arterial. É importante notar que, embora a questão mencione a Isquemia Crônica Ameaçadora de Membro (ICAM), os estágios de 0 a 3 referem-se à claudicação, enquanto os estágios de 4 a 6 definem propriamente a ICAM (antigamente chamada de isquemia crítica).\n\nAbaixo, a divisão detalhada da classificação de Rutherford para DAOP crônica:\n\nCategoria 0: Assintomático.\nCategoria 1: Claudicação leve.\nCategoria 2: Claudicação moderada.\nCategoria 3: Claudicação severa/grave.\nCategoria 4: Dor isquêmica de repouso.\nCategoria 5: Perda tecidual mínima (úlceras isquêmicas ou gangrena focal, geralmente limitada aos artelhos).\nCategoria 6: Perda tecidual maior (gangrena ou úlceras extensas que ultrapassam o nível transmetatarsal, com pé funcionalmente não salvável).\n\nAnálise das alternativas:\n\na) Claudicação severa: CORRETA. Conforme a escala de Rutherford, a categoria 3 é definida pela claudicação intermitente limitante ou severa. O paciente apresenta uma distância de caminhada muito curta e grande impacto na qualidade de vida, mas ainda mantém perfusão suficiente para não apresentar dor em repouso.\n\nb) Dor de repouso: INCORRETA. A dor isquêmica de repouso, que tipicamente piora à noite e melhora com o membro pendente, caracteriza a categoria 4 de Rutherford. Este é o marco inicial clínico da Isquemia Crônica Ameaçadora de Membro (ICAM).\n\nc) Lesão trófica pequena: INCORRETA. Pequenas perdas teciduais, como úlceras que não cicatrizam ou gangrenas digitais restritas, são classificadas como categoria 5 de Rutherford.\n\nd) Necrose extensa: INCORRETA. A necrose extensa ou perda tecidual maior, que compromete a viabilidade funcional do pé e frequentemente demanda amputações maiores, corresponde à categoria 6 de Rutherford, o estágio mais avançado da doença.",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Cirurgia Vascular"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:08.930Z"
+  },
+  {
+    "id": "AJUDA_ca954f77-9625-41ec-ba05-bffe219ca3d4",
+    "originalId": "ca954f77-9625-41ec-ba05-bffe219ca3d4",
+    "statement": "Em relação à produção de testosterona, androstenediona e estradiol após a menopausa, assinale a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A produção de testosterona decresce aproximadamente 25% após a menopausa. A maior parte da androstenediona pós-menopáusica é derivada da glândula suprarrenal, com apenas uma pequena quantidade secretada pelo ovário. O nível circulante de estradiol após a menopausa é de, aproximadamente, 10-20pg/mL, e sua maior parte é derivada da conversão periférica da estrona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A produção de testosterona aumenta em aproximadamente 50% após a menopausa. A maior parte da androstenediona pós-menopáusica é derivada dos ovários, e o nível circulante de estradiol após a menopausa é praticamente indetectável, sendo 5% derivado da conversão periférica da estrona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A produção de testosterona praticamente não se modifica após a menopausa, por ser sempre baixa, sendo sua maior parte derivada da glândula suprarrenal, com apenas uma pequena quantidade secretada pelo ovário. A maior parte da androstenediona pós-menopáusica é derivada dos ovários. O nível circulante de estradiol após a menopausa é de, aproximadamente, 10-20pg/mL, e sua maior parte é derivada da conversão periférica da estrona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A produção de testosterona aumenta em aproximadamente 25% após a menopausa. A maior parte da androstenediona pós-menopáusica é derivada dos ovários, e o nível circulante de estradiol após a menopausa é praticamente indetectável, sendo 5% derivado da conversão periférica da estrona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender as alterações hormonais na pós-menopausa, é fundamental analisar a mudança na fonte de produção e na concentração dos esteroides sexuais após a falência folicular ovariana.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Esta alternativa descreve com precisão a fisiologia endócrina do climatério. Após a menopausa, a produção total de testosterona circulante sofre uma redução de aproximadamente 25% em comparação aos níveis pré-menopáusicos. Embora o estroma ovariano continue produzindo testosterona sob estímulo do LH elevado, a queda global é observada. Quanto à androstenediona, seus níveis caem cerca de 50%, e a glândula suprarrenal assume o papel de principal fonte desse hormônio, com o ovário contribuindo minimamente. O estradiol apresenta uma queda drástica, situando-se em níveis baixos, geralmente entre 10 e 20 pg/mL. Nessa fase, o estradiol circulante não provém da secreção direta do ovário, mas sim da conversão periférica da estrona (E1).\n\nAlternativa B (Incorreta): A afirmação de que a testosterona aumenta 50% é falsa; ocorre, na verdade, uma redução. Além disso, a maior parte da androstenediona na pós-menopausa provém das suprarrenais, e não dos ovários. O estradiol, embora em níveis muito baixos, ainda é detectável em exames laboratoriais sensíveis.\n\nAlternativa C (Incorreta): Embora a testosterona continue sendo secretada pelo estroma ovariano, dizer que sua produção \"praticamente não se modifica\" é tecnicamente incorreto, pois há um decréscimo médio de 25%. O erro principal desta alternativa reside em afirmar que a maior parte da androstenediona pós-menopáusica deriva dos ovários, quando, na realidade, cerca de 80% a 90% dela passa a ser de origem adrenal.\n\nAlternativa D (Incorreta): A testosterona não aumenta após a menopausa. A alternativa repete os erros conceituais sobre a origem da androstenediona (que é predominantemente adrenal nesta fase) e sobre a detectabilidade e origem do estradiol circulante.\n\nResumo dos pontos-chave para provas:\n\n1. Estrogênio predominante: Na pós-menopausa, o estrogênio principal passa a ser a estrona (E1), formada pela aromatização periférica da androstenediona (principalmente no tecido adiposo).\n2. Estradiol (E2): Os níveis caem para a faixa de 10-20 pg/mL e derivam da conversão da estrona.\n3. Androstenediona: Redução de 50% nos níveis sistêmicos; a suprarrenal torna-se a fonte primária.\n4. Testosterona: Redução de cerca de 25%. O ovário pós-menopáusico, apesar de não ter folículos, ainda possui estroma funcional capaz de secretar androgênios.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:08.930Z"
+  },
+  {
+    "id": "AJUDA_ca993e8a-cc41-4d2a-b128-0b2d512851c5",
+    "originalId": "ca993e8a-cc41-4d2a-b128-0b2d512851c5",
+    "statement": "Um indivíduo fenotipicamente feminino de 18 anos comparece ao ambulatório de ginecologia com queixa de amenorreia primária. A ultrassonografia realizada mostra ausência de útero e vagina encurtada. Entre as hipóteses diagnósticas, as que podem explicar o quadro são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "agenesia mülleriana e disgenesia gonadal pura",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "insensibilidade androgênica e agenesia mülleriana",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "disgenesia gonadal pura e hipoplasia de células de Sertoli",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "hipoplasia de células de Sertoli e insensibilidade androgênica",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, devemos focar no achado clínico principal: a ausência de útero em um indivíduo com fenótipo feminino e amenorreia primária. Na propedêutica da amenorreia primária, quando o útero está ausente ao exame de imagem, os dois principais diagnósticos diferenciais são a Agenesia Mülleriana e a Síndrome de Insensibilidade Androgênica Completa.\n\nAlternativa (a) Incorreta. A agenesia mülleriana (Síndrome de Mayer-Rokitansky-Küster-Hauser) explica perfeitamente o quadro, pois nela ocorre uma falha no desenvolvimento dos ductos de Müller. No entanto, na disgenesia gonadal pura (como na Síndrome de Swyer, 46,XY), as gônadas não são funcionais (gônadas em fita) e não produzem o hormônio antimülleriano (HAM). Sem a presença do HAM, os ductos de Müller se desenvolvem normalmente, o que significa que essas pacientes possuem útero e vagina normais, divergindo do caso clínico.\n\nAlternativa (b) Correta. Estas são as duas condições que cursam com fenótipo feminino e ausência de útero. Na agenesia mülleriana (46,XX), os ovários são normais, mas há uma falha anatômica na formação do útero e dos 2/3 superiores da vagina. Na insensibilidade androgênica completa (46,XY), o indivíduo possui testículos que produzem HAM, provocando a regressão dos ductos de Müller (ausência de útero). Por haver resistência total aos hormônios masculinos, a genitália externa desenvolve-se como feminina.\n\nAlternativa (c) Incorreta. Como já mencionado, na disgenesia gonadal pura o útero está presente. Na hipoplasia de células de Sertoli, haveria uma deficiência na produção ou secreção do HAM durante a fase embrionária. Sem HAM suficiente, os ductos de Müller não regridem, resultando na presença de útero e trompas no indivíduo, o que invalida a hipótese para este caso.\n\nAlternativa (d) Incorreta. Embora a insensibilidade androgênica se encaixe na descrição, a hipoplasia de células de Sertoli levaria à persistência dos ductos müllerianos. Portanto, o paciente apresentaria útero na ultrassonografia.\n\nResumo do raciocínio:\n1. Ausência de útero = Algum fator impediu o desenvolvimento dos ductos de Müller (HAM presente) ou os ductos não se formaram por defeito genético.\n2. HAM presente em fenótipo feminino ocorre na Insensibilidade Androgênica (46,XY).\n3. Defeito na formação dos ductos ocorre na Agenesia Mülleriana (46,XX).",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Anatomia e Embriologia do Trato Genital Feminino",
+      "Amenorreia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:08.930Z"
+  },
+  {
+    "id": "AJUDA_caa46a06-c0bc-46c3-8e56-938efe092222",
+    "originalId": "caa46a06-c0bc-46c3-8e56-938efe092222",
+    "statement": "Uma criança do sexo feminino, com 1 ano e 2 meses de vida, acometida por anemia falciforme, foi levada ao pronto‑socorro por palidez súbita há 1 hora e letargia. Estava resfriada há 4 dias. Exame físico: descorada 3+/4+; hipoativa; FC 160 bpm; PA 68/30 mmHg; e esplenomegalia. \n\nCom base nesse caso clínico hipotético, assinale a opção que apresenta a hipótese diagnóstica e a conduta adequada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "crise álgica; administração de morfina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "crise aplásica, transfusão de concentrado de hemácias",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "crise aplásica, imunoglobulina",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "sequestro esplênico, transfusão de concentrado de hemácias",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "sequestro esplênico, morfina",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito é clássico de uma das emergências pediátricas mais graves na anemia falciforme: o sequestro esplênico agudo. A paciente apresenta a tríade característica de queda súbita da hemoglobina (palidez e letargia), sinais de choque hipovolêmico (taquicardia e hipotensão) e aumento agudo do baço (esplenomegalia).\n\nAnálise das alternativas:\n\na) Incorreta. A crise álgica (vaso-oclusiva) é a manifestação mais comum da anemia falciforme e caracteriza-se por dor severa, geralmente em extremidades, tórax ou abdome. Embora possa haver palidez crônica, ela não evolui com choque circulatório súbito e esplenomegalia aguda. A morfina é usada para o manejo da dor, não para instabilidade hemodinâmica.\n\nb) Incorreta. A crise aplásica é causada, geralmente, pela infecção pelo Parvovírus B19, resultando na parada transitória da produção de hemácias na medula óssea. Ela cursa com queda súbita da hemoglobina e reticulocitopenia. No entanto, na crise aplásica, o baço não aumenta de tamanho; pelo contrário, ele pode até diminuir devido à menor oferta de células.\n\nc) Incorreta. Além de a crise aplásica não justificar a esplenomegalia, o tratamento de suporte é a transfusão de hemácias, e não a imunoglobulina.\n\nd) Correta. O sequestro esplênico ocorre quando uma grande quantidade de sangue fica retida subitamente no baço. Isso causa uma queda abrupta dos níveis de hemoglobina, levando ao choque hipovolêmico e ao aumento rápido do volume esplênico (esplenomegalia). É uma condição comum em crianças pequenas (geralmente entre 3 meses e 5 anos) que ainda possuem baço funcionante. O tratamento imediato envolve a expansão volêmica e a transfusão de concentrado de hemácias para restaurar a volemia e a capacidade de transporte de oxigênio.\n\ne) Incorreta. Embora o diagnóstico de sequestro esplênico esteja correto nesta alternativa, a conduta está errada. A morfina é um analgésico opioide e não possui papel no tratamento do choque ou na reversão do sequestro sanguíneo. O foco deve ser a reposição volêmica e transfusional urgente.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Anemias",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:08.930Z"
+  },
+  {
+    "id": "AJUDA_caada0cc-506d-4119-86b0-ee9a250ef7b4",
+    "originalId": "caada0cc-506d-4119-86b0-ee9a250ef7b4",
+    "statement": "Um paciente idoso com história de dispneia progressiva, ortopneia e edemas em membros inferiores é avaliado com crepitações pulmonares e turgência jugular. Organize o diagnóstico sindrômico de insuficiência cardíaca, segundo critérios validados para prática clínica:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Utilize somente BNP elevado como critério isolado de confirmação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Baseie-se em um escore de Duke modificado para coronariopatia crônica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Confirme por tomografia de tórax com contraste em todos os casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aplique critérios de Framingham e/ou pontuação de Boston para definir o diagnóstico clínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Apoie o diagnóstico na estimativa clínica subjetiva do examinador.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descrito — dispneia progressiva, ortopneia, edema de membros inferiores, crepitações pulmonares e turgência jugular — compõe a apresentação clássica da insuficiência cardíaca (IC), com sinais de congestão sistêmica e pulmonar. O diagnóstico da IC é fundamentado na integração de dados clínicos e, para sistematizar essa avaliação, utilizam-se critérios validados.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O BNP (peptídeo natriurético tipo B) é um excelente marcador biológico, especialmente por seu alto valor preditivo negativo (útil para excluir IC em quadros de dispneia aguda). No entanto, ele não deve ser utilizado como critério isolado de confirmação, pois pode elevar-se em outras condições (como insuficiência renal ou fibrilação atrial), e o diagnóstico de IC exige a presença de sintomas e sinais clínicos compatíveis.\n\nAlternativa b: Incorreta. Os critérios de Duke modificados são ferramentas diagnósticas específicas para a endocardite infecciosa, não sendo aplicados para a definição sindrômica de insuficiência cardíaca.\n\nAlternativa c: Incorreta. A tomografia de tórax não é o exame de escolha para o diagnóstico de IC. O exame de imagem padrão-ouro para a avaliação inicial e classificação da IC (fração de ejeção, função valvar e análise estrutural) é o ecocardiograma transtorácico. A tomografia pode ser utilizada em casos específicos para avaliação de etiologias coronarianas ou pericárdicas, mas não em todos os casos.\n\nAlternativa d: Correta. Os Critérios de Framingham e o Escore de Boston são as ferramentas clássicas e validadas para o diagnóstico clínico de IC. Framingham, por exemplo, estabelece o diagnóstico na presença de 2 critérios maiores (ex.: turgência jugular, crepitações, edema agudo de pulmão) ou 1 critério maior associado a 2 critérios menores (ex.: edema de tornozelo, dispneia aos esforços, tosse noturna).\n\nAlternativa e: Incorreta. Embora a experiência do médico seja relevante, o diagnóstico sindrômico deve ser pautado em critérios objetivos e validados pela literatura para garantir maior acurácia e padronização terapêutica, evitando erros inerentes à subjetividade pura.",
+    "exam": "IAMSPE",
+    "year": 2026,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/035cb360fc6ad3fc12808be3f7d2a28efdcfe1d0960034418ca67785d0e343e8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b1f9fe8ffc8ca3711de8941bebe7e36f88118be17dd8a02811fecde021ab4caa.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:08.930Z"
+  },
+  {
+    "id": "AJUDA_cab3f25d-3054-4406-8457-487ae1939246",
+    "originalId": "cab3f25d-3054-4406-8457-487ae1939246",
+    "statement": "Escolar, sete anos, previamente saudável, residente em área rural, é internado com relato materno de há quatro meses com febre intermitente, emagrecimento e adinamia. Exame físico: emagrecido, hipocorado ++/4+, anictérico, eupneico, perfusão capilar algo lentificada. ACV e AR sem alterações. Abdome: globoso, edema de parede, fígado: 8 cm do RCD, baço: 10 cm do RCE. Edema de MMII ++/4+. Exames laboratoriais de internação: pancitopenia, enzimas hepáticas elevadas, albumina diminuída, hiperglobulinemia, principalmente às custas da imunoglobulina G. A sorologia e o mielograma confirmam o diagnóstico de leishmaniose visceral. O tratamento indicado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fluconazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Albendazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Anfotericina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Vancomicina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Metronidazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente com leishmaniose visceral (calazar), caracterizada pela tríade clássica de febre intermitente e prolongada, emagrecimento e hepatoesplenomegalia volumosa. Os achados laboratoriais de pancitopenia (redução de hemácias, leucócitos e plaquetas), hipoalbuminemia (gerando edema de parede abdominal e de membros inferiores) e hiperglobulinemia policlonal (aumento de anticorpos IgG em resposta à infecção) reforçam o diagnóstico, que foi confirmado por sorologia e mielograma.\n\nAlternativa A: Incorreta. O fluconazol é um antifúngico indicado para o tratamento de micoses sistêmicas ou superficiais, como candidíase, criptococose e coccidioidomicose. Ele não apresenta eficácia contra o protozoário do gênero Leishmania.\n\nAlternativa B: Incorreta. O albendazol é um medicamento anti-helmíntico de amplo espectro, utilizado para o tratamento de infecções causadas por vermes intestinais (como ascaridíase e ancilostomose) e teciduais (como cisticercose). Não possui ação terapêutica na leishmaniose visceral.\n\nAlternativa C: Correta. A anfotericina B (especialmente na sua formulação lipossomal) é uma das principais opções terapêuticas para a leishmaniose visceral no Brasil. Ela é indicada como primeira escolha em situações específicas, como pacientes com menos de 1 ano ou mais de 50 anos, portadores de HIV/AIDS, pacientes com insuficiência renal, hepática ou cardíaca, e em casos graves. O medicamento atua ligando-se ao ergosterol da membrana do parasita, provocando sua lise.\n\nAlternativa D: Incorreta. A vancomicina é um antibiótico da classe dos glicopeptídeos, indicado exclusivamente para o tratamento de infecções bacterianas graves causadas por microrganismos gram-positivos, como o Staphylococcus aureus resistente à meticilina (MRSA). Não possui atividade contra parasitas.\n\nAlternativa E: Incorreta. O metronidazol é um antibiótico e antiprotozoário eficaz contra bactérias anaeróbias e alguns protozoários específicos (como Trichomonas vaginalis, Giardia lamblia e Entamoeba histolytica), mas não possui atividade farmacológica contra as amastigotas de Leishmania.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Hepatoesplenomegalias Infecciosas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:08.930Z"
+  },
+  {
+    "id": "AJUDA_cab80488-9183-459d-9ad0-0fd33d290f0a",
+    "originalId": "cab80488-9183-459d-9ad0-0fd33d290f0a",
+    "statement": "A definição CORRETA de “Coeficiente de Prevalência” em epidemiologia é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coeficiente de Prevalência é o número total de casos de uma doença, existentes num determinado local e período.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Coeficiente de Prevalência é a capacidade do agente de produzir sintomas e sinais (doença).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Coeficiente de Prevalência é a relação entre o número de casos de um evento e uma determinada população.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Coeficiente de Prevalência é a capacidade do agente de penetrar, se desenvolver e/ou se multiplicar em um hospedeiro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para entender a questão, é fundamental diferenciar conceitos básicos de bioestatística e epidemiologia, especificamente a distinção entre números absolutos e indicadores de saúde (coeficientes ou taxas), além de conceitos de cadeia epidemiológica.\n\nAlternativa a) Incorreta. Esta alternativa descreve a prevalência como um número absoluto (frequência absoluta), ou seja, apenas a contagem total de casos existentes. Para que seja considerado um coeficiente ou taxa, o valor deve ser expresso de forma relativa, relacionando o número de casos a uma população de referência.\n\nAlternativa b) Incorreta. O enunciado descreve o conceito de patogenicidade. A patogenicidade é a capacidade de um agente etiológico, uma vez instalado no hospedeiro, de produzir sintomas e sinais da doença em uma proporção dos indivíduos infectados.\n\nAlternativa c) Correta. Um coeficiente (ou taxa) é, por definição, uma medida de morbidade que estabelece a relação entre o número de casos de um determinado evento (numerador) e a população exposta ao risco de apresentar tal evento (denominador). O coeficiente de prevalência indica a proporção de indivíduos de uma população que apresentam a doença em um ponto ou período específico de tempo, sendo calculado pela divisão do total de casos (novos e antigos) pela população total.\n\nAlternativa d) Incorreta. Esta é a definição de infectividade. A infectividade refere-se à facilidade com que um agente penetra, sobrevive e se multiplica no hospedeiro, independentemente de causar ou não sinais clínicos ou doença grave.",
+    "exam": "HOB",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f5759d09fe55934dcb874629068c2bc4a9f5180bd9f1cc7a25e029095d63667.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c5091d286cb7d71ae75dc33206413ea6fc73dc1a3911e78940815f3957b31000.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:08.930Z"
+  },
+  {
+    "id": "AJUDA_cab95195-5f02-4fb9-a03c-95bdb576417b",
+    "originalId": "cab95195-5f02-4fb9-a03c-95bdb576417b",
+    "statement": "Em um estudo clínico (Open Forum Infect Dis. 2019 Mar 15;6(4):ofz132) a acurácia diagnóstica do teste urinário LF - LAM foi investigada para a detecção de tuberculose ativa entre 280 pacientes portadores do vírus HIV, com sintomas sugestivos da doença. Entre os 280, 72 (25,7%) tiveram o diagnóstico pela doença confirmado, e a sensibilidade do LF-LAM para detectá-los foi 75% com especificidade de 76%.\nConsiderando esses dados, assinale a alternativa que melhor comenta sobre a performance deste teste diagnóstico.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O elevado valor preditivo negativo do teste (89,8%) indica a ocorrência elevada de resultados falso negativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O baixo valor preditivo positivo do teste (51,9%) indica a ocorrência considerável de resultados falso negativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O elevado valor preditivo negativo do teste (89,8%) indica a ocorrência baixa de resultados falso positivos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O baixo valor preditivo positivo do teste (51,9%) indica a ocorrência considerável de resultados falso positivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para avaliar o desempenho de um teste diagnóstico em uma população clínica, é fundamental compreender a relação entre os valores preditivos e os tipos de erro que o teste comete:\n\nO Valor Preditivo Positivo (VPP) representa a proporção de indivíduos com teste positivo que realmente têm a doença (Verdadeiros Positivos / Total de Testes Positivos). Se o VPP é baixo, significa que muitos dos testes positivos são, na verdade, falsos positivos.\n\nO Valor Preditivo Negativo (VPN) representa a proporção de indivíduos com teste negativo que realmente não têm a doença (Verdadeiros Negativos / Total de Testes Negativos). Se o VPN é alto, significa que ocorrem poucos resultados falsos negativos.\n\nCom base nos dados apresentados (prevalência de 25,7%, sensibilidade de 75% e especificidade de 76%), temos um VPP de 51,9% e um VPN de 89,8%.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. Um VPN elevado (89,8%) indica exatamente o oposto: a ocorrência de resultados falsos negativos é baixa, conferindo grande confiabilidade aos testes que resultam negativos.\n\nAlternativa b: Incorreta. O VPP é influenciado pela proporção de falsos positivos no total de testes positivos. Um baixo VPP reflete um número elevado de falsos positivos, enquanto os falsos negativos afetam o VPN e a sensibilidade.\n\nAlternativa c: Incorreta. O VPN reflete a probabilidade de um teste negativo ser verdadeiro, relacionando-se com a ocorrência de falsos negativos (que é baixa). A ocorrência de falsos positivos é refletida no VPP e na especificidade.\n\nAlternativa d: Correta. Um VPP de apenas 51,9% demonstra que quase metade dos pacientes que apresentaram teste positivo não possuíam a doença (cerca de 48,1% eram falso positivos). Portanto, o baixo VPP evidencia uma ocorrência considerável de resultados falso positivos na população estudada.\n\nGabarito: Letra d.",
+    "exam": "USP-RP",
+    "year": 2026,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "HIV",
+      "Estatística Médica",
+      "Testes Diagnósticos",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eee878e2a7f1f3e7f0cb86824438adbb7eab1c90d9287a993ccaca49f5108289.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4a7bd9952c9ceae639a20c9f4288cd0e078f24e89f333512f6e226f47c95fdbd.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:08.930Z"
+  },
+  {
+    "id": "AJUDA_cabc98f9-84cd-4a6e-9d27-dfa8bb1f0a65",
+    "originalId": "cabc98f9-84cd-4a6e-9d27-dfa8bb1f0a65",
+    "statement": "Doenças Relacionadas ao Trabalho (DRT) ocorrem devido a fatores de risco presentes no ambiente laboral, abrangendo desde lesões físicas e respiratórias até transtornos mentais. A respeito das DRT, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Só podem ser reconhecidas quando existe nexo causal indireto e exclusivo com o trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "São de notificação compulsória exclusivamente quando envolvem agravos biológicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O Nexo Técnico Epidemiológico Previdenciário (NTEP) utiliza relação entre atividade econômica e agravo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A Comunicação de Acidente de Trabalho (CAT) só pode ser emitida pelo médico do trabalho.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Não existem DRT de origem multifatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa a) Incorreta. O nexo causal nas Doenças Relacionadas ao Trabalho não precisa ser exclusivo. De acordo com a Classificação de Schilling, o trabalho pode ser a causa necessária (Schilling I), um fator contributivo, mas não necessário (Schilling II), ou um fator desencadeante/agravante de uma doença preexistente (Schilling III). Portanto, o nexo pode ser direto ou indireto (concausalidade).\n\nAlternativa b) Incorreta. A lista de doenças e agravos de notificação compulsória relacionados ao trabalho é ampla. Ela inclui acidentes de trabalho (graves, com menores, fatais), intoxicações exógenas, perda auditiva induzida pelo ruído (PAIR), LER/DORT, transtornos mentais, pneumoconioses e câncer relacionado ao trabalho, abrangendo diversos riscos além dos biológicos.\n\nAlternativa c) Correta. O Nexo Técnico Epidemiológico Previdenciário (NTEP) é uma ferramenta utilizada pela perícia médica do INSS. Ele estabelece uma presunção de causalidade entre a doença e o trabalho ao cruzar o código da doença (CID-10) com o código da atividade econômica da empresa (CNAE). Se houver correlação estatística entre o setor econômico e a patologia, o nexo é configurado automaticamente, cabendo à empresa o ônus de provar o contrário.\n\nAlternativa d) Incorreta. A emissão da Comunicação de Acidente de Trabalho (CAT) não é exclusiva do médico do trabalho. Ela deve ser emitida preferencialmente pela empresa, mas, na falta desta, pode ser preenchida pelo próprio trabalhador, por seus dependentes, pelo sindicato da categoria, por autoridades públicas ou por qualquer médico que tenha prestado assistência ao segurado.\n\nAlternativa e) Incorreta. A grande maioria das Doenças Relacionadas ao Trabalho é de origem multifatorial. No modelo de Schilling II (ex.: hipertensão arterial e doenças coronarianas) e Schilling III (ex.: asma e transtornos mentais), o trabalho é considerado um fator de risco ou um agravante que se soma a outros fatores genéticos, biológicos e de estilo de vida.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:08.930Z"
+  },
+  {
+    "id": "AJUDA_cabf13ed-73ce-4f37-b5a0-80b2dc41f6d0",
+    "originalId": "cabf13ed-73ce-4f37-b5a0-80b2dc41f6d0",
+    "statement": "Um médico deseja analisar os casos novos de determinada doença, em uma população dinâmica, que varia no tempo, em que se permite o ingresso ou a saída de novos indivíduos após o início do acompanhamento. A medida de frequência de doença mais adequada será a",
+    "options": [
+      {
+        "id": "A",
+        "text": "incidência acumulada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "densidade de incidência.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "prevalência no ponto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "prevalência no período.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ESTUDO DO ENUNCIADO\nO ponto central da questão é a identificação de casos novos em uma população dinâmica. Em epidemiologia, o termo \"casos novos\" refere-se à incidência. Uma população dinâmica é aquela que não é fechada, ou seja, permite a entrada de novos membros e a saída de participantes (por perda de seguimento, morte por outras causas ou mudança) ao longo do tempo.\n\nRESPOSTA COMENTADA\n\nAlternativa a: Incorreta. A incidência acumulada (ou proporção de incidência) é calculada dividindo o número de casos novos pelo total de pessoas em risco no início do acompanhamento. Ela parte do pressuposto de que todos os indivíduos são seguidos pelo mesmo período de tempo. Por isso, ela é ideal para populações fechadas ou coortes fixas. Em uma população dinâmica, na qual as pessoas entram e saem em momentos diferentes, essa medida perde a precisão.\n\nAlternativa b: Correta. A densidade de incidência (também chamada de taxa de incidência) é a medida mais adequada para populações dinâmicas. O seu diferencial está no denominador: em vez de usar o número total de pessoas, utiliza-se a soma do tempo que cada indivíduo permaneceu sob risco e foi efetivamente observado, unidade conhecida como pessoa-tempo. Isso permite que o cálculo considere exatamente a contribuição de cada sujeito, independentemente de quando ele entrou ou saiu do acompanhamento.\n\nAlternativa c: Incorreta. A prevalência no ponto (ou prevalência pontual) mede a proporção da população que tem a doença em um momento exato e específico (um \"flash\" da situação atual). Ela engloba tanto os casos novos quanto os casos antigos que ainda estão doentes. Como o enunciado pede especificamente a análise de casos novos, as medidas de prevalência não são adequadas.\n\nAlternativa d: Incorreta. A prevalência no período mede a proporção de pessoas que tiveram a doença em algum momento dentro de um intervalo de tempo determinado (por exemplo, a prevalência de asma no último ano). Assim como a prevalência pontual, ela mistura casos novos e antigos, não sendo a ferramenta correta para avaliar a velocidade de surgimento de novos eventos em uma população com alta rotatividade.\n\nGabarito: Letra (b).",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:49:08.930Z"
+  }
+]

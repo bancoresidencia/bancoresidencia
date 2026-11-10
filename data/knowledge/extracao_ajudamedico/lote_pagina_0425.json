@@ -1,0 +1,483 @@
+[
+  {
+    "id": "AJUDA_7646c5bf-eb20-4892-bab0-778c7806f2e5",
+    "originalId": "7646c5bf-eb20-4892-bab0-778c7806f2e5",
+    "statement": "Uma paciente de 30 anos de idade, com história de lúpus eritematoso sistêmico (LES), compareceu à consulta queixando febre, dor torácica pleurítica e dispneia há dois dias. Ao exame físico, apresentou PA = 110 mmHg X 70 mmHg, FC = 105 bpm, FR = 24 irpm, SatO2 = 93% em ar ambiente, ausculta pulmonar com atrito pleural à esquerda, gasometria arterial = pH 7,44, PaCO2 = 33 mmHg, PaO2= 68 mmHg e D-dímero elevado. Nesse caso, o próximo passo diagnóstico mais indicado é",
+    "options": [
+      {
+        "id": "A",
+        "text": "solicitar tomografia computadorizada de tórax com contraste.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "realizar ecocardiograma transtorácico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "realizar angiotomografia pulmonar para descartar embolia pulmonar.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "solicitar radiografia de tórax e repetir gasometria arterial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro agudo de dor torácica pleurítica, dispneia, taquicardia (105 bpm) e taquipneia (24 irpm), associado a hipoxemia (PaO2 68 mmHg e SatO2 93%). O fato de ter Lúpus Eritematoso Sistêmico (LES) é um fator de risco importante para fenômenos tromboembólicos, seja pela própria inflamação crônica ou pela associação com a Síndrome do Anticorpo Antifosfolipídio (SAAF). \n\nDiante da suspeita de Tromboembolismo Pulmonar (TEP), utilizamos critérios clínicos (como o Escore de Wells). Nesta paciente, a taquicardia e a alta probabilidade clínica (pela gravidade e fatores de risco) já indicariam investigação. O D-dímero elevado possui alto valor preditivo negativo, mas quando está aumentado em um cenário de moderada a alta suspeita, reforça a necessidade de um exame de imagem confirmatório. Como a paciente está hemodinamicamente estável (PA 110x70 mmHg), o padrão-ouro para o diagnóstico é a angiotomografia de tórax.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\na) Incorreta. Embora a tomografia com contraste seja o método utilizado, o termo técnico correto e específico para a avaliação da vasculatura pulmonar em busca de trombos é \"angiotomografia pulmonar\". Em provas de residência, deve-se optar pelo termo que descreve o protocolo específico para o diagnóstico de TEP.\n\nb) Incorreta. O ecocardiograma transtorácico é extremamente útil em pacientes com instabilidade hemodinâmica (choque ou hipotensão grave) para avaliar sinais de sobrecarga aguda do ventrículo direito à beira do leito. Na paciente estável, ele não tem sensibilidade suficiente para confirmar ou descartar TEP de forma definitiva.\n\nc) Correta. A angiotomografia de artérias pulmonares é o exame de escolha para o diagnóstico de TEP em pacientes estáveis. Ela permite a visualização direta de falhas de enchimento nos ramos da artéria pulmonar, confirmando a patologia de forma rápida e segura.\n\nd) Incorreta. A radiografia de tórax geralmente é normal no TEP ou apresenta sinais inespecíficos (como atelectasias laminares ou derrame pleural). Ela é útil para descartar outros diagnósticos (como pneumonia ou pneumotórax), mas não confirma TEP. Repetir a gasometria não acrescenta valor diagnóstico, pois a alteração (alcalose respiratória com hipoxemia) já foi identificada e é compatível com o quadro suspeito.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:40.973Z"
+  },
+  {
+    "id": "AJUDA_764c170d-69a3-4299-b285-2e36113d9b6b",
+    "originalId": "764c170d-69a3-4299-b285-2e36113d9b6b",
+    "statement": "Pode-se afirmar, em relação aos subtipos histopatológicos do câncer de pulmão, que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "a identificação por imunohistoquimica de diferenciação neuroendócrina afasta o diagnóstico de carcinoma de pequenas células",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "o carcinoma escamoso de pulmão pode ser diferenciado do carcinoma escamoso de outros sítios por análise imunohistoquímica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "a distinção entre adenocarcinoma e carcinoma escamoso não tem impacto no tratamento dos pacientes com doença avançada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "os carcinomas de pequenas células e os carcinomas escamosos de pulmão são os mais associados ao tabagismo",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa (a) Incorreta: O carcinoma de pequenas células é, por definição, um tumor neuroendócrino de alto grau. Portanto, a identificação de marcadores de diferenciação neuroendócrina pela imuno-histoquímica, como a sinaptofisina, a cromogranina e o CD56, é o esperado para confirmar o diagnóstico, e não para afastá-lo.\n\nAlternativa (b) Incorreta: Não existem, até o momento, marcadores imuno-histoquímicos capazes de diferenciar com segurança um carcinoma escamoso primário do pulmão de um carcinoma escamoso metastático de outros sítios (como cabeça e pescoço, esôfago ou colo uterino). Ambos costumam expressar os mesmos marcadores, como p40, p63 e citoqueratinas 5/6. Essa distinção deve ser feita com base na correlação clínica e em exames de imagem.\n\nAlternativa (c) Incorreta: A distinção é fundamental para a conduta terapêutica na doença avançada. Pacientes com histologia escamosa têm contraindicação relativa ao uso de Bevacizumab (pelo alto risco de hemoptise grave), e o quimioterápico Pemetrexed é ineficaz nesse subtipo. Além disso, a pesquisa de mutações driver para terapia-alvo (como EGFR e ALK) é indicada prioritariamente para adenocarcinomas.\n\nAlternativa (d) Correta: Historicamente, o carcinoma escamoso e o carcinoma de pequenas células são os subtipos que apresentam a associação mais robusta e direta com a carga tabágica. Ambos tendem a ter localização central (próxima aos brônquios principais) e são raramente encontrados em pacientes que nunca fumaram. O adenocarcinoma, embora também associado ao cigarro, é o tipo mais comum em não fumantes.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Neoplasias Pulmonares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:40.973Z"
+  },
+  {
+    "id": "AJUDA_76635adc-ad28-4af6-a02a-0f2177e2c906",
+    "originalId": "76635adc-ad28-4af6-a02a-0f2177e2c906",
+    "statement": "Paciente em pós-operatório imediato de gastrectomia total por neoplasia é admitido na sala de pacientes em recuperação pós-cirúrgica, inicialmente em condições estáveis. Deu entrada com dispositivo venoso em subclávia direita, dreno abdominal com saída de conteúdo hemático, totalizando 350ml em 12h. Os sinais aferidos são: FR 34ipm, saturação de O2= 86% e MV abolido em HTD, FC=112bpm, PA: 80/50mmHg, tempo de enchimento capilar = 5 segundos. Diante do exposto, o diagnóstico mais provável é",
+    "options": [
+      {
+        "id": "A",
+        "text": "choque obstrutivo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "choque hipovolêmico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "choque vasoplégico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "choque misto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "choque distributivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é fundamental correlacionar os sinais clínicos apresentados com os procedimentos realizados no paciente. O paciente apresenta um quadro de choque (hipotensão, taquicardia e tempo de enchimento capilar prolongado), mas a chave para o diagnóstico está no exame físico respiratório e no histórico recente.\n\nO paciente foi submetido a uma punção da veia subclávia direita (dispositivo venoso) e apresenta, no pós-operatório, dispneia importante (FR 34 ipm), hipoxemia (SatO2 86%) e murmúrio vesicular abolido no hemitórax direito (HTD). Essa combinação em um paciente chocado sugere fortemente um pneumotórax hipertensivo ou um hemotórax maciço, ambos complicações possíveis da punção venosa central.\n\nAnálise das alternativas:\n\na) Choque obstrutivo: CORRETA. O choque obstrutivo ocorre quando há uma barreira física ao preenchimento ventricular ou à ejeção de sangue. No caso do pneumotórax hipertensivo, o acúmulo de ar no espaço pleural desvia o mediastino e comprime as veias cavas, impedindo o retorno venoso ao coração. Isso reduz drasticamente o débito cardíaco, levando à hipotensão e aos sinais de má perfusão observados. A ausência de murmúrio vesicular no mesmo lado da punção subclávia é o sinal patognomônico para essa suspeita.\n\nb) Choque hipovolêmico: INCORRETA. Embora o paciente apresente saída de conteúdo hemático pelo dreno abdominal (350 mL em 12h), esse volume isoladamente não justifica um quadro de choque tão grave em um adulto (corresponde a uma perda pequena, cerca de 30 mL/h). Além disso, a hipovolemia pura não explica o murmúrio vesicular abolido e a hipoxemia súbita com sinais de desvio funcional.\n\nc) Choque vasoplégico: INCORRETA. O choque vasoplégico é um subtipo de choque distributivo, comum em estados inflamatórios sistêmicos ou após circulação extracorpórea, caracterizado por baixa resistência vascular sistêmica. Não justifica o achado de pulmão mudo à direita.\n\nd) Choque misto: INCORRETA. O choque misto ocorre quando há mais de uma etiologia simultânea (ex.: séptico e hipovolêmico). Embora o paciente tenha tido uma perda sanguínea leve, o quadro clínico é dominado pela obstrução mecânica (pneumotórax/hemotórax), tornando o diagnóstico de choque obstrutivo o mais preciso e imediato.\n\ne) Choque distributivo: INCORRETA. Exemplificado pela sepse, anafilaxia ou choque neurogênico, caracteriza-se por vasodilatação periférica excessiva. O quadro clínico do paciente, com insuficiência respiratória aguda e antecedente de punção profunda, aponta diretamente para uma causa mecânica/obstrutiva.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Choque",
+      "Tromboembolismo Pulmonar (TEP)",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:40.973Z"
+  },
+  {
+    "id": "AJUDA_766b745c-8ad3-4044-bf73-8a098ea7261b",
+    "originalId": "766b745c-8ad3-4044-bf73-8a098ea7261b",
+    "statement": "As mulheres, de maneira geral, têm risco aumentado e sofrimento psicossocial após o diagnóstico de câncer. Isso se deve, em parte, não apenas à doença e à terapia agressiva associada, mas também à etapa de vida no momento do diagnóstico e pelas especificidades do gênero feminino.\nNesse momento, a postura de cuidado recomendada para o médico ou ginecologista, ao lidar com pacientes diagnosticados com câncer ginecológico, é a de",
+    "options": [
+      {
+        "id": "A",
+        "text": "tomada de decisões unilaterais, privando a família e o paciente de sofrimentos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "suporte emocional e encaminhamento para especialistas em psico-oncologia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "minimização das necessidades emocionais das pacientes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "comunicação objetiva e julgadora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "tomada de atitude de comunicação restrita com a família.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O diagnóstico de câncer ginecológico impõe um fardo emocional significativo à mulher, envolvendo questões ligadas à feminilidade, sexualidade, maternidade e autoimagem. O manejo integral dessas pacientes exige que o médico vá além do tratamento técnico da doença, adotando uma postura humanizada e interdisciplinar.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A tomada de decisões unilaterais reflete um modelo paternalista de medicina que está em desuso. A prática atual preza pela autonomia da paciente e pela decisão compartilhada. Ocultar informações da família ou da paciente sob o pretexto de poupar sofrimento impede que elas se preparem para o processo e participem ativamente do cuidado.\n\nAlternativa b) Correta. Esta é a conduta recomendada. O médico assistente deve oferecer acolhimento e suporte emocional inicial, reconhecendo as fragilidades da paciente. Como o sofrimento psicossocial no câncer ginecológico é complexo, o encaminhamento para a psico-oncologia garante um suporte especializado essencial para o enfrentamento da doença, do tratamento e das possíveis sequelas.\n\nAlternativa c) Incorreta. Minimizar as necessidades emocionais é uma falha na relação médico-paciente. O sofrimento emocional é um componente real da doença oncológica e, se ignorado, pode levar a uma menor adesão ao tratamento e à piora na qualidade de vida.\n\nAlternativa d) Incorreta. Embora a comunicação deva ser clara e objetiva no que diz respeito às informações técnicas, ela jamais deve ser julgadora. O julgamento afasta a paciente e cria barreiras que impedem a expressão de dúvidas e medos, prejudicando o vínculo terapêutico.\n\nAlternativa e) Incorreta. A família é, na maioria das vezes, a principal rede de apoio da paciente. Restringir a comunicação com os familiares isola a paciente e dificulta a organização do cuidado domiciliar e emocional. A comunicação deve ser aberta e transparente, respeitando sempre o sigilo médico e a vontade da paciente.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ética Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:40.973Z"
+  },
+  {
+    "id": "AJUDA_76715490-1590-4183-91e4-939590ebf3a5",
+    "originalId": "76715490-1590-4183-91e4-939590ebf3a5",
+    "statement": "Assinale a alternativa que apresenta, corretamente, o mecanismo primário da ação do citrato para prevenir a formação de cálculo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Complexação do cálcio na urina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Complexação do oxalato na urina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Complexação do fosfato na urina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Reduzir a excreção de cálcio urinário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Reduzir a excreção do oxalato urinário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O citrato urinário é um dos mais importantes inibidores naturais da formação de cálculos renais, especialmente os de oxalato de cálcio e fosfato de cálcio. Abaixo, detalhamos os motivos que tornam a alternativa \"a\" correta e as demais incorretas:\n\nAlternativa (a) Correta: O principal mecanismo do citrato é a sua capacidade de se ligar ao cálcio livre na urina, um processo chamado de complexação ou quelação. Ao formar o complexo citrato de cálcio, que é altamente solúvel, ele reduz a quantidade de íons de cálcio livres disponíveis para se unirem ao oxalato ou ao fosfato. Com menos cálcio livre, a urina torna-se menos saturada em relação aos sais insolúveis, dificultando a nucleação e o crescimento dos cristais.\n\nAlternativa (b) Incorreta: O citrato é um ânion (carga negativa) e o oxalato também. Por possuírem cargas semelhantes, eles não se ligam entre si. O citrato compete com o oxalato pela ligação ao cálcio, mas não atua sobre o oxalato diretamente.\n\nAlternativa (c) Incorreta: Semelhante ao oxalato, o fosfato também é um ânion. O citrato não se complexa com o fosfato. Sua ação protetora nos cálculos de fosfato de cálcio ocorre por \"sequestrar\" o cálcio, impedindo que este se ligue ao fosfato.\n\nAlternativa (d) Incorreta: O citrato não reduz a quantidade total de cálcio que o rim excreta (calciúria). Ele altera a forma como esse cálcio está presente na urina (transformando-o de cálcio livre em cálcio complexado). O fármaco clássico utilizado para reduzir a excreção urinária de cálcio é o diurético tiazídico, não o citrato.\n\nAlternativa (e) Incorreta: O citrato não interfere na excreção renal ou na absorção intestinal de oxalato. Sua função é impedir que o oxalato já presente na urina consiga se ligar ao cálcio para formar cristais.\n\nResumo Didático: Imagine o cálcio e o oxalato como peças de um quebra-cabeça que se encaixam para formar a pedra. O citrato age como uma \"capa\" que se encaixa no cálcio primeiro, impedindo que o oxalato consiga se unir a ele. Como o complexo citrato + cálcio é solúvel, ele é eliminado na urina sem formar cristais.",
+    "exam": "UEL",
+    "year": 2026,
+    "banca": "UEL",
+    "uf": "PR",
+    "tags": [
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d6bf0b0e7d0b9513c2d9f4596ffd4f8ad439a40b9f24823fe89c37cae573d6a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/067c5a32d85439c83d9a76e12800a37ffa30954f6790988256f5a7275c168119.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:40.973Z"
+  },
+  {
+    "id": "AJUDA_768e0d56-902d-4666-a51f-859c7755b49b",
+    "originalId": "768e0d56-902d-4666-a51f-859c7755b49b",
+    "statement": "Durante o atendimento em sala de parto, um recém-nascido apresentou-se hipotônico e sem choro ao nascer. Foi realizado o clampeamento imediato do cordão umbilical, seguido da aplicação dos passos iniciais de reanimação neonatal. A seguir, a avaliação da FC revelou 30 bpm, associada à ausência de movimentos respiratórios. Iniciada ventilação com pressão positiva com máscara, o paciente foi monitorizado e não apresentou melhora após correção da técnica. Assinale a alternativa que apresenta os dispositivos que podem ser usados para a realização da ventilação, como próximo passo da reanimação neonatal.",
+    "options": [
+      {
+        "id": "C",
+        "text": "Apenas tubo endotraqueal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico apresenta um recém-nascido em apneia e com bradicardia grave (FC 30 bpm) refratária a passos iniciais e ventilacao com pressao positiva (VPP) com mascara facial, mesmo apos as etapas de correcao de tecnica. De acordo com as diretrizes do Programa de Reanimacao Neonatal da Sociedade Brasileira de Pediatria (SBP), a falha da VPP por mascara indica a obtencao imediata de uma via aerea avancada, sendo indicadas a intubacao endotraqueal ou a insercao de mascara laringea.\n\nAnalise das alternativas e das imagens:\n\nAlternativa A (Correta): Apresenta a combinacao de dispositivos preconizada para a via aerea avancada no periodo neonatal:\n1. Mascara laringea: dispositivo supraglotico eficaz e recomendado quando ha falha na ventilacao com mascara facial e a intubacao nao e possivel ou falha.\n2. Laringoscopio com lamina reta (Miller): a lamina reta e a escolha padrao em neonatos, pois permite elevar diretamente a epiglote, que e proporcionalmente mais longa e complacente.\n3. Tubo endotraqueal sem balonete: e a indicacao classica na reanimacao em sala de parto para prevenir isquemia e lesoes estenosantes na cartilagem cricoide.\n\nAlternativa B (Incorreta): Apresenta o laringoscopio com lamina curva (Macintosh), indicada para criancas maiores e adultos, e o tubo endotraqueal com balonete (cuffed), que nao e a primeira escolha para a reanimacao neonatal em sala de parto.\n\nAlternativa C (Incorreta): Mostra uma canula orofaringea (Guedel). A canula de Guedel e apenas um adjuvante para aliviar a obstrucao da via aerea pela lingua durante a ventilacao com mascara, nao sendo um dispositivo de via aerea avancada para realizacao de ventilacao perante falha de VPP. Alem disso, nao contempla a mascara laringea.\n\nAlternativa D (Incorreta): Reune a canula de Guedel, o laringoscopio de lamina curva e o tubo endotraqueal com balonete, todos inadequados como conduta de primeira linha para o cenario neonatal descrito.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Reanimação Neonatal",
+      "Cuidados Neonatais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:40.993Z"
+  },
+  {
+    "id": "AJUDA_768e3b24-afdc-4a80-8d38-06642185ee0d",
+    "originalId": "768e3b24-afdc-4a80-8d38-06642185ee0d",
+    "statement": "Sobre as hérnias da região inguinofemoral, analise as afirmações:\n\nI. A hérnia inguinal direta origina-se no Triângulo de Hesselbach, medialmente aos vasos epigástricos inferiores.\nII. A hérnia inguinal indireta passa através do anel inguinal profundo, lateralmente aos vasos epigástricos inferiores.\nIII. A hérnia femoral é mais comum em mulheres e apresenta maior risco de estrangulamento do que as hérnias inguinais.\n\nDessa forma, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Apenas a proposição I está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Apenas a proposição III está correta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas as proposições I e II estão corretas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas estão corretas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DA PROPOSIÇÃO I:\nA hérnia inguinal direta é uma condição adquirida decorrente do enfraquecimento da parede posterior do canal inguinal (fáscia transversalis). O local de ocorrência é o Triângulo de Hesselbach, que possui como limites a borda lateral do músculo reto abdominal (medial), os vasos epigástricos inferiores (lateral) e o ligamento inguinal (inferior). Como a hérnia se projeta dentro deste triângulo, ela está, obrigatoriamente, medial aos vasos epigástricos inferiores. A afirmação está correta.\n\nANÁLISE DA PROPOSIÇÃO II:\nA hérnia inguinal indireta é a forma mais comum de hérnia inguinal e tem origem congênita, relacionada à persistência do conduto peritoneovaginal. O conteúdo abdominal sai da cavidade através do anel inguinal profundo para entrar no canal inguinal. Anatomicamente, o anel inguinal profundo localiza-se lateralmente aos vasos epigástricos inferiores. Esta é a principal referência anatômica utilizada pelos cirurgiões para diferenciar as hérnias diretas das indiretas durante um procedimento. A afirmação está correta.\n\nANÁLISE DA PROPOSIÇÃO III:\nA hérnia femoral ocorre através do canal femoral, posicionado abaixo do ligamento inguinal (no espaço infrapúbico de Fruchaud). Embora a hérnia inguinal seja a mais comum globalmente em ambos os sexos, a hérnia femoral é significativamente mais frequente no sexo feminino do que no masculino. Devido à rigidez e ao pequeno diâmetro do canal femoral, o risco de encarceramento e estrangulamento (isquemia do conteúdo herniado) é muito mais elevado do que nas hérnias inguinais, sendo frequentemente uma emergência cirúrgica. A afirmação está correta.\n\nPOR QUE A ALTERNATIVA (D) É A CORRETA:\nA questão exige a análise de veracidade de três afirmações fundamentais sobre a anatomia e a clínica das hérnias da região da virilha.\n\n- A alternativa (a) está incorreta porque as proposições II e III também são verdadeiras.\n- A alternativa (b) está incorreta porque as proposições I e II também são verdadeiras.\n- A alternativa (c) está incorreta porque exclui a proposição III, que descreve corretamente a epidemiologia e o risco da hérnia femoral.\n- A alternativa (d) é o gabarito, pois todas as três proposições (I, II e III) estão tecnicamente corretas e seguem a literatura médica padrão.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:40.993Z"
+  },
+  {
+    "id": "AJUDA_769909ea-418f-48c0-a05a-c056ff315d57",
+    "originalId": "769909ea-418f-48c0-a05a-c056ff315d57",
+    "statement": "Durante o trabalho de parto de uma tercípara, a termo, situação longitudinal, apresentação cefálica, dorso anterior, já no final do período de dilatação, com dilatação do colo = 7cm, altura 0 de De Lee, 4 contrações/10 minutos com duração de 40 segundos e com variedade de posição occipto-esquerda posterior, a equipe médica resolveu realizar uma cardiotocografia. Resultado: linha de base = 95bpm; variabilidade reduzida e desacelerações repetitivas tardias por > 30 minutos. Pode-se afirmar que esse resultado da cardiotocografia configura uma categoria:",
+    "options": [
+      {
+        "id": "A",
+        "text": "IV",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "II",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "III",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Para classificar a cardiotocografia intraparto, utilizamos os critérios padronizados que dividem os achados em três categorias principais (I, II e III). No caso clínico apresentado, temos um feto com bradicardia (95 bpm), variabilidade reduzida e presença de desacelerações tardias (DIP II) repetitivas por um período prolongado de 30 minutos.\n\nAlternativa a: Esta alternativa está incorreta porque a classificação oficial da cardiotocografia fetal, baseada em consensos internacionais como os da ACOG e da FEBRASGO, prevê apenas três categorias. A designação Categoria IV não existe na prática médica obstétrica.\n\nAlternativa b: Esta alternativa está incorreta. A Categoria I (Normal) representa o feto com equilíbrio ácido-básico preservado. Para ser classificado aqui, o traçado deve apresentar obrigatoriamente: frequência cardíaca basal entre 110 e 160 bpm, variabilidade moderada (6 a 25 bpm) e ausência de desacelerações tardias ou variáveis. O quadro descrito na questão apresenta bradicardia e desacelerações patológicas, sendo incompatível com a normalidade.\n\nAlternativa c: Esta alternativa está incorreta. A Categoria II é considerada indeterminada ou suspeita. Ela inclui traçados que não podem ser classificados como I nem como III, como taquicardia fetal isolada, variabilidade mínima ou desacelerações variáveis isoladas. No entanto, a presença de desacelerações tardias repetitivas associada à bradicardia e à variabilidade reduzida por um tempo considerável (30 minutos) indica um estado de gravidade que ultrapassa a Categoria II.\n\nAlternativa d: Esta alternativa está correta. A Categoria III é definida como um traçado anormal ou patológico, com alta probabilidade de acidemia fetal e risco iminente de asfixia. Os critérios diagnósticos incluem a variabilidade ausente ou reduzida associada a qualquer um dos seguintes achados: desacelerações tardias recorrentes, desacelerações variáveis recorrentes ou bradicardia mantida. Como o enunciado descreve bradicardia (95 bpm) e desacelerações tardias (DIP II) persistentes por 30 minutos, o quadro configura sofrimento fetal agudo, enquadrando-se perfeitamente na Categoria III.\n\nGabarito: Letra d.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Vitalidade Fetal",
+      "Mecanismo de Parto e Fases Clínicas do Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:40.993Z"
+  },
+  {
+    "id": "AJUDA_7699ba51-7c53-4e86-8631-8939149a7c16",
+    "originalId": "7699ba51-7c53-4e86-8631-8939149a7c16",
+    "statement": "Existe uma grande variedade de causas de insuficiência respiratória no período neonatal. No que concerne à semiologia e aos achados clínicos usados na abordagem do recém-nascido com insuficiência respiratória aguda, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A acidose metabólica pode causar desconforto respiratório em razão de alterações vasculares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O desconforto respiratório de origem cardíaca tem como característica a cianose resistente ao oxigênio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A hérnia diafragmática acarreta um desconforto respiratório de causa central, semelhante à depressão por drogas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A anemia do prematuro pode causar desconforto respiratório por hipotonia da musculatura torácica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A insuficiência respiratória neonatal é um tema frequente em provas, exigindo do candidato o conhecimento para diferenciar causas pulmonares, cardíacas, metabólicas e mecânicas. Abaixo, a análise detalhada de cada alternativa:\n\nALTERNATIVA A (Incorreta): A acidose metabólica de fato provoca uma alteração no padrão respiratório, mas isso ocorre como um mecanismo de compensação química. O centro respiratório é estimulado a aumentar a ventilação (hiperventilação/taquipneia) para eliminar CO2 e tentar elevar o pH sanguíneo. Embora a acidose possa agravar a vasoconstrição pulmonar, o desconforto respiratório clínico não é causado primordialmente por alterações vasculares, mas sim pela necessidade de compensação metabólica.\n\nALTERNATIVA B (Correta): Esta é uma regra clássica da semiologia neonatal. Quando o recém-nascido apresenta cianose de origem cardíaca (geralmente por cardiopatias congênitas com fluxo da direita para a esquerda), o sangue passa diretamente para a circulação sistêmica sem ser oxigenado nos alvéolos. Por isso, mesmo oferecendo oxigênio a 100% (Teste da Hiperóxia), a saturação de oxigênio e a PaO2 não aumentam significativamente. Já nas causas pulmonares, a oferta de oxigênio costuma melhorar a cianose.\n\nALTERNATIVA C (Incorreta): A hérnia diafragmática é uma causa mecânica e anatômica de desconforto respiratório. Ela ocorre quando órgãos abdominais ocupam a cavidade torácica através de um defeito no diafragma, causando hipoplasia pulmonar e compressão do pulmão. Causas centrais de desconforto são aquelas que afetam o controle neurológico da respiração, como a depressão por drogas (ex: opioides maternos) ou asfixia neonatal.\n\nALTERNATIVA D (Incorreta): A anemia no prematuro reduz a capacidade de transporte de oxigênio para os tecidos. Para compensar essa oferta reduzida, o recém-nascido pode apresentar taquicardia, taquipneia e episódios de apneia. O desconforto não é originado por hipotonia da musculatura torácica; a musculatura costuma estar íntegra, mas sobrecarregada pelo esforço compensatório ou pela hipóxia tecidual.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "IADES",
+    "uf": "DF",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0dd87c4b6c574ad6786e10f9033728aaa4f12766c7e422b62edf52417204f2fb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5dd82696504c328a28f00ae49d6b25ec3995c8845abd2592c345510b21de9b94.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:40.993Z"
+  },
+  {
+    "id": "AJUDA_769dcada-04d2-49c3-bb1d-d937f13b4e07",
+    "originalId": "769dcada-04d2-49c3-bb1d-d937f13b4e07",
+    "statement": "Reconhecer os diferentes tipos de analgesia e anestesia utilizados no trabalho de parto e no parto, bem como suas complicações mais frequentes, é essencial para a atuação de um bom profissional. Sobre esse assunto, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Os opioides sistêmicos são o método mais efetivo para o alívio da dor durante o trabalho de parto, com maior eficácia analgésica e maior satisfação materna em comparação à analgesia peridural.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os opioides sistêmicos são preferíveis por reduzir efeitos colaterais maternos como náuseas, vômitos e sonolência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A inalação com óxido nitroso não apresenta segurança adequada para sua aplicação em relação à mãe e feto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A inalação com óxido nitroso demonstrou maior potência analgésica em relação às técnicas neuroaxiais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Imersão em água, técnicas de relaxamento, acupuntura e estimulação elétrica nervosa transcutânea (Tens) apresentam evidências sobre eficácia analgésica limitadas e inconsistentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Gabarito: letra (e). As técnicas não farmacológicas (imersão em água, relaxamento, acupuntura, TENS) têm evidência de eficácia analgésica limitada e inconsistente, segundo revisões como a Cochrane e as diretrizes do ACOG e da OMS. Podem ser oferecidas como complemento, por serem seguras e bem aceitas pelas pacientes. Não substituem a analgesia farmacológica quando a gestante deseja alívio efetivo da dor.\n\nContexto: a analgesia neuroaxial (peridural, raquidiana e combinada raqui-peridural) é o método mais eficaz para o alívio da dor no trabalho de parto. As complicações mais frequentes são hipotensão materna, bloqueio motor, prurido (se houver opioide), retenção urinária, febre materna, cefaleia pós-punção dural (se houver punção acidental) e, raramente, hematoma ou abscesso peridural. A analgesia neuroaxial não aumenta a taxa de cesariana e pode prolongar discretamente o período expulsivo.\n\nAnálise das alternativas:\n\na) Incorreta. Os opioides sistêmicos (meperidina, fentanil, remifentanil) têm analgesia modesta e menor satisfação materna que a peridural. A peridural é a mais efetiva.\n\nb) Incorreta. Os opioides sistêmicos causam justamente mais náuseas, vômitos, sedação e tontura na mãe. Também atravessam a placenta e podem causar depressão respiratória neonatal e alterações da variabilidade da frequência cardíaca fetal. Seu uso se reserva a quem tem contraindicação ou não deseja a neuroaxial.\n\nc) Incorreta. O óxido nitroso inalatório (50% com oxigênio) é considerado seguro para a mãe e o feto quando usado de forma intermitente e autoadministrada. Os efeitos adversos são náuseas, vômitos, tontura e sonolência. É necessária boa ventilação do ambiente.\n\nd) Incorreta. O óxido nitroso tem potência analgésica inferior à das técnicas neuroaxiais. Ele alivia parcialmente a dor e reduz a ansiedade, mas a satisfação materna e a analgesia são maiores com a peridural.\n\ne) Correta. Conforme descrito acima, essas medidas são seguras, mas as evidências de eficácia são limitadas e inconsistentes.\n\nResumo para a prova: eficácia analgésica decrescente: neuroaxial > óxido nitroso e opioides sistêmicos > métodos não farmacológicos (benefício pequeno ou incerto, porém seguros).",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:40.993Z"
+  }
+]

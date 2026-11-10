@@ -1,0 +1,650 @@
+{
+  "geradoEm": "2026-10-24T18:38:49.606Z",
+  "totalAjudaQuestoes": 9223,
+  "totalSupabase2024Plus": 10000,
+  "jaNaPlataforma": {
+    "total": 3045,
+    "percentual": 33,
+    "comGabarito": {
+      "total": 2067,
+      "percentual": 67.9,
+      "concordante": 1711,
+      "divergente": 356
+    },
+    "semGabarito": {
+      "total": 978,
+      "percentual": 32.1,
+      "exemplos": [
+        {
+          "supabaseId": "4b296f0d-6915-408e-8a01-0e2a3078bd5a",
+          "ajudaId": "AJUDA_50e4721f-0618-48c4-8daf-12933aa8838d",
+          "banca": "AMP",
+          "ano": 2026,
+          "gabaritoAjuda": "E",
+          "enunciadoSnippet": "A bronquiolite viral aguda é caracterizada por inflamação aguda, edema necrose de células epiteliais"
+        },
+        {
+          "supabaseId": "2d9085b9-47a3-4d4e-9154-4b8d3d34e204",
+          "ajudaId": "AJUDA_dedea130-b213-4b81-941f-eeeab0fb3917",
+          "banca": "Hospital Santa Rita de Cássia",
+          "ano": 2026,
+          "gabaritoAjuda": "A",
+          "enunciadoSnippet": "Paciente de 23 anos de idade do sexo masculino procurou atendimento médico emergencial por acidente "
+        },
+        {
+          "supabaseId": "3a93591c-6ca5-4e80-b4ea-acd308168fb7",
+          "ajudaId": "AJUDA_00205546-3673-4da0-a0c2-7017f2a3bf70",
+          "banca": "HNMD",
+          "ano": 2026,
+          "gabaritoAjuda": "E",
+          "enunciadoSnippet": "Qual agente etiológico mais comum até os 2 meses de idade para pneumonia comunitária?"
+        },
+        {
+          "supabaseId": "1ca6c414-1482-4659-adcc-4cd4d9f37a63",
+          "ajudaId": "AJUDA_00a98c09-c0b1-4f4d-b48a-2ebcdb27235d",
+          "banca": "SCM-RP",
+          "ano": 2026,
+          "gabaritoAjuda": "C",
+          "enunciadoSnippet": "Um homem de 28 anos sofre acidente motociclístico com trauma direto na face. Apresenta diplopia, eno"
+        },
+        {
+          "supabaseId": "2981cf6e-5d21-4567-852f-ef65d121409e",
+          "ajudaId": "AJUDA_00f6771d-b5ea-41e9-9dfd-d7966441b310",
+          "banca": "SMS",
+          "ano": 2025,
+          "gabaritoAjuda": "A",
+          "enunciadoSnippet": "Paciente feminina, 42 anos, com histórico de asma desde a infância, é acompanhada regularmente na un"
+        },
+        {
+          "supabaseId": "3271486e-d91e-409e-ab1c-2818c2df8280",
+          "ajudaId": "AJUDA_01afbf08-f9df-4fd8-ab92-3eb1d77ebc64",
+          "banca": "FMJ",
+          "ano": 2026,
+          "gabaritoAjuda": "E",
+          "enunciadoSnippet": "Uma mulher de 77 anos de idade, acometida por diabetes mellitus tipo 2 há 8 anos, buscou atendimento"
+        },
+        {
+          "supabaseId": "17eef342-4872-42a9-a1ba-19b25014cb64",
+          "ajudaId": "AJUDA_02118071-1ba0-4752-9541-2a04309c597d",
+          "banca": "SCM-RP",
+          "ano": 2025,
+          "gabaritoAjuda": "B",
+          "enunciadoSnippet": "Assinale a alternativa correta sobre o sarampo."
+        },
+        {
+          "supabaseId": "0567b6e3-4caf-423b-9db7-14b54b6e8bcd",
+          "ajudaId": "AJUDA_021c07ad-8335-4d82-aefa-e88d10beca40",
+          "banca": "SMS-Macaré",
+          "ano": 2026,
+          "gabaritoAjuda": "C",
+          "enunciadoSnippet": "Paciente 50 anos portadora de neoplasia de mama com metástase óssea deu entrada na emergência com re"
+        },
+        {
+          "supabaseId": "1090816b-6ae4-44f6-9624-5b3f5d09e7a7",
+          "ajudaId": "AJUDA_027fd8b9-3b24-4504-83e7-45ebdc1d608d",
+          "banca": "SMS",
+          "ano": 2025,
+          "gabaritoAjuda": "C",
+          "enunciadoSnippet": "Diante da grande quantidade de informações, a medicina baseada em evidências (MBE) é uma estratégia "
+        },
+        {
+          "supabaseId": "3003cddc-abbc-41a0-8218-c05745bb4442",
+          "ajudaId": "AJUDA_02d76622-19c1-4fca-9aa1-835622394283",
+          "banca": "PUC",
+          "ano": 2025,
+          "gabaritoAjuda": "B",
+          "enunciadoSnippet": "Menina de três anos de idade com quadro de erupção maculopapular, que conflui tornando-se uma placa "
+        },
+        {
+          "supabaseId": "04bc7b6e-5673-469a-a3c5-013bffe413d9",
+          "ajudaId": "AJUDA_02e8ec56-a732-4d79-9544-6f20fcecdbb7",
+          "banca": "FMJ",
+          "ano": 2026,
+          "gabaritoAjuda": "E",
+          "enunciadoSnippet": "Assinale a opção que corresponda, respectivamente, à doença que se caracteriza pela Tríade de Charco"
+        },
+        {
+          "supabaseId": "140fbd6e-c71b-4008-9128-f765b7324bbb",
+          "ajudaId": "AJUDA_02f854ee-b277-468b-9ccb-888bedb3c67c",
+          "banca": "SMS-Macaré",
+          "ano": 2026,
+          "gabaritoAjuda": "C",
+          "enunciadoSnippet": "Paciente de 8 meses, estava na sala de casa, utilizando um andador. Mãe estava ao lado do paciente e"
+        },
+        {
+          "supabaseId": "2d011297-0224-48e5-8d86-bf853d1f00ee",
+          "ajudaId": "AJUDA_03052ef7-aec4-4bd0-9088-02152ff954da",
+          "banca": "Instituto de olhos de Goiânia",
+          "ano": 2026,
+          "gabaritoAjuda": "A",
+          "enunciadoSnippet": "Considere um determinado teste diagnóstico de uma infecção sendo utilizado em uma cidade onde sua pr"
+        },
+        {
+          "supabaseId": "5498e2b1-b6f4-4ceb-8bd5-8d1f44dd58a4",
+          "ajudaId": "AJUDA_035cd402-fe3b-46b6-b0b7-7d31f75e42dd",
+          "banca": "ISCMSP",
+          "ano": 2026,
+          "gabaritoAjuda": "B",
+          "enunciadoSnippet": "Paciente feminina, 36 anos, previamente hígida, apresenta dor abdominal difusa há 48 horas, associad"
+        },
+        {
+          "supabaseId": "156b99c0-008f-45e8-b24d-26e562f48c95",
+          "ajudaId": "AJUDA_037c7e82-2a67-4bfb-940b-5b25bb84ddd4",
+          "banca": "SCM-RP",
+          "ano": 2026,
+          "gabaritoAjuda": "D",
+          "enunciadoSnippet": "Paciente procura emergência após mordida de cachorro desconhecido em rua pública. Apresenta lesão su"
+        }
+      ]
+    }
+  },
+  "novasParaPlataforma": {
+    "total": 6178,
+    "percentual": 67,
+    "exemplos": [
+      {
+        "ajudaId": "AJUDA_0a28726e-4365-4562-943f-dc93998f1aa8",
+        "banca": "SCM-BH",
+        "ano": 2026,
+        "gabarito": "C",
+        "enunciadoSnippet": "Homem de 42 anos, portador de hipertensão arterial e insuficiência renal crônica estadio I, está int"
+      },
+      {
+        "ajudaId": "AJUDA_0a97922f-8016-4108-bb68-10fb5039387d",
+        "banca": "UNIMED",
+        "ano": 2026,
+        "gabarito": "B",
+        "enunciadoSnippet": "Um homem de 34 anos, previamente saudável, é admitido no pronto-socorro após sofrer politrauma em co"
+      },
+      {
+        "ajudaId": "AJUDA_4d4a829b-1e66-4adf-b32f-2150b75d9ca1",
+        "banca": "SCM-BH",
+        "ano": 2026,
+        "gabarito": "C",
+        "enunciadoSnippet": "Um homem melanodérmico, com 61 anos de idade, sem manifestações clínicas ou uso de medicamentos, pro"
+      },
+      {
+        "ajudaId": "AJUDA_77a1cad0-3230-4fbc-b9a5-90b5d788502c",
+        "banca": "HPP",
+        "ano": 2026,
+        "gabarito": "B",
+        "enunciadoSnippet": "Um lactente de 10 meses é levado ao pronto-socorro com história de febre alta de início súbito, irri"
+      },
+      {
+        "ajudaId": "AJUDA_ce41758f-f018-47da-9eeb-dde8bbee555d",
+        "banca": "HPP",
+        "ano": 2026,
+        "gabarito": "A",
+        "enunciadoSnippet": "Paciente de 28 anos, previamente saudável, chega ao pronto atendimento com palpitações súbitas e des"
+      },
+      {
+        "ajudaId": "AJUDA_fdf5bfe0-9860-46a9-b0a9-ad0bf4d35f80",
+        "banca": "Revalida 2025/1",
+        "ano": 2025,
+        "gabarito": "B",
+        "enunciadoSnippet": "Mulher de 25 anos vai à consulta na unidade básica de saúde (UBS) com dor articular há 4 meses, edem"
+      },
+      {
+        "ajudaId": "AJUDA_0011946e-761e-49fe-ba75-0f932bbb99ea",
+        "banca": "Sírio Libanês",
+        "ano": 2027,
+        "gabarito": "E",
+        "enunciadoSnippet": "Mulher de 58 anos, em menopausa há 5 anos, nulípara, IMC: 32 kg/m², sem histórico prévio de terapia "
+      },
+      {
+        "ajudaId": "AJUDA_00131a74-b53e-4c7b-9219-58558a31aaf4",
+        "banca": "HEVV",
+        "ano": 2026,
+        "gabarito": "A",
+        "enunciadoSnippet": "Adulto com urticária difusa, estridor e hipotensão após picada de inseto. Assinale a alternativa que"
+      },
+      {
+        "ajudaId": "AJUDA_001f01d0-1894-461c-8867-a73e29a7fced",
+        "banca": "UFPA",
+        "ano": 2025,
+        "gabarito": "D",
+        "enunciadoSnippet": "Internado no hospital, um paciente de 10 anos de idade em tratamento quimioterápico com cateter veno"
+      },
+      {
+        "ajudaId": "AJUDA_0023323f-725c-482d-9dcb-af0ed0896fbb",
+        "banca": "SES",
+        "ano": 2026,
+        "gabarito": "C",
+        "enunciadoSnippet": "Leia o caso a seguir.\n\nHomem de 26 anos, com obesidade de grau 3, procurou serviço de endocrinologia"
+      },
+      {
+        "ajudaId": "AJUDA_00557e54-0c59-42bf-8c88-5cead4ed4a29",
+        "banca": "Grupo VIV",
+        "ano": 2026,
+        "gabarito": "A",
+        "enunciadoSnippet": "Paciente refere dor intensa e \"cortante\" à evacuação, com sangue vivo no papel higiênico, há 4 meses"
+      },
+      {
+        "ajudaId": "AJUDA_005c46ef-6e74-4a06-b983-ae2d22ad3732",
+        "banca": "ICC prova II",
+        "ano": 2026,
+        "gabarito": "A",
+        "enunciadoSnippet": "Trata-se de uma doença infecciosa causada pela bactéria Burkholderia pseudomalei. Encontrada contami"
+      },
+      {
+        "ajudaId": "AJUDA_0062e0de-1aa6-44e8-9220-3ec08aaaf2e5",
+        "banca": "SES",
+        "ano": 2026,
+        "gabarito": "B",
+        "enunciadoSnippet": "Um médico atende um paciente idoso com sinais evidentes de negligência familiar grave, incluindo mal"
+      },
+      {
+        "ajudaId": "AJUDA_00750287-501a-490d-b718-b2aeff1b39c4",
+        "banca": "AMP",
+        "ano": 2026,
+        "gabarito": "E",
+        "enunciadoSnippet": "Homem 45 anos, IMC 29, crises de dor no hipocôndrio direito após refeições gordurosas. US: múltiplos"
+      },
+      {
+        "ajudaId": "AJUDA_0076dc8a-96f1-4f26-af08-6af364f4e58b",
+        "banca": "SCM-RP",
+        "ano": 2025,
+        "gabarito": "C",
+        "enunciadoSnippet": "Depois de 10 dias de uma enchente ocorrida em uma pequena cidade, um dos voluntários no resgate de p"
+      }
+    ]
+  },
+  "bancasBreakdown": {
+    "SCM-BH": {
+      "total": 150,
+      "naPlataforma": 58,
+      "novas": 92,
+      "semGabaritoNaPlataforma": 18
+    },
+    "Instituto de olhos de Goiânia": {
+      "total": 50,
+      "naPlataforma": 21,
+      "novas": 29,
+      "semGabaritoNaPlataforma": 7
+    },
+    "UERJ": {
+      "total": 200,
+      "naPlataforma": 73,
+      "novas": 127,
+      "semGabaritoNaPlataforma": 0
+    },
+    "UNIMED": {
+      "total": 135,
+      "naPlataforma": 1,
+      "novas": 134,
+      "semGabaritoNaPlataforma": 1
+    },
+    "HIAE": {
+      "total": 150,
+      "naPlataforma": 55,
+      "novas": 95,
+      "semGabaritoNaPlataforma": 27
+    },
+    "SUS": {
+      "total": 290,
+      "naPlataforma": 107,
+      "novas": 183,
+      "semGabaritoNaPlataforma": 5
+    },
+    "AMP": {
+      "total": 100,
+      "naPlataforma": 33,
+      "novas": 67,
+      "semGabaritoNaPlataforma": 22
+    },
+    "UNIFESP": {
+      "total": 199,
+      "naPlataforma": 85,
+      "novas": 114,
+      "semGabaritoNaPlataforma": 9
+    },
+    "HPP": {
+      "total": 100,
+      "naPlataforma": 0,
+      "novas": 100,
+      "semGabaritoNaPlataforma": 0
+    },
+    "USP-RP": {
+      "total": 200,
+      "naPlataforma": 73,
+      "novas": 127,
+      "semGabaritoNaPlataforma": 6
+    },
+    "Hospital Santa Rita de Cássia": {
+      "total": 50,
+      "naPlataforma": 23,
+      "novas": 27,
+      "semGabaritoNaPlataforma": 17
+    },
+    "SES": {
+      "total": 520,
+      "naPlataforma": 214,
+      "novas": 306,
+      "semGabaritoNaPlataforma": 53
+    },
+    "Revalida 2025/1": {
+      "total": 100,
+      "naPlataforma": 33,
+      "novas": 67,
+      "semGabaritoNaPlataforma": 0
+    },
+    "Sírio Libanês": {
+      "total": 300,
+      "naPlataforma": 100,
+      "novas": 200,
+      "semGabaritoNaPlataforma": 40
+    },
+    "HEVV": {
+      "total": 50,
+      "naPlataforma": 13,
+      "novas": 37,
+      "semGabaritoNaPlataforma": 3
+    },
+    "UFPA": {
+      "total": 200,
+      "naPlataforma": 34,
+      "novas": 166,
+      "semGabaritoNaPlataforma": 22
+    },
+    "HNMD": {
+      "total": 100,
+      "naPlataforma": 36,
+      "novas": 64,
+      "semGabaritoNaPlataforma": 26
+    },
+    "PSU": {
+      "total": 350,
+      "naPlataforma": 135,
+      "novas": 215,
+      "semGabaritoNaPlataforma": 38
+    },
+    "IAMSPE": {
+      "total": 200,
+      "naPlataforma": 72,
+      "novas": 128,
+      "semGabaritoNaPlataforma": 4
+    },
+    "Grupo VIV": {
+      "total": 100,
+      "naPlataforma": 0,
+      "novas": 100,
+      "semGabaritoNaPlataforma": 0
+    },
+    "ICC prova II": {
+      "total": 50,
+      "naPlataforma": 1,
+      "novas": 49,
+      "semGabaritoNaPlataforma": 0
+    },
+    "SCM-RP": {
+      "total": 200,
+      "naPlataforma": 92,
+      "novas": 108,
+      "semGabaritoNaPlataforma": 70
+    },
+    "SMS": {
+      "total": 120,
+      "naPlataforma": 45,
+      "novas": 75,
+      "semGabaritoNaPlataforma": 35
+    },
+    "IPSEMG": {
+      "total": 200,
+      "naPlataforma": 62,
+      "novas": 138,
+      "semGabaritoNaPlataforma": 19
+    },
+    "FAMEMA": {
+      "total": 200,
+      "naPlataforma": 84,
+      "novas": 116,
+      "semGabaritoNaPlataforma": 9
+    },
+    "USP": {
+      "total": 240,
+      "naPlataforma": 88,
+      "novas": 152,
+      "semGabaritoNaPlataforma": 8
+    },
+    "Hospital Vida": {
+      "total": 60,
+      "naPlataforma": 0,
+      "novas": 60,
+      "semGabaritoNaPlataforma": 0
+    },
+    "SES-2": {
+      "total": 100,
+      "naPlataforma": 1,
+      "novas": 99,
+      "semGabaritoNaPlataforma": 0
+    },
+    "ENAMED": {
+      "total": 200,
+      "naPlataforma": 111,
+      "novas": 89,
+      "semGabaritoNaPlataforma": 0
+    },
+    "BOS": {
+      "total": 100,
+      "naPlataforma": 39,
+      "novas": 61,
+      "semGabaritoNaPlataforma": 14
+    },
+    "CERMAN": {
+      "total": 200,
+      "naPlataforma": 79,
+      "novas": 121,
+      "semGabaritoNaPlataforma": 4
+    },
+    "UFRB": {
+      "total": 20,
+      "naPlataforma": 0,
+      "novas": 20,
+      "semGabaritoNaPlataforma": 0
+    },
+    "HOS-BOS": {
+      "total": 100,
+      "naPlataforma": 33,
+      "novas": 67,
+      "semGabaritoNaPlataforma": 27
+    },
+    "HCPA": {
+      "total": 200,
+      "naPlataforma": 73,
+      "novas": 127,
+      "semGabaritoNaPlataforma": 4
+    },
+    "UEL": {
+      "total": 200,
+      "naPlataforma": 75,
+      "novas": 125,
+      "semGabaritoNaPlataforma": 2
+    },
+    "UNESP": {
+      "total": 200,
+      "naPlataforma": 68,
+      "novas": 132,
+      "semGabaritoNaPlataforma": 3
+    },
+    "FMJ": {
+      "total": 100,
+      "naPlataforma": 37,
+      "novas": 63,
+      "semGabaritoNaPlataforma": 28
+    },
+    "SCM Barra Mansa": {
+      "total": 100,
+      "naPlataforma": 41,
+      "novas": 59,
+      "semGabaritoNaPlataforma": 30
+    },
+    "UEPA": {
+      "total": 200,
+      "naPlataforma": 69,
+      "novas": 131,
+      "semGabaritoNaPlataforma": 27
+    },
+    "Santa Casa de Assis": {
+      "total": 80,
+      "naPlataforma": 1,
+      "novas": 79,
+      "semGabaritoNaPlataforma": 0
+    },
+    "UFES": {
+      "total": 50,
+      "naPlataforma": 20,
+      "novas": 30,
+      "semGabaritoNaPlataforma": 8
+    },
+    "HUSE": {
+      "total": 100,
+      "naPlataforma": 27,
+      "novas": 73,
+      "semGabaritoNaPlataforma": 21
+    },
+    "HECI-HIFA": {
+      "total": 50,
+      "naPlataforma": 14,
+      "novas": 36,
+      "semGabaritoNaPlataforma": 10
+    },
+    "HOB": {
+      "total": 100,
+      "naPlataforma": 28,
+      "novas": 72,
+      "semGabaritoNaPlataforma": 0
+    },
+    "ISCMSP": {
+      "total": 199,
+      "naPlataforma": 70,
+      "novas": 129,
+      "semGabaritoNaPlataforma": 33
+    },
+    "UFCSPA": {
+      "total": 200,
+      "naPlataforma": 25,
+      "novas": 175,
+      "semGabaritoNaPlataforma": 17
+    },
+    "SMS-Macaré": {
+      "total": 100,
+      "naPlataforma": 38,
+      "novas": 62,
+      "semGabaritoNaPlataforma": 31
+    },
+    "FAMERP": {
+      "total": 160,
+      "naPlataforma": 47,
+      "novas": 113,
+      "semGabaritoNaPlataforma": 3
+    },
+    "PUC": {
+      "total": 300,
+      "naPlataforma": 115,
+      "novas": 185,
+      "semGabaritoNaPlataforma": 55
+    },
+    "CESUPA": {
+      "total": 50,
+      "naPlataforma": 14,
+      "novas": 36,
+      "semGabaritoNaPlataforma": 10
+    },
+    "Mackenzie": {
+      "total": 100,
+      "naPlataforma": 44,
+      "novas": 56,
+      "semGabaritoNaPlataforma": 36
+    },
+    "AMRIGS": {
+      "total": 200,
+      "naPlataforma": 74,
+      "novas": 126,
+      "semGabaritoNaPlataforma": 0
+    },
+    "UFRJ": {
+      "total": 150,
+      "naPlataforma": 56,
+      "novas": 94,
+      "semGabaritoNaPlataforma": 7
+    },
+    "FUBOG": {
+      "total": 100,
+      "naPlataforma": 35,
+      "novas": 65,
+      "semGabaritoNaPlataforma": 22
+    },
+    "ENARE": {
+      "total": 100,
+      "naPlataforma": 36,
+      "novas": 64,
+      "semGabaritoNaPlataforma": 5
+    },
+    "SESAPI": {
+      "total": 100,
+      "naPlataforma": 0,
+      "novas": 100,
+      "semGabaritoNaPlataforma": 0
+    },
+    "UNITAU": {
+      "total": 160,
+      "naPlataforma": 65,
+      "novas": 95,
+      "semGabaritoNaPlataforma": 34
+    },
+    "IDOR": {
+      "total": 50,
+      "naPlataforma": 12,
+      "novas": 38,
+      "semGabaritoNaPlataforma": 1
+    },
+    "Hospital Dr Adolfo Bezerra de Menezes": {
+      "total": 80,
+      "naPlataforma": 33,
+      "novas": 47,
+      "semGabaritoNaPlataforma": 28
+    },
+    "Hospital adventista Silvestre": {
+      "total": 100,
+      "naPlataforma": 35,
+      "novas": 65,
+      "semGabaritoNaPlataforma": 24
+    },
+    "UESPI": {
+      "total": 100,
+      "naPlataforma": 42,
+      "novas": 58,
+      "semGabaritoNaPlataforma": 36
+    },
+    "Dante": {
+      "total": 80,
+      "naPlataforma": 1,
+      "novas": 79,
+      "semGabaritoNaPlataforma": 0
+    },
+    "INTO": {
+      "total": 50,
+      "naPlataforma": 22,
+      "novas": 28,
+      "semGabaritoNaPlataforma": 5
+    },
+    "ICC prova I": {
+      "total": 50,
+      "naPlataforma": 18,
+      "novas": 32,
+      "semGabaritoNaPlataforma": 9
+    },
+    "UNESC": {
+      "total": 50,
+      "naPlataforma": 9,
+      "novas": 41,
+      "semGabaritoNaPlataforma": 5
+    },
+    "UERJ Pró-MFC": {
+      "total": 30,
+      "naPlataforma": 0,
+      "novas": 30,
+      "semGabaritoNaPlataforma": 0
+    }
+  }
+}

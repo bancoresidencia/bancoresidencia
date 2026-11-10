@@ -1,0 +1,501 @@
+[
+  {
+    "id": "AJUDA_b800815e-842c-4427-b4a6-7e280f2677f3",
+    "originalId": "b800815e-842c-4427-b4a6-7e280f2677f3",
+    "statement": "Um homem de 42 anos de idade, residente de área rural, apresenta convulsões de início recente. A tomografia computadorizada de crânio evidencia múltiplas lesões hipodensas com realce em anel e edema perilesional difuso. A sorologia para parasitoses mostra IgG positivo para Taenia solium. O paciente não apresenta imunossupressão conhecida. Nesse caso, a conduta terapêutica MAIS adequada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar albendazol associado a corticoide e anticonvulsivante, avaliando necessidade de tratamento prolongado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Iniciar ivermectina em dose única, pois é o antiparasitário mais eficaz para neurocisticercose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar o paciente para ressecção neurocirúrgica imediata das lesões parasitárias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Instituir apenas anticonvulsivantes, sem antiparasitário, pois a infecção já está inativa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico e radiológico apresentado é clássico de neurocisticercose (NCC) na forma parenquimatosa ativa. O paciente apresenta crises epilépticas (manifestação mais comum), reside em área rural (fator epidemiológico) e a tomografia revela lesões com realce anelar e edema, o que indica a fase coloidal do parasita (quando o cisticerco está morrendo e gerando reação inflamatória do hospedeiro).\n\nAnálise das alternativas:\n\nAlternativa A (Correta): O tratamento da neurocisticercose parenquimatosa ativa baseia-se em um tripé terapêutico: \n1. Corticosteroides (ex.: dexametasona ou prednisolona): Devem ser iniciados antes do antiparasitário para reduzir o edema perilesional e prevenir a piora dos sintomas neurológicos decorrente da resposta inflamatória à morte dos parasitas.\n2. Anticonvulsivantes: Essenciais para o controle das crises epilépticas, que são o sintoma inicial.\n3. Antiparasitários: O albendazol é a droga de escolha pela melhor penetração no sistema nervoso central e eficácia superior ao praziquantel em lesões múltiplas. O tratamento prolongado (geralmente 10 a 14 dias) é indicado conforme a carga parasitária.\n\nAlternativa B (Incorreta): A ivermectina não é o tratamento de escolha para a neurocisticercose. Embora tenha alguma atividade contra larvas de *Taenia solium*, o albendazol e o praziquantel são os fármacos padrão-ouro validados por consensos internacionais.\n\nAlternativa C (Incorreta): A neurocirurgia não é a conduta inicial para lesões parenquimatosas múltiplas. A abordagem cirúrgica é reservada para complicações específicas, como hidrocefalia obstrutiva (geralmente por cistos intraventriculares), cistos gigantes com efeito de massa importante ou para derivação ventrículo-peritoneal.\n\nAlternativa D (Incorreta): O uso isolado de anticonvulsivantes é indicado apenas quando as lesões estão totalmente calcificadas (fase inativa), o que não é o caso deste paciente. O realce em anel e o edema perilesional provam que a infecção está em fase ativa/transicional (coloidal), necessitando de tratamento anti-inflamatório e, frequentemente, antiparasitário.",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Parasitoses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:28.196Z"
+  },
+  {
+    "id": "AJUDA_b8012f86-5553-40ac-a5e5-6618f3c4b2aa",
+    "originalId": "b8012f86-5553-40ac-a5e5-6618f3c4b2aa",
+    "statement": "Qual das seguintes vacinas é recomendada pela rotina do Calendário Nacional de Vacinação para crianças com 2 meses de idade?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Vacina contra HPV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Vacina pentavalente (DTP + Hib + Hepatite B).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Vacina antirrábica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Vacina contra febre amarela (dose única).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o Calendário Nacional de Vacinação do Ministério da Saúde para a faixa etária pediátrica. Aos 2 meses de idade, a criança deve receber a primeira dose de quatro vacinas principais: Pentavalente, VIP (Vacina Inativada Poliomielite), Pneumocócica 10-valente e Rotavírus Humano.\n\nAlternativa A: INCORRETA. A vacina contra o HPV (Papilomavírus Humano) é destinada a crianças e adolescentes na faixa etária de 9 a 14 anos. Recentemente, o esquema foi simplificado para dose única no Brasil, não fazendo parte das vacinas aplicadas nos primeiros meses de vida.\n\nAlternativa B: CORRETA. A vacina Pentavalente garante proteção contra difteria, tétano, coqueluche, hepatite B e infecções invasivas causadas pelo Haemophilus influenzae tipo b. O esquema vacinal de rotina consiste em três doses, administradas exatamente aos 2, 4 e 6 meses de idade. Além da Pentavalente, aos 2 meses a criança também recebe a primeira dose da VIP, da Pneumocócica 10-valente e da vacina contra o rotavírus.\n\nAlternativa C: INCORRETA. A vacina antirrábica não compõe o calendário vacinal de rotina da criança. Sua indicação é restrita à profilaxia pós-exposição (após acidentes com animais potencialmente transmissores da raiva) ou profilaxia pré-exposição para profissionais ou indivíduos com risco ocupacional/específico de exposição ao vírus.\n\nAlternativa D: INCORRETA. A vacina contra a Febre Amarela é administrada rotineiramente aos 9 meses de idade (primeira dose), com uma dose de reforço aos 4 anos de idade. Em situações de rotina, ela não é aplicada aos 2 meses.\n\nPortanto, a única alternativa que apresenta uma vacina correspondente ao marco de 2 meses do calendário oficial é a Pentavalente.",
+    "exam": "CERMAN",
+    "year": 2026,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/78c63d00bde3e3780cd37d5a24777803b9ac4d1eea4cb0a7cec7d95890a1589c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/236a2663af414f873e6c31aa2fdf44d505479ac36fb45116205b21dbfc40868e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:28.196Z"
+  },
+  {
+    "id": "AJUDA_b80268e8-ab26-4fb9-8d4d-c1a87a7380fb",
+    "originalId": "b80268e8-ab26-4fb9-8d4d-c1a87a7380fb",
+    "statement": "36. Paciente, sexo feminino, 36 anos, apresenta cefaleia unilateral pulsátil há 2 anos, acompanhada de náuseas, fotofobia e fonofobia, com crises que duram 12–24h, pioram com atividade física e melhoram com repouso em ambiente escuro. Qual o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Migrânea sem aura.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Cefaleia em salvas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cefaleia tensional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Arterite de células gigantes.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Cefaleia secundária à hipertensão intracraniana aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve uma paciente de 36 anos com cefaleia recorrente há 2 anos, apresentando características típicas de uma cefaleia primária. Para o diagnóstico preciso, devemos observar os critérios da Classificação Internacional das Cefaleias (ICHD-3). A paciente apresenta dor unilateral, caráter pulsátil, duração entre 4 e 72 horas (no caso, 12-24h), agravamento por atividade física e sintomas associados, como náuseas, fotofobia e fonofobia.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa (a): Correta. O diagnóstico de migrânea (enxaqueca) sem aura baseia-se em critérios clínicos específicos preenchidos pela paciente: crises que duram de 4 a 72 horas, dor com pelo menos duas características (unilateral, pulsátil, intensidade moderada/grave, piora com atividade física) e presença de pelo menos um sintoma associado (náuseas/vômitos ou fotofobia/fonofobia). O histórico de 2 anos reforça o caráter crônico e recorrente da patologia.\n\nAlternativa (b): Incorreta. A cefaleia em salvas caracteriza-se por dor estritamente unilateral, extremamente forte, geralmente na região orbital ou temporal, com crises mais curtas (15 a 180 minutos). Além disso, obrigatoriamente apresenta sintomas autonômicos ipsilaterais, como lacrimejamento, congestão nasal, rinorreia ou miose/ptose, o que não foi relatado no caso. É mais prevalente no sexo masculino.\n\nAlternativa (c): Incorreta. A cefaleia do tipo tensional é tipicamente bilateral, com caráter compressivo ou em aperto (não pulsátil), de intensidade leve a moderada e não piora com atividades físicas rotineiras. Além disso, a ausência de náuseas é um critério importante para diferenciá-la da migrânea.\n\nAlternativa (d): Incorreta. A arterite de células gigantes é uma vasculite que acomete quase exclusivamente indivíduos acima de 50 anos (média de 70 anos). O quadro clínico costuma incluir claudicação de mandíbula, hipersensibilidade do couro cabeludo, perda visual súbita e marcadores inflamatórios (VHS e PCR) muito elevados, o que foge completamente ao perfil da paciente de 36 anos.\n\nAlternativa (e): Incorreta. Uma cefaleia secundária à hipertensão intracraniana aguda apresentaria um perfil evolutivo diferente, geralmente agudo ou subagudo progressivo, muitas vezes acompanhado de papiledema, vômitos em jato ou déficits neurológicos. Um histórico estável de 2 anos com crises episódicas é incompatível com hipertensão intracraniana aguda.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:28.196Z"
+  },
+  {
+    "id": "AJUDA_b81e52d8-94db-4d80-9ff6-b6294f0ab6e0",
+    "originalId": "b81e52d8-94db-4d80-9ff6-b6294f0ab6e0",
+    "statement": "Homem de 55 anos, com diagnóstico de diabetes mellitus, foi em consulta de rotina em Unidade Básica de Saúde (UBS) levando exames laboratoriais solicitados pelo médico na consulta anterior. Faz uso de metformina 850 miligramas, 3 vezes ao dia, e glicazida 30 miligramas, 1 vez ao dia, há mais de 6 meses. Os exames laboratoriais atuais apresentam hemoglobina glicada de 9,5 por cento e creatinina sérica de 0,8 miligramas por decilitro.\nQual das condutas é a mais adequada para o seguimento desse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Suspender os medicamentos orais, iniciar insulina NPH 10 unidades subcutânea pela manhã e 20 unidades à noite. Monitorar a glicemia pré-prandial, e, quando estiver controlada, medir a glicemia pós-prandial para avaliação da introdução da insulina regular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumentar a glicazida para 60 miligramas ao dia, aumentar a metformina para 1 grama, 3 vezes ao dia, repetir exames em 1 mês. Iniciar insulina se estiverem alterados; pactuar com o paciente a possibilidade de insulinização no retorno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Manter a dose de metformina e glicazida, iniciar insulina NPH 10 unidades subcutânea à noite, associada à monitorização glicêmica de jejum. Ajustar 2 a 3 unidades a cada 2 a 3 dias, até atingir a meta da glicemia de jejum.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Trocar a glicazida por glibenclamida 20 miligramas por dia, aumentar a metformina para 1 grama, 3 vezes ao dia, solicitar novos exames em 1 mês. Pactuar com o paciente a possibilidade de insulinização no retorno.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso apresenta um paciente com diabetes mellitus tipo 2 que, apesar do uso de terapia dupla (metformina em dose plena e gliclazida em dose baixa) há mais de seis meses, mantém um controle glicêmico inadequado, evidenciado por uma hemoglobina glicada (HbA1c) de 9,5%. O objetivo terapêutico na maioria dos adultos é uma HbA1c abaixo de 7%.\n\nAnálise das alternativas:\n\na) Incorreta. Não se recomenda a suspensão dos medicamentos orais, especialmente a metformina, ao iniciar a insulinoterapia basal. A metformina ajuda a reduzir a resistência insulínica, auxilia no controle do peso e permite o uso de doses menores de insulina. Além disso, iniciar diretamente com duas doses de NPH (esquema basal) e doses fixas relativamente altas (30 unidades totais) sem antes tentar a estratégia de insulina basal (*bedtime*) é uma conduta mais agressiva do que o necessário para este momento inicial de falha da terapia oral.\n\nb) Incorreta. Embora a dose de gliclazida pudesse ser aumentada, um valor de HbA1c de 9,5% sob terapia dupla dificilmente será controlado apenas com o ajuste de doses de antidiabéticos orais. Adiar a insulinização e solicitar novos exames em um mês configura inércia clínica, uma vez que o paciente já está fora da meta terapêutica há tempo suficiente para uma intervenção mais eficaz.\n\nc) Correta. Esta é a conduta preconizada pelas diretrizes da Sociedade Brasileira de Diabetes (SBD) e da ADA (*American Diabetes Association*) para falha da terapia oral dupla. A estratégia consiste em manter os sensibilizadores de insulina (metformina) e adicionar uma dose de insulina basal (NPH) ao deitar (*bedtime*). A dose inicial de 10 unidades (ou 0,1 a 0,2 UI/kg) é segura para evitar hipoglicemias. O ajuste fino (titulação) deve ser feito pelo próprio paciente ou equipe, aumentando duas unidades a cada dois ou três dias com base na glicemia de jejum, até atingir o alvo (geralmente entre 80 e 130 mg/dL).\n\nd) Incorreta. A troca de uma sulfonilureia por outra (gliclazida por glibenclamida) não promove uma redução significativa na HbA1c que justifique a mudança, especialmente quando o paciente já apresenta níveis tão elevados. Além disso, a gliclazida (especialmente na formulação MR) é preferível à glibenclamida por apresentar menor risco de hipoglicemia. Assim como na alternativa B, esta conduta atrasa a introdução necessária da insulina.\n\nResumo do caso: Paciente com HbA1c maior que 9% em uso de terapia oral dupla deve progredir para terapia combinada com insulina basal. A manutenção da metformina é fundamental para o sucesso do tratamento, e a titulação gradual da NPH garante o alcance da meta com segurança.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Diabetes Mellitus Tipo 2"
+    ],
+    "difficulty": 25.508218987128668,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:28.196Z"
+  },
+  {
+    "id": "AJUDA_b8272d99-4d8e-425e-b040-bd6b271c6277",
+    "originalId": "b8272d99-4d8e-425e-b040-bd6b271c6277",
+    "statement": "Primigesta, 18 anos de idade, comparece ao pré-natal com 33 semanas de gravidez. Refere falta de ar para a rotina domiciliar, sente-se cansada o tempo todo. Ultimamente, com mais dificuldade para dormir. Boa movimentação fetal, mas tem contrações dolorosas há 3 horas. Ao exame físico, apresentou-se descorada 1+/4+, FR de 18 ipm, FC de 118 bpm, saturação de O2 de 94%, PA de 130x90 mmHg. Sopro diastólico mitral 3+/6+ com reforço pré-sistólico, sopro sistólico aórtico 2+/6+ sem irradiações. Ausculta pulmonar com estertores e sibilos esparsos. Edema membros inferiores 2+/4+. Abdome gravídico, AU 30 cm, BCF+, dinâmica 3 contrações fracas em 10 minutos. Colo médio posterior, 4 cm de dilatação, bolsa íntegra, cefálico.\n\nApós a conduta inicial e estabilização, a paciente apresenta a cardiotocografia a seguir: \n\nNeste momento, deve-se realizar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Peridural.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Atosibano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Parto cesárea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Conduta expectante.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente é uma primigesta de 33 semanas com diagnóstico clínico de estenose mitral, evidenciado pelo sopro diastólico mitral com reforço pré-sistólico. Ela apresenta sinais de descompensação cardíaca (insuficiência cardíaca congestiva) desencadeada pelo esforço do trabalho de parto prematuro, manifestada por taquicardia (118 bpm), estertores pulmonares, saturação de oxigênio limítrofe (94%) e dispneia. \n\nNa estenose mitral, a taquicardia é extremamente prejudicial, pois reduz o tempo de enchimento diastólico ventricular, aumentando a pressão no átrio esquerdo e, consequentemente, a congestão pulmonar. A dor das contrações do trabalho de parto gera uma descarga adrenérgica que piora essa taquicardia e a hemodinâmica materna.\n\nANÁLISE DA CARDIOTOCOGRAFIA\n\nA imagem mostra um traçado cardiotocográfico de Categoria I (Normal). Observa-se uma linha de base em torno de 135-140 bpm, variabilidade moderada, presença de acelerações transitórias e ausência de desacelerações tardias ou variáveis. Na parte inferior, nota-se uma atividade uterina regular, confirmando o trabalho de parto. O feto está em boas condições de vitalidade no momento.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa A (Correta): A analgesia peridural é a conduta de escolha para gestantes cardiopatas em trabalho de parto, especialmente na estenose mitral. Ela reduz a dor e a ansiedade, bloqueando a descarga de catecolaminas (simpaticólise). Isso ajuda a controlar a frequência cardíaca materna e reduz a pré-carga e a pós-carga, melhorando a performance cardíaca e prevenindo o edema agudo de pulmão durante as contrações.\n\nAlternativa B (Incorreta): O atosibano é um tocolítico usado para inibir o trabalho de parto prematuro. Embora a paciente tenha 33 semanas, a prioridade absoluta é o manejo hemodinâmico da insuficiência cardíaca materna. Além disso, em casos de descompensação cardíaca grave, a manutenção da gestação pode ser contraindicada se colocar em risco a vida da mãe. O foco imediato deve ser o controle da estabilidade cardiovascular através da analgesia.\n\nAlternativa C (Incorreta): O parto vaginal é geralmente preferível ao parto cesárea em pacientes cardiopatas, pois a cesariana envolve maiores perdas sanguíneas, riscos infecciosos e oscilações hemodinâmicas bruscas durante a cirurgia. Como a cardiotocografia está normal (feto bem) e a paciente já apresenta dilatação (4 cm), o objetivo é proporcionar um parto vaginal estável com auxílio de analgesia peridural e, se necessário, fórcipe de alívio no segundo estágio.\n\nAlternativa D (Incorreta): A conduta expectante não é adequada, pois a paciente apresenta sinais claros de congestão pulmonar e instabilidade clínica (FC elevada, estertores, saturação baixa). Sem intervenção para controle da dor e da frequência cardíaca, o quadro de insuficiência cardíaca tende a evoluir para edema agudo de pulmão.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Vitalidade Fetal",
+      "Valvopatias",
+      "Assistência ao Parto"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/5be48ad70db2b577eeac506081837474164aa45b04c65c29a3703af9e1b1808b.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b8272d99-4d8e-425e-b040-bd6b271c6277_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:28.575Z"
+  },
+  {
+    "id": "AJUDA_b827929e-69f5-4efe-b904-5836d20d4fd8",
+    "originalId": "b827929e-69f5-4efe-b904-5836d20d4fd8",
+    "statement": "A causa mais frequente de obstrução, com acometimento do intestino delgado, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "carcinomatose peritoneal",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "neoplasia primária do intestino delgado",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hérnia da parede abdominal encarcerada",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aderências decorrentes de cirurgias prévias",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A obstrução intestinal mecânica é uma das causas mais frequentes de atendimento em prontos-socorros e de indicação de cirurgia de urgência. Para responder corretamente a essa questão, é fundamental conhecer a epidemiologia clássica do abdome agudo obstrutivo.\n\nAlternativa (a) Incorreta: A carcinomatose peritoneal é a disseminação de implantes tumorais pelo peritônio. Embora seja uma causa relevante de obstrução em pacientes com diagnóstico prévio de câncer (especialmente de ovário, estômago ou cólon), ela não é a causa mais comum na população geral quando comparada às aderências.\n\nAlternativa (b) Incorreta: As neoplasias primárias do intestino delgado são extremamente raras, representando uma porcentagem muito baixa de todos os tumores do trato digestivo. Elas raramente são o primeiro diagnóstico em um quadro de obstrução aguda, sendo muito menos frequentes que as bridas ou hérnias.\n\nAlternativa (c) Incorreta: As hérnias da parede abdominal (como as inguinais, femorais e umbilicais) já foram a principal causa de obstrução intestinal no passado. Atualmente, com a facilidade de acesso a cirurgias eletivas de correção de hérnias e o aumento do número de laparotomias realizadas, elas ocupam o segundo lugar nas estatísticas, sendo responsáveis por cerca de 10% a 15% dos casos.\n\nAlternativa (d) Correta: As aderências ou bridas são bandas de tecido fibroso que se formam entre as alças intestinais ou entre estas e a parede abdominal, geralmente após um insulto inflamatório ou cirúrgico. Estatisticamente, as aderências decorrentes de cirurgias prévias são a causa principal de obstrução do intestino delgado, respondendo por aproximadamente 60% a 75% dos casos em adultos. Qualquer intervenção prévia, desde uma apendicectomia até grandes laparotomias, pode gerar essas cicatrizes internas que, anos depois, podem causar o encarceramento ou a angulação de uma alça intestinal.\n\nEm resumo, a ordem de frequência para obstrução de intestino delgado no adulto é: 1) Aderências (bridas); 2) Hérnias; 3) Neoplasias. Se a questão se referisse ao intestino grosso, a causa principal seria o câncer colorretal.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:28.575Z"
+  },
+  {
+    "id": "AJUDA_b82ac65a-7e45-4005-8cf5-1f1fb25d48ab",
+    "originalId": "b82ac65a-7e45-4005-8cf5-1f1fb25d48ab",
+    "statement": "Criança, sexo feminino, branca, 1 ano e 2 meses de idade, apresenta febre de até 39,5 °C há um dia, sem outros sintomas. Há cerca de uma hora, apresentou crise convulsiva tônico clônica generalizada com duração de 4 minutos na vigência de febre, sendo levada ao hospital. Foi admitida já fora da crise, alerta e sem alterações no exame físico. Paciente previamente hígida, com vacinação em dia, tem antecedente familiar de irmão e pai com histórico de crises convulsivas na vigência de febre até os cinco anos de idade. Frente aos dados apresentados, a conduta indicada para a paciente é",
+    "options": [
+      {
+        "id": "A",
+        "text": "coletar eletrólitos, glicemia capilar e hemograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "coletar urina tipo 1 e urocultura por sondagem vesical.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "realizar ultrassom transfontanela e eletroencefalograma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "manter observação hospitalar por 24h, sem exames.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente do caso apresenta uma crise febril simples: crise tonico-clonica generalizada, duracao menor que 15 minutos (durou 4 minutos), retorno rapido ao estado de alerta, faixa etaria compativel (1 ano e 2 meses) e historia familiar positiva. Na crise febril simples com exame fisico normal e crianca em bom estado geral, nao ha necessidade de investigar o sistema nervoso central. A prioridade e investigar a causa da febre. Como a paciente e uma menina menor de 2 anos com febre sem foco evidente, a investigacao de infeccao do trato urinario (ITU), a causa bacteriana oculta mais comum, e mandatória.\n\nAnalise das alternativas:\n\nAlternativa A - Incorreta. A coleta de hemograma, glicemia e eletrolitos nao e indicada de rotina na crise febril simples em criancas com estado geral preservado, estando reservada apenas para situacoes em que haja suspeita clinica especifica de desidratacao, disturbio hidroeletrolitico ou sepse.\n\nAlternativa B - Correta. Em lactentes do sexo feminino menores de 24 meses com febre sem foco clinico, a principal hipotese bacteriana a ser descartada e a infeccao urinaria. Em criancas sem controle esfincteriano, a coleta de urina tipo 1 e urocultura deve ser realizada por cateterismo vesical para evitar contaminacao da amostra.\n\nAlternativa C - Incorreta. O eletroencefalograma e exames de neuroimagem (como ultrassom transfontanela ou tomografia) nao tem indicacao em crises febris simples com exame neurologico normal, pois nao predizem recorrencia de crises nem risco de epilepsia futura.\n\nAlternativa D - Incorreta. Apenas manter em observacao sem investigar a causa da febre e uma conduta inadequada, pois deixaria de diagnosticar uma possivel infeccao do trato urinario em uma lactente de risco.",
+    "exam": "USP",
+    "year": 2026,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Febre na Pediatria",
+      "Convulsão Febril",
+      "Infecção do Trato Urinário em Pediatria (ITU)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/68a56f7e1b4db634970c4b43335146a8d6c36966f729fa50789feb52e82ebcdb.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6b6b76c056197f08688a9f4f390a196b38c822f42ae6efa502f6606a20ad549b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:28.575Z"
+  },
+  {
+    "id": "AJUDA_b82b18b5-137b-4b66-a9e6-4037d86321b0",
+    "originalId": "b82b18b5-137b-4b66-a9e6-4037d86321b0",
+    "statement": "B., 28 anos, é bombeiro e participou ativamente de vários resgates de desabrigados na região do Vale do Taquari e na Região Metropolitana de Porto Alegre durante o evento climático extremo de maio de 2024. Ele resgatou inúmeras pessoas nos telhados de suas casas por meio de helicóptero e também por meio de embarcações, salvou crianças e animais de estimação, assim como encontrou várias vítimas fatais durante as buscas. Quatro meses após o episódio, quando buscou tratamento, B. seguia com pesadelos relacionados ao acontecimento, tendo lembranças recorrentes dos fatos acompanhadas de muita angústia. Dizia não querer mais participar de situações de resgate e evitava ao máximo se envolver nesse tipo de atividade. Sentia que sua memória e sua concentração estavam muito prejudicadas desde então. O médico de Atenção Primária na UBS, que lhe atendeu na primeira consulta, prontamente fez um diagnóstico e lhe sugeriu um tratamento. Considerando este caso, assinale a alternativa que preenche as lacunas abaixo CORREMENTE.\n\nO médico que o atendeu quatro meses após o evento climático extremo entendeu que B. tinha um diagnóstico de ______________________________________. O médico indicou tratamento psicoterápico e prescreveu um _________________________ para ser usado, em caso de remissão dos sintomas, por um período de _______________, antes do início da retirada, que deve ser gradual.",
+    "options": [
+      {
+        "id": "A",
+        "text": "transtorno de estresse agudo | benzodiazepínico | 6 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "transtorno de estresse agudo | inibidor seletivo da recaptação de serotonina | 12 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "transtorno de estresse pós-traumático | benzodiazepínico | 6 meses",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "transtorno de estresse pós-traumático | inibidor seletivo da recaptação de serotonina | 12 meses",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O caso clínico descreve um paciente com sintomas de revivescência (pesadelos e lembranças recorrentes), esquiva (evitar situações de resgate) e alterações cognitivas (prejuízo de memória e concentração) após exposição a eventos traumáticos graves.\n\nO ponto fundamental para a definição diagnóstica nesta questão é o tempo de evolução. Os sintomas surgiram e persistiram por quatro meses após o evento. No Transtorno de Estresse Agudo (TEA), os sintomas ocorrem em um período de 3 dias a 1 mês após o trauma. Quando os sintomas ultrapassam a duração de um mês, o diagnóstico passa a ser de Transtorno de Estresse Pós-Traumático (TEPT).\n\nQuanto ao tratamento, as diretrizes de prática clínica estabelecem os Inibidores Seletivos da Recaptação de Serotonina (ISRS) como a primeira linha farmacológica para o TEPT. Os benzodiazepínicos devem ser evitados como tratamento principal, pois não tratam os sintomas nucleares do transtorno, podem causar dependência e potencialmente interferem no processo de extinção do medo necessário na psicoterapia.\n\nSobre o tempo de manutenção, após a remissão dos sintomas, recomenda-se a continuidade do tratamento medicamentoso por um período de 12 meses para prevenir recaídas e garantir a estabilização neurobiológica do paciente.\n\nAnálise das alternativas:\n\na) Incorreta. O diagnóstico de transtorno de estresse agudo é limitado ao primeiro mês pós-trauma. Além disso, benzodiazepínicos não são a medicação de escolha para o tratamento de longo prazo.\n\nb) Incorreta. Embora o uso de ISRS esteja correto para sintomas persistentes, o diagnóstico de estresse agudo não se aplica a um quadro que já dura quatro meses.\n\nc) Incorreta. O diagnóstico está correto (TEPT), mas o uso de benzodiazepínicos como indicação principal e o período de apenas 6 meses de manutenção estão em desacordo com os protocolos para casos graves de TEPT.\n\nd) Correta. O preenchimento das lacunas reflete adequadamente o diagnóstico de TEPT (pela duração superior a 1 mês), o uso de ISRS (padrão-ouro farmacológico) e o tempo de manutenção de 12 meses (indicado para prevenir recidivas).\n\nAssociação com a imagem:\nA fotografia ilustra o cenário de atuação do profissional descrito na questão (bombeiro em operação de resgate aéreo durante as enchentes de 2024). A imagem reforça a natureza do evento estressor: o contato direto com situações de perigo de morte e sofrimento humano intenso, que são os gatilhos clássicos para o desenvolvimento do TEPT em profissionais de resgate.",
+    "exam": "UFCSPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "PR",
+    "tags": [
+      "TOC, Transtornos Somáticos, Dissociativos e do Estresse",
+      "Psicofarmacologia"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/3f298c51cd1c6da9d6997afed052a56845d5a3ceb409397a5679b6c9eee6d345.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_b82b18b5-137b-4b66-a9e6-4037d86321b0_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8c52e018675ec5b04fa1d4cc21e51eda77bde78be43692ea6d616342b26f99ba.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/f7bd275a66ead2f5f86f2db5cb3fbff8b216f3fc65749250c06abfa762d3dc76.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:29.091Z"
+  },
+  {
+    "id": "AJUDA_b82fe7e0-e4ba-46c2-8a90-2e11c42d3fa6",
+    "originalId": "b82fe7e0-e4ba-46c2-8a90-2e11c42d3fa6",
+    "statement": "Menino de 5 anos de idade, previamente hígido, apresenta febre de 38,5 a 39 °C e odinofagia há 2 dias. Não apresenta tosse ou coriza. Hoje, iniciou vermelhidão pelo tronco, que se espalhou para face e membros. Ao exame físico, encontra-se febril, corado, hidratado, anictérico, acianótico. Olhos sem alteração, com enantema oral, língua com papila avermelhadas e hipertróficas. Adenomegalia cervical dolorosa. Apresenta exantema micropapular, que desaparece à digitopressão, em face, tronco e membros, poupando região palmar, plantar e região perioral. Hiperpigmentação nas dobras cutâneas flexoras. Ausculta cardiopulmonar normal. Palpação de abdome sem alteração. Articulações sem sinais flogísticos. O teste rápido para estreptococo colhido em orofaringe resultou positivo.\nQual o diagnóstico mais provável desse paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sarampo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Varicela.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Exantema súbito.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Chikungunya.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Escarlatina.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O quadro clinico descrito e classico de Escarlatina, uma doenca infecciosa aguda causada por cepas de Streptococcus pyogenes (estreptococo beta-hemolitico do grupo A) produtoras de exotoxinas pirogenicas (eritrogenicas). \n\nO paciente apresenta uma faringoamigdalite estreptococica tipica (febre alta, odinofagia, adenomegalia cervical dolorosa e ausencia de sintomas virais como tosse ou coriza), associada aos achados caracteristicos da escarlatina:\n- Lingua em morango ou framboesa: papilas gustativas hipertroficas e avermelhadas.\n- Exantema micropapular: aspecto de lixa a palpacao, que clareia a digitopressao.\n- Sinal de Filatov: palidez perioral em contraste com o eritema malar.\n- Sinal de Pastia: acentuacao e hiperpigmentacao do exantema nas regioes de dobras flexoras (axilas, fossa antecubital e virilhas).\n- Teste rapido positivo para estreptococo na orofaringe, confirmando a etiologia bacteriana.\n\nAnalise das alternativas:\n\na) Incorreta. O sarampo caracteriza-se por um periodo prodromico com febre e sintomas catarrais intensos (tosse, coriza, conjuntivite com fotofobia), manchas de Koplik na mucosa oral e exantema maculopapular morbiliforme de progressao craniocaudal, nao micropapular em lixa.\n\nb) Incorreta. A varicela apresenta exantema intensamente pruriginoso e tipicamente polimorfico (pleomorfismo regional), no qual coexistem lesoes em diferentes estagios evolutivos: maculas, papulas, vesiculas, pustulas e crostas.\n\nc) Incorreta. O exantema subito (roseola infantum) afeta predominantemente lactentes (menores de 2 anos) e se caracteriza por febre alta isolada durante 3 a 5 dias que desaparece de forma subita (em crise), momento em que surge o exantema maculopapular que se inicia no tronco.\n\nd) Incorreta. A febre de Chikungunya e marcada por febre alta de inicio subito associada a poliartralgia/poliartrite simetrica intensa e frequentemente incapacitante, sem relacao com faringoamigdalite bacteriana ou sinais como Filatov e Pastia.\n\ne) Correta. Reune todos os elementos clinicos e epidemiologicos classicos (faringite estreptococica, lingua em morango, exantema em lixa, sinal de Filatov, sinal de Pastia) corroborados pelo teste rapido positivo para Streptococcus pyogenes.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Doenças Exantemáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:29.091Z"
+  },
+  {
+    "id": "AJUDA_b83396aa-28dc-4dce-8b6f-1ad8934ba817",
+    "originalId": "b83396aa-28dc-4dce-8b6f-1ad8934ba817",
+    "statement": "Em um paciente com tuberculose pulmonar e hepatotoxicidade ao esquema básico sem hepatopatia prévia, a reintrodução dos fármacos após a normalização da função hepática deve ser iniciada com a seguinte associação:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rifampicina e etambutol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Rifampicina e isonizada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Rifampicina e pirazinamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Isoniazida e pirazinamida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O esquema básico para o tratamento da tuberculose (RIPE: rifampicina, isoniazida, pirazinamida e etambutol) apresenta potencial de hepatotoxicidade. Quando um paciente manifesta toxicidade hepática (identificada por critérios clínicos ou laboratoriais, como elevação de transaminases acima de 3 a 5 vezes o limite superior), a conduta imediata é a suspensão de todos os fármacos. Após a melhora dos sintomas e a normalização das enzimas hepáticas (geralmente quando as transaminases retornam para valores abaixo de 2 vezes o limite superior), deve-se iniciar a reintrodução escalonada.\n\nO princípio da reintrodução é começar pelos medicamentos menos hepatotóxicos e finalizar com o mais hepatotóxico. A ordem preconizada pelo Ministério da Saúde do Brasil e por diretrizes de pneumologia é a seguinte:\n\n1. Rifampicina + Etambutol\n2. Isoniazida (após 3 a 7 dias de boa tolerância ao passo anterior)\n3. Pirazinamida (após mais 3 a 7 dias de boa tolerância)\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: Esta é a associação inicial. O etambutol é o fármaco com menor potencial de lesão hepática do esquema. A rifampicina, apesar de poder causar reações, é considerada menos hepatotóxica que a isoniazida e a pirazinamida no que tange à necrose hepatocelular. Por isso, essa dupla é a primeira a ser reintroduzida para garantir que o paciente tenha alguma cobertura terapêutica com o menor risco possível.\n\nAlternativa (b) Incorreta: A isoniazida possui um potencial hepatotóxico maior que a rifampicina. No protocolo de segurança, ela deve ser o segundo passo da reintrodução (após a rifampicina e o etambutol já estarem sendo tolerados), e não o passo inicial.\n\nAlternativa (c) Incorreta: A pirazinamida é o fármaco mais hepatotóxico de todos os quatro. Ela é responsável pela maioria dos casos de injúria hepática grave no esquema RIPE. Portanto, é sempre o último medicamento a ser reintroduzido no esquema sequencial.\n\nAlternativa (d) Incorreta: Esta alternativa combina os dois fármacos com maior potencial de agressão ao fígado (isoniazida e pirazinamida). Iniciar a reintrodução por estes fármacos elevaria drasticamente o risco de recidiva da hepatotoxicidade antes mesmo de se estabelecer uma base terapêutica segura.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T17:38:29.091Z"
+  }
+]

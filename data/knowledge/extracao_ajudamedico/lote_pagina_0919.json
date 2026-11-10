@@ -1,0 +1,504 @@
+[
+  {
+    "id": "AJUDA_ff29a2b5-7cc1-4325-abdc-4ba0409a337c",
+    "originalId": "ff29a2b5-7cc1-4325-abdc-4ba0409a337c",
+    "statement": "RN, 8 dias de vida, internado por sífilis congênita, vinha recebendo tratamento com penicilina cristalina desde o primeiro dia. Os exames laboratoriais revelaram VDRL sérico de 1:4, VDRL no líquor não reagente, líquor com proteínas totais de 69 mg/dl, 5 leucócitos/mm³ e glicose de 60 mg/dl. O raio X de ossos longos estava normal. A enfermagem informou que não estava mais conseguindo acesso vascular intravenoso periférico no bebê. Considerando as diretrizes brasileiras para o manejo dessa condição, qual é a conduta mais adequada para a finalização do tratamento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Completar o tratamento com penicilina benzatina em dose única.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Completar o tratamento com penicilina procaína intramuscular até o 10º dia de tratamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Completar o tratamento com penicilina procaína intramuscular até o 14º dia de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitar acesso venoso central e completar o tratamento com penicilina cristalina até o 10º dia de tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente é um recém-nascido em tratamento para sífilis congênita que perdeu o acesso venoso periférico. A análise liquórica descarta o diagnóstico de neurossífilis, uma vez que os parâmetros estão normais para o período neonatal (são considerados normais até 25 leucócitos/mm³ e proteínas até 150 mg/dL, além do VDRL não reagente).\n\nDe acordo com as diretrizes do Ministério da Saúde, o tratamento da sífilis congênita tem duração total de 10 dias. Na ausência de neurossífilis, o tratamento pode ser realizado com Penicilina Cristalina intravenosa ou Penicilina G Procaína intramuscular. Diante da perda do acesso venoso periférico, a transição para a via intramuscular é a conduta mais segura e adequada para completar o tempo restante até o 10º dia.\n\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): A penicilina benzatina em dose única é indicada apenas para recém-nascidos assintomáticos, filhos de mães inadequadamente tratadas, desde que toda a investigação complementar (VDRL sérico, líquor e radiografia) seja rigorosamente normal. Não é indicada para completar esquemas de 10 dias já iniciados.\n\nAlternativa B (Correta): Como o líquor é normal, a penicilina procaína por via intramuscular é plenamente eficaz para erradicar a infecção. O bebê deve apenas completar o ciclo total preconizado de 10 dias (tendo iniciado no 1º dia de vida e estando no 8º dia).\n\nAlternativa C (Incorreta): O tempo total de tratamento para sífilis congênita pelas diretrizes brasileiras é de 10 dias, não havendo indicação para extensão do esquema até o 14º dia neste cenário.\n\nAlternativa D (Incorreta): A passagem de acesso venoso central é um procedimento invasivo com riscos de infecção e complicações mecânicas. Esse procedimento só seria justificável se houvesse neurossífilis (situação em que a penicilina cristalina intravenosa é mandatória, pois a procaína não atinge níveis terapêuticos liquóricos adequados). Com líquor normal, a via intramuscular é a primeira escolha.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Sífilis na Gestação e Sífilis Congênita",
+      "Infecções Congênitas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:12.199Z"
+  },
+  {
+    "id": "AJUDA_ff2cd79f-15ee-46dd-a41b-8bc79f202c05",
+    "originalId": "ff2cd79f-15ee-46dd-a41b-8bc79f202c05",
+    "statement": "Quanto as glomerulopatias, analise as assertivas dos itens:\n\nI. Dismorfismo eritrocitário quando positivo em caso de hematúria macroscópica é sugestivo de doença glomerular.\nII. Glomerulonefrite pós-estreptocócicas deve ser tratado com corticoide, na forma de pulsoterapia.\nIII. O complemento sérico está consumido na síndrome nefrítica.\n\nDe acordo com essas assertivas marque a alternativa CORRETA.",
+    "options": [
+      {
+        "id": "A",
+        "text": "São verdadeiras as assertivas I e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "São verdadeiras as assertivas II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Apenas a assertiva III é verdadeira.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Todas as assertivas são falsas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Todas as assertivas são verdadeiras.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise da Assertiva I: Verdadeira. O dismorfismo eritrocitário consiste na alteração da morfologia das hemácias, que sofrem danos estruturais ao atravessarem a barreira de filtração glomerular e ao passarem pelos túbulos renais. A presença de acantócitos ou codócitos na urina é um marcador altamente específico de que o sangramento provém dos glomérulos. Portanto, tanto na hematúria microscópica quanto na macroscópica, o achado de dismorfismo (geralmente acima de 20% a 40% das hemácias) confirma a origem glomerular da doença.\n\nAnálise da Assertiva II: Falsa. A Glomerulonefrite Pós-Estreptocócica (GNPE) é uma condição autolimitada e o seu tratamento é essencialmente de suporte. O foco terapêutico é o controle da volemia e da pressão arterial através de restrição hídrica, dieta hipossódica e uso de diuréticos de alça (furosemida). O uso de corticoides ou pulsoterapia não está indicado no quadro clássico da doença, sendo reservado apenas para casos raros e graves de glomerulonefrite rapidamente progressiva (presença de crescentes na biópsia), o que é uma exceção à regra.\n\nAnálise da Assertiva III: Verdadeira. O consumo de complemento é uma característica fundamental para o diagnóstico diferencial das síndromes nefríticas. No caso da GNPE, que é o protótipo da síndrome nefrítica aguda, ocorre queda dos níveis de C3 e CH50 por consumo da via alternativa. Outras causas nefríticas que também cursam com complemento baixo são o lúpus eritematoso sistêmico, a glomerulonefrite membranoproliferativa e a endocardite infecciosa.\n\nAnálise das Alternativas:\n\na) Correta. Como as assertivas I e III estão corretas e a II está incorreta, esta é a alternativa que corresponde à análise técnica.\n\nb) Incorreta. A assertiva II é falsa, pois a GNPE não é tratada rotineiramente com pulsoterapia de corticoide.\n\nc) Incorreta. A assertiva I também é verdadeira, o que torna a afirmação de que \"apenas\" a III é verdadeira um erro.\n\nd) Incorreta. As assertivas I e III possuem fundamentação técnica correta na literatura médica.\n\ne) Incorreta. A assertiva II invalida esta opção, pois o tratamento da GNPE é de suporte e não baseado em imunossupressão rotineira.",
+    "exam": "UESPI",
+    "year": 2026,
+    "banca": "UESPI",
+    "uf": "PI",
+    "tags": [
+      "Doenças Glomerulares"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/26cb22f7b3bcdfd3d9d5afa035828c4f84b67b60b618bca18c147a9129cd7270.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/754dbdd47e6f090ee0d5f531967c2036f1e3dc47a45f6116db2f080cafe2f1af.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:12.199Z"
+  },
+  {
+    "id": "AJUDA_ff31eaa2-b1a5-4714-a057-c87408736ca8",
+    "originalId": "ff31eaa2-b1a5-4714-a057-c87408736ca8",
+    "statement": "No manejo agudo pós-parada cardíaca recomenda-se:",
+    "options": [
+      {
+        "id": "A",
+        "text": "hipotermia com temperatura-alvo < 32 °C.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "manutenção de pressão arterial sistólica > 90 mmHg.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "pressão arterial média > 55 mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "administração de corticosteroides.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "manutenção de hipocalemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O manejo pós-parada cardiorrespiratória (PCR) foca na estabilização hemodinâmica, ventilatória e neurológica para prevenir lesões secundárias e melhorar o prognóstico do paciente.\n\nAlternativa a: Incorreta. O controle-alvo de temperatura (TTM) recomenda manter a temperatura corporal entre 32 graus Celsius e 36 graus Celsius (ou até 37,5 graus Celsius, segundo evidências mais recentes que priorizam o controle da febre). Manter a temperatura abaixo de 32 graus Celsius não é recomendado de rotina, pois aumenta o risco de complicações graves, como arritmias, coagulopatias e infecções, sem benefício neurológico adicional comprovado.\n\nAlternativa b: Correta. De acordo com as diretrizes da American Heart Association (AHA) e do International Liaison Committee on Resuscitation (ILCOR), um dos objetivos primordiais após o retorno da circulação espontânea é evitar a hipotensão. Recomenda-se manter a pressão arterial sistólica acima de 90 mmHg para garantir uma pressão de perfusão cerebral adequada e suporte aos demais órgãos.\n\nAlternativa c: Incorreta. O alvo recomendado para a pressão arterial média (PAM) no período pós-PCR é geralmente superior a 65 mmHg. Uma PAM de 55 mmHg é insuficiente para assegurar a perfusão tecidual e cerebral em pacientes críticos que acabaram de sofrer um insulto isquêmico global.\n\nAlternativa d: Incorreta. O uso rotineiro de corticosteroides no manejo agudo pós-parada não é indicado pelas principais diretrizes. Embora existam discussões sobre seu uso em casos de choque séptico ou choque refratário, eles não fazem parte do protocolo padrão inicial de estabilização pós-PCR.\n\nAlternativa e: Incorreta. Deve-se buscar a normocalemia. A manutenção de hipocalemia (baixos níveis de potássio no sangue) é contraindicada, pois predispõe o paciente a uma maior instabilidade elétrica do miocárdio, aumentando o risco de novas arritmias ventriculares e de uma nova parada cardíaca.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Parada Cardiorrespiratória (PCR)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:12.199Z"
+  },
+  {
+    "id": "AJUDA_ff3204b2-4c40-4ad3-8d49-607e70c3c523",
+    "originalId": "ff3204b2-4c40-4ad3-8d49-607e70c3c523",
+    "statement": "Na saúde pública, a análise de bases de dados para o diagnóstico de saúde da comunidade utiliza indicadores epidemiológicos para identificar padrões e necessidades. Um exemplo de indicador derivado de bases de dados que permite mensurar a carga de doenças e avaliar o impacto de intervenções é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coeficiente de incidência, que avalia a frequência de novos casos em um intervalo de tempo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Taxa de letalidade, que mede a gravidade de uma doença específica em relação aos óbitos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Prevalência, que estima a proporção de casos existentes em uma população definida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Taxa de mortalidade geral, que calcula os óbitos por todas as causas em uma população.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Anos de Vida Perdidos por Incapacidade (DALY), que combina mortalidade e morbidade em uma única métrica.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda os indicadores epidemiológicos e sua aplicação na gestão da saúde pública, focando especificamente na mensuração da carga de doenças e no impacto de intervenções.\n\nAlternativa a: Incorreta. O coeficiente de incidência mede a velocidade com que novos casos surgem em uma população em um período determinado. Ele é essencial para entender a dinâmica de transmissão e o risco de adoecimento, mas não fornece uma visão completa da \"carga\" da doença, pois ignora o tempo de sobrevivência com sequelas ou a mortalidade precoce.\n\nAlternativa b: Incorreta. A taxa de letalidade indica a proporção de óbitos entre as pessoas que contraíram uma doença específica. É um excelente indicador da gravidade de uma doença e da eficácia da assistência hospitalar, porém não mensura o impacto social ou a morbidade residual daqueles que não faleceram.\n\nAlternativa c: Incorreta. A prevalência indica a proporção de indivíduos que apresentam uma condição em um determinado momento (casos novos e antigos). É muito utilizada para o planejamento de serviços e gestão de doenças crônicas, mas não traduz o impacto da mortalidade nem a perda de funcionalidade causada pela enfermidade.\n\nAlternativa d: Incorreta. A taxa de mortalidade geral é um indicador bruto que reflete o total de óbitos em uma população. Por ser influenciada fortemente pela estrutura etária e não considerar as causas específicas ou a idade em que os óbitos ocorreram, ela não é adequada para medir a carga detalhada de doenças ou o impacto de intervenções específicas.\n\nAlternativa e: Correta. O DALY (Disability-Adjusted Life Years, ou Anos de Vida Perdidos por Incapacidade) é o indicador padrão-ouro para mensurar a Carga Global de Doenças. Ele foi criado justamente para superar as limitações dos indicadores puramente de mortalidade ou de morbidade. O DALY combina, em uma única métrica, dois componentes: os anos de vida perdidos por morte prematura (YLL - Years of Life Lost) e os anos vividos com incapacidade ou saúde reduzida (YLD - Years Lived with Disability). Dessa forma, ele permite que gestores identifiquem quais doenças causam maior impacto na sociedade, não apenas matando, mas também incapacitando as pessoas, facilitando a avaliação da eficácia de intervenções em saúde pública.",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Sistemas de Informação em Saúde",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:12.199Z"
+  },
+  {
+    "id": "AJUDA_ff3503d4-2ce0-4b15-8e05-3d78be897197",
+    "originalId": "ff3503d4-2ce0-4b15-8e05-3d78be897197",
+    "statement": "Puérpera de 30 anos, parto vaginal espontâneo há 50 minutos, apresenta sangramento vaginal intenso, hipotensão arterial, taquicardia e pele fria. Ao exame, o útero encontra-se flácido e aumentado de volume. Considerando o quadro de hemorragia pós-parto (HPP), é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A principal causa de hemorragia pós-parto é a laceração de canal de parto, responsável por mais de 70% dos casos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O tratamento inicial consiste na reposição volêmica exclusiva, sem necessidade de medidas uterotônicas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A atonia uterina é a principal causa de hemorragia pós-parto e deve ser tratada inicialmente com massagem uterina bimanual e administração de uterotônicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A curetagem uterina é sempre a primeira escolha terapêutica diante de sangramento pós-parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A histerectomia deve ser indicada imediatamente em todos os casos de hemorragia pós-parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do Caso Clínico:\nO quadro descreve uma puérpera com sinais claros de choque hipovolêmico (hipotensão, taquicardia, pele fria) decorrente de uma hemorragia pós-parto (HPP). O achado de exame físico de útero flácido e aumentado de volume é patognomônico de atonia uterina, que é a incapacidade do miométrio de se contrair adequadamente para realizar a hemostasia (ligaduras vivas de Pinard).\n\nAnálise das Alternativas:\n\nAlternativa A: Incorreta. A principal causa de hemorragia pós-parto no mundo é a atonia uterina (distúrbio do tônus), sendo responsável por aproximadamente 70% a 80% dos casos. As lacerações de canal (trauma) são causas importantes, mas ocorrem em uma frequência muito menor, em torno de 20%.\n\nAlternativa B: Incorreta. Embora a reposição volêmica com cristaloides seja um pilar fundamental no manejo do choque hemorrágico para manter a perfusão tecidual, ela sozinha não trata a causa do sangramento. Se o útero está atônico, é imperativo o uso de medidas uterotônicas e manobras mecânicas para cessar a perda sanguínea.\n\nAlternativa C: Correta. Esta alternativa descreve exatamente a epidemiologia e a conduta inicial padrão para a atonia uterina. Diante de um útero flácido, o protocolo de HPP (conhecido como Quarto Estágio do Parto ou Período de Greenberg) preconiza a massagem uterina bimanual (manobra de Hamilton) e o uso imediato de ocitocina intravenosa como primeira linha. Outros uterotônicos, como metilergonovina e misoprostol, podem ser adicionados conforme a necessidade.\n\nAlternativa D: Incorreta. A curetagem uterina é o tratamento indicado quando a causa da hemorragia é a retenção de restos placentários (tecido). No caso clínico em questão, a descrição de útero flácido direciona o diagnóstico para atonia (tônus) e não para retenção. A curetagem é um procedimento invasivo e não é a primeira escolha universal para todo sangramento pós-parto.\n\nAlternativa E: Incorreta. A histerectomia puerperal é considerada uma medida de exceção e de última instância no manejo da HPP. Ela só deve ser indicada quando todas as medidas clínicas (uterotônicos), mecânicas (balão de tamponamento) e cirúrgicas conservadoras (suturas de B-Lynch, ligadura de artérias hipogástricas) falharem em controlar a hemorragia. Indicar histerectomia imediata em todos os casos seria uma conduta iatrogênica e desnecessariamente radical.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "HPP - Hemorragia Pós-Parto"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:12.199Z"
+  },
+  {
+    "id": "AJUDA_ff38cb2f-fd5f-41e2-8857-196f80d659b5",
+    "originalId": "ff38cb2f-fd5f-41e2-8857-196f80d659b5",
+    "statement": "A fase de resolução da inflamação envolve a liberação de mediadores específicos para limitar o processo inflamatório e promover a cicatrização. Qual é o papel das resolvinas nesse processo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estimular a produção de prostaglandinas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Promover a quimiotaxia de neutrófilos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Limitar a infiltração de leucócitos e promover a resolução da inflamação.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Induzir a vasodilatação e aumentar a permeabilidade vascular.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A inflamação não é um processo que simplesmente \"termina\" por exaustão; ela é um evento ativamente finalizado por mediadores lipídicos conhecidos como Mediadores Especializados de Pró-Resolução (SPMs), nos quais se incluem as resolvinas (derivadas dos ácidos graxos ômega-3, EPA e DHA).\n\nAbaixo, a análise detalhada de cada alternativa:\n\nAlternativa a) Incorreta. As prostaglandinas são mediadores lipídicos derivados do ácido araquidônico, geralmente associados ao início e à manutenção da resposta inflamatória (causando dor, febre e vasodilatação). As resolvinas atuam justamente no sentido oposto, ajudando a encerrar a sinalização que mantém a produção desses mediadores pró-inflamatórios.\n\nAlternativa b) Incorreta. A quimiotaxia de neutrófilos é uma característica da fase inicial da inflamação aguda, mediada por substâncias como o leucotrieno B4 e a interleucina-8. As resolvinas, por outro lado, inibem a migração de novos neutrófilos para o tecido lesionado, evitando que o dano tecidual se torne crônico ou excessivo.\n\nAlternativa c) Correta. O papel fundamental das resolvinas é orquestrar a \"limpeza\" do foco inflamatório. Elas fazem isso reduzindo a entrada de neutrófilos nos tecidos e, simultaneamente, estimulando os macrófagos a realizarem a eferocitose (fagocitose de restos celulares e de neutrófilos que entraram em apoptose). Esse processo é essencial para que o tecido retorne à homeostase e inicie a cicatrização.\n\nAlternativa d) Incorreta. A vasodilatação e o aumento da permeabilidade vascular são fenômenos vasculares típicos da fase de exsudação (início da inflamação), mediados principalmente por histamina, bradicinina e prostaglandinas. Na fase de resolução, na qual atuam as resolvinas, busca-se a redução do edema e a estabilização da barreira vascular.",
+    "exam": "IPSEMG",
+    "year": 2025,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Cicatrização de Feridas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/36121e6ae30a1b9f9a4c16c80f5e017b2a67fd1515a7a94a5000efb41857eb20.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/64ebb6979d4fe025bc43411c9c074c76803a8d58a6f550f13c9f264e41402c0b.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:12.199Z"
+  },
+  {
+    "id": "AJUDA_ff3929ba-5538-4af3-9446-b62de6bee468",
+    "originalId": "ff3929ba-5538-4af3-9446-b62de6bee468",
+    "statement": "A Insuficiência Cardíaca (IC) corresponde à incapacidade do coração em bombear o sangue adequadamente devido à disfunção sistólica, diastólica ou ambas, de um ou dos dois ventrículos. A respeito do assunto, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "No estágio A da doença, embora o paciente tenha o risco de desenvolvimento da insuficiência cardíaca, ainda não existem sinais de comprometimento estrutural cardíaco, ou sintomas da doença.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A presença de 2 critérios maiores ou 1 critério maior e 1 critério menor (critérios de Framingham) confirmam o diagnóstico de insuficiência cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diuréticos tiazídicos aumentam a sobrevida do paciente com IC.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A hipertensão arterial é a principal causa de insuficiência cardíaca, superando a obstrução das artérias do coração.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a): CORRETA. De acordo com a classificação evolutiva proposta pelas diretrizes da American Heart Association (AHA) e adotada pela Sociedade Brasileira de Cardiologia (SBC), a insuficiência cardíaca é dividida em quatro estágios (A, B, C e D). O Estágio A refere-se aos pacientes com alto risco de desenvolver a síndrome por apresentarem condições como hipertensão, diabetes ou doença arterial coronariana, mas que ainda não possuem doença estrutural cardíaca demonstrável (como hipertrofia ventricular ou dilatação) e nunca apresentaram sinais ou sintomas de insuficiência cardíaca.\n\nAlternativa (b): INCORRETA. Para a confirmação diagnóstica de insuficiência cardíaca por meio dos Critérios de Framingham, é necessária a presença de dois critérios maiores ou, alternativamente, um critério maior associado a dois critérios menores. A alternativa está incorreta ao afirmar que apenas um critério menor seria suficiente junto a um maior.\n\nAlternativa (c): INCORRETA. Os diuréticos, incluindo os tiazídicos e os diuréticos de alça (como a furosemida), são utilizados para o controle volêmico e alívio de sintomas congestivos (como edema e dispneia). Apesar de serem essenciais no manejo clínico, eles não demonstraram redução da mortalidade ou aumento da sobrevida em pacientes com insuficiência cardíaca. As medicações que modificam o desfecho de sobrevida são os betabloqueadores, os inibidores da ECA, os BRAs, os antagonistas da aldosterona, os inibidores do SGLT2 e o sacubitril-valsartana.\n\nAlternativa (d): INCORRETA. Epidemiologicamente, a cardiopatia isquêmica (causada pela obstrução das artérias coronárias) é considerada a principal etiologia da insuficiência cardíaca, especialmente na forma com fração de ejeção reduzida. A hipertensão arterial é um fator de risco primordial e uma causa frequente, mas a doença isquêmica cardíaca ocupa o posto de causa número um na maioria das estatísticas mundiais e nos grandes livros-texto.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Insuficiência Cardíaca"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:12.199Z"
+  },
+  {
+    "id": "AJUDA_ff3bd87f-f44a-459e-a1d0-dbbc67699b22",
+    "originalId": "ff3bd87f-f44a-459e-a1d0-dbbc67699b22",
+    "statement": "Paciente vítima de colisão auto x ônibus é trazido pelos bombeiros à sala de trauma com colar cervical. À monitorização: frequência cardíaca de 140 bpm, pressão arterial de 80 x 40 mmHg, frequência respiratória de 36 ipm, saturação de oxigênio (com máscara de O2) de 84%. Apresenta instabilidade pélvica, equimose na parede abdominal na projeção do cinto de segurança e fratura exposta de tornozelo esquerdo sem sangramento ativo. Qual a primeira conduta a ser tomada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intubação orotraqueal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Tipagem sanguínea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Drenagem torácica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realização de ultrassom FAST na sala de trauma.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão exige do candidato o conhecimento das prioridades no atendimento inicial ao paciente politraumatizado, seguindo o protocolo universal do ATLS (Advanced Trauma Life Support). A sequência sistematizada A-B-C-D-E visa identificar e tratar as ameaças à vida na ordem em que elas matam o paciente.\n\nAnálise do quadro clínico:\nO paciente apresenta sinais claros de instabilidade multissistêmica:\n- Taquipneia importante (36 ipm) e hipoxemia grave (saturação de 84% mesmo em uso de máscara de O2), o que indica falência respiratória iminente ou instalada (B).\n- Choque obstrutivo ou hipovolêmico grave, sugerido pela taquicardia (140 bpm) e hipotensão (80 x 40 mmHg), configurando um choque classe IV (C).\n\nEmbora o paciente tenha sinais evidentes de sangramento interno (instabilidade pélvica e sinal do cinto de segurança no abdome), a prioridade imediata é a via aérea e a ventilação.\n\nPor que a alternativa (a) está correta?\nA alternativa (a) é a conduta prioritária porque o paciente apresenta insuficiência respiratória grave (saturação de 84% sob oxigênio suplementar). De acordo com o ATLS, antes de prosseguir para a avaliação da circulação (C), deve-se garantir que o paciente tenha uma via aérea pérvia e oxigenação adequada. A intubação orotraqueal está indicada tanto pela hipoxemia refratária quanto pela provável necessidade de ventilação mecânica em um paciente com choque grave e possível rebaixamento do nível de consciência.\n\nPor que as outras alternativas estão incorretas?\nb) Tipagem sanguínea: Embora fundamental no manejo do choque hipovolêmico (etapa C), a coleta de exames e a preparação para transfusão não precedem a estabilização da via aérea e da ventilação em um paciente com hipoxemia crítica.\n\nc) Drenagem torácica: A drenagem de tórax seria indicada caso houvesse diagnóstico clínico de pneumotórax hipertensivo ou hemotórax maciço. A questão não descreve sinais específicos (como murmúrio vesicular abolido, desvio de traqueia ou hipertimpanismo) que justifiquem a drenagem como primeira conduta, antes mesmo de assegurar a via aérea.\n\nd) Realização de ultrassom FAST na sala de trauma: O FAST é uma ferramenta excelente para identificar líquido livre no abdome ou pericárdio na etapa C da avaliação. Contudo, realizar o exame antes de abordar a via aérea e a ventilação (A e B) em um paciente com 84% de saturação é um erro metodológico conforme o protocolo de trauma. O suporte respiratório é mais urgente no cenário descrito.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:12.199Z"
+  },
+  {
+    "id": "AJUDA_ff40fb9d-8af4-4656-aa85-20a9dc67e828",
+    "originalId": "ff40fb9d-8af4-4656-aa85-20a9dc67e828",
+    "statement": "D.B.V., primigesta, idade gestacional cronológica de 8 semanas, deu entrada no Pronto-Socorro Ginecológico e Obstétrico (PSGO) com queixa de sangramento vaginal escuro, de início há 1 dia. Nega dor tipo cólica. No exame ginecológico: Especular: mínima quantidade de sangue escuro coletado em fundo de saco posterior, sem sangramento ativo. Toque vaginal: colo impérvio. Sem dor à mobilização. Fundo uterino intrapélvico. De acordo com as informações apresentadas, trata-se de",
+    "options": [
+      {
+        "id": "A",
+        "text": "ameaça de abortamento.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "abortamento inevitável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "aborto incompleto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "abortamento completo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "gestação incipiente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, é fundamental analisar os achados do exame físico, especialmente o estado do colo uterino e a intensidade dos sintomas, que são os divisores de águas no diagnóstico dos sangramentos da primeira metade da gestação.\n\nAlternativa (a) Correta: A ameaça de abortamento é caracterizada por sangramento vaginal (geralmente em pequena ou moderada quantidade) em gestações do primeiro trimestre, mantendo o colo uterino fechado (impérvio). A ausência de dor do tipo cólica ou a presença de dor leve também são comuns nesse quadro. No caso clínico, a paciente apresenta exatamente esses sinais: sangramento discreto (sangue escuro em fundo de saco) e, crucialmente, o toque vaginal revela colo impérvio.\n\nAlternativa (b) Incorreta: No abortamento inevitável, o colo uterino já se encontra dilatado (pérvio), embora o produto da concepção ainda não tenha sido expulso. O quadro clínico costuma ser acompanhado de dor abdominal do tipo cólica e sangramento mais persistente, o que difere do caso apresentado, em que o colo está fechado.\n\nAlternativa (c) Incorreta: O aborto incompleto ocorre quando há eliminação parcial de tecidos ovulares. Clinicamente, o colo uterino está aberto (pérvio), o útero apresenta-se menor do que o esperado para a idade gestacional e o sangramento costuma ser persistente e moderado a acentuado, com presença de coágulos ou restos.\n\nAlternativa (d) Incorreta: No abortamento completo, todo o conteúdo uterino já foi eliminado. Embora o colo possa estar fechado no momento do exame, o útero encontra-se bem contraído e significativamente menor do que o esperado para a idade gestacional. O relato clínico típico envolveria uma dor intensa e sangramento volumoso prévios que regrediram após a expulsão dos tecidos.\n\nAlternativa (e) Incorreta: Gestação incipiente é um termo utilizado para descrever uma gestação muito inicial, geralmente em fase de implantação ou quando ainda não é possível visualizar o embrião ao ultrassom. Não é uma terminologia clínica para classificar quadros de sangramento vaginal no pronto-socorro.\n\nEm resumo: Sangramento na gestação inicial + Colo uterino fechado (impérvio) = Ameaça de Abortamento. Se o colo estivesse aberto (pérvio), as hipóteses seriam de abortamento inevitável ou incompleto.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:12.199Z"
+  },
+  {
+    "id": "AJUDA_ff40fc22-8740-443a-9eb9-4e61e06cf5d9",
+    "originalId": "ff40fc22-8740-443a-9eb9-4e61e06cf5d9",
+    "statement": "A Educação Permanente em Saúde (EPS) é uma estratégia político-pedagógica adotada pelo SUS para a formação e desenvolvimento dos trabalhadores. Diferentemente da Educação Continuada tradicional, a EPS baseia-se na:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realização de cursos de pós-graduação lato sensu (especialização) fora do ambiente de trabalho, visando a obtenção de certificação individual para progressão na carreira do servidor.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aplicação de provas e testes de conhecimento periódicos para avaliar a competência técnica dos profissionais e punir aqueles que não atingem a pontuação mínima exigida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transmissão vertical de conhecimentos técnicos atualizados, realizada geralmente em salas de aula ou auditórios, por especialistas externos que ensinam os protocolos mais recentes aos trabalhadores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aprendizagem significativa, que utiliza os problemas e desafios do cotidiano do trabalho (a realidade do serviço) como matéria-prima para a reflexão, a discussão em equipe e a transformação das práticas.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A Educação Permanente em Saúde (EPS) é um pilar fundamental da gestão do SUS, focada na transformação das práticas profissionais por meio da reflexão crítica sobre o cotidiano. Para resolver essa questão, é preciso diferenciar a EPS da Educação Continuada.\n\nAlternativa (a): Incorreta. A realização de cursos de especialização fora do ambiente de trabalho para fins de progressão na carreira caracteriza a educação formal ou o aperfeiçoamento individual. Embora importante, isso não constitui EPS, pois a EPS ocorre prioritariamente no ambiente de trabalho e foca no coletivo, não apenas na certificação individual.\n\nAlternativa (b): Incorreta. A lógica da EPS não é punitiva nem baseada em testes de conhecimento estanques. A proposta é pedagógica e colaborativa, visando a identificar lacunas no processo de trabalho para resolvê-las em equipe, e não selecionar ou punir profissionais por meio de provas periódicas.\n\nAlternativa (c): Incorreta. Esta alternativa descreve o modelo clássico de Educação Continuada. Nela, o ensino é vertical (do especialista para o aluno), fragmentado, geralmente realizado em ambientes de sala de aula e focado apenas na atualização técnica, sem necessariamente considerar o contexto específico de cada serviço de saúde.\n\nAlternativa (d): Correta. Esta é a definição exata de Educação Permanente em Saúde. A EPS utiliza a aprendizagem significativa, que é aquela que faz sentido para o trabalhador porque se conecta com seus problemas reais. O objeto de estudo é o próprio trabalho, permitindo que a equipe analise suas dificuldades e invente novas formas de produzir cuidado, gerando transformação institucional e profissional.",
+    "exam": "IPSEMG",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "MG",
+    "tags": [
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/111a79e8aee62c62e6b504d6bfddd46e6ae54f4ac44508dbdc7fa55abdd44942.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5c2d30c2aba3db50a6f799810ee2888991799ae65717cda20ed6459a17c53655.pdf"
+    },
+    "collectedAt": "2026-10-24T18:19:12.199Z"
+  }
+]

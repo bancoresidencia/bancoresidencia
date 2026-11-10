@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_75f34f34-d766-4a75-8613-0769e53306cf",
+    "originalId": "75f34f34-d766-4a75-8613-0769e53306cf",
+    "statement": "Na mesma enfermaria de Gastroenterologia, você observa paciente, sexo masculino, 45 anos, etilista, apresentando dor epigástrica intensa irradiada para dorso, ele refere que começou na noite anterior, acompanhada de náuseas e vômitos. Exame físico: PA 110×70 mmHg, FC 104 bpm, FR 22 irpm, abdome distendido, dor epigástrica à palpação profunda, sem sinais de irritação peritoneal. Laboratório: amilase e lipase elevadas, PCR 130 mg/L, creatinina 1,0 mg/dL. Ultrassonografia abdominal: vesícula biliar com microcálculos, sem dilatação de via biliar. Qual é a conduta inicial CORRETA para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Jejum até redução das enzimas pancreáticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ceftriaxona EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hidratação vigorosa com Ringer lactato e dieta enteral precoce quando tolerada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Metilprednisolona 60mg EV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão apresenta um caso clássico de pancreatite aguda, caracterizado pela dor epigástrica irradiada para o dorso (dor em barra), náuseas, vômitos e a confirmação laboratorial pela elevação das enzimas amilase e lipase. A presença de microcálculos na ultrassonografia aponta para a etiologia biliar, que é a causa mais comum, mesmo em pacientes etilistas.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Antigamente, acreditava-se que o repouso pancreático absoluto (jejum) deveria ser mantido até que os sintomas sumissem ou as enzimas normalizassem. Hoje, sabemos que o nível das enzimas pancreáticas não reflete a gravidade da doença nem serve como parâmetro para o retorno da dieta. O jejum prolongado prejudica a barreira intestinal, favorecendo a translocação bacteriana e infecções.\n\nAlternativa b) Incorreta. Não existe indicação de antibioticoterapia profilática na pancreatite aguda, mesmo em casos potencialmente graves (sugerida pela PCR de 130 mg/L). O uso de antibióticos fica restrito a casos de infecção comprovada, como necrose pancreática infectada ou focos infecciosos extrapancreáticos (colangite, pneumonia, infecção urinária).\n\nAlternativa c) Correta. O tratamento fundamental da pancreatite aguda nas primeiras 24 a 48 horas baseia-se em dois pilares: reposição volêmica e suporte nutricional. A hidratação vigorosa é essencial para garantir a perfusão da glândula pancreática e prevenir a necrose. O Ringer lactato é o fluido de escolha, pois está associado a uma menor incidência de síndrome de resposta inflamatória sistêmica (SIRS) em comparação ao soro fisiológico. Além disso, a nutrição precoce (assim que o paciente tolerar e a dor diminuir) é recomendada para manter a integridade da mucosa intestinal.\n\nAlternativa d) Incorreta. Os corticoides não têm papel no manejo inicial da pancreatite aguda biliar ou alcoólica. Eles poderiam ser considerados em casos raros de pancreatite autoimune, o que não condiz com a história clínica de etilismo e cálculos biliares apresentada.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Pancreatite Aguda e Crônica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:34.382Z"
+  },
+  {
+    "id": "AJUDA_75faebcf-81a9-452d-9b48-503384885e23",
+    "originalId": "75faebcf-81a9-452d-9b48-503384885e23",
+    "statement": "A transição demográfica e epidemiológica são processos interligados que descrevem a mudança do perfil de uma população.\n\nA transição demográfica brasileira é caracterizada por:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Aumento da fecundidade e queda da mortalidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Queda da fecundidade e envelhecimento populacional.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Manutenção da população jovem estável.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumento da mortalidade infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Redução da expectativa de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A transição demográfica refere-se ao processo de mudança no comportamento das taxas de natalidade e mortalidade de uma população, o que altera sua estrutura etária. No Brasil, esse processo acelerou-se a partir da segunda metade do século XX.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O Brasil apresenta uma queda acentuada e persistente da fecundidade desde a década de 1960, e não um aumento. Embora a mortalidade tenha de fato caído, o aumento da fecundidade invalidaria a caracterização da transição.\n\nAlternativa (b) Correta: Esta alternativa descreve perfeitamente o cenário brasileiro. A urbanização, a entrada da mulher no mercado de trabalho e o acesso a métodos contraceptivos levaram à queda da fecundidade. Somado a isso, a melhoria nas condições de saúde e saneamento aumentou a sobrevida, resultando em uma população com proporção cada vez maior de idosos (envelhecimento populacional).\n\nAlternativa (c) Incorreta: A proporção de jovens na população brasileira está diminuindo, e não estável. O estreitamento da base da pirâmide etária reflete a menor taxa de natalidade.\n\nAlternativa (d) Incorreta: A transição demográfica é acompanhada pela redução da mortalidade infantil, fruto de políticas de saúde pública, imunização e melhoria nutricional. O aumento da mortalidade infantil seria um sinal de retrocesso social, não de transição demográfica.\n\nAlternativa (e) Incorreta: Ocorre o oposto. Um dos marcos da transição é o aumento da expectativa de vida (longevidade), permitindo que uma parcela maior da população atinja idades avançadas.",
+    "exam": "UNIMED",
+    "year": 2026,
+    "banca": "UNIMED",
+    "uf": "PI",
+    "tags": [
+      "Processo Saúde-Doença"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a5d430f1753214f80f2c737336db73a69db52d7472443afc729631915446f788.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9a3f6cb6cbc537024e882370c3ab2d7aa0a03300f4f95c97575f76e2f7bff71a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:34.382Z"
+  },
+  {
+    "id": "AJUDA_76019cec-c1ff-4145-b848-547e8a4f8ae6",
+    "originalId": "76019cec-c1ff-4145-b848-547e8a4f8ae6",
+    "statement": "Leia o caso a seguir.\n\nAdolescente de 17 anos de idade, com sangramento uterino anormal, acne com desconforto psicológico e necessidade de contracepção.\n\nA paciente do caso descrito acima terá resultados positivos com o uso do",
+    "options": [
+      {
+        "id": "A",
+        "text": "implante liberador de etonorgestrel (Implanon).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "contraceptivo hormonal oral combinado contendo drospirenona.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "dispositivo intrauterino liberador de levonorgestrel (Mirena, Kyleena).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "contraceptivo hormonal oral contendo progestágeno isolado e contínuo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver o caso desta adolescente, o método escolhido deve atender a três critérios simultâneos: eficácia contraceptiva, controle do sangramento uterino anormal (SUA) e tratamento da acne com ação antiandrogênica.\n\nA alternativa (b) está correta porque os contraceptivos hormonais combinados (estrogênio + progestágeno) são a primeira linha de tratamento para acne em mulheres que buscam contracepção. O estrogênio aumenta a síntese hepática da SHBG (globulina transportadora de hormônios sexuais), o que reduz a testosterona livre circulante. A drospirenona, especificamente, é um progestágeno de quarta geração que possui ação antiandrogênica direta, bloqueando os receptores de androgênios na pele, além de regular o ciclo e reduzir o fluxo menstrual.\n\nA alternativa (a) está incorreta. O implante de etonorgestrel é um excelente método contraceptivo e eficaz para reduzir o fluxo menstrual (podendo causar amenorreia). No entanto, por ser um método de progestágeno isolado e ter um leve perfil androgênico, a acne é um dos seus efeitos colaterais mais comuns, podendo agravar o sofrimento psicológico da paciente.\n\nA alternativa (c) está incorreta. O DIU de levonorgestrel (Mirena/Kyleena) é padrão-ouro para o controle do sangramento uterino anormal e oferece alta eficácia contraceptiva. Entretanto, o levonorgestrel é um progestágeno derivado da testosterona, o que confere a ele um perfil androgênico. O uso do DIU hormonal frequentemente causa ou piora a acne, não sendo a escolha ideal quando o controle dermatológico é uma prioridade.\n\nA alternativa (d) está incorreta. As pílulas de progestágeno isolado (minipílulas ou pílula de desogestrel) não possuem estrogênio, elemento necessário para o aumento expressivo da SHBG. Além disso, esses progestágenos não possuem a propriedade antiandrogênica da drospirenona, sendo ineficazes para o tratamento da acne e podendo causar sangramentos irregulares (escapes) em alguns casos.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Planejamento Familiar"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:34.382Z"
+  },
+  {
+    "id": "AJUDA_760a3465-71d9-46bd-b977-a9ced94dd72b",
+    "originalId": "760a3465-71d9-46bd-b977-a9ced94dd72b",
+    "statement": "Pode-se afirmar, sobre a saúde da criança, que o Ministério da Saúde recomenda:",
+    "options": [
+      {
+        "id": "A",
+        "text": "observar, no registro do Cartão da Criança, a avaliação das condições do seu nascimento, principalmente se houver um Índice de Apgar de 0-4 no quinto minuto, pois há correlação leve com aumento de risco para paralisia cerebral e mortalidade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "na primeira consulta do RN na Atenção Básica, a realização do teste do reflexo vermelho, como avaliação ocular. Além da sua repetição, ao fim dos 12 meses de idade",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "sete consultas de rotina no primeiro ano de vida, ou seja, na primeira semana e no primeiro, segundo, quarto, sexto, nado e 12º mês. Além de duas consultas no segundo ano de vida (no 18º e no 24º mês) e, a partir do segundo ano de vida, consultas anuais, próximas ao mês de aniversário da criança",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "realizar o teste do pezinho entre o 10º e o 15º dia de vida, quando já ocorreu uma ingestão adequada de proteínas e é possível analisar-se com mais segurança o metabolismo da fenilalanina, evitando-se resultados falsos negativos para fenilcetonúria. Embora não seja o ideal, aceita-se que ele seja realizado até o 40º dia de vida",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) Incorreta: O Índice de Apgar avalia a vitalidade do recém-nascido. Um valor entre 0 e 3 no quinto minuto de vida é considerado muito baixo e indica asfixia grave, possuindo uma correlação significativa (e não leve) com o risco de mortalidade neonatal e o desenvolvimento de paralisia cerebral. Valores entre 4 e 6 indicam asfixia moderada. Portanto, o termo \"correlação leve\" torna a alternativa incorreta.\n\nAlternativa (b) Incorreta: O teste do reflexo vermelho (teste do olhinho) deve ser realizado, idealmente, ainda na maternidade, antes da alta do recém-nascido. Na Atenção Básica, ele deve ser conferido ou realizado na primeira consulta e repetido periodicamente em todas as consultas de rotina (puericultura), pelo menos até os três anos de idade, e não apenas uma única vez ao final dos 12 meses.\n\nAlternativa (c) Correta: Esta alternativa descreve com precisão o cronograma de consultas de rotina da criança recomendado pelo Ministério da Saúde e pela Sociedade Brasileira de Pediatria. O calendário estabelece sete consultas no primeiro ano de vida: na 1ª semana (7º dia) e nos meses 1, 2, 4, 6, 9 e 12. No segundo ano, as consultas ocorrem nos 18º e 24º meses. A partir dos dois anos de idade, as consultas passam a ser anuais, preferencialmente próximas ao mês de aniversário.\n\nAlternativa (d) Incorreta: De acordo com o Programa Nacional de Triagem Neonatal do Ministério da Saúde, o período ideal para a coleta do teste do pezinho é entre o 3º e o 5º dia de vida. Embora a ingestão de proteínas seja necessária para a detecção da fenilcetonúria, 48 horas de alimentação láctea já são suficientes. Coletar o exame entre o 10º e o 15º dia é considerado tardio, o que compromete a eficácia do programa, pois o objetivo é detectar e tratar precocemente doenças que podem causar sequelas irreversíveis se o tratamento não for iniciado nos primeiros dias de vida.",
+    "exam": "UFRJ",
+    "year": 2025,
+    "banca": "UFRJ",
+    "uf": "RJ",
+    "tags": [
+      "Cuidados Neonatais",
+      "Tópicos em Pediatria"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d27c8ea809ca20879b2f29c2a2d9311798423b6de2b35b66404dd78e6840642.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/385279c86498a7d13ef3fc851e931a95918aeba59c5774e8f51507e406389ab9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:34.382Z"
+  },
+  {
+    "id": "AJUDA_7610f39c-e51a-4263-a8b4-97bf12356a63",
+    "originalId": "7610f39c-e51a-4263-a8b4-97bf12356a63",
+    "statement": "O lúpus eritematoso sistêmico (LES) é a doença autoimune mais frequente na mulher em idade fértil. Nas pacientes portadoras da doença, a gestação é de alto risco, apesar da redução importante da morbidade e mortalidade materna e fetal nos últimos anos. Nesse contexto, assinale a alternativa que representa a melhor conduta em relação às pacientes gestantes portadoras de anticorpo anti-Ro.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitação precoce de ultrassonografia obstétrica morfológica de primeiro trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitação precoce de ecocardiografia fetal com doppler colorido.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Solicitação de ecocardiograma fetal com doppler colorido cerca de 7 dias antes do nascimento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Solicitação precoce de ultrassonografia obstétrica morfológica de segundo trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Uso de progesterona via vaginal para prevenção de parto prematuro.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A presença de anticorpos anti-Ro (SSA) e anti-La (SSB) em gestantes portadoras de Lúpus Eritematoso Sistêmico (LES) ou Síndrome de Sjögren está associada ao risco de Lúpus Neonatal. A complicação mais grave dessa condição é o bloqueio cardíaco congênito, que decorre da passagem transplacentária desses anticorpos maternos, causando um processo inflamatório seguido de fibrose no sistema de condução (nó atrioventricular) do coração fetal.\n\nAlternativa a) Incorreta. A ultrassonografia morfológica de primeiro trimestre, realizada entre a 11ª e a 14ª semana, tem como foco principal o rastreamento de aneuploidias (como a medida da translucência nucal) e a datação da gestação. Ela não é o exame indicado para o monitoramento da condução cardíaca fetal relacionada aos anticorpos do lúpus.\n\nAlternativa b) Correta. O ecocardiograma fetal com doppler colorido é o padrão-ouro para o acompanhamento dessas gestantes. O período crítico para o desenvolvimento do bloqueio cardíaco fetal situa-se entre a 18ª e a 24ª semana de gestação. O objetivo do exame é detectar precocemente sinais de sofrimento do sistema de condução, como o prolongamento do intervalo PR, ou bradicardia, permitindo a intervenção terapêutica em estágios potencialmente reversíveis (bloqueios de primeiro ou segundo grau).\n\nAlternativa c) Incorreta. Solicitar o exame apenas 7 dias antes do parto é uma conduta tardia e ineficaz. O dano ao sistema de condução ocorre predominantemente no segundo trimestre. Se o bloqueio cardíaco já estiver instalado há semanas, ele costuma ser irreversível (terceiro grau) e o acompanhamento precoce é fundamental para tentar evitar esse desfecho.\n\nAlternativa d) Incorreta. Embora a ultrassonografia morfológica de segundo trimestre avalie a anatomia do coração fetal, ela é um exame de rastreamento geral realizado habitualmente entre 20 e 24 semanas. Nas pacientes com anti-Ro positivo, o monitoramento deve ser mais específico e frequente, utilizando a ecocardiografia fetal detalhada para medir intervalos de condução elétrica, o que não faz parte do protocolo padrão da ultrassonografia morfológica.\n\nAlternativa e) Incorreta. O uso de progesterona vaginal é uma conduta voltada para a prevenção de parto prematuro em pacientes com antecedentes de prematuridade ou colo uterino curto. Não existe relação entre o uso de progesterona e a prevenção ou tratamento das complicações cardíacas fetais causadas pelos anticorpos anti-Ro.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Lúpus Eritematoso Sistêmico e Síndrome Antifosfolípide",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:34.382Z"
+  },
+  {
+    "id": "AJUDA_76119299-f796-4b7a-a772-c9d27c270c0d",
+    "originalId": "76119299-f796-4b7a-a772-c9d27c270c0d",
+    "statement": "O tratamento padrão de primeira linha mais indicado para câncer de ovário avançado é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Uso exclusivo de quimioterapia intraperitoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Quimioterapia neoadjuvante seguida de radioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cirurgia citorredutora seguida de quimioterapia com carboplatina e paclitaxel.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Tratamento com imunoterapia e radioterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O câncer de ovário é frequentemente diagnosticado em estágios avançados (III ou IV), o que exige uma abordagem terapêutica agressiva e combinada para o controle da doença. O objetivo central é a eliminação da massa tumoral macroscópica e o tratamento de micrometástases.\n\nAlternativa (a) Incorreta. A quimioterapia intraperitoneal é uma opção terapêutica que pode ser considerada para pacientes específicas com estágio III e que alcançaram uma citorredução ótima (resíduo tumoral menor que 1 cm). No entanto, ela nunca é utilizada de forma isolada; deve ser sempre associada à quimioterapia endovenosa e realizada após o procedimento cirúrgico. Devido à sua alta toxicidade e dificuldade de administração, não é o padrão universal para todos os casos avançados.\n\nAlternativa (b) Incorreta. A quimioterapia neoadjuvante é uma estratégia válida quando a paciente não apresenta condições clínicas para uma cirurgia de grande porte inicial ou quando a avaliação prévia indica que a citorredução completa não é tecnicamente possível. Contudo, após os ciclos iniciais de quimioterapia, o passo seguinte é a cirurgia de citorredução de intervalo, e não a radioterapia. O câncer de ovário não é rotineiramente tratado com radioterapia no cenário de primeira linha.\n\nAlternativa (c) Correta. Este é o tratamento padrão-ouro estabelecido pelos principais protocolos internacionais. O manejo começa com a cirurgia de citorredução primária (*debulking*), cujo principal fator prognóstico é a ausência de doença residual macroscópica ao final do procedimento (citorredução R0). Após a recuperação da cirurgia, a paciente deve receber quimioterapia adjuvante baseada no dubleto de platina e taxano. A combinação de carboplatina e paclitaxel é a escolha preferencial por apresentar excelente eficácia com perfil de toxicidade manejável.\n\nAlternativa (d) Incorreta. A imunoterapia e outras terapias-alvo, como os inibidores da PARP (ex.: olaparibe) e antiangiogênicos (ex.: bevacizumabe), têm ganhado papel fundamental no tratamento de manutenção, especialmente em pacientes com mutações no gene BRCA ou instabilidade genômica. Entretanto, elas são complementos à terapia padrão e não substituem o binômio cirurgia e quimioterapia citotóxica. A radioterapia, como mencionado, não faz parte do protocolo inicial para doença avançada.",
+    "exam": "FUBOG",
+    "year": 2025,
+    "banca": "Selecting",
+    "uf": "GO",
+    "tags": [
+      "Tumores Anexiais e Câncer de Ovário"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3a5ce553e772fbfeb27815b82c9423f2800431176e8e6972b558e07012f6a89b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/fdba4b8a1792dd0edac872f3181a9da66f959952b8f8d2c2fb084008b52f9b7d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:34.382Z"
+  },
+  {
+    "id": "AJUDA_761b40e0-1722-448a-9fce-cefee30a9ec2",
+    "originalId": "761b40e0-1722-448a-9fce-cefee30a9ec2",
+    "statement": "Lactente eutrófico com 4 meses e 15 dias, após 2 semanas de atendimento na UBS para atualização do calendário vacinal, é trazido à emergência com história de recusa da mamadeira, distensão abdominal, vômitos e diminuição na frequência das evacuações há 36h. Nega febre, alterações urinárias ou respiratórias. As fezes apresentam muco e sangue com consistência amolecida. Ao exame clínico, apresentava-se em regular estado geral, mucosas secas, choroso, com defesa à palpação abdominal. Aparelho cardiovascular e respiratório sem alterações. Abd.: distendido, com aumento de peristaltismo, massa abdominal palpável em flanco direito. Toque retal: presença de muco com sangue.\n\nO diagnóstico provável é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Invaginação intestinal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Estenose hipertrófica de piloro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Divertículo de Meckel.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alergia a proteína do LV.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O caso clínico descreve um lactente de 4 meses e meio com quadro clássico de invaginação intestinal (intussuscepção), a causa mais frequente de abdome agudo obstrutivo nessa faixa etária (3 meses a 3 anos). O paciente apresenta a sintomatologia típica de dor abdominal aguda em cólicas (evidenciada pelo choro e recusa alimentar), vômitos, distensão abdominal, massa palpável em flanco direito e fezes com muco e sangue (aspecto em geleia de framboesa). Há ainda um dado epidemiológico relevante: a atualização vacinal recente, momento em que geralmente se administra a vacina contra o rotavírus, que possui uma associação descrita com aumento do risco de invaginação intestinal nas primeiras semanas após a dose.\n\nAlternativa A: Correta. Reúne todos os elementos da tríade clássica e achados ao exame físico: obstrução intestinal aguda, massa abdominal cilíndrica palpável e eliminação de fezes mucossanguinolentas ao toque retal em lactente jovem.\n\nAlternativa B: Incorreta. A estenose hipertrófica de piloro ocorre mais precocemente (geralmente entre a 3ª e a 6ª semana de vida), cursando com vômitos alimentares não biliosos em jato logo após as mamadas, palpação da oliva pilórica no epigástrio e sem sangramento nas fezes.\n\nAlternativa C: Incorreta. O divertículo de Meckel se manifesta classicamente por sangramento digestivo baixo (hematoquezia) indolor e volumoso, sem sinais de abdome agudo obstrutivo ou massa palpável, exceto se atuar como ponto de fixação para a própria invaginação intestinal, sendo esta última a condição aguda diagnosticada.\n\nAlternativa D: Incorreta. A alergia à proteína do leite de vaca (forma de proctocolite) pode cursar com sangue e muco nas fezes, mas o paciente habitualmente permanece em bom estado geral, sem distensão com defesa abdominal, sem vômitos obstrutivos e sem massa palpável.",
+    "exam": "PUC",
+    "year": 2026,
+    "banca": "NucVest",
+    "uf": "SP",
+    "tags": [
+      "Cirurgia Infantil",
+      "Abdome Agudo Obstrutivo",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fa9b6342374107110bcb76326f8f2c7d8a5af69add57c21f9f148ce5641f3835.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a8f4e9f2a469e4486ff4c0f29923b5c8d87b2e5c8cbc74c23e66beef895fdce9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:34.382Z"
+  },
+  {
+    "id": "AJUDA_76269f68-498b-4282-beff-f6f5dcd9f966",
+    "originalId": "76269f68-498b-4282-beff-f6f5dcd9f966",
+    "statement": "Sobre abordagem de sintomas de tristeza e depressão da Atenção Primária à Saúde, marque a alternativa correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Se o paciente tem histórico de já ter utilizado um fármaco no passado, esse fármaco não deve ser usado em caso de novo episódio depressivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Durante a gestação, deve-se abordar os sintomas apenas com medidas não medicamentosas, pois não existe fármaco seguro para uso nesse período.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Terapias não medicamentosas, como psicoterapia e atividade física, não têm impacto relevante em quadros de depressão confirmada de grau moderado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Medicamentos antidepressivos não mostraram vantagens de eficácia na comparação com placebo se usados para pessoas com depressão unipolar leve.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "A abordagem do risco de suicídio não deve ser realizada na Atenção Primária, devendo ser feita exclusivamente em ambientes de internamento, pois não há instrumentos validados para a realização desta abordagem.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Alternativa a: Incorreta. A resposta terapêutica prévia é um dos critérios mais importantes na escolha de um antidepressivo. Se um paciente apresentou boa resposta e tolerabilidade a um fármaco no passado, esse medicamento é justamente a primeira escolha em caso de recidiva, pois aumenta a probabilidade de sucesso no novo tratamento.\n\nAlternativa b: Incorreta. Não existe fármaco totalmente isento de riscos na gestação, mas o tratamento medicamentoso é indicado quando o risco da depressão não tratada (como negligência com o pré-natal, desnutrição e risco de suicídio) supera o risco potencial da medicação. A sertralina e a fluoxetina são exemplos de fármacos frequentemente utilizados nesse período com perfil de segurança bem documentado.\n\nAlternativa c: Incorreta. Terapias não medicamentosas são pilares fundamentais no tratamento da depressão moderada. A psicoterapia (especialmente a Terapia Cognitivo-Comportamental e a Interpessoal) e a atividade física regular têm eficácia comparável aos medicamentos em muitos casos e, quando combinadas à farmacoterapia, potencializam as taxas de remissão.\n\nAlternativa d: Correta. Evidências científicas robustas, incluindo meta-análises de grande impacto, mostram que, em quadros de depressão leve, a diferença de eficácia entre antidepressivos e placebo é muito pequena ou estatisticamente insignificante. Por isso, as diretrizes de Atenção Primária recomendam iniciar o manejo de casos leves com medidas de higiene do sono, atividade física, psicoterapia ou \"espera vigilante\" antes de prescrever fármacos.\n\nAlternativa e: Incorreta. A avaliação do risco de suicídio é uma competência essencial da Atenção Primária. O médico de família deve questionar diretamente o paciente sobre ideação suicida e planos, utilizando instrumentos de apoio e estratificação de risco. A maioria dos casos de risco leve a moderado pode e deve ser acompanhada pela equipe de Saúde da Família em articulação com a Rede de Atenção Psicossocial.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Transtornos do Humor",
+      "Atenção Primária à Saúde",
+      "Psicofarmacologia",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:34.382Z"
+  },
+  {
+    "id": "AJUDA_762c7a47-f920-4b46-8cd4-8a73eb02f51e",
+    "originalId": "762c7a47-f920-4b46-8cd4-8a73eb02f51e",
+    "statement": "Face ao crescimento da categoria dos catadores de material reciclável e, considerando-se a vulnerabilidade social e os riscos ocupacionais aos quais estão sujeitos, um estudo teve por objetivo analisar a prevalência de asma, doença pulmonar obstrutiva crônica (DPOC) e diarreia em trabalhadores de cooperativas de materiais recicláveis do município de São Paulo, e os fatores associados à ocorrência desses agravos em seu ambiente e processos de trabalho. O estudo foi realizado na região metropolitana de São Paulo no período entre agosto e dezembro de 2013. Contou com a participação voluntária de todos os trabalhadores (homens e mulheres adultos) de cooperativas selecionadas. No questionário aplicado para cada um dos trabalhadores, foram incluídas questões para rastreamento de DPOC e asma. As variáveis dependentes foram prevalência de asma, DPOC e diarreia. As variáveis independentes consistiram de informações sociodemográficas, comportamentais e local de trabalho. Os dados foram coletados por meio de entrevista estruturada num mesmo e único momento.\n\nPara identificar possíveis fatores associados às prevalências de DPOC, asma e diarreia nos trabalhadores, foi calculada a razão de prevalências (RP) e o respectivo intervalo de confiança de 95% (IC95%) em modelos univariados (ou seja, análise de uma exposição com cada desfecho). Posteriormente, todas as variáveis de exposição foram incluídas em um modelo multivariado (análise ajustada – para controle da variável de confusão). Considerando-se que o tabagismo é um fator de confundimento para doenças respiratórias, essa variável foi incluída no questionário e utilizada nas análises. Assim, a variável tabagismo, refere-se ao viés:",
+    "options": [
+      {
+        "id": "A",
+        "text": "sistemático.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "de seleção.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "de aferição.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "aleatório.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender essa questão, é fundamental revisar os conceitos de erros em estudos epidemiológicos. Os erros podem ser divididos em dois grandes grupos: erros aleatórios e erros sistemáticos (vieses).\n\nO enunciado destaca o tabagismo como um \"fator de confundimento\" para as doenças respiratórias estudadas (DPOC e asma). O confundimento ocorre quando uma variável externa está associada tanto à exposição quanto ao desfecho, podendo mascarar ou distorcer a verdadeira relação entre eles.\n\nAnálise das alternativas:\n\na) Correta. O viés sistemático (ou erro sistemático) é aquele que distorce os resultados de forma direcionada, não sendo causado pelo acaso. Ele se divide classicamente em três categorias: viés de seleção, viés de aferição (informação) e viés de confundimento. Como o tabagismo é um fator de confundimento, ele se enquadra na categoria de viés sistemático. O pesquisador tenta controlar esse viés por meio de modelos multivariados (análise ajustada), como mencionado no texto.\n\nb) Incorreta. O viés de seleção ocorre quando há erros sistemáticos na forma como os participantes são escolhidos ou retidos no estudo, fazendo com que a amostra não represente adequadamente a população-alvo. Embora o tabagismo pudesse influenciar a participação, o enunciado foca no seu papel de variável que confunde a relação entre o ambiente de trabalho e a doença respiratória.\n\nc) Incorreta. O viés de aferição (ou de informação) surge quando os dados coletados sobre a exposição ou o desfecho estão incorretos (devido a falhas na memória do entrevistado, instrumentos descalibrados ou critérios diagnósticos inadequados). O tabagismo aqui é tratado como uma variável de ajuste para evitar o confundimento, e não como um erro na coleta dos dados em si.\n\nd) Incorreta. O erro aleatório está relacionado ao acaso e à variabilidade da amostra. Ele pode ser reduzido aumentando-se o tamanho da amostra (n). O confundimento, por outro lado, é uma distorção estrutural que não desaparece simplesmente aumentando o número de participantes; ele exige técnicas de ajuste na análise ou no desenho do estudo (como a regressão multivariada citada no texto).\n\nEm resumo, como o confundimento é uma das formas de distorção sistemática dos resultados, a variável tabagismo refere-se a um viés sistemático.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:34.382Z"
+  },
+  {
+    "id": "AJUDA_76466a34-3b52-4fc2-a626-2b96574550c0",
+    "originalId": "76466a34-3b52-4fc2-a626-2b96574550c0",
+    "statement": "Paciente de 40 anos procura atendimento médico pois deseja emagrecer. Não apresenta queixas clínicas e seus exames de glicemia e perfil lipídico encontram-se dentro da faixa de referência. Nega outras comorbidades ou fármacos em uso regular. Ao exame físico apresenta PA=120x80 e os seguintes dados antropométricos: Altura = 1,70m, peso = 89,59kg (IMC = 31), circunferência abdominal = 108cm, circunferência de quadril = 95cm. Levando-se em conta estes dados de exame físico e a história clínica e a nova proposta de avaliação diagnóstica para obesidade como podemos definir este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sobrepeso",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Obesidade grau 1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Obesidade clínica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Obesidade pré-clínica",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "A questão aborda uma mudança fundamental na forma de diagnosticar e classificar a obesidade, que deixa de focar exclusivamente no Índice de Massa Corporal (IMC) e passa a considerar a presença ou ausência de complicações metabólicas e funcionais. O paciente em questão apresenta IMC de 31 kg/m² e circunferência abdominal de 108 cm, o que preenche critérios antropométricos para obesidade. No entanto, ele é assintomático e possui exames de glicemia, perfil lipídico e pressão arterial dentro da normalidade.\n\nAlternativa a) Incorreta. O sobrepeso é definido por um IMC entre 25 e 29,9 kg/m². O paciente já atingiu um IMC de 31 kg/m², o que o enquadra em faixas superiores de adiposidade.\n\nAlternativa b) Incorreta. Embora o IMC de 31 kg/m² classicamente o coloque na categoria de obesidade grau 1 pela classificação tradicional da Organização Mundial da Saúde (OMS), a questão solicita especificamente a definição baseada na \"nova proposta de avaliação diagnóstica\". Essa nova visão prioriza a saúde metabólica e o impacto clínico da gordura corporal em vez de apenas o cálculo matemático do IMC.\n\nAlternativa c) Incorreta. A obesidade clínica é o termo reservado para casos em que o excesso de gordura corporal já resultou em danos à saúde, como diabetes, hipertensão arterial, dislipidemia, esteatose hepática ou limitações funcionais e mecânicas. O paciente do caso não apresenta nenhuma dessas alterações no momento.\n\nAlternativa d) Correta. A obesidade pré-clínica define o indivíduo que possui um IMC de obeso (maior ou igual a 30 kg/m²) ou um IMC de sobrepeso associado ao aumento da gordura visceral (circunferência abdominal aumentada), mas que ainda mantém a homeostase metabólica, ou seja, não possui doenças associadas. O termo ressalta que, embora não haja doença instalada, o risco aumentado justifica a intervenção para prevenir a progressão para a obesidade clínica. Essa nomenclatura faz parte de novas diretrizes que buscam fenotipar melhor o paciente com excesso de peso.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Obesidade e Síndrome Metabólica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:02:34.382Z"
+  }
+]

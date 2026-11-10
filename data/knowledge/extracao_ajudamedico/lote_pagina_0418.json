@@ -1,0 +1,488 @@
+[
+  {
+    "id": "AJUDA_7483c3b8-d338-4f99-a696-61ad71f7ad2f",
+    "originalId": "7483c3b8-d338-4f99-a696-61ad71f7ad2f",
+    "statement": "RN de 35 semanas recebeu reanimação neonatal em sala de parto com dois ciclos de ventilação pulmonar com pressão positiva. AP: pré-eclâmpsia materna, parto cesáreo. Exame físico aos 12 minutos de vida: desconforto respiratório com batimento de aleta nasal moderada, tiragem intercostal e subdiafragmática, murmúrio vesicular presente bilateralmente e gemência expiratória, SatO2: 94%, FC: 140 bpm, FR: 60 irpm, Tax: 36,6 ºC. A conduta inicial envolve",
+    "options": [
+      {
+        "id": "A",
+        "text": "oferta de oxigênio inalatório para obter SatO2 acima de 95%.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "cateter nasal de oxigênio 1-2 L/min e início de antibióticos na primeira hora de vida.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "suporte respiratório com CPAP, com concentração de oxigênio a 21%.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "CPAP nasal com concentração de oxigênio a 30% e aumento da temperatura do berço de reanimação.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descreve um recém-nascido (RN) pré-termo tardio (35 semanas) que apresenta sinais clássicos de desconforto respiratório (gemência, batimento de aleta nasal e tiragens) aos 12 minutos de vida. A gemência expiratória é um mecanismo compensatório em que o RN fecha parcialmente a glote para tentar manter a pressão expiratória final e evitar o colapso alveolar.\n\nAnálise das alternativas:\n\na) Incorreta. O objetivo na reanimação e estabilização neonatal não é manter a saturação de oxigênio (SatO2) acima de 95%. Valores entre 85% e 95% são adequados após os 10 minutos de vida. O oxigênio inalatório isolado trata a hipoxemia, mas não resolve a causa mecânica do desconforto (necessidade de recrutamento alveolar), que é o que o paciente sinaliza ao apresentar gemência e tiragens.\n\nb) Incorreta. O cateter nasal de oxigênio oferece fluxo, mas não garante a pressão positiva contínua necessária para estabilizar os alvéolos e aumentar a capacidade residual funcional. Além disso, não há indicação imediata de antibioticoterapia, pois a história clínica (pré-eclâmpsia e cesárea) sugere mais fortemente Taquipneia Transitória do RN ou Doença da Membrana Hialina, e não necessariamente um quadro infeccioso (sepse neonatal precoce).\n\nc) Correta. O CPAP (pressão positiva contínua em vias aéreas) é a conduta de escolha para o RN que apresenta desconforto respiratório, mas mantém saturação adequada. Ele fornece a pressão necessária para manter os alvéolos abertos, substituindo o esforço da gemência e reduzindo o trabalho respiratório. Como a SatO2 do paciente está em 94% (dentro do alvo esperado para 12 minutos de vida), deve-se utilizar ar comprimido (FiO2 a 21%), evitando os riscos da hiperóxia e do estresse oxidativo.\n\nd) Incorreta. Embora o suporte com CPAP esteja correto, não há justificativa para iniciar com uma concentração de oxigênio de 30% se o RN já atinge 94% em ar ambiente. O uso de oxigênio suplementar deve ser criterioso e guiado pela oximetria de pulso. Além disso, a temperatura axilar de 36,6 ºC está dentro da normalidade (36,5 ºC a 37,5 ºC), não havendo necessidade imediata de aumentar a temperatura do berço.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Distúrbios Respiratórios do Período Neonatal",
+      "Reanimação Neonatal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:33.235Z"
+  },
+  {
+    "id": "AJUDA_748978ee-3a91-4f86-8f7f-db64af92c697",
+    "originalId": "748978ee-3a91-4f86-8f7f-db64af92c697",
+    "statement": "Entre as experiências de grupo na APS, destaca-se, no Brasil, a Terapia Comunitária Integrativa (TCI). Uma das vantagens dessa terapia é o fato de que ela:",
+    "options": [
+      {
+        "id": "A",
+        "text": "pode ser oferecida a qualquer pessoa com sofrimento físico ou mental, independente do diagnóstico",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "pode ocorrer em qualquer espaço físico das UBSs, onde as pessoas possam se reunir e conversar",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "é realizada com a presença de um ou dois profissionais de saúde sem necessidade de formação específica para facilitar os encontros",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "é realizada por meio de encontros, que se dão em três etapas: acolhimento, escolha do tema e problematização do tema pelo grupo",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Terapia Comunitária Integrativa (TCI) é uma ferramenta poderosa na Atenção Primária à Saúde (APS), desenvolvida no Brasil pelo Dr. Adalberto Barreto. Ela foca na construção de redes de apoio social e no compartilhamento de experiências. Abaixo, a análise detalhada de cada alternativa:\n\nAlternativa A (Correta): Uma das principais características da TCI é a sua horizontalidade e inclusão. Ela não se baseia no modelo biomédico de diagnóstico e tratamento de patologias, mas sim no acolhimento do sofrimento humano em suas diversas formas (emocional, social ou físico). Por não exigir um diagnóstico prévio, ela remove o estigma e permite que qualquer indivíduo da comunidade participe, fortalecendo o autocuidado e a resiliência coletiva.\n\nAlternativa B (Incorreta): Embora a TCI possa ser realizada em diversos locais, a afirmação está incorreta ao restringir o espaço apenas às Unidades Básicas de Saúde (UBSs). Um dos pilares da TCI é justamente a ocupação de espaços públicos e comunitários (centros culturais, igrejas, praças, escolas) para facilitar o acesso e a integração com o território. Além disso, o ambiente precisa permitir a formação de uma roda, garantindo que todos se vejam, o que é fundamental para a metodologia.\n\nAlternativa C (Incorreta): A TCI exige, obrigatoriamente, que o facilitador tenha passado por uma formação específica e sistemática. Não basta ser profissional de saúde; é necessário obter o título de terapeuta comunitário por meio de cursos reconhecidos por polos formadores. O facilitador precisa dominar as regras da técnica, como o não julgamento, a escuta ativa e a capacidade de conectar as dores individuais aos recursos da própria comunidade.\n\nAlternativa D (Incorreta): A metodologia da TCI é rigorosa e composta por cinco etapas bem definidas, e não três. As etapas são: 1) Acolhimento (com dinâmicas e músicas); 2) Escolha do tema (o grupo decide o que será discutido); 3) Contextualização (quem sugeriu o tema explica a situação); 4) Problematização (o grupo compartilha experiências semelhantes, buscando soluções coletivas); e 5) Encerramento (rituais de agregação e avaliação do que cada um leva do encontro). A alternativa omitiu etapas essenciais como a contextualização e o encerramento.",
+    "exam": "UERJ",
+    "year": 2026,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ff52ff675c3de4e71fa8b02b705bc2d71462d230e9f004b01163983b8d31230b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/45388d7d86021b1293113dc7a8e27033320a7404d3434355f6a6a48ac0cfb13a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:33.235Z"
+  },
+  {
+    "id": "AJUDA_748feb47-e757-42c3-bbeb-2ddec44728c6",
+    "originalId": "748feb47-e757-42c3-bbeb-2ddec44728c6",
+    "statement": "Paciente de 65 anos, gênero masculino, está internado na enfermaria de clínica médica para investigar volumoso derrame pleural em hemitórax direito visto no raio x de tórax, solicitado por queixa de dispneia progressiva há 2 semanas, com ortopneia e treptopneia. Paciente desconhece comorbidades, não faz uso de medicações e nega tabagismo ou etilismo. Foi realizada toracocentese diagnóstica com seguintes achados: aspecto amarelo-âmbar, DHL=180U/l, proteínas totais=5,8g/dl, celularidade com 38% de neutrófilos, 30% de linfócitos, 32% de monócitos, ADA=18U/I, glicose=60mg/dl ph=7,5. Exames séricos colhidos conjuntamente à toracocentese: DHL=240U/I (VR:125 a 250); proteínas totais=7,5g/dl (VR:6 a 8,3) albumina=4,0g/dl. Diante deste quadro, qual é a hipótese diagnóstica mais provável?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tuberculose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Neoplasia",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Pneumonia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "TEP",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver esta questão, o primeiro passo fundamental é classificar o derrame pleural como transudato ou exsudato utilizando os Critérios de Light.\n\nCritérios de Light (o líquido é um exsudato se preencher pelo menos um dos critérios abaixo):\n\n1. Relação Proteína do líquido pleural / Proteína sérica > 0,5. No caso: 5,8 / 7,5 = 0,77. (Presente)\n2. Relação DHL do líquido pleural / DHL sérico > 0,6. No caso: 180 / 240 = 0,75. (Presente)\n3. DHL do líquido pleural > 2/3 do limite superior da normalidade do soro (2/3 de 250 = 166,6). No caso: 180. (Presente)\n\nComo o paciente apresenta um EXSUDATO, passamos à análise das hipóteses diagnósticas baseadas na clínica e nos marcadores bioquímicos/citológicos:\n\na) Tuberculose: Incorreta. A tuberculose pleural é uma causa comum de exsudato, porém ela cursa classicamente com níveis elevados de Adenosina Deaminase (ADA), quase sempre acima de 40 U/I. O valor de 18 U/I encontrado no paciente torna este diagnóstico muito improvável (alto valor preditivo negativo). Além disso, a TB costuma apresentar um predomínio linfocitário mais acentuado e raramente cursa com pH tão alcalino (7,5).\n\nb) Neoplasia: Correta. Esta é a principal hipótese diagnóstica. O paciente tem 65 anos e apresenta um derrame pleural volumoso (característica frequente em neoplasias). O líquido é um exsudato, o ADA é baixo (afastando TB) e a glicose e o pH estão em níveis normais ou limítrofes, o que é comum em fases iniciais de malignidade pleural. O aspecto amarelo-âmbar e a celularidade com presença de monócitos e linfócitos corroboram a cronicidade do processo neoplásico.\n\nc) Pneumonia: Incorreta. O derrame parapneumônico geralmente se manifesta com quadro clínico infeccioso agudo (febre, tosse e dor pleurítica). Laboratorialmente, espera-se um predomínio nítido de neutrófilos (geralmente acima de 50%). Se fosse um derrame parapneumônico complicado ou empiema, observaríamos também queda acentuada da glicose (menor que 60 mg/dL) e do pH (menor que 7,2), o que não ocorre aqui.\n\nd) TEP (Tromboembolismo Pulmonar): Incorreta. Embora o TEP possa causar exsudatos pleurais, o derrame costuma ser de pequeno volume, unilateral e associado a um quadro de dispneia súbita com dor pleurítica. O caso descreve um derrame volumoso e dispneia progressiva de duas semanas, o que aponta mais fortemente para causas expansivas ou crônicas, como a neoplasia.\n\nResumo: A combinação de idade avançada, derrame volumoso, critérios de exsudato e, crucialmente, um ADA baixo, direciona o raciocínio clínico para a hipótese de Neoplasia.",
+    "exam": "FAMERP",
+    "year": 2026,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Derrame Pleural"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9479a52b0729d3bf6f34b9da4a8be803dae1858b860cc8a89bac65c1006de352.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a41ce1b22ce60ad87b6227f76d13b0a692cdb92ec8b2da089673118cd009dbc2.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:33.235Z"
+  },
+  {
+    "id": "AJUDA_74915ff6-1206-4ecb-9436-7eaba7ff64c2",
+    "originalId": "74915ff6-1206-4ecb-9436-7eaba7ff64c2",
+    "statement": "A \"Educação Popular em Saúde\", inspirada na pedagogia de Paulo Freire, propõe uma ruptura com o modelo tradicional de \"Educação Sanitária\". Analise as afirmativas a seguir comparando as duas abordagens:\n\nI. A Educação Sanitária tradicional baseia-se no modelo \"bancário\", onde o profissional de saúde detentor do saber técnico transmite informações normativas à população leiga, visando a mudança de comportamento individual por meio da persuasão e do medo.\nII. A Educação Popular em Saúde valoriza os saberes tradicionais e a cultura da comunidade, promovendo o diálogo horizontal, a problematização da realidade e o empoderamento (empowerment) dos sujeitos para que atuem sobre os determinantes sociais de sua saúde.\nIII. Ambas as abordagens convergem no objetivo final de impor hábitos de vida cientificamente comprovados, diferenciando-se apenas na didática: a sanitária usa palestras e a popular usa teatro e música, mas mantendo a verticalidade do conteúdo médico.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "I apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I e II apenas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "II e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise detalhada das afirmativas:\n\nA afirmativa I está correta porque descreve com precisão o modelo tradicional de Educação Sanitária. Este modelo é caracterizado pela verticalidade, onde o profissional de saúde é o detentor exclusivo do saber e o paciente é um receptor passivo (modelo bancário). O foco é a mudança de comportamento individual através da transmissão de normas e regras, frequentemente utilizando a autoridade técnica ou o medo de complicações da doença como ferramentas de convencimento.\n\nA afirmativa II está correta pois sintetiza os fundamentos da Educação Popular em Saúde (EPS), baseada na pedagogia de Paulo Freire. A EPS busca o diálogo horizontal, onde o saber científico e o saber popular se encontram. O objetivo não é apenas informar, mas problematizar a realidade vivida pela comunidade para que ela compreenda os determinantes sociais do processo saúde-doença. Isso promove o empoderamento (autonomia) e a participação social, permitindo que os sujeitos se tornem agentes de transformação de sua própria realidade.\n\nA afirmativa III está incorreta porque as duas abordagens são filosoficamente opostas e não convergem no objetivo de impor hábitos. A Educação Popular em Saúde rejeita a imposição e a verticalidade. Se um profissional utiliza teatro ou música apenas como ferramentas para convencer a população a adotar condutas pré-estabelecidas sem reflexão crítica, ele está apenas praticando uma Educação Sanitária com novas técnicas, mas mantendo a lógica tradicional. A EPS exige a ruptura com a verticalidade do conteúdo médico.\n\nConclusão: \nAs afirmativas I e II estão corretas, enquanto a III está incorreta por confundir a mudança de metodologia didática com a mudança da essência pedagógica. Portanto, a alternativa correta é a letra (c).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:33.235Z"
+  },
+  {
+    "id": "AJUDA_7491c525-6463-4c52-a839-9a6137b05dcc",
+    "originalId": "7491c525-6463-4c52-a839-9a6137b05dcc",
+    "statement": "Face ao crescimento da categoria dos catadores de material reciclável e, considerando-se a vulnerabilidade social e os riscos ocupacionais aos quais estão sujeitos, um estudo teve por objetivo analisar a prevalência de asma, doença pulmonar obstrutiva crônica (DPOC) e diarreia em trabalhadores de cooperativas de materiais recicláveis do município de São Paulo, e os fatores associados à ocorrência desses agravos em seu ambiente e processos de trabalho. O estudo foi realizado na região metropolitana de São Paulo no período entre agosto e dezembro de 2013. Contou com a participação voluntária de todos os trabalhadores (homens e mulheres adultos) de cooperativas selecionadas. No questionário aplicado para cada um dos trabalhadores, foram incluídas questões para rastreamento de DPOC e asma. As variáveis dependentes foram prevalência de asma, DPOC e diarreia. As variáveis independentes consistiram de informações sociodemográficas, comportamentais e local de trabalho. Os dados foram coletados por meio de entrevista estruturada num mesmo e único momento.\n\nTrata-se de um estudo epidemiológico:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ecológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "transversal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para identificar o delineamento de um estudo epidemiológico, devemos analisar como a coleta de dados foi realizada em relação ao tempo e aos indivíduos.\n\nAnálise das alternativas:\n\na) Incorreta. O estudo ecológico utiliza dados agregados de populações ou grupos (como estatísticas de uma cidade ou país) e não dados individuais. No caso descrito, os pesquisadores aplicaram questionários diretamente a cada trabalhador, caracterizando uma análise baseada em indivíduos, o que exclui o delineamento ecológico.\n\nb) Correta. O estudo transversal (ou seccional) é caracterizado pela coleta de dados de exposição e desfecho em um único momento no tempo, funcionando como uma \"fotografia\" da situação. O texto deixa claro que os dados foram coletados por meio de entrevista estruturada em um \"mesmo e único momento\" e foca na \"prevalência\" das doenças. Essas são as marcas registradas de um estudo transversal.\n\nc) Incorreta. O estudo de coorte é um estudo longitudinal e prospectivo. Nele, seleciona-se um grupo de pessoas expostas a um fator e outro grupo não exposto, acompanhando-os ao longo do tempo para observar quem desenvolverá a doença no futuro (incidência). O estudo da questão não fez acompanhamento temporal, apenas uma coleta pontual.\n\nd) Incorreta. O estudo de caso-controle é retrospectivo. Ele parte de pessoas que já possuem a doença (casos) e as compara com pessoas saudáveis (controles) para investigar, no passado, a exposição a possíveis fatores de risco. O enunciado descreve uma análise simultânea de todos os trabalhadores de uma cooperativa, sem separar previamente grupos de doentes e saudáveis para olhar para o passado.\n\nConclusão: A característica de coletar dados sobre exposição e doença simultaneamente em indivíduos de uma população definida define o estudo como transversal.",
+    "exam": "UNITAU",
+    "year": 2026,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/37e934c42ae8dd7ff9750885c574acc49f93766eb47898d656adfa3dbd03dbd2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/5032cf5a65294800a208f392722f31456e041cc7e9e5a6f2134ceecbb8857fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:33.235Z"
+  },
+  {
+    "id": "AJUDA_7497990b-27d9-4fce-bf24-faf1a73f5ee7",
+    "originalId": "7497990b-27d9-4fce-bf24-faf1a73f5ee7",
+    "statement": "Em relação aos estudos de caso controle, os principais vieses são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "seleção e verificação.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "seleção e confusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "verificação e confusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "seleção, verificação e confusão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "seleção e memória.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "O estudo de caso-controle é um delineamento observacional, analítico e quase sempre retrospectivo. Ele parte de pessoas que já apresentam a doença (casos) e as compara com pessoas que não apresentam a doença (controles), buscando no passado a presença ou ausência de fatores de exposição. Devido a essa arquitetura, ele é classicamente associado a dois grandes vieses (erros sistemáticos):\n\nAlternativa (a) Incorreta: O viés de seleção é, de fato, um problema central, mas o viés de verificação (também chamado de viés de suspeição ou de detecção) é mais característico de estudos de testes diagnósticos, onde a busca pelo desfecho é feita de forma diferente entre os grupos conforme o resultado do teste.\n\nAlternativa (b) Incorreta: Embora o fator de confusão ocorra em praticamente todos os estudos observacionais, a questão busca os vieses mais específicos e marcantes do desenho de caso-controle. O viés de memória é uma preocupação muito mais específica deste desenho do que a confusão isoladamente.\n\nAlternativa (c) Incorreta: Exclui o viés de seleção, que é um dos pilares de erro em casos-controle, e mantém o viés de verificação e a confusão, que não definem as principais fragilidades deste método.\n\nAlternativa (d) Incorreta: Novamente inclui o viés de verificação, que não é típico do delineamento de caso-controle, além de ser uma alternativa que tenta agrupar vários conceitos sem focar nos dois principais problemas da pesquisa retrospectiva.\n\nAlternativa (e) Correta: Esta alternativa aponta os dois maiores desafios do pesquisador ao conduzir um caso-controle.\n1. Viés de Seleção: É o erro que ocorre na escolha dos participantes. Selecionar um grupo controle que seja comparável aos casos é a tarefa mais difícil desse estudo. Se os controles não representarem adequadamente a população que deu origem aos casos, os resultados serão inválidos. Um exemplo é o Viés de Berkson, quando se usa apenas pacientes hospitalizados.\n2. Viés de Memória (ou Recordação): Como o estudo olha para o passado, ele depende do relato dos participantes ou de prontuários. Pacientes doentes (casos) tendem a ruminar sobre o passado e lembrar com muito mais facilidade e detalhe de possíveis exposições do que o grupo saudável (controles), o que gera uma distorção nos dados de exposição.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:33.235Z"
+  },
+  {
+    "id": "AJUDA_74986f69-1e4d-4b32-b2e3-34bfd1c776da",
+    "originalId": "74986f69-1e4d-4b32-b2e3-34bfd1c776da",
+    "statement": "É uma Red Flag (bandeira vermelha) no diagnóstico de Doença de Alzheimer.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Logopenia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Agnosia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Propasognosia",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Alucinações",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "No diagnóstico da Doença de Alzheimer (DA), o termo \"red flag\" (bandeira vermelha) refere-se a sinais ou sintomas que são atípicos para a apresentação clássica da doença, sugerindo que o médico deve considerar outros diagnósticos diferenciais, como a Demência por Corpos de Lewy ou a Demência Frontotemporal.\n\nAlternativa a) Incorreta. A logopenia (dificuldade em encontrar palavras, com pausas na fala, mas mantendo a compreensão) é a característica principal da variante logopênica da Afasia Progressiva Primária. Atualmente, sabe-se que a grande maioria dos pacientes com essa variante apresenta a patologia da Doença de Alzheimer no cérebro. Portanto, é um achado compatível com o espectro da doença, não uma \"red flag\".\n\nAlternativa b) Incorreta. A agnosia é a incapacidade de reconhecer objetos, sons ou estímulos apesar de a função sensorial estar preservada. Ela faz parte dos \"quatro As\" clássicos da Doença de Alzheimer (Amnésia, Afasia, Apraxia e Agnosia) e reflete o comprometimento das áreas corticais associativas.\n\nAlternativa c) Incorreta. A prosopagnosia (incapacidade de reconhecer faces familiares) é uma forma específica de agnosia visual. Pode ocorrer na Doença de Alzheimer, especialmente na variante de Atrofia Cortical Posterior ou conforme a doença progride para os lobos temporal e occipital. Não é considerada um sinal de alerta para exclusão de DA.\n\nAlternativa d) Correta. Alucinações visuais precoces são consideradas uma importante \"red flag\" no diagnóstico da Doença de Alzheimer. Embora pacientes com Alzheimer em estágio avançado possam apresentar sintomas psicóticos, a presença de alucinações logo no início do quadro clínico é um critério central para o diagnóstico de Demência por Corpos de Lewy. Outras bandeiras vermelhas importantes incluem parkinsonismo de início precoce, flutuações cognitivas marcantes, alterações de comportamento precoces (sugestivas de Demência Frontotemporal) e evolução rápida (sugestiva de doenças priônicas).",
+    "exam": "PSU",
+    "year": 2025,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Demências"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/402f0810226515cc16ca2fd03b4712e6908c2877991d884b1ffee84331ee1888.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6e2669dcc4e8a90d8dc7ba4be5682a8845db3643c6a6813a4c3956b77b70a204.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:33.235Z"
+  },
+  {
+    "id": "AJUDA_74a86b4a-9794-4868-a7f3-0badcf9fb7db",
+    "originalId": "74a86b4a-9794-4868-a7f3-0badcf9fb7db",
+    "statement": "Paciente de 37 anos, histerectomizada devido a história de tratamento para NIC II/III com margens livres, realizado há 3 meses. Procura o serviço de ginecologia para informações do seu seguimento. De acordo com as Diretrizes brasileiras para o rastreamento do câncer do colo do útero a recomendação correta para a paciente é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "suspensão da coleta do exame citopatológico devido as margens livres.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "rastreamento citológico 3 anos após a histerectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "exame citopatológico e colposcopia deveriam ter sido realizados no pós-operatório imediato.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "realizar exame citopatológico em 6 meses após a histerectomia, se negativo para atipias, suspender futuras coletas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "realizar exame citopatológico, inicialmente, em 6 e 12 meses após a histerectomia.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Para resolver esta questão, é fundamental dominar as recomendacoes do INCA (Instituto Nacional de Câncer) sobre o rastreamento citopatológico em mulheres histerectomizadas. O ponto chave aqui é diferenciar a histerectomia por causas benignas daquela realizada por lesões precursoras (NIC II e III).\n\nAnálise das alternativas:\n\nAlternativa A (Incorreta): A suspensão do rastreamento só é permitida em casos de histerectomia total por lesões benignas, desde que a paciente tenha exames anteriores normais. Mesmo com margens livres na peça cirúrgica, pacientes com história de NIC II/III mantêm risco de desenvolver Neoplasia Intraepitelial Vaginal (NIVA) devido ao efeito de campo do vírus HPV na mucosa do trato genital inferior.\n\nAlternativa B (Incorreta): O intervalo de 3 anos é o objetivo final do rastreamento de rotina. Após o tratamento de uma lesão de alto grau, a paciente entra em um protocolo de vigilância rigoroso (seguimento pós-tratamento) antes de poder retornar ao intervalo trienal comum.\n\nAlternativa C (Incorreta): Coletas no pós-operatório imediato são contraindicadas. O processo de cicatrização e a inflamação local geram atipias reparadoras que falseiam o resultado citopatológico, além do risco físico de manipulação da cúpula vaginal ainda em fase de cicatrização.\n\nAlternativa D (Incorreta): Apenas um exame negativo aos 6 meses é insuficiente para garantir a remissão da doença ou a ausência de lesões na cúpula. O protocolo brasileiro exige uma sequência de exames negativos para assegurar a segurança da paciente antes de qualquer flexibilização do seguimento.\n\nAlternativa E (Correta): Esta alternativa reflete exatamente a diretriz do INCA para pacientes tratadas de NIC II/III por meio de histerectomia total. O seguimento deve ser realizado com citopatológico de cúpula vaginal aos 6 e 12 meses após a cirurgia. Se ambos os resultados forem negativos, a paciente deve manter o seguimento anual por 5 anos (contados a partir do tratamento), para só então retornar ao rastreamento trienal.\n\nGabarito: Letra E.",
+    "exam": "UEPA",
+    "year": 2025,
+    "banca": "UEPA",
+    "uf": "PA",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/58d5abda7d0b777e115b1a3b335ae874148b4aaa7543efe44f49b7598710ab0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ed0f71a0d6ab5bd07a3fefee1a8b9b02eb9bdd9177eed6143f581a04b0b77233.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:33.235Z"
+  },
+  {
+    "id": "AJUDA_74a8a898-0bed-43ec-a150-7fdee2750ad2",
+    "originalId": "74a8a898-0bed-43ec-a150-7fdee2750ad2",
+    "statement": "As Normas Regulamentadoras (NR) estabelecem os parâmetros para a segurança e saúde no trabalho. A articulação entre a NR-7 (Programa de Controle Médico de Saúde Ocupacional - PCMSO) e a NR-9 (Programa de Prevenção de Riscos Ambientais - PPRA, atualizado para Avaliação de Riscos no PGR) é fundamental. Sobre essa relação e as diretrizes de saúde do trabalhador, registre V, para as afirmativas verdadeiras, e F, para as falsas:\n\n(__) O PCMSO deve ser planejado e implantado com base nos riscos à saúde identificados nas avaliações previstas nas demais NRs (especialmente a NR-9/PGR), tendo caráter de prevenção, rastreamento e diagnóstico precoce dos agravos à saúde relacionados ao trabalho.\n(__) A constatação de um agravo à saúde relacionado ao trabalho pelo médico coordenador do PCMSO obriga a empresa a emitir a Comunicação de Acidente de Trabalho (CAT), mesmo que não haja afastamento do trabalhador, e a reavaliar os riscos ocupacionais no PGR para adotar medidas de controle.\n(__) Os exames médicos ocupacionais (admissional, periódico, demissional) têm como objetivo principal selecionar os trabalhadores mais aptos fisicamente (\"supertrabalhadores\") para as funções de risco, excluindo aqueles com doenças preexistentes para evitar responsabilidade civil da empresa.\n(__) O custeio do PCMSO e de todos os procedimentos relacionados (exames, avaliações) é de responsabilidade integral do empregador, sendo vedada a cobrança de coparticipação do trabalhador nestes procedimentos específicos de saúde ocupacional.\n\nAssinale a alternativa que apresenta a sequência correta, de cima para baixo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "V, F, F, V.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "F, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "V, V, F, V.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "V, V, V, F.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das afirmativas:\n\nPrimeira afirmativa (V): Verdadeira. De acordo com a NR-7, o PCMSO e o PGR (antigo PPRA da NR-9) devem estar estritamente sintonizados. O PGR identifica os perigos e avalia os riscos, enquanto o PCMSO utiliza essas informações para planejar as ações de saúde, focando na prevenção e no diagnóstico precoce por meio de exames clínicos e complementares específicos para cada risco ocupacional.\n\nSegunda afirmativa (V): Verdadeira. Conforme a legislação previdenciária e as atualizações da NR-7, uma vez constatada uma doença profissional ou do trabalho, a empresa é obrigada a emitir a Comunicação de Acidente de Trabalho (CAT), independentemente de haver incapacidade laboral ou afastamento. Além disso, a ocorrência de um agravo indica uma falha nas medidas de prevenção, o que exige obrigatoriamente a reavaliação dos riscos no Inventário de Riscos do PGR e o ajuste das medidas de controle.\n\nTerceira afirmativa (F): Falsa. O objetivo dos exames ocupacionais não é a seleção discriminatória de trabalhadores saudáveis ou a exclusão de pessoas com patologias preexistentes. A finalidade é avaliar a compatibilidade da saúde do trabalhador com as exigências da função e monitorar possíveis impactos do trabalho na saúde. Utilizar exames para selecionar \"supertrabalhadores\" ou excluir candidatos por doenças não impeditivas configura prática discriminatória, vedada pela ética médica e pela legislação trabalhista.\n\nQuarta afirmativa (V): Verdadeira. A NR-7 é explícita ao determinar que todos os custos decorrentes do PCMSO, incluindo exames clínicos, exames complementares e avaliações especializadas, devem ser arcados integralmente pelo empregador. É terminantemente proibido repassar qualquer ônus financeiro ou cobrar coparticipação do trabalhador para a realização desses procedimentos obrigatórios.\n\nConclusão:\nA sequência correta é V, V, F, V.\n\nA alternativa correta é a letra (c).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:33.235Z"
+  },
+  {
+    "id": "AJUDA_74a95984-ac55-4f21-8513-34328bc38ce5",
+    "originalId": "74a95984-ac55-4f21-8513-34328bc38ce5",
+    "statement": "Tercigesta de 38 anos de idade, negra, inicia o pré-natal com 12 semanas de gestação. Considerando a presença de marcadores de risco para o desenvolvimento de pré-eclâmpsia, como medidas de prevenção, deve-se orientar",
+    "options": [
+      {
+        "id": "A",
+        "text": "repouso, prescrição de ácido fólico (100 mg/dia) e de cálcio (1 g/dia).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "atividade física (150 min/semana), prescrição de AAS (100 mg/dia) e de cálcio (1 g/dia).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "redução da atividade física, prescrição de AAS (150 mg/dia) e de cálcio (2 g/dia).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "atividade física (100 min/semana), prescrição de AAS (150 mg/dia) e de sulfato ferroso (300 mg/dia).",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA paciente descrita apresenta fatores de risco importantes para o desenvolvimento de pré-eclâmpsia: idade avançada (38 anos), etnia negra e a confirmação de marcadores de risco pelo enunciado. Para pacientes classificadas como de alto risco, as evidências científicas atuais e as diretrizes da FEBRASGO e da OMS recomendam uma abordagem baseada em mudanças de estilo de vida e profilaxia farmacológica, iniciada preferencialmente entre a 12ª e a 16ª semana de gestação.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa (a) Incorreta: O repouso absoluto ou relativo não é indicado para a prevenção de pré-eclâmpsia; estudos demonstram que ele não reduz a incidência da doença e pode aumentar o risco de fenômenos tromboembólicos. O ácido fólico é indicado para a prevenção de defeitos do tubo neural, e a dose de 100 mg/dia citada é extremamente elevada e fora de qualquer padrão clínico (o habitual é 0,4 mg a 5 mg).\n\nAlternativa (b) Correta: Esta alternativa segue os pilares da prevenção atual. \n1. Atividade física: A recomendação é de pelo menos 150 minutos de exercícios aeróbicos de intensidade moderada por semana. \n2. AAS (Aspirina): O uso de ácido acetilsalicílico em baixas doses (em geral 100 mg a 150 mg/dia) reduz significativamente o risco de pré-eclâmpsia pré-termo em pacientes de risco. \n3. Cálcio: A suplementação de cálcio (1 g a 2 g/dia) é fundamental em populações com baixa ingestão dietética do mineral (como é o caso frequente no Brasil), pois auxilia no controle da reatividade vascular.\n\nAlternativa (c) Incorreta: A recomendação de redução da atividade física é uma conduta ultrapassada. Atualmente, o estímulo ao exercício moderado é parte do manejo para melhorar a saúde metabólica e vascular da gestante.\n\nAlternativa (d) Incorreta: O sulfato ferroso é utilizado para prevenção e tratamento da anemia ferropriva, não possuindo papel na prevenção da pré-eclâmpsia. Além disso, o tempo de 100 minutos de atividade física semanal é inferior ao mínimo preconizado pelas principais diretrizes de saúde (150 minutos).",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Hipertensivas da Gestação",
+      "Pré-Natal"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T17:01:33.235Z"
+  }
+]

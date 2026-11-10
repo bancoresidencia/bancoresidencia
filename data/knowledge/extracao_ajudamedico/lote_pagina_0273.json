@@ -1,0 +1,478 @@
+[
+  {
+    "id": "AJUDA_4bc97e41-cf58-4743-8aa4-e610b3e61f84",
+    "originalId": "4bc97e41-cf58-4743-8aa4-e610b3e61f84",
+    "statement": "G.M.A., 28 anos, 36 semanas de idade gestacional, submetida à urocultura de rotina, em que o único agente isolado foi a Klebsiella pneumoniae e a contagem de colônias foi de 100.000 UFC/mL. Paciente assintomática. Assinale a alternativa que apresenta a conduta mais adequada diante desse caso.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fosfomicina trometamol 3 g VO em dose única.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Repetir urocultura em duas semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Não há necessidade de antibioticoterapia, pois a paciente é assintomática.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Não há necessidade de antibioticoterapia, pois a contagem de colônias foi inferior a 10⁶ UFC/mL.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Norfloxacino 500 mg VO de 12/12 horas por 3 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Tema: bacteriúria assintomática na gestação.\n\nConceito: bacteriúria assintomática é a presença de ≥100.000 UFC/mL de um único uropatógeno em urocultura de jato médio, sem sintomas. Na gestante, deve sempre ser tratada, mesmo sem sintomas. As alterações fisiológicas da gestação (dilatação ureteral e pielocalicial por ação da progesterona e compressão uterina, estase urinária, glicosúria) favorecem a ascensão bacteriana. Sem tratamento, até 20-30% evoluem para pielonefrite. Há também associação com trabalho de parto prematuro, baixo peso ao nascer e mortalidade perinatal. Por isso o rastreio com urocultura é feito no pré-natal, na primeira consulta ou entre 12 e 16 semanas, e o tratamento deve ser feito sempre que houver positividade.\n\nCaso: gestante de 36 semanas, assintomática, com urocultura mostrando Klebsiella pneumoniae em 100.000 UFC/mL, agente único. Isso preenche o critério de bacteriúria assintomática e indica tratamento.\n\nAnálise das alternativas:\n\na) Correta. A fosfomicina trometamol 3 g VO em dose única é uma opção segura na gestação e tem boa eficácia e adesão. Também são opções cefalexina, amoxicilina (conforme antibiograma) e nitrofurantoína (evitada no fim da gestação, perto do termo, pelo risco teórico de anemia hemolítica neonatal). Depois do tratamento, deve-se fazer urocultura de controle.\n\nb) Incorreta. Repetir a urocultura em duas semanas apenas atrasaria o tratamento. A repetição para confirmação só é discutida em situações de dúvida, como contaminação ou polimicrobiana. Aqui há um único agente em contagem significativa, e o tratamento é indicado.\n\nc) Incorreta. A ausência de sintomas não dispensa o tratamento na gestante. Esse é o motivo de existir o rastreio.\n\nd) Incorreta. O ponto de corte de 10⁶ UFC/mL não se aplica à gestante. O critério de bacteriúria assintomática é ≥10⁵ UFC/mL. O valor de 10⁵ é o clássico, e 10⁶ seria exigido em pielonefrite antiga ou em critérios mais antigos.\n\ne) Incorreta. As quinolonas, como o norfloxacino, são contraindicadas na gestação pelo risco de lesão de cartilagem de crescimento. Além disso, 3 dias de norfloxacino não é esquema padrão para este contexto.\n\nResposta: letra A.",
+    "exam": "Sírio Libanês",
+    "year": 2027,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "ITU - Infecção do Trato Urinário",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0790754c76bd10803fe5e04921a7cc5a7331ff16080a243863abd8a9d4aeca89.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/da3bb8eb9531a606006cf8425c3098ccab683742fd08ca34f8811fbc6fc048ef.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:31.372Z"
+  },
+  {
+    "id": "AJUDA_4bd7bd90-3230-45b1-b4f4-0d56f6ea2983",
+    "originalId": "4bd7bd90-3230-45b1-b4f4-0d56f6ea2983",
+    "statement": "Para se estabelecer a relação entre a exposição a hipotético fator de risco para a ocorrência de determinada doença, foram selecionados dois grupos de pessoas com caraterísticas semelhantes (100 pessoas em cada grupo), sendo um grupo exposto ao fator de risco e o outro não exposto. Ao longo de um ano, foram registrados 10 casos da doença no primeiro grupo e 5 casos no segundo grupo. Qual é o valor do risco atribuível nesse estudo?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.05",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "0.5",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "1",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "5",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "10",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão de epidemiologia, primeiro identificamos que se trata de um estudo de coorte, pois acompanhamos dois grupos (expostos e não expostos) ao longo do tempo para observar o surgimento de uma doença.\n\nO Risco Atribuível (RA), também conhecido como Diferença de Riscos, mede o excesso de incidência da doença que é especificamente causado pela exposição ao fator de risco. Ele representa o quanto da doença seria evitado se eliminássemos o fator de risco.\n\nA fórmula para o cálculo é: RA = Incidência no grupo exposto menos incidência no grupo não exposto.\n\nPasso 1: Calcular a incidência no grupo exposto.\nHouve 10 casos em um grupo de 100 pessoas.\nIncidência (expostos) = 10 / 100 = 0,10.\n\nPasso 2: Calcular a incidência no grupo não exposto.\nHouve 5 casos em um grupo de 100 pessoas.\nIncidência (não expostos) = 5 / 100 = 0,05.\n\nPasso 3: Calcular o Risco Atribuível.\nRA = 0,10 - 0,05 = 0,05.\n\nANÁLISE DAS ALTERNATIVAS:\n\na) Correta. Como demonstrado pelo cálculo (0,10 - 0,05 = 0,05), este é o valor da diferença absoluta de riscos entre os dois grupos.\n\nb) Incorreta. Este valor não corresponde à diferença de incidências. Se estivéssemos calculando o Risco Relativo (incidência expostos / incidência não expostos), o resultado seria 2 (0,10 / 0,05).\n\nc) Incorreta. Não existe operação matemática entre os dados fornecidos (10/100 e 5/100) que resulte em 1 para as medidas de associação usuais.\n\nd) Incorreta. O número 5 representa a diferença absoluta no número de doentes entre os grupos (10 doentes menos 5 doentes). No entanto, o risco é uma medida de incidência (frequência relativa); portanto, deve ser expresso em relação ao total da população estudada (5 em 100, ou seja, 0,05).\n\ne) Incorreta. O valor 10 é apenas o número absoluto de casos registrados no grupo exposto, não representando uma medida de comparação ou associação entre os grupos.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:31.372Z"
+  },
+  {
+    "id": "AJUDA_4bd8ccb9-f5ac-4f5d-b412-398da6612a5f",
+    "originalId": "4bd8ccb9-f5ac-4f5d-b412-398da6612a5f",
+    "statement": "Mulher de 21 anos, G1P0, com 27 semanas e 1 dia de gestação, procura Unidade Básica de Saúde para mostrar o resultado do exame de curva glicêmica (teste oral de tolerância à glicose 75 g), conforme descrito na seguinte tabela.\n\n| Exame | Resultado | Valor de referência |\n| :--- | :---: | :---: |\n| Glicemia de jejum | 89 mg/dL | < 92 mg/dL |\n| 1 hora após ingestão | 182 mg/dL | < 180 mg/dL |\n| 2 horas após ingestão | 152 mg/dL | < 153 mg/dL |\n\nAlém de orientação de dieta pobre em carboidrato e atividade física regular, qual a medida imediata deve ser adotada no seguimento do tratamento dessa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar dosagem de insulina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir curva glicêmica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Solicitar dosagem de HbA1c.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Monitorar a glicemia capilar.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Diagnóstico: diabetes mellitus gestacional (DMG). Segundo os critérios da IADPSG/OMS, adotados pela FEBRASGO, SBD e Ministério da Saúde, o TOTG 75 g é feito entre 24 e 28 semanas. Os pontos de corte são jejum ≥ 92 mg/dL, 1 hora ≥ 180 mg/dL e 2 horas ≥ 153 mg/dL. Um único valor alterado já basta para o diagnóstico. Nessa paciente, a glicemia de 1 hora (182 mg/dL) está acima do limite, então ela tem DMG. Os outros valores próximos do limite não mudam a conclusão.\n\nConduta: a primeira linha do tratamento é não farmacológica, com dieta orientada e atividade física. Junto com ela, deve-se iniciar imediatamente a automonitorização da glicemia capilar. Ela é feita em jejum e 1 hora ou 2 horas após as refeições, para avaliar se as metas estão sendo atingidas:\n- jejum < 95 mg/dL;\n- 1 hora pós-prandial < 140 mg/dL;\n- 2 horas pós-prandial < 120 mg/dL.\n\nSe após 1 a 2 semanas de medidas não farmacológicas cerca de 30% ou mais dos valores estiverem fora da meta, indica-se tratamento farmacológico, com insulina como primeira escolha. Outra indicação é a circunferência abdominal fetal ≥ percentil 75 na ultrassonografia.\n\nAnálise das alternativas:\n\na) Solicitar dosagem de insulina – Incorreta. A dosagem de insulina sérica não tem papel no diagnóstico nem no seguimento do DMG e não altera a conduta. Se a alternativa for lida como \"iniciar insulina\", também está errada: a insulina não é a medida imediata. Ela só é indicada se as metas não forem atingidas com dieta e atividade física, e isso só se sabe com a monitorização glicêmica.\n\nb) Repetir curva glicêmica – Incorreta. Um único valor alterado no TOTG 75 g já confirma o DMG, e não é necessário repetir o teste. Repetir apenas atrasaria o tratamento, numa gestante já com 27 semanas.\n\nc) Solicitar dosagem de HbA1c – Incorreta. A HbA1c não é usada para diagnosticar nem para acompanhar o DMG. Ela reflete a glicemia média de 2 a 3 meses e sofre interferência das alterações fisiológicas da gestação, como a hemodiluição e o aumento da renovação de hemácias. Seu uso na gestação fica restrito, por exemplo, à suspeita de diabetes prévio (overt diabetes) no início do pré-natal.\n\nd) Monitorar a glicemia capilar – Correta. É a medida imediata a ser adotada junto com dieta e exercício. Permite verificar se as metas glicêmicas estão sendo atingidas e define a necessidade de insulina.\n\nResposta: alternativa D.",
+    "exam": "ENAMED",
+    "year": 2027,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b738a44fd1967e02c5885adb225c8ecaf3fb078bfa038e48e03003d33adf0794.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d901a1e51c14859f21ebfe2d36b1ebffd2498cea37a8c4baaa65d1da73c9353d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:31.372Z"
+  },
+  {
+    "id": "AJUDA_4be78c7a-869d-4517-9091-26b722ff5186",
+    "originalId": "4be78c7a-869d-4517-9091-26b722ff5186",
+    "statement": "Mulher, 45 anos de idade, apresenta há 8 anos lesões eritematosas e descamativas, bem delimitadas, com eritema vermelho vivo e escamas branco-prateadas aderentes e esparsas no couro cabeludo, região sacral, cotovelos e joelhos. Sinal da vela e do orvalho sangrento estão presentes. Apresenta história de monoartrite de articulação interfalangeana proximal no 3° quirodáctilo direito.\nQual é o diagnóstico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lúpus eritematoso cutâneo crônico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Psoríase.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Artrite reumatoide.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dermatite seborreica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descrito é clássico de psoríase, uma doença inflamatória crônica da pele mediada por células T. Os principais pontos que confirmam o diagnóstico são:\n\n1. Morfologia e Localização das Lesões: As placas eritematodescamativas bem delimitadas, com escamas branco-prateadas e localização em superfícies extensoras (cotovelos e joelhos), couro cabeludo e região sacral, compõem a apresentação típica da psoríase vulgar (em placas).\n\n2. Fenômenos Semiológicos (Curetagem Metódica de Brocq): \n- Sinal da vela: Ao raspar a lesão, as escamas se soltam em lâminas que lembram a raspagem de uma vela.\n- Sinal do orvalho sangrento (Sinal de Auspitz): Após a retirada completa das escamas, surgem pequenos pontos de sangramento decorrentes do traumatismo dos capilares das papilas dérmicas, que estão alongadas e dilatadas na psoríase.\n\n3. Comprometimento Articular: A história de monoartrite em articulação interfalangeana proximal sugere artrite psoriásica. Cerca de 30% dos pacientes com psoríase cutânea podem desenvolver algum grau de artrite, que frequentemente envolve as articulações interfalangeanas.\n\nAnálise das alternativas incorretas:\n\na) Lúpus eritematoso cutâneo crônico: Caracteriza-se por lesões discoides que evoluem com atrofia central, cicatriz e alteração pigmentar. Embora possa ocorrer no couro cabeludo (causando alopecia cicatricial), não apresenta os sinais da vela ou de Auspitz e tem distribuição preferencial em áreas fotoexpostas.\n\nc) Artrite reumatoide: É uma doença sistêmica que causa poliartrite simétrica e erosiva, preferencialmente em pequenas articulações. Não explica as lesões cutâneas descritas, que são específicas da psoríase.\n\nd) Dermatite seborreica: Apresenta escamas mais gordurosas (oleosas) e amareladas, localizadas em áreas de maior densidade de glândulas sebáceas (sulco nasolabial, sobrancelhas, tórax central). Não costuma atingir joelhos e cotovelos com placas bem delimitadas, nem apresenta o sinal de Auspitz.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Espondiloartrites",
+      "Dermatoses Papuloescamosas"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:31.372Z"
+  },
+  {
+    "id": "AJUDA_4bf3c6b5-f15b-491f-8a7c-618d5dec75a2",
+    "originalId": "4bf3c6b5-f15b-491f-8a7c-618d5dec75a2",
+    "statement": "Uma mulher de 63 anos de idade, obesa, hipertensa, diabética e dislipidêmica, em uso irregular de anlodipino, metformina e sinvastatina, compareceu ao pronto‑socorro com relato de tosse, febre aferida de 38,2°C, coriza, mialgia e espirros há três dias, porém, nos últimos dois dias também percebeu edema de membros inferiores e dispneia importante que a fizeram procurar o pronto‑socorro. Ela relatou que realizou um teste recente na farmácia, influenza A positivo. Na admissão, apresentou: temperatura de 37,7°C; glasgow 15; PA 180 x 110; FC 118 irpm; e FR 26 irpm. A paciente segurava‑se à grade do leito devido à ortopneia, havia presença de estase jugular, pulso com ritmo irregular e ausculta com estertores de base até terço ápice bilateralmente. O eletrocardiograma da paciente apresentou: ausência de onda P; RR irregular; QRS estreito; e FC 118 bpm. Assinale a alternativa que corresponda ao exame de imagem compatível ao caso clínico apresentado.",
+    "options": [],
+    "officialAnswer": "B",
+    "medicalExplanation": "A paciente apresenta um quadro clássico de Insuficiência Cardíaca Descompensada (ICD) no perfil B (quente e úmido), manifestando-se como Edema Agudo de Pulmão. O gatilho foi uma infecção viral (Influenza A) associada a uma provável crise hipertensiva e arritmia (Fibrilação Atrial com resposta ventricular alta, evidenciada pela ausência de onda P e ritmo irregular no ECG). Os sinais de ortopneia, estase jugular, edema de membros inferiores e estertores crepitantes bilaterais até os ápices confirmam a congestão sistêmica e pulmonar grave.\n\nAnálise das alternativas baseada nas imagens:\n\nImagem A: Incorreta. A radiografia mostra uma opacidade consolidativa bem delimitada no lobo superior direito, compatível com pneumonia lobar ou atelectasia. Embora a paciente tenha febre, o exame físico aponta para uma congestão generalizada (estertores em ambos os pulmões até os ápices), o que não condiz com um foco isolado.\n\nImagem B: Correta. Esta imagem apresenta os achados típicos de congestão pulmonar grave e insuficiência cardíaca: aumento da silhueta cardíaca (cardiomegalia) e infiltrado intersticial-alveolar difuso e bilateral, com aspecto de \"asa de borboleta\" e proeminência dos hilos vasculares. É o padrão radiológico esperado para o Edema Agudo de Pulmão descrito no caso.\n\nImagem C: Incorreta. A imagem mostra um tórax dentro dos padrões de normalidade. A silhueta cardíaca tem tamanho normal e os campos pleuropulmonares estão limpos, sem sinais de congestão ou derrames, o que contradiz totalmente o exame físico da paciente.\n\nImagem D: Incorreta. A radiografia demonstra sinais de hiperinsuflação pulmonar, como o aumento da transparência (hiperlucência) e retificação das cúpulas diafragmáticas, achados comuns em doenças obstrutivas crônicas como o enfisema pulmonar (DPOC), e não de congestão aguda por volume.\n\nImagem E: Incorreta. Esta radiografia evidencia um pneumotórax volumoso à esquerda. Nota-se a ausência de trama vascular na periferia do hemitórax esquerdo e o colapso do parênquima pulmonar em direção ao hilo (o \"coto\" pulmonar). O quadro clínico da paciente é de congestão por preenchimento alveolar de líquido, e não por ar no espaço pleural.",
+    "exam": "SUS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Insuficiência Cardíaca",
+      "Fibrilação e Flutter Atrial"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2ea3f4c6266dcff2d9f95dfa1185923909fc10d73b84e7683cdfd1995a918d3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d5064fae01092acd46ccf9e78bd7aaa7d12cb6e5450c051922523e1a653be64f.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:31.372Z"
+  },
+  {
+    "id": "AJUDA_4bfd51ad-5db4-43fb-a5c5-a0c09f502812",
+    "originalId": "4bfd51ad-5db4-43fb-a5c5-a0c09f502812",
+    "statement": "Paciente do sexo masculino, de 45 anos é submetido à laparotomia exploradora de urgência após trauma abdominal grave. No segundo dia pós-operatório, a equipe nota aumento da frequência cardíaca, oligúria, hiperglicemia e balanço nitrogenado negativo. Estas manifestações clínicas são MAIS COMPATÍVEIS com qual fase da resposta orgânica ao trauma?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fase de Fluxo (Flow Phase).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Fase de Recuperação catabólica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Fase de Refluxo (Ebb Phase).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Fase de Resposta inflamatória sistêmica controlada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda a Resposta Endócrina, Metabólica e Imunológica ao Trauma (REMIT), classicamente descrita por Cuthbertson em duas fases principais: a fase Ebb (Refluxo) e a fase Flow (Fluxo).\n\nAnálise das alternativas:\n\na) Correta. A Fase de Fluxo (Flow Phase) ocorre após a estabilização hemodinâmica inicial, geralmente a partir de 24 a 48 horas após o trauma. Ela é caracterizada por um estado hipermetabólico e catabólico intenso. O aumento da frequência cardíaca e do débito cardíaco reflete a alta demanda metabólica. A hiperglicemia é causada pela resistência periférica à insulina e pelo aumento da gliconeogênese (induzidos por cortisol e catecolaminas). O balanço nitrogenado negativo é a marca registrada dessa fase, resultante da proteólise (quebra de proteínas musculares) para fornecer aminoácidos para a cicatrização e produção de proteínas de fase aguda. A oligúria mencionada pode persistir devido à ação do ADH e da aldosterona, que visam à retenção hídrica e de sódio no período pós-operatório imediato e mediato.\n\nb) Incorreta. A fase de recuperação, também chamada de fase anabólica, ocorre dias ou semanas após o trauma, quando o estresse agudo diminui. Nessa etapa, o metabolismo se estabiliza, o balanço nitrogenado torna-se positivo e o corpo começa a restaurar as reservas de proteína e gordura perdidas.\n\nc) Incorreta. A Fase de Refluxo (Ebb Phase) é a resposta imediata ao trauma (fase de choque), durando geralmente as primeiras 24 horas. Ela se caracteriza por uma \"queda\" geral do metabolismo: diminuição do débito cardíaco, redução do consumo de oxigênio, hipotermia e vasoconstrição. Embora a oligúria esteja presente por hipovolemia, os sinais de hipermetabolismo e o marcado balanço nitrogenado negativo do segundo dia pós-operatório são típicos da transição para a fase de fluxo.\n\nd) Incorreta. A resposta inflamatória sistêmica é um componente da REMIT, mas \"fase de resposta inflamatória sistêmica controlada\" não é uma nomenclatura técnica padronizada dentro da classificação de Cuthbertson para descrever as alterações metabólicas e cinéticas do trauma.\n\nEm resumo, o quadro de hipermetabolismo e catabolismo proteico no segundo dia pós-trauma define classicamente a Fase de Fluxo.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:31.372Z"
+  },
+  {
+    "id": "AJUDA_4c01c563-cd64-4175-af73-2ed92f31815f",
+    "originalId": "4c01c563-cd64-4175-af73-2ed92f31815f",
+    "statement": "Um jovem de 17 anos, pardo, classe social baixa, assintomático, comparece ao consultório acompanhado por sua mãe, que insiste na realização de rastreamentos extensos para infecções sexualmente transmissíveis (ISTs), incluindo HIV, hepatites, clamídia, gonorreia e sífilis, alegando que “é melhor prevenir antes que ele comece a vida sexual e pegue alguma coisa”. O jovem nunca teve relações sexuais.\nDe acordo com os campos da prevenção e a abordagem relacional do médico de família, qual a conduta mais apropriada neste cenário?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar todos os exames solicitados pela mãe como forma de prevenção secundária, pois a detecção precoce é sempre benéfica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar o jovem e a mãe para um infectologista, pois este é o especialista mais indicado para lidar com a prevenção de DSTs.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Sugerir que o jovem inicie um programa de profilaxia pré-exposição (PrEP) para HIV, dada a preocupação da mãe com a prevenção de ISTs.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Explicar à mãe que não há necessidade de exames, pois o jovem nunca teve relações sexuais, e focar apenas em orientações gerais de abstinência sexual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Explorar as preocupações da mãe e do jovem, fornecer educação em saúde sobre prevenção primária de IST, sem indicar exames de rastreamento para quem não teve exposição.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda os níveis de prevenção em saúde e as competências de comunicação e abordagem familiar na Atenção Primária à Saúde.\n\nAlternativa a: Incorreta. A prevenção secundária envolve o rastreamento e diagnóstico precoce em indivíduos que apresentam riscos ou exposição, o que não se aplica a um jovem que nunca iniciou a vida sexual. Realizar exames sem indicação clínica fere o princípio da prevenção quaternária, que busca proteger o paciente de intervenções médicas desnecessárias e de potenciais danos (como resultados falsos-positivos e ansiedade).\n\nAlternativa b: Incorreta. O Médico de Família e Comunidade é o profissional capacitado para realizar a educação em saúde e o aconselhamento sobre Infecções Sexualmente Transmissíveis (ISTs). Encaminhar o caso a um infectologista seria um uso inadequado dos recursos do sistema de saúde, já que não há uma patologia instalada ou um cenário de alta complexidade.\n\nAlternativa c: Incorreta. A PrEP (Profilaxia Pré-Exposição) é uma intervenção medicamentosa indicada para pessoas com risco elevado de infecção pelo HIV. Prescrever antirretrovirais para alguém que ainda não iniciou a vida sexual e não possui histórico de exposição é clinicamente inadequado e expõe o paciente a efeitos colaterais sem benefício.\n\nAlternativa d: Incorreta. Embora esteja correta ao afirmar que os exames são desnecessários, a alternativa falha na abordagem relacional. Limitar-se a orientar a abstinência é uma estratégia ineficaz e centrada no juízo de valor, ignorando o papel educativo do médico em preparar o jovem para futuras relações sexuais seguras.\n\nAlternativa e: Correta. Esta é a conduta que melhor integra a prática clínica com a abordagem centrada na pessoa. O médico deve acolher e explorar as preocupações da mãe para entender o contexto familiar, enquanto educa o jovem sobre prevenção primária (uso de preservativos, vacinação contra HPV e Hepatite B). Como não houve exposição sexual (porta de entrada para as ISTs citadas), o rastreamento (prevenção secundária) não é indicado.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Processo Saúde-Doença",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:31.372Z"
+  },
+  {
+    "id": "AJUDA_4c0b58a5-031f-4346-9355-628812ddc4a7",
+    "originalId": "4c0b58a5-031f-4346-9355-628812ddc4a7",
+    "statement": "Paciente de 19 anos, vítima de trauma cranioencefálico, apresenta sinais de hipertensão intracraniana e de herniação uncal. No local de atendimento, não há neurocirurgião. Com base nesse contexto, assinale alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A escolha entre uso do manitol e da solução salina hipertônica é exclusiva do médico que atende.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A pCO2 deve ser mantida entre 30 e 35 mmHg.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A cabeceira deve ser mantida em 10 graus, aproximadamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A pressão de perfusão cerebral deve ser mantida acima de 40 mmHg.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo agudo da Hipertensão Intracraniana (HIC) e sinais de herniação (como a uncal) em pacientes com Trauma Cranioencefálico (TCE) grave. O objetivo é estabilizar o paciente e evitar danos secundários enquanto se aguarda a transferência ou avaliação neurocirúrgica.\n\nAlternativa (a) Incorreta. Embora o manitol e a solução salina hipertônica sejam as principais terapias osmóticas, a escolha não é meramente uma preferência pessoal \"exclusiva\" do médico. Ela deve ser baseada no perfil hemodinâmico do paciente. O manitol possui efeito diurético e pode causar hipotensão, sendo evitado em pacientes hipovolêmicos ou chocados. Já a solução salina hipertônica pode ser preferível em pacientes instáveis hemodinamicamente, pois auxilia na expansão volêmica.\n\nAlternativa (b) Correta. A hiperventilação controlada é uma medida de resgate para reduzir rapidamente a pressão intracraniana em vigência de herniação iminente. A redução da pCO2 (gás carbônico) no sangue provoca vasoconstrição das arteríolas cerebrais, diminuindo o volume sanguíneo intracraniano e, consequentemente, a pressão. O alvo deve ser manter a pCO2 entre 30 e 35 mmHg. Valores abaixo de 25-30 mmHg devem ser evitados, pois a vasoconstrição excessiva pode causar isquemia cerebral grave.\n\nAlternativa (c) Incorreta. A recomendação padrão para o manejo da hipertensão intracraniana é manter a cabeceira elevada entre 30 e 45 graus, mantendo o pescoço em posição neutra. Essa angulação otimiza o retorno venoso jugular e ajuda a reduzir a pressão intracraniana. A elevação de apenas 10 graus é considerada insuficiente para esse fim terapêutico.\n\nAlternativa (d) Incorreta. A Pressão de Perfusão Cerebral (PPC), que é a diferença entre a Pressão Arterial Média (PAM) e a Pressão Intracraniana (PIC), deve ser mantida, idealmente, entre 60 e 70 mmHg. Valores abaixo de 50-60 mmHg estão associados a um aumento da mortalidade e maior risco de isquemia cerebral. Portanto, manter a PPC acima de apenas 40 mmHg é perigoso e insuficiente para garantir a oxigenação adequada dos tecidos cerebrais.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Traumatismo Cranioencefálico"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:31.372Z"
+  },
+  {
+    "id": "AJUDA_4c0bf846-d18d-47c3-b0a8-702587929191",
+    "originalId": "4c0bf846-d18d-47c3-b0a8-702587929191",
+    "statement": "Secundigesta de 5 semanas, 32 anos de idade, em consulta pré-natal de rotina, informa ao obstetra que teve óbito fetal com 37 semanas na gestação anterior. Nega antecedentes clínicos importantes. O exame físico atual é compatível com o tempo gestacional, a PA: 90 x 60 mmHg e o IMC: 28 kg/m². Está indicado",
+    "options": [
+      {
+        "id": "A",
+        "text": "dieta rica em cálcio, aspirina 50 mg dia, aguardar parto espontâneo até 39 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "heparina de baixo peso molecular a partir de agora, monitoração de vitalidade fetal desde 24 semanas e antecipação do parto com 37 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ácido fólico, monitorar vitalidade fetal de modo rigoroso após 32 semanas e discutir indução de parto com 39 semanas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "pesquisar trombofilias adquiridas, aspirina 50 mg ao dia e cardiotocografia semanal após 28 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "heparina subcutânea e aspirina 100 mg ao dia a partir de 14 semanas, cesárea eletiva com 37 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nA paciente é uma secundigesta com história de óbito fetal tardio (37 semanas) na gestação anterior, sem causa definida citada e sem comorbidades atuais (PA normal e IMC de 28 kg/m²). O desafio aqui é determinar a conduta em uma gestação subsequente a um óbito fetal de causa indeterminada.\n\nPOR QUE A ALTERNATIVA (C) ESTÁ CORRETA?\n\nO ácido fólico é uma prescrição de rotina para qualquer gestante no primeiro trimestre (ela está com 5 semanas) para prevenção de defeitos do tubo neural. Quanto ao antecedente de óbito fetal, a conduta baseia-se em vigilância rigorosa da vitalidade fetal no terceiro trimestre, geralmente iniciando-se entre 32 e 36 semanas, uma vez que o risco de recorrência de óbito fetal existe, embora seja baixo. A indução do parto com 39 semanas é recomendada por protocolos internacionais (como o ACOG) e nacionais (FEBRASGO) para evitar a ultrapassagem da idade gestacional do óbito anterior e reduzir a ansiedade materna, desde que os riscos da prematuridade tardia sejam evitados.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: O uso de cálcio e aspirina é indicado para prevenção de pré-eclâmpsia em pacientes de alto risco. Embora o óbito fetal anterior possa ser um fator de risco dependendo da causa, a dose de 50 mg de aspirina é considerada subterapêutica (o padrão é 100 a 150 mg) e o parto espontâneo pode não ser a conduta mais prudente se houver necessidade de interrupção programada para segurança fetal.\n\nAlternativa B: O uso de heparina de baixo peso molecular (HBPM) é indicado apenas em casos confirmados de trombofilias ou síndrome do anticorpo antifosfolipídio (SAAF). Não há diagnóstico que justifique o uso de anticoagulação nesta paciente. Além disso, monitorar a vitalidade a partir de 24 semanas é excessivamente precoce para este caso, e a interrupção com 37 semanas sem indicação clínica aumenta riscos neonatais desnecessários.\n\nAlternativa D: A pesquisa de trombofilias após um único evento de óbito fetal não é um consenso absoluto, e o tratamento empírico com aspirina 50 mg não tem suporte em evidências para este cenário isolado. A cardiotocografia semanal após 28 semanas é uma conduta que pode ser considerada, mas a alternativa C descreve melhor o manejo integral (incluindo o ácido fólico e a programação do parto).\n\nAlternativa E: Esta conduta é reservada para casos de SAAF (combinação de heparina e aspirina). A interrupção por cesárea eletiva com 37 semanas não tem indicação baseada apenas no antecedente de óbito fetal, priorizando-se, sempre que possível, a via vaginal.",
+    "exam": "ISCMSP",
+    "year": 2025,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Vitalidade Fetal",
+      "Restrição de Crescimento Fetal e Óbito Fetal",
+      "Pré-Natal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/ea38bb72dd5059ff7072a8fd4bb32381b06642a8fe98e16c5e8f02acdee81021.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8e5dd90cb6e3fcd6c10666e17c8cdcf95337f91896eb4bbd6a484173292154eb.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:31.372Z"
+  },
+  {
+    "id": "AJUDA_4c162f1b-68b4-4973-a36f-52294df7015b",
+    "originalId": "4c162f1b-68b4-4973-a36f-52294df7015b",
+    "statement": "O Art. 198 da Constituição Federal de 1988 define que as ações e os serviços públicos de saúde integram uma rede regionalizada e hierarquizada e constituem um sistema único, organizado de acordo com as seguintes diretrizes:",
+    "options": [
+      {
+        "id": "A",
+        "text": "atendimento integral, longitudinalidade e descentralização.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "descentralização, primeiro contato e participação da comunidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "equidade, participação social e referência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "universalidade, participação da comunidade e atendimento integral.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O Artigo 198 da Constituição Federal de 1988 e as Diretrizes do SUS\n\nPara resolver esta questão, é fundamental o conhecimento literal do Artigo 198 da Constituição Federal de 1988. Segundo o texto constitucional, as ações e serviços públicos de saúde devem ser organizados como um sistema único (SUS), seguindo três diretrizes obrigatórias:\n\n1. Descentralização, com direção única em cada esfera de governo (União, Estados e Municípios).\n2. Atendimento integral, com prioridade para as atividades preventivas, sem prejuízo dos serviços assistenciais.\n3. Participação da comunidade.\n\nAnálise das alternativas:\n\nAlternativa a: Incorreta. O erro está no termo longitudinalidade. A longitudinalidade é um atributo essencial da Atenção Primária à Saúde (APS), definido na literatura de Barbara Starfield e na Política Nacional de Atenção Básica (PNAB). Embora seja um pilar do cuidado, não consta como diretriz no texto do Artigo 198 da Constituição.\n\nAlternativa b: Incorreta. O termo primeiro contato refere-se à acessibilidade e à função da Atenção Básica como porta de entrada preferencial do sistema. Assim como a longitudinalidade, é um atributo da APS e não uma das três diretrizes constitucionais listadas no Artigo 198.\n\nAlternativa c: Incorreta. A equidade é um princípio doutrinário do SUS, fundamentado no conceito de justiça social (tratar desigualmente os desiguais para alcançar a igualdade). No entanto, ela não está descrita nominalmente como diretriz no Artigo 198. O termo referência faz parte da organização da rede (regionalização e hierarquização), mas não é uma diretriz isolada no texto constitucional.\n\nAlternativa d: Correta. Esta alternativa contém o atendimento integral e a participação da comunidade, que são duas das três diretrizes explícitas do Artigo 198. É importante notar que, tecnicamente, o Artigo 198 cita a descentralização em vez da universalidade (que aparece no Artigo 196). Contudo, em questões de prova, esta alternativa é a correta por excluir os atributos específicos da APS presentes nas outras opções e por focar nos pilares fundamentais da organização do sistema previstos na Constituição.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Princípios e Diretrizes do SUS"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:39:31.372Z"
+  }
+]

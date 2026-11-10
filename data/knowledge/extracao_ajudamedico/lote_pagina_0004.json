@@ -1,0 +1,491 @@
+[
+  {
+    "id": "AJUDA_00a98c09-c0b1-4f4d-b48a-2ebcdb27235d",
+    "originalId": "00a98c09-c0b1-4f4d-b48a-2ebcdb27235d",
+    "statement": "Um homem de 28 anos sofre acidente motociclístico com trauma direto na face. Apresenta diplopia, enoftalmia discreta, hipoestesia em região malar e assimetria facial. Ao exame físico, notam-se crepitação óssea e limitação da motilidade ocular para o olhar superior. O diagnóstico mais provável é fratura",
+    "options": [
+      {
+        "id": "A",
+        "text": "nasal simples.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "do arco zigomático isolada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "do assoalho orbitário (blow-out).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "de mandíbula parassinfisária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Le Fort II.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso clínico descreve um trauma facial direto seguido de sinais patognomônicos de fratura de assoalho orbitário. A combinação de diplopia (visão dupla) e limitação da motilidade ocular para o olhar superior ocorre devido ao encarceramento do músculo reto inferior e de tecidos periorbitários na fenda da fratura. A enoftalmia (olho discretamente para trás) é resultado do aumento do volume da cavidade orbitária e da herniação de conteúdo orbitário para o interior do seio maxilar. A hipoestesia na região malar é explicada pelo acometimento do nervo infraorbitário, que transita pelo canal infraorbitário no assoalho da órbita.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a: Incorreta. A fratura nasal simples apresenta-se clinicamente com edema, dor local, epistaxe e possível desvio da pirâmide nasal. Ela não compromete a musculatura extrínseca do olho nem causa alterações de sensibilidade na região malar ou enoftalmia.\n\nAlternativa b: Incorreta. A fratura isolada do arco zigomático costuma causar dor e depressão na face lateral (perda da proeminência malar). Em alguns casos, pode causar trismo (dificuldade de abrir a boca) se o arco comprimir o processo coronoide da mandíbula, mas não justifica os sinais oculares de restrição de movimento e enoftalmia.\n\nAlternativa c: Correta. O diagnóstico de fratura do assoalho orbitário, ou blow-out, é o que melhor se correlaciona com todos os achados. O impacto direto aumenta a pressão intraorbitária, rompendo a parede mais fina (o assoalho). O aprisionamento muscular impede o movimento ocular para cima e a lesão do nervo infraorbitário gera a hipoestesia malar descrita.\n\nAlternativa d: Incorreta. A fratura de mandíbula parassinfisária acomete a mandíbula entre o forame mentoniano e a sínfise. Os sinais clássicos são dor na arcada inferior, má oclusão dentária, mobilidade óssea mandibular e possivelmente hipoestesia do lábio inferior (nervo mentoniano), sem qualquer envolvimento da região orbitária.\n\nAlternativa e: Incorreta. A Le Fort II é uma fratura complexa e extensa que separa o bloco médio da face (formato piramidal). Embora envolva o assoalho orbitário, ela cursa com instabilidade importante da maxila, edema facial maciço e geralmente decorre de traumas de energia muito superior, não sendo a hipótese mais provável para um quadro focado em sinais oculares específicos e localizados.",
+    "exam": "SCM-RP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Trauma",
+      "Traumatismos Oculares"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2b4f5df4718fc7641787987f7ddf0206e0b18440968b018add56b71a1f05e106.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8a6e1739294b75ad70eba391cc86d86ee335c1c36b83dbfb86c32fb41755b99f.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:39.506Z"
+  },
+  {
+    "id": "AJUDA_00b8a047-183f-4a30-8161-92615a290b1f",
+    "originalId": "00b8a047-183f-4a30-8161-92615a290b1f",
+    "statement": "Assinale a alternativa que inclui os transtornos psiquiátricos prevalentes nos Centros de Atenção Primária, os chamados “transtornos mentais comuns”.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ansiedade, depressão e somatização.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Transtorno bipolar e esquizofrenia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Transtorno de personalidade e transtorno de sintomas neurológicos funcionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Transtorno de déficit de atenção e hiperatividade e transtorno obsessivo-compulsivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Texto Original:\nO conceito de Transtornos Mentais Comuns (TMC) foi consolidado por Goldberg e Huxley para descrever uma parcela significativa da população atendida na Atenção Primária à Saúde que apresenta sintomas psiquiátricos que, embora tragam sofrimento e prejuízo funcional, muitas vezes não preenchem todos os critérios diagnósticos estritos de manuais como o DSM ou a CID.\n\nAlternativa A: Correta. Os Transtornos Mentais Comuns são classicamente representados pelo tripé: sintomas de ansiedade, sintomas depressivos e queixas somáticas (somatização). Na Atenção Primária, estima-se que a prevalência de TMC gire em torno de 20% a 50% dos pacientes. Esses quadros manifestam-se frequentemente por fadiga, insônia, irritabilidade, dificuldade de concentração e dores inespecíficas, sendo a principal demanda de saúde mental nas Unidades Básicas de Saúde.\n\nAlternativa B: Incorreta. O Transtorno Bipolar e a Esquizofrenia são classificados como Transtornos Mentais Graves e Persistentes. Embora o acompanhamento desses pacientes também ocorra na Atenção Primária de forma compartilhada (Matriciamento), a prevalência deles na população geral é significativamente menor do que a dos TMCs, e eles costumam exigir cuidados especializados em Centros de Atenção Psicossocial (CAPS).\n\nAlternativa C: Incorreta. Os Transtornos de Personalidade referem-se a padrões rígidos e persistentes de comportamento e experiência interna. Já o Transtorno de Sintomas Neurológicos Funcionais (antigo transtorno conversivo) é uma condição específica dentro do espectro da somatização. Embora a somatização faça parte dos TMCs, o termo \"transtorno de sintomas neurológicos funcionais\" é restritivo, e os transtornos de personalidade não compõem a definição epidemiológica de transtorno mental comum.\n\nAlternativa D: Incorreta. O Transtorno de Déficit de Atenção e Hiperatividade (TDAH) e o Transtorno Obsessivo-Compulsivo (TOC) são diagnósticos psiquiátricos específicos. Embora sejam relevantes na prática clínica, não são agrupados sob a denominação de \"Transtornos Mentais Comuns\", que foca especificamente no conjunto de sintomas depressivo-ansiosos e somáticos de alta prevalência na comunidade.",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Medicina de Família e Comunidade"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:39.506Z"
+  },
+  {
+    "id": "AJUDA_00bbcf7e-492b-4f39-8450-f37ace16b107",
+    "originalId": "00bbcf7e-492b-4f39-8450-f37ace16b107",
+    "statement": "Mulher, 24 anos de idade, queixa-se de irregularidade menstrual (ciclos com intervalo de 40 dias e duração de 3 dias), aumento de pelos faciais e acne persistente na face e no tronco há cerca de três anos. Refere dificuldade para perder peso. Ao exame clínico, apresentou bom estado geral, corada, hidratada, anictérica, acianótica e afebril; peso de 78 kg, altura 1,65 m e IMC de 27,5 kg/m²; PA de 120x80 mmHg; exame ginecológico com trofismo genital preservado, sem alterações. O exame da pele da face é apresentado na imagem a seguir:\n\n• Exames laboratoriais:\nGlicose: 88 mg/dL\nHemoglobina glicada: 5,2%\nInsulina: 12 mU/L\nCálculo do HOMA-IR: 2,6\nTSH: 1,2 mUI/L\nTestosterona livre: 34 pmol/L\nEstradiol na fase folicular: 8,3 ng/dL\nLH na fase folicular: 16,9 U/L\nFSH na fase folicular: 2,8 UI/L\nProlactina: 33 μg/L\n\nConsiderando a principal hipótese diagnóstica, qual é a imagem ultrassonográfica ovariana correspondente ao caso descrito?",
+    "options": [],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico e laboratorial da paciente aponta diretamente para o diagnóstico de Síndrome dos Ovários Policísticos (SOP). A paciente preenche os Critérios de Rotterdam por apresentar: 1) disfunção ovulatória (ciclos de 40 dias, caracterizando oligomenorreia); e 2) hiperandrogenismo clínico (hirsutismo e acne persistente) e laboratorial (testosterona livre e inversão da relação LH/FSH, na qual o LH está significativamente superior ao FSH). O cálculo do HOMA-IR de 2,6 e o IMC de 27,5 kg/m² confirmam a resistência insulínica e o sobrepeso, componentes metabólicos frequentemente associados à síndrome.\n\nPara a confirmação da morfologia de ovários policísticos pela ultrassonografia (Critérios de Rotterdam), busca-se a presença de 12 ou mais folículos medindo entre 2 e 9 mm em pelo menos um dos ovários, e/ou um volume ovariano total superior a 10 cm³.\n\nAnálise das alternativas:\n\nAlternativa (a) - Incorreta: A imagem mostra um ovário com um folículo de maior calibre e outros poucos folículos menores dispersos. Esse aspecto é compatível com um ovário em fase folicular de um ciclo ovulatório normal, no qual ocorre o recrutamento e seleção de um folículo dominante.\n\nAlternativa (b) - Correta: Esta imagem apresenta o aspecto ultrassonográfico clássico da SOP, conhecido como sinal do \"colar de pérolas\". Observam-se múltiplos pequenos folículos (estruturas pretas/anecoicas) com menos de 10 mm, localizados predominantemente na periferia do ovário, acompanhados de um aumento da ecogenicidade do estroma central (parte central mais clara/cinza).\n\nAlternativa (c) - Incorreta: A imagem demonstra uma formação cística única, grande, de conteúdo anecoico e paredes finas. Esse achado é característico de um cisto ovariano simples ou funcional (como um cisto folicular persistente), e não da distribuição multifolicular típica da SOP.\n\nAlternativa (d) - Incorreta: Esta imagem mostra uma lesão complexa, com septações e uso de Doppler colorido evidenciando vascularização. Esse padrão sugere patologias como cistos complexos, endometriomas ou processos neoplásicos/inflamatórios pélvicos, distanciando-se completamente do padrão de microfolículos da síndrome em questão.",
+    "exam": "USP",
+    "year": 2025,
+    "banca": "Fuvest",
+    "uf": "SP",
+    "tags": [
+      "Síndromes dos Ovários Policísticos"
+    ],
+    "difficulty": 19.44858584014352,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ab289fc45e95a6a1313baf77e40c5f399fde6ce95360f4101feb631e0475d31a.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_00bbcf7e-492b-4f39-8450-f37ace16b107_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e0633c805413f15640d2f7ab42f3ffefa8b96b27aaef69453968172bb819f70b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/de0ce099bc45a8ff7d9006f84c4d03b2ca336921a9677774826dcaf5c8e6e3e5.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:39.897Z"
+  },
+  {
+    "id": "AJUDA_00c7139b-09de-4b4a-ad12-7eb85d2f692a",
+    "originalId": "00c7139b-09de-4b4a-ad12-7eb85d2f692a",
+    "statement": "Mulher, 32 anos de idade, primigesta, na 12ª semana de gestação, está realizando pré-natal em Unidade Básica de Saúde. Exame físico: PA 120 x 80 mmHg, ausência de edemas. Exame obstétrico: útero aumentado para 12 semanas, batimentos cardíacos fetais = 144 bpm ao sonar. A glicemia de jejum apresenta resultado de 90 mg/dL. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Perfil glicêmico, hemoglobina glicada e avaliação da vitalidade fetal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Repetir a glicemia de jejum com 28 semanas e 34 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar exercícios físicos e dieta, com glicemia de jejum em 2 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Realizar curva glicêmica com 75 g de glicose no segundo trimestre.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O rastreamento do Diabetes mellitus gestacional (DMG) é uma rotina fundamental no pré-natal. Segundo as diretrizes atuais do Ministério da Saúde e da Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO), a conduta baseia-se nos valores da glicemia de jejum solicitada logo no início da gestação (primeiro trimestre).\n\nPara interpretar o caso:\nValores de glicemia de jejum menores que 92 mg/dL são considerados normais no início da gravidez.\nValores entre 92 mg/dL e 125 mg/dL diagnosticam Diabetes mellitus gestacional (DMG).\nValores iguais ou superiores a 126 mg/dL diagnosticam Diabetes mellitus prévio (ou Overt Diabetes).\n\nNo caso em questão, a paciente apresenta uma glicemia de jejum de 90 mg/dL. Como o valor é inferior a 92 mg/dL, ela é considerada normoglicêmica no momento. No entanto, isso não exclui o risco de desenvolver DMG mais adiante, quando a resistência insulínica aumenta devido aos hormônios placentários. Portanto, ela deve seguir para o rastreamento universal definitivo no segundo trimestre.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. O perfil glicêmico (várias medidas ao dia) e a hemoglobina glicada são utilizados para o acompanhamento de pacientes que já possuem o diagnóstico de diabetes ou para controle glicêmico rigoroso. A avaliação da vitalidade fetal com 12 semanas já foi feita de forma básica pelo sonar, e exames mais específicos de vitalidade são reservados para o terceiro trimestre em gestações de alto risco.\n\nAlternativa b) Incorreta. Repetir apenas a glicemia de jejum com 28 e 34 semanas não é o protocolo padrão de rastreamento. A glicemia de jejum isolada tem baixa sensibilidade para detectar o DMG no segundo trimestre quando comparada ao teste de sobrecarga.\n\nAlternativa c) Incorreta. Mudanças de estilo de vida e repetição imediata da glicemia seriam indicadas se o valor inicial fosse alterado (igual ou superior a 92 mg/dL). Como o resultado de 90 mg/dL é normal, não há necessidade de conduta terapêutica ou repetição em curto prazo.\n\nAlternativa d) Correta. Este é o protocolo oficial: toda gestante que apresenta glicemia de jejum normal no primeiro trimestre (menor que 92 mg/dL) deve realizar o Teste Oral de Tolerância à Glicose (TOTG 75g) entre a 24ª e a 28ª semana de gestação (segundo trimestre). O teste avalia a glicemia em jejum, 1 hora e 2 horas após a ingestão de glicose.",
+    "exam": "UNIFESP",
+    "year": 2025,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Pré-Natal",
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": 35.75630827212737,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/35f753b12174a6b6c37b30161564138deffc6d739f8cddf3ce5a9e836d2001ea.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be8ae1dcb3c891dfe67345e3b3e9fafa3104871855638bb99438b705477840b3.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:39.897Z"
+  },
+  {
+    "id": "AJUDA_00ccda33-030e-471d-82ba-08b09b35e477",
+    "originalId": "00ccda33-030e-471d-82ba-08b09b35e477",
+    "statement": "A endometriose caracteriza-se pela presença de tecido endometrial fora da cavidade uterina, com resposta aos estímulos hormonais cíclicos. A teoria fisiopatológica mais aceita para explicar a endometriose profunda infiltrativa, que acomete ligamentos uterossacros e fundo de saco posterior com profundidade superior a 5 mm, é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Metaplasia celômica com transformação do epitélio peritoneal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Menstruação retrógrada com implantação de células endometriais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Disseminação hematogênica de fragmentos endometriais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Metástase linfática de tecido endometrial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A endometriose é definida pela presença de tecido estromal e glandular endometrial fora da cavidade uterina. Para explicar sua origem, diversas teorias foram propostas, sendo a Teoria de Sampson a mais consagrada na literatura médica.\n\nA alternativa (b) está correta porque a Teoria da Menstruação Retrógrada, proposta por Sampson em 1927, é a teoria fisiopatológica mais aceita para a maioria dos casos de endometriose pélvica, incluindo a endometriose profunda infiltrativa. Ela postula que, durante a menstruação, ocorre um refluxo de sangue e fragmentos de endométrio através das tubas uterinas para dentro da cavidade peritoneal. Em mulheres com predisposição genética e falhas nos mecanismos de limpeza imunológica, essas células endometriais conseguem se aderir ao peritônio, invadir o tecido subjacente e proliferar em resposta aos hormônios ovarianos. No caso da endometriose profunda, essa invasão ultrapassa a marca de 5 mm de profundidade em relação ao peritônio, acometendo estruturas como os ligamentos uterossacros e o fundo de saco de Douglas.\n\nA alternativa (a) está incorreta porque a Teoria da Metaplasia Celômica (Teoria de Meyer) sugere que células do epitélio celômico (que reveste o peritônio) sofreriam uma transformação (metaplasia) em tecido endometrial sob estímulos hormonais ou inflamatórios. Embora seja usada para explicar casos raros, como em mulheres pré-púberes ou mesmo em homens, ela não é a explicação principal para a apresentação clínica descrita na questão.\n\nA alternativa (c) está incorreta porque a disseminação hematogênica é utilizada para explicar casos de endometriose em órgãos distantes, como pulmões, cérebro ou extremidades, onde a menstruação retrógrada não conseguiria alcançar. Não é a teoria base para a doença infiltrativa retro-uterina.\n\nA alternativa (d) está incorreta pois a metástase linfática (Teoria de Halban) também busca explicar a presença de tecido endometrial em locais atípicos, como linfonodos pélvicos e retroperitoneais, mas não é considerada a causa primária para a formação de nódulos profundos nos ligamentos uterossacros.",
+    "exam": "Hospital Vida",
+    "year": 2026,
+    "banca": "Hospital Vida",
+    "uf": "PR",
+    "tags": [
+      "Endometriose"
+    ],
+    "difficulty": 49.0536269523325,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2d8f923f0c34aa3848f72bbcdcc53c52d21e52fabf74e2a9fe14f2c1654de539.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e4318700b8b468342e0f0f8aee99b9becb4cbcb6f1b59eefd01504759a795d13.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:39.897Z"
+  },
+  {
+    "id": "AJUDA_00d1fdaa-8b0c-449d-9290-fd82d50dea31",
+    "originalId": "00d1fdaa-8b0c-449d-9290-fd82d50dea31",
+    "statement": "Primigesta, 23 anos, realizou fertilização assistida. Encontra-se na 5ª semana de gestação diagnosticada por beta hCG sérico de 2.350 mUI/mL há 2 dias. Vem ao pronto atendimento com queixa de sangramento vaginal com característica de borra de café. O exame clínico apresentou como achados relevantes abdome indolor e pequena quantidade de sangue coletado em fórnice posterior da vagina. Foi solicitada avaliação ultrassonográfica, que demonstrou útero em anteversoflexão com eco endometrial espessado medindo 16 mm e imagem paraovariana esquerda medindo 28 x 20 x 22 mm. O nível sérico de beta hCG foi de 1.650 mUI/mL.\nNessa paciente, a conduta indicada é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cirúrgica por laparoscopia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cirúrgica por curetagem uterina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Conservadora com beta HCG seriado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Medicamentosa com metotrexato.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender a conduta correta nesta questão, devemos analisar a evolução clínica e laboratorial da paciente. Estamos diante de um quadro de suspeita de gestação ectópica, sugerido pela imagem paraovariana à esquerda e pelo útero sem saco gestacional (apenas endométrio espessado). No entanto, o dado mais relevante para a decisão terapêutica é o comportamento do nível de beta-hCG.\n\nHá dois dias, o valor era de 2.350 mUI/mL e, no momento atual, caiu para 1.650 mUI/mL. Essa queda espontânea dos níveis de beta-hCG indica que a gestação (seja ela tópica ou ectópica) está em processo de involução ou abortamento espontâneo.\n\nExplicação das alternativas:\n\nAlternativa (a) Incorreta: A conduta cirúrgica por laparoscopia é indicada em casos de gestação ectópica com instabilidade hemodinâmica, rotura tubária, dor intensa, ou quando os níveis de beta-hCG são elevados e crescentes, não preenchendo critérios para tratamento clínico. Como a paciente está estável, indolor e com níveis de beta-hCG em queda, a cirurgia seria uma intervenção desnecessária e invasiva no momento.\n\nAlternativa (b) Incorreta: A curetagem uterina é um procedimento para esvaziamento da cavidade uterina em casos de abortamento incompleto ou retido intrauterino. No caso descrito, a ultrassonografia não identificou gestação dentro do útero, apenas um endométrio espessado (reação decidual), e apontou uma massa anexial. Portanto, a curetagem não resolveria a patologia anexial e não está indicada.\n\nAlternativa (c) Correta: A conduta conservadora (também chamada de conduta expectante) é a escolha adequada quando há evidência de que a gestação ectópica está se resolvendo espontaneamente. Os critérios para essa conduta incluem: estabilidade hemodinâmica, ausência de dor abdominal importante (ou dor em diminuição), massa anexial pequena e, fundamentalmente, níveis de beta-hCG em declínio. A paciente será acompanhada com dosagens seriadas de beta-hCG até que os níveis se tornem indetectáveis.\n\nAlternativa (d) Incorreta: O metotrexato é uma opção de tratamento medicamentoso para gestações ectópicas íntegras em pacientes estáveis. Entretanto, ele é indicado quando os níveis de beta-hCG estão em ascensão ou em platô (geralmente abaixo de 5.000 mUI/mL). Se o organismo já iniciou o processo de involução por conta própria (demonstrado pela queda de 2.350 para 1.650), não há necessidade de administrar uma medicação quimioterápica que possui efeitos colaterais.",
+    "exam": "Instituto de olhos de Goiânia",
+    "year": 2026,
+    "banca": "Instituto de olhos de Goiânia",
+    "uf": "GO",
+    "tags": [
+      "Abdome Agudo em Ginecologia",
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": 86.9967546971209,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/512a66ab75abf16fb6d6ed29ade20d18202c37100857228788b3d13f580821d0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0c3543f10cd91e20e799c93c17c053d237a1fa6d56a1e5adb8e54bdfce05d19.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:39.897Z"
+  },
+  {
+    "id": "AJUDA_00d22668-6718-4fe8-83e6-ae7b480c92be",
+    "originalId": "00d22668-6718-4fe8-83e6-ae7b480c92be",
+    "statement": "Um novo teste para diagnóstico de infarto agudo do miocárdio apresenta sensibilidade de 90% e especificidade de 85%. Ao ser aplicado em uma população de baixa prevalência (2%), assinale a alternativa que MELHOR descreve o desempenho desse teste.",
+    "options": [
+      {
+        "id": "A",
+        "text": "O Valor Preditivo Positivo será alto, superior a 80%, devido à alta sensibilidade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O Valor Preditivo Positivo será baixo, gerando muitos resultados falso-positivos.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O Valor Preditivo Negativo será comprometido pela baixa prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A acurácia do teste será inferior a 50%, tornando-o inútil para rastreamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Nenhuma das alternativas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para compreender essa questão, o conceito fundamental que o aluno deve dominar é a influência da Prevalência (probabilidade pré-teste) sobre os Valores Preditivos (positivo e negativo). Enquanto a Sensibilidade e a Especificidade são características inerentes ao teste, os Valores Preditivos variam conforme a prevalência da doença na população estudada.\n\nAnálise das alternativas:\n\nAlternativa A - INCORRETA: A alta sensibilidade não garante um Valor Preditivo Positivo (VPP) alto. O VPP depende drasticamente da prevalência. Em uma população onde a doença é muito rara (2%), a grande maioria das pessoas testadas é saudável. Mesmo com uma especificidade boa (85%), o número absoluto de pessoas saudáveis que terão resultados \"falso-positivos\" acabará superando o número de doentes que terão resultados \"verdadeiro-positivos\". Portanto, o VPP será baixo.\n\nAlternativa B - CORRETA: Esta é a alternativa que descreve o fenômeno clássico da epidemiologia. Quando aplicamos um teste em uma população de baixa prevalência, a probabilidade de um resultado positivo ser um falso-positivo é muito alta. Para ilustrar: se testarmos 1.000 pessoas, apenas 20 terão a doença (2%). Com especificidade de 85%, das 980 pessoas saudáveis, 147 teriam resultados positivos falsos (15% de 980). Já entre os 20 doentes, com sensibilidade de 90%, teríamos 18 positivos verdadeiros. Ou seja, teríamos 147 falsos contra apenas 18 verdadeiros, resultando em um VPP muito baixo (aproximadamente 11%).\n\nAlternativa C - INCORRETA: O Valor Preditivo Negativo (VPN) é inversamente proporcional à prevalência. Quanto menor a prevalência da doença, mais confiável é o resultado negativo do teste. Nesse cenário de 2% de prevalência, o VPN será altíssimo, quase 100%, pois é muito provável que um indivíduo testado seja realmente saudável.\n\nAlternativa D - INCORRETA: A acurácia é a proporção de acertos totais (verdadeiro-positivos + verdadeiro-negativos) sobre o total de testes. Em populações de baixa prevalência, se o teste tem boa especificidade, a acurácia tende a ser alta, pois o teste acertará a grande maioria dos indivíduos que não possuem a doença (que são a maioria da população). Ele não se torna inútil, mas seu uso deve ser interpretado com cautela para evitar intervenções desnecessárias em falsos-positivos.\n\nAlternativa E - INCORRETA: A alternativa B responde corretamente ao enunciado.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "IAMCSSST (Infarto Agudo do Miocárdio com Supradesnivelamento de Segmento ST)",
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:39.897Z"
+  },
+  {
+    "id": "AJUDA_00d2e766-126d-4561-8129-a2689ed385f5",
+    "originalId": "00d2e766-126d-4561-8129-a2689ed385f5",
+    "statement": "Paciente de 21 anos comparece à Unidade Básica de Saúde (UBS) para uma consulta agendada. Durante o atendimento, diz que se reconhece como um homem trans e que está em processo de afirmação de gênero. Relata que, nos últimos meses, tem buscado apoio em grupos de pessoas trans, começou a usar um binder (faixa de compressão torácica) e que cogita iniciar terapia hormonal no futuro. Refere que não apresenta sofrimento psíquico intenso relacionado à sua identidade de gênero, mas sente que precisa de informações adequadas sobre os próximos passos e sobre cuidados com a saúde. Não apresenta sintomas depressivos, ansiosos ou psicóticos.\nQual é a conduta mais adequada a ser adotada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar avaliação psiquiátrica para diagnóstico de disforia de gênero antes do acompanhamento na UBS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar terapia hormonal na UBS, conforme estabelecido no processo transexualizador do SUS, e marcar retorno em 8 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar paciente para serviço especializado e informar que o seguimento relacionado à transição de gênero deve ser feito com especialista.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Esclarecer que tal identidade de gênero não é transtorno mental, oferecer acompanhamento contínuo na UBS e orientar sobre cuidados gerais de saúde.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Esta questão aborda o atendimento à população trans na Atenção Primária à Saúde, focando nos princípios de acolhimento, despatologização e integralidade do cuidado no Sistema Único de Saúde (SUS).\n\nA alternativa (d) está correta porque está em plena consonância com as diretrizes da Organização Mundial da Saúde (OMS), que na CID-11 retirou a transexualidade da categoria de transtornos mentais, reclassificando-a como uma condição relativa à saúde sexual. No contexto da Unidade Básica de Saúde (UBS), a conduta do médico deve ser pautada no acolhimento, no reconhecimento da identidade de gênero autodeterminada pelo paciente e na manutenção do vínculo para o cuidado integral. Isso inclui orientações sobre o uso seguro do *binder* (para evitar complicações respiratórias ou dermatológicas) e a realização de exames preventivos pertinentes à biologia do paciente, independentemente da sua identidade de gênero.\n\nA alternativa (a) está incorreta, pois a exigência de um diagnóstico psiquiátrico de disforia de gênero para iniciar o atendimento ou o acompanhamento na UBS é uma prática ultrapassada e estigmatizante. A identidade de gênero não deve ser tratada como uma patologia que necessita de \"validação\" psiquiátrica para que o direito à saúde seja garantido.\n\nA alternativa (b) está incorreta porque, embora o médico de família e comunidade possa participar do processo de hormonioterapia, o início imediato de hormônios na primeira consulta, sem a realização de exames laboratoriais prévios, avaliação de riscos cardiovasculares ou discussão aprofundada sobre os efeitos desejados e colaterais, é clinicamente inadequado. Além disso, o paciente mencionou que apenas cogita a terapia hormonal para o futuro, não sendo uma demanda imediata.\n\nA alternativa (c) está incorreta porque o encaminhamento exclusivo para o serviço especializado fere o princípio da resolutividade e da coordenação do cuidado pela Atenção Primária. A UBS deve ser capaz de realizar o acompanhamento longitudinal do paciente trans. O serviço especializado (Ambulatório Trans) deve atuar de forma complementar, em um modelo de matriciamento, e não como o único local de atendimento para esses indivíduos. O médico generalista deve estar apto a manejar as demandas de saúde geral e o acolhimento inicial.",
+    "exam": "ENAMED",
+    "year": 2026,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Incongruência de Gênero"
+    ],
+    "difficulty": 23.290072009435065,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/de6926340864bbc65c339b5600c65be5b5c13b6d9ea0938f2ead131371cb51cd.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/135f78b609883441105e38ffb463fc32ad6b28b1869a52f353172e6382565560.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:39.897Z"
+  },
+  {
+    "id": "AJUDA_00d3591b-dd32-4c44-a8b3-4c24ff3131d6",
+    "originalId": "00d3591b-dd32-4c44-a8b3-4c24ff3131d6",
+    "statement": "Um médico pesquisador é encarregado de desenvolver um plano estratégico multifacetado para combater a alta prevalência da síndrome de burnout (SB) entre os residentes de medicina. O plano poderá incorporar intervenções com base em evidências que correspondam aos quatro níveis de prevenção (primária, secundária, terciária e quaternária). Nesse sentido, constitui a atitude ou recomendação correta:",
+    "options": [
+      {
+        "id": "A",
+        "text": "criar uma política de revisão por pares para a prescrição de psicofármacos a residentes, exigindo uma avaliação aprofundada das causas organizacionais do estresse antes de iniciar o tratamento medicamentoso, a fim de evitar a medicalização de problemas laborais e a iatrogenia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "conduzir um grupo focal anual com um grupo selecionado de residentes para discutir o clima do programa e promover um melhor equilíbrio entre vida pessoal e profissional para os residentes, considerando isso uma forma de prevenção secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "estabelecer um programa de reabilitação e tratamento para residentes de risco para a SB, incluindo acesso à terapia cognitivo-comportamental, coaching de carreira e planos de trabalho equilibrado para minimizar incapacidades e prevenir complicações como depressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "instituir a aplicação confidencial trimestral ou semestral de um instrumento de avaliação validado, como o Maslach Burnout Inventory, para os residentes do programa, com o objetivo de diagnosticar indivíduos em fase sintomática de esgotamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "reduzir a carga de trabalho para os residentes do programa, dar um dia útil de folga na semana a todos os residentes e implementar um sistema de “alerta de colega”, no qual residentes podem reportar anonimamente pares que parecem estar em sofrimento, pois são medidas para uma intervenção precoce da diretoria.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise geral: A questão exige o conhecimento dos quatro níveis de prevenção aplicados à saúde ocupacional do médico, especificamente no contexto da síndrome de burnout (SB). A prevenção primária atua sobre os fatores de risco (organizacionais); a secundária foca no diagnóstico precoce (rastreio); a terciária visa à reabilitação e à redução de sequelas; e a quaternária busca evitar o excesso de intervenções médicas e a iatrogenia.\n\nAlternativa A (Correta): Esta alternativa descreve com precisão uma estratégia de prevenção quaternária. A síndrome de burnout é frequentemente um fenômeno relacionado ao ambiente de trabalho e à organização do sistema de saúde. Ao instituir uma revisão por pares antes da prescrição de psicofármacos, o plano estratégico busca evitar que problemas de ordem laboral sejam tratados exclusivamente como transtornos psiquiátricos individuais. Isso previne a medicalização desnecessária da vida e protege o residente de possíveis efeitos colaterais de medicamentos que não tratam a causa raiz (o ambiente de trabalho), caracterizando a prevenção da iatrogenia.\n\nAlternativa B (Incorreta): Promover discussões sobre o clima do programa e buscar o equilíbrio entre vida pessoal e profissional são medidas de prevenção primária. A prevenção primária ocorre antes do surgimento da doença, visando a remover ou reduzir os fatores de risco e estressores. A alternativa erra ao classificar essa ação como prevenção secundária.\n\nAlternativa C (Incorreta): Esta alternativa descreve ações de prevenção terciária, que é a fase de reabilitação para quem já apresenta a síndrome estabelecida, visando a minimizar a incapacidade laboral e as complicações. Contudo, o enunciado gera uma confusão conceitual ao sugerir reabilitação para residentes de \"risco\". Além disso, a alternativa A é tecnicamente superior ao abordar a prevenção quaternária, um tema muito cobrado em provas recentes para destacar o papel da organização frente ao sofrimento do médico.\n\nAlternativa D (Incorreta): A aplicação periódica de instrumentos validados como o Maslach Burnout Inventory (MBI) é, de fato, o exemplo clássico de prevenção secundária (rastreamento). No entanto, em concursos médicos, quando se discute burnout e prevenção quaternária, a alternativa que foca na desmedicalização de problemas sistêmicos costuma ser considerada a resposta \"mais correta\" ou a \"atitude correta\" frente ao paradigma atual da medicina preventiva, que critica o rastreamento em massa sem mudanças estruturais.\n\nAlternativa E (Incorreta): Reduzir a carga horária e garantir folgas semanais são intervenções de prevenção primária fundamentais, pois modificam o ambiente de risco. Entretanto, a implementação de um sistema de \"alerta de colega\" para reporte anônimo não é uma prática recomendada pelas diretrizes de saúde mental ocupacional, pois pode gerar desconfiança entre os pares e quebra de sigilo, e não substitui a responsabilidade da diretoria em monitorar o ambiente de forma institucional e ética.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Medidas de Saúde Coletiva",
+      "Bases de Saúde do Trabalhador e Normas Regulamentadoras"
+    ],
+    "difficulty": 88.03385697831388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:39.897Z"
+  },
+  {
+    "id": "AJUDA_00e5a62b-c11c-49e6-811e-ce656830c647",
+    "originalId": "00e5a62b-c11c-49e6-811e-ce656830c647",
+    "statement": "Homem, 42 anos, queixa de dor em fossa ilíaca direita de forte intensidade de início súbito associada a náusea sem vômitos há 2 horas, com irradiação para região inguinal ipsilateral, sem fatores de piora ou melhora. Ao exame físico, abdome flácido, leve desconforto à palpação de fossa ilíaca direita, sem plastrão palpável ou tumefações subcutâneas. Sinais de Blumberg e Giordano negativos. Foi medicado e apresentou alívio da dor.\nHemograma com Hb 14,3 g/dL, Leucócitos 9580 s/ desvio. Proteína C Reativa 1,2 g/dL (normal <1,0). Urina I com hemácias 12 mil (normal <10 mil) e leucócitos 11 mil (normal < 10 mil), sem outros achados.\nApós ver a tomografia e confirmar a hipótese diagnóstica mais provável para este caso, cite o próximo passo para o tratamento:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibioticoterapia com quinolona via oral e reavaliação em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Videolaparoscopia diagnóstica com provável apendicectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Arteriografia armada para endoprótese de artéria ilíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Litotripsia extracorpórea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Alfa-bloqueador, anti-espasmódico + analgésicos, corticoides.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Análise do caso clínico:\n\nO quadro clínico de um homem de 42 anos com dor súbita em fossa ilíaca direita, de forte intensidade, com irradiação inguinal e associada a náusea, é extremamente sugestivo de cólica nefrética (ureterolitíase). O exame físico com abdome flácido e sinais de irritação peritoneal negativos (Blumberg ausente) afasta causas inflamatórias como apendicite aguda. Os exames laboratoriais corroboram essa hipótese: a ausência de leucocitose e PCR discretamente alterada reduzem a probabilidade de processo infeccioso agudo, enquanto a presença de micro-hematúria (hemácias 12 mil) na Urina I é um achado clássico da passagem de cálculos pelas vias urinárias.\n\nAnálise da imagem:\n\nA tomografia computadorizada de abdome e pelve mostra, dentro do círculo e apontado pela seta, uma pequena imagem hiperdensa (branca) no trajeto do ureter distal direito, próximo à junção ureterovesical. Esse achado confirma o diagnóstico de ureterolitíase distal à direita. Como o cálculo é pequeno e o paciente apresentou alívio da dor após medicação, o tratamento inicial é conservador, visando à expulsão espontânea do cálculo.\n\nAnálise das alternativas:\n\na) Incorreta. O uso de antibióticos (quinolonas) seria indicado se houvesse sinais de infecção urinária associada ou pielonefrite, o que não é o caso, dado que o paciente está afebril e com hemograma normal.\n\nb) Incorreta. A videolaparoscopia para apendicectomia seria o tratamento para apendicite aguda. Embora a dor em fossa ilíaca direita seja um sintoma comum às duas patologias, a irradiação inguinal, o início súbito, a hematúria e a imagem tomográfica confirmam ureterolitíase, não apendicite.\n\nc) Incorreta. A arteriografia e o tratamento com endoprótese são voltados para patologias vasculares, como aneurismas de artéria ilíaca rotos ou dissecções, que apresentariam achados tomográficos e clínicos completamente diferentes.\n\nd) Incorreta. A litotripsia extracorpórea por ondas de choque (LECO) é uma opção para cálculos renais ou ureterais proximais que não saem espontaneamente. Para cálculos em ureter distal, a conduta inicial preferencial em pacientes estáveis é a terapia expulsiva medicamentosa.\n\ne) Correta. Esta alternativa descreve a Terapia Expulsiva Medicamentosa (TEM). O alfa-bloqueador (como a tansulosina) promove o relaxamento da musculatura lisa do ureter distal, facilitando a passagem do cálculo. Analgésicos e antiespasmódicos controlam a dor, e os corticoides podem ser utilizados para reduzir o edema local na parede do ureter, auxiliando na eliminação da pedra. É a conduta de escolha para cálculos ureterais distais menores que 10 mm em pacientes com dor controlada e sem sinais de complicações (como infecção ou falência renal).",
+    "exam": "IAMSPE",
+    "year": 2025,
+    "banca": "Avança SP",
+    "uf": "SP",
+    "tags": [
+      "Urologia",
+      "Nefrolitíase"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/ba137519c5ca94842ec7bb3e12d4612dfb81c1655cede1d6a8a334bdc044a452.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_00e5a62b-c11c-49e6-811e-ce656830c647_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b766a180f9373ccde04d038d6376a63fddf5a4ee2e87b55c4769ff9b99c634f8.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ee1d0c553503a60541e28313c14fc4bbeb991302beca3f750965a6721a357202.pdf"
+    },
+    "collectedAt": "2026-10-24T15:58:40.308Z"
+  }
+]

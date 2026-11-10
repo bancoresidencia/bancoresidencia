@@ -1,0 +1,510 @@
+[
+  {
+    "id": "AJUDA_aefb2df7-5bc8-43cb-9222-bc29a349d97e",
+    "originalId": "aefb2df7-5bc8-43cb-9222-bc29a349d97e",
+    "statement": "R.T.V., 38 anos, GII PI 1N A0, IG 35 semanas, HIV positivo, deu entrada no pronto-socorro queixando-se de perda de líquido via vaginal há 1 hora. Em uso de terapia tríplice antiretroviral, há 3 meses. CD4 180/mcL, carga viral 2200 cópias/mL. Sem outras queixas. Ao exame físico: dinâmica uterina ausente, toque vaginal: colo impérvio, grosso e posterior. Especular: saída de líquido claro sem grumos pelo orifício externo do colo uterino.",
+    "options": [
+      {
+        "id": "A",
+        "text": "AZT dose de ataque e manutenção e parto cesariano.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Administrar corticoide para maturação pulmonar fetal, AZT dose de ataque e inibição do trabalho de parto.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Administrar ampicilina e AZT dose de ataque e de manutenção e indução do trabalho de parto com misoprostol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Administrar sulfato de magnésio e AZT dose de ataque e de manutenção e parto cesariano 3 horas após.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Internação, antibioticoprofilaxia com ampicilina por 24 horas, controle de ILA e vitalidade fetal até 37 semanas de idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta uma Ruptura Prematura de Membranas Ovolares (RPMO) com 35 semanas de gestação. O ponto crucial para a conduta em gestantes vivendo com HIV é a carga viral (CV) próxima ao parto. De acordo com o Protocolo Clínico e Diretrizes Terapêuticas (PCDT) do Ministério da Saúde, pacientes com carga viral maior que 1.000 cópias/mL (ou desconhecida) após 34 semanas de gestação têm indicação de parto por via cesariana eletiva para reduzir o risco de transmissão vertical. No caso em questão, a carga viral é de 2.200 cópias/mL. Além disso, por se tratar de RPMO em uma gestante com 35 semanas (pré-termo tardio) e carga viral elevada, a resolução da gestação deve ser imediata para minimizar o tempo de exposição fetal.\n\nPOR QUE A ALTERNATIVA (A) ESTÁ CORRETA?\n\nA conduta indicada é a interrupção da gestação por via cesariana devido à carga viral superior a 1.000 cópias/mL. O AZT (zidovudina) intravenoso deve ser administrado desde o início do preparo para a cirurgia (dose de ataque) e mantido até o clampeamento do cordão umbilical (manutenção). O objetivo é garantir níveis terapêuticos da medicação no sangue materno e fetal durante o procedimento, reduzindo a transmissão vertical.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa (b): A inibição do trabalho de parto (tocolia) é contraindicada na presença de ruptura de membranas, especialmente em pacientes com HIV, pois o aumento do tempo entre a ruptura e o parto eleva significativamente o risco de transmissão do vírus para o bebê. O uso de corticoide para maturação pulmonar é discutível após as 34 semanas e não deve atrasar o parto neste cenário de alto risco infeccioso.\n\nAlternativa (c): A indução do trabalho de parto para busca de parto vaginal é contraindicada quando a carga viral é superior a 1.000 cópias/mL. O parto vaginal só seria uma opção se a carga viral estivesse indetectável ou abaixo de 1.000 cópias/mL e houvesse condições obstétricas favoráveis.\n\nAlternativa (d): O sulfato de magnésio é indicado para neuroproteção fetal em casos de trabalho de parto prematuro iminente ou indicado abaixo de 32 semanas de idade gestacional (ou até 33 semanas e 6 dias em alguns protocolos). Com 35 semanas, não há indicação de sulfato de magnésio.\n\nAlternativa (e): A conduta conservadora (expectante) na ruptura prematura de membranas só é considerada em idades gestacionais precoces (geralmente abaixo de 34 semanas) e em pacientes sem HIV. Em gestantes HIV-positivas com 35 semanas e carga viral alta, o risco de transmissão vertical supera qualquer benefício de prolongar a gestação até as 37 semanas. Além disso, a antibioticoprofilaxia isolada não resolve o problema principal, que é a exposição viral.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "HIV",
+      "Rotura Prematura de Membranas (RPM)",
+      "Prematuridade e Trabalho de Parto Prematuro"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:20.592Z"
+  },
+  {
+    "id": "AJUDA_aeff0196-45f1-41f4-966c-fbb8631216a1",
+    "originalId": "aeff0196-45f1-41f4-966c-fbb8631216a1",
+    "statement": "Nos 4 ritmos de PCR, a primeira droga a ser preparada deve ser a epinefrina. Assim, em um bebê de 15 kg, a dose no acesso periférico e os cuidados que devem ser observados são os seguintes:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dose: 0,1 mg/kg , ou seja, 1,5 mg de epinefrina; deve ser aplicada durante a compressão, seguida de um bolus de 5 ml de soro fisiológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Dose: 0,01mg/Kg, ou seja, 0,105 mg de epinefrina, seguida de um bolus de 5 ml de soro fisiológico, não importando o momento da aplicação da droga, que deve ser repetida a cada 3 a 5 minutos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Aplicar 1,5 ml da solução diluída de 1: 10.000, seguida de um bolus de 5 ml de soro fisiológico, durante a compressão.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Aplicar 0,5 ml da solução diluída de 1.10.000, seguida de um bolus de 3 ml de soro fisiológico, elevando o membro onde a droga está sendo administrada por 10 segundos para que a droga possa chegar à circulação central.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Aplicar 1,5 ml da solução 1: 1.000, seguida de um bolus de 5 ml de soro fisiológico, durante a compressão.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Esta questão aborda o protocolo de Suporte Avançado de Vida Pediátrico (PALS) focado na administração de adrenalina (epinefrina) durante uma Parada Cardiorrespiratória (PCR).\n\nAnálise dos dados:\nPeso do bebê: 15 kg.\nDose recomendada de epinefrina (via IV/IO): 0,01 mg/kg.\nConcentração padrão para uso intravenoso: 1:10.000 (ou seja, 0,1 mg/mL).\n\nCálculo da dose para este paciente:\nDose em miligramas (mg): 15 kg x 0,01 mg/kg = 0,15 mg.\nConversão para volume (mL) usando a solução 1:10.000 (0,1 mg/mL): 0,15 mg / 0,1 mg/mL = 1,5 mL.\n\nAnálise das alternativas:\n\na) Incorreta. A dose de 0,1 mg/kg (totalizando 1,5 mg) é a dose recomendada apenas para administração via endotraqueal, quando não há acesso venoso ou intraósseo disponível. Para acesso periférico, essa dose é dez vezes superior à recomendada, podendo causar arritmias e danos miocárdicos pós-RCE (retorno da circulação espontânea).\n\nb) Incorreta. Embora a dose por kg (0,01 mg/kg) esteja correta, o valor total calculado para um bebê de 15 kg está errado (15 x 0,01 = 0,15 mg, e não 0,105 mg). Além disso, o momento da aplicação importa: as drogas devem ser administradas preferencialmente durante as compressões para facilitar a circulação sistêmica.\n\nc) Correta. Como calculado acima, 1,5 mL da solução diluída a 1:10.000 corresponde exatamente a 0,15 mg necessário para uma criança de 15 kg (0,01 mg/kg). O bolus de soro fisiológico (*flush*) de 5 mL é o cuidado padrão para empurrar a droga da veia periférica para a circulação central, e a administração durante a compressão otimiza a distribuição da droga.\n\nd) Incorreta. O volume de 0,5 mL da solução 1:10.000 entregaria apenas 0,05 mg de epinefrina, o que seria a dose para uma criança de 5 kg, e não 15 kg. O tempo de elevação do membro geralmente recomendado é de 10 a 20 segundos, mas o erro principal reside na subdosagem.\n\ne) Incorreta. A solução 1:1.000 é a apresentação pura da ampola (1 mg/mL). Aplicar 1,5 mL dessa concentração resultaria em 1,5 mg de adrenalina, o que representa uma overdose grave (dez vezes a dose recomendada) para a via intravenosa/intraóssea. A solução 1:1.000 é utilizada sem diluição apenas por via intramuscular (em casos de anafilaxia). Na PCR, ela deve ser sempre diluída para 1:10.000 antes do uso IV/IO.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Drogas Vasoativas e Sedoanalgesia",
+      "Parada Cardiorrespiratória (PCR)",
+      "Emergências Pediátricas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:20.592Z"
+  },
+  {
+    "id": "AJUDA_af0d6a5f-3d17-4553-a759-6dae96391a67",
+    "originalId": "af0d6a5f-3d17-4553-a759-6dae96391a67",
+    "statement": "Paciente do sexo masculino, 45 anos, trabalhador braçal, apresenta dor no ombro direito há 3 meses, especialmente ao levantar o braço acima da cabeça e realizar movimentos de rotação. A dor piora à noite e durante atividades que envolvem levantamento de peso. O exame físico sugere síndrome do impacto e possível tendinite do tendão da cabeça longa do bíceps.\n\nA manobra adequada para confirmar tendinite do tendão da cabeça longa do bíceps nesse paciente é a Manobra de",
+    "options": [
+      {
+        "id": "A",
+        "text": "Neer.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Yergason.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hawkins-Kennedy",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Jobe.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A questão aborda o diagnóstico diferencial das patologias do ombro, solicitando o teste específico para a avaliação do tendão da cabeça longa do bíceps. Embora o quadro clínico também sugira síndrome do impacto, o foco da pergunta é a confirmação da tendinite bicipital.\n\nAlternativa (a) Incorreta: A Manobra de Neer é utilizada para diagnosticar a síndrome do impacto subacromial. Ela consiste na elevação passiva e rápida do braço do paciente em rotação neutra ou interna, enquanto o examinador estabiliza a escápula. O objetivo é comprimir as estruturas subacromiais (como o tendão do supraespinal e a bursa) contra a face inferior do acrômio, provocando dor.\n\nAlternativa (b) Correta: A Manobra de Yergason é o teste clássico para avaliar a integridade e a presença de processos inflamatórios no tendão da cabeça longa do bíceps dentro do sulco bicipital. Para realizá-la, o paciente mantém o cotovelo fletido a 90 graus e o antebraço em pronação. O examinador solicita que o paciente realize a supinação do antebraço contra a resistência. A dor localizada na face anterior do ombro (sulco bicipital) durante o esforço confirma o diagnóstico de tendinite bicipital.\n\nAlternativa (c) Incorreta: A Manobra de Hawkins-Kennedy também é um teste para a síndrome do impacto subacromial. O examinador posiciona o ombro e o cotovelo do paciente em 90 graus de flexão e realiza uma rotação interna passiva do úmero. Esse movimento projeta o tubérculo maior contra o ligamento coracoacromial, gerando dor em casos de impacto.\n\nAlternativa (d) Incorreta: A Manobra de Jobe, conhecida também como teste da lata vazia (Empty Can), é o teste específico para avaliar o tendão do músculo supraespinal (manguito rotador). O paciente posiciona os braços em abdução de 90 graus e flexão anterior de 30 graus, com os polegares voltados para o chão. O examinador aplica uma força para baixo enquanto o paciente oferece resistência. Dor ou fraqueza indicam lesão ou tendinopatia do supraespinal.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Doenças do Ombro e Cotovelo"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:20.592Z"
+  },
+  {
+    "id": "AJUDA_af12bcb2-b7c3-4b1b-8a95-75f3bae85901",
+    "originalId": "af12bcb2-b7c3-4b1b-8a95-75f3bae85901",
+    "statement": "Leia o caso a seguir.\n\nPaciente vivendo com o vírus HIV (PVHA), assintomático, contactante de seu parceiro com tuberculose e com contagem de linfócitos TCD4+ = 300 células/mm³ comparece ao ambulatório de infectologia trazendo um resultado de IGRA reagente.\n\nEm relação a esse paciente, por ter",
+    "options": [
+      {
+        "id": "A",
+        "text": "linfócitos TCD4+ = 300, tem-se indicação de tratamento para ILTB, independentemente do resultado do IGRA.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "teste de IGRA reagente, deve ser iniciado o tratamento de tuberculose ativa imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "contactante com tuberculose e ser PVHA, deve-se iniciar o tratamento de tuberculose ativa imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "HIV e ser contactante de paciente com tuberculose, deve receber vacinação para esta infecção imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Esta questão aborda o manejo da Infecção Latente por Tuberculose (ILTB) em pacientes que vivem com HIV (PVHA), um tema recorrente em provas de residência devido ao alto risco de progressão para a forma ativa da doença nessa população.\n\nAlternativa A: Correta. Segundo o Protocolo Clínico e Diretrizes Terapêuticas do Ministério da Saúde, o tratamento da ILTB está indicado para PVHA em situações específicas, independentemente do resultado de testes imunológicos (como o PPD/Teste Tuberculínico ou o IGRA). Uma dessas indicações é justamente quando a contagem de linfócitos TCD4+ é menor ou igual a 350 células/mm³. Portanto, por ter CD4 de 300, o paciente já possui indicação formal de tratamento preventivo, mesmo que o IGRA fosse negativo.\n\nAlternativa B: Incorreta. Um teste de IGRA reagente indica que o sistema imune do paciente reconhece antígenos do *Mycobacterium tuberculosis* (infecção), mas não diferencia entre infecção latente e doença ativa. Como o paciente está assintomático, o diagnóstico é de ILTB, e não de tuberculose ativa. O tratamento da tuberculose ativa (esquema RIPE) só deve ser iniciado se houver evidência clínica, radiológica ou bacteriológica de doença.\n\nAlternativa C: Incorreta. O fato de ser PVHA e contactante de tuberculose é uma indicação clássica para o tratamento de ILTB (infecção latente), e não de tuberculose ativa. Para tratar como tuberculose ativa, o paciente precisaria apresentar sintomas (tosse, febre, perda de peso) ou exames alterados sugestivos de doença em atividade. Tratar precocemente como doença ativa sem confirmação expõe o paciente a toxicidades desnecessárias e esquemas terapêuticos mais complexos.\n\nAlternativa D: Incorreta. A vacina BCG, utilizada para prevenção de formas graves de tuberculose, é composta por bacilos vivos atenuados. Ela é contraindicada para pacientes adultos vivendo com HIV, especialmente aqueles com algum grau de imunossupressão, devido ao risco de disseminação do próprio bacilo vacinal. Além disso, a vacinação não é uma medida de controle para contactantes adultos. O protocolo correto para contactantes PVHA é a investigação de doença ativa e o tratamento de infecção latente.",
+    "exam": "SES",
+    "year": 2025,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "HIV",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3f54cc53e6d778313bd040f932e184b34c59d256ff5b1e87f44e963de4f78b3f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3113bcc78fd6d97d560f7ec126536a8282b7ca6f49deb703a351220f9166e609.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:20.592Z"
+  },
+  {
+    "id": "AJUDA_af2278fc-75a4-46ef-99f4-44693e4ff405",
+    "originalId": "af2278fc-75a4-46ef-99f4-44693e4ff405",
+    "statement": "Lactente de 18 meses consome cerca de 1 litro de leite de vaca por dia e pouca carne. Exames: Hb 8,7 g por dL, VCM 66 fL, RDW 19%, ferritina 7 ng/mL, reticulócitos 0,8%, plaquetas 520.000/mm³. Inicia sulfato ferroso em dose terapêutica, com orientação alimentar adequada. \nQual achado após 3 a 4 semanas mais apoia resposta terapêutica adequada e confirma que hipótese?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Redução imediata do VCM para valores ainda menores.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aumento da hemoglobina em cerca de 1 g por dL ou mais, desde que haja adesão e ausência de perdas persistentes.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Normalização completa da ferritina em 7 dias.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Queda dos reticulócitos para zero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Surgimento de Coombs direto positivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CENÁRIO CLÍNICO\n\nO caso clínico apresenta um lactente de 18 meses com um quadro clássico de Anemia Ferropriva (deficiência de ferro). Os principais indicadores são o consumo excessivo de leite de vaca (pobre em ferro e causador de micro-sangramentos intestinais) e baixa ingestão de carne. Os exames laboratoriais confirmam:\n- Anemia (Hb 8,7 g/dL);\n- Microcitose (VCM baixo, 66 fL);\n- Anisocitose (RDW elevado, 19%);\n- Estoques de ferro esgotados (Ferritina 7 ng/mL);\n- Plaquetose reacional (comum na ferropenia).\n\nO tratamento padrão é a reposição com ferro elementar (sulfato ferroso) e correção da dieta.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (Incorreta): O VCM (Volume Corpuscular Médio) tende a aumentar gradualmente à medida que novas hemácias, agora com tamanho normal, entram na circulação. Uma redução ainda maior do VCM indicaria piora da microcitose, o oposto do esperado com o tratamento.\n\nAlternativa B (Correta - Gabarito): A monitorização da resposta terapêutica na anemia ferropriva segue uma cronologia bem definida. Após 48 a 72 horas, ocorre o pico de reticulócitos (reticulocitose). Após 3 a 4 semanas de tratamento adequado, o parâmetro mais fidedigno de melhora é o aumento nos níveis de hemoglobina, que deve subir pelo menos 1 a 2 g/dL. Isso confirma o diagnóstico (prova terapêutica) e a adesão ao tratamento.\n\nAlternativa C (Incorreta): A ferritina é o último parâmetro a se normalizar. Primeiro recupera-se a reticulocitose, depois a hemoglobina e, somente após meses de tratamento (geralmente 3 a 4 meses após a normalização da Hb), é que os estoques de ferro (ferritina) são plenamente repostos. Jamais ocorreria em 7 dias.\n\nAlternativa D (Incorreta): O esperado é o aumento dos reticulócitos (resposta medular à presença do ferro), e não sua queda para zero. Reticulócitos em zero indicariam uma aplasia medular ou falha grave na produção.\n\nAlternativa E (Incorreta): O teste de Coombs direto é utilizado para diagnosticar anemias hemolíticas autoimunes (detecção de anticorpos contra hemácias). Não há qualquer relação entre a reposição de ferro e a positivação desse teste.\n\nCONCLUSÃO\n\nA confirmação da hipótese de anemia ferropriva em pediatria é feita frequentemente pela \"prova terapêutica\". O aumento sustentado da hemoglobina após um mês de uso do sulfato ferroso é o marcador padrão-ouro para confirmar que a causa da anemia era, de fato, a carência de ferro.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Alergia Alimentar"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:20.592Z"
+  },
+  {
+    "id": "AJUDA_af2741d7-3c27-4049-8512-2e708ff9b1bb",
+    "originalId": "af2741d7-3c27-4049-8512-2e708ff9b1bb",
+    "statement": "Homem de 62 anos, com IMC: 28 kg/m2, portador de hérnia inguinal recidivada após herniorrafia aberta prévia, é submetido a reparo laparoscópico transabdominal pré-peritoneal (TAPP). Durante a dissecação do espaço de Retzius, o cirurgião identifica o ligamento de Cooper como marco anatômico essencial para a fixação da tela. Ao abordar a região lateral do ligamento, ocorre sangramento arterial de difícil controle.\n\nCom base na anatomia cirúrgica e nas melhores práticas atuais, qual é a explicação mais provável para a origem desse sangramento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lesão da artéria epigástrica inferior, que cruza o trato iliopúbico medialmente ao anel femoral.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Lesão da artéria circunflexa ilíaca profunda, que passa posteriormente ao trato iliopúbico e irriga o músculo transverso do abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Lesão de ramo aberrante da artéria obturadora, também conhecida como “coroa mortis”, que cruza lateralmente o ligamento de Cooper.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Lesão da artéria pudenda externa, ramo da femoral, que acompanha os vasos espermáticos pelo anel inguinal profundo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Lesão de ramo da artéria vesical inferior, que emerge do plexo venoso retropúbico e cruza anteriormente ao espaço de Retzius.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico aborda uma complicação vascular clássica durante a dissecção e fixação de tela no reparo laparoscópico de hérnia inguinal (TAPP), especificamente junto ao ligamento de Cooper (ligamento pectíneo), no espaço de Retzius. \n\nAbaixo está a análise detalhada de cada alternativa:\n\nAlternativa A - Incorreta: A artéria epigástrica inferior origina-se da artéria ilíaca externa e ascende medialmente ao anel inguinal profundo e lateralmente ao anel femoral. Embora seja um marco anatômico crucial na visão posterior (delimitando o triângulo de Hesselbach), ela não cruza o ligamento de Cooper em sua porção lateral.\n\nAlternativa B - Incorreta: A artéria circunflexa ilíaca profunda corre lateralmente em direção à espinha ilíaca anterossuperior e à crista ilíaca, estando topograficamente associada à borda lateral do espaço pré-peritoneal e ao triângulo da dor, longe do ligamento de Cooper.\n\nAlternativa C - Correta: A \"corona mortis\" (coroa da morte) refere-se a uma conexão vascular anastomótica (arterial, venosa ou mista) entre o sistema ilíaco externo/epigástrico inferior e o sistema obturatório. Essa estrutura anatômica passa diretamente sobre o ramo superior do púbis e cruza o ligamento de Cooper em sua porção lateral. Por estar exatamente no local de dissecção e fixação da tela, está sob alto risco de lesão iatrogênica e, pela sua difícil hemostasia e retração vascular para a pelve, pode gerar sangramento de difícil controle.\n\nAlternativa D - Incorreta: As artérias pudendas externas são ramos da artéria femoral no triângulo femoral (superficial e profundo) e suprem o tecido subcutâneo e a genitália externa. Elas não cruzam o anel profundo no espaço pré-peritoneal abordado na TAPP.\n\nAlternativa E - Incorreta: Os ramos vesicais e o plexo venoso retropúbico (plexo de Santorini) situam-se medialmente e junto à bexiga no espaço de Retzius, não correspondendo ao vaso arterial clássico que cruza o ligamento de Cooper lateralmente.\n\nPortanto, a alternativa correta é a letra C.",
+    "exam": "Sírio Libanês",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hérnias da Parede Abdominal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/b5172b1fa9ecebfe5a521433ab06986d79640c89f75057084716382d07bc45ac.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8865b574ba4077f7df6b874e6147a0bcf88d04d2d638c8d207c393c04568c997.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:20.592Z"
+  },
+  {
+    "id": "AJUDA_af2a64be-5baa-4a5e-8863-3dcbd79897c5",
+    "originalId": "af2a64be-5baa-4a5e-8863-3dcbd79897c5",
+    "statement": "Ana Paula, 40 anos de idade, portadora de endometriose profunda com acometimento retovaginal, foi submetida à videolaparoscopia para ressecção completa dos nódulos e lise de aderências. Após seis meses, relata melhora importante da dor pélvica, mas refere episódios discretos de disúria cíclica e sensação de distensão pélvica no período menstrual. \nConsiderando as diretrizes atualizadas da FEBRASGO (2023) e da (European Society of Human Reproduction and Embryology) ESHRE (2022), assinale a alternativa que apresenta a principal medida terapêutica recomendada para prevenir a recidiva da endometriose e estabilizar os sintomas residuais.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar terapia combinada cíclica com estrogênio e progestagênio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Iniciar anticoncepção hormonal contínua ou progestagênio isolado.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Repetir cirurgia preventiva após 12 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Suspender todos os hormônios para avaliar a função ovariana residual.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Iniciar agonista de GnRH por tempo indeterminado.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO caso clínico descreve uma paciente de 40 anos com endometriose profunda submetida a tratamento cirúrgico completo, mas que apresenta sintomas residuais cíclicos. A endometriose é uma doença crônica e estrógeno-dependente. A cirurgia, embora necessária para a ressecção de nódulos e lise de aderências, não garante a cura definitiva. De acordo com as diretrizes da ESHRE (2022) e da FEBRASGO (2023), o tratamento hormonal pós-operatório é fundamental para prevenir a recidiva das lesões e controlar sintomas dolorosos remanescentes, desde que a paciente não deseje engravidar de imediato.\n\nALTERNATIVAS\n\nAlternativa a) Incorreta. A terapia combinada cíclica permite a privação hormonal e o sangramento mensal. Para pacientes com sintomas residuais cíclicos (como a disúria e distensão no período menstrual relatadas), o regime cíclico é menos eficaz que o regime contínuo, pois a menstruação mantém o estímulo inflamatório e a sintomatologia associada ao ciclo.\n\nAlternativa b) Correta. Esta é a recomendação principal das diretrizes atuais. O uso de anticoncepcionais hormonais em regime contínuo ou progestagênios isolados (como dienogeste, implante de etonogestrel ou DIU de levonorgestrel) visa promover a amenorreia e a supressão do tecido endometrial ectópico. Essa medida reduz significativamente as taxas de recorrência de endometriomas e nódulos de endometriose profunda, além de estabilizar os sintomas residuais ao evitar as flutuações hormonais e o fluxo menstrual.\n\nAlternativa c) Incorreta. Não existe o conceito de cirurgia preventiva programada para endometriose. A reintervenção cirúrgica é uma medida de exceção, indicada apenas em casos de falha terapêutica do tratamento clínico, progressão da doença com comprometimento de órgãos vitais ou dor intratável.\n\nAlternativa d) Incorreta. Suspender o tratamento hormonal em uma paciente com sintomas residuais e histórico de endometriose profunda aumentaria o risco de progressão da doença e recidiva precoce, uma vez que o estímulo estrogênico fisiológico permaneceria agindo sobre possíveis focos microscópicos não visualizados na cirurgia.\n\nAlternativa e) Incorreta. Embora os agonistas de GnRH sejam potentes na supressão da doença, eles não são indicados por tempo indeterminado como primeira escolha de manutenção. Seu uso prolongado causa efeitos colaterais graves, como perda de densidade mineral óssea e sintomas climatéricos intensos. Quando utilizados por mais de seis meses, exigem obrigatoriamente a terapia de reposição paralela (add-back therapy).\n\nGabarito: Letra (b).",
+    "exam": "Hospital Santa Rita de Cássia",
+    "year": 2026,
+    "banca": "Ibest",
+    "uf": "SP",
+    "tags": [
+      "Dor Pélvica Crônica e Dismenorreia",
+      "Endometriose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9792fdec7de1d0d273bae27b02a48fce761b01ff6445c81dd0289f86b3b63dae.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/35477bfffd10d2406bc051b80636e4d6a234ab07edecae78ec1850ada996bd8b.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:20.592Z"
+  },
+  {
+    "id": "AJUDA_af2a678e-2cf4-4d92-8f79-0ae37fb587ca",
+    "originalId": "af2a678e-2cf4-4d92-8f79-0ae37fb587ca",
+    "statement": "O critério diagnóstico para Diabetes Mellitus Gestacional (DMG) utilizando o Teste de Tolerância Oral à Glicose (TOTG-75g) entre 24 e 28 semanas é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Glicemia de jejum ≥ 126 mg/dL em duas ocasiões.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Hemoglobina glicada ≥ 6,5% no primeiro trimestre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Glicemia aleatória ≥ 200 mg/dL com sintomas de poliúria.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Glicemia de jejum ≥ 92 mg/dL, ou 1h ≥ 180 mg/dL, ou 2h ≥ 153 mg/dL.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O diagnóstico de hiperglicemia na gestação é dividido em duas categorias: o Diabetes Mellitus pré-existente (ou Diabetes Mellitus detectado na gravidez, também chamado de “Overt Diabetes”) e o Diabetes Mellitus Gestacional (DMG). A questão foca especificamente no rastreio realizado entre 24 e 28 semanas através do Teste de Tolerância Oral à Glicose (TOTG) com 75 g de glicose.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta. O achado de glicemia de jejum maior ou igual a 126 mg/dL em qualquer fase da gestação classifica a paciente como portadora de Diabetes Mellitus Manifesto (Overt Diabetes), e não de Diabetes Gestacional. O DMG é caracterizado por valores de jejum entre 92 e 125 mg/dL.\n\nAlternativa (b) Incorreta. A Hemoglobina Glicada (HbA1c) maior ou igual a 6,5% é um critério utilizado para o diagnóstico de Diabetes Mellitus pré-existente (Overt Diabetes), geralmente avaliado no primeiro trimestre. Ela não faz parte dos critérios diagnósticos do TOTG-75g para DMG entre 24 e 28 semanas.\n\nAlternativa (c) Incorreta. A presença de glicemia aleatória (ao acaso) maior ou igual a 200 mg/dL, associada a sintomas clássicos de hiperglicemia (poliúria, polidipsia, perda de peso), é critério diagnóstico para Diabetes Mellitus Manifesto, indicando que a paciente provavelmente já era diabética antes de engravidar ou desenvolveu a doença de forma plena, e não apenas a intolerância gestacional.\n\nAlternativa (d) Correta. De acordo com a Organização Mundial da Saúde (OMS) e a Sociedade Brasileira de Diabetes (SBD), os critérios para o diagnóstico de DMG no TOTG-75g, realizado entre 24 e 28 semanas, são:\n- Glicemia de jejum: entre 92 e 125 mg/dL.\n- Glicemia após 1 hora: maior ou igual a 180 mg/dL.\n- Glicemia após 2 horas: maior ou igual a 153 mg/dL.\nBasta que apenas um desses valores esteja alterado para que o diagnóstico de Diabetes Mellitus Gestacional seja confirmado. Se o valor de jejum for maior ou igual a 126 mg/dL ou o valor de 2 horas for maior ou igual a 200 mg/dL, a classificação muda para Diabetes Mellitus Manifesto.",
+    "exam": "Grupo VIV",
+    "year": 2026,
+    "banca": "Selecting",
+    "uf": "DF",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/eaa307565a60c891df09c2261c03c39e2989401faf98b1b7aa784c2c62171e88.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/47c18935a13a2fac14c369cfc1d9ef98f8bae94401643931c871a40313d202ec.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:20.592Z"
+  },
+  {
+    "id": "AJUDA_af3071ce-8e0b-4296-86d5-5164b826ff34",
+    "originalId": "af3071ce-8e0b-4296-86d5-5164b826ff34",
+    "statement": "Qual dos seguintes métodos é APROPRIADO para determinar a associação estatística entre exposição e doença em um estudo epidemiológico?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Regressão linear para análise de dados categóricos em estudos caso-controle.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Aplicação do teste chi-quadrado para comparar proporções entre grupos expostos e não expostos em estudos transversais.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Taxas de prevalência para inferir causalidade entre exposição e desfecho em estudos longitudinais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Medidas de tendência central para estabelecer a relação entre as variáveis em estudo de coorte.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Para resolver essa questão, é fundamental compreender a aplicação dos métodos estatísticos e as medidas epidemiológicas de acordo com o desenho de estudo utilizado.\n\nAlternativa (a) INCORRETA: A regressão linear é um modelo estatístico utilizado quando a variável dependente (o desfecho) é contínua ou numérica (como peso, altura ou pressão arterial). Em estudos de caso-controle, o desfecho é categórico ou dicotômico (presença ou ausência de doença). Para analisar dados categóricos e ajustar variáveis de confusão nesses estudos, o método de escolha é a regressão logística, e não a linear.\n\nAlternativa (b) CORRETA: O teste do qui-quadrado de Pearson é o método estatístico de escolha para comparar proporções entre grupos independentes quando as variáveis são qualitativas/categóricas. Em um estudo transversal, frequentemente comparamos a proporção de indivíduos doentes entre o grupo de expostos e o grupo de não expostos para verificar se existe uma associação estatística significativa. Portanto, é o método apropriado para testar se a distribuição das frequências observadas difere do que seria esperado ao acaso.\n\nAlternativa (c) INCORRETA: As taxas de prevalência são medidas de frequência que indicam a proporção de casos em um determinado momento, sendo a marca registrada dos estudos transversais. Estudos longitudinais (como coortes) utilizam taxas de incidência para medir o surgimento de novos casos. Além disso, a prevalência por si só não permite inferir causalidade, pois não estabelece com clareza a precedência temporal (se a exposição veio antes da doença), requisito básico para a relação causal.\n\nAlternativa (d) INCORRETA: Medidas de tendência central (média, mediana e moda) têm como objetivo resumir e descrever o centro de uma distribuição de dados numéricos. Elas descrevem uma variável isoladamente, mas não têm o poder de estabelecer ou quantificar a associação entre uma exposição e um desfecho. Em estudos de coorte, para estabelecer essa relação, utilizamos medidas de associação como o Risco Relativo (RR) e testes de hipóteses ou modelos de regressão.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:20.592Z"
+  },
+  {
+    "id": "AJUDA_af30a62a-0fa7-4dfd-86f5-4502c4f52f36",
+    "originalId": "af30a62a-0fa7-4dfd-86f5-4502c4f52f36",
+    "statement": "Mulher de 45 anos está em acompanhamento no ambulatório de mastologia de um hospital escola devido ao diagnóstico de câncer de mama há 3 anos. Fez tratamento cirúrgico e radioterapia e, no momento, faz uso apenas de tamoxifeno. Tem apresentado fluxos menstruais a cada 15-20 dias, com volume aumentado há 2 meses. Relata que, antes do tratamento do câncer de mama, só menstruava duas vezes por ano ou quando usava pílula contraceptiva. Apresenta um IMC de 28 kg/m², exame especular sem lesões visíveis e sem sangramento ativo e toque vaginal normal. Solicitada ultrassonografia transvaginal, ficou evidenciado endométrio heterogêneo de 15 mm e ovário direito com folículo de 23 mm. Nesse caso, a conduta médica adequada é",
+    "options": [
+      {
+        "id": "A",
+        "text": "inserir DIU hormonal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "suspender o tamoxifeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "indicar estudo histológico do endométrio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "prescrever progestogênio em altas doses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente é uma mulher de 45 anos em uso de tamoxifeno para tratamento adjuvante de câncer de mama. O tamoxifeno é um Modulador Seletivo do Receptor de Estrogênio (SERM) que possui ação antagonista no tecido mamário, mas ação agonista (estimuladora) no endométrio. Por esse motivo, mulheres em uso dessa medicação apresentam um risco aumentado para o desenvolvimento de pólipos, hiperplasia endometrial e carcinoma de endométrio.\n\nAlém do uso do tamoxifeno, a paciente apresenta outros fatores de risco para patologias endometriais: obesidade (IMC 28 kg/m²) e uma provável história de anovulação crônica prévia (menstruava apenas duas vezes ao ano antes do tratamento), o que indica exposição prolongada ao estrogênio sem a contraposição da progesterona. No momento, ela apresenta um quadro de sangramento uterino anormal (SUA) e uma ultrassonografia transvaginal que revela um endométrio espessado (15 mm) e de aspecto heterogêneo.\n\nExplicação das alternativas:\n\na) Incorreta. O DIU hormonal (levonorgestrel) pode ser utilizado para proteger o endométrio e tratar o sangramento, mas ele jamais deve ser inserido antes de se excluir uma neoplasia maligna em uma paciente com endométrio heterogêneo e espessado. Além disso, o uso de dispositivos hormonais em pacientes com histórico de câncer de mama é um tema sensível e deve ser avaliado individualmente após o diagnóstico endometrial.\n\nb) Incorreta. O tamoxifeno é fundamental para reduzir o risco de recidiva do câncer de mama e aumentar a sobrevida da paciente. A conduta diante de uma suspeita de complicação endometrial não é a suspensão imediata da droga, mas sim a investigação diagnóstica rigorosa. Se houver patologia confirmada, a equipe de oncologia e mastologia discutirá a substituição por outra classe de medicamentos (como os inibidores da aromatase).\n\nc) Correta. Esta é a conduta padrão. Toda paciente em uso de tamoxifeno que apresente sangramento uterino anormal deve ser submetida a uma avaliação histológica do endométrio. O achado ultrassonográfico de um endométrio de 15 mm e heterogêneo reforça a necessidade de descartar hiperplasia com atipia ou carcinoma endometrial. A coleta de material pode ser feita por biópsia ambulatorial (como a curetagem de Pipelle) ou, preferencialmente, por histeroscopia com biópsia dirigida, que permite visualizar a cavidade uterina.\n\nd) Incorreta. A prescrição de progestogênios em altas doses seria uma tentativa de tratamento hormonal para o sangramento ou para uma eventual hiperplasia. No entanto, assim como o DIU, não se deve tratar sem diagnóstico definitivo. Além disso, o uso de progestogênios em pacientes com antecedente de câncer de mama deve ser evitado ou usado com extrema cautela, apenas após a confirmação histológica e discussão multidisciplinar.\n\nResumo: Diante de sangramento uterino anormal em usuária de tamoxifeno com endométrio espessado ao ultrassom, a investigação histológica é obrigatória.",
+    "exam": "Revalida 2025/1",
+    "year": 2025,
+    "banca": "INEP",
+    "uf": "DF",
+    "tags": [
+      "Câncer do Corpo do Útero",
+      "Sangramento Uterino Anormal (SUA)",
+      "Câncer de Mama"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0c065ac0d29fd69d547e6fc518c8d3a39c2480fa47a67abca1b4572d65d476c4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/c8f95333ac2a76ce29ee56ca1dc2d241a4ca428a67128ed39b529c790801e2f6.pdf"
+    },
+    "collectedAt": "2026-10-24T17:33:20.592Z"
+  }
+]

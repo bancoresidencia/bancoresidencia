@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_56308059-b852-42bb-b674-16cbfa86d65b",
+    "originalId": "56308059-b852-42bb-b674-16cbfa86d65b",
+    "statement": "Um novo teste rápido, com sensibilidade e especificidade altas, será aplicado em triagem populacional de baixa prevalência. Sobre as medidas usadas para testes diagnósticos, é CORRETO afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mantidas sensibilidade e especificidade, o valor preditivo positivo tende a aumentar quando a prevalência da doença aumenta.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O valor preditivo negativo tende a diminuir quando a prevalência populacional diminui.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O valor preditivo positivo é independente da prevalência.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Sensibilidade e especificidade variam principalmente com a prevalência populacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para compreender esta questão, devemos analisar a relação entre a prevalência de uma doença e os indicadores de acurácia de um teste diagnóstico.\n\nAlternativa (a) - CORRETA: O Valor Preditivo Positivo (VPP) indica a probabilidade de um indivíduo realmente estar doente após receber um resultado positivo. O VPP é diretamente proporcional à prevalência. Isso significa que, em uma população na qual a doença é muito frequente, a chance de um resultado positivo ser um verdadeiro positivo é muito maior. Portanto, se mantivermos a sensibilidade e a especificidade fixas, o VPP aumentará conforme a prevalência da doença aumentar.\n\nAlternativa (b) - INCORRETA: O Valor Preditivo Negativo (VPN) indica a probabilidade de um indivíduo estar realmente saudável após um resultado negativo. O VPN tem uma relação inversa com a prevalência. Quando a prevalência populacional diminui (ou seja, a doença é rara), o VPN tende a aumentar, pois torna-se muito provável que um resultado negativo seja realmente verdadeiro.\n\nAlternativa (c) - INCORRETA: Os valores preditivos (VPP e VPN) são dependentes da prevalência. O VPP aumenta com o aumento da prevalência, e o VPN diminui com o aumento da prevalência. Apenas a sensibilidade e a especificidade são, teoricamente, independentes da prevalência.\n\nAlternativa (d) - INCORRETA: A sensibilidade (capacidade do teste de identificar os doentes) e a especificidade (capacidade do teste de identificar os saudáveis) são características intrínsecas do teste diagnóstico. Elas dependem da qualidade técnica do exame e dos critérios de corte definidos, e não variam com a prevalência da doença na população. O que varia com a prevalência são os valores preditivos.",
+    "exam": "HEVV",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Testes Diagnósticos"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3bf301390083bf8c5d6f254524d51862f479849ffd0079942fbefcc16db6b37b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1c86e387991649ad2296adeec1519e93cd5d3afbeac349c1df15a26c917a0a28.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:56.571Z"
+  },
+  {
+    "id": "AJUDA_56475a00-f67a-4ad8-8a8c-03e593c9f0a2",
+    "originalId": "56475a00-f67a-4ad8-8a8c-03e593c9f0a2",
+    "statement": "Criança de 2 anos, sexo feminino, sofreu uma queimadura de segundo grau na face e no pescoço após um acidente com água fervente. A área queimada é de aproximadamente 15%. Durante o atendimento inicial no pronto-socorro, a equipe médica realiza a reposição volêmica e estabiliza a paciente. Ao iniciar os cuidados locais, a equipe avalia as melhores estratégias de tratamento da ferida, considerando as particularidades da área afetada e a faixa etária da paciente. Com base nos princípios de cuidados locais para queimaduras pediátricas, qual das seguintes condutas é a mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar um curativo oclusivo nas áreas queimadas, pois isso reduzirá a dor e protegerá a ferida de infecções.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Realizar o tratamento com antibióticos sistêmicos para prevenir a colonização bacteriana e a sepse, que é a principal causa de morte em crianças queimadas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Adotar o tratamento por exposição, mantendo a face e o pescoço descobertos a fim de realizar melhor vigilância e limpeza.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Iniciar a aplicação imediata de creme de neomicina e bacitracina em todas as áreas queimadas, independentemente da gravidade, pois é a terapia melhor recomendada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (a) Incorreta: Embora os curativos oclusivos sejam amplamente utilizados em queimaduras de tronco e membros por protegerem contra traumas e reduzirem a dor, eles são de difícil aplicação e manutenção na face e no pescoço. A presença de orifícios naturais (boca, nariz, olhos) e a constante umidade por secreções (saliva, lágrima e muco) fazem com que o curativo oclusivo se desloque ou se torne um meio de cultura para bactérias, aumentando o risco de infecção.\n\nAlternativa (b) Incorreta: O uso de antibióticos sistêmicos de forma profilática não é recomendado no atendimento inicial ao queimado, independentemente da idade ou extensão da queimadura. Essa prática não previne infecções ou sepse e contribui para a seleção de bactérias multirresistentes. Os antibióticos sistêmicos devem ser reservados apenas para casos com evidência clínica ou laboratorial de infecção estabelecida.\n\nAlternativa (c) Correta: Em queimaduras de face e pescoço, o método de exposição (ou tratamento aberto) é o mais indicado. Essas áreas são tecnicamente difíceis de enfaixar e muito propensas à contaminação por secreções biológicas. Manter a ferida exposta permite uma limpeza mais rigorosa e frequente, a aplicação constante de agentes tópicos (como pomadas lubrificantes ou antissépticas) e uma vigilância contínua da evolução da lesão sem a necessidade de trocas dolorosas de faixas.\n\nAlternativa (d) Incorreta: A aplicação de neomicina e bacitracina não é o padrão-ouro para todas as queimaduras. A neomicina, especificamente, apresenta alto potencial de causar reações de hipersensibilidade local. Além disso, a conduta em queimaduras deve ser individualizada conforme a profundidade e a localização. O erro da alternativa reside em propor uma terapia fixa para todas as áreas e gravidades, ignorando as melhores práticas para áreas especiais.\n\nResumo: O tratamento de queimaduras faciais em crianças prioriza a manutenção da higiene e a prevenção de infecções através da limpeza frequente e uso de pomadas específicas sob exposição direta, evitando o desconforto e os riscos de contaminação associados aos curativos oclusivos nessa região anatômica complexa.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Queimaduras"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:56.571Z"
+  },
+  {
+    "id": "AJUDA_5649ac88-9191-4f02-8525-1182023e78ff",
+    "originalId": "5649ac88-9191-4f02-8525-1182023e78ff",
+    "statement": "Na epidemiologia descritiva, o método dos “três tempos” (pessoa, tempo e lugar) é utilizado para:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Avaliar causalidade entre variáveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Planejar ações de controle e prevenção.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Determinar a validade interna de estudos clínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Analisar a significância estatística de ensaios clínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Definir riscos relativos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A epidemiologia descritiva é o ramo da epidemiologia que estuda a distribuição das doenças e agravos à saúde em populações humanas. O método dos \"três tempos\" (pessoa, tempo e lugar) foca em responder às perguntas: Quem é afetado? Quando ocorre o evento? Onde ele se localiza? Ao responder a essas questões, o profissional de saúde consegue identificar os grupos de risco, os padrões sazonais e as áreas geográficas prioritárias.\n\nAlternativa (a) Incorreta: A epidemiologia descritiva não tem como objetivo principal avaliar a causalidade (relação de causa e efeito). Ela serve para gerar hipóteses. A avaliação de causalidade é tarefa da epidemiologia analítica, que utiliza estudos como coorte, caso-controle e ensaios clínicos para testar as associações sugeridas pela descrição inicial.\n\nAlternativa (b) Correta: Esta é a finalidade precípua do método. Ao conhecer o perfil da população acometida (pessoa), o período de maior ocorrência (tempo) e as áreas de maior incidência (lugar), as autoridades de saúde e gestores podem planejar intervenções específicas, direcionar recursos financeiros, organizar campanhas de vacinação e estruturar serviços de atendimento para controle e prevenção do agravo.\n\nAlternativa (c) Incorreta: A validade interna refere-se à qualidade do desenho metodológico de um estudo e à sua capacidade de medir o que se propõe sem a interferência de vieses (erros sistemáticos). Embora importante na pesquisa científica, não é o objetivo do uso dos três tempos na epidemiologia descritiva.\n\nAlternativa (d) Incorreta: A análise de significância estatística (como o cálculo do valor de p) é uma ferramenta da estatística inferencial utilizada para verificar se os resultados obtidos podem ter ocorrido ao acaso. Ela é aplicada em diversos tipos de estudos, especialmente ensaios clínicos, mas não define a essência da descrição epidemiológica.\n\nAlternativa (e) Incorreta: O Risco Relativo (RR) é uma medida de associação obtida por meio de estudos analíticos, como os de coorte e ensaios clínicos controlados, nos quais se comparam grupos expostos e não expostos a determinado fator. A epidemiologia descritiva utiliza primordialmente medidas de frequência, como a prevalência e a incidência bruta.",
+    "exam": "SMS-Macaré",
+    "year": 2026,
+    "banca": "SMS-Macaré",
+    "uf": "RJ",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/080a52ea479cf55d099ed7411b6c4988d7661fe77644f0879d92eeb440eafa0e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7f1264ebec1225ff02ededf506ea55f5cca3e2768bf3addaf8d57b42626d2ce2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:56.571Z"
+  },
+  {
+    "id": "AJUDA_564c33e1-75f7-443d-8f00-efe256bdd9af",
+    "originalId": "564c33e1-75f7-443d-8f00-efe256bdd9af",
+    "statement": "Homem de 64 anos com histórico de enfisema grave é internado devido a hematêmese. O sangramento cessa logo após a admissão, mas o paciente fica confuso e agitado. Os gases sanguíneos arteriais são os seguintes: pH 7,23; PO2 42 mmHg; PCO2 75 mmHg. Qual das seguintes opções é a MELHOR TERAPIA para corrigir os distúrbios apresentados por este paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Administrar 10 mg de dexametasona intravenosa",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Corrigir a acidose com bicarbonato de sódio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Corrigir a hipoxemia com O2 nasal de alto fluxo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Intubar o paciente e instituir ventilação mecânica",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "O quadro clínico descreve um paciente com Doença Pulmonar Obstrutiva Crônica (DPOC) grave que desenvolveu insuficiência respiratória aguda, provavelmente desencadeada pelo estresse de um sangramento digestivo (hematêmese). A análise dos gases sanguíneos revela uma acidose respiratória grave (pH 7,23), hipercapnia severa (PCO2 75 mmHg) e hipoxemia acentuada (PO2 42 mmHg). O estado mental do paciente (confusão e agitação) caracteriza uma encefalopatia hipercápnica/hipóxica.\n\nAnálise das alternativas:\n\na) Incorreta. Embora os corticoides sejam utilizados no manejo de exacerbações de DPOC para reduzir a inflamação brônquica, a dexametasona não é o corticoide de escolha nesses casos (geralmente se utiliza metilprednisolona ou prednisona) e, mais importante, essa medicação não possui ação imediata para corrigir a falência ventilatória e a acidose grave apresentadas.\n\nb) Incorreta. O uso de bicarbonato de sódio é contraindicado na acidose respiratória. O excesso de CO2 é o que está causando a queda do pH. A administração de bicarbonato pode, inclusive, aumentar a produção de CO2 intracelular, piorando o quadro. O tratamento correto da acidose respiratória é a melhora da ventilação alveolar.\n\nc) Incorreta. O fornecimento de oxigênio em alto fluxo para um paciente com DPOC grave e hipercapnia crônica pode ser perigoso. Isso ocorre porque esses pacientes muitas vezes dependem do estímulo da hipoxemia para manter o drive respiratório. O excesso de oxigênio pode suprimir esse drive, piorando a retenção de CO2. Além disso, o oxigênio isolado não trata a hipoventilação (causa do PCO2 elevado).\n\nd) Correta. O paciente apresenta critérios claros para suporte ventilatório invasivo. A presença de acidose respiratória importante (pH menor que 7,25) associada a sinais de comprometimento do sensório (confusão e agitação) indica que a ventilação não invasiva (VNI) provavelmente falharia ou seria contraindicada pelo risco de não proteção de via aérea. A intubação orotraqueal seguida de ventilação mecânica é a melhor conduta para garantir a oxigenação, permitir a remoção controlada do excesso de CO2 e proteger a via aérea do paciente agitado e confuso.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AREMG",
+    "uf": "MG",
+    "tags": [
+      "Pneumologia Intensiva",
+      "Ventilação Mecânica",
+      "Intubação",
+      "Doença Pulmonar Obstrutiva Crônica (DPOC)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a7545cfb073bcc54cebcf553541c3bdfb4700a08aa1dcd81456218c7cdc3d414.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/30353970f3c12c255a3524c9c65740c827c6601d987d7bc04d026eb48ab733e8.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:56.571Z"
+  },
+  {
+    "id": "AJUDA_56533dd5-2606-495a-94e0-bd5d48c9e636",
+    "originalId": "56533dd5-2606-495a-94e0-bd5d48c9e636",
+    "statement": "Menino de 4 anos e 4 meses, hígido, sem comorbidades, com cartão vacinal completo pelo PNI. Recebeu VPC10 aos 2 e 4 meses, reforço aos 12 meses, meningocócica C aos 3 e 5 meses e reforço com meningocócica ACWY aos 12 meses. Não recebeu vacinas fora da rede pública. Os pais perguntam se, apesar de o cartão estar completo no PNI 2026, haveria diferenças se fosse seguido o calendário da SBP 2025/2026. Qual é a melhor orientação?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Não há diferença relevante, pois criança hígida com PNI completo não tem qualquer benefício potencial com vacinas adicionais recomendadas pela SBP.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve receber apenas VPP23, pois toda criança que recebeu VPC10 no primeiro ano deve receber pneumocócica polissacarídica aos 4 anos, independentemente de risco clínico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Pela SBP, pode ser considerada dose adicional com vacina pneumocócica conjugada de maior valência, como VPC13, VPC15 ou VPC20, até os 5 anos em criança que completou VPC10; também há recomendação de reforço de meningocócica ACWY entre 4 e 6 anos e possibilidade de iniciar meningocócica B em duas doses",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Pelo PNI 2026, a criança deveria receber obrigatoriamente VPC20 aos 4 anos, pois a VPC10 foi retirada do calendário infantil.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Pela SBP, a meningocócica ACWY só deve ser administrada na adolescência; portanto, não há reforço previsto entre 4 e 6 anos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A questão aborda as diferenças práticas entre o Programa Nacional de Imunizações (PNI) e as recomendações do Calendário de Vacinação da Sociedade Brasileira de Pediatria (SBP) para crianças pré-escolares.\n\nAlternativa a - Incorreta: Existem diferenças relevantes e benefícios clínicos potenciais. O calendário da SBP amplia o espectro de proteção imunológica, cobrindo um número significativamente maior de sorotipos pneumocócicos e sorogrupos meningocócicos em comparação ao esquema público básico.\n\nAlternativa b - Incorreta: A vacina pneumocócica polissacarídica 23-valente (VPP23) não é indicada de forma universal para crianças saudáveis. Seu uso é restrito a crianças a partir de 2 anos com comorbidades ou fatores de risco para doença pneumocócica invasiva (como asplenia, imunodeficiências, cardiopatias e pneumopatias crônicas).\n\nAlternativa c - Correta: De acordo com a SBP, crianças menores de 5 anos hígidas que completaram o esquema com VPC10 podem receber uma dose adicional com vacinas de maior valência (VPC13, VPC15 ou VPC20) para estender a proteção contra sorotipos emergentes importantes, como o 3 e o 19A. Além disso, a SBP prevê um reforço da vacina meningocócica ACWY entre 4 e 6 anos de idade e recomenda a vacina contra a Meningite B, que pode ser iniciada em esquema de duas doses para crianças acima de 2 anos previamente não vacinadas.\n\nAlternativa d - Incorreta: O PNI não preconiza uma dose obrigatória de VPC20 aos 4 anos de idade para toda criança hígida vacinada previamente com VPC10. As vacinas de espectro ampliado no SUS seguem diretrizes específicas para grupos prioritários e Centros de Referência para Imunobiológicos Especiais (CRIE).\n\nAlternativa e - Incorreta: A SBP recomenda explicitamente a realização de reforço da vacina meningocócica conjugada ACWY entre 4 e 6 anos de idade, além de nova dose na adolescência. O esquema com dose única na adolescência é característico do calendário do PNI, não da SBP.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Imunizações"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:56.571Z"
+  },
+  {
+    "id": "AJUDA_5665b213-d5a7-408f-a103-8732a8a173f6",
+    "originalId": "5665b213-d5a7-408f-a103-8732a8a173f6",
+    "statement": "Escolar de 12 anos é atendido em setor de emergência devido trauma bike-auto, com contusão pulmonar, sem repercussões clínicas. Paciente é avaliado, encontra-se estável e orientado pelo médico receber medicação analgésica, conforme seguinte prescrição: Cetorolaco frasco (30mg/ml): aplicar 2ml diluídos em 98ml de soro glicosado, em equipo de soro (endovenoso) a _________ gotas/minuto, em 40 minutos. Observação ** 1ml contém 20 gotas **. Qual a vazão (em gotas/minuto) a ser preenchida nesta prescrição?",
+    "options": [
+      {
+        "id": "A",
+        "text": "20.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "30.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "40.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "50.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "60.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nPara resolver questões de cálculo de gotejamento, é fundamental identificar primeiro o volume total da solução e o tempo de infusão determinado na prescrição.\n\nPasso 1: Determinar o Volume Total (V)\nA prescrição solicita 2 mL de cetorolaco diluídos em 98 mL de soro glicosado.\nVolume total = 2 mL + 98 mL = 100 mL.\n\nPasso 2: Identificar o Tempo (T)\nO tempo de infusão determinado é de 40 minutos.\n\nPasso 3: Aplicar a Fórmula de Gotejamento em Minutos\nQuando o tempo é fornecido em minutos, utilizamos a seguinte fórmula:\nNúmero de gotas/minuto = (Volume em mL x 20) / Tempo em minutos.\n(Observação: O fator 20 refere-se à conversão padrão de 1 mL = 20 gotas, conforme citado no enunciado).\n\nCálculo:\nGotas/minuto = (100 mL x 20) / 40 minutos\nGotas/minuto = 2000 / 40\nGotas/minuto = 50.\n\nPortanto, a vazão correta é de 50 gotas por minuto.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) 20. Incorreta. Este valor não corresponde à aplicação da fórmula com os dados fornecidos (100 mL em 40 min).\nAlternativa b) 30. Incorreta. Erro comum de cálculo ou interpretação do volume/tempo.\nAlternativa c) 40. Incorreta. Valor que não satisfaz a relação matemática entre volume total e tempo de infusão.\nAlternativa d) 50. Correta. Resultado exato da operação matemática: (100 x 20) dividido por 40.\nAlternativa e) 60. Incorreta. Valor que excederia a velocidade de infusão necessária para completar os 100 mL no tempo de 40 minutos.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Trauma"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:56.571Z"
+  },
+  {
+    "id": "AJUDA_56670d55-c4dd-441b-b549-6a17537c9cb3",
+    "originalId": "56670d55-c4dd-441b-b549-6a17537c9cb3",
+    "statement": "Dona Alice, 60 anos, foi atendida em consulta de rotina na Estratégia Saúde da Família, onde é cadastrada, ocasião em que apresentava pressão arterial de 165/100 mmHg. Após avaliação médica, Dona Alice deverá",
+    "options": [
+      {
+        "id": "A",
+        "text": "ser acompanhada pela equipe de saúde de família e comunidade no Programa Hiperdia, na mesma unidade em que é cadastrada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "ser referenciada aos ambulatórios de doenças cardiocirculatórias da rede estadual de Atenção Secundária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ser acompanhada em domicílio pelo Programa de Assistência Domiciliar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "ser referenciada ao eMulti (Equipes Multidisciplinares), antigo NASF (Núcleo de Apoio à Saúde da Família).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ser encaminhada para Unidade de Pronto Atendimento (UPA) até a normalização dos níveis tensóricos e, posteriormente, encaminhada para assistência de nível secundário.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise do Caso:\n\nA paciente Dona Alice, de 60 anos, apresenta níveis pressóricos de 165/100 mmHg em uma consulta de rotina. De acordo com as Diretrizes Brasileiras de Hipertensão Arterial, esses valores a classificam como portadora de Hipertensão Arterial Sistêmica (HAS) Estágio 2. O manejo dessa patologia crônica e a coordenação do cuidado são funções primordiais da Atenção Primária à Saúde (APS), especificamente por meio da Estratégia Saúde da Família (ESF).\n\nAlternativa (a): Correta. A Hipertensão Arterial Sistêmica é uma condição que deve ser manejada prioritariamente na Atenção Primária. O Programa Hiperdia é o sistema de cadastramento e acompanhamento de portadores de hipertensão arterial e/ou diabetes mellitus atendidos na rede ambulatorial do Sistema Único de Saúde (SUS). Ele permite o acompanhamento longitudinal pela equipe de saúde da família, garantindo o controle dos níveis tensionais, a oferta de medicamentos e a prevenção de complicações cardiovasculares na própria unidade onde a paciente reside e é cadastrada.\n\nAlternativa (b): Incorreta. O encaminhamento para a atenção secundária (especialistas em ambulatórios estaduais) é reservado para casos complexos, como hipertensão resistente (não controlada com três ou mais fármacos), suspeita de hipertensão secundária (causada por outras doenças), crianças e adolescentes com HAS, ou casos com lesões graves em órgãos-alvo que exijam propedêutica de maior densidade tecnológica. O caso de Dona Alice, a princípio, deve ser manejado na unidade básica.\n\nAlternativa (c): Incorreta. O Programa de Assistência Domiciliar (como o Melhor em Casa) é voltado para pacientes que possuem problemas de saúde controlados, mas que apresentam dificuldades de locomoção, estão acamados ou necessitam de cuidados que podem ser realizados em domicílio para evitar hospitalizações. Como Dona Alice compareceu à unidade para uma consulta de rotina, ela não apresenta critérios de restrição ao domicílio que justifiquem essa modalidade de atendimento.\n\nAlternativa (d): Incorreta. As Equipes Multidisciplinares (eMulti), substitutas do antigo NASF, têm como função o apoio matricial às equipes de Saúde da Família. Embora profissionais da eMulti (como nutricionistas ou profissionais de educação física) possam atuar conjuntamente no cuidado da paciente para mudanças de estilo de vida, a responsabilidade principal pelo acompanhamento e tratamento da hipertensão permanece com a equipe de referência da ESF, e não por meio de um \"referenciamento\" exclusivo à eMulti.\n\nAlternativa (e): Incorreta. Níveis de 165/100 mmHg em uma paciente assintomática em consulta de rotina não configuram uma emergência ou urgência hipertensiva. Emergências hipertensivas exigem redução imediata da pressão por haver risco iminente de morte ou lesão aguda de órgão-alvo (como infarto ou AVC), o que não é o caso. Encaminhar para a UPA seria uma conduta inadequada que sobrecarregaria o sistema de urgência sem benefício clínico para a paciente, cujo controle deve ser ambulatorial e gradual. Além disso, o encaminhamento subsequente para nível secundário não é a conduta padrão após a estabilização.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:56.571Z"
+  },
+  {
+    "id": "AJUDA_566f02d2-aa72-447e-bb0a-094d8f4c5e19",
+    "originalId": "566f02d2-aa72-447e-bb0a-094d8f4c5e19",
+    "statement": "Paciente de 47 anos realizou exame colposcópico devido a colpocitologia alterada (ASC-H). Durante o exame, observou-se alteração com alto risco de invasão neoplásica. Esse achado denomina-se",
+    "options": [
+      {
+        "id": "A",
+        "text": "pontilhado fino.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "mosaico regular.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "epitélio acetobranco.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "pólipo endocervical.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "vasos atípicos.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A questão aborda a interpretação de achados colposcópicos diante de uma citologia de alto risco (ASC-H - células escamosas atípicas, não se podendo excluir lesão intraepitelial de alto grau). Na colposcopia, os achados são classificados em achados anormais menores (Grau 1), achados anormais maiores (Grau 2) e achados suspeitos de invasão.\n\nAlternativa a) Incorreta. O pontilhado fino é caracterizado por capilares finos, de calibre uniforme e distribuição regular. É classificado como um achado colposcópico menor (Grau 1), geralmente associado a lesões de baixo grau ou processos inflamatórios, possuindo baixo risco de invasão.\n\nAlternativa b) Incorreta. O mosaico regular consiste em campos de epitélio delimitados por finas linhas vermelhas que formam um padrão geométrico organizado. Assim como o pontilhado fino, é um achado menor (Grau 1), indicativo de baixa probabilidade de malignidade invasiva.\n\nAlternativa c) Incorreta. O epitélio acetobranco é uma alteração comum que surge após a aplicação de ácido acético. Se for fino e de coloração clara, é um achado menor. Se for denso e opaco, é um achado maior (Grau 2). Embora lesões de alto grau sejam acetobrancas, o termo isolado não define o \"alto risco de invasão\" solicitado pela questão, que exige um sinal mais específico de câncer.\n\nAlternativa d) Incorreta. O pólipo endocervical é uma estrutura benigna que se projeta do canal cervical. Não é considerado um achado colposcópico de suspeição para invasão neoplásica, sendo geralmente um achado incidental e benigno durante o exame.\n\nAlternativa e) Correta. Os vasos atípicos representam o achado colposcópico mais característico e suspeito de câncer invasor. Eles surgem devido à neovascularização tumoral e perdem o padrão de ramificação normal (dicotômica). Apresentam-se com calibres irregulares, trajetos tortuosos e formas bizarras, como saca-rolhas, vírgulas, grampos ou espirais. A presença de vasos atípicos rompe a superfície epitelial e é o principal marcador de invasão na colposcopia.",
+    "exam": "UFPA",
+    "year": 2026,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3e001e32cffcf78b879e6a46a25af086fe1c01fcb7aedbd7269da69ab43cf3f5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/aa056b040167e87e1a210d5e63e6211b1174029efb2479fb741abc26d76cfe8e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:56.571Z"
+  },
+  {
+    "id": "AJUDA_5674fa77-53b7-48db-b06e-aeb25bc904a3",
+    "originalId": "5674fa77-53b7-48db-b06e-aeb25bc904a3",
+    "statement": "Trata-se de criança de 2 anos de idade, com quadro de febre de 3 dias de evolução e eritema macular iniciado em região de dobras com progressão generalizada. Evoluiu com bolhas e descamação. Ao exame físico, observado sinal de Nikolsky positivo, ausência de comprometimento ocular ou de orofaringe. Sobre o quadro descrito, assinale a alternativa CORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A provável etiologia é algum alimento ou medicamento de uso recente e o tratamento inclui anti alérgico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O provável agente etiológico é Staphylococcus aureus e o tratamento pode ser feito com penicilina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "O provável agente etiológico é Streptococcus pyogenes e o tratamento pode ser feito com penicilina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A etiologia não é bem definida e o tratamento inclui uso de imunoglobulina e ácido acetilsalicílico.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Análise do caso:\nO quadro clínico apresenta uma criança com febre, eritema que progride para bolhas e sinal de Nikolsky positivo (descolamento da camada superficial da pele ao aplicar uma pressão tangencial). O dado fundamental para o fechamento do diagnóstico é a ausência de comprometimento de mucosas (ocular e orofaringe). Esta combinação é característica da Síndrome da Pele Escaldada Estafilocócica (SSSS), também conhecida como Doença de Ritter.\n\nAlternativa A: Incorreta. A etiologia medicamentosa associada ao descolamento de pele (sinal de Nikolsky positivo) remete à Necrólise Epidérmica Tóxica (NET) ou Síndrome de Stevens-Johnson. Contudo, essas reações alérgicas graves apresentam, por definição, um acometimento intenso de mucosas, o que foi explicitamente descartado no enunciado. O tratamento para a SSSS é focado na eliminação do agente bacteriano e suporte cutâneo, não em antialérgicos.\n\nAlternativa B: Correta. O agente etiológico da Síndrome da Pele Escaldada Estafilocócica é o Staphylococcus aureus. A doença é causada pela liberação de toxinas esfoliativas (A e B) que se espalham via hematogênica e clivam a desmogleína 1 (proteína de adesão celular) na camada granulosa da epiderme. O tratamento deve ser realizado com antibióticos que tenham cobertura para o Staphylococcus aureus produtor de penicilinase, sendo a oxacilina (uma penicilina semissintética) ou cefalosporinas de primeira geração as escolhas habituais.\n\nAlternativa C: Incorreta. O Streptococcus pyogenes é o agente causador da escarlatina. Embora a escarlatina se inicie com febre e exantema que pode ser mais acentuado em áreas de dobras (sinal de Pastia), ela se caracteriza por um aspecto de pele em lixa e alterações de mucosa (faringite e língua em framboesa). A escarlatina não evolui com bolhas nem apresenta sinal de Nikolsky positivo.\n\nAlternativa D: Incorreta. O tratamento descrito (imunoglobulina venosa e ácido acetilsalicílico) é o protocolo padrão para a Doença de Kawasaki. A Doença de Kawasaki é uma vasculite que cursa com febre alta e exantema, mas requer obrigatoriamente alterações de mucosas (como lábios fissurados e conjuntivite) e não evolui com a formação de bolhas generalizadas ou sinal de Nikolsky.\n\nConclusão:\nO ponto-chave para o diagnóstico diferencial em provas de residência é: sinal de Nikolsky positivo com mucosas poupadas indica Síndrome da Pele Escaldada Estafilocócica. Sinal de Nikolsky positivo com mucosas acometidas indica Necrólise Epidérmica Tóxica/Stevens-Johnson. Portanto, a etiologia é o Staphylococcus aureus.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Piodermites",
+      "Dermatoses Vesicobolhosas"
+    ],
+    "difficulty": 55.2512184892139,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:56.571Z"
+  },
+  {
+    "id": "AJUDA_56790366-b623-4212-801c-4c29e5f246d9",
+    "originalId": "56790366-b623-4212-801c-4c29e5f246d9",
+    "statement": "A Diretriz Brasileira de Hipertensão Arterial (2025) trouxe relevantes atualizações na abordagem à uma das doenças mais prevalentes no ambiente da Atenção Primária à Saúde. Dentre os exames de análises clínicas, qual foi adicionado, em relação à diretriz anterior (2020), ao rol dos recomendados rotineiramente – pelo menos anualmente - no seguimento do paciente hipertenso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Estimativa da TFGe pelo CKD-EPI.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Relação albuminúria/creatininúria.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Quantificação do sódio sérico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Dosagem sérica do peptídeo natriurético tipo B.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A atualização da Diretriz Brasileira de Hipertensão Arterial (DBHA) de 2025 trouxe mudanças importantes no protocolo de seguimento do paciente hipertenso, visando o rastreamento precoce de lesões em órgãos-alvo e a estratificação de risco cardiovascular.\n\nAlternativa (a) Incorreta: A estimativa da Taxa de Filtração Glomerular (TFGe) por meio da equação CKD-EPI já era uma recomendação consolidada na diretriz de 2020. O acompanhamento da função renal através da creatinina sérica e do cálculo da TFGe permanece obrigatório, mas não é a novidade inserida como rotina anual universal em 2025.\n\nAlternativa (b) Correta: Esta é a principal inovação laboratorial da diretriz de 2025 para a Atenção Primária. A Relação Albuminúria/Creatininúria (RAC), realizada em amostra isolada de urina, passou a ser recomendada rotineiramente (pelo menos uma vez ao ano) para todos os pacientes hipertensos. Na diretriz de 2020, esse exame era prioritariamente indicado para pacientes com diabetes, doença renal crônica estabelecida ou suspeita de lesão renal. O objetivo da mudança é identificar precocemente o dano renal e o risco cardiovascular aumentado, mesmo em pacientes com TFGe normal.\n\nAlternativa (c) Incorreta: A dosagem de sódio sérico não é considerada um exame de rotina anual para todos os pacientes hipertensos. Sua avaliação é importante em contextos específicos, como no uso de certas classes de diuréticos ou em pacientes idosos com risco de hiponatremia, mas não foi adicionada ao rol de exames obrigatórios anuais para o seguimento geral.\n\nAlternativa (d) Incorreta: O peptídeo natriurético tipo B (BNP ou NT-proBNP) é um excelente marcador para diagnóstico e seguimento de insuficiência cardíaca. Contudo, seu uso não é recomendado como triagem de rotina anual na população hipertensa geral sem sintomas cardíacos ou evidências clínicas de disfunção ventricular.\n\nEm resumo, a Diretriz de 2025 enfatiza a necessidade de olhar para o rim além da creatinina, tornando a pesquisa de albuminúria (via RAC) uma peça fundamental do check-up anual do hipertenso.",
+    "exam": "PSU",
+    "year": 2026,
+    "banca": "AGRM",
+    "uf": "GO",
+    "tags": [
+      "Hipertensão Arterial Sistêmica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0fd7234fc4c83396dd31db8b5689a5aafdd773e7dd33299543c9ff78c96b4235.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d142366930f4ae61b59c5e94f2d6f5ff9b9a84f14b6dc8f3a0b752a68c1d1588.pdf"
+    },
+    "collectedAt": "2026-10-24T16:44:56.571Z"
+  }
+]

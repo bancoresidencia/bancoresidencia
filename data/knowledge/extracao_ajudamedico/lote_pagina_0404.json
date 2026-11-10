@@ -1,0 +1,507 @@
+[
+  {
+    "id": "AJUDA_7013a29e-977d-4986-8548-68b170509a57",
+    "originalId": "7013a29e-977d-4986-8548-68b170509a57",
+    "statement": "Paciente do sexo feminino, 8 anos de idade, é levada ao pediatra em consulta de puericultura para avaliação de crescimento. Sua altura está abaixo do percentil 3 para a idade, com velocidade de crescimento de 3 cm/ano. Ao exame físico, apresenta linfedema residual em dorso dos pés, pescoço curto e alado. Considerando o diagnóstico mais provável nesse caso, outras características comumente encontradas nesta patologia são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "valva aórtica bicúspide e cúbito varo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "puberdade precoce e hipotireoidismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "valva aórtica bicúspide e falência ovariana.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "infertilidade e hirsutismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Análise do caso clínico:\n\nA paciente apresenta um quadro clássico de Síndrome de Turner. Os sinais clínicos fundamentais descritos são a baixa estatura (altura abaixo do percentil 3 e velocidade de crescimento reduzida), o linfedema residual no dorso dos pés (comum no período neonatal, mas que pode persistir) e o pescoço alado (*pterygium colli*). A Síndrome de Turner ocorre pela ausência total ou parcial de um cromossomo X (cariótipo 45,X em cerca de 50% dos casos).\n\nAnálise das alternativas:\n\na) Incorreta. A valva aórtica bicúspide é, de fato, a malformação cardíaca mais comum na Síndrome de Turner (presente em cerca de 30% das pacientes). No entanto, a alteração ortopédica característica nos membros superiores é o cúbito valgo (aumento do ângulo de transporte do cotovelo) e não o cúbito varo.\n\nb) Incorreta. O hipotireoidismo (especialmente a tireoidite de Hashimoto) é frequente em pacientes com Síndrome de Turner. Contudo, a síndrome cursa tipicamente com hipogonadismo hipergonadotrófico devido à disgenesia gonadal, o que leva ao atraso puberal e à amenorreia primária, e não à puberdade precoce.\n\nc) Correta. Esta alternativa reúne duas características marcantes da patologia. A valva aórtica bicúspide é a alteração cardiovascular mais prevalente. A falência ovariana (ou disgenesia gonadal) ocorre em cerca de 90% das pacientes, resultando em \"ovários em fita\" (*streak ovaries*), o que acarreta a falta de caracteres sexuais secundários e infertilidade.\n\nd) Incorreta. Embora a infertilidade seja uma característica quase constante devido à falência ovariana prematura, o hirsutismo (excesso de pelos em áreas dependentes de andrógenos) não faz parte do quadro clínico da Síndrome de Turner. O hirsutismo está mais associado a condições como a Síndrome dos Ovários Policísticos ou a Hiperplasia Adrenal Congênita.\n\nGabarito: Letra (c).",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Síndromes Genéticas e Erros Inatos do Metabolismo",
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:35.569Z"
+  },
+  {
+    "id": "AJUDA_7019d3b5-d3dc-4f4b-8777-193696b78c2c",
+    "originalId": "7019d3b5-d3dc-4f4b-8777-193696b78c2c",
+    "statement": "Homem, 42 anos, previamente hígido, procura atendimento por cefaleia intensa unilateral na região orbital, acompanhada de lacrimejamento ocular, rinorreia e agitação motora. Relata que as crises ocorrem diariamente por 2 a 3 semanas, em horários semelhantes, e desaparecem espontaneamente por meses. Nega aura, fotofobia ou náuseas significativas. Com base no quadro clínico descrito, qual é o diagnóstico mais provável e a conduta terapêutica inicial recomendada, respectivamente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Migrânea sem aura – iniciar tratamento com triptanos orais ao início da crise e betabloqueador para profilaxia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cefaleia tensional crônica – manejo com analgésicos comuns e antidepressivos tricíclicos para profilaxia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Cefaleia em salvas – tratar crises agudas com oxigenoterapia em alto fluxo ou sumatriptano subcutâneo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Neuralgia do trigêmeo – iniciar carbamazepina, com possibilidade de bloqueio do nervo em casos refratários.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Enxaqueca com aura – manejo agudo com AINEs e, se refratária, considerar ergotamínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um homem de 42 anos com uma cefaleia de forte intensidade, unilateral e orbitária, acompanhada de sinais autonômicos (lacrimejamento e rinorreia) e agitação motora. O padrão temporal de crises diárias que ocorrem em períodos de algumas semanas (salvas) e desaparecem por meses é característico.\n\nANÁLISE DO DIAGNÓSTICO\nO diagnóstico é Cefaleia em Salvas (Cluster Headache). Esta condição faz parte do grupo das cefaleias trigêmino-autonômicas e possui características marcantes que a diferenciam de outras cefaleias primárias:\n1. Sexo: Mais comum em homens.\n2. Localização e Intensidade: Unilateral, periocular ou retro-orbitária, com dor lancinante de altíssima intensidade.\n3. Sintomas Autonômicos: Lacrimejamento, rinorreia, congestão nasal, miose ou ptose ipsilaterais à dor.\n4. Comportamento: O paciente apresenta agitação motora (anda de um lado para o outro), ao contrário da migrânea, na qual o paciente prefere o repouso absoluto.\n5. Periodicidade: As crises duram de 15 a 180 minutos e ocorrem em agrupamentos (salvas) que duram semanas, frequentemente no mesmo horário (ritmo circadiano).\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. Na migrânea (enxaqueca), o paciente geralmente apresenta náuseas, vômitos, fotofobia e fonofobia. As características clínicas principais que afastam essa opção são a agitação motora e os sintomas autonômicos exuberantes. Além disso, o tratamento profilático com betabloqueadores não é a primeira linha para cefaleia em salvas (na qual se usa preferencialmente o verapamil).\n\nAlternativa b) Incorreta. A cefaleia tensional é tipicamente bilateral, de intensidade leve a moderada, com caráter compressivo (em peso ou aperto). Não apresenta sintomas autonômicos nem a intensidade incapacitante descrita no caso.\n\nAlternativa c) Correta. O quadro é clássico de cefaleia em salvas. O manejo da crise aguda requer terapias de ação rápida, pois a dor é intensa e atinge o pico em poucos minutos. As opções padrão-ouro são a oxigenoterapia a 100% com máscara de alta concentração (fluxo de 12 L/min) ou o uso de sumatriptano por via subcutânea. Triptanos por via oral não são recomendados na fase aguda desta patologia devido ao início de ação lento.\n\nAlternativa d) Incorreta. A neuralgia do trigêmeo caracteriza-se por dores em choque, paroxísticas, de curtíssima duração (segundos), geralmente desencadeadas por gatilhos como tocar o rosto, mastigar ou escovar os dentes. Não costuma causar lacrimejamento ou agitação motora prolongada.\n\nAlternativa e) Incorreta. O paciente nega aura e os sintomas descritos (rinorreia, lacrimejamento e agitação) não fazem parte dos critérios diagnósticos da enxaqueca com aura. O tratamento com AINEs costuma ser insuficiente para a intensidade da dor na cefaleia em salvas.\n\nGABARITO: Letra (c).",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Cefaleias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:35.569Z"
+  },
+  {
+    "id": "AJUDA_701abbd8-c104-4e0b-9547-6650c485cec3",
+    "originalId": "701abbd8-c104-4e0b-9547-6650c485cec3",
+    "statement": "O estadiamento do câncer de colo uterino é fundamental para o planejamento terapêutico, sendo baseado nos critérios da FIGO (Federação Internacional de Ginecologia e Obstetrícia), que incorporou achados de imagem e patológicos. Em um caso de carcinoma de células escamosas com envolvimento visível dos dois terços superiores da vagina e invasão parametrial confirmada ao toque retal e ressonância magnética, sem comprometimento de parede pélvica ou hidronefrose. Analise as afirmativas sobre o estadiamento e conduta.\n\nI. O caso é classificado como Estádio IIB, caracterizado pela invasão do paramétrio sem atingir a parede pélvica, tornando a cirurgia de Wertheim-Meigs insuficiente como tratamento primário isolado.\nII. O tratamento padrão-ouro para este estádio é a quimiorradioterapia exclusiva ou concomitante (radioterapia externa pélvica + braquiterapia + cisplatina sensibilizante), visando o controle locorregional.\nIII. A histerectomia radical com linfadenectomia pélvica está formalmente contraindicada como primeira linha terapêutica, pois a margem cirúrgica livre no paramétrio seria difícil de obter, aumentando a morbidade sem benefício na sobrevida.\n\nEstá correto o que se afirma em:",
+    "options": [
+      {
+        "id": "A",
+        "text": "II e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "I e II apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "I e III apenas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO DA QUESTÃO\n\nEsta questão aborda o estadiamento e a conduta no câncer de colo uterino, baseando-se nas diretrizes da FIGO (Federação Internacional de Ginecologia e Obstetrícia). Para resolvê-la, é necessário correlacionar os achados clínicos e de imagem com a classificação correta e a respectiva proposta terapêutica.\n\nAnálise das afirmativas:\n\nAfirmativa I: Está correta. De acordo com o estadiamento FIGO, o Estádio II é aquele em que o carcinoma invade além do útero, mas não chega à parede pélvica nem ao terço inferior da vagina. O subestádio IIB é definido especificamente pela presença de invasão parametrial. Como o caso descreve invasão do paramétrio (confirmada por toque retal e ressonância) sem atingir a parede pélvica, a classificação é IIB. Nesse estádio, a cirurgia radical (Wertheim-Meigs) deixa de ser o tratamento de escolha, pois a doença já não está restrita ao colo e ao fundo de saco vaginal.\n\nAfirmativa II: Está correta. O tratamento padrão-ouro para o câncer de colo do útero localmente avançado (que engloba os estádios IIB, III e IVA) é a quimiorradioterapia concomitante. Esse protocolo consiste em radioterapia externa pélvica associada à quimioterapia sensibilizante (geralmente cisplatina semanal), finalizando com a braquiterapia (radioterapia interna). Essa combinação visa ao controle local da doença e à redução de metástases.\n\nAfirmativa III: Está correta. A realização de histerectomia radical em pacientes com estádio IIB é evitada como primeira linha. Isso ocorre porque a probabilidade de encontrar margens comprometidas ou a necessidade de radioterapia complementar (adjuvante) após a cirurgia é altíssima. Quando se associa cirurgia radical e radioterapia, as taxas de complicações e morbidade (como fístulas e linfedema) aumentam drasticamente, sem que haja ganho real na sobrevida global da paciente em comparação ao tratamento exclusivo com quimiorradioterapia.\n\nAnálise das alternativas:\n\nComo todas as afirmativas (I, II e III) estão tecnicamente corretas e seguem os consensos oncológicos e a classificação FIGO atual, a resposta correta é a letra C.\n\nAlternativa a) Incorreta. A afirmativa I também é verdadeira.\nAlternativa b) Incorreta. A afirmativa III também é verdadeira.\nAlternativa c) Correta. Todas as afirmações refletem o conhecimento atual sobre o manejo do estádio IIB.\nAlternativa d) Incorreta. A afirmativa II também é verdadeira.\n\nGabarito: Letra (c).",
+    "exam": "SCM Barra Mansa",
+    "year": 2026,
+    "banca": "ACCESS",
+    "uf": "RJ",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/023c529a5679f99953d9a1a85cf15d6e92209c32f33a2ebe1c65ce989c5c99e0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be5d7420df97b5db859ba8b9bd916d80856f4c03244aa2735d45261adc6cf5c1.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:35.569Z"
+  },
+  {
+    "id": "AJUDA_702078c9-bd81-44b4-a289-bdace1da00eb",
+    "originalId": "702078c9-bd81-44b4-a289-bdace1da00eb",
+    "statement": "Dentre as alternativas a seguir, assinale a que apresenta a principal causa de sangramento uterino pós-menopausa.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pólipo endometrial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Cisto ovariano.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Uso de tamoxifeno.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Mioma submucoso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Atrofia endometrial.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Texto Original:\nO sangramento uterino na pós-menopausa é um sinal clínico que sempre exige investigação cuidadosa para excluir a presença de câncer de endométrio, que ocorre em cerca de 10% dos casos. No entanto, a causa mais prevalente é de natureza benigna e decorrente do estado de hipoestrogenismo.\n\nAlternativa A: INCORRETA. Os pólipos endometriais são projeções benignas do endométrio e representam uma causa muito comum de sangramento na pós-menopausa (aproximadamente 30% dos casos). Apesar de sua alta frequência, eles são superados estatisticamente pela atrofia.\n\nAlternativa B: INCORRETA. Cistos ovarianos, em regra, não provocam sangramento uterino. A exceção seriam os tumores de ovário funcionantes (produtores de estrogênio), que poderiam estimular o crescimento endometrial e causar sangramento, mas essa é uma condição rara.\n\nAlternativa C: INCORRETA. O tamoxifeno é um medicamento utilizado no tratamento do câncer de mama que possui efeito antagonista na mama, mas agonista parcial no endométrio. Seu uso pode levar ao espessamento endometrial, ao surgimento de pólipos e ao aumento do risco de adenocarcinoma. Entretanto, é uma causa específica e não a principal causa na população geral de mulheres pós-menopausadas.\n\nAlternativa D: INCORRETA. Os miomas são tumores benignos dependentes de estrogênio. Com a chegada da menopausa e a queda hormonal, a tendência natural é que os miomas regridam de tamanho e parem de causar sangramento. O mioma submucoso é uma causa clássica de sangramento no menacme (idade reprodutiva), mas é pouco comum como causa de sangramento novo após a menopausa.\n\nAlternativa E: CORRETA. A atrofia endometrial é a principal causa de sangramento uterino pós-menopausa, respondendo por 60% a 80% dos casos. Devido à carência de estrogênio característica dessa fase, o endométrio torna-se muito fino e frágil. Essa fragilidade da mucosa predispõe a microtraumas e ao rompimento de pequenos vasos superficiais, resultando em sangramento, geralmente em pequena quantidade.\n\nGabarito: Alternativa E.",
+    "exam": "BOS",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/dbaeee0eb41b0eb3bc13b8aff1b42c912248068d228567afa435cb120de38430.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/ce47291d23a503caf57868efbd479c2c9d3d4d69c3dee8adebaabcb1e6b08a97.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:35.569Z"
+  },
+  {
+    "id": "AJUDA_702b945f-de8f-479f-9454-1cc573f682ba",
+    "originalId": "702b945f-de8f-479f-9454-1cc573f682ba",
+    "statement": "Mulher, 28 anos, saudável, consulta por Sangramento Uterino Anormal (SUA) persistente há 2 meses, desde que iniciou o uso de pílula anticoncepcional combinada (etinilestradiol 20 mcg + levonorgestrel 100 mcg). Relata tomar a pílula corretamente, iniciando a primeira cartela no primeiro dia da menstruação, sem esquecimentos, e não apresenta outros sintomas. Nega tabagismo e possui um parceiro sexual fixo há 1 ano. O exame especular é normal e a citologia oncótica está em dia e sem alterações. Qual é a conduta inicial mais adequada para essa paciente, considerando as causas mais prováveis?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Realizar USTV para investigar causas estruturais (por exemplo, miomas e pólipos) e prescrever AINEs para controle do sangramento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Suspender o uso da pílula combinada, prescrever anticoncepcional contendo apenas progesterona e agendar histeroscopia diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Orientar a paciente sobre a possibilidade de adaptação do organismo nos primeiros meses de uso da pílula, reforçar a importância da adesão correta e agendar reavaliação em 2 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Prescrever doxiciclina 100 mg/dia profilática, realizar teste de gravidez e solicitar exames para rastreio de infecções sexualmente transmissíveis.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Analise do caso:\nTrata-se de uma paciente jovem, previamente assintomatica, com exame fisico e citologia oncotica normais, que desenvolveu sangramento uterino anormal do tipo escape (spotting) estritamente relacionado ao inicio de anticoncepcional oral combinado de baixa dosagem (20 mcg de etinilestradiol). O sangramento de escape e um efeito colateral comum e esperado nos primeiros 3 a 4 meses de uso da pilula, decorrente da instabilidade e atrofia endometrial transitoria durante o periodo de adaptacao hormonal. Na classificacao FIGO (PALM-COEIN), o quadro enquadra-se na categoria Iatrogenica.\n\nAnalise das alternativas:\n\nAlternativa a: Incorreta. A realizacao de ultrassonografia transvaginal e a prescricao de AINEs sao desnecessarias neste primeiro momento. O quadro tem correlacao temporal direta com o inicio da medicacao em uma mulher jovem sem sintomas previos, tornando causas anatomicas/estruturais improvaveis como hipotese inicial.\n\nAlternativa b: Incorreta. A histeroscopia e um exame invasivo indicado apenas na suspeita de lesoes intracavitarias ou apos falha de conduta clinica. Alem disso, a troca para metodos contendo apenas progesterona tende a aumentar as taxas de sangramento irregular e spotting, piorando a queixa da paciente.\n\nAlternativa c: Correta. A conduta inicial adequada e a orientacao sobre o periodo de adaptacao ao contraceptivo hormonal (que dura cerca de 3 meses), o reforco da adesao ao metodo e o agendamento de retorno. A maioria dos casos de escape se resolve espontaneamente sem necessidade de intervencao medicamentosa ou troca de pilula.\n\nAlternativa d: Incorreta. Nao ha justificativa para prescrever doxiciclina de forma empirica ou profilatica, ja que a paciente nao apresenta criterios clinicos para infeccoes do trato genital superior (DIP) ou cervicite, apresentando exame especular rigorasamente normal.\n\nGabarito: Alternativa c.",
+    "exam": "AMRIGS",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RS",
+    "tags": [
+      "Sangramento Uterino Anormal (SUA)",
+      "Planejamento Familiar"
+    ],
+    "difficulty": 51.377229920433884,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/e918525add9a129e8076ff498e71e2f51a4844fbd828e3791df6db6499b16077.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69d4725e9d16943ac1cf14a245c3c375a962b033975b5eab1592002a312123b6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:35.569Z"
+  },
+  {
+    "id": "AJUDA_704fc13d-080d-49bc-bdca-e9a64bb921b9",
+    "originalId": "704fc13d-080d-49bc-bdca-e9a64bb921b9",
+    "statement": "Em 2025, diante do aumento expressivo de casos de arboviroses, o Ministério da Saúde reforçou a importância da integração entre a Atenção Primária e a Vigilância em Saúde para detecção precoce de complicações, notificação oportuna e monitoramento de grupos de risco. De acordo com as diretrizes nacionais de vigilância epidemiológica, qual das alternativas está CORRETA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A confirmação diagnóstica da zika deve ser feita por RT-PCR em todos os casos suspeitos, independentemente da fase clínica, e não há obrigatoriedade de notificação em quadros leves.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A notificação é compulsória para todos os casos suspeitos de dengue, zika e chikungunya, com prioridade de investigação laboratorial em gestantes, sendo indicado RT-PCR até o 5º dia de sintomas e sorologia após o 6º dia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A chikungunya deve ser notificada apenas em casos graves ou internados, ficando dispensada a notificação compulsória durante períodos interepidêmicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A dengue requer confirmação laboratorial universal com sorologia e/ou PCR em todos os casos suspeitos, devendo o resultado anteceder a notificação no sistema.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A prioridade da Atenção Primária no manejo das arboviroses é organizar encaminhamento hospitalar precoce para todos os casos confirmados, mesmo sem sinais de alarme, a fim de reduzir complicações populacionais.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda as diretrizes brasileiras de vigilância epidemiológica e manejo clínico das arboviroses (dengue, zika e chikungunya), temas recorrentes em provas de residência e concursos, especialmente considerando o cenário epidemiológico atual.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa A (Incorreta): O diagnóstico laboratorial depende da fase clínica. O RT-PCR detecta o genoma viral durante a fase de viremia (fase aguda), geralmente até o 5º dia do início dos sintomas. Após esse período, utiliza-se a sorologia (IgM). Além disso, a notificação de zika é obrigatória para todos os casos suspeitos, independentemente da gravidade, visando ao monitoramento de complicações como a síndrome congênita e complicações neurológicas.\n\nAlternativa B (Correta): Esta alternativa sintetiza corretamente as normas do Ministério da Saúde. A notificação de dengue, zika e chikungunya é compulsória para todos os casos suspeitos. Grupos de risco, como gestantes, têm prioridade na investigação laboratorial devido aos riscos fetais e obstétricos. O protocolo laboratorial padrão define o uso de métodos diretos (como RT-PCR ou isolamento viral) até o 5º dia do início dos sintomas e métodos indiretos (sorologia IgM/IgG) a partir do 6º dia.\n\nAlternativa C (Incorreta): A chikungunya é uma doença de notificação compulsória em todos os casos suspeitos. Não existe dispensa de notificação em períodos interepidêmicos; pelo contrário, é nesse período que a vigilância deve ser mais rigorosa para identificar precocemente o ressurgimento de surtos.\n\nAlternativa D (Incorreta): A notificação de arboviroses deve ser feita imediatamente após a suspeita clínica. Não se deve aguardar o resultado laboratorial para notificar, pois isso atrasaria as ações de controle vetorial e bloqueio epidemiológico. Além disso, em períodos de epidemia, o diagnóstico pode ser fechado por critério clínico-epidemiológico, sem necessidade de confirmação laboratorial para todos os pacientes.\n\nAlternativa E (Incorreta): A Atenção Primária à Saúde (APS) é a porta de entrada e o principal local de manejo das arboviroses. A maioria dos casos (Grupos A e B, sem sinais de alarme ou comorbidades graves) deve ser acompanhada na própria unidade básica. O encaminhamento hospitalar é reservado para casos com sinais de alarme, gravidade ou condições clínicas que exijam observação e hidratação venosa imediata. O encaminhamento universal de casos confirmados sem sinais de alarme causaria o colapso do sistema hospitalar.",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Vigilância em Saúde",
+      "Arboviroses"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:35.569Z"
+  },
+  {
+    "id": "AJUDA_706746e5-3715-47bf-8a5f-0d990ee345bc",
+    "originalId": "706746e5-3715-47bf-8a5f-0d990ee345bc",
+    "statement": "Durante hepatectomia, o cirurgião precisa de hemostasia superficial em área ampla com sangramento laminar difuso oriundo do parênquima hepático. A tecnologia que contempla essa demanda é",
+    "options": [
+      {
+        "id": "A",
+        "text": "tesoura ultrassônica (US de alta frequência).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "eletrocautério monopolar em corte puro.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "coagulação por feixe de argônio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "eletrocautério bipolar.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "CONCEITO GERAL: A hemostasia de superfícies parenquimatosas (como no fígado ou baço) após ressecções é um desafio cirúrgico devido à grande área de sangramento em lençol, também chamado de laminar ou difuso. A tecnologia ideal para essa situação deve permitir uma coagulação rápida, uniforme e de baixa profundidade, preferencialmente sem contato direto com o tecido para evitar a aderência de escaras.\n\nAlternativa A (Incorreta): A tesoura ultrassônica utiliza vibração mecânica de alta frequência para selar vasos e cortar tecidos simultaneamente. É uma ferramenta excelente para a dissecção e para a secção do parênquima hepático, conseguindo ocluir vasos de até 5 ou 7 mm. No entanto, ela não é projetada para tratar áreas superficiais amplas com sangramento difuso, pois sua ação depende da apreensão do tecido entre suas lâminas.\n\nAlternativa B (Incorreta): O eletrocautério monopolar em modo de corte puro utiliza uma corrente elétrica contínua de baixa voltagem que vaporiza o tecido rapidamente. Esse modo oferece o mínimo de hemostasia possível. Para controle de sangramento, o cirurgião utilizaria o modo de coagulação (fulguração ou spray), mas mesmo este é menos eficiente que o argônio em grandes áreas, pois o sangue acumulado pode isolar a ponta do bisturi e a carbonização excessiva pode fazer a ponta aderir ao tecido, causando novo sangramento ao ser removida.\n\nAlternativa C (Correta): O coagulador por feixe de argônio é a tecnologia padrão-ouro para o cenário descrito. Ele utiliza o gás argônio ionizado (um plasma) para conduzir a corrente elétrica de forma não aderente (sem contato físico). O fluxo de gás tem a vantagem adicional de afastar o sangue da superfície no momento da aplicação, permitindo que a energia atinja diretamente o parênquima. Isso resulta em uma coagulação superficial, uniforme, rápida e com profundidade de necrose limitada, sendo ideal para selar a superfície cruenta do fígado.\n\nAlternativa D (Incorreta): O eletrocautério bipolar funciona através da passagem de corrente entre as duas pontas de uma pinça. É uma tecnologia muito segura e precisa, pois a energia fica restrita ao tecido apreendido. Contudo, é impossível utilizar uma pinça bipolar para tratar uma área ampla de sangramento laminar em uma superfície plana, pois ela exige a apreensão pontual de vasos ou pequenas pontes de tecido.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Instituto Verbena",
+    "uf": "GO",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d8af9fa4ebdaead1cf5f36bb822fda3bde21e0a0579d2f859c86f387123d3503.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d38cddce994c8d6e8e1ef45ddd47a0ada1af9f9cc0bffc3e48de22c4975f8c7e.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:35.569Z"
+  },
+  {
+    "id": "AJUDA_70698a85-1700-47be-84d8-52020ef1565c",
+    "originalId": "70698a85-1700-47be-84d8-52020ef1565c",
+    "statement": "Desde 2018, o Brasil conta com a Política Nacional de Vigilância em Saúde (PNVS), essencial para que doenças sigam prevenidas e controladas em todo o país.\nAs principais ações da PNVS são",
+    "options": [
+      {
+        "id": "A",
+        "text": "a Vigilância epidemiológica, a Vigilância sanitária e a Vigilância nutricional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a Vigilância epidemiológica, a Vigilância ambiental, a Vigilância em saúde do trabalhador e a Vigilância sanitária.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "a Vigilância epidemiológica e a Vigilância sanitária.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "a Vigilância epidemiológica, a Vigilância sanitária, a Vigilância nutricional e a Vigilância em saúde da mulher.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "a Vigilância epidemiológica, a Vigilância sanitária, a Vigilância em saúde do trabalhador e a Vigilância em imunização.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A Política Nacional de Vigilância em Saúde (PNVS), instituída pela Resolução n.º 588 de 12 de julho de 2018 do Conselho Nacional de Saúde, define a Vigilância em Saúde como um processo contínuo e sistemático de coleta, consolidação, análise e disseminação de dados sobre eventos relacionados à saúde. Para fins de organização e execução, o Artigo 6º dessa resolução estabelece que a Vigilância em Saúde é composta por quatro eixos ou componentes principais.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a Vigilância Alimentar e Nutricional exista no SUS, ela não é considerada um dos quatro componentes estruturantes da PNVS conforme a Resolução 588/2018.\n\nAlternativa b) Correta. Esta alternativa lista exatamente os quatro componentes definidos no Artigo 6º da PNVS: \n1. Vigilância Epidemiológica: ações que proporcionam o conhecimento e a detecção de mudanças nos fatores determinantes da saúde individual ou coletiva, com a finalidade de recomendar medidas de prevenção e controle.\n2. Vigilância em Saúde Ambiental: conjunto de ações que proporcionam o conhecimento e a detecção de mudanças nos fatores determinantes e condicionantes do meio ambiente que interferem na saúde humana.\n3. Vigilância em Saúde do Trabalhador: visa à promoção da saúde e à redução da morbimortalidade da população trabalhadora, por meio da integração de ações que intervenham nos riscos e agravos advindos das condições de trabalho.\n4. Vigilância Sanitária: conjunto de ações capazes de eliminar, diminuir ou prevenir riscos à saúde e de intervir nos problemas sanitários decorrentes do meio ambiente, da produção e circulação de bens e da prestação de serviços de interesse da saúde.\n\nAlternativa c) Incorreta. A alternativa está incompleta. Embora a vigilância epidemiológica e a sanitária sejam os pilares mais conhecidos, a PNVS obriga a integração também das vigilâncias ambiental e da saúde do trabalhador.\n\nAlternativa d) Incorreta. Vigilância nutricional e saúde da mulher são programas e políticas transversais do Ministério da Saúde, mas não compõem a estrutura quadripartite da PNVS definida na normativa de 2018.\n\nAlternativa e) Incorreta. A imunização é uma das principais ferramentas de intervenção da Vigilância Epidemiológica (gerida pelo Programa Nacional de Imunizações), mas não é classificada como um componente autônomo ou uma vigilância à parte dentro da estrutura da PNVS.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:35.569Z"
+  },
+  {
+    "id": "AJUDA_706ac5a2-1c60-44a5-bff6-d93bb0e06a4e",
+    "originalId": "706ac5a2-1c60-44a5-bff6-d93bb0e06a4e",
+    "statement": "Mulher de 25 anos de idade, gestante com idade gestacional de 13 semanas, procurou o pronto atendimento por dor abdominal há dois dias associada a disúria. Ao exame físico, encontra-se em bom estado geral com PA 100x60mmHg, FC 90bpm e temperatura axilar de 37,1°C. O exame abdominal evidencia abdome gravídico, flácido, doloroso à palpação em flanco direito e fossa ilíaca direita, sem sinais de irritação peritoneal. Os exames laboratoriais revelaram leucócitos em 14.200/mm³, PCR 25mg/dL, exame de urina com 45.000 leucócitos/mm³ e nitrito negativo. A avaliação obstétrica não demonstrou sinais de sofrimento fetal. Realizou a ultrassonografia ilustrada a seguir. Qual é o tratamento indicado para essa paciente?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Antibioticoterapia via oral e reavaliação ambulatorial em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Antibioticoterapia via endovenosa exclusiva.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Abordagem cirúrgica de urgência por via abdominal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Sintomáticos e reavaliação ambulatorial em 48 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A paciente descrita apresenta um quadro de apendicite aguda, que é a causa mais comum de abdome agudo cirúrgico não obstétrico durante a gestação. Um ponto fundamental para a resolução desta questão é identificar a \"pegadinha\" da disúria e da leucocitúria (45.000 leucócitos/mm³). Na gestante, a proximidade do apêndice inflamado com o ureter direito ou com a bexiga pode causar sintomas urinários e alterações no sedimento urinário, o que frequentemente leva ao erro diagnóstico de infecção do trato urinário (ITU). No entanto, a dor localizada em flanco e fossa ilíaca direita, associada a marcadores inflamatórios elevados (leucocitose e PCR de 25 mg/dL), aponta para uma causa inflamatória intra-abdominal.\n\nA ultrassonografia apresentada na questão é clássica. Na imagem da esquerda, em corte longitudinal, observa-se uma estrutura tubular de fundo cego e não compressível. Na imagem da direita, em corte transversal, identifica-se o chamado sinal do alvo, caracterizado pelo aumento do diâmetro do apêndice (acima de 6 mm) e espessamento de suas paredes.\n\nAlternativa (a) Incorreta: O tratamento padrão-ouro para apendicite aguda é cirúrgico. O uso isolado de antibióticos por via oral, com reavaliação ambulatorial, é inadequado e perigoso, pois a evolução para perfuração apendicular na gestante é rápida e está associada a altas taxas de perda fetal e parto prematuro.\n\nAlternativa (b) Incorreta: Embora a antibioticoterapia endovenosa seja iniciada imediatamente após o diagnóstico para controle da translocação bacteriana e profilaxia cirúrgica, ela não substitui o tratamento definitivo, que é a remoção cirúrgica do apêndice. O tratamento conservador (apenas antibióticos) não é a conduta de escolha na gestação.\n\nAlternativa (c) Correta: A apendicectomia de urgência é o tratamento indicado. Na idade gestacional de 13 semanas, o procedimento pode ser realizado de forma segura tanto por via laparoscópica (preferencialmente, se houver equipe treinada) quanto por via aberta. A prioridade é a intervenção precoce para evitar complicações supurativas que coloquem em risco a vida da mãe e do feto.\n\nAlternativa (d) Incorreta: A conduta expectante com sintomáticos é contraindicada diante de um diagnóstico confirmado de apendicite. O atraso cirúrgico superior a 24 horas em gestantes aumenta significativamente o risco de perfuração e peritonite.\n\nGabarito: Letra (c).",
+    "exam": "Dante",
+    "year": 2026,
+    "banca": "Dante",
+    "uf": "SP",
+    "tags": [
+      "Apendicite Aguda"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/8d9545e13b58481825219460a75610a668908b3ef50e70ed9d707d70243156c5.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_706ac5a2-1c60-44a5-bff6-d93bb0e06a4e_img_0.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/93e531c3849b51db2d15606b95aeb3c2a81aa7705d69a82c86513503391672fe.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/8801fa72041db28301c3dec0b1dc93fc4129e9575252ee77d24aab5518c5aa8d.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:36.049Z"
+  },
+  {
+    "id": "AJUDA_7070c614-f301-49e1-ae46-4fafb750a107",
+    "originalId": "7070c614-f301-49e1-ae46-4fafb750a107",
+    "statement": "Homem, 49 anos, desnutrido, é operado de emergência por quadro de abdome agudo obstrutivo e, no inventário da cavidade, extensivas aderências são descritas. No sétimo dia de pós-operatório, paciente evolui com febre, dor e distensão do abdome e, em seguida, apresenta descarga de conteúdo entérico pela incisão abdominal. Esse quadro clínico aponta para o diagnóstico de fístula enterocutânea (FEC), sobre o qual é correto afirmar que",
+    "options": [
+      {
+        "id": "A",
+        "text": "pode se formar espontaneamente como resultado de doença neoplásica ou de doenças inflamatórias em cerca de 80% dos casos, e uma minoria advém de complicações de procedimentos cirúrgicos (deiscência de anastomose ou lesão intestinal durante dissecção) e outras causas",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a cirurgia é o tratamento mais indicado, devendo ocorrer o mais precocemente possível, para prevenir desequilíbrio hidroeletrolítico, sepse e desnutrição do paciente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "quando o paciente não evolui satisfatoriamente após 2 semanas de tratamento não operatório, com frequência será necessária uma intervenção cirúrgica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "as perdas hidroeletrolíticas, desnutrição e sepse, decorrentes do quadro, contribuem para a ocorrência de falência de múltiplos órgãos e morte, a não ser que seja instituído tratamento efetivo imediatamente.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nO caso descreve um paciente desnutrido submetido a uma cirurgia abdominal complexa (aderências extensas) que, no sétimo dia de pós-operatório, apresenta sinais de sepse abdominal seguidos pela saída de secreção entérica pela ferida operatória. Este é o quadro clássico de uma fístula enterocutânea (FEC) pós-operatória. O manejo dessa condição é um dos maiores desafios da cirurgia geral, exigindo uma abordagem sistematizada para reduzir a alta morbimortalidade.\n\nCOMENTÁRIO DAS ALTERNATIVAS\n\nAlternativa A: INCORRETA. A estatística apresentada está invertida. Cerca de 75% a 85% das fístulas enterocutâneas são iatrogênicas, ou seja, surgem como complicações de procedimentos cirúrgicos (deiscência de anastomoses, lesões despercebidas durante a lise de aderências ou erosão por drenos). As fístulas espontâneas, decorrentes de doença de Crohn, neoplasias, enterite actínica ou quadros infecciosos, correspondem a apenas 15% a 25% dos casos.\n\nAlternativa B: INCORRETA. O tratamento inicial da fístula enterocutânea não é a cirurgia definitiva. A reoperação precoce em um abdome inflamado e com aderências firmes (\"abdome hostil\") está associada a altas taxas de recorrência e novas lesões intestinais. O tratamento inicial deve ser clínico e conservador, focado na estabilização hemodinâmica, controle da sepse, correção hidroeletrolítica e suporte nutricional (famoso protocolo SNAP). A cirurgia definitiva é geralmente adiada por, pelo menos, 3 a 6 meses.\n\nAlternativa C: INCORRETA. O período de duas semanas é insuficiente para determinar a falha do tratamento não operatório. Muitas fístulas podem fechar espontaneamente com manejo clínico otimizado em um período que varia de 4 a 6 semanas (ou mais). A intervenção cirúrgica definitiva só é indicada após a completa resolução do processo inflamatório abdominal e a otimização do estado nutricional do paciente, o que raramente ocorre em apenas 14 dias.\n\nAlternativa D: CORRETA. Esta alternativa resume as principais causas de óbito em pacientes com fístulas enterocutâneas. A sepse (geralmente por coleções intra-abdominais não drenadas), o desequilíbrio hidroeletrolítico severo (especialmente em fístulas de alto débito) e a desnutrição progressiva formam um cenário que leva à falência de múltiplos órgãos. O sucesso do tratamento depende da instituição imediata de medidas de suporte para controlar esses três pilares. Por isso, a estabilização precoce e o manejo multidisciplinar são cruciais para a sobrevivência do paciente.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T16:59:36.049Z"
+  }
+]

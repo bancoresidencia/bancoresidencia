@@ -1,0 +1,499 @@
+[
+  {
+    "id": "AJUDA_69ba6449-d7b6-4b3c-ab4b-88d673c4f9b3",
+    "originalId": "69ba6449-d7b6-4b3c-ab4b-88d673c4f9b3",
+    "statement": "Pré-escolar de 3 anos, com diarreia crônica, distensão abdominal e baixo peso, é submetido à investigação e o diagnóstico de doença celíaca é confirmado.\nO tratamento nesse caso é",
+    "options": [
+      {
+        "id": "A",
+        "text": "dieta isenta de glúten por toda a vida.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "dieta sem lactose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "com uso de probióticos.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "com dieta isenta de proteína do leite de vaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "com dieta sem carboidrato.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A Doença Celíaca é uma enteropatia de natureza autoimune, desencadeada pela ingestão de glúten em indivíduos geneticamente predispostos. O glúten é uma fração proteica encontrada em cereais como trigo, centeio e cevada. O quadro clínico descrito (diarreia crônica, distensão abdominal e baixo peso) é a apresentação clássica da doença em crianças pequenas após a introdução alimentar.\n\nAnálise das alternativas:\n\nAlternativa (a) Correta: O único tratamento eficaz e cientificamente comprovado para a doença celíaca é a dieta isenta de glúten de forma rigorosa e permanente. Como a condição é uma intolerância imunológica definitiva, a reintrodução do glúten, mesmo após anos de remissão dos sintomas, provocará o retorno da lesão na mucosa intestinal (atrofia de vilosidades). Portanto, a dieta deve ser mantida por toda a vida.\n\nAlternativa (b) Incorreta: Embora o paciente celíaco possa apresentar uma intolerância à lactose secundária (devido à perda de enzimas na borda em escova das vilosidades atrofiadas), esta não é a base do tratamento. Com a retirada do glúten e a consequente regeneração da mucosa intestinal, a capacidade de digerir a lactose costuma retornar ao normal.\n\nAlternativa (c) Incorreta: Probióticos não tratam a fisiopatologia da doença celíaca. O problema central é a reação imunológica ao glúten, e não um desequilíbrio da microbiota intestinal que possa ser corrigido apenas com suplementação bacteriana.\n\nAlternativa (d) Incorreta: A dieta isenta de proteína do leite de vaca é o tratamento para a Alergia à Proteína do Leite de Vaca (APLV). Embora ambas possam causar sintomas gastrointestinais e má absorção na infância, são doenças com mecanismos e gatilhos alimentares completamente distintos.\n\nAlternativa (e) Incorreta: O glúten é um complexo proteico, e não um carboidrato. Restringir carboidratos de forma generalizada não apenas deixaria de tratar a doença celíaca (pois muitos alimentos sem glúten são ricos em carboidratos), como também comprometeria gravemente o aporte energético e o crescimento do pré-escolar.\n\nGabarito: Alternativa (a).",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Doença Celíaca em Pediatria"
+    ],
+    "difficulty": 29.83595706241711,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:02.930Z"
+  },
+  {
+    "id": "AJUDA_69bd4fc0-bd3d-421c-b69b-52d1a45c4f74",
+    "originalId": "69bd4fc0-bd3d-421c-b69b-52d1a45c4f74",
+    "statement": "Uma paciente climatérica de 50 anos procura alívio para fogachos, sem histórico de doença tromboembólica, mas com história prévia de câncer de mama. Qual a melhor abordagem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Terapia Hormonal (TH) com estrógeno e progesterona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tibolona.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Inibidor da recaptação de serotonina e noradrenalina (ISRS) como venlafaxina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Estrogênio isolado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Terapia com base em fitoestrógenos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O ponto central desta questão é identificar o tratamento adequado para sintomas vasomotores (fogachos) em uma paciente que apresenta uma contraindicação absoluta à Terapia Hormonal (TH): o antecedente de câncer de mama. Por ser um tumor frequentemente estrogênio-dependente, o uso de hormônios pode estimular a recidiva da doença.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. A Terapia Hormonal combinada (estrogênio + progesterona) é o tratamento mais eficaz para fogachos, mas o histórico de câncer de mama é uma contraindicação formal e absoluta ao seu uso, conforme os consensos da Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) e de outras sociedades internacionais.\n\nAlternativa b) Incorreta. A tibolona é um composto sintético que possui ação estrogênica, progestogênica e androgênica. Embora seja utilizada no climatério, ela também é contraindicada em pacientes com história de câncer de mama pelo risco de estímulo a células neoplásicas remanescentes.\n\nAlternativa c) Correta. Para pacientes que não podem ou não desejam realizar Terapia Hormonal, a primeira linha de tratamento farmacológico são os Inibidores Seletivos da Recaptação de Serotonina (ISRS) ou os Inibidores da Recaptação de Serotonina e Noradrenalina (ISRSN). A venlafaxina é um dos medicamentos mais estudados e eficazes para a redução dos fogachos nessa população, apresentando um perfil de segurança adequado para sobreviventes de câncer de mama.\n\nAlternativa d) Incorreta. O estrogênio isolado é contraindicado pelo mesmo motivo das alternativas anteriores (câncer de mama). Além disso, em pacientes com útero preservado, o uso de estrogênio isolado aumentaria o risco de hiperplasia e câncer de endométrio.\n\nAlternativa e) Incorreta. Os fitoestrógenos, como as isoflavonas de soja, possuem estrutura similar ao estradiol e podem se ligar aos receptores estrogênicos. Além de apresentarem eficácia inconsistente e inferior aos antidepressivos no controle dos fogachos, sua segurança em pacientes com câncer de mama não é totalmente estabelecida, não sendo a conduta preferencial.",
+    "exam": "HNMD",
+    "year": 2026,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Climatério e Terapia Hormonal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/9b381cf91d418ba9ab30fbe767473fbf9d99cb31346c39e3ad497b6f4945ec42.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1f059538c9e8e7f54fb507b43ab62e1b50d5ea95597be935229df25e89ff8276.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:02.930Z"
+  },
+  {
+    "id": "AJUDA_69c95ee7-32c9-43a4-a083-cfc91c9d1f3e",
+    "originalId": "69c95ee7-32c9-43a4-a083-cfc91c9d1f3e",
+    "statement": "Assinale a alternativa CORRETA a respeito da depressão em criança e adolescente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "Eventos adversos na infância, como abuso infantil e disfunção familiar/parental não tem efeito na saúde mental.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A depressão não tem fator hereditário.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A depressão não diagnosticada ou não tratada é a causa mais comum de suicídio",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Transtornos depressivos não ocorrem simultaneamente com outros transtornos psiquiátricos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Alternativa (a) INCORRETA: Eventos adversos na infância (conhecidos pela sigla ACEs — Adverse Childhood Experiences), como abuso físico, sexual ou emocional, negligência e disfunção familiar, são fatores de risco primordiais para o desenvolvimento de transtornos mentais. Esses eventos causam estresse tóxico, que altera o desenvolvimento cerebral e o eixo hipotálamo-hipófise-adrenal, aumentando significativamente a vulnerabilidade à depressão e a outros transtornos ao longo da vida.\n\nAlternativa (b) INCORRETA: A depressão é uma patologia multifatorial com um forte componente genético e hereditário. Estudos com gêmeos e famílias demonstram que filhos de pais com transtornos depressivos possuem um risco de cerca de três a quatro vezes maior de desenvolver a doença em comparação com a população geral. A genética influencia tanto a neuroquímica quanto a estrutura cerebral.\n\nAlternativa (c) CORRETA: O suicídio é a segunda ou terceira causa de morte entre adolescentes em diversos países. A literatura médica estabelece de forma clara que a presença de um transtorno mental é o principal fator de risco para o suicídio, sendo a depressão maior a condição mais frequentemente associada a esse desfecho. O diagnóstico precoce e o tratamento adequado são as intervenções mais eficazes para a prevenção do comportamento suicida.\n\nAlternativa (d) INCORRETA: Na psiquiatria da infância e adolescência, a comorbidade é extremamente comum. A depressão raramente ocorre de forma isolada; frequentemente está associada a transtornos de ansiedade, transtorno de déficit de atenção e hiperatividade (TDAH), transtornos de conduta e abuso de substâncias. A presença de comorbidades costuma agravar o prognóstico e dificultar a resposta ao tratamento.",
+    "exam": "SCM-BH",
+    "year": 2025,
+    "banca": "IBGP",
+    "uf": "MG",
+    "tags": [
+      "Transtornos do Humor",
+      "Psiquiatria Infantil"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d0bbc5fc8692b5ac39d0e23c0e2666213e90bc0722e62afd7c6c1e0758485c63.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/77a76482f844f9583f7bac5c8f6baca43728f515cd4dcedcfce9db9a5afca483.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:02.930Z"
+  },
+  {
+    "id": "AJUDA_69c9edf7-5c06-4319-9211-be41e11a85b1",
+    "originalId": "69c9edf7-5c06-4319-9211-be41e11a85b1",
+    "statement": "Mulher de 60 anos de idade apresenta muita dor e queimação ao redor da ileostomia, com dificuldade de acoplar a bolsa coletora. AP: proctocolectomia parcial com descendente-reto anastomose término-terminal mecânica + ileostomia em alça devido a neoplasia de reto médio há dois meses. Exame físico: hiperemia cutânea em região de ileostomia com 10 cm de diâmetro, dor a palpação local, ileostomia funcionante em bom aspecto.\n\nO tipo de estoma e a complicação descrita são, respectivamente,",
+    "options": [
+      {
+        "id": "A",
+        "text": "derivativo; dermatite periostomal.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "derivativo; prolapso do estoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "terminal; isquemia do estoma.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "terminal; dermatite periostomal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver esta questão, é necessário analisar dois pontos principais: a classificação cirúrgica do estoma e o quadro clínico apresentado pela paciente.\n\nAnálise do tipo de estoma:\nA questão descreve uma ileostomia em alça realizada após uma proctocolectomia parcial com anastomose colorretal. Esse tipo de estoma é classificado como derivativo (ou de proteção). Sua função principal é desviar o trânsito intestinal para permitir a cicatrização segura de uma anastomose realizada logo abaixo. Diferente do estoma terminal (onde o trânsito é interrompido definitivamente e a extremidade do intestino é exteriorizada), no estoma em alça, a continuidade intestinal é preservada e o procedimento é, geralmente, temporário.\n\nAnálise da complicação:\nA paciente queixa-se de dor, queimação e dificuldade de acoplar a bolsa. O exame físico revela hiperemia (vermelhidão) cutânea de 10 cm ao redor do estoma, enquanto a alça intestinal em si apresenta \"bom aspecto\". Este é o quadro clássico de dermatite periestomal. Nas ileostomias, o conteúdo eliminado é líquido, alcalino e rico em enzimas pancreáticas, o que é extremamente irritante para a pele. Se houver falha no ajuste da bolsa coletora (o que a paciente relata), o contato desse efluente com a pele causa inflamação e erosão.\n\nAnálise das alternativas:\n\na) Correta. A ileostomia em alça é um estoma derivativo e a inflamação da pele ao redor, causada pelo contato com o conteúdo entérico, caracteriza a dermatite periestomal.\n\nb) Incorreta. Embora o estoma seja derivativo, o prolapso consistiria na protrusão (saída) excessiva da alça intestinal pelo orifício do estoma, o que não condiz com a descrição de \"bom aspecto\" da ileostomia e presença de hiperemia cutânea.\n\nc) Incorreta. O estoma em questão não é terminal (pois há uma anastomose distal e a ileostomia é em alça). Além disso, a isquemia do estoma se manifestaria por alteração na cor da própria mucosa intestinal (ficando pálida, arroxeada ou preta), mas o enunciado afirma que o estoma está com \"bom aspecto\".\n\nd) Incorreta. Embora a complicação seja de fato uma dermatite periestomal, a classificação \"terminal\" está errada para uma ileostomia em alça realizada para proteção de anastomose. Estomas terminais são realizados quando não há continuidade do trânsito para o segmento distal, como na cirurgia de Hartmann ou na amputação abdominoperineal do reto.",
+    "exam": "UNESP",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Proctologia",
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/765d43ef010205c6bac9a321a419171171e3825cc0b64cf28de4a7cda9a24810.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/be2f79bca77035e2f7580a29dd5f3917ddf9705251aba056f6e6f1cb7b066d40.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:02.930Z"
+  },
+  {
+    "id": "AJUDA_69ca851c-5986-4e7a-afb2-28dc4e1b04ad",
+    "originalId": "69ca851c-5986-4e7a-afb2-28dc4e1b04ad",
+    "statement": "Paciente procura emergência por causa de dor importante no ânus. É diagnosticado com crise de hemorroida com trombo. As condutas adequadas que devem ser feitas na emergência são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "internação, analgesia, heparina venosa e trombolectomia eletiva",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "analgésico e adstringente locais, diosmina/hesperidina e banho de assento",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "corticoides locais, solicitação de colonoscopia e acompanhamento na unidade básica",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "avaliação proctológica e internação para realização de trombolectomia de emergência",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "A crise hemorroidária, especificamente a trombose hemorroidária externa, caracteriza-se pelo aparecimento súbito de um nódulo perianal endurecido, arroxeado e intensamente doloroso devido à formação de um coágulo no interior das veias hemorroidárias externas. Na grande maioria dos casos atendidos na emergência, a conduta inicial é clínica e conservadora.\n\nAlternativa (b) - CORRETA: Esta alternativa descreve o manejo conservador padrão. O objetivo principal é o alívio da dor e a redução do processo inflamatório. Analgésicos sistêmicos e tópicos (como pomadas adstringentes ou anestésicas) controlam o desconforto. Os banhos de assento com água morna são fundamentais, pois promovem a vasodilatação local e o relaxamento do esfíncter anal interno, reduzindo a pressão e a dor. O uso de venotônicos (flavonoides como diosmina e hesperidina) auxilia na redução do edema e na aceleração da reabsorção do trombo.\n\nAlternativa (a) - INCORRETA: A trombose hemorroidária é um evento vascular localizado e não uma doença tromboembólica sistêmica. Portanto, não há indicação de heparina venosa ou internação para este fim. A conduta é essencialmente ambulatorial.\n\nAlternativa (c) - INCORRETA: Embora corticoides locais possam ser usados para reduzir o edema, a alternativa erra ao sugerir a colonoscopia na fase aguda. A colonoscopia é contraindicada durante a crise de trombose hemorroidária por ser um exame doloroso e desnecessário para o diagnóstico imediato, devendo ser solicitada apenas após a resolução do quadro agudo para rastreamento de outras patologias, se indicado.\n\nAlternativa (d) - INCORRETA: A internação para trombolectomia de emergência não é a rotina. A cirurgia (trombolectomia ou hemorroidectomia de urgência) é reservada apenas para casos selecionados, como dor excruciante que não melhora com remédios ou quando o paciente procura atendimento nas primeiras 48 a 72 horas do início dos sintomas. Mesmo nesses casos, o procedimento costuma ser realizado sob anestesia local em regime ambulatorial, sem necessidade de internação prolongada. Na prática da emergência, o tratamento clínico (descrito na alternativa B) é o mais adequado e eficaz para a maioria dos pacientes.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Proctologia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:02.930Z"
+  },
+  {
+    "id": "AJUDA_69cee759-81ec-41b7-876f-cccf3d693c4b",
+    "originalId": "69cee759-81ec-41b7-876f-cccf3d693c4b",
+    "statement": "Sobre os parâmetros do crescimento infantil, é INCORRETO afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O peso, ao nascer, é influenciado por fatores genéticos e ambientais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "O perímetro cefálico deve ser acompanhado rotineiramente até os 2 anos de idade.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A estatura sofre influência genética, hormonal e nutricional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A velocidade de crescimento não é um parâmetro importante no acompanhamento pediátrico.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa a) Correta. O peso ao nascer é o resultado de uma interação complexa entre o potencial genético da criança e o ambiente intrauterino. Fatores como a saúde da placenta, a nutrição materna, a presença de doenças gestacionais (como diabetes ou hipertensão) e hábitos de vida (como o tabagismo) influenciam diretamente este parâmetro.\n\nAlternativa b) Correta. O perímetro cefálico reflete o crescimento do encéfalo, que é extremamente acelerado nos primeiros meses e anos de vida. A recomendação do Ministério da Saúde e da Sociedade Brasileira de Pediatria é que a mensuração e o registro em gráfico sejam feitos rotineiramente em todas as consultas até os 2 anos de idade, período em que as fontanelas geralmente já estão fechadas e o crescimento cerebral desacelera.\n\nAlternativa c) Correta. A estatura é um indicador de crescimento linear influenciado por múltiplos fatores. A genética define o potencial (alvo genético), os hormônios (como o hormônio do crescimento, hormônios tireoidianos e, posteriormente, os hormônios sexuais) regulam o processo, e a nutrição fornece o substrato necessário para que o desenvolvimento ocorra conforme o esperado.\n\nAlternativa d) Incorreta. Esta é a alternativa que deve ser assinalada. Ao contrário do que afirma a questão, a velocidade de crescimento é considerada o parâmetro mais sensível para avaliar a saúde de uma criança. Ela permite identificar precocemente desvios no crescimento, muitas vezes antes que a criança saia de sua faixa de normalidade nos gráficos de estatura por idade. Uma desaceleração na velocidade de crescimento é, frequentemente, o primeiro sinal de doenças crônicas ou distúrbios endócrinos.\n\nGabarito: Letra (d).",
+    "exam": "HECI-HIFA",
+    "year": 2026,
+    "banca": "IBGP",
+    "uf": "ES",
+    "tags": [
+      "Crescimento"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83e2e36726a0c5f5450692d1c4362739590c51dff34de42ca7c917d1f9438353.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7c330b5dd518f4b27b30a8706812a774052c0ef141ac146ce4bf012190f36f92.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:02.930Z"
+  },
+  {
+    "id": "AJUDA_69dea9cf-0f2f-42aa-9dc7-fb468ca53d9b",
+    "originalId": "69dea9cf-0f2f-42aa-9dc7-fb468ca53d9b",
+    "statement": "A respeito da hipertermia maligna, é correto afirmar que:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ocorre mais em adultos que em jovens e crianças.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "a susceptibilidade é aleatória, não tendo relação com herança genética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "hipocapnia, acidose e hipoxemia são transtornos associados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "na suspeita, deve-se interromper os agentes anestésicos inalatórios e succinilcolina.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "a droga de escolha utilizada para reversão é o Naloxona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "EXPLICAÇÃO DA QUESTÃO:\n\nAlternativa A: INCORRETA. A hipertermia maligna (HM) incide com maior frequência em crianças e adultos jovens. As estatísticas mostram uma incidência aproximada de 1 para cada 15.000 anestesias em crianças, contra 1 para cada 50.000 anestesias em adultos.\n\nAlternativa B: INCORRETA. A suscetibilidade à HM tem relação direta com a herança genética. É uma condição farmacogenética de herança autossômica dominante, com penetrância variável, associada principalmente a mutações no gene RYR1, que codifica o receptor de rianodina (canal de cálcio do músculo esquelético).\n\nAlternativa C: INCORRETA. O distúrbio típico da HM é a hipercapnia (aumento do CO2), e não a hipocapnia. O aumento do gás carbônico na expiração (ETCO2) é, frequentemente, o primeiro sinal da crise devido ao metabolismo muscular acelerado. A acidose (mista) e a hipoxemia são achados tardios e graves da condição.\n\nAlternativa D: CORRETA. O manejo inicial e fundamental na suspeita de HM consiste em interromper imediatamente a administração de agentes gatilhos, que são todos os anestésicos inalatórios halogenados (como sevoflurano, isoflurano e desflurano) e o relaxante muscular succinilcolina. Após a interrupção, deve-se pedir ajuda e iniciar o protocolo de tratamento específico.\n\nAlternativa E: INCORRETA. A naloxona é um fármaco antagonista de receptores opioides. A droga de escolha e o único tratamento específico para a reversão da hipertermia maligna é o dantroleno sódico, que age inibindo a liberação excessiva de cálcio do retículo sarcoplasmático para o citosol da célula muscular esquelética.",
+    "exam": "HNMD",
+    "year": 2025,
+    "banca": "HNMD",
+    "uf": "RJ",
+    "tags": [
+      "Perioperatório"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/2911cc3530425e0efc329eaaef9579d253eca8170e246ca54cbe2b1988e29ae0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0b1ba8b4e3ffce83140672870678744f4a4a81c57742cdf3783f7e0e3e45b391.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:02.930Z"
+  },
+  {
+    "id": "AJUDA_69e5076a-dc95-45eb-b31d-a3aff73f9454",
+    "originalId": "69e5076a-dc95-45eb-b31d-a3aff73f9454",
+    "statement": "Tercigesta secundípara de 36 anos, com 11 semanas de gravidez, apresenta glicemia de jejum de 94 mg/dL. AP: macrossomia em gestação anterior.\nA conduta correta consiste em",
+    "options": [
+      {
+        "id": "A",
+        "text": "realizar imediatamente um teste de tolerância oral à glicose (75 g).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "orientar mudança de estilo de vida e fazer controle da glicemia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "realizar teste de tolerância oral à glicose com 24 semanas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "solicitar hemoglobina glicada e prescrever metformina.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o diagnóstico e a conduta inicial no Diabetes Mellitus Gestacional (DMG).\n\nAnálise do caso clínico:\nA paciente está na 11ª semana de gestação (primeiro trimestre) e apresenta uma glicemia de jejum de 94 mg/dL. De acordo com as diretrizes atuais do Ministério da Saúde e da FEBRASGO, os critérios para a interpretação da glicemia de jejum no início da gravidez (antes de 24 semanas) são:\n1. Glicemia de jejum < 92 mg/dL: Normal. Deve-se aguardar para realizar o teste de sobrecarga (TOTG 75g) entre 24 e 28 semanas.\n2. Glicemia de jejum entre 92 e 125 mg/dL: Diagnóstico de Diabetes Mellitus Gestacional (DMG).\n3. Glicemia de jejum maior ou igual a 126 mg/dL: Diagnóstico de Diabetes Mellitus pré-existente (Overt Diabetes).\n\nComo a paciente apresenta 94 mg/dL, o diagnóstico de DMG já está confirmado.\n\nAnálise das alternativas:\n\nAlternativa (a) Incorreta: O Teste de Tolerância Oral à Glicose (TOTG 75g) é indicado apenas para gestantes que tiveram glicemia de jejum inicial normal (inferior a 92 mg/dL). Se o valor de jejum já é diagnóstico (como os 94 mg/dL deste caso), o TOTG é desnecessário e está contraindicado para fins de diagnóstico.\n\nAlternativa (b) Correta: Confirmado o diagnóstico de DMG, a primeira linha de tratamento é a abordagem não farmacológica. Isso inclui orientações sobre Mudança de Estilo de Vida (MEV), composta por dieta controlada e atividade física, além do automonitoramento da glicemia capilar para verificar se essas medidas serão suficientes para atingir as metas terapêuticas.\n\nAlternativa (c) Incorreta: Esta seria a conduta se a glicemia de jejum fosse menor que 92 mg/dL. Como a paciente já ultrapassou esse valor, ela já possui o diagnóstico e não deve esperar até a 24ª semana para iniciar o acompanhamento e o controle.\n\nAlternativa (d) Incorreta: A hemoglobina glicada não é utilizada para o diagnóstico ou para a decisão terapêutica inicial no DMG. O uso de medicamentos (como metformina ou insulina) é reservado para os casos em que o controle glicêmico não é alcançado após o período de teste com dieta e exercícios (geralmente após 1 a 2 semanas de mudanças no estilo de vida).",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Diabetes Mellitus na Gestação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:02.930Z"
+  },
+  {
+    "id": "AJUDA_69e64e57-4e28-4b3b-a839-a72cb64bc0cc",
+    "originalId": "69e64e57-4e28-4b3b-a839-a72cb64bc0cc",
+    "statement": "Paciente do sexo masculino de 56 anos, no terceiro dia do pós-artroplastia total de quadril esquerdo, tem como antecedentes nefropatia diabética, diabetes mellitus e hipertensão arterial e faz uso das medicações insulina NPH/regular, losartana 50 mg/dia, atorvastatina 40 mg/dia, enoxaparina 40 mg SC/dia (profilaxia). Durante a internação, apresenta queixa de dispneia súbita e dor torácica pleurítica há 8 horas. Ao exame físico, apresenta PA: 128 × 72 mmHg, FC: 108 bpm, FR: 22 irpm, SpO2 95% AA, turgência jugular ausente, ausculta pulmonar limpa, MMII com edema 2+/4 E, sinal de Homans positivo E.\nExames complementares: Eletrocardiograma de repouso com taquicardia sinusal. Troponina 0,09 ng/mL (VN < 0,03), BNP 480 pg/mL. Ecocardiograma à beira-leito: VD dilatado, hipocinesia de parede livre. Angiotomografia de artérias pulmonares com presença de trombos septais inferiores.\n\nDiante do quadro atual, a conduta é",
+    "options": [
+      {
+        "id": "A",
+        "text": "anticoagulação plena com heparina de baixo peso molecular, monitorização clínica com transferência para unidade de terapia intensiva.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "trombólise sistêmica com alteplase 100 mg IV imediatamente.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "trombólise dirigida por cateter de rotina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "filtro de veia cava inferior isolado.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "ambulatorial com início de anticoagulante oral direto (DOAC) e reavaliação em 96 horas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico descreve um paciente com tromboembolismo pulmonar (TEP) agudo, confirmado por angiotomografia, no terceiro dia de pós-operatório de cirurgia ortopédica de grande porte. Para definir a conduta, devemos estratificar o risco do paciente.\n\nEstratificação de Risco:\n1. Estabilidade Hemodinâmica: O paciente está normotenso (PA 128 x 72 mmHg), o que exclui o TEP de \"alto risco\" (maciço).\n2. Disfunção de Ventrículo Direito (VD): O ecocardiograma mostra VD dilatado e hipocinesia de parede livre, e o BNP está elevado.\n3. Lesão Miocárdica: A troponina está acima do valor de referência.\n\nClassificação: TEP de risco intermediário-alto. Pacientes nesta categoria possuem estabilidade hemodinâmica, mas apresentam sinais de sobrecarga de VD e marcadores de lesão miocárdica positivos.\n\nAnálise das alternativas:\n\nAlternativa A (Correta): Pacientes com TEP de risco intermediário-alto devem ser internados, preferencialmente em unidade de terapia intensiva ou semi-intensiva, para monitorização clínica rigorosa. O tratamento inicial baseia-se na anticoagulação plena. A heparina de baixo peso molecular (enoxaparina) ou a heparina não fracionada são as escolhas iniciais. A monitorização é crucial, pois esses pacientes têm risco de deterioração hemodinâmica nas primeiras horas/dias.\n\nAlternativa B (Incorreta): A trombólise sistêmica está indicada para casos de TEP de alto risco (instabilidade hemodinâmica/choque obstrutivo). Além disso, este paciente possui uma contraindicação relativa importante: cirurgia de grande porte recente (3 dias), o que aumenta drasticamente o risco de sangramento grave.\n\nAlternativa C (Incorreta): A terapia dirigida por cateter (trombectomia ou trombólise in situ) não é uma conduta de rotina. Ela é reservada para casos de TEP de alto risco com contraindicação absoluta à trombólise sistêmica ou para casos de risco intermediário-alto que apresentam piora clínica apesar da anticoagulação.\n\nAlternativa D (Incorreta): O filtro de veia cava inferior não é o tratamento de primeira linha. Ele é indicado apenas quando há contraindicação absoluta à anticoagulação plena ou quando ocorre recorrência do embolismo mesmo na vigência de anticoagulação efetiva. No caso, não há menção de contraindicação à anticoagulação.\n\nAlternativa E (Incorreta): O tratamento ambulatorial é reservado para pacientes com TEP de baixo risco (estáveis, sem disfunção de VD e com escore PESI baixo). Este paciente possui critérios de gravidade (disfunção de VD e troponina elevada) que exigem obrigatoriamente a internação hospitalar.",
+    "exam": "HOS-BOS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Ventilação Mecânica",
+      "Tromboembolismo Pulmonar (TEP)"
+    ],
+    "difficulty": 39.15835423447388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/842b9c8bb9cc9be39d6350b7f1f277610769d57b59be9229a12fbc5875a6f327.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/80b56dcf22efc47ca5ab15fe334b14390d1363d56522d5d905460be2f86935ff.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:02.930Z"
+  },
+  {
+    "id": "AJUDA_69e70eb2-05ae-4b6e-a939-5971ff05213d",
+    "originalId": "69e70eb2-05ae-4b6e-a939-5971ff05213d",
+    "statement": "Uma mulher de 59 anos com doença renal crônica fez uma tomografia computadorizada de tórax para acompanhar um nódulo pulmonar estável de 1cm. Os cortes inferiores demonstraram uma massa adrenal direita de 3 cm com atenuação sem contraste maior que 10 HU (unidades Hounsfield) e o washout menor que 60%. A investigação bioquímica adicional é consistente com o nódulo não funcionante. Diante desses achados, você deve recomendar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Biópsia percutânea.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Ressonância magnética.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Adrenalectomia direita.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Repetir a tomografia computadorizada em 3 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para entender a conduta correta nesta questão, devemos analisar dois pilares fundamentais na avaliação de um incidentaloma adrenal: a funcionalidade hormonal e o risco de malignidade.\n\nAnálise Clínica e Radiológica:\nO caso descreve uma massa adrenal de 3 cm em uma paciente de 59 anos. A investigação bioquímica já foi realizada e descartou excesso hormonal (nódulo não funcionante). Portanto, a decisão terapêutica baseia-se exclusivamente no risco de malignidade sugerido pela imagem.\n\nOs critérios de imagem fornecidos são altamente suspeitos:\n1. Atenuação sem contraste maior que 10 HU: Lesões com mais de 10 unidades Hounsfield (HU) na fase pré-contraste têm baixo conteúdo lipídico, o que reduz a probabilidade de ser um adenoma benigno.\n2. Washout (lavagem do contraste) menor que 60%: Adenomas tipicamente apresentam um washout rápido (maior que 60% em 10 a 15 minutos). Um washout lento ou inferior a 60% sugere que a lesão retém o contraste, uma característica marcante de carcinomas adrenocorticais ou metástases.\n\nEmbora o tamanho de 3 cm esteja abaixo do ponto de corte clássico de 4 cm para cirurgia imediata apenas pelo tamanho, as características de imagem (HU alto e washout baixo) indicam uma lesão indeterminada ou suspeita. Em pacientes com características radiológicas suspeitas, a ressecção cirúrgica é a conduta preferencial, independentemente de o tamanho ser discretamente menor que 4 cm, para excluir carcinoma adrenocortical.\n\nAnálise das alternativas:\n\na) Incorreta. A biópsia percutânea de adrenal tem indicações muito restritas. Ela é utilizada apenas quando há suspeita de metástase de um tumor primário conhecido de outro sítio (pulmão, mama, etc.) e o resultado mudaria a conduta oncológica. Além disso, a biópsia não consegue diferenciar de forma confiável um adenoma de um carcinoma adrenocortical e apresenta riscos de disseminação tumoral (seeding) e complicações como hemorragia.\n\nb) Incorreta. A ressonância magnética (RM) com técnica de desvio químico (chemical shift) poderia ser usada para identificar gordura intracitoplasmática, mas os achados da tomografia com washout já foram suficientemente específicos para classificar a lesão como suspeita (não benigna). Adicionar uma RM não mudaria a necessidade de intervenção diante de um padrão de washout suspeito.\n\nc) Correta. A adrenalectomia (preferencialmente laparoscópica neste caso, dado o tamanho de 3 cm) é recomendada porque a massa apresenta características radiológicas de malignidade (densidade > 10 HU e washout < 60%). Como o carcinoma adrenocortical tem prognóstico reservado se não tratado precocemente, a presença desses critérios de imagem em uma lesão de 3 cm justifica o tratamento cirúrgico.\n\nd) Incorreta. Repetir a tomografia em 3 meses (conduta de observação) seria indicado apenas para lesões com características radiológicas puramente benignas (densidade < 10 HU) ou menores que 1 cm. Diante de achados suspeitos de malignidade, o atraso na cirurgia pode permitir a progressão de uma neoplasia potencialmente curável.",
+    "exam": "FAMERP",
+    "year": 2025,
+    "banca": "FAMERP",
+    "uf": "SP",
+    "tags": [
+      "Adrenal"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/321e98d15325a603cf293032d1eb1166f4ce93b755df254ff49debb119e452a3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/25b0cb28e7b35dd809b8b679816ef9b11c7633b49cc81cb10167ecdae0c2bad9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:56:02.930Z"
+  }
+]

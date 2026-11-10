@@ -1,0 +1,115 @@
+{
+  "timestamp": "2026-11-02T20:45:25.122Z",
+  "totalScenarios": 1000000,
+  "durationMs": 981,
+  "metrics": {
+    "totalScenarios": 1000000,
+    "heightClampingViolations": 0,
+    "excessiveWhitespaceErrors": 0,
+    "staircaseHeightDiscrepancies": 325442,
+    "orphanGridGaps": 750000,
+    "mobileColumnOverflows": 0,
+    "narrowCardTextTruncationRisks": 0,
+    "swapLayoutCascades": 0,
+    "partialCropAcceptedCount": 2942982,
+    "perfectToolFitCount": 6091833,
+    "distribution": {
+      "mobileScenarios": 250000,
+      "tabletScenarios": 200000,
+      "desktopScenarios": 550000
+    }
+  },
+  "errorSamples": {
+    "whitespaceLag": [],
+    "orphanGaps": [
+      {
+        "scenario": 25,
+        "screenWidth": 793,
+        "gapCols": 24,
+        "firstRowCards": [
+          "home_meta_diaria(4col)"
+        ]
+      },
+      {
+        "scenario": 26,
+        "screenWidth": 794,
+        "gapCols": 28,
+        "firstRowCards": [
+          "home_aproveitamento(5col)",
+          "home_carrossel(7col)"
+        ]
+      },
+      {
+        "scenario": 27,
+        "screenWidth": 795,
+        "gapCols": 25,
+        "firstRowCards": [
+          "home_aproveitamento(6col)"
+        ]
+      },
+      {
+        "scenario": 28,
+        "screenWidth": 796,
+        "gapCols": 23,
+        "firstRowCards": [
+          "home_hero(6col)",
+          "home_mnemonico(4col)"
+        ]
+      },
+      {
+        "scenario": 29,
+        "screenWidth": 797,
+        "gapCols": 21,
+        "firstRowCards": [
+          "home_meta_diaria(4col)",
+          "home_percentil(3col)",
+          "home_retencao(4col)"
+        ]
+      }
+    ],
+    "mobileOverflow": [],
+    "heightDiscrepancies": [
+      {
+        "scenario": 26,
+        "cardsInRow": [
+          "home_aproveitamento (360px)",
+          "home_carrossel (520px)"
+        ],
+        "delta": 160
+      },
+      {
+        "scenario": 27,
+        "cardsInRow": [
+          "home_retencao (340px)",
+          "home_retomada (600px)"
+        ],
+        "delta": 260
+      },
+      {
+        "scenario": 28,
+        "cardsInRow": [
+          "home_raiox_areas (720px)",
+          "home_carrossel (520px)"
+        ],
+        "delta": 200
+      },
+      {
+        "scenario": 30,
+        "cardsInRow": [
+          "home_carrossel (520px)",
+          "home_aproveitamento (360px)"
+        ],
+        "delta": 160
+      },
+      {
+        "scenario": 30,
+        "cardsInRow": [
+          "home_agenda (310px)",
+          "home_retomada (600px)"
+        ],
+        "delta": 290
+      }
+    ],
+    "narrowCardClipping": []
+  }
+}

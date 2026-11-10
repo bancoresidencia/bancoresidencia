@@ -1,0 +1,511 @@
+[
+  {
+    "id": "AJUDA_ef8d2ad6-992e-4003-90cb-4164e2d5698d",
+    "originalId": "ef8d2ad6-992e-4003-90cb-4164e2d5698d",
+    "statement": "Lactente do sexo masculino, 3 meses de idade, previamente hígido, apresenta quadro de tosse há 11 dias. A mãe relata que os episódios ocorrem em crises acompanhadas de cianose e engasgo, seguidos de vômitos. Está em uso de azitromicina há dois dias, sem melhora. Ao exame, apresenta congestão facial durante os acessos de tose, mas mantém saturação de oxigênio normal fora deles. O esquema vacinal está incompleto para a idade. Com base no quadro clínico e nos critérios de definição de caso suspeito para coqueluche, qual é a conduta diagnóstica mais apropriada nesse momento?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Solicitar cultura e aguardar resultado para confirmação diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Confirmar a hipótese diagnóstica, pois preenche critérios clínicos de caso suspeito em menor de 6 meses.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Rejeitar a hipótese diagnóstica, pois o paciente está em uso de antibiótico e sem febre.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Considerar apenas como infecção viral autolimitada, pela ausência de febre e saturação normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O quadro clínico descreve um lactente de 3 meses com tosse paroxística (em crises), cianose e vômitos pós-tosse, apresentando esquema vacinal incompleto. Estes são sinais clássicos da coqueluche, especificamente na sua fase paroxística. No Brasil, a vigilância epidemiológica estabelece critérios específicos para a definição de caso suspeito, visando à intervenção rápida.\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Embora a cultura seja considerada o padrão-ouro pela sua especificidade, ela apresenta baixa sensibilidade e o resultado pode demorar de 7 a 14 dias. Em um lactente jovem com quadro clínico sugestivo, a conduta baseada na suspeita clínica é imediata para fins de notificação, isolamento e tratamento. Não se deve aguardar o resultado laboratorial para confirmar a suspeita clínica e iniciar as condutas de controle.\n\nAlternativa b) Correta. Segundo o Ministério da Saúde, a definição de caso suspeito de coqueluche para menores de 6 meses é mais abrangente devido à gravidade da doença nesta faixa etária. O critério é: criança menor de 6 meses com tosse de qualquer duração, acompanhada de um ou mais dos seguintes sintomas: crises de tosse (paroxismos), guincho inspiratório, cianose ou apneia após os acessos de tosse, e vômitos pós-tosse. O paciente do caso preenche múltiplos critérios (crises, cianose, engasgo e vômitos), o que confirma a hipótese clínica de caso suspeito.\n\nAlternativa c) Incorreta. A coqueluche classicamente evolui sem febre ou com febre baixa; a presença de febre alta geralmente indica uma complicação ou infecção secundária. Além disso, o uso de azitromicina por apenas dois dias não é critério para rejeitar a hipótese, embora o tratamento correto (macrolídeos) seja fundamental para reduzir a transmissibilidade e, se iniciado precocemente, mitigar a gravidade.\n\nAlternativa d) Incorreta. A presença de cianose e crises de tosse em um lactente de 3 meses é um sinal de alerta (red flag). Infecções virais comuns não costumam evoluir com esse padrão paroxístico e vômitos pós-tosse. Considerar apenas como quadro autolimitado negligencia o risco de apneia, convulsões e óbito, complicações comuns da coqueluche nessa idade.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Coqueluche"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:57.450Z"
+  },
+  {
+    "id": "AJUDA_ef8dfaab-79c8-439e-9b34-dd5075469f40",
+    "originalId": "ef8dfaab-79c8-439e-9b34-dd5075469f40",
+    "statement": "Mulher de 42 anos de idade, cirurgiã-dentista, com diagnóstico de tremor essencial, refere ter notado piora nos tremores de extremidades há aproximadamente um mês. Associado a isso, sente-se angustiada, com ansiedade e palpitações associadas. Relata aumento da frequência das evacuações, não notou alteração na consistência. Ao exame físico, sua pressão arterial é 130 x 85 mmHg, FC 105 bpm e apresenta as seguintes alterações. Exames: TSH 0.006 μU/mL; (Referência 0.4–4.5 μU/mL) T4 Livre 5.4 ng/dL; (Referência 0.9–1.8 ng/dL) e T3 Total 593.0 ng/dL; (Referência 84.0–172.0 ng/dL). O diagnóstico e a conduta mais assertiva são:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Doença de Graves, iniciar Metimazol e betabloqueador.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Bócio Multinodular Tóxico, iniciar Metimazol e betabloqueador.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tiroidite de Hashimoto, iniciar Levotiroxina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Doença de Graves, solicitar anti-TRAb, anti-TPO e anti-Tg.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "O quadro clínico e laboratorial apresentado é um caso clássico de tireotoxicose por doença de Graves. A paciente apresenta sintomas adrenérgicos (palpitações, ansiedade, piora do tremor e aumento da frequência evacuatória) associados a exames que confirmam o hipertireoidismo primário (TSH suprimido com T4 livre e T3 total elevados).\n\nAs imagens são fundamentais para o diagnóstico etiológico:\n- A imagem 1A demonstra um bócio difuso (aumento volumétrico da tireoide).\n- As imagens 1B e 1C mostram o mixedema pré-tibial (dermopatia de Graves).\n- A imagem 2 evidencia a oftalmopatia de Graves (exoftalmia/proptose e congestão ocular).\n\nEsta tríade (bócio difuso, oftalmopatia e dermopatia) é patognomônica da doença de Graves, dispensando exames complementares adicionais para confirmação diagnóstica imediata.\n\nAnálise das alternativas:\n\na) Correta. O diagnóstico é doença de Graves. A conduta assertiva envolve o controle dos sintomas adrenérgicos com betabloqueador (como o propranolol, que também ajuda a reduzir a conversão periférica de T4 em T3) e o bloqueio da síntese de hormônios tireoidianos com uma tionamida, sendo o metimazol a droga de escolha na maioria dos pacientes adultos.\n\nb) Incorreta. O bócio multinodular tóxico (doença de Plummer) também causa hipertireoidismo, porém não se apresenta com oftalmopatia ou mixedema pré-tibial. Além disso, o bócio seria nodular à palpação e não difuso como o observado.\n\nc) Incorreta. A tireoidite de Hashimoto é a principal causa de hipotireoidismo (que teria TSH elevado e T4 baixo). Embora exista a fase transitória de \"hashitoxicose\", os achados extratireoidianos das imagens (olhos e pernas) são exclusivos da doença de Graves (autoimunidade mediada pelo anticorpo anti-TRAb).\n\nd) Incorreta. Embora o anticorpo anti-TRAb seja o marcador da doença de Graves, o diagnóstico nesta paciente já é evidente clinicamente devido aos sinais patognomônicos. No cenário de tireotoxicose franca e sintomática (FC 105 bpm), a conduta prioritária é iniciar o tratamento medicamentoso, e não apenas solicitar novos exames. Além disso, o anti-TPO e o anti-Tg são mais associados ao Hashimoto.",
+    "exam": "UNITAU",
+    "year": 2025,
+    "banca": "UNITAU",
+    "uf": "SP",
+    "tags": [
+      "Tireoide"
+    ],
+    "difficulty": null,
+    "images": [
+      {
+        "order": 0,
+        "originalUrl": "https://files.ajudamedico.com/files/91af3235ec11eff9a89e219cc0c27bf25853709790a7b49f40a5efb52dfd6e9f.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ef8dfaab-79c8-439e-9b34-dd5075469f40_img_0.webp"
+      },
+      {
+        "order": 1,
+        "originalUrl": "https://files.ajudamedico.com/files/5e0c1a8425a712aeb3295d5297fd02020aaf527b783ff61bc5933f87f3aaae22.webp",
+        "localUrl": "/images/questions/ajudamedico/ajuda_ef8dfaab-79c8-439e-9b34-dd5075469f40_img_1.webp"
+      }
+    ],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c6a803dc74568df06d157c222d45eb4a680529b28784f6cc7944c714adf06571.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/1acd0e1be7dd562fbadd5637130e2397d87d7c3d2df92b68a6959cb21f05088e.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:58.573Z"
+  },
+  {
+    "id": "AJUDA_ef925ef1-8f56-476c-916a-58310a5de1ab",
+    "originalId": "ef925ef1-8f56-476c-916a-58310a5de1ab",
+    "statement": "Homem de 58 anos, hipertenso e diabético, procura a UBS por dor torácica leve, com 2 meses de evolução episódica, em pontada, sem relação com esforço, e duração de segundos, exame físico e ECG de repouso sem alterações, sem sinais de instabilidade. Solicita encaminhamento ao cardiologista para investigação. De acordo com a organização da APS e os fluxos de referência/contrarreferência do SUS, qual a conduta mais adequada da ESF?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Encaminhar eletivamente ao cardiologista, pois dor torácica, mesmo atípica, demanda avaliação especializada além da capacidade resolutiva da APS.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Direcionar ao pronto-socorro de referência para investigação imediata, garantindo exclusão de síndrome coronariana aguda.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Acompanhar na APS com estratificação, otimizar fatores, pactuar retorno; encaminhar se gravidade, falha terapêutica ou necessidade de recurso não disponível.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Manter seguimento na APS sem estratificação formal; orientar estilo de vida e solicitar retorno apenas se houver piora dos sintomas relatados.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Solicitar exames de imagem avançados em nível secundário antes de decidir sobre eventual encaminhamento para avaliação cardiológica ambulatorial.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Para compreender essa questão, o foco deve estar na organização da Atenção Primária à Saúde (APS) dentro do Sistema Único de Saúde (SUS) e na diferenciação clínica da dor torácica. O paciente apresenta uma dor nitidamente atípica (tipo pontada, duração de segundos, sem relação com esforço), está clinicamente estável e possui fatores de risco (HAS e DM) que devem ser gerenciados na própria Unidade Básica de Saúde.\n\nAnálise das alternativas:\n\nAlternativa A: Incorreta. A APS deve ser resolutiva em até 80-90% dos casos. Encaminhar toda dor torácica, especialmente aquela com características claramente não anginosas e em paciente estável, fere o princípio da resolutividade e sobrecarrega desnecessariamente o nível secundário. O médico de família tem competência para realizar a investigação inicial e o manejo clínico.\n\nAlternativa B: Incorreta. O quadro tem evolução de 2 meses, com episódios de curtíssima duração (segundos) e sem sinais de instabilidade clínica ou eletrocardiográfica. Não há indicação de emergência ou suspeita de Síndrome Coronariana Aguda que justifique o envio ao pronto-socorro. O encaminhamento à urgência deve ser reservado para dores de início súbito, persistentes ou com sinais de gravidade.\n\nAlternativa C: Correta. Esta alternativa descreve exatamente o papel da Estratégia Saúde da Família (ESF). O médico deve realizar a estratificação de risco cardiovascular (usando escores como o de Framingham ou o Escore de Risco de Hartvigsen), otimizar o tratamento das comorbidades já existentes (hipertensão e diabetes) e monitorar o paciente. O encaminhamento deve ser uma decisão baseada em critérios de gravidade, na necessidade de exames de maior complexidade não disponíveis na rede básica ou quando o manejo clínico na APS não atinge os objetivos terapêuticos.\n\nAlternativa D: Incorreta. Embora o seguimento na APS esteja correto, a afirmação \"sem estratificação formal\" está errada. Todo paciente hipertenso e diabético com queixa torácica precisa de uma estratificação de risco cardiovascular criteriosa para guiar a intensidade do tratamento e as metas terapêuticas.\n\nAlternativa E: Incorreta. No fluxo do SUS, a solicitação de exames de imagem avançados (como angiotomografia de coronárias ou ressonância cardíaca) geralmente não é atribuição direta da APS antes de uma avaliação clínica e estratificação básica. Além disso, exames subsidiários devem seguir uma lógica de necessidade clínica e não ser um pré-requisito burocrático para um encaminhamento.\n\nGabarito: Alternativa (c).",
+    "exam": "PUC",
+    "year": 2025,
+    "banca": "PUC-PR",
+    "uf": "PR",
+    "tags": [
+      "Atenção Primária à Saúde",
+      "Doença Arterial Coronariana Estável (DAC Estável)"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1d681bfe1855092254ef23d7f91f58c0cf58095b21ce8ea5b6f82c150a32b7e3.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/52baa65963368a2ce9916ca5b4d212f6b2f92be8f6ee7be280a411ffad72b0f6.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:58.573Z"
+  },
+  {
+    "id": "AJUDA_ef9f3a1f-e34d-481d-a8ec-0fd63fcaff54",
+    "originalId": "ef9f3a1f-e34d-481d-a8ec-0fd63fcaff54",
+    "statement": "O tabagismo é considerado uma doença epidêmica decorrente da dependência à nicotina e se inclui na CID-10, no grupo de transtornos mentais e de comportamento devido ao uso de substâncias psicoativas. Além de ser uma doença, é fator causal de, aproximadamente, 50 outras doenças incapacitantes e fatais. Segundo estimativas da Organização Mundial de Saúde (OMS), o fumo é responsável por 71% das mortes por câncer de pulmão, 42% das doenças respiratórias crônicas e, cerca de, 10% das doenças cardiovasculares. Com base no exposto, assinale a alternativa que está em conformidade com o estabelecido pelo Protocolo Clínico e Diretrizes Terapêuticas do Tabagismo do Ministério da Saúde, que visa à cessação do tabagismo.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pacientes dependentes da nicotina com tuberculose devem ser tratados da dependência à nicotina com as mesmas medidas terapêuticas empregadas para a população em geral.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Gestantes dependentes da nicotina devem ser, imediatamente, incluídas no protocolo de cessação do tabagismo e cumprir todas as etapas previstas, incluindo a farmacoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Usuários dependentes de nicotina que estejam com câncer não têm indicação de tratamento do tabagismo com intervenção medicamentosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Só são incluídos no protocolo de cessação do tabagismo os usuários que estejam sendo acompanhados em alguma UBS, porta de entrada única ao programa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Os tabagistas que apresentam contraindicação a determinado medicamento incluído no protocolo de cessação do tabagismo devem ser excluídos do programa.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Análise das alternativas:\n\nAlternativa (a) Correta: Pacientes com comorbidades, como a tuberculose, devem receber o tratamento para cessação do tabagismo seguindo as mesmas diretrizes básicas oferecidas à população geral, que consistem na abordagem psicossocial (cognitivo-comportamental) associada ou não à farmacoterapia. O tabagismo é um fator que piora significativamente o prognóstico da tuberculose, aumentando a mortalidade e o risco de transmissão. Portanto, o tratamento da dependência à nicotina deve ser integrado ao cuidado desses pacientes, observando-se apenas possíveis interações medicamentosas específicas, como a da rifampicina com a bupropiona.\n\nAlternativa (b) Incorreta: Para gestantes e lactantes, a recomendação inicial e prioritária é a abordagem cognitivo-comportamental intensiva, sem o uso de fármacos. A farmacoterapia (terapia de reposição de nicotina ou bupropiona) não deve ser incluída imediatamente; ela só é considerada em casos excepcionais, após falha da abordagem comportamental e com uma avaliação rigorosa do risco-benefício, preferencialmente após o primeiro trimestre de gestação.\n\nAlternativa (c) Incorreta: Usuários dependentes de nicotina com câncer possuem indicação formal de tratamento do tabagismo, incluindo o suporte medicamentoso quando necessário. A cessação do fumo é crucial para aumentar a eficácia da quimioterapia e radioterapia, reduzir complicações pós-operatórias e diminuir o risco de recidivas ou novos tumores.\n\nAlternativa (d) Incorreta: Embora a Unidade Básica de Saúde (UBS) seja a principal porta de entrada e o local preferencial para o tratamento do tabagismo no SUS devido à sua capilaridade, ela não é a única. O tratamento também pode ser oferecido em Centros de Atenção Psicossocial (CAPS), hospitais e ambulatórios de especialidades, dependendo da organização da rede de saúde local.\n\nAlternativa (e) Incorreta: A contraindicação a um medicamento específico não exclui o paciente do programa de cessação. O tratamento baseia-se na abordagem cognitivo-comportamental, que pode ser realizada isoladamente. Caso um medicamento seja contraindicado para determinado paciente (como a bupropiona para quem tem histórico de convulsões), o profissional de saúde deve utilizar outras opções disponíveis no protocolo, como a terapia de reposição de nicotina (adesivos e gomas).",
+    "exam": "SCM-RP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Dependência Química",
+      "Políticas de Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b027b600e7f86277b9c2ce40348c22161109f2eeb443f8465232c0e93e040c0.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/bdff94d1ec2eaa93fb9993f43dffda8b0bf24006309278c6947d3da99581b998.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:58.573Z"
+  },
+  {
+    "id": "AJUDA_efb69cdf-4a17-49c6-8818-022658059d11",
+    "originalId": "efb69cdf-4a17-49c6-8818-022658059d11",
+    "statement": "Paciente de 56 anos, HAS e DM (em uso de insulinoterapia), internado há 2 dias para investigação de dor abdominal difusa. No terceiro dia de internação apresenta dois episódios de vômito, melena e importante distensão abdominal. Realiza-se sondagem nasogástrica, otimização de analgesia e sondagem vesical de alívio. Durante a sondagem vesical, percebe-se uma pressão intra-abdominal de 22mmHg. Qual é a conduta correta da equipe médica em avaliação do caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ultrassonografia abdominal.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Laparoscopia diagnóstica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Endoscopia digestiva alta.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Laparatomia exploratória.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO QUADRO CLÍNICO\n\nO caso descreve um paciente com fatores de risco (HAS e DM) que apresenta um quadro agudo de dor abdominal, distensão importante e sinais de sangramento (melena). O ponto-chave da questão é a medida da pressão intra-abdominal (PIA) de 22 mmHg.\n\nDe acordo com a World Society of the Abdominal Compartment Syndrome (WSACS), a Hipertensão Intra-abdominal (HIA) é definida por valores sustentados de PIA iguais ou superiores a 12 mmHg. A HIA é dividida em graus:\nGrau I: 12 a 15 mmHg.\nGrau II: 16 a 20 mmHg.\nGrau III: 21 a 25 mmHg.\nGrau IV: Maior que 25 mmHg.\n\nA Síndrome do Compartimento Abdominal (SCA) ocorre quando a PIA é superior a 20 mmHg (Grau III ou IV) e está associada a uma nova disfunção ou falência de órgãos. No paciente em questão, a distensão abdominal importante associada à pressão de 22 mmHg configura um quadro de Síndrome do Compartimento Abdominal, exigindo intervenção imediata.\n\nPOR QUE A ALTERNATIVA (D) ESTÁ CORRETA?\n\nA laparotomia exploratória é a conduta correta porque funciona como uma descompressão cirúrgica abdominal. Diante de uma SCA confirmada ou fortemente suspeita por valores de PIA acima de 20 mmHg com comprometimento clínico, a abertura da cavidade é a única medida capaz de reduzir a pressão de forma eficaz, restaurar a perfusão dos órgãos intra-abdominais e evitar a falência de múltiplos órgãos e o óbito.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS?\n\nAlternativa A: A ultrassonografia abdominal é um exame de imagem que pode auxiliar no diagnóstico de líquidos livres ou patologias específicas, mas não trata a hipertensão abdominal. No contexto de uma pressão de 22 mmHg com distensão severa, o tempo gasto com exames de imagem retarda o tratamento definitivo (descompressão).\n\nAlternativa B: A laparoscopia diagnóstica é contraindicada neste caso. Para realizar a laparoscopia, é necessário insuflar gás na cavidade abdominal (pneumoperitônio), o que aumentaria ainda mais a pressão intra-abdominal, agravando drasticamente o quadro de compressão vascular e a disfunção orgânica do paciente.\n\nAlternativa C: Embora o paciente apresente melena, o que sugere hemorragia digestiva, a prioridade absoluta no momento é a descompressão do compartimento abdominal. A endoscopia digestiva alta requer insuflação de ar no estômago, o que também pode elevar a PIA. Além disso, o sangramento pode ser decorrente da própria isquemia mesentérica causada pela hipertensão abdominal. A estabilização da pressão precede a investigação endoscópica.",
+    "exam": "UFCSPA",
+    "year": 2026,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Temas Gerais em Cirurgia"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/7984f2e8edda7fa68c8a64e1b99721a3f62a42febc359aba3cf45981b880328e.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/93e954cc5fb4f2307eb94baaa203463553c7b65a741698ddb0e35a8dda875546.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:58.573Z"
+  },
+  {
+    "id": "AJUDA_efb8d92e-495d-4dd7-8d31-6a34513d0daf",
+    "originalId": "efb8d92e-495d-4dd7-8d31-6a34513d0daf",
+    "statement": "Mulher, 69 anos, é admitida na Emergência por febre há 8 dias e piora da dispneia há 2 dias, sem outros sintomas. Portadora de prótese valvar mitral mecânica implantada há 6 anos; encontrava-se em classe funcional NYHA I antes da piora recente. Exame cardíaco com bulhas normofonéticas e clique metálico de prótese; demais achados sem novidades, exceto temperatura axilar de 38,2 °C. ECG, radiografia de tórax e ecocardiograma transtorácico sem alterações. Considerando a principal hipótese diagnóstica, qual exame de imagem deve ser solicitado?",
+    "options": [
+      {
+        "id": "A",
+        "text": "tomografia computadoriza de tórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "tomografia computadoriza de abdômen.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "ecocardiograma transesofágico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "ressonância magnética cardíaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "cintilografia miocárdica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta uma paciente de 69 anos, portadora de prótese valvar mitral mecânica, com quadro de febre prolongada (8 dias) e início de sintomas de insuficiência cardíaca (dispneia). Diante desse cenário, a principal hipótese diagnóstica é a endocardite infecciosa (EI).\n\nA paciente já realizou um ecocardiograma transtorácico (ETT), que teve resultado normal. No entanto, o ETT apresenta limitações importantes, especialmente em pacientes com próteses valvares, devido à sombra acústica gerada pelo material metálico, o que reduz a sensibilidade para detectar vegetações ou complicações perivalvares (como abscessos). De acordo com os Critérios de Duke e as diretrizes de cardiologia, se a suspeita clínica de endocardite é moderada ou alta e o ETT é negativo ou inconclusivo, o próximo passo obrigatório é a realização do ecocardiograma transesofágico (ETE).\n\nAnálise das alternativas:\n\na) Incorreta. A tomografia de tórax pode ser útil para identificar complicações pulmonares (como êmbolos sépticos em endocardite de câmaras direitas) ou diagnósticos diferenciais, mas não é o exame de escolha para o diagnóstico primário de vegetações valvares.\n\nb) Incorreta. A tomografia de abdômen é utilizada na busca por complicações embólicas sistêmicas (infartos esplênicos ou renais), mas não auxilia na visualização direta da valva acometida para confirmar a endocardite.\n\nc) Correta. O ecocardiograma transesofágico é o padrão-ouro para o diagnóstico de endocardite em pacientes com próteses valvares. Ele oferece uma resolução muito superior ao transtorácico, permitindo a visualização de pequenas vegetações, abscessos e deiscências de prótese que podem passar despercebidos no exame convencional. Sua sensibilidade em próteses supera 90%.\n\nd) Incorreta. A ressonância magnética cardíaca não é um exame de rotina ou de primeira linha para a detecção de vegetações na endocardite infecciosa aguda, além de ter limitações técnicas em pacientes com próteses metálicas (dependendo do material).\n\ne) Incorreta. A cintilografia miocárdica convencional é voltada para a avaliação de isquemia ou viabilidade. Embora o PET-CT com FDG (um tipo de medicina nuclear) possa ser utilizado em casos de dúvida diagnóstica em próteses valvares, ele é indicado apenas quando o ecocardiograma transesofágico não é conclusivo. Portanto, o ETE ainda é o próximo passo imediato.",
+    "exam": "INTO",
+    "year": 2026,
+    "banca": "INTO",
+    "uf": "RJ",
+    "tags": [
+      "Endocardite Bacteriana"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/83878785cf1f625b23f7e47a794fbfed93c523b97712ff2eaffaf2e1fd2084e4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dc734fb8e8f2bba06ad4e308d7f55a96d19a05149c5474ea31ba67300bfb9634.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:58.573Z"
+  },
+  {
+    "id": "AJUDA_efbc6360-1a34-4e1f-85e2-066621ddb8da",
+    "originalId": "efbc6360-1a34-4e1f-85e2-066621ddb8da",
+    "statement": "Uma paciente de 28 anos veio à unidade buscar o resultado do preventivo do colo do útero. Seus antecedentes ginecológicos são: G3P3 (Gesta 3, Parto-3), menarca aos 11 anos, sexarca aos 14 anos, realizou laqueadura e não tem desejo de ter mais filhos, não foi vacinada contra o vírus HPV (papiloma vírus humano), e os preventivos anteriores não tinham alterações. O exame atual apresentou a seguinte resultado: Células escamosas atípicas de significado indeterminado, não se podendo afastar lesão de alto grau (ASC-H). A conduta inicial CORRETA é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Repetir o exame em 6 meses.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Encaminhar para colposcopia.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Encaminhar para conização do colo do útero.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Encaminhar para histerectomia.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DA QUESTÃO\n\nO resultado citopatológico apresentado pela paciente é ASC-H (células escamosas atípicas de significado indeterminado, não se podendo afastar lesão de alto grau). De acordo com as Diretrizes Brasileiras para o Rastreamento do Câncer do Colo do Útero (INCA), esse achado possui um risco elevado de estar associado a lesões precursoras de câncer de colo uterino (como NIC II ou NIC III). Diferente do ASC-US, no qual a lesão é possivelmente não neoplásica, no ASC-H a suspeita recai sobre uma lesão de alto grau, o que exige uma investigação imediata.\n\nALTERNATIVAS\n\na) Incorreta. A repetição do exame em 6 meses (para mulheres com 30 anos ou mais) ou em 12 meses (para mulheres entre 25 e 29 anos) é a conduta preconizada para o resultado de ASC-US ou para lesões de baixo grau (LSIL). Para o resultado de ASC-H, a repetição do preventivo não é segura, pois pode atrasar o diagnóstico de uma lesão grave.\n\nb) Correta. Conforme os protocolos do Ministério da Saúde e do INCA, a presença de ASC-H em qualquer idade em que o rastreio é indicado (25 a 64 anos) exige o encaminhamento imediato da paciente para a colposcopia. Esse exame permite identificar áreas suspeitas no colo do útero e realizar biópsias para confirmar a gravidade da lesão.\n\nc) Incorreta. A conização é um procedimento cirúrgico indicado para o tratamento de lesões de alto grau confirmadas ou quando há discordância diagnóstica persistente entre a citologia e a colposcopia. Não é uma conduta inicial baseada apenas em um primeiro resultado de citologia, pois o diagnóstico precisa ser detalhado via colposcopia e biópsia antes de qualquer tratamento excisional.\n\nd) Incorreta. A histerectomia não é a conduta inicial para rastreamento citopatológico alterado. O tratamento de lesões precursoras do câncer do colo do útero deve ser o mais conservador possível para evitar morbidades desnecessárias. A histerectomia é reservada para casos de câncer invasor ou situações muito específicas em que os métodos de excisão do colo não são viáveis ou falharam.",
+    "exam": "SMS",
+    "year": 2025,
+    "banca": "FEAS",
+    "uf": "PR",
+    "tags": [
+      "Câncer de Colo Uterino"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/550dc7cd5aa116ce45fa58eda907227611082b30cd4a7e2e774555498885ffe4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/98f635935ef94ae4fcf3c017541490b781082d304607c766ac2f0fd90e004eaa.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:58.573Z"
+  },
+  {
+    "id": "AJUDA_efc15281-29d0-4922-bf6f-0dfd2e19276a",
+    "originalId": "efc15281-29d0-4922-bf6f-0dfd2e19276a",
+    "statement": "Nem sempre quem tem uma artéria coronária ocluída apresenta o supradesnivelamento clássico no ST no ECG. Estudos mostram que cerca de 50-60% dos pacientes com oclusão coronariana aguda (OCA) não se enquadram nos critérios tradicionais de IAM com supra de ST. Isso pode atrasar o diagnóstico de reperfusão e piorar o desfecho clínico. Baseado neste contexto, qual a melhor conduta diante de uma paciente com dor torácica típica e eletrocardiograma sem supra do segmento ST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Está indicado trombólise química ( rt pa ) imediata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Deve ser encaminhado a estratégia invasiva ime diata.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Deve ser realizada uma angiotomografia de coro nárias a fim de estabelecer o diagnóstico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Paciente deve ser encaminhado imediatamente para Unidade de Terapia Intensiva para iniciar droga inotrópica a fim de melhorar perfusão tecidual e esta bilização clínica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Estratificar o risco do paciente, realizar eletrocar diograma seriados, coletar marcadores de necrose miocárdica e procurar ativamente no eletrocardiograma novos padrões que sugiram obstrução coronaria na aguda.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "Esta questão aborda uma mudança de paradigma recente na cardiologia: a distinção entre o modelo clássico de IAM com supra (IAMCSST) versus sem supra (IAMSSST) e o novo conceito de OMI (Occlusion Myocardial Infarction — Infarto por Oclusão Miocárdica). O enunciado ressalta que muitos pacientes têm uma artéria totalmente fechada, mas não preenchem os critérios milimétricos de supra de ST no eletrocardiograma (ECG).\n\nAnálise das alternativas:\n\na) Incorreta. A trombólise química (uso de fibrinolíticos como o rt-PA) está indicada apenas em casos de IAM com supra de ST (dentro da janela de tempo e na ausência de contraindicações) quando a angioplastia primária não puder ser realizada em tempo hábil. Realizar trombólise em um ECG sem supra aumenta o risco de sangramento sem o benefício comprovado de reperfusão nesse cenário.\n\nb) Incorreta. Embora a estratégia invasiva (cateterismo) seja o destino final de muitos pacientes com síndrome coronariana aguda, a indicação de ser \"imediata\" (nas primeiras 2 horas) está reservada para pacientes com instabilidade hemodinâmica, choque cardiogênico, arritmias malignas ou dor refratária ao tratamento clínico. Nem todo paciente sem supra de ST precisa de cateterismo imediato antes de uma avaliação inicial.\n\nc) Incorreta. A angiotomografia de coronárias é uma excelente ferramenta para o pronto-socorro, mas seu principal papel é o de \"excluir\" doença coronariana em pacientes de baixo ou intermediário risco com marcadores negativos e ECG normal. Em uma paciente com dor torácica típica, a prioridade é a estratificação de risco e o manejo da síndrome aguda, não a realização de exames de imagem anatômica de forma primária.\n\nd) Incorreta. O uso de drogas inotrópicas (como dobutamina) é indicado para quadros de insuficiência cardíaca descompensada com baixo débito ou choque cardiogênico. Não é uma conduta de rotina para pacientes com dor torácica estáveis, e o uso inadvertido pode, inclusive, aumentar o consumo de oxigênio pelo miocárdio e piorar a isquemia.\n\ne) Correta. Esta é a conduta padrão e mais segura. Diante de um ECG que não mostra o supra de ST clássico, mas com clínica suspeita, o médico deve: 1) estratificar o risco (usando escores como GRACE ou TIMI); 2) realizar ECGs seriados (pois o supra pode aparecer minutos depois); 3) coletar biomarcadores (troponina); e 4) procurar ativamente por equivalentes de oclusão coronariana (padrões de OMI). Esses padrões incluem as ondas T de De Winter, síndrome de Wellens, supra de aVR com infradesnivelamento difuso e o supra isolado de parede posterior (V7-V9).\n\nConclusão: A alternativa (e) reflete a boa prática clínica de vigilância e estratificação, reconhecendo as limitações de um único eletrocardiograma inicial.",
+    "exam": "AMP",
+    "year": 2026,
+    "banca": "UCAMP",
+    "uf": "PR",
+    "tags": [
+      "Eletrocardiograma",
+      "SCASSST - Síndrome Coronária Aguda Sem Supra do Segmento ST"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8e628647cc465b6c796a05b1d222221710bd89d125db1d5f2eae413bb04550a5.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/7d0e03feb4ac258eeea75eb29c67a3ad64999a1faf903e0ce43d371a1e1fa17d.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:58.573Z"
+  },
+  {
+    "id": "AJUDA_efd72070-5901-4c11-b595-a89bdbc03e2d",
+    "originalId": "efd72070-5901-4c11-b595-a89bdbc03e2d",
+    "statement": "Paciente HIV+, CD4= 120, apresenta cefaleia intensa, rigidez de nuca. Líquor: tinta da China positiva. Diagnóstico:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Meningite tuberculosa.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Neurotoxoplasmose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Meningite criptocócica.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Listeriose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O caso clínico apresenta um paciente com HIV em estágio avançado de imunossupressão (CD4 igual a 120 células/mm³) e síndrome meníngea clássica, caracterizada por cefaleia intensa e rigidez de nuca. O ponto determinante para o diagnóstico é o exame do líquor com a técnica da Tinta da China (também conhecida como Nanquim ou *India Ink*).\n\nAnálise das alternativas:\n\na) Meningite tuberculosa: Embora seja um diagnóstico diferencial importante em pacientes HIV-positivos com meningismo, a meningite por *Mycobacterium tuberculosis* costuma apresentar um quadro mais subagudo e o diagnóstico laboratorial é feito pela pesquisa de BAAR (Bacilos Álcool-Ácido-Resistentes) através da coloração de Ziehl-Neelsen, cultura ou teste rápido molecular (PCR). A Tinta da China não identifica micobactérias.\n\nb) Neurotoxoplasmose: É a causa mais comum de lesão expansiva cerebral no paciente com AIDS. Clinicamente, manifesta-se com sinais focais (hemiparesia, alteração de fala) e crises convulsivas, e não tipicamente como uma meningite isolada. O diagnóstico é sugerido por exames de imagem (tomografia ou ressonância) que mostram lesões com realce anelar e edema perilesional. A Tinta da China não tem aplicação nesse diagnóstico.\n\nc) Meningite criptocócica: Esta é a alternativa correta. O *Cryptococcus neoformans* é um fungo encapsulado que causa infecções oportunistas graves no sistema nervoso central de pacientes imunocomprometidos. A Tinta da China é um método de coloração negativa: o corante não penetra na espessa cápsula polissacarídica do fungo, permitindo a visualização de estruturas arredondadas e brilhantes (halos) contra um fundo escuro sob o microscópio. Esse achado é patognomônico para a criptococose no contexto clínico apresentado.\n\nd) Listeriose: A meningite causada pela *Listeria monocytogenes* é uma infecção bacteriana que pode ocorrer em extremos de idade e em imunossuprimidos. O diagnóstico é realizado por bacterioscopia (Gram), que revelaria bacilos Gram-positivos, ou cultura. A Tinta da China não é utilizada para identificar bactérias.\n\nResumo do diagnóstico: Paciente HIV com CD4 baixo + sinais meníngeos + Tinta da China positiva no líquor = Meningite Criptocócica.",
+    "exam": "Santa Casa de Assis",
+    "year": 2026,
+    "banca": "Santa casa de Assis",
+    "uf": "SP",
+    "tags": [
+      "Micoses Invasivas",
+      "HIV"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/bf48f662143abc40721a65a9934cc36ebb1054900f77374e6c8a9d9f5e7bd62f.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/21e3ad6918ec3e7c09d9e1debb3d50117c9b8b729168e31f657d6f17ad35d436.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:58.573Z"
+  },
+  {
+    "id": "AJUDA_efd7fd39-c6a8-460d-851d-285d592a2650",
+    "originalId": "efd7fd39-c6a8-460d-851d-285d592a2650",
+    "statement": "Homem, 27 anos, sexo masculino, pós-operatório de apendicectomia. Refere febre de 37,8°C há 2 dias. Nega alteração do hábito intestinal e uso de medicamentos. Exame físico: bom estado geral, temperatura axilar de 37,8°C. Abdome normotenso, sem sinais de irritação peritoneal. Ferida operatória sem sinais flogísticos, com hiperemia do abaulamento em sua topografia. Ruídos hidroaéreos presentes, sem sinais de irritação dos hidroaéreos. Ao exame: dor à palpação abdominal profunda, sem sinais de irritação peritoneal. Considerando o diagnóstico mais provável, qual a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ampliar espectro de antibiótico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Tomografia computadorizada de abdome.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Laparotomia exploradora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Retirada de pontos de incisão.",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO paciente apresenta um quadro de febre no segundo dia de pós-operatório de apendicectomia. O dado crucial para a resolução da questão está no exame físico da ferida operatória, que apresenta hiperemia (vermelhidão) e abaulamento. Esses sinais são indicativos de uma infecção de sítio cirúrgico (ISC) superficial ou da presença de uma coleção (como seroma ou hematoma) que pode estar sofrendo processo infeccioso.\n\nPOR QUE A ALTERNATIVA D ESTÁ CORRETA\n\nA conduta básica e fundamental diante de uma suspeita de infecção de ferida operatória ou presença de coleção sob a incisão é a drenagem. A retirada de pontos de incisão permite a exploração da ferida, a drenagem de eventual material purulento ou serossanguinolento e a limpeza do local. Na maioria dos casos de infecção de sítio cirúrgico superficial, a drenagem isolada é o tratamento definitivo, não sendo necessário o uso de antibióticos sistêmicos se não houver sinais de celulite extensa ou repercussão sistêmica grave.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\n\nAlternativa A: O tratamento principal de qualquer coleção ou infecção de ferida operatória é mecânico (drenagem). Ampliar o espectro do antibiótico sem realizar a drenagem do foco é uma conduta inadequada, pois o antibiótico não consegue penetrar de forma eficaz em coleções fechadas (abscessos).\n\nAlternativa B: A tomografia computadorizada de abdome seria indicada caso houvesse suspeita de uma complicação intra-abdominal profunda, como um abscesso residual na cavidade. No entanto, o exame físico já revelou uma alteração clara e superficial na ferida operatória (abaulamento e hiperemia), o que torna a conduta local a prioridade inicial.\n\nAlternativa C: A laparotomia exploradora é um procedimento invasivo indicado para complicações intra-abdominais graves, como peritonite generalizada ou hemorragias maciças. O paciente apresenta bom estado geral e os sinais estão restritos à parede abdominal, não justificando uma reintervenção dentro da cavidade peritoneal.",
+    "exam": "USP-RP",
+    "year": 2025,
+    "banca": "USP-RP",
+    "uf": "SP",
+    "tags": [
+      "Complicações Pós-Operatórias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/38039e7030625544375583dc7c3497dca93c2d25aa5affe33476438f94d73e04.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4405ac4b92626adf0633470c644b57c1315a4ec0c42ddb8c2231b7844ae8e232.pdf"
+    },
+    "collectedAt": "2026-10-24T18:10:58.573Z"
+  }
+]

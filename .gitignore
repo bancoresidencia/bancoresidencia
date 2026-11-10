@@ -67,17 +67,30 @@ data/hardwork/
 data/backups*/
 /data/*.json
 !data/gabarito_das_questoes_manifest.json
-!data/all_homologated_questions_gold.json
 !data/questoes_ineditas_livros_drive_7822.json
 !data/medcurso_extracao_manifest.json
 !data/medcurso_comparacao_resultado.json
 !data/medcurso_all_questoes_folders.json
 !data/medcurso_extraction_status.json
-!data/exam_to_question_ids.json
 !data/ajudamedico_extraction_status.json
 !data/ajudamedico_vs_platform_report.json
 !data/relatorio_detalhado_978_e_356.json
 !data/relatorio_execucao_textual_gabaritos.json
+
+# Giant datasets (> 100MB blocked by GitHub)
+data/all_homologated_questions_gold.json
+data/exam_to_question_ids.json
+data/staging/
+data/bancos_organizados_staging/
+data/imagens_provaderesidencia/
+data/extracted_images_webp/
+scripts/nexmed_questions_catalog.json
+scripts/all_question_images.json
+coletor_gabaritos/
+.reports/
+data/*.lock
+data/*.signal
+docs/*.pdf
 
 /data/official_exams/**/*.pdf
 /data/official_exams/**/*.rar
@@ -110,6 +123,8 @@ data/questoes_132k.db*
 data/*.tmp
 data/*.html
 data/*.pdf
+data/*.js
+data/logs_cruzamento/
 /data/uel_pdfs/
 scripts/.chrome_test/
 scripts/medevo_session.json

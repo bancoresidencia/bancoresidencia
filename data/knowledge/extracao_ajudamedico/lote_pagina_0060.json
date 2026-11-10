@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AJUDA_0f7afcd3-1140-4baf-a772-61779543b35b",
+    "originalId": "0f7afcd3-1140-4baf-a772-61779543b35b",
+    "statement": "Um homem de 55 anos é admitido na sala de urgência devido à hematêmese volumosa há 2 horas, presenciada por familiares. Associou-se a sintomas de melena e hipotensão. Na admissão, apresentava PA: 90 x 50 mmHg, FC: 118 bpm e hemoglobina de 7,8 mg/dL. O cirurgião iniciou medidas de reanimação com solução cristaloide, terapia medicamentosa com omeprazol intravenoso em dose plena e solicitação de transfusão de hemocomponentes. Após cerca de 24 horas da admissão, foi realizada endoscopia digestiva alta que revelou úlcera duodenal, na parede posterior, com presença de vasos visíveis. O endoscopista classificou a lesão como Forrest IIa. Foram realizadas terapia com adrenalina e aplicação de um clipe hemostático sobre o coto vascular.\nCom base nas diretrizes do manejo da hemorragia digestiva e na classificação de Forrest, avalie a conduta realizada.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A lesão Forrest IIa é considerada de baixo risco, não havendo indicação de terapia endoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A conduta do endoscopista foi adequada, pois trata-se de uma lesão de alto risco para ressangramento e requer tratamento endoscópico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A conduta foi arriscada, pois, em casos de hemorragia exteriorizada por hematêmese, a conduta mais adequada é a realização de endoscopia digestiva alta em, no máximo, 4 horas da admissão.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A conduta foi excessiva. Como o sangramento já havia cessado, o tratamento endoscópico poderia ter sido realizado com injeção de adrenalina em monoterapia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A conduta foi adequada, mas deve-se proceder com um novo exame (second look) após 12 horas, para confirmar a eficácia da terapia endoscópica.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO\n\nO quadro clínico descreve um paciente com Hemorragia Digestiva Alta (HDA) grave, evidenciada por hematêmese volumosa, instabilidade hemodinâmica (PA 90 x 50 mmHg e FC 118 bpm) e anemia aguda (Hb 7,8 g/dL). O manejo inicial com estabilização volêmica e inibidor de bomba de prótons (omeprazol) foi correto. O achado endoscópico de uma úlcera duodenal em parede posterior com vaso visível (classificação Forrest IIa) é um ponto crítico, pois essa localização é próxima à artéria gastroduodenal, aumentando o risco de sangramentos maciços.\n\nEXPLICAÇÃO DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. A lesão Forrest IIa define a presença de um vaso visível não sangrante. Diferentemente do que afirma a alternativa, ela é considerada uma lesão de alto risco, com taxas de ressangramento espontâneo que podem chegar a 43% caso não seja tratada por endoscopia. As lesões de baixo risco são Forrest IIc (base pigmentada) e Forrest III (base clara).\n\nAlternativa b) Correta. Lesões classificadas como Forrest Ia (sangramento em jato), Ib (sangramento em porejamento) e IIa (vaso visível) são de alto risco e exigem obrigatoriamente terapia endoscópica. Além disso, a técnica utilizada (terapia combinada com adrenalina e clipe) é a recomendada pelas diretrizes, pois a associação de dois métodos é superior à monoterapia com adrenalina para reduzir o ressangramento e a necessidade de cirurgia.\n\nAlternativa c) Incorreta. Embora a endoscopia deva ser realizada precocemente, as diretrizes da ESGE (European Society of Gastrointestinal Endoscopy) e da ACG (American College of Gastroenterology) recomendam que o exame ocorra em até 24 horas após a admissão, após a estabilização hemodinâmica do paciente. Não há uma regra rígida de 4 horas para casos de hematêmese; o tempo de 24 horas foi respeitado no caso clínico.\n\nAlternativa d) Incorreta. A conduta não foi excessiva. A injeção de adrenalina isolada (monoterapia) é considerada insuficiente para lesões de alto risco como a Forrest IIa, pois promove apenas vasoconstrição temporária. O uso do clipe hemostático (método mecânico) associado é fundamental para garantir a oclusão definitiva do vaso.\n\nAlternativa e) Incorreta. A realização de uma nova endoscopia de rotina (chamada de second look) após 12 ou 24 horas não é recomendada de forma sistemática pelas diretrizes atuais. O novo exame deve ser indicado apenas se o paciente apresentar sinais clínicos de ressangramento, como nova queda de hemoglobina, hematêmese ou instabilidade após o sucesso inicial do procedimento.",
+    "exam": "SUS",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Hemorragia Digestiva Alta Não Varicosa"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0d2a2efd265e3a3b81b8de007181e8905c5001224b4bf4d7da1449f56c38c419.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/df311f168baddda4bb1b87f1ca87f5345707d0065d24db0ecbe5018f21dee3dc.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:35.749Z"
+  },
+  {
+    "id": "AJUDA_0f8d5ad3-eb4d-4c4c-a948-61dbaafe6732",
+    "originalId": "0f8d5ad3-eb4d-4c4c-a948-61dbaafe6732",
+    "statement": "Mulher de 55 anos apresenta poliartrite deformante de mãos há 10 anos, com passado de rigidez matinal de 45 minutos. Atualmente com artralgias, nódulos subcutâneos e velocidade de hemossedimentação elevada. O hemograma mostra Hb: 9,4 g/dL e VCM: 80 fL. É provável que as dosagens de capacidade total de ligação de ferro e ferritina estejam, respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Diminuída e aumentada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "Aumentada e aumentada.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Diminuída e diminuída.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Aumentada e diminuída.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Diminuída e normal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO\n\nA paciente apresenta um quadro clássico de Artrite Reumatoide (AR) de longa data (10 anos), com deformidades, nódulos subcutâneos e atividade inflamatória sistêmica evidenciada pela elevação da velocidade de hemossedimentação (VHS). Nesse contexto, a anemia apresentada (Hb: 9,4 g/dL e VCM: 80 fL) é categorizada como Anemia de Doença Crônica (ou anemia da inflamação).\n\nA fisiopatologia dessa anemia é mediada por citocinas inflamatórias, principalmente a Interleucina-6 (IL-6), que estimula a produção hepática de hepcidina. A hepcidina bloqueia a ferroportina, impedindo a liberação de ferro dos estoques (macrófagos) e a absorção intestinal. Como resultado, o ferro fica \"preso\" dentro das células.\n\nANÁLISE DOS PARÂMETROS SOLICITADOS\n\n1. Ferritina: É uma proteína de fase aguda. Na inflamação crônica, seus níveis aumentam tanto pelo sequestro de ferro intracelular quanto pela própria resposta inflamatória sistêmica. Portanto, espera-se que esteja AUMENTADA.\n\n2. Capacidade Total de Ligação de Ferro (TIBC): O TIBC reflete indiretamente os níveis de transferrina. Na inflamação, o fígado reduz a síntese de transferrina (proteína de fase aguda negativa). Além disso, o corpo tenta reduzir a disponibilidade de ferro circulante. Portanto, o TIBC estará DIMINUÍDO.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa A (CORRETA): Reflete o padrão típico da Anemia de Doença Crônica. A inflamação crônica da Artrite Reumatoide eleva a ferritina e reduz a síntese de transferrina (reduzindo o TIBC).\n\nAlternativa B (INCORRETA): O TIBC aumentado é característico da anemia ferropriva (deficiência de ferro), onde o corpo produz mais transferrina para tentar captar o pouco ferro disponível. Na anemia de doença crônica, o TIBC é baixo.\n\nAlternativa C (INCORRETA): A ferritina diminuída é o marcador mais específico para deficiência de ferro (anemia ferropriva). No caso da paciente, o processo é inflamatório, o que eleva a ferritina.\n\nAlternativa D (INCORRETA): Esta alternativa descreve o perfil clássico da Anemia Ferropriva (TIBC alto e Ferritina baixa), que ocorre por falta de estoque de ferro, e não por sequestro inflamatório como no caso relatado.\n\nAlternativa E (INCORRETA): Embora a ferritina possa estar normal em fases muito iniciais, o quadro de 10 anos de doença com nódulos e VHS alto indica uma atividade inflamatória importante, tornando o aumento da ferritina o achado laboratorial mais provável e esperado em provas de residência.",
+    "exam": "ISCMSP",
+    "year": 2026,
+    "banca": "ISCMSP",
+    "uf": "SP",
+    "tags": [
+      "Artrite Reumatoide",
+      "Anemias"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/0f8cea5c1fc48748d38fd533c65caa134b8f9cf18b22e330aae741337d319344.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/4f6027f84d004b609379a1277edfbc0c21b5a92b2a15c665d526c011a96ffe1c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:35.749Z"
+  },
+  {
+    "id": "AJUDA_0f8fa309-39a5-493c-bfe7-ce7849c574c9",
+    "originalId": "0f8fa309-39a5-493c-bfe7-ce7849c574c9",
+    "statement": "Assinale a opção compatível com a imagem radiológica característica de fecaloma no RX simples de abdome.",
+    "options": [
+      {
+        "id": "A",
+        "text": "imagem em “grão de café”",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "nível hidro aéreo",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "pneumoperitônio",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "presença de fecalito, principalmente no sigmoide e reto",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "imagem em “miolo de pão”",
+        "imageUrl": null,
+        "isCorrect": true
+      }
+    ],
+    "officialAnswer": "E",
+    "medicalExplanation": "A caracterização radiológica do fecaloma no raio X simples de abdome é um tema frequente em provas de cirurgia e clínica médica. Abaixo, analisamos cada alternativa:\n\nAlternativa a) Incorreta. A imagem em grão de café (ou sinal do bento) é o achado clássico do volvo de sigmoide. Ela representa uma alça colônica imensamente dilatada que se dobra sobre si mesma, assemelhando-se ao formato de um grão de café.\n\nAlternativa b) Incorreta. Os níveis hidroaéreos são sinais radiológicos de obstrução intestinal ou íleo paralítico. Eles indicam o acúmulo de líquido e gás em alças dilatadas. Embora um fecaloma possa causar uma obstrução intestinal, o nível hidroaéreo é uma consequência da parada do trânsito e não a imagem característica da massa fecal em si.\n\nAlternativa c) Incorreta. O pneumoperitônio é a presença de ar livre na cavidade peritoneal, visualizado geralmente como um crescente gasoso abaixo das cúpulas diafragmáticas. É um sinal de perfuração de víscera oca, configurando uma emergência cirúrgica, e não possui relação direta com a imagem do fecaloma.\n\nAlternativa d) Incorreta. O termo fecalito refere-se geralmente a pequenas calcificações ou concreções de fezes (comum na apendicite, o apendicólito). O fecaloma é uma massa de fezes muito maior e endurecida. Embora o local mais comum seja o sigmoide e o reto, a descrição radiológica característica solicitada pela questão não é apenas a presença da massa, mas sim o seu aspecto visual específico.\n\nAlternativa e) Correta. A imagem em miolo de pão (também chamada de imagem em flocos de algodão ou sinal da esponja) é o achado patognomônico do fecaloma no raio X de abdome. Esse aspecto ocorre porque pequenas bolhas de gás ficam aprisionadas em meio à massa fecal endurecida, criando uma imagem mosqueada, heterogênea e com densidade de partes moles entremeada por pontos gasosos, assemelhando-se ao miolo de um pão francês ou a uma esponja.",
+    "exam": "FMJ",
+    "year": 2026,
+    "banca": "Quadrix",
+    "uf": "SP",
+    "tags": [
+      "Abdome Agudo Obstrutivo"
+    ],
+    "difficulty": 63.59610560639388,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3b21783db13c7580b07ae7bbc3b0eddb76fcbf693ff364a19007fa1aa331c998.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2a9529f7d8c8afdea12b03be95e0314a705fd7c55b02b880bde3cd392343a9e2.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:35.749Z"
+  },
+  {
+    "id": "AJUDA_0f99efe9-5814-451d-b8f2-ace91a8f772d",
+    "originalId": "0f99efe9-5814-451d-b8f2-ace91a8f772d",
+    "statement": "A Vigilância Sanitária (VISA) e a Vigilância Epidemiológica (VE) possuem campos de atuação distintos, porém complementares. De acordo com a Lei nº 8.080/90, é competência exclusiva da Vigilância Sanitária:",
+    "options": [
+      {
+        "id": "A",
+        "text": "O controle de doenças transmissíveis e a investigação de surtos hospitalares.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A execução de ações que visam eliminar, diminuir ou prevenir riscos à saúde decorrentes do meio ambiente e da produção e circulação de bens.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "A busca ativa de casos de doenças exantemáticas em creches e escolas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A análise do perfil demográfico e epidemiológico de uma população para o planejamento de saúde.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A coordenação do Programa Nacional de Imunizações (PNI) em âmbito municipal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão exige o conhecimento das definições legais estabelecidas pela Lei Orgânica da Saúde (Lei nº 8.080/1990), especificamente em seu Artigo 6º, que diferencia as competências da Vigilância Sanitária (VISA) e da Vigilância Epidemiológica (VE).\n\nAlternativa (a) Incorreta: O controle de doenças transmissíveis e a investigação de surtos, inclusive os hospitalares, são atribuições típicas da Vigilância Epidemiológica. A VE foca no conhecimento, detecção e prevenção de fatores determinantes e condicionantes de doenças para recomendar e adotar medidas de prevenção e controle.\n\nAlternativa (b) Correta: Esta alternativa apresenta a definição literal de Vigilância Sanitária contida no parágrafo 1º do Artigo 6º da Lei nº 8.080/1990. A VISA é entendida como um conjunto de ações capaz de eliminar, diminuir ou prevenir riscos à saúde e de intervir nos problemas sanitários decorrentes do meio ambiente, da produção e circulação de bens e da prestação de serviços de interesse da saúde. Isso inclui o controle de portos, aeroportos, fronteiras, alimentos, medicamentos e estabelecimentos de saúde.\n\nAlternativa (c) Incorreta: A busca ativa de casos é uma estratégia operacional da Vigilância Epidemiológica. Ela é utilizada para identificar precocemente doenças de notificação compulsória e interromper a cadeia de transmissão em locais como escolas e creches.\n\nAlternativa (d) Incorreta: A análise do perfil demográfico e epidemiológico de uma população é uma atividade de inteligência em saúde vinculada à Vigilância Epidemiológica e ao planejamento em saúde. Serve para entender a distribuição de agravos e óbitos, subsidiando a gestão pública, mas não é uma ação de Vigilância Sanitária.\n\nAlternativa (e) Incorreta: A coordenação e execução do Programa Nacional de Imunizações (PNI) estão inseridas no campo da Vigilância Epidemiológica. O PNI visa ao controle, à erradicação e à eliminação de doenças imunopreveníveis, o que se alinha ao escopo da VE e não da VISA.",
+    "exam": "SESAPI",
+    "year": 2026,
+    "banca": "SESAPI",
+    "uf": "PI",
+    "tags": [
+      "Vigilância em Saúde"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/3d827784666193c66a329d67efc820569a1233841fc850e46345898a73771c3c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a6c2cf97bc35fbb006dd590519fc0f2717e6c45a2487b6bd89ba4b3739cd5d9c.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:35.749Z"
+  },
+  {
+    "id": "AJUDA_0fa457c1-1174-44ce-a87d-e7250cbdbe08",
+    "originalId": "0fa457c1-1174-44ce-a87d-e7250cbdbe08",
+    "statement": "Uma mulher de 27 anos, sexualmente ativa, queixa-se de corrimento profuso, amarelado com sensação de queimação na vagina, que piora no período pós-menstrual. Nega prurido vulvar. Ao exame, observam-se hiperemia de colo e vagina e medida do pH vaginal > 4,5. Diante desse quadro, a principal hipótese diagnóstica é de:",
+    "options": [
+      {
+        "id": "A",
+        "text": "candidíase",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "enterobiose",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "tricomoníase",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "vaginose bacteriana",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico apresentado é clássico de uma vulvovaginite inflamatória. Para chegar ao diagnóstico correto, devemos analisar as características do conteúdo vaginal, os sintomas associados e os achados do exame físico e do pH.\n\nAlternativa (a) Incorreta: A candidíase vulvovaginal manifesta-se tipicamente com prurido intenso (que a paciente nega) e um corrimento branco, aderente e em grumos (aspecto de leite coalhado). Além disso, na candidíase, o pH vaginal costuma permanecer ácido (menor que 4,5), diferentemente do valor superior a 4,5 relatado na questão.\n\nAlternativa (b) Incorreta: A enterobiose (infestação pelo *Enterobius vermicularis*) é uma causa de prurido anal e, ocasionalmente, pode causar vulvovaginite em crianças por migração do helminto. No entanto, não é a causa de corrimento profuso amarelado com pH elevado em mulheres adultas sexualmente ativas.\n\nAlternativa (c) Correta: A tricomoníase é uma Infecção Sexualmente Transmissível (IST) causada pelo protozoário *Trichomonas vaginalis*. Ela se caracteriza por corrimento profuso, bolhoso, amarelado ou amarelo-esverdeado e com odor fétido. Por ser uma infecção francamente inflamatória, causa hiperemia (vermelhidão) da mucosa vaginal e do colo uterino (o clássico colo em framboesa ou morango). O pH vaginal na tricomoníase é sempre elevado (maior que 4,5). Um ponto fundamental do enunciado é a piora pós-menstrual: o sangue menstrual eleva o pH vaginal, o que favorece a replicação do *Trichomonas*, exacerbando os sintomas nesse período.\n\nAlternativa (d) Incorreta: A vaginose bacteriana também apresenta pH elevado (maior que 4,5) e corrimento, mas é uma condição não inflamatória. Por definição, na vaginose bacteriana não há hiperemia da vagina ou do colo, nem sensação de queimação importante ou dor, sendo o sintoma principal o odor fétido (semelhante a peixe podre), que piora após o coito ou a menstruação. A presença de hiperemia relatada no exame físico afasta esse diagnóstico.",
+    "exam": "UERJ",
+    "year": 2025,
+    "banca": "CEPUERJ",
+    "uf": "RJ",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/8606fe229161007ae3e812305e6606c088768be9ca5311a2148bbb3f84407366.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/e0edd8718f96794464f9f526f3de980b127904911af180bb72de6780c8268959.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:35.749Z"
+  },
+  {
+    "id": "AJUDA_0fa542f3-fc24-4919-a5b7-372e19cea69f",
+    "originalId": "0fa542f3-fc24-4919-a5b7-372e19cea69f",
+    "statement": "Parturiente, 20 anos de idade, primigesta, 33 semanas de idade gestacional, refere dor em baixo ventre e contrações há 5 horas, associada à cefaleia sem escotomas. Apresentou aumento da pressão arterial com 28 semanas, utilizando metildopa 500mg de 6 em 6 horas. Exame físico: PA 130 x 80mmHg, edema de membros inferiores 3+/4+, dinâmica uterina 3 contrações de 40 segundos em 10 minutos, apresentação cefálica e dorso a esquerda, cardiotocografia categoria I. Toque vaginal: colo com dilatação de 1 cm, grosso, posterior. Exames laboratoriais realizados há um dia: hemoglobina 11,2g/dL, Plaquetas 130.000 plaquetas/mm3, TGO 75 UI/L, Urina 1 com proteinúria 2+/4+. Qual é a conduta mais adequada?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Parto cesáreo e sulfato de magnésio.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Assistência do trabalho de parto e sulfato de magnésio.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Inibição do trabalho de parto com nifedipino e betametasona .",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Inibição do trabalho de parto com sulfato de magnésio e betametasona.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO E ANÁLISE DO QUADRO\n\nA paciente apresenta um quadro de pré-eclâmpsia com sinais de gravidade. Embora a pressão arterial no momento do exame esteja controlada (130 x 80 mmHg) sob o uso de metildopa, ela apresenta critérios que classificam a gravidade da doença: cefaleia (sintoma neurológico) e elevação de transaminases (TGO 75 UI/L, acima do limite de duas vezes o valor de referência ou > 70 UI/L). \n\nAlém disso, a paciente está em trabalho de parto prematuro (33 semanas de idade gestacional), evidenciado pela dinâmica uterina de 3 contrações em 10 minutos e modificação cervical (apagamento e dilatação), apesar de o colo ainda estar grosso e posterior.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA\n\nEm gestantes com pré-eclâmpsia com sinais de gravidade, a conduta prioritária é a estabilização materna e a prevenção de convulsões. O uso do sulfato de magnésio é obrigatório para a profilaxia da eclâmpsia. Quanto ao aspecto obstétrico, a inibição do trabalho de parto (tocólise) é contraindicada em casos de pré-eclâmpsia grave, mesmo em prematuros, devido ao risco de deterioração clínica materna e fetal. Como a paciente já se encontra em trabalho de parto espontâneo e a vitalidade fetal está preservada (cardiotocografia categoria I), a conduta mais adequada é permitir a evolução do parto e prestar assistência ao trabalho de parto, sob vigilância rigorosa.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS\n\nAlternativa (a): O parto cesáreo não está indicado de imediato apenas pelo diagnóstico de pré-eclâmpsia grave. A via de parto deve ser decidida por critérios obstétricos. Como a cardiotocografia é normal (Categoria I) e a paciente já apresenta dinâmica uterina, pode-se tentar o parto vaginal.\n\nAlternativa (c): A inibição do trabalho de parto (tocólise) com nifedipino está contraindicada na presença de pré-eclâmpsia com sinais de gravidade. O risco de manter a gestação supera os benefícios da corticoterapia para maturidade pulmonar isolada neste cenário de instabilidade materna latente.\n\nAlternativa (d): Da mesma forma que a alternativa anterior, a inibição do parto é contraindicada. Além disso, embora o sulfato de magnésio tenha uma ação relaxante na musculatura uterina, sua indicação principal aqui é a profilaxia da eclâmpsia e neuroproteção fetal, não sendo utilizado como agente tocolítico primário.",
+    "exam": "UNIFESP",
+    "year": 2026,
+    "banca": "UNIFESP",
+    "uf": "SP",
+    "tags": [
+      "Prematuridade e Trabalho de Parto Prematuro",
+      "Síndromes Hipertensivas da Gestação"
+    ],
+    "difficulty": 47.7902034678598,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4a2a1ac07080d8909cb3884c6d7b4c47b0d564f3cb2023f0738cb92ac9e7b267.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/d102503887bf8505e2992489ac88485984f88fa5e6dfb554b08fc19fdea18256.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:35.749Z"
+  },
+  {
+    "id": "AJUDA_0fa7e104-5abc-494a-992a-ceff1e311703",
+    "originalId": "0fa7e104-5abc-494a-992a-ceff1e311703",
+    "statement": "Paciente masculino, de 25 anos, previamente hígido, veio à Emergência por mal-estar, mialgias, febre de 39°C e tosse, quadro progressivo iniciado há 5 dias. Ao exame físico, apresentava-se ictérico e com sufusão conjuntival. Referiu que seu bairro e sua casa em Porto Alegre foram inundados há cerca de 14 dias devido às chuvas e que teve contato com água e lama. Considerando o caso e a principal hipótese diagnóstica, assinale a assertiva correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transaminases > 1.000 U/l indicariam provável diagnóstico de leptospirose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Insuficiência renal oligúrica é típica da doença.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hepatite A faz parte das hipóteses diagnósticas.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Presença de tosse afasta a possibilidade de leptospirose.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "O quadro clínico descrito apresenta um paciente com síndrome febril aguda, mialgia e icterícia, com o achado físico altamente específico de sufusão conjuntival (hiperemia ocular). O histórico epidemiológico de contato com águas de inundação em Porto Alegre há 14 dias fecha o diagnóstico sindrômico de leptospirose, possivelmente em sua forma grave (síndrome de Weil).\n\nAnálise das alternativas:\n\nAlternativa a) Incorreta. Na leptospirose, ocorre o que chamamos de dissociação bilirrubino-transaminásica. O paciente apresenta icterícia acentuada (elevação de bilirrubina direta), mas as transaminases (TGO e TGP) costumam estar apenas levemente aumentadas, raramente ultrapassando 500 U/L. Valores acima de 1.000 U/L são típicos de hepatites virais agudas, como as causadas pelos vírus A ou B, ou de lesões tóxicas e isquêmicas.\n\nAlternativa b) Incorreta. A insuficiência renal aguda (IRA) na leptospirose possui uma característica muito peculiar: ela é classicamente não oligúrica e hipocalêmica (com potássio baixo). Isso ocorre porque a bactéria e suas toxinas afetam os transportadores de sódio e potássio nos túbulos renais (especialmente na alça de Henle). Embora formas graves possam evoluir para oligúria, a apresentação típica da doença é a manutenção do volume urinário com perda de potássio.\n\nAlternativa c) Correta. Em situações de inundações e desastres ambientais, há um comprometimento severo do saneamento básico. Isso favorece a disseminação de várias doenças, não apenas a leptospirose. A hepatite A, transmitida pela via feco-oral através de água e alimentos contaminados, manifesta-se com febre, mal-estar e icterícia, sendo um diagnóstico diferencial obrigatório em qualquer quadro de síndrome ictérica febril nesse contexto epidemiológico.\n\nAlternativa d) Incorreta. A presença de tosse é comum na leptospirose e pode indicar o início de um comprometimento pulmonar. A forma grave da doença pode evoluir para a síndrome de angústia respiratória aguda (SARA) e hemorragia alveolar, que é a principal causa de óbito por leptospirose no Brasil. Portanto, a tosse é um sinal de alerta e jamais afasta o diagnóstico.",
+    "exam": "HCPA",
+    "year": 2025,
+    "banca": "FundMed",
+    "uf": "RS",
+    "tags": [
+      "Leptospirose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/4f482b3e8f9cf9a59e108e994e1794ef2a7ee447f48bd2633b4b003a6d9e6881.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/2e54505088048cab99f7d9f8ef8555f5f9f431caad69c1ae3f1ef285032cdb35.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:35.749Z"
+  },
+  {
+    "id": "AJUDA_0fa914a7-c35d-4918-909c-7ffa2f6e316e",
+    "originalId": "0fa914a7-c35d-4918-909c-7ffa2f6e316e",
+    "statement": "Gestante de 24 anos, 30 semanas, procura atendimento por dor intensa e feridas em região genital há cinco dias, que no momento dificulta a sua deambulação. Há cerca de um ano, teve quadro muito semelhante, mas não procurou atendimento. Ao exame: múltiplas úlceras rasas, de fundo avermelhado, bordas irregulares, algumas já cicatrizando. Linfonodos inguinais discretamente aumentados e dolorosos. Perguntada, a paciente refere que o quadro iniciou com lesões bolhosas.\nQual a conduta correta para esse caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar penicilina G benzatina em dose única, cobrindo sífilis, e observar evolução antes de introduzir outro tratamento.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Introduzir aciclovir oral, diante da suspeita de herpes recorrente, e solicitar testagem rápida para sífilis com eventual associação de penicilina se reagente.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Prescrever ceftriaxona intramuscular associada a azitromicina oral, visando à cobertura para cancro mole e clamídia, postergando o início de antivirais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Optar por tratamento sindrômico com penicilina G benzatina + aciclovir, independentemente da confirmação diagnóstica, considerando riscos para mãe e feto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "ANÁLISE DO CASO CLÍNICO:\n\nO quadro descrito apresenta uma paciente gestante com úlceras genitais múltiplas e dolorosas que foram precedidas por vesículas (lesões bolhosas). Este é o sinal clínico mais característico do Herpes Simplex. O relato de um episódio semelhante há cerca de um ano confirma o caráter de recorrência da doença, que é típico desta infecção viral.\n\nPOR QUE A ALTERNATIVA (B) ESTÁ CORRETA:\n\nO tratamento de escolha para o herpes genital, seja ele primário ou recorrente, é o uso de antivirais como o aciclovir. Na gestação, o tratamento é essencial para diminuir o tempo de excreção viral, aliviar a dor intensa da mãe e reduzir riscos de complicações. Complementarmente, diante de qualquer ferida genital, os protocolos do Ministério da Saúde recomendam a investigação de outras Infecções Sexualmente Transmissíveis (ISTs). A realização do teste rápido para sífilis é mandatária, pois permite o diagnóstico e o tratamento imediato com penicilina caso seja reagente, protegendo o binômio mãe-feto.\n\nPOR QUE AS OUTRAS ALTERNATIVAS ESTÃO INCORRETAS:\n\nAlternativa A: A penicilina G benzatina é o tratamento para sífilis. O cancro duro (sífilis primária) é classicamente uma lesão única, de base limpa e, principalmente, indolor. O quadro da paciente é de dor intensa e lesões múltiplas precedidas por bolhas, o que torna a sífilis um diagnóstico menos provável para a lesão atual, embora a testagem seja necessária.\n\nAlternativa C: A ceftriaxona associada à azitromicina é utilizada para o tratamento de cancro mole e linfogranuloma venéreo. O cancro mole (Haemophilus ducreyi) também causa úlceras dolorosas, mas estas geralmente apresentam fundo purulento e não são precedidas por vesículas. Além disso, não há o caráter de recorrência anual típico do herpes. Postergar o antiviral em um caso tão sugestivo de herpes prejudica a recuperação da paciente.\n\nAlternativa D: O tratamento sindrômico é uma estratégia para locais onde não há disponibilidade de exames laboratoriais imediatos. No entanto, a conduta descrita na alternativa B é mais adequada por ser direcionada à principal hipótese diagnóstica (herpes) e condicionar o uso da penicilina (um fármaco injetável e doloroso) à confirmação por teste rápido, que é amplamente disponível nos serviços de saúde que atendem gestantes.\n\nRESUMO DIDÁTICO:\n\n1. Lesão que começa com bolha e vira úlcera dolorosa = Pense em Herpes.\n2. História de lesões que \"vão e voltam\" no mesmo local = Reforça Herpes.\n3. Gestante com úlcera genital = Trate a causa provável e sempre rastreie Sífilis e HIV.\n4. Droga de escolha para Herpes = Aciclovir.",
+    "exam": "HIAE",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/95fec61b412acf63301bbdd655c8da30cfbac6d267172203033e4ee624e49848.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/3630d53773564a55b06832d4c0c5b72ef35c92d05d0c773da1b1798365177fa9.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:35.749Z"
+  },
+  {
+    "id": "AJUDA_0fad6894-6b76-4b1e-960f-de863625d051",
+    "originalId": "0fad6894-6b76-4b1e-960f-de863625d051",
+    "statement": "Criança apresenta lesões elevadas, com edema central de tamanho variável, algumas circundadas por eritema, com retorno da pele ao seu aspecto normal em 12 horas. O diagnóstico e a etiologia são, correta e respectivamente:",
+    "options": [
+      {
+        "id": "A",
+        "text": "urticária aguda; infecciosa.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "angioedema agudo; alergia ao leite de vaca.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "urticária aguda; dermografismo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "angioedema agudo; picada de inseto.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "A descrição clínica apresentada refere-se classicamente à urticária. As lesões descritas são as urticas, que se caracterizam por serem elevadas (pápulas ou placas), apresentarem edema central e um halo eritematoso reflexo. Uma característica fundamental da urticária é a sua efemeridade: cada lesão individual dura menos de 24 horas, desaparecendo sem deixar cicatrizes ou marcas, o que corrobora o trecho da questão que menciona o retorno da pele ao normal em 12 horas.\n\nNa infância, a urticária aguda (definida como aquela que dura até 6 semanas) tem como principais causas as infecções, especialmente as virais (vias aéreas superiores e trato gastrointestinal), superando as causas alimentares ou medicamentosas nesta faixa etária.\n\nAnálise das alternativas:\n\nAlternativa a) Correta. O quadro clínico de lesões edematosas e evanescentes define a urticária. O termo \"aguda\" aplica-se ao tempo de evolução, e a etiologia infecciosa é, estatisticamente, a causa mais comum em pacientes pediátricos.\n\nAlternativa b) Incorreta. O angioedema ocorre nas camadas mais profundas da derme e no tecido subcutâneo. Clinicamente, manifesta-se como um inchaço mais difuso, muitas vezes doloroso ou com sensação de queimação, e sem o eritema e o prurido típicos da urtica superficial. Embora a alergia ao leite possa causar urticária, a descrição das lesões e a frequência etiológica favorecem a alternativa A.\n\nAlternativa c) Incorreta. O dermografismo é um tipo de urticária física desencadeada pelo atrito ou fricção na pele. Embora seja uma forma de urticária, a questão descreve um quadro clínico mais sugestivo de uma crise espontânea aguda, e a etiologia infecciosa é globalmente mais prevalente que o dermografismo em crises agudas infantis.\n\nAlternativa d) Incorreta. Como mencionado, a descrição não corresponde ao angioedema. Além disso, reações a picadas de inseto (estrófulo) costumam gerar pápulas firmes e persistentes que duram dias, e não lesões que desaparecem completamente em 12 horas.",
+    "exam": "UNESP",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Anafilaxia e Urticária"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5a298cef053af8f4098c7484861c311f1d4b853b4d03ee9bbe4453c6435ca1b7.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b4fd556fa24468bde5f697e01b20c8246d64d98178f24390b974998079770cca.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:35.749Z"
+  },
+  {
+    "id": "AJUDA_0fbb7111-b3cd-44ee-b2a8-485dc7ac817e",
+    "originalId": "0fbb7111-b3cd-44ee-b2a8-485dc7ac817e",
+    "statement": "Você é plantonista de uma sala de emergência e recebe o plantão com um paciente com diagnóstico de pneumonia e sepse. Para condução adequada do caso, você decide realizar uma punção venosa central para administração de medicamentos. Ciente que este procedimento requer conhecimento adequado da anatomia, relativa prática técnica e reconhecimento das suas complicações e seus respectivos manejos, assinale a alternativa INCORRETA:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Na técnica de Seldinger, o fio-guia deve ser retirado antes da inserção do catéter na veia previamente puncionada.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "A punção da veia femoral apresenta maior risco de infecção do catéter e de trombose venosa profunda quando comparada com a punção da veia subclávia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A punção venosa profunda guiada por ultrassonografia diminui consideravelmente os riscos de falha na punção, punção arterial e pneumotórax.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "A punção da veia subclávia apresenta maior risco complicações mecânicas como o pneumotórax quando comparada com a punção da veia jugular interna.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Alternativa (a) INCORRETA: Esta é a alternativa que deve ser assinalada, pois descreve a técnica de Seldinger de forma equivocada. Na técnica de Seldinger, após a punção com a agulha e a progressão do fio-guia, a agulha é retirada, mas o fio-guia deve permanecer no interior do vaso. O cateter venoso central é então inserido sobre o fio-guia (que serve como um trilho). O fio-guia só deve ser removido após o cateter já estar devidamente posicionado dentro da veia. Retirar o fio-guia antes da inserção do cateter faria com que o examinador perdesse o trajeto alcançado, impossibilitando a finalização do procedimento.\n\nAlternativa (b) CORRETA: A literatura médica e as diretrizes de controle de infecção (como as do CDC) demonstram que a veia femoral apresenta taxas mais elevadas de colonização bacteriana e infecção de corrente sanguínea relacionada a cateter devido à proximidade com a região inguinal e maior umidade local. Além disso, o sítio femoral está associado a um risco aumentado de trombose venosa profunda em comparação aos sítios cervical e subclávio.\n\nAlternativa (c) CORRETA: O uso da ultrassonografia à beira-leito (POCUS) para guiar a punção venosa central é atualmente o padrão-ouro, especialmente para a veia jugular interna. A visualização direta da veia, das estruturas adjacentes (como a artéria carótida) e da agulha entrando no vaso reduz drasticamente o número de tentativas, o risco de punção arterial acidental e a incidência de pneumotórax.\n\nAlternativa (d) CORRETA: Devido à proximidade anatômica da veia subclávia com a cúpula pleural e o ápice pulmonar, o risco de pneumotórax é inerentemente maior nesse sítio do que na veia jugular interna. Na punção da jugular, o trajeto da agulha é mais distante da pleura, o que torna as complicações mecânicas pulmonares menos frequentes, embora ainda possíveis.",
+    "exam": "CERMAN",
+    "year": 2025,
+    "banca": "CERMAN",
+    "uf": "AM",
+    "tags": [
+      "Sepse"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/45fa9f46565e0d1d5d805f93a34e205f8e9a065f8ec9fb3d11504849cd27da40.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/97f8f50bc7ad64e9f19c052123fd452d3e3f3df1a39d64d17e9bd5b8158e9292.pdf"
+    },
+    "collectedAt": "2026-10-24T16:06:35.749Z"
+  }
+]

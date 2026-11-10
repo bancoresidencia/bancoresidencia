@@ -1,0 +1,518 @@
+[
+  {
+    "id": "AJUDA_dba87da3-bb3d-466c-a13a-42abc0284e94",
+    "originalId": "dba87da3-bb3d-466c-a13a-42abc0284e94",
+    "statement": "Pacientes com mola hidatiforme (geralmente se apresentam a consulta pré-natal com períodos menstruais ausentes, um teste de gravidez positivo e sinais e sintomas consistentes com gravidez precoce ou complicações precoces da gravidez. São características clínicas da mola hidatiforme, exceto:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tamanho uterino maior que o esperado para a idade gestacional.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Desconforto pélvico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Hipotireoidismo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Cistos tecaluteínicos.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "A mola hidatiforme é uma forma de doença trofoblástica gestacional que se caracteriza pela proliferação anormal das vilosidades coriônicas. O quadro clínico é amplamente influenciado pelos níveis extremamente elevados de gonadotrofina coriônica humana (hCG). Abaixo, a análise de cada alternativa:\n\nAlternativa a) Incorreta para o enunciado (é uma característica real). O crescimento acelerado do tecido trofoblástico, somado ao acúmulo de sangue retido no útero, faz com que o volume uterino seja superior ao esperado para o tempo de amenorreia (idade gestacional) em cerca de 50% das pacientes.\n\nAlternativa b) Incorreta para o enunciado (é uma característica real). O desconforto pélvico é frequente e decorre tanto da distensão uterina rápida quanto da presença de cistos ovarianos volumosos, que podem causar sensação de peso ou dor abdominal baixa.\n\nAlternativa c) Correta (o exceto). Na mola hidatiforme, a paciente pode desenvolver HIPERTIREOIDISMO, e não hipotireoidismo. Isso ocorre devido à semelhança molecular entre o hCG e o TSH (hormônio estimulante da tireoide), que compartilham a mesma subunidade alfa. Níveis massivos de hCG estimulam os receptores de TSH na glândula tireoide, aumentando a produção de hormônios tireoidianos (T3 e T4). Clinicamente, isso pode se manifestar como taquicardia, tremores e pele quente.\n\nAlternativa d) Incorreta para o enunciado (é uma característica real). Os cistos tecaluteínicos são coleções líquidas ovarianas, geralmente bilaterais, resultantes da hiperestimulação folicular causada pelo excesso de hCG. Estão presentes em aproximadamente 25% a 30% dos casos de mola completa e costumam regredir espontaneamente após a evacuação uterina.",
+    "exam": "UFES",
+    "year": 2025,
+    "banca": "UFES",
+    "uf": "ES",
+    "tags": [
+      "Sangramento da Primeira Metade"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/5193350946e3e24de785ea9e95fcbb814aa321967c5174e652b3ca9947641b59.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/6f5f1136a55d69a0fb679c17eaa4327f4fc6baf6a5cfddb4a78ce22f7de5a0bf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:01.368Z"
+  },
+  {
+    "id": "AJUDA_dbacbaf1-ec2c-4647-9301-1b3631637cb0",
+    "originalId": "dbacbaf1-ec2c-4647-9301-1b3631637cb0",
+    "statement": "A tuberculose e a hanseníase são as principais doenças infectocontagiosas manejadas na atenção primária em saúde (APS). Sobre seu manejo, é correto afirmar:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A cultura + TS (teste de sensibilidade) atualmente é rotina na APS devido aos novos casos de resistência aos tuberculostáticos do esquema básico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "A vantagem do TRM-TB (teste rápido molecular para tuberculose) do escarro, além do diagnóstico, é a sensibilidade ou resistência à rifampicina, que auxilia bastante o clínico.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Hoje, tem-se o TPT (tratamento preventivo da tuberculose) nos casos de ILTB (infecção latente por tuberculose), cuja primeira escolha é o esquema 9H (Isoniazida).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Na hanseníase, o esquema PQT-U (polioquimioterapia única) é utilizado para os casos multibacilares e de resistência à clofazimina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "As formas indeterminadas e dimorfas da hanseníase são consideradas multibacilares, diferentemente das formas tuberculoide e virchowiana, que são paucibacilares.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Alternativa a: Incorreta. Na rotina da Atenção Primária, o exame inicial prioritário para o diagnóstico de tuberculose é o Teste Rápido Molecular (TRM-TB). A cultura associada ao teste de sensibilidade (TS) não é feita de forma universal para todos os casos novos na rede básica; ela é indicada em situações específicas, como em populações de maior risco (pessoas vivendo com HIV, pessoas em situação de rua, profissionais de saúde), casos de retratamento, suspeita de falência terapêutica ou para confirmação quando o TRM-TB detecta resistência.\n\nAlternativa b: Correta. O Teste Rápido Molecular para Tuberculose (TRM-TB) revolucionou o diagnóstico na Atenção Primária. Além de identificar o DNA do complexo Mycobacterium tuberculosis em cerca de duas horas, ele detecta mutações no gene rpoB, que conferem resistência à rifampicina. Como a rifampicina é a droga mais potente do esquema básico (RIPE), saber a sensibilidade a ela logo no diagnóstico permite que o clínico inicie o tratamento com maior segurança ou encaminhe o paciente para esquemas especiais em caso de resistência.\n\nAlternativa c: Incorreta. O Tratamento Preventivo da Tuberculose (TPT) evoluiu para esquemas mais curtos visando maior adesão. Atualmente, o Ministério da Saúde recomenda como opções preferenciais o esquema 4R (Rifampicina por 4 meses) ou o 3HP (Isoniazida + Rifapentina em doses semanais por 3 meses), a depender da faixa etária e das condições clínicas. O esquema 9H (Isoniazida por 9 meses), embora ainda possa ser utilizado, deixou de ser a primeira escolha absoluta devido ao longo tempo de tratamento e ao maior risco de toxicidade.\n\nAlternativa d: Incorreta. O esquema PQT-U (Polioquimioterapia Única) foi uma proposta para unificar o tratamento de pacientes paucibacilares (PB) e multibacilares (MB) com o mesmo esquema de 6 meses. No entanto, as diretrizes brasileiras mantêm o tratamento padrão diferenciado: 6 doses em até 9 meses para PB e 12 doses em até 18 meses para MB. Além disso, o PQT-U não é uma estratégia específica para o manejo de resistência à clofazimina.\n\nAlternativa e: Incorreta. A classificação operacional da hanseníase define como paucibacilares (PB) os casos com até 5 lesões de pele, o que geralmente engloba as formas clínicas indeterminada e tuberculoide. Os casos multibacilares (MB) são aqueles com mais de 5 lesões ou baciloscopia positiva, englobando as formas dimorfa (borderline) e virchowiana. A alternativa inverteu as classificações, sugerindo erroneamente que a forma virchowiana seria paucibacilar.",
+    "exam": "UFPA",
+    "year": 2025,
+    "banca": "CEPS/UFPA",
+    "uf": "PA",
+    "tags": [
+      "Hanseníase",
+      "Tuberculose"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/c89fedfafb0af48bf177f0f37e4a05fd872e74b24e870629dd93323a8715d34b.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/dafde0da3331ac79c71d02e2e8ef1accb2aca622472f56251eab7206a7d968cf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:01.368Z"
+  },
+  {
+    "id": "AJUDA_dbaf6349-7be4-4db7-b617-230fb1cb36ab",
+    "originalId": "dbaf6349-7be4-4db7-b617-230fb1cb36ab",
+    "statement": "Em um município com 50.000 habitantes, foi realizado um levantamento epidemiológico para monitorar a doença de Chagas em uma região endêmica. No dia 1º de janeiro de 2025, foram identificados 400 casos ativos da doença entre os moradores. Durante todo o ano de 2025, foram diagnosticados 80 novos casos. Considerando que não houve óbitos nem curas entre os casos prevalentes no início do ano, e que a população permaneceu estável ao longo do ano, analise as afirmativas a seguir: \nI. A prevalência da doença em 1º de janeiro de 2025 é de 8 casos por 1.000 habitantes.\nII. A incidência acumulada da doença no ano de 2025 é de 1,6 casos por 1.000 habitantes.\nIII. A prevalência da doença em 31 de dezembro de 2025 é de 9,6 casos por 1.000 habitantes.\nIV. A incidência acumulada da doença no ano de 2025 é de 1,6%, considerando a população total como denominador.\nEstão CORRETAS",
+    "options": [
+      {
+        "id": "A",
+        "text": "apenas I e II.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "apenas I, II e III.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "apenas II e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "apenas I, III e IV.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "todas.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda conceitos fundamentais de indicadores epidemiológicos: prevalência e incidência acumulada.\n\nDados fornecidos:\n- População total: 50.000 habitantes.\n- Casos existentes em 01/01/2025: 400 casos.\n- Novos casos diagnosticados em 2025: 80 casos.\n- Sem óbitos ou curas ao longo do ano.\n\nAnálise detalhada das afirmativas:\n\nItem I: Correto. A prevalência pontual mede a proporção de casos totais em um momento específico.\nCalculando: 400 casos / 50.000 habitantes = 0,008. Multiplicando pela base de 1.000 habitantes, temos 8 casos por 1.000 habitantes.\n\nItem II: Correto. A incidência acumulada expressa o risco de ocorrência de casos novos em um período.\nCalculando: 80 casos novos / 50.000 habitantes = 0,0016. Multiplicando por 1.000 habitantes, temos exatamente 1,6 casos por 1.000 habitantes (mesmo considerando a população sob risco de 49.600 pessoas, o valor aproximado resulta em 1,61 por 1.000 habitantes).\n\nItem III: Correto. A prevalência em 31/12/2025 deve somar os casos antigos aos novos casos diagnosticados, já que não houve curas nem óbitos: 400 + 80 = 480 casos totais.\nCalculando: 480 / 50.000 = 0,0096. Multiplicando por 1.000 habitantes, temos 9,6 casos por 1.000 habitantes.\n\nItem IV: Incorreto. O cálculo de 80 casos novos divididos por 50.000 habitantes resulta em 0,0016. Ao transformar esse decimal em porcentagem (multiplicando por 100), obtemos 0,16%, e não 1,6%. O erro é de uma casa decimal.\n\nAnálise das alternativas:\n\na) Incorreta. Desconsidera que o item III também está correto.\nb) Correta. Contempla adequadamente as afirmativas verdadeiras (I, II e III).\nc) Incorreta. O item I está correto e o item IV está matematicamente incorreto.\nd) Incorreta. O item II está correto e o item IV está matematicamente incorreto.\ne) Incorreta. O item IV é falso devido ao erro no cálculo percentual.",
+    "exam": "SES-2",
+    "year": 2026,
+    "banca": "IAUPE",
+    "uf": "PE",
+    "tags": [
+      "Processos Epidêmicos e Epidemiologia das Doenças Infecciosas",
+      "Estatística Médica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1191bd0da83d7c14e002cbd381326464817e6cdcc46630bec8ab33253a540770.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0c0201d4a7bec6189c833af7116ab4081667e07da9ae6680fb7308e67a50aa0a.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:01.368Z"
+  },
+  {
+    "id": "AJUDA_dbb0ce7e-d41a-4cfb-90ed-ad332c635710",
+    "originalId": "dbb0ce7e-d41a-4cfb-90ed-ad332c635710",
+    "statement": "Em relação ao manejo da urolitíase, qual a alternativa incorreta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A TC sem contraste deve ser usada para confirmar o diagnóstico de litíase em um paciente com dor lombar aguda, pois é superior à urografia excretora.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Primeira escolha para analgesia em cólica nefrética deve ser iniciar com opioides.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Para cálculos obstrutivos associados a infecção, o sistema coletor deve ser drenado de modo urgente, tanto através de drenagens percutâneas quanto de cateteres ureterais.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Em pacientes com cálculos ureterais < 10 mm (sem a indicação de remoção ativa), a simples observação com avaliações periódicas é uma opção de tratamento inicial.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Para terapia médica expulsiva, os alfabloqueadores ou a nifedipina estão recomendados e reduzem a recorrência da cólica renal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "Esta questão aborda o manejo clínico e cirúrgico da urolitíase, exigindo o conhecimento das diretrizes atuais de diagnóstico, analgesia e intervenção.\n\nAlternativa A (Correta): A tomografia computadorizada (TC) de abdome e pelve sem contraste é atualmente o padrão-ouro para o diagnóstico de litíase urinária em episódios de dor lombar aguda. Ela apresenta sensibilidade e especificidade superiores à urografia excretora e ao ultrassom, permitindo avaliar não apenas a presença do cálculo, mas também sua localização exata, densidade (em unidades Hounsfield) e a anatomia adjacente, sem os riscos do contraste iodado.\n\nAlternativa B (Incorreta/Gabarito): De acordo com as principais diretrizes urológicas (como EAU e AUA), a primeira linha de tratamento para analgesia na cólica nefrética aguda são os anti-inflamatórios não esteroidais (AINEs). Os AINEs são superiores aos opioides porque atuam diretamente no mecanismo da dor, reduzindo a síntese de prostaglandinas, o que diminui o edema ureteral e a pressão intrapélvica renal. Os opioides são considerados medicações de segunda linha, indicados apenas quando há contraindicação aos AINEs ou quando a dor é refratária ao tratamento inicial.\n\nAlternativa C (Correta): A associação de cálculo obstrutivo com infecção urinária (urossepse) é uma emergência médica. Nessas situações, a prioridade absoluta não é retirar o cálculo, mas sim drenar a via urinária para permitir a saída da urina purulenta e a penetração dos antibióticos. Isso pode ser feito de forma retrógrada, com a passagem de um cateter ureteral (duplo-J), ou de forma percutânea, através de uma nefrostomia. O tratamento definitivo do cálculo só deve ocorrer após a resolução do quadro infeccioso.\n\nAlternativa D (Correta): O manejo conservador ou expectante é uma opção válida para pacientes com cálculos ureterais menores que 10 mm, desde que o paciente esteja com a dor controlada, não apresente sinais de infecção e tenha função renal preservada. A maioria desses cálculos (especialmente os menores de 5 mm) é expelida espontaneamente. O acompanhamento deve ser feito com exames de imagem periódicos para garantir que o cálculo progrediu ou foi eliminado.\n\nAlternativa E (Correta): A terapia médica expulsiva (TME) é recomendada para auxiliar na passagem de cálculos ureterais distais. Os alfabloqueadores (como a tansulosina) são os mais utilizados, pois promovem o relaxamento da musculatura lisa do ureter distal, facilitando a migração do cálculo. A nifedipina também pode ser usada com esse fim. Além de aumentar a taxa de sucesso na expulsão, esses medicamentos comprovadamente reduzem a intensidade da dor e a recorrência de crises de cólica renal durante o período de observação.",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Urologia",
+      "Nefrolitíase"
+    ],
+    "difficulty": 80.66647991601069,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:01.368Z"
+  },
+  {
+    "id": "AJUDA_dbb8b631-2aed-49ec-ac83-1f455e8a6e3d",
+    "originalId": "dbb8b631-2aed-49ec-ac83-1f455e8a6e3d",
+    "statement": "Mulher de 24 anos procura atendimento por aumento da secreção vaginal há 10 dias, associada a odor desagradável, principalmente após o coito. Refere ausência de prurido e dor. Ao exame especular, nota-se secreção acinzentada, fluida e aderente às paredes vaginais. O pH vaginal é 5,5 e, à bacterioscopia (Gram), observam-se células-guia (clue cells), ausência de lactobacilos e escassez de leucócitos. Teste das aminas com KOH a 10% é positivo. Qual é o tratamento vaginal mais adequado para essa condição?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Clotrimazol.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Metronidazol.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "Nistatina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Ácido acético.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Probiótico vaginal.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "DIAGNÓSTICO E QUADRO CLÍNICO\n\nO caso clínico apresenta uma paciente com Vaginose Bacteriana (VB), a causa mais frequente de corrimento vaginal em mulheres em idade fértil. O diagnóstico é estabelecido através dos Critérios de Amsel, sendo necessários pelo menos três dos quatro critérios seguintes: \n1. Corrimento branco-acinzentado, homogêneo e fluido.\n2. pH vaginal maior que 4,5 (no caso, 5,5).\n3. Teste das aminas (Whiff test) positivo (odor fétido após adição de KOH a 10%).\n4. Presença de Clue Cells (células-guia) na bacterioscopia, que são células epiteliais cobertas por bactérias.\n\nA questão descreve exatamente esses achados, incluindo a ausência de sinais inflamatórios (ausência de dor, prurido e escassez de leucócitos), o que é característico da VB, já que se trata de uma disbiose (desequilíbrio da flora) e não de uma vaginite inflamatória propriamente dita.\n\nANÁLISE DAS ALTERNATIVAS\n\nAlternativa a) Incorreta. O clotrimazol é um antifúngico da classe dos imidazólicos, indicado para o tratamento da candidíase vulvovaginal. A candidíase apresenta pH vaginal baixo (menor que 4,5), prurido intenso e corrimento grumoso, o que não condiz com o quadro de vaginose bacteriana.\n\nAlternativa b) Correta. O metronidazol é o tratamento padrão-ouro para a vaginose bacteriana. Ele é eficaz contra os microrganismos anaeróbios que proliferam nessa condição, como Gardnerella vaginalis, Mobiluncus spp. e Prevotella. Para o tratamento por via vaginal, utiliza-se geralmente o metronidazol em gel a 0,75% por 5 dias. A clindamicina em creme vaginal seria outra opção aceitável, mas não está listada.\n\nAlternativa c) Incorreta. A nistatina é um antifúngico polieno indicado para candidíase. Ela não possui ação contra bactérias anaeróbias ou Gardnerella, sendo ineficaz para o caso clínico apresentado.\n\nAlternativa d) Incorreta. O ácido acético é uma substância utilizada durante a colposcopia para auxiliar na visualização de lesões precursoras do câncer de colo do útero (através da reação acetobranca). Ele não é um agente terapêutico para o tratamento de vaginose ou qualquer outra infecção vaginal comum.\n\nAlternativa e) Incorreta. O uso de probióticos vaginais visa à restauração da microbiota (Lactobacillus), podendo ser utilizado em alguns protocolos como auxílio na prevenção de recorrências. No entanto, para o tratamento da fase aguda e sintomática da vaginose bacteriana, a antibioticoterapia com metronidazol ou clindamicina é a conduta recomendada e mais eficaz.",
+    "exam": "UNESC",
+    "year": 2026,
+    "banca": "UNESC",
+    "uf": "ES",
+    "tags": [
+      "Vulvovaginites"
+    ],
+    "difficulty": 26.939478548513897,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1e72e4f01caa26f3e1a836da6e6c59c71b632a20ec81fa7f6afc171826fd3197.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/69eaed69d2f18c7055730492bffa5a58fa0338059f08ee36b8cd1e08abc404d1.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:01.368Z"
+  },
+  {
+    "id": "AJUDA_dbc026cd-048b-4650-bff6-93c5488cb37b",
+    "originalId": "dbc026cd-048b-4650-bff6-93c5488cb37b",
+    "statement": "Em uma cidade, no passado, havia uma empresa química na qual muitas pessoas trabalhara. Um grupo de pesquisadores de um hospital de referência para casos oncológicos resolve estudar a associação entre câncer de fígado e a exposição a uma substância Y, que fazia parte do processo produtivo dessa empresa. A equipe tem verba bastante restrita.\nCom base nessas informações, assinale a alternativa correta.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Um estudo caso-controle permitiria atingir o objetivo dos pesquisadores.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "B",
+        "text": "O único estudo possível é o de coorte nesse caso.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "O ideal seria a realização de um estudo ecológico.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "O cálculo de coeficiente de mortalidade pelo câncer de fígado na população seria uma opção para atingir o objetivo dos pesquisadores.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "A",
+    "medicalExplanation": "Para resolver essa questão, devemos analisar as características do desfecho (câncer de fígado), do fator de exposição (substância Y) e as condições financeiras dos pesquisadores (verba restrita).\n\nAlternativa a: Correta. O estudo de caso-controle é ideal para doenças raras ou com longo período de latência, como é o caso do câncer de fígado. Nesse modelo, os pesquisadores partem do desfecho (pessoas que já têm a doença) e olham para trás no tempo para identificar a exposição prévia. Como a equipe trabalha em um hospital de referência oncológica, é fácil encontrar os casos. É um desenho de estudo rápido, barato e que exige um número menor de participantes em comparação a uma coorte, o que se adequa perfeitamente à verba restrita mencionada no enunciado.\n\nAlternativa b: Incorreta. O estudo de coorte é perfeitamente possível, porém não é o único e certamente não seria o mais indicado aqui. Na coorte, parte-se da exposição para o desfecho. Os pesquisadores teriam que acompanhar indivíduos expostos e não expostos por muitos anos para ver quem desenvolveria o câncer. Isso tornaria o estudo extremamente caro e demorado, o que contradiz a limitação orçamentária da equipe.\n\nAlternativa c: Incorreta. O estudo ecológico utiliza dados agregados de populações (por exemplo, comparar a incidência de câncer entre duas cidades diferentes) e não dados individuais. Embora possa gerar hipóteses, ele não é o ideal para estabelecer uma associação causal direta entre o trabalhador específico e a substância Y, além de estar sujeito ao erro conhecido como falácia ecológica.\n\nAlternativa d: Incorreta. O cálculo do coeficiente de mortalidade é uma medida de epidemiologia descritiva. Ele informa a frequência com que as mortes ocorrem em uma população, mas não permite estabelecer, de forma analítica, a associação entre a exposição à substância Y e o surgimento da doença. Para provar a associação, precisamos de um estudo analítico que compare grupos (expostos vs. não expostos ou doentes vs. não doentes).",
+    "exam": "FAMEMA",
+    "year": 2026,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Pesquisa Epidemiológica e Medidas de Associação"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/d9d8d19e245a3ebbd773de924f504c7f519be86e110e2b089b4c79aaad876292.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/0d90f9f580315a887deda937b7779af82bddf39ab833ef77b31b099799cbaedf.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:01.368Z"
+  },
+  {
+    "id": "AJUDA_dbcdc57b-903e-4ca0-91d9-a9c796732d41",
+    "originalId": "dbcdc57b-903e-4ca0-91d9-a9c796732d41",
+    "statement": "Mulher, 29 anos, HIV negativa, comparece ao pronto atendimento com úlceras genitais dolorosas, múltiplas, de bordas irregulares, fundo necrótico, associadas à adenopatia inguinal dolorosa e supurativa. Relata início dos sintomas há 6 dias após relação sexual desprotegida com novo parceiro. Considerando a fisiopatologia, a apresentação clínica e as principais IST ulcerativas, qual é a conduta diagnóstica e terapêutica mais adequada para o caso?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Iniciar tratamento empírico para sífilis primária com penicilina benzatina, pois a presença de úlcera genital é altamente sugestiva de Treponema pallidum.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Solicitar sorologias para HIV e sífilis, e iniciar empiricamente aciclovir oral, pois a apresentação clínica sugere herpes genital.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Realizar punção da adenopatia inguinal para cultura e iniciar empiricamente ceftriaxona, pois o quadro é mais compatível com linfogranuloma venéreo.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "Iniciar empiricamente azitromicina 1 g VO dose única ou ciprofloxacino, pois a apresentação clínica é sugestiva de cancroide por Haemophilus ducreyi.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "E",
+        "text": "Manter conduta expectante, apenas coletando exames laboratoriais confirmatórios, já que o tratamento precoce pode mascarar o diagnóstico definitivo.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "D",
+    "medicalExplanation": "Análise do caso clínico:\nA paciente apresenta um quadro típico de cancro mole (ou cancroide), causado pela bactéria Haemophilus ducreyi. Os pontos-chave para o diagnóstico são a presença de múltiplas úlceras, a dor local intensa, o fundo necrótico/purulento das lesões e a presença de adenopatia inguinal dolorosa que evolui com supuração (fistulização por orifício único).\n\nAlternativa a: Incorreta. Na sífilis primária, a úlcera (cancro duro) é geralmente única, tem bordas delimitadas e fundo limpo, além de ser indolor. A adenopatia da sífilis também não é dolorosa e não é supurativa. O quadro descrito de dor e necrose é incompatível com o Treponema pallidum.\n\nAlternativa b: Incorreta. O herpes genital cursa com vesículas agrupadas que evoluem para úlceras pequenas, rasas e dolorosas. Embora a dor esteja presente, o herpes não apresenta o fundo necrótico profuso nem a adenopatia supurativa característica do cancro mole.\n\nAlternativa c: Incorreta. No linfogranuloma venéreo (LGV), causado pela Chlamydia trachomatis, a lesão inicial é pequena, indolor e fugaz, muitas vezes nem sendo notada pela paciente. O destaque do LGV é a linfonodomegalia inguinal que fistuliza por vários orifícios (aspecto em crivo ou regador). Além disso, o tratamento de escolha para LGV é a doxiciclina por 21 dias.\n\nAlternativa d: Correta. A apresentação clínica de múltiplas úlceras dolorosas de fundo sujo com adenopatia inguinal que flutua e supura é patognomônica de cancro mole. O tratamento preconizado pelo Protocolo Clínico e Diretrizes Terapêuticas (PCDT) para ISTs inclui azitromicina 1g por via oral em dose única como primeira linha. O ciprofloxacino é uma alternativa terapêutica.\n\nAlternativa e: Incorreta. Em casos de úlceras genitais, a conduta deve ser imediata. O tratamento precoce é fundamental para interromper a cadeia de transmissão e aliviar os sintomas, não havendo justificativa para conduta expectante em pacientes sintomáticos com forte suspeita de infecção bacteriana.",
+    "exam": "SES",
+    "year": 2026,
+    "banca": "Fundatec",
+    "uf": "RJ",
+    "tags": [
+      "Úlceras Genitais"
+    ],
+    "difficulty": 71.32285293711608,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/a9239d006418a615f5dde07e3a247bfd7c47e44181ec7a170af43eecd1b1aff2.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/582c294e10737c490e0887e2d4f69c6ba144ab925c18871f9ecb5473c45c7689.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:01.368Z"
+  },
+  {
+    "id": "AJUDA_dbcf4d8b-aa41-44f1-98a6-f3018f856f1e",
+    "originalId": "dbcf4d8b-aa41-44f1-98a6-f3018f856f1e",
+    "statement": "Com relação a icterícia, qual a alternativa incorreta?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A icterícia é clinicamente detectada quando a concentração sérica de bilirrubina ultrapassa 2-3 mg/100mL (valor normal: 0,3-1,0 mg/100mL).",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Os locais onde a icterícia é mais frequentemente percebida são: a conjuntiva ocular (em casos mais discretos particularmente na periferia) e pele.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "A principal fonte de bilirrubina é a hemoglobina proveniente da quebra de eritrócitos maduros, a qual contribui com cerca de 70-75% da produção total.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "A bilirrubina não conjugada, como é firmemente ligada à albumina, não é filtrada pelos glomérulos renais e, não sendo também secretada pelos túbulos renais, não é excretada na urina.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "A bilirrubina conjugada, por ser solúvel em água, penetra mais facilmente em fluidos corpóreos e é capaz de provocar graus mais acentuados de icterícia que a bilirrubina não conjugada. A pele pode tornar-se esverdeada.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "Com relação à icterícia e ao metabolismo das bilirrubinas, vamos analisar cada alternativa para identificar a incorreta:\n\nAlternativa (a) Correta: A icterícia é a coloração amarelada de pele e mucosas decorrente do depósito de bilirrubina. Clinicamente, ela só se torna evidente quando os níveis séricos de bilirrubina total ultrapassam 2,0 a 3,0 mg/dL. Os valores de referência normais variam levemente entre laboratórios, mas situam-se geralmente entre 0,3 e 1,2 mg/dL.\n\nAlternativa (b) Correta: A esclera (conjuntiva ocular) é o local mais precoce e frequente para a detecção da icterícia devido à sua alta concentração de elastina, que possui elevada afinidade pela bilirrubina. Em casos leves, a periferia da esclera, por ser mais branca, permite uma visualização mais fácil do pigmento. A pele é o segundo local de observação mais comum.\n\nAlternativa (c) Incorreta: Embora a principal fonte de bilirrubina seja de fato a hemoglobina proveniente da quebra de eritrócitos maduros (senescentes) no sistema reticuloendotelial, a proporção correta é de aproximadamente 80% a 85% da produção total diária. Os 15% a 20% restantes derivam da eritropoiese ineficaz na medula óssea e da renovação de outras hemoproteínas, como mioglobina e citocromos. Portanto, o valor de 70-75% apresentado na alternativa está abaixo do descrito pela literatura médica padrão (como o Tratado de Medicina Interna de Harrison).\n\nAlternativa (d) Correta: A bilirrubina não conjugada (indireta) é lipossolúvel e circula no plasma firmemente ligada à albumina. Devido a essa ligação proteica, ela não consegue ser filtrada pelo glomérulo renal. Como também não sofre secreção tubular, a bilirrubina não conjugada nunca aparece na urina, independentemente do seu nível sérico.\n\nAlternativa (e) Correta: A bilirrubina conjugada (direta) é hidrossolúvel e menos ligada à albumina, o que facilita sua difusão para os fluidos corporais e tecidos. Em quadros de colestase prolongada, a bilirrubina pode ser oxidada em biliverdina, o que confere à pele do paciente uma tonalidade esverdeada, classicamente chamada de icterícia verdínica. Além disso, por ser solúvel em água, a bilirrubina conjugada é a única que pode ser excretada na urina (colúria).",
+    "exam": "HUSE",
+    "year": 2026,
+    "banca": "FUNESA",
+    "uf": "SE",
+    "tags": [
+      "Vesícula e Vias Biliares"
+    ],
+    "difficulty": 89.84378859546382,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/fbe0b23b62e50c190787a12506a72fb6e2880619872e3aae1a91b332e0a9eed4.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/a179259770526ed2d143e8b875847c183b6c2c9239bcfcb99b57f73a8029fa02.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:01.368Z"
+  },
+  {
+    "id": "AJUDA_dbd64395-1c06-4af2-a141-270e40fa7e06",
+    "originalId": "dbd64395-1c06-4af2-a141-270e40fa7e06",
+    "statement": "Um homem de 64 anos procura atendimento ambulatorial por fadiga progressiva e perda ponderal não voluntária de 6 kg, nos últimos 2 meses. Relata náuseas ocasionais e desconforto abdominal difuso, sem relação com alimentação ou evacuação, e nega sangramentos. A filha notou coloração amarelada discreta na pele recentemente. Tabagista há 40 anos, faz uso ocasional de bebidas alcoólicas aos fins de semana.\nAo exame, apresenta icterícia, sem dor ou massas palpáveis. Exames laboratoriais mostram padrão colestático discreto. A tomografia abdominal evidencia lesão tumoral na cabeça do pâncreas com dilatação da via biliar. A biópsia por ultrassom endoscópico confirma adenocarcinoma pancreático.\nDos fatores a seguir, assinale o mais associado ao desenvolvimento desse tipo de tumor.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Intolerância à lactose.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "Colelitíase.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "C",
+        "text": "Tabagismo.",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "D",
+        "text": "Hipercalcemia.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "E",
+        "text": "Síndrome do intestino irritável.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "C",
+    "medicalExplanation": "COMENTÁRIO TÉCNICO DA QUESTÃO:\n\nO caso clínico descreve um paciente com quadro clássico de adenocarcinoma da cabeça do pâncreas, caracterizado por icterícia obstrutiva (colestática), perda de peso significativa e fadiga em um paciente idoso. O diagnóstico foi confirmado por tomografia e biópsia por ultrassom endoscópico. A questão exige o conhecimento sobre a epidemiologia e os fatores de risco associados a essa neoplasia.\n\nANÁLISE DAS ALTERNATIVAS:\n\nAlternativa a) Incorreta. A intolerância à lactose é uma condição clínica decorrente da deficiência da enzima lactase, levando a sintomas gastrointestinais como distensão abdominal e diarreia após o consumo de laticínios. Não existe nenhuma evidência científica que associe a intolerância à lactose ao aumento do risco de adenocarcinoma pancreático.\n\nAlternativa b) Incorreta. A colelitíase (presença de cálculos na vesícula biliar) é um diagnóstico diferencial importante para casos de icterícia obstrutiva (se houver coledocolitíase), mas não é considerada um fator de risco para o desenvolvimento do câncer do pâncreas. A associação entre cálculos e câncer é bem estabelecida para o câncer da vesícula biliar, mas não para o pancreático.\n\nAlternativa c) Correta. O tabagismo é o principal fator de risco modificável para o adenocarcinoma do pâncreas. Estima-se que fumantes tenham um risco de duas a três vezes maior de desenvolver a doença em comparação com não fumantes. Cerca de 20% a 25% dos tumores pancreáticos são atribuíveis ao hábito de fumar. O risco aumenta conforme a carga tabágica (número de cigarros e tempo de uso), o que é condizente com o histórico do paciente da questão (tabagista há 40 anos).\n\nAlternativa d) Incorreta. A hipercalcemia não é um fator de risco para o adenocarcinoma do pâncreas. Embora a hipercalcemia possa ser uma causa de pancreatite aguda e a pancreatite crônica seja, por sua vez, um fator de risco para o câncer, a relação direta entre hipercalcemia e o tumor não existe. Além disso, a hipercalcemia pode surgir como uma síndrome paraneoplásica em diversos tumores avançados, mas não é a causa da doença.\n\nAlternativa e) Incorreta. A síndrome do intestino irritável é um distúrbio funcional do trato gastrointestinal, sem alterações estruturais ou inflamações crônicas que predisponham à formação de tumores. Não há correlação entre essa síndrome e o risco de câncer pancreático.\n\nRESUMO:\nAlém do tabagismo, outros fatores de risco importantes para o câncer do pâncreas incluem a idade avançada (acima de 60-65 anos), pancreatite crônica, obesidade, diabetes mellitus tipo 2 e fatores genéticos/histórico familiar. No contexto da questão, o tabagismo é o fator de exposição mais relevante.",
+    "exam": "Mackenzie",
+    "year": 2026,
+    "banca": "FGV",
+    "uf": "PR",
+    "tags": [
+      "Neoplasias Pancreáticas"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/1f9e1bf77b615233822435b250e08110e39fa690d2e61ef2683f14cb5e208e7c.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/b5922c60269c5a978d8d2add6bcd2d7da4c8a570051d90770965ac7832c2ae79.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:01.368Z"
+  },
+  {
+    "id": "AJUDA_dbd9b496-7659-41e8-b657-f48e036fe8b2",
+    "originalId": "dbd9b496-7659-41e8-b657-f48e036fe8b2",
+    "statement": "Um paciente idoso, acometido de pneumonia, evolui com piotórax parapneumônico e sepse. O empiema tem evolução maior que 4 semanas, sendo refratário à drenagem torácica prolongada. O tratamento mais recomendado nesta situação é:",
+    "options": [
+      {
+        "id": "A",
+        "text": "toracotomia com retirada de longo segmento de um arco costal (8-10 cm) e pneumectomia segmentar.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "B",
+        "text": "drenagem aberta com remoção de segmentos curtos (3-6 cm) de uma, duas ou três costelas (procedimento de Eloesser).",
+        "imageUrl": null,
+        "isCorrect": true
+      },
+      {
+        "id": "C",
+        "text": "toracocentese com aspiração de líquido purulento e lavagem com enzimas fibrinolíticas.",
+        "imageUrl": null,
+        "isCorrect": false
+      },
+      {
+        "id": "D",
+        "text": "antibioticoterapia endovenosa prolongada, sensível a pseudomonas, em acesso venoso central.",
+        "imageUrl": null,
+        "isCorrect": false
+      }
+    ],
+    "officialAnswer": "B",
+    "medicalExplanation": "O caso clínico apresenta um paciente com empiema pleural na fase organizada (fase III), caracterizada por um tempo de evolução superior a 4 semanas e pela falha da drenagem torácica convencional. Nessa fase, ocorre a formação de uma carapaça fibrosa espessa (peel pleural) que aprisiona o pulmão, impedindo sua reexpansão e mantendo um espaço residual infectado.\n\nAlternativa A: Incorreta. A pneumectomia (retirada do pulmão) é um procedimento de exceção e de alta morbidade, indicado apenas quando há destruição completa do parênquima pulmonar por infecção ou necrose. Além disso, a retirada de longos segmentos costais sem um propósito de drenagem aberta não é a conduta padrão para o manejo do espaço pleural infectado.\n\nAlternativa B: Correta. O procedimento de Eloesser, ou pleurostomia, consiste na criação de uma janela pleurocutânea através da ressecção de pequenos segmentos de arcos costais. Esta técnica permite a drenagem aberta e contínua do pus, além de possibilitar a realização de curativos locais diretamente na cavidade. É o tratamento de escolha para pacientes com empiema crônico que não possuem condições clínicas para uma decorticação pulmonar de grande porte ou quando a drenagem fechada falhou em obliterar o espaço pleural.\n\nAlternativa C: Incorreta. A toracocentese e o uso de fibrinolíticos (como a estreptoquinase ou alteplase) são indicados na fase fibrinopurulenta (fase II), quando o líquido ainda é fluido o suficiente para ser aspirado ou quando há septações recentes. Na fase organizada (>4 semanas), o tecido fibroso é denso e não responde à ação de enzimas fibrinolíticas.\n\nAlternativa D: Incorreta. Embora a antibioticoterapia seja parte fundamental do tratamento da sepse e da pneumonia, ela isoladamente é incapaz de curar um empiema organizado. O princípio cirúrgico \"ubi pus, ibi evacua\" (onde há pus, deve-se esvaziar) é soberano aqui. O espessamento pleural impede a penetração adequada do antibiótico no foco infeccioso, tornando a intervenção cirúrgica obrigatória para o controle do foco.",
+    "exam": "FAMEMA",
+    "year": 2025,
+    "banca": "Vunesp",
+    "uf": "SP",
+    "tags": [
+      "Derrame Pleural",
+      "Cirurgia Torácica"
+    ],
+    "difficulty": null,
+    "images": [],
+    "officialFiles": {
+      "examPdf": "https://files.ajudamedico.com/files/57eb31b43afa5b55aaac6090c89b724a019894a582cb897cd31e78d052207054.pdf",
+      "keyPdf": "https://files.ajudamedico.com/files/9e7231ec4cd9c9cdf8e4551f6a713d351a1ef6c6df7b83235d11d65b56447fed.pdf"
+    },
+    "collectedAt": "2026-10-24T17:59:01.368Z"
+  }
+]
